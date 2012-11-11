@@ -24,6 +24,8 @@ $VERSION = 1.22;
 
 use vars qw(%images);
 
+my $map_compare_use_bbbike_org = 1;
+
 sub register {
     _create_images();
     my $lang = $Msg::lang || 'de';
@@ -78,6 +80,14 @@ sub register {
 	  callback_3_std => sub { showmap_url_mapcompare(@_) },
 	  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	};
+    if ($map_compare_use_bbbike_org) {
+	$main::info_plugins{__PACKAGE__ . "_MapCompare_BBBike"} =
+	    { name => "Map Compare (profile BBBike)",
+	      callback => sub { showmap_mapcompare(@_, profile => "bbbike") },
+	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "bbbike") },
+	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+	    };
+    }
     ## Not permalinkable anymore
     # if ($is_berlin) {
     # 	$main::info_plugins{__PACKAGE__ . "_BvgStadtplan"} =
@@ -587,22 +597,25 @@ sub _copy_link {
 sub showmap_url_mapcompare {
     my(%args) = @_;
 
-    my $use_bbbike_org = 1;
+    my $profile = delete $args{profile};
 
     my $px = $args{px};
     my $py = $args{py};
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    if ($use_bbbike_org) {
+    if ($map_compare_use_bbbike_org) {
 	$scale = 18 if $scale > 18;
     }
-    my $map0 = $use_bbbike_org ? 'google-hybrid' : 'googlehybrid';
+    my $map0 = $map_compare_use_bbbike_org ? 'google-hybrid' : 'googlehybrid';
     #my $map1 = 'tah';
     my $map1 = 'mapnik';
     #my $map1 = 'cyclemap';
     my $common_qs = sprintf 'mt0=%s&mt1=%s&lat=%s&lon=%s&zoom=%d',
 	$map0, $map1, $py, $px, $scale;
-    if ($use_bbbike_org) {
+    if ($profile) {
+	$common_qs .= "&profile=$profile";
+    }
+    if ($map_compare_use_bbbike_org) {
 	'http://tile.bbbike.org/mc/?num=2&' . $common_qs;
     } else {
 	'http://tools.geofabrik.de/mc/?' . $common_qs;
