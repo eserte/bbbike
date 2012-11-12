@@ -343,9 +343,10 @@ for my $browser (@browsers) {
 			     Nöldnerstr.*
 			     Lückstr.*
 			     Sewanstr.*
-			     Dathepromenade.*
-			     Erieseering.*
-			     Sewanstr.*
+			     (Dathepromenade.*
+			      Erieseering.*
+			      Sewanstr.*
+			     )? # since 2012-11-11 BBBike is choosing a straight route via Sewanstr.
 			     Am.Tierpark.*
 			     Richard-Kolkwitz-Weg.*
 			     Rägeliner.Str.*
