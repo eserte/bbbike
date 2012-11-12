@@ -6687,9 +6687,9 @@ EOF
 userdel	2::inwork -31993,-726 -32143,-211 -32153,-176
 EOF
      },
-     { from  => 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
-       until => 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
-       text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: der Bereich Oberwallstr., Niederlagstr., Am Schinkelplatz gesperrt, vom 23.11.-26.12.2010',
+     { from  => 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
+       until => 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
+       text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: der Bereich Oberwallstr., Niederlagstr., Am Schinkelplatz gesperrt, vom 26.11.-26.12.2012',
        type  => 'gesperrt',
        source_id => 'http://www.berliner-weihnacht.de/',
        data  => <<EOF,
@@ -16914,20 +16914,20 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
-       until => 1325372340, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+     { from  => 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
+       until => 1356994740, # 1325372340, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
        text  => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht oder nur schwer möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11209,12430 11329,12497
 EOF
      },
-     { from  => 1290960699, # PERIODISCH! # früher: 1258207217, # 2009-11-14 15:00
-       until => 1293836399, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+     { from  => 1352734264, # 1290960699, # PERIODISCH! # früher: 1258207217, # 2009-11-14 15:00
+       until => 1356994740, # 1293836399, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
        text  => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 9536,11912 9668,11928
+# REMOVED (hier evtl. nicht (mehr)) --- userdel	2::temp 9536,11912 9668,11928
 userdel	2::temp 9524,12010 9656,12021
 EOF
      },

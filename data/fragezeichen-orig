@@ -55,11 +55,6 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
-#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121009.0950.376338.html
-#: next_check: 2012-11-09
-#: XXX nach Ablauf des Datums vielleicht einfügen, aber mit XXX versehen
-Markstr.: Radspuren werden markiert	?::inwork 7672,16878 7647,17037 7644,17054 7621,17246 7602,17399
-# 
 #: XXX Baumaßnahme 4.15 (Realisierung nach 2011)
 Sömmeringstr.: werden hier Radspuren markiert?	?::projected 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
 #: XXX Baumaßnahme 4.12 (Realisierung nach 2011)
@@ -3169,3 +3164,7 @@ Ahlimbsmühle - Templin: Qualität?	? 24006,74469 23185,74265 22563,74247 21760,74
 Mehrow - Blumberg: Qualität? Für Autos gesperrt?	? 24782,18704 24453,19691 24649,20953 24948,21780
 #: XXX fehlt in Potsdam.coords.data, PLZ=14476
 Heinz-Sielmann-Ring (Potsdam-Groß-Glienicke): Qualität?	? -8632,8641 -8192,8567
+# 
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121009.0950.376338.html
+#: next_check: 2012-11-09
+Markstr.: existieren in der Markstr. mittlerweile Radstreifen?	? 7672,16878 7647,17037 7644,17054 7621,17246 7602,17399
