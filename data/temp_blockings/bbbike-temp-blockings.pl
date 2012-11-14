@@ -16927,7 +16927,7 @@ EOF
        text  => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED (hier evtl. nicht (mehr)) --- userdel	2::temp 9536,11912 9668,11928
+userdel	2::temp 9536,11912 9668,11928
 userdel	2::temp 9524,12010 9656,12021
 EOF
      },
@@ -20046,7 +20046,7 @@ EOF
 ## früher:
 #       source_id => 'INKO_093369',
        data  => <<EOF,
-#: last_checked: 2012-11-05
+#: last_checked: 2012-11-14
 #: next_check: 2013-03-01
 #: XXX ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 userdel	q3::inwork; 9164,12172 9373,12197
@@ -20226,7 +20226,7 @@ EOF
        text  => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-09-30 (wosch)
+#: last_checked: 2012-11-14
 #: note: etwa 50 Meter an der Schönhauser Alee gesperrt
 userdel	q3::inwork 10893,14705 11101,14768
 EOF
@@ -20578,12 +20578,11 @@ EOF
 userdel	q4::inwork 5102,11006 5122,11300
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1352918929, # undef, # 
+       until => 1352918932, # undef, # XXX
        text  => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-10-31
 userdel	q4::inwork 11615,15114 11595,15058
 EOF
      },
@@ -20667,7 +20666,7 @@ EOF
        text  => 'Choriner Str.: Einbahnstraße in Höhe Oderberger Str., Richtung Schönhauser Allee gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-10-18
+#: last_checked: 2012-11-14
 userdel	q4::inwork; 10870,14689 10893,14705
 EOF
      },
@@ -20802,6 +20801,38 @@ EOF
 #: next_check: 2012-11-19
 #: XXX möglicherweise wird die Straße danach asphaltiert sein
 userdel	q4::inwork; 13339,7452 13303,7622
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Sredzkistr.: Kreuzungsbereich in Höhe Hosemannstr. gesperrt, Ausweichen auf Gehweg',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2012-11-14 vvv
+#: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
+userdel	q2::inwork 11436,14741 11271,14755
+userdel	q3::inwork 11271,14755 11187,14763
+#: XXX ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Kollwitzplatz: Wochenmarkt Samstag 9-18 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
+       recurring => 1,
+       data  => <<EOF,
+	q4::temp:clock 11317,14564 11285,14515 11229,14422
+EOF
+     },
+     { from  => 1352847600, # 2012-11-14 00:00
+       until => 1354229999, # 2012-11-29 23:59
+       text  => 'Straßenbauarbeiten in der Zionskirchstraße von Kastanienallee bis Choriner Straße, Fahrbahn ist gesperrt, vom 15. November 2012 bis ca. 29. November 2012 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121114.1215.378008.html',
+       data  => <<EOF,
+userdel	q4::inwork 10558,14176 10426,14262
 EOF
      },
     );

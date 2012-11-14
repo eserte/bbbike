@@ -863,8 +863,8 @@ Bäkestr.: mäßiger Asphalt	Q1 -7088,-1074 -7051,-1221
 Dircksenstr: Kopfsteinpflaster	Q2 10706,13043 10595,13100
 Dircksenstr: Asphalt	Q0 10595,13100 10445,13091 10349,13043
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q1 13198,12311 13520,12264
-Hildegard-Jadamowitz-Str.: Asphalt	Q0 13520,12264 13555,12259 13599,12253
-Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13599,12253 13659,12193
+Hildegard-Jadamowitz-Str.: Asphalt	Q0 13520,12264 13555,12259 13592,12254
+Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13592,12254 13659,12193
 Am Karlsbad: gutes Kopfsteinpflaster	Q1 7968,11048 8011,11014 8027,11000
 Stallschreiberstr.: Beton/Asphalt	Q0 10678,11172 10620,11244
 Stallschreiberstr.: Kopfsteinpflaster, OK	Q1 10620,11244 10489,11405
@@ -980,7 +980,7 @@ Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5948,10152
 Fasanenplatz, zur Schaperstr.: gutes Kopfsteinpflaster	Q1 5225,10244 5198,10234
 Fasanenplatz: gutes Kopfsteinpflaster	Q1 5198,10234 5195,10175
 Fasanenplatz, zur Meierottostr.: gutes Kopfsteinpflaster	Q1 5195,10175 5246,10168
-Virchowstr.: Kopfsteinpflaster	Q2 12916,13368 12876,13440
+Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
 Dunckerstr.: Kopfsteinpflaster	Q2 11337,14946 11450,15173 11480,15229 11595,15460
 Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11119,15385
 Schudomastr.: Kopfsteinpflaster, OK	Q1 13887,7416 13798,7507 13781,7524
@@ -1188,7 +1188,7 @@ Manitiusstr.: Asphalt	Q0 12374,9542 12522,9466
 Nansenstr.: Kopfsteinpflaster	Q2 12412,9610 12374,9542 12333,9470 12270,9362 12248,9320 12186,9205 12180,9193
 Reuterplatz: Kopfsteinpflaster	Q2 12248,9320 12146,9384
 Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
-(Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12794,11893 12891,12008
+(Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
 Husemannstr.: mäßiger Asphalt	Q1 11271,14755 11293,14957
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: Kopfsteinpflaster	Q2 11998,8872 12011,9100
@@ -1204,7 +1204,7 @@ Mainzer Str.: mäßiges Kopfsteinpflaster	Q2 12104,8299 12116,8247 12134,8172 1214
 Mainzer Str.: Asphalt	Q0 12147,8117 12162,8055
 Wissmannstr.: schlechtes Kopfsteinpflaster	Q3 11767,9026 11768,8739 11769,8515
 Liebigstr.: Kopfsteinpflaster	Q2 13905,12374 14000,12519 14058,12709
-Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12695,13864 12538,13978 12423,14066 12281,14164
+Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12701,13873 12542,13984 12423,14066 12281,14164
 Esmarchstr.: Kopfsteinpflaster	Q2 12335,14246 12281,14164 12228,14083 12148,13961
 Chodowieckistr.: Kopfsteinpflaster	Q2 12266,14460 11977,14607 11681,14759
 Christinenstr.: Kopfsteinpflaster	Q2 10569,13719 10599,13775 10649,13860 10695,13952 10756,14067 10830,14183
@@ -2057,7 +2057,7 @@ Feldtmannstr.: asphaltiert	Q0 15239,17599 14754,17673
 Am Schweizer Garten: Asphalt	Q0 11868,13646 12001,13863
 (Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12141,13609
 (Volkspark Friedrichshain): Parkweg	Q1 12141,13609 12129,13531 12111,13480 12060,13422
-Kadiner Str.: Asphalt	Q0 13520,11963 13599,12253
+Kadiner Str.: Asphalt	Q0 13515,11969 13592,12254
 Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 Südtorweg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Erkstr.: Asphalt	Q0 12598,8390 12771,8439 12902,8470 12925,8494
@@ -6454,7 +6454,7 @@ Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q3 13042,11749 13175,11649
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 13175,11649 13208,11658
 Oranienplatz: Kleinsteinpflaster	Q1 11275,10723 11253,10778 11227,10821
-(Schloßplatz, entlang der Rasenfläche): Holzbohlen	Q1 10281,12310 10157,12491
+(Schloßplatz, entlang der Rasenfläche): Holzbohlen	Q1 10281,12310 10155,12494
 Glasower Str.: Asphalt	Q0 12510,6508 12759,6563 12876,6589 13141,6651
 Grüner Weg: Gehwegplatten	Q1 13728,3332 13775,3500
 Otto-Wels-Ring [Parkplatz]: Asphalt	Q1 13854,3016 13787,3017
@@ -7758,6 +7758,7 @@ Alfred-Lion-Steg: Beton	Q0 8086,8289 7992,8312
 Rampe/Zufahrt zum Alfred-Lion-Steg: Asphalt	Q0 7992,8312 7932,8325 7893,8327
 (Radweg an der Bahnstrecke - Alfred-Lion-Steg): Asphalt	Q0 7992,8300 7932,8325
 (Radweg an der Bahnstrecke): Asphalt	Q0 7998,8317 7992,8300 7837,7899
+Göhrener Str.: Kopfsteinpflaster, OK	Q1 11514,15041 11505,15065
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -12887,7 +12888,7 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12381,15034 12314,15008
 Olga-Benario-Prestes-Str.: Asphalt	Q2 12653,14653 12473,14763
 Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12782,14676 12742,14622 12833,14553
 (Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13084,14472 13009,14371 12949,14292
-Hans-Otto-Str.: Kopfsteinpflaster	Q2 12841,14380 12782,14300 12729,14227 12608,14070 12538,13978 12478,13903 12398,13792
+Hans-Otto-Str.: Kopfsteinpflaster	Q2 12841,14380 12782,14300 12729,14227 12608,14070 12542,13984 12478,13903 12398,13792
 Heinz-Kapelle-Str.: Kopfsteinpflaster	Q2 12782,14300 12972,14173
 Dietrich-Bonhoeffer-Str.: schlechtes Kopfsteinpflaster	Q3 12556,14230 12266,14460
 Margarete-Sommer-Str.: Kopfsteinpflaster	Q2 12707,13706 12805,13809 12879,13889 12975,13990
@@ -13353,7 +13354,7 @@ Kreuzstr.: Asphalt	Q0 10236,11945 10209,11918
 Kleine Jägerstr.: Asphalt	Q0 9991,11903 10050,11942 10064,11953
 Alte Leipziger Str.: Asphalt	Q0 10079,11845 10118,11907
 Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10391,11898
-Am Wriezener Bahnhof: Asphalt	Q0 12758,11915 12794,11893 12944,11760 12993,11717
+Am Wriezener Bahnhof: Asphalt	Q0 12758,11915 12788,11898 12944,11760 12993,11717
 (Scottweg - Tharauer Allee): buckliger Asphalt	Q2 -1403,11279 -1505,11307
 Plathweg: Beton	Q1 -3669,11766 -3696,11771 -3714,11782 -3732,11809 -3786,11913
 Grimnitzstr. (Wilhelmstadt): Beton	Q0 -3643,12037 -3739,12052 -3836,12066

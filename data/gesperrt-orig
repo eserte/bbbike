@@ -21,7 +21,7 @@ Skalitzer Str.	1 12899,10595 12985,10665
 Oppelner Str.	1 13028,10629 12978,10581
 Oberbaumstr.	1 12985,10665 13015,10659 13082,10634
 Oberbaumstr.	1 13082,10634 13028,10629
-am Hackeschen Markt (Süd)	1 10132,12941 10117,12966 10097,12997 9932,13109
+am Hackeschen Markt (Süd)	1 10132,12941 10117,12966 10105,13004 9932,13109
 am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9918 7813,10112
 Dennewitzplatz	1 7813,10112 7906,10098
@@ -269,7 +269,7 @@ Wöhlertstr.	1 8442,14456 8669,14550
 Pflugstr.	1 8669,14550 8776,14364
 Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
 Strausberger Str.	1 12416,13045 12368,13031
-Große Präsidentenstr.	1 10097,12997 10220,13098
+Große Präsidentenstr.	1 10105,13004 10220,13098
 Naumannstr.	1 7709,8777 7707,8915
 Gritznerstr.	1 4507,6320 4555,6403
 Duisburger Str.	1 4183,10144 3874,10153
@@ -688,7 +688,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 Steinträgerweg	1 12987,2220 13023,2093
 #: by: anonymous and osm
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
-Straßenbahnwendestelle Virchowstr.	1 12916,13368 13081,13457
+Straßenbahnwendestelle Virchowstr.	1 12925,13373 13081,13457
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chausee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 #: by: Maria Hach
@@ -1386,7 +1386,7 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhan
 #: XXX_prog: eine Überquerungsmöglichkeit existiert 60m weiter südlich
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12071,16130 12030,15968 11997,15834
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11997,15834
-Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11709,14856 11609,14881 11545,14897
+Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11709,14856 11609,14881 11535,14900
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12128,14640 12025,14695
 Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10463,13747
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694

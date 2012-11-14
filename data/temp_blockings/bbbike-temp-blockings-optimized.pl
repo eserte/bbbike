@@ -1507,7 +1507,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht möglich (Eintritt!)',
          'from' => 1352734264,
          'id' => 1989,
-         'data' => '# REMOVED (hier evtl. nicht (mehr)) --- userdel	2::temp 9536,11912 9668,11928
+         'data' => 'userdel	2::temp 9536,11912 9668,11928
 userdel	2::temp 9524,12010 9656,12021
 ',
          'type' => 'gesperrt'
@@ -1998,7 +1998,7 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
          'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
          'from' => undef,
          'id' => 2317,
-         'data' => '#: last_checked: 2012-11-05
+         'data' => '#: last_checked: 2012-11-14
 #: next_check: 2013-03-01
 #: XXX ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 userdel	q3::inwork; 9164,12172 9373,12197
@@ -2040,7 +2040,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
          'text' => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2337,
-         'data' => '#: last_checked: 2012-09-30 (wosch)
+         'data' => '#: last_checked: 2012-11-14
 #: note: etwa 50 Meter an der Schönhauser Alee gesperrt
 userdel	q3::inwork 10893,14705 11101,14768
 ',
@@ -2171,16 +2171,7 @@ userdel	2::night 14838,11410 14776,11400
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
-         'from' => undef,
-         'id' => 2375,
-         'data' => '#: last_checked: 2012-10-31
-userdel	q4::inwork 11615,15114 11595,15058
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'wosch',
@@ -2214,7 +2205,7 @@ userdel	q4::inwork 10870,14689 10723,14772
          'text' => 'Choriner Str.: Einbahnstraße in Höhe Oderberger Str., Richtung Schönhauser Allee gesperrt',
          'from' => undef,
          'id' => 2384,
-         'data' => '#: last_checked: 2012-10-18
+         'data' => '#: last_checked: 2012-11-14
 userdel	q4::inwork; 10870,14689 10893,14705
 ',
          'type' => 'handicap'
@@ -2236,16 +2227,7 @@ userdel	q4::inwork; 10870,14689 10893,14705
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_115461',
-         'until' => 1352905200,
-         'text' => 'Eisenacher Str. zwischen Kosleckweg und Äneasstr Richtung Rixdorfer Str. Baustelle, Fahrbahn gesperrt, bis Mitte November 2012',
-         'from' => 1348376400,
-         'id' => 2393,
-         'data' => 'userdel	q4::inwork; 10010,4606 10183,4583 10270,4571
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_114523',
          'until' => 1353682800,
@@ -2296,6 +2278,41 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
 #: next_check: 2012-11-19
 #: XXX möglicherweise wird die Straße danach asphaltiert sein
 userdel	q4::inwork; 13339,7452 13303,7622
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Sredzkistr.: Kreuzungsbereich in Höhe Hosemannstr. gesperrt, Ausweichen auf Gehweg',
+         'from' => undef,
+         'id' => 2399,
+         'data' => '#: last_checked: 2012-11-14 vvv
+#: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
+userdel	q2::inwork 11436,14741 11271,14755
+userdel	q3::inwork 11271,14755 11187,14763
+#: XXX ^^^
+#: last_checked ^^^
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
+         'recurring' => 1,
+         'data' => '	q4::temp:clock 11317,14564 11285,14515 11229,14422
+',
+         'until' => undef,
+         'from' => undef,
+         'text' => 'Kollwitzplatz: Wochenmarkt Samstag 9-18 Uhr',
+         'type' => 'gesperrt',
+         'id' => 2400
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121114.1215.378008.html',
+         'until' => 1354229999,
+         'text' => 'Straßenbauarbeiten in der Zionskirchstraße von Kastanienallee bis Choriner Straße, Fahrbahn ist gesperrt, vom 15. November 2012 bis ca. 29. November 2012 ',
+         'from' => 1352847600,
+         'id' => 2401,
+         'data' => 'userdel	q4::inwork 10558,14176 10426,14262
 ',
          'type' => 'handicap'
        }
