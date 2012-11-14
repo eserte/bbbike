@@ -1683,7 +1683,10 @@ sub tk_interface {
 	for my $wpt (@{ $simplified_route->{wpt} }) {
 	    $s->push([$wpt->{ident}, [ join(",", $wpt->{lon}, $wpt->{lat}) ], "X" ]);
 	}
-	$s->bbd2gpx(-as => "route");
+	$s->bbd2gpx(-as => "route",
+		    -name => $simplified_route->{routename},
+		    -number => $args{-routenumber},
+		   );
     }
 
 }
@@ -1785,7 +1788,10 @@ sub tk_interface {
 	my($ofh,$ofile) = File::Temp::tempfile(SUFFIX => ".gpx",
 					       UNLINK => 1);
 	main::status_message("Could not create temporary file: $!", "die") if !$ofh;
-	print $ofh $s->bbd2gpx(-as => "route");
+	print $ofh $s->bbd2gpx(-as => "route"
+			       -name => $simplified_route->{routename},
+			       -number => $args{-routenumber},
+			      );
 	close $ofh;
 
 	if ($^O eq 'MSWin32') {
