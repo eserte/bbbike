@@ -329,7 +329,10 @@ sub read_from_fh {
 				last SEARCH_DIRECTIVE;
 			    }
 			}
-			push @errors, "Unexpected closed directive '$directive' at line $., but expected one of: " . join(", ", map { "$block_directives[$_]->[0] (line $block_directives_line[$_])" } (0 .. $#block_directives));
+			push @errors, "Unexpected closed directive '$directive' at line $."
+			    . ($self->{File} ? " in file " . $self->{File} : "")
+				. ", but expected one of: "
+				    . join(", ", map { "$block_directives[$_]->[0] (line $block_directives_line[$_])" } (0 .. $#block_directives));
 		    }
 		} else {
 		    push @{ $line_directive{$directive} }, $value;
