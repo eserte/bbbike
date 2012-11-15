@@ -1,9 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.35 2008/08/28 20:19:39 eserte Exp $
-#
-# Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2012 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -12,7 +10,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.36;
 
 package Strasse;
 use strict;
@@ -180,7 +178,19 @@ sub short {
 sub beautify_landstrasse {
     my($str, $backwards, %args) = @_;
     my $can_unicode = $args{-unicode};
-    if ($str =~ m/^(.*\()([^\)]+\s-\s[^\)]+)(\).*)$/) {
+    if ($str =~ m{^
+		  ([^\[]+\[)
+		  ([^\]]+)
+		  (\])
+		  $}x) {
+	my($begin, $middle, $end) = ($1, $2, $3);
+	return $begin . beautify_landstrasse($middle, $backwards) . $end;
+    }
+    if ($str =~ m{^
+		  (.*\()
+		  ([^\)]+\s-\s[^\)]+)
+		  (\).*)
+		  $}x) {
 	my($begin, $middle, $end) = ($1, $2, $3);
 	return $begin . beautify_landstrasse($middle, $backwards) . $end;
     }

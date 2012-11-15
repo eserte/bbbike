@@ -81,6 +81,14 @@ my @beautify_landstrasse =
      ["Möllendorffstr. - Karl-Lade-Str., Extra-Kommentar" =>
       "(Möllendorffstr. -) Karl-Lade-Str., Extra-Kommentar",
       "(Karl-Lade-Str. -) Möllendorffstr., Extra-Kommentar"],
+
+     # eckige Klammern
+     ["Hausvogteiplatz [Taubenstr. - Niederwallstr.]" =>
+      "Hausvogteiplatz [(Taubenstr. -) Niederwallstr.]",
+      "Hausvogteiplatz [(Niederwallstr. -) Taubenstr.]"],
+     ["Hausvogteiplatz [Taubenstr.]" =>
+      "Hausvogteiplatz [Taubenstr.]",
+      "Hausvogteiplatz [Taubenstr.]"],
     );
 
 if ($] >= 5.008) {
