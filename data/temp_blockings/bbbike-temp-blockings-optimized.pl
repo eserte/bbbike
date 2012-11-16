@@ -1918,7 +1918,19 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'INKO_078941_COPY_1',
+         'until' => 1362092400,
+         'text' => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt; Herthaplatz ist teilweise eine Einbahnstraße; 05.10.2011 11:00 Uhr bis März 2013',
+         'from' => 1317679200,
+         'id' => 2290,
+         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html?date=20121116 vvv
+userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
+userdel	q4::inwork; 10614,19907 10599,19957
+#: by: ^^^
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -2196,7 +2208,9 @@ userdel	q4::inwork 9112,14771 9250,14658
          'text' => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2383,
-         'data' => '#: last_checked: 2012-11-14
+         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html?date=20121116
+#: last_checked: 2012-11-14
+#: next_check: 2012-12-31
 userdel	q4::inwork 10870,14689 10723,14772
 ',
          'type' => 'handicap'
@@ -2206,7 +2220,9 @@ userdel	q4::inwork 10870,14689 10723,14772
          'text' => 'Choriner Str.: Einbahnstraße in Höhe Oderberger Str., Richtung Schönhauser Allee gesperrt',
          'from' => undef,
          'id' => 2384,
-         'data' => '#: last_checked: 2012-11-14
+         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html?date=20121116
+#: last_checked: 2012-11-14
+#: next_check: 2012-12-31
 userdel	q4::inwork; 10870,14689 10893,14705
 ',
          'type' => 'handicap'
@@ -2226,7 +2242,21 @@ userdel	q4::inwork; 10870,14689 10893,14705
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019272',
+         'until' => 1388530800,
+         'text' => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis 2014)',
+         'from' => 1353366000,
+         'id' => 2391,
+         'data' => '#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
+#: next_check: 2014-01-01
+#: XXX danach bessere Straßenqualität? Radstreifen?
+userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {
@@ -2314,6 +2344,36 @@ userdel	q3::inwork 11271,14755 11187,14763
          'from' => 1352847600,
          'id' => 2401,
          'data' => 'userdel	q4::inwork 10558,14176 10426,14262
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html',
+         'until' => 1412114400,
+         'text' => 'Neubau der Schulstraße, Bauabschnitt zwischen Duseke- und Grunowstraße',
+         'from' => undef,
+         'id' => 2402,
+         'data' => '#: XXX: zweiter Bauabschnitt wird bis zur Berliner Str. gehen
+#: next_check: 2013-06-01
+userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1354316400,
+         'text' => 'Hoeppnerstraße zwischen Werner-Voß-Damm und Mohnickesteig: halbseitige Sperrung mit Einbahnstraßenregelung in Fahrtrichtung Boelckestraße, vom 29.10.2012 bis 30.11.2012 ',
+         'from' => 1351465200,
+         'id' => 2403,
+         'data' => 'userdel	q4::inwork; 8604,7381 8479,7389 8429,7403 8386,7430 8376,7440 8302,7508 8267,7572 8263,7611
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1354316400,
+         'text' => 'Nuthestraße zwischen Steinstraße und Bodmerstraße: Vollsperrung vom 05.11.2012 bis 30.11.2012 ',
+         'from' => 1351983600,
+         'id' => 2404,
+         'data' => 'userdel	q4::inwork 10293,-1904 10243,-1876 10099,-1482
 ',
          'type' => 'handicap'
        }

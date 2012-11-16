@@ -1503,7 +1503,7 @@ Landsberger Chaussee: Straßenbahntrasse	3nocross 22771,16194 22974,16139 23159,1
 Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
 #: XXX Wie wird die Situation nach den Bauarbeiten aussehen?
 #: last_checked: 2011-08-14
-#: next_check: 2013-01-01
+#: next_check: 2013-07-01
 Fürstenwalder Damm: Straßenbahntrasse	3nocross 23660,5477 23728,5446 23822,5403 23851,5389
 Tauernallee: Mittelstreifen	3nocross 10349,2188 10431,2258 10504,2321
 Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383
@@ -2177,11 +2177,13 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2012-11-15
-#: next_check: 2012-11-19
-#: XXX nach den Bauarbeiten vielleicht komplett asphaltiert (-> qualitaet_s-orig)
+#: last_checked: 2012-11-16
+#: next_check: 2013-05-01
+#: XXX nach den Bauarbeiten gibt es wahrscheinlich keine Fahrbahn mehr --- wird man durch den Fußgängerbereich gut durchfahren können?
+#: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
+#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-Helsingforser Str.: Bauarbeiten, auch der Gehweg ist wohl nicht passierbar	2:inwork 13496,11384 13427,11431
+Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
 #: last_checked: 2012-11-12
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	2:inwork 14465,11195 14442,11101

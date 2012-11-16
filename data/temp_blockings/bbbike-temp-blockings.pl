@@ -19784,14 +19784,15 @@ userdel	q4::inwork; 9212,13471 9340,13510 9394,13528 9517,13571 9571,13590 9668,
 EOF
      },
      { from  => 1317679200, # 2011-10-04 00:00
-       until => 1352476800, # 2012-11-09 17:00
-       text  => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt; Herthaplatz ist teilweise eine Einbahnstraße; 05.10.2011 11:00 Uhr bis 09.11.2012 17:00 Uhr',
+       until => 1362092400, # März 2013 # 1352476800, # 2012-11-09 17:00
+       text  => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt; Herthaplatz ist teilweise eine Einbahnstraße; 05.10.2011 11:00 Uhr bis März 2013',
        type  => 'handicap',
        source_id => 'INKO_078941_COPY_1',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html?date=20121116 vvv
 userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
-#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html
 userdel	q4::inwork; 10614,19907 10599,19957
+#: by: ^^^
 EOF
      },
      { from  => 1317592800, # 2011-10-03 00:00
@@ -20658,7 +20659,9 @@ EOF
        text  => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
        type  => 'handicap',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html?date=20121116
 #: last_checked: 2012-11-14
+#: next_check: 2012-12-31
 userdel	q4::inwork 10870,14689 10723,14772
 EOF
      },
@@ -20667,7 +20670,9 @@ EOF
        text  => 'Choriner Str.: Einbahnstraße in Höhe Oderberger Str., Richtung Schönhauser Allee gesperrt',
        type  => 'handicap',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html?date=20121116
 #: last_checked: 2012-11-14
+#: next_check: 2012-12-31
 userdel	q4::inwork; 10870,14689 10893,14705
 EOF
      },
@@ -20728,14 +20733,18 @@ EOF
 userdel	q4::inwork; -2960,13203 -2728,13269 -2706,13291
 EOF
      },
-     { from  => 1350502082, # undef, # 
-       until => 1350502086, # undef, # XXX
-       text  => 'Friedrich-Engels-Str. (Rosenthal) Richtung Märkisches Viertel zwischen Platananenstr. und Nordendstr. Baustelle, Fahrtrichtung gesperrt',
+     { from  => 1353366000, # 2012-11-20 00:00
+       until => 1388530800, # 2014-01-01 00:00
+       text  => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis 2014)',
        type  => 'handicap',
        source_id => 'IM_019272',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
-userdel	q4::inwork; 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
+#: next_check: 2014-01-01
+#: XXX danach bessere Straßenqualität? Radstreifen?
+userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 EOF
      },
      { from  => 1350252000, # 2012-10-15 00:00
@@ -20834,6 +20843,33 @@ EOF
        source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121114.1215.378008.html',
        data  => <<EOF,
 userdel	q4::inwork 10558,14176 10426,14262
+EOF
+     },
+     { from  => undef, # 
+       until => 1412114400, # 2014-10-01 00:00
+       text  => 'Neubau der Schulstraße, Bauabschnitt zwischen Duseke- und Grunowstraße',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html',
+       data  => <<EOF,
+#: XXX: zweiter Bauabschnitt wird bis zur Berliner Str. gehen
+#: next_check: 2013-06-01
+userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
+EOF
+     },
+     { from  => 1351465200, # 2012-10-29 00:00
+       until => 1354316400, # 2012-12-01 00:00
+       text  => 'Hoeppnerstraße zwischen Werner-Voß-Damm und Mohnickesteig: halbseitige Sperrung mit Einbahnstraßenregelung in Fahrtrichtung Boelckestraße, vom 29.10.2012 bis 30.11.2012 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 8604,7381 8479,7389 8429,7403 8386,7430 8376,7440 8302,7508 8267,7572 8263,7611
+EOF
+     },
+     { from  => 1351983600, # 2012-11-04 00:00
+       until => 1354316400, # 2012-12-01 00:00
+       text  => 'Nuthestraße zwischen Steinstraße und Bodmerstraße: Vollsperrung vom 05.11.2012 bis 30.11.2012 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 10293,-1904 10243,-1876 10099,-1482
 EOF
      },
     );

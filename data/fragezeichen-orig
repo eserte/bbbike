@@ -88,7 +88,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2012-11-14 vvv
+#: last_checked: 2012-11-16 vvv
 #: next_check: 2012-11-18 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
@@ -327,8 +327,9 @@ Am Filmlager: Qualität? Genaue Lage der Straße (GPS-Track?)	? 22802,5325 22808,5
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_06_21.pdf?start&ts=1340354416&file=stra__enbauliste_stand_2012_06_21.pdf
+#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: last_checked: 2012-09-26
-#: next_check: 2013-01-01
+#: next_check: 2012-11-30
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10339,5948 10254,5921 10027,5868 9796,5790
 # 
 #: XXX wahrscheinlich sehr guter Beton, wahrscheinlich unbeleuchtet
@@ -497,6 +498,7 @@ Am Tierpark: nach den Bauarbeiten vielleicht Radwege/-spuren?	?::inwork 18220,11
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html (Bauende: 2014)
 #: last_checked: 2012-05-03
 #: next_check: 2013-04-01
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
@@ -526,7 +528,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 	?::projected 21894,561 21776,418
 #: next_check: ^^^
 # 
-# REMOVED (die Adresse wird es niemals geben, siehe http://www.morgenpost.de/bezirke/friedrichshain-kreuzberg/article108497561/Strasse-im-Viktoriaquartier-verliert-ihren-Namen.html) --- #: last_checked: 2012-09-21 --- #: next_check: 2013-02-01 --- #: XXX noch Bauarbeiten in Gange; Zufahrt zur Alten Brauerei befindet sich nun hier; die Situation nach den Bauarbeiten evaluieren... --- An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
+# REMOVED (die Adresse wird es niemals geben, siehe http://www.morgenpost.de/bezirke/friedrichshain-kreuzberg/article108497561/Strasse-im-Viktoriaquartier-verliert-ihren-Namen.html; siehe auch http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5077&options=4) --- #: last_checked: 2012-09-21 --- #: next_check: 2013-02-01 --- #: XXX noch Bauarbeiten in Gange; Zufahrt zur Alten Brauerei befindet sich nun hier; die Situation nach den Bauarbeiten evaluieren... --- An der Barthschen Promenade: vielleicht wird die Straße in Zukunft sich hier befinden	?::projected 8954,8914 8814,8917
 # 
 #: last_checked: 2012-10-11
 #: next_check: 2012-11-11
@@ -694,6 +696,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf?start&ts=1352885627&file=benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf
+Weg wird wahrscheinlich in Insel-Rügen-Str. benannt	? 10960,17674 10969,17587 11064,17599 11354,17642
+# 
 #: by: http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf vvv
 Kirchhofstr.: Straßenbauarbeiten?	? 13003,7316 12909,7181 12872,7134
 Emser Str.: Straßenbauarbeiten?	? 12872,7134 13058,7165
@@ -844,7 +849,8 @@ Anna-Seghers-Str.: wird es nach den Bauarbeiten eine bessere Straßenqualität geb
 # 
 Poelchaustr. - Landsberger Allee: Qualität der Verbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19524,14474 19527,14655 19580,14864 19864,15169 20260,15434
 Springpfuhlpark: Qualität der Gehwegverbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19628,13517 19524,14474
-Götzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster?	? 9381,6277 9367,6160 9349,6075
+#: by: http://ftp.berlinonline.de/ba-temp-schoen/ba_beschluesse/2012-08-14/drucks._nr.1842_xviii_bezirkliches_fahrradroutennetz_fuer_tempelhof_schoeneberg_entwickeln_zwischenbericht.pdf (Treppe, wassergebundene Decke)
+Götzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster oder eine wassergebundene Decke? Gibt es hier Treppen?	? 9381,6277 9367,6160 9349,6075
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf vvv
 #: XXX Befahrbarkeit soll laut Maßnahmenkatalog verbessert werden
@@ -3127,7 +3133,8 @@ Glienicker Weg: wird es nach dem Neubau der Straße Radwege geben?	?::inwork 2077
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20110930.1255.360473.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html
-#: next_check: 2012-11-09
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html?date=20121116
+#: next_check: 2013-03-01
 Blankenburger Str.: Gibt es nach den Bauarbeiten Radstreifen in beiden Richtungen?	? 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
@@ -3175,3 +3182,17 @@ Heinz-Sielmann-Ring (Potsdam-Groß-Glienicke): Qualität?	? -8632,8641 -8192,8567
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121009.0950.376338.html
 #: next_check: 2012-11-09
 Markstr.: existieren in der Markstr. mittlerweile Radstreifen?	? 7672,16878 7647,17037 7644,17054 7621,17246 7602,17399
+# 
+#: by: http://ftp.berlinonline.de/ba-temp-schoen/ba_beschluesse/2012-08-14/drucks._nr.1842_xviii_bezirkliches_fahrradroutennetz_fuer_tempelhof_schoeneberg_entwickeln_zwischenbericht.pdf vvv
+#: XXX wahrscheinlich asphaltiert
+#: XXX RR11 wird hier langgeführt werden
+#: XXX green1/2
+Prühßstr. - Rixdorfer Str.: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 9848,4254 9876,4281 10053,4295 10207,4251 10190,4183
+#: XXX green1/2
+Westphalweg/Dirschelweg - Schwimmbad: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 9995,4375 10065,4373 10053,4295
+Im Eck - Heinitzweg: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet? Gibt es hier Drängelgitter?	? 10150,1041 10220,1034
+#: XXX green1/2?
+Groß-Ziethener Str. - Tietjenstr.: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 11578,-1220 11550,-1230 11559,-1363 11564,-1460 11572,-1603 11581,-1731
+#: XXX green1/2?
+Schönburger Str. - Blumenthalstr.: existiert für Radfahrer eine Verbindung durch den Bosepark? Qualität? Nachts beleuchtet?	? 8946,6501 8959,6292
+#: by ^^^
