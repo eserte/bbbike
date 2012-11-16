@@ -2155,7 +2155,8 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
          'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts gesperrt',
          'from' => undef,
          'id' => 2372,
-         'data' => '#: note: geprüft am 2012-11-02 (gegen 22:30)
+         'data' => '#: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
+#: note: und am 2012-11-15 (gegen 21:00 - offen)
 userdel	2::night 14838,11410 14776,11400
 ',
          'type' => 'gesperrt'
@@ -2195,7 +2196,7 @@ userdel	q4::inwork 9112,14771 9250,14658
          'text' => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2383,
-         'data' => '#: last_checked: 2012-10-18
+         'data' => '#: last_checked: 2012-11-14
 userdel	q4::inwork 10870,14689 10723,14772
 ',
          'type' => 'handicap'

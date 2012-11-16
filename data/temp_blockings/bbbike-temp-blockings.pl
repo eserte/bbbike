@@ -20556,7 +20556,8 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: note: geprüft am 2012-11-02 (gegen 22:30)
+#: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
+#: note: und am 2012-11-15 (gegen 21:00 - offen)
 userdel	2::night 14838,11410 14776,11400
 EOF
      },
@@ -20657,7 +20658,7 @@ EOF
        text  => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-10-18
+#: last_checked: 2012-11-14
 userdel	q4::inwork 10870,14689 10723,14772
 EOF
      },
