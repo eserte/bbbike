@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2006,2007,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -64,6 +64,7 @@ my @approx_tests = (
 		    
 my $expected_dir = "$FindBin::RealBin/plz-expected";
 my $create;
+my $show_create_hint;
 my $test_file = 0;
 my $INTERACTIVE;
 my $in_str;
@@ -115,10 +116,7 @@ if (defined $in_str) {
        ['mollstrasse',0],
       );
     if ($create) {
-	print "# Test files are written to $expected_dir.\n";
-    } else {
-	print "# Test files read from $expected_dir.\n";
-	print "# If there are errors due to data changes then re-run this script with -create\n";
+	diag "Test files are written to $expected_dir.";
     }
 }
 
@@ -580,6 +578,10 @@ XXX: {
     is $res[0][0][PLZ::LOOK_NAME], 'Dudenstr.', 'Invalid regexp does not cause failure';
 }
 
+if ($show_create_hint) {
+    diag "\nIf the errors are due to data changes then re-run this script with -create";
+}
+
 sub testplz {
 
     foreach my $noextern (0, 1) {
@@ -611,10 +613,10 @@ sub testplz {
 		if ($INTERACTIVE) {
 		    my $i = 0;
 		    foreach (@str) {
-			print $i+1 . ": $_->[STREET] ($_->[NOMATCH])\n";
+			diag $i+1 . ": $_->[STREET] ($_->[NOMATCH])";
 			$i++;
 		    }
-		    print "> ";
+		    diag "> ";
 		    chomp(my $res = <STDIN>);
 		    $str = $str[$res-1];
 		} else {
@@ -633,7 +635,7 @@ sub testplz {
 	    my $printres = join("\n", sort @s) . "\n";
 
 	    if ($INTERACTIVE) {
-		print $printres;
+		diag $printres;
 	    } else {
 		do_file($printres);
 	    }
@@ -664,7 +666,8 @@ sub do_file {
 	    close T;
 
 	    my $label = "Compare results with file $file";
-	    eq_or_diff($res, $buf, $label);
+	    eq_or_diff($res, $buf, $label)
+		or $show_create_hint++;
 	} else {
 	    warn "Can't open $infile: $!. Please use the -create option first and check the results in $expected_dir!\n";
 	    ok(0);
