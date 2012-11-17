@@ -48,6 +48,7 @@ GetOptions(\%opt,
 	   "infotobbd!",
 	   "info=s",
 	   "noempty",
+	   "v+",
 	  )
     or die <<EOF;
 usage: $0 [-i inputformat] -o outfile [-a|-append]
@@ -57,7 +58,13 @@ usage: $0 [-i inputformat] -o outfile [-a|-append]
     [-info file]
     [-infotobbd]
     [-noempty]
+    [-v [-v ...]]
 EOF
+
+use vars qw($verbose);
+if ($opt{v}) {
+    $verbose = $opt{v};
+}
 
 my $download_dir; $download_dir = $opt{dir} if defined $opt{dir};
 my $outfile = $opt{o} || die "Missing option -o for output file, use -o - for stdout";
