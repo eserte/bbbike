@@ -18,7 +18,8 @@ package GPS;
 use strict;
 use vars qw(@gps);
 
-@gps = qw(GpsmanData MyNMEA G7toWin_2 G7toWin_ASCII Ovl WaypointPlus MPS Gardown GPX Gpsbabel);
+# KML is checked before GPX, because the KML magic is more strict
+@gps = qw(GpsmanData MyNMEA G7toWin_2 G7toWin_ASCII Ovl WaypointPlus MPS Gardown KML GPX Gpsbabel);
 
 sub new { bless {}, shift }
 
