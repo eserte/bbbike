@@ -64,13 +64,18 @@ sub new_from_strassen {
     my($class, $s) = @_;
     my @realcoords;
     $s->init;
+    my $convsub = $s->get_conversion(-tomap => 'standard');
     while(1) {
 	my $r = $s->next;
-	last if !@{ $r->[Strassen::COORDS()] };
-	if (@realcoords && $realcoords[-1] eq $r->[Strassen::COORDS()][0].",".$r->[Strassen::COORDS()][1]) {
-	    shift @{ $r->[Strassen::COORDS()] };
+	my @c = @{ $r->[Strassen::COORDS()] };
+	last if !@c;
+	if ($convsub) {
+	    @c = map { join(",", split(/,/, $convsub->($_))) } @c;
 	}
-	push @realcoords, map { [ split /,/ ] } @{ $r->[Strassen::COORDS()] };
+	if (@realcoords && join(",",@{$realcoords[-1]}) eq $c[-1]) {
+	    shift @c;
+	}
+	push @realcoords, map { [ split /,/ ] } @c;
     }
     Route->new_from_realcoords(\@realcoords);
 }
