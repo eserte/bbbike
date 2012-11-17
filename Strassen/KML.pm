@@ -92,7 +92,8 @@ sub _kmldoc2bbd {
 		my($lon,$lat) = split /,/, $_;
 		join(",", $converter->($lon,$lat));
 	    } else {
-		$_;
+		my($x,$y) = split /,/, $_; # throwing the elevation away, if any
+		join(",", $x,$y);
 	    }
 	} grep { !/^\s+$/ } split ' ', $coords;
 	if (@c) {

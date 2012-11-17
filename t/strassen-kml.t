@@ -33,7 +33,7 @@ use BBBikeTest;
 
 sub load_from_file_and_check ($);
 
-plan tests => 64;
+plan tests => 66;
 
 use_ok("Strassen::KML")
     or exit 1; # avoid recursive calls to Strassen::new
@@ -182,13 +182,23 @@ for my $kml_filename ('doc.kml',
     print $tmpfh get_sample_kml_multigeometry_linestring();
     close $tmpfh or die $!;
 
-    my @sample_data = ("Route\tX -11023,336 -11003,346 -10997,349\n");
-    my $s = Strassen::KML->new($tmpfile, map => 'bbbike');
-    isa_ok($s, "Strassen", "File <$tmpfile> loaded OK");
-    my @data = @{ $s->data };
-    is_deeply \@data, \@sample_data;
-
     load_from_file_and_check $tmpfile;
+
+    {
+	my @sample_data = ("Route\tX -11023,336 -11003,346 -10997,349\n");
+	my $s = Strassen::KML->new($tmpfile, map => 'bbbike');
+	isa_ok($s, "Strassen", "File <$tmpfile> loaded OK");
+	my @data = @{ $s->data };
+	is_deeply \@data, \@sample_data;
+    }
+
+    {
+	my @sample_data = ("Route\tX 13.085528,52.412301 13.085827,52.412391 13.085915,52.412417\n");
+	my $s = Strassen::KML->new($tmpfile); # leave it as WGS84 data
+	isa_ok($s, "Strassen", "File <$tmpfile> loaded OK");
+	my @data = @{ $s->data };
+	is_deeply \@data, \@sample_data;
+    }
 }
 
 ######################################################################
