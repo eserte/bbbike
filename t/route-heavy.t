@@ -7,7 +7,10 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin/..";
+use lib (
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
 
 BEGIN {
     if (!eval q{
