@@ -56,8 +56,11 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
 #: XXX Baumaßnahme 4.15 (Realisierung nach 2011)
-Sömmeringstr.: werden hier Radspuren markiert?	?::projected 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn 2012)
+Sömmeringstr.: Radspuren werden hier markiert	?::inwork 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
 #: XXX Baumaßnahme 4.12 (Realisierung nach 2011)
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn noch nicht 2012)
+#: next_check: 2013-01-01
 Lise-Meitner-Str.: werden hier Radspuren markiert?	?::projected 3711,13202 3721,13274 3742,13416 3741,13495 3741,13558 3735,13618 3717,13743 3702,13865
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
 Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2706,13291 -2728,13269 -2960,13203 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
@@ -226,7 +229,14 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.moz.de/artikel-ansicht/dg/0/1/288137
+#: by: http://de.wikipedia.org/wiki/Autobahndreieck_Schwanebeck
+#: by: http://upload.wikimedia.org/wikipedia/commons/4/4c/Map_Comparision_AD_Schwanebeck_AK_Barnim.svg
+#: next_check: 2013-09-01
+Umbau zum Kreuz Barnim: damit auch Verschenkung der B2 direkt zur Autobahn; die jetzige B2 durch Schwanebeck wird wahrscheinlich zur Landesstraße	?::inwork 20907,23353 19043,23084
+# 
 ehem. Urbankrankenhaus: Wege?	?::inwork 11051,9721 10900,9774 10882,9734 11030,9675
+# 
 #: XXX laut osm under construction vvv
 #: XXX fehlt in Berlin.coords.data, PLZ=13467 vvv
 Am Dominikusteich: Qualität? Straße bereits fertiggestellt?	?::inwork 2651,23926 2760,23964 2787,23971
@@ -695,6 +705,17 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4550&options=4 vvv
+#: last_checked: 2012-11-03
+Uhlandstr./Ludwigkirchstr.: Planung eines Zebrastreifens für 2012	?::projected 5024,10153
+#: next_check: 2013-03-01
+Sömmeringstraße/Quedlinburger Straße: Planung eines Zebrastreifens für 2013	?::projected 3714,12949
+#: next_check: 2013-03-01
+Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::projected 3711,13098
+#: by: ^^^
+# 
+Steubenplatz: Einbahnstraßenregelung? Oder kann man als Radfahrer hier abkürzen?	? 677,12191 714,12160
 # 
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf?start&ts=1352885627&file=benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf
 Weg wird wahrscheinlich in Insel-Rügen-Str. benannt	? 10960,17674 10969,17587 11064,17599 11354,17642
@@ -2996,8 +3017,9 @@ Neuendorfer Str.: existieren Radspuren in der Neuendorfer Str., und wenn ja, von
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: last_checked: 2011-09-14
-#: next_check: 2011-12-15
 #: XXX Baumaßnahme 4.22, Realisierung in 2011
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Realisierung noch nicht erfolgt, Mitte 2012)
+#: next_check: 2013-01-01
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
 # 
 #: last_checked: 2012-06-09 (an der Bergstr.)

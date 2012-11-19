@@ -18776,7 +18776,8 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html',
        data  => <<EOF,
-#: next_check: 2012-11-15
+#: next_check: 2012-12-31
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4355&options=4 (Endedatum bestätigt)
 userdel	q4::inwork 425,8766 490,8716
 EOF
      },

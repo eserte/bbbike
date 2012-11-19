@@ -1787,7 +1787,8 @@ userdel	2::temp 9524,12010 9656,12021
          'text' => 'Auerbachtunnel: Fahrbahn wegen Bauarbeiten gesperrt, bis Ende 2012',
          'from' => 1335462672,
          'id' => 2182,
-         'data' => '#: next_check: 2012-11-15
+         'data' => '#: next_check: 2012-12-31
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4355&options=4 (Endedatum bestätigt)
 userdel	q4::inwork 425,8766 490,8716
 ',
          'type' => 'handicap'
@@ -2111,16 +2112,7 @@ userdel	q3::inwork 11912,14486 11642,14625
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_019006',
-         'until' => 1353254400,
-         'text' => 'Berliner Str. (Pankow): Baustelle, stadtauswärts zwischen Mühlenstr. und Elsa-Brändström-Str. bis Mitte November 2012 gesperrt',
-         'from' => 1342945020,
-         'id' => 2363,
-         'data' => 'userdel	q4::inwork; 10927,17022 10908,17142
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_113869',
          'until' => 1354291200,
