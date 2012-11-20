@@ -206,18 +206,24 @@ highway=* & motorroad=yes {add bicycle = no; add foot = no}
 highway=trunk [0x02 road_class=4 road_speed=5 resolution 18]
 highway=trunk_link [0x09 road_class=3 road_speed=2 resolution 20]
 highway=* & highway!=proposed & motorroad=yes [0x02 road_class=4 road_speed=4 resolution 18]
+# SRT: addition for bicycle=no support
+highway=primary & bicycle=no [0x123 road_class=3 road_speed=4 resolution 19]
 # SRT: addition for oneway support
 highway=primary & oneway=yes [0x103 road_class=3 road_speed=4 resolution 19]
 highway=primary [0x03 road_class=3 road_speed=4 resolution 19]
 # SRT: addition
 bbbike:render=highway_primary [0x03 road_class=1 road_speed=3 resolution 19]
 highway=primary_link [0x08 road_class=3 road_speed=1 resolution 21]
+# SRT: addition for bicycle=no support
+highway=secondary & bicycle=no [0x124 road_class=2 road_speed=3 resolution 20]
 # SRT: addition for oneway support
 highway=secondary & oneway=yes [0x104 road_class=2 road_speed=3 resolution 20]
 highway=secondary [0x04 road_class=2 road_speed=3 resolution 20]
 # SRT: addition
 bbbike:render=highway_secondary [0x04 road_class=1 road_speed=3 resolution 20]
 highway=secondary_link [0x08 road_class=2 road_speed=1 resolution 22]
+# SRT: addition for bicycle=no support
+highway=tertiary & bicycle=no [0x125 road_class=1 road_speed=3 resolution 20]
 # SRT: addition for oneway support
 highway=tertiary & oneway=yes [0x105 road_class=1 road_speed=3 resolution 20]
 highway=tertiary [0x05 road_class=1 road_speed=3 resolution 20]
@@ -228,6 +234,8 @@ highway=unclassified [0x06 road_class=0 road_speed=3 resolution 21]
 # Some countries allow, others disallow bicycling on pedestrian streets.
 # To allow bicycling, add 'add bicycle=yes'
 highway=pedestrian & area!=yes {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 22]
+# SRT: addition for bicycle=no support
+(highway=residential | highway=living_street) & bicycle=no [0x126 road_class=0 road_speed=2 resolution 21]
 # SRT: addition for oneway support
 (highway=residential | highway=living_street) & oneway=yes [0x106 road_class=0 road_speed=2 resolution 21]
 highway=living_street [0x06 road_class=0 road_speed=1 resolution 22]
