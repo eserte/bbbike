@@ -19,8 +19,8 @@ http://www.vmz-info.de/VMZ_WEBCAMS/webcam8-1.jpg	WC 3074,19035 3106,19000
 http://www.vmz-info.de/VMZ_WEBCAMS/webcam6-1.jpg	WC 8632,7070 8763,7076
 http://www.vmz-info.de/VMZ_WEBCAMS/webcam7-1.jpg	WC 19293,11826 19167,11830
 #: section VMZ-Berlin ^^^
-#
-http://www.dhm.de/webcams/WEB3.html	WC 9861,12489 9850,12522
+# 
+# REMOVED (diese Kamera wurde am 8. November 2012 abgeschaltet) --- http://www.dhm.de/webcams/WEB3.html	WC 9861,12489 9850,12522
 http://www.dhm.de/zcam/index.html	WC 9954,12437 10009,12443
 http://www.dhm.de/lindencam/index.html	WC 9875,12425 9814,12416
 # XXX Diese Webcam wurde wegen Sicherheitsüberlegungen leider abgeschaltet. (2010-12-16) --- http://www.dhm.de/webcams/VID5.html	WC 9928,12583 9942,12634
@@ -73,7 +73,7 @@ http://livestream.service-ftp.de/	WC -4255,14311 -4202,14321
 http://www.igb-berlin.de/abt2/ms/ms_dat.shtml	WC 27060,4991 27120,4890
 # XXX existiert nicht mehr (2010-12-16) --- #: note: Bildlink: http://home.versanet.de/~tu-304054/ispy.jpg --- http://home.versanet.de/~tu-304054/index.htm	WC 17690,5319 17617,5309
 # XXX früher in Marzahn, jetzt in Friedenau: http://webcam.moenk.de/jpg/image.jpg	WC 19603,13630 19492,13595
-http://webcam.friedenau.net/view/index.shtml	WC 5798,6621 5728,6603
+# REMOVED (existiert nicht mehr) --- http://webcam.friedenau.net/view/index.shtml	WC 5798,6621 5728,6603
 # XXX 2010-01: benötigt nun ein Login: http://www.das-schloss-steglitz.de/index.php?id=webcam	WC 4865,5521 4853,5621
 # XXX 2010-01: existiert nicht mehr: Bauarbeiten U55: http://www.u55.info/webcam.htm	WC 8765,12306 8791,12289
 ## 2008-10-11: Webcam ist nicht mehr:
@@ -87,10 +87,7 @@ http://webcam.friedenau.net/view/index.shtml	WC 5798,6621 5728,6603
 #: section Berlin ^^^
 #
 #: section Potsdam vvv
-#: note: steuerbar!
-#: note: old url: http://cam.disipos.de/main.php
-#: XXX 2008-11-10, 2010-02-15: eingerüstet, nichts zu sehen, nicht mehr steuerbar:
-http://app.maerkischeallgemeine.de/webcam/	WC -12588,-1534
+# REMOVED (existiert nicht mehr FORBIDDEN) --- #: note: steuerbar!--- #: note: old url: http://cam.disipos.de/main.php --- #: XXX 2008-11-10, 2010-02-15: eingerüstet, nichts zu sehen, nicht mehr steuerbar: --- http://app.maerkischeallgemeine.de/webcam/	WC -12588,-1534
 ### Die Seite existiert noch, aber kein einziges Bild ist zu sehen (2006-08-02, 2010-02-15):
 # #: section Mobil in Potsdam vvv
 # # Startseite ist http://www.mobil-potsdam.de/webcams.htm
