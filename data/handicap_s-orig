@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2012-11-15
+#: last_checked: 2012-11-21
 #: next_check: 2013-05-17
 #: note: vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen Mühlenstr. und Oberbaumbrücke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¦INKO_113418¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-11-16 vvv
+#: last_checked: 2012-11-21 vvv
 #: next_check: 2012-12-21 vvv
 #: note: vmz-Eintrag: Modersohnstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/12) Richtung Stralauer Allee zwischen Simplonstr. und Revaler Str., 02.11.2012 11:13 Uhr bis 21.12.2012 15:00 Uhr	IM_019325
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -23,18 +23,18 @@ Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2012-11-16 vvv
-#: next_check: 2012-11-19 vvv
+#: last_checked: 2012-11-21 vvv
+#: next_check: 2012-12-15 vvv
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
-Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
-Helsingforser Platz: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
+Helsingforser Str.: Bauarbeiten, Einbahnstraße, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
+Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2012-11-15
-#: next_check: 2012-11-19
-Mainzer Str., Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14272,11775 14311,11884
+#: last_checked: 2012-11-21
+#: next_check: 2012-11-27
+Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775 14311,11884
 # REMOVED --- Bauarbeiten beendet --- Mainzer Str., Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14311,11884 14357,12011
 # 
 #: last_checked: 2012-10-20
