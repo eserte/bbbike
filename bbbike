@@ -2024,6 +2024,7 @@ my $gruene_wege_check_index;
 my $vorfahrt_check_index;
 my $c_bpcm;
 my $comments_all_check_index;
+my $cycle_routes_check_index;
 unless($skip_features{"strassen"}) {
     $strasse_photo = load_photo($misc_frame, 'strasse');
     $strasse_check = $misc_frame->$Checkbutton
@@ -2154,7 +2155,7 @@ unless($skip_features{"strassen"}) {
     }
 
     my $create_comment_layers_cb = sub {
-	my($menu, $type) = @_;
+	my($menu, $type, %cb_args) = @_;
 	my $label = $comment_cat_labels{$type} || $type;
 	my $def = 'comm-' . $type;
 	$menu->checkbutton
@@ -2164,11 +2165,13 @@ unless($skip_features{"strassen"}) {
 		 my $file  = get_strassen_file("comments_" . $type);
 		 plot('str', $def, Filename => $file);
 	     },
+	     %cb_args,
 	    );
     };
 
     unless ($skip_features{"radroute"}) {
-	$create_comment_layers_cb->($strcm, "route");
+	$create_comment_layers_cb->($strcm, "route", -accelerator => 'Shift-Y');
+	$cycle_routes_check_index = $strcm->index('last');
 	$strcm->command(-label => M"Radroute auswählen",
 			-command => sub {
 			    choose_ort(qw(s comm-route),
@@ -4415,6 +4418,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	$strcm->invoke($fragezeichen_check_index)
     })
 	if defined $fragezeichen_check_index;
+    bind_nomod($top, "<Y>" => sub { $strcm->invoke($cycle_routes_check_index) }) if $strcm && defined $cycle_routes_check_index;
 
     bind_nomod($top, "<L>" => sub { $lstrcm->invoke($land_jwd_check_index) }) if $lstrcm && defined $land_jwd_check_index;
     bind_nomod($top, "<O>" => sub { $ocm->invoke($ort_jwd_check_index) }) if $ocm && defined $ort_jwd_check_index;
