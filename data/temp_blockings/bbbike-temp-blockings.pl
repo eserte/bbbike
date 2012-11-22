@@ -267,19 +267,22 @@ EOF
        #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
        data => '', # dummy
      },
-     { from  => 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
-       until => 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
-       text  => 'Spandauer Weihnachtsmarkt',
+     { from  => 1353884400, # 2012-11-26 00:00, # 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
+       until => 1356303599, # 2012-12-23 23:59, # 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
+       text  => 'Spandauer Weihnachtsmarkt, vom 26. November 2012 bis 23. Dezember 2012',
        type  => 'gesperrt',
+       source_id => 'http://partner-fuer-spandau.de/Weihnachtsmarkt-2012_479_0.html',
        data  => <<EOF,
-userdel	2 -3275,14407 -3231,14383 -3204,14368 -3155,14340
-userdel	2 -3275,14407 -3338,14333
-userdel	2 -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
-userdel	2 -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
-userdel	2 -3227,14260 -3155,14340
-userdel	2 -3227,14260 -3293,14304 -3338,14333
-userdel	2 -3552,14082 -3457,14189 -3409,14241 -3338,14333
-userdel	2 -3014,14559 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
+userdel	2::temp -3275,14407 -3231,14383 -3204,14368 -3155,14340
+userdel	2::temp -3275,14407 -3338,14333
+userdel	2::temp -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
+userdel	2::temp -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+userdel	2::temp -3227,14260 -3155,14340
+userdel	2::temp -3227,14260 -3293,14304 -3338,14333
+userdel	2::temp -3552,14082 -3457,14189 -3409,14241 -3338,14333
+userdel	2::temp -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
+userdel	2::temp -3110,14408 -3174,14438 -3228,14468
+userdel	2::temp -3231,14383 -3293,14304
 EOF
      },
      { from  => 1070600400, # 2003-12-05 06:00 # note: periodisch, siehe unten
@@ -1301,12 +1304,13 @@ EOF
 userdel	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => 1292626800, # PERIODISCH, Advents-Wochenenden! # früher: 1102654800, # 2004-12-10 06:00
-       until => 1292799599, # PERIODISCH, Advents-Wochenenden! # früher: 1102892400, # 2004-12-13 00:00
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 18.12. - 19.12.2010 ',
+     { from  => 1354356000, # 1292626800, # PERIODISCH, an allen Advents-Wochenenden! # früher: 1102654800, # 2004-12-10 06:00
+       until => 1354471200, # 1292799599, # PERIODISCH, an allen Advents-Wochenenden! # früher: 1102892400, # 2004-12-13 00:00
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 1.12. - 2.12.2012 ',
        type  => 'gesperrt',
+       source_id => 'http://www.sophienstrasse-berlin.de/?y=2012',
        data  => <<EOF,
-userdel	2 9986,13412 10317,13248
+userdel	2::temp 9986,13412 10317,13248
 EOF
      },
      { from  => 1102050000, # 2004-12-03 06:00 # note: periodisch, siehe unten
@@ -3293,11 +3297,11 @@ EOF
 userdel	1 -1668,-1709 -1715,-1767 -1921,-1931 -2049,-2165
 EOF
      },
-     { from  => 1321743600, # 2011-11-20 00:00 # PERIODISCH!
-       until => 1325458800, # 2012-01-02 00:00 # PERIODISCH!
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 21.11.2011 bis 1.1.2012',
+     { from  => 1353798000, # 2012-11-25 00:00 # 1321743600, # 2011-11-20 00:00 # PERIODISCH!
+       until => 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 26. November 2012 bis 06. Januar 2013',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20111116.1015.362582.html',
+       source_id => 'http://www.berlin.de/orte/weihnachtsmaerkte/weihnachtsmarkt-gedaechtniskirche/index.php?y=2012',
        data  => <<EOF,
 # sowieso schon mit q4 markiert, deshalb -> 2
 userdel	2::temp 5829,10964 5782,10884
@@ -3496,11 +3500,11 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => 1324076400, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
-       until => 1324150200, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
+     { from  => 1354356000, # 1324076400, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
+       until => 1354390200, # 1324150200, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
        text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20111109.1040.362258.html',
+       source_id => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-lichtenrade.html?y=2012',
        data  => <<EOF,
 userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
@@ -16990,29 +16994,31 @@ EOF
 userdel	q4::inwork -4630,-36012 -4603,-35730
 EOF
      },
-     { from  => 1290380400, # PERIODISCH! # undef, # 
-       until => 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
-       text  => 'Weihnachtsmarkt am Potsdamer Platz vom 22.11.2010 - 26.12.2010',
+     { from  => 1353279600, # 2012-11-19 00:00, # 1290380400, # PERIODISCH! # undef, # 
+       until => 1356562799, # 2012-12-26 23:59, # 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+       text  => 'Winterwelt am Potsdamer Platz vom 19. November 2012 bis 26. Dezember 2012',
        type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/orte/weihnachtsmaerkte/87132_winterwelt_und_weihnachtsmarkt_potsdamer_platz/index.php',
        data  => <<EOF,
-userdel	2::temp 8479,11493 8481,11447 8389,11378
+userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296 8278,11257
+#: XXX_prog "3::temp" geht nicht?
+userdel	3 8427,11365 8389,11378 8374,11479
+userdel	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
-       until => 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
-       text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (02.12.2011 bis 04.12.2011)',
+     { from  => 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
+       until => 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
+       text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (vom 07.12.2012 17:00 Uhr bis 09.12.2012 20:00 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13416,7712 13426,7674
-userdel	2 13416,7712 13297,7654
-userdel	2 13426,7674 13400,7642 13303,7622
-userdel	2 12980,7597 13100,7626 13177,7644
-userdel	2 13188,7590 13177,7644
-userdel	2 13188,7590 13303,7622
-userdel	2 13297,7654 13303,7622
-userdel	2 13297,7654 13177,7644
-userdel auto	3 13444,7879 13416,7712 13426,7674 13560,7646
-userdel auto	3 13560,7646 13426,7674 13416,7712 13444,7879
+userdel	2::temp 13416,7712 13426,7674
+userdel	2::temp 13416,7712 13297,7654
+userdel	2::temp 13426,7674 13400,7642 13303,7622
+userdel	2::temp 12980,7597 13100,7626 13177,7644
+userdel	2::temp 13188,7590 13177,7644
+userdel	2::temp 13188,7590 13303,7622
+userdel	2::temp 13297,7654 13303,7622
+userdel	2::temp 13297,7654 13177,7644
 EOF
      },
      { from  => 1212876000, # 2008-06-08 00:00
@@ -17047,10 +17053,11 @@ EOF
 userdel	2::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
 EOF
      },
-     { from  => 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
-       until => 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 3. Dezember 2010 bis zum 12. Dezember 2010',
+     { from  => 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
+       until => 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 07.12.2012 bis zum 16.12.2012',
        type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/orte/weihnachtsmaerkte/schlossplatz-koepenick/index.php?y=2012',
        data  => <<EOF,
 userdel	2::temp 22111,4562 22162,4546 22214,4548
 EOF
