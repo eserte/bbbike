@@ -174,7 +174,7 @@ Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
 Revaler Str. (Straßenbahn)	1s:q3 13588,11490 13473,11456
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
-Grimmstr.	1 11023,9597 11089,9751 11136,9851 11164,9885
+Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751 11136,9851 11164,9885
 Grimmstr.	1 11164,9885 11175,9882
 Grimmstr.	1 11175,9882 11186,9861 11141,9732 11110,9661 11075,9576
 Körtestr.	1 11004,9554 11023,9597
@@ -184,6 +184,10 @@ Baerwaldstr.	1 10361,9755 10357,9813 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7865,3344 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
+#: XXX Nalepastr. wird in Zukunft wieder geöffnet
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
+#: last_checked: 2012-07-19
+#: next_check: 2013-04-01
 Nalepastr. am Rundfunkgebäude	2 17076,8443 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653 22314,4604
 Kietzer Str.	1s:q3 22372,4496 22383,4470
@@ -316,7 +320,9 @@ Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
 # REMOVED (nach temp-blockings verschoben) --- (Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen	2 13520,7485 13601,7366
-Barbarastr.	1 6451,3034 6371,2955 6320,2909 6357,2863 6368,2851
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
+#: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
+Barbarastr.	1s:q3 6451,3034 6371,2955 6320,2909 6357,2863 6368,2851
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
 Crusemarkstr.	1 10825,18634 10712,18975
 Kavalierstr.	1 10625,18831 10721,18575
@@ -1808,6 +1814,11 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7030&options=4
+#: XXX genaue Position der Schranke?
+Schranke	BNP:3::trailer=10 -822,16535
+#: note: in Richtung Dieffenbachstr. recht eng, in die andere Richtung ist mehr Platz
+Schranke	BNP:5::trailer=10 10919,9804
 Drängelgitter, kann umfahren werden	BNP:3::trailer=10 14969,10138
 #: note: öfters mal offen?
 Schwingtor	BNP:3::trailer=10 14146,12921
@@ -2252,7 +2263,7 @@ Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
 #: last_checked: 2012-05-06
-#: next_check: 2013-03-17
+#: next_check: 2013-10-27
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18866,-1674
 # 
 #: last_checked: 2012-08-10

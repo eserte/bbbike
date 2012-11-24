@@ -8791,7 +8791,7 @@ EOF
        source_id => 'IM_005827',
        data  => <<EOF,
 userdel	2::inwork 297,6541 441,6435
-userdel	2::inwork 1535,5155 1506,5169 1385,5214 1361,5228 1212,5353 1086,5491 1051,5525 990,5581 910,5654 894,5829 884,5974 869,6085 736,6217
+userdel	2::inwork 1514,5163 1443,5193 1385,5214 1333,5246 1212,5353 1086,5491 1051,5525 990,5581 910,5654 894,5829 884,5974 869,6085 736,6217
 userdel	2::inwork 486,6404 605,6345
 userdel	2::inwork -130,6694 218,6571
 EOF
@@ -14559,7 +14559,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013086',
        data  => <<EOF,
-userdel	q4::inwork 12553,18501 12560,18374 12575,18275
+userdel	q4::inwork 12548,18503 12555,18375 12566,18275
 EOF
      },
      { from  => 1246398622, # 2009-06-30 23:50
@@ -18236,7 +18236,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016256',
        data  => <<EOF,
-userdel	q4::inwork; 12575,18275 12597,18235 12693,18081 12736,17998
+userdel	q4::inwork; 12566,18275 12592,18230 12690,18079 12736,17998
 EOF
      },
      { from  => 1284532129, # undef
@@ -20439,7 +20439,7 @@ EOF
        until => 1342208385, # 1388530799, # 2013-12-31 23:59
        text  => 'Friedrichstr.(Mitte) in beiden Richtungen zwischen Unter den Linden und Behrenstr. Baustelle, Straße vollständig gesperrt, ab 13.07.2012 07 Uhr bis Ende Dezember 2013 ',
        type  => 'handicap',
-       source_id => 'INKO_091722',
+       source_id => 'INKO_091722_COPY_1',
        data  => <<EOF,
 userdel	q4::inwork 9358,12351 9369,12253
 EOF
@@ -20841,7 +20841,11 @@ EOF
        source_id => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
        recurring => 1,
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3228&options=4 vvv
 	q4::temp:clock 11317,14564 11285,14515 11229,14422
+#: XXX_prog: q3, weil nur ca. 35m betroffen sind 
+	q3::temp:clock 11317,14564 11436,14741
+#: by: ^^^
 EOF
      },
      { from  => 1352847600, # 2012-11-14 00:00

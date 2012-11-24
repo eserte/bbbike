@@ -24,6 +24,7 @@ Kirchhofstr.: Qualität?	? -3034,15217 -3138,15259 -3235,15307 -3295,15356
 Kirchhofstr. - Schönwalder Str. (am Koeltzepark): Existiert eine Durchfahrt für Radfahrer? Qualität?	? -3295,15356 -3359,15426
 Lasiuszeile: Qualität?	? -3260,15550 -3293,15481
 Lutherplatz: Qualität?	? -3296,15563 -3306,15644
+Lutherplatz: Qualität der östlichen Fahrbahn?	? -3179,15574 -3190,15655
 Neumeisterstr.: Qualität?	? -3296,15563 -3461,15544
 Predigergarten: Qualität?	? -3235,15307 -3250,15281 -3285,15258
 Hedwigstr. (Spandau): Qualität?	? -3293,15645 -3302,15787
@@ -1256,6 +1257,7 @@ Siegward-Sprotte-Straße (Potsdam): (Planstraße "Nord")	? -15379,377 -15261,431
 Haeberlinweg (Potsdam): (Planstraße "Süd")	? -15381,160 -15264,85
 Preußenpark: Qualität des Weges? Nachts beleuchtet?	? 4353,9430 4281,9393
 Am Kaniswall: Privatstraße, wo genau? Qualität?	? 32823,-202 32970,320
+Alter Fischerweg (Gosen): Qualität? Ausschilderung?	? 32778,-1044 33013,-790 33117,-767 33140,-703 33061,-636 33046,-551 32842,-509 32889,-402 32854,-201
 Straße 180 (Rudow): existieren hier Straßenschilder?	? 16738,175 16770,192
 Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege oder Radspuren?	? 12938,1348 12941,1256 12984,1011
 Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576 13396,3512 13526,3519
@@ -1309,7 +1311,9 @@ Westphalweg/Dirschelweg - Schwimmbad: existiert hier für Radfahrer eine Verbindu
 Im Eck - Heinitzweg: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet? Gibt es hier Drängelgitter?	? 10150,1041 10220,1034
 Groß-Ziethener Str. - Tietjenstr.: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 11578,-1220 11550,-1230 11559,-1363 11564,-1460 11572,-1603 11581,-1731
 Schönburger Str. - Blumenthalstr.: existiert für Radfahrer eine Verbindung durch den Bosepark? Qualität? Nachts beleuchtet?	? 8946,6501 8959,6292
+Lutoner Str./Cosmarweg: ist die Straße eine Vorfahrtsstraße oder gilt hier rechts-vor-links?	? -5321,13191 -5472,13235 -5674,13130 -5753,13107 -5790,13097 -5822,13088 -5928,13060 -6029,13033 -6151,13001
 # added from ampeln-orig
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4408&options=4 (Zeiten)
 #: note: am Wochenende ausgeschaltet (immer?)
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741

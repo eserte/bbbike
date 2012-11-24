@@ -204,7 +204,7 @@ Nikolsburger Platz: Fuﬂg‰nger, Bordsteine	q3 5374,9619 5307,9664
 zur Sybelstr.: Bordsteine	q4 3712,10566 3739,10576
 Rosa-Luxemburg-Str.: Fuﬂg‰nger, Bordsteine	q3 10695,12933 10685,12966
 Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307
-Br¸cke Schˆnflieﬂer Str.: Fuﬂg‰nger	q3 10593,16037 10581,15936
+Br¸cke Schˆnflieﬂer Str.: Fuﬂg‰nger	q3 10593,16037 10592,15968 10575,15968
 (Kolonie Bornholm 1 und 2): Fuﬂg‰nger, enger Weg, Radfahren nicht erlaubt, ggfs. schieben	q3 10209,16674 10198,16929
 (zum Rolandufer): Gehweg	q2 11351,12221 11278,12185
 Rolandufer: Gehweg, viele Fuﬂg‰nger	q3 10837,12158 10660,12176 10591,12203 10583,12206
@@ -612,7 +612,7 @@ KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4957,15267 4883,15289 4777,15398 4675,15529 
 Hauptweg - Uferweg: einige Fuﬂg‰nger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4754,15388 4664,15491 4459,15723 4273,15740 4224,15779 4216,15799 4390,15913 4390,15923 4383,15939 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4084,15859 4055,15795 3982,15793 3924,15768 3775,15768 3371,15777 3308,15773 3255,15785 3005,15780 1737,15797
-(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1348,15802 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095 -910,16608
+(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1348,15802 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1 -993,16682 -992,16688 -995,16701 -1073,16610 -1159,16563 -1321,16543
 Maselakepark: Fuﬂg‰nger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fuﬂg‰nger	q1 -2587,16600 -2632,16347
@@ -1090,6 +1090,7 @@ Schliemannstr. [¸ber Helmholtzplatz]: Fuﬂg‰nger	q2 11368,15301 11334,15248
 (Museumsinsel): Fuﬂg‰nger, besonders zu Museumsˆffnungszeiten	q2 10017,12675 9972,12732 9987,12744 9952,12791
 Pasedagplatz: Straﬂenbahn	q2 14170,17249 14150,17255 14099,17195
 Hochwaldstr.: eng, kurvig	q3 19577,8438 19544,8421 19526,8458
+Grimmstr. [ehemaliges Urbankrankenhaus]: Wohngebiet	q2 11072,9711 11040,9724 11030,9702 10899,9754 10887,9729 11016,9671 11009,9655 11042,9642
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1886,6 +1887,7 @@ Tannenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3023,1
 Tannenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3038,18063 -3028,18027
 Isarstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 12349,8464 12368,8356
 Schwartzkopffstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8776,14364 8607,14253
+Barbarastr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 6451,3034 6371,2955 6320,2909 6357,2863 6368,2851
 Stiftsweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11001,18528 11268,18851
 Steilpfad: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 3375,21230 3280,21477
 Erkelenzdamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261

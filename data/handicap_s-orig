@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2012-11-21
+#: last_checked: 2012-11-22
 #: next_check: 2013-05-17
 #: note: vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen Mühlenstr. und Oberbaumbrücke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¦INKO_113418¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-11-21 vvv
+#: last_checked: 2012-11-22 vvv
 #: next_check: 2012-12-21 vvv
 #: note: vmz-Eintrag: Modersohnstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/12) Richtung Stralauer Allee zwischen Simplonstr. und Revaler Str., 02.11.2012 11:13 Uhr bis 21.12.2012 15:00 Uhr	IM_019325
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -106,12 +106,12 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10281,12310 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # 
-#: last_checked: 2012-11-09
-#: next_check: 2012-11-30
+#: last_checked: 2012-11-22
+#: next_check: 2012-12-10
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2012-11-09 vvv
-#: next_check: 2012-11-30 vvv
+#: last_checked: 2012-11-22 vvv
+#: next_check: 2012-12-10 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 #: next_check: ^^^
@@ -345,7 +345,7 @@ Nikolsburger Platz: Fußgänger, Bordsteine	q3 5374,9619 5307,9664
 zur Sybelstr.: Bordsteine	q4 3712,10566 3739,10576
 Rosa-Luxemburg-Str.: Fußgänger, Bordsteine	q3 10695,12933 10685,12966
 Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307
-Brücke Schönfließer Str.: Fußgänger	q3 10593,16037 10581,15936
+Brücke Schönfließer Str.: Fußgänger	q3 10593,16037 10592,15968 10575,15968
 #: corrected_by: Sven Reimann ("Radfahren nicht erlaubt")
 (Kolonie Bornholm 1 und 2): Fußgänger, enger Weg, Radfahren nicht erlaubt, ggfs. schieben	q3+ 10209,16674 10198,16929
 (zum Rolandufer): Gehweg	q2 11351,12221 11278,12185
@@ -821,7 +821,7 @@ KGA Plötzensee: einige Fußgänger	q1 4957,15267 4883,15289 4777,15398 4675,15529 
 Hauptweg - Uferweg: einige Fußgänger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4754,15388 4664,15491 4459,15723 4273,15740 4224,15779 4216,15799 4390,15913 4390,15923 4383,15939 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4084,15859 4055,15795 3982,15793 3924,15768 3775,15768 3371,15777 3308,15773 3255,15785 3005,15780 1737,15797
-(Am Hohenzollernkanal): einige Fußgänger	q0- 1348,15802 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095 -910,16608
+(Am Hohenzollernkanal): einige Fußgänger	q0- 1348,15802 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fußgänger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1159,16563 -1321,16543
 Maselakepark: Fußgänger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fußgänger	q1 -2587,16600 -2632,16347
@@ -1415,6 +1415,7 @@ Schliemannstr. [über Helmholtzplatz]: Fußgänger	q2 11368,15301 11334,15248
 (Museumsinsel): Fußgänger, besonders zu Museumsöffnungszeiten	q2 10017,12675 9972,12732 9987,12744 9952,12791
 Pasedagplatz: Straßenbahn	q2 14170,17249 14150,17255 14099,17195
 Hochwaldstr.: eng, kurvig	q3 19577,8438 19544,8421 19526,8458
+Grimmstr. [ehemaliges Urbankrankenhaus]: Wohngebiet	q2 11072,9711 11040,9724 11030,9702 10899,9754 10887,9729 11016,9671 11009,9655 11042,9642
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

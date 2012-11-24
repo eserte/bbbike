@@ -3088,16 +3088,7 @@ userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,
        },
        undef,
        undef,
-       {
-         'source_id' => 'INKO_114523',
-         'until' => 1353682800,
-         'text' => 'Kurfürstenstr. zwischen Genthiner Str. und Einemstr. Richtung Westen Baustelle, Fahrbahn gesperrt, bis 23. November 2012 ',
-         'from' => 1350363600,
-         'id' => 2394,
-         'data' => 'userdel	q4::inwork; 7315,10537 7117,10611 7115,10612 6972,10665
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20121025.1210.377071.html',
          'until' => 1354316399,
@@ -3158,7 +3149,11 @@ userdel	q3::inwork 11271,14755 11187,14763
        {
          'source_id' => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
          'recurring' => 1,
-         'data' => '	q4::temp:clock 11317,14564 11285,14515 11229,14422
+         'data' => '#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3228&options=4 vvv
+	q4::temp:clock 11317,14564 11285,14515 11229,14422
+#: XXX_prog: q3, weil nur ca. 35m betroffen sind 
+	q3::temp:clock 11317,14564 11436,14741
+#: by: ^^^
 ',
          'until' => undef,
          'from' => undef,
