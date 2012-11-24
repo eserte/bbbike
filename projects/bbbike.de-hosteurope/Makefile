@@ -211,6 +211,7 @@ TARGET=${TARGET_LIVE}
 TARGET=bbbike.hosteurope.herceg.de
 .elif make(automatic-deployment) || \
       make(automatic-deployment-temp-blockings) || \
+      make(automatic-deployment--check-prerequisites) || \
       make(deploy-pps)
 # no TARGET=
 .else
@@ -846,7 +847,7 @@ post-automatic-deploy-info:
 	@echo "    git tag -f deployment/bbbikede/current"
 	@echo ""
 
-automatic-deployment:
+automatic-deployment: automatic-deployment--check-prerequisites
 	-@${XTERM_CONF_TITLE} "BBBike pre-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -update
 	-@${XTERM_CONF_TITLE} "BBBike pps deployment"
@@ -870,3 +871,7 @@ automatic-deployment-temp-blockings:
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
 	-@${XTERM_CONF_TITLE} "BBBike temp-blockings deployment finished"
+
+automatic-deployment--check-prerequisites:
+	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' bbbike-pps
+	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' bbbike.de
