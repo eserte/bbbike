@@ -746,6 +746,7 @@ Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 Amalienstr.	1s 13789,16775 13722,16843 13653,16907 13589,16965
 Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 Pasedagplatz	1s 14174,17226 14144,17165
+(Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Hochstraße	3nocross::ignrte -11399,-1339 -11461,-1424 -11540,-1543
@@ -2097,7 +2098,7 @@ tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60:89 -19150,7320
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60:57 -19183,7299
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:-156 30534,-3105
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:30 30546,-3072
-tragen (Treppe Mansfelder Str.)	0:30:-269 3619,9331
+tragen (rund 12 Stufen)	0:20:-269 3619,9331
 tragen (22 Stufen)	0:30:-263 9557,12992
 tragen (Treppe)	0:30:86 9508,12991
 tragen (Treppe)	0:30:-226 9983,16561
@@ -2414,6 +2415,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
 Drängelgitter	BNP:3:64:trailer=10 49739,-90894
+Am Sudhaus: Bauarbeiten, noch gesperrt	2:inwork 12134,8172 12282,8204
 Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	2:inwork 14465,11195 14442,11101

@@ -642,6 +642,7 @@ freigegebener Gehweg	RW; -9723,-2451 -9963,-2253
 straßenbegleitende Radwege	RW;RW -11253,13707 -11635,13818 -12145,13943 -13019,13861 -13330,13857 -14057,13830 -16015,13705 -16767,13639 -16982,13681 -17175,13749 -18726,14303 -18976,14381 -19527,14652
 # 
 #: by: Stefan Schmidt:
+#: note: bergmann (...beuth...) meint: "Radweg nicht mehr ganz so glatt"
 	RW;RW 11165,-5318 11291,-4485 11355,-4293 11338,-3945
 # 
 #: by: Aimo Raasch vvv
@@ -719,3 +720,9 @@ Radweg auf Bürgersteig	RW;RW 68016,72528 68281,72757 68690,72995
 # 
 #: by: Roland Krause:
 asphaltiert	RW;RW8? 4227,-5721 4547,-4951 4842,-4182 5068,-3719 5394,-3053
+# 
+#: by: bergmann (...beuth...)
+#: XXX in beiden Richtungen?
+Radweg vorhanden	RW 11054,-5341 11020,-5223 10518,-4820 10153,-4536
+#: XXX: bergmann meint "neuer Fußweg wird allgemein widerrechtlich von Radfahrern genutzt", aber osm meint bicycle=designated
+asphaltierter Gehweg	RW 11338,-3945 11671,-3400

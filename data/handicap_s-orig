@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2012-11-22
+#: last_checked: 2012-11-26
 #: next_check: 2013-05-17
 #: note: vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen Mühlenstr. und Oberbaumbrücke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¦INKO_113418¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-11-22 vvv
+#: last_checked: 2012-11-26 vvv
 #: next_check: 2012-12-21 vvv
 #: note: vmz-Eintrag: Modersohnstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/12) Richtung Stralauer Allee zwischen Simplonstr. und Revaler Str., 02.11.2012 11:13 Uhr bis 21.12.2012 15:00 Uhr	IM_019325
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -60,11 +60,11 @@ Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
-#: last_checked: 2012-11-14
+#: last_checked: 2012-11-25
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2012-11-14
-Universitätsstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9580,12581 9601,12380
+#: last_checked: 2012-11-25
+Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
 #: last_checked: 2012-10-12 (wosch)
 #: next_check: 2012-10-30
@@ -106,19 +106,19 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10281,12310 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # 
-#: last_checked: 2012-11-22
-#: next_check: 2012-12-10
+#: last_checked: 2012-11-26
+#: next_check: 2012-12-15
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2012-11-22 vvv
-#: next_check: 2012-12-10 vvv
+#: last_checked: 2012-11-26 vvv
+#: next_check: 2012-12-15 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-11-14 vvv
-#: next_check: 2012-12-12 vvv
+#: last_checked: 2012-11-25 vvv
+#: next_check: 2012-12-20 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -129,8 +129,8 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 #: next_check: 2012-12-15
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 # 
-#: last_checked: 2012-11-14
-#: next_check: 2012-11-26
+#: last_checked: 2012-11-25
+#: next_check: 2012-12-15
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
 # 
 ### Köpenick ###
@@ -758,7 +758,7 @@ Weg am Tempodrom: Fußgänger, eng, kurvig	q2 8854,10712 8798,10678 8738,10704 870
 Kienheideweg: Fußgänger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fußgänger	q1 13331,5640 13414,5655
 Kienheideweg - Buschkrugallee: Fußgänger	q1 13511,5675 13612,5698
-Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12647,7672
+Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12672,7561 12647,7672
 Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12602,7907 12583,7974
 Elli-Voigt-Str.: Bodenschwellen	q3 15833,13596 15831,13760
 Elli-Voigt-Str.: Bodenschwellen	q3 15792,13764 15794,13975
@@ -1416,6 +1416,9 @@ Schliemannstr. [über Helmholtzplatz]: Fußgänger	q2 11368,15301 11334,15248
 Pasedagplatz: Straßenbahn	q2 14170,17249 14150,17255 14099,17195
 Hochwaldstr.: eng, kurvig	q3 19577,8438 19544,8421 19526,8458
 Grimmstr. [ehemaliges Urbankrankenhaus]: Wohngebiet	q2 11072,9711 11040,9724 11030,9702 10899,9754 10887,9729 11016,9671 11009,9655 11042,9642
+(Vorfahrt am Bahnhof Friedrichstr.): eng, Taxis, querende Fußgänger	q2 9171,12758 9303,12718
+#: XXX_prog BS auf beiden Seiten
+Selkestr.: Fußgänger, Bordsteine	q3 12722,7261 12741,7224
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2963,3 +2966,8 @@ Narzissenpfad: enge Straße	q0- -7387,14951 -7523,14969
 #: by: Franka (...griem...)
 #: corrected_by: srt/policy (q2 -> q1) (auf der anderen Seite ebenfalls q1)
 (Pankeweg zwischen Pankstr. und Wiesenstr.): einige Fußgänger	q1 8140,15859 8129,15701 8156,15614
+# 
+#: by: Wolfgang Koehne vvv
+(Am Rosenanger - Am Sandkrug, Entenschnabel): stark abschüssig, eine 30cm-Stufe	q4; 3462,24702 3489,24659 3535,24626
+(Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3489,24659 3462,24702
+#: by: ^^^

@@ -13,7 +13,7 @@ Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Aus
 Friedrichstr.(Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-Universitätsstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9580,12581 9601,12380
+Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
 Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689
@@ -557,7 +557,7 @@ Weg am Tempodrom: Fußgänger, eng, kurvig	q2 8854,10712 8798,10678 8738,10704 870
 Kienheideweg: Fußgänger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fußgänger	q1 13331,5640 13414,5655
 Kienheideweg - Buschkrugallee: Fußgänger	q1 13511,5675 13612,5698
-Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12647,7672
+Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12672,7561 12647,7672
 Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12602,7907 12583,7974
 Elli-Voigt-Str.: Bodenschwellen	q3 15833,13596 15831,13760
 Elli-Voigt-Str.: Bodenschwellen	q3 15792,13764 15794,13975
@@ -1091,6 +1091,8 @@ Schliemannstr. [über Helmholtzplatz]: Fußgänger	q2 11368,15301 11334,15248
 Pasedagplatz: Straßenbahn	q2 14170,17249 14150,17255 14099,17195
 Hochwaldstr.: eng, kurvig	q3 19577,8438 19544,8421 19526,8458
 Grimmstr. [ehemaliges Urbankrankenhaus]: Wohngebiet	q2 11072,9711 11040,9724 11030,9702 10899,9754 10887,9729 11016,9671 11009,9655 11042,9642
+(Vorfahrt am Bahnhof Friedrichstr.): eng, Taxis, querende Fußgänger	q2 9171,12758 9303,12718
+Selkestr.: Fußgänger, Bordsteine	q3 12722,7261 12741,7224
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7245,8583 7292,8631
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1874,6 +1876,8 @@ Reformationsplatz: Fußgängerzone	q4 -3107,14535 -3134,14513 -3150,14478 -3174,14
 Földerichplatz: mehrere Betonpoller, Bordstein	q4 -3941,12545 -3942,12559
 Narzissenpfad: enge Straße	q0 -7387,14951 -7523,14969
 (Pankeweg zwischen Pankstr. und Wiesenstr.): einige Fußgänger	q1 8140,15859 8129,15701 8156,15614
+(Am Rosenanger - Am Sandkrug, Entenschnabel): stark abschüssig, eine 30cm-Stufe	q4; 3462,24702 3489,24659 3535,24626
+(Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3489,24659 3462,24702
 Dennewitzplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Richterstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886

@@ -4387,7 +4387,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LMS_1146113785841',
        data  => <<EOF,
-userdel	2 9098,12687 9117,12705 9209,12795
+userdel	2 9098,12687 9117,12705 9171,12758 9209,12795
 userdel	2 9280,12883 9209,12795
 EOF
      },
@@ -17012,13 +17012,13 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 13416,7712 13426,7674
-userdel	2::temp 13416,7712 13297,7654
+userdel	2::temp 13416,7712 13288,7653
 userdel	2::temp 13426,7674 13400,7642 13303,7622
 userdel	2::temp 12980,7597 13100,7626 13177,7644
 userdel	2::temp 13188,7590 13177,7644
 userdel	2::temp 13188,7590 13303,7622
-userdel	2::temp 13297,7654 13303,7622
-userdel	2::temp 13297,7654 13177,7644
+userdel	2::temp 13288,7653 13303,7622
+userdel	2::temp 13288,7653 13177,7644
 EOF
      },
      { from  => 1212876000, # 2008-06-08 00:00
@@ -20815,9 +20815,8 @@ EOF
        text  => 'Richardstr.: Baustelle zwischen Böhmische Str. und Richardplatz, Fahrtrichtung gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-11-02
-#: next_check: 2012-11-19
-#: XXX möglicherweise wird die Straße danach asphaltiert sein
+#: XXX bis wann ist die Baustelle fertig?
+#: last_checked: 2012-11-26
 userdel	q4::inwork; 13339,7452 13303,7622
 EOF
      },
@@ -20882,6 +20881,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 10293,-1904 10243,-1876 10099,-1482
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Emser Straße: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2012-11-26
+userdel	q4::inwork 12872,7134 13058,7165
 EOF
      },
     );

@@ -2339,13 +2339,13 @@ userdel	3 8374,11479 8389,11378 8427,11365
          'from' => 1354809600,
          'id' => 1998,
          'data' => 'userdel	2::temp 13416,7712 13426,7674
-userdel	2::temp 13416,7712 13297,7654
+userdel	2::temp 13416,7712 13288,7653
 userdel	2::temp 13426,7674 13400,7642 13303,7622
 userdel	2::temp 12980,7597 13100,7626 13177,7644
 userdel	2::temp 13188,7590 13177,7644
 userdel	2::temp 13188,7590 13303,7622
-userdel	2::temp 13297,7654 13303,7622
-userdel	2::temp 13297,7654 13177,7644
+userdel	2::temp 13288,7653 13303,7622
+userdel	2::temp 13288,7653 13177,7644
 ',
          'type' => 'gesperrt'
        },
@@ -3125,9 +3125,8 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'text' => 'Richardstr.: Baustelle zwischen Böhmische Str. und Richardplatz, Fahrtrichtung gesperrt',
          'from' => undef,
          'id' => 2398,
-         'data' => '#: last_checked: 2012-11-02
-#: next_check: 2012-11-19
-#: XXX möglicherweise wird die Straße danach asphaltiert sein
+         'data' => '#: XXX bis wann ist die Baustelle fertig?
+#: last_checked: 2012-11-26
 userdel	q4::inwork; 13339,7452 13303,7622
 ',
          'type' => 'handicap'
@@ -3198,6 +3197,16 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
          'from' => 1351983600,
          'id' => 2404,
          'data' => 'userdel	q4::inwork 10293,-1904 10243,-1876 10099,-1482
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Emser Straße: Bauarbeiten, Fahrbahn gesperrt',
+         'from' => undef,
+         'id' => 2405,
+         'data' => '#: last_checked: 2012-11-26
+userdel	q4::inwork 12872,7134 13058,7165
 ',
          'type' => 'handicap'
        }

@@ -998,6 +998,7 @@ Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 Amalienstr.	1s:q3 13789,16775 13722,16843 13653,16907 13589,16965
 Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 Pasedagplatz	1s:q3 14174,17226 14144,17165
+(Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
 ######################################################################
 #
 # Potsdam
@@ -1735,7 +1736,8 @@ tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60 -19150,7320
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60 -19183,7299
 schieben (Rampe Schmöckwitzwerdersteg)	0:30 30534,-3105
 schieben (Rampe Schmöckwitzwerdersteg)	0:30 30546,-3072
-tragen (Treppe Mansfelder Str.)	0:30 3619,9331
+#: by: Fridtjof Gramsch (Anzahl der Stufen)
+tragen (rund 12 Stufen)	0:20 3619,9331
 tragen (22 Stufen)	0:30 9557,12992
 tragen (Treppe)	0:30 9508,12991
 #: by: rjoop
@@ -2189,6 +2191,9 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2012-11-26
+Am Sudhaus: Bauarbeiten, noch gesperrt	2:inwork 12134,8172 12282,8204
+# 
 #: by: rjoop
 #: last_checked: 2012-11
 #: next_check: 2013-03-15
@@ -2202,7 +2207,7 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 #: XXX siehe auch Einträge in handicap_s-orig
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
-#: last_checked: 2012-11-12
+#: last_checked: 2012-11-25
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	2:inwork 14465,11195 14442,11101
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html
