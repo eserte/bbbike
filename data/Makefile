@@ -161,16 +161,19 @@ persistent-tmp:	fragezeichen-outdoor-nextcheck \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org \
-		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
-		${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
-		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
-		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/Berlin.coords.bbd \
 		${PERSISTENTTMPDIR}/Potsdam.coords.bbd \
 		${PERSISTENTTMPDIR}/non-faked-plaetze \
 		${PERSISTENTTMPDIR}/non-faked-strassen \
 		${PERSISTENTTMPDIR}/XXX.bbd \
-		${PERSISTENTTMPDIR}/plz-b.bbd
+		${PERSISTENTTMPDIR}/plz-b.bbd \
+		${PERSISTENTTMPDIR}/berlin-fragezeichen-poi.gpx
+
+rare-persistent-tmp:	\
+		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
+		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt \
+		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
+		${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd
 
 # popular targets
 fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
@@ -1069,6 +1072,7 @@ ${PERSISTENTTMPDIR}/.fragezeichen-other-source:	${DATADIR}/qualitaet_s-orig ${DA
 
 PREFIXMAP=sperr=SP,kopfstein=KP,qualität=QU,mäßig.geeignet=QU,radweg=RW,benutzungspflich=RW,bau=BA,vorfahrt=VF,name=NA,bezeichn=NA,vorfahrt=VF,ampel=AM
 
+# XXX not really in use...
 ${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt:	fragezeichen Makefile
 	${PERL} ${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
 	    -prefix XXX -match name \
@@ -1096,6 +1100,7 @@ ${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt:	fragezeichen Makefile
 
 # The both bboxes are: Potsdam and central Berlin (Mitte,
 # Friedrichshain, Kreuzberg)
+# XXX not really in use...
 ${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt:	fragezeichen Makefile
 	${MAKE} /tmp/upload-restricted-fragezeichen.wpt \
 	    RESTRICT_BBOX="-8250,2025,-15000,-2675 16500,15375,4625,5984 26687,-316,9090,9005"
@@ -1107,6 +1112,30 @@ temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-bl
 	    -action output_future_nonrecurring \
 	    -action dump_future_as_perl > $@
 	touch .check_bbbike-temp-blockings-optimized
+	-@$(READONLY) $@
+
+# Another fragezeichen POI approach: restrict to whole
+# of Berlin, use only the center coordinate, use
+# the fragezeichen-nextcheck.bbd file as input,
+# create a gpx file
+${PERSISTENTTMPDIR}/berlin-fragezeichen-poi.gpx: ${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck-middlepoint.bbd
+	-@$(WRITEABLE) $@
+	${PERL} ${MISCSRCDIR}/restrict_bbd_data.pl \
+		-polygon-bbd berlin \
+		-strdata $> \
+		-o - |\
+	    ${PERL} ${MISCSRCDIR}/bbd2gpsman.pl \
+		-filter nearby=200 \
+		-prefix XXX \
+		-match name \
+		-prefixmap ${PREFIXMAP} \
+		-symbol danger |\
+	    ${PERL} ${MISCSRCDIR}/gpsman2gpx - > $@
+	-@$(READONLY) $@
+
+${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck-middlepoint.bbd: ${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
+	-@$(WRITEABLE) $@
+	${REPLACESTRASSEN} -coordsexpr 'my @c = split / /, $$_; $$_ = $$c[@c/2]' $> > $@
 	-@$(READONLY) $@
 
 # XXX Optimierungsmöglichkeit: aus "fragezeichen" alle Strecken herausnehmen, die bereits auf Strecken in strassen+landstrassen matchen
