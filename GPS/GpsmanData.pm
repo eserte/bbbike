@@ -155,6 +155,15 @@ use GPS::Util; # for eliminate_umlauts
 	    $namexml->appendText($ident);
 	}
 
+	# may be skipped, because often it's just the date/time
+	if (!$args{skipcmt}) {
+	    my $comment = $wpt->Comment;
+	    if (defined $comment and length $comment) {
+		my $commentxml = $xmlnode->addNewChild(undef, 'cmt');
+		$commentxml->appendText($comment);
+	    }
+	}
+
 	my $symbol = $wpt->Symbol;
 	if (defined $symbol && length $symbol) {
 	    $symbol = GPS::GpsmanData::GarminGPX::gpsman_symbol_to_garmin_symbol_name($symbol);
@@ -168,13 +177,6 @@ use GPS::Util; # for eliminate_umlauts
 		$symbolxml->appendText($symbol);
 	    }
 	}
-
-	## normally not useful --- it's the date/time
-	#my $comment = $wpt->Comment;
-	#if (defined $comment and length $comment) {
-	#    my $commentxml = $wptxml->addNewChild(undef, 'cmt');
-	#    $commentxml->appendText($comment);
-	#}
     }
 
 }
@@ -1156,6 +1158,7 @@ sub as_gpx {
     my($self, %args) = @_;
 
     my $sym_to_cmt = delete $args{symtocmt};
+    my $skip_cmt = $sym_to_cmt ? 1 : delete $args{skipcmt};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     require GPS::GpsmanData::GarminGPX;
@@ -1172,7 +1175,7 @@ sub as_gpx {
 	if ($chunk->Type eq $chunk->TYPE_WAYPOINT) {
 	    for my $wpt (@{ $chunk->Waypoints }) {
 		my $wptxml = $gpx->addNewChild(undef, "wpt");
-		$wpt->as_gpx($wptxml, $chunk, symtocmt => $sym_to_cmt);
+		$wpt->as_gpx($wptxml, $chunk, symtocmt => $sym_to_cmt, skipcmt => $skip_cmt);
 	    }
 	} elsif ($chunk->Type eq $chunk->TYPE_TRACK) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");

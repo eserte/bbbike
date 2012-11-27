@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 28;
+plan tests => 32;
 
 use_ok 'GPS::GpsmanData';
 
@@ -62,21 +62,37 @@ EOF
 	pass "Loaded gpsman data";
     }
 
-    my $gps = GPS::GpsmanMultiData->new;
-    isa_ok($gps, "GPS::GpsmanMultiData");
-    $gps->load($tmpfile);
-    my $gpx = $gps->as_gpx(symtocmt => 1);
-    gpxlint_string($gpx);
+    {
+	my $gps = GPS::GpsmanMultiData->new;
+	isa_ok($gps, "GPS::GpsmanMultiData");
+	$gps->load($tmpfile);
+	my $gpx = $gps->as_gpx; # preserve comments
+	gpxlint_string($gpx);
 
-    my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
-    $root->setNamespaceDeclURI(undef, undef);
-    like($root->findvalue('/gpx/wpt/@lat'), qr{54\.37311}, 'Found a latitude');
-    like($root->findvalue('/gpx/wpt/@lon'), qr{9\.094972}, 'Found a longitude');
-    like($root->findvalue('/gpx/wpt/name'), qr{Friedrichstad1}, 'Found a wpt name');
-    like($root->findvalue('/gpx/wpt/time'), qr{\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z}, 'Found a wpt time');
-    like($root->findvalue('/gpx/wpt/cmt'), qr{Punkt}, 'Found a user-def symbol name')
-	or diag "Please check the mapping in the bike2008 directory";
-    like($root->findvalue('/gpx/wpt/cmt'), qr{Pizza}, 'Found an official symbol name');
+	my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
+	$root->setNamespaceDeclURI(undef, undef);
+	like($root->findvalue('/gpx/wpt/cmt'), qr{26-JUL-10 11:37:07}, 'Found first comment')
+	    or diag "Please check the mapping in the bike2008 directory";
+	like($root->findvalue('/gpx/wpt/cmt'), qr{26-JUL-10 14:44:48}, 'Found second comment');
+    }
+
+    {
+	my $gps = GPS::GpsmanMultiData->new;
+	isa_ok($gps, "GPS::GpsmanMultiData");
+	$gps->load($tmpfile);
+	my $gpx = $gps->as_gpx(symtocmt => 1);
+	gpxlint_string($gpx);
+
+	my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
+	$root->setNamespaceDeclURI(undef, undef);
+	like($root->findvalue('/gpx/wpt/@lat'), qr{54\.37311}, 'Found a latitude');
+	like($root->findvalue('/gpx/wpt/@lon'), qr{9\.094972}, 'Found a longitude');
+	like($root->findvalue('/gpx/wpt/name'), qr{Friedrichstad1}, 'Found a wpt name');
+	like($root->findvalue('/gpx/wpt/time'), qr{\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z}, 'Found a wpt time');
+	like($root->findvalue('/gpx/wpt/cmt'), qr{Punkt}, 'Found a user-def symbol name')
+	    or diag "Please check the mapping in the bike2008 directory";
+	like($root->findvalue('/gpx/wpt/cmt'), qr{Pizza}, 'Found an official symbol name');
+    }
 }
 
 {

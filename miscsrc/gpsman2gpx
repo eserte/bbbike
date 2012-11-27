@@ -17,15 +17,26 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
+use Getopt::Long;
 use GPS::GpsmanData::Any;
 
-sub usage () { die "usage: $0 file" }
+sub usage () {
+    die "usage: $0 [-symtocmt] [-skipcmt] file"
+}
+
+my $symtocmt;
+my $skipcmt;
+GetOptions(
+	   "symtocmt" => \$symtocmt,
+	   "skipcmt" => \$skipcmt,
+	  )
+    or usage;
 
 my $file = shift || usage;
 usage if (@ARGV);
 
 my $self = GPS::GpsmanData::Any->load($file);
-print $self->as_gpx(symtocmt => 1);
+print $self->as_gpx(symtocmt => $symtocmt, skipcmt => $skipcmt);
 
 
 __END__
