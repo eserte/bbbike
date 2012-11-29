@@ -37,6 +37,8 @@ BEGIN {
 
 use constant MAX_LAYERS => 100;
 
+my $LINETYPES_RX = qr{(?:str|p|sperre)};
+
 sub start_ptksh {
     # Is there already a (withdrawn) ptksh?
     foreach my $mw0 (Tk::MainWindow::Existing()) {
@@ -508,8 +510,11 @@ sub plot_additional_sperre_layer {
 # Called from last cmdline (initial layers)
 sub plot_additional_layer_cmdline {
     my($layer_def, %args) = @_;
-    my($layer_type, $layer_filename) = split /=/, $layer_def, 2;
-    if (!defined $layer_type) {
+    my($layer_type, $layer_filename);
+    if ($layer_def =~ m{^($LINETYPES_RX)=(.*)}) {
+	($layer_type, $layer_filename) = ($1, $2);
+    } else {
+
 	($layer_type, $layer_filename) = ('str', $layer_def);
     }
     plot_additional_layer($layer_type, $layer_filename, %args);
@@ -525,7 +530,7 @@ sub plot_additional_layer {
     if ($linetype eq 'sperre') {
   	$abk = "$abk-sperre";
     }
-    if ($linetype !~ /^(str|p|sperre)$/) {
+    if ($linetype !~ /^$LINETYPES_RX$/) {
 #XXXdel	$str_draw{$abk} = 1;
 #    } elsif ($linetype eq 'p') {
 #XXXdel	$p_draw{$abk} = 1;
