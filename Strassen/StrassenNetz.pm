@@ -437,7 +437,7 @@ sub make_net_steigung {
 	$dist_so_far ||= 0;
 	my %seen = map { ($_=>1) } @$seen;
 
-	while(defined(my $neighbor = each %{$sourcenet->{Net}{$from}})) {
+	for my $neighbor (keys %{$sourcenet->{Net}{$from}}) {
 	    next if exists $seen{$neighbor};
 	    my $strecke1 = $dist_so_far;
 	    my $strecke2 = $calc_strecke->($from, $neighbor);
