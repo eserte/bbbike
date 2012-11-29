@@ -154,8 +154,8 @@ slow-checks:	check-categories \
 		check-coords.data \
 		persistent-tmp
 
-persistent-tmp:	fragezeichen-outdoor-nextcheck \
-		fragezeichen-outdoor \
+persistent-tmp:	fragezeichen-outdoor \
+		fragezeichen-outdoor-nextcheck \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
