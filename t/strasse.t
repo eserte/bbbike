@@ -32,6 +32,8 @@ my @split_street_citypart =
       ["Schopenhauerstr.", "Potsdam"]],
      ["Gustav-müller-str, 16" =>
       ["Gustav-müller-str, 16"]],
+     ["(Fenchelweg (KGA Foobar))" =>
+      ["(Fenchelweg (KGA Foobar))"]],
     );
 
 my @beautify_landstrasse =
@@ -43,6 +45,7 @@ my @beautify_landstrasse =
       "B1: (Berlin -) Potsdam", "B1: (Potsdam -) Berlin"],
      ["Am Neuen Palais (F2.2)" =>
       "Am Neuen Palais (F2.2)"],
+     ["(Fenchelweg (KGA Foobar))" => "(Fenchelweg (KGA Foobar))"],
      ["F2.2: Geltow - Wildpark West" =>
       "F2.2: (Geltow -) Wildpark West", "F2.2: (Wildpark West -) Geltow"],
      ["F2.2: Werderscher Damm (Wildpark West - Kuhfort)" => 

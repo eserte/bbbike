@@ -311,7 +311,9 @@ sub strip_bezirk_perfect {
 sub split_street_citypart {
     my $str = shift;
     my @cityparts;
-    if ($str =~ /^(.*)\s+\(([^\(]+)\)$/) {
+    if ($str =~ m{^\(}) {
+	# convention: streets beginning with "(" have no cityparts
+    } elsif ($str =~ /^(.*)\s+\(([^\(]+)\)$/) {
 	$str = $1;
 	@cityparts = split /\s*,\s*/, $2;
     } elsif ($str =~ /^([^(),]+\S),\s+(.{3,})/) { # with some sanity check: street needs at least three characters
