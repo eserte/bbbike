@@ -2923,9 +2923,9 @@ userdel	q3::inwork 10893,14705 11101,14768
        undef,
        {
          'source_id' => 'INKO_111688',
-         'until' => 1354464000,
+         'until' => 1354633200,
          'text' => 'Siemensstr. (Oberschöneweide): Baustelle, Fahrtrichtung gesperrt (bis Anfang 12/12) Richtung Edisonstr. zwischen Wattstr. und Edisonstr',
-         'from' => 1341219600,
+         'from' => 1341133200,
          'id' => 2353,
          'data' => 'userdel	q4::inwork; 17766,6616 17860,6644 17962,6674
 ',
@@ -2950,16 +2950,7 @@ userdel	q3::inwork 11912,14486 11642,14625
        },
        undef,
        undef,
-       {
-         'source_id' => 'INKO_113869',
-         'until' => 1354291200,
-         'text' => 'Pichelswerderstr. (Spandau): Baustelle, Fahrtrichtung gesperrt (bis Ende 11/2012) Richtung Freiheit zwischen Ruhlebener Str. und Gewerbehof',
-         'from' => 1342940400,
-         'id' => 2364,
-         'data' => 'userdel	q4::inwork; -2706,13291 -2699,13359 -2669,13488
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
@@ -3160,16 +3151,7 @@ userdel	q3::inwork 11271,14755 11187,14763
          'type' => 'gesperrt',
          'id' => 2400
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121114.1215.378008.html',
-         'until' => 1354229999,
-         'text' => 'Straßenbauarbeiten in der Zionskirchstraße von Kastanienallee bis Choriner Straße, Fahrbahn ist gesperrt, vom 15. November 2012 bis ca. 29. November 2012 ',
-         'from' => 1352847600,
-         'id' => 2401,
-         'data' => 'userdel	q4::inwork 10558,14176 10426,14262
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html',
          'until' => 1412114400,
@@ -3209,6 +3191,16 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
 userdel	q4::inwork 12872,7134 13058,7165
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20121128.1200.378696.html',
+         'until' => 1375308000,
+         'text' => 'Weg am Nordgraben: Weg wird saniert und ist möglicherweise nicht passierbar',
+         'from' => undef,
+         'id' => 2406,
+         'data' => 'userdel	2::inwork 6378,20460 6428,20487 6487,20512 6601,20542 7083,20584 7289,20618
+',
+         'type' => 'gesperrt'
        }
      
 );

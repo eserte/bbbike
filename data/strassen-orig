@@ -2638,7 +2638,7 @@ Godbersenstr.	H 27112,-2764 27054,-2771 26990,-2781
 Godbersenstr.	N 26990,-2781 26201,-2845
 Lindenstr. (Schmöckwitz)	H 26990,-2781 26931,-2871
 Jostweg (Köpenick)	N 21275,3607 21256,3640 21220,3642 21164,3812 21141,3958
-Glienicker Weg	H 20565,2754 20704,2939 20779,3046 20832,3170 20967,3343 21055,3415 21153,3484 21198,3522 21244,3571
+Glienicker Weg	H 20565,2754 20704,2939 20779,3046 20832,3170 20927,3292 20967,3343 21055,3415 21153,3484 21198,3522 21244,3571
 Glienicker Str. (Köpenick)	H 21244,3571 21275,3607 21308,3644 21324,3691
 Glienicker Str. (Köpenick)	NH 21324,3691 21357,3705 21411,3760 21489,3841 21496,3849 21679,4059 21823,4210
 (Glienicker Str. - Gewerbegebiet)	N 21308,3644 21352,3599 21384,3495 21617,3287
@@ -5913,6 +5913,7 @@ Straße 126	N 8401,22013 8260,22090
 Centweg	N 8401,22013 8382,21991 8275,22045
 (Quickborner Str. - Wilhelmsruher Damm)	NN 7959,21573 7750,21250
 (Mauerweg)	NN 8141,23477 7877,24037 7736,24239 7685,24302 7653,24412
+#: note: sogenannte "Humboldt-Spur" (by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121128.1200.378696.html)
 (Weg am Nordgraben)	NN 6378,20460 6428,20487 6487,20512 6601,20542 7083,20584 7289,20618
 (Mauerweg)	NN 7289,20618 7725,21247
 Tramper Weg	N 7080,20713 7083,20584
@@ -11365,8 +11366,8 @@ Hampsteadstr.	N 793,2632 940,2722 1036,2781 1144,2847 1255,2923 1290,2931 1437,2
 Schreberstr.	N 1426,2607 1447,2755 1437,2925
 Kilstetter Str.	N 1831,2905 1694,3120 1537,3027 1532,2921
 Scharnhorststr. (Mitte)	N 8450,13599 8313,13839 8200,14016 8184,14052 8152,14130 8077,14227 8054,14257 7938,14426
-#: note: Pharus bezeichnet diese Straße als "An der Kieler Brücke", aber es gibt keine anderen Hinweise im Internet auf diesen Straßennamen
-(Verlängerung der Scharnhorststr.)	N 7938,14426 7883,14508 7801,14450
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2012
+An der Kieler Brücke	N 7938,14426 7883,14508 7801,14450
 (an der Panke)	NN 7878,14514 7787,14473
 (an der Panke)	NN 7878,14514 7883,14508
 #: note: u.U. bezieht sich die Mauerwegausschilderung auf diesen Weg
@@ -12932,6 +12933,7 @@ Rosenheimer Str.	N 6164,9329 6070,9322
 #: XXX wird am 21. November 2012 zu Silvio-Meier-Str. umbenannt
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2012
 #: by: http://www.xhain.net/pm/2012/klage-gegen-umbenennung-der-gabelsbergerstrasse-in-silvio-meier-strasse
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2012
 #: last_checked: 2012-11-21
 Gabelsbergerstr.	N 14381,12205 14451,12396
 Heidenfeldstr.	N 13609,13427 13433,13346
