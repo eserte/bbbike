@@ -4463,6 +4463,14 @@ $c = $canvas_frame->Canvas
 $top->Advertise(Map => $c);
 $c->{Configure}{-seeview} = \&Tk::Canvas::smooth_scroll;
 #XXX$c->BindMouseWheel if defined &Tk::Widget::BindMouseWheel;
+{
+    # Re-shuffle bindtags: the "Tk::Canvas" tag is moved from 1st to
+    # 2nd position. A better solution would be to use a separate class
+    # for the map canvas.
+    my @c_bindtags = $c->bindtags;
+    @c_bindtags = @c_bindtags[1,0,2..$#c_bindtags];
+    $c->bindtags([@c_bindtags]);
+}
 
 $sy = $canvas_frame->Scrollbar(-command => ["yview", $c],
 			       -takefocus => 0,
@@ -4519,12 +4527,14 @@ $c->Tk::bind("<4>" => [sub { return if $_[1] ne "" && $_[1] ne "B4-";
 $c->Tk::bind("<5>" => [sub { return if $_[1] ne "" && $_[1] ne "B5-";
 			     $c->yviewScroll(+1,"units") },
 		       Tk::Ev('s')]);
-for ("<Control-5>", "<Shift-5>", "<B1-5>") {
+for ("<Shift-5>", "<B1-5>") {
     $c->Tk::bind($_ => sub { $c->xviewScroll(+1,"units") });
 }
-for ("<Control-4>", "<Shift-4>", "<B1-4>") {
+for ("<Shift-4>", "<B1-4>") {
     $c->Tk::bind($_ => sub { $c->xviewScroll(-1,"units") });
 }
+$c->Tk::bind('<Control-4>' => sub { scalecanvas_from_canvas_event($c, 2); Tk->break; });
+$c->Tk::bind('<Control-5>' => sub { scalecanvas_from_canvas_event($c, 0.5); Tk->break; });
 
 if ($c->can('DropSite')) {
     eval {
@@ -7621,20 +7631,10 @@ sub set_bindings {
 
     # Zoom
     for my $kp ('plus', 'KP_Add') {
-	$top->bind("<$kp>" => sub { my $e = $c->XEvent;
-				    return unless $e;
-				    my($x, $y) = ($c->canvasx($e->x),
-						  $c->canvasy($e->y));
-				    scalecanvas($c, 2, $x, $y);
-				});
+	$top->bind("<$kp>" => sub { scalecanvas_from_canvas_event($c, 2) });
     }
     for my $kp ('minus', 'KP_Subtract') {
-	$top->bind("<$kp>" => sub { my $e = $c->XEvent;
-				    return unless $e;
-				    my($x, $y) = ($c->canvasx($e->x),
-						  $c->canvasy($e->y));
-				    scalecanvas($c, 0.5, $x, $y);
-				});
+	$top->bind("<$kp>" => sub { scalecanvas_from_canvas_event($c, 0.5) });
     }
 
     $top->protocol('WM_DELETE_WINDOW', \&exit_app_noninteractive);
@@ -15963,6 +15963,15 @@ sub scalecanvas {
     show_zoomrect(1) if $scalefactor < 1 and not $args{-fast};
 
     Hooks::get_hooks("after_resize")->execute($scalefactor);
+}
+
+sub scalecanvas_from_canvas_event {
+    my($c, $scalefactor) = @_;
+    my $e = $c->XEvent;
+    return unless $e;
+    my($x, $y) = ($c->canvasx($e->x),
+		  $c->canvasy($e->y));
+    scalecanvas($c, $scalefactor, $x, $y);
 }
 
 ### AutoLoad Sub
