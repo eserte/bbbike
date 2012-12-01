@@ -2447,7 +2447,7 @@ userdel	2::temp 13288,7653 13177,7644
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2818,16 +2818,7 @@ userdel	2::inwork 19968,16 19940,52
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LS/O-SG33-F/12/014',
-         'until' => 1354316400,
-         'text' => 'Fredersdorf-Vogelsdorf: L30: Ersatzneubau Brücke über das Mühlenfließ OD Fredersdorf, möglicherweise komplett gesperrt, 06.02.2012 bis 30.11.2012 ',
-         'from' => 1329680038,
-         'id' => 2312,
-         'data' => 'userdel	2::inwork 34913,13893 35382,13974
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3080,16 +3071,7 @@ userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20121025.1210.377071.html',
-         'until' => 1354316399,
-         'text' => 'Fahrbahnsanierung der Rathausstraße vom 5. November 2012 bis Ende November 2012, Fahrbahn ist gesperrt',
-         'from' => 1352070000,
-         'id' => 2395,
-         'data' => 'userdel	q4::inwork 15537,12367 15576,12315 15628,12246 15651,12214
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -3164,24 +3146,8 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1354316400,
-         'text' => 'Hoeppnerstraße zwischen Werner-Voß-Damm und Mohnickesteig: halbseitige Sperrung mit Einbahnstraßenregelung in Fahrtrichtung Boelckestraße, vom 29.10.2012 bis 30.11.2012 ',
-         'from' => 1351465200,
-         'id' => 2403,
-         'data' => 'userdel	q4::inwork; 8604,7381 8479,7389 8429,7403 8386,7430 8376,7440 8302,7508 8267,7572 8263,7611
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1354316400,
-         'text' => 'Nuthestraße zwischen Steinstraße und Bodmerstraße: Vollsperrung vom 05.11.2012 bis 30.11.2012 ',
-         'from' => 1351983600,
-         'id' => 2404,
-         'data' => 'userdel	q4::inwork 10293,-1904 10243,-1876 10099,-1482
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => undef,
          'text' => 'Emser Straße: Bauarbeiten, Fahrbahn gesperrt',
