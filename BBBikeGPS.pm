@@ -1069,7 +1069,18 @@ sub BBBikeGPS::draw_track_graph {
     for my $type (@types) {
         $whole_what{$type} = "whole" . $against{$type};
 	my $whole_what = $whole_what{$type};
-	$max_x{$type} = $add_wpt_prop_ref->[-1]->$whole_what();
+	# Find maximum x, but ignore undefined (=inaccurate) points at
+	# the end
+	for(my $i=$#$add_wpt_prop_ref; $i>=0; $i--) {
+	    my $max_x = $add_wpt_prop_ref->[$i]->$whole_what();
+	    if (defined $max_x) {
+		$max_x{$type} = $max_x;
+		last;
+	    }
+	}
+	if (!defined $max_x{$type}) {
+	    warn "WARN: undefined \$max_x for '$type', things will probably break..."; # XXX
+	}
     }
 
     if (defined $limit_min{'alt'} || defined $limit_max{'alt'}) {
