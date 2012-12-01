@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2007,2008,2009,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007,2008,2009,2011,2012 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -14,7 +14,7 @@ use BBBikePlugin;
 push @ISA, "BBBikePlugin";
 
 use strict;
-use vars qw($VERSION $viewer_cursor $viewer $geometry $viewer_menu);
+use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $geometry $viewer_menu $viewer_sizes_menu);
 $VERSION = 1.25;
 
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
@@ -34,6 +34,7 @@ use Msg qw(frommain);
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 
 $viewer = "_internal" if !defined $viewer;
+$original_image_viewer = ($^O eq 'MSWin32' ? '_wwwbrowser' : 'xzgv') if !defined $original_image_viewer;
 $geometry = "third" if !defined $geometry;
 
 sub register {
@@ -104,6 +105,39 @@ sub add_button {
     $main::balloon->attach($b, -msg => M"Bildbetrachter")
 	if $main::balloon;
 
+    my %prog_is_available;
+    if ($^O ne 'MSWin32') {
+	for my $prog (qw(xv display xzgv eog gimp)) {
+	    $prog_is_available{$prog} = is_in_path($prog);
+	}
+    }
+
+    $viewer_sizes_menu = $mmf->Menu
+	(-menuitems =>
+	 [
+	  [Radiobutton => M"Ca. halbe Bildschirmgröße",
+	   -variable => \$geometry,
+	   -value => "half",
+	  ],
+	  [Radiobutton => M"Ca. 1/3 der Bildschirmgröße",
+	   -variable => \$geometry,
+	   -value => "third",
+	  ],
+	  [Radiobutton => M"Halbe Bildgröße",
+	   -variable => \$geometry,
+	   -value => "image-half",
+	  ],
+	  [Radiobutton => M"1/3 der Bildgröße",
+	   -variable => \$geometry,
+	   -value => "image-third",
+	  ],
+	  [Radiobutton => M"Maximale Größe",
+	   -variable => \$geometry,
+	   -value => "max",
+	  ],
+	 ]
+	);
+
     BBBikePlugin::place_menu_button
 	    ($mmf,
 	     [[Radiobutton => M"Internen Viewer verwenden",
@@ -111,6 +145,7 @@ sub add_button {
 	       -value => "_internal",
 	       -command => sub { viewer_change() },
 	      ],
+	      # Some viewers might be available, but forking (see below) does not work on MSWin32...
 	      ($^O eq 'MSWin32' ? () :
 	       (# xv is not surely not available ...
 		[Radiobutton => M"Bester externer Viewer",
@@ -118,7 +153,7 @@ sub add_button {
 		 -value => '_external',
 		 -command => sub { viewer_change() },
 		],
-		(is_in_path("xv")
+		($prog_is_available{"xv"}
 		 ? [Radiobutton => "xv",
 		    -variable => \$viewer,
 		    -value => "xv",
@@ -126,8 +161,7 @@ sub add_button {
 		   ]
 		 : ()
 		),
-		# ... display might be available, but forking (see below) does not work
-		(is_in_path("display")
+		($prog_is_available{"display"}
 		 ? [Radiobutton => "ImageMagick (display)",
 		    -variable => \$viewer,
 		    -value => "display",
@@ -135,8 +169,7 @@ sub add_button {
 		   ]
 		 : ()
 		),
-		# also usually not available on MSWin32
-		(is_in_path("xzgv")
+		($prog_is_available{"xzgv"}
 		 ? [Radiobutton => "xzgv",
 		    -variable => \$viewer,
 		    -value => "xzgv",
@@ -144,11 +177,18 @@ sub add_button {
 		   ]
 		 : ()
 		),
-		# also usually not available on MSWin32
-		(is_in_path("eog")
+		($prog_is_available{"eog"}
 		 ? [Radiobutton => "Eye of GNOME (eog)",
 		    -variable => \$viewer,
 		    -value => "eog",
+		    -command => sub { viewer_change() },
+		   ]
+		 : ()
+		),
+		($prog_is_available{"gimp"}
+		 ? [Radiobutton => "GIMP",
+		    -variable => \$viewer,
+		    -value => "gimp",
 		    -command => sub { viewer_change() },
 		   ]
 		 : ()
@@ -161,25 +201,58 @@ sub add_button {
 	       -command => sub { viewer_change() },
 	      ],
 	      "-",
-	      [Radiobutton => M"Ca. halbe Bildschirmgröße",
-	       -variable => \$geometry,
-	       -value => "half",
+	      [Cascade => M"Bildgröße",
+	       -menu => $viewer_sizes_menu,
 	      ],
-	      [Radiobutton => M"Ca. 1/3 der Bildschirmgröße",
-	       -variable => \$geometry,
-	       -value => "third",
-	      ],
-	      [Radiobutton => M"Halbe Bildgröße",
-	       -variable => \$geometry,
-	       -value => "image-half",
-	      ],
-	      [Radiobutton => M"1/3 der Bildgröße",
-	       -variable => \$geometry,
-	       -value => "image-third",
-	      ],
-	      [Radiobutton => M"Maximale Größe",
-	       -variable => \$geometry,
-	       -value => "max",
+	      [Cascade => M"Viewer für Originalbild",
+	       -menuitems =>
+	       [
+		($^O eq 'MSWin32' ? () :
+		 [Radiobutton => M"Bester externer Viewer",
+		  -variable => \$original_image_viewer,
+		  -value => '_external',
+		 ],
+		 ($prog_is_available{'xv'}
+		  ? [Radiobutton => 'xv',
+		     -variable => \$original_image_viewer,
+		     -value => 'xv',
+		    ]
+		  : ()
+		 ),
+		 ($prog_is_available{'display'}
+		  ? [Radiobutton => 'ImageMagick (display)',
+		     -variable => \$original_image_viewer,
+		     -value => 'display',
+		    ]
+		  : ()
+		 ),
+		 ($prog_is_available{'xzgv'}
+		  ? [Radiobutton => 'xzgv',
+		     -variable => \$original_image_viewer,
+		     -value => 'xzgv',
+		    ]
+		  : ()
+		 ),
+		 ($prog_is_available{'eog'}
+		  ? [Radiobutton => 'Eye of GNOME (eog)',
+		     -variable => \$original_image_viewer,
+		     -value => 'eog',
+		    ]
+		  : ()
+		 ),
+		 ($prog_is_available{'gimp'}
+		  ? [Radiobutton => 'GIMP',
+		     -variable => \$original_image_viewer,
+		     -value => 'gimp',
+		    ]
+		  : ()
+		 ),
+		),
+		[Radiobutton => M"WWW-Browser",
+		 -variable => \$original_image_viewer,
+		 -value => '_wwwbrowser',
+		],
+	       ],
 	      ],
 	      "-",
 	      [Button => M"Dieses Menü löschen",
@@ -201,16 +274,16 @@ sub add_button {
 }
 
 sub viewer_change {
-    my $enable;
-    if ($viewer eq '_wwwbrowser') {
-	$enable = 0;
+    my $enable_image_sizes;
+    if ($viewer eq '_wwwbrowser' || $viewer eq 'gimp') {
+	$enable_image_sizes = 0;
     } else {
-	$enable = 1;
+	$enable_image_sizes = 1;
     }
-    for my $inx (0 .. $viewer_menu->index("end")) {
-	my $varref = eval { $viewer_menu->entrycget($inx, -variable) };
+    for my $inx (0 .. $viewer_sizes_menu->index("end")) {
+	my $varref = eval { $viewer_sizes_menu->entrycget($inx, -variable) };
 	if ($varref && $varref == \$geometry) {
-	    $viewer_menu->entryconfigure($inx, -state => $enable ? "normal" : "disabled");
+	    $viewer_sizes_menu->entryconfigure($inx, -state => $enable_image_sizes ? "normal" : "disabled");
 	}
     }
 }
@@ -316,6 +389,7 @@ sub show_image_viewer {
 	my $use_viewer = $viewer;
 	if ($viewer eq '_external') {
 	    $use_viewer = find_best_external_viewer();
+	    $use_viewer = "_internal" if !$use_viewer;
 	}
 
 	if ($use_viewer eq '_internal') {
@@ -660,13 +734,22 @@ sub viewer_browser {
 }
 
 sub orig_viewer {
-    if ($^O eq 'MSWin32') {
-	viewer_browser(@_);
-    } elsif (is_in_path("xzgv")) {
-	viewer_xzgv('--zoom', '--zoom-reduce-only', '--fullscreen', @_);
-    } else {
-	viewer_display(imagemagick_maxpect_args(), @_);
+    my $use_original_image_viewer = $original_image_viewer;
+    if ($use_original_image_viewer eq '_external') {
+	$use_original_image_viewer = find_best_external_viewer();
+	$use_original_image_viewer = '_wwwbrowser' if !$use_original_image_viewer;
     }
+    if ($^O eq 'MSWin32' || $use_original_image_viewer eq '_wwwbrowser') {
+	viewer_browser(@_);
+    } elsif ($use_original_image_viewer eq 'xzgv') {
+	viewer_xzgv('--zoom', '--zoom-reduce-only', '--fullscreen', @_);
+    } elsif ($use_original_image_viewer eq 'display') {
+	viewer_display(imagemagick_maxpect_args(), @_);
+    } else {
+	my $cmd = "$use_original_image_viewer @_";
+	warn "Try $cmd...\n";
+	system("$cmd&");
+    }	
 }
 
 sub imagemagick_maxpect_args {
@@ -683,7 +766,7 @@ sub find_best_external_viewer {
     } elsif (is_in_path("eog")) {
 	"eog";
     } else {
-	"_internal";
+	undef;
     }
 }
 
