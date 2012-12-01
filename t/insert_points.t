@@ -72,6 +72,7 @@ for my $use_indexer (0, 1) {
 		    qw(
 		       ampeln-orig
 		       ampelschaltung-orig
+		       exits-orig
 		       hoehe-orig
 		       housenumbers-orig
 		       radwege-orig
@@ -94,6 +95,7 @@ for my $use_indexer (0, 1) {
 		    qw(
 		       ampeln
 		       ampelschaltung
+		       exits
 		       hoehe
 		       housenumbers
 		       radwege_exact
@@ -115,6 +117,7 @@ for my $use_indexer (0, 1) {
 		    qw(
 		       ampeln-orig
 		       ampelschaltung-orig
+		       exits-orig
 		       hoehe-orig
 		       housenumbers-orig
 		       radwege-orig
@@ -137,6 +140,7 @@ for my $use_indexer (0, 1) {
 		    qw(
 		       ampeln
 		       ampelschaltung
+		       exits
 		       hoehe
 		       housenumbers
 		       radwege_exact
