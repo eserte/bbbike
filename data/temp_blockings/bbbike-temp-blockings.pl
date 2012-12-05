@@ -1304,9 +1304,9 @@ EOF
 userdel	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => 1354356000, # 1292626800, # PERIODISCH, an allen Advents-Wochenenden! # früher: 1102654800, # 2004-12-10 06:00
-       until => 1354471200, # 1292799599, # PERIODISCH, an allen Advents-Wochenenden! # früher: 1102892400, # 2004-12-13 00:00
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 1.12. - 2.12.2012 ',
+     { from  => 1354834800, # 2012-12-07 00:00 # 1354356000, # 1292626800, # PERIODISCH, an allen Advents-Wochenenden! # früher: 1102654800, # 2004-12-10 06:00
+       until => 1355090400, # 2012-12-09 23:00 # 1354471200, # 1292799599, # PERIODISCH, an allen Advents-Wochenenden! # früher: 1102892400, # 2004-12-13 00:00
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 8.12. - 9.12.2012 ',
        type  => 'gesperrt',
        source_id => 'http://www.sophienstrasse-berlin.de/?y=2012',
        data  => <<EOF,
@@ -3500,8 +3500,8 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => 1354356000, # 1324076400, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
-       until => 1354390200, # 1324150200, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
+     { from  => 1354834800, # 2012-12-07 00:00 # 1354356000, # 1324076400, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
+       until => 1355004000, # 2012-12-08 23:00 # 1354390200, # 1324150200, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
        text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-lichtenrade.html?y=2012',
@@ -6044,7 +6044,7 @@ EOF
      },
      { from  => 1159693063, # 2006-10-01 10:57
        until => 1159916400, # 2006-10-04 01:00
-       text  => 'Residenzstr. (Wedding) in beiden Richtungen, zwischen Lindauer Alle und Pankower Allee Veranstaltung, Straße vollständig gesperrt (bis 04.10.06, 01.00 Uhr) ',
+       text  => 'Residenzstr. (Wedding) in beiden Richtungen, zwischen Lindauer Allee und Pankower Allee Veranstaltung, Straße vollständig gesperrt (bis 04.10.06, 01.00 Uhr) ',
        type  => 'gesperrt',
        source_id => 'IM_003701',
        data  => <<EOF,
@@ -20888,7 +20888,7 @@ EOF
        text  => 'Emser Straße: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-11-26
+#: last_checked: 2012-12-02
 userdel	q4::inwork 12872,7134 13058,7165
 EOF
      },

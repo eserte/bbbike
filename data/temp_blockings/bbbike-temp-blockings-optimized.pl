@@ -151,9 +151,9 @@ userdel	2::temp -3231,14383 -3293,14304
        undef,
        {
          'source_id' => 'http://www.sophienstrasse-berlin.de/?y=2012',
-         'until' => 1354471200,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 1.12. - 2.12.2012 ',
-         'from' => 1354356000,
+         'until' => 1355090400,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 8.12. - 9.12.2012 ',
+         'from' => 1354834800,
          'id' => 166,
          'data' => 'userdel	2::temp 9986,13412 10317,13248
 ',
@@ -422,9 +422,9 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-lichtenrade.html?y=2012',
-         'until' => 1354390200,
+         'until' => 1355004000,
          'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
-         'from' => 1354356000,
+         'from' => 1354834800,
          'id' => 417,
          'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 ',
@@ -2912,16 +2912,7 @@ userdel	q3::inwork 10893,14705 11101,14768
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_111688',
-         'until' => 1354633200,
-         'text' => 'Siemensstr. (Oberschöneweide): Baustelle, Fahrtrichtung gesperrt (bis Anfang 12/12) Richtung Edisonstr. zwischen Wattstr. und Edisonstr',
-         'from' => 1341133200,
-         'id' => 2353,
-         'data' => 'userdel	q4::inwork; 17766,6616 17860,6644 17962,6674
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3153,7 +3144,7 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
          'text' => 'Emser Straße: Bauarbeiten, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2405,
-         'data' => '#: last_checked: 2012-11-26
+         'data' => '#: last_checked: 2012-12-02
 userdel	q4::inwork 12872,7134 13058,7165
 ',
          'type' => 'handicap'
