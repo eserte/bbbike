@@ -2977,7 +2977,7 @@ userdel	2::night 14838,11410 14776,11400
        },
        {
          'source_id' => 'IM_019090',
-         'until' => 1355587200,
+         'until' => 1356105600,
          'text' => 'Köthener Brücke (Tiergarten): Baustelle, Straße gesperrt bis Mitte Dezember 2012',
          'from' => 1345119120,
          'id' => 2373,
@@ -3053,6 +3053,7 @@ userdel	q4::inwork; 10870,14689 10893,14705
          'data' => '#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
+#: by: IM_019421 (allerdings hier nur bis Dezember 2013?)
 #: next_check: 2014-01-01
 #: XXX danach bessere Straßenqualität? Radstreifen?
 userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
