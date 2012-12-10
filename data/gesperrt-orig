@@ -152,8 +152,8 @@ An der Schillingbrücke	1 12056,11390 12055,11331
 An der Schillingbrücke	1 12026,11348 12056,11390
 Schulze-Delitzsch-Platz	1 11155,11750 11048,11745 11022,11782
 Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
-# hier stand mal ein Polizeiauto, als ich reinfahren wollte...:
-Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12054,12903
+#: note: hier stand mal ein Polizeiauto, als ich reinfahren wollte...
+Weydemeyerstr.	1s:q4 11905,13069 11910,13055 12062,12986 12054,12903
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12529
 Georgenstr.	1 9434,12669 9568,12688 9659,12704 9754,12775
@@ -1005,12 +1005,9 @@ Pasedagplatz	1s:q3 14174,17226 14144,17165
 # 
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
-#: XXX_outdoor: überprüfen! Können Radfahrer vielleicht die linke Straßenseite nutzen?
-Humboldtring/Hans-Marchwitza-Ring: Hochstraße	3nocross -11399,-1339 -11461,-1424 -11540,-1543
+# REMOVED (geänderte Straßenführung, östliche Fahrbahn ist in beide Richtungen befahrbar) --- #: XXX_outdoor: überprüfen! Können Radfahrer vielleicht die linke Straßenseite nutzen? --- Humboldtring/Hans-Marchwitza-Ring: Hochstraße	3nocross -11399,-1339 -11461,-1424 -11540,-1543
 #: by: Christoph Ewert:
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
-#: by: Axel Dörrie:
-Stadtheide	1 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122
 Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14034,-571
 Schillerstr.	1 -14236,-2125 -14252,-1978
 Henning-von-Tresckow-Str.	1 -13180,-1627 -12946,-1659
@@ -1024,15 +1021,13 @@ Yorckstr.	1 -13206,-1294 -13001,-1329 -12974,-1336 -12839,-1342
 Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraße	1 -12542,-1305 -12657,-1338
 Mauerstr.	1 -13433,-831 -13519,-625
-Wilhelm-Staab-Str.	1 -13001,-1329 -12992,-1222 -12984,-1110
-Benkertstr.	1 -12693,-827 -12712,-734 -12730,-627
-Hans-Thoma-Str.	1 -12219,-726 -12262,-612 -12306,-496
+Benkertstr.	1 -12677,-823 -12697,-729 -12719,-630
+Hans-Thoma-Str.	1 -12219,-726 -12223,-713 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Hebbelstr.	1 -12621,-359 -12571,-581
 Potsdamer Damm	2 -5736,-3629 -6119,-3907 -6426,-4014
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
 Kleine Gasse	1 -13272,-1168 -13287,-1231
-Bäckerstr.	1 -13314,-1226 -13287,-1231 -13203,-1246
 Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
@@ -1041,7 +1036,7 @@ Lange Brücke: Straßenbahntrasse	3nocross -12758,-1654 -12659,-1700 -12567,-1817
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14213,-1695 -14143,-1662 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
-Platz der Einheit	1 -12755,-1131 -12741,-1197 -12718,-1327
+Platz der Einheit	1 -12756,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
 Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12780,-1545 -12793,-1498 -12833,-1365
@@ -1053,7 +1048,6 @@ Prof.-Dr.-Helmert-Str.: Schranke	BNP:3 -7969,-1659
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
 Kiezstr.: Mittelstreifen	3nocross -13450,-1595 -13374,-1709 -13328,-1790
 Ruinenbergstr.	1 -13794,178 -13918,-164
-Brandenburger Str.	1s:q3 -12784,-956 -12883,-976
 Nietnerstr.	2 -13855,1673 -13843,1668
 Hechtsprung (Groß Glienicke)	1 -9703,6278 -9860,6288 -9962,6295 -10045,6292
 (Potsdamer Chaussee - Dorfstr.)	1 -9547,6865 -9565,6954 -9616,6980
@@ -2191,6 +2185,12 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2012-12-09
+#: next_check: 2014-06-01
+#: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
+#: XXX eventuell kann man hier vorbeischieben?
+Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8098,13419
+# 
 #: last_checked: 2012-11-26
 Am Sudhaus: Bauarbeiten, noch gesperrt	2:inwork 12134,8172 12282,8204
 # 
@@ -2207,7 +2207,7 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 #: XXX siehe auch Einträge in handicap_s-orig
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
-#: last_checked: 2012-12-02
+#: last_checked: 2012-12-08
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	2:inwork 14465,11195 14442,11101
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html
@@ -2215,8 +2215,8 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	2:inwork 14465,11195 14442,11101
 #: XXX nach den Bauarbeiten bessere Qualität? Zurzeit nur Q1-, siehe qualitaet_s-orig
 (Bellevuepark): Asphaltbauarbeiten	2:inwork 22794,5583 22855,5554 22835,5452 22851,5321
 # 
-#: last_checked: 2012-10-19
-#: next_check: 2013-01-01
+#: last_checked: 2012-12-09
+#: next_check: 2013-03-01
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
 # 
 #: last_checked: 2012-10-16
@@ -2361,8 +2361,8 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # REMOVED --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
-#: last_checked: 2012-10-19
-#: next_check: 2012-12-01
+#: last_checked: 2012-12-09
+#: next_check: 2013-04-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
 # REMOVED --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Eröffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung für handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
@@ -2690,7 +2690,6 @@ Schöneicher Str. (Alt-Hohenschönhausen)	1 16694,15658 16658,15627 16628,15532 16
 Schöneicher Str. (Alt-Hohenschönhausen)	1 16675,15688 16628,15642 16597,15552 16550,15503
 #: by: Daniel Pepper [AM]
 tragen (Treppe)	0:45 5946,12553
-Stormstr. (Potsdam)	1 -15243,-2459 -15168,-2529 -15060,-2626
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Am Kanal	1 -1964,35846 -2110,36206 -2209,36443

@@ -1134,7 +1134,7 @@ Am Phloxgarten (Potsdam-Bornim): Qualität?	? -15980,1690 -16027,1618
 Gillis-Grafström-Str. (Potsdam-Bornim): Qualität?	? -16000,1727 -16036,1707 -16072,1643 -16097,1596
 Bienenwinkel (Potsdam): Qualität? Genauer Verlauf der Straße?	? -13345,1962 -13316,2003 -13279,1958
 Zum Exerzierhaus (Potsdam): Qualität? Genauer Verlauf der Straße?	? -13108,2010 -12981,2014
-Horst-Bienek-Str. (Potsdam): Qualität? Genauer Verlauf der Straße? Genauer Straßenname?	? -13696,572 -13668,669 -13642,750 -13615,844
+Horst-Bienek-Str. (Potsdam): Qualität? Genauer Verlauf der Straße, wird die Straße bis zur Hermann-Kasack-Str. geführt werden? Genauer Straßenname?	? -13696,572 -13668,669 -13642,750 -13615,844
 Zum Mühlenteich (Potsdam-Golm): Qualität? Genauer Verlauf der Straße?	? -18962,128 -19159,178
 Schwalbenhof (Potsdam-Golm): Qualität?	? -19279,-106 -19186,-132
 Kossätenweg (Potsdam-Golm): Qualität?	? -19247,-20 -18785,-77
@@ -1145,7 +1145,7 @@ Paarener Mühlenweg (Potsdam-Uetz-Paaren): Qualität?	? -21412,8481 -21200,8474 -2
 Kirschweg (Potsdam-Uetz-Paaren): Qualität?	? -20914,8535 -20996,8861
 Laubenweg (Potsdam-Grube): Qualität?	? -19987,2459 -19891,2447
 Schwarzer Weg (Potsdam-Grube): Qualität?	? -19422,2220 -19433,2155 -19691,2134 -19924,2119 -20031,2094
-Schmidtshof (Potsdam-Grube): Qualität? Genauer Straßenname ("Schmidts Hof" oder "Schmidtshof")	? -19691,2134 -19689,2191 -19927,2193 -19927,2216 -20049,2236
+Schmidtshof (Potsdam-Grube): Qualität?	? -19691,2134 -19689,2191 -19927,2193 -19927,2216 -20049,2236
 Altes Bahnwerk (Potsdam): Qualität? Spielstraße?	? -11942,-2201 -11934,-2077
 Zum Wasserturm: Spielstraße?	? -11837,-2223 -11828,-2056 -11995,-2047 -12100,-2039
 Park Babelsberg: Qualität des Parkwegs von Alt Nowawes Richtung Humboldtbrücke	? -10505,-1166 -10519,-1117 -10614,-1055 -10713,-1072 -10793,-1139 -10910,-1271 -10994,-1307 -11081,-1303 -11225,-1225 -11332,-1071 -11359,-1069 -11425,-1001
@@ -1161,7 +1161,7 @@ Friedrich-Wilhelm-Boelcke-Str. (Potsdam): Qualität?	? -12796,-2488 -12831,-2439 
 Zur Königlichen Hofbrauerei (Potsdam): Qualität?	? -12813,-2423 -12781,-2376
 Am Golmer Weinberg (Potsdam-Golm): Qualität? Genaue Lage?	? -19225,-261 -19147,-77
 Alter Weinberg (Groß Glienicke): Qualität?	? -9276,7226 -9198,7051
-Dr.-Kurt-Fischer-Str. (Groß Glienicke): Qualität?	? -9429,7137 -9445,7199 -9506,7421
+Am Gutstor (Groß Glienicke): Qualität?	? -9429,7137 -9445,7199 -9506,7421
 Helmut-Just-Str. (Groß Glienicke): Qualität?	? -9316,7393 -9506,7421
 Freiheitsstr. (Groß Glienicke): Qualität im östlichen Abschnitt?	? -9445,7199 -9670,7190 -9848,7181 -9869,7199
 Grüner Weg (Groß Glienicke): Qualität?	? -9616,6980 -9848,7181
@@ -1254,6 +1254,7 @@ An der Kornmühle (Potsdam)	? -12865,-2478 -12874,-2534
 Am Speicher (Potsdam)	? -12956,-2582 -12972,-2652
 Siegward-Sprotte-Straße (Potsdam): (Planstraße "Nord")	? -15379,377 -15261,431
 Haeberlinweg (Potsdam): (Planstraße "Süd")	? -15381,160 -15264,85
+Altstadtblick (Potsdam): neue Straße in Potsdam, Qualität? Genauer Verlauf? (Planstraße D)	? -12913,-2586 -12906,-2537
 Preußenpark: Qualität des Weges? Nachts beleuchtet?	? 4353,9430 4281,9393
 Am Kaniswall: Privatstraße, wo genau? Qualität?	? 32823,-202 32970,320
 Alter Fischerweg (Gosen): Qualität? Ausschilderung?	? 32778,-1044 33013,-790 33117,-767 33140,-703 33061,-636 33046,-551 32842,-509 32889,-402 32854,-201
@@ -1311,6 +1312,10 @@ Im Eck - Heinitzweg: existiert hier für Radfahrer eine Verbindung? Qualität? Nac
 Groß-Ziethener Str. - Tietjenstr.: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 11578,-1220 11550,-1230 11559,-1363 11564,-1460 11572,-1603 11581,-1731
 Schönburger Str. - Blumenthalstr.: existiert für Radfahrer eine Verbindung durch den Bosepark? Qualität? Nachts beleuchtet?	? 8946,6501 8959,6292
 Lutoner Str./Cosmarweg: ist die Straße eine Vorfahrtsstraße oder gilt hier rechts-vor-links?	? -5321,13191 -5472,13235 -5674,13130 -5753,13107 -5790,13097 -5822,13088 -5928,13060 -6029,13033 -6151,13001
+Potsdam Hbf - Uferweg: Qualität?	? -12247,-1858 -12210,-1857 -12200,-1813 -12165,-1815 -12122,-1737 -12103,-1679 -12059,-1617
+Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg bereits (oder Teile davon)? Qualität?	? -12593,-1993 -12664,-2048 -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
+Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9677,5430 -9478,5549 -9372,5532
+Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16806,1987 -16931,1783
 # added from ampeln-orig
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4408&options=4 (Zeiten)

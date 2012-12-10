@@ -479,8 +479,8 @@ Mangerstr. (Potsdam): Asphalt	Q0 -12064,-284 -12108,-291 -12265,-418
 Wilhelm-Leuschner-Str.: schlechtes Kopfsteinpflaster (Potsdam)	Q3 -10059,374 -10097,200
 Gutenbergstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -12886,-869 -13025,-901 -13158,-930 -13264,-952 -13433,-991
 Gutenbergstr. (Potsdam): mäßiger Beton	Q1 -13433,-991 -13553,-1020 -13576,-1026
-Jägerstr. (Potsdam): mäßiges Kopfsteinpflaster, südlich der Brandenburger Str. eher schlechter	Q2 -13067,-706 -13058,-740 -13025,-901 -13005,-1002 -12984,-1110
-Dortustr. (Potsdam): Kopfsteinpflaster	Q2 -13187,-1150 -13173,-1039 -13158,-930 -13140,-766 -13137,-728
+Jägerstr. (Potsdam): mäßiges Kopfsteinpflaster, südlich der Brandenburger Str. eher schlechter	Q2 -13064,-715 -13058,-740 -13025,-901 -13005,-1002 -12984,-1110
+Dortustr. (Potsdam): Kopfsteinpflaster	Q2 -13187,-1150 -13173,-1039 -13158,-930 -13140,-766 -13137,-737
 Bäckerstr. (Potsdam): Asphalt	Q0 -13314,-1226 -13287,-1231 -13203,-1246
 Lindenstr. (Potsdam): Kopfsteinpflaster	Q2 -13231,-763 -13236,-797 -13264,-952 -13289,-1071 -13305,-1176 -13314,-1226 -13350,-1403
 Lindenstr. (Potsdam): Asphalt	Q0 -13350,-1403 -13366,-1499
@@ -1493,7 +1493,7 @@ Im Tal: Kopfsteinpflaster	Q2 -882,-1220 -940,-1256 -1112,-1123 -1310,-1137
 Am Weinberg: Kopfsteinpflaster, etwas kleinteiliger	Q2 -1348,-1098 -1310,-1137 -1112,-1353 -940,-1256
 Allee am Forsthaus: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten, und teilweise unebener Sandweg	Q3 -1503,-1328 -1607,-1389 -1698,-1384 -1976,-1325 -2071,-1259 -2262,-1317 -2334,-1392 -2614,-1434
 Leiblstr.: Kopfsteinpflaster	Q2 -12545,-698 -12262,-612
-Mittelstr.: Kopfsteinpflaster	Q2 -12545,-698 -12712,-734 -12884,-769
+Mittelstr.: Kopfsteinpflaster	Q2 -12545,-698 -12697,-729 -12884,-769
 Am Schafgraben: Parkweg	Q1 -14500,-2012 -14536,-1943 -14571,-1881 -14612,-1809
 (Schafgraben - Maybachstr.): Parkweg	Q1 -14536,-1943 -14705,-1949
 (Maybachstr. - Geschwister-Scholl-Str.): Asphalt/Beton	Q0 -14705,-1949 -14733,-1812
@@ -1508,7 +1508,7 @@ Karl-Gruhl-Str.: Asphalt	Q0 -9837,-1612 -9905,-1627 -10102,-1522 -10119,-1515 -1
 Oderstr.: Betonstraße	Q1 818,-298 595,-310
 Oderstr.: Asphalt	Q0 595,-310 525,-347 240,-519 -395,-920 -882,-1220
 Brandenburger Str.: grobes Pflaster	Q1 -12883,-976 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
-Brandenburger Str.: etwas besseres Kopfsteinpflaster	Q1- -12883,-976 -12784,-956
+Brandenburger Str.: etwas besseres Kopfsteinpflaster	Q1- -12883,-976 -12801,-960
 # von der Bahn aus gesehen: vvv
 Welsow - Bruchhagen: Asphalt	Q0 49075,74662 48437,74675 48262,74825
 Schönermark - Biesenbrow: Asphalt	Q0 51812,78462 50637,79674 50493,79806 50593,80084
@@ -1565,7 +1565,7 @@ Wielandstr.: Kopfsteinpflaster	Q2 -14019,-2122 -14052,-2110 -14120,-2109 -14236,
 Schillerstr.: Kopfsteinpflaster	Q2 -14252,-1978 -14236,-2125
 Grillparzerstr.: Kopfsteinpflaster	Q2 -14128,-1955 -14120,-2109
 Hermann-Elflein-Str.: Kopfsteinpflaster	Q2 -13468,-847 -13461,-870 -13433,-991 -13410,-1101 -13392,-1196
-Benkertstr.: Kopfsteinpflaster	Q2 -12730,-627 -12712,-734 -12693,-827
+Benkertstr.: Kopfsteinpflaster	Q2 -12719,-630 -12697,-729 -12677,-823
 Hegelallee (Nebenfahrbahn): Kopfsteinpflaster	Q2 -13590,-912 -13461,-870 -13236,-797
 Hegelallee (Nebenfahrbahn): schlechtes Kopfsteinpflaster	Q3 -13236,-797 -13140,-766 -13058,-740 -12911,-696
 Am Templiner See: Asphalt	Q0 -14359,-2142 -14411,-2180
@@ -1716,8 +1716,8 @@ Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12621,-359 -12637,-292
 Eisenhartstr.: asphaltiert	Q0 -12821,-417 -12779,-294 -12637,-8
 Puschkinallee: glatte Pflasterung	Q1 -12812,371 -12812,271 -12862,-27
 Russische Kolonie: Asphalt	Q0 -13036,342 -12992,244 -12947,106 -12862,-27
-Russische Kolonie: kleinteiliges Kopfsteinpflaster	Q1 -13091,-8 -13068,-115
-# REMOVED (del conflict) --- Russische Kolonie (Potsdam): Kopfsteinpflaster	Q2 -13068,-115 -13091,-8
+Russische Kolonie: kleinteiliges Kopfsteinpflaster	Q1 -13091,-8 -13074,-70 -13039,-127
+# REMOVED (del conflict) --- Russische Kolonie (Potsdam): Kopfsteinpflaster	Q2 -13039,-127 -13074,-70 -13091,-8
 Russische Kolonie: wassergebundene Decke	Q1 -13091,-8 -12947,106 -12833,261 -12812,271
 Mauerstr. (Potsdam): geflickter Asphalt	Q1 -13433,-831 -13519,-625
 Katharinenholzstr.: Asphalt, einige Kopfsteinpflasterabschnitte mit asphaltierten Fahrgassen	Q0 -15556,429 -15086,63 -15023,13 -14949,-45

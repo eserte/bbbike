@@ -151,9 +151,9 @@ userdel	2::temp -3231,14383 -3293,14304
        undef,
        {
          'source_id' => 'http://www.sophienstrasse-berlin.de/?y=2012',
-         'until' => 1355090400,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 8.12. - 9.12.2012 ',
-         'from' => 1354834800,
+         'until' => 1355698799,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 15.12. - 16.12.2012 ',
+         'from' => 1355439600,
          'id' => 166,
          'data' => 'userdel	2::temp 9986,13412 10317,13248
 ',
@@ -422,9 +422,9 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-lichtenrade.html?y=2012',
-         'until' => 1355004000,
+         'until' => 1355608800,
          'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
-         'from' => 1354834800,
+         'from' => 1355439600,
          'id' => 417,
          'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 ',
@@ -2333,22 +2333,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1355079600,
-         'text' => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (vom 07.12.2012 17:00 Uhr bis 09.12.2012 20:00 Uhr)',
-         'from' => 1354809600,
-         'id' => 1998,
-         'data' => 'userdel	2::temp 13416,7712 13426,7674
-userdel	2::temp 13416,7712 13288,7653
-userdel	2::temp 13426,7674 13400,7642 13303,7622
-userdel	2::temp 12980,7597 13100,7626 13177,7644
-userdel	2::temp 13188,7590 13177,7644
-userdel	2::temp 13188,7590 13303,7622
-userdel	2::temp 13288,7653 13303,7622
-userdel	2::temp 13288,7653 13177,7644
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
