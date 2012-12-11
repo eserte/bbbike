@@ -27,7 +27,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 20 }
+BEGIN { plan tests => 22 }
 
 #use vars qw($uaprofdir);
 #$uaprofdir = "$FindBin::RealBin/../tmp/uaprof";
@@ -91,6 +91,13 @@ BEGIN { plan tests => 20 }
     ok !$bi->{text_browser};
     ok !$bi->{gecko_version}, "It's not a gecko, it's just like gecko";
     ok $bi->is_browser_version('Safari', 7000, 8000);
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; GT-P5110 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Safari';
+    is $bi->{user_agent_os}, 'Android';
 }
 
 __END__

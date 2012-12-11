@@ -76,6 +76,8 @@ sub set_info {
 
     if ($user_agent =~ m{\b(iPad|iPod|iPhone)\b.*like Mac OS X}) {
 	$self->{'user_agent_os'} = 'iOS';
+    } elsif ($user_agent =~ m{\bLinux\b.*\bAndroid\b}) {
+	$self->{'user_agent_os'} = 'Android';
     } elsif ($user_agent =~ /\((.*)\)/) {
 	my(@infos) = split(/;\s*/, $1);
 	my $ignore_next = 0;
