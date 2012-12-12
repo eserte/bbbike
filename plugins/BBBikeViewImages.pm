@@ -512,60 +512,70 @@ sub show_image_viewer {
 		my @args     = (-canvas => $c, -allimages => $all_image_inx, '-current');
 		my @cmd_args = (\&show_image_viewer, @args);
 		# First
-		if (@$all_image_inx > 1 && defined $prev_inx) {
-		    $image_viewer_toplevel->Subwidget("FirstButton")->configure(-command => [@cmd_args, $all_image_inx->[0]],
-										-state => "normal");
-		    $image_viewer_toplevel->bind("<Home>" => sub { show_image_viewer(@args, $all_image_inx->[0]) });
-		} else {
-		    $image_viewer_toplevel->Subwidget("FirstButton")->configure(-state => "disabled");
-		    $image_viewer_toplevel->bind("<Home>" => \&Tk::NoOp);
+		{
+		    my $b = $image_viewer_toplevel->Subwidget("FirstButton");
+		    if (@$all_image_inx > 1 && defined $prev_inx) {
+			$b->configure(-command => [@cmd_args, $all_image_inx->[0]],
+				      -state => "normal");
+		    } else {
+			$b->configure(-state => "disabled");
+		    }
+		    $image_viewer_toplevel->bind("<Home>" => sub { $b->invoke });
 		}
 		# Prev
-		if (defined $prev_inx) {
-		    $image_viewer_toplevel->Subwidget("PrevButton")->configure(-command => [@cmd_args, $prev_inx],
-									       -state => "normal");
-		    for my $key ('BackSpace', 'b', 'Left') {
-			$image_viewer_toplevel->bind("<$key>" => sub { show_image_viewer(@args, $prev_inx) });
+		{
+		    my $b = $image_viewer_toplevel->Subwidget("PrevButton");
+		    if (defined $prev_inx) {
+			$b->configure(-command => [@cmd_args, $prev_inx],
+				      -state => "normal");
+		    } else {
+			$b->configure(-state => "disabled");
 		    }
-		} else {
-		    $image_viewer_toplevel->Subwidget("PrevButton")->configure(-state => "disabled");
 		    for my $key ('BackSpace', 'b', 'Left') {
-			$image_viewer_toplevel->bind("<$key>" => \&Tk::NoOp);
+			$image_viewer_toplevel->bind("<$key>" => sub { $b->invoke });
 		    }
 		}
 		# Next
-		if (defined $next_inx) {
-		    $image_viewer_toplevel->Subwidget("NextButton")->configure(-command => [@cmd_args, $next_inx],
-									       -state => "normal");
-		    for my $key ('space', 'Right') {
-			$image_viewer_toplevel->bind("<$key>" => sub { show_image_viewer(@args, $next_inx) });
+		{
+		    my $b = $image_viewer_toplevel->Subwidget("NextButton");
+		    if (defined $next_inx) {
+			$b->configure(-command => [@cmd_args, $next_inx],
+				       -state => "normal");
+		    } else {
+			$b->configure(-state => "disabled");
 		    }
-		} else {
-		    $image_viewer_toplevel->Subwidget("NextButton")->configure(-state => "disabled");
 		    for my $key ('space', 'Right') {
-			$image_viewer_toplevel->bind("<$key>" => \&Tk::NoOp);
+			$image_viewer_toplevel->bind("<$key>" => sub { $b->invoke });
 		    }
 		}
 		# Last
-		if (@$all_image_inx > 1 && defined $next_inx) {
-		    $image_viewer_toplevel->Subwidget("LastButton")->configure(-command => [@cmd_args, $all_image_inx->[-1]],
-									       -state => "normal");
-		    $image_viewer_toplevel->bind("<End>" => sub { show_image_viewer(@args, $all_image_inx->[-1]) });
-		} else {
-		    $image_viewer_toplevel->Subwidget("LastButton")->configure(-state => "disabled");
-		    $image_viewer_toplevel->bind("<End>" => \&Tk::NoOp);
+		{
+		    my $b = $image_viewer_toplevel->Subwidget("LastButton");
+		    if (@$all_image_inx > 1 && defined $next_inx) {
+			$b->configure(-command => [@cmd_args, $all_image_inx->[-1]],
+				       -state => "normal");
+		    } else {
+			$b->configure(-state => "disabled");
+		    }
+		    $image_viewer_toplevel->bind("<End>" => sub { $b->invoke });
 		}
 
 		# XXX It would be nice if we would show here not only
 		# the current image, but all files at this point, the
 		# current image being first in list. Unfortunately,
 		# look how complicated it is to get to $abs_file :-(
-		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&orig_viewer, $abs_file]);
-		# o=orig, z=zoom (latter matches the binding in xzgv)
-		$image_viewer_toplevel->bind("<$_>" => sub { orig_viewer($abs_file) }) for ('o', 'z');
+		{
+		    my $b = $image_viewer_toplevel->Subwidget("OrigButton");
+		    $b->configure(-command => [\&orig_viewer, $abs_file]);
+		    # o=orig, z=zoom (latter matches the binding in xzgv)
+		    $image_viewer_toplevel->bind("<$_>" => sub { $b->invoke }) for ('o', 'z');
+		}
 
-		$image_viewer_toplevel->Subwidget("InfoButton")->configure(-command => [\&exif_viewer, $abs_file]);
-		$image_viewer_toplevel->bind('<i>' => sub { exif_viewer($abs_file) });
+		{
+		    my $b = $image_viewer_toplevel->Subwidget("InfoButton");
+		    $b->configure(-command => [\&exif_viewer, $abs_file]);
+		    $image_viewer_toplevel->bind('<i>' => sub { $b->invoke });
+		}
 
 		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
 
