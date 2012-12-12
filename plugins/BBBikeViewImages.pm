@@ -462,8 +462,8 @@ sub show_image_viewer {
 						)->pack(-side => "right", -anchor => "e");
 		    $image_viewer_toplevel->Advertise(OrigButton => $orig_button);
 		    $main::balloon->attach($orig_button, -msg => M"Originalbild mit externen Viewer zeigen") if ($main::balloon);
-		    # o=orig, z=zoom (latter matches the binding in xzgv)
-		    $image_viewer_toplevel->bind("<$_>" => sub { $orig_button->invoke }) for ('o', 'z');
+		    # o=orig, z=zoom (latter matches the binding in xzgv), v=view (like in mapivi)
+		    $image_viewer_toplevel->bind("<$_>" => sub { $orig_button->invoke }) for ('o', 'v', 'z');
 
 		    my $info_button = $f->Button(-class => "SmallBut",
 						 -text => 'i',
