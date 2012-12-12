@@ -810,6 +810,10 @@ sub exif_viewer {
 					    )->pack(qw(-fill both -expand 1));
 	$pager->focus;
 	$exif_toplevel->Advertise(Pager => $pager);
+
+	for my $key (qw(Escape q)) {
+	    $exif_toplevel->bind("<$key>" => sub { $exif_toplevel->destroy });
+	}
     }
 
     _fill_exif_viewer($exif_toplevel, $image_path);
