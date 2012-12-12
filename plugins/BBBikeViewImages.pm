@@ -14,7 +14,7 @@ use BBBikePlugin;
 push @ISA, "BBBikePlugin";
 
 use strict;
-use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $geometry $viewer_menu $viewer_sizes_menu);
+use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
 $VERSION = 1.25;
 
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
@@ -36,6 +36,8 @@ my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 $viewer = "_internal" if !defined $viewer;
 $original_image_viewer = ($^O eq 'MSWin32' ? '_wwwbrowser' : 'xzgv') if !defined $original_image_viewer;
 $geometry = "third" if !defined $geometry;
+
+my $exif_viewer_toplevel_name = "BBBikeViewImages_ExifViewer";
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -453,6 +455,12 @@ sub show_image_viewer {
 		    $image_viewer_toplevel->Advertise(OrigButton => $orig_button);
 		    $main::balloon->attach($orig_button, -msg => M"Originalbild mit externen Viewer zeigen") if ($main::balloon);
 
+		    my $info_button = $f->Button(-class => "SmallBut",
+						 -text => 'i',
+						)->pack(-side => "right", -anchor => "e");
+		    $image_viewer_toplevel->Advertise(InfoButton => $info_button);
+		    $main::balloon->attach($info_button, -msg => M"Bildinformation zeigen") if ($main::balloon);
+
 		    my $image_viewer_label = $image_viewer_toplevel->Label->pack(-fill => "both", -expand => 1,
 										 -side => "bottom");
 		    $image_viewer_toplevel->Advertise(ImageLabel => $image_viewer_label);
@@ -555,6 +563,8 @@ sub show_image_viewer {
 		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&orig_viewer, $abs_file]);
 		# o=orig, z=zoom (latter matches the binding in xzgv)
 		$image_viewer_toplevel->bind("<$_>" => sub { orig_viewer($abs_file) }) for ('o', 'z');
+
+		$image_viewer_toplevel->Subwidget("InfoButton")->configure(-command => [\&exif_viewer, $abs_file]);
 
 		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
 
@@ -667,6 +677,9 @@ sub show_image_viewer {
 	    warn "Try $cmd...\n";
 	    system("$cmd&");
 	}
+
+	fill_exif_viewer_if_active($abs_file);
+
 	return 1;
     } else {
 	#require Data::Dumper;
@@ -767,6 +780,76 @@ sub find_best_external_viewer {
 	"eog";
     } else {
 	undef;
+    }
+}
+
+sub exif_viewer {
+    my($image_path) = @_;
+
+    _check_exiftool() or return;
+
+    my $exif_toplevel = main::redisplay_top($main::top,
+					    $exif_viewer_toplevel_name,
+					    -raise => 1,
+					    -transient => 0,
+					    -title => M"Bildinformation",
+					   );
+    if (!defined $exif_toplevel) {
+	$exif_toplevel = $main::toplevel{$exif_viewer_toplevel_name};
+    } else {
+	my $pager = $exif_toplevel->Scrolled('ROText',
+					     -scrollbars => 'oe',
+					     -font => $main::font{'fixed'},
+					    )->pack(qw(-fill both -expand 1));
+	$pager->focus;
+	$exif_toplevel->Advertise(Pager => $pager);
+    }
+
+    _fill_exif_viewer($exif_toplevel, $image_path);
+}
+
+sub _check_exiftool {
+    if (!defined $exiftool_path) {
+	$exiftool_path = is_in_path('exiftool');
+	if (!$exiftool_path) {
+	    $exiftool_path = 0; # remember failure
+	    main::perlmod_install_advice('Image::ExifTool');
+	    return;
+	}
+    }
+    if (!$exiftool_path) {
+	return;
+    }
+
+    1;
+}
+
+sub _fill_exif_viewer {
+    my($exif_toplevel, $image_path) = @_;
+
+    _check_exiftool() or return;
+
+    my $pager = $exif_toplevel->Subwidget('Pager');
+    $pager->delete('1.0', 'end');
+
+    my $info_text;
+    open my $fh, "-|", $exiftool_path, $image_path
+	or main::status_message($!, "die");
+    while(<$fh>) {
+	$info_text .= $_;
+    }
+    close $fh
+	or main::status_message($!, "die");
+
+    $pager->insert('end', $info_text);    
+}
+
+sub fill_exif_viewer_if_active {
+    my($image_path) = @_;
+
+    my $exif_toplevel = $main::toplevel{$exif_viewer_toplevel_name};
+    if ($exif_toplevel && Tk::Exists($exif_toplevel)) {
+	_fill_exif_viewer($exif_toplevel, $image_path);
     }
 }
 
