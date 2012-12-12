@@ -413,21 +413,29 @@ sub show_image_viewer {
 		    # place.
 		    my $f = $image_viewer_toplevel->Frame->pack(-fill => "x", -side => "top");
 
-		    my $first_button = $f->Button(-class => "SmallBut", -text => "|<")->pack(-side => "left");
+		    my $first_button = $f->Button(-class => "SmallBut", -text => "|<", -state => 'disabled')->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(FirstButton => $first_button);
 		    $main::balloon->attach($first_button, -msg => M"Erstes Bild") if ($main::balloon);
+		    $image_viewer_toplevel->bind("<Home>" => sub { $first_button->invoke });
 
-		    my $prev_button = $f->Button(-class => "SmallBut", -text => "<<")->pack(-side => "left");
+		    my $prev_button = $f->Button(-class => "SmallBut", -text => "<<", -state => 'disabled')->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(PrevButton => $prev_button);
 		    $main::balloon->attach($prev_button, -msg => M"Vorheriges Bild") if ($main::balloon);
+		    for my $key ('BackSpace', 'b', 'Left') {
+			$image_viewer_toplevel->bind("<$key>" => sub { $prev_button->invoke });
+		    }
 
-		    my $next_button = $f->Button(-class => "SmallBut", -text => ">>")->pack(-side => "left");
+		    my $next_button = $f->Button(-class => "SmallBut", -text => ">>", -state => 'disabled')->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(NextButton => $next_button);
 		    $main::balloon->attach($next_button, -msg => M"Nächstes Bild") if ($main::balloon);
+		    for my $key ('space', 'Right') {
+			$image_viewer_toplevel->bind("<$key>" => sub { $next_button->invoke });
+		    }
 
-		    my $last_button = $f->Button(-class => "SmallBut", -text => ">|")->pack(-side => "left");
+		    my $last_button = $f->Button(-class => "SmallBut", -text => ">|", -state => 'disabled')->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(LastButton => $last_button);
 		    $main::balloon->attach($last_button, -msg => M"Letztes Bild") if ($main::balloon);
+		    $image_viewer_toplevel->bind("<End>" => sub { $last_button->invoke });
 
 		    my $n_of_m_label = $f->Label->pack(-side => "left");
 		    $image_viewer_toplevel->Advertise(NOfMLabel => $n_of_m_label);
@@ -446,7 +454,7 @@ sub show_image_viewer {
 						 )->pack(-side => "right", -anchor => "e");
 		    $main::balloon->attach($close_button, -msg => M"Viewer schließen") if ($main::balloon);
 		    for my $key (qw(Escape q)) {
-			$image_viewer_toplevel->bind("<$key>" => sub { $image_viewer_toplevel->destroy });
+			$image_viewer_toplevel->bind("<$key>" => sub { $close_button->invoke });
 		    }
 
 		    my $orig_button = $f->Button(-class => "SmallBut",
@@ -454,12 +462,15 @@ sub show_image_viewer {
 						)->pack(-side => "right", -anchor => "e");
 		    $image_viewer_toplevel->Advertise(OrigButton => $orig_button);
 		    $main::balloon->attach($orig_button, -msg => M"Originalbild mit externen Viewer zeigen") if ($main::balloon);
+		    # o=orig, z=zoom (latter matches the binding in xzgv)
+		    $image_viewer_toplevel->bind("<$_>" => sub { $orig_button->invoke }) for ('o', 'z');
 
 		    my $info_button = $f->Button(-class => "SmallBut",
 						 -text => 'i',
 						)->pack(-side => "right", -anchor => "e");
 		    $image_viewer_toplevel->Advertise(InfoButton => $info_button);
 		    $main::balloon->attach($info_button, -msg => M"Bildinformation zeigen") if ($main::balloon);
+		    $image_viewer_toplevel->bind('<i>' => sub { $info_button->invoke });
 
 		    my $image_viewer_label = $image_viewer_toplevel->Label->pack(-fill => "both", -expand => 1,
 										 -side => "bottom");
@@ -520,7 +531,6 @@ sub show_image_viewer {
 		    } else {
 			$b->configure(-state => "disabled");
 		    }
-		    $image_viewer_toplevel->bind("<Home>" => sub { $b->invoke });
 		}
 		# Prev
 		{
@@ -530,9 +540,6 @@ sub show_image_viewer {
 				      -state => "normal");
 		    } else {
 			$b->configure(-state => "disabled");
-		    }
-		    for my $key ('BackSpace', 'b', 'Left') {
-			$image_viewer_toplevel->bind("<$key>" => sub { $b->invoke });
 		    }
 		}
 		# Next
@@ -544,9 +551,6 @@ sub show_image_viewer {
 		    } else {
 			$b->configure(-state => "disabled");
 		    }
-		    for my $key ('space', 'Right') {
-			$image_viewer_toplevel->bind("<$key>" => sub { $b->invoke });
-		    }
 		}
 		# Last
 		{
@@ -557,25 +561,15 @@ sub show_image_viewer {
 		    } else {
 			$b->configure(-state => "disabled");
 		    }
-		    $image_viewer_toplevel->bind("<End>" => sub { $b->invoke });
 		}
 
 		# XXX It would be nice if we would show here not only
 		# the current image, but all files at this point, the
 		# current image being first in list. Unfortunately,
 		# look how complicated it is to get to $abs_file :-(
-		{
-		    my $b = $image_viewer_toplevel->Subwidget("OrigButton");
-		    $b->configure(-command => [\&orig_viewer, $abs_file]);
-		    # o=orig, z=zoom (latter matches the binding in xzgv)
-		    $image_viewer_toplevel->bind("<$_>" => sub { $b->invoke }) for ('o', 'z');
-		}
+		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&orig_viewer, $abs_file]);
 
-		{
-		    my $b = $image_viewer_toplevel->Subwidget("InfoButton");
-		    $b->configure(-command => [\&exif_viewer, $abs_file]);
-		    $image_viewer_toplevel->bind('<i>' => sub { $b->invoke });
-		}
+		$image_viewer_toplevel->Subwidget("InfoButton")->configure(-command => [\&exif_viewer, $abs_file]);
 
 		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
 
