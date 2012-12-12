@@ -759,6 +759,8 @@ sub orig_viewer {
 	viewer_xzgv('--zoom', '--zoom-reduce-only', '--fullscreen', @_);
     } elsif ($use_original_image_viewer eq 'display') {
 	viewer_display(imagemagick_maxpect_args(), @_);
+    } elsif ($use_original_image_viewer eq 'xv') {
+	viewer_xv('-maxpect', @_);
     } else {
 	my $cmd = "$use_original_image_viewer @_";
 	warn "Try $cmd...\n";
