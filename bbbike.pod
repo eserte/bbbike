@@ -1493,13 +1493,11 @@ Siehe L<TODO>.
 
 =head1 KOMPATIBILITE<Auml>T
 
-BBBike wird zur Zeit unter FreeBSD 6.1 mit perl 5.8.8
-und den neuesten Perl/Tk-Versionen (z.Zt. 804.027+patches) entwickelt.
+BBBike wird zur Zeit unter FreeBSD 9.0 mit perl 5.12.4
+und den neuesten Perl/Tk-Versionen (z.Zt. 804.030) entwickelt.
 
-TestlE<auml>ufe wurden und werden von Zeit zu Zeit auf Windows
-95/98/NT/2000/XP, Mac OS X und Linux (Debian 3.0, RedHat 8.0)
-gefahren. Dabei werden meistens auch die aktuellen Stable-Versionen
-von Perl und Tk verwendet.
+TestlE<auml>ufe werden von Zeit zu Zeit auf Windows XP/Vista/7, Mac OS
+X und Linux (Debian/squeeze, CentOS5) gefahren.
 
 Es wird versucht, auch zu der E<auml>lteren perl-Version 5.00503
 kompatibel zu bleiben. Dabei könnten aber einige Features auf der
