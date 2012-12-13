@@ -343,9 +343,10 @@ Degnerstr.: f¸r 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 #: next_check: 2012-12-31
 Dorfstr.: f¸r 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
 #: by: ^^^
-#
+# 
 #: last_checked: 2012-11-11
-#: next_check: 2012-11-24
+#: next_check: 2013-03-20
+#: note: Treskowallee (Lichtenberg) in Hˆhe Waldowallee Baustelle, Fahrbahn von 2 auf 1 Fahrstreifen reduziert, ein Abbiegen aus Richtung Am Tierpark in die Waldowallee ist nicht mˆglich (bis Ende 03/2013)	IM_019443
 Treskowallee/Waldowallee: Situation nach den Bauarbeiten, wird man hier ¸berqueren kˆnnen (evtl. mit Ampel?), wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18867,9464 18834,9256
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
@@ -551,7 +552,7 @@ Weidenanger: Qualit‰t?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3542,13063 3559,13177
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2012
-#: XXX fehlt in Berlin.coords.data
+#: XXX fehlt in Berlin.coords.data PLZ=10365
 #: last_checked: 2012-11-03 (Bauarbeiten, noch keine Straﬂenf¸hrung zu erkennen)
 #: next_check: 2013-02-01
 Heidenelkenweg: Qualit‰t? Genaue Lage?	?::inwork 16112,12639 16107,12701 16077,12696 16074,12639
@@ -666,8 +667,8 @@ Falkoniergasse: Genaue Lage? Qualit‰t?	?::inwork 9945,12180 9915,12259
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20091119.1240.146739.html
 Baumaﬂnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Fr¸hjahr 2010): danach hat der Weg eine neue wassergebundene Decke	?::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
 # 
-#: last_checked: 2011-09-03
-#: next_check: 2012-07-01
+#: last_checked: 2012-12-12 (rjoop)
+#: next_check: 2013-04-01
 Wilhelm-Hoff-Str.: nur als Trasse erkennbar, keine Anzeichen von Bauarbeiten	?::projected 18833,3191 18892,3256 18953,3318 19125,3491
 # 
 #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/
@@ -783,6 +784,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: XXX fr¸her: "Albrechtsche Erben (Kolonie)", evtl. auch in Berlin.coords.data umbenennen
+#: note: aus dem DPAG-Mitteilungsblatt Dez 2012, PLZ=13629
+Alter Wiesenweg: Qualit‰t? Ausgeschildert?	? 1739,15958 1581,15919
+# 
 #: by: http://www.potsdam.de/cms/dokumente/10101401_1471008/5de13165/amtsblatt_2012_14.pdf
 Charles-Tellier-Platz: genaue Lage? Qualit‰t? Anbindung an umliegende Wege?	X -14637,462 -14574,431 -14559,465 -14625,474
 # 
@@ -873,7 +878,7 @@ Lindenstr. (Schmˆckwitz): dieser Teil gehˆrt wohl auch noch zu Berlin... Qualit‰
 Oststr. - S¸dostallee: Qualit‰t? Beleuchtung?	? 17455,5355 17416,5388 17479,5463
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/___tmp/tmp/45081036124679844/124679844/00052517/17-Anlagen/08/8_B-Planentwurf.pdf (Lageplan)
-#: XXX fehlt bei Berlin.coords.data
+#: XXX fehlt bei Berlin.coords.data PLZ=14195
 F¸nf Morgen: wo wird sich die Straﬂe befinden? Qualit‰t?	? 1338,4927 1437,5015 1483,5161
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
@@ -893,80 +898,81 @@ Weg H: Steigung m¸sste in die andere Richtung verlaufen!	? 27961,699 28083,592
 #: XXX Straﬂen werde ich erst nach der Umbenennung aufnehmen!
 #: last_checked: 2012-09-29 vvv
 #: next_check: 2012-11-01 vvv
-#: XXX neuer Name: Anisweg?
+#: XXX neuer Name: Anisweg? PLZ=13159
 Primelweg: unbefestigte Straﬂe, Q2-	? 9788,21780 9866,21586
-#: XXX neuer Name: Basilikumweg
+#: XXX neuer Name: Basilikumweg PLZ=13158
 Rosenweg: unbefestigte Straﬂe, Q2-	? 9726,21760 9803,21567
-#: XXX neuer Name: Brunnenkresseweg?
+#: XXX neuer Name: Brunnenkresseweg? PLZ=13158
 Brunnenweg: unbefestigte Straﬂe, Q2-	? 9725,21891 9609,21843 9549,21818 9493,21796 9433,21771
-#: XXX neuer Name: Chiliweg?
+#: XXX neuer Name: Chiliweg? PLZ=13158
 Grabenweg: unbefestigte Straﬂe, Q2-	? 9664,21739 9694,21668 9738,21541
-#: XXX neuer Name: Currykrautweg?
+#: XXX neuer Name: Currykrautweg? PLZ=13158
 Georginenweg: unbefestigte Straﬂe, Q2-	? 9636,21779 9609,21843 9579,21904
-#: XXX neuer Name: Dillweg?
+#: XXX neuer Name: Dillweg? PLZ=13158
 Levkojenweg: unbefestigte Straﬂe, Q2-	? 9585,21712 9617,21638 9659,21523
-#: XXX neuer Name: Dinkelweg?
+#: XXX neuer Name: Dinkelweg? PLZ=13158
 Petunienweg: unbefestigte Straﬂe, Q2-	? 9571,21753 9549,21818 9505,21911
-#: XXX neuer Name: Eisenkrautweg?
+#: XXX neuer Name: Eisenkrautweg? PLZ=13158
 Resedaweg: unbefestigte Straﬂe, Q3+	? 9527,21682 9555,21617 9600,21503
-#: XXX neuer Name: Estragonweg?
+#: XXX neuer Name: Estragonweg? PLZ=13158
 Nelkenweg: unbefestigte Straﬂe, Q2-	? 9515,21730 9493,21796 9439,21923
-#: XXX neuer Name: Feldkr‰uterweg?
+#: XXX neuer Name: Feldkr‰uterweg? PLZ=13158
 Mittelweg: unbefestigte Straﬂe, Q2-	? 9428,21574 9499,21596 9555,21617 9617,21638 9694,21668
-#: XXX neuer Name: Frauenmantelweg? vvv
+#: XXX neuer Name: Frauenmantelweg? PLZ=13158 vvv
 Blumenweg: unbefestigte Straﬂe, Q2-	? 9541,21482 9499,21596 9476,21656
 (Br¸cke): Asphalt, Q1+	? 9476,21656 9458,21705
 Kornblumenweg: unbefestigte Straﬂe, Q2-	? 9458,21705 9433,21771 9373,21906
 #: XXX ^^^
-#: XXX neuer Name: Gierschweg?
+#: XXX neuer Name: Gierschweg? PLZ=13158
 Mohnweg: unbefestigte Straﬂe, Q2-	? 9158,21467 9205,21318
-#: XXX neuer Name: Goldrutenweg?
+#: XXX neuer Name: Goldrutenweg? PLZ=13158
 Alsternweg: unbefestigte Straﬂe, Q2-	? 9393,21674 9312,21880 9276,21958
-#: XXX neuer Name: Hamamelisweg?
+#: XXX neuer Name: Hamamelisweg? PLZ=13158
 Lindenweg: unbefestigte Straﬂe, Q2-	? 9097,21427 9121,21346
 # REMOVED ---   Heilkr‰uterweg -> siehe strassen-orig
-#: XXX neuer Name: Huflattichweg?
+#: XXX neuer Name: Huflattichweg? PLZ=13158
 Veilchenweg: unbefestigte Straﬂe, Q3+	? 9326,21655 9252,21855 9201,21974
-#: XXX neuer Name: Ingwerweg?
+#: XXX neuer Name: Ingwerweg? PLZ=13158
 Seeweg: unbefestigte Straﬂe, Q2-	? 9282,21589 9260,21636 9187,21828 9156,21916 9127,21990
-#: XXX neuer Name: Johanniskrautweg?
+#: XXX neuer Name: Johanniskrautweg? PLZ=13158
 Goldlackweg: unbefestigte Straﬂe, Q3	? 9203,21621 9132,21805
-#: XXX neuer Name: Kampferweg?
+#: XXX neuer Name: Kampferweg? PLZ=13158
 Dahlienweg: unbefestigte Straﬂe, Q2-	? 8995,21990 9045,21873 9082,21786 9113,21687 9092,21677 9120,21599
 #: XXX neuer Name?
 Gladiolenweg: Gras, Q3	? 9092,21677 9014,21650
 # REMOVED ---   Kr‰uterplatz -> siehe strassen-orig
 # REMOVED ---   Kr‰uterweg -> siehe strassen-orig
-#: XXX neuer Name: vielleicht K¸mmelweg?
+#: XXX neuer Name: K¸mmelweg? PLZ=13158 (siehe auch unten)
 Lilienweg: unbefestigte Straﬂe, Q2-	? 9145,21606 9169,21548 9180,21523
-#: XXX neuer Name: Lorbeerweg? vvv
+#: XXX neuer Name: Lorbeerweg? PLZ=13158 vvv
 #: XXX auf einem Schilder steht f‰lschlicherweise "Tulpen Weg"
 Tulpenweg: unbefestigte Straﬂe, Q2-	? 8901,21951 8943,21833
 Tulpenweg: unbefestigte Straﬂe, Q3	? 8943,21833 8982,21748
 Tulpenweg: unbefestigte Straﬂe, Q2-	? 8982,21748 9014,21650 9042,21578 9066,21516 9085,21467
 #: XXX ^^^
-#: XXX neuer Name: Majoranweg?
+#: XXX neuer Name: Majoranweg? PLZ=13158
 Fliederweg: unbefestigte Straﬂe, Q2-	? 8921,21724 8980,21559 9028,21441 8987,21430
-#: XXX neuer Name: Nachtkerzenweg?
-Margueritenweg	? 8839,21693 8900,21536
-#: XXX neuer Name: Oreganoweg?
+#: XXX neuer Name: Nachtkerzenweg? PLZ=13158
+#: XXX oldname Margeritenweg (DPAG) oder Margueritenweg (osm)?
+Margeritenweg	? 8839,21693 8900,21536
+#: XXX neuer Name: Oreganoweg? PLZ=13158
 Weidenweg: unbefestigte Straﬂe, Q2-	? 8439,22143 8572,22094
-#: XXX neuer Name: Pfefferminzweg? vvv
+#: XXX neuer Name: Pfefferminzweg? PLZ=13158 vvv
 An der Industriebahn: unbefestigte Straﬂe, Q2-	? 8464,22215 8594,22158 8755,22081
 An der Industriebahn: Gras, Q3, NN, Betonbr¸cke	? 8755,22081 8795,22056
 An der Industriebahn: unbefestigte Straﬂe, Q2-	? 8795,22056 8903,22012 8995,21990
 #: XXX ^^^
-#: XXX neuer Name: Queckenweg?
+#: XXX neuer Name: Queckenweg? PLZ=13158
 Am Graben: unbefestigte Straﬂe, Q2-	? 8736,21985 8753,22037 8795,22056
-#: XXX neuer Name: Rotkleeweg?
+#: XXX neuer Name: Rotkleeweg? PLZ=13158
 Rosenthaler Weg: unbefestigte Straﬂe, Q2-	? 8800,21947 8830,21984 8903,22012
-#: XXX neuer Name: Schnittlauchweg?
+#: XXX neuer Name: Schnittlauchweg? PLZ=13158
 Langer Weg: unbefestigte Straﬂe, Q2-	? 8848,21920 8901,21951 8995,21990 9092,22002
-#: XXX neuer Name: Thymianweg?
+#: XXX neuer Name: Thymianweg? PLZ=13158
 Gr¸ner Weg: unbefestigte Straﬂe, Q2-	? 8830,21788 8943,21833 9045,21873 9156,21916
 #: XXX neuer Name?
 Grenzweg: unbefestigte Straﬂe, Q2-	? 8557,22063 8572,22094 8594,22158
-#: XXX neuer Name?
+#: XXX neuer Name? K¸mmelweg, PLZ=13158 (siehe auch oben)
 Kurzer Weg: Qualit‰t?	? 9169,21548 9066,21516
 #: next_check ^^^
 #: last_checked ^^^
@@ -2586,6 +2592,9 @@ Julius-R¸tgers-Str. (Erkner): Qualit‰t?	? 34293,3076 34391,3099 34416,3127 34671
 Saarower Weg: Qualit‰t des Abschnitts im Wald?	? 31206,3874 31350,3908 31417,3912 31450,3938
 #: XXX wahrscheinlich asphaltiert, zumindest an der B2
 Am Kirchberg (Neu Fahrland): Qualit‰t?	? -13783,3919 -13925,3928 -14507,4057 -14632,4093 -14725,4141 -14777,4143
+#: XXX fehlt in potsdam.coords.data, PLZ=14476
+#: XXX oldname: Drei Mohren
+Zu den drei Mohren (Neu Fahrland): Qualit‰t?	? -14777,4143 -14811,4200 -14726,4634
 #: XXX fehlt in Potsdam.coords.data, PLZ=14476
 An der Birnenplantage (Neu Fahrland): Qualit‰t? Genaue Lage?	? -14124,3528 -14057,3920
 Wendensteig (Groﬂ Glienicke): Qualit‰t?	? -10157,6397 -10154,6284 -10148,6021 -10140,5794 -10141,5704 -10161,5459 -10174,5357 -10102,5131 -10080,5069
@@ -2741,8 +2750,7 @@ Templiner Str.: gibt es in der Templiner Straﬂe mittlerweile Radstreifen?	? -130
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20110831.0850.356859.html
 Manuelaweg: wo genau befindet sich diese Straﬂe? Qualit‰t?	? -6463,5679 -6598,5542
 # 
-#: XXX fehlt in Berlin.coords.data
-Forum (Adlershof): Wo genau liegt die Straﬂe? Ist sie ausgeschildert? Qualit‰t?	? 19242,3052 19328,3072
+# REMOVED (rj meint, dass hier kein *ausgeschilderter* Platz ist) --- #: XXX fehlt in Berlin.coords.data --- Forum (Adlershof): Wo genau liegt die Straﬂe? Ist sie ausgeschildert? Qualit‰t?	? 19242,3052 19328,3072
 Hohen Neuendorfer Weg (Birkenwerder): Qualit‰t?	? 645,30634 618,30687 575,30816 564,30845 550,30867 516,30899 342,31100
 Am Alten Mˆrtelwerk (Potsdam-Eiche): Qualit‰t?	? -17127,-559 -17141,-496 -17186,-451 -17211,-356 -17254,-256
 Am Tempelberg (Potsdam-Eiche): Qualit‰t?	? -17003,-544 -17019,-422
@@ -2878,7 +2886,7 @@ Zur Kˆniglichen Hofbrauerei (Potsdam): Qualit‰t?	? -12813,-2423 -12781,-2376
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
 Am Golmer Weinberg (Potsdam-Golm): Qualit‰t? Genaue Lage?	? -19225,-261 -19147,-77
 Alter Weinberg (Groﬂ Glienicke): Qualit‰t?	? -9276,7226 -9198,7051
-#: XXX fehlt in Potsdam.coords.data
+#: XXX fehlt in Potsdam.coords.data PLZ=14476
 #: XXX oldname bis Juli 2012: Dr.-Kurt-Fischer-Str.
 #: by: http://www.potsdam.de/cms/dokumente/10099206_1471008/a2f17d1b/Amtsblatt_11_12.pdf (Umbenennung)
 Am Gutstor (Groﬂ Glienicke): Qualit‰t?	? -9429,7137 -9445,7199 -9506,7421
@@ -3256,7 +3264,7 @@ Am Orangeriepark: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet s
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2012 ("geplanter Straﬂenname")
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2012 (Lage)
-#: XXX fehlt auch in Berlin.coords.data
+#: XXX fehlt auch in Berlin.coords.data PLZ=12683
 #: last_checked: 2012-09-16
 #: next_check: 2013-08-01
 Fechinger Weg: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet sich die Straﬂe (mˆglichst mit GPS-Track)?	?::inwork 21373,11941 21371,11845 21430,11794

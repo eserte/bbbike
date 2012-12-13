@@ -20041,26 +20041,23 @@ userdel	q4::inwork 2295,20358 2241,20487
 EOF
      },
      { from  => 1330902000, # 2012-03-05 00:00
-       until => 1388530799, # 2013-12-31 23:59
-       text  => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende 2013',
+       until => 1370037600, # Mitte 2013 # 1388530799, # 2013-12-31 23:59
+       text  => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte 2013',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html',
+       source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
 #: XXX nach den Bauarbeiten Radwege auf beiden Seiten
-#: next_check: 2013-12-01
+#: next_check: 2013-06-01
 userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
      { from  => undef, # 1329631200, # 2012-02-19 07:00
-       until => undef, # 1341068400, # 2012-06-30 17:00
+       until => 1401573600, # Mitte 2014 # undef, # 1341068400, # 2012-06-30 17:00
        text  => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
        type  => 'handicap',
-## früher:
-#       source_id => 'INKO_093369',
+       source_id => 'INKO_093369',
        data  => <<EOF,
-#: last_checked: 2012-11-14
-#: next_check: 2013-03-01
-#: XXX ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
+#: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 userdel	q3::inwork; 9164,12172 9373,12197
 EOF
      },
