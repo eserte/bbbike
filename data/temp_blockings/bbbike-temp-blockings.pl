@@ -6693,15 +6693,18 @@ EOF
      },
      { from  => 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
        until => 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
-       text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: der Bereich Oberwallstr., Niederlagstr., Am Schinkelplatz gesperrt, vom 26.11.-26.12.2012',
+       text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, vom 26.11.-26.12.2012',
        type  => 'gesperrt',
        source_id => 'http://www.berliner-weihnacht.de/',
        data  => <<EOF,
 userdel	2::temp 10008,12274 9994,12368
-userdel	2::temp 9943,12364 9961,12273 9972,12184
+# REMOVED (passierbar!) --- userdel	2::temp 9943,12364 9961,12273 9972,12184
 userdel	2::temp 10010,12259 10035,12209
-userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
-userdel	2::temp 9961,12273 9875,12257
+# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
+userdel	2::temp 10008,12274 10058,12290
+userdel	2::temp 10091,12232 10058,12290 9996,12401
+# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9961,12273 9875,12257
+userdel	q4::temp 9994,12368 9996,12401 9984,12426
 EOF
      },
      { from  => 1163718000, # 2006-11-17 00:00
