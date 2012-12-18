@@ -211,6 +211,7 @@
     (define-key map "\C-c|"    'bbbike-split-street)
     (define-key map "\C-c\C-j" 'bbbike-join-street)
     (define-key map "\C-cj"    'bbbike-join-street)
+    (define-key map "\C-c."    'bbbike-update-now)
     (setq bbbike-mode-map map)))
 
 (defvar bbbike-syntax-table nil "Syntax table for BBBike bbd mode.")
