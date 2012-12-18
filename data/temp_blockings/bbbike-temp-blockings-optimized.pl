@@ -151,9 +151,9 @@ userdel	2::temp -3231,14383 -3293,14304
        undef,
        {
          'source_id' => 'http://www.sophienstrasse-berlin.de/?y=2012',
-         'until' => 1355698799,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 15.12. - 16.12.2012 ',
-         'from' => 1355439600,
+         'until' => 1356303599,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt. 22.12. - 23.12.2012 ',
+         'from' => 1356044400,
          'id' => 166,
          'data' => 'userdel	2::temp 9986,13412 10317,13248
 ',
@@ -422,9 +422,9 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-lichtenrade.html?y=2012',
-         'until' => 1355608800,
+         'until' => 1356217199,
          'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
-         'from' => 1355439600,
+         'from' => 1356044400,
          'id' => 417,
          'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 ',
@@ -2341,16 +2341,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/orte/weihnachtsmaerkte/schlossplatz-koepenick/index.php?y=2012',
-         'until' => 1355698799,
-         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 07.12.2012 bis zum 16.12.2012',
-         'from' => 1354748400,
-         'id' => 2003,
-         'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2812,7 +2803,7 @@ userdel	2::inwork 19968,16 19940,52
        undef,
        {
          'source_id' => 'INKO_111647',
-         'until' => 1370037600,
+         'until' => 1370005200,
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte 2013',
          'from' => 1330902000,
          'id' => 2316,
@@ -2824,7 +2815,7 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
        },
        {
          'source_id' => 'INKO_093369',
-         'until' => 1401573600,
+         'until' => 1404140400,
          'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
          'from' => undef,
          'id' => 2317,
@@ -2939,7 +2930,7 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
        undef,
        {
          'source_id' => 'IM_019043',
-         'until' => 1355580000,
+         'until' => 1356098400,
          'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Mitte Dezember 2012',
          'from' => 1344142800,
          'id' => 2368,
@@ -2962,16 +2953,7 @@ userdel	2::night 14838,11410 14776,11400
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_019090',
-         'until' => 1356105600,
-         'text' => 'Köthener Brücke (Tiergarten): Baustelle, Straße gesperrt bis Mitte Dezember 2012',
-         'from' => 1345119120,
-         'id' => 2373,
-         'data' => 'userdel	q4::inwork 8443,10777 8430,10710
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3016,32 +2998,23 @@ userdel	q4::inwork; 10870,14689 10893,14705
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html',
-         'until' => 1355525999,
-         'text' => 'Sanierung der Rheinsteinstraße zwischen Zwieseler Str. und Königswinterstraße, Teile der Fahrbahn sind gesperrt, vom 24. September bis zum 14. Dezember 2012 ',
-         'from' => 1348437600,
-         'id' => 2385,
-         'data' => 'userdel	q4::inwork 18998,8784 19078,8817 19120,8835 19169,8856 19316,8933 19510,9035 19629,9094
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
        undef,
        undef,
        {
-         'source_id' => 'IM_019272',
-         'until' => 1388530800,
-         'text' => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis 2014)',
+         'source_id' => 'IM_019421',
+         'until' => 1386169200,
+         'text' => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)',
          'from' => 1353366000,
          'id' => 2391,
          'data' => '#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
-#: by: IM_019421 (allerdings hier nur bis Dezember 2013?)
-#: next_check: 2014-01-01
+#: by: IM_019421 (allerdings hier nur bis Dezember 2013)
+#: next_check: 2013-12-04
 #: XXX danach bessere Straßenqualität? Radstreifen?
 userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 ',
@@ -3062,16 +3035,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20121030.1450.377336.html',
-         'until' => 1355785199,
-         'text' => 'Fahrbahnflächeninstandsetzung in der Winterstraße, voraussichtlich vom 1. November 2012 bis zum 17. Dezember 2012 wird die Fahrbahn wegen Bauarbeiten voll gesperrt ',
-         'from' => 1351638000,
-         'id' => 2397,
-         'data' => 'userdel	q4::inwork 8296,18154 8116,18115
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Richardstr.: Baustelle zwischen Böhmische Str. und Richardplatz, Fahrtrichtung gesperrt',
@@ -3133,6 +3097,7 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
          'from' => undef,
          'id' => 2405,
          'data' => '#: last_checked: 2012-12-02
+#: next_check: 2012-12-16
 userdel	q4::inwork 12872,7134 13058,7165
 ',
          'type' => 'handicap'

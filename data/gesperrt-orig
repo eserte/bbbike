@@ -147,7 +147,7 @@ Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
 Scheelestr.	1 5740,1227 5697,1098 5556,984 5493,935 5424,882 5342,845
-Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4903,6221
+Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
 An der Schillingbrücke	1 12056,11390 12055,11331
 An der Schillingbrücke	1 12026,11348 12056,11390
 Schulze-Delitzsch-Platz	1 11155,11750 11048,11745 11022,11782
@@ -200,8 +200,8 @@ Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092
 Dresdener Str./Oranienplatz	1 11258,10682 11234,10739
 Gutsmuthsstr.	1 5312,6382 5065,6515
 Bornstr.	1 5210,6522 5346,6443
-Schildhornstr.	1 4903,6221 4962,6218 5165,6119
-Schildhornstr.	1 5137,6066 5047,6116 4903,6221
+Schildhornstr.	1 4937,6205 4984,6209 5165,6119
+Schildhornstr.	1 5137,6066 5047,6116 4937,6205
 Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 #: by: Robert Joop:
 Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
@@ -1689,7 +1689,7 @@ tragen (28 Stufen)	0:30 18180,12262
 tragen (S-Bhf. Marzahn)	0:30 19571,15417
 tragen (S-Bhf. Marzahn)	0:30 19638,15431
 tragen (13 Stufen)	0:30 7923,12876
-tragen (2 x 5 Stufen)	0:30 4999,6397
+tragen (2 x 5 Stufen)	0:30 4985,6370
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2301,4917
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2181,4835
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15537,-4535
@@ -1816,7 +1816,7 @@ Schranke	BNP:3::trailer=10 -822,16535
 #: note: in Richtung Dieffenbachstr. recht eng, in die andere Richtung ist mehr Platz
 Schranke	BNP:5::trailer=10 10919,9804
 Drängelgitter, kann umfahren werden	BNP:3::trailer=10 14969,10138
-#: note: öfters mal offen?
+#: note: öfters mal offen? (mindestens einmal im Herbst 2012 geschlossen, am 2012-12-18 offen)
 Schwingtor	BNP:3::trailer=10 14146,12921
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schranke	BNP:3::trailer=10 8622,13042
@@ -2040,8 +2040,8 @@ Drängelgitter am Bahnübergang	BNP:3 13568,2208
 Drängelgitter	BNP:5 7509,8929
 #: by: Steini: vvv
 #: confirmed_by: srt:
-Drängelgitter	BNP:3::trailer=8 7245,8583
-Drängelgitter	BNP:3::trailer=8 7292,8631
+Drängelgitter	BNP:3::trailer=8 7242,8586
+Drängelgitter	BNP:3::trailer=8 7288,8635
 #: by: ^^^
 Schranke	BNP:3 8251,20927
 #: by: Sorven (xbs9):
@@ -2199,7 +2199,7 @@ Am Sudhaus: Bauarbeiten, noch gesperrt	2:inwork 12134,8172 12282,8204
 #: next_check: 2013-03-15
 Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 # 
-#: last_checked: 2012-11-27
+#: last_checked: 2012-12-18
 #: next_check: 2013-05-01
 #: XXX nach den Bauarbeiten gibt es wahrscheinlich keine Fahrbahn mehr --- wird man durch den Fußgängerbereich gut durchfahren können?
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
@@ -2328,10 +2328,12 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 #: note: abgeschlossener Zaun
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2012-11-04
-#: next_check: 2012-12-01
-#: XXX mit den Bauarbeiten "An den Eldenaer Höfen" koordinieren
-Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14405,12953 14682,12874
+#: last_checked: 2012-12-18 vvv
+#: XXX mit den Bauarbeiten "An den Eldenaer Höfen" koordinieren vvv
+Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
+An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14449,12833 14594,12800
+#: XXX ^^^
+#: last_checked ^^^
 #
 # REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
@@ -2350,7 +2352,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: 2013-03-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
-# REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5125,6262 4971,6345
+# REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5062,6295 4997,6331 4971,6345
 # 
 #: last_checked: 2012-08-31
 #: next_check: 2013-01-15
@@ -2429,7 +2431,7 @@ Vogelsang	1 2106,5808 2141,5948 2195,6184 2193,6214
 Dievenowstr.	2 3165,6939 3202,7121
 Ahornstr. (Steglitz)	1 4863,6088 4888,6093 4923,6073 4926,6053
 Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
-Treitschkestr.	1 4854,6413 4971,6345 5125,6262
+# REMOVED (seit der Eröffnung des Boulevards Berlin nicht mehr) --- Treitschkestr.	1 4854,6413 4971,6345 4997,6331 5062,6295
 tragen (3 x 10 Stufen)	0:40 4127,5427
 tragen (5 Stufen)	0:10 4061,5418
 Iltisstr.	1 2797,5624 2858,5535

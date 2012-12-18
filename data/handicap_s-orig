@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2012-12-12
+#: last_checked: 2012-12-18
 #: next_check: 2013-05-17
 #: note: vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen M¸hlenstr. und Oberbaumbr¸cke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¶INKO_113418¶http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
 Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-12-12 vvv
+#: last_checked: 2012-12-18 vvv
 #: next_check: 2012-12-21 vvv
 #: note: vmz-Eintrag: Modersohnstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/12) Richtung Stralauer Allee zwischen Simplonstr. und Revaler Str., 02.11.2012 11:13 Uhr bis 21.12.2012 15:00 Uhr	IM_019325
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -23,7 +23,7 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2012-12-10 vvv
+#: last_checked: 2012-12-18 vvv
 #: next_check: 2013-01-15 vvv
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
@@ -71,7 +71,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
 # 
 #: last_checked: 2012-07-13
-#: next_check: 2012-12-01
+#: next_check: 2013-03-15
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch Totalsperrung in der Voﬂstr.
 #: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
@@ -797,7 +797,9 @@ Gounodstr.: Fuﬂg‰nger	q1 14259,15816 14272,15837 14366,15877
 Seidenberger Str.: Bordstein, Gel‰nder	q3 12379,16998 12373,17007
 Mulackstr.: enge Straﬂe	q1 10640,13471 10535,13509 10406,13543 10308,13575
 R¸ckerstr.: enge Straﬂe	q1 10597,13647 10535,13509
-Cheruskerpark: Fuﬂg‰nger	q1 7437,8712 7403,8693 7369,8583 7352,8391 7352,8390 7283,8265 7282,8264 7250,8223
+Cheruskerpark: Fuﬂg‰nger	q1 7439,8716 7405,8698 7384,8665 7368,8595 7352,8391 7352,8390 7283,8265 7282,8264 7250,8223
+(Ebersstr. - Park GASAG Nordspitze): Fuﬂg‰nger	q1 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
+(Ebersstr. - Cheruskerstr.): Fuﬂg‰nger	q1 7353,8633 7384,8665
 (Cheruskerpark - Cheruskerstr.): Fuﬂg‰nger	q1 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
 (Torgauer Str. - Cheruskerstr.): Fuﬂg‰nger	q1 7282,8264 7289,8259 7332,8292 7375,8294
 (Bernhardstr. - Varziner Platz): S-Bahnunterf¸hrung, Fuﬂg‰nger	q4 5471,7915 5475,7906 5492,7868
@@ -1418,6 +1420,7 @@ Grimmstr. [ehemaliges Urbankrankenhaus]: Wohngebiet	q2 11072,9711 11040,9724 110
 (Vorfahrt am Bahnhof Friedrichstr.): eng, Taxis, querende Fuﬂg‰nger	q2 9171,12758 9303,12718
 #: XXX_prog BS auf beiden Seiten
 Selkestr.: Fuﬂg‰nger, Bordsteine	q3 12722,7261 12741,7224
+(Schildhornstr. - Treitschkestr./Hackerstr.): einige Fuﬂg‰nger	q1 4937,6205 4997,6331 5015,6363 4999,6397
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -1425,7 +1428,7 @@ Selkestr.: Fuﬂg‰nger, Bordsteine	q3 12722,7261 12741,7224
 #: note: Michael meint, dass man nur "die Strecke von Heinersdorf kommend _in Richtung Pankow_ empfehlen" kann
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3- 11805,19071 11895,19183 11927,19308
 #: by: Steini
-Ebersstr.: Sch¸ler	q2 7245,8583 7292,8631
+Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 #: by: Christian Uhrich:
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
 #: by: Petra (ploewe...):
@@ -1681,7 +1684,7 @@ LefËvrestr.: enge Straﬂe	q1 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 52
 #: by: Michael Heckner:
 Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
 #: by: Jens Wesendrup:
-Hackerstr.: schmale Straﬂe, schlecht einzusehen	q1 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
+Hackerstr.: schmale Straﬂe, schlecht einzusehen	q1 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 #: by: Jochen LIedtke:
 Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 #: by: Katrin Kroschk:
