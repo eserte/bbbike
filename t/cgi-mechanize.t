@@ -134,7 +134,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBike-Test/1.0" } @browsers;
 
 my $outer_berlin_tests = 30;
-my $tests = 133 + $outer_berlin_tests;
+my $tests = 138 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -392,7 +392,6 @@ for my $browser (@browsers) {
     ######################################################################
     # A street in Potsdam but not in "landstrassen"
 
- XXX: { ; }
  XXX_PETRI_DANK: {
 
 	$get_agent->();
@@ -708,6 +707,32 @@ for my $browser (@browsers) {
 	$like_long_data->(qr{Sanssouci.*Einbruch der Dunkelheit}, 'Ausweichroutenhinweis');
 	$agent->click_button(value => 'Ausweichroute suchen');
 	$like_long_data->(qr{Es existiert keine Ausweichroute}, 'Ausweichroute existiert nicht');
+    }
+
+ XXX: { ; }
+    {
+	# Ausweichroute für saisonale Fähre (hier: BVG-Fähre F23)
+	$get_agent->();
+	my $url = URI->new($cgiurl);
+	$url->query_form_hash({startc=>'29985,2917',
+			       startname=>'Zur Fähre (Müggelheim)',
+			       zielname=>'Dorfstr. (Rahnsdorf)',
+			       zielc=>'29998,3170',
+			       scope=>'city',
+			       pref_speed=>20,
+			       pref_ferry=>'use',
+			       pref_seen=>1,
+			       output_as=>'xml',
+			      });
+	my $resp = $agent->get($url);
+	my $root = handle_xml_response $resp;
+	SKIP: {
+		skip "Missing prerequisites (XML::LibXML?) for further XML tests", 2
+		    if !$root;
+		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
+		ok($affBlockNode, "Found AffectingBlocking node");
+		like($affBlockNode->findvalue("./Text"), qr{Fähren.*F23.*: fahren nur ab .* bis .*, fahren nicht am Montag}, "temp blockings text");
+	    }
     }
 
     ######################################################################
