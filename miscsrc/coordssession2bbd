@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: coordssession2bbd,v 1.4 2007/03/18 19:52:02 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2010,2012 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -102,13 +101,25 @@ sub handle_path {
 	}
     } elsif (-f $file_or_dir) {
 	if ($file_or_dir =~ m{\.zip$}) {
-	    require Archive::Zip;
-	    my $zip = Archive::Zip->new($file_or_dir);
-	    for my $member ($zip->members) {
-		warn "  Check " . $member->fileName . " ...\n" if $debug;
-		my $data = $cpt->reval($member->contents);
+	    require IO::Uncompress::Unzip; # support also Zip64 (unlike Archive::Zip)
+	    $IO::Uncompress::Unzip::UnzipError = $IO::Uncompress::Unzip::UnzipError if 0; # cease -w
+	    my $zip = IO::Uncompress::Unzip->new($file_or_dir)
+		or die "Can't open $file_or_dir: $IO::Uncompress::Unzip::UnzipError";
+	    my $status;
+	    for ($status = 1; $status > 0; $status = $zip->nextStream) {
+		my $name = $zip->getHeaderInfo->{Name};
+		warn "  Check $name ...\n" if $debug;
+
+		my $buf;
+		while(($status = $zip->read(my $chunk)) > 0) {
+		    $buf .= $chunk;
+		}
+		my $data = $cpt->reval($buf);
 		handle_data($data);
+		last if $status < 0;
 	    }
+	    die "Error processing $file_or_dir: $!"
+		if $status < 0;
 	} else {
 	    my $data;
 	    if ($file_or_dir =~ m{\.gz$}) {
