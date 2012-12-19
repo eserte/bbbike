@@ -3111,6 +3111,55 @@ userdel	q4::inwork 12872,7134 13058,7165
          'data' => 'userdel	2::inwork 6378,20460 6428,20487 6487,20512 6601,20542 7083,20584 7289,20618
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.potsdamer-wassertaxi.de/fahrplan.php?y=2012',
+         'until' => undef,
+         'text' => 'Potsdamer Wassertaxi: fährt nur im Sommer an Wochenenden und Feiertagen',
+         'from' => undef,
+         'id' => 2407,
+         'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+	2::temp -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
+	2::temp -10086,1886 -10055,1628
+#: XXX_prog ^^^
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html',
+         'until' => undef,
+         'text' => 'Fähren F21, F23, F24: fahren nur ab ca. April bis Anfang Oktober, fahren nicht am Montag',
+         'from' => undef,
+         'id' => 2408,
+         'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
+	2::temp 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
+	2::temp 29959,3031 29968,2986
+#: XXX_prog ^^^
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Karniner Fähre: fährt nur von Mai bis Oktober',
+         'from' => undef,
+         'id' => 2409,
+         'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+	2::temp 38674,160390 37644,160344 38049,160420 38325,160573
+#: XXX_prog ^^^
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Westklüne - Ostklüne: keine offizielle Fähre, aber wenn man Glück hat, kann man per Ruderboot übergesetzt werden',
+         'from' => undef,
+         'id' => 2410,
+         'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+	2::temp 42506,161075 42450,161090
+#: XXX_prog ^^^
+',
+         'type' => 'gesperrt'
        }
      
 );
