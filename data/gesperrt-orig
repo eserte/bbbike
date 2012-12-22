@@ -735,6 +735,10 @@ Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11843,13090 11904,13075 1195
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 11839,13083 11739,13131 11723,13139
 Mollstr. (Straßenbahntrasse)	3nocross::ignrte 11985,13075 11966,13074 11905,13069 11839,13083 11739,13131 11723,13139
 #: note ^^^
+#: note: Bundesplatztunnel, Grünanlage vvv
+Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
+Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
+#: note ^^^
 #: note: Mittelstreifen mit teilweise dichter Beparkung, sehr breite Straße, Straßentunnel vvv
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10805,12468 10738,12364
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 10738,12364 10803,12470 10876,12563 10953,12638 11055,12717 11105,12764
@@ -1335,7 +1339,7 @@ Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 10997,16280 10989,1619
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21796,4517
 Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21389,4635 21494,4605
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11898,8362 11920,8252 11931,8206
-Bundesplatztunnel	3nocross 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
+Bundesplatztunnel	3nocross 5350,7554 5349,7619 5348,7681 5348,7746 5346,7860
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
 Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
@@ -1346,9 +1350,9 @@ Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15141 19738,15143 19852,15201
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
-Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5513,8588
+Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5502,8599
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
-Bundesallee: Absperrung auf dem Mittelstreifen	3nocross 5510,8709 5513,8588 5481,8506 5444,8406 5421,8337
+Bundesallee: Absperrung auf dem Mittelstreifen	3nocross 5510,8709 5502,8599 5465,8511 5427,8412 5399,8344
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9207,5185 9192,5272 9182,5332 9171,5397 9147,5534
 Schönhauser Allee: U-Bahnviadukt	3nocross 10969,15944 10964,15896 10953,15787
 Schönhauser Allee: U-Bahnviadukt	3 10941,15697 10917,15525 11055,15504
@@ -2207,7 +2211,7 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 #: XXX siehe auch Einträge in handicap_s-orig
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
-#: last_checked: 2012-12-08
+#: last_checked: 2012-12-22
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	2:inwork 14465,11195 14442,11101
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html
@@ -2436,7 +2440,7 @@ tragen (3 x 10 Stufen)	0:40 4127,5427
 tragen (5 Stufen)	0:10 4061,5418
 Iltisstr.	1 2797,5624 2858,5535
 Bundesallee: Mittelstreifen unbequem zu überqueren	3nocross 5493,9367 5495,9263 5503,8982
-Bundesallee: Mittelstreifen, parkende Autos	3nocross 5356,7862 5356,7915 5357,8013
+# REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Mittelstreifen, parkende Autos	3nocross 5346,7860 5350,7915 5357,8013
 Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3nocross 6494,10440 6403,10424 6276,10401
 (Kolonieweg a. d. Forkenbeckstr.): tragen (5 Stufen)	0:15 3230,8194
 (Kolonieweg a. d. Forkenbeckstr.): schieben (Rampe 10 Stufen)	0:15 3753,8073
@@ -2446,7 +2450,7 @@ Sterzinger Str.	1 6096,8600 6128,8536
 Bozener Str.	1 5904,8928 5971,8926 6049,8916
 Bozener Str.	1 5971,8926 5975,9094
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492 6753,10446
-Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8013
+# REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Queren nicht möglich	3nocross 5354,8236 5363,8170 5376,8104 5357,8013
 (Los-Angeles-Platz)	1s:q3 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
 Schwingtor zum Spielplatz	BNP:10 11865,13027
@@ -2492,9 +2496,7 @@ Pintschstr.	1 13339,13196 13435,12973
 Landsberger Allee	3nocross 12386,13085 12585,13118 12685,13135
 Landsberger Allee	3nocross 20525,15571 20641,15622 20796,15667
 Landsberger Allee: Straßenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701
-#: by: jörg (schalkau):
-#: confirmed_by: srt
-Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
+# REMOVED (mitlerweile (ca. 2012) existiert für Fußgänger und Autofahrer eine Kreuzungsmöglichkeit) --- #: by: jörg (schalkau): --- #: confirmed_by: srt --- Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
 Landsberger Allee	3nocross 21475,15705 21584,15753 21694,15802
 Kalkhorster Weg (10 Stufen)	0:40 3904,8664
 Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9047 3816,9045 3835,9044

@@ -208,7 +208,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2012-11-09
+#: last_checked: 2012-12-21
 #: next_check: 2013-06-01
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -431,6 +431,7 @@ Rückerstr.: mäßiger Asphalt	Q1 10597,13647 10535,13509
 #: confirmed_by: srt
 Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11331,14350 11358,14331 11380,14316 11418,14290 11506,14230
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11506,14230 11713,14118 11946,13993
+#: XXX ist nach den Bauarbeiten die Fahrbahn komplett asphaltiert?
 Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13695,12643 13686,12611 13678,12571 13698,12544 13730,12535 13761,12578 13767,12626 13747,12642 13727,12642 13695,12643
 Petersburger Platz: Kopfsteinpflaster	Q2 13559,12779 13470,12990
 Pettenkoferstr Str.: Asphalt	Q0 15117,12106 15098,12213
@@ -1184,8 +1185,8 @@ Oderstr.: asphaltiert	Q0 14946,11697 14856,11740 14794,11770
 Oderstr.: Kopfsteinpflaster	Q2 14794,11770 14708,11820 14623,11867
 Travestr.: Kopfsteinpflaster	Q2 14981,11751 14897,11801
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1 4320,8596 3970,8582
-Volkspark Wilmersdorf: Parkweg	Q1 5919,8417 5805,8352 5666,8345 5533,8478 5481,8506
-Volkspark Wilmersdorf: Parkweg	Q1 5481,8506 5417,8519 5347,8562
+Volkspark Wilmersdorf: Parkweg	Q1 5919,8417 5805,8352 5666,8345 5533,8478 5465,8511
+Volkspark Wilmersdorf: Parkweg	Q1 5465,8511 5417,8519 5347,8562
 Friedrichsruher Str.: Kopfsteinpflaster, OK	Q1 3333,9026 3196,9193
 Friedrichsruher Str.: Verbundsteine	Q0 3196,9193 3093,9306 2998,9408
 Cunostr.: Kopfsteinpflaster	Q2+ 3196,9193 3179,9002
@@ -9165,12 +9166,12 @@ Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3528,4118 3768,4045
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833 294,4916 144,5102 88,5136
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2054,6840 1961,6820
 Wilhelmshöher Str.: guter Asphalt	Q0 4836,7327 4889,7327 5072,7327 5310,7325
-Sarrazinstr.: guter Asphalt	Q0 5361,7423 5422,7461 5452,7493 5492,7543 5606,7651 5635,7660
+Sarrazinstr.: guter Asphalt	Q0 5352,7428 5422,7461 5452,7493 5492,7543 5606,7651 5635,7660
 Perelsplatz: guter Asphalt	Q0 5635,7660 5810,7662
 Bennigsenstr.: guter Asphalt	Q0 5807,7771 5957,7773 6195,7775 6215,7761
 Lauterstr.: guter Asphalt	Q0 5810,7662 5810,7684 5809,7712 5807,7771 5806,7796
 Friedrich-Wilhelm-Platz: guter Asphalt	Q0 5314,7217 5310,7325 5318,7424
-Görrestr.: guter Asphalt	Q0 5318,7424 5361,7423
+Görrestr.: guter Asphalt	Q0 5318,7424 5352,7428
 #: by ^^^
 # 
 #: by: rjoop vvv
@@ -10394,13 +10395,13 @@ Schweinfurthstr.: Kopfsteinpflaster	Q2 3306,6453 3384,6356 3403,6331 3421,6309 3
 Am Erlenbusch: Asphalt m. Löchern	Q1 3521,6400 3659,6434 3800,6418
 Brünnhildestr.: Asphalt	Q0 5491,7836 5493,7717
 Isoldestr. (Friedenau): Asphalt	Q0 5517,7869 5636,7734
-Sieglindestr.: Asphalt	Q0 5458,7866 5358,7746
+Sieglindestr.: Asphalt	Q0 5458,7866 5348,7746
 Evastr.: Asphalt	Q0 5636,7685 5608,7684 5528,7683
 Cosimaplatz: Asphalt	Q0 5528,7683 5493,7717 5458,7683 5490,7651 5528,7683
-Sentastr.: Asphalt	Q0 5458,7683 5358,7681
+Sentastr.: Asphalt	Q0 5458,7683 5348,7681
 Elsastr. (Friedenau): Asphalt	Q0 5490,7651 5493,7590 5492,7543
-Ortrudstr.: Asphalt	Q0 5493,7590 5359,7619
-Kundrystr.: Asphalt	Q0 5452,7493 5360,7554
+Ortrudstr.: Asphalt	Q0 5493,7590 5349,7619
+Kundrystr.: Asphalt	Q0 5452,7493 5350,7554
 Straße am Güterbahnhof Wilmersdorf: Kopfsteinpflaster	Q2 6275,7847 5710,7820
 Schnackenburgstr.: Asphalt	Q0 5636,7540 5812,7536
 Stierstr.: Asphalt	Q0 5957,7773 5956,7682 5955,7406
@@ -21977,7 +21978,7 @@ Bernhardstr.: Asphalt	Q0 5570,8011 5570,7939
 #: confirmed_by: srt
 Bernhardstr.: Asphalt	Q0 5472,8012 5471,7915
 #: confirmed_by: srt
-(Bernhardstr. - Bundesallee, Parkplatz): Asphalt	Q0 5471,7915 5356,7915
+(Bernhardstr. - Bundesallee, Parkplatz): Asphalt	Q0 5471,7915 5350,7915
 (Schulstr.): Asphalt	Q0 1443,5193 1443,5279 1407,5298 1333,5246
 Am Petersberg: Kopfsteinpflaster	Q2 990,5581 825,5420
 Pritchardstr.: Asphalt	Q0 1138,4974 1140,5021 1000,5184

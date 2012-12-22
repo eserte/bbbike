@@ -538,6 +538,8 @@ Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11843,13090 11904,13075 11958,13079 11985,13075
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11985,13075 11966,13074 11905,13069 11839,13083 11739,13131 11723,13139
 Mollstr. (Straßenbahntrasse)	3nocross::ignrte 11985,13075 11966,13074 11905,13069 11839,13083 11739,13131 11723,13139
+Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
+Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10805,12468 10738,12364
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 10738,12364 10803,12470 10876,12563 10953,12638 11055,12717 11105,12764
 Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10876,12563 10803,12470 10738,12364
@@ -1310,17 +1312,17 @@ Mahlower Str. -> Boddinstr.: Gitter auf Mittelstreifen	3::igndisp 11773,8231 119
 Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3::igndisp 11773,8231 11920,8252 11898,8362
 Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3::igndisp 11931,8206 11920,8252 11773,8231
 Hermannstr. -> Boddinstr.: Gitter auf Mittelstreifen	3::igndisp 11898,8362 11920,8252 12104,8299
-Bundesplatztunnel	3nocross::ignrte 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
-Bundesallee -> Ortrudstr.: Bundesplatztunnel	3::igndisp 5358,7681 5359,7619 5493,7590
-Ortrudstr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5493,7590 5359,7619 5360,7554
-Sentastr. -> Mainauer Str.: Bundesplatztunnel	3::igndisp 5458,7683 5358,7681 5227,7677
-Sentastr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5458,7683 5358,7681 5359,7619
-Bundesallee -> Sentastr.: Bundesplatztunnel	3::igndisp 5358,7746 5358,7681 5458,7683
-Mainauer Str. -> Sentastr.: Bundesplatztunnel	3::igndisp 5227,7677 5358,7681 5458,7683
-Mainauer Str. -> Bundesallee: Bundesplatztunnel	3::igndisp 5227,7677 5358,7681 5358,7746
-Bundesallee -> Mainauer Str.: Bundesplatztunnel	3::igndisp 5359,7619 5358,7681 5227,7677
-Bundesallee -> Sieglindestr.: Bundesplatztunnel	3::igndisp 5356,7862 5358,7746 5458,7866
-Sieglindestr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5458,7866 5358,7746 5358,7681
+Bundesplatztunnel	3nocross::ignrte 5350,7554 5349,7619 5348,7681 5348,7746 5346,7860
+Ortrudstr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5493,7590 5349,7619 5350,7554
+Bundesallee -> Ortrudstr.: Bundesplatztunnel	3::igndisp 5348,7681 5349,7619 5493,7590
+Bundesallee -> Sentastr.: Bundesplatztunnel	3::igndisp 5348,7746 5348,7681 5458,7683
+Bundesallee -> Mainauer Str.: Bundesplatztunnel	3::igndisp 5349,7619 5348,7681 5227,7677
+Sentastr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5458,7683 5348,7681 5349,7619
+Sentastr. -> Mainauer Str.: Bundesplatztunnel	3::igndisp 5458,7683 5348,7681 5227,7677
+Mainauer Str. -> Bundesallee: Bundesplatztunnel	3::igndisp 5227,7677 5348,7681 5348,7746
+Mainauer Str. -> Sentastr.: Bundesplatztunnel	3::igndisp 5227,7677 5348,7681 5458,7683
+Bundesallee -> Sieglindestr.: Bundesplatztunnel	3::igndisp 5346,7860 5348,7746 5458,7866
+Sieglindestr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5458,7866 5348,7746 5348,7681
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 6880,11110 6882,11061 6873,11011 6824,10904
 Herkulesufer -> Schillstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6920,11064 6882,11061 6873,11011
 Klingelhöferstr. -> Herkulesufer: unbequem passierbarer Mittelstreifen	3::igndisp 6880,11110 6882,11061 6920,11064
@@ -1361,9 +1363,9 @@ unbequem passierbarer Mittelstreifen	3nocross::ignrte 9865,10227 9858,10199 9837
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9884,10192 9858,10199 9837,10117
 Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
 Waterloo-Ufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9865,10227
-Straßentunnelrampe	3nocross::ignrte 5505,8832 5510,8709 5513,8588
+Straßentunnelrampe	3nocross::ignrte 5505,8832 5510,8709 5502,8599
+Bundesallee -> Wilhelmsaue: Straßentunnelrampe	3::igndisp 5502,8599 5510,8709 5346,8720
 Wilhelmsaue -> Bundesallee: Straßentunnelrampe	3::igndisp 5346,8720 5510,8709 5505,8832
-Bundesallee -> Wilhelmsaue: Straßentunnelrampe	3::igndisp 5513,8588 5510,8709 5346,8720
 Straßentunnelrampe	3nocross::ignrte 2817,4158 2944,4241 3048,4305
 Goßlerstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3048,4305
 Goßlerstr. -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3033,4113
@@ -1371,17 +1373,17 @@ Unter den Eichen -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 3048,4305 2944,
 Knesebeckstr. -> Goßlerstr.: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2858,4372
 Knesebeckstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2817,4158
 Unter den Eichen -> Goßlerstr.: Straßentunnelrampe	3::igndisp 2817,4158 2944,4241 2858,4372
-Absperrung auf dem Mittelstreifen	3nocross::ignrte 5510,8709 5513,8588 5481,8506 5444,8406 5421,8337
-Bundesallee -> Waghäuseler Str.: Absperrung auf dem Mittelstreifen	3::igndisp 5510,8709 5513,8588 5660,8591
-Waghäuseler Str. -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5660,8591 5513,8588 5481,8506
-Volkspark Wilmersdorf -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5417,8519 5481,8506 5533,8478
-Volkspark Wilmersdorf -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5417,8519 5481,8506 5513,8588
-Volkspark Wilmersdorf -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5533,8478 5481,8506 5417,8519
-Volkspark Wilmersdorf -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5533,8478 5481,8506 5444,8406
-Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5444,8406 5481,8506 5417,8519
-Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5513,8588 5481,8506 5533,8478
-Am Volkspark -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5320,8456 5444,8406 5481,8506
-Bundesallee -> Am Volkspark: Absperrung auf dem Mittelstreifen	3::igndisp 5481,8506 5444,8406 5669,8207
+Absperrung auf dem Mittelstreifen	3nocross::ignrte 5510,8709 5502,8599 5465,8511 5427,8412 5399,8344
+Bundesallee -> Waghäuseler Str.: Absperrung auf dem Mittelstreifen	3::igndisp 5510,8709 5502,8599 5660,8591
+Waghäuseler Str. -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5660,8591 5502,8599 5465,8511
+Volkspark Wilmersdorf -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5417,8519 5465,8511 5533,8478
+Volkspark Wilmersdorf -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5417,8519 5465,8511 5502,8599
+Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5427,8412 5465,8511 5417,8519
+Volkspark Wilmersdorf -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5533,8478 5465,8511 5417,8519
+Volkspark Wilmersdorf -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5533,8478 5465,8511 5427,8412
+Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5502,8599 5465,8511 5533,8478
+Am Volkspark -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5320,8456 5427,8412 5465,8511
+Bundesallee -> Am Volkspark: Absperrung auf dem Mittelstreifen	3::igndisp 5465,8511 5427,8412 5669,8207
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9207,5185 9192,5272 9182,5332 9171,5397 9147,5534
 Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9192,5272 9182,5332
 Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9182,5332 9171,5397
@@ -2482,9 +2484,6 @@ Iltisstr.	1 2797,5624 2858,5535
 Mittelstreifen unbequem zu überqueren	3nocross::ignrte 5493,9367 5495,9263 5503,8982
 Tharandter Str. -> Bundesallee: Mittelstreifen unbequem zu überqueren	3::igndisp 5527,9263 5495,9263 5503,8982
 Bundesallee -> Tharandter Str.: Mittelstreifen unbequem zu überqueren	3::igndisp 5493,9367 5495,9263 5527,9263
-Mittelstreifen, parkende Autos	3nocross::ignrte 5356,7862 5356,7915 5357,8013
-Bundesallee -> Bernhardstr.: Mittelstreifen, parkende Autos	3::igndisp 5357,8013 5356,7915 5471,7915
-Bernhardstr. -> Bundesallee: Mittelstreifen, parkende Autos	3::igndisp 5471,7915 5356,7915 5356,7862
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6494,10440 6403,10424 6276,10401
 Wormser Str. -> Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6377,10434 6403,10424 6494,10440
 Lietzenburger Str. -> Wormser Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6276,10401 6403,10424 6377,10434
@@ -2498,13 +2497,6 @@ Bozener Str.	1 5971,8926 5975,9094
 schwierig zu querender Mittelstreifen	3nocross::ignrte 6532,10529 6636,10492 6753,10446
 Kalckreuthstr. -> Kleiststr.: schwierig zu querender Mittelstreifen	3::igndisp 6628,10318 6636,10492 6532,10529
 Kleiststr. -> Kalckreuthstr.: schwierig zu querender Mittelstreifen	3::igndisp 6753,10446 6636,10492 6628,10318
-Queren nicht möglich	3nocross::ignrte 5360,8197 5359,8140 5357,8013
-Mainzer Str. -> Bundesallee: Queren nicht möglich	3::igndisp 5177,8139 5359,8140 5360,8197
-Mainzer Str. -> Tübinger Str.: Queren nicht möglich	3::igndisp 5177,8139 5359,8140 5420,8160
-Bundesallee -> Tübinger Str.: Queren nicht möglich	3::igndisp 5360,8197 5359,8140 5420,8160
-Bundesallee -> Mainzer Str.: Queren nicht möglich	3::igndisp 5357,8013 5359,8140 5177,8139
-Tübinger Str. -> Mainzer Str.: Queren nicht möglich	3::igndisp 5420,8160 5359,8140 5177,8139
-Tübinger Str. -> Bundesallee: Queren nicht möglich	3::igndisp 5420,8160 5359,8140 5357,8013
 (Los-Angeles-Platz)	1s 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
 Schwingtor zum Spielplatz	BNP:10:-236 11865,13027
@@ -2574,9 +2566,6 @@ Alt-Marzahn -> Landsberger Allee: Landsberger Allee	3::igndisp 20658,15589 20641
 Straßenbahntrasse	3nocross::ignrte 13635,13605 13702,13634 13854,13701
 Landsberger Allee -> Otto-Ostrowski-Str.: Straßenbahntrasse	3::igndisp 13854,13701 13702,13634 13769,13487
 Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13769,13487 13702,13634 13635,13605
-Landsberger Allee	3nocross::ignrte 17254,14451 17533,14484 17848,14523
-Schalkauer Str. -> Landsberger Allee: Landsberger Allee	3::igndisp 17514,14613 17533,14484 17848,14523
-Landsberger Allee -> Schalkauer Str.: Landsberger Allee	3::igndisp 17254,14451 17533,14484 17514,14613
 Landsberger Allee	3nocross::ignrte 21475,15705 21584,15753 21694,15802
 Landsberger Allee -> Schönagelstr.: Landsberger Allee	3::igndisp 21475,15705 21584,15753 21602,15908
 Schönagelstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 21602,15908 21584,15753 21694,15802

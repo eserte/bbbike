@@ -2930,15 +2930,26 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
        undef,
        {
          'source_id' => 'IM_019043',
-         'until' => 1356098400,
-         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Mitte Dezember 2012',
+         'until' => 1363356000,
+         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Mitte März 2013',
          'from' => 1344142800,
          'id' => 2368,
          'data' => 'userdel	q4::inwork; 10953,15787 11086,15772
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'INKO_114376',
+         'until' => undef,
+         'text' => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
+         'from' => 1342594800,
+         'id' => 2369,
+         'data' => '#: last_checked: 2012-12-21
+#: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
+userdel	q4::inwork; 11389,10463 11393,10390
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {

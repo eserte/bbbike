@@ -15,13 +15,7 @@
 #
 # REMOVED (hier passiert bestimmt nichts mehr, gesehen: 2012-06-08) --- #: last_checked: 2011-09-24 (nicht ganz sicher, von der anderen Einschnittseite aus gesehen) --- #: next_check: 2012-01-01 --- Löhleinstraße	?::projected 2717,5578 2499,5144 2454,5067 2288,4932
 # REMOVED (hier passiert bestimmt nichts mehr, gesehen: 2012-06-08) --- #: last_checked: 2011-09-24 --- #: next_check: 2012-01-01 --- Saargemünder Straße	?::projected 2027,4792 1884,4811 1747,4829 1479,4853
-#
-#: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv
-#: last_checked: 2012-08-05
-#: next_check: 2013-01-01
-#: XXX wird hier jemals eine Radspur entstehen? Insbesondere an der Zufahrt zum Parkhaus des "Schlosses" scheint kein Platz dafür zu existieren... (keep always "private")
-Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793
-#: by: ^^^
+# REMOVED (laut http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4430&options=4 müsste erstmal ein BVV-Beschluss durchkommen...) ---  by: MoPo 2009-08-01, soll 2009 realisiert werden vvv --- #: last_checked: 2012-08-05 --- #: next_check: 2013-01-01 --- #: XXX wird hier jemals eine Radspur entstehen? Insbesondere an der Zufahrt zum Parkhaus des "Schlosses" scheint kein Platz dafür zu existieren... (keep always "private") --- Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 --- #: by: ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: last_checked: 2012-09-22
@@ -87,7 +81,7 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2012-11-26
+#: last_checked: 2012-12-21
 #: next_check: 2013-06-01
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -102,7 +96,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2012-12-18
+#: last_checked: 2012-12-21
 #: next_check: 2013-06-01
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -282,7 +276,8 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2012-11-22
+#: last_checked: 2012-11-21
+#: next_check: 2013-01-02
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
@@ -767,6 +762,13 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX zum bestehenden Verlauf hinzufügen
+Hebammensteig: Qualität? Genauer Verlauf? Ausgeschildert?	? 13008,21783 12968,21848
+Fortsetzung des Hebammensteigs: Qualität? Genauer Verlauf? Names des Wegs?	? 12968,21848 12863,21995 12843,22010
+# 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4439&options=4
+Bäkestr.: existiert hier ein Zebrastreifen?	? 4526,3138 4701,3018
 # 
 Rhinstr. - Marzahner Chaussee, alternative Zufahrt: Qualität, Ausschilderung?	? 18220,11710 18234,11787 18249,11789 18254,11825 18340,11830 18381,11857 18417,11854 18420,11864
 # 
