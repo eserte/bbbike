@@ -161,6 +161,8 @@ persistent-tmp:	fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org \
+		${PERSISTENTTMPDIR}/bbbike-temp-blockings-existsid.yml \
+		$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized-existsid.yml \
 		${PERSISTENTTMPDIR}/Berlin.coords.bbd \
 		${PERSISTENTTMPDIR}/Potsdam.coords.bbd \
 		${PERSISTENTTMPDIR}/non-faked-plaetze \
@@ -1854,6 +1856,14 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings-nonrecurring.bbd: $(PERSISTENTTMPDIR)/
 
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings-recurring.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
 	$(TEMP_BLOCKINGS_TASKS) yml_to_recurring_bbd $> > $@~
+	mv -f $@~ $@
+
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings-existsid.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd
+	$(TEMP_BLOCKINGS_TASKS) bbd_to_existsid $> > $@~
+	mv -f $@~ $@
+
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized-existsid.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd
+	$(TEMP_BLOCKINGS_TASKS) bbd_to_existsid $> > $@~
 	mv -f $@~ $@
 
 ######################################################################
