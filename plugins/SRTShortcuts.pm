@@ -999,18 +999,18 @@ sub fill_vmz_lbvs_files {
 
 sub _vmz_lbvs_splitter {
     my($line) = @_;
-    my($type, $content, $id);
+    my($type, $content, $id, $inuse);
     if ($line =~ m{¦}) {
 	# new style
-	($type, $content, $id) = split /¦/, $line; # ignore everything after 3rd column
+	($type, $content, $id, undef, $inuse) = split /¦/, $line; # ignore 4th column (url) and everything after 5th
     } else {
 	($type, $content) = split /:\s+/, $line, 2;
     }
-    ($type, $content, $id);
+    ($type, $content, $id, $inuse);
 }
 
 sub _vmz_lbvs_columnwidths {
-    (200, 900, 200);
+    (200, 1200, 200, 100);
 }
 
 sub show_vmz_diff {
