@@ -53,8 +53,20 @@ sub new {
     $self->{ua} = LWP::UserAgent->new;
     $self->{xmlp} = XML::LibXML->new;
     $self->{formatter} = HTML::FormatText->new(leftmargin => 0, rightmargin => 60);
+    $self->{existsid_current} = {};
+    $self->{existsid_old} = {};
     eval { require Hash::Util; Hash::Util::lock_keys($self) }; warn $@ if $@;
     $self;
+}
+
+sub set_existsid_current {
+    my($self, $existsid_current_ref) = @_;
+    $self->{existsid_current} = $existsid_current_ref;
+}
+
+sub set_existsid_old {
+    my($self, $existsid_old_ref) = @_;
+    $self->{existsid_old} = $existsid_old_ref;
 }
 
 sub fetch {
@@ -320,6 +332,7 @@ sub as_bbd {
 EOF
     my $handle_rec = sub {
 	my($rec, $is_removed) = @_;
+	my $id = $rec->{id};
 	my @attribs;
 	if (grep { m{^A} } @{ $rec->{strassen} }) {
 	    push @attribs, 'IGNORE';
@@ -375,9 +388,9 @@ EOF
 	}
 	if ($is_removed) {
 	    push @attribs, 'REMOVED';
-	} elsif (!$old_id2rec || !$old_id2rec->{$rec->{id}}) {
+	} elsif (!$old_id2rec || !$old_id2rec->{$id}) {
 	    push @attribs, 'NEW';
-	} elsif ($old_id2rec->{$rec->{id}}->{text} eq $rec->{text}) {
+	} elsif ($old_id2rec->{$id}->{text} eq $rec->{text}) {
 	    push @attribs, 'UNCHANGED';
 	} else {
 	    push @attribs, 'CHANGED';
@@ -396,7 +409,8 @@ EOF
 	}
 	$s .= join(", ", @attribs) . "¦" .
 	    ($rec->{place} ne 'Berlin' ? $rec->{place} . ": " : '') .
-		$text . "¦" . $rec->{id} . "¦" . $rec->{map_url} . "\tX @coords\n";
+		$text . "¦" . $id . "¦" . $rec->{map_url} . "¦" . ($self->{existsid_current}->{$id} ? 'INUSE' : $self->{existsid_old}->{$id} ? 'WAS_INUSE' : '') .
+		    "\tX @coords\n";
     };
     my %seen_id;
     for my $place (sort { $place2rec->{$a}->[0]->{lon} <=> $place2rec->{$b}->[0]->{lon} } keys %$place2rec) {
@@ -431,9 +445,13 @@ my $new_store_file;
 my $out_bbd;
 my $do_fetch = 1;
 my $do_test;
+my $existsid_current_file; # typically bbbike/tmp/bbbike-temp-blockings-optimized-existsid.yml
+my $existsid_all_file; # typically bbbike/tmp/bbbike-temp-blockings-existsid.yml
 GetOptions("oldstore=s" => \$old_store_file,
 	   "newstore=s" => \$new_store_file,
 	   "outbbd=s" => \$out_bbd,
+	   "existsid-current=s" => \$existsid_current_file,
+	   "existsid-all=s" => \$existsid_all_file,
 	   "fetch!" => \$do_fetch,
 	   "test!" => \$do_test,
 	  )
@@ -445,7 +463,25 @@ if ($old_store_file) {
     $old_store = YAML::Syck::LoadFile($old_store_file);
 }
 
+my %existsid_current;
+my %existsid_old;
+if ($existsid_current_file) {
+    %existsid_current = %{ YAML::Syck::LoadFile($existsid_current_file) };
+}
+if ($existsid_all_file) {
+    my $existsid_all = YAML::Syck::LoadFile($existsid_all_file);
+    while(my($k,$v) = each %$existsid_all) {
+	if (!$existsid_current{$k}) {
+	    $existsid_old{$k} = 1;
+	}
+    }
+}
+
 my $vmz = VMZTool->new;
+if ($existsid_current_file || $existsid_all_file) {
+    $vmz->set_existsid_current(\%existsid_current);
+    $vmz->set_existsid_old    (\%existsid_old);
+}
 my($tmpfh, $file);
 my($tmp2fh, $mapfile);
 my($tmp3fh, $berlinsummaryfile);
@@ -519,9 +555,10 @@ First-time usage:
 
     perl miscsrc/VMZTool.pm -oldstore /tmp/oldvmz.yaml -newstore ~/cache/misc/newvmz.yaml -outbbd ~/cache/misc/diffnewvmz.bbd
 
-Regular usage:
+Regular usage (make sure that the both existsid files are up-to-date,
+see the appropriate targets in data/Makefile):
 
-    perl miscsrc/VMZTool.pm -oldstore ~/cache/misc/newvmz.yaml -newstore ~/cache/misc/newvmz.yaml.new -outbbd ~/cache/misc/diffnewvmz.bbd
+    perl miscsrc/VMZTool.pm -existsid-current tmp/bbbike-temp-blockings-optimized-existsid.yml -existsid-all tmp/bbbike-temp-blockings-existsid.yml -oldstore ~/cache/misc/newvmz.yaml -newstore ~/cache/misc/newvmz.yaml.new -outbbd ~/cache/misc/diffnewvmz.bbd
     mv ~/cache/misc/newvmz.yaml ~/cache/misc/newvmz.yaml.old
     mv ~/cache/misc/newvmz.yaml.new ~/cache/misc/newvmz.yaml
 
