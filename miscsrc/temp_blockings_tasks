@@ -103,6 +103,13 @@ if ($task eq 'pl_to_yml') {
 
     yml_to_bbd($infile, filter => 'nonrecurring');
 
+} elsif ($task eq 'bbd_to_existsid') {
+    my $infile = shift
+	or usage "bbd file is missing";
+    @ARGV and usage "Extra args";
+
+    bbd_to_existsid($infile);
+
 } else {
     usage("Task $task is unknown");
 }
@@ -128,6 +135,28 @@ sub yml_to_bbd {
 	$d =~ s/^(?!\#)/$t /gm;
 	print $d;
     }
+}
+
+sub bbd_to_existsid {
+    my($infile) = @_;
+
+    require lib;
+    require FindBin;
+    lib->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+    require Strassen::Core;
+    require YAML::Syck;
+
+    my %existsid;
+    Strassen->new_stream($infile)->read_stream
+	(sub {
+	     my(undef, $dir) = @_;
+	     for my $by (@{ $dir->{by} || [] }) {
+		 next if $by =~ m{^https?://};
+		 $by =~ s{\s+.*}{};
+		 $existsid{$by} = 1;
+	     }
+	 });
+    print YAML::Syck::Dump(\%existsid);
 }
 
 __END__
