@@ -122,15 +122,22 @@ sub yml_to_bbd {
     require YAML::Syck;
 
     my $x = YAML::Syck::LoadFile($infile);
-    for (@$x) {
-	my $d = $_->{data};
+    for my $rec (@$x) {
+	my $d = $rec->{data};
 	next if not $d;
-	next if $filter_recurring    && !($_->{permanent} || $_->{recurring});
-	next if $filter_nonrecurring &&  ($_->{permanent} || $_->{recurring});
-	if ($_->{source_id}) {
-	    print "#: by: $_->{source_id}\n";
+	next if $filter_recurring    && !($rec->{permanent} || $rec->{recurring});
+	next if $filter_nonrecurring &&  ($rec->{permanent} || $rec->{recurring});
+	if ($rec->{source_id}) {
+	    my @source_ids = ref $rec->{source_id} eq 'ARRAY' ? @{ $rec->{source_id} } : $rec->{source_id};
+	    for my $source_id (@source_ids) {
+		print "#: by: $source_id\n";
+	    }
+	    my @real_source_ids = _filter_real_source_ids(@source_ids);
+	    for my $source_id (@real_source_ids) {
+		print "#: source_id: $source_id\n";
+	    }
 	}
-	my $t = $_->{text};
+	my $t = $rec->{text};
 	$t =~ s/[\n\t]/ /g;
 	$d =~ s/^(?!\#)/$t /gm;
 	print $d;
@@ -150,13 +157,22 @@ sub bbd_to_existsid {
     Strassen->new_stream($infile)->read_stream
 	(sub {
 	     my(undef, $dir) = @_;
-	     for my $by (@{ $dir->{by} || [] }) {
-		 next if $by =~ m{^https?://};
-		 $by =~ s{\s+.*}{};
-		 $existsid{$by} = 1;
+	     for my $source_id (@{ $dir->{source_id} || [] }) {
+		 $existsid{$source_id} = 1;
 	     }
 	 });
     print YAML::Syck::Dump(\%existsid);
+}
+
+sub _filter_real_source_ids {
+    my(@source_ids) = @_;
+    my @ret_source_ids;
+    for my $source_id (@source_ids) {
+	next if $source_id =~ m{^https?://};
+	(my $ret_source_id = $source_id) =~ s{\s+.*}{};
+	push @ret_source_ids, $ret_source_id;
+    }
+    @ret_source_ids;
 }
 
 __END__
