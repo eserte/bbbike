@@ -20610,10 +20610,10 @@ EOF
        until => undef, # XXX
        text  => 'Hussitenstr.: Fahrbahn zwischen Stralsunder Str. und Usedomer Str. gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
-       source_id => 'wosch',
        data  => <<EOF,
 #: last_checked: 2012-09-30 (wosch)
 #: next_check: 2012-12-01
+#: by: wosch
 userdel	q4::inwork 9112,14771 9250,14658
 EOF
      },

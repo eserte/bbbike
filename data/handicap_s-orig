@@ -12,12 +12,12 @@
 # 
 #: last_checked: 2012-12-21
 #: next_check: 2013-05-17
-#: note: vmz-Eintrag: Am Oberbaum (Friedrichshain-Kreuzberg): Baustelle, Fahrtrichtung gesperrt (bis 05/2013) Richtung Kreuzberg zwischen Mühlenstr. und Oberbaumbrücke, 08.08.2012 10:00 Uhr bis 17.05.2013 17:00 Uhr¦INKO_113418¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50189&y=13.4457&zoom=13&meldungId=INKO_113418
+#: source_id: INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
 #: last_checked: 2012-12-22 vvv
 #: next_check: 2013-03-15 vvv
-#: note: vmz-Eintrag: Modersohnstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis 03/13) Richtung Frankfurter Allee zwischen Revaler Str. und Simplonstr., 20.12.2012 14:14 Uhr bis 15.03.2013 16:00 Uhr	IM_019476
+#: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
 # REMOVED --- Dirschauer Str.: Einbahnstraßenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
 #: next_check ^^^
@@ -34,6 +34,7 @@ Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::i
 # 
 #: last_checked: 2012-12-21
 #: next_check: 2013-01-02
+#: source_id: LMS_3261840849
 Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775 14311,11884
 # REMOVED --- Bauarbeiten beendet --- Mainzer Str., Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14311,11884 14357,12011
 # 
@@ -45,13 +46,12 @@ Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 1
 ### Mitte ###
 # 
 #: last_checked: 2012-12-09
-#: XXX siehe auch: NEW	Friedrichstr. (Mitte): Baustelle, Straße vollständig gesperrt, eine Umleitung ist eingerichtet (bis Anfang 11/12) in beiden Richtungen zwischen Mittelstr. und Unter den Linden, 29.08.2012 07:00 Uhr bis 10.11.2012 16:00 Uhr	INKO_115395
-#: XXX INKO_113388 meint mittlerweile, dass die Straße nur verengt ist
+#: source_id: INKO_113388
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # 
 #: last_checked: 2012-11-14
 #: next_check: 2013-12-31
-#: XXX siehe auch INKO_091722
+#: source_id: INKO_091722
 #: XXX siehe auch temporäre Ampel an der Neustädtischen Kirchstr.
 #: XXX siehe auch Busspur UdL
 Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
@@ -74,12 +74,16 @@ Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4:
 #: next_check: 2013-03-15
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch Totalsperrung in der Voßstr.
+#: source_id: INKO_113363
 #: XXX laut INKO_113363 bis Ende März 2013 gesperrt
 Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
 #: last_checked: 2012-10-08 vvv
 #: next_check: 2013-05-31 vvv
-#: by: wosch & IM_017330 & IM_019009 & INKO_113944
+#: by: wosch
+#: source_id: IM_017330
+#: source_id: IM_019009
+#: source_id: INKO_113944
 #: XXX siehe auch temporäre Ampel an der Chausseestr. sowie an der Luisenstr.
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1207/nachricht4724.html
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689

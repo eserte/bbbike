@@ -420,16 +420,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-lichtenrade.html?y=2012',
-         'until' => 1356217199,
-         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
-         'from' => 1356044400,
-         'id' => 417,
-         'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2969,13 +2960,13 @@ userdel	2::night 14838,11410 14776,11400
        undef,
        undef,
        {
-         'source_id' => 'wosch',
          'until' => undef,
          'text' => 'Hussitenstr.: Fahrbahn zwischen Stralsunder Str. und Usedomer Str. gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2377,
          'data' => '#: last_checked: 2012-09-30 (wosch)
 #: next_check: 2012-12-01
+#: by: wosch
 userdel	q4::inwork 9112,14771 9250,14658
 ',
          'type' => 'handicap'
