@@ -161,8 +161,8 @@ persistent-tmp:	fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org \
-		${PERSISTENTTMPDIR}/bbbike-temp-blockings-existsid.yml \
-		$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized-existsid.yml \
+		${PERSISTENTTMPDIR}/sourceid-current.yml \
+		$(PERSISTENTTMPDIR)/sourceid-all.yml \
 		${PERSISTENTTMPDIR}/Berlin.coords.bbd \
 		${PERSISTENTTMPDIR}/Potsdam.coords.bbd \
 		${PERSISTENTTMPDIR}/non-faked-plaetze \
@@ -1858,11 +1858,11 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings-recurring.bbd: $(PERSISTENTTMPDIR)/bbb
 	$(TEMP_BLOCKINGS_TASKS) yml_to_recurring_bbd $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/bbbike-temp-blockings-existsid.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd
+$(PERSISTENTTMPDIR)/sourceid-all.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd handicap_s-orig gesperrt_s-orig fragezeichen-orig
 	$(TEMP_BLOCKINGS_TASKS) bbd_to_existsid $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized-existsid.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd
+$(PERSISTENTTMPDIR)/sourceid-current.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd handicap_s-orig gesperrt_s-orig fragezeichen-orig
 	$(TEMP_BLOCKINGS_TASKS) bbd_to_existsid $> > $@~
 	mv -f $@~ $@
 
