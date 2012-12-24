@@ -952,7 +952,8 @@ ${PERSISTENTTMPDIR}/plz-b.bbd:	$(PERSISTENTTMPDIR)/plz.sql
 	grep -i berlin $> | ${PERL} $(MISCSRCDIR)/parse_mapbender_plz.pl > $@
 
 $(PERSISTENTTMPDIR)/plz.sql:	$(PERSISTENTTMPDIR)/plz.zip
-	cd `dirname $>` && unzip -q -o `basename $>`
+	cd `dirname $>` && unzip -q -o `basename $>` plz.sql
+	touch -r $(PERSISTENTTMPDIR)/plz.zip $(PERSISTENTTMPDIR)/plz.sql
 
 $(PERSISTENTTMPDIR)/plz.zip:
 	wget -O ${PERSISTENTTMPDIR}/plz.zip http://prdownloads.sourceforge.net/mapbender/plz.zip?download
