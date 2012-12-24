@@ -125,14 +125,10 @@ TODAY_DATE!=	date +'%Y%m%d'
 .ORDER: targets data-images check .modified .rsync_include make_misc
 all:	targets data-images check .modified .rsync_include make_misc
 
-# These targets have to be rebuild once a day
+# Some targets have to be rebuild once a day. These should depend on
+# ".check_daily"
 .BEGIN:
-	@$(PERL) -e 'for (@ARGV) { do { unlink($$_) and warn "Removed $$_\n" } if (-M $$_ >= 1) }' \
-		.check_bbbike-temp-blockings-optimized \
-		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
-		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd \
-		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
-		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd
+	@$(PERL) -e '$$_ = ".check_daily"; if (!-e $$_ || -M $$_ >= 1) { open my $$fh, ">", $$_ or die "Cannot touch $$_" }'
 
 targets:	${TARGETS}
 
@@ -156,9 +152,7 @@ slow-checks:	check-categories \
 
 persistent-tmp:	fragezeichen-outdoor \
 		fragezeichen-outdoor-nextcheck \
-		${PERSISTENTTMPDIR}/.check_fragezeichen-indoor-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-indoor-nextcheck.bbd \
-		${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd \
 		${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org \
 		${PERSISTENTTMPDIR}/sourceid-current.yml \
@@ -178,11 +172,9 @@ rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd
 
 # popular targets
-fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor-nextcheck.bbd \
-				${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
+fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
 
-fragezeichen-outdoor:		${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd \
-				${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
+fragezeichen-outdoor:		${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
 
 .for i in $(XXX_TARGETS)
 persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
@@ -846,8 +838,8 @@ ${XXX_TARGETS:C/^/${PERSISTENTTMPDIR}\/.XXX-/:C/$/-$(i)/}:	$(i)-orig
 .endfor
 
 .for doormode in indoor outdoor
-.ORDER: ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd
-${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd:	\
+${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd:	\
+		.check_daily \
 		Makefile \
 		${SOURCE_TARGETS:S|$|-orig|} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
@@ -858,11 +850,10 @@ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd ${PERSISTENTTMPDIR}/.
 	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
 		> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd
-	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-${doormode}-nextcheck.bbd
 .endfor
 
-.ORDER: ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd
-${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd:	\
+${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd:	\
+		.check_daily \
 		Makefile \
 		${SOURCE_TARGETS:S|$|-orig|} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
@@ -875,10 +866,9 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd ${PERSISTENTTMPDIR}/.check_fragezei
 	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
 		> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
-	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-outdoor.bbd
 
-.ORDER: ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
-${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd:	\
+${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd:	\
+		.check_daily \
 		Makefile \
 		ampeln-orig \
 		fragezeichen-orig \
@@ -917,7 +907,6 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd ${PERSISTENTTMPDIR}/.check_fragez
 .endfor
 	-rm -f /tmp/nextcheck.bbd
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
-	touch ${PERSISTENTTMPDIR}/.check_fragezeichen-nextcheck.bbd
 
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	-@$(WRITEABLE) $@
@@ -1108,12 +1097,11 @@ ${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt:	fragezeichen Makefile
 	    RESTRICT_BBOX="-8250,2025,-15000,-2675 16500,15375,4625,5984 26687,-316,9090,9005"
 	cp -pf /tmp/upload-restricted-fragezeichen.wpt $@
 
-temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-blockings.pl .check_bbbike-temp-blockings-optimized
+temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-blockings.pl .check_daily
 	-@$(WRITEABLE) $@
 	${PERL} $(MISCSRCDIR)/check_bbbike_temp_blockings \
 	    -action output_future_nonrecurring \
 	    -action dump_future_as_perl > $@
-	touch .check_bbbike-temp-blockings-optimized
 	-@$(READONLY) $@
 
 # Another fragezeichen POI approach: restrict to whole
@@ -1173,8 +1161,6 @@ all-forever:
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
 	xmessage "all-forever failed"
-
-.OPTIONAL: .check_bbbike-temp-blockings-optimized
 
 # It is legal for fragezeichen points to not be on strassen, so this is
 # only informative...
