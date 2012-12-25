@@ -145,6 +145,7 @@ sub handle_data {
 	unless ($do_allow_test) {
 	    if (($data->{'user_agent'}||'') =~ m{BBBike-?Test/}) { # ignore test accesses
 		warn "  Ignoring test access...\n" if $debug;
+		return;
 	    }
 	}
 	(my $coords = $data->{routestringrep}) =~ s{!}{ }g;
