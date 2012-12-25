@@ -187,6 +187,7 @@ sub itembutton {
     if ($salesman->add_point(join(",", main::anti_transpose($xx, $yy)))) {
 	main::set_flag('start', $xx, $yy, "leaveold");
     }
+    Tk->break;
 }
 
 1;
