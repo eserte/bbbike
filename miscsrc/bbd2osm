@@ -725,8 +725,8 @@ sub handle_waterway_like {
 
     my @node_ids = get_node_ids($r, undef, is_area => $is_area);
 
-    my $name = $r->[Strassen::NAME];
-    _xmlify(format_waterway_label($name));
+    my $name = format_waterway_label($r->[Strassen::NAME]);
+    _xmlify($name);
 
     print $wayfh qq{<way id="$next_way_id" visible="true">\n};
     for my $node_id (@node_ids) {
