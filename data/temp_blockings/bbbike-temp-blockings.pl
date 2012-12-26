@@ -17116,11 +17116,11 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => 1261945758, # 2009-12-27 21:29
-       until => 1262494800, # 2010-01-03 06:00
-       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr. (bis 03.01., 6 Uhr)',
+     { from  => undef, # 1261945758, # 2009-12-27 21:29
+       until => 1357167540, # 1262494800, # 2010-01-03 06:00
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr. (bis 02.01. nachts)',
        type  => 'gesperrt',
-       source_id => 'IM_014856',
+       source_id => 'IM_019485',
        data  => <<EOF,
 userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 8119,12414
 userdel	2::temp 8522,12239 8466,12197
@@ -18781,12 +18781,13 @@ userdel	2::inwork 25212,-4025 25269,-4041 25320,-4049
 EOF
      },
      { from  => 1335462672, # 
-       until => 1356908400, # XXX
-       text  => 'Auerbachtunnel: Fahrbahn wegen Bauarbeiten gesperrt, bis Ende 2012',
+       until => 1377985740, # 1356908400, # XXX
+       text  => 'Auerbachtunnel: Fahrbahn wegen Bauarbeiten gesperrt, bis Sommer 2013',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html',
+       source_id => 'IM_016416',
        data  => <<EOF,
-#: next_check: 2012-12-31
+#: next_check: 2013-08-31
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4355&options=4 (Endedatum bestätigt)
 userdel	q4::inwork 425,8766 490,8716
 EOF
@@ -20611,8 +20612,8 @@ EOF
        text  => 'Hussitenstr.: Fahrbahn zwischen Stralsunder Str. und Usedomer Str. gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-09-30 (wosch)
-#: next_check: 2012-12-01
+#: last_checked: 2012-12-25 (Sackgassenschild existiert noch)
+#: next_check: 2013-02-01
 #: by: wosch
 userdel	q4::inwork 9112,14771 9250,14658
 EOF
