@@ -50,6 +50,7 @@ use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-
     use POSIX qw(strftime);
     use constant TODO_ADFC_ERRORS => 1; # "2010-09-01T12:00:00" gt strftime("%FT%T", localtime) && 'Redirects on adfc server do not work';
     use constant TODO_FREEBSD_PKG_ERRORS => 0; # "2012-01-22T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available, need more research';
+    use constant TODO_CS_TU_BERLIN_UNREACHABLE => "2013-01-03T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike diplom location not reachable (user.cs.tu-berlin.de down, permanently?)';
 }
 
 my @var;
@@ -144,6 +145,11 @@ for my $var (@var) {
 	     $url eq $BBBike::DISTFILE_FREEBSD_ALL)
 	   ) {
 	    $TODO = TODO_FREEBSD_PKG_ERRORS;
+	}
+	if (TODO_CS_TU_BERLIN_UNREACHABLE &&
+	    $url eq $BBBike::DIPLOM_URL
+	   ) {
+	    $TODO = TODO_CS_TU_BERLIN_UNREACHABLE;
 	}
 
 	check_url($url, $var);
