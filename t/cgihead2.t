@@ -48,7 +48,6 @@ use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-
 
 {
     use POSIX qw(strftime);
-    use constant TODO_ADFC_ERRORS => 1; # "2010-09-01T12:00:00" gt strftime("%FT%T", localtime) && 'Redirects on adfc server do not work';
     use constant TODO_FREEBSD_PKG_ERRORS => 0; # "2012-01-22T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available, need more research';
     use constant TODO_CS_TU_BERLIN_UNREACHABLE => "2013-01-03T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike diplom location not reachable (user.cs.tu-berlin.de down, permanently?)';
 }
@@ -87,16 +86,6 @@ push @var, (qw(
 # Not HEADable:
 #   DISTDIR
 
-## All of these don't work anymore, and nobody at radzeit
-## is able to fix it. This list is just for reference and
-## won't be used in this test anymore.
-#my @compat_urls = ('http://www.radzeit.de/BBBike/data/.modified',
-#		   'http://www.radzeit.de/cgi-bin/bbbike.cgi',
-#		   'http://www.radzeit.de/cgi-bin/wapbbbike.cgi',
-#		   'http://bbbike.radzeit.de/cgi-bin/bbbike.cgi',
-#		  );
-my @compat_urls = ();
-
 my %url;
 for my $var (@var) {
     my @url = eval $var;
@@ -107,7 +96,7 @@ for my $var (@var) {
     $url{$var} = \@url;
 }
 
-plan tests => 1 + 3 * (scalar(map { @$_ } values %url) + @compat_urls);
+plan tests => 1 + 3 * (scalar(map { @$_ } values %url));
 
 my $ua = LWP::UserAgent->new(keep_alive => 10);
 $ua->agent('BBBike-Test/1.0');
@@ -115,11 +104,6 @@ $ua->env_proxy;
 
 # seems to be necessary (for my system? for the freebsd server?)
 $ENV{FTP_PASSIVE} = 1;
-
-for my $url (@compat_urls) {
-    local $TODO = TODO_ADFC_ERRORS;
-    check_url($url);
-}
 
 for my $var (@var) {
     for my $url (@{ $url{$var} }) {
