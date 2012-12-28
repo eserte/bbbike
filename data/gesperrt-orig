@@ -294,13 +294,13 @@ Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 # TEMPORARY REMOVED (Baustelle!) --- Niederlagstr.	1 9943,12364 9934,12420
-#: last_checked: 2012-11-02
-#: next_check: 2013-01-01
+#: last_checked: 2012-12-28
+#: next_check: 2013-04-01
 #: XXX danach evtl. wieder Einbahnstraße wiederherstellen, siehe oben
 Niederlagstr.	2:inwork 9943,12364 9934,12420
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
-Karl-Marx-Platz	1 12980,7597 13100,7626
+Karl-Marx-Platz	1 12974,7598 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
@@ -362,7 +362,7 @@ Arberstr.	1 19424,9502 19407,9232
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
 Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
 #: by: Sascha (hurdler)
-Ringbahnstr.	1 12934,6967 13081,7014
+Ringbahnstr.	1 12934,6967 13072,7013
 #: by: Robert J. vvv
 #: corrected_by: Michael Kiekebusch (Radfahren auf breiten Gehweg möglich)
 Stiftsweg	1s:q3 11001,18528 11268,18851
@@ -1036,7 +1036,7 @@ Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
-Lange Brücke: Straßenbahntrasse	3nocross -12758,-1654 -12659,-1700 -12567,-1817
+Lange Brücke: Straßenbahntrasse	3nocross -12758,-1654 -12730,-1681 -12659,-1700 -12567,-1817
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14213,-1695 -14143,-1662 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
@@ -1231,7 +1231,7 @@ Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -35
 Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,14218
 #: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6782,3491
-Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12306
+Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12331
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8648,9526 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
 Klemkestr.: Mittelstreifen	3nocross 7520,18701 7599,18705 7676,18713
@@ -1378,7 +1378,7 @@ Seestr.: Straßenbahntrasse	3nocross 7231,16418 7295,16477 7403,16575
 Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6630,15100
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14427,12197 14488,12188
-Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14208,12235
+Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14020,12261
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9898,11679 9981,11689
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13330,13468
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12177,14335 12188,14350 12228,14404 12266,14460 12317,14535
@@ -2189,20 +2189,24 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2012-12-28
+#: next_check: 2013-06-01
+#: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig
+Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
+# 
 #: last_checked: 2012-12-25
 #: next_check: 2014-06-01
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
-#: last_checked: 2012-11-26
-Am Sudhaus: Bauarbeiten, noch gesperrt	2:inwork 12134,8172 12282,8204
+# REMOVED (seit Dezember 2012 befahrbar, allerdings noch Bauzäune drum herum) --- #: last_checked: 2012-11-26 --- Am Sudhaus: Bauarbeiten, noch gesperrt	2:inwork 12134,8172 12282,8204
 # 
 #: by: rjoop
 #: last_checked: 2012-11
 #: next_check: 2013-03-15
 Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 # 
-#: last_checked: 2012-12-18
+#: last_checked: 2012-12-27
 #: next_check: 2013-05-01
 #: XXX nach den Bauarbeiten gibt es wahrscheinlich keine Fahrbahn mehr --- wird man durch den Fußgängerbereich gut durchfahren können?
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
@@ -2210,7 +2214,7 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 #: XXX siehe auch Einträge in handicap_s-orig
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
-#: last_checked: 2012-12-25
+#: last_checked: 2012-12-26
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	2:inwork 14465,11195 14442,11101
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html
@@ -2218,7 +2222,7 @@ Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	2:inwork 14465,11195 14442,11101
 #: XXX nach den Bauarbeiten bessere Qualität? Zurzeit nur Q1-, siehe qualitaet_s-orig
 (Bellevuepark): Asphaltbauarbeiten	2:inwork 22794,5583 22855,5554 22835,5452 22851,5321
 # 
-#: last_checked: 2012-12-09
+#: last_checked: 2012-12-26
 #: next_check: 2013-03-01
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
 # 
@@ -2367,7 +2371,7 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # REMOVED --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
-#: last_checked: 2012-12-09
+#: last_checked: 2012-12-26
 #: next_check: 2013-04-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -2378,8 +2382,8 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 # REMOVED --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
-#: last_checked: 2012-10-20
-#: next_check: 2013-02-01
+#: last_checked: 2012-12-27
+#: next_check: 2013-01-15
 #: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel)
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 # 
@@ -2395,7 +2399,7 @@ Queralleebrücke: wegen Bauarbeiten gesperrt, voraussichtlich bis September 2012	
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12758,-1654 -12755,-1585 -12780,-1545
+# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12730,-1681 -12758,-1654 -12755,-1585 -12780,-1545
 # REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12793,-1498
 # REMOVED --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

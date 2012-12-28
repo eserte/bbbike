@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2012-12-21
+#: last_checked: 2012-12-27
 #: next_check: 2013-05-17
 #: source_id: INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-12-25 vvv
+#: last_checked: 2012-12-28 vvv
 #: next_check: 2013-03-15 vvv
 #: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -23,8 +23,8 @@ Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2012-12-18 vvv
-#: next_check: 2013-01-15 vvv
+#: last_checked: 2012-12-27 vvv
+#: next_check: 2013-02-15 vvv
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
 Helsingforser Str.: Bauarbeiten, Einbahnstraße, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
@@ -38,15 +38,15 @@ Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::i
 Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775 14311,11884
 # REMOVED --- Bauarbeiten beendet --- Mainzer Str., Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14311,11884 14357,12011
 # 
-#: last_checked: 2012-10-20
-#: next_check: 2012-12-22
+#: last_checked: 2012-12-28
+#: next_check: 2013-01-15
 #: XXX abhängig von den Arbeiten in der Kynaststr.
 #: source_id: IM_018694
-Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
+Alt-Stralau: Asphaltierungsarbeiten unter der Brücke	q3::inwork 14652,10201 14558,10264
 # 
 ### Mitte ###
 # 
-#: last_checked: 2012-12-09
+#: last_checked: 2012-12-26
 #: source_id: INKO_113388
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # 
@@ -61,10 +61,10 @@ Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehwe
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
-#: last_checked: 2012-12-09
+#: last_checked: 2012-12-26
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2012-12-09
+#: last_checked: 2012-12-26
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
 #: last_checked: 2012-10-12 (wosch)
@@ -104,8 +104,8 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 # REMOVED --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # REMOVED (eigentlich gut zu befahren) --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14513,11075 14442,11101
 # 
-#: last_checked: 2012-12-01
-#: next_check: 2013-01-03
+#: last_checked: 2012-12-28
+#: next_check: 2013-03-03
 #: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier in Zukunft keine Fahrbahn mehr sein wird
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 # 
@@ -119,20 +119,17 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-12-09 vvv
-#: next_check: 2013-01-03 vvv
+#: last_checked: 2012-12-28 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
-#: next_check ^^^
 #: last_checked ^^^
 # 
 #: last_checked: 2012-10-19
 #: next_check: 2012-12-15
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 # 
-#: last_checked: 2012-12-07
-#: next_check: 2013-01-03
+#: last_checked: 2012-12-28
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
 ### Köpenick ###
 # 
@@ -143,6 +140,18 @@ Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22
 ### Charlottenburg ###
 # 
 # REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
+# 
+### Neukölln ###
+# 
+#: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof
+#: by: http://www.aktion-kms.de/files/p23.v_l01_120809.pdf
+#: by: http://www.aktion-kms.de/files/pl_d_std_hof_flyer_5.pdf
+#: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden
+#: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf
+#: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/
+#: last_checked: 2012-12-27
+#: next_check: 2013-11-30
+Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 # 
 #: temporary ^^^
 ######################################################################
@@ -639,11 +648,12 @@ Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 (Ernst-Heilmann-Steg): Fußgänger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX später vielleicht wieder "Fußgänger, q1", und evtl. nur den Brückenabschnitt so markieren
-#: last_checked: 2012-11-14
+#: last_checked: 2012-12-28
 #: next_check: 2013-06-01
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
+#: XXX siehe auch Eintrag zum Spreeufer in gesperrt-orig
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
-Friedrichsbrücke: Engstellen wegen Bauarbeiten	q3::inwork 10054,12699 10086,12725 10166,12777
+Friedrichsbrücke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 (Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q2 9631,10142 9687,10180

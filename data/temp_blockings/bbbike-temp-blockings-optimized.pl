@@ -408,23 +408,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berliner-weihnacht.de/',
-         'until' => 1356562740,
-         'text' => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, vom 26.11.-26.12.2012',
-         'from' => 1353884400,
-         'id' => 790,
-         'data' => 'userdel	2::temp 10008,12274 9994,12368
-# REMOVED (passierbar!) --- userdel	2::temp 9943,12364 9961,12273 9972,12184
-userdel	2::temp 10010,12259 10035,12209
-# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
-userdel	2::temp 10008,12274 10058,12290
-userdel	2::temp 10091,12232 10058,12290 9996,12401
-# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9961,12273 9875,12257
-userdel	q4::temp 9994,12368 9996,12401 9984,12426
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1929,19 +1913,7 @@ userdel	2::temp 9524,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/orte/weihnachtsmaerkte/87132_winterwelt_und_weihnachtsmarkt_potsdamer_platz/index.php',
-         'until' => 1356562799,
-         'text' => 'Winterwelt am Potsdamer Platz vom 19. November 2012 bis 26. Dezember 2012',
-         'from' => 1353279600,
-         'id' => 1997,
-         'data' => 'userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296 8278,11257
-#: XXX_prog "3::temp" geht nicht?
-userdel	3 8427,11365 8389,11378 8374,11479
-userdel	3 8374,11479 8389,11378 8427,11365
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2656,7 +2628,7 @@ userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Jüdenstr.: das Überqueren der Grunerstr. ist insbesondere außerhalb der Parkbewirtschaftungszeiten (abends, am Wochenende) sehr unbequem',
+         'text' => 'Jüdenstr.: das Überqueren der Grunerstr. ist insbesondere außerhalb der Parkbewirtschaftungszeiten (abends, am Wochenende) sehr unbequem (eng parkende Autos)',
          'from' => undef,
          'id' => 2396,
          'data' => '#: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
@@ -2671,7 +2643,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => undef,
          'id' => 2398,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2012-11-26
+#: last_checked: 2012-12-27
 userdel	q4::inwork; 13339,7452 13303,7622
 ',
          'type' => 'handicap'
@@ -2720,17 +2692,7 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
        },
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Emser Straße: Bauarbeiten, Fahrbahn gesperrt',
-         'from' => undef,
-         'id' => 2405,
-         'data' => '#: last_checked: 2012-12-02
-#: next_check: 2012-12-16
-userdel	q4::inwork 12872,7134 13058,7165
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20121128.1200.378696.html',
          'until' => 1375308000,
@@ -2789,6 +2751,17 @@ userdel	q4::inwork 12872,7134 13058,7165
 #: XXX_prog ^^^
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
+         'from' => undef,
+         'id' => 2411,
+         'data' => '#: last_checked: 2012-12-27
+#: XXX bis wann ist die Baustelle fertig?
+userdel	q4::inwork; 13444,7879 13474,8060
+',
+         'type' => 'handicap'
        }
      
 );

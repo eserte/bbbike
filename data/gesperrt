@@ -257,7 +257,7 @@ Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 Niederlagstr.	2:inwork 9943,12364 9934,12420
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
-Karl-Marx-Platz	1 12980,7597 13100,7626
+Karl-Marx-Platz	1 12974,7598 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 Berlinickestr.	1 5088,5495 5016,5401
@@ -304,7 +304,7 @@ Schöppinger Str.	1 3691,566 3648,531 3569,469
 Arberstr.	1 19424,9502 19407,9232
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
 Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
-Ringbahnstr.	1 12934,6967 13081,7014
+Ringbahnstr.	1 12934,6967 13072,7013
 Stiftsweg	1s 11001,18528 11268,18851
 Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11805,19071
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
@@ -776,13 +776,13 @@ Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 nicht passierbarer Mittelstreifen	3nocross::ignrte -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 nicht passierbarer Mittelstreifen	3nocross::ignrte -13238,-1569 -13375,-1546 -13516,-1517
-Straßenbahntrasse	3nocross::ignrte -12758,-1654 -12659,-1700 -12567,-1817
+Straßenbahntrasse	3nocross::ignrte -12758,-1654 -12730,-1681 -12659,-1700 -12567,-1817
 Mercure-Hotel -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12643,-1694
-Mercure-Hotel -> Lange Brücke: Straßenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12758,-1654
+Mercure-Hotel -> Lange Brücke: Straßenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12730,-1681
 Lange Brücke -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12567,-1817 -12659,-1700 -12681,-1726
 Am Alten Markt -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12643,-1694 -12659,-1700 -12681,-1726
 Am Alten Markt -> Lange Brücke: Straßenbahntrasse	3::igndisp -12643,-1694 -12659,-1700 -12567,-1817
-Lange Brücke -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12758,-1654 -12659,-1700 -12643,-1694
+Lange Brücke -> Am Alten Markt: Straßenbahntrasse	3::igndisp -12730,-1681 -12659,-1700 -12643,-1694
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14213,-1695 -14143,-1662 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
@@ -982,8 +982,8 @@ Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3481,14308 -35
 Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3501,14365 -3506,14306 -3481,14308
 Mittelstreifen	3nocross::ignrte 6996,3761 6957,3699 6782,3491
 Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6957,3699 6782,3491
-umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11355,12306
-Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11462,12384 11340,12443 11355,12306
+umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11355,12331
+Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11462,12384 11340,12443 11355,12331
 Mittelstreifen	3nocross::ignrte 8777,9601 8648,9526 8595,9495
 Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8648,9526 8773,9524
 Mittelstreifen	3nocross::ignrte 7434,18695 7492,18699 7520,18701
@@ -1505,8 +1505,8 @@ Frankfurter Allee -> Kreutzigerstr.: unbequem passierbarer Mittelstreifen	3::ign
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 14381,12205 14427,12197 14488,12188
 Frankfurter Allee -> Mainzer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 14488,12188 14427,12197 14357,12011
 Mainzer Str. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14357,12011 14427,12197 14381,12205
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 13785,12292 13885,12279 14208,12235
-Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13927,12370 13885,12279 14208,12235
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 13785,12292 13885,12279 14020,12261
+Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13927,12370 13885,12279 14020,12261
 Frankfurter Allee -> Liebigstr.: unbequem passierbarer Mittelstreifen	3::igndisp 13785,12292 13885,12279 13927,12370
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9701,11656 9898,11679 9981,11689
 Leipziger Str. -> Jerusalemer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9701,11656 9898,11679 9896,11703
@@ -2410,8 +2410,8 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
 Drängelgitter	BNP:3:64:trailer=10 49739,-90894
+Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
-Am Sudhaus: Bauarbeiten, noch gesperrt	2:inwork 12134,8172 12282,8204
 Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 Helmerdingstr.: Bauarbeiten, Fahrbahn gesperrt	2:inwork 14465,11195 14442,11101

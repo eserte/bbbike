@@ -76,8 +76,8 @@ userdel	3 10705,9234 10713,9260 10747,9326
 userdel	3 10747,9326 10713,9260 10705,9234
 userdel	3 11141,9107 11136,9183 11208,9345 11274,9492
 userdel	3 11274,9492 11208,9345 11136,9183 11141,9107
-userdel	3 11998,8872 11880,8955 11831,8989 11845,8824 11879,8672 11882,8527
-userdel	3 11882,8527 11879,8672 11845,8824 11831,8989 11880,8955 11998,8872
+userdel	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
+userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
 EOF
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,6-1,19,6,0,0)),
@@ -6290,7 +6290,7 @@ EOF
        text  => 'Karl-Marx-Straße, Straßenfest zwischen Flughafenstr. und Thomasstr, gesperrt, Dauer: 14.10.2006 05:00 Uhr bis 16.10.2006 00:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 12500,8504 12540,8458 12562,8432 12582,8408 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12980,7597
+userdel	2::temp 12500,8504 12540,8458 12562,8432 12582,8408 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12974,7598
 EOF
      },
      { from  => 1161032658, # 2006-10-16 23:04
@@ -10360,7 +10360,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006967',
        data  => <<EOF,
-userdel	2::inwork 13095,6926 13278,6967
+userdel	2::inwork 13085,6925 13278,6967
 EOF
      },
      { from  => 1193482816, # 2007-10-27 13:00
@@ -10378,7 +10378,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006966',
        data  => <<EOF,
-userdel	2::inwork 12973,6902 13095,6926
+userdel	2::inwork 12973,6902 13085,6925
 EOF
      },
      { from  => 1194044400, # 2007-11-03 00:00
@@ -17017,7 +17017,7 @@ EOF
 userdel	2::temp 13416,7712 13426,7674
 userdel	2::temp 13416,7712 13288,7653
 userdel	2::temp 13426,7674 13400,7642 13303,7622
-userdel	2::temp 12980,7597 13100,7626 13177,7644
+userdel	2::temp 12974,7598 13100,7626 13177,7644
 userdel	2::temp 13188,7590 13177,7644
 userdel	2::temp 13188,7590 13303,7622
 userdel	2::temp 13288,7653 13303,7622
@@ -18350,10 +18350,10 @@ EOF
        text  => 'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	3 13150,7254 13047,7234 13058,7165
-userdel	3 13058,7165 13047,7234 13150,7254
-userdel	3 13150,7254 13047,7234 13034,7319
-userdel	3 13034,7319 13047,7234 13150,7254
+userdel	3 13150,7254 13043,7234 13051,7157
+userdel	3 13051,7157 13043,7234 13150,7254
+userdel	3 13150,7254 13043,7234 13034,7319
+userdel	3 13034,7319 13043,7234 13150,7254
 EOF
      },
      { from  => 1284861600, # 2010-09-19 04:00
@@ -19076,7 +19076,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_105491',
        data  => <<EOF,
-userdel	q4::inwork; 13095,6926 13278,6967
+userdel	q4::inwork; 13085,6925 13278,6967
 EOF
      },
      { from  => 1305840997, # 2011-05-19 23:36
@@ -19735,10 +19735,10 @@ EOF
        text  => 'Jonasstr./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	3 12925,7425 13015,7440 13027,7368
-userdel	3 13027,7368 13015,7440 12925,7425
-userdel	3 12925,7425 13015,7440 13008,7470 12992,7545
-userdel	3 12992,7545 13008,7470 13015,7440 12925,7425
+userdel	3 12925,7425 13018,7441 13027,7368
+userdel	3 13027,7368 13018,7441 12925,7425
+userdel	3 12925,7425 13018,7441 13015,7471 12992,7545
+userdel	3 12992,7545 13015,7471 13018,7441 12925,7425
 EOF
      },
      { from  => 1318507200, # 2011-10-13 14:00
@@ -20378,7 +20378,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018927',
        data  => <<EOF,
-userdel	q4::inwork 13161,7173 13058,7165
+userdel	q4::inwork 13161,7173 13051,7157
 EOF
      },
      { from  => 1341133200, # 2012-07-01 11:00
@@ -20795,7 +20795,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Jüdenstr.: das Überqueren der Grunerstr. ist insbesondere außerhalb der Parkbewirtschaftungszeiten (abends, am Wochenende) sehr unbequem',
+       text  => 'Jüdenstr.: das Überqueren der Grunerstr. ist insbesondere außerhalb der Parkbewirtschaftungszeiten (abends, am Wochenende) sehr unbequem (eng parkende Autos)',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -20818,7 +20818,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2012-11-26
+#: last_checked: 2012-12-27
 userdel	q4::inwork; 13339,7452 13303,7622
 EOF
      },
@@ -20886,13 +20886,11 @@ userdel	q4::inwork 10293,-1904 10243,-1876 10099,-1482
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1356611384, # undef, # XXX
        text  => 'Emser Straße: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-12-02
-#: next_check: 2012-12-16
-userdel	q4::inwork 12872,7134 13058,7165
+userdel	q4::inwork 12872,7134 13051,7157
 EOF
      },
      { from  => undef, # 
@@ -20947,6 +20945,16 @@ EOF
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 	2::temp 42506,161075 42450,161090
 #: XXX_prog ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2012-12-27
+#: XXX bis wann ist die Baustelle fertig?
+userdel	q4::inwork; 13444,7879 13474,8060
 EOF
      },
     );

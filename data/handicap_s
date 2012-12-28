@@ -8,7 +8,7 @@ Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181
 Helsingforser Str.: Bauarbeiten, Einbahnstraße, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
 Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775 14311,11884
-Alt-Stralau: Bauarbeiten an der Brücke, enge Durchfahrt	q3::inwork 14652,10201 14558,10264
+Alt-Stralau: Asphaltierungsarbeiten unter der Brücke	q3::inwork 14652,10201 14558,10264
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
@@ -30,6 +30,7 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22544,6037 22539,5956
+Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -460,7 +461,7 @@ Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 (Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fußgänger	q2 13241,9995 13270,10030
 (Ernst-Heilmann-Steg): Fußgänger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
-Friedrichsbrücke: Engstellen wegen Bauarbeiten	q3::inwork 10054,12699 10086,12725 10166,12777
+Friedrichsbrücke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 (Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q2 9631,10142 9687,10180

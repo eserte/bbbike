@@ -713,7 +713,7 @@ Rosenthaler Weg -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11383,22369 11484,22
 Tiriotstr. -> Tiriotstr.: Straßenbahntrasse	3::igndisp 11618,22307 11484,22406 11235,22590
 Tiriotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11618,22307 11484,22406 11383,22369
 Delbrückstr.	1 12743,6645 12468,6592
-Emser Str.	1 13058,7165 12872,7134
+Emser Str.	1 13051,7157 12872,7134
 Stuthirtenweg: Gitter	3 13449,1227 13542,1268 13629,1343
 Stuthirtenweg: Gitter	3 13629,1343 13542,1268 13449,1227
 Mittelstreifen	3nocross::ignrte 10738,12364 10805,12468 10878,12560 10954,12635
@@ -1496,3 +1496,6 @@ Bäckerstr. (Potsdam)	1 -13314,-1226 -13287,-1231 -13203,-1246
 Brandenburger Str. (Potsdam)	1 -12801,-960 -12883,-976
 Stadtheide (Potsdam)	1 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122
 Stormstr. (Potsdam)	1 -15243,-2459 -15168,-2529 -15060,-2626
+Mittelstreifen	3nocross::ignrte 13885,12279 14020,12261 14208,12235
+zur Pablo-Neruda-Bibliothek -> Frankfurter Allee: Mittelstreifen	3::igndisp 14008,12181 14020,12261 13885,12279
+Frankfurter Allee -> zur Pablo-Neruda-Bibliothek: Mittelstreifen	3::igndisp 14208,12235 14020,12261 14008,12181
