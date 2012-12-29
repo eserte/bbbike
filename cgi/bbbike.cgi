@@ -7778,24 +7778,8 @@ EOF
     print "<hr><p>\n";
 
     print "<h3 id='hardsoftware'>Hard- und Software</h3>\n";
-    # funktioniert nur auf dem CS-Server
     my $os;
-    if (open(INFO, "/usr/INFO/Rechnertabelle")) {
-	my $host;
-	eval q{local $SIG{'__DIE__'};
-	       require Sys::Hostname;
-	       $host = Sys::Hostname::hostname();
-	   };
-	while(<INFO>) {
-	    if (/^$host:/o) {
-		print "Hardware: " . (split /:/)[2] . "<p>\n";
-		$os = (split /:/)[3];
-		last;
-	    }
-	}
-	close INFO;
-    }
-    unless (defined $os or $^O eq 'MSWin32') {
+    unless (defined $os || $^O eq 'MSWin32') {
 	open UNAME, "-|" or exec qw(uname -sr);
 	my $uname = <UNAME>;
 	close UNAME;
