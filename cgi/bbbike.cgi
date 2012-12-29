@@ -5036,7 +5036,7 @@ EOF
 	    }
 	    if (($is_beta || $is_m) && $apache_session_module eq 'Apache::Session::Counted') {
 		print "<td>";
-		(my $href = $bbbike_script) =~ s{/bbbike2?(\.en)?\.cgi}{/bbbikeleaflet$1.cgi};
+		my $href = _bbbikeleaflet_url();
 	        print qq{<a href="$href?} . CGI->new({coordssession => $sess->{_session_id}})->query_string . qq{">Leaflet</a>};
 		print "</td>";
 		$maybe_do_table_br->();
@@ -7582,6 +7582,11 @@ sub bbbikegooglemap_basename {
     "bbbikegooglemap" . ($is_beta ? "2" : "") . ".cgi";
 }
 
+sub _bbbikeleaflet_url {
+    (my $href = $bbbike_script) =~ s{/bbbike2?(\.en)?\.cgi}{/bbbikeleaflet$1.cgi};
+    $href;
+}
+
 ######################################################################
 #
 # Information
@@ -7754,12 +7759,15 @@ Installation des <a href="$bbbike_html/opensearch/opensearch.html">Suchplugins</
 </form>
 EOF
     }
-    print <<EOF;
+    {
+	my $href = _bbbikeleaflet_url();
+	print <<EOF;
 <h4 id="leaflet">BBBike &amp; Leaflet</h4>
 Noch in Entwicklung: 
-BBBike-Routen auf einer <a href="bbbikeleaflet.cgi">Leaflet-Karte</a> suchen.<br/>
+BBBike-Routen auf einer <a href="$href">Leaflet-Karte</a> suchen.<br/>
 Um Start- und Zielpunkt zu setzen, einfach Doppel-Klicks oder -Taps machen.
 EOF
+    }
     print <<EOF;
 <h4 id="googlemaps">BBBike auf Google Maps</h4>
 Noch in Entwicklung: 
