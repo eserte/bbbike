@@ -1813,9 +1813,6 @@ sub choose_form {
     $header_args{-expires} = '+1d';
     http_header(%header_args);
     my @extra_headers;
-    if ($bi->{'text_browser'} && !$bi->{'mobile_device'}) {
-	push @extra_headers, -up => $BBBike::HOMEPAGE;
-    }
 
     my $onloadscript = "";
     if ($nice_berlinmap || $nice_abcmap) {
