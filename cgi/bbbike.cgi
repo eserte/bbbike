@@ -5667,7 +5667,7 @@ sub draw_route {
 		    $BBBikeDraw::BBBikeGoogleMaps::bbbike_googlemaps_url = $BBBikeDraw::BBBikeGoogleMaps::bbbike_googlemaps_url;
 		    $BBBikeDraw::BBBikeGoogleMaps::maptype = $BBBikeDraw::BBBikeGoogleMaps::maptype;
 		}
-		$BBBikeDraw::BBBikeGoogleMaps::bbbike_googlemaps_url = bbbikegooglemap_basename(); # may use the beta URL
+		$BBBikeDraw::BBBikeGoogleMaps::bbbike_googlemaps_url = _bbbikegooglemap_url();
 		$BBBikeDraw::BBBikeGoogleMaps::maptype = "bbbikeorg";
 	    }
 	} elsif ($q->param('imagetype') eq 'googlemapsstatic') {
@@ -6861,7 +6861,7 @@ EOF
 	    $s .= "<td><a href=\"$mapserver_init_url\">Mapserver</a></td>";
 	}
 	if ($can_google_maps) {
-	    $s .= qq{<td><a href="@{[ bbbikegooglemap_basename() ]}?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>};
+	    $s .= qq{<td><a href="@{[ _bbbikegooglemap_url() ]}?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>};
 	}
     }
     $s .= <<EOF;
@@ -7575,12 +7575,13 @@ sub _is_real_street {
     $type eq 'street' || $type eq 'projected street';
 }
 
-sub bbbikegooglemap_basename {
-    "bbbikegooglemap" . ($is_beta ? "2" : "") . ".cgi";
-}
-
 sub _bbbikeleaflet_url {
     (my $href = $bbbike_script) =~ s{/bbbike2?(\.en)?\.cgi}{/bbbikeleaflet$1.cgi};
+    $href;
+}
+
+sub _bbbikegooglemap_url {
+    (my $href = $bbbike_script) =~ s{/bbbike2?(\.en)?\.cgi}{"/bbbikegooglemap" . ($is_beta ? "2" : "") . ".cgi"}e;
     $href;
 }
 
@@ -7768,7 +7769,7 @@ EOF
     print <<EOF;
 <h4 id="googlemaps">BBBike auf Google Maps</h4>
 Noch in Entwicklung: 
-BBBike-Routen auf <a href="@{[ bbbikegooglemap_basename() ]}?mapmode=search;maptype=hybrid">Google Maps</a> suchen
+BBBike-Routen auf <a href="@{[ _bbbikegooglemap_url() ]}?mapmode=search;maptype=hybrid">Google Maps</a> suchen
 EOF
     if ($can_palmdoc) {
 	print <<EOF;
