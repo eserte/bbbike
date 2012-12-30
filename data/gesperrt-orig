@@ -259,7 +259,7 @@ Aspenweg	1 -3288,17831 -3244,17883 -3224,17943
 Pintschstr.	1 13339,13196 13435,12973
 # REMOVED (stimmt nicht (mehr?)) --- Wolliner Str.	1 10405,14425 10320,14608
 Splanemannstr.	1 18301,9946 18389,9925 18408,10041
-Ontarioseestr.	1 18408,10041 18403,10077
+Ontarioseestr.	1 18408,10041 18387,10070
 Burgherrenstr.	1 8969,8640 9076,8783
 Travestr.	1 14835,11840 14897,11801 14981,11751
 Müggelstr.	1 14897,11801 14965,11921
@@ -1814,6 +1814,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 15090,11237
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7030&options=4
 #: XXX genaue Position der Schranke?
 Schranke	BNP:3::trailer=10 -822,16535

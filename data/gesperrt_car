@@ -826,10 +826,10 @@ Mittelstreifen	3nocross::ignrte -3009,17090 -3017,16984 -3018,16974
 Streitstr. -> Chamissostr.: Mittelstreifen	3::igndisp -3009,17090 -3017,16984 -2838,16951
 Chamissostr. -> Streitstr.: Mittelstreifen	3::igndisp -2838,16951 -3017,16984 -3018,16974
 Straßenbahntrasse	3nocross::ignrte 18770,8898 18737,8686 18733,8650
-Treskowallee -> Rheinsteinstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18868,8731
+Treskowallee -> Rheinsteinstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18866,8738
 Treskowallee -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18778,8663
-Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18868,8731 18737,8686 18733,8650
-Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18868,8731 18737,8686 18778,8663
+Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18866,8738 18737,8686 18733,8650
+Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18866,8738 18737,8686 18778,8663
 Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18778,8663 18737,8686 18733,8650
 Lötzener Allee	1 574,10577 452,10669 474,10869 495,11090
 keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 19904,3464
@@ -1114,7 +1114,7 @@ Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 15477,11338
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 15484,11292
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15144,10905
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15272,10790
-Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15353,10870
+Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15355,10875
 Mittelinsel	3nocross::ignrte 4345,11710 4331,11554 4312,11354
 Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4452,11570 4331,11554 4312,11354
 Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4452,11570 4331,11554 4156,11522
@@ -1226,9 +1226,9 @@ Mittelstreifen	3nocross::ignrte 9338,4129 9365,4006 9410,3793
 Mariendorfer Damm -> Richterstr.: Mittelstreifen	3::igndisp 9410,3793 9365,4006 9232,3980
 Richterstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9232,3980 9365,4006 9338,4129
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18296,10027
-Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18403,10077
+Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18387,10070
 Ontarioseestr.: Sackgasse für Autos	3 18296,10027 18339,10048 18408,10041
-Ontarioseestr.: Sackgasse für Autos	3 18403,10077 18339,10048 18408,10041
+Ontarioseestr.: Sackgasse für Autos	3 18387,10070 18339,10048 18408,10041
 Schranke	3 11889,21543 11982,21392 11948,21366
 Schranke	3 12074,21243 11982,21392 11948,21366
 Schranke	3 11948,21366 11982,21392 11889,21543

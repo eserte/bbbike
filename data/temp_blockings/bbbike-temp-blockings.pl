@@ -20691,7 +20691,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html',
        data  => <<EOF,
-userdel	q4::inwork 18998,8784 19078,8817 19120,8835 19169,8856 19316,8933 19510,9035 19629,9094
+userdel	q4::inwork 18988,8791 19073,8828 19116,8846 19163,8867 19299,8946 19500,9043 19629,9099
 EOF
      },
      { from  => 1348376400, # 2012-09-23 07:00
