@@ -843,16 +843,51 @@ sub _fill_exif_viewer {
     my $pager = $exif_toplevel->Subwidget('Pager');
     $pager->delete('1.0', 'end');
 
-    my $info_text;
+    my @exif_lines;
+    my %line_seen;
     open my $fh, "-|", $exiftool_path, $image_path
 	or main::status_message($!, "die");
     while(<$fh>) {
-	$info_text .= $_;
+	chomp;
+	next if $line_seen{$_}++; # no duplicates, please
+	if (my($key,$rest) = $_ =~ m{^(.*?)(:.*)$}) {
+	    if ($key =~ s{(\s+)$}{}) {
+		$rest = (" "x length $1) . $rest;
+	    }
+	    push @exif_lines, [$key, $rest];
+	} else {
+	    push @exif_lines, ["", $_];
+	}
     }
     close $fh
 	or main::status_message($!, "die");
 
-    $pager->insert('end', $info_text);    
+    my %exif_key_priority = do {
+	my $i = 1;
+	map { ($_ => $i++) }
+	    (
+	     'Make',
+	     'Camera Model Name',
+	     'Exposure Time',
+	     'F Number',
+	     'ISO',
+	     'Focal Length',
+	     'Flash',
+	     'Exposure Difference',
+	     'Active D-Lighting',
+	     'White Balance',
+	     'Focus Mode',
+	     'Lens',
+	     'Keywords',
+	     'Date/Time Original',
+	     'File Size',
+	    );
+    };
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@exif_lines, \%exif_key_priority],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+
+    @exif_lines = sort { ($exif_key_priority{$a->[0]}||9_999_999) <=> ($exif_key_priority{$b->[0]}||9_999_999) } @exif_lines;     
+
+    $pager->insert('end', join("\n", map { join("",@$_) } @exif_lines));
 }
 
 sub fill_exif_viewer_if_active {
