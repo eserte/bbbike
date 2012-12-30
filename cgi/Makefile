@@ -23,6 +23,7 @@ symlinks:
 	[ -e bbbike-test.cgi ] || ln -s bbbike.cgi bbbike-test.cgi
 	[ -e bbbike-test.en.cgi ] || ln -s bbbike.cgi bbbike-test.en.cgi
 	[ -e bbbikeleaflet.en.cgi ] || ln -s bbbikeleaflet.cgi bbbikeleaflet.en.cgi
+	[ -e bbbikegooglemap2.cgi ] || ln -s bbbikegooglemap.cgi bbbikegooglemap2.cgi
 
 biokovo.conf:
 	$(MAKE) \
