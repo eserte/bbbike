@@ -102,7 +102,11 @@ sub strecke_s {
 #    CORE::sqrt(sqr($x1-$x2) + sqr($y1-$y2));
 
 BEGIN {
-    if (eval { require Geo::Distance::XS; 1 }) {
+    if (eval {
+	local $^W = 0; # otherwise there may be 'Name "Geo::Distance::XS::FORMULAS" used only once' warnings with Geo::Distance::XS 0.11
+	require Geo::Distance::XS;
+	1;
+    }) {
 	my $geo = Geo::Distance->new;
 	*strecke_polar = sub {
 	    my($s1,$s2) = @_;
