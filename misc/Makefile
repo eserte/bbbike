@@ -359,9 +359,13 @@ do-garmindata-dist:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 	cd /tmp && \
 	    zip -r bbbike-b_de-garmin-$(TODAY_DATE).zip bbbike-b_de-garmin
 
-garmindata-sf-release:	do-garmindata-dist
-	@echo "Go to https://sourceforge.net/downloads/bbbike/bbbikedata-b_de/"
-	@echo "Create a folder $(TODAY_DATE)"
-	@echo "Then upload the file:"
+garmindata-sf-release:	do-garmindata-dist garmindata-sf-release-show-notice:
+
+garmindata-sf-release-show-notice:
+	@echo "Upload the file:"
 	@echo ""
 	@echo "    rsync -v /tmp/bbbike-b_de-garmin-$(TODAY_DATE).zip eserte@frs.sourceforge.net:/home/frs/project/bbbike/bbbikedata-b_de/$(TODAY_DATE)/"
+	@echo ""
+	@echo "Then check if things were created correctly in "
+	@echo "    https://sourceforge.net/downloads/bbbike/bbbikedata-b_de"
+	@echo "    https://sourceforge.net/downloads/bbbike/bbbikedata-b_de/$(TODAY_DATE)"
