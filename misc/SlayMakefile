@@ -190,6 +190,14 @@ fragezeichen-list:		{ "$BBBIKE_TMP_DIR/fragezeichen_list/index.html" }
 	}
 
 fragezeichen-list-local:		{ "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html" }
+	{
+		print "Try now:\n";
+		print "\n";
+		print "    firefox $BBBIKE_TMP_DIR/fragezeichen_list_local/index.html\n";
+		print "    firefox $BBBIKE_TMP_DIR/fragezeichen_list_local/index-sort-by-count.html\n";
+		print "\n";
+		"";
+	}
 
 { "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html" } :	{ @DO_FRAGEZEICHEN_LIST_DEPS }
 	{
