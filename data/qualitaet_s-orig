@@ -631,7 +631,8 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14311,11884
 Seumestr.: Kopfsteinpflaster	Q2 14395,11753 14358,11656 14305,11514 14254,11377
 Wismarplatz: Kopfsteinpflaster	Q2 14395,11753 14416,11815
-Mainzer Str.: Kopfsteinpflaster	Q2- 14311,11884 14357,12011 14427,12197
+Mainzer Str.: Kopfsteinpflaster	Q2- 14311,11884 14357,12011 14384,12084
+Mainzer Str.: Asphalt	Q0 14384,12084 14427,12197
 Colbestr.: Asphalt	Q0+ 14416,11815 14468,11992
 Kinzigstr.: mäßiger Asphalt	Q1 14589,11975 14471,11782
 Waldeyerstr.: Kopfsteinpflaster	Q2 15054,12323 14997,12243
@@ -2257,7 +2258,7 @@ Rotraudstr.: Asphalt, leicht uneben	Q0- 21118,14477 21099,14300 21087,14183 2107
 (Gaudystr. - Mauerpark): glattes Pflaster	Q0 10456,15561 10256,15482 10186,15463
 #: note: laut joern (js) "schlechtere Qualität", ist aber ganz normales Kopfsteinpflaster
 Gaudystr.: Kopfsteinpflaster	Q2 10941,15697 10733,15638 10456,15561
-Zur Rinderauktionshalle: Asphalt	Q0 14207,13152 14450,13081
+Zur Rinderauktionshalle: Asphalt	Q0 14207,13152 14355,13109 14450,13081
 Hindenburgdamm: schlechtes Kopfsteinpflaster	Q3 4517,4853 4515,4966
 (Am Stichkanal - Uferweg am Teltowkanal): Asphalt	Q0 2736,645 2787,600
 #: note: ähnliche Einschätzungen von marcls und ADFC-Karte: vvv
@@ -2403,8 +2404,8 @@ Feldtmannstr.: asphaltiert	Q0 15239,17599 14754,17673
 #: note: using average velocity in GPS track 20020811
 (Kronprinzessinenweg/Havelchaussee - Schlachtensse): Waldweg, ca. 50m lange sandige Stelle, Wurzeln	Q3 -3296,3686 -3199,3592 -3398,3321 -3353,3298
 Am Schweizer Garten: Asphalt	Q0 11868,13646 12001,13863
-#: note: hier gibt es noch 20 Meter Kleinsteinpflaster am Punkt 12141,13609
-(Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12141,13609
+(Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12145,13628
+(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12145,13628 12141,13609
 (Volkspark Friedrichshain): Parkweg	Q1 12141,13609 12129,13531 12111,13480 12060,13422
 Kadiner Str.: Asphalt	Q0 13515,11969 13592,12254
 Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
@@ -8098,6 +8099,8 @@ IKEA-Parkplatz: Verbundsteinpflaster	Q1+ 7991,6938 8071,7006 8077,7040
 (zur Neuen Mälzerei): Asphalt	Q0 12520,12938 12590,13018
 (Weg im Blankensteinpark): Kopfsteinpflaster	Q2 14376,12849 14289,12876
 (Weg im Blankensteinpark): Asphalt	Q0 14289,12876 14146,12921 14130,12926
+#: note: parallel verlaufende Fahrbahn ist mit Kopfsteinpflaster
+(Weg im Blankensteinpark): Asphalt	Q0 14355,13109 14289,12876
 Götzstr. - Albrechtstr.: Verbundsteinpflaster	Q1 9389,6348 9381,6277
 (zum Parkplatz Rathaus Tempelhof): Verbundsteinpflaster	Q1 9346,6352 9389,6348
 (Berlinische Galerie): Asphalt	Q0 10056,10831 9966,10874
@@ -8336,6 +8339,7 @@ An den Eldenaer Höfen: Kopfsteinpflaster	Q2 14376,12849 14449,12833 14594,12800
 (an den Gebäuden der Deutschen Rentenversicherung): schlechtes Kopfsteinpflaster	Q3+ 15058,11250 15010,11170
 Am Tierpark [Wohngebiet]: Asphalt	Q0 18484,10326 18552,10135
 (Hönower Str.): Asphalt	Q0 18490,9387 18497,9459
+(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12038,13685 12145,13628 12169,13609
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -21279,8 +21283,9 @@ Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12586,13368 12604,13338 12597,13323 12556,
 (Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12438,13387 12341,13309 12244,13240 12236,13229
 #: corrected_by: ^^^
 #: confirmed_by: srt
-(Volkspark Friedrichshain): Asphalt	Q0 12344,13627 12204,13609 12141,13609 12023,13598
-(Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12023,13598 12038,13685
+(Volkspark Friedrichshain): Asphalt	Q0 12344,13627 12204,13609 12169,13609 12141,13609 12012,13599
+#: corrected_by: srt (was Kopfsteinpflaster, Q2)
+(Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12012,13599 12038,13685
 (Zufahrt Landsberger Allee): Gehwegplatten, Beton	Q0 13433,13346 13397,13426 13574,13505
 #: corrected_by: srt (Q1 -> Q1+)
 Weisbachstr.: Asphalt	Q1+ 13557,13290 13610,13169

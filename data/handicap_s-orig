@@ -15,7 +15,7 @@
 #: source_id: INKO_113418
 Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2012-12-28 vvv
+#: last_checked: 2013-01-02 vvv
 #: next_check: 2013-03-15 vvv
 #: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -32,10 +32,10 @@ Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::i
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2012-12-25
-#: next_check: 2013-01-02
+#: last_checked: 2013-01-02
+#: next_check: 2013-01-16
 #: source_id: LMS_3261840849
-G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14247,11681 14272,11775 14311,11884
+G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14247,11681 14272,11775
 # REMOVED --- Bauarbeiten beendet --- Mainzer Str., G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14311,11884 14357,12011
 # 
 #: last_checked: 2012-12-28
@@ -277,12 +277,13 @@ Fuﬂg‰nger	q3 7934,7621 7919,7679
 Treppe oder Rampe	q4 7934,7621 7949,7607
 Marx-Engels-Forum: Fuﬂg‰nger, eigentlich Schiebestrecke	q2 10300,12587 10355,12551 10411,12471 10422,12395
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12372,13198 12369,13252 12474,13311 12438,13387 12483,13418 12450,13542 12344,13627 12372,13755
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12344,13627 12204,13609 12141,13609 12129,13531 12005,13481 11982,13471
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13609 12161,13711
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12344,13627 12204,13609 12169,13609 12141,13609 12129,13531 12005,13481 11982,13471
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13609 12145,13628 12161,13711
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12129,13531 12111,13480 12060,13422
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 11857,13596 11842,13576
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12185,13298 12177,13283
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13341 12131,13333
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12038,13685 12145,13628 12169,13609
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120418.1330.368930.html
 Luisenhain: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2- 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
 (Rathaus Kˆpenick - Luisenhain): Fuﬂg‰nger	q2- 22133,4644 22074,4664
@@ -1723,7 +1724,8 @@ Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,131
 (Kolonieweg a. d. Forkenbeckstr.): Fuﬂg‰nger, teilweise eng	q3 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
 Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3587,7560
 Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
-(Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12386,13085 12387,13107 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12005,13481 11957,13528 11857,13596 11823,13610 11785,13625
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger, kurze Rampe	q3 12386,13085 12387,13107
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12387,13107 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12005,13481 11957,13528 11857,13596 11823,13610 11785,13625
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785 11805,12760
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11921,12810
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
@@ -1790,7 +1792,7 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 #: corrected_by: srt (-> Rampe)
 (Volkspark Friedrichshain): kurze Rampe an der Friedenstr.	q3 12244,13240 12236,13229
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12141,13609 12023,13598 12038,13685
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12141,13609 12012,13599 12038,13685
 (Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13433,13346 13397,13426 13574,13505
 (Verl‰ngerte Wallenbergstr.): Fuﬂg‰nger, schmal	q3 4139,8485 4029,8482
 (Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3775,8771 3868,8759

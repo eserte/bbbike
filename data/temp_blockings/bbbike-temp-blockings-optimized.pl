@@ -1887,25 +1887,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1356994740,
-         'text' => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht oder nur schwer möglich',
-         'from' => 1352934000,
-         'id' => 1988,
-         'data' => 'userdel	2::temp 11209,12430 11329,12497
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1356994740,
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht möglich (Eintritt!)',
-         'from' => 1352734264,
-         'id' => 1989,
-         'data' => 'userdel	2::temp 9536,11912 9668,11928
-userdel	2::temp 9524,12010 9656,12021
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2015,7 +1998,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2762,6 +2745,26 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
 userdel	q4::inwork; 13444,7879 13474,8060
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_019489',
+         'until' => 1358981999,
+         'text' => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, bis 23. Januar 2013',
+         'from' => 1357040979,
+         'id' => 2412,
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Friedhofswege nachts gesperrt',
+         'from' => undef,
+         'id' => 2413,
+         'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
+	2::night 12773,12683 13046,12956
+'
        }
      
 );

@@ -20957,4 +20957,22 @@ EOF
 userdel	q4::inwork; 13444,7879 13474,8060
 EOF
      },
+     { from  => 1357040979, # 2013-01-01 12:49
+       until => 1358981999, # 2013-01-23 23:59
+       text  => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, bis 23. Januar 2013',
+       type  => 'gesperrt',
+       source_id => 'IM_019489',
+       data  => <<EOF,
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Friedhofswege nachts gesperrt',
+       recurring => 1,
+       data => <<EOF,
+	2::night 12851,12602 13108,12859 13046,12956 12878,13229
+	2::night 12773,12683 13046,12956
+EOF
+     },
     );

@@ -2337,8 +2337,8 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 #: note: abgeschlossener Zaun
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2012-12-18 vvv
-#: next_check: 2013-02-18 vvv
+#: last_checked: 2013-01-02 vvv
+#: next_check: 2013-03-18 vvv
 #: XXX mit den Bauarbeiten "An den Eldenaer Höfen" koordinieren vvv
 Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
 An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14449,12833 14594,12800
@@ -2494,7 +2494,7 @@ tragen (Treppe)	0:20 5371,4609
 #: XXX Was ist das hier? Ein Drängelgitter, eine Schranke?
 (Stadtpark Steglitz)	BNP:15 5765,4693
 tragen (16 Stufen)	0:45 5469,4543
-tragen (6 Stufen)	0:20 12387,13107
+# REMOVED (hier ist eine Rampe) --- tragen (6 Stufen)	0:20 12387,13107
 # REMOVED --- Schranke	BNP:10 12586,13368
 tragen (ca. 5 x 9 Stufen)	0:120 13853,13712
 Danziger Str.: Straßenbahnschienen	3nocross 12901,14093 12975,13990 13037,13897 13100,13803
