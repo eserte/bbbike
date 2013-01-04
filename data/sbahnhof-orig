@@ -19,6 +19,8 @@ Oranienburger Str.	SA 9610,13258
 #: alias: Lehrter Bahnhof
 #: attrs bg
 Hauptbahnhof	SA 8007,13225
+#: next_check: 2017-06-01
+Hauptbahnhof	SBau 8061,13303
 #: attrs bg
 Nordbahnhof	SA 9264,14032
 Humboldthain	SA 8658,15442
@@ -333,8 +335,8 @@ Julius-Leber-Brücke	SA 7534,8895
 #Hackbuschstr.	SBau -6724,14280
 #: section ^^^
 # 
-#: XXX Eröffnung: Juni 2012. Zone=SC, Siehe auch Linien. Wahrscheinlich wird auch Flughafen Berlin-Schönefeld umbenannt. vvv
-#: next_check: 2013-03-17 vvv
+#: XXX Eröffnung: Oktober 2013. Zone=SC, Siehe auch Linien. Wahrscheinlich wird auch Flughafen Berlin-Schönefeld umbenannt. vvv
+#: next_check: 2013-10-27 vvv
 Waßmannsdorf	SBau 14761,-4102
 Flughafen Berlin-Brandenburg	SBau 17808,-4496
 #: next_check ^^^

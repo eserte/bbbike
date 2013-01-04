@@ -180,8 +180,8 @@ Harzer Str.: Kopfsteinpflaster	Q2 12979,9304 12897,9365
 Harzer Str.: Kopfsteinpflaster	Q2 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
-#: last_checked: 2012-06-01 (östliches Ende)
-#: next_check: 2013-01-01
+#: last_checked: 2013-01-04
+#: next_check: 2013-05-15
 Kiefholzstr.: Kopfsteinpflaster	Q2 13601,9572 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2+ 15060,11006 15102,11120
@@ -576,7 +576,7 @@ Görlitzer Park: mäßiges Kopfsteinpflaster	Q2- 12580,10252 12611,10299
 Görlitzer Park: teils fester sandiger Weg	Q2 13053,10088 13013,10068 13013,10047 12987,10007
 Görlitzer Park: teils fester sandiger Weg, bei Regen Pfützen	Q2- 12987,10007 12932,9900
 Zur Eisenbahnbrücke: gutes Kopfsteinpflaster	Q1 13302,9894 13229,9853
-Bahndamm: fester Sandweg	Q1 13282,9828 13476,9720 13934,9365 13966,9340
+Bahndamm: fester Sandweg	Q1 13145,9920 13152,9914 13229,9853 13282,9828 13476,9720 13934,9365 13966,9340
 Tiergartenufer: Parkweg (Bodenwellen)	Q2+ 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768
 Tiergartenufer: Parkweg	Q1 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg	Q2+ 6309,11443 6186,11466
@@ -21930,7 +21930,7 @@ Kleine Kurstr.: Asphalt	Q0 10241,11830 10281,11876
 Kreuzstr.: Asphalt	Q0 10236,11945 10209,11918
 Kleine Jägerstr.: Asphalt	Q0 9991,11903 10050,11942 10064,11953
 Alte Leipziger Str.: Asphalt	Q0 10079,11845 10118,11907
-Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10391,11898
+# REMOVED --- Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10391,11898
 #: corrected_by: srt (Beton, Q1 -> Asphalt, Q0)
 Am Wriezener Bahnhof: Asphalt	Q0 12758,11915 12788,11898 12944,11760 12993,11717
 #: corrected_by: srt (Q2 -> Q2-)

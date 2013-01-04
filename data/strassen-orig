@@ -1131,8 +1131,7 @@ Oberwasserstr.	NN 10281,11876 10286,11869 10295,11856
 Jungfernbrücke	NN 10227,12013 10223,12010 10212,12002 10206,11999
 Neumannsgasse	N 10383,12191 10284,12113
 Sperlingsgasse	N 10284,12113 10207,12055
-#: XXX wird dieser Abschnitt als Straßenland "eingezogen"? Falls ja, dann den Petriplatz nach plaetze-orig überführen
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2012
+# REMOVED --- #: XXX wird dieser Abschnitt als Straßenland "eingezogen"? Falls ja, dann den Petriplatz nach plaetze-orig überführen --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2012
 Petriplatz	N 10460,11979 10418,12016
 Brüderstr. (Mitte)	N 10385,11985 10284,12113
 Scharrenstr.	N 10301,11899 10332,11929 10385,11985 10418,12016 10480,12077
@@ -1706,14 +1705,14 @@ Binger Str.	NN 4059,6844 4061,6753
 Waldemarstr. (Kreuzberg, Mitte)	N 12172,10585 12142,10600 12052,10644 11841,10747 11770,10774 11556,10869 11328,10957 11290,10972 11150,11030
 Sebastianstr.	N 10640,11564 10818,11269 10911,11080
 Sebastianstr.	NN 10911,11080 10934,11038
-Sebastianstr.	N 10934,11038 11109,10943 11162,10919
+Sebastianstr.	N 10934,11038 11110,10946 11162,10919
 Dresdener Str.	N 11189,10831 11162,10919
 Dresdener Str.	NN 11162,10919 11150,11030
 Dresdener Str.	N 11150,11030 11124,11117 11034,11249
 Dresdener Str.	N 11234,10739 11258,10682 11343,10528
 Dresdener Str.	NN 11034,11249 11000,11327
 Dresdener Str.	N 11000,11327 11039,11425
-Luckauer Str.	N 11049,10816 11109,10943 11150,11030
+Luckauer Str.	N 11049,10816 11110,10946 11150,11030
 Seydelstr.	N 10489,11405 10446,11470 10320,11627 10249,11727 10240,11740
 Elisabeth-Mara-Str.	N 10320,11627 10506,11567
 Rungestr.	N 10955,11849 11034,11895 11197,11882 11283,11876 11378,11856 11506,11851
@@ -5370,7 +5369,7 @@ Wasserstr. (Oberschöneweide)	N 19697,5835 19681,5924
 Am Rheinischen Viertel	N 19272,8606 19416,8668
 #: XXX wird dieser Abschnitt zurückgebaut?
 #: last_checked: 2012-12-30
-#: next_check: 2013-03-20
+#: next_check: 2013-01-04
 Waldowallee	H 18867,9464 18916,9468
 Waldowallee	H 18875,9570 18916,9468 18939,9417 18977,9322 19050,9142 19083,9062 19163,8867 19249,8662 19272,8606 19321,8486 19425,8231 19468,8168
 Verlängerte Waldowallee	H 19468,8168 19558,8064 19666,7988 19843,7866 19927,7813 20031,7794 20077,7786 20139,7775 20280,7749
@@ -15204,7 +15203,7 @@ Caroline-von-Humboldt-Weg	N 9961,12094 10050,11942
 Kleine Jägerstr.	N 9991,11903 10050,11942 10064,11953
 Alte Leipziger Str.	N 10079,11845 10118,11907
 Kleine Gertraudenstr.	N 10332,11929 10364,11896
-Kleine Gertraudenstr.	NN 10364,11896 10391,11898
+# REMOVED (kein direkter Durchgang, teilweise Geländer, sonst Bordsteine) --- Kleine Gertraudenstr.	NN 10364,11896 10391,11898
 Am Wriezener Bahnhof	N 12758,11915 12788,11898 12944,11760 12993,11717
 Am Wriezener Bahnhof	N 12993,11717 12986,11699 12959,11631 12900,11515
 (Am Wriezener Bahnhof - Rüdersdorfer Str.)	NN 12944,11760 13052,11867

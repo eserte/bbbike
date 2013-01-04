@@ -21,6 +21,7 @@
 #: last_checked: 2012-09-22
 #: next_check: 2013-04-15
 #: XXX Baumaßnahme 1.48 (Realisierung nach 2011)
+#: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
 #: last_checked: 2012-12-25
@@ -51,7 +52,9 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 # 
 #: XXX Baumaßnahme 4.15 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn 2012)
-Sömmeringstr.: Radspuren werden hier markiert	?::inwork 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
+#: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
+#: next_check: 2013-05-01
+Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
 #: XXX Baumaßnahme 4.12 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn noch nicht 2012)
 #: next_check: 2013-01-01
@@ -86,7 +89,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-01-02 vvv
+#: last_checked: 2013-01-03 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -94,7 +97,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2012-12-21
+#: last_checked: 2013-01-03
 #: next_check: 2013-06-01
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -111,7 +114,8 @@ Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
 #: last_checked: 2012-09-22
 #: next_check: 2013-06-01
-Müllerstr.: werden hier Radspuren markiert?	?::projected 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
+#: XXX im Tagesspiegel vom 2013-01-03 erwähnt
+Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258,16111 6349,16213 6450,16325 6444,16331 6629,16538
@@ -189,6 +193,18 @@ Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13600,5240 13594,5240 13323,5222 13247,5210 13112,5253 13047,5275
 #: XXX Baumaßnahme 9.10 (Realisierung nach 2011), 9.2 (Realisierung bis 2010)
 Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
+# 
+#: by: Tagesspiegel vom 2013-03-01 vvv
+#: last_checked: 2013-01-04
+#: next_check: 2013-09-01
+Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
+#: next_check: 2013-06-01
+Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324 6377,13321 6694,13327 6817,13333 6925,13352 7069,13381
+#: next_check: 2013-06-01
+Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837
+#: next_check: 2013-06-01
+Gartenfelder Str.: Radspuren für 2013 geplant	?::projected -344,15200 -453,15219 -532,15184 -569,15167 -707,15108 -834,15053 -945,14999 -1271,14843 -1307,14801 -1336,14786
+#: by: ^^^
 # 
 #: section ^^^
 #: section ^^^
@@ -341,7 +357,7 @@ Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 1
 #: by: ^^^
 # 
 #: last_checked: 2012-12-30
-#: next_check: 2013-03-20
+#: next_check: 2013-01-04
 #: note: Treskowallee (Lichtenberg) in Höhe Waldowallee Baustelle, Fahrbahn von 2 auf 1 Fahrstreifen reduziert, ein Abbiegen aus Richtung Am Tierpark in die Waldowallee ist nicht möglich (bis Ende 03/2013)
 #: source_id: IM_019443
 Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18867,9464 18834,9256
@@ -461,9 +477,13 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert?	?::project
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html
 #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
-#: last_checked: 2012-08-05
-#: next_check: 2013-11-30
+#: last_checked: 2012-08-05 vvv
+#: next_check: 2013-11-30 vvv
 Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8333,9583 8338,9443 8388,9242 8337,9065
+#: by: http://gleisdreieck-blog.de/wordpress/wp-content/uploads/eingang-yorck-collignon.jpg
+Eingang zum Flaschenhalspark	?::projected 8358,9568 8338,9443
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Noerdl-Teilstueck-a.5712.0.html
 #: next_check: 2015-01-01
@@ -530,6 +550,7 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3542,13063 3559,13177
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2012
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2013 (Hausnummern)
 #: XXX fehlt in Berlin.coords.data PLZ=10365
 #: last_checked: 2012-11-03 (Bauarbeiten, noch keine Straßenführung zu erkennen)
 #: next_check: 2013-02-01
@@ -3022,8 +3043,10 @@ An der Kornmühle (Potsdam)	? -12865,-2478 -12874,-2534
 Am Speicher (Potsdam)	? -12956,-2582 -12972,-2652
 #: XXX ^^^
 #: XXX fehlt in Potsdam.coords.data, PLZ=14469 vvv
-Siegward-Sprotte-Straße (Potsdam): (Planstraße "Nord")	? -15379,377 -15261,431
-Haeberlinweg (Potsdam): (Planstraße "Süd")	? -15381,160 -15264,85
+#: by: http://www.potsdam.de/cms/dokumente/10111537_1471008/c741b21e/Amtsblatt_17_12.pdf vvv
+Siegward-Sprotte-Straße (Potsdam): (Planstraße "Nord")	? -15360,409 -15380,684
+Haeberlinweg (Potsdam): (Planstraße "Süd")	? -15413,345 -15360,409 -15261,431
+#: by: ^^^
 #: XXX ^^^
 #: by: ^^^
 #: XXX ^^^

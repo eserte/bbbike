@@ -15,7 +15,7 @@
 #: source_id: INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-01-02 vvv
+#: last_checked: 2013-01-04 vvv
 #: next_check: 2013-03-15 vvv
 #: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -38,10 +38,11 @@ Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::i
 Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775
 # REMOVED --- Bauarbeiten beendet --- Mainzer Str., Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14311,11884 14357,12011
 # 
-#: last_checked: 2012-12-28
+#: last_checked: 2013-01-04
 #: next_check: 2013-01-15
 #: XXX abhängig von den Arbeiten in der Kynaststr.
 #: source_id: IM_018694
+#: XXX außerdem: wahrscheinlich entstehen hier Radspuren, ein Radwegschild hängt schon an der westlichen Seite
 Alt-Stralau: Asphaltierungsarbeiten unter der Brücke	q3::inwork 14652,10201 14558,10264
 # 
 ### Mitte ###
@@ -111,10 +112,10 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10281,12310 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # 
-#: last_checked: 2012-12-22
+#: last_checked: 2013-01-04
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2012-12-22 vvv
+#: last_checked: 2013-01-04 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
@@ -131,6 +132,7 @@ Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 # 
 #: last_checked: 2012-12-28
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
+# 
 ### Köpenick ###
 # 
 #: last_checked: 2012-10-21
@@ -207,7 +209,12 @@ Görlitzer Park: Fußgänger	q2 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12567,10211 12543,10223 12506,10244 12384,10368 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911,10156
-Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12712,10192 12761,10195 12801,10146 12802,10097
+#: last_checked: 2013-01-04
+#: XXX evtl. nach den Bauarbeiten asphaltiert oder zumindest besser gepflastert/gewalzt? Vielleicht wird auch der südliche Halbkreis neu gemacht?
+#: XXX nach den Bauarbeiten den normalen Eintrag wieder aktivieren
+Görlitzer Park, Rondell: Bauarbeiten, Fußgänger	q3::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
+#Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
+Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12516,10202 12543,10223
 Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12611,10299
@@ -562,8 +569,7 @@ Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
 Kaiser-Wilhelm-Platz: einige Fußgänger	q2 7201,8870 7307,8945
 Kernhofer Str.: Fußgänger, Supermarkt	q2 15369,10921 15355,10875
 Ceciliengärten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
-#: XXX_prog: für Anhänger q2
-Sebastianstr.: Absperrung für Autos, mit Anhänger unbequem passierbar	q1 10911,11080 10934,11038
+# REMOVED (mittlerweile sind die Absperrungen großzügiger versetzt) --- #: XXX_prog: für Anhänger q2 --- Sebastianstr.: Absperrung für Autos, mit Anhänger unbequem passierbar	q1 10911,11080 10934,11038
 (Weg am Humboldthain): Radfahren erlaubt, Fußgänger haben Vorrang	q1 9255,15816 9092,15789 8934,15740
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
 (Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1 15349,11911 15301,11876 15327,11724 15328,11636 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
@@ -1902,7 +1908,7 @@ Propststr.: Touristen	q3 10492,12289 10553,12333 10611,12378 10639,12394 10665,1
 Eiergasse: Touristen	q3 10671,12356 10700,12315
 Am Nußbaum: Touristen	q3 10644,12469 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nußbaum): Touristen	q3 10597,12405 10536,12355
-Kleine Gertraudenstr.: Fußgänger	q1 10332,11929 10364,11896 10391,11898
+# REMOVED --- Kleine Gertraudenstr.: Fußgänger	q1 10332,11929 10364,11896 10391,11898
 #: XXX_prog Bordstein nur am westlichen Ende
 #: corrected_by: srt (added Bordstein)
 (Scottweg - Tharauer Allee): Fußgänger, Bordstein	q1 -1403,11279 -1505,11307

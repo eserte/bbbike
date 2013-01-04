@@ -2632,8 +2632,8 @@ EOF
        text  => 'Luckauer Str. (Kreuzberg) in beiden Richtungen zwischen Oranienstr. und Waldemarstr. Baustelle, Straße vollständig gesperrt (bis02.09.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 11150,11030 11109,10943
-userdel	2 11109,10943 11049,10816
+userdel	2 11150,11030 11110,10946
+userdel	2 11110,10946 11049,10816
 EOF
      },
      { from  => 1124742735, # 2005-08-22 22:32
@@ -11447,7 +11447,7 @@ EOF
        text  => 'Kleine Gertraudenstr. - Gertraudenstr.: Bauarbeiten, gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10391,11898 10364,11896
+# REMOVED (Weg gibt es in strassen-orig nicht mehr) --- userdel	2::inwork 10391,11898 10364,11896
 EOF
      },
      { from  => 1210019166, # 2008-05-05 22:26
