@@ -89,7 +89,8 @@ targobank_osm.bbd:	../data_berlin_osm_bbbike/_unhandled
 #	${GREPSTRASSEN} -catrx ':GPS' $(HOME)/.bbbike/personal.bbd | ${MISCSRCDIR}/bbd2gpsman.pl -symbol danger > $(HOME)/.bbbike/personal.wpt
 
 $(HOME)/.bbbike/personal.gpi:	$(HOME)/.bbbike/personal.bbd
-	${GREPSTRASSEN} -v -namerx '^OLD' $> | ${MISCSRCDIR}/bbd2gpx - | gpsbabel -i gpx -o garmin_gpi /dev/stdin $@
+	${GREPSTRASSEN} -v -namerx '^OLD' $> | ${MISCSRCDIR}/bbd2gpx - | gpsbabel -i gpx -o garmin_gpi,alerts=0,category="Personal" /dev/stdin $@~
+	mv $@~ $@
 
 upload-personal: $(HOME)/.bbbike/personal.gpi
 	@echo "Please execute the following as as root:"
