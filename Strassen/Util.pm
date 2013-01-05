@@ -103,8 +103,7 @@ sub strecke_s {
 
 BEGIN {
     if (eval {
-	local $^W = 0; # otherwise there may be 'Name "Geo::Distance::XS::FORMULAS" used only once' warnings with Geo::Distance::XS 0.11
-	require Geo::Distance::XS;
+	require Geo::Distance; # loads Geo::Distance::XS, if available
 	1;
     }) {
 	my $geo = Geo::Distance->new;
