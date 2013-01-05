@@ -616,7 +616,7 @@ sub showmap_url_mapcompare {
 	$common_qs .= "&profile=$profile";
     }
     if ($map_compare_use_bbbike_org) {
-	'http://tile.bbbike.org/mc/?num=2&' . $common_qs;
+	'http://mc.bbbike.org/mc/?num=2&' . $common_qs;
     } else {
 	'http://tools.geofabrik.de/mc/?' . $common_qs;
     }
