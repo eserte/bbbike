@@ -886,7 +886,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12738,2162
 	B 9158,551
 	X 5328,13019
-	X 5185,13078
+	X 5166,13087
 	X 5248,13434
 	X 5368,13406
 	X 5907,16000
@@ -1119,7 +1119,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7764,13236
 	X 9571,13590
 	X 9268,11590
-	X 5622,13115
+	X 5620,13120
 	X 6661,13130
 	X 12045,16574
 	X 12986,23392
@@ -1193,7 +1193,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6817,13862
 	X 6935,13645
 	X 7069,13381
-	X 6817,13333
+	X 6814,13349
 	X 6377,13321
 	X 6141,12682
 	X 6227,13938
@@ -2685,15 +2685,19 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 8631,18441
 	X 10127,19992
 	F 5628,14063
-#: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Under den Linden) vvv
-#: last_checked: 2012-11-25 vvv
+#: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) vvv
 #: next_check: 2013-12-31 vvv
+#: last_checked: 2012-11-25 vvv
 	X::inwork 9123,12500
 	X::inwork 9280,12883
 	X::inwork 9343,12464
 	X::inwork 9475,12365
-#: next_check ^^^
 #: last_checked ^^^
+#: last_checked: 2013-01-05 vvv
+	F::inwork 9063,12051
+	F::inwork 9270,12086
+#: last_checked ^^^
+#: next_check ^^^
 #: XXX ^^^
 # 
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
@@ -2718,11 +2722,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 5628,17631
 	F 7676,18492
 #: by: wosch
-	X 10281,12310
+	X 10285,12306
 #: note: Straßenbahn kreuzt
 	X 15922,14344
-#: last_checked: 2012-10-23
-	F::inwork 9063,12051
 	F 2814,20035
 	F 3216,21431
 	F 9540,15238
@@ -2748,6 +2750,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 20927,3292
 #: by: ^^^
 	X 4937,6205
+	F 6115,13328
+	F 6674,13332
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

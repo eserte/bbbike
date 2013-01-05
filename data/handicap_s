@@ -98,7 +98,7 @@ Tiergarten: Parkweg	q1 7777,12098 7772,12040 7717,11918 7706,11878 7701,11798 76
 Tiergarten: Parkweg, Bordstein	q3 7514,12387 7529,12361
 Tiergarten: Parkweg	q1 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353
 Tiergarten: Parkweg, Bordstein	q3 7603,12353 7627,12380
-(Bremer Weg - Fasanerieallee): Parkweg	q1 6342,11878 6379,11843 6406,11784 6467,11780 6540,11754
+(Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6467,11780 6540,11754
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14310,9692 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Hasenheide: Fuﬂg‰nger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide: Fuﬂg‰nger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
@@ -324,7 +324,7 @@ Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21512,5404 21600,5221 21680,5079 2
 Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Fuﬂg‰nger	q1 21761,4979 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fuﬂg‰nger	q1 21726,4896 21741,4889 21778,4916
-Heinrich-Lassen-Park: Fuﬂg‰nger	q2 6664,8787 6740,8682 6815,8691 6912,8617
+Heinrich-Lassen-Park: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 6664,8787 6705,8730 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7496,14660
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
@@ -445,7 +445,7 @@ Wustermarker Str.: Fuﬂg‰nger, Bordsteine	q2 -4750,14393 -4678,14382
 Firlstr.: zwei Bodenschwellen	q1 18574,6401 18645,6511
 (Florastr. - Schloﬂstr.): Fuﬂg‰nger	q2 5234,6086 5165,6119
 Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
-(Bremer Weg): Fuﬂg‰nger	q1 5900,11913 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
+(Bremer Weg): Fuﬂg‰nger	q1 5900,11913 5923,11873 6296,11890 6337,11887 6384,11926 6550,11954 6642,12010
 (Bremer Weg): Fuﬂg‰nger	q1 6828,12031 6857,11992 7460,12054 7777,12098 7827,12105 8018,12131 8048,12135 8107,12145 8215,12156 8466,12197 8522,12239 8538,12245
 Oberlandgarten: Fuﬂg‰nger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fuﬂg‰nger, Bordsteine	q2 11209,6166 11224,6244
@@ -933,7 +933,6 @@ Elisabeth-Schwarzhaupt-Platz: einige Fuﬂg‰nger	q1 9274,13963 9167,14127
 (Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fuﬂg‰nger	q4 11190,10619 11145,10638
 (Bethanienpark): Fuﬂg‰nger	q1 11799,10848 11776,10860 11752,10878 11668,10916
 (Bethanienpark): Fuﬂg‰nger, Bordstein	q3 11668,10916 11589,10947
-(Hildegard-Knef-Platz - Lotte-Laserstein-Str.): Bordstein	q2 7774,7724 7757,7682
 (Bl¸cherplatz - Johanniterstr.): Fuﬂg‰nger, Bordstein	q2 9702,10129 9816,10119 9837,10117
 Idealpassage: Fuﬂg‰nger, eng, Schrittgeschwindigkeit	q3 12434,8776 12578,8654
 (entlang der Hedwigskathedrale): Fuﬂg‰nger, eine (umfahrbare) Stufe	q2 9808,12182 9775,12178 9771,12190 9747,12205
@@ -954,7 +953,7 @@ Wriezener Park: Fuﬂg‰nger, Bordstein	q3 13261,11572 13270,11581
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13175,11649 13208,11658
 Oranienplatz: einige Fuﬂg‰nger	q1 11264,10804 11227,10821
 Oranienplatz: einige Fuﬂg‰nger	q1 11275,10723 11253,10778 11227,10821
-(Schloﬂplatz, entlang der Rasenfl‰che): Fuﬂg‰nger, Radfahren verboten	q4 10281,12310 10155,12494
+(Schloﬂplatz, entlang der Rasenfl‰che): Fuﬂg‰nger, Radfahren verboten	q4 10285,12306 10155,12494
 Gr¸ner Weg: einige Fuﬂg‰nger	q1 13728,3332 13775,3500
 (Imbuschweg - Anna-Siemsen-Weg): einige Fuﬂg‰nger	q1 14245,2704 14231,2693 14228,2588 14254,2566
 Max-Pallenberg-Pfad: Bordstein	q2 15460,1764 15465,1953
@@ -1098,6 +1097,7 @@ Grimmstr. [ehemaliges Urbankrankenhaus]: Wohngebiet	q2 11072,9711 11040,9724 110
 (Vorfahrt am Bahnhof Friedrichstr.): eng, Taxis, querende Fuﬂg‰nger	q2 9171,12758 9303,12718
 Selkestr.: Fuﬂg‰nger, Bordsteine	q3 12722,7261 12741,7224
 (Schildhornstr. - Treitschkestr./Hackerstr.): einige Fuﬂg‰nger	q1 4937,6205 4997,6331 5015,6363 4999,6397
+Eyke-von-Repkow-Platz: einige Fuﬂg‰nger, Bordsteine	q3 5556,12536 5531,12501
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1131,7 +1131,7 @@ Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2712,3602
 Rampen	q3 1610,13380 1551,13377
 (Krankenhausgel‰nde): eher schmaler Gehweg	q1 2688,12701 2555,12686
 (Schloﬂpark Charlottenburg, westlicher Weg): Fuﬂg‰nger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2717,12463
-(Uferweg): teilweise relativ schmal, Fuﬂg‰nger	q1 5185,13078 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
+(Uferweg): teilweise relativ schmal, Fuﬂg‰nger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
 Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fuﬂweg und Parkplatz	q2 11107,17340 10892,17330
 (Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3886,13120

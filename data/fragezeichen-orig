@@ -84,7 +84,7 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2012-12-21
+#: last_checked: 2013-01-05
 #: next_check: 2013-06-01
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -198,8 +198,9 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 #: last_checked: 2013-01-04
 #: next_check: 2013-09-01
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
-#: next_check: 2013-06-01
-Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6112,13327 6228,13324 6377,13321 6694,13327 6817,13333 6925,13352 7069,13381
+#: last_checked: 2013-01-05
+#: next_check: 2013-04-01
+Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321
 #: next_check: 2013-06-01
 Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837
 #: next_check: 2013-06-01
@@ -335,8 +336,8 @@ Am Dominikusteich: Qualität? Straße bereits fertiggestellt?	?::inwork 2760,23964
 #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16457,16204 16448,16102 16485,15979 16543,15892
  
-#: last_checked: 2012-11-05
-#: next_check: 2013-03-01 (unwahrscheinlich, dass früher was passiert)
+#: last_checked: 2013-01-05
+#: next_check: 2013-04-01
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
 #: XXX Baumaßnahme 1.16 (Realisierung nach 2011)
@@ -364,7 +365,7 @@ Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
-#: last_checked: 2012-12-14 vvv
+#: last_checked: 2013-01-05 vvv
 #: next_check: 2013-06-01
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 #: last_checked ^^^
@@ -644,7 +645,7 @@ Mangerstr. (Potsdam): Bauarbeiten bis November 2011, danach vielleicht etwas bes
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
-#: last_checked: 2012-11-05 vvv
+#: last_checked: 2013-01-05 vvv
 #: next_check: 2013-06-01 vvv
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
@@ -797,7 +798,8 @@ Alter Wiesenweg: Qualität? Ausgeschildert?	? 1739,15958 1581,15919
 Charles-Tellier-Platz: genaue Lage? Qualität? Anbindung an umliegende Wege?	X -14637,462 -14574,431 -14559,465 -14625,474
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5192&options=4 (BVV-Beschluss)
-#: next_check: 2012-12-29
+#: last_checked: 2013-01-05
+#: next_check: 2013-04-05
 Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,9856 9820,9718 9790,9528
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121129.1435.378795.html vvv
@@ -822,7 +824,8 @@ Hosemannstr. [Anliegerstraße zur Mandelstr.]: Qualität? Wird hier eine Einbahnst
 Alte Hellersdorfer Str.: wird hier ein Zebrastreifen entstehen	? 23079,15855 23134,15883
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4550&options=4 vvv
-#: last_checked: 2012-11-03
+#: last_checked: 2013-01-05 (keine Bauarbeiten zu erkennen)
+#: next_check: 2013-05-15
 Uhlandstr./Ludwigkirchstr.: Planung eines Zebrastreifens für 2012	?::projected 5024,10153
 #: next_check: 2013-03-01
 Sömmeringstraße/Quedlinburger Straße: Planung eines Zebrastreifens für 2013	?::projected 3714,12949
@@ -850,9 +853,6 @@ Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtl
 #: XXX VMZ-Eintrag: Malchower Weg (Hohenschönhausen): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 05/13) Richtung Rhinstr. zwischen Hansastr. und Wartenberger Str., 05.11.2012 09:00 Uhr bis 31.05.2013 16:00 Uhr
 #: source_id: INKO_111447
 Malchower Str.: wo sind hier die Bauarbeiten? Behinderungen für Radfahrer?	?::inwork 17425,16165 17383,16197 17271,16280 17220,16320 17170,16365 17102,16464 17059,16560 17017,16716 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16951,17055 16934,17132 16918,17204 16914,17224 16902,17278 16887,17349 16837,17440
-# 
-#: XXX auf der südlichen Straßenseite gibt es eine neue (?) Baustelle, dort auf jeden Fall keine Radstreifen
-Kantstr.: gibt es Radspuren am Zoofenster?	? 5652,11004 5613,10963 5488,10978
 # 
 Geißenweide - Blenheimstr.: gibt es für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
 westlicher Wuhlewanderweg: Qualität? Nachts beleuchtet? Ausschilderung?	? 22124,13606 22362,13865 22415,14151 22679,14450 22552,14777 22460,14820 22382,14908 22343,15115

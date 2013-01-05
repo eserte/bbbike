@@ -162,7 +162,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15231,13375
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18005,6681 18077,6690 18125,6694 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18080,6670 18008,6672 17962,6674
-Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5590,11118 5542,11075
+Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11075
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8340,3242 8327,2975
 Dederingstr.	1 8457,2965 8476,3367
@@ -2207,7 +2207,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: next_check: 2013-03-15
 Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 # 
-#: last_checked: 2012-12-27
+#: last_checked: 2013-01-05
 #: next_check: 2013-05-01
 #: XXX nach den Bauarbeiten gibt es wahrscheinlich keine Fahrbahn mehr --- wird man durch den Fußgängerbereich gut durchfahren können?
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
@@ -2239,7 +2239,7 @@ Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; e
 #: next_check: 2013-02-01
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 # 
-#: last_checked: 2012-11-12
+#: last_checked: 2013-01-05
 #: next_check: 2013-03-01
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
@@ -2256,8 +2256,8 @@ Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 
 #: next_check: 2013-06-01
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 
-#: last_checked: 2012-11-05
-#: next_check: 2013-03-15
+#: last_checked: 2013-01-05
+#: next_check: 2013-03-30
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch handicap in der Voßstr.
 #: XXX laut INKO_113363 bis Ende März 2013 gesperrt
@@ -2272,7 +2272,7 @@ Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8376,8859 84
 #: next_check: 2013-01-01
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2012-11-05
+#: last_checked: 2013-01-05
 #: next_check: 2013-03-01
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
@@ -2296,7 +2296,8 @@ Radweg Herzberge: wegen Bauarbeiten gesperrt (ab 2012-02-20)	2:inwork 17167,1365
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html
 #: XXX Sanierungstermin steht noch nicht fest
-#: next_check: 2012-04-01
+#: last_checked: 2013-01-05
+#: next_check: 2013-10-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
 #: XXX wo gibt es Informationen hierzu?
@@ -2390,15 +2391,12 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel)
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14795,10473 14805,10518
 # 
-#: last_checked: 2011-04-30
-#: next_check: 2012-03-01
+#: last_checked: 2013-01-05
+#: next_check: 2013-11-01
 Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
 # 
-#: last_checked: 2012-08-03
-#: next_check: 2012-09-10
-Queralleebrücke: wegen Bauarbeiten gesperrt, voraussichtlich bis September 2012	2:inwork 7621,11620 7649,11717
-# 
-#REMOVED --- #: by: tobias wirnsberger, Matthias Stief --- #: last_checked: 2011-08-24 (srt, von der Bahn aus) --- #: next_check: 2011-12-01 --- Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
+# REMOVED --- #: last_checked: 2012-08-03 --- #: next_check: 2012-09-10 --- Queralleebrücke: wegen Bauarbeiten gesperrt, voraussichtlich bis September 2012	2:inwork 7621,11620 7649,11717
+# REMOVED --- #: by: tobias wirnsberger, Matthias Stief --- #: last_checked: 2011-08-24 (srt, von der Bahn aus) --- #: next_check: 2011-12-01 --- Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
