@@ -695,11 +695,13 @@ sub handle_railway_like {
 	print $wayfh qq{  <nd ref="$node_id"/>\n};
     }
     print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
-    print $wayfh qq{  <tag k="railway" v="$railway_cat" />\n};
     if ($is_abandoned) {
-	print $wayfh qq{  <tag k="abandoned" v="yes" />\n};
+	print $wayfh qq{  <tag k="railway" v="abandoned" />\n};
     } elsif ($is_construction) {
-	print $wayfh qq{  <tag k="construction" v="yes" />\n};
+	print $wayfh qq{  <tag k="railway" v="construction" />\n};
+	print $wayfh qq{  <tag k="construction" v="$railway_cat" />\n};
+    } else {
+	print $wayfh qq{  <tag k="railway" v="$railway_cat" />\n};
     }
     if ($tunnel) {
 	print $wayfh qq{  <tag k="tunnel" v="yes" />\n};
