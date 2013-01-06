@@ -22,8 +22,12 @@ my $bbbike_rootdir = "/home/e/eserte/src/bbbike"; # cannot use $FindBin::RealBin
 my $berlin_osm_bz2 = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
 
 my $show_unchanged;
-GetOptions("show-unchanged" => \$show_unchanged)
-    or die "usage?";
+my $quiet;
+GetOptions(
+	   "show-unchanged" => \$show_unchanged,
+	   "q|quiet" => \$quiet,
+	  )
+    or die "usage: $0 [-show-unchanged] [-q|-quiet]";
 
 if (! -e $berlin_osm_bz2) {
     die "FATAL: $berlin_osm_bz2 is missing, please download!";
@@ -31,7 +35,9 @@ if (! -e $berlin_osm_bz2) {
 if (-M $berlin_osm_bz2 >= 7) {
     warn "WARN: $berlin_osm_bz2 is older than a week (" . sprintf ("%1.f", -M $berlin_osm_bz2) . " days), consider to update...\n";
 } else {
-    warn "INFO: Age of $berlin_osm_bz2: " . sprintf("%.1f", -M $berlin_osm_bz2) . " days\n";
+    if (!$quiet) {
+	warn "INFO: Age of $berlin_osm_bz2: " . sprintf("%.1f", -M $berlin_osm_bz2) . " days\n";
+    }
 }
 
 my @osm_watch_list_data;
@@ -55,7 +61,9 @@ my $changed_count = 0;
 {
     my $rx = '(' . join("|", map { qq{<$_->{type} id="$_->{id}"} } @osm_watch_list_data) . ')';
     my @grep_cml = ('bzegrep', '--', $rx, $berlin_osm_bz2);
-    warn "INFO: Running '@grep_cml'...\n";
+    if (!$quiet) {
+	warn "INFO: Running '@grep_cml'...\n";
+    }
     open my $fh, '-|', @grep_cml
 	or die "FATAL: $!";
     while(<$fh>) {
