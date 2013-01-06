@@ -267,6 +267,8 @@ power=line [0x29 resolution 21]
 # SRT: change: rendering also for layer<0
 railway=* & abandoned=yes [0x3e resolution 17]
 railway=* & construction=yes [0x3e resolution 17]
+# SRT: added railway=construction
+railway=construction [0x3e resolution 17]
 railway=abandoned [0x3e resolution 17]
 #railway=abandoned [0x0a road_class=0 road_speed=1 resolution 21]
 railway=light_rail [0x2d resolution 17]
