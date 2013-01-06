@@ -1012,8 +1012,17 @@ for my $osm_file (@osm_files) {
 		    push @or, ["rbahn", "R0".$addcat];
 		    resolve_node_now('railway', 'rbahnhof', "R0", \@nodes);
 		} elsif ($railway_cat =~ CONSTRUCTION_RX) { # ignoring PROJECTED_RX
-		    push @or, ["rbahn", "RBau".$addcat];
-		    resolve_node_now('railway', 'rbahnhof', "RBau", \@nodes);
+		    my $construction = $tag{'construction'} || '';
+		    if ($construction eq 'subway') {
+			push @or, ["ubahn", "UBau".$addcat];
+			resolve_node_now('railway', 'ubahnhof', "UBau", \@nodes);
+		    } elsif ($construction eq 'light_rail') {
+			push @or, ["sbahn", "SBau".$addcat];
+			resolve_node_now('railway', 'sbahnhof', "SBau", \@nodes);
+		    } else {
+			push @or, ["rbahn", "RBau".$addcat];
+			resolve_node_now('railway', 'rbahnhof', "RBau", \@nodes);
+		    }
 		} elsif ($railway_cat =~ m{^(?:narrow_gauge)$}) { # z.B. Parkeisenbahnen
 		    push @or, ["rbahn", "RP".$addcat];
 		    resolve_node_now('railway', 'rbahnhof', "RP", \@nodes);
