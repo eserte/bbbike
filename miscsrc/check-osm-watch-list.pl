@@ -59,7 +59,14 @@ my %id_to_record;
 my %consumed;
 my $changed_count = 0;
 {
-    my $rx = '(' . join("|", map { qq{<$_->{type} id="$_->{id}"} } @osm_watch_list_data) . ')';
+    my %by_type_rx;
+    for my $type (qw(node way)) {
+	my @filtered_data = grep { $_->{type} eq $type } @osm_watch_list_data;
+	if (@filtered_data) {
+	    $by_type_rx{$type} = qq{<$type id="} . '(' . join("|", map { $_->{id} } @osm_watch_list_data) . ')' . qq{"};
+	}
+    }
+    my $rx = '(' . join("|", values %by_type_rx) . ')';
     my @grep_cml = ('bzegrep', '--', $rx, $berlin_osm_bz2);
     if (!$quiet) {
 	warn "INFO: Running '@grep_cml'...\n";
