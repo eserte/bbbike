@@ -883,7 +883,6 @@ sub _fill_exif_viewer {
 	     'File Size',
 	    );
     };
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@exif_lines, \%exif_key_priority],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
     @exif_lines = sort { ($exif_key_priority{$a->[0]}||9_999_999) <=> ($exif_key_priority{$b->[0]}||9_999_999) } @exif_lines;     
 
