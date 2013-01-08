@@ -173,9 +173,17 @@ sub get_image_location {
 
     my($y,$m,$d,$H,$M,$S);
 
+    my($camera_make, $camera_model, $camera_make_model);
+
     if (defined &ImageInfo) {
 	my $exif = ImageInfo($file);
 	if ($exif) {
+
+	    $camera_make = $exif->{Make};
+	    $camera_model = $exif->{Model};
+	    if ($camera_make && $camera_model) {
+		$camera_make_model = "$camera_make $camera_model";
+	    }
 
 	    # Prefer GPS position recorded in EXIF:
 	    my($lat_deg, $lat_min, $lat_sec, $lat_ref, $lon_deg, $lon_min, $lon_sec, $lon_ref);
@@ -279,8 +287,8 @@ sub get_image_location {
     }
 
     my $epoch = timelocal($S,$M,$H,$d,$m-1,$y-1900);
-    return if check_ignore($epoch);
-    my $this_cam_delta = get_matching_cam_delta($epoch) || $cam_delta;
+    return if check_ignore($epoch, $camera_make_model);
+    my $this_cam_delta = get_matching_cam_delta($epoch, $camera_make_model) || $cam_delta;
     $epoch -= $this_cam_delta;
     my @l = localtime $epoch;
     ($S,$M,$H,$d,$m,$y) = @l;
@@ -687,24 +695,36 @@ sub get_cam_delta {
 }
 
 sub get_matching_cam_delta {
-    my($epoch) = @_;
+    my($epoch, $camera_make_model) = @_;
     for my $def (@cam_delta_mapping) {
-	my($from_epoch, $to_epoch, $this_cam_delta) = @$def;
+	my($from_epoch, $to_epoch, $this_cam_delta, %add_opt) = @$def;
+	if ($camera_make_model && $add_opt{valid_for_camera} && $camera_make_model ne $add_opt{valid_for_camera}) {
+	    next;
+	}
 	if ($from_epoch <= $epoch && $epoch <= $to_epoch) {
 	    warn "Get cam delta=$this_cam_delta for $epoch...\n" if $debug;
 	    return $this_cam_delta;
 	}
     }
-    warn "Found NO matching cam delta for $epoch...\n" if $debug;
+    if ($debug) {
+	no warnings;
+	warn "Found NO matching cam delta for $epoch and camera=$camera_make_model...\n";
+    }
     undef;
 }
 
 sub check_ignore {
-    my($epoch) = @_;
+    my($epoch, $camera_make_model) = @_;
     for my $def (@ignore_mapping) {
-	my($from_epoch, $to_epoch, $reason) = @$def;
+	my($from_epoch, $to_epoch, $reason, %add_opt) = @$def;
+	if ($camera_make_model && $add_opt{valid_for_camera} && $camera_make_model ne $add_opt{valid_for_camera}) {
+	    next;
+	}
 	if ($from_epoch <= $epoch && $epoch <= $to_epoch) {
-	    warn "Ignore $epoch because of '$reason' ($from_epoch..$to_epoch)\n" if $debug;
+	    if ($debug) {
+		no warnings;
+		warn "Ignore $epoch because of '$reason' ($from_epoch..$to_epoch, camera=$camera_make_model\n";
+	    }
 	    return 1;
 	}
     }
@@ -717,8 +737,16 @@ sub parse_clock_adjust_file ($) {
     my $clock_adjust_file = shift;
     open my $fh, $clock_adjust_file
 	or die "Can't open file $clock_adjust_file: $!";
+    my %add_opts;
     while(<$fh>) {
 	chomp;
+	if (m{^\s*#:\s*camera:?\s*(.*)}) {
+	    $add_opts{valid_for_camera} = $1;
+	    if ($add_opts{valid_for_camera} =~ m{^\s*$}) {
+		delete $add_opts{valid_for_camera};
+	    }
+	    next;
+	}
 	next if m{^\s*\#};
 	next if m{^\s*$};
 	my(@fields) = split /\s+/, $_, 4;
@@ -749,7 +777,7 @@ EOF
 	    }
 	    # Ignore:
 	    my($from, $to, undef, $reason) = @fields;
-	    push @ignore_mapping, [_isodate_to_epoch($from), _isodate_to_epoch($to), $reason];
+	    push @ignore_mapping, [_isodate_to_epoch($from), _isodate_to_epoch($to), $reason, %add_opts];
 	} else {
 	    my($from, $to, $gps, $camera);
 	    if (@fields == 3) {
@@ -761,8 +789,14 @@ EOF
 	    }
 	    my $from_epoch = _isodate_to_epoch $from;
 	    my $to_epoch   = _isodate_to_epoch $to;
-	    push @cam_delta_mapping, [$from_epoch, $to_epoch, get_cam_delta($gps, $camera)];
+	    push @cam_delta_mapping, [$from_epoch, $to_epoch, get_cam_delta($gps, $camera), %add_opts];
 	}
+    }
+
+    if ($debug) {
+	require Data::Dumper;
+	print STDERR "After parsing '$clock_adjust_file':\n";
+	print STDERR Data::Dumper->new([\@cam_delta_mapping, \@ignore_mapping],[qw(cam_delta_mapping ignore_mapping)])->Indent(1)->Useqq(1)->Dump;
     }
 }
 
@@ -835,6 +869,25 @@ completely. Just put lines in the form
    ISO_date_time_from	ISO_date_time_to	Ignore:	some text explaining the reason
 
 with the string "Ignore:" in the third field.
+
+=head2 Multiple cameras in one clockadjustfile
+
+The C<-clockadjustfile> file can also be used to manage multiple
+cameras. Use a directive in the following format (but without the
+"E<lt>" and "E<gt>"):
+
+   #: camera: <Make> <Camera Model Name>
+
+to signal that all following lines are valid only for the mentioned
+camera. E<lt>MakeE<gt> and E<lt>Camera Model NameE<gt> are EXIF
+fields. An example:
+
+   #: camera: Nokia N95
+
+To remove a camera restriction for following lines, use the empty
+camera directive:
+
+   #: camera:
 
 =head1 EXAMPLES
 
