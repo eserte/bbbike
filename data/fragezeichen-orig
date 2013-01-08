@@ -45,8 +45,8 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 # 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2012-12-28
-#: next_check: 2013-02-01
+#: last_checked: 2013-01-07
+#: next_check: 2013-03-01
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -862,6 +862,7 @@ Upstallweg - Richterstr.: existiert für Radfahrer eine Verbindung? Qualität?	? 9
 Bruno-Taut-Str. - Am Gartenstadtweg: existiert für Radfahrer eine Verbindung? Ausschilderung? Qualität? Nachts beleuchtet?	? 21783,668 21679,596
 Mauerweg - Schirpitzer Weg: existiert für Radfahrer eine Verbindung? Ausschilderung? Qualität? Nachts beleuchtet?	? 18608,232 18232,745
 S-Bhf. Hermsdorf, Unterführung am Fellbacher Platz: existiert für Radfahrer eine Verbindung? Qualität?	? 3750,23363 3593,23297
+S-Bhf. Waidmannslust, Unterführung zwischen Nimrodstr. und Am Waidmannslust: existiert für Radfahrer eine Verbindung? Qualität?	? 4581,22106 4601,22067 4660,22101 4687,22056 4744,22065
 Niederneuendorfer Allee - Pappelweg: Qualität des Waldweges?	? -2827,18639 -3058,18358
 Armenische Str. - Aroser Allee: existiert für Radfahrer eine Verbindung? Ausschilderung? Qualität? Nachts beleuchtet?	? 7147,16791 6994,16983 6952,17082
 Sendener Str. - Bernauer Str.: Qualität des Waldweges?	? 964,18321 915,18352 625,18518 560,18494
@@ -3181,7 +3182,7 @@ Sternliebweg: Qualität? Wo liegt die Straße genau?	?::inwork 16152,3562 16219,36
 Silberdistelweg: Qualität? Wo liegt die Straße genau?	?::inwork 16205,3529 16263,3627
 Zwergasternweg: Qualität?	?::inwork 16254,3489 16321,3583
 #: XXX ^^^
-#: XXX_indoor str_cont_ausnahme-Eintrag wird notwendig sein
+#: XXX str_cont_ausnahme-Eintrag wird notwendig sein
 #: XXX hier auch Privatstraße?
 Trollblumenweg: wird verlängert, Qualität der Verlängerung?	?::inwork 16028,3726 16051,3759 16104,3717
 #: next_check ^^^

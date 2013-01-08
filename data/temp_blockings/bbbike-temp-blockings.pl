@@ -20975,4 +20975,13 @@ EOF
 	2::night 12773,12683 13046,12956
 EOF
      },
+     { from  => undef, # 
+       until => 1358549999, # 2013-01-18 23:59
+       text  => 'Schloßplatz: Weg an der ehemaligen Grünfläche für einige Tage gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.tagesspiegel.de/berlin/gruenflaeche-muss-dem-schloss-weichen-ab-heute-verschwindet-der-rasen-am-schlossplatz-/7593590.html
+userdel	2::inwork 10155,12494 10285,12306
+EOF
+     },
     );
