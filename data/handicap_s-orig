@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2013-01-05
+#: last_checked: 2013-01-09
 #: next_check: 2013-05-17
 #: source_id: INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-01-07 vvv
+#: last_checked: 2013-01-11 vvv
 #: next_check: 2013-03-15 vvv
 #: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -120,7 +120,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
 # 
-#: last_checked: 2012-12-28 vvv
+#: last_checked: 2013-01-08 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -130,7 +130,7 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 #: next_check: 2012-12-15
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 # 
-#: last_checked: 2012-12-28
+#: last_checked: 2013-01-09
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
 # 
 ### Köpenick ###
@@ -655,7 +655,7 @@ Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 (Ernst-Heilmann-Steg): Fußgänger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX später vielleicht wieder "Fußgänger, q1", und evtl. nur den Brückenabschnitt so markieren
-#: last_checked: 2012-12-28
+#: last_checked: 2013-01-08
 #: next_check: 2013-06-01
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: XXX siehe auch Eintrag zum Spreeufer in gesperrt-orig
@@ -1739,10 +1739,12 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Karl-Marx-Allee - Berolinastr.): Fußgänger	q1 11419,12944 11367,12940
 (Karl-Marx-Allee - Berolinastr.): Fußgänger	q1 11600,12857 11589,12768
 (Berolinastr.): Fußgänger	q1 11844,12926 11885,12905 11952,12871
+(Berolinastr.): Fußgänger	q1 11885,12905 11906,12947 11921,12990
 #: XXX_prog BS (am östlichen Ende)
-(Berlolinastr.): Fußgänger	q1 11885,12905 11906,12947 11921,12990 11983,12949
+(Berolinastr.): Fußgänger, Bordstein	q2 11921,12990 11983,12949
 (Berolinastr.): Fußgänger	q1 11921,12990 11865,13027
-(Berolinastr.): Fußgänger	q1 11815,13045 11719,13088
+#: XXX_prog BS (am westlichen Ende)
+(Berolinastr.): Fußgänger, Bordstein	q2 11815,13045 11719,13088
 (Berolinastr.): Weg am Spielplatz vorbei	q2 11865,13027 11815,13045
 (Berolinastr. - Mollstr.): Fußgänger	q1 11865,13027 11874,13048 11905,13069
 (Berolinastr. - Mollstr.): Fußgänger	q1 11608,12985 11681,13161

@@ -20236,8 +20236,8 @@ EOF
        text  => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-11-14
-#: note: etwa 50 Meter an der Schönhauser Alee gesperrt
+#: last_checked: 2013-01-08
+#: note: etwa 80 Meter an der Knaackstr. gesperrt
 userdel	q3::inwork 10893,14705 11101,14768
 EOF
      },
@@ -20664,24 +20664,20 @@ userdel	2::inwork -3736,2849 -3648,2881
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1357672004, # undef, # XXX
        text  => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html?date=20121116
-#: last_checked: 2012-11-14
-#: next_check: 2012-12-31
 userdel	q4::inwork 10870,14689 10723,14772
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1357672029, # undef, # XXX
        text  => 'Choriner Str.: Einbahnstraße in Höhe Oderberger Str., Richtung Schönhauser Allee gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html?date=20121116
-#: last_checked: 2012-11-14
-#: next_check: 2012-12-31
 userdel	q4::inwork; 10870,14689 10893,14705
 EOF
      },
@@ -20823,7 +20819,7 @@ userdel	q4::inwork; 13339,7452 13303,7622
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1357672098, # undef, # XXX
        text  => 'Sredzkistr.: Kreuzungsbereich in Höhe Hosemannstr. gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,

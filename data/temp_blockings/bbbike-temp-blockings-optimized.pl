@@ -1179,8 +1179,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
          'text' => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2337,
-         'data' => '#: last_checked: 2012-11-14
-#: note: etwa 50 Meter an der Schönhauser Alee gesperrt
+         'data' => '#: last_checked: 2013-01-08
+#: note: etwa 80 Meter an der Knaackstr. gesperrt
 userdel	q3::inwork 10893,14705 11101,14768
 ',
          'type' => 'handicap'
@@ -1305,30 +1305,8 @@ userdel	q4::inwork 9112,14771 9250,14658
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Oderberger Str.: Fahrbahn zwischen Kastanienallee und Choriner Str. wegen Bauarbeiten gesperrt',
-         'from' => undef,
-         'id' => 2383,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html?date=20121116
-#: last_checked: 2012-11-14
-#: next_check: 2012-12-31
-userdel	q4::inwork 10870,14689 10723,14772
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => undef,
-         'text' => 'Choriner Str.: Einbahnstraße in Höhe Oderberger Str., Richtung Schönhauser Allee gesperrt',
-         'from' => undef,
-         'id' => 2384,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/oderberger_strasse.html?date=20121116
-#: last_checked: 2012-11-14
-#: next_check: 2012-12-31
-userdel	q4::inwork; 10870,14689 10893,14705
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1378,20 +1356,7 @@ userdel	q4::inwork; 13339,7452 13303,7622
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Sredzkistr.: Kreuzungsbereich in Höhe Hosemannstr. gesperrt, Ausweichen auf Gehweg',
-         'from' => undef,
-         'id' => 2399,
-         'data' => '#: last_checked: 2012-11-14 vvv
-#: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
-userdel	q2::inwork 11436,14741 11271,14755
-userdel	q3::inwork 11271,14755 11187,14763
-#: XXX ^^^
-#: last_checked ^^^
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
          'recurring' => 1,
