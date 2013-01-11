@@ -939,7 +939,7 @@ EOF
     // map.addMapType(tah_map);
 
     var tilelayers_cycle = new Array();
-    tilelayers_cycle[0] = new GTileLayer(copyrightCollection, 0, 16);
+    tilelayers_cycle[0] = new GTileLayer(copyrightCollection, 0, 18);
     tilelayers_cycle[0].getTileUrl = GetTileUrl_cycle;
     tilelayers_cycle[0].isPng = function () { return true; };
     tilelayers_cycle[0].getOpacity = function () { return 1.0; };
@@ -956,7 +956,7 @@ EOF
     bbbikeCopyrightCollection.addCopyright(bbbikeCopyright);
 
     var tilelayers_bbbikeorg = new Array();
-    tilelayers_bbbikeorg[0] = new GTileLayer(bbbikeCopyrightCollection, 0, 16);
+    tilelayers_bbbikeorg[0] = new GTileLayer(bbbikeCopyrightCollection, 0, 18);
     tilelayers_bbbikeorg[0].getTileUrl = GetTileUrl_bbbikeorg;
     tilelayers_bbbikeorg[0].isPng = function () { return true; };
     tilelayers_bbbikeorg[0].getOpacity = function () { return 1.0; };
