@@ -5,16 +5,16 @@
 ; IF YOU USE THIS FILE AS SOURCE FOR cGPSmapper, IT WILL ALMOST CERTAINLY NOT PRODUCE WHAT YOU WANT.
 ; 
 ; IF YOU WANT JUST TO CHANGE SOMETHING, USE TYP EDITOR AT http://ati.land.cz/gps/typedit
-; Original TYP was created 13.11.2012 at 00:19:18, probably with Garmin MPC
+; Original TYP was created 13.1.2013 at 21:17:20, probably with Garmin MPC
 ; Text codepage=1252
 ; Version=1
 
 ; Header length: 0x005b bytes, header format: OLD
 ; Header dump:
-;  draworder:                                        info@0x0072d0-0x0073ec (elem_size=5, #elements=57)
-;    polygon: data@0x00005b-0x000f9e (len=0x000f44), info@0x000f9f-0x00101a (elem_size=4, #elements=31)
-;      point: data@0x001ac0-0x0071fb (len=0x00573c), info@0x0071fc-0x0072cf (elem_size=4, #elements=53)
-;       line: data@0x00101b-0x001a0f (len=0x0009f5), info@0x001a10-0x001abf (elem_size=4, #elements=44)
+;  draworder:                                        info@0x0072ec-0x007412 (elem_size=5, #elements=59)
+;    polygon: data@0x00005b-0x000fb6 (len=0x000f5c), info@0x000fb7-0x001036 (elem_size=4, #elements=32)
+;      point: data@0x001adc-0x007217 (len=0x00573c), info@0x007218-0x0072eb (elem_size=4, #elements=53)
+;       line: data@0x001037-0x001a2b (len=0x0009f5), info@0x001a2c-0x001adb (elem_size=4, #elements=44)
 ;   NT1point: data@0x000000-0x000000 (len=0x000000), info@0x000000-0x000000 (elem_size=0, #elements=0)
 
 [_id]
@@ -77,6 +77,7 @@ Type=0x46,4
 Type=0x47,4
 Type=0x48,4
 Type=0x49,4
+Type=0x10200,5
 [end]
 
 ; --------------------------------------------------------------------------
@@ -1238,12 +1239,28 @@ XPM="32 32 2 2",
 String1=0x02,Moor
 [end]
 
+[_polygon]
+; Originally @(0x00005b+0x000f44)=0x000f9f
+; Drawing order: 5
+Type=0x102
+SubType=0x00
+XPM="0 0 2 2",
+"XX  c #c7f1a3",
+"==  c #003800",
+String1=0x00,island
+String2=0x02,Insel
+; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+; additional block with colors:
+; 00000000  02                                                 .
+; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[end]
+
 
 ; --------------------------------------------------------------------------
 ; start of line collection
 ; --------------------------------------------------------------------------
 [_line]
-; Originally @(0x00101b+0x000000)=0x00101b
+; Originally @(0x001037+0x000000)=0x001037
 Type=0x001
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1256,7 +1273,7 @@ String2=0x00,motorway
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00001f)=0x00103a
+; Originally @(0x001037+0x00001f)=0x001056
 Type=0x002
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1269,7 +1286,7 @@ String2=0x00,trunk
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000040)=0x00105b
+; Originally @(0x001037+0x000040)=0x001077
 Type=0x003
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1282,7 +1299,7 @@ String2=0x00,primary
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00006e)=0x001089
+; Originally @(0x001037+0x00006e)=0x0010a5
 Type=0x004
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1295,7 +1312,7 @@ String2=0x00,secondary
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000091)=0x0010ac
+; Originally @(0x001037+0x000091)=0x0010c8
 Type=0x005
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1308,7 +1325,7 @@ String2=0x00,tertiary
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0000be)=0x0010d9
+; Originally @(0x001037+0x0000be)=0x0010f5
 Type=0x006
 UseOrientation=Y
 XPM="0 0 2 2",
@@ -1321,7 +1338,7 @@ String2=0x00,residential
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0000e2)=0x0010fd
+; Originally @(0x001037+0x0000e2)=0x001119
 Type=0x007
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1332,7 +1349,7 @@ String1=0x02,Service
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0000f5)=0x001110
+; Originally @(0x001037+0x0000f5)=0x00112c
 Type=0x00a
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1343,7 +1360,7 @@ String1=0x02,Track
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000106)=0x001121
+; Originally @(0x001037+0x000106)=0x00113d
 Type=0x00f
 UseOrientation=Y
 XPM="32 3 4 2",
@@ -1360,7 +1377,7 @@ String2=0x02,Radweg (nicht straßenbegleitend)
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00014f)=0x00116a
+; Originally @(0x001037+0x00014f)=0x001186
 Type=0x010
 UseOrientation=Y
 XPM="32 3 2 2",
@@ -1379,7 +1396,7 @@ String2=0x02,In Bau
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000187)=0x0011a2
+; Originally @(0x001037+0x000187)=0x0011be
 Type=0x013
 UseOrientation=Y
 XPM="32 6 2 2",
@@ -1397,7 +1414,7 @@ String2=0x00,steep track or steps
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0001d7)=0x0011f2
+; Originally @(0x001037+0x0001d7)=0x00120e
 Type=0x014
 UseOrientation=N
 XPM="32 4 2 2",
@@ -1413,7 +1430,7 @@ String2=0x00,railroad
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000206)=0x001221
+; Originally @(0x001037+0x000206)=0x00123d
 Type=0x016
 UseOrientation=N
 XPM="32 3 4 2",
@@ -1430,7 +1447,7 @@ String2=0x00,path
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00022f)=0x00124a
+; Originally @(0x001037+0x00022f)=0x001266
 Type=0x018
 UseOrientation=N
 XPM="0 0 1 2",
@@ -1441,7 +1458,7 @@ String2=0x00,thin stream
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000249)=0x001264
+; Originally @(0x001037+0x000249)=0x001280
 Type=0x01a
 UseOrientation=N
 XPM="32 5 2 2",
@@ -1458,7 +1475,7 @@ String2=0x00,ferry
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000274)=0x00128f
+; Originally @(0x001037+0x000274)=0x0012ab
 Type=0x01c
 UseOrientation=N
 XPM="32 1 2 2",
@@ -1471,7 +1488,7 @@ String2=0x00,border
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00028e)=0x0012a9
+; Originally @(0x001037+0x00028e)=0x0012c5
 Type=0x01d
 UseOrientation=N
 XPM="32 1 2 2",
@@ -1483,7 +1500,7 @@ String1=0x02,Landesgrenze
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0002a6)=0x0012c1
+; Originally @(0x001037+0x0002a6)=0x0012dd
 Type=0x01e
 UseOrientation=N
 XPM="32 2 2 2",
@@ -1497,7 +1514,7 @@ String2=0x00,international border
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0002d8)=0x0012f3
+; Originally @(0x001037+0x0002d8)=0x00130f
 Type=0x01f
 UseOrientation=N
 XPM="0 0 1 2",
@@ -1507,7 +1524,7 @@ String1=0x02,Fluß
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0002e5)=0x001300
+; Originally @(0x001037+0x0002e5)=0x00131c
 Type=0x021
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1519,7 +1536,7 @@ String1=0x02,Höhenline
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0002fb)=0x001316
+; Originally @(0x001037+0x0002fb)=0x001332
 Type=0x027
 UseOrientation=N
 XPM="0 0 2 2",
@@ -1531,7 +1548,7 @@ String1=0x02,Aeroway-Runway
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000316)=0x001331
+; Originally @(0x001037+0x000316)=0x00134d
 Type=0x029
 UseOrientation=N
 XPM="32 5 2 2",
@@ -1548,7 +1565,7 @@ String2=0x00,power line
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00034d)=0x001368
+; Originally @(0x001037+0x00034d)=0x001384
 Type=0x02c
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1572,7 +1589,7 @@ String2=0x00,FIXME
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000382)=0x00139d
+; Originally @(0x001037+0x000382)=0x0013b9
 Type=0x02d
 UseOrientation=Y
 XPM="32 4 2 2",
@@ -1588,7 +1605,7 @@ String2=0x00,light rail (S-Bahn)
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0003b8)=0x0013d3
+; Originally @(0x001037+0x0003b8)=0x0013ef
 Type=0x02e
 UseOrientation=Y
 XPM="32 2 2 2",
@@ -1602,7 +1619,7 @@ String2=0x00,underground/subway/metro
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0003e8)=0x001403
+; Originally @(0x001037+0x0003e8)=0x00141f
 Type=0x02f
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1622,7 +1639,7 @@ String2=0x02,Radweg, benutzungspflichtig
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000442)=0x00145d
+; Originally @(0x001037+0x000442)=0x001479
 Type=0x030
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1642,7 +1659,7 @@ String2=0x02,Radweg
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00047c)=0x001497
+; Originally @(0x001037+0x00047c)=0x0014b3
 Type=0x031
 UseOrientation=Y
 XPM="32 9 2 2",
@@ -1663,7 +1680,7 @@ String2=0x02,Radweg, unbekannte Benutzungspflicht
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0004e1)=0x0014fc
+; Originally @(0x001037+0x0004e1)=0x001518
 Type=0x032
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1683,7 +1700,7 @@ String2=0x02,Busspur für Radfahrer frei
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00053a)=0x001555
+; Originally @(0x001037+0x00053a)=0x001571
 Type=0x033
 UseOrientation=Y
 XPM="32 9 2 2",
@@ -1704,7 +1721,7 @@ String2=0x02,Busspur, Zeiten unbekannt
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000598)=0x0015b3
+; Originally @(0x001037+0x000598)=0x0015cf
 Type=0x034
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1724,7 +1741,7 @@ String2=0x02,Radspur, benutzungspflichtig
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0005f3)=0x00160e
+; Originally @(0x001037+0x0005f3)=0x00162a
 Type=0x035
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1744,7 +1761,7 @@ String2=0x02,Radspur, Suggestivstreifen
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00064b)=0x001666
+; Originally @(0x001037+0x00064b)=0x001682
 Type=0x036
 UseOrientation=Y
 XPM="32 9 2 2",
@@ -1765,7 +1782,7 @@ String2=0x02,Radspur, unbekannte Benutzungspflicht
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0006b1)=0x0016cc
+; Originally @(0x001037+0x0006b1)=0x0016e8
 Type=0x037
 UseOrientation=Y
 XPM="32 6 2 2",
@@ -1783,7 +1800,7 @@ String2=0x02,schlechte Qualität
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0006f0)=0x00170b
+; Originally @(0x001037+0x0006f0)=0x001727
 Type=0x038
 UseOrientation=Y
 XPM="32 6 2 2",
@@ -1801,7 +1818,7 @@ String2=0x02,mäßige Qualität
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000732)=0x00174d
+; Originally @(0x001037+0x000732)=0x001769
 Type=0x039
 UseOrientation=Y
 XPM="32 6 2 2",
@@ -1819,7 +1836,7 @@ String2=0x02,gute Qualität
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00076d)=0x001788
+; Originally @(0x001037+0x00076d)=0x0017a4
 Type=0x03a
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1839,7 +1856,7 @@ String2=0x02,Busspur für Radfahrer, zeitlich begrenzt
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0007d6)=0x0017f1
+; Originally @(0x001037+0x0007d6)=0x00180d
 Type=0x03b
 UseOrientation=Y
 XPM="32 13 2 2",
@@ -1864,7 +1881,7 @@ String2=0x02,Zweiwegeradweg (benutzungspflichtig oder nicht)
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000855)=0x001870
+; Originally @(0x001037+0x000855)=0x00188c
 Type=0x03c
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1884,7 +1901,7 @@ String2=0x02,Einbahnstraße
 [end]
 
 [_line]
-; Originally @(0x00101b+0x000892)=0x0018ad
+; Originally @(0x001037+0x000892)=0x0018c9
 Type=0x03d
 UseOrientation=Y
 XPM="32 7 2 2",
@@ -1903,7 +1920,7 @@ String2=0x02,gesperrt für Radfahrer
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0008e2)=0x0018fd
+; Originally @(0x001037+0x0008e2)=0x001919
 Type=0x03e
 UseOrientation=Y
 XPM="32 1 2 2",
@@ -1916,7 +1933,7 @@ String2=0x02,stillgelegte Bahnstrecke oder in Bau
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00093b)=0x001956
+; Originally @(0x001037+0x00093b)=0x001972
 Type=0x03f
 UseOrientation=Y
 XPM="32 3 2 2",
@@ -1931,7 +1948,7 @@ String2=0x02,Schmalspur- oder Parkeisenbahn
 [end]
 
 [_line]
-; Originally @(0x00101b+0x00097e)=0x001999
+; Originally @(0x001037+0x00097e)=0x0019b5
 Type=0x040
 UseOrientation=Y
 XPM="32 8 2 2",
@@ -1951,7 +1968,7 @@ String2=0x02,grüne Ampelphase
 [end]
 
 [_line]
-; Originally @(0x00101b+0x0009cf)=0x0019ea
+; Originally @(0x001037+0x0009cf)=0x001a06
 Type=0x10e
 SubType=0x02
 UseOrientation=N
@@ -1970,7 +1987,7 @@ String3=0x00,STAUMAUER
 ; start of point collection
 ; --------------------------------------------------------------------------
 [_point]
-; Originally @(0x001ac0+0x000000)=0x001ac0
+; Originally @(0x001adc+0x000000)=0x001adc
 Type=0x016
 XPM="14 14 5 2",
 "XX  c #000000",
@@ -2002,7 +2019,7 @@ String2=0x02,Leuchtturm
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x000093)=0x001b53
+; Originally @(0x001adc+0x000093)=0x001b6f
 Type=0x027
 XPM="12 12 41 2",
 "XX  c #003399",
@@ -2064,7 +2081,7 @@ String2=0x02,Ausfahrt
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0001c9)=0x001c89
+; Originally @(0x001adc+0x0001c9)=0x001ca5
 Type=0x02a
 XPM="16 16 25 2",
 "XX  c #f0f8fc",
@@ -2114,7 +2131,7 @@ String2=0x02,Restaurant
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x00032f)=0x001def
+; Originally @(0x001adc+0x00032f)=0x001e0b
 Type=0x02a
 SubType=0x07
 XPM="11 14 30 2",
@@ -2167,7 +2184,7 @@ String1=0x02,Fast-Food
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x000431)=0x001ef1
+; Originally @(0x001adc+0x000431)=0x001f0d
 Type=0x02a
 SubType=0x0e
 XPM="15 15 2 2",
@@ -2194,7 +2211,7 @@ String2=0x02,Cafe
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x000486)=0x001f46
+; Originally @(0x001adc+0x000486)=0x001f62
 Type=0x02b
 SubType=0x01
 XPM="16 16 19 2",
@@ -2239,7 +2256,7 @@ String2=0x02,Hotel
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0005d0)=0x002090
+; Originally @(0x001adc+0x0005d0)=0x0020ac
 Type=0x02c
 SubType=0x06
 XPM="15 12 37 2",
@@ -2298,7 +2315,7 @@ String2=0x02,Spielplatz
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x000724)=0x0021e4
+; Originally @(0x001adc+0x000724)=0x002200
 Type=0x02c
 SubType=0x07
 XPM="16 15 22 2",
@@ -2345,7 +2362,7 @@ String2=0x02,Zoo
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x000863)=0x002323
+; Originally @(0x001adc+0x000863)=0x00233f
 Type=0x02e
 SubType=0x08
 XPM="8 13 4 2",
@@ -2376,7 +2393,7 @@ String2=0x02,Baumarkt
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0008c4)=0x002384
+; Originally @(0x001adc+0x0008c4)=0x0023a0
 Type=0x02e
 SubType=0x09
 XPM="14 14 4 2",
@@ -2408,7 +2425,7 @@ String2=0x02,Möbel
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x00094d)=0x00240d
+; Originally @(0x001adc+0x00094d)=0x002429
 Type=0x02f
 SubType=0x08
 XPM="11 11 3 2",
@@ -2431,7 +2448,7 @@ String1=0x02,Haltestelle
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x000987)=0x002447
+; Originally @(0x001adc+0x000987)=0x002463
 Type=0x02f
 SubType=0x15
 XPM="12 12 69 2",
@@ -2521,7 +2538,7 @@ String1=0x02,Entsorgung
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x000b1b)=0x0025db
+; Originally @(0x001adc+0x000b1b)=0x0025f7
 Type=0x02f
 SubType=0x1b
 XPM="16 16 90 2",
@@ -2637,7 +2654,7 @@ String2=0x02,Fahrradparkplatz
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x000d7f)=0x00283f
+; Originally @(0x001adc+0x000d7f)=0x00285b
 Type=0x030
 SubType=0x08
 XPM="16 10 16 2",
@@ -2677,7 +2694,7 @@ String2=0x02,Feuerwache
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x000e77)=0x002937
+; Originally @(0x001adc+0x000e77)=0x002953
 Type=0x04a
 XPM="16 16 68 2",
 "XX  c #000000",
@@ -2769,7 +2786,7 @@ String1=0x00,picnic site
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x001078)=0x002b38
+; Originally @(0x001adc+0x001078)=0x002b54
 Type=0x04c
 XPM="15 15 3 2",
 "XX  c #000000",
@@ -2795,7 +2812,7 @@ String1=0x02,Information
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0010d2)=0x002b92
+; Originally @(0x001adc+0x0010d2)=0x002bae
 Type=0x061
 XPM="14 14 3 2",
 "XX  c #000000",
@@ -2825,7 +2842,7 @@ String2=0x00,shelter
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x001132)=0x002bf2
+; Originally @(0x001adc+0x001132)=0x002c0e
 Type=0x065
 XPM="13 14 3 2",
 "XX  c #000000",
@@ -2855,7 +2872,7 @@ String2=0x00,fountain
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x00118f)=0x002c4f
+; Originally @(0x001adc+0x00118f)=0x002c6b
 Type=0x065
 SubType=0x11
 XPM="7 16 3 2",
@@ -2888,7 +2905,7 @@ String2=0x02,Quelle
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0011d1)=0x002c91
+; Originally @(0x001adc+0x0011d1)=0x002cad
 Type=0x066
 SubType=0x05
 XPM="9 4 3 2",
@@ -2905,7 +2922,7 @@ String2=0x02,Bank
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0011fb)=0x002cbb
+; Originally @(0x001adc+0x0011fb)=0x002cd7
 Type=0x070
 SubType=0x01
 XPM="6 16 37 2",
@@ -2968,7 +2985,7 @@ String2=0x02,Ampel
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0012fa)=0x002dba
+; Originally @(0x001adc+0x0012fa)=0x002dd6
 Type=0x070
 SubType=0x02
 DayXPM="12 32 28 2",
@@ -3128,7 +3145,7 @@ String2=0x02,Fußgängerampel
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x001759)=0x003219
+; Originally @(0x001adc+0x001759)=0x003235
 Type=0x070
 SubType=0x03
 XPM="12 16 4 2",
@@ -3158,7 +3175,7 @@ String2=0x02,Bahnübergang
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0017ed)=0x0032ad
+; Originally @(0x001adc+0x0017ed)=0x0032c9
 Type=0x070
 SubType=0x04
 XPM="16 16 123 2",
@@ -3307,7 +3324,7 @@ String2=0x02,Zebrastreifen
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x001ac1)=0x003581
+; Originally @(0x001adc+0x001ac1)=0x00359d
 Type=0x070
 SubType=0x05
 XPM="10 5 4 2",
@@ -3326,7 +3343,7 @@ String2=0x02,Drängelgitter
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x001b0c)=0x0035cc
+; Originally @(0x001adc+0x001b0c)=0x0035e8
 Type=0x070
 SubType=0x06
 XPM="8 7 2 2",
@@ -3345,7 +3362,7 @@ String2=0x02,Treppe
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x001b36)=0x0035f6
+; Originally @(0x001adc+0x001b36)=0x003612
 Type=0x070
 SubType=0x07
 XPM="8 10 4 2",
@@ -3369,7 +3386,7 @@ String2=0x02,selten genutzter Bahnübergang
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x001bae)=0x00366e
+; Originally @(0x001adc+0x001bae)=0x00368a
 Type=0x071
 SubType=0x01
 XPM="15 15 36 2",
@@ -3431,7 +3448,7 @@ String3=0x13,podzemna stanica
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x001d44)=0x003804
+; Originally @(0x001adc+0x001d44)=0x003820
 Type=0x071
 SubType=0x02
 XPM="15 15 97 2",
@@ -3553,7 +3570,7 @@ String2=0x02,S-Bahnstation
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x001fa2)=0x003a62
+; Originally @(0x001adc+0x001fa2)=0x003a7e
 Type=0x071
 SubType=0x03
 DayXPM="25 20 125 2",
@@ -3844,7 +3861,7 @@ String2=0x00,railway station
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0026f1)=0x0041b1
+; Originally @(0x001adc+0x0026f1)=0x0041cd
 Type=0x071
 SubType=0x04
 XPM="25 20 121 2",
@@ -3995,7 +4012,7 @@ String2=0x02,stillgelegter Bahnhof
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x002ac5)=0x004585
+; Originally @(0x001adc+0x002ac5)=0x0045a1
 Type=0x071
 SubType=0x05
 XPM="13 10 57 2",
@@ -4072,7 +4089,7 @@ String2=0x02,Parkeisenbahnhof
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x002c3d)=0x0046fd
+; Originally @(0x001adc+0x002c3d)=0x004719
 Type=0x071
 SubType=0x06
 XPM="15 15 35 2",
@@ -4132,7 +4149,7 @@ String2=0x00,subway station under construction or abandoned
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x002df1)=0x0048b1
+; Originally @(0x001adc+0x002df1)=0x0048cd
 Type=0x071
 SubType=0x07
 XPM="15 15 92 2",
@@ -4249,7 +4266,7 @@ String2=0x00,light rail station under construction or abandoned
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x003070)=0x004b30
+; Originally @(0x001adc+0x003070)=0x004b4c
 Type=0x071
 SubType=0x10
 XPM="11 11 17 2",
@@ -4291,7 +4308,7 @@ String2=0x02,Information
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x00313f)=0x004bff
+; Originally @(0x001adc+0x00313f)=0x004c1b
 Type=0x072
 SubType=0x01
 XPM="15 10 25 2",
@@ -4336,7 +4353,7 @@ String2=0x02,Ortsschild
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x00324b)=0x004d0b
+; Originally @(0x001adc+0x00324b)=0x004d27
 Type=0x072
 SubType=0x02
 XPM="16 16 25 2",
@@ -4387,7 +4404,7 @@ String2=0x02,Windrad
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0033c2)=0x004e82
+; Originally @(0x001adc+0x0033c2)=0x004e9e
 Type=0x072
 SubType=0x03
 XPM="15 5 18 2",
@@ -4419,7 +4436,7 @@ String1=0x02,Ortshinweistafel
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x003464)=0x004f24
+; Originally @(0x001adc+0x003464)=0x004f40
 Type=0x072
 SubType=0x04
 XPM="10 10 4 2",
@@ -4443,7 +4460,7 @@ String2=0x02,Wegweiser
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0034bb)=0x004f7b
+; Originally @(0x001adc+0x0034bb)=0x004f97
 Type=0x072
 SubType=0x05
 XPM="13 13 2 2",
@@ -4468,7 +4485,7 @@ String2=0x02,Aussichtspunkt
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x003517)=0x004fd7
+; Originally @(0x001adc+0x003517)=0x004ff3
 Type=0x073
 SubType=0x01
 XPM="16 16 117 2",
@@ -4610,7 +4627,7 @@ String1=0x02,Fragezeichen: Steigungen
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0037d1)=0x005291
+; Originally @(0x001adc+0x0037d1)=0x0052ad
 Type=0x073
 SubType=0x02
 XPM="16 16 119 2",
@@ -4754,7 +4771,7 @@ String1=0x02,Fragezeichen: Qualität
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x003a90)=0x005550
+; Originally @(0x001adc+0x003a90)=0x00556c
 Type=0x073
 SubType=0x03
 XPM="16 16 127 2",
@@ -4906,7 +4923,7 @@ String1=0x02,Fragezeichen: Ampel
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x003d68)=0x005828
+; Originally @(0x001adc+0x003d68)=0x005844
 Type=0x073
 SubType=0x04
 XPM="16 16 95 2",
@@ -5026,7 +5043,7 @@ String1=0x02,Fragezeichen: Einbahnstraße
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x003fd8)=0x005a98
+; Originally @(0x001adc+0x003fd8)=0x005ab4
 Type=0x073
 SubType=0x05
 XPM="16 16 173 2",
@@ -5224,7 +5241,7 @@ String1=0x02,Fragezeichen: Radweg
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x004352)=0x005e12
+; Originally @(0x001adc+0x004352)=0x005e2e
 Type=0x073
 SubType=0x06
 XPM="16 16 105 2",
@@ -5354,7 +5371,7 @@ String1=0x02,Fragezeichen: gesperrt
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0045e0)=0x0060a0
+; Originally @(0x001adc+0x0045e0)=0x0060bc
 Type=0x073
 SubType=0x07
 XPM="16 16 66 2",
@@ -5445,7 +5462,7 @@ String1=0x02,Fragezeichen: Mittelstreifen
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0047eb)=0x0062ab
+; Originally @(0x001adc+0x0047eb)=0x0062c7
 Type=0x073
 SubType=0x08
 XPM="16 16 60 2",
@@ -5530,7 +5547,7 @@ String1=0x02,Fragezeichen: Vorfahrt
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x0049db)=0x00649b
+; Originally @(0x001adc+0x0049db)=0x0064b7
 Type=0x073
 SubType=0x09
 XPM="16 16 151 2",
@@ -5706,7 +5723,7 @@ String1=0x02,Fragezeichen: verkehrsberuhigt
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x004d12)=0x0067d2
+; Originally @(0x001adc+0x004d12)=0x0067ee
 Type=0x073
 SubType=0x0a
 XPM="16 16 142 2",
@@ -5873,7 +5890,7 @@ String1=0x02,Fragezeichen: Zebrastreifen
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x005026)=0x006ae6
+; Originally @(0x001adc+0x005026)=0x006b02
 Type=0x073
 SubType=0x0b
 XPM="16 16 53 2",
@@ -5951,7 +5968,7 @@ String1=0x02,Fragezeichen: unbeleuchtet
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x005202)=0x006cc2
+; Originally @(0x001adc+0x005202)=0x006cde
 Type=0x073
 SubType=0x0c
 XPM="16 16 91 2",
@@ -6067,7 +6084,7 @@ String1=0x02,Fragezeichen: Straßenname
 [end]
 
 [_point]
-; Originally @(0x001ac0+0x005462)=0x006f22
+; Originally @(0x001adc+0x005462)=0x006f3e
 Type=0x073
 SubType=0x0d
 XPM="16 16 126 2",

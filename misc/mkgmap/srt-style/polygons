@@ -156,6 +156,8 @@ landuse=allotments [0x4e resolution 21]
 # SRT: additions (should come before standard cemetary) vvv
 (landuse=cemetery|landuse=cemetary|amenity=grave_yard) & religion=jewish [0x1b resolution 21]
 (landuse=cemetery|landuse=cemetary|amenity=grave_yard) & religion=muslim [0x1c resolution 21]
+# XXX the island hack...
+landuse=island [0x10200 resolution 18]
 # SRT: additions ^^^
 landuse=cemetery|landuse=cemetary|amenity=grave_yard [0x1a resolution 21]
 landuse=commercial [0x0c resolution 19]
