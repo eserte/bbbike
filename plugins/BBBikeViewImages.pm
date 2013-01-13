@@ -14,7 +14,7 @@ use BBBikePlugin;
 push @ISA, "BBBikePlugin";
 
 use strict;
-use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
+use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $original_image_editor $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
 $VERSION = 1.25;
 
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
@@ -465,6 +465,14 @@ sub show_image_viewer {
 		    # o=orig, z=zoom (latter matches the binding in xzgv), v=view (like in mapivi)
 		    $image_viewer_toplevel->bind("<$_>" => sub { $orig_button->invoke }) for ('o', 'v', 'z');
 
+		    # XXX dummy button, not visible, but maybe should be visible one day... (if I had a layout concept)
+		    my $edit_button = $f->Button(-class => "SmallBut",
+						 -text => "Edit",
+						); # XXX not packed! The button is only here to provide a binding for Control-e!
+		    $image_viewer_toplevel->Advertise(EditButton => $edit_button);
+		    # XXX no tooltip needed here
+		    $image_viewer_toplevel->bind('<Control-e>' => sub { $edit_button->invoke });
+
 		    my $info_button = $f->Button(-class => "SmallBut",
 						 -text => 'i',
 						)->pack(-side => "right", -anchor => "e");
@@ -568,6 +576,8 @@ sub show_image_viewer {
 		# current image being first in list. Unfortunately,
 		# look how complicated it is to get to $abs_file :-(
 		$image_viewer_toplevel->Subwidget("OrigButton")->configure(-command => [\&orig_viewer, $abs_file]);
+
+		$image_viewer_toplevel->Subwidget("EditButton")->configure(-command => [\&orig_editor, $abs_file]);
 
 		$image_viewer_toplevel->Subwidget("InfoButton")->configure(-command => [\&exif_viewer, $abs_file]);
 
@@ -770,6 +780,25 @@ sub orig_viewer {
 	warn "Try $cmd...\n";
 	system("$cmd&");
     }	
+}
+
+sub orig_editor {
+    if (!defined $original_image_editor) {
+	if (is_in_path('gimp')) {
+	    $original_image_editor = 'gimp';
+	} else {
+	    $original_image_editor = ''; # but defined
+	}
+    }
+    if (!$original_image_editor) {
+	main::status_message("gimp ist nicht verfügbar", "die"); # XXX Msg
+    }
+
+    {
+	my $cmd = "$original_image_editor @_";
+	warn "Try $cmd...\n";
+	system("$cmd&");
+    }
 }
 
 sub imagemagick_maxpect_args {
