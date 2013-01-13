@@ -721,7 +721,7 @@ sub handle_waterway_like {
 	$is_area = 1;
 	$cat = $1;
     } else {
-	$cat = $r->[Strassen::CAT] =~ m{^([^:]+)};
+	($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
     }
     # XXX handling W0,W1 etc. missing
 
@@ -736,7 +736,13 @@ sub handle_waterway_like {
     }
     print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
     if ($is_area) {
-	print $wayfh qq{  <tag k="natural" v="water" />\n};
+	if ($cat eq 'I') {
+	    # XXX landuse=island is not an official osm tag, just a
+	    # "crutch" for mapnik etc. rendering
+	    print $wayfh qq{  <tag k="landuse" v="island" />\n};
+	} else {
+	    print $wayfh qq{  <tag k="natural" v="water" />\n};
+	}
     } else {
 	print $wayfh qq{  <tag k="waterway" v="river" />\n};
     }
