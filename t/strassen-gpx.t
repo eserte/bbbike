@@ -119,7 +119,7 @@ for my $use_xml_module (@variants) {
 	    deep_strassen_check($s, $s2, $xml_res);
 
 	    # Parsing from file
-	    my($ofh, $ofilename) = tempfile(UNLINK => 1, SUFFIX => ".gpx");
+	    my($ofh, $ofilename) = tempfile(UNLINK => 1, SUFFIX => "_strassen_gpx.gpx");
 	    print $ofh $gpx_sample;
 	    close $ofh;
 
@@ -164,7 +164,7 @@ for my $use_xml_module (@variants) {
 	    deep_strassen_check($s, $s2, $xml_res);
 
 	    # Parsing from file
-	    my($ofh, $ofilename) = tempfile(UNLINK => 1, SUFFIX => ".gpx");
+	    my($ofh, $ofilename) = tempfile(UNLINK => 1, SUFFIX => "_strassen_gpx.gpx");
 	    print $ofh $gpx_sample;
 	    close $ofh;
 
@@ -406,7 +406,7 @@ SKIP: {
 }
 
 {
-    my($fh,$file) = tempfile(SUFFIX => ".gpx", UNLINK => 1);
+    my($fh,$file) = tempfile(SUFFIX => "_strassen_gpx.gpx", UNLINK => 1);
     print {$fh} gpx_sample_trk();
     close $fh;
 
