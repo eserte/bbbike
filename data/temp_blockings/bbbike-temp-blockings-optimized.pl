@@ -1000,7 +1000,17 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019522',
+         'until' => 1358445600,
+         'text' => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig zwischen Tempelhofer Damm und Columbiadamm gesperrt (bis Donnerstag)',
+         'from' => 1358139600,
+         'id' => 2245,
+         'data' => 'userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
+userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1127,9 +1137,7 @@ userdel	2::inwork 19968,16 19940,52
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte 2013',
          'from' => 1330902000,
          'id' => 2316,
-         'data' => '#: XXX nach den Bauarbeiten Radwege auf beiden Seiten
-#: next_check: 2013-06-01
-userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
+         'data' => 'userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
        },

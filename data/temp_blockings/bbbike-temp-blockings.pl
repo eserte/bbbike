@@ -19376,11 +19376,11 @@ EOF
 userdel	2::temp 9656,12021 9668,11928
 EOF
      },
-     { from  => 1341291480, # 2012-07-03 06:58
-       until => 1341590400, # 2012-07-06 18:00
-       text  => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig gesperrt In beiden Richtungen zwischen Columbiadamm und Tempelhofer Damm, 04.07.2012 06:58 Uhr bis 06.07.2012 18:00 Uhr ',
-       type  => 'handicap',
-       source_id => 'IM_018982',
+     { from  => 1358139600, # 2013-01-14 06:00
+       until => 1358445600, # 2013-01-17 19:00
+       text  => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig zwischen Tempelhofer Damm und Columbiadamm gesperrt (bis Donnerstag)',
+       type  => 'gesperrt',
+       source_id => 'IM_019522',
        data  => <<EOF,
 userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
 userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
@@ -20047,8 +20047,6 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
-#: XXX nach den Bauarbeiten Radwege auf beiden Seiten
-#: next_check: 2013-06-01
 userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },

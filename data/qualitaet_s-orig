@@ -199,7 +199,11 @@ Tiergartenufer: mäßiges Kopfsteinpflaster	Q2 6476,11325 6436,11343
 Tiergartenufer: Parkweg/Kleinsteinpflaster	Q1 6436,11343 6358,11394 6262,11426 6186,11466
 Tiergarten: Kopfsteinpflaster	Q2 5835,11768 5758,11895
 Garibaldistr.: schlechtes Kopfsteinpflaster	Q3 7324,19795 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7711,19956 7838,19884
-Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6764,23396 6801,23474 6805,23554 6744,23695
+#: XXX projektierte Bauarbeiten, danach vielleicht bessere Qualität
+#: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/alt_luebars.html (Baubeginn Mitte 2013)
+#: next_check: 2014-02-01
+Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6764,23396 6801,23474 6805,23554
+Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6805,23554 6744,23695
 Alt-Lübars: Kopfsteinpflaster	Q2 6744,23695 6817,23760
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6817,23760 6879,23816 6992,23814 7111,23873 7185,23749
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 7111,23873 7051,23924 6879,23816
@@ -1721,8 +1725,9 @@ Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 7973,14195 78
 (Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7496,14660
 #: XXX Neubau der Gabrielenstr., danach wahrscheinlich besserer Asphalt
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130111.1435.380126.html (Fertigstellung Ende 2013)
+#: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/gabrielenstr.html
 #: next_check: 2013-12-15
-Gabrielenstr.: mäßiger Asphalt	Q1 1715,20766 1687,20782 1630,20731 1518,20615
+Gabrielenstr.: mäßiger Asphalt	Q1 1687,20782 1630,20731 1518,20615
 Gabrielenstr.: guter Asphalt	Q0 1518,20615 1407,20563
 Gabrielenstr.: mäßiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 989,20366
 An der Malche: fester Waldweg	Q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
@@ -10966,7 +10971,7 @@ Kabelpfuhlweg: schlechtes Kopfsteinpflaster	Q3 11244,4325 11258,4273 11279,4159 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121102.1120.377471.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html?date=20121116 (Ende: Oktober 2014)
 #: XXX: Bauarbeiten beginnen Mitte November 2012
-#: next_check: 2013-01-01
+#: next_check: 2014-01-01
 Schulstr. (Pankow): mäßiger Asphalt	Q1 10755,18231 10582,18159 10545,18143 10473,18113
 # 
 #: by: Julia Scharf:
@@ -20331,9 +20336,10 @@ Borkener Weg: Beton	Q0 1375,18209 1390,18256 1448,18436 1507,18629
 #: by: ^^^
 # 
 #: by: Christian Coers: vvv
-#: XXX Straße wird neu gebaut, danach vielleicht bessere Qualität?
+#: XXX Straße wird neu gebaut, danach vielleicht bessere Qualität, evtl. Verbundsteinpflaster?
 #: XXX "Die Baumaßnahme wird voraussichtlich Ende 2013 beendet sein."
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121024.1305.377018.html
+#: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/strasse494.html
 #: next_check: 2013-10-31
 Straße 494: fester Sandweg	Q2 7923,23225 8119,22798
 #: confirmed_by: srt

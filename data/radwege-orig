@@ -575,7 +575,14 @@ asphaltierter gemeinsamer Rad- und Gehweg	RW2;RW2 9228,23643 9146,23843 8984,240
 	RW1;RW2 1858,20740 1808,20817 1787,20836
 	RW3;RW2 1787,20836 1750,20868
 	RW3;RW0 1750,20868 1712,20907 1571,21066
+#: XXX nach den Bauarbeiten in der Ruppiner Chaussee wieder Radwege in beide Richtungen vvv
+#: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/ruppinerchaussee.html
+#: XXX Ende der Baumaßnahmen evtl. erst Ende 2013?
+#: next_check: 2013-06-01 vvv
 früherer Radweg ist nicht mehr erkennbar	RW0; -1281,23746 -1286,23753 -1367,23853 -1627,24105 -1790,24260
+vorhandener Radweg ist abgesperrt	RW0; -656,23011 -783,23190 -903,23406 -984,23480 -997,23492 -1084,23564 -1281,23746
+#: next_check ^^^
+#: XXX ^^^
 	RW2; -1790,24260 -1872,24336
 	RW2;RW2 -344,15200 -355,15112 -321,14933 -284,14738 -283,14523
 	RW2;RW8 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 838,14530 842,14518 862,14463 889,14392
@@ -1478,7 +1485,6 @@ Radweg entfernt	RW0;RW0 4985,13470 5116,13457 5248,13434
 #: by: http://farm5.static.flickr.com/4119/4859604867_6087be5782.jpg
 	RW1;RW2 -7003,16188 -7094,16217 -7132,16230
 	RW;RW -6719,16111 -6700,16178 -6664,16314 -6624,16466 -6577,16609 -6547,16704 -6515,16793 -6316,17363
-vorhandener Radweg ist abgesperrt	RW0; -656,23011 -783,23190 -903,23406 -984,23480 -997,23492 -1084,23564 -1281,23746
 #: note: anonymous meint: "teilweise ja (zur Frage, ob es Radwege gibt), den Rest kann man auf dem Fußweg fahren oder ein kleines Stück auf glatter Straße. Ist aber eine Hauptverkehrsstraße. " (leider ungenau)
 	RW1; -410,21496 -249,21420 -130,21396
 außerdem Gehweg für Radfahrer frei	RW3; -130,21396 415,21334 469,21303 598,21257 886,21221 1282,21118
