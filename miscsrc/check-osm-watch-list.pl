@@ -36,7 +36,7 @@ GetOptions(
 my $ua;
 if ($show_diffs) {
     require XML::LibXML;
-    require XML::Diff;
+    require Text::Diff;
     require LWP::UserAgent;
     $ua = LWP::UserAgent->new;
     $ua->agent("check-osm-watch-list/$VERSION "); # + add lwp UA string
@@ -110,11 +110,10 @@ my $changed_count = 0;
 				    if (!$this_version) {
 					warn "ERROR: strange, couldn't find new version $version in history\n" . $root->serialize(1);
 				    } else {
-					my $xml_diff = XML::Diff->new->compare(
-									       -old => $last_version,
-									       -new => $this_version,
-									       );
-					warn $xml_diff->serialize(1), "\n", ("="x70), "\n";
+					my $old_string = $last_version->serialize(1);
+					my $new_string = $this_version->serialize(1);
+					my $diff = Text::Diff::diff(\$old_string, \$new_string);
+					warn $diff, "\n", ("="x70), "\n";
 				    }
 				}
 			    }
