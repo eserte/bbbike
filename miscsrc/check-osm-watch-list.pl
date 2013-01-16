@@ -17,17 +17,30 @@ use FindBin;
 use Getopt::Long;
 use IPC::Run qw(run);
 
+our $VERSION = '0.01';
+
 my $osm_watch_list = "$FindBin::RealBin/../data/osm_watch_list";
 my $bbbike_rootdir = "/home/e/eserte/src/bbbike"; # cannot use $FindBin::RealBin here, because of symlinking problems
 my $berlin_osm_bz2 = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
 
 my $show_unchanged;
 my $quiet;
+my $show_diffs;
 GetOptions(
 	   "show-unchanged" => \$show_unchanged,
+	   "diff!" => \$show_diffs,
 	   "q|quiet" => \$quiet,
 	  )
-    or die "usage: $0 [-show-unchanged] [-q|-quiet]";
+    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff]";
+
+my $ua;
+if ($show_diffs) {
+    require XML::LibXML;
+    require XML::Diff;
+    require LWP::UserAgent;
+    $ua = LWP::UserAgent->new;
+    $ua->agent("check-osm-watch-list/$VERSION "); # + add lwp UA string
+}
 
 if (! -e $berlin_osm_bz2) {
     die "FATAL: $berlin_osm_bz2 is missing, please download!";
@@ -81,6 +94,31 @@ my $changed_count = 0;
 		if (my $record = $id_to_record{$type_id}) {
 		    if ($record->{version} != $version) {
 			warn "CHANGED: $type_id (version $record->{version} -> $version) ($record->{info})\n";
+			if ($show_diffs) {
+			    my $url = "http://www.openstreetmap.org/api/0.6/$type/$id/history";
+			    my $resp = $ua->get($url);
+			    if (!$resp->is_success) {
+				warn "ERROR: while fetching <$url>: " . $resp->status_line;
+			    } else {
+				my $p = XML::LibXML->new;
+				my $root = $p->parse_string($resp->decoded_content)->documentElement;
+				my($last_version) = $root->findnodes('/osm/'.$type.'[@version='.$record->{version}.']');
+				if (!$last_version) {
+				    warn "ERROR: strange, couldn't find old version $record->{version} in history\n" . $root->serialize(1);
+				} else {
+				    my($this_version) = $root->findnodes('/osm/'.$type.'[@version='.$version.']');
+				    if (!$this_version) {
+					warn "ERROR: strange, couldn't find new version $version in history\n" . $root->serialize(1);
+				    } else {
+					my $xml_diff = XML::Diff->new->compare(
+									       -old => $last_version,
+									       -new => $this_version,
+									       );
+					warn $xml_diff->serialize(1), "\n", ("="x70), "\n";
+				    }
+				}
+			    }
+			}
 			$changed_count++;
 		    } else {
 			if ($show_unchanged) {
