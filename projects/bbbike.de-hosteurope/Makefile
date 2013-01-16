@@ -366,6 +366,8 @@ deploy-local:		${DEPLOY_LOCAL_TARGETS}
 deploy-local-no-test:	${DEPLOY_LOCAL_NO_TEST_TARGETS}
 
 deploy-pps:
+			-@mkdir -p .last
+			-@date >> .last/start-deploy-pps
 			${MAKE} deploy TARGET=bbbike-pps
 
 .ORDER:			${DEPLOY_DATA_TARGETS}
