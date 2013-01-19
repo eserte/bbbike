@@ -90,34 +90,14 @@ my $changed_count = 0;
     while(<$fh>) {
 	chomp;
 	if (my($type, $id) = $_ =~ m{<(way|node)\s+id="(\d+)"}) {
-	    if (my($version) = $_ =~ m{version="(\d+)"}) {
+	    if (my($new_version) = $_ =~ m{version="(\d+)"}) {
 		my $type_id = "$type/$id";
 		if (my $record = $id_to_record{$type_id}) {
-		    if ($record->{version} != $version) {
-			warn "CHANGED: $type_id (version $record->{version} -> $version) ($record->{info})\n";
+		    my $old_version = $record->{version};
+		    if ($old_version != $new_version) {
+			warn "CHANGED: $type_id (version $old_version -> $new_version) ($record->{info})\n";
 			if ($show_diffs) {
-			    my $url = "http://www.openstreetmap.org/api/0.6/$type/$id/history";
-			    my $resp = $ua->get($url);
-			    if (!$resp->is_success) {
-				warn "ERROR: while fetching <$url>: " . $resp->status_line;
-			    } else {
-				my $p = XML::LibXML->new;
-				my $root = $p->parse_string($resp->decoded_content)->documentElement;
-				my($last_version) = $root->findnodes('/osm/'.$type.'[@version='.$record->{version}.']');
-				if (!$last_version) {
-				    warn "ERROR: strange, couldn't find old version $record->{version} in history\n" . $root->serialize(1);
-				} else {
-				    my($this_version) = $root->findnodes('/osm/'.$type.'[@version='.$version.']');
-				    if (!$this_version) {
-					warn "ERROR: strange, couldn't find new version $version in history\n" . $root->serialize(1);
-				    } else {
-					my $old_string = $last_version->serialize(1);
-					my $new_string = $this_version->serialize(1);
-					my $diff = Text::Diff::diff(\$old_string, \$new_string);
-					warn $diff, "\n", ("="x70), "\n";
-				    }
-				}
-			    }
+			    show_diff($type, $id, $old_version, $new_version);
 			}
 			$changed_count++;
 		    } else {
@@ -148,4 +128,38 @@ if ($changed_count) {
     warn "INFO: Found $changed_count changed entry/ies.\n";
     exit 2;
 }
+
+sub show_diff {
+    my($type, $id, $old_version, $new_version) = @_;
+
+    my $url = "http://www.openstreetmap.org/api/0.6/$type/$id/history";
+    my $resp = $ua->get($url);
+    if (!$resp->is_success) {
+	warn "ERROR: while fetching <$url>: " . $resp->status_line;
+    } else {
+	my $p = XML::LibXML->new;
+	my $root = $p->parse_string($resp->decoded_content)->documentElement;
+	my($last_version) = $root->findnodes('/osm/'.$type.'[@version='.$old_version.']');
+	if (!$last_version) {
+	    warn "ERROR: strange, couldn't find old version $old_version in history\n" . $root->serialize(1);
+	} else {
+	    my $cond;
+	    if ($new_version == -1) {
+		$cond = '[position()=last()]';
+	    } else {
+		$cond = '[@version='.$new_version.']';
+	    }
+	    my($this_version) = $root->findnodes('/osm/'.$type.$cond);
+	    if (!$this_version) {
+		warn "ERROR: strange, couldn't find new version $new_version in history\n" . $root->serialize(1);
+	    } else {
+		my $old_string = $last_version->serialize(1);
+		my $new_string = $this_version->serialize(1);
+		my $diff = Text::Diff::diff(\$old_string, \$new_string);
+		warn $diff, "\n", ("="x70), "\n";
+	    }
+	}
+    }
+}
+
 __END__
