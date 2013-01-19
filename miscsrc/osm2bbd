@@ -1441,12 +1441,6 @@ for my $osm_file (@osm_files) {
 		} else {
 		    $unhandled{"boundary=$boundary"}++;
 		}
-	    } elsif ($place) {
-		if      ($place eq 'airport') {
-		    push @or, ["flaechen", "F:Ae"];
-		} else {
-		    $unhandled{"place=$place"}++;
-		}
 	    } elsif (exists $tag{'sport'}) {
 		my $sport = $tag{'sport'};
 		if      ($sport =~ m{^(?:soccer|athletics)$}) {
@@ -1491,6 +1485,12 @@ for my $osm_file (@osm_files) {
 		} else {
 		    # e.g. greenfield (= Bauerwartungsland)
 		    $unhandled{"landuse=$landuse"}++;
+		}
+	    } elsif ($place) {
+		if      ($place eq 'airport') {
+		    push @or, ["flaechen", "F:Ae"];
+		} else {
+		    $unhandled{"place=$place"}++;
 		}
 	    } elsif (exists $tag{'route'}) {
 		my $route = $tag{'route'};
