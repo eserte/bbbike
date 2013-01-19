@@ -30,8 +30,9 @@ GetOptions(
 	   "show-unchanged" => \$show_unchanged,
 	   "diff!" => \$show_diffs,
 	   "q|quiet" => \$quiet,
+	   "osm-watch-list=s" => \$osm_watch_list,
 	  )
-    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff]";
+    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...]";
 
 my $ua;
 if ($show_diffs) {
