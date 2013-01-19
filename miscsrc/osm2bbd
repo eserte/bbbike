@@ -785,7 +785,7 @@ for my $osm_file (@osm_files) {
 			push @or, ["orte", 3];
 		    } elsif ($place eq 'city') {
 			push @or, ["orte", 5];
-		    } elsif ($place eq 'island') {
+		    } elsif ($place =~ m{^(island|islet)$}) {
 			# XXX an interim solution --- a better solution
 			# would check for the coastline of this island and
 			# create a proper F:I item
