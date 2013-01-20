@@ -1351,6 +1351,21 @@ sub set_line_coord_interactive {
 		    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
 		    push @coords, [$x,$y];
 		}
+
+		# OSM XML snippets
+		while ($s =~ m{(?:
+				   \blat="([^"]+)"\s+lon="([^"]+)"
+			       |   \blon="([^"]+)"\s+lat="([^"]+)"
+			       )}xg) {
+		    my($x,$y);
+		    if (defined $1) { # lat-lon detected
+			($y,$x) = ($1,$2);
+		    } else { # lon-lat detected
+			($x,$y) = ($1,$2);
+		    }
+		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		    push @coords, [$x, $y];
+		}
 	    }
 	    last if (@coords); # otherwise try the other selection type
 	}
