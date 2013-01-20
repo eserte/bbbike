@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2010,2011,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2010,2011,2012,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = 0.15;
+$VERSION = 0.16;
 
 use Cwd qw(cwd realpath);
 use Data::Dumper;
@@ -1710,18 +1710,42 @@ if ($handle_relations) {
 		    for my $member (@members) {
 			push @or, ['_boundary', 'Z'.$admin_level, $member];
 		    }
+		} elsif ($tag{type} eq 'multipolygon' &&
+			 (
+			  ($tag{waterway} && $tag{waterway} eq 'riverbank') ||
+			  ($tag{natural} && $tag{natural} eq 'water')
+			 )
+			) {
+		    my $new_members = process_multipolygon(\@members, $id);
+		    my @islands_or;
+		    my @waters_or;
+		    for my $member (@$new_members) {
+			my $role = $member->{role} || '';
+			if ($role eq 'inner') {
+			    push @islands_or, ['wasserstrassen', 'F:I', $member, name => '']; # explicitely reset name (it's valid for the water only)
+			} elsif ($role eq 'outer') {
+			    push @waters_or, ['wasserstrassen', 'F:W', $member];
+			}
+		    }
+		    # order is important here!
+		    push @or, @waters_or, @islands_or;
 		}
 
 	    OUTPUT_RECORD: for my $or (@or) {
 		    my($out_file, $cat, $member, %args) = @$or;
 
 		    my $name = $name;
-		    if ($args{name}) {
+		    if (defined $args{name}) {
 			$name = $args{name};
 		    }
 
-		    my $member_id = $member->{'ref'};
-		    if (!exists $way2nodes{$member_id}) {
+		    my $nodes;
+		    if ($member->{'nodes'}) {
+			$nodes = $member->{'nodes'};
+		    } else {
+			$nodes = $way2nodes{$member->{'ref'}};
+		    }
+		    if (!$nodes) {
 			## Don't warn; it's usual that not all
 			## relation members are part of the osm
 			## download:
@@ -1729,7 +1753,7 @@ if ($handle_relations) {
 		    } else {
 			$out{$out_file} ||= [];
 			my $out_array = $out{$out_file};
-			my @coords = map { $node2ll{$_} } @{ $way2nodes{$member_id} };
+			my @coords = map { $node2ll{$_} } @$nodes;
 			if ($out_array) {
 			    # Check for continuations:
 			    my $last_record = $out_array->[-1];
@@ -1820,6 +1844,58 @@ if (%unhandled && $debug >= 1) {
 #exit;
 
 ######################################################################
+
+# Loosely following the algorithm ideas from
+# http://wiki.openstreetmap.org/wiki/Relation:multipolygon/Algorithm
+# Only the "Ring Assignment" steps are done here, and there's also
+# no backtracking here.
+sub process_multipolygon {
+    my($members, $relation_id) = @_;
+
+    my @new_members;
+    my $mpc = MultipolygonCandidates->new;
+
+    for my $member (@$members) {
+	my $nodes = $way2nodes{$member->{ref}};
+	next if !$nodes; # member may be ignored
+	my $role = $member->{role};
+	if ($nodes->[0] == $nodes->[-1]) { # way is closed
+	    push @new_members, $member;
+	} else {
+	    $member->{nodes} = [@$nodes]; # copy nodes!
+	    $mpc->add($member);
+	}
+    }
+
+    while (!$mpc->is_empty) {
+	my $member = $mpc->pick_one;
+	$mpc->del($member);
+	my $member_nodes = $member->{nodes};
+	my $end_node = $member_nodes->[-1];
+	my $another_member = $mpc->pick_one_end($end_node);
+	if (!$another_member) {
+	    if ($debug) {
+		warn "multipolygon processing: member $member->{ref} in relation $relation_id looks incomplete, ignoring...\n";
+	    }
+	} else {
+	    $mpc->del($another_member);
+	    my $another_member_nodes = $another_member->{nodes};
+	    if ($another_member_nodes->[0] == $end_node) {
+		push @$member_nodes, @{ $another_member_nodes }[1..$#$another_member_nodes];
+	    } else {
+		my @reversed_another_member_nodes = reverse @$another_member_nodes;
+		push @$member_nodes, @reversed_another_member_nodes[1..$#reversed_another_member_nodes];
+	    }
+	    if ($member_nodes->[0] == $member_nodes->[-1]) {
+		push @new_members, $member;
+	    } else {
+		$mpc->add($member);
+	    }
+	}
+    }
+
+    return \@new_members;
+}
 
 # Decide whether U/S-Bahn is a real "public" railway or just a service
 # one. Heuristics could work for Germany, but is currently restricted
@@ -2255,6 +2331,65 @@ sub currmem {
     }
 }
 # REPO END
+
+{
+    package MultipolygonCandidates;
+
+    sub new {
+	my($class) = @_;
+	bless {ends => {}}, $class;
+    }
+
+    sub add {
+	my($self, $member) = @_;
+	my $nodes = $member->{nodes};
+	my $ends = $self->{ends};
+	$ends->{$nodes->[0]}->{$member} = $member;
+	$ends->{$nodes->[-1]}->{$member} = $member;
+    }
+    sub del {
+	my($self, $member) = @_;
+	my $nodes = $member->{nodes};
+	my $ends = $self->{ends};
+	
+	for my $node ($nodes->[0], $nodes->[-1]) {
+	    delete $ends->{$node}->{$member};
+	    $self->_check_empty($node);
+	}
+    }
+
+    sub is_empty {
+	my($self) = @_;
+	!keys %{ $self->{ends} }; # check + reset
+    }
+    sub pick_one {
+	my($self) = @_;
+	my $ends = $self->{ends};
+	keys %$ends; # reset iterator
+	my($node, $v) = each %$ends;
+	keys %$v; # reset iterator
+	my(undef, $member) = each %$v;
+	$member;
+    }
+
+    sub pick_one_end {
+	my($self, $node) = @_;
+	my $ends = $self->{ends};
+	if (!$ends->{$node} || !keys %{ $ends->{$node} }) {
+	    return undef;
+	}
+	my($member_key, $member) = each %{ $ends->{$node} };
+	return $member;
+    }
+
+    sub _check_empty {
+	my($self, $node) = @_;
+	my $ends = $self->{ends};
+  	if (!keys %{ $ends->{$node} }) {
+	    delete $ends->{$node};
+	}
+    }
+}
 
 __END__
 
