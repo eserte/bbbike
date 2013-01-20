@@ -189,7 +189,6 @@ if ($lang) {
 my %unhandled;
 my %out;
 my %resolve_node_later;
-my %resolved;
 my @bbox_wgs84;
 my %global_directives;
 my %place_to_population;
@@ -1926,7 +1925,6 @@ sub resolve_node_later {
 sub resolve_node_now {
     my($osm_layer, $bbbike_layer, $bbbike_cat, $nodes_ref) = @_;
     my $r = $resolve_node_later{$osm_layer};
-    my $resolved = $resolved{$osm_layer};
     my $normalize_name = {ubahnhof => \&normalize_name_ubahnhof,
 			  sbahnhof => \&normalize_name_sbahnhof,
 			 }->{$bbbike_layer};
@@ -1937,7 +1935,6 @@ sub resolve_node_now {
 	    $name = $normalize_name->($name) if $normalize_name;
 	    push @{$out{$bbbike_layer}}, [$name, [$coord], $bbbike_cat];
 	    delete $r->{$coord};
-	    $resolved->{$coord}++;
 	}
     }
 }
@@ -1955,9 +1952,7 @@ sub resolve_node_fallback {
     print STDERR "unresolved:\n" if $debug;
     for my $osm_layer (keys %resolve_node_later) {
 	print STDERR "  $osm_layer:\n" if $debug;
-	my $resolved = $resolved{$osm_layer};
 	while(my($coord, $name) = each %{ $resolve_node_later{$osm_layer} }) {
-	    next if $resolved->{$coord};
 	    if ($osm_layer eq 'railway') {
 		my($file, $cat);
  		if ($name =~ s{^U(|-Bhf)\s+}{}) {
