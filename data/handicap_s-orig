@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2013-01-09
+#: last_checked: 2013-01-18
 #: next_check: 2013-05-17
 #: source_id: INKO_113418
 Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-01-11 vvv
+#: last_checked: 2013-01-20 vvv
 #: next_check: 2013-03-15 vvv
 #: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -23,23 +23,22 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2013-01-05 vvv
+#: last_checked: 2013-01-18 vvv
 #: next_check: 2013-02-15 vvv
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
-Helsingforser Str.: Bauarbeiten, Einbahnstraﬂe, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
+# REMOVED (Einbahnstraﬂe) --- Helsingforser Str.: Bauarbeiten, Einbahnstraﬂe, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2013-01-02
-#: next_check: 2013-01-16
+#: last_checked: 2013-01-20
 #: source_id: LMS_3261840849
 G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14247,11681 14272,11775
 # REMOVED --- Bauarbeiten beendet --- Mainzer Str., G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14311,11884 14357,12011
 # 
-#: last_checked: 2013-01-07
-#: next_check: 2013-01-25
+#: last_checked: 2013-01-17
+#: next_check: 2013-02-15
 #: XXX abh‰ngig von den Arbeiten in der Kynaststr.
 #: source_id: IM_018694
 #: XXX auﬂerdem: wahrscheinlich entstehen hier Radspuren, ein Radwegschild h‰ngt schon an der westlichen Seite
@@ -112,10 +111,10 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Fr¸hjahr 2013 --- Rathausstr. und Rathausbr¸cke: Behinderungen wegen Bauarbeiten mˆglich	q1::inwork 10285,12306 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # 
-#: last_checked: 2013-01-04
+#: last_checked: 2013-01-18
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2013-01-04 vvv
+#: last_checked: 2013-01-18 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10489,11405 10437,11352
 Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
@@ -132,6 +131,13 @@ Am Zirkus: Baustelle, Einbahnstraﬂe	q3::inwork; 9167,13046 9239,12923
 # 
 #: last_checked: 2013-01-09
 Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9870,12657 9900,12643 9919,12613
+# 
+### Kreuzberg ###
+# 
+#: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¶INKO_114376¶http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
+#: source_id: INKO_114376
+#: last_checked: 2013-01-18
+Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
 ### Kˆpenick ###
 # 
@@ -457,6 +463,7 @@ Erich-Steinfurth-Str.: Fuﬂg‰nger	q2 12645,11673 12596,11696
 Elbingeroder Weg: hohe Bordsteine	q3 13178,9062 13146,9085
 (An der Apostelkirche - Kurf¸rstenstr.): Fuﬂg‰nger, Bordsteine	q3 7312,10505 7315,10537
 Marie-Elisabeth-L¸ders-Steg: eng, Fuﬂg‰nger	q2 8415,12749 8593,12742 8596,12760
+#: XXX_prog BS Bordstein hˆchstens auf der Westseite, auf der Ostseite abgesenkt, aber Gehweg ist ziemlich kurvig
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
 Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13463,12507 13484,12436 13448,12340
 #: XXX_prog Bordstein zur Parochialstr., die andere Seite ist abgesenkt
@@ -1441,6 +1448,7 @@ Selkestr.: Fuﬂg‰nger, Bordsteine	q3 12722,7261 12741,7224
 (Schildhornstr. - Treitschkestr./Hackerstr.): einige Fuﬂg‰nger	q1 4937,6205 4997,6331 5015,6363 4999,6397
 #: XXX_prog BS auf beiden Seiten
 Eyke-von-Repkow-Platz: einige Fuﬂg‰nger, Bordsteine	q3 5556,12536 5531,12501
+(Alexandrinenstr. - Wassertorstr.): Fuﬂg‰nger	q1 10293,10645 10401,10601 10431,10606 10492,10582
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

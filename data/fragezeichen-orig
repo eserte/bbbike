@@ -45,9 +45,9 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 # 
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2013-01-09
-#: next_check: 2013-03-01
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
+#: last_checked: 2013-01-16
+#: next_check: 2013-04-01
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
 #: XXX Baumaﬂnahme 4.15 (Realisierung nach 2011)
@@ -84,12 +84,12 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaﬂnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2013-01-05
+#: last_checked: 2013-01-18
 #: next_check: 2013-06-01
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaﬂnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-01-10 vvv
+#: last_checked: 2013-01-16 vvv
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -97,7 +97,7 @@ Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaﬂnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2013-01-03
+#: last_checked: 2013-01-17
 #: next_check: 2013-06-01
 Br¸ckenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -372,7 +372,7 @@ Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
-#: last_checked: 2013-01-09 vvv
+#: last_checked: 2013-01-16 vvv
 #: next_check: 2013-06-01
 Planstraﬂe C: Einfahrten existieren noch, aber statt einer Straﬂe ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 #: last_checked ^^^
@@ -784,6 +784,16 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
+# 
+#: XXX Westpark des Gleisdreieckparks, weitere Wege: Beleuchtung, Qualit‰t? vvv
+#: next_check: 2013-04-15 vvv
+	?::inwork 8264,10460 8239,10413 8191,10346 8145,10090
+	?::inwork 8075,10084 8145,10090 8211,10083 8260,10183 8249,10313 8258,10338
+(Eingang Pohlstr.)	?::inwork 8159,10430 8239,10413
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130116.0915.380245.html
+(Eingang B¸lowstr.): muss noch barrierefrei umgebaut werden	?::projected 8027,10076 8075,10084
+#: next_check ^^^
+#: XXX ^^^
 # 
 #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/buddestra__e_lp2_07_03_2011.pdf?start&ts=1299577401&file=buddestra__e_lp2_07_03_2011.pdf
 Buddestr.: existiert hier ein Zebrastreifen?	? 2358,20199 2382,20210
@@ -3227,6 +3237,7 @@ Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straﬂe Straﬂenschild
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012 
 #: XXX siehe auch den Stummel der "Hˆnower Str."
 #: XXX Privatstraﬂe vvv
+#: XXX anonymous meint (2013-01-14): Asphalt, aber stimmt das tats‰chlich?
 #: last_checked: 2012-12-30 vvv
 #: next_check: 2013-03-01 vvv
 Sokratesweg: Qualit‰t nach den Bauarbeiten?	?::inwork 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459

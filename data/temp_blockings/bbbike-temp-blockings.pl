@@ -20530,12 +20530,12 @@ userdel	q4::inwork; 10953,15787 11086,15772
 EOF
      },
      { from  => 1342594800, # 2012-07-18 09:00
-       until => undef, # XXX 1351724340, # 1350054000, # 2012-10-12 17:00
+       until => 1358534778, # -> moved to handicap_s-orig --- undef, # XXX 1351724340, # 1350054000, # 2012-10-12 17:00
        text  => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
        type  => 'handicap',
        source_id => 'INKO_114376',
        data  => <<EOF,
-#: last_checked: 2013-01-05
+#: last_checked: 2013-01-18
 #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
 userdel	q4::inwork; 11389,10463 11393,10390
 EOF

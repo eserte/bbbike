@@ -1000,17 +1000,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019522',
-         'until' => 1358445600,
-         'text' => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig zwischen Tempelhofer Damm und Columbiadamm gesperrt (bis Donnerstag)',
-         'from' => 1358139600,
-         'id' => 2245,
-         'data' => 'userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
-userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1266,18 +1256,7 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_114376',
-         'until' => undef,
-         'text' => 'Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt',
-         'from' => 1342594800,
-         'id' => 2369,
-         'data' => '#: last_checked: 2013-01-05
-#: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
-userdel	q4::inwork; 11389,10463 11393,10390
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1485,16 +1464,6 @@ userdel	q4::inwork; 13444,7879 13474,8060
          'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
 	2::night 12773,12683 13046,12956
 '
-       },
-       {
-         'until' => 1358549999,
-         'text' => 'Schloßplatz: Weg an der ehemaligen Grünfläche für einige Tage gesperrt',
-         'from' => undef,
-         'id' => 2414,
-         'data' => '#: by: http://www.tagesspiegel.de/berlin/gruenflaeche-muss-dem-schloss-weichen-ab-heute-verschwindet-der-rasen-am-schlossplatz-/7593590.html
-userdel	2::inwork 10155,12494 10285,12306
-',
-         'type' => 'gesperrt'
        }
      
 );
