@@ -723,8 +723,14 @@ for my $osm_file (@osm_files) {
 			resolve_node_later("railway", $name, $ll);
 			$next2->();
 		    }
-		} elsif ($railway_cat =~ m{^(?:crossing|level_crossing)$}) {
+		} elsif ($railway_cat eq 'level_crossing') {
 		    push @or, ["ampeln", "B"];
+		} elsif ($railway_cat eq 'crossing') {
+		    # railway=level_crossing is for roads, and
+		    # railway=crossing for pedestrian crossings,
+		    # mainly on tramways, which should not be rendered
+		    # at all
+		    $next2->();
 		} elsif ($railway_cat eq 'tram_stop') { # takes precedence over highway=bus_stop
 		    add_underline(\@or, '_oepnv', 'Tramstop');
 		} else {
