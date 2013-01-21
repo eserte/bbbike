@@ -245,8 +245,8 @@ my %smoothness_to_de = ('excellent'     => 'ausgezeichnet',
 
 use constant HIGHWAY_BAB_RX => qr{^(?:motorway|motorway_link|trunk|trunk_link)$};
 use constant HIGHWAY_HH_RX  => qr{^(?:primary|primary_link)$};
-use constant HIGHWAY_H_RX   => qr{^(?:secondary)$};
-use constant HIGHWAY_NH_RX  => qr{^(?:tertiary)$};
+use constant HIGHWAY_H_RX   => qr{^(?:secondary|secondary_link)$};
+use constant HIGHWAY_NH_RX  => qr{^(?:tertiary|tertiary_link)$};
 use constant HIGHWAY_N_RX   => qr{^(?:residential|unclassified|service|minor)$};
 
 use constant CONSTRUCTION_RX => qr{^(?:construction)$};
@@ -762,7 +762,7 @@ for my $osm_file (@osm_files) {
 	    } elsif (exists $tag{'place'}) {
 		my $place = $tag{'place'};
 		my $population = exists $tag{'population'} ? $tag{'population'} : $tag{'openGeoDB:population'};
-		if ($population && $place !~ m{^(suburb|state)$}) { # "Mahlsdorf" is a suburb, but with a population tag; "Sachsen" has place=state
+		if ($population && $place !~ m{^(neighbourhood|suburb|state)$}) { # "Mahlsdorf" is a suburb, but with a population tag; "Sachsen" has place=state
 		    my $cat;
 		    if ($population >= 200000) {
 			$cat = 6;
@@ -795,6 +795,8 @@ for my $osm_file (@osm_files) {
 			# would check for the coastline of this island and
 			# create a proper F:I item
 			push @or, ["wasserstrassen", "I"],
+		    } elsif ($place eq 'neighbourhood') {
+			# ignore
 		    } else {
 			$unhandled{"node-place=$place"}++;
 		    }
