@@ -22,15 +22,17 @@ sub usage (;$) {
     my $msg = shift;
     warn "$msg\n" if $msg;
     die <<EOF;
-usage: $0 [-variant relations] osmfile
+usage: $0 [-variant ways|relations] osmfile
 EOF
 }
 
 my $variant;
 GetOptions("variant=s" => \$variant)
     or usage;
-$variant =~ m{^(relations)$}
-    or usage "variant '$variant' not valid";
+$variant
+    or usage "please specify -variant";
+$variant =~ m{^(ways|relations)$}
+    or usage "variant '$variant' not valid, please use ways or relations";
 my $file = shift
     or usage "Please specify .osm file";
 @ARGV and usage "Please only one .osm file";
@@ -44,7 +46,7 @@ my $root = $p->parse_file($file)->documentElement;
 for my $typedef (
 		 ['node',     \%nodes],
 		 ['way',      \%ways],
-		 ['relation', \%relations],
+		 ($variant eq 'relations' ? ['relation', \%relations] : ()),
 		) {
     my($type, $hashref) = @$typedef;
     for my $element ($root->findnodes('/osm/' . $type)) {
@@ -97,18 +99,32 @@ for my $typedef (
     }
 }
 
-while(my($id, $relation) = each %relations) {
-    resolve_relation_members($relation);
+if ($variant eq 'relations') {
+    while(my($id, $relation) = each %relations) {
+	resolve_relation_members($relation);
+    }
+} elsif ($variant eq 'ways') {
+    while(my($id, $way) = each %ways) {
+	resolve_way_nodes($way);
+    }
 }
 
 binmode \*STDOUT, ':utf8';
 print "#: map: polar\n";
 print "#: encoding: utf-8\n";
 print "#:\n";
-for my $id (sort { $a <=> $b } keys %relations) {
-    my $relation = $relations{$id};
-    my $s = output_relation($relation);
-    print $s;
+if ($variant eq 'relations') {
+    for my $id (sort { $a <=> $b } keys %relations) {
+	my $relation = $relations{$id};
+	my $s = output_relation($relation);
+	print $s;
+    }
+} else {
+    for my $id (sort { $a <=> $b } keys %ways) {
+	my $way = $ways{$id};
+	my $s = output_way($way);
+	print $s;
+    }
 }
 
 sub output_relation {
