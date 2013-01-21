@@ -115,9 +115,15 @@ sub output_relation {
     my $relation = shift;
     my $s = "#: section: relation " . tags_attribs_to_name($relation) . " vvv\n";
     for my $member (@{ $relation->{members} }) {
-	my $sub = "output_" . $member->{type};
-	no strict 'refs';
-	my $member_s = &$sub($member->{__object});
+	my $member_object = $member->{__object};
+	my $member_s;
+	if (!$member_object) {
+	    $member_s = "# relation member ref=$member->{ref} is missing\n";
+	} else {
+	    my $sub = "output_" . $member->{type};
+	    no strict 'refs';
+	    $member_s = &$sub($member_object);
+	}
 	my $role = $member->{role};
 	if (defined $role && length $role) {
 	    if ($member_s =~ m{\n.*\n}) {
