@@ -22,17 +22,12 @@ sub usage (;$) {
     my $msg = shift;
     warn "$msg\n" if $msg;
     die <<EOF;
-usage: $0 [-variant ways|relations] osmfile
+usage: $0 osmfile
 EOF
 }
 
-my $variant;
-GetOptions("variant=s" => \$variant)
+GetOptions()
     or usage;
-$variant
-    or usage "please specify -variant";
-$variant =~ m{^(ways|relations)$}
-    or usage "variant '$variant' not valid, please use ways or relations";
 my $file = shift
     or usage "Please specify .osm file";
 @ARGV and usage "Please only one .osm file";
@@ -46,7 +41,7 @@ my $root = $p->parse_file($file)->documentElement;
 for my $typedef (
 		 ['node',     \%nodes],
 		 ['way',      \%ways],
-		 ($variant eq 'relations' ? ['relation', \%relations] : ()),
+		 ['relation', \%relations],
 		) {
     my($type, $hashref) = @$typedef;
     for my $element ($root->findnodes('/osm/' . $type)) {
@@ -99,36 +94,43 @@ for my $typedef (
     }
 }
 
-if ($variant eq 'relations') {
-    while(my($id, $relation) = each %relations) {
-	resolve_relation_members($relation);
-    }
-} elsif ($variant eq 'ways') {
-    while(my($id, $way) = each %ways) {
-	resolve_way_nodes($way);
-    }
+my %relations_resolved;
+my %ways_resolved;
+while(my($id, $relation) = each %relations) {
+    resolve_relation_members($relation);
 }
+while(my($id, $way) = each %ways) {
+    resolve_way_nodes($way);
+}
+
+my %relations_done;
+my %ways_done;
+my %nodes_done;
 
 binmode \*STDOUT, ':utf8';
 print "#: map: polar\n";
 print "#: encoding: utf-8\n";
 print "#:\n";
-if ($variant eq 'relations') {
-    for my $id (sort { $a <=> $b } keys %relations) {
-	my $relation = $relations{$id};
-	my $s = output_relation($relation);
-	print $s;
-    }
-} else {
-    for my $id (sort { $a <=> $b } keys %ways) {
-	my $way = $ways{$id};
-	my $s = output_way($way);
-	print $s;
-    }
+for my $id (sort { $a <=> $b } keys %relations) {
+    my $relation = $relations{$id};
+    my $s = output_relation($relation, undef);
+    print $s if defined $s;
+}
+for my $id (sort { $a <=> $b } keys %ways) {
+    my $way = $ways{$id};
+    my $s = output_way($way, undef);
+    print $s if defined $s;
+}
+for my $id (sort { $a <=> $b } keys %nodes) {
+    my $node = $nodes{$id};
+    my $s = output_node($node, undef);
+    print $s if defined $s;
 }
 
 sub output_relation {
-    my $relation = shift;
+    my($relation, $parent) = @_;
+    return if !$parent && $relations_done{$relation};
+    $relations_done{$relation}++;
     my $s = "#: section: relation " . tags_attribs_to_name($relation) . " vvv\n";
     for my $member (@{ $relation->{members} }) {
 	my $member_object = $member->{__object};
@@ -138,35 +140,46 @@ sub output_relation {
 	} else {
 	    my $sub = "output_" . $member->{type};
 	    no strict 'refs';
-	    $member_s = &$sub($member_object);
-	}
-	my $role = $member->{role};
-	if (defined $role && length $role) {
-	    if ($member_s =~ m{\n.*\n}) {
-		$member_s = "#: role $role vvv\n" . $member_s . "#: role ^^^\n";
+	    $member_s = &$sub($member_object, $relation);
+	    if (!defined $member_s) {
+		$member_s = "# member ref=$member->{ref} type=$member->{type} probably already dumped\n";
 	    } else {
-		$member_s = "#: role $role\n" . $member_s;
+		my $role = $member->{role};
+		if (defined $role && length $role) {
+		    if ($member_s =~ m{\n.*\n}) {
+			$member_s = "#: role $role vvv\n" . $member_s . "#: role ^^^\n";
+		    } else {
+			$member_s = "#: role $role\n" . $member_s;
+		    }
+		}
 	    }
 	}
 	$s .= $member_s;
     }
     $s .= "#: section ^^^\n";
+    $s .= "# \n";
     $s;
 }
 
 sub output_way {
-    my $way = shift;
+    my($way, $parent) = @_;
+    return if !$parent && $ways_done{$way};
+    $ways_done{$way}++;
     my $s = tags_attribs_to_name($way) . "\tX";
-    for my $node (@{ $way->{nodes} }) {
-	my $attributes = $node->{__object}->{attributes};
+    for my $node_container (@{ $way->{nodes} }) {
+	my $node = $node_container->{__object};
+	my $attributes = $node->{attributes};
 	$s .= " " . $attributes->{lon}.",".$attributes->{lat};
+	$nodes_done{$node}++;
     }
     $s .= "\n";
     $s;
 }
 
 sub output_node {
-    my $node = shift;
+    my($node, $parent) = @_;
+    return if !$parent && $nodes_done{$node};
+    $nodes_done{$node}++;
     tags_attribs_to_name($node) . "\tX " . $node->{attributes}->{lon}.",".$node->{attributes}->{lat} . "\n";
 }
 
@@ -186,6 +199,7 @@ sub tags_attribs_to_name {
 
 sub resolve_relation_members {
     my $relation = shift;
+    return if $relations_resolved{$relation}++;
     for my $member (@{ $relation->{members} }) {
 	my $resolved_member;
 	if ($member->{type} eq 'relation') {
@@ -209,6 +223,7 @@ sub resolve_relation_members {
 
 sub resolve_way_nodes {
     my $way = shift;
+    return if $ways_resolved{$way}++;
     my @resolved_nodes;
     for my $node (@{ $way->{nodes} }) {
 	my $resolved_node = $nodes{$node->{ref}};
