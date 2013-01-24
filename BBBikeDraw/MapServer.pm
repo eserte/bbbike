@@ -245,7 +245,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 	$self->Width($w);
 	$self->Height($h);
 	$self->ImageType($args{imagetype}) 
-	    if exists $args{imagetype};
+	    if defined $args{imagetype};
 	$self;
     }
 
