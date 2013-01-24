@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -11,8 +11,8 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# Description (en): Launch Merkaartor
-# Description (de): Schnittstelle zu Merkaartor
+# Description (en): Launch Merkaartor or JOSM
+# Description (de): Schnittstelle zu Merkaartor/JOSM
 package MerkaartorPlugin;
 
 use BBBikePlugin;
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use vars qw(%images);
 
@@ -30,6 +30,11 @@ sub register {
 	{ name => "Merkaartor (via Kommandozeile)",
 	  callback => sub { merkaartor_via_cmdline(@_) },
 	  ($images{Merkaartor} ? (icon => $images{Merkaartor}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_JOSMCmdline"} =
+	{ name => "JOSM (via Kommandozeile)",
+	  callback => sub { josm_via_cmdline(@_) },
+	  ($images{JOSM} ? (icon => $images{JOSM}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . "_MerkaartorURL"} =
 	{ name => "Merkaartor/JOSM (via URL)",
@@ -68,6 +73,30 @@ s+rTQhM3GrqhH21qNYGPYMyMjalaqX3v7o13LuViJ5TDo8bSk01CcSwrFp/le2TuFZAxVO70
 Ub2wAAAAAElFTkSuQmCC
 EOF
     }
+    if (!defined $images{JOSM} && eval { require Tk::PNG; 1 }) {
+	# Logo in josm jar: images/logo_16x16x8.png
+	# Created base64:
+	#   mmencode -b ...
+	$images{JOSM} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAACPVBMVEUBAAAAAAD///9APUJE
+QUaOmH6an4JoalksNCpgaVaZt3uImHNCQUVVVlJSU1BaXFlIRkg7PjaluZXm4rTU2KvR6rnA
+8pOcynNubG56gna1xKyVtXmatYCFkXpZWlpwfmXW6bfp46/m/8rG751ecVFebVTA3KPl8eC9
+1LCqwJXF3quOnoFXVlvR2qvh5LHf/MW/2KNkZ2Jllj9+tVidxnuPum+fuJGyy6Wkuo5cXFyX
+q4zh2anh877j/8eux5dkbF5sn0Rcj75xqmeLv1aovpbD2K57iWhKSEx9f3qxxZvj877h1abh
+77i32Zt1dnV3mIJ/qbyAqqujwnuvvqS70qg/SDdgXmLE1qjg/MXc0qLZ4q/m/8aHjoN1fHDE
+3qKx0J25yqm0vqywx5xNVUlycHOktZXg+cLg5LLay5+znoR0fHVram5vfGaIjGl9j2uKmX2R
+mohZWVl1f23O6L/n/MWDdkBLNAh2bGB7hXxwcGOCfYCcoZ2mq6qura6GfmnP5LJ+cj1CLwVh
+TBZaQQquupXTz72vpJq/rJm1p5vKxb/U2s+fqICEeEBCLgRfSxhlRQVtWiXX6sGknpVNIwBb
+MgdAIgMSCACQj5Lv7u9bRxNJNwxdSRZqTQx4XynOw5vU1ajc3NSkm5NiVEdSSUJtbG2wsLDX
+19fR0dFtUx9RPRFaRxNtTg1cThqjqIytrIyZn4vIysTu8PDW1ta+vr5bSRVpTQ9gSxTMzMvZ
+2NjFxMStra2amppVRh6BgYF6enoO+csKAAAAAXRSTlMAQObYZgAAAHFJREFUGNNjYIADZhYQ
+ycjAyogE3jOwMPCiCjAyyCMLMF5hYXioiywAVGGFooKRhYEfhb+KhYEPRYABTaAf3VoGoEBf
+PYoAI0M3ihkZ6IYuZ1kBYwYxrGf8zOvLyLCFkdEL5M3tIFFXEGsP1Pt794FIAF7gEE4ei/dj
+AAAAAElFTkSuQmCC
+EOF
+    }
 }
 
 sub merkaartor_via_cmdline {
@@ -77,6 +106,16 @@ sub merkaartor_via_cmdline {
     if (fork == 0) {
 	exec('merkaartor', $url);
 	die "Cannot start merkaartor $url: $!";
+    }
+}
+
+sub josm_via_cmdline {
+    my(%args) = @_;
+    my $download_opt = sprintf '--download=%s,%s,%s,%s',
+	$args{py1}, $args{px0}, $args{py0}, $args{px1};
+    if (fork == 0) {
+	exec('josm', $download_opt);
+	die "Cannot start JOSM $download_opt: $!";
     }
 }
 
@@ -123,7 +162,7 @@ __END__
 
 =head1 NAME
 
-MerkaartorPlugin - interface to merkaartor (and maybe also JOSM)
+MerkaartorPlugin - interface to merkaartor and JOSM
 
 =head1 DESCRIPTION
 
@@ -131,8 +170,7 @@ Note: merkaartor with at least version 0.16.0 is needed for this
 functionality. For the "via URL" functionality the "local server"
 setting in merkaartor's network preferences need to be set.
 
-JOSM is not tested at all, but should work with the "via URL"
-functionality.
+JOSM also works, both with commandline and via URL.
 
 =head1 AUTHOR
 
