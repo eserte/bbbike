@@ -60,6 +60,8 @@ my %id_to_record;
     open my $fh, $osm_watch_list or die $!;
     while(<$fh>) {
 	chomp;
+	next if m{^\s*#};
+	next if m{^\s*$};
 	my($type, $id, $version, $info);
 	if (($type, $id, $version, $info) = $_ =~ m{^(way|node)\s+id="(\d+)"\s+version="(\d+)"\s+(.*)$}) {
 	    push @osm_watch_list_data, { type => $type, id => $id, version => $version, info => $info };
