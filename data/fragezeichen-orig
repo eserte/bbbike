@@ -89,7 +89,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-01-16 vvv
+#: last_checked: 2013-01-27 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -196,7 +196,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
-#: last_checked: 2013-01-11
+#: last_checked: 2013-01-23
 #: next_check: 2013-09-01
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 #: last_checked: 2013-01-05
@@ -264,6 +264,8 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 Brücke über den Burgwallgraben: Realisierung bis Jahresende 2012	?::inwork -3441,13270 -3333,13089 -3332,13054
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4 vvv
+#: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4&date=20130125 vvv
+#: next_check: 2013-04-01 vvv
 Frohnauer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 2437,24435 2437,24393
 #: last_checked: 2012-08-12
 Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8091,17194
@@ -273,9 +275,10 @@ Waidmannsluster Damm/Am Leitbruch: wird hier ein Zebrastreifen angelegt?	?::proj
 Zeltinger Str. Höhe Einmündung in den Zeltinger Platz: wird hier ein Zebrastreifen angelegt?	?::projected 2440,25291 2480,25268
 Zeltinger Platz Höhe Reichelt/Post: wird hier ein Zebrastreifen angelegt? (genaue Position?)	?::projected 2455,25206 2503,25242
 #: by: http://heiligensee.cdu-reinickendorf.de/Zeitung/Wir-im-Norden_12_0030_web.pdf
-#: next_check: 2013-04-01
 Eichelhäherstr.: hier wird ein Zebrastreifen entstehen (Bauarbeiten beginnen nach der Frostperiode Anfang 2013)	?::projected -1802,19653 -1778,19649
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3655,23244
+#: next_check ^^^
+#: by: ^^^
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3317&options=4
@@ -784,6 +787,17 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Lückenschluss, auch zur Siegfriedstr.)
+#: XXX evtl. entsteht hier auch eine offizielle Verbindung?
+Landschaftspark Herzberge - Arendsweg: evtl. den inoffiziellen Trampelpfad aufnehmen	? 17266,14144 17335,14167
+Radweg Herzberge: tatsächlich wieder befahrbar?	? 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144
+# 
+#: next_check: 2013-05-01
+Tegelort - Hakenfelde (sowie Fähre via Valentinswerder): prüfen, ob es nennenswerte Verbindungen gibt (außer am Wochenende)	? -1694,17839 -1828,17796
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2013
+Am Valwigerteich: gibt es mittlerweile eine Durchfahrtmöglichkeit?	? 18867,12265 18917,12271
 # 
 #: XXX Westpark des Gleisdreieckparks, weitere Wege: Beleuchtung, Qualität? vvv
 #: next_check: 2013-04-15 vvv

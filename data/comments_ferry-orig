@@ -50,6 +50,9 @@ F21 (Krampe): Mo keine Fahrten; stündlich von ca. 10 bis 18 Uhr; Saisonbetrieb (
 F23: nicht montags, ca. stündlich von 10 bis 18 Uhr; Saisonbetrieb (ca. April - Anfang Oktober); BVG-Tarif; ca. 25 Minuten Fahrzeit zwischen Müggelwerderweg und Kruggasse; die Haltestelle Neu-Helgoland wird nur in Fahrtrichtung Osten angefahren	CS 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
 #: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/Spreewiesen_berlKruggasse_berlin.pdf?pathinfo=/dn&dwn=8u/8ug2stkciiytyi4c_1_1.pdf
 #: as_of: 2010-06
+#: XXX evtl. wird die Fähre im Oktober 2013 zum letzten Mal fahren
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4460&options=4
+#: next_check: 2013-10-03
 F24 (Spree): nicht montags, ca. stündlich von 11 bis 19 Uhr; Saisonbetrieb (ca. April - Anfang Oktober); BVG-Tarif; ca. 5 Minuten Fahrzeit	CS 29959,3031 29968,2986
 #: XXX_prog ^^^
 # 
@@ -58,15 +61,18 @@ F24 (Spree): nicht montags, ca. stündlich von 11 bis 19 Uhr; Saisonbetrieb (ca. 
 Karniner Fähre: Die Fähre verkehrt vom 1.Mai bis 3.Oktober (11-17 Uhr) regelmäßig zwischen Kamp und Karnin (Zollhafen sowie Naturhafen). Der Fährmann Herr Christof Reimann kann unter 0177-2834504 erreicht werden. Die Überfahrt kostet 5 Euro pro Person und 2,50 Euro pro Fahrrad/Kind/Anhänger.	CS 38674,160390 37644,160344 38049,160420 38325,160573
 #: XXX_prog ^^^
 # 
-#: by: Tagesspiegel-Beitrag; korrigierte Preise, Fahrzeiten und Telefonnummer laut http://www.suedwestbezirk.de/insel.html: vvv
-#: as_of: 2007-06 vvv
-Valentinswerder - Tegelort: pro Person 0,80 Euro, pro Fahrrad 0,20 Euro; halbstündlich zwischen 6 und 20 Uhr (ab Valentinswerder zehn Minuten nach der vollen und fünf Minuten nach der halben Stunde); Tel. 030-3356835	CS -1557,17415 -1581,17488 -1575,17651 -1694,17839
-Saatwinkel - Valentinswerder: pro Person 0,80 Euro, pro Fahrrad 0,20 Euro; stündlich (ab Saatwinkel zur vollen Stunde); Tel. 030-3356835	CS -825,17058 -1196,17045 -1548,17237 -1592,17328 -1557,17415
-#: as_of: ^^^
+# REMOVED --- #: by: Tagesspiegel-Beitrag; korrigierte Preise, Fahrzeiten und Telefonnummer laut http://www.suedwestbezirk.de/insel.html: vvv
+# REMOVED --- #: as_of: 2007-06 vvv
+# REMOVED --- #: by: http://www.valentinswerder.de/index.php?include=8&date=20130125 (Übernahme der Fähre, neue Fahrzeiten)
+# REMOVED --- #: by: http://www.berlin.de/tourismus/dampferfahrten/faehren/1853406-1824660-faehre-tegelort-saatwinkel.html
+# REMOVED --- #: XXX zu seltene Fahrten! Im Winter nur zwei Verbindungen pro Richtung und nur am Wochenende und nur nach Tegelort!
+# REMOVED --- Valentinswerder - Tegelort: pro Person 0,80 Euro, pro Fahrrad 0,20 Euro; halbstündlich zwischen 6 und 20 Uhr (ab Valentinswerder zehn Minuten nach der vollen und fünf Minuten nach der halben Stunde); Tel. 030-3356835	CS -1557,17415 -1581,17488 -1575,17651 -1694,17839
+# REMOVED --- Saatwinkel - Valentinswerder: pro Person 0,80 Euro, pro Fahrrad 0,20 Euro; stündlich (ab Saatwinkel zur vollen Stunde); Tel. 030-3356835	CS -825,17058 -1196,17045 -1548,17237 -1592,17328 -1557,17415
+# REMOVED --- #: as_of: ^^^
 # 
 #: by: srt (alles außer Telefonnummer)
-#: as_of: 2011-06
-Aalemannufer: 0,80 Euro pro Person mit Fahrrad; Fahrzeiten bei Bedarf im Sommer (April-Oktober) zwischen 6 und 20 Uhr, im Winter (November-März) zwischen 6 und 19 Uhr, So ab 8 Uhr; Tel. 030-3356835	CS -1834,18414 -1989,18378
+#: as_of: 2013-01
+Aalemannufer: 0,80 Euro pro Person mit Fahrrad; Fahrzeiten bei Bedarf im Sommer (April-Oktober) zwischen 6 und 20 Uhr, im Winter (November-März) zwischen 6 und 19 Uhr, So ab 8 Uhr; Tel. 030-3616695	CS -1834,18414 -1989,18378
 #: by: ^^^
 # 
 #: as_of: 2007-06

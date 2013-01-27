@@ -1445,16 +1445,7 @@ userdel	q4::inwork; 13444,7879 13474,8060
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_019489',
-         'until' => 1358981999,
-         'text' => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, bis 23. Januar 2013',
-         'from' => 1357040979,
-         'id' => 2412,
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
