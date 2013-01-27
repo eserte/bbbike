@@ -27,13 +27,15 @@ my $berlin_osm_bz2 = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
 my $show_unchanged;
 my $quiet;
 my $show_diffs;
+my $new_file;
 GetOptions(
 	   "show-unchanged" => \$show_unchanged,
 	   "diff!" => \$show_diffs,
 	   "q|quiet" => \$quiet,
 	   "osm-watch-list=s" => \$osm_watch_list,
+	   "new-file=s" => \$new_file,
 	  )
-    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...]";
+    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...]";
 
 my $ua;
 if ($show_diffs) {
@@ -57,15 +59,17 @@ if (-M $berlin_osm_bz2 >= 7) {
 
 my @osm_watch_list_data;
 my %id_to_record;
+my @file_lines;
 {
     open my $fh, $osm_watch_list or die $!;
     while(<$fh>) {
+	push @file_lines, $_;
 	chomp;
 	next if m{^\s*#};
 	next if m{^\s*$};
 	my($type, $id, $version, $info);
 	if (($type, $id, $version, $info) = $_ =~ m{^(way|node)\s+id="(\d+)"\s+version="(\d+)"\s+(.*)$}) {
-	    push @osm_watch_list_data, { type => $type, id => $id, version => $version, info => $info };
+	    push @osm_watch_list_data, { type => $type, id => $id, version => $version, info => $info, line => $. };
 	    $id_to_record{"$type/$id"} = $osm_watch_list_data[-1];
 	} else {
 	    warn "ERROR: Cannot parse string '$_'";
@@ -103,6 +107,9 @@ my $changed_count = 0;
 			    print STDERR "*** URL: http://www.openstreetmap.org/browse/$type/$id\n";
 			    show_diff($type, $id, $old_version, $new_version);
 			}
+			if ($new_file) {
+			    $file_lines[$record->{line}-1] =~ s{version="$old_version"}{version="$new_version"};
+			}
 			$changed_count++;
 		    } else {
 			if ($show_unchanged) {
@@ -122,9 +129,11 @@ my $changed_count = 0;
     }
 }
 
+my $deleted_count = 0;
 while(my($k,$v) = each %id_to_record) {
     if (!$consumed{$k}) {
 	warn "DELETED: could not find $k in osm data. Removed?\n";
+	$deleted_count++;
 	if ($show_diffs) {
 	    my($type, $id, $old_version) = @{$v}{qw(type id version)};
 	    show_diff($type, $id, $old_version, -1);
@@ -132,8 +141,26 @@ while(my($k,$v) = each %id_to_record) {
     }
 }
 
-if ($changed_count) {
-    warn "INFO: Found $changed_count changed entry/ies.\n";
+if ($changed_count || $deleted_count) {
+    my @terms;
+    if ($changed_count) {
+	push @terms, "$changed_count changed entry/ies";
+    }
+    if ($deleted_count) {
+	push @terms, "$deleted_count deleted entry/ies";
+    }
+    print STDERR "INFO: Found " . join(" and ", @terms) . ".\n";
+    if ($new_file) {
+	open my $fh, ">", $new_file
+	    or die "ERROR: Can't write to $new_file: $!";
+	print $fh @file_lines;
+	close $fh
+	    or die "ERROR: problem while writing to $new_file: $!";
+	print STDERR "INFO: the new file was written to $new_file\n";
+	if ($deleted_count) {
+	    print STDERR "WARN: the new file does not have the possibly deleted records removed!\n";
+	}
+    }
     exit 2;
 }
 
