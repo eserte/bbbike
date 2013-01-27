@@ -43,6 +43,7 @@
 <li><a class="POD_NAVLINK" href="#OTHER_STANDARD_FILES">OTHER STANDARD FILES</a>
 </ul>
 <li><a class="POD_NAVLINK" href="#ATTRIBUTES">ATTRIBUTES</a>
+<li><a class="POD_NAVLINK" href="#CONVENTIONS">CONVENTIONS</a>
 <li><a class="POD_NAVLINK" href="#EXAMPLES">EXAMPLES</a>
 <li><a class="POD_NAVLINK" href="#CAVEATS">CAVEATS</a>
 <li><a class="POD_NAVLINK" href="#AUTHOR">AUTHOR</a>
@@ -397,9 +398,9 @@ in a ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a
 starting and an end date).
 <dt class="POD_ITEM"><a name="XXX_why"><code>XXX: <i>why</i></code></a>
 <dd>
-The next block or line is unsure or unclear information. The <i>why</i>
-text specifies an additional comment. This note should not appear in
-the processed data.
+The next block or line is unsure or unclear information, and usually
+has to be researched on-site. The <i>why</i> text specifies an additional
+comment. This note should not appear in the processed data.
 <p class="POD_TEXT">
 Earlier versions also defined <code>unsure</code> as an alias for <code>XXX</code> (or
 even the other way around), but in reality <code>unsure</code> was almost never
@@ -437,8 +438,8 @@ The unclear information can only be researched &quot;indoor&quot;,
 and usually not on-site.
 <dt class="POD_ITEM"><a name="XXX_outdoor_why"><code>XXX_outdoor: <i>why</i></code></a>
 <dd>
-The unclear information can only be researched on-site. Usually this
-is the same as <code>XXX</code>.
+Deprecated. Usually this is the same as <code>XXX</code>, and scripts don&#39;t
+support this type anymore.
 <dt class="POD_ITEM"><a name="XXX_osm_why"><code>XXX_osm: <i>why</i></code></a>
 <dd>
 An issue in OpenStreetMap data, e.g. incorrectly spelled street name
@@ -532,6 +533,10 @@ An (official) URL referring to more information.
 <dd>
 Some postprocessing code may add the following line with the
 descriptive text <i>string</i> to the <code>fragezeichen</code> file.
+<dt class="POD_ITEM"><a name="complete_yes_no"><code>complete: yes<i>|</i>no</code></a>
+<dd>
+May be used to mark a feature as complete or incomplete (e.g. cycle
+routes).
 </dl>
 <h4 class="POD_HEAD3"><a name="Obsolete_and_to_be_d">Obsolete and to-be-decided directives</a></h4>
 <dl class="POD_LIST">
@@ -692,6 +697,12 @@ Garten).
 <dd>
 Radweg vorhanden, aber nicht weiter kategorisiert.
 </dl>
+<p class="POD_TEXT">
+Folgende Kategorien k&ouml;nnen in der &quot;-orig&quot;-Variante ein &quot;?&quot;
+nachgestellt haben, um anzuzeigen, dass Informationen fehlen: <code>RW3</code>,
+<code>RW4</code> (Benutzungspflicht unbekannt) und <code>RW5</code> (G&uuml;ltigkeitsdauer der
+Busspur fehlt).
+</p>
 <h3 class="POD_HEAD2"><a name="RAILROADS">RAILROADS</a></h3>
 <p class="POD_TEXT">
 Used in files: <code>ubahn</code>, <code>sbahn</code>, <code>rbahn</code>, <code>ubahnhof</code>, <code>sbahnhof</code>,
@@ -892,7 +903,8 @@ Parks.
 Forests.
 <dt class="POD_ITEM"><a name="Cemetery"><code>Cemetery</code></a>
 <dd>
-Cemeteries.
+Cemeteries. May have a religion tag, e.g. <code>F:Cemetery|religion=muslim</code>
+or <code>F:Cemetery|religion=jewish</code>.
 <dt class="POD_ITEM"><a name="Ae"><code>Ae</code></a>
 <dd>
 Airports.
@@ -986,7 +998,16 @@ attribute is already handled in a couple of data files
 <dt class="POD_ITEM"><a name="Tu">Tu</a>
 <dd>
 The map item is in a tunnel. This is already handled in <code>sbahn</code>,
-<code>rbahn</code> and <code>strassen_bab</code>.
+<code>rbahn</code>, <code>ubahn</code>, <code>strassen_bab</code>, and <code>wasser*</code>.
+<p class="POD_TEXT">
+Note that not every BBBike renderer may render a tunnel specially. The
+Perl/Tk application has complete render support for all tunnel
+categories (see also the below ones). The PDFCairo renderer has simple
+support for tunnels (drawn as dashed lines). The PDF and GD renderers
+draw tunnels like normal lines, except for tunneled waterways, which
+are currently completely ignored. All other renderers (e.g. Mapserver)
+draw all tunnels like normal lines.
+</p>
 <dt class="POD_ITEM"><a name="Tu_">Tu_</a>
 <dd>
 The map item is in a tunnel and a tunnel mound should only be drawn at the
@@ -1021,15 +1042,44 @@ purposes (i.e. routing). See <a class="POD_LINK" href="#ignrte">ignrte</a>.
 <dd>
 Ignore in routing. Item will not be used in routing, but may be used
 for other purposes (i.e. display). See <a class="POD_LINK" href="#igndisp">igndisp</a>.
-<dt class="POD_ITEM"><a name="_"></a>
-<dd></dl>
+<dt class="POD_ITEM"><a name="temp">temp</a>
+<dd>
+Mark a &quot;temporary&quot; entry, which is non-recurring. Used in temp
+blockings. Currently rendered with a &quot;calendar&quot; sign.
+<dt class="POD_ITEM"><a name="night">night</a>
+<dd>
+Mark a temporary blocking which is active only at night. Currently
+rendered with a &quot;moon&quot; sign.
+<dt class="POD_ITEM"><a name="weekend">weekend</a>
+<dd>
+Mark a temporary blocking which is active at weekend. Currently not
+rendered.
+<dt class="POD_ITEM"><a name="clock">clock</a>
+<dd>
+Mark a temporary blocking which is recurring. Currently rendered with
+a &quot;clock&quot; sign.
+</dl>
+<h2 class="POD_HEAD1"><a name="CONVENTIONS">CONVENTIONS</a></h2>
+<p class="POD_TEXT">
+Lines which are to be removed, but still should be kept as a kind of
+&quot;historical documentation&quot;, may be turned into a comment with
+&quot;REMOVED&quot; as the first word. Multiple lines may be joined into one
+line, separated by a &quot;---&quot;. For example:
+</p>
+<pre class="POD_VERBATIM">
+    # REMOVED --- #: confirmed_by: me --- old entry X 1234,5678 9876,5432
+</pre>
 <h2 class="POD_HEAD1"><a name="EXAMPLES">EXAMPLES</a></h2>
 <pre class="POD_VERBATIM">
     #: map: polar
     # a comment
     Dudenstr.	H 13.3857982559056,52.4850047136888 13.3822671967909,52.4849893166144 13.3765591649622,52.4849797043717 13.3721313913775,52.4849830887141 13.3708964575072,52.4850055627098
     Viktoriapark	F:P 13.3770529147335,52.4891642850551 13.376956820767,52.4876188211697 13.3778829456197,52.4875997186591
-
+</pre>
+<p class="POD_TEXT">
+And a detailed explanation...
+</p>
+<pre class="POD_VERBATIM">
     Start of a directive
     v
     #: map: polar
@@ -1040,8 +1090,6 @@ for other purposes (i.e. display). See <a class="POD_LINK" href="#igndisp">igndi
     v
     # a comment
 </pre>
-
-And a detailed explanation...
 <p class="POD_TEXT">
 (Note that spaces are insignificant in the following examples, but
 <code>&lt;TAB&gt;</code> and <code>&lt;SPACE&gt;</code> should be inserted)
@@ -1085,4 +1133,3 @@ Slaven Rezic &lt;slaven@rezic.de&gt;
 
 </body>
 </html>
-
