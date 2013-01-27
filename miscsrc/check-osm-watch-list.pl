@@ -13,6 +13,7 @@
 #
 
 use strict;
+use open ':locale';
 use FindBin;
 use Getopt::Long;
 use IPC::Run qw(run);
