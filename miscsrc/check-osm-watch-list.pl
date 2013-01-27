@@ -99,6 +99,7 @@ my $changed_count = 0;
 		    if ($old_version != $new_version) {
 			warn "CHANGED: $type_id (version $old_version -> $new_version) ($record->{info})\n";
 			if ($show_diffs) {
+			    print STDERR "*** URL: http://www.openstreetmap.org/browse/$type/$id\n";
 			    show_diff($type, $id, $old_version, $new_version);
 			}
 			$changed_count++;
