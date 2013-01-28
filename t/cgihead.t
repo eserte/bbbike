@@ -90,6 +90,7 @@ plan tests => scalar(@prog) + scalar(@static) + $extra_tests;
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent('BBBike-Test/1.0');
 $ua->env_proxy;
+$ua->timeout(10);
 
 delete $ENV{PERL5LIB}; # override Test::Harness setting
 for my $prog (@prog) {

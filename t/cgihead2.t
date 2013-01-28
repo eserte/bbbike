@@ -101,6 +101,7 @@ plan tests => 1 + 3 * (scalar(map { @$_ } values %url));
 my $ua = LWP::UserAgent->new(keep_alive => 10);
 $ua->agent('BBBike-Test/1.0');
 $ua->env_proxy;
+$ua->timeout(10);
 
 # seems to be necessary (for my system? for the freebsd server?)
 $ENV{FTP_PASSIVE} = 1;
