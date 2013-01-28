@@ -36,14 +36,6 @@ $cksumfile{'dahlem1'}   = "$cksumdir/wetter-cksum-dahlem1"; 		#
 $cksumfile{'dahlem2'}   = "$cksumdir/wetter-cksum-dahlem2"; 		#
 #########################################################################
 
-# synop files:
-@synop_stations = ('berlin_alexanderplatz', 'berlin_dahlem',
-		   'berlin_schoenefeld',
-		   'berlin_tegel', 'berlin_tempelhof', 'potsdam');
-foreach $synop_station (@synop_stations) {
-    $destfile{"synop_$synop_station"} = "$destdir_met/synop/data/synop_$synop_station.data";
-}
-
 $www_site{'dahlem1'} = $www_site{'dahlem2'} = 'www.met.fu-berlin.de';
 $www_port{'dahlem1'} = $www_port{'dahlem2'} = 80;
 #$loc{'dahlem1'}  = '/deutsch/Wetter/beobachtung.html';
@@ -133,7 +125,7 @@ sub cmdline_call {
 	    /^-shortverbose$/ && do { $SHORTVERBOSE = 1; last ARGL; };
 	    /^-dahlem1$/ && do { $get_file = 'dahlem1'; last ARGL; };
 	    /^-dahlem2$/ && do { $get_file = 'dahlem2'; last ARGL; };
-	    /^-synop_(.*)$/ && do { $get_file = "synop_$1"; last ARGL; };
+	    /^-synop_(.*)$/ && do { die "No -synop* support anymore"; };
 	    /^-newest$/ && do { $newest = 1; last ARGL; };
 	    /^-local$/ && do { $local = 1; last ARGL; };
 	    /^-lastinfile$/ && do { $last_in_file = 1; last ARGL; };
@@ -316,61 +308,8 @@ sub parse {
 	&parse_dahlem1;
     } elsif ($type eq 'dahlem2') {
 	&parse_dahlem2;
-    } elsif ($type =~ /^synop_(.*)$/) {
-	&parse_synop($1);
     } else {
 	&add_problem("Undefined type: $type");
-    }
-}
-
-sub parse_synop {
-    # XXX This probably does not work with perl4 anymore
-    # XXX and probably does not work on non-Unix systems
-    local($station_code) = @_;
-    local($synop);
-    local($ENV{PATH}) = $ENV{PATH};
-    local($ENV{PERL5LIB}) = $ENV{PERL5LIB};
-    eval '
-            require FindBin;;
-  	    $ENV{PATH} = "$FindBin::RealBin:$FindBin::RealBin/lib:$ENV{PATH}";
-	    $ENV{PERL5LIB} = "$FindBin::RealBin:$FindBin::RealBin/lib:$ENV{PERL5LIB}";
-        ';
-    local(@synop);
-    if ($local) {
-	@synop = `get_and_store_synop -station $station_code -getlast`;
-    } else {
-	@synop = `get_and_store_synop -station $station_code`;
-    }
-    if (@synop == 0) {
-	&add_problem("Cannot get synop data for station $station_code");
-	return undef;
-    } else {
-	local($time_line) = shift(@synop);
-	local($line);
-
-	local $i = 1;
-	while ($i < $#synop) {
-	    if ($synop[$i] =~ /^\d/) {
-		last;
-	    }
-	    $i++;
-	}
-
-	open(PIPE, "-|") || do {
-	    exec("parse_synop", "-synop", @synop[$i..$#synop],
-		 "-date", $time_line,
-		 "-wettermeldung2");
-	    die $!;
-	};
-	$line = scalar <PIPE>;
-	close PIPE;
-	chomp($line);
-	if (!defined $line || $line =~ /^\s*$/) {
-	    &add_problem("Cannot parse synop data");
-	    return;
-	} else {
-	    return $line;
-	}
     }
 }
 
