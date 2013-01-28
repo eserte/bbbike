@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2013-01-18
+#: last_checked: 2013-01-28
 #: next_check: 2013-05-17
 #: source_id: INKO_113418
 Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-01-27 vvv
+#: last_checked: 2013-01-28 vvv
 #: next_check: 2013-03-15 vvv
 #: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -33,6 +33,14 @@ Helmerdingstr.: Bauarbeiten	q3::inwork 14465,11195 14442,11101
 # REMOVED (Einbahnstraﬂe) --- Helsingforser Str.: Bauarbeiten, Einbahnstraﬂe, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
 #: next_check ^^^
+#: last_checked ^^^
+# 
+#: last_checked: 2013-01-18
+Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 13473,11456 13366,11651 13295,11792
+# 
+#: last_checked: 2013-01-29 vvv
+R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 12822,12067 12740,12128
+R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 12740,12128 12575,12223
 #: last_checked ^^^
 # 
 #: last_checked: 2013-01-23
@@ -113,6 +121,12 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Fr¸hjahr 2013 --- Rathausstr. und Rathausbr¸cke: Behinderungen wegen Bauarbeiten mˆglich	q1::inwork 10285,12306 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
+# 
+#: last_checked: 2013-01-28
+Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
+# 
+#: last_checked: 2013-01-28
+Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
 #: last_checked: 2013-01-18
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
@@ -1788,7 +1802,7 @@ An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13235,13414
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 #: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
-#: last_checked: 2012-10-29
+#: last_checked: 2013-01-28
 #: next_check: 2013-03-01
 Ritterstr.: Fuﬂg‰nger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fuﬂg‰nger	q2 5808,5332 5810,5340 5822,5388
