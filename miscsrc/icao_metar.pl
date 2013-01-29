@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -195,13 +195,72 @@ sub mph_to_ms { $_[0] / 1.609344 / 3.6 }
 
 __END__
 
-=head1 TODO
+=head1 NAME
 
-Aufrufoptionen:
+icao_metar.pl - fetch and parse the most important weather data
 
- * datadir/icaobbd: return data for all in file
- * datadir/icaobbd -near ...: return data for the nearest sitecode
- * datadir/icaobbd -sitecode ...: file not used!
- * -sitecode: return data fo this site
+=head1 SYNOPSIS
+
+       icao_metar.pl [-wettermeldung] datadirectory | icaofile
+       icao_metar.pl [-wettermeldung] -near lon,lat datadirectory | icaofile
+       icao_metar.pl [-wettermeldung] -sitecode EDDT
+
+=head1 DESCRIPTION
+
+This program fetches weather information (expressed as METAR data) for
+a given airport from NOAA, and prints this information.
+
+When using the switch C<-wettermeldung>, then one pipe-separated line
+with the following fields is printed:
+
+=over
+
+=item * date in the format DD.MM.YYYY (day and month may be single digit)
+
+=item * time in the format HH.MM (hour may be single digit)
+
+=item * temperature in degrees Celsius (integer or with floating point)
+
+=item * pressure in hPa (integer or with floating point, optional, may be empty)
+
+=item * wind direction (using abbrevs like "NW" or "S")
+
+=item * max. wind speed in Beaufort (or m/s?)
+
+=item * humidity (in percent, optional, may be empty)
+
+=item * average wind speed in Beaufort (or m/s?)
+
+=item * precipitation (in mm, optional, may be empty)
+
+=item * weather condition (human readable text, may be English or German, optional)
+
+=back
+
+There are three possibilities to select the location:
+
+=over
+
+=item * specifying a bbd data directory containing an "icao" file or
+directly an "icao" bbd file
+
+In this case, all airports with an icao code are tried until the first
+one has a result from the NOAA server.
+
+=item * also specifying a data directory or icao file, but together
+with a C<-near I<lon,lat>> option
+
+In this case, the list of airports is sorted by distance to the
+specified coordinate first.
+
+=item * directly by specifying an icao code
+
+For example "EDDT" for Berlin-Tegel.
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
 
 =cut
