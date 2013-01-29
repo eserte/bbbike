@@ -14189,6 +14189,7 @@ sub show_info {
 
 	# XXX maybe use Karte::trim_accuracy instead of int?
 	my $real_coords = join(",", map { int } anti_transpose($coords[0], $coords[1]));
+	my $wgs84_coords = "$px,$py";
 
 	if ($city_obj->cityname eq 'Berlin') { # only mapserver links for Berlin data
 	    my $mapserver_logo_photo = load_photo($top, 'mapserver_logo', -persistent => 1);
@@ -14294,8 +14295,8 @@ sub show_info {
 					$zielname = Encode::encode("iso-8859-1", $zielname);
 				    }
 				    CGI->import('-oldstyle_urls');
-				    my $q = CGI->new({zielc    => $real_coords,
-						      zielname => $zielname,
+				    my $q = CGI->new({zielc_wgs84 => $wgs84_coords,
+						      zielname    => $zielname,
 						     });
 				    my $url = "$bbbike_cgi_url?" . $q->query_string;
 				    $url;
