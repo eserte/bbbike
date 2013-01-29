@@ -485,7 +485,10 @@ $show_weather = 1;
 
 =item @weather_cmdline
 
-The command line for the weather information fetching program.
+The command line for the weather information fetching program. The
+program must implement the C<-o> option to write down a file which
+conforms to the "wettermeldung2" format as described in
+F<miscsrc/icao_metar.pl>.
 
 =cut
 
