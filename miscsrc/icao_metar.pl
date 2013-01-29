@@ -35,9 +35,11 @@ EOF
 my $wanted_site_code;
 my $wettermeldung_compatible;
 my $near;
+my $o;
 GetOptions("sitecode=s" => \$wanted_site_code,
 	   "wettermeldung!" => \$wettermeldung_compatible,
 	   "near=s" => \$near,
+	   "o=s" => \$o,
 	  )
     or usage;
 
@@ -123,11 +125,24 @@ for my $site_def (@sites) {
     $m->metar($metar);
 
     if ($wettermeldung_compatible) {
-	print format_wettermeldung($m);
-	if (!$wanted_site_code) {
-	    print "|$site_code";
+	my $fh = \*STDOUT;
+	my $o_tmp;
+	if ($o) {
+	    $o_tmp = "$o.~$$~";
+	    open $fh, ">", $o_tmp
+		or die "Can't write to $o_tmp: $!";
 	}
-	print "\n";
+	print $fh format_wettermeldung($m);
+	if (!$wanted_site_code) {
+	    print $fh "|$site_code";
+	}
+	print $fh "\n";
+	if ($o) {
+	    close $fh
+		or die "Can't write to $o_tmp: $!";
+	    rename "$o_tmp", $o
+		or die "Error while renaming $o_tmp to $o: $!";
+	}
     } else {
 	print "$site_code: " . $m->dump . "\n";
     }
