@@ -194,14 +194,7 @@ for my $use_xml_module (@variants) {
 	SKIP:
 	{
 	    # See also http://www.freebsd.org/cgi/query-pr.cgi?pr=174917
-	    #
-	    # The bug report at https://rt.cpan.org/Ticket/Display.html?id=24548
-	    # is describing something different, but here also a crash
-	    # (here: a bus error) happens. So maybe a generic issue when
-	    # dealing with large data.
-	    #
-	    # I suspect it's somehow the extensive use of weakrefs, but have no
-	    # evidence for this.
+	    # and https://rt.cpan.org/Ticket/Display.html?id=83037
 	    skip "Possible segfault with large files", 3
 		if (
 		    $do_long_tests                 # fails only with large files (20_000 or 100_000 build nodes)
