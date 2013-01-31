@@ -5409,25 +5409,37 @@ EOF
 	    $wind_dir =~ s{O$}{E}; # the only difference between de and en: east/ost
 	}
 	print "<tr><td>" . M("Windrichtung") . ":</td><td>$wind_dir&nbsp;</td></tr>\n";
-	my($kmh, $windtext);
-	eval { local $SIG{'__DIE__'};
-	       require Met::Wind;
-	       $kmh      = Met::Wind::wind_velocity([$res[5], 'm/s'],
-						    'km/h');
-	       if ($kmh >= 5) {
-		   $kmh = sprintf("%d",$kmh); # keine Pseudogenauigkeit, bitte
-	       }
-	       $windtext = Met::Wind::wind_velocity([$res[5], 'm/s'],
-						    $lang eq 'en' ? 'text_en' : 'text_de');
-	   };
-	print "<tr><td>" . M("Windgeschwindigkeit") . ":</td><td>";
-	if (defined $kmh) {
-	    print "$kmh km/h";
-	} else {
-	    print "$res[5] m/s";
+	my $wind_unit_label;
+	my $wind_val = $res[5];
+	if (defined $wind_val && length $wind_val) {
+	    $wind_unit_label = M("Windspitzen");
+	} elsif (defined $res[7] && length $res[7]) {
+	    $wind_val = $res[7];
+	    $wind_unit_label = M("mittlere Windgeschwindigkeit");
 	}
-	if (defined $windtext) {
-	    print " ($windtext)";
+	if (!defined $wind_val) {
+	    print "<tr><td></td><td>";
+	} else {
+	    my($kmh, $windtext);
+	    eval { local $SIG{'__DIE__'};
+		   require Met::Wind;
+		   $kmh      = Met::Wind::wind_velocity([$wind_val, 'm/s'],
+							'km/h');
+		   if ($kmh >= 5) {
+		       $kmh = sprintf("%d",$kmh); # keine Pseudogenauigkeit, bitte
+		   }
+		   $windtext = Met::Wind::wind_velocity([$wind_val, 'm/s'],
+							$lang eq 'en' ? 'text_en' : 'text_de');
+	    };
+	    print "<tr><td>$wind_unit_label:</td><td>";
+	    if (defined $kmh) {
+		print "$kmh km/h";
+	    } else {
+		print "$wind_val m/s";
+	    }
+	    if (defined $windtext) {
+		print " ($windtext)";
+	    }
 	}
 	print "</td></tr>\n";
 	print "</table></center><hr>";
