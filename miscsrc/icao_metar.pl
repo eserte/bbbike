@@ -205,8 +205,8 @@ sub format_wettermeldung {
 	);
 }
 
-sub kts_to_ms { $_[0] / 1.852    / 3.6 }
-sub mph_to_ms { $_[0] / 1.609344 / 3.6 }
+sub kts_to_ms { $_[0] * 1.852    / 3.6 }
+sub mph_to_ms { $_[0] * 1.609344 / 3.6 }
 
 __END__
 
