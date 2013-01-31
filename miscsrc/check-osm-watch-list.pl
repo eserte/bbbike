@@ -157,6 +157,8 @@ if ($changed_count || $deleted_count) {
 	close $fh
 	    or die "ERROR: problem while writing to $new_file: $!";
 	print STDERR "INFO: the new file was written to $new_file\n";
+	print STDERR "INFO: try:         diff $new_file $osm_watch_list\n";
+	print STDERR "INFO: and then:    cp $new_file $osm_watch_list\n";
 	if ($deleted_count) {
 	    print STDERR "WARN: the new file does not have the possibly deleted records removed!\n";
 	}
