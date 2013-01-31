@@ -189,7 +189,7 @@ sub format_wettermeldung {
 	$wind_avg = sprintf "%.1f", mph_to_ms($m->WIND_MPH);
     }
 
-    my $pressure = $m->slp || $m->{ALT_HP} || ''; # XXX If missing: can slp (sea level pressure) be calculated from pressure?
+    my $pressure = $m->pressure || '';
     
     join('|',
 	 $l[3].".".$l[4].".".$l[5],
