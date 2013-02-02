@@ -123,20 +123,13 @@ weight_bbd - create weighted bbd files
   -[no]scalewidths: scale widths (default: true)
   -[no]distinguish-dir: distinguish between both directions (default: false)
 
-=head2 Anwendungsbeispiele
+=head2 EXAMPLES
 
- Create a weighted plot from bbbike.de coordssessions:
+Create a weighted plot from bbbike.de coordssessions (session packed
+in a zip file):
 
- cd ~/www/log/bbbike-sessions/
- rsync -v -e "ssh -2 -p 5022" -a root@bbbike.de:/tmp/coordssession/ coordssession/
- ~/src/bbbike/miscsrc/coordssession2bbd > /tmp/a.bbd
- ~/src/bbbike/miscsrc/weight_bbd -logarithmic=2.5 -f -o /tmp/bbbike_de_weighted_25.bbd /tmp/a.bbd
-
- Old sample for creating a weighted plot from accesses to
- www.radzeit.de (use the last 2 MB of the access_log):
-
- ~/src/bbbike/miscsrc/bbbikecgi_log_routes.pl -logtype apache -seek -2000000 ~/www/log/radzeit.de-access_log > /tmp/radzeit.bbd
- ~/src/bbbike/miscsrc/weight_bbd -logarithmic=1.5 -f -o /tmp/radzeit_weighted.bbd /tmp/radzeit.bbd
+    ~/src/bbbike/miscsrc/coordssession2bbd coordssession-2013-01.zip > /tmp/2013-01.bbd
+    ~/src/bbbike/miscsrc/weight_bbd -logarithmic=2.5 -f -o /tmp/2013-01_weighted_25.bbd /tmp/2013-01.bbd
 
 =head1 TODO
 
