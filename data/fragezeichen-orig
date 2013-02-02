@@ -46,7 +46,7 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
-#: last_checked: 2013-01-16
+#: last_checked: 2013-02-01
 #: next_check: 2013-04-01
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -64,7 +64,7 @@ Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected 
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
 Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,8717 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2116,7740
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
-#: last_checked: 2012-12-08 (am südlichen Ende)
+#: last_checked: 2013-02-02
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 #: XXX Baumaßnahme GL6.22 (Realisierung nach 2011)
 Waltershauser Str.: Qualität jetzt, später?	? 6526,1688 6679,1734 6848,1809
@@ -89,7 +89,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-01-27 vvv
+#: last_checked: 2013-02-02 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -97,7 +97,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2013-01-17
+#: last_checked: 2013-02-02
 #: next_check: 2013-06-01
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -196,7 +196,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
-#: last_checked: 2013-01-23
+#: last_checked: 2013-01-31
 #: next_check: 2013-09-01
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 #: last_checked: 2013-01-05
@@ -375,7 +375,7 @@ Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
-#: last_checked: 2013-01-16 vvv
+#: last_checked: 2013-02-01 vvv
 #: next_check: 2013-06-01
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 #: last_checked ^^^
@@ -602,10 +602,6 @@ Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet
 #: last_checked: 2012-10-18 (im eigentlich fertigen nördlichen Streifen ist bis auf die Führung an der Straßenbahnhaltestelle nichts passiert)
 #: next_check: 2012-12-15
 Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772 10838,14962 10881,15047
-# 
-#: by: http://www.potsdam.de/cms/beitrag/10070965/966975/
-#: last_checked: 2011-11-27
-Rudolf-Breitscheid-Str. (Potsdam): nach den Bauarbeiten wird es in Richtung Westen eine 2m breite Radspur geben sowie in Richtung Osten einen asphaltierter Radweg	?::inwork -10973,-1764 -10773,-1828 -10702,-1851 -10678,-1860
 # 
 #: last_checked: 2012-05-06 vvv
 #: next_check: 2013-09-01 vvv
@@ -1073,9 +1069,8 @@ Alt-Lankwitz: parallele Fahrbahn, Qualität, genaue Lage?	? 7412,3484 7419,3500 7
 Am Findling (Potsdam): existiert eine Ausschilderung?	? -9723,-2451
 # 
 #: by: http://www.potsdam.de/cms/ziel/996205/DE/ vvv
-Radspurensituation?	? -10559,-1901 -10588,-1975 -10633,-2086 -10673,-2128
+Radspurensituation?	? -10633,-2086 -10673,-2128
 Radspurensituation?	? -9723,-2451 -9788,-2430 -9840,-2413 -9982,-2371
-Abknickende Vorfahrt? Radspurensituation?	? -10360,-1934 -10350,-1997 -10255,-2039
 Radschutzstreifen, genaue Situation?	? -9620,-4939 -9642,-4916 -9862,-4705 -9872,-4694 -9928,-4643 -10072,-4507 -10170,-4416 -10183,-4402 -10225,-4366 -10281,-4316 -10334,-4269 -10371,-4237 -10400,-4212 -10463,-4157 -10634,-4001 -10682,-3960
 #: by: ^^^
 # 
@@ -1427,11 +1422,7 @@ Goetheplatz: Einbahnstraßenregelung auch für Radfahrer?	? -9809,-1435 -9902,-144
 Fontanestr. (Potsdam): laut "mobil-potsdam.de" asphaltiert	? -9228,-1414 -9228,-1465 -9228,-1595 -9223,-1703
 Herderstr.: Qualität?	? -9228,-1465 -9131,-1465 -9033,-1459
 Espengrund: Qualität?	? -9035,-1291 -9033,-1459
-#: XXX Kopfsteinpflaster bestätigt (osm komplett, von der S-Bahn zumindest im südlichen Teil), aber mäßig oder schlecht?
-Uhlandstr. (Potsdam): Ist das Kopfsteinpflaster eher mäßig oder eher schlecht?	? -9525,-1787 -9524,-1730 -9529,-1599 -9534,-1430
 Körnerweg (Potsdam): Qualität (Laut OpenStreetMap Kopfsteinpflaster)?	? -9425,-1526 -9318,-1518 -9319,-1594
-#: XXX Kopfsteinpflaster von der S-Bahn aus gesehen.
-Theodor-Hoppe-Weg: Ist das Kopfsteinpflaster eher gut, mäßig oder schlecht? Stimmt der Straßenname?	? -10446,-1947 -10412,-1857 -10445,-1847 -10440,-1836
 # REMOVED (keine Einbahnstraßenregelung gesehen) --- Schornsteinfegergasse (Potsdam): Ist die Straße eine Einbahnstraße, und wenn ja, gilt das auch für Radfahrer?	? -10535,-1809 -10440,-1836 -10425,-1773
 Wichgrafstr. (Potsdam): Qualität kurz vorm Plantagenplatz?	? -9930,-1687 -9905,-1627
 Wichgrafstr. - Plantagenstr.: existiert hier eine für Radfahrer befahrbare Verbindung? Qualität?	? -9930,-1687 -9813,-1664

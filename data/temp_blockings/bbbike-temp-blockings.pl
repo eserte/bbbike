@@ -3153,9 +3153,9 @@ userdel	2 -12306,-496 -12262,-612
 userdel	2 -12529,-789 -12515,-889 -12512,-911 -12575,-1031
 userdel	2 -12529,-789 -12219,-726
 userdel	2 -12529,-789 -12677,-823
-userdel	2 -12045,-757 -12148,-934
-userdel	2 -12148,-934 -12248,-1107
-userdel	2 -12148,-934 -12100,-962
+userdel	2 -12045,-757 -12168,-965
+userdel	2 -12168,-965 -12248,-1107
+userdel	2 -12168,-965 -12100,-962
 userdel	2 -11910,-945 -12100,-962
 userdel	2 -12285,-1174 -12248,-1107
 userdel	2 -12285,-1174 -12359,-1096 -12488,-999
@@ -18786,9 +18786,10 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016416',
        data  => <<EOF,
-#: next_check: 2013-08-31
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4355&options=4 (Endedatum bestätigt)
+#: next_check: 2013-08-31
+#: last_checked: 2013-02-02
 userdel	q4::inwork 425,8766 490,8716
 EOF
      },
@@ -20976,6 +20977,15 @@ EOF
        data  => <<EOF,
 #: by: http://www.tagesspiegel.de/berlin/gruenflaeche-muss-dem-schloss-weichen-ab-heute-verschwindet-der-rasen-am-schlossplatz-/7593590.html
 userdel	2::inwork 10155,12494 10285,12306
+EOF
+     },
+     { from  => 1359830530, # 2013-02-02 19:42
+       until => 1364770800, # 2013-04-01 01:00
+       text  => 'Charlottenstraße: Bauarbeiten zwischen Friedrich-Ebert-Straße und Dortustraße, Einbahnstraße bis voraussichtlich März 2013',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: http://www.potsdam.de/cms/beitrag/10098485/1463075
+	q3::inwork; -12881,-1092 -12984,-1110 -13187,-1150
 EOF
      },
     );

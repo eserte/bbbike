@@ -745,7 +745,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -922,9 +922,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Auerbachtunnel: Fahrbahn wegen Bauarbeiten gesperrt, bis Sommer 2013',
          'from' => 1335462672,
          'id' => 2182,
-         'data' => '#: next_check: 2013-08-31
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html
+         'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110303.0840.333719.html
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4355&options=4 (Endedatum bestätigt)
+#: next_check: 2013-08-31
+#: last_checked: 2013-02-02
 userdel	q4::inwork 425,8766 490,8716
 ',
          'type' => 'handicap'
@@ -1455,6 +1456,17 @@ userdel	q4::inwork; 13444,7879 13474,8060
          'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
 	2::night 12773,12683 13046,12956
 '
+       },
+       undef,
+       {
+         'until' => 1364770800,
+         'text' => 'Charlottenstraße: Bauarbeiten zwischen Friedrich-Ebert-Straße und Dortustraße, Einbahnstraße bis voraussichtlich März 2013',
+         'from' => 1359830530,
+         'id' => 2415,
+         'data' => '#: by: http://www.potsdam.de/cms/beitrag/10098485/1463075
+	q3::inwork; -12881,-1092 -12984,-1110 -13187,-1150
+',
+         'type' => 'handicap'
        }
      
 );
