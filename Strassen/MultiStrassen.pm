@@ -145,6 +145,23 @@ sub read_data {
     }
 }
 
+# Just a quick check if the dependent files of all sub objects are the
+# same, and the sub objects have the same modtime recorded. Return 1
+# if the structures are considered the same.
+sub shallow_compare {
+    my($self, $other_self) = @_;
+
+    my @subobjs       = @{ $self->{SubObj} };
+    my @other_subobjs = @{ $other_self->{SubObj} };
+    return 0 if scalar(@subobjs) != scalar(@other_subobjs);
+
+    for my $i (0 .. $#subobjs) {
+	return 0 if !$subobjs[$i]->shallow_compare($other_subobjs[$i]);
+    }
+
+    return 1;    
+}
+
 # XXX Hack: autoloader does not work for inherited methods
 for my $method (qw(agrep bbox bboxes pos_from_name choose_street new_with_removed_points sort_records_by_cat make_coord_to_pos grepstreets)) {
     my $code = 'sub ' . $method . ' { shift->Strassen::' . $method . '(@_) }';

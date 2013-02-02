@@ -973,6 +973,28 @@ sub _clone_some_globals {
     $new_s->set_global_directives(Storable::dclone($s->get_global_directives));
 }
 
+# Just a quick check if all dependent files are the same, and the
+# objects have the same modtime recorded. Return 1 if the structures
+# are considered the same.
+sub shallow_compare {
+    my($self, $other_self) = @_;
+
+    my $modtime       = $self->{Modtime};
+    my $other_modtime = $other_self->{Modtime};
+    return 0 if  defined $modtime && !defined $other_modtime;
+    return 0 if !defined $modtime &&  defined $other_modtime;
+    return 0 if (defined $modtime && defined $other_modtime && $modtime != $other_modtime);
+
+    my @dependent_files       = $self->dependent_files;
+    my @other_dependent_files = $other_self->dependent_files;
+    return 0 if scalar(@dependent_files) != scalar(@other_dependent_files);
+    for my $i (0 .. $#dependent_files) {
+	return 0 if $dependent_files[$i] ne $other_dependent_files[$i];
+    }
+
+    return 1;    
+}
+
 1;
 
 __END__
