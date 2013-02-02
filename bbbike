@@ -10898,6 +10898,7 @@ sub activate_temp_blockings {
 	#    make_handicap_net();
 	#}
 	undef $current_temp_blockings_net;
+	undef $current_temp_blockings_ms;
 	reset_temp_blockings();
 	hide_blockings();
 	hide_blockings_infobar();
@@ -10909,6 +10910,7 @@ sub activate_temp_blockings {
 	use vars qw(%temp_blocking_inx_mapping); # XXX dito
 	@temp_blocking = ();
 	do $file; # XXX Safe?
+	my($file_mtime) = (stat($file))[9];
 	my @s;
 	my $global_inx = -1;
 	my $used_inx = -1;
@@ -10944,11 +10946,14 @@ sub activate_temp_blockings {
 		my $text = $o->{text} . " [" . $date_spec . "]";
 		my $s;
 		my $f;
+		my $mtime;
 		if ($o->{file}) {
 		    $f = "$temp_blockings_dir/$o->{file}";
 		    $s = Strassen->new($f);
+		    $mtime = $s->{Modtime};
 		} else {
 		    $s = Strassen->new_from_data_string($o->{data});
+		    $mtime = $file_mtime;
 		}
 		my $new_s = Strassen->new;
 		push @{$new_s->{DependentFiles}}, $f if $f;
@@ -10962,6 +10967,7 @@ sub activate_temp_blockings {
 		    $used_inx++;
 		    $temp_blocking_inx_mapping{$used_inx} = $global_inx;
 		}
+		$new_s->{Modtime} = $mtime;
 		push @s, $new_s;
 	    }
 	}
@@ -10977,17 +10983,21 @@ sub activate_temp_blockings {
 	}
 	my $ms = MultiStrassen->new(@s);
 	push @{ $ms->{DependentFiles} }, $file;
-	$current_temp_blockings_ms = $ms;
-	$current_temp_blockings_net = StrassenNetz->new($ms);
-	$current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1);
-	$current_temp_blockings_net->make_sperre($ms, Type => ['wegfuehrung']);
-	print STDERR "Aktuelle Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
-	add_temp_blockings_to_net();
-	plot("p", "temp_sperre", -object => $ms, -draw => 1);
-	plot("str", "temp_sperre_s", -object => $ms, -draw => 1);
-	if (@realcoords) {
-	    clear_undecided_temp_blockings();
-	    check_path_in_blockings_net(\@realcoords);
+	if ($current_temp_blockings_ms && $current_temp_blockings_ms->shallow_compare($ms)) {
+	    warn "INFO: no change in temp blockings detected...\n";
+	} else {
+	    $current_temp_blockings_ms = $ms;
+	    $current_temp_blockings_net = StrassenNetz->new($ms);
+	    $current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1);
+	    $current_temp_blockings_net->make_sperre($ms, Type => ['wegfuehrung']);
+	    print STDERR "Aktuelle Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
+	    add_temp_blockings_to_net();
+	    plot("p", "temp_sperre", -object => $ms, -draw => 1);
+	    plot("str", "temp_sperre_s", -object => $ms, -draw => 1);
+	    if (@realcoords) {
+		clear_undecided_temp_blockings();
+		check_path_in_blockings_net(\@realcoords);
+	    }
 	}
     };
     if ($@) {
