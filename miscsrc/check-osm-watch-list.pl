@@ -18,11 +18,11 @@ use FindBin;
 use Getopt::Long;
 use IPC::Run qw(run);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $osm_watch_list = "$FindBin::RealBin/../data/osm_watch_list";
 my $bbbike_rootdir = "/home/e/eserte/src/bbbike"; # cannot use $FindBin::RealBin here, because of symlinking problems
-my $berlin_osm_bz2 = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
+my $osm_file = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
 
 my $show_unchanged;
 my $quiet;
@@ -33,6 +33,7 @@ GetOptions(
 	   "diff!" => \$show_diffs,
 	   "q|quiet" => \$quiet,
 	   "osm-watch-list=s" => \$osm_watch_list,
+	   "osm-file=s" => \$osm_file,
 	   "new-file=s" => \$new_file,
 	  )
     or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...]";
@@ -46,14 +47,14 @@ if ($show_diffs) {
     $ua->agent("check-osm-watch-list/$VERSION "); # + add lwp UA string
 }
 
-if (! -e $berlin_osm_bz2) {
-    die "FATAL: $berlin_osm_bz2 is missing, please download!";
+if (! -e $osm_file) {
+    die "FATAL: $osm_file is missing, please download!";
 }
-if (-M $berlin_osm_bz2 >= 7) {
-    warn "WARN: $berlin_osm_bz2 is older than a week (" . sprintf ("%1.f", -M $berlin_osm_bz2) . " days), consider to update...\n";
+if (-M $osm_file >= 7) {
+    warn "WARN: $osm_file is older than a week (" . sprintf ("%1.f", -M $osm_file) . " days), consider to update...\n";
 } else {
     if (!$quiet) {
-	warn "INFO: Age of $berlin_osm_bz2: " . sprintf("%.1f", -M $berlin_osm_bz2) . " days\n";
+	warn "INFO: Age of $osm_file: " . sprintf("%.1f", -M $osm_file) . " days\n";
     }
 }
 
@@ -88,7 +89,7 @@ my $changed_count = 0;
 	}
     }
     my $rx = '(' . join("|", values %by_type_rx) . ')';
-    my @grep_cml = ('bzegrep', '--', $rx, $berlin_osm_bz2);
+    my @grep_cml = ('bzegrep', '--', $rx, $osm_file);
     if (!$quiet) {
 	warn "INFO: Running '@grep_cml'...\n";
     }
