@@ -727,8 +727,8 @@ sub sort_by_cat {
 }
 
 sub sort_records_by_cat {
-    my($self, $records, $catref, %args) = @_;
-    $catref = $self->default_cat_stack_mapping if !$catref;
+    my($class_or_self, $records, $catref, %args) = @_;
+    $catref = $class_or_self->default_cat_stack_mapping if !$catref;
     return map  { $_->[1] }
 	   sort { $a->[0] <=> $b->[0] }
 	   map  { [(exists $catref->{$_->[CAT]} ? $catref->{$_->[CAT]} : 9999),
