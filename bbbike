@@ -1762,19 +1762,27 @@ $wbm->command(-label => M("Wetterstation").":",
 			 : ()
 			),
 		       );
-    } elsif (-r "$datadir/icao") {
-	eval {
-	    my $icao_s = Strassen->new_stream("$datadir/icao");
-	    $icao_s->read_stream(sub {
-				     my($r, undef, $line) = @_;
-				     if (my($icao, $fullname) = $r->[Strassen::NAME] =~ m{^(\S+)\s+\((.*)\)}) {
-					 push @weather_src, ["metar-$icao" => "METAR $fullname"];
-				     } else {
-					 warn "Cannot parse '$r->[Strassen::NAME]' at line $line in $datadir/icao\n";
-				     }
-				 });
-	};
-	warn $@ if $@;
+    } else {
+	my $icao_file;
+	if (-r "$datadir/icao_metar") {
+	    $icao_file = "$datadir/icao_metar";
+	} elsif (-r "$datadir/icao") {
+	    $icao_file = "$datadir/icao";
+	}
+	if ($icao_file) {
+	    eval {
+		my $icao_s = Strassen->new_stream($icao_file);
+		$icao_s->read_stream(sub {
+					 my($r, undef, $line) = @_;
+					 if (my($icao, $fullname) = $r->[Strassen::NAME] =~ m{^(\S+)\s+\((.*)\)}) {
+					     push @weather_src, ["metar-$icao" => "METAR $fullname"];
+					 } else {
+					     warn "Cannot parse '$r->[Strassen::NAME]' at line $line in $datadir/icao\n";
+					 }
+				     });
+	    };
+	    warn $@ if $@;
+	}
     }
 
     foreach (@weather_src) {
