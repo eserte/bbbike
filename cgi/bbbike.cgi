@@ -703,6 +703,13 @@ Set to a true value if data originates from OpenStreetMap.
 
 $osm_data = 0;
 
+=item $Strassen::Util::cacheprefix
+
+Define a unique prefix if multiple bbbike.cgi installations with
+different data sets are running on the same system. Typically this
+should be a short string consisting of a city and country abbrev, e.g.
+C<b_de> for Berlin in Germany.
+
 =back
 
 =cut
@@ -998,6 +1005,9 @@ init_bikepower($q);
 
 use vars qw($wettermeldung_file);
 $wettermeldung_file = "$tmp_dir/wettermeldung-$<";
+if (defined $Strassen::Util::cacheprefix) {
+    $wettermeldung_file .= "-" . $Strassen::Util::cacheprefix;
+}
 # Wettermeldungen so früh wie möglich versuchen zu holen
 if ($show_weather || $bp_obj) {
     start_weather_proc();
