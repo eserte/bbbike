@@ -726,6 +726,58 @@ sub sort_by_cat {
     }
 }
 
+# Generic sorting function. There are two approaches: with or without
+# map function for a Schwartzian Transform.
+#
+# First approach:
+# $sort_func: a subroutine reference which defines the sort function.
+# The subroutine must be prototyped with ($$). The incoming records are
+# hashrefs with two elements, the data element containing a
+# bbd line as a string, and the directives element containing the
+# directives hash.
+# $map_func is not used here and should be omitted.
+#
+# Second approach:
+# $sort_func: a subroutine references, also prototyped with ($$).
+# Here the incoming records are two-element arrayrefs, with the
+# original record at index zero (typically not be used) and the
+# sort value at index one.
+# $map_func: a function for a map() call which is calculating the
+# sort value. The incoming record is in $_, and contains both {data}
+# and {directives}
+#
+# See t/strassen-sort.t for usage examples.
+sub sort_by_anything {
+    my($self, $sort_func, $map_func) = @_;
+
+    my $data = $self->{Data};
+    my $directives = $self->{Directives} || [];
+    my @data_and_directives;
+    for my $i (0 .. $#$data) {
+	CORE::push @data_and_directives, {data => $data->[$i], directives => $directives->[$i]};
+    }
+
+    if ($map_func) {
+	@data_and_directives =
+	    map { $_->[0] }
+		sort $sort_func
+		    map { [ $_, $map_func->() ] }
+			@data_and_directives;
+    } else {
+	@data_and_directives =
+	    sort $sort_func
+		@data_and_directives;
+    }
+
+    $self->{Data} = [];
+    $self->{Directives} = [];
+    for my $i (0 .. $#data_and_directives) {
+	CORE::push @{ $self->{Data} }, $data_and_directives[$i]->{data};
+	CORE::push @{ $self->{Directives} }, $data_and_directives[$i]->{directives};
+    }
+
+}
+
 sub sort_records_by_cat {
     my($class_or_self, $records, $catref, %args) = @_;
     $catref = $class_or_self->default_cat_stack_mapping if !$catref;
