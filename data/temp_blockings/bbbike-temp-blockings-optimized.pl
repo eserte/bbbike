@@ -1235,12 +1235,13 @@ userdel	q3::inwork 11912,14486 11642,14625
          'text' => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
          'from' => undef,
          'id' => 2365,
-         'data' => '#: last_checked: 2012-10-16 vvv
+         'data' => '#: last_checked: 2013-02-06 vvv
 userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
 userdel	2::inwork 8328,10585 8270,10613
-userdel	2::inwork 8318,10738 8270,10613 8264,10460
-userdel	2::inwork 8278,10384 8263,10349 8258,10338
+userdel	2::inwork 8318,10738 8270,10613 8264,10460 8239,10413 8191,10346 8145,10090
+userdel	2::inwork 8278,10384 8263,10349 8258,10338 8249,10313 8260,10183 8211,10083 8145,10090 8042,10084 8040,10076 8035,10075 8027,10076 8035,10075 8027,10076
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
+userdel	2::inwork 8270,10613 8199,10634
 #: last_checked ^^^
 ',
          'type' => 'gesperrt'
@@ -1339,7 +1340,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => undef,
          'id' => 2398,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2012-12-27
+#: last_checked: 2013-02-04
 userdel	q4::inwork; 13339,7452 13303,7622
 ',
          'type' => 'handicap'
@@ -1440,9 +1441,9 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
          'text' => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
          'from' => undef,
          'id' => 2411,
-         'data' => '#: last_checked: 2012-12-27
+         'data' => '#: last_checked: 2013-02-04
 #: XXX bis wann ist die Baustelle fertig?
-userdel	q4::inwork; 13444,7879 13474,8060
+userdel	q4::inwork; 13474,8060 13444,7879
 ',
          'type' => 'handicap'
        },

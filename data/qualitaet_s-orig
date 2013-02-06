@@ -212,7 +212,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2012-12-21
+#: last_checked: 2013-02-04
 #: next_check: 2013-06-01
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -6539,7 +6539,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Yorckstr. - Park am Gleisdreieck): Beton	Q0 8358,9568 8357,9598 8353,9642 8350,9685 8349,9697
 (Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8497,9654 8540,9644
 (Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8341,10721 8332,10637 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8333,9583
-(Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8318,10738 8270,10613 8264,10460
+(Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8318,10738 8270,10613 8264,10460 8239,10413 8191,10346 8145,10090
 (Park am Gleisdreieck, Generalszug): Beton	Q0 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
 (Park am Gleisdreieck, östlicher Weg): Kopfsteinpflaster	Q2 8775,10289 8780,10248 8726,10056
 (Park am Gleisdreieck, östlicher Weg): Asphalt	Q0 8726,10056 8652,9870
@@ -6549,9 +6549,10 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Hornstr. - Park am Gleisdreieck): Beton	Q0 8779,9829 8761,9765 8722,9743
 (Park am Gleisdreieck, südöstlicher Weg): Asphalt	Q0 8722,9743 8540,9644 8508,9551 8477,9562 8426,9572
 (Rampe Hornstr. - Generalszug): Asphalt	Q0 8733,9841 8722,9743
-(Park am Gleisdreieck): Asphalt	Q0 8278,10384 8263,10349 8258,10338
+(Park am Gleisdreieck): Asphalt	Q0 8278,10384 8263,10349 8258,10338 8249,10313 8260,10183 8211,10083
 (Park am Gleisdreieck, Weg über dem Tunnelmund): Asphalt	Q0 8263,10349 8315,10347
 (Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8328,10585 8270,10613
+(Park am Gleisdreieck, Eingang Bülowstr.): Beton	Q0 8027,10076 8035,10075 8040,10076 8042,10084 8145,10090 8211,10083
 (Grenzallee - Britzer Hafensteg): überwiegend Asphalt, einige Verbundsteinpflasterabschnitte	Q0 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13997,6216
 Britzer Hafensteg: Holzbohlen	Q1 13997,6216 13951,6190
 Sieversufer: Asphalt	Q0 13951,6190 13883,6163
@@ -6995,7 +6996,7 @@ Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q3+ 13042,11749 13175,11649
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 13175,11649 13208,11658
 Oranienplatz: Kleinsteinpflaster	Q1 11275,10723 11253,10778 11227,10821
-(Schloßplatz, zwischen Breite Str. und Lustgarten): Holzbohlen	Q1 10285,12306 10155,12494
+# REMOVED (existiert nicht mehr) --- (Schloßplatz, zwischen Breite Str. und Lustgarten): Holzbohlen	Q1 10285,12306 10155,12494
 Glasower Str.: Asphalt	Q0 12510,6508 12759,6563 12876,6589 13141,6651
 Grüner Weg: Gehwegplatten	Q1 13728,3332 13775,3500
 Otto-Wels-Ring [Parkplatz]: Asphalt	Q1 13854,3016 13787,3017
@@ -8357,6 +8358,7 @@ Am Tierpark [Wohngebiet]: Asphalt	Q0 18484,10326 18552,10135
 #: note: "gelber Asphalt"
 (Ebersstr. - Cheruskerstr.): Asphalt	Q0 7353,8633 7384,8665
 Eyke-von-Repkow-Platz: Gehwegplatten	Q0- 5556,12536 5531,12501
+Rathausstr.: Asphalt mit einigen Schäden	Q1+ 10601,12521 10584,12507 10476,12432
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -21606,15 +21608,15 @@ Spreeuferweg am Hauptbahnhof: Kopfsteinpflaster	Q2 7945,12878 7966,12913
 Spreeuferweg am Hauptbahnhof: Verbundsteinpflaster	Q1+ 7966,12913 8044,12989 8159,13032
 Rampe: glatt gepflastert	Q0 8044,12989 8110,13042
 nördliches Spreeufer: Verbundsteinpflaster	Q1+ 8277,13032 8315,13005 8401,12973 8464,12919 8498,12870
-(südliches Spreeufer): wassergebundene Decke	Q1 5186,12843 5173,12973 5128,13012 4973,13083 4837,13091 4733,13076 4711,13055 4644,13003 4627,12951 4599,12789
+(südliches Spreeufer): wassergebundene Decke	Q1 5186,12843 5173,12973 5128,13012 4994,13092 4915,13114 4822,13109 4748,13092 4694,13064 4644,13003 4627,12951 4599,12789
 (südliches Spreeufer): grobes Kopfsteinpflaster, Gehwegplatten	Q3 4599,12789 4759,12681
-(Heisenbergstr. - südliches Spreeufer): wassergebundene Decke	Q1 5065,13010 5128,13012
-(Kucharskistr. - südliches Spreeufer): wassergebundene Decke	Q1 4848,13066 4837,13091
-(Clara-von-Simson-Str. - südliches Spreeufer): wassergebundene Decke	Q1 4732,13030 4711,13055
+(Heisenbergstr. - südliches Spreeufer): wassergebundene Decke	Q1 5120,12963 5173,12973
+(Kucharskistr. - südliches Spreeufer): wassergebundene Decke	Q1 4829,13089 4822,13109
+(Clara-von-Simson-Str. - südliches Spreeufer): wassergebundene Decke	Q1 4732,13030 4694,13064
 (Carnotstr. - südliches Spreeufer): wassergebundene Decke	Q1 4678,12938 4627,12951
-Heisenbergstr.: Asphalt	Q0 4960,12932 5065,13010
+Heisenbergstr.: Asphalt	Q0 4960,12932 5120,12963
 Schlesingerstr.: Asphalt	Q0 4924,12974 4968,13060
-Kucharskistr.: Asphalt	Q0 4865,12984 4848,13066
+Kucharskistr.: Asphalt	Q0 4865,12984 4829,13089
 Clara-von-Simson-Str.: Asphalt	Q0 4824,12952 4732,13030
 Margarete-Kühn-Str.: Asphalt	Q0 5133,12240 5203,12387 5277,12551
 Otto-Dibelius-Str.: Asphalt	Q0 5181,12195 5243,12303 5300,12406

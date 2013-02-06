@@ -1077,15 +1077,15 @@ Märkische Zeile: existiert hier eine ausgeschilderte Straße? Qualität?	? 6849,21
 Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
 B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19858,-843 19869,-816
 Kramnitzer Weg: Qualität der Verlängerung nach Westen hin? Existiert eine Ausschilderung	? -9353,5012 -9395,5025 -9537,5083 -9617,5086
-Schlesingerstr.: existiert ein Zugang von der Schlesingerstr. zum Uferweg?	? 4968,13060 4973,13083
+Schlesingerstr.: existiert ein Zugang von der Schlesingerstr. zum Uferweg?	? 4968,13060 4994,13092
 Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18091,1642 -18350,1540 -18688,1177 -18718,1243 -18673,1785 -18728,2153 -18989,2236 -19233,2251 -19422,2220 -19656,2362 -19721,2368
 Radweg zwischen Wublitzstr. und Laubenweg: Ist der Radweg bereits fertig? Qualität?	? -19721,2368 -19721,2424 -19891,2447
 Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11
 Radweg in der Bergstraße: wo genau?	? -17968,7253 -18232,6565
 Am Seegraben/Alexander-Meißner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835
 Templiner Str.: gibt es in der Templiner Straße mittlerweile Radstreifen?	? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991
-Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6559,5637 -6530,5605 -6633,5505
-Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6633,5505 -6666,5535 -6596,5464
+Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6559,5637 -6530,5605 -6633,5505 -6666,5535
+Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6633,5505 -6596,5464
 Hohen Neuendorfer Weg (Birkenwerder): Qualität?	? 645,30634 618,30687 575,30816 564,30845 550,30867 516,30899 342,31100
 Am Alten Mörtelwerk (Potsdam-Eiche): Qualität?	? -17127,-559 -17141,-496 -17186,-451 -17211,-356 -17254,-256
 Am Tempelberg (Potsdam-Eiche): Qualität?	? -17003,-544 -17019,-422
@@ -1131,13 +1131,14 @@ Peter-Altmann-Str. (Potsdam-Bornim): Qualität?	? -16003,1539 -16097,1596 -16120,
 Ritterspornweg (Potsdam-Bornim): Qualität?	? -15978,1589 -16027,1618 -16072,1643
 Am Phloxgarten (Potsdam-Bornim): Qualität?	? -15980,1690 -16027,1618
 Gillis-Grafström-Str. (Potsdam-Bornim): Qualität?	? -16000,1727 -16036,1707 -16072,1643 -16097,1596
-Bienenwinkel (Potsdam): Qualität? Genauer Verlauf der Straße?	? -13345,1962 -13316,2003 -13279,1958
-Zum Exerzierhaus (Potsdam): Qualität? Genauer Verlauf der Straße?	? -13108,2010 -12981,2014
-Horst-Bienek-Str. (Potsdam): Qualität? Genauer Verlauf der Straße, wird die Straße bis zur Hermann-Kasack-Str. geführt werden? Genauer Straßenname?	? -13696,572 -13668,669 -13642,750 -13615,844
-Zum Mühlenteich (Potsdam-Golm): Qualität? Genauer Verlauf der Straße?	? -18962,128 -19159,178
+Bienenwinkel (Potsdam): Qualität? Genauer Verlauf der Straße?	?::inwork -13345,1962 -13316,2003 -13279,1958
+Zum Exerzierhaus (Potsdam): Qualität? Genauer Verlauf der Straße?	?::inwork -13108,2010 -12981,2014
+Horst-Bienek-Str. (Potsdam): Qualität?	? -13696,572 -13668,669 -13642,750 -13615,844
+Zum Mühlenteich (Potsdam-Golm): Qualität? Bereits fertig gebaut?	?::inwork -19022,109 -19192,166
 Schwalbenhof (Potsdam-Golm): Qualität?	? -19279,-106 -19186,-132
 Kossätenweg (Potsdam-Golm): Qualität?	? -19247,-20 -18785,-77
-Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18785,-247 -18785,-77
+Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18804,-345 -18785,-247 -18785,-77
+Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18804,-345 -19183,-364
 Falknerstr. (Potsdam-Golm): Qualität?	? -18889,-591 -18889,-641 -18939,-739
 Paarener Dorfstraße (Potsdam-Uetz-Paaren): Qualität?	? -21443,8306 -21412,8481 -21390,8578 -21226,8822 -20996,8861 -20405,9004
 Paarener Mühlenweg (Potsdam-Uetz-Paaren): Qualität?	? -21412,8481 -21200,8474 -20914,8535 -20337,8664 -20176,8678 -20040,8625 -19994,8571 -19854,8696 -19818,8664 -19686,8675 -19635,8657 -19549,8761 -19202,8786 -19186,8685
@@ -1158,7 +1159,8 @@ Spechtweg (Potsdam-Golm): Qualität?	? -17864,83 -17843,139
 Sperberweg (Potsdam-Golm): Qualität?	? -17843,139 -17789,300
 Friedrich-Wilhelm-Boelcke-Str. (Potsdam): Qualität?	? -12796,-2488 -12831,-2439 -12813,-2423 -12779,-2467
 Zur Königlichen Hofbrauerei (Potsdam): Qualität?	? -12813,-2423 -12781,-2376
-Am Golmer Weinberg (Potsdam-Golm): Qualität? Genaue Lage?	? -19225,-261 -19147,-77
+Am Golmer Weinberg (Potsdam-Golm): Qualität?	? -19197,-348 -19180,-292 -19175,-237
+Ritterstr. (Potsdam-Golm): Qualität?	? -19180,-292 -19101,-318
 Alter Weinberg (Groß Glienicke): Qualität?	? -9276,7226 -9198,7051
 Am Gutstor (Groß Glienicke): Qualität?	? -9429,7137 -9445,7199 -9506,7421
 Helmut-Just-Str. (Groß Glienicke): Qualität?	? -9316,7393 -9506,7421
@@ -1234,7 +1236,7 @@ Schwarzer Weg (Großziethen): Qualität?	? 13215,-570 12804,-735
 nach Garzin und Garzau: Qualität?	? 53884,16566 53683,16474 53019,16358 52848,16456 52574,16529 51697,16718 51715,16919 49700,16565
 Dahmsdorf - Münchehofe: alternative Strecke durch den Wald, Qualität?	? 59488,16074 59402,16156 59309,16178 59220,16332 59263,16443 59460,16443 59560,16579 59624,16883
 Zingster Str. - Wartenberger Weg: Qualität? Nachts beleuchtet?	? 16358,18687 16325,18796
-Hechtgraben - ...: wie geht es hier weiter? Nachts beleuchtet?	? 16325,18796 16426,18812
+Hechtgraben - ...: wie geht es hier weiter? Nachts beleuchtet?	? 16325,18796 16426,18812 16616,18969 16699,19083 17197,18473 17275,18356 17267,18343
 Am Luchgraben - B2: Qualität?	? 17060,20381 17009,20447 16787,20515 16748,20586 16768,20728 16752,20898 16643,21035
 B2 - Lindenberger Weg: Qualität?	? 16643,21035 16576,21165
 Heinrich-Grüber-Str. - Waldheimer Str.: Wie ist die Qualität des Weges? Nachts beleuchtet?	? 24495,13780 24524,13763 24599,13817 24771,13949
@@ -1245,15 +1247,15 @@ Forstmeisterweg: Qualität? Nachts beleuchtet? Ausgeschildert?	? 32121,3215 32167
 Hospitalgrabenpark: Qualität?	? 7115,3003 7127,3077 7184,3142 7263,3117 7314,3199
 Lankegrabenpark: Qualität?	? 7364,3193 7409,3331 7458,3451
 Ruhlebener Str. - Uferweg: existiert ein Zugang? Wieviele Treppenstufen?	? -3621,13884 -3493,13782
-Mertz-von-Quirnheim-Str. (Potsdam): PLZ=14471	? -14537,-2154 -14650,-2321
-Heinz-Rühmann-Weg (Potsdam): PLZ=14482	? -8865,-2170 -8959,-2353
-An der Jubelitz (Potsdam-Fahrland): PLZ=14476	? -17173,7182 -17268,7122 -17170,7038 -17057,7062
+Mertz-von-Quirnheim-Str. (Potsdam): Qualität? Existiert eine Verbindung zum Uferweg?	? -14639,-2165 -14542,-2294
+Heinz-Rühmann-Weg (Potsdam): Qualität?	? -8870,-2121 -8902,-2292
+An der Jubelitz (Potsdam-Fahrland): Qualität?	? -17173,7182 -17268,7122 -17170,7038 -17057,7062
 Mühlenweg (Potsdam-Fahrland): Qualität? Genauer Verlauf?	? -15503,6422 -15392,6426
-An der Kornmühle (Potsdam)	? -12865,-2478 -12874,-2534
-Am Speicher (Potsdam)	? -12956,-2582 -12972,-2652
+An der Kornmühle (Potsdam)	?::inwork -12712,-2172 -12728,-2227
+Am Speicher (Potsdam)	?::inwork -12783,-2269 -12771,-2220 -12754,-2154
 Siegward-Sprotte-Straße (Potsdam): (Planstraße "Nord")	? -15360,409 -15380,684
 Haeberlinweg (Potsdam): (Planstraße "Süd")	? -15413,345 -15360,409 -15261,431
-Altstadtblick (Potsdam): neue Straße in Potsdam, Qualität? Genauer Verlauf? (Planstraße D)	? -12913,-2586 -12906,-2537
+Altstadtblick (Potsdam): neue Straße in Potsdam, Qualität? Genauer Verlauf? (Planstraße D)	? -12698,-2243 -12728,-2227 -12771,-2220 -12803,-2219
 Preußenpark: Qualität des Weges? Nachts beleuchtet?	? 4353,9430 4281,9393
 Am Kaniswall: Privatstraße, wo genau? Qualität?	? 32823,-202 32970,320
 Alter Fischerweg (Gosen): Qualität? Ausschilderung?	? 32778,-1044 33013,-790 33117,-767 33140,-703 33061,-636 33046,-551 32842,-509 32889,-402 32854,-201
@@ -1316,7 +1318,7 @@ Groß-Ziethener Str. - Tietjenstr.: existiert hier für Radfahrer eine Verbindung?
 Schönburger Str. - Blumenthalstr.: existiert für Radfahrer eine Verbindung durch den Bosepark? Qualität? Nachts beleuchtet?	? 8946,6501 8959,6292
 Lutoner Str./Cosmarweg: ist die Straße eine Vorfahrtsstraße oder gilt hier rechts-vor-links?	? -5321,13191 -5472,13235 -5674,13130 -5753,13107 -5790,13097 -5822,13088 -5928,13060 -6029,13033 -6151,13001
 Potsdam Hbf - Uferweg: Qualität?	? -12247,-1858 -12210,-1857 -12200,-1813 -12165,-1815 -12122,-1737 -12103,-1679 -12059,-1617
-Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg bereits (oder Teile davon)? Qualität?	? -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
+Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg bereits (oder Teile davon)? Qualität?	?::inwork -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
 Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9677,5430 -9478,5549 -9372,5532
 Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16806,1987 -16931,1783
 Preußensiedlung: Durchfahrt möglich?	? 20971,1046 20957,1043 20863,966 20836,982

@@ -501,10 +501,10 @@ Bernhard-Wieck-Promenade	green1 1381,8023 1366,8032 1348,8010
 (Spohrstr. - Umgehungschaussee)	green2 1274,7866 1256,7841 1215,7797
 (nördliches Spreeufer / Schiffbauerdamm)	green1 8277,13032 8315,13005 8401,12973 8464,12919 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 (Unterführung Schloßbrücke)	green2 3396,12741 3332,12742 3231,12749
-(südliches Spreeufer)	green2 5186,12843 5173,12973 5128,13012 4973,13083 4837,13091 4733,13076 4711,13055 4644,13003 4627,12951 4599,12789 4759,12681
-(Heisenbergstr. - südliches Spreeufer)	green2 5065,13010 5128,13012
-(Kucharskistr. - südliches Spreeufer)	green2 4848,13066 4837,13091
-(Clara-von-Simson-Str. - südliches Spreeufer)	green2 4732,13030 4711,13055
+(südliches Spreeufer)	green2 5186,12843 5173,12973 5128,13012 4994,13092 4915,13114 4822,13109 4748,13092 4694,13064 4644,13003 4627,12951 4599,12789 4759,12681
+(Heisenbergstr. - südliches Spreeufer)	green2 5120,12963 5173,12973
+(Kucharskistr. - südliches Spreeufer)	green2 4829,13089 4822,13109
+(Clara-von-Simson-Str. - südliches Spreeufer)	green2 4732,13030 4694,13064
 (Carnotstr. - südliches Spreeufer)	green2 4678,12938 4627,12951
 Schleswiger Ufer	green1 5858,12425 5894,12480 5940,12542
 Cuxhavener Str.	green1 5894,12480 5919,12423
@@ -935,7 +935,7 @@ Lindenberger Weg (Blankenburg, Stadtrandsiedlung Malchow)	green2 15158,21049 156
 (Yorckstr. - Park am Gleisdreieck)	green1 8358,9568 8357,9598 8353,9642 8350,9685 8349,9697
 (Park am Gleisdreieck, Querweg)	green2 8335,9702 8349,9697 8446,9670 8497,9654 8540,9644
 (Park am Gleisdreieck, Berlin-Leipzig)	green2 8341,10721 8332,10637 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8333,9583
-(Park am Gleisdreieck, westlicher Weg)	green2 8318,10738 8270,10613 8264,10460
+(Park am Gleisdreieck, westlicher Weg)	green2 8318,10738 8270,10613 8264,10460 8239,10413 8191,10346 8145,10090
 (Park am Gleisdreieck, Generalszug)	green2 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
 (Park am Gleisdreieck, östlicher Weg)	green2 8726,10056 8652,9870
 (zum Park am Gleisdreieck)	green1 8677,10224 8614,10095 8579,10030
@@ -943,9 +943,10 @@ Lindenberger Weg (Blankenburg, Stadtrandsiedlung Malchow)	green2 15158,21049 156
 (Hornstr. - Park am Gleisdreieck)	green2 8779,9829 8761,9765 8722,9743
 (Park am Gleisdreieck, südöstlicher Weg)	green2 8722,9743 8540,9644 8508,9551 8477,9562 8426,9572
 (Rampe Hornstr. - Generalszug)	green2 8733,9841 8722,9743
-(Park am Gleisdreieck)	green2 8278,10384 8263,10349 8258,10338
+(Park am Gleisdreieck)	green2 8278,10384 8263,10349 8258,10338 8249,10313 8260,10183 8211,10083
 (Park am Gleisdreieck, Weg über dem Tunnelmund)	green2 8263,10349 8315,10347
 (Park am Gleisdreieck, Eingang Lützowstr.)	green2 8328,10585 8270,10613
+(Park am Gleisdreieck, Eingang Bülowstr.)	green2 8027,10076 8035,10075 8040,10076 8042,10084 8145,10090 8211,10083
 (Grenzallee - Britzer Hafensteg)	green1 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13997,6216 13951,6190 13883,6163
 (Carl-Steffeck-Str. - Nahariyastr.)	green1 11494,-1468 11564,-1460 11619,-1459
 (Kloster-Zinna-Str. - Mauerweg)	green1 11712,-289 11819,-286
@@ -974,7 +975,7 @@ Budapester Weg	green1 20515,11275 20581,11272 20647,11267 20713,11263 20817,1125
 (zur Fähranleger Krughorn)	green2 -10044,1567 -10055,1628
 (Zobtener Str. - Fischerstr.)	green1 16353,10207 16404,10286
 (Fischerstr. - Lückstr.)	green1 16488,10381 16516,10448
-Schloßplatz	green2 10285,12306 10155,12494
+# REMOVED (existiert nicht mehr) --- Schloßplatz	green2 10285,12306 10155,12494
 (Weg am Dörferblick)	green2 15640,-280 15667,-356 15637,-441 15694,-662 15796,-1112
 (Schönefelder Str. - Waßmannsdorfer Chaussee)	green2 17122,-41 17127,12 17119,51 17130,95 17121,128 17092,164 17036,284 17009,305 16978,335 16943,394 16804,614 16726,642
 	green2 16339,830 16333,833 16327,834 16316,841 16287,908

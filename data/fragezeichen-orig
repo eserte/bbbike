@@ -79,7 +79,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2012-12-25
+#: last_checked: 2013-02-06
 #: next_check: 2013-06-01
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -89,7 +89,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-02-02 vvv
+#: last_checked: 2013-02-06 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -97,7 +97,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2013-02-02
+#: last_checked: 2013-02-05
 #: next_check: 2013-06-01
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -289,27 +289,28 @@ Einmündung der Burgfrauenstraße in den Zeltinger Platz: wird hier ein Zebrastrei
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::projected 13708,17453
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
-#: last_checked: 2012-12-27
-#: next_check: 2013-03-01
+#: last_checked: 2013-02-04
+#: next_check: 2013-04-04
 Werbellinstr.: Radstreifen werden erstellt	?::projected 12753,8187 12698,8175 12650,8164 12541,8140
-#: last_checked: 2012-11-26
-#: next_check: 2013-02-01
+#: last_checked: 2013-02-04
+#: next_check: 2013-04-04
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
-#: last_checked: 2012-12-27
-#: next_check: 2013-03-01
+#: last_checked: 2013-02-04
+#: next_check: 2013-04-04
 Karlsgartenstr.: Zebrastreifen wird angelegt	?::projected 11650,8514 11744,8486
-#: next_check: 2013-03-01
+#: next_check: 2013-03-15
+#: last_checked: 2013-02-06
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12081,9680 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2012-12-27
-#: next_check: 2013-03-01
+#: last_checked: 2013-02-06
+#: next_check: 2013-03-15
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
-#: last_checked: 2012-12-27
-#: next_check: 2013-03-01
+#: last_checked: 2013-02-04
+#: next_check: 2013-04-04
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13898,8613
 # 
 #: XXX Gartenstadt Karlshorst: neue Straßen vvv
@@ -795,15 +796,8 @@ Tegelort - Hakenfelde (sowie Fähre via Valentinswerder): prüfen, ob es nennenswe
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2013
 Am Valwigerteich: gibt es mittlerweile eine Durchfahrtmöglichkeit?	? 18867,12265 18917,12271
 # 
-#: XXX Westpark des Gleisdreieckparks, weitere Wege: Beleuchtung, Qualität? vvv
-#: next_check: 2013-04-15 vvv
-	?::inwork 8264,10460 8239,10413 8191,10346 8145,10090
-	?::inwork 8075,10084 8145,10090 8211,10083 8260,10183 8249,10313 8258,10338
-(Eingang Pohlstr.)	?::inwork 8159,10430 8239,10413
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130116.0915.380245.html
-(Eingang Bülowstr.): muss noch barrierefrei umgebaut werden	?::projected 8027,10076 8075,10084
-#: next_check ^^^
-#: XXX ^^^
+#: next_check: 2013-04-15
+(Westpark des Gleisdreieckparks, Eingang Pohlstr.): Beleuchtung, Qualität?	?::inwork 8159,10430 8239,10413 8278,10384
 # 
 #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/buddestra__e_lp2_07_03_2011.pdf?start&ts=1299577401&file=buddestra__e_lp2_07_03_2011.pdf
 Buddestr.: existiert hier ein Zebrastreifen?	? 2358,20199 2382,20210
@@ -812,10 +806,8 @@ Salvador-Allende-Viertel: Gehwege, Qualität, auch für Radfahrer befahrbar? Beleu
 Zugang zum Allendeweg möglich?	? 23025,4358 23001,4382
 Zugang zur Straße am Berg möglich?	? 23051,4461 23010,4506
 # 
-Rochstr.: Fahrradstraße auch hier?	? 10595,13100 10571,13034 10535,13006
-# 
-#: last_checked: 2012-12-25
-#: next_check: 2013-01-15
+#: last_checked: 2013-02-06 (keine Fortschritte)
+#: next_check: 2013-04-15
 Möckernstr./Wartenbergstr.: wird hier ein Zebrastreifen entstehen? Oder nur eine Fußgängerinsel?	?::inwork 8762,9964 8800,9944
 # 
 #: XXX zum bestehenden Verlauf hinzufügen
@@ -880,8 +872,8 @@ Weg wird wahrscheinlich in Insel-Rügen-Str. benannt	? 10960,17674 10969,17587 11
 # REMOVED (Bauarbeiten) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphaltierung) --- Emser Str.: Straßenbauarbeiten?	? 12872,7134 13058,7165
 #: by: http://www.aktion-kms.de/projekte/umbau-richardstrasse/
 #("historisches Reihensteinpflaster" - noch schlechtere Qualität)
-#: last_checked: 2012-11-26
-#: next_check: 2013-02-10
+#: last_checked: 2013-02-04
+#: next_check: 2013-06-04
 Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschränkungen.	? 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904 12870,8087
 #: by: ^^^
 # 
@@ -2741,7 +2733,7 @@ Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__30.pdf
 B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19858,-843 19869,-816
 Kramnitzer Weg: Qualität der Verlängerung nach Westen hin? Existiert eine Ausschilderung	? -9353,5012 -9395,5025 -9537,5083 -9617,5086
-Schlesingerstr.: existiert ein Zugang von der Schlesingerstr. zum Uferweg?	? 4968,13060 4973,13083
+Schlesingerstr.: existiert ein Zugang von der Schlesingerstr. zum Uferweg?	? 4968,13060 4994,13092
 #: XXX wo genau?
 #: by: http://www.potsdam.de/cms/beitrag/10068669/966975/
 Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18091,1642 -18350,1540 -18688,1177 -18718,1243 -18673,1785 -18728,2153 -18989,2236 -19233,2251 -19422,2220 -19656,2362 -19721,2368
@@ -2766,8 +2758,8 @@ Templiner Str.: gibt es in der Templiner Straße mittlerweile Radstreifen?	? -130
 #: XXX wahrscheinlich Verbundsteinpflaster; Häuser sind am Entstehen, Straßen noch nicht ganz fertig vvv
 #: XXX Eintrag in str_cont_ausnahme notwendig vvv
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20110831.0850.356859.html vvv
-Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6559,5637 -6530,5605 -6633,5505
-Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6633,5505 -6666,5535 -6596,5464
+Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6559,5637 -6530,5605 -6633,5505 -6666,5535
+Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6633,5505 -6596,5464
 #: by: ^^^
 #: XXX ^^^
 #: XXX ^^^
@@ -2842,25 +2834,26 @@ Gillis-Grafström-Str. (Potsdam-Bornim): Qualität?	? -16000,1727 -16036,1707 -160
 #: next_check: 2012-08-01
 #: by: http://www.potsdam.de/cms/dokumente/10073161_1189396/13ef9d53/AblPdm1_11.pdf vvv
 #: XXX fehlt in Potsdam.coords.data, PLZ=14469
-Bienenwinkel (Potsdam): Qualität? Genauer Verlauf der Straße?	? -13345,1962 -13316,2003 -13279,1958
+Bienenwinkel (Potsdam): Qualität? Genauer Verlauf der Straße?	?::inwork -13345,1962 -13316,2003 -13279,1958
 #: last_checked: 2012-05-12 (erkennbare Bauarbeiten, aber ist das überhaupt die richtige Straße?)
 #: next_check: 2012-08-01
 #: XXX fehlt in Potsdam.coords.data, PLZ=14469
-Zum Exerzierhaus (Potsdam): Qualität? Genauer Verlauf der Straße?	? -13108,2010 -12981,2014
+Zum Exerzierhaus (Potsdam): Qualität? Genauer Verlauf der Straße?	?::inwork -13108,2010 -12981,2014
 #: by: ^^^
 #: note: ^^^
 # 
-Horst-Bienek-Str. (Potsdam): Qualität? Genauer Verlauf der Straße, wird die Straße bis zur Hermann-Kasack-Str. geführt werden? Genauer Straßenname?	? -13696,572 -13668,669 -13642,750 -13615,844
+Horst-Bienek-Str. (Potsdam): Qualität?	? -13696,572 -13668,669 -13642,750 -13615,844
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10072610_974248/9aba6281/abl16_10.pdf
 #: by: http://www.potsdam.de/cms/dokumente/10081131_1189396/883b581e/abl05_11.pdf
 #: XXX fehlen alle in Potsdam.coords.data vvv
 #: XXX PLZ=14476
-Zum Mühlenteich (Potsdam-Golm): Qualität? Genauer Verlauf der Straße?	? -18962,128 -19159,178
+Zum Mühlenteich (Potsdam-Golm): Qualität? Bereits fertig gebaut?	?::inwork -19022,109 -19192,166
 #: XXX PLZ? vvv
 Schwalbenhof (Potsdam-Golm): Qualität?	? -19279,-106 -19186,-132
 Kossätenweg (Potsdam-Golm): Qualität?	? -19247,-20 -18785,-77
-Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18785,-247 -18785,-77
+Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18804,-345 -18785,-247 -18785,-77
+Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18804,-345 -19183,-364
 Falknerstr. (Potsdam-Golm): Qualität?	? -18889,-591 -18889,-641 -18939,-739
 #: XXX ^^^
 #: XXX ^^^
@@ -2909,7 +2902,9 @@ Friedrich-Wilhelm-Boelcke-Str. (Potsdam): Qualität?	? -12796,-2488 -12831,-2439 
 Zur Königlichen Hofbrauerei (Potsdam): Qualität?	? -12813,-2423 -12781,-2376
 # 
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
-Am Golmer Weinberg (Potsdam-Golm): Qualität? Genaue Lage?	? -19225,-261 -19147,-77
+Am Golmer Weinberg (Potsdam-Golm): Qualität?	? -19197,-348 -19180,-292 -19175,-237
+#: XXX fehlt in Potsdam.coords.data
+Ritterstr. (Potsdam-Golm): Qualität?	? -19180,-292 -19101,-318
 Alter Weinberg (Groß Glienicke): Qualität?	? -9276,7226 -9198,7051
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
 #: XXX oldname bis Juli 2012: Dr.-Kurt-Fischer-Str.
@@ -2972,7 +2967,9 @@ Uferweg (Tegeler See): Qualität?	? -585,19132 -544,19129 -475,19156 -429,19230 -
 Ginsterweg (Hönow): Qualität im nördlichen Abschnitt?	? 26149,14332 26128,14458 26093,14649 26118,14697 26141,14744
 Fichtengrund (Hönow): Qualität im nördlichen Abschnitt?	? 25790,14277 25840,14419 25902,14532 26000,14699
 #: XXX Baumaßnahmen GL6.19 bis .21 (Realisierung bis 2011)
+#: XXX_osm: laut osm existiert hier ein _offizieller_ Weg für Radfahrer
 Gallwitzallee - Geraerstr./Trippsteinstr.: Existiert eine direkte Verbindung für Radfahrer? Qualität? Ist der Weg nachts beleuchtet?	? 6768,2143 6692,2024 6526,1688
+#: XXX_osm: laut osm nicht mit dem Radweg verbunden
 Verlängerung der Seydlitzstr.: Qualität? Ist der Weg nachts beleuchtet? Ausschilderung?	? 6658,2079 6692,2024
 # 
 #: XXX Kasernengelände vvv
@@ -3033,8 +3030,8 @@ Dahmsdorf - Münchehofe: alternative Strecke durch den Wald, Qualität?	? 59488,16
 #: XXX genaue Wegführung?
 #: XXX wahrscheinlich wassergebundene Decke; wahrscheinlich unbeleuchtet
 Zingster Str. - Wartenberger Weg: Qualität? Nachts beleuchtet?	? 16358,18687 16325,18796
-#: XXX betoniert
-Hechtgraben - ...: wie geht es hier weiter? Nachts beleuchtet?	? 16325,18796 16426,18812
+#: XXX betoniert. Evtl. bis zum S-Wartenberg und noch weiter...
+Hechtgraben - ...: wie geht es hier weiter? Nachts beleuchtet?	? 16325,18796 16426,18812 16616,18969 16699,19083 17197,18473 17275,18356 17267,18343
 #: XXX laut osm Asphalt
 Am Luchgraben - B2: Qualität?	? 17060,20381 17009,20447 16787,20515 16748,20586 16768,20728 16752,20898 16643,21035
 B2 - Lindenberger Weg: Qualität?	? 16643,21035 16576,21165
@@ -3054,26 +3051,24 @@ Forstmeisterweg: Qualität? Nachts beleuchtet? Ausgeschildert?	? 32121,3215 32167
 Hospitalgrabenpark: Qualität?	? 7115,3003 7127,3077 7184,3142 7263,3117 7314,3199
 Lankegrabenpark: Qualität?	? 7364,3193 7409,3331 7458,3451
 Ruhlebener Str. - Uferweg: existiert ein Zugang? Wieviele Treppenstufen?	? -3621,13884 -3493,13782
-#: XXX neue Straßen in Potsdam: Qualität? Genauer Verlauf? vvv
 #: by: http://www.potsdam.de/cms/dokumente/10084122_1189396/4d29ee09/Amtsblatt_9_2011.pdf vvv
-#: XXX fehlt in Potsdam.coords.data vvv
-Mertz-von-Quirnheim-Str. (Potsdam): PLZ=14471	? -14537,-2154 -14650,-2321
-Heinz-Rühmann-Weg (Potsdam): PLZ=14482	? -8865,-2170 -8959,-2353
-An der Jubelitz (Potsdam-Fahrland): PLZ=14476	? -17173,7182 -17268,7122 -17170,7038 -17057,7062
-#: XXX ^^^
+#: XXX fehlt in Potsdam.coords.data: PLZ=14471
+Mertz-von-Quirnheim-Str. (Potsdam): Qualität? Existiert eine Verbindung zum Uferweg?	? -14639,-2165 -14542,-2294
+#: XXX fehlt in Potsdam.coords.data: PLZ=14482
+Heinz-Rühmann-Weg (Potsdam): Qualität?	? -8870,-2121 -8902,-2292
+#: XXX fehlt in Potsdam.coords.data: PLZ=14476
+An der Jubelitz (Potsdam-Fahrland): Qualität?	? -17173,7182 -17268,7122 -17170,7038 -17057,7062
 #: by: ^^^
-#: XXX ^^^
 # 
-#: XXX fehlt in Potsdam.coords.data
+#: XXX fehlt in Potsdam.coords.data: PLZ=14476
 #: by: http://www.potsdam.de/cms/dokumente/10086330_1189396/91ec2de3/Amtsblatt_12_11.pdf
-#: XXX PLZ=14476
 Mühlenweg (Potsdam-Fahrland): Qualität? Genauer Verlauf?	? -15503,6422 -15392,6426
 # 
 #: XXX neue Straßen in Potsdam: Qualität? Genauer Verlauf? vvv
 #: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
 #: XXX fehlt in Potsdam.coords.data, PLZ=14473 vvv
-An der Kornmühle (Potsdam)	? -12865,-2478 -12874,-2534
-Am Speicher (Potsdam)	? -12956,-2582 -12972,-2652
+An der Kornmühle (Potsdam)	?::inwork -12712,-2172 -12728,-2227
+Am Speicher (Potsdam)	?::inwork -12783,-2269 -12771,-2220 -12754,-2154
 #: XXX ^^^
 #: XXX fehlt in Potsdam.coords.data, PLZ=14469 vvv
 #: by: http://www.potsdam.de/cms/dokumente/10111537_1471008/c741b21e/Amtsblatt_17_12.pdf vvv
@@ -3086,7 +3081,7 @@ Haeberlinweg (Potsdam): (Planstraße "Süd")	? -15413,345 -15360,409 -15261,431
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
 #: XXX fehlt in Potsdam.coords.data, PLZ=14473
-Altstadtblick (Potsdam): neue Straße in Potsdam, Qualität? Genauer Verlauf? (Planstraße D)	? -12913,-2586 -12906,-2537
+Altstadtblick (Potsdam): neue Straße in Potsdam, Qualität? Genauer Verlauf? (Planstraße D)	? -12698,-2243 -12728,-2227 -12771,-2220 -12803,-2219
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120405.1310.368452.html (Radfahren erlaubt)
 Preußenpark: Qualität des Weges? Nachts beleuchtet?	? 4353,9430 4281,9393
@@ -3189,6 +3184,7 @@ Windthorststr.: Qualität der Verlängerung? Ausschilderung?	? 22552,11029 22554,1
 #: XXX Privatstraßen vvv
 #: last_checked: 2012-04-14 (noch in Bau) vvv
 #: next_check: 2012-12-15 vvv
+#: XXX laut osm existieren die Straßen schon
 Seeadlerweg: Qualität? Wo genau befindet sich die Straße (möglichst mit GPS-Track)?	? 16487,-163 16513,-211 16568,-313 16589,-353
 Fischadlerweg: Qualität? Wo genau befindet sich die Straße (möglichst mit GPS-Track)?	? 16513,-211 16496,-273 16525,-338 16542,-376
 Eulenweg: Qualität? Wo genau befindet sich die Straße (möglichst mit GPS-Track)?	? 16568,-313 16525,-338
@@ -3228,6 +3224,7 @@ Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	?::inwork 11
 #: last_checked: 2012-09-05 (Kay Leonhardt) vvv
 #: next_check: 2013-04-01 vvv
 #: by: http://farm9.staticflickr.com/8020/7599711312_1407440291_c.jpg (noch in Bau)
+#: XXX bei osm bereits eingetragen, allerdings teilweise ohne Straßennamen (2013-02)
 Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3750,2285 3830,2285
 Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2335 3854,2332
 Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2383 3880,2382
@@ -3377,7 +3374,7 @@ Lutoner Str./Cosmarweg: ist die Straße eine Vorfahrtsstraße oder gilt hier recht
 Potsdam Hbf - Uferweg: Qualität?	? -12247,-1858 -12210,-1857 -12200,-1813 -12165,-1815 -12122,-1737 -12103,-1679 -12059,-1617
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf vvv
-Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg bereits (oder Teile davon)? Qualität?	? -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
+Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg bereits (oder Teile davon)? Qualität?	?::inwork -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
 Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9677,5430 -9478,5549 -9372,5532
 #: by ^^^
 # 

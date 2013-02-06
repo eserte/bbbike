@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2013-02-01
+#: last_checked: 2013-02-06
 #: next_check: 2013-05-17
 #: source_id: INKO_113418
 Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-02-02 vvv
+#: last_checked: 2013-02-06 vvv
 #: next_check: 2013-03-15 vvv
 #: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -26,25 +26,23 @@ Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181
 #: last_checked: 2013-02-02
 Helmerdingstr.: Bauarbeiten	q3::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-02-01 vvv
-#: next_check: 2013-02-15 vvv
+#: last_checked: 2013-02-06 vvv
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
 # REMOVED (Einbahnstraße) --- Helsingforser Str.: Bauarbeiten, Einbahnstraße, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
-#: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2013-02-01
+#: last_checked: 2013-02-06
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q2::inwork; 13473,11456 13366,11651 13295,11792
 # 
-#: last_checked: 2013-02-01 vvv
+#: last_checked: 2013-02-06 vvv
 Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 12822,12067 12740,12128
 Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 12740,12128 12575,12223
 #: last_checked ^^^
 # 
-#: last_checked: 2013-01-30
 #: source_id: LMS_3261840849
+#: last_checked: 2013-02-05
 Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775
 # REMOVED --- Bauarbeiten beendet --- Mainzer Str., Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14311,11884 14357,12011
 # 
@@ -115,18 +113,18 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 # REMOVED --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # REMOVED (eigentlich gut zu befahren) --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14513,11075 14442,11101
 # 
-#: last_checked: 2013-01-05
-#: next_check: 2013-03-03
+#: last_checked: 2013-02-05
+#: next_check: 2013-04-03
 #: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier in Zukunft keine Fahrbahn mehr sein wird
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # 
 #: last_checked: 2013-01-28
+#: next_check: 2013-02-06
 Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # 
-#: last_checked: 2013-01-28
-Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
+# REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
 #: last_checked: 2013-01-18
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
@@ -136,7 +134,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-02-02 vvv
+#: last_checked: 2013-02-05 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -153,7 +151,7 @@ Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919
 # 
 #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
 #: source_id: INKO_114376
-#: last_checked: 2013-01-18
+#: last_checked: 2013-02-04
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
 ### Köpenick ###
@@ -174,7 +172,7 @@ Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22
 #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden
 #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf
 #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/
-#: last_checked: 2012-12-27
+#: last_checked: 2013-02-04
 #: next_check: 2013-11-30
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 # 
@@ -232,9 +230,9 @@ Görlitzer Park: Fußgänger	q2 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12567,10211 12543,10223 12506,10244 12384,10368 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911,10156
-#: last_checked: 2013-01-04
 #: XXX evtl. nach den Bauarbeiten asphaltiert oder zumindest besser gepflastert/gewalzt? Vielleicht wird auch der südliche Halbkreis neu gemacht?
 #: XXX nach den Bauarbeiten den normalen Eintrag wieder aktivieren
+#: last_checked: 2013-02-06
 Görlitzer Park, Rondell: Bauarbeiten, Fußgänger	q3::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 #Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
@@ -1281,7 +1279,7 @@ Wriezener Park: Fußgänger, Bordstein	q3 13261,11572 13270,11581
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fußgänger	q1 12986,11699 13002,11705 13042,11749 13175,11649 13208,11658
 Oranienplatz: einige Fußgänger	q1 11264,10804 11227,10821
 Oranienplatz: einige Fußgänger	q1 11275,10723 11253,10778 11227,10821
-(Schloßplatz, zwischen Breite Str. und Lustgarten): Fußgänger, Radfahren verboten	q4 10285,12306 10155,12494
+# REMOVED (existiert nicht mehr) --- (Schloßplatz, zwischen Breite Str. und Lustgarten): Fußgänger, Radfahren verboten	q4 10285,12306 10155,12494
 Grüner Weg: einige Fußgänger	q1 13728,3332 13775,3500
 (Imbuschweg - Anna-Siemsen-Weg): einige Fußgänger	q1 14245,2704 14231,2693 14228,2588 14254,2566
 #: XXX_prog BS zur Südseite, kann mit 10-15m Umweg umfahren werden (Richtung Westen)
@@ -1866,10 +1864,10 @@ Swinemünder Str.: Fußgänger	q1 10085,14863 10029,14974 9988,15057 9929,15174 985
 (Unterführung Schloßbrücke): Fußgänger, teilweise eng	q2 3396,12741 3332,12742
 (Unterführung Schloßbrücke): Fußgänger, sehr eng	q3 3332,12742 3231,12749
 Sesenheimer Str.: Fußgänger, Bordsteine	q2 3866,11473 3874,11380
-(südliches Spreeufer): Fußgänger	q2 5186,12843 5173,12973 5128,13012 4973,13083 4837,13091 4733,13076 4711,13055 4644,13003 4627,12951 4599,12789 4759,12681
-(Heisenbergstr. - südliches Spreeufer): Fußgänger	q2 5065,13010 5128,13012
-(Kucharskistr. - südliches Spreeufer): Fußgänger	q2 4848,13066 4837,13091
-(Clara-von-Simson-Str. - südliches Spreeufer): Fußgänger	q2 4732,13030 4711,13055
+(südliches Spreeufer): Fußgänger	q2 5186,12843 5173,12973 5128,13012 4994,13092 4915,13114 4822,13109 4748,13092 4694,13064 4644,13003 4627,12951 4599,12789 4759,12681
+(Heisenbergstr. - südliches Spreeufer): Fußgänger	q2 5120,12963 5173,12973
+(Kucharskistr. - südliches Spreeufer): Fußgänger	q2 4829,13089 4822,13109
+(Clara-von-Simson-Str. - südliches Spreeufer): Fußgänger	q2 4732,13030 4694,13064
 (Carnotstr. - südliches Spreeufer): Fußgänger	q2 4678,12938 4627,12951
 Schleswiger Ufer: schmal, Fußgänger	q2 5858,12425 5894,12480 5940,12542
 Cuxhavener Str.: Wohngebiet, Fußgänger	q2 5894,12480 5919,12423

@@ -1540,6 +1540,11 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130116.0915.380245.html
+#: XXX evtl. wird hier barrierefrei umgebaut werden
+#: last_checked: 2013-02-06
+#: next_check: 2013-05-15
+tragen (10 Stufen)	0:15 8035,10075
 tragen (7 weite Stufen)	0:30 15759,16671
 tragen (6 Stufen)	0:12 15915,16526
 tragen (8 Stufen)	0:12 18184,9626
@@ -2206,19 +2211,21 @@ Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,127
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
-# REMOVED (seit Dezember 2012 befahrbar, allerdings noch Bauzäune drum herum) --- #: last_checked: 2012-11-26 --- Am Sudhaus: Bauarbeiten, noch gesperrt	2:inwork 12134,8172 12282,8204
+#: last_checked: 2013-02-04
+#: XXX Bauzäune waren im Dezember 2012 weg, aber im Februar 2013 wurde wieder gebaut
+Am Sudhaus: Bauarbeiten, manchmal noch gesperrt	2:inwork 12134,8172 12282,8204
 # 
 #: by: rjoop
 #: last_checked: 2012-11
 #: next_check: 2013-03-15
 Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 # 
-#: last_checked: 2013-02-01
-#: next_check: 2013-05-01
 #: XXX nach den Bauarbeiten gibt es wahrscheinlich keine Fahrbahn mehr --- wird man durch den Fußgängerbereich gut durchfahren können?
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
+#: last_checked: 2013-02-06
+#: next_check: 2013-05-01
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html
@@ -2231,9 +2238,7 @@ Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 1
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
 # 
-#: last_checked: 2012-10-16
-#: next_check: 2013-02-01
-Gleisdreieckpark: noch in Bau	2:inwork 8270,10613 8199,10634
+# REMOVED (moved to temp blockings) --- #: last_checked: 2012-10-16 --- #: next_check: 2013-02-01 --- Gleisdreieckpark: noch in Bau	2:inwork 8270,10613 8199,10634
 #
 #: last_checked: 2012-10-13
 #: next_check: 2013-02-01
@@ -2276,8 +2281,8 @@ Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8376,8859 84
 #: next_check: 2013-01-01
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2013-01-05
-#: next_check: 2013-03-01
+#: last_checked: 2013-02-05
+#: next_check: 2013-04-01
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
 #: last_checked: 2012-05-06

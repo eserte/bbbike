@@ -20494,12 +20494,13 @@ EOF
        text  => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2012-10-16 vvv
+#: last_checked: 2013-02-06 vvv
 userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
 userdel	2::inwork 8328,10585 8270,10613
-userdel	2::inwork 8318,10738 8270,10613 8264,10460
-userdel	2::inwork 8278,10384 8263,10349 8258,10338
+userdel	2::inwork 8318,10738 8270,10613 8264,10460 8239,10413 8191,10346 8145,10090
+userdel	2::inwork 8278,10384 8263,10349 8258,10338 8249,10313 8260,10183 8211,10083 8145,10090 8042,10084 8040,10076 8035,10075 8027,10076 8035,10075 8027,10076
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
+userdel	2::inwork 8270,10613 8199,10634
 #: last_checked ^^^
 EOF
      },
@@ -20813,7 +20814,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2012-12-27
+#: last_checked: 2013-02-04
 userdel	q4::inwork; 13339,7452 13303,7622
 EOF
      },
@@ -20947,9 +20948,9 @@ EOF
        text  => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-12-27
+#: last_checked: 2013-02-04
 #: XXX bis wann ist die Baustelle fertig?
-userdel	q4::inwork; 13444,7879 13474,8060
+userdel	q4::inwork; 13474,8060 13444,7879
 EOF
      },
      { from  => 1357040979, # 2013-01-01 12:49
@@ -20976,7 +20977,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.tagesspiegel.de/berlin/gruenflaeche-muss-dem-schloss-weichen-ab-heute-verschwindet-der-rasen-am-schlossplatz-/7593590.html
-userdel	2::inwork 10155,12494 10285,12306
+# REMOVED (existiert nicht mehr) --- userdel	2::inwork 10155,12494 10285,12306
 EOF
      },
      { from  => 1359830530, # 2013-02-02 19:42
