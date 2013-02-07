@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009,2012 Slaven Rezic.
+# Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009,2012,2013 Slaven Rezic.
 # All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
@@ -22,7 +22,7 @@ use vars qw(@unix_browsers @available_browsers
 	    $VERSION $VERBOSE $initialized $os $fork
 	    $ignore_config);
 
-$VERSION = 2.50;
+$VERSION = 2.51;
 
 @available_browsers = qw(_debian_browser _internal_htmlview
 			 _default_gnome _default_kde
@@ -333,19 +333,42 @@ sub exec_bg {
     warn "Execute: @cmd\n" if $VERBOSE && $VERBOSE >= 2;
     if ($os eq 'unix' || $os eq 'macosx') {
 	eval {
-	    if (!$fork || fork == 0) {
-		exec @cmd;
-		warn "Can't exec @cmd: $!";
-		if (eval { require POSIX; 1 }) {
-		    POSIX::_exit(1);
-		} else {
-		    CORE::exit(1);
-		}
+	    my $pid = fork;
+	    if (!defined $pid) {
+		die "Fork failed: $!";
 	    }
+	    if ($pid == 0) {
+		my $pid2 = fork;
+		if (!defined $pid2) {
+		    _hard_die("Inner fork failed: $!");
+		}
+		if ($pid2 == 0) {
+		    exec(@cmd)
+			or _hard_die("Can't exec @cmd: $!");
+		}
+		_hard_exit(0);
+	    }
+	    waitpid $pid, 0;
 	};
+	warn "Forking/executing @cmd failed: $@" if $@;
     } else {
 	# XXX use Spawn
 	_system(join(" ", @cmd) . ($fork ? "&" : ""));
+    }
+}
+
+sub _hard_die {
+    my $msg = shift;
+    warn $msg;
+    _hard_exit(1);
+}
+
+sub _hard_exit {
+    my $code = shift;
+    if (eval { require POSIX; 1 }) {
+	POSIX::_exit($code);
+    } else {
+	CORE::exit($code);
     }
 }
 
@@ -720,7 +743,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009 Slaven Rezic.
+Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009,2012,2013 Slaven Rezic.
 All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
