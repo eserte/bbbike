@@ -29,7 +29,7 @@ XML::Simple	- optional für XML-Dumps der BBBike-Route
 
 XML::Parser	- optional für UAProf parsing (bevorzugt wird allerdings XML::LibXML::SAX oder XML::SAX::PurePerl)
 
-YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
+YAML	- optional für YAML-Dumps der BBBike-Route
 
 JSON::XS	- optional für JSON-Dumps der BBBike-Route und diverse Serialisierungsaufgaben
 

@@ -63,9 +63,9 @@ XML::Parser	- optional für UAProf parsing (bevorzugt wird allerdings XML::LibXML
 
 XML::Twig	- alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML::Parser
 
-YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
+YAML	- optional für YAML-Dumps der BBBike-Route
 
-YAML::Syck	- optional für die Testsuite, könnte auch YAML.pm in Zukunft ersetzen
+YAML::Syck	- optional für die Testsuite sowie fuer temp_blockings, könnte YAML.pm in Zukunft komplett ersetzen
 
 JSON::XS	- optional für JSON-Dumps der BBBike-Route und diverse Serialisierungsaufgaben
 
@@ -190,6 +190,8 @@ Geo::Coder::Bing 0.10	- Geocoding über Bing
 Geo::Cloudmade	- Geocoding über Cloudmade
 
 Geo::Coder::OSM	- Geocoding mit OpenStreetMap-Daten
+
+Geo::Coder::PlaceFinder	- Geocoding mit Yahoo PlaceFinder
 
 Flickr::API	- Flickr-Bilder in BBBike anzeigen
 
