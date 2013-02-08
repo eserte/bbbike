@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 2.01;
+$VERSION = 3.00;
 
 BEGIN {
     if (!eval '
@@ -255,6 +255,30 @@ sub geocoder_dialog {
 			   },
 			   'include_multi' => 1,
 			 },
+		'Yahoo PlaceFinder' => {
+					'label' => 'Yahoo PlaceFinder (needs app id)',
+					'devel_only' => 1,
+					'require' => sub { require Geo::Coder::PlaceFinder },
+					'new' => sub {
+					    my $apikey = do {
+						my $file = "$ENV{HOME}/.yahooapikey";
+						open my $fh, $file
+						    or main::status_message("Cannot get key from $file: $!", "die");
+						local $_ = <$fh>;
+						chomp;
+						$_;
+					    };
+					    Geo::Coder::PlaceFinder->new(appid => $apikey);
+					},
+					'extract_addr' => sub {
+					    my $location = shift;
+					    join(", ", grep { defined && length } @{$location}{qw(line1 line2 line3 line4)}, $location->{longitude}.",".$location->{latitude});
+					},
+					'extract_loc' => sub {
+					    my $location = shift;
+					    ($location->{longitude}, $location->{latitude});
+					},
+				       },
 	       );
     $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr));
 
@@ -442,15 +466,16 @@ API key stored in F<~/.googlemapsapikey>
 through L<Geo::Cloudmade>, needs an API key stored in
 F<~/.cloudmadeapikey>
 
+=item Yahoo's PlaceFinder
+
+through L<Geo::Coder::PlaceFinder>, needs an app id which should be
+stored in F<~/.yahooapikey>.
+
 =back
 
 Unsupported geocoding services:
 
 =over
-
-=item Yahoo's PlaceFinder
-
-L<Geo::Coder::PlaceFinder> exists, needs an API key
 
 =item Mapquest
 
@@ -470,7 +495,8 @@ Obsolete geocoding services:
 
 =item old Yahoo API
 
-L<Geo::Coder::Yahoo> is using an old and shut down Yahoo API
+L<Geo::Coder::Yahoo> is using an old and shut down Yahoo API. Use
+PlaceFinder instead.
 
 =back
 
