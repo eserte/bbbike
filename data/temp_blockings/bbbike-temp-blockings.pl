@@ -20989,4 +20989,13 @@ EOF
 	q3::inwork; -12881,-1092 -12984,-1110 -13187,-1150
 EOF
      },
+     { from  => 1360350803, # 2013-02-08 20:13
+       until => 1360551600, # 2013-02-11 04:00
+       text  => 'Karlshorster Str. (Rummelsburg) gesperrt (09.02.2013 00 Uhr bis 11.02.2013 04:00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'INKO_116993',
+       data  => <<EOF,
+userdel	2::inwork 15261,10738 15272,10790 15279,10862
+EOF
+     },
     );

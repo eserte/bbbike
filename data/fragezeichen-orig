@@ -376,7 +376,7 @@ Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 vvv
-#: last_checked: 2013-02-01 vvv
+#: last_checked: 2013-02-08 vvv
 #: next_check: 2013-06-01
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 #: last_checked ^^^
@@ -785,6 +785,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: next_check: 2013-02-08
+An der ehem. Blumengroßmarkthalle: ist hier evtl. eine neue Verbindung entstanden?	? 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
+# 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Lückenschluss, auch zur Siegfriedstr.)
 #: XXX evtl. entsteht hier auch eine offizielle Verbindung?
 Landschaftspark Herzberge - Arendsweg: evtl. den inoffiziellen Trampelpfad aufnehmen	? 17266,14144 17335,14167
@@ -865,7 +868,10 @@ Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::proj
 Steubenplatz: Einbahnstraßenregelung? Oder kann man als Radfahrer hier abkürzen?	? 677,12191 714,12160
 # 
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf?start&ts=1352885627&file=benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf
-Weg wird wahrscheinlich in Insel-Rügen-Str. benannt	? 10960,17674 10969,17587 11064,17599 11354,17642
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2013
+#: XXX Privatweg
+#: note: Weg in der Anlage "Insel Rügen" eG
+Weg wird in Insel-Rügen-Str. benannt: Qualität?	? 10960,17674 10969,17587 11064,17599 11354,17642
 # 
 #: by: http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf vvv
 # REMOVED (jetzt asphaltiert) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphaltierung) --- Kirchhofstr.: Straßenbauarbeiten?	? 13003,7316 13001,7296 12909,7181 12872,7134
