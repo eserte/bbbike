@@ -12405,7 +12405,8 @@ sub choose_streets {
 #                   andere Fenster verdeckt wird
 #   -dont_delete_old: alte Markierungen beibehalten
 #   -endlessmark: ?
-#   -addtag: weitere Canvas-Tags hinzufügen
+#   -addtag => $tag   : add another tag to the canvas item; this is used as the point name
+#   -addtag => \@tags : add more than one tag; by convention the first additional tag is used as the point name
 #   -inactive: Markierung reagiert nicht auf Events (insbesondere Tooltips)
 ### AutoLoad Sub
 sub mark_point {
@@ -12508,6 +12509,7 @@ sub clever_center {
 #   -coords => [[[x,y],[x2,y2]], # first line
 #               [[x3,y3],[x4,y4]], # second line
 #              ]
+#   -labels => ["first line", "second line" ...]
 #   -scrollto => [x,y]
 #   -dont_mark => 1: don't mark
 #   -dont_center => 1: don't center
