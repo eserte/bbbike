@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.00;
+$VERSION = 3.01;
 
 BEGIN {
     if (!eval '
@@ -103,22 +103,20 @@ sub geocoder_dialog {
     my $geocoder_api = 'My_Google_v3';
     my %apis = ('My_Google_v3' => {
 				   'label' => 'Google v3',
+				   'short_label' => 'Google',
 				   'require' => sub { },
 				   'new' => sub { Geo::Coder::My_Google_v3->new },
 				   'extract_loc' => sub {
 				       my $location = shift;
 				       @{$location->{geometry}{location}}{qw(lng lat)};
 				   },
-				   'extract_addr' => sub {
-				       my $location = shift;
-				       $location->{formatted_address} . "\n" .
-					   join(",", @{$location->{geometry}{location}}{qw(lng lat)});
-				   },
+				   'extract_addr' => sub { shift->{formatted_address} },
 				   'include_multi' => 1,
 				   'include_multi_master' => 1, # means this geocoder's address will be shown first in a "Multi" call
 				  },
 		'Google_v3' => {
 				'label' => 'Google v3 (using CPAN module)',
+				'short_label' => 'Google (v3, CPAN)',
 				'require' => sub { require Geo::Coder::Googlev3 },
 				'new' => sub { Geo::Coder::Googlev3->new },
 				'devel_only' => 1,
@@ -145,10 +143,10 @@ sub geocoder_dialog {
 			      },
 			      'extract_addr' => sub {
 				  my $location = shift;
-				  $location->{address} . "\n" .
-				      join(",", @{$location->{Point}{coordinates}});
+				  $location->{address};
 			      },
 			      'label' => 'Google (needs API key)',
+			      'short_label' => 'Google (CPAN)',
 			      'devel_only' => 1,
 			    },
 		'GoogleMaps' => { 'new' => sub {
@@ -181,10 +179,10 @@ sub geocoder_dialog {
 				  'extract_addr' => sub {
 				      my $location = shift;
 				      return unless $location;
-				      $location->address . "\n" .
-					  join(",", $location->longitude, $location->latitude);
+				      $location->address;
 				  },
 				  'label' => 'Google (alternative implementation, needs API key)',
+				  'short_label' => 'Google (CPAN, GoogleMaps)',
 				  'devel_only' => 1,
 				},
 		'Bing' => {  'require' => sub {
@@ -209,9 +207,7 @@ sub geocoder_dialog {
 			     },
 			     'extract_addr' => sub {
 				 my $location = shift;
-				 $location->{Address}->{FormattedAddress} . "\n" .
-				     $location->{BestLocation}{Coordinates}{Longitude} . "," .
-					 $location->{BestLocation}{Coordinates}{Latitude};
+				 $location->{Address}->{FormattedAddress};
 			     },
 			     'label' => 'Bing',
 			     'include_multi' => 1,
@@ -241,6 +237,7 @@ sub geocoder_dialog {
 				 # http://developers.cloudmade.com/issues/show/1007
 				 # for the umlauts issue
 				 'label' => 'Cloudmade (needs API key, avoid umlauts)',
+				 'short_label' => 'Cloudmade',
 				 'devel_only' => 1,
 			       },
 		'OSM' => { 'require' => sub { require Geo::Coder::OSM },
@@ -257,6 +254,7 @@ sub geocoder_dialog {
 			 },
 		'Yahoo PlaceFinder' => {
 					'label' => 'Yahoo PlaceFinder (needs app id)',
+					'short_label' => 'Yahoo PlaceFinder',
 					'devel_only' => 1,
 					'require' => sub { require Geo::Coder::PlaceFinder },
 					'new' => sub {
@@ -272,7 +270,7 @@ sub geocoder_dialog {
 					},
 					'extract_addr' => sub {
 					    my $location = shift;
-					    join(", ", grep { defined && length } @{$location}{qw(line1 line2 line3 line4)}, $location->{longitude}.",".$location->{latitude});
+					    join(", ", grep { defined && length } @{$location}{qw(line1 line2 line3 line4)});
 					},
 					'extract_loc' => sub {
 					    my $location = shift;
@@ -280,7 +278,7 @@ sub geocoder_dialog {
 					},
 				       },
 	       );
-    $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr));
+    $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
 
     my $do_geocode = sub {
 	my($gc, $loc) = @_;
@@ -301,6 +299,17 @@ sub geocoder_dialog {
 	require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$location],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
 	$location;
+    };
+
+    my $get_short_label = sub {
+	my($apiname) = @_;
+	my $gc = $apis{$apiname};
+	$gc->{short_label} || $gc->{label} || $apiname;
+    };
+
+    my $get_long_address = sub {
+	my($gc, $location) = @_;
+	join("\n", $gc->{extract_addr}->($location), join(",", $gc->{extract_loc}->($location)));
     };
 
     for my $_api (sort keys %apis) {
@@ -328,12 +337,14 @@ sub geocoder_dialog {
 			my $location = $do_geocode->($gc, $loc);
 			if ($location) {
 			    $res->delete("1.0", "end");
-			    my $loc_addr = $gc->{extract_addr}->($location);
-			    $res->insert("end", $loc_addr);
+			    $res->insert("end", $get_long_address->($gc, $location));
 			    my($px,$py) = $gc->{extract_loc}->($location);
 			    my($sx,$sy) = $Karte::Polar::obj->map2standard($px,$py);
 			    my($tx,$ty) = main::transpose($sx,$sy);
-			    main::mark_point(-x => $tx, -y => $ty, -clever_center => 1);
+			    main::mark_point(
+					     -x => $tx, -y => $ty, -clever_center => 1,
+					     -addtag => $get_short_label->($geocoder_api) . ": " . $gc->{extract_addr}->($location),
+					    );
 			} else {
 			    main::status_message("No result", "warn");
 			}
@@ -345,6 +356,7 @@ sub geocoder_dialog {
 	    $bf->Button(-text => 'Multi',
 			-command => sub {
 			    my @coords;
+			    my @labels;
 			    my $loc_addr;
 			    for my $_api (sort { ($apis{$b}->{include_multi_master}||0) <=> ($apis{$a}->{include_multi_master}||0) } keys %apis) {
 				my $gc = $apis{$_api};
@@ -356,9 +368,10 @@ sub geocoder_dialog {
 				    warn "Could not geocode '$loc' with '$_api': $@";
 				} else {
 				    if ($gc->{include_multi_master}) {
-					$loc_addr = $gc->{extract_addr}->($location);
+					$loc_addr = $get_long_address->($gc, $location);
 				    }
 				    push @coords, [[main::transpose($Karte::Polar::obj->map2standard($gc->{extract_loc}->($location)))]];
+				    push @labels, $get_short_label->($_api) . ": " . $gc->{extract_addr}->($location);
 				}
 			    }
 			    if (!@coords) {
@@ -366,7 +379,10 @@ sub geocoder_dialog {
 			    } else {
 				$res->delete("1.0", "end");
 				$res->insert("end", $loc_addr);
-				main::mark_street(-coords => \@coords);
+				main::mark_street(
+						  -coords => \@coords,
+						  -labels => \@labels,
+						 );
 			    }
 			})->pack(-side => 'left');
     }
