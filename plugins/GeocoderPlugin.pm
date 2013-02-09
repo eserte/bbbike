@@ -101,182 +101,211 @@ sub geocoder_dialog {
     my $gcf = $geocoder_toplevel->LabFrame(-label => 'Geocoding modules', -labelside => 'acrosstop'
 					  )->pack(-fill => 'x', -expand => 1);
     my $geocoder_api = 'My_Google_v3';
-    my %apis = ('My_Google_v3' => {
-				   'label' => 'Google v3',
-				   'short_label' => 'Google',
-				   'require' => sub { },
-				   'new' => sub { Geo::Coder::My_Google_v3->new },
-				   'extract_loc' => sub {
-				       my $location = shift;
-				       @{$location->{geometry}{location}}{qw(lng lat)};
-				   },
-				   'extract_addr' => sub { shift->{formatted_address} },
-				   'include_multi' => 1,
-				   'include_multi_master' => 1, # means this geocoder's address will be shown first in a "Multi" call
-				  },
-		'Google_v3' => {
-				'label' => 'Google v3 (using CPAN module)',
-				'short_label' => 'Google (v3, CPAN)',
-				'require' => sub { require Geo::Coder::Googlev3 },
-				'new' => sub { Geo::Coder::Googlev3->new },
-				'devel_only' => 1,
-				# extract_loc/addr defined above
-			       },
-		'Google' => { 'new' => sub {
-				  my $apikey = do {
-				      my $file = "$ENV{HOME}/.googlemapsapikey";
-				      open my $fh, $file
-					  or main::status_message("Cannot get key from $file: $!", "die");
-				      local $_ = <$fh>;
-				      chomp;
-				      $_;
-				  };
-				  my $google = Geo::Coder::Google->new(apikey => $apikey);
-				  if ($Geo::Coder::Google::VERSION < 0.06) {
-				      $google->ua->agent("Mozilla/5.0 (compatible; Geo::Coder::Google/$Geo::Coder::Google::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=35173)");
-				  }
-				  $google;
-			      },
-			      'extract_loc' => sub {
-				  my $location = shift;
-				  @{$location->{Point}{coordinates}};
-			      },
-			      'extract_addr' => sub {
-				  my $location = shift;
-				  $location->{address};
-			      },
-			      'label' => 'Google (needs API key)',
-			      'short_label' => 'Google (CPAN)',
-			      'devel_only' => 1,
-			    },
-		'GoogleMaps' => { 'new' => sub {
-				      my $apikey = do {
-					  my $file = "$ENV{HOME}/.googlemapsapikey";
-					  open my $fh, $file
-					      or main::status_message("Cannot get key from $file: $!", "die");
-					  local $_ = <$fh>;
-					  chomp;
-					  $_;
-				      };
-				      require LWP::UserAgent; # should be already loaded anyway
-				      Geo::Coder::GoogleMaps->VERSION(0.04); # API changes, bug fixes
-				      Geo::Coder::GoogleMaps->new(apikey => $apikey,
-								  ua => LWP::UserAgent->new(agent => "Mozilla/5.0 (compatible; Geo::Coder::GoogleMaps/$Geo::Coder::GoogleMaps::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=49483)"),
-								 );
-				  },
-				  'fix_result' => sub {
-				      if (!$_[0]->is_success) {
-					  main::status_message("No success getting the result.", "info");
-					  $_[0] = undef;
-				      }
-				      $_[0] = $_[0]->placemarks->[0]; # return only first one
-				  },
-				  'extract_loc' => sub {
-				      my $location = shift;
-				      return unless $location;
-				      ($location->longitude, $location->latitude);
-				  },
-				  'extract_addr' => sub {
-				      my $location = shift;
-				      return unless $location;
-				      $location->address;
-				  },
-				  'label' => 'Google (alternative implementation, needs API key)',
-				  'short_label' => 'Google (CPAN, GoogleMaps)',
-				  'devel_only' => 1,
-				},
-		'Bing' => {  'require' => sub {
-				 require Geo::Coder::Bing;
-				 # At least 0.04 stopped working at
-				 # some time.
-				 #
-				 # 0.06 has some output encoding
-				 # problems which are solved in 0.07,
-				 # but these are not so grave. Best is
-				 # to use at least 0.10.
-				 Geo::Coder::Bing->VERSION(0.06);
-			     },
-			     'new' => sub {
-				 Geo::Coder::Bing->new;
-			     },
-			     'extract_loc' => sub {
-				 my $location = shift;
-				 ($location->{BestLocation}{Coordinates}{Longitude},
-				  $location->{BestLocation}{Coordinates}{Latitude},
-				 );
-			     },
-			     'extract_addr' => sub {
-				 my $location = shift;
-				 $location->{Address}->{FormattedAddress};
-			     },
-			     'label' => 'Bing',
-			     'include_multi' => 1,
-			   },
-		'Cloudmade' => { 'require' => sub { require Geo::Cloudmade },
-				 'new' => sub {
-				     my $apikey = do {
-					 my $file = "$ENV{HOME}/.cloudmadeapikey";
-					 open my $fh, $file
-					     or main::status_message("Cannot get key from $file: $!", "die");
-					 local $_ = <$fh>;
-					 chomp;
-					 $_;
-				     };
-				     my $cloudmade = Geo::Cloudmade->new($apikey);
-				     bless { cloudmade => $cloudmade }, 'Geo::Coder::MyCloudmade';
-				 },
-				 extract_addr => sub {
-				     my $loc = shift;
-				     $loc->name;
-				 },
-				 extract_loc => sub {
-				     my $loc = shift;
-				     ($loc->centroid->long, $loc->centroid->lat);
-				 },
-				 # See
-				 # http://developers.cloudmade.com/issues/show/1007
-				 # for the umlauts issue
-				 'label' => 'Cloudmade (needs API key, avoid umlauts)',
-				 'short_label' => 'Cloudmade',
-				 'devel_only' => 1,
-			       },
-		'OSM' => { 'require' => sub { require Geo::Coder::OSM },
-			   'new' => sub { Geo::Coder::OSM->new },
-			   'extract_addr' => sub {
-			       my $loc = shift;
-			       $loc->{display_name};
-			   },
-			   'extract_loc' => sub {
-			       my $loc = shift;
-			       ($loc->{lon}, $loc->{lat});
-			   },
-			   'include_multi' => 1,
-			 },
-		'Yahoo PlaceFinder' => {
-					'label' => 'Yahoo PlaceFinder (needs app id)',
-					'short_label' => 'Yahoo PlaceFinder',
-					'devel_only' => 1,
-					'require' => sub { require Geo::Coder::PlaceFinder },
-					'new' => sub {
-					    my $apikey = do {
-						my $file = "$ENV{HOME}/.yahooapikey";
-						open my $fh, $file
-						    or main::status_message("Cannot get key from $file: $!", "die");
-						local $_ = <$fh>;
-						chomp;
-						$_;
-					    };
-					    Geo::Coder::PlaceFinder->new(appid => $apikey);
-					},
-					'extract_addr' => sub {
-					    my $location = shift;
-					    join(", ", grep { defined && length } @{$location}{qw(line1 line2 line3 line4)});
-					},
-					'extract_loc' => sub {
-					    my $location = shift;
-					    ($location->{longitude}, $location->{latitude});
-					},
-				       },
+    my %apis = (
+		'My_Google_v3' =>
+		{
+		 'label' => 'Google v3',
+		 'short_label' => 'Google',
+		 'include_multi' => 1,
+		 'include_multi_master' => 1, # means this geocoder's address will be shown first in a "Multi" call
+
+		 'require' => sub { },
+		 'new' => sub { Geo::Coder::My_Google_v3->new },
+		 'extract_loc' => sub {
+		     my $location = shift;
+		     @{$location->{geometry}{location}}{qw(lng lat)};
+		 },
+		 'extract_addr' => sub { shift->{formatted_address} },
+		},
+
+		'Google_v3' =>
+		{
+		 'label' => 'Google v3 (using CPAN module)',
+		 'short_label' => 'Google (v3, CPAN)',
+		 'devel_only' => 1,
+
+		 'require' => sub { require Geo::Coder::Googlev3 },
+		 'new' => sub { Geo::Coder::Googlev3->new },
+		 # extract_loc/addr resused from My_Google_v3, see below
+		},
+
+		'Google' =>
+		{
+		 'label' => 'Google (needs API key)',
+		 'short_label' => 'Google (CPAN)',
+		 'devel_only' => 1,
+
+		 'new' => sub {
+		     my $apikey = do {
+			 my $file = "$ENV{HOME}/.googlemapsapikey";
+			 open my $fh, $file
+			     or main::status_message("Cannot get key from $file: $!", "die");
+			 local $_ = <$fh>;
+			 chomp;
+			 $_;
+		     };
+		     my $google = Geo::Coder::Google->new(apikey => $apikey);
+		     if ($Geo::Coder::Google::VERSION < 0.06) {
+			 $google->ua->agent("Mozilla/5.0 (compatible; Geo::Coder::Google/$Geo::Coder::Google::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=35173)");
+		     }
+		     $google;
+		 },
+		 'extract_loc' => sub {
+		     my $location = shift;
+		     @{$location->{Point}{coordinates}};
+		 },
+		 'extract_addr' => sub {
+		     my $location = shift;
+		     $location->{address};
+		 },
+		},
+
+		'GoogleMaps' =>
+		{
+		 'label' => 'Google (alternative implementation, needs API key)',
+		 'short_label' => 'Google (CPAN, GoogleMaps)',
+		 'devel_only' => 1,
+
+		 'new' => sub {
+		     my $apikey = do {
+			 my $file = "$ENV{HOME}/.googlemapsapikey";
+			 open my $fh, $file
+			     or main::status_message("Cannot get key from $file: $!", "die");
+			 local $_ = <$fh>;
+			 chomp;
+			 $_;
+		     };
+		     require LWP::UserAgent; # should be already loaded anyway
+		     Geo::Coder::GoogleMaps->VERSION(0.04); # API changes, bug fixes
+		     Geo::Coder::GoogleMaps->new(apikey => $apikey,
+						 ua => LWP::UserAgent->new(agent => "Mozilla/5.0 (compatible; Geo::Coder::GoogleMaps/$Geo::Coder::GoogleMaps::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=49483)"),
+						);
+		 },
+		 'fix_result' => sub {
+		     if (!$_[0]->is_success) {
+			 main::status_message("No success getting the result.", "info");
+			 $_[0] = undef;
+		     }
+		     $_[0] = $_[0]->placemarks->[0]; # return only first one
+		 },
+		 'extract_loc' => sub {
+		     my $location = shift;
+		     return unless $location;
+		     ($location->longitude, $location->latitude);
+		 },
+		 'extract_addr' => sub {
+		     my $location = shift;
+		     return unless $location;
+		     $location->address;
+		 },
+		},
+
+		'Bing' =>
+		{
+		 'label' => 'Bing',
+		 'include_multi' => 1,
+
+		 'require' => sub {
+		     require Geo::Coder::Bing;
+		     # At least 0.04 stopped working at
+		     # some time.
+		     #
+		     # 0.06 has some output encoding
+		     # problems which are solved in 0.07,
+		     # but these are not so grave. Best is
+		     # to use at least 0.10.
+		     Geo::Coder::Bing->VERSION(0.06);
+		 },
+		 'new' => sub {
+		     Geo::Coder::Bing->new;
+		 },
+		 'extract_loc' => sub {
+		     my $location = shift;
+		     ($location->{BestLocation}{Coordinates}{Longitude},
+		      $location->{BestLocation}{Coordinates}{Latitude},
+		     );
+		 },
+		 'extract_addr' => sub {
+		     my $location = shift;
+		     $location->{Address}->{FormattedAddress};
+		 },
+		},
+
+		'Cloudmade' =>
+		{
+		 'label' => 'Cloudmade (needs API key, avoid umlauts)',
+		 'short_label' => 'Cloudmade',
+		 'devel_only' => 1,
+
+		 'require' => sub { require Geo::Cloudmade },
+		 'new' => sub {
+		     my $apikey = do {
+			 my $file = "$ENV{HOME}/.cloudmadeapikey";
+			 open my $fh, $file
+			     or main::status_message("Cannot get key from $file: $!", "die");
+			 local $_ = <$fh>;
+			 chomp;
+			 $_;
+		     };
+		     my $cloudmade = Geo::Cloudmade->new($apikey);
+		     bless { cloudmade => $cloudmade }, 'Geo::Coder::MyCloudmade';
+		 },
+		 extract_addr => sub {
+		     my $loc = shift;
+		     $loc->name;
+		 },
+		 extract_loc => sub {
+		     my $loc = shift;
+		     ($loc->centroid->long, $loc->centroid->lat);
+		 },
+		 # See
+		 # http://developers.cloudmade.com/issues/show/1007
+		 # for the umlauts issue
+		},
+
+		'OSM' =>
+		{
+		 'include_multi' => 1,
+
+		 'require' => sub { require Geo::Coder::OSM },
+		 'new' => sub { Geo::Coder::OSM->new },
+		 'extract_addr' => sub {
+		     my $loc = shift;
+		     $loc->{display_name};
+		 },
+		 'extract_loc' => sub {
+		     my $loc = shift;
+		     ($loc->{lon}, $loc->{lat});
+		 },
+		},
+
+		'Yahoo PlaceFinder' =>
+		{
+		 'label' => 'Yahoo PlaceFinder (needs app id)',
+		 'short_label' => 'Yahoo PlaceFinder',
+		 'devel_only' => 1,
+
+		 'require' => sub { require Geo::Coder::PlaceFinder },
+		 'new' => sub {
+		     my $apikey = do {
+			 my $file = "$ENV{HOME}/.yahooapikey";
+			 open my $fh, $file
+			     or main::status_message("Cannot get key from $file: $!", "die");
+			 local $_ = <$fh>;
+			 chomp;
+			 $_;
+		     };
+		     Geo::Coder::PlaceFinder->new(appid => $apikey);
+		 },
+		 'extract_addr' => sub {
+		     my $location = shift;
+		     join(", ", grep { defined && length } @{$location}{qw(line1 line2 line3 line4)});
+		 },
+		 'extract_loc' => sub {
+		     my $location = shift;
+		     ($location->{longitude}, $location->{latitude});
+		 },
+		},
 	       );
     $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
 
