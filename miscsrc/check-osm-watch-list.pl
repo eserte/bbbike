@@ -38,6 +38,15 @@ GetOptions(
 	  )
     or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...]";
 
+my $egrep_prog;
+if ($osm_file =~ m{\.bz2$}) {
+    $egrep_prog = 'bzegrep';
+} elsif ($osm_file =~ m{\.gz$}) {
+    $egrep_prog = 'zegrep';
+} else {
+    $egrep_prog = 'egrep';
+}
+
 my $ua;
 if ($show_diffs) {
     require XML::LibXML;
@@ -89,7 +98,7 @@ my $changed_count = 0;
 	}
     }
     my $rx = '(' . join("|", values %by_type_rx) . ')';
-    my @grep_cml = ('bzegrep', '--', $rx, $osm_file);
+    my @grep_cml = ($egrep_prog, '--', $rx, $osm_file);
     if (!$quiet) {
 	warn "INFO: Running '@grep_cml'...\n";
     }
