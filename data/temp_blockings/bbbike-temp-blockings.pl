@@ -19970,6 +19970,7 @@ EOF
 #: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 #: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 #: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
+#: note: am 2013-02-11 geprüft, keine Schranke, aber nur für "Linienverkehr frei"
 userdel	q3::inwork 10530,14452 10723,14772
 EOF
      },
@@ -20235,7 +20236,7 @@ EOF
        text  => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-01-08
+#: last_checked: 2013-02-11
 #: note: etwa 80 Meter an der Knaackstr. gesperrt
 userdel	q3::inwork 10893,14705 11101,14768
 EOF
@@ -20454,11 +20455,10 @@ userdel	2::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1360611352, # undef, # XXX
        text  => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-10-31
 userdel	q3::inwork 11912,14486 11642,14625
 EOF
      },
@@ -20819,11 +20819,11 @@ userdel	q4::inwork; 13339,7452 13303,7622
 EOF
      },
      { from  => undef, # 
-       until => 1357672098, # undef, # XXX
+       until => undef, # XXX
        text  => 'Sredzkistr.: Kreuzungsbereich in Höhe Hosemannstr. gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-11-14 vvv
+#: last_checked: 2013-02-11 vvv
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
 userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763

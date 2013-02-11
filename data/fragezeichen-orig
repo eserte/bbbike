@@ -24,8 +24,8 @@
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
-#: last_checked: 2013-01-08
-#: next_check: 2013-03-18
+#: last_checked: 2013-02-11
+#: next_check: 2013-04-11
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -84,7 +84,7 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2013-01-28
+#: last_checked: 2013-02-10
 #: next_check: 2013-06-01
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -196,7 +196,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
-#: last_checked: 2013-01-31
+#: last_checked: 2013-02-11
 #: next_check: 2013-09-01
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 #: last_checked: 2013-01-05
@@ -454,7 +454,7 @@ Verlängerung der Jochen-Klepper-Str. (Potsdam): Qualität?	? -13436,595 -13668,66
 #: XXX ^^^
 #: last_checked ^^^
 # 
-#: next_check: 2013-10-27 vvv
+#: next_check: 2014-03-02 vvv
 #: note: Straßen zum und am BER vvv
 Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 18386,-4109 18386,-4109 18296,-4078 17832,-4267 18001,-4685 18517,-4502 18485,-4406 18451,-4303 18386,-4109
 Waltersdorf - BER: Genaue Wegführung? Wahrscheinlich asphaltiert	? 19676,-4036 18517,-4502
@@ -600,8 +600,8 @@ Am Tierpark: nach den Bauarbeiten Radwege/-spuren?	?::inwork 18220,11710 18228,1
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
-#: last_checked: 2012-10-18 (im eigentlich fertigen nördlichen Streifen ist bis auf die Führung an der Straßenbahnhaltestelle nichts passiert)
-#: next_check: 2012-12-15
+#: last_checked: 2013-02-11
+#: next_check: 2012-04-11
 Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772 10838,14962 10881,15047
 # 
 #: last_checked: 2012-05-06 vvv
@@ -654,12 +654,13 @@ Mangerstr. (Potsdam): Bauarbeiten bis November 2011, danach vielleicht etwas bes
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
 #: last_checked: 2013-01-08 vvv
-#: next_check: 2013-06-01 vvv
+#: next_check: 2014-03-01 vvv
+#: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
-Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
-#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Falkoniergasse: Genaue Lage? Qualität?	?::inwork 9945,12180 9915,12259
+#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
+Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 #: next_check ^^^
 #: last_checked ^^^
 #
@@ -785,8 +786,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: next_check: 2013-02-08
-An der ehem. Blumengroßmarkthalle: ist hier evtl. eine neue Verbindung entstanden?	? 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
+Strelitzer Str., Elisabethkirchstr.: ist hier vielleicht auch eine Spielstraße?	? 9750,14132 9769,14175 9856,14204 9800,14306
+# 
+#: last_checked: 2013-02-10
+An der ehem. Blumengroßmarkthalle: hier wird eine neue Verbindung --- gepflastert (genaue Qualität?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Lückenschluss, auch zur Siegfriedstr.)
 #: XXX evtl. entsteht hier auch eine offizielle Verbindung?
@@ -830,7 +833,7 @@ Alter Wiesenweg: Qualität? Ausgeschildert?	? 1739,15958 1581,15919
 Charles-Tellier-Platz: genaue Lage? Qualität? Anbindung an umliegende Wege?	X -14637,462 -14574,431 -14559,465 -14625,474
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5192&options=4 (BVV-Beschluss)
-#: last_checked: 2013-01-05
+#: last_checked: 2013-02-10
 #: next_check: 2013-04-05
 Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,9856 9820,9718 9790,9528
 # 
@@ -3380,6 +3383,8 @@ Lutoner Str./Cosmarweg: ist die Straße eine Vorfahrtsstraße oder gilt hier recht
 Potsdam Hbf - Uferweg: Qualität?	? -12247,-1858 -12210,-1857 -12200,-1813 -12165,-1815 -12122,-1737 -12103,-1679 -12059,-1617
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf vvv
+#: XXX wahrscheinlich wird zumindest in der Speicherstadt kein direkter Weg am Wasser sein
+#: by: http://www.grothgruppe.de/site/179/Speicherstadt_Potsdam.html (-> Galerie)
 Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg bereits (oder Teile davon)? Qualität?	?::inwork -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
 Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9677,5430 -9478,5549 -9372,5532
 #: by ^^^

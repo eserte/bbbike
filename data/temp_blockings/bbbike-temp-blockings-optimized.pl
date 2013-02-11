@@ -1097,6 +1097,7 @@ userdel	q4::inwork; 10614,19907 10599,19957
 #: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 #: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 #: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
+#: note: am 2013-02-11 geprüft, keine Schranke, aber nur für "Linienverkehr frei"
 userdel	q3::inwork 10530,14452 10723,14772
 ',
          'type' => 'handicap'
@@ -1178,7 +1179,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
          'text' => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2337,
-         'data' => '#: last_checked: 2013-01-08
+         'data' => '#: last_checked: 2013-02-11
 #: note: etwa 80 Meter an der Knaackstr. gesperrt
 userdel	q3::inwork 10893,14705 11101,14768
 ',
@@ -1217,16 +1218,7 @@ userdel	q3::inwork 10893,14705 11101,14768
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
-         'from' => undef,
-         'id' => 2361,
-         'data' => '#: last_checked: 2012-10-31
-userdel	q3::inwork 11912,14486 11642,14625
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1345,7 +1337,20 @@ userdel	q4::inwork; 13339,7452 13303,7622
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => undef,
+         'text' => 'Sredzkistr.: Kreuzungsbereich in Höhe Hosemannstr. gesperrt, Ausweichen auf Gehweg',
+         'from' => undef,
+         'id' => 2399,
+         'data' => '#: last_checked: 2013-02-11 vvv
+#: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
+userdel	q2::inwork 11436,14741 11271,14755
+userdel	q3::inwork 11271,14755 11187,14763
+#: XXX ^^^
+#: last_checked ^^^
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
          'recurring' => 1,
@@ -1468,16 +1473,6 @@ userdel	q4::inwork; 13474,8060 13444,7879
 	q3::inwork; -12881,-1092 -12984,-1110 -13187,-1150
 ',
          'type' => 'handicap'
-       },
-       {
-         'source_id' => 'INKO_116993',
-         'until' => 1360551600,
-         'text' => 'Karlshorster Str. (Rummelsburg) gesperrt (09.02.2013 00 Uhr bis 11.02.2013 04:00 Uhr)',
-         'from' => 1360350803,
-         'id' => 2416,
-         'data' => 'userdel	2::inwork 15261,10738 15272,10790 15279,10862
-',
-         'type' => 'gesperrt'
        }
      
 );
