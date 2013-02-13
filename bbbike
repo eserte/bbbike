@@ -5683,6 +5683,7 @@ sub load_photos {
     $inwork_klein_photo  = load_photo($top, 'inwork_12');
     $achtung_photo       = load_photo($top, 'achtung');
     $cal_photo           = load_photo($top, 'cal');
+    $cal_questionmark_photo = load_photo($top, 'cal_questionmark');
     $clock_photo	 = load_photo($top, 'clock');
     $night_photo	 = load_photo($top, 'night');
     $ferry_photo         = load_photo($top, 'ferry')
@@ -10743,6 +10744,7 @@ sub plot_sperre {
 		    for my $check (['inwork', $use_inwork_photo],
 				   ['night',  $night_photo],
 				   ['clock',  $clock_photo],
+				   ['tempmaybe', $cal_questionmark_photo],
 				   ['temp',   $cal_photo], # should be last
 				  ) {
 			my($addinfo, $photo) = @$check;
