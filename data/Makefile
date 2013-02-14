@@ -181,8 +181,8 @@ persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
 .endfor
 
 # more checks, but even slower (about four minutes)
-really-slow-checks:	check-crossings-important \
-			check-nearest \
+really-slow-checks:	check-nearest \
+			check-crossings-important \
 			check-urls \
 			plz-test
 
