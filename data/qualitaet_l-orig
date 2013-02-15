@@ -4164,15 +4164,25 @@ Schützenstr. (Altglienicke): Beton	Q1 19588,-860 19550,-775
 #: by: Frank- R. Hoffmann:
 #: confirmed_by: srt
 Schwalbenweg: mäßiger Beton	Q1- 19650,-732 19619,-746 19550,-775 19366,-845 19309,-885
-#: by: osm
+# 
+#: by: osm vvv
 Seeweg: Asphalt	Q0 19248,-771 19309,-885 19352,-961
 Seeweg: Verbundsteinpflaster	Q1 19352,-961 19404,-1076
+#: by: ^^^
+# 
 #: by: Conny (jansens...):
 Franz-Mehring-Str.: mäßiger Asphalt	Q1- -9313,-2429 -9218,-2129 -9164,-1947
+# 
 #: by: Stefan Schmitz
 (Marienfelder Str./Hubertusstr. - Mauerradweg): Trampelpfad	Q2 10040,-3202 10051,-3173
+# 
 #: by: Marcus (mahabbel...):
 #: note: "Wohnstraße, für Auto 30 km/h"
 Marie-Juchacz-Str. (Potsdam): Asphalt	Q0 -7369,-5648 -7398,-5650 -7472,-5652 -7537,-5620 -7592,-5565 -7655,-5517 -7713,-5470 -7767,-5415
+# 
 #: by: Joachim (...traenkle...):
 Alt Drewitz: sehr schlechtes Kopfsteinpflaster	Q3 -8101,-4749 -8150,-4849 -8141,-4962 -8150,-5004 -8189,-5159 -8195,-5176 -8165,-5236
+# 
+#: by: heike krischak
+#: note: "enge Straße, q0" ignoriert
+Grotrianstr. (Potsdam): guter Beton	Q0- -7497,-3096 -7511,-3384

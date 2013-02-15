@@ -678,16 +678,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
-         'from' => undef,
-         'id' => 2021,
-         'data' => '	2::temp 8554,12593 8540,12420
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1107,14 +1098,14 @@ userdel	q3::inwork 10530,14452 10723,14772
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4399.html',
          'until' => undef,
-         'text' => 'Sperrung Fußgängerbrücke Altglienicke.',
+         'text' => 'Vollsperrung der Fußgängerbrücke Altglienicke, mindestens bis zum Sommer 2013',
          'from' => undef,
          'id' => 2311,
          'data' => '#: by: http://www.altglienicke24.de/meldungen.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
 #: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
-#: XXX wann wird die Brücke wieder eröffnet?
-#: next_check: 2013-03-01
+#: by: http://www.morgenpost.de/bezirke/article112374495/Fussgaengerbruecke-wird-repariert.html (Reparatur ab Juni 2013, 2 Monate Bauzeit)
+#: next_check: 2013-07-31
 userdel	2::inwork 19968,16 19940,52
 ',
          'type' => 'gesperrt'
