@@ -376,7 +376,7 @@ do-garmindata-dist:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 	cd /tmp && \
 	    zip -r bbbike-b_de-garmin-$(TODAY_DATE).zip bbbike-b_de-garmin
 
-garmindata-sf-release:	do-garmindata-dist garmindata-sf-release-show-notice:
+garmindata-sf-release:	do-garmindata-dist garmindata-sf-release-show-notice
 
 garmindata-sf-release-show-notice:
 	@echo "Upload the file:"
