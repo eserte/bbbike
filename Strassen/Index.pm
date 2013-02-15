@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-index.pl,v 1.11 2007/03/31 20:06:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,22 +12,11 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# XXX Will probably be sometime Strassen::Index or so
-
-use strict;
-
-if (!caller) {
-    require FindBin;
-    push @INC, ("$FindBin::RealBin/..",
-		"$FindBin::RealBin/../lib",
-	       );
-}
-
 package Strassen::Index;
 
+use strict;
 use vars qw($DB_File);
 $DB_File = "DB_File::Lock" if !defined $DB_File;
-#$DB_File = "DB_File" if do { require Sys::Hostname; Sys::Hostname::hostname() =~ /^biokovo/ }; # XXX hack for NFS
 
 require Strassen;
 if ($DB_File eq 'DB_File') {

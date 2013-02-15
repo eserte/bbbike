@@ -94,9 +94,8 @@ BEGIN {
 }
 use File::Copy qw(cp);
 
-# XXX will be Strassen::Index some time
 if (eval { require DB_File::Lock; 1 }) {
-    eval { require "strassen-index.pl" }; warn $@ if $@;
+    eval { require Strassen::Index }; warn $@ if $@;
 }
 
 use vars qw($datadir);
