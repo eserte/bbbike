@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -11,22 +11,24 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# Description (de): Eine Routensuche bei Fahrinfo vornehmen
+# Description (de): Eine OePNV-Routensuche mit Fahrinfo vornehmen
+# Description (en): Do a public transport route search using Fahrinfo
 package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
-use vars qw($icon %city_border_points);
+use vars qw($icon %city_border_points $menu);
 
 use CGI qw();
 use Encode qw(encode);
 
 use BBBikeUtil qw(bbbike_root m2km kmh2ms s2ms);
+use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::Util;
 
@@ -39,6 +41,9 @@ $LIMIT_LB = 12;
 
 use vars qw($PEDES_MS);
 $PEDES_MS = kmh2ms(5);
+
+use vars qw($data_source);
+$data_source = "osm";
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -89,6 +94,7 @@ EOF
 
 sub add_button {
     my $mf = $main::top->Subwidget("ModePluginFrame");
+    my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
     return unless defined $mf;
 
     my $button = $mf->Button(main::image_or_text($icon, 'Fahrinfo'),
@@ -104,6 +110,36 @@ sub add_button {
 # 	    );
     $main::balloon->attach($button, -msg => M"Fahrinfo")
 	if $main::balloon;
+
+    BBBikePlugin::place_menu_button
+	    ($mmf,
+	     [
+	      [Button => 'Datenquelle',
+	       -state => 'disabled',
+	       -font => $main::font{'bold'},
+	      ],
+	      [Radiobutton => "OSM-Daten verwenden",
+	       -variable => \$data_source,
+	       -value => "osm",
+	      ],
+	      [Radiobutton => "VBB-Daten verwenden",
+	       -variable => \$data_source,
+	       -value => "vbb",
+	      ],
+	      "-",
+	      [Button => "Dieses Menü löschen",
+	       -command => sub {
+		   $mmf->afterIdle(sub {
+				       unregister();
+				   });
+	       }],
+	     ],
+	     $button,
+	     __PACKAGE__."_menu",
+	     -title => M"FahrinfoQuery",
+	    );
+
+    $menu = $mmf->Subwidget(__PACKAGE__."_menu")->menu;
 }
 
 sub choose {
@@ -115,25 +151,7 @@ sub choose {
     # XXX no support for via
     my $goal  = $main::search_route_points[-1]->[main::SRP_COORD()];
 
-    my $osm_data_dir;
- TRY_OSM_DATA_DIR: {
-	my @try_dirs = ('data_berlin_brandenburg_osm_bbbike',
-			'data_berlin_osm_bbbike',
-		       );
-	for my $try_dir (map { bbbike_root . '/' . $_ } @try_dirs) {
-	    if (-d $try_dir) {
-		$osm_data_dir = $try_dir;
-		last TRY_OSM_DATA_DIR;
-	    }
-	}
-	main::status_message(M"Es konnte keines der folgenden Verzeichnisse im BBBike-Wurzelverzeichnis gefunden werden: " . join(" ", @try_dirs) . ". Keine Haltestellensuche möglich.", "error");
-	return;
-    }
-
-    my $ms = MultiStrassen->new("$osm_data_dir/_oepnv",
-				"$osm_data_dir/ubahnhof",
-				"$osm_data_dir/sbahnhof",
-			       );
+    my $ms = get_data_object();
 
     my $t = $main::top->Toplevel(-title => 'Fahrinfo');
     $t->transient($main::top) if $main::transient;
@@ -187,7 +205,7 @@ sub choose {
 		    $name .= " (Potsdam)";
 		}
 		$name .= " [";
-		if ($cat !~ m{^[US]$}) {
+		if ($cat !~ m{^[US]$} && $cat ne 'X') {
 		    $name .= "$cat; ";
 		}
 		$name .= m2km($stop->{Dist}, 1);
@@ -221,7 +239,9 @@ sub choose {
 	my($lb, $stops) = @$def;
 	$lb->bind('<Double-1>' => sub {
 		      my($cursel) = $lb->curselection;
+		      my $conv = $ms->get_conversion(-tomap => $main::coord_system);
 		      my $coord = $stops->[$cursel]->{StreetObj}->[Strassen::COORDS()]->[0];
+		      $coord = $conv->($coord) if $conv;
 		      main::mark_point(-coords => [[[ main::transpose(split /,/, $coord) ]]],
 				       -clever_center => 1,
 				      );
@@ -261,7 +281,8 @@ sub start_browser {
 sub get_nearest {
     my($s, $xy) = @_;
     my($x,$y) = split /,/, $xy;
-    $s->make_grid(UseCache => 1, Exact => 1) unless $s->{Grid};
+    $s->make_grid(UseCache => 1, Exact => 1, -tomap => $main::coord_system) unless $s->{Grid};
+    my $conv = $s->get_conversion(-tomap => $main::coord_system);
     my @res;
     {
 	my %seen;
@@ -275,7 +296,9 @@ sub get_nearest {
 		    $seen{$n}++;
 		    my $r = $s->get($n);
 		    next if $r->[Strassen::NAME] =~ m{^\s*$}; # no name -> no use!
-		    my($px,$py) = split /,/, $r->[Strassen::COORDS]->[0];
+		    my $p0 = $r->[Strassen::COORDS]->[0];
+		    $p0 = $conv->($p0) if $conv;
+		    my($px,$py) = split /,/, $p0;
 		    my $this_mindist = Strassen::Util::strecke([$px,$py], [$x,$y]);
 		    my $line = {StreetObj  => $r,
 				Dist       => $this_mindist,
@@ -307,6 +330,47 @@ sub _inside_any {
 
 sub inside_berlin  { _inside_any($_[0], 'berlin') }
 sub inside_potsdam { _inside_any($_[0], 'potsdam') }
+
+sub get_data_object {
+    my $obj;
+
+    if      ($data_source eq 'osm') {
+	my $osm_data_dir;
+    TRY_OSM_DATA_DIR: {
+	    my @try_dirs = ('data_berlin_brandenburg_osm_bbbike',
+			    'data_berlin_osm_bbbike',
+			   );
+	    for my $try_dir (map { bbbike_root . '/' . $_ } @try_dirs) {
+		if (-d $try_dir) {
+		    $osm_data_dir = $try_dir;
+		    last TRY_OSM_DATA_DIR;
+		}
+	    }
+	    main::status_message(M"Es konnte keines der folgenden Verzeichnisse im BBBike-Wurzelverzeichnis gefunden werden: " . join(" ", @try_dirs) . ". Keine Haltestellensuche möglich mit der Datenquelle 'osm'.", "die");
+	}
+
+	$obj = MultiStrassen->new("$osm_data_dir/_oepnv",
+				  "$osm_data_dir/ubahnhof",
+				  "$osm_data_dir/sbahnhof",
+				 );
+    } elsif ($data_source eq 'vbb') {
+	# Create with
+	#    cd .../bbbike-aux/misc
+	#    ./vbb-stops-to-bbd.pl > ~/src/bbbike/tmp/vbb.bbd
+	# XXX Maybe download and convert automatically from
+	#     http://datenfragen.de/openvbb/GTFS_VBB_Okt2012/stops.txt
+	my $file = "$main::tmpdir/vbb.bbd";
+	if (-r $file) {
+	    $obj = Strassen->new($file);
+	} else {
+	    main::status_message(Mfmt("Die Datei %s konnte nicht gefunden werden. Keine Haltestellensuche möglich mit der Datenquelle 'vbb'.", $file), "die");
+	}
+    } else {
+	main::status_message("Unhandled data source '$data_source'", 'die');
+    }
+
+    $obj;
+}
 
 1;
 
