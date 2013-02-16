@@ -359,8 +359,8 @@ Wackerweg - Otisstr.: im Zuge der RR4 könnte es hier eine neue Verbindung geben	
 Verbindung im Zuge der RR9: Qualität?	? 26199,5643 26270,5829 26302,5932
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2012-12-30
-#: next_check: 2013-02-28
+#: last_checked: 2013-02-16
+#: next_check: 2013-04-16
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
 #: last_checked: 2012-10-20 (aber nur im südlichen Bereich)
 #: next_check: 2012-12-31
@@ -370,8 +370,8 @@ Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
 #: by: ^^^
 # 
-#: last_checked: 2012-12-30
-#: next_check: 2013-01-04
+#: last_checked: 2013-02-16
+#: next_check: 2013-03-16
 #: note: Treskowallee (Lichtenberg) in Höhe Waldowallee Baustelle, Fahrbahn von 2 auf 1 Fahrstreifen reduziert, ein Abbiegen aus Richtung Am Tierpark in die Waldowallee ist nicht möglich (bis Ende 03/2013)
 #: source_id: IM_019443
 Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18867,9464 18834,9256
@@ -511,25 +511,19 @@ Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,128
 Cecilienstraße/Hannaweg: neuer Zebrastreifen wird markiert	?::projected 20909,13968 20936,13941
 #: by: ^^^
 # 
-#: last_checked: 2012-10-13 vvv
-#: next_check: 2013-02-01 vvv
+#: last_checked: 2013-02-16 vvv
+#: next_check: 2013-03-16 vvv
 #: XXX siehe auch temporäre Sperrung des Weges in die Wuhlheide
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
-Günter-Riesebrodt-Weg: Qualität nach den Bauarbeiten?	?::inwork 19406,7886 19282,7976
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
 #: XXX fehlen in Berlin.coords.data, PLZ=10318 vvv
+#: XXX ggfs. als Sackgasse eintragen
 Alfred-Siggel-Weg: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inwork 19406,7886 19531,7794
-Fritz-Thurm-Weg: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inwork 19440,7694 19369,7738 19277,7543
 #: XXX ^^^
 #: by: ^^^
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012 vvv
-Verlängerung der Georg-Stern-Str.: genaue Lage?	?::inwork 19353,7819 19466,7739 19497,7718
-Verlängerung der Frieda-Rosenthal-Str.: genaue Lage?	?::inwork 19262,7567 19277,7543 19307,7495 19440,7694 19466,7739
-#: by: ^^^
-Verlängerung des Wegs an der Trabrennbahn: genaue Lage?	?::inwork 19189,7545 19253,7402
 #: next_check: ^^^
 #: last_checked ^^^
 # 
@@ -582,12 +576,6 @@ Edith-Stein-Str.: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inwo
 Erna-Samuel-Straße: Straße wird gebaut, Qualität, Radwege/streifen, genaue Lage?	?::inwork 5340,14050 5522,14195 5704,14252 5954,14303 6106,14280
 # 
 # REMOVED (keine Anzeichen für weitere Straßen hier) --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
-# 
-#: last_checked: 2012-12-30
-#: next_check: 2013-01-15
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110627.1115.349371.html
-#: XXX zurzeit (2012-12) ist die Fahrbahn in nördlicher Richtung für Radspuren vorbereitet, Schilder sind da, aber Markierungen fehlen
-Am Tierpark: nach den Bauarbeiten Radwege/-spuren?	?::inwork 18220,11710 18228,11656 18268,11391 18286,11275 18327,11105 18343,11041 18417,10738 18446,10620
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html
@@ -817,8 +805,6 @@ Fortsetzung des Hebammensteigs: Qualität? Genauer Verlauf? Names des Wegs?	? 129
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4439&options=4
 Bäkestr.: existiert hier ein Zebrastreifen?	? 4526,3138 4701,3018
-# 
-Rhinstr. - Marzahner Chaussee, alternative Zufahrt: Qualität, Ausschilderung?	? 18220,11710 18234,11787 18249,11789 18254,11825 18340,11830 18381,11857 18417,11854 18420,11864
 # 
 #: XXX früher: "Albrechtsche Erben (Kolonie)", evtl. auch in Berlin.coords.data umbenennen
 #: note: aus dem DPAG-Mitteilungsblatt Dez 2012, PLZ=13629
@@ -3237,21 +3223,6 @@ Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straß
 #: XXX eine Straße (eine Aldi-Zufahrt oder so) existiert hier, und laut 1:5K und gmaps ist es die Waadter Zeile, aber...
 #: XXX_osm: bei osm ohne Straßennamen
 Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straße Straßenschilder? Qualität?	? 3746,2108 3723,2118 3726,2209
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012 
-#: XXX siehe auch den Stummel der "Hönower Str."
-#: XXX Privatstraße vvv
-#: XXX anonymous meint (2013-01-14): Asphalt, aber stimmt das tatsächlich?
-#: last_checked: 2012-12-30 vvv
-#: next_check: 2013-03-01 vvv
-Sokratesweg: Qualität nach den Bauarbeiten?	?::inwork 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
-Sokratesweg: Qualität nach den Bauarbeiten?	?::inwork 18505,9500 18596,9485
-Sokratesweg: Qualität nach den Bauarbeiten?	?::inwork 18514,9552 18604,9535
-Sokratesweg: Qualität nach den Bauarbeiten?	?::inwork 18520,9585 18610,9569
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 vvv

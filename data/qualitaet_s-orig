@@ -132,8 +132,9 @@ Kressenweg: Asphalt	Q0 23513,9567 23528,9680 23574,9782
 Kressenweg: Asphalt, einige "Moabiter Kissen"	Q0- 23574,9782 23603,9883 23659,10074
 Fischerstr.: Kopfsteinpflaster	Q2 16032,10842 16080,10743 16187,10587
 Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
-Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195 18120,9100 18136,9072
-Dönhoffstr.: Kopfsteinpflaster/Asphalt	Q1 18136,9072 18161,9029 18221,8978
+Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
+Wallensteinstr.: Asphalt	Q0- 18037,9195 18120,9100 18136,9072
+Dönhoffstr.: Asphalt	Q0 18136,9072 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18733,8633
 #: confirmed_by: Sabine Plagens vvv
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10063,251 10156,13 10214,-142 10266,-284
 Halker Zeile: Asphalt	Q0 10266,-284 10374,-552 10473,-799
@@ -185,7 +186,7 @@ Harzer Str.: Kopfsteinpflaster	Q2 12871,9356 12897,9365
 Kiefholzstr.: Kopfsteinpflaster	Q2 13601,9572 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2+ 15060,11006 15102,11120
-Marzahner Chaussee: Kopfsteinpflaster	Q2- 18559,12105 18420,11864 18380,11747
+Marzahner Chaussee: Kopfsteinpflaster	Q2- 18559,12105 18420,11864 18417,11854 18380,11747
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22857,6155 22777,6151 22603,6141 22467,6135
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, aber Radweg existiert	Q1; 22467,6135 22603,6141 22777,6151 22857,6155
 Stellingdamm: Asphalt	Q0 22857,6155 23011,6181 23131,6237 23222,6276
@@ -842,8 +843,8 @@ Weg am Müggelsee: Asphalt	Q0- 27081,2528 26989,2570 26859,2596 26627,2610 26457,
 Radweg am Müggelsee: asphaltiert	Q0 27218,2300 26805,2381 26459,2440 26026,2532 25948,2474
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html vvv
 #: XXX Sanierung der Rheinsteinstr., danach asphaltiert vvv
-#: last_checked: 2012-12-30 vvv
-#: next_check: 2013-01-20 vvv
+#: last_checked: 2013-02-16 vvv
+#: next_check: 2013-03-16 vvv
 Rheinsteinstr.: Kopfsteinpflaster	Q2 19163,8867 19299,8946
 #: next_check ^^^
 #: last_checked ^^^
@@ -1574,7 +1575,8 @@ Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13273,12649 13357,12473
 Jacobystr.: Beton	Q1 11594,12662 11260,12809 11207,12706
 Parochialstr.: Asphalt	Q0 10952,12401 11040,12415
 Parochialstr.: Asphalt mit einer leichten Schadstelle	Q0- 10831,12371 10952,12401
-Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11017,12487 11032,12439 11040,12415 11049,12386 11094,12243
+Waisenstr.: Asphalt	Q1 11017,12487 11032,12439
+Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11032,12439 11040,12415 11049,12386 11094,12243
 (Waisenstr. - Littenstr.): schlechtes Kopfsteinpflaster	Q3 11032,12439 11059,12450
 Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 (Crellestr. - Julius-Leber-Brücke): Verbundsteinpflaster	Q1 7524,9093 7555,8978 7509,8929 7497,8916
@@ -2316,7 +2318,9 @@ Ludwig-Richter-Str.: Asphalt	Q0 15002,8651 14940,8583
 (Am S-Bahnhof Plänterwald): Asphalt	Q0 15303,8343 15242,8263 15284,8214 15357,8286
 Am Oberhafen: Asphalt	Q0 13712,6656 13688,6739
 Salzmannstr.: Asphalt	Q0 16847,10092 16855,10127
-#: XXX wurde hier auch neu asphaltiert?
+#: XXX wird hier auch neu asphaltiert?
+#: last_checked: 2013-02-16
+#: next_check: 2013-05-01
 Salzmannstr.: mäßiger Beton	Q2+ 16855,10127 16887,10271 16941,10487
 #: corrected_by: Heike (helabe...) (Verbundsteinpflaster -> Asphalt)
 Kohlweißlingstr.: Asphalt	Q0 21537,11256 21598,11190 21640,11107 21677,11017 21723,10920 21765,10834
@@ -2562,9 +2566,10 @@ Wendlandzeile: mäßiger Beton	Q1 6500,7172 6517,7260 6608,7306
 (Wintgensstr. - General-Pape-Str.): Kopfsteinpflaster und Asphalt	Q1- 8140,7906 8207,7909
 Wüsthoffstr.: etwas Kopfsteinpflaster, Verbundsteinpflaster, Bodenschwellen	Q1 8265,8092 8461,8097
 Achenbachpromenade: wassergebundene Decke und Verbundsteinpflaster	Q1 8763,8780 8748,8587 8722,8527 8715,8459
-(Salzmannstr. - Betriebsbhf. Rummelsburg): mäßiger Beton	Q1 16847,10092 16839,10064 16830,10030 16847,9995
+(Salzmannstr. - Betriebsbhf. Rummelsburg): mäßiger Beton	Q1 16847,10092 16835,10052 16830,10030 16847,9995
 (Salzmannstr. - Betriebsbhf. Rummelsburg): Asphalt	Q0 16847,9995 16895,9922 16900,9861
-(Am Kraatzgraben): unebener Asphalt	Q1- 16839,10064 16666,10219 16544,10337 16488,10381
+(Am Kraatzgraben): unebener Asphalt	Q1- 16835,10052 16666,10219 16544,10337
+(Am Kraatzgraben): wassergebundene Decke	Q1- 16544,10337 16488,10381
 (Kolonie Sanssouci): wassergebundene Decke, Feinschotter	Q1- 16488,10381 16297,10636 16246,10641
 (Blockpark): Asphalt	Q0 16300,10753 16246,10641 16187,10587
 #: XXX wird hier die Straße verbessert werden?
@@ -2792,7 +2797,9 @@ An der Rehwiese: Kopfsteinpflaster	Q2 -3299,1838 -3299,1753 -3389,1703 -3504,170
 An der Rehwiese: schlechtes Kopfsteinpflaster	Q3 -3215,2048 -3249,2002
 Am Kupfergraben: Kopfsteinpflaster	Q2 9870,12657 9900,12643 9919,12613
 #: XXX früher war hier ein Betonplattengehweg (Q0-), evtl. wird er nach den Bauarbeiten ("Besser Parken GmbH") wieder hergestellt
-#: last_checked: 2012-12-30
+#: XXX Bauarbeiten sind anscheinend fertig, aber der Weg sieht noch immer provisorisch aus
+#: last_checked: 2013-02-16
+#: next_check: 2013-04-16
 (Ontarioseestr. - Treskowallee): unbefestigter Pfad	Q2- 18577,10023 18694,10018
 Bopparder Str.: mäßiger Beton	Q1- 18790,9018 18881,9002
 Sinziger Str.: Beton	Q1 18886,9031 18978,9014
@@ -5468,13 +5475,15 @@ Grottewitzwanderweg - Straße zur Krampenburg: Waldweg	Q2 27573,-757 27551,-786
 Bohrauer Pfad: Beton	Q0- 20981,4628 20827,4655 20716,4691
 (Gartenweg [Kolonie Wendenheide]): unbefestigte Straße, zweispurig	Q2 20850,4225 20716,4549 20684,4596
 Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
-Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg	Q3+ 19456,7956 19549,7826 19570,7712 19540,7629 19321,7360
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg	Q3+ 19456,7956 19549,7826 19570,7712 19540,7629 19343,7387 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Plattenweg (Längsplatten)	Q2- 19321,7360 19223,7231 19223,7189
 Maria-Matray-Str.: Asphalt	Q0 19456,7956 19443,7937 19406,7886 19353,7819
-Georg-Stern-Str.: Asphalt	Q0 19353,7819 19308,7852 19235,7905 19258,7943
+Georg-Stern-Str.: Asphalt	Q0 19500,7719 19353,7819 19308,7852 19235,7905 19258,7943
 #: note: auch eingetragen von Marco Schott
-Frieda-Rosenthal-Str.: Asphalt	Q0 19308,7852 19271,7794 19200,7682 19195,7674 19228,7610 19262,7567
+Frieda-Rosenthal-Str.: Asphalt	Q0 19308,7852 19271,7794 19200,7682 19195,7674 19228,7610 19245,7577 19286,7511 19350,7590 19449,7669 19500,7719
 Franz-Stimming-Weg: Verbundsteinpflaster	Q0- 19200,7682 19172,7712 19159,7746 19207,7834 19271,7794
+Fritz-Thurm-Weg: Verbundsteinpflaster	Q0- 19449,7669 19350,7741 19245,7577
+Günter-Riesebrodt-Weg: Verbundsteinpflaster	Q1+ 19406,7886 19282,7976
 Straße 43: Asphalt	Q0 15094,22290 15202,22210 15353,22105
 Straße 43: Verbundsteinpflaster	Q1 15353,22105 15459,22025
 #: note: public imagery
@@ -7097,11 +7106,16 @@ Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5627,12105 5585,12009 5620,11997 5684
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (Radweg am Müggelsee - Strandschloßweg): Waldweg	Q1 25232,3757 25224,3789 25193,3844
 (Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1- 18709,8423 18748,8363 18751,8300 18741,8220 18666,8085
-(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8165 18915,8079 19014,7875 19099,7761 19173,7585 19189,7545
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8165 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540
+#: XXX war wegen Schneedecke nicht feststellbar
+#: last_checked: 2013-02-16
+#: next_check: 2013-03-16
+(Weg an der Trabrennbahn): unbefestigter Weg oder wassergebundene Decke	Q1- 19193,7540 19214,7515 19343,7387
 (An der Karlshorster Heide - Treskowallee): wassergebundene Decke	Q1 19044,8052 18881,8184 18799,8250
 (Unterfeld - Weg an der Trabrennbahn): wassergebundene Decke	Q1 18949,8107 18915,8079
 (Weg an der Trabrennbahn - Lisbeth-Stern-Str.): wassergebundene Decke	Q1 19099,7761 19114,7781 19229,7963
-(Weg an der Trabrennbahn - Maria-Matray-Str.): wassergebundene Decke	Q1 19173,7585 19204,7582 19228,7610 19313,7771 19353,7819
+(Weg an der Trabrennbahn - Maria-Matray-Str.): wassergebundene Decke	Q1 19173,7585 19208,7579 19228,7610 19313,7771 19353,7819
+(Weg an der Trabrennbahn - Maria-Matray-Str.): wassergebundene Decke	Q1 19214,7515 19208,7579
 (Franz-Stimming-Weg - Weg an der Trabrennbahn): wassergebundene Decke	Q1 19159,7746 19132,7769 19114,7781
 (Uranusstr. - Siriusstr.): Verbundsteinpflaster	Q1 18827,-537 18906,-316
 Straße 87 (Rosenthal): Platten	Q1- 9091,20425 9025,20372
@@ -8366,6 +8380,18 @@ Rathausstr.: Asphalt mit einigen Schäden	Q1+ 10601,12521 10584,12507 10476,12432
 (Weg an der Südpanke - Am Pankepark): Pflasterung	Q1- 8307,14175 8323,14142
 (Weg an der Südpanke - Am Pankepark): unbefestigter Weg	Q2+ 8323,14142 8290,14119
 Sigridstr.: Asphalt mit einigen Schäden	Q1+ 14284,14469 14159,14495 14035,14520
+#: XXX Qualität nach den Bauarbeiten? vvv
+#: last_checked: 2013-02-16 vvv
+#: next_check: 2013-04-16 vvv
+Sokratesweg: unbefestigt, Bauarbeiten	Q2- 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
+Sokratesweg: unbefestigt, Bauarbeiten	Q2- 18505,9500 18596,9485
+Sokratesweg: unbefestigt, Bauarbeiten	Q2- 18514,9552 18604,9535
+Sokratesweg: unbefestigt, Bauarbeiten	Q2- 18520,9585 18610,9569
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+Rhinstr. [Nebenstraße]: Beton	Q1+ 18258,11827 18340,11830 18381,11857 18417,11854
+(Rhinstr. - Am Mühlenberg): Beton	Q1+ 18220,11710 18242,11793 18258,11827
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -13574,11 +13600,9 @@ Flottenstr.: guter Asphalt	Q0 6392,19142 6680,19098 6960,19047 7329,18996 7519,1
 #: next_check: 2013-05-01
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&options=4
 Huronseestr.: mäßiger Beton	Q2+ 16808,10554 16767,10398 16755,10352
-#: XXX ist hier mittlerweile asphaltiert?
-Huronseestr.: mäßiger Beton	Q2+ 16887,10271 16829,10285 16811,10219
 #: corrected_by: srt (früher mäßiger Beton, jetzt Asphalt) vvv
 Huronseestr.: Asphalt	Q0 16755,10352 16727,10245 16811,10219
-Huronseestr.: Asphalt	Q0 16811,10219 16795,10141 16855,10127
+Huronseestr.: Asphalt	Q0 16887,10271 16829,10285 16811,10219 16795,10141 16855,10127
 #: corrected_by ^^^
 #: by: ^^^
 # 
