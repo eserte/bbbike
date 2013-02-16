@@ -41,6 +41,7 @@ BBBikePersonal.pm
 BBBikePlugin.pm
 BBBikePluginLister.pm
 BBBikePrint.pm
+BBBikeProcUtil.pm
 BBBikeProfil.pm
 BBBikeRouting.pm
 BBBikeRouting.pod
@@ -181,6 +182,7 @@ Strassen/Generated.pm
 Strassen/Generated_src.pm
 Strassen/Gpsman.pm
 Strassen/Heavy.pm
+Strassen/Index.pm
 Strassen/KML.pm
 Strassen/Kreuzungen.pm
 Strassen/Lazy.pm
