@@ -1368,7 +1368,7 @@ Havelbrücke: Fußgänger	q2 -3371,13987 -3437,14029 -3445,14033
 (Glacisweg - Ramin-Park): eng, Fußgänger	q2 -3887,14405 -3855,14399 -3844,14430
 Reckeweg: eng	q3 -7109,15286 -7133,15287
 Am Krummen Weg: offiziell nur für Fußgänger	q2 -6891,14891 -7026,14890
-Am Krug: offiziell nur für Fußgänger	q2 -7149,14768 -7015,14772
+Am Krug: offiziell nur für Fußgänger	q2 -7149,14768 -7021,14772 -7015,14772
 (Am Langen Weg - Ungewitterweg): eng	q3 -7033,14984 -7075,15021 -7088,15046 -7116,15053
 (Am Zeppelinpark - Sommerbad West-Staaken): einige Fußgänger	q1 -8426,13818 -8232,13846
 (entlang der Autobahn): einige Fußgänger	q1 6489,7908 6437,7968
@@ -2285,7 +2285,7 @@ Blochmannstr.: enge Straße	q1 5097,988 5036,949 4986,959 4925,961 4862,975 4788,
 Schenkestr.: enge Straße	q1 17961,8312 17794,8429
 #: by: anonymous
 #: corrected_by: srt/policy (q2 -> q1)
-Knöterichpfad: enge Straße, Gartensiedlung	q1 -7842,14683 -7808,14939 -7783,15059
+Knöterichpfad: enge Straße, Gartensiedlung	q1 -7842,14683 -7808,14939 -7784,15065
 # 
 #: by: Tweety87...: vvv
 #: XXX_prog: Gegenrichtung ist durch 1s:q4 abgedeckt, sollte besser gelöst sein...
@@ -2997,6 +2997,11 @@ Bulgenbachweg: enge Straße	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840
 # 
 #: by: Stefan Klinkusch: vvv
+Lohrer Pfad: kombinierter Fuß- und Radweg, eng	q3 -8386,14882 -8295,14948
+(Bahnweg, KGA Gartenbauverein Staaken): sehr enger Weg, einige Fußgänger	q3 -7433,14308 -7340,14320 -7184,14310 -6942,14291 -6943,14262 -6937,14262
+#: XXX_prog: BS Bordstein am Perwenitzer Weg
+Perwenitzer Weg: Bordstein	q3 -3924,15915 -3942,15926
+Gummiweg: sehr eng, zwei entgegengesetzt fahrende Radfahrer können einander nur schwierig passieren	q3 -7891,13616 -7931,13469
 #: confirmed_by: anonymous
 Ederkopfweg: enge Straße	q0- -4729,14958 -4761,14961 -4807,14990 -4879,15008
 Iznikstr.: enge Straße	q0- -2140,16909 -2119,17015
@@ -3029,3 +3034,6 @@ Narzissenpfad: enge Straße	q0- -7387,14951 -7523,14969
 (Am Rosenanger - Am Sandkrug, Entenschnabel): stark abschüssig, eine 30cm-Stufe	q4; 3462,24702 3489,24659 3535,24626
 (Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3489,24659 3462,24702
 #: by: ^^^
+# 
+#: by: j. bethsold
+(Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7364,3193 7409,3331 7458,3451

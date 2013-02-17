@@ -754,6 +754,9 @@ Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 Pasedagplatz	1s 14174,17226 14144,17165
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
 Aristotelessteig	1s 18527,9623 18660,9599
+Hügelschanze	1 -3881,15589 -3982,15577
+Beim Pfarrhof	1 -7292,14811 -7304,14567
+Am Kleinen Platz	1 -7248,14826 -7292,14811
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
@@ -982,9 +985,11 @@ nicht überquerbar	3nocross::ignrte 456,11233 585,11256 704,11273
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3501,14365 -3506,14306
 Altstädter Ring -> Augusta-Ufer: Mittelstreifen	3::igndisp -3498,14413 -3501,14365 -3440,14498
 Augusta-Ufer -> Altstädter Ring: Mittelstreifen	3::igndisp -3440,14498 -3501,14365 -3506,14306
-Mittelstreifen mit Zaun	3nocross::ignrte -3501,14365 -3506,14306 -3517,14218
+Mittelstreifen mit Zaun	3nocross::ignrte -3501,14365 -3506,14306 -3517,14218 -3552,14082
 Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3481,14308 -3506,14306 -3517,14218
 Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3501,14365 -3506,14306 -3481,14308
+Münsinger Park -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3607,14249 -3517,14218 -3506,14306
+Altstädter Ring -> Münsinger Park: Mittelstreifen mit Zaun	3::igndisp -3552,14082 -3517,14218 -3607,14249
 Mittelstreifen	3nocross::ignrte 6996,3761 6957,3699 6782,3491
 Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6957,3699 6782,3491
 umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11355,12331
@@ -1078,6 +1083,9 @@ Hoernlestr. -> Mahlsdorfer Str.: Straßenbahntrasse	3::igndisp 22509,6519 22645,6
 Mittelstreifen	3nocross::ignrte 11023,17878 11047,17883 11113,17895
 Kissingenstr. -> Stubnitzstr.: Mittelstreifen	3::igndisp 11023,17878 11047,17883 11102,17942
 Stubnitzstr. -> Kissingenstr.: Mittelstreifen	3::igndisp 11102,17942 11047,17883 11113,17895
+Mittelstreifen	3nocross::ignrte -6144,15946 -6073,15925 -5911,15877
+Posthausweg -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -6089,15746 -6073,15925 -6144,15946
+Falkenseer Chaussee -> Posthausweg: Mittelstreifen	3::igndisp -5911,15877 -6073,15925 -6089,15746
 Mittelstreifen	3nocross::ignrte 1133,14387 1057,14389 999,14390 937,14391 889,14392
 Nonnendammallee -> Grammestr.: Mittelstreifen	3::igndisp 1133,14387 1057,14389 1023,14259
 Grammestr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1023,14259 1057,14389 999,14390
@@ -2140,6 +2148,12 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-91:trailer=10 -7021,14772
+Tor, sollte geschlossen gehalten werden	BNP:10:-86:trailer=15 -7184,14310
+Tor, sollte geschlossen gehalten werden	BNP:10:1:trailer=15 -6943,14262
+Schranke	BNP:3:-66:trailer=10 3427,18467
+Schranke	BNP:3:-79:trailer=10 -4300,15295
+Schranke	BNP:3:-77:trailer=10 -4117,15255
 Schranke	BNP:3:-249:trailer=10 15090,11237
 Schranke	BNP:3:-233:trailer=10 -822,16535
 Schranke	BNP:5:21:trailer=10 10919,9804
@@ -2274,6 +2288,7 @@ sehr enge Stelle	BNP:0:-188:trailer=no 31909,2802
 sehr enge Stelle	BNP:0:-217:trailer=no 1184,13544
 sehr enger Weg	BNP:0:-101:trailer=no 12515,22898
 am Oder-Spree-Kanal: teilweise enger Pfad	BNP:0:-253:trailer=no 29457,-2835
+Gummiweg: ein Befahren mit Anhänger ist nahezu ausgeschlossen	BNP:0:-255:trailer=no -7891,13616
 enges Drängelgitter	BNP:5:-206:trailer=no 30862,3816
 Schranke, Durchfahrtsbreite nur 80cm	BNP:3:78:trailer=no -1342,13134
 Schranke, Durchfahrtsbreite nur 60cm	BNP:3:-232:trailer=no -784,16658

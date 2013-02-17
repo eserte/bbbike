@@ -1010,6 +1010,12 @@ Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 Pasedagplatz	1s:q3 14174,17226 14144,17165
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
 Aristotelessteig	1s:q2 18527,9623 18660,9599
+#: by: Stefan Klinkusch vvv
+Hügelschanze	1 -3881,15589 -3982,15577
+Beim Pfarrhof	1 -7292,14811 -7304,14567
+#: by: ^^^
+#: note: interpoliert
+Am Kleinen Platz	1 -7248,14826 -7292,14811
 ######################################################################
 #
 # Potsdam
@@ -1235,7 +1241,7 @@ Heerstr.: nicht überquerbar	3nocross 456,11233 585,11256 704,11273
 #: by: Sabine (schaeffler)
 Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -3506,14306
 #: by: Juliane (alberts...)
-Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,14218
+Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,14218 -3552,14082
 #: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6782,3491
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12331
@@ -1271,6 +1277,8 @@ Marienfelder Chaussee: Mittelstreifen	3nocross 11002,1211 11155,1273 11198,1291
 Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22539,6258 22645,6431 22675,6498
 Kissingenstr.: Mittelstreifen	3nocross 11023,17878 11047,17883 11113,17895
 #: note: ^^^
+#: by: Stefan Klinkusch
+Falkenseer Chaussee: Mittelstreifen	3nocross -6144,15946 -6073,15925 -5911,15877
 #: by: Tobias (Lung)
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 889,14392
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1182,14384 1246,14384 1305,14384 1360,14375
@@ -1827,6 +1835,14 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: by: Stefan Klinkusch vvv
+Drängelgitter	BNP:3::trailer=10 -7021,14772
+Tor, sollte geschlossen gehalten werden	BNP:10::trailer=15 -7184,14310
+Tor, sollte geschlossen gehalten werden	BNP:10::trailer=15 -6943,14262
+Schranke	BNP:3::trailer=10 3427,18467
+Schranke	BNP:3::trailer=10 -4300,15295
+Schranke	BNP:3::trailer=10 -4117,15255
+#: by: ^^^
 Schranke	BNP:3::trailer=10 15090,11237
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7030&options=4
 #: XXX genaue Position der Schranke?
@@ -1989,6 +2005,9 @@ sehr enge Stelle	BNP:0::trailer=no 1184,13544
 sehr enger Weg	BNP:0::trailer=no 12515,22898
 #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
 am Oder-Spree-Kanal: teilweise enger Pfad	BNP:0::trailer=no 29457,-2835
+#: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
+#: by: Stefan Klinkusch
+Gummiweg: ein Befahren mit Anhänger ist nahezu ausgeschlossen	BNP:0::trailer=no -7891,13616
 enges Drängelgitter	BNP:5::trailer=no 30862,3816
 Schranke, Durchfahrtsbreite nur 80cm	BNP:3::trailer=no -1342,13134
 #: note: am 2012-09-30 habe ich 90cm gemessen... neue Schranke?

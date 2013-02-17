@@ -1020,7 +1020,7 @@ Havelbrücke: Fußgänger	q2 -3371,13987 -3437,14029 -3445,14033
 (Glacisweg - Ramin-Park): eng, Fußgänger	q2 -3887,14405 -3855,14399 -3844,14430
 Reckeweg: eng	q3 -7109,15286 -7133,15287
 Am Krummen Weg: offiziell nur für Fußgänger	q2 -6891,14891 -7026,14890
-Am Krug: offiziell nur für Fußgänger	q2 -7149,14768 -7015,14772
+Am Krug: offiziell nur für Fußgänger	q2 -7149,14768 -7021,14772 -7015,14772
 (Am Langen Weg - Ungewitterweg): eng	q3 -7033,14984 -7075,15021 -7088,15046 -7116,15053
 (Am Zeppelinpark - Sommerbad West-Staaken): einige Fußgänger	q1 -8426,13818 -8232,13846
 (entlang der Autobahn): einige Fußgänger	q1 6489,7908 6437,7968
@@ -1593,7 +1593,7 @@ Sendener Weg: enge Straße	q0 964,18321 1040,18283 1178,18223 1221,18332 1281,184
 Gilgenburger Str.: enge Straße	q1 24387,5672 24434,5645 24549,5685 24666,5726
 Blochmannstr.: enge Straße	q1 5097,988 5036,949 4986,959 4925,961 4862,975 4788,1023 4702,1147 4634,1245
 Schenkestr.: enge Straße	q1 17961,8312 17794,8429
-Knöterichpfad: enge Straße, Gartensiedlung	q1 -7842,14683 -7808,14939 -7783,15059
+Knöterichpfad: enge Straße, Gartensiedlung	q1 -7842,14683 -7808,14939 -7784,15065
 Hartmannsweilerweg: enge Straße	q1; 17,3471 41,3510 16,3744
 Hartmannsweilerweg: enge Straße	q1 16,3744 -1,3857 -36,3924 -219,4149
 Zietenstr. (Lankwitz): enge Straße	q1 6196,2204 6108,2326 6065,2443 5971,2691
@@ -1877,6 +1877,10 @@ Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4284,2626 4655,3060 4862,3363
 Rosenplüterweg: enge Straße	q0 3657,26240 3431,26192 3328,26193
 Bulgenbachweg: enge Straße	q0 3431,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840
+Lohrer Pfad: kombinierter Fuß- und Radweg, eng	q3 -8386,14882 -8295,14948
+(Bahnweg, KGA Gartenbauverein Staaken): sehr enger Weg, einige Fußgänger	q3 -7433,14308 -7340,14320 -7184,14310 -6942,14291 -6943,14262 -6937,14262
+Perwenitzer Weg: Bordstein	q3 -3924,15915 -3942,15926
+Gummiweg: sehr eng, zwei entgegengesetzt fahrende Radfahrer können einander nur schwierig passieren	q3 -7891,13616 -7931,13469
 Ederkopfweg: enge Straße	q0 -4729,14958 -4761,14961 -4807,14990 -4879,15008
 Iznikstr.: enge Straße	q0 -2140,16909 -2119,17015
 David-Francke-Str.: Bordsteinkante	q3 -2154,16660 -2137,16658
@@ -1894,6 +1898,7 @@ Narzissenpfad: enge Straße	q0 -7387,14951 -7523,14969
 (Pankeweg zwischen Pankstr. und Wiesenstr.): einige Fußgänger	q1 8140,15859 8129,15701 8156,15614
 (Am Rosenanger - Am Sandkrug, Entenschnabel): stark abschüssig, eine 30cm-Stufe	q4; 3462,24702 3489,24659 3535,24626
 (Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3489,24659 3462,24702
+(Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7364,3193 7409,3331 7458,3451
 Dennewitzplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Richterstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886
