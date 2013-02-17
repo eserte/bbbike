@@ -257,8 +257,8 @@ sub BBBikeVia::add_via_2 {
 	return BBBikeVia::add_via_cont(1);
     }
 
-    my @tags = $c->gettags("current");
-    if (grep { $_ eq 'route' } @tags) {
+    my($found_tag, @tags) = find_below($c, 'route');
+    if ($found_tag) {
 	# Click on route
 	if ($tags[1] =~ /route-(\d+)/) {
 	    my $route_nr = $1;
@@ -426,14 +426,16 @@ sub BBBikeVia::delete_action {
 ######################################################################
 
 sub BBBikeVia::_find_point_from_tags {
-    my @tags = $c->gettags("current");
-    for my $tag (@tags) {
-	if ($tag =~ /^via-(\d+)/) {
-	    return $1;
-	} elsif ($tag eq 'startflag') {
-	    return 0;
-	} elsif ($tag eq 'zielflag') {
-	    return $#search_route_points;
+    my($found_item, @tags) = find_below_rx($c, ['^via-\d+', '^(?:start|ziel)flag$']);
+    if (defined $found_item) {
+	for my $tag (@tags) {
+	    if ($tag =~ /^via-(\d+)/) {
+		return $1;
+	    } elsif ($tag eq 'startflag') {
+		return 0;
+	    } elsif ($tag eq 'zielflag') {
+		return $#search_route_points;
+	    }
 	}
     }
     warn "Can't find point in @tags";
