@@ -551,8 +551,8 @@ Kanner Str.: gutes Kopfsteinpflaster	Q1 13345,7424 13373,7432
 Kanner Str.: Asphalt mit kleinen Schäden	Q0- 13373,7432 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15738,5369 15382,5687
-Uferweg: fester Sandweg	Q1 16646,8561 16546,8852 16459,9017 16319,9149 16259,9182 16129,9189 15969,9102 15793,8984
-Uferweg: asphaltiert, einige Wurzelschäden	Q0- 16678,7475 16649,7570 16619,7831 16692,8166 16646,8561
+Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15778,8990
+Uferweg: asphaltiert, einige Wurzelschäden	Q0- 16678,7475 16649,7570 16619,7831 16692,8166 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: add_fragezeichen: Ist die Berliner Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
 #: last_checked: 2012-09-29
@@ -2186,7 +2186,7 @@ Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11921,11185 11950,11157
 #: XXX Baumaßnahme GR9.24 (Realisierung nach 2011) vvv
 #: XXX wird hier asphaltiert werden? Was ist mit dem Schlenker am Spreepark? vvv
 #: last_checked: 2012-10-21 vvv
-#: next_check: 2013-03-01 vvv
+#: next_check: 2013-04-01 vvv
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
 Wasserweg: fester Sandweg	Q2 15873,8884 16023,8860 16161,8852 16201,8860
 #: next_check ^^^
@@ -2196,6 +2196,7 @@ Wasserweg: fester Sandweg	Q2 15873,8884 16023,8860 16161,8852 16201,8860
 Wasserweg: Asphalt	Q0 16201,8860 16358,8841 16388,8821
 Umfahrung Spreepark: fester Sandweg	Q2 16023,8860 16084,8833 16161,8852
 Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16534,8182 16602,7810 16620,7574 16633,7434
+(Uferweg - Kiehnwerderallee): Waldweg	Q2+ 16627,8581 16577,8581 16436,8687
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16649,7570 16620,7574
 Luisenhain: glattes Pflaster	Q0 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
 (Rathaus Köpenick - Luisenhain): glattes Pflaster	Q0 22133,4644 22074,4664
