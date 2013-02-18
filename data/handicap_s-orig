@@ -15,7 +15,7 @@
 #: source_id: INKO_113418
 Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-02-17 vvv
+#: last_checked: 2013-02-18 vvv
 #: next_check: 2013-03-15 vvv
 #: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -33,16 +33,16 @@ Helmerdingstr.: Bauarbeiten	q3::inwork 14465,11195 14442,11101
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-02-16
+#: last_checked: 2013-02-18
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 13366,11651 13295,11792
 # 
-#: last_checked: 2013-02-16 vvv
+#: last_checked: 2013-02-18 vvv
 R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q2::inwork 12822,12067 12740,12128
 R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 12740,12128 12575,12223
 #: last_checked ^^^
 # 
 #: source_id: LMS_3261840849
-#: last_checked: 2013-02-17
+#: last_checked: 2013-02-18
 G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14247,11681 14272,11775
 # REMOVED --- Bauarbeiten beendet --- Mainzer Str., G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14311,11884 14357,12011
 # 
@@ -1391,7 +1391,7 @@ An der Nordbahn: eng	q2 6447,20305 6349,20396
 Caroline-Herschel-Platz: Fuﬂg‰nger	q2 14752,11369 14737,11347
 am Oder-Spree-Kanal: teilweise enger Pfad	q3 29037,-2817 29101,-2794 29457,-2835 29559,-2866
 Strandbad	q3 30015,-3906 29783,-3739 29597,-3674
-(Magistratsweg - Maulbeerallee): Fuﬂg‰nger (Schule)	q1 -6051,12673 -5613,12750 -5594,12832
+(Magistratsweg - Maulbeerallee): Fuﬂg‰nger (Schule)	q1 -6051,12673 -5830,12712 -5613,12750 -5594,12832
 Henrionweg: eng	q3 11154,21760 11145,21698
 (Weg zum Hohenschˆnhauser Tor): Fuﬂg‰nger	q1 15367,14512 15221,14550
 (Hohenschˆnhauser Tor): Fuﬂg‰nger (Einkaufszentrum)	q4 15221,14550 15058,14575
@@ -1859,8 +1859,8 @@ K‰uzchensteig: Fuﬂg‰nger, Bordsteine	q1 1918,6456 1895,6470
 Rahel-Hirsch-Weg: Fuﬂg‰nger	q3 8582,13355 8595,13375 8587,13436 8586,13440
 Helga-Hahnemann-Str.: Fuﬂg‰nger, schmal	q2 9415,13315 9408,13282 9385,13174
 An der Karolinenhˆhe: Fuﬂg‰nger, spielende Kinder	q3 -5900,11726 -5848,11779 -5892,11820 -5847,11876
-Obstallee: Bodenschwellen, Fuﬂg‰nger, spielende Kinder	q3 -5421,12450 -5896,12607
-Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5421,12450
+Obstallee: Bodenschwellen, Fuﬂg‰nger, spielende Kinder	q3 -5437,12440 -5890,12579
+Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5400,12509 -5437,12440
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4263,11582 -4302,11669
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4310,11770 -4278,11873
 (Parkweg Swinem¸nder Str.): Fuﬂg‰nger	q1 10189,14649 10228,14564
@@ -2997,6 +2997,13 @@ Bulgenbachweg: enge Straﬂe	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,
 Schmˆckwitzwerder S¸d: enge Straﬂe	q1 30343,-3454 30133,-3840
 # 
 #: by: Stefan Klinkusch: vvv
+(zum R‰cknitzer Steig): einige Fuﬂg‰nger	q1 -5535,12631 -5559,12557
+(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger	q1 -5830,12712 -5808,12631 -5559,12557 -5400,12509
+#: XXX_prog BS am ˆstlichen Ende (ansonsten w‰re es q1)
+(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger, hohe Bordsteinkante	q2 -5400,12509 -5196,12452
+#: XXX_prog BS am nˆrdlichen Ende (ansonsten w‰re es q2)
+Annenweg: enger Weg, hohe Bordsteinkante	q3 -5121,8283 -5118,8290 -5094,8391 -5093,8398
+(Finkenkruger Weg - Eichholzbahn): enger Weg	q2 -7420,14520 -7431,14521 -7439,14521 -7452,14472 -7481,14379 -7559,14379
 Lohrer Pfad: kombinierter Fuﬂ- und Radweg, eng	q3 -8386,14882 -8295,14948
 (Bahnweg, KGA Gartenbauverein Staaken): sehr enger Weg, einige Fuﬂg‰nger	q3 -7433,14308 -7340,14320 -7184,14310 -6942,14291 -6943,14262 -6937,14262
 #: XXX_prog: BS Bordstein am Perwenitzer Weg
@@ -3037,3 +3044,6 @@ Narzissenpfad: enge Straﬂe	q0- -7387,14951 -7523,14969
 # 
 #: by: j. bethsold
 (Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7364,3193 7409,3331 7458,3451
+# 
+#: by: Sigmount Kˆnigsberg
+Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2155,22453 2060,22419 2011,22408 1874,22412 1827,22404 1659,22383 1583,22376 1524,22368 1468,22359 1411,22365 1266,22401 1094,22504 742,22666 695,22694 676,22667 598,22633 525,22614 439,22620 266,22584 240,22554

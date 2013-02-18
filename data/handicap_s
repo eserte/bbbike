@@ -1039,7 +1039,7 @@ An der Nordbahn: eng	q2 6447,20305 6349,20396
 Caroline-Herschel-Platz: Fuﬂg‰nger	q2 14752,11369 14737,11347
 am Oder-Spree-Kanal: teilweise enger Pfad	q3 29037,-2817 29101,-2794 29457,-2835 29559,-2866
 Strandbad	q3 30015,-3906 29783,-3739 29597,-3674
-(Magistratsweg - Maulbeerallee): Fuﬂg‰nger (Schule)	q1 -6051,12673 -5613,12750 -5594,12832
+(Magistratsweg - Maulbeerallee): Fuﬂg‰nger (Schule)	q1 -6051,12673 -5830,12712 -5613,12750 -5594,12832
 Henrionweg: eng	q3 11154,21760 11145,21698
 (Weg zum Hohenschˆnhauser Tor): Fuﬂg‰nger	q1 15367,14512 15221,14550
 (Hohenschˆnhauser Tor): Fuﬂg‰nger (Einkaufszentrum)	q4 15221,14550 15058,14575
@@ -1338,8 +1338,8 @@ K‰uzchensteig: Fuﬂg‰nger, Bordsteine	q1 1918,6456 1895,6470
 Rahel-Hirsch-Weg: Fuﬂg‰nger	q3 8582,13355 8595,13375 8587,13436 8586,13440
 Helga-Hahnemann-Str.: Fuﬂg‰nger, schmal	q2 9415,13315 9408,13282 9385,13174
 An der Karolinenhˆhe: Fuﬂg‰nger, spielende Kinder	q3 -5900,11726 -5848,11779 -5892,11820 -5847,11876
-Obstallee: Bodenschwellen, Fuﬂg‰nger, spielende Kinder	q3 -5421,12450 -5896,12607
-Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5421,12450
+Obstallee: Bodenschwellen, Fuﬂg‰nger, spielende Kinder	q3 -5437,12440 -5890,12579
+Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5400,12509 -5437,12440
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4263,11582 -4302,11669
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4310,11770 -4278,11873
 (Parkweg Swinem¸nder Str.): Fuﬂg‰nger	q1 10189,14649 10228,14564
@@ -1877,6 +1877,11 @@ Eduard-Spranger-Promenade: Verbot f¸r Radfahrer	q4 4284,2626 4655,3060 4862,3363
 Rosenpl¸terweg: enge Straﬂe	q0 3657,26240 3431,26192 3328,26193
 Bulgenbachweg: enge Straﬂe	q0 3431,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 Schmˆckwitzwerder S¸d: enge Straﬂe	q1 30343,-3454 30133,-3840
+(zum R‰cknitzer Steig): einige Fuﬂg‰nger	q1 -5535,12631 -5559,12557
+(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger	q1 -5830,12712 -5808,12631 -5559,12557 -5400,12509
+(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger, hohe Bordsteinkante	q2 -5400,12509 -5196,12452
+Annenweg: enger Weg, hohe Bordsteinkante	q3 -5121,8283 -5118,8290 -5094,8391 -5093,8398
+(Finkenkruger Weg - Eichholzbahn): enger Weg	q2 -7420,14520 -7431,14521 -7439,14521 -7452,14472 -7481,14379 -7559,14379
 Lohrer Pfad: kombinierter Fuﬂ- und Radweg, eng	q3 -8386,14882 -8295,14948
 (Bahnweg, KGA Gartenbauverein Staaken): sehr enger Weg, einige Fuﬂg‰nger	q3 -7433,14308 -7340,14320 -7184,14310 -6942,14291 -6943,14262 -6937,14262
 Perwenitzer Weg: Bordstein	q3 -3924,15915 -3942,15926
@@ -1899,6 +1904,7 @@ Narzissenpfad: enge Straﬂe	q0 -7387,14951 -7523,14969
 (Am Rosenanger - Am Sandkrug, Entenschnabel): stark absch¸ssig, eine 30cm-Stufe	q4; 3462,24702 3489,24659 3535,24626
 (Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3489,24659 3462,24702
 (Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7364,3193 7409,3331 7458,3451
+Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2155,22453 2060,22419 2011,22408 1874,22412 1827,22404 1659,22383 1583,22376 1524,22368 1468,22359 1411,22365 1266,22401 1094,22504 742,22666 695,22694 676,22667 598,22633 525,22614 439,22620 266,22584 240,22554
 Dennewitzplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886

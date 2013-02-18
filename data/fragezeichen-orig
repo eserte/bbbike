@@ -1985,8 +1985,6 @@ Demnitz - Altwigshagen: Qualität?	? 35047,144242 35170,144280 35505,144226 35871
 Flaeming-Skate, RK3: genaue Wegführung? Qualität (wahrscheinlich asphaltierte Radwege)	? -11258,-44256 -11846,-43656 -12023,-43430 -11968,-42909 -11928,-42617 -10865,-42209 -10612,-42017 -10274,-42032 -10021,-42071 -10009,-42157 -9811,-42202 -9622,-42397 -9088,-42717 -8988,-42742 -9082,-43110 -9037,-43211 -8936,-43318
 Flaeming-Skate, RK2: genaue Wegführung? Qualität (wahrscheinlich asphaltierte Radwege)	? -5082,-38726 -5149,-38403 -4942,-37087 -4768,-36337 -3794,-36334
 Löpten - Halbe (West): Qualität?	? 30295,-28418 29920,-28522 29923,-28702 30082,-29064 30094,-29360 29778,-30065 29704,-30237 29881,-30578 29850,-30776 30079,-31267 30024,-31526 30201,-31788 29936,-32373
-#: XXX: "Wabennetz für Grasbewuchs?" -> vielleicht Rasengittersteine?
-(Finkenkruger Weg - Eichholzbahn): Qualität?	? -7420,14520 -7439,14521 -7481,14379 -7559,14379
 # REMOVED (siehe qualitaet_s/l) --- #: XXX: Aber Bauarbeiten, die bis Ende Mai 2008 (2008-05-31) fertig werden... dann besser geeignet? (siehe http://www.berlin.de/ba-spandau/presse/archiv/20080325.1455.96926.html) --- Hamburger Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -8010,16486 -8080,16150 -8197,15622
 Barkhausenstr.: Qualität?	? -10530,16281 -10744,16241
 Barkhausenstr.: Qualität?	? -10853,16230 -10970,16232 -11136,16247 -11296,16308 -11549,16413 -11783,16506
@@ -2325,12 +2323,6 @@ Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes
 # REMOVED (unbedeutend, KGA-Weg) --- : XXX Eintrag fehlt in Berlin.coords.data --- Wasserweg (Baumschulenweg): Kolonieweg, Qualität?	? 15370,4690 15212,4611
 # REMOVED (siehe Kommentar bei Straße 4) --- Platz A (Heinersdorf)	? 12956,19218 12945,19239 12799,19242
 # REMOVED (Antwort: ja) --- Wermuthweg: Kann die Johannisthaler Chausse in Höhe Wermuthweg überquert werden?	? 13835,2354 13709,2551
-Köhlbrandweg: Qualität?	? -6517,13977 -6542,14057
-#: XXX dieser Abschnitt ist NN
-Köhlbrandweg: Qualität?	? -6542,14057 -6555,14161
-Blankeneser Weg: Qualität?	? -6261,14213 -6261,14161 -6261,14123 -6245,14037
-Flottbeker Weg: Qualität?	? -6438,14094 -6261,14123
-Neue Str. (Staaken): Qualität?	? -6413,14010 -6245,14037
 Nordenhamer Str.: Qualität?	? -4170,13809 -4182,13691
 #: XXX möglicherweise Beton, nochmal prüfen
 Borkumer Str.: Qualität des westlichen Abschnitts?	? -3965,13870 -3849,13848
@@ -2345,13 +2337,6 @@ Weg O: Qualität? Stimmt der Straßenname?	? 27621,535 27817,761
 # REMOVED (existiert wohl nicht?) --- Straße B: Genaue Lage der Straße? Qualität?	? 1233,15889 1207,15868
 # REMOVED (das ist ein Abzweig der Dietzgenstr., uninteressant) --- Blankenfelder Str. (Rosenthal): Qualität?	? 10135,21171 9991,21144
 # REMOVED (eine Straße mit diesem Namen scheint nicht zu existieren) --- Straße 128: Qualität? Genaue Lage der Straße?	? 7778,21030 7921,20996
-Ahlbeerensteig: Qualität?	? -7559,14379 -7553,14518 -7550,14579
-Christrosensteig: Qualität?	? -7664,14389 -7663,14532
-Zörgiebelweg: Qualität?	? -6921,14459 -6603,14427
-Straße 331: Qualität?	? -6611,14302 -6603,14427
-Eschenwinkel: Qualität?	? -7172,14459 -6922,14437
-Pinneberger Weg: Qualität?	? -6261,14161 -6163,14161 -6065,14160 -5887,14147 -5816,14136
-Aumühler Str.: Qualität?	? -6163,14161 -6150,14021
 Straße 600: Qualität? Wo genau hört die Straße 600 auf und der Hochhausweg an?	? -6977,15706 -7072,15719 -7160,15726
 Flurende: Qualität?	? -7146,15554 -7091,15550 -7072,15719 -7052,15917 -7027,16072 -7003,16188
 Kleiner Querweg: Qualität?	? -7148,16119 -7109,16095 -7027,16072 -6932,16048 -6854,16039
@@ -2488,8 +2473,6 @@ Zum Teufelssee (Potsdam): Qualität?	? -10150,-5260 -10254,-5307 -10397,-5379 -10
 Liefelds Grund (Potsdam): Qualität?	? -10397,-5379 -10344,-5504 -10482,-5572
 Moosglöckchenweg (Potsdam): Qualität?	? -10535,-5751 -10630,-5553
 Am Springbruch (Potsdam): Qualität?	? -10641,-5814 -10721,-5678 -10659,-5648
-#: XXX fehlt in Berlin.coords.data
-Am Spandauer Wasserturm: Qualität?	? -4835,14223 -4893,14287
 # REMOVED (existiert in osm, aber nirgendwo sonst; beim ersten Mal im Dunkeln kein Straßenschild gesehen, nochmal prüfen, beim zweiten Mal nochmal geprüft, nur eine Erschließungsstraße ohne Straßenschild; hmmm, vielleicht doch etwas weiter weg, zweiter Versuch, siehe unten) --- Straße 433: Stimmt der Straßenname? Qualität?	? 9839,814 9956,852 10034,991
 Straße 433: existiert hier doch eine Straße mit diesem Namen? Qualität?	? 10035,1000 10011,942 9987,889 9962,879
 Zufahrt von der Kettinger Str. zur Straße 433: Qualität?	? 10089,960 10035,1000 9987,1031
@@ -2666,21 +2649,6 @@ Am Seegraben/Alexander-Meißner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835
 # 
 #: by: http://www.potsdam.de/cms/beitrag/10071706/966975/
 Templiner Str.: gibt es in der Templiner Straße mittlerweile Radstreifen?	? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file vvv
-#: last_checked: 2011-04-30 vvv
-#: next_check: 2011-09-01 vvv
-#: XXX wahrscheinlich Verbundsteinpflaster; Häuser sind am Entstehen, Straßen noch nicht ganz fertig vvv
-#: XXX Eintrag in str_cont_ausnahme notwendig vvv
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20110831.0850.356859.html vvv
-Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6559,5637 -6530,5605 -6633,5505 -6666,5535
-Manuelaweg: wo genau befindet sich diese Straße? Qualität?	? -6633,5505 -6596,5464
-#: by: ^^^
-#: XXX ^^^
-#: XXX ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: by ^^^
 # 
 # REMOVED (rj meint, dass hier kein *ausgeschilderter* Platz ist) --- #: XXX fehlt in Berlin.coords.data --- Forum (Adlershof): Wo genau liegt die Straße? Ist sie ausgeschildert? Qualität?	? 19242,3052 19328,3072
 Hohen Neuendorfer Weg (Birkenwerder): Qualität?	? 645,30634 618,30687 575,30816 564,30845 550,30867 516,30899 342,31100
@@ -3279,3 +3247,5 @@ Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16806,1987 -16931,1783
 # REMOVED (-> strassen-orig etc.) --- #: last_checked: 2012-08-17 --- #: next_check: 2012-12-17 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4045&options=4 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4045&options=4&date=20121124 --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Wannseebahnquerung.6474.0.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20121214.1335.379363.html (Eröffnung) --- #: XXX genaue Koordinaten? --- Ebersstr. - Park GASAG Nordspitze, Übergang über die Wannseebahn: Qualität? Nachts beleuchtet? Hat der Übergang einen Namen?	? 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
 # 
 Preußensiedlung: Durchfahrt möglich?	? 20971,1046 20957,1043 20863,966 20836,982
+Wandsbeker Weg: verläuft zwischen Spandauer Str. und Barmbeker Weg auch ein Teil des Wandsbeker Wegs? Qualität? Für Autos befahrbar?	? -6641,14044 -6728,14038 -6757,14061 -6765,14120
+Köhlbrandweg: Qualität des Abschnitts zwischen Wandsbeker Weg und Spandauer Str.?	? -6542,14057 -6555,14161
