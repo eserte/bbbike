@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.86;
+$VERSION = 1.87;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -104,6 +104,7 @@ sub add_button {
 	(-disabledforeground => "black",
 	 -menuitems =>
 	 [
+	  ($main::devel_host ? [Cascade => "Karte"] : ()),
 	  [Cascade => "Old VMZ/LBVS stuff",
 	   -font => $main::font{'bold'},
 	   -menuitems =>
@@ -367,6 +368,49 @@ EOF
 		layer_checkbutton('Restaurants', 'str',
 				  "$bbbike_rootdir/data_berlin_osm/restaurants"),
 		[Button => "Current route", -command => sub { add_current_route_as_layer() }],
+		[Cascade => 'Berlin/Potsdam coords', -menuitems =>
+		 [
+		  [Button => "Add Berlin.coords.data",
+		   -command => sub { add_coords_data("Berlin.coords.bbd") },
+		  ],
+# 		  [Button => "Add Berlin.coords.data with labels",
+# 		   -command => sub { add_coords_data("Berlin.coords.bbd", 1) },
+# 		  ],
+		  [Button => "Add Berlin-by-citypart data",
+		   -command => sub { choose_Berlin_by_data("$bbbike_rootdir/tmp/Berlin.coords-by-citypart") },
+		  ],
+		  [Button => "Add Berlin-by-zip data",
+		   -command => sub { choose_Berlin_by_data("$bbbike_rootdir/tmp/Berlin.coords-by-zip") },
+		  ],
+		  [Button => "Add Potsdam.coords.data",
+		   -command => sub { add_coords_data("Potsdam.coords.bbd") },
+		  ],
+# 		  [Button => "Add Potsdam.coords.data with labels",
+# 		   -command => sub { add_coords_data("Potsdam.coords.bbd", 1) },
+# 		  ],
+		 ]
+		],
+		[Cascade => "VMZ-Detailnetz", -menuitems =>
+		 [	
+		  layer_checkbutton('strassen', 'str',
+				    "$bbbike_auxdir/vmz/bbd/strassen",
+				    below => $str_layer_level,
+				   ),
+		  [Button => 'gesperrt', -command => sub { add_new_nonlazy_layer('sperre', "$bbbike_auxdir/vmz/bbd/gesperrt") }],
+		  layer_checkbutton('qualitaet', 'str',
+				    "$bbbike_auxdir/vmz/bbd/qualitaet_s",
+				    above => $str_layer_level,
+				   ),
+		  layer_checkbutton('radwege', 'str',
+				    "$bbbike_auxdir/vmz/bbd/radwege",
+				    above => $str_layer_level,
+				   ),
+		  layer_checkbutton('ampeln', 'str', # yes, str, otherwise symbol is not plotted
+				    "$bbbike_auxdir/vmz/bbd/ampeln",
+				    above => $str_layer_level,
+				   ),
+		 ],
+		],
 	       ],
 	      ],
 	      [Cascade => $do_compound->('OSM Live data', $MultiMap::images{OpenStreetMap}), -menuitems =>
@@ -440,56 +484,12 @@ EOF
 		},
 	       ]
 	      ],
-	      [Cascade => $do_compound->('Berlin/Potsdam coords'), -menuitems =>
-	       [
-		[Button => "Add Berlin.coords.data",
-		 -command => sub { add_coords_data("Berlin.coords.bbd") },
-		],
-# 		[Button => "Add Berlin.coords.data with labels",
-# 		 -command => sub { add_coords_data("Berlin.coords.bbd", 1) },
-# 		],
-		[Button => "Add Berlin-by-citypart data",
-		 -command => sub { choose_Berlin_by_data("$bbbike_rootdir/tmp/Berlin.coords-by-citypart") },
-		],
-		[Button => "Add Berlin-by-zip data",
-		 -command => sub { choose_Berlin_by_data("$bbbike_rootdir/tmp/Berlin.coords-by-zip") },
-		],
-		[Button => "Add Potsdam.coords.data",
-		 -command => sub { add_coords_data("Potsdam.coords.bbd") },
-		],
-# 		[Button => "Add Potsdam.coords.data with labels",
-# 		 -command => sub { add_coords_data("Potsdam.coords.bbd", 1) },
-# 		],
-	       ]
-	      ],
 	      [Button => $do_compound->('VMZ'),
 	       -command => sub { newvmz_process() },
 	      ],
 	      [Button => $do_compound->("Show recent VMZ diff"),
 	       -command => sub { show_new_vmz_diff() },
 	      ],
-	      [Cascade => $do_compound->("VMZ-Detailnetz"), -menuitems =>
-	       [
-		layer_checkbutton('strassen', 'str',
-				  "$bbbike_auxdir/vmz/bbd/strassen",
-				  below => $str_layer_level,
-				 ),
-		[Button => 'gesperrt', -command => sub { add_new_nonlazy_layer('sperre', "$bbbike_auxdir/vmz/bbd/gesperrt") }],
-		layer_checkbutton('qualitaet', 'str',
-				  "$bbbike_auxdir/vmz/bbd/qualitaet_s",
-				  above => $str_layer_level,
-				 ),
-		layer_checkbutton('radwege', 'str',
-				  "$bbbike_auxdir/vmz/bbd/radwege",
-				  above => $str_layer_level,
-				 ),
-		layer_checkbutton('ampeln', 'str', # yes, str, otherwise symbol is not plotted
-				  "$bbbike_auxdir/vmz/bbd/ampeln",
-				  above => $str_layer_level,
-				 ),
-	       ],
-	      ],
-	      ($main::devel_host ? [Cascade => $do_compound->("Karte")] : ()),
 	      [Button => $do_compound->("Mark Layer"),
 	       -command => sub { mark_layer_dialog() },
 	      ],
