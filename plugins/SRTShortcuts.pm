@@ -617,6 +617,24 @@ EOF
 	      [Button => $do_compound->("Multi-page PDF"),
 	       -command => sub { multi_page_pdf() },
 	      ],
+	      [Cascade => $do_compound->("Development"), -menuitems =>
+	       [
+		[Button => "Show Karte canvas items",
+		 -command => sub {
+		     my $wd = _get_tk_widgetdump();
+		     $Tk::WidgetDump::ref2widget{$main::c} = $main::c; # XXX hack
+		     $wd->canvas_dump($main::c);
+		 },
+		],
+		[Button => "Show Karte canvas bindings",
+		 -command => sub {
+		     my $wd = _get_tk_widgetdump();
+		     $Tk::WidgetDump::ref2widget{$main::c} = $main::c; # XXX hack
+		     $wd->show_bindings($main::c);
+		 },
+		],
+	       ]
+	      ],
 	      "-",
 	      [Cascade => $do_compound->("Rare or old"), -menu => $rare_or_old_menu],
 	      "-",
@@ -2705,6 +2723,18 @@ sub multi_page_pdf {
     if ($@) {
 	main::status_message("An error happened: $@", "error");
     }
+}
+
+use vars qw($WIDGETDUMP_W);
+sub _get_tk_widgetdump {
+    if (Tk::Exists($WIDGETDUMP_W)) {
+	return $WIDGETDUMP_W;
+    }
+    require Tk::WidgetDump;
+    Tk::WidgetDump->VERSION('1.38_51');
+    $WIDGETDUMP_W = $main::top->WidgetDump;
+    $WIDGETDUMP_W->iconify;
+    $WIDGETDUMP_W;
 }
 
 1;
