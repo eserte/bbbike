@@ -68,9 +68,12 @@ use vars qw(%want_plot_type_file %layer_for_type_file);
 use vars qw($want_winter_optimization);
 $want_winter_optimization = '' if !defined $want_winter_optimization;
 
+use vars qw(%images);
+
 sub register {
     my $pkg = __PACKAGE__;
     $BBBikePlugin::plugins{$pkg} = $pkg;
+    _create_images();
     add_button();
     add_keybindings();
     define_subs();
@@ -85,6 +88,37 @@ sub unregister {
     remove_keybindings();
     BBBikePlugin::remove_menu_button(__PACKAGE__."_menu");
     delete $BBBikePlugin::plugins{$pkg};
+}
+
+sub _create_images {
+    if (!defined $images{VIZ}) {
+	# Got from: http://www.vmz-info.de/vmz-fuercho-5.1.1.1/images/liferay.ico
+	# Converted with convert + mmencode -b
+	$images{VIZ} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFz
+UkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAA
+AiJQTFRFL06DGj9/ETd5d4mqprXFhZ+9hJ69o7PEz9fdyNfmyNflx9Hb+vr6////G0CACjWB
+ACt6bYOqp7nMh6fKhqbKo7XJ09vj0uPz0uPyzNjkEzh7ACp6AB9zZXylorXJgKLHf6DHnrHG
+0Nnhz+Hyz+HxydbjfI6tcIara4GnqrXIxM3Wrr3Prb3Pw8zW3uLm2ODo2N7kp7bGprjNorbL
+wsvV1drf0drk0Nrj193i/fz7/vz7//792+DlyNXgztvmxtDZh6C+iKbKgaLHrLvN0drj0uLz
+0OHy0tzm/Pv72ODny9zt0uTzxNPhhp+9hqXKgKHHq7rN0NnizuDx0dvl2eDny93u0uT0xdPh
+p7XGpLbKoLPIw8vW09zm0dzl2d/l/Pv6/f384OPnz9jg093kzdXbzdXa0dnh2t/l0dvk0tzl
+197jx8/YoLHGprbKprTFxtPg0+P019/n0tvl0d3msL7PfZzCh6bKgp29xdPf1t/n09zl0eLz
+0t3nsb/Pfp3DiafKhJ6+xtDYztnly9fj//38/v382N7j0Nvk1dzhxc7Xn7PIprnNpLTG3uPm
+rr3Os7zMboGndImtfI6s+/v6y9fhzd/vzd/wz9ngobPHfp7EgKDFn7PLcYaqABxuACt5DzN3
+z9vl0uP009zjprjLhqTJpbjOeYyuACh3CjaBFDt9+/v7yNLaxtXhxtXiztbbqbfHiKK/pbXH
+hJSxFjd5H0SCLEyCxY87YQAAAAFiS0dEDfa0YfUAAAEJSURBVBjTY2BgZGJmYWVj5+Dk4ubh
+5eVl4OMXEBQSFhEVE5eQBAtIScvIyskrKCopq6iCBdTUNTS1tHV09fT1DXiAgMHQyNjE1Mzc
+wtLKytrG1s6ewcHRydnF1c3dA6jc08vbh8HXzz8g0C0oGCQQEhoWzhARGRVtERMbFx8fn5CY
+lJzCkCqWphfv4RGfnpGZlZ2Tm8eQX6BcaMXL61EUpFxcUlpWzlAhrlJpCRSoUq6uqa2rb2Bo
+bGo2aLG2bm1rD+7o7OruYQA5xsbTsze7r0S3f8LESQxA2yZPmTpt+oyZs2bPmTtvPlhggfjC
+RYuXOC5dtnzFSpDAqtVr1q5b77Bh46bNW7YCAKJlS6V7R7bEAAAAJXRFWHRkYXRlOmNyZWF0
+ZQAyMDEzLTAyLTE5VDIxOjQyOjUxKzAxOjAws5ftwQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAx
+Mi0wOC0xNFQxNjoyODo1MCswMjowMOv6tcMAAAAASUVORK5CYII=
+EOF
+    }
 }
 
 sub add_button {
@@ -484,7 +518,7 @@ EOF
 		},
 	       ]
 	      ],
-	      [Button => $do_compound->('VMZ'),
+	      [Button => $do_compound->('VMZ', $images{VIZ}),
 	       -command => sub { newvmz_process() },
 	      ],
 	      [Button => $do_compound->("Show recent VMZ diff"),
@@ -608,9 +642,9 @@ EOF
     my $menu = $mmf->Subwidget(__PACKAGE__ . "_menu_menu");
     $menu->configure(-disabledforeground => "black");
     if ($main::devel_host) {
-	my $map_menuitem = $menu->index("Karte");
-	$menu->entryconfigure($map_menuitem,
-			      -menu => main::get_map_button_menu($menu));
+	my $map_menuitem = $rare_or_old_menu->index("Karte");
+	$rare_or_old_menu->entryconfigure($map_menuitem,
+					  -menu => main::get_map_button_menu($menu));
     }
 }
 
