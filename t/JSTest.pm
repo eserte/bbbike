@@ -110,6 +110,8 @@ sub run_js_f ($) {
 # cannot handle whitespace in the -e argument correctly. See
 # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=661277
 # FreeBSD's spidermonkey is fine.
+# 
+# The rhino problem was fixed in the debian version 1.7R4-1
 BEGIN { *run_js = \&run_js_f }
 
 1;
