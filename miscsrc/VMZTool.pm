@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package VMZTool;
 
 use strict;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use HTML::FormatText 2;
 use HTML::TreeBuilder;
@@ -445,6 +445,7 @@ my $new_store_file;
 my $out_bbd;
 my $do_fetch = 1;
 my $do_test;
+my $do_aspurls = 1;
 my $existsid_current_file; # typically bbbike/tmp/bbbike-temp-blockings-optimized-existsid.yml
 my $existsid_all_file; # typically bbbike/tmp/bbbike-temp-blockings-existsid.yml
 GetOptions("oldstore=s" => \$old_store_file,
@@ -454,6 +455,7 @@ GetOptions("oldstore=s" => \$old_store_file,
 	   "existsid-all=s" => \$existsid_all_file,
 	   "fetch!" => \$do_fetch,
 	   "test!" => \$do_test,
+	   "aspurls!" => \$do_aspurls,
 	  )
     or die "usage?";
 
@@ -497,8 +499,10 @@ if ($do_test) {
     ($tmp2fh,$mapfile) = tempfile(UNLINK => 1) or die $!;
     ($tmp3fh,$berlinsummaryfile) = tempfile(UNLINK => 1) or die $!;
     eval {
-	$vmz->fetch($file);
-	$vmz->fetch_mappage($mapfile);
+	if ($do_aspurls) {
+	    $vmz->fetch($file);
+	    $vmz->fetch_mappage($mapfile);
+	}
 	$vmz->fetch_berlin_summary($berlinsummaryfile);
     };
     if ($@) {
@@ -558,7 +562,7 @@ First-time usage:
 Regular usage (make sure that the both existsid files are up-to-date,
 see the appropriate targets in data/Makefile):
 
-    perl miscsrc/VMZTool.pm -existsid-current tmp/bbbike-temp-blockings-optimized-existsid.yml -existsid-all tmp/bbbike-temp-blockings-existsid.yml -oldstore ~/cache/misc/newvmz.yaml -newstore ~/cache/misc/newvmz.yaml.new -outbbd ~/cache/misc/diffnewvmz.bbd
+    perl miscsrc/VMZTool.pm -existsid-current tmp/sourceid-current.yml -existsid-all tmp/sourceid-all.yml -oldstore ~/cache/misc/newvmz.yaml -newstore ~/cache/misc/newvmz.yaml.new -outbbd ~/cache/misc/diffnewvmz.bbd
     mv ~/cache/misc/newvmz.yaml ~/cache/misc/newvmz.yaml.old
     mv ~/cache/misc/newvmz.yaml.new ~/cache/misc/newvmz.yaml
 
