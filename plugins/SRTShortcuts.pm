@@ -156,6 +156,10 @@ sub add_button {
 	     -command => sub { show_lbvs_diff() },
 	    ],
 	    (map { [Button => "LBVS version $_", -command => [sub { show_lbvs_diff($_[0]) }, $_] ] } (0 .. 5)),
+	    "-",
+	    [Button => "Select any file as VMZ/LBVS diff",
+	     -command => sub { select_vmz_lbvs_diff() },
+	    ],
 	   ],
 	  ],
 	  [Button => 'GPS downloads (not on biokovo)',
@@ -1081,6 +1085,24 @@ sub _vmz_lbvs_splitter {
 
 sub _vmz_lbvs_columnwidths {
     (200, 1200, 200, 100);
+}
+
+sub select_vmz_lbvs_diff {
+    require Tk::PathEntry;
+    my $t = $main::top->Toplevel(-title => "Select VMZ file");
+    my $file;
+    my $weiter = 0;
+    my $pe = $t->PathEntry
+	(-textvariable => \$file,
+	 -selectcmd => sub { $weiter = 1 },
+	 -cancelcmd => sub { $weiter = -1 },
+	)->pack(-fill => "x", -expand => 1, -side => "left");
+    $pe->focus;
+    $t->waitVariable(\$weiter);
+    $t->destroy;
+    if ($weiter == 1 && $file) {
+	show_any_diff($file, "vmz");
+    }
 }
 
 sub show_vmz_diff {
