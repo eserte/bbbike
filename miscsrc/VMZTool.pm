@@ -334,7 +334,7 @@ EOF
 	my($rec, $is_removed) = @_;
 	my $id = $rec->{id};
 	my @attribs;
-	if (grep { m{^A} } @{ $rec->{strassen} }) {
+	if (grep { m{^A(\s|\d)} } @{ $rec->{strassen} }) {
 	    push @attribs, 'IGNORE';
 	} elsif (grep { m{Tunnel Tiergarten Spreebogen} } @{ $rec->{strassen} }) { # Berlin specialities
 	    push @attribs, 'IGNORE';
