@@ -18,6 +18,7 @@ package main;
 use Config;
 use strict;
 use BBBikeGlobalVars;
+use BBBikeProcUtil qw(double_fork);
 
 use your qw($BBBike::Menubar::option_menu
 	    $BBBike::check_bbbike_temp_blockings::temp_blockings_pl
@@ -2650,9 +2651,10 @@ sub reload_new_modules {
 
     # Check reloaded files for compile errors...
     if (@check_c && $os eq 'unix') {
-	pipe(RDR, WTR);
-	if (fork == 0) {
-	    close RDR;
+	my($RDR,$WTR);
+	pipe($RDR,$WTR);
+	double_fork {
+	    close $RDR;
 	    my @problems;
 	    for my $f (@check_c) {
 		my @cmd = ($^X, "-I$FindBin::RealBin/lib", "-I$FindBin::RealBin", "-c", $f);
@@ -2669,17 +2671,17 @@ sub reload_new_modules {
 		}
 	    }
 	    if (@problems) {
-		print WTR join("\n", @problems), "\n";
+		print $WTR join("\n", @problems), "\n";
 	    }
-	    close WTR;
+	    close $WTR;
 	    CORE::exit(0);
-	}
-	close WTR;
+	};
+	close $WTR;
 	$top->fileevent
-	    (\*RDR, 'readable',
+	    ($RDR, 'readable',
 	     sub {
 		 my $buf = "";
-		 while(<RDR>) {
+		 while(<$RDR>) {
 		     $buf .= $_;
 		 }
 		 if ($buf ne "") {
@@ -2689,8 +2691,8 @@ sub reload_new_modules {
 			  -message => "Compile problems with the following files:\n" . $buf,
 			 );
 		 }
-		 close RDR;
-		 $top->fileevent(\*RDR, 'readable', '');
+		 close $RDR;
+		 $top->fileevent($RDR, 'readable', '');
 	     }
 	    );
     }
