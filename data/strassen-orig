@@ -1374,11 +1374,13 @@ Zinnowitzer Str.	N 8879,13913 9015,14014
 Am Nordbahnhof	N 9015,14014 9085,13919
 Invalidenstr.	H 10003,14088 9937,14080 9822,14067 9810,14066 9679,14039 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689 8588,13673 8574,13666 8450,13599 8337,13541 8268,13506 8098,13419
 Invalidenstr.	H 8098,13419 7880,13315 7840,13296 7814,13284 7764,13236 7567,13143 7440,13073 7416,13058 7346,13022
-Minna-Cauer-Str.	HH 7880,13315 7880,13494 7935,13572 8017,13629
-Heidestr. (Moabit)	NN 8098,13419 8082,13462
-Heidestr. (Moabit)	N 8082,13462 8017,13629
-Heidestr. (Moabit)	HH 8017,13629 7981,13722 7938,13791 7601,14350 7597,14417
+Minna-Cauer-Str.	HH 7880,13315 7880,13494 7935,13572 8023,13632
+Heidestr. (Moabit)	NN 8098,13419 8092,13467
+Heidestr. (Moabit)	N 8092,13467 8048,13578 8023,13632
+Heidestr. (Moabit)	HH 8023,13632 7981,13722 7938,13791 7601,14350 7597,14417
 Heidestr. (Moabit)	H 7597,14417 7373,14566
+#: note: Privatstraße
+Jean-Monnet-Str.	N 7995,13537 8048,13578
 Luisenstr. (Mitte)	H 8619,13689 8626,13641 8634,13588 8648,13498 8665,13353 8701,13058 8715,12956 8726,12861 8732,12804 8737,12757 8752,12647 8754,12622 8756,12608 8760,12585
 Hannoversche Str.	H 9212,13471 9057,13438 8892,13498 8775,13606
 Hannoversche Str.	N 8775,13606 8673,13597 8634,13588 8601,13580 8548,13577
@@ -3872,12 +3874,12 @@ Ella-Trebe-Str.	N 7948,12918 7941,13014 7937,13109 7937,13126 7938,13150 7938,13
 #: XXX Heißt die Straße "Agnes-von-Zahn-Harnack-Str." oder ohne "von", also "Agnes-Zahn-Harnack-Str."?
 #: XXX 1:5K meint ohne "von", gmaps ebenso, osm meint mit "von"
 #: XXX falls ausgeschildert -> Eintrag in comments_misc-orig entfernen
-#: last_checked: 2012-08-31 (nicht ausgeschildert)
-#: next_check: 2012-12-01
+#: last_checked: 2013-02-20 (nicht ausgeschildert)
+#: next_check: 2013-04-20
 Agnes-Zahn-Harnack-Str.	N 7795,13093 7867,13127 7938,13150
 Ilse-Schaeffer-Str.	N 7937,13109 7867,13106
 Europaplatz	NN 7880,13315 7938,13302
-Europaplatz	N 7938,13302 8102,13304
+Europaplatz	N 7938,13302 8015,13303 8102,13304
 Washingtonplatz	N 7937,13126 8106,13130
 Sundgauer Str.	H 2076,2626 2005,2738 1888,2925 1724,3187 1687,3244 1626,3337 1583,3409 1552,3460 1485,3630 1482,3690 1471,3909 1451,4026 1442,4065 1385,4138 1279,4265
 Saargemünder Str.	H 2027,4792 1884,4811 1747,4829 1479,4853
@@ -13101,7 +13103,7 @@ Rosenheimer Str.	N 6164,9329 6070,9322
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2012
 #: by: http://www.xhain.net/pm/2012/klage-gegen-umbenennung-der-gabelsbergerstrasse-in-silvio-meier-strasse
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2012
-#: last_checked: 2013-01-19
+#: last_checked: 2013-02-19
 Gabelsbergerstr.	N 14381,12205 14451,12396
 Heidenfeldstr.	N 13609,13427 13433,13346
 Heidenfeldstr.	NN 13433,13346 13393,13326
@@ -16041,6 +16043,7 @@ Thomas-Mann-Str.	N 13101,15191 13132,15239 13240,15408
 Pieskower Weg	N 13131,15175 13105,15122 13070,15063 12894,15165 12864,15185 12931,15300
 Pieskower Weg	N 12894,15165 12812,15053
 Gernsheimer Str.	N 6819,4051 6859,4085 6917,4070 7017,4035 7053,4012
+#: note: beleuchtet (by Violet Schäfer)
 Frankentaler Ufer	NN 7159,4023 7132,4028 7096,4051 6890,4124 6859,4085
 Rotenfelser Weg	N 6917,4070 6904,4018 6996,3945
 Fuchsienweg	N 16096,3075 16376,2862 16573,2715

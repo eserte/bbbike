@@ -1464,6 +1464,17 @@ userdel	q4::inwork; 13474,8060 13444,7879
 	q3::inwork; -12881,-1092 -12984,-1110 -13187,-1150
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'source_id' => 'IM_019584',
+         'until' => 1364767199,
+         'text' => 'Fürstenwalder Damm (Köpenick) Richtung Bölschestr. zwischen Müggelseedamm und Mühlweg Baustelle, Fahrtrichtung gesperrt (bis Ende 03/13)',
+         'from' => 1361390117,
+         'id' => 2417,
+         'data' => 'userdel	q4::inwork; 23950,5342 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633
+',
+         'type' => 'handicap'
        }
      
 );

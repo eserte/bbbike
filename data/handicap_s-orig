@@ -11,11 +11,11 @@
 ### Friedrichshain ###
 # 
 #: last_checked: 2013-02-15
-#: next_check: 2013-05-17
+#: next_check: 2013-02-21
 #: source_id: INKO_113418
 Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-02-18 vvv
+#: last_checked: 2013-02-20 vvv
 #: next_check: 2013-03-15 vvv
 #: source_id: IM_019476
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -33,11 +33,11 @@ Helmerdingstr.: Bauarbeiten	q3::inwork 14465,11195 14442,11101
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-02-18
+#: last_checked: 2013-02-20
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 13366,11651 13295,11792
 # 
-#: last_checked: 2013-02-18 vvv
-R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q2::inwork 12822,12067 12740,12128
+#: last_checked: 2013-02-20 vvv
+# REMOVED --- R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q2::inwork 12822,12067 12740,12128
 R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 12740,12128 12575,12223
 #: last_checked ^^^
 # 
@@ -62,18 +62,19 @@ Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraﬂe gesperrt, Aus
 #: last_checked: 2012-11-14
 #: next_check: 2013-12-31
 #: source_id: INKO_091722
+#: source_id: INKO_091722_COPY_1
 #: XXX siehe auch tempor‰re Ampel an der Neust‰dtischen Kirchstr.
 #: XXX siehe auch Busspur UdL
 Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
 # 
-#: last_checked: 2013-02-14
+#: last_checked: 2013-02-20
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
-#: last_checked: 2013-02-14
+#: last_checked: 2013-02-20
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2013-02-02
+#: last_checked: 2013-02-20
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
 #: last_checked: 2013-02-14 vvv
@@ -91,7 +92,7 @@ Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::in
 #: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2013-02-14 vvv
+#: last_checked: 2013-02-20 vvv
 #: next_check: 2013-12-31 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -105,6 +106,14 @@ Schwarzer Weg: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13
 Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: next_check ^^^
 #: last_checked: ^^^
+# 
+#: last_checked: 2013-02-20
+#: next_check: 2013-04-20
+Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
+# 
+#: last_checked: 2013-02-20
+#: XXX wahrscheinlich auch in den anderen Straﬂen des Blocks Einbahnstraﬂenregelungen
+Ella-Trebe-Str./Berta-Benz-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022
 # 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
@@ -131,7 +140,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 #: last_checked: 2013-02-07
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2013-02-15 vvv
+#: last_checked: 2013-02-19 vvv
 # REMOVED (vielleicht nur tempor‰r?) --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10489,11405 10437,11352
 # REMOVED (see below) --- Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 Neue Gr¸nstr.: Fahrbahn gesperrt wegen Bauarbeiten	q3::inwork 10389,11390 10446,11470
@@ -143,8 +152,8 @@ Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 #: last_checked ^^^
 # 
-#: last_checked: 2012-10-19
-#: next_check: 2012-12-15
+#: last_checked: 2013-02-20
+#: next_check: 2013-03-30
 Am Zirkus: Baustelle, Einbahnstraﬂe	q3::inwork; 9167,13046 9239,12923
 # 
 #: last_checked: 2013-02-12
@@ -154,6 +163,7 @@ Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9870,12657 9900,12643 9919
 # 
 #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¶INKO_114376¶http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
 #: source_id: INKO_114376
+#: source_id: IM_019321
 #: last_checked: 2013-02-10
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 

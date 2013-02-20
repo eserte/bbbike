@@ -2628,9 +2628,10 @@ M¸llerstr.: Kopfsteinpflaster	Q2 -10102,-1522 -10055,-1453
 M¸llerstr.: Kopfsteinpflaster	Q2 -10035,-1465 -10004,-1365
 #: confirmed_by: srt (added "schlechtes")
 Wichgrafstr.: schlechtes Kopfsteinpflaster	Q3 -10381,-1768 -10267,-1759
-#: add_fragezeichen: Kopfsteinpflaster m‰ﬂig oder schlecht?
+#: XXX: Kopfsteinpflaster m‰ﬂig oder schlecht?
 Wichgrafstr.: Kopfsteinpflaster	Q2 -10267,-1759 -9930,-1687
 #: confirmed_by: srt (added "schlechtes")
+#: confirmed_by: wmannel (Q3)
 Schornsteinfegergasse: schlechtes Kopfsteinpflaster	Q3 -10535,-1809 -10440,-1836 -10425,-1773
 (An der Sternwarte - Hermann-Maaﬂ-Str.): Sandweg	Q2 -9816,-604 -9762,-625
 #: by: ^^^
@@ -4171,6 +4172,7 @@ Seeweg: Verbundsteinpflaster	Q1 19352,-961 19404,-1076
 #: by: ^^^
 # 
 #: by: Conny (jansens...):
+#: note: christian blottner meint: Asphalt, Q1, "viele parkende Autos parallel zur Straﬂe"
 Franz-Mehring-Str.: m‰ﬂiger Asphalt	Q1- -9313,-2429 -9218,-2129 -9164,-1947
 # 
 #: by: Stefan Schmitz
@@ -4190,3 +4192,6 @@ Grotrianstr. (Potsdam): guter Beton	Q0- -7497,-3096 -7511,-3384
 #: by: Uwe Langen
 #: note: "enge Straﬂe, q1" ignoriert
 Havelufer (Oranienburg): Asphalt	Q0 -112,36525 -109,36240 -106,36098 -104,35987 -98,35790 -51,35709
+# 
+#: by: Frank Schmitz
+Neue Kirschallee (Potsdam-Bornim): Asphalt	Q0 -14643,505 -14673,579 -14733,637 -14711,690 -14788,744

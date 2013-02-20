@@ -20998,4 +20998,13 @@ EOF
 userdel	2::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
+     { from  => 1361390117, # 2013-02-20 20:55
+       until => 1364767199, # 2013-03-31 23:59
+       text  => 'Fürstenwalder Damm (Köpenick) Richtung Bölschestr. zwischen Müggelseedamm und Mühlweg Baustelle, Fahrtrichtung gesperrt (bis Ende 03/13)',
+       type  => 'handicap',
+       source_id => 'IM_019584',
+       data  => <<EOF,
+userdel	q4::inwork; 23950,5342 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633
+EOF
+     },
     );
