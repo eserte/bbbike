@@ -97,7 +97,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2013-02-20
+#: last_checked: 2013-02-21
 #: next_check: 2013-06-01
 Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -762,6 +762,22 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8
+#: next_check: 2013-06-05
+Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
+# 
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8
+#: next_check: 2013-06-05
+Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12168,7368
+# 
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
+#: next_check: 2013-06-05
+Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14586,7624
+# 
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
+#: next_check: 2013-06-05 (evtl. auch von wosch berichten lassen)
+Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9190
 # 
 #: XXX wmannel meint: "Bürgersteig benutzen oder über den Spielplatz fahren"
 Wichgrafstr. - Plantagenstr.: existiert hier eine für Radfahrer befahrbare Verbindung? Qualität?	? -9930,-1687 -9813,-1664
@@ -1955,8 +1971,8 @@ Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948
 Neubrücker Str.: Qualität?	? 28363,-19964 28514,-20071
 Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, vom südlichen Ende aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
-#: by: Elisabeth Wegner
-Marwitzer Str.: Radwege existieren, aber von wo bis wo genau?	? -3700,26625 -4048,26914 -4293,27146 -4750,27667
+#: XXX vemutet von anatol ("ziemlich sicher"):
+Marwitz - Schwante: existieren hier Radwege? Wenn ja, ist es ein Zweirichtungsweg, und ist er asphaltiert?	? -7517,29815 -7860,29841 -8212,29768 -8606,30137 -9736,31611 -9856,31818 -9937,32043 -10075,32306 -10181,32825 -10381,33243 -10656,33910 -10631,34093 -10702,34336 -10825,34568
 # REMOVED (hier existieren keine Radwege) --- by: (URL existiert nicht mehr) http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20050810.1640.28623.html ; by hicom_1 (2010-05): keine Radwege: Fürstenwalder Damm: existieren zwischen Stillerzeile und Müggelseedamm Radwege?	? 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23950,5342
 # REMOVED (Fragen sind beantwortet) --- #: note: Verlauf aus goyello - Daniel Weber nach der Qualität fragen [AM]
 # REMOVED (Fragen sind beantwortet) --- (Lilienthalpark): Nachts beleuchtet? Wie ist die Fußgängerfrequenz?	? 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
@@ -2497,6 +2513,7 @@ Julius-Rütgers-Str. (Erkner): Qualität?	? 34293,3076 34391,3099 34416,3127 34671
 #: XXX nicht beleuchtet!
 Saarower Weg: Qualität des Abschnitts im Wald?	? 31206,3874 31350,3908 31417,3912 31450,3938
 #: XXX wahrscheinlich asphaltiert, zumindest an der B2
+#: XXX fehlt in Potsdam.coords.data
 Am Kirchberg (Neu Fahrland): Qualität?	? -13783,3919 -13925,3928 -14507,4057 -14632,4093 -14725,4141 -14777,4143
 #: XXX fehlt in potsdam.coords.data, PLZ=14476
 #: XXX oldname: Drei Mohren
@@ -2580,7 +2597,7 @@ Hermann-Struve-Str. (Potsdam-Bornim): Qualität?	? -16048,1454 -16003,1539 -15978
 Werner-Nerlich-Bogen (Potsdam-Bornim): Qualität?	? -15791,1523 -15891,1584 -15954,1639 -15980,1690 -16000,1727 -16024,1806
 Heckenstr. (Potsdam-Bornim): Qualität?	? -16840,1639 -16958,1706 -17248,1784
 Gröbenstr. (Potsdam-Bornim): Qualität?	? -17646,1636 -18095,1928
-Am Großen Herzberg (Potsdam-Bornim oder Eiche): Qualität?	? -17419,551 -17083,624 -16939,671
+Am Großen Herzberg (Potsdam-Eiche): Qualität?	? -17419,551 -17083,624 -16939,671
 Herzbergstr., Verlängerung nach Eiche: Qualität?	? -17083,624 -17098,554 -17220,212
 Eichenallee (Hohen Neuendorf): Qualität?	? 1542,28700 1379,28792 1221,28876 1124,28923 1040,28973 960,29015 849,29062 655,29094 464,29099 401,29122
 Breitscheidstr. (Glienicke): Qualität östlich der Schönfließer Str.?	? 4244,25914 4292,25894 4394,25887 4579,25865 4690,25853 4795,25838 4888,25829 4985,25863 5085,25906
@@ -2786,6 +2803,7 @@ Zur Königlichen Hofbrauerei (Potsdam): Qualität?	? -12813,-2423 -12781,-2376
 Am Golmer Weinberg (Potsdam-Golm): Qualität?	? -19197,-348 -19180,-292 -19175,-237
 #: XXX fehlt in Potsdam.coords.data
 Ritterstr. (Potsdam-Golm): Qualität?	? -19180,-292 -19101,-318
+#: XXX fehlt in Potsdam.coords.data
 Alter Weinberg (Groß Glienicke): Qualität?	? -9276,7226 -9198,7051
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
 #: XXX oldname bis Juli 2012: Dr.-Kurt-Fischer-Str.
@@ -2795,10 +2813,12 @@ Helmut-Just-Str. (Groß Glienicke): Qualität?	? -9316,7393 -9506,7421
 Freiheitsstr. (Groß Glienicke): Qualität im östlichen Abschnitt?	? -9445,7199 -9670,7190 -9848,7181 -9869,7199
 Grüner Weg (Groß Glienicke): Qualität?	? -9616,6980 -9848,7181
 Interessentenweg (Groß Glienicke): Qualität?	? -9670,7190 -9726,7239 -9798,7341
+#: XXX fehlt in Potsdam.coords.data
 Am Anger (Groß Glienicke): Qualität?	? -9668,6423 -9803,6453 -9839,6497 -9843,6554
 Waldweg (Groß Glienicke): Qualität?	? -10261,6466 -10127,6469
 #: by: http://www.potsdam.de/cms/dokumente/10051714_761024/c2e3b8f1/abl09_09.pdf (Lage, Name)
 #: XXX_osm: Name des Weges fehlt bei osm
+#: XXX fehlt in Potsdam.coords.data
 Am Denkmal (Groß Glienicke): Qualität?	? -9531,6901 -9424,6874
 Zum Teufelssee - Am Moosfenn (Potsdam): Qualität der Gehwegverbindung?	? -10397,-5379 -10503,-5165
 Am Pappeltor (Potsdam, Geltow): Qualität?	? -18894,-5272 -18885,-5173 -18908,-4810 -18928,-4677 -18928,-4595 -18910,-4561 -18771,-4330 -18604,-3755
