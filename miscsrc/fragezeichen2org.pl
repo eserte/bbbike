@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -88,6 +88,7 @@ for my $file (@files) {
 		     my $date = "$y-$m-$d";
 		     my $subject = $r->[Strassen::NAME] || "(" . $file . "::$.)";
 		     my $dist_tag = '';
+		     my $any_dist; # either one way or two way dist in meters
 		     if ($centerc) {
 			 my $dist_m = min map { Strassen::Util::strecke_s($_, $centerc) } @{ $r->[Strassen::COORDS] };
 			 $dist_tag = ":" . int_round($dist_m/1000) . "km:";
@@ -95,6 +96,9 @@ for my $file (@files) {
 			     my $dist2_m = min map {Strassen::Util::strecke_s($_, $center2c) } @{ $r->[Strassen::COORDS] }; # XXX hmmm, using min() for both center*c is not correct, but well...
 			     $dist2_m += $dist_m;
 			     $dist_tag .= int_round($dist2_m/1000) . "km:";
+			     $any_dist = $dist2_m;
+			 } else {
+			     $any_dist = $dist_m;
 			 }
 		     }
 		     my $headline = "** TODO <$date $wd> $subject";
@@ -111,7 +115,7 @@ $headline
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
    [[${abs_file}::$.]]
 EOF
-		     push @records, [$date, $body];
+		     push @records, { date => $date, body => $body, dist => $any_dist };
 		 }
 	     } else {
 		 warn "ERROR: Cannot parse date '$dir->{_nextcheck_date}[0]' (file $file), skipping...\n";
@@ -119,7 +123,11 @@ EOF
 	 });
 }
 
-@records = sort { $b->[0] cmp $a->[0] } @records;
+@records = sort {
+    my $cmp = $b->{date} cmp $a->{date};
+    return $cmp if $cmp != 0;
+    return $b->{dist} <=> $a->{dist};
+} @records;
 
 binmode STDOUT, ':utf8';
 print "fragezeichen/nextcheck\t\t\t-*- mode:org; coding:utf-8 -*-\n\n";
@@ -128,11 +136,11 @@ my $today = strftime "%Y-%m-%d", localtime;
 
 my $today_printed = 0;
 for my $record (@records) {
-    if (!$today_printed && $record->[0] le $today) {
+    if (!$today_printed && $record->{date} le $today) {
 	print "** ---------- TODAY ----------\n";
 	$today_printed = 1;
     }
-    print $record->[1];
+    print $record->{body};
 }
 
 print <<'EOF';
