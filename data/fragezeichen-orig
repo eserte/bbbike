@@ -89,7 +89,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-02-20 vvv
+#: last_checked: 2013-02-22 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -97,7 +97,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2013-02-21
+#: last_checked: 2013-02-22
 #: next_check: 2013-06-01
 Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -165,7 +165,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 Michelangelostr.: werden hier Radspuren markiert?	?::projected 13760,15187 13692,15231 13560,15318 13186,15518 13072,15590
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2012-11-03
+#: last_checked: 2013-02-22
 #: next_check: 2013-06-01
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -542,13 +542,6 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: next_check: 2011-11-30
 Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3542,13063 3559,13177
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2012
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2013 (Hausnummern)
-#: XXX fehlt in Berlin.coords.data PLZ=10365
-#: last_checked: 2012-11-03 (Bauarbeiten, noch keine Straßenführung zu erkennen)
-#: next_check: 2013-02-01
-Heidenelkenweg: Qualität? Genaue Lage?	?::inwork 16112,12639 16107,12701 16077,12696 16074,12639
-# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
 #: XXX Privatstraße
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
@@ -762,6 +755,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2013
+#: XXX laut osm geht die Verbindung sogar bis Alt-Biesdorf
+Lauinger Str.: befindet sich der Fuß/Radweg hier? (Qualität, Beleuchtung, Straßenschilder?) Oder ist damit der fast parallel führende Trampelpfad gemeint?	? 21221,11398 21137,11294
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8
 #: next_check: 2013-06-05
