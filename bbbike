@@ -21980,15 +21980,7 @@ sub get_image_for_any {
 		    $w *= $factor;
 		    $h *= $factor;
 		}
-		warn "Try to convert from svg to png, geometry ${w}x${h}...\n";
-		require File::Temp;
-		require Tk::PNG;
-		my(undef,$tmpfile) = File::Temp::tempfile(SUFFIX => ".png", UNLINK => 1);
-		my @cmd = ("convert", "-geometry", "${w}x${h}", $abs_realfile, $tmpfile);
-		system(@cmd) == 0
-		    or die "Error while converting: @cmd, status=$?";
-		$p = $c->Photo(-file => $tmpfile);
-		unlink $tmpfile;
+		$p = svg2photo($abs_realfile, $w, $h);
 	    } else {
 		$p = get_image($base, $realfile);
 		if (!$p) {
@@ -22005,6 +21997,21 @@ sub get_image_for_any {
 	    $images->{$key} = $p;
 	}
     }
+    $p;
+}
+
+sub svg2photo {
+    my($file, $w, $h) = @_;
+    warn "Try to convert from svg to png, geometry ${w}x${h}...\n" if $verbose;
+    require File::Temp;
+    require Tk::PNG;
+    my(undef,$tmpfile) = File::Temp::tempfile(SUFFIX => ".png", UNLINK => 1)
+	or die "Can't create temporary file: $!";
+    my @cmd = ("convert", "-geometry", "${w}x${h}", $file, $tmpfile);
+    system(@cmd) == 0
+	or die "Error while converting: @cmd, status=$?";
+    my $p = $c->Photo(-file => $tmpfile);
+    unlink $tmpfile;
     $p;
 }
 
