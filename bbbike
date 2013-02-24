@@ -21136,6 +21136,12 @@ sub image_from_file {
 # persistent %photo hash for caching. -name can be set
 # for a Tcl-styled image name. In $small_icons mode every
 # image is shrinked to half width/height.
+#
+# .xpm files are loaded into a Tk::Pixmap object, not Tk::Photo
+# (unless $small_icons is active)
+#
+# .svg files are converted using the svg2photo function. In
+# this case, the options -w and -h are mandatory.
 sub load_photo {
     my($top, $file, %args) = @_;
     if (!defined $file) {
@@ -21151,36 +21157,61 @@ sub load_photo {
 	    $cache_key .= "-$key:$val";
 	}
     }
+    for my $key (qw(-w -h)) {
+	if (exists $args{$key}) {
+	    my $val = $args{$key};
+	    $cache_key .= "-$key:$val";
+	}
+    }
     return $photo{$cache_key} if exists $photo{$cache_key};
 
     my $photo;
     unless ($lowmem) {
 	eval {
 	    my @name = exists $args{-name} ? ($args{-name}) : ();
-	    if ($file =~ /.xpm$/ && !$small_icons) {
+	    my $do_subsample = $small_icons;
+	    if ($file =~ m{\.xpm$}i && !$small_icons) {
+		# Pixmap seem to be more memory-efficient, but it's
+		# not possible to do subsample operations (in case of
+		# $small_icons)
 		$photo = $top->Pixmap(@name, -file => Tk::findINC($file));
 	    } else {
 		my $path;
 		if (file_name_is_absolute($file)) {
 		    $path = $file;
-		    $photo = $top->Photo(@name, -file => $path, %photo_args);
 		} else {
 		    for my $try_file ((-d "$datadir/images" ? "$datadir/images/$file" : ()),
 				      "$FindBin::RealBin/images/$file",
 				     ) {
-			$path = try_image_suffix($try_file);
-			if (defined $path && -r $path) {
-			    $photo = $top->Photo(@name, -file => $path, %photo_args);
+			my $try_path = try_image_suffix($try_file);
+			if (defined $try_path && -r $try_path) {
+			    $path = $try_path;
 			    last;
 			}
 		    }
-		    if (!$photo) {
+		    if (!defined $path) {
 			warn "Could not find photo, try <$file> in some \@INC dirs...\n"; # XXX should never happen?
-			$photo = $top->Photo(@name, -file => Tk::findINC($file), %photo_args);
+			$path = Tk::findINC($file);
+		    }
+		}
+		if ($path) {
+		    if ($path =~ m{\.svg$}i) {
+			my $w = delete $args{-w};
+			die "-w is mandatory for svg files" if !$w;
+			my $h = delete $args{-h};
+			die "-h is mandatory for svg files" if !$h;
+			if ($small_icons) {
+			    $w /= 2;
+			    $h /= 2;
+			    $do_subsample = 0;
+			}
+			$photo = svg2photo($path, $w, $h);
+		    } else {
+			$photo = $top->Photo(@name, -file => $path, %photo_args);
 		    }
 		}
 	    }
-	    if ($small_icons && $photo) {
+	    if ($do_subsample && $photo) {
 		# XXX setting of @name missing
 		my $small_photo = $top->Photo(-width => $photo->width/2,
 					      -height => $photo->height/2,
