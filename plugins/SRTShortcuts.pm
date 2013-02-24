@@ -311,71 +311,71 @@ EOF
 				Width => 20),
 	      [Cascade => $do_compound->('Add layer', $main::newlayer_photo), -menuitems =>
 	       [
-		layer_checkbutton('hm96.bbd (Höhenpunkte)', 'p',
-				  "$bbbike_rootdir/misc/senat_b/hm96.bbd",
+		layer_checkbutton([$do_compound->('hm96.bbd (Höhenpunkte)')],
+				  'p', "$bbbike_rootdir/misc/senat_b/hm96.bbd",
 				  oncallback  => sub { $main::top->bind("<F12>"=> \&find_nearest_hoehe) },
 				  offcallback => sub { $main::top->bind("<F12>"=> '') },
 				 ),
-		layer_checkbutton('Zebrastreifen', 'p',
-				  "$main::datadir/zebrastreifen",
+		layer_checkbutton([$do_compound->('Zebrastreifen', main::load_photo($mf, "misc/verkehrszeichen/Zeichen_350.svg", -w => 16, -h => 16, -persistent => 1))],
+				  'p', "$main::datadir/zebrastreifen",
 				  above => $str_layer_level,
 				 ),
-		layer_checkbutton('Ortsschilder', 'p',
-				  "$main::datadir/ortsschilder",
+		layer_checkbutton([$do_compound->('Ortsschilder', main::load_photo($mf, "misc/verkehrszeichen/Zeichen_310_leer.svg", -w => 16, -h => 16, -persistent => 1))],
+				  'p', "$main::datadir/ortsschilder",
 				  maybe_orig_file => 1,
 				  above => $str_layer_level,
 				 ),
-		layer_checkbutton('routing_helper', 'str',
-				  'routing_helper',
+		layer_checkbutton([$do_compound->('routing_helper')],
+				  'str', 'routing_helper',
 				  maybe_orig_file => 1,
 				  above => $str_layer_level,
 				 ),
-		[Button => "gesperrt_car", -command => sub { add_new_nonlazy_maybe_orig_layer("sperre", "gesperrt_car") }],
+		[Button => $do_compound->("gesperrt_car"), -command => sub { add_new_nonlazy_maybe_orig_layer("sperre", "gesperrt_car") }],
 ## XXX no support for "sperre" type yet:
-#		layer_checkbutton('gesperrt_car', 'sperre',
-#		  		  'gesperrt_car,
+#		layer_checkbutton([$do_compound->('gesperrt_car')]
+#				  'sperre', 'gesperrt_car,
 #				  maybe_orig_file => 1),
-		layer_checkbutton('brunnels', 'str',
-				  "$main::datadir/brunnels",
+		layer_checkbutton([$do_compound->('brunnels')],
+				  'str', "$main::datadir/brunnels",
 				  maybe_orig_file => 1),
-		layer_checkbutton('geocoded images', 'str',
-				  "$ENV{HOME}/.bbbike/geocoded_images.bbd",
+		layer_checkbutton([$do_compound->('geocoded images')],
+				  'str', "$ENV{HOME}/.bbbike/geocoded_images.bbd",
 				  above => $str_layer_level,
 				 ),
-		[Button => "today's geocoded images", -command => sub { add_todays_geocoded_images() }],
-		layer_checkbutton('fragezeichen-outdoor-nextcheck', 'str',
-				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd",
+		[Button => $do_compound->("today's geocoded images"), -command => sub { add_todays_geocoded_images() }],
+		layer_checkbutton([$do_compound->('fragezeichen-outdoor-nextcheck')],
+				  'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd",
 				  below_above_cb => sub {
 				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
 				  },
 				 ),
-		layer_checkbutton('fragezeichen-outdoor', 'str',
-				  "$bbbike_rootdir/tmp/fragezeichen-outdoor.bbd",
+		layer_checkbutton([$do_compound->('fragezeichen-outdoor')],
+				  'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor.bbd",
 				  below_above_cb => sub {
 				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
 				  },
 				 ),
-		layer_checkbutton('fragezeichen-outdoor-nextcheck-categorized', 'str',
-				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck-categorized.bbd",
+		layer_checkbutton([$do_compound->('fragezeichen-outdoor-nextcheck-categorized')],
+				  'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck-categorized.bbd",
 				  below_above_cb => sub {
 				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
 				  },
 				 ),
-		layer_checkbutton('fragezeichen-outdoor-categorized', 'str',
-				  "$bbbike_rootdir/tmp/fragezeichen-outdoor-categorized.bbd",
+		layer_checkbutton([$do_compound->('fragezeichen-outdoor-categorized')],
+				  'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor-categorized.bbd",
 				  below_above_cb => sub {
 				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
 				  },
 				 ),
-		layer_checkbutton('fragezeichen-indoor-nextcheck', 'str',
-				  "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd"),
-		layer_checkbutton('fragezeichen-nextcheck', 'str',
-				  "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd"),
-		layer_checkbutton('Unique matches', 'str',
-				  "$bbbike_rootdir/tmp/unique-matches.bbd",
+		layer_checkbutton([$do_compound->('fragezeichen-indoor-nextcheck')],
+				  'str', "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd"),
+		layer_checkbutton([$do_compound->('fragezeichen-nextcheck')],
+				  'str', "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd"),
+		layer_checkbutton([$do_compound->('Unique matches')],
+				  'str', "$bbbike_rootdir/tmp/unique-matches.bbd",
 				  above => $str_layer_level,
 				 ),
-		[Cascade => 'Unique matches since year...', -menuitems =>
+		[Cascade => $do_compound->('Unique matches since year...'), -menuitems =>
 		 [
 		  map {
 		      my $year = $_;
@@ -386,27 +386,27 @@ EOF
 		  } @acc_cat_split_streets_years,
 		 ],
 		],
-		layer_checkbutton('Weighted matches', 'str',
-				  "$bbbike_rootdir/tmp/weighted-matches.bbd",
+		layer_checkbutton([$do_compound->('Weighted matches')],
+				  'str', "$bbbike_rootdir/tmp/weighted-matches.bbd",
 				  above => $str_layer_level,
 				  Width => undef, # XXX weighted-matches.desc sets its own widths, but why it isn't winning?
 				 ),
-		[Button => "Abdeckung",
+		[Button => $do_compound->("Abdeckung"),
 		 -command => sub {
 		     local $main::p_draw{'pp-all'} = 1;
 		     add_new_layer("str", "$bbbike_rootdir/misc/abdeckung.bbd");
 		     below => '*landuse*',
 		 }
 		],
-		layer_checkbutton('Exits (ÖPNV)', 'str',
-				  "$main::datadir/exits",
+		layer_checkbutton([$do_compound->('Exits (ÖPNV)')],
+				  'str', "$main::datadir/exits",
 				  maybe_orig_file => 1),
-		layer_checkbutton('Kneipen/Cafes', 'str',
-				  "$bbbike_rootdir/data_berlin_osm/kneipen"),
-		layer_checkbutton('Restaurants', 'str',
-				  "$bbbike_rootdir/data_berlin_osm/restaurants"),
-		[Button => "Current route", -command => sub { add_current_route_as_layer() }],
-		[Cascade => 'Berlin/Potsdam coords', -menuitems =>
+		layer_checkbutton([$do_compound->('Kneipen/Cafes', main::load_photo($mf, 'glas', -persistent => 1))],
+				  'str', "$bbbike_rootdir/data_berlin_osm/kneipen"),
+		layer_checkbutton([$do_compound->('Restaurants', main::load_photo($mf, 'essen', -persistent => 1))],
+				  'str', "$bbbike_rootdir/data_berlin_osm/restaurants"),
+		[Button => $do_compound->("Current route"), -command => sub { add_current_route_as_layer() }],
+		[Cascade => $do_compound->('Berlin/Potsdam coords'), -menuitems =>
 		 [
 		  [Button => "Add Berlin.coords.data",
 		   -command => sub { add_coords_data("Berlin.coords.bbd") },
@@ -428,7 +428,7 @@ EOF
 # 		  ],
 		 ]
 		],
-		[Cascade => "VMZ-Detailnetz", -menuitems =>
+		[Cascade => $do_compound->("VMZ-Detailnetz"), -menuitems =>
 		 [	
 		  layer_checkbutton('strassen', 'str',
 				    "$bbbike_auxdir/vmz/bbd/strassen",
