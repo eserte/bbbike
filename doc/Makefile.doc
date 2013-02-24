@@ -3,6 +3,11 @@
 # (This list might be incomplete)
 #
 # In Debian, docbook-xsl needs to be installed
+#
+# The pdf target is highly experimental. Under FreeBSD, the
+# textproc/fop package is required. The results are not yet
+# optional (no non-latin1 characters, some stringparam
+# seem to be ignored)
 
 .if exists(/usr/local/share/xsl/docbook)
 DOCBOOK_XSL_DIR=/usr/local/share/xsl/docbook
@@ -16,9 +21,19 @@ all:	html
 
 html:	HOWTO_edit_bbbike_data.html
 
+pdf:	/tmp/HOWTO_edit_bbbike_data.pdf
+
 HOWTO_edit_bbbike_data.html: HOWTO_edit_bbbike_data.xml Makefile.doc
 	xsltproc \
 	    --stringparam html.stylesheet docbook5.css \
 	    --stringparam section.autolabel 1 \
 	    --stringparam toc.section.depth 1 \
 	    --output HOWTO_edit_bbbike_data.html ${DOCBOOK_XSL_DIR}/html/docbook.xsl HOWTO_edit_bbbike_data.xml
+
+/tmp/HOWTO_edit_bbbike_data.pdf: HOWTO_edit_bbbike_data.xml Makefile.doc
+	xsltproc \
+	    --stringparam paper.type A4 \
+	    --stringparam section.autolabel 1 \
+	    --stringparam toc.section.depth 1 \
+            --output /tmp/HOWTO_edit_bbbike_data.fo ${DOCBOOK_XSL_DIR}/fo/docbook.xsl HOWTO_edit_bbbike_data.xml
+	fop -fo /tmp/HOWTO_edit_bbbike_data.fo -pdf /tmp/HOWTO_edit_bbbike_data.pdf
