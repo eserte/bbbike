@@ -313,7 +313,8 @@ cgi/gridserv.cgi$
 ^data/.*-cooked
 ^BBBikeVar\.tpl$
 ^doc/Makefile\.doc$
-^doc/HOWTO_edit_bbbike_data\.sgml$
+^doc/HOWTO_edit_bbbike_data\.xml$
+^doc/schemas.xml
 ^doc/why_not_osm\.pod$
 ^bbbike-stick.bat$
 ^BBBikeRouting/Boat.pm$
