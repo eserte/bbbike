@@ -91,6 +91,24 @@ sub unregister {
 }
 
 sub _create_images {
+    if (!defined $images{bridge}) {
+	# Created from bbbike-aux/drawings/bridge.svg
+	# Bitmap exported with inkscape and converted with mmencode -b
+	# XXX this image could also be used in the bbbike legend (perl/tk,
+	# mapserver ...)
+	$images{bridge} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlw
+SFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoA
+AADuSURBVDiNzdOxLkRREMbx314KIlEolHqikfUAukmUOo1WQe0lvMKqhMYLGHqNaHUKiWQR
+iU7FXsUuWTcnGzcaX3JycuZ88883xXTquhYRizjDTmbem6CImMYpLjKzV0FmPqPGTUQsT2ie
+xSU2cQ7V2P82ZnAdEeuF5nlcYQO7mfnwA5CZffQwh71CgDWs4DUzT76KVcP0PrrrAmAwdr7V
+BIybm6rRaRbbAEq11gn+BBhoMcLHL6H/eIT2CSKiQoyetwVvH29YiIhuKcE+VnGQmUfN7sx8
+RBdPOI6IqSZgy3BJDktRR5A7w514wRJ8AtaGUGHkMDeVAAAAAElFTkSuQmCC
+EOF
+    }
+
     if (!defined $images{VIZ}) {
 	# Got from: http://www.vmz-info.de/vmz-fuercho-5.1.1.1/images/liferay.ico
 	# Converted with convert + mmencode -b
@@ -335,7 +353,7 @@ EOF
 #		layer_checkbutton([$do_compound->('gesperrt_car')]
 #				  'sperre', 'gesperrt_car,
 #				  maybe_orig_file => 1),
-		layer_checkbutton([$do_compound->('brunnels')],
+		layer_checkbutton([$do_compound->('brunnels', $images{bridge})],
 				  'str', "$main::datadir/brunnels",
 				  maybe_orig_file => 1),
 		layer_checkbutton([$do_compound->('geocoded images')],
@@ -428,7 +446,7 @@ EOF
 # 		  ],
 		 ]
 		],
-		[Cascade => $do_compound->("VMZ-Detailnetz"), -menuitems =>
+		[Cascade => $do_compound->("VMZ-Detailnetz", $images{VIZ}), -menuitems =>
 		 [	
 		  layer_checkbutton('strassen', 'str',
 				    "$bbbike_auxdir/vmz/bbd/strassen",
