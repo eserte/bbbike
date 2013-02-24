@@ -1,6 +1,16 @@
 # The following FreeBSD packages are necessary:
-#    openjade docbook-5.0 docbook-xsl
+#    docbook-5.0 docbook-xsl
 # (This list might be incomplete)
+#
+# In Debian, docbook-xsl needs to be installed
+
+.if exists(/usr/local/share/xsl/docbook)
+DOCBOOK_XSL_DIR=/usr/local/share/xsl/docbook
+.elif exists(/usr/share/xml/docbook/stylesheet/docbook-xsl)
+DOCBOOK_XSL_DIR=/usr/share/xml/docbook/stylesheet/docbook-xsl
+.else
+.error Cannot find docbook xsl
+.endif
 
 all:	html
 
@@ -11,4 +21,4 @@ HOWTO_edit_bbbike_data.html: HOWTO_edit_bbbike_data.xml Makefile.doc
 	    --stringparam html.stylesheet docbook5.css \
 	    --stringparam section.autolabel 1 \
 	    --stringparam toc.section.depth 1 \
-	    --output HOWTO_edit_bbbike_data.html /usr/local/share/xsl/docbook/html/docbook.xsl HOWTO_edit_bbbike_data.xml
+	    --output HOWTO_edit_bbbike_data.html ${DOCBOOK_XSL_DIR}/html/docbook.xsl HOWTO_edit_bbbike_data.xml
