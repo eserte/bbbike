@@ -254,17 +254,19 @@ sub _output_future {
 		print _get_name($o), "\n";
 	    } else {
 		my $id = $o->{id};
-		my $name = _get_name($o);
-		my $max_name_len = 80 - LENGTH_OF_DATE_STRINGS - LENGTH_OF_ID - 2;
-		if ($longest_file_length > $max_name_len) {
-		    $longest_file_length = $max_name_len;
+		if ($v) {
+		    my $name = _get_name($o);
+		    my $max_name_len = 80 - LENGTH_OF_DATE_STRINGS - LENGTH_OF_ID - 2;
+		    if ($longest_file_length > $max_name_len) {
+			$longest_file_length = $max_name_len;
+		    }
+		    $name = substr($name, 0, $max_name_len)
+			if length $name > $max_name_len;
+		    printf STDERR " %".LENGTH_OF_ID."d %-${longest_file_length}s: %s - %s\n",
+			$id,
+			    $name, format_date($o->{from}),
+				format_date($o->{until});
 		}
-		$name = substr($name, 0, $max_name_len)
-		    if length $name > $max_name_len;
-		printf STDERR " %".LENGTH_OF_ID."d %-${longest_file_length}s: %s - %s\n",
-		    $id,
-			$name, format_date($o->{from}),
-			    format_date($o->{until});
 		if ($o->{file}) {
 		    my $msg = "Found 'file' entry in record id $id.";
 		    our $file_entry_diagnostics;
