@@ -1,33 +1,14 @@
-# $Id: Makefile.doc,v 1.7 2006/09/10 22:46:48 eserte Exp $
-
-# This will probably only work under FreeBSD, and also
-# only if /usr/doc is populated with a doc repository.
-
 # The following FreeBSD packages are necessary:
-#    openjade docbook-310 dsssl-docbook-modular docbook-xsl jadetex
+#    openjade docbook-5.0 docbook-xsl
 # (This list might be incomplete)
 
-MAINTAINER=	slaven@rezic.de
-DOC=		HOWTO_edit_bbbike_data
+all:	html
 
-# See also:
-# http://lists.freebsd.org/pipermail/freebsd-doc/2003-December/002999.html
-LANG?=unknown
-LC_ALL?=unknown
-.if ${LANG} != C || ${LC_ALL} != C
-.error Please make sure the LANG and LC_ALL variables are set to C
-.endif
+html:	HOWTO_edit_bbbike_data.html
 
-SRCS=		${DOC}.sgml
-FORMATS?=	html
-
-## This makes no difference, why?
-#HAS_INDEX=	true
-WITH_ARTICLE_TOC?= YES
-
-DOC_PREFIX?=	/usr/doc
-DSLHTML?=       ${DOC_PREFIX}/share/sgml/freebsd.dsl
-DSLPRINT?=      ${DOC_PREFIX}/share/sgml/freebsd.dsl
-LANGCODE=       de_DE.ISO8859-1
-
-.include "${DOC_PREFIX}/share/mk/doc.project.mk"
+HOWTO_edit_bbbike_data.html: HOWTO_edit_bbbike_data.xml Makefile.doc
+	xsltproc \
+	    --stringparam html.stylesheet docbook5.css \
+	    --stringparam section.autolabel 1 \
+	    --stringparam toc.section.depth 1 \
+	    --output HOWTO_edit_bbbike_data.html /usr/local/share/xsl/docbook/html/docbook.xsl HOWTO_edit_bbbike_data.xml

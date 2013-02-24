@@ -24,6 +24,8 @@
  * SUCH DAMAGE.
  *
  * $FreeBSD: doc/share/misc/docbook.css,v 1.16 2011/03/06 13:18:58 gjb Exp $
+ *
+ * Additional changes by SRT.
  */
 
 BODY ADDRESS {
@@ -163,7 +165,7 @@ BODY P B.APPLICATION {
 	a[href]:hover { background: #ffa }
 }
 
-BLOCKQUOTE.NOTE {
+DIV.NOTE {
 	color: #222;
 	background: #eee;
 	border: 1px solid #ccc;
@@ -171,7 +173,7 @@ BLOCKQUOTE.NOTE {
 	width: 85%;
 }
 
-BLOCKQUOTE.TIP {
+DIV.TIP {
 	color: #004F00;
 	background: #d8ecd6;
 	border: 1px solid green;
@@ -179,14 +181,14 @@ BLOCKQUOTE.TIP {
 	width: 85%;
 }
 
-BLOCKQUOTE.IMPORTANT {
+DIV.IMPORTANT {
 	font-style:italic;
 	border: 1px solid #a00;
 	border-left: 12px solid #c00;
 	padding: 0.1em 1em;
 }
 
-BLOCKQUOTE.WARNING {
+DIV.WARNING {
 	color: #9F1313;
 	background: #f8e8e8;
 	border: 1px solid #e59595;
@@ -194,7 +196,7 @@ BLOCKQUOTE.WARNING {
 	width: 85%;
 }
 
-BLOCKQUOTE.CAUTION {
+DIV.CAUTION {
 	color: #3E3535;
 	background: #FFC;
 	border: 1px solid #e59595;
