@@ -1260,18 +1260,7 @@ userdel	2::night 14838,11410 14776,11400
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Hussitenstr.: Fahrbahn zwischen Stralsunder Str. und Usedomer Str. gesperrt, Ausweichen auf Gehweg',
-         'from' => undef,
-         'id' => 2377,
-         'data' => '#: last_checked: 2012-12-25 (Sackgassenschild existiert noch)
-#: next_check: 2013-02-01
-#: by: wosch
-userdel	q4::inwork 9112,14771 9250,14658
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1333,7 +1322,7 @@ userdel	q4::inwork; 13339,7452 13303,7622
          'text' => 'Sredzkistr.: Kreuzungsbereich in Höhe Hosemannstr. gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2399,
-         'data' => '#: last_checked: 2013-02-11 vvv
+         'data' => '#: last_checked: 2013-02-23 vvv
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
 userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763

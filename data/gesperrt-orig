@@ -244,7 +244,7 @@ Knorrpromenade	1 14424,11639 14369,11489
 Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8627,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6801,18761 6879,18737 7003,18715
-Lauterstr.	1 5817,7223 5810,7337
+Lauterstr.	1s:q3 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5314,7217
 Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
@@ -733,6 +733,12 @@ Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 #: by: ^^^
 # 
 #: note: Straﬂenbahntrasse vvv
+Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11160,13492 11135,13452 11107,13410 11081,13372 11070,13357
+Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11070,13357 11080,13373 11131,13455 11160,13492
+Karl-Liebknecht-Str. (Straﬂenbahntrasse)	3nocross::ignrte 11160,13492 11131,13455 11080,13373 11070,13357
+#: note: ^^^
+# 
+#: note: Straﬂenbahntrasse vvv
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11841,13087 11913,13077 11958,13079 11984,13081
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 Mollstr. (Straﬂenbahntrasse)	3nocross::ignrte 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
@@ -740,6 +746,7 @@ Mollstr. (Straﬂenbahntrasse)	3nocross::ignrte 11984,13081 11964,13076 11913,1307
 #: note: Straﬂenbahntrasse vvv
 Torstr. (Richtungsfahrbahn)	1::igndisp 11160,13492 11111,13518 10898,13632
 Torstr. (Richtungsfahrbahn)	1::igndisp 10898,13632 11117,13521 11160,13492
+Torstr. (Straﬂenbahntrasse)	3nocross::ignrte 11160,13492 11117,13521 10898,13632
 #: note ^^^
 #: note: Bundesplatztunnel, Gr¸nanlage vvv
 Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
@@ -936,7 +943,7 @@ B‰umerplan	1 8527,7939 8553,7795
 B‰umerplan	1 8512,7757 8466,7918
 Mierendorffstr.	1 3645,13189 3542,13063
 H¸ttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
-(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s:q3 11018,13286 11085,13239
+(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s:q3 11012,13278 11085,13239
 Zwerghuhnweg	1s 15615,410 15565,379
 Grammestr.	1 1057,14389 1058,14459
 Halskesteig	1 1058,14459 1157,14459
@@ -955,7 +962,7 @@ Salemer Steig	1 -581,4662 -558,4639 -531,4599 -493,4529 -472,4476 -459,4422 -441
 Radtkestr.	1 18,1928 -38,2152
 Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11656,18013
 Gem¸ndener Str.	1 11622,18006 11586,18126 11514,18101 11495,18129 11395,18274
-(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11018,13286 11085,13239
+(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11012,13278 11085,13239
 Dˆbrabergweg	1 9848,20926 9892,20776
 #: note: eine Absperrkette kann hier h‰ngen
 Reichsbahnstr.	2 -4648,1334 -4579,1397
@@ -1333,8 +1340,7 @@ Berliner Str.: Straﬂenbahntrasse	3nocross 10897,17274 10892,17330 10886,17396
 Berliner Str.: Straﬂenbahntrasse	3nocross 10886,17396 10880,17469 10878,17490
 #: note: Luftbild:
 Berliner Str.: Straﬂenbahntrasse	3nocross 13737,15994 13826,16026 14014,16106
-Karl-Liebknecht-Str.: Straﬂenbahntrasse	3nocross 11135,13452 11107,13410 11081,13372 11070,13357 11018,13286
-Karl-Liebknecht-Str.: Straﬂenbahntrasse	3nocross 10923,13156 10976,13229 11005,13269
+Karl-Liebknecht-Str.: Straﬂenbahntrasse	3nocross 10923,13156 10976,13229 11012,13278
 Riesaer Str.: Straﬂenbahntrasse	3nocross 24120,14526 24097,14575 24030,14717
 #: note: Luftbild:
 Riesaer Str.: Straﬂenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526

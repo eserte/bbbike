@@ -207,7 +207,7 @@ Knorrpromenade	1 14424,11639 14369,11489
 Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8627,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6801,18761 6879,18737 7003,18715
-Lauterstr.	1 5817,7223 5810,7337
+Lauterstr.	1s 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5314,7217
 Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
@@ -537,11 +537,15 @@ Kemmannweg	1 -4207,14473 -4117,14458 -4049,14419 -3937,14340 -3911,14331 -3819,1
 Straße 206	1s 13247,17262 13321,17318 13406,17382
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
+Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11160,13492 11135,13452 11107,13410 11081,13372 11070,13357
+Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11070,13357 11080,13373 11131,13455 11160,13492
+Karl-Liebknecht-Str. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11131,13455 11080,13373 11070,13357
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11841,13087 11913,13077 11958,13079 11984,13081
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 Mollstr. (Straßenbahntrasse)	3nocross::ignrte 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 Torstr. (Richtungsfahrbahn)	1::igndisp 11160,13492 11111,13518 10898,13632
 Torstr. (Richtungsfahrbahn)	1::igndisp 10898,13632 11117,13521 11160,13492
+Torstr. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11117,13521 10898,13632
 Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10805,12468 10738,12364
@@ -692,7 +696,7 @@ Bäumerplan	1 8527,7939 8553,7795
 Bäumerplan	1 8512,7757 8466,7918
 Mierendorffstr.	1 3645,13189 3542,13063
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
-(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s 11018,13286 11085,13239
+(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s 11012,13278 11085,13239
 Zwerghuhnweg	1s 15615,410 15565,379
 Grammestr.	1 1057,14389 1058,14459
 Halskesteig	1 1058,14459 1157,14459
@@ -709,7 +713,7 @@ Salemer Steig	1 -581,4662 -558,4639 -531,4599 -493,4529 -472,4476 -459,4422 -441
 Radtkestr.	1 18,1928 -38,2152
 Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11656,18013
 Gemündener Str.	1 11622,18006 11586,18126 11514,18101 11495,18129 11395,18274
-(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11018,13286 11085,13239
+(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11012,13278 11085,13239
 Döbrabergweg	1 9848,20926 9892,20776
 Reichsbahnstr.	2 -4648,1334 -4579,1397
 Dorstener Str.	1 3590,644 3691,566
@@ -1236,12 +1240,9 @@ Straßenbahntrasse	3nocross::ignrte 10886,17396 10880,17469 10878,17490
 Straßenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14014,16106
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
 Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13737,15994
-Straßenbahntrasse	3nocross::ignrte 11135,13452 11107,13410 11081,13372 11070,13357 11018,13286
-Karl-Liebknecht-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11107,13410 11081,13372 11146,13328
-Wadzeckstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11146,13328 11081,13372 11070,13357
-Straßenbahntrasse	3nocross::ignrte 10923,13156 10976,13229 11005,13269
+Straßenbahntrasse	3nocross::ignrte 10923,13156 10976,13229 11012,13278
 Keibelstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11045,13183 10976,13229 10923,13156
-Karl-Liebknecht-Str. -> Keibelstr.: Straßenbahntrasse	3::igndisp 11005,13269 10976,13229 11045,13183
+Karl-Liebknecht-Str. -> Keibelstr.: Straßenbahntrasse	3::igndisp 11012,13278 10976,13229 11045,13183
 Straßenbahntrasse	3nocross::ignrte 24120,14526 24097,14575 24030,14717
 Heidenauer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24146,14594 24097,14575 24120,14526
 Riesaer Str. -> Heidenauer Str.: Straßenbahntrasse	3::igndisp 24030,14717 24097,14575 24146,14594
@@ -3017,3 +3018,4 @@ Columbiadamm, linker Gehweg	1::igndisp 10913,8463 10799,8504 10796,8498
 Hohenstaufenstr., linker Gehweg bis zur Fußgängerampel	1::igndisp 6241,9772 6209,9774
 zur Münchener Str. auf dem linken Gehweg	1::igndisp 6209,9771 6241,9772
 #: note: ^^^
+Karl-Lieknecht-Str., linker Gehweg	1::igndisp 11070,13357 11082,13371

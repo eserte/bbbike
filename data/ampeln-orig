@@ -736,6 +736,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5870,4992
 	X 6007,5785
 	X 5803,6403
+#: XXX_prog: an der Beckerstr. ist auch eine Ampel nur für die nördliche Richtung, evtl. zusammen mit dieser Ampel geschaltet
 	X 6019,6710
 	X 8200,5510
 	X 8742,475
@@ -2489,6 +2490,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 585,11256
 #: XXX_prog: Radfahrer auf dem Radweg Richtung Süden sind nicht betroffen
 	F 18327,11105
+#: note: die Ampel ist etwa 10 Meter nordöstlich von der Kreuzung entfernt
 	F 11012,13278
 	F 14964,14123
 	F 15074,12850
@@ -2706,7 +2708,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX ^^^
 # 
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2013-02-20 vvv
+#: last_checked: 2013-02-23 vvv
 #: next_check: 2013-12-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8879,13913

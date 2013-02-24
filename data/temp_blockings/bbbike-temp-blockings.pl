@@ -3929,7 +3929,7 @@ EOF
        text  => 'Hirtenstr. Arbeiten an Wasserleitungen, Straße in beiden Richtungen gesperrt. (zwischen Rosa-Luxemburg-Str. und Kleine Alexanderstr.) bis 31.03.06, 18:00 Uhr ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 10846,13362 10923,13317
+userdel	q4 10846,13362 10925,13322
 EOF
      },
      { from  => undef, # 
@@ -20608,13 +20608,10 @@ userdel	2::temp 10091,12232 10058,12290
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1361643418, # undef, # XXX
        text  => 'Hussitenstr.: Fahrbahn zwischen Stralsunder Str. und Usedomer Str. gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2012-12-25 (Sackgassenschild existiert noch)
-#: next_check: 2013-02-01
-#: by: wosch
 userdel	q4::inwork 9112,14771 9250,14658
 EOF
      },
@@ -20823,7 +20820,7 @@ EOF
        text  => 'Sredzkistr.: Kreuzungsbereich in Höhe Hosemannstr. gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-02-11 vvv
+#: last_checked: 2013-02-23 vvv
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
 userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763

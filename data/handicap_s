@@ -120,7 +120,7 @@ Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 9931,5985
 Am Landwehrkanal: Parkweg	q1 12739,9576 12801,9554 12919,9584 12981,9672 13086,9825 13145,9861 13241,9995
 Uferweg an den Treptowers: enger und kurviger Weg	q3 14500,9856 14465,9900 14464,9927 14509,9997 14432,10059 14373,10046
 Denewitzstr.: kombinierter Fuß- und Radweg	q1 8061,10310 7947,10155
-Linienstr.: Gehweg	q2 11104,13456 11135,13452
+Linienstr.: Gehweg	q2 11104,13456 11131,13455
 Böcklerpark: gemeinsamer Fuß- und Radweg	q2 10885,10045 10723,10088 10521,10126
 Böcklerpark: enge Kurven, manchmal Fußgänger auf dem Radweg	q3 10967,10092 10917,10068 10885,10045
 Böcklerpark: enge Kurven, Fußgänger	q3 10923,10113 10917,10068
@@ -1916,6 +1916,7 @@ Dorotheenstr. (Straßenbahn): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2
 Revaler Str. (Straßenbahn): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13473,11456
 Kietzer Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22372,4496 22383,4470
 Fanningerstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16890,12135 16794,12144
+Lauterstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5817,7223 5810,7337
 Tannenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -3023,17889 -3012,17940 -3028,18027
 Tannenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -3038,18063 -3028,18027
 Isarstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 12349,8464 12368,8356
@@ -1962,7 +1963,7 @@ Quedlinburger Str.: nur die Durchfahrt ist verboten: gegen die Einbahnstraßenric
 Trusetaler Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
 Blumberger Damm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 21731,15748 21719,15666
 Dorfstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 18144,18813 18161,18814
-(Alex-Wedding-Str. - Karl-Liebknecht-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11018,13286 11085,13239
+(Alex-Wedding-Str. - Karl-Liebknecht-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11012,13278 11085,13239
 Caseler Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14732,16770 14700,16790 14608,16772
 An den Fließtalhöfen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 4474,23119 4432,23066 4444,22989
 Eckertstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13598,12554 13585,12584
@@ -2031,3 +2032,4 @@ Columbiadamm, linker Gehweg	q3::igndisp; 10796,8498 10799,8504 10913,8463
 Hohenstaufenstr., linker Gehweg bis zur Fußgängerampel	q3::igndisp; 6209,9774 6241,9772
 zur Münchener Str. auf dem linken Gehweg	q3::igndisp; 6241,9772 6209,9771
 #: note: ^^^
+Karl-Lieknecht-Str., linker Gehweg	q3::igndisp; 11082,13371 11070,13357
