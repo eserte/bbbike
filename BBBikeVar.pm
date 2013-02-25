@@ -25,8 +25,6 @@ $DEBIAN_AMD64_VERSION = '3.17-1'; # including revision
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
 $EMAIL		   = 'slaven@rezic.de';
-#$EMAIL_NEWSTREET   = 'newstreet@bbbike.de';
-##XXX vorerst, bus Mail an bbbike.de wieder geht...
 $EMAIL_NEWSTREET   = 'slaven@rezic.de';
 # personal homepage
 $HOMEPAGE	   = 'http://www.rezic.de/eserte/';
