@@ -64,8 +64,6 @@ eval {
     }
 
     $to = $BBBike::EMAIL;
-    #$cc = 'eserte@web.de'; 
-    #$cc = 'newstreet@bbbike.de'; # XXX not valid anymore
     # no $cc needed by default, I have the logfile
     my $mscgi_remote = $BBBike::BBBIKE_MAPSERVER_URL;
     my $mscgi_local  = "http://www/~eserte/cgi/mapserv.cgi";
@@ -75,14 +73,8 @@ eval {
     if ($debug) {
 	require Sys::Hostname;
 	if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
-	    require Config;
-	    if ($Config::Config{archname} =~ /amd64/) {
-		$to = "eserte";
-		$cc = "eserte";
-	    } else {
-		$to = "eserte\@smtp.herceg.de";
-		$cc = "slaven\@smtp.herceg.de";
-	    }
+	    $to = "eserte\@smtp.herceg.de";
+	    $cc = "slaven\@smtp.herceg.de";
 	}
     }
 
@@ -421,7 +413,7 @@ EOF
     $extra_html .= "<textarea rows='4' cols='80'>" . BBBikeCGIUtil::my_escapeHTML($bbd_suggestion) . "</textarea><br>";
 
     my $reply_to = $header->{To};
-    my $cc = 'newstreet@bbbike.de, ' . $BBBike::EMAIL;
+    my $cc = $BBBike::EMAIL;
     my $body =<<EOF;
 Hallo $name,
 
