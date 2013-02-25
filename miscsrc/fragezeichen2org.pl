@@ -126,7 +126,11 @@ EOF
 @records = sort {
     my $cmp = $b->{date} cmp $a->{date};
     return $cmp if $cmp != 0;
-    return $b->{dist} <=> $a->{dist};
+    if (defined $a->{dist} && defined $b->{dist}) {
+	return $b->{dist} <=> $a->{dist};
+    } else {
+	0;
+    }
 } @records;
 
 binmode STDOUT, ':utf8';
