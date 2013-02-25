@@ -122,8 +122,8 @@ TODAY_DATE!=	date +'%Y%m%d'
 ######################################################################
 # META TARGETS
 
-.ORDER: targets data-images check .modified .rsync_include make_misc
-all:	targets data-images check .modified .rsync_include make_misc
+.ORDER: targets data-images check .modified make_misc
+all:	targets data-images check .modified make_misc
 
 # Some targets have to be rebuild once a day. These should depend on
 # ".check_daily"
@@ -743,7 +743,6 @@ ${_img_gif_${img}}: ${_img_png_${img}}
 ######################################################################
 # MORE HELPER TARGETS
 
-# This also creates .rsync_include
 .modified:	${TARGETS} ${NON_TARGETS}
 	${PERL} ${MISCSRCDIR}/create_modified
 

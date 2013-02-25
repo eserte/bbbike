@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: create_modified,v 1.3 2003/01/06 02:42:02 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,6 +16,6 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 use Update;
 
-Update::create_modified_devel(-rsyncinclude => 1);
+Update::create_modified_devel();
 
 __END__

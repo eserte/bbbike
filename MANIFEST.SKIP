@@ -275,7 +275,6 @@ cgi/gridserv.cgi$
 ^projects/
 ^routopedia/
 ^data/.original$
-^data/.rsync_include$
 ^data_corrected/
 ^data_berlin_and_potsdam/
 # XXX maybe include this into the dist?
