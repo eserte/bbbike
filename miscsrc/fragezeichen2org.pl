@@ -133,10 +133,22 @@ EOF
     }
 } @records;
 
+my $today = strftime "%Y-%m-%d", localtime;
+
+my @expired_records;
+if ($centerc) {
+    @expired_records = sort {
+	my $cmp = 0;
+	if (defined $a->{dist} && defined $b->{dist}) {
+	    $cmp = $a->{dist} <=> $b->{dist};
+	}
+	return $cmp if $cmp != 0;
+	return $b->{date} cmp $a->{date};
+    } grep { $_->{date} lt $today } @records;
+}
+
 binmode STDOUT, ':utf8';
 print "fragezeichen/nextcheck\t\t\t-*- mode:org; coding:utf-8 -*-\n\n";
-
-my $today = strftime "%Y-%m-%d", localtime;
 
 my $today_printed = 0;
 for my $record (@records) {
@@ -147,8 +159,15 @@ for my $record (@records) {
     print $record->{body};
 }
 
+if (@expired_records) {
+    print "* expired records, alternative sorting\n";
+    for my $expired_record (@expired_records) {
+	print $expired_record->{body};
+    }
+}
+
 print <<'EOF';
-** settings
+* settings
 # Local variables:
 # compile-command: "(cd ../data && make ../tmp/fragezeichen-nextcheck.org)"
 # End:
@@ -165,6 +184,18 @@ fragezeichen2org - create org-mode file from date-based fragezeichen records
     ./miscsrc/fragezeichen2org.pl data/*-orig tmp/bbbike-temp-blockings-optimized.bbd > tmp/fragezeichen-nextcheck.org
 
 =head1 DESCRIPTION
+
+B<fragezeichen2org.pl> creates an emacs org-mode compatible file from
+all "fragezeichen" entries with an last_checked/next_check date found
+in the given bbbike data files.
+
+The records are sorted by date. Records from the same date are
+additionally sorted by distance (if the C<--centerc> option is given).
+A special marker C<<--- TODAY --->> is created between past and future
+entries.
+
+Expired entries are additionally listed in a section "expired records,
+alternative sorting". This section is sorted by distance only.
 
 =head2 OPTIONS
 
