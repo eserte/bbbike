@@ -128,8 +128,9 @@ weight_bbd - create weighted bbd files
 Create a weighted plot from bbbike.de coordssessions (session packed
 in a zip file):
 
-    ~/src/bbbike/miscsrc/coordssession2bbd coordssession-2013-01.zip > /tmp/2013-01.bbd
-    ~/src/bbbike/miscsrc/weight_bbd -logarithmic=2.5 -f -o /tmp/2013-01_weighted_25.bbd /tmp/2013-01.bbd
+    YYYYMM=2013-02
+    ~/src/bbbike/miscsrc/coordssession2bbd coordssession-$YYYYMM.zip > /tmp/$YYYYMM.bbd
+    ~/src/bbbike/miscsrc/weight_bbd -logarithmic=2.5 -f -o /tmp/${YYYYMM}_weighted_25.bbd /tmp/$YYYYMM.bbd
 
 =head1 TODO
 
