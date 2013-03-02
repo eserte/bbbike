@@ -2,6 +2,8 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
 #: note: XXX_* categorization done 2008-01-26
 #:
+################################################################################
+# Ampeln und Bahnübergänge in Berlin
 	X 9229,8785
 	X 8982,8781
 	X 8594,8777
@@ -186,7 +188,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 7105,8788
 	X 6687,8385
 	X 7647,9196
-# aufgehoben (gesehen 2009-05)	X 7782,9115
+# REMOVED (aufgehoben, gesehen 2009-05) --- X 7782,9115
 	X 7479,9357
 	X 7526,9791
 	X 7110,9024
@@ -417,7 +419,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3501,11096
 	X 3830,10351
 	X 3813,10435
-# allerdings mit relativ langen Grünphasen für Fußgänger
+# note: allerdings mit relativ langen Grünphasen für Fußgänger
 	F 3795,11098
 	X 4289,11060
 	X 4245,10435
@@ -1068,10 +1070,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 6228,10646
 	X 4267,10724
 	X 4518,12350
-# an der Deutschlandhalle, nur bei Veranstaltungen an vvv
-#X	X 5656,8112
-#X	X 5623,8175
-# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# REMOVED (Deutschlandhalle existiert nicht mehr) --- an der Deutschlandhalle, nur bei Veranstaltungen an vvv --- #X	X 5656,8112 --- #X	X 5623,8175 --- # ^^^
 	X 6020,10351
 	X 6147,10383
 	X 7600,7605
@@ -1180,7 +1179,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 14310,9692
 	X 9918,13733
 	X 8570,15107
-# del	X 6849,14831
+# REMOVED --- del	X 6849,14831
 	X 6334,14756
 	X 3711,16481
 	X 3788,16621
@@ -1277,10 +1276,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F -7787,8517
 	X -8797,7638
 	X 4501,1900
-	X 18298,-1488
-	X 18419,-1418
-	X 18892,-1273
-	X 19529,-1061
 	X 17526,1540
 	X 16975,1262
 	X 15382,5687
@@ -1299,7 +1294,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14045,16120
 	X 13788,16240
 	X 13104,16522
-# Ampel wurde ca. 2008-05-20 außer Betrieb genommen und abgebaut (by: Gordon Charles; http://www.berlin.de/ba-pankow/presse/archiv/20080508.0705.100069.html)	X 12693,16700
+# REMOVED (Ampel wurde ca. 2008-05-20 außer Betrieb genommen und abgebaut, by: Gordon Charles; http://www.berlin.de/ba-pankow/presse/archiv/20080508.0705.100069.html) --- X 12693,16700
 	X 10620,16497
 	X 14266,12446
 	X 5271,4547
@@ -1679,7 +1674,6 @@ nur Richtung O	X 8142,7221
 	X 22937,11265
 	X 23100,12269
 	X 23017,12177
-# hier keine Ampel:	X 22920,12855
 	X 20375,11694
 	F 16650,11243
 	X 16786,11668
@@ -1729,32 +1723,22 @@ nur Richtung O	X 8142,7221
 	X 23368,3894
 	X 9865,10227
 	X 13028,10629
-	B 24078,22265
-	B 21626,19542
 	X -1336,14786
 	B 20782,5206
 	X 7315,10537
 	X 8690,13723
 	X 11629,9086
 	X 15681,10801
-# seit 1.7.2004 gesperrt	B 801,13323
-geschlossen jede volle Stunde	Zbr 28482,-26163
-geschlossen bei Bedarf	Zbr 45321,48142
-#: note: (URL existiert nicht mehr) http://verkehrsinformation.mvnet.de/bruecken/bruecken.htm vvv
-geschlossen 5x täglich für max. 20 Minuten	Zbr 36080,162883
-geschlossen 5x täglich für max. 30 Minuten	Zbr 32848,183868
-Ziegelgrabenklappbrücke, geschlossen 5x täglich für ca. 20 Minuten	Zbr -13517,211254
-#: note: ^^^
-geschlossen bei Bedarf (?)	Zbr 27657,-11741
+# REMOVED (seit 1.7.2004 gesperrt) ---	B 801,13323
 	X 21089,4731
 	X 21002,5755
 #: by: bln.verkehr <aslaen$q7k$07$1@news.t-online.com>
-	X 5413,2436
+	F 5413,2436
 	X 11673,16367
 	X 14488,12188
 	X 20525,11488
 S-Bahn und Regionalbahn	B 21562,12088
-#: note: eigentlich zwei Ampeln (die Kreuzung mit der Mühlenstr. ist etwas versetzt), aber wahrscheinlich gleich geschaltet
+#: XXX_prog: eigentlich zwei Ampeln (die Kreuzung mit der Mühlenstr. ist etwas versetzt), aber wahrscheinlich gleich geschaltet
 	X 11940,22587
 	X 2394,9714
 	F 6277,10924
@@ -1772,113 +1756,15 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 2694,10002
 	X 12042,21886
 	F 10427,15699
-# aufgehoben, by: Kaja Kruse:	X 10713,15746
-	B 34385,2609
+# REMOVED (aufgehoben, by: Kaja Kruse) --- X 10713,15746
 #: note: Sa und So wahrscheinlich permanent ausgeschaltet
 	X 1053,13790
-	B 12755,-12554
-	B 11601,-7560
-	B 11875,-8728
-	B 13282,-18250
-	B 13295,-18620
-	B 13412,-20513
-	B 13557,-21831
-	B 16379,-29446
-	B 16630,-30953
 #: XXX_prog Ampel ist nach Osten versetzt, aber hier eingetragen, damit auch das Nord-Süd-Routing diese Ampel erfährt
 	F 10463,13747
 	F 8553,11630
 	X 8571,11846
-S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?)	B 40248,14503
-Bahn kommt ca. halbstündlich	B 43081,77252
-Bahn kommt ca. halbstündlich	B 41395,91313
-Bahn kommt ca. halbstündlich oder öfter	B 27139,37340
-Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 42086,79436
-Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41323,96820
-Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41197,98927
-Bahn kommt ca. halbstündlich	B 41840,89712
-Bahn kommt ca. halbstündlich	B 41049,87129
-Bahn kommt ca. halbstündlich	B 70326,-5505
-Bahn kommt ca. 4-6x täglich	B 35295,47041
-Bahn kommt ca. halbstündlich	B 47729,123756
-Bahn kommt ca. halbstündlich	B 40222,103642
-	B 45701,72652
-	B -8417,-2867
-	B -9996,-5596
-	B 26102,-23166
-	B 26706,-17867
-	B 26650,-15695
-	B 43031,-50423
-	B 44496,-51922
-	B 49226,-59451
-	B 50153,-67024
-	B 51374,-71361
-	B 40359,139907
-	B 39777,140892
-	B 36992,146109
-	B 36572,146882
-	B 37475,145205
-UBB, halbstündlich	B 56546,174049
-UBB, halbstündlich	B 40952,186220
-UBB, halbstündlich	B 36165,185728
-UBB, halbstündlich	B 58110,172349
-UBB, halbstündlich	B 50959,179530
-UBB, halbstündlich	B 52830,176128
-UBB, halbstündlich	B 38435,187917
-UBB, halbstündlich	B 48129,182607
-UBB, halbstündlich	B 51899,178200
-UBB, halbstündlich	B 50695,179785
-UBB, halbstündlich	B 48925,182039
-UBB, halbstündlich	B 51270,179246
-	B 20981,175541
-	B 26568,178286
-	B 18326,173768
-	B 16716,174712
-#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
-	B0 32190,64659
-#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
-	B0 19029,81437
-#: note: Schranke noch in Betrieb; Züge werden hinter der Straße gewendet
-	B 16196,79268
-	F 15527,79560
-	X 15654,79485
-	X 15887,79291
-	X 16116,79398
-	B 3619,65202
-	B -18636,4186
 	X 21823,4210
 	X 16861,5935
-	B 29553,41441
-	B 28199,39134
-	B 26674,36559
-	B 23549,31301
-	B 43581,57725
-	B 37940,52528
-	B 46718,60855
-	B 48516,64085
-	B 42250,115925
-	B 48147,70935
-	B 2641,62092
-	B -8016,54305
-	B -34333,-26828
-	B -32833,-25250
-#: by: Message-ID: <2re0fqF1987v6U1@uni-berlin.de>
-	B -18163,-1357
-	B -22146,-1832
-	B -26569,-45
-	B -32143,-211
-	B -35377,-238
-	B -41043,-435
-	B -43949,-847
-	B -48542,-2958
-	B -59187,-3567
-	B -86239,-9690
-	B -93661,-15265
-	B -77957,-51694
-	B -80621,-49973
-	B -84994,-47451
-	B -89777,-42832
-	B -93557,-39865
 #: note: am Wochenende und nachts ausgeschaltet
 	X 12520,12938
 	X 9454,12558
@@ -1896,7 +1782,6 @@ UBB, halbstündlich	B 51270,179246
 	F 18179,16534
 	X 5314,7217
 	X 5352,7184
-# removed, duplicate	F 11368,13170
 #: by: ^^^
 #: by: davidbest:
 	F 13225,13620
@@ -1904,10 +1789,6 @@ UBB, halbstündlich	B 51270,179246
 	F 11723,13139
 	F 5569,7022
 	F 6241,9772
-S-Bahn ca. alle 10 Minuten	B 10763,-4012
-S-Bahn ca. alle 10 Minuten	B 10865,-4464
-	B 99765,-46542
-	B 99245,-43974
 	F 2334,5739
 	F 4437,5335
 #: by: mfuss75:
@@ -1918,22 +1799,9 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	F 5297,9579
 	F 5907,10821
 	F 8358,11477
-	B -13875,20548
-	B -3453,51255
-	B -5122,54564
-	B -6070,59687
-	B -6547,61759
-	B -6557,66279
-	B -5511,69122
-	B -6182,71661
-	B -6100,73876
 	F 6459,8272
 	F 1028,11309
 	F 13164,13374
-#: section Ampeln in Brandenburg vvv
-# nur besondere Ampeln werden hier aufgeführt
-	X 6399,-1793
-#: section ^^^
 #: section Parkeisenbahn Wuhlheide vvv
 #: note: Fährt nur am Wochenende tagsüber während des Sommers im 15-30-Minutentakt: vvv
 	B0 20623,6136
@@ -1965,10 +1833,6 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	F 2282,11463
 	F -4648,11560
 	X 10815,11662
-	X -1709,653
-	X -1668,-1709
-	X -3368,-4430
-	X -1715,-1767
 	F 8867,4506
 	X 14179,9515
 Industriebahn	B0 -2410,13746
@@ -1982,7 +1846,6 @@ Industriebahn	B0 -2410,13746
 	F 11905,15462
 	X 7880,13315
 	X 8023,13632
-	B 15580,-26698
 	X 7696,7771
 	F 12204,13719
 	X 19783,12955
@@ -1992,13 +1855,6 @@ Industriebahn	B0 -2410,13746
 	F 16008,14340
 	X 16819,15912
 	X -1567,14494
-	B 49463,69701
-	B 50401,70720
-	B 55594,74156
-	B 63230,76070
-	B 65411,75684
-	B 68641,74483
-	B 63363,90636
 	F -6459,14160
 	X 18496,2471
 	X 19501,3101
@@ -2012,8 +1868,6 @@ Industriebahn	B0 -2410,13746
 	F 9294,12765
 	X 9224,14169
 	Zbr 1721,20603
-#: by: Tomislav:
-	Zbr 35066,4548
 nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 5051,7631
 #: note: laut Luftbild:
@@ -2035,8 +1889,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 20201,2392
 	F 6710,6342
 	B 25109,12196
-	B 25269,-4041
-	B 24872,-3095
 	B 14314,25193
 	F 9314,12652
 	F 9410,14410
@@ -2044,7 +1896,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 9621,14624
 	X 10170,14905
 	F 10515,15045
-	B 35379,-103141
 	X 21163,15289
 #: note: laut Luftbild:
 	X 23561,15975
@@ -2081,14 +1932,13 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 4717,21223
 	F 1724,3187
 	X 22785,6984
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20050128.0855.23450.html und Luftbild:
 	X 8634,18787
 	X 8668,18744
 #: by: Detlef Neubauer [AM]
 	F 16857,12600
 	X 11722,10533
 	X 5219,6215
-#: note: eigentlich bezieht die Ampelanlage auch 5268,6305 ein, das kann aber nicht dargestellt werden...
+#: XXX_prog: eigentlich bezieht die Ampelanlage auch 5268,6305 ein, das kann aber nicht dargestellt werden...
 	X 5244,6261
 	F 5091,5979
 	F 4982,5789
@@ -2131,176 +1981,63 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: by: Achim Stenzel:
 	F 6362,4894
 	F 17425,18997
-	B -12751,-8997
 	X 13867,9864
 	X 13884,9882
-	B 27705,-26035
-	B 27995,-27157
-#: note: Luftbild
-	B 31657,-32860
-#: note: Luftbild
-	B 29778,-30065
-#: note: Luftbild
-	B 32829,-34732
-#: note: Luftbild
-	B 33356,-36311
-#: note: Luftbild
-	B 39259,612
-#: note: Luftbild
 	X 16485,12384
 	X 1945,2127
 	F 4927,3147
 #: note: Luftbild
 	X -3913,13054
 	B -5242,17405
-	B 73017,97449
-#: note: Luftbild
-	B -18726,-19242
 	F 17130,16032
 	F 21539,17442
 	F 17202,10355
 	X 10830,17985
 	X -2026,2742
-#: note: die Kreuzung mit der Gravensteinstr. gehört auch zu der Ampelanlage
+#: XXX_prog: die Kreuzung mit der Gravensteinstr. gehört auch zu der Ampelanlage
 	X 12187,22486
 	F 8110,13042
-	B 45152,-53482
 	F 17744,18016
 	F 17675,17971
 #: note: Luftbild
 	F 17973,17772
 #: note: Luftbild
 	X -4663,14820
-#: note: Luftbild
 	X 18809,9133
-#: note: Luftbild und http://www.stadtentwicklung.berlin.de/verkehr/radverkehrsanlagen/de/hellersdorf/route.shtml
 	X 21337,13470
 #: note: Luftbild
 	X 23021,13982
 #: note: Luftbild
 	X 5476,19450
-	B 47038,-17056
 #: note: Luftbild
 	F 6748,935
 nur Museumsbetrieb der Heidekrautbahn	B0 7768,21253
 nur Museumsbetrieb der Heidekrautbahn	B0 7966,21563
-nur Museumsbetrieb der Heidekrautbahn	B0 7975,25642
-nur Museumsbetrieb der Heidekrautbahn	B0 8075,26125
-nur Museumsbetrieb der Heidekrautbahn	B0 8209,26804
 nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
-nur Museumsbetrieb der Heidekrautbahn	B0 8738,28086
-nur Museumsbetrieb der Heidekrautbahn	B0 9055,28814
-nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
-	B 11147,73794
-	B 10148,73146
-	B 7798,69839
-	B 5361,66676
-	B 2129,61503
-	B 1300,60559
-	B -1165,58248
-	B -4990,55852
-	B -1530,45604
-#: note: Luftbild
-	B 66499,93857
-#: note: Luftbild
-	B 80950,110487
-#: note: Luftbild
-	B 78844,105446
-	B -16849,-5673
 #: note: Luftbild
 	F 4592,3762
 	F -306,1700
-#: note: Luftbild
-	B 75394,-6991
-	B 49101,123488
-	B 63028,117870
-#: note: Luftbild
-	B 52188,123497
-	B 9439,36963
-	B 44343,-15112
-	B 43456,-14384
-	B 42804,-13910
-#: note: Luftbild
-	B 36666,14172
-#: note: Luftbild
-	B -14667,54977
-#: note: Luftbild
-	B -15335,54980
-#: note: Luftbild
-	B 48692,-75633
-#: note: Luftbild
-	B 49606,-74713
 	X 20959,11465
 	F 21137,11294
-	B -5417,30402
-	B 27778,161482
-	B 34308,151439
-	B 37493,125260
-	B 12141,178951
-#: note: Luftbild
-	B 29147,180773
-	B 27094,12535
-	B 32079,193165
-	B 35705,190879
-	B 38289,186921
-	B 41168,186115
-	B 64421,117480
-#: note: Luftbild
-	B 63034,90338
 	X 7487,19406
 #: note: Luftbild
 	X 19809,15676
 #: note: Luftbild
 	X 19733,15511
-	B 30815,13170
-#: note: Luftbild
-	B 34183,13746
-#: note: Luftbild
-	B 35386,13954
-	B 70188,-78014
-#: note: Luftbild
-	B 11382,35230
-#: note: Luftbild
-	B 12034,35012
-#: note: Luftbild
-	B 24718,22731
 	F 7164,-473
 	F 22640,4081
-	B 36087,-12087
-	B 32827,-11406
-#: note: Luftbild
-	B 32416,-11368
-#: note: Luftbild
-	B 29692,-11669
 #: note: Luftbild
 	F 9028,16864
-	B 22501,-102573
 	F 5373,10981
 #: note: war früher (ca. 2006?) ein Zebrastreifen
 	F 18733,8650
 	X 18709,8423
 	F 4920,9029
-	B 51081,-73709
-	B 52964,-21786
-#: note: Luftbild
-	B -13357,37176
-	B 18101,-35914
-#: note: Luftbild
-	B 22928,-46895
 	X 21647,15496
-#: note: Luftbild
-	B -19043,-11944
-#: note: zusammenhängende Ampelanlage vvv
+#: XXX_prog: zusammenhängende Ampelanlage vvv
 	X 15530,12412
 	X 15508,12367
-#: note: ^^^
-	B -19127,8680
-#: note: Luftbild
-	B -19145,10636
-#: note: Luftbild
-	B -19029,11660
-#: note: Luftbild
-	B 40249,186550
+#: XXX_prog: ^^^
 	F 10777,10930
 	X 2663,1199
 	F 1946,604
@@ -2308,50 +2045,20 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	F 9391,3651
 #: note: Luftbild
 	F 16589,14400
-	B -216,128147
-	B 5401,128721
-	B 24754,77507
-	B -54891,-35326
 	X 14052,13389
 	X 14109,13449
 	F 8144,16750
 	F 4123,11683
 	F 10943,6498
 	X 4991,5531
-	B 24165,-103467
 	X 21251,12767
-#: note: Luftbild vvv
-	B -21066,67757
-	B -19695,59899
-	B -19996,46176
-	B -14975,40027
-	B -11386,36243
-	B -9783,34896
-	B -7346,32440
-	B -24804,49561
-	B -20907,55639
-	B -27809,58912
-	B -7352,54661
-	B 3476,63906
-#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
-	B0 29542,69987
-	B -62229,18971
-#: note ^^^
 	X 10060,21916
 	F 10846,17121
 Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 #: by: Message-ID: <f7gpgb$22l$1@mobile.in-berlin.de>
 	F 1442,12480
-	B -83391,-71794
-	B -79430,-70051
-	B -73412,-67370
-	B -70271,-65993
-	B -30149,-22937
-	B -26258,-20094
-	B -9620,-4939
 #: note: Luftbild:
 	X -4290,14025
-	B 45740,14260
 	X 4821,5345
 	X 5346,6443
 	X 8205,10979
@@ -2359,8 +2066,6 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X -9005,13354
 	X 3103,14187
 	F 8953,10366
-#: note: Luftbild:
-	B 11077,-5335
 	F 5574,5819
 	F 2745,12467
 	X 20210,13776
@@ -2376,7 +2081,6 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	B0 14641,1771
 	F 18177,-449
 	X 17855,1629
-#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20080404.1415.97645.html
 	X 21789,5427
 	X 21088,9175
 	F 4650,18817
@@ -2385,15 +2089,12 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 13919,10583
 	X 21115,271
 	X 17477,6031
-#: note: Luftbild:
-	B -63533,72983
 	F 13737,14204
 	X 9510,12113
 	F 13142,10530
 	F 9245,6352
 	F 10815,6036
 	X 14421,5465
-	B 47463,70752
 	X 3983,2454
 	F 6433,16342
 #: note: Luftbild:
@@ -2402,12 +2103,9 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 12060,5204
 	F 2580,24028
 	X 13401,15821
-	B 60676,170842
-	B 44287,133631
 	X 6451,6710
 	F 7316,7814
 # REMOVED (temporäre Ampel existiert nicht mehr) --- #: XXX existiert diese Ampel noch? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5227&options=4 ---	F 18413,7774
-	B 26494,-13883
 	X 16191,10035
 #: by: Wolfhard Schleese vvv
 	X 3754,24946
@@ -2423,11 +2121,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 7728,16538
 	X 5004,12771
 	F 5754,13170
-	B 46004,-16440
 	X 20150,13562
-#: note: Luftbild:
 	F -3018,16974
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20080627.0945.103772.html
 	F 21150,11925
 	F -6053,1224
 	F 6522,12662
@@ -2448,7 +2143,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 5360,11510
 	F 13800,7801
 	F 7187,15000
-#: note: nicht relevant für Radwege
+#: XXX_prog: nicht relevant für Radwege
 	F 18626,11742
 	F 20025,11747
 #: XXX_prog: Ampel nur in Richtung Westen
@@ -2457,11 +2152,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -7484,13770
 	F 17997,8695
 	F 8337,13541
-	B 56315,83428
-	B 59937,36197
-	B 26057,-6241
-	X 18777,-1298
-	B 45406,47877
 	X 15248,11880
 #: by: osm
 	X 11001,18528
@@ -2474,18 +2164,15 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.panoramio.com/photo/19637886
 	X 5479,2464
 	F 10736,12285
-#: note: die genaue Position ist südlich der Einmündung, aber querende Radfahrer müssen die Ampel immer nehmen
+#: XXX_prog: die genaue Position ist südlich der Einmündung, aber querende Radfahrer müssen die Ampel immer nehmen
 	F 13603,11538
 	F 18585,10278
 	F 22455,1812
 	F 14519,7301
-	B 27647,-11196
-	B 26359,-12549
 #: XXX_prog zusammenhängend vvv
 	X 24321,14410
 	X 24345,14403
 #: XXX_prog ^^^
-	B -26873,-34493
 #: XXX_prog: nur in Richtung Westen
 	X 585,11256
 #: XXX_prog: Radfahrer auf dem Radweg Richtung Süden sind nicht betroffen
@@ -2511,7 +2198,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 14802,11784
 	X -1810,16391
 	X -1675,16813
-#: note: Bedarfsampelm, am Wochenende abgeschaltet (by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4302&options=4)
+#: note: Bedarfsampeln, am Wochenende abgeschaltet (by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4302&options=4)
 	F -2072,13403
 	F 417,12115
 	F 6438,11141
@@ -2529,16 +2216,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -2671,1988
 	X 6480,7992
 	F 4862,10881
-	B 62486,-4480
-	B 58135,-5057
 	F 30037,4176
 	F 23055,4640
-	B 45836,-8
-	B 69963,-5374
-	B -48114,-2344
-	B 9342,-90771
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1008/nachricht3979.html
-#: confirmed_by: srt
 	X 13256,26863
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100805.1445.305319.html
 	X -7365,15306
@@ -2556,7 +2235,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B 19302,-734
 #: note: Luftbild
 	X 10228,-1099
-#: by: andk
 	X 8078,8772
 	F 9781,16569
 #: note: Ausfahrt Neuköllner Tor
@@ -2577,8 +2255,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 3537,13182
 #: note: Luftbild
 	X 3408,13210
-#: by: andk
-#: confirmed_by: srt
 	X 7733,8023
 	X 17533,14484
 	X 18166,14277
@@ -2598,9 +2274,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 16119,15302
 	F 16263,15427
 	F 20173,18306
-	B 33705,152843
-	B 32741,155086
-	B 21792,169304
 	F -8603,6973
 #: XXX_prog: Ampel gilt nicht für Radfahrer
 	F 15468,13700
@@ -2617,8 +2290,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 15670,12022
 	F 4864,20247
 	F 16602,25646
-#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
-	B0 26090,86927
 	F -188,22682
 	X -2295,16951
 	X -1706,15768
@@ -2760,6 +2431,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 4937,6205
 	F 6115,13328
 	F 6674,13332
+#: note: Luftbild
+	F -3693,13012
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/
@@ -2879,9 +2552,320 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked: 2012-12-09
 	F -12531,-781
 	F -12223,-713
+	B -8417,-2867
+	B -9996,-5596
 #: note: ^^^
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	B 45740,14260
+	B 27647,-11196
+	B 26359,-12549
+	B -26873,-34493
+	B 62486,-4480
+	B 58135,-5057
+	B 45836,-8
+	B 69963,-5374
+	B -48114,-2344
+	B 9342,-90771
+	X 18298,-1488
+	X 18419,-1418
+	X 18892,-1273
+	X 19529,-1061
+	B 24078,22265
+	B 21626,19542
+geschlossen jede volle Stunde	Zbr 28482,-26163
+geschlossen bei Bedarf	Zbr 45321,48142
+#: note: (URL existiert nicht mehr) http://verkehrsinformation.mvnet.de/bruecken/bruecken.htm vvv
+geschlossen 5x täglich für max. 20 Minuten	Zbr 36080,162883
+geschlossen 5x täglich für max. 30 Minuten	Zbr 32848,183868
+Ziegelgrabenklappbrücke, geschlossen 5x täglich für ca. 20 Minuten	Zbr -13517,211254
+#: note: ^^^
+geschlossen bei Bedarf (?)	Zbr 27657,-11741
+	B 34385,2609
+	B 12755,-12554
+	B 11601,-7560
+	B 11875,-8728
+	B 13282,-18250
+	B 13295,-18620
+	B 13412,-20513
+	B 13557,-21831
+	B 16379,-29446
+	B 16630,-30953
+S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?)	B 40248,14503
+Bahn kommt ca. halbstündlich	B 43081,77252
+Bahn kommt ca. halbstündlich	B 41395,91313
+Bahn kommt ca. halbstündlich oder öfter	B 27139,37340
+Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 42086,79436
+Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41323,96820
+Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41197,98927
+Bahn kommt ca. halbstündlich	B 41840,89712
+Bahn kommt ca. halbstündlich	B 41049,87129
+Bahn kommt ca. halbstündlich	B 70326,-5505
+Bahn kommt ca. 4-6x täglich	B 35295,47041
+Bahn kommt ca. halbstündlich	B 47729,123756
+Bahn kommt ca. halbstündlich	B 40222,103642
+	B 45701,72652
+	B 11147,73794
+	B 26102,-23166
+	B 26706,-17867
+	B 26650,-15695
+	B 43031,-50423
+	B 44496,-51922
+	B 49226,-59451
+	B 50153,-67024
+	B 51374,-71361
+	B 40359,139907
+	B 39777,140892
+	B 36992,146109
+	B 36572,146882
+	B 37475,145205
+UBB, halbstündlich	B 56546,174049
+UBB, halbstündlich	B 40952,186220
+UBB, halbstündlich	B 36165,185728
+UBB, halbstündlich	B 58110,172349
+UBB, halbstündlich	B 50959,179530
+UBB, halbstündlich	B 52830,176128
+UBB, halbstündlich	B 38435,187917
+UBB, halbstündlich	B 48129,182607
+UBB, halbstündlich	B 51899,178200
+UBB, halbstündlich	B 50695,179785
+UBB, halbstündlich	B 48925,182039
+UBB, halbstündlich	B 51270,179246
+	B 20981,175541
+	B 26568,178286
+	B 18326,173768
+	B 16716,174712
+#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
+	B0 32190,64659
+#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
+	B0 19029,81437
+#: note: Schranke noch in Betrieb; Züge werden hinter der Straße gewendet
+	B 16196,79268
+	F 15527,79560
+	X 15654,79485
+	X 15887,79291
+	X 16116,79398
+	B 3619,65202
+	B -18636,4186
+	B 29553,41441
+	B 28199,39134
+	B 26674,36559
+	B 23549,31301
+	B 43581,57725
+	B 37940,52528
+	B 46718,60855
+	B 48516,64085
+	B 42250,115925
+	B 48147,70935
+	B 2641,62092
+	B -8016,54305
+	B -34333,-26828
+	B -32833,-25250
+#: by: Message-ID: <2re0fqF1987v6U1@uni-berlin.de>
+	B -18163,-1357
+	B -22146,-1832
+	B -26569,-45
+	B -32143,-211
+	B -35377,-238
+	B -41043,-435
+	B -43949,-847
+	B -48542,-2958
+	B -59187,-3567
+	B -86239,-9690
+	B -93661,-15265
+	B -77957,-51694
+	B -80621,-49973
+	B -84994,-47451
+	B -89777,-42832
+	B -93557,-39865
+S-Bahn ca. alle 10 Minuten	B 10763,-4012
+S-Bahn ca. alle 10 Minuten	B 10865,-4464
+	B 99765,-46542
+	B 99245,-43974
+	B -13875,20548
+	B -3453,51255
+	B -5122,54564
+	B -6070,59687
+	B -6547,61759
+	B -6557,66279
+	B -5511,69122
+	B -6182,71661
+	B -6100,73876
+	X 6399,-1793
+	X -1709,653
+	X -1668,-1709
+	X -3368,-4430
+	X -1715,-1767
+	B 15580,-26698
+	B 49463,69701
+	B 50401,70720
+	B 55594,74156
+	B 63230,76070
+	B 65411,75684
+	B 68641,74483
+	B 63363,90636
+#: by: Tomislav:
+	Zbr 35066,4548
+	B 25269,-4041
+	B 24872,-3095
+	B 35379,-103141
+	B -12751,-8997
+	B 10148,73146
+	B 7798,69839
+	B 5361,66676
+	B 2129,61503
+	B 1300,60559
+	B -1165,58248
+	B -4990,55852
+	B -1530,45604
+#: note: Luftbild
+	B 66499,93857
+#: note: Luftbild
+	B 80950,110487
+#: note: Luftbild
+	B 78844,105446
+	B -16849,-5673
+#: note: Luftbild
+	B 75394,-6991
+	B 49101,123488
+	B 63028,117870
+#: note: Luftbild
+	B 52188,123497
+	B 9439,36963
+	B 44343,-15112
+	B 43456,-14384
+	B 42804,-13910
+#: note: Luftbild
+	B 36666,14172
+#: note: Luftbild
+	B -14667,54977
+#: note: Luftbild
+	B -15335,54980
+#: note: Luftbild
+	B 48692,-75633
+#: note: Luftbild
+	B 49606,-74713
+	B -5417,30402
+	B 27778,161482
+	B 34308,151439
+	B 37493,125260
+	B 12141,178951
+#: note: Luftbild
+	B 29147,180773
+	B 27094,12535
+	B 32079,193165
+	B 35705,190879
+	B 38289,186921
+	B 41168,186115
+	B 64421,117480
+#: note: Luftbild
+	B 63034,90338
+	B 30815,13170
+#: note: Luftbild
+	B 34183,13746
+#: note: Luftbild
+	B 35386,13954
+	B 70188,-78014
+#: note: Luftbild
+	B 11382,35230
+#: note: Luftbild
+	B 12034,35012
+#: note: Luftbild
+	B 24718,22731
+	B 36087,-12087
+	B 32827,-11406
+#: note: Luftbild
+	B 32416,-11368
+#: note: Luftbild
+	B 29692,-11669
+	B 22501,-102573
+	B 51081,-73709
+	B 52964,-21786
+#: note: Luftbild
+	B -13357,37176
+	B 18101,-35914
+#: note: Luftbild
+	B 22928,-46895
+#: note: Luftbild
+	B -19043,-11944
+	B -19127,8680
+#: note: Luftbild
+	B -19145,10636
+#: note: Luftbild
+	B -19029,11660
+#: note: Luftbild
+	B 40249,186550
+	B -216,128147
+	B 5401,128721
+	B 24754,77507
+	B -54891,-35326
+	B 24165,-103467
+#: note: Luftbild vvv
+	B -21066,67757
+	B -19695,59899
+	B -19996,46176
+	B -14975,40027
+	B -11386,36243
+	B -9783,34896
+	B -7346,32440
+	B -24804,49561
+	B -20907,55639
+	B -27809,58912
+	B -7352,54661
+	B 3476,63906
+#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
+	B0 29542,69987
+	B -62229,18971
+#: note ^^^
+#: note: Luftbild:
+	B 11077,-5335
+#: note: Luftbild:
+	B -63533,72983
+	B 47463,70752
+	B 60676,170842
+	B 44287,133631
+	B 26494,-13883
+	B 46004,-16440
+	B 56315,83428
+	B 59937,36197
+	B 26057,-6241
+	B 45406,47877
+	B 33705,152843
+	B 32741,155086
+	B 21792,169304
+#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
+	B0 26090,86927
+	B -83391,-71794
+	B -79430,-70051
+	B -73412,-67370
+	B -70271,-65993
+	B -30149,-22937
+	B -26258,-20094
+	B -9620,-4939
+	X 18777,-1298
+nur Museumsbetrieb der Heidekrautbahn	B0 7975,25642
+nur Museumsbetrieb der Heidekrautbahn	B0 8075,26125
+nur Museumsbetrieb der Heidekrautbahn	B0 8209,26804
+nur Museumsbetrieb der Heidekrautbahn	B0 8738,28086
+nur Museumsbetrieb der Heidekrautbahn	B0 9055,28814
+nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
+	B 45152,-53482
+	B 47038,-17056
+	B 73017,97449
+#: note: Luftbild
+	B -18726,-19242
+	B 27705,-26035
+	B 27995,-27157
+#: note: Luftbild
+	B 31657,-32860
+#: note: Luftbild
+	B 29778,-30065
+#: note: Luftbild
+	B 32829,-34732
+#: note: Luftbild
+	B 33356,-36311
+#: note: Luftbild
+	B 39259,612
 	X 23109,30968
 	X 39873,102249
 	X 39715,101866
