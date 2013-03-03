@@ -10402,7 +10402,7 @@ EOF
        text  => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14688,10167 14752,10246 14794,10336 14821,10478 14832,10512 14843,10621 14882,10732
+userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14843,10621 14882,10732
 EOF
      },
      { from  => undef, # 
@@ -11541,7 +11541,7 @@ EOF
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14688,10167 14752,10246 14794,10336 14821,10478 14832,10512 14843,10621 14882,10732 14906,10820
+userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14843,10621 14882,10732 14906,10820
 EOF
      },
      { from  => undef, # 
@@ -20054,12 +20054,15 @@ EOF
      },
      { from  => undef, # 1329631200, # 2012-02-19 07:00
        until => 1404140400, # 2014-06-30 17:00
-       text  => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
+#       text  => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
+       text  => 'Behrenstr. (Mitte): zwischen Glinkastr. und Friedrichstr. gesperrt',
        type  => 'handicap',
-       source_id => 'INKO_093369',
+#       source_id => 'INKO_093369',
+       source_id => 'INKO_117614',
        data  => <<EOF,
 #: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
-userdel	q3::inwork; 9164,12172 9373,12197
+#userdel	q3::inwork; 9164,12172 9373,12197
+userdel	q3::inwork 9164,12172 9373,12197
 EOF
      },
      { from  => 1330419240, # 2012-02-28 09:54

@@ -736,7 +736,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -1047,19 +1047,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_078941_COPY_1',
-         'until' => 1362092400,
-         'text' => 'Blankenburger Straße: Richtung Dietzgenstraße zwischen Lindenberger Straße und Siegfriedstraße wegen Bauarbeiten gesperrt; Herthaplatz ist teilweise eine Einbahnstraße; 05.10.2011 11:00 Uhr bis März 2013',
-         'from' => 1317679200,
-         'id' => 2290,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html?date=20121116 vvv
-userdel	q4::inwork; 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
-userdel	q4::inwork; 10614,19907 10599,19957
-#: by: ^^^
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1125,13 +1113,14 @@ userdel	2::inwork 19968,16 19940,52
          'type' => 'handicap'
        },
        {
-         'source_id' => 'INKO_093369',
+         'source_id' => 'INKO_117614',
          'until' => 1404140400,
-         'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
+         'text' => 'Behrenstr. (Mitte): zwischen Glinkastr. und Friedrichstr. gesperrt',
          'from' => undef,
          'id' => 2317,
          'data' => '#: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
-userdel	q3::inwork; 9164,12172 9373,12197
+#userdel	q3::inwork; 9164,12172 9373,12197
+userdel	q3::inwork 9164,12172 9373,12197
 ',
          'type' => 'handicap'
        },
