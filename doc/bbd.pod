@@ -193,8 +193,9 @@ Example:
  #: line_color: #808080
  #: line_color.cat: #ff8080
 
-XXX: The category-less form is NYI!.
-XXX: currently category_color.category is used instead of line_color.category
+Compatibility: C<category_color.I<category>> is still recognized as an
+alternative to C<line_color.I<category>>. Maybe this will removed some
+day.
 
 XXX: Maybe use C<item_color> instead of C<line_color>, because colors
 apply also to points and areas!

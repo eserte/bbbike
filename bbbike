@@ -21800,11 +21800,17 @@ sub handle_global_directives {
 	   line_shorten line_shorten_end
 	   name
 	  );
+    # Aliases for directives without category
     my %aliases = (
 		   category_width => "category_line_width",
+		   line_color => "str_color",
 		  );
+    # Aliases for directives with category
+    my %aliases_withcat = (
+			   line_color => "category_color",
+			  );
     my @aliases_code = (
-			sub { $_[0] =~ s{^category_dash\.}{line_dash.}; }, # was used in radwege-orig, remove some day XXX
+			sub { $_[0] =~ s{^category_dash\.}{line_dash.}; }, # was used in radwege-orig, and is still used in streets-accurate-categorized..., remove some day XXX
 		       );
 
     my $get_val = sub {
@@ -21856,6 +21862,9 @@ sub handle_global_directives {
 	} else {
 	    my($key, $cat) = $directive =~ /^([^\.]+)\.([^\.]+)/;
 	    if (defined $key) {
+		if ($aliases_withcat{$key}) {
+		    $key = $aliases_withcat{$key};
+		}
 		if ($accept_modern_style{$key}) {
 		    no strict 'refs';
 		    ${"layer_category_".$key}{$abk}{$cat} = $get_val->($key, $vals);
