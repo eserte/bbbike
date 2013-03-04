@@ -48,7 +48,6 @@ if (-e $out && !$force) {
 
 my %net;
 my %name;
-my %cat;
 
 $s->init;
 while(1) {
@@ -75,37 +74,47 @@ while(1) {
     }
 }
 
-open(OUT, ">$out") or die "Writing to $out: $!";
+my %net2cat;
+my %cat;
+# Calculate %net2cat (the mapping line -> category)
+# Calculate %cat (existence hash of used categories)
+# Modify %name (prepend $count before name)
 while(my($k,$v) = each %net) {
-    my($c1,$c2) = split /;/, $k;
     my $count = $v;
     if (defined $logarithmic) {
 	$v = int(log($v)/log($logarithmic));
 	$v = 1 if ($v < 1);
     }
-    print OUT "$count: $name{$k}" . "\t" . $v . " " . $c1 . " " . $c2 . "\n";
+    $net2cat{$k} = $v;
+    $name{$k} = "$count: $name{$k}";
     $cat{$v}++;
 }
-close OUT;
 
-my $abk = '$abk';
+{
+    open my $OUT, ">", $out
+	or die "Writing to $out failed: $!";
 
-(my $desc = $out) =~ s/\.bbd$/.desc/;
-open(DESC, ">$desc") or die "Writing to $desc: $!";
-while(my($k,$v) = each %cat) {
-    my $cat = "$abk-$k";
-    print DESC "\$line_width{\"$cat\"} = [";
-    if ($do_scale_widths) {
-	print DESC join(",", map { my $w = int($k*$scale_widths[$_]);
-				   $w == 0 ? 1 : $w;
-			       } (0..5));
-    } else {
-	print DESC join(",", map { $k } (0..5));
+    for my $k (sort { $a <=> $b } keys %cat) {
+	print $OUT "#: line_width.$k: ";
+	if ($do_scale_widths) {
+	    print $OUT join(",", map { my $w = int($k*$scale_widths[$_]);
+				       $w == 0 ? 1 : $w;
+			    } (0..5));
+	} else {
+	    print $OUT join(",", map { $k } (0..5));
+	}
+	print $OUT "\n";
     }
-    print DESC "];\n";
+    print $OUT "#: line_color: #000080\n";
+    print $OUT "#:\n"; # end of global directives
+
+    while(my($k,$v) = each %net) {
+	my($c1,$c2) = split /;/, $k;
+	my $cat = $net2cat{$k};
+	print $OUT $name{$k} . "\t" . $cat . " " . $c1 . " " . $c2 . "\n";
+    }
+    close $OUT;
 }
-print DESC "\$str_color{\"\$abk\"} = '#000080';\n";
-close DESC;
 
 __END__
 
