@@ -110,7 +110,7 @@ sub add_button {
 
     my %prog_is_available;
     if ($^O ne 'MSWin32') {
-	for my $prog (qw(xv display xzgv eog gimp)) {
+	for my $prog (qw(xv gm display xzgv eog gimp)) {
 	    $prog_is_available{$prog} = is_in_path($prog);
 	}
     }
@@ -172,6 +172,14 @@ sub add_button {
 		   ]
 		 : ()
 		),
+		($prog_is_available{"gm"}
+		 ? [Radiobutton => "GraphicsMagick (gm display)",
+		    -variable => \$viewer,
+		    -value => "gm display",
+		    -command => sub { viewer_change() },
+		   ]
+		 : ()
+		),
 		($prog_is_available{"xzgv"}
 		 ? [Radiobutton => "xzgv",
 		    -variable => \$viewer,
@@ -226,6 +234,13 @@ sub add_button {
 		  ? [Radiobutton => 'ImageMagick (display)',
 		     -variable => \$original_image_viewer,
 		     -value => 'display',
+		    ]
+		  : ()
+		 ),
+		 ($prog_is_available{'gm'}
+		  ? [Radiobutton => 'GraphicsMagick (gm display)',
+		     -variable => \$original_image_viewer,
+		     -value => 'gm display',
 		    ]
 		  : ()
 		 ),
@@ -674,6 +689,16 @@ sub show_image_viewer {
 		push @display_args, "-resize", "33%"; # XXX is this third or image-third?
 	    }
 	    viewer_display(@display_args, $abs_file);
+	} elsif ($use_viewer eq 'gm display') {
+	    my @display_args;
+	    if ($geometry eq 'maxpect') {
+		push @display_args, graphicsmagick_maxpect_args();
+	    } elsif ($geometry eq 'half') {
+		push @display_args, "-geometry", "50%"; # XXX is this half or image-half?
+	    } elsif ($geometry eq 'third') {
+		push @display_args, "-geometry", "33%"; # XXX is this third or image-third?
+	    }
+	    viewer_gm_display(@display_args, $abs_file);
 	} elsif ($use_viewer eq 'xzgv') {
 	    my @xzgv_args;
 	    if ($geometry eq 'maxpect') {
@@ -725,6 +750,13 @@ sub viewer_display {
     double_forked_exec @cmd;
 }
 
+sub viewer_gm_display {
+    my(@args) = @_;
+    my @cmd = ("gm", "display", @args);
+    main::status_message("@cmd", "info");
+    double_forked_exec @cmd;
+}
+
 sub viewer_eog {
     my(@args) = @_;
     my @cmd = ("eog", @args);
@@ -750,6 +782,8 @@ sub orig_viewer {
 	viewer_xzgv('--zoom', '--zoom-reduce-only', '--fullscreen', @_);
     } elsif ($use_original_image_viewer eq 'display') {
 	viewer_display(imagemagick_maxpect_args(), @_);
+    } elsif ($use_original_image_viewer eq 'gm display') {
+	viewer_gm_display(graphicsmagick_maxpect_args(), @_);
     } elsif ($use_original_image_viewer eq 'xv') {
 	viewer_xv('-maxpect', @_);
     } else {
@@ -782,11 +816,17 @@ sub imagemagick_maxpect_args {
     ("-resize", $main::top->screenwidth . "x" . $main::top->screenheight);
 }
 
+sub graphicsmagick_maxpect_args {
+    ("-geometry", $main::top->screenwidth . "x" . $main::top->screenheight);
+}
+
 sub find_best_external_viewer {
     if (is_in_path("xzgv")) { # faster than ImageMagick, free
 	"xzgv";
     } elsif (is_in_path("xv")) { # also faster than ImageMagick
 	"xv";
+    } elsif (is_in_path("gm")) { # better maintained than ImageMagick (?)
+	"gm display";
     } elsif (is_in_path("display")) {
 	"display";
     } elsif (is_in_path("eog")) {
