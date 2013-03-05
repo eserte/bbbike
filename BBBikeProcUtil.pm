@@ -15,11 +15,11 @@ package BBBikeProcUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use Exporter 'import';
 use vars qw(@EXPORT_OK);
-@EXPORT_OK = qw(double_fork);
+@EXPORT_OK = qw(double_fork double_forked_exec);
 
 sub double_fork (&) {
     my($cb) = @_;
@@ -46,6 +46,14 @@ sub double_fork (&) {
 	_hard_exit(0);
     }
     waitpid $pid, 0;
+}
+
+sub double_forked_exec (@) {
+    my(@cmd_and_args) = @_;
+    double_fork {
+	{ exec @cmd_and_args }
+	_hard_die("@cmd_and_args failed: $!");
+    };
 }
 
 sub _hard_die {

@@ -12,10 +12,10 @@ use lib "$FindBin::RealBin/..";
 use File::Temp qw(tempfile);
 use Test::More;
 
-use BBBikeProcUtil qw(double_fork);
+use BBBikeProcUtil qw(double_fork double_forked_exec);
 use BBBikeUtil qw(is_in_path);
 
-plan tests => 5;
+plan tests => 7;
 
 double_fork { 1+1 };
 pass 'done double_fork call with simple subroutine';
@@ -45,11 +45,14 @@ pass 'done double_fork call with simple subroutine';
 }
 
 SKIP: {
-    skip "no 'true' command available", 1
+    skip "no 'true' command available", 2
 	if !is_in_path 'true';
 
     double_fork { exec 'true' };
     pass 'done double_fork call with exec';
+
+    double_forked_exec 'true';
+    pass 'done double_forked_exec call with "true" command';
 }
 
 double_fork {
@@ -59,6 +62,12 @@ double_fork {
     exec 'this_command_does_not_exist_really';
 };
 pass 'done double_fork call with non-existing command';
+
+{
+    local $SIG{__WARN__} = sub { };
+    double_forked_exec 'this_command_does_not_exist_really';
+    pass 'double_forked_exec with non-existing command';
+}
 
 {
     # Two notes:
