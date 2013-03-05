@@ -24,6 +24,8 @@ $VERSION = '0.03';
 
 use vars qw(%images);
 
+use BBBikeProcUtil qw(double_forked_exec);
+
 sub register {
     _create_images();
     $main::info_plugins{__PACKAGE__ . "_MerkaartorCmdline"} =
@@ -103,20 +105,14 @@ sub merkaartor_via_cmdline {
     my(%args) = @_;
     my $url = sprintf 'osm://<whatever>/load_and_zoom?left=%s&right=%s&top=%s&bottom=%s', # &select=node413602999
 	$args{px0}, $args{px1}, $args{py0}, $args{py1};
-    if (fork == 0) {
-	exec('merkaartor', $url);
-	die "Cannot start merkaartor $url: $!";
-    }
+    double_forked_exec 'merkaartor', $url;
 }
 
 sub josm_via_cmdline {
     my(%args) = @_;
     my $download_opt = sprintf '--download=%s,%s,%s,%s',
 	$args{py1}, $args{px0}, $args{py0}, $args{px1};
-    if (fork == 0) {
-	exec('josm', $download_opt);
-	die "Cannot start JOSM $download_opt: $!";
-    }
+    double_forked_exec 'josm', $download_opt;
 }
 
 sub merkaartor_url {
