@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2007,2008,2009,2011,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007,2008,2009,2011,2012,2013 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -15,8 +15,9 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $original_image_editor $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
-$VERSION = 1.25;
+$VERSION = 1.26;
 
+use BBBikeProcUtil qw(double_forked_exec);
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
 use File::Basename qw(dirname);
 
@@ -707,52 +708,28 @@ sub viewer_xv {
     my(@args) = @_;
     my @cmd = ("xv", @args);
     main::status_message("@cmd", "info");
-    my $pid = fork;
-    die if !defined $pid;
-    if ($pid == 0) {
-	exec @cmd;
-	warn $!;
-	CORE::exit(1);
-    }
+    double_forked_exec @cmd;
 }
 
 sub viewer_xzgv {
     my(@args) = @_;
     my @cmd = ("xzgv", "--exif-orient", @args);
     main::status_message("@cmd", "info");
-    my $pid = fork;
-    die if !defined $pid;
-    if ($pid == 0) {
-	exec @cmd;
-	warn $!;
-	CORE::exit(1);
-    }
+    double_forked_exec @cmd;
 }
 
 sub viewer_display {
     my(@args) = @_;
     my @cmd = ("display", @args);
     main::status_message("@cmd", "info");
-    my $pid = fork;
-    die if !defined $pid;
-    if ($pid == 0) {
-	exec @cmd;
-	warn $!;
-	CORE::exit(1);
-    }
+    double_forked_exec @cmd;
 }
 
 sub viewer_eog {
     my(@args) = @_;
     my @cmd = ("eog", @args);
     main::status_message("@cmd", "info");
-    my $pid = fork;
-    die if !defined $pid;
-    if ($pid == 0) {
-	exec @cmd;
-	warn $!;
-	CORE::exit(1);
-    }
+    double_forked_exec @cmd;
 }
 
 sub viewer_browser {
