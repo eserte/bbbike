@@ -280,8 +280,22 @@ sub BBBikeLazy::bbbikelazy_remove_data {
     }
 
     if (!defined $lazy_master) {
-	warn "XXX master deleted, disable BBBikeLazy mode!!!";
-	$BBBikeLazy::mode = 0;
+      FIND_ANOTHER_MASTER: {
+	  for my $abk (keys %lazy_str) {
+	      if (my $s = $lazy_str{$abk}) {
+		  $lazy_master = $s;
+		  last FIND_ANOTHER_MASTER;
+	      }
+	  }
+	  for my $abk (keys %lazy_p) {
+	      if (my $s = $lazy_p{$abk}) {
+		  $lazy_master = $s;
+		  last FIND_ANOTHER_MASTER;
+	      }
+	  }
+	  # no layers left, disable BBBikeLazy mode
+	  $BBBikeLazy::mode = 0;
+	}
     }
     if (!keys %lazy_p && !keys %lazy_str) {
 	$BBBikeLazy::mode = 0;
