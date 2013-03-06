@@ -1,7 +1,3 @@
-#
-# $Id: Makefile,v 1.50 2005/07/22 23:35:01 eserte Exp $
-#
-
 # Prerequisites:
 #   perl5.003-Dist mit Gtk bundled (nur für babybike, nicht for tkbabybike)
 #   pppd auf iPAQ bereit gemacht (siehe WiKi)
@@ -400,7 +396,7 @@ data_koethen:
 	env BBBIKE_DATADIR=${DATADIR} ${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_KOETHEN) -scope wideregion -strdata qualitaet_l -o - | gzip -9f > data_koethen/qualitaet_l.gz
 
 data_koethen_gpstracks:
-	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_KOETHEN)  -strdata ${BBBIKEDIR}/tmp/streets.bbd,${BBBIKEDIR}/tmp/streets-bahn.bbd,${BBBIKEDIR}/misc/mps_examples/streets.bbd -o - | gzip -9f > data_koethen/gpstracks.gz
+	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_KOETHEN)  -strdata ${BBBIKEDIR}/tmp/streets.bbd,${BBBIKEDIR}/misc/mps_examples/streets.bbd -o - | gzip -9f > data_koethen/gpstracks.gz
 
 image_koethen:
 	env BBBIKE_DATADIR=data_koethen ../miscsrc/bbbikedraw.pl -geometry 750x* -ipaq -nooutline\
@@ -447,7 +443,7 @@ data_uckermark:
 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata ${DATADIR}/qualitaet_l -o - | gzip -9f > data_uckermark/qualitaet_l.gz
 
 data_uckermark_gpstracks:
-	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK)  -strdata ${BBBIKEDIR}/tmp/streets.bbd,${BBBIKEDIR}/tmp/streets-bahn.bbd,${BBBIKEDIR}/misc/mps_examples/streets.bbd -o - | gzip -9f > data_uckermark/gpstracks.gz
+	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK)  -strdata ${BBBIKEDIR}/tmp/streets.bbd,${BBBIKEDIR}/misc/mps_examples/streets.bbd -o - | gzip -9f > data_uckermark/gpstracks.gz
 
 
 image_uckermark:
@@ -517,7 +513,7 @@ ipaq-generate-cache-uckermark:
 # 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION}) -scope wideregion -strdata ${DATADIR}/qualitaet_l -o - | gzip -9f > data_${region}/qualitaet_l.gz
 
 # data_${region}_gpstracks:
-# 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION})  -strdata ${BBBIKEDIR}/tmp/streets.bbd,${BBBIKEDIR}/tmp/streets-bahn.bbd,${BBBIKEDIR}/misc/mps_examples/streets.bbd -o - | gzip -9f > data_${region}/gpstracks.gz
+# 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION})  -strdata ${BBBIKEDIR}/tmp/streets.bbd,${BBBIKEDIR}/misc/mps_examples/streets.bbd -o - | gzip -9f > data_${region}/gpstracks.gz
 
 
 # image_${region}:
