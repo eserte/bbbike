@@ -43,7 +43,13 @@ use vars qw($PEDES_MS);
 $PEDES_MS = kmh2ms(5);
 
 use vars qw($data_source);
-$data_source = "osm";
+$data_source = "vbb";
+
+my $bbbike_root = bbbike_root;
+
+my $openvbb_data_url = 'http://datenfragen.de/openvbb/GTFS_VBB_Okt2012/stops.txt';
+my $openvbb_local_file = "$bbbike_root/tmp/GTFS_VBB_Okt2012_stops.txt";
+my $openvbb_bbd_file = "$bbbike_root/tmp/vbb.bbd";
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -152,6 +158,7 @@ sub choose {
     my $goal  = $main::search_route_points[-1]->[main::SRP_COORD()];
 
     my $ms = get_data_object();
+    return if !$ms;
 
     my $t = $main::top->Toplevel(-title => 'Fahrinfo');
     $t->transient($main::top) if $main::transient;
@@ -354,22 +361,78 @@ sub get_data_object {
 				  "$osm_data_dir/sbahnhof",
 				 );
     } elsif ($data_source eq 'vbb') {
-	# Create with
-	#    cd .../bbbike-aux/misc
-	#    ./vbb-stops-to-bbd.pl > ~/src/bbbike/tmp/vbb.bbd
-	# XXX Maybe download and convert automatically from
-	#     http://datenfragen.de/openvbb/GTFS_VBB_Okt2012/stops.txt
-	my $file = "$main::tmpdir/vbb.bbd";
-	if (-r $file) {
-	    $obj = Strassen->new($file);
-	} else {
-	    main::status_message(Mfmt("Die Datei %s konnte nicht gefunden werden. Keine Haltestellensuche möglich mit der Datenquelle 'vbb'.", $file), "die");
+	if (!_provide_vbb_stops()) {
+	    return;
 	}
+	$obj = Strassen->new($openvbb_bbd_file);
     } else {
 	main::status_message("Unhandled data source '$data_source'", 'die');
     }
 
     $obj;
+}
+
+sub _provide_vbb_stops {
+    if (-s $openvbb_bbd_file) {
+	return 1;
+    }
+
+    if ($main::top->messageBox(
+			       -icon => "question",
+			       -message => "Download $openvbb_data_url?", # XXX Msg!
+			       -type => "YesNo"
+			      ) !~ /yes/i) {
+	main::status_message("Not possible to use FahrinfoQuery with this data_source", "error"); # XXX Msg!
+	return;
+    }
+
+    if (!eval { _prereq_check_vbb_stops() }) {
+	main::status_message("Prerequisites missing. Error message is: $@. Maybe you should install these perl modules?", "error");
+	return;
+    }
+
+    if (!eval { _download_vbb_stops() }) {
+	main::status_message("Downloading failed. Error message is: $@", "error");
+	return;
+    }
+
+    if (!eval { _convert_vbb_stops() }) {
+	main::status_message("Conversion failed. Error message is: $@", "error");
+	return;
+    }
+
+    1;
+}
+
+sub _prereq_check_vbb_stops {
+    require LWP::UserAgent; # for download
+    require Text::CSV_XS; # for conversion, see vbb-stops-to-bbd.pl
+    1;
+}
+
+sub _download_vbb_stops {
+    require LWP::UserAgent;
+    require BBBikeHeavy;
+    my $ua = BBBikeHeavy::get_uncached_user_agent();
+    die "Can't get default user agent" if !$ua;
+    my $resp = $ua->get($openvbb_data_url, ':content_file' => "$openvbb_local_file~");
+    if (!$resp->is_success || !-s "$openvbb_local_file~") {
+	die "Failed to download $openvbb_data_url: " . $resp->status_line;
+    }
+    rename "$openvbb_local_file~", $openvbb_local_file
+	or die "Failed to rename $openvbb_local_file~ to $openvbb_local_file: $!";
+    1;
+}
+
+sub _convert_vbb_stops {
+    my $script = bbbike_root . '/miscsrc/vbb-stops-to-bbd.pl';
+    system("$script $openvbb_local_file > $openvbb_bbd_file~");
+    if ($? || !-s "$openvbb_bbd_file~") {
+	die "Failure to convert $openvbb_local_file to $openvbb_bbd_file~";
+    }
+    rename "$openvbb_bbd_file~", $openvbb_bbd_file
+	or die "Failed to rename $openvbb_bbd_file~ to $openvbb_bbd_file: $!";
+    1;
 }
 
 1;
