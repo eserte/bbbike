@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: cmdbbbike,v 4.12 2006/09/21 18:33:15 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -33,11 +32,12 @@ sub parse_options {
 	     "dumproute",
 	     "dumppath",
 	     "dumpbbd",
+	     "yaml",
 	    )) {
 	    die <<EOF;
 Usage: $0 [-vehicle vehicle] [-[no]cache] [-[no]xs]
         [-algorithm ...] [-scope ...] [-v]
-	[-dumproute | -dumppath | -dumpbbd] start goal
+	[-dumproute | -dumppath | -dumpbbd] [-yaml] start goal
 
 start and goal may be prefixed with \"city:\" to force cities instead of
 streets. start and goal may also be "standard" coordinates instead.
@@ -73,6 +73,7 @@ sub cmdline_input {
     if (        $o{dumproute}) { $self->{DumpRoute} = 1 }
     if (        $o{dumppath}) { $self->{DumpPath} = 1 }
     if (        $o{dumpbbd}) { $self->{DumpBBD} = 1 }
+    if (        $o{yaml}) { $self->{YAML} = 1 }
     
     if (@ARGV < 2) {
 	print "Zu wenige Argumente: mindestens Start- und Zielstraße angeben!\n";
@@ -147,15 +148,25 @@ sub cmdline_output {
     print "\n";
 
     if ($self->{DumpRoute}) {
-	require Data::Dumper;
-	print Data::Dumper->new([$r->RouteInfo],[])->Indent(1)->Useqq(1)->Dump;
+	$self->_dump_anything($r->RouteInfo);
     } elsif ($self->{DumpPath}) {
-	require Data::Dumper;
-	print Data::Dumper->new([$r->Path],[])->Indent(1)->Useqq(1)->Dump;
+	$self->_dump_anything($r->Path);
     } else {
 	print
 	    join("\n", map { sprintf("%-40s %s", $_->{Street}, $_->{Whole}) }
 		 @{ $r->RouteInfo} ), "\n";
+    }
+}
+
+# As DD or YAML
+sub _dump_anything {
+    my($self, $data) = @_;
+    if ($self->{YAML}) {
+	require YAML::Syck;
+	print YAML::Syck::Dump($data);
+    } else {
+	require Data::Dumper;
+	print Data::Dumper->new([$data],[])->Indent(1)->Useqq(1)->Dump;
     }
 }
 
@@ -204,5 +215,23 @@ cmdbbbike - a very simple command line tool to BBBike
     cmdbbbike Startstr Zielstr
 
   ./cmdbbbike startstr zielstr -dumpbbd | ./miscsrc/bbd2mapservhtml.pl -local > /tmp/mapserver_route.html
+
+=head1 DESCRIPTION
+
+=head2 OPTIONS
+
+=over
+
+=item C<-dumproute>
+
+Dump a route object, as a perl data structure, or as YAML if C<-yaml>
+is given.
+
+=item C<-dumppath>
+
+Dump an array of coordinates of the path, as a perl data structure, or
+as YAML if C<-yaml> is given.
+
+=back
 
 =cut
