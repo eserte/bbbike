@@ -23,7 +23,6 @@ use lib (
 
 use Cwd qw(realpath);
 use Getopt::Long;
-use List::Util qw(min);
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
 
@@ -34,14 +33,16 @@ use StrassenNextCheck;
 use constant ORG_MODE_HEADLINE_LENGTH => 77; # used for tag alignment
 
 my $with_dist = 1;
+my $dist_dbfile;
 my $centerc;
 my $center2c;
 GetOptions(
 	   "with-dist!" => \$with_dist,
+	   "dist-dbfile=s" => \$dist_dbfile,
 	   "centerc=s" => \$centerc,
 	   "center2c=s" => \$center2c,
 	  )
-    or die "usage: $0 [--nowith-dist] [--centerc X,Y [--center2c X,Y]] bbdfile ...";
+    or die "usage: $0 [--nowith-dist] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] bbdfile ...";
 
 if ($with_dist && !$centerc) {
     my $config_file = "$ENV{HOME}/.bbbike/config";
@@ -90,10 +91,10 @@ for my $file (@files) {
 		     my $dist_tag = '';
 		     my $any_dist; # either one way or two way dist in meters
 		     if ($centerc) {
-			 my $dist_m = min map { Strassen::Util::strecke_s($_, $centerc) } @{ $r->[Strassen::COORDS] };
+			 my $dist_m = _get_dist($centerc, $r->[Strassen::COORDS]);
 			 $dist_tag = ":" . int_round($dist_m/1000) . "km:";
 			 if ($center2c) {
-			     my $dist2_m = min map {Strassen::Util::strecke_s($_, $center2c) } @{ $r->[Strassen::COORDS] }; # XXX hmmm, using min() for both center*c is not correct, but well...
+			     my $dist2_m = _get_dist($center2c, $r->[Strassen::COORDS]);
 			     $dist2_m += $dist_m;
 			     $dist_tag .= int_round($dist2_m/1000) . "km:";
 			     $any_dist = $dist2_m;
@@ -173,6 +174,47 @@ print <<'EOF';
 # End:
 EOF
 
+sub _get_dist {
+    my($p1, $p2s) = @_;
+    my $inacc_hash = $dist_dbfile ? _get_innaccessible_points() : {};
+    my($min_dist, $min_p);
+    for my $this_p (@$p2s) {
+	next if $inacc_hash->{$this_p};
+	my $this_dist = Strassen::Util::strecke_s($p1, $this_p);
+	if (!$min_dist || $min_dist > $this_dist) {
+	    $min_dist = $this_dist;
+	    $min_p    = $this_p;
+	}
+    }
+    if (!$dist_dbfile) {
+	return $min_dist;
+    }
+
+    # $min_p is only an approximation for the nearest point from $p1
+    my $dist_db = _get_distdb();
+    my $dist = eval { $dist_db->get_dist($p1, $min_p) };
+    if ($@) {
+	die "Failed to get distance between $p1 and $min_p";
+    }
+    $dist;
+}
+
+sub _get_innaccessible_points {
+    our $inacc_hash;
+    return $inacc_hash if $inacc_hash;
+
+    require Strassen::Core;
+    my $s = Strassen->new("inaccessible_landstrassen");
+    $inacc_hash = $s->get_hashref;
+}
+
+sub _get_distdb {
+    our $dist_db;
+    return $dist_db if $dist_db;
+    require DistDB;
+    $dist_db = DistDB->new($dist_dbfile);
+}
+
 __END__
 
 =head1 NAME
@@ -210,6 +252,16 @@ fragezeichen record.
 =item C<--nowith-dist>
 
 Disable the generation of distance tags.
+
+=item C<--dist-dbfile >I</path/to/dist.db>
+
+Specify a F<dist.db> for use with L<DistDB>. Using this option
+automatically enables exact distance calculation.
+
+Note that it's possible that the route search might find no route for
+a coordinate pair (e.g. because of inaccessible points not covered by
+F<inaccessible_landstrassen>). In this case the script stops. So this
+option is not yet suitable for unattended batch jobs.
 
 =item C<--centerc I<x,y>>
 
