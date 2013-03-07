@@ -231,19 +231,20 @@ sub open_file {
     my($self, %args) = @_;
 
     my $file = $self->{File};
+    my $fh;
     if ($self->{IsGzipped}) {
-	die "Can't execute zcat $file" if !open(FILE, "gzip -dc $file |");
+	die "Can't execute zcat $file" if !open($fh, "gzip -dc $file |");
     } else {
-	if (!open(FILE, $file)) {
+	if (!open($fh, $file)) {
 	    require Carp;
 	    Carp::confess("Can't open $file");
 	}
     }
     warn "Read Strassen file $file...\n" if ($VERBOSE && $VERBOSE > 1);
     $self->{Modtime} = (stat($file))[STAT_MODTIME];
-    binmode FILE;
+    binmode $fh;
 
-    \*FILE;
+    $fh;
 }
 
 sub read_data {
@@ -650,14 +651,14 @@ sub _write {
 	return 0;
     }
     my $mode = delete $args{mode};
-    if (open(COPY, "$mode $filename")) {
+    if (open(my $COPY, "$mode $filename")) {
 	my $global_dirs = $self->get_global_directives;
-	binmode COPY;
+	binmode $COPY;
 	if ($global_dirs->{encoding}) {
-	    binmode COPY, ":encoding(". $global_dirs->{encoding}->[0] . ")";
+	    binmode $COPY, ":encoding(". $global_dirs->{encoding}->[0] . ")";
 	}
-	print COPY $self->as_string(%args);
-	close COPY;
+	print $COPY $self->as_string(%args);
+	close $COPY;
 	1;
     } else {
 	warn "Can't write/append to $filename: $!" if $VERBOSE;
