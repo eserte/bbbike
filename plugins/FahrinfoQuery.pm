@@ -52,6 +52,10 @@ my $openvbb_local_file = "$bbbike_root/tmp/GTFS_VBB_Okt2012_stops.txt";
 my $openvbb_bbd_file = "$bbbike_root/tmp/vbb.bbd";
 
 sub register {
+    # XXX (noch) keine Prüfung auf city==Berlin, da die Daten auch mit
+    # anderen Orten im VBB-Bereich funktionieren könnten, z.B.
+    # Frankfurt/Oder
+
     my $pkg = __PACKAGE__;
     $BBBikePlugin::plugins{$pkg} = $pkg;
     _create_image();

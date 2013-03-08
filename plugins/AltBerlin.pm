@@ -57,14 +57,20 @@ use vars qw(%nr_to_year);
 );
 
 sub register {
-    _create_image();
-    $main::info_plugins{__PACKAGE__ . ""} =
-	{ name => "Alt-Berlin (1946)",
-	  callback => sub { altberlin(@_, stadtplannr => 10) },
-	  #callback_3_std => sub { altberlin_url(@_) },
-	  callback_3 => sub { show_all_urls_menu(@_) },
-	  icon => $icon,
-	};
+    my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
+    if ($is_berlin) {
+	_create_image();
+	$main::info_plugins{__PACKAGE__ . ""} =
+	    { name => "Alt-Berlin (1946)",
+	      callback => sub { altberlin(@_, stadtplannr => 10) },
+	      #callback_3_std => sub { altberlin_url(@_) },
+	      callback_3 => sub { show_all_urls_menu(@_) },
+	      icon => $icon,
+	    };
+    } else {
+	main::status_message("Das AltBerlin-Plugin ist nur für Berlin verfübar.", "err")
+		if !$main::booting;
+    }
 }
 
 sub _create_image {

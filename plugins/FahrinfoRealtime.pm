@@ -31,13 +31,19 @@ sub M ($) { $_[0] } # XXX
 sub Mfmt { sprintf M(shift), @_ } # XXX
 
 sub register {
-    _create_image();
-    $main::info_plugins{__PACKAGE__ . ""} =
-	{ name => "Ist-Abfahrtszeiten ÖPNV",
-	  callback => sub { show(@_) },
-	  visibility => sub { visibility(@_) },
-	  icon => $icon,
-	};
+    my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
+    if ($is_berlin) {
+	_create_image();
+	$main::info_plugins{__PACKAGE__ . ""} =
+	    { name => "Ist-Abfahrtszeiten ÖPNV",
+	      callback => sub { show(@_) },
+	      visibility => sub { visibility(@_) },
+	      icon => $icon,
+	    };
+    } else {
+	main::status_message("Das FahrinfoRealtime-Plugin ist nur für Berlin verfübar.", "err")
+		if !$main::booting;
+    }
 }
 
 sub _create_image {
