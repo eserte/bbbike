@@ -2,14 +2,77 @@ BBBike RELEASE 3.18 (XXXX-XX-XX)
 
 bbbike (ptk)
 - "modern temp blockings"
+- correct rendering of subway stations under construction
+- render support for tunneled waterways (e.g. Südpanke)
+- direct garmin gps export is using routepoints instead of waypoints
+- more map signatures (e.g. "night" signature, cemetery religion
+  symbols, ortsschild, zebrastreifen, culdesac...)
+- more accelerator keys
 
 Data
-- many updates, currently more than 10500 streets in Berlin
+- many updates, currently more than 11500 streets in Berlin (more than
+  3000 new streets since last release, now Berlin is almost complete!)
 - new category NH for streets (highway=tertiary) is now activated
+- seasonal ferries are marked like this (with entries in temp
+  blockings)
+- a public fragezeichen list page is maintained
+- more experimental winter optimization work (but currently disabled)
+
+CGI
+- new application based on the leaflet map API (bbbikeleaflet.cgi)
+- m.bbbike.de, a slightly mobile-optimized version of bbbike.de
+- changes available maps in bbbikegooglemap.cgi (removed T@H, added
+  BBBike/Mapnik)
+- support for "umdrehen"/"turn around" (Route::Descr)
+- PDFs are now created using cairo and pango libraries
+  (Route::PDF::Cairo, BBBikeDraw::PDFCairo)
+- kml files are now cached (for performance)
+- mapserver: using now version 5.6.5
+- cgi may run also as a plack application (bbbike.psgi)
+- added json as an output format for API calls
+- link to gpsies.com
+- "use ferry" preference
+- fixes for MSIE 8
+
+BBBike@World integration
+- added script for downloading from other city data from bbbike.org
+- bbbike_chooser may use the new bbbike.org_download script
+
+Modules
+- Update.pm: removed rsync capability
+- Strassen::KML improvements (both parsing and generation)
 
 Plugins
+- plugins are now organized in "plugins" subdirectory
+- new plugins (previously only available from git):
+  - AltBerlin (link in info window to alt-berlin.info)
+  - Kauperts (link in info window to kauperts.de)
+  - Merkaartor (start merkaartor or josm)
+  - MultiMap (links to many map providers)
 - geocoding plugin supports now the new Google v3 API
   (which does not need an API key anymore)
+- BBBikeViewImages plugin improvements
+  - exif viewer (needs external program exiftool)
+  - Control-e (edit) binding for starting gimp, and many other key
+    bindings
+  - support for GraphicsMagick and Eye of GNOME
+- new plugins connecting to Flickr and Panoramio APIs (only in git)
+
+Install
+- Windows package is now using a modern Strawberry Perl version
+  (5.14.x)
+
+Documentation
+- the TODO.pod file was out-of-date and finally removed
+
+Misc
+- updates to bbd2osm and osm2bbd converters (only in git)
+- updates to mkgmap style (only in git)
+- geocode_images improvements (only in git)
+- experimental support for multi-page PDFs
+
+Tests
+- regular nightly smokes
 
 ----------------------------------------------------------------------
 
