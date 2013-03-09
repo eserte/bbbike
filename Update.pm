@@ -29,9 +29,6 @@ sub update_http {
     my(%modified) = %{$args{-modified}};
     my $ua;
     eval {
-## Be conservative: sieperl comes only with an ancient libwww (5.51 or so)
-# 	require LWP;
-# 	LWP->VERSION(5.802); # decoded_content
 	require LWP::UserAgent;
 	$main::public_test = $main::public_test; # peacify -w
 	$main::os = $main::os; # peacify -w
@@ -45,10 +42,6 @@ sub update_http {
 	$ua = BBBikeHeavy::get_uncached_user_agent();
 	die "Can't get default user agent" if !$ua;
 	$ua->timeout(180);
-## sieperl does not have compress::zlib, also decoded_content is not available
-# 	if (eval { require Compress::Zlib; 1 }) {
-# 	    $ua->default_headers->push_header('Accept-Encoding' => 'gzip');
-# 	}
     };
     if ($@ || !$ua) {
 	undef $ua;
