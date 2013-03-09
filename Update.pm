@@ -34,9 +34,12 @@ sub update_http {
 # 	LWP->VERSION(5.802); # decoded_content
 	require LWP::UserAgent;
 	$main::public_test = $main::public_test; # peacify -w
+	$main::os = $main::os; # peacify -w
 	if ($main::public_test) {
-	    warn "Force using Http.pm for -public\n";
-	    die;
+	    if ($main::os ne 'win') {
+		warn "Force using Http.pm for -public on non-Windows systems\n";
+		die;
+	    }
 	}
 	require BBBikeHeavy;
 	$ua = BBBikeHeavy::get_uncached_user_agent();
