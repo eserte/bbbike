@@ -4,12 +4,13 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
+Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 Helmerdingstr.: Bauarbeiten	q3::inwork 14465,11195 14442,11101
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q2::inwork; 13366,11651 13295,11792
 Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 12740,12128 12575,12223
-Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775
 Alt-Stralau: Asphaltierungsarbeiten unter der Brücke, Fahrbahn gesperrt, Gehweg passierbar	q3::inwork 14652,10201 14558,10264
+Markgrafendamm - Modersohnstr.: Bauarbeiten, Fahrbahn gesperrt, enger Gehweg kann benutzt werden	q3::inwork 14672,10760 14564,10792
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
@@ -28,8 +29,8 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
-Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10489,11405
-Neue Grünstr.: Fahrbahn gesperrt wegen Bauarbeiten	q4::inwork 10389,11390 10446,11470
+Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
+Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
@@ -481,7 +482,7 @@ Grazer Platz: Fußgänger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 Achenbachpromenade: Fußgänger, Radfahren erlaubt	q1 8763,8780 8748,8587 8722,8527 8715,8459
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9296,13397
-Fontanestr.: zwei Schwellen, können umfahren werden	q1 18240,6845 18254,6679
+Fontanestr.: zwei Schwellen, können evtl. umfahren werden	q1 18240,6845 18254,6679
 Triniusstr.: zwei Schwellen, können umfahren werden	q1 18417,6775 18339,6660
 Kiautschoustr.: Fußgänger, Bordsteine	q3 6837,14848 6853,14854
 (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordsteine	q4 13493,11217 13513,11206 13503,11179 13479,11147
@@ -660,7 +661,7 @@ Don-Ugoletti-Platz - Regattastr.: Fußgänger, Bordsteine	q1 22449,1569 22478,1602
 Ede-und-Unku-Weg: Fußgänger, Radfahren erlaubt	q1 15140,11811 15122,11834 15121,11899
 Chiemseestr.: enge Straße	q1 22204,1496 22334,1553
 (Königsheideweg - Am Alten Fenn): eng	q3 17037,4794 17060,4848
-(Am Alten Fenn - Südostallee): teilweise recht eng, Anhänger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17366,5551
+(Am Alten Fenn - Südostallee): teilweise recht eng, Anhänger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17326,5463 17366,5551
 (Dämeritzstr. - Dämeritzsee): Radfahren verboten	q4 32512,2621 32558,2562
 (Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22017,5159 22046,5305 22043,5346
 Waldpromenade: eng	q2 23792,7861 23710,7940 23668,7967
@@ -1110,6 +1111,8 @@ Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
 (Rhinstr. - Am Mühlenberg): einige Fußgänger, Rampe	q1 18220,11710 18242,11793 18258,11827
 (Kolonie Sanssouci): einige Fußgänger	q1 16488,10381 16297,10636 16246,10641
 Müggelstr., Hausdurchfahrt: einige Fußgänger	q1 14837,11706 14856,11740
+(Bushaltenstelle und Straßenbahnwendestelle Schöneweide): ggfs. Gehwege benutzen	q4 17736,5441 17675,5521 17588,5573 17578,5566
+(Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1906,7 +1909,7 @@ Narzissenpfad: enge Straße	q0 -7387,14951 -7523,14969
 (Am Rosenanger - Am Sandkrug, Entenschnabel): stark abschüssig, eine 30cm-Stufe	q4; 3462,24702 3489,24659 3535,24626
 (Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3489,24659 3462,24702
 (Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7364,3193 7409,3331 7458,3451
-Verlängerte Schulzendorfer Str.: Fußgänger	q1 2155,22453 2060,22419 2011,22408 1874,22412 1827,22404 1659,22383 1583,22376 1524,22368 1468,22359 1411,22365 1266,22401 1094,22504 742,22666 695,22694 676,22667 598,22633 525,22614 439,22620 266,22584 240,22554
+Verlängerte Schulzendorfer Str.: Fußgänger	q1 2150,22464 2015,22435 1834,22421 1583,22376 1505,22368 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 Dennewitzplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 7906,10098 7866,9918
 Eichborndamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Richterstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886
@@ -2002,7 +2005,6 @@ Ahornallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1589,1
 Lindenallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1429,11523 1403,11428
 Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1753,20191 1907,20265
 Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
-Am Treptower Park: entgegen der Richtung auf dem Parkstreifen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 May-Ayim-Ufer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 13206,10651 13077,10747
 Atzpodienstr. (Umgehung auf Gehweg möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 16485,12384 16509,12518 16564,12513
 Halenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 2297,9827 2166,10020 2121,10089 2030,10253 1988,10328 1951,10435

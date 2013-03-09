@@ -187,9 +187,10 @@ Dittersbacher Weg	1 7865,3344 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
-#: last_checked: 2012-07-19
-#: next_check: 2013-04-01
-Nalepastr. am Rundfunkgebäude	2 17076,8443 17059,8097
+#: XXX_osm: in osm: access=private statt access=no, aber das ist wohl falsch
+#: last_checked: 2013-03-09
+#: next_check: 2013-07-09
+Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653 22314,4604
 Kietzer Str.	1s:q3 22372,4496 22383,4470
 # REMOVED (hier keine Einbahnstraße, nur eine Sackgasse) --- Ontarioseestr.	1 18552,10135 18577,10023
@@ -1188,7 +1189,6 @@ Lindenallee	1s:q3 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s:q1 49779,90206 49841,90479
 Alt-Tegel	1s:q3 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s:q3 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
-Am Treptower Park: entgegen der Richtung auf dem Parkstreifen	1s:q1 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 May-Ayim-Ufer	1s:q1 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11584,452
@@ -1841,7 +1841,13 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke (lichte Breite 100cm)	BNP:3::trailer=10 17459,5634
+#: note: immer offen?
+Schranke (offen)	BNP:0 17070,6115
 #: by: Stefan Klinkusch vvv
+Schranke	BNP:3::trailer=10 -6681,9964
+#: note: Durchfahrt durch einen unglücklich platzierten Schildermast und einen Baum sehr eng
+Schranke, sehr eng	BNP:10::trailer=20 -8274,10938
 Schranke	BNP:3::trailer=10 -6924,13570
 Drängelgitter	BNP:3::trailer=10 -5118,8290
 Drängelgitter	BNP:3::trailer=10 -5094,8391
@@ -2237,7 +2243,7 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2013-01-08
+#: last_checked: 2013-03-08
 #: next_check: 2013-06-01
 #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig
 Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
@@ -2260,7 +2266,7 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-02-25
+#: last_checked: 2013-03-08
 #: next_check: 2013-05-01
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
@@ -2317,7 +2323,7 @@ Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8376,8859 84
 #: next_check: 2013-01-01
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2013-02-05
+#: last_checked: 2013-03-08
 #: next_check: 2013-04-01
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
@@ -2426,7 +2432,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 # REMOVED --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
-#: last_checked: 2013-03-02
+#: last_checked: 2013-03-09
 #: next_check: 2013-03-15
 #: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel)
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518

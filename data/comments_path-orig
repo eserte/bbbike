@@ -134,8 +134,8 @@ Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,
 #: XXX_prog: RL:ja, GPS:jein (wegen spitzem Winkel) (evtl. ein Kandidat für comments_misc)
 #: note: und nicht der Asphaltstraße
 dem Schotterweg folgen	CP; 24210,37562 24193,37725 24208,37830
-Hauptstr.: bereits an der Gustav-Holzmann-Str. die Gehwegseite wechseln	PI; 16302,9865 16262,9925 16049,9749
-Hauptstr.: wegen Straßenbahntrasse zunächst auf der linken Gehwegseite weiterfahren und an der nächsten Ampel die Gehwegseite wechseln	CP; 16049,9749 16262,9925 16191,10035
+Hauptstr.: bereits an der Gustav-Holzmann-Str. die Gehwegseite wechseln	PI; 16302,9865 16261,9925 16049,9749
+Hauptstr.: wegen Straßenbahntrasse zunächst auf der linken Gehwegseite weiterfahren und an der nächsten Ampel die Gehwegseite wechseln	CP; 16049,9749 16261,9925 16187,10033
 Rollbergstr. - Karl-Marx-Str.: zunächst auf dem linken Gehweg bleiben, an der Ampel Anzengruberstr. die Straßenseite wechseln	CP; 12528,8205 12714,8249 12689,8289
 zunächst auf dem linken Gehweg des Weißenseer Wegs bleiben, nächste Möglichkeit (Bernhard-Bästlein-Str. oder Landsberger Allee) zur Querung benutzen	CP; 15363,13531 15436,13780 15354,13998
 #: note: längere Durchfahrt, deshalb ist CS; hier OK:
@@ -501,3 +501,7 @@ Treskowallee - Traberweg: bereits an der Ampel Hegemeisterweg auf den linken Geh
 Traberweg - Treskowallee: den linken Gehweg bis zur Kreuzung Ehrlichstr. benutzen	CP; 18490,8104 18570,8025 18657,8163 18676,8236
 Columbiadamm - Straße 645: ggfs. bereits an der Ampel Columbiadamm/Fontanestr. auf den linken Gehweg wechseln	PI; 11632,8302 11512,8278 11441,8280 11419,8077
 Am Tierpark [Nebenfahrbahn] - Am Tierpark: den linken Gehweg bis zur Ampel benutzen	CP; 18306,11402 18268,11391 18286,11275
+Salvador-Allende-Str. - Abzweig: bereits an der Ampel Fürstenwalder Damm auf den linken Gehweg wechseln	PI; 23402,5483 23403,5385 23428,5382
+Abzweig - Salvador-Allende-Str.: auf den linken Gehweg bis zur Ampel Friedrichshagener Str. fahren	CP; 23428,5382 23403,5385 23404,5325
+Michael-Brückner-Str. - Sterndamm: an der Ampel Sterndamm besteht vom Radweg aus keine Möglichkeit zum Linksabbiegen, deshalb bereits an der Ampel Hasselwerderstr. auf den linken Gehweg wechseln	PI; 17960,5511 17886,5587 17736,5441
+Rixdorfer Str. - KGA An der Südostallee: wegen einer Leitplanke zwischen Radweg und Fahrbahn bereits 40 Meter vorher auf die Fahrbahn wechseln	CP; 17156,6235 17056,6133 17070,6115

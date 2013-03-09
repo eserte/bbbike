@@ -161,7 +161,7 @@ Baerwaldstr.	1 10361,9755 10357,9813 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7865,3344 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
-Nalepastr. am Rundfunkgebäude	2 17076,8443 17059,8097
+Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653 22314,4604
 Kietzer Str.	1s 22372,4496 22383,4470
 Ontarioseestr.	1 18577,10023 18408,10041
@@ -900,7 +900,6 @@ Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
 Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
-Am Treptower Park: entgegen der Richtung auf dem Parkstreifen	1s 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 May-Ayim-Ufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11584,452
@@ -977,8 +976,8 @@ Straßenbahntrasse	3nocross::ignrte 15639,10469 15404,10633 15379,10651
 Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straßenbahntrasse	3::igndisp 15358,10562 15404,10633 15379,10651
 Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 15639,10469 15404,10633 15358,10562
 Straßenbahntrasse	3nocross::ignrte 16004,10204 16114,10123 16138,10105
-Hauptstr. -> Friedrich-Jacobs-Promenade: Straßenbahntrasse	3::igndisp 16138,10105 16114,10123 16063,10050
-Friedrich-Jacobs-Promenade -> Hauptstr.: Straßenbahntrasse	3::igndisp 16063,10050 16114,10123 16004,10204
+Hauptstr. -> Friedrich-Jacobs-Promenade: Straßenbahntrasse	3::igndisp 16138,10105 16114,10123 16066,10054
+Friedrich-Jacobs-Promenade -> Hauptstr.: Straßenbahntrasse	3::igndisp 16066,10054 16114,10123 16004,10204
 Grünstreifen	3nocross::ignrte 13644,14915 13744,15018 13823,15111
 Kniprodestr. -> Altenescher Weg: Grünstreifen	3::igndisp 13823,15111 13744,15018 13856,14944
 Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13856,14944 13744,15018 13644,14915
@@ -1901,8 +1900,6 @@ Straßenbahntrasse	3nocross::ignrte 22771,16194 22974,16139 23159,16086
 Landsberger Chaussee -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 23159,16086 22974,16139 22961,16077
 Ludwigsfelder Str. -> Landsberger Chaussee: Straßenbahntrasse	3::igndisp 22961,16077 22974,16139 22771,16194
 Mittelstreifen	3nocross::ignrte 23404,5325 23403,5385 23402,5483
-Salvador-Allende-Str. [Abzweig] -> Salvador-Allende-Str.: Mittelstreifen	3::igndisp 23428,5382 23403,5385 23404,5325
-Salvador-Allende-Str. -> Salvador-Allende-Str. [Abzweig]: Mittelstreifen	3::igndisp 23402,5483 23403,5385 23428,5382
 Straßenbahntrasse	3nocross::ignrte 23660,5477 23728,5446 23822,5403 23851,5389
 Fürstenwalder Damm -> Ahornweg: Straßenbahntrasse	3::igndisp 23822,5403 23728,5446 23691,5368
 Ahornweg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23691,5368 23728,5446 23660,5477
@@ -2149,6 +2146,10 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke (lichte Breite 100cm)	BNP:3:33:trailer=10 17459,5634
+Schranke (offen)	BNP:0:-37 17070,6115
+Schranke	BNP:3:-242:trailer=10 -6681,9964
+Schranke, sehr eng	BNP:10:-52:trailer=20 -8274,10938
 Schranke	BNP:3:3:trailer=10 -6924,13570
 Drängelgitter	BNP:3:-156:trailer=10 -5118,8290
 Drängelgitter	BNP:3:-166:trailer=10 -5094,8391

@@ -92,7 +92,7 @@ Kreisverkehr	Roundabout 55743,-11726
 Kreisverkehr	Roundabout 18903,9244
 Kreisverkehr	Roundabout -11822,-1874
 #: by: Marita:
-(Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 344,22346 742,22666
+(Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 344,22346 670,22646
 Privatstraße der DB	CS 5710,7820 6275,7847
 Albrecht-Thaer-Weg: Privatstraße, Tore bei den Einfahrten	CS 3347,6460 3449,6863
 # REMOVED (nur auf der östlichen Seite ist ein Tor; deshalb ist es eigentlich unwahrscheinlich, dass hier geschlossen wird) ---  (Weg über das Sportgelände): evtl. nachts geschlossen	CS 13252,14179 13385,13992
@@ -905,7 +905,7 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 3077,22234
 	culdesac_pseudo 2319,22264
 	culdesac 2203,22749
-	culdesac_pseudo 2155,22453
+	culdesac_pseudo 2150,22464
 	culdesac_pseudo 3381,22273
 	culdesac_pseudo 5046,24000
 	culdesac_pseudo 4546,23930
@@ -1047,6 +1047,14 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac -6371,14461
 	culdesac -6332,14380
 	culdesac 7995,13537
+	culdesac_pseudo 17459,5634
+	culdesac 17592,5552
+	culdesac_pseudo 18326,5850
+	culdesac 18470,5600
+	culdesac 18695,5453
+	culdesac_pseudo 17416,5388
+	culdesac_pseudo 17297,5260
+	culdesac_pseudo 17266,5134
 #: section ^^^
 ######################################################################
 # busroute
@@ -1290,7 +1298,7 @@ Hintersee - Rieth: ehemalige Bahnstrecke	CS 66282,136950 66202,137084 66069,1373
 Tordurchfahrt	CS 9341,6163 9367,6160
 (Am Nuthetal - Wetzlarer Str.): Weg entlang der Straßenbahntrasse	CS -9544,-3913 -9531,-3917 -9461,-3879 -9440,-3872 -9391,-3864 -9328,-3871 -9276,-3891 -9240,-3912 -9217,-3897 -9186,-3853 -9157,-3842 -9134,-3851 -9114,-3846 -9064,-3866 -9047,-3889
 (Wetzlarer Str. - Stern-Center): Weg entlang der Schnellstraße	CS -8970,-3923 -8975,-3946 -8708,-4025 -8687,-4015 -8634,-4035 -8579,-4074 -8448,-4098 -8324,-4087 -8096,-4106 -8038,-4093
-# REMOVED (-> culdesac) --- An den Haselbüschen: Sackgasse, kein Durchgang zur Daumstr.	CS; -1273,15539 -1291,15580 -1402,15592
+# REMOVED (-> cul-de-sac) --- An den Haselbüschen: Sackgasse, kein Durchgang zur Daumstr.	CS; -1273,15539 -1291,15580 -1402,15592
 #: XXX_indoor: sollte das nach handicap_s wandern bzw. durch die Bordstein-Implementation behandelt werden?
 Pfähle und hohe Bordsteine	CP2 2211,4280 2254,4376
 Uferweg am Plötzensee	CS 5618,14981 5518,15236 5291,15424 5073,15619 5036,15615 5008,15592 5051,15508 5084,15415 5005,15213

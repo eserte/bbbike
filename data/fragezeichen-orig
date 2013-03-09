@@ -89,7 +89,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-02-22 vvv
+#: last_checked: 2013-03-08 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -97,7 +97,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2013-02-22
+#: last_checked: 2013-03-08
 #: next_check: 2013-06-01
 Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -176,8 +176,8 @@ Weg 1 im KGA Hochspannung: wird hier eine Lösung für die Treppe gefunden? Und di
 Karl-Marx-Str.: wann werden hier die Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560 13236,6489
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011)
-#: last_checked: 2011-10-21
-#: next_check: 2013-03-01
+#: last_checked: 2013-03-09
+#: next_check: 2013-06-09
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
@@ -191,7 +191,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
-#: last_checked: 2013-02-11
+#: last_checked: 2013-03-08
 #: next_check: 2013-09-01
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 #: last_checked: 2013-01-05
@@ -248,7 +248,8 @@ Wassersportallee: wird hier eine Fußgängerampel eingerichtet?	? 22506,1379 22488
 Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,4376
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00079726/26-Anlagen/01/DRS0047VK.pdf (Bebauungsplan 9 - 47)
-#: next_check: 2013-05-01
+#: last_checked: 2013-03-09
+#: next_check: 2013-07-09
 Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4086&options=4 vvv
@@ -377,7 +378,7 @@ Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2013-02-15
+#: last_checked: 2013-03-08
 #: next_check: 2013-06-01
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -388,10 +389,12 @@ Weg im Stadtgarten Moabit: Qualität? Nachts beleuchtet?	?::inwork 5708,14077 566
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv
-#: next_check: 2013-04-01 vvv
+#: last_checked: 2013-03-09 vvv
+#: next_check: 2013-08-09 vvv
 Wasserstr.: geplante Straße in Niederschöneweide	?::projected 17477,6031 17639,6227
 Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,6083 17900,6072
 #: next_check ^^^
+#: last_checked ^^^
 #: by: ^^^
 #: by: ^^^
 # 
@@ -890,7 +893,6 @@ Malchower Str.: wo sind hier die Bauarbeiten? Behinderungen für Radfahrer?	?::in
 # 
 Geißenweide - Blenheimstr.: gibt es für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
 westlicher Wuhlewanderweg: Qualität? Nachts beleuchtet? Ausschilderung?	? 22124,13606 22362,13865 22415,14151 22679,14450 22552,14777 22460,14820 22382,14908 22343,15115
-Weg durch die KGA An der Südostallee: kann man hier durchfahren? Schranken?	? 17094,6170 17083,6099 17736,5441
 Upstallweg - Richterstr.: existiert für Radfahrer eine Verbindung? Qualität?	? 9264,3874 9226,3870 9214,3922
 Bruno-Taut-Str. - Am Gartenstadtweg: existiert für Radfahrer eine Verbindung? Ausschilderung? Qualität? Nachts beleuchtet?	? 21783,668 21679,596
 Mauerweg - Schirpitzer Weg: existiert für Radfahrer eine Verbindung? Ausschilderung? Qualität? Nachts beleuchtet?	? 18608,232 18232,745
@@ -915,8 +917,6 @@ Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualitä
 # 
 # REMOVED (ein ähnlicher Weg am Stadion Buschallee ist nun eingezeichnet --- vielleicht wird hier mal ein paralleler Weg existieren?) --- Fauler See - Hansastr.: Qualität und Lage der Verbindung? Nachts beleuchtet?	? 15965,16482 15743,16689 15662,16656
 # 
-#: XXX ein Teil ist N, ein Teil wohl NN (der südliche)
-Oststr. - Südostallee: Qualität? Beleuchtung?	? 17455,5355 17416,5388 17479,5463
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/___tmp/tmp/45081036124679844/124679844/00052517/17-Anlagen/08/8_B-Planentwurf.pdf (Lageplan)
 #: XXX fehlt bei Berlin.coords.data PLZ=14195
@@ -2494,9 +2494,7 @@ Zufahrt von der Kettinger Str. zur Straße 433: Qualität?	? 10089,960 10035,1000 
 Zufahrt von der Kettinger Str. zur Straße 433: Qualität?	? 10067,905 10011,942 9950,985
 # 
 Elsa-Rendschmidt-Weg: Wieviele Stufen hat die Treppe zur Sarkauer Allee?	? -1574,11484 -1593,11501
-#: XXX berlinsis meint hierzu: "fester Waldweg, Q2" (falls er diesen Weg überhaupt meint)
-(Waldweg): Qualität? Führt hier die Route 6 entlang?	? 1859,21541 1610,21721 1556,22050 1588,22209 1524,22368 1415,22552 1476,22938 1559,23039 1534,23277 1382,23505 902,23844
-Führen hier die Routen 3 und 6 entlang?	? 905,24113 931,23965 902,23844
+Führt hier auch die Route 3 entlang?	? 873,24112 904,23964 875,23836
 # 
 #: XXX laut osm surface=paved, kein allgemeiner motorisierter Verkehr
 Glasow - Rotberg: Qualität?	? 13781,-6410 13788,-6462 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
@@ -3072,8 +3070,9 @@ Neuendorfer Str.: existieren Radspuren in der Neuendorfer Str., und wenn ja, von
 #: next_check: 2013-01-01
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
 # 
-#: last_checked: 2012-06-09 (an der Bergstr.)
-#: next_check: 2013-01-01
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=2867
+#: last_checked: 2013-03-06 (by Joachim Nottebaum)
+#: next_check: 2013-08-06
 Lauenburger Str.: wurde die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5860,6367 5803,6403
 Windthorststr.: Qualität der Verlängerung? Ausschilderung?	? 22552,11029 22554,11049 22490,11133 22469,11138
 # 
@@ -3126,6 +3125,7 @@ Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	?::inwork 11
 #: by: http://farm9.staticflickr.com/8020/7599711312_1407440291_c.jpg (noch in Bau)
 #: XXX bei osm bereits eingetragen, allerdings teilweise ohne Straßennamen (2013-02)
 Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3750,2285 3830,2285
+#: XXX bei osm mit Straßennamen eingetragen (2013-03) (living street)
 Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2335 3854,2332
 Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2383 3880,2382
 #: next_check ^^^
