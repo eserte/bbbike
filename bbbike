@@ -973,9 +973,6 @@ if (defined $init_scope) {
 if ($visual) {
     push(@extra_args, -visual => $visual);
 }
-if (defined $Plugin::brinfo{'xwindow_id'}) {
-    push(@extra_args, "-use" => $Plugin::brinfo{'xwindow_id'});
-}
 
 if ($Tk::VERSION < 803 || $Tk::VERSION >= 804.025) {
     eval { require Tk::UnderlineAll };
@@ -5696,53 +5693,48 @@ sub load_photos {
 }
 
 sub set_default_geometry {
-    if (defined $Plugin::brinfo{x_len} and
-	defined $Plugin::brinfo{y_len}) {
-	$top->geometry($Plugin::brinfo{x_len} . "x" . $Plugin::brinfo{y_len});
+    if ($geometry && !$open_maximized) {
+	@want_extends = parse_geometry_string($geometry);
+	if (!$want_extends[GEOMETRY_WIDTH] || !$want_extends[GEOMETRY_HEIGHT]) { # test on 0 or undef
+	    ($want_extends[GEOMETRY_WIDTH], $want_extends[GEOMETRY_HEIGHT]) =
+		($top->screenwidth, $top->screenheight);
+	}
+	if (!defined $want_extends[GEOMETRY_X] || !defined $want_extends[GEOMETRY_Y]) {
+	    ($want_extends[GEOMETRY_X], $want_extends[GEOMETRY_Y]) = (0, 0);
+	}
     } else {
-	if ($geometry && !$open_maximized) {
-	    @want_extends = parse_geometry_string($geometry);
-	    if (!$want_extends[GEOMETRY_WIDTH] || !$want_extends[GEOMETRY_HEIGHT]) { # test on 0 or undef
-		($want_extends[GEOMETRY_WIDTH], $want_extends[GEOMETRY_HEIGHT]) =
-		    ($top->screenwidth, $top->screenheight);
-	    }
-	    if (!defined $want_extends[GEOMETRY_X] || !defined $want_extends[GEOMETRY_Y]) {
-		($want_extends[GEOMETRY_X], $want_extends[GEOMETRY_Y]) = (0, 0);
-	    }
-	} else {
-	    @want_extends = (0, 0, $top->screenwidth, $top->screenheight);
-	}
-	if ($kde) {
-	    @max_extends = $kde->client_window_region();
-	} elsif ($os eq 'win') {
-	    @max_extends = Win32Util::client_window_region($top);
-	} elsif ($^O eq 'darwin') {
-	    @max_extends = MacOSXUtil::client_window_region($top);
-	} else {
-	    if (
-		# check for broken ->property on 64bit platforms
-		($Tk::VERSION >= 804.027501 || $Config{longsize} == 4) &&
-		$top->property("exists", "_NET_CURRENT_DESKTOP", "root") &&
-		$top->property("exists", "_NET_WORKAREA", "root")
-	       ) {
-		(undef, my $desktop) = $top->property("get", "_NET_CURRENT_DESKTOP", "root");
-		if (defined $desktop) {
-		    my @vals = ($top->property("get", "_NET_WORKAREA", "root"))[$desktop*4+1 .. $desktop*4+4];
-		    if (@vals && defined $vals[0]) {
-			@max_extends = @vals;
-		    }
-		}
-		#$max_extends[2]-=10; # XXX hmmm, does not need to be necessary on gnome/metacity
-		#$max_extends[3]-=24; # XXX "
-	    }
-	}
-	if (!@max_extends) {
-	    # XXX guess width/height of wm borders and title bar
-	    @max_extends = (0, 0, $top->screenwidth-10, $top->screenheight-24);
-	}
-
-	crop_geometry(\@want_extends, \@max_extends);
+	@want_extends = (0, 0, $top->screenwidth, $top->screenheight);
     }
+    if ($kde) {
+	@max_extends = $kde->client_window_region();
+    } elsif ($os eq 'win') {
+	@max_extends = Win32Util::client_window_region($top);
+    } elsif ($^O eq 'darwin') {
+	@max_extends = MacOSXUtil::client_window_region($top);
+    } else {
+	if (
+	    # check for broken ->property on 64bit platforms
+	    ($Tk::VERSION >= 804.027501 || $Config{longsize} == 4) &&
+	    $top->property("exists", "_NET_CURRENT_DESKTOP", "root") &&
+	    $top->property("exists", "_NET_WORKAREA", "root")
+	   ) {
+	    (undef, my $desktop) = $top->property("get", "_NET_CURRENT_DESKTOP", "root");
+	    if (defined $desktop) {
+		my @vals = ($top->property("get", "_NET_WORKAREA", "root"))[$desktop*4+1 .. $desktop*4+4];
+		if (@vals && defined $vals[0]) {
+		    @max_extends = @vals;
+		}
+	    }
+	    #$max_extends[2]-=10; # XXX hmmm, does not need to be necessary on gnome/metacity
+	    #$max_extends[3]-=24; # XXX "
+	}
+    }
+    if (!@max_extends) {
+	# XXX guess width/height of wm borders and title bar
+	@max_extends = (0, 0, $top->screenwidth-10, $top->screenheight-24);
+    }
+
+    crop_geometry(\@want_extends, \@max_extends);
 }
 
 
