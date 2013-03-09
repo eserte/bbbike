@@ -501,7 +501,7 @@ README.english: README.tpl BBBikeVar.pm
 EOF
 . $bbbike_html_rule . <<'EOF'
 
-doc/HOWTO_edit_bbbike_data.html: doc/HOWTO_edit_bbbike_data.sgml doc/Makefile.doc
+doc/HOWTO_edit_bbbike_data.html: doc/HOWTO_edit_bbbike_data.xml doc/Makefile.doc
 	cd doc && env LANG=C LC_ALL=C $(MAKE) -f Makefile.doc HOWTO_edit_bbbike_data.html
 
 clean_pod2html:
