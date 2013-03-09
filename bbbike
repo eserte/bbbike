@@ -460,10 +460,6 @@ use vars qw($balloon_info_from_all_tags_closeenough);
 $balloon_info_from_all_tags_closeenough = 3; # was 5, then 4
 
 # Var section: street and point attributes
-if ($devel_host && !grep { "danger" eq $_ } @Strassen::Dataset::comments_types) {
-    push @Strassen::Dataset::comments_types, "danger";
-}
-@comments_types = @Strassen::Dataset::comments_types;
 $init_str_draw{'s'} = 1;      # draw streets by default
 for (qw(s l r b u w f v e z g gP gD gBO sBAB fz wr)) { $p_sub_draw{"pp-$_"} = 1} # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
 $init_p_draw{'lsa'} = 1;
@@ -758,6 +754,12 @@ eval { local $SIG{'__DIE__'};
 ## DEBUG_END
 
 handle_options();
+
+# at this point the $devel_host setting is valid (_set_public was maybe called)
+if ($devel_host && !$public && !grep { "danger" eq $_ } @Strassen::Dataset::comments_types) {
+    push @Strassen::Dataset::comments_types, "danger";
+}
+@comments_types = @Strassen::Dataset::comments_types;
 
 if ($lowmem) {
     @image_type_order = ('xpm', 'gif', 'jpg', 'png');
