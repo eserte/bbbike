@@ -26,7 +26,8 @@ Das Straßennetz erscheint und weitere Layer: U- und S-Bahn (sowohl
 Linien als auch Bahnhöfe mit Benamung), Flächen (z.B. Parks), Gewässer
 und Ampeln. Zentriert wird auf das Brandenburger Tor. Falls die
 Datenbasis nicht zu alt ist, ist es sehr wahrscheinlich, dass
-temporäre Sperrungen erscheinen (mit Baustellen- oder Kalendarsymbol).
+temporäre Sperrungen erscheinen (mit Baustellen-, Kalendar- oder
+Mondsymbol).
 
 Straßenauswahlliste erscheint. Die A-Z-Leiste sollte vollständig sein
 und die Schrift sollte gut lesbar sein.
@@ -312,12 +313,12 @@ auf der Route" erscheint.
 
 Es erscheint ein Fenster mit einer oder mehreren temporären Sperrungen.
 
-=head3 Die Checkbox "Aktivieren" aller Sperrungen auswählen und "Ausgewählte umfahren" klicken
+=head3 Den Button "Alle umfahren" klicken
 
 Es wird eine neue Route berechnet, die die aktivierten temporären
-Sperrungen umfährt. Das Fenster mit den "Aktuellen Sperrungen" bleubt
+Sperrungen umfährt. Das Fenster mit den "Aktuellen Sperrungen" bleibt
 stehen, aber die ausgewählten Sperrungen befinden sich nun unterhalb
-der Überschrift "Bereits behandelte Sperrungen.
+der Überschrift "Bereits behandelte Sperrungen".
 
 =head3 Fenster "Aktuelle Sperrungen" schließen
 
@@ -360,7 +361,7 @@ Nutzers. Ein (temporäres) Verzeichnis auswählen und dort F<test>
 eingeben und bestätigen.
 
 Die geschriebene Datei sollte F<test.ps> heißen und kann mit einem
-Postscript-Viewer (z.B. ghostview) angesehen werden.
+Postscript-Viewer (z.B. gv oder ghostview) angesehen werden.
 
 I<Windows>: es ist kein Postscript-Viewer in der Distribution
 vorhanden.
