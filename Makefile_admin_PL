@@ -428,7 +428,7 @@ distdir2:
 	# for testing with extension based systems like Windows
 	cd $(DISTVNAME) && ln -s bbbike bbbike.pl
 	-rm -fr /tmp/$(DISTVNAME)
-	ln -s `pwd`/$(DISTVNAME) /tmp/$(DISTVNAME)
+	rsync -av `pwd`/$(DISTVNAME)/ /tmp/$(DISTVNAME)/
 
 develdist:
 	rm -rf $(DEVEL_ARCH)
