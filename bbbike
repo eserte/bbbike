@@ -21052,10 +21052,9 @@ sub set_fonts {
 	}
     }
 
-    @font = ();
-    foreach (qw(tiny small reduced normal large verylarge huge veryhuge)) {
-	push @font, $_;
-    }
+    # Array of sorted fonts (by size) used e.g. in
+    # get_orte_label_font()
+    @font = qw(tiny small reduced normal large verylarge huge veryhuge);
 
     for my $font (@font) {
 	my $font_key = $font."-italic";
