@@ -20934,11 +20934,14 @@ sub set_fonts {
  		$pt = $pt*12/14;
  	    }
  	    $top->fontConfigure($font{'normal'}, -size => sprintf("%.f", $pt));
- 	    $top->optionAdd('*font' => $font{'normal'}, 'userDefault');
 	}
-	if ($os eq 'win') {
-	    $top->optionAdd('*font' => $font{'normal'}, 'userDefault');
-	}
+
+	# This looks like a no-op, as $font{normal} was usually
+	# determined from the default font in the option database. But
+	# with this setting the _Tk font name_ is forced to be used.
+	# This is a requirement to see immediate effects when changing
+	# the font using FontDialog.
+	$top->optionAdd('*font' => $font{'normal'}, 'userDefault');
 
 	foreach (qw(veryhuge huge verylarge large bold
 		    reduced small tiny fixed standard fix15)) {
