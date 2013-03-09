@@ -312,7 +312,7 @@ sub draw {
 	$canvas->createLine($x, $y, $x, $y,
 			    -tags => 'crossings',
 			    -fill => 'DeepPink',
-			    -capstyle => "round", # XXX see exceed bug in main
+			    -capstyle => "round",
 			    -width => 4,
 			   );
     }

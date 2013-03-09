@@ -1082,13 +1082,8 @@ if ($run_under_kde) {
 #BEGIN{mymstat("after KDE initialisation");} mymstat("after KDE initialisation");
 ## DEBUG_END
 
-# Are we running exceed?
-$exceed = ($top->server =~ /Hummingbird/);
-
 if (!defined $focus_policy) {
-    if ($exceed) {
-	$focus_policy = 'click';
-    } elsif ($os eq 'unix') {
+    if ($os eq 'unix') {
 	#XXX $focus_policy = 'follow';
 	$focus_policy = 'click';
     } else {
@@ -1295,8 +1290,8 @@ if ($splash_screen) {
     $splash_screen->Update(0.0, 'raise splash');
 }
 
-# Exceed-Bug
-$capstyle_round = ($exceed ? "projecting" : "round");
+# Define something else on X server bugs (e.g. "projecting")
+$capstyle_round = "round";
 
 # erst hier ist die @power-Zuweisung abgeschlossen
 for(my $i=0; $i <= $#power; $i++) {
@@ -5744,9 +5739,6 @@ sub set_default_geometry {
 	if (!@max_extends) {
 	    # XXX guess width/height of wm borders and title bar
 	    @max_extends = (0, 0, $top->screenwidth-10, $top->screenheight-24);
-	}
-	if ($exceed) {
-	    $max_extends[GEOMETRY_HEIGHT] -= 35; # possible task bar --- but what to do if the taskbar is not at the standard location or has more than one row?
 	}
 
 	crop_geometry(\@want_extends, \@max_extends);

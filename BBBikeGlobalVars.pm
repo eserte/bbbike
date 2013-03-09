@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.72 2009/01/21 21:39:35 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2007,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2007,2008,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +14,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.72 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.73';
 
 package main;
 
@@ -141,7 +140,7 @@ use vars qw(
      $autoscroll_speed $autoscroll_middle
      $do_iconframe %check_sub $right_is_popup
      $environment $use_server $turbo $use_mldbm
-     $run_under_kde $kde $exceed
+     $run_under_kde $kde
      $use_xwd_if_possible $str_history $nearest_orte
      $standard_menubar $auto_install_cpan $ask_quit $gps_device
      $outline_i
