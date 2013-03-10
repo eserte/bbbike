@@ -308,24 +308,41 @@ strecke_s_XS(p1, p2)
 	char *p1;
 	char *p2;
 	PREINIT:
+#ifdef INT_SQRT
 	long x1 = 0;
 	long y1 = 0;
 	long x2 = 0;
 	long y2 = 0;
+#else
+	double x1 = 0.0;
+	double y1 = 0.0;
+	double x2 = 0.0;
+	double y2 = 0.0;
+#endif
 	char *new_p;
 	CODE:
 	new_p = strchr(p1, ',');
 	if (new_p) {
+#ifdef INT_SQRT
 	  x1 = atoi(p1);
 	  y1 = atoi(new_p + 1);
+#else
+	  x1 = atof(p1);
+	  y1 = atof(new_p + 1);
+#endif
 	} else {
 	  warn("%s is not a point", p1);
 	  goto error;
 	}
 	new_p = strchr(p2, ',');
 	if (new_p) {
+#ifdef INT_SQRT
 	  x2 = atoi(p2);
 	  y2 = atoi(new_p + 1);
+#else
+	  x2 = atof(p2);
+	  y2 = atof(new_p + 1);
+#endif
 	} else {
 	  warn("%s is not a point", p2);
 	  goto error;
