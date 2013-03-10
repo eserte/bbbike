@@ -11,11 +11,12 @@ BEGIN {
     # loaded first
     push @INC, qw(../.. ../../lib);
 }
-use Strassen::Util;
-use BBBikeXS;
-use Benchmark;
+
 use Data::Dumper;
 use Getopt::Long;
+
+use Strassen::Util;
+use BBBikeXS; # must be loaded AFTER Strassen::Util, for some reasons
 
 BEGIN {
     if (!eval q{
@@ -38,7 +39,12 @@ my @tests = (
 plan tests => 4 + @tests * 2;
 
 my $v;
-GetOptions("v"=>\$v) or die "usage?";
+my $bench;
+GetOptions(
+	   "v" => \$v,
+	   "bench" => \$bench,
+	  )
+    or die "usage: $0 [-v] [-bench]\n";
 
 {
     my $ref_wo = \&Strassen::Util::strecke; $ref_wo = "$ref_wo";
@@ -76,16 +82,18 @@ for (@tests) {
 
 }
 
-{
+if ($bench) {
+    require Benchmark;
     my($p1, $p2) = @{$tests[0]};
     my $s1 = join(",",@$p1);
     my $s2 = join(",",@$p2);
-    timethese(-1,
-	      {'perl'   => sub { Strassen::Util::strecke_PP($p1, $p2) },
-	       'xs'     => sub { Strassen::Util::strecke_XS($p1, $p2) },
-	       'perl_s' => sub { Strassen::Util::strecke_s_PP($s1, $s2) },
-	       'xs_s'   => sub { Strassen::Util::strecke_s_XS($s1, $s2) },
-	      });
+    Benchmark::timethese
+	    (-1,
+	     {'perl'   => sub { Strassen::Util::strecke_PP($p1, $p2) },
+	      'xs'     => sub { Strassen::Util::strecke_XS($p1, $p2) },
+	      'perl_s' => sub { Strassen::Util::strecke_s_PP($s1, $s2) },
+	      'xs_s'   => sub { Strassen::Util::strecke_s_XS($s1, $s2) },
+	     });
 }
 
 __END__
