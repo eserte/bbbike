@@ -115,7 +115,7 @@ use BBBikeGlobalVars 1.012;
 # "autouse" cannot be used on modules with non-standard import functions
 BEGIN {
     %autouse_func =
-	('BBBikeMail'	=> [qw(enter_send_mail enter_send_fax)],
+	('BBBikeMail'	=> [qw(enter_send_mail)],
 	 'Text::Wrap'	=> [qw(wrap)],
 	 'File::Copy'	=> [qw(copy mv)],
 	 'BBBikeGPS'
