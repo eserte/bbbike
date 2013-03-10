@@ -10,11 +10,12 @@ Algorithm::IncludeExclude - build and evaluate include/exclude lists
 
 =head1 VERSION
 
-Version 0.01
+Version 0.01_50
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.01_50';
+$VERSION =~ s{_}{};
 
 =head1 SYNOPSIS
 
@@ -251,7 +252,9 @@ sub evaluate {
 
 	$tree = $tree->[1]->{"0$head"};
 	last unless ref $tree;
-	$value = $tree->[0];
+	if (defined $tree->[0]) {
+	    $value = $tree->[0];
+	}
     }
 
     return $value;
