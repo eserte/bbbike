@@ -829,19 +829,6 @@ bundles:
 	    $(FULLPERL) Makefile.PL -action make_cgi_bundle && \
 	    $(FULLPERL) Makefile.PL -action make_windist_bundle
 
-# OSD bundles are not supported anymore
-bundles-osd:
-	if [ ! -h Bundle/make_pi_osd ] ; then \
-	    ln -s ../Makefile.PL Bundle/make_pi_osd; \
-	fi
-	if [ ! -h Bundle/make_small_pi_osd ] ; then \
-	    ln -s ../Makefile.PL Bundle/make_small_pi_osd; \
-	fi
-	cd Bundle && $(FULLPERL) make_pi_osd unix; \
-		     $(FULLPERL) make_pi_osd win; \
-		     $(FULLPERL) make_small_pi_osd unix; \
-		     $(FULLPERL) make_small_pi_osd win
-
 Strassen/Generated.pm: Strassen/Generated_src.pm Strassen.pm
 	chmod u+w Strassen/Generated.pm
 	echo "1;" > Strassen/Generated.pm

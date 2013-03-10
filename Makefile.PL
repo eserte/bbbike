@@ -1,6 +1,5 @@
 #! /usr/bin/perl
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.153 2009/01/22 22:51:16 eserte Exp $
 
 use 5.005;
 
@@ -345,13 +344,6 @@ if ($make_bundle) {
     exit make_windist_bundle() if $make_bundle eq 'windist';
     die "Should not happen: unhandled value <$make_bundle>";
 }
-# OSD descriptions (not really used):
-exit make_pi_osd('win')
-    if $0 =~ /make_pi_osd/ && defined $ARGV[0] && $ARGV[0] eq 'win';
-exit make_pi_osd()       if $0 =~ /make_pi_osd/;
-exit make_small_pi_osd('win')
-    if $0 =~ /make_small_pi_osd/ && defined $ARGV[0] && $ARGV[0] eq 'win';
-exit make_small_pi_osd()      if $0 =~ /make_small_pi_osd/;
 
 my $fileref = ExtUtils::Manifest::maniread();
 my $exe_files =
@@ -459,59 +451,6 @@ sub make_general_bundle {
     binmode BUNDLE;
     print BUNDLE $out;
     close BUNDLE;
-    0;
-}
-
-sub make_pi_osd {
-    die "Not supported anymore (changes for new REQTABLE_REQ needed!)";
-    my $os = shift || 'unix';
-    make_general_pi_osd(0, "BBBike-$os.osd", $os);
-}
-
-sub make_small_pi_osd {
-    die "Not supported anymore (changes for new REQTABLE_REQ needed!)";
-    my $os = shift || 'unix';
-    make_general_pi_osd(1, "BBBike_small-$os.osd", $os);
-}
-
-sub make_general_pi_osd {
-    die "Not supported anymore (changes for new REQTABLE_REQ needed!)";
-    my $type = shift;
-    my $file = shift;
-    my $os   = shift;
-
-    my(%prereq, @prereq);
-    {
-	my(@res) = build_prereq($os, 0);
-	%prereq = %{$res[0]};
-	@prereq = @{$res[1]};
-    }
-
-    open(OSD, ">$file") or die "Can't write OSD $file: $!";
-    (my $xml_abstract = $abstract) =~ s/ü/ue/g; # XXX
-    print OSD <<EOF;
-<SOFTPKG NAME="BBBike" VERSION="$version_major,$version_minor,0,0">
-<TITLE>BBBike</TITLE>
-<ABSTRACT>$xml_abstract</ABSTRACT>
-<AUTHOR>$author</AUTHOR>
-<LICENSE HREF="LICENSE" />
-<IMPLEMENTATION>
- <CODEBASE HREF="http://prdownloads.sourceforge.net/bbbike/BBBike-$BBBike::STABLE_VERSION.tar.gz" />
- <INSTALL EXEC="perl">BBBike-$BBBike::STABLE_VERSION/install.pl</INSTALL>
-</IMPLEMENTATION>
-EOF
-    foreach my $prereq (@prereq) {
-	next if $prereq->[REQTABLE_REQ] < $type;
-	(my $ppm_dist = $prereq->[REQTABLE_MODNAME]) =~ s/::/-/g;
-	print OSD <<EOF;
-<DEPENDENCY NAME="$prereq->[REQTABLE_MODNAME]">
- <CODEBASE TYPE="ppm" PACKAGE="$ppm_dist"/>
- <CODEBASE TYPE="cpan" PACKAGE="$prereq->[REQTABLE_MODNAME]"/>
-</DEPENDENCY>
-EOF
-    }
-    print OSD "</SOFTPKG>";
-    close OSD;
     0;
 }
 
