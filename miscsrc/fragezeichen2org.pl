@@ -69,6 +69,11 @@ if ($with_dist && !$centerc) {
     }
 }
 
+my $dists_are_exact;
+if ($with_dist) {
+    $dists_are_exact = $dist_dbfile ? 1 : 0;
+}
+
 my @files = @ARGV
     or die "Please specify bbd file(s)";
 
@@ -92,11 +97,11 @@ for my $file (@files) {
 		     my $any_dist; # either one way or two way dist in meters
 		     if ($centerc) {
 			 my $dist_m = _get_dist($centerc, $r->[Strassen::COORDS]);
-			 $dist_tag = ":" . int_round($dist_m/1000) . "km:";
+			 $dist_tag = ':' . _make_dist_tag($dist_m) . ':';
 			 if ($center2c) {
 			     my $dist2_m = _get_dist($center2c, $r->[Strassen::COORDS]);
 			     $dist2_m += $dist_m;
-			     $dist_tag .= int_round($dist2_m/1000) . "km:";
+			     $dist_tag .= _make_dist_tag($dist2_m) . ':';
 			     $any_dist = $dist2_m;
 			 } else {
 			     $any_dist = $dist_m;
@@ -213,6 +218,11 @@ sub _get_distdb {
     return $dist_db if $dist_db;
     require DistDB;
     $dist_db = DistDB->new($dist_dbfile);
+}
+
+sub _make_dist_tag {
+    my $dist_m = shift;
+    ($dists_are_exact ? '' : '~') . int_round($dist_m/1000) . 'km';
 }
 
 __END__
