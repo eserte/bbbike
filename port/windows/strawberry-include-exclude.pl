@@ -59,6 +59,11 @@ if (!$filelist) {
     $filelist = $tmpfile;
 }
 
+my $need_include_hack = $Algorithm::IncludeExclude::VERSION < 0.01_50;
+if ($need_include_hack) {
+    warn "Algorithm::IncludeExclude version $Algorithm::IncludeExclude::VERSION detected, need a hack for RT #75695...\n";
+}
+
 my %exclude;
 my $ie = Algorithm::IncludeExclude->new;
 $ie->include;
@@ -78,8 +83,8 @@ $ie->exclude('win32');
 $ie->exclude('DISTRIBUTIONS.txt');
 $ie->exclude('README.portable.txt');
 $ie->exclude('README.txt');
-$ie->include('perl'); # XXX hack
-$ie->include(qw(perl bin)); # XXX hack, and almost every following "include" is also a hack XXX RT ticket missing!
+$ie->include('perl') if $need_include_hack;
+$ie->include(qw(perl bin)) if $need_include_hack;
 $ie->exclude(qw(perl bin a2p.exe));
 $ie->exclude(qw(perl bin cpan));
 $ie->exclude(qw(perl bin cpan.bat));
@@ -88,8 +93,8 @@ $ie->exclude(qw(perl bin dprofpp.bat));
 $ie->exclude(qw(perl bin h2xs.bat));
 $ie->exclude('perl', qr{.*\.pod$});
 $ie->exclude('perl', qr{\.packlist$});
-$ie->include(qw(perl lib));
-$ie->include(qw(perl lib App));
+$ie->include(qw(perl lib)) if $need_include_hack;
+$ie->include(qw(perl lib App)) if $need_include_hack;
 $ie->exclude(qw(perl lib App Prove.pm));
 $ie->exclude(qw(perl lib App Prove));
 $ie->exclude(qw(perl lib CORE));
@@ -99,7 +104,7 @@ $ie->exclude(qw(perl lib CPAN));
 $ie->exclude(qw(perl lib CPAN.pm));
 $ie->exclude(qw(perl lib CPANPLUS));
 $ie->exclude(qw(perl lib CPANPLUS.pm));
-$ie->include(qw(perl lib Encode));
+$ie->include(qw(perl lib Encode)) if $need_include_hack;
 $ie->exclude(qw(perl lib Encode CN.pm));
 # XXX what about CN/?
 $ie->exclude(qw(perl lib Encode CN HZ.pm));
@@ -113,17 +118,17 @@ $ie->exclude(qw(perl lib Encode KR.pm));
 $ie->exclude(qw(perl lib Encode KR 2022_KR.pm));
 $ie->exclude(qw(perl lib Encode TW.pm));
 $ie->exclude(qw(perl lib ExtUtils));
-$ie->include(qw(perl lib Module));
+$ie->include(qw(perl lib Module)) if $need_include_hack;
 $ie->exclude(qw(perl lib Module Build.pm));
 $ie->exclude(qw(perl lib Module Build));
 $ie->exclude(qw(perl lib Module CoreList.pm));
 $ie->exclude(qw(perl lib TAP));
 $ie->exclude(qw(perl lib Test));
-$ie->include(qw(perl lib Unicode));
+$ie->include(qw(perl lib Unicode)) if $need_include_hack;
 $ie->exclude(qw(perl lib Unicode Collate));
-$ie->include(qw(perl lib auto));
+$ie->include(qw(perl lib auto)) if $need_include_hack;
 $ie->exclude(qw(perl lib auto Devel));
-$ie->include(qw(perl lib auto Encode));
+$ie->include(qw(perl lib auto Encode)) if $need_include_hack;
 $ie->exclude(qw(perl lib auto Encode CN CN.bs));
 $ie->exclude(qw(perl lib auto Encode CN CN.dll));
 $ie->exclude(qw(perl lib auto Encode EBCDIC EBCDIC.bs));
@@ -134,13 +139,13 @@ $ie->exclude(qw(perl lib auto Encode KR KR.bs));
 $ie->exclude(qw(perl lib auto Encode KR KR.dll));
 $ie->exclude(qw(perl lib auto Encode TW TW.bs));
 $ie->exclude(qw(perl lib auto Encode TW TW.dll));
-$ie->include(qw(perl lib unicore));
+$ie->include(qw(perl lib unicore)) if $need_include_hack;
 $ie->exclude(qw(perl lib unicore), qr{.*\.txt$});
 $ie->exclude(qw(perl lib unicore mktables));
 $ie->exclude(qw(perl lib unicore TestProp.pl));
-$ie->include(qw(perl lib unicore To));
+$ie->include(qw(perl lib unicore To)) if $need_include_hack;
 $ie->exclude(qw(perl lib unicore To NFKCCF.pl));
-$ie->include(qw(perl vendor lib));
+$ie->include(qw(perl vendor lib)) if $need_include_hack;
 $ie->exclude(qw(perl vendor lib Apache)); # all of Apache
 $ie->exclude(qw(perl vendor lib Bundle)); # all of Bundle
 $ie->exclude(qw(perl vendor lib Crypt)); # all of Crypt
@@ -151,7 +156,7 @@ $ie->exclude(qw(perl vendor lib Test)); # all of Test
 #$ie->exclude(qw(perl vendor lib XML Parser.pm));
 #$ie->exclude(qw(perl vendor lib XML SAX));
 #$ie->exclude(qw(perl vendor lib XML Simple.pm));
-$ie->include(qw(perl vendor lib auto));
+$ie->include(qw(perl vendor lib auto)) if $need_include_hack;
 $ie->exclude(qw(perl vendor lib auto Math)); # all of Math
 $ie->exclude(qw(perl vendor lib auto share));
 $ie->exclude(qw(perl vendor lib auto DBD)); # all of DBD
@@ -181,12 +186,12 @@ $ie->include(qw(perl vendor lib Crypt SSLeay));
 #$ie->exclude(qw(perl vendor lib DBI));
 #$ie->include(qw(perl vendor lib Math));
 #$ie->exclude(qw(perl vendor lib Math Pari.pm));
-$ie->include(qw(perl site)); # XXX hack
-$ie->include(qw(perl site lib)); # XXX hack
-$ie->include(qw(perl site lib Tk)); # XXX hack
+$ie->include(qw(perl site)) if $need_include_hack;
+$ie->include(qw(perl site lib)) if $need_include_hack;
+$ie->include(qw(perl site lib Tk)) if $need_include_hack;
 $ie->exclude(qw(perl site lib Tk demos));
 $ie->exclude(qw(perl site lib Tk), qr{\.[hmt]$});
-$ie->include(qw(perl site lib Tk pTk)); # XXX hack
+$ie->include(qw(perl site lib Tk pTk)) if $need_include_hack;
 $ie->exclude(qw(perl site lib Tk pTk), qr{\.[hmt]$});
 $ie->exclude(qw(perl site lib Tk pTk compat));
 #
