@@ -130,6 +130,9 @@ danach wird die Datei direkt zum Default-Drucker geschickt.
 
 =head3 Auf E<quot>MailE<quot> klicken
 
+B<KNOWN ISSUE>: es gibt keinen Mail-Button mehr unter Windows. Es gibt
+keine zuverlässigen Mechanismen, um hier eine Mail zu versenden.
+
 B<KNOWN ISSUE>: Standard-Postfix-Installation unter MacOSX (?) reicht
 nicht aus, um Mails zu versenden (-> Vielleicht Mail-Button entfernen???)
 
