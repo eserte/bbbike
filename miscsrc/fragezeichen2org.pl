@@ -175,9 +175,11 @@ if (@expired_records) {
 print <<'EOF';
 * settings
 # Local variables:
-# compile-command: "(cd ../data && make ../tmp/fragezeichen-nextcheck.org)"
+# compile-command: "(cd ../data && make fragezeichen-nextcheck.org-exact-dist)"
 # End:
 EOF
+# Alternative compile command (without using the dist.db):
+## compile-command: "(cd ../data && make ../tmp/fragezeichen-nextcheck.org)"
 
 sub _get_dist {
     my($p1, $p2s) = @_;
