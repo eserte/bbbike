@@ -225,7 +225,20 @@ sub create_mailto_url {
 }
 
 sub capabilities {
-    $can_send_mail = 1; # via browser
+    if ($^O eq 'MSWin32') {
+	# XXX Sending mail is currently disabled completely on
+	# windows. Reason: the method creating a mailto URL and using
+	# it with WWWBrowser::start_browser only works for short
+	# content (less than 2000 bytes). This is usually too less for
+	# route texts. An alternative is not yet found.
+	$can_send_mail = 0;
+	# Shortcut early, don't try Mail::Send or Mail::Mailer.
+	# Usually this does not work out-of-the-box, as the smtp host
+	# needs to be configured somewhere.
+	return;
+    } else {
+	$can_send_mail = 1; # via browser
+    }
     eval {
 	die "Specified to not use Mail::Mailer via variable \$cannot_send_mail_via_Mail_Mailer"
 	    if $cannot_send_mail_via_Mail_Mailer;
