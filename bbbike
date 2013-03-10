@@ -18267,18 +18267,20 @@ sub show_route_strname {
       (-text => M"Drucken",
        -command => sub { $print_text_sub->($ps_fixed_font||"Courier7") },
       );
-    push @bfb, $bf->Button
-      (-text => M"Mail",
-       -command => sub {
-	   if (@route_info) {
-	       $show_route_start = "???" unless $show_route_start;
-	       $show_route_ziel  = "???" unless $show_route_ziel;
-	       enter_send_mail
-		 (Mfmt("BBBike-Route von %s bis %s",
-		       $show_route_start, $show_route_ziel),
-		  -data => route_info_to_text());
-	   }
-       });
+    if (_can_send_mail()) {
+	push @bfb, $bf->Button
+	    (-text => M"Mail",
+	     -command => sub {
+		 if (@route_info) {
+		     $show_route_start = "???" unless $show_route_start;
+		     $show_route_ziel  = "???" unless $show_route_ziel;
+		     enter_send_mail
+			 (Mfmt("BBBike-Route von %s bis %s",
+			       $show_route_start, $show_route_ziel),
+			  -data => route_info_to_text());
+		 }
+	     });
+    }
     $t->bind('<Up>'   => sub { $route_strname_lbox->yview(scroll => -1,
 							  'units') });
     $t->bind("<Down>" => sub { $route_strname_lbox->yview(scroll => 1,
@@ -20306,6 +20308,7 @@ sub show_logo { # und About
 		 )->pack(-anchor => 'w', -expand => 1,
 			 -fill => 'x');
     }
+
     # Send mail to software maintainer
     my $mail_b =
 	$f->$Button_or_Label
@@ -22184,6 +22187,14 @@ sub soft_flash {
 	}
     };
     $next_color_state->();
+}
+
+sub _can_send_mail {
+    return $BBBikeMail::can_send_mail if defined $BBBikeMail::can_send_mail;
+
+    require BBBikeMail;
+    BBBikeMail::capabilities();
+    $BBBikeMail::can_send_mail;
 }
 
 # REPO BEGIN
