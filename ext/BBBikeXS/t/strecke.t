@@ -15,6 +15,7 @@ use Strassen::Util;
 use BBBikeXS;
 use Benchmark;
 use Data::Dumper;
+use Getopt::Long;
 
 BEGIN {
     if (!eval q{
@@ -26,7 +27,18 @@ BEGIN {
     }
 }
 
-plan tests => 12;
+my @tests = (
+	     [[1000,1234],[1234,42]],
+	     [[0,0],[0,100000]],
+	     [[-1000,-123],[-1234,+123]],
+	     [[rand(100000),rand(100000)],[rand(100000),rand(100000)]],
+	     [[46452.8749304922,40778.1643650622],[76678.0142477852,4261.91260075441]],
+	    );
+
+plan tests => 4 + @tests * 2;
+
+my $v;
+GetOptions("v"=>\$v) or die "usage?";
 
 {
     my $ref_wo = \&Strassen::Util::strecke; $ref_wo = "$ref_wo";
@@ -44,12 +56,6 @@ plan tests => 12;
     isnt $ref_wo2, $ref_pp2;
 }
 
-my @tests = (
-	     [[1000,1234],[1234,42]],
-	     [[0,0],[0,100000]],
-	     [[-1000,-123],[-1234,+123]],
-	     [[rand(100000),rand(100000)],[rand(100000),rand(100000)]],
-	    );
 for (@tests) {
     my($p1, $p2) = @$_;
 
@@ -60,6 +66,14 @@ for (@tests) {
     my $s2 = join(",",@$p2);
     cmp_ok abs(Strassen::Util::strecke_s_PP($s1,$s2) - Strassen::Util::strecke_s_XS($s1,$s2)), "<", 1, "strecke_s $s1 -> $s2",
 	or diag "strecke_s with the values " . Dumper($s1, $s2). ": PP=" . Strassen::Util::strecke_s_PP($s1, $s2) . ", XS=" . Strassen::Util::strecke_s_XS($s1, $s2);
+
+    if ($v) {
+	diag "strecke_PP:   " . Strassen::Util::strecke_PP($p1, $p2);
+	diag "strecke_XS:   " . Strassen::Util::strecke_XS($p1, $p2);
+	diag "strecke_s_PP: " . Strassen::Util::strecke_s_PP($s1,$s2);
+	diag "strecke_s_XS: " . Strassen::Util::strecke_s_XS($s1,$s2);
+    }
+
 }
 
 {
