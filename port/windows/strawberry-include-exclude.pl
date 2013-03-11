@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2012,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,11 +26,13 @@ my($src,$dest);
 my $doit;
 my $v;
 my $filelist;
+my $allow_shadowed;
 GetOptions("src=s" => \$src,
 	   "dest=s" => \$dest,
 	   "doit!" => \$doit,
 	   "fl=s" => \$filelist,
 	   "v" => \$v,
+	   "allow-shadowed" => \$allow_shadowed,
 	  )
     or die "usage?";
 
@@ -223,6 +225,66 @@ if ($src) {
     }
 }
 
+# Add shadowed files to %excluded
+#
+# Unfortunately UNINST=1 does not remove all shadowed files:
+# ExtUtils::Install does a comparison between the installed file and
+# the possibly shadowed one; if the byte contents are equal, then EUI
+# plays safe (because it could be AFS, and probably both paths could
+# point to the same file) and refuses the removal. The workaround is
+# done here: we do the shadow check ourselves.
+if (!$allow_shadowed) {
+    # This is currently strawberries @INC:
+    my @strawberry_inc = (
+			  'perl/site/lib',
+			  'perl/vendor/lib',
+			  'perl/lib',
+			 );
+    my %strawberry_inc_to_prio = do {
+	my $prio = 1;
+	map { ($_ => $prio++) } @strawberry_inc;
+    };
+
+    my %seen_mod; # modpath -> [relpath, prio]
+    # where:
+    # - modpath is something like IPC/Run/Debug.pm
+    # - relpath is something like perl/vendor/lib/IPC/Run/Debug.pm
+    # - prio: 1 is highest prio
+
+    open my $fh, $filelist
+	or die "Can't open $filelist: $!";
+    while(<$fh>) {
+	chomp;
+	my $file = $_;
+
+	my $mod;
+	for my $strawberry_inc (@strawberry_inc) {
+	    if ($file =~ m{^\Q$strawberry_inc\E/(.*)$}) {
+		$mod = $1;
+		my $this_prio = $strawberry_inc_to_prio{$strawberry_inc};
+		if (!$this_prio) { die "FATAL: should not happen: no prio for '$strawberry_inc'" }
+
+		if ($seen_mod{$mod}) {
+		    my($other_file, $other_prio) = @{ $seen_mod{$mod} };
+
+		    if ($this_prio < $other_prio) {
+			$exclude{"$src/$other_file"} = "shadowed";
+			$seen_mod{$mod} = [$file, $this_prio];
+		    } elsif ($this_prio > $other_prio) {
+			$exclude{"$src/$file"} = "shadowed";
+			# seen_mod unchanged
+		    } else { # $this_prio == $other_prio
+			die "FATAL: should not happen: $file is seen twice";
+		    }
+		} else {
+		    $seen_mod{$mod} = [$file, $this_prio];
+		}
+	    }
+	}
+    }
+}
+
+
 my %dir_created;
 open my $fh, $filelist
     or die "Can't open $filelist: $!";
@@ -234,7 +296,8 @@ while(<$fh>) {
 	    my $srcpath = "$src/$file";
 	    if ($exclude{$srcpath}) {
 		if ($say) {
-		    print STDERR "# excluded: $srcpath\n";
+		    my $why = $exclude{$srcpath};
+		    print STDERR "# excluded ($why): $srcpath\n";
 		}
 	    } else {
 		my $destpath = "$dest/$file";
@@ -296,7 +359,7 @@ sub add_packlist_to_exclude {
 	$f =~ s{^C:\\strawberry\\}{};
 	$f =~ s{\\}{/}g;
 	$f = $src . "/" . $f;
-	$exclude{$f} = 1;
+	$exclude{$f} = "$module explicitely excluded";
     }
 }
 
