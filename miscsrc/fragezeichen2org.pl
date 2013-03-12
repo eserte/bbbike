@@ -18,6 +18,7 @@ use FindBin;
 use lib (
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../miscsrc", # für ReverseGeocoding.pm
 	 $FindBin::RealBin,
 	);
 
@@ -155,6 +156,22 @@ if ($centerc) {
 
 binmode STDOUT, ':utf8';
 print "fragezeichen/nextcheck\t\t\t-*- mode:org; coding:utf-8 -*-\n\n";
+
+if ($with_dist) {
+    require ReverseGeocoding;
+    require Karte::Polar;
+    require Karte::Standard;
+    my $rh = ReverseGeocoding->new;
+    if ($centerc) {
+	my($px,$py) = $Karte::Polar::obj->standard2map(split /,/, $centerc);
+	print "1st reference point for distances: ". $rh->find_closest("$px,$py", "road"), "\n";
+	if ($center2c) {
+	    my($p2x,$p2y) = $Karte::Polar::obj->standard2map(split /,/, $center2c);
+	    print "2nd reference point for distances: ". $rh->find_closest("$p2x,$p2y", "road"), "\n";
+	}
+	print "\n";
+    }
+}
 
 my $today_printed = 0;
 for my $record (@records) {
