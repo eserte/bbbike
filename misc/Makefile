@@ -118,14 +118,14 @@ download-${land}.osm.bz2:
 # cd just for checking:
 	mkdir -p ${OSM_DOWNLOAD_DIR}
 	cd ${OSM_DOWNLOAD_DIR} && true
-	wget http://download.geofabrik.de/openstreetmap/europe/germany/${land}.osm.bz2 -O ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~
+	wget http://download.geofabrik.de/europe/germany/${land}-latest.osm.bz2 -O ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~
 	mv ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~ ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2
 
 download-${land}.osm.pbf:
 # cd just for checking:
 	mkdir -p ${OSM_DOWNLOAD_DIR}
 	cd ${OSM_DOWNLOAD_DIR} && true
-	wget http://download.geofabrik.de/openstreetmap/europe/germany/${land}.osm.pbf -O ${OSM_DOWNLOAD_DIR}/${land}.osm.pbf~
+	wget http://download.geofabrik.de/europe/germany/${land}-latest.osm.pbf -O ${OSM_DOWNLOAD_DIR}/${land}.osm.pbf~
 	mv ${OSM_DOWNLOAD_DIR}/${land}.osm.pbf~ ${OSM_DOWNLOAD_DIR}/${land}.osm.pbf
 .endfor
 
@@ -134,14 +134,14 @@ download-${land}.osm.bz2:
 # cd just for checking:
 	mkdir -p ${OSM_DOWNLOAD_DIR}
 	cd ${OSM_DOWNLOAD_DIR} && true
-	wget http://download.geofabrik.de/openstreetmap/europe/${land}.osm.bz2 -O ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~
+	wget http://download.geofabrik.de/europe/${land}-latest.osm.bz2 -O ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~
 	mv ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2~ ${OSM_DOWNLOAD_DIR}/${land}.osm.bz2
 
 download-${land}.osm.pbf:
 # cd just for checking:
 	mkdir -p ${OSM_DOWNLOAD_DIR}
 	cd ${OSM_DOWNLOAD_DIR} && true
-	wget http://download.geofabrik.de/openstreetmap/europe/${land}.osm.pbf -O ${OSM_DOWNLOAD_DIR}/${land}.osm.pbf~
+	wget http://download.geofabrik.de/europe/${land}-latest.osm.pbf -O ${OSM_DOWNLOAD_DIR}/${land}.osm.pbf~
 	mv ${OSM_DOWNLOAD_DIR}/${land}.osm.pbf~ ${OSM_DOWNLOAD_DIR}/${land}.osm.pbf
 .endfor
 
