@@ -21,10 +21,12 @@ die "Sorry, this script must be run under CMD.EXE, not cygwin"
     if $^O eq 'cygwin';
 
 my $do_snapshot;
+my $do_continue;
 GetOptions(
 	   "snapshot" => \$do_snapshot,
+	   "c|cont|continue" => \$do_continue,
 	  )
-    or die "usage: $0 [-snapshot]";
+    or die "usage: $0 [-snapshot] [-c|-continue]";
 
 my $strawberry_ver = 'strawberry-perl-5.14.2.1';
 my $strawberry_zip_file = $strawberry_ver . '-32bit-portable.zip';
@@ -43,16 +45,24 @@ my $strawberry_dir = "$eserte_dos_path\\$strawberry_ver";
 my $bbbikewindist_dir = "$eserte_dos_path\\bbbikewindist";
 my $bak_date = strftime("%Y%m%d%H%M%S", localtime);
 if (-e $strawberry_dir) {
-    print STDERR "Moving existing $strawberry_dir...\n";
-    my $dest = "$strawberry_dir.$bak_date.bak";
-    rename $strawberry_dir, $dest
-	or die "Can't move $strawberry_dir to $dest: $!";
+    if ($do_continue) {
+	print STDERR "Reusing existing $strawberry_dir...\n";
+    } else {
+	print STDERR "Moving existing $strawberry_dir...\n";
+	my $dest = "$strawberry_dir.$bak_date.bak";
+	rename $strawberry_dir, $dest
+	    or die "Can't move $strawberry_dir to $dest: $!";
+    }
 }
 if (-e $bbbikewindist_dir) {
-    print STDERR "Moving existing $bbbikewindist_dir...\n";
-    my $dest = "$bbbikewindist_dir.$bak_date.bak";
-    rename $bbbikewindist_dir, $dest
-	or die "Can't move $bbbikewindist_dir to $dest: $!";
+    if ($do_continue) {
+	print STDERR "Reusing existing $bbbikewindist_dir...\n";
+    } else {
+	print STDERR "Moving existing $bbbikewindist_dir...\n";
+	my $dest = "$bbbikewindist_dir.$bak_date.bak";
+	rename $bbbikewindist_dir, $dest
+	    or die "Can't move $bbbikewindist_dir to $dest: $!";
+    }
 }
 
 {
