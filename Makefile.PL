@@ -227,9 +227,9 @@ my @req_table =
    'Prereq für Geo::Distance::XS'], # diese Version ohne Warnungen
   [qw/Geo::METAR        0       all     4       base/,
    'Wetterdaten im METAR-Format'],
-  [qw/Tk::ExecuteCommand	0	all	1	base/,
+  [qw/Tk::ExecuteCommand	0	all	0	base/,
    'Bessere Fehlerberichte im temp_blockings-Editor'],
-  [qw/Algorithm::Diff	0	all	1	base/,
+  [qw/Algorithm::Diff	0	all	0	base/,
    'Unterschiede im temp_blockings-Editor anzeigen'],
   [qw/Sort::Naturally	0	all	0	base/,
    'Für natürliches Sortieren von bbd-Dateien'],

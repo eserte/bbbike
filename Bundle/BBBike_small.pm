@@ -21,10 +21,6 @@ Bundle::BBBike_small - A bundle to install only mandatory dependencies of BBBike
 
 Tk 800.000	- das absolute Muss!
 
-Tk::ExecuteCommand	- Bessere Fehlerberichte im temp_blockings-Editor
-
-Algorithm::Diff	- Unterschiede im temp_blockings-Editor anzeigen
-
 
 =head1 DESCRIPTION
 
