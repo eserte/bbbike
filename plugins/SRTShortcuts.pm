@@ -456,6 +456,8 @@ EOF
 		     below => '*landuse*',
 		 }
 		],
+		layer_checkbutton([$do_compound->('Neue Sehenswürdigkeiten')],
+				  'str', "$bbbike_auxdir/images/sehenswuerdigkeit_img/bw/test.bbd"),
 		layer_checkbutton([$do_compound->('Exits (ÖPNV)')],
 				  'str', "$main::datadir/exits",
 				  maybe_orig_file => 1),
