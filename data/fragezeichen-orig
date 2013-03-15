@@ -89,7 +89,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-03-08 vvv
+#: last_checked: 2013-03-14 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -97,7 +97,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2013-03-08
+#: last_checked: 2013-03-12
 #: next_check: 2013-06-01
 Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -437,6 +437,7 @@ Tempelhofer Weg: wann werden hier Radstreifen angelegt?	? 12507,5228 12205,5545
 #: last_checked: 2012-05-12 vvv
 #: XXX Straßen scheinen mittlerweile zu existieren vvv
 Hermann-Kasack-Str. (Potsdam): Qualität? Stimmt der Straßenname?	? -13432,782 -13615,844
+#: XXX laut DPAG-Mitteilungsblatt 3/2013 "entfällt" dieser Straßenname - oder nur die besondere Schreibweise ohne Punkt hinter "Str"?
 Reinhold-Schneider-Str. (Potsdam): Qualität? Stimmt der Straßenname?	? -13433,693 -13642,750
 Verlängerung der Jochen-Klepper-Str. (Potsdam): Qualität?	? -13436,595 -13668,669
 #: XXX ^^^
@@ -758,6 +759,32 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453
+#: XXX 13127 Berlin, Ortsteil Französisch Buchholz
+#: XXX 1.  Landapfelweg
+#: XXX 2.  Bananenapfelweg
+#: XXX 3.  Weinapfelweg
+#: XXX 4.  Kornapfelweg
+#: XXX 5.  Eiserapfelweg
+#: XXX 6.  Paradiesapfelweg
+#: XXX 7.  Petersapfelweg
+#: XXX 8.  Pfaffenapfelweg
+#: XXX 9.  Mönchsapfelweg
+#: XXX 10. Nelkenapfelweg
+#: XXX 11. Klarapfelweg
+#: XXX 12. Edelapfelweg
+#: XXX 13. Kantapfelweg
+#: XXX 14. Prinzenapfelweg
+#: XXX 15. Rosenapfelweg
+#: XXX 16. Silberapfelweg
+#: XXX 17. Glasapfelweg
+#: XXX 18. Herrgottsapfelweg
+#: XXX 19. Jubiläumsapfelweg
+#: XXX 20. Am Brendegraben
+Benennung von 20 Privatwegen in der Anlage Gravenstein: genaue Lage der Wege? Qualität? Beleuchtet?	? 12352,22999 12909,23132 13101,22370 12411,22465 12352,22999
+# 
+Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsblatt 3/2013), ist es für Radfahrer irgendwie relevant?	? -12727,-1416 -12703,-1410
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2013
 #: XXX laut osm geht die Verbindung sogar bis Alt-Biesdorf
 Lauinger Str.: befindet sich der Fuß/Radweg hier? (Qualität, Beleuchtung, Straßenschilder?) Oder ist damit der fast parallel führende Trampelpfad gemeint?	? 21221,11398 21137,11294
@@ -789,7 +816,7 @@ An der Vogelweide: Qualität? Lage? Straßenschilder?	? 8568,21863 8626,21892 8712
 #: last_checked: 2013-02-10
 An der ehem. Blumengroßmarkthalle: hier wird eine neue Verbindung --- gepflastert (genaue Qualität?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Lückenschluss, auch zur Siegfriedstr.)
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr.; wird aber nicht realisiert)
 #: XXX evtl. entsteht hier auch eine offizielle Verbindung?
 Landschaftspark Herzberge - Arendsweg: evtl. den inoffiziellen Trampelpfad aufnehmen	? 17266,14144 17335,14167
 Radweg Herzberge: tatsächlich wieder befahrbar?	? 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144
@@ -2764,6 +2791,7 @@ Paarener Mühlenweg (Potsdam-Uetz-Paaren): Qualität?	? -21412,8481 -21200,8474 -2
 #: XXX fehlt in Potsdam.coords.data
 Kirschweg (Potsdam-Uetz-Paaren): Qualität?	? -20914,8535 -20996,8861
 Laubenweg (Potsdam-Grube): Qualität?	? -19987,2459 -19891,2447
+#: XXX gehört das schon zu Paaren (siehe DPAG-Mitteilungsblatt 3/2013)? Wenn ja, dann oldname: Schwarzer Damm eintragen; und PLZ=14476
 Schwarzer Weg (Potsdam-Grube): Qualität?	? -19422,2220 -19433,2155 -19691,2134 -19924,2119 -20031,2094
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf ("Schmidt's Hof" -> "Schmidtshof")
 Schmidtshof (Potsdam-Grube): Qualität?	? -19691,2134 -19689,2191 -19927,2193 -19927,2216 -20049,2236

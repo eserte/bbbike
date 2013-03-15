@@ -653,7 +653,7 @@ Naumannstr.	N 7707,8915 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8
 #: XXX wird demnächst (1. November 2012) zu "Wilhelm-Kabus-Str." umbenannt (old_name-Eintrag!)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=3587&options=4
-#: last_checked: 2013-02-06 (by andk)
+#: last_checked: 2013-03-10 (by andk)
 #: XXX der Eintrag in str_cont_ausnahme kann dann entfernt werden
 Naumannstr.	H 7733,8023 7713,8001 7717,7879 7717,7830 7696,7771
 Hildegard-Knef-Platz	N 7696,7771 7774,7724
@@ -1061,7 +1061,7 @@ Valeska-Gert-Str.	N 12807,11287 12866,11256 12926,11224 12984,11194
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
 #: XXX welchen Straßennamen bekommt die Straße? wahrscheinlich "Edith-Kiss-Str."
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5286&options=4
-#: last_checked: 2013-03-08
+#: last_checked: 2013-03-12
 (Planstraße D)	N 12793,11132 12866,11256
 Am Postbahnhof	N 12641,11288 12664,11310 12713,11372 12638,11433 12576,11375
 Am Postbahnhof	N 12638,11433 12594,11467 12539,11416
@@ -2476,6 +2476,7 @@ Eibenweg	N 17364,5094 17378,5195 17365,5271 17355,5322
 (Königsheideweg - Weststr.)	NN 17115,4757 17129,4837 17173,4902
 Ellernweg	N 17173,4902 17303,4824 17428,4792 17542,4772
 Weststr. (Johannisthal)	N 17173,4902 17291,5045 17315,5109
+#: note: der nördliche Abschnitt heißt bei Google "Im Brombeerwinkel", aber laut http://www.luise-berlin.de/strassen/bez15h/i38.htm existiert dieser Straßenname seit ca. 1980 nicht mehr
 Oststr. (Johannisthal)	N 17428,4792 17463,4964 17470,4998 17484,5073 17493,5112 17504,5205 17486,5209 17469,5289 17455,5355
 (Südostallee - Fröbel-Kindergarten)	N 17471,5469 17416,5388
 (Fröbel-Kindergarten - Oststr.)	NN 17416,5388 17455,5355
@@ -3279,11 +3280,11 @@ Trabener Steg	NN 2259,10083 2228,10078 2142,10027 2131,10014 2133,9996
 Trabener Str.	NN 2166,10020 2133,9996 1981,9865
 Trabener Str.	N 1981,9865 1941,9814 1920,9759 1756,9610 1714,9572 1562,9436 1447,9334 1341,9244 1312,9220 1141,9078 936,8933
 Hilde-Ephraim-Str.	N 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
-#: XXX Ist das hier der Rosensteinweg (siehe auch fragezeichen-orig)? Ist der Weg ausgeschildert?
+#: XXX Ist das hier der Rosensteinweg? Ist der Weg ausgeschildert?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2013 (Hausnummern)
 #: XXX Gemarkung Grunewald-Forst, Flur 1, Flurstück 332; evtl. bei Aurelis Real Estate oder im Bezirksamt (Fehrbelliner Pl, Zimmer 3060, di/fr 9-12) nachfragen
-#: XXX fehlt bei Berlin.coords.data
+#: XXX fehlt bei Berlin.coords.data (PLZ=14193)
 (Hilde-Ephraim-Str. - Trabener Str.)	NN 1718,9653 1920,9824 1941,9814
 Wissmannstr. (Grunewald)	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1704,9293
 Winkler Str.	N 936,8933 1037,8884 1090,8892 1316,9067 1434,9154
@@ -4301,6 +4302,7 @@ Pappelplatz (Grunewald)	NN 297,8894 197,8973 30,9105
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2013
 #: next_check: 2013-04-08
 #: XXX_prog: oldname-Eintrag!!!
+#: XXX auch Berlin.coords.data ändern
 Auerbacher Str.	N 490,8716 634,8852 731,8872 912,8895
 Eichkampstr.	N 425,8766 676,9104 693,9129 890,9399 1019,9573 1117,9706 1238,9869 1344,10012
 Am Bahnhof Grunewald	N 936,8933 901,8969 884,8954 870,8939 912,8895
@@ -11822,6 +11824,8 @@ Neuer Steg	N 8211,19082 8194,19055
 Genossenschaftssteg	N 7940,19521 7920,19471 7911,19449 8029,19353 8105,19286 8099,19276 8122,19252 8194,19193
 Genossenschaftssteg	N 8122,19252 8170,19308
 Straße 33 (Niederschönhausen)	N 7920,19471 7877,19507 7797,19580
+#: XXX wurde dieser Teil der Straße 33 zu "Hauptstr. 3-7" umbenannt? (siehe DPAG-Mitteilungsblatt 3/2013)
+#: XXX falls ja, auch aus Berlin.coords.data entfernen
 Straße 33 (Wilhelmsruh)	NN 7603,19713 7675,19677
 Straße 78	N 7715,19408 7797,19580
 Straße 79	N 7877,19507 7805,19359 7797,19345
