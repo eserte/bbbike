@@ -1113,14 +1113,14 @@ userdel	2::inwork 19968,16 19940,52
          'type' => 'handicap'
        },
        {
-         'source_id' => 'INKO_117614',
+         'source_id' => 'INKO_093369',
          'until' => 1404140400,
-         'text' => 'Behrenstr. (Mitte): zwischen Glinkastr. und Friedrichstr. gesperrt',
+         'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
          'from' => undef,
          'id' => 2317,
          'data' => '#: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
-#userdel	q3::inwork; 9164,12172 9373,12197
-userdel	q3::inwork 9164,12172 9373,12197
+userdel	q3::inwork; 9164,12172 9373,12197
+#userdel	q3::inwork 9164,12172 9373,12197
 ',
          'type' => 'handicap'
        },
@@ -1220,16 +1220,7 @@ userdel	2::inwork 8270,10613 8199,10634
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_019043',
-         'until' => 1363356000,
-         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Mitte März 2013',
-         'from' => 1344142800,
-         'id' => 2368,
-         'data' => 'userdel	q4::inwork; 10953,15787 11086,15772
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

@@ -20054,15 +20054,15 @@ EOF
      },
      { from  => undef, # 1329631200, # 2012-02-19 07:00
        until => 1404140400, # 2014-06-30 17:00
-#       text  => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
-       text  => 'Behrenstr. (Mitte): zwischen Glinkastr. und Friedrichstr. gesperrt',
+       text  => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
+#       text  => 'Behrenstr. (Mitte): zwischen Glinkastr. und Friedrichstr. gesperrt',
        type  => 'handicap',
-#       source_id => 'INKO_093369',
-       source_id => 'INKO_117614',
+       source_id => 'INKO_093369',
+#       source_id => 'INKO_117614',
        data  => <<EOF,
 #: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
-#userdel	q3::inwork; 9164,12172 9373,12197
-userdel	q3::inwork 9164,12172 9373,12197
+userdel	q3::inwork; 9164,12172 9373,12197
+#userdel	q3::inwork 9164,12172 9373,12197
 EOF
      },
      { from  => 1330419240, # 2012-02-28 09:54

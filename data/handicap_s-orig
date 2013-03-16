@@ -12,22 +12,22 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-03-14 vvv
-#: next_check: 2013-03-22 vvv
-#: source_id: IM_019476
+#: last_checked: 2013-03-16 vvv
+#: next_check: 2013-06-30 vvv
+#: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
 # REMOVED --- Dirschauer Str.: Einbahnstraßenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2013-03-10
+#: last_checked: 2013-03-16
 #: next_check: 2013-03-17
 Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # 
-#: last_checked: 2013-03-03
-Helmerdingstr.: Bauarbeiten	q3::inwork 14465,11195 14442,11101
+#: last_checked: 2013-03-16
+Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-03-14 vvv
+#: last_checked: 2013-03-15 vvv
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
 # REMOVED (Einbahnstraße) --- Helsingforser Str.: Bauarbeiten, Einbahnstraße, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
@@ -52,7 +52,7 @@ Markgrafendamm - Modersohnstr.: Bauarbeiten, Fahrbahn gesperrt, enger Gehweg kan
 # 
 ### Mitte ###
 # 
-#: last_checked: 2013-02-11
+#: last_checked: 2013-03-16
 #: source_id: INKO_113388
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # 
@@ -68,10 +68,10 @@ Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehwe
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
-#: last_checked: 2013-02-20
+#: last_checked: 2013-03-16
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # 
-#: last_checked: 2013-02-20
+#: last_checked: 2013-03-16
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
 #: last_checked: 2013-02-23 vvv
@@ -115,7 +115,7 @@ Ella-Trebe-Str./Berta-Benz-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::in
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: XXX siehe auch Einträge in fragezeichen-orig (Falkoniergasse etc.)
-#: last_checked: 2013-02-14 vvv
+#: last_checked: 2013-03-16 vvv
 #: next_check: 2013-05-01 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
@@ -143,7 +143,7 @@ Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q
 # REMOVED (now again entry above is active) --- Neue Grünstr.: Fahrbahn gesperrt wegen Bauarbeiten	q4::inwork 10389,11390 10446,11470
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-03-08 vvv
+#: last_checked: 2013-03-16 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -153,7 +153,7 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 #: next_check: 2013-03-30
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 # 
-#: last_checked: 2013-03-08
+#: last_checked: 2013-03-16
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
 # 
 ### Kreuzberg ###
@@ -161,7 +161,7 @@ Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919
 #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
 #: source_id: INKO_114376
 #: source_id: IM_019321
-#: last_checked: 2013-03-14
+#: last_checked: 2013-03-15
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
 ### Köpenick ###
@@ -689,7 +689,7 @@ Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 (Ernst-Heilmann-Steg): Fußgänger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX später vielleicht wieder "Fußgänger, q1", und evtl. nur den Brückenabschnitt so markieren
-#: last_checked: 2013-03-08
+#: last_checked: 2013-03-16
 #: next_check: 2013-06-01
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: XXX siehe auch Eintrag zum Spreeufer in gesperrt-orig

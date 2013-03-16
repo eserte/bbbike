@@ -89,7 +89,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-03-14 vvv
+#: last_checked: 2013-03-16 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -501,6 +501,7 @@ Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,13
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110922.1205.359607.html vvv
 #: last_checked: 2012-09-16
 #: next_check: 2013-06-01
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5098 (Verzögerung, März 2013)
 Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,12824 23738,12799
 #: last_checked: 2011-10-22
 Cecilienstraße/Hannaweg: neuer Zebrastreifen wird markiert	?::projected 20909,13968 20936,13941
@@ -758,6 +759,14 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656
+#: next_check: 2014-03-15
+Greifenhagener Str.: evtl. wird hier eine Fußgängerzone entstehen	? 11123,15851 11150,15908
+# 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
+#: next_check: 2013-07-24
+Alt-Karow: evtl. wird hier ein Schutzstreifen angelegt	? 15726,23475 15637,23251 15547,23024 15529,22981 15428,22736
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453
 #: XXX 13127 Berlin, Ortsteil Französisch Buchholz
