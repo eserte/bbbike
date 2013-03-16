@@ -1,11 +1,10 @@
 #!/usr/local/bin/perl -w
-# -*- perl -*-
+# -*- cperl -*-
 
 #
-# $Id: mkport.pl,v 1.30 2008/01/20 23:19:12 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2004,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -181,30 +180,11 @@ if (keys %insert_after) {
     die "Following insert afters were unhandled: " . keys(%insert_after);
 }
 
-my $md5;
 my $sha256;
 {
-    warn "Get MD5 and SHA256 of $bbbike_archiv_dir/$bbbike_archiv:\n";
-    $md5 = `cd $bbbike_archiv_dir && md5 $bbbike_archiv`;
+    warn "Get SHA256 of $bbbike_archiv_dir/$bbbike_archiv:\n";
     $sha256 = `cd $bbbike_archiv_dir && sha256 $bbbike_archiv`;
     my $md5_sha256_qr = qr/^(MD5|SHA256)\s*(\(.*\))\s*(=)\s*(.*)$/;
-
-    if (!defined $md5 || $md5 !~ $md5_sha256_qr) {
-	# try md5sum:
-	$md5 = `cd $bbbike_archiv_dir && md5sum $bbbike_archiv`;
-	if (!$md5) {
-	    die "Couldn't get MD5 of $bbbike_archiv, tried md5 and md5sum";
-	} else {
-	    $md5 = (split /\s+/, $md5)[0];
-	    $md5 = "MD5 ($bbbike_archiv) = $md5";
-	    if ($md5 !~ $md5_sha256_qr) {
-		die "$md5 does not match the proper MD5 pattern";
-	    }
-	    $md5 = "$1 $2 $3 $4"; # reformat md5 value
-	}
-    } else {
-	$md5 = "$1 $2 $3 $4"; # reformat md5 value
-    }
 
     if (!defined $sha256 || $sha256 !~ $md5_sha256_qr) {
 	# try sha256sum:
@@ -227,7 +207,6 @@ my $sha256;
 my $distsize = (stat("$bbbike_archiv_dir/$bbbike_archiv"))[7];
 
 open(DISTINFO, ">$portdir/distinfo") or die "Can't write distinfo file: $!";
-print DISTINFO $md5, "\n";
 print DISTINFO $sha256, "\n";
 print DISTINFO "SIZE ($bbbike_archiv) = $distsize\n";
 close DISTINFO;
