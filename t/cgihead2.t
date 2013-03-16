@@ -79,6 +79,8 @@ push @var, (qw(
 	       $BBBike::SF_DISTFILE_SOURCE
 	       $BBBike::SF_DISTFILE_WINDOWS
 	       $BBBike::SF_DISTFILE_DEBIAN
+	       $BBBike::SF_DISTFILE_DEBIAN_I386
+	       $BBBike::SF_DISTFILE_DEBIAN_AMD64
 	       $BBBike::DISTFILE_FREEBSD_I386
 	       $BBBike::DISTFILE_FREEBSD_ALL
 	      ),
