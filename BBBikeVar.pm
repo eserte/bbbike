@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000-2010,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000-2010,2012,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,9 +15,9 @@
 
 package BBBike;
 
-$VERSION	   = '3.18-DEVEL'; # remove "-DEVEL" for releases
-$STABLE_VERSION	   = '3.17';
-$WINDOWS_VERSION   = '3.17'; # Windows distribution
+$VERSION	   = '3.18'; # remove "-DEVEL" for releases
+$STABLE_VERSION	   = '3.18';
+$WINDOWS_VERSION   = '3.18'; # Windows distribution
 $FREEBSD_VERSION   = '3.17'; # (used on download page and bbbikevar.t)
 $DEBIAN_I386_VERSION  = '3.17-1'; # including revision
 $DEBIAN_AMD64_VERSION = '3.17-1'; # including revision
@@ -59,9 +59,9 @@ $BBBIKE_MOBILE	   = 'http://m.bbbike.de';
 
 # Distribution directory for scripts. Unfortunately there's no directory
 # index available anymore at sourceforge...
-$DISTDIR	   = 'http://heanet.dl.sourceforge.net/project/bbbike';
-$DISTFILE_SOURCE   = "$DISTDIR/BBBike/$STABLE_VERSION/BBBike-$STABLE_VERSION.tar.gz";
-$DISTFILE_WINDOWS  = "$DISTDIR/BBBike/$WINDOWS_VERSION/BBBike-$WINDOWS_VERSION-Windows.exe";
+$DISTDIR	   = 'http://sourceforge.net/projects/bbbike/files';
+$DISTFILE_SOURCE   = "$DISTDIR/BBBike/$STABLE_VERSION/BBBike-$STABLE_VERSION.tar.gz/download";
+$DISTFILE_WINDOWS  = "$DISTDIR/BBBike/$WINDOWS_VERSION/BBBike-$WINDOWS_VERSION-Windows.exe/download";
 # Distribution directory for humans (link to 'show files' at sourceforge, and restricted to BBBike)
 $DISPLAY_DISTDIR   = 'http://sourceforge.net/projects/bbbike/files/BBBike/';
 $LATEST_RELEASE_DISTDIR  = "http://sourceforge.net/projects/bbbike/files/BBBike/$STABLE_VERSION/";

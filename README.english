@@ -2,11 +2,13 @@
 
 BBBike - a route-finder for cyclists in Berlin and Brandenburg
 
-=head1 PREBUILD PACKAGES
+=head1 PREBUILT PACKAGES
 
-You can check on L<http://bbbike.sourceforge.net/downloads.en.html> for prebuild BBBike
-packages. But keep in mind that the versions there might not represent
-the newest state and maybe your operating system is not covered.
+You can check on L<http://bbbike.sourceforge.net/downloads.en.html> for prebuilt BBBike
+packages (Windows, einige Linux-Distributionen, MacOSX, FreeBSD).
+
+The following installation steps are necessary only for installing
+BBBike from source.
 
 =head1 INSTALLATION
 
@@ -18,7 +20,7 @@ the newest state and maybe your operating system is not covered.
 
 You can find the newest source distribution file of BBBike in the directory
 L<http://sourceforge.net/projects/bbbike/files/BBBike/> . The current source version is
-L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz> .
+L<http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18.tar.gz/download> .
 
 =head3 FreeBSD
 
@@ -35,24 +37,25 @@ UNIX's|/Linux, Solaris, other UNIX operating systems>.
 
 =head3 Linux, Solaris, other UNIX operating systems
 
-First, you have to install perl5. Most operating systems have perl
+First, you have to install perl. Most operating systems have perl
 already bundled. You can check with
 
-	perl -V
+	perl -v
 
 whether and which version of perl is installed. Otherwise you can find
-perl5 at L<http://www.perl.com>. You need at least version 5.005.
+perl at L<http://www.perl.org/get.html>. You need at least version
+5.005, but newer perl versions (5.6.x, 5.8.x, 5.10.x, 5.12.x, 5.14.x,
+5.16.x) work, too.
 
 Next step is to extract the BBBike distribution:
 
 
-	zcat BBBike-3.17.tar.gz | tar xfv -
+	zcat BBBike-3.18.tar.gz | tar xfv -
 
 If perl/Tk (the recommended version is 804.028 or 800.025) is not installed:
-change to the directory
-C<BBBike-3.17> and type as super user:
+type as super user:
 
-
+        cd BBBike-3.18
 	perl -I`pwd` -MCPAN -e shell
 	force install Bundle::BBBike_small
 	quit
@@ -73,8 +76,9 @@ After that, you can start the program with
 
 	perl bbbike
 
+
 To compile some XS modules (this is optional and needs a C compiler)
-and install the panel entry for KDE, type:
+and install the panel entry for KDE/GNOME, type:
 
 
 	perl install.pl
@@ -107,7 +111,7 @@ L<http://groups.google.com>).
 
 The following instructions are from Wolfram Kroll:
 
-Get L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz> and (from
+Get L<http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18.tar.gz/download> and (from
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 
 =over
@@ -148,14 +152,14 @@ An X11 environment or Darwin environment is also required (package X11SDK).
 Mac OS Classic is not supported.
 
 
-=head2 Windows 95/98/2000/NT/XP
+=head2 Windows 95/98/2000/NT/XP/Vista/7/8
 
 =head3 Normal installation
 
 BBBike and Perl need approx. 32 MB hard disk space.
 
 Download the file
-L<http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17-Windows.exe> and just start it for the installation
+L<http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18-Windows.exe/download> and just start it for the installation
 program.
 
 =head3 Alternative Windows Installation (1)
@@ -169,30 +173,32 @@ for Windows 95/98/2000/NT/XP users:
 
 Download the perl distribution from the ActiveState webpage:
 
-L<http://www.activestate.com/Products/ActivePerl/Download.html>
+L<http://www.activestate.com/activeperl/downloads>
+
+or alternatively use Strawberry Perl:
+
+L<http://strawberryperl.com/>
 
 
 
-Usually, there are two files needed for the installation: the Windows
-Installer and the Perl distribution for Windows Intel. You have to
-execute both files. While installing Perl, you will have to reboot
-your computer.
+The Tk module needs to be installed using the following commands in
+cmd.exe:
 
-In current ActivePerl versions the Tk module is already included and
-does not need to be installed.
+    perl -MCPAN -eshell
+    force notest install Tk
+    quit
 
 
 =item *
 
 Download
-C<BBBike-3.17.tar.gz|http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17-Windows.exe>
-and extract this file with 
-WinZip. The unpacked directory will not move in the later
-installation.
+L<BBBike-3.18.tar.gz|http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18-Windows.exe/download>
+and extract this file. The unpacked directory may be moved to another
+position in the filesystem.
 
 =item *
 
-Open the explorer, change to the BBBike-3.17 directory and call
+Open the explorer, change to the BBBike-3.18 directory and call
 
 
 	install.pl.
@@ -210,7 +216,7 @@ L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
 
 =head3 Alternative Windows Installation (3)
 
-As an further alternative, you can download an older distribution with Tk
+For very old systems (Windows95, 98) you can download an older distribution with Tk
 included:
 
 L<http://www.perl.com/CPAN/ports/win32/Standard/x86/perl5.00402-bindist04-bc.tar.gz>
@@ -231,28 +237,28 @@ example 2.x) have instructions on how to use BBBike under Windows 3.1.
 
 =head1 EXECUTION
 
+=head2 Perl/Tk version
+
 To execute BBBike on Unix, change to the bbbike directory and type
 
 
 	perl bbbike
 
-in the shell. With a full KDE installation, there is an icon in the
+in the shell. With a full KDE/GNOME installation, there is an icon in the
 application menu item
 of the start menu. On Windows, there is a start menu entry for
 BBBike.
 
 To switch the English language support, please set the LC_ALL,
 LC_MESSAGES, or LANG environment variables to "en" or something
-similar (for FreeBSD and Linux, this is "en-GB.ISO8859-1"). For Unix,
+similar (for FreeBSD and Linux, this is "en_US.UTF-8"). For Unix,
 this can be done with
 
 
-	env LC_ALL=en-GB.ISO8859-1 perl bbbike
+	env LC_ALL=en_US.UTF-8 perl bbbike
 
 
-BBBike is a memory and cpu hog. You need at least 16 MB RAM on i386
-platforms (Solaris needs at least 32 MB), but with 32/64 MB it will
-work better. Some versions of BBBike are tested with: Solaris (Version 8 und 2.5), FreeBSD (Version 6.1, 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Ubuntu, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4. The
+Some versions of BBBike are tested with: Linux (Debian wheezy, Debian squeeze, Debian etch, Ubuntu 12.04, CentOS, Suse 7.0 und 6.4, Red Hat 8.0), FreeBSD (Version 9.1, 9.0, 8.0, 6.1, 4.9, 4.6, 3.5), Windows (Windows 8, Windows 7, Vista, XP, 2000, NT 4.0, 98, 95), MacOSX (10.4, 10.5 ...), Solaris (Version 8 und 2.5). The
 development machine runs with FreeBSD.
 
 =head2 WWW version
@@ -266,18 +272,16 @@ More information for the CGI version at:
 L<http://bbbike.de/cgi-bin/bbbike.cgi/info=1>
 
 
-=head2 Non GUI version
 
-C<cbbbike> and C<cmdbbbike> are simpler command line versions of the program.
+
 
 =head1 DEVELOPMENT
-
 
 =head2 git
 
 The current BBBike development may be tracked via git.
 
-To use the git repository from command line type the following:
+To fetch the git repository type the following in the command line:
 
 
     git clone git://github.com/eserte/bbbike.git
@@ -287,15 +291,11 @@ to update the next time
     cd bbbike
     git pull
 
-The git repository is always up-to-date and also contains the current
+The git repository is frequently updated and also contains the current
 data.
 
 
-=head2 CVS
 
-If git cannot be used, then there's still the possibility to access
-the old CVS repository (:pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike). Note that it's not guaranteed that
-updates occur in the same frequency as for the git repository.
 
 =head2
 Application update
@@ -310,6 +310,10 @@ To update only the data part of BBBike, just download the current data
 as a ZIP file from L<http://www.bbbike.de/cgi-bin/bbbike-data.cgi>. The ZIP file has to be
 extracted in the BBBike program directory (Windows: in
 C<C:\Programme\BBBike\bbbike>).
+
+The data may also be updated within the Perl/Tk application, using the
+menu item Settings > Data update over internet.
+
 
 =head1 DOCUMENTATION
 
@@ -334,7 +338,7 @@ C<lib/Text/ScriptTemplate.pm> by Taisuke Yamada, C<lib/enum.pm> by
 Zenin, C<ext/Strassen-Inline/heap.[ch]> by Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> by Eyal Lebedinsky.
 
-C<BBBike-3.17-Windows.zip> contains a partial
+C<BBBike-3.18-Windows.zip> contains a partial
 C<Strawberry Perl> distribution, see
 L<http://strawberryperl.com/>
 

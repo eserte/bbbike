@@ -8,7 +8,7 @@
 [% #  * Tk version -%]
 [% #  -%]
 [% #  Warning: use no-fill in the next line! -%]
-[% SET TESTPLATFORMS = "Solaris (Version 8 und 2.5), FreeBSD (Version 6.1, 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Ubuntu, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4" -%]
+[% SET TESTPLATFORMS = "Linux (Debian wheezy, Debian squeeze, Debian etch, Ubuntu 12.04, CentOS, Suse 7.0 und 6.4, Red Hat 8.0), FreeBSD (Version 9.1, 9.0, 8.0, 6.1, 4.9, 4.6, 3.5), Windows (Windows 8, Windows 7, Vista, XP, 2000, NT 4.0, 98, 95), MacOSX (10.4, 10.5 ...), Solaris (Version 8 und 2.5)" -%]
 [% PERL -%]
 require BBBikeVar;
 $stash->set('BBBIKEVAR_DISPLAY_DISTDIR', $BBBike::DISPLAY_DISTDIR);
@@ -28,8 +28,7 @@ $stash->set('CVSREPO', $BBBike::BBBIKE_CVS_ANON_REPOSITORY);
 $stash->set('HTTPSNAPSHOT', $BBBike::BBBIKE_UPDATE_DIST_CGI);
 [% END -%]
 [% #  -%]
-[% #  $Id: README.spp,v 2.45 2008/12/31 16:41:14 eserte Exp $ -%]
-[% #  strpp source of README -%]
+[% #  .tpl source of README -%]
 [% #  -%]
 =head1 README
 
@@ -45,20 +44,24 @@ a route-finder for cyclists in Berlin and Brandenburg
 [%- IF lang=="DE" -%]
 FERTIGE PAKETE
 [%- ELSE -%]
-PREBUILD PACKAGES
+PREBUILT PACKAGES
 [%- END -%]
 
 
 
 [%- IF lang=="DE" -%]
 Wenn man sich die Arbeit erleichtern möchte, dann kann man ein
-fertiges Paket auf L<[% BBBIKESFWWW %]/downloads.de.html> finden. Die
-Versionen dort sind allerdings unter Umständen nicht auf dem neuesten
-Stand; auch sind nicht alle Betriebssysteme erhältlich.
+fertiges Paket auf L<[% BBBIKESFWWW %]/downloads.de.html> finden
+(Windows, einige Linux-Distributionen, MacOSX, FreeBSD).
+
+Die nächsten Installationsschritte werden nur für die
+BBBike-Installation aus den Quellen benötigt.
 [%- ELSE -%]
-You can check on L<[% BBBIKESFWWW %]/downloads.en.html> for prebuild BBBike
-packages. But keep in mind that the versions there might not represent
-the newest state and maybe your operating system is not covered.
+You can check on L<[% BBBIKESFWWW %]/downloads.en.html> for prebuilt BBBike
+packages (Windows, einige Linux-Distributionen, MacOSX, FreeBSD).
+
+The following installation steps are necessary only for installing
+BBBike from source.
 [%- END -%]
 
 
@@ -132,24 +135,27 @@ Linux, Solaris, other UNIX operating systems
 
 
 [%- IF lang=="DE" -%]
-Perl5 muss installiert sein. Das ist oft, besonders bei Linux, der
+Perl muss installiert sein. Das ist oft, besonders bei Linux, der
 Fall. Mit
 
-	perl -V
+	perl -v
 
 kann überprüft werden, ob und welche Version von perl installiert ist.
-Ansonsten kann man Perl5 unter L<http://www.perl.com> finden. Es wird
-mindestens die Version 5.005 benötigt.
+Ansonsten kann man Perl unter L<http://www.perl.org/get.html> finden. Es wird
+mindestens die Version 5.005 benötigt, alle neueren Perl-Versionen
+(5.6.x, 5.8.x, 5.10.x, 5.12.x, 5.14.x, 5.16.x) funktionieren auch.
 
 Danach kann BBBike ausgepackt werden:
 [%- ELSE -%]
-First, you have to install perl5. Most operating systems have perl
+First, you have to install perl. Most operating systems have perl
 already bundled. You can check with
 
-	perl -V
+	perl -v
 
 whether and which version of perl is installed. Otherwise you can find
-perl5 at L<http://www.perl.com>. You need at least version 5.005.
+perl at L<http://www.perl.org/get.html>. You need at least version
+5.005, but newer perl versions (5.6.x, 5.8.x, 5.10.x, 5.12.x, 5.14.x,
+5.16.x) work, too.
 
 Next step is to extract the BBBike distribution:
 [%- END -%]
@@ -161,24 +167,22 @@ Next step is to extract the BBBike distribution:
 
 [%- IF lang=="DE" -%]
 Falls perl/Tk (eine möglichst neue Version, z.B. 804.028 or 800.025) nicht
-installiert ist: in das Verzeichnis C<BBBike-[% BBBIKEVER %]>
-wechseln und als Superuser
+installiert ist: als Superuser folgendes eingeben:
 [%- ELSE -%]
 If perl/Tk (the recommended version is 804.028 or 800.025) is not installed:
-change to the directory
-C<BBBike-[% BBBIKEVER %]> and type as super user:
+type as super user:
 [%- END -%]
 
 
-
+        cd BBBike-[% BBBIKEVER %]
 	perl -I`pwd` -MCPAN -e shell
 	force install Bundle::BBBike_small
 	quit
 
 
 [%- IF lang=="DE" -%]
-eingeben, damit Perl/Tk über das
-Internet geladen, compiliert und installiert wird. "force" wird
+Damit wird Perl/Tk über das
+Internet geladen, compiliert und installiert. "force" wird
 benötigt, da einige Module erwartete Fehler in der Test-Suite erzeugen
 und damit die Installation verhindern. Wenn weitere Probleme
 auftreten (insbesondere mit der Internet-Verbindung), dann sollten
@@ -188,7 +192,7 @@ die Anweisungen in
 
 befolgt werden, um das Modul Tk manuell zu installieren.
 
-Danach kann mit
+Danach kann das Programm mit
 [%- ELSE -%]
 Perl/Tk will be fetched over the internet, get compiled
 and installed. "force" is needed because some modules (especially Tk)
@@ -210,10 +214,13 @@ After that, you can start the program with
 
 
 [%- IF lang=="DE" -%]
-das Programm gestartet werden. Mit
+gestartet werden.
+
+Optional kann mit
 [%- ELSE -%]
+
 To compile some XS modules (this is optional and needs a C compiler)
-and install the panel entry for KDE, type:
+and install the panel entry for KDE/GNOME, type:
 [%- END -%]
 
 
@@ -233,8 +240,8 @@ or
 
 
 [%- IF lang=="DE" -%]
-kann optional eine Compilierung von einigen XS-Modulen durchgeführt
-werden sowie Einträge für KDE erzeugt werden. Für das Compilieren
+eine Compilierung von einigen XS-Modulen durchgeführt
+werden sowie Einträge für KDE/GNOME erzeugt werden. Für das Compilieren
 ist ein C-Compiler (z.B. gcc), der mittlerweile nicht bei allen
 Linux-Versionen standardmäßig installiert wird, notwendig.
 [%- END -%]
@@ -242,8 +249,8 @@ Linux-Versionen standardmäßig installiert wird, notwendig.
 [%- IF lang=="DE" -%]
 
 
-Statt Bundle::BBBike_small kann auch Bundle::BBBike verwendet werden.
-Damit werden wesentlich mehr Module installiert, die teilweise nur für
+Statt dem oben erwähnten Bundle::BBBike_small kann auch Bundle::BBBike verwendet werden.
+Damit werden wesentlich mehr Perl-Module installiert, die teilweise nur für
 die Entwicklung verwendet werden, teilweise aber zusätzliche
 BBBike-Features ermöglichen.
 
@@ -390,7 +397,7 @@ Mac OS Classic is not supported.
 
 
 
-=head2 Windows 95/98/2000/NT/XP
+=head2 Windows 95/98/2000/NT/XP/Vista/7/8
 
 =head3 
 [%- IF lang=="DE" -%]
@@ -441,31 +448,35 @@ Download the perl distribution from the ActiveState webpage:
 [%- END -%]
 
 
-L<http://www.activestate.com/Products/ActivePerl/Download.html>
+L<http://www.activestate.com/activeperl/downloads>
+
+
+[%- IF lang=="DE" -%]
+oder es kann alternativ Strawberry Perl verwendet werden:
+[%- ELSE -%]
+or alternatively use Strawberry Perl:
+[%- END -%]
+
+
+L<http://strawberryperl.com/>
 
 
 [%- IF lang=="DE" -%]
 
 
-In der Regel werden zwei Dateien zum Installieren benötigt, den
-Windows Installer und die eigentliche Perl-Distribution für Windows
-Intel. Beide Dateien müssen nacheinander ausgeführt werden. Die
-Installation ist normalerweise mit einigen Reboots verbunden.
-
-In den aktuellen Versionen von ActivePerl ist das Tk-Modul bereits
-enthalten und muss nicht separat installiert werden.
+Das Tk-Modul muss separat installiert werden. Das wird in der
+Eingabeaufforderung mit den folgenden Kommandos getan:
 [%- ELSE -%]
 
 
-Usually, there are two files needed for the installation: the Windows
-Installer and the Perl distribution for Windows Intel. You have to
-execute both files. While installing Perl, you will have to reboot
-your computer.
-
-In current ActivePerl versions the Tk module is already included and
-does not need to be installed.
+The Tk module needs to be installed using the following commands in
+cmd.exe:
 [%- END -%]
 
+
+    perl -MCPAN -eshell
+    force notest install Tk
+    quit
 
 
 =item *
@@ -473,14 +484,13 @@ does not need to be installed.
 
 [%- IF lang=="DE" -%]
 L<BBBike-[% BBBIKEWINVER %].tar.gz|[% BBBIKEVAR_DISTFILE_WINDOWS %]>
-downloaden und mit WinZip auspacken. Das
-ausgepackte Verzeichnis wird später nicht mehr verschoben.
+downloaden und auspacken. Das
+ausgepackte Verzeichnis kann an eine gewünschte Position verschoben werden.
 [%- ELSE -%]
 Download
-C<BBBike-[% BBBIKEWINVER %].tar.gz|[% BBBIKEVAR_DISTFILE_WINDOWS %]>
-and extract this file with 
-WinZip. The unpacked directory will not move in the later
-installation.
+L<BBBike-[% BBBIKEWINVER %].tar.gz|[% BBBIKEVAR_DISTFILE_WINDOWS %]>
+and extract this file. The unpacked directory may be moved to another
+position in the filesystem.
 [%- END -%]
 
 
@@ -528,10 +538,10 @@ L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
 
 
 [%- IF lang=="DE" -%]
-Als weitere Alternative kann eine ältere perl-Distribution, die allerdings Tk
-bereits enthält, geladen werden:
+Für sehr alte Systeme (Windows95, 98) kann als weitere Alternative eine ältere perl-Distribution, die bereits Tk
+enthält, geladen werden:
 [%- ELSE -%]
-As an further alternative, you can download an older distribution with Tk
+For very old systems (Windows95, 98) you can download an older distribution with Tk
 included:
 [%- END -%]
 
@@ -581,6 +591,14 @@ EXECUTION
 [%- END -%]
 
 
+=head2 
+[%- IF lang=="DE" -%]
+Perl/Tk-Version
+[%- ELSE -%]
+Perl/Tk version
+[%- END -%]
+
+
 
 [%- IF lang=="DE" -%]
 Unter Unix wird BBBike ausgeführt, indem man ins bbbike-Verzeichnis
@@ -589,14 +607,12 @@ wechselt und
 
 	perl bbbike
 
-eintippt. Wenn eine KDE-Installation durchgeführt wurde, findet man
+eintippt. Wenn eine KDE/GNOME-Installation durchgeführt wurde, findet man
 das Icon im 
 Startmenü unter dem Punkt "Anwendungen". Bei Windows befindet sich das
 BBBike-Icon ebenfalls im Startmenü.
 
-BBBike ist sehr speicher- und CPU-intensiv. Mindestens 16 MB RAM sind
-auf i386-Plattformen notwendig (bei Solaris mindestens 32 MB), besser
-das doppelte davon. Einige Versionen von BBBike wurden unter folgenden
+Einige Versionen von BBBike wurden unter folgenden
 Plattformen getestet: [% TESTPLATFORMS %]. Die
 Entwicklungsarbeit wird auf einem FreeBSD-Rechner vorgenommen.
 [%- ELSE -%]
@@ -605,23 +621,21 @@ To execute BBBike on Unix, change to the bbbike directory and type
 
 	perl bbbike
 
-in the shell. With a full KDE installation, there is an icon in the
+in the shell. With a full KDE/GNOME installation, there is an icon in the
 application menu item
 of the start menu. On Windows, there is a start menu entry for
 BBBike.
 
 To switch the English language support, please set the LC_ALL,
 LC_MESSAGES, or LANG environment variables to "en" or something
-similar (for FreeBSD and Linux, this is "en-GB.ISO8859-1"). For Unix,
+similar (for FreeBSD and Linux, this is "en_US.UTF-8"). For Unix,
 this can be done with
 
 
-	env LC_ALL=en-GB.ISO8859-1 perl bbbike
+	env LC_ALL=en_US.UTF-8 perl bbbike
 
 
-BBBike is a memory and cpu hog. You need at least 16 MB RAM on i386
-platforms (Solaris needs at least 32 MB), but with 32/64 MB it will
-work better. Some versions of BBBike are tested with: [% TESTPLATFORMS %]. The
+Some versions of BBBike are tested with: [% TESTPLATFORMS %]. The
 development machine runs with FreeBSD.
 [%- END -%]
 
@@ -646,7 +660,7 @@ L<[% CGIURL %]>
 
 
 [%- IF lang=="DE" -%]
-eine einfache, stark text-orientierte Version von bbbike. Weitere
+eine einfache, stark text-orientierte, aber dennoch leistungsfähige Version von bbbike. Weitere
 Informationen zu der CGI-Version gibt es unter
 [%- ELSE -%]
 More information for the CGI version at:
@@ -656,6 +670,7 @@ More information for the CGI version at:
 L<[% DIRECTCGIURL %]/info=1>
 
 
+[% IF 0 %][%# Don't mention now, cbbbike fails currently -%]
 =head2 
 [%- IF lang=="DE" -%]
 Nicht-GUI-Version
@@ -672,6 +687,8 @@ Programms.
 C<cbbbike> and C<cmdbbbike> are simpler command line versions of the program.
 [%- END -%]
 
+[% END %]
+
 
 =head1 
 [%- IF lang=="DE" -%]
@@ -681,20 +698,19 @@ DEVELOPMENT
 [%- END -%]
 
 
-
 =head2 git
 
 
 [%- IF lang=="DE" -%]
-Der aktuelle Entwicklungsstand von BBBike kann über git
+Der aktuelle Entwicklungsstand von BBBike kann mit git
 verfolgt werden.
 
-Von der Kommandozeile muss folgendes eingegeben werden:
+Dazu muss in der Kommandozeile folgendes eingegeben werden:
 
 [%- ELSE -%]
 The current BBBike development may be tracked via git.
 
-To use the git repository from command line type the following:
+To fetch the git repository type the following in the command line:
 
 [%- END -%]
 
@@ -719,12 +735,13 @@ Daten.
 
 
 [%- ELSE -%]
-The git repository is always up-to-date and also contains the current
+The git repository is frequently updated and also contains the current
 data.
 
 [%- END -%]
 
 
+[% IF 0 %][%# CVS wird nicht mehr aktualisiert -%]
 =head2 CVS
 
 
@@ -738,7 +755,7 @@ If git cannot be used, then there's still the possibility to access
 the old CVS repository ([% CVSREPO %]). Note that it's not guaranteed that
 updates occur in the same frequency as for the git repository.
 [%- END -%]
-
+[% END %]
 
 =head2
 
@@ -774,11 +791,18 @@ Um nur die Daten zu aktualisieren, kann man sich die aktuellen Daten
 als ZIP-Datei von L<[% BBBIKEVAR_UPDATE_DATA_CGI %]> holen. Die ZIP-Datei
 muss im BBBike-Programmverzeichnis (bei Windows unter
 C<C:\Programme\BBBike\bbbike>) ausgepackt werden.
+
+Die Daten können auch aus der Perl/Tk-Applikation heraus aktualisiert
+werden: per Menüpunkt Einstellungen > Daten-Update über das Internet.
 [%- ELSE -%]
 To update only the data part of BBBike, just download the current data
 as a ZIP file from L<[% BBBIKEVAR_UPDATE_DATA_CGI %]>. The ZIP file has to be
 extracted in the BBBike program directory (Windows: in
 C<C:\Programme\BBBike\bbbike>).
+
+The data may also be updated within the Perl/Tk application, using the
+menu item Settings > Data update over internet.
+
 [%- END -%]
 
 
