@@ -2,11 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikevar.t,v 1.1 2004/11/29 22:08:58 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
+
+BEGIN {
+    print "1..0 # skip test does not apply anymore, URLs have changed\n"; # now $DISTDIR is not using anymore a sf mirror
+    exit;
+}
 
 use File::Basename;
 
@@ -27,7 +31,8 @@ BEGIN {
 BEGIN { plan tests => 1 }
 
 my $ports_dir;
-for my $try_ports_dir ("/home/e/eserte/work2/freebsd/ports", # private, usually more up-to-date
+for my $try_ports_dir (
+		       #"/home/e/eserte/work2/freebsd/ports", # private, usually more up-to-date # XXX not used anymore
 		       "/usr/ports",
 		      ) {
     if (-d $try_ports_dir) {

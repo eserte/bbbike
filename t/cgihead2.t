@@ -143,6 +143,10 @@ for my $var (@var) {
 
 SKIP: {
     my $no_tests = 1;
+    skip "Test does not apply anymore", $no_tests;
+    # That's because $BBBike::DISTDIR is now set to a different
+    # download link, not using anymore the sf mirrors.
+
     my $bsd_port_dir = "/usr/ports";
     if (-d $bsd_port_dir) {
 	chdir "$bsd_port_dir/Mk" or die "Cannot chdir into Mk directory: $!";
