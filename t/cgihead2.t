@@ -167,19 +167,27 @@ sub check_url {
     my($url, $var) = @_;
 
     ok(defined $url, (defined $var ? "$var -> $url" : $url));
-    my $method = "head";
-    if ($url =~ m{user.cs.tu-berlin.de}) {
-	$method = "get";	# HEAD does not work here
-    }
-    my $resp = $ua->$method($url);
-    my $redir_url = $resp->request->uri;
-    if ($redir_url eq $url) {
-	$redir_url = "(not redirected)";
-    } else {
-	$redir_url = "(redirected to $redir_url)";
-    }
+
  SKIP: {
 	my $no_tests = 2;
+
+	our %checked;
+	if ($checked{$url}++) {
+	    skip("$url was already checked", $no_tests);
+	}
+
+	my $method = "head";
+	if ($url =~ m{user.cs.tu-berlin.de}) {
+	    $method = "get";	# HEAD does not work here
+	}
+	my $resp = $ua->$method($url);
+	my $redir_url = $resp->request->uri;
+	if ($redir_url eq $url) {
+	    $redir_url = "(not redirected)";
+	} else {
+	    $redir_url = "(redirected to $redir_url)";
+	}
+
 	skip("No internet available", $no_tests)
 	    if ($resp->code == 500 && $resp->message =~ /No route to host/i); # 'Bad hostname' was part of this regexp, but this mask a real test failure!
 	#warn $resp->content;
