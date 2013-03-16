@@ -19,8 +19,8 @@ $VERSION	   = '3.18'; # remove "-DEVEL" for releases
 $STABLE_VERSION	   = '3.18';
 $WINDOWS_VERSION   = '3.18'; # Windows distribution
 $FREEBSD_VERSION   = '3.17'; # (used on download page and bbbikevar.t)
-$DEBIAN_I386_VERSION  = '3.17-1'; # including revision
-$DEBIAN_AMD64_VERSION = '3.17-1'; # including revision
+$DEBIAN_I386_VERSION  = '3.18-1'; # including revision
+$DEBIAN_AMD64_VERSION = '3.18-1'; # including revision
 *DEBIAN_VERSION       = \$DEBIAN_I386_VERSION; # for backward compat
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
