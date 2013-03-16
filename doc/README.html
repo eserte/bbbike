@@ -26,7 +26,7 @@
 <li><a class="POD_NAVLINK" href="#Linux_Solaris_andere">Linux, Solaris, andere Unices</a>
 <li><a class="POD_NAVLINK" href="#Mac_OS_X">Mac OS X</a>
 </ul>
-<li><a class="POD_NAVLINK" href="#Windows_95_98_2000_N">Windows 95/98/2000/NT/XP</a>
+<li><a class="POD_NAVLINK" href="#Windows_95_98_2000_N">Windows 95/98/2000/NT/XP/Vista/7/8</a>
 <ul>
 <li><a class="POD_NAVLINK" href="#Normale_Installation">Normale Installation</a>
 <li><a class="POD_NAVLINK" href="#Alternative_Windows_">Alternative Windows Installation (1)</a>
@@ -37,13 +37,12 @@
 </ul>
 <li><a class="POD_NAVLINK" href="#AUSF_HREN">AUSF&Uuml;HREN</a>
 <ul>
+<li><a class="POD_NAVLINK" href="#Perl_Tk_Version">Perl/Tk-Version</a>
 <li><a class="POD_NAVLINK" href="#WWW_Version">WWW-Version</a>
-<li><a class="POD_NAVLINK" href="#Nicht_GUI_Version">Nicht-GUI-Version</a>
 </ul>
 <li><a class="POD_NAVLINK" href="#ENTWICKLUNG">ENTWICKLUNG</a>
 <ul>
 <li><a class="POD_NAVLINK" href="#git">git</a>
-<li><a class="POD_NAVLINK" href="#CVS">CVS</a>
 <li><a class="POD_NAVLINK" href="#Programm_Aktualisier">Programm-Aktualisierung</a>
 <li><a class="POD_NAVLINK" href="#Daten_Aktualisierung">Daten-Aktualisierung</a>
 </ul>
@@ -59,9 +58,12 @@ BBBike - ein Programm zum Suchen von Routen f&uuml;r Radfahrer in Berlin
 <h2 class="POD_HEAD1"><a name="FERTIGE_PAKETE">FERTIGE PAKETE</a></h2>
 <p class="POD_TEXT">
 Wenn man sich die Arbeit erleichtern m&ouml;chte, dann kann man ein
-fertiges Paket auf <a class="POD_LINK" href="http://bbbike.sourceforge.net/downloads.de.html">http://bbbike.sourceforge.net/downloads.de.html</a> finden. Die
-Versionen dort sind allerdings unter Umst&auml;nden nicht auf dem neuesten
-Stand; auch sind nicht alle Betriebssysteme erh&auml;ltlich.
+fertiges Paket auf <a class="POD_LINK" href="http://bbbike.sourceforge.net/downloads.de.html">http://bbbike.sourceforge.net/downloads.de.html</a> finden
+(Windows, einige Linux-Distributionen, MacOSX, FreeBSD).
+</p>
+<p class="POD_TEXT">
+Die n&auml;chsten Installationsschritte werden nur f&uuml;r die
+BBBike-Installation aus den Quellen ben&ouml;tigt.
 </p>
 <h2 class="POD_HEAD1"><a name="INSTALLATION">INSTALLATION</a></h2>
 <p></p>
@@ -71,7 +73,7 @@ Stand; auch sind nicht alle Betriebssysteme erh&auml;ltlich.
 <p class="POD_TEXT">
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
 <a class="POD_LINK" href="http://sourceforge.net/projects/bbbike/files/BBBike/">http://sourceforge.net/projects/bbbike/files/BBBike/</a> . Die aktuelle Sourcedatei ist
-<a class="POD_LINK" href="http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz">http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz</a> .
+<a class="POD_LINK" href="http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18.tar.gz/download">http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18.tar.gz/download</a> .
 </p>
 <h4 class="POD_HEAD3"><a name="FreeBSD">FreeBSD</a></h4>
 <p class="POD_TEXT">
@@ -89,38 +91,38 @@ Ohne <i>Port</i> kann BBBike wie bei <a class="POD_LINK" href="#Linux_Solaris_an
 </p>
 <h4 class="POD_HEAD3"><a name="Linux_Solaris_andere">Linux, Solaris, andere Unices</a></h4>
 <p class="POD_TEXT">
-Perl5 muss installiert sein. Das ist oft, besonders bei Linux, der
+Perl muss installiert sein. Das ist oft, besonders bei Linux, der
 Fall. Mit
 </p>
 <pre class="POD_VERBATIM">
-	perl -V
+	perl -v
 </pre>
 <p class="POD_TEXT">
 kann &uuml;berpr&uuml;ft werden, ob und welche Version von perl installiert ist.
-Ansonsten kann man Perl5 unter <a class="POD_LINK" href="http://www.perl.com">http://www.perl.com</a> finden. Es wird
-mindestens die Version 5.005 ben&ouml;tigt.
+Ansonsten kann man Perl unter <a class="POD_LINK" href="http://www.perl.org/get.html">http://www.perl.org/get.html</a> finden. Es wird
+mindestens die Version 5.005 ben&ouml;tigt, alle neueren Perl-Versionen
+(5.6.x, 5.8.x, 5.10.x, 5.12.x, 5.14.x, 5.16.x) funktionieren auch.
 </p>
 <p class="POD_TEXT">
 Danach kann BBBike ausgepackt werden:
 </p>
 <p></p>
 <pre class="POD_VERBATIM">
-	zcat BBBike-3.17.tar.gz | tar xfv -
+	zcat BBBike-3.18.tar.gz | tar xfv -
 </pre>
 <p class="POD_TEXT">
 Falls perl/Tk (eine m&ouml;glichst neue Version, z.B. 804.028 or 800.025) nicht
-installiert ist: in das Verzeichnis <code>BBBike-3.17</code>
-wechseln und als Superuser
+installiert ist: als Superuser folgendes eingeben:
 </p>
-<p></p>
 <pre class="POD_VERBATIM">
+        cd BBBike-3.18
 	perl -I`pwd` -MCPAN -e shell
 	force install Bundle::BBBike_small
 	quit
 </pre>
 <p class="POD_TEXT">
-eingeben, damit Perl/Tk &uuml;ber das
-Internet geladen, compiliert und installiert wird. &quot;force&quot; wird
+Damit wird Perl/Tk &uuml;ber das
+Internet geladen, compiliert und installiert. &quot;force&quot; wird
 ben&ouml;tigt, da einige Module erwartete Fehler in der Test-Suite erzeugen
 und damit die Installation verhindern. Wenn weitere Probleme
 auftreten (insbesondere mit der Internet-Verbindung), dann sollten
@@ -133,14 +135,17 @@ die Anweisungen in
 befolgt werden, um das Modul Tk manuell zu installieren.
 </p>
 <p class="POD_TEXT">
-Danach kann mit
+Danach kann das Programm mit
 </p>
 <p></p>
 <pre class="POD_VERBATIM">
 	perl bbbike
 </pre>
 <p class="POD_TEXT">
-das Programm gestartet werden. Mit
+gestartet werden.
+</p>
+<p class="POD_TEXT">
+Optional kann mit
 </p>
 <p></p>
 <pre class="POD_VERBATIM">
@@ -154,14 +159,14 @@ oder
 	./install.sh
 </pre>
 <p class="POD_TEXT">
-kann optional eine Compilierung von einigen XS-Modulen durchgef&uuml;hrt
-werden sowie Eintr&auml;ge f&uuml;r KDE erzeugt werden. F&uuml;r das Compilieren
+eine Compilierung von einigen XS-Modulen durchgef&uuml;hrt
+werden sowie Eintr&auml;ge f&uuml;r KDE/GNOME erzeugt werden. F&uuml;r das Compilieren
 ist ein C-Compiler (z.B. gcc), der mittlerweile nicht bei allen
 Linux-Versionen standardm&auml;&szlig;ig installiert wird, notwendig.
 </p>
 <p class="POD_TEXT">
-Statt Bundle::BBBike_small kann auch Bundle::BBBike verwendet werden.
-Damit werden wesentlich mehr Module installiert, die teilweise nur f&uuml;r
+Statt dem oben erw&auml;hnten Bundle::BBBike_small kann auch Bundle::BBBike verwendet werden.
+Damit werden wesentlich mehr Perl-Module installiert, die teilweise nur f&uuml;r
 die Entwicklung verwendet werden, teilweise aber zus&auml;tzliche
 BBBike-Features erm&ouml;glichen.
 </p>
@@ -186,7 +191,7 @@ von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 </p>
 <p class="POD_TEXT">
-<a class="POD_LINK" href="http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz">http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz</a> und (von
+<a class="POD_LINK" href="http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18.tar.gz/download">http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18.tar.gz/download</a> und (von
 <a class="POD_LINK" href="http://www.cpan.org">http://www.cpan.org</a>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 </p>
@@ -229,14 +234,14 @@ Es wird auch eine X11- bzw. Darwin-Umgebung ben&ouml;tigt (X11SDK-Paket).
 Mac OS Classic wird nicht unterst&uuml;tzt.
 </p>
 <p></p>
-<h3 class="POD_HEAD2"><a name="Windows_95_98_2000_N">Windows 95/98/2000/NT/XP</a></h3>
+<h3 class="POD_HEAD2"><a name="Windows_95_98_2000_N">Windows 95/98/2000/NT/XP/Vista/7/8</a></h3>
 <h4 class="POD_HEAD3"><a name="Normale_Installation">Normale Installation</a></h4>
 <p></p>
 <p class="POD_TEXT">
 BBBike und Perl ben&ouml;tigen ca. 32 MB an Festplattenspeicher.
 </p>
 <p class="POD_TEXT">
-Einfach die Datei <a class="POD_LINK" href="http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17-Windows.exe">http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17-Windows.exe</a> laden und starten.
+Einfach die Datei <a class="POD_LINK" href="http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18-Windows.exe/download">http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18-Windows.exe/download</a> laden und starten.
 Damit wird das Installationsprogramm gestartet.
 </p>
 <h4 class="POD_HEAD3"><a name="Alternative_Windows_">Alternative Windows Installation (1)</a></h4>
@@ -251,30 +256,35 @@ Aus dem WWW die perl-Distribution downloaden. Perl kann
 von der ActiveState Webpage geladen werden:
 </p>
 <p class="POD_TEXT">
-<a class="POD_LINK" href="http://www.activestate.com/Products/ActivePerl/Download.html">http://www.activestate.com/Products/ActivePerl/Download.html</a>
+<a class="POD_LINK" href="http://www.activestate.com/activeperl/downloads">http://www.activestate.com/activeperl/downloads</a>
+</p>
+<p class="POD_TEXT">
+oder es kann alternativ Strawberry Perl verwendet werden:
+</p>
+<p class="POD_TEXT">
+<a class="POD_LINK" href="http://strawberryperl.com/">http://strawberryperl.com/</a>
 </p>
 <p></p>
 <p></p>
 <p class="POD_TEXT">
-In der Regel werden zwei Dateien zum Installieren ben&ouml;tigt, den
-Windows Installer und die eigentliche Perl-Distribution f&uuml;r Windows
-Intel. Beide Dateien m&uuml;ssen nacheinander ausgef&uuml;hrt werden. Die
-Installation ist normalerweise mit einigen Reboots verbunden.
+Das Tk-Modul muss separat installiert werden. Das wird in der
+Eingabeaufforderung mit den folgenden Kommandos getan:
 </p>
-<p class="POD_TEXT">
-In den aktuellen Versionen von ActivePerl ist das Tk-Modul bereits
-enthalten und muss nicht separat installiert werden.
-</p>
+<pre class="POD_VERBATIM">
+    perl -MCPAN -eshell
+    force notest install Tk
+    quit
+</pre>
 <p></p>
 <li class="POD_ITEM"><a name="_1"></a>
 <p class="POD_TEXT">
-<a class="POD_LINK" href="http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17-Windows.exe">BBBike-3.17.tar.gz</a>
-downloaden und mit WinZip auspacken. Das
-ausgepackte Verzeichnis wird sp&auml;ter nicht mehr verschoben.
+<a class="POD_LINK" href="http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18-Windows.exe/download">BBBike-3.18.tar.gz</a>
+downloaden und auspacken. Das
+ausgepackte Verzeichnis kann an eine gew&uuml;nschte Position verschoben werden.
 </p>
 <li class="POD_ITEM"><a name="_2"></a>
 <p class="POD_TEXT">
-In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.17
+In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.18
 wechseln und
 </p>
 <p></p>
@@ -295,8 +305,8 @@ befolgt werden.
 </p>
 <h4 class="POD_HEAD3"><a name="Alternative_Windows_2">Alternative Windows Installation (3)</a></h4>
 <p class="POD_TEXT">
-Als weitere Alternative kann eine &auml;ltere perl-Distribution, die allerdings Tk
-bereits enth&auml;lt, geladen werden:
+F&uuml;r sehr alte Systeme (Windows95, 98) kann als weitere Alternative eine &auml;ltere perl-Distribution, die bereits Tk
+enth&auml;lt, geladen werden:
 </p>
 <p class="POD_TEXT">
 <a class="POD_LINK" href="http://www.perl.com/CPAN/ports/win32/Standard/x86/perl5.00402-bindist04-bc.tar.gz">http://www.perl.com/CPAN/ports/win32/Standard/x86/perl5.00402-bindist04-bc.tar.gz</a>
@@ -319,6 +329,7 @@ nutzen kann.
 </p>
 <p></p>
 <h2 class="POD_HEAD1"><a name="AUSF_HREN">AUSF&Uuml;HREN</a></h2>
+<h3 class="POD_HEAD2"><a name="Perl_Tk_Version">Perl/Tk-Version</a></h3>
 <p class="POD_TEXT">
 Unter Unix wird BBBike ausgef&uuml;hrt, indem man ins bbbike-Verzeichnis
 wechselt und
@@ -328,16 +339,14 @@ wechselt und
 	perl bbbike
 </pre>
 <p class="POD_TEXT">
-eintippt. Wenn eine KDE-Installation durchgef&uuml;hrt wurde, findet man
+eintippt. Wenn eine KDE/GNOME-Installation durchgef&uuml;hrt wurde, findet man
 das Icon im 
 Startmen&uuml; unter dem Punkt &quot;Anwendungen&quot;. Bei Windows befindet sich das
 BBBike-Icon ebenfalls im Startmen&uuml;.
 </p>
 <p class="POD_TEXT">
-BBBike ist sehr speicher- und CPU-intensiv. Mindestens 16 MB RAM sind
-auf i386-Plattformen notwendig (bei Solaris mindestens 32 MB), besser
-das doppelte davon. Einige Versionen von BBBike wurden unter folgenden
-Plattformen getestet: Solaris (Version 8 und 2.5), FreeBSD (Version 6.1, 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Ubuntu, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4. Die
+Einige Versionen von BBBike wurden unter folgenden
+Plattformen getestet: Linux (Debian wheezy, Debian squeeze, Debian etch, Ubuntu 12.04, CentOS, Suse 7.0 und 6.4, Red Hat 8.0), FreeBSD (Version 9.1, 9.0, 8.0, 6.1, 4.9, 4.6, 3.5), Windows (Windows 8, Windows 7, Vista, XP, 2000, NT 4.0, 98, 95), MacOSX (10.4, 10.5 ...), Solaris (Version 8 und 2.5). Die
 Entwicklungsarbeit wird auf einem FreeBSD-Rechner vorgenommen.
 </p>
 <h3 class="POD_HEAD2"><a name="WWW_Version">WWW-Version</a></h3>
@@ -348,27 +357,24 @@ Im WWW existiert unter der Adresse
 <a class="POD_LINK" href="http://www.bbbike.de">http://www.bbbike.de</a>
 </p>
 <p class="POD_TEXT">
-eine einfache, stark text-orientierte Version von bbbike. Weitere
+eine einfache, stark text-orientierte, aber dennoch leistungsf&auml;hige Version von bbbike. Weitere
 Informationen zu der CGI-Version gibt es unter
 </p>
 <p class="POD_TEXT">
 <a class="POD_LINK" href="http://bbbike.de/cgi-bin/bbbike.cgi/info=1">http://bbbike.de/cgi-bin/bbbike.cgi/info=1</a>
 </p>
 <p></p>
-<h3 class="POD_HEAD2"><a name="Nicht_GUI_Version">Nicht-GUI-Version</a></h3>
-<p class="POD_TEXT">
-Mit <code>cbbbike</code> und <code>cmdbbbike</code> existieren einfache Kommandozeilen-Versionen des
-Programms.
-</p>
-<h2 class="POD_HEAD1"><a name="ENTWICKLUNG">ENTWICKLUNG</a></h2>
 <p></p>
+<p></p>
+<p></p>
+<h2 class="POD_HEAD1"><a name="ENTWICKLUNG">ENTWICKLUNG</a></h2>
 <h3 class="POD_HEAD2"><a name="git">git</a></h3>
 <p class="POD_TEXT">
-Der aktuelle Entwicklungsstand von BBBike kann &uuml;ber git
+Der aktuelle Entwicklungsstand von BBBike kann mit git
 verfolgt werden.
 </p>
 <p class="POD_TEXT">
-Von der Kommandozeile muss folgendes eingegeben werden:
+Dazu muss in der Kommandozeile folgendes eingegeben werden:
 </p>
 <p></p>
 <pre class="POD_VERBATIM">
@@ -387,13 +393,8 @@ Daten.
 </p>
 <p></p>
 <p></p>
-<h3 class="POD_HEAD2"><a name="CVS">CVS</a></h3>
-<p class="POD_TEXT">
-Falls git nicht verwendet werden kann, gibt es noch immer die
-M&ouml;glichkeit auf das alte CVS-Repository unter :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike zuzugreifen.
-Es ist allerdings nicht garantiert, dass Updates in der gleichen
-Frequenz wie auf dem git-Repository passieren.
-</p>
+<p></p>
+<p></p>
 <h3 class="POD_HEAD2"><a name="Programm_Aktualisier">Programm-Aktualisierung</a></h3>
 <p class="POD_TEXT">
 Der aktuelle Programm -und Daten-Stand kann auch von der Adresse
@@ -405,6 +406,10 @@ Um nur die Daten zu aktualisieren, kann man sich die aktuellen Daten
 als ZIP-Datei von <a class="POD_LINK" href="http://www.bbbike.de/cgi-bin/bbbike-data.cgi">http://www.bbbike.de/cgi-bin/bbbike-data.cgi</a> holen. Die ZIP-Datei
 muss im BBBike-Programmverzeichnis (bei Windows unter
 <code>C:\Programme\BBBike\bbbike</code>) ausgepackt werden.
+</p>
+<p class="POD_TEXT">
+Die Daten k&ouml;nnen auch aus der Perl/Tk-Applikation heraus aktualisiert
+werden: per Men&uuml;punkt Einstellungen &gt; Daten-Update &uuml;ber das Internet.
 </p>
 <h2 class="POD_HEAD1"><a name="DOKUMENTATION">DOKUMENTATION</a></h2>
 <p class="POD_TEXT">
@@ -433,7 +438,7 @@ Zenin, <code>ext/Strassen-Inline/heap.[ch]</code> der Internet Software
 Consortium, <code>ext/BBBikeXS/sqrt.c</code> von Eyal Lebedinsky.
 </p>
 <p class="POD_TEXT">
-<code>BBBike-3.17-Windows.zip</code> enth&auml;lt einen Teil der
+<code>BBBike-3.18-Windows.zip</code> enth&auml;lt einen Teil der
 <code>Strawberry Perl</code>-Distribution, siehe
 <a class="POD_LINK" href="http://strawberryperl.com/">http://strawberryperl.com/</a>
 </p>
