@@ -408,6 +408,12 @@ install-debian-packages-for-cgi:
 install-debian-packages-for-all:
 	aptitude install ${DEB_ALL} ${OWN_DEB}
 
+mydebs-bbbike-de-add:
+	cd misc/apt-sources.list.d && sudo make add
+
+mydebs-bbbike-de-remove:
+	cd misc/apt-sources.list.d && sudo make remove
+
 ######################################################################
 # par
 
