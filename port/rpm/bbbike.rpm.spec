@@ -6,11 +6,13 @@ Release: 1
 License: GPL
 Group: Applications/Productivity
 AutoReqProv: no
+# XXX once we build the "ext" stuff the following should be removed
+BuildArch: noarch
 Requires: perl >= 5.005, perl(Tk) >= 800
 Prefix: %{__prefix}
 URL: http://bbbike.sourceforge.net
 Packager: slaven@rezic.de
-Source: http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18.tar.gz/download
+Source: http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.18/BBBike-3.18.tar.gz
 Summary: A route-finder for cyclists in Berlin and Brandenburg
 
 
@@ -52,6 +54,10 @@ WWW: http://bbbike.sourceforge.net
 %setup
 
 %build
+grep '/\.'      MANIFEST | awk '{print $1}' | xargs rm
+grep '\.[cht]$' MANIFEST | awk '{print $1}' | xargs rm
+rm cgi/bbbike.psgi
+rm tkbikepwr
 
 %install
 mkdir -p $RPM_BUILD_ROOT%{_prefix}/lib/BBBike
@@ -70,3 +76,6 @@ rm -f %{_bindir}/bbbike
 %dir %{_prefix}/lib/BBBike
 %{_prefix}/lib/BBBike/*
 
+%changelog
+* Sun Mar 17 2013 Slaven Rezic <slaven@rezic.de> - 3.18-1
+- new version of BBBike

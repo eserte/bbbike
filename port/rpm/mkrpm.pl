@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: mkrpm.pl,v 1.9 2008/03/01 21:30:48 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2010,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,6 +16,8 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../..");
 use MetaPort;
 
+use POSIX qw(strftime setlocale LC_TIME);
+
 use strict;
 
 use vars qw($bbbike_version $tmpdir $bbbike_dir);
@@ -25,6 +26,8 @@ use vars qw($bbbike_base $bbbike_archiv
 use vars qw($bbbike_comment $bbbike_descr);
 
 chdir "$FindBin::RealBin" or die $!;
+
+setlocale LC_TIME, 'C';
 
 # my $rpms = "/usr/local/src/redhat/RPMS/i386";
 # my $inst_dir = "/usr/local/BBBike";
@@ -68,6 +71,10 @@ EOF
 #     }
 # }
 
+my $today_date = strftime "%a %h %d %Y", localtime;
+
+my $need_318_fixes = $BBBike::SF_DISTFILE_SOURCE_ALT eq 'http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.18/BBBike-3.18.tar.gz';
+
 open my $RPM, ">", "bbbike.rpm.spec"
     or die "Cannot write to bbbike.rpm.spec: $!";
 print $RPM <<EOF;
@@ -79,11 +86,13 @@ Release: $release
 License: GPL
 Group: Applications/Productivity
 AutoReqProv: no
+# XXX once we build the "ext" stuff the following should be removed
+BuildArch: noarch
 Requires: perl >= 5.005, perl(Tk) >= 800
 Prefix: %{__prefix}
 URL: $BBBike::BBBIKE_SF_WWW
 Packager: $BBBike::EMAIL
-Source: $BBBike::DISTFILE_SOURCE
+Source: $BBBike::SF_DISTFILE_SOURCE_ALT
 Summary: $bbbike_comment
 
 # Needed by RHEL5 (only)?
@@ -110,6 +119,18 @@ print $RPM <<'EOF';
 %setup
 
 %build
+grep '/\.'      MANIFEST | awk '{print $1}' | xargs rm
+grep '\.[cht]$' MANIFEST | awk '{print $1}' | xargs rm
+EOF
+if ($need_318_fixes) {
+    # The following files cause a high badness when running rpmlint,
+    # which in turn causes the SUSE builds to fail completely.
+    print $RPM <<'EOF';
+rm cgi/bbbike.psgi
+rm tkbikepwr
+EOF
+}
+print $RPM <<'EOF';
 
 %install
 mkdir -p $RPM_BUILD_ROOT%{_prefix}/lib/BBBike
@@ -128,6 +149,12 @@ rm -f %{_bindir}/bbbike
 %dir %{_prefix}/lib/BBBike
 %{_prefix}/lib/BBBike/*
 
+EOF
+
+print $RPM <<"EOF";
+%changelog
+* $today_date Slaven Rezic <$BBBike::EMAIL> - $BBBike::STABLE_VERSION-1
+- new version of BBBike
 EOF
 
 # print RPM "%files\n";
