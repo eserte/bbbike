@@ -23,8 +23,6 @@ $stash->set('CGIURL', $BBBike::BBBIKE_WWW);
 $stash->set('DIRECTCGIURL', $BBBike::BBBIKE_DIRECT_WWW);
 $stash->set('HTTPGIT', $BBBike::BBBIKE_GIT_HTTP);
 $stash->set('GITREPO', $BBBike::BBBIKE_GIT_CLONE_URL);
-$stash->set('HTTPCVS', $BBBike::BBBIKE_CVS_HTTP);
-$stash->set('CVSREPO', $BBBike::BBBIKE_CVS_ANON_REPOSITORY);
 $stash->set('HTTPSNAPSHOT', $BBBike::BBBIKE_UPDATE_DIST_CGI);
 [% END -%]
 [% #  -%]
@@ -715,7 +713,7 @@ To fetch the git repository type the following in the command line:
 [%- END -%]
 
 
-    git clone git://github.com/eserte/bbbike.git
+    git clone [% GITREPO %]
 
 
 [%- IF lang=="DE" -%]
@@ -730,32 +728,17 @@ to update the next time
 
 
 [%- IF lang=="DE" -%]
-Das git-Repository wird fast täglich aktualisiert und enthält auch die aktuellen
+Das L<git-Repository|[% HTTPGIT %]> wird fast täglich aktualisiert und enthält auch die aktuellen
 Daten.
 
 
 [%- ELSE -%]
-The git repository is frequently updated and also contains the current
+The L<git repository|[% HTTPGIT %]> is frequently updated and also contains the current
 data.
 
 [%- END -%]
 
 
-[% IF 0 %][%# CVS wird nicht mehr aktualisiert -%]
-=head2 CVS
-
-
-[%- IF lang=="DE" -%]
-Falls git nicht verwendet werden kann, gibt es noch immer die
-Möglichkeit auf das alte CVS-Repository unter [% CVSREPO %] zuzugreifen.
-Es ist allerdings nicht garantiert, dass Updates in der gleichen
-Frequenz wie auf dem git-Repository passieren.
-[%- ELSE -%]
-If git cannot be used, then there's still the possibility to access
-the old CVS repository ([% CVSREPO %]). Note that it's not guaranteed that
-updates occur in the same frequency as for the git repository.
-[%- END -%]
-[% END %]
 
 =head2
 
