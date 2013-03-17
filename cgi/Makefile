@@ -83,3 +83,4 @@ rights:
 	chmod ugo+rx *.cgi
 	chmod ugo+r *.cgi.config
 	[ ! -e ../tmp/www ] || chmod 777 ../tmp/www
+	chmod ugo-x *.psgi
