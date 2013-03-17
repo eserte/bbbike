@@ -1,7 +1,4 @@
-#!/usr/perl5.8.0/bin/perl5.8.0
-
-eval 'exec /usr/perl5.8.0/bin/perl5.8.0  -S $0 ${1+"$@"}'
-    if 0; # not running under some shell
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
