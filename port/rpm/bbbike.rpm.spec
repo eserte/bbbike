@@ -1,7 +1,7 @@
 ### DO NOT EDIT! CREATED AUTOMATICALLY BY ./mkrpm.pl! ###
 %define __prefix        %{_prefix}
 Name: BBBike
-Version: 3.17
+Version: 3.18
 Release: 1
 License: GPL
 Group: Applications/Productivity
@@ -10,7 +10,7 @@ Requires: perl >= 5.005, perl(Tk) >= 800
 Prefix: %{__prefix}
 URL: http://bbbike.sourceforge.net
 Packager: slaven@rezic.de
-Source: http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.17/BBBike-3.17.tar.gz
+Source: http://sourceforge.net/projects/bbbike/files/BBBike/3.18/BBBike-3.18.tar.gz/download
 Summary: A route-finder for cyclists in Berlin and Brandenburg
 
 
@@ -19,8 +19,8 @@ BuildRoot: %{_tmppath}/%{name}-root
 
 %description
 A route-finder for cyclists in Berlin and Brandenburg.
-BBBike is now ported to 125 other cities around the world - thanks to 
-the OpenStreetMap  project. For more information see the BBBike @ World 
+BBBike is now ported to more than 200 cities around the world - thanks to 
+the OpenStreetMap project. For more information see the BBBike @ World 
 homepage http://www.bbbike.org
 ------------------------------------------------------------------------
 BBBike is an information system for cyclists in Berlin and 
