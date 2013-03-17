@@ -3,8 +3,8 @@
 Name: BBBike
 Version: 3.18
 Release: 1
-License: GPL
-Group: Applications/Productivity
+License: GPL-2.0
+Group: Productivity/Scientific/Other
 AutoReqProv: no
 # XXX once we build the "ext" stuff the following should be removed
 BuildArch: noarch
