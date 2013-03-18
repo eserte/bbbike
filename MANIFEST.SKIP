@@ -48,6 +48,7 @@ patch\.gz$
 ^data/.*\.lock$
 ^doc/README.release$
 ^README.tpl$
+^README.pod$
 ^CRASH/
 ^cache\b
 ^cdrom/
