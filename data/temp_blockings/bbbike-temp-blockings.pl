@@ -11549,7 +11549,7 @@ EOF
        text  => 'Papierlager brennt, Köpenicker Str. ist zwischen Manteuffelstr. und Engeldamm gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 12055,11331 12126,11283 12304,11163
+userdel	2::inwork 12060,11323 12124,11280 12302,11160
 EOF
      },
      { from  => 1211828060, # 
@@ -12938,7 +12938,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009727',
        data  => <<EOF,
-userdel	1::inwork 11574,11594 11324,11689 11242,11720
+userdel	1::inwork 11569,11587 11324,11689 11242,11720
 EOF
      },
      { from  => 1230474772, # 2008-12-28 15:32
@@ -13146,7 +13146,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009727',
        data  => <<EOF,
-userdel	1::inwork 11242,11720 11324,11689 11574,11594
+userdel	1::inwork 11242,11720 11324,11689 11569,11587
 EOF
      },
      { from  => 1233866284, # 2009-02-05 21:38
@@ -13356,7 +13356,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012479',
        data  => <<EOF,
-userdel	q4::inwork; 11242,11720 11324,11689 11574,11594
+userdel	q4::inwork; 11242,11720 11324,11689 11569,11587
 EOF
      },
      { from  => 1238347506, # 2009-03-29 19:25
@@ -20525,9 +20525,9 @@ EOF
 userdel	q4::inwork 22484,11270 22436,11054
 EOF
      },
-     { from  => 1344142800, # 2012-08-05 07:00
-       until => 1363356000, # 2013-03-15 15:00
-       text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Mitte März 2013',
+     { from  => 1363633473, # 2013-03-18 20:04
+       until => 1364767199, # 2013-03-31 23:59
+       text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Ende März 2013',
        type  => 'handicap',
        source_id => 'IM_019043',
        data  => <<EOF,

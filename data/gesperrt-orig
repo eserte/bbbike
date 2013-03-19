@@ -134,8 +134,8 @@ Gartenufer (in der Dunkelheit gesperrt)	2 6239,11399 5780,11622
 Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 13829,9905
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
-Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
-Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 11985,11261 12026,11348
+Bethaniendamm	1 12060,11323 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
+Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 11985,11261 12025,11346
 Pannierstr.	1 12202,8895 12242,8972
 #: note: linker Gehweg für Radfahrer in Gegenrichtung offen, zumindest existiert mindestens ein entsprechendes Schild; allerdings ist der Gehweg eng und hat überwiegend nur mäßige Qualität
 Stolzenfelsstr.	1s:q2 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540 18731,8577
@@ -149,8 +149,8 @@ Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
 Scheelestr.	1 5740,1227 5697,1098 5556,984 5493,935 5424,882 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
-An der Schillingbrücke	1 12056,11390 12055,11331
-An der Schillingbrücke	1 12026,11348 12056,11390
+An der Schillingbrücke	1 12061,11406 12060,11323
+An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11155,11750
 #: note: hier stand mal ein Polizeiauto, als ich reinfahren wollte...
@@ -1025,6 +1025,16 @@ Beim Pfarrhof	1 -7292,14811 -7304,14567
 Am Kleinen Platz	1 -7248,14826 -7292,14811
 Ella-Trebe-Str.	1s:q3 7938,13302 7938,13150
 ######################################################################
+# empfohlene Sperrungen
+#: by: Stefan Klinkusch vvv
+#: note: "das Befahren der Heerstraße dort [ist] zwar nicht verboten, aber nicht empfehlenswert" (starker Verkehr, Busse, Schwerlastverkehr, kaum Bebauung, Tempolimit wird nicht eingehalten)
+Heerstr.	1::igndisp -6675,12632 -7294,12833
+#: note: "Auch die Radwegführung spricht hier für einen straßenbegleitenden Radweg"
+#: note: "Vom Süden her ist an der Kreuzung Außenweg der Radweg als benutzungspflichtig gekennzeichnet (für beide Richtungen)"
+#: confirmed_by: srt
+Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
+#: by: ^^^
+######################################################################
 #
 # Potsdam
 # 
@@ -1484,7 +1494,7 @@ Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21108,11628
 Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3nocross 19206,2848 19242,2876 19324,2939
 Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3nocross 19581,3184 19603,3207 19732,3340
 Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7001,8161 7073,8081
-Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11919,11856 11768,12006
+Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11916,11846 11764,12001
 Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8380,8545
 Mehringdamm/Wilhelmshöhe: Mittelstreifen	3nocross 9224,9053 9225,9111 9248,9350
@@ -1910,7 +1920,7 @@ Metallstange	BNP:3::trailer=10 -5070,11199
 Metallstange	BNP:3::trailer=10 -5082,11155
 #: XXX was genau von beiden?
 Drängelgitter/Schranke	BNP:3::trailer=10 -8113,13467
-Schranke	BNP:3::trailer=10 -3441,13270
+Schranke	BNP:3::trailer=10 -3451,13300
 Drängelgitter	BNP:3::trailer=10 -4760,13980
 #: by: ^^^
 #: note: explizite "Radfahren verboten"-Schilder
@@ -2432,8 +2442,8 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 # REMOVED --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # 
-#: last_checked: 2013-03-09
-#: next_check: 2013-03-15
+#: last_checked: 2013-03-19 (amay)
+#: next_check: 2013-04-15
 #: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel)
 Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518
 # 

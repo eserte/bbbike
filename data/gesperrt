@@ -117,8 +117,8 @@ Gartenufer (in der Dunkelheit gesperrt)	2 6239,11399 5780,11622
 Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 13829,9905
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
-Bethaniendamm	1 12055,11331 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
-Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 11985,11261 12026,11348
+Bethaniendamm	1 12060,11323 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
+Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 11985,11261 12025,11346
 Pannierstr.	1 12202,8895 12242,8972
 Stolzenfelsstr.	1s 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540 18731,8577
 Bersarinplatz	1 13730,12535 13698,12544 13678,12571 13686,12611 13695,12643 13747,12642 13767,12626 13761,12578 13730,12535
@@ -129,8 +129,8 @@ Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
 Scheelestr.	1 5740,1227 5697,1098 5556,984 5493,935 5424,882 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
-An der Schillingbrücke	1 12056,11390 12055,11331
-An der Schillingbrücke	1 12026,11348 12056,11390
+An der Schillingbrücke	1 12061,11406 12060,11323
+An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11155,11750
 Weydemeyerstr.	1s 11896,13075 11904,13058 12062,12986 12054,12903
@@ -761,6 +761,8 @@ Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
 Am Kleinen Platz	1 -7248,14826 -7292,14811
 Ella-Trebe-Str.	1s 7938,13302 7938,13150
+Heerstr.	1::igndisp -6675,12632 -7294,12833
+Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
@@ -1773,9 +1775,9 @@ Mittelstreifen, zukünftig Straßenbahntrasse	3nocross::ignrte 19581,3184 19603,32
 Karl-Otto-Reinsch-Str. -> Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3::igndisp 19524,3286 19603,3207 19732,3340
 Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7001,8161 7073,8081
 Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7250,8223 7001,8161 7073,8081
-Mittelstreifen	3nocross::ignrte 11963,11813 11919,11856 11768,12006
-Mehlbeerenweg -> Holzmarktstr.: Mittelstreifen	3::igndisp 11923,11881 11919,11856 11963,11813
-Holzmarktstr. -> Mehlbeerenweg: Mittelstreifen	3::igndisp 11768,12006 11919,11856 11923,11881
+Mittelstreifen	3nocross::ignrte 11963,11813 11916,11846 11764,12001
+Holzmarktstr. -> Mehlbeerenweg: Mittelstreifen	3::igndisp 11764,12001 11916,11846 11923,11881
+Mehlbeerenweg -> Holzmarktstr.: Mittelstreifen	3::igndisp 11923,11881 11916,11846 11963,11813
 Mittelstreifen	3nocross::ignrte 9334,9670 9387,9804 9444,9919
 Baruther Str. -> Mehringdamm: Mittelstreifen	3::igndisp 9588,9827 9387,9804 9334,9670
 Mehringdamm -> Baruther Str.: Mittelstreifen	3::igndisp 9444,9919 9387,9804 9588,9827
@@ -2204,7 +2206,7 @@ enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30:-19:trailer=no 10583,15
 Metallstange	BNP:3:-72:trailer=10 -5070,11199
 Metallstange	BNP:3:-72:trailer=10 -5082,11155
 Drängelgitter/Schranke	BNP:3:-194:trailer=10 -8113,13467
-Schranke	BNP:3:-27:trailer=10 -3441,13270
+Schranke	BNP:3:-29:trailer=10 -3451,13300
 Drängelgitter	BNP:3:4:trailer=10 -4760,13980
 Schranke	BNP:3:45:trailer=10 8828,13434
 Schranke	BNP:3:-96:trailer=10 8262,17361

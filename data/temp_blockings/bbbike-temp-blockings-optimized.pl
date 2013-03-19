@@ -1220,7 +1220,16 @@ userdel	2::inwork 8270,10613 8199,10634
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019043',
+         'until' => 1364767199,
+         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Ende März 2013',
+         'from' => 1363633473,
+         'id' => 2368,
+         'data' => 'userdel	q4::inwork; 10953,15787 11086,15772
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,

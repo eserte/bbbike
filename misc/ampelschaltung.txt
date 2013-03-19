@@ -736,7 +736,7 @@ Fr, 09.04.1999
 10601,12521   Rathausstr./Spandauer Str.         NW->SO     23:31:22  23:30:39
 10738,12364   Mühlendamm/Stralauer Str./Gruners  NW->SO 70  23:31:32  23:31:42
 11351,12221   Brückenstr./Holzmarktstr./Alexand  W->O       23:34:26
-11768,12006   Michaelkirchstr./Lichtenberger St  W->O   60? 23:35:30  23:35:46
+11764,12001   Michaelkirchstr./Lichtenberger St  W->O   60? 23:35:30  23:35:46
 12180,11657   Holzmarktstr./Stralauer Platz/And  W->O   60? 23:36:56  23:36:23
 12497,11459   Straße der Pariser Kommune/Strala  W->O   60?           23:37:48
 13332,10832   Oberbaumbrücke/Stralauer Allee/Wa  W->O   60  23:40:23  23:39:40
@@ -896,7 +896,7 @@ So, 25.04.1999
 11393,10390   Skalitzer Str./Kottbusser (Auto 2) S->N       09:24:19
 11463,10642   Oranienstr./Adalbertstr.           S->N       09:25:00
 11556,10869   Waldemarstr./Adalbertstr.          S->N   50  09:25:21  09:25:41
-12026,11348   Köpenicker Str./Engeldamm/An der   SW->NO     09:28:37
+12025,11346   Köpenicker Str./Engeldamm/An der   SW->NO     09:28:37
 12180,11657   Holzmarktstr./Stralauer Platz/And  SW->NO 70  09:29:24  09:29:39
 12822,12067   Rüdersdorfer Str./Straße der Pari  S->N   60  09:37:17  09:36:33
 14211,11552   Wühlischstr./Modersohnstr./Gärtne  W->O   60  09:41:55  09:42:08
@@ -1272,7 +1272,7 @@ Fr, 21.05.1999
 # ----------------------------------------------------------------------------
 Fr, 11.07.2003 (00:00:00 = 09:44:06)
 12295,12197   Andreas/Singer                     O->W       +00:24    +00:42
-11768,12006   Michaelkirch/Lichtenberger         N->W                 +02:28
+11764,12001   Michaelkirch/Lichtenberger         N->W                 +02:28
 11351,12221   Holzmarktstr./Brückenstr.          O->S       +03:54    +02:44
 9987,11690    Leipziger/Jerusalemer              O->W       +08:48
 9701,11656    Leipziger/Markgrafen               O->W       +09:34
@@ -1318,13 +1318,13 @@ Fr, 11.07.2003 (00:00:00 = 17:35:10)
 9268,11590    Leipziger/Mauerstr                 W->O       +21:21
 9444,11616    Leipziger/Friedrichstr.            W->O       +21:38
 9987,11690    Leipziger/Jerusalemer              W->O       +23:28?
-11768,12006   Holzmarktstr/Lichtenberger         W->N   90  +27:48    +28:08
-11768,12006   Holzmarktstr/Lichtenberger         W->O   90  +27:30    +27:42
+11764,12001   Holzmarktstr/Lichtenberger         W->N   90  +27:48    +28:08
+11764,12001   Holzmarktstr/Lichtenberger         W->O   90  +27:30    +27:42
 12295,12197   Singer/Andreas                     W->O       +31:00    +31:18
 12822,12067   Rüdersdorfer/Franz-Mehring-Platz   NW->SO     +32:49
 13217,11936   Wedekind/Marchlewskistr.           W->O                 +33:53
 13696,11920   Grünberger/Warschauer              W->O                 +35:03
-14449,11742   Grünberger/Boxhagener              W->SO      +37:38
+14461,11738   Grünberger/Boxhagener              W->SO      +37:38
 14639,11512   Boxhagener/Holteistr               NW->SO               +38:20
 14575,11407   Holteistr./Wühlischstr.            N->S       +39:36    +38:56
 
@@ -1423,7 +1423,7 @@ Mi, 09.12.2009
 Fr, 11.12.2009
 # ca. 09:20
 # Sekunden gezählt
-11768,12006   Holzmarktstr/Lichtenberger         N->S   55? 10        45
+11764,12001   Holzmarktstr/Lichtenberger         N->S   55? 10        45
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100216.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
@@ -1775,9 +1775,9 @@ Do, 25.02.2010
 12869,12425   Karl-Marx-Allee/Straße der Parise  W->O       00:20:41
 13696,11920   Warschauer Str./Grünberger Str.    W->O                 00:24:15
 13696,11920   Warschauer Str./Grünberger Str.    W->O       00:25:06
-14449,11742   Boxhagener Str./Grünberger Str./(  W->O                 00:25:39
-14449,11742   Boxhagener Str./Grünberger Str./(  W->O       00:26:18
-14449,11742   Boxhagener Str./Grünberger Str./(  W->O                 00:26:29
+14461,11738   Boxhagener Str./Grünberger Str./(  W->O                 00:25:39
+14461,11738   Boxhagener Str./Grünberger Str./(  W->O       00:26:18
+14461,11738   Boxhagener Str./Grünberger Str./(  W->O                 00:26:29
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100225.wpt:track2
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
@@ -1894,11 +1894,11 @@ Di, 27.03.2012
 12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       09:22:30
 12295,12197   Andreasstr./Singerstr.             O->W                 09:23:50
 12295,12197   Andreasstr./Singerstr.             O->W       09:24:33
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     09:26:22
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW               09:26:40
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     09:27:56
-11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW     09:29:03
-11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW               09:29:19
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     09:26:22
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW               09:26:40
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     09:27:56
+11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW     09:29:03
+11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW               09:29:19
 11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:29:53
 11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:30:06
 11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:30:53
@@ -1931,8 +1931,8 @@ Do, 29.03.2012
 12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       08:26:53
 12295,12197   Andreasstr./Singerstr.             O->W                 08:28:20
 12295,12197   Andreasstr./Singerstr.             O->W       08:29:11
-11768,12006   An der Michaelbrücke/Lichtenberge  W->O                 12:54:17
-11768,12006   An der Michaelbrücke/Lichtenberge  W->O       12:55:08
+11764,12001   An der Michaelbrücke/Lichtenberge  W->O                 12:54:17
+11764,12001   An der Michaelbrücke/Lichtenberge  W->O       12:55:08
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     12:56:18
 12497,11459   (Straße der Pariser Kommune - Spr  NW->SO     12:56:51
 12497,11459   (Straße der Pariser Kommune - Spr  NW->SO               12:57:24
@@ -2064,8 +2064,8 @@ Mo, 16.04.2012
 12295,12197   Andreasstr./Singerstr.             O->W       09:04:34
 12295,12197   Andreasstr./Singerstr.             O->W                 09:04:52
 12295,12197   Andreasstr./Singerstr.             O->W       09:05:34
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW               19:00:58
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     19:01:56
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW               19:00:58
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     19:01:56
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO               19:02:43
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     19:03:28
 12497,11459   (Straße der Pariser Kommune - Spr  NW->SO               19:03:49
@@ -2090,8 +2090,8 @@ Di, 17.04.2012
 12822,12067   Rüdersdorfer Str./Straße der Pari  O->W                 08:40:44
 12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       08:41:53
 12295,12197   Andreasstr./Singerstr.             O->W       08:43:51
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     08:45:41
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW               08:45:59
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     08:45:41
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW               08:45:59
 11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W       08:47:17
 12295,12197   Andreasstr./Singerstr.             W->O       18:38:52
 12822,12067   Rüdersdorfer Str./Straße der Pari  W->O       18:40:23
@@ -2104,12 +2104,12 @@ Mi, 18.04.2012
 12822,12067   Rüdersdorfer Str./Straße der Pari  O->W                 08:54:14
 12822,12067   Rüdersdorfer Str./Straße der Pari  O->W       08:55:23
 12295,12197   Andreasstr./Singerstr.             O->W       08:57:32
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     09:00:41
-11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW               09:01:22
-11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW     09:02:27
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     09:00:41
+11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW               09:01:22
+11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW     09:02:27
 11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W                 09:03:06
 11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W       09:03:53
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     19:45:40
+11764,12001   An der Michaelbrücke/Lichtenberge  NW->SO     19:45:40
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     19:47:40
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     19:48:55
 12645,11673   Straße der Pariser Kommune/Erich-  S->N       19:50:43
@@ -2126,9 +2126,9 @@ Do, 19.04.2012
 13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NO->SW               09:10:27
 13332,10832   Am Oberbaum/Stralauer Allee/Warsc  NO->SW     09:11:13
 12985,10665   Skalitzer Str./Oberbaumstr./Schle  O->W                 09:12:20
-12055,11331   Köpenicker Str./Bethaniendamm      SO->NW     09:15:55
-11574,11594   Köpenicker Str./Michaelkirchstr.   SO->NW               09:16:53
-11574,11594   Köpenicker Str./Michaelkirchstr.   SO->NW     09:17:29
+12060,11323   Köpenicker Str./Bethaniendamm      SO->NW     09:15:55
+11569,11587   Köpenicker Str./Michaelkirchstr.   SO->NW               09:16:53
+11569,11587   Köpenicker Str./Michaelkirchstr.   SO->NW     09:17:29
 11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:17:53
 11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:18:06
 11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:18:53
@@ -2152,7 +2152,7 @@ Fr, 20.04.2012
 12497,11459   (Straße der Pariser Kommune - Spr  SO->NW               07:58:16
 12497,11459   (Straße der Pariser Kommune - Spr  SO->NW     07:59:00
 12180,11657   Holzmarktstr./Stralauer Platz/And  SO->NW     07:59:39
-11768,12006   An der Michaelbrücke/Lichtenberge  SO->NW     08:01:38
+11764,12001   An der Michaelbrücke/Lichtenberge  SO->NW     08:01:38
 11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W       08:02:17
 11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W                 08:02:41
 11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W       08:03:43

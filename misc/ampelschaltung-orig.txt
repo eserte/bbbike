@@ -736,7 +736,7 @@ Fr, 09.04.1999
 10601,12521   Rathausstr./Spandauer Str.         NW->SO     23:31:22  23:30:39
 10738,12364   Mühlendamm/Stralauer Str./Gruners  NW->SO 70  23:31:32  23:31:42
 11351,12221   Brückenstr./Holzmarktstr./Alexand  W->O       23:34:26
-11768,12006   Michaelkirchstr./Lichtenberger St  W->O   60? 23:35:30  23:35:46
+11764,12001   Michaelkirchstr./Lichtenberger St  W->O   60? 23:35:30  23:35:46
 12180,11657   Holzmarktstr./Stralauer Platz/And  W->O   60? 23:36:56  23:36:23
 12497,11459   Straße der Pariser Kommune/Strala  W->O   60?           23:37:48
 13332,10832   Oberbaumbrücke/Stralauer Allee/Wa  W->O   60  23:40:23  23:39:40
@@ -896,7 +896,7 @@ So, 25.04.1999
 11393,10390   Skalitzer Str./Kottbusser (Auto 2) S->N       09:24:19
 11463,10642   Oranienstr./Adalbertstr.           S->N       09:25:00
 11556,10869   Waldemarstr./Adalbertstr.          S->N   50  09:25:21  09:25:41
-12026,11348   Köpenicker Str./Engeldamm/An der   SW->NO     09:28:37
+12025,11346   Köpenicker Str./Engeldamm/An der   SW->NO     09:28:37
 12180,11657   Holzmarktstr./Stralauer Platz/And  SW->NO 70  09:29:24  09:29:39
 12822,12067   Rüdersdorfer Str./Straße der Pari  S->N   60  09:37:17  09:36:33
 14211,11552   Wühlischstr./Modersohnstr./Gärtne  W->O   60  09:41:55  09:42:08
@@ -1272,7 +1272,7 @@ Fr, 21.05.1999
 # ----------------------------------------------------------------------------
 Fr, 11.07.2003 (00:00:00 = 09:44:06)
 12295,12197   Andreas/Singer			 O->W	    +00:24    +00:42
-11768,12006   Michaelkirch/Lichtenberger	 N->W		      +02:28
+11764,12001   Michaelkirch/Lichtenberger	 N->W		      +02:28
 11351,12221   Holzmarktstr./Brückenstr.		 O->S	    +03:54    +02:44
 9987,11690    Leipziger/Jerusalemer		 O->W	    +08:48
 9701,11656    Leipziger/Markgrafen		 O->W	    +09:34
@@ -1318,13 +1318,13 @@ Fr, 11.07.2003 (00:00:00 = 17:35:10)
 9268,11590    Leipziger/Mauerstr		 W->O	    +21:21
 9444,11616    Leipziger/Friedrichstr.		 W->O	    +21:38
 9987,11690    Leipziger/Jerusalemer		 W->O	    +23:28?
-11768,12006   Holzmarktstr/Lichtenberger	 W->N	90  +27:48    +28:08
-11768,12006   Holzmarktstr/Lichtenberger	 W->O	90  +27:30    +27:42
+11764,12001   Holzmarktstr/Lichtenberger	 W->N	90  +27:48    +28:08
+11764,12001   Holzmarktstr/Lichtenberger	 W->O	90  +27:30    +27:42
 12295,12197   Singer/Andreas			 W->O	    +31:00    +31:18
 12822,12067   Rüdersdorfer/Franz-Mehring-Platz	 NW->SO	    +32:49
 13217,11936   Wedekind/Marchlewskistr.		 W->O		      +33:53
 13696,11920   Grünberger/Warschauer		 W->O		      +35:03
-14449,11742   Grünberger/Boxhagener		 W->SO	    +37:38
+14461,11738   Grünberger/Boxhagener		 W->SO	    +37:38
 14639,11512   Boxhagener/Holteistr		 NW->SO		      +38:20
 14575,11407   Holteistr./Wühlischstr.		 N->S       +39:36    +38:56
 
@@ -1423,7 +1423,7 @@ Mi, 09.12.2009
 Fr, 11.12.2009
 # ca. 09:20
 # Sekunden gezählt
-11768,12006   Holzmarktstr/Lichtenberger	 N->S	55? 10	      45
+11764,12001   Holzmarktstr/Lichtenberger	 N->S	55? 10	      45
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100216.wpt
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
@@ -2056,11 +2056,11 @@ Do, 25.02.2010
 #WPT: 285	25-FEB-10 0:25:06	52.5125	13.4521388888889	buoy_white_green
 13696,11920   Warschauer Str./Grünberger Str.    W->O       00:25:06
 #WPT: 286	25-FEB-10 0:25:39	52.5119722222222	13.4542777777778	buoy_white_red
-14449,11742   Boxhagener Str./Grünberger Str./(  W->O                 00:25:39
+14461,11738   Boxhagener Str./Grünberger Str./(  W->O                 00:25:39
 #WPT: 287	25-FEB-10 0:26:18	52.5116388888889	13.4572777777778	buoy_white_green
-14449,11742   Boxhagener Str./Grünberger Str./(  W->O       00:26:18
+14461,11738   Boxhagener Str./Grünberger Str./(  W->O       00:26:18
 #WPT: 288	25-FEB-10 0:26:29	52.5115277777778	13.458	buoy_white_red
-14449,11742   Boxhagener Str./Grünberger Str./(  W->O                 00:26:29
+14461,11738   Boxhagener Str./Grünberger Str./(  W->O                 00:26:29
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100225.wpt:track2
 # Punkt       Kreuzung                           Dir    Zyk grün      rot
@@ -2260,15 +2260,15 @@ Di, 27.03.2012
 #WPT: 052	27-MAR-12 9:24:33	52.5151666666667	13.4321944444444	buoy_white_green
 12295,12197   Andreasstr./Singerstr.             O->W       09:24:33
 #WPT: 053	27-MAR-12 9:26:22	52.51475	13.4251388888889	buoy_white_green
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     09:26:22
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     09:26:22
 #WPT: 054	27-MAR-12 9:26:40	52.5139722222222	13.4243888888889	buoy_white_red
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW               09:26:40
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW               09:26:40
 #WPT: 055	27-MAR-12 9:27:56	52.51375	13.4241666666667	buoy_white_green
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     09:27:56
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     09:27:56
 #WPT: 056	27-MAR-12 9:29:03	52.5110277777778	13.4220277777778	buoy_white_green
-11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW     09:29:03
+11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW     09:29:03
 #WPT: 057	27-MAR-12 9:29:19	52.51025	13.4214166666667	buoy_white_red
-11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW               09:29:19
+11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW               09:29:19
 #WPT: 058	27-MAR-12 9:29:53	52.5100833333333	13.4201111111111	buoy_white_green
 11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:29:53
 #WPT: 059	27-MAR-12 9:30:06	52.5103333333333	13.4191111111111	buoy_white_red
@@ -2324,9 +2324,9 @@ Do, 29.03.2012
 #WPT: 082	29-MAR-12 8:29:11	52.5151111111111	13.4322777777778	buoy_white_green
 12295,12197   Andreasstr./Singerstr.             O->W       08:29:11
 #WPT: 083	29-MAR-12 12:54:17	52.5144444444444	13.4208333333333	buoy_white_red
-11768,12006   An der Michaelbrücke/Lichtenberge  W->O                 12:54:17
+11764,12001   An der Michaelbrücke/Lichtenberge  W->O                 12:54:17
 #WPT: 084	29-MAR-12 12:55:08	52.5134166666667	13.4238055555556	buoy_white_green
-11768,12006   An der Michaelbrücke/Lichtenberge  W->O       12:55:08
+11764,12001   An der Michaelbrücke/Lichtenberge  W->O       12:55:08
 #WPT: 085	29-MAR-12 12:56:18	52.5109166666667	13.4283611111111	buoy_white_green
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     12:56:18
 #WPT: 086	29-MAR-12 12:56:51	52.5099722222222	13.4306111111111	buoy_white_green
@@ -2560,9 +2560,9 @@ Mo, 16.04.2012
 #WPT: 274	16-APR-12 9:05:34	52.5151388888889	13.4322777777778	buoy_white_green
 12295,12197   Andreasstr./Singerstr.             O->W       09:05:34
 #WPT: 275	16-APR-12 19:00:58	52.5145277777778	13.4205	buoy_white_red
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW               19:00:58
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW               19:00:58
 #WPT: 276	16-APR-12 19:01:56	52.5134722222222	13.4237777777778	buoy_white_green
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     19:01:56
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     19:01:56
 #WPT: 277	16-APR-12 19:02:43	52.5118611111111	13.4265277777778	buoy_white_red
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO               19:02:43
 #WPT: 278	16-APR-12 19:03:28	52.5103055555556	13.4297222222222	buoy_white_green
@@ -2607,9 +2607,9 @@ Di, 17.04.2012
 #WPT: 295	17-APR-12 8:43:51	52.5151666666667	13.4323333333333	buoy_white_green
 12295,12197   Andreasstr./Singerstr.             O->W       08:43:51
 #WPT: 296	17-APR-12 8:45:41	52.5150277777778	13.4254444444444	buoy_white_green
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     08:45:41
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     08:45:41
 #WPT: 297	17-APR-12 8:45:59	52.5141944444444	13.4247222222222	buoy_white_red
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW               08:45:59
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW               08:45:59
 #WPT: 298	17-APR-12 8:47:17	52.5151666666667	13.4196666666667	buoy_white_green
 11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W       08:47:17
 #WPT: 299	17-APR-12 18:38:52	52.5153055555556	13.4305555555556	buoy_white_green
@@ -2630,17 +2630,17 @@ Mi, 18.04.2012
 #WPT: 304	18-APR-12 8:57:32	52.5151388888889	13.4321944444444	buoy_white_green
 12295,12197   Andreasstr./Singerstr.             O->W       08:57:32
 #WPT: 305	18-APR-12 9:00:41	52.5137777777778	13.42425	buoy_white_green
-11768,12006   An der Michaelbrücke/Lichtenberge  NO->SW     09:00:41
+11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     09:00:41
 #WPT: 306	18-APR-12 9:01:22	52.5122777777778	13.423	buoy_white_red
-11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW               09:01:22
+11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW               09:01:22
 #WPT: 307	18-APR-12 9:02:27	52.5099166666667	13.4211944444444	buoy_white_green
-11574,11594   Köpenicker Str./Michaelkirchstr.   NO->SW     09:02:27
+11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW     09:02:27
 #WPT: 308	18-APR-12 9:03:06	52.5105833333333	13.4183055555556	buoy_white_red
 11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W                 09:03:06
 #WPT: 309	18-APR-12 9:03:53	52.5109722222222	13.4168055555556	buoy_white_green
 11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W       09:03:53
 #WPT: 310	18-APR-12 19:45:40	52.5146388888889	13.4203611111111	buoy_white_green
-11768,12006   An der Michaelbrücke/Lichtenberge  NW->SO     19:45:40
+11764,12001   An der Michaelbrücke/Lichtenberge  NW->SO     19:45:40
 #WPT: 311	18-APR-12 19:47:40	52.5108611111111	13.4287777777778	buoy_white_green
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     19:47:40
 #WPT: 312Mitte	18-APR-12 19:48:55	52.5103888888889	13.4303611111111	buoy_white_green
@@ -2669,11 +2669,11 @@ Do, 19.04.2012
 #WPT: 320	19-APR-12 9:12:20	52.5010555555556	13.4432777777778	buoy_white_red
 12985,10665   Skalitzer Str./Oberbaumstr./Schle  O->W                 09:12:20
 #WPT: 321	19-APR-12 9:15:55	52.50725	13.42875	buoy_white_green
-12055,11331   Köpenicker Str./Bethaniendamm      SO->NW     09:15:55
+12060,11323   Köpenicker Str./Bethaniendamm      SO->NW     09:15:55
 #WPT: 322	19-APR-12 9:16:53	52.5088888888889	13.4246111111111	buoy_white_red
-11574,11594   Köpenicker Str./Michaelkirchstr.   SO->NW               09:16:53
+11569,11587   Köpenicker Str./Michaelkirchstr.   SO->NW               09:16:53
 #WPT: 323	19-APR-12 9:17:29	52.5096388888889	13.4219166666667	buoy_white_green
-11574,11594   Köpenicker Str./Michaelkirchstr.   SO->NW     09:17:29
+11569,11587   Köpenicker Str./Michaelkirchstr.   SO->NW     09:17:29
 #WPT: 324	19-APR-12 9:17:53	52.5101111111111	13.4201944444444	buoy_white_green
 11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:17:53
 #WPT: 325	19-APR-12 9:18:06	52.5103611111111	13.4191944444444	buoy_white_red
@@ -2716,7 +2716,7 @@ Fr, 20.04.2012
 #WPT: 340	20-APR-12 7:59:39	52.5096388888889	13.4325277777778	buoy_white_green
 12180,11657   Holzmarktstr./Stralauer Platz/And  SO->NW     07:59:39
 #WPT: 341	20-APR-12 8:01:38	52.5133611111111	13.4245833333333	buoy_white_green
-11768,12006   An der Michaelbrücke/Lichtenberge  SO->NW     08:01:38
+11764,12001   An der Michaelbrücke/Lichtenberge  SO->NW     08:01:38
 #WPT: 342	20-APR-12 8:02:17	52.5143888888889	13.4219166666667	buoy_white_green
 11351,12221   Holzmarktstr./Alexanderstr./Stral  O->W       08:02:17
 #WPT: 343	20-APR-12 8:02:41	52.515	13.4200277777778	buoy_white_red

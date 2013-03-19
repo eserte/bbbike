@@ -46,8 +46,8 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 #: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
 #: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
-#: last_checked: 2013-02-01
-#: next_check: 2013-04-01
+#: last_checked: 2013-03-19
+#: next_check: 2013-05-19
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
 #: XXX Baumaßnahme 4.15 (Realisierung nach 2011)
@@ -84,7 +84,7 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2013-02-25
+#: last_checked: 2013-03-18
 #: next_check: 2013-06-01
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -97,7 +97,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2013-03-12
+#: last_checked: 2013-03-19
 #: next_check: 2013-06-01
 Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -259,9 +259,6 @@ Lausanner Str./Thuner Str.: wird hier ein Zebrastreifen angelegt?	?::projected 3
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4063&options=4
 Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1786,1254
-# 
-#: by: http://www.berlin.de/ba-spandau/bvv-online/___tmp/tmp/45081036113414270/113414270/00067154/54-Anlagen/02/0236.pdf
-Brücke über den Burgwallgraben: Realisierung bis Jahresende 2012	?::inwork -3441,13270 -3333,13089 -3332,13054
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4&date=20130125 vvv
@@ -760,6 +757,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX ebenfalls prüfen: wo lässt sich die Landsberger am besten überqueren? Nur an der Fußgängerampel leicht westlich davon? routing_helper verwenden?
+Genslerstr. - Landsberger Allee: anscheinend existiert hier eine Verbindung für Radfahrer/Fußgänger: Qualität? Gibt es Drängelgitter an der Tramquerung?	? 16669,14438 16630,14403
+# 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656
 #: next_check: 2014-03-15
 Greifenhagener Str.: evtl. wird hier eine Fußgängerzone entstehen	? 11123,15851 11150,15908
@@ -822,10 +822,10 @@ Fontanestr. (Lichtenrade): Qualität des Rad/Gehweg-Abschnitts?	? 9779,-605 9822,
 #: XXX nochmal genau vor Ort anschauen
 An der Vogelweide: Qualität? Lage? Straßenschilder?	? 8568,21863 8626,21892 8712,21858 8725,21910 8615,21955 8590,21894
 # 
-#: last_checked: 2013-02-10
-An der ehem. Blumengroßmarkthalle: hier wird eine neue Verbindung --- gepflastert (genaue Qualität?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
+#: last_checked: 2013-03-18
+An der ehem. Blumengroßmarkthalle: hier wird eine neue Verbindung entstehen --- gepflastert (genaue Qualität?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr.; wird aber nicht realisiert)
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert)
 #: XXX evtl. entsteht hier auch eine offizielle Verbindung?
 Landschaftspark Herzberge - Arendsweg: evtl. den inoffiziellen Trampelpfad aufnehmen	? 17266,14144 17335,14167
 Radweg Herzberge: tatsächlich wieder befahrbar?	? 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144
@@ -925,6 +925,7 @@ Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtl
 # 
 #: XXX VMZ-Eintrag: Malchower Weg (Hohenschönhausen): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 05/13) Richtung Rhinstr. zwischen Hansastr. und Wartenberger Str., 05.11.2012 09:00 Uhr bis 31.05.2013 16:00 Uhr
 #: source_id: INKO_111447
+#: source_id: LMS_1290313357
 Malchower Str.: wo sind hier die Bauarbeiten? Behinderungen für Radfahrer?	?::inwork 17425,16165 17383,16197 17271,16280 17220,16320 17170,16365 17102,16464 17059,16560 17017,16716 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16951,17055 16934,17132 16918,17204 16914,17224 16902,17278 16887,17349 16837,17440
 # 
 Geißenweide - Blenheimstr.: gibt es für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
@@ -3271,10 +3272,6 @@ Mehrow - Blumberg: Qualität? Für Autos gesperrt?	? 24782,18704 24453,19691 24649
 #: by: http://www.potsdam.de/cms/dokumente/10097197_1471008/9e11fd84/Amtsblatt_09_12.pdf
 Heinz-Sielmann-Ring (Potsdam-Groß-Glienicke): Qualität?	? -8632,8641 -8192,8567
 # 
-#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121009.0950.376338.html
-#: next_check: 2012-11-09
-Markstr.: existieren in der Markstr. mittlerweile Radstreifen?	? 7672,16878 7647,17037 7644,17054 7621,17246 7602,17399
-# 
 #: by: http://ftp.berlinonline.de/ba-temp-schoen/ba_beschluesse/2012-08-14/drucks._nr.1842_xviii_bezirkliches_fahrradroutennetz_fuer_tempelhof_schoeneberg_entwickeln_zwischenbericht.pdf vvv
 #: XXX wahrscheinlich asphaltiert
 #: XXX RR11 wird hier langgeführt werden
@@ -3307,3 +3304,4 @@ Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16806,1987 -16931,1783
 Preußensiedlung: Durchfahrt möglich?	? 20971,1046 20957,1043 20863,966 20836,982
 Wandsbeker Weg: verläuft zwischen Spandauer Str. und Barmbeker Weg auch ein Teil des Wandsbeker Wegs? Qualität? Für Autos befahrbar?	? -6641,14044 -6728,14038 -6757,14061 -6765,14120
 Köhlbrandweg: Qualität des Abschnitts zwischen Wandsbeker Weg und Spandauer Str.?	? -6542,14057 -6555,14161
+Schiffahrtsufer - Betckestr.: nachts beleuchtet?	? -3441,13270 -3352,13135 -3338,13118 -3210,12887 -3218,12843 -3214,12779 -3170,12595

@@ -213,7 +213,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2013-03-15
+#: last_checked: 2013-03-18
 #: next_check: 2013-06-01
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -279,10 +279,10 @@ Straße 59: Asphalt	Q0 12459,21010 12524,20863
 #: confirmed_by: srt
 Charlottenburger Str.: mäßiger Asphalt	Q1+ 13712,16089 13642,16118 13479,16182 13440,16197 13429,16202 13404,16212 13286,16267 13033,16387 12919,16438 12798,16493 12642,16555 12564,16591 12353,16687 12226,16757
 #: by: ^^^
-Engeldamm: Asphalt	Q0 12026,11348 11985,11261 11921,11185 11800,11118 11656,11106 11473,11180
+Engeldamm: Asphalt	Q0 12025,11346 11985,11261 11921,11185 11800,11118 11656,11106 11473,11180
 Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10511,10800 10397,10852 10103,10989
-Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11807,11479
-Adalbertstr.: Kopfsteinpflaster	Q2; 11807,11479 11726,11265 11656,11106
+Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11808,11482
+Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11616,7089 11652,6879
 Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2- 12066,9558 12047,9429 12074,9217 12078,9065
 Friedelstr.: mäßiges Kopfsteinpflaster	Q2 12088,9775 12081,9680 12066,9558
@@ -2367,7 +2367,7 @@ Lauffener Str.: Kopfsteinpflaster	Q2+; 18428,6123 18473,6265
 Mentelinstr.: akzeptables Kopfsteinpflaster	Q1- 17839,7365 17743,7328 17647,7280 17620,7260 17453,7136 17352,7051
 Mentelinstr.: Asphalt	Q0 17352,7051
 Stahnsdorfer Str.: Asphalt	Q0 -7821,-1890 -7984,-1899
-Bona-Peiser-Weg: einige Bodenschwellen	Q1 12010,11545 11943,11398
+Bona-Peiser-Weg: einige Bodenschwellen	Q1 12010,11545 11947,11398
 Mauerstr. (Mitte): sehr guter Asphalt	Q0 9171,11777 9144,11866 9108,11961 9076,12054 9064,12156
 Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 3417,524 3607,283 3689,182 3767,66 3788,26
 Mauerweg Lichterfelde: sehr guter Asphalt	Q0 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26
@@ -20906,6 +20906,12 @@ Silzer Weg: Asphalt	Q0 5929,389 6130,449
 #: by: ^^^
 # 
 #: by: Stefan Klinkusch vvv
+Schiffahrtsufer - Burgwallsteg: sehr guter Asphalt	Q0 -3441,13270 -3352,13135 -3338,13118
+Burgwallsteg - Betckestr.: gutes Rechteckpflaster	Q1+ -3338,13118 -3210,12887 -3218,12843 -3214,12779 -3170,12595
+Cosmarweg: sehr guter Beton	Q0 -6151,13001 -6254,12976 -6360,12970 -6514,13017
+Cosmarweg: sehr guter Asphalt	Q0 -6514,13017 -6626,13049 -6828,13106 -6898,13126 -6908,13129 -6951,13141 -7103,13191 -7195,13216 -7303,13248
+Weidenweg: Asphalt	Q0 -7693,13330 -7716,12970
+Fahrlander Weg: Asphalt	Q0 -8385,13138 -8413,12651 -8447,12079
 (zum Räcknitzer Steig): Verbundsteinpflaster	Q0- -5535,12631 -5559,12557
 (Magistratsweg - Blasewitzer Ring/Reclamweg): Verbundsteinpflaster	Q0- -5830,12712 -5808,12631 -5559,12557 -5400,12509 -5196,12452
 (Stieglakeweg - Stieglakebecken): Verbundsteinpflaster	Q1 -6911,13817 -6924,13570 -6926,13560 -6922,13449
@@ -21123,7 +21129,7 @@ Ulrikenstr. - Brunsbütteler Damm: sehr guter Asphalt	Q0 -5277,13707 -5187,13707 
 Egelpfuhlwiesen: Asphalt	Q0 -5594,12832 -5561,12909 -5554,12929 -5493,12994 -5446,13137 -5472,13235
 (Seeburger Weg - Lutoner Str.): Asphalt	Q0 -5234,12812 -5273,12802 -5388,12841 -5554,12929 -5707,13014 -5753,13107
 (Schiffahrtsufer - Spandauer Burgwall): Sandweg	Q2 -3441,13270 -3462,13256 -3467,13240 -3526,13196
-Schiffahrtsufer: Asphalt	Q0 -3555,13485 -3441,13270
+Schiffahrtsufer: Asphalt	Q0 -3555,13485 -3451,13300 -3441,13270
 Am Wäldchen: fester Sandweg	Q2 -8324,12644 -8359,12112
 Im Grund: fester Sandweg	Q2 -8235,12144 -8205,12644
 Talweg: fester Sandweg	Q2 -7948,12634 -8078,12647 -8205,12644 -8324,12644 -8413,12651
@@ -21998,9 +22004,9 @@ Ostender Str.: Asphalt	Q0 6682,15440 6794,15553
 Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7043,15793
 (Zufahrt Str. d. Pariser Kommune): Asphalt	Q0 12577,11804 12617,11888
 (Zufahrt Str. d. Pariser Kommune): Beton	Q1+ 12617,11888 12651,11952
-(Zufahrt Franz-Mehring-Platz): Beton	Q1+ 12651,11952 12699,12041 12740,12128
+(Zufahrt Franz-Mehring-Platz): Beton	Q1+ 12651,11952 12691,12042 12735,12131
 Mehlbeerenweg: Asphalt	Q0 11993,11978 11940,11982
-Mehlbeerenweg: schlechter Asphalt und Sand	Q3 11940,11982 11923,11881 11919,11856
+Mehlbeerenweg: schlechter Asphalt und Sand	Q3 11940,11982 11923,11881 11916,11846
 #: corrected_by: srt (Q2 -> Q1)
 Kleine Markusstr.: Beton	Q1 12064,12171 11958,12195 11937,12127
 (nördliches Spreeufer): Parkweg	Q1 6106,12989 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5869,12591
@@ -22186,7 +22192,7 @@ Beyerstr.: Asphalt	Q0 -3631,12484 -3764,12481 -3893,12474
 Ulmenstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3893,12628 -4053,12632 -4174,12683
 Sprengelstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3887,12673 -4026,12720
 Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1 -4026,12720 -4099,12763
-Betckestr.: Kopfsteinpflaster	Q2 -3635,12572 -3444,12580 -3252,12580 -3154,12582
+Betckestr.: Kopfsteinpflaster	Q2 -3635,12572 -3444,12580 -3252,12580 -3170,12595 -3134,12597 -3113,12549
 Franzstr. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3637,12668 -3446,12728 -3275,12769
 Wörther Str. (Wilhelmstadt): Asphalt	Q1 -3444,12580 -3446,12728 -3448,12834 -3451,12911
 Metzer Str. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3693,13012 -3715,13003 -3817,13002 -3913,13054
