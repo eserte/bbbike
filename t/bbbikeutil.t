@@ -1,11 +1,12 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode:cperl;coding:utf-8 -*-
 
 #
 # Author: Slaven Rezic
 #
 
 use strict;
+use utf8;
 
 use FindBin;
 use lib "$FindBin::RealBin/..";
@@ -75,6 +76,67 @@ is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for b
 {
     my(undef,$dir) = BBBikeUtil::schnittwinkel(11671,13775, 11664,13990, 11492,14000);
     is $dir, 'l', 'left turn';
+}
+
+{
+    # This list is already sorted
+    my @test = (
+		'Aachener Str.',
+		'(am Bundeskanzleramt)',
+		'(A.T.U-Einfahrt - ALDI-Parkplatz)',
+		'Brommystr.',
+		'Bröndbystr.',
+		'Brontëweg',
+		'Brook-Taylor-Str.',
+		'Brösener Str.',
+		'Brotteroder Str.',
+		'Grünberger Str.',
+		'("Grünes Band")',
+		'Oschatzer Ring',
+		'Öschelbronner Weg',
+		'Osdorfer Str.',
+		'Zwischen den Giebeln',
+	       );
+
+    {
+	my @res = BBBikeUtil::sort_german(\@test);
+	is_deeply \@res, \@test, 'sort_german';
+    }
+
+    {
+	my @rev_test = reverse @test;
+	my @res = BBBikeUtil::sort_german(\@test);
+	is_deeply \@res, \@test, 'sort_german (2)';
+    }
+}
+
+{
+    my @test_with_polish = (
+			    'Dąbie',
+			    'Dabrun',
+			    'Dechtow',
+			    'Děčín',
+			    'Dyrotz',
+			    'Górzyca',
+			    'Gosen',
+			    'Leitzkau',
+			    'Łęknica',
+			    'Lemmersdorf',
+			    'Sieversdorf b. Neustadt',
+			    'Słońsk',
+			    'Słubice',
+			    'Summt',
+			    'Świnoujście',
+			    'Szczecin',
+			    'Usedom',
+			    'Ústí nad Labem',
+			    'Ützdorf',
+			    'Vehlefanz',
+			   );
+    {
+	my @res = BBBikeUtil::sort_german(\@test_with_polish);
+	is_deeply \@res, \@test_with_polish, 'sort_german (with some Polish characters)';
+    }
 }
 
 __END__

@@ -327,6 +327,11 @@ BEGIN {
     %uml_german_locale = ('ä' => 'a', 'ö' => 'o', 'ü' => 'u', 'ß' => 'ss',
 			  'Ä' => 'A', 'Ö' => 'O', 'Ü' => 'U',
 			  'é' => 'e', 'è' => 'e', 'ë' => 'e', 'á' => 'a',
+			  # some Polish and Czech characters appearing in the bbbike data set
+			  # XXX better to use Text::Unidecode maybe?
+			  "\x{00DA}" => 'U', "\x{0141}" => 'L', "\x{015A}" => 'S',
+			  "\x{0142}" => 'l', "\x{0105}" => 'a',
+			  "\x{011B}" => 'e', "\x{0119}" => 'e', "\x{00F3}" => 'o',
 			 );
     $uml_german_locale_keys = join("",keys %uml_german_locale);
     $uml_german_locale_keys_rx = qr{[$uml_german_locale_keys]};
@@ -347,6 +352,19 @@ sub umlauts_to_german {
     my $s = shift;
     $s =~ s/($uml_keys_rx)/$uml{$1}/go;
     $s;
+}
+
+sub sort_german {
+    my($arr_ref) = @_;
+    map { $_->[1] }
+	sort { $a->[0] cmp $b->[0] }
+	    map {
+		[ do {
+		    my $val = lc umlauts_for_german_locale($_);
+		    $val =~ s{[\(\)\"\.]}{}g;
+		    $val;
+		}, $_]
+	    } @$arr_ref;
 }
 
 BEGIN {

@@ -12148,12 +12148,7 @@ sub choose_ort {
 		    # - the german locale may be missing
 		    # - with various perl versions and OSes I had in the
 		    #   past problems with "use locale"
-		    my $tf_sub = \&BBBikeUtil::umlauts_for_german_locale;
-		    $lb->insert('end',
-				map { $_->[1] }
-				sort { $a->[0] cmp $b->[0] }
-				map { [ do { /^\(?(.*)/; $tf_sub->($1) }, $_] }
-				keys %orte);
+		    $lb->insert('end', BBBikeUtil::sort_german([ keys %orte ]));
 		}
 	    }
 
