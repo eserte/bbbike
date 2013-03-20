@@ -1,8 +1,5 @@
 ### DO NOT EDIT. Automatically created by Makefile
 RSYNC=	rsync
-BBBIKE_RADZEIT_USER=	root
-BBBIKE_RADZEIT_HOST=	78.47.225.30
-BBBIKE_RADZEIT_APACHE_DIR=	/var/www/domains/radzeit.de/www/
 BBBIKE_HOSTEUROPE_USER=	root
 BBBIKE_HOSTEUROPE_HOST=	bbbike.de
 BBBIKE_HOSTEUROPE_APACHE_DIR=	/root/work/bbbike-webserver/
