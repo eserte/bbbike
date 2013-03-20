@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,6 +28,7 @@ my $q = CGI->new;
 print $q->header('text/html; charset=utf-8');
 
 my $leaflet_dist = $q->param('leafletdist') || '';
+my $enable_upload = $q->param('upl') || 0;
 
 open my $fh, $htmlfile
     or die "Can't open $htmlfile: $!";
@@ -71,6 +72,10 @@ while(<$fh>) {
 	    my $json = BBBikeGeoJSON::route_to_geojson_json($route);
 	    print "initialRouteGeojson = $json;\n";
 	}
+    }
+
+    if (m{\Q//--- INSERT DEVEL CODE HERE ---}) {
+	print "enable_upload = " . ($enable_upload ? 'true' : 'false') . ";\n";
     }
 }
 

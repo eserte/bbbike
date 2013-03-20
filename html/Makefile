@@ -126,3 +126,7 @@ opensearch/bbbike-opensearch-en.gif:
 
 bbbikeleaflet.en.html:
 	ln -s bbbikeleaflet.html bbbikeleaflet.en.html
+
+# found json2.js at https://raw.github.com/douglascrockford/JSON-js/master/json2.js
+json2.min.js: json2.js
+	jsmin < $> > $@

@@ -135,20 +135,20 @@ function doLeaflet() {
 	},
 
 	onAdd: function (map) {
-	    var container = L.DomUtil.create('div', 'loccontrol');
+	    var container = L.DomUtil.create('div', 'anycontrol');
 	    container.innerHTML = "LOC";
-	    L.DomUtil.addClass(container, "loccontrol_inactive");
+	    L.DomUtil.addClass(container, "anycontrol_inactive");
 	    trackingRunning = false;
 	    container.onclick = function() {
 		if (trackingRunning) {
 		    map.stopLocate();
-		    L.DomUtil.removeClass(container, "loccontrol_active");
-		    L.DomUtil.addClass(container, "loccontrol_inactive");
+		    L.DomUtil.removeClass(container, "anycontrol_active");
+		    L.DomUtil.addClass(container, "anycontrol_inactive");
 		    trackingRunning = false;
 		} else {
 		    map.locate({watch:true, setView:false});
-		    L.DomUtil.removeClass(container, "loccontrol_inactive");
-		    L.DomUtil.addClass(container, "loccontrol_active");
+		    L.DomUtil.removeClass(container, "anycontrol_inactive");
+		    L.DomUtil.addClass(container, "anycontrol_active");
 		    trackingRunning = true;
 		}
 	    };
@@ -163,7 +163,7 @@ function doLeaflet() {
 	},
 
 	onAdd: function (map) {
-	    var container = L.DomUtil.create('div', 'clrcontrol');
+	    var container = L.DomUtil.create('div', 'anycontrol anycontrol_inactive');
 	    container.innerHTML = "CLR";
 	    container.onclick = function() {
 		if (confirm("Clear track?")) {
@@ -179,6 +179,36 @@ function doLeaflet() {
 	}
     });
     map.addControl(new ClrControl());
+
+    if (enable_upload) {
+	var UplControl = L.Control.extend({
+	    options: {
+		position: 'bottomleft'
+	    },
+
+	    onAdd: function (map) {
+		var container = L.DomUtil.create('div', 'anycontrol anycontrol_inactive');
+		container.innerHTML = "UPL";
+		container.onclick = function() {
+		    L.DomUtil.removeClass(container, "anycontrol_inactive");
+		    L.DomUtil.addClass(container, "anycontrol_active");
+		    var serialized = JSON.stringify({trackSegs:trackSegs});
+		    var uploadRequest = new XMLHttpRequest();
+		    uploadRequest.open("POST", "http://bbbike.dyndns.org/bbbike/cgi/upload-track.cgi", false);
+		    uploadRequest.send(serialized);
+		    if (uploadRequest.status == 200) {
+			alert("Upload response: " + uploadRequest.responseText);
+		    } else {
+			alert("Error while uploading track: " + uploadRequest.status);
+		    }
+		    L.DomUtil.removeClass(container, "anycontrol_active");
+		    L.DomUtil.addClass(container, "anycontrol_inactive");
+		};
+		return container;
+	    }
+	});
+	map.addControl(new UplControl());
+    }
 
     var locationCircle = L.circle(defaultLatLng, 10); // XXX better or no defaults?
     var locationPoint = L.circle(defaultLatLng, 2); // XXX better or no defaults

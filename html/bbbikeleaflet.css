@@ -6,8 +6,6 @@ html, body, #map {
   height: 100%;
 }
 
-.loccontrol { font-family: sans-serif; font-size: small; padding:2px; }
-.loccontrol_inactive { background-color:#ffffff; color:#000000; }
-.loccontrol_active   { background-color:#000000; color:#ffffff; }
-
-.clrcontrol { font-family: sans-serif; font-size: small; padding:2px; background-color:#ffffff; color:#000000; }
+.anycontrol { font-family: sans-serif; font-size: small; padding:2px; }
+.anycontrol_inactive { background-color:#ffffff; color:#000000; }
+.anycontrol_active   { background-color:#000000; color:#ffffff; }
