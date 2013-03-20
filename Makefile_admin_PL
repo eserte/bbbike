@@ -174,6 +174,15 @@ if ($^O eq 'freebsd') {
 
 $bbbike_makefile_admin .= <<'EOF'
 ######################################################################
+# DEPLOYMENTS
+
+# The following variables may be used in mapserver/brb/Makefile
+BBBIKE_HOSTEUROPE_USER=		root
+BBBIKE_HOSTEUROPE_HOST=		bbbike.de
+BBBIKE_HOSTEUROPE_APACHE_DIR=	/root/work/bbbike-webserver/
+RSYNC=				rsync
+
+######################################################################
 # DISTRIBUTIONS
 
 TMPDIR?=	/tmp
