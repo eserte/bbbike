@@ -194,7 +194,7 @@ function doLeaflet() {
 		    L.DomUtil.addClass(container, "anycontrol_active");
 		    var serialized = JSON.stringify({trackSegs:trackSegs});
 		    var uploadRequest = new XMLHttpRequest();
-		    uploadRequest.open("POST", "http://bbbike.dyndns.org/bbbike/cgi/upload-track.cgi", false);
+		    uploadRequest.open("POST", "upload-track.cgi", false);
 		    uploadRequest.send(serialized);
 		    if (uploadRequest.status == 200) {
 			alert("Upload response: " + uploadRequest.responseText);

@@ -30,22 +30,54 @@ print $q->header('text/html; charset=utf-8');
 my $leaflet_dist = $q->param('leafletdist') || '';
 my $enable_upload = $q->param('upl') || 0;
 
+my $use_old_url_layout = $q->url(-absolute => 1) =~ m{/cgi/bbbikeleaflet};
+my($bbbike_htmlurl, $bbbike_imagesurl);
+if ($use_old_url_layout) {
+    $bbbike_htmlurl = "/bbbike/html";
+    $bbbike_imagesurl = "/bbbike/images";
+} else {
+    $bbbike_htmlurl = "/BBBike/html";
+    $bbbike_imagesurl = "/BBBike/images";
+}
+
 open my $fh, $htmlfile
     or die "Can't open $htmlfile: $!";
 binmode $fh, ':utf8';
 binmode STDOUT, ':utf8';
+my $state_upload;
 while(<$fh>) {
+    if (m{\Q<!-- IF UPLOAD ENABLED -->}) {
+	$state_upload = 'enabled';
+	next;
+    } elsif (m{\Q<!-- IF UPLOAD DISABLED -->}) {
+	$state_upload = 'disabled';
+	next;
+    } elsif (m{\Q<!-- END UPLOAD -->}) {
+	undef $state_upload;
+	next;
+    }
+
+    if ($state_upload) {
+	if ($state_upload eq 'enabled' && !$enable_upload) {
+	    next;
+	} elsif ($state_upload eq 'disabled' && $enable_upload) {
+	    next;
+	}
+    }
+
     if (m{(.*)\Q<!-- FIX URL LAYOUT -->\E}) {
 	my $line = $1;
-	my $use_old_url_layout = $q->url(-absolute => 1) =~ m{/cgi/bbbikeleaflet};
-	my $bbbike_htmlurl;
-	if ($use_old_url_layout) {
-	    $bbbike_htmlurl = "/bbbike/html";
-	} else {
-	    $bbbike_htmlurl = "/BBBike/html";
-	}
 	if ($line !~ s{(src=")}{$1$bbbike_htmlurl/}) {
 	    $line =~ s{(href=")}{$1$bbbike_htmlurl/};
+	}
+	print $line, "\n";
+	next;
+    }
+
+    if (m{(.*)\Q<!-- FIX IMAGES URL LAYOUT -->\E}) {
+	my $line = $1;
+	if ($line !~ s{(src=")}{$1$bbbike_imagesurl/}) {
+	    $line =~ s{(href=")}{$1$bbbike_imagesurl/};
 	}
 	print $line, "\n";
 	next;
