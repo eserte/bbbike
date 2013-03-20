@@ -330,12 +330,12 @@ Wustermark	RC -21187,15667
 Buschow (Rathenow)	R -42628,19726
 Nennhausen	R -50618,20357
 Cottbus-Willmersdorf Nord	R 78673,-64386
-#Cottbus-Willmersdorf	R0 78147,-65382
+# REMOVED (auskommentiert, weil ansonsten die Checkskripte meckern, dass der Bahnhof nicht an einer Strecke liegt) --- Cottbus-Willmersdorf	R0 78147,-65382
 Peitz	R0 79946,-59208
 Klinge	R 88003,-72262
 Forst (Lausitz)	R 95993,-72638
-#: XXX genaue Position?
-Cottbus/Merzdorf	R 77675,-69375
+#: XXX_prog: versetzte Bahnsteige
+Cottbus/Merzdorf	R 77532,-69661
 Cottbus/Merzdorf (alt)	R0 78711,-69388
 Teichland	R 81307,-64063
 Neuendorf	R0 81599,-65282
@@ -380,8 +380,7 @@ Casekow	R 63537,90840
 Petershagen (Uckermark)	R 66435,93817
 Tantow	R 72783,97221
 Szczecin	R 86087,113900
-#: XXX utf-8-Version?
-Swinoujscie	R 66275,167900
+Świnoujście	R 66275,167900
 Nechlin	R 42224,115817
 Pasewalk	R 47854,124113
 Jatznick	R 44204,133763
