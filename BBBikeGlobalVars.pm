@@ -62,7 +62,7 @@ use vars qw(
      $inwork_photo $inwork_klein_photo $achtung_photo $cal_photo $cal_questionmark_photo $clock_photo $night_photo $star_photo $newlayer_photo
      $menuarrow_photo $ferry_photo $ferry_klein_photo $ferry_mini_photo $blocked_photo
      $notrailer_photo
-     $google_photo $bbbike_google_photo $google_streetview_photo $wikipedia_photo
+     $google_photo $bbbike_google_photo $google_streetview_photo $wikipedia_photo $bbbike_leaflet_photo
      %photo
 );
 

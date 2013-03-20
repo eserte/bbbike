@@ -14439,7 +14439,13 @@ sub show_info {
 	}
 
 	{
-	    my $need_indentation = 1;
+	    if (!$bbbike_leaflet_photo) {
+		$bbbike_leaflet_photo = load_photo($top, 'bbbike_leaflet_16');
+	    }
+	    my $need_indentation;
+	    if (!$bbbike_leaflet_photo) {
+		$need_indentation = 1;
+	    }
 	    my $show_leaflet_url = sub {
 		my($baseurl, $linkcount) = @_;
 		$show_url->($linkcount, sub {
@@ -14458,6 +14464,10 @@ sub show_info {
 	    };
 
 	    if ($devel_host) {
+		if ($bbbike_leaflet_photo) {
+		    $info_text->imageCreate('end', -image => $bbbike_leaflet_photo,
+					    -align => "bottom", -padx => 2, -pady => 1);
+		}
 		$info_text->insert("end", "BBBike Leaflet (local)",
 				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 		$show_leaflet_url->("http://localhost/bbbike/html/bbbikeleaflet.html", $linkcount);
@@ -14465,6 +14475,10 @@ sub show_info {
 		$linkcount++;
 	    }
 
+	    if ($bbbike_leaflet_photo) {
+		$info_text->imageCreate('end', -image => $bbbike_leaflet_photo,
+					-align => "bottom", -padx => 2, -pady => 1);
+	    }
 	    $info_text->insert("end", "BBBike Leaflet",
 			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_leaflet_url->($BBBike::BBBIKE_LEAFLET_URL, $linkcount);
