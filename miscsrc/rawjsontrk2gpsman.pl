@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -64,7 +64,7 @@ Convert the bbbikeleaflet.js raw json tracks to gpsman format.
 
 Mass conversion:
 
-    for i in ~/biokovo/src/bbbike/tmp/www/gps_upload_2012????_??????; do echo $i; ~/src/bbbike/miscsrc/rawjsontrk2gpsman.pl $i > /tmp/`basename $i`.trk; done 
+    for i in ~/biokovo/src/bbbike/tmp/www/upload-track/*.trk.json; do echo $i; ~/src/bbbike/miscsrc/rawjsontrk2gpsman.pl $i > /tmp/`basename $i`.trk; done 
 
 See source code for a number of TODOs.
 
