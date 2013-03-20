@@ -18,7 +18,10 @@ PERL?=		perl
 #DEBIAN_ARCH=	$(shell perl -e 'use AptPkg::Config qw/$$_config/; $$_config->init; print $$_config->get("APT::Architecture")')
 DEBIAN_ARCH=	$(shell dpkg --print-architecture)
 
-all:	debian-package
+all:	pre-check debian-package
+
+pre-check:
+	@[ -d $(PACKAGEDIR) ] || (echo "Please create a symlink in $(PACKAGEDIR) or git-clone it from somewhere"; false)
 
 debian-package: debian-prepare \
 		debian-control \
