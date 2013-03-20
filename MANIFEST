@@ -241,6 +241,7 @@ cgi/redirect-bbbike.cgi
 cgi/runbbbikecgi
 cgi/tinyhttpd			experimentell (fuer Win32)
 cgi/tinyhttpd.config
+cgi/upload-track.cgi
 cgi/wapbbbike.cgi
 cmdbbbike
 data/.modified			for updating over the internet
@@ -449,6 +450,8 @@ html/empty.html
 html/error404.html
 html/fragezeichenform.html
 html/fragezeichenform.utf8.html
+html/json2.js
+html/json2.min.js
 html/help.html
 html/legende.html
 html/newstreetform.html
@@ -543,6 +546,9 @@ images/bab_table_32.png
 images/bbbike_google.gif
 images/bbbike_google.png
 images/bbbike_google.xpm
+images/bbbike_leaflet_16.png
+images/bbbike_leaflet_57.png
+images/bbbike_leaflet_upl_57.png
 images/bbbike_splash.gif
 images/bbbike_splash.xpm
 images/berlin_overview_small.gif
