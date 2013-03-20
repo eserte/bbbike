@@ -61,7 +61,8 @@ CGI_FILES=		bbbike.cgi \
 			wapbbbike.cgi \
 			mapserver_address.cgi \
 			mapserver_comment.cgi \
-			mapserver_setcoord.cgi
+			mapserver_setcoord.cgi \
+			upload-track.cgi
 TESTS_ON_REMOTE?=	basic.t \
 			strassen-gpx.t \
 			bbbikedraw.t
