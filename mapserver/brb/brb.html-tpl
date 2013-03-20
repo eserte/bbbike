@@ -21,6 +21,7 @@
 <base href="[% MAPSERVER_URL %]/brb.html">
 <link rel="stylesheet" type="text/css" href="[% BBBIKE_HTML_RELURL %]/bbbike.css">
 <link rel="stylesheet" type="text/css" href="brb.css">
+<link rel="shortcut icon" type="image/x-icon" href="[% BBBIKE_IMAGES_RELURL %]/srtbike1.ico">
 <script type="text/javascript" src="brb.js"></script>
 </head>
 <body bgcolor=#FFFFFF onload="init()">
