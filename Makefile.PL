@@ -591,13 +591,8 @@ EOF
 INSTALL_PREFIX?=	$INSTALL_PREFIX
 BBBIKE_DEST_DIR?=	$BBBIKE_DEST_DIR
 
-EOF
-    $out .= <<'EOF';
-install-to-usr-local:
-	-rm -rf ${BBBIKE_DEST_DIR}
-	cp -R . ${BBBIKE_DEST_DIR}
-	find ${BBBIKE_DEST_DIR} | xargs chmod ugo+r
-	find ${BBBIKE_DEST_DIR} -perm -u=x | xargs chmod go+x
+do--symlink-bbbikeexe:
+	[ -d \${INSTALL_PREFIX}/bin ] || mkdir -p \${INSTALL_PREFIX}/bin
 EOF
     for my $f (@bbbikeexe) {
 	$out .= <<EOF;
@@ -605,6 +600,24 @@ EOF
 	ln -s \${BBBIKE_DEST_DIR}/$f \${INSTALL_PREFIX}/bin/$f
 EOF
     }
+
+    $out .= <<'EOF';
+
+install-to-usr-local:	do--install-to-usr-local do--symlink-bbbikeexe
+
+do--install-to-usr-local:
+	-rm -rf ${BBBIKE_DEST_DIR}
+	cp -R . ${BBBIKE_DEST_DIR}
+	find ${BBBIKE_DEST_DIR} | xargs chmod ugo+r
+	find ${BBBIKE_DEST_DIR} -perm -u=x | xargs chmod go+x
+
+install-using-eui:	distdir do--install-using-eui do--symlink-bbbikeexe
+
+do--install-using-eui:
+	-rm -rf ${BBBIKE_DEST_DIR}
+	$(PERL) -MExtUtils::Install -e 'install({ "$(DISTVNAME)" => "$(BBBIKE_DEST_DIR)" }, $(VERBINST), 0, 0, ["/debian/.*"], 1)'
+EOF
+
     return $out;
 
     # XXX disabled for now --- the installer does not work with newer
