@@ -553,7 +553,7 @@ install:
 
 EOF
     my($INSTALL_PREFIX, $BBBIKE_DEST_DIR);
-    if (-f "/etc/debian-release") {
+    if (-f "/etc/debian-release" || -f "/etc/debian_version") {
 	print STDERR "Choosing Debian layout (/usr/lib/BBBike, executable in /usr/bin)...\n";
 	$INSTALL_PREFIX = "/usr";
 	$BBBIKE_DEST_DIR = "/usr/lib/BBBike";
@@ -590,6 +590,7 @@ EOF
     $out .= <<EOF;
 INSTALL_PREFIX?=	$INSTALL_PREFIX
 BBBIKE_DEST_DIR?=	$BBBIKE_DEST_DIR
+REAL_BBBIKE_DEST_DIR?=	\$(BBBIKE_DEST_DIR)
 
 do--symlink-bbbikeexe:
 	[ -d \${INSTALL_PREFIX}/bin ] || mkdir -p \${INSTALL_PREFIX}/bin
@@ -597,7 +598,7 @@ EOF
     for my $f (@bbbikeexe) {
 	$out .= <<EOF;
 	-rm -f \${INSTALL_PREFIX}/bin/$f
-	ln -s \${BBBIKE_DEST_DIR}/$f \${INSTALL_PREFIX}/bin/$f
+	ln -s \${REAL_BBBIKE_DEST_DIR}/$f \${INSTALL_PREFIX}/bin/$f
 EOF
     }
 
