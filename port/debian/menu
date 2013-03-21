@@ -1,0 +1,5 @@
+?package(bbbike):needs="X11" section="Applications/Science/Geoscience"\
+  title="BBBike"\
+  icon32x32="/usr/lib/BBBike/images/srtbike32.xpm"\
+  icon16x16="/usr/lib/BBBike/images/srtbike16.xpm"\
+  command="/usr/bin/bbbike"

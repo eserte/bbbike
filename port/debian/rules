@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+%:
+	dh $@ 
+
+override_dh_auto_configure:
+	perl Makefile.PL
+
+override_dh_auto_install:
+	mkdir $$(pwd)/debian/bbbike/usr
+	mkdir $$(pwd)/debian/bbbike/usr/lib
+	mkdir $$(pwd)/debian/bbbike/usr/lib/BBBike
+	make install-using-eui BBBIKE_DEST_DIR=$$(pwd)/debian/bbbike/usr/lib/BBBike INSTALL_PREFIX=$$(pwd)/debian/bbbike/usr
+
+override_dh_auto_test:
