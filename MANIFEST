@@ -846,9 +846,11 @@ images/srtbike16_mask.xbm
 images/srtbike32.gif
 images/srtbike32.xpm
 images/srtbike32_mask.xbm
+images/srtbike48a.png
 images/srtbike57.png
 images/srtbike72.png
 images/srtbike114.png
+images/srtbike_logo.svg
 images/srtbike_mini.xpm
 images/srtbike_solid.gif
 images/srtbike_solid.xpm
@@ -960,6 +962,7 @@ install.bat
 install.pl
 install.sh
 kde/BBBike.desktop.tmpl
+kde/bbbike.desktop.tst
 kde/BBBikeDoc.desktop.tmpl
 kde/BBBikeWWW.desktop.tmpl
 kde/Cartography.directory.tmpl
