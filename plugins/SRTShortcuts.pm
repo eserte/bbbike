@@ -2789,18 +2789,11 @@ sub fragezeichen_on_route {
 sub multi_page_pdf {
     eval {
 	require File::Temp;
+	require BBBikeProcUtil;
 	my($tmp1fh,$tmp1file) = File::Temp::tempfile(SUFFIX => ".bbr", UNLINK => 1) or die $!;
 	main::load_save_route(1, $tmp1file);
 	my @cmd = ("$bbbike_rootdir/miscsrc/split-route-bboxes.pl", $tmp1file, "-view");
-	# XXX hack for XML::LibXML & GD problem under freebsd 9.0
-	if ($^O eq 'freebsd') {
-	    unshift @cmd, "perl5.8.9";
-	}
-	if (fork == 0) {
-	    exec @cmd;
-	    warn "Something failed while running @cmd: $!";
-	    CORE::exit(1);
-	}
+	BBBikeProcUtil::double_forked_exec(@cmd);
     };
     if ($@) {
 	main::status_message("An error happened: $@", "error");
