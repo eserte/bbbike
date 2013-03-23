@@ -11189,7 +11189,7 @@ sub show_blockings {
 			       map { [ transpose_all(@{ Strassen::to_koord($_->[Strassen::COORDS]) }) ] }
 			       @{ $temp_blockings_on_route{$name}->{data} }
 			      ];
-		 mark_street(-coords => $coords);
+		 mark_street(-coords => $coords, -clever_center => 1);
 	     },
 	     -scrollbars => 'osoe',
 	    )->pack(qw(-fill both));
@@ -12496,6 +12496,8 @@ sub clever_center {
 #   -scrollto => [x,y]
 #   -dont_mark => 1: don't mark
 #   -dont_center => 1: don't center
+#   -clever_center: möglichst so zentrieren, dass die Markierung nicht durch
+#                   andere Fenster verdeckt wird
 ### AutoLoad Sub
 sub mark_street {
     my(%args) = @_;
