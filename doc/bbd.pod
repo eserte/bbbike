@@ -521,6 +521,11 @@ descriptive text I<string> to the F<fragezeichen> file.
 May be used to mark a feature as complete or incomplete (e.g. cycle
 routes).
 
+=item C<priority: I<string>>
+
+A priority for checks. The priority string should something between
+C<#A> (highest) and C<#C> (lowest).
+
 =back
 
 =head3 Obsolete and to-be-decided directives
