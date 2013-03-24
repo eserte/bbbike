@@ -329,4 +329,37 @@
     )
   )
 
+(defun bbbike-view-cached-url (&optional url)
+  "View the URL under cursor, assuming it's cached in bbbike-aux"
+  (interactive)
+  (if (not url)
+      (setq url (bbbike--get-url-under-cursor)))
+  (call-process-shell-command (concat "/home/e/eserte/src/bbbike-aux/downloads/view -show-in-firefox '" url "'")))
+
+(defun bbbike-view-remote-url ()
+  "View the URL under cursor remotely"
+  (interactive)
+  (browse-url (bbbike--get-url-under-cursor)))
+
+;;; XXX actually the documented behavior is NYI
+;;; XXX currently bbbike-view-cached-url is always called
+(defun bbbike-view-url ()
+  "View the URL under cursor, either the cached version (preferred), or the remote version"
+  (interactive)
+  (bbbike-view-cached-url))
+
+(defun bbbike--get-url-under-cursor ()
+  (let (begin-current-line-pos end-current-line-pos current-line)
+    (save-excursion
+      (search-backward-regexp "\\(^\\| \\)")
+      (setq begin-current-line-pos (1+ (match-beginning 0))))
+    (save-excursion
+      (search-forward-regexp "\\( \\|$\\)")
+      (setq end-current-line-pos (match-beginning 0)))
+    (setq current-line (buffer-substring begin-current-line-pos end-current-line-pos))
+    (if (not (string-match "\\(https?://[^ ]+\\)" current-line))
+	(error (concat "This does not look like a http/https URL "
+		       (buffer-substring begin-url-pos end-url-pos))))
+    (substring current-line (match-beginning 1) (match-end 1))))
+
 (provide 'bbbike-mode)
