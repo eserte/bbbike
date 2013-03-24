@@ -1,3 +1,17 @@
+;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
+
+;; Copyright (C) 1997-2013 Slaven Rezic
+
+;; To use this major mode, put something like:
+;;
+;;     (setq auto-mode-alist (append (list (cons "\\(-orig\\|\\.bbd\\)$" 'bbbike-mode))
+;;     		                     auto-mode-alist)
+;;
+;; to your .emacs file
+
+(setq auto-mode-alist (append (list (cons "\\(-orig\\|\\.bbd\\)$" ' bbbike-mode))
+			      auto-mode-alist)
+
 (setq bbbike-el-file-name load-file-name)
 
 (defvar bbbike-font-lock-trailing-whitespace-face 'bbbike-font-lock-trailing-whitespace-face
