@@ -213,7 +213,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaﬂnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2013-03-18
+#: last_checked: 2013-03-24
 #: next_check: 2013-06-01
 Mariannenstr: m‰ﬂiges bis gutes Kopfsteinpflaster, 25 km/h mˆglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -756,7 +756,7 @@ Hanstedter Weg: Asphalt	Q0 6747,5010 6783,5011
 Hanstedter Weg: Kopfsteinpflaster	Q2 6783,5011 6908,5053 6923,5057
 Alboinstr.: Kopfsteinpflaster (auf Fahrbahn)	Q2 8182,6064 8191,6339 8194,6384 8199,6583 8200,6668
 #: note: Luftbild
-Alboinstr.: Asphalt	Q0 8200,6668 8196,6775 8204,6958 8319,7084
+Alboinstr.: Asphalt	Q0 8200,6668 8206,6774 8215,6938 8232,6972 8319,7084
 Sredzkistr.: Kopfsteinpflaster	Q2 11436,14741 11535,14688 11642,14625
 Hochspannungsweg: Asphalt	Q0 12694,2514 12606,2477
 Hochspannungsweg: fester feiner Kies bzw. Verbundsteine	Q1 12606,2477 12390,2379 12363,2367 11747,2091
@@ -1442,11 +1442,11 @@ Landsberger Allee: Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1 16843,
 Landsberger Allee: Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1 20260,15434 20525,15571 20641,15622 20796,15667 21009,15658 21068,15646 21119,15635 21235,15641 21398,15671 21475,15705 21584,15753 21694,15802
 #: by: http://www.bsisb.de/friedhofsb/b_s_ws_drl/c10.jpg
 Kurf¸rstenweg: fester Waldweg	Q1 -5960,-604 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4974,900
-Schˆnburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8946,6501 8995,6473
+Schˆnburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8953,6492 8995,6473
 Schˆnburgstr.: Kopfsteinpflaster	Q2 8995,6473 9029,6360
-Parkstr.: Kopfsteinpflaster	Q2 8959,6292 8992,6312 9029,6360
+Parkstr.: Kopfsteinpflaster	Q2 8944,6293 8992,6312 9029,6360
 Parkstr.: Asphalt	Q0 9029,6360 9078,6360 9143,6415
-Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8959,6292 8971,6154
+Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8944,6293 8971,6154
 Blumenthalstr.: Kopfsteinpflaster	Q2 8976,6094 8990,5950
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9192,5921
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9182,5332
@@ -8413,6 +8413,8 @@ Ritterstr.: teilweise unbefestigt und holprig	Q1- 9763,11148 9861,11103
 (Friedrich-List-Str. - KGA An der S¸dostallee): Asphalt	Q1 17459,5634 17480,5666
 (KGA An der S¸dostallee): teilweise nur m‰ﬂiger Asphalt, Bodenwellen	Q2+ 17056,6133 17070,6115 17384,5746 17480,5666 17578,5566 17592,5552
 (S¸dostallee - Frˆbel-Kindergarten): Asphalt	Q0 17471,5469 17416,5388
+(Am Lokdepot): Asphalt	Q0 8389,8775 8390,8879
+(Schˆnburger Str. - Bosestr./Blumenthalstr.): Kleinsteinpflaster	Q1 8953,6492 8930,6295
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -9324,11 +9326,11 @@ Eisfalterweg: Verbundsteinpflaster	Q0- 21640,11107 21776,11179
 #: by: David Greve vvv
 Stolbergstr.: Asphalt	Q0 8831,6780 8834,6639
 Stolbergstr.: Kopfsteinpflaster	Q2 8834,6639 8850,6421
-Richnowstr.: m‰ﬂiger Asphalt	Q1 8850,6421 8946,6501
+Richnowstr.: m‰ﬂiger Asphalt	Q1 8850,6421 8953,6492
 Bosepark: kleinteiliges Kopfsteinpflaster, OK	Q1 8850,6421 8697,6455
 Bosestr.: Asphalt mit Asphaltflicken	Q1 8191,6339 8292,6331 8388,6322 8546,6307 8546,6329 8680,6322
 #: confirmed_by: srt
-Bosestr.: schlechtes Kopfsteinpflaster	Q3 8680,6322 8846,6303 8959,6292
+Bosestr.: schlechtes Kopfsteinpflaster	Q3 8680,6322 8846,6303 8930,6295 8944,6293
 #: corrected_by: Kowaliczek Larissa (Kopfsteinpflaster Q2 -> Asphalt), auch hatte ich den Eindruck, dass sie asphaltiert ist
 #: confirmed_by: srt
 Borussiastr.: Asphalt	Q0 8645,6781 8743,6778 8831,6780 9046,6784 9245,6791 9511,6797 9706,6802
@@ -12966,7 +12968,7 @@ Rethelstr.: guter Asphalt	Q0 14739,8919 14676,8852 14619,8794
 # 
 #: by: Karin Ziebell: vvv
 #: corrected_by: srt (Asphalt -> Beton)
-Holzmindener Str.: guter Beton	Q0 12205,5545 12256,5591 12490,5680 12632,5684 12702,5553
+Holzmindener Str.: guter Beton	Q0 12214,5554 12256,5591 12490,5680 12632,5684 12702,5553
 Holzmindener Str.: guter Asphalt	Q0 12702,5553 12773,5248
 #: by: ^^^
 # 
@@ -13784,7 +13786,7 @@ Lange Enden: guter Asphalt	Q0 4660,21250 4719,21232
 #: by: Jennifer (jhofmeister): vvv
 #: confiremd_by: srt
 Salbeiweg: Asphalt	Q0 17541,2454 17477,2397 17391,2318 17289,2224
-Braunschweiger Ufer: gepflastert, angenehm zu fahren	Q0 12107,5651 12204,5681 12527,5806 12718,5845
+Braunschweiger Ufer: gepflastert, angenehm zu fahren	Q0 12110,5654 12204,5681 12527,5806 12718,5845
 #: corrected_by: srt ("m‰ﬂiger" gestrichen)
 Buchsbaumweg: Beton	Q0- 17567,1942 17533,1986 17440,2068 17289,2224 17102,2420 17027,2495 16982,2547 16905,2603 16738,2717
 #: corrected_by: srt (Q1 -> Q1+, "m‰ﬂiger" gestrichen)
@@ -21431,7 +21433,7 @@ Am Festungsgraben: Kopfsteinpflaster	Q2 9842,12506 9764,12492
 Kuppenheimerstr.: Schotterweg	Q1 5820,8117 5824,8035
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7140,11156 7115,11220
 (Geﬂlerstr. - Monumentenstr.): Verbundpflaster	Q1 7970,8886 7964,9060 8009,9063 8014,9126
-# REMOVED (Straﬂe existiert nicht mehr) --- (zur Depothalle): schlechtes Kopfsteinplaster	Q3 8389,9087 8409,8904 8376,8859
+(Am Lokdepot): schlechtes Kopfsteinplaster	Q3+ 8405,8994 8409,8904 8390,8879
 Fritz-Reuter-Str. (Schˆneberg): Kopfsteinpflaster	Q2 6621,8221 6779,8279
 Gutzkowstr.: Kopfsteinpflaster	Q2 6785,8194 6636,8157
 Gustav-Freytag-Str.: Verbundsteinpflaster	Q1 6807,8309 6779,8279

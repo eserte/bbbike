@@ -16642,13 +16642,12 @@ EOF
 userdel	q4::inwork; 9580,12581 9601,12380
 EOF
      },
-     { from  => undef, #
-       until => undef, #
+     { from  => 1364144751, # REMOVED -> permanent gesperrt (früher recurring)
+       until => 1364144754, #
        text  => '(Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen',
        type  => 'gesperrt',
-       recurring => 1,
        data  => <<EOF,
-	2::night 13520,7485 13601,7366
+	2::night 13518,7477 13601,7366
 EOF
      },
      { from  => undef, #
@@ -20525,8 +20524,8 @@ EOF
 userdel	q4::inwork 22484,11270 22436,11054
 EOF
      },
-     { from  => 1363633473, # 2013-03-18 20:04
-       until => 1364767199, # 2013-03-31 23:59
+     { from  => 1344142800, # 2012-08-05 07:00
+       until => 1364479200, # 2013-03-28 15:00
        text  => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Ende März 2013',
        type  => 'handicap',
        source_id => 'IM_019043',
@@ -20814,7 +20813,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-02-04
+#: last_checked: 2013-03-24
 userdel	q4::inwork; 13339,7452 13303,7622
 EOF
      },
@@ -20948,12 +20947,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1369994400, # 2013-05-31 (laut Baustellenschild)
        text  => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-02-04
-#: XXX bis wann ist die Baustelle fertig?
+#: last_checked: 2013-03-24
+#: next_check: 2013-05-31
+#: XXX ist die Baustelle tatsächlich Ende Mai fertig?
+#: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
 userdel	q4::inwork; 13474,8060 13444,7879
 EOF
      },
@@ -21002,8 +21003,8 @@ EOF
 userdel	2::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
-     { from  => 1361390117, # 2013-02-20 20:55
-       until => 1364767199, # 2013-03-31 23:59
+     { from  => 1361168940, # 2013-02-18 07:29
+       until => 1364227200, # 2013-03-25 17:00
        text  => 'Fürstenwalder Damm (Köpenick) Richtung Bölschestr. zwischen Müggelseedamm und Mühlweg Baustelle, Fahrtrichtung gesperrt (bis Ende 03/13)',
        type  => 'handicap',
        source_id => 'IM_019584',
