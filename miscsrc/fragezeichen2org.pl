@@ -159,7 +159,7 @@ if ($centerc) {
 	}
 	return $cmp if $cmp != 0;
 	return $b->{date} cmp $a->{date};
-    } grep { $_->{date} lt $today } @records;
+    } grep { $_->{date} le $today } @records;
 }
 
 binmode STDOUT, ':utf8';
