@@ -5,12 +5,9 @@
 ;; To use this major mode, put something like:
 ;;
 ;;     (setq auto-mode-alist (append (list (cons "\\(-orig\\|\\.bbd\\)$" 'bbbike-mode))
-;;     		                     auto-mode-alist)
+;;     		                     auto-mode-alist))
 ;;
 ;; to your .emacs file
-
-(setq auto-mode-alist (append (list (cons "\\(-orig\\|\\.bbd\\)$" ' bbbike-mode))
-			      auto-mode-alist)
 
 (setq bbbike-el-file-name load-file-name)
 
