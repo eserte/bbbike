@@ -20235,12 +20235,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Sredzkistr. zwischen Schönhauser Allee und Knaackstr: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
+       text  => 'Sredzkistr. zwischen Knaackstr. und Hagenauer Str.: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-02-11
-#: note: etwa 80 Meter an der Knaackstr. gesperrt
-userdel	q3::inwork 10893,14705 11101,14768
+#: last_checked: 2013-03-26
+#: note: einige Meter östlich der Knaackstr. gesperrt
+userdel	q3::inwork 11101,14768 11187,14763
 EOF
      },
      { from  => 1338778800,
@@ -20819,14 +20819,16 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Sredzkistr.: Kreuzungsbereich in Höhe Hosemannstr. gesperrt, Ausweichen auf Gehweg',
+       text  => 'Sredzkistr./Husemannstr.: Kreuzungsbereich gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-02-23 vvv
+#: last_checked: 2013-03-26 vvv
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
 userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763
 #: XXX ^^^
+#: XXX ebenfalls Umweg notwendig
+userdel	q2::inwork 11293,14957 11271,14755 11255,14572
 #: last_checked ^^^
 EOF
      },
