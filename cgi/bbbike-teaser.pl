@@ -103,12 +103,12 @@ sub teaser_perltk_newrelease {
     if ($lang eq 'en') {
 	my $download_link = "$BBBike::BBBIKE_SF_WWW/downloads.en.html";
     	<<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($download_link) ]}">Download</a> the offline version of BBBike (Perl/Tk) with interactive map. Runs on Linux, Un*x, Mac OS X and Windows.<br /><a href="@{[ CGI::escapeHTML($download_link) ]}" class="new" style="font-weight:bold;">NEW (March 2013): version 3.18 for Linux, Unix, Windows</a></div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($download_link) ]}">Download</a> the offline version of BBBike (Perl/Tk) with interactive map. Runs on Linux, Un*x, Mac OS X and Windows.<br /><a href="@{[ CGI::escapeHTML($download_link) ]}" class="new" style="font-weight:bold;">NEW (March 2013): version 3.18 for Linux, Unix, Mac OS X, Windows</a></div>
 EOF
 } else {
 	my $download_link = "$BBBike::BBBIKE_SF_WWW/downloads.de.html";
 	<<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($download_link) ]}">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($download_link) ]}" style="font-weight:bold;">NEU (März 2013): Version 3.18 für Linux, Unix, Windows</a></div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($download_link) ]}">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($download_link) ]}" style="font-weight:bold;">NEU (März 2013): Version 3.18 für Linux, Unix, Mac OS X, Windows</a></div>
 EOF
     }
 }
