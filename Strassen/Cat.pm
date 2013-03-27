@@ -29,10 +29,10 @@ use vars qw(%filetype_to_cat %file_to_cat);
     (
      "borders"	      => [qw(Z)],
      # XXX Information duplicated in data/Makefile
-     "gesperrt"	      => [sub { /^(1|2|3|3nocross)(:inwork)?$/ },
+     "gesperrt"	      => [sub { /^(1|2|3|3nocross)(:(?:inwork|temp))?$/ },
 			  sub { /^0:\d+(:-?\d+)?$/ },
 			  sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },
-			  sub { /^1s(:q\d)?(:inwork)?$/ },
+			  sub { /^1s(:q\d)?(:(?:inwork|temp))?$/ },
 			  '1::igndisp',
 			 ],
      "fragezeichen"   => [qw(? ?? F:? F:??)],
