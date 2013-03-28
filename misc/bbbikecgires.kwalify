@@ -110,11 +110,56 @@ mapping:
     type: int
 
   AffectingBlockings:
-    # XXX Description missing
+    # A list of temporary "blockings" on the current route
+    # which may affect a user in different ways (complete
+    # blocked street, a street where a user has to ride
+    # slower...). Typically these items should be
+    # presented to the user and s/he can decide whether
+    # to ride around it or not. The index of the entries
+    # has to be fed as a "temp_blockings" parameter to
+    # a new API call.
     type: seq
     sequence:
-      - type: any
+      - type: map
+        mapping:
 
+          Text:
+            # descriptive text of these blocking; may be
+            # presented to the user
+            type: text
+
+          Index:
+            # index of this entry; may be used as a
+            # "custom=temp_blockings-$index" parameter
+            # in a new API call
+            type: text
+
+          Type:
+            # XXX Description missing
+            type: text
+            enum:
+              - gesperrt
+              - handicap
+              - ~
+
+          LongLatHop:
+            # the blocking item, as a list of longitude,latitude coordinates
+            # XXX currently only the 1st and 2nd coordinate is returned, this
+            # means, only the _beginning_ of the blocking entry may be displayed
+            type: map
+            mapping:
+              XY:
+                type: seq
+                sequence:
+                  - type: text
+                    pattern: /^-?\d+(\.\d+)?,-?\d+(\.\d+)?$/
+
+          Recurring:
+            # XXX Description missing
+            type: int
+            enum:
+              - 0
+              - 1
   Speed:
     # XXX Description missing
     type: any

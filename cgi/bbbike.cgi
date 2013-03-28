@@ -4420,6 +4420,17 @@ sub display_route {
 	}
 	my $res;
 	if ($r && $r->path) {
+	    # remove Net and Strassen objects here, keep only essentials
+	    my @affecting_blockings_essentials = map {
+		+{
+		  Text       => $_->{text},
+		  Index      => $_->{index},
+		  Type       => $_->{type},
+		  LongLatHop => { XY => $_->{longlathop} },
+		  Recurring  => $_->{recurring} ? 1 : 0,
+		 }
+	    } @affecting_blockings;
+
 	    $res = {
 		   Route => \@out_route,
 		   Len   => $r->len, # in meters
@@ -4431,7 +4442,7 @@ sub display_route {
 		   LongLatPath => [ map {
 		       join ",", convert_data_to_wgs84(@$_)
 		   } @{ $r->path }],
-		   AffectingBlockings => \@affecting_blockings,
+		   AffectingBlockings => \@affecting_blockings_essentials,
 		  };
 	} else {
 	    $res = {
@@ -4523,14 +4534,8 @@ sub display_route {
 		} elsif ($k eq 'Route') {
 		    $new_res->{$k} = { Point => $v };
 		} elsif ($k eq 'AffectingBlockings') {
-		    $new_res->{"AffectingBlocking"} = [ map {
-			+{
-			  Text => $_->{text},
-			  Index => $_->{index},
-			  Type => $_->{type},
-			  LongLatHop => { XY => $_->{longlathop} },
-			 }
-		    } @$v ]
+		    # just a rename from plural to singular
+		    $new_res->{"AffectingBlocking"} = $v;
 		} else {
 		    $new_res->{$k} = $v;
 		}

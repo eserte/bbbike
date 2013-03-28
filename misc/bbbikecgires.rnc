@@ -17,10 +17,11 @@ successful-route-search-result =
   ## periodic or temporary blockings and handicaps, a more precise
   ## description will come later XXX
   element AffectingBlocking {
-    element Index { xsd:integer },
-    element LongLatHop { XY+ },
-    element Text { text },
-    element Type { "gesperrt" | "handicap" }
+    element Index { xsd:integer } &
+    element LongLatHop { XY+ } &
+    element Text { text } &
+    element Type { "gesperrt" | "handicap" } &
+    element Recurring { "1" | "0" }
   }*,
   ## route length in meters
   element Len { xsd:decimal },
