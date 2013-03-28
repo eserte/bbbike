@@ -33,6 +33,7 @@ use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		  xmllint_string gpxlint_string kmllint_string
 		  using_bbbike_test_cgi check_cgi_testing
 		  validate_bbbikecgires_xml_string
+		  validate_bbbikecgires_data
 		);
 
 sub bbbike_cgi_search ($$);
@@ -41,8 +42,10 @@ sub bbbike_cgi_geocode ($$);
 
 check_cgi_testing;
 
+my $json_xs_tests = 4;
+my $json_xs_2_tests = 5;
 #plan 'no_plan';
-plan tests => 81;
+plan tests => 81 + $json_xs_tests + $json_xs_2_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -92,6 +95,20 @@ $ua->env_proxy;
 				    ziel => 'Yorckstr.',
 				   }, 'Find normal street';
     not_on_crossing_pref_page($resp);
+}
+
+SKIP: {
+    skip "need JSON::XS", $json_xs_tests
+	if !eval { require JSON::XS; 1 };
+
+    my %route_endpoints = (startc => '9229,8785',
+			   zielc  => '9227,8890',
+			  );
+    my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'json'}, 'json output';
+    my $data = JSON::XS::decode_json($resp->decoded_content);
+    validate_bbbikecgires_data $data, 'Mehringdamm Richtung Norden';
+    is $data->{Trafficlights}, 1, 'one traffic light seen';
+    is $data->{Route}->[0]->{DirectionString}, 'nach Norden', 'direction string seen';
 }
 
 {
@@ -281,6 +298,20 @@ SKIP: {
 		    diag 'Please install either Apache::Session or Apache::Session::Counted';
 		}
 	    };
+    }
+
+ SKIP: {
+	# Ausweichroute with json
+	skip "need JSON::XS", $json_xs_2_tests
+	    if !eval { require JSON::XS; 1 };
+
+	my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'json'}, 'json output';
+	my $data = JSON::XS::decode_json($resp->decoded_content);
+	validate_bbbikecgires_data $data, 'JSON data, Maybachufer';
+	my $first_blocking = $data->{AffectingBlockings}->[0];
+	is $first_blocking->{Index}, 0, 'Index of affecting blockings';
+	like $first_blocking->{Text}, qr{Maybachufer.*Wochenmarkt}, 'Text of affecting blockings';
+	like $first_blocking->{LongLatHop}->{XY}->[0], qr{^13\.\d+,52\.\d+$}, 'looks like a coordinate in Berlin';
     }
 }
 
