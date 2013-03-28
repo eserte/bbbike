@@ -88,6 +88,11 @@ mapping:
             # XXX Description missing
             type: text
 
+          LongLatCoord:
+            # start of this hop as a longitude,latitude coordinate
+            type: text
+            pattern: /^-?\d+(\.\d+)?,-?\d+(\.\d+)?$/
+
           Coord:
             # XXX Description missing
             type: text

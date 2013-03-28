@@ -4418,6 +4418,13 @@ sub display_route {
 	for my $tb (@affecting_blockings) {
 	    $tb->{longlathop} = [ map { join ",", convert_data_to_wgs84(split /,/, $_) } @{ $tb->{hop} || [] } ];
 	}
+	for my $route_item (@out_route) {
+	    my $coord = $route_item->{Coord};
+	    if ($coord) {
+		$route_item->{LongLatCoord} = join ",", convert_data_to_wgs84(split /,/, $coord);
+	    }
+	}
+
 	my $res;
 	if ($r && $r->path) {
 	    # remove Net and Strassen objects here, keep only essentials

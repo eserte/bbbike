@@ -41,7 +41,7 @@ successful-route-search-result =
       element Comment { text },
       ## comment for the leg, as html, may contain links
       element CommentHtml { text },
-      ## coordinate of the point (old BBBike coordinate, don't use)
+      ## coordinate of the point (old BBBike coordinate, don't use; see LongLatCoord instead)
       element Coord { text },
       ## direction
       element Direction {
@@ -64,6 +64,8 @@ successful-route-search-result =
       element DistString { text },
       ## description missing XXX
       element FragezeichenComment { text }?,
+      ## coordinate of the point as a longitude,latitude coordinate
+      element LongLatCoord { text },
       ## an index into the LongLatPath or Path fields
       element PathIndex { xsd:integer },
       ## street name
