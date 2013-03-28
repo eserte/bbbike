@@ -104,9 +104,9 @@ my $lastdate;
 		if (!$resp->is_success) {
 		    warn "Error with $url: " . $resp->content;
 		}
-		if ($resp->content_type !~ /^image/ &&
-		    $resp->content_type !~ m{application/pdf}) {
-		    warn "Wrong content type for $url: " . $resp->content_type;
+		if ($resp->header('content-type') !~ m{^image/[^;]+$} &&
+		    $resp->header('content-type') !~ m{^application/pdf$}) {
+		    warn "Wrong content type for $url: " . $resp->header('content-type');
 		}
 		my $file = sprintf "$outdir/%05d.$suffix", $counter;
 		print STDERR "$file...         \r";

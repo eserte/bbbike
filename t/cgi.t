@@ -183,7 +183,7 @@ for my $cgiurl (@urls) {
 		like_html $content, qr/nach\s+(Norden|Osten)/, "Direction is correct";
 		like_html $content, qr/angekommen/, "End of route list found";
 	    } elsif ($output_as eq 'palmdoc') {
-		is $resp->content_type, 'application/x-palm-database', "Correct mime type for palmdoc";
+		is $resp->header("content-type"), 'application/x-palm-database', "Correct mime type for palmdoc";
 		BBBikeTest::like_long_data($content, qr/Dudenstr/, "Expected palmdoc content", '.pdb');
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.pdb$}, 'PDB filename';
 	    } elsif ($output_as eq 'perldump') {
@@ -209,7 +209,7 @@ for my $cgiurl (@urls) {
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.gpx$}, 'gpx filename';
 		gpxlint_string($content, "xmllint check with gpx schema for $output_as");
 	    } elsif ($output_as eq 'kml-track') {
-		is $resp->content_type, 'application/vnd.google-earth.kml+xml', "The KML mime type";
+		is $resp->header("content-type"), 'application/vnd.google-earth.kml+xml', "The KML mime type";
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.kml$}, 'kml filename';
 		kmllint_string($content, "xmllint check for $output_as");
 	    } elsif ($output_as =~ m{^(json|geojson$)}) {
@@ -473,7 +473,7 @@ for my $cgiurl (@urls) {
 	my($image_url) = $content =~ $map_qr;
 	my $resp;
 	($content, $resp) = std_get $image_url;
-	is $resp->content_type, 'image/png', "$image_url is a PNG";
+	is $resp->header("content-type"), 'image/png', "$image_url is a PNG";
 	cmp_ok length($content), ">", 0, "Image is non-empty";
     }
 
@@ -507,7 +507,7 @@ for my $cgiurl (@urls) {
 	my $image_url = $u1->abs;
 
 	($content, $resp) = std_get $image_url;
-	is $resp->content_type, 'image/png', "$image_url is a PNG";
+	is $resp->header("content-type"), 'image/png', "$image_url is a PNG";
 	cmp_ok length($content), ">", 0, "Image is non-empty";
     }
 
@@ -544,7 +544,7 @@ for my $cgiurl (@urls) {
 	    # See comment about coords= below.
 	    my $url = "$action?imagetype=gif&coords=9222%2C8787%219303%2C8781%219373%2C8728%219801%2C8683%2110193%2C8672%2110598%2C8563%2110858%2C8475%2111308%2C8317%2111416%2C8283%2111632%2C8302%2111892%2C8372%2112195%2C8436%2112349%2C8464%2112500%2C8504%2112598%2C8390%2112771%2C8439%2112925%2C8494%2113107%2C8350%2113279%2C8216%2113452%2C8076%2113916%2C7714%2113996%2C7654%2114164%2C7510%2114596%2C7261%2115043%2C6799%2115478%2C6343%2115719%2C6218%2115758%2C6204%2115869%2C6181%2116107%2C6076%2116510%2C5917%2116861%2C5935%2117662%2C5314%2117741%2C5424%2117884%2C5577%2117962%2C5498%2118016%2C5615%2118133%2C5553%2118236%2C5529%2118987%2C5301%2119210%2C5301%2119425%2C5254%2121332%2C4655%2121796%2C4517%2122093%2C4499%2122396%2C4464%2122686%2C4310%2122967%2C4144%2123368%2C3894%2124912%2C2978%2125011%2C2907%2125502%2C2454%2125609%2C2397%2125928%2C2305%2126720%2C2079%2127093%2C1959%2127603%2C1531%2127746%2C1413%2128106%2C1106%2128190%2C984%2128329%2C906%2128673%2C548%2128812%2C490%2129372%2C561%2129598%2C636%2130217%2C398%2130624%2C266%2130850%2C49%2131032%2C-52%2131111%2C-75%2131227%2C-38%2131354%2C-111%2131662%2C-502%2132214%2C-420%2132258%2C-867%2132898%2C-930%2133005%2C-1015%2133775%2C-1397%2134330%2C-1588%2134694%2C-1673%2135313%2C-1714%2135420%2C-1949%2135634%2C-2183%2136233%2C-2715%2136874%2C-2926%2137004%2C-3331%2136984%2C-3865%2137091%2C-4227%2137348%2C-4333%2137497%2C-4461%2137562%2C-4738%2137755%2C-4865%2139251%2C-5673%2139700%2C-5672%2139892%2C-5565%2140362%2C-6011%2141195%2C-6095%2141919%2C-5304%2142517%2C-5431%2142797%2C-6092%2142840%2C-6390%2143182%2C-6389%2143502%2C-6325%2143694%2C-6367%2144379%2C-7133%2144681%2C-8348%2144874%2C-8519%2144749%2C-9692%2144878%2C-10139%2144945%2C-11291%2145290%2C-12634%2145013%2C-12954%2145912%2C-13848%2147302%2C-14869%2147410%2C-15124%2147411%2C-15636%2147156%2C-15978%2147007%2C-16298%2147286%2C-16895%2148292%2C-17852%2149489%2C-18617%2149554%2C-18788%2150603%2C-19809%2151245%2C-20469%2152400%2C-21149%2152956%2C-21510%2153233%2C-21531%2153233%2C-21361%2153851%2C-21061%2154640%2C-20547%2156049%2C-20630%2157671%2C-20413%2158184%2C-20369%2158889%2C-20666%2159317%2C-21049%2159573%2C-21027%2159810%2C-21731%2160279%2C-21644%2161690%2C-22153%2163016%2C-23196%2165175%2C-24364%2165283%2C-24577%2165667%2C-24491%2166629%2C-24937%2168252%2C-25083%2168593%2C-24911%2168848%2C-24420%2169682%2C-24909%2169554%2C-25101%2169879%2C-26935%2169755%2C-28598%2169630%2C-29963%2169933%2C-31626%2170340%2C-32094%2169938%2C-33311%2170088%2C-33801%2170775%2C-35271%2171311%2C-36230%2171741%2C-37316%2172385%2C-38723%2173415%2C-40554%2173608%2C-41002%2173891%2C-42985%2173594%2C-44009%2173638%2C-44499%2173958%2C-44456%2175538%2C-44410%2176008%2C-44388%2176690%2C-44173%2176883%2C-44194%2177075%2C-44193%2177993%2C-44426%2178442%2C-44404%2179595%2C-44593%2179958%2C-44529%2180791%2C-44783%2187860%2C-45301%2189461%2C-45255%2189760%2C-45297%2190251%2C-45446%2190636%2C-45466%2191961%2C-46039%2192900%2C-46080%2192944%2C-46570%2193053%2C-47146%2193589%2C-48019%2193717%2C-48253%2196427%2C-47736%2198967%2C-47326%21100269%2C-47046%21100909%2C-46980&startname=Dudenstr.&zielname=Guben&windrichtung=S&windstaerke=5&geometry=400x300&draw=str&draw=title&draw=umland";
 	    my($content, $resp) = std_get $url, testname => "Map plot request";
-	    is $resp->content_type, 'image/gif', "It's a GIF image";
+	    is $resp->header("content-type"), 'image/gif', "It's a GIF image";
 	    BBBikeTest::like_long_data($content, qr/^GIF8/, "It's really a GIF")
 		    or diag $url;
 	}
@@ -568,21 +568,21 @@ for my $cgiurl (@urls) {
 	    my $url = "$action?${imagetype_param}coords=9222%2C8787%219227%2C8890%219796%2C8905%219799%2C8962%219958%2C8966%219962%2C9237%219987%2C9238%2110109%2C9240%2110189%2C9403%2110298%2C9649%2110345%2C9764%2110408%2C9800%2110480%2C9949%2110503%2C10046%2110490%2C10080%2110511%2C10128%2110605%2C10312%2110859%2C10333%2110962%2C10340%2111114%2C10338%2111336%2C10390%2111370%2C10398%2111454%2C10400%2111660%2C10402%2111949%2C10414%2112230%2C10437%2112274%2C10436%2112328%2C10442%2112755%2C10552%2112899%2C10595%2112980%2C10575%2113035%2C10635%2113082%2C10634%2113178%2C10623%2113216%2C10664%2113297%2C10781%2113332%2C10832%2113409%2C11004%2113546%2C11352%2113594%2C11489%2113720%2C11459%2113890%2C11411%2114139%2C11269%2114211%2C11229%2114286%2C11186%2114442%2C11101%2114509%2C11060%2114677%2C11027%2114752%2C11041%2114798%2C10985&startname=Dudenstr.&zielname=Sonntagstr.&windrichtung=E&windstaerke=2&geometry=400x300&draw=str&draw=wasser&draw=flaechen&draw=ampel&draw=strname&draw=title&draw=all";
 	    my($content, $resp) = std_get $url, testname => "imagetype=$imagetype";
 	    if ($imagetype eq 'gif') {
-		is $resp->content_type, 'image/gif', "It's a GIF image";
+		is $resp->header("content-type"), 'image/gif', "It's a GIF image";
 		BBBikeTest::like_long_data($content, qr/^GIF8/, "Really a GIF image")
 			or diag "Not a gif: $url";
 		display($resp);
 	    } elsif ($imagetype =~ /(png|jpeg)/) {
-		is $resp->content_type, 'image/' . $imagetype, "It's a $imagetype image";
+		is $resp->header("content-type"), 'image/' . $imagetype, "It's a $imagetype image";
 		ok length $content, "The image is non-empty";
 		display($resp);
 	    } elsif ($imagetype =~ /pdf/) {
-		is $resp->content_type, 'application/pdf', "It's a PDF";
+		is $resp->header("content-type"), 'application/pdf', "It's a PDF";
 		ok length $content, "The PDF is non-empty";
 		display($resp);
 		like $resp->header('Content-Disposition'), qr{inline; filename=.*\.pdf$}, 'PDF filename'; # unfortunately in this case (missing session?) there's no nice filename from route start/endpoint
 	    } elsif ($imagetype =~ /svg/) {
-		is $resp->content_type, "image/svg+xml", "It's a SVG image";
+		is $resp->header("content-type"), "image/svg+xml", "It's a SVG image";
 		ok length $content, "The SVG is non-empty";
 		display($resp);
 	    } else {

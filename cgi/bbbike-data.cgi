@@ -43,6 +43,7 @@ if ($zip->writeToFileNamed($filename) != AZ_OK) {
 }
 
 print header(-Content_Type => 'application/zip',
+	     -charset => '', # CGI.pm bug, https://rt.cpan.org/Ticket/Display.html?id=67100
 	     -Content_Disposition => "attachment; filename=bbbike_" . ($do_snapshot ? "snapshot" : "data") . "_$date.zip",
 	     -Content_Length => -s $filename,
 	    );

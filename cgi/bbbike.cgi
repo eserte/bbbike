@@ -4530,7 +4530,6 @@ sub display_route {
 	    my $filename = filename_from_route($startname, $zielname) . ".xml";
 	    http_header
 		(-type => 'application/xml',
-		 -charset => '', # to suppress default of iso-8859-1
 		 @weak_cache,
 		 -Content_Disposition => "attachment; filename=$filename",
 		);
@@ -5750,7 +5749,6 @@ sub draw_route {
 	}
 	http_header
 	    (-type => "application/pdf",
-	     -charset => '', # CGI 3.52..3.55 writes charset for non text/* stuff, see https://rt.cpan.org/Public/Bug/Display.html?id=67100
 	     @header_args,
 	     -Content_Disposition => "inline; filename=$filename.pdf",
 	    );
@@ -5798,7 +5796,6 @@ sub draw_route {
     if (!$header_written && !$draw->module_handles_all_cgi) {
 	http_header
 	    (-type => $draw->mimetype,
-	     -charset => '', # CGI 3.52..3.55 writes charset even for image/* stuff, see https://rt.cpan.org/Public/Bug/Display.html?id=67100
 	     @header_args,
 	     -Content_Disposition => "inline; filename=bbbike.".$draw->suffix,
 	    );
@@ -6659,18 +6656,24 @@ sub bbbike_result_js { $bbbike_html . "/bbbike_result.js?v=1.14" }
 
 # Write a HTTP header (always with Etag and Vary) and maybe enabled compression
 sub http_header {
-    my(@header_args) = @_;
+    my(%header_args) = @_;
+
     my $need_utf8_encoding;
     if ($use_utf8) {
-	my %header_args = @header_args;
 	if (!$header_args{"-type"}) {
-	    unshift @header_args, ("-type" => "text/html; charset=utf-8");
+	    $header_args{"-type"} = "text/html";
+	    $header_args{"-charset"} = "utf-8";
 	    $need_utf8_encoding = 1;
 	}
     }
-    push @header_args, etag(), (-Vary => "User-Agent");
+    if (!$header_args{"-charset"} && $header_args{"-type"} && $header_args{"-type"} !~ m{^text/}) {
+	$header_args{"-charset"} = ''; # CGI 3.52..3.63 writes charset for non text/* stuff, see https://rt.cpan.org/Public/Bug/Display.html?id=67100
+    }
+
+    my @add_header_args;
+    push @add_header_args, etag(), (-Vary => "User-Agent");
     if ($q->param("as_attachment")) {
-	push @header_args, -Content_Disposition => "attachment;file=" . $q->param("as_attachment");
+	push @add_header_args, -Content_Disposition => "attachment;file=" . $q->param("as_attachment");
     }
     if ($use_cgi_compress_gzip &&
 	eval { require CGI::Compress::Gzip;
@@ -6689,9 +6692,9 @@ sub http_header {
 	$CGI::Compress::Gzip::global_give_reason =
 	    $CGI::Compress::Gzip::global_give_reason = $debug;
 	$cgic = MyCGICompressGzip->new;
-	print $cgic->header(@header_args);
+	print $cgic->header(%header_args, @add_header_args);
     } else {
-	print $q->header(@header_args);
+	print $q->header(%header_args, @add_header_args);
     }
     $header_written = 1;
     if ($need_utf8_encoding) {

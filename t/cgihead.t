@@ -136,10 +136,10 @@ sub check_url {
     ok($resp->is_success, $url) or diag $resp->content;
 
     if ($url =~ /bbbike-data.cgi/) {
-	is($resp->content_type, "application/zip", "Expected mime-type for bbbike-data.cgi");
+	is($resp->header('content-type'), "application/zip", "Expected mime-type for bbbike-data.cgi");
 	like($resp->header("content-disposition"), qr{^attachment;\s*filename=bbbike_data.*\.zip$}, "Expected attachment marker");
     } elsif ($url =~ /bbbike-snapshot.cgi/) {
-	is($resp->content_type, "application/zip", "Expected mime-type for bbbike-shapshot.cgi");
+	is($resp->header('content-type'), "application/zip", "Expected mime-type for bbbike-shapshot.cgi");
 	like($resp->header("content-disposition"), qr{^attachment;\s*filename=bbbike_snapshot_\d+\.zip$}, "Expected attachment marker");
     }
 }
