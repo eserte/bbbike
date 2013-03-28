@@ -32,7 +32,11 @@ use lib ($FindBin::RealBin,
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
-use BBBikeTest qw(check_cgi_testing xmllint_string gpxlint_string kmllint_string validate_bbbikecgires_xml_string validate_bbbikecgires_data);
+use BBBikeTest qw(
+		     check_cgi_testing xmllint_string gpxlint_string kmllint_string
+		     validate_bbbikecgires_xml_string validate_bbbikecgires_json_string
+		     validate_bbbikecgires_yaml_string validate_bbbikecgires_data
+		);
 
 eval { require Compress::Zlib };
 
@@ -101,7 +105,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (254 + $ortsuche_tests) * scalar @urls;
+plan tests => (256 + $ortsuche_tests) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -209,11 +213,27 @@ for my $cgiurl (@urls) {
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.kml$}, 'kml filename';
 		kmllint_string($content, "xmllint check for $output_as");
 	    } elsif ($output_as =~ m{^(json|geojson$)}) {
-		require JSON::XS;
-		my $data = eval { JSON::XS::decode_json($content) };
-		my $err = $@;
-		ok $data, "Decoded JSON content"
-		    or diag $err;
+		if ($output_as eq 'json') {
+		    validate_bbbikecgires_json_string($content, 'json content');
+		} else {
+		    # json-short and geojson are not valid against the bbbikecgires schema
+		    require JSON::XS;
+		    my $data = eval { JSON::XS::decode_json($content) };
+		    my $err = $@;
+		    ok $data, "Decoded JSON content"
+			or diag $err;
+		}
+	    } elsif ($output_as =~ m{^yaml}) {
+		if ($output_as eq 'yaml') {
+		    validate_bbbikecgires_yaml_string($content, 'yaml content');
+		} else {
+		    # the yaml-short variant has no schema
+		    require YAML::Syck;
+		    my $data = eval { YAML::Syck::Load($content) };
+		    my $err = $@;
+		    ok $data, "Decoded YAML content"
+			or diag $err;
+		}
 	    }
 	}
     }
