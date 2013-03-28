@@ -41,7 +41,7 @@ use BBBikeUtil qw(is_in_path);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
-	      validate_bbbikecgires_xml_string
+	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing
 	      get_pmake image_ok
@@ -462,6 +462,7 @@ sub kmllint_string {
     # only usable with Test::More, generates one test
     sub validate_bbbikecgires_xml_string {
 	my($content, $test_name) = @_;
+	local $Test::Builder::Level = $Test::Builder::Level+1;
     SKIP: {
 	    if (!defined $schema_file) {
 		if (!is_in_path('rnv')) {
@@ -490,6 +491,81 @@ sub kmllint_string {
 	    my @cmd = (qw(rnv -q), $schema_file, $tmpfile);
 	    system @cmd;
 	    Test::More::ok(($? == 0), $test_name);
+	}
+    }
+}
+
+{
+    my $schema;
+
+    sub _get_kwalify_schema {
+	if (!defined $schema) {
+	    my $schema_file = "$testdir/../misc/bbbikecgires.kwalify";
+	    $schema = 0; # false but defined
+	    if (eval { require Kwalify; 1 }) {
+		if (eval { require YAML::Syck; 1 }) {
+		    $schema = YAML::Syck::LoadFile($schema_file);
+		} else {
+		    Test::More::diag("YAML::Syck needed for loading $schema_file, but not available.");
+		}
+	    } else {
+		Test::More::diag("Kwalify needed for validating with $schema_file, but not available.");
+	    }
+	}
+	$schema;
+    }
+
+    # only usable with Test::More, generates one test
+    sub validate_bbbikecgires_data {
+	my($data, $test_name) = @_;
+	local $Test::Builder::Level = $Test::Builder::Level+1;
+      SKIP: {
+	  my $schema = _get_kwalify_schema();
+	  Test::More::skip('schema file not available', 1)
+	      if !$schema;
+
+	  if (!eval { Kwalify::validate($schema, $data) }) {
+	      Test::More::fail("validation with Kwalify - $test_name");
+	      Test::More::diag($@);
+	  } else {
+	      Test::More::pass("validation with Kwalify - $test_name");
+	  }
+	}
+    }
+
+    # only usable with Test::More, generates one test
+    sub validate_bbbikecgires_yaml_string {
+	my($content, $test_name) = @_;
+	local $Test::Builder::Level = $Test::Builder::Level+1;
+
+      SKIP: {
+	  Test::More::skip('YAML::Syck not available', 1)
+	      if !eval { require YAML::Syck; 1 };
+
+	  my $data = eval { YAML::Syck::Load($content) };
+	  if (!$data) {
+	      Test::More::fail("Can't load YAML content: $@");
+	  } else {
+	      validate_bbbikecgires_data($data, $test_name);
+	  }
+	}
+    }
+
+    # only usable with Test::More, generates one test
+    sub validate_bbbikecgires_json_string {
+	my($content, $test_name) = @_;
+	local $Test::Builder::Level = $Test::Builder::Level+1;
+
+      SKIP: {
+	  Test::More::skip('JSON::XS not available', 1)
+	      if !eval { require JSON::XS; 1 };
+
+	  my $data = eval { JSON::XS::decode_json($content) };
+	  if (!$data) {
+	      Test::More::fail("Can't load JSON content: $@");
+	  } else {
+	      validate_bbbikecgires_data($data, $test_name);
+	  }
 	}
     }
 }
