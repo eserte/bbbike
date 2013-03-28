@@ -4180,7 +4180,7 @@ sub display_route {
 		$ges_entf += $entf;
 		$ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
 		$entf_s = sprintf "%s%.2f km", ($is_m ? '' : M("nach") . " "), $entf/1000;
-	    } elsif ($#{ $r->path } > 1) {
+	    } elsif ($#{ $r->path } >= 1) {
 		my($x1,$y1) = @{ $r->path->[0] };
 		my($x2,$y2) = @{ $r->path->[1] };
 		$raw_direction =
