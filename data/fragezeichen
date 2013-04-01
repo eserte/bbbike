@@ -528,7 +528,7 @@ Spechthausener Str. (Eberswalde): Qualität?	? 34334,48750 34378,48552 34354,4830
 Zoostr. (Eberswalde): Qualität?	? 34475,47425 34603,47145 34622,46834 34939,46907 35030,47010 35172,47111
 Oderfähre: ab 2007-06-30 in Betrieb	? 71946,40655 72361,41057
 Am Flugplatz (Strausberg): Qualität des südlichen Abschnitts?	? 44536,20408 44527,19890 44085,19049
-Prenzlau, Friedrichstr.: Qualität (zumindest am nördlichen Ende Kopfsteinpflaster, OK, Q1)? Einbahnstraßenregelung? Fußgängerzone im Mittelteil?	? 39574,101863 39550,101671 39538,101564 39536,101514
+Prenzlau, Friedrichstr.: Qualität (zumindest am nördlichen Ende Kopfsteinpflaster, OK, Q1)? Fußgängerzone im Mittelteil?	? 39574,101863 39550,101671 39538,101564 39536,101514
 Prenzlau, Straße des Friedens: Qualität (zumindest am nördlichen Ende Kopfsteinpflaster, mäßig bis schlecht, Q2-)?	? 39451,101893 39389,101541 39392,101477
 Grünberg - Woddow: wahrscheinlich schlechtes Kopfsteinpflaster, kaum Banketten vorhanden?	? 60070,107705 60469,108187 60813,108458 60965,108878
 Grünberg - Battin: Qualität? zumindest am nördlichen Ende asphaltiert	? 59868,106575 59862,106288 59768,105990 59719,105670 59680,105514 59774,105301
@@ -1217,6 +1217,9 @@ Silberdistelweg: Qualität? Wo liegt die Straße genau?	?::inwork 16205,3529 16263
 Zwergasternweg: Qualität?	?::inwork 16254,3489 16321,3583
 Trollblumenweg: wird verlängert, Qualität der Verlängerung?	?::inwork 16028,3726 16051,3759 16104,3717
 Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	?::inwork 11708,3914 11723,3846
+Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3750,2285 3830,2285
+Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2335 3854,2332
+Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3747,2383 3880,2382
 Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straße Straßenschilder? Qualität?	? 3746,2108 3723,2118 3726,2209
 Kolonie Frühauf: Radfahrverbindung wurde saniert, welchen Belag hat der Weg jetzt?	? 3645,19921 4076,20268 4088,20301
 Rita-Maiburg-Str.: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::projected 20342,-777 20782,-1199 20822,-1242 20833,-1298 20872,-1748
@@ -1245,6 +1248,7 @@ Preußensiedlung: Durchfahrt möglich?	? 20971,1046 20957,1043 20863,966 20836,982
 Wandsbeker Weg: verläuft zwischen Spandauer Str. und Barmbeker Weg auch ein Teil des Wandsbeker Wegs? Qualität? Für Autos befahrbar?	? -6641,14044 -6728,14038 -6757,14061 -6765,14120
 Köhlbrandweg: Qualität des Abschnitts zwischen Wandsbeker Weg und Spandauer Str.?	? -6542,14057 -6555,14161
 Schiffahrtsufer - Betckestr.: nachts beleuchtet?	? -3441,13270 -3352,13135 -3338,13118 -3210,12887 -3218,12843 -3214,12779 -3170,12595
+Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
 # added from ampeln-orig
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4408&options=4 (Zeiten)
@@ -1335,8 +1339,6 @@ Greiffenberg: Kopfsteinplaster (aus der Bahn heraus gesehen)	? 44846,75320 45817
 asphaltiert (stimmt das?)	? -15921,3268 -15821,3240 -15459,2946
 Oderdeich: wechselnd gut - nicht gut (möglicherweise mittlerweile asphaltiert?)	? 59275,59912 59325,60650 59162,61250 59187,61800 59412,62775 59612,63000
 Templin (nicht mehr sicher, aber wahrscheinlich Kopfsteinpflaster)	? 16331,79764 16203,79768 15846,79628
-Biesenthal: Kopfsteinpflaster (mittlerweile asphaltiert?)	? 28199,39134 26237,40190
-Rüdnitz - Bahnhof: Asphalt (von der Zugstrecke aus gesehen)	? 25069,35558 25737,35075
 Am Templiner See: Beton (Beton oder wassergebundene Decke?)	? -14585,-2338 -14712,-2415
 Menz: Kopfsteinpflaster (nach Bauarbeiten wahrscheinlich asphaltiert)	? -15062,76937 -14623,77426
 Briesen: halbseitig Kopfsteinpflaster (welche Seite war das? wahrscheinlich in Richtung Süden)	? 70326,-5505 70549,-5215

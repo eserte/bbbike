@@ -727,7 +727,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -1211,16 +1211,7 @@ userdel	2::inwork 8270,10613 8199,10634
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_019043',
-         'until' => 1364479200,
-         'text' => 'Stargarder Str. (Prenzlauer Berg): Baustelle, Fahrtrichtung gesperrt Richtung Prenzlauer Allee zwischen Schönhauser Allee und Greifenhagener Str., bis Ende März 2013',
-         'from' => 1344142800,
-         'id' => 2368,
-         'data' => 'userdel	q4::inwork; 10953,15787 11086,15772
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1430,17 +1421,6 @@ userdel	q4::inwork; 13474,8060 13444,7879
          'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
 	2::night 12773,12683 13046,12956
 '
-       },
-       undef,
-       {
-         'until' => 1364770800,
-         'text' => 'Charlottenstraße: Bauarbeiten zwischen Friedrich-Ebert-Straße und Dortustraße, Einbahnstraße bis voraussichtlich März 2013',
-         'from' => 1359830530,
-         'id' => 2415,
-         'data' => '#: by: http://www.potsdam.de/cms/beitrag/10098485/1463075
-	q3::inwork; -12881,-1092 -12984,-1110 -13187,-1150
-',
-         'type' => 'handicap'
        }
      
 );
