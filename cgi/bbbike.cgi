@@ -4369,7 +4369,7 @@ sub display_route {
 			  Comment => '',
 			  CommentHtml => '',
 			  Coord => join(",", @{$r->path->[-1]}),
-			  PathIndex => $#{$r->path},
+			  PathIndex => 0+$#{$r->path}, # the "0+" is necessary for broken YAML::Syck (e.g. 1.12, which is found in Debian squeeze)
 			 };
     }
 
