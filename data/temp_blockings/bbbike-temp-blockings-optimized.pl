@@ -1103,18 +1103,7 @@ userdel	2::inwork 19968,16 19940,52
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_093369',
-         'until' => 1404140400,
-         'text' => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
-         'from' => undef,
-         'id' => 2317,
-         'data' => '#: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
-userdel	q3::inwork; 9164,12172 9373,12197
-#userdel	q3::inwork 9164,12172 9373,12197
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1421,6 +1410,20 @@ userdel	q4::inwork; 13474,8060 13444,7879
          'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
 	2::night 12773,12683 13046,12956
 '
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_019680',
+         'until' => 1365184800,
+         'text' => 'Hüttenweg (Grunewald): Brückenbauarbeiten, Vollsperrung bis Freitag, 20:00',
+         'from' => 1364875200,
+         'id' => 2418,
+         'data' => 'userdel	2::inwork -739,6838 -927,6888
+',
+         'type' => 'gesperrt'
        }
      
 );

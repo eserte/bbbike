@@ -1682,7 +1682,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002500',
        data  => <<EOF,
-userdel	1 -8784,13321 -8756,13356 -8358,13340 -8049,13332
+userdel	1 -8784,13321 -8756,13356 -8358,13340 -8296,13338 -8049,13332
 EOF
      },
      { from  => 1111524913, # 2005-03-22 21:55
@@ -6931,7 +6931,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004443',
        data  => <<EOF,
-userdel	1::inwork -8784,13321 -8756,13356 -8358,13340 -8049,13332 -8022,13332 -7693,13330
+userdel	1::inwork -8784,13321 -8756,13356 -8358,13340 -8296,13338 -8049,13332 -8022,13332 -7693,13330
 EOF
      },
      { from  => 1178865859, # 2007-05-11 08:44
@@ -8881,7 +8881,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004443',
        data  => <<EOF,
-userdel	1::inwork -8784,13321 -8756,13356 -8358,13340 -8049,13332
+userdel	1::inwork -8784,13321 -8756,13356 -8358,13340 -8296,13338 -8049,13332
 EOF
      },
      { from  => 1183280053, # 2007-07-01 10:54
@@ -20052,7 +20052,7 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 
 EOF
      },
      { from  => undef, # 1329631200, # 2012-02-19 07:00
-       until => 1404140400, # 2014-06-30 17:00
+       until => 1364925014, # 1404140400, # 2014-06-30 17:00 -> nach handicap_s-orig gewandert
        text  => 'Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt',
 #       text  => 'Behrenstr. (Mitte): zwischen Glinkastr. und Friedrichstr. gesperrt',
        type  => 'handicap',
@@ -21012,6 +21012,15 @@ EOF
        source_id => 'IM_019584',
        data  => <<EOF,
 userdel	q4::inwork; 23950,5342 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633
+EOF
+     },
+     { from  => 1364875200, # 2013-04-02 06:00
+       until => 1365184800, # 2013-04-05 20:00
+       text  => 'Hüttenweg (Grunewald): Brückenbauarbeiten, Vollsperrung bis Freitag, 20:00',
+       type  => 'gesperrt',
+       source_id => 'IM_019680',
+       data  => <<EOF,
+userdel	2::inwork -739,6838 -927,6888
 EOF
      },
     );
