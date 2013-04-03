@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.18 2009/02/07 19:52:34 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,31 +18,41 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.19';
 
 use File::Basename qw(basename);
 
 use vars qw(%filetype_to_cat %file_to_cat);
 
-%filetype_to_cat =
+my %older_file_to_cat;
+{
+    my $_array_to_qr = sub {
+	my $array_ref = shift;
+	my $qr = '(?:' . (join '|', map { quotemeta } @$array_ref) . ')';
+	qr{$qr};
+    };
+
+    my $strassen_cat_3_16_qr = $_array_to_qr->([qw(HH H N NN Pl)]);
+    my $strassen_cat_3_18_qr = $_array_to_qr->([qw(HH H NH N NN Pl)]);
+
+    %filetype_to_cat =
     (
      "borders"	      => [qw(Z)],
      # XXX Information duplicated in data/Makefile
-     "gesperrt"	      => [sub { /^(1|2|3|3nocross)(:(?:inwork|temp))?$/ },
+     "gesperrt"	      => [sub { /^(1|2|3|3nocross)(?:::?(?:inwork|temp|igndisp|ignrte))?$/ }, # XXX both ":" and "::" needs to be allowed here :-(
 			  sub { /^0:\d+(:-?\d+)?$/ },
 			  sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },
 			  sub { /^1s(:q\d)?(:(?:inwork|temp))?$/ },
-			  '1::igndisp',
 			 ],
-     "fragezeichen"   => [qw(? ?? F:? F:??)],
-     "handicap"	      => [qw(q0 q1 q2 q3 q4)],
+     "fragezeichen"   => [sub { /^(?:\?|\?\?|F:\?|F:\?\?)(?:::(?:inwork|projected))?$/ }],
+     "handicap"	      => [sub { /^q[01234](?:::(?:igndisp|inwork))?$/ }],
      "landstrassen"   => [qw(B HH H NH N NN Pl)],
      "mount"   	      => [qw(St Gf CS)],
      "orte"	      => [qw(0 1 2 3 4 5 6)],
      "qualitaet"      => [qw(Q0 Q1 Q2 Q3)],
      "radwege"	      => [qw(RW0 RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RW9 RW10 RW)],
-     "rbahn"	      => [qw(R R0 RA RB RC RBau RG RP)],
-     "sbahn"	      => [qw(S0 SA SB SC SBau)],
+     "rbahn"	      => [sub { /^R(?:|0|A|B|C|Bau|G|P)(?:::(?:_?Tu_?|Br))?$/ }],
+     "sbahn"	      => [sub { /^S(?:0|A|B|C|Bau)(?:::_?Tu_?)?$/ }],
      "sehenswuerdigkeit" => [qw(F:SW SW F:Shop Shop),
 			     sub {
 				 my $anchor  = qr{\|ANCHOR:[news]};
@@ -51,13 +60,13 @@ use vars qw(%filetype_to_cat %file_to_cat);
 				 /^((F:)?(?:SW|Shop)(\|$img)?|($img)?)$/
 			     },
 			    ],
-     "strassen"	      => [qw(HH H NH N NN Pl)],
-     "ubahn"	      => [qw(U0 UA UB UC UBau)],
-     "wasserstrassen" => [qw(F:I F:W F:W0 F:W1 F:W2 W W0 W1 W2)],
+     "strassen"	      => [sub { /^$strassen_cat_3_18_qr(?:::(?:igndisp))?$/ }],
+     "ubahn"	      => [sub { /^U(?:0|A|B|C|Bau)(?:::_?Tu_?)?$/ }],
+     "wasserstrassen" => [sub { /^(?:F:(I|W|W0|W1|W2)|(?:(?:W|W0|W1|W2)(?:::_?Tu_?)?))$/ }],
      "*bahnhof_bg"    => [qw(bg bf)],
     );
 
-my %older_file_to_cat =
+    %older_file_to_cat =
     (
      "flaechen" => {
 		    '3.16'        => [qw(F:Ae F:Cemetery F:Forest F:Green
@@ -73,18 +82,19 @@ my %older_file_to_cat =
 				     ],
 		   },
      "strassen" => {
-		    '3.17'        => [qw(HH H N NN Pl)],
-		    'data-update' => [qw(HH H NH N NN Pl)], # BBBikeDataDownloadCompat takes care of NH
+		    '3.16'        => [sub { /^$strassen_cat_3_16_qr$/ }],
+		    '3.17'        => [sub { /^$strassen_cat_3_16_qr(?:::(?:igndisp))?$/ }],
+		    '3.18'        => [sub { /^$strassen_cat_3_18_qr(?:::(?:igndisp))?$/ }],
 		   },
     );
 
-%file_to_cat =
-    ("ampeln"			=> [qw(? B B0 F X Zbr)],
+    %file_to_cat =
+    ("ampeln"			=> [sub { /^(?:\?|B|B0|F|X|Zbr)(?:::inwork)?$/ }],
      "berlin"			=> $filetype_to_cat{"borders"},
      "berlin_ortsteile"		=> $filetype_to_cat{"borders"},
      "brunnels"			=> [qw(Br Tu TuBr)],
      "comments_cyclepath"	=> $filetype_to_cat{"radwege"},
-     "comments_danger"		=> [qw(CP CS)],
+     "comments_danger"		=> [sub { /^(?:CP|CS)::danger$/ }],
      "comments_ferry"		=> [qw(CS)],
      "comments_kfzverkehr"	=> [qw(-2 -1 +1 +2)],
      "comments_misc"		=> [qw(CP CP2 CS Roundabout MiniRoundabout)],
@@ -141,16 +151,17 @@ my %older_file_to_cat =
      "sehenswuerdigkeit"	=> $filetype_to_cat{"sehenswuerdigkeit"},
      "strassen"			=> $filetype_to_cat{"strassen"},
      "strassen-cooked"		=> $filetype_to_cat{"strassen"},
-     "strassen_bab"		=> [qw(BAB)],
+     "strassen_bab"		=> [sub { /^BAB(?:::(?:_?Tu_?|Br))?$/ }],
      "ubahn"			=> $filetype_to_cat{"ubahn"},
      "ubahnhof"			=> $filetype_to_cat{"ubahn"},
      "ubahnhof_bg"		=> $filetype_to_cat{"*bahnhof_bg"},
-     "vorfahrt"			=> [qw(Vf Kz)],
+     "vorfahrt"			=> [sub { /^(?:Vf|Kz)(?:::Tram)?$/ }],
      "wasserstrassen"		=> $filetype_to_cat{"wasserstrassen"},
      "wasserstrassen-lowres"	=> $filetype_to_cat{"wasserstrassen"},
      "wasserumland"		=> $filetype_to_cat{"wasserstrassen"},
      "wasserumland2"		=> $filetype_to_cat{"wasserstrassen"},
     );
+}
 
 sub _normalize_filename {
     my($filename) = @_;
@@ -217,9 +228,6 @@ sub check_cat {
     my(@cat) = $cat =~ m{^(.*);(.*)$};
     if (!@cat) {
 	@cat = $cat;
-    }
-    for my $_cat (@cat) {
-	$_cat =~ s{^(.+?)::.*$}{$1}; # XXX will change
     }
     my @msg;
  CHECK_CAT: {
