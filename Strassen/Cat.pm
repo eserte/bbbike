@@ -38,7 +38,6 @@ my %older_file_to_cat;
     %filetype_to_cat =
     (
      "borders"	      => [qw(Z)],
-     # XXX Information duplicated in data/Makefile
      "gesperrt"	      => [sub { /^(1|2|3|3nocross)(?:::?(?:inwork|temp|igndisp|ignrte))?$/ }, # XXX both ":" and "::" needs to be allowed here :-(
 			  sub { /^0:\d+(:-?\d+)?$/ },
 			  sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },

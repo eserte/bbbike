@@ -1271,7 +1271,7 @@ check-disabled:
 	@touch $@
 
 .check_plaetze1: plaetze .strassen.tmp landstrassen
-	$(CHECK_POINTS) -catrx '^Pl$$' plaetze .strassen.tmp landstrassen
+	$(CHECK_POINTS) plaetze .strassen.tmp landstrassen
 	@touch $@
 
 .check_plaetze2: ${PERSISTENTTMPDIR}/non-faked-plaetze add_plaetze
@@ -1291,7 +1291,7 @@ check-disabled:
 	@touch $@
 
 .check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) -catrx '^(X|\?|\?\?\?)$$' -namerx '^\d+(\.\d+)?$$' hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -namerx '^\d+(\.\d+)?$$' hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_hoehe2:	hoehe
@@ -1299,7 +1299,7 @@ check-disabled:
 	@touch $@
 
 .check_ampeln:	ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) -catrx '^(X|F|B|B0|Zbr|\?)(::inwork)?$$' ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_ampeln2:	ampeln
@@ -1317,7 +1317,7 @@ check-disabled:
 	@touch $@
 
 .check_ortsschilder:	ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) -catrx '^(OS|OHT)$$' ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_ortsschilder2:	orte orte2 ortsschilder
@@ -1328,11 +1328,8 @@ check-disabled:
 .check_ortsschilder_dist:	orte orte2 ortsschilder
 	perl -Mopen=:locale  -MData::Dumper -I.. -I../lib -MStrassen::Util -MStrassen::Core -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$pos{$$_[0]->[0]} = $$_[0]->[1][0]; $$cat{$$_[0]->[0]} = $$_[0]->[2] }) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$pos = $$_[0]->[1][0]; print int(Strassen::Util::strecke_s($$pos, $$pos{$$_[0]->[0]})) . " " . $$cat{$$_[0]->[0]} . " " . $$_[0]->[0] . "\n" }) ' | sort -nr | less
 
-# XXX Information duplicated in Strassen::Cat
-GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?)(:(?:inwork|temp))?(::(igndisp|ignrte))?$$'
-
 .check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen routing_helper-orig
-	$(CHECK_POINTS) -catrx $(GESPERRT_CATRX) gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen routing_helper-orig
+	$(CHECK_POINTS) gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen routing_helper-orig
 	@touch $@
 
 # Second check is necessary because of the 3nocross entries!
@@ -1351,7 +1348,6 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+(:traile
 	@touch $@
 .endfor
 
-# no need to check -catrx $(GESPERRT_CATRX) --- this is done elsewhere
 .check_gesperrt_car1:	gesperrt_car .strassen.tmp landstrassen landstrassen2
 	$(CHECK_POINTS) gesperrt_car .strassen.tmp landstrassen landstrassen2
 	@touch $@
@@ -1499,7 +1495,7 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+(:traile
 
 .check_housenumbers:	housenumbers-orig housenumbers .strassen.tmp
 	$(CHECK_HOUSENUMBERS) housenumbers-orig
-	$(CHECK_POINTS) -catrx '^HNR$$' -namerx '^(ALT|SINGLE|CONT) (\d+[a-z]?)?/(\d+[a-z]?)? (\d+[a-z]?)?/(\d+[a-z]?)?$$' housenumbers .strassen.tmp
+	$(CHECK_POINTS) -namerx '^(ALT|SINGLE|CONT) (\d+[a-z]?)?/(\d+[a-z]?)? (\d+[a-z]?)?/(\d+[a-z]?)?$$' housenumbers .strassen.tmp
 	@touch $@
 
 .check_sehenswuerdigkeit:	sehenswuerdigkeit
@@ -1554,7 +1550,7 @@ GESPERRT_CATRX='^(0:\d+(:-?\d+)?|1|1s(:q\d)?|2|3|3nocross|BNP:\d+(:-?\d+(:traile
 	@touch $@
 
 .check_grenzuebergaenge:	grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen deutschland
-	$(CHECK_POINTS) -catrx '^GU$$' grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen
 	$(CHECK_POINTS) grenzuebergaenge deutschland
 	@touch $@
 
