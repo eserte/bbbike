@@ -269,7 +269,7 @@ sub check_file {
 	my $check_ret = check_cat($cat, $checker, \@msg);
 	if (!$check_ret) {
 	    $errors++;
-	    warn "Errors in line " . $s->pos . ", category <$cat>: @msg\n";
+	    warn "Errors in file $f line " . $s->pos . ", category <$cat>: @msg\n";
 	    if (defined $bbbike_version) {
 		warn "Note that checks were done for BBBike version $bbbike_version.\n";
 	    }
