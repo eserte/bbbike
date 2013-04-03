@@ -291,23 +291,20 @@ Einmündung der Burgfrauenstraße in den Zeltinger Platz: hier wird ein Zebrastrei
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::projected 13708,17453
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
-#: last_checked: 2013-02-04
-#: next_check: 2013-04-04
+#: last_checked: 2013-04-03
+#: check_frequency: 60d
 Werbellinstr.: Radstreifen werden erstellt	?::projected 12753,8187 12698,8175 12650,8164 12541,8140
-#: last_checked: 2013-02-04
-#: next_check: 2013-04-04
+#: last_checked: 2013-04-03
+#: check_frequency: 60d
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
-#: last_checked: 2013-02-04
-#: next_check: 2013-04-04
-Karlsgartenstr.: Zebrastreifen wird angelegt	?::projected 11650,8514 11744,8486
 #: last_checked: 2013-03-25
 #: next_check: 2013-07-25
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12081,9680 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2013-03-25
-#: next_check: 2013-05-25
+#: last_checked: 2013-04-03
+#: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
@@ -452,9 +449,9 @@ Leonorenstr.: Radwegführung wird geändert, teilweise mit Busspur zusammengelegt	
 # 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
-#: last_checked: 2012-10-11
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
-#: next_check: 2013-04-01
+#: last_checked: 2013-04-03
+#: check_frequency: 60d
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11472,7899 11573,7924 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11823,7980 11979,8014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: next_check: 2014-03-01
@@ -815,6 +812,7 @@ Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehe
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14586,7624
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
+#: last_checked: 2013-04-03
 #: next_check: 2013-06-05 (evtl. auch von wosch berichten lassen)
 Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9190
 # 

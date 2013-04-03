@@ -159,7 +159,9 @@ Belziger Str.: Asphalt	Q0 7315,9156 7110,9024
 Suadicanistr.: Asphalt	Q0 7859,7486 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10627,8706 10615,8558
-Weichselstr.: mäßiges Kopfsteinpflaster, 15-17 km/h	Q2- 12330,8636 12394,8729 12434,8776 12483,8834 12590,8977 12681,9083 12761,9190 12851,9309 12844,9351
+Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12394,8729 12434,8776 12483,8834 12590,8977 12681,9083 12761,9190
+Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 12761,9190 12851,9309
+Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12851,9309 12844,9351
 Treptower Str.: Asphalt	Q0 13860,8599 14015,8798 14151,8967
 Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
 Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
@@ -180,8 +182,8 @@ Harzer Str.: Kopfsteinpflaster	Q2 12979,9304 12897,9365
 Harzer Str.: Kopfsteinpflaster	Q2 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
-#: last_checked: 2013-01-04
-#: next_check: 2013-05-15
+#: last_checked: 2013-04-03
+#: next_check: 2013-06-03
 Kiefholzstr.: Kopfsteinpflaster	Q2 13601,9572 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2+ 15060,11006 15102,11120
@@ -212,8 +214,8 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2013-03-24
-#: next_check: 2013-06-01
+#: last_checked: 2013-04-03
+#: next_check: 2013-07-03
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
 Böttgerstr.: Asphalt	Q0 9134,15953 8923,15850
@@ -21688,8 +21690,8 @@ Novalisstr.: Kopfsteinpflaster	Q2 9340,13510 9275,13720
 Philippstr.: Asphalt	Q0 8892,13498 8828,13434
 Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707
 Claire-Waldoff-Str.: Asphalt	Q0 9242,13235 9132,13187
-Am Zirkus: Asphalt	Q1 9118,13070 9134,13038
-Am Zirkus: Asphalt	Q1 9099,13030 9134,13038 9167,13046 9239,12923
+Am Zirkus: Asphalt	Q1 9118,13070 9137,13032
+Am Zirkus: Asphalt	Q1 9090,13009 9137,13032 9167,13046 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8017,12826 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8302,12933 8341,12911 8417,12846
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8302,12933
 (südliches Spreeufer - Gustav-Heinemann-Brücke): wassergebundene Decke	Q1 8032,12889 8053,12871 8116,12938
