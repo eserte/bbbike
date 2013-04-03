@@ -1603,17 +1603,15 @@ check-crossings-less-important:	${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
 				${PERSISTENTTMPDIR}/crossings_bahn.bbd \
 				${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd
 
-check-categories:	.check_categories
+check-categories:	${BBD_TARGETS:S/^/.check_categories_/:S/\//_/g}
 
-.check_categories:	${BBD_TARGETS}
-	@echo "Check categories..."
 .for target in ${BBD_TARGETS}
-	@echo " ${target}"
-	@$(PERL_UTF8) -I../lib -I.. -MStrassen::Cat -e '\
+.check_categories_${target:S/\//_/g}:	${target}
+	$(PERL_UTF8) -I../lib -I.. -MStrassen::Cat -e '\
 	    exit !Strassen::Cat::check_file($$ARGV[0], BBBikeVersion => "data-update");\
 	' ${target}
-.endfor
 	touch $@
+.endfor
 
 check-names:	.check_names
 
