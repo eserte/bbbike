@@ -136,6 +136,7 @@ my %older_file_to_cat;
      "orte"			=> $filetype_to_cat{"orte"},
      "orte2"			=> $filetype_to_cat{"orte"},
      "orte_city"		=> $filetype_to_cat{"orte"},
+     "ortsschilder"		=> [qw(OS OHT)],
      "plaetze"			=> [qw(Pl)],
      "plz"			=> $filetype_to_cat{"borders"},
      "potsdam"			=> $filetype_to_cat{"borders"},
