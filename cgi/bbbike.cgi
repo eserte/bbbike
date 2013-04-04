@@ -865,9 +865,11 @@ use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_po
 @b_and_p_plz_multi_files = 
     #  File                   Data fmt   Usable without being in strassen
     #                                        same single point optimization
-    (["Berlin.coords.data",   "PLZ",      0, 0],
-     ["Potsdam.coords.data",  "PLZ",      0, 0],
-     ["plaetze",              "Strassen", 0, 1], # because there are also some "sehenswuerdigkeiten" in
+    #                                           optional
+    (["Berlin.coords.data",   "PLZ",      0, 0, 0],
+     ["Potsdam.coords.data",  "PLZ",      0, 0, 0],
+     ["plaetze",              "Strassen", 0, 1, 0], # because there are also some "sehenswuerdigkeiten" in
+     ["oldnames",             "PLZ",      0, 0, 1],
      # not yet: ["sehenswuerdigkeit_bp", "Strassen", 1, 1], # generated, see below
     );
 for my $i (0 .. $#b_and_p_plz_multi_files) {
@@ -1538,12 +1540,13 @@ sub choose_form {
     }
 
     my(@start_matches, @via_matches, @ziel_matches);
+    my($start_oldname_match, $via_oldname_match, $ziel_oldname_match);
  MATCH_STREET:
-    foreach ([\$startname,\$start,\$start2,\@start_matches,'start',\$startplz, $startort],
-	     [\$vianame,  \$via,  \$via2,  \@via_matches,  'via',  \$viaplz,   $viaort],
-	     [\$zielname, \$ziel, \$ziel2, \@ziel_matches, 'ziel', \$zielplz,  $zielort],
+    foreach ([\$startname,\$start,\$start2,\@start_matches,'start',\$startplz, $startort, \$start_oldname_match],
+	     [\$vianame,  \$via,  \$via2,  \@via_matches,  'via',  \$viaplz,   $viaort,   \$via_oldname_match],
+	     [\$zielname, \$ziel, \$ziel2, \@ziel_matches, 'ziel', \$zielplz,  $zielort,  \$ziel_oldname_match],
 	    ) {
-	my  (  $nameref,  $oneref,$tworef, $matchref,      $type,  $zipref,    $ort)=@$_;
+	my  (  $nameref,  $oneref,$tworef, $matchref,      $type,  $zipref,    $ort,      $oldname_match_ref)=@$_;
 	local $^W = 0; # too many defined checks missing...
 
 	# Darstellung eines Vias nicht erwünscht
@@ -1605,25 +1608,30 @@ sub choose_form {
 				  Max => $max_plz_streets,
 				  MultiZIP => 1, # introduced because of Hauptstr./Friedenau vs. Hauptstr./Schöneberg problem
 				  MultiCitypart => 1, # works good with the new combine method
-				  Agrep => 'default');
+				  Agrep => 'default',
+				  AsObjects => 1,
+				 );
 	    #warn "\$plz_obj->look_loop(@look_loop_args)\n";
 	    my($retref, $matcherr) = $plz_obj->look_loop(@look_loop_args);
 	    #require Data::Dumper; warn Data::Dumper->new([$retref, $matcherr],[qw()])->Indent(1)->Useqq(1)->Dump;
 
-	    @$matchref = grep { defined $_->[PLZ::LOOK_COORD()] && $_->[PLZ::LOOK_COORD()] ne "" } @$retref;
+	    @$matchref = grep { my $coord = $_->get_coord; defined $coord && length $coord } @$retref;
 	    # XXX needs more checks, but seems to work good
 	    # except in the cases, where the same street has different coordinates
 	    # see Ackerstr. Mitte/Wedding
 	    # solution: use multi_bez_str!
-	    @$matchref = map { $plz_obj->combined_elem_to_string_form($_) } $plz_obj->combine(@$matchref);
+	    @$matchref = map { $_->combined_elem_to_string_form } $plz_obj->combine(@$matchref);
 	    {
 		my %seen;
 		@$matchref = grep {
-		    if ($same_single_point_optimization{$_->[PLZ::LOOK_INDEX()]||""}) {
-			if ($seen{$_->[PLZ::LOOK_COORD()]}) {
+		    my $file_index = $_->get_field('i');
+		    $file_index = '' if !defined $file_index;
+		    if ($same_single_point_optimization{$file_index}) {
+			my $coord = $_->get_coord;
+			if ($seen{$coord}) {
 			    0;
 			} else {
-			    $seen{$_->[PLZ::LOOK_COORD()]}++;
+			    $seen{$coord}++;
 			    1;
 			}
 		    } else {
@@ -1650,12 +1658,12 @@ sub choose_form {
 				my $ret = $str->get_by_name($res);
 				if ($ret) {
 				    my($street, $citypart) = Strasse::split_street_citypart($res);
-				    push @matches, [$street, $citypart, undef, $ret->[1][0]];
+				    push @matches, $plz_obj->make_result([$street, $citypart, undef, $ret->[1][0]]);
 				}
 			    }
 			    if (@matches == 1) {
-				$$nameref = $matches[0]->[PLZ::LOOK_NAME()];
-				$q->param($type . 'c', $matches[0]->[PLZ::LOOK_COORD()]);
+				$$nameref = $matches[0]->get_name;
+				$q->param($type . 'c', $matches[0]->get_coord);
 			    } else {
 				@$matchref = @matches;
 			    }
@@ -1673,7 +1681,7 @@ sub choose_form {
 	    # If this is a crossing, then get the exact point, but don't fail
 	    if (defined $crossing_street) {
 		# first: get all matching Strasse objects (first part)
-		my $rx = "^(" . join("|", map { quotemeta($_->[&PLZ::LOOK_NAME]) } @$matchref) . ")";
+		my $rx = "^(" . join("|", map { quotemeta($_->get_name) } @$matchref) . ")";
 		my $str = get_streets();
 		my @matches = grep {
 		    $_->[Strassen::NAME] =~ /$rx/i
@@ -1704,9 +1712,9 @@ sub choose_form {
 	    # den gleichen Namen haben.
 	    if (@$matchref > 1) {
 	      TRY: {
-		    my $first = $matchref->[0][0];
+		    my $first = $matchref->[0]->get_name;
 		    for(my $i = 1; $i <= $#$matchref; $i++) {
-			if ($first ne $matchref->[$i][0]) {
+			if ($first ne $matchref->[$i]->get_name) {
 			    last TRY;
 			}
 		    }
@@ -1720,7 +1728,7 @@ sub choose_form {
 			    $bezirk{$_}++;
 			}
 			foreach my $match (@$matchref) {
-			    my(@bezirke) = split /\s*,\s*/, $match->[1]; # may be "Britz, Buckow, Rudow"
+			    my(@bezirke) = split /\s*,\s*/, $match->get_citypart; # may be "Britz, Buckow, Rudow"
 			    for my $bezirk (@bezirke) {
 				last TRY if !exists $bezirk{$bezirk};
 			    }
@@ -1738,23 +1746,32 @@ sub choose_form {
 		}
 	    }
 
-	    if (@$matchref == 1 && $is_usable_without_strassen{$matchref->[0][PLZ::LOOK_INDEX()]||""}) {
-		$$nameref = $matchref->[0][PLZ::LOOK_NAME()];
-		$$tworef = join($delim, @{$matchref->[0]});
-		$q->param($type . 'c', $matchref->[0][PLZ::LOOK_COORD()]);
+	    if (@$matchref == 1 && do {
+		my $first_rec_file_index = $matchref->[0]->get_field("i");
+		$first_rec_file_index = '' if !defined $first_rec_file_index;
+		$is_usable_without_strassen{$first_rec_file_index}
+	    }) {
+		$$nameref = $matchref->[0]->get_name;
+		$$tworef = _match_to_cgival($matchref->[0]);
+		$q->param($type . 'c', $matchref->[0]->get_coord);
 	    } elsif (@$matchref == 1) {
 		my $match = $matchref->[0];
-		my($strasse, $bezirk) = ($match->[PLZ::LOOK_NAME()],
-					 $match->[PLZ::LOOK_CITYPART()]);
+		my $matchtype = $match->get_field('type') || '';
+		if ($matchtype eq 'oldname') {
+		    $$oldname_match_ref = $match;
+		    $match = _oldname_to_newname($match);
+		}
+		my($strasse, $bezirk) = ($match->get_name,
+					 $match->get_citypart);
 		warn "Wähle $type-Straße für $strasse/$bezirk (2nd)\n"
 		    if $debug;
 		if ($bezirk =~ $outer_berlin_qr) {
 		    my $name = _outer_berlin_hack($strasse, $bezirk);
 		    if ($name) {
 			$$nameref = $name;
-			$q->param($type . 'plz', $match->[PLZ::LOOK_ZIP()]);
+			$q->param($type . 'plz', $match->get_zip);
 		    } else {
-			$$tworef = join($delim, @$match);
+			$$tworef = _match_to_cgival($match);
 		    }
 		} else {
 		    my $str = get_streets();
@@ -1770,9 +1787,9 @@ sub choose_form {
 		    }
 		    if (defined $pos) {
 			$$nameref = $str->get($pos)->[0];
-			$q->param($type . 'plz', $match->[PLZ::LOOK_ZIP()]);
+			$q->param($type . 'plz', $match->get_zip);
 		    } else {
-			$$tworef = join($delim, @$match);
+			$$tworef = _match_to_cgival($match);
 		    }
 		}
 	    }
@@ -1787,7 +1804,7 @@ sub choose_form {
 			 (!defined $vianame || $vianame eq ''));
 	    warn "Wähle Kreuzung für $startname und $zielname (2nd)\n"
 	      if $debug;
-	    get_kreuzung($startname, $vianame, $zielname);
+	    get_kreuzung($startname, $vianame, $zielname, $start_oldname_match, $via_oldname_match, $ziel_oldname_match);
 	    return;
 	}
     }
@@ -1920,13 +1937,13 @@ EOF
 
     foreach
       ([\$startname, \$start, \$start2, \@start_matches, 'start',
-	$start_bgcolor, \$startort],
+	$start_bgcolor, \$startort, \$start_oldname_match],
        [\$vianame,   \$via,   \$via2,   \@via_matches,   'via',
-	$via_bgcolor,   \$viaort],
+	$via_bgcolor,   \$viaort,   \$via_oldname_match],
        [\$zielname,  \$ziel,  \$ziel2,  \@ziel_matches,  'ziel',
-	$ziel_bgcolor,  \$zielort]) {
+	$ziel_bgcolor,  \$zielort,  \$ziel_oldname_match]) {
 	my($nameref,  $oneref, $tworef,  $matchref,       $type,
-	   $bgcolor,    $ortref) = @$_;
+	   $bgcolor,    $ortref,    $oldname_match_ref) = @$_;
 	my $bgcolor_s = $bgcolor ne '' ? "bgcolor=$bgcolor" : '';
 	my $coord     = $q->param($type . "c");
 	my $has_init_map_js;
@@ -1966,6 +1983,9 @@ EOF
 		print crossing_text($coord);
 	    } else {
 		print "$$nameref";
+		if ($$oldname_match_ref) {
+		    print _display_oldname($$oldname_match_ref);
+		}
 		if ($$ortref &&
 		    index(reverse($$nameref), reverse("$$ortref)")) != 0 # this means: $$ortref is not at the end of $$nameref (but this seems always the case in bbbike.de/beta)
 		   ) {
@@ -1993,9 +2013,9 @@ EOF
 	    if ($nice_berlinmap && $bi->{'can_table'}) {
 		print "<td>";
 		if (!@$matchref) { # XXX why?
-		    $matchref = [[$$nameref, undef, undef, $coord]];
+		    require PLZ;
+		    $matchref = [ PLZ->new->make_result([$$nameref, undef, undef, $coord]) ];
 		}
-		require PLZ; # XXX why?
 		berlinmap_with_choices($type, $matchref);
 		$has_init_map_js++;
 		print "</td>";
@@ -2121,9 +2141,9 @@ EOF
 	    if ($nice_berlinmap && $bi->{'can_table'}) {
 		print "<td>";
 		if (!@$matchref) { # XXX why?
-		    $matchref = [[$strasse, $bezirk, $plz, $xy]];
+		    require PLZ;
+		    $matchref = [ PLZ->new->make_result([$strasse, $bezirk, $plz, $xy])];
 		}
-		require PLZ; # XXX why?
 		berlinmap_with_choices($type, $matchref);
 		$has_init_map_js++;
 		print "</td>";
@@ -2144,15 +2164,15 @@ EOF
 	    }
 
 	    # Sort Potsdam streets to the end:
-	    @$matchref = sort {
-		if ($a->[1] eq 'Potsdam' && $b->[1] ne 'Potsdam') {
+	    @$matchref = map { $_->[1] } sort {
+		if ($a->[0] eq 'Potsdam' && $b->[0] ne 'Potsdam') {
 		    return +1;
-		} elsif ($a->[1] ne 'Potsdam' && $b->[1] eq 'Potsdam') {
+		} elsif ($a->[0] ne 'Potsdam' && $b->[0] eq 'Potsdam') {
 		    return -1;
 		} else {
 		    return 0;
 		}
-	    } @$matchref;
+	    } map { [$_->get_citypart, $_ ] } @$matchref;
 
 	    my $s;
 	    my $checked = 0;
@@ -2160,34 +2180,44 @@ EOF
 	    foreach $s (@$matchref) {
 		last if ++$out_i > $max_matches;
 		my $strasse2val;
-		my $is_ort = $s->[MATCHREF_ISORT_INDEX];
+		my $is_oldname = ($s->get_field('type')||'') eq 'oldname';
+		my $oldname_s;
+		my $is_ort = 0; # XXX currently very probably broken --- $s->[MATCHREF_ISORT_INDEX];
 		print "<label><input";
 		if ($nice_berlinmap) {
 		    print " onclick='set_street_in_berlinmap(\"$type\", $out_i);'";
 		}
 		print " type=radio name=" . $type . "2";
 		if ($is_ort && $multiorte) {
-		    my($ret) = $multiorte->get_by_name($s->[0]);
+		    my($ret) = $multiorte->get_by_name($s->get_name);
 		    my $xy;
 		    if ($ret) {
 			$xy = $ret->[1][0];
 		    }
-		    $strasse2val = join($delim, $s->[0], "#ort", $xy);
+		    $strasse2val = join($delim, $s->get_name, "#ort", $xy);
 		    $s->[0] =~ s/\|/ /; # Zusatzbezeichnung von Orten
 		} else {
-		    $strasse2val = join($delim, @$s); # 0..3
+		    if ($is_oldname) {
+			$oldname_s = $s;
+			$s = _oldname_to_newname($s);
+		    }
+		    $strasse2val = _match_to_cgival($s);
 		}
 		print " value=\"$strasse2val\"";
 		if (!$checked) {
 		    print " checked";
 		    $checked++;
 		}
-		print "> $s->[0]";
-		if ((defined $s->[1] && $s->[1] ne "") ||
-		    (defined $s->[2] && $s->[2] ne "")) {
+		print "> " . $s->get_name;
+		if ($oldname_s) {
+		    print _display_oldname($oldname_s);
+		}
+		if ((defined $s->get_citypart && $s->get_citypart ne "") ||
+		    (defined $s->get_zip && $s->get_zip ne "")) {
 		    my @cp;
-		    for (1, 2) {
-			push @cp, $s->[$_] if (defined $s->[$_] && $s->[$_] ne "");
+		    for ('citypart', 'zip') {
+			my $method = 'get_' . $_;
+			push @cp, $s->$method if (defined $s->$method && $s->$method ne "");
 		    }
 		    print " (<span style='font-size:smaller;'>" . join(", ", @cp) . "</span>)";
 		}
@@ -2404,8 +2434,8 @@ sub berlinmap_with_choices {
     foreach my $s (@$matchref) {
 	last if ++$out_i > $max_matches;
 	$match_nr++;
- 	next if $s->[MATCHREF_ISORT_INDEX];
-	my $xy = $s->[PLZ::LOOK_COORD()];
+ 	next if $s->get_field('isort'); # XXX was [MATCHREF_ISORT_INDEX];
+	my $xy = $s->get_coord;
 	next if !defined $xy;
 	my($tx,$ty) = map { int $_ } overview_map()->{Transpose}->(split /,/, $xy);
 	$tx -= 4; $ty -= 4; # center reddot.gif
@@ -2418,7 +2448,7 @@ sub berlinmap_with_choices {
 EOF
 	    $a_end   = "</a>";
 	}
-	my $alt = ($s->[0]||"") . "(" . ($s->[1]||"") . ")";
+	my $alt = ($s->get_name||"") . "(" . ($s->get_citypart||"") . ")";
 	print <<EOF;
 <div id="$divid" style="position:absolute; visibility:visible;">$a_start<img id="$matchimgid" src="$bbbike_images/bluedot.png" border=0 width=8 height=8 alt="$alt">$a_end</div>
 EOF
@@ -2624,7 +2654,9 @@ EOF
 }
 
 sub get_kreuzung {
-    my($start_str, $via_str, $ziel_str) = @_;
+    my($start_str, $via_str, $ziel_str,
+       $start_oldname_match, $via_oldname_match, $ziel_oldname_match,
+      ) = @_;
     if (!defined $start_str) {
 	$start_str = $q->param('startname');
     }
@@ -2805,14 +2837,14 @@ sub get_kreuzung {
     print "<table>\n" if ($bi->{'can_table'});
 
     foreach ([$start_str, \@start_coords, $start_plz, $start_c, 'start',
-	      $start_bgcolor],
+	      $start_bgcolor, $start_oldname_match],
 	     [$via_str,   \@via_coords,   $via_plz,   $via_c,   'via',
-	      $via_bgcolor],
+	      $via_bgcolor,   $via_oldname_match],
 	     [$ziel_str,  \@ziel_coords,  $ziel_plz,  $ziel_c,  'ziel',
-	      $ziel_bgcolor],
+	      $ziel_bgcolor,  $ziel_oldname_match],
 	    ) {
 	my($strname,      $coords_ref,    $plz,       $c,       $type,
-	   $bgcolor) = @$_;
+	   $bgcolor,          $oldname_match) = @$_;
 	my $bgcolor_s = $bgcolor ne '' ? "bgcolor=$bgcolor" : '';
 	my @coords = @$coords_ref;
 	next if !@coords and !$c; # kann bei nicht definiertem Via vorkommen
@@ -2854,6 +2886,9 @@ sub get_kreuzung {
 	}
 	if (defined $q->param($type."hnr") && $q->param($type."hnr") ne "") {
 	    print " " . $q->param($type . "hnr");
+	}
+	if ($oldname_match) {
+	    print _display_oldname($oldname_match);
 	}
 	# Parameter durchschleifen...
 	if (defined $strname) {
@@ -6253,7 +6288,7 @@ sub init_plz {
 	my @files;
 	if ($scope eq 'all' || $scope eq 'Berlin/Potsdam') {
 	    for my $def (@b_and_p_plz_multi_files) {
-		my($name, $type) = @$def;
+		my($name, $type, undef, undef, $optional) = @$def;
 		if ($name eq 'sehenswuerdigkeit_bp') {
 		    my $sehenswuerdigkeit_bp_file = "$tmp_dir/" . $Strassen::Util::cacheprefix . "_" . $< . "_" . "sehenswuerdigkeit_bp";
 		    my $sehenswuerdigkeit = Strassen->new("sehenswuerdigkeit", NoRead => 1);
@@ -6284,7 +6319,13 @@ sub init_plz {
 		} elsif ($type eq 'Strassen') {
 		    push @files, Strassen->new($name);
 		} else {
-		    push @files, $name;
+		    if ($optional) {
+			if (-r "$Strassen::datadirs[0]/$name") {
+			    push @files, $name;
+			}
+		    } else {
+			push @files, $name;
+		    }
 		}
 	    }
 	}
@@ -6294,7 +6335,7 @@ sub init_plz {
 	}
 	if (@files) {
 	    require PLZ::Multi;
-	    $cached_plz{$scope} = PLZ::Multi->new(@files, -cache => 1, -addindex => 1, -preferfirst => 1);
+	    $cached_plz{$scope} = PLZ::Multi->new(@files, -cache => 1, -addindex => 1, -preferfirst => 1, '-usefmtext');
 	} else {
 	    warn "No input files";
 	    return;
@@ -7578,10 +7619,8 @@ sub _is_real_street {
     my $street = shift;
     require PLZ;
     # XXX hack: get_street_type needs a look result
-    my $look_result = [];
-    $look_result->[PLZ::LOOK_NAME()] = $street;
-    # XXX hack: should get_street_type be callable as a static method?
-    my $type = PLZ->get_street_type($look_result);
+    my $look_result = PLZ->new->make_result([$street]);
+    my $type = $look_result->get_street_type;
     $type eq 'street' || $type eq 'projected street';
 }
 
@@ -7593,6 +7632,37 @@ sub _bbbikeleaflet_url {
 sub _bbbikegooglemap_url {
     (my $href = $bbbike_script) =~ s{/bbbike2?(\.en)?\.cgi}{"/bbbikegooglemap" . ($is_beta ? "2" : "") . ".cgi"}e;
     $href;
+}
+
+sub _oldname_to_newname {
+    my($match) = @_;
+    my $newname = $match->clone;
+    my $ref = $match->get_field('ref');
+    if ($ref) {
+	my($strasse, $bezirk) = Strasse::split_street_citypart($ref);
+	$newname->set_name($strasse);
+	if ($bezirk) {
+	    $newname->set_citypart($bezirk);
+	}
+    } else {
+	warn "Should not happen: type=oldname without a ref field";
+    }
+    $newname;
+}
+
+sub _display_oldname {
+    my($oldname_s) = @_;
+    my $timespan = $oldname_s->get_field('timespan');
+    qq{ <span style='font-size:smaller;'}
+	. ($timespan ? qq{ title="@{[ M("alter Name gültig") ]}: @{[ BBBikeCGIUtil::my_escapeHTML($timespan) ]}"} : '')
+	    . qq{>}
+		. qq{(@{[ M("alter Name") ]}: @{[ BBBikeCGIUtil::my_escapeHTML($oldname_s->get_name) ]})}
+		    . qq{</span>};
+}
+
+sub _match_to_cgival {
+    my $s = shift;
+    join($delim, $s->get_name, $s->get_citypart, $s->get_zip, $s->get_coord);
 }
 
 ######################################################################
