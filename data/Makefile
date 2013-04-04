@@ -1108,7 +1108,8 @@ temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-bl
 	-@$(WRITEABLE) $@
 	${PERL} $(MISCSRCDIR)/check_bbbike_temp_blockings \
 	    -action output_future_nonrecurring \
-	    -action dump_future_as_perl > $@
+	    -action dump_future_as_perl > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 # Another fragezeichen POI approach: restrict to whole
