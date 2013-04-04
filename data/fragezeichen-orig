@@ -97,7 +97,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
-#: last_checked: 2013-03-26
+#: last_checked: 2013-04-04
 #: next_check: 2013-06-01
 Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
 # 
@@ -667,11 +667,13 @@ Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected 29714,4461 29728,4435 29813,4314 29850,4288
 # 
 #: last_checked: 2013-02-15 vvv
-#: next_check: 2013-03-13 vvv
+#: next_check: 2013-05-13 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv
+#: source_id: INKO_117706 vvv
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15058,14575
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15058,14575 15110,14486 15164,14392
+#: source_id ^^^
 #: by: ^^^
 #: by: ^^^
 #: next_check ^^^

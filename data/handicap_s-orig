@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-04-03 vvv
+#: last_checked: 2013-04-04 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -23,7 +23,7 @@ Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-04-03 vvv
+#: last_checked: 2013-04-04 vvv
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
 # REMOVED (Einbahnstraße) --- Helsingforser Str.: Bauarbeiten, Einbahnstraße, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
@@ -133,10 +133,10 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2013-04-03
+#: last_checked: 2013-04-04
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2013-04-03 vvv
+#: last_checked: 2013-04-04 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 # REMOVED (now again entry above is active) --- Neue Grünstr.: Fahrbahn gesperrt wegen Bauarbeiten	q4::inwork 10389,11390 10446,11470
@@ -160,7 +160,7 @@ Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919
 #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
 #: source_id: INKO_114376
 #: source_id: IM_019321
-#: last_checked: 2013-04-03
+#: last_checked: 2013-04-04
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
 ### Köpenick ###
@@ -242,7 +242,7 @@ Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911
 #: XXX evtl. nach den Bauarbeiten asphaltiert oder zumindest besser gepflastert/gewalzt? Vielleicht wird auch der südliche Halbkreis neu gemacht?
 #: XXX nach den Bauarbeiten den normalen Eintrag wieder aktivieren
 #: by: http://unsergoerli.de/wegebau-am-rondell-ab-november/ (Asphaltierung!)
-#: last_checked: 2013-02-25
+#: last_checked: 2013-04-04
 Görlitzer Park, Rondell: Bauarbeiten, Fußgänger	q3::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 #Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
