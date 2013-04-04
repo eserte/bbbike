@@ -142,6 +142,7 @@ use constant LOOK_EXT      => 5;
 #  MultiZIP
 # Ausgabe: Array von Referenzen [strasse, bezirk, plz, "x,y-Koordinate"]
 #  Je nach Format der Quelldatei ($self->{DataFmt}) fehlt die x,y-Koordinate
+# If using AsObjects=>1, then an array of PLZ::Result objects is returned instead.
 sub look {
     my($self, $str, %args) = @_;
 
@@ -311,7 +312,11 @@ sub look {
 	}
     }
 
-    @res;
+    if ($args{AsObjects}) {
+	map { $self->make_result($_) } @res;
+    } else {
+	@res;
+    }
 }
 
 # Argument: an array of references (the output of look())
@@ -573,12 +578,13 @@ sub look_loop_best {
 	my $str_rx = qr{(?i:^\Q$str\E)};
 	for(my $i=0; $i<=$#$matchref; $i++) {
 	    my $item = $matchref->[$i];
-	    if ($item->[LOOK_NAME] eq $str) {
+	    my $name = UNIVERSAL::isa($item, 'PLZ::Result') ? $item->get_name : $item->[LOOK_NAME];
+	    if ($name eq $str) {
 		push @rating, [ 100, $item ];
-	    } elsif ($item->[LOOK_NAME] =~ $str_rx) {
-		push @rating, [ 40 + 40-length($item->[LOOK_NAME]), $item ];
+	    } elsif ($name =~ $str_rx) {
+		push @rating, [ 40 + 40-length($name), $item ];
 	    } else {
-		push @rating, [ 40-length($item->[LOOK_NAME]), $item ];
+		push @rating, [ 40-length($name), $item ];
 	    }
 	}
 	$matchref = [map  { $_->[1] } sort { $b->[0] <=> $a->[0] } @rating];
@@ -870,6 +876,12 @@ sub get_street_type {
 	    return 'street';
 	}
     }
+}
+
+sub make_result {
+    my($self, $res) = @_;
+    require PLZ::Result;
+    PLZ::Result->new($self, $res);
 }
 
 return 1 if caller();
