@@ -81,7 +81,7 @@ COMPUTED_TARGETS+=	temp_blockings/bbbike-temp-blockings-optimized.pl
 COMPUTED_TARGETS+=	wasserstrassen-lowres
 COMPUTED_TARGETS+=	kneipen
 COMPUTED_TARGETS+=	fragezeichen-cooked
-COMPUTED_TARGETS+=	inaccessible_strassen inaccessible_landstrassen
+COMPUTED_TARGETS+=	inaccessible_strassen inaccessible_landstrassen oldnames
 
 # These are not computed, but useful mentioned here for fixing
 # permissions
@@ -89,7 +89,7 @@ NON_TARGETS=		upgrade_scope_hint
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
-BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^multi_bez_str$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//}
+BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^multi_bez_str$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
 
 XXX_NON_OUTDOOR=	indoor prog checklater
 XXX_TARGETS=		outdoor ${XXX_NON_OUTDOOR}
@@ -715,6 +715,12 @@ exits:	exits-orig
 kneipen:	kneipen.yml
 	-@$(WRITEABLE) $@
 	${PERL} $(MISCSRCDIR)/yaml2bbd $> > $@~
+	mv $@~ $@
+	-@$(READONLY) $@
+
+oldnames:	strassen Berlin.coords.data
+	-@$(WRITEABLE) $@
+	${PERL} $(MISCSRCDIR)/oldname2plz > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
