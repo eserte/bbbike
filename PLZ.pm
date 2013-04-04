@@ -13,7 +13,7 @@
 
 package PLZ;
 
-use 5.005; # qr{}
+use 5.006; # autovivified fh
 
 use strict;
 # Setting $OLD_AGREP to a true value really means: use String::Approx
@@ -24,12 +24,6 @@ use BBBikeUtil;
 use Strassen::Strasse;
 
 $VERSION = 1.76;
-
-use constant FMT_NORMAL            => 0; # /usr/www/soc/plz/Berlin.data
-use constant FMT_REDUCED           => 1; # ./data/Berlin.small.data (does not exist anymore)
-use constant FMT_COORDS            => 2; # ./data/Berlin.coords.data
-use constant FMT_COORDS_WITH_INDEX => 3; # PLZ::Multi with -addindex option
-use constant FMT_EXT		   => 4; # with freely defined extension fields
 
 # agrep says that 32 is the max length, but experiments show something else:
 use constant AGREP_LONGEST_RX => 29;
@@ -52,12 +46,10 @@ $OLD_AGREP = 0 unless defined $OLD_AGREP;
 # indexes of file fields
 use constant FILE_NAME     => 0;
 use constant FILE_CITYPART => 1;
-use constant FILE_ZIP      => 2; # this is not valid for FMT_NORMAL
+use constant FILE_ZIP      => 2;
 use constant FILE_COORD    => 3; # the "identification" coordinate
 use constant FILE_INDEX    => 4;
 use constant FILE_EXT      => 5; # the beginning of freely defined extension fields
-
-use constant FILE_ZIP_FMT_NORMAL => 4; # this is only valid for FMT_NORMAL
 
 $sep = '|';
 
@@ -69,7 +61,7 @@ sub new {
     my $self = {};
     if (!defined $file) {
 	foreach (@plzfile) {
-	    if (-r $_ && open(DATA, $_)) {
+	    if (-r $_ && open(my $DATA, $_)) {
 		$file = $_;
 		$self->{IsGzip} = 0;
 	    } elsif (-r "$_.gz") {
@@ -77,7 +69,7 @@ sub new {
 		    require File::Basename;
 		    my $dest = "/tmp/" . File::Basename::basename($_);
 		    system("gzip -dc $_ > $dest");
-		    if (open(DATA, $dest)) {
+		    if (open(my $DATA, $dest)) {
 			if ($?/256 == 0) {
 			    $file = $dest;
 			    $self->{WasGzip} = 1;
@@ -93,34 +85,10 @@ sub new {
 	    last if defined $file;
 	}
     } elsif (defined $file) {
-	open(DATA, $file) or return undef;
+	open(my $DATA, $file) or return undef;
     } else {
 	return undef;
     }
-
-    binmode DATA;
-    my($line) = <DATA>;
-    $line =~ s/[\015\012]//g;
-# Automatic detection of format. Caution: this means that the first line
-# in Berlin.coords.data must be complete i.e. having the coords field defined!
-    my(@l) = split(/\|/, $line, -1);
-    if (@l == 3) {
-	$self->{DataFmt}  = FMT_REDUCED;
-	$self->{FieldPLZ} = FILE_ZIP;
-    } elsif (@l == 4) {
-	$self->{DataFmt}  = FMT_COORDS;
-	$self->{FieldPLZ} = FILE_ZIP;
-    } elsif (@l == 5) {
-	$self->{DataFmt}  = FMT_COORDS_WITH_INDEX;
-	$self->{FieldPLZ} = FILE_ZIP;
-    } elsif (@l >= 6) {
-	$self->{DataFmt}  = FMT_EXT;
-	$self->{FieldPLZ} = FILE_ZIP;
-    } else {
-	$self->{DataFmt} = FMT_NORMAL;
-	$self->{FieldPLZ} = FILE_ZIP_FMT_NORMAL;
-    }
-    close DATA;
 
     $self->{File} = $file;
     $self->{Sep} = '|'; # XXX not yet used
@@ -134,37 +102,15 @@ sub load {
     my $file = $args{File} || $self->{File};
     if (do { local $^W = 0; $file ne $self->{Data} }) { # XXX häh???
 	my @data;
-	open(PLZ, $file)
+	open(my $PLZ, $file)
 	  or die "Die Datei $file kann nicht geöffnet werden: $!";
-	binmode PLZ;
-
-	my $code = <<'EOF';
-	while(<PLZ>) {
+	binmode $PLZ;
+	while(<$PLZ>) {
 	    chomp;
-	    my(@l) = split(/\|/, $_);
-EOF
-	my $push_code;
-	if ($self->{DataFmt} == FMT_REDUCED) {
-	    $push_code = q{push @data,
-			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP]]};
-	} elsif ($self->{DataFmt} == FMT_COORDS) {
-	    $push_code = q{push @data,
-			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD]]};
-	} elsif ($self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
-	    $push_code = q{push @data,
-			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX]]};
-	} elsif ($self->{DataFmt} == FMT_EXT) {
-	    $push_code = q{push @data,
-			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX, FILE_EXT..$#l]]};
-	} else {
-	    $push_code = q{push @data,
-			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP_FMT_NORMAL]]};
+	    my(@l) = split(/\|/, $_, -1);
+	    push @data, \@l;
 	}
-	$code .= $push_code . <<'EOF';
-	}
-EOF
-        eval $code;
-	close PLZ;
+	close $PLZ;
 	$self->{Data} = \@data;
 	$self->{File} = $file;
 	undef $self->{NameHash};
@@ -174,19 +120,10 @@ EOF
 
 sub make_plz_re {
     my($self, $plz) = @_;
-    if ($self->{DataFmt} == FMT_REDUCED ||
-	$self->{DataFmt} == FMT_COORDS ||
-	$self->{DataFmt} == FMT_COORDS_WITH_INDEX ||
-	$self->{DataFmt} == FMT_EXT) {
-	'^[^|]*|[^|]*|' . $plz;
-    } elsif ($self->{DataFmt} == FMT_NORMAL) {
-	'^[^|]*|[^|]*|[^|]*|[^|]*|' . $plz . '|';
-    } else {
-	die "Don't know how to handle make_plz_re for DataFmt '$self->{DataFmt}'";
-    }
+    '^[^|]*|[^|]*|' . $plz;
 }
 
-# indexes of return values
+# indexes of return values - identical like the FILE_... counterparts
 use constant LOOK_NAME     => 0;
 use constant LOOK_CITYPART => 1;
 use constant LOOK_ZIP      => 2;
@@ -225,19 +162,6 @@ sub look {
 
     #XXX use fgrep instead of grep? slightly faster, no quoting needed!
     my $grep_type = ($args{Agrep} ? 'agrep' : ($args{GrepType} || 'grep'));
-    my @push_inx;
-    my $push_everything;
-    if      ($self->{DataFmt} == FMT_NORMAL) {
-	@push_inx = (FILE_NAME, FILE_CITYPART, $self->{FieldPLZ});
-    } elsif ($self->{DataFmt} == FMT_REDUCED) {
-	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP);
-    } elsif ($self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
-	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX);
-    } elsif ($self->{DataFmt} == FMT_EXT) {
-	$push_everything = 1;
-    } else {
-	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD);
-    }
     if ($grep_type eq 'agrep') {
 	if ($OLD_AGREP ||
 	    (!$args{Noextern} && !is_in_path('agrep')) ||
@@ -269,7 +193,8 @@ sub look {
 
     my %res;
     my $push_sub = sub {
-	my(@to_push) = $push_everything ? split(/\|/, $_[FILE_NAME]) : (split(/\|/, $_[FILE_NAME]))[@push_inx];
+	my $line = shift;
+	my(@to_push) = split /\|/, $line, -1;
 	if (($args{MultiCitypart}||
 	     $to_push[FILE_CITYPART] eq "" ||
 	     !exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_CITYPART]}) &&
@@ -402,11 +327,6 @@ sub look {
 sub combine {
     my($self, @in) = @_;
     my %out;
-    my @copy_indexes = (LOOK_NAME, LOOK_COORD);
-    if ($self->{DataFmt} eq FMT_COORDS_WITH_INDEX) {
-	push @copy_indexes, LOOK_INDEX;
-    }
-    # XXX special handling for FMT_EXT needed?
  CHECK_IT:
     foreach my $s (@in) {
 	if (exists $out{$s->[LOOK_NAME]}) {
@@ -425,9 +345,13 @@ sub combine {
 	}
 	# does not exist or is a new citypart/zip combination
 	my $r = [];
-	$r->[$_] = $s->[$_] for (@copy_indexes);
 	$r->[LOOK_CITYPART] = [ $s->[LOOK_CITYPART] ];
 	$r->[LOOK_ZIP] = [ $s->[LOOK_ZIP ] ];
+	for my $index (0 .. $#$s) {
+	    if ($index != LOOK_CITYPART && $index != LOOK_ZIP) {
+		$r->[$index] = $s->[$index];
+	    }
+	}
 	push @{ $out{$s->[LOOK_NAME]} }, $r;
     }
     map { @$_ } values %out;
@@ -439,15 +363,14 @@ sub combine {
 #    ["Hauptstr.", "Friedenau, Schoeneberg", "10827,12159", $coord]
 sub combined_elem_to_string_form {
     my($self, $elem) = @_;
-    my @copy_indexes = (LOOK_NAME, LOOK_COORD);
-    if ($self->{DataFmt} eq FMT_COORDS_WITH_INDEX) {
-	push @copy_indexes, LOOK_INDEX;
-    }
-    # XXX special handling for FMT_EXT needed?
     my $r = [];
-    $r->[$_] = $elem->[$_] for (@copy_indexes);
     $r->[LOOK_CITYPART] = join(", ", @{$elem->[LOOK_CITYPART]});
     $r->[LOOK_ZIP]      = join(", ", @{$elem->[LOOK_ZIP]});
+    for my $index (0 .. $#$elem) {
+	if ($index != LOOK_CITYPART && $index != LOOK_ZIP) {
+	    $r->[$index] = $elem->[$index];
+	}
+    }
     $r;
 }
 
@@ -696,9 +619,6 @@ sub as_streets {
 
     my @data;
 
-    if ($self->{DataFmt} ne FMT_COORDS) {
-	die "Only PLZ format FMT_COORDS (".FMT_COORDS.") is supported, not " . $self->{DataFmt};
-    }
     CORE::open(F, $self->{File}) or die "Can't open $self->{File}: $!";
     binmode F;
     while(<F>) {

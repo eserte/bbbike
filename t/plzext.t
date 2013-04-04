@@ -30,7 +30,6 @@ EOF
 
     {
 	my $plz = PLZ->new($tmpfile);
-	is $plz->{DataFmt}, PLZ::FMT_EXT(), 'expected autodetected format';
 
 	{
 	    my($res) = $plz->look('Auerbacher Str.');
