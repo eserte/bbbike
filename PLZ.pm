@@ -29,6 +29,7 @@ use constant FMT_NORMAL            => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED           => 1; # ./data/Berlin.small.data (does not exist anymore)
 use constant FMT_COORDS            => 2; # ./data/Berlin.coords.data
 use constant FMT_COORDS_WITH_INDEX => 3; # PLZ::Multi with -addindex option
+use constant FMT_EXT		   => 4; # with freely defined extension fields
 
 # agrep says that 32 is the max length, but experiments show something else:
 use constant AGREP_LONGEST_RX => 29;
@@ -54,7 +55,7 @@ use constant FILE_CITYPART => 1;
 use constant FILE_ZIP      => 2; # this is not valid for FMT_NORMAL
 use constant FILE_COORD    => 3; # the "identification" coordinate
 use constant FILE_INDEX    => 4;
-use constant FILE_STRTYPE  => 5; # This is a placeholder, and not implemented now!
+use constant FILE_EXT      => 5; # the beginning of freely defined extension fields
 
 use constant FILE_ZIP_FMT_NORMAL => 4; # this is only valid for FMT_NORMAL
 
@@ -102,7 +103,7 @@ sub new {
     $line =~ s/[\015\012]//g;
 # Automatic detection of format. Caution: this means that the first line
 # in Berlin.coords.data must be complete i.e. having the coords field defined!
-    my(@l) = split(/\|/, $line);
+    my(@l) = split(/\|/, $line, -1);
     if (@l == 3) {
 	$self->{DataFmt}  = FMT_REDUCED;
 	$self->{FieldPLZ} = FILE_ZIP;
@@ -111,6 +112,9 @@ sub new {
 	$self->{FieldPLZ} = FILE_ZIP;
     } elsif (@l == 5) {
 	$self->{DataFmt}  = FMT_COORDS_WITH_INDEX;
+	$self->{FieldPLZ} = FILE_ZIP;
+    } elsif (@l >= 6) {
+	$self->{DataFmt}  = FMT_EXT;
 	$self->{FieldPLZ} = FILE_ZIP;
     } else {
 	$self->{DataFmt} = FMT_NORMAL;
@@ -149,6 +153,9 @@ EOF
 	} elsif ($self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
 	    $push_code = q{push @data,
 			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX]]};
+	} elsif ($self->{DataFmt} == FMT_EXT) {
+	    $push_code = q{push @data,
+			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX, FILE_EXT..$#l]]};
 	} else {
 	    $push_code = q{push @data,
 			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP_FMT_NORMAL]]};
@@ -169,10 +176,13 @@ sub make_plz_re {
     my($self, $plz) = @_;
     if ($self->{DataFmt} == FMT_REDUCED ||
 	$self->{DataFmt} == FMT_COORDS ||
-	$self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
+	$self->{DataFmt} == FMT_COORDS_WITH_INDEX ||
+	$self->{DataFmt} == FMT_EXT) {
 	'^[^|]*|[^|]*|' . $plz;
-    } else {
+    } elsif ($self->{DataFmt} == FMT_NORMAL) {
 	'^[^|]*|[^|]*|[^|]*|[^|]*|' . $plz . '|';
+    } else {
+	die "Don't know how to handle make_plz_re for DataFmt '$self->{DataFmt}'";
     }
 }
 
@@ -182,7 +192,7 @@ use constant LOOK_CITYPART => 1;
 use constant LOOK_ZIP      => 2;
 use constant LOOK_COORD    => 3;
 use constant LOOK_INDEX    => 4;
-use constant LOOK_STRTYPE  => 5; # This is a placeholder, and not implemented now!
+use constant LOOK_EXT      => 5;
 
 # XXX make gzip-aware
 # Argumente: (Beschreibung fehlt XXX)
@@ -216,12 +226,15 @@ sub look {
     #XXX use fgrep instead of grep? slightly faster, no quoting needed!
     my $grep_type = ($args{Agrep} ? 'agrep' : ($args{GrepType} || 'grep'));
     my @push_inx;
+    my $push_everything;
     if      ($self->{DataFmt} == FMT_NORMAL) {
 	@push_inx = (FILE_NAME, FILE_CITYPART, $self->{FieldPLZ});
     } elsif ($self->{DataFmt} == FMT_REDUCED) {
 	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP);
     } elsif ($self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
 	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX);
+    } elsif ($self->{DataFmt} == FMT_EXT) {
+	$push_everything = 1;
     } else {
 	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD);
     }
@@ -256,7 +269,7 @@ sub look {
 
     my %res;
     my $push_sub = sub {
-	my(@to_push) = (split(/\|/, $_[FILE_NAME]))[@push_inx];
+	my(@to_push) = $push_everything ? split(/\|/, $_[FILE_NAME]) : (split(/\|/, $_[FILE_NAME]))[@push_inx];
 	if (($args{MultiCitypart}||
 	     $to_push[FILE_CITYPART] eq "" ||
 	     !exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_CITYPART]}) &&
@@ -393,6 +406,7 @@ sub combine {
     if ($self->{DataFmt} eq FMT_COORDS_WITH_INDEX) {
 	push @copy_indexes, LOOK_INDEX;
     }
+    # XXX special handling for FMT_EXT needed?
  CHECK_IT:
     foreach my $s (@in) {
 	if (exists $out{$s->[LOOK_NAME]}) {
@@ -429,6 +443,7 @@ sub combined_elem_to_string_form {
     if ($self->{DataFmt} eq FMT_COORDS_WITH_INDEX) {
 	push @copy_indexes, LOOK_INDEX;
     }
+    # XXX special handling for FMT_EXT needed?
     my $r = [];
     $r->[$_] = $elem->[$_] for (@copy_indexes);
     $r->[LOOK_CITYPART] = join(", ", @{$elem->[LOOK_CITYPART]});
@@ -875,11 +890,44 @@ sub find_streets_in_text {
     \@res;
 }
 
+sub get_extfield {
+    my(undef, $look_result, $field_name) = @_;
+
+    if (defined $look_result->[LOOK_EXT]) {
+	for my $i (LOOK_EXT .. $#$look_result) {
+	    if ($look_result->[$i] =~ m{^\Q$field_name\E=(.*)$}) {
+		return $1;
+	    }
+	}
+    }
+    undef;
+}
+
+# Like get_extfield, but may return multiple values in a list
+sub get_extfields {
+    my(undef, $look_result, $field_name) = @_;
+
+    my @ret;
+
+    if (defined $look_result->[LOOK_EXT]) {
+	for my $i (LOOK_EXT .. $#$look_result) {
+	    if ($look_result->[$i] =~ m{^\Q$field_name\E=(.*)$}) {
+		push @ret, $1;
+	    }
+	}
+    }
+
+    @ret;
+}
+
 sub get_street_type {
     my($self, $look_result) = @_;
-    if (defined $look_result->[LOOK_STRTYPE]) { # This is not yet defined, but maybe some day?
-	$look_result->[LOOK_STRTYPE];
-    } else {
+
+    my $street_type = $self->get_extfield($look_result, 'strtype');
+    return $street_type if defined $street_type;
+    # else fall through and try the old heuristics
+
+    {
 	my $name = $look_result->[LOOK_NAME];
 	if      ($name =~ m{(^Kolonie\s
 			    |^KGA\s
@@ -902,13 +950,6 @@ sub get_street_type {
 	    return 'street';
 	}
     }
-}
-
-# This method may be removed or renamed one day!
-sub _populate_street_type {
-    my($self, $look_result) = @_;
-    my $type = $self->get_street_type($look_result);
-    $look_result->[LOOK_STRTYPE] = $type;
 }
 
 return 1 if caller();

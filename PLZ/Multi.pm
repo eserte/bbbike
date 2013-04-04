@@ -41,7 +41,7 @@ sub new {
     my($class, @files_and_args) = @_;
     local @ARGV = @files_and_args;
     my %args;
-    if (!GetOptions(\%args, "cache=i", "addindex=i", "preferfirst=i")) {
+    if (!GetOptions(\%args, "cache=i", "addindex=i", "preferfirst=i", "usefmtext!")) {
 	die "usage!";
     }
     my $preferfirst = $args{preferfirst};
@@ -131,7 +131,7 @@ sub new {
     if (!defined $combined) {
 	my($fh, $temp) = tempfile(UNLINK => 1);
 	#system("cat @in | sort -u > $temp"); # XXX what on non-Unix?
-	merge_and_sort(-src => \@in, -dest => $temp, -addindex => $args{addindex});
+	merge_and_sort(-src => \@in, -dest => $temp, -addindex => $args{addindex}, -usefmtext => !!$args{usefmtext});
 	close $fh; # needed for Windows
 	if ($args{cache}) {
 	    $combined = $cachefile;
@@ -150,6 +150,7 @@ sub merge_and_sort {
     my @in_files = @{ $args{-src} };
     my $out_file =    $args{-dest};
     my $addindex =    $args{-addindex};
+    my $usefmtext =   $args{-usefmtext};
     my @lines;
     {
 	my $in_file_i = -1;
@@ -158,7 +159,13 @@ sub merge_and_sort {
 	    open(IN, $in_file) or die "Can't open $in_file: $!";
 	    while (<IN>) {
 		if ($addindex) {
-		    s{$}{|$in_file_i};
+		    if ($usefmtext) {
+			my $seps = tr/|/|/;
+			my $add_seps = $seps < PLZ::FILE_EXT()+1 ? "|" x (PLZ::FILE_EXT()+1-$seps) : "";
+			s{$}{$add_seps|i=$in_file_i};
+		    } else {
+			s{$}{|$in_file_i};
+		    }
 		}
 		push @lines, $_;
 	    }
