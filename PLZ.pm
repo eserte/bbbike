@@ -331,35 +331,42 @@ sub look {
 # as an id.
 sub combine {
     my($self, @in) = @_;
+
+    my $use_objects = @in && UNIVERSAL::isa($in[0], 'PLZ::Result');
+
     my %out;
  CHECK_IT:
     foreach my $s (@in) {
-	if (exists $out{$s->[LOOK_NAME]}) {
-	    foreach my $r (@{ $out{$s->[LOOK_NAME]} }) {
-		my $eq_coord = $s->[LOOK_COORD] && $s->[LOOK_COORD] eq $r->[LOOK_COORD];
-		if ($eq_coord) {
-		    my $eq_cp = grep { $s->[LOOK_CITYPART] eq $_ } grep { $_ ne "" } @{ $r->[LOOK_CITYPART] };
-		    my $eq_zp = grep { $s->[LOOK_ZIP]      eq $_ } grep { $_ ne "" } @{ $r->[LOOK_ZIP] };
-		    push @{ $r->[LOOK_CITYPART] }, $s->[LOOK_CITYPART]
+	if (!$use_objects) {
+	    $s = make_result($self, $s);
+	}
+	my $name = $s->get_name;
+	if (exists $out{$name}) {
+	    foreach my $r (@{ $out{$name} }) {
+		my $s_coord = $s->get_coord;
+		if ($s_coord && $s_coord eq $r->get_coord) {
+		    my $eq_cp = grep { $s->get_citypart eq $_ } grep { $_ ne "" } @{ $r->get_citypart };
+		    my $eq_zp = grep { $s->get_zip      eq $_ } grep { $_ ne "" } @{ $r->get_zip };
+		    $r->push_citypart($s->get_citypart)
 			unless $eq_cp;
-		    push @{ $r->[LOOK_ZIP] }, $s->[LOOK_ZIP]
+		    $r->push_zip($s->get_zip)
 			unless $eq_zp;
 		    next CHECK_IT;
 		}
 	    }
 	}
 	# does not exist or is a new citypart/zip combination
-	my $r = [];
-	$r->[LOOK_CITYPART] = [ $s->[LOOK_CITYPART] ];
-	$r->[LOOK_ZIP] = [ $s->[LOOK_ZIP ] ];
-	for my $index (0 .. $#$s) {
-	    if ($index != LOOK_CITYPART && $index != LOOK_ZIP) {
-		$r->[$index] = $s->[$index];
-	    }
-	}
-	push @{ $out{$s->[LOOK_NAME]} }, $r;
+	my $r = $s->clone;
+	$r->set_citypart([ $s->get_citypart ]);
+	$r->set_zip     ([ $s->get_zip      ]);
+	push @{ $out{$name} }, $r;
     }
-    map { @$_ } values %out;
+
+    if (!$use_objects) {
+	map { $_->as_arrayref } map { @$_ } values %out;
+    } else {
+	map { @$_ } values %out;
+    }
 }
 
 # converts an array element from combine from
