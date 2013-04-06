@@ -28,10 +28,38 @@ sub new {
 	  }, $class;
 }
 
+sub clone {
+    my($self) = @_;
+    require Storable;
+    Storable::dclone($self);
+}
+
 sub get_name      { shift->{r}->[PLZ::FILE_NAME()]     }
 sub get_citypart  { shift->{r}->[PLZ::FILE_CITYPART()] }
 sub get_zip       { shift->{r}->[PLZ::FILE_ZIP()]      }
 sub get_coord     { shift->{r}->[PLZ::FILE_COORD()]    }
+
+sub set_name {
+    my($self, $val) = @_;
+    $self->{r}->[PLZ::FILE_NAME()] = $val;
+}
+sub set_citypart {
+    my($self, $val) = @_;
+    $self->{r}->[PLZ::FILE_CITYPART()] = $val;
+}
+sub set_zip {
+    my($self, $val) = @_;
+    $self->{r}->[PLZ::FILE_ZIP()] = $val;
+}
+
+sub push_citypart {
+    my($self, $val) = @_;
+    push @{ $self->{r}->[PLZ::FILE_CITYPART()] }, $val;
+}
+sub push_zip {
+    my($self, $val) = @_;
+    push @{ $self->{r}->[PLZ::FILE_ZIP()] }, $val;
+}
 
 sub get_field {
     my($self, $key) = @_;
@@ -46,6 +74,19 @@ sub add_field {
 sub get_street_type {
     my($self) = @_;
     $self->{plz}->get_street_type($self->{r});
+}
+
+sub combined_elem_to_string_form {
+    my($self) = @_;
+    my $r = $self->clone;
+    $r->set_citypart(join(", ", @{ $self->get_citypart }));
+    $r->set_zip     (join(", ", @{ $self->get_zip      }));
+    $r;
+}
+
+sub as_arrayref {
+    my($self) = @_;
+    [ @{ $self->{r} } ];
 }
 
 1;
