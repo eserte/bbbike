@@ -3408,16 +3408,7 @@ userdel	q4::inwork; 13474,8060 13444,7879
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019680',
-         'until' => 1365184800,
-         'text' => 'Hüttenweg (Grunewald): Brückenbauarbeiten, Vollsperrung bis Freitag, 20:00',
-         'from' => 1364875200,
-         'id' => 2418,
-         'data' => 'userdel	2::inwork -739,6838 -927,6888
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1367186399,
          'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2013 bis 28.4.2013 ',
