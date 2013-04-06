@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: replay_accesslog,v 1.4 2007/04/01 22:30:23 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,22 +13,28 @@
 #
 
 use strict;
-use File::ReadBackwards;
 use LWP::UserAgent;
-use Time::HiRes qw(gettimeofday tv_interval);
+use Time::HiRes qw(time);
 use Getopt::Long;
 use File::Basename qw(basename);
 
-my $use_modperl;
-GetOptions("modperl" => \$use_modperl)
-    or die "usage: $0 [-modperl]";
+my $host = "bbbike-pps";
+GetOptions("host=s" => \$host)
+    or die "usage: $0 [-host ...] logfile";
 
 my $ua = LWP::UserAgent->new;
 
-my $accesslog = "$ENV{HOME}/www/log/radzeit.de-access_log";
+my $accesslog = shift
+    or die "Please specify logfile";
 
-tie *BW, 'File::ReadBackwards', $accesslog
-    or die $!;
+if ($accesslog eq '-') {
+    open BW, $accesslog
+	or die "Can't open -: $!";
+} else {
+    require File::ReadBackwards;
+    tie *BW, 'File::ReadBackwards', $accesslog
+	or die $!;
+}
 while(<BW>) {
     my $logentry = parse_accesslog($_);
     next if $logentry->{file} !~ m{^/cgi-bin/bbbike.cgi};
@@ -38,14 +43,11 @@ while(<BW>) {
     next if $logentry->{rtype} ne 'GET';
     $ua->agent($logentry->{agent} . " (BBBike-Test/1.0 replay_accesslog)");
     print STDERR "$logentry->{duration}s " . substr($logentry->{file},0,70) ."...\n";
-    my $url = "http://radzeit$logentry->{file}";
-    if ($use_modperl) {
-	$url = "http://localhost/bbbike/cgi/" . basename($logentry->{file});
-    }
+    my $url = "http://$host$logentry->{file}";
 
-    my $t0 = [gettimeofday];
+    my $t0 = time;
     my $resp = $ua->get($url);
-    my $elapsed = tv_interval($t0);
+    my $elapsed = time - $t0;
     if ($resp->is_success) {
 	printf STDERR "  %.1fs OK\n", $elapsed;
     } else {
@@ -74,7 +76,11 @@ sub parse_accesslog {
 	    my @Split=split(/\"/,$R2);
 	    $Ref->{refer}=$Split[1];
 	    $Ref->{agent}=$Split[3];
-	    ($Ref->{duration})=$Split[4] =~ m{(\d+)};
+	    if ($Split[4] =~ m{(\d+)us}) {
+		$Ref->{duration} = $1/1_000_000;
+	    } else {
+		($Ref->{duration})=$Split[4] =~ m{(\d+)};
+	    }
 	}
     }
     return $Ref;
