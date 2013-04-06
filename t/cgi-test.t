@@ -39,13 +39,15 @@ use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 sub bbbike_cgi_search ($$);
 sub bbbike_en_cgi_search ($$);
 sub bbbike_cgi_geocode ($$);
+sub bbbike_en_cgi_geocode ($$);
+sub _bbbike_lang_cgi ($);
 
 check_cgi_testing;
 
 my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 #plan 'no_plan';
-plan tests => 81 + $json_xs_tests + $json_xs_2_tests;
+plan tests => 91 + $json_xs_tests + $json_xs_2_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -58,6 +60,30 @@ my $testcgi = "$cgidir/bbbike-test.cgi";
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
+
+{
+    my $resp = bbbike_cgi_geocode +{start => 'Total unbekannter Weg'}, 'Completely unknown street';
+    like_html($resp->decoded_content, qr{Total unbekannter Weg.*?ist nicht bekannt.*?Checkliste}s);
+}
+
+{
+    my $resp = bbbike_en_cgi_geocode +{start => 'Total unbekannter Weg'}, 'Completely unknown street';
+    like_html($resp->decoded_content, qr{Total unbekannter Weg.*?is unknown.*?Checklist}s);
+}
+
+{
+    my $resp = bbbike_cgi_geocode +{start => 'Unbekannter Weg'}, 'Unknown street';
+    my $content = $resp->decoded_content;
+    like_html($content, qr{Unbekannter Weg.*?ist nicht bekannt.*?Stra.*?eintragen}s);
+    like_html($content, qr{Die n.*?chste bekannte Kreuzung ist:.*?Dudenstr./Mehringdamm.*?und wird f.*?r die Suche verwendet}s);
+}
+
+{
+    my $resp = bbbike_en_cgi_geocode +{start => 'Unbekannter Weg'}, 'Unknown street';
+    my $content = $resp->decoded_content;
+    like_html($content, qr{Unbekannter Weg.*?is unknown.*?register this street}s);
+    like_html($content, qr{The next known crossing is:.*?Dudenstr./Mehringdamm.*?and will be used for route search}s);
+}
 
 {
     my $resp = bbbike_cgi_geocode +{start => 'Kottbusser Damm/Maybachstr.',
@@ -400,10 +426,7 @@ sub bbbike_en_cgi_search ($$) {
 
 sub _bbbike_cgi_search {
     my($cgiopts, $params, $testname) = @_;
-    my $testcgi = $testcgi;
-    if ($cgiopts->{lang}) {
-	$testcgi =~ s{\.cgi}{\.$cgiopts->{lang}\.cgi};
-    }
+    my $testcgi = _bbbike_lang_cgi $cgiopts;
     $params->{pref_seen} = 1;
     $params->{pref_speed} = 20 if !exists $params->{pref_speed};
     my $url = $testcgi . '?' . CGI->new($params)->query_string;
@@ -415,12 +438,30 @@ sub _bbbike_cgi_search {
 }
 
 sub bbbike_cgi_geocode ($$) {
-    my($params, $testname) = @_;
+    _bbbike_cgi_geocode({lang=>undef},@_);
+}
+
+sub bbbike_en_cgi_geocode ($$) {
+    _bbbike_cgi_geocode({lang=>'en'},@_);
+}
+
+sub _bbbike_cgi_geocode ($$) {
+    my($cgiopts, $params, $testname) = @_;
+    my $testcgi = _bbbike_lang_cgi $cgiopts;
     $params->{pref_seen} = 0;
     my $url = $testcgi . '?' . CGI->new($params)->query_string;
     my $resp = $ua->get($url);
     ok($resp->is_success, $testname);
     $resp;
+}
+
+sub _bbbike_lang_cgi ($) {
+    my $cgiopts = shift;
+    my $testcgi = $testcgi;
+    if ($cgiopts->{lang}) {
+	$testcgi =~ s{\.cgi}{\.$cgiopts->{lang}\.cgi};
+    }
+    $testcgi;
 }
 
 sub on_crossing_pref_page {
