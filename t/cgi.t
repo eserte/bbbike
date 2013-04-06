@@ -57,7 +57,6 @@ if (defined $ENV{BBBIKE_TEST_CGIURL}) {
 
 my $cpt = Safe->new;
 
-my $ortsuche = 0; # XXX funktioniert nicht mehr
 my $do_display = 0;
 my $do_xxx;
 my $do_accept_gzip = 1;
@@ -78,14 +77,13 @@ $ua->env_proxy;
 if (!GetOptions("cgiurl=s" => sub {
 		    @urls = $_[1];
 		},
-		"ortsuche!" => \$ortsuche,
 		"display!" => \$do_display,
 		"xxx" => \$do_xxx,
 		"v!" => \$v,
 		"skip-mapserver!" => \$skip{mapserver},
 		"accept-gzip!" => \$do_accept_gzip,
 	       )) {
-    die "usage: $0 [-cgiurl url] [-fast] [-ortsuche] [-display] [-v] [-skip-mapserver] [-noaccept-gzip] [-xxx]";
+    die "usage: $0 [-cgiurl url] [-fast] [-display] [-v] [-skip-mapserver] [-noaccept-gzip] [-xxx]";
 }
 
 if (!@urls) {
@@ -104,8 +102,7 @@ if (!@urls) {
     }
 }
 
-my $ortsuche_tests = 11;
-plan tests => (256 + $ortsuche_tests) * scalar @urls;
+plan tests => 255 * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -393,15 +390,7 @@ for my $cgiurl (@urls) {
 
     {
 	my $content = std_get "$action?start=duden&via=&ziel=guben", testname => "Guben vs. Gubener Str.";
-	if (!$ortsuche) {
-	    like_html $content, qr/Gubener Str./, "Gubener Str. found";
-	    pass "Pseudo test to keep no of tests";
-	} else {
-	    like_html $content, qr/Gubener Str.!Friedrichshain/, "Gubener Str. in Friedrichshain found"
-		or diag "Can't find Gubener Str.";
-	    like_html $content, qr/Guben!\#ort!/, "Guben as place/city found"
-		or diag "Can't find Guben";
-	}
+	like_html $content, qr/Gubener Str./, "Gubener Str. found";
     }
 
     {
@@ -517,39 +506,6 @@ for my $cgiurl (@urls) {
 	like_html $content, qr/B(?:ö|&ouml;|&#246;)lschestr.*Brachvogelstr.*(?:Ö|&Ouml;|&#214;)schelbronner(?:.|&#160;)Weg.*Pallasstr/s, "Correct sort order";
     }
     
- SKIP: {
-	skip("No ortsuche", $ortsuche_tests)
-	    if !$ortsuche;
-
-	{
-	    my $content = std_get "$action?startname=Dudenstr.&startplz=10965&via=&ziel2=Guben%21%23ort%21100909%2C-46980", testname => "Ortsuche";
-	    like_html $content, qr/Mehringdamm.*Platz.*Tempelhofer/, "Found crossing in Berlin";
-	    like_html $content, qr/Guben.*zielisort/, "Found city/place in Brandenburg";
-	}
-
-	{
-	    my $content = std_get "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielc=100909%2C-46980&zielname=Guben&zielisort=1", testname => "Dudenstr. -> Guben";
-	    if ($content =~ /L.*nge:.*(\d[\d.,]+).*km/) {
-		my $len = $1;
-		pass "It's possible to parse length";
-		cmp_ok $len, ">", 0, "Positive length";
-	    } else {
-		fail "Cannot parse length" for (1..2);
-		diag $content;
-	    }
-	    like_html $content, qr/angekommen/, "Angekommen!";
-	    like_html $content, qr/B97.*Guben/, "Route via B97";
-	}
-	{
-	    # See comment about coords= below.
-	    my $url = "$action?imagetype=gif&coords=9222%2C8787%219303%2C8781%219373%2C8728%219801%2C8683%2110193%2C8672%2110598%2C8563%2110858%2C8475%2111308%2C8317%2111416%2C8283%2111632%2C8302%2111892%2C8372%2112195%2C8436%2112349%2C8464%2112500%2C8504%2112598%2C8390%2112771%2C8439%2112925%2C8494%2113107%2C8350%2113279%2C8216%2113452%2C8076%2113916%2C7714%2113996%2C7654%2114164%2C7510%2114596%2C7261%2115043%2C6799%2115478%2C6343%2115719%2C6218%2115758%2C6204%2115869%2C6181%2116107%2C6076%2116510%2C5917%2116861%2C5935%2117662%2C5314%2117741%2C5424%2117884%2C5577%2117962%2C5498%2118016%2C5615%2118133%2C5553%2118236%2C5529%2118987%2C5301%2119210%2C5301%2119425%2C5254%2121332%2C4655%2121796%2C4517%2122093%2C4499%2122396%2C4464%2122686%2C4310%2122967%2C4144%2123368%2C3894%2124912%2C2978%2125011%2C2907%2125502%2C2454%2125609%2C2397%2125928%2C2305%2126720%2C2079%2127093%2C1959%2127603%2C1531%2127746%2C1413%2128106%2C1106%2128190%2C984%2128329%2C906%2128673%2C548%2128812%2C490%2129372%2C561%2129598%2C636%2130217%2C398%2130624%2C266%2130850%2C49%2131032%2C-52%2131111%2C-75%2131227%2C-38%2131354%2C-111%2131662%2C-502%2132214%2C-420%2132258%2C-867%2132898%2C-930%2133005%2C-1015%2133775%2C-1397%2134330%2C-1588%2134694%2C-1673%2135313%2C-1714%2135420%2C-1949%2135634%2C-2183%2136233%2C-2715%2136874%2C-2926%2137004%2C-3331%2136984%2C-3865%2137091%2C-4227%2137348%2C-4333%2137497%2C-4461%2137562%2C-4738%2137755%2C-4865%2139251%2C-5673%2139700%2C-5672%2139892%2C-5565%2140362%2C-6011%2141195%2C-6095%2141919%2C-5304%2142517%2C-5431%2142797%2C-6092%2142840%2C-6390%2143182%2C-6389%2143502%2C-6325%2143694%2C-6367%2144379%2C-7133%2144681%2C-8348%2144874%2C-8519%2144749%2C-9692%2144878%2C-10139%2144945%2C-11291%2145290%2C-12634%2145013%2C-12954%2145912%2C-13848%2147302%2C-14869%2147410%2C-15124%2147411%2C-15636%2147156%2C-15978%2147007%2C-16298%2147286%2C-16895%2148292%2C-17852%2149489%2C-18617%2149554%2C-18788%2150603%2C-19809%2151245%2C-20469%2152400%2C-21149%2152956%2C-21510%2153233%2C-21531%2153233%2C-21361%2153851%2C-21061%2154640%2C-20547%2156049%2C-20630%2157671%2C-20413%2158184%2C-20369%2158889%2C-20666%2159317%2C-21049%2159573%2C-21027%2159810%2C-21731%2160279%2C-21644%2161690%2C-22153%2163016%2C-23196%2165175%2C-24364%2165283%2C-24577%2165667%2C-24491%2166629%2C-24937%2168252%2C-25083%2168593%2C-24911%2168848%2C-24420%2169682%2C-24909%2169554%2C-25101%2169879%2C-26935%2169755%2C-28598%2169630%2C-29963%2169933%2C-31626%2170340%2C-32094%2169938%2C-33311%2170088%2C-33801%2170775%2C-35271%2171311%2C-36230%2171741%2C-37316%2172385%2C-38723%2173415%2C-40554%2173608%2C-41002%2173891%2C-42985%2173594%2C-44009%2173638%2C-44499%2173958%2C-44456%2175538%2C-44410%2176008%2C-44388%2176690%2C-44173%2176883%2C-44194%2177075%2C-44193%2177993%2C-44426%2178442%2C-44404%2179595%2C-44593%2179958%2C-44529%2180791%2C-44783%2187860%2C-45301%2189461%2C-45255%2189760%2C-45297%2190251%2C-45446%2190636%2C-45466%2191961%2C-46039%2192900%2C-46080%2192944%2C-46570%2193053%2C-47146%2193589%2C-48019%2193717%2C-48253%2196427%2C-47736%2198967%2C-47326%21100269%2C-47046%21100909%2C-46980&startname=Dudenstr.&zielname=Guben&windrichtung=S&windstaerke=5&geometry=400x300&draw=str&draw=title&draw=umland";
-	    my($content, $resp) = std_get $url, testname => "Map plot request";
-	    is $resp->header("content-type"), 'image/gif', "It's a GIF image";
-	    BBBikeTest::like_long_data($content, qr/^GIF8/, "It's really a GIF")
-		    or diag $url;
-	}
-    }
-
     for my $imagetype (
 		       "gif", "png", "jpeg",
 		       "svg", "mapserver",

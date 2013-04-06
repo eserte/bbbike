@@ -1437,11 +1437,6 @@ sub choose_form {
     undef $via   if $viac;
     undef $ziel  if $zielc;
 
-    # Namen und Koordinaten der Start...orte
-    # XXX This is currently broken, and probably I should remove it...
-    my($startoldort, $viaoldort, $zieloldort,
-       $startortc, $viaortc, $zielortc);
-
     # Leerzeichen am Anfang und Ende löschen
     # überflüssige Leerzeichen in der Mitte löschen
     if (defined $start) {
@@ -1454,20 +1449,16 @@ sub choose_form {
 	$ziel  =~ s/^\s+//; $ziel  =~ s/\s+$//; $ziel  =~ s/\s{2,}/ /g;
     }
 
-    foreach ([\$startname, \$start2, \$startoldort, \$startortc, 'start'],
-	     [\$vianame,   \$via2,   \$viaoldort,   \$viaortc,   'via'],
-	     [\$zielname,  \$ziel2,  \$zieloldort,  \$zielortc,  'ziel'],
+    foreach ([\$startname, \$start2, 'start'],
+	     [\$vianame,   \$via2,   'via'],
+	     [\$zielname,  \$ziel2,  'ziel'],
 	) {
-	my  (  $nameref,    $tworef,  $ortref,    $ortcref,   $type) = @$_;
+	my  (  $nameref,    $tworef,  $type) = @$_;
 	# Überprüfen, ob eine in PLZ vorhandene Straße auch in
 	# Strassen vorhanden ist und ggfs. $....name setzen
 	if ($$nameref eq '' && $$tworef ne '') {
 	    my(@s) = split(/$delim/o, $$tworef);
-	    if ($s[1] eq '#ort') {
-		my($ortname, $xy) = ($s[0], $s[2]);
-		$$ortref  = $ortname;
-		$$ortcref = $xy;
-	    } else {
+	    {
 		my($strasse, $bezirk, $plz) = @s;
 		warn "Wähle $type-Straße für $strasse/$bezirk (1st)\n" if $debug;
 		if ($bezirk =~ $outer_berlin_qr) {
@@ -1499,32 +1490,11 @@ sub choose_form {
 
     # Es ist alles vorhanden, keine Notwendigkeit für ein Formular.
   TRY: {
-	if (((defined $startname && $startname ne '') ||
-	     (defined $startoldort  && $startoldort ne '')) &&
-	    ((defined $zielname  && $zielname ne '') ||
-	     (defined $zieloldort   && $zieloldort ne ''))) {
+	if ((defined $startname && $startname ne '') &&
+	    (defined $zielname  && $zielname ne '')) {
 	    last TRY if (((defined $via2 && $via2 ne '') ||
 			  (defined $via  && $via  ne '' && $via ne 'NO')) &&
-			 ((!defined $vianame || $vianame eq '') &&
-			  (!defined $viaoldort  || $viaoldort eq '')));
-
-	    foreach ([\$startoldort, \$startortc, \$startname, 'start'],
-		     [\$viaoldort,   \$viaortc,   \$vianame,   'via'],
-		     [\$zieloldort,  \$zielortc,  \$zielname,  'ziel']) {
-		my $ortref  = $_->[0];
-		my $ortcref = $_->[1];
-		my $nameref = $_->[2];
-		my $type    = $_->[3];
-		if ((!defined $$ortref || $$ortref ne '') and
-		    defined $$ortcref) {
-		    new_kreuzungen(); # XXX needed in munich, here too?
-		    my($best) = get_nearest_crossing_coords(split(/,/, $$ortcref));
-		    $q->param($type . 'isort', 1);
-		    $q->param($type . 'c', $best);
-		    $q->param($type . 'name', $$ortref);
-		    $$nameref = $$ortref;
-		}
-	    }
+			 (!defined $vianame || $vianame eq ''));
 
 	    # Previously here was a jump to search_coord() if
 	    # startc+zielc was defined. Now get_kreuzung() is
@@ -1949,13 +1919,13 @@ EOF
     my $shown_unknown_street_helper = 0;
 
     foreach
-      ([\$startname, \$start, \$start2, \$startoldort, \@start_matches, 'start',
+      ([\$startname, \$start, \$start2, \@start_matches, 'start',
 	$start_bgcolor, \$startort],
-       [\$vianame,   \$via,   \$via2,   \$viaoldort,   \@via_matches,   'via',
+       [\$vianame,   \$via,   \$via2,   \@via_matches,   'via',
 	$via_bgcolor,   \$viaort],
-       [\$zielname,  \$ziel,  \$ziel2,  \$zieloldort,  \@ziel_matches,  'ziel',
+       [\$zielname,  \$ziel,  \$ziel2,  \@ziel_matches,  'ziel',
 	$ziel_bgcolor,  \$zielort]) {
-	my($nameref,  $oneref, $tworef,  $oldortref,    $matchref,       $type,
+	my($nameref,  $oneref, $tworef,  $matchref,       $type,
 	   $bgcolor,    $ortref) = @$_;
 	my $bgcolor_s = $bgcolor ne '' ? "bgcolor=$bgcolor" : '';
 	my $coord     = $q->param($type . "c");
@@ -2031,13 +2001,6 @@ EOF
 		print "</td>";
 	    }
 
-	} elsif (defined $$oldortref and $$oldortref ne '') {
-	    print "<td valign=middle>" if $bi->{'can_table'};
-	    print "$$oldortref\n";
-	    print "<input type=hidden name=" . $type . "2 value=\""
-		  . $$tworef . "\">\n";
-	    print "</td>" if $bi->{'can_table'};
-	    print "<input type=hidden name=" . $type . "isort value=1>\n";
 	} elsif ($$oneref ne '' && @$matchref == 0) {
 	    print "<td>" if $bi->{'can_table'};
 	    print "<i>$$oneref</i> ";
