@@ -18,9 +18,19 @@ use Time::HiRes qw(time);
 use Getopt::Long;
 use File::Basename qw(basename);
 
-my $host = "bbbike-pps";
-GetOptions("host=s" => \$host)
-    or die "usage: $0 [-host ...] logfile";
+my($host, $m_host);
+GetOptions(
+	   "host=s" => \$host,
+	   "mhost=s" => \$m_host,
+	  )
+    or die "usage: $0 [-host ...] [-mhost ...] logfile";
+
+if (!$host) {
+    $host = "bbbike-pps";
+}
+if (!$m_host) {
+    $m_host = "m.$host";
+}
 
 my $ua = LWP::UserAgent->new;
 
@@ -37,13 +47,14 @@ if ($accesslog eq '-') {
 }
 while(<BW>) {
     my $logentry = parse_accesslog($_);
-    next if $logentry->{file} !~ m{^/cgi-bin/bbbike.cgi};
+    next if $logentry->{file} !~ m{^/cgi-bin/bbbike2?(\.en)?\.cgi};
     next if $logentry->{file} =~ m{coordssession=\d};
     #next if $logentry->{code} !~ m{^2};
     next if $logentry->{rtype} ne 'GET';
     $ua->agent($logentry->{agent} . " (BBBike-Test/1.0 replay_accesslog)");
     print STDERR "$logentry->{duration}s " . substr($logentry->{file},0,70) ."...\n";
-    my $url = "http://$host$logentry->{file}";
+    my $use_host = $logentry->{host} =~ m{^m\.} ? $m_host : $host;
+    my $url = "http://$use_host$logentry->{file}";
 
     my $t0 = time;
     my $resp = $ua->get($url);
@@ -81,6 +92,7 @@ sub parse_accesslog {
 	    } else {
 		($Ref->{duration})=$Split[4] =~ m{(\d+)};
 	    }
+	    $Ref->{host} = $Split[5];
 	}
     }
     return $Ref;
