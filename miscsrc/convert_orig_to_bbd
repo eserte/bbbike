@@ -121,15 +121,19 @@ while(1) {
 	    }
 	}
 	if ($keep_old_name_epoch && $dir->{'oldname'}) {
-	    # use only the last oldname if there are multiple
-	    if ($dir->{'oldname'}->[-1] =~ m{-(\d{4,8}):\s+(.*)}) {
-		my($rename_date, $old_name) = ($1, $2);
-		my($y,$m,$d) = $rename_date =~ m{^(\d{4})(\d{2})?(\d{2})?};
-		$m = 1 if !defined $m;
-		$d = 1 if !defined $d;
-		my $rename_epoch = timelocal(0, 0, 0, $d, $m-1, $y);
-		if ($rename_epoch >= $keep_old_name_epoch) {
-		    $copied_dir{'oldname'} = [ $dir->{'oldname'}->[-1] ];
+	    if ($dir->{ignore_oldname_file} && $dir->{ignore_oldname_file}->[0] eq 'yes') {
+		# don't create oldname directive for this record
+	    } else {
+		# use only the last oldname if there are multiple
+		if ($dir->{'oldname'}->[-1] =~ m{-(\d{4,8}):\s+(.*)}) {
+		    my($rename_date, $old_name) = ($1, $2);
+		    my($y,$m,$d) = $rename_date =~ m{^(\d{4})(\d{2})?(\d{2})?};
+		    $m = 1 if !defined $m;
+		    $d = 1 if !defined $d;
+		    my $rename_epoch = timelocal(0, 0, 0, $d, $m-1, $y);
+		    if ($rename_epoch >= $keep_old_name_epoch) {
+			$copied_dir{'oldname'} = [ $dir->{'oldname'}->[-1] ];
+		    }
 		}
 	    }
 	}
