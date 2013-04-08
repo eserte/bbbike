@@ -173,8 +173,10 @@ sub compare_responses {
 	# normalize session ids (coordssession, oldcs, Session in json/xml/...)
 	$content =~ s{(name=coordssession value=)"[^"]+"}{$1""}g;
 	$content =~ s{(name="oldcs" value=)"[^"]+"}{$1""}g;
-	$content =~ s{("Session":)"[^"]+"}{$1""}g;
-	$content =~ s{(<Session>)[^<]+}{$1}g;
+	$content =~ s{("Session":)"[^"]+"}{$1""}g; # json
+	$content =~ s{(<Session>)[^<]+}{$1}g; # xml
+	$content =~ s{^(Session:) \S+$}{$1 ~}gm; # yaml
+	$content =~ s{('Session' => )'[^']+'}{$1''}g; # perldump
 	$content =~ s{(\?coordssession=)[0-9a-f_:]+}{$1}g; # leaflet link
 	# timestamp in "dummy" param
 	$content =~ s{(/cgi-bin/bbbike2?(\.en)?\.cgi\?dummy=)\d+}{$1DUMMY}g;
