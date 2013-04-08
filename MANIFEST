@@ -149,6 +149,7 @@ MasterStrassen.pm
 PLZ.pm
 PLZ/Levenshtein.pm
 PLZ/Multi.pm
+PLZ/Result.pm
 PointEdit.pm
 README
 README.english
@@ -287,6 +288,7 @@ data/mount
 data/multi_bez_str
 data/nolighting
 data/obst
+data/oldnames
 data/orte
 data/orte2
 data/orte_city
