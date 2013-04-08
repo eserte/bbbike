@@ -13,7 +13,7 @@
 
 package PLZ;
 
-use 5.005; # qr{}
+use 5.006; # autovivified fh
 
 use strict;
 # Setting $OLD_AGREP to a true value really means: use String::Approx
@@ -24,11 +24,6 @@ use BBBikeUtil;
 use Strassen::Strasse;
 
 $VERSION = 1.76;
-
-use constant FMT_NORMAL            => 0; # /usr/www/soc/plz/Berlin.data
-use constant FMT_REDUCED           => 1; # ./data/Berlin.small.data (does not exist anymore)
-use constant FMT_COORDS            => 2; # ./data/Berlin.coords.data
-use constant FMT_COORDS_WITH_INDEX => 3; # PLZ::Multi with -addindex option
 
 # agrep says that 32 is the max length, but experiments show something else:
 use constant AGREP_LONGEST_RX => 29;
@@ -51,12 +46,10 @@ $OLD_AGREP = 0 unless defined $OLD_AGREP;
 # indexes of file fields
 use constant FILE_NAME     => 0;
 use constant FILE_CITYPART => 1;
-use constant FILE_ZIP      => 2; # this is not valid for FMT_NORMAL
+use constant FILE_ZIP      => 2;
 use constant FILE_COORD    => 3; # the "identification" coordinate
 use constant FILE_INDEX    => 4;
-use constant FILE_STRTYPE  => 5; # This is a placeholder, and not implemented now!
-
-use constant FILE_ZIP_FMT_NORMAL => 4; # this is only valid for FMT_NORMAL
+use constant FILE_EXT      => 5; # the beginning of freely defined extension fields
 
 $sep = '|';
 
@@ -68,7 +61,7 @@ sub new {
     my $self = {};
     if (!defined $file) {
 	foreach (@plzfile) {
-	    if (-r $_ && open(DATA, $_)) {
+	    if (-r $_ && open(my $DATA, $_)) {
 		$file = $_;
 		$self->{IsGzip} = 0;
 	    } elsif (-r "$_.gz") {
@@ -76,7 +69,7 @@ sub new {
 		    require File::Basename;
 		    my $dest = "/tmp/" . File::Basename::basename($_);
 		    system("gzip -dc $_ > $dest");
-		    if (open(DATA, $dest)) {
+		    if (open(my $DATA, $dest)) {
 			if ($?/256 == 0) {
 			    $file = $dest;
 			    $self->{WasGzip} = 1;
@@ -92,31 +85,10 @@ sub new {
 	    last if defined $file;
 	}
     } elsif (defined $file) {
-	open(DATA, $file) or return undef;
+	open(my $DATA, $file) or return undef;
     } else {
 	return undef;
     }
-
-    binmode DATA;
-    my($line) = <DATA>;
-    $line =~ s/[\015\012]//g;
-# Automatic detection of format. Caution: this means that the first line
-# in Berlin.coords.data must be complete i.e. having the coords field defined!
-    my(@l) = split(/\|/, $line);
-    if (@l == 3) {
-	$self->{DataFmt}  = FMT_REDUCED;
-	$self->{FieldPLZ} = FILE_ZIP;
-    } elsif (@l == 4) {
-	$self->{DataFmt}  = FMT_COORDS;
-	$self->{FieldPLZ} = FILE_ZIP;
-    } elsif (@l == 5) {
-	$self->{DataFmt}  = FMT_COORDS_WITH_INDEX;
-	$self->{FieldPLZ} = FILE_ZIP;
-    } else {
-	$self->{DataFmt} = FMT_NORMAL;
-	$self->{FieldPLZ} = FILE_ZIP_FMT_NORMAL;
-    }
-    close DATA;
 
     $self->{File} = $file;
     $self->{Sep} = '|'; # XXX not yet used
@@ -130,34 +102,15 @@ sub load {
     my $file = $args{File} || $self->{File};
     if (do { local $^W = 0; $file ne $self->{Data} }) { # XXX häh???
 	my @data;
-	open(PLZ, $file)
+	open(my $PLZ, $file)
 	  or die "Die Datei $file kann nicht geöffnet werden: $!";
-	binmode PLZ;
-
-	my $code = <<'EOF';
-	while(<PLZ>) {
+	binmode $PLZ;
+	while(<$PLZ>) {
 	    chomp;
-	    my(@l) = split(/\|/, $_);
-EOF
-	my $push_code;
-	if ($self->{DataFmt} == FMT_REDUCED) {
-	    $push_code = q{push @data,
-			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP]]};
-	} elsif ($self->{DataFmt} == FMT_COORDS) {
-	    $push_code = q{push @data,
-			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD]]};
-	} elsif ($self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
-	    $push_code = q{push @data,
-			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX]]};
-	} else {
-	    $push_code = q{push @data,
-			   [@l[FILE_NAME, FILE_CITYPART, FILE_ZIP_FMT_NORMAL]]};
+	    my(@l) = split(/\|/, $_, -1);
+	    push @data, \@l;
 	}
-	$code .= $push_code . <<'EOF';
-	}
-EOF
-        eval $code;
-	close PLZ;
+	close $PLZ;
 	$self->{Data} = \@data;
 	$self->{File} = $file;
 	undef $self->{NameHash};
@@ -167,22 +120,16 @@ EOF
 
 sub make_plz_re {
     my($self, $plz) = @_;
-    if ($self->{DataFmt} == FMT_REDUCED ||
-	$self->{DataFmt} == FMT_COORDS ||
-	$self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
-	'^[^|]*|[^|]*|' . $plz;
-    } else {
-	'^[^|]*|[^|]*|[^|]*|[^|]*|' . $plz . '|';
-    }
+    '^[^|]*|[^|]*|' . $plz;
 }
 
-# indexes of return values
+# indexes of return values - identical like the FILE_... counterparts
 use constant LOOK_NAME     => 0;
 use constant LOOK_CITYPART => 1;
 use constant LOOK_ZIP      => 2;
 use constant LOOK_COORD    => 3;
 use constant LOOK_INDEX    => 4;
-use constant LOOK_STRTYPE  => 5; # This is a placeholder, and not implemented now!
+use constant LOOK_EXT      => 5;
 
 # XXX make gzip-aware
 # Argumente: (Beschreibung fehlt XXX)
@@ -195,6 +142,7 @@ use constant LOOK_STRTYPE  => 5; # This is a placeholder, and not implemented no
 #  MultiZIP
 # Ausgabe: Array von Referenzen [strasse, bezirk, plz, "x,y-Koordinate"]
 #  Je nach Format der Quelldatei ($self->{DataFmt}) fehlt die x,y-Koordinate
+# If using AsObjects=>1, then an array of PLZ::Result objects is returned instead.
 sub look {
     my($self, $str, %args) = @_;
 
@@ -215,16 +163,6 @@ sub look {
 
     #XXX use fgrep instead of grep? slightly faster, no quoting needed!
     my $grep_type = ($args{Agrep} ? 'agrep' : ($args{GrepType} || 'grep'));
-    my @push_inx;
-    if      ($self->{DataFmt} == FMT_NORMAL) {
-	@push_inx = (FILE_NAME, FILE_CITYPART, $self->{FieldPLZ});
-    } elsif ($self->{DataFmt} == FMT_REDUCED) {
-	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP);
-    } elsif ($self->{DataFmt} == FMT_COORDS_WITH_INDEX) {
-	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD, FILE_INDEX);
-    } else {
-	@push_inx = (FILE_NAME, FILE_CITYPART, FILE_ZIP, FILE_COORD);
-    }
     if ($grep_type eq 'agrep') {
 	if ($OLD_AGREP ||
 	    (!$args{Noextern} && !is_in_path('agrep')) ||
@@ -256,7 +194,8 @@ sub look {
 
     my %res;
     my $push_sub = sub {
-	my(@to_push) = (split(/\|/, $_[FILE_NAME]))[@push_inx];
+	my $line = shift;
+	my(@to_push) = split /\|/, $line, -1;
 	if (($args{MultiCitypart}||
 	     $to_push[FILE_CITYPART] eq "" ||
 	     !exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_CITYPART]}) &&
@@ -373,7 +312,11 @@ sub look {
 	}
     }
 
-    @res;
+    if ($args{AsObjects}) {
+	map { $self->make_result($_) } @res;
+    } else {
+	@res;
+    }
 }
 
 # Argument: an array of references (the output of look())
@@ -388,35 +331,42 @@ sub look {
 # as an id.
 sub combine {
     my($self, @in) = @_;
+
+    my $use_objects = @in && UNIVERSAL::isa($in[0], 'PLZ::Result');
+
     my %out;
-    my @copy_indexes = (LOOK_NAME, LOOK_COORD);
-    if ($self->{DataFmt} eq FMT_COORDS_WITH_INDEX) {
-	push @copy_indexes, LOOK_INDEX;
-    }
  CHECK_IT:
     foreach my $s (@in) {
-	if (exists $out{$s->[LOOK_NAME]}) {
-	    foreach my $r (@{ $out{$s->[LOOK_NAME]} }) {
-		my $eq_coord = $s->[LOOK_COORD] && $s->[LOOK_COORD] eq $r->[LOOK_COORD];
-		if ($eq_coord) {
-		    my $eq_cp = grep { $s->[LOOK_CITYPART] eq $_ } grep { $_ ne "" } @{ $r->[LOOK_CITYPART] };
-		    my $eq_zp = grep { $s->[LOOK_ZIP]      eq $_ } grep { $_ ne "" } @{ $r->[LOOK_ZIP] };
-		    push @{ $r->[LOOK_CITYPART] }, $s->[LOOK_CITYPART]
+	if (!$use_objects) {
+	    $s = make_result($self, $s);
+	}
+	my $name = $s->get_name;
+	if (exists $out{$name}) {
+	    foreach my $r (@{ $out{$name} }) {
+		my $s_coord = $s->get_coord;
+		if ($s_coord && $s_coord eq $r->get_coord) {
+		    my $eq_cp = grep { $s->get_citypart eq $_ } grep { $_ ne "" } @{ $r->get_citypart };
+		    my $eq_zp = grep { $s->get_zip      eq $_ } grep { $_ ne "" } @{ $r->get_zip };
+		    $r->push_citypart($s->get_citypart)
 			unless $eq_cp;
-		    push @{ $r->[LOOK_ZIP] }, $s->[LOOK_ZIP]
+		    $r->push_zip($s->get_zip)
 			unless $eq_zp;
 		    next CHECK_IT;
 		}
 	    }
 	}
 	# does not exist or is a new citypart/zip combination
-	my $r = [];
-	$r->[$_] = $s->[$_] for (@copy_indexes);
-	$r->[LOOK_CITYPART] = [ $s->[LOOK_CITYPART] ];
-	$r->[LOOK_ZIP] = [ $s->[LOOK_ZIP ] ];
-	push @{ $out{$s->[LOOK_NAME]} }, $r;
+	my $r = $s->clone;
+	$r->set_citypart([ $s->get_citypart ]);
+	$r->set_zip     ([ $s->get_zip      ]);
+	push @{ $out{$name} }, $r;
     }
-    map { @$_ } values %out;
+
+    if (!$use_objects) {
+	map { $_->as_arrayref } map { @$_ } values %out;
+    } else {
+	map { @$_ } values %out;
+    }
 }
 
 # converts an array element from combine from
@@ -425,14 +375,14 @@ sub combine {
 #    ["Hauptstr.", "Friedenau, Schoeneberg", "10827,12159", $coord]
 sub combined_elem_to_string_form {
     my($self, $elem) = @_;
-    my @copy_indexes = (LOOK_NAME, LOOK_COORD);
-    if ($self->{DataFmt} eq FMT_COORDS_WITH_INDEX) {
-	push @copy_indexes, LOOK_INDEX;
-    }
     my $r = [];
-    $r->[$_] = $elem->[$_] for (@copy_indexes);
     $r->[LOOK_CITYPART] = join(", ", @{$elem->[LOOK_CITYPART]});
     $r->[LOOK_ZIP]      = join(", ", @{$elem->[LOOK_ZIP]});
+    for my $index (0 .. $#$elem) {
+	if ($index != LOOK_CITYPART && $index != LOOK_ZIP) {
+	    $r->[$index] = $elem->[$index];
+	}
+    }
     $r;
 }
 
@@ -635,12 +585,13 @@ sub look_loop_best {
 	my $str_rx = qr{(?i:^\Q$str\E)};
 	for(my $i=0; $i<=$#$matchref; $i++) {
 	    my $item = $matchref->[$i];
-	    if ($item->[LOOK_NAME] eq $str) {
+	    my $name = UNIVERSAL::isa($item, 'PLZ::Result') ? $item->get_name : $item->[LOOK_NAME];
+	    if ($name eq $str) {
 		push @rating, [ 100, $item ];
-	    } elsif ($item->[LOOK_NAME] =~ $str_rx) {
-		push @rating, [ 40 + 40-length($item->[LOOK_NAME]), $item ];
+	    } elsif ($name =~ $str_rx) {
+		push @rating, [ 40 + 40-length($name), $item ];
 	    } else {
-		push @rating, [ 40-length($item->[LOOK_NAME]), $item ];
+		push @rating, [ 40-length($name), $item ];
 	    }
 	}
 	$matchref = [map  { $_->[1] } sort { $b->[0] <=> $a->[0] } @rating];
@@ -681,9 +632,6 @@ sub as_streets {
 
     my @data;
 
-    if ($self->{DataFmt} ne FMT_COORDS) {
-	die "Only PLZ format FMT_COORDS (".FMT_COORDS.") is supported, not " . $self->{DataFmt};
-    }
     CORE::open(F, $self->{File}) or die "Can't open $self->{File}: $!";
     binmode F;
     while(<F>) {
@@ -875,11 +823,44 @@ sub find_streets_in_text {
     \@res;
 }
 
+sub get_extfield {
+    my(undef, $look_result, $field_name) = @_;
+
+    if (defined $look_result->[LOOK_EXT]) {
+	for my $i (LOOK_EXT .. $#$look_result) {
+	    if ($look_result->[$i] =~ m{^\Q$field_name\E=(.*)$}) {
+		return $1;
+	    }
+	}
+    }
+    undef;
+}
+
+# Like get_extfield, but may return multiple values in a list
+sub get_extfields {
+    my(undef, $look_result, $field_name) = @_;
+
+    my @ret;
+
+    if (defined $look_result->[LOOK_EXT]) {
+	for my $i (LOOK_EXT .. $#$look_result) {
+	    if ($look_result->[$i] =~ m{^\Q$field_name\E=(.*)$}) {
+		push @ret, $1;
+	    }
+	}
+    }
+
+    @ret;
+}
+
 sub get_street_type {
     my($self, $look_result) = @_;
-    if (defined $look_result->[LOOK_STRTYPE]) { # This is not yet defined, but maybe some day?
-	$look_result->[LOOK_STRTYPE];
-    } else {
+
+    my $street_type = $self->get_extfield($look_result, 'strtype');
+    return $street_type if defined $street_type;
+    # else fall through and try the old heuristics
+
+    {
 	my $name = $look_result->[LOOK_NAME];
 	if      ($name =~ m{(^Kolonie\s
 			    |^KGA\s
@@ -904,11 +885,10 @@ sub get_street_type {
     }
 }
 
-# This method may be removed or renamed one day!
-sub _populate_street_type {
-    my($self, $look_result) = @_;
-    my $type = $self->get_street_type($look_result);
-    $look_result->[LOOK_STRTYPE] = $type;
+sub make_result {
+    my($self, $res) = @_;
+    require PLZ::Result;
+    PLZ::Result->new($self, $res);
 }
 
 return 1 if caller();

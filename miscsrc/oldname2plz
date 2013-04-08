@@ -1,0 +1,70 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib (
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+
+use Getopt::Long;
+
+use Strassen::Core ();
+use Strassen::Strasse ();
+use PLZ ();
+
+my $data_dir = "$FindBin::RealBin/../data";
+GetOptions(
+	   "datadir=s" => \$data_dir
+	  )
+    or die "usage?";
+
+my $plz_file = "$data_dir/Berlin.coords.data";
+my $plz = PLZ->new($plz_file);
+
+my $bbd_file = "$data_dir/strassen";
+my $s = Strassen->new_stream($bbd_file);
+my @errors;
+my @plz_lines;
+$s->read_stream
+    (sub {
+	 my($r, $dir, $line) = @_;
+	 if ($dir->{oldname}) {
+	     my $oldname_dir = $dir->{oldname}[0];
+	     my($timespan, $oldname) = split /:\s+/, $oldname_dir, 2;
+	     if (!$oldname) {
+		 push @errors, "Cannot parse 'oldname' directive '$oldname_dir' in line $line";
+		 return;
+	     }
+	     my($newname, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME()]);
+	     my @res = $plz->look($newname, (@cityparts ? (Citypart => \@cityparts) : ()));
+	     if (!@res) {
+		 push @errors, "Cannot find new name '" . $r->[Strassen::NAME()] . "' in PLZ file $plz_file";
+		 return;
+	     }
+	     for my $res (@res) {
+		 push @plz_lines, "$oldname|$res->[PLZ::LOOK_CITYPART()]|$res->[PLZ::LOOK_ZIP()]|$res->[PLZ::LOOK_COORD()]||type=oldname|ref=$r->[Strassen::NAME()]|timespan=$timespan";
+	     }
+	 }
+     });
+
+if (@errors) {
+    die "Following errors were found:\n" . join("\n", @errors) . "\n";
+}
+
+@plz_lines = sort @plz_lines;
+print join("\n", @plz_lines), "\n";
+
+__END__
