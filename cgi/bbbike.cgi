@@ -1961,11 +1961,6 @@ EOF
 
 	if ($bi->{'can_table'}) {
 	    print qq{<tr id=${type}tr $bgcolor_s><td align=center valign=middle width=40><a name="$type"><img } . (!$bi->{'css_buggy'} ? qq{style="padding-bottom:8px;" } : "") . qq{src="$imagetype" border=0 alt="} . M($printtype) . qq{"></a></td>};
-	    my $color = {'start' => '#e0e0e0',
-			 'via'   => '#c0c0c0',
-			 'ziel'  => '#a0a0a0',
-			}->{$type};
-#XXX not yet:	    print "<td bgcolor=\"$color\">" . blind_image(1,1) . "</td>";
 	} else {
 	    print "<a name=\"$type\"><b>" . M($printtype) . "</b></a>: ";
 	}
