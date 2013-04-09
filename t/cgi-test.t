@@ -47,7 +47,7 @@ check_cgi_testing;
 my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 #plan 'no_plan';
-plan tests => 91 + $json_xs_tests + $json_xs_2_tests;
+plan tests => 94 + $json_xs_tests + $json_xs_2_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -122,6 +122,17 @@ $ua->env_proxy;
 				   }, 'Find normal street';
     not_on_crossing_pref_page($resp);
 }
+
+{
+    # "inofficial" streets not found in Berlin.coords.data
+    my $resp = bbbike_cgi_geocode +{start => 'Alt-Treptow',
+				    ziel => 'Rosengarten',
+				   }, 'Inofficial street';
+    on_crossing_pref_page($resp);
+    my $content = $resp->decoded_content;
+    like $content, qr{\Q(Rosengarten}, 'Found Rosengarten with parenthesis';
+}
+
 
 SKIP: {
     skip "need JSON::XS", $json_xs_tests
