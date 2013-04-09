@@ -47,7 +47,7 @@ check_cgi_testing;
 my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 #plan 'no_plan';
-plan tests => 94 + $json_xs_tests + $json_xs_2_tests;
+plan tests => 103 + $json_xs_tests + $json_xs_2_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -131,6 +131,36 @@ $ua->env_proxy;
     on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
     like $content, qr{\Q(Rosengarten}, 'Found Rosengarten with parenthesis';
+}
+
+{
+    # oldname, not unique
+    my $resp = bbbike_cgi_geocode +{start => 'Kochstr.',
+				    ziel => 'Dudenstr.',
+				   }, 'oldname';
+    not_on_crossing_pref_page($resp);
+    my $content = $resp->decoded_content;
+    like $content, qr{Rudi-Dutschke-Str.*alter Name.*Kochstr}, 'Found old name note';
+}
+
+{
+    # oldname, not unique, English
+    my $resp = bbbike_en_cgi_geocode +{start => 'Kochstr.',
+				       ziel => 'Dudenstr.',
+				   }, 'oldname (English)';
+    not_on_crossing_pref_page($resp);
+    my $content = $resp->decoded_content;
+    like $content, qr{Rudi-Dutschke-Str.*old name.*Kochstr}, 'Found old name note (English)';
+}
+
+{
+    # oldname, unique -> directly to crossing page
+    my $resp = bbbike_cgi_geocode +{start => 'Belle-Alliance-Straße',
+				    ziel => 'Dudenstr.',
+				   }, 'oldname (unique)';
+    on_crossing_pref_page($resp);
+    my $content = $resp->decoded_content;
+    like $content, qr{Mehringdamm.*alter Name.*Belle-Alliance-Str.}, 'Found old name note';
 }
 
 
