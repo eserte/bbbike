@@ -1558,7 +1558,7 @@ Wilhelmstr.: Mittelstreifen	3nocross -3824,13350 -3813,13404 -3803,13464
 Heerstr.: Mittelstreifen	3nocross -4882,12061 -4637,11982 -4500,11937
 #: by: ^^^
 Spandauer Str.: Straßenbahntrasse	3nocross 10431,12709 10387,12760 10360,12793
-Invalidenstr.: Mittelstreifen	3nocross 7814,13284 7840,13296 7880,13315
+Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7821,12934 7776,12943 7595,12980
 Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
@@ -2300,8 +2300,8 @@ Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,1312
 #: next_check: 2013-03-16
 Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; evtl. wird danach die Wegsituation komplett anders aussehen	2:inwork 19456,7956 19549,7826
 # 
-#: last_checked: 2013-02-02
-#: next_check: 2013-04-01
+#: last_checked: 2013-04-09
+#: next_check: 2013-06-09
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 # 
 #: last_checked: 2013-04-02
@@ -2361,12 +2361,12 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: XXX wo gibt es Informationen hierzu?
 #: by: Kai Wagner (permanente Sperrung)
 #: confirmed_by: srt
-#: last_checked: 2013-02-20
-#: next_check: 2013-05-20
+#: last_checked: 2013-04-09
+#: check_frequency: 100d
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
-#: last_checked: 2013-02-20
-#: next_check: 2013-05-20
+#: last_checked: 2013-04-09
+#: check_frequency: 100d
 #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12616
 # 
@@ -2424,8 +2424,8 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 # REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5062,6295 4997,6331 4971,6345
 # 
-#: last_checked: 2012-08-31
-#: next_check: 2013-01-15
+#: last_checked: 2013-04-09
+#: next_check: 2013-12-31
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # 
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4106.html --- #: next_check: 2011-09-01 --- Ella-Trebe-Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 7937,13109 7941,13014 7948,12918

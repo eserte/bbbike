@@ -1674,7 +1674,6 @@ Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 7077,1607
 Amsterdamer Str. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6802,15790
 Straßenbahntrasse	3nocross::ignrte 14597,15970 14609,15921 14650,15750
 Orankeweg -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14720,15905 14609,15921 14650,15750
-Indira-Gandhi-Str. -> Orankeweg: Straßenbahntrasse	3::igndisp 14597,15970 14609,15921 14720,15905
 Straßenbahntrasse	3nocross::ignrte 14550,16161 14522,16260 14499,16341
 Gartenstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14628,16249 14522,16260 14550,16161
 Indira-Gandhi-Str. -> Gartenstr.: Straßenbahntrasse	3::igndisp 14499,16341 14522,16260 14628,16249
@@ -1931,9 +1930,9 @@ Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4882,
 Straßenbahntrasse	3nocross::ignrte 10431,12709 10387,12760 10360,12793
 Spreegasse -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10309,12700 10387,12760 10360,12793
 Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10431,12709 10387,12760 10309,12700
-Mittelstreifen	3nocross::ignrte 7814,13284 7840,13296 7880,13315
-Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7814,13284 7840,13296 7822,13323
-Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7840,13296 7880,13315
+Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7880,13315
+Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292 7880,13315
+Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13276 7842,13292 7822,13323
 Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross::ignrte 7821,12934 7776,12943 7595,12980
 Ingeborg-Drewitz-Allee -> Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7620,12757 7776,12943 7595,12980
 Alt-Moabit -> Ingeborg-Drewitz-Allee: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7821,12934 7776,12943 7620,12757

@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-04-08 vvv
+#: last_checked: 2013-04-09 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -70,12 +70,13 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 
 #: last_checked: 2013-03-16
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9580,12581 9601,12380
 # 
+#: last_checked: 2013-04-09
 #: next_check: 2014-01-01
 #: source_id: INKO_093369
 #: note: ab Glinkastr. nur ungef‰hr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
-#: last_checked: 2013-04-03 vvv
+#: last_checked: 2013-04-09 vvv
 Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
 Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
 #: last_checked ^^^
@@ -88,7 +89,7 @@ Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::in
 #: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2013-02-23 vvv
+#: last_checked: 2013-04-09 vvv
 #: next_check: 2013-12-31 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -107,9 +108,9 @@ Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: next_check: 2013-04-20
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
-#: last_checked: 2013-02-20
-#: XXX wahrscheinlich auch in den anderen Straﬂen des Blocks Einbahnstraﬂenregelungen
-Ella-Trebe-Str./Berta-Benz-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022
+#: last_checked: 2013-04-09
+#: check_frequency: 60d
+Ella-Trebe-Str./Berta-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022 7867,13106 7937,13109
 # 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
@@ -846,7 +847,7 @@ Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
 #: XXX_prog: f¸r Anh‰nger q2
 Orankeweg: einige Bodenschwellen, ohne Anh‰nger leicht umfahrbar	q0 14934,15860 15313,15858 15395,15852 15453,15848
 (Gounodstr. - Otto-Brahm-Str.): abschnittsweise eng und kurvig	q1 14435,15904 14451,15873 14383,15848 14349,15825 14365,15778
-Gounodstr.: Fuﬂg‰nger	q1 14259,15816 14272,15837 14366,15877
+Gounodstr.: Fuﬂg‰nger	q1 14239,15810 14251,15828 14366,15877
 Seidenberger Str.: Bordstein, Gel‰nder	q3 12379,16998 12373,17007
 Mulackstr.: enge Straﬂe	q1 10640,13471 10535,13509 10406,13543 10308,13575
 R¸ckerstr.: enge Straﬂe	q1 10597,13647 10535,13509
@@ -1403,7 +1404,7 @@ Henrionweg: eng	q3 11154,21760 11145,21698
 (Weg zum Hohenschˆnhauser Tor): Fuﬂg‰nger	q1 15367,14512 15221,14550
 (Hohenschˆnhauser Tor): Fuﬂg‰nger (Einkaufszentrum)	q4 15221,14550 15058,14575
 (Anlieferung Hohenschˆnhauser Tor): Lieferverkehr, Fuﬂg‰nger	q1 15110,14486 15221,14550 15174,14638
-(Weg durch den Geschichtspark): Fuﬂg‰nger	q1 7840,13296 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7651,13447
+(Weg durch den Geschichtspark): Fuﬂg‰nger	q1 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7651,13447
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Fuﬂg‰nger, eng, kurvig	q4 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910 7788,12907 7787,12918
 (Wickeder Str. - Seidelstr./Holzhauser Str.): eng, Fuﬂg‰nger	q3 2713,18851 2720,18836 2768,18825 2794,18836 2821,18831
 Alt-Tegel: Fuﬂg‰nger	q3 1529,20131 1462,20133 1397,20125
@@ -1439,9 +1440,10 @@ Schneefinkweg: enger Pfad	q3 12675,19974 12651,19928 12622,19874
 Tigerfinkweg: Bordstein	q3 12963,19971 12952,19947
 #: XXX_prog: BS
 (Weg im Acker-Park): Radfahren verboten, Bordstein an der Bergstr.	q4 9873,13872 9816,13857 9810,13866 9741,13850
-Park am Nordbahnhof: Fuﬂg‰nger	q1 9224,14169 9147,14151 9176,14181 9169,14189 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
+Park am Nordbahnhof: Fuﬂg‰nger	q1 9224,14169 9147,14151 9181,14186 9175,14193 9119,14255 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
 Park am Nordbahnhof: Fuﬂg‰nger	q1 8913,14485 8868,14442 8825,14401
-Park am Nordbahnhof: Fuﬂg‰nger	q1 9169,14189 9144,14169 8868,14442
+Park am Nordbahnhof: Fuﬂg‰nger	q1 9175,14193 9144,14169 9081,14232 8868,14442
+Park am Nordbahnhof: Fuﬂg‰nger	q1 9119,14255 9081,14232 8992,14176
 (an der Panke - Mauerweg): einige Fuﬂg‰nger	q1+ 7878,14514 7889,14519 7943,14453 7989,14478 8050,14558 8103,14582 8232,14689
 #: XXX_prog: BS
 Bordstein	q3 -2452,17408 -2451,17421
