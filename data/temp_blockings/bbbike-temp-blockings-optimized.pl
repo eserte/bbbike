@@ -2279,7 +2279,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Breslauer Platz: Wochenmarkt Mittwoch 8-13 Uhr, Donnerstag 12-17 Uhr, Samstag 8-14 Uhr, Behinderungen möglich',
          'from' => undef,
          'id' => 1884,
-         'data' => '	q4::temp:clock 5902,7334 5810,7337 5817,7223
+         'data' => '	q4::temp:clock 5897,7337 5810,7337 5817,7223
 ',
          'type' => 'gesperrt'
        },
@@ -3017,22 +3017,7 @@ userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019212',
-         'until' => 1380636000,
-         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
-         'from' => 1348076973,
-         'id' => 2308,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
-#: note: nur die halbe Strecke ist gesperrt, deshalb q3
-#: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
-#: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
-#: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
-#: note: am 2013-02-11 geprüft, keine Schranke, aber nur für "Linienverkehr frei"
-userdel	q3::inwork 10530,14452 10723,14772
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3110,7 +3095,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
          'text' => 'Sredzkistr. zwischen Knaackstr. und Hagenauer Str.: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2337,
-         'data' => '#: last_checked: 2013-03-26
+         'data' => '#: last_checked: 2013-04-11
 #: note: einige Meter östlich der Knaackstr. gesperrt
 userdel	q3::inwork 11101,14768 11187,14763
 ',
@@ -3276,7 +3261,7 @@ userdel	q4::inwork; 13339,7452 13303,7622
          'text' => 'Sredzkistr./Husemannstr.: Kreuzungsbereich gesperrt, Ausweichen auf Gehweg',
          'from' => undef,
          'id' => 2399,
-         'data' => '#: last_checked: 2013-03-26 vvv
+         'data' => '#: last_checked: 2013-04-11 vvv
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
 userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763

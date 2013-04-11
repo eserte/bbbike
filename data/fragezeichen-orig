@@ -22,11 +22,13 @@
 #: next_check: 2013-04-15
 #: XXX Baumaßnahme 1.48 (Realisierung nach 2011)
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
 #: last_checked: 2013-04-09
 #: check_frequency: 60d
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
 # REMOVED --- wahrscheinlich passiert hier nichts weiter, Busspur existiert --- #: last_checked: 2012-10-12 vvv --- #: next_check: 2012-10-17 vvv --- Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12640,13814 12695,13864 12784,13961 12856,14042 12901,14093 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -43,9 +45,8 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 #: last_checked ^^^
 #: by: ^^^
 # 
-#: by: Tagesspiegel vom 2009-04-12, soll 2009 realisiert werden
-#: corrected_by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: last_checked: 2013-04-09
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
@@ -54,11 +55,15 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn 2012)
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 #: next_check: 2013-05-01
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
+# 
 #: XXX Baumaßnahme 4.12 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn noch nicht 2012)
 #: next_check: 2013-06-01
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 Lise-Meitner-Str.: werden hier Radspuren markiert?	?::projected 3711,13202 3721,13274 3742,13416 3741,13495 3741,13558 3735,13618 3717,13743 3702,13865
+# 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
 Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2706,13291 -2728,13269 -2960,13203 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
@@ -86,10 +91,11 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: last_checked: 2013-04-08
 #: next_check: 2013-06-08
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-04-02 vvv
+#: last_checked: 2013-04-11 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -97,9 +103,16 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: last_checked: 2013-04-04
 #: next_check: 2013-06-01
-Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720 11155,11750
+Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
+# 
+#: XXX Baumaßnahme 1.39 (Realisierung in 2011)
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: last_checked: 2013-04-04
+#: next_check: 2013-06-01
+Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
 #: last_checked: 2013-04-08
@@ -107,8 +120,8 @@ Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
 #: XXX Baumaßnahme 3.18 (Realisierung in 2011)
-#: last_checked: 2013-02-26 (weiterhin nur Busspuren)
-#: next_check: 2013-06-01
+#: last_checked: 2013-04-11 (weiterhin nur Busspuren)
+#: next_check: 2013-06-11
 Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
@@ -124,12 +137,14 @@ Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258
 #: last_checked: 2012-09-10
 #: next_check: 2013-03-01
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7728,16538 7754,16364 7808,16215 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
 # 
 #: XXX Baumaßnahme 3.39 (Realisierung nach 2011)
 #: last_checked: 2012-06-03
 #: next_check: 2013-06-01
-Granitzstr.: werden hier Radspuren markiert?	?::projected 11253,18168 11320,18218 11395,18274 11492,18347 11581,18398 11606,18416 11698,18446 11796,18482 11950,18529
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
+Granitzstr.: Radspuren bis 2015 geplant	?::projected 11253,18168 11320,18218 11395,18274 11492,18347 11581,18398 11606,18416 11698,18446 11796,18482
 # 
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
 #: last_checked: 2012-09-29
@@ -173,6 +188,7 @@ Weg 1 im KGA Hochspannung: wird hier eine Lösung für die Treppe gefunden? Und di
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
 #: last_checked: 2013-03-24
 #: next_check: 2013-06-24
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 Karl-Marx-Str.: wann werden hier die Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011)
@@ -196,14 +212,47 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: last_checked: 2013-03-26
 #: next_check: 2013-09-01
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
+# 
 #: last_checked: 2013-01-05
 #: next_check: 2013-04-01
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321
+# 
 #: next_check: 2013-06-01
-Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837 -6423,14885 -6398,14969
+# 
 #: next_check: 2013-06-01
-Gartenfelder Str.: Radspuren für 2013 geplant	?::projected -344,15200 -453,15219 -532,15184 -569,15167 -707,15108 -834,15053 -945,14999 -1271,14843 -1307,14801 -1336,14786
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,15167 -707,15108 -834,15053 -945,14999 -1271,14843 -1307,14801 -1336,14786
+#: by: ^^^
+# 
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
+Perleberger Str., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
+#: next_check: 2013-06-08
+Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
+Dietzgenstr.: Radspuren bis 2015 geplant	?::projected 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
+Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9881,18354 9821,18392 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9366,18669 9279,18724
+Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555
+Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11162,19844 11312,19920 11425,19978 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
+Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11915,19580 11927,19308 11937,19175
+Alt-Gatow: Radspuren bis 2015 geplant	?::projected; -4760,9343 -4751,9259 -4757,9140 -4755,9120 -4751,9033 -4691,8899 -4590,8666
+Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4839,7791 -4578,8336 -4540,8449 -4540,8535 -4590,8666
+Nauener Str.: Radspuren bis 2015 geplant	?::projected -4741,14233 -4757,14303 -4750,14393 -4724,14482
+Zeppelinstr.: Radspuren bis 2015 geplant	?::projected -4724,14482 -4704,14571 -4670,14637 -4663,14820
+Wilhelmstr.: Radspuren bis 2015 geplant	?::projected; -5501,11251 -5455,11321 -5392,11421
+#: last_checked: 2013-04-11
+#: check_frequency: 90d
+Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5780,6397 5803,6403
+Königstr.: Radspuren bis 2015 geplant	?::projected -9412,546 -9730,514 -9969,519 -10052,521 -10269,445 -10593,476
+Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
+Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9308,4407 9192,4389 9079,4376
+#: last_checked: 2013-03-24
+#: next_check: 2013-06-24
+Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8496,6919 8447,6964 8319,7084
+Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
 # 
 #: section ^^^
@@ -293,7 +342,8 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
 #: last_checked: 2013-04-03
 #: check_frequency: 60d
-Werbellinstr.: Radstreifen werden erstellt	?::projected 12753,8187 12698,8175 12650,8164 12541,8140
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
+Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 12650,8164 12541,8140
 #: last_checked: 2013-04-03
 #: check_frequency: 60d
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
@@ -562,8 +612,8 @@ Erna-Samuel-Straße: Straße wird gebaut, Qualität, Radwege/streifen, genaue Lage?
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
-#: last_checked: 2013-02-11
-#: next_check: 2013-04-11
+#: last_checked: 2013-04-11
+#: next_check: 2013-06-11
 Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772 10838,14962 10881,15047
 # 
 #: last_checked: 2012-05-06 vvv
@@ -689,14 +739,15 @@ Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16
 # 
 #: last_checked: 2013-04-09
 #: check_frequency: 60d
-#: XXX Wird hier jemals etwas entstehen? Es ist nichts im Baumaßnahmenkatalog verzeichnet!
-Hansastr.: Schaffung von Radverkehrsanlagen	?::projected 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
+Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
 # 
 #: last_checked: 2011-04-09
 #: next_check: 2011-06-15
 #: XXX wahrscheinlich nur im nördlichen Teil bis Kaiserstr.
 #: XXX Baumaßnahme 7.13 (Realisierung in 2011)
-Ringstr.: Radverkehrsanlagen	?::projected 9021,3878 8766,4038 8605,4138 8399,4244 8159,4354 8098,4376 7990,4420 7921,4451 7690,4552
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
+Ringstr.: Radverkehrsanlagen	?::projected 8399,4244 8159,4354 8098,4376 7990,4420 7921,4451 7690,4552
 #: by: ^^^
 # 
 # REMOVED (eröffnet) --- #: last_checked: 2012-10-16 --- #: next_check: 2012-11-08 --- #: XXX_indoor Brückennamen evtl. in Berlin.coords.data erwähnen --- #: XXX_indoor sowohl in brunnels-orig --- Alfred-Lion-Steg: Fertigstellung?	?::inwork 7893,8327 8090,8291 8088,8254
@@ -829,7 +880,7 @@ Fontanestr. (Lichtenrade): Qualität des Rad/Gehweg-Abschnitts?	? 9779,-605 9822,
 #: XXX nochmal genau vor Ort anschauen
 An der Vogelweide: Qualität? Lage? Straßenschilder?	? 8568,21863 8626,21892 8712,21858 8725,21910 8615,21955 8590,21894
 # 
-#: last_checked: 2013-03-18
+#: last_checked: 2013-04-11
 An der ehem. Blumengroßmarkthalle: hier wird eine neue Verbindung entstehen --- gepflastert (genaue Qualität?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert)
@@ -877,8 +928,8 @@ Alter Wiesenweg: Qualität? Ausgeschildert?	? 1739,15958 1581,15919
 Charles-Tellier-Platz: genaue Lage? Qualität? Anbindung an umliegende Wege?	? -14637,462 -14574,431 -14559,465 -14625,474
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5192&options=4 (BVV-Beschluss)
-#: last_checked: 2013-02-10
-#: next_check: 2013-04-05
+#: last_checked: 2013-04-11
+#: check_frequency: 90d
 #: priority: #C
 Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,9856 9820,9718 9790,9528
 # 
@@ -1184,8 +1235,8 @@ Für Anhänger sehr unbequem zu passieren (Betonblöcke und Barrieren, max. 90cm li
 Potsdamer Str. oder Hauptstr.: Richtung Norden Hauptstr., Richtung Süden Potsdamer Str.	? 7479,9357 7517,9454
 # 
 #: XXX_prog: vvv
-Rheinstr.: beginnt bereits hier, aber nur in Richtung Süden	? 5928,7370 5902,7334
-Hauptstr.: beginnt bereits hier, aber nur in Richtung Norden	? 5855,7272 5902,7334
+Rheinstr.: beginnt bereits hier, aber nur in Richtung Süden	? 5923,7374 5897,7337
+Hauptstr.: beginnt bereits hier, aber nur in Richtung Norden	? 5853,7274 5897,7337
 #: XXX_prog: ^^^
 # 
 #: XXX_prog: allerdings wäre es interessant, wenn das auch beim Routing berücksichtigt werden könnte (vgl. Mail von Germar)
@@ -3116,15 +3167,22 @@ Tongrubenweg: Qualität im östlichen Teilabschnitt?	? 28694,2529 28749,2595 28809
 #: next_check: 2010-12-01
 Neuendorfer Str.: existieren Radspuren in der Neuendorfer Str., und wenn ja, von wo bis wo?	?::inwork -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
 # 
-#: by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: last_checked: 2011-09-14
-#: XXX Baumaßnahme 4.22, Realisierung in 2011
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Realisierung noch nicht erfolgt, Mitte 2012)
-#: next_check: 2013-01-01
-Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116 3132,10499
+#: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
+#: last_checked: 2011-09-14 vvv
+#: XXX Baumaßnahme 4.22, Realisierung in 2011 vvv
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Realisierung noch nicht erfolgt, Mitte 2012) vvv
+#: next_check: 2013-01-01 vvv
+Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886
+#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
+Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3092,9886 3108,10069 3111,10116 3132,10499 3114,10550 3093,10594
+#: next_check ^^^
+#: by: ^^^
+#: XXX ^^^
+#: last_checked ^^^
+#: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=2867
-#: last_checked: 2013-03-06 (by Joachim Nottebaum)
+#: last_checked: 2013-04-11 (Höhe Friedrichsruher)
 #: next_check: 2013-08-06
 Lauenburger Str.: wurde die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5860,6367 5803,6403
 Windthorststr.: Qualität der Verlängerung? Ausschilderung?	? 22552,11029 22554,11049 22490,11133 22469,11138

@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-04-09 vvv
+#: last_checked: 2013-04-11 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -30,7 +30,7 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-04-08
+#: last_checked: 2013-04-11
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 13366,11651 13295,11792
 # 
 # REMOVED (fast keine Einschr‰nkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14247,11681 14272,11775
@@ -134,10 +134,10 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2013-04-04
+#: last_checked: 2013-04-11
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2013-04-04 vvv
+#: last_checked: 2013-04-11 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10489,11405 10437,11352
 Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 # REMOVED (now again entry above is active) --- Neue Gr¸nstr.: Fahrbahn gesperrt wegen Bauarbeiten	q4::inwork 10389,11390 10446,11470
@@ -153,7 +153,7 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q
 #: next_check: 2013-05-18
 Am Zirkus: Baustelle, Einbahnstraﬂe	q3::inwork; 9167,13046 9239,12923
 # 
-#: last_checked: 2013-04-03
+#: last_checked: 2013-04-11
 Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9870,12657 9900,12643 9919,12613
 # 
 ### Kreuzberg ###
@@ -368,7 +368,7 @@ Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
 #: XXX_prog: zus‰tzlich noch Bordsteine an der ˆstlichen Seite (BS)
 Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12409,11902 12522,11837
 Hermann-Stˆhr-Platz: Fuﬂg‰nger	q2 12453,11790 12409,11902
-Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7488,8768 7548,8879
+Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7485,8777 7531,8848 7563,8871
 Nettelbeckplatz: Fuﬂg‰nger	q2 8024,15401 7989,15412 7891,15417
 Nettelbeckplatz: Fuﬂg‰nger	q2 7953,15362 7989,15412
 Nettelbeckplatz: Fuﬂg‰nger	q2 7975,15500 7989,15412
@@ -465,7 +465,7 @@ Am Rummelsburger See: Fuﬂg‰nger an schˆnen Tagen	q1 15931,9846 16002,9787 16049,
 # REMOVED (nun komplett gesperrt) --- Vorfahrt Reichstagsgeb‰ude: Fuﬂg‰nger	q4 8400,12417 8399,12616
 Am Teltowkanal: kurverreich und recht eng	q1 3751,1402 3695,1308 3619,1207 3458,1063 3366,1007
 Kˆrnerpark: Fuﬂg‰nger, Bordsteine	q3 12703,7370 12722,7261
-Fregestr. zur Feuerbachstr.: Gehweg, Fuﬂg‰nger	q2 5618,6388 5582,6360
+Fregestr. zur Feuerbachstr.: Gehweg, Fuﬂg‰nger	q2 5629,6407 5582,6360
 Weisestr.: Bordsteine	q3 11767,8330 11770,8292
 Helgol‰nder Ufer - Stromstr.: Fuﬂg‰nger	q2 6551,12901 6535,12934 6271,12985 6278,13053 6183,13083
 Bundesratufer: Rampe, Fuﬂg‰nger	q2 6165,12985 6106,12989
@@ -659,7 +659,7 @@ Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4957,5894
 Teltowkanalpromenade: eng, nicht anh‰ngertauglich	q2 2079,-12 1924,-188 1593,-317 1471,-311
 (Wohnanlage Friedastr.): Fuﬂg‰nger, Bordsteine	q3 16887,11545 16759,11582
 (Eitelstr. - Bahnhof Lichtenberg): Fuﬂg‰nger	q3 16727,11611 16766,11603
-Bennigsenstr.: enge Straﬂe	q1 5807,7771 5957,7773 6195,7775 6215,7761
+Bennigsenstr.: enge Straﬂe	q1 5807,7771 5957,7773 6195,7775 6209,7765
 Perelsplatz: Fuﬂg‰nger, Park	q2 5809,7712 5636,7709
 Gustav-Rickelt-Weg: eng, Fuﬂg‰nger, Bordsteine	q2 4226,6712 4223,6796 4206,6820
 Unterf¸hrung unter der Stromstr.: Fuﬂg‰nger, eng	q2 6218,12975 6180,12972
@@ -1545,7 +1545,7 @@ Eschershauser Weg: parkende Autos, un¸bersichtlich	q1 -190,4776 -146,4814 -97,48
 #: by: Zappel (Mrs Marple):
 Begasstr.: eng	q1 6275,7004 6414,7009
 #: by: Martina Urban: vvv
-Friedrichsruher Str.: sehr eng	q1 6637,5952 6522,5933 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
+Friedrichsruher Str.: sehr eng	q1 6637,5952 6508,5931 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 Schˆnhauser Str.: eng	q1 5803,6403 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
 Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
 #: by: ^^^

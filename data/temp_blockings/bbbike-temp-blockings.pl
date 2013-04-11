@@ -5180,7 +5180,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84234_COPY_14',
        data  => <<EOF,
-userdel	1::inwork 5465,5726 5581,5741
+userdel	1::inwork 5464,5731 5581,5741
 EOF
      },
      { from  => 1153738269, # 2006-07-24 12:51
@@ -16070,7 +16070,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	q4::temp:clock 5902,7334 5810,7337 5817,7223
+	q4::temp:clock 5897,7337 5810,7337 5817,7223
 EOF
      },
      { from  => 1254261600, # 2009-09-30 00:00
@@ -19995,7 +19995,7 @@ userdel	q4::inwork 8634,13588 8626,13641 8619,13689
 EOF
      },
      { from  => 1348076973, # 1314604800, # 2011-08-29 10:00
-       until => 1380636000, # 2013-10-01 16:00, # 1347721200, # 2012-09-15 17:00
+       until => 1365706902, # 1380636000, # 2013-10-01 16:00, # 1347721200, # 2012-09-15 17:00
        text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
        type  => 'handicap',
        source_id => 'IM_019212',
@@ -20006,6 +20006,7 @@ EOF
 #: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 #: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
 #: note: am 2013-02-11 geprüft, keine Schranke, aber nur für "Linienverkehr frei"
+#: note: am 2013-04-11 geprüft: Radfahrer dürfen hier offiziel entlangfahren
 userdel	q3::inwork 10530,14452 10723,14772
 EOF
      },
@@ -20274,7 +20275,7 @@ EOF
        text  => 'Sredzkistr. zwischen Knaackstr. und Hagenauer Str.: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-03-26
+#: last_checked: 2013-04-11
 #: note: einige Meter östlich der Knaackstr. gesperrt
 userdel	q3::inwork 11101,14768 11187,14763
 EOF
@@ -20687,7 +20688,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_019185',
        data  => <<EOF,
-userdel	q4::temp 5465,5726 5290,5704
+userdel	q4::temp 5464,5731 5280,5714
 EOF
      },
      { from  => 1347429180, # 2012-09-12 07:53
@@ -20859,7 +20860,7 @@ EOF
        text  => 'Sredzkistr./Husemannstr.: Kreuzungsbereich gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-03-26 vvv
+#: last_checked: 2013-04-11 vvv
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
 userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763

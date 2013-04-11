@@ -1027,9 +1027,9 @@ Indira-Gandhi-Str. -> Gounodstr.: Straßenbahntrasse	3::igndisp 14609,15921 14597
 Meyerbeerstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14484,16035 14576,16069 14550,16161
 Indira-Gandhi-Str. -> Meyerbeerstr.: Straßenbahntrasse	3::igndisp 14595,15980 14576,16069 14484,16035
 Lenther Steig	1 1022,14898 1037,14814 1042,14721
-Mittelstreifen	3nocross::ignrte 6150,7673 6083,7582 5955,7406
-Wielandstr. -> Hauptstr.: Mittelstreifen	3::igndisp 6081,7215 6083,7582 5955,7406
-Hauptstr. -> Wielandstr.: Mittelstreifen	3::igndisp 6150,7673 6083,7582 6081,7215
+Mittelstreifen	3nocross::ignrte 6144,7677 6082,7594 5955,7420
+Hauptstr. -> Wielandstr.: Mittelstreifen	3::igndisp 6144,7677 6082,7594 6081,7215
+Wielandstr. -> Hauptstr.: Mittelstreifen	3::igndisp 6081,7215 6082,7594 5955,7420
 Fehmarner Str.	1 6709,14782 6528,15000
 Mittelstreifen	3nocross::ignrte 1960,11426 1834,11408 1625,11380
 Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1878,11268 1834,11408 1625,11380
@@ -1505,3 +1505,5 @@ Schloßplatz - Rathausbrücke	3 10199,12251 10285,12306 10357,12356
 Europaplatz	1 8015,13303 7938,13302
 Am Kupfergraben	1 9754,12775 9815,12705 9870,12657
 Am Treptower Park	1 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
+Czeminskistr.	1 7604,8927 7563,8871
+Berlinickestr.	1 5076,5500 5016,5401
