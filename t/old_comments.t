@@ -73,7 +73,7 @@ if (!@urls) {
 my @tests = (
 	     # Czeminskistr. -> Julius-Leber-Brücke 
 	     ["7603,8911", "7497,8916", <<EOF, "CP;"],
-- 'gegen die Einbahnstraßenrichtung, ggfs. schieben': 1
+- {}
 - als Julius-Leber-Brücke ausgeschildert: 1
 - {}
 EOF
