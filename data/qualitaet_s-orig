@@ -3692,7 +3692,7 @@ Rudolf-Grosse-Str.: Verbundsteinpflaster	Q1 19141,9709 19142,9755
 Rudolf-Grosse-Str.: Beton	Q0 19142,9755 19144,9810
 Römerweg: Beton	Q0 19236,9710 19450,9728 19459,9842
 Römerweg: Asphalt	Q1 19599,9747 19663,9757
-Zwieseler Str.: sehr guter Asphalt	Q0+ 19669,9876 19663,9757 19651,9489 19634,9192 19629,9099
+Zwieseler Str.: sehr guter Asphalt	Q0+ 19669,9876 19663,9757 19659,9676 19651,9489 19634,9192 19629,9099
 Zwieseler Str.: Beton	Q0 19669,9876 19683,10031 19688,10094 19695,10196 19711,10426
 (Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19629,9099 19631,9072 19700,9040
 Bodenmaiser Weg: Asphalt	Q1+ 19407,9232 19488,9218 19634,9192
@@ -8610,12 +8610,13 @@ Sangestr.: guter Beton	Q0 3954,20574 4147,20642 4259,20673
 Schlierbacher Weg: mäßiger Beton	Q1- 10734,1178 10685,1159 10450,1202 10453,1242 10440,1283
 #: confirmed_by: srt
 Friedrich-Kayßler-Weg: guter Beton	Q0- 15312,2010 15144,2015 15010,2032
-#: note: "Q1", weil in der Umgebung auch Q1 für "guter Beton" vergeben wurde: vvv
+#: note: "Q1", weil in der Umgebung auch Q1 für "guter Beton" vergeben wurde:
 #: confirmed_by: srt (zumindest Beton, und zumindest am Oswinsteig und am Hermsdorfer Damm)
-Silvesterweg: guter Beton	Q1 3559,24564 3575,24498 3605,24351 3632,24214 3661,24079 3702,23899
+Silvesterweg: guter Beton	Q1 3575,24498 3605,24351 3632,24214 3661,24079 3702,23899
+#: corrected_by: srt (guter Beton -> )
+Silvesterweg: Verbundsteinpflaster	Q1 3559,24564 3575,24498
 #: corrected_by: srt (guter Beton -> )
 Silvesterweg: Asphalt	Q0 3702,23899 3715,23819 3751,23764 3791,23730
-#: note: ^^^
 Gronauer Weg: guter Asphalt	Q0 3922,111 3916,-54
 Osianderweg: guter Asphalt	Q0 3123,21360 3058,21530 2953,21777 2868,21945
 Lagerweg: mäßiger Beton	Q1- -1392,14527 -1404,14441 -1354,14424
@@ -20924,6 +20925,12 @@ Silzer Weg: Asphalt	Q0 5929,389 6130,449
 #: by: ^^^
 # 
 #: by: Stefan Klinkusch vvv
+Seeburger Weg: Asphalt	Q0 -5282,12730 -5263,12784 -5234,12812 -5030,13017
+Cosmarweg: Asphalt	Q0 -5822,13088 -5928,13060 -6029,13033 -6151,13001
+Lutoner Str.: Asphalt	Q0 -5030,13017 -5118,13053 -5245,13138 -5321,13191 -5472,13235 -5606,13170 -5684,13132 -5753,13107 -5790,13097 -5822,13088
+Schmidt-Knobelsdorf-Str.: Asphalt	Q0 -5030,13017 -4725,12883
+Schmidt-Knobelsdorf-Str.: gutes Kopfsteinpflaster	Q1 -4725,12883 -4494,12776
+Schmidt-Knobelsdorf-Str.: Asphalt	Q0 -4494,12776 -4277,12675 -4239,12626
 #: note: "Die Befahrbarkeit kann sich witterungsbedingt ändern"
 Döberitzer Weg: fester, aber löchriger Sandweg	Q2 -9049,12498 -8753,12827 -8385,13138
 Döberitzer Weg: sehr gut asphaltiert	Q0 -8385,13138 -8313,13167 -8264,13197 -8256,13202

@@ -95,7 +95,7 @@ Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaﬂnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-04-11 vvv
+#: last_checked: 2013-04-12 vvv
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -289,6 +289,9 @@ Kˆpenicker Landstraﬂe: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20130410.1200.383317.html
+Schˆnwalder Allee: Radweg wird saniert, danach asphaltiert	?::inwork; -3807,17226 -3820,17276 -3936,17516
+# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4461
 #: next_check: 2013-05-15
 Wassersportallee: wird hier eine Fuﬂg‰ngerampel eingerichtet?	? 22506,1379 22488,1282
@@ -363,16 +366,20 @@ B¸rknerstr.: wird hier eine Fahrradstraﬂe eingerichtet?	?::projected 11673,9720 
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13898,8613
 # 
 #: XXX Gartenstadt Karlshorst: neue Straﬂen vvv
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036705222332/705222332/00098126/26-Anlagen/02/AnlageDS430.pdf (Lage der Gartenstadt)
 #: next_check: 2013-07-01 vvv
 #: XXX folgende Straﬂen werden wahrscheinlich benannt:
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5092&options=4
-#: XXX Planstraﬂe 3 -> Viechtacher Str.
-#: XXX Planstraﬂe 4 -> Eisensteiner Str.
-#: XXX Planstraﬂe 5 -> Rinchnacher Weg
-#: XXX Planstraﬂe 6 -> Teisnacher Str.
-#: XXX Planstraﬂe 7+8+10 -> Regener Str.
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036705222332/705222332/00098126/26-Anlagen/02/AnlageDS430.pdf (Lage)
-Gartenstadt Karlshorst	?::projected 19698,9837 19671,9119 19931,9080 19846,9855 19698,9837
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/4508103636166975/36166975/00104984/84-Anlagen/02/116-2013-1Blatt1ausB-PlanXVII-50aa-16012012.pdf
+Planstraﬂe 1: Qualit‰t? Name?	?::projected 19842,9895 19853,9774 19857,9682
+Planstraﬂe 2 (evtl. Rˆmerweg?): Qualit‰t etc?	?::projected 19663,9757 19853,9774
+Planstraﬂe 3 -> Viechtacher Str.: Qualit‰t etc?	?::projected 19659,9676 19732,9678 19801,9680 19857,9682 19893,9683
+Planstraﬂe 4 -> Eisensteiner Str.: Qualit‰t etc?	?::projected 19732,9678 19727,9484
+Planstraﬂe 5 -> Rinchnacher Weg: Qualit‰t etc?	?::projected 19801,9680 19797,9480
+Planstraﬂe 6 -> Teisnacher Str.: Qualit‰t etc?	?::projected 19857,9682 19849,9477
+Planstraﬂe 7 -> Regener Str.: Qualit‰t etc?	?::projected 19651,9489 19727,9484 19797,9480 19849,9477 19921,9472
+#: XXX Planstraﬂe 8+10 -> Regener Str.
+#XXXGartenstadt Karlshorst	?::projected 19698,9837 19671,9119 19931,9080 19846,9855 19698,9837
 #: next_check ^^^
 #: XXX ^^^
 # 
@@ -2721,8 +2728,9 @@ Altdˆbern - Calau: Qualit‰t?	? 55259,-83091 55388,-83077 55768,-82862 54521,-794
 # 
 #: XXX fehlen alle in Berlin.coords.data, PLZ=12623 vvv
 #: last_checked: 2012-09-16 vvv
-#: next_check: 2014-03-01 vvv
+#: next_check: 2013-09-01 vvv
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2013
 Bisamstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26466,12995 26438,12959 26406,12918 26374,12878 26340,12835 26189,12642 26231,12627 26276,12600 26309,12572 26201,12499
 Seidenschwanzstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26651,12941 26576,12848 26540,12804 26511,12768 26472,12720 26340,12835
 #: XXX folgendes sind Privatstraﬂen vvv
