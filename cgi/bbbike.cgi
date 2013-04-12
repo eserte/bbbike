@@ -96,7 +96,6 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $use_apache_session $now_use_apache_session $apache_session_module $cookiename
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
 	    @temp_blocking $temp_blocking_epoch
-	    $use_reproxy
 	    $use_cgi_compress_gzip $use_bbbikedraw_pdf_compress $max_matches
 	    $use_winter_optimization $winter_hardness
 	    $with_lang_switch
@@ -105,7 +104,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $include_outer_region @outer_berlin_places $outer_berlin_qr
 	    $warn_message $use_utf8 $data_is_wgs84 $osm_data
 	    $bbbike_start_js_version $bbbike_css_version
-	    $use_file_cache $file_cache
+	    $use_file_cache $cache_entry
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -1155,16 +1154,24 @@ if (defined $q->param("ossp") && $q->param("ossp") !~ m{^\s*$}) {
 
 # Try cache?
 if ($use_file_cache) {
+    my $file_cache;
     my $output_as = $q->param('output_as');
     if ($output_as && $output_as =~ m{^(kml-track)$}) {
-	require BBBikeCGICache;
-	$file_cache = BBBikeCGICache->new($Strassen::datadirs[0], $Strassen::Util::cacheprefix);
-	if ($file_cache->exists_content($q)) {
-	    my($content, $meta) = $file_cache->get_content($q);
-	    if ($content && $meta) {
-		warn "DEBUG: Cache hit for " . $q->query_string if $debug;
+	$file_cache = _get_weekly_filecache();
+    } else {
+	my $imagetype = $q->param('imagetype');
+	if ($imagetype && $imagetype =~ m{^pdf}) {
+	    $file_cache = _get_hourly_filecache();
+	}
+    }
+    if ($file_cache) {
+	$cache_entry = $file_cache->get_entry($q);
+	if ($cache_entry->exists_content) {
+	    my $meta = $cache_entry->get_meta;
+	    if ($meta) {
+		warn "DEBUG: Cache hit for " . $q->query_string; # if $debug;
 		http_header(@{ $meta->{headers} || [] });
-		print $content;
+		$cache_entry->stream_content;
 		my_exit(0);
 	    }
 	}
@@ -1245,13 +1252,17 @@ if (defined $q->param('begin')) {
     }
     my_exit(0);
 } elsif (defined $q->param('clean_expired_cache')) {
-    require BBBikeCGICache;
-    my $file_cache = BBBikeCGICache->new($Strassen::datadirs[0], $Strassen::Util::cacheprefix);
     http_header(-type => 'text/plain',
 		@no_cache,
 	       );
-    my $res = $file_cache->clean_expired_cache;
-    print "DONE. $res->{count_success} directory/ies deleted, $res->{count_errors} error/s\n";
+    for my $def (
+		 ['weekly filecache (e.g. for kml-track)', _get_weekly_filecache()],
+		 ['hourly filecache (e.g. for pdf files)', _get_hourly_filecache()],
+		) {
+	my($label, $file_cache) = @$def;
+	my $res = $file_cache->clean_expired_cache;
+	print "DONE. $res->{count_success} directory/ies deleted in $label, $res->{count_errors} error/s\n";
+    }
     my_exit(0);
 } elsif (defined $q->param('drawmap')) {
     my($x,$y) = split /,/, $q->param('drawmap');
@@ -3904,8 +3915,8 @@ sub display_route {
 	$s_kml->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
 	my $kml_output = $s_kml->bbd2kml(startgoalicons => 1);
 	print $kml_output;
-	if ($file_cache) {
-	    $file_cache->put_content($q, $kml_output, {headers => \@headers});
+	if ($cache_entry) {
+	    $cache_entry->put_content($kml_output, {headers => \@headers});
 	}
 	return;
     }
@@ -5713,7 +5724,7 @@ sub draw_route {
     my @header_args = @cache;
     if ($cookie) { push @header_args, "-cookie", $cookie }
 
-    my $x_reproxy_file; # used in X-Reproxy-File operation
+    my $cache_file;
 
     # write content header for pdf as early as possible, because
     # output is already written before calling flush
@@ -5729,25 +5740,18 @@ sub draw_route {
 	    $q->param('geometry', $1);
 	    $q->param('imagetype', 'pdf');
 	}
-	if ($use_reproxy
-	    && $ENV{HTTP_X_PROXY_CAPABILITIES} =~ /\breproxy-file\b/
-	    && defined $q->param('coordssession')
-	    && eval { require Digest::MD5; 1 }
-	   ) {
-	    (my $session_id = $q->param('coordssession')) =~ s{[^0-9a-f_]+}{_}gi;
-	    my $qs_digest = Digest::MD5::md5_hex($q->query_string);
-	    mkdir "/tmp/bbbike_pdf" if !-d "/tmp/bbbike_pdf";
-	    $x_reproxy_file = "/tmp/bbbike_pdf/" . $session_id . "_" . $qs_digest . ".pdf";
-	    push @header_args, '-X_Reproxy_File' => $x_reproxy_file;
+	my @headers = (
+		       -type => "application/pdf",
+		       -charset => '', # CGI 3.52..3.55 writes charset for non text/* stuff, see https://rt.cpan.org/Public/Bug/Display.html?id=67100
+		       @header_args,
+		       -Content_Disposition => "inline; filename=$filename.pdf",
+		      );
+	if ($cache_entry) {
+	    $cache_file = $cache_entry->get_content_filename;
+	    $cache_entry->put_content(undef, {headers => \@headers});
 	}
-	http_header
-	    (-type => "application/pdf",
-	     @header_args,
-	     -Content_Disposition => "inline; filename=$filename.pdf",
-	    );
-	if (-e $x_reproxy_file) {
-	    return;
-	}
+	http_header(@headers);
+
 	if (defined $bbbikedraw_pdf_module && !$bbbikedraw_args{Module}) {
 	    $bbbikedraw_args{Module} = $bbbikedraw_pdf_module;
 	}
@@ -5773,7 +5777,7 @@ sub draw_route {
 					 Lang => $lang,
 					 Geo => get_geography_object(),
 					 %bbbikedraw_args,
-					 ($x_reproxy_file ? (Filename => $x_reproxy_file) : ()),
+					 ($cache_file ? (Filename => $cache_file) : ()),
 					);
 	die $@ if !$draw;
     };
@@ -5804,6 +5808,9 @@ sub draw_route {
 			       -lang => $lang)
 	    if $draw->can("add_route_descr");
 	$draw->flush;
+	if ($cache_entry) {
+	    $cache_entry->stream_content;
+	}
     };
     if ($@) {
 	if ($session_is_expired) {
@@ -7659,6 +7666,9 @@ sub _match_to_cgival {
     my $s = shift;
     join($delim, $s->get_name, $s->get_citypart, $s->get_zip, $s->get_coord);
 }
+
+sub _get_weekly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], $Strassen::Util::cacheprefix . '_weekly', 'weekly') }
+sub _get_hourly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], $Strassen::Util::cacheprefix . '_hourly', 'hourly') }
 
 ######################################################################
 #
