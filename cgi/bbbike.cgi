@@ -7677,8 +7677,9 @@ sub _match_to_cgival {
     join($delim, $s->get_name, $s->get_citypart, $s->get_zip, $s->get_coord);
 }
 
-sub _get_weekly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], $Strassen::Util::cacheprefix . '_weekly', 'weekly') }
-sub _get_hourly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], $Strassen::Util::cacheprefix . '_hourly', 'hourly') }
+sub _get_weekly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], _get_cache_prefix() . '_weekly', 'weekly') }
+sub _get_hourly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], _get_cache_prefix() . '_hourly', 'hourly') }
+sub _get_cache_prefix { $Strassen::Util::cacheprefix . ($is_beta ? '_beta' : '') . ($lang ? "_$lang" : '') }
 
 ######################################################################
 #
