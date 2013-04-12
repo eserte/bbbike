@@ -1156,7 +1156,7 @@ if (defined $q->param("ossp") && $q->param("ossp") !~ m{^\s*$}) {
 if ($use_file_cache) {
     my $file_cache;
     my $output_as = $q->param('output_as');
-    if ($output_as && $output_as =~ m{^(kml-track)$}) {
+    if ($output_as && $output_as =~ m{^(kml-track|gpx-track|gpx-route)$}) {
 	$file_cache = _get_weekly_filecache();
     } else {
 	my $imagetype = $q->param('imagetype');
@@ -3891,14 +3891,19 @@ sub display_route {
     if (defined $output_as && $output_as eq 'gpx-track') {
 	require Strassen::GPX;
 	my $filename = filename_from_route($startname, $zielname, "track") . ".gpx";
-	http_header
+	my @headers =
 	    (-type => "application/xml",
 	     -Content_Disposition => "attachment; filename=$filename",
 	    );
+	http_header(@headers);
 	my $s = $route_to_strassen_object->();
 	my $s_gpx = Strassen::GPX->new($s);
 	$s_gpx->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
-	print $s_gpx->bbd2gpx(-as => "track");
+	my $gpx_output = $s_gpx->bbd2gpx(-as => "track");
+	print $gpx_output;
+	if ($cache_entry) {
+	    $cache_entry->put_content($gpx_output, {headers => \@headers});
+	}
 	return;
     }
 
@@ -4517,10 +4522,11 @@ sub display_route {
 	} elsif ($output_as eq 'gpx-route') {
 	    require Strassen::GPX;
 	    my $filename = filename_from_route($startname, $zielname) . ".gpx";
-	    http_header
+	    my @headers =
 		(-type => "application/xml",
 		 -Content_Disposition => "attachment; filename=$filename",
 		);
+	    http_header(@headers);
 	    my @data;
 	    for my $pt (@out_route) {
 		push @data, $pt->{Strname} . "\tX " . $pt->{Coord} . "\n";
@@ -4528,7 +4534,11 @@ sub display_route {
 	    my $s = Strassen->new_from_data(@data);
 	    my $s_gpx = Strassen::GPX->new($s);
 	    $s_gpx->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
-	    print $s_gpx->bbd2gpx(-as => "route");
+	    my $gpx_output = $s_gpx->bbd2gpx(-as => "route");
+	    print $gpx_output;
+	    if ($cache_entry) {
+		$cache_entry->put_content($gpx_output, {headers => \@headers});
+	    }
 	} else { # xml
 	    require XML::Simple;
 	    my $filename = filename_from_route($startname, $zielname) . ".xml";
