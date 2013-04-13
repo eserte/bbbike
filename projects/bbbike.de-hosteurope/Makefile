@@ -46,7 +46,8 @@ TARGET_LIVE=		hosteurope
 EXTRA_MISCSRC_FILES=	bbd2esri \
 			relevant_errorlog.pl \
 			winter_optimization.pl \
-			FixRemoteAddrHandler.pm
+			FixRemoteAddrHandler.pm \
+			bbbike_cgi_clean_expired_cache.pl
 EXTRA_MISC_FILES=	gpx.xsd bbbikecgires.kwalify bbbikecgires.rnc
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/bbbike-opensearch.tpl.src \
