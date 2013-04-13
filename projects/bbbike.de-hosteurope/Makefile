@@ -811,7 +811,7 @@ init-environment:
 	lwp-request -m GET 'http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/bbbike.cgi?init_environment=1'
 
 clean-expired-cache:
-	lwp-request -m GET 'http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/bbbike.cgi?clean_expired_cache=1'
+	$(BBBIKE_ROOT_DIR)/miscsrc/bbbike_cgi_clean_expired_cache.pl -host ${BBBIKE_HOSTEUROPE_HOST}
 
 init-local-environment:
 	lwp-request -m GET '${LOCAL_CGI_URL}/bbbike.cgi?init_environment=1'
