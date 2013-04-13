@@ -774,7 +774,7 @@ Waldweg (Rahnsdorf)	green1 31670,4365 31700,4493 31734,4624
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	green2 10598,8270 10729,8152
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	green2 10384,8628 10360,8521 10298,8245
 (Rundkurs auf dem Flughafen Tempelhof)	green2 11460,7802 11470,7744 11543,7369 11593,7314 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
-(Rundkurs auf dem Flughafen Tempelhof)	green2 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10042,8270 10298,8245 10575,8218
+(Rundkurs auf dem Flughafen Tempelhof)	green2 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10575,8218
 (Rundkurs auf dem Flughafen Tempelhof)	green2 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	green2 9525,7558 9431,7425 9386,7326 9300,7312 9302,7294 9242,7286
 (Weg parallel zum Tempelhofer Damm)	green2  9300,7312 9281,7651 9281,7795
@@ -783,7 +783,7 @@ Waldweg (Rahnsdorf)	green1 31670,4365 31700,4493 31734,4624
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	green2 9562,7796 9372,7798 9281,7795
 (Südliche Landebahn)	green2 9461,7190 9509,7195 9677,7206 11332,7305 11518,7314 11593,7314
 (Südliche Landebahn - Rundkurs)	green2 11332,7305 11438,7371 11460,7447
-(Nördliche Landebahn)	green2 9362,7616 9522,7624 9653,7635 11279,7768 11388,7777 11430,7781 11460,7802
+(Nördliche Landebahn)	green2 9362,7616 9522,7624 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781 11460,7802
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	green2 11460,7802 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	green2 11472,7899 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung - Rundkurs)	green2 11005,8064 10909,8003
@@ -795,6 +795,7 @@ Waldweg (Rahnsdorf)	green1 31670,4365 31700,4493 31734,4624
 (Flughafen Tempelhof - Eingang Leinestr.)	green2 11547,7432 11558,7438
 (Flughafen Tempelhof - Eingang Oderstr.)	green2 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	green2 9302,7294 9351,7241 9461,7190
+(Alter Hafen)	green2 10204,7680 10134,7797 10076,8040 10037,8269
 #: note: ^^^
 #: note: Not really that green, but defining this helps to avoid Ma'damm when pref_green=GR1 is set. Anregung von Reiner Hundsdoerfer.
 Hirzerweg	green1 9541,2096 9487,2391 9437,2649 9416,2781 9359,3083
@@ -1109,7 +1110,7 @@ Alfred-Lion-Steg	green1 8088,8254 8078,8256 8086,8289 7992,8312 7932,8325 7893,8
 (Radweg an der Bahnstrecke - Alfred-Lion-Steg)	green1 7992,8300 7932,8325
 (Weg an der Südpanke)	green2 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
 #: by: j. bethsold
-Lankegrabenpark	green2 7364,3193 7409,3331 7458,3451
+Lankegrabenpark	green2 7365,3199 7409,3331 7458,3451
 (Stieglakeweg - Stieglakebecken)	green1 -6911,13817 -6924,13570 -6926,13560 -6922,13449
 (Am Stieglakebecken)	green2 -6982,13451 -6922,13449 -6904,13449 -6900,13386 -6911,13372
 (Stieglakebecken - Cosmarweg)	green2 -6911,13372 -6908,13129
@@ -1121,3 +1122,10 @@ entlang der Havel	green2 -3170,12595 -3214,12779 -3218,12843 -3210,12887 -3338,1
 #: XXX vielleicht auch green2?
 entlang der Havel	green1 -3555,13485 -3451,13300 -3441,13270
 Bosepark	green2 8953,6492 8930,6295
+(Prühßstr. - Rixdorfer Str.)	green1 9854,4266 9965,4299 10051,4295 10140,4280 10221,4245
+(Westphalweg/Dirschelweg - Schwimmbad)	green1 10058,4375 10051,4295
+(Richterstr. - Rathausstr.)	green1 9277,3993 9294,3921 9217,3906 9117,3898 9021,3878
+Waltershauser Str.	green1 6534,1702 6673,1748 6844,1813
+(Gallwitzallee - Geraerstr./Trippsteinstr.)	green1 6768,2143 6722,2096 6692,2024 6534,1702 6526,1688
+(Seydlitzstr., Verlängerung)	green1 6658,2079 6692,2024
+(Hospitalgrabenpark)	green2 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199

@@ -131,11 +131,11 @@ Am Petersberg: Privatstraße	CS 990,5581 825,5420
 (Weg in Kolonie Bodenreform): entlang des Teltowkanals	CS 20939,2413 20810,2398
 (Weg in Kolonie Bodenreform): entlang des Teltowkanals	CS 20810,2398 20510,2321 20490,2276 20234,2254 20128,2271
 #: note: (URL existiert nicht mehr) http://www.stadtentwicklung.berlin.de/verkehr/radverkehr/infrastruktur/de/seperater_weg01.shtml
-(Alt-Lankwitz - Kamenzer Damm): Rampe für Radfahrer	CS 8026,3298 8039,3242
+(Alt-Lankwitz - Kamenzer Damm): Rampe für Radfahrer	CS 8026,3298 8036,3253
 als Puschkinallee 6c, 6d ausgeschildert	CP2; 13995,9834 14076,10011
 Durch Toreinfahrt (immer offen)	CP2; 14043,10928 14107,10911
 als Sackgasse ausgeschildert	CP2; 14672,10760 14564,10792
-Radfahren durch den Park erlaubt	CS 6526,1688 6679,1734 6848,1809
+Radfahren durch den Park erlaubt	CS 6534,1702 6673,1748 6844,1813
 #: XXX_indoor: vielleicht nach comments_kfzverkehr verschieben?
 Kein MIV-Durchgangsverkehr, nur Anlieger und Linienverkehr	CS -13036,342 -12992,244
 #: by: Ingrid Beese:
@@ -677,9 +677,9 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 23681,5579
 	culdesac_pseudo 25002,5296
 	culdesac_pseudo 25009,5593
-#: XXX: fortgesetzter Weg fehlt bei BBBike
+#: note: fortgesetzter Weg fehlt bei BBBike (deshalb "pseudo")
 	culdesac_pseudo 26270,5829
-#: XXX: fortgesetzter Waldweg fehlt bei BBBike
+#: note: fortgesetzter Waldweg fehlt bei BBBike (deshalb "pseudo")
 	culdesac_pseudo 26351,6028
 	culdesac 24351,5696
 	culdesac 21553,10671
@@ -1057,6 +1057,7 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 17266,5134
 	culdesac -3113,12549
 	culdesac 13518,7477
+	culdesac_pseudo 9264,3874
 #: section ^^^
 ######################################################################
 # busroute
@@ -1198,12 +1199,12 @@ Bus 186, Bus 284	busroute_N 4948,562 4748,453 4505,465 4279,459
 Bus M85	busroute_N 4136,505 4122,421 4068,406 3912,362 3898,466 3834,502 3647,739
 Bus M77, Bus M82	busroute_N 6977,870 6941,690 6937,671 6959,509 7007,333 7014,203 6982,88
 Bus 283	busroute_N 7234,2548 7324,2559 7517,2574 7602,2522 7667,2501 7704,2482 7777,2447 7899,2391 7923,2319 7987,2337 7983,2348 7983,2348 7899,2391
-Bus 187	busroute_N 7852,3183 7865,3344 7789,3362 7753,3371 7704,3383 7587,3411 7501,3432 7483,3440 7458,3451 7183,3570 7109,3635 6996,3761
+Bus 187	busroute_N 7852,3183 7865,3344 7789,3362 7753,3371 7704,3383 7587,3411 7501,3432 7483,3440 7458,3451 7407,3473 7183,3570 7109,3635 7012,3743 6996,3761
 Bus 187	busroute_N 7753,3371 7734,3290 7719,3219 7720,3148
 Bus M77, ...	busroute_N 8495,2080 8565,2003 8607,1898
 Bus 179	busroute_N 9106,3703 9131,3571
 Bus M77	busroute_N 9731,3889 9751,3769
-Bus 282	busroute_N 10190,4183 10269,4136 10355,4085 10409,4060 10586,4039 10756,4018 10978,4075 11013,4342 10879,4358 10802,4367 10715,4296 10613,4308 10526,4319 10462,4326 10371,4337 10300,4360
+Bus 282	busroute_N 10185,4187 10269,4136 10355,4085 10409,4060 10586,4039 10756,4018 10978,4075 11013,4342 10879,4358 10802,4367 10715,4296 10613,4308 10526,4319 10462,4326 10371,4337 10293,4361
 Bus 181	busroute_N 14023,4475 14295,4462 14299,4383 14239,4367 14164,4271 14119,4153
 Bus M46	busroute_N 14290,3908 14238,3857 14185,3734 14141,3614 14056,3374 14023,3276
 Bus 172, ...	busroute_N 15301,3038 15254,2926 15174,2773 15078,2647 14946,2519
@@ -1675,3 +1676,5 @@ Pauline-Staegemann-Str.: nicht ausgeschildert	CP2; 11589,13305 11524,13247
 Kohstallweg: nicht ausgeschildert	CS -5535,14853 -5488,14836 -5472,14925
 Heidenelkenweg: Privatstraße	CS 16112,12622 16111,12685 16073,12685 16071,12623
 Wilhelm-Kabus-Str. - Südkreuz: Privatstraße der DB	CP2; 7713,8001 7837,7899
+(Prühßstr. - Rixdorfer Str.): entlang Sportplatz und Schwimmbad	CS 9854,4266 9965,4299 10051,4295 10140,4280 10221,4245
+Alt-Lankwitz: nur für Anlieger	CS 7407,3473 7419,3500 7249,3598 7012,3743

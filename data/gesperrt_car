@@ -919,7 +919,13 @@ Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
 Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Leipziger Str. (Potsdam)	1 -12431,-2096 -12653,-2206 -12719,-2283 -12756,-2437 -12779,-2467 -12796,-2488 -12929,-2659 -13003,-2754 -13021,-2784 -13062,-2901
-Grunewaldstr.: Mittelstreifen	1 6161,9128 6264,9156 6361,9175
+Mittelstreifen	3nocross::ignrte 6161,9128 6264,9156 6361,9175
+Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6361,9175
+Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6279,9034
+Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6361,9175 6264,9156 6279,9034
+Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6279,9034 6264,9156 6255,9194
+Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6279,9034 6264,9156 6161,9128
+Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6161,9128 6264,9156 6255,9194
 Viktoria-Luise-Platz: Poller	3 6270,9910 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
 Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7291,10506
@@ -1224,9 +1230,9 @@ Poller	3 7181,-15 7231,25 7184,150
 Poller	3 7181,-15 7231,25 7277,-77
 Poller	3 7184,150 7231,25 7181,-15
 Poller	3 7277,-77 7231,25 7181,-15
-Mittelstreifen	3nocross::ignrte 9338,4129 9365,4006 9410,3793
-Mariendorfer Damm -> Richterstr.: Mittelstreifen	3::igndisp 9410,3793 9365,4006 9232,3980
-Richterstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9232,3980 9365,4006 9338,4129
+Mittelstreifen	3nocross::ignrte 9336,4142 9364,4011 9410,3793
+Mariendorfer Damm -> Richterstr.: Mittelstreifen	3::igndisp 9410,3793 9364,4011 9277,3993
+Richterstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9277,3993 9364,4011 9336,4142
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18296,10027
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18387,10070
 Ontarioseestr.: Sackgasse für Autos	3 18296,10027 18339,10048 18408,10041
@@ -1369,6 +1375,13 @@ Töpferweg: Poller	3 13238,2521 13309,2410 13367,2322
 Hoppestr.	1 8617,18310 8482,18284
 Straße 134: Poller	3 9192,20719 9276,20745 9398,20784
 Straße 134: Poller	3 9398,20784 9276,20745 9192,20719
+Straßenbahntrasse	3nocross::ignrte 10976,13229 11012,13278 11070,13357
+Karl-Liebknecht-Str. -> Alex-Wedding-Str.: Straßenbahntrasse	3::igndisp 11070,13357 11012,13278 11085,13239
+Karl-Liebknecht-Str. -> Hirtenstr.: Straßenbahntrasse	3::igndisp 10976,13229 11012,13278 10925,13322
+Alex-Wedding-Str. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11085,13239 11012,13278 10976,13229
+Alex-Wedding-Str. -> Hirtenstr.: Straßenbahntrasse	3::igndisp 11085,13239 11012,13278 10925,13322
+Hirtenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10925,13322 11012,13278 11070,13357
+Hirtenstr. -> Alex-Wedding-Str.: Straßenbahntrasse	3::igndisp 10925,13322 11012,13278 11085,13239
 Hasselwerderstr	1 18268,5739 18164,5701 18023,5623
 Haagstr.	1 -2920,2472 -2882,2373 -3030,2349
 Borussenstr.: außer Linienverkehr; für den Radverkehr gibt es einen linksseitigen Radweg	1 -3736,2849 -3758,2678
@@ -1507,3 +1520,5 @@ Am Kupfergraben	1 9754,12775 9815,12705 9870,12657
 Am Treptower Park	1 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 Czeminskistr.	1 7604,8927 7563,8871
 Berlinickestr.	1 5076,5500 5016,5401
+Sembritzkistr.: nur für Radfahrer	3 7157,5418 7199,5479 7245,5568
+Sembritzkistr.: nur für Radfahrer	3 7245,5568 7199,5479 7157,5418

@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-04-12 vvv
+#: last_checked: 2013-04-13 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -23,7 +23,7 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-04-08 vvv
+#: last_checked: 2013-04-13 vvv
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
 # REMOVED (Einbahnstraﬂe) --- Helsingforser Str.: Bauarbeiten, Einbahnstraﬂe, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
@@ -36,8 +36,8 @@ Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 13366,11651 13295,11792
 # REMOVED (fast keine Einschr‰nkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14247,11681 14272,11775
 # REMOVED (Bauarbeiten beendet) --- Mainzer Str., G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14311,11884 14357,12011
 # 
-#: last_checked: 2013-04-02
-#: next_check: 2013-04-12
+#: last_checked: 2013-04-13
+#: next_check: 2013-04-15
 #: XXX abh‰ngig von den Arbeiten in der Kynaststr.
 #: source_id: IM_018694
 #: XXX auﬂerdem: wahrscheinlich entstehen hier Radspuren, ein Radwegschild h‰ngt schon an der westlichen Seite
@@ -243,8 +243,8 @@ Gˆrlitzer Park: Fuﬂg‰nger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911
 #: XXX evtl. nach den Bauarbeiten asphaltiert oder zumindest besser gepflastert/gewalzt? Vielleicht wird auch der s¸dliche Halbkreis neu gemacht?
 #: XXX nach den Bauarbeiten den normalen Eintrag wieder aktivieren
 #: by: http://unsergoerli.de/wegebau-am-rondell-ab-november/ (Asphaltierung!)
-#: last_checked: 2013-04-04
-Gˆrlitzer Park, Rondell: Bauarbeiten, Fuﬂg‰nger	q3::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
+#: last_checked: 2013-04-13
+Gˆrlitzer Park, Rondell: Bauarbeiten, Fuﬂg‰nger	q4::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 #Gˆrlitzer Park, Rondell: Fuﬂg‰nger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 Gˆrlitzer Park, Rondell: Fuﬂg‰nger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
 Gˆrlitzer Park: Fuﬂg‰nger, eng	q2 12802,10097 12670,10160
@@ -607,7 +607,7 @@ Cecilieng‰rten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fuﬂg‰nger	q1 15393,11590 15423,11667
 (Gr¸nes Band): Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q1 15349,11911 15301,11876 15327,11724 15328,11636 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
 Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7662,4529 7772,4306
-Am Bahndamm: Fuﬂg‰nger	q1 7772,4306 7795,4242 8106,3410 8259,3349
+Am Bahndamm: Fuﬂg‰nger	q1 7772,4306 7795,4242 8106,3410
 Edenkobener Steg: Fuﬂg‰nger	q1 6627,4187 6645,4254
 Teltowkanalpromenade: enge und kurvige Unterf¸hrung	q2 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 Heinrich-Laehr-Park: Fuﬂg‰nger	q1 1525,581 1372,1208 1328,1387 1249,1672
@@ -1488,6 +1488,16 @@ M¸ggelstr., Hausdurchfahrt: einige Fuﬂg‰nger	q1 14837,11706 14856,11740
 (Frˆbel-Kindergarten - Oststr.): Fuﬂg‰nger, Kindergarten	q3 17416,5388 17455,5355
 #: XXX_prog: BS (2x)
 (Schˆnburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8953,6492 8930,6295
+#: note: allerdings ist der Radweganteil sehr schmal
+(Pr¸hﬂstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fuﬂg‰nger	q1 9854,4266 9965,4299 10051,4295 10140,4280 10221,4245
+#: note: von Norden her existiert ein "Radfahren verboten"-Hinweis, von S¸den her aber nicht
+(Westphalweg/Dirschelweg - Schwimmbad): Fuﬂg‰nger	q2 10058,4375 10051,4295
+(Richterstr. - Rathausstr.): Fuﬂg‰nger	q1- 9277,3993 9294,3921 9217,3906 9117,3898 9021,3878
+(Upstallweg - Richterstr.): Fuﬂg‰nger	q1- 9264,3874 9244,3872 9226,3870 9217,3906
+Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6673,1748 6844,1813
+(Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fuﬂg‰nger	q1 6768,2143 6722,2096 6692,2024 6534,1702 6526,1688
+(Seydlitzstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 6658,2079 6692,2024
+(Hospitalgrabenpark): Fuﬂg‰nger, Radfahren offiziell verboten	q4 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -3060,7 +3070,7 @@ Narzissenpfad: enge Straﬂe	q0- -7387,14951 -7523,14969
 #: by: ^^^
 # 
 #: by: j. bethsold
-(Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7364,3193 7409,3331 7458,3451
+(Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7365,3199 7409,3331 7458,3451
 # 
 #: by: Sigmount Kˆnigsberg
 Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1583,22376 1505,22368 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547

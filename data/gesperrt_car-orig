@@ -525,7 +525,7 @@ Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Leipziger Str. (Potsdam)	1 -12431,-2096 -12653,-2206 -12719,-2283 -12756,-2437 -12779,-2467 -12796,-2488 -12929,-2659 -13003,-2754 -13021,-2784 -13062,-2901
 #: XXX_prog für Anhänger auch nicht geeignet, Mittelstreifen zu schmal
-Grunewaldstr.: Mittelstreifen	1 6161,9128 6264,9156 6361,9175
+Grunewaldstr.: Mittelstreifen	3nocross 6161,9128 6264,9156 6361,9175
 #: note: Breite zwischen Pollern ca. 150cm
 Viktoria-Luise-Platz: Poller	3 6270,9910 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
@@ -703,7 +703,7 @@ Schäßburger Weg: Poller	3 * 7127,-248 *
 Fuchsmühler Weg: Durchfahrt gesperrt	2 7277,-77 7231,25
 Poller	3 7181,-15 7231,25 *
 Poller	3 * 7231,25 7181,-15
-Mittelstreifen	3nocross 9338,4129 9365,4006 9410,3793
+Mittelstreifen	3nocross 9336,4142 9364,4011 9410,3793
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 *
 Ontarioseestr.: Sackgasse für Autos	3 * 18339,10048 18408,10041
 #: by: Almuth Maasz vvv
@@ -795,7 +795,7 @@ Blaumeisenweg	1 5194,1690 5251,1543
 Töpferweg: Poller	3 13238,2521 13309,2410 *
 Hoppestr.	1 8617,18310 8482,18284
 Straße 134: Poller	3 * 9276,20745 *
-Straßebahntrasse	3nocross 11012,13278 11070,13357
+Straßenbahntrasse	3nocross 10976,13229 11012,13278 11070,13357
 Hasselwerderstr	1 18268,5739 18164,5701 18023,5623
 Haagstr.	1 -2920,2472 -2882,2373 -3030,2349
 Borussenstr.: außer Linienverkehr; für den Radverkehr gibt es einen linksseitigen Radweg	1 -3736,2849 -3758,2678
@@ -894,3 +894,4 @@ Am Kupfergraben	1 9754,12775 9815,12705 9870,12657
 Am Treptower Park	1 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
 Czeminskistr.	1 7604,8927 7563,8871
 Berlinickestr.	1 5076,5500 5016,5401
+Sembritzkistr.: nur für Radfahrer	3 * 7199,5479 *
