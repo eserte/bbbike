@@ -46,8 +46,9 @@ check_cgi_testing;
 
 my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
+my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 103 + $json_xs_tests + $json_xs_2_tests;
+plan tests => 103 + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -172,10 +173,25 @@ SKIP: {
 			   zielc  => '9227,8890',
 			  );
     my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'json'}, 'json output';
-    my $data = JSON::XS::decode_json($resp->decoded_content);
+    my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
     validate_bbbikecgires_data $data, 'Mehringdamm Richtung Norden';
     is $data->{Trafficlights}, 1, 'one traffic light seen';
     is $data->{Route}->[0]->{DirectionString}, 'nach Norden', 'direction string seen';
+}
+
+SKIP: {
+    skip "need YAML::Syck", $yaml_syck_tests
+	if !eval { require YAML::Syck; 1 };
+
+    my %route_endpoints = (startc => '14311,11884', # Gärtnerstr.
+			   zielc  => '14674,11370', # Wühlischstr.
+			  );
+    my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'yaml'}, 'yaml output';
+    my $data = YAML::Syck::Load($resp->decoded_content(charset => 'none'));
+    validate_bbbikecgires_data $data, 'YAML output';
+    is $data->{Route}->[0]->{Strname}, 'Gärtnerstr.', 'found 1st non-ascii name';
+    is $data->{Route}->[0]->{DirectionString}, 'nach Süden';
+    is $data->{Route}->[1]->{Strname}, 'Wühlischstr.', 'found 2nd non-ascii name';
 }
 
 {
