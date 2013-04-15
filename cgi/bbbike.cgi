@@ -4378,7 +4378,7 @@ sub display_route {
 			  Comment => '',
 			  CommentHtml => '',
 			  Coord => join(",", @{$r->path->[-1]}),
-			  PathIndex => 0+$#{$r->path}, # the "0+" is necessary for broken YAML::Syck (e.g. 1.12, which is found in Debian squeeze)
+			  PathIndex => $#{$r->path},
 			 };
     }
 
@@ -4476,15 +4476,12 @@ sub display_route {
 		);
 	    print Data::Dumper->new([$res], ['route'])->Dump;
 	} elsif ($output_as =~ /^yaml(.*)/) {
+	    require BBBikeYAML;
 	    my $is_short = $1 eq "-short";
-	    my $yaml_dump;
-	    if (!eval { require YAML::Syck; $yaml_dump = sub { local $YAML::Syck::ImplicitUnicode = 1; YAML::Syck::Dump(@_) } }) {
-		$YAML::Syck::ImplicitUnicode = $YAML::Syck::ImplicitUnicode if 0; # cease -w
-		require YAML; $yaml_dump = \&YAML::Dump;
-	    }
+	    my $yaml_dump = sub { BBBikeYAML::Dump(@_) };
 	    my $filename = filename_from_route($startname, $zielname) . ".yml";
 	    http_header
-		(-type => "text/plain", # XXX text/yaml ?
+		(-type => "application/x-yaml",
 		 @weak_cache,
 		 -Content_Disposition => "attachment; filename=$filename",
 		);

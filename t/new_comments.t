@@ -1,8 +1,7 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode:perl;coding:iso-8859-1; -*-
 
 #
-# $Id: new_comments.t,v 1.6 2007/09/20 22:54:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -17,10 +16,10 @@ use Strassen;
 BEGIN {
     if (!eval q{
 	use Test::More;
-        use YAML 0.39; # changed YAML magic
+        use BBBikeYAML;
 	1;
     }) {
-	print "1..0 # skip no Test::More and/or YAML modules\n";
+	print "1..0 # skip no Test::More and/or YAML::XS modules\n";
 	exit;
     }
     if (!eval q{
@@ -46,7 +45,7 @@ use File::Basename qw(basename);
 my @tests = (
 	     ["700,1000", "1000,1600", <<EOF, "Kombination von gleichen Abschnitten"],
 - ''
-- 'bis Königsberger Str.: Route H, Parkweg, OK'
+- 'bis KÃ¶nigsberger Str.: Route H, Parkweg, OK'
 - ~
 EOF
 
@@ -118,7 +117,7 @@ for my $test (@tests) {
     NewComments::process_data($res);
 
     my $comments = [ map { $_->{Comment} } @{$res->{Route}} ];
-    is(YAML::Dump($comments), "---\n$expected", $desc)
+    is(BBBikeYAML::Dump($comments), "---\n$expected", $desc)
 	or diag NewComments::output_data($res);
 }
 

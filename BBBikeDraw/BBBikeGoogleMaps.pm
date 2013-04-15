@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGoogleMaps.pm,v 1.7 2008/02/09 18:59:13 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2009,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package BBBikeDraw::BBBikeGoogleMaps;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.08';
 
 use base qw(BBBikeDraw);
 
@@ -137,8 +136,8 @@ sub guess_coord_system {
 	my $datadir = $Strassen::datadirs[0];
 	my $meta_yml = $datadir . "/meta.yml";
 	if ($datadir && -r $meta_yml) {
-	    require YAML::Syck;
-	    my $d = YAML::Syck::LoadFile($meta_yml);
+	    require BBBikeYAML;
+	    my $d = BBBikeYAML::LoadFile($meta_yml);
 	    if ($d->{coordsys}) {
 		$coord_system = $d->{coordsys};
 	    }

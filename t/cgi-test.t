@@ -180,14 +180,14 @@ SKIP: {
 }
 
 SKIP: {
-    skip "need YAML::Syck", $yaml_syck_tests
-	if !eval { require YAML::Syck; 1 };
+    skip "need working BBBikeYAML", $yaml_syck_tests
+	if !eval { require BBBikeYAML; 1 };
 
     my %route_endpoints = (startc => '14311,11884', # Gärtnerstr.
 			   zielc  => '14674,11370', # Wühlischstr.
 			  );
     my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'yaml'}, 'yaml output';
-    my $data = YAML::Syck::Load($resp->decoded_content(charset => 'none'));
+    my $data = BBBikeYAML::Load($resp->decoded_content(charset => 'none'));
     validate_bbbikecgires_data $data, 'YAML output';
     is $data->{Route}->[0]->{Strname}, 'Gärtnerstr.', 'found 1st non-ascii name';
     is $data->{Route}->[0]->{DirectionString}, 'nach Süden';

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -503,10 +503,10 @@ sub kmllint_string {
 	    my $schema_file = "$testdir/../misc/bbbikecgires.kwalify";
 	    $schema = 0; # false but defined
 	    if (eval { require Kwalify; 1 }) {
-		if (eval { require YAML::Syck; 1 }) {
-		    $schema = YAML::Syck::LoadFile($schema_file);
+		if (eval { require BBBikeYAML; 1 }) {
+		    $schema = BBBikeYAML::LoadFile($schema_file);
 		} else {
-		    Test::More::diag("YAML::Syck needed for loading $schema_file, but not available.");
+		    Test::More::diag("BBBikeYAML (uses YAML::XS) needed for loading $schema_file, but cannot be loaded.");
 		}
 	    } else {
 		Test::More::diag("Kwalify needed for validating with $schema_file, but not available.");
@@ -539,10 +539,10 @@ sub kmllint_string {
 	local $Test::Builder::Level = $Test::Builder::Level+1;
 
       SKIP: {
-	  Test::More::skip('YAML::Syck not available', 1)
-	      if !eval { require YAML::Syck; 1 };
+	  Test::More::skip('BBBikeYAML cannot be loaded (YAML::XS not available?)', 1)
+	      if !eval { require BBBikeYAML; 1 };
 
-	  my $data = eval { YAML::Syck::Load($content) };
+	  my $data = eval { BBBikeYAML::Load($content) };
 	  if (!$data) {
 	      Test::More::fail("Can't load YAML content: $@");
 	  } else {

@@ -162,10 +162,8 @@ foreach my $rec (@{ $plz->{Data} }) {
     }
 }
 
-#use YAML::Syck qw(Dump);
-#use YAML qw(Dump);
+#use BBBikeYAML qw(Dump);
 binmode STDOUT, ':encoding(iso-8859-1)';
-#local $YAML::Syck::ImplicitUnicode = 1;
 for my $key (sort { scalar(@{$missing_by_bezirk{$a}}) <=> scalar(@{$missing_by_bezirk{$b}}) } keys %missing_by_bezirk) {
     print "$key (" . scalar(@{$missing_by_bezirk{$key}}) . ")\n";
     for my $str (@{ $missing_by_bezirk{$key} }) {

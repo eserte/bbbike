@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: yaml2bbd,v 1.1 2005/10/26 00:53:33 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,11 +12,13 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-use YAML;
 use strict;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+use BBBikeYAML;
 
 my $yamlfile = shift || die "usage: $0 yamlfile";
-my $data = YAML::LoadFile($yamlfile) or die "Can't parse data in $yamlfile";
+my $data = BBBikeYAML::LoadFile($yamlfile) or die "Can't parse data in $yamlfile";
 print join("\n",
 	   map {
 	       "$_->{name}\t$_->{cat} $_->{coords}[0]";

@@ -15,9 +15,9 @@ GetOptions("validate!" => \$do_validate)
 my $schema;
 if ($do_validate) {
     require Kwalify;
-    require YAML::Syck;
+    require BBBikeYAML;
     my $schema_file = "$FindBin::RealBin/../misc/bbd.kwalify";
-    $schema = YAML::Syck::LoadFile($schema_file);
+    $schema = BBBikeYAML::LoadFile($schema_file);
 }
 
 use Strassen::Core;
@@ -46,8 +46,8 @@ if ($schema) {
     Kwalify::validate($schema, $res);
     print STDERR "OK\n";
 } else {
-    require YAML::Syck;
-    print YAML::Syck::Dump($res);
+    require BBBikeYAML;
+    print BBBikeYAML::Dump($res);
 }
 
 =pod

@@ -4139,8 +4139,8 @@ sub active_temp_blockings_for_date_dialog {
 		if $rec->{until};
 	}
 	my $dump;
-	if (eval { require YAML; 1 }) {
-	    $dump = YAML::Dump(\@future);
+	if (eval { require BBBikeYAML; 1 }) {
+	    $dump = BBBikeYAML::Dump(\@future);
 	} else {
 	    $dump = Data::Dumper->new([@future], [])->Indent(1)->Dump;
 	}

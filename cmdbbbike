@@ -162,8 +162,8 @@ sub cmdline_output {
 sub _dump_anything {
     my($self, $data) = @_;
     if ($self->{YAML}) {
-	require YAML::Syck;
-	print YAML::Syck::Dump($data);
+	require BBBikeYAML;
+	print BBBikeYAML::Dump($data);
     } else {
 	require Data::Dumper;
 	print Data::Dumper->new([$data],[])->Indent(1)->Useqq(1)->Dump;

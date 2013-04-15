@@ -235,8 +235,8 @@ for my $cgiurl (@urls) {
 		    validate_bbbikecgires_yaml_string($content, 'yaml content');
 		} else {
 		    # the yaml-short variant has no schema
-		    require YAML::Syck;
-		    my $data = eval { YAML::Syck::Load($content) };
+		    require BBBikeYAML;
+		    my $data = eval { BBBikeYAML::Load($content) };
 		    my $err = $@;
 		    ok $data, "Decoded YAML content"
 			or diag $err;

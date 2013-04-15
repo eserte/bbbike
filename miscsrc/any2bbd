@@ -81,8 +81,8 @@ my $do_infotobbd = $opt{infotobbd} || 0;
 my $file_info = $opt{info};
 my %file_info;
 if ($file_info) {
-    require YAML;
-    %file_info = %{ YAML::LoadFile($file_info) };
+    require BBBikeYAML;
+    %file_info = %{ BBBikeYAML::LoadFile($file_info) };
 }
 
 my @files = @ARGV;

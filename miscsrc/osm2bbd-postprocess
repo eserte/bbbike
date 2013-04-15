@@ -451,13 +451,13 @@ sub target_icao_metar {
 	}
 	return;
     }
-    if (!eval { require YAML::Syck; 1 }) {
-	print STDERR "no YAML::Syck available, skipping";
+    if (!eval { require BBBikeYAML; 1 }) {
+	print STDERR "no BBBikeYAML available, skipping";
 	return;
     }
 
     # Process
-    my $locations = YAML::Syck::LoadFile($locations_yml); # die if problems!
+    my $locations = BBBikeYAML::LoadFile($locations_yml); # die if problems!
     my %icao_exists = map { ($_->[0] => 1) } @$locations;
     require Strassen::Core;
     my $s = Strassen->new_stream("$datadir/icao");
@@ -485,10 +485,11 @@ sub target_icao_metar {
 
 sub _load_meta {
     # assume to be in the right directory
-    if (!eval { require YAML::Syck; YAML::Syck->import(qw(LoadFile DumpFile)); 1 } &&
+    if (!eval { require BBBikeYAML; BBBikeYAML->import(qw(LoadFile DumpFile)); 1 } &&
+	!eval { require YAML::Syck; YAML::Syck->import(qw(LoadFile DumpFile)); 1 } &&
 	!eval { require YAML;       YAML      ->import(qw(LoadFile DumpFile)); 1 }
        ) {
-	die +{ msg => "no YAML/YAML::Syck available, skipping",
+	die +{ msg => "no YAML::XS/YAML/YAML::Syck available, skipping",
 	       code => 'NO_YAML',
 	     };
     }
