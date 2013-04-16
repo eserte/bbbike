@@ -44,11 +44,19 @@ plan 'no_plan';
     my $test_content = "test content\näöü";
 
     $bc->clean_cache;
-    ok !$bc->exists_content(CGI->new({ %cgi_args })), 'Test content does not exist already';
-    ok $bc->put_content(CGI->new({ %cgi_args }), $test_content, {key => "val"}), 'Putting test content';
-    my($content, $meta) = $bc->get_content(CGI->new({ %cgi_args }));
-    is $content, $test_content, 'Got content';
+
+    my $cache_entry = $bc->get_entry(CGI->new({ %cgi_args }));
+    isa_ok $cache_entry, 'BBBikeCGICache::Entry';
+
+    ok !$cache_entry->exists_content, 'Test content does not exist already';
+    ok $cache_entry->put_content($test_content, {key => "val"}), 'Putting test content';
+    ok $cache_entry->exists_content, 'Now test content exists';
+    my $meta = $cache_entry->get_meta;
     is_deeply $meta, {key => "val"}, 'Got meta';
+    my $content;
+    open my $content_ofh, ">", \$content or die $!;
+    $cache_entry->stream_content($content_ofh);
+    is $content, $test_content, 'Got content';
 
     my $updir = dirname $bc->rootdir;
     my $expireddir = $updir . "/expired";
@@ -64,7 +72,7 @@ plan 'no_plan';
     $bc->clean_expired_cache;
     ok !-e $expireddir, "Expired directory was removed";
 
-    ok $bc->exists_content(CGI->new({ %cgi_args })), 'Non-expired content still exists';
+    ok $cache_entry->exists_content, 'Non-expired content still exists';
 }
 
 __END__

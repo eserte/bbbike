@@ -46,7 +46,9 @@ TARGET_LIVE=		hosteurope
 EXTRA_MISCSRC_FILES=	bbd2esri \
 			relevant_errorlog.pl \
 			winter_optimization.pl \
-			FixRemoteAddrHandler.pm
+			FixRemoteAddrHandler.pm \
+			bbbike_cgi_clean_expired_cache.pl \
+			cron-wrapper
 EXTRA_MISC_FILES=	gpx.xsd bbbikecgires.kwalify bbbikecgires.rnc
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/bbbike-opensearch.tpl.src \
@@ -811,7 +813,7 @@ init-environment:
 	lwp-request -m GET 'http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/bbbike.cgi?init_environment=1'
 
 clean-expired-cache:
-	lwp-request -m GET 'http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/bbbike.cgi?clean_expired_cache=1'
+	$(BBBIKE_ROOT_DIR)/miscsrc/bbbike_cgi_clean_expired_cache.pl -host ${BBBIKE_HOSTEUROPE_HOST}
 
 init-local-environment:
 	lwp-request -m GET '${LOCAL_CGI_URL}/bbbike.cgi?init_environment=1'

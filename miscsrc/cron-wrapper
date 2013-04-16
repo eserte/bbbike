@@ -1,0 +1,14 @@
+#!/usr/bin/env perl
+
+# Copyright 2011 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+
+use strict;
+use IPC::Run 'run';
+
+my @cmd = @ARGV;
+my $stdout_and_err;
+run \@cmd, '>&', \$stdout_and_err
+    or die "Running $cmd[0]... failed with exit code ".($?>>8)."\n$stdout_and_err";
+

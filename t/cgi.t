@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,6 +26,7 @@ $Data::Dumper::Useqq = 1;
 $Data::Dumper::Indent = 1;
 use Safe;
 use CGI qw();
+use Time::HiRes qw(time);
 
 use FindBin;
 use lib ($FindBin::RealBin,
@@ -57,6 +58,7 @@ if (defined $ENV{BBBIKE_TEST_CGIURL}) {
 
 my $cpt = Safe->new;
 
+my $test_file_cache = 1; # if specified, then some URLs will be fetched twice
 my $do_display = 0;
 my $do_xxx;
 my $do_accept_gzip = 1;
@@ -82,8 +84,9 @@ if (!GetOptions("cgiurl=s" => sub {
 		"v!" => \$v,
 		"skip-mapserver!" => \$skip{mapserver},
 		"accept-gzip!" => \$do_accept_gzip,
+		"file-cache!" => \$test_file_cache,
 	       )) {
-    die "usage: $0 [-cgiurl url] [-fast] [-display] [-v] [-skip-mapserver] [-noaccept-gzip] [-xxx]";
+    die "usage: $0 [-cgiurl url] [-fast] [-display] [-v] [-skip-mapserver] [-noaccept-gzip] [-nofile-cache] [-xxx]";
 }
 
 if (!@urls) {
@@ -102,7 +105,7 @@ if (!@urls) {
     }
 }
 
-plan tests => 255 * scalar @urls;
+plan tests => (255 + ($test_file_cache ? 6*3 : 0)) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -169,8 +172,9 @@ for my $cgiurl (@urls) {
 	    skip "No palmdoc tests", 4
 		if $output_as eq 'palmdoc' && $skip{palmdoc};
 
-	    my($content, $resp) = std_get "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as",
-					 testname => "Route result output_as=$output_as";
+	    my $url = "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as";
+	    my($content, $resp) = std_get $url, testname => "Route result output_as=$output_as";
+	    my($content2, $resp2);
 	    if ($output_as eq '' || $output_as eq 'print') {
 		is $resp->content_type, 'text/html', "Expected content type";
 		my $len = extract_length($content);
@@ -205,10 +209,16 @@ for my $cgiurl (@urls) {
 				     )$}x) {
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.gpx$}, 'gpx filename';
 		gpxlint_string($content, "xmllint check with gpx schema for $output_as");
+		if ($test_file_cache) {
+		    ($content2, $resp2) = std_get $url, testname => "2nd fetch";
+		}
 	    } elsif ($output_as eq 'kml-track') {
 		is $resp->header("content-type"), 'application/vnd.google-earth.kml+xml', "The KML mime type";
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.kml$}, 'kml filename';
 		kmllint_string($content, "xmllint check for $output_as");
+		if ($test_file_cache) {
+		    ($content2, $resp2) = std_get $url, testname => "2nd fetch";
+		}
 	    } elsif ($output_as =~ m{^(json|geojson$)}) {
 		if ($output_as eq 'json') {
 		    validate_bbbikecgires_json_string($content, 'json content');
@@ -231,6 +241,10 @@ for my $cgiurl (@urls) {
 		    ok $data, "Decoded YAML content"
 			or diag $err;
 		}
+	    }
+	    if ($content2) {
+		ok $content2 eq $content, "2nd fetch content equals ($output_as)";
+		is $resp2->content_type, $resp->content_type, "2nd fetch has same content-type ($output_as)";
 	    }
 	}
     }
@@ -537,6 +551,11 @@ for my $cgiurl (@urls) {
 		ok length $content, "The PDF is non-empty";
 		display($resp);
 		like $resp->header('Content-Disposition'), qr{inline; filename=.*\.pdf$}, 'PDF filename'; # unfortunately in this case (missing session?) there's no nice filename from route start/endpoint
+		if ($test_file_cache) {
+		    my($content2, $resp2) = std_get $url, testname => "imagetype=$imagetype (2nd possibly cached fetch)";
+		    ok $content2 eq $content, "2nd fetch content equals ($imagetype)";
+		    is $resp2->content_type, $resp->content_type, "2nd fetch has same content-type ($imagetype)";
+		}
 	    } elsif ($imagetype =~ /svg/) {
 		is $resp->header("content-type"), "image/svg+xml", "It's a SVG image";
 		ok length $content, "The SVG is non-empty";
@@ -822,8 +841,10 @@ sub std_get ($;@) {
     die "Unhandled arguments: " . join(" ", %opts) if %opts;
 
     my $req = HTTP::Request->new('GET', $url, $default_hdrs);
+    my $t0 = time;
     my $resp = $ua->request($req);
-    ok $resp->is_success, $testname
+    my $dt = sprintf "%.3fs", time-$t0;
+    ok $resp->is_success, "$testname (reqtime $dt)"
 	or diag(Dumper($resp));
     my $content = uncompr($resp);
     wantarray ? ($content, $resp) : $content;
