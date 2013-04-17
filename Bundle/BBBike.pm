@@ -63,9 +63,7 @@ XML::Parser	- optional für UAProf parsing (bevorzugt wird allerdings XML::LibXML
 
 XML::Twig	- alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML::Parser
 
-YAML	- optional für YAML-Dumps der BBBike-Route
-
-YAML::Syck	- optional für die Testsuite sowie fuer temp_blockings, könnte YAML.pm in Zukunft komplett ersetzen
+YAML::XS	- optional für YAML-Dumps der BBBike-Route, für die Testsuite sowie fuer temp_blockings
 
 JSON::XS	- optional für JSON-Dumps der BBBike-Route und diverse Serialisierungsaufgaben
 
