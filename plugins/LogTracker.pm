@@ -798,11 +798,9 @@ sub pref_statistics {
 	}
 
 	my $res;
-	if (eval { require YAML; 1 }) {
-	    local $YAML::UseHeader = 0;
-	    local $YAML::Indent = 8;
-	    $res = "Preferences:\n" . YAML::Dump(\%pref) .
-		"\nImage:\n" . YAML::Dump(\%image);
+	if (eval { require BBBikeYAML; 1 }) {
+	    $res = "Preferences:\n" . BBBikeYAML::Dump(\%pref) .
+		"\nImage:\n" . BBBikeYAML::Dump(\%image);
 	} else {
 	    require Data::Dumper;
 	    $res = Data::Dumper->new([\%pref],[])

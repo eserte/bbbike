@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,13 +20,14 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.00;
+$VERSION = 1.01;
 
 use File::Temp qw(tempfile);
 use Flickr::API ();
 use LWP::UserAgent ();
-use YAML::Syck qw(LoadFile);
 use XML::LibXML ();
+
+use BBBikeYAML qw(LoadFile);
 
 use vars qw(@photos);
 

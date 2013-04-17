@@ -41,7 +41,8 @@ if ($task eq 'pl_to_yml') {
 	or usage("out file is missing");
     @ARGV and usage("extra args");
 
-    require YAML::Syck;
+    _add_bbbike_inc();
+    require BBBikeYAML;
 
     no warnings 'once';
     #local $YAML::UseBlock = 1;
@@ -49,7 +50,7 @@ if ($task eq 'pl_to_yml') {
     local @temp_blocking;
     do $in_file;
     die "Can't find \@temp_blocking array in $in_file" if not @temp_blocking;
-    YAML::Syck::DumpFile($out_file, \@temp_blocking);
+    BBBikeYAML::DumpFile($out_file, \@temp_blocking);
 
 } elsif ($task eq 'cmp_pl_and_yml') {
     my $file_pl = shift
@@ -61,13 +62,15 @@ if ($task eq 'pl_to_yml') {
     require Data::Compare;
     require Data::Dumper;
     require File::Temp;
-    require YAML::Syck;
+
+    _add_bbbike_inc();
+    require BBBikeYAML;
 
     use vars qw(@temp_blocking);
     local @temp_blocking;
     do $file_pl;
     die "Can't find \@temp_blocking array in $file_pl" if not @temp_blocking;
-    my $y = YAML::Syck::LoadFile($file_yml);
+    my $y = BBBikeYAML::LoadFile($file_yml);
 
     no warnings 'once';
     local $Data::Dumper::Sortkeys = 1;
@@ -118,9 +121,10 @@ sub yml_to_bbd {
     my $filter_recurring    = $args{'filter'} && $args{'filter'} eq 'recurring';
     my $filter_nonrecurring = $args{'filter'} && $args{'filter'} eq 'nonrecurring';
 
-    require YAML::Syck;
+    _add_bbbike_inc();
+    require BBBikeYAML;
 
-    my $x = YAML::Syck::LoadFile($infile);
+    my $x = BBBikeYAML::LoadFile($infile);
     for my $rec (@$x) {
 	my $d = $rec->{data};
 	next if not $d;
@@ -146,11 +150,9 @@ sub yml_to_bbd {
 sub bbd_to_existsid {
     my(@infiles) = @_;
 
-    require lib;
-    require FindBin;
-    lib->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+    _add_bbbike_inc();
     require Strassen::Core;
-    require YAML::Syck;
+    require BBBikeYAML;
 
     my %existsid;
     for my $infile (@infiles) {
@@ -162,7 +164,7 @@ sub bbd_to_existsid {
 		 }
 	     });
     }
-    print YAML::Syck::Dump(\%existsid);
+    print BBBikeYAML::Dump(\%existsid);
 }
 
 sub _filter_real_source_ids {
@@ -174,6 +176,12 @@ sub _filter_real_source_ids {
 	push @ret_source_ids, $ret_source_id;
     }
     @ret_source_ids;
+}
+
+sub _add_bbbike_inc {
+    require lib;
+    require FindBin;
+    lib->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 }
 
 __END__

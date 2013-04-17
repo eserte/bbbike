@@ -2136,13 +2136,18 @@ sub output_meta {
     rename $meta_file_dd."~", $meta_file_dd
 	or die "While renaming $meta_file_dd~ to $meta_file_dd: $!";
 
-    if (eval { require YAML::Syck; 1 }) {
-	YAML::Syck::DumpFile($meta_file_yml, \%meta);
-    } elsif (eval { require YAML; 1 }) {
-	YAML::DumpFile($meta_file_yml, \%meta);
+    if (eval { require BBBikeYAML; 1 }) {
+	BBBikeYAML::DumpFile($meta_file_yml, \%meta);
     } else {
-	warn "No YAML::Syck or YAML.pm available, cannot dump $meta_file_yml.\n";
-	unlink $meta_file_yml; # may be an older file there
+	warn "No BBBikeYAML (or YAML::XS) available, fallback to possibly buggy YAML::Syck or YAML.pm...\n";
+	if (eval { require YAML::Syck; 1 }) {
+	    YAML::Syck::DumpFile($meta_file_yml, \%meta);
+	} elsif (eval { require YAML; 1 }) {
+	    YAML::DumpFile($meta_file_yml, \%meta);
+	} else {
+	    warn "No YAML::Syck or YAML.pm available, cannot dump $meta_file_yml.\n";
+	    unlink $meta_file_yml; # may be an older file there
+	}
     }
 }
 

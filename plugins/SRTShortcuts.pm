@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.87;
+$VERSION = 1.88;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -2019,12 +2019,12 @@ sub gps_data_viewer {
     }
 
     my $vehicles_to_brands;
-    if (-r "$gps_data_dir/vehicles_brands.yml" && eval { require YAML::Syck; 1 }) {
-	$vehicles_to_brands = YAML::Syck::LoadFile("$gps_data_dir/vehicles_brands.yml");
+    if (-r "$gps_data_dir/vehicles_brands.yml" && eval { require BBBikeYAML; 1 }) {
+	$vehicles_to_brands = BBBikeYAML::LoadFile("$gps_data_dir/vehicles_brands.yml");
     }
     my $gps_devices;
-    if (-r "$gps_data_dir/gps_devices.yml" && eval { require YAML::Syck; 1 }) {
-	$gps_devices = YAML::Syck::LoadFile("$gps_data_dir/gps_devices.yml");
+    if (-r "$gps_data_dir/gps_devices.yml" && eval { require BBBikeYAML; 1 }) {
+	$gps_devices = BBBikeYAML::LoadFile("$gps_data_dir/gps_devices.yml");
     }
 
     $gps_view = $t->GpsmanData(-command => sub {
@@ -2113,12 +2113,12 @@ sub gps_data_viewer {
 	$f->Button(-text => 'Statistics',
 		   -command => sub {
 		       require GPS::GpsmanData::Stats;
-		       require YAML::Syck;
+		       require BBBikeYAML;
 		       my $stats = GPS::GpsmanData::Stats->new($gps);
 		       $stats->run_stats;
 		       my $tt = $t->Toplevel(-title => 'GPS data statistics');
 		       my $txt = $tt->Scrolled('ROText', -width => 30, -scrollbars => 'osoe')->pack(qw(-fill both -expand 1));
-		       $txt->insert('end', YAML::Syck::Dump($stats->human_readable));
+		       $txt->insert('end', BBBikeYAML::Dump($stats->human_readable));
 		       $tt->Button(-text => 'Close', -command => sub { $tt->destroy })->pack;
 		   })->pack(-side => 'left');
     }
@@ -2617,8 +2617,8 @@ sub show_bbbike_suggest_toplevel {
 # Garmin devcap
 
 sub garmin_devcap {
-    require YAML::Syck;
-    my $devcap_data = YAML::Syck::LoadFile("$FindBin::RealBin/misc/garmin_devcap.yaml");
+    require BBBikeYAML;
+    my $devcap_data = BBBikeYAML::LoadFile("$FindBin::RealBin/misc/garmin_devcap.yaml");
     my $t = $main::top->Toplevel(-title => 'Garmin devices');
     my $lb = $t->Scrolled('Listbox', -scrollbars => 'osoe', -selectmode => 'single')->pack(qw(-fill both -expand 1));
     my @data;

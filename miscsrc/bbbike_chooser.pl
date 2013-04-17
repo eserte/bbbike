@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -31,10 +31,11 @@ use Tk::Balloon;
 use Tk::Pane;
 
 BEGIN {
-    eval q{ use YAML::Syck qw(LoadFile); 1 } ||
-	eval q{ use YAML qw(LoadFile); 1 } ||
-	    eval q{ use Safe; 1 } ||
-		die "ERROR: Can't load any YAML parser (tried YAML::Syck and YAML) and also no success loading Safe.pm: $@";
+    eval q{ use BBBikeYAML qw(LoadFile); 1 } ||
+	eval q{ use YAML::Syck qw(LoadFile); 1 } ||
+	    eval q{ use YAML qw(LoadFile); 1 } ||
+		eval q{ use Safe; 1 } ||
+		    die "ERROR: Can't load any YAML parser (tried BBBikeYAML, YAML::Syck and YAML) and also no success loading Safe.pm: $@";
 }
 
 use BBBikeDir qw(get_data_osm_directory);

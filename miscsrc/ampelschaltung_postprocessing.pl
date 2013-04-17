@@ -262,8 +262,8 @@ for my $key (@sorted_ampel_data_with_cycles_keys) {
 }
 
 if ($as_yaml_file) {
-    require YAML::Syck;
-    YAML::Syck::DumpFile($as_yaml_file, \@out_data);
+    require BBBikeYAML;
+    BBBikeYAML::DumpFile($as_yaml_file, \@out_data);
 }
 
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%ampel_data_with_cycles],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX

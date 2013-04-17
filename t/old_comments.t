@@ -1,8 +1,7 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode:perl;coding:iso-8859-1; -*-
 
 #
-# $Id: old_comments.t,v 1.17 2008/12/31 17:18:01 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -18,10 +17,10 @@ BEGIN {
     if (!eval q{
 	use Test::More;
 	use LWP::UserAgent;
-	use YAML::Syck qw(Load Dump);
+	use BBBikeYAML qw(Load Dump);
 	1;
     }) {
-	print "1..0 # skip no Test::More, LWP::UserAgent and/or YAML::Syck modules\n";
+	print "1..0 # skip no Test::More, LWP::UserAgent and/or YAML::XS modules\n";
 	exit;
     }
 }
@@ -43,8 +42,6 @@ BEGIN {
 }
 
 check_cgi_testing;
-
-$YAML::Syck::ImplicitUnicode = 1; # otherwise utf8 is wrong
 
 no warnings 'qw';
 
@@ -74,7 +71,7 @@ my @tests = (
 	     # Czeminskistr. -> Julius-Leber-Brücke 
 	     ["7603,8911", "7497,8916", <<EOF, "CP;"],
 - {}
-- als Julius-Leber-Brücke ausgeschildert: 1
+- als Julius-Leber-BrÃ¼cke ausgeschildert: 1
 - {}
 EOF
 	     ["7497,8916", "7603,8911", <<EOF, "CP; Rückweg"],
@@ -86,7 +83,7 @@ EOF
 	     # Hagelberger/Yorck
 	     ["8773,9524", "8595,9495", <<EOF, "PI"],
 - Kopfsteinpflaster: 1
-- auf linken Gehweg fahren, Straßenseite an der Fußgängerampel Yorckstr./Katzbachstr. wechseln: 1
+- auf linken Gehweg fahren, StraÃŸenseite an der FuÃŸgÃ¤ngerampel Yorckstr./Katzbachstr. wechseln: 1
 - {}
 EOF
 	     ["8777,9601", "8595,9495", <<EOF, "No PI, starting point outside"],
@@ -132,7 +129,7 @@ EOF
 	     # Bismarckplatz
 	     ["2947,9367", "2348,9398", <<EOF, "CP2; ohne Teilstrecke"],
 - {}
-- als Caspar-Theyß-Str. ausgeschildert: 1
+- als Caspar-TheyÃŸ-Str. ausgeschildert: 1
 - {}
 EOF
 	     ["2348,9398", "2947,9367", <<EOF, "Rückweg"],
@@ -143,7 +140,7 @@ EOF
 
 	     # Lützowplatz
 	     ["6732,10754", "6642,12010", <<EOF, "Mehrere Kommentare am gleichen Abschnitt", TODO_NEW_COMMENTS],
-- als Lützowplatz ausgeschildert (Teilstrecke): 1
+- als LÃ¼tzowplatz ausgeschildert (Teilstrecke): 1
 - {}
 - {}
 - R1: 1
@@ -157,7 +154,7 @@ EOF
   RR3: 1
 - {}
 - {}
-- als Lützowplatz ausgeschildert (Teilstrecke): 1
+- als LÃ¼tzowplatz ausgeschildert (Teilstrecke): 1
 - {}
 EOF
 	    );

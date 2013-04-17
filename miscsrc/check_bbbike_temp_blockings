@@ -109,8 +109,8 @@ sub load_perl_file {
 }
 
 sub load_yaml_file {
-    require YAML::Syck;
-    my $in = YAML::Syck::LoadFile($yaml_file);
+    require BBBikeYAML;
+    my $in = BBBikeYAML::LoadFile($yaml_file);
     @temp_blocking = @$in;
     if (!@temp_blocking) {
 	die "No \@temp_blocking variable in $yaml_file found";

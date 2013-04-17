@@ -438,7 +438,7 @@ return 1 if caller;
 
 use File::Temp qw(tempfile);
 use Getopt::Long;
-use YAML::Syck;
+use BBBikeYAML;
 
 my $old_store_file;
 my $new_store_file;
@@ -461,17 +461,16 @@ GetOptions("oldstore=s" => \$old_store_file,
 
 my $old_store;
 if ($old_store_file) {
-    local $YAML::Syck::ImplicitUnicode = 1;
-    $old_store = YAML::Syck::LoadFile($old_store_file);
+    $old_store = BBBikeYAML::LoadFile($old_store_file);
 }
 
 my %existsid_current;
 my %existsid_old;
 if ($existsid_current_file) {
-    %existsid_current = %{ YAML::Syck::LoadFile($existsid_current_file) };
+    %existsid_current = %{ BBBikeYAML::LoadFile($existsid_current_file) };
 }
 if ($existsid_all_file) {
-    my $existsid_all = YAML::Syck::LoadFile($existsid_all_file);
+    my $existsid_all = BBBikeYAML::LoadFile($existsid_all_file);
     while(my($k,$v) = each %$existsid_all) {
 	if (!$existsid_current{$k}) {
 	    $existsid_old{$k} = 1;
@@ -516,8 +515,7 @@ if ($file && $mapfile) {
     %res = $vmz->parse($file);
     $vmz->parse_mappage($mapfile, \%res);
 } else {
-    local $YAML::Syck::ImplicitUnicode = 1;
-    my $res = YAML::Syck::LoadFile($new_store_file);
+    my $res = BBBikeYAML::LoadFile($new_store_file);
     %res = %$res;
 }
 if ($berlinsummaryfile) {
@@ -531,8 +529,7 @@ if ($berlinsummaryfile) {
 }
 my $bbd = $vmz->as_bbd($res{place2rec}, $old_store);
 if ($new_store_file && $do_fetch) {
-    local $YAML::Syck::ImplicitUnicode = 1;
-    YAML::Syck::DumpFile($new_store_file, \%res);
+    BBBikeYAML::DumpFile($new_store_file, \%res);
 }
 if ($out_bbd) {
     open my $ofh, ">", $out_bbd or die $!;
@@ -553,7 +550,7 @@ VMZTool - parse road work information for Berlin and Brandenburg
 Conversion between old vmz file into new format for "removed"
 detection:
 
-    perl -MYAML::Syck=LoadFile,Dump -e '$d = LoadFile(shift); for (@$d) { $seen{$_->{id}} = $_ } print Dump { id2rec => \%seen }' ~/cache/misc/vmz.yaml > /tmp/oldvmz.yaml
+    perl -MYAML::XS=LoadFile,Dump -e '$d = LoadFile(shift); for (@$d) { $seen{$_->{id}} = $_ } print Dump { id2rec => \%seen }' ~/cache/misc/vmz.yaml > /tmp/oldvmz.yaml
 
 First-time usage:
 

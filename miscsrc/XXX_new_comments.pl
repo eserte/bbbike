@@ -25,7 +25,7 @@ use Strassen;
 use Strassen::Kreuzungen;
 use Strassen::Dataset;
 use BBBikeUtil qw(m2km);
-use YAML;
+use BBBikeYAML ();
 use Getopt::Long;
 
 my $skip_lines;
@@ -155,7 +155,7 @@ sub parse_line {
 
 	    my $yaml = `$cgi`;
 
-	    my $d = YAML::Load($yaml);
+	    my $d = BBBikeYAML::Load($yaml);
 	    return $d;
         }
     }
@@ -1009,7 +1009,7 @@ Trafficlights: 1
 EOF
 
 $inx = 0 if !defined $inx;
-my $d = YAML::Load($yaml[$inx]);
+my $d = BBBikeYAML::Load($yaml[$inx]);
 
 $d;
 }
