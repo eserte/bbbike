@@ -41,6 +41,7 @@ if ($task eq 'pl_to_yml') {
 	or usage("out file is missing");
     @ARGV and usage("extra args");
 
+    _add_bbbike_inc();
     require BBBikeYAML;
 
     no warnings 'once';
@@ -61,6 +62,8 @@ if ($task eq 'pl_to_yml') {
     require Data::Compare;
     require Data::Dumper;
     require File::Temp;
+
+    _add_bbbike_inc();
     require BBBikeYAML;
 
     use vars qw(@temp_blocking);
@@ -118,6 +121,7 @@ sub yml_to_bbd {
     my $filter_recurring    = $args{'filter'} && $args{'filter'} eq 'recurring';
     my $filter_nonrecurring = $args{'filter'} && $args{'filter'} eq 'nonrecurring';
 
+    _add_bbbike_inc();
     require BBBikeYAML;
 
     my $x = BBBikeYAML::LoadFile($infile);
@@ -146,9 +150,7 @@ sub yml_to_bbd {
 sub bbd_to_existsid {
     my(@infiles) = @_;
 
-    require lib;
-    require FindBin;
-    lib->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+    _add_bbbike_inc();
     require Strassen::Core;
     require BBBikeYAML;
 
@@ -174,6 +176,12 @@ sub _filter_real_source_ids {
 	push @ret_source_ids, $ret_source_id;
     }
     @ret_source_ids;
+}
+
+sub _add_bbbike_inc {
+    require lib;
+    require FindBin;
+    lib->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 }
 
 __END__
