@@ -1470,32 +1470,29 @@ sub choose_form {
 	# Überprüfen, ob eine in PLZ vorhandene Straße auch in
 	# Strassen vorhanden ist und ggfs. $....name setzen
 	if ($$nameref eq '' && $$tworef ne '') {
-	    my(@s) = split(/$delim/o, $$tworef);
-	    {
-		my($strasse, $bezirk, $plz) = @s;
-		warn "Wähle $type-Straße für $strasse/$bezirk (1st)\n" if $debug;
-		if ($bezirk =~ $outer_berlin_qr) {
-		    my $name = _outer_berlin_hack($strasse, $bezirk);
-		    if ($name) {
-			$$nameref = $name;
-			$q->param($type . 'plz', $plz);
+	    my($strasse, $bezirk, $plz) = split(/$delim/o, $$tworef);
+	    warn "Wähle $type-Straße für $strasse/$bezirk (1st)\n" if $debug;
+	    if ($bezirk =~ $outer_berlin_qr) {
+		my $name = _outer_berlin_hack($strasse, $bezirk);
+		if ($name) {
+		    $$nameref = $name;
+		    $q->param($type . 'plz', $plz);
+		}
+	    } else {
+		my $str = get_streets();
+		my $pos = $str->choose_street($strasse, $bezirk);
+		if (!defined $pos) {
+		    # Can't use upgrade_scope here:
+		    if ($str->{Scope} eq 'city') {
+			warn "Enlarge streets for umland\n" if $debug;
+			$q->param("scope", "region");
+			$str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
 		    }
-		} else {
-		    my $str = get_streets();
-		    my $pos = $str->choose_street($strasse, $bezirk);
-		    if (!defined $pos) {
-			# Can't use upgrade_scope here:
-			if ($str->{Scope} eq 'city') {
-			    warn "Enlarge streets for umland\n" if $debug;
-			    $q->param("scope", "region");
-			    $str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
-			}
-			$pos = $str->choose_street($strasse, $bezirk);
-		    }
-		    if (defined $pos) {
-			$$nameref = $str->get($pos)->[0];
-			$q->param($type . 'plz', $plz);
-		    }
+		    $pos = $str->choose_street($strasse, $bezirk);
+		}
+		if (defined $pos) {
+		    $$nameref = $str->get($pos)->[0];
+		    $q->param($type . 'plz', $plz);
 		}
 	    }
 	}
