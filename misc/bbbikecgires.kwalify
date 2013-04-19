@@ -141,7 +141,7 @@ mapping:
 
           Type:
             # XXX Description missing
-            type: text
+            type: any
             enum:
               - gesperrt
               - handicap
