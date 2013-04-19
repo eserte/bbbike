@@ -1169,7 +1169,10 @@ if ($use_file_cache) {
 	if ($cache_entry->exists_content) {
 	    my $meta = $cache_entry->get_meta;
 	    if ($meta) {
-		warn "DEBUG: Cache hit for " . $q->query_string; # if $debug;
+		if (1) { # $debug) {
+		    warn "DEBUG: Cache hit for " . $q->query_string . "\n";
+		    http_req_logging();
+		}
 		http_header(@{ $meta->{headers} || [] });
 		$cache_entry->stream_content;
 		my_exit(0);
@@ -7674,6 +7677,14 @@ sub _match_to_cgival {
 sub _get_weekly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], _get_cache_prefix() . '_weekly', 'weekly') }
 sub _get_hourly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], _get_cache_prefix() . '_hourly', 'hourly') }
 sub _get_cache_prefix { $Strassen::Util::cacheprefix . ($is_beta ? '_beta' : '') . ($lang ? "_$lang" : '') }
+
+sub http_req_logging {
+    eval {
+	require JSON::XS;
+	warn "DEBUG: " . JSON::XS::encode_json({ map { ($_ => $q->http($_)) } $q->http }) . "\n";
+    };
+    warn $@ if $@;
+}
 
 ######################################################################
 #
