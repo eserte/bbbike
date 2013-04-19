@@ -18,8 +18,8 @@
 # REMOVED (laut http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4430&options=4 müsste erstmal ein BVV-Beschluss durchkommen...) ---  by: MoPo 2009-08-01, soll 2009 realisiert werden vvv --- #: last_checked: 2012-08-05 --- #: next_check: 2013-01-01 --- #: XXX wird hier jemals eine Radspur entstehen? Insbesondere an der Zufahrt zum Parkhaus des "Schlosses" scheint kein Platz dafür zu existieren... (keep always "private") --- Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 --- #: by: ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2012-09-22
-#: next_check: 2013-04-15
+#: last_checked: 2013-04-19
+#: next_check: 2013-07-19
 #: XXX Baumaßnahme 1.48 (Realisierung nach 2011)
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
@@ -102,13 +102,13 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-04-04
+#: last_checked: 2013-04-19
 #: next_check: 2013-06-01
-Brückenstr./Köpenicker Str.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
+Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-04-04
+#: last_checked: 2013-04-18
 #: next_check: 2013-06-01
 Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
@@ -807,6 +807,11 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4429
+Am Teltowkanal: gibt es durch die Bauarbeiten hier Einschränkungen? Wird die Qualität danach besser werden?	? 8784,5095 8881,5143 9171,5263 9192,5272
+# 
+Linkstr.: hier auch Vorfahrt?	? 8392,11077 8370,11010 8342,10916
 # 
 #: XXX ggfs. mal diese Route ausprobieren. Der Vorplatz ist übrigens komplett asphaltiert; evtl. sollte man den "Schlenker" hier aufheben...
 Gleisdreieckpark - Uferstr.: benötigt wahrscheinlich einen comments_path-Eintrag für die Zufahrt von der Köthener Brücke aus	? 8318,10738 8362,10779
@@ -3367,3 +3372,7 @@ Wandsbeker Weg: verläuft zwischen Spandauer Str. und Barmbeker Weg auch ein Teil
 Köhlbrandweg: Qualität des Abschnitts zwischen Wandsbeker Weg und Spandauer Str.?	? -6542,14057 -6555,14161
 Schiffahrtsufer - Betckestr.: nachts beleuchtet?	? -3441,13270 -3352,13135 -3338,13118 -3210,12887 -3218,12843 -3214,12779 -3170,12595
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
+# 
+#: by: http://www.potsdam.de/cms/dokumente/10115978_1771576/bbb8d1f2/ENDFASSUNGAbl.%20PdmStadt%2004_13.pdf
+#: XXX fehlt wahrscheinlich in Potsdam.coords.data
+Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -13026,-1164 -13162,-1263

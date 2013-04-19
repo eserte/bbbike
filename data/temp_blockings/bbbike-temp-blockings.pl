@@ -21080,4 +21080,15 @@ EOF
 userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 EOF
      },
+     { from  => 1366495200, # 2013-04-21 00:00
+       until => 1378504799, # 2013-09-06 23:59
+       text  => 'Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf
+#: XXX ggfs. nach gesperrt-orig überführen
+#: next_check: 2013-04-22
+userdel	1::inwork -12659,-1700 -12730,-1681 -12758,-1654
+EOF
+     },
     );

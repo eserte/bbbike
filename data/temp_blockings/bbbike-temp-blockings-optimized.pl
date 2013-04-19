@@ -3415,6 +3415,18 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
          'data' => 'userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1378504799,
+         'text' => 'Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)',
+         'from' => 1366495200,
+         'id' => 2421,
+         'data' => '#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf
+#: XXX ggfs. nach gesperrt-orig überführen
+#: next_check: 2013-04-22
+userdel	1::inwork -12659,-1700 -12730,-1681 -12758,-1654
+',
+         'type' => 'gesperrt'
        }
      
 );
