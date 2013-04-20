@@ -6654,20 +6654,9 @@ sub gather_weather_proc {
     @res;
 }
 
-sub etag {
-    my $lang = 'de'; # XXX
-    my $rcsversion = $VERSION;
-    my $browserversion = $q->user_agent;
-    my $etag = "$lang-$rcsversion-$browserversion";
-    $etag =~ s;[\s\[\]\(\)]+;_;g;
-    $etag =~ s|[^a-z0-9-_./]||gi;
-    $etag = qq{"$etag"};
-    (-ETag => $etag);
-}
-
 sub bbbike_result_js { $bbbike_html . "/bbbike_result.js?v=1.14" }
 
-# Write a HTTP header (always with Etag and Vary) and maybe enabled compression
+# Write a HTTP header (always with Vary) and maybe enabled compression
 sub http_header {
     my(%header_args) = @_;
 
@@ -6684,7 +6673,7 @@ sub http_header {
     }
 
     my @add_header_args;
-    push @add_header_args, etag(), (-Vary => "User-Agent");
+    push @add_header_args, (-Vary => "User-Agent");
     if ($q->param("as_attachment")) {
 	push @add_header_args, -Content_Disposition => "attachment;file=" . $q->param("as_attachment");
     }
