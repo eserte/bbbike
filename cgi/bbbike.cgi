@@ -6880,7 +6880,7 @@ sub header {
 	print "<h1>\n";
 	if ($printmode) {
 	    print "$args{-title}";
-	    print "<img alt=\"\" src=\"$bbbike_images/srtbike.gif\" hspace=10>";
+	    print "<img alt=\"\" src=\"$bbbike_images/srtbike.gif\" hspace=\"10\" width=\"41\" height=\"39\">";
 	} else {
 	    my $use_css = !$bi->{'css_buggy'};
 	    my $title = $args{-title};
@@ -6892,7 +6892,7 @@ sub header {
 	    if ($use_css) {
 		print ' style="position:relative; top:15px; left:-15px;"';
 	    }
-	    print " alt=\"\" src=\"$bbbike_images/srtbike.gif\" border=0>";
+	    print " alt=\"\" src=\"$bbbike_images/srtbike.gif\" border=\"0\" width=\"41\" height=\"39\">";
 	    print "</a>";
 	}
 	print "</h1>\n";
@@ -6904,15 +6904,16 @@ sub header {
 	$query_string = '?' . $query_string if $query_string;
 
 	print qq{<div style="position:absolute; top:5px; right:10px;">};
+	my $img_attribs = 'width="48" height=24"';
 	if ($lang eq 'en') {
 	    print <<EOF;
-<a href="$bbbike_de_script$query_string"><img class="unselectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" title="Deutsch" border="0"></a>
-<img class="selectedflag" src="$bbbike_images/gb_flag.png" alt="English" title="English" border="0">
+<a href="$bbbike_de_script$query_string"><img class="unselectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" title="Deutsch" border="0" $img_attribs></a>
+<img class="selectedflag" src="$bbbike_images/gb_flag.png" alt="English" title="English" border="0" $img_attribs>
 EOF
 	} else {
 	    print <<EOF;
-<img class="selectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" border="0" title="Deutsch">
-<a href="$bbbike_en_script$query_string"><img class="unselectedflag" src="$bbbike_images/gb_flag.png" alt="English" title="English" border="0"></a>
+<img class="selectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" title="Deutsch" border="0" $img_attribs>
+<a href="$bbbike_en_script$query_string"><img class="unselectedflag" src="$bbbike_images/gb_flag.png" alt="English" title="English" border="0" $img_attribs></a>
 EOF
 	}
 	print qq{</div>\n};
@@ -7853,7 +7854,7 @@ Der aktuellen Snapshot der Perl/Tk-Version kann <a href="@{[ $BBBike::BBBIKE_UPD
 
 <h4 id="beta">Beta-Version von bbbike.de</h4>
 Zukünftige BBBike-Features können <a href="$bbbike2_url">hier</a> getestet werden.
-<h4 id="mobile">Mobile Version</h2>
+<h4 id="mobile">Mobile Version</h4>
 Unter der Adresse <a href="@{[ $BBBike::BBBIKE_MOBILE ]}">@{[ $BBBike::BBBIKE_MOBILE ]}</a> existiert eine Version von BBBike, die für mobile Geräte optimiert ist.
 <!-- <p> Eine Anregung, wie man BBBike auf dem iPhone verwenden kann, findet man <a href="$bbbike_html/bbbike_tracks_iphone.html">hier</a>. -->
 <h4 id="wap">WAP</h4>
