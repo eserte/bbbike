@@ -173,8 +173,8 @@ Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15058,14575 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-02-22
-#: next_check: 2013-06-01
+#: last_checked: 2013-04-20
+#: next_check: 2013-07-20
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
 #: XXX Baumaßnahme 11.45 (Realisierung nach 2011)
@@ -416,8 +416,8 @@ Verbindung im Zuge der RR9: Qualität?	? 26199,5643 26270,5829 26302,5932
 #: last_checked: 2013-02-16
 #: next_check: 2013-04-16
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
-#: last_checked: 2012-10-20 (aber nur im südlichen Bereich)
-#: next_check: 2012-12-31
+#: last_checked: 2013-04-20
+#: next_check: 2013-07-20
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16561,15956 16693,16202 16770,16465 16936,16606
 #: last_checked: 2012-08-25
 #: next_check: 2012-12-31
@@ -736,8 +736,8 @@ Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2012-11-04
-#: next_check: 2013-03-01
+#: last_checked: 2013-04-20 (an der Degnerstr.)
+#: next_check: 2013-07-20
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html
 #: XXX Baumaßnahme 11.46 (Realisierung in 2011)
 #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt
@@ -808,6 +808,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Landsberger Allee - Zechliner Str.: Qualität? Fußgänger?	? 16589,14400 16544,14593 16537,14635
+# 
+Höhenweg am Wustrower Park: geht es hier weiter?	? 17275,18356 17564,18010 17585,17963 17557,17999
+# 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4429
 Am Teltowkanal: gibt es durch die Bauarbeiten hier Einschränkungen? Wird die Qualität danach besser werden?	? 8784,5095 8881,5143 9171,5263 9192,5272
 # 
@@ -817,7 +821,8 @@ Linkstr.: hier auch Vorfahrt?	? 8392,11077 8370,11010 8342,10916
 Gleisdreieckpark - Uferstr.: benötigt wahrscheinlich einen comments_path-Eintrag für die Zufahrt von der Köthener Brücke aus	? 8318,10738 8362,10779
 # 
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/bplan1135.pdf?start&ts=1363256158&file=bplan1135.pdf
-#: next_check: 2014-03-25
+#: last_checked: 2013-04-20
+#: next_check: 2014-04-20
 Bebauungsplan 11-35: hier werden einige Straßen (verkehrsberuhigt, zumindest teilweise) entstehen	?::projected 17631,16258 17515,16215 17465,16340 17446,16393 17634,16681 17751,16603 17825,16554 17836,16522 17877,16423 17895,16373 17631,16258
 # 
 Sachsendamm/Schöneberger Str.: wo genau fängt die eine Straße an und hört die andere auf?	? 8150,7200 8224,7148
@@ -825,9 +830,6 @@ Sachsendamm/Schöneberger Str.: wo genau fängt die eine Straße an und hört die an
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458
 #: next_check: 2013-08-23
 Brandenburgplatz: wird hier eine Fußgängerampel eingerichtet?	? 23363,5714 23309,5704
-# 
-#: XXX ebenfalls prüfen: wo lässt sich die Landsberger am besten überqueren? Nur an der Fußgängerampel leicht westlich davon? routing_helper verwenden?
-Genslerstr. - Landsberger Allee: anscheinend existiert hier eine Verbindung für Radfahrer/Fußgänger: Qualität? Gibt es Drängelgitter an der Tramquerung?	? 16669,14438 16630,14403
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656
 #: next_check: 2014-03-15
@@ -894,11 +896,6 @@ An der Vogelweide: Qualität? Lage? Straßenschilder?	? 8568,21863 8626,21892 8712
 # 
 #: last_checked: 2013-04-11
 An der ehem. Blumengroßmarkthalle: hier wird eine neue Verbindung entstehen --- gepflastert (genaue Qualität?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
-# 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert)
-#: XXX evtl. entsteht hier auch eine offizielle Verbindung?
-Landschaftspark Herzberge - Arendsweg: evtl. den inoffiziellen Trampelpfad aufnehmen	? 17266,14144 17335,14167
-Radweg Herzberge: tatsächlich wieder befahrbar?	? 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144
 # 
 #: next_check: 2013-05-01
 Tegelort - Hakenfelde (sowie Fähre via Valentinswerder): prüfen, ob es nennenswerte Verbindungen gibt (außer am Wochenende)	? -1694,17839 -1828,17796
@@ -1000,11 +997,6 @@ Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtl
 #: by: ^^^
 # 
 # REMOVED (-> strassen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2012 --- Weg im Harry-Bresslau-Park: wo genau liegt der Weg? Qualität? Nachts beleuchtet?	? 4997,6331 4937,6205
-# 
-#: XXX VMZ-Eintrag: Malchower Weg (Hohenschönhausen): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 05/13) Richtung Rhinstr. zwischen Hansastr. und Wartenberger Str., 05.11.2012 09:00 Uhr bis 31.05.2013 16:00 Uhr
-#: source_id: INKO_111447
-#: source_id: LMS_1290313357
-Malchower Str.: wo sind hier die Bauarbeiten? Behinderungen für Radfahrer?	?::inwork 17425,16165 17383,16197 17271,16280 17220,16320 17170,16365 17102,16464 17059,16560 17017,16716 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16951,17055 16934,17132 16918,17204 16914,17224 16902,17278 16887,17349 16837,17440
 # 
 Geißenweide - Blenheimstr.: gibt es für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
 westlicher Wuhlewanderweg: Qualität? Nachts beleuchtet? Ausschilderung?	? 22124,13606 22362,13865 22415,14151 22679,14450 22552,14777 22460,14820 22382,14908 22343,15115
@@ -3016,9 +3008,9 @@ Vogelsang - Hammelspring: gibt es hier mittlerweile einen Radweg?	? 7983,69794 7
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2011
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012
 #: XXX Privatstraße, fehlt in Berlin.coords.data, PLZ=13059
-#: last_checked: 2011-10-15 (noch keine Bautätigkeiten zu erkennen)
-#: next_check: 2012-04-01
-Ückeritzer Ring: Ist die Straße schon fertig gestellt? Qualität? Wo genau verläuft die Straße?	? 17264,19242 17301,19300 17403,19327 17436,19272
+#: last_checked: 2013-04-20 (erste Häuser stehen, Straßen noch nicht)
+#: next_check: 2013-10-20
+Ückeritzer Ring: Ist die Straße schon fertig gestellt? Qualität? Wo genau verläuft die Straße?	? 17247,19212 17301,19300 17403,19327 17436,19272
 # 
 Groß-Ziethener Chaussee: Gehweg für Radfahrer zwischen Meißner Weg und Ascherslebener Weg in beide Richtungen freigegeben?	? 15854,666 15757,610
 #: XXX laut osm Verbundsteinpflaster
@@ -3033,11 +3025,6 @@ Dahmsdorf - Münchehofe: alternative Strecke durch den Wald, Qualität?	? 59488,16
 # REMOVED (aber vorerst nicht aufnehmen) --- Kolonieweg: Verbundsteinpflaster, geht nach Norden noch ein kleines Stück weiter	? 1737,15797 1708,16061
 # REMOVED (aber vorerst nicht aufnehmen) --- Nelkenweg: Gehwegplatten, eng, nur für Fußgänger	? 2350,15916 2342,15828
 # 
-#: XXX genaue Wegführung?
-#: XXX wahrscheinlich wassergebundene Decke; wahrscheinlich unbeleuchtet
-Zingster Str. - Wartenberger Weg: Qualität? Nachts beleuchtet?	? 16358,18687 16325,18796
-#: XXX betoniert. Evtl. bis zum S-Wartenberg und noch weiter...
-Hechtgraben - ...: wie geht es hier weiter? Nachts beleuchtet?	? 16325,18796 16426,18812 16616,18969 16699,19083 17197,18473 17275,18356 17267,18343
 #: XXX laut osm Asphalt
 Am Luchgraben - B2: Qualität?	? 17060,20381 17009,20447 16787,20515 16748,20586 16768,20728 16752,20898 16643,21035
 B2 - Lindenberger Weg: Qualität?	? 16643,21035 16576,21165

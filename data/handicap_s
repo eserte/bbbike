@@ -36,6 +36,8 @@ Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22544,6037 22539,5956
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
+Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17266,14144
+Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum 31.05.2013), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -196,11 +198,11 @@ Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,8562
 (zur Thomas-Dehler-Str.): Fußgänger, Bordsteine	q4 6654,11460 6716,11439
 Ernststr.: Fußgänger	q2 2497,19503 2700,19527
-(S-Bahnunterführung Wartenberg): Fußgänger	q1 16923,18650 16936,18658 16998,18695
+(S-Bahnunterführung Wartenberg): Fußgänger	q1 16936,18658 16998,18695
 (S-Bahnunterführung Wartenberg): Rampe	q3 16998,18695 17024,18674 17008,18701
 (S-Bahnunterführung Wartenberg): Fußgänger	q2 17008,18701 17068,18736
 (S-Bahnunterführung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
-(S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17114,18775
+(S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17109,18772
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17159,18375 17111,18479 17040,18571 17002,18578 16936,18658
 Bernburger Treppe: Rampe	q3 8536,11063 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12766,13621 12743,13634 12709,13691 12707,13706
@@ -1121,6 +1123,10 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fußgänger	q1 6534,1702 6
 (Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fußgänger	q1 6768,2143 6722,2096 6692,2024 6534,1702 6526,1688
 (Seydlitzstr., Verlängerung): einige Fußgänger	q1 6658,2079 6692,2024
 (Hospitalgrabenpark): Fußgänger, Radfahren offiziell verboten	q4 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
+(Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17289,14195
+(Genslerstr. - Landsberger Allee): Fußgänger	q2 16669,14438 16665,14420 16630,14403
+Schweriner Ring [9-19 ungerade]: enge Straße	q1 17444,19115 17259,19121
+(Weg auf dem Lärmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17267,18343
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1683,7 +1689,7 @@ Plüschowstr.: einige Fußgänger	q1 242,3459 201,3764
 Johannes-Werner-Str.: enge Straße	q1 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
 Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
-Hohenschönhausener Weg: Fußgänger haben Vorrang	q1 15600,18551 15825,18385 16317,18020
+Hohenschönhausener Weg: Fußgänger haben Vorrang	q1 15600,18551 15825,18385 16307,18022
 Murtzaner Ring: enge Straße	q1 19593,14472 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
 Lindenhoekweg: enge Straße	q1 12382,15802 12310,15837 12247,15868
 Taxusweg: enge Straße	q1 25649,13728 25671,13840 25681,13943 25681,14049
@@ -1722,7 +1728,7 @@ Dinkelsbühler Steig: enge Straße	q0 2615,25225 2649,25170 2694,25132 2775,25092 
 Ötztaler Str.: enge Straße	q1 10690,17420 10630,17421
 Schlierbacher Weg: enge Straße	q1 10734,1178 10685,1159 10450,1202 10453,1242 10440,1283
 Fritz-Kühn-Str.: enge Straße	q1 21681,-589 21666,-657 21479,-925 21445,-963
-Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15769,14815 15856,14915
+Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15856,14915
 Nantesstr.: enge Straße	q1 11200,21689 11251,22022 11231,22065 11077,22236
 Helgiweg: enge Straße	q0 14459,18589 14517,18410
 Helgiweg: enge Straße	q0 14533,18413 14565,18226 14576,18163 14595,18050

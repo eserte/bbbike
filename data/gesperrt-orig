@@ -1857,6 +1857,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter an der Straßenbahntrasse	BNP:6::trailer=10 16665,14420
 Schranke (lichte Breite 100cm)	BNP:3::trailer=10 17459,5634
 #: note: immer offen?
 Schranke (offen)	BNP:0 17070,6115
@@ -2325,8 +2326,8 @@ Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 # 
 #: by: Kai Wagner
 #: confirmed_by: srt
-#: last_checked: 2012-10-20
-#: next_check: 2013-05-01
+#: last_checked: 2013-04-20
+#: next_check: 2014-05-01
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 #
 #: XXX möglicherweise wird es den Weg in Zukunft gar nicht mehr geben
@@ -2362,7 +2363,6 @@ Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8246,14184
 # 
 # REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-08-30 --- #: next_check: 2012-10-15 --- Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 # REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-05-01 --- #: next_check: 2012-07-15 --- Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
-# REMOVED (laut osm wieder befahrbar) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: last_checked: 2012-10-20 --- #: next_check: 2012-11-20 --- Radweg Herzberge: wegen Bauarbeiten gesperrt (ab 2012-02-20)	2:inwork 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144
 # REMOVED (now in handicap_l-orig) --- #: last_checked: 2011-11-27 --- #: next_check: 2012-03-01 --- Am Alten Markt: wegen Bauarbeiten (Wiederaufbau des Schlosses) gesperrt	2:inwork -12643,-1694 -12624,-1598
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html

@@ -11384,7 +11384,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008483',
        data  => <<EOF,
-userdel	2::inwork 17017,16716 17059,16560
+userdel	2::inwork 17014,16724 17059,16560
 EOF
      },
      { from  => 1215811936, # 2008-07-11 23:32
@@ -18104,7 +18104,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20100714.1400.303010.html',
        data  => <<EOF,
-userdel	q4::inwork; 16692,16253 16806,16496 16849,16551 17017,16716
+userdel	q4::inwork; 16692,16253 16806,16496 16849,16551 17014,16724
 EOF
      },
      { from  => 1279436400, # 2010-07-18 09:00

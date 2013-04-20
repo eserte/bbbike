@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-04-19 vvv
+#: last_checked: 2013-04-20 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -186,6 +186,21 @@ Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22
 #: last_checked: 2013-04-03
 #: next_check: 2013-11-30
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
+# 
+### Lichtenberg ###
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html
+#: last_checked: 2013-04-20
+#: next_check: 2013-06-20
+Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17266,14144
+# 
+### Hohenschönhausen ###
+# 
+#: source_id: INKO_111447
+#: source_id: LMS_1290313357
+#: last_checked: 2013-04-20
+#: next_check: 2013-05-30
+Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum 31.05.2013), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
 # 
 #: temporary ^^^
 ######################################################################
@@ -380,11 +395,11 @@ Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,
 (zur Thomas-Dehler-Str.): Fußgänger, Bordsteine	q4 6654,11460 6716,11439
 #: by: ADFC-Karte
 Ernststr.: Fußgänger	q2 2497,19503 2700,19527
-(S-Bahnunterführung Wartenberg): Fußgänger	q1 16923,18650 16936,18658 16998,18695
+(S-Bahnunterführung Wartenberg): Fußgänger	q1 16936,18658 16998,18695
 (S-Bahnunterführung Wartenberg): Rampe	q3 16998,18695 17024,18674 17008,18701
 (S-Bahnunterführung Wartenberg): Fußgänger	q2 17008,18701 17068,18736
 (S-Bahnunterführung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
-(S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17114,18775
+(S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17109,18772
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17159,18375 17111,18479 17040,18571 17002,18578 16936,18658
 Bernburger Treppe: Rampe	q3 8536,11063 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12766,13621 12743,13634 12709,13691 12707,13706
@@ -1499,6 +1514,10 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fußgänger	q1 6534,1702 6
 (Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fußgänger	q1 6768,2143 6722,2096 6692,2024 6534,1702 6526,1688
 (Seydlitzstr., Verlängerung): einige Fußgänger	q1 6658,2079 6692,2024
 (Hospitalgrabenpark): Fußgänger, Radfahren offiziell verboten	q4 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
+(Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17289,14195
+(Genslerstr. - Landsberger Allee): Fußgänger	q2 16669,14438 16665,14420 16630,14403
+Schweriner Ring [9-19 ungerade]: enge Straße	q1 17444,19115 17259,19121
+(Weg auf dem Lärmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17267,18343
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2509,7 +2528,7 @@ Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
 Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
 #: by: ^^^
 #: confirmed_by: Daniel Prusseit:
-Hohenschönhausener Weg: Fußgänger haben Vorrang	q1+ 15600,18551 15825,18385 16317,18020
+Hohenschönhausener Weg: Fußgänger haben Vorrang	q1+ 15600,18551 15825,18385 16307,18022
 #: by: anonymous (q1 ohne genauere Kommentierung, aber auf dem Luftbild sieht es eng aus)
 Murtzaner Ring: enge Straße	q1 19593,14472 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
 #XXX: P. Loll:, corrected_by: Uwe Borgenhagen (not mentioned): Windenweg: enge Straße	q1 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
@@ -2608,7 +2627,7 @@ Schlierbacher Weg: enge Straße	q1 10734,1178 10685,1159 10450,1202 10453,1242 10
 Fritz-Kühn-Str.: enge Straße	q1 21681,-589 21666,-657 21479,-925 21445,-963
 #: by: Michael (hinundweg):
 #: confirmed_by: srt
-Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15769,14815 15856,14915
+Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15856,14915
 #: by: Philipp Günther:
 Nantesstr.: enge Straße	q1 11200,21689 11251,22022 11231,22065 11077,22236
 # 
