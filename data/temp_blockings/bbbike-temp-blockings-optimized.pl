@@ -66,15 +66,7 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1366567200,
-         'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz. Dauer: 20.04.2013 10:00 bis 21.04.2013 20:00',
-         'from' => 1366358400,
-         'id' => 10,
-         'data' => 'userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
-'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3046,7 +3038,7 @@ userdel	2::inwork 19968,16 19940,52
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte 2013',
          'from' => 1330902000,
          'id' => 2316,
-         'data' => 'userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
+         'data' => 'userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
        },
@@ -3413,18 +3405,6 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
          'from' => 1374012000,
          'id' => 2420,
          'data' => 'userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1378504799,
-         'text' => 'Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)',
-         'from' => 1366495200,
-         'id' => 2421,
-         'data' => '#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf
-#: XXX ggfs. nach gesperrt-orig überführen
-#: next_check: 2013-04-22
-userdel	1::inwork -12659,-1700 -12730,-1681 -12758,-1654
 ',
          'type' => 'gesperrt'
        }

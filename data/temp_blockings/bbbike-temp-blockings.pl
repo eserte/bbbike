@@ -1063,7 +1063,7 @@ EOF
        text  => 'Ruppiner Chaussee (Hennigsdorf) Kreuzung Hennigsdorfer Straße wegen Bauarbeiten gesperrt (bis 17.10.2004)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746
+userdel	q4 -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746
 userdel	q4 -1872,24336 -1896,24275 -1940,24176
 userdel	q4 -1872,24336 -1953,24435
 EOF
@@ -20086,7 +20086,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
-userdel	q4::inwork; -1872,24336 -1790,24260 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
+userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
      { from  => undef, # 1329631200, # 2012-02-19 07:00
@@ -21081,13 +21081,11 @@ userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 EOF
      },
      { from  => 1366495200, # 2013-04-21 00:00
-       until => 1378504799, # 2013-09-06 23:59
+       until => 1366574627, # 1378504799, # 2013-09-06 23:59 -> in gesperrt_orig
        text  => 'Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf
-#: XXX ggfs. nach gesperrt-orig überführen
-#: next_check: 2013-04-22
 userdel	1::inwork -12659,-1700 -12730,-1681 -12758,-1654
 EOF
      },

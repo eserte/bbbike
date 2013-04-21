@@ -297,7 +297,7 @@ Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 # TEMPORARY REMOVED (Baustelle!) --- Niederlagstr.	1 9943,12364 9934,12420
 #: last_checked: 2013-03-28
-#: next_check: 2013-04-28
+#: next_check: 2013-05-28
 #: XXX danach evtl. wieder Einbahnstraße wiederherstellen, siehe oben
 Niederlagstr.	2:inwork 9943,12364 9934,12420
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
@@ -2161,9 +2161,7 @@ Drängelgitter (lichte Breite ca. 80cm)	BNP:8::trailer=no 6526,21015
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8::trailer=no 6548,21041
 Drängelgitter/Schranke	BNP:5 10012,5210
 Schranke	BNP:5 12571,7899
-#: note: Abstand zwischen den versetzten Gittern ca. 135cm
-#: note: bei dichtem Verkehr kann die Wartezeit schon mal über 10 Sekunden betragen!
-Drängelgitter	BNP:5::trailer=10 14453,9929
+# REMOVED (eine Hälfte des Drängelgitters wurde entfernt, gesehen 2013-04-21) --- #: note: Abstand zwischen den versetzten Gittern ca. 135cm --- #: note: bei dichtem Verkehr kann die Wartezeit schon mal über 10 Sekunden betragen! --- Drängelgitter	BNP:5::trailer=10 14453,9929
 #: note: Breite der Vorbeifahrmöglichkeit >90cm
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14597,10129
@@ -2265,9 +2263,14 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: next_check: 2014-06-01
 An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-1339 -11235,-1465 -11137,-1680 -11089,-1730 -10973,-1764
 # 
-#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf
-#: next_check: 2013-09-05
+#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf vvv
+#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf vvv
+#: next_check: 2013-09-05 vvv
 Sperrung am zukünftigen Landtag: Bereich vor der Straßenbahnhaltestelle Richtung Norden gesperrt (8. April 2013 - 6. September 2013)	1:inwork -12758,-1654 -12772,-1577
+Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)	1::inwork -12659,-1700 -12730,-1681 -12758,-1654
+#: next_check ^^^
+#: by ^^^
+#: by ^^^
 # 
 #: by: Torben Müllers
 #: next_check: 2014-04-18
@@ -2456,11 +2459,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 # REMOVED --- Hinweis by Monika W-J, Radweg wieder existent seit Sommer 2012: --- #: by: Ulrike Orlowski --- #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510 --- #: next_check: 2011-06-30 --- Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5049,14675 4676,14534 3705,14290 3595,14277
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
 # REMOVED --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
-# 
-#: last_checked: 2013-04-16
-#: check_frequency: 7d
-#: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel)
-Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518
+# REMOVED (für Radfahrer befahrbar) --- #: last_checked: 2013-04-16 --- #: check_frequency: 7d --- #: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel) --- Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518
 # 
 #: last_checked: 2013-01-05
 #: next_check: 2013-11-01

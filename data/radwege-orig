@@ -585,7 +585,7 @@ asphaltierter gemeinsamer Rad- und Gehweg	RW2;RW2 9228,23643 9146,23843 8984,240
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/ruppinerchaussee.html
 #: XXX Ende der Baumaßnahmen evtl. erst Ende 2013?
 #: next_check: 2013-06-01 vvv
-früherer Radweg ist nicht mehr erkennbar	RW0; -1281,23746 -1286,23753 -1367,23853 -1627,24105 -1790,24260
+früherer Radweg ist nicht mehr erkennbar	RW0; -1281,23746 -1286,23753 -1367,23853 -1627,24105 -1746,24219 -1790,24260
 vorhandener Radweg ist abgesperrt	RW0; -656,23011 -783,23190 -903,23406 -984,23480 -997,23492 -1084,23564 -1281,23746
 #: next_check ^^^
 #: XXX ^^^
@@ -982,6 +982,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 #: XXX eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
 #: last_checked: 2013-03-24
+#: next_check: 2013-05-09
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7717,7830 7696,7771
 	RW2;RW0 4327,8887 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
@@ -3934,7 +3935,7 @@ Fußgängerzone, für Radfahrer und Anlieger frei	RW6;RW6 -561,4428 -595,4385 -590,
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120912.1600.375133.html
 #: XXX Baumaßnahme 9.12 (Realisierung in 2011)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036558175193/558175193/00067926/26-Anlagen/06/B1298ZB3.pdf
-#: last_checked: 2013-03-09 (Höhe Britzer Str.)
+#: last_checked: 2013-04-21 (Höhe Fennstr.)
 #: next_check: 2013-05-22
 	RW3; 18245,5551 18370,5511 18680,5413 18984,5318 19031,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
@@ -4088,8 +4089,9 @@ Busspur immer gültig	RW5; 6228,13324 6377,13321
 	RW6;RW6 12282,8204 12134,8172
 ab ca. Mitte des Abschnitts markiert, die letzten 5 Meter sogar benutzungspflichtig	RW3; 7604,8927 7563,8871
 	RW4; 14558,10264 14619,10223
+Gehweg für Radfahrer frei	RW1; 14619,10223 14558,10264
 	RW3; 14652,10201 14619,10223
-	RW1; 14619,10223 14558,10264
+	RW1; 14619,10223 14652,10201
 	RW3; 11155,11750 11024,11789
 	RW1;RW1 -8784,13321 -8756,13356 -8358,13340 -8296,13338 -8049,13332 -8022,13332 -7693,13330 -7626,13365 -7595,13399
 Gehweg für Radfahrer frei	RW1; -7595,13399 -7584,13421 -7550,13528 -7522,13651
