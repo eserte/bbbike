@@ -81,10 +81,7 @@ TESTS_ADD=		BBBikeTest.pm bbbikedraw.t
 HTDOCS=			public
 
 # XXX maybe use test-on-remote-and-send-mail (after tests)
-DEPLOY_TARGETS=			prepare-bbbike-data \
-				prepare-mapserver-data \
-				prepare-bbbike-dist \
-				prepare-mapserver-dist \
+DEPLOY_TARGETS=			prepare \
 				rsync \
 				init-environment \
 				test \
@@ -99,10 +96,7 @@ DEPLOY_DATA_TARGETS=		prepare-bbbike-data \
 				test
 
 # local deployment
-DEPLOY_LOCAL_NO_TEST_TARGETS=	prepare-bbbike-data \
-				prepare-mapserver-data \
-				prepare-bbbike-dist \
-				prepare-mapserver-local-dist \
+DEPLOY_LOCAL_NO_TEST_TARGETS=	prepare \
 				init-local-environment
 
 DEPLOY_LOCAL_TARGETS=		${DEPLOY_LOCAL_NO_TEST_TARGETS} \
@@ -391,6 +385,11 @@ test-makefile:
 ######################################################################
 # Sub targets
 # Reihenfolge sollte hoffentlich richtig sein
+
+prepare:	prepare-bbbike-data \
+		prepare-mapserver-data \
+		prepare-bbbike-dist \
+		prepare-mapserver-dist
 
 prepare-bbbike-data:	prepare-bbbike-data-parallel
 
