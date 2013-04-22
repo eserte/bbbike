@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: cvsdiffbbd,v 1.10 2007/10/14 20:20:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2007 Slaven Rezic. All rights reserved.
@@ -58,7 +57,6 @@ for my $line (`@cmd`) {
 			       |\.coords\.data
 			       |Makefile
 			       |\.modified
-			       |\.cvsignore
 			       |BASE
 			       )}x) {
 	    $stage = STAGE_HIDE;

@@ -32,8 +32,7 @@ if (-e "$FindBin::RealBin/../.git" && is_in_path('git')) {
 	or die $!;
     $manifest = $tmpfile;
 } else {
-    warn "Cannot run git, using obsolete MANIFEST.withcvs...\n";
-    $manifest = "$FindBin::RealBin/../MANIFEST.withcvs";
+    die "Cannot run git, no MANIFEST file available...";
 }
 
 die "No arguments" if !@ARGV;

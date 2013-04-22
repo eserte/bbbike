@@ -15,7 +15,6 @@
 \.class$
 \.old$
 \.xvpics/
-\.cvsignore$
 \.gitignore$
 ^blib/
 ^MakeMaker-\d
@@ -37,9 +36,6 @@ patch\.gz$
 ^\.permissions$
 \.rcsignore(_rx)?$
 # bbbike specific
-^MANIFEST.addtocvs$
-^MANIFEST.delfromcvs$
-^MANIFEST.withcvs$
 ^Makefile_admin_PL$
 ^HEADER.html.tmpl$
 ^data/.*\.st$
