@@ -33,6 +33,7 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
+Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22544,6037 22539,5956
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17266,14144
@@ -44,7 +45,7 @@ Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9679,14039
 (Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13927,12370
 Otto-Ludwig-Str.: Fußgängerzone	q2 4862,10881 4954,10876
-Mauerstr. (Mitte): Fußgänger, Bordsteine	q3 9405,11413 9474,11360
+Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9474,11360
 Georgenstr.: Fußgängerzone	q3 9434,12669 9313,12662
 Neue Promenade: Fußgängerzone, Radfahren erlaubt, aber nur langsam möglich	q4 10298,13076 10185,12982
 Neue Promenade: Fußgängerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
@@ -1126,6 +1127,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fußgänger	q1 6534,1702 6
 (Genslerstr. - Landsberger Allee): Fußgänger	q2 16669,14438 16665,14420 16630,14403
 Schweriner Ring [9-19 ungerade]: enge Straße	q1 17444,19115 17259,19121
 (Weg auf dem Lärmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17267,18343
+(entlang der Stadtbahn): Fußgänger	q1 10117,12966 9930,12947
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789

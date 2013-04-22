@@ -37,12 +37,12 @@ Nöldnerstr. -> Karlshorster Str.: Karlshorster - Nöldner	3::igndisp 15388,10758 
 Karlshorster Str. -> Nöldnerstr.: Karlshorster - Nöldner	3::igndisp 15279,10862 15272,10790 15388,10758
 Weydemeyerstr. - Mollstr.	3 11904,13058 11896,13075 11840,13085
 Neue Schönhauser	1 10527,13257 10423,13215 10310,13227
-Hagelberger Str.	3 8777,9601 8773,9524 8648,9526
-Hagelberger Str.	3 9000,9509 8773,9524 8648,9526
-Hagelberger Str.	3 8769,9290 8773,9524 8648,9526
-Hagelberger Str.	3 8648,9526 8773,9524 8777,9601
-Hagelberger Str.	3 8648,9526 8773,9524 9000,9509
-Hagelberger Str.	3 8648,9526 8773,9524 8769,9290
+Hagelberger Str.	3 8777,9601 8774,9534 8679,9544
+Hagelberger Str.	3 9000,9509 8774,9534 8679,9544
+Hagelberger Str.	3 8769,9290 8774,9534 8679,9544
+Hagelberger Str.	3 8679,9544 8774,9534 8777,9601
+Hagelberger Str.	3 8679,9544 8774,9534 9000,9509
+Hagelberger Str.	3 8679,9544 8774,9534 8769,9290
 Warschauer - Marchlewskistr.	3 13476,11174 13493,11217 13541,11355 13496,11384
 Holtei von S - Boxhagener	3 14575,11407 14639,11512 14577,11582
 Boxhagener von W - Holtei	3 14577,11582 14639,11512 14710,11626
@@ -63,9 +63,9 @@ Friedenstr.	1 12325,13148 12382,13097
 Fasanenstr.	1 5223,9810 5209,9978
 Kopfstr.	1 12478,7878 12327,7847 12220,7822 12176,7811 12041,7788
 Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14739,8919 14614,9052 14563,9106 14529,9141 14443,9233 14382,9299 14242,9448 14179,9515 14089,9610
-Hagelberger - Yorck	3nocross::ignrte 8595,9495 8648,9526 8777,9601
-Hagelberger Str. -> Yorckstr.: Hagelberger - Yorck	3::igndisp 8773,9524 8648,9526 8595,9495
-Yorckstr. -> Hagelberger Str.: Hagelberger - Yorck	3::igndisp 8777,9601 8648,9526 8773,9524
+Hagelberger - Yorck	3nocross::ignrte 8595,9495 8679,9544 8777,9601
+Hagelberger Str. -> Yorckstr.: Hagelberger - Yorck	3::igndisp 8774,9534 8679,9544 8595,9495
+Yorckstr. -> Hagelberger Str.: Hagelberger - Yorck	3::igndisp 8777,9601 8679,9544 8774,9534
 Hagelberger - Mehringdamm	3nocross::ignrte 9334,9670 9280,9476 9248,9350
 Mehringdamm -> Hagelberger Str.: Hagelberger - Mehringdamm	3::igndisp 9248,9350 9280,9476 9000,9509
 Hagelberger Str. -> Mehringdamm: Hagelberger - Mehringdamm	3::igndisp 9000,9509 9280,9476 9334,9670

@@ -175,7 +175,8 @@ Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
 Revaler Str. (Straßenbahn)	1s:q3 13588,11490 13473,11456
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
-Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751 11136,9851 11164,9885
+# temporär Einbahnstraßenregelung aufgehoben --- Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
+Grimmstr.	1 11089,9751 11136,9851 11164,9885
 Grimmstr.	1 11164,9885 11175,9882
 Grimmstr.	1 11175,9882 11186,9861 11141,9732 11110,9661 11075,9576
 Körtestr.	1 11004,9554 11023,9597
@@ -296,8 +297,8 @@ Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 # TEMPORARY REMOVED (Baustelle!) --- Niederlagstr.	1 9943,12364 9934,12420
-#: last_checked: 2013-03-28
-#: next_check: 2013-05-28
+#: last_checked: 2013-04-22
+#: next_check: 2013-06-22
 #: XXX danach evtl. wieder Einbahnstraße wiederherstellen, siehe oben
 Niederlagstr.	2:inwork 9943,12364 9934,12420
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
@@ -1267,7 +1268,7 @@ Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,
 #: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6782,3491
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12331
-Yorckstr.: Mittelstreifen	3nocross 8777,9601 8648,9526 8595,9495
+Yorckstr.: Mittelstreifen	3nocross 8777,9601 8679,9544 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
 Klemkestr.: Mittelstreifen	3nocross 7520,18701 7599,18705 7676,18713
 Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912

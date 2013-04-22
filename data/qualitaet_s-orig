@@ -216,8 +216,8 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2013-04-03
-#: next_check: 2013-07-03
+#: last_checked: 2013-04-22
+#: next_check: 2013-07-22
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
 Böttgerstr.: Asphalt	Q0 9134,15953 8923,15850
@@ -915,7 +915,7 @@ Hofzeichendamm: Verbundsteine	Q0 16594,22903 16543,22942 16315,23094
 Krontaler Str.: Kopfsteinpflaster	Q2 13884,22879 13976,22813 14109,22714
 Grüntaler Str.: Kopfsteinpflaster	Q2 9795,16936 9738,16886 9604,16760 9455,16609 9293,16447 9170,16324 8993,16100
 Steegerstr.: Kopfsteinpflaster	Q2 9738,16886 9727,16902
-Zur Hagelberger Str.: Kopfsteinpflaster	Q2 8773,9524 8648,9526
+Zur Hagelberger Str.: Kopfsteinpflaster	Q2 8774,9534 8679,9544
 Saubuchtweg: guter Waldweg	Q1 -3073,9061 -2983,8841 -2965,8705 -2962,8493 -2981,8350 -2975,8172 -2890,7994 -2859,7946 -2804,7915 -2677,7696 -2675,7622 -2639,7452 -2563,7353 -2546,7240 -2524,7141 -2547,7055 -2549,6948 -2634,6907 -2668,6862
 Schwarzer Weg: Waldweg, OK (teilweise sandig)	Q1 -2668,6862 -2632,6789 -2638,6641 -2686,6489 -2705,6355 -2986,5996 -3156,5926 -3226,5870 -3275,5847 -3603,5748 -3794,5604 -3845,5575 -3877,5570
 Schwarzer Weg: Schotter, abschüssige Strecke	Q2 -3877,5570 -4003,5621
@@ -6572,7 +6572,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Yorckstr. - Park am Gleisdreieck): Beton	Q0 8358,9568 8357,9598 8353,9642 8350,9685 8349,9697
 (Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8497,9654 8540,9644
 (Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8318,10738 8341,10721 8332,10637 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8333,9583
-(Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8336,10829 8318,10738 8270,10613 8264,10460 8239,10413 8191,10346 8180,10282 8145,10090
+(Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
 (Park am Gleisdreieck, Generalszug): Beton	Q0 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
 (Park am Gleisdreieck, östlicher Weg): Kopfsteinpflaster	Q2 8775,10289 8780,10248 8726,10056
 (Park am Gleisdreieck, östlicher Weg): Asphalt	Q0 8726,10056 8652,9870
@@ -6585,6 +6585,12 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck): Asphalt	Q0 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8260,10183 8211,10083
 (Park am Gleisdreieck, Weg über dem Tunnelmund): Asphalt	Q0 8263,10349 8315,10347
 (Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8328,10585 8270,10613
+#: XXX wie wird die Qualität nach den Bauarbeiten sein?
+#: last_checked: 2013-04-22
+(Park am Gleisdreieck, Eingang Lützowstr.): (noch) unbefestigt	Q2 8270,10613 8199,10634
+#: XXX wie wird die Qualität nach den Bauarbeiten sein?
+#: last_checked: 2013-04-22
+(Park am Gleisdreieck, Eingang Pohlstr.): (noch) unbefestigt	Q2 8159,10430 8237,10418 8278,10384
 (Park am Gleisdreieck, Eingang Bülowstr.): Beton	Q0 8027,10076 8035,10075 8040,10076 8042,10084 8145,10090 8211,10083
 (Grenzallee - Britzer Hafensteg): überwiegend Asphalt, einige Verbundsteinpflasterabschnitte	Q0 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13997,6216
 Britzer Hafensteg: Holzbohlen	Q1 13997,6216 13951,6190
@@ -8467,6 +8473,7 @@ Schweriner Ring [9-19 ungerade]: Beton	Q0- 17444,19115 17259,19121
 (Weg auf dem Lärmschutzwall): unbefestigte, teilweise Schotter	Q2+ 16665,19021 16699,19090 17197,18473 17275,18356 17267,18343
 #: note: die ersten Meter im Norden haben noch eine "vernünftige" wassergebundene Decke
 (Zingster Str. - Wartenberger Weg): unbefestigter Pfad	Q2 16358,18687 16325,18796
+(entlang der Stadtbahn): Verbundsteinpflaster	Q1 10117,12966 9930,12947
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
