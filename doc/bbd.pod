@@ -214,8 +214,6 @@ proportionally to $line_width{default}. If it's six values, then this
 should represent the widths for the six standard scales defined by
 bbbike.
 
-XXX: The form with category is NYI!
-
 =item C<line_length: I<length>>
 
 =item C<line_length.I<category>: I<length>>

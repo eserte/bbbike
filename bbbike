@@ -6466,11 +6466,8 @@ sub generate_plot_functions {
 		 || $category_color{$cat_rueck}
 		 || $str_color{$abk} || 'white') :
 		     'white';
-	    my $this_width_hin = ($layer_category_line_width{$abk} && $layer_category_line_width{$abk}{$cat_hin})
-		 || $category_width{$cat_hin} || $default_width || 1;
-	    my $this_width_rueck = defined $cat_rueck ?
-		(($layer_category_line_width{$abk} && $layer_category_line_width{$abk}{$cat_rueck}) || $category_width{$cat_rueck} || $default_width || 1) :
-		    1;
+	    my $this_width_hin = $category_width{$cat_hin} || $default_width || 1;
+	    my $this_width_rueck = defined $cat_rueck ?	($category_width{$cat_rueck} || $default_width || 1) : 1;
 	    my @coordlist;
 	CROSSINGS_LOOP:
 	    foreach (@kreuzungen) {
@@ -10399,6 +10396,11 @@ sub _set_category_width {
 	if (/^$abk-(.*)/) {
 	    my $cat = $1;
 	    $category_width{$cat} = get_line_width($_, $this_scale);
+	}
+    }
+    if ($layer_category_line_width{$abk}) {
+	while(my($cat) = each %{ $layer_category_line_width{$abk} }) {
+	    $category_width{$cat} = get_line_width($abk, $this_scale, $cat);
 	}
     }
     %category_width;
@@ -16294,23 +16296,38 @@ sub get_index_by_scale {
     }
 }
 
+# $tag is the same as $abk
+# $cat is optional; if set, then $layer_category_line_width information is used instead
 sub get_line_width {
-    my($tag, $myscale) = @_;
+    my($tag, $myscale, $cat) = @_;
     $myscale = $scale if !defined $myscale;
 
     my $is_outline = ($tag =~ /-out$/);
     my $add_outline = ($is_outline
 		       ? 2 : ($tag eq 'pp' || $tag eq 'p' ? 1 : 0));
     my $index = get_index_by_scale($myscale);
-    if ($is_outline && !exists $line_width{$tag}) {
+    if ($is_outline && !exists $line_width{$tag} && !defined $cat) {
 	$tag =~ s/-out$//;
     }
     if ($tag =~ /^L\d+/ &&
 	defined $default_line_width && $default_line_width == 1) {
 	1;
     } else {
-	$line_width{(exists $line_width{$tag} ? $tag : 'default')}->[$index]
-	    + $add_outline;
+	my $w;
+	if (defined $cat) {
+	    my $line_width_def = $layer_category_line_width{$tag} && $layer_category_line_width{$tag}{$cat};
+	    if (!$line_width_def) {
+		$w = $line_width{'default'}->[$index];
+	    } elsif (ref $line_width_def) {
+		$w = $line_width_def->[$index];
+	    } else {
+		# assume integer
+		$w = $line_width_def;
+	    }
+	} else {
+	    $w = $line_width{(exists $line_width{$tag} ? $tag : 'default')}->[$index];
+	}
+	$w + $add_outline;
     }
 }
 
@@ -21782,7 +21799,7 @@ sub handle_global_directives {
     return if !$glob_dir;
     # XXX One day this should contain all of @plotting_hint_line_vars
     my %accept_modern_style = map{($_,1)}
-	qw(line_arrow line_dash);
+	qw(line_arrow line_dash line_width);
     # XXX Everything else should be slowly discouraged...
     my %accept_global_hash_directives = map{($_,1)}
 	qw(category_size category_color
@@ -21794,9 +21811,9 @@ sub handle_global_directives {
     my %accept_global_hashref_directives = map{($_,1)}
 	qw(str_attrib p_attrib);
     my %accept_global_catless_directives = map{($_,1)}
-	qw(str_color outline_color line_width);
+	qw(str_color outline_color);
     my %accept_global_catless_directives_with_layer_prefix = map{($_,1)}
-	qw(line_length
+	qw(line_width line_length
 	   line_dash line_arrow
 	   line_capstyle
 	   line_shorten line_shorten_end
