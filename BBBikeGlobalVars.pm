@@ -78,6 +78,7 @@ BEGIN {
 	      line_shorten
 	      line_shorten_end
 	      line_width
+	      line_directed_weight
 	 );
     @plotting_hint_item_vars =
 	qw(
