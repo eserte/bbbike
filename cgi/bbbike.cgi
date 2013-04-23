@@ -1227,7 +1227,7 @@ if (defined $q->param('begin')) {
 	# XXX note: coordssession+showroutelist is not implemented
 	show_routelist_from_coords();
     } else {
-	draw_route(-cache => []);
+	draw_route();
     }
 } elsif (defined $q->param('create_all_maps')) {
     # XXX Der Apache 1.3.9/FreeBSD 3.3 lässt den Prozess nach ungefähr
@@ -3913,6 +3913,7 @@ sub display_route {
 	my @headers =
 	    (-type => "application/vnd.google-earth.kml+xml",
 	     -Content_Disposition => "attachment; filename=$filename",
+	     @weak_cache,
 	    );
 	http_header(@headers);
 	my $s = $route_to_strassen_object->();
@@ -5585,7 +5586,7 @@ sub start_mapserver {
 
 sub draw_route {
     my(%args) = @_;
-    my @cache = (exists $args{-cache} ? @{ $args{-cache} } : @no_cache);
+    my @cache = @no_cache;
 
     my $draw;
     my $route; # optional Route object
@@ -5599,6 +5600,8 @@ sub draw_route {
 	    # in BBBikeDraw.
 	    $q->param(coords => $sess->{routestringrep});
 	    $route = $sess->{route};
+	    # We can hopefully safely cache if a session id was involved.
+	    @cache = @weak_cache;
 	} else {
 	    $session_is_expired = 1;
 	}
