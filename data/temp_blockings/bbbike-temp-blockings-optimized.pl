@@ -3076,7 +3076,18 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1372557600,
+         'text' => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 19. Juni 2013, 22 Uhr bis 30. Juni 2013, 4 Uhr',
+         'from' => 1371578400,
+         'id' => 2330,
+         'data' => '#: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
+#: XXX nächste Sperrung im Juli 2013
+#: next_check: 2013-07-06
+userdel	2::inwork 18731,8577 18709,8423
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3408,6 +3419,18 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
          'data' => 'userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_019747',
+         'until' => 1380578399,
+         'text' => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Straße gesperrt (bis Ende September 2013) ',
+         'from' => 1366740818,
+         'id' => 2422,
+         'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
+userdel	q3::inwork 5268,11274 5247,10992
+',
+         'type' => 'handicap'
        }
      
 );

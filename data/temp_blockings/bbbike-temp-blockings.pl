@@ -20211,12 +20211,15 @@ EOF
 userdel	q4::inwork 18731,8577 18709,8423
 EOF
      },
-     { from  => 1338001200, # 2012-05-26 05:00
-       until => 1338602400, # 2012-06-02 04:00
-       text  => 'Vollsperrung der Bahnbrücke Karlshorst: 26. Mai 2012, 5 Uhr bis 2. Juni 2012, 4 Uhr (Sperrung der Fahrbahn)',
-       type  => 'handicap',
+     { from  => $isodate2epoch->("2013-06-18 20:00:00"), # 1 Tag Vorlauf # from  => 1338001200, # 2012-05-26 05:00
+       until => $isodate2epoch->("2013-06-30 04:00:00"), #        until => 1338602400, # 2012-06-02 04:00
+       text  => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 19. Juni 2013, 22 Uhr bis 30. Juni 2013, 4 Uhr',
+       type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4::inwork 18731,8577 18709,8423
+#: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
+#: XXX nächste Sperrung im Juli 2013
+#: next_check: 2013-07-06
+userdel	2::inwork 18731,8577 18709,8423
 EOF
      },
      { from  => undef, # 
@@ -21088,6 +21091,16 @@ EOF
        data  => <<EOF,
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf
 userdel	1::inwork -12659,-1700 -12730,-1681 -12758,-1654
+EOF
+     },
+     { from  => 1366740818, # 2013-04-23 20:13
+       until => 1380578399, # 2013-09-30 23:59
+       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Straße gesperrt (bis Ende September 2013) ',
+       type  => 'handicap',
+       source_id => 'IM_019747',
+       data  => <<EOF,
+#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
+userdel	q3::inwork 5268,11274 5247,10992
 EOF
      },
     );

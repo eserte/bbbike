@@ -1765,7 +1765,11 @@ Auguste-Hauschner-Str.: asphaltiert	Q0 8438,11753 8473,11634 8505,11544
 Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
 Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14672,10760 14564,10792 14558,10819
+#: XXX früher Beton, vielleicht wird hier wieder betoniert?
+#: last_checked: 2013-04-23
+#: next_check: 2013-05-07
+(Markgrafendamm - Modersohnstr.; über das DB-Gelände): unbefestigte Fahrbahn	Q2 14672,10760 14564,10792
+(Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14564,10792 14558,10819
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14141,10931 14107,10911 14043,10928
 Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9587,10421 9570,10566
@@ -8429,8 +8433,8 @@ Jean-Monnet-Str.: Verbundsteinpflaster	Q0- 7995,13537 8048,13578
 Heidenelkenweg: Verbundsteinpflaster	Q0- 16112,12622 16111,12685 16073,12685 16071,12623
 #: XXX nach den Bauarbeiten wird sich Qualität ändern
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2013-02-25
-#: next_check: 2013-04-25
+#: last_checked: 2013-04-23
+#: next_check: 2013-07-23
 Ritterstr.: teilweise unbefestigt und holprig	Q1- 9763,11148 9861,11103
 #: XXX genaue Qualität des Waldwegs?
 #: note: berlinsis meint hierzu: "fester Waldweg, Q2" (falls er diesen Weg überhaupt meint)
