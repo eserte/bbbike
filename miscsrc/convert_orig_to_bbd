@@ -82,7 +82,7 @@ while(1) {
 
     if ($do_strip_tendencies) {
 	for ($cat_hin, $cat_rueck) {
-	    s{^([qQ]\d)[\+\-]$}{$1};
+	    s{^([qQ]\d)[\+\-](::|$)}{$1$2};
 	}
     }
 
