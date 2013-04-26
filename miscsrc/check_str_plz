@@ -30,7 +30,6 @@ use strict;
 
 unshift(@Strassen::datadirs, "$FindBin::RealBin/../data");
 
-my $do_multi_bez = 1;
 my @datafile;
 my $ignore_in_parens = 1;
 my $ignore_bracket_part = 1;
@@ -44,7 +43,6 @@ my $ignore_plz_warnings;
 GetOptions("plzdata=s"  => \$plzdata,
 	   "plzfield=i" => \$plzfield,
 	   "addstr=s"   => \$addstr,
-	   "multibez!"  => \$do_multi_bez,
 	   'data=s@'     => \@datafile,
 	   "ignoreparens!" => \$ignore_in_parens,
 	   "ignorebracketpart!" => \$ignore_bracket_part, # ignore [...]
@@ -53,7 +51,7 @@ GetOptions("plzdata=s"  => \$plzdata,
 	   "reversecheck" => \$do_reverse_check,
 	  ) or die <<EOF;
 usage: $0 [-plzdata plzdatafile] [-plzfield fieldindex]
-	  [-addstr bbdfile] [-[no]multibez]
+	  [-addstr bbdfile]
 	  [-[no]checkcoords] [-reversecheck]
 	  [-[no]ignoreparens] [-[no]ignorebracketpart] [-ignoreplzwarnings]
 	  -data bbdfile
@@ -116,20 +114,6 @@ while(<D>) {
     $str_coord_without_bezirk{$str} = "XXX";
 }
 close D;
-
-my %str_in_multi_bez;
-if ($do_multi_bez) {
-    my $multi_bez_str = MultiBezStr->new("multi_bez_str-orig");
-    if ($multi_bez_str) {
-	my $k;
-	my %h = $multi_bez_str->hash;
-	while(my($k, $v) = each %h) {
-	    $str_in_multi_bez{$k} = join(",", sort @$v);
-	}
-    } else {
-	warn "Can't set multi_bez_str";
-    }
-}
 
 my @lastbezirk;
 my $lastname;
@@ -239,8 +223,7 @@ while(1) {
 	    my $k2 = keys %{$str_in_plz2{$name}};
 	    if ($k1 > 1 && $k2 > 1) {
 		my $ambiguous_coord = 1;
-		# First check if all coords are the same --- in this
-		# case we don't need to check in multi_bez_str
+		# check if all coords are the same
 		if (exists $str_coord{$name}) {
 		    $ambiguous_coord = 0;
 		    my $last_coord;
@@ -253,13 +236,9 @@ while(1) {
 			$last_coord = $this_coord;
 		    }
 		}
-		# Coords are ambigous, so we have to check in multi_bez_str
+		# Coords are ambigous
 		if ($ambiguous_coord) {
-		    my(@b) = keys %{$str_in_plz{$name}};
-		    if (!exists $str_in_multi_bez{$name} ||
-			$str_in_multi_bez{$name} ne join(",", sort @b)) {
-			push @ambiguous, $name;
-		    }
+		    push @ambiguous, $name;
 		}
 	    }
 	}
@@ -319,7 +298,7 @@ if (@unknown || @unknown2 || @ambiguous || @no_coord) {
     }
     print "="x70,"\n";
     if (@ambiguous) {
-	print "= Add to file multi_bez_str-orig or add citypart name to street:\n";
+	print "= Add citypart name to street:\n";
 	foreach (sort @ambiguous) {
 	    print "$_<TAB>", join(",", keys %{$str_in_plz{$_}}), "\n";
 	}

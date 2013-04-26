@@ -41,8 +41,6 @@ BEGIN { main::mymstat("vor Strassen::Strasse") if defined &main::mymstat }
 use Strassen::Strasse;
 BEGIN { main::mymstat("vor Strassen::Kreuzungen") if defined &main::mymstat }
 use Strassen::Kreuzungen;
-BEGIN { main::mymstat("vor Strassen::MultiBezStr") if defined &main::mymstat }
-use Strassen::MultiBezStr;
 BEGIN { main::mymstat("vor Strassen::MultiStrassen") if defined &main::mymstat }
 use Strassen::MultiStrassen;
 BEGIN { main::mymstat("vor Strassen::StrassenNetz") if defined &main::mymstat }

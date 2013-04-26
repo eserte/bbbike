@@ -176,7 +176,6 @@ PerlModule Strassen::Fast
 PerlModule Strassen::Generated
 PerlModule Strassen::Heavy
 PerlModule Strassen::Kreuzungen
-PerlModule Strassen::MultiBezStr
 PerlModule Strassen::MultiStrassen
 PerlModule Strassen::Strasse
 PerlModule Strassen::StrassenNetz

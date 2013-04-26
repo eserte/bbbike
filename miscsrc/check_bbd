@@ -29,7 +29,7 @@ my @ignore_files =
        BASE meta\..* temp_blockings opensearch.streetnames 
        GNUmakefile Makefile.* README .*\.yml
        add_plaetze ampelschaltung ampelschaltung-orig
-       multi_bez_str multi_bez_str-orig str_cont_ausnahme umsteigebhf
+       str_cont_ausnahme umsteigebhf
      );
 
 my $debug = 1;

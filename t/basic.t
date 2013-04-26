@@ -206,7 +206,6 @@ for my $f (@files) {
 		     | BBBikeEdit.pm
 		     | BBBikeStats.pm
 		     | BBBikePlugin.pm
-		     | Strassen/MultiBezStr.pm
 		     | GPS/DirectGarmin.pm
 		     | GPS/SerialStty.pm
 		     | lib/AutoInstall/Tk.pm # this is because of warnings in CPAN.pm

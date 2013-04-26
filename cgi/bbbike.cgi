@@ -72,7 +72,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $ampeln $qualitaet_net $handicap_net
 	    $strcat_net $radwege_strcat_net $radwege_net $routen_net $comments_net
 	    $green_net $unlit_streets_net
-	    $crossings $kr %cached_plz $net $multi_bez_str
+	    $crossings $kr %cached_plz $net
 	    $sperre_tragen $sperre_narrowpassage
 	    $overview_map $city
 	    $use_umland $use_umland_jwd $use_special_destinations
@@ -1323,7 +1323,6 @@ if ($modperl_lowmem) {
     undef $multiorte;
     %cached_plz = ();
     undef $net;
-    undef $multi_bez_str;
 }
 
 my_exit 0;
@@ -1627,10 +1626,6 @@ sub choose_form {
 	    #require Data::Dumper; warn Data::Dumper->new([$retref, $matcherr],[qw()])->Indent(1)->Useqq(1)->Dump;
 
 	    @$matchref = grep { my $coord = $_->get_coord; defined $coord && length $coord } @$retref;
-	    # XXX needs more checks, but seems to work good
-	    # except in the cases, where the same street has different coordinates
-	    # see Ackerstr. Mitte/Wedding
-	    # solution: use multi_bez_str!
 	    @$matchref = map { $_->combined_elem_to_string_form } $plz_obj->combine(@$matchref);
 	    {
 		my %seen;
@@ -1713,38 +1708,6 @@ sub choose_form {
 				}
 			    }
 			}
-		    }
-		}
-	    }
-
-	    # Überprüfen, ob es sich bei den gefundenen Straßen um die
-	    # gleiche Straße, die durch mehrere Bezirke verläuft, handelt,
-	    # oder ob es mehrere Straßen in mehreren Bezirken sind, die nur
-	    # den gleichen Namen haben.
-	    if (@$matchref > 1) {
-	      TRY: {
-		    my $first = $matchref->[0]->get_name;
-		    for(my $i = 1; $i <= $#$matchref; $i++) {
-			if ($first ne $matchref->[$i]->get_name) {
-			    last TRY;
-			}
-		    }
-		    # alle Straßennamen sind gleich
-		    if (!$multi_bez_str) {
-			$multi_bez_str = new MultiBezStr;
-		    }
-		    if ($multi_bez_str) {
-			my %bezirk;
-			foreach ($multi_bez_str->bezirke($first)) {
-			    $bezirk{$_}++;
-			}
-			foreach my $match (@$matchref) {
-			    my(@bezirke) = split /\s*,\s*/, $match->get_citypart; # may be "Britz, Buckow, Rudow"
-			    for my $bezirk (@bezirke) {
-				last TRY if !exists $bezirk{$bezirk};
-			    }
-			}
-			splice @$matchref, 1;
 		    }
 		}
 	    }

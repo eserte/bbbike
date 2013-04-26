@@ -447,7 +447,7 @@ dist_mv:
 autoload:
 	./miscsrc/make_autoload.pl -dd -f \
 	    Strassen/Core.pm Strassen/Fast.pm Strassen/Kreuzungen.pm \
-	    Strassen/MultiBezStr.pm Strassen/MultiStrassen.pm \
+	    Strassen/MultiStrassen.pm \
 	    Strassen/Strasse.pm Strassen/StrassenNetz.pm Strassen/Util.pm
 
 # Pfad zum mymake-Skript, das Makefile.PL's für ~/lib/perl erzeugt

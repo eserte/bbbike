@@ -1,4 +1,0 @@
-# This file was used to disambiguate streets which lead through
-# multiple cityparts and zip areas. Presently it's not needed anymore,
-# as the check script check_str_plz is now smart enough to detect same
-# streets using the coordinate field in Berlin.coords.data

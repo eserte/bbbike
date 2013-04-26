@@ -189,7 +189,6 @@ Strassen/KML.pm
 Strassen/Kreuzungen.pm
 Strassen/Lazy.pm
 Strassen/MapInfo.pm
-Strassen/MultiBezStr.pm
 Strassen/MultiStrassen.pm
 Strassen/Obsolete.pm
 Strassen/Pg.pm
@@ -286,7 +285,6 @@ data/kneipen
 data/landstrassen
 data/landstrassen2
 data/mount
-data/multi_bez_str
 data/nolighting
 data/obst
 data/oldnames

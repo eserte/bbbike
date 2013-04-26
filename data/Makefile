@@ -72,7 +72,7 @@ SOURCE_TARGETS+=	gesperrt gesperrt_car
 .for i in u s r
 SOURCE_TARGETS+=	gesperrt_$(i)
 .endfor
-SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits multi_bez_str
+SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
 
 # These do not have a -orig file of their own, or another type of source file
 COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg berlin berlin_ortsteile
@@ -89,7 +89,7 @@ NON_TARGETS=		upgrade_scope_hint
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
-BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^multi_bez_str$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
+BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
 
 XXX_NON_OUTDOOR=	indoor prog checklater
 XXX_TARGETS=		outdoor ${XXX_NON_OUTDOOR}
@@ -752,12 +752,6 @@ ${_img_gif_${img}}: ${_img_png_${img}}
 .modified:	${TARGETS} ${NON_TARGETS}
 	${PERL} ${MISCSRCDIR}/create_modified
 
-multi_bez_str:	multi_bez_str-orig strassen-orig
-	-@$(WRITEABLE) $@
-	${PERL} ${MISCSRCDIR}/complete_multi_bez_str > $@~
-	mv $@~ $@
-	-@$(READONLY) $@
-
 # Makefile in ../misc ausführen
 # drat ... ich möchte nicht gmake verwenden :-(
 make_misc:
@@ -1242,7 +1236,7 @@ check-disabled:
 	${PERL} ${MISCSRCDIR}/check_bbd ${BBD_TARGETS}
 	@touch $@
 
-.check_strassen1:	.strassen.tmp add_str multi_bez_str-orig Berlin.coords.data
+.check_strassen1:	.strassen.tmp add_str Berlin.coords.data
 	$(CHECK_STR_PLZ) -data .strassen.tmp
 	@touch $@
 
@@ -1283,7 +1277,7 @@ check-disabled:
 	@touch $@
 
 .check_plaetze2: ${PERSISTENTTMPDIR}/non-faked-plaetze add_plaetze
-	$(CHECK_STR_PLZ) -addstr add_plaetze -data ${PERSISTENTTMPDIR}/non-faked-plaetze -nomultibez
+	$(CHECK_STR_PLZ) -addstr add_plaetze -data ${PERSISTENTTMPDIR}/non-faked-plaetze
 	@touch $@
 
 .check_strassen_plaetze_unique:	strassen-orig plaetze-orig
