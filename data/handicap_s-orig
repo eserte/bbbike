@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-04-24 vvv
+#: last_checked: 2013-04-26 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -119,10 +119,10 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 # REMOVED --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # REMOVED (eigentlich gut zu befahren) --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14513,11075 14442,11101
 # 
-#: last_checked: 2013-04-02
-#: next_check: 2013-05-16
+#: last_checked: 2013-04-26
+#: next_check: 2013-06-26
 #: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier in Zukunft keine Fahrbahn mehr sein wird
-Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q2::inwork 10601,12521 10704,12595
+Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3+::inwork 10601,12521 10704,12595
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
@@ -3042,6 +3042,7 @@ Bulgenbachweg: enge Straße	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840
 # 
 #: by: Stefan Klinkusch: vvv
+Scharfe Lanke: enge Straße	q0- -4251,11112 -4254,10810 -4230,10679 -4323,10570 -4387,10496 -4445,10379
 (Schiffahrtsufer - Betckestr.): einige Fußgänger	q1 -3441,13270 -3352,13135 -3338,13118 -3210,12887 -3218,12843 -3214,12779 -3170,12595
 (zum Räcknitzer Steig): einige Fußgänger	q1 -5535,12631 -5559,12557
 (Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fußgänger	q1 -5830,12712 -5808,12631 -5559,12557 -5400,12509
