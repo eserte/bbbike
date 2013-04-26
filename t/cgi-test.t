@@ -12,9 +12,10 @@ BEGIN {
 	use HTML::Form;
 	use LWP::UserAgent;
 	use Test::More;
+	use URI::Escape qw(uri_escape);
 	1;
     }) {
-	print "1..0 # skip no HTML::Form, LWP::UserAgent and/or Test::More modules\n";
+	print "1..0 # skip no HTML::Form, LWP::UserAgent, URI::Escape, and/or Test::More modules\n";
 	exit;
     }
 }
@@ -48,7 +49,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 103 + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 106 + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -164,6 +165,13 @@ $ua->env_proxy;
     like $content, qr{Mehringdamm.*alter Name.*Belle-Alliance-Str.}, 'Found old name note';
 }
 
+{
+    # multiple cityparts
+    my $resp = bbbike_cgi_geocode +{start => uri_escape('gürtelstr')}, 'multi cityparts';
+    my $content = $resp->decoded_content;
+    like $content, qr{value="Gürtelstr.!Friedrichshain, Lichtenberg!}, 'first alternative';
+    like $content, qr{value="Gürtelstr.!Prenzlauer Berg, Weißensee!}, 'second alternative';
+}
 
 SKIP: {
     skip "need JSON::XS", $json_xs_tests
