@@ -244,10 +244,16 @@ sub _output_future {
 		   } else {
 		       $cmp_time = $_->{from};
 		   }
-		   $_->{id} = $id++;
 		   [$cmp_time, $_];
 	       }
-	       grep { $_ } @temp_blocking) {
+	       grep { $_ }
+	       map {
+		   if ($_) {
+		       $_->{id} = $id;
+		   }
+		   $id++;
+		   $_;
+	       } @temp_blocking) {
 	if (!defined $o->{until} || $o->{until} > time) {
 	    next if !$include_recurring && ($o->{permanent} || $o->{recurring});
 	    if ($do_output_files) {
