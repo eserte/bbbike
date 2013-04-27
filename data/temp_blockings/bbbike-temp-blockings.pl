@@ -274,13 +274,14 @@ userdel	2 15758,10578 15982,10765 16003,10797 16032,10842
 userdel	2 15758,10578 15639,10469
 EOF
      },
-     { from  => undef, # note: periodisch, siehe unten
-       until => Time::Local::timelocal(reverse(2006,12-1,9,23,59,59)),
-       text  => 'Richardplatz Alt-Rixdorfer Weihnachtsmarkt, gesperrt. Dauer: bis 09.12.2006. ',
-       type  => 'gesperrt',
-       #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
-       data => '', # dummy
-     },
+     undef, # früher:
+     # { from  => undef, # note: periodisch, siehe unten
+     #   until => Time::Local::timelocal(reverse(2006,12-1,9,23,59,59)),
+     #   text  => 'Richardplatz Alt-Rixdorfer Weihnachtsmarkt, gesperrt. Dauer: bis 09.12.2006. ',
+     #   type  => 'gesperrt',
+     #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
+     #   data => '', # dummy
+     # },
      { from  => 1353884400, # 2012-11-26 00:00, # 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
        until => 1356303599, # 2012-12-23 23:59, # 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
        text  => 'Spandauer Weihnachtsmarkt, vom 26. November 2012 bis 23. Dezember 2012',
@@ -1211,14 +1212,15 @@ userdel	q4 38264,50086 38174,49717 38022,49097
 userdel	q4 38264,50086 38476,50514 38845,51258
 EOF
      },
-     { from  => 1196895600, # 2007-12-06 00:00 # note: periodisch, siehe unten
-       until => 1197154800, # 2007-12-09 00:00
-       text  => 'Richardplatz Neukölln Straßensperrung Weihnachtsmarkt 7.12.2007-8.12.2007 ',
-       type  => 'gesperrt',
-       source_id => 'IM_007405',
-       #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
-       data => '', # dummy
-     },
+     undef, # früher:
+     # { from  => 1196895600, # 2007-12-06 00:00 # note: periodisch, siehe unten
+     #   until => 1197154800, # 2007-12-09 00:00
+     #   text  => 'Richardplatz Neukölln Straßensperrung Weihnachtsmarkt 7.12.2007-8.12.2007 ',
+     #   type  => 'gesperrt',
+     #   source_id => 'IM_007405',
+     #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
+     #   data => '', # dummy
+     # },
      { from  => 1100038749, # 2004-11-09 23:19
        until => 1100559600, # 2004-11-16 00:00
        text  => 'Lennéstr. zwischen Bellvuestr. und Eberstr. Baustelle, Straße gesperrt Richtung Ebertstr. (bis 15.11.2004) ',
