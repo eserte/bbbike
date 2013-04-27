@@ -40,6 +40,7 @@ use File::Spec     qw();
 use BBBikeUtil qw(is_in_path);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
+	      libxml_parse_html libxml_parse_html_or_skip
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
@@ -269,6 +270,39 @@ sub tidy_check {
 	}
 	unlink $errfilename;
 	$ok;
+    }
+}
+
+{
+    my $p; # cached parser
+
+    sub libxml_parse_html ($) {
+	return undef if defined $p && !$p;
+
+	my $content = shift;
+
+	$p = eval {
+	    require XML::LibXML;
+	    XML::LibXML->new;
+	};
+	if (!$p) {
+	    $p = 0; # false but defined
+	    return undef;
+	}
+
+	$p->parse_html_string($content);
+    }
+
+    sub libxml_parse_html_or_skip ($$) {
+	my($skip_count, $content) = @_;
+
+	if ($skip_count !~ m{^\d+$}) {
+	    die "'$skip_count' does not look like a skip count";
+	}
+
+	my $doc = libxml_parse_html $content;
+	Test::More::skip("Cannot parse content as html", $skip_count) if !$doc;
+	$doc;
     }
 }
 
