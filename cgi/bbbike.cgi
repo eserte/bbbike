@@ -5123,7 +5123,7 @@ EOF
 
 
 	    if (!$bi->{'no_new_windows'}) {
-		print " target=\"BBBikeGrafik\"";
+		print " target=\"_blank\"";
 	    }
 	    print " action=\"$bbbike_script\"";
 	    # show_map scheint bei OS/2 nicht zu funktionieren

@@ -23,7 +23,7 @@ function ms(x,y) {
     var orig_imagetype_value = frm.imagetype.value; //XXX
     frm.imagetype.value = "mapserver";
     var orig_form_target = frm.target;
-    frm.target = "BBBikeGrafik";
+    frm.target = "_blank";
 
     frm.submit();
 
@@ -72,7 +72,7 @@ function show_map(bbbike_html_dir) {
 	frm.as_attachment.value = "bla.foo";
     } else {
 	frm.as_attachment.value = "";
-	var w = window.open(bbbike_html_dir + "/pleasewait.html", "BBBikeGrafik",
+	var w = window.open(bbbike_html_dir + "/pleasewait.html", "_blank",
 			    "locationbar=no,menubar=" + menubar +
 			    ",screenX=20,screenY=20" + addwindowparam +
 			    geometry_string);
