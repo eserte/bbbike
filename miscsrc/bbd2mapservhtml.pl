@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2012,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -430,7 +430,7 @@ EOF
 EOF
     if ($routelistlabel) {
 	$html .= <<EOF;
- <input type="submit" onclick='this.form.showroutelist.value="1";' value="@{[ CGI::escapeHTML($routelistlabel) ]}" />
+ <input type="submit" onclick='this.form.showroutelist.value="1"; this.form.imagetype.value="";' value="@{[ CGI::escapeHTML($routelistlabel) ]}" />
 EOF
     }
     for my $custom_link_def (@custom_link_defs) {
