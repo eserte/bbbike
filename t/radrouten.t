@@ -50,8 +50,12 @@ push @{ $ua->requests_redirectable }, 'POST'; # violating RFC 2616
 
 my $root_url = "http://localhost/bbbike/mapserver/brb/radroute.html";
 my $root_resp = $ua->get($root_url);
-ok $root_resp->is_success, "Fetching $root_url"
-    or BAIL_OUT "No sucess - no need to continue further";
+if (!ok $root_resp->is_success, "Fetching $root_url") {
+ SKIP: {
+	skip "No success - no need to continue further", 1;
+    }
+    exit 1;
+}
 
 my @test_defs;
 
