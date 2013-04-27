@@ -35,6 +35,7 @@ use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		  using_bbbike_test_cgi check_cgi_testing
 		  validate_bbbikecgires_xml_string
 		  validate_bbbikecgires_data
+		  libxml_parse_html_or_skip
 		);
 
 sub bbbike_cgi_search ($$);
@@ -49,7 +50,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 106 + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 109 + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -171,6 +172,14 @@ $ua->env_proxy;
     my $content = $resp->decoded_content;
     like $content, qr{value="Gürtelstr.!Friedrichshain, Lichtenberg!}, 'first alternative';
     like $content, qr{value="Gürtelstr.!Prenzlauer Berg, Weißensee!}, 'second alternative';
+ SKIP: {
+	my $doc = libxml_parse_html_or_skip 3, $content;
+	my @radio_nodes = $doc->findnodes('//input[@type="radio" and @name="start2"]');
+	is @radio_nodes, 2, 'Two <input> nodes found';
+	for my $radio_node (@radio_nodes) {
+	    like $radio_node->getAttribute('value'), qr{^Gürtelstr\.}, 'Found Gürtelstr. in <input> node';
+	}
+    }
 }
 
 SKIP: {
