@@ -100,11 +100,7 @@ sub show_mini_images {
     main::IncBusy($main::top);
     eval {
 
-	my($cminx, $cminy, $cmaxx, $cmaxy) = $main::c->get_corners;
-	my($minx,$miny) = $Karte::Polar::obj->standard2map(main::anti_transpose($cminx,$cminy));
-	my($maxx,$maxy) = $Karte::Polar::obj->standard2map(main::anti_transpose($cmaxx,$cmaxy));
-	($minx,$maxx) = ($maxx,$minx) if $minx > $maxx;
-	($miny,$maxy) = ($maxy,$miny) if $miny > $maxy;
+	my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
 
 	Hooks::get_hooks("delete_background_images")->execute;
 	for (@photos) {

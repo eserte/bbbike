@@ -21395,11 +21395,22 @@ sub get_polyline_center {
      ($koord[3]-$koord[1])/2+$koord[1]);
 }
 
+# Return bbox for a given item
 ### AutoLoad Sub
 sub get_bbox_area {
     my($item) = @_;
     my(@bbox) = $c->bbox($item);
     abs(($bbox[2]-$bbox[0]) * ($bbox[3]-$bbox[1]));
+}
+
+# Return bbox for visible map area, as WGS84 values
+sub get_visible_map_bbox_polar {
+    my($cminx, $cminy, $cmaxx, $cmaxy) = $c->get_corners;
+    my($minx,$miny) = $Karte::Polar::obj->standard2map(anti_transpose($cminx,$cminy));
+    my($maxx,$maxy) = $Karte::Polar::obj->standard2map(anti_transpose($cmaxx,$cmaxy));
+    ($minx,$maxx) = ($maxx,$minx) if $minx > $maxx;
+    ($miny,$maxy) = ($maxy,$miny) if $miny > $maxy;
+    ($minx,$miny,$maxx,$maxy);
 }
 
 # Erzeugt eine Backupdatei
