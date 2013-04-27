@@ -355,10 +355,23 @@ EOF
 userdel	2 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5368,13406 5248,13434
 EOF
      },
-     { from  => Time::Local::timelocal(reverse(2004-1900,4-1,30,12,0,0)),
-       until => Time::Local::timelocal(reverse(2004-1900,5-1,2,6,0,0)),
-       file  => "kreuzberg-20020501.bbd",
-       text  => "mögliche Behinderungen zum 1. Mai in Kreuzberg",
+     { from  => $isodate2epoch->("2013-04-30 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-05-01 23:59:59"),
+       periodic => 1,
+       text  => 'MyFest 2013: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2013',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.myfest36.de/
+userdel	2::temp 11763,10635 11722,10533 11949,10414
+userdel	2::temp 11556,10869 11770,10774 11760,10732 11781,10696 11763,10635 11505,10744 11556,10869 11589,10947 11640,11067
+userdel	2::temp 11958,11045 11897,10887 11841,10747 11824,10708 11781,10696
+userdel	2::temp 11805,10899 11803,10857
+userdel	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11722,10533
+userdel	2::temp 11841,10747 11770,10774 11799,10848
+userdel	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
+userdel auto	3 11258,10682 11275,10723 11253,10778
+userdel auto	3 11253,10778 11275,10723 11258,10682
+EOF
      },
      { from  => 1083232800, # 2004-04-29 12:00
        until => 1083448800, # 2004-05-02 00:00
