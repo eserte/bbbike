@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: mkroutemap,v 1.7 2005/05/17 07:14:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2004,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +13,6 @@
 #
 
 use strict;
-use FindBin;
 use Getopt::Long;
 
 my @known_scopes = qw(INNERCITY CITY REGION WIDEREGION POTSDAM);
