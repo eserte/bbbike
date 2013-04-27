@@ -179,9 +179,6 @@ sub check_url {
 	}
 
 	my $method = "head";
-	if ($url =~ m{user.cs.tu-berlin.de}) {
-	    $method = "get";	# HEAD does not work here
-	}
 	my $resp = $ua->$method($url);
 	my $redir_url = $resp->request->uri;
 	if ($redir_url eq $url) {
