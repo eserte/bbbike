@@ -103,6 +103,7 @@ sub load_perl_file {
     @temp_blocking = ();
     do $file;
     if (!@temp_blocking) {
+	warn $@ if $@;
 	system($^X, "-c", $file);
 	die "No \@temp_blocking variable in $file found (perl check returned $?)";
     }
