@@ -395,6 +395,20 @@ sub create_mapfile {
 	    push @title_args, -titlepoint => join ",", @{$self->{MapExt}}[0, 1];
 	}
 
+	my $route_shape_file;
+	if ($externshape && -s $tmpfile1) {
+	    # convert bbd file to esri file
+	    require File::Temp;
+	    (undef, $route_shape_file) = File::Temp::tempfile(UNLINK => 1);
+	    my @cmd = ($self->{BBD2ESRI_PROG},
+		       $tmpfile1, "-o", $route_shape_file);
+	    warn "Cmd: @cmd" if $self->{DEBUG};
+	    system @cmd;
+	    if ($?) {
+		die "Error ($?) while doing @cmd";
+	    }
+	}
+
 	foreach my $scope (@scopes) {
 	    my $orig_map_path = $path_for_scope->($scope);
 	    my $map_path = $path_for_scope->($scope, "$prefix-");
@@ -403,25 +417,12 @@ sub create_mapfile {
 		$preferred_map_path = $map_path;
 	    }
 
-	    my($tmpfh, $tmpfile2);
-	    if ($externshape && -s $tmpfile1) {
-		# convert bbd file to esri file
-		require File::Temp;
-		($tmpfh, $tmpfile2) = File::Temp::tempfile(UNLINK => 1);
-		my @cmd = ($self->{BBD2ESRI_PROG},
-			   $tmpfile1, "-o", $tmpfile2);
-		warn "Cmd: @cmd" if $self->{DEBUG};
-		system @cmd;
-		if ($?) {
-		    die "Error ($?) while doing @cmd";
-		}
-	    }
 
 	    # copy brb.map to new map file
 	    my @cmd =
 		($self->{MAPSERVER_DIR} . "/mkroutemap",
-		 (defined $tmpfile2
-		  ? (-routeshapefile => $tmpfile2)
+		 (defined $route_shape_file
+		  ? (-routeshapefile => $route_shape_file)
 		  : (-routecoords => join(",", map { @$_ } @{$self->{MultiCoords}}))
 		 ),
 		 @marker_args,
