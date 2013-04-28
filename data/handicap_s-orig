@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-04-26 vvv
+#: last_checked: 2013-04-28 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -84,7 +84,7 @@ Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::in
 #: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2013-04-09 vvv
+#: last_checked: 2013-04-28 vvv
 #: next_check: 2013-12-31 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -98,8 +98,9 @@ Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: next_check ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-02-20
-#: next_check: 2013-04-20
+#: last_checked: 2013-04-28
+#: next_check: 2013-10-28
+#: XXX anscheinend Baulager f¸r die S21-Bauarbeiten
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
 #: last_checked: 2013-04-09
@@ -143,8 +144,8 @@ Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 #: last_checked ^^^
 # 
-#: last_checked: 2013-04-03
-#: next_check: 2013-05-18
+#: last_checked: 2013-04-28
+#: next_check: 2013-05-28
 Am Zirkus: Baustelle, Einbahnstraﬂe	q3::inwork; 9167,13046 9239,12923
 # 
 #: last_checked: 2013-04-11
@@ -158,7 +159,7 @@ Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9870,12657 9900,12643 9919
 #: last_checked: 2013-04-08
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
-#: last_checked: 2013-04-22
+#: last_checked: 2013-04-28
 #: next_check: 2013-05-30
 #: XXX siehe auch augehobene Einbahnstraﬂenregelung in der Gegenrichtung, sowie fragezeichen-orig-Eintrag
 Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732
@@ -221,7 +222,7 @@ Georgenstr.: Fuﬂg‰ngerzone	q3 9434,12669 9313,12662
 Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10298,13076 10185,12982
 Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
 Pariser Platz/Brandenburger Tor: Fuﬂg‰nger	q2 8804,12280 8731,12270 8610,12254 8538,12245
-Potsdamer Platz: Fuﬂg‰nger	q3 8542,11502 8462,11538
+Potsdamer Platz: Fuﬂg‰nger	q3 8542,11502 8442,11555
 Bl¸cherplatz: reger Fuﬂg‰ngerverkehr	q3 9579,10122 9599,10175
 Bl¸cherplatz: Fuﬂg‰ngerverkehr	q3 9599,10175 9631,10142
 #: note: in S¸drichtung Bushaltestelle benutzen:
@@ -267,7 +268,7 @@ Gˆrlitzer Park: Fuﬂg‰nger	q2 12543,10223 12580,10252 12611,10299
 Gˆrlitzer Park: Fuﬂg‰nger	q2 13053,10088 13013,10068 13013,10047 12987,10007 12932,9900
 Tiergartenufer: Fuﬂg‰nger	q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg, Fuﬂg‰nger	q1 6309,11443 6186,11466
-Tiergarten: Parkweg, Fuﬂg‰nger	q2 5666,11362 5727,11573 5758,11630 5780,11622 5802,11672 5831,11697 5818,11722 5835,11768 5870,11842 5890,11865 5900,11913
+Tiergarten: Parkweg, Fuﬂg‰nger	q2 5666,11362 5727,11573 5758,11630 5780,11622 5802,11672 5831,11697 5818,11722 5835,11768 5858,11863 5900,11913
 Fasanerieallee: Parkweg	q1 6435,11606 6459,11638 6540,11754 6685,11954
 Groﬂe Sternallee: Parkweg	q1 6809,11979 7073,11798 7163,11738 7382,11588 7504,11512
 (Hiroshimastr. - Groﬂe Sternallee): Parkweg	q1 7356,11517 7382,11588
@@ -399,7 +400,8 @@ Ernststr.: Fuﬂg‰nger	q2 2497,19503 2700,19527
 (S-Bahnunterf¸hrung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
 (S-Bahnunterf¸hrung Wartenberg): Fuﬂg‰nger	q1 17077,18744 17109,18772
 (Weg zwischen S-Hohenschˆnhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17159,18375 17111,18479 17040,18571 17002,18578 16936,18658
-Bernburger Treppe: Rampe	q3 8536,11063 8454,11086
+#: note: jeweils zwei Serpentinen pro Seite, groﬂer Zeitverlust
+Bernburger Treppe: Rampen	q4 8536,11063 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 12802,13584 12766,13621 12743,13634 12709,13691 12707,13706
 (Buckower Ring - Cecilienstr.): Fuﬂg‰nger, eng	q1 21874,13543 21928,13717
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3388,8958 3333,9026
@@ -683,7 +685,7 @@ Wustermarker Str.: Fuﬂg‰nger, Bordsteine	q2 -4750,14393 -4678,14382
 Firlstr.: zwei Bodenschwellen	q1 18574,6401 18645,6511
 (Florastr. - Schloﬂstr.): Fuﬂg‰nger	q2 5234,6086 5165,6119
 Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
-(Bremer Weg): Fuﬂg‰nger	q1 5900,11913 5923,11873 6296,11890 6337,11887 6384,11926 6550,11954 6642,12010
+(Bremer Weg): Fuﬂg‰nger	q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
 (Bremer Weg): Fuﬂg‰nger	q1 6828,12031 6857,11992 7460,12054 7777,12098 7827,12105 8018,12131 8048,12135 8107,12145 8215,12156 8466,12197 8522,12239 8538,12245
 Oberlandgarten: Fuﬂg‰nger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fuﬂg‰nger, Bordsteine	q2 11209,6166 11224,6244
@@ -1517,6 +1519,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17267,18343
 (entlang der Stadtbahn): Fuﬂg‰nger	q1 10117,12966 9930,12947
+(Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8483,10900 8399,10923
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -1688,8 +1691,7 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 (Spreeuferweg): Fuﬂg‰nger	q1 4537,12531 4501,12544 4334,12551
 #: by: Johannes Nerger:
 (Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8791,19249 8947,19166 9446,18855 9475,18862
-#: by: Felix Beutler:
-Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
+# REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jˆrn Busch:
 #: corrected_by: srt (q2 -> q1)
 (Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837

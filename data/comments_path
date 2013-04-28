@@ -42,8 +42,8 @@ Fußgängerampel östlich der Münchener Str. zum Überqueren benutzen	CP; 6209,9772 
 an der Fußgängerampel vor der Münchener Str. auf den linken Gehweg wechseln	CP; 6502,9782 6241,9772 6209,9771
 Thomas-Dehler-Str. - Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6654,11460 6716,11439 6825,11486
 Gervinusstr./Lewishamstr.: linken Gehweg bis zur Ampel an der Mommsenstr. benutzen	CP; 3839,10904 3631,10784 3644,10759
-Tiergarten: rechts des Neuen Sees halten	CP; 5900,11913 5890,11865 5870,11842
-Tiergarten: links des Neuen Sees halten	CP; 5900,11913 5890,11865 5933,11775
+Tiergarten: rechts des Neuen Sees halten	CP2; 5900,11913 5858,11863
+Tiergarten: links des Neuen Sees halten	CP; 5900,11913 5907,11874 5933,11775
 Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die Straßenseite wechseln	PI; 6825,11486 6851,11346 7103,11247
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4783,8557 4784,8508 4960,8440
 Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	CP; 5320,8456 5427,8412 5669,8207
@@ -58,7 +58,7 @@ Wuhlewanderweg - Lindenstr.: zunächst linken Gehweg benutzen, an der Cardinalstr
 Mariendorfer Damm - Am Teltowkanal: bereits an der Ullsteinstr. auf den linken Gehweg wechseln	PI; 9207,5185 9192,5272 9171,5263
 hinter dem "Alten Zollhaus" halbrechts abbiegen	CP; 10313,10084 10168,10085 10158,10117 10069,10151
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14291,12220 14285,12190
-Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,11679 8203,11686 8225,11692 8335,11718 8438,11753 8489,11782 8571,11846
+Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,11686 8225,11692 8335,11718 8438,11753 8489,11782 8571,11846
 dem Schotterweg folgen	CP; 24210,37562 24193,37725 24208,37830
 Hauptstr.: bereits an der Gustav-Holzmann-Str. die Gehwegseite wechseln	PI; 16302,9865 16261,9925 16049,9749
 Hauptstr.: wegen Straßenbahntrasse zunächst auf der linken Gehwegseite weiterfahren und an der nächsten Ampel die Gehwegseite wechseln	CP; 16049,9749 16261,9925 16187,10033
@@ -88,7 +88,8 @@ Kietz - Kietzer Str.: zum Überqueren der Straße Fußgängerampel links benutzen	CP
 Kietz - Müggelheimer Str.: zum Überqueren der Straße Fußgängerampel links benutzen	CP; 22364,4429 22383,4470 22341,4483
 als "Neue Dorfstr." ausgeschildert	CS; 52490,75434 52181,75778
 als "Wiesenweg" ausgeschildert	CS; 52215,83681 52346,83150
-Richtung Bellevuestr. und Kemperplatz	CS; 8548,11552 8505,11544 8462,11538
+Richtung Bellevuestr. und Kemperplatz	CS; 8548,11571 8502,11564 8442,11555
+Ausgeschildert als Kemperplatz	CP2; 8203,11686 8209,11671
 Richtung Linkstr.	CS; 8573,11404 8554,11386 8474,11350
 Einfahrt gegenüber Waldcafe	CP2; 30041,5329 27096,5828
 Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4971,6345 4985,6370
@@ -372,3 +373,4 @@ Abzweig - Salvador-Allende-Str.: auf den linken Gehweg bis zur Ampel Friedrichsh
 Michael-Brückner-Str. - Sterndamm: an der Ampel Sterndamm besteht vom Radweg aus keine Möglichkeit zum Linksabbiegen, deshalb bereits an der Ampel Hasselwerderstr. auf den linken Gehweg wechseln	PI; 17960,5511 17886,5587 17736,5441
 Rixdorfer Str. - KGA An der Südostallee: wegen einer Leitplanke zwischen Radweg und Fahrbahn bereits 40 Meter vorher auf die Fahrbahn wechseln	CP; 17156,6235 17056,6133 17070,6115
 Indira-Gandhi-Str. - Orankeweg: bereits an der Fußgängerampel Gounodstr. auf den linken Gehweg wechseln	PI; 14597,15970 14609,15921 14720,15905
+Köthener Brücke - Gleisdreieckpark: ab der Ampel den linken Gehweg benutzen	PI; 8430,10710 8362,10779 8318,10738

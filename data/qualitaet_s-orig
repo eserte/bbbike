@@ -216,8 +216,8 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2013-04-22
-#: next_check: 2013-07-22
+#: last_checked: 2013-04-28
+#: next_check: 2013-07-28
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
 Böttgerstr.: Asphalt	Q0 9134,15953 8923,15850
@@ -591,7 +591,7 @@ Bahndamm: fester Sandweg	Q1 13145,9920 13152,9914 13229,9853 13282,9828 13476,97
 Tiergartenufer: Parkweg	Q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg	Q2+ 6309,11443 6186,11466
 Fasanerieallee: Parkweg	Q1 6435,11606 6459,11638 6540,11754 6685,11954
-Großer Weg: Parkweg	Q1 5900,11913 5890,11865 5933,11775 6022,11757 6171,11790 6306,11771 6358,11724 6411,11678 6459,11638 6524,11583 6809,11570 6980,11583 7163,11738 7287,11763 7535,11677 7606,11629
+Großer Weg: Parkweg	Q1 5900,11913 5907,11874 5933,11775 6022,11757 6171,11790 6306,11771 6358,11724 6411,11678 6459,11638 6524,11583 6809,11570 6980,11583 7163,11738 7287,11763 7535,11677 7606,11629
 Großer Weg: asphaltiert	Q0 7606,11629 7621,11620 7669,11586 7711,11558 7717,11540
 Große Sternallee: Parkweg	Q1 6809,11979 7073,11798 7163,11738 7382,11588 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	Q1 7356,11517 7382,11588
@@ -1428,9 +1428,9 @@ Schinkelplatz: mäßiges Kopfsteinpflaster	Q2 10058,12290 10008,12274
 An der Kommandantur: Asphalt	Q0 9994,12368 9943,12364
 Schinkelplatz: mäßiges Kopfsteinpflaster	Q2 9996,12401 10058,12290 10091,12232
 Sorauer Str.: Kopfsteinpflaster, teilweise mäßig, teilweise OK	Q2+ 12822,10487 12685,10264
-am Beisheim-Center: sehr gutes Kopfsteinpflaster	Q0 8335,11718 8404,11629 8462,11538
+am Beisheim-Center: sehr gutes Kopfsteinpflaster	Q0 8335,11718 8397,11624 8442,11555
 Hans-Bülow-Str.: Asphalt	Q0 8553,11638 8473,11634
-Berliner Freiheit: sehr gutes Kopfsteinpflaster	Q0 8473,11634 8404,11629
+Berliner Freiheit: sehr gutes Kopfsteinpflaster	Q0 8473,11634 8397,11624
 Katzlerstr.: mäßiges Kopfsteinpflaster	Q2 8035,9437 8097,9650
 Derfflingerstr.: einige kurze Kopfsteinpflasterabschnitte, sonst Asphalt	Q0 7117,10611 7236,10936
 Weimarer Str.: gutes Kopfsteinpflaster	Q1 4101,11347 4101,11233
@@ -1679,7 +1679,7 @@ Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21454,4928 21498,5023
 Wallotstr.: Asphalt	Q0 2065,9459 1997,9499 1933,9476 1873,9388 1783,9368 1757,9282
 Gartenufer: Parkweg	Q1 5780,11622 6239,11399 6342,11353 6346,11326
 (südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils Asphalt	Q1 5579,12231 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
-Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7936,12906 7858,12830 7784,12778
+Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7936,12906 7858,12830 7789,12764
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7858,12830 7837,12860
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7064,12419 7139,12376 7217,12383 7314,12419 7486,12551 7541,12582 7838,12734 7904,12803 7945,12878
 Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2 12743,6645 12860,6667 12981,6689 13099,6712 13122,6717
@@ -1760,7 +1760,7 @@ Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13521,13781 13635,13605
 Hausburgstr.: Asphalt	Q0 13635,13605 13706,13460 13742,13376
 Hausburgstr.: Kopfsteinpflaster	Q2 13742,13376 13835,13149 13895,13017
 Konitzer Str.: Kopfsteinpflaster	Q2 14099,11505 14087,11467
-Auguste-Hauschner-Str.: asphaltiert	Q0 8438,11753 8473,11634 8505,11544
+Auguste-Hauschner-Str.: asphaltiert	Q0 8438,11753 8473,11634 8502,11564
 Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
 Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
@@ -2418,7 +2418,7 @@ Wördenweg: unbefestigter, holpriger Weg	Q2 8513,21099 8482,21051 8251,20927 8107
 (Am Nordgraben): unbefestigter, holpriger Weg	Q2 8107,20859 7644,20744 7454,20671
 Friesenstr.: Beton	Q1 8765,19288 8644,19345 8467,19408 8396,19422 8331,19458 8307,19458
 Homeyerstr.: Asphalt mit Schäden	Q1- 9475,18862 9532,18819 9613,18758 9801,18686 9920,18636
-(Bremer Weg): Parkweg	Q1 5900,11913 5923,11873 6296,11890 6337,11887 6384,11926 6550,11954 6642,12010
+(Bremer Weg): Parkweg	Q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
 (Bremer Weg): Asphalt	Q0 6828,12031 6857,11992 7460,12054 7777,12098 7827,12105 8018,12131 8048,12135 8107,12145 8215,12156 8466,12197 8522,12239 8538,12245
 (Bremer Weg - Fasanerieallee): Parkweg, mittelfeiner Schotter	Q1 6337,11887 6379,11843 6406,11784 6467,11780 6540,11754
 nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1+ 6608,12858 6551,12901 6535,12934 6271,12985 6218,12975 6180,12972
@@ -6595,6 +6595,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 #: last_checked: 2013-04-22
 (Park am Gleisdreieck, Eingang Pohlstr.): (noch) unbefestigt	Q2 8159,10430 8237,10418 8278,10384
 (Park am Gleisdreieck, Eingang Bülowstr.): Beton	Q0 8027,10076 8035,10075 8040,10076 8042,10084 8145,10090 8211,10083
+(Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8362,10779 8318,10738
 (Grenzallee - Britzer Hafensteg): überwiegend Asphalt, einige Verbundsteinpflasterabschnitte	Q0 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13997,6216
 Britzer Hafensteg: Holzbohlen	Q1 13997,6216 13951,6190
 Sieversufer: Asphalt	Q0 13951,6190 13883,6163
@@ -11811,8 +11812,7 @@ Maximilianstr. (Rummelsburg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,110
 Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8525,12958 8556,12989
 #: corrected_by: srt (nur dieser Abschnitt)
 Unterbaumstr.: Asphalt	Q0 8556,12989 8581,13013
-#: confirmed_by: srt
-Nordufer: Verbundsteinpflaster	Q1 7212,14738 7427,14648 7464,14636
+# REMOVED (nicht mehr relevant, wird neu gebaut) --- #: confirmed_by: srt --- Nordufer: Verbundsteinpflaster	Q1 7212,14738 7427,14648 7464,14636
 Mönkeberger Str.: asphaltiert	Q0 9475,16307 9582,16296 9725,16281
 Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
 #: corrected_by: srt (fester Sand -> Beton)
@@ -21889,7 +21889,8 @@ Max-Urich-Str.: Kopfsteinpflaster	Q2 9041,14896 8953,14758
 Gartenplatz: Asphalt	Q0 8870,14637 8953,14758
 Ravenéstr.: Kopfsteinpflaster	Q2 8232,15220 8001,15205
 (Schulzendorfer - Schönwalder Str.): Verbundsteine	Q1 8248,14900 8266,15134
-Döberitzer Str.: Kopfsteinpflaster	Q3 7981,13722 7872,13685
+#: note: früher schlechtes Kopfsteinpflaster, aber mittlerweile wegen Benutzung als Baustraße asphaltiert
+Döberitzer Str.: asphaltiert	Q0 7976,13727 7872,13685
 Dreysestr: Kopfsteinpflaster mit Bodenschwellen	Q2 6976,13563 6897,13551 6783,13551 6687,13545
 Bandelstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 6692,13333 6687,13545 6686,13746
 Bugenhagenstr.: Asphalt mit Kopfsteinpflasterbodenschwellen	Q2 6229,13517 6104,13522 6008,13529
@@ -21917,7 +21918,7 @@ Ingeborg-Drewitz-Allee: Asphalt	Q0 7343,12758 7367,12729 7418,12725 7538,12729
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7365,12775 7388,12746 7539,12754
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7538,12729 7539,12754
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7538,12729 7592,12730 7781,12732
-(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7620,12757 7649,12758 7849,12767
+(Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7539,12754 7620,12757 7649,12758 7789,12764 7849,12767
 (Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7322,12735 7341,12709
 Spenerstr.: Kopfsteinpflaster	Q2 6877,12607 6907,12777 6966,13075
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7415,12590 7418,12725
