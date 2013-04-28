@@ -399,7 +399,12 @@ sub create_mapfile {
 	if ($externshape && -s $tmpfile1) {
 	    # convert bbd file to esri file
 	    require File::Temp;
-	    (undef, $route_shape_file) = File::Temp::tempfile(UNLINK => 1);
+	    # Actually this temporary file is not used at all, but
+	    # it's name is used for the generated .shp/.shx/.dbf
+	    # files. These files will stay around and need to be
+	    # cleaned up with an external cronjob (see
+	    # /etc/cron.d/bbbike-cleanup on the live server).
+	    (undef, $route_shape_file) = File::Temp::tempfile(UNLINK => 1, SUFFIX => '_BBBikeMapserver');
 	    my @cmd = ($self->{BBD2ESRI_PROG},
 		       $tmpfile1, "-o", $route_shape_file);
 	    warn "Cmd: @cmd" if $self->{DEBUG};
