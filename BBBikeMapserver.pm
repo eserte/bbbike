@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.40 2007/06/14 22:20:43 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2005,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -121,6 +120,12 @@ sub has_more_than_one_coord {
     0;
 }
 
+sub has_more_than_one_line {
+    my $self = shift;
+    return 0 if !$self->{MultiCoords} || !@{ $self->{MultiCoords} };
+    return @{ $self->{MultiCoords} } > 1;
+}
+
 sub all_layers {
     qw(gewaesser flaechen grenzen bahn qualitaet radwege orte
        handicap ampeln obst faehren
@@ -188,8 +193,9 @@ sub scope_by_map {
 # -scope => city, region, wideregion, or all,...
 #   all,... means all scopes, but starting with the "..." scope
 #   also: narrowest, needs also -mapext or center/start point
-# -externshape => bool: use external shape files. Internal features cannot
-#   be queried with the map server, so generally better to set to true
+# -queryableroute => bool: set to true if the route should be able
+#   to be queried ("show details"). This triggers the use of external shape files,
+#   as inline features cannot be queried with the map server.
 # -route => bool: draw route (see new_from_cgi)
 # -bbbikeurl => url: URL for bbbike.cgi
 # -bbbikemail => mail: mail address for bbbike mails
@@ -206,8 +212,8 @@ sub scope_by_map {
 #                 6000m)
 sub start_mapserver {
     my($self, %args) = @_;
-    my $externshape = $args{'-externshape'} =
-	exists $args{-externshape} ? $args{-externshape} : 0;
+    my $queryableroute = $args{'-queryableroute'} =
+	exists $args{-queryableroute} ? $args{-queryableroute} : 0;
     my $do_route    = $args{'-route'} =
 	exists $args{-route} ? $args{-route} : 1;
     my $pass        = $args{-passparams};
@@ -302,7 +308,7 @@ sub create_mapfile {
     my($self, %args) = @_;
     my $do_route    = $args{-route};
     my $scope       = $args{-scope};
-    my $externshape = $args{-externshape};
+    my $queryableroute = $args{-queryableroute};
     my $mapname     = $args{-mapname} || "brb";
 
     my $orig_map_dir = $self->{MAPSERVER_DIR};
@@ -324,28 +330,6 @@ sub create_mapfile {
     my $preferred_map_path;
 
     if ($do_route) {
-	require Strassen::Util;
-	require BBBikeUtil;
-	# convert Coords to bbd file
-	my $tmpfile1 = $self->{TmpDir} . "/bbbikems-$$.bbd";
-	open(TMP1, ">$tmpfile1") or die "Can't write to $tmpfile1: $!";
-	my $dist = 0;
-	if (@{ $self->{MultiCoords} || [] }) {
-	    if (!$self->has_more_than_one_coord) {
-		print TMP1 "\tRoute " . $self->get_first_coord . "\n";
-	    } else {
-		for my $line (@{ $self->{MultiCoords} }) {
-		    my $old_dist = $dist;
-		    for my $i (1 .. $#{$line}) {
-			$dist += Strassen::Util::strecke_s(@{$line}[$i-1,$i]);
-			# XXX add maybe output of $comments_net->get_point_comment
-		    }
-		    print TMP1 BBBikeUtil::m2km($old_dist) . " - " . BBBikeUtil::m2km($dist) . "\tRoute " . join(" ", @{$line}) . "\n";
-		}
-	    }
-	}
-	close TMP1;
-
 	# create a new unique id
 	my $prefix = "xxx-" . time . "-" . $$ . int(rand(100000));
 
@@ -396,22 +380,57 @@ sub create_mapfile {
 	}
 
 	my $route_shape_file;
-	if ($externshape && -s $tmpfile1) {
-	    # convert bbd file to esri file
+	if ($queryableroute || $self->has_more_than_one_line) {
 	    require File::Temp;
-	    # Actually this temporary file is not used at all, but
-	    # it's name is used for the generated .shp/.shx/.dbf
-	    # files. These files will stay around and need to be
-	    # cleaned up with an external cronjob (see
-	    # /etc/cron.d/bbbike-cleanup on the live server).
-	    (undef, $route_shape_file) = File::Temp::tempfile(UNLINK => 1, SUFFIX => '_BBBikeMapserver');
-	    my @cmd = ($self->{BBD2ESRI_PROG},
-		       $tmpfile1, "-o", $route_shape_file);
-	    warn "Cmd: @cmd" if $self->{DEBUG};
-	    system @cmd;
-	    if ($?) {
-		die "Error ($?) while doing @cmd";
+
+	    my $tmpfile1;
+	    {
+		require Strassen::Util;
+		require BBBikeUtil;
+
+		# convert Coords to bbd file
+		(my($tmpfh), $tmpfile1) = File::Temp::tempfile(UNLINK => 1, SUFFIX => '_BBBikeMapserver.bbd')
+		    or die "Can't create temporary file: $!";
+
+		my $dist = 0;
+		if (@{ $self->{MultiCoords} || [] }) {
+		    if (!$self->has_more_than_one_coord) {
+			print $tmpfh "\tRoute " . $self->get_first_coord . "\n";
+		    } else {
+			for my $line (@{ $self->{MultiCoords} }) {
+			    my $old_dist = $dist;
+			    for my $i (1 .. $#{$line}) {
+				$dist += Strassen::Util::strecke_s(@{$line}[$i-1,$i]);
+				# XXX add maybe output of $comments_net->get_point_comment
+			    }
+			    print $tmpfh BBBikeUtil::m2km($old_dist) . " - " . BBBikeUtil::m2km($dist) . "\tRoute " . join(" ", @{$line}) . "\n";
+			}
+		    }
+		}
+		close $tmpfh
+		    or die "While closing temporary file $tmpfile1: $!";
 	    }
+
+	    {
+		# convert bbd file to esri file
+
+		# Actually this temporary file is not used at all, but
+		# it's name is used for the generated .shp/.shx/.dbf
+		# files. These files will stay around and need to be
+		# cleaned up with an external cronjob (see
+		# /etc/cron.d/bbbike-cleanup on the live server).
+		(undef, $route_shape_file) = File::Temp::tempfile(UNLINK => 1, SUFFIX => '_BBBikeMapserver');
+		my @cmd = ($self->{BBD2ESRI_PROG},
+			   $tmpfile1, "-o", $route_shape_file);
+		warn "Cmd: @cmd" if $self->{DEBUG};
+		system @cmd;
+		if ($?) {
+		    die "Error ($?) while doing @cmd";
+		}
+	    }
+
+	    unlink $tmpfile1;
+
 	}
 
 	foreach my $scope (@scopes) {
@@ -421,7 +440,6 @@ sub create_mapfile {
 	    if (!$preferred_map_path) {
 		$preferred_map_path = $map_path;
 	    }
-
 
 	    # copy brb.map to new map file
 	    my @cmd =
@@ -442,8 +460,6 @@ sub create_mapfile {
 	    }
 	    # last $map_path is the start map
 	}
-
-	unlink $tmpfile1;
     }
 
     if (!$preferred_map_path) {

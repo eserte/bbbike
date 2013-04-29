@@ -97,7 +97,7 @@ sub show_point {
 	(-bbbikeurl => $BBBike::BBBIKE_WWW,
 	 -bbbikemail => $BBBike::EMAIL,
 	 -scope => "",
-	 -externshape => 1,
+	 -queryableroute => 1,
 	 -layers => $layers,
 	 -center => param("center"),
 	 -markerpoint => param("center"),

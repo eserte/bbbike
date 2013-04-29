@@ -5668,7 +5668,6 @@ sub draw_route {
 	    (-bbbikeurl => $bbbike_url,
 	     -bbbikemail => $BBBike::EMAIL,
 	     -scope => $scope,
-	     -externshape => 1,
 	     -layers => $layers,
 	     -cookie => $cookie,
 	     (defined $q->param("mapext")
