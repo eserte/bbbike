@@ -3078,17 +3078,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1367186399,
-         'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt (Nisan Kinderfest, 27.4.2013 bis 28.4.2013)',
-         'from' => 1366927200,
-         'id' => 2324,
-         'data' => 'userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3275,7 +3265,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => undef,
          'id' => 2398,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-04-13
+#: last_checked: 2013-04-29
 userdel	q4::inwork; 13339,7452 13303,7622
 ',
          'type' => 'handicap'
@@ -3395,7 +3385,7 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
          'text' => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
          'from' => undef,
          'id' => 2411,
-         'data' => '#: last_checked: 2013-04-13
+         'data' => '#: last_checked: 2013-04-29
 #: next_check: 2013-05-31
 #: XXX ist die Baustelle tatsächlich Ende Mai fertig?
 #: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
@@ -3419,16 +3409,7 @@ userdel	q4::inwork; 13474,8060 13444,7879
        undef,
        undef,
        undef,
-       {
-         'until' => 1367186399,
-         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2013 bis 28.4.2013 ',
-         'from' => 1366840800,
-         'id' => 2419,
-         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'periodic' => 1,
          'until' => 1374443999,
@@ -3457,9 +3438,45 @@ userdel	q3::inwork 5268,11274 5247,10992
          'text' => 'Fahrbahnsanierung Cauerstraße: Einbahnstraße, offen in Richtung Otto-Suhr-Allee, auch Einschränkungen in der Guerickestraße, von Montag, dem 29.04.2013, bis voraussichtlich Donnerstag, dem 09.06.2013',
          'from' => 1367100000,
          'id' => 2423,
-         'data' => 'userdel	q4::inwork; 4359,11979 4441,12185 4518,12350 4598,12501
+         'data' => '#: source_id: IM_019774 vvv
+userdel	q4::inwork; 4359,11979 4441,12185 4518,12350 4598,12501
 userdel auto	3 4601,12310 4518,12350 4358,12365
 userdel auto	3 4358,12365 4518,12350 4601,12310
+#: source_id ^^^
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://berlin.dgb.de/extra/1-mai-2013-unser-tag',
+         'until' => 1367431200,
+         'text' => 'DGB-Familienfest auf der Straße des 17. Juni, am 1. Mai 2013 von 11:30 bis 19:00',
+         'from' => 1367314200,
+         'id' => 2424,
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254
+userdel auto	3 8546,12279 8538,12245 8600,12165
+userdel auto	3 8546,12279 8538,12245 8522,12239
+userdel auto	3 8546,12279 8538,12245 8522,12187
+userdel auto	3 8600,12165 8538,12245 8522,12187
+userdel auto	3 8600,12165 8538,12245 8522,12239
+userdel auto	3 8600,12165 8538,12245 8546,12279
+userdel auto	3 8522,12187 8538,12245 8546,12279
+userdel auto	3 8522,12187 8538,12245 8600,12165
+userdel auto	3 8522,12187 8538,12245 8522,12239
+userdel auto	3 8522,12239 8538,12245 8546,12279
+userdel auto	3 8522,12239 8538,12245 8600,12165
+userdel auto	3 8522,12239 8538,12245 8522,12187
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Richardstr.: Baustelle zwischen Richardplatz und Herrnhuter Weg, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'id' => 2425,
+         'data' => '#: XXX bis wann ist die Baustelle fertig?
+#: last_checked: 2013-04-29
+#: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
+userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
 ',
          'type' => 'handicap'
        }

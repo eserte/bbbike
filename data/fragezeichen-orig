@@ -47,7 +47,7 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-04-24
+#: last_checked: 2013-04-29
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -93,7 +93,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-04-17 vvv
+#: last_checked: 2013-04-29 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -343,11 +343,11 @@ Einmündung der Burgfrauenstraße in den Zeltinger Platz: hier wird ein Zebrastrei
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::projected 13708,17453
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
-#: last_checked: 2013-04-03
+#: last_checked: 2013-04-29
 #: check_frequency: 60d
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 12650,8164 12541,8140
-#: last_checked: 2013-04-03
+#: last_checked: 2013-04-29
 #: check_frequency: 60d
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
 #: last_checked: 2013-04-13
@@ -356,13 +356,14 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2013-04-13
+#: last_checked: 2013-04-29
 #: check_frequency: 60d
+#: XXX zurzeit (2013-04-29) Bauarbeiten am Kottbusser Damm, eventuell mit diesem Projekt zusammenhängend?
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
-#: last_checked: 2013-04-13
-#: next_check: 2013-06-13
+#: last_checked: 2013-04-29
+#: check_frequency: 60d
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13898,8613
 # 
 #: XXX Gartenstadt Karlshorst: neue Straßen vvv
@@ -507,7 +508,7 @@ Leonorenstr.: Radwegführung wird geändert, teilweise mit Busspur zusammengelegt	
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
-#: last_checked: 2013-04-03
+#: last_checked: 2013-04-29
 #: check_frequency: 60d
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11472,7899 11573,7924 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11823,7980 11979,8014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
@@ -517,6 +518,8 @@ Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsenst
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
 Buckower Damm: eventuell werden die Radwege hier asphaltiert?	?::inwork; 12560,4290 12640,4001 12655,3882 12667,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2514
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Planung, Stand 2012-04)
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20130429.1340.384123.html (Beginn: 2013-05-06)
+#: next_check: 2013-06-06
 Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert?	?::projected; 12207,1704 11865,1564 11765,1522 11475,1404 11198,1291 11155,1273 11002,1211 10827,1140 10759,1112 10662,1072 10425,971
 #: next_check ^^^
 #: XXX ^^^

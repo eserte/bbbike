@@ -20872,7 +20872,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-04-13
+#: last_checked: 2013-04-29
 userdel	q4::inwork; 13339,7452 13303,7622
 EOF
      },
@@ -21012,7 +21012,7 @@ EOF
        text  => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-04-13
+#: last_checked: 2013-04-29
 #: next_check: 2013-05-31
 #: XXX ist die Baustelle tatsächlich Ende Mai fertig?
 #: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
@@ -21125,9 +21125,43 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
        data  => <<EOF,
+#: source_id: IM_019774 vvv
 userdel	q4::inwork; 4359,11979 4441,12185 4518,12350 4598,12501
 userdel auto	3 4601,12310 4518,12350 4358,12365
 userdel auto	3 4358,12365 4518,12350 4601,12310
+#: source_id ^^^
+EOF
+     },
+     { from  => 1367314200, # 2013-04-30 11:30
+       until => 1367431200, # 2013-05-01 20:00
+       text  => 'DGB-Familienfest auf der Straße des 17. Juni, am 1. Mai 2013 von 11:30 bis 19:00',
+       type  => 'gesperrt',
+       source_id => 'http://berlin.dgb.de/extra/1-mai-2013-unser-tag',
+       data  => <<EOF,
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254
+userdel auto	3 8546,12279 8538,12245 8600,12165
+userdel auto	3 8546,12279 8538,12245 8522,12239
+userdel auto	3 8546,12279 8538,12245 8522,12187
+userdel auto	3 8600,12165 8538,12245 8522,12187
+userdel auto	3 8600,12165 8538,12245 8522,12239
+userdel auto	3 8600,12165 8538,12245 8546,12279
+userdel auto	3 8522,12187 8538,12245 8546,12279
+userdel auto	3 8522,12187 8538,12245 8600,12165
+userdel auto	3 8522,12187 8538,12245 8522,12239
+userdel auto	3 8522,12239 8538,12245 8546,12279
+userdel auto	3 8522,12239 8538,12245 8600,12165
+userdel auto	3 8522,12239 8538,12245 8522,12187
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Richardstr.: Baustelle zwischen Richardplatz und Herrnhuter Weg, Fahrtrichtung gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX bis wann ist die Baustelle fertig?
+#: last_checked: 2013-04-29
+#: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
+userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
 EOF
      },
     );
