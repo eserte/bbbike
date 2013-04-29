@@ -241,6 +241,7 @@ ALL_TPL_DEFINES=\
 	--define BBBIKE_URL_ENC=`perl -MURI::Escape -e 'print uri_escape(shift)' $(BBBIKE_URL)` \
 	--define BBBIKE_CGI_RELURL="$(BBBIKE_CGI_RELURL)" \
 	--define BBBIKE_IMAGES_RELURL="$(BBBIKE_IMAGES_RELURL)" \
+	--define BBBIKE_MISCSRC_DIR="$(BBBIKE_MISCSRC_DIR)" \
 	--define IMAGE_SUFFIX="$(IMAGE_SUFFIX)" \
 	--define FONTS_LIST="$(FONTS_LIST)" \
 	--define WWW_USER="$(WWW_USER)" \
