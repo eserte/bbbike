@@ -1200,6 +1200,9 @@ Kirchhofstr.	1s:q3 13188,7590 13117,7471 13027,7368
 Niemannstr.	1s:q3 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
+#: XXX wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben?
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5407
+#: next_check: 2013-07-30
 Paul-Junius-Str.	1s:q2 15096,12974 15092,13105
 Ahornallee	1s:q3 1589,11483 1574,11379
 Lindenallee	1s:q3 1429,11523 1403,11428
@@ -1529,7 +1532,7 @@ Bahnhofstr.: Straßenbahntrasse	3nocross 22123,5452 22087,5404 22043,5346 21954,5
 Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 #: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
-Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14650,15750
+Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14686,15608
 Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
 Groß-Berliner Damm: Mittelstreifen	3nocross 18928,3701 18882,3750 18854,3781 18235,4449
 Stromstr.: Mittelstreifen	3nocross 6228,13324 6229,13517 6230,13596
@@ -2302,7 +2305,7 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-04-29
+#: last_checked: 2013-04-30
 #: check_frequency: 90d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 

@@ -888,7 +888,7 @@ Pankeweg: feiner Schotter	Q1 13953,23497 13833,23400 13559,23116
 Pankeweg: mäßiger Asphalt, Wurzelschäden	Q1- 13206,22290 13078,21754
 Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12807,20944 12753,20884 12553,20757
 Pankeweg: unbefestiger Weg	Q2+ 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
-Pankeweg: unbefestige Straße, relativ gut befahrbar	Q2+ 13139,22401 13115,22311 13206,22290
+Pankeweg: unbefestige Straße, relativ gut befahrbar	Q2+ 13139,22401 13122,22336 13115,22311 13206,22290
 Pankeweg: Kopfsteinpflaster	Q0 12577,20747 12500,20705
 Pankeweg: asphaltiert	Q0 12500,20705 12377,20636 12359,20587 12310,20523 12266,20467 12235,20380 12207,20351 12154,20325 11995,19759 11907,19749
 Schloßallee: Asphalt, teilweise mit leichten Schäden	Q0- 11883,19739 11730,19684 11472,19593 11312,19537 11273,19521 11236,19509
@@ -7314,8 +7314,8 @@ Straße 89 (Französisch Buchholz): unbefestigte Straße	Q2 12532,22858 12589,22948
 Straße 89 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12699,22971
 Straße 76: unbefestigte Straße	Q2 12766,22668 12532,22858
 Straße 77a: unbefestigte Straße	Q2 12848,22776 12982,22703
-(Margueritenweg): unbefestigte Straße	Q2 12982,22703 13088,22646
-Karower Weg: unbefestigte Straße	Q2 12821,22437 12826,22481 12943,22517 13088,22646 13183,22817
+Prinzenapfelweg: unbefestigte Straße	Q2 12982,22703 13088,22646 13202,22605
+Karower Weg: unbefestigte Straße	Q2 12821,22437 12826,22481 12943,22517 13021,22589 13088,22646 13127,22716 13160,22776 13183,22817
 (Kirschenweg): unbefestigte Straße	Q2 12943,22517 12920,22597
 Straße 76a: Asphalt	Q0 12777,22679 12883,22615 12920,22597
 Straße 73 (Französisch Buchholz): unbefestigte Straße	Q2 12568,22421 12597,22372 12852,22337 13115,22311
@@ -7337,7 +7337,8 @@ Straße 44 (Französisch Buchholz): Asphalt	Q0 12211,20486 12118,20557
 Straße 42 (Französisch Buchholz): unbefestigte Straße mit einigen Asphaltflicken	Q2 12211,20486 12274,20570 12222,20637
 Ferdinand-Buisson-Str.: Asphalt	Q0 12331,20963 12459,21010 12570,21058 12629,21083
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229 12885,21282
-Ferdinand-Buisson-Str.: unbefestigte Straße	Q2 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719 13008,21783 13050,21994
+Ferdinand-Buisson-Str.: unbefestigte Straße	Q2 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
+Bananenapfelweg: unbefestigte Straße	Q2 12994,21719 13008,21783 13050,21994
 Straße 55: schlechtes Kopfsteinpflaster	Q3 12837,21229 12696,21342
 August-Siebke-Str.: Verbundsteinpflaster	Q1+ 12837,21876 12644,21922
 August-Siebke-Str.: Verbundsteinpflaster	Q1+ 12829,21814 12621,21862 12644,21922 12647,21954
@@ -10724,7 +10725,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: confirmed_by: srt
 #: XXX wird der Weg hier in Zukunft befestigt werden?
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928&options=4 (Befestigung)
-#: last_checked: 2013-04-09
+#: last_checked: 2013-04-30
 #: check_frequency: 80d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14934,15860 14802,15857 14720,15905 14609,15921
 #: confirmed_by: srt
@@ -16259,9 +16260,14 @@ Brandenburgische Str. (Steglitz): Asphalt	Q0 6677,4384 6638,4394 6532,4422
 #: confirmed_by: srt (zumindest der südöstliche Abschnitt)
 Arnouxstr.: Asphalt	Q0 11785,22290 11583,22442 11386,22591 11188,22742
 # 
-#: by: claudia friedrich:
-#: confirmed_by: brath:
-Behaimstr.: guter Asphalt	Q0 13094,15896 13139,15988 13195,16094 13286,16267 13348,16387
+#: by: claudia friedrich: vvv
+#: confirmed_by: brath: vvv
+#: corrected_by: srt (Q0 -> Q1)
+Behaimstr.: Asphalt mit Schäden	Q1 13094,15896 13139,15988
+#: confirmed_by: srt
+Behaimstr.: guter Asphalt	Q0 13139,15988 13195,16094 13286,16267 13348,16387
+#: confirmed_by ^^^
+#: by: ^^^
 # 
 #: by: Ninette Kohler:
 Bardeyweg: Asphalt	Q0 -4751,9259 -4696,9263 -4635,9267
@@ -18748,7 +18754,7 @@ Gravensteinstr.: Kopfsteinpflaster	Q2; 12257,22452 12397,22429
 Gravensteinstr.: guter Asphalt	Q0; 12397,22429 12257,22452
 #: confirmed_by: Andreas R.
 #: confirmed_by: srt
-Gravensteinstr.: guter Asphalt	Q0 12397,22429 12476,22423 12489,22420 12568,22421 12592,22427 12692,22566 12766,22668 12777,22679 12836,22763 12848,22776 12901,22826 12995,22843 13028,22886 13070,22903 13156,22889
+Gravensteinstr.: guter Asphalt	Q0 12397,22429 12476,22423 12489,22420 12568,22421 12592,22427 12692,22566 12766,22668 12777,22679 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
 # 
 #: by: Andreas R.
 Gravensteinstr.: Kopfsteinpflaster	Q2 12185,22465 12257,22452
@@ -20714,7 +20720,7 @@ Augusta-Ufer: Verbundsteinpflaster	Q1 -3501,14365 -3440,14498 -3331,14628 -3255,
 # 
 #: by: Sebastian (mastersam...): vvv
 #: confirmed_by: srt
-Ludwig-Quidde-Str.: guter Asphalt	Q0 12570,21058 12613,21132 12696,21342 12778,21583 12806,21639 12825,21771 12829,21814 12837,21876 12841,21925 12843,22010 12850,22177 12852,22262 12852,22337 12855,22431
+Ludwig-Quidde-Str.: guter Asphalt	Q0 12570,21058 12613,21132 12696,21342 12778,21583 12806,21639 12825,21771 12829,21814 12837,21876 12841,21925 12843,22010 12846,22070 12849,22161 12850,22177 12852,22250 12852,22262 12852,22337 12853,22368 12855,22431
 #: note: Elisa (eli d) meint: fester Sandweg, Schlaglöcher, Q2; Sebastian meint: fester Sandweg, viele Schlaglöcher, Q3 -> Mitte
 #: corrected_by: srt (Q3+ -> Q2-)
 Straße 160: fester Sandweg, viele Schlaglöcher	Q2- 12696,21342 12547,21372
@@ -22275,7 +22281,7 @@ Jägerstr. (Mitte): Asphalt	Q0 9656,12021 9913,12068 9961,12094 10003,12113
 Kleine Kurstr.: Asphalt	Q0 10241,11830 10281,11876
 Kreuzstr.: Asphalt	Q0 10236,11945 10209,11918
 Kleine Jägerstr.: Asphalt	Q0 9991,11903 10050,11942 10064,11953
-Alte Leipziger Str.: Asphalt	Q0 10079,11845 10118,11907
+Alte Leipziger Str.: Asphalt	Q0 10079,11845 10122,11913
 # REMOVED --- Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10391,11898
 #: corrected_by: srt (Beton, Q1 -> Asphalt, Q0)
 Am Wriezener Bahnhof: Asphalt	Q0 12758,11915 12788,11898 12944,11760 12993,11717
