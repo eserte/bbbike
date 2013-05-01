@@ -46,8 +46,8 @@ Halenseestr.	1 2229,10045 2268,9976 2300,9883 2369,9779 2415,9765
 # südöstlicher Teil
 Halenseestr.	1 2394,9714 2360,9754 2297,9827
 # nordwestlicher Teil
-Halenseestr.	1 1951,10435 1901,10566 1928,10728
-Rasthof Avus	1 1876,10397 1882,10356 1847,10323 1723,10289 1700,10339 1803,10419 1849,10418 1876,10397
+Halenseestr.	1 1939,10446 1901,10566 1928,10728
+Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424 1833,10427 1870,10406
 Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
 Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4107,6718 4146,6693 4250,6625 4292,6558
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
@@ -505,7 +505,7 @@ Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,146
 Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
 Neufahrwasserweg	1 20390,15307 20550,15551
 #: by: rjoop:
-Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7206
+Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7210
 #: by: HGinzel:
 Goebelplatz	1 1974,14646 1974,14565
 #: by: junga: vvv
@@ -860,8 +860,9 @@ Fritz-Erpenbeck-Ring	1 9717,19692 9697,19758 9708,19779 9785,19807 9864,19793
 Am Konsulat: Privatstraße, mit Toren versperrt	2 9962,19757 9990,19644 9916,19625
 Pastor-Niemöller-Platz	1 9859,19283 9811,19302 9789,19329 9791,19363 9826,19382 9870,19360
 Pasewalker Str. (Wedding)	1 7891,15417 7877,15581
-Olympische Str./Steubenplatz	1 610,12100 628,12138 677,12191
-Steubenplatz	1 714,12160 653,12109 610,12100
+Olympische Str./Steubenplatz	1 610,12100 620,12144 668,12190
+Steubenplatz	1 689,12152 653,12109 610,12100
+Steubenplatz	1s:q4 668,12190 689,12152
 #: note: keine Gehwege, enge Straße
 Radieschenpfad	1 20582,18468 20635,18381
 #: note: keine Gehwege, enge Straße
@@ -950,7 +951,7 @@ A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 U
 Rubensstr.	1 6429,7876 6307,7893
 Bäumerplan	1 8527,7939 8553,7795
 Bäumerplan	1 8512,7757 8466,7918
-Mierendorffstr.	1 3645,13189 3542,13063
+Mierendorffstr.	1 3645,13189 3534,13098
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s:q3 11012,13278 11085,13239
 Zwerghuhnweg	1s 15615,410 15565,379
@@ -1221,7 +1222,7 @@ Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
 # REMOVED (wegen der Bauarbeiten an der Staatsoper ist die Einbahnstraßenregelung aufgehoben) --- Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9708,12235 9674,12231 9631,12227
-Halenseestr.	1s:q2 2297,9827 2166,10020 2121,10089 2030,10253 1988,10328 1951,10435
+Halenseestr.	1s:q2 2297,9827 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
 Zeltinger Platz	1s:q4 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Ludolfinger Platz	1s:q4 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s:q3 17705,10232 17741,10386
@@ -1233,6 +1234,9 @@ Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+#: XXX prüfen, ob das Überqueren tatsächlich nicht möglich ist
+#: priority: #C
+Warnemünder Str.: Mittelstreifen	3nocross 2767,7592 2750,7444 2744,7397
 Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3nocross 8057,14876 8091,14895 8219,14897
 #: note: auf dem Radweg gibt es noch zusätzlich Absperrgitter
 Residenzstr.: Abbiegen nicht möglich	3nocross 7602,17399 7684,17435 7902,17166
@@ -1264,7 +1268,7 @@ Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105
 #: confirmed_by: srt
 Kniprodestr.: Grünstreifen	3nocross 13644,14915 13744,15018 13823,15111
 An der Wuhlheide: Mittelstreifen	3nocross 19578,6165 19405,6276 19276,6359
-Heerstr.: nicht überquerbar	3nocross 456,11233 585,11256 704,11273
+Heerstr.: nicht überquerbar	3nocross 504,11243 571,11255 704,11273
 #: by: Sabine (schaeffler)
 Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -3506,14306
 #: by: Juliane (alberts...)
@@ -1862,6 +1866,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 2157,10020
 Drängelgitter an der Straßenbahntrasse	BNP:6::trailer=10 16665,14420
 Schranke (lichte Breite 100cm)	BNP:3::trailer=10 17459,5634
 #: note: immer offen?
@@ -2305,7 +2310,7 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-04-30
+#: last_checked: 2013-05-01
 #: check_frequency: 90d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
@@ -2325,8 +2330,8 @@ Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,1312
 #: next_check: 2013-03-16
 Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; evtl. wird danach die Wegsituation komplett anders aussehen	2:inwork 19456,7956 19549,7826
 # 
-#: last_checked: 2013-04-09
-#: next_check: 2013-06-09
+#: last_checked: 2013-05-01
+#: next_check: 2013-07-01
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 # 
 #: last_checked: 2013-04-17
@@ -2385,14 +2390,14 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: XXX wo gibt es Informationen hierzu?
 #: by: Kai Wagner (permanente Sperrung)
 #: confirmed_by: srt
-#: last_checked: 2013-04-09
+#: last_checked: 2013-05-01
 #: check_frequency: 100d
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
 #: last_checked: 2013-04-09
 #: check_frequency: 100d
 #: XXX evtl. permanent
-Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12616
+Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
 # 
 # REMOVED --- #: last_checked: 2012-03-23 --- #: next_check: 2012-04-25 --- Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
 # REMOVED (fertig!) --- #: last_checked: 2011-12-17 --- #: next_check: 2012-01-15 --- (Leuthener Platz - Wilhelm-Kabus-Str.): Bauzäune	2:inwork 7716,8356 7807,8354 7893,8327
@@ -2514,8 +2519,6 @@ Pfähle	BNP:1::trailer=6 467,9516
 Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
 Vogelsang	1 2229,6203 2170,5939 2137,5798
 Vogelsang	1 2106,5808 2141,5948 2195,6184 2193,6214
-#: XXX oder eher q4?
-Dievenowstr.	2 3165,6939 3202,7121
 Ahornstr. (Steglitz)	1 4863,6088 4888,6093 4923,6073 4926,6053
 Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
 # REMOVED (seit der Eröffnung des Boulevards Berlin nicht mehr) --- Treitschkestr.	1 4854,6413 4971,6345 4997,6331 5062,6295
@@ -2642,14 +2645,14 @@ tragen (Treppe)	0:30 8276,13041
 Hanseatenweg	1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 Heerstr.	3nocross -1039,11034 -831,11060 -776,11067 -731,11073 -587,11090
 Heerstr.	3nocross -587,11090 -535,11096 -420,11110 -346,11121 -68,11156
-Heerstr.	3nocross -68,11156 21,11167 231,11198 439,11228 456,11233
+Heerstr.	3nocross -68,11156 21,11167 231,11198 439,11228 504,11243
 tragen (20 Stufen)	0:30 23,11137
 Oldenburgallee	1 454,11670 461,11455
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4509&options=4
 Westendallee	1s:q3 461,11455 425,11455 395,11486 329,11696 323,11801
 Brixplatz	1 419,12397 335,12343 208,12305
 Brixplatz	1 179,12434 269,12462 329,12503
-Lerschpfad	1 2181,12276 2157,12389
+Lerschpfad	1 2181,12276 2152,12389
 Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20 3795,13541
 Schranke	BNP:5 3981,13292

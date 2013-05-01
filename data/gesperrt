@@ -33,8 +33,8 @@ Ernst-Reuter-Platz	1 4763,11834 4854,11843 4905,11785 4885,11735 4838,11697 4781
 Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
 Halenseestr.	1 2229,10045 2268,9976 2300,9883 2369,9779 2415,9765
 Halenseestr.	1 2394,9714 2360,9754 2297,9827
-Halenseestr.	1 1951,10435 1901,10566 1928,10728
-Rasthof Avus	1 1876,10397 1882,10356 1847,10323 1723,10289 1700,10339 1803,10419 1849,10418 1876,10397
+Halenseestr.	1 1939,10446 1901,10566 1928,10728
+Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424 1833,10427 1870,10406
 Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
 Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4107,6718 4146,6693 4250,6625 4292,6558
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
@@ -393,7 +393,7 @@ Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
 Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
 Neufahrwasserweg	1 20390,15307 20550,15551
-Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7206
+Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7210
 Goebelplatz	1 1974,14646 1974,14565
 Rieppelstr.	1 851,15155 780,15358 794,15362 772,15460 768,15486
 Harriesstr.	1 768,15486 659,15469 525,15435
@@ -619,8 +619,9 @@ Fritz-Erpenbeck-Ring	1 9717,19692 9697,19758 9708,19779 9785,19807 9864,19793
 Am Konsulat: Privatstraße, mit Toren versperrt	2 9962,19757 9990,19644 9916,19625
 Pastor-Niemöller-Platz	1 9859,19283 9811,19302 9789,19329 9791,19363 9826,19382 9870,19360
 Pasewalker Str. (Wedding)	1 7891,15417 7877,15581
-Olympische Str./Steubenplatz	1 610,12100 628,12138 677,12191
-Steubenplatz	1 714,12160 653,12109 610,12100
+Olympische Str./Steubenplatz	1 610,12100 620,12144 668,12190
+Steubenplatz	1 689,12152 653,12109 610,12100
+Steubenplatz	1s 668,12190 689,12152
 Radieschenpfad	1 20582,18468 20635,18381
 Lattichweg	1 20452,18273 20453,18321 20523,18329 20635,18381
 Enger Steig	1 -4310,11770 -4312,11720 -4302,11669
@@ -697,7 +698,7 @@ A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 U
 Rubensstr.	1 6429,7876 6307,7893
 Bäumerplan	1 8527,7939 8553,7795
 Bäumerplan	1 8512,7757 8466,7918
-Mierendorffstr.	1 3645,13189 3542,13063
+Mierendorffstr.	1 3645,13189 3534,13098
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s 11012,13278 11085,13239
 Zwerghuhnweg	1s 15615,410 15565,379
@@ -912,12 +913,15 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -
 Stephanstr.	1s 6523,4491 6360,4504
 Am Poetensteig, Gramzow	1s 50043,90187 50107,89717
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
-Halenseestr.	1s 2297,9827 2166,10020 2121,10089 2030,10253 1988,10328 1951,10435
+Halenseestr.	1s 2297,9827 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
 Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
+Mittelstreifen	3nocross::ignrte 2767,7592 2750,7444 2744,7397
+Hammersteinstr. -> Warnemünder Str.: Mittelstreifen	3::igndisp 2719,7415 2750,7444 2767,7592
+Warnemünder Str. -> Hammersteinstr.: Mittelstreifen	3::igndisp 2744,7397 2750,7444 2719,7415
 Gitter auf dem Mittelstreifen	3nocross::ignrte 8057,14876 8091,14895 8219,14897
 Reinickendorfer Str. -> Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3::igndisp 8037,14958 8091,14895 8219,14897
 Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7684,17435 7902,17166
@@ -987,7 +991,7 @@ Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13856,14944 13744,15018
 Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
-nicht überquerbar	3nocross::ignrte 456,11233 585,11256 704,11273
+nicht überquerbar	3nocross::ignrte 504,11243 571,11255 704,11273
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3501,14365 -3506,14306
 Altstädter Ring -> Augusta-Ufer: Mittelstreifen	3::igndisp -3498,14413 -3501,14365 -3440,14498
 Augusta-Ufer -> Altstädter Ring: Mittelstreifen	3::igndisp -3440,14498 -3501,14365 -3506,14306
@@ -2149,6 +2153,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:56:trailer=10 2157,10020
 Drängelgitter an der Straßenbahntrasse	BNP:6:12:trailer=10 16665,14420
 Schranke (lichte Breite 100cm)	BNP:3:33:trailer=10 17459,5634
 Schranke (offen)	BNP:0:-37 17070,6115
@@ -2460,7 +2465,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8246,14184
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
-Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12616
+Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
 Sonnenkieker: Bauarbeiten	2:inwork 22610,13808 22669,13842 22692,13836
 Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
@@ -2501,7 +2506,6 @@ Pfähle	BNP:1:-194:trailer=6 467,9516
 Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
 Vogelsang	1 2229,6203 2170,5939 2137,5798
 Vogelsang	1 2106,5808 2141,5948 2195,6184 2193,6214
-Dievenowstr.	2 3165,6939 3202,7121
 Ahornstr. (Steglitz)	1 4863,6088 4888,6093 4923,6073 4926,6053
 Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
 tragen (3 x 10 Stufen)	0:40:-217 4127,5427
@@ -2697,7 +2701,7 @@ Heilsberger Allee -> Heerstr.: Heerstr.	3::igndisp -391,11322 -420,11110 -346,11
 Heerstr. -> Heilsberger Allee: Heerstr.	3::igndisp -535,11096 -420,11110 -391,11322
 Rauschener Allee -> Heerstr.: Heerstr.	3::igndisp -328,10971 -346,11121 -420,11110
 Heerstr. -> Rauschener Allee: Heerstr.	3::igndisp -68,11156 -346,11121 -328,10971
-Heerstr.	3nocross::ignrte -68,11156 21,11167 231,11198 439,11228 456,11233
+Heerstr.	3nocross::ignrte -68,11156 21,11167 231,11198 439,11228 504,11243
 Heerstr. -> Parkweg Ortelsburger Allee: Heerstr.	3::igndisp 231,11198 21,11167 23,11137
 Heerstr. -> Pillkaller Allee: Heerstr.	3::igndisp -68,11156 21,11167 14,11215
 Pillkaller Allee -> Heerstr.: Heerstr.	3::igndisp 14,11215 21,11167 231,11198
@@ -2710,13 +2714,16 @@ Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 21,11167 231,11198 200,11428
 Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 439,11228 231,11198 251,11039
 Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 251,11039 231,11198 200,11428
 Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 251,11039 231,11198 21,11167
-Heerstr. -> Teufelsseestr.: Heerstr.	3::igndisp 456,11233 439,11228 454,11159
+Heerstr. -> Sensburger Allee: Heerstr.	3::igndisp 231,11198 439,11228 326,11391
+Sensburger Allee -> Teufelsseestr.: Heerstr.	3::igndisp 326,11391 439,11228 454,11159
+Sensburger Allee -> Heerstr.: Heerstr.	3::igndisp 326,11391 439,11228 504,11243
+Heerstr. -> Teufelsseestr.: Heerstr.	3::igndisp 504,11243 439,11228 454,11159
 tragen (20 Stufen)	0:30:-186 23,11137
 Oldenburgallee	1 454,11670 461,11455
 Westendallee	1s 461,11455 425,11455 395,11486 329,11696 323,11801
 Brixplatz	1 419,12397 335,12343 208,12305
 Brixplatz	1 179,12434 269,12462 329,12503
-Lerschpfad	1 2181,12276 2157,12389
+Lerschpfad	1 2181,12276 2152,12389
 Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20:-182 3795,13541
 Schranke	BNP:5:-170 3981,13292

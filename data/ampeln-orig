@@ -324,7 +324,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7497,8168
 	X 7193,7950
 	X 6935,8208
-	X 6468,8109
+	X 6460,8093
 	X 6409,8026
 	X 6307,7893
 	X 6641,7142
@@ -363,7 +363,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5635,8011
 	X 4788,7257
 	X 4743,7212
-	X 4787,7203
+	X 4787,7213
 	X 4021,6729
 	X 4061,6753
 	X 3947,6814
@@ -800,7 +800,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -1269,11008
 	X -1499,10990
 	X -587,11090
-	X 456,11233
+	X 504,11243
 	X 9134,15953
 	X 9864,14578
 	X 9938,14356
@@ -854,8 +854,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10197,16528
 	X 12709,15112
 	X 3827,10980
-	X 2224,12397
-	X 2157,12389
+	X 2193,12393
+	X 2152,12389
 	X 797,12659
 	X -129,12947
 	X -264,13009
@@ -926,7 +926,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	B 20616,7292
 	B 20624,12133
 	B 1600,9710
-	X 1054,10559
+	X 1049,10568
 	X 1344,10012
 	X 4056,7280
 	X 4391,7258
@@ -1665,7 +1665,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 4520,9392
 	X 2201,8519
 	X 2129,8333
-	X 1767,8853
+#: note: an Wochenenden/Feiertagen vermutlich immer aus (gesehen: 2013-05-01)
+	F 1773,8859
 	X -5454,6896
 	X -5097,7361
 	X -4590,8666
@@ -2175,7 +2176,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 24345,14403
 #: XXX_prog ^^^
 #: XXX_prog: nur in Richtung Westen
-	X 585,11256
+	X 571,11255
 #: XXX_prog: Radfahrer auf dem Radweg Richtung Süden sind nicht betroffen
 	F 18327,11105
 #: note: die Ampel ist etwa 10 Meter nordöstlich von der Kreuzung entfernt
@@ -2359,7 +2360,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 10127,19992
 	F 5628,14063
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2013-04-03 vvv
+#: last_checked: 2013-05-01 vvv
 #: next_check: 2013-12-31 vvv
 	X::inwork 9123,12500
 	X::inwork 9280,12883
@@ -2436,6 +2437,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Luftbild
 	X 9934,2307
 	F 16487,17785
+	F 3517,13067
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

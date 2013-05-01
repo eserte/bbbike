@@ -1818,7 +1818,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
          'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), Straße wahrscheinlich vollständig gesperrt (25. und 26. Mai 2013)',
          'from' => 1369346400,
          'id' => 1642,
-         'data' => 'userdel	2::temp 596,11951 585,11830 572,11698 563,11601
+         'data' => 'userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607
 ',
          'type' => 'gesperrt'
        },
@@ -2173,7 +2173,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Mo 08.00-13.00 und Do 08.00-13.00, Behinderungen möglich',
          'from' => undef,
          'id' => 1822,
-         'data' => '	q4::temp:clock 596,11951 585,11830 572,11698 563,11601
+         'data' => '	q4::temp:clock 589,11953 577,11837 562,11710 560,11695 550,11607
 # Wochenmärkte ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ######################################################################
 ',
@@ -2343,7 +2343,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (21. und 22. September 2011) ',
          'from' => 1379667600,
          'id' => 1910,
-         'data' => 'userdel	2::temp 585,11256 551,11462 563,11601 572,11698 585,11830 596,11951
+         'data' => 'userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
 ',
          'type' => 'gesperrt'
        },
@@ -2562,7 +2562,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2661,7 +2661,7 @@ userdel auto	3 8554,12593 8540,12420 8573,12325
 userdel auto	3 9108,12635 9123,12500 9330,12529
 userdel auto	3 9858,10350 9873,10285 9668,10306
 userdel auto	3 9858,10350 9873,10285 9865,10227
-userdel auto	3 8070,12409 8119,12414 8123,12615
+userdel auto	3 8070,12409 8119,12414 8122,12608
 userdel auto	3 9343,12464 9130,12433 9016,12416
 userdel auto	3 8479,11493 8542,11502 8596,11508
 userdel auto	3 8479,11493 8542,11502 8442,11555
@@ -2670,7 +2670,7 @@ userdel auto	3 8522,12187 8538,12245 8610,12254
 userdel auto	3 9373,12197 9164,12172 9064,12156
 userdel auto	3 9210,10614 9368,10641 9559,10656
 userdel auto	3 8743,11663 8553,11638 8473,11634
-userdel auto	3 8123,12615 8119,12414 8070,12409
+userdel auto	3 8122,12608 8119,12414 8070,12409
 userdel auto	3 9592,10263 9593,10238 9599,10175
 userdel auto	3 9064,12156 9076,12054 9108,11961
 userdel auto	3 9064,12156 9164,12172 9373,12197

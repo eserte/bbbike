@@ -54,20 +54,26 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 #: XXX Baumaßnahme 4.15 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn 2012)
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
-#: next_check: 2013-05-01
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
+#: last_checked: 2013-05-01 (zumindest im nördlichen Bereich keine Anzeichen für Markierungsarbeiten)
+#: next_check: 2013-08-01
 Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
 # 
 #: XXX Baumaßnahme 4.12 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn noch nicht 2012)
-#: next_check: 2013-06-01
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
+#: last_checked: 2013-05-01
+#: next_check: 2013-09-01
 Lise-Meitner-Str.: werden hier Radspuren markiert?	?::projected 3711,13202 3721,13274 3742,13416 3741,13495 3741,13558 3735,13618 3717,13743 3702,13865
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
 Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2706,13291 -2728,13269 -2960,13203 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
+# 
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
+#: last_checked: 2013-05-01
+#: next_check: 2013-08-01
 Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,8717 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2116,7740
+# 
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
 #: last_checked: 2013-02-02
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
@@ -87,13 +93,13 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2013-04-08
-#: next_check: 2013-06-08
+#: last_checked: 2013-05-01
+#: next_check: 2013-07-01
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-04-30 vvv
+#: last_checked: 2013-05-01 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -213,8 +219,8 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
-#: last_checked: 2013-01-05
-#: next_check: 2013-04-01
+#: last_checked: 2013-05-01
+#: next_check: 2013-08-01
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321
 # 
@@ -228,7 +234,10 @@ Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,1516
 #: by: ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
+#: last_checked: 2013-05-01
+#: next_check: 2013-08-01
 Perleberger Str., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
+# 
 #: next_check: 2013-06-08
 Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
 Dietzgenstr.: Radspuren bis 2015 geplant	?::projected 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
@@ -437,11 +446,6 @@ Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; 
 #: next_check: 2013-10-28
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
-#: last_checked: 2012-09-30
-#: next_check: 2012-03-01
-#: XXX nicht nicht fertiggestellt
-Weg im Stadtgarten Moabit: Qualität? Nachts beleuchtet?	?::inwork 5708,14077 5667,14212
-# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv
 #: last_checked: 2013-04-21 vvv
@@ -590,9 +594,7 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: next_check: ^^^
 #: last_checked ^^^
 # 
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110908.0920.357891.html
-#: next_check: 2011-11-30
-Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3542,13063 3559,13177
+# REMOVED (survey done) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110908.0920.357891.html --- #: next_check: 2011-11-30 --- Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3534,13098 3559,13177
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
 #: XXX Privatstraße
@@ -608,9 +610,15 @@ Edith-Stein-Str.: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inwo
 #: by: https://www.spd-fraktion-mitte.de/system/files/dateien/anfrage/2011-11/2726/ka-0012-iv.pdf (Abschluss Ende 2013)
 #: note: Planstraße im Block 902
 #: XXX in Berlin.coords.data mit "(geplant)" gekennzeichnet
-#: last_checked: 2012-07-05
+#: last_checked: 2013-05-01 (teilweise schon fertiggestellt, Asphalt)
 #: next_check: 2013-11-30
 Erna-Samuel-Straße: Straße wird gebaut, Qualität, Radwege/streifen, genaue Lage?	?::inwork 5340,14050 5522,14195 5704,14252 5954,14303 6106,14280
+# 
+#: last_checked: 2013-05-01
+#: next_check: 2013-11-30
+#: XXX nicht nicht fertiggestellt
+#: evtl. zusammen mit der Erna-Samuel-Straße?
+Weg im Stadtgarten Moabit: Qualität? Nachts beleuchtet?	?::inwork 5708,14077 5667,14212
 # 
 # REMOVED (keine Anzeichen für weitere Straßen hier) --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
 # 
@@ -812,6 +820,14 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: last_checked: 2013-05-01
+#: next_check: 2013-07-01
+Fußgängerampel in Bau	?::inwork 7443,13008
+# 
+#: last_checked: 2013-05-01
+#: next_check: 2013-07-01
+Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
+# 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3404
 #: next_check: 2013-06-30
 #: priority: #C
@@ -973,8 +989,8 @@ Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::proje
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4193&options=4
-#: last_checked: 2013-02-23
-#: next_check: 2013-04-23
+#: last_checked: 2013-05-01
+#: next_check: 2013-08-01
 Lauterstr.: wird die Straße am Breslauer Platz komplett gesperrt?	?::projected 5810,7337 5817,7223
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3355&options=4 (Antrag zur Einbahnstraße)
@@ -987,13 +1003,14 @@ Alte Hellersdorfer Str.: wird hier ein Zebrastreifen entstehen	? 23079,15855 231
 #: last_checked: 2013-01-05 (keine Bauarbeiten zu erkennen)
 #: next_check: 2013-05-15
 Uhlandstr./Ludwigkirchstr.: Planung eines Zebrastreifens für 2012	?::projected 5024,10153
-#: next_check: 2013-03-01
+# 
+#: next_check: 2013-08-01
 Sömmeringstraße/Quedlinburger Straße: Planung eines Zebrastreifens für 2013	?::projected 3714,12949
-#: next_check: 2013-03-01
+# 
+#: last_checked: 2013-05-01
+#: next_check: 2013-08-01
 Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::projected 3711,13098
 #: by: ^^^
-# 
-Steubenplatz: Einbahnstraßenregelung? Oder kann man als Radfahrer hier abkürzen?	? 677,12191 714,12160
 # 
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf?start&ts=1352885627&file=benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2013
@@ -1239,7 +1256,7 @@ Bordsteinkante	? -831,4636
 Tränkegrabenweg/Sewanstr.: Bordsteine	? 17160,10376
 # 
 #: XXX_prog:
-Hauptstr.: enger Mittelstreifen, für Anhänger recht knapp (-> 3nocross)	? 6608,8277 6560,8219 6468,8109
+Hauptstr.: enger Mittelstreifen, für Anhänger recht knapp (-> 3nocross)	? 6608,8277 6560,8219 6460,8093
 # 
 #: XXX_prog: eine Art qX+3(=gerichtet)-Kombination ist notwendig, mit Unterstützung für bestimmte Fahrzeugarten (trailer) oder nur 3 mit trailer
 Für Anhänger sehr unbequem zu passieren (Betonblöcke und Barrieren, max. 90cm lichte Breite)	? 9777,10719 9805,10791 9786,10971
@@ -3333,10 +3350,7 @@ In den Floragärten: Ist die Straße bereits fertiggestellt? Qualität? Ist die Str
 #: XXX Privatstraße
 Via Tilia: Qualität? Wo liegt die Straße genau (GPS-Track?)?	? -7518,-1175 -7548,-1097 -7487,-1056 -7271,-1102
 # 
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120928.1200.375958.html
-#: next_check: 2012-10-12
-#: XXX Fahrbahnsanierung Neidenburger Allee von Willenberger Pfad bis Waldschulallee, danach bessere Qualität?
-Neidenburger Allee: Ist die Qualität der Fahrbahn zwischen Willenberger Pfad bis Waldschulallee nach den Bauarbeiten besser geworden?	? 576,10729 574,10577
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120928.1200.375958.html --- #: next_check: 2012-10-12 --- #: XXX Fahrbahnsanierung Neidenburger Allee von Willenberger Pfad bis Waldschulallee, danach bessere Qualität? --- Neidenburger Allee: Ist die Qualität der Fahrbahn zwischen Willenberger Pfad bis Waldschulallee nach den Bauarbeiten besser geworden?	? 569,10738 564,10584
 # 
 Neubrücker Str.: Ist die Neubrücker Str. eine Vorfahrtsstraße?	? 1364,25882 1213,25813 1135,25765 1057,25695 975,25627 885,25578 727,25504 639,25478
 # 

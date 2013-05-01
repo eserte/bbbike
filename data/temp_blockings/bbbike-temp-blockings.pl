@@ -4620,7 +4620,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002823',
        data  => <<EOF,
-userdel	2 8119,12414 8123,12615
+userdel	2 8119,12414 8122,12608
 EOF
      },
      { from  => 1148937489, # 2006-05-29 23:18
@@ -4726,10 +4726,10 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002870',
        data  => <<EOF,
-userdel	2::temp 8168,12848 8204,12816 8206,12757 8207,12616
+userdel	2::temp 8168,12848 8204,12816 8206,12757 8207,12608
 userdel	2::temp 8775,12457 8540,12420 8400,12417 8354,12416 8119,12414
 userdel	2::temp 8032,12817 8124,12840
-userdel	2::temp 8306,12617 8309,12758
+userdel	2::temp 8306,12609 8309,12758
 userdel	2::temp 8032,12817 8017,12826
 EOF
      },
@@ -12258,7 +12258,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009598',
        data  => <<EOF,
-userdel	2::inwork 2157,12389 2224,12397
+userdel	2::inwork 2152,12389 2193,12393
 EOF
      },
      { from  => 1218578400, # 2008-08-13 00:00
@@ -13999,7 +13999,7 @@ EOF
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), Straße wahrscheinlich vollständig gesperrt (25. und 26. Mai 2013)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 596,11951 585,11830 572,11698 563,11601
+userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607
 EOF
      },
      { from  => 1241419680, # 2009-05-04 08:48
@@ -15378,7 +15378,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013880',
        data  => <<EOF,
-userdel	q4::temp 8207,12616 8306,12617
+userdel	q4::temp 8207,12608 8306,12609
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -15550,7 +15550,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	q4::temp:clock 596,11951 585,11830 572,11698 563,11601
+	q4::temp:clock 589,11953 577,11837 562,11710 560,11695 550,11607
 # Wochenmärkte ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ######################################################################
 EOF
@@ -15841,7 +15841,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013988',
        data  => <<EOF,
-userdel	2::inwork 2414,12418 2280,12403 2224,12397 2157,12389
+userdel	2::inwork 2414,12418 2280,12403 2193,12393 2152,12389
 EOF
      },
      { from  => 1251833280, # 2009-09-01 21:28
@@ -16176,7 +16176,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014201',
        data  => <<EOF,
-userdel	q4::temp 8540,12420 8400,12417 8354,12416 8119,12414 8123,12615 8207,12616 8306,12617 8348,12617 8399,12616
+userdel	q4::temp 8540,12420 8400,12417 8354,12416 8119,12414 8122,12608 8207,12608 8306,12609 8348,12609 8399,12610
 EOF
      },
      { from  => 1253359000, # 2009-09-19 13:16
@@ -16309,7 +16309,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_014247',
        data  => <<EOF,
-userdel	2::temp 8417,12846 8309,12758 8306,12617
+userdel	2::temp 8417,12846 8309,12758 8306,12609
 EOF
      },
      { from  => $isodate2epoch->("2013-09-20 11:00:00"), # 1 Tag Vorlauf
@@ -16318,7 +16318,7 @@ EOF
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (21. und 22. September 2011) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 585,11256 551,11462 563,11601 572,11698 585,11830 596,11951
+userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
 EOF
      },
      { from  => 1253965842, # 2009-09-26 13:50
@@ -17908,7 +17908,7 @@ userdel auto	3 8554,12593 8540,12420 8573,12325
 userdel auto	3 9108,12635 9123,12500 9330,12529
 userdel auto	3 9858,10350 9873,10285 9668,10306
 userdel auto	3 9858,10350 9873,10285 9865,10227
-userdel auto	3 8070,12409 8119,12414 8123,12615
+userdel auto	3 8070,12409 8119,12414 8122,12608
 userdel auto	3 9343,12464 9130,12433 9016,12416
 userdel auto	3 8479,11493 8542,11502 8596,11508
 userdel auto	3 8479,11493 8542,11502 8442,11555
@@ -17917,7 +17917,7 @@ userdel auto	3 8522,12187 8538,12245 8610,12254
 userdel auto	3 9373,12197 9164,12172 9064,12156
 userdel auto	3 9210,10614 9368,10641 9559,10656
 userdel auto	3 8743,11663 8553,11638 8473,11634
-userdel auto	3 8123,12615 8119,12414 8070,12409
+userdel auto	3 8122,12608 8119,12414 8070,12409
 userdel auto	3 9592,10263 9593,10238 9599,10175
 userdel auto	3 9064,12156 9076,12054 9108,11961
 userdel auto	3 9064,12156 9164,12172 9373,12197
@@ -19605,7 +19605,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017645',
        data  => <<EOF,
-userdel	2::temp 8123,12615 8119,12414 8055,12186
+userdel	2::temp 8122,12608 8119,12414 8055,12186
 userdel	2::temp 8540,12420 8400,12417 8354,12416 8119,12414
 EOF
      },

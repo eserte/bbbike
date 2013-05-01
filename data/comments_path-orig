@@ -24,7 +24,7 @@
 # vorkommt, ansonsten mit GPS:nicht_LG markieren.
 # 
 #: XXX_prog: RL:ja, GPS:nein
-Rasthof Avus: zweite Möglichkeit nach rechts	CS; 1951,10435 1876,10397
+Rasthof Avus: zweite Möglichkeit nach rechts	CP; 1939,10446 1870,10406 1833,10427
 bereits an der Ampel am Ringcenter die Straßenseite wechseln	PI; 15361,12071 15294,11964 15317,11953
 bereits an der Ampel "Am Containerbahnhof" die Straßenseite wechseln	PI; 15420,12178 15443,12222 15350,12270
 bis zur Ampel an der Scharnweberstr. auf dem linken Gehweg vorfahren	CP; 15317,11953 15294,11964 15248,11880
@@ -148,7 +148,7 @@ zur Müggelstr. Hausdurchfahrt benutzen	CS; 14994,12121 14994,12064
 #: XXX_prog: RL:ja, GPS:nein
 Zugang zum Bahndamm über die Terasse der Mambo-Bar	CS; 13923,9405 13953,9372
 #: XXX_prog: RL:ja, GPS:nein
-Große Querallee: nicht ausgeschildert, vor dem "Tipi" nach links abbiegen	CP; 8123,12615 7945,12592 7875,12363
+Große Querallee: nicht ausgeschildert, vor dem "Tipi" nach links abbiegen	CP; 8122,12608 7945,12592 7875,12363
 Stralauer Allee - Warschauer Platz: bereits an der Kreuzung Am Oberbaum/Stralauer Allee auf den linken Gehweg wechseln	PI; 13332,10832 13389,10808 13471,10983
 #: XXX_indoor: hmmm, why not use Steinmetzstr. at all for such routes? Maybe use routing_helper with some penalty instead? Ah, it would minimize Kopfsteinpflaster...
 bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7702,10146 7813,10112 7850,10351
@@ -394,8 +394,8 @@ Mehringdamm - Wilhelmshöhe: bereits an der Fidicinstr. die Straßenseite wechseln
 #: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str. - Langkofelweg: bereits an der Ampel Edenkobener Weg die Straßenseite wechseln	PI; 6996,3761 6957,3699 6998,3596
 Altentreptower Str. - Wuhlgartenweg: zum Linksabbiegen frühzeitig auf die Fahrbahn oder den linken Gehweg wechseln	PI; 21573,12140 21307,12132 21282,12115
-Heerstr. - Preußenallee: bereits an der Kreuzung Teufelsseestr./Heerstr. die Straßenseite wechseln	PI; 456,11233 585,11256 551,11462
-Preußenallee - Heerstr.: auf der linken Gehwegseite bis zur Ampel Länderallee vorfahren und dann die Straßenseite wechseln	CP; 551,11462 585,11256 704,11273
+Heerstr. - Preußenallee: bereits an der Kreuzung Teufelsseestr./Heerstr. auf die linke Straßenseite wechseln	PI; 504,11243 571,11255 541,11464
+Preußenallee - Heerstr.: auf der linken Gehwegseite bis zur Ampel Länderallee vorfahren und dann die Straßenseite wechseln	CP; 541,11464 571,11255 704,11273
 Schorlemerallee - Gregor-Mendel-Str.: etwa 20 Meter vor der Kreuzung die Straßenseite wechseln	PI; 3643,6519 3664,6523 3650,6665
 Gregor-Mendel-Str. - Schorlemerallee: Überquerungsmöglichkeit ca. 20 Meter zur rechten Seite	CP; 3650,6665 3664,6523 3836,6550
 # REMOVED (die Radwegführung ist mittlerweile eindeutig) --- #: by: norbert winkelmann: vvv --- Welzower Steig: links des Grabens halten	CP; 6529,21620 6511,21649 6478,21652 --- Welzower Steig: links des Grabens halten	CP; 6223,21952 6257,22005 6111,22155 --- Welzower Steig: rechts des Grabens halten	CP; 6111,22155 6257,22005 6223,21952 --- Welzower Steig: rechts des Grabens halten	CP; 6478,21652 6511,21649 6529,21620 --- #: by: ^^^
