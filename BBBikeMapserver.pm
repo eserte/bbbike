@@ -433,6 +433,8 @@ sub create_mapfile {
 
 	}
 
+	require BBBikeMapserver::MkRouteMap;
+
 	foreach my $scope (@scopes) {
 	    my $orig_map_path = $path_for_scope->($scope);
 	    my $map_path = $path_for_scope->($scope, "$prefix-");
@@ -442,8 +444,8 @@ sub create_mapfile {
 	    }
 
 	    # copy brb.map to new map file
-	    my @cmd =
-		($self->{MAPSERVER_DIR} . "/mkroutemap",
+	    my @opts =
+		(
 		 (defined $route_shape_file
 		  ? (-routeshapefile => $route_shape_file)
 		  : (-routecoords => join(",", map { @$_ } @{$self->{MultiCoords}}))
@@ -452,12 +454,10 @@ sub create_mapfile {
 		 @title_args,
 		 (defined $scope && $scope ne "" ? (-scope => $scope) : ()),
 		 $orig_map_path,
-		 $map_path);
-	    warn "Cmd: @cmd" if $self->{DEBUG};
-	    system @cmd;
-	    if ($?) {
-		die "Error ($?) while doing @cmd";
-	    }
+		 $map_path,
+		);
+	    warn "Options for mkroutemap: @opts" if $self->{DEBUG};
+	    BBBikeMapserver::MkRouteMap::run(\@opts);
 	    # last $map_path is the start map
 	}
     }
