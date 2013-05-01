@@ -11,6 +11,10 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
+sub _teaser_beta_html (;$);
+sub _teaser_new_html (;$);
+sub _teaser_is_current ($);
+
 ######################################################################
 #
 # Teaser for bbbike.cgi
@@ -27,8 +31,9 @@ sub teaser {
 				#teaser_maintenance(), # schaltet sich selbstständig ab
 				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
-				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
+				teaser_ios1(),
 				teaser_android0(),
+				(0 ? teaser_perltk_newrelease() : teaser_perltk()),
 				#teaser_other_cities(),
 				teaser_other_cities_tagcloud(),
 				teaser_beta(),
@@ -42,8 +47,9 @@ sub teaser {
 				#teaser_maintenance(), # schaltet sich selbstständig ab
 				#teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
-				(1 ? teaser_perltk_newrelease() : teaser_perltk()),
+				teaser_ios1(),
 				teaser_android0(),
+				(0 ? teaser_perltk_newrelease() : teaser_perltk()),
 				#teaser_other_cities(),
 				teaser_other_cities_tagcloud(),
 				#teaser_beta(), # XXX There's no beta version in English yet!
@@ -310,20 +316,59 @@ sub teaser_android0 {
     if ($lang eq 'en') {
 	<<EOF;
 <div class="teaser">
-  <a href="$url"><b>BBBike for Android phones</b></a> @{[ _teaser_beta_html() ]}
+  <a href="$url"><b>BBBike for Android phones</b></a>
 </div>
 EOF
     } else {
 	<<EOF;
 <div class="teaser">
-  <a href="$url"><b>BBBike auf Android</b></a> @{[ _teaser_beta_html() ]}
+  <a href="$url"><b>BBBike auf Android</b></a>
 </div>
 EOF
     }
 }
 
-sub _teaser_beta_html {
+sub teaser_ios1 {
+    my $baseurl = "https://itunes.apple.com/de/app/bbybike-made-in-berlin-for/id639384862?mt=8";
+    my $new_until = "2013-07-01";
+    if ($lang eq 'en') {
+	my $url = "$baseurl&l=en";
+	<<EOF;
+<div class="teaser">
+  <a href="$url"><b>bbybike for iPhone</b></a> @{[ _teaser_new_html $new_until ]} &#x2014; using the BBBike routing engine
+</div>
+EOF
+    } else {
+	my $url = "$baseurl&l=de";
+	<<EOF;
+<div class="teaser">
+  <a href="$url"><b>bbybike auf iPhone</b></a> @{[ _teaser_new_html $new_until ]} &#x2014; verwendet die BBBike-Routensuche
+</div>
+EOF
+    }
+}
+
+sub _teaser_beta_html (;$) {
+    my $until = shift;
+    return if !_teaser_is_current($until);
     q{<span style="font:xx-small sans-serif; border:1px solid red; padding:1px 2px 0px 2px; background-color:yellow; color:black;">BETA</span>};
+}
+
+sub _teaser_new_html (;$) {
+    my $until = shift;
+    return if !_teaser_is_current($until);
+    q{<span style="font:xx-small sans-serif; border:1px solid red; padding:1px 2px 0px 2px; background-color:yellow; color:black;">NEW</span>};
+}
+
+sub _teaser_is_current ($) {
+    my $until = shift; # until _including_
+    if ($until) {
+	my @l = localtime; $l[4]++; $l[5]+=1900;
+	my $now = sprintf "%04d-%02d-%02d", @l[5,4,3];
+	return $now le $until;
+    } else {
+	return 1;
+    }
 }
 
 1;
