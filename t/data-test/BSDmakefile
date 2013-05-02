@@ -11,7 +11,7 @@ all:	Berlin.coords.data oldnames ${EMPTY_FILES}
 
 Berlin.coords.data:	strassen BSDmakefile
 	perl -I../.. -I../../lib -MStrassen::Core -MStrassen::Strasse -e 'Strassen->new_stream(shift)->read_stream(sub { my $$r = shift; my($$s,@cps) = Strasse::split_street_citypart($$r->[0]); @cps = "" if !@cps; for my $$cp (@cps) { next if $$s =~ m{^\(}; print "$$s|$$cp||$$r->[1][0]\n" }})' ${.CURDIR}/strassen > Berlin.coords.data~
-	echo "Unbekannter Weg|||9199,8823\n" >> Berlin.coords.data~
+	echo "Unbekannter Weg|||9199,8823" >> Berlin.coords.data~
 	chmod 644 Berlin.coords.data~
 	mv Berlin.coords.data~ Berlin.coords.data
 
