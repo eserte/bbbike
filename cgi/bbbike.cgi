@@ -62,7 +62,7 @@ use CGI;
 use CGI::Carp; # Nur zum Debuggen verwenden --- manche Web-Server machen bei den kleinsten Kleinigkeiten Probleme damit: qw(fatalsToBrowser);
 use BrowserInfo 1.47;
 use strict;
-use vars qw($VERSION $VERBOSE $WAP_URL
+use vars qw($VERSION $VERBOSE
 	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
 	    $bbbike_root $bbbike_images $bbbike_url $bbbike2_url $is_beta
 	    $bbbike_html
@@ -82,7 +82,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bp_obj $bi $use_select
 	    $graphic_format $use_mysql_db $use_exact_streetchooser
 	    $use_module
-	    $cannot_gif_png $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
+	    $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
 	    $can_wbmp $can_palmdoc $can_gpx $can_kml
 	    $can_google_maps $can_gpsies_link
 	    $can_mapserver $mapserver_address_url
@@ -90,8 +90,8 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
 	    $with_cat_display
 	    $use_coord_link
-	    @weak_cache @no_cache %proc
-	    $bbbike_script $cgi $port
+	    @weak_cache @no_cache
+	    $bbbike_script
 	    $search_algorithm $use_background_image
 	    $use_apache_session $now_use_apache_session $apache_session_module $cookiename
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
@@ -5159,8 +5159,8 @@ EOF
 	    }
 #XXX not yet	    print " <input type=checkbox name='cb_attachment'> als Download";
 	    print "&nbsp;&nbsp; <span class=nobr>" . M("Ausgabe als") . ": <select name=imagetype " . ($bi->{'can_javascript'} ? "onchange='enable_size_details_buttons()'" : "") . ">\n";
-	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png' && !$cannot_gif_png;
-	    print " <option " . $imagetype_checked->("gif") . ">GIF\n" if ($graphic_format eq 'gif' || $can_gif) && !$cannot_gif_png && !$is_m;
+	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png';
+	    print " <option " . $imagetype_checked->("gif") . ">GIF\n" if ($graphic_format eq 'gif' || $can_gif) && !$is_m;
 	    print " <option " . $imagetype_checked->("jpeg") . ">JPEG\n" if !$cannot_jpeg && !$is_m;
 	    print " <option " . $imagetype_checked->("wbmp") . ">WBMP\n" if $can_wbmp && !$is_m;
 	    print " <option " . $imagetype_checked->("pdf-auto") . ">PDF\n" unless $cannot_pdf;
