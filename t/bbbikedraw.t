@@ -26,8 +26,6 @@ use Getopt::Long;
 
 use BBBikeTest;
 
-my @modules;
-
 BEGIN {
     if (!eval q{
 	use Test::More;
@@ -38,25 +36,26 @@ BEGIN {
 	print "1..0 # skip no Test, Time::HiRes and/or Image::Info modules\n";
 	exit;
     }
-
-    @modules = qw(GD/png GD/gif GD/jpeg
-		  GD::SVG SVG
-		  PDF PDFCairo
-		  Imager/png Imager/jpeg
-		  MapServer MapServer;noroute
-		  ImageMagick/png ImageMagick/jpeg
-		  BBBikeGoogleMaps
-		 );
-
-    if (is_in_path("shp2img") && `shp2img -v` =~ m{\bOUTPUT=PDF\b}) {
-	push @modules, 'MapServer/pdf';
-    } else {
-	diag('Skipping MapServer/pdf tests, Mapserver was built without pdflib');
-	# pdflib is considered non-free in Debian; and I deliberately
-	# compiled Mapserver without pdflib on cvrsnica because of
-	# spurious crashes
-    }
 }
+
+my @module_defs = (
+		   {mod=>'GD/png',            on_live=>1},
+		   {mod=>'GD/gif',            on_live=>0},
+		   {mod=>'GD/jpeg',           on_live=>0},
+		   {mod=>'GD::SVG',           on_live=>0},
+		   {mod=>'SVG',               on_live=>0},
+		   {mod=>'PDF',               on_live=>0},
+		   {mod=>'PDFCairo',          on_live=>1},
+		   {mod=>'Imager/png',        on_live=>0},
+		   {mod=>'Imager/jpeg',       on_live=>0},
+		   {mod=>'MapServer',         on_live=>0},
+		   {mod=>'MapServer;noroute', on_live=>1},
+		   {mod=>'ImageMagick/png',   on_live=>0},
+		   {mod=>'ImageMagick/jpeg',  on_live=>0},
+		   {mod=>'BBBikeGoogleMaps',  on_live=>1},
+		   {mod=>'MapServer/pdf',     on_live=>0},
+		  );
+my %mod2def = map {($_->{mod} => $_)} @module_defs;
 
 # Generate timings with:
 #    perl bbbikedraw.t -only MapServer -only GD/png -only Imager -only ImageMagick -fullmap -v
@@ -119,20 +118,46 @@ my $start_name = 'Start';
 my $goal_name = 'Goal';
 my $use_xs;
 
+sub find_mod ($) {
+    my $mod = shift;
+    my $module_def = $mod2def{$mod};
+    if (!$module_def) {
+	die "Unknown module '$mod'";
+    }
+    $module_def;
+}
+
+sub find_matching_mods ($) {
+    my $rx = shift;
+    my @res;
+    for my $module_def (@module_defs) {
+	if ($module_def->{mod} =~ $rx) {
+	    push @res, $module_def;
+	}
+    }
+    @res;
+}
+
 my @only_modules;
-my %skip_modules;
 
 if ($ENV{BBBIKE_TEST_DRAW_ONLY_MODULES}) {
     @only_modules = split /,/, $ENV{BBBIKE_TEST_DRAW_ONLY_MODULES};
 }
 if ($ENV{BBBIKE_TEST_DRAW_SKIP_MODULES}) {
-    %skip_modules = map{($_,1)} split /,/, $ENV{BBBIKE_TEST_DRAW_SKIP_MODULES};
+    for my $mod (split /,/, $ENV{BBBIKE_TEST_DRAW_SKIP_MODULES}) {
+	my $module_def = find_mod $mod;
+	$module_def->{skip} = 'Skipped because of BBBIKE_TEST_DRAW_SKIP_MODULES';
+    }
 }
 if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
-    for my $module (@modules) {
-	if ($module =~ m{^MapServer}) {
-	    $skip_modules{$module} = 1;
-	}
+    for my $module_def (find_matching_mods qr{^MapServer}) {
+	$module_def->{skip} = 'Skipped because of BBBIKE_TEST_SKIP_MAPSERVER';
+    }
+}
+if ($ENV{BBBIKE_TEST_FOR_LIVE}) {
+    for my $module_def (@module_defs) {
+	$module_def->{skip} = 'Test only modules used on live server'
+	    if !$module_def->{on_live};
     }
 }
 
@@ -165,20 +190,31 @@ sub usage {
 # ImageMagick support is experimental and incomplete anyway, so do not
 # depend on this
 if (!eval { require Image::Magick; 1 }) {
-    diag "Image::Magick not available, do not test ImageMagick-related drawtypes...\n";
-    @modules = grep { !/^ImageMagick/ } @modules;
+    for my $module_def (find_matching_mods qr{^MapServer}) {
+	$module_def->{skip} = 'Skipped because Image::Magick not available, do not test ImageMagick-related drawtypes...';
+    }
 }
 
 # No Cairo on Windows available
 if ($^O eq 'MSWin32' && !eval { require Cairo; 1 }) {
-    diag "Cairo not available on Windows, do not test Cairo-related drawtypes...\n";
-    @modules = grep { !/^PDFCairo/ } @modules;
+    for my $module_def (find_matching_mods qr{^PDFCairo}) {
+	$module_def->{skip} = 'Skipped because Cairo is not available on Windows, do not test Cairo-related drawtypes...';
+    }
 }
 
 # No Mapserver for Windows
 if ($^O eq 'MSWin32') {
-    diag "Skip Mapserver tests on Windows...\n";
-    @modules = grep { !/^MapServer/ } @modules;
+    for my $module_def (find_matching_mods qr{^MapServer}) {
+	$module_def->{skip} = 'Skip MapServer tests on Windows...';
+    }
+}
+
+if (!is_in_path("shp2img") || `shp2img -v` !~ m{\bOUTPUT=PDF\b}) {
+    my $module_def = find_mod 'MapServer/pdf';
+    $module_def->{skip} = 'Skipping MapServer/pdf tests, Mapserver was built without pdflib';
+    # pdflib is considered non-free in Debian; and I deliberately
+    # compiled Mapserver without pdflib on cvrsnica because of
+    # spurious crashes
 }
 
 # The following two modules are theoretically available under Windows,
@@ -186,15 +222,18 @@ if ($^O eq 'MSWin32') {
 # the distributed version with bbbike
 if ($^O eq 'MSWin32') {
     if (!eval { require GD::SVG; 1 }) {
-	diag "GD::SVG not installed, skip tests...\n";
-	@modules = grep { !/^GD::SVG/ } @modules;
+	for my $module_def (find_matching_mods qr{^GD::SVG}) {
+	    $module_def->{skip} = "GD::SVG not installed, skip tests...";
+	}
     }
     if (!eval { require SVG; 1 }) {
-	diag "SVG not installed, skip tests...\n";
-	@modules = grep { !/^SVG/ } @modules;
+	for my $module_def (find_matching_mods qr{^SVG}) {
+	    $module_def->{skip} = "SVG not installed, skip tests...";
+	}
     }
 }
 
+my @skip_modules;
 if (!GetOptions(get_std_opts("display"),
 		"displayall!" => \$do_display_all,
 		"save!" => \$do_save,
@@ -206,12 +245,8 @@ if (!GetOptions(get_std_opts("display"),
 		"outline!" => \$do_outline,
 		"route=s" => \$route_type,
 		"geometry=s" => \$geometry,
-		'only=s@' => sub {
-		    push @only_modules, $_[1];
-		},
-		'skip=s@' => sub {
-		    $skip_modules{$_[1]} = 1;
-		},
+		'only=s@' => \@only_modules,
+		'skip=s@' => \@skip_modules,
 		'drawtypes=s' => sub {
 		    @drawtypes = split /,/, $_[1];
 		},
@@ -237,11 +272,20 @@ if ($route_type !~ m{^(none|single|multi)$}) {
 
 my($width, $height) = split /x/, $geometry;
 
-if (@only_modules) {
-    @modules = @only_modules;
+if (@skip_modules) {
+    for my $module (@skip_modules) {
+	my $module_def = find_mod $module;
+	$module_def->{skip} = "Skip $module because of -skip option";
+    }
 }
-if (%skip_modules) {
-    @modules = grep { !$skip_modules{$_} } @modules;
+
+if (@only_modules) {
+    my @new_module_defs;
+    for my $module (@only_modules) {
+	my $module_def = find_mod $module;
+	push @new_module_defs, $module_def;
+    }
+    @module_defs = @new_module_defs;
 }
 
 if ($do_display_all) {
@@ -251,25 +295,19 @@ if ($do_display_all) {
 my $image_info_tests = 3;
 my $tests_per_module = 1 + $image_info_tests;
 
-plan tests => scalar @modules * $tests_per_module;
+plan tests => scalar @module_defs * $tests_per_module;
 
-for my $module (@modules) {
+for my $module_def (@module_defs) {
  SKIP: {
+	my $skip = $module_def->{skip};
+	skip $skip, $tests_per_module
+	    if $skip;
+	my $module = $module_def->{mod};
 	eval {
 	    draw_map($module);
 	};
 	my $err = $@;
 	is($err, "", "Draw with $module");
-
-	if ($err && $module eq 'MapServer/pdf') {
-	    diag <<EOF;
-$module needs MapServer compiled with pdf support. Have pdflib installed
-and try recompile with something like:
-
-    sh configure --with-gd=/usr/local --with-pdf=/usr/local && make
-
-EOF
-	}
     }
 }
 
