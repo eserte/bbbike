@@ -931,18 +931,6 @@ sub module_handles_all_cgi { 0 }
 
 sub origin_position { "nw" }
 
-sub is_in_map {
-    my($self, @coords) = @_;
-    my $i;
-    for($i = 0; $i<$#coords; $i+=2) {
-	return 1 if ($coords[$i]   >= 0 &&
-		     $coords[$i]   <= $self->{Width} &&
-		     $coords[$i+1] >= 0 &&
-		     $coords[$i+1] <= $self->{Height});
-    }
-    return 0;
-}
-
 sub make_default_title {
     my($self, %args) = @_;
     my $start = $self->{Startname};

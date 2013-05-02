@@ -632,11 +632,6 @@ sub draw_wind {
 #      }
 }
 
-sub make_imagemap {
-    require BBBikeDraw::GD;
-    BBBikeDraw::GD::make_imagemap(@_);
-}
-
 sub flush {
     my $self = shift;
     my %args = @_;
