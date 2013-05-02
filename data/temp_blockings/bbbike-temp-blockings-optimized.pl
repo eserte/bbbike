@@ -110,25 +110,7 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1367445599,
-         'text' => 'MyFest 2013: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2013',
-         'from' => 1367316000,
-         'id' => 45,
-         'data' => '#: by: http://www.myfest36.de/
-userdel	2::temp 11763,10635 11722,10533 11949,10414
-userdel	2::temp 11556,10869 11770,10774 11760,10732 11781,10696 11763,10635 11505,10744 11556,10869 11589,10947 11640,11067
-userdel	2::temp 11958,11045 11897,10887 11841,10747 11824,10708 11781,10696
-userdel	2::temp 11805,10899 11803,10857
-userdel	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11722,10533
-userdel	2::temp 11841,10747 11770,10774 11799,10848
-userdel	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
-userdel auto	3 11258,10682 11275,10723 11253,10778
-userdel auto	3 11253,10778 11275,10723 11258,10682
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3446,28 +3428,7 @@ userdel auto	3 4358,12365 4518,12350 4601,12310
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://berlin.dgb.de/extra/1-mai-2013-unser-tag',
-         'until' => 1367431200,
-         'text' => 'DGB-Familienfest auf der Straße des 17. Juni, am 1. Mai 2013 von 11:30 bis 19:00',
-         'from' => 1367314200,
-         'id' => 2424,
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254
-userdel auto	3 8546,12279 8538,12245 8600,12165
-userdel auto	3 8546,12279 8538,12245 8522,12239
-userdel auto	3 8546,12279 8538,12245 8522,12187
-userdel auto	3 8600,12165 8538,12245 8522,12187
-userdel auto	3 8600,12165 8538,12245 8522,12239
-userdel auto	3 8600,12165 8538,12245 8546,12279
-userdel auto	3 8522,12187 8538,12245 8546,12279
-userdel auto	3 8522,12187 8538,12245 8600,12165
-userdel auto	3 8522,12187 8538,12245 8522,12239
-userdel auto	3 8522,12239 8538,12245 8546,12279
-userdel auto	3 8522,12239 8538,12245 8600,12165
-userdel auto	3 8522,12239 8538,12245 8522,12187
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Richardstr.: Baustelle zwischen Richardplatz und Herrnhuter Weg, Fahrtrichtung gesperrt',
