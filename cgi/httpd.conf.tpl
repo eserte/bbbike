@@ -158,10 +158,20 @@ PerlModule ModPerl::Registry
     use lib "[% ROOT_DIR %]";
     use lib "[% ROOT_DIR %]/lib";
 </Perl>
+PerlModule Apache::Session::Counted
+PerlModule BBBikeApacheSessionCountedHandler
 PerlModule BBBikeCalc
+PerlModule BBBikeCGIAPI
+PerlModule BBBikeCGICache
+PerlModule BBBikeCGIUtil
+PerlModule BBBikeDraw
+PerlModule BBBikeDraw::GD
+PerlModule BBBikeDraw::PDFCairo
+PerlModule BBBikeMapserver
 PerlModule BBBikeUtil
 PerlModule BBBikeVar
 PerlModule BBBikeXS
+PerlModule BBBikeYAML
 PerlModule BikePower
 PerlModule BikePower::HTML
 PerlModule BrowserInfo
@@ -169,17 +179,34 @@ PerlModule CGI
 PerlModule CGI::Carp
 PerlModule CGI::Cookie
 PerlModule CGI::Util
+PerlModule Data::Dumper
+PerlModule File::Basename
+PerlModule File::Spec
+PerlModule JSON::XS
+PerlModule Karte::Standard
+PerlModule Karte::Polar
+PerlModule Met::Wind
+PerlModule PLZ
+PerlModule PLZ::Multi
+PerlModule PLZ::Result
+PerlModule POSIX
+PerlModule Route
+PerlModule Storable
 PerlModule Strassen
 PerlModule Strassen::Core
 PerlModule Strassen::Dataset
 PerlModule Strassen::Fast
 PerlModule Strassen::Generated
+PerlModule Strassen::GPX
 PerlModule Strassen::Heavy
+PerlModule Strassen::KML
 PerlModule Strassen::Kreuzungen
 PerlModule Strassen::MultiStrassen
 PerlModule Strassen::Strasse
 PerlModule Strassen::StrassenNetz
 PerlModule Strassen::Util
+PerlModule Text::ParseWords
+PerlModule VectorUtil
 [%
     END
 -%]
