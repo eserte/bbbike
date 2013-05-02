@@ -691,6 +691,7 @@ test-on-remote:
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
+	BBBIKE_TEST_FOR_LIVE=1 \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS_ON_REMOTE} ${TESTS_SERVER_ON_REMOTE} \
 	'
