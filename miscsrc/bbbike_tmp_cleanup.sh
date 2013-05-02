@@ -36,6 +36,7 @@ esac
 rm /tmp/*.cache
 rm /tmp/b_de_*
 rm /tmp/bbbike_b_de_*
+rm /tmp/bbbike_test_b_de_*
 # last * is a pid file - unfinished creation of cache file
 rm /tmp/bbbike_*.cache.*
 # Various temporary files created by data/Makefile
