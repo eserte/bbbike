@@ -240,6 +240,7 @@ eval {
 	    }
 	}
 
+	no warnings 'uninitialized'; # url param may be undef
 	my $is_spam = length param('url');
 	$subject = "SPAM: $subject" if $is_spam;
     }
