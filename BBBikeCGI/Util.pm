@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2006,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2010,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -9,7 +9,7 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-package BBBikeCGIUtil;
+package BBBikeCGI::Util;
 
 use strict;
 use vars qw($VERSION);

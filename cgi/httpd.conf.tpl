@@ -161,9 +161,9 @@ PerlModule ModPerl::Registry
 PerlModule Apache::Session::Counted
 PerlModule BBBikeApacheSessionCountedHandler
 PerlModule BBBikeCalc
-PerlModule BBBikeCGIAPI
-PerlModule BBBikeCGICache
-PerlModule BBBikeCGIUtil
+PerlModule BBBikeCGI::API
+PerlModule BBBikeCGI::Cache
+PerlModule BBBikeCGI::Util
 PerlModule BBBikeDraw
 PerlModule BBBikeDraw::GD
 PerlModule BBBikeDraw::PDFCairo

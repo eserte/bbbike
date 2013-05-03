@@ -31,7 +31,7 @@ use lib (grep { -d }
 	 )
 	);
 use BBBikeVar;
-use BBBikeCGIUtil qw();
+use BBBikeCGI::Util qw();
 use Data::Dumper;
 use MIME::Lite;
 use CGI qw(:standard -no_xhtml);
@@ -56,7 +56,7 @@ eval {
     undef $comment;
 
     # from bbbike.cgi:
-    $bbbike_url = BBBikeCGIUtil::my_url(CGI->new);
+    $bbbike_url = BBBikeCGI::Util::my_url(CGI->new);
     ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
     if (!defined $bbbike_html) {
 	$bbbike_html   = "$bbbike_root/" . ($use_cgi_bin_layout ? "BBBike/" : "") .
@@ -357,8 +357,8 @@ eval {
 	print header(-cookie => $cookie),
 	    start_html(-title=>"Kommentar abgesandt",
 		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	    "Danke, der folgende Kommentar wurde an " . BBBikeCGIUtil::my_escapeHTML($to) . " gesendet:",br(),br(),
-	    pre(BBBikeCGIUtil::my_escapeHTML($comment)),
+	    "Danke, der folgende Kommentar wurde an " . BBBikeCGI::Util::my_escapeHTML($to) . " gesendet:",br(),br(),
+	    pre(BBBikeCGI::Util::my_escapeHTML($comment)),
 	    end_html;
     }
 };
@@ -411,7 +411,7 @@ sub newstreetform_extra_html ($$) {
 $strname: $cat_text\t$cat 
 EOF
 
-    $extra_html .= "<textarea rows='4' cols='80'>" . BBBikeCGIUtil::my_escapeHTML($bbd_suggestion) . "</textarea><br>";
+    $extra_html .= "<textarea rows='4' cols='80'>" . BBBikeCGI::Util::my_escapeHTML($bbd_suggestion) . "</textarea><br>";
 
     my $reply_to = $header->{To};
     my $cc = $BBBike::EMAIL;

@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.22 2009/02/01 18:50:54 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -129,7 +128,7 @@ for my $f (@files) {
 	    if $f =~ m{^( PLZ/Levenshtein.pm
 		      )$}x && !eval { require Text::LevenshteinXS; 1 };
 	myskip "$f needs JSON::XS", $tests_per_file
-	    if $f =~ m{^( BBBikeCGIAPI.pm
+	    if $f =~ m{^( BBBikeCGI/API.pm
 		      )$}x && !eval { require JSON::XS; 1 };
 	myskip "$f needs mod_perl2", $tests_per_file
 	    if $f =~ m{^( BBBikeDataDownloadCompat\.pm

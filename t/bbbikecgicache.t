@@ -19,14 +19,14 @@ BEGIN {
     }
 }
 
-use BBBikeCGICache;
+use BBBikeCGI::Cache;
 use CGI qw();
 use File::Basename qw(dirname);
 
 plan 'no_plan';
 
 {
-    my $bc = eval { BBBikeCGICache->new("$FindBin::RealBin/data") };
+    my $bc = eval { BBBikeCGI::Cache->new("$FindBin::RealBin/data") };
     like $@, qr{cacheprefix is missing};
 }
 
@@ -34,9 +34,9 @@ plan 'no_plan';
     my @warnings;
     my $bc = do {
 	local $SIG{__WARN__} = sub { push @warnings, @_ };
-	BBBikeCGICache->new("$FindBin::RealBin/data", "test_b_de");
+	BBBikeCGI::Cache->new("$FindBin::RealBin/data", "test_b_de");
     };
-    isa_ok $bc, 'BBBikeCGICache';
+    isa_ok $bc, 'BBBikeCGI::Cache';
     like "@warnings", qr{Cannot open .*/\.modified .*, fallback to '0'}, 'Expected warning'; # because test data are lacking the .modified file
 
     # Not reusing an CGI object!
@@ -46,7 +46,7 @@ plan 'no_plan';
     $bc->clean_cache;
 
     my $cache_entry = $bc->get_entry(CGI->new({ %cgi_args }));
-    isa_ok $cache_entry, 'BBBikeCGICache::Entry';
+    isa_ok $cache_entry, 'BBBikeCGI::Cache::Entry';
 
     ok !$cache_entry->exists_content, 'Test content does not exist already';
     ok $cache_entry->put_content($test_content, {key => "val"}), 'Putting test content';

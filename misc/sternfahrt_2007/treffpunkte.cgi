@@ -17,7 +17,7 @@ use CGI qw(:standard);
 use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/../..");
-use BBBikeCGIUtil;
+use BBBikeCGI::Util;
 
 our $DEBUG;
 
@@ -51,7 +51,7 @@ sub show_list {
     if ($sort eq "name") {
 	my $qq = CGI->new(query_string);
 	$qq->param("sort", "time");
-	print a({-href => BBBikeCGIUtil::my_self_url($qq)}, "Zeit");
+	print a({-href => BBBikeCGI::Util::my_self_url($qq)}, "Zeit");
     } else {
 	print b("Zeit")." | ";
     }
@@ -59,7 +59,7 @@ sub show_list {
     if ($sort eq 'time') {
 	my $qq = CGI->new(query_string);
 	$qq->param("sort", "name");
-	print a({-href => BBBikeCGIUtil::my_self_url($qq)}, "Treffpunkt");
+	print a({-href => BBBikeCGI::Util::my_self_url($qq)}, "Treffpunkt");
     } else {
 	print " | ".b("Treffpunkt");
     }
@@ -76,7 +76,7 @@ sub show_list {
 	last if !@{ $ret->[Strassen::COORDS()] };
 	my $qq = CGI->new(query_string);
 	$qq->param("center", $ret->[Strassen::COORDS()][0]);
-	push @list, [$ret->[Strassen::NAME()], BBBikeCGIUtil::my_self_url($qq)];
+	push @list, [$ret->[Strassen::NAME()], BBBikeCGI::Util::my_self_url($qq)];
     }
     if ($sort eq "name") {
 	for (@list) {

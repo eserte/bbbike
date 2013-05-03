@@ -14,7 +14,7 @@
 use strict;
 
 {
-package BBBikeCGICache;
+package BBBikeCGI::Cache;
 
 use vars qw($VERSION);
 $VERSION = '0.02';
@@ -61,7 +61,7 @@ sub new {
 
 sub get_entry {
     my($self, $q) = @_;
-    BBBikeCGICache::Entry->new($self, $q);
+    BBBikeCGI::Cache::Entry->new($self, $q);
 }
 
 sub clean_cache {
@@ -163,7 +163,7 @@ sub cacheperiod_to_timestamp {
 
 ######################################################################
 {
-    package BBBikeCGICache::Entry;
+    package BBBikeCGI::Cache::Entry;
 
     sub new {
 	my($class, $cache, $q) = @_;

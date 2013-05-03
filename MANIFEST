@@ -4,9 +4,9 @@ BBBikeAdvanced.pm
 BBBikeAlarm.pm
 BBBikeApacheSessionCounted.pm
 BBBikeApacheSessionCountedHandler.pm
-BBBikeCGIAPI.pm
-BBBikeCGICache.pm
-BBBikeCGIUtil.pm
+BBBikeCGI/API.pm
+BBBikeCGI/Cache.pm
+BBBikeCGI/Util.pm
 BBBikeCalc.pm
 BBBikeCrosshairs.pm
 BBBikeDataDownloadCompat.pm

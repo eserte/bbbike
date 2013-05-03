@@ -56,7 +56,7 @@ use Strassen::Dataset;
 use BBBikeCalc;
 use BBBikeVar;
 use BBBikeUtil qw(is_in_path min max kmh2ms);
-use BBBikeCGIUtil;
+use BBBikeCGI::Util;
 use File::Basename qw(dirname basename);
 use CGI;
 use CGI::Carp; # Nur zum Debuggen verwenden --- manche Web-Server machen bei den kleinsten Kleinigkeiten Probleme damit: qw(fatalsToBrowser);
@@ -881,7 +881,7 @@ CGI->import('-no_xhtml');
 
 $q = new CGI;
 # Used for $use_utf8=1
-eval{BBBikeCGIUtil::decode_possible_utf8_params($q);};warn $@ if $@;
+eval{BBBikeCGI::Util::decode_possible_utf8_params($q);};warn $@ if $@;
 
 {
     # Don't use RealBin here
@@ -914,7 +914,7 @@ $cookiename = "bbbike";
 $max_plz_streets = 25;
 
 # die originale URL (für den Kaltstart)
-$bbbike_url = BBBikeCGIUtil::my_url($q);
+$bbbike_url = BBBikeCGI::Util::my_url($q);
 # Root-Verzeichnis und Bilder-Verzeichnis von bbbike
 ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
 $bbbike_root =~ s|/$||; # letzten Slash abschneiden
@@ -951,7 +951,7 @@ if (defined $mapdir_fs && !-d $mapdir_fs) {
 
 # $mapdir_url absolut machen
 if (defined $mapdir_url && $mapdir_url !~ m{^https?://}) {
-    $mapdir_url = "http://" . BBBikeCGIUtil::my_server_name($q) . ($q->server_port != 80 ? ":" . $q->server_port : "") . $mapdir_url;
+    $mapdir_url = "http://" . BBBikeCGI::Util::my_server_name($q) . ($q->server_port != 80 ? ":" . $q->server_port : "") . $mapdir_url;
 }
 
 use vars qw($smallform);
@@ -1013,8 +1013,8 @@ $got_cookie = 0;
 %c = ();
 
 if (defined $q->param('api')) {
-    require BBBikeCGIAPI;
-    BBBikeCGIAPI::action($q->param('api'), $q);
+    require BBBikeCGI::API;
+    BBBikeCGI::API::action($q->param('api'), $q);
     my_exit(0);
 }
 
@@ -2573,10 +2573,10 @@ sub choose_ch_form {
 	} else {
 	    $last_name = $name;
 	}
-	my $html_name = BBBikeCGIUtil::my_escapeHTML($name);
+	my $html_name = BBBikeCGI::Util::my_escapeHTML($name);
 	my $html_longname;
 	if (defined $longname) {
-	    $html_longname = BBBikeCGIUtil::my_escapeHTML($longname);
+	    $html_longname = BBBikeCGI::Util::my_escapeHTML($longname);
 	}	    
 	if (!$per_char_filtering && !$seen_anchor && uc(substr($name,0,1)) ge $search_char) {
 	    print '<a name="start"></a>';
@@ -3020,7 +3020,7 @@ sub get_cookie {
     $q->cookie(-name => $cookiename,
 # XXX cookie seems only to be set if doing some action from the search site, not a page before. Check it!
 # XXX dirname okay with backward compatibility?
-	       -path => dirname(BBBikeCGIUtil::my_url($q, -absolute => 1)),
+	       -path => dirname(BBBikeCGI::Util::my_url($q, -absolute => 1)),
 	      );
 }
 
@@ -3031,13 +3031,13 @@ sub set_cookie {
      (-name => "$cookiename-dir",
       -value => $href,
       -expires => '+1y',
-      -path => dirname(BBBikeCGIUtil::my_url($q, -absolute => 1)),
+      -path => dirname(BBBikeCGI::Util::my_url($q, -absolute => 1)),
      ),
      $q->cookie
      (-name => $cookiename,
       -value => $href,
       -expires => '+1y',
-      -path => BBBikeCGIUtil::my_url($q, -absolute => 1),
+      -path => BBBikeCGI::Util::my_url($q, -absolute => 1),
      ),
     ];
 }
@@ -4590,7 +4590,7 @@ sub display_route {
 				      -default => [$q->param($key)]);
 	    }
 	    print qq{<form class="altroutebox" name="Ausweichroute" action="} .
-		BBBikeCGIUtil::my_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
+		BBBikeCGI::Util::my_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
 	    print $hidden;
 	    if ($sess) {
 		print $q->hidden(-name    => 'oldcs',
@@ -5301,7 +5301,7 @@ EOF
 	if ($show_settings) {
 	    #print "<hr>";
 	    print qq{<div class="box">};
-	    print "<form name=settings action=\"" . BBBikeCGIUtil::my_self_url($q) . "\">\n";
+	    print "<form name=settings action=\"" . BBBikeCGI::Util::my_self_url($q) . "\">\n";
 	    foreach my $key ($q->param) {
 		next if $key =~ /^(pref_.*)$/;
 		print $q->hidden(-name=>$key,
@@ -6656,7 +6656,7 @@ sub header {
     # Hint for search engines, to canonify the start URL
     # This handles the ?begin=1 case and bbbike.de vs. www.bbbike.de
     if (defined $from && $from eq 'chooseform-start' &&
-	BBBikeCGIUtil::my_server_name($q) =~ m{^(
+	BBBikeCGI::Util::my_server_name($q) =~ m{^(
 						   \Qwww.bbbike.de\E
 					       |
 						   \Qbbbike.de\E
@@ -7050,7 +7050,7 @@ sub choose_all_form {
 	    $last_initial = ($trans{$initial} ? $trans{$initial} : $initial);
 	    print "<a name=\"$last_initial\"><b>$last_initial</b></a><br>";
 	}
-	my $html_strname = BBBikeCGIUtil::my_escapeHTML($strname);
+	my $html_strname = BBBikeCGI::Util::my_escapeHTML($strname);
 	print "$html_strname<br>";
     }
 
@@ -7576,9 +7576,9 @@ sub _display_oldname {
     my($oldname_s) = @_;
     my $timespan = $oldname_s->get_field('timespan');
     qq{ <span style='font-size:smaller;'}
-	. ($timespan ? qq{ title="@{[ M("alter Name gültig") ]}: @{[ BBBikeCGIUtil::my_escapeHTML($timespan) ]}"} : '')
+	. ($timespan ? qq{ title="@{[ M("alter Name gültig") ]}: @{[ BBBikeCGI::Util::my_escapeHTML($timespan) ]}"} : '')
 	    . qq{>}
-		. qq{(@{[ M("alter Name") ]}: @{[ BBBikeCGIUtil::my_escapeHTML($oldname_s->get_name) ]})}
+		. qq{(@{[ M("alter Name") ]}: @{[ BBBikeCGI::Util::my_escapeHTML($oldname_s->get_name) ]})}
 		    . qq{</span>};
 }
 
@@ -7587,8 +7587,8 @@ sub _match_to_cgival {
     join($delim, $s->get_name, $s->get_citypart, $s->get_zip, $s->get_coord);
 }
 
-sub _get_weekly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], _get_cache_prefix() . '_weekly', 'weekly') }
-sub _get_hourly_filecache { require BBBikeCGICache; BBBikeCGICache->new($Strassen::datadirs[0], _get_cache_prefix() . '_hourly', 'hourly') }
+sub _get_weekly_filecache { require BBBikeCGI::Cache; BBBikeCGI::Cache->new($Strassen::datadirs[0], _get_cache_prefix() . '_weekly', 'weekly') }
+sub _get_hourly_filecache { require BBBikeCGI::Cache; BBBikeCGI::Cache->new($Strassen::datadirs[0], _get_cache_prefix() . '_hourly', 'hourly') }
 sub _get_cache_prefix { $Strassen::Util::cacheprefix . ($is_beta ? '_beta' : '') . ($lang ? "_$lang" : '') }
 
 sub http_req_logging {
