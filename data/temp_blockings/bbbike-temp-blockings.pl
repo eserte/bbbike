@@ -20101,6 +20101,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
+#: osm_watch: way id="23243508" version="28"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
@@ -20296,6 +20297,7 @@ EOF
        data  => <<EOF,
 #: last_checked: 2013-04-11
 #: note: einige Meter östlich der Knaackstr. gesperrt
+#: osm_watch: way id="196215276" version="1"
 userdel	q3::inwork 11101,14768 11187,14763
 EOF
      },
@@ -20808,6 +20810,7 @@ EOF
 #: by: IM_019421 (allerdings hier nur bis Dezember 2013)
 #: next_check: 2013-12-04
 #: XXX danach bessere Straßenqualität? Radstreifen?
+#: osm_watch: way id="24930947" version="20"
 userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 EOF
      },
@@ -20883,6 +20886,7 @@ EOF
        data  => <<EOF,
 #: last_checked: 2013-04-11 vvv
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
+#: osm_watch: way id="196215276" version="1"
 userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763
 #: XXX ^^^

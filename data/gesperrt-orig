@@ -145,6 +145,7 @@ Bersarinplatz	1 13730,12535 13698,12544 13678,12571 13686,12611 13695,12643 1374
 Petersburger Platz	1 13470,12990 13559,12779
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 #: XXX wird die Einbahnstraßenregelung für Radfahrer zumindest im östlichen Abschnitt wegen der Radroute aufgehoben?
+#: osm_watch: way id="42826410" version="5"
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972 1465,14963
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
@@ -190,6 +191,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
 #: XXX_osm: in osm: access=private statt access=no, aber das ist wohl falsch
+#: osm_watch: way id="24869862" version="11"
 #: last_checked: 2013-03-09
 #: next_check: 2013-07-09
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
@@ -2308,6 +2310,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: by: rjoop
 #: last_checked: 2012-11
 #: next_check: 2013-03-15
+#: osm_watch: way id="35326794" version="7"
 Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 # 
 #: XXX nach den Bauarbeiten gibt es wahrscheinlich keine Fahrbahn mehr --- wird man durch den Fußgängerbereich gut durchfahren können?
@@ -2353,6 +2356,7 @@ Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 
 #: XXX möglicherweise wird es den Weg in Zukunft gar nicht mehr geben
 #: by: Xenia B.
 #: next_check: 2013-06-01
+#: osm_watch: way id="159457523" version="2"
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 
 #: last_checked: 2013-04-02
@@ -2361,6 +2365,7 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 #: XXX Siehe auch handicap in der Voßstr.
 #: XXX laut INKO_113363 bis Ende März 2013 gesperrt
 #: source_id: INKO_113363
+#: osm_watch: way id="197160274" version="1"
 Voßstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen möglich	2:inwork 8837,11676 9000,11727
 # 
 # REMOVED (Straße ist nicht (mehr?) gesperrt) --- #: last_checked: 2012-06-08 --- #: next_check: 2013-03-01 --- Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8390,8879 8409,8904 8405,8994
@@ -2394,6 +2399,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: XXX wo gibt es Informationen hierzu?
 #: by: Kai Wagner (permanente Sperrung)
 #: confirmed_by: srt
+#: osm_watch: way id="4402045" version="9"
 #: last_checked: 2013-05-01
 #: check_frequency: 100d
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420

@@ -61,7 +61,9 @@ Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12
 #: last_checked: 2013-05-01 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
+#: osm_watch: way id="153698394" version="3"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
+#: osm_watch: way id="114667396" version="3"
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 #: by: ^^^
 #: next_check ^^^
@@ -74,7 +76,9 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
 #: last_checked: 2013-04-17 vvv
+#: osm_watch: way id="25185423" version="14"
 Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
+#: osm_watch: way id="4597205" version="6"
 Tieckstr.: Einbahnstraße zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
 #: last_checked ^^^
 # 
@@ -84,6 +88,7 @@ Tieckstr.: Einbahnstraße zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::in
 #: XXX Siehe auch Totalsperrung in der Voßstr.
 #: source_id: INKO_113363
 #: XXX laut INKO_113363 bis Ende März 2013 gesperrt
+#: osm_watch: way id="197160274" version="1"
 Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
 #: last_checked: 2013-04-28 vvv
@@ -148,6 +153,7 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 # 
 #: last_checked: 2013-04-28
 #: next_check: 2013-05-28
+#: osm_watch: way id="131505633" version="4"
 Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 # 
 # REMOVED (reported by wosch) --- #: last_checked: 2013-04-11 --- Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
@@ -158,6 +164,7 @@ Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 #: source_id: INKO_114376
 #: source_id: IM_019321
 #: last_checked: 2013-05-01
+#: osm_watch: way id="34390483" version="8"
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
 #: last_checked: 2013-04-28
@@ -192,6 +199,8 @@ Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entste
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html
 #: last_checked: 2013-04-20
 #: next_check: 2013-06-20
+#: osm_watch: way id="7543672" version="17"
+#: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz
 Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17266,14144
 # 
 ### Hohenschönhausen ###

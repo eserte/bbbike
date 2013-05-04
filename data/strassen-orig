@@ -471,6 +471,8 @@ Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,
 #: alias: Untere Kynaststr.
 Kynaststr.	N 14805,10518 14832,10512 14843,10621 14882,10732 14906,10820
 #: XXX wann erfolgt der Rückbau der Ersatzstraße?
+#: osm_watch: way id="58929537" version="22"
+#: osm_watch: way id="218473423" version="1"
 #: last_checked: 2013-05-04
 Kynaststr. [Ersatzstraße]	NN 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
 (Alt-Stralau - Spreeufer)	NN 14652,10201 14581,10067 14582,10048
@@ -669,6 +671,7 @@ Naumannstr.	N 7707,8915 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=3587&options=4
 #: last_checked: 2013-04-09 (andk)
 #: XXX der Eintrag in str_cont_ausnahme kann dann entfernt werden
+#: osm_watch: way id="25151920" version="9"
 Naumannstr.	H 7733,8023 7713,8001 7717,7879 7717,7830 7696,7771
 Hildegard-Knef-Platz	N 7696,7771 7774,7724
 (Hildegard-Knef-Platz - Lotte-Laserstein-Str.)	NN 7774,7724 7757,7682
@@ -5466,6 +5469,7 @@ Am Rheinischen Viertel	N 19272,8606 19416,8668
 #: XXX wird dieser Abschnitt zurückgebaut?
 #: last_checked: 2013-05-04
 #: next_check: 2013-06-04
+#: osm_watch: way id="26175292" version="6"
 Waldowallee	H 18867,9464 18916,9468
 Waldowallee	H 18875,9570 18916,9468 18939,9417 18977,9322 19050,9142 19083,9062 19163,8867 19249,8662 19272,8606 19321,8486 19425,8231 19468,8168
 Verlängerte Waldowallee	H 19468,8168 19558,8064 19666,7988 19843,7866 19927,7813 20031,7794 20077,7786 20139,7775 20280,7749
@@ -7956,6 +7960,7 @@ Wustrower Str.	N 16882,18619 17014,18435 17215,18153 17341,17990 17289,17952 173
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5351 (Sperrung noch nicht erfolgt)
 #: last_checked: 2013-04-20
 #: next_check: 2013-07-20
+#: osm_watch: way id="4788556" version="6"
 Doberaner Str. (Neu-Hohenschönhausen)	N 16335,18197 16184,18382
 Doberaner Str. (Neu-Hohenschönhausen)	N 16184,18382 16167,18427 16144,18521 16164,18611 16233,18643 16358,18687
 Zum Hechtgraben	N 16104,19165 16158,19049 16163,18780 16210,18706 16233,18643 16268,18551 16297,18468 16365,18335 16417,18266
@@ -9090,6 +9095,7 @@ Lisztstr. (Karlshorst)	N 18319,9218 18332,9356 18377,9366
 #: XXX: keine Fahrradstraße, trotz http://andreas-geisel.de/bilanz-meiner-arbeit/ , aber vielleicht passiert hier und in der Cäsarstr. noch was?
 #: last_checked: 2013-05-04
 #: next_check: 2013-07-04
+#: osm_watch: way id="145586616" version="3"
 Hentigstr.	N 18518,8778 18548,8942 18586,9172 18626,9406
 Junker-Jörg-Str.	N 18451,8823 18471,8957 18511,9185 18545,9395
 Karl-Egon-Str.	N 18375,8874 18406,9052 18430,9199 18457,9343
@@ -10582,6 +10588,7 @@ An der Koppel	N 5541,18451 5744,18449
 #: XXX eventuell wird der Weg in "Elisabeth-Schmitz-Pfad" benannt
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=4964&options=4
 #: next_check: 2013-02-01
+#: osm_watch: way id="25629604" version="4"
 (Weg am Kombibad Wedding)	NN 7417,16587 7298,16725 7267,16784
 Ungarnstr.	N 6659,16133 6843,16346 7056,16587 7106,16646 7177,16715 7267,16784 7394,16836 7672,16878
 Armenische Str.	N 7216,16552 7285,16638 7177,16715 7150,16760 7147,16791
@@ -10911,7 +10918,8 @@ Wördenweg	NN 8251,20927 8107,20859
 #: last_checked: 2012-09-29 vvv
 #: next_check: 2012-11-01 vvv
 #: XXX neuer Name: Kräuterweg PLZ=13158
-#: XXX laut osm bereits umbenannt
+#: XXX laut osm bereits umbenannt, seit version=13, eine Prüfung steht noch aus
+#: osm_watch: way id="22965786" version="13"
 Hauptweg (Rosenthal)	N 8786,21397 8866,21520 8900,21536 8980,21559 9042,21578 9120,21599 9145,21606 9203,21621 9260,21636 9326,21655 9393,21674
 #: XXX neuer Name: Kräuterplatz
 Hauptweg (Rosenthal)	N 9393,21674 9458,21705
@@ -10990,6 +10998,7 @@ Zum Langen Jammer	N 14682,12874 14480,12932 14405,12953
 #: XXX Qualität im östlichen Abschnitt?
 #: last_checked: 2013-04-20
 #: next_check: 2013-07-20
+#: osm_watch: way id="137941886" version="4"
 An den Eldenaer Höfen	N 14376,12849 14449,12833 14594,12800
 An den Eldenaer Höfen	N 14449,12833 14480,12932
 (Parkweg)	NN 14690,12900 14414,12979

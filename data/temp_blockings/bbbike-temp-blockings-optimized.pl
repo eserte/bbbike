@@ -3038,7 +3038,8 @@ userdel	2::inwork 19968,16 19940,52
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte 2013',
          'from' => 1330902000,
          'id' => 2316,
-         'data' => 'userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
+         'data' => '#: osm_watch: way id="23243508" version="28"
+userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
        },
@@ -3091,6 +3092,7 @@ userdel	2::inwork 18731,8577 18709,8423
          'id' => 2337,
          'data' => '#: last_checked: 2013-04-11
 #: note: einige Meter östlich der Knaackstr. gesperrt
+#: osm_watch: way id="196215276" version="1"
 userdel	q3::inwork 11101,14768 11187,14763
 ',
          'type' => 'handicap'
@@ -3221,6 +3223,7 @@ userdel	2::temp 8119,12414 8055,12186
 #: by: IM_019421 (allerdings hier nur bis Dezember 2013)
 #: next_check: 2013-12-04
 #: XXX danach bessere Straßenqualität? Radstreifen?
+#: osm_watch: way id="24930947" version="20"
 userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 ',
          'type' => 'handicap'
@@ -3259,6 +3262,7 @@ userdel	q4::inwork; 13339,7452 13303,7622
          'id' => 2399,
          'data' => '#: last_checked: 2013-04-11 vvv
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
+#: osm_watch: way id="196215276" version="1"
 userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763
 #: XXX ^^^
