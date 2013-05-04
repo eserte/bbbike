@@ -95,7 +95,7 @@ my $changed_count = 0;
     for my $type (qw(node way)) {
 	my @filtered_data = grep { $_->{type} eq $type } @osm_watch_list_data;
 	if (@filtered_data) {
-	    $by_type_rx{$type} = qq{<$type id="} . '(' . join("|", map { $_->{id} } @osm_watch_list_data) . ')' . qq{"};
+	    $by_type_rx{$type} = qq{<$type id="} . '(' . join("|", map { $_->{id} } @filtered_data) . ')' . qq{"};
 	}
     }
     my $rx = '(' . join("|", values %by_type_rx) . ')';
