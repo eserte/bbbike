@@ -1848,11 +1848,11 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings-recurring.bbd: $(PERSISTENTTMPDIR)/bbb
 	mv -f $@~ $@
 
 $(PERSISTENTTMPDIR)/sourceid-all.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd handicap_s-orig gesperrt_s-orig fragezeichen-orig radwege-orig
-	$(TEMP_BLOCKINGS_TASKS) bbd_to_existsid $> > $@~
+	$(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
 $(PERSISTENTTMPDIR)/sourceid-current.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd handicap_s-orig gesperrt_s-orig fragezeichen-orig radwege-orig
-	$(TEMP_BLOCKINGS_TASKS) bbd_to_existsid $> > $@~
+	$(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
 ######################################################################

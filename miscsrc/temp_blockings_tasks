@@ -106,12 +106,6 @@ if ($task eq 'pl_to_yml') {
 
     yml_to_bbd($infile, filter => 'nonrecurring');
 
-} elsif ($task eq 'bbd_to_existsid') {
-    my @infiles = @ARGV
-	or usage "bbd file is missing (one or more)";
-
-    bbd_to_existsid(@infiles);
-
 } else {
     usage("Task $task is unknown");
 }
@@ -145,26 +139,6 @@ sub yml_to_bbd {
 	$d =~ s/^(?!\#)/$t /gm;
 	print $d;
     }
-}
-
-sub bbd_to_existsid {
-    my(@infiles) = @_;
-
-    _add_bbbike_inc();
-    require Strassen::Core;
-    require BBBikeYAML;
-
-    my %existsid;
-    for my $infile (@infiles) {
-	Strassen->new_stream($infile)->read_stream
-	    (sub {
-		 my(undef, $dir) = @_;
-		 for my $source_id (@{ $dir->{source_id} || [] }) {
-		     $existsid{$source_id} = 1;
-		 }
-	     });
-    }
-    print BBBikeYAML::Dump(\%existsid);
 }
 
 sub _filter_real_source_ids {
