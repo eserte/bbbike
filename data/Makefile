@@ -163,7 +163,9 @@ persistent-tmp:	fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/non-faked-strassen \
 		${PERSISTENTTMPDIR}/XXX.bbd \
 		${PERSISTENTTMPDIR}/plz-b.bbd \
-		${PERSISTENTTMPDIR}/berlin-fragezeichen-poi.gpx
+		${PERSISTENTTMPDIR}/berlin-fragezeichen-poi.gpx \
+		${PERSISTENTTMPDIR}/osm_watch_list \
+		${PERSISTENTTMPDIR}/osm_watch_list_brandenburg
 
 rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
@@ -1143,6 +1145,17 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 	${PERL} $(MISCRSRCDIR)/match_bbd_data -incatrx . -v fragezeichen ${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2 > /tmp/fragezeichen-matches.bbd
 	mv /tmp/fragezeichen-matches.bbd ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd
 
+${PERSISTENTTMPDIR}/osm_watch_list:		*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+	-@$(WRITEABLE) $@
+	${MISCSRCDIR}/bbd_to_osm_watch_list *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	mv $@~ $@
+	-@$(READONLY) $@
+
+${PERSISTENTTMPDIR}/osm_watch_list_brandenburg:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+	-@$(WRITEABLE) $@
+	${MISCSRCDIR}/bbd_to_osm_watch_list -filter-region brb *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	mv $@~ $@
+	-@$(READONLY) $@
 
 ######################################################################
 # CHECKS
