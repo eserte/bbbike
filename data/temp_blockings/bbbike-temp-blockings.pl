@@ -8607,7 +8607,7 @@ EOF
        text  => 'Holteistraße: Bauarbeiten, Fahrbahn ist nicht benutzbar',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 14535,11327 14499,11259 14465,11195
+userdel	q4::inwork 14535,11327 14506,11275 14465,11195
 EOF
      },
      { from  => 1181768521, # 
@@ -20628,7 +20628,7 @@ EOF
        data  => <<EOF,
 #: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
 #: note: und am 2012-11-15 (gegen 21:00 - offen)
-userdel	2::night 14838,11410 14776,11400
+userdel	2::night 14838,11410 14792,11391
 EOF
      },
      { from  => 1345119120, # 2012-08-16 14:12

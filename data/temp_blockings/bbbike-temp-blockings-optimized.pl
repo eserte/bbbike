@@ -3164,7 +3164,7 @@ userdel	2::inwork 8318,10738 8362,10779
          'id' => 2372,
          'data' => '#: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
 #: note: und am 2012-11-15 (gegen 21:00 - offen)
-userdel	2::night 14838,11410 14776,11400
+userdel	2::night 14838,11410 14792,11391
 ',
          'type' => 'gesperrt'
        },
