@@ -72,6 +72,7 @@ my %id_to_record;
 my @file_lines;
 {
     open my $fh, $osm_watch_list or die $!;
+    binmode $fh, ':encoding(utf-8)';
     while(<$fh>) {
 	push @file_lines, $_;
 	chomp;
