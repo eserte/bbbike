@@ -44,13 +44,22 @@ for my $infile (@infiles) {
 	     my($r, $dir) = @_;
 	     for my $osm_watch (@{ $dir->{osm_watch} || [] }) {
 		 my($elemtype, $id_assign, $version_assign, $region) = split /\s+/, $osm_watch;
+		 if ($elemtype !~ m{^(way|node|relation)$}) {
+		     push @errors, "Unknown element type '$elemtype' in file $infile line $.";
+		 }
+		 if ($id_assign !~ m{^id="\d+"$}) {
+		     push @errors, "Expected id assignment, but got '$id_assign' in file $infile line $.";
+		 }
+		 if ($version_assign !~ m{^version="\d+"$}) {
+		     push @errors, "Expected version assignment, but got '$version_assign' in file $infile line $.";
+		 }
 		 $region = '' if !defined $region;
 		 if ($filter_for_region eq $region) {
 		     my $key = "$elemtype-$id_assign";
 		     if (exists $id_seen{$key}) {
 			 # sanity check
 			 if ($id_seen{$key} ne $version_assign) {
-			     push @errors, "Version mismatch for <$elemtype $id_assign>: $id_seen{$key} ne $version_assign";
+			     push @errors, "Version mismatch for <$elemtype $id_assign>: $id_seen{$key} ne $version_assign in file $infile line $.";
 			 }
 		     } else {
 			 print join("\t", $elemtype, $id_assign, $version_assign, $r->[Strassen::NAME()]), "\n";
@@ -59,6 +68,10 @@ for my $infile (@infiles) {
 		 }
 	     }
 	 });
+}
+
+if (@errors) {
+    die join("\n", @errors), "\n";
 }
 
 sub _add_bbbike_inc {
