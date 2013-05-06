@@ -67,7 +67,7 @@
 	X 10020,11262
 	X 10122,10294
 	X 10605,10312
-	X 10768,10686
+	X 10776,10682
 	X 11159,10769
 	X 11275,10723
 	X 11393,10390
@@ -492,7 +492,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8119,12414
 	X 6653,12067
 	F 10155,12494
-	F 10682,10494
+	F 10689,10491
 	F 7631,9770
 	X 15117,12106
 	X 14208,12235
@@ -520,11 +520,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10294,6440
 #: note: Richtung Süden in geringer Entfernung noch eine zusätzliche Fußgängerampel
 	X 10254,5921
-	X 11322,5989
+	X 11338,5992
 	X 11456,6103
 	X 11689,6634
 	X 12395,6785
-	X 12468,6592
+	X 12470,6586
 	X 9225,13389
 	X 9212,13471
 	F 9394,13528
@@ -755,7 +755,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2746,5537
 	X 2027,4792
 	X 1074,8470
-	X 2116,7740
+	X 2114,7742
 	X 2767,7592
 	X 6023,8799
 	X 161,3062
@@ -1029,10 +1029,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2659,6499
 	X 2723,7029
 	X 2717,7093
-	X 2406,8050
-	X 2725,8344
-	X 3388,8958
-	X 3439,8996
+	X 2397,8064
+	X 2713,8357
+	X 3379,8969
+	X 3427,9010
 	X 4106,8031
 	X -130,6694
 	X 4325,8229
@@ -1157,7 +1157,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5542,2491
 	X 6110,2822
 	X 6407,3101
-	X 10497,11052
+	X 10501,11056
 	X 3836,6550
 	F 9937,9484
 	X -3150,14631
@@ -1224,7 +1224,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5681,5743
 	X 5183,5437
 	X 4879,5017
-	X 4507,4755
+	X 4515,4760
 	X 4551,4042
 	X 4409,3173
 	X 4164,2717
@@ -1271,7 +1271,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 23404,5325
 	X 21303,5826
 	X 14289,9870
-	X 3155,8738
+#: XXX_prog: Ampel gilt nicht für Radfahrer Richtung SW
+	X 3158,8763
+#: XXX_indoor: Ampel ist eigentlich Richtung SW versetzt, allerdings stimmt dann die Geometrie mit dem Flinsberger Platz nicht...
+	F 2966,8586
+	F 2857,8487
 	X 2316,8857
 	X 1585,5136
 	X 23451,4877
@@ -2041,7 +2045,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	X 15530,12412
 	X 15508,12367
 #: XXX_prog: ^^^
-	F 10777,10930
+	F 10779,10934
 	X 2663,1199
 	F 1946,604
 	F 1722,271
@@ -2095,7 +2099,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 9510,12113
 	F 13142,10530
 	F 9245,6352
-	F 10815,6036
+	F 10792,6036
 	X 14421,5465
 	X 3983,2454
 	F 6433,16342
@@ -2117,8 +2121,8 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 7115,10612
 provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 13520,6583
-#: note: Luftbild:
 	F 6315,3974
+	F 6489,3578
 #: XXX_prog: Ampel eigentlich 20m nach Norden versetzt (die Ampelzählung müsste für die Querstraße korrigiert werden...)
 	F 7728,16538
 	X 5004,12771
@@ -2203,7 +2207,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Bedarfsampeln, am Wochenende abgeschaltet (by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4302&options=4)
 	F -2072,13403
 	F 417,12115
-	F 6438,11141
+	F 6447,11144
 	F -196,16187
 	F 8743,12099
 	F 30993,3557
@@ -2438,6 +2442,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 9934,2307
 	F 16487,17785
 	F 3517,13067
+	F 8348,5184
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

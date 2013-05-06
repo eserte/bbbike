@@ -5,7 +5,7 @@
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687,10180 9599,10175 9416,10196
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7251,11202 7333,11179 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7253,11208 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
 Gitschiner Str.	1 9948,10280 9865,10227
@@ -21,7 +21,7 @@ Dennewitzplatz	1 7813,10112 7906,10098
 Dennewitzplatz	1s 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7039,10082
 Winterfeldtplatz	1 7080,10098 7126,9825
-Moritzplatz	1 10847,10853 10824,10909 10885,10928 10906,10874 10847,10853
+Moritzplatz	1 10854,10854 10832,10910 10885,10928 10906,10874 10854,10854
 Segitzdamm etc.	1 10923,10113 10988,10268 10975,10334
 Segitzdamm etc.	1 10987,10360 11017,10435 11065,10443 11100,10530 11145,10638 11164,10687 11133,10704 11159,10769
 Segitzdamm etc.	1 11189,10831 11227,10821 11290,10972
@@ -104,7 +104,7 @@ Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 Zufahrt zur B96a	2 20288,-511 20272,-501
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
-Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
+Platz S (Hundekehlestr.)	1 2301,7698 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
 Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,7073 2742,7056 2733,7039 2723,7029
 Wexstr.	2 6260,8011 5807,7978 5635,8011
@@ -191,7 +191,6 @@ Mansfelder Str.	1 4102,9164 4158,9109 4228,9093 4325,9082
 Johann-Georg-Str.	1 3108,10069 3170,10041 3347,9793
 Damaschkestr.	1 3132,10499 3013,10553
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
-Gervinusstr.	1 3587,10768 3631,10784
 Darßer Str.	1 15000,18056 15031,18106 15181,18137
 Alfredstr.	1 16207,11937 16246,12177 16255,12224
 Fanningerstr.	1s 16890,12135 16794,12144
@@ -1472,10 +1471,8 @@ Lötschbergstr. -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 201
 Straßentunnelrampe	3nocross::ignrte 18220,11710 18520,11707 18626,11742
 Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3::igndisp 18626,11742 18520,11707 18520,11685
 Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3::igndisp 18520,11685 18520,11707 18220,11710
-abgesperrter Mittelstreifen	3nocross::ignrte 3592,10869 3631,10784 3644,10759
-Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3644,10759 3631,10784 3587,10768
-Gervinusstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3839,10904 3631,10784 3587,10768
-Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3592,10869 3631,10784 3839,10904
+abgesperrter Mittelstreifen	3nocross::ignrte 3592,10869 3623,10800 3644,10759
+Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3592,10869 3623,10800 3835,10915
 Straßentunnelrampe	3nocross::ignrte 3644,10759 3739,10576 3771,10511 3813,10435
 Lewishamstr. -> Sybelstr.: Straßentunnelrampe	3::igndisp 3771,10511 3739,10576 3712,10566
 Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3644,10759 3739,10576 3800,10580
@@ -1730,15 +1727,15 @@ Hasenheide, westlicher Weg -> Columbiadamm: unbequem zu überqueren (Bordsteine)	
 Mittelstreifen	3nocross::ignrte 4807,5131 4766,5208 4745,5283
 Fronhoferstr. -> Wolfensteindamm: Mittelstreifen	3::igndisp 4656,5101 4766,5208 4745,5283
 Wolfensteindamm -> Fronhoferstr.: Mittelstreifen	3::igndisp 4807,5131 4766,5208 4656,5101
-Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
-Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
+Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4772,5069
+Birkbuschstr.: unbequem zu passieren	3 4772,5069 4807,5131 4839,5167
 Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4846,5069
 Metallgitter auf dem Mittelstreifen	3nocross::ignrte 4807,5131 4846,5069 4879,5017
 Oberlinstr. -> Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4732,4939 4846,5069 4807,5131
 Birkbuschstr. -> Oberlinstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4879,5017 4846,5069 4732,4939
-Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3nocross::ignrte 4789,5079 4692,4997 4675,4983 4517,4853
+Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3nocross::ignrte 4772,5069 4692,4997 4675,4983 4517,4853
 Oberlinstr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4732,4939 4692,4997 4675,4983
-Wolfensteindamm -> Oberlinstr.: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4789,5079 4692,4997 4732,4939
+Wolfensteindamm -> Oberlinstr.: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4772,5069 4692,4997 4732,4939
 Gehweg Gelieustr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4725,4876 4675,4983 4517,4853
 Wolfensteindamm -> Gehweg Gelieustr.: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4692,4997 4675,4983 4725,4876
 Mittelstreifen	3nocross::ignrte 6687,8385 6765,8480 6912,8617 6989,8687
@@ -1954,6 +1951,7 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (3+5 Stufen)	0:15:5 9366,6150
 tragen (3+3+2+2 Stufen)	0:20:84 9244,3872
 tragen (10 Stufen)	0:15:-82 8035,10075
 tragen (7 weite Stufen)	0:30:-41 15759,16671
@@ -2320,7 +2318,7 @@ Drängelgitter	BNP:2:90:trailer=5 18833,3781
 Drängelgitter	BNP:2:-88:trailer=5 18018,3276
 Schranke	BNP:2:82:trailer=6 16368,7425
 Drängelgitter	BNP:3:-101:trailer=10 23012,3598
-Schranke	BNP:1:-135:trailer=3 14395,8071
+Tor	BNP:3:-162:trailer=5 14389,8080
 Schranke	BNP:0:-63:trailer=3 9920,11074
 Drängelgitter	BNP:5:-164 4258,2693
 Drängelgitter	BNP:5:-123 4202,2622
@@ -2381,6 +2379,7 @@ Drängelgitter (lichte Breite ca. 80cm)	BNP:8:-151:trailer=no 6526,21015
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8:-139:trailer=no 6548,21041
 Drängelgitter/Schranke	BNP:5:-180 10012,5210
 Schranke	BNP:5:-102 12571,7899
+Drängelgitter	BNP:5:34:trailer=10 14453,9929
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:39:trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:41:trailer=4 14597,10129
 Drängelgitter	BNP:3:-153:trailer=15 12904,10141
@@ -2481,7 +2480,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
-Brücke im Tiergarten: gesperrt	2:inwork 6406,11784 6467,11780
+Löwenbrücke: gesperrt	2:inwork 6406,11784 6467,11780
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417
 tragen (Treppe)	0:30:-82 2279,5112
 tragen (Treppe)	0:15:-136 2211,5120
@@ -2605,9 +2604,9 @@ Hoffmann-von-Fallersleben-Pl. -> Hohenzollerndamm: unbequem passierbarer Mittels
 Hohenzollerndamm -> Hoffmann-von-Fallersleben-Pl.: unbequem passierbarer Mittelstreifen	3::igndisp 3816,9045 3741,9047 3741,8955
 Hohenzollerndamm -> Bielefelder Str.: unbequem passierbarer Mittelstreifen	3::igndisp 3741,9047 3816,9045 3814,9304
 Bielefelder Str. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3::igndisp 3814,9304 3816,9045 3835,9044
-unpassierbarer Mittelstreifen	3nocross::ignrte 3439,8996 3482,9028 3521,9059
-Bechstedter Weg -> Hohenzollerndamm: unpassierbarer Mittelstreifen	3::igndisp 3661,8815 3482,9028 3439,8996
-Hohenzollerndamm -> Bechstedter Weg: unpassierbarer Mittelstreifen	3::igndisp 3521,9059 3482,9028 3661,8815
+unpassierbarer Mittelstreifen	3nocross::ignrte 3427,9010 3467,9045 3521,9059
+Bechstedter Weg -> Hohenzollerndamm: unpassierbarer Mittelstreifen	3::igndisp 3661,8815 3467,9045 3427,9010
+Hohenzollerndamm -> Bechstedter Weg: unpassierbarer Mittelstreifen	3::igndisp 3521,9059 3467,9045 3661,8815
 Kette	BNP:5:-131 3370,9215
 Kette	BNP:5:-220 3264,9261
 (Fußgängertunnel Sybelstr.): 30 Stufen	0:40:83 3731,10563
@@ -2651,8 +2650,8 @@ Bernadottestr. -> Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3::ig
 Hohenzollerndamm -> Bernadottestr.: Mittlestreifen wg. Leitplanke nicht zu queren	3::igndisp 1987,7593 1967,7561 2038,7484
 Kronberger Str. -> Hohenzollerndamm: Mittlestreifen wg. Leitplanke nicht zu queren	3::igndisp 1971,7738 1987,7593 2036,7653
 Hohenzollerndamm -> Kronberger Str.: Mittlestreifen wg. Leitplanke nicht zu queren	3::igndisp 1967,7561 1987,7593 1971,7738
-Mittelstreifen schlecht zu queren	3nocross::ignrte 2116,7740 2094,7719 2036,7653
-Königsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3::igndisp 1971,7738 2094,7719 2116,7740
+Mittelstreifen schlecht zu queren	3nocross::ignrte 2114,7742 2094,7719 2036,7653
+Königsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3::igndisp 1971,7738 2094,7719 2114,7742
 Hohenzollerndamm -> Königsmarckstr.: Mittelstreifen schlecht zu queren	3::igndisp 2036,7653 2094,7719 1971,7738
 Mittelstreifen	3nocross::ignrte 1136,3878 1152,3918 1214,4075
 Biesalskistr. -> Clayallee: Mittelstreifen	3::igndisp 1130,3930 1152,3918 1214,4075

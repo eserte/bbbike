@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-05-04 vvv
+#: last_checked: 2013-05-06 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -83,11 +83,11 @@ Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::in
 #: last_checked ^^^
 # 
 #: last_checked: 2013-04-02
-#: next_check: 2013-07-02
+#: next_check: 2013-05-31
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch Totalsperrung in der Voﬂstr.
 #: source_id: INKO_113363
-#: XXX laut INKO_113363 bis Ende M‰rz 2013 gesperrt
+#: XXX laut INKO_113363 bis Ende Mai 2013 gesperrt
 #: osm_watch: way id="197160274" version="1"
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
@@ -312,7 +312,7 @@ Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11141,9107
 (Flughafenstr. - Rundweg in der Hasenheide): Fuﬂg‰nger	q1 11632,8302 11577,8315 11559,8357
 Am Flutgraben: Fuﬂg‰nger	q1 13333,9929 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fuﬂg‰nger	q1 13418,9944 13669,9994 13711,10022
-Kolonie Albrechtshˆhe: einige Fuﬂg‰nger	q1 10260,5953 9931,5985
+Kolonie Albrechtshˆhe: einige Fuﬂg‰nger	q1 10260,5953 9955,5993
 Am Landwehrkanal: Parkweg	q1 12739,9576 12801,9554 12919,9584 12981,9672 13086,9825 13145,9861 13241,9995
 Uferweg an den Treptowers: enger und kurviger Weg	q3 14500,9856 14465,9900 14464,9927 14509,9997 14432,10059 14373,10046
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20070810.1330.83363.html
@@ -411,10 +411,10 @@ Ernststr.: Fuﬂg‰nger	q2 2497,19503 2700,19527
 (S-Bahnunterf¸hrung Wartenberg): Fuﬂg‰nger	q1 17077,18744 17109,18772
 (Weg zwischen S-Hohenschˆnhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17159,18375 17111,18479 17040,18571 17002,18578 16936,18658
 #: note: jeweils zwei Serpentinen pro Seite, groﬂer Zeitverlust
-Bernburger Treppe: Rampen	q4 8536,11063 8454,11086
+Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 12802,13584 12766,13621 12743,13634 12709,13691 12707,13706
 (Buckower Ring - Cecilienstr.): Fuﬂg‰nger, eng	q1 21874,13543 21928,13717
-(Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3388,8958 3333,9026
+(Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
 Leon-Jessel-Platz: Fuﬂg‰nger	q1 4700,9179 4750,9143
 Nikolsburger Platz: Fuﬂg‰nger, Bordsteine	q3 5374,9619 5307,9664
@@ -634,7 +634,7 @@ Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fuﬂg‰nger	q1 15393,11590 15423,11667
 (Gr¸nes Band): Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q1 15349,11911 15301,11876 15327,11724 15328,11636 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
 Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7662,4529 7772,4306
 Am Bahndamm: Fuﬂg‰nger	q1 7772,4306 7795,4242 8106,3410
-Edenkobener Steg: Fuﬂg‰nger	q1 6627,4187 6645,4254
+Edenkobener Steg: Fuﬂg‰nger	q1 6618,4191 6633,4272
 Teltowkanalpromenade: enge und kurvige Unterf¸hrung	q2 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 Heinrich-Laehr-Park: Fuﬂg‰nger	q1 1525,581 1372,1208 1328,1387 1249,1672
 #: note: Luftbild
@@ -726,7 +726,7 @@ Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328
 (Bl¸cherplatz - Waterloo-Ufer): Fuﬂg‰nger, Bordsteine	q2 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 #: XXX_prog: f¸r Anh‰nger vielleicht q2
-Mergenthalerring: Asphaltschwellen, kˆnnen umfahren werden	q1 14395,8071 14563,8243
+Mergenthalerring: Asphaltschwellen, kˆnnen umfahren werden	q1 14389,8080 14563,8243
 Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
 (Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6841,7283
 (Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q1 6807,7262 6809,7272 6841,7283
@@ -812,7 +812,7 @@ Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fuﬂg‰nger	q2 25571,4553 25658,4619
-(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1+ 3388,8958 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
+(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1+ 3379,8969 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
 Gˆrresstr.: enge Straﬂe	q1 5067,7652 5188,7536 5272,7458 5318,7424
 Stendaler Platz: Fuﬂg‰nger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fuﬂg‰nger, Taxis	q2; 7937,13126 8106,13130
@@ -1736,7 +1736,9 @@ Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5158 6288,4906
 H¸nensteig: Fuﬂg‰nger	q2 6395,5154 6405,5238 6108,5253
 #: by: ^^^
 #: by: Thomas (dobr@...) vvv
-(Gˆtzstr. - Albrechtstr.): Fuﬂg‰nger	q2 9460,6519 9453,6415 9404,6392 9389,6348 9381,6277 9367,6160 9349,6075
+(Gˆtzstr. - Albrechtstr.): Fuﬂg‰nger	q2 9460,6519 9453,6415 9404,6392 9389,6348 9381,6277 9374,6189
+(Gˆtzstr. - Albrechtstr.): Fuﬂg‰nger, Rampe	q4 9374,6189 9373,6179
+(Gˆtzstr. - Albrechtstr.): Fuﬂg‰nger	q2 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 #: note: ‰hnliche Angaben von Christian (chrispan), nach Mailverkehr mit ihm (Message-Id: <E1EtpOe-0001ZH-IJ@www.radzeit.de>) von q2 auf q4 degradiert:
 (Ringstr. - Gersdorfstr. (Kolonie Marienhˆhe)): Kleingartenanlage, Fuﬂg‰nger (schieben!), tiefe Steinregenabl‰ufe quer zum Weg	q4 7921,4451 7935,4466 8027,4571 8162,4725
 #: by: ^^^
@@ -1971,7 +1973,7 @@ Siemenssteg: Fuﬂg‰nger, schmal	q2 4129,12619 4128,12637 4124,12706 4124,12721
 Machandelweg: Fuﬂg‰nger, schmal	q2 -248,12718 -217,12778 -185,12822
 Merowingerweg: Fuﬂg‰nger, schmal	q2 1041,11169 1065,11216
 Wandalenallee: Fuﬂg‰nger	q1 736,11206 711,11199
-Flinsberger Platz: Fuﬂg‰nger	q1 2919,8582 2973,8569
+Flinsberger Platz: Fuﬂg‰nger	q1 2919,8582 2966,8586
 (Wacholderweg - Rominterallee): Fuﬂg‰nger	q1 -365,12788 -396,12749
 (Machandelweg - Rossitter Weg): Fuﬂg‰nger	q2 -45,12243 -76,12236 -107,12220
 Frauenburger Pfad: Fuﬂg‰nger, schmal	q2 475,10882 572,10876 677,10870 775,10864
@@ -2015,7 +2017,7 @@ Ziegelhof: Fuﬂg‰nger	q3 -3789,13519 -3685,13504
 (Wachheimer Weg - Gˆtelstr.): Fuﬂg‰nger	q2 -3437,12258 -3350,12260 -3349,12213
 (Neuenburger Str. - Lindenstr.): Fuﬂg‰nger	q2 9853,10543 9848,10526 9795,10512
 Fanny-Hensel-Weg: spielende Kinder, Pf‰hle	q3 8781,10827 8742,10868 8659,10910
-Else-Ury-Bogen: Fuﬂg‰nger	q3 4817,10943 4714,10950
+Else-Ury-Bogen: Fuﬂg‰nger, Restaurants	q4 4817,10943 4714,10950
 #: by: Freddy [AM] (Fuﬂg‰nger) vvv
 #: by: rjoop [SRT] (eng, aber eigentlich nur das westliche St¸ck)
 #: confirmed_by: srt
@@ -2389,8 +2391,8 @@ Kreutzerweg: enge Straﬂe	q1 4629,3916 4836,4041 4848,4069 4834,4102
 #: by: Tinka:
 Am Forstacker: enge Straﬂe	q1 -3676,17131 -3671,17202 -3648,17250 -3612,17280 -3532,17333 -3491,17381 -3418,17525
 #: by: David (dh):
-#: corrected_by: srt/policy (q2 -> q1)
-Brandenburgische Str. (Steglitz): enge Straﬂe	q1 6889,4334 6820,4347 6677,4384 6638,4394 6532,4422
+#: corrected_by: srt/policy (q2 -> q0-)
+Brandenburgische Str. (Steglitz): enge Straﬂe	q0- 6889,4334 6820,4347 6677,4384 6638,4394 6532,4422
 # 
 #: by: anonymous vvv
 #: corrected_by: srt/policy (q1 -> q0-) vvv

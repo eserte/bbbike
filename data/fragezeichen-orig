@@ -18,11 +18,13 @@
 # REMOVED (laut http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4430&options=4 müsste erstmal ein BVV-Beschluss durchkommen...) ---  by: MoPo 2009-08-01, soll 2009 realisiert werden vvv --- #: last_checked: 2012-08-05 --- #: next_check: 2013-01-01 --- #: XXX wird hier jemals eine Radspur entstehen? Insbesondere an der Zufahrt zum Parkhaus des "Schlosses" scheint kein Platz dafür zu existieren... (keep always "private") --- Grunewaldstr. (Steglitz)	?::projected 4861,5581 4671,5697 4520,5793 --- #: by: ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2013-04-25
-#: next_check: 2013-07-25
 #: XXX Baumaßnahme 1.48 (Realisierung nach 2011)
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: osm_watch: way id="153373879" version="3"
+#: osm_watch: way id="153373877" version="3"
+#: last_checked: 2013-05-06
+#: next_check: 2013-07-25
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
 #: last_checked: 2013-04-30
@@ -70,6 +72,12 @@ Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork 3735,12705 3716,129
 Lise-Meitner-Str.: werden hier Radspuren markiert?	?::projected 3711,13202 3721,13274 3742,13416 3741,13495 3741,13558 3735,13618 3717,13743 3702,13865
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
+#: osm_watch: way id="4609212"  version="7"
+#: osm_watch: way id="25113713" version="11"
+#: osm_watch: way id="4752742"  version="7"
+#: osm_watch: way id="4752743"  version="8"
+#: osm_watch: way id="8049679"  version="9"
+#: osm_watch: way id="8049678"  version="6"
 Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2706,13291 -2728,13269 -2960,13203 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
 # 
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
@@ -77,7 +85,7 @@ Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected 
 #: next_check: 2013-08-01
 #: osm_watch: way id="47266663" version="2"
 #: osm_watch: way id="47267054" version="1"
-Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,8717 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2116,7740
+Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,8717 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2114,7742
 # 
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
 #: last_checked: 2013-02-02
@@ -145,6 +153,8 @@ Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
+#: osm_watch: way id="5117259" version="8"
+#: osm_watch: way id="4581787" version="5"
 Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258,16111 6349,16213 6450,16325 6444,16331 6629,16538
 # 
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
@@ -266,17 +276,25 @@ Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -49
 Nauener Str.: Radspuren bis 2015 geplant	?::projected -4741,14233 -4757,14303 -4750,14393 -4724,14482
 Zeppelinstr.: Radspuren bis 2015 geplant	?::projected -4724,14482 -4704,14571 -4670,14637 -4663,14820
 Wilhelmstr.: Radspuren bis 2015 geplant	?::projected; -5501,11251 -5455,11321 -5392,11421
+# 
 #: last_checked: 2013-04-11
 #: check_frequency: 90d
 Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5780,6397 5803,6403
+# 
 Königstr.: Radspuren bis 2015 geplant	?::projected -9412,546 -9730,514 -9969,519 -10052,521 -10269,445 -10593,476
+# 
 #: last_checked: 2013-04-13
 #: next_check: 2013-10-13
 Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
+# 
 Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9308,4407 9192,4389 9079,4376
+# 
 #: last_checked: 2013-03-24
 #: next_check: 2013-06-24
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8496,6919 8447,6964 8319,7084
+# 
+#: last_checked: 2013-05-06
+#: next_check: 2013-09-06
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
 # 
@@ -314,6 +332,14 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: last_checked: 2013-05-06
+#: next_check: 2013-08-06
+Grünanlage an der Gottlieb-Dunkel-Str.: Parkwege entstehen, evtl. eine lohnende Abkürzung, Qualität, nachts beleuchtet?	?::inwork 11010,6004 11056,5861 11153,5835
+# 
+#: last_checked: 2013-05-06
+#: next_check: 2013-05-13
+Kol. Albrechtshöhe: asphaltierte Diagonalverbindung entsteht	?::inwork 10254,5921 10223,5951
+# 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130410.1200.383317.html
 Schönwalder Allee: Radweg wird saniert, danach asphaltiert	?::inwork; -3807,17226 -3820,17276 -3936,17516
 # 
@@ -334,8 +360,10 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4086&options=4 vvv
+#: priority: #C vvv
 Baseler Str./Altdorfer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 3144,2490 3175,2458
 Lausanner Str./Thuner Str.: wird hier ein Zebrastreifen angelegt?	?::projected 3277,2231 3310,2203
+#: priority ^^^
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4063&options=4
@@ -343,6 +371,7 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4&date=20130125 vvv
+#: priority: #C vvv
 #: next_check: 2013-04-01 vvv
 Frohnauer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 2437,24435 2437,24393
 #: last_checked: 2012-08-12
@@ -357,15 +386,18 @@ Zeltinger Platz Höhe Reichelt/Post: wird hier ein Zebrastreifen angelegt? (genau
 Eichelhäherstr.: hier wird ein Zebrastreifen entstehen (Bauarbeiten beginnen nach der Frostperiode Anfang 2013)	?::projected -1802,19653 -1778,19649
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3655,23244
 #: next_check ^^^
+#: priority ^^^
 #: by: ^^^
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3317
 #: next_check: 2013-04-01
+#: priority: #C
 Einmündung der Burgfrauenstraße in den Zeltinger Platz: hier wird ein Zebrastreifen angelegt	?::projected 2427,25126 2479,25116
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&options=4
 #: next_check: 2013-05-01
+#: osm_watch: node id="29778885" version="4"
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::projected 13708,17453
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
@@ -375,6 +407,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 12650,8164 12541,8140
 #: last_checked: 2013-04-29
 #: check_frequency: 60d
+#: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
 #: last_checked: 2013-04-13
 #: next_check: 2013-07-25
@@ -390,6 +423,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
 #: last_checked: 2013-04-29
 #: check_frequency: 60d
+#: priority: #C
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13898,8613
 # 
 #: XXX Gartenstadt Karlshorst: neue Straßen vvv
@@ -430,14 +464,16 @@ Am Dominikusteich: Qualität? Straße bereits fertiggestellt?	?::inwork 2760,23964
 #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
 #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16457,16204 16448,16102 16485,15979 16543,15892
- 
+# 
 #: last_checked: 2013-04-02
 #: next_check: 2013-07-02
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
 #: XXX Baumaßnahme 1.16 (Realisierung nach 2011)
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
+#: osm_watch: way id="14390759" version="12"
 Wackerweg - Otisstr.: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 3803,18855 3680,18913
+#: osm_watch: way id="150937168" version="2"
 Verbindung im Zuge der RR9: Qualität?	? 26199,5643 26270,5829 26302,5932
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
@@ -459,6 +495,7 @@ Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 1
 #: next_check: 2013-06-04
 #: note: Treskowallee (Lichtenberg) in Höhe Waldowallee Baustelle, Fahrbahn von 2 auf 1 Fahrstreifen reduziert, ein Abbiegen aus Richtung Am Tierpark in die Waldowallee ist nicht möglich (bis Ende 03/2013)
 #: source_id: IM_019443
+#: osm_watch: node id="28394944" version="19"
 Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18867,9464 18834,9256
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
@@ -503,8 +540,9 @@ Am Filmlager: Qualität? Genaue Lage der Straße (GPS-Track?)	? 22802,5325 22808,5
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_06_21.pdf?start&ts=1340354416&file=stra__enbauliste_stand_2012_06_21.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
-#: last_checked: 2013-03-24
-#: next_check: 2013-05-24
+#: last_checked: 2013-05-06
+#: next_check: 2013-07-06
+#: osm_watch: way id="4663347" version="13"
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10339,5948 10254,5921 10027,5868 9796,5790
 # 
 #: last_checked: 2012-05-12 vvv
@@ -528,9 +566,7 @@ Ampel in Vorbereitung	?::inwork 19131,-2145
 #: note ^^^
 #: next_check: ^^^
 # 
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/verwaltung/bauen/tiefbau/bauarbeiten.html?date=20120505
-#: next_check: 2012-12-31
-Leonorenstr.: Radwegführung wird geändert, teilweise mit Busspur zusammengelegt	?::inwork 6625,3314 6529,3480 6462,3644 6442,3685 6376,3835
+# REMOVED --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/verwaltung/bauen/tiefbau/bauarbeiten.html?date=20120505 --- #: next_check: 2012-12-31 --- Leonorenstr.: Radwegführung wird geändert, teilweise mit Busspur zusammengelegt	?::inwork 6625,3314 6529,3480 6489,3578 6462,3644 6442,3685 6376,3835
 # 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
@@ -543,6 +579,7 @@ Leonorenstr.: Radwegführung wird geändert, teilweise mit Busspur zusammengelegt	
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11472,7899 11573,7924 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11823,7980 11979,8014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: next_check: 2014-03-01
+#: osm_watch: way id="182693863" version="1"
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: next_check: 2013-01-01 vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
@@ -568,6 +605,7 @@ Eingang zum Flaschenhalspark	?::projected 8358,9568 8338,9443
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Noerdl-Teilstueck-a.5712.0.html
 #: next_check: 2015-01-01
+#: osm_watch: way id="182562157" version="2"
 Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8235,9107 8200,8920 7998,8317
 # 
 #: XXX_osm: fehlt bei osm komplett
@@ -753,15 +791,14 @@ Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von asphaltierten Radwegen	?::i
 #: by ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2012-11-03
+#: last_checked: 2013-05-06
 #: next_check: 2013-09-15
-#: XXX siehe auch comments_route-orig, TR1
 #: XXX eventuell wird hier nach den Bauarbeiten die Einbahnstraße geöffnet?
 #: osm_watch: way id="8094229" version="10"
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
 # 
-#: last_checked: 2013-04-13
-#: next_check: 2013-06-24
+#: last_checked: 2013-05-06
+#: next_check: 2013-09-06
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
 Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337
 # 
@@ -797,8 +834,8 @@ Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
 # 
-#: last_checked: 2011-04-09
-#: next_check: 2011-06-15
+#: last_checked: 2013-05-06 (Baumarkierungen (?) auf der Fahrbahn gesehen)
+#: next_check: 2013-08-06
 #: XXX wahrscheinlich nur im nördlichen Teil bis Kaiserstr.
 #: XXX Baumaßnahme 7.13 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
@@ -886,10 +923,8 @@ Landsberger Allee - Zechliner Str.: Qualität? Fußgänger?	? 16589,14400 16544,145
 # 
 Höhenweg am Wustrower Park: geht es hier weiter?	? 17275,18356 17564,18010 17585,17963 17557,17999
 # 
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4429
-Am Teltowkanal: gibt es durch die Bauarbeiten hier Einschränkungen? Wird die Qualität danach besser werden?	? 8784,5095 8881,5143 9171,5263 9192,5272
-# 
-Linkstr.: hier auch Vorfahrt?	? 8392,11077 8370,11010 8342,10916
+# REMOVED (zumindest an der Rathausstr. nichts gesehen) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4429 --- Am Teltowkanal: gibt es durch die Bauarbeiten hier Einschränkungen? Wird die Qualität danach besser werden?	? 8784,5095 8881,5143 9171,5263 9192,5272
+# REMOVED (keine Vorfahrt!) --- # Linkstr.: hier auch Vorfahrt?	? 8392,11077 8370,11010 8342,10916
 # 
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/bplan1135.pdf?start&ts=1363256158&file=bplan1135.pdf
 #: last_checked: 2013-04-20
@@ -1208,8 +1243,7 @@ Anna-Seghers-Str.: wird es nach den Bauarbeiten eine bessere Straßenqualität geb
 # 
 Poelchaustr. - Landsberger Allee: Qualität der Verbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19524,14474 19527,14655 19580,14864 19864,15169 20260,15434
 Springpfuhlpark: Qualität der Gehwegverbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19628,13517 19524,14474
-#: by: http://ftp.berlinonline.de/ba-temp-schoen/ba_beschluesse/2012-08-14/drucks._nr.1842_xviii_bezirkliches_fahrradroutennetz_fuer_tempelhof_schoeneberg_entwickeln_zwischenbericht.pdf (Treppe, wassergebundene Decke)
-Götzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster oder eine wassergebundene Decke? Gibt es hier Treppen?	? 9381,6277 9367,6160 9349,6075
+# REMOVED --- #: by: http://ftp.berlinonline.de/ba-temp-schoen/ba_beschluesse/2012-08-14/drucks._nr.1842_xviii_bezirkliches_fahrradroutennetz_fuer_tempelhof_schoeneberg_entwickeln_zwischenbericht.pdf (Treppe, wassergebundene Decke) --- Götzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster oder eine wassergebundene Decke? Gibt es hier Treppen?	? 9381,6277 9374,6189 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf vvv
 #: XXX Befahrbarkeit soll laut Maßnahmenkatalog verbessert werden
@@ -1227,10 +1261,10 @@ Verbesserung der Befahrbarkeit	?::projected 25958,-731 26004,-705 26045,-718 260
 Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26846,-2176 27021,-2336 27161,-2474 27093,-2560
 #: by ^^^
 # 
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4
-#: XXX evtl. werden, wenn der Antrag angenommen wird, fehlende Abschnitte ergänzt
-#: XXX südlicher Abschnitt ab Paul-Schwarz-Promenade gehört zur Baumaßnahme 6.14 (Realisierung in 2011)
-Birkbuschstr.: existieren hier teilweise Radspuren?	? 5671,3987 5624,4112 5588,4210 5557,4294 5483,4359 5416,4411 5329,4485 5271,4547 5161,4664 5137,4691 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4 (Prüfung der Maßnahme)
+#: last_checked: 2013-05-06
+#: next_check: 2013-11-06
+Birkbuschstr.: werden hier Radspuren oder Busspuren angelegt?	? 5557,4294 5483,4359 5416,4411 5329,4485 5271,4547 5161,4664 5137,4691 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
 (Buschallee KGA): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22458,9532 22525,9665 22730,9938
 (KGA-Weg): komplett asphaltiert? Beleuchtet? Schranken? Ausschilderung?	? 22730,9938 22818,10080 22731,10142
 (Blumenweg): Qualität? Beleuchtet? Schranken? Ausschilderung?	? 22274,9622 22604,9988
@@ -3248,10 +3282,10 @@ Tongrubenweg: Qualität im östlichen Teilabschnitt?	? 28694,2529 28749,2595 28809
 Neuendorfer Str.: existieren Radspuren in der Neuendorfer Str., und wenn ja, von wo bis wo?	?::inwork -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: last_checked: 2011-09-14 vvv
+#: last_checked: 2013-05-06 vvv
 #: XXX Baumaßnahme 4.22, Realisierung in 2011 vvv
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Realisierung noch nicht erfolgt, Mitte 2012) vvv
-#: next_check: 2013-01-01 vvv
+#: next_check: 2013-08-06 vvv
 #: osm_watch: way id="4389511" version="12"
 #: osm_watch: way id="4495273" version="16"
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886
