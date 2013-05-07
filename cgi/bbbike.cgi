@@ -2066,6 +2066,7 @@ EOF
 	    my($strasse, $bezirk, $plz, $xy, $index) = split(/$delim/o, $$tworef);
 	    if ($bezirk eq 'Potsdam') {
 		upgrade_scope("region");
+		get_streets_rebuild_dependents();
 	    }
 	    print "<td>" if $bi->{'can_table'};
 	    if (defined $xy && $xy !~ /^\s*$/) {
@@ -7120,7 +7121,7 @@ sub get_nearest_crossing_coords {
 			}
 		    }
 		    if (!$before_xy && !$after_xy) {
-			warn "Harmless? Cannot find any real crossing in <@street_coords>, scope is <@{[ $q->param('scope') ]}>";
+			warn "Harmless? Cannot find any real crossing in <@street_coords>, input coords were $x,$y, scope is <@{[ $q->param('scope') ]}>";
 		    } else {
 			if ($after_xy && $before_xy) {
 			    # choose nearest
