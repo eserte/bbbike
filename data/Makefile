@@ -164,8 +164,7 @@ persistent-tmp:	fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/XXX.bbd \
 		${PERSISTENTTMPDIR}/plz-b.bbd \
 		${PERSISTENTTMPDIR}/berlin-fragezeichen-poi.gpx \
-		${PERSISTENTTMPDIR}/osm_watch_list \
-		${PERSISTENTTMPDIR}/osm_watch_list_brandenburg
+		osm-watch-lists
 
 rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
@@ -177,6 +176,9 @@ rare-persistent-tmp:	\
 fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
 
 fragezeichen-outdoor:		${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
+
+osm-watch-lists:	${PERSISTENTTMPDIR}/osm_watch_list \
+			${PERSISTENTTMPDIR}/osm_watch_list_brandenburg
 
 .for i in $(XXX_TARGETS)
 persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
