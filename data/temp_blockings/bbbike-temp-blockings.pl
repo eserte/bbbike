@@ -2060,10 +2060,10 @@ EOF
        text  => 'Luxemburger Straße - Föhrer Straße, Zwischen Kreuzung Leopoldplatz und Kreuzung Amrumer Straße Veranstaltung, Straße gesperrt, Dauer: 27.05.2005 06:00 Uhr bis 30.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 7138,15437 7020,15314
+userdel	q4 7138,15437 6996,15319
 userdel	q4 7138,15437 7277,15586
-userdel	q4 6630,15100 6721,15140
-userdel	q4 6721,15140 6846,15202 7020,15314
+userdel	q4 6626,15104 6715,15152
+userdel	q4 6715,15152 6833,15215 6996,15319
 EOF
      },
      { from  => 1117231200, # 2005-05-28 00:00
@@ -17690,18 +17690,19 @@ EOF
        until => undef, #
        text  => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich ' .
                 do {
-		    # by: http://www.gruen-berlin.de/parks-gaerten/tempelhofer-park/benutzerinfo-park/oeffnungszeiten/
+		    # by: http://www.tempelhoferfreiheit.de/besuchen/oeffnungszeiten/
+		    # by: http://www.tempelhofer-park.de/oeffnungszeiten/
 		    my $mon = (localtime)[4]+1;
 		    my $until = { 1 => '(im Januar von 7.30 bis 17.00 Uhr)',
 				  2 => '(im Februar von 7.00 bis 18.00 Uhr)',
-				  3 => '(im März bis 19.00 Uhr)',
-				  4 => '(im April bis 20.30 Uhr)',
-				  5 => '(im Mai bis 21.30 Uhr)',
-				  6 => '(im Juni bis 22.30 Uhr)',
-				  7 => '(im Juli bis 22.30 Uhr)',
-				  8 => '(im August bis 21.30 Uhr)',
-				  9 => '(im September bis 20.30 Uhr)',
-				  10 => '(im Oktober bis 19.00 Uhr)',
+				  3 => '(im März von 6.00 bis 19.00 Uhr)',
+				  4 => '(im April von 6.00 bis 20.30 Uhr)',
+				  5 => '(im Mai von 6.00 bis 21.30 Uhr)',
+				  6 => '(im Juni von 6.00 bis 22.30 Uhr)',
+				  7 => '(im Juli von 6.00 bis 22.30 Uhr)',
+				  8 => '(im August von 6.00 bis 21.30 Uhr)',
+				  9 => '(im September von 6.00 bis 20.30 Uhr)',
+				  10 => '(im Oktober von 7.00 bis 19.00 Uhr)',
 				  11 => '(im November von 7.00 bis 18.00 Uhr)',
 				  12 => '(im Dezember von 7.30 bis 17.00 Uhr)',
 				}->{$mon};
@@ -20101,7 +20102,8 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
-#: osm_watch: way id="23243508" version="28"
+#: osm_watch: way id="23243508" version="29"
+#: XXX laut osm bereits aufgehoben, aber stimmt das? (ich habe einen Eintrag in OSM erstellt)
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },

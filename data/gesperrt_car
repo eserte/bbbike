@@ -573,14 +573,14 @@ Stettiner Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9107,16389 9331,1662
 Osloer Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9210,16638 9331,16624 9435,16832
 Wriezener Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9245,16758 9210,16638 9331,16624
 Osloer Str. -> Wriezener Str.: Straßenbahntrasse	3::igndisp 8939,16668 9210,16638 9245,16758
-Straßenbahntrasse	3nocross::ignrte 8249,16741 8196,16746 8144,16750 7763,16779
-Heinz-Galinski-Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 8092,16485 8196,16746 8144,16750
-Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8249,16741 8196,16746 8092,16485
+Straßenbahntrasse	3nocross::ignrte 8249,16741 8196,16748 8144,16754 7852,16790 7763,16779
+Heinz-Galinski-Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 8092,16485 8196,16748 8144,16754
+Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8249,16741 8196,16748 8092,16485
 Straßenbahntrasse	3nocross::ignrte 7606,16746 7456,16620 7417,16587 7403,16575 7295,16477 7231,16418
 Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
 Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7707,16543 7456,16620 7417,16587
-Weg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7456,16620
-Seestr. -> Weg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
+Verbindungsweg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7456,16620
+Seestr. -> Verbindungsweg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
 Seestr. -> Groninger Str.: Straßenbahntrasse	3::igndisp 7417,16587 7403,16575 7439,16350
 Groninger Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7439,16350 7403,16575 7295,16477
 Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
@@ -892,7 +892,7 @@ Finkeldeweg	1 22928,3057 22834,3571
 Mittelstreifen	3nocross::ignrte 19405,6276 19276,6359 19245,6379
 Verl. Rathenaustr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19372,6579 19276,6359 19405,6276
 An der Wuhlheide -> Verl. Rathenaustr.: Mittelstreifen	3::igndisp 19245,6379 19276,6359 19372,6579
-Kiautschoustr.	1 7007,14911 7199,14978
+Kiautschoustr.	1 7007,14911 7192,14976
 Rochstr.: Barriere	3 10418,12922 10535,13006 10571,13034
 Rochstr.: Barriere	3 10571,13034 10535,13006 10418,12922
 Mittelstreifen	3nocross::ignrte 7936,12906 7948,12918 8039,13009
@@ -1407,8 +1407,8 @@ Pfirsichweg	1 -4696,9263 -4755,9120
 Leipziger: Mittelstreifen	3 9987,11690 9981,11689 9982,11681
 Leipziger: Mittelstreifen	3 9982,11681 9981,11689 9898,11679
 Straßenbahntrasse	3nocross::ignrte 7403,16575 7417,16587 7456,16620
-Weg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7456,16620
-Seestr. -> Weg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
+Verbindungsweg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7456,16620
+Seestr. -> Verbindungsweg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
 Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 7295,16477
 Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 7417,16587
 Florastr.: Poller	3 1929,28119 1938,28171 1961,28239

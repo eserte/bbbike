@@ -355,8 +355,8 @@ Wassersportallee - Bohnsdorfer Str.: über Zufahrt zur Tankstelle und zum Parkpla
 #: by: ^^^
 Berliner Str. - Masurenstr.: entweder bereits an der Samländischen Str. die Straßenseite wechseln oder die Straßenbahntrasse in Höhe Binzstr. überqueren und zurückfahren	PI; 10886,17396 10880,17469 10670,17458
 Masurenstr. - Berliner Str.: zunächst auf dem linken Gehweg bis zur Höhe Binzstr. fahren	CP; 10670,17458 10880,17469 10878,17490
-Kongostr. - Müllerstr.: zunächst auf dem linken Gehweg bis zur Türkenstr. oder bis zur Fußgängerampel fahren	CP; 6349,16213 6450,16325 6444,16331
-Müllerstr. - Kongostr.: an der Türkenstr. oder an der Fußgängerampel die Straßenseite wechseln und zurückfahren	CP; 6608,16180 6450,16325 6349,16213
+# REMOVED (mittlerweile existiert alternativ eine direkte Überquerungsmöglichkeit) --- Kongostr. - Müllerstr.: zunächst auf dem linken Gehweg bis zur Türkenstr. oder bis zur Fußgängerampel fahren	CP; 6349,16213 6450,16325 6444,16331
+# REMOVED (mittlerweile existiert alternativ eine direkte Überquerungsmöglichkeit) --- Müllerstr. - Kongostr.: an der Türkenstr. oder an der Fußgängerampel die Straßenseite wechseln und zurückfahren	CP; 6608,16180 6450,16325 6349,16213
 ## Rethink, retest appearance:
 #Nollendorfplatz: Richtung Einemstr. fahren	CP2; 6971,10346 7033,10328 7033,10396
 #Nollendorfplatz: Richtung Maaßenstr. fahren	CP2; 7131,10331 7033,10396 7033,10328
@@ -513,3 +513,5 @@ Indira-Gandhi-Str. - Orankeweg: bereits an der Fußgängerampel Gounodstr. auf den
 Köthener Brücke - Gleisdreieckpark: ab der Ampel den linken Gehweg benutzen	PI; 8430,10710 8362,10779 8318,10738
 Richtung Blockdammwegbrücke fahren	PI; 17729,8850 17754,8863 17760,8853
 Podbielskiallee - Pacelliallee: Fußgängerampel zum Linksabbiegen benutzen	CP; 2953,6743 2723,7029 2714,6857
+Armenische Str.: vor dem Sackgassenhammer links halten	CP; 7150,16760 7144,16781 7131,16790
+Schillerpark: im Park halblinks halten	CP; 7115,16827 7097,16915 7064,16943

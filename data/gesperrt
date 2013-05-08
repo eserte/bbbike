@@ -1498,9 +1498,9 @@ Bornholmer Str. -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3::ign
 Straßenbahn auf Mittelstreifen	3nocross::ignrte 9514,16603 9617,16590 9781,16569 9816,16565
 Sonderburger Str. -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9603,16468 9617,16590 9514,16603
 Bornholmer Str. -> Sonderburger Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9781,16569 9617,16590 9603,16468
-Straßenbahntrasse	3nocross::ignrte 7687,16770 7763,16779 8144,16750
+Straßenbahntrasse	3nocross::ignrte 7687,16770 7763,16779 7852,16790
 Osloer Str. -> Louise-Schroeder-Pl.: Straßenbahntrasse	3::igndisp 7687,16770 7763,16779 7745,16889
-Louise-Schroeder-Pl. -> Osloer Str.: Straßenbahntrasse	3::igndisp 7745,16889 7763,16779 8144,16750
+Louise-Schroeder-Pl. -> Osloer Str.: Straßenbahntrasse	3::igndisp 7745,16889 7763,16779 7852,16790
 Straßenbahntrasse	3nocross::ignrte 7417,16587 7456,16620 7606,16746
 Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
 Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7707,16543 7456,16620 7417,16587
@@ -1510,8 +1510,8 @@ Malplaquetstr. -> Seestr.: Straßenbahntrasse	3::igndisp 7162,16163 7051,16264 69
 Straßenbahntrasse	3nocross::ignrte 7231,16418 7295,16477 7403,16575
 Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
 Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7403,16575
-Mittelstreifen	3nocross::ignrte 6528,15000 6561,15041 6630,15100
-Augustenburger Pl. -> Föhrer Str.: Mittelstreifen	3::igndisp 6537,15156 6561,15041 6630,15100
+Mittelstreifen	3nocross::ignrte 6528,15000 6561,15041 6626,15104
+Augustenburger Pl. -> Föhrer Str.: Mittelstreifen	3::igndisp 6537,15156 6561,15041 6626,15104
 Föhrer Str. -> Augustenburger Pl.: Mittelstreifen	3::igndisp 6528,15000 6561,15041 6537,15156
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 14208,12235 14291,12220 14381,12205
 Kreutzigerstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14285,12190 14291,12220 14208,12235
@@ -2462,7 +2462,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen möglich	2:inwork 8837,1
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18866,-1674
-Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8246,14184
+Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8238,14181
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
@@ -2471,8 +2471,8 @@ Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,2
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 1826,20492 1761,20539 1741,20571
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
-Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
 An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14449,12833 14594,12800
+Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9869,12297
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245 9795,12293 9780,12401

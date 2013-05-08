@@ -1415,11 +1415,11 @@ Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,1
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,11346 6880,11110
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 9998,16547 9883,16557 9816,16565
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9781,16569 9816,16565
-Osloer Str.: Straßenbahntrasse	3nocross 7687,16770 7763,16779 8144,16750
+Osloer Str.: Straßenbahntrasse	3nocross 7687,16770 7763,16779 7852,16790
 Seestr.: Straßenbahntrasse	3nocross 7417,16587 7456,16620 7606,16746
 Seestr.: Straßenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
 Seestr.: Straßenbahntrasse	3nocross 7231,16418 7295,16477 7403,16575
-Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6630,15100
+Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6626,15104
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14427,12197 14488,12188
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14020,12261
@@ -1896,7 +1896,7 @@ Schranke	BNP:3::trailer=10 -822,16535
 #: note: in Richtung Dieffenbachstr. recht eng, in die andere Richtung ist mehr Platz
 Schranke	BNP:5::trailer=10 10919,9804
 Drängelgitter, kann umfahren werden	BNP:3::trailer=10 14969,10138
-#: note: öfters mal offen? (mindestens einmal im Herbst 2012 geschlossen, am 2012-12-18 offen)
+#: note: öfters mal offen? (mindestens einmal im Herbst 2012 geschlossen, am 2012-12-18 offen, am 2013-05-08 geschlossen)
 Schwingtor	BNP:3::trailer=10 14146,12921
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schranke	BNP:3::trailer=10 8622,13042
@@ -2297,8 +2297,8 @@ Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
-#: last_checked: 2013-03-26
-#: next_check: 2013-06-01
+#: last_checked: 2013-05-07
+#: next_check: 2013-08-01
 #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig
 Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
@@ -2384,9 +2384,9 @@ Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht mögl
 #: next_check: 2014-03-02
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18866,-1674
 # 
-#: last_checked: 2013-02-14
-#: next_check: 2013-04-28
-Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8246,14184
+#: last_checked: 2013-05-08
+#: next_check: 2013-08-08
+Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8238,14181
 # 
 # REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-08-30 --- #: next_check: 2012-10-15 --- Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 # REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-05-01 --- #: next_check: 2012-07-15 --- Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
@@ -2437,11 +2437,12 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 #: note: abgeschlossener Zaun
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2013-03-25 vvv
-#: next_check: 2013-05-25 vvv
+#: last_checked: 2013-05-08 vvv
+#: next_check: 2013-08-08 vvv
 #: XXX mit den Bauarbeiten "An den Eldenaer Höfen" in strassen-orig koordinieren vvv
-Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
 An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14449,12833 14594,12800
+#: XXX dieser Abschnitt wird wahrscheinlich offiziell eine Einbahnstraße, offen Richtung Westen sein
+Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
 #: XXX ^^^
 #: next_check ^^^
 #: last_checked ^^^

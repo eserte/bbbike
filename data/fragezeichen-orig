@@ -115,7 +115,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-05-01 vvv
+#: last_checked: 2013-05-08 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -145,8 +145,8 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
-#: last_checked: 2012-09-22
-#: next_check: 2013-06-01
+#: last_checked: 2013-05-08
+#: next_check: 2013-08-08
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="14"
 #: osm_watch: way id="42732291" version="5"
@@ -155,6 +155,8 @@ Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 69
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: osm_watch: way id="5117259" version="8"
 #: osm_watch: way id="4581787" version="5"
+#: last_checked: 2013-05-08
+#: next_check: 2013-08-08
 Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258,16111 6349,16213 6450,16325 6444,16331 6629,16538
 # 
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
@@ -470,9 +472,13 @@ Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16457,16204 16
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
 #: XXX Baumaßnahme 1.16 (Realisierung nach 2011)
+#: last_checked: 2013-05-08 (keinerlei Anzeichen für Bauarbeiten zu erkennen)
+#: next_check: 2014-04-08
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
+# 
 #: osm_watch: way id="14390759" version="12"
 Wackerweg - Otisstr.: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 3803,18855 3680,18913
+# 
 #: osm_watch: way id="150937168" version="2"
 Verbindung im Zuge der RR9: Qualität?	? 26199,5643 26270,5829 26302,5932
 # 
@@ -1117,7 +1123,6 @@ Mauerweg - Schirpitzer Weg: existiert für Radfahrer eine Verbindung? Ausschilder
 S-Bhf. Hermsdorf, Unterführung am Fellbacher Platz: existiert für Radfahrer eine Verbindung? Qualität?	? 3750,23363 3593,23297
 S-Bhf. Waidmannslust, Unterführung zwischen Nimrodstr. und Am Waidmannslust: existiert für Radfahrer eine Verbindung? Qualität?	? 4581,22106 4601,22067 4660,22101 4687,22056 4744,22065
 Niederneuendorfer Allee - Pappelweg: Qualität des Waldweges?	? -2827,18639 -3058,18358
-Armenische Str. - Aroser Allee: existiert für Radfahrer eine Verbindung? Ausschilderung? Qualität? Nachts beleuchtet?	? 7147,16791 6994,16983 6952,17082
 Sendener Str. - Bernauer Str.: Qualität des Waldweges?	? 964,18321 915,18352 625,18518 560,18494
 # 
 # REMOVED (keine Einbahnstraßenregelung hier, nur die südliche Fahrbahn ist gesperrt und der Verkehr wird über die nördliche umgeleitet ohne weitere Einschränkungen) --- #: last_checked: 2012-11-09 --- #: next_check: 2012-11-10 --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121029.1330.377234.html --- #: XXX Bauarbeiten gehen bis Dezember 2012 --- Bauarbeiten in der Köpenicker Str.: wie wird die Einbahnstraßenrichtung verlaufen? Behinderungen für Radfahrer?	? 11242,11720 11155,11750 11022,11782 11060,11753 11155,11750

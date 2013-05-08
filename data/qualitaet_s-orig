@@ -307,14 +307,13 @@ Liberdastr.: Kopfsteinpflaster	Q2 12150,9545 12207,9632 12250,9691
 Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 Fuldastr.: Kopfsteinpflaster	Q2 12907,9073 12836,8980 12740,8862
 Reuterstr.: Kopfsteinpflaster	Q2 12195,8436 12216,8323
-Torfstr.: Kopfsteinpflaster	Q2 6630,15100 6739,14969 6837,14848 6849,14831
+Torfstr.: Kopfsteinpflaster	Q2 6626,15104 6739,14969 6837,14848 6849,14831
 # REMOVED (scheint mittlerweile asphaltiert zu sein) --- Ostpreußendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3497,574 3579,627 3590,644 3626,699 3647,739 3808,1016 3870,1125 3888,1221
 Alexandrinenstr.: Kopfsteinpflaster	Q2 10678,11172 10593,11120
 Bellermannstr.: Kopfsteinpflaster	Q2 9170,16324 9268,16228
 Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1 9268,16228 9307,16190 9413,16085
 Swinemünder Str.: Kopfsteinpflaster	Q2 10085,14863 10116,14799
 Swinemünder Str.: Asphalt	Q0 10116,14799 10155,14719
-#: XXX Kopfsteinpflaster oder Asphalt oder teils teils?
 Swinemünder Str.: Kopfsteinpflaster	Q2 10155,14719 10189,14649
 Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10315,14386
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9734,15579 9646,15737 9623,15777
@@ -625,9 +624,9 @@ Zillestr.: Kopfsteinpflaster	Q2 3268,11834 3117,11852
 Am Graben: Kopfsteinpflaster	Q2 -4755,7736 -4839,7791
 Imchenallee: holpriger Weg	Q1 -6879,4775 -6990,4531 -7025,4410 -7102,4246 -7195,4194 -7263,4214 -7561,4191 -7650,4222 -7714,4279
 Tegeler Weg: Kopfsteinpflaster	Q2 7464,14636 7263,14873
-Tegeler Weg: Asphalt	Q0 7263,14873 7199,14978 7187,15000 7131,15109 7085,15226 7020,15314
+Tegeler Weg: Asphalt	Q0 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
 Lynarstr.: Kopfsteinpflaster	Q2 7152,14779 7263,14873 7436,14964 7629,15078 7754,15160
-Kiautschoustr.: Kopfsteinpflaster	Q2 7199,14978 7007,14911 6853,14854 6837,14848
+Kiautschoustr.: Kopfsteinpflaster	Q2 7192,14976 7007,14911 6853,14854 6837,14848
 Samoastr.: Kopfsteinpflaster	Q2 7001,14837 7007,14911 6945,15045 6886,15156
 Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10312,12982 10371,13006
 Emser Str.: Kopfsteinpflaster	Q2 12645,7087 12766,7113 12806,7120
@@ -3087,9 +3086,9 @@ Werdauer Weg: Beton	Q0- 7073,8081 6947,8025 6774,7755
 Werdauer Weg: Asphalt	Q0 6774,7755 6691,7633
 Werdauer Weg: Beton	Q0- 6691,7633 6693,7556 6654,7465 6580,7401 6505,7381
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): Beton	Q1 12923,12043 12893,12077 12883,12118 12908,12280
-Am Pankepark: Beton	Q1 8184,14052 8290,14119
-Am Pankepark: Verbundsteinpflaster	Q1 8290,14119 8246,14184
-Am Pankepark: noch unbefestigt, Schotter	Q2- 8246,14184 8152,14130
+Am Pankepark: Beton	Q1 8184,14052 8282,14116
+Am Pankepark: Verbundsteinpflaster	Q1 8282,14116 8238,14181
+Am Pankepark: noch unbefestigt, Schotter	Q2- 8238,14181 8152,14130
 Stendaler Platz: überwiegend Asphalt	Q0 6394,14085 6489,14071
 Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: Gehwegplatten und Verbundsteinpflaster	Q0- 12869,12425 12950,12340 12985,12303
 Hinter dem Zeughaus: kleinteiliges Kopfsteinpflaster	Q1 9842,12506 9956,12523
@@ -4861,7 +4860,7 @@ Brunnenplatz: Asphalt	Q0 8481,16136 8454,16115 8411,16099 8377,16065 8366,16029 
 Tromsöer Str.: Asphalt	Q0 8197,16809 8243,16889
 Frauenfelder Weg: Kleinsteinpflaster	Q2+ 7339,17006 7441,17009 7647,17037
 (Weg am Kombibad Wedding): Asphalt	Q0 7417,16587 7298,16725 7267,16784
-Armenische Str.: Asphalt	Q0 7216,16552 7285,16638 7177,16715 7150,16760 7147,16791
+Armenische Str.: Asphalt	Q0 7216,16552 7285,16638 7177,16715 7150,16760 7144,16781 7147,16800
 Syrische Str.: Asphalt	Q0 7106,16646 7216,16552 7263,16508
 Syrische Str.: Gehwegplatten	Q1 7263,16508 7295,16477
 Corker Str.: Asphalt	Q0 6806,17014 6749,17057 6636,17147 6556,17204 6480,17251
@@ -8413,7 +8412,7 @@ Rathausstr.: Asphalt mit einigen Schäden	Q1+ 10601,12521 10584,12507 10476,12432
 (Straße zum Kraftwerksgelände): Asphalt	Q0 8478,13941 8453,13966 8388,13993
 (Weg an der Südpanke): Beton	Q0 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
 (Weg an der Südpanke - Am Pankepark): Pflasterung	Q1- 8307,14175 8323,14142
-(Weg an der Südpanke - Am Pankepark): unbefestigter Weg	Q2+ 8323,14142 8290,14119
+(Weg an der Südpanke - Am Pankepark): unbefestigter Weg	Q2+ 8323,14142 8282,14116
 Sigridstr.: Asphalt mit einigen Schäden	Q1+ 14284,14469 14159,14495 14035,14520
 #: XXX Qualität nach den Bauarbeiten? vvv
 #: last_checked: 2013-05-04 (teilweise existert eine erste Asphaltschicht) vvv
@@ -8493,6 +8492,10 @@ Franckepark: wassergebundene Decke	Q1 9339,6076 9349,6102 9376,6102
 Franckepark: Verbundsteinpflaster	Q1 9376,6102 9366,6150
 Franckepark: wassergebundene Decke	Q1 9366,6150 9367,6160 9373,6179
 Franckepark: Verbundsteinpflaster	Q1 9373,6179 9374,6189 9381,6277
+(Armenische Str. - Schwyzer Str., Schillerpark): Asphalt	Q0- 7144,16781 7131,16790 7115,16827
+(Armenische Str. - Schwyzer Str., Schillerpark): wassergebundene Decke	Q1 7115,16827 7097,16915 7094,16938
+(Armenische Str. - Schwyzer Str., Schillerpark): wassergebundene Decke	Q1 7097,16915 7064,16943 7002,17027
+(Schwyzer Str. - Aroser Allee): Verbundsteinpflaster	Q1 7002,17027 6956,17087
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -19317,6 +19320,7 @@ Druckerkehre: guter Beton	Q0 16657,1124 16669,1166 16698,1198
 #: by: ^^^
 # 
 #: by: Dominik Eckardt: vvv
+#: confirmed_by: srt
 Lüderitzstr.: Kopfsteinpflaster	Q2 6215,16340 6349,16213
 #: corrected_by: srt (Beton Q2 -> Asphalt Q0)
 Lüderitzstr.: Asphalt	Q0 6349,16213 6503,16068
@@ -21482,7 +21486,7 @@ Verlängerte Schulzendorfer Str.: mäßig bis gut befahrbarer Waldweg, je nach Witt
 #: XXX wahrscheinlich die Vorarbeiten für die Rampe zur Trautenauer Straße?
 #: last_checked: 2013-05-04
 #: next_check: 2013-07-04
-#: osm_watch: way id="22689586" version="9"
+#: osm_watch: way id="22689586" version="10"
 #: XXX ad osm_watch: Blockdammwegbrücke: Bauarbeiten, nicht mehr "paved"
 #: osm_watch: way id="35328293" version="3"
 #: XXX ad osm_watch: Treppe Blockdammwegbrücke - Trautenauer Str., zurzeit gesperrt, in Zukunft eine Rampe?
@@ -21924,7 +21928,8 @@ Ramlerstr.: asphaltiert	Q0 9309,15700 9369,15705
 Ramlerstr.: Kopfsteinpflaster	Q2 9369,15705 9474,15714 9646,15737 9844,15755
 #: corrected_by: srt (Kopfsteinpflaster -> neu asphaltiert)
 Graunstr.: Asphalt	Q0 9844,15755 9917,15613 9996,15400 10018,15211
-(Parkweg Swinemünder Str.): Kopfsteinpflaster	Q2 10189,14649 10228,14564
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
+(Arkonaplatz): Gehwegplatten und Kopfsteinpflaster	Q1- 10189,14649 10228,14564
 Lortzingstr.: Kopfsteinpflaster	Q2 10038,15418 9996,15400 9898,15354
 Lortzingstr.Gehwegplatten	Q0 9898,15354 9853,15333 9814,15312
 Lortzingstr.: Kopfsteinpflaster	Q2 9814,15312 9702,15251 9566,15188

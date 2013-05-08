@@ -46,6 +46,7 @@ Otto-Ludwig-Str.: Fuﬂg‰ngerzone	q2 4862,10881 4954,10876
 Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9474,11360
 Georgenstr.: Fuﬂg‰ngerzone	q3 9434,12669 9313,12662
 Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10298,13076 10185,12982
+Am Zwirngraben: Tische auf der Straﬂe, Fuﬂg‰nger	q4 10349,13043 10185,12982
 Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
 Pariser Platz/Brandenburger Tor: Fuﬂg‰nger	q2 8804,12280 8731,12270 8610,12254 8538,12245
 Potsdamer Platz: Fuﬂg‰nger	q3 8542,11502 8442,11555
@@ -705,7 +706,7 @@ Zum kleinen Pfuhl: Fuﬂg‰nger	q2 12162,1651 12207,1704
 Borgmannstr.: Bodenschwelle	q0 22531,5871 22513,5747
 (Katzengrabensteg - Bellevuepark): Fuﬂg‰nger	q1 22581,4932 22632,4958 22726,5332
 Katzengrabensteg: Fuﬂg‰nger	q1 22581,4932 22484,4868 22433,4887 22439,4838
-Samoastr.: Fuﬂg‰nger	q1 6886,15156 6846,15202
+Samoastr.: Fuﬂg‰nger	q1 6886,15156 6833,15215
 Nazarethkirchstr.: einige Bodenschwellen	q0 7543,16016 7441,15909 7354,15817 7198,15656
 (Landsberger Allee - Treffurter Str.): Fuﬂg‰nger	q2 18057,14549 18119,14599
 (Storkower Str. - Schneeglˆckchenstr.): Fuﬂg‰nger, Bordsteine	q2 13964,13830 14037,13842
@@ -1106,7 +1107,7 @@ Eyke-von-Repkow-Platz: einige Fuﬂg‰nger, Bordsteine	q3 5556,12536 5531,12501
 (Alexandrinenstr. - Wassertorstr.): Fuﬂg‰nger	q1 10293,10645 10401,10601 10431,10606 10492,10582
 (Weg an der S¸dpanke): einige Fuﬂg‰nger	q1 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
 (Weg an der S¸dpanke - Am Pankepark): einige Fuﬂg‰nger, Rampe	q2 8307,14175 8323,14142
-(Weg an der S¸dpanke - Am Pankepark): einige Fuﬂg‰nger	q1 8323,14142 8290,14119
+(Weg an der S¸dpanke - Am Pankepark): einige Fuﬂg‰nger	q1 8323,14142 8282,14116
 (Rhinstr. - Am M¸hlenberg): einige Fuﬂg‰nger, Rampe	q1 18220,11710 18242,11793 18258,11827
 (Kolonie Sanssouci): einige Fuﬂg‰nger	q1 16488,10381 16297,10636 16246,10641
 M¸ggelstr., Hausdurchfahrt: einige Fuﬂg‰nger	q1 14837,11706 14856,11740
@@ -1128,6 +1129,10 @@ Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (entlang der Stadtbahn): Fuﬂg‰nger	q1 10117,12966 9930,12947
 (Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8483,10900 8399,10923
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
+(Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
+(Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7097,16915 7064,16943
+(Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger, Bordstein	q2 7064,16943 7002,17027
+(Schwyzer Str. - Aroser Allee): Fuﬂg‰nger, schmal	q1 7002,17027 6956,17087
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1433,7 +1438,6 @@ S¸dpark): Fuﬂg‰nger	q2 -4070,12006 -3990,11912 -3890,11775
 S¸dpark): Fuﬂg‰nger	q2 -3989,12223 -3968,12138 -3883,12053 -3786,11913
 (S¸dpark): Fuﬂg‰nger	q2 -3968,12138 -3985,12056
 (Rosenstr. - Karl-Liebknecht-Str.): Fuﬂg‰nger	q2 10476,12829 10525,12789
-Am Zwirngraben: Tische auf der Straﬂe, Fuﬂg‰nger	q4 10349,13043 10185,12982
 Panoramastr.: Fuﬂg‰nger	q2 10793,12906 10734,12850
 Spandauer Str. [Gehweg]: Touristen	q4 10584,12507 10626,12455 10665,12413 10723,12346
 Poststr.: Touristen	q3 10476,12432 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10659,12259
