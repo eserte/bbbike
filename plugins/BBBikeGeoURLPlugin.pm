@@ -71,7 +71,7 @@ EOF
 
     $b->configure(-text => "Sites near $py/$px",
 		  -command => sub {
-		      start_browser("http://geourl.org//near?lat=$py&long=$px");
+		      start_browser("http://geourl.org/near?lat=$py&long=$px");
 		  });
 }
 
