@@ -143,6 +143,7 @@ sub show_all_urls_menu {
 sub start_browser {
     my($url) = @_;
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
     WWWBrowser::start_browser($url);
 }
 
