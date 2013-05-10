@@ -287,7 +287,7 @@ sub do_yahoo_search {
     for my $query_def (@queries) {
 	my($query, $street_citypart) = @{$query_def}{qw(query street_citypart)};
 	if ($DEBUG) {
-	    use Devel::Peek; Dump $query;
+	    require Devel::Peek; Devel::Peek::Dump($query);
 	}
 	my @raw_results = Yahoo::Search->Results(Doc => $query,
 						 AppId => "BBBike_LuiseBerlin_" . $BBBike::VERSION,
@@ -346,7 +346,7 @@ sub do_google_search {
     for my $query_def (@queries) {
 	my($query, $street_citypart) = @{$query_def}{qw(query street_citypart)};
 	if ($DEBUG) {
-	    use Devel::Peek; Dump $query;
+	    require Devel::Peek; Devel::Peek::Dump($query);
 	}
 	## Usage of encode should not be necessary here!
 	$query = encode("utf-8", $query) if $] == 5.008 || $] >= 5.010; # why only these perl versions?
