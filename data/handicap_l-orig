@@ -9,12 +9,12 @@
 #: last_checked: 2012-12-30 vvv
 #: XXX changed (q4 -> q2), because of http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf
 Am Alten Markt: Bauarbeiten (Wiederaufbau des Schlosses)	q2::inwork -12643,-1694 -12624,-1598 -12619,-1549
-Am Alten Markt: Bauarbeiten (Wiederaufbau des Schlosses)	q2::inwork -12619,-1549 -12677,-1536 -12780,-1545
+Am Alten Markt: Bauarbeiten (Wiederaufbau des Schlosses)	q2::inwork -12619,-1549 -12677,-1536 -12780,-1544
 #: last_checked ^^^
 # 
 #: temporary ^^^
 ######################################################################
-Brandenburger Str.: Fuﬂg‰ngerzone	q4 -12883,-976 -13005,-1002 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
+Brandenburger Str.: Fuﬂg‰ngerzone	q4 -12883,-976 -12999,-1000 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12139,1325
 #: note: Seit 1. Januar 2008 keine Schiebestrecke mehr:
 Neuer Garten: Fuﬂg‰nger	q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12141,1357
@@ -24,7 +24,7 @@ Neuer Garten: Schiebestrecke	q3 -11615,853 -11510,810
 #: note: Seit 1. Januar 2008 keine Schiebestrecke mehr:
 Neuer Garten: Fuﬂg‰nger	q2 -11510,810 -11412,784 -11392,762
 Neuer Garten: Radfahren nicht erlaubt	q3 -12332,585 -12276,554 -12115,409
-(Uferweg): Fuﬂg‰nger	q1 -12204,1869 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
+(Uferweg): Fuﬂg‰nger	q1 -12200,1859 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
 Am Waldessaum: Fuﬂg‰nger, enger Weg	q2 -12825,1284 -12709,1106
 Heiliger See, Ostufer: Schiebestrecke	q3 -11650,590 -11603,721 -11615,853
 Uferpromenade Caputh: Fuﬂg‰nger	q3 -17643,-7028 -17703,-7228 -18009,-7528
@@ -168,3 +168,6 @@ Schwalbenweg: enge Straﬂe	q1 19650,-732 19619,-746 19550,-775 19366,-845 19309,-
 Seestr.: Fuﬂg‰nger auf der Fahrbahn	q1 55729,-11868 55541,-11861 55469,-11859 55428,-11860 55196,-11909 54873,-11879 54817,-11895 54776,-11895 54732,-11898 54681,-11900 54643,-11904 54476,-11990
 #: by: Joachim (...traenkle...):
 Alt Drewitz: schmaler Verbindungsweg f¸r Fuﬂg‰nger	q4 -8189,-5159 -8195,-5176
+Br¸cke: kurze Rampe auf der Nordseite	q2 -13001,-1329 -13001,-1349
+(Uferweg auf Hermannswerder - An der F‰hrwiese): eng	q2 -14247,-2568 -14234,-2587
+(Kottmeierstr. - Am Wald): enger Pfad	q2 -11423,-3638 -11414,-3657 -11414,-3703

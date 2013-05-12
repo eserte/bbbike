@@ -412,8 +412,11 @@
 46.8	X -1249,2590
 40.2	X -512,2883
 42.4	X -4001,2858
-# guess...
-35	? -8468,2152
+# REMOVED --- # guess... --- 35	? -8468,2152
+# by 1:5k
+# XXX rough guess!
+62	X -7640,1837
+36.4	X -8468,2152
 # XXX steht erhöht, abseits der Straße --- # Müggelberg (Aussichtsturm) --- 92.3	X 25676,1508
 # Rund-um-Berlin-Karten (ungefähre Angaben, weil z.B. die Position nicht
 # 100% stimmt, mit ? gekennzeichnet; geschätzte Höhen mit ??? gekennzeichnet)
@@ -1494,9 +1497,9 @@
 46.0	X 3067,9592
 43.5	X 3202,9583
 44.6	X 2056,9446
-43.9	X 3295,8519
+43.9	X 3295,8524
 # ca.:
-51.7	X 3357,8506
+51.7	X 3358,8511
 45.8	X 2702,10006
 41.9	X 2718,10359
 34.6	X 3093,10594
@@ -2228,8 +2231,14 @@
 58.7	X 21602,15908
 # note: Barometer + neighbor
 47.5	X 9117,3898
+# note: Barometer + neighbor
+42.7	X 3848,8689
+# note: Barometer + neighbor
+51.7	X 3738,8599
 ######################################################################
 # manuell aus 1:5k bw (resp. bbpl fk):
+42.7	X 3964,8559
+44.8	X 3701,8849
 47.6	X 9308,4407
 47.0	X 9065,3693
 43.1	X 9021,3878

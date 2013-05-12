@@ -764,6 +764,8 @@ Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
 Am Kleinen Platz	1 -7248,14826 -7292,14811
 Ella-Trebe-Str.	1s 7938,13302 7938,13150
+Waldmeisterstr.	1 1736,7557 1880,7558 1930,7594
+Waldmeisterstr.	1 1956,7453 1878,7499 1722,7497
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
@@ -778,7 +780,7 @@ Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12839,-1342 -12718,-1327
 Am Kanal	1 -12718,-1327 -12833,-1365
 Yorckstr.	1 -12833,-1365 -12976,-1356 -13001,-1349 -13208,-1315
-Yorckstr.	1 -13206,-1294 -13001,-1329 -12974,-1336 -12839,-1342
+Yorckstr.	1 -13206,-1294 -13001,-1329 -12839,-1342
 Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraße	1 -12542,-1305 -12657,-1338
 Mauerstr.	1 -13433,-831 -13519,-625
@@ -805,9 +807,9 @@ Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12756,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
-Straßenbahntrasse	3nocross::ignrte -12780,-1545 -12793,-1498 -12833,-1365
-Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12780,-1545 -12793,-1498 -12870,-1493
-Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12793,-1498 -12833,-1365
+Straßenbahntrasse	3nocross::ignrte -12780,-1544 -12794,-1497 -12833,-1365
+Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12780,-1544 -12794,-1497 -12870,-1493
+Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12794,-1497 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 Prof.-Dr.-Helmert-Str.: Schranke	BNP:3:-93 -7969,-1659
@@ -820,6 +822,13 @@ Hechtsprung (Groß Glienicke)	1 -9703,6278 -9860,6288 -9962,6295 -10045,6292
 (Potsdamer Chaussee - Dorfstr.)	1 -9547,6865 -9565,6954 -9616,6980
 Tuchmacherstr.	1 -10463,-1343 -10610,-1596 -10636,-1667
 Ribbeckweg	1 -9720,6589 -9928,6599 -9932,6558
+Templiner Str.	1 -13062,-2901 -12915,-2922
+An der Vorderkappe	1 -13321,-2801 -13304,-2779 -13150,-2777 -13123,-2797
+An der Vorderkappe	1 -13123,-2797 -13209,-2829 -13257,-2821 -13321,-2801
+Ulrich-von-Hutten-Str.	1 -13456,-3099 -13481,-2956
+Johannes-R.-Becher-Str.	1 -10134,-4981 -10288,-4749
+Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
+Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
 Freilichtbühne Schwedt	2 69562,73280 69634,73330
 Bahnhofstr.	1s 26103,-11861 26300,-11864
 Bernau - Tempelfelde	1 23179,31047 23103,30923
@@ -1399,7 +1408,7 @@ Volkspark Wilmersdorf -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreife
 Volkspark Wilmersdorf -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5533,8478 5465,8511 5427,8412
 Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5502,8599 5465,8511 5533,8478
 Am Volkspark -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5320,8456 5427,8412 5465,8511
-Bundesallee -> Am Volkspark: Absperrung auf dem Mittelstreifen	3::igndisp 5465,8511 5427,8412 5669,8207
+Bundesallee -> Am Volkspark: Absperrung auf dem Mittelstreifen	3::igndisp 5465,8511 5427,8412 5598,8267
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9207,5185 9192,5272 9182,5332 9171,5397 9147,5534
 Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9192,5272 9182,5332
 Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9182,5332 9171,5397

@@ -46,10 +46,10 @@ Tiergarten: rechts des Neuen Sees halten	CP2; 5900,11913 5858,11863
 Tiergarten: links des Neuen Sees halten	CP; 5900,11913 5907,11874 5933,11775
 Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die Straßenseite wechseln	PI; 6825,11486 6851,11346 7103,11247
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4783,8557 4784,8508 4960,8440
-Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	CP; 5320,8456 5427,8412 5669,8207
-Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	CP; 5669,8207 5427,8412 5320,8456
+Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	CP; 5320,8456 5427,8412 5598,8267
+Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	CP; 5598,8267 5427,8412 5320,8456
 Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5399,8344 5427,8412 5320,8456
-Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	CP; 5669,8207 5427,8412 5399,8344
+Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	CP; 5598,8267 5427,8412 5399,8344
 Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5458,10443 5529,10453 5578,10529 5636,10626
 weiter links auf Uferweg	CP; 6334,14756 5972,14820 5873,14847
 An der Wuhlheide - Wuhlewanderweg: bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21569,5730 21596,5693 21602,5685 21744,5804
@@ -96,7 +96,7 @@ Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4971,6345 4985,6370
 Lützowplatz - Wichmannstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6681,10959
 Lützowplatz - Schillstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6740,10755
 Ausschilderung: Alter Markt	CP2; -11884,-936 -11910,-945
-(Am Stadion Wilmersdorf): Der Ausschilderung 'Sommerbad' folgen (durchs Tor)	CP2; 3295,8519 3357,8506
+(Am Stadion Wilmersdorf): Der Ausschilderung 'Sommerbad' folgen (durchs Tor)	CP2; 3295,8524 3358,8511
 (Weg in d. Kolonie Norderney): durchs Tor	CP2; 3596,6828 3607,6952
 Theaterufer: zwischen Wasserbecken und Debis-Gebäude	CP2; 8289,11205 8261,11015
 Theaterufer: zwischen Straßentunnel und Debis-Gebäude	CP2; 8261,11015 8289,11205
@@ -120,7 +120,7 @@ Fritz-Schiff-Str. beginnt am Ende der Parallelstraße zur Karl-Marx-Allee	CP2; 13
 Siegertweg - Manfred-von-Richthofen-Str.: Überqueren der Straße am Kleineweg (rechts) oder am Thuyring (links)	CP; 9042,7462 9067,7490 8947,7601
 Manfred-von-Richthofen-Str. - Siegertweg: bereits am Kleineweg links abbiegen	PI; 9097,7469 9067,7490 9042,7462
 (Auerbachstr. - Koenigsallee): nicht den Weg direkt am Bahndamm, sondern Weg links daneben nehmen	CP2; 490,8716 445,8429
-Den linken Weg wählen, der direkt entlang des Geländes des Jugendfreizeitheims entlang geht	CP; 1449,7519 1405,7471 1149,7205
+Den linken Weg wählen, der direkt entlang des Geländes des Jugendfreizeitheims entlang geht	CP; 1449,7519 1405,7471 1229,7254 1149,7205
 Am Ende des Sees scharf links in den schmalen Waldweg hinunter	CP; 1696,6520 1627,6553 1612,6534
 Am befestigten Weg (Kreuzung) rechts	CP; 1627,6553 1612,6534 1512,6553
 An der Kreuzung ca. 50m vor der Jugenerholungsstätte links	CP; 1558,6729 1512,6553 1612,6534
@@ -291,7 +291,7 @@ Moosrosenstr. - Gradestr.: auf dem linken Gehweg bis Höhe Busbahnhof fahren und 
 Rudower Chaussee - Karl-Otto-Reinsch-Str.: bereits an der Ampel Am Studio die Straßenseite wechseln	PI; 19581,3184 19603,3207 19524,3286
 Gustav-Adolf-Str. - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12182,16322 12097,16263 12090,16199
 Caligariplatz - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12121,16317 12097,16263 12090,16199
-Am Alten Markt: Richtung TFH/Friedrich-Ebert-Str. abbiegen	CP; -12624,-1598 -12619,-1549 -12677,-1536 -12780,-1545
+Am Alten Markt: Richtung TFH/Friedrich-Ebert-Str. abbiegen	CP; -12624,-1598 -12619,-1549 -12677,-1536 -12780,-1544
 Richtung Bergmannstr.	CP2; 10564,9292 10547,9233
 Ausgeschildert als "Zur Straße 545"	CP2; 30357,3555 30378,3501
 Virchowstr. - Landsberger Allee: auf dem linken Geh-/Radweg bis zur Ampel fahren	CP; 12925,13373 12979,13280 13078,13330
@@ -376,3 +376,4 @@ Richtung Blockdammwegbrücke fahren	PI; 17729,8850 17754,8863 17760,8853
 Podbielskiallee - Pacelliallee: Fußgängerampel zum Linksabbiegen benutzen	CP; 2953,6743 2723,7029 2714,6857
 Armenische Str.: vor dem Sackgassenhammer links halten	CP; 7150,16760 7144,16781 7131,16790
 Schillerpark: im Park halblinks halten	CP; 7115,16827 7097,16915 7064,16943
+Uferweg auf Hermannswerder: vor der Leipziger Str. den rechten Weg benutzen	CP2; -13177,-2722 -13003,-2754

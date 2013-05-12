@@ -11199,7 +11199,7 @@ EOF
        text  => 'Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Unter Umständen Umfahrung über Alten Markt notwendig. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -12758,-1654 -12772,-1577 -12780,-1545
+userdel	2::inwork -12758,-1654 -12772,-1577 -12780,-1544
 EOF
      },
      { from  => 1211228399, # 2008-05-19 22:19
@@ -21058,7 +21058,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.potsdam.de/cms/beitrag/10098485/1463075
-	q3::inwork; -12881,-1092 -12984,-1110 -13187,-1150
+	q3::inwork; -12881,-1092 -12961,-1105 -12973,-1106 -13187,-1150
 EOF
      },
      { from  => 1360350803, # 2013-02-08 20:13

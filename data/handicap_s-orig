@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-05-08 vvv
+#: last_checked: 2013-05-12 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434
@@ -272,7 +272,7 @@ Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911
 #: XXX evtl. nach den Bauarbeiten asphaltiert oder zumindest besser gepflastert/gewalzt? Vielleicht wird auch der südliche Halbkreis neu gemacht?
 #: XXX nach den Bauarbeiten den normalen Eintrag wieder aktivieren
 #: by: http://unsergoerli.de/wegebau-am-rondell-ab-november/ (Asphaltierung!)
-#: last_checked: 2013-04-29
+#: last_checked: 2013-05-09
 Görlitzer Park, Rondell: Bauarbeiten, Fußgänger	q4::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 #Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
@@ -529,14 +529,15 @@ Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13448,12340
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17249,10702 17247,10755 17261,10827 17258,10870
 (Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Fußgänger	q1 17261,10827 17228,10860
-Verl. Pücklerstr.: Fußgänger, Hundeauslaufgebiet	q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 306,6582 218,6571
+Verl. Pücklerstr.: Fußgänger, Hundeauslaufgebiet	q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6592 640,6576 546,6583 369,6594 340,6598 218,6571
 Weimarer Str.: Fußgänger	q1 4101,11347 4101,11233
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger	q1 20222,15519 20181,15658 20150,15678
 Rosemeyerweg: Fußgänger	q1 -3758,2678 -3852,2730 -3956,2787 -4001,2858
 Moorlake - Krughorn: Fußgänger, aber breite Straße	q0 -9606,1389 -9734,1394 -9746,1408 -9770,1482 -9818,1530 -9900,1573 -9975,1564 -10044,1567 -10078,1551
 Krughorn - Volkspark Klein-Glienicke: Fußgänger, besonders an schönen Tagen	q1 -10078,1551 -10163,1288 -10190,1185 -10198,1173 -10273,1088 -10430,848 -10512,683 -10573,564 -10593,476
-Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9606,1389 -9647,1462 -9673,1519 -9663,1622 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9393,1831 -9108,1798 -9016,1782 -8934,1801 -8861,1855 -8747,2023 -8636,2102 -8591,2144 -8540,2209 -8468,2152
+Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9606,1389 -9647,1462 -9673,1519 -9663,1622 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9393,1831 -9108,1798 -9016,1782 -8934,1801 -8861,1855 -8747,2023 -8636,2102 -8591,2144
+am Wirtshaus zur Pfaueninsel: Fußgänger, besonders an schönen Tagen	q2 -8591,2144 -8540,2209 -8468,2152
 Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7744,7538 7710,7547 7750,7528
@@ -1913,8 +1914,8 @@ Münstersche Str.: Fußgänger	q2 3763,9642 3699,9613
 (Hoffmannstr. - Puschkinallee): Fußgänger	q1 14076,10011 13995,9834
 (Hoffmannstr. - Uferweg an den Treptowers): Fußgänger	q1 14076,10011 14118,10178
 August-Lindemann-Str.: Fußgänger	q3 14355,12752 14360,12792
-(Jagdschloß Grunewald - Umgehungschaussee): Fußgänger, Hundeauslaufgebiet	q2 905,6631 1149,7205
-(Uferweg am Grunewaldsee): Fußgänger, Hundeauslaufgebiet	q2 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 306,6582
+(Jagdschloß Grunewald - Umgehungschaussee): Fußgänger, Hundeauslaufgebiet	q2 880,6645 884,6701 1024,6898 1066,7093 1149,7205
+(Uferweg am Grunewaldsee): Fußgänger, Hundeauslaufgebiet	q2 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 340,6598
 Umgehungschaussee: Fußgänger, Hundeauslaufgebiet	q2 1149,7205 1251,7429
 Umgehungschaussee: Fußgänger, Hundeauslaufgebiet	q1 1251,7429 1263,7450 1252,7741 1215,7797 1043,7929 860,8052 834,8067
 (Auerbachstr. - Koenigsallee): Fußgänger, schmal	q2 490,8716 445,8429 614,8006 761,7922

@@ -217,7 +217,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2013-04-29
+#: last_checked: 2013-05-12
 #: next_check: 2013-07-28
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -391,7 +391,8 @@ Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1 -8449,3907 -8401,3894 -830
 Sakrower Kirchweg: Beton	Q1+ -8255,3946 -8162,4025
 Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1 -8162,4025 -7990,4086 -7792,4249 -7714,4279 -7636,4346 -7595,4374 -7419,4497 -7381,4517 -7257,4581 -7152,4645 -7134,4681 -7131,4742 -7080,4896
 Kalischer Str.: gutes Kopfsteinpflaster	Q1 3964,8559 3970,8582 3979,8772 4006,8967
-Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster, (enge) Gehwege sind für Radfahrer freigegeben	Q2 4456,8598 4320,8596
+Mannheimer Str. (Wilmersdorf): Asphalt	Q0 4456,8598 4320,8596
+#: XXX stimmt das noch, oder ist hier mittlerweile auch asphaltiert?
 Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster	Q2 4456,8703 4456,8598
 Thulestr.: Asphalt	Q0 11635,16616 11534,16614 11441,16612
 Thulestr.: Kopfsteinpflaster	Q2 11441,16612 11357,16610 11278,16609 11021,16605
@@ -708,7 +709,10 @@ Schleiermacherstr.: Kopfsteinpflaster	Q2 10001,9234 10004,9268 10032,9456 10067,
 Bergmannstr.: Kopfsteinpflaster	Q2 9973,9232 10001,9234
 Franz-Künstler-Str.: Kopfsteinpflaster	Q2 9995,10637 10026,10635
 Hanauer Str.: Kopfsteinpflaster, teilweise recht schlecht	Q2- 4430,7896 4283,8016
-Verl. Pücklerstr.: Waldweg	Q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 306,6582 218,6571
+Verl. Pücklerstr.: Waldweg	Q1- 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645
+Jagdschloss Grunewald - westlicher Hüttenweg: Waldweg	Q1- 880,6645 832,6607 778,6603 698,6592
+Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster, daneben wassergebundene Decke	Q1 698,6592 640,6576 546,6583 369,6594 340,6598
+Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218,6571
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5419,897 -5488,833 -5616,780 -6009,559
 Stahnsdorfer Damm: Kopfsteinpflaster	Q2 -4803,1240 -4995,1075
 #: note: Ina (baum) meint: mit Rennrad nicht empfehlenswert, mit Mountainbike absolut machbar
@@ -1005,6 +1009,9 @@ Stallschreiberstr.: Kopfsteinpflaster, OK	Q1 10620,11244 10489,11405
 Am Urban-Krankenhaus: Kopfsteinpflaster, OK	Q1 10619,9914 10695,9922
 Dieffenbachstr.: Kopfsteinpflaster	Q2 11089,9751 11141,9732
 Am Volkspark: mäßiges Kopfsteinpflaster mit großen Ritzen	Q2 5745,8194 5718,8197 5669,8207
+#: XXX genaues Ende des Kopfsteinpflasterabschnitts ermitteln
+#: XXX evtl. prüfen, ob die pflasterfreie Umfahrung durch den Volkspark mit aufgenommen werden sollte
+Am Volkspark: Kopfsteinpflaster	Q2 5598,8267 5669,8207
 Am Volkspark: Parkweg	Q1 5745,8194 5925,8219
 Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11209,12430 11156,12581 11057,12715
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
@@ -1224,7 +1231,7 @@ Fröbelstr.: guter Asphalt	Q0 11776,15060 11870,15004 11968,14950 12089,14891
 Ella-Kay-Str.: guter Asphalt	Q0 12089,14891 11990,14714
 Ella-Kay-Str.: Beton	Q0 12234,15151 12215,15115 12089,14891
 #: by ^^^^^^^^^^^^^^^
-Landecker Str.: Kopfsteinpflaster	Q2 3140,8525 2966,8586
+Landecker Str.: Kopfsteinpflaster	Q2 3137,8538 2966,8586
 Kufsteiner Str.: glatter Parkweg	Q1 5919,8417 5925,8219
 Rolandufer: Asphalt	Q0 11278,12185 11155,12184
 Rolandufer: Kopfsteinpflaster, Ausweichen auf Uferweg möglich, dort unbefestigter Weg	Q2 11155,12184 10945,12150
@@ -3082,6 +3089,7 @@ Goethepark: Asphalt	Q1 3467,11373 3594,11372
 Am Güterbahnhof Halensee: Kopfsteinpflaster	Q2 2559,9879 2585,9875 2767,9670 3040,9420
 (entlang der Stadtautobahn): Gehwegplatten	Q1+ 3379,8969 3489,8839 3510,8814
 (entlang der Autobahn, zum hohen Bogen): teilweise unebener Asphalt	Q1+ 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
+(am Stadion Wilmersdorf): teilweise unebener Asphalt	Q1 3597,8457 3550,8453 3517,8464 3455,8454 3358,8511 3295,8524
 Werdauer Weg: Beton	Q0- 7073,8081 6947,8025 6774,7755
 Werdauer Weg: Asphalt	Q0 6774,7755 6691,7633
 Werdauer Weg: Beton	Q0- 6691,7633 6693,7556 6654,7465 6580,7401 6505,7381
@@ -8496,6 +8504,7 @@ Franckepark: Verbundsteinpflaster	Q1 9373,6179 9374,6189 9381,6277
 (Armenische Str. - Schwyzer Str., Schillerpark): wassergebundene Decke	Q1 7115,16827 7097,16915 7094,16938
 (Armenische Str. - Schwyzer Str., Schillerpark): wassergebundene Decke	Q1 7097,16915 7064,16943 7002,17027
 (Schwyzer Str. - Aroser Allee): Verbundsteinpflaster	Q1 7002,17027 6956,17087
+(zum Fähranleger Krughorn): Asphalt/Kopfsteinpflaster/unbefestigt	Q2 -10044,1567 -10055,1628
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -21404,7 +21413,7 @@ Tuxer Steig: gute Betonplatten	Q0 5878,729 5853,729 5742,671
 #: note: "kurz vor Quermatenweg 3-4 Entwässerungsrinnen (langsam fahren). Immer wieder Gefälle."
 (Argentinische Allee - Quermatenweg): geflickter Asphalt oder wassergebundene Decke (18km/h)	Q2 -62,4564 -232,4753 -382,4870 -469,4995
 #: note "gut zu fahren, eben"
-(Hüttenweg - Jagdschloß Grunewald): breiter, fester Waldweg	Q1 869,6085 866,6328 880,6645
+(südlicher Hüttenweg - Jagdschloss Grunewald): breiter, fester Waldweg	Q1 869,6085 866,6328 880,6645
 #: by: ^^^
 # 
 #: by: sterntaler (123):
@@ -21751,8 +21760,9 @@ August-Lindemann-Str.: Gehwegplatten, Kopfsteinpflaster	Q1 14355,12752 14360,127
 August-Lindemann-Str.: Asphalt	Q0 14360,12792 14376,12849 14405,12953 14414,12979 14431,13028 14450,13081 14469,13137 14486,13187
 Zellestr.: Kopfsteinpflaster	Q2 14133,12482 14188,12664
 Umgehungschaussee: fester breiter Waldweg	Q1 1149,7205 1251,7429 1263,7450 1252,7741 1215,7797 1043,7929 860,8052 834,8067
-(Jagdschloß Grunewald - Umgehungschaussee): fester breiter Waldweg	Q1 905,6631 1149,7205
-(Uferweg am Grunewaldsee): überwiegend fester Waldweg, einige sandige Stellen	Q1 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 306,6582
+#: corrected_by: srt (Q1 -> Q1-)
+(Jagdschloss Grunewald - Umgehungschaussee): fester breiter Waldweg	Q1- 880,6645 884,6701 1024,6898 1066,7093 1149,7205
+(Uferweg am Grunewaldsee): überwiegend fester Waldweg, einige sandige Stellen	Q1 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 340,6598
 (Grunewaldsee - Krumme Lanke): Waldweg	Q2 218,6571 204,6441 115,6292 48,6202 -44,6114 -71,6021 -63,5955 58,5794 70,5722 63,5600 -225,5332 -579,5320
 (Auerbachstr. - Koenigsallee): Kopfsteinpflaster	Q2 490,8716 445,8429
 (Auerbachstr. - Koenigsallee): fester Waldweg	Q1 445,8429 614,8006 761,7922
@@ -21790,8 +21800,10 @@ Fohlenweg: Asphalt	Q0 1845,6800 1841,6566 1819,6500
 Käuzchensteig: Gehwegplatten	Q0 1918,6456 1895,6470
 Käuzchensteig: Asphalt	Q0 1895,6470 1819,6500 1696,6520
 Bussardsteig: Asphalt	Q0 1841,6566 1742,6613
-Eichhörnchensteig: Asphalt	Q1 1728,7525 1449,7519 1405,7471
-(Verlängerter Eichhörnchensteig): fester Waldweg	Q1 1405,7471 1149,7205
+#: corrected_by: srt (Q1 -> Q1+)
+Eichhörnchensteig: Asphalt	Q1+ 1728,7525 1449,7519 1405,7471
+#: corrected_by: srt (Q1 -> Q2+)
+(Verlängerter Eichhörnchensteig): fester Waldweg, überwiegend mit Schottersteinen	Q2+ 1405,7471 1229,7254 1149,7205
 (Eichhörnchensteig - Umgehungschaussee): Waldweg	Q2 1405,7471 1319,7444 1251,7429
 (Zufahrt Pücklerstr.): fester Waldweg	Q1 1558,6729 1512,6553 1493,6518
 (Käuzchensteig - Pücklerstr.): Waldweg	Q2 1696,6520 1627,6553 1612,6534 1512,6553
