@@ -1078,6 +1078,28 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo -10837,-4398
 	culdesac_pseudo -10824,-4434
 	culdesac_pseudo -10870,-2729
+	culdesac -13558,88
+	culdesac -15352,431
+	culdesac_pseudo -15380,689
+	culdesac -15050,268
+	culdesac -15442,159
+	culdesac_pseudo -15085,91
+	culdesac -15309,-36
+	culdesac -16120,1607
+	culdesac -16502,1650
+	culdesac -13989,545
+	culdesac_pseudo -14732,528
+	culdesac -13707,506
+	culdesac -13899,388
+	culdesac_pseudo -15553,-11
+	culdesac_pseudo -15380,689
+	culdesac -10334,-1565
+	culdesac -9792,-1525
+	culdesac_pseudo -8758,-1346
+	culdesac_pseudo -8786,-1376
+	culdesac_pseudo -9894,-896
+	culdesac_pseudo -9858,-862
+	culdesac_pseudo -9767,-619
 #: section ^^^
 ######################################################################
 # busroute
@@ -1700,3 +1722,7 @@ Wilhelm-Kabus-Str. - Südkreuz: Privatstraße der DB	CP2; 7713,8001 7837,7899
 Alt-Lankwitz: nur für Anlieger	CS 7407,3473 7419,3500 7249,3598 7012,3743
 Dennewitzplatz: über Parkplatz fahren	CP; 7906,10098 7813,10112 7866,9918
 Lentzeallee [Stichstraße]: Privatstraße	CS 3165,6939 3190,7047
+Fliederweg: Privatstraße	CS -14731,644 -14769,582 -14776,560 -14732,528
+(Wollestr. - Mühlenstr.): Privatstraße	CS -10648,-1130 -10691,-1097 -10730,-1103 -10787,-1162 -10790,-1178
+An der Alten Brauerei: Privatstraße	CS -10925,-1705 -10970,-1670 -11014,-1643 -10994,-1617 -10953,-1645 -10970,-1670
+(Zum Exerzierhaus - Fritz-von-der-Lancken-Str.): Hausdurchfahrt	CS -13044,1991 -13044,1931

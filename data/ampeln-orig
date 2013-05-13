@@ -2467,9 +2467,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -10559,-1901
 	X -8997,-3762
 	X -8500,-2856
-	X -14034,-571
+	X -14023,-564
 	X -14115,-1678
 	X -14279,-1820
+#: XXX_prog: Ampelanlage umfasst auch die Kreuzung Schiffbauergasse
 	X -11877,-478
 	X -12571,-581
 	X -12317,-1212
@@ -2481,7 +2482,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -15276,-2868
 	X -15669,-3311
 	X -15868,-458
-	X -15508,785
+	X -15501,795
 	X -14859,421
 	X -13091,-8
 	X -13111,-136
@@ -2527,10 +2528,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -9462,-2540
 	X -9734,-1896
 	X -9735,-1845
-	X -16023,1042
+	X -16026,1044
 	X -10281,-2690
 	X -7351,-3685
-	F -16766,1399
+	F -16763,1402
 	F -16897,1518
 	F -8482,-1553
 	F -10090,-2334
@@ -2548,7 +2549,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -13137,-278
 	F -13811,182
 	F -14485,-1998
-	F -15158,589
+	F -15155,592
 	F -12515,-889
 	F -13556,-1140
 	F -9872,-4694
@@ -2567,6 +2568,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: ^^^
 	X -12358,-2278
 	F -10069,-4508
+	F -12432,-226
+#: XXX_prog: Ampelanlage gilt für die gesamte Brücke, auf der anderen Seite ist auch eine
+	X -9942,21
 ################################################################################
 #: note: Ampeln elsewhere vvv
 	B 25740,34997

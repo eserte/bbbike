@@ -1051,12 +1051,14 @@ Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 #
 # Potsdam
 # 
+(Wollestr. - Mühlenstr.)	1 -10790,-1178 -10787,-1162 -10730,-1103 -10691,-1097 -10648,-1130
+Wollestr.	1s:q3 -10717,-1227 -10984,-1574
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12302,718
 Am Neuen Garten	1 -12332,585 -12582,127
 # REMOVED (geänderte Straßenführung, östliche Fahrbahn ist in beide Richtungen befahrbar) --- #: XXX_outdoor: überprüfen! Können Radfahrer vielleicht die linke Straßenseite nutzen? --- Humboldtring/Hans-Marchwitza-Ring: Hochstraße	3nocross -11399,-1339 -11461,-1424 -11540,-1543
 #: by: Christoph Ewert:
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
-Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14034,-571
+Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14023,-564
 Schillerstr.	1 -14236,-2125 -14252,-1978
 Henning-von-Tresckow-Str.	1 -13180,-1627 -12946,-1659
 Am Lustgartenwall: Ministerien	2 -13281,-1796 -12948,-1863
@@ -1227,7 +1229,7 @@ Seestr. (Potsdam)	1s -11581,559 -11584,452
 Tizianstr. (Potsdam)	1s -11424,542 -11480,621 -11581,559
 Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
 #: note: Umgehung ist offiziell möglich, glaube ich
-Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -12108,-291 -12265,-418
+Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12054,-274 -12123,-294 -12265,-418
 Stephanstr.	1s 6523,4491 6360,4504
 Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
 #: by: Juliane Bölker:
@@ -1876,6 +1878,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter (lichte Breite 80cm)	BNP:5::trailer=no -9809,-608
+enges Drängelgitter	BNP:5::trailer=no -14725,525
 Drängelgitter	BNP:3::trailer=10 2157,10020
 Drängelgitter an der Straßenbahntrasse	BNP:6::trailer=10 16665,14420
 Schranke (lichte Breite 100cm)	BNP:3::trailer=10 17459,5634
@@ -2288,6 +2292,9 @@ Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/a6add3f2/NeueRadfuehrungen.pdf
 #: next_check: 2014-06-01
 An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-1339 -11235,-1465 -11137,-1680 -11089,-1730 -10973,-1764
+#: last_checked: 2013-05-10
+#: next_check: 2013-08-10
+Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf vvv
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf vvv

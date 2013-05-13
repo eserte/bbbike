@@ -1865,8 +1865,8 @@ EOF
        text  => 'B 273; (Potsdamer Str.); OD Potsdam, OT Bornim, zw. Florastr. u. Rückertstr. Kanalarbeiten halbseitig gesperrt; Einbahnstraße 06.04.2005-24.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -16640,1304 -16023,1042 -15557,809 -15508,785
-userdel	q4 -16640,1304 -16727,1370 -16766,1399 -16905,1503
+userdel	q4 -16640,1304 -16026,1044 -15938,1003 -15533,813 -15501,795
+userdel	q4 -16640,1304 -16719,1369 -16742,1387 -16763,1402 -16905,1503
 EOF
      },
      { from  => 1113775200, # 2005-04-18 00:00
@@ -2834,7 +2834,7 @@ EOF
        text  => 'B 273; (Potsdamer Str.); OD Bornim, zw. Amundsenstr. u. Lindstedter Weg Kanalarbeiten halbseitig gesperrt; Einbahnstraße 25.07.2005-24.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -15508,785 -15557,809 -16023,1042 -16640,1304
+userdel	q4 -15501,795 -15533,813 -15938,1003 -16026,1044 -16640,1304
 EOF
      },
      { from  => 1126994400, # 2005-09-18 00:00
@@ -15291,7 +15291,7 @@ EOF
        text  => 'Aufgrund der Arbeiten zum Straßenneubau und der Verlegung von Schmutz- und Regenwasserleitungen kommt es ab dem 29.06.2009 zu Vollsperrungen der Otto-Nagel-Straße. Begonnen wird an der Kreuzung Berliner Straße. Die gesamte Maßnahme wir voraussichtlich zum Ende des 4. Quartals abgeschlossen werden. ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -12064,-284 -11978,-348 -11877,-478
+userdel	q4::inwork -12054,-274 -11978,-348 -11877,-478
 EOF
      },
      { from  => 1251756000, # 2009-09-01 00:00
@@ -15424,9 +15424,11 @@ EOF
 	2::night -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12141,1357
 	2::night -11615,853 -11510,810 -11412,784 -11392,762 -11231,696
 (Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12276,554 -12182,816 -12154,963 -12186,1118 -12148,1245 -12139,1325 -12141,1357 -12166,1384
-Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
-Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12331,-131 -12412,-118 -12450,-34 -12528,-11
+Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12265,-418 -12263,-403 -12262,-362 -12328,-212 -12334,-114 -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
+Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
 Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12332,585 -12276,554 -12115,409
+	2::night -12263,-403 -12280,-385 -12306,-378 -12357,-307 -12371,-284 -12396,-298
+	2::night -12449,-186 -12440,-181 -12449,-134 -12424,-107
 EOF
      },
      { from  => undef, #

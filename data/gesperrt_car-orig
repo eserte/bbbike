@@ -70,7 +70,7 @@ Hagelberger - Yorck	3nocross 8595,9495 8679,9544 8777,9601
 Hagelberger - Mehringdamm	3nocross 9334,9670 9280,9476 9248,9350
 Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9227,8890
 # Potsdam vvv
-Mangerstr. (Potsdam)	1 -12064,-284 -12108,-291 -12265,-418
+Mangerstr. (Potsdam)	1 -12054,-274 -12123,-294 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10429,-1944 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 # ^^^
 Bendastr.	1 12689,6905 12702,6846
@@ -123,7 +123,7 @@ Matternstr.	1 13798,13003 13579,12904
 Ebelingstr.	1 13707,13206 13610,13169 13487,13115
 John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12422,14692 12403,14663 12371,14615 12317,14535
 Prenzlauer Allee	3nocross 11828,15210 11801,15132 11776,15060 11709,14856
-Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12582,127 -12618,296
+Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12561,35 -12582,127 -12623,308
 #: by: Christian Marten (Einbahnstraße nur für Autofahrer)
 Stellmacherweg	1 13129,2999 13453,2930
 #: by: Andreas Mühlhausen (Einbahnstraße nur für Autofahrer) vvv
@@ -595,7 +595,7 @@ Liningstr.	1 13574,4862 13534,5111
 Alt-Britz:	3 12596,4320 12560,4290 *
 Leistikowstr.	1 -12512,810 -12302,718
 Am Neuen Garten	1 -12302,718 -12323,635 -12332,585
-Am Krongut - Katharinenstr.: Betonkübel	3 -15085,144 -15086,63 *
+Am Krongut: Poller	3 * -15085,91 *
 Fliederweg - Vogelweide: Poller	3 -12633,1484 -12928,1646 *
 Potsdamer Str.: Mittelstreifen	3nocross 452,3133 255,3085 161,3062
 Potsdamer Str.: Mittelstreifen	3nocross -151,2975 -49,3003 50,3031 161,3062
@@ -782,8 +782,8 @@ Wattstr.	1 998,14516 998,14435 999,14390
 Handjerystr./Schmiljanstr.	3 5494,6960 5574,7018 5624,7113
 Handjerystr./Schmiljanstr.	3 5494,6960 5574,7018 5569,7022
 (Am Carlsgarten - Waldowallee)	2 19456,7956 19478,7967 19509,7999 19558,8064
-Straßenbahntrasse	3nocross -13456,500 -13436,595 -13433,693
-Straßenbahntrasse	3nocross -13433,693 -13432,782 -13429,1069
+# REMOVED (glaube ich) --- Straßenbahntrasse	3nocross -13456,500 -13436,595 -13433,693
+Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3nocross -13433,693 -13432,782 -13429,1069
 Kutscherweg: Poller	3 * -13700,-106 *
 Dresdner Str.: Einfahrt vom Oranienplatz gesperrt	3 * 11189,10831 11162,10919
 #: note: könnte auch die andere Richtung gesperrt sein
@@ -900,3 +900,5 @@ Am Tierpark: Straßenbahntrasse	3nocross 18417,10738 18446,10620 18554,10354
 Domnauer Str.: Poller	3 * 7816,5682 *
 Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
 Paetowstr.: Poller	3 * -13110,-3015 *
+Am Raubfang (Potsdam)	1 -15308,1220 -15366,1249 -15436,1253 -15533,813
+Goetheplatz (Potsdam)	1 -9922,-1395 -9809,-1435
