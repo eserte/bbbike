@@ -57,11 +57,11 @@ Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12918,8232
 Friesenstr.: mäßiges Kopfsteinpflaster	Q2 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 Heimstr.: mäßiges Kopfsteinpflaster	Q2 9958,8966 9959,9050 9962,9151 9973,9232
-Lilienthalstr.: mäßiges Kopfsteinpflaster, mäßiger und enger Radweg	Q2+ 10705,9234 10709,9192 10748,9054 10675,8940
-Züllichauer Str.: mäßiges Kopfsteinpflaster, mäßiger und enger Radweg	Q2+; 10291,8810 10481,8814 10675,8940
+Lilienthalstr.: mäßiges Kopfsteinpflaster auf der Fahrbahn, mäßiger und enger Verbundsteinpflasterradweg	Q1- 10705,9234 10709,9192 10748,9054 10675,8940
+Züllichauer Str.: mäßiges Kopfsteinpflaster auf der Fahrbahn, mäßiger und enger Verbundsteinpflasterradweg	Q1-; 10291,8810 10481,8814 10675,8940
 Züllichauer Str.: mäßiges Kopfsteinpflaster	Q2; 10675,8940 10481,8814 10291,8810
 Züllichauer Str.: mäßiges Kopfsteinpflaster	Q2 10268,8810 10291,8810
-Golßener Str.: mäßiges Kopfsteinpflaster, mäßiger Radweg	Q2+; 10209,8661 10269,8770 10291,8810
+Golßener Str.: mäßiges Kopfsteinpflaster auf der Fahrbahn, mäßiger Verbundsteinpflasterradweg	Q1-; 10209,8661 10269,8770 10291,8810
 Golßener Str.: mäßiges Kopfsteinpflaster	Q2; 10291,8810 10269,8770 10209,8661
 Golßener Str.: mäßiges Kopfsteinpflaster	Q2 10269,8770 10268,8810 10266,8946
 Jüterboger Str.: mäßiges Kopfsteinpflaster	Q2 10266,8946 9958,8966 9799,8962
@@ -206,7 +206,7 @@ Tiergarten: Kopfsteinpflaster	Q2 5835,11768 5758,11895
 Garibaldistr.: schlechtes Kopfsteinpflaster	Q3 7324,19795 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7711,19956 7838,19884
 #: XXX projektierte Bauarbeiten, danach vielleicht bessere Qualität
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/alt_luebars.html (Baubeginn Mitte 2013)
-#: next_check: 2014-02-01
+#: next_check: 2013-12-01 (Bauende voraussichtlich Ende 2013)
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6764,23396 6801,23474 6805,23554
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6805,23554 6744,23695
 Alt-Lübars: Kopfsteinpflaster	Q2 6744,23695 6817,23760
@@ -406,7 +406,7 @@ Rönnestr.: Kopfsteinpflaster	Q2 2739,10645 3041,10732 3299,10816 3291,10853
 (Stuttgarter Platz/zur Leonhardtstr.): Kopfsteinpflaster	Q2 3291,10853 3344,10878
 Josef-Nawrocki-Str.: Asphalt	Q0 25552,4829 25554,4758 25691,4716 25724,4706 25802,4681
 Bötzowstr.: Kopfsteinpflaster	Q2 12161,13711 12189,13750 12280,13880 12361,13985 12423,14066 12486,14143
-Kohlhasenbrücker Str.: Kopfsteinpflaster	Q2 -7232,445 -7180,378 -7163,356 -7123,310
+Kohlhasenbrücker Str.: Kopfsteinpflaster	Q2 -7232,445 -7180,378 -7167,362 -7123,310
 Libauer Str.: Kopfsteinpflaster	Q2 13895,11663 13711,11458
 Niederbarnimstr.: Kopfsteinpflaster	Q2 14208,12235 14045,11965
 Simon-Dach-Str.: Kopfsteinpflaster	Q2- 14045,11965 14006,11843
@@ -469,7 +469,8 @@ Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
 Matkowskystr.: Kopfsteinpflaster	Q2 14530,11137 14513,11075
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2 14752,11041 14811,11067 14879,11182
 Neue Bahnhofstr.: Asphalt	Q0 14879,11182 14918,11249
-(Klein-Glienicke - Hahn-Meitner-Institut): Waldweg	Q2 -9313,54 -8629,175 -8387,190
+(Klein-Glienicke - Hahn-Meitner-Institut): Waldweg	Q2+ -9313,54 -8629,175
+(Klein-Glienicke - Hahn-Meitner-Institut): Kopfsteinpflaster	Q2 -8629,175 -8387,190
 Schildhornweg: Waldweg, OK	Q1 676,9104 197,9069 30,9105 -122,9213 -360,9193 -850,9181 -1047,9123 -1188,9090 -1279,9093 -1415,9144 -1553,9161 -1638,9152 -1877,9092 -2090,9075 -2297,9103 -2672,9220 -2956,9307
 Schildhornweg: Waldweg	Q2 -2967,9320 -3304,9470
 Havelweg: Waldweg, OK	Q1 -2956,9307 -3140,9294 -3235,9267 -3250,9081 -3451,8840
@@ -501,7 +502,7 @@ Alt-Pichelsdorf: schlechtes Kopfsteinpflaster	Q3+ -3677,11685 -3606,11532 -3445,
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3445,11505 -3405,11498
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3429,11474 -3445,11505 -3404,11589
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3381,11583 -3405,11498 -3429,11474
-Glienicker Str.: schlechtes Kopfsteinpflaster	Q3 -7163,356 -7236,300 -7324,276 -7587,312
+Glienicker Str.: Kopfsteinpflaster	Q2- -7167,362 -7242,314 -7319,304 -7587,312
 Glienicker Str.: mäßiges Kopfsteinpflaster	Q2 -7587,312 -7639,312 -7710,313 -7732,313 -8013,255
 Schäferstr.: Kopfsteinpflaster	Q2 -7232,445 -7365,371 -7449,348 -7474,341 -7587,312
 Karlsgartenstr.: Kopfsteinpflaster	Q2 11882,8527 11769,8515
@@ -1744,7 +1745,7 @@ Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 7973,14195 78
 #: XXX Neubau der Gabrielenstr., danach wahrscheinlich besserer Asphalt
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130111.1435.380126.html (Fertigstellung Ende 2013)
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/gabrielenstr.html
-#: next_check: 2013-12-15
+#: next_check: 2013-11-15 (voraussichtlich Bauende November 2013)
 Gabrielenstr.: mäßiger Asphalt	Q1 1687,20782 1630,20731 1518,20615
 Gabrielenstr.: guter Asphalt	Q0 1518,20615 1407,20563
 Gabrielenstr.: mäßiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 989,20366
@@ -8505,6 +8506,11 @@ Franckepark: Verbundsteinpflaster	Q1 9373,6179 9374,6189 9381,6277
 (Armenische Str. - Schwyzer Str., Schillerpark): wassergebundene Decke	Q1 7097,16915 7064,16943 7002,17027
 (Schwyzer Str. - Aroser Allee): Verbundsteinpflaster	Q1 7002,17027 6956,17087
 (zum Fähranleger Krughorn): Asphalt/Kopfsteinpflaster/unbefestigt	Q2 -10044,1567 -10055,1628
+Roedenbecksteig: Asphalt	Q0 -9400,439 -8629,175
+(Verlängerung des Roedenbecksteigs): Asphalt	Q0 -8629,175 -8539,-264
+(Umfahrung Hahn-Meitner-Institut): Beton	Q0- -7732,313 -7844,392 -8021,393 -8301,326 -8398,242 -8387,190
+Conradstr.: Asphalt	Q0 -5869,1261 -5804,1163 -5781,1120
+Conradstr.: unbefestigte Straße	Q2 -5781,1120 -5753,998
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -12710,7 +12716,7 @@ Stolpmünder Weg: Beton	Q0 -1194,24295 -1112,24331 -1039,24363 -1012,24375 -969,2
 #: by: superillu (ilko) vvv
 Arnold-Knoblauch-Ring: asphaltiert	Q0 -7639,312 -7632,204 -7621,108 -7588,86 -7506,126 -7451,163 -7418,181 -7386,200
 Hempstücken: asphaltiert	Q0 -7506,126 -7542,201 -7632,204
-Stölpchenweg: ehemals asphaltiert, mit extrem vielen Schlaglöchern	Q3 -7324,276 -7386,200 -7419,47 -7476,-65
+Stölpchenweg: ehemals asphaltiert, mit extrem vielen Schlaglöchern	Q3 -7319,304 -7386,200 -7419,47 -7476,-65
 Stölpchenweg: teils sehr welliger Sandbelag, bei Regen extreme Pfützen	Q3 -7266,-450 -7298,-322 -7447,-138 -7476,-65
 Stölpchenweg: Kopfsteinpflaster	Q2 -7071,-377 -7184,-396 -7242,-420 -7266,-450
 #: by: ^^^
@@ -15900,8 +15906,8 @@ Großenhainer Weg: glatt gepflastert	Q2+ 15758,1179 15831,1227 15880,1291
 Schwalbenweg: mäßiger Beton	Q1- 20205,-548 20172,-533 19940,-610 19724,-703 19650,-732
 # 
 #: by: Carmen Midle:
-#: XXX: Asphalt oder Beton? Q0 oder Q1?
-Hohenzollernstr. (Wannsee): mäßiger Beton	Q1 -6430,478 -6448,539 -6506,729 -6610,1081 -6619,1113
+#: confirmed_by: srt (konkretisiert: Asphalt)
+Hohenzollernstr. (Wannsee): Asphalt mit Schäden	Q1 -6430,478 -6448,539 -6506,729 -6610,1081 -6619,1113
 # 
 #: by: Thomas (brachial...):
 Wetterseestr.: mäßiges Kopfsteinpflaster	Q2 11499,16883 11504,16746

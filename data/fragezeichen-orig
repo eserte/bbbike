@@ -88,7 +88,7 @@ Schulenburgstr./Weiﬂenburger Str.: werden hier Radspuren markiert?	?::projected 
 Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,8717 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2114,7742
 # 
 #: XXX Baumaﬂnahmen GR6.20, GR6.19 (Realisierung nach 2011)
-#: last_checked: 2013-05-09
+#: last_checked: 2013-05-12
 #: check_frequency: 90d
 #: osm_watch: way id="4323788" version="12"
 #: osm_watch: way id="23109081" version="6"
@@ -112,13 +112,13 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaﬂnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2013-05-01
-#: next_check: 2013-07-01
+#: last_checked: 2013-05-14
+#: check_frequency: 90d
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaﬂnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-05-08 vvv
+#: last_checked: 2013-05-14 vvv
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -143,8 +143,8 @@ Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,1172
 Markgrafenstr.: wird hier eine Radwegf¸hrung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
 #: XXX Baumaﬂnahme 3.18 (Realisierung in 2011)
-#: last_checked: 2013-04-30 (weiterhin nur Busspuren)
-#: next_check: 2013-06-30
+#: last_checked: 2013-05-14 (weiterhin nur Busspuren)
+#: check_frequency: 60d
 Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
 #: XXX Baumaﬂnahme 1.47 (Realisierung nach 2011)
@@ -269,8 +269,8 @@ Gartenfelder Str.: Radspuren f¸r 2013 geplant	?::projected; -532,15184 -569,1516
 #: next_check: 2013-08-01
 Perleberger Str., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
-#: last_checked: 2013-05-09
-#: next_check: 2013-07-09
+#: last_checked: 2013-05-14
+#: check_frequency: 90d
 Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
 # 
 Dietzgenstr.: Radspuren bis 2015 geplant	?::projected 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
@@ -555,7 +555,7 @@ Am Filmlager: Qualit‰t? Genaue Lage der Straﬂe (GPS-Track?)	? 22802,5325 22808,5
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: last_checked: 2013-05-06
 #: next_check: 2013-07-06
-#: osm_watch: way id="4663347" version="13"
+#: osm_watch: way id="4663347" version="14"
 Ordensmeisterstr.: werden die Radspuren noch weiter gef¸hrt?	?::projected 10339,5948 10254,5921 10027,5868 9796,5790
 # 
 #: last_checked: 2013-05-10 vvv
@@ -949,7 +949,7 @@ Ampel (Fuﬂg‰nger? Auto?) in Bau	?::inwork 7595,12980
 #: priority: #C
 Florastr./Gˆrschstr.: entsteht hier ein Zebrastreifen?	? 10073,17801 10033,17763
 # 
-#: last_checked: 2013-04-28
+#: last_checked: 2013-05-14
 #: next_check: 2013-05-30
 #: XXX siehe auch: gesperrt-orig, handicap_s-orig
 Grimmstr.: Einbahnstraﬂe wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
@@ -1040,7 +1040,7 @@ Fontanestr. (Lichtenrade): Qualit‰t des Rad/Gehweg-Abschnitts?	? 9779,-605 9822,
 #: XXX nochmal genau vor Ort anschauen
 An der Vogelweide: Qualit‰t? Lage? Straﬂenschilder?	? 8568,21863 8626,21892 8712,21858 8725,21910 8615,21955 8590,21894
 # 
-#: last_checked: 2013-04-11
+#: last_checked: 2013-05-14
 An der ehem. Blumengroﬂmarkthalle: hier wird eine neue Verbindung entstehen --- gepflastert (genaue Qualit‰t?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
 # 
 #: next_check: 2013-05-01
@@ -2294,6 +2294,7 @@ Rohrwebereck: Sind da noch Stichstraﬂen oder sind das nur Garagenzufahrten?	? -1
 Tannenweg (Potsdam): Qualit‰t?	? -9434,164 -9440,193 -9405,204 -9453,425 -9494,441 -9539,434
 #: XXX Genauer Straﬂenverlauf von "neuer" und "alter" Wannseestr.?
 #: by: http://www.potsdam.de/cms/dokumente/10114884_1771576/e922e4ec/ENDFASSUNG%20Abl.%20PdmStadt%2002_13.pdf
+#: die Wannseestr. ist Einbahnstraﬂe, offen Richtung Westen
 (Wannseestr. - Tannenstr.): genaue Straﬂenbezeichnungen? Qualit‰t?	? -9568,56 -9381,89 -9389,170
 Tremsdorf - Mietgendorf: Qualit‰t?	? -7714,-15752 -6969,-16153 -6922,-16200 -6915,-16296 -6578,-16497 -5593,-16970
 Groﬂziethen: wie weit in Richtung S¸den gehen die Radwege?	? 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
@@ -3275,8 +3276,8 @@ Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straﬂe Straﬂenschild
 #: XXX neue private Straﬂen entstehen, fehlen in Berlin.coords.data vvv
 #: last_checked: 2012-09-10 vvv
 #: next_check: 2013-09-10 vvv
-#: osm_watch: way id="42407759" version="1"
-#: XXX ad osm_watch: id referenziert ein nicht mehr existentes Geb‰ude
+#: osm_watch: way id="220390908" version="1"
+#: XXX ad osm_watch: id referenziert die construction area
 L¸barser Aue: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet sich die Straﬂe (mˆglichst mit GPS-Track)?	?::inwork 7185,22466 7147,22393
 Am Rodelberg: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet sich die Straﬂe (mˆglichst mit GPS-Track)?	?::inwork 7257,22381 7296,22458
 #: next_check ^^^

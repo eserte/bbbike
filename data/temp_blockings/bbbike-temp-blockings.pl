@@ -18711,7 +18711,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20101126.1415.320541.html',
        data  => <<EOF,
-userdel	q4::inwork; 7480,7683 7316,7814
+userdel	q4::inwork; 7480,7683
 EOF
      },
      { from  => 1292184575, # 2010-12-12 21:09
@@ -20104,8 +20104,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
-#: osm_watch: way id="23243508" version="29"
-#: XXX laut osm bereits aufgehoben, aber stimmt das? (ich habe einen Eintrag in OSM erstellt)
+#: osm_watch: way id="23243508" version="30"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
@@ -20295,13 +20294,11 @@ userdel	q3::inwork; 14434,11465 14369,11489 14305,11514
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1368556113, # undef, # XXX
        text  => 'Sredzkistr. zwischen Knaackstr. und Hagenauer Str.: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-04-11
 #: note: einige Meter östlich der Knaackstr. gesperrt
-#: osm_watch: way id="196215276" version="1"
 userdel	q3::inwork 11101,14768 11187,14763
 EOF
      },
@@ -20884,19 +20881,16 @@ userdel	q2::inwork 13339,7452 13303,7622
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1368556143, # undef, # XXX
        text  => 'Sredzkistr./Husemannstr.: Kreuzungsbereich gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-04-11 vvv
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
-#: osm_watch: way id="196215276" version="1"
 userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763
 #: XXX ^^^
 #: XXX ebenfalls Umweg notwendig
 userdel	q2::inwork 11293,14957 11271,14755 11255,14572
-#: last_checked ^^^
 EOF
      },
      { from  => undef, #
@@ -21216,6 +21210,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130419.1210.383671.html',
        data  => <<EOF,
 userdel	2::temp 6244,8597 6339,8644 6454,8653
+EOF
+     },
+     { from  => 1368334800, # 2013-05-12 07:00
+       until => 1369620000, # 2013-05-27 04:00
+       text  => 'Müggelseedamm (Frieddrichshagen): Baustelle, stadtauswärts zwischen Bölschestr. und Kalkseestr. bis Ende Mai 2013 gesperrt, 13.05.2013 07:00 Uhr bis 27.05.2013 04:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'INKO_114312',
+       data  => <<EOF,
+userdel	q4::inwork; 25552,4829 25720,4832 25802,4823 25948,4823 26086,4861 26237,4922 26340,4942 26500,4936
 EOF
      },
     );

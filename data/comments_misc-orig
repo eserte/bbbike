@@ -96,7 +96,7 @@ Kreisverkehr	Roundabout -11822,-1874
 Privatstraße der DB	CS 5710,7820 6273,7849
 Albrecht-Thaer-Weg: Privatstraße, Tore bei den Einfahrten	CS 3347,6460 3449,6863
 # REMOVED (nur auf der östlichen Seite ist ein Tor; deshalb ist es eigentlich unwahrscheinlich, dass hier geschlossen wird) ---  (Weg über das Sportgelände): evtl. nachts geschlossen	CS 13252,14179 13385,13992
-Borgmannstr.: zwei Bodenschwellen, rechs vorbei fahren	CS 22513,5747 22531,5871
+# REMOVED (Bodenschwellen existieren nicht mehr; außerdem ist dieser Eintrag sowieso in handicap_s-orig gedoppelt) --- Borgmannstr.: zwei Bodenschwellen, rechs vorbei fahren	CS 22513,5747 22531,5871
 Hermann-Blankenstein-Str.: Tor für Kfz evtl. geschlossen, auf Gehweg ausweichen	CS 13886,13668 13858,13719
 Georg-Wilhelm-Str.: 3 Bodenschwellen, rechts vorbei fahren	CS 2708,10245 2691,10047
 #: XXX_prog: doubled in gesperrt_orig, but needs implementation in Perl/Tk version
@@ -1100,6 +1100,7 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo -9894,-896
 	culdesac_pseudo -9858,-862
 	culdesac_pseudo -9767,-619
+	culdesac -5753,998
 #: section ^^^
 ######################################################################
 # busroute

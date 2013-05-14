@@ -3031,8 +3031,7 @@ userdel	2::inwork 19968,16 19940,52
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte 2013',
          'from' => 1330902000,
          'id' => 2316,
-         'data' => '#: osm_watch: way id="23243508" version="29"
-#: XXX laut osm bereits aufgehoben, aber stimmt das? (ich habe einen Eintrag in OSM erstellt)
+         'data' => '#: osm_watch: way id="23243508" version="30"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
@@ -3079,18 +3078,7 @@ userdel	2::inwork 18731,8577 18709,8423
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Sredzkistr. zwischen Knaackstr. und Hagenauer Str.: Teile der Fahrbahn gesperrt, Ausweichen auf Gehweg',
-         'from' => undef,
-         'id' => 2337,
-         'data' => '#: last_checked: 2013-04-11
-#: note: einige Meter östlich der Knaackstr. gesperrt
-#: osm_watch: way id="196215276" version="1"
-userdel	q3::inwork 11101,14768 11187,14763
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3249,23 +3237,7 @@ userdel	q2::inwork 13339,7452 13303,7622
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Sredzkistr./Husemannstr.: Kreuzungsbereich gesperrt, Ausweichen auf Gehweg',
-         'from' => undef,
-         'id' => 2399,
-         'data' => '#: last_checked: 2013-04-11 vvv
-#: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
-#: osm_watch: way id="196215276" version="1"
-userdel	q2::inwork 11436,14741 11271,14755
-userdel	q3::inwork 11271,14755 11187,14763
-#: XXX ^^^
-#: XXX ebenfalls Umweg notwendig
-userdel	q2::inwork 11293,14957 11271,14755 11255,14572
-#: last_checked ^^^
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
          'recurring' => 1,
@@ -3437,6 +3409,19 @@ userdel auto	3 4358,12365 4518,12350 4601,12310
 #: last_checked: 2013-05-06
 #: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
 userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
+',
+         'type' => 'handicap'
+       },
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'INKO_114312',
+         'until' => 1369620000,
+         'text' => 'Müggelseedamm (Frieddrichshagen): Baustelle, stadtauswärts zwischen Bölschestr. und Kalkseestr. bis Ende Mai 2013 gesperrt, 13.05.2013 07:00 Uhr bis 27.05.2013 04:00 Uhr ',
+         'from' => 1368334800,
+         'id' => 2429,
+         'data' => 'userdel	q4::inwork; 25552,4829 25720,4832 25802,4823 25948,4823 26086,4861 26237,4922 26340,4942 26500,4936
 ',
          'type' => 'handicap'
        }
