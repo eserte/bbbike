@@ -2145,7 +2145,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Mo 08.00-13.00 und Do 08.00-13.00, Behinderungen möglich',
+         'text' => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Di 08.00-13.00 und Fr 08.00-13.00, Behinderungen möglich',
          'from' => undef,
          'id' => 1822,
          'data' => '	q4::temp:clock 589,11953 577,11837 562,11710 560,11695 550,11607
@@ -3304,7 +3304,7 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
 ',
          'until' => undef,
          'from' => undef,
-         'text' => 'Fähren F21, F23, F24: fahren nur ab ca. April bis Anfang Oktober, fahren nicht am Montag',
+         'text' => 'Fähren F21, F23, F24: fahren nur ab Karfreitag bis zum 3. Oktober, fahren nicht am Montag',
          'type' => 'gesperrt',
          'id' => 2408
        },
@@ -3422,6 +3422,17 @@ userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
          'from' => 1368334800,
          'id' => 2429,
          'data' => 'userdel	q4::inwork; 25552,4829 25720,4832 25802,4823 25948,4823 26086,4861 26237,4922 26340,4942 26500,4936
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Tegeler Str.: zwischen Triftstr. und Schlegelstr. Bauarbeiten, Ausweichen auf den Gehweg',
+         'from' => undef,
+         'id' => 2430,
+         'data' => '#: last_checked: 2013-05-08
+#: XXX wann sind die Bauarbeiten beendet?
+userdel	q4::inwork; 7085,15226 7131,15109
 ',
          'type' => 'handicap'
        }

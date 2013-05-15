@@ -784,10 +784,17 @@ Prellerweg (Richtungsfahrbahn)	1::igndisp 7078,5887 6895,5870 6757,5858
 Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7078,5887
 #: note ^^^
 #: note: Mittelstreifen vvv
-Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 7946,7411 8074,7295 8142,7221 8229,7154 8319,7084
+Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 7946,7411 8074,7295 8176,7194 8229,7154 8319,7084
 Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 8319,7084 8224,7148 8150,7200 8069,7288 7946,7411
 #: note: für Autos ist das Linksabbiegen zum Gewerbegebiet möglich, für Radfahrer wahrscheinlich nicht praktikabel (wegen benutzungspflichtigen Radweg)
-Sachsendamm/Schöneberger Str. (Mittelstreifen)	3nocross::ignrte 8319,7084 8229,7154 8142,7221
+Sachsendamm/Schöneberger Str. (Mittelstreifen)	3nocross::ignrte 8319,7084 8229,7154 8176,7194
+#: note: ^^^
+#: note: Mittelstreifen/Tunneleinfahrt vvv
+Bundesallee: Straßentunnelrampe	3nocross::ignrte 5505,8832 5515,8709 5508,8598
+Bundesallee: Absperrung auf dem Mittelstreifen	3nocross::ignrte 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
+# it would be nice if it was possible to have this in the middle of the road, but check_points does not allow this yet --- Bundesallee: Straßentunnelrampe, Absperrung auf dem Mittelstreifen	3nocross::ignrte 5399,8344 5430,8409 5468,8509 5504,8598 5512,8709 5505,8832
+Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5465,8511 5502,8599 5510,8709 5505,8832
+Bundesallee (Richtungsfahrbahn)	1::igndisp 5505,8832 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
 #: note: ^^^
 # 
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -283,14523 -457,14536 -914,14602
@@ -1405,9 +1412,7 @@ Treskowallee: Straßenbahntrasse	3nocross 18867,9464 18834,9256 18809,9133
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5467,9866
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
-Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5502,8599
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
-Bundesallee: Absperrung auf dem Mittelstreifen	3nocross 5510,8709 5502,8599 5465,8511 5427,8412 5399,8344
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9207,5185 9192,5272 9182,5332 9171,5397 9147,5534
 Schönhauser Allee: U-Bahnviadukt	3nocross 10969,15944 10964,15896 10953,15787
 Schönhauser Allee: U-Bahnviadukt	3 10941,15697 10917,15525 11055,15504

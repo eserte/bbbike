@@ -563,9 +563,13 @@ Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6108,9772 6209,977
 Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7078,5887
 Prellerweg (Richtungsfahrbahn)	1::igndisp 7078,5887 6895,5870 6757,5858
 Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7078,5887
-Sachsendamm/Schˆneberger Str. (Richtungsfahrbahn)	1::igndisp 7946,7411 8074,7295 8142,7221 8229,7154 8319,7084
+Sachsendamm/Schˆneberger Str. (Richtungsfahrbahn)	1::igndisp 7946,7411 8074,7295 8176,7194 8229,7154 8319,7084
 Sachsendamm/Schˆneberger Str. (Richtungsfahrbahn)	1::igndisp 8319,7084 8224,7148 8150,7200 8069,7288 7946,7411
-Sachsendamm/Schˆneberger Str. (Mittelstreifen)	3nocross::ignrte 8319,7084 8229,7154 8142,7221
+Sachsendamm/Schˆneberger Str. (Mittelstreifen)	3nocross::ignrte 8319,7084 8229,7154 8176,7194
+Bundesallee: Straﬂentunnelrampe	3nocross::ignrte 5505,8832 5515,8709 5508,8598
+Bundesallee: Absperrung auf dem Mittelstreifen	3nocross::ignrte 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
+Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5465,8511 5502,8599 5510,8709 5505,8832
+Bundesallee (Richtungsfahrbahn)	1::igndisp 5505,8832 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -283,14523 -457,14536 -914,14602
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -283,14523
 Lˆtschbergstr.	1s 20161,11715 20150,11512
@@ -1390,9 +1394,6 @@ unbequem passierbarer Mittelstreifen	3nocross::ignrte 9865,10227 9858,10199 9837
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9884,10192 9858,10199 9837,10117
 Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
 Waterloo-Ufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9865,10227
-Straﬂentunnelrampe	3nocross::ignrte 5505,8832 5510,8709 5502,8599
-Bundesallee -> Wilhelmsaue: Straﬂentunnelrampe	3::igndisp 5502,8599 5510,8709 5346,8720
-Wilhelmsaue -> Bundesallee: Straﬂentunnelrampe	3::igndisp 5346,8720 5510,8709 5505,8832
 Straﬂentunnelrampe	3nocross::ignrte 2817,4158 2944,4241 3048,4305
 Goﬂlerstr. -> Unter den Eichen: Straﬂentunnelrampe	3::igndisp 2858,4372 2944,4241 3048,4305
 Goﬂlerstr. -> Knesebeckstr.: Straﬂentunnelrampe	3::igndisp 2858,4372 2944,4241 3033,4113
@@ -1400,17 +1401,6 @@ Unter den Eichen -> Knesebeckstr.: Straﬂentunnelrampe	3::igndisp 3048,4305 2944,
 Knesebeckstr. -> Goﬂlerstr.: Straﬂentunnelrampe	3::igndisp 3033,4113 2944,4241 2858,4372
 Knesebeckstr. -> Unter den Eichen: Straﬂentunnelrampe	3::igndisp 3033,4113 2944,4241 2817,4158
 Unter den Eichen -> Goﬂlerstr.: Straﬂentunnelrampe	3::igndisp 2817,4158 2944,4241 2858,4372
-Absperrung auf dem Mittelstreifen	3nocross::ignrte 5510,8709 5502,8599 5465,8511 5427,8412 5399,8344
-Bundesallee -> Wagh‰useler Str.: Absperrung auf dem Mittelstreifen	3::igndisp 5510,8709 5502,8599 5660,8591
-Wagh‰useler Str. -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5660,8591 5502,8599 5465,8511
-Volkspark Wilmersdorf -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5417,8519 5465,8511 5533,8478
-Volkspark Wilmersdorf -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5417,8519 5465,8511 5502,8599
-Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5427,8412 5465,8511 5417,8519
-Volkspark Wilmersdorf -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5533,8478 5465,8511 5417,8519
-Volkspark Wilmersdorf -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5533,8478 5465,8511 5427,8412
-Bundesallee -> Volkspark Wilmersdorf: Absperrung auf dem Mittelstreifen	3::igndisp 5502,8599 5465,8511 5533,8478
-Am Volkspark -> Bundesallee: Absperrung auf dem Mittelstreifen	3::igndisp 5320,8456 5427,8412 5465,8511
-Bundesallee -> Am Volkspark: Absperrung auf dem Mittelstreifen	3::igndisp 5465,8511 5427,8412 5598,8267
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9207,5185 9192,5272 9182,5332 9171,5397 9147,5534
 Am Teltowkanal, s¸dl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9192,5272 9182,5332
 Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9182,5332 9171,5397
@@ -3033,6 +3023,8 @@ Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18228,11656 18520,11685 18624,1171
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18624,11712 18626,11742
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
 Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060
+Bundesallee, linker Gehweg zur Durlacher Str.	1::igndisp 5399,8344 5438,8402
+Bundesallee, linker Gehweg zur Straﬂe Am Volkspark	1::igndisp 5419,8415 5399,8344
 Urbanstr.	1::igndisp 11861,9183 11888,9189
 Badstr., linker Gehweg	1::igndisp 8486,16425 8486,16412 8534,16355
 Tempelhofer Ufer, linker Gehweg	1::igndisp 8661,10377 8717,10322 8804,10303

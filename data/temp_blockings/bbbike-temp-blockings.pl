@@ -15548,7 +15548,8 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Mo 08.00-13.00 und Do 08.00-13.00, Behinderungen möglich',
+       #: by: Stefan Klinkusch (korrigierte Wochentage)
+       text  => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Di 08.00-13.00 und Fr 08.00-13.00, Behinderungen möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -20975,7 +20976,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Fähren F21, F23, F24: fahren nur ab ca. April bis Anfang Oktober, fahren nicht am Montag',
+       text  => 'Fähren F21, F23, F24: fahren nur ab Karfreitag bis zum 3. Oktober, fahren nicht am Montag',
        recurring => 1,
        type  => 'gesperrt',
        source_id => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html', # und 23 und 24
@@ -21219,6 +21220,16 @@ EOF
        source_id => 'INKO_114312',
        data  => <<EOF,
 userdel	q4::inwork; 25552,4829 25720,4832 25802,4823 25948,4823 26086,4861 26237,4922 26340,4942 26500,4936
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Tegeler Str.: zwischen Triftstr. und Schlegelstr. Bauarbeiten, Ausweichen auf den Gehweg',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2013-05-08
+#: XXX wann sind die Bauarbeiten beendet?
+userdel	q4::inwork; 7085,15226 7131,15109
 EOF
      },
     );

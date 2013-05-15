@@ -41,19 +41,20 @@ F12 (Dahme): von ca. 6 bis 19 Uhr alle 10 bis 20 Minuten, Sa/So im 20/30-Minuten
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive vvv
 #: by: http://www.bvg.de/index.php/de/binaries/asset/download/21412/file/1-1
 #: as_of: 2010-06
-F21 (Krampe): Mo keine Fahrten; stündlich von ca. 10 bis 18 Uhr; Saisonbetrieb (ca. April - Anfang Oktober); BVG-Tarif; ca. 6 Minuten Fahrzeit	CS 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
+#: XXX_prog: Zusatzinfos von Gregor Wrobel (2013-05) (gelten auch für F23, F24): im April fahren die Fähren nur am Wochenende (sollte im April auch so angezeigt werden), der Karfreitag sollte als Datum aufgelöst werden
+F21 (Krampe): Mo keine Fahrten; stündlich von ca. 10 bis 18 Uhr; Saisonbetrieb (ab Karfreitag bis zum 3. Oktober); BVG-Tarif; ca. 6 Minuten Fahrzeit	CS 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 #: XXX_prog ^^^
 # 
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive vvv
 #: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/MueggelwerderwegKruggasse_berlin.pdf?pathinfo=/dn&dwn=45/45iamtmciihp9iw8_1_1.pdf
 #: as_of: 2010-06
-F23: nicht montags, ca. stündlich von 10 bis 18 Uhr; Saisonbetrieb (ca. April - Anfang Oktober); BVG-Tarif; ca. 25 Minuten Fahrzeit zwischen Müggelwerderweg und Kruggasse; die Haltestelle Neu-Helgoland wird nur in Fahrtrichtung Osten angefahren	CS 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
+F23: nicht montags, ca. stündlich von 10 bis 18 Uhr; Saisonbetrieb (ab Karfreitag bis zum 3. Oktober); BVG-Tarif; ca. 25 Minuten Fahrzeit zwischen Müggelwerderweg und Kruggasse; die Haltestelle Neu-Helgoland wird nur in Fahrtrichtung Osten angefahren	CS 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
 #: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/Spreewiesen_berlKruggasse_berlin.pdf?pathinfo=/dn&dwn=8u/8ug2stkciiytyi4c_1_1.pdf
 #: as_of: 2010-06
 #: XXX evtl. wird die Fähre im Oktober 2013 zum letzten Mal fahren
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4460&options=4
 #: next_check: 2013-10-03
-F24 (Spree): nicht montags, ca. stündlich von 11 bis 19 Uhr; Saisonbetrieb (ca. April - Anfang Oktober); BVG-Tarif; ca. 5 Minuten Fahrzeit	CS 29959,3031 29968,2986
+F24 (Spree): nicht montags, ca. stündlich von 11 bis 19 Uhr, bei Bedarf auch außerhalb des Fahrplans; Saisonbetrieb (ab Karfreitag bis zum 3. Oktober); BVG-Tarif; ca. 5 Minuten Fahrzeit; Ruderfähre	CS 29959,3031 29968,2986
 #: XXX_prog ^^^
 # 
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive vvv
