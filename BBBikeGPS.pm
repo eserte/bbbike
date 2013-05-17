@@ -747,7 +747,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    $s->push($l);
 	    if ($s_speed) {
 		my $time = $wpt->Comment_to_unixtime($chunk);
-		$time = 0 if $is_route; # set pseudo time for routes, to force display
+		$time = 0 if !defined $time && $is_route; # set pseudo time for routes, to force display
 		if (defined $time) {
 		    if ($last_wpt) {
 			my($last_x,$last_y,$last_x0,$last_y0,$last_time,$last_alt,$last_acc) = @$last_wpt;

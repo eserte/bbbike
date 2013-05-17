@@ -214,7 +214,12 @@ sub load_gpx {
 		    for my $rtept_child ($rte_child->children) {
 			if ($rtept_child->name eq 'name') {
 			    $name = $rtept_child->children_text;
-			    last;
+			} elsif ($rtept_child->name eq 'ele') {
+			    $wpt->Altitude($rtept_child->children_text);
+			} elsif ($rtept_child->name eq 'time') {
+			    my $time = $rtept_child->children_text;
+			    my $gpsman_time = $gpsman_time_to_time->($time);
+			    $wpt->DateTime($gpsman_time);
 			}
 		    }
 		    $wpt->Ident($name);
