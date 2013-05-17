@@ -754,7 +754,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 			my $legtime = $time-$last_time;
 			# Do not check for $legtime==0 --- saved tracks do not
 			# have any time at all! Also routes do not have.
-			if (abs($legtime) < 60*$max_gap && !$is_new_chunk) {
+			if ($is_route || (abs($legtime) < 60*$max_gap && !$is_new_chunk)) {
 			    my $dist = sqrt(($x0-$last_x0)**2 + ($y0-$last_y0)**2);
 			    if ($last_accurate_wpt && $acc <= $accuracy_level) {
 				my(undef,undef,$last_acc_x0,$last_acc_y0) = @$last_wpt;
