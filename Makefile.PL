@@ -244,8 +244,6 @@ my @req_table =
    'Geocoding über Cloudmade'],
   [qw/Geo::Coder::OSM	0	all	0	plugin/,
    'Geocoding mit OpenStreetMap-Daten'],
-  [qw/Geo::Coder::PlaceFinder	0	all	0	plugin/,
-   'Geocoding mit Yahoo PlaceFinder'],
   [qw/Flickr::API	0	all	0	plugin/,
    'Flickr-Bilder in BBBike anzeigen'],
 

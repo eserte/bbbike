@@ -189,8 +189,6 @@ Geo::Cloudmade	- Geocoding über Cloudmade
 
 Geo::Coder::OSM	- Geocoding mit OpenStreetMap-Daten
 
-Geo::Coder::PlaceFinder	- Geocoding mit Yahoo PlaceFinder
-
 Flickr::API	- Flickr-Bilder in BBBike anzeigen
 
 Image::Info 1.32

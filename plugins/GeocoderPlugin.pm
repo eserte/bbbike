@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.01;
+$VERSION = 3.02;
 
 BEGIN {
     if (!eval '
@@ -279,33 +279,34 @@ sub geocoder_dialog {
 		 },
 		},
 
-		'Yahoo PlaceFinder' =>
-		{
-		 'label' => 'Yahoo PlaceFinder (needs app id)',
-		 'short_label' => 'Yahoo PlaceFinder',
-		 'devel_only' => 1,
-
-		 'require' => sub { require Geo::Coder::PlaceFinder },
-		 'new' => sub {
-		     my $apikey = do {
-			 my $file = "$ENV{HOME}/.yahooapikey";
-			 open my $fh, $file
-			     or main::status_message("Cannot get key from $file: $!", "die");
-			 local $_ = <$fh>;
-			 chomp;
-			 $_;
-		     };
-		     Geo::Coder::PlaceFinder->new(appid => $apikey);
-		 },
-		 'extract_addr' => sub {
-		     my $location = shift;
-		     join(", ", grep { defined && length } @{$location}{qw(line1 line2 line3 line4)});
-		 },
-		 'extract_loc' => sub {
-		     my $location = shift;
-		     ($location->{longitude}, $location->{latitude});
-		 },
-		},
+		## XXX DEL module and API do not work anymore
+		#'Yahoo PlaceFinder' =>
+		#{
+		# 'label' => 'Yahoo PlaceFinder (needs app id)',
+		# 'short_label' => 'Yahoo PlaceFinder',
+		# 'devel_only' => 1,
+		#
+		# 'require' => sub { require Geo::Coder::PlaceFinder },
+		# 'new' => sub {
+		#     my $apikey = do {
+		#	 my $file = "$ENV{HOME}/.yahooapikey";
+		#	 open my $fh, $file
+		#	     or main::status_message("Cannot get key from $file: $!", "die");
+		#	 local $_ = <$fh>;
+		#	 chomp;
+		#	 $_;
+		#     };
+		#     Geo::Coder::PlaceFinder->new(appid => $apikey);
+		# },
+		# 'extract_addr' => sub {
+		#     my $location = shift;
+		#     join(", ", grep { defined && length } @{$location}{qw(line1 line2 line3 line4)});
+		# },
+		# 'extract_loc' => sub {
+		#     my $location = shift;
+		#     ($location->{longitude}, $location->{latitude});
+		# },
+		#},
 	       );
     $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
 
@@ -511,11 +512,6 @@ API key stored in F<~/.googlemapsapikey>
 through L<Geo::Cloudmade>, needs an API key stored in
 F<~/.cloudmadeapikey>
 
-=item Yahoo's PlaceFinder
-
-through L<Geo::Coder::PlaceFinder>, needs an app id which should be
-stored in F<~/.yahooapikey>.
-
 =back
 
 Unsupported geocoding services:
@@ -538,10 +534,12 @@ Obsolete geocoding services:
 
 =over
 
-=item old Yahoo API
+=item old Yahoo API, Yahoo Placefinder
 
-L<Geo::Coder::Yahoo> is using an old and shut down Yahoo API. Use
-PlaceFinder instead.
+L<Geo::Coder::Yahoo> is using an old and shut down Yahoo API. The
+successor API was Yahoo PlaceFinder, served by the module
+L<Geo::Coder::PlaceFinder>, but in April 2013 or so this API was
+shutdown.
 
 =back
 
