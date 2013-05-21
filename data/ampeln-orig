@@ -699,7 +699,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 	X 18234,13500
 	X 8542,11502
 	X 9155,11283
-	F 8972,11810
+	F 8965,11825
 	X 8172,11679
 	F 8065,11349
 	X 5758,11895
@@ -1172,7 +1172,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 	X 3377,19325
 	X 4162,18891
 	X 4210,18878
-	X 6314,18705
+# REMOVED (existiert nicht (mehr?)) ---	X 6314,18705
 	X 6432,18682
 	X 6720,18616
 	X 6689,17911
@@ -1631,7 +1631,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 	F 5070,4770
 	X 5141,5744
 	X 6477,6311
-	X 6442,6788
+	X 6430,6787
 	X 4521,4484
 	X 4932,4152
 	X 3926,4438
@@ -1937,7 +1937,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 12908,11058
 	X 13144,10921
 #: note: laut Luftbild
-#: XXX: nicht ganz sicher:
 	F 4717,21223
 	F 1724,3187
 	X 22785,6984
@@ -1975,7 +1974,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 9242,15843
 	X 12645,11673
 	F 6058,10988
-	F 6413,7017
+	F 6407,7016
 #: by: thekla1707...
 #: confirmed_by: srt
 	F 6321,5818
@@ -2015,7 +2014,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 21337,13470
 #: note: Luftbild
 	X 23021,13982
-#: note: Luftbild
 	X 5476,19450
 #: note: Luftbild
 	F 6748,935
@@ -2110,7 +2108,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 12060,5204
 	F 2580,24028
 	X 13401,15821
-	X 6451,6710
+	F 6440,6707
 #: XXX_prog: Richtung Osten regul‰re Ampel, Richtung Westen nur Fuﬂg‰ngerampel
 	X 7310,7818
 # REMOVED (tempor‰re Ampel existiert nicht mehr) --- #: XXX existiert diese Ampel noch? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5227&options=4 ---	F 18413,7774
@@ -2163,8 +2161,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 15248,11880
 #: by: osm
 	X 11001,18528
-#: by: osm
-	X 11168,18542
+# REMOVED (ex nicht?) --- #: by: osm ---	X 11168,18542
 #: by: http://www.panoramio.com/photo/19638043
 	F 3733,3317
 #: by: http://www.panoramio.com/photo/19637927
@@ -2331,7 +2328,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B0 17953,15221
 #: note: provisorische Ampel
 #: XXX Siehe auch Baustelle in der Voﬂstr.
-#: last_checked: 2013-04-25
+#: last_checked: 2013-05-17
 #: next_check: 2013-07-02
 	X::inwork 9000,11727
 	X 25451,14018
@@ -2406,7 +2403,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork -6861,15129
 	F 20614,18481
 	X 5628,17631
-	F 7676,18492
+	X 7676,18492
 #: by: wosch
 	X 10285,12306
 #: note: Straﬂenbahn kreuzt
@@ -2445,6 +2442,28 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 16487,17785
 	F 3517,13067
 	F 8348,5184
+	X 12628,6166
+	X 25095,14171
+	X 25163,13494
+	X 14754,17673
+	X 10908,17142
+	X 6992,14251
+	X 4375,1414
+	X 8075,499
+	X 12221,7271
+	X -3631,16224
+	X 15640,4222
+	X 14842,12826
+	X -3782,17125
+	X 10301,16186
+	X 13199,23657
+	X 10603,16158
+	X 16964,3210
+	X 4788,8318
+	X 4788,8354
+	X 11214,16043
+	X -3892,13960
+	X 3005,13728
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/
@@ -2575,6 +2594,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -9942,21
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X 26512,14444
+	X 26334,15131
+	X 26333,15481
 	B 25740,34997
 	B 45740,14260
 	B 27647,-11196
@@ -2890,6 +2912,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	X 39715,101866
 	X 39682,101543
 	X 39962,101085
+	F 39804,101160
 #: note: Ampel kann beim Rechtsabbiegen aus Richtung Schmˆlln umfahren werden
 	X 41193,100575
 	F 53182,-17704

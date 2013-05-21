@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-05-14 vvv
+#: last_checked: 2013-05-21 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
@@ -32,7 +32,7 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-05-13
+#: last_checked: 2013-05-17
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 13366,11651 13295,11792
 # 
 # REMOVED (fast keine Einschr‰nkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14247,11681 14272,11775
@@ -82,8 +82,7 @@ Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4:
 Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
 #: last_checked ^^^
 # 
-#: last_checked: 2013-04-02
-#: next_check: 2013-05-31
+#: last_checked: 2013-05-17
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch Totalsperrung in der Voﬂstr.
 #: source_id: INKO_113363
@@ -188,7 +187,7 @@ Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22478,6041 22
 #: XXX die Straﬂe wird irgendwann f¸r den Autoverkehr gesperrt werden
 #: XXX unter Umst‰nden wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf
 #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/
-#: last_checked: 2013-04-29
+#: last_checked: 2013-05-17
 #: next_check: 2013-11-30
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fuﬂg‰ngerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 # 
@@ -314,7 +313,7 @@ Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11141,9107
 (Flughafenstr. - Rundweg in der Hasenheide): Fuﬂg‰nger	q1 11632,8302 11577,8315 11559,8357
 Am Flutgraben: Fuﬂg‰nger	q1 13333,9929 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fuﬂg‰nger	q1 13418,9944 13669,9994 13711,10022
-Kolonie Albrechtshˆhe: einige Fuﬂg‰nger	q1 10260,5953 9955,5993
+Kolonie Albrechtshˆhe: einige Fuﬂg‰nger	q1 10260,5953 10215,5959 9955,5993
 Am Landwehrkanal: Parkweg	q1 12739,9576 12801,9554 12919,9584 12981,9672 13086,9825 13145,9861 13241,9995
 Uferweg an den Treptowers: enger und kurviger Weg	q3 14500,9856 14465,9900 14464,9927 14509,9997 14432,10059 14373,10046
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20070810.1330.83363.html
@@ -730,7 +729,7 @@ Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 #: XXX_prog: f¸r Anh‰nger vielleicht q2
 Mergenthalerring: Asphaltschwellen, kˆnnen umfahren werden	q1 14389,8080 14563,8243
-Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6720 6530,6786 6529,6798
+Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
 (Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6841,7283
 (Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q1 6807,7262 6809,7272 6841,7283
 (Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7442 7307,7457
@@ -1409,7 +1408,7 @@ Am Krug: offiziell nur f¸r Fuﬂg‰nger	q2 -7149,14768 -7021,14772 -7015,14772
 (Am Langen Weg - Ungewitterweg): eng	q3 -7033,14984 -7075,15021 -7088,15046 -7116,15053
 (Am Zeppelinpark - Sommerbad West-Staaken): einige Fuﬂg‰nger	q1 -8426,13818 -8232,13846
 (entlang der Autobahn): einige Fuﬂg‰nger	q1 6489,7908 6437,7968
-Zur Revaler Str.: einige Fuﬂg‰nger	q1 14677,11027 14513,11075
+# REMOVED (offizieller Radweg jetzt) --- Zur Revaler Str.: einige Fuﬂg‰nger	q1 14634,11048 14513,11075
 Holzweidepfad: eng, Fuﬂg‰nger	q3 5791,18778 5792,18727
 Marthashof: Fuﬂg‰nger, spielende Kinder	q3 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,14730
 (R¸tlistr. - Baseler Str.): einige Fuﬂg‰nger	q1 7062,17500 7042,17562 6897,17616
@@ -1594,7 +1593,7 @@ Am Triftpark: Temposchwellen	q2 4450,20388 4407,20412 4386,20444 4407,20482 4436
 #: by: Claus Zingel:
 Eschershauser Weg: parkende Autos, un¸bersichtlich	q1 -190,4776 -146,4814 -97,4849 -48,4888 10,4932 110,4950
 #: by: Zappel (Mrs Marple):
-Begasstr.: eng	q1 6275,7004 6414,7009
+Begasstr.: eng	q1 6275,7004 6408,7008
 #: by: Martina Urban: vvv
 Friedrichsruher Str.: sehr eng	q1 6637,5952 6508,5931 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 Schˆnhauser Str.: eng	q1 5803,6403 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765

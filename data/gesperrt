@@ -177,8 +177,8 @@ Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
-Grazer Platz	1 6442,6788 6529,6798 6668,6815 6793,6814
-Grazer Platz	1 6801,6736 6676,6734 6546,6720 6517,6717 6451,6710
+Grazer Platz	1 6430,6787 6529,6798 6668,6815 6793,6814
+Grazer Platz	1 6801,6736 6676,6734 6546,6724 6517,6722 6439,6716
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12045,16574 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12023,23039 12185,23021
@@ -770,6 +770,9 @@ Am Kleinen Platz	1 -7248,14826 -7292,14811
 Ella-Trebe-Str.	1s 7938,13302 7938,13150
 Waldmeisterstr.	1 1736,7557 1880,7558 1930,7594
 Waldmeisterstr.	1 1956,7453 1878,7499 1722,7497
+Buolstr.	1 559,15342 429,15284
+Janischweg	1 429,15284 431,15230 453,15173 473,15169
+Köttgenstr.	1 473,15169 556,15175 613,15195
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 (Wollestr. - Mühlenstr.)	1 -10790,-1178 -10787,-1162 -10730,-1103 -10691,-1097 -10648,-1130
@@ -2040,7 +2043,7 @@ tragen (12 Stufen):	0:20:40 -2993,14568
 tragen (drei flache Stufen)	0:10:-137 -7445,-5002
 tragen (zwei Stufen)	0:10:-27 5970,20353
 tragen (ca. 45 Stufen, Aufzug ist vorhanden)	0:30:20 13503,11179
-tragen (flache Treppe, wenige Stufen)	0:10:-193 6530,6786
+tragen (flache Treppe, wenige Stufen)	0:10:-194 6530,6786
 tragen (ca. 10 Stufen)	0:20:-198 26407,161781
 tragen (15 Stufen oder steile Kinderwagenrampe)	0:30:55 2956,24373
 tragen (Treppe)	0:30:-96 2854,23062
@@ -2445,6 +2448,9 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
 Drängelgitter	BNP:3:64:trailer=10 49739,-90894
+Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572
+Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193
+Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982
 Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
 An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-1339 -11235,-1465 -11137,-1680 -11089,-1730 -10973,-1764
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094

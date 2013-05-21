@@ -406,7 +406,7 @@ Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,1115
 Simplonstr.: Kopfsteinpflaster	Q2 13996,11631 13992,11605 14031,11569 14049,11553 14099,11505 14181,11434 14254,11377 14327,11308 14367,11276 14394,11254 14465,11195
 Simplonstr.: Kopfsteinpflaster	Q2; 14465,11195 14530,11137
 Simplonstr.: bis zur Fahrbahnmitte asphaltiert	Q1; 14530,11137 14465,11195
-Simplonstr.: Kopfsteinpflaster	Q2 14530,11137 14601,11074 14677,11027 14752,11041
+Simplonstr.: Kopfsteinpflaster	Q2 14530,11137 14601,11074 14634,11048 14677,11027 14752,11041
 Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
 Matkowskystr.: Kopfsteinpflaster	Q2 14530,11137 14513,11075
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2 14752,11041 14811,11067 14879,11182
@@ -434,7 +434,8 @@ Brehmestr.: Kopfsteinpflaster	Q2 9904,17347 9975,17359 10085,17379 10214,17401
 Heynstr.: Kopfsteinpflaster	Q2 10214,17401 10207,17448 10205,17506
 Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10499,17286 10774,17277
 Dolomitenstr. Kopfsteinpflaster	Q2 10298,17299 10228,17231
-Helmerdingstr.: Kopfsteinpflaster	Q2 14465,11195 14442,11101
+Helmerdingstr.: Kopfsteinpflaster	Q2; 14442,11101 14465,11195
+Helmerdingstr.: Asphalt/Kopfsteinpflaster	Q2; 14465,11195 14442,11101
 Haasestr.: Kopfsteinpflaster	Q2 14327,11308 14286,11186
 Döringstr.: Beton	Q1 14394,11254 14357,11148
 Calvinstr.: Kopfsteinpflaster	Q2 6776,12668 6802,12797 6860,13093
@@ -2184,7 +2185,7 @@ Niederlagstr.: Asphalt	Q0 9943,12364 9961,12273 9972,12184
 Werdersche Rosenstr.: Asphalt	Q0 9875,12257 9961,12273
 Müncheberger Str.: mäßiger Asphalt, Bodenschwellen	Q1 12446,11983 12617,11888
 Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9291,5908
-Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 9955,5993
+Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 10215,5959 9955,5993
 Wussowstr.: Asphalt	Q0 12798,5580 12702,5553
 Buschrosensteig: Asphalt	Q0 12812,5526 12986,5564
 Buschrosenplatz: Asphalt	Q0 13075,5470 13054,5556 13002,5548 12986,5564
@@ -7189,7 +7190,7 @@ Sulzbacher Steig: unbefestigte Straße	Q2 -8617,14848 -8443,14826
 (Am Zeppelinpark - Sommerbad West-Staaken): wassergebundene Decke	Q1 -8426,13818 -8232,13846
 (Am Zeppelinpark - Stadtgrenze): Asphalt	Q0 -8426,13818 -8550,13781 -8971,13610
 (entlang der Autobahn): Gehwegplatten	Q0 6489,7908 6437,7968
-Zur Revaler Str.: Asphalt	Q0 14677,11027 14513,11075
+Zur Revaler Str.: Asphalt	Q0 14634,11048 14513,11075
 Waldowstr.: Asphalt	Q0 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5547,18665
 Borggrevestr.: Beton	Q1 5545,18590 5634,18587 5715,18586 5795,18585 5856,18569
 Pfifferlingweg: Kopfsteinpflaster	Q2 5635,18776 5635,18736
@@ -7894,6 +7895,8 @@ Roedenbecksteig: Asphalt	Q0 -9400,439 -8629,175
 (Umfahrung Hahn-Meitner-Institut): Beton	Q0 -7732,313 -7844,392 -8021,393 -8301,326 -8398,242 -8387,190
 Conradstr.: Asphalt	Q0 -5869,1261 -5804,1163 -5781,1120
 Conradstr.: unbefestigte Straße	Q2 -5781,1120 -5753,998
+(Ordensmeisterstr./Komturstr. - Kolonie Albrechtshöhe): Asphalt	Q0 10254,5921 10215,5959
+Koseler Weg: Asphalt	Q0 9850,6135 9949,6130
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -10610,7 +10613,7 @@ Siedlungsring (Karow): sehr guter Asphalt	Q0 16139,24162 16245,24159 16357,24093
 Am Dianaplatz: schlechtes Kopfsteinpflaster	Q3 4093,22088 4028,22184 3985,22236
 Straße im Walde: Asphalt	Q0 23145,7429 22900,7611 22835,7659 22730,7737
 Eduardstr.: Kopfsteinpflaster	Q2 16531,11158 16420,11189 16311,11226
-Kauschstr.: asphaltiert	Q0 6517,6717 6538,6499
+Kauschstr.: asphaltiert	Q0 6517,6722 6538,6499
 Meßmerstr.: guter Beton	Q0 8535,1125 8668,1409
 Schwanter Weg: Kopfsteinpflaster	Q2 -4744,17053 -4758,16910 -4763,16809 -4770,16674
 Würzburger Str.: guter Asphalt	Q0 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891

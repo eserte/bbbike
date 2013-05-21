@@ -1,92 +1,6 @@
-$#temp_blocking = 2;
+$#temp_blocking = 30;
 push @temp_blocking,
 (
-       {
-         'periodic' => 1,
-         'until' => 1369087199,
-         'text' => 'Straßenfest rund um den Blücherplatz, 17.05.2013 bis 20.05.2013',
-         'from' => 1368655200,
-         'id' => 3,
-         'data' => 'userdel	2::temp 9521,10010 9827,10051
-userdel	2::temp 9521,10010 9448,10014
-userdel	2::temp 9599,10175 9687,10180 9825,10206
-userdel	2::temp 9416,10196 9599,10175
-userdel	2::temp 9579,10122 9536,10064
-userdel	2::temp 9579,10122 9631,10142 9702,10129
-userdel	2::temp 9837,10117 9827,10051
-userdel	2::temp 9837,10117 9858,10199
-userdel	2::temp 9599,10175 9579,10122
-userdel	2::temp 9702,10129 9827,10051
-userdel	2::temp 9702,10129 9816,10119
-userdel	2::temp 9599,10175 9631,10142 9687,10180
-userdel	3 9922,10010 9827,10051 9837,9856
-userdel	3 9837,9856 9827,10051 9922,10010
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'periodic' => 1,
-         'until' => 1369000799,
-         'text' => 'Karneval der Kulturen, 19.5.2013',
-         'from' => 1368828000,
-         'id' => 4,
-         'data' => 'userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
-userdel	2::temp 10713,9260 10670,9286 10639,9304 10564,9292
-userdel	3 8774,9534 8777,9601 8779,9812
-userdel	3 8779,9812 8777,9601 8774,9534
-userdel	3 9000,9509 9044,9753 9073,9915
-userdel	3 9073,9915 9044,9753 9000,9509
-userdel	3 9280,9476 9334,9670 9387,9804
-userdel	3 9387,9804 9334,9670 9280,9476
-userdel	3 9524,9426 9552,9602 9588,9827
-userdel	3 9588,9827 9552,9602 9524,9426
-userdel	3 9650,9404 9676,9564 9705,9732
-userdel	3 9705,9732 9676,9564 9650,9404
-userdel	3 9767,9386 9790,9528 9820,9718
-userdel	3 9820,9718 9790,9528 9767,9386
-userdel	3 9892,9286 9927,9487 9957,9692
-userdel	3 9957,9692 9927,9487 9892,9286
-userdel	3 10004,9268 10032,9456 10067,9667
-userdel	3 10067,9667 10032,9456 10004,9268
-userdel	3 10123,9233 10198,9405 10306,9640
-userdel	3 10306,9640 10198,9405 10123,9233
-userdel	3 10547,9233 10564,9292 10580,9361
-userdel	3 10580,9361 10564,9292 10547,9233
-userdel	3 10705,9234 10713,9260 10747,9326
-userdel	3 10747,9326 10713,9260 10705,9234
-userdel	3 11141,9107 11136,9183 11208,9345 11274,9492
-userdel	3 11274,9492 11208,9345 11136,9183 11141,9107
-userdel	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
-userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'periodic' => 1,
          'until' => 1378666800,
@@ -2142,18 +2056,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => undef,
-         'recurring' => 1,
-         'text' => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Di 08.00-13.00 und Fr 08.00-13.00, Behinderungen möglich',
-         'from' => undef,
-         'id' => 1822,
-         'data' => '	q4::temp:clock 589,11953 577,11837 562,11710 560,11695 550,11607
-# Wochenmärkte ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-######################################################################
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -2607,7 +2510,7 @@ userdel auto	3 10178,10411 10122,10294 10083,10192
 userdel auto	3 8610,12254 8538,12245 8522,12187
 userdel auto	3 8610,12254 8538,12245 8522,12239
 userdel auto	3 7816,12150 8055,12186 8048,12135
-userdel auto	3 8861,12125 8901,12008 8972,11810
+userdel auto	3 8861,12125 8901,12008 8965,11825
 userdel auto	3 8048,12135 8055,12186 7816,12150
 userdel auto	3 9201,11968 9183,12076 9270,12086 9385,12098
 userdel auto	3 9865,10227 9873,10285 9858,10350
@@ -2628,7 +2531,7 @@ userdel auto	3 9028,12307 9141,12320 9358,12351
 userdel auto	3 9239,10313 9404,10250 9409,10226
 userdel auto	3 9058,11564 9155,11283 9478,11317
 userdel auto	3 9016,12416 9130,12433 9343,12464
-userdel auto	3 8972,11810 8901,12008 8861,12125
+userdel auto	3 8965,11825 8901,12008 8861,12125
 userdel auto	3 9250,10563 9388,10393 9527,10389
 userdel auto	3 9131,10716 9323,10791 9539,10820
 userdel auto	3 9385,12098 9270,12086 9183,12076 9201,11968
@@ -2862,19 +2765,7 @@ userdel	q4::inwork 425,8766 490,8716
 ',
          'type' => 'gesperrt'
        },
-       {
-         'periodic' => 1,
-         'until' => 1369000800,
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2013 bis 20.05.2013',
-         'from' => 1366840800,
-         'id' => 2207,
-         'data' => 'userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-userdel	q4::temp 11275,8387 11230,8402
-userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3027,8 +2918,8 @@ userdel	2::inwork 19968,16 19940,52
        undef,
        {
          'source_id' => 'INKO_111647',
-         'until' => 1370005200,
-         'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte 2013',
+         'until' => 1377867600,
+         'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende August 2013',
          'from' => 1330902000,
          'id' => 2316,
          'data' => '#: osm_watch: way id="23243508" version="30"

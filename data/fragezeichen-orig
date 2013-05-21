@@ -58,18 +58,20 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: last_checked: 2013-05-01 (zumindest im nördlichen Bereich keine Anzeichen für Markierungsarbeiten)
-#: next_check: 2013-08-01
+#: next_check: 2013-07-21
 #: osm_watch: way id="4410417" version="10"
 #: osm_watch: way id="4410418" version="10"
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130517.0940.384950.html (bis Herbst 2013)
 Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
 # 
 #: XXX Baumaßnahme 4.12 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn noch nicht 2012)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: last_checked: 2013-05-01
-#: next_check: 2013-09-01
+#: next_check: 2013-07-21
 #: osm_watch: way id="38523780" version="4"
-Lise-Meitner-Str.: werden hier Radspuren markiert?	?::projected 3711,13202 3721,13274 3742,13416 3741,13495 3741,13558 3735,13618 3717,13743 3702,13865
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130517.0940.384950.html (bis Herbst 2013)
+Lise-Meitner-Str.: Radspuren werden hier 2013 markiert	?::inwork 3711,13202 3721,13274 3742,13416 3741,13495 3741,13558 3735,13618 3717,13743 3702,13865
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
 #: osm_watch: way id="4609212"  version="7"
@@ -118,7 +120,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-05-15 vvv
+#: last_checked: 2013-05-21 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -304,6 +306,7 @@ Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8
 # 
 #: last_checked: 2013-05-06
 #: next_check: 2013-09-06
+#: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
 # 
@@ -341,13 +344,14 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: last_checked: 2013-05-06
+#: last_checked: 2013-05-12 vvv
+Ampelanlage in Bau	?::inwork 9242,7286
+Ampelanlage in Bau	?::inwork 9242,7325
+#: last_checked ^^^
+# 
+#: last_checked: 2013-05-17
 #: next_check: 2013-08-06
 Grünanlage an der Gottlieb-Dunkel-Str.: Parkwege entstehen, evtl. eine lohnende Abkürzung, Qualität, nachts beleuchtet?	?::inwork 11010,6004 11056,5861 11153,5835
-# 
-#: last_checked: 2013-05-06
-#: next_check: 2013-05-13
-Kol. Albrechtshöhe: asphaltierte Diagonalverbindung entsteht	?::inwork 10254,5921 10223,5951
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130410.1200.383317.html
 Schönwalder Allee: Radweg wird saniert, danach asphaltiert	?::inwork; -3807,17226 -3820,17276 -3936,17516
@@ -553,8 +557,8 @@ Am Filmlager: Qualität? Genaue Lage der Straße (GPS-Track?)	? 22802,5325 22808,5
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_06_21.pdf?start&ts=1340354416&file=stra__enbauliste_stand_2012_06_21.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
-#: last_checked: 2013-05-06
-#: next_check: 2013-07-06
+#: last_checked: 2013-05-17
+#: check_frequency: 60d
 #: osm_watch: way id="4663347" version="14"
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10339,5948 10254,5921 10027,5868 9796,5790
 # 
@@ -896,6 +900,13 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+# by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7281 (Idee)
+Viktoriaufer/Jüdenstr. - Am Juliusturm: existiert eine Verbindung für Radfahrer? Kann man auch Richtung Falkenseer Platz fahren?	? -3249,14621 -3224,14655 -3188,14652
+# 
+Koseler Weg: genauen Straßenverlauf feststellen; nachts beleuchtet?	? 9949,6130 9850,6135 9685,6144
+# 
+Bäkestr./Ostpreußendamm: ist hier eine Ampel?	? 4832,2975
+# 
 Behringstr.: Vorfahrtsstraße?	? -9692,-986 -9751,-1183 -9785,-1333
 Behringstr.: Vorfahrtsstraße?	? -9473,-762 -9445,-702
 # 
@@ -962,6 +973,7 @@ Höhenweg am Wustrower Park: geht es hier weiter?	? 17275,18356 17564,18010 17585
 # REMOVED (zumindest an der Rathausstr. nichts gesehen) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4429 --- Am Teltowkanal: gibt es durch die Bauarbeiten hier Einschränkungen? Wird die Qualität danach besser werden?	? 8784,5095 8881,5143 9171,5263 9192,5272
 # REMOVED (keine Vorfahrt!) --- # Linkstr.: hier auch Vorfahrt?	? 8392,11077 8370,11010 8342,10916
 # 
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5437
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/bplan1135.pdf?start&ts=1363256158&file=bplan1135.pdf
 #: last_checked: 2013-04-20
 #: next_check: 2014-04-20
@@ -981,7 +993,8 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen angelegt	? 15726,23475 15637,23251
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3501
-#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036924327063/924327063/00054997/97-Anlagen/02/Benennungvon20PrivatwegeninderAnlageGravenstei.pdf 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036924327063/924327063/00054997/97-Anlagen/02/Benennungvon20PrivatwegeninderAnlageGravenstei.pdf
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2013
 #: XXX 13127 Berlin, Ortsteil Französisch Buchholz, fehlen alle in Berlin.coords.data vvv
 #: XXX Benennung von 20 Privatwegen in der Anlage Gravenstein: genaue Lage der Wege? Qualität? Beleuchtet? vvv
 Landapfelweg: Qualität?	? 12825,21771 12940,21738 12994,21719

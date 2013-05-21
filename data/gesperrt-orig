@@ -213,8 +213,8 @@ Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
-Grazer Platz	1 6442,6788 6529,6798 6668,6815 6793,6814
-Grazer Platz	1 6801,6736 6676,6734 6546,6720 6517,6717 6451,6710
+Grazer Platz	1 6430,6787 6529,6798 6668,6815 6793,6814
+Grazer Platz	1 6801,6736 6676,6734 6546,6724 6517,6722 6439,6716
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12045,16574 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12023,23039 12185,23021
@@ -1044,6 +1044,11 @@ Am Kleinen Platz	1 -7248,14826 -7292,14811
 Ella-Trebe-Str.	1s:q3 7938,13302 7938,13150
 Waldmeisterstr.	1 1736,7557 1880,7558 1930,7594
 Waldmeisterstr.	1 1956,7453 1878,7499 1722,7497
+#: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7281 vvv
+Buolstr.	1 559,15342 429,15284
+Janischweg	1 429,15284 431,15230 453,15173 473,15169
+Köttgenstr.	1 473,15169 556,15175 613,15195
+#: by: ^^^
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2289,6 +2294,12 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check: 2013-10-06 vvv
+Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572
+Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193
+Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982
+#: next_check ^^^
+# 
 #: last_checked: 2013-05-04
 #: next_check: 2013-07-04
 Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
@@ -2382,8 +2393,7 @@ Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 
 #: osm_watch: way id="159457523" version="2"
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 
-#: last_checked: 2013-04-02
-#: next_check: 2013-05-31
+#: last_checked: 2013-05-17
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch handicap in der Voßstr.
 #: XXX laut INKO_113363 bis Ende Mai 2013 gesperrt

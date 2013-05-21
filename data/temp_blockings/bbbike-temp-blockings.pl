@@ -15546,8 +15546,8 @@ EOF
 	q4::temp:clock 1020,496 1078,443
 EOF
      },
-     { from  => undef, #
-       until => undef, #
+     { from  => 1368817113, # undef, # by: Stefan Klinkusch: während des Wochenmarkts ist die Gegenfahrbahn in beide Richtungen befahrbar, so dass sich keine Behinderungen ergeben
+       until => 1368817119, # undef, #
        #: by: Stefan Klinkusch (korrigierte Wochentage)
        text  => 'Preußenallee zwischen Marathonallee und Badenallee: Wochenmarkt Di 08.00-13.00 und Fr 08.00-13.00, Behinderungen möglich',
        type  => 'gesperrt',
@@ -17883,7 +17883,7 @@ userdel auto	3 10178,10411 10122,10294 10083,10192
 userdel auto	3 8610,12254 8538,12245 8522,12187
 userdel auto	3 8610,12254 8538,12245 8522,12239
 userdel auto	3 7816,12150 8055,12186 8048,12135
-userdel auto	3 8861,12125 8901,12008 8972,11810
+userdel auto	3 8861,12125 8901,12008 8965,11825
 userdel auto	3 8048,12135 8055,12186 7816,12150
 userdel auto	3 9201,11968 9183,12076 9270,12086 9385,12098
 userdel auto	3 9865,10227 9873,10285 9858,10350
@@ -17904,7 +17904,7 @@ userdel auto	3 9028,12307 9141,12320 9358,12351
 userdel auto	3 9239,10313 9404,10250 9409,10226
 userdel auto	3 9058,11564 9155,11283 9478,11317
 userdel auto	3 9016,12416 9130,12433 9343,12464
-userdel auto	3 8972,11810 8901,12008 8861,12125
+userdel auto	3 8965,11825 8901,12008 8861,12125
 userdel auto	3 9250,10563 9388,10393 9527,10389
 userdel auto	3 9131,10716 9323,10791 9539,10820
 userdel auto	3 9385,12098 9270,12086 9183,12076 9201,11968
@@ -18558,7 +18558,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016591',
        data  => <<EOF,
-userdel	q4::inwork 13220,23679 13953,23497
+userdel	q4::inwork 13199,23657 13953,23497
 EOF
      },
      { from  => 1289257200, # 2010-11-09 00:00
@@ -20100,8 +20100,8 @@ userdel	q4::inwork 2295,20358 2241,20487
 EOF
      },
      { from  => 1330902000, # 2012-03-05 00:00
-       until => 1370005200, # 2013-05-31 15:00
-       text  => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte 2013',
+       until => $isodate2epoch->("2013-08-30 15:00:00"), # 1370005200, # 2013-05-31 15:00
+       text  => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende August 2013',
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
