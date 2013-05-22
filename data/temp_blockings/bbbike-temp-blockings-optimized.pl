@@ -1439,7 +1439,26 @@ userdel	2::temp 14500,9856 14483,9843
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019858',
+         'until' => 1369605600,
+         'text' => 'Fanmeile zum Champions-League-Finale, Straße des 17. Juni bis zum Großen Stern und Ebertstr. gesperrt, 23.05.2013 bis 26.05.2013',
+         'from' => 1369173600,
+         'id' => 1391,
+         'data' => '#: by: http://www.rbb-online.de/nachrichten/sport/2013_05/champions_league_fanmeile_berlin.html
+userdel	2::temp 8600,12165 8538,12245 8610,12254 8731,12270
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
+userdel auto	3 8119,12414 8055,12186 8048,12135
+userdel auto	3 7827,12105 7816,12150 7875,12363
+userdel auto	3 8048,12135 8055,12186 8119,12414
+userdel auto	3 8522,12187 8538,12245 8522,12239
+userdel auto	3 8522,12239 8538,12245 8522,12187
+userdel auto	3 7875,12363 7816,12150 7827,12105
+userdel auto	3 7039,12314 7383,12095 7460,12054
+userdel auto	3 7460,12054 7383,12095 7039,12314
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
