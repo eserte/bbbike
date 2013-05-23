@@ -354,16 +354,20 @@ sub umlauts_to_german {
     $s;
 }
 
+# "xfrm" should resemble strxfrm(3), which is done here:
+# create something which may simply be cmp'd.
+sub german_locale_xfrm {
+    my $val = lc umlauts_for_german_locale($_[0]);
+    $val =~ s{[\(\)\"\.]}{}g;
+    $val;
+}
+
 sub sort_german {
     my($arr_ref) = @_;
     map { $_->[1] }
 	sort { $a->[0] cmp $b->[0] }
 	    map {
-		[ do {
-		    my $val = lc umlauts_for_german_locale($_);
-		    $val =~ s{[\(\)\"\.]}{}g;
-		    $val;
-		}, $_]
+		[ german_locale_xfrm($_), $_]
 	    } @$arr_ref;
 }
 
