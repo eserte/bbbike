@@ -2440,18 +2440,6 @@ sub choose_ch_form {
 	$per_char_filtering = 1;
     }
 
-#XXX Diese locale-Manipulation mit choose_all_form verbinden, und Sortierung
-#    in eigene Subroutine auslagern.
-    use locale;
-    eval {
-	local $SIG{'__DIE__'};
-	require POSIX;
-	foreach my $locale (qw(de de_DE de_DE.ISO8859-1 de_DE.ISO_8859-1)) {
-	    # Aha. Bei &POSIX::LC_ALL gibt es eine Warnung, ohne & und mit ()
-	    # funktioniert es reibungslos.
-	    last if POSIX::setlocale( POSIX::LC_COLLATE(), $locale);
-	}
-    };
     http_header(@weak_cache);
     header();
 
@@ -2551,7 +2539,7 @@ sub choose_ch_form {
     @strlist =
 	map { $_->[1] }
 	    sort { $a->[0] cmp $b->[0] }
-		map { [ref $_ ? $_->{short} : $_, $_] }
+		map { [BBBikeUtil::german_locale_xfrm(ref $_ ? $_->{short} : $_), $_] }
 		    @strlist;
 
     print
@@ -6985,20 +6973,6 @@ EOF
 }
 
 sub choose_all_form {
-#XXX siehe choose_ch_form
-    my $locale_set = 0;
-    my $old_locale;
-    use locale;
-    eval {
-	local $SIG{'__DIE__'};
-	require POSIX;
-	$old_locale = &POSIX::setlocale(&POSIX::LC_COLLATE, "");
-	foreach my $locale (qw(de de_DE de_DE.ISO8859-1 de_DE.ISO_8859-1)) {
-	    $locale_set=1, last
-		if (&POSIX::setlocale(&POSIX::LC_COLLATE, $locale));
-	}
-    };
-
     http_header(@weak_cache);
     header(#too slow XXX -onload => "list_all_streets_onload()",
 	   -script => {-src => $bbbike_html . "/bbbike_start.js?v=$bbbike_start_js_version",
@@ -7013,18 +6987,12 @@ sub choose_all_form {
 	last if !@{$ret->[1]};
 	push(@strlist, $ret->[0]);
     }
-    my %trans = %BBBikeUtil::uml_german_locale;
-    if ($locale_set) {
-	@strlist = sort @strlist;
-    } else {
-	@strlist = map  { $_->[1] }
-	           sort { $a->[0] cmp $b->[0] }
-		   map  { #XXX del:(my $s = $_) =~ s/($trans_rx)/$trans{$1}/ge;
-		          (my $s = $_) =~ s/($BBBikeUtil::uml_german_locale_keys_rx)/$BBBikeUtil::uml_german_locale{$1}/ge;
-			  [ $s, $_]
-		      }
-		       @strlist;
-    }
+    @strlist =
+	map  { $_->[1] }
+	    sort { $a->[0] cmp $b->[0] }
+		map { [BBBikeUtil::german_locale_xfrm($_), $_] }
+		    @strlist;
+
     my $last = "";
     my $last_initial = "";
 
@@ -7037,6 +7005,7 @@ sub choose_all_form {
 #     }
     print "</center><div id='list'>";
 
+    my %trans = %BBBikeUtil::uml_german_locale;
     for(my $i = 0; $i <= $#strlist; $i++) {
 	next if ($strlist[$i] =~ /^\(/);
 	next if $last eq $strlist[$i];
@@ -7073,14 +7042,6 @@ sub choose_all_form {
     print "</div>";
 
     print $q->end_html;
-
-    if ($locale_set && defined $old_locale) {
-	eval {
-	    local $SIG{'__DIE__'};
-	    &POSIX::setlocale( &POSIX::LC_COLLATE, $old_locale);
-	};
-	warn $@ if $@; #XXX remove?
-    }
 }
 
 sub get_nearest_crossing_coords {
