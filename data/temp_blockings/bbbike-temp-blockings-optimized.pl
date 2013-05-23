@@ -7,9 +7,11 @@ push @temp_blocking,
          'text' => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Wein- und Winzerfest, vom 7.9.2013 11:00 bis 8.9.2013 21:00',
          'from' => 1378458000,
          'id' => 31,
-         'type' => 'gesperrt',
-         'data' => 'userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
-'
+         'data' => '#: by: http://www.family-and-friends-ev.de/3.html
+#: by: http://www.ag-bahnhofstrasse.de/weinfest.html
+userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
+',
+         'type' => 'gesperrt'
        },
        undef,
        undef,
@@ -418,7 +420,16 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-lichtenrade.html?y=2012',
+         'until' => 1386543599,
+         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (am alle Adventssamstage von 11:00 bis 20:30) ',
+         'from' => 1386284400,
+         'id' => 417,
+         'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1721,10 +1732,11 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        {
          'periodic' => 1,
          'until' => 1369605599,
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), Straße wahrscheinlich vollständig gesperrt (25. und 26. Mai 2013)',
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), beide Fahrbahnen der Straße gesperrt (25. und 26. Mai 2013)',
          'from' => 1369346400,
          'id' => 1642,
-         'data' => 'userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607
+         'data' => '#: by: http://www.family-and-friends-ev.de/3.html
+userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 ',
          'type' => 'gesperrt'
        },
@@ -2237,7 +2249,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'periodic' => 1,
          'until' => 1379872800,
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (21. und 22. September 2011) ',
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (21. und 22. September 2013) ',
          'from' => 1379667600,
          'id' => 1910,
          'data' => 'userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
@@ -3343,6 +3355,18 @@ userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
          'data' => '#: last_checked: 2013-05-08
 #: XXX wann sind die Bauarbeiten beendet?
 userdel	q4::inwork; 7085,15226 7131,15109
+',
+         'type' => 'handicap'
+       },
+       {
+         'periodic' => 1,
+         'until' => 1370210399,
+         'text' => 'Bahnhofstraße (Lichtenrade): Veranstaltung (Lichtenrader Maientanz), Straße vermutlich gesperrt (1. und 2. Juni 2013)',
+         'from' => 1369951200,
+         'id' => 2431,
+         'data' => '#: by: http://www.family-and-friends-ev.de/3.html
+#: by: http://www.ag-bahnhofstrasse.de/maientanz.html
+userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 ',
          'type' => 'handicap'
        }

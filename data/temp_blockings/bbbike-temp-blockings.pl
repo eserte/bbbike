@@ -246,11 +246,13 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
      { from  => $isodate2epoch->("2013-09-06 11:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-09-08 21:00:00"),
        periodic => 1,
-       data  => <<EOF,
-userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
-EOF
        text  => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Wein- und Winzerfest, vom 7.9.2013 11:00 bis 8.9.2013 21:00',
        type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.family-and-friends-ev.de/3.html
+#: by: http://www.ag-bahnhofstrasse.de/weinfest.html
+userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
+EOF
      },
      { from  => 1096596000, # 2004-10-01 04:00
        until => 1096927200, # 2004-10-05 00:00
@@ -3536,12 +3538,12 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => 1356044400, # 2012-12-21 00:00 # 1354356000, # 1324076400, # 2011-11-26 11:00, PERIODISCH! an allen Adventssamstagen
-       until => 1356217199, # 2012-12-22 23:59 # 1354390200, # 1324150200, # 2011-11-26 20:30, PERIODISCH! an allen Adventssamstagen
-       text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (alle Adventssamstage von 11:00 bis 20:30) ',
+     { from  => $isodate2epoch->("2013-12-06 00:00:00"), # 1 Tag Vorlauf # PERIODISCH! früher (<=2012) an allen Adventssamstagen
+       until => $isodate2epoch->("2013-12-08 23:59:59"), #                 PERIODISCH! früher (<=2012) an allen Adventssamstagen
+       text  => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (am 7. und 8. Dezember 2013)',
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-lichtenrade.html?y=2012',
        data  => <<EOF,
+#: by: http://www.ag-bahnhofstrasse.de/weihnachtsmarkt.html
 userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
@@ -13996,10 +13998,11 @@ EOF
      { from  => $isodate2epoch->("2013-05-24 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-05-26 23:59:59"),
        periodic => 1,
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), Straße wahrscheinlich vollständig gesperrt (25. und 26. Mai 2013)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), beide Fahrbahnen der Straße gesperrt (25. und 26. Mai 2013)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607
+#: by: http://www.family-and-friends-ev.de/3.html
+userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
      { from  => 1241419680, # 2009-05-04 08:48
@@ -16318,7 +16321,7 @@ EOF
      { from  => $isodate2epoch->("2013-09-20 11:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-09-22 20:00:00"),
        periodic => 1,
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (21. und 22. September 2011) ',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (21. und 22. September 2013) ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
@@ -18337,13 +18340,13 @@ EOF
 userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
 EOF
      },
-     { from  => 1346968800, # 2012-09-07 00:00 # PERIODISCH!
+     { from  => 1346968800, # 2012-09-07 00:00 # siehe anderen Eintrag für periodic=>1
        until => 1347228000, # 2012-09-10 00:00
        text  => 'Bahnhofstraße (Lichtenrade): Veranstaltung, Straße vollständig gesperrt zwischen Goltzstr. und Steinstr. (bis 09.09.12 nachts)',
        type  => 'handicap',
        source_id => 'IM_019152',
        data  => <<EOF,
-userdel	q4::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
      { from  => 1284091200, # 2010-09-10 06:00 # PERIODISCH!
@@ -21230,6 +21233,17 @@ EOF
 #: last_checked: 2013-05-08
 #: XXX wann sind die Bauarbeiten beendet?
 userdel	q4::inwork; 7085,15226 7131,15109
+EOF
+     },
+     { from  => $isodate2epoch->("2013-05-31 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-06-02 23:59:59"),
+       text  => 'Bahnhofstraße (Lichtenrade): Veranstaltung (Lichtenrader Maientanz), Straße vermutlich gesperrt (1. und 2. Juni 2013)',
+       periodic => 1,
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: http://www.family-and-friends-ev.de/3.html
+#: by: http://www.ag-bahnhofstrasse.de/maientanz.html
+userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
     );
