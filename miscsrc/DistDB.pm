@@ -61,9 +61,13 @@ sub calculate_dist {
     $routing->Start->Coord($from);
     $routing->Goal->Coord($to);
     $routing->fix_position($_) for ($routing->Start, $routing->Goal);
-    $routing->search;
-    my $route_info = $routing->RouteInfo;
-    $route_info->[-1]->{WholeMeters};
+    if ($routing->Start->Coord eq $routing->Goal->Coord) {
+	0;
+    } else {
+	$routing->search;
+	my $route_info = $routing->RouteInfo;
+	$route_info->[-1]->{WholeMeters};
+    }
 }
 
 1;

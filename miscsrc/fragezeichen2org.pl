@@ -226,7 +226,7 @@ sub _get_dist {
     my $dist_db = _get_distdb();
     my $dist = eval { $dist_db->get_dist($p1, $min_p) };
     if ($@) {
-	die "Failed to get distance between $p1 and $min_p";
+	die "Failed to get distance between $p1 and $min_p: $@";
     }
     $dist;
 }
