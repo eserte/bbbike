@@ -4,6 +4,7 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
+Simplonstr.: Bauarbeiten, umst‰ndliches ‹berqueren der Modersohnstr.	q3::inwork 14254,11377 14181,11434 14099,11505
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 13366,11651 13295,11792
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraﬂe gesperrt, Ausweichen auf Gehweg mˆglich	q4::inwork 9343,12464 9358,12351
@@ -34,6 +35,7 @@ Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732
 Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22478,6041 22544,6037 22539,5956
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fuﬂg‰ngerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Radweg Herzberge: wegen Bauarbeiten m¸ssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17266,14144
+Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15535,12420 15446,12450 15399,12444 15402,12390 15350,12270
 Malchower Weg: Einbahnstraﬂe wegen Bauarbeiten (bis zum 31.05.2013), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
@@ -1279,7 +1281,7 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0 11933,12701 11971,12785 11921,12810
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11367,12940
-(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11600,12857 11589,12768
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11600,12857 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
 (Berolinastr.): Fuﬂg‰nger	q1 11885,12905 11906,12947 11921,12990
 (Berolinastr.): Fuﬂg‰nger, Bordstein	q2 11921,12990 11983,12949

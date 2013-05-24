@@ -172,6 +172,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15513,13539
 	X 16866,13532
 #: XXX_prog Fußgängerüberweg auf der westl. Seite fehlt, und macht einige Wege (von N nach S) länger
+#: XXX_prog beim Linksabbiegen von Westen kommend in die Oderbruchstr. hat man als Radfahrer drei Ampeln, wobei die letzten zwei wohl gleich geschaltet sind
 	X 14218,13834
 	F 8014,8771
 	X 7795,8765
@@ -2041,7 +2042,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 4920,9029
 	X 21647,15496
 #: XXX_prog: zusammenhängende Ampelanlage vvv
-	X 15530,12412
+	X 15535,12420
 	X 15508,12367
 #: XXX_prog: ^^^
 	F 10779,10934
@@ -2328,7 +2329,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B0 17953,15221
 #: note: provisorische Ampel
 #: XXX Siehe auch Baustelle in der Voßstr.
-#: last_checked: 2013-05-17
+#: last_checked: 2013-05-24
 #: next_check: 2013-07-02
 	X::inwork 9000,11727
 	X 25451,14018
@@ -2383,7 +2384,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX ^^^
 # 
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2013-05-08 vvv
+#: last_checked: 2013-05-24 vvv
 #: next_check: 2013-12-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8879,13913

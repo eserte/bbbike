@@ -12,10 +12,11 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-05-23 vvv
+#: last_checked: 2013-05-24 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
+Simplonstr.: Bauarbeiten, umst‰ndliches ‹berqueren der Modersohnstr.	q3::inwork 14254,11377 14181,11434 14099,11505
 # REMOVED --- Dirschauer Str.: Einbahnstraﬂenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
 #: next_check ^^^
 #: last_checked ^^^
@@ -75,7 +76,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 #: note: ab Glinkastr. nur ungef‰hr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
-#: last_checked: 2013-04-17 vvv
+#: last_checked: 2013-05-24 vvv
 #: osm_watch: way id="25185423" version="14"
 Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
 #: osm_watch: way id="4597205" version="6"
@@ -90,7 +91,7 @@ Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::in
 #: osm_watch: way id="197160274" version="1"
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2013-05-08 vvv
+#: last_checked: 2013-05-24 vvv
 #: next_check: 2013-12-31 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -200,6 +201,9 @@ Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fuﬂg‰ngerzone entste
 #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz
 Radweg Herzberge: wegen Bauarbeiten m¸ssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17266,14144
 # 
+#: last_checked: 2013-05-24
+#: XXX siehe auch qualitaet_s-orig: nach den Bauarbeiten besserer Asphalt?
+Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15535,12420 15446,12450 15399,12444 15402,12390 15350,12270
 ### Hohenschˆnhausen ###
 # 
 #: source_id: INKO_111447
@@ -1835,7 +1839,7 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11921,12810
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11367,12940
-(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11600,12857 11589,12768
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11600,12857 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
 (Berolinastr.): Fuﬂg‰nger	q1 11885,12905 11906,12947 11921,12990
 #: XXX_prog BS (am ˆstlichen Ende)

@@ -421,12 +421,12 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        {
-         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-lichtenrade.html?y=2012',
          'until' => 1386543599,
-         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (am alle Adventssamstage von 11:00 bis 20:30) ',
+         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (am 7. und 8. Dezember 2013)',
          'from' => 1386284400,
          'id' => 417,
-         'data' => 'userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+         'data' => '#: by: http://www.ag-bahnhofstrasse.de/weihnachtsmarkt.html
+userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 ',
          'type' => 'gesperrt'
        },
