@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: convert_radwege,v 1.30 2008/11/28 07:22:50 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2008,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,9 +14,12 @@
 
 # This script is primarily used for converting radwege data.
 # There are two modes:
-#   -exact: exact conversion for data used for routing
+#   -exact: exact conversion for data used for routing, and with the new
+#           line_do_offset bbd directive may also be used for plotting
 #   -noexact: radwege are displaced by a delta for drawing the
-#             cyclepaths next to the street (using the -delta option)
+#             cyclepaths next to the street (using the -delta option);
+#             obsoleted by the new capability of setting
+#	      line_do_offset for "exact" data 
 #
 # The script may also be misused for creating an area around a
 # path, e.g. for creating an entry for weblinks.bbd. Use the
@@ -158,6 +160,16 @@ my %rev_category_code;
 	$rci++;
 	($cat_hin, $cat_rueck, @coords);
     };
+}
+
+if ($exact) {
+    # With these directives the "exact" file is also suitable for
+    # plotting.
+    print <<EOF;
+#: line_do_offset: 1
+#: line_arrow: none
+#:
+EOF
 }
 
 while(1) {
