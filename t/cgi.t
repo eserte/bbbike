@@ -68,7 +68,7 @@ my %skip;
 if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
     $skip{mapserver} = 1;
 }
-if ($ENV{BBBIKE_TEST_SKIP_PALMDOC}) {
+if (!$ENV{BBBIKE_LONG_TESTS} || $ENV{BBBIKE_TEST_SKIP_PALMDOC}) {
     $skip{palmdoc} = 1;
 }
 
