@@ -288,6 +288,16 @@ of C<line_shorten_end.category>.
 
 Define whether lines are directed and present weights.
 
+=item C<line_do_offset: I<boolean>>
+
+=item C<line_do_offset.I<category>: I<boolean>>
+
+Define whether lines should be plotted with an offset or not. By
+default, lines which have a "splitted" category for the forward and
+backward directory (e.g. C<A;B>) are plotted with an offset, but this
+can be disabled by explicitely setting line_do_offset to a false
+value.
+
 =item C<item_size: I<integer>>
 
 =item C<item_size.I<category>: I<integer>>

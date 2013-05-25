@@ -6909,7 +6909,18 @@ EOF
 			       ($arrow ? (-arrow => $arrow) : ()),
 			      );
 			}
-			if (defined $cat_rueck) {
+			my $do_line_offset;
+			{
+			    $do_line_offset = $layer_category_line_do_offset{$abk} && $layer_category_line_do_offset{$abk}{$cat_hin};
+			    if (!defined $do_line_offset) {
+				$do_line_offset = $layer_line_do_offset{$abk};
+				if (!defined $do_line_offset) {
+				    $do_line_offset = defined $cat_rueck;
+				}
+			    }
+			}
+			if ($do_line_offset) {
+			    my $cat_rueck = defined $cat_rueck ? $cat_rueck: ''; # avoid warnings
 			    my $line_directed_weight = ($layer_category_line_directed_weight{$abk} && $layer_category_line_directed_weight{$abk}{$cat_hin}) || $layer_line_directed_weight{$abk};
 			    my($cl_hin,$cl_rueck);
 			    if (!$line_directed_weight) {
@@ -14972,6 +14983,8 @@ sub reset_free_layer {
     delete $layer_line_shorten_end{$abk};
     delete $layer_category_line_directed_weight{$abk};
     delete $layer_line_directed_weight{$abk};
+    delete $layer_category_line_do_offset{$abk};
+    delete $layer_line_do_offset{$abk};
     delete $layer_name{$abk};
     delete $layer_icon{$abk};
     delete $p_name_draw{$abk};
@@ -21855,6 +21868,7 @@ sub handle_global_directives {
 	   line_capstyle
 	   line_shorten line_shorten_end
 	   line_directed_weight
+	   line_do_offset
 	   name
 	  );
     # Aliases for directives without category

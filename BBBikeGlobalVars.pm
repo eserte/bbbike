@@ -79,6 +79,7 @@ BEGIN {
 	      line_shorten_end
 	      line_width
 	      line_directed_weight
+	      line_do_offset
 	 );
     @plotting_hint_item_vars =
 	qw(
