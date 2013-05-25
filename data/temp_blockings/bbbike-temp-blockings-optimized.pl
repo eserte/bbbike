@@ -1091,13 +1091,13 @@ userdel	2::temp 14500,9856 14483,9843
        undef,
        undef,
        {
-         'source_id' => 'IM_005931',
+         'source_id' => 'http://www.xhain.info/termine/seifenkistenrennen-mehringdamm.htm',
          'data' => 'userdel	1::temp 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890 9229,8785
 ',
          'periodic' => 1,
-         'until' => 1372283999,
-         'from' => 1372024800,
-         'text' => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 25. und 26 Juni 2013), Fahrtrichtung gesperrt',
+         'until' => 1369605599,
+         'from' => 1369432800,
+         'text' => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 26 Mai 2013), Fahrtrichtung gesperrt',
          'type' => 'gesperrt',
          'id' => 1050
        },
@@ -2600,16 +2600,17 @@ userdel auto	3 8804,12280 8775,12457 8766,12541
        undef,
        undef,
        {
-         'periodic' => 1,
-         'until' => 1372629599,
-         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (28. bis 30. Juni 2013)',
-         'from' => 1372284000,
-         'id' => 2089,
+         'source_id' => 'http://www.xhain.info/termine/bergmannstrassenfest.htm',
          'data' => 'userdel	q4::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
 userdel auto	3 9487,9209 9505,9306 9524,9426
 userdel auto	3 9524,9426 9505,9306 9487,9209
 ',
-         'type' => 'handicap'
+         'periodic' => 1,
+         'until' => 1372629599,
+         'from' => 1372284000,
+         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (28. bis 30. Juni 2013)',
+         'type' => 'handicap',
+         'id' => 2089
        },
        undef,
        undef,
@@ -3369,6 +3370,41 @@ userdel	q4::inwork; 7085,15226 7131,15109
 userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.suppeundmucke.de/',
+         'data' => 'userdel	2::temp 14096,11134 14076,11057 14043,10928 14026,10869
+userdel	2::temp 13886,10939 14026,10869 13896,10851 13856,10864
+userdel	2::temp 14011,10812 13896,10851
+userdel	2::temp 13886,10939 13856,10864
+',
+         'periodic' => 1,
+         'until' => 1377381599,
+         'from' => 1377208800,
+         'text' => 'SUPPE&MUCKE 2013 am 24. August am Rudolfplatz',
+         'type' => 'gesperrt',
+         'id' => 2432
+       },
+       {
+         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
+         'data' => 'userdel	2::temp 14161,11930 14285,12190
+',
+         'periodic' => 1,
+         'until' => 1377986399,
+         'from' => 1377864000,
+         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am Samstag, 31. August 2013, ab 14:00 Uhr',
+         'type' => 'gesperrt',
+         'id' => 2433
+       },
+       {
+         'source_id' => 'http://www.xhain.info/termine/reichefest.htm',
+         'until' => 1377979200,
+         'text' => 'Reichenberger Kiezfest (Reichefest) in der Reichenberger Straße zwischen Lausitzer und Ohlauer Straße, Straße könnte gesperrt sein, am Samstag, 31. August 2013, 15:00 - 22:00 Uhr',
+         'from' => 1377867600,
+         'id' => 2434,
+         'data' => 'userdel	2::temp 12048,10097 12229,10014
+',
+         'type' => 'gesperrt'
        }
      
 );

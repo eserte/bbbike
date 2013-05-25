@@ -8945,12 +8945,12 @@ EOF
 userdel	2::temp 9642,15038 9718,14888
 EOF
      },
-     { from  => $isodate2epoch->("2013-06-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-06-26 23:59:59"),
+     { from  => $isodate2epoch->("2013-05-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-05-26 23:59:59"),
        periodic => 1,
-       text  => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 25. und 26 Juni 2013), Fahrtrichtung gesperrt',
+       text  => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 26 Mai 2013), Fahrtrichtung gesperrt',
        type  => 'gesperrt',
-       source_id => 'IM_005931',
+       source_id => 'http://www.xhain.info/termine/seifenkistenrennen-mehringdamm.htm',
        data  => <<EOF,
 userdel	1::temp 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890 9229,8785
 EOF
@@ -18009,6 +18009,7 @@ EOF
        periodic => 1,
        text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (28. bis 30. Juni 2013)',
        type  => 'handicap',
+       source_id => 'http://www.xhain.info/termine/bergmannstrassenfest.htm',
        data  => <<EOF,
 userdel	q4::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
 userdel auto	3 9487,9209 9505,9306 9524,9426
@@ -21244,6 +21245,38 @@ EOF
 #: by: http://www.family-and-friends-ev.de/3.html
 #: by: http://www.ag-bahnhofstrasse.de/maientanz.html
 userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+EOF
+     },
+     { from  => 1377208800, # 2013-08-23 00:00
+       until => 1377381599, # 2013-08-24 23:59
+       text  => 'SUPPE&MUCKE 2013 am 24. August am Rudolfplatz',
+       periodic => 1, # allerdings wechselnde Orte
+       type  => 'gesperrt',
+       source_id => 'http://www.suppeundmucke.de/',
+       data  => <<EOF,
+userdel	2::temp 14096,11134 14076,11057 14043,10928 14026,10869
+userdel	2::temp 13886,10939 14026,10869 13896,10851 13856,10864
+userdel	2::temp 14011,10812 13896,10851
+userdel	2::temp 13886,10939 13856,10864
+EOF
+     },
+     { from  => 1377864000, # 2013-08-30 14:00
+       until => 1377986399, # 2013-08-31 23:59
+       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am Samstag, 31. August 2013, ab 14:00 Uhr',
+       periodic => 1,
+       type  => 'gesperrt',
+       source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
+       data  => <<EOF,
+userdel	2::temp 14161,11930 14285,12190
+EOF
+     },
+     { from  => 1377867600, # 2013-08-30 15:00
+       until => 1377979200, # 2013-08-31 22:00
+       text  => 'Reichenberger Kiezfest (Reichefest) in der Reichenberger Straße zwischen Lausitzer und Ohlauer Straße, Straße könnte gesperrt sein, am Samstag, 31. August 2013, 15:00 - 22:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.xhain.info/termine/reichefest.htm',
+       data  => <<EOF,
+userdel	2::temp 12048,10097 12229,10014
 EOF
      },
     );
