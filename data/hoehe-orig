@@ -419,7 +419,7 @@
 36.4	X -8468,2152
 # XXX steht erhöht, abseits der Straße --- # Müggelberg (Aussichtsturm) --- 92.3	X 25676,1508
 # Rund-um-Berlin-Karten (ungefähre Angaben, weil z.B. die Position nicht
-# 100% stimmt, mit ? gekennzeichnet; geschätzte Höhen mit ??? gekennzeichnet)
+# 100% stimmt, mit ? gekennzeichnet; eine Höhen sind geschätzt)
 # Berlin
 50.4	X 11889,16328
 45.6	X 13072,15590
@@ -488,7 +488,8 @@
 99.2	X 46629,27232
 131.9	X 41299,28974
 98.9	X 38087,29075
-85	??? 40339,28934
+#: note: geschätzt
+85	? 40339,28934
 43.6	X 13300,-1252
 41.8	? 13981,-677
 42.3	X 7955,-4250
