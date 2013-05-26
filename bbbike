@@ -6931,7 +6931,8 @@ EOF
 				my($cl, $this_color, $this_width, $cat, $std_tags, $line_dash, $line_capstyle);
 				if ($dir == 1 && $cat_hin ne '') {
 				    if (!$cl_hin) {
-					($cl)       = offset_line(\@coordlist, $this_width_hin/2, 1, 0);
+					# -0.5, to avoid occasional gaps between two directed lines
+					($cl)       = offset_line(\@coordlist, $this_width_hin/2-0.5, 1, 0);
 					$this_width = $this_width_hin;
 				    } else {
 				        $cl         = $cl_hin;
@@ -6944,7 +6945,8 @@ EOF
 				    $line_capstyle = $line_capstyle_hin;
 				} elsif ($dir == -1 && $cat_rueck ne '') {
 				    if (!$cl_rueck) {
-					(undef, $cl_rueck) = offset_line(\@coordlist, $this_width_rueck/2, 0, 1);
+					# -0.5: see above
+					(undef, $cl_rueck) = offset_line(\@coordlist, $this_width_rueck/2-0.5, 0, 1);
 					$this_width = $this_width_rueck;
 				    } else {
 					$this_width = $this_width_rueck/2;
