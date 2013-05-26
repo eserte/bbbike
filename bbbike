@@ -5865,8 +5865,7 @@ sub define_item_attribs {
 	 'FO' => '#46b47b',    	# Wälder
 	 'MO' => '#008080',    	# Moor
 
-	 '?'  => '#9f0000',
-	 '??' => '#8b0000', 	# DarkRed, bei Win undefiniert
+	 '?'  => '#6c0000',
 	 '?p' => '#af0000',
 	 'GPS' => 'red',	# GPS Relation
 	 'GPSs'   => "#c000c0",  # GPS street
