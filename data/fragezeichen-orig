@@ -49,7 +49,7 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-05-15
+#: last_checked: 2013-05-27
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -120,7 +120,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-05-24 vvv
+#: last_checked: 2013-05-27 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -141,7 +141,7 @@ Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,1172
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
 #: last_checked: 2013-04-08
-#: next_check: 2013-06-01
+#: next_check: 2013-07-01
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
 #: XXX Baumaßnahme 3.18 (Realisierung in 2011)
@@ -904,6 +904,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Chausseestr.: Richtung Norden existieren anscheinend auch schon Radstreifen, prüfen!	? 8246,14675 8232,14689 8153,14769 8138,14786 8057,14876
+# 
 # by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7281 (Idee)
 Viktoriaufer/Jüdenstr. - Am Juliusturm: existiert eine Verbindung für Radfahrer? Kann man auch Richtung Falkenseer Platz fahren?	? -3249,14621 -3224,14655 -3188,14652
 # 
@@ -961,9 +963,10 @@ Fußgängerampel in Bau	?::inwork 7443,13008
 Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3404
-#: next_check: 2013-06-30
+#: last_checked: 2013-05-27
+#: next_check: 2013-08-27
 #: priority: #C
-Florastr./Görschstr.: entsteht hier ein Zebrastreifen?	? 10073,17801 10033,17763
+Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10033,17763
 # 
 #: last_checked: 2013-05-14
 #: next_check: 2013-05-30
@@ -3363,14 +3366,7 @@ ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg rea
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	?::inwork 17912,95192 18001,95435 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
 #: by ^^^
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012
-#: XXX fehlt in Berlin.coords.data (PLZ 13187)
-#: XXX Privatstraße
-#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/4508103670916084/70916084/00049006/06-Anlagen/02/BenennungeinerPrivatstrasseimOrtsteilPankowinI.pdf (Lageplan)
-#: last_checked: 2012-09-29
-#: next_check: 2013-01-01
-#: osm_watch: way id="201628184" version="3"
-In den Floragärten: Ist die Straße bereits fertiggestellt? Qualität? Ist die Straße verkehrsberuhigt?	?::inwork 9828,17659 10014,17646
+# REMOVED (Teile der Straße existieren bereits) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 --- #: XXX fehlt in Berlin.coords.data (PLZ 13187) --- #: XXX Privatstraße --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/4508103670916084/70916084/00049006/06-Anlagen/02/BenennungeinerPrivatstrasseimOrtsteilPankowinI.pdf (Lageplan) --- #: last_checked: 2012-09-29 --- #: next_check: 2013-01-01 --- In den Floragärten: Ist die Straße bereits fertiggestellt? Qualität? Ist die Straße verkehrsberuhigt?	?::inwork 9831,17652 10014,17646
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file

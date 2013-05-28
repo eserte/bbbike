@@ -431,7 +431,7 @@ Am Schwarzen Graben: Querrillen	Q1 4849,15875 4834,15923 5000,16826 5007,16861 4
 Holteistr.: Asphalt	Q0 14535,11327 14506,11275 14465,11195
 Holteistr.: Asphalt	Q0 14575,11407 14535,11327
 Brehmestr.: Kopfsteinpflaster	Q2 9904,17347 9975,17359 10085,17379 10214,17401
-Heynstr.: Kopfsteinpflaster	Q2 10214,17401 10207,17448 10205,17506
+Heynstr.: Kopfsteinpflaster	Q2 10214,17401 10207,17448 10203,17478
 Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10499,17286 10774,17277
 Dolomitenstr. Kopfsteinpflaster	Q2 10298,17299 10228,17231
 Helmerdingstr.: Kopfsteinpflaster	Q2; 14442,11101 14465,11195
@@ -7897,6 +7897,8 @@ Conradstr.: Asphalt	Q0 -5869,1261 -5804,1163 -5781,1120
 Conradstr.: unbefestigte Straße	Q2 -5781,1120 -5753,998
 (Ordensmeisterstr./Komturstr. - Kolonie Albrechtshöhe): Asphalt	Q0 10254,5921 10215,5959
 Koseler Weg: Asphalt	Q0 9850,6135 9949,6130
+In den Floragärten: Verbundsteinpflaster	Q1 9831,17652 9895,17649 9903,17711 9904,17748
+In den Floragärten: unbefestigte Straße	Q2 9903,17711 9996,17707 9997,17646 10014,17646
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -9204,7 +9206,7 @@ Kolberger Str.: Kopfsteinpflaster	Q2 8315,15293 8518,15506
 Matthiasstr.: mäßiges Kopfsteinpflaster	Q2 12786,13185 12842,13070 12885,12980
 Kühlebornweg: Asphalt	Q0 5004,4709 5075,4600 5161,4664
 Radickestr.: Asphalt	Q0 20064,3278 20166,3344 20238,3390 20264,3406 20301,3432 20367,3479 20451,3538 20499,3572 20592,3633 20683,3693 20776,3753 20857,3817
-Gaillardstr.: Kopfsteinpflaster	Q2 9835,17797 9828,17659 9971,17456 9975,17359
+Gaillardstr.: Kopfsteinpflaster	Q2 9835,17797 9831,17652 9971,17456 9975,17359
 Schwarzschildstr.: sehr guter Asphalt	Q0 18750,2663 18736,2764 18722,2902 18716,2966
 Fronhoferstr.: gutes Verbundsteinpflaster	Q1 4515,4966 4656,5101 4766,5208
 Kabelpfuhlweg: schlechtes Kopfsteinpflaster	Q3 11244,4325 11258,4273 11279,4159 11271,4021
@@ -13285,7 +13287,7 @@ Wilhelm-Zermin-Weg: Verbundsteine	Q1 9279,14495 9338,14587
 Max-Urich-Str.: Kopfsteinpflaster	Q2 9041,14896 8953,14758
 Gartenplatz: Asphalt	Q0 8870,14637 8953,14758
 Ravenéstr.: Kopfsteinpflaster	Q2 8232,15220 8001,15205
-(Schulzendorfer - Schönwalder Str.): Verbundsteine	Q1 8248,14900 8266,15134
+(Schulzendorfer - Schönwalder Str.): Verbundsteine	Q1 8264,14902 8245,15004 8266,15134
 Döberitzer Str.: asphaltiert	Q0 7976,13727 7872,13685
 Dreysestr: Kopfsteinpflaster mit Bodenschwellen	Q2 6976,13563 6897,13551 6783,13551 6687,13545
 Bandelstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 6692,13333 6687,13545 6686,13746
@@ -14019,7 +14021,7 @@ Ahrenshooper Zeile: Kopfsteinpflaster	Q3 -1882,3643 -1782,3311 -1709,3080 -1654,
 Memlingstr.: schmaler, mäßiger Asphaltstreifen, sonst schlechtes Kopfsteinpflaster	Q2; 4025,3958 4134,3825
 Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3; 4134,3825 4025,3958
 Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3 4134,3825 4265,3661
-Rettigweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 9828,17659 9760,17612 9706,17570
+Rettigweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 9831,17652 9760,17612 9706,17570
 Pradelstr.: mäßiger Asphalt	Q2 9760,17612 9663,17734
 Friedrich-List-Ufer: sehr guter Asphalt	Q0 8110,13042 8106,13130 8102,13304 8098,13419
 Reinbeckstr.: Kopfsteinpflaster	Q2 18343,6318 18310,6223

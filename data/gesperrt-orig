@@ -2296,6 +2296,16 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
+#: last_checked: 2013-05-27
+#: next_check: 2013-08-27
+An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8828,13434 8800,13389 8764,13372
+# 
+#: osm_watch: way id="201628184" version="3"
+#: last_checked: 2013-05-27
+#: next_check: 2013-09-27
+In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
+# 
 #: next_check: 2013-10-06 vvv
 Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572
 Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193
@@ -2331,7 +2341,7 @@ Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
-#: last_checked: 2013-05-07
+#: last_checked: 2013-05-26
 #: next_check: 2013-08-01
 #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig
 Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
@@ -2353,7 +2363,7 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-05-14
+#: last_checked: 2013-05-26
 #: check_frequency: 90d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
@@ -2417,7 +2427,7 @@ Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht mögl
 #: next_check: 2014-03-02
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18866,-1674
 # 
-#: last_checked: 2013-05-08
+#: last_checked: 2013-05-27
 #: next_check: 2013-08-08
 Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8238,14181
 # 

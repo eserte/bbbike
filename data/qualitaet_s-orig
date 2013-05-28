@@ -491,7 +491,7 @@ Holteistr.: Asphalt	Q0 14535,11327 14506,11275 14465,11195
 #: note: seit ca. 2008-01
 Holteistr.: Asphalt	Q0 14575,11407 14535,11327
 Brehmestr.: Kopfsteinpflaster	Q2 9904,17347 9975,17359 10085,17379 10214,17401
-Heynstr.: Kopfsteinpflaster	Q2 10214,17401 10207,17448 10205,17506
+Heynstr.: Kopfsteinpflaster	Q2 10214,17401 10207,17448 10203,17478
 Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10499,17286 10774,17277
 Dolomitenstr. Kopfsteinpflaster	Q2 10298,17299 10228,17231
 Helmerdingstr.: Kopfsteinpflaster	Q2; 14442,11101 14465,11195
@@ -1756,6 +1756,7 @@ Avenue Jean Mermoz: asphaltiert	Q0 3333,18034 3248,17921 3213,17858 3159,17780 3
 Am Friedhof: m‰ﬂiger Asphalt	Q1 6380,17836 6376,17687 6347,17381
 Soldiner Str.: Kopfsteinpflaster	Q2 8449,17196 8539,17197 8561,17198 8677,17154
 Soldiner Str.: Asphalt	Q0 8677,17154 8866,17075 8904,17059 9082,16982
+#: XXX liegt hier tats‰chlich (noch) Kopfsteinpflaster?
 Soldiner Str.: m‰ﬂiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 9604,16760
 Gr¸ntaler Str. - Esplanade: Asphalt	Q0 9795,16936 9846,16981 9880,16994 9980,16973 10013,16972
 Kolonie: Gehwegplatten	Q1 10198,16929 10209,16674
@@ -8515,6 +8516,11 @@ Conradstr.: Asphalt	Q0 -5869,1261 -5804,1163 -5781,1120
 Conradstr.: unbefestigte Straﬂe	Q2 -5781,1120 -5753,998
 (Ordensmeisterstr./Komturstr. - Kolonie Albrechtshˆhe): Asphalt	Q0 10254,5921 10215,5959
 Koseler Weg: Asphalt	Q0 9850,6135 9949,6130
+In den Florag‰rten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9903,17711 9904,17748
+#: last_checked: 2013-05-27
+#: next_check: 2013-09-27
+#: XXX Qualit‰t nach den Bauarbeiten? Wird dieser Teil der Straﬂe ¸berhaupt noch existieren?
+In den Florag‰rten: unbefestigte Straﬂe	Q2 9903,17711 9996,17707 9997,17646 10014,17646
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -9802,9 +9808,11 @@ Ringenwalder Str.: Asphalt	Q0 22088,16341 21862,16381
 Schˆnholzer Str.: Asphalt	Q0 9838,14640 10043,14735
 # 
 #: by: martin: vvv
+#: confirmed_by: srt vvv
 Rheinsberger Str.: Asphalt	Q0 10402,14835 10242,14765 10155,14719 10070,14678 9864,14578
 Rheinsberger Str.: Asphalt	Q0 9855,14598 9679,14511
 Wolliner Str.: Asphalt	Q0 10405,14425 10320,14608 10277,14691 10242,14765 10209,14830 10170,14905 10111,15018 10071,15096 10018,15211
+#: confirmed_by ^^^
 #: by: ^^^
 # 
 #: by: Floris Akkerman: vvv
@@ -11141,7 +11149,7 @@ Radickestr.: Asphalt	Q0 20064,3278 20166,3344 20238,3390 20264,3406 20301,3432 2
 # 
 #: by: Andi Walther:
 #: confirmed_by: srt
-Gaillardstr.: Kopfsteinpflaster	Q2- 9835,17797 9828,17659 9971,17456 9975,17359
+Gaillardstr.: Kopfsteinpflaster	Q2- 9835,17797 9831,17652 9971,17456 9975,17359
 # 
 #: by: J.-A. Koven:
 Schwarzschildstr.: sehr guter Asphalt	Q0 18750,2663 18736,2764 18722,2902 18716,2966
@@ -21972,7 +21980,7 @@ Wilhelm-Zermin-Weg: Verbundsteine	Q1 9279,14495 9338,14587
 Max-Urich-Str.: Kopfsteinpflaster	Q2 9041,14896 8953,14758
 Gartenplatz: Asphalt	Q0 8870,14637 8953,14758
 RavenÈstr.: Kopfsteinpflaster	Q2 8232,15220 8001,15205
-(Schulzendorfer - Schˆnwalder Str.): Verbundsteine	Q1 8248,14900 8266,15134
+(Schulzendorfer - Schˆnwalder Str.): Verbundsteine	Q1 8264,14902 8245,15004 8266,15134
 #: note: fr¸her schlechtes Kopfsteinpflaster, aber mittlerweile wegen Benutzung als Baustraﬂe asphaltiert
 Dˆberitzer Str.: asphaltiert	Q0 7976,13727 7872,13685
 Dreysestr: Kopfsteinpflaster mit Bodenschwellen	Q2 6976,13563 6897,13551 6783,13551 6687,13545
@@ -23063,7 +23071,7 @@ Memlingstr.: sehr schlechtes Kopfsteinpflaster	Q3 4134,3825 4265,3661
 # 
 #: by: Chantal [AM] vvv
 #: corrected_by: srt ("schlechtes Kopfsteinpflaster" -> )
-Rettigweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 9828,17659 9760,17612 9706,17570
+Rettigweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 9831,17652 9760,17612 9706,17570
 #: confirmed_by: srt (zumindest die Existenz des Asphalts)
 Pradelstr.: m‰ﬂiger Asphalt	Q2+ 9760,17612 9663,17734
 #: confirmed_by: srt

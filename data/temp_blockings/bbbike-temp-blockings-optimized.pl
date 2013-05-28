@@ -1090,17 +1090,7 @@ userdel	2::temp 14500,9856 14483,9843
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.xhain.info/termine/seifenkistenrennen-mehringdamm.htm',
-         'data' => 'userdel	1::temp 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890 9229,8785
-',
-         'periodic' => 1,
-         'until' => 1369605599,
-         'from' => 1369432800,
-         'text' => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 26 Mai 2013), Fahrtrichtung gesperrt',
-         'type' => 'gesperrt',
-         'id' => 1050
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1450,26 +1440,7 @@ userdel	2::temp 14500,9856 14483,9843
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019858',
-         'until' => 1369605600,
-         'text' => 'Fanmeile zum Champions-League-Finale, Straße des 17. Juni bis zum Großen Stern und Ebertstr. gesperrt, 23.05.2013 bis 26.05.2013',
-         'from' => 1369173600,
-         'id' => 1391,
-         'data' => '#: by: http://www.rbb-online.de/nachrichten/sport/2013_05/champions_league_fanmeile_berlin.html
-userdel	2::temp 8600,12165 8538,12245 8610,12254 8731,12270
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
-userdel auto	3 8119,12414 8055,12186 8048,12135
-userdel auto	3 7827,12105 7816,12150 7875,12363
-userdel auto	3 8048,12135 8055,12186 8119,12414
-userdel auto	3 8522,12187 8538,12245 8522,12239
-userdel auto	3 8522,12239 8538,12245 8522,12187
-userdel auto	3 7875,12363 7816,12150 7827,12105
-userdel auto	3 7039,12314 7383,12095 7460,12054
-userdel auto	3 7460,12054 7383,12095 7039,12314
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1729,17 +1700,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1369605599,
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), beide Fahrbahnen der Straße gesperrt (25. und 26. Mai 2013)',
-         'from' => 1369346400,
-         'id' => 1642,
-         'data' => '#: by: http://www.family-and-friends-ev.de/3.html
-userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3338,16 +3299,7 @@ userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_114312',
-         'until' => 1369620000,
-         'text' => 'Müggelseedamm (Frieddrichshagen): Baustelle, stadtauswärts zwischen Bölschestr. und Kalkseestr. bis Ende Mai 2013 gesperrt, 13.05.2013 07:00 Uhr bis 27.05.2013 04:00 Uhr ',
-         'from' => 1368334800,
-         'id' => 2429,
-         'data' => 'userdel	q4::inwork; 25552,4829 25720,4832 25802,4823 25948,4823 26086,4861 26237,4922 26340,4942 26500,4936
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Tegeler Str.: zwischen Triftstr. und Schlegelstr. Bauarbeiten, Ausweichen auf den Gehweg',

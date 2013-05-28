@@ -1503,7 +1503,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7138,15437
 	X 6996,15319
 	X 7263,14873
-	F 8626,13692
+# temporär entfernt, siehe unten ---	F 8626,13692
+#: XXX temporäre Baustellenampel; bleibt diese erhalten oder gibt es nach den Bauarbeiten nur noch die Fußgängerampel (siehe oben)
+#: last_checked: 2013-05-27
+#: next_check: 2013-12-31 (Invalidenstr.)
+	X 8619,13689
 	X 8456,15235
 	X 9443,15430
 	X 9917,15613
@@ -1736,7 +1740,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -1336,14786
 	B 20782,5206
 	X 7315,10537
-	X 8690,13723
+#: XXX zurzeit nur eine Fußgängerampel, nach den Bauarbeiten evtl. wieder eine volle Autoampel (X)
+#: last_checked: 2013-05-24
+#: next_check: 2013-12-31 (Invalidenstr.)
+	F 8690,13723
 	X 11629,9086
 	X 15681,10801
 # REMOVED (seit 1.7.2004 gesperrt) ---	B 801,13323
@@ -2033,8 +2040,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	X 19733,15511
 	F 7164,-473
 	F 22640,4081
-#: note: Luftbild
 	F 9028,16864
+	F 8443,15901
 	F 5373,10981
 #: note: war früher (ca. 2006?) ein Zebrastreifen
 	F 18733,8650
@@ -2142,7 +2149,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 9267,15790
 	X 8079,16953
 	F 9465,17549
-#: note: Luftbild:
 	F 9170,17161
 	F 9218,11793
 	X 9183,12076
@@ -2363,6 +2369,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 8631,18441
 	X 10127,19992
 	F 5628,14063
+#: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
+#: XXX_prog Anforderungsampel
+#: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
+#: last_checked: 2013-05-27
+#: next_check: 2013-08-27
+	F::inwork 9984,12426
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
 #: last_checked: 2013-05-01 vvv
 #: next_check: 2013-12-31 vvv
@@ -2384,7 +2396,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX ^^^
 # 
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2013-05-24 vvv
+#: last_checked: 2013-05-27 vvv
 #: next_check: 2013-12-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8879,13913
@@ -2392,6 +2404,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork 8426,13909
 	X::inwork 8313,13839
 	X::inwork 8450,13599
+	X::inwork 8775,13606
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
