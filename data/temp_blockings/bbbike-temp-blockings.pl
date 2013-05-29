@@ -2097,7 +2097,7 @@ EOF
        text  => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13867,9864 13645,9621 13601,9572
+userdel	2 13867,9864 13645,9621 13606,9578
 EOF
      },
      { from  => 1119391200, # 2005-06-22 00:00
@@ -7950,7 +7950,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005266',
        data  => <<EOF,
-userdel	2::inwork 9668,5733 9457,5641 9368,5608 9147,5534
+userdel	2::inwork 9668,5733 9457,5641 9368,5608 9161,5535
 EOF
      },
      { from  => undef, # 
@@ -9365,7 +9365,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006204',
        data  => <<EOF,
-userdel	2::inwork 9368,5608 9147,5534
+userdel	2::inwork 9368,5608 9161,5535
 EOF
      },
      { from  => 1186869600, # 2007-08-12 00:00
@@ -12069,7 +12069,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009406',
        data  => <<EOF,
-userdel	2::inwork 9368,5608 9147,5534 8955,5549 8870,5557 8767,5571
+userdel	2::inwork 9368,5608 9161,5535 8968,5554 8887,5564 8767,5571
 EOF
      },
      { from  => 1216504800, # 2008-07-20 00:00
@@ -12990,7 +12990,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010086',
        data  => <<EOF,
-userdel	1::inwork 9368,5608 9147,5534
+userdel	1::inwork 9368,5608 9161,5535
 EOF
      },
      { from  => 1226267441, # 2008-11-09 22:50
@@ -13649,7 +13649,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012064',
        data  => <<EOF,
-userdel	q4::inwork; 9457,5641 9368,5608 9147,5534
+userdel	q4::inwork; 9457,5641 9368,5608 9161,5535
 EOF
      },
      { from  => 1238954845, # 2009-04-05 20:07
@@ -13796,7 +13796,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012244',
        data  => <<EOF,
-userdel	q4::inwork 9457,5641 9368,5608 9147,5534
+userdel	q4::inwork 9457,5641 9368,5608 9161,5535
 EOF
      },
      { from  => 1243371742, # 2009-05-26 23:02
@@ -20560,7 +20560,7 @@ EOF
        text  => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2013-04-28 vvv
+#: last_checked: 2013-05-28 (andk, insbesondere am Kanal dauerhafte Sperrung) vvv
 userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721 8318,10738
 userdel	2::inwork 8328,10585 8270,10613
 userdel	2::inwork 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
@@ -20881,7 +20881,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-05-06
+#: last_checked: 2013-05-29
+#: check_frequency: 15d
 userdel	q2::inwork 13339,7452 13303,7622
 EOF
      },
@@ -21015,15 +21016,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1369994400, # 2013-05-31 (laut Baustellenschild)
+       until => $isodate2epoch->("2013-06-04 23:59:59"), # 1369994400, # 2013-05-31 (laut Baustellenschild) # XXX verlängert
        text  => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-05-06
+#: last_checked: 2013-05-29
 #: next_check: 2013-05-31
 #: XXX ist die Baustelle tatsächlich Ende Mai fertig?
 #: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
-userdel	q4::inwork; 13474,8060 13444,7879
+userdel	q3::inwork; 13474,8060 13444,7879
 EOF
      },
      { from  => 1357040979, # 2013-01-01 12:49
@@ -21167,7 +21168,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-05-06
+#: last_checked: 2013-05-29
+#: check_frequency: 60d
 #: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
 userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
 EOF

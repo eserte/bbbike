@@ -299,11 +299,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
-# TEMPORARY REMOVED (Baustelle!) --- Niederlagstr.	1 9943,12364 9934,12420
-#: last_checked: 2013-04-22
-#: next_check: 2013-06-22
-#: XXX danach evtl. wieder Einbahnstraße wiederherstellen, siehe oben
-Niederlagstr.	2:inwork 9943,12364 9934,12420
+Niederlagstr.	1 9943,12364 9934,12420
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12974,7598 13100,7626
@@ -1420,7 +1416,7 @@ Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
-Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9207,5185 9192,5272 9182,5332 9171,5397 9147,5534
+Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9207,5185 9196,5272 9188,5333 9179,5398 9161,5535
 Schönhauser Allee: U-Bahnviadukt	3nocross 10969,15944 10964,15896 10953,15787
 Schönhauser Allee: U-Bahnviadukt	3 10941,15697 10917,15525 11055,15504
 Berliner Str.: U-Bahnrampe	3nocross 10975,16896 10992,16829 11008,16729 11021,16605 11027,16553 11019,16465

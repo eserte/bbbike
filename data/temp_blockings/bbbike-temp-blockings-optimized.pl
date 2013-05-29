@@ -3005,7 +3005,7 @@ userdel	2::inwork 18731,8577 18709,8423
          'text' => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten kˆnnen die Wege unpassierbar sein',
          'from' => undef,
          'id' => 2365,
-         'data' => '#: last_checked: 2013-04-28 vvv
+         'data' => '#: last_checked: 2013-05-28 (andk, insbesondere am Kanal dauerhafte Sperrung) vvv
 userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721 8318,10738
 userdel	2::inwork 8328,10585 8270,10613
 userdel	2::inwork 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
@@ -3116,7 +3116,8 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => undef,
          'id' => 2398,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-05-06
+#: last_checked: 2013-05-29
+#: check_frequency: 15d
 userdel	q2::inwork 13339,7452 13303,7622
 ',
          'type' => 'handicap'
@@ -3217,15 +3218,15 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
          'type' => 'gesperrt'
        },
        {
-         'until' => 1369994400,
+         'until' => 1370383199,
          'text' => 'Hertzbergstr.: Bauarbeiten zwischen Bˆhmische Str. und Sonnenallee',
          'from' => undef,
          'id' => 2411,
-         'data' => '#: last_checked: 2013-05-06
+         'data' => '#: last_checked: 2013-05-29
 #: next_check: 2013-05-31
 #: XXX ist die Baustelle tats‰chlich Ende Mai fertig?
 #: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur f¸r Anwohner offen
-userdel	q4::inwork; 13474,8060 13444,7879
+userdel	q3::inwork; 13474,8060 13444,7879
 ',
          'type' => 'handicap'
        },
@@ -3290,7 +3291,8 @@ userdel auto	3 4358,12365 4518,12350 4601,12310
          'from' => undef,
          'id' => 2425,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-05-06
+#: last_checked: 2013-05-29
+#: check_frequency: 60d
 #: XXX Straﬂe wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
 userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
 ',

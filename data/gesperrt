@@ -254,7 +254,7 @@ Mudrackzeile	1 6985,17812 7020,17690
 Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-Niederlagstr.	2:inwork 9943,12364 9934,12420
+Niederlagstr.	1 9943,12364 9934,12420
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12974,7598 13100,7626
@@ -1404,12 +1404,12 @@ Unter den Eichen -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 3048,4305 2944,
 Knesebeckstr. -> Goßlerstr.: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2858,4372
 Knesebeckstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2817,4158
 Unter den Eichen -> Goßlerstr.: Straßentunnelrampe	3::igndisp 2817,4158 2944,4241 2858,4372
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 9207,5185 9192,5272 9182,5332 9171,5397 9147,5534
-Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9192,5272 9182,5332
-Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9182,5332 9171,5397
-Mariendorfer Damm -> Wulfila-Ufer: unbequem passierbarer Mittelstreifen	3::igndisp 9192,5272 9182,5332 9145,5323
-Viktoriastr. -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 8943,5428 9171,5397 9147,5534
-Tempelhofer Damm -> Viktoriastr.: unbequem passierbarer Mittelstreifen	3::igndisp 9182,5332 9171,5397 8943,5428
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 9207,5185 9196,5272 9188,5333 9179,5398 9161,5535
+Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9196,5272 9188,5333
+Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9188,5333 9179,5398
+Mariendorfer Damm -> Wulfila-Ufer: unbequem passierbarer Mittelstreifen	3::igndisp 9196,5272 9188,5333 9145,5323
+Tempelhofer Damm -> Viktoriastr.: unbequem passierbarer Mittelstreifen	3::igndisp 9188,5333 9179,5398 8943,5428
+Viktoriastr. -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 8943,5428 9179,5398 9161,5535
 U-Bahnviadukt	3nocross::ignrte 10969,15944 10964,15896 10953,15787
 Kopenhagener Str. -> Schönhauser Allee: U-Bahnviadukt	3::igndisp 10722,15921 10964,15896 10969,15944
 Schönhauser Allee -> Kopenhagener Str.: U-Bahnviadukt	3::igndisp 10953,15787 10964,15896 10722,15921
@@ -2823,7 +2823,7 @@ Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 725
 Arnstädter Str.	1 6553,1409 6528,1207 6512,1086 6526,1083 6515,1010
 tragen (5 Stufen)	0:20:90 6501,1207
 Müncheberger Weg: Privatgelände	2 29978,8975 29868,9084
-Drängelgitter	BNP:10:66 9171,5263
+Drängelgitter	BNP:10:70 9171,5263
 Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2897,17861
 Zeiler Weg	1 11495,18129 11579,18184
 Zeiler Weg	1s 11835,18301 11914,18303

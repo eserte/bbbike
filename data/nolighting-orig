@@ -35,7 +35,7 @@ Bellevueallee (nur nachts)	NL 7039,12314 7383,12095 7460,12054 7663,11946 7717,1
 Am Heidekampgraben	NL 15053,7966 14980,7674 14992,7578 15042,7513 15054,7474 15132,7402 15176,7315 15168,7256 15200,7233 15272,7151 15327,7065 15368,7023 15606,6639 15595,6564 15582,6493 15578,6471 15516,6357 15505,6342 15496,6314 15437,6227 15403,6145 15396,6125 15393,6112 15358,6022
 Am Landwehrkanal	NL 12739,9576 12801,9554 12919,9584 12981,9672 13086,9825
 Am Landwehrkanal	NL 12981,9672 12935,9689
-Am Teltowkanal	NL 8598,4985 8618,5019 8784,5095 8881,5143 9171,5263 9192,5272
+Am Teltowkanal	NL 8598,4985 8618,5019 8784,5095 8881,5143 9171,5263 9196,5272
 Am Teltowkanal	NL 8637,4980 8598,4985 8575,4980 8234,4660 7990,4420
 Am Teltowkanal	NL 7921,4451 7772,4306 7676,4216
 Weg über Autobahntunnel	NL 12979,6374 12812,6343 12634,6304 12629,6320 12613,6319 12618,6308 12586,6304 12555,6284 12514,6277 12491,6285 12459,6282 12246,6227 12222,6273 12040,6239 11818,6201
@@ -173,7 +173,8 @@ Tiergarten	NL 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 
 Kopfstr. - Lessinghöhe	NL 12571,7899 12602,7907
 (Thomashöhe)	NL 12647,7672 12672,7561 12682,7514 12685,7497
 (Uferweg Plötzensee)	NL 5618,14981 5518,15236 5291,15424 5073,15619 5036,15615 5008,15592 5051,15508 5084,15415 5005,15213
-(Volkspark Friedrichshain)	NL 12325,13148 12344,13157 12372,13198 12369,13252 12474,13311 12438,13387 12483,13418 12450,13542 12344,13627 12372,13755
+(Volkspark Friedrichshain)	NL 12325,13148 12344,13157 12372,13198 12369,13252 12474,13311 12438,13387 12483,13418 12450,13542 12344,13627
+# REMOVED (beleuchtet zum Schönbrunn, geprüft 2013-05-30 gegen 0:30) --- (Volkspark Friedrichshain)	NL 12344,13627 12372,13755
 (Volkspark Friedrichshain)	NL 12129,13531 12005,13481 11982,13471
 (Volkspark Friedrichshain)	NL 12038,13685 12145,13628 12169,13609
 Richtung Grunewaldturm	NL -1638,9152 -1857,8964 -2368,8457 -2386,8282 -2561,8110 -2890,7994 -3212,8024 -3536,7856
@@ -313,18 +314,17 @@ Claire-Waldoff-Weg	NL 3635,8099 3587,7560
 (Volkspark Friedrichshain)	NL 12483,13418 12586,13368
 (Volkspark Friedrichshain)	NL 12438,13387 12341,13309 12244,13240 12236,13229
 (Volkspark Friedrichshain)	NL 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
-# REMOVED (beleuchtet, geprüft: 2012-10-26) --- (Volkspark Friedrichshain)	NL 12344,13627 12204,13609
+#: note: beleuchtet am 2012-10-26, nicht beleuchtet am 2013-05-30 gegen 0:30
+(Volkspark Friedrichshain): hier stehen zwar Laternen, sind aber abends und nachts (manchmal?) nicht eingeschaltet	NL 12344,13627 12204,13609
 #: XXX werden diese Abschnitte irgendwann wieder beleuchtet werden? vvv
-#: last_checked: 2013-01-02 vvv
-#: next_check: 2013-05-28 vvv
+#: last_checked: 2013-05-30 vvv
+#: next_check: 2013-06-25 vvv
 (Volkspark Friedrichshain): hier stehen zwar Laternen, sind aber abends und nachts nicht eingeschaltet	NL 12204,13609 12169,13609 12141,13609 12012,13599
 (Volkspark Friedrichshain): hier stehen zwar Laternen, sind aber abends und nachts nicht eingeschaltet	NL 12161,13711 12145,13628 12141,13609 12129,13531 12111,13480 12060,13422
 #: next_check ^^^
 #: last_checked ^^^
-#: last_checked: 2013-01-08
-#: next_check: 2013-05-28
-Volkspark Friedrichshain: hier stehen zwar Laternen, sind aber abends und nachts nicht eingeschaltet	NL 12707,13706 12709,13691 12743,13634
 #: XXX ^^^
+# REMOVED (beleuchtet, geprüft: 2013-05-30) --- Volkspark Friedrichshain: hier stehen zwar Laternen, sind aber abends und nachts nicht eingeschaltet	NL 12707,13706 12709,13691 12743,13634
 (Volkspark Friedrichshain)	NL 12012,13599 12038,13685
 Apeldorner Weg	NL 3848,8689 3868,8759 3952,8980
 (Wallenbergstr. - Rudolstätter Str.)	NL 4139,8485 4029,8482
@@ -1231,3 +1231,4 @@ Schillerpark	NL 7097,16915 7064,16943 7002,17027
 (Lendelallee - Katharinenholzstr.)	NL -15553,-11 -15086,63
 Schräger Weg	NL -16644,1796 -16618,1840 -16170,1908 -16030,1926
 (Verlängerung der Gutsstr.)	NL -16170,1908 -16034,2150
+Koseler Weg	NL 9971,6114 9850,6135 9679,6160
