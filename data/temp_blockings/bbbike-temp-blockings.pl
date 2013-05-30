@@ -20555,12 +20555,14 @@ EOF
 userdel	q4::inwork; -2706,13291 -2699,13359 -2669,13488
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1369937976, # undef, # 
+       until => 1369937980, # undef, # XXX andk -> Zäune sind weg
        text  => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: last_checked: 2013-05-28 (andk, insbesondere am Kanal dauerhafte Sperrung) vvv
+#: next_check: 2013-06-01 vvv
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130529.1525.385421.html (Eröffnung am 1. Juni)
 userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721 8318,10738
 userdel	2::inwork 8328,10585 8270,10613
 userdel	2::inwork 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
@@ -20569,6 +20571,7 @@ userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 userdel	2::inwork 8270,10613 8199,10634
 userdel	2::inwork 8159,10430 8237,10418 8278,10384
 userdel	2::inwork 8318,10738 8362,10779
+#: next_check ^^^
 #: last_checked ^^^
 EOF
      },

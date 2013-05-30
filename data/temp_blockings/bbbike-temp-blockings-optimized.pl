@@ -3000,24 +3000,7 @@ userdel	2::inwork 18731,8577 18709,8423
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Park am Gleisdreieck, Wege im Westpark: wegen Bauarbeiten können die Wege unpassierbar sein',
-         'from' => undef,
-         'id' => 2365,
-         'data' => '#: last_checked: 2013-05-28 (andk, insbesondere am Kanal dauerhafte Sperrung) vvv
-userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721 8318,10738
-userdel	2::inwork 8328,10585 8270,10613
-userdel	2::inwork 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
-userdel	2::inwork 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8260,10183 8211,10083 8145,10090 8042,10084 8040,10076 8035,10075 8027,10076 8035,10075 8027,10076
-userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
-userdel	2::inwork 8270,10613 8199,10634
-userdel	2::inwork 8159,10430 8237,10418 8278,10384
-userdel	2::inwork 8318,10738 8362,10779
-#: last_checked ^^^
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

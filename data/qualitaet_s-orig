@@ -2541,7 +2541,7 @@ Viehtrift: Asphalt	Q0 14130,12926 14029,12954 14015,12958 13886,12995
 Am Viehhof: Verbundsteinpflaster	Q1+ 14015,12958 13979,12861
 Zur Waage: Asphalt	Q0 14029,12954 14067,13050
 Zur Börse: Asphalt	Q0 14163,13025 14067,13050 13930,13100
-Zur Marktflagge: Asphalt	Q0 14177,13065 14086,13090 13943,13129
+Zur Marktflagge: Asphalt	Q0 14177,13065 14086,13090 14035,13104 13943,13129
 Zur Innung: Asphalt	Q0 14086,13090 14132,13234
 (Zur Waage - Zur Innung): teilweise Kopfsteinpflaster	Q1- 14067,13050 14086,13090
 Storkower Str. - Einsteinstr.: schlechter Asphalt	Q2 13151,14855 13185,14912 13143,14935 13110,14879
@@ -6599,10 +6599,12 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8328,10585 8270,10613
 #: XXX wie wird die Qualität nach den Bauarbeiten sein?
 #: last_checked: 2013-04-22
+#: next_check: 2013-06-01
 (Park am Gleisdreieck, Eingang Lützowstr.): (noch) unbefestigt	Q2 8270,10613 8199,10634
 #: XXX wie wird die Qualität nach den Bauarbeiten sein?
-#: last_checked: 2013-04-22
 #: osm_watch: way id="166660781" version="2"
+#: last_checked: 2013-04-22
+#: next_check: 2013-06-01
 (Park am Gleisdreieck, Eingang Pohlstr.): (noch) unbefestigt	Q2 8159,10430 8237,10418 8278,10384
 (Park am Gleisdreieck, Eingang Bülowstr.): Beton	Q0 8027,10076 8035,10075 8040,10076 8042,10084 8145,10090 8211,10083
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8362,10779 8318,10738
@@ -8523,6 +8525,9 @@ In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9903,17711 99
 #: next_check: 2013-09-27
 #: XXX Qualität nach den Bauarbeiten? Wird dieser Teil der Straße überhaupt noch existieren?
 In den Floragärten: unbefestigte Straße	Q2 9903,17711 9996,17707 9997,17646 10014,17646
+#: note: und ein paar Meter Verbundsteinpflaster an der Neustrelitzer Str.
+(Neustrelitzer Str. - Werneuchener Str.): welliger Asphalt, Beton	Q1 16443,14825 16610,15000
+(Landsberger Allee - Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16589,14400 16544,14593
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -9178,7 +9183,7 @@ Kirchstr. (Marienfelde): guter Asphalt	Q0 8263,1061 8305,1148 8383,1311 8482,150
 #: corrected_by: srt (guter Asphalt -> schlechtes Kopfsteinpflaster)
 Brunswickenweg: schlechtes Kopfsteinpflaster	Q3 17009,26756 16895,26866
 Brunswickenweg: guter Asphalt	Q0 16895,26866 16767,26991
-Gustav-Zahnke-Str.: Asphalt	Q0 14430,13603 14408,13513 14331,13537
+Gustav-Zahnke-Str.: Asphalt	Q0 14439,13600 14417,13517 14337,13541
 Wiesenstr. (Rahnsdorf): Asphalt	Q0 29591,4035 29632,3968 29917,3697
 #: corrected_by: srt (Asphalt -> Beton)
 Ruthnerweg: Beton mit Schäden	Q2+ 3640,1959 3577,2000
@@ -9420,7 +9425,10 @@ Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9206,14987 9361,15066 9566,15188
 #: by: ^^^
 # 
 #: by: André Käding vvv
-Zechliner Str.: Asphalt	Q0 16310,14378 16284,14601 16537,14635 16534,14740
+#: confirmed_by: srt
+Zechliner Str.: Asphalt	Q0 16310,14378 16284,14601 16537,14635
+#: confirmed_by: srt
+Zechliner Str.: Asphalt	Q0 16544,14593 16537,14635 16524,14749
 #: confirmed_by: srt (westlicher Abschnitt)
 Buschiner Str.: Asphalt	Q0 20160,13287 20263,13271 20364,13255 20482,13241 20600,13232 20746,13209
 #: corrected_by: srt (Beton, Q0 -> Beton & Asphalt, Q1+)
@@ -10030,7 +10038,8 @@ Antwerpener Str.: asphaltiert, Parkstreifen mit Kopfsteinpflaster	Q0 6555,15827 
 #: by: ^^^
 # 
 #: by: Heiko Astalosch: vvv
-Goeckestr.: mäßiges Kopfsteinpflaster	Q2 16128,14685 16256,14828 16361,14936 16377,14952 16514,15092 16597,15228 16651,15345
+#: corrected_by: srt (Kopfsteinpflaster -> Kleinsteinpflaster, wellig)
+Goeckestr.: mäßiges Kleinsteinpflaster, wellig	Q2 16128,14685 16256,14828 16361,14936 16377,14952 16514,15092 16597,15228 16651,15345
 Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15941,14834 16035,14748 16128,14685 16284,14601
 Freienwalder Str.: Kopfsteinpflaster (einigermaßen gut)	Q2 16849,15263 16651,15345 16618,15356 16406,15452 16331,15486
 Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16354,15323 16208,15379
@@ -12374,8 +12383,8 @@ Paul-Wegener-Str.: Beton	Q0 24471,9241 24611,9181 24737,9110 24860,9040 24973,89
 Bohnsdorfer Str.: Waldweg, teilweise verwurzelt, bei großer Hitze auch mit sandigen Abschnitten und nach starkem Regen schlammig	Q2+ 22012,2150 21997,1869 21996,1683 22161,1193
 # 
 #: by: Stefan Driesner: vvv
-Georg-Lehnig-Str.: mäßiger Asphalt	Q1 14535,13575 14509,13481 14428,13507
-Erich-Kuttner-Str.: mäßiger Asphalt	Q1 14590,13560 14535,13575 14430,13603 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
+Georg-Lehnig-Str.: mäßiger Asphalt	Q1 14551,13571 14527,13486 14447,13507
+Erich-Kuttner-Str.: mäßiger Asphalt	Q1 14590,13560 14551,13571 14439,13600 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
 #: by: ^^^
 # 
 #: by: Regine Bast:
@@ -17632,10 +17641,8 @@ Gotenburger Str.: Asphalt	Q0 8844,16863 9000,16803
 # 
 #: by: Kerstin (rienecker): vvv
 #: corrected_by: srt (schleches Kopfsteinpflaster -> mäßiger Asphalt)
-#: XXX laut BA-Drucksache teilsaniert
-#: next_check: 2013-01-24
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
-Strausberger Str. (Alt-Hohenschönhausen): mäßiger Asphalt	Q1 16377,14952 16295,15024
+#: corrected_by: srt (früher mäßiger Asphalt, jetzt neu gemacht)
+Strausberger Str. (Alt-Hohenschönhausen): Asphalt	Q0 16377,14952 16295,15024
 Strausberger Str. (Alt-Hohenschönhausen): schlechtes Kopfsteinpflaster	Q3 16295,15024 16211,15105 16152,15164 16028,15218
 #: by: ^^^
 # 
@@ -18157,7 +18164,7 @@ Frauenlobstr.: guter Asphalt	Q0 15697,6688 15830,6579 15954,6481 16043,6414 1622
 # 
 #: by: Robert (klemm): vvv
 #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2013-04-09 vvv
+#: last_checked: 2013-05-30 vvv
 #: next_check: 2013-12-09 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: confirmed_by: srt (nördliches Ende)
@@ -21520,7 +21527,7 @@ Verlängerte Schulzendorfer Str.: mäßig bis gut befahrbarer Waldweg, je nach Witt
 Blockdammweg: Bauarbeiten, Teerdecke wurde entfernt	Q3 17904,8927 17976,8964
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
-Erich-Nehlhans-Str.: Asphalt	Q0 13999,13276 14132,13234 14224,13206
+Erich-Nehlhans-Str.: Asphalt	Q0 13999,13276 14089,13247 14132,13234 14224,13206
 Richard-Ermisch-Str.: Asphalt	Q0 14245,13268 14224,13206 14207,13152 14177,13065 14163,13025 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14682,12874 14480,12932 14405,12953
 (Parkweg): Asphalt	Q0 14690,12900 14414,12979

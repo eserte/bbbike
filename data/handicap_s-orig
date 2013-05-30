@@ -33,7 +33,7 @@ Simplonstr.: Bauarbeiten, umst‰ndliches ‹berqueren der Modersohnstr.	q3::inwork 
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-05-28
+#: last_checked: 2013-05-30
 #: next_check: 2013-06-03
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 13366,11651 13295,11792
 # 
@@ -1544,6 +1544,9 @@ Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Schwyzer Str. - Aroser Allee): Fuﬂg‰nger, schmal	q1- 7002,17027 6956,17087
 #: XXX_prog BS nur zur Felixstr. hin (ansonsten w‰re es q1)
 Koseler Weg: einige Fuﬂg‰nger, Bordstein	q2 9850,6135 9679,6160
+#: note: einige Einkaufsmˆglichkeiten, relativ viele Fuﬂg‰nger, schnell fahren nicht mˆglich
+(Landsberger Allee - Zechliner Str.): Fuﬂg‰nger	q2 16589,14400 16544,14593
+(Krautstr./Blumenstr. - Strausberger Platz): Fuﬂg‰nger, Hausdurchfahrt	q2 12125,12490 12134,12540
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -1642,7 +1645,7 @@ Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5664,6082 5748,6051 5845,6049 6008,
 #: by: Thomas Heuving
 (Uferweg): kurvenreich, ausreichende Breite	q1 -431,17169 -389,17168 -305,17249 -304,17280 -252,17325 -155,17409 61,17495 117,17549 144,17638 209,17735 225,17815 234,17930 320,18117 372,18411 413,18500 465,18533 534,18553 616,18640 710,18727 714,18758 897,18943 1002,19014 1122,19036 1165,19009 1200,18969 1404,18974 1426,18973 1447,18933
 #: by: anonymous:
-Gustav-Zahnke-Str.: enge Straﬂe	q1 14430,13603 14408,13513 14331,13537
+Gustav-Zahnke-Str.: enge Straﬂe	q1 14439,13600 14417,13517 14337,13541
 #: by: Stefan Schirra:
 Propst-S¸ﬂmilch-Weg: Fuﬂg‰ngerzone	q2 856,3188 709,3229 649,3221
 #: by: Gerlind Rudolph:
@@ -1687,8 +1690,8 @@ Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910
 # REMOVED --- #: by: Regine Bast: --- Eiswaldtstr.: schmale Straﬂe	q1 6722,2444 6834,2449 6965,2418 7051,2366 7172,2343 7282,2386
 # 
 #: by: Stefan Driesner: vvv
-Georg-Lehnig-Str.: enge Straﬂe	q1 14535,13575 14509,13481 14428,13507
-Erich-Kuttner-Str.: enge Straﬂe	q1 14590,13560 14535,13575 14430,13603 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
+Georg-Lehnig-Str.: enge Straﬂe	q1 14551,13571 14527,13486 14447,13507
+Erich-Kuttner-Str.: enge Straﬂe	q1 14590,13560 14551,13571 14439,13600 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
 #: by: ^^^
 # 
 #: by: Patryk (bigoudi): vvv
@@ -1729,7 +1732,8 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 #: by: ^^^
 # 
 #: by: AndrÈ K‰ding
-Neustrelitzer Str.: kurvenreich	q1 16752,14745 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
+#: confirmed_by: srt
+Neustrelitzer Str.: kurvenreich	q1 16752,14745 16668,14765 16524,14749 16443,14825 16346,14750 16256,14828
 #: by: Sven Kr¸ger-G.:
 (Esplanade - Gr¸ntaler Str.): Zickzack-Kurs	q2 9980,16973 9880,16994 9846,16981
 # 
