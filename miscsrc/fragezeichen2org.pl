@@ -93,7 +93,7 @@ for my $file (@files) {
 		 } else {
 		     my $wd = [qw(Su Mo Tu We Th Fr Sa)]->[(localtime($epoch))[6]];
 		     my $date = "$y-$m-$d";
-		     my $subject = $r->[Strassen::NAME] || "(" . $file . "::$.)";
+		     my $subject = $r->[Strassen::NAME] || ($dir->{XXX} && join(" ", @{$dir->{XXX}})) || "(" . $file . "::$.)";
 		     my $dist_tag = '';
 		     my $any_dist; # either one way or two way dist in meters
 		     if ($centerc) {
