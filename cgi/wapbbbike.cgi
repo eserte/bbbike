@@ -167,9 +167,7 @@ EOF
 sub _wap_info {
     my $self = shift;
     print <<EOF;
-  <anchor>Info
-   <go href="@{[ $self->Context->CGI->script_name ]}?info=1"/>
-  </anchor><br/>
+  <a href="@{[ $self->Context->CGI->script_name ]}?info=1">Info</a><br/>
 EOF
 }
 
@@ -624,8 +622,9 @@ sub wap_info {
   Routensuche für Radfahrer in Berlin<br/>
   von Slaven Rezic [<a href="mailto:$BBBike::EMAIL">$BBBike::EMAIL</a>]</p>
   <p>Statt eines Stra&#223;ennamens kann auch eine Kreuzung in der Schreibweise<br/>
-  &nbsp;&nbsp;Stra&#223;e/Kreuzende Stra&#223;e<br/>
-  angegeben werden. Die Angabe des Bezirks ist optional.
+  &#160;&#160;Stra&#223;e/Kreuzende Stra&#223;e<br/>
+  angegeben werden. Die Angabe des Bezirks ist optional.<br/>
+  Moderne Handys sollten besser <a href="http://m.bbbike.de">m.bbbike.de</a> verwenden.
   </p>
  </card>
 @{[ $self->wap_footer ]}
