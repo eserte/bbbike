@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-05-30 vvv
+#: last_checked: 2013-05-31 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -33,7 +33,7 @@ Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-05-30
+#: last_checked: 2013-05-31
 #: next_check: 2013-06-03
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 13366,11651 13295,11792
 # 
@@ -84,12 +84,13 @@ Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4:
 Tieckstr.: Einbahnstraße zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
 #: last_checked ^^^
 # 
-#: last_checked: 2013-05-17
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch Totalsperrung in der Voßstr.
 #: source_id: INKO_113363
-#: XXX laut INKO_113363 bis Ende Mai 2013 gesperrt
+#: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt
 #: osm_watch: way id="197160274" version="1"
+#: last_checked: 2013-05-17
+#: next_check: 2014-04-01
 Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
 #: last_checked: 2013-05-27 vvv
@@ -101,10 +102,13 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,1
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689
 Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
 Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
-#: source_id: IM_019009
-Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: next_check ^^^
 #: last_checked: ^^^
+# 
+#: source_id: IM_019009
+#: XXX ist die Sackgasse mittlerweile aufgehoben?
+#: next_check: 2013-05-31
+Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 # 
 #: last_checked: 2013-04-28
 #: next_check: 2013-10-28
@@ -138,7 +142,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3+::inwork 10601,1252
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2013-05-29 vvv
+#: last_checked: 2013-05-31 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 # REMOVED (now again entry above is active) --- Neue Grünstr.: Fahrbahn gesperrt wegen Bauarbeiten	q4::inwork 10389,11390 10446,11470
@@ -165,9 +169,9 @@ Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 #: osm_watch: way id="34390483" version="8"
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
-#: last_checked: 2013-05-14
-#: next_check: 2013-05-30
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung in der Gegenrichtung, sowie fragezeichen-orig-Eintrag
+#: last_checked: 2013-05-31
+#: next_check: 2013-06-01
 Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732
 # 
 ### Köpenick ###
@@ -209,8 +213,8 @@ Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15535,12420 15446,12450 1
 #: source_id: INKO_111447
 #: source_id: LMS_1290313357
 #: last_checked: 2013-04-20
-#: next_check: 2013-05-30
-Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum 31.05.2013), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
+#: next_check: 2013-06-30 (Ende: 1.7.2013)
+Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
 # 
 #: temporary ^^^
 ######################################################################
@@ -273,7 +277,7 @@ Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911
 #: XXX evtl. nach den Bauarbeiten asphaltiert oder zumindest besser gepflastert/gewalzt? Vielleicht wird auch der südliche Halbkreis neu gemacht?
 #: XXX nach den Bauarbeiten den normalen Eintrag wieder aktivieren
 #: by: http://unsergoerli.de/wegebau-am-rondell-ab-november/ (Asphaltierung!)
-#: last_checked: 2013-05-23
+#: last_checked: 2013-05-31
 Görlitzer Park, Rondell: Bauarbeiten, Fußgänger	q4::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 #Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
@@ -510,6 +514,7 @@ Barsekowstr.: Fußgänger	q1 5344,4672 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5826,4819 5909,4798 5945,4828 6018,4850
 #: XXX_prog: für Anhänger q2
+#: XXX_indoor: im östlichen Teil (Graefe-Schönleinstr.) sind die Bodenschwellen nicht mehr so breit, evtl. q0- eintragen?
 Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655 11541,9576
 Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14076,10011
@@ -1547,6 +1552,8 @@ Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 #: note: einige Einkaufsmöglichkeiten, relativ viele Fußgänger, schnell fahren nicht möglich
 (Landsberger Allee - Zechliner Str.): Fußgänger	q2 16589,14400 16544,14593
 (Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q2 12125,12490 12134,12540
+#: XXX_prog BS
+Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

@@ -279,6 +279,7 @@ Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 105
 Dietzgenstr.: Radspuren bis 2015 geplant	?::projected 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
 Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9881,18354 9821,18392 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9366,18669 9279,18724
 Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555
+#: next_check: 2014-05-01
 Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11162,19844 11312,19920 11425,19978 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
 Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11915,19580 11927,19308 11937,19175
 Alt-Gatow: Radspuren bis 2015 geplant	?::projected; -4760,9343 -4751,9259 -4757,9140 -4755,9120 -4751,9033 -4691,8899 -4590,8666
@@ -425,15 +426,15 @@ Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 1
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
-#: last_checked: 2013-05-23
+#: last_checked: 2013-05-31
 #: next_check: 2013-07-25
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12081,9680 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2013-05-23
-#: check_frequency: 60d
 #: XXX zurzeit (2013-05-23) ein leerer Pfostem am Kottbusser Damm, kommt hier das Fahrradstraßenschild hin?
+#: last_checked: 2013-05-31
+#: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
@@ -905,6 +906,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+#
+#: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf
+Dieselstr. (Potsdam): diese Straße wird "neu gewidmet", existiert schon etwas? Qualität?	? -10350,-2358 -10258,-2380 -10273,-2445
 # 
 Arnulfstr.: was ist hier: Busspur, Radstreifen, Radweg, oder nichts?	? 8100,5517 8200,5510
 # 
@@ -970,9 +974,9 @@ Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 #: priority: #C
 Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10033,17763
 # 
-#: last_checked: 2013-05-14
-#: next_check: 2013-05-30
 #: XXX siehe auch: gesperrt-orig, handicap_s-orig
+#: last_checked: 2013-05-31
+#: next_check: 2013-06-01
 Grimmstr.: Einbahnstraße wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
 # 
 Höhenweg am Wustrower Park: geht es hier weiter?	? 17275,18356 17564,18010 17585,17963 17557,17999
@@ -1067,15 +1071,6 @@ Tegelort - Hakenfelde (sowie Fähre via Valentinswerder): prüfen, ob es nennenswe
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2013
 Am Valwigerteich: gibt es mittlerweile eine Durchfahrtmöglichkeit?	? 18867,12265 18917,12271
-# 
-#: last_checked: 2013-04-22
-#: next_check: 2013-06-01
-(Westpark des Gleisdreieckparks, Eingang Pohlstr.): Beleuchtung, Qualität?	?::inwork 8159,10430 8237,10418 8278,10384
-# 
-#: XXX zumindest innerhalb des Parks betoniert
-#: last_checked: 2013-04-22
-#: next_check: 2013-06-01
-(Westpark des Gleisdreieckparks, Eingang Kurfürstenstr.): Beleuchtung, Qualität?	?::inwork 8061,10310 8180,10282 8253,10265
 # 
 #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/buddestra__e_lp2_07_03_2011.pdf?start&ts=1299577401&file=buddestra__e_lp2_07_03_2011.pdf
 Buddestr.: existiert hier ein Zebrastreifen?	? 2358,20199 2382,20210

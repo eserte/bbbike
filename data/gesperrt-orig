@@ -2003,6 +2003,8 @@ Schranke (lichte Breite ca. 90cm)	BNP:4::trailer=15 11091,1529
 Tor	BNP:10::trailer=15 1707,1256
 #: by: MG
 Schranke	BNP:1::trailer=3 21514,11796
+#: note: verschwenkbar
+Dr‰ngelgitter	BNP:3::trailer=10 8236,10623
 Dr‰ngelgitter	BNP:3::trailer=10 8357,9598
 Dr‰ngelgitter	BNP:3::trailer=10 8353,9642
 Dr‰ngelgitter	BNP:3::trailer=10 8350,9685
@@ -2403,10 +2405,11 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch handicap in der Voﬂstr.
-#: XXX laut INKO_113363 bis Ende Mai 2013 gesperrt
+#: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt
 #: source_id: INKO_113363
 #: osm_watch: way id="197160274" version="1"
 #: last_checked: 2013-05-24
+#: next_check: 2014-04-01
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen mˆglich	2:inwork 8837,11676 9000,11727
 # 
 # REMOVED (Straﬂe ist nicht (mehr?) gesperrt) --- #: last_checked: 2012-06-08 --- #: next_check: 2013-03-01 --- Zur Monumentenhalle: Straﬂe wird wahrscheinlich neu gebaut	2:inwork 8390,8879 8409,8904 8405,8994

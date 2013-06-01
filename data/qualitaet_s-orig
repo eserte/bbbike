@@ -206,6 +206,7 @@ Tiergarten: Kopfsteinpflaster	Q2 5835,11768 5758,11895
 Garibaldistr.: schlechtes Kopfsteinpflaster	Q3 7324,19795 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7711,19956 7838,19884
 #: XXX projektierte Bauarbeiten, danach vielleicht bessere Qualität
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/alt_luebars.html (Baubeginn Mitte 2013)
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130531.1320.385519.html
 #: next_check: 2013-12-01 (Bauende voraussichtlich Ende 2013)
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6764,23396 6801,23474 6805,23554
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6805,23554 6744,23695
@@ -1748,6 +1749,7 @@ Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 7973,14195 78
 #: XXX Neubau der Gabrielenstr., danach wahrscheinlich besserer Asphalt
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130111.1435.380126.html (Fertigstellung Ende 2013)
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/gabrielenstr.html
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130531.1320.385519.html
 #: next_check: 2013-11-15 (voraussichtlich Bauende November 2013)
 Gabrielenstr.: mäßiger Asphalt	Q1 1687,20782 1630,20731 1518,20615
 Gabrielenstr.: guter Asphalt	Q0 1518,20615 1407,20563
@@ -6583,7 +6585,7 @@ Bebelplatz: gepflastert	Q1 9743,12239 9702,12307 9656,12386
 Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Yorckstr. - Park am Gleisdreieck): Beton	Q0 8358,9568 8357,9598 8353,9642 8350,9685 8349,9697
 (Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8497,9654 8540,9644
-(Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8318,10738 8341,10721 8332,10637 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8333,9583
+(Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8341,10721 8332,10637 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8333,9583
 (Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
 (Park am Gleisdreieck, Generalszug): Beton	Q0 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
 (Park am Gleisdreieck, östlicher Weg): Kopfsteinpflaster	Q2 8775,10289 8780,10248 8726,10056
@@ -6597,17 +6599,13 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck): Asphalt	Q0 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8260,10183 8211,10083
 (Park am Gleisdreieck, Weg über dem Tunnelmund): Asphalt	Q0 8263,10349 8315,10347
 (Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8328,10585 8270,10613
-#: XXX wie wird die Qualität nach den Bauarbeiten sein?
-#: last_checked: 2013-04-22
-#: next_check: 2013-06-01
-(Park am Gleisdreieck, Eingang Lützowstr.): (noch) unbefestigt	Q2 8270,10613 8199,10634
-#: XXX wie wird die Qualität nach den Bauarbeiten sein?
-#: osm_watch: way id="166660781" version="2"
-#: last_checked: 2013-04-22
-#: next_check: 2013-06-01
-(Park am Gleisdreieck, Eingang Pohlstr.): (noch) unbefestigt	Q2 8159,10430 8237,10418 8278,10384
+(Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8270,10613 8236,10623 8199,10634
+(Park am Gleisdreieck, Eingang Pohlstr.): Beton	Q0 8159,10430 8237,10418 8278,10384
 (Park am Gleisdreieck, Eingang Bülowstr.): Beton	Q0 8027,10076 8035,10075 8040,10076 8042,10084 8145,10090 8211,10083
-(Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8362,10779 8318,10738
+(Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8362,10779 8357,10764 8341,10721
+(Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8336,10829 8340,10753 8341,10721
+(Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8357,10764 8340,10753 8318,10738
+(Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8061,10310 8180,10282 8253,10265
 (Grenzallee - Britzer Hafensteg): überwiegend Asphalt, einige Verbundsteinpflasterabschnitte	Q0 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13997,6216
 Britzer Hafensteg: Holzbohlen	Q1 13997,6216 13951,6190
 Sieversufer: Asphalt	Q0 13951,6190 13883,6163
@@ -7529,6 +7527,10 @@ Unterführung: Asphalt	Q0 6669,20129 6694,20164
 Interessentenweg: welliger Asphalt	Q1 6669,20129 6627,20045 6565,20026 6501,19956
 Interessentenweg: Fahrbahn grobes Verbundsteinpflaster, für Radfahrer und Fußgänger Schotterweg	Q1 6501,19956 6433,19749
 (Siedlung Roedernau): Verbundsteinpflaster	Q1 6460,19734 6433,19749 6390,19770
+#: XXX bleibt die Fahrbahn nach der Sanierung betoniert?
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130531.1320.385519.html
+#: next_check: 2013-09-01
+#: priority: #C
 Lengeder Str.: Beton	Q0 6516,19775 6460,19734 6334,19507 6247,19454
 Weinbrennerweg: Mosaikpflaster	Q1 6106,19510 6200,19554
 (Weg am Nordgraben): wassergebundene Decke	Q1- 5860,20249 6275,20412
@@ -7583,8 +7585,13 @@ Schönfließer Str.: Beton	Q0 1957,26024 1993,26030 2112,26066 2297,26090
 Weislingenstr.: Asphalt mit Rissen und anderen Schäden	Q1 2944,26099 3045,26078 3152,26051 3169,26048
 Weislingenstr.: Asphalt	Q0 3169,26048 3217,26049 3271,26067
 Remstaler Str.: Kleinsteinpflaster	Q1 3169,26048 3186,25969 3221,25876 3216,25778 3154,25659
+#: XXX wie wird die Qualität nach der Sanierung sein? vvv
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130531.1320.385519.html
+#: next_check: 2013-09-01 vvv
 Remstaler Str.: schlechtes Kopfsteinpflaster	Q3 3154,25659 3141,25626 3141,25575
 Remstaler Str.: Asphalt mit starken Schäden	Q2- 3141,25575 3171,25495
+#: next_check ^^^
+#: XXX ^^^
 Bieselheider Weg: Asphalt	Q0 3324,26100 3271,26067
 Am Pilz: Verbundsteinpflaster	Q1 3138,26315 3211,26369 3288,26388
 Am Pilz: Beton mit Schäden	Q1 3288,26388 3347,26384 3398,26369
@@ -20583,6 +20590,7 @@ Borkener Weg: Beton	Q0 1375,18209 1390,18256 1448,18436 1507,18629
 #: XXX "Die Baumaßnahme wird voraussichtlich Ende 2013 beendet sein."
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121024.1305.377018.html
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/strasse494.html
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130531.1320.385519.html
 #: next_check: 2013-10-31
 Straße 494: fester Sandweg	Q2 7923,23225 8119,22798
 #: confirmed_by: srt

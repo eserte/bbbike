@@ -6221,10 +6221,11 @@ EOF
      { from  => $isodate2epoch->("2013-05-31 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-06-02 23:59:59"),
        periodic => 1,
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. Veranstaltung (Primavera), Straße vollständig gesperrt (1.6.2013 und 2.6.2013)',
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (1.6.2013 und 2.6.2013)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 7110,9024 7044,9163 7022,9211 7006,9282
+userdel	2::temp 6945,9142 7044,9163
 EOF
      },
      { from  => 1160214244, # 2006-10-07 11:44
@@ -20563,14 +20564,14 @@ EOF
 #: last_checked: 2013-05-28 (andk, insbesondere am Kanal dauerhafte Sperrung) vvv
 #: next_check: 2013-06-01 vvv
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130529.1525.385421.html (Eröffnung am 1. Juni)
-userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721 8318,10738
+userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
 userdel	2::inwork 8328,10585 8270,10613
 userdel	2::inwork 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
 userdel	2::inwork 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8260,10183 8211,10083 8145,10090 8042,10084 8040,10076 8035,10075 8027,10076 8035,10075 8027,10076
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
-userdel	2::inwork 8270,10613 8199,10634
+userdel	2::inwork 8270,10613 8236,10623 8199,10634
 userdel	2::inwork 8159,10430 8237,10418 8278,10384
-userdel	2::inwork 8318,10738 8362,10779
+userdel	2::inwork 8341,10721 8357,10764 8362,10779
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -21282,6 +21283,15 @@ EOF
        source_id => 'http://www.xhain.info/termine/reichefest.htm',
        data  => <<EOF,
 userdel	2::temp 12048,10097 12229,10014
+EOF
+     },
+     { from  => 1370210400, # 2013-06-03 00:00
+       until => 1398895200, # 2014-05-01 00:00
+       text  => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
+       data  => <<EOF,
+userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
 EOF
      },
     );

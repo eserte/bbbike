@@ -743,10 +743,11 @@ userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-21
        {
          'periodic' => 1,
          'until' => 1370210399,
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. Veranstaltung (Primavera), Straße vollständig gesperrt (1.6.2013 und 2.6.2013)',
+         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (1.6.2013 und 2.6.2013)',
          'from' => 1369951200,
          'id' => 728,
          'data' => 'userdel	2::temp 7110,9024 7044,9163 7022,9211 7006,9282
+userdel	2::temp 6945,9142 7044,9163
 ',
          'type' => 'gesperrt'
        },
@@ -2432,7 +2433,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -3342,6 +3343,16 @@ userdel	2::temp 13886,10939 13856,10864
          'data' => 'userdel	2::temp 12048,10097 12229,10014
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
+         'until' => 1398895200,
+         'text' => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
+         'from' => 1370210400,
+         'id' => 2435,
+         'data' => 'userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
+',
+         'type' => 'handicap'
        }
      
 );
