@@ -121,6 +121,8 @@ XTERM_CONF_TITLE=	xterm-conf -f --title
 WWW_USER?=	www-data
 WWW_GROUP?=	www-data
 
+TODAY!=		date +%Y%m%d
+
 OSNAME!=	uname
 .if ${OSNAME} == "linux"
 OS_LINUX=	yes
@@ -769,7 +771,7 @@ server-permissions:
 backup:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
 	    cd ${BBBIKE_HOSTEUROPE_APACHE_DIR} && \
-	    tar cfpz /tmp/BBBike-`date +%Y%m%d`-backup.tar.gz \
+	    tar cfpz /tmp/BBBike-${TODAY}-backup.tar.gz \
 	    BBBike \
 	    cgi-bin/bbbike.cgi cgi-bin/bbbike.cgi.config cgi-bin/wapbbbike.cgi \
 	    $(HTDOCS)/mapserver \
@@ -778,7 +780,7 @@ backup:
 backup-local:
 	${SSH_PROG_AND_ARGS} -l eserte localhost '\
 	    cd $(.CURDIR) && \
-	    tar cfpz /tmp/BBBike-`date +%Y%m%d`-backup.tar.gz \
+	    tar cfpz /tmp/BBBike-${TODAY}-backup.tar.gz \
 	    BBBike \
 	    cgi-bin/bbbike.cgi cgi-bin/bbbike.cgi.config cgi-bin/wapbbbike.cgi \
 	    $(HTDOCS)/mapserver \
@@ -852,8 +854,11 @@ post-automatic-deploy-info:
 	@echo "    ${MAKE} after-deployment-set-tags"
 	@echo ""
 
+# XXX This target only supports two tags per day...
 after-deployment-set-tags:
-	git tag -a -m "automatic deployment" deployment/bbbikede/`date +%Y%m%d`
+	@[ `git tag -l deployment/bbbikede/${TODAY} | wc -l` = 0 ] && \
+	    (echo "Create git tag deployment/bbbikede/${TODAY} ...";   git tag -a -m "automatic deployment" deployment/bbbikede/${TODAY}) || \
+	    (echo "Create git tag deployment/bbbikede/${TODAY}_2 ..."; git tag -a -m "automatic deployment" deployment/bbbikede/${TODAY}_2)
 	git tag -f deployment/bbbikede/current
 
 automatic-deployment: automatic-deployment--check-prerequisites
