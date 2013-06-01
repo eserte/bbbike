@@ -146,10 +146,4 @@ in a zip file):
     ~/src/bbbike/miscsrc/weight_bbd -logarithmic=2.5 -f -o /tmp/${YYYYMM}_weighted_25.bbd /tmp/$YYYYMM.bbd
     ~/src/bbbike/miscsrc/weight_bbd -distinguish-dir -logarithmic=2.5 -f -o /tmp/${YYYYMM}_weighted_dir_25.bbd /tmp/$YYYYMM.bbd
 
-=head1 TODO
-
-Convert script to not use .desc file anymore, but first the bbbike
-handle_global_directives code has to deal with the generated arrays
-for the line_width!
-
 =cut
