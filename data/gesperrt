@@ -95,7 +95,7 @@ Eichborndamm	1 4232,18981 4210,18878 4171,18677 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17816,5733 17812,5726 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15674,10851 15861,10931
-Nöldnerplatz	1 15861,10931 16032,10842
+Nöldnerplatz	1 15861,10931 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Richterstr.	1s 22092,999 22120,886
 Richterstr.	1s 22075,779 22007,711
@@ -1341,9 +1341,9 @@ Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 112
 Straßenbahntrasse	3nocross::ignrte 21579,4579 21726,4537 21796,4517
 Flemmingstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21848,4882 21726,4537 21796,4517
 Oberspreestr. -> Flemmingstr.: Straßenbahntrasse	3::igndisp 21579,4579 21726,4537 21848,4882
-Straßenbahntrasse	3nocross::ignrte 21332,4655 21389,4635 21494,4605
-Westendstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21370,4442 21389,4635 21332,4655
-Oberspreestr. -> Westendstr.: Straßenbahntrasse	3::igndisp 21494,4605 21389,4635 21370,4442
+Straßenbahntrasse	3nocross::ignrte 21332,4655 21390,4637 21494,4605
+Westendstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21370,4442 21390,4637 21332,4655
+Oberspreestr. -> Westendstr.: Straßenbahntrasse	3::igndisp 21494,4605 21390,4637 21370,4442
 Gitter auf Mittelstreifen	3nocross::ignrte 11898,8362 11920,8252 11931,8206
 Mahlower Str. -> Boddinstr.: Gitter auf Mittelstreifen	3::igndisp 11773,8231 11920,8252 12104,8299
 Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3::igndisp 11773,8231 11920,8252 11898,8362
@@ -1960,7 +1960,6 @@ tragen (3+3+2+2 Stufen)	0:20:84 9244,3872
 tragen (10 Stufen)	0:15:-82 8035,10075
 tragen (7 weite Stufen)	0:30:-41 15759,16671
 tragen (6 Stufen)	0:12:-38 15915,16526
-tragen (8 Stufen)	0:12:13 18184,9626
 tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10:-176 8029,10106
 tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30:-156 -5561,12909
 tragen (wenige Stufen)	0:5:-161 -5446,13137
@@ -2466,7 +2465,6 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 (Bellevuepark): Asphaltbauarbeiten	2:inwork 22794,5583 22855,5554 22835,5452 22851,5321
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
-Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; evtl. wird danach die Wegsituation komplett anders aussehen	2:inwork 19456,7956 19549,7826
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280

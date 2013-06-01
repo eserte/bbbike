@@ -111,7 +111,7 @@ Eichborndamm	1 4232,18981 4210,18878 4171,18677 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17816,5733 17812,5726 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15674,10851 15861,10931
-Nöldnerplatz	1 15861,10931 16032,10842
+Nöldnerplatz	1 15861,10931 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Richterstr.	1s:q3 22092,999 22120,886
 Richterstr.	1s:q3 22075,779 22007,711
@@ -1403,7 +1403,7 @@ Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6512,9866 6514,9947
 Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6447,9661 6445,9538
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 10997,16280 10989,16197 10982,16121
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21796,4517
-Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21389,4635 21494,4605
+Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21390,4637 21494,4605
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11898,8362 11920,8252 11931,8206
 Bundesplatztunnel	3nocross 5350,7554 5349,7619 5348,7681 5348,7746 5346,7860
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
@@ -1611,7 +1611,7 @@ tragen (3+3+2+2 Stufen)	0:20 9244,3872
 tragen (10 Stufen)	0:15 8035,10075
 tragen (7 weite Stufen)	0:30 15759,16671
 tragen (6 Stufen)	0:12 15915,16526
-tragen (8 Stufen)	0:12 18184,9626
+# REMOVED (jetzt eine Rampe) --- tragen (8 Stufen)	0:12 18184,9626
 tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10 8029,10106
 #: by: Stefan Klinkusch:
 tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30 -5561,12909
@@ -2374,12 +2374,6 @@ Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 1
 #: next_check: 2014-01-01
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
-# 
-# REMOVED (moved to temp blockings) --- #: last_checked: 2012-10-16 --- #: next_check: 2013-02-01 --- Gleisdreieckpark: noch in Bau	2:inwork 8270,10613 8199,10634
-#
-#: last_checked: 2013-02-16
-#: next_check: 2013-03-16
-Carlsgarten - Wuhlheide: wegen Bauarbeiten Durchfahrtsmöglichkeit zweifelhaft; evtl. wird danach die Wegsituation komplett anders aussehen	2:inwork 19456,7956 19549,7826
 # 
 #: last_checked: 2013-05-01
 #: next_check: 2013-07-01

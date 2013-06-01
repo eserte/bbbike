@@ -215,9 +215,9 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
 #: XXX Baumaßnahme 11.45 (Realisierung nach 2011)
-#: last_checked: 2012-10-21
-#: next_check: 2013-06-01
-Weg 1 im KGA Hochspannung: wird hier eine Lösung für die Treppe gefunden? Und die Qualität des Wegs verbessert?	?::projected 18224,9795 18184,9626 18179,9611
+#: last_checked: 2013-06-01
+#: next_check: 2013-07-01
+Weg 1 im KGA Hochspannung: die Qualität des Wegs wird verbessert, evtl. asphaltiert	?::inwork 18266,9853 18278,9818 18224,9795 18181,9619
 # 
 #: XXX Baumaßnahme 8.20 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
@@ -232,9 +232,9 @@ Karl-Marx-Str.: wann werden hier die Radspuren markiert?	?::projected 13085,6925
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
-#: last_checked: 2012-08-01
-#: next_check: 2013-04-01
-Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19534,5242
+#: last_checked: 2013-06-01
+#: check_frequency: 90d
+Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
 #: last_checked: 2013-03-24
@@ -347,6 +347,13 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: XXX culdesac -> culdesac_pseudo, wenn's fertig ist
+#: last_checked: 2013-06-01
+#: next_check: 2013-06-15
+Rampe in Bau	?::inwork 17904,8927 17888,8899 17915,8900
+# 
+Oberspreestr. [Wohngebiet]: Qualität (voraussichtliche asphaltiert); Einbahnstraße auch für Radfahrer?	? 19632,5211 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 # 
 #: last_checked: 2013-05-12 vvv
 Ampelanlage in Bau	?::inwork 9242,7286
@@ -513,7 +520,7 @@ Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 1
 #: by: ^^^
 # 
 #: last_checked: 2013-05-04
-#: next_check: 2013-06-04
+#: next_check: 2013-06-08
 #: note: Treskowallee (Lichtenberg) in Höhe Waldowallee Baustelle, Fahrbahn von 2 auf 1 Fahrstreifen reduziert, ein Abbiegen aus Richtung Am Tierpark in die Waldowallee ist nicht möglich (bis Ende 03/2013)
 #: source_id: IM_019443
 #: osm_watch: node id="28394944" version="19"
@@ -527,9 +534,9 @@ Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur e
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv
-#: last_checked: 2013-04-21 vvv
-#: next_check: 2014-03-21 vvv
 #: osm_watch: way id="185792044" version="1"
+#: last_checked: 2013-06-01 vvv
+#: next_check: 2014-03-21 vvv
 Wasserstr.: geplante Straße in Niederschöneweide	?::projected 17477,6031 17639,6227
 Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,6083 17900,6072
 #: next_check ^^^
@@ -646,8 +653,8 @@ Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,128
 Cecilienstraße/Hannaweg: neuer Zebrastreifen wird markiert	?::projected 20909,13968 20936,13941
 #: by: ^^^
 # 
-#: last_checked: 2013-02-16 vvv
-#: next_check: 2013-03-16 vvv
+#: last_checked: 2013-06-01 vvv
+#: next_check: 2013-07-15 vvv
 #: XXX siehe auch temporäre Sperrung des Weges in die Wuhlheide
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012 vvv
@@ -884,7 +891,7 @@ Werder - Phöben: Radweg in Planung, Realisierung bis 2007-12-31	? -22206,-1693 -
 Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
 # 
 #: last_checked: 2011-06-26
-#: next_check: 2013-06-01
+#: next_check: 2013-09-01
 Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,16357
 # 
 #: next_check: 2010-10-30
@@ -1317,8 +1324,6 @@ B2: gibt es hier Radwege?	? -9972,6846 -9854,6890 -9640,6971
 #
 #: XXX: alter Eintrag von Johannes (...schmeisser...), nochmal prüfen!
 Sternstr. (Drewitz): gibt es hier einen Radweg? In beide Richtungen?	? -7917,-4792 -7969,-4828 -8021,-4937 -8033,-5049 -8053,-5116 -8113,-5204 -8116,-5221 -8165,-5236
-# 
-Ottomar-Geschke-Str.: es scheint ein Zweirichtungsweg zu existieren. Prüfen!	? 21206,4387 21184,4293 21174,4250
 # 
 # REMOVED (Drucksache wurde zurückgezogen) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20120329.0935.368110.html vvv --- #: XXX wird hiervon irgendetwas in Zukunft realisiert? vvv --- #: next_check: 2013-01-01 vvv --- Eugen-Kleine-Brücke: Gehwegbenutzungspflicht für Radverkehr abschaffen Drucksache: 0148/IV	? 3751,1402 3696,1445 --- #: next_check ^^^ --- #: XXX ^^^ --- #: by: ^^^
 # REMOVED (hier ändert sich bestimmt nichts) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012 --- Mieltschiner Str.: Straße wird eigenzogen - bleibt dieser Abschnitt öffentlich befahrbar?	? 22604,9988 22730,9938 22862,9886

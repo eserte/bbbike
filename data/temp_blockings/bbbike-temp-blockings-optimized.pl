@@ -3353,6 +3353,21 @@ userdel	2::temp 13886,10939 13856,10864
          'data' => 'userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.kindertag-berlin.de/index.php?id=418',
+         'data' => 'userdel	2::temp 20755,5750 20716,6029 20708,6089 20623,6136 20453,6211 20464,6237
+userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
+userdel	2::temp 20200,6321 20262,6493 20225,6631
+userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+userdel	2::temp 19976,6087 20064,6290 20106,6357
+',
+         'periodic' => 1,
+         'until' => 1370210399,
+         'from' => 1369951200,
+         'text' => 'Internationaler Kindertag im FEZ, Veranstaltung, einige Wege und Straßen sind gesperrt, 1. und 2. Juni 2013',
+         'type' => 'gesperrt',
+         'id' => 2436
        }
      
 );
