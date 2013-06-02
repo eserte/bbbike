@@ -169,7 +169,8 @@ sub handle_data {
 	    $goal{$coords[-1]}++;
 	} else {
 	    my $date = POSIX::strftime("%FT%T", localtime $data->{time});
-	    my $name = "$date $data->{remote_ip}";
+	    my($ip) = $data->{remote_ip} =~ m{(\S+)$}; # strip local ips, show the last ip in chain
+	    my $name = "$date $ip";
 	    my $prefs = $data->{prefs};
 	    if ($prefs) {
 		$name .= " " . join(" ", map {
