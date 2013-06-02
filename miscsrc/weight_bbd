@@ -25,11 +25,13 @@ my $do_scale_widths = 1;
 my $do_distinguish_dir = 0;
 my @scale_widths = (0.25, 0.5, 0.75, 1, 1.5, 2);
 my $logarithmic = undef;
+my $is_coordssession_data;
 if (!GetOptions("logarithmic=f" => \$logarithmic,
 		"f" => \$force,
 		"o=s" => \$out,
 		"scalewidths!" => \$do_scale_widths,
 		"distinguish-dir!" => \$do_distinguish_dir,
+		"coordssession-data!" => \$is_coordssession_data,
 	       )) {
     die "usage";
 }
@@ -40,6 +42,10 @@ if ($out !~ /\.bbd$/) {
     die "$out does not have .bbd extension!";
 }
 
+if ($is_coordssession_data && !$do_distinguish_dir) {
+    die "-coordssession-data option requires -distinguish-dir option!";
+}
+
 my $file = shift || "-";
 my $s = Strassen->new($file) or die "Strassen file '$file' cannot be opened";
 if (-e $out && !$force) {
@@ -48,6 +54,7 @@ if (-e $out && !$force) {
 
 my %net;
 my %name;
+my %hop_props; # coord -> {key -> val ...}
 
 $s->init;
 while(1) {
@@ -66,8 +73,26 @@ while(1) {
 		$net{$c1}++;
 	    }
 	} else {
-	    if (!exists $name{$c1}) {
-		$name{$c1} = $r->[Strassen::NAME()];
+	    if ($is_coordssession_data) {
+		if ($r->[Strassen::NAME()] =~ m{^(\d{4}-\d{2}-\d{2})\S+\s+(\S+)\s+(.*)}) {
+		    my($date, $ip, $rest) = ($1, $2, $3);
+		    my $props = $hop_props{$c1};
+		    if (!$props) {
+			$props = $hop_props{$c1} = {};
+		    }
+		    $props->{_date}->{$date}++;
+		    $props->{_ip}->{$ip}++;
+		    for my $kv (split /\s+/, $rest) {
+			my($k,$v) = split /:/, $kv;
+			$props->{$k}->{$v}++;
+		    }
+		} else {
+		    warn "Cannot parse '$r->[Strassen::NAME()]'";
+		}
+	    } else {
+		if (!exists $name{$c1}) {
+		    $name{$c1} = $r->[Strassen::NAME()];
+		}
 	    }
 	    $net{$c1}++;
 	}
@@ -78,7 +103,9 @@ my %net2cat;
 my %cat;
 # Calculate %net2cat (the mapping line -> category)
 # Calculate %cat (existence hash of used categories)
-# Modify %name (prepend $count before name)
+# Modify %name:
+#  prepend $count before name
+#  or (with -coordssession-data): build name from the most common prop values
 while(my($k,$v) = each %net) {
     my $count = $v;
     if (defined $logarithmic) {
@@ -86,7 +113,52 @@ while(my($k,$v) = each %net) {
 	$v = 1 if ($v < 1);
     }
     $net2cat{$k} = $v;
-    $name{$k} = "$count: $name{$k}";
+    if ($is_coordssession_data) {
+	my $props = $hop_props{$k};
+	if ($props) {
+	    my $prop2out = sub {
+		my($props_key) = @_;
+		my $max_count = 0;
+		my $max_val;
+		while(my($val,$val_count) = each %$props_key) {
+		    if (!defined $max_val || $val_count > $max_count) {
+			$max_count = $val_count;
+			$max_val   = $val;
+		    }
+		}
+		($max_val, $max_count != $count ? int(100*$max_count/$count) : 100);
+	    };
+
+	    # First output the count, for easier sorting (e.g. within emacs buffer, or with sort -n)
+	    my $name = $count . ':';
+	    # Output the "meta" properties date and ip.
+	    # Show 100% is there's only one different value here, otherwise no percentage.
+	    # No key ("date"/"ip") is output here, the value looks nonambiguous.
+	    for my $meta_props_def (
+				    [$prop2out->($props->{'_date'})],
+				    [$prop2out->($props->{'_ip'})],
+				   ) {
+		$name .= ' ' . $meta_props_def->[0] . ($meta_props_def->[1] == 100 ? '(100%)' : '');
+	    }
+	    # Output the normal properties like speed, quality etc.
+	    # Here output is different: show a percentage only if it's not 100%
+	    # Sort property keys by highest percentage.
+	    my @props_out;
+	    while(my($key,$props_key) = each %$props) {
+		next if $key =~ m{^_};
+		push @props_out, [$key, $prop2out->($props_key)];
+	    }
+	    for my $props_def (sort { $b->[2] <=> $a->[2] } @props_out) {
+		$name .= ' ' . $props_def->[0] . ':' . $props_def->[1] . ($props_def->[2] < 100 ? '('.$props_def->[2].'%)' : '');
+	    }
+	    # We have the name, finally.
+	    $name{$k} = $name;
+	} else {
+	    $name{$k} = '???'; # because this should never happen
+	}
+    } else {
+	$name{$k} = "$count: $name{$k}";
+    }
     $cat{$v}++;
 }
 
