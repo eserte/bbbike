@@ -145,7 +145,7 @@ Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,1172
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
 #: XXX Baumaßnahme 3.18 (Realisierung in 2011)
-#: last_checked: 2013-05-14 (weiterhin nur Busspuren)
+#: last_checked: 2013-06-03 (weiterhin nur Busspuren)
 #: check_frequency: 60d
 Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
@@ -353,8 +353,6 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: next_check: 2013-06-15
 Rampe in Bau	?::inwork 17904,8927 17888,8899 17915,8900
 # 
-Oberspreestr. [Wohngebiet]: Qualität (voraussichtliche asphaltiert); Einbahnstraße auch für Radfahrer?	? 19632,5211 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
-# 
 #: last_checked: 2013-05-12 vvv
 Ampelanlage in Bau	?::inwork 9242,7286
 Ampelanlage in Bau	?::inwork 9242,7325
@@ -420,8 +418,9 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 Einmündung der Burgfrauenstraße in den Zeltinger Platz: hier wird ein Zebrastreifen angelegt	?::projected 2427,25126 2479,25116
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&options=4
-#: next_check: 2013-05-01
 #: osm_watch: node id="29778885" version="4"
+#: last_checked: 2013-06-03
+#: check_frequency: 100d
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::projected 13708,17453
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
@@ -433,14 +432,14 @@ Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 1
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
-#: last_checked: 2013-05-31
-#: next_check: 2013-07-25
+#: last_checked: 2013-06-03
+#: check_frequency: 90d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12081,9680 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
 #: XXX zurzeit (2013-05-23) ein leerer Pfostem am Kottbusser Damm, kommt hier das Fahrradstraßenschild hin?
-#: last_checked: 2013-05-31
+#: last_checked: 2013-06-03
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -505,8 +504,8 @@ Wackerweg - Otisstr.: im Zuge der RR4 könnte es hier eine neue Verbindung geben	
 Verbindung im Zuge der RR9: Qualität?	? 26199,5643 26270,5829 26302,5932
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2013-05-04
-#: next_check: 2013-08-04
+#: last_checked: 2013-06-02
+#: next_check: 2013-09-02
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
 #: last_checked: 2013-04-20
@@ -913,6 +912,34 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+Glambecker Ring - Lea-Grundig-Str.: existiert hier eine Verbindung? Qualität? Beleuchtung?	? 21824,16506 21579,16545 21491,16631
+Max-Herrmann-Str. - Ludwig-Renn-Str.: existiert hier eine Verbindung? Qualität? Beleuchtung?	? 21291,16703 21017,16737
+Ludwig-Renn-Str. - Walter-Felsenstein-Str.: existiert hier eine Verbindung? Qualität? Beleuchtung?	? 20861,16819 20746,16832 20617,16614
+Kaulsdorfer Str. (Hönow): Qualität?	? 25418,14538 25490,14601 25555,14657 25644,14721 25745,14808 25866,14898 25932,14955 25991,14926
+Ernst-Bloch-Str. - Hellersdorfer Str.: besteht hier für Radfahrer eine Verbindung? Qualität? Kann die Hellersdorfer Str. hier überquert werden?	? 22985,12807 22924,12833
+Berliner Balkon: Qualität? Beleuchtet?	? 23575,10972 23640,11025 23788,11042 24044,11018 24114,11046 24167,11049
+Berliner Balkon: Qualität? Beleuchtet?	? 24175,11265 24158,11253 24152,11144 24167,11049 24248,10966 24286,10953 24340,10978 24422,10972 24455,10942 24536,10941 24719,11033 24740,10992
+Berliner Balkon: Qualität? Beleuchtet?	? 24248,10966 24207,10858 24229,10843
+Mittelheide, Nord-Süd-Weg: Qualität?	? 24377,7698 24281,7676 24197,6875 24133,6169 24230,6135
+Grünauer Str. - Kablower Weg: existiert hier eine Verbindung durch den Wald? Qualität?	? 22926,-340 22948,-322 22862,-126 22815,37
+Grillostr. - Wehnertstr.: existiert hier eine Verbindung? Wenn ja: Qualität? Beleuchtung?	? 8790,854 8684,913 8662,899
+Dohnagestell - Tangastr.: Qualität? beleuchtet?	? 5553,15271 5722,15332 5961,15562
+Dohnagestell - Ugandastr.: Qualität? beleuchtet?	? 5522,15354 5710,15519 5906,15623
+Petersallee - Dohnagestell: Qualität? beleuchtet?	? 5426,16539 5129,16210 5022,15987 4879,15964 4880,15910 4849,15875
+Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?	? 15102,20723 15220,20586 15255,19906
+Blankenburger Pflasterweg - Ornitstr.: Qualität? Beleuchtet? Genaue Wegführung?	? 15255,19906 15357,19880 15413,18626
+Am Heinersdorfer Graben: Qualität? Beleuchtet? Straßenname (bei osm: Kiebitzweg)	? 13902,18953 13404,19235 13040,19596
+Hansastr. - Gartenstr.: existiert hier eine Wegverbindung? Qualität? beleuchtet?	? 15187,16185 14692,16328
+Weißer See: besteht am Südufer eine für Radfahrer nutzbare Verbindung? Qualität? beleuchtet?	? 14499,16341 14231,16423 14124,16544
+Schwarzmeerstr. - Rummelsburger Str.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17751,10904 17768,10963 17700,11042 17719,11092
+Am Lindenplatz - Schwarzmeerstr.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17855,10873 17821,10741
+Schwarzmeerstr. - Moldaustr.: existiert hier eine Wegverbindung? Qualität? beleuchtet?	? 17882,10728 17847,10629 17850,10524 17829,10516
+Erieseering - am Tränkegraben: existiert hier eine Wegverbindung? Qualität? beleuchtet?	? 18141,10173 18039,10398 17999,10584
+# 
+Siegfriedstr. - Am Wasserwerk - Landsberger Allee: existiert hier eine Wegführung für Radfahrer? Qualität? Beleuchtung?	? 16864,14226 16775,14225 16654,14311 16634,14373 16589,14400
+# 
+Oberspreestr. [Wohngebiet]: Qualität (voraussichtliche asphaltiert); Einbahnstraße auch für Radfahrer?	? 19632,5211 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 #
 #: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf
 Dieselstr. (Potsdam): diese Straße wird "neu gewidmet", existiert schon etwas? Qualität?	? -10350,-2358 -10258,-2380 -10273,-2445
@@ -982,8 +1009,9 @@ Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10033,17763
 # 
 #: XXX siehe auch: gesperrt-orig, handicap_s-orig
-#: last_checked: 2013-05-31
-#: next_check: 2013-06-01
+#: last_checked: 2013-06-03
+#: next_check: 2013-06-05
+#: priority: #A
 Grimmstr.: Einbahnstraße wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
 # 
 Höhenweg am Wustrower Park: geht es hier weiter?	? 17275,18356 17564,18010 17585,17963 17557,17999
@@ -1058,6 +1086,7 @@ Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehe
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
 #: next_check: 2013-06-05
+#: priority: #C
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14586,7624
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
@@ -1080,6 +1109,7 @@ Tegelort - Hakenfelde (sowie Fähre via Valentinswerder): prüfen, ob es nennenswe
 Am Valwigerteich: gibt es mittlerweile eine Durchfahrtmöglichkeit?	? 18867,12265 18917,12271
 # 
 #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/buddestra__e_lp2_07_03_2011.pdf?start&ts=1299577401&file=buddestra__e_lp2_07_03_2011.pdf
+#: priority: #C
 Buddestr.: existiert hier ein Zebrastreifen?	? 2358,20199 2382,20210
 # 
 Salvador-Allende-Viertel: Gehwege, Qualität, auch für Radfahrer befahrbar? Beleuchtung?	? 22965,4124 22898,4196 23016,4326 23025,4358 23036,4420 23051,4461 23077,4512 23109,4554 23166,4585 23279,4599 23445,4596 23443,4524
@@ -1088,10 +1118,12 @@ Zugang zur Straße am Berg möglich?	? 23051,4461 23010,4506
 # 
 #: last_checked: 2013-04-28 (keine Fortschritte)
 #: next_check: 2013-06-28
+#: priority: #C
 Möckernstr./Wartenbergstr.: wird hier ein Zebrastreifen entstehen? Oder nur eine Fußgängerinsel?	?::inwork 8762,9964 8800,9944
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4439&options=4
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4473 (eventuelle Verlegung?)
+#: priority: #C
 Bäkestr.: existiert hier ein Zebrastreifen?	? 4526,3138 4701,3018
 # 
 #: XXX früher: "Albrechtsche Erben (Kolonie)", evtl. auch in Berlin.coords.data umbenennen
@@ -1128,18 +1160,22 @@ Lauterstr.: wird die Straße am Breslauer Platz komplett gesperrt?	?::projected 5
 Hosemannstr. [Anliegerstraße zur Mandelstr.]: Qualität? Wird hier eine Einbahnstraße eingerichtet?	? 12941,15775 12771,15876
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361057749620/1057749620/00056359/59-Anlagen/04/vzbbvv01814_-_Fussgaengerueberweg_Alte_Hellers.pdf
+#: priority: #C
 Alte Hellersdorfer Str.: wird hier ein Zebrastreifen entstehen	? 23079,15855 23134,15883
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4550&options=4 vvv
 #: last_checked: 2013-01-05 (keine Bauarbeiten zu erkennen)
 #: next_check: 2013-05-15
+#: priority: #C
 Uhlandstr./Ludwigkirchstr.: Planung eines Zebrastreifens für 2012	?::projected 5024,10153
 # 
 #: next_check: 2013-08-01
+#: priority: #C
 Sömmeringstraße/Quedlinburger Straße: Planung eines Zebrastreifens für 2013	?::projected 3714,12949
 # 
 #: last_checked: 2013-05-01
 #: next_check: 2013-08-01
+#: priority: #C
 Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::projected 3711,13098
 #: by: ^^^
 # 
@@ -1303,7 +1339,9 @@ Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projecte
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25691,4716 25724,4706 25802,4681
 #: next_check: 2014-01-01
 Brücke soll gebaut werden	?::projected 23469,5340 23492,5334
-Querungsmöglichkeit der Bahntrassen soll ermöglicht werden	?::projected 23504,-938 23919,-780
+#: XXX dieser Abschnitt existiert wahrscheinlich schon
+Querungsmöglichkeit der Bahntrassen soll ermöglicht werden: Qualität?	? 23504,-938 23711,-1054 24058,-1287
+Querungsmöglichkeit der Bahntrassen soll ermöglicht werden	?::projected 24058,-1287 24153,-1140
 Verbesserung der Befahrbarkeit	?::projected 22655,1450 22756,1524
 Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23955,728 24019,711 24211,585 24571,514 24660,440
 Fahrradstraße soll eingerichtet werden	?::projected 25646,-209 25760,-427 25958,-731
@@ -1340,6 +1378,7 @@ Radschutzstreifen, genaue Situation?	? -9620,-4939 -9642,-4916 -9862,-4705 -9872
 Potsdam, Lutherplatz: ist dieser Abschnitt als Lutherplatz ausgeschildert?	? -10673,-2128 -10772,-2153
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20111230.1240.364422.html
+#: priority: #C
 Neue Grottkauer Str.: Zebrastreifen, wo genau?	? 23189,13920 23368,13936
 # 
 #: by: http://farm7.staticflickr.com/6051/6359918217_d76e41d8e1_b.jpg
@@ -1349,7 +1388,7 @@ Hans-Werner-Klünner-Weg: Wo befindet sich der Weg? Qualität? Beleuchtet?	? -2916
 # 
 #: last_checked: 2012-09-16
 #: next_check: 2013-12-01
-entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebauter Weg irgendwann entstehen?	? 25334,15051 25499,15010 25742,14907 25866,14898 25932,14955 25991,14926
+entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebauter Weg irgendwann entstehen?	? 25334,15051 25499,15010 25742,14907 25866,14898
 # 
 #: XXX_prog: 3nocross for trailer
 Mariendorfer Damm: überqueren mit Anhänger hier wegen Pömpel vielleicht nicht möglich, nochmal prüfen	? 10329,1231

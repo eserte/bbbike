@@ -4801,7 +4801,7 @@ Straße 16: Beton	Q0 13031,17775 13034,17895
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13760,15187 13792,15238 13792,15259
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Beton	Q0 13792,15259 13724,15309 13710,15352
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13710,15352 13688,15393 13713,15440
-Syringenplatz/Syringenweg: Asphalt mit Schäden	Q1 14035,14520 14049,14244 14038,14099 13965,14018
+Syringenplatz/Syringenweg: Asphalt mit Schäden	Q1 14025,14519 14042,14249 14038,14099 13965,14018
 Straße 18: unbefestigte Straße	Q2 12942,18154 12939,18081 12902,18033
 Rotkäppchenweg: Gras	Q3 14692,18823 14651,18950
 Rotkäppchenweg: unbefestigter Weg, teilweise nur Gras	Q2 14651,18950 14621,19025 14578,19089 14528,19140 14482,19174 14349,19255 14216,19338
@@ -7838,7 +7838,7 @@ Rathausstr.: Asphalt mit einigen Schäden	Q1 10601,12521 10584,12507 10476,12432
 (Weg an der Südpanke): Beton	Q0 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
 (Weg an der Südpanke - Am Pankepark): Pflasterung	Q1 8307,14175 8323,14142
 (Weg an der Südpanke - Am Pankepark): unbefestigter Weg	Q2 8323,14142 8282,14116
-Sigridstr.: Asphalt mit einigen Schäden	Q1 14284,14469 14159,14495 14035,14520
+Sigridstr.: Asphalt mit einigen Schäden	Q1 14284,14469 14159,14495 14025,14519
 Sokratesweg: unbefestigt, Bauarbeiten	Q2 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
 Sokratesweg: unbefestigt, Bauarbeiten	Q2 18505,9500 18596,9485
 Sokratesweg: unbefestigt, Bauarbeiten	Q2 18514,9552 18604,9535
@@ -7936,7 +7936,7 @@ Altenhofer Weg: guter Asphalt	Q0 2837,20015 2881,20086 2928,20155 2962,20209
 Am Landschaftspark Gatow: Asphalt	Q0 -7966,6764 -8023,6842 -8032,6852 -8080,6933 -8134,7027 -8176,7103 -8207,7156 -8283,7325 -8335,7441 -8344,7477 -8353,7599 -8405,7751
 Straße 39 (Blankenburg): Kopfsteinpflaster	Q2 15114,21034 15138,21002 15052,20725 15018,20624
 Borkheider Str.: mäßiger Beton	Q1 21820,17833 21769,17740 21663,17795 21748,17963 21796,18054 21838,18149 21854,18192
-Eigerstr.: guter Beton	Q0 12825,17870 12882,17895 12902,17933 12945,17958 13036,18010 13043,18126 13042,18152
+Eigerstr.: Verbundsteinpflaster	Q0 12825,17870 12882,17895 12902,17933 12945,17958 13036,18010 13043,18126 13042,18152
 Cedernstr.: Asphalt	Q1 23868,4411 23978,4484 24068,4602
 Hänflingsteig: Kopfsteinpflaster	Q2 20238,14549 20147,14570 20093,14591 19905,14650 19830,14668 19777,14673
 Kleine Mittelstr.: Kopfsteinpflaster	Q2 -3536,15450 -3414,15460
@@ -10532,7 +10532,7 @@ Walterhöferstr.: guter Asphalt	Q0 339,1484 338,1521 266,1815
 Straße 339: Asphalt	Q0 -8450,15702 -8479,15609
 Straße 339: Asphalt	Q0 -8479,15609 -8558,15306 -8612,15086
 Lauenburger Platz: Asphalt	Q0 6014,6160 6118,6174
-Tassostr.: guter Asphalt	Q0 13630,15956 13621,15990 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
+Tassostr.: guter Asphalt	Q0 13623,15954 13614,15984 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
 Grunowstr. (Pankow): Kopfsteinpflaster	Q2 10705,17931 10636,18013 10582,18159
 Auguste-Viktoria-Str. (Hermsdorf): schlechtes Kopfsteinpflaster	Q3 3939,23345 3953,23401
 Auguste-Viktoria-Str. (Hermsdorf): guter Asphalt	Q0 3953,23401 3941,23486 3947,23547 3960,23647 3979,23675 4007,23709
@@ -12401,7 +12401,7 @@ Reclamweg: guter Asphalt	Q0 -5196,12452 -5126,12425
 (Hauffallee - Blankenburger Pflasterweg): größtenteils fester Sandweg, gut befahrbar	Q1 14284,19451 14328,19527 14364,19613 14374,19728 14338,19830 14348,19861
 Grünauer Weg: mäßiges Kopfsteinpflaster	Q2; 25182,-2915 25174,-2901 25118,-2805 25090,-2757 25041,-2675 25007,-2620
 Grünauer Weg: mäßiges Kopfsteinpflaster, Sandstreifen auf der rechten Straßenseite	Q2; 25007,-2620 25041,-2675 25090,-2757 25118,-2805 25174,-2901 25182,-2915
-Alter Radelander Weg: fester Sandweg im Wald, lässt sich gut befahren, im Winter oder nach Regen nicht befahrbar (Pfützen, Eis, Schlamm)	Q1 25007,-2620 23457,35
+Alter Radelander Weg: fester Sandweg im Wald, lässt sich gut befahren, im Winter oder nach Regen nicht befahrbar (Pfützen, Eis, Schlamm)	Q1 25007,-2620 24153,-1140 23457,35
 Rabindranath-Tagore-Str.: Asphalt, teilweise brüchig, trotzdem gut befahrbar	Q0 23252,792 23469,640 23540,591 23457,35
 Straße 109: sehr schlechter Asphalt, viele Schlaglöcher, teilweise guckt Kopfsteinpflaster hervor	Q2 17342,15386 17435,15379 17533,15363 17588,15355
 Straße 133 (Alt-Hohenschönhausen): guter Asphalt	Q0 17588,15355 17762,14993

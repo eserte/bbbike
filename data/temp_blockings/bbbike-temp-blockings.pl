@@ -1916,7 +1916,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 13512,15909 13623,15954 13630,15956 13737,15994 13826,16026 14014,16106 14045,16120 14248,16202 14371,16252
+userdel	q4; 13512,15909 13623,15954 13737,15994 13826,16026 14014,16106 14045,16120 14248,16202 14371,16252
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55
@@ -19725,7 +19725,7 @@ EOF
        text  => 'Berliner Allee (Weißensee): Veranstaltung (Blumenfest Weißensee), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 9.8.2013 bis 11.8.2013',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp; 14499,16341 14371,16252 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13630,15956 13623,15954 13512,15909
+userdel	q4::temp; 14499,16341 14371,16252 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
 EOF
      },
      { from  => 1313913600, # 2011-08-21 10:00
@@ -20634,12 +20634,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, #
-       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts gesperrt',
+       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und sonntags gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
 #: note: und am 2012-11-15 (gegen 21:00 - offen)
+#: note: und am Sonntag, den 2012-06-02 (vormittags - geschlossen)
 userdel	2::night 14838,11410 14792,11391
 EOF
      },
@@ -21024,10 +21025,11 @@ EOF
        text  => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-05-29
-#: next_check: 2013-05-31
 #: XXX ist die Baustelle tatsächlich Ende Mai fertig?
 #: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
+#: last_checked: 2013-05-29
+#: next_check: 2013-05-31
+#: priority: #A
 userdel	q3::inwork; 13474,8060 13444,7879
 EOF
      },
@@ -21129,6 +21131,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
+#: last_checked: 2013-06-02
 userdel	q2::inwork 5268,11274 5247,10992
 EOF
      },
@@ -21291,6 +21294,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
        data  => <<EOF,
+#: source_id: INKO_117520
 userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
 EOF
      },
@@ -21306,6 +21310,14 @@ userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
 userdel	2::temp 20200,6321 20262,6493 20225,6631
 userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
 userdel	2::temp 19976,6087 20064,6290 20106,6357
+EOF
+     },
+     { from  => $isodate2epoch->("2013-06-09 00:00:00"), # 1 Tag Vorlauf
+       until => 1375307999, # 2013-07-31 23:59
+       text  => 'Jugendstr.: Bauarbeiten, Teile der Fahrbahn werden gesperrt, von 10. Juni bis Juli 2013',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 842,14518 936,14518 998,14516 1037,14515 1059,14515 1184,14515
 EOF
      },
     );

@@ -567,8 +567,8 @@ Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,920
 Uferweg: asphaltiert, einige Wurzelschäden	Q0- 16673,7511 16655,7572 16624,7833 16692,8166 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: add_fragezeichen: Ist die Berliner Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
-#: last_checked: 2012-09-29
-#: next_check: 2013-01-01
+#: last_checked: 2013-06-03
+#: check_frequency: 100d
 Berliner Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q1- 12736,17998 12467,17814
 #: corrected_by: Hartmut Schröder (Q2 -> Q3)
 #: confirmed_by: srt
@@ -1774,7 +1774,7 @@ Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
 Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: XXX früher Beton, vielleicht wird hier wieder betoniert?
-#: last_checked: 2013-05-04
+#: last_checked: 2013-06-02
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): unbefestigte Fahrbahn	Q2 14672,10760 14564,10792
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14564,10792 14558,10819
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14141,10931 14107,10911 14043,10928
@@ -5300,7 +5300,7 @@ Straße 16: Beton	Q0- 13031,17775 13034,17895
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13760,15187 13792,15238 13792,15259
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Beton	Q0- 13792,15259 13724,15309 13710,15352
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13710,15352 13688,15393 13713,15440
-Syringenplatz/Syringenweg: Asphalt mit Schäden	Q1+ 14035,14520 14049,14244 14038,14099 13965,14018
+Syringenplatz/Syringenweg: Asphalt mit Schäden	Q1+ 14025,14519 14042,14249 14038,14099 13965,14018
 Straße 18: unbefestigte Straße	Q2 12942,18154 12939,18081 12902,18033
 Rotkäppchenweg: Gras	Q3 14692,18823 14651,18950
 Rotkäppchenweg: unbefestigter Weg, teilweise nur Gras	Q2- 14651,18950 14621,19025 14578,19089 14528,19140 14482,19174 14349,19255 14216,19338
@@ -7135,6 +7135,9 @@ Straße am Schaltwerk: Asphalt	Q0 717,14894 537,14919 510,14923 443,14900
 Jungfernsteig: Kopfsteinpflaster	Q2 862,14463 938,14457
 Kapellensteig: Kopfsteinpflaster	Q2 937,14391 938,14457 936,14518
 Wattstr.: Asphalt	Q0 968,14263 999,14390 998,14435
+#: XXX wird die Wattstr. hier auch asphaltiert?
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20130603.1405.385587.html
+#: next_check: 2013-07-25
 Wattstr.: Kopfsteinpflaster	Q2 998,14435 998,14516
 Grammestr.: Kopfsteinpflaster	Q2 1059,14515 1058,14459 1057,14389
 Halskesteig: Kopfsteinpflaster	Q2 1157,14459 1058,14459
@@ -8435,7 +8438,7 @@ Rathausstr.: Asphalt mit einigen Schäden	Q1+ 10601,12521 10584,12507 10476,12432
 (Weg an der Südpanke): Beton	Q0 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
 (Weg an der Südpanke - Am Pankepark): Pflasterung	Q1- 8307,14175 8323,14142
 (Weg an der Südpanke - Am Pankepark): unbefestigter Weg	Q2+ 8323,14142 8282,14116
-Sigridstr.: Asphalt mit einigen Schäden	Q1+ 14284,14469 14159,14495 14035,14520
+Sigridstr.: Asphalt mit einigen Schäden	Q1+ 14284,14469 14159,14495 14025,14519
 #: XXX Qualität nach den Bauarbeiten? vvv
 #: last_checked: 2013-05-04 (teilweise existert eine erste Asphaltschicht) vvv
 #: next_check: 2013-07-04 vvv
@@ -8582,7 +8585,8 @@ Altenhofer Weg: guter Asphalt	Q0 2837,20015 2881,20086 2928,20155 2962,20209
 Am Landschaftspark Gatow: Asphalt	Q0 -7966,6764 -8023,6842 -8032,6852 -8080,6933 -8134,7027 -8176,7103 -8207,7156 -8283,7325 -8335,7441 -8344,7477 -8353,7599 -8405,7751
 Straße 39 (Blankenburg): Kopfsteinpflaster	Q2 15114,21034 15138,21002 15052,20725 15018,20624
 Borkheider Str.: mäßiger Beton	Q1- 21820,17833 21769,17740 21663,17795 21748,17963 21796,18054 21838,18149 21854,18192
-Eigerstr.: guter Beton	Q0 12825,17870 12882,17895 12902,17933 12945,17958 13036,18010 13043,18126 13042,18152
+#: corrected_by: srt (guter Beton -> )
+Eigerstr.: Verbundsteinpflaster	Q0- 12825,17870 12882,17895 12902,17933 12945,17958 13036,18010 13043,18126 13042,18152
 #: corrected_by: srt (mäßiger Beton, Q1- -> Asphalt, Q1)
 Cedernstr.: Asphalt	Q1 23868,4411 23978,4484 24068,4602
 #: confirmed_by: srt
@@ -9097,6 +9101,10 @@ Lotosweg: Kopfsteinpflaster	Q2 4910,23490 5019,23343 4951,23158 4742,23078
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Lotosweg: Verbundsteinpflaster	Q1 4728,23100 4613,23060
 #: confirmed_by: srt
+#: XXX Bauarbeiten, danach asphaltiert
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20130603.1405.385587.html
+#: next_check: 2013-07-25
+#: priority: #A
 Jugendweg: Kopfsteinpflaster	Q2 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
 #: corrected_by: srt (Verbundsteinpflaster -> unbefestigt)
 Schauensteiner Weg: unbefestigte Straße, teilweise mit Betonplatten	Q2+ -9294,4689 -9217,4645
@@ -11327,7 +11335,9 @@ Blechenstr.: Asphalt	Q0 14012,16719 13861,16836
 Nunsdorfer Ring: Asphalt	Q0 8853,172 8981,275 9171,166 9280,-127 9159,-171
 Albertinenstr.: gutes Kopfsteinpflaster	Q1 14045,16120 14049,16220
 Albertinenstr.: Asphalt	Q0 14049,16220 14124,16544
+#: confirmed_by: srt (westlicher Abschnitt)
 Amalienstr.: Asphalt	Q0 14124,16544 13972,16639 13855,16729 13789,16775
+#: confirmed_by: srt
 Amalienstr.: mäßiger Asphalt	Q1 13789,16775 13722,16843 13653,16907 13589,16965
 Amalienstr.: Asphalt	Q0 13589,16965 13342,17180
 #: note: laut ADFC-Karte "mäßig geeignet":
@@ -12758,6 +12768,7 @@ Stölpchenweg: Kopfsteinpflaster	Q2 -7071,-377 -7184,-396 -7242,-420 -7266,-450
 Emil-Fischer-Str.: Asphalt	Q0 -5867,1449 -5997,1410
 # 
 #: by: Andre Landschulz:
+#: confirmed_by: srt
 Straße 246: Asphalt	Q0 13590,17368 13818,17201
 # 
 #: by: Marcel Länger: vvv
@@ -14924,7 +14935,7 @@ Lauenburger Platz: Asphalt	Q0 6014,6160 6118,6174
 # 
 #: by: misersky:
 #: confirmed_by: srt
-Tassostr.: guter Asphalt	Q0 13630,15956 13621,15990 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
+Tassostr.: guter Asphalt	Q0 13623,15954 13614,15984 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
 # 
 #: by: Toska Holtz:
 #: confirmed_by: srt
@@ -20324,7 +20335,7 @@ Grünauer Weg: mäßiges Kopfsteinpflaster	Q2-; 25182,-2915 25174,-2901 25118,-2805
 Grünauer Weg: mäßiges Kopfsteinpflaster, Sandstreifen auf der rechten Straßenseite	Q2; 25007,-2620 25041,-2675 25090,-2757 25118,-2805 25174,-2901 25182,-2915
 #: confirmed_by: srt
 #: corrected_by: anonymous ("Unbefestigte Sandpiste, im Winter oder nach Regen nicht befahrbar (Pfützen, Eis, Schlamm), im Sommer O.K.")
-Alter Radelander Weg: fester Sandweg im Wald, lässt sich gut befahren, im Winter oder nach Regen nicht befahrbar (Pfützen, Eis, Schlamm)	Q1- 25007,-2620 23457,35
+Alter Radelander Weg: fester Sandweg im Wald, lässt sich gut befahren, im Winter oder nach Regen nicht befahrbar (Pfützen, Eis, Schlamm)	Q1- 25007,-2620 24153,-1140 23457,35
 #: confirmed_by: srt
 Rabindranath-Tagore-Str.: Asphalt, teilweise brüchig, trotzdem gut befahrbar	Q0- 23252,792 23469,640 23540,591 23457,35
 #: note: "besonders an der Ecke Straße 133"

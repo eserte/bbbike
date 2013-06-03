@@ -740,17 +740,7 @@ userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-21
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1370210399,
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (1.6.2013 und 2.6.2013)',
-         'from' => 1369951200,
-         'id' => 728,
-         'data' => 'userdel	2::temp 7110,9024 7044,9163 7022,9211 7006,9282
-userdel	2::temp 6945,9142 7044,9163
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1148,16 +1138,7 @@ userdel	2::temp 14500,9856 14483,9843
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1370199600,
-         'text' => 'Open Air Gallery am 2. Juni 2013 auf der Oberbaumbrücke (10:00 - 21:00)',
-         'from' => 1370073600,
-         'id' => 1107,
-         'data' => 'userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2473,16 +2454,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1370123999,
-         'text' => 'Erkner: Heimatfest, 31.5.2013 bis 2.6.2013',
-         'from' => 1369864800,
-         'id' => 2078,
-         'data' => 'userdel	2::temp 34443,1951 34250,2546
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2843,7 +2815,7 @@ userdel	q4::inwork 425,8766 490,8716
          'text' => 'Berliner Allee (Weißensee): Veranstaltung (Blumenfest Weißensee), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 9.8.2013 bis 11.8.2013',
          'from' => 1375912800,
          'id' => 2275,
-         'data' => 'userdel	q4::temp; 14499,16341 14371,16252 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13630,15956 13623,15954 13512,15909
+         'data' => 'userdel	q4::temp; 14499,16341 14371,16252 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
 ',
          'type' => 'handicap'
        },
@@ -3011,11 +2983,12 @@ userdel	2::inwork 18731,8577 18709,8423
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts gesperrt',
+         'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und sonntags gesperrt',
          'from' => undef,
          'id' => 2372,
          'data' => '#: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
 #: note: und am 2012-11-15 (gegen 21:00 - offen)
+#: note: und am Sonntag, den 2012-06-02 (vormittags - geschlossen)
 userdel	2::night 14838,11410 14792,11391
 ',
          'type' => 'gesperrt'
@@ -3206,10 +3179,11 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
          'text' => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
          'from' => undef,
          'id' => 2411,
-         'data' => '#: last_checked: 2013-05-29
-#: next_check: 2013-05-31
-#: XXX ist die Baustelle tatsächlich Ende Mai fertig?
+         'data' => '#: XXX ist die Baustelle tatsächlich Ende Mai fertig?
 #: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
+#: last_checked: 2013-05-29
+#: next_check: 2013-05-31
+#: priority: #A
 userdel	q3::inwork; 13474,8060 13444,7879
 ',
          'type' => 'handicap'
@@ -3250,6 +3224,7 @@ userdel	q3::inwork; 13474,8060 13444,7879
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
+#: last_checked: 2013-06-02
 userdel	q2::inwork 5268,11274 5247,10992
 ',
          'type' => 'handicap'
@@ -3297,18 +3272,7 @@ userdel	q4::inwork; 7085,15226 7131,15109
 ',
          'type' => 'handicap'
        },
-       {
-         'periodic' => 1,
-         'until' => 1370210399,
-         'text' => 'Bahnhofstraße (Lichtenrade): Veranstaltung (Lichtenrader Maientanz), Straße vermutlich gesperrt (1. und 2. Juni 2013)',
-         'from' => 1369951200,
-         'id' => 2431,
-         'data' => '#: by: http://www.family-and-friends-ev.de/3.html
-#: by: http://www.ag-bahnhofstrasse.de/maientanz.html
-userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.suppeundmucke.de/',
          'data' => 'userdel	2::temp 14096,11134 14076,11057 14043,10928 14026,10869
@@ -3350,24 +3314,20 @@ userdel	2::temp 13886,10939 13856,10864
          'text' => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
          'from' => 1370210400,
          'id' => 2435,
-         'data' => 'userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
+         'data' => '#: source_id: INKO_117520
+userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'source_id' => 'http://www.kindertag-berlin.de/index.php?id=418',
-         'data' => 'userdel	2::temp 20755,5750 20716,6029 20708,6089 20623,6136 20453,6211 20464,6237
-userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
-userdel	2::temp 20200,6321 20262,6493 20225,6631
-userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-userdel	2::temp 19976,6087 20064,6290 20106,6357
+         'until' => 1375307999,
+         'text' => 'Jugendstr.: Bauarbeiten, Teile der Fahrbahn werden gesperrt, von 10. Juni bis Juli 2013',
+         'from' => 1370728800,
+         'id' => 2437,
+         'data' => 'userdel	q4::inwork 842,14518 936,14518 998,14516 1037,14515 1059,14515 1184,14515
 ',
-         'periodic' => 1,
-         'until' => 1370210399,
-         'from' => 1369951200,
-         'text' => 'Internationaler Kindertag im FEZ, Veranstaltung, einige Wege und Straßen sind gesperrt, 1. und 2. Juni 2013',
-         'type' => 'gesperrt',
-         'id' => 2436
+         'type' => 'handicap'
        }
      
 );

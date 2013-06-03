@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-06-01 vvv
+#: last_checked: 2013-06-03 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -24,7 +24,7 @@ Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-05-26 vvv
+#: last_checked: 2013-06-03 vvv
 #: check_frequency: 90d
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
@@ -33,8 +33,8 @@ Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-05-31
-#: next_check: 2013-06-03
+#: last_checked: 2013-06-02
+#: next_check: 2013-06-06
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 13366,11651 13295,11792
 # 
 # REMOVED (fast keine Einschränkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775
@@ -45,7 +45,7 @@ Marchlewskistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 13366,11651 13295,11792
 ### Mitte ###
 # 
 #: source_id: INKO_113388
-#: last_checked: 2013-05-26
+#: last_checked: 2013-06-02
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # 
 #: last_checked: 2012-11-14
@@ -60,7 +60,7 @@ Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehwe
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
-#: last_checked: 2013-05-26 vvv
+#: last_checked: 2013-06-02 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -132,17 +132,26 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 # REMOVED --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # REMOVED (eigentlich gut zu befahren) --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14513,11075 14442,11101
 # 
-#: last_checked: 2013-04-26
-#: next_check: 2013-06-26
-#: XXX danach q1 und mit Eintrag unten verknüpfen, falls hier in Zukunft keine Fahrbahn mehr sein wird
+#: last_checked: 2013-06-03
+#: next_check: 2013-06-10
+#: priority: #A
+Bernhard-Weiß-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11235,13143 11291,13218
+# 
+#: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
+#: last_checked: 2013-06-03
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3+::inwork 10601,12521 10704,12595
+# 
+#: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
+#: last_checked: 2013-06-03
+#: priority: #A
+Rathausstr.: Fahrbahn an der Spandauer Str. gesperrt, Ausweichen auf Gehweg	q4::inwork 10584,12507 10601,12521
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2013-05-31 vvv
+#: last_checked: 2013-06-03 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 # REMOVED (now again entry above is active) --- Neue Grünstr.: Fahrbahn gesperrt wegen Bauarbeiten	q4::inwork 10389,11390 10446,11470
@@ -163,15 +172,17 @@ Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 ### Kreuzberg ###
 # 
 #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376
+#: osm_watch: way id="34390483" version="8"
 #: source_id: INKO_114376
 #: source_id: IM_019321
 #: last_checked: 2013-05-23
-#: osm_watch: way id="34390483" version="8"
+#: priority: #A
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung in der Gegenrichtung, sowie fragezeichen-orig-Eintrag
-#: last_checked: 2013-05-31
-#: next_check: 2013-06-01
+#: last_checked: 2013-06-03
+#: next_check: 2013-06-05
+#: priority: #A
 Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732
 # 
 ### Köpenick ###
@@ -260,8 +271,8 @@ Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,264
 Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 #: XXX_prog BS (an der Dresdener Str.) (ansonsten könnte man die Kategorie auf q2 erhöhen)
 (Zufahrt am NKZ): Bordsteine, Fußgänger/Lieferverkehr	q3+ 11291,10438 11311,10505 11343,10528
-Alexanderplatz: Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
-Rathausstr.: Fußgänger	q1 10923,12779 10704,12595
+Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
+Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10793,12906 10923,12779
@@ -277,7 +288,7 @@ Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911
 #: XXX evtl. nach den Bauarbeiten asphaltiert oder zumindest besser gepflastert/gewalzt? Vielleicht wird auch der südliche Halbkreis neu gemacht?
 #: XXX nach den Bauarbeiten den normalen Eintrag wieder aktivieren
 #: by: http://unsergoerli.de/wegebau-am-rondell-ab-november/ (Asphaltierung!)
-#: last_checked: 2013-05-31
+#: last_checked: 2013-06-03
 Görlitzer Park, Rondell: Bauarbeiten, Fußgänger	q4::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 #Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
@@ -729,11 +740,12 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: XXX siehe auch Eintrag zum Spreeufer in gesperrt-orig
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
-#: last_checked: 2013-05-26
+#: last_checked: 2013-06-02
 #: next_check: 2013-08-01
 Friedrichsbrücke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
+#: XXX_prog BS: Bordstein am Blücherplatz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle
 (Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q2 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 #: XXX_prog: für Anhänger vielleicht q2
@@ -827,6 +839,7 @@ Spreetunnel: Fußgänger	q2 25571,4553 25658,4619
 Görresstr.: enge Straße	q1 5067,7652 5188,7536 5272,7458 5318,7424
 Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2; 7937,13126 8106,13130
+#: XXX_prog: eigentlich 1s:q3 in gesperrt-orig, aber Konflikt mit dem handicap_s-Eintrag in die andere Richtung (stimmt das?)
 Washingtonplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 7937,13126
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7561,12527 7670,12576
 (Ruwersteig - Klüsserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
@@ -1010,6 +1023,7 @@ Katzengrabensteg: Fußgänger	q1 22581,4932 22484,4868 22433,4887 22439,4838
 Samoastr.: Fußgänger	q1 6886,15156 6833,15215
 Nazarethkirchstr.: einige Bodenschwellen	q0- 7543,16016 7441,15909 7354,15817 7198,15656
 (Landsberger Allee - Treffurter Str.): Fußgänger	q2 18057,14549 18119,14599
+#: XXX_prog BS auf der östlichen Seite, auf der westlichen nur, wenn man von Norden aus der Storkower kommt
 (Storkower Str. - Schneeglöckchenstr.): Fußgänger, Bordsteine	q2 13964,13830 14037,13842
 (Antonplatz - Bizetstr.): Fußgänger	q1 13487,15888 13525,15784
 (Othellostr. - Prenzlauer Promenade): Fußgänger	q1 11990,18104 11892,18146
@@ -1500,7 +1514,6 @@ Ansbacher Str./Wittenbergplatz: Fußgänger	q2 6192,10542 6216,10614 6228,10646 62
 Mendelssohnstr.: Fußgänger, Bordstein	q3 11598,13598 11652,13564
 #: XXX_prog BS auf beiden Seiten
 (Wiese vor dem Reichstag): Fußgänger, Bordsteine, Radfahren nicht erlaubt	q3 8354,12416 8348,12609
-Rosenfelder Ring: Einbahnstraße, Ausweichen auf Gehweg	q3; 18140,11932 18139,11833
 #: note: gegen 19:15 abends ist hier reger Fußgängerverkehr (Sportler!)
 (Weg über das Sportgelände): zu manchen Zeiten reger Fußgängerverkehr	q1 13252,14179 13385,13992
 Schliemannstr. [über Helmholtzplatz]: Fußgänger	q2 11368,15301 11334,15248
@@ -2242,7 +2255,7 @@ Biesentaler Str.: Bodenschwellen	q1 9024,16855 9245,16758
 Chamissostr. (Französisch Buchholz): enge Straße	q0- 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
 #: by: misersky:
 #: confirmed_by: srt (insbesondere, weil es recht kurvig ist)
-Tassostr.: enge Straße	q1 13630,15956 13621,15990 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
+Tassostr.: enge Straße	q1 13623,15954 13614,15984 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
 #: by: Nicole Weber:
 An der Wildbahn: viele parkende Autos in enger Straße	q1 -1581,22553 -1447,22522 -1333,22495 -1267,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
 #: by: anonymous

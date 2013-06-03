@@ -647,7 +647,7 @@ Wehneltsteig	1 1256,14217 1305,14384
 #: by: Olaf (ziorjen), Sybille Koppermann, osm
 Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.)	1 12908,12280 12883,12118 12893,12077 12923,12043
-#: note_prog: eigentlich 1s:q3, aber Konflikt mit handicap_s-Eintrag für Washingtonplatz
+#: XXX_prog: eigentlich 1s:q3, aber Konflikt mit handicap_s-Eintrag für Washingtonplatz
 Washingtonplatz	1s 8106,13130 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
 #: by: Bernhard Husch:
@@ -1045,6 +1045,8 @@ Buolstr.	1 559,15342 429,15284
 Janischweg	1 429,15284 431,15230 453,15173 473,15169
 Köttgenstr.	1 473,15169 556,15175 613,15195
 #: by: ^^^
+#: note: Ausweichen auf Gehweg
+Rosenfelder Ring	1s:q3 18140,11932 18139,11833
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2361,7 +2363,7 @@ Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-05-26
+#: last_checked: 2013-06-03
 #: check_frequency: 90d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
@@ -2412,7 +2414,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen möglich	2:inwork 8837,1
 #: next_check: 2013-01-01
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2013-05-14
+#: last_checked: 2013-06-03
 #: next_check: 2013-07-14
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
@@ -2438,7 +2440,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: Kai Wagner (permanente Sperrung)
 #: confirmed_by: srt
 #: osm_watch: way id="4402045" version="9"
-#: last_checked: 2013-05-01
+#: last_checked: 2013-06-02
 #: check_frequency: 100d
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
@@ -2496,7 +2498,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-04-02
+#: last_checked: 2013-06-03
 #: next_check: 2014-01-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
