@@ -461,6 +461,11 @@ Examples:
     #: oldname: ?-20001001: Oldname street
     #: oldname: 20001001-2005: Not-so-old-name street
 
+=item C<ignore_oldname_file: yes>
+
+Ignore this oldname entry when generating the F<oldnames> data file.
+This is useful if for example only a part of the street was renamed.
+
 =item C<section: I<section name>>
 
 The next block is part of a named section. Sections may be nested.
