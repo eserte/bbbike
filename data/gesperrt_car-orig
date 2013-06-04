@@ -648,9 +648,10 @@ Rütlistr.: Durchfahrt verboten	2 12565,9200 12490,9056
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20101116.1230.319115.html
 #: note: "Für Radfahrer ist in der Gegenrichtung die Benutzung des Gehweges möglich."
 Wustermarker Str.:	1 -4385,14305 -4556,14349
+#: note: großzügige Drängelgitter für Radfahrer/Fußgänger
+Berliner Str.: Mittelstreifen und Straßennbahntrasse	3nocross 10849,17848 10858,17721 10878,17490
 #: note: public imagery vvv
 Hundekehlestr.: Mittelstreifen	3nocross 2346,7684 2460,7658 2576,7634
-Berliner Str.	3nocross 10849,17848 10858,17721 10878,17490
 Lietzenburger Str.	3nocross 5047,10381 5207,10399 5329,10422
 Greifswalder Str.: Straßenbahntrasse	3nocross 12228,14404 12188,14350 12177,14335 12077,14186
 Sybelstr.	1 3978,10582 3883,10577
@@ -667,9 +668,9 @@ Hentigstr.	1 18518,8778 18548,8942
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110309.1150.334660.html (südlicher Abschnitt confirmed)
 Hentigstr.	1 18548,8942 18586,9172 18626,9406
 Oberwallstr.	1 9852,12409 9869,12297 9875,12257 9890,12161
-Prenzlauer Promenade	3nocross 11854,17656 11843,17737 11879,18057
+Prenzlauer Promenade	3nocross 11854,17656 11843,17737 11884,18063
 #: note: keine legale Überquerungsmöglichkeit für Radfahrer, aber dennoch möglich
-Prenzlauer Promenade	3nocross 11879,18057 11892,18146 11906,18246 11914,18303 11950,18529
+Prenzlauer Promenade	3nocross 11884,18063 11894,18146 11907,18246 11914,18303 11950,18529
 Pasewalker Str.	3nocross 11984,20246 11963,20136 11931,19965
 Neuer Steg	3 * 8277,19210 8209,19107
 Neuer Steg	3 8209,19107 8277,19210 *

@@ -6331,7 +6331,7 @@ EOF
        text  => 'Karl-Marx-Straße, Straßenfest zwischen Flughafenstr. und Thomasstr, gesperrt, Dauer: 14.10.2006 05:00 Uhr bis 16.10.2006 00:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 12500,8504 12540,8458 12562,8432 12582,8408 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12974,7598
+userdel	2::temp 12500,8504 12540,8458 12562,8432 12582,8408 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
 EOF
      },
      { from  => 1161032658, # 2006-10-16 23:04
@@ -11901,7 +11901,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009262',
        data  => <<EOF,
-userdel	1::inwork 10298,13076 10349,13043 10371,13006 10418,12922 10395,12908 10348,12879 10309,12854
+userdel	1::inwork 10286,13084 10349,13043 10371,13006 10418,12922 10395,12908 10348,12879 10309,12854
 EOF
      },
      { from  => 1215112739, # 
@@ -15134,6 +15134,7 @@ EOF
        periodic => 1,
        text  => 'Badstr. (Wedding) zwischen Pankstr. und Behmstr. Veranstaltung (Seifenkistenderby), Straße vollständig gesperrt (15. und 16. Juni 2013)',
        type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130604.0915.385618.html',
        data  => <<EOF,
 userdel	2::temp 9134,15953 9059,16038 8993,16100 8928,16158 8862,16208 8788,16264
 EOF
@@ -17069,7 +17070,7 @@ EOF
 userdel	2::temp 13416,7712 13426,7674
 userdel	2::temp 13416,7712 13288,7653
 userdel	2::temp 13426,7674 13400,7642 13303,7622
-userdel	2::temp 12974,7598 13100,7626 13177,7644
+userdel	2::temp 12969,7610 13100,7626 13177,7644
 userdel	2::temp 13188,7590 13177,7644
 userdel	2::temp 13188,7590 13303,7622
 userdel	2::temp 13288,7653 13303,7622
@@ -20881,13 +20882,11 @@ userdel	q4::inwork 8296,18154 8116,18115
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1370369858, # undef, # XXX
        text  => 'Richardstr.: Baustelle zwischen Böhmische Str. und Richardplatz, Umfahrung auf dem Gehweg notwendig',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-05-29
-#: check_frequency: 15d
+# REMOVED --- #: XXX bis wann ist die Baustelle fertig? --- #: last_checked: 2013-05-29 --- #: check_frequency: 15d
 userdel	q2::inwork 13339,7452 13303,7622
 EOF
      },
@@ -20934,8 +20933,9 @@ EOF
        source_id => 'http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html',
        data  => <<EOF,
 #: XXX: zweiter Bauabschnitt wird bis zur Berliner Str. gehen
-#: next_check: 2013-06-01
-userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
+#: last_checked: 2013-06-04
+#: next_check: 2013-08-04
+userdel	q4::inwork 10473,18113 10545,18143 10582,18159
 EOF
      },
      { from  => 1351465200, # 2012-10-29 00:00
@@ -21027,8 +21027,8 @@ EOF
        data  => <<EOF,
 #: XXX ist die Baustelle tatsächlich Ende Mai fertig?
 #: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
-#: last_checked: 2013-05-29
-#: next_check: 2013-05-31
+#: last_checked: 2013-06-04
+#: next_check: 2013-06-07
 #: priority: #A
 userdel	q3::inwork; 13474,8060 13444,7879
 EOF
@@ -21175,7 +21175,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-05-29
+#: last_checked: 2013-06-04
 #: check_frequency: 60d
 #: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
 userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
@@ -21318,6 +21318,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 842,14518 936,14518 998,14516 1037,14515 1059,14515 1184,14515
+EOF
+     },
+     { from  => 1370523600, # 2013-06-06 15:00
+       until => 1370635200, # 2013-06-07 22:00
+       text  => 'Zillestraßenfest 2013, Veranstaltung, Straße eventuell nicht passierbar, 7. Juni 2013 von 15 bis 22 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130604.1135.385636.html',
+       data  => <<EOF,
+userdel	2::temp 3977,11854 3810,11843
 EOF
      },
     );

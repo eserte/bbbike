@@ -302,7 +302,7 @@ Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 Niederlagstr.	1 9943,12364 9934,12420
 Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
-Karl-Marx-Platz	1 12974,7598 13100,7626
+Karl-Marx-Platz	1 12969,7610 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
@@ -975,8 +975,9 @@ Caseler Str.	1s:q3 14732,16770 14700,16790 14608,16772
 Ottmachauer Steig	1 -519,4737 -496,4718 -435,4687 -369,4631 -354,4603 -319,4550 -283,4495 -274,4474 -277,4442
 Salemer Steig	1 -581,4662 -558,4639 -531,4599 -493,4529 -472,4476 -459,4422 -441,4354
 Radtkestr.	1 18,1928 -38,2152
-Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11656,18013
-Gemündener Str.	1 11622,18006 11586,18126 11514,18101 11495,18129 11395,18274
+Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11655,18018
+Karlstadter Str.	1 11621,18011 11586,18126
+Gemündener Str.	1 11586,18126 11514,18101 11495,18129 11395,18274
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11012,13278 11085,13239
 Döbrabergweg	1 9848,20926 9892,20776
 #: note: eine Absperrkette kann hier hängen
@@ -1047,6 +1048,7 @@ Köttgenstr.	1 473,15169 556,15175 613,15195
 #: by: ^^^
 #: note: Ausweichen auf Gehweg
 Rosenfelder Ring	1s:q3 18140,11932 18139,11833
+Neue Promenade	1::igndisp 10263,13047 10264,13097
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2296,6 +2298,10 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2013-06-04
+#: next_check: 2013-08-04
+Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross:inwork 9984,12426 9934,12420 9852,12409
+# 
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
 #: last_checked: 2013-05-27
 #: next_check: 2013-08-27
@@ -2341,7 +2347,7 @@ Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
-#: last_checked: 2013-05-26
+#: last_checked: 2013-06-04
 #: next_check: 2013-08-01
 #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig
 Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
@@ -2788,11 +2794,11 @@ Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2897,17861
 Zeiler Weg	1 11495,18129 11579,18184
 Zeiler Weg	1s 11835,18301 11914,18303
 Dettelbacher Weg	1 11698,18446 11750,18273
-Dettelbacher Weg	1 11820,18043 11750,18273
+Dettelbacher Weg	1 11819,18050 11750,18273
 Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
 Prenzlauer Promenade: nicht passierbarer Mittelstreifen	3nocross 11950,18529 11984,18771 12003,18896
 Prenzlauer Promenade: Mittelstreifen, Bordsteine	3nocross 11854,17656 11870,17522 11893,17397
-Prenzlauer Promenade: Mittelstreifen	3nocross 11854,17656 11843,17737 11879,18057
+Prenzlauer Promenade: Mittelstreifen	3nocross 11854,17656 11843,17737 11884,18063
 Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
 tragen (insgesamt 16 Stufen, auf vier Gruppen verteilt)	0:40 14581,16529

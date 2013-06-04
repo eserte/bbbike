@@ -1138,12 +1138,12 @@ Passauer -> Lietzenburger	3 6033,10403 6020,10351 6147,10383
 Am Hanffgraben	1 16805,1488 16698,1392
 Rütlistr.: Durchfahrt verboten	2 12565,9200 12490,9056
 Wustermarker Str.:	1 -4385,14305 -4556,14349
+Mittelstreifen und Straßennbahntrasse	3nocross::ignrte 10849,17848 10858,17721 10878,17490
+Borkumstr. -> Berliner Str.: Mittelstreifen und Straßennbahntrasse	3::igndisp 10956,17735 10858,17721 10878,17490
+Berliner Str. -> Borkumstr.: Mittelstreifen und Straßennbahntrasse	3::igndisp 10849,17848 10858,17721 10956,17735
 Mittelstreifen	3nocross::ignrte 2346,7684 2460,7658 2576,7634
 Sulzaer Str. -> Hundekehlestr.: Mittelstreifen	3::igndisp 2499,7930 2460,7658 2576,7634
 Hundekehlestr. -> Sulzaer Str.: Mittelstreifen	3::igndisp 2346,7684 2460,7658 2499,7930
-Berliner Str.	3nocross::ignrte 10849,17848 10858,17721 10878,17490
-Borkumstr. -> Berliner Str.: Berliner Str.	3::igndisp 10956,17735 10858,17721 10878,17490
-Berliner Str. -> Borkumstr.: Berliner Str.	3::igndisp 10849,17848 10858,17721 10956,17735
 Lietzenburger Str.	3nocross::ignrte 5047,10381 5207,10399 5329,10422
 Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5198,10234
 Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5329,10422
@@ -1165,16 +1165,16 @@ Kurmärkische Str.	3 7337,10396 7429,10366 7444,10479
 Hentigstr.	1 18518,8778 18548,8942
 Hentigstr.	1 18548,8942 18586,9172 18626,9406
 Oberwallstr.	1 9852,12409 9869,12297 9875,12257 9890,12161
-Prenzlauer Promenade	3nocross::ignrte 11854,17656 11843,17737 11879,18057
+Prenzlauer Promenade	3nocross::ignrte 11854,17656 11843,17737 11884,18063
 Prenzlauer Promenade -> Laudaer Str.: Prenzlauer Promenade	3::igndisp 11854,17656 11843,17737 11785,17729
-Laudaer Str. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11785,17729 11843,17737 11879,18057
-Prenzlauer Promenade	3nocross::ignrte 11879,18057 11892,18146 11906,18246 11914,18303 11950,18529
-Prenzlauer Promenade -> Othellostr.: Prenzlauer Promenade	3::igndisp 11906,18246 11892,18146 11990,18104
-Othellostr. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11990,18104 11892,18146 11879,18057
-Prenzlauer Promenade -> Figarostr.: Prenzlauer Promenade	3::igndisp 11914,18303 11906,18246 12084,18197
-Figarostr. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 12084,18197 11906,18246 11892,18146
+Laudaer Str. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11785,17729 11843,17737 11884,18063
+Prenzlauer Promenade	3nocross::ignrte 11884,18063 11894,18146 11907,18246 11914,18303 11950,18529
+Othellostr. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11990,18104 11894,18146 11884,18063
+Prenzlauer Promenade -> Othellostr.: Prenzlauer Promenade	3::igndisp 11907,18246 11894,18146 11990,18104
+Prenzlauer Promenade -> Figarostr.: Prenzlauer Promenade	3::igndisp 11914,18303 11907,18246 12084,18197
+Figarostr. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 12084,18197 11907,18246 11894,18146
 Zeiler Weg -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11835,18301 11914,18303 11950,18529
-Prenzlauer Promenade -> Zeiler Weg: Prenzlauer Promenade	3::igndisp 11906,18246 11914,18303 11835,18301
+Prenzlauer Promenade -> Zeiler Weg: Prenzlauer Promenade	3::igndisp 11907,18246 11914,18303 11835,18301
 Pasewalker Str.	3nocross::ignrte 11984,20246 11963,20136 11931,19965
 Pasewalker Str. -> Hans-Jürgen-Str.: Pasewalker Str.	3::igndisp 11931,19965 11963,20136 11939,20140
 Hans-Jürgen-Str. -> Pasewalker Str.: Pasewalker Str.	3::igndisp 11939,20140 11963,20136 11984,20246

@@ -1829,14 +1829,15 @@ userdel	2::temp 22133,4644 22074,4664
        undef,
        undef,
        {
-         'periodic' => 1,
-         'until' => 1371419999,
-         'text' => 'Badstr. (Wedding) zwischen Pankstr. und Behmstr. Veranstaltung (Seifenkistenderby), Straße vollständig gesperrt (15. und 16. Juni 2013)',
-         'from' => 1371160800,
-         'id' => 1776,
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130604.0915.385618.html',
          'data' => 'userdel	2::temp 9134,15953 9059,16038 8993,16100 8928,16158 8862,16208 8788,16264
 ',
-         'type' => 'gesperrt'
+         'periodic' => 1,
+         'until' => 1371419999,
+         'from' => 1371160800,
+         'text' => 'Badstr. (Wedding) zwischen Pankstr. und Behmstr. Veranstaltung (Seifenkistenderby), Straße vollständig gesperrt (15. und 16. Juni 2013)',
+         'type' => 'gesperrt',
+         'id' => 1776
        },
        undef,
        undef,
@@ -3067,18 +3068,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'Richardstr.: Baustelle zwischen Böhmische Str. und Richardplatz, Umfahrung auf dem Gehweg notwendig',
-         'from' => undef,
-         'id' => 2398,
-         'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-05-29
-#: check_frequency: 15d
-userdel	q2::inwork 13339,7452 13303,7622
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
@@ -3103,8 +3093,9 @@ userdel	q2::inwork 13339,7452 13303,7622
          'from' => undef,
          'id' => 2402,
          'data' => '#: XXX: zweiter Bauabschnitt wird bis zur Berliner Str. gehen
-#: next_check: 2013-06-01
-userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
+#: last_checked: 2013-06-04
+#: next_check: 2013-08-04
+userdel	q4::inwork 10473,18113 10545,18143 10582,18159
 ',
          'type' => 'handicap'
        },
@@ -3181,8 +3172,8 @@ userdel	q4::inwork 10479,18007 10498,18014 10473,18113 10545,18143 10582,18159
          'id' => 2411,
          'data' => '#: XXX ist die Baustelle tatsächlich Ende Mai fertig?
 #: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
-#: last_checked: 2013-05-29
-#: next_check: 2013-05-31
+#: last_checked: 2013-06-04
+#: next_check: 2013-06-07
 #: priority: #A
 userdel	q3::inwork; 13474,8060 13444,7879
 ',
@@ -3250,7 +3241,7 @@ userdel auto	3 4358,12365 4518,12350 4601,12310
          'from' => undef,
          'id' => 2425,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-05-29
+#: last_checked: 2013-06-04
 #: check_frequency: 60d
 #: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
 userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
@@ -3328,6 +3319,16 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'data' => 'userdel	q4::inwork 842,14518 936,14518 998,14516 1037,14515 1059,14515 1184,14515
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130604.1135.385636.html',
+         'until' => 1370635200,
+         'text' => 'Zillestraßenfest 2013, Veranstaltung, Straße eventuell nicht passierbar, 7. Juni 2013 von 15 bis 22 Uhr',
+         'from' => 1370523600,
+         'id' => 2438,
+         'data' => 'userdel	2::temp 3977,11854 3810,11843
+',
+         'type' => 'gesperrt'
        }
      
 );
