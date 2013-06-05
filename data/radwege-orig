@@ -1077,7 +1077,7 @@ die letzten 60 Meter sind benutzungspflichtig	RW3; 11736,15727 11941,15586
 	RW4; 11941,15586 11736,15727
 #: by: Jens-Michael Schau (nördliche Fahrbahn)
 #: confirmed_by: srt (RW3!)
-	RW3;RW3 11941,15586 12252,15376 12327,15333 12428,15275 12709,15112
+	RW3;RW3 11941,15586 12252,15376 12327,15333 12421,15278 12709,15112
 #: by: Jens-Michael Schau vvv
 #: confirmed_by: srt (RW3!)
 	RW3;RW3 12709,15112 12812,15053 13110,14879 13151,14855
@@ -1312,7 +1312,7 @@ Radwegauffahrt abgesperrt (dahinter kommt auch nichts)	RW0; 14089,9610 13973,946
 relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,11598 15202,11789 15248,11880
 	RW2;RW2 15361,12071 15294,11964 15248,11880
 gemeinsamer Rad- und Gehweg, asphaltiert	RW2; 15110,14486 15164,14392 15256,14237
-die ersten Meter mit benutzungspflichtigen Radweg	RW0; 15256,14237 15164,14392
+die ersten Meter mit benutzungspflichtigen Radweg, dann Radspur	RW4; 15256,14237 15164,14392 15110,14486 15058,14575
 gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2;RW2 15256,14237 15354,13998 15436,13780 15468,13700 15513,13539
 	RW2;RW1 15513,13539 15515,13134
 	RW4; 15515,13134 15516,12838

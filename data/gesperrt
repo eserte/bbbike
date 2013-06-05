@@ -1039,7 +1039,7 @@ Straﬂenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14559,16912
 Caseler Str. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
 Berliner Allee -> Caseler Str.: Straﬂenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790
 Straﬂenbahntrasse	3nocross::ignrte 13401,15821 13432,15843 13487,15888
-Streustr. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13269,15927 13432,15843 13487,15888
+Streustr. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13263,15930 13432,15843 13487,15888
 G¸lzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
 Mittelstreifen	3nocross::ignrte 5343,21250 5349,21198 5356,21146 5382,21001
 Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5349,21198 5343,21250
@@ -1544,10 +1544,13 @@ Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 
 Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 12422,14692 12473,14763 12520,14833 12584,14928
 Olga-Benario-Prestes-Str. -> Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12653,14653 12473,14763 12422,14692
 Greifswalder Str. -> Olga-Benario-Prestes-Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12520,14833 12473,14763 12653,14653
-Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12572,14836 12520,14833 12473,14763
-Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12572,14836 12520,14833 12723,14714
-Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12584,14928 12520,14833 12572,14836
+Volkspark Anton Saefkow -> Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12572,14836 12520,14833 12473,14763
+Volkspark Anton Saefkow -> Anton-Saefkow-Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12572,14836 12520,14833 12723,14714
+Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straﬂenbahn	3::igndisp 12584,14928 12520,14833 12572,14836
 Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12584,14928 12520,14833 12723,14714
+Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 12584,14928 12620,14979 12709,15112
+Greifswalder Str. -> G¸terbahnhof Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12709,15112 12620,14979 12717,14908
+G¸terbahnhof Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12717,14908 12620,14979 12584,14928
 Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 12709,15112 12737,15154 12870,15342
 Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12709,15112 12737,15154 12693,15225
 Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12693,15225 12737,15154 12870,15342
@@ -2342,7 +2345,7 @@ Schwingtor	BNP:5:-49:trailer=10 7400,8273
 Schwingtor	BNP:5:-54:trailer=10 7289,8259
 Schranke, sehr enge Durchfahrt, nicht anh‰ngertauglich	BNP:5:-135:trailer=no 14658,7513
 Schranke	BNP:3:45 8828,13434
-Dr‰ngelgitter an der Straﬂenbahntrasse	BNP:6:-154 14998,13623
+Dr‰ngelgitter an der Straﬂenbahntrasse	BNP:6:-167 14989,13630
 Dr‰ngelgitter	BNP:3:-74 25909,11844
 Schranke	BNP:3:-90 -3646,15717
 Dr‰ngelgitter am Bahn¸bergang	BNP:3:-21 11612,5253

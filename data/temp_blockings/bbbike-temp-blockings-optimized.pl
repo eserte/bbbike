@@ -3165,20 +3165,7 @@ userdel	q4::inwork 10473,18113 10545,18143 10582,18159
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1370383199,
-         'text' => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
-         'from' => undef,
-         'id' => 2411,
-         'data' => '#: XXX ist die Baustelle tatsächlich Ende Mai fertig?
-#: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
-#: last_checked: 2013-06-04
-#: next_check: 2013-06-07
-#: priority: #A
-userdel	q3::inwork; 13474,8060 13444,7879
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,

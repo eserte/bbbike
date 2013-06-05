@@ -114,13 +114,13 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2013-05-15
+#: last_checked: 2013-06-05
 #: check_frequency: 90d
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-05-30 vvv
+#: last_checked: 2013-06-05 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -145,7 +145,7 @@ Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,1172
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
 #: XXX Baumaßnahme 3.18 (Realisierung in 2011)
-#: last_checked: 2013-06-03 (weiterhin nur Busspuren)
+#: last_checked: 2013-06-05 (weiterhin nur Busspuren)
 #: check_frequency: 60d
 Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
@@ -843,13 +843,13 @@ Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294
 #: next_check: 2010-09-01
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected 29714,4461 29728,4435 29813,4314 29850,4288
 # 
-#: last_checked: 2013-05-24 vvv
-#: next_check: 2013-06-07 vvv
+#: last_checked: 2013-06-05 vvv
+#: next_check: 2013-06-19 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv
 #: source_id: INKO_117706 vvv
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15058,14575
-#: XXX Richtung Süden wird es wohl ein Gehwegradweg fehlen (fehlt nur noch der Asphalt), Richtung Norden sieht man die ersten Anzeichen für Radspuren (2013-05-24)
+#: XXX Richtung Süden wird es wohl ein Gehwegradweg fehlen (fehlt nur noch der Asphalt), Richtung Norden ist fertig
 Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15058,14575 15110,14486 15164,14392
 #: source_id ^^^
 #: by: ^^^
@@ -867,7 +867,7 @@ Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren
 #: osm_watch: way id="22045147" version="17"
 Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16522,16206 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
 # 
-#: last_checked: 2013-04-30
+#: last_checked: 2013-06-05
 #: check_frequency: 60d
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
@@ -951,8 +951,6 @@ Petersallee - Dohnagestell: Qualität? beleuchtet?	? 5426,16539 5129,16210 5022,1
 Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?	? 15102,20723 15220,20586 15255,19906
 Blankenburger Pflasterweg - Ornitstr.: Qualität? Beleuchtet? Genaue Wegführung?	? 15255,19906 15357,19880 15413,18626
 Am Heinersdorfer Graben: Qualität? Beleuchtet? Straßenname (bei osm: Kiebitzweg)	? 13902,18953 13404,19235 13040,19596
-Hansastr. - Gartenstr.: existiert hier eine Wegverbindung? Qualität? beleuchtet?	? 15187,16185 14692,16328
-Weißer See: besteht am Südufer eine für Radfahrer nutzbare Verbindung? Qualität? beleuchtet?	? 14499,16341 14231,16423 14124,16544
 Schwarzmeerstr. - Rummelsburger Str.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17751,10904 17768,10963 17700,11042 17719,11092
 Am Lindenplatz - Schwarzmeerstr.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17855,10873 17821,10741
 Schwarzmeerstr. - Moldaustr.: existiert hier eine Wegverbindung? Qualität? beleuchtet?	? 17882,10728 17847,10629 17850,10524 17829,10516
@@ -1181,9 +1179,6 @@ Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,87
 #: last_checked: 2013-05-01
 #: next_check: 2013-08-01
 Lauterstr.: wird die Straße am Breslauer Platz komplett gesperrt?	?::projected 5810,7337 5817,7223
-# 
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3355&options=4 (Antrag zur Einbahnstraße)
-Hosemannstr. [Anliegerstraße zur Mandelstr.]: Qualität? Wird hier eine Einbahnstraße eingerichtet?	? 12941,15775 12771,15876
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361057749620/1057749620/00056359/59-Anlagen/04/vzbbvv01814_-_Fussgaengerueberweg_Alte_Hellers.pdf
 #: priority: #C

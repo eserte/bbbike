@@ -8592,7 +8592,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005738',
        data  => <<EOF,
-userdel	2::inwork 12721,15807 12642,15668 12559,15524 12472,15356 12428,15275
+userdel	2::inwork 12721,15807 12642,15668 12559,15524 12466,15359 12421,15278
 EOF
      },
      { from  => $isodate2epoch->("2013-08-08 00:00:00"), # 1 Tag Vorlauf
