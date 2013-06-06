@@ -29,6 +29,7 @@ sub teaser {
 			       ];
     $teasers_mandatory{"de"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
+				teaser_velothon(), # schaltet sich selbstständig ab
 				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_ios1(),
@@ -45,6 +46,7 @@ sub teaser {
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
+				teaser_velothon(), # schaltet sich selbstständig ab
 				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_ios1(),
@@ -99,6 +101,22 @@ sub teaser_kreisfahrt_adfc {
 	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
 	<<EOF
 <div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0"" /></a> am 22. September $year</div>
+EOF
+    } else {
+	();
+    }
+}
+
+sub teaser_velothon {
+    my @l = localtime; $l[4]++;$l[5]+=1900;
+    my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
+    my $out_of_date = $today ge "20130610";
+    if (!$out_of_date) {
+	my $velothon_map_url = "http://files.upsolut.de/velothon/maps/sperr.php";
+	my $date_spec = $today eq '20130609' ? 'Heute' : 'Am Sonntag, den 9. Juni 2013';
+	<<EOF
+<div class="teaser" style="font-weight:bold">$date_spec findet der Velothon statt.<br/>
+<a href="$velothon_map_url">Karte mit den Sperrungen</a></div>
 EOF
     } else {
 	();
