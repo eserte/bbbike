@@ -76,7 +76,7 @@ Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10793,12906 10923,12779
 Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726 14674,9764 14500,9856 14483,9843 14460,9871 14448,9922
-(S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14361,9772 14436,9784 14483,9843
+(S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14361,9772 14436,9784 14460,9814 14483,9843
 Treptower Park, am Rosengarten: Fuﬂg‰nger	q2 14819,9462 14910,9643
 Treptower Park: Fuﬂg‰nger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9772
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12671,10042 12686,10045 12690,10062
@@ -288,7 +288,8 @@ Barsekowstr.: Fuﬂg‰nger	q1 5344,4672 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5589,4617 5582,4675 5555,4743
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5509,4773 5453,4665 5417,4647
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5797,4846 5826,4819 5909,4798 5945,4828 6018,4850
-Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655 11541,9576
+Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655
+Dieffenbachstr.: Bodenschwellen, kˆnnen gut umfahren werden	q0 11346,9655 11541,9576
 Schˆnleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14076,10011
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
@@ -480,7 +481,7 @@ Friedrichsbr¸cke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,1272
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 (Bl¸cherplatz - Waterloo-Ufer): Fuﬂg‰nger, Bordsteine	q2 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
-Mergenthalerring: Asphaltschwellen, kˆnnen umfahren werden	q1 14389,8080 14563,8243
+Mergenthalerring: Asphaltschwellen, kˆnnen teilweise umfahren werden	q1 14389,8080 14563,8243 14422,8407
 Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
 (Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6841,7283
 (Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q1 6807,7262 6809,7272 6841,7283
@@ -944,7 +945,7 @@ Marianne-Hapig-Weg: Fuﬂg‰nger, Spielplatz	q2 17623,-221 17563,-364
 (Rumeyplan - Kanzlerweg): eng	q2 8895,7797 8839,7904
 Elisabeth-Schwarzhaupt-Platz: einige Fuﬂg‰nger	q1 9274,13963 9167,14127
 (Bornsdorfer Str. - Werbellinstr.): einige Fuﬂg‰nger	q1 12668,8077 12650,8164
-(Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fuﬂg‰nger	q4 11190,10619 11145,10638
+(Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fuﬂg‰nger	q4 11192,10629 11145,10638
 (Bethanienpark): Fuﬂg‰nger	q1 11799,10848 11776,10860 11752,10878 11668,10916
 (Bethanienpark): Fuﬂg‰nger, Bordstein	q3 11668,10916 11589,10947
 (Bl¸cherplatz - Johanniterstr.): Fuﬂg‰nger, Bordstein	q2 9702,10129 9816,10119 9837,10117
@@ -1140,7 +1141,7 @@ Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger, Bordstein	q2 7064,16943 7002,17027
 (Schwyzer Str. - Aroser Allee): Fuﬂg‰nger, schmal	q1 7002,17027 6956,17087
 Koseler Weg: einige Fuﬂg‰nger, Bordstein	q2 9850,6135 9679,6160
-(Landsberger Allee - Zechliner Str.): Fuﬂg‰nger	q2 16589,14400 16544,14593
+(Landsberger Allee - Zechliner Str.): Fuﬂg‰nger, Bordstein	q2 16589,14400 16544,14593
 (Krautstr./Blumenstr. - Strausberger Platz): Fuﬂg‰nger, Hausdurchfahrt	q2 12125,12490 12134,12540
 Gleisdreieckpark, Einfahrt L¸tzowstr.: Bordstein	q2 8236,10623 8199,10634
 (Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 15187,16185 15102,16212 14810,16282 14665,16294
@@ -2035,7 +2036,7 @@ Stallschreiberstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp
 Jahnstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11500,9116 11509,9392
 Schulenburgring: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9027,8431 9022,8581 9006,8602
 Neue Schˆnhauser Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 10527,13257 10423,13215 10310,13227
-Kirchhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13188,7590 13117,7471 13027,7368
+Kirchhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13188,7590 13117,7471 13029,7353
 Niemannstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 14254,11377 14211,11229
 Bjˆrnsonstr: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 10209,16674 10197,16528
 Eichhornstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8232,11414 8253,11306 8280,11296

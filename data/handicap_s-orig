@@ -151,7 +151,7 @@ Rathausstr.: Fahrbahn an der Spandauer Str. gesperrt, Ausweichen auf Gehweg	q4::
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2013-06-05 vvv
+#: last_checked: 2013-06-06 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q3::inwork; 10389,11390 10446,11470
 # REMOVED (now again entry above is active) --- Neue Grünstr.: Fahrbahn gesperrt wegen Bauarbeiten	q4::inwork 10389,11390 10446,11470
@@ -180,8 +180,8 @@ Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung in der Gegenrichtung, sowie fragezeichen-orig-Eintrag
-#: last_checked: 2013-06-04
-#: next_check: 2013-06-07
+#: last_checked: 2013-06-06
+#: next_check: 2013-06-10
 #: priority: #A
 Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732
 # 
@@ -278,7 +278,7 @@ Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10793,12906 10923,12779
 Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726 14674,9764 14500,9856 14483,9843 14460,9871 14448,9922
-(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14483,9843
+(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14460,9814 14483,9843
 Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14910,9643
 Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9772
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
@@ -527,8 +527,9 @@ Barsekowstr.: Fußgänger	q1 5344,4672 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5826,4819 5909,4798 5945,4828 6018,4850
 #: XXX_prog: für Anhänger q2
-#: XXX_indoor: im östlichen Teil (Graefe-Schönleinstr.) sind die Bodenschwellen nicht mehr so breit, evtl. q0- eintragen?
-Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655 11541,9576
+Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655
+#: XXX_prog: für Anhänger evtl. q1
+Dieffenbachstr.: Bodenschwellen, können gut umfahren werden	q0- 11346,9655 11541,9576
 Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14076,10011
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
@@ -751,7 +752,7 @@ Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328
 (Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q2 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 #: XXX_prog: für Anhänger vielleicht q2
-Mergenthalerring: Asphaltschwellen, können umfahren werden	q1 14389,8080 14563,8243
+Mergenthalerring: Asphaltschwellen, können teilweise umfahren werden	q1 14389,8080 14563,8243 14422,8407
 Grazer Platz: Fußgänger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
 (Vorarlberger Damm - Kleingartenkolonie): Fußgänger	q1 6817,7101 6852,7246 6841,7283
 (Nordmannzeile - Kleingartenkolonie): Fußgänger	q1 6807,7262 6809,7272 6841,7283
@@ -1313,7 +1314,7 @@ Marianne-Hapig-Weg: Fußgänger, Spielplatz	q2- 17623,-221 17563,-364
 Elisabeth-Schwarzhaupt-Platz: einige Fußgänger	q1 9274,13963 9167,14127
 (Bornsdorfer Str. - Werbellinstr.): einige Fußgänger	q1 12668,8077 12650,8164
 #: XXX_prog BS (2x)
-(Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fußgänger	q4 11190,10619 11145,10638
+(Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fußgänger	q4 11192,10629 11145,10638
 (Bethanienpark): Fußgänger	q1 11799,10848 11776,10860 11752,10878 11668,10916
 #: XXX_prog BS
 (Bethanienpark): Fußgänger, Bordstein	q3 11668,10916 11589,10947
@@ -1568,7 +1569,8 @@ Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 #: XXX_prog BS nur zur Felixstr. hin (ansonsten wäre es q1)
 Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 #: note: einige Einkaufsmöglichkeiten, relativ viele Fußgänger, schnell fahren nicht möglich
-(Landsberger Allee - Zechliner Str.): Fußgänger	q2 16589,14400 16544,14593
+#: XXX_prog BS zur Zechliner Str.
+(Landsberger Allee - Zechliner Str.): Fußgänger, Bordstein	q2 16589,14400 16544,14593
 (Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q2 12125,12490 12134,12540
 #: XXX_prog BS
 Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634

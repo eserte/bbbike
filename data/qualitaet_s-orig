@@ -81,7 +81,7 @@ Großgörschenstr.: Kopfsteinpflaster, OK	Q1 7771,9479 7882,9490
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11556,10869 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11290,10972 11150,11030
-Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11190,10619 11210,10668 11244,10653 11258,10682
+Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136 11473,11180
 Legiendamm: Kopfsteinpflaster	Q2 11349,11227 11337,11197 11323,11164
 Legiendamm: asphaltiert	Q0 11323,11164 11307,11125 11329,11065 11290,10972
@@ -535,7 +535,7 @@ Alt-Marienfelde: Kopfsteinpflaster	Q2- 8742,475 8533,512 8484,529 8258,662 8114,
 Alt-Marienfelde: Asphalt	Q0 7909,775 7857,802
 Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8000,729 8194,617 8258,662
 Ratiborstr.: Kopfsteinpflaster	Q2 12712,9523 12739,9576 12834,9738
-Kirchhofstr.: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13117,7471 13027,7368
+Kirchhofstr.: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13117,7471 13029,7353
 Kirchhofstr.: Kopfsteinpflaster	Q2 13003,7316 13001,7296
 Kirchhofstr.: Asphalt	Q0 13001,7296 12909,7181 12872,7134
 Siegfriedstr.: Asphalt	Q0 12843,7093 12872,7134
@@ -745,7 +745,7 @@ Saarbrücker Str.: Asphalt, etwas brüchig	Q0- 10895,13961 10924,13940 10969,13914
 Heinrich-Roller-Str.: Kopfsteinpflaster	Q2 11435,14023 11607,13928
 Corinthstr.: Kopfsteinpflaster	Q2 14608,10409 14447,10491
 (zum Mergenthalerring): holpriger Sandweg	Q2 14700,8368 14679,8349 14563,8243
-(zum Mergenthalerring): etwas sandig	Q2 14458,8456 14560,8528
+(zum Mergenthalerring): Asphalt	Q0 14389,8080 14563,8243 14422,8407 14469,8455 14560,8528
 Nordufer Flughafensee: Waldweg, OK	Q1 3108,18083 2801,18126 2775,18160 2226,18228
 Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2226,18228 1549,17718 1270,17566 660,17352 127,17176
 #: by: Thomas Thomas
@@ -2730,7 +2730,7 @@ Norwegerstr. - Behmstr.: Verbundsteinpflaster	Q0- 10022,16237 10026,16165 10055,
 Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
 Podewilsstr.: Asphalt	Q0- 8707,6537 8551,6552
 Zastrowstr.: Beton	Q0 9979,6349 9860,6348
-Weidenweg: Asphalt	Q0 12891,12549 13025,12523 13357,12473 13463,12507 13548,12535 13598,12554 13678,12571
+Weidenweg: Asphalt	Q0 12891,12549 13025,12523 13176,12500 13357,12473 13463,12507 13548,12535 13598,12554 13678,12571
 Nernstweg: Verbundsteinpflaster	Q1 14652,7507 14658,7513 14782,7638 14798,7747 14796,7801 14766,7903 14777,7921
 Bergaustr.: Beton	Q0- 15346,7885 15464,7757 15576,7636 15696,7507
 Platanenweg: Asphalt	Q0 15968,7739 15840,7876 15717,8011 15787,8073
@@ -3092,6 +3092,7 @@ Plutoweg: Asphalt	Q0 31078,3372 30965,3391 30811,3416 30750,3468 30608,3617 3049
 Treptower Park: Asphalt	Q0 14310,9692 14316,9542 14347,9452 14398,9373 14485,9271 14601,9201
 Treptower Park: Asphalt, einige Wuzelschäden	Q1+ 14316,9542 14384,9565 14512,9528 14635,9441 14748,9420
 Treptower Park: Asphalt	Q0 14529,9141 14601,9201 14748,9420 14780,9480
+Treptower Park: Asphalt	Q0 14460,9814 14436,9784 14361,9772
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6325,8259 6385,8274 6459,8281 6552,8281
 Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3555,11612
 Goethepark: Asphalt	Q1 3467,11373 3594,11372
@@ -7014,7 +7015,7 @@ Wiesenschlag: Asphalt	Q0 -2074,2258 -2036,2150
 Wiesenschlag: Asphalt	Q0 -2036,2150 -1910,1829
 Elisabeth-Schwarzhaupt-Platz: Gehwegplatten	Q0 9274,13963 9167,14127
 (Bornsdorfer Str. - Werbellinstr.): Verbundsteinpflaster	Q1 12668,8077 12650,8164
-(Erkelenzdamm - Prinzessinnenstr.): teilweise Kopfsteinpflaster	Q2 11190,10619 11145,10638
+(Erkelenzdamm - Prinzessinnenstr.): teilweise Kopfsteinpflaster	Q2 11192,10629 11145,10638
 (Zufahrt am NKZ): Verbundsteinpflaster	Q1 11311,10505 11291,10438
 Böcklerpark: mäßiges Verbundsteinpflaster	Q2+ 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
 (Bethanienpark): Kopfsteinpflaster	Q2 11799,10848 11776,10860
@@ -8550,8 +8551,9 @@ Blockdammweg: Asphalt	Q0 17904,8927 17975,8971
 (Hansastr. - Gartenstr.): welliger Asphalt	Q1 15187,16185 15102,16212
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 14810,16282 14721,16360
-Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinsteinpflaster	Q2 12948,15771 12762,15882
+Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinsteinpflaster	Q2+ 12948,15771 12762,15882
 Parkstr.: Asphalt mit einigen leichten Schäden	Q0- 13788,16240 13972,16639
+Prenzlauer Promenade: Beton	Q0- 11950,18529 11934,18576 11980,18900 11940,19380 11953,19541 11942,19567 11915,19580
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 

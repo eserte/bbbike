@@ -3316,6 +3316,26 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'data' => 'userdel	2::temp 3977,11854 3810,11843
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_019934',
+         'until' => 1370815199,
+         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, am 8. und 9. Juli 2013',
+         'from' => 1370556000,
+         'id' => 2439,
+         'data' => 'userdel	q4::temp 5475,10808 5351,10760 5229,10716 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_019938',
+         'until' => 1370836800,
+         'text' => 'Str. des 17. Juni zwischen Yitzak-Rabin-Str. und Ebertstr. wegen Velothon gesperrt ab 07.06.2013 6 Uhr, bis 10.06.2013 6:00 Uhr ',
+         'from' => 1370491200,
+         'id' => 2440,
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+',
+         'type' => 'gesperrt'
        }
      
 );

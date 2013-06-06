@@ -19797,8 +19797,8 @@ EOF
        text  => 'Jonasstr./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	3 12925,7425 13018,7441 13027,7368
-userdel	3 13027,7368 13018,7441 12925,7425
+userdel	3 12925,7425 13018,7441 13029,7353
+userdel	3 13029,7353 13018,7441 12925,7425
 userdel	3 12925,7425 13018,7441 13015,7471 12992,7545
 userdel	3 12992,7545 13015,7471 13018,7441 12925,7425
 EOF
@@ -21021,15 +21021,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2013-06-04 23:59:59"), # 1369994400, # 2013-05-31 (laut Baustellenschild) # XXX verlängert
+       until => $isodate2epoch->("2013-06-04 23:59:59"), # 1369994400, # 2013-05-31 (laut Baustellenschild) # XXX verlängert --- 2013-06-06: mittlerweile kann man durch
        text  => 'Hertzbergstr.: Bauarbeiten zwischen Böhmische Str. und Sonnenallee',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX ist die Baustelle tatsächlich Ende Mai fertig?
-#: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen
-#: last_checked: 2013-06-04
-#: next_check: 2013-06-07
-#: priority: #A
+# REMOVED --- #: XXX ist die Baustelle tatsächlich Ende Mai fertig? --- #: note: in der Gegenrichtung (Richardplatz -> Sonnenallee) offiziell nur für Anwohner offen --- #: last_checked: 2013-06-04 --- #: next_check: 2013-06-07 --- #: priority: #A
 userdel	q3::inwork; 13474,8060 13444,7879
 EOF
      },
@@ -21327,6 +21323,24 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130604.1135.385636.html',
        data  => <<EOF,
 userdel	2::temp 3977,11854 3810,11843
+EOF
+     },
+     { from  => 1370556000, # 2013-06-07 00:00
+       until => 1370815199, # 2013-06-09 23:59
+       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, am 8. und 9. Juli 2013',
+       type  => 'handicap',
+       source_id => 'IM_019934',
+       data  => <<EOF,
+userdel	q4::temp 5475,10808 5351,10760 5229,10716 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
+EOF
+     },
+     { from  => 1370491200, # 2013-06-06 06:00
+       until => 1370836800, # 2013-06-10 06:00
+       text  => 'Str. des 17. Juni zwischen Yitzak-Rabin-Str. und Ebertstr. wegen Velothon gesperrt ab 07.06.2013 6 Uhr, bis 10.06.2013 6:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_019938',
+       data  => <<EOF,
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
 EOF
      },
     );

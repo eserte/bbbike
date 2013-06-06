@@ -49,7 +49,7 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-05-27
+#: last_checked: 2013-06-06
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -114,9 +114,9 @@ Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radweg
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: last_checked: 2013-06-05
-#: check_frequency: 90d
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: last_checked: 2013-06-06
+#: check_frequency: 90d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
@@ -931,7 +931,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-Kirchhofstr.: Sackgasse --- eventuell Bauarbeiten, vielleicht wird die Qualität hier besser?	? 13027,7368 13117,7471
+#: XXX_indoor: Verbindung aufnehmen? 
+Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13163,12382 13176,12500
+# REMOVED (nein, sieht nur nach Leitungsarbeiten aus) --- Kirchhofstr.: Sackgasse --- eventuell Bauarbeiten, vielleicht wird die Qualität hier besser?	? 13027,7368 13117,7471
 #: priority: #C
 Florastr.: Vorfahrtsregelung?	? 10548,17817 10705,17931 10830,17985
 Glambecker Ring - Lea-Grundig-Str.: existiert hier eine Verbindung? Qualität? Beleuchtung?	? 21824,16506 21579,16545 21491,16631
@@ -1032,8 +1034,8 @@ Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10033,17763
 # 
 #: XXX siehe auch: gesperrt-orig, handicap_s-orig
-#: last_checked: 2013-06-04
-#: next_check: 2013-06-07
+#: last_checked: 2013-06-06
+#: next_check: 2013-06-10
 #: priority: #A
 Grimmstr.: Einbahnstraße wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
 # 
@@ -1100,7 +1102,8 @@ Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsbla
 Lauinger Str.: befindet sich der Fuß/Radweg hier? (Qualität, Beleuchtung, Straßenschilder?) Oder ist damit der fast parallel führende Trampelpfad gemeint?	? 21221,11398 21137,11294
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8
-#: next_check: 2013-06-05
+#: last_checked: 2013-06-06
+#: check_frequency: 60d
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8
@@ -1109,7 +1112,8 @@ Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12168,7368
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
-#: next_check: 2013-06-05
+#: next_check: 2013-06-06
+#: check_frequency: 100d
 #: priority: #C
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14586,7624
 # 
@@ -3492,3 +3496,7 @@ Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 2442
 #: XXX ^^^
 #: by: ^^^
 #: by: ^^^
+# 
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20130606.1000.385732.html
+#: XXX fehlt in Berlin.coords.data
+Litta-von-Stauffenberg-Weg: befindet sich der Weg hier? Qualität? Nachts beleuchtet?	? -7018,5218 -7166,5298
