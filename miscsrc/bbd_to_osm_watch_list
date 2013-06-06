@@ -77,6 +77,6 @@ if (@errors) {
 sub _add_bbbike_inc {
     require lib;
     require FindBin;
-    #lib->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+    lib->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
     lib->import("/home/e/eserte/src/bbbike", "/home/e/eserte/src/bbbike/lib");
 }
