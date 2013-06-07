@@ -238,11 +238,11 @@ Erich-Weinert-Str. -> Paul-Robeson-Str.: U-Bahnviadukt und Straßenbahn	3::igndis
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10989,16197 11253,16118
 Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10989,16197 10982,16121
 Straßenbahn	3nocross::ignrte 11860,15309 11877,15366 11891,15413
-Prenzlauer Allee -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11891,15413 11877,15366 11942,15358
-Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11942,15358 11877,15366 11632,15530
-Lilli-Henoch-Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11942,15358 11877,15366 11860,15309
+Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11937,15349 11877,15366 11632,15530
+Lilli-Henoch-Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11937,15349 11877,15366 11860,15309
+Prenzlauer Allee -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11891,15413 11877,15366 11937,15349
+Ahlbecker Str. -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11632,15530 11877,15366 11937,15349
 Ahlbecker Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11632,15530 11877,15366 11891,15413
-Ahlbecker Str. -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11632,15530 11877,15366 11942,15358
 Prenzlauer Allee -> Ahlbecker Str.: Straßenbahn	3::igndisp 11860,15309 11877,15366 11632,15530
 Straßenbahn	3nocross::ignrte 12473,14763 12422,14692 12403,14663 12371,14615
 Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12473,14763 12422,14692 12573,14581
@@ -952,8 +952,8 @@ Feurigstr. -> Gustav-Freytag-Str.: Überqueren verboten	3::igndisp 7012,8511 6807
 Feurigstr. -> Dominicusstr.: Überqueren verboten	3::igndisp 7012,8511 6807,8309 6935,8208
 Dominicusstr. -> Gustav-Freytag-Str.: Überqueren verboten	3::igndisp 6935,8208 6807,8309 6779,8279
 Dominicusstr. -> Feurigstr.: Überqueren verboten	3::igndisp 6687,8385 6807,8309 7012,8511
-Schranke	3 9070,14058 8992,14176 8825,14401 8776,14364
-Schranke	3 8776,14364 8825,14401 8992,14176 9070,14058
+Schranke	3 8992,14176 8825,14401 8776,14364
+Schranke	3 8776,14364 8825,14401 8992,14176
 Plonzstr.	1 16227,12280 16252,12411
 Seddiner -> Hohenschönhausener Weg: Poller	3 18215,12123 18408,12105 18420,11864
 Seddiner -> Hohenschönhausener Weg: Poller	3 18559,12105 18408,12105 18420,11864

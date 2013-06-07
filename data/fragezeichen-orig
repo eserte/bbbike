@@ -150,11 +150,11 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
-#: last_checked: 2013-05-08
-#: next_check: 2013-08-08
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="14"
 #: osm_watch: way id="42732291" version="5"
+#: last_checked: 2013-06-07
+#: next_check: 2013-08-08
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
@@ -357,6 +357,11 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036234258287/234258287/00057951/51-Anlagen/03/Anlage1zumDV_130510_-DUD-VHB-001-LP.PDF
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4531
+#: next_check: 2013-10-01
+Am Lokdepot: Planung einer Erschließungsstraße	?::inwork 8390,8879 8389,9087
+# 
 #: XXX culdesac -> culdesac_pseudo, wenn's fertig ist
 #: last_checked: 2013-06-01
 #: next_check: 2013-06-15
@@ -405,8 +410,6 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 #: priority: #C vvv
 #: next_check: 2013-04-01 vvv
 Frohnauer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 2437,24435 2437,24393
-#: last_checked: 2012-08-12
-Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8091,17194
 Alt-Wittenau: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5235,20439
 Eichborndamm: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4580,19756
 Waidmannsluster Damm/Am Leitbruch: wird hier ein Zebrastreifen angelegt?	?::projected 4052,22089 4094,22065
@@ -415,6 +418,8 @@ Waidmannsluster Damm/Am Leitbruch: wird hier ein Zebrastreifen angelegt?	?::proj
 Eichelhäherstr.: hier wird ein Zebrastreifen entstehen (Bauarbeiten beginnen nach der Frostperiode Anfang 2013)	?::projected -1802,19653 -1778,19649
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3655,23244
 #: next_check ^^^
+#: last_checked: 2013-06-07
+Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8091,17194
 #: priority ^^^
 #: by: ^^^
 #: by: ^^^
@@ -640,7 +645,7 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert?	?::project
 #: last_checked: 2013-05-09 vvv
 #: next_check: 2013-11-30 vvv
 #: osm_watch: way id="187902666" version="2"
-Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8333,9583 8338,9443 8388,9242 8337,9065
+Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8333,9583 8338,9443 8388,9242 8373,9022 8389,9087
 #: by: http://gleisdreieck-blog.de/wordpress/wp-content/uploads/eingang-yorck-collignon.jpg
 Eingang zum Flaschenhalspark	?::projected 8358,9568 8338,9443
 #: next_check ^^^
@@ -931,6 +936,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Greifswalder - Volkspark: Verbindung genauer anschauen	? 12584,14928 12572,14836
 #: XXX_indoor: Verbindung aufnehmen? 
 Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13163,12382 13176,12500
 # REMOVED (nein, sieht nur nach Leitungsarbeiten aus) --- Kirchhofstr.: Sackgasse --- eventuell Bauarbeiten, vielleicht wird die Qualität hier besser?	? 13027,7368 13117,7471
@@ -947,9 +953,7 @@ Berliner Balkon: Qualität? Beleuchtet?	? 24248,10966 24207,10858 24229,10843
 Mittelheide, Nord-Süd-Weg: Qualität?	? 24377,7698 24281,7676 24197,6875 24133,6169 24230,6135
 Grünauer Str. - Kablower Weg: existiert hier eine Verbindung durch den Wald? Qualität?	? 22926,-340 22948,-322 22862,-126 22815,37
 Grillostr. - Wehnertstr.: existiert hier eine Verbindung? Wenn ja: Qualität? Beleuchtung?	? 8790,854 8684,913 8662,899
-Dohnagestell - Tangastr.: Qualität? beleuchtet?	? 5553,15271 5722,15332 5961,15562
-Dohnagestell - Ugandastr.: Qualität? beleuchtet?	? 5522,15354 5710,15519 5906,15623
-Petersallee - Dohnagestell: Qualität? beleuchtet?	? 5426,16539 5129,16210 5022,15987 4879,15964 4880,15910 4849,15875
+# REMOVED (uninteressant?) --- Dohnagestell - Ugandastr.: Qualität? beleuchtet?	? 5522,15354 5710,15519 5906,15623
 Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?	? 15102,20723 15220,20586 15255,19906
 Blankenburger Pflasterweg - Ornitstr.: Qualität? Beleuchtet? Genaue Wegführung?	? 15255,19906 15357,19880 15413,18626
 Am Heinersdorfer Graben: Qualität? Beleuchtet? Straßenname (bei osm: Kiebitzweg)	? 13902,18953 13404,19235 13040,19596
@@ -970,8 +974,6 @@ Oberspreestr. [Wohngebiet]: Qualität (voraussichtliche asphaltiert); Einbahnstra
 Dieselstr. (Potsdam): diese Straße wird "neu gewidmet", existiert schon etwas? Qualität?	? -10350,-2358 -10258,-2380 -10273,-2445
 # 
 Arnulfstr.: was ist hier: Busspur, Radstreifen, Radweg, oder nichts?	? 8100,5517 8200,5510
-# 
-Chausseestr.: Richtung Norden existieren anscheinend auch schon Radstreifen, prüfen!	? 8246,14675 8232,14689 8153,14769 8138,14786 8057,14876
 # 
 # by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7281 (Idee)
 Viktoriaufer/Jüdenstr. - Am Juliusturm: existiert eine Verbindung für Radfahrer? Kann man auch Richtung Falkenseer Platz fahren?	? -3249,14621 -3224,14655 -3188,14652
@@ -1012,6 +1014,7 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 (Alter Tornow - Fähre): Qualität (vielleicht Verbundsteinpflaster?)? Tatsächlich NN?	? -13980,-2690 -14045,-2595
 # 
 #: osm_watch: way id="129104626" version="1"
+#: last_checked: 2013-06-07
 #: next_check: 2014-04-15
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: wann wird die Fortsetzung gebaut? Qualität?	?::projected 8251,14337 8442,14456
 # 
@@ -1112,14 +1115,14 @@ Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12168,7368
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
-#: next_check: 2013-06-06
+#: last_checked: 2013-06-06
 #: check_frequency: 100d
 #: priority: #C
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14586,7624
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
-#: last_checked: 2013-04-03
-#: next_check: 2013-06-05 (evtl. auch von wosch berichten lassen)
+#: last_checked: 2013-06 (by wosch)
+#: next_check: 2013-09-05
 Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9190
 # 
 Fontanestr. (Lichtenrade): Qualität des Rad/Gehweg-Abschnitts?	? 9779,-605 9822,-608

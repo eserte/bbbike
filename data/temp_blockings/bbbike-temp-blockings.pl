@@ -15835,12 +15835,12 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013990',
        data  => <<EOF,
-Schönhauser Allee -> Schivelbeiner Str.:	3::inwork 10975,16010 10982,16121 10753,16144
+Schönhauser Allee -> Schivelbeiner Str.:	3::inwork 10975,16010 10982,16121 10739,16146
 Schönhauser Allee -> Wichertstr.:	3::inwork 10989,16197 10982,16121 11214,16043
 Wichertstr. -> Schönhauser Allee:	3::inwork 11214,16043 10982,16121 10975,16010
-Wichertstr. -> Schivelbeiner Str.:	3::inwork 11214,16043 10982,16121 10753,16144
-Schivelbeiner Str. -> Schönhauser Allee:	3::inwork 10753,16144 10982,16121 10989,16197
-Schivelbeiner Str. -> Wichertstr.:	3::inwork 10753,16144 10982,16121 11214,16043
+Wichertstr. -> Schivelbeiner Str.:	3::inwork 11214,16043 10982,16121 10739,16146
+Schivelbeiner Str. -> Schönhauser Allee:	3::inwork 10739,16146 10982,16121 10989,16197
+Schivelbeiner Str. -> Wichertstr.:	3::inwork 10739,16146 10982,16121 11214,16043
 EOF
      },
      { from  => 1251444429, # 2009-08-28 09:27
@@ -21236,7 +21236,7 @@ EOF
        text  => 'Tegeler Str.: zwischen Triftstr. und Schlegelstr. Bauarbeiten, Ausweichen auf den Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-05-08
+#: last_checked: 2013-06-07
 #: XXX wann sind die Bauarbeiten beendet?
 userdel	q4::inwork; 7085,15226 7131,15109
 EOF
@@ -21341,6 +21341,15 @@ EOF
        source_id => 'IM_019938',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+EOF
+     },
+     { from  => 1371938400, # 2013-06-23 00:00
+       until => 1373925599, # 2013-07-15 23:59
+       text  => 'Johannisthaler Chaussee von Königsheideweg bis Ligusterweg, wegen Bauarbeiten gesperrt, 24.06.2013 bis Mitte Juli',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130607.1245.385821.html',
+       data  => <<EOF,
+userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15797,4456
 EOF
      },
     );

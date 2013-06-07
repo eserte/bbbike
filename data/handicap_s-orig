@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-06-04 vvv
+#: last_checked: 2013-06-07 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -33,7 +33,7 @@ Simplonstr.: Bauarbeiten, umst‰ndliches ‹berqueren der Modersohnstr.	q3::inwork 
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-06-05
+#: last_checked: 2013-06-07
 #: next_check: 2013-06-10
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 13366,11651 13295,11792
 # 
@@ -63,7 +63,7 @@ Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehwe
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
-#: last_checked: 2013-06-02 vvv
+#: last_checked: 2013-06-07 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -96,7 +96,7 @@ Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::in
 #: next_check: 2014-04-01
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2013-05-27 vvv
+#: last_checked: 2013-06-07 vvv
 #: next_check: 2013-12-31 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -445,7 +445,7 @@ Rosa-Luxemburg-Str.: Fuﬂg‰nger, Bordsteine	q3 10695,12933 10685,12966
 Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307
 Br¸cke Schˆnflieﬂer Str.: Fuﬂg‰nger	q3 10593,16037 10592,15968 10575,15968
 #: corrected_by: Sven Reimann ("Radfahren nicht erlaubt")
-(Kolonie Bornholm 1 und 2): Fuﬂg‰nger, enger Weg, Radfahren nicht erlaubt, ggfs. schieben	q3+ 10209,16674 10198,16929
+(Kolonie Bornholm 1 und 2): Fuﬂg‰nger, enger Weg, Radfahren nicht erlaubt, ggfs. schieben	q3+ 10209,16674 10190,16930
 (zum Rolandufer): Gehweg	q2 11351,12221 11278,12185
 Rolandufer: Gehweg, viele Fuﬂg‰nger	q3 10837,12158 10660,12176 10591,12203 10583,12206
 Spreeufer: Gehweg, viele Fuﬂg‰nger, im Sommer Straﬂencafe	q4 10583,12206 10492,12289 10424,12364 10422,12395
@@ -731,7 +731,7 @@ Bayernring: enge Straﬂe	q1 8380,8545 8455,8567 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15378,8668 15166,8489
 Hedwigskirchgasse: Fuﬂg‰nger	q1 9743,12239 9747,12205
 #: XXX_prog: Bordstein (BS) nur am S¸dende
-Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q2 9747,12205 9756,12139
+Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q3 9747,12205 9756,12139
 #: XXX_prog: BS am Nordende, flach
 Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
 Am Flutgraben: Fuﬂg‰nger, sechs Bodenschwellen	q3 13535,10184 13371,9974
@@ -1576,6 +1576,8 @@ Koseler Weg: einige Fuﬂg‰nger, Bordstein	q2 9850,6135 9679,6160
 Gleisdreieckpark, Einfahrt L¸tzowstr.: Bordstein	q2 8236,10623 8199,10634
 (Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 15187,16185 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 14810,16282 14721,16360
+(Dohnagestell - Tangastr.): Fuﬂg‰nger	q2 5802,15399 5889,15457 5961,15562
+Arnimplatz: Fuﬂg‰nger	q2 10606,16319 10739,16146
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -1906,9 +1908,9 @@ Alice-Salomon-Park: getrennte Wege f¸r Radfahrer und Fuﬂg‰nger, Bordsteine	q2 68
 Bautzener Platz: Fuﬂg‰nger, Bordsteine	q3 8182,9240 8100,9240
 Bautzener Platz: Fufg‰nger, Bordsteine	q3 8102,9262 8183,9260
 (Danziger Str. - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12128,14640 12189,14767 12220,14779 12255,14849 12241,14865 12314,15008
-(Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11877,15366 11942,15358 12107,15229 12215,15115 12284,15068 12314,15008
-(Prenzlauer Allee - Lilly-Henoch-Str.): Fuﬂg‰nger	q2 11860,15309 11919,15314 11942,15358
-(Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12078,15160 12107,15229
+(Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
+(Prenzlauer Allee - Lilly-Henoch-Str.): Fuﬂg‰nger	q2 11860,15309 11919,15314 11937,15349
+(Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12078,15160 12103,15218
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Schranken	q1 13084,14472 13009,14371 12949,14292
 Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13049,14141 12992,14196
 An der Brauerei: Fuﬂg‰nger	q1 13290,13294 13283,13311 13381,13354
@@ -2217,7 +2219,7 @@ Mittelheide: enge Straﬂe	q0- 22724,6608 22858,6535 23033,6511 23135,6500 23220,6
 Platanenstr.: teilweise recht eng	q1 9355,19789 9489,19826 9822,19916 10127,19992
 #: by: Michael Dinter: vvv
 Senegalstr.: enge Straﬂe	q1 5961,15562 5906,15623 5848,15685 5787,15741 5722,15795
-Tangastr.: enge Straﬂe	q1 6133,15680 5961,15562
+Tangastr.: enge Straﬂe	q1 6121,15697 5961,15562
 #: by: ^^^
 #: by: Klaus Dieter Ritzmann: vvv
 Rue Nungesser et Coli: enge Straﬂe	q1 3066,17833 3051,17879 3033,17903 3004,17917 2963,17917 2897,17902 2873,17867 2883,17801

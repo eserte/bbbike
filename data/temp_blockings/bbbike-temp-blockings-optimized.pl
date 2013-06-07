@@ -3244,7 +3244,7 @@ userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
          'text' => 'Tegeler Str.: zwischen Triftstr. und Schlegelstr. Bauarbeiten, Ausweichen auf den Gehweg',
          'from' => undef,
          'id' => 2430,
-         'data' => '#: last_checked: 2013-05-08
+         'data' => '#: last_checked: 2013-06-07
 #: XXX wann sind die Bauarbeiten beendet?
 userdel	q4::inwork; 7085,15226 7131,15109
 ',
@@ -3307,16 +3307,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130604.1135.385636.html',
-         'until' => 1370635200,
-         'text' => 'Zillestraßenfest 2013, Veranstaltung, Straße eventuell nicht passierbar, 7. Juni 2013 von 15 bis 22 Uhr',
-         'from' => 1370523600,
-         'id' => 2438,
-         'data' => 'userdel	2::temp 3977,11854 3810,11843
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_019934',
          'until' => 1370815199,
@@ -3334,6 +3325,16 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'from' => 1370491200,
          'id' => 2440,
          'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130607.1245.385821.html',
+         'until' => 1373925599,
+         'text' => 'Johannisthaler Chaussee von Königsheideweg bis Ligusterweg, wegen Bauarbeiten gesperrt, 24.06.2013 bis Mitte Juli',
+         'from' => 1371938400,
+         'id' => 2441,
+         'data' => 'userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15797,4456
 ',
          'type' => 'gesperrt'
        }
