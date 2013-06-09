@@ -776,6 +776,7 @@ Janischweg	1 429,15284 431,15230 453,15173 473,15169
 Köttgenstr.	1 473,15169 556,15175 613,15195
 Rosenfelder Ring	1s 18140,11932 18139,11833
 Neue Promenade	1::igndisp 10263,13047 10264,13097
+Hahns Mühle	1 24667,4900 24778,4821
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 (Wollestr. - Mühlenstr.)	1 -10790,-1178 -10787,-1162 -10730,-1103 -10691,-1097 -10648,-1130
@@ -899,7 +900,8 @@ Köthen	1 -85399,-74118 -85360,-74027 -85052,-74057 -85077,-74187 -85091,-74261 -
 Köthen	1 -85125,-74513 -85231,-74271
 Köthen	1 -85091,-74261 -85089,-74420 -85057,-74512
 Gützkow	1 7607,170278 7539,170282 7521,170447 7592,170432 7607,170278
-Josef-Nawrocki-Str.	1s 25802,4823 25802,4681 25724,4706 25691,4716 25554,4758 25552,4829
+Josef-Nawrocki-Str.	1s 25724,4706 25802,4681 25802,4823
+Josef-Nawrocki-Str.	1s 25724,4706 25691,4716 25554,4758 25552,4829
 Askanischer Platz	1s 8882,10905 8938,10872 8983,10846 9022,10857
 Helbigstr.	1s 20109,4087 20339,3779 20362,3750
 Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
@@ -1006,6 +1008,13 @@ Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 
 Straßenbahntrasse	3nocross::ignrte 16004,10204 16114,10123 16138,10105
 Hauptstr. -> Friedrich-Jacobs-Promenade: Straßenbahntrasse	3::igndisp 16138,10105 16114,10123 16066,10054
 Friedrich-Jacobs-Promenade -> Hauptstr.: Straßenbahntrasse	3::igndisp 16066,10054 16114,10123 16004,10204
+Straßenbahntrasse	3nocross::ignrte 16138,10105 16187,10033 16261,9925 16302,9865
+Hauptstr. -> Saganer Str.: Straßenbahntrasse	3::igndisp 16138,10105 16187,10033 16206,10047
+Hauptstr. -> Georg-Löwenstein-Str.: Straßenbahntrasse	3::igndisp 16261,9925 16187,10033 16155,9992
+Saganer Str. -> Hauptstr.: Straßenbahntrasse	3::igndisp 16206,10047 16187,10033 16261,9925
+Saganer Str. -> Georg-Löwenstein-Str.: Straßenbahntrasse	3::igndisp 16206,10047 16187,10033 16155,9992
+Georg-Löwenstein-Str. -> Hauptstr.: Straßenbahntrasse	3::igndisp 16155,9992 16187,10033 16138,10105
+Georg-Löwenstein-Str. -> Saganer Str.: Straßenbahntrasse	3::igndisp 16155,9992 16187,10033 16206,10047
 Grünstreifen	3nocross::ignrte 13644,14915 13744,15018 13823,15111
 Kniprodestr. -> Altenescher Weg: Grünstreifen	3::igndisp 13823,15111 13744,15018 13856,14944
 Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13856,14944 13744,15018 13644,14915
@@ -1180,9 +1189,11 @@ Allee der Kosmonauten -> Alt-Marzahn: Straßenbahntrasse	3::igndisp 21163,15289 2
 Alt-Marzahn -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21139,15376 21187,15350 21232,15465
 Straßenbahn auf der Fahrbahn	3nocross::ignrte 10089,18180 10054,18210 9909,18333
 Schönholzer Str. -> Wollankstr.: Straßenbahn auf der Fahrbahn	3::igndisp 10089,18180 10054,18210 10027,18165
-Straßenbahntrasse	3nocross::ignrte 22674,4309 22812,4227 22965,4124
+Straßenbahntrasse	3nocross::ignrte 22674,4309 22812,4227 22888,4184 22965,4124
 Pohlestr. -> Müggelheimer Str.: Straßenbahntrasse	3::igndisp 22831,4070 22812,4227 22674,4309
-Müggelheimer Str. -> Pohlestr.: Straßenbahntrasse	3::igndisp 22965,4124 22812,4227 22831,4070
+Müggelheimer Str. -> Pohlestr.: Straßenbahntrasse	3::igndisp 22888,4184 22812,4227 22831,4070
+Weg im Salvador-Allende-Viertel -> Müggelheimer Str.: Straßenbahntrasse	3::igndisp 22957,4264 22888,4184 22965,4124
+Müggelheimer Str. -> Weg im Salvador-Allende-Viertel: Straßenbahntrasse	3::igndisp 22812,4227 22888,4184 22957,4264
 Straßenbahntrasse	3nocross::ignrte 12090,16199 12097,16263 12077,16380
 Caligaripl. -> Gustav-Adolf-Str.: Straßenbahntrasse	3::igndisp 12121,16317 12097,16263 12182,16322
 Prenzlauer Promenade -> Gustav-Adolf-Str.: Straßenbahntrasse	3::igndisp 12077,16380 12097,16263 12182,16322
@@ -1380,10 +1391,10 @@ Paderborner Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3
 Straßenbahntrasse	3nocross::ignrte 18809,9133 18790,9018 18770,8898
 Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,9018 18770,8898
 Treskowallee -> Bopparder Str.: Straßenbahntrasse	3::igndisp 18809,9133 18790,9018 18881,9002
-Straßenbahntrasse	3nocross::ignrte 18010,7133 18086,7243 18382,7724
+Straßenbahntrasse	3nocross::ignrte 18010,7133 18086,7243 18165,7371
 Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18010,7133
-Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18382,7724 18086,7243 18186,7200
-Straßenbahntrasse	3nocross::ignrte 18413,7774 18570,8025 18657,8163
+Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18165,7371 18086,7243 18186,7200
+Straßenbahntrasse	3nocross::ignrte 18406,7760 18570,8025 18657,8163
 Straßenbahntrasse	3nocross::ignrte 18867,9464 18834,9256 18809,9133
 Rolandseck -> Treskowallee: Straßenbahntrasse	3::igndisp 18903,9244 18834,9256 18809,9133
 Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
@@ -2164,6 +2175,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Tor, sollte geschlossen gehalten werden	BNP:10:-139:trailer=15 27812,756
+Tor, sollte geschlossen gehalten werden	BNP:10:-135:trailer=15 27625,539
 Drängelgitter (lichte Breite 80cm)	BNP:5:-60:trailer=no -9809,-608
 enges Drängelgitter	BNP:5:-66:trailer=no -14725,525
 Drängelgitter	BNP:3:56:trailer=10 2157,10020
@@ -2475,7 +2488,6 @@ Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,127
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
-(Bellevuepark): Asphaltbauarbeiten	2:inwork 22794,5583 22855,5554 22835,5452 22851,5321
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257

@@ -127,9 +127,7 @@ Steigung	St; 38325,160573 38537,160709
 Hügelige Strecke	CS 57000,175587 56968,175656 56773,175904 56278,176090 56048,176043 55903,176145 55759,176100 55724,176149 55620,176402 55452,176481 55531,176625 55335,176921 55234,177013
 Hügelige Strecke	CS 48244,99579 48174,99463 48430,98522
 Hügelige Strecke	CS 44118,74822 44038,74892 43715,75427 43517,75583 43366,75644 42919,76011 42414,76385 41932,76874
-#: by: Felix Lippert:
-#: XXX mit Barometer abfahren
-Berghofer Weg: kurze starke Steigung und Gefälle (ca. 20%)	CS 30655,4186 30749,4165 30794,4154 30847,4137 30871,4111
+# REMOVED (Höhenpunkte existieren nun) --- #: by: Felix Lippert: --- #: XXX mit Barometer abfahren --- Berghofer Weg: kurze starke Steigung und Gefälle (ca. 20%)	CS 30655,4186 30719,4172 30749,4165 30794,4154 30847,4137 30871,4111
 #: by: Niels Weber:
 Schwedter Str. (Lichtenrade): recht steiler Anstieg	St; 10913,96 10974,-83
 Steigung	St; 62890,104520 63519,103759 63525,103555
@@ -142,17 +140,9 @@ Steigung	St; 62065,106668 61950,106669 61362,106674
 Steigung	St; 44623,168664 44733,168449
 Steigung	St; 44823,168168 44808,168229 44786,168321 44733,168449
 Steigung, ca. 5%	St; 44942,168115 44920,168062 44835,167856 44864,167745
-#: by: Jürgen Schulze (jochen): vvv
-#: XXX mit Barometer abfahren --- einige Höhenpunkte existieren, aber vielleicht gibt es zusätzliche Steigungen vvv
-Hügelige Strecke	CS 30124,4664 30254,4692 30369,4697 30478,4715 30527,4724 30588,4720 30636,4717 30686,4731 30810,4765 30857,4770 30913,4766 31011,4750 31118,4768 31209,4781 31224,4775 31311,4742
-Hügelige Strecke	CS 31339,4726 31364,4711 31424,4658
-#: XXX ^^^
-#: by: ^^^
-kurze starke Steigung	St; 31311,4742 31339,4726
+# REMOVED (alle relevanten Höhenpunkte erfasst) --- #: by: Jürgen Schulze (jochen): vvv --- #: XXX mit Barometer abfahren --- einige Höhenpunkte existieren, aber vielleicht gibt es zusätzliche Steigungen vvv --- Hügelige Strecke	CS 30124,4664 30254,4692 30369,4697 30478,4715 30527,4724 30588,4720 30636,4717 30686,4731 30810,4765 30857,4770 30913,4766 31011,4750 31118,4768 31209,4781 31224,4775 31311,4742 -- Hügelige Strecke	CS 31339,4726 31364,4711 31424,4658 --- #: XXX ^^^ --- #: by: ^^^ --- kurze starke Steigung	St; 31311,4742 31339,4726
 # REMOVED --- Steigung	St; 30950,3985 30854,3947
-#: XXX_indoor: Höhenpunkte existieren, aber evtl. kann die Steigungsstrecke noch enger gefasst werden (ab Kageler Weg)
-#: XXX evtl. für bessere Daten nochmal mit Barometer abfahren
-Steigung	St; 31440,4353 31591,4361
+# REMOVED --- #: XXX_indoor: Höhenpunkte existieren, aber evtl. kann die Steigungsstrecke noch enger gefasst werden (ab Kageler Weg) --- #: XXX evtl. für bessere Daten nochmal mit Barometer abfahren --- Steigung	St; 31440,4353 31547,4359 31591,4361
 Steigung	St; 30821,3951 30826,3991
 # REMOVED --- Steigung	St; 30821,3951 30814,3875
 #: XXX_indoor: Höhenpunkt am Fuß per Barometerdaten ausrechnen
@@ -181,7 +171,7 @@ Steigung, ca. 5%	St; 48006,99622 48095,99576
 # 
 #: by: Fred Wulff:
 #: XXX_indoor Höhenpunkte mit Barometerdaten ausrechnen
-leichte Steigung	St; 30910,3824 31032,3847 31206,3874
+leichte Steigung	St; 30910,3824 31032,3847 31210,3873
 # 
 #: by: Tim (...Tsubasa...):
 Steigung	St; 3280,21477 3375,21230

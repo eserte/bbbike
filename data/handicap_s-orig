@@ -80,9 +80,8 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 #: note: ab Glinkastr. nur ungef‰hr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
+# REMOVED (reported by wosch) ---- #: osm_watch: way id="25185423" version="14" --- Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
 #: last_checked: 2013-05-24 vvv
-#: osm_watch: way id="25185423" version="14"
-Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
 #: osm_watch: way id="4597205" version="6"
 Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
 #: last_checked ^^^
@@ -187,9 +186,7 @@ Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732
 # 
 ### Kˆpenick ###
 # 
-#: last_checked: 2012-10-21
-#: next_check: 2012-11-01
-Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22478,6041 22544,6037 22539,5956
+# REMOVED --- #: last_checked: 2012-10-21 --- #: next_check: 2012-11-01 --- Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22478,6041 22544,6037 22539,5956
 # 
 ### Charlottenburg ###
 # 
@@ -616,8 +613,8 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14454 19818,14064
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur f¸r Fuﬂg‰nger erlaubt	q4 12699,5909 13064,5953
-(Bellevuepark): einige Fuﬂg‰nger	q1 22798,5731 22796,5640 22796,5631 22794,5583 22855,5554 22835,5452 22851,5321
-(Bellevuepark): nur f¸r Fuﬂg‰nger erlaubt	q4 22794,5583 22733,5569 22701,5428 22628,5340
+(Bellevuepark): einige Fuﬂg‰nger	q1 22798,5731 22796,5640 22796,5631 22787,5582 22855,5554 22835,5452 22851,5321
+(Bellevuepark): nur f¸r Fuﬂg‰nger erlaubt	q4 22787,5582 22733,5569 22701,5428 22628,5340
 Walter-Nicklitz-Promenade: eng und kurvenreich, Fuﬂg‰nger	q2 8290,15304 8329,15397 8308,15409 8312,15470
 Gropiusstr.: Fuﬂg‰nger auf dem Uferweg	q1 8389,16214 8534,16355 8543,16364
 Pankeweg: Fuﬂg‰nger	q1 8286,14635 8322,14687 8292,14734 8275,14869 8264,14902
@@ -1578,6 +1575,11 @@ Gleisdreieckpark, Einfahrt L¸tzowstr.: Bordstein	q2 8236,10623 8199,10634
 (Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 14810,16282 14721,16360
 (Dohnagestell - Tangastr.): Fuﬂg‰nger	q2 5802,15399 5889,15457 5961,15562
 Arnimplatz: Fuﬂg‰nger	q2 10606,16319 10739,16146
+(Weg im Salvador-Allende-Viertel): mehrere Dr‰ngelgitter im Parkplatzbereich, kann auf geeigneten Parkplatzzufahrten umfahren werden	q3 22888,4184 22957,4264
+(Weg im Salvador-Allende-Viertel): Fuﬂg‰nger	q2 22957,4264 23016,4326 23025,4358 23036,4420 23051,4461 23077,4512 23109,4554 23166,4585 23279,4599
+#: XXX_prog f¸r Anh‰nger aber q1 oder so
+(Weg im Salvador-Allende-Viertel): eine Bodenschwelle, kann umfahren werden	q0 23279,4599 23445,4596
+(Weg im Salvador-Allende-Viertel - Am Berg): Fuﬂg‰nger	q2 23051,4461 23010,4506
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -1600,7 +1602,8 @@ Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,
 Erdmann-Graeser-Weg: Bordsteinkante, Fuﬂg‰nger	q1 -833,3619 -935,3706 -961,3737 -1013,3804
 #: by: Erik Boﬂ: vvv
 Aﬂmannstr.: Bodenschwellen	q1 25039,5295 25039,5304 25048,5727
-(Fuﬂweg parallel zur Aﬂmannstr.): wenig Fuﬂg‰nger	q1 25002,5296 25009,5593
+#: XXX_prog BS (Nordende)
+(Fuﬂweg parallel zur Aﬂmannstr.): wenig Fuﬂg‰nger, Bordstein	q1- 25002,5296 25009,5593
 #: by ^^^
 #: by: Katja (...lindner):
 Beckmannstr.: eng	q1 11670,-1973 11681,-1951 11666,-1825 11657,-1721
