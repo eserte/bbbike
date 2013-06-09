@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeSalesman.pm,v 1.11 2008/02/28 20:56:35 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2008,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -29,7 +28,9 @@ use Msg qw(frommain);
 }
 
 use strict;
-use vars qw($button_image $salesman_cursor $cant_salesman $salesman);
+use vars qw($button_image $salesman_cursor $cant_salesman $salesman $use_algorithm);
+
+$use_algorithm = 'perfect' if !defined $use_algorithm;
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -156,7 +157,11 @@ sub map_mode_activate {
 		  main::IncBusy($main::top, -except => {$t=>1});
 		  #$t->Busy;
 		  eval {
-		      my(@path) = $salesman->best_path;
+		      my $best_path_method = (
+					      $use_algorithm eq 'bitonictour-closed' ? 'best_path_bitonic_tour_closed' :
+					      'best_path'
+					     );
+		      my(@path) = $salesman->$best_path_method;
 		      if (@path) {
 			  push @main::search_route_points, [$path[0], main::POINT_MANUELL()];
 			  foreach (@path[1..$#path]) {
@@ -176,6 +181,15 @@ sub map_mode_activate {
 		  }
 	      }),
 	    );
+    if ($main::advanced) {
+	Tk::grid($t->Radiobutton(-text => 'Perfect algorithm',
+				 -variable => \$use_algorithm,
+				 -value => 'perfect'));
+	Tk::grid($t->Radiobutton(-text => 'Bitonic tour (closed)',
+				 -variable => \$use_algorithm,
+				 -value => 'bitonictour-closed'));
+    }
+
     $t->bind('<<CloseWin>>' => sub { $t->destroy });
     $t->protocol('WM_DELETE_WINDOW' => sub { $t->destroy });
     $t->Popup(@main::popup_style);

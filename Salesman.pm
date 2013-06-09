@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.19 2007/12/27 11:46:23 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2003,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2003,2006,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -312,6 +311,72 @@ sub best_path_list_permutor {
     }
 }
 
+sub best_path_bitonic_tour_closed {
+    my($self) = @_;
+    my $progress  = $self->{Progress};
+    $main::escape = 0;
+
+    if (!eval { require Algorithm::TravelingSalesman::BitonicTour; 1 }) {
+	die "The module Algorithm::TravelingSalesman::BitonicTour is not available";
+    }
+
+    if ($progress) {
+	$progress->Init(-label => "Abbruch mit Esc");
+    }
+
+    my $bittour = My::Algorithm::TravelingSalesman::BitonicTour->new;
+    my $net = $self->{Net};
+    my @search_args = ($self->{SearchArgs} ? %{ $self->{SearchArgs} } : ());
+    $self->{Distances} = {};
+    my $distances = $self->{Distances};
+    $bittour->{_get_distance} = sub {
+	my($x1,$y1,$x2,$y2) = @_;
+	my $p1 = "$x1,$y1";
+	my $p2 = "$x2,$y2";
+	my $dist = $distances->{$p1}{$p2};
+	return $dist if defined $dist;
+	my(@res) = $net->search($p1, $p2, @search_args);
+	if (@res) {
+	    my $len = $res[1];
+	    if ($len == 0) {
+		warn "Distance between $p1 and $p2 is 0, which is not allowed, adjusting...";
+		$len = 0.00001;
+	    }
+	    $distances->{$p1}{$p2} = $len;
+	    return $len;
+	} else {
+	    warn "Cannot get distance between $p1 and $p2";
+	    0.00001; # otherwise BitonicTour.pm will croak
+	}
+    };
+
+    for my $p (@{ $self->{ProcessPoints} }) {
+	$bittour->add_point(split /,/, $p);
+    }
+
+    my(@res_points);
+    (undef, @res_points) = $bittour->solve;
+    @res_points = map { join(",", @$_) } @res_points;
+
+    {
+	my $start = $self->{ProcessPoints}[0];
+	for my $i (0 .. $#res_points) {
+	    if ($res_points[$i] eq $start) {
+		if ($i > 0) {
+		    @res_points = @res_points[$i..$#res_points,0..$i];
+		}
+		last;
+	    }
+	}
+    }
+
+    if ($progress) {
+ 	$progress->Finish;
+    }
+
+    @res_points;
+}
+
 sub _fact {
     if ($_[0] < 2) {
 	$_[0];
@@ -324,6 +389,48 @@ if (defined &Algorithm::Permute::permute) {
     *best_path = \&best_path_algorithm_permute;
 } else {
     *best_path = \&best_path_list_permutor;
+}
+
+{
+    package My::Algorithm::TravelingSalesman::BitonicTour;
+    # No "require" here, this needs to be optional.
+    our @ISA = qw(Algorithm::TravelingSalesman::BitonicTour);
+
+    # Overwriting delta() to use precalculated distance net instead of
+    # simple euclidean distance.
+    sub delta {
+	my($self, $p1, $p2) = @_;
+	my($x1, $y1) = $self->coord($p1);
+	my($x2, $y2) = $self->coord($p2);
+	$x1 = $self->{_orig_x}->{$x1}->{$y1};
+	$x2 = $self->{_orig_x}->{$x2}->{$y2};
+	$self->{_get_distance}->($x1,$y1,$x2,$y2);
+    }
+
+    # Overwriting add_point() to not croak on duplicate x values, but
+    # slightly adjust them.
+    sub add_point {
+	my($self, $x, $y) = @_;
+	# Skip Regexp::Common validation here found in the original add_point()
+	my $_points = $self->_points;
+	my $orig_x = $x;
+	if (exists $_points->{$x}) {
+	SEARCH_FOR_NEW_X: {
+		for(1..1000) {
+		    $x+=0.00001;
+		    if (!exists $_points->{$x}) {
+			last SEARCH_FOR_NEW_X;
+		    }
+		}
+		die "Cannot find new x value for $x/y. BitonicTour cannot be calculated";
+	    }
+	}
+
+	$self->_sorted_points(undef);   # clear any previous cache of sorted points
+	$_points->{$x} = $y;
+	$self->{_orig_x}->{$x}->{$y} = $orig_x;
+	return [$x, $y];
+    }
 }
 
 1;
