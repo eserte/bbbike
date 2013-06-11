@@ -5012,7 +5012,9 @@ Hausvaterweg: m‰ﬂiger bis schlechter Beton	Q2+ 20136,18291 20120,18306 19994,183
 Hellersdorfer Str.: schlechtes Kopfsteinpflaster	Q3 19685,18259 19734,18181 19820,18091
 Hellersdorfer Weg: Kopfsteinpflaster, mit Banketten	Q2+ 19820,18091 20159,17870
 Hellersdorfer Weg: Verbundsteinpflaster	Q1 20159,17870 20443,17698
-Hellersdorfer Weg: wassergebundene Decke	Q1 20443,17698 20657,17543
+#: XXX liegt hier tats‰chlich Verbundsteinpflaster?
+Hellersdorfer Weg: Verbundsteinpflaster	Q1 20443,17698 20569,17607
+Hellersdorfer Weg: wassergebundene Decke	Q1 20569,17607 20657,17543
 Greizer Str. (Marzahn): holpriges Verbundsteinpflaster	Q2+ 20818,18075 20646,18129 20616,18126
 (Geraer Ring - Eichenallee): Kleinsteinpflaster	Q1 20778,17996 20781,17958 20799,17941 20786,17893 20804,17848
 (An der Kohlbeke): wassergebundene Decke	Q1 20728,17670 20657,17543
@@ -6346,7 +6348,7 @@ Schragenfeldstr.: Beton	Q0 20980,14914 21027,14886 21083,14878 21097,14907 21097
 Klausdorfer Str.: Asphalt	Q0 23126,15979 23178,15968 23271,15948
 Klausdorfer Str.: Asphalt	Q0- 23271,15948 23267,15928 23243,15820
 Klausdorfer Str.: Asphalt	Q0 23243,15820 23218,15671
-Klausdorfer Str.: Asphalt	Q0 23267,15928 23359,15910
+Klausdorfer Str.: Asphalt	Q0 23267,15928 23358,15907
 Klausdorfer Str.: Asphalt	Q0 23178,15968 23151,15837 23243,15820
 Hasenholzer Allee: Asphalt	Q0 21903,15174 21927,15303 21942,15388 21951,15442 21961,15496 21976,15578
 Bollersdorfer Weg: Asphalt	Q0 21809,15186 21834,15319 21849,15404
@@ -13401,7 +13403,6 @@ Blenheimstr.: Beton	Q0 20907,15313 20904,15178
 #: by: knut B. (flanter), mike: vvv
 Mittenwalder Str. (Hellersdorf): guter Beton	Q1 23411,15632 23441,15780 23465,15882 23468,15900 23562,15882
 Mittenwalder Str. (Hellersdorf): guter Beton	Q1 23562,15882 23570,15854 23548,15753 23441,15780
-Mittenwalder Str. (Hellersdorf): guter Beton	Q1 23465,15882 23359,15910
 #: by: ^^^
 # 
 #: by: stefan ruedel: vvv

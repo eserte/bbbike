@@ -683,6 +683,7 @@ Leberstr.	NH 7582,8123 7578,8358 7574,8596 7563,8871
 #: XXX evtl. wird die Straße umbenannt, neuer Name: Karl-Heinrich-Ulrichs-Str.
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20121015.1110.376564.html
 #: next_check: 2013-06-15
+#: priority: #A
 Einemstr.	H 7033,10396 7003,10513 6985,10597 6972,10665 6918,10854
 Nollendorfplatz	H 7033,10328 7033,10396
 Kleiststr. (Schöneberg)	HH 6851,10416 7033,10396
@@ -8039,8 +8040,8 @@ Akazienweg (Wartenberg)	N 19043,18876 19125,19130 19190,19340 19248,19525
 Grüne Trift (Wartenberg)	N 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18074,19227
 Hellersdorfer Str. (Falkenberg)	N 19685,18259 19734,18181 19820,18091
 Hellersdorfer Weg	NN 19820,18091 20159,17870
-Hellersdorfer Weg	N 20159,17870 20443,17698
-Hellersdorfer Weg	NN 20443,17698 20657,17543
+Hellersdorfer Weg	N 20159,17870 20443,17698 20569,17607
+Hellersdorfer Weg	NN 20569,17607 20657,17543
 Köthener Str. (Marzahn)	N 20485,17784 20542,17911 20576,17994 20591,18037 20616,18126 20544,18279
 Geraer Ring	N 20591,18037 20746,17984 20778,17996 20818,18075 20866,18174 20911,18258 20932,18328 20909,18379 20706,18269 20734,18219 20866,18174
 (Geraer Ring - Eichenallee)	NN 20778,17996 20781,17958 20799,17941 20786,17893 20804,17848
@@ -11345,9 +11346,6 @@ Michendorfer Str. (Hellersdorf)	N 22811,15753 22787,15639 22764,15515
 Zossener Str. (Hellersdorf)	H 22771,16194 22708,15794 22811,15753 22883,15740 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594 23868,15633
 Mittenwalder Str. (Hellersdorf)	N 23411,15632 23441,15780 23465,15882 23468,15900 23562,15882
 Mittenwalder Str. (Hellersdorf)	N 23562,15882 23570,15854 23548,15753 23441,15780
-#: XXX wurde dieser Abschnitt zu "Stephan-Born-Str." umbenannt?
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012
-Mittenwalder Str. (Hellersdorf)	N 23465,15882 23359,15910
 Teupitzer Str. (Hellersdorf)	N 23568,15603 23573,15627 23575,15639 23587,15699 23663,15682 23689,15804 23625,15818 23633,15866 23643,15911 23843,15869
 (Teupitzer Str. - Zossener Str./Kastanienallee)	NN 23573,15627 23617,15594
 Luckenwalder Str. (Hellersdorf)	N 22708,15794 22638,15745 22592,15548
@@ -15695,10 +15693,25 @@ Mauerstr. (Spandau)	N -3275,14114 -3316,14169
 Mauerstr. (Spandau)	NN -3316,14169 -3409,14241
 Kammerstr. (Spandau)	N -3026,14358 -3060,14380 -3110,14408
 Klausdorfer Str.	N 23126,15979 23178,15968 23271,15948 23267,15928 23243,15820 23218,15671
-#: XXX wurde dieser Abschnitt zu "Stephan-Born-Str." umbenannt?
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012
-Klausdorfer Str.	N 23267,15928 23359,15910
 Klausdorfer Str.	N 23178,15968 23151,15837 23243,15820
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012 (Umbenennung) vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2012 vvv
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036818730666/818730666/00065804/04-Anlagen/02/vzb0452_IV-B_Plan_10_43_Auswertung_Beteilig_Oe.pdf (Lage, Umbenennung) vvv
+#: oldname: Klausdorfer Str.
+#: ignore_oldname_file: yes
+Stephan-Born-Str.	N 23267,15928 23358,15907
+#: oldname: Mittenwalder Str. (Hellersdorf)
+#: ignore_oldname_file: yes
+#: XXX  Qualität dieses Abschnitts?
+Stephan-Born-Str.	N 23358,15907 23437,15889 23465,15882
+#: XXX fehlt auch bei Berlin.coords.data, PLZ=12629
+#: XXX siehe auch den anderen Abschnitt der Straße
+#: note: Privatstraße
+#: XXX: Qualität dieses Abschnitts?
+Stephan-Born-Str.	N 23271,15948 23280,15978 23450,15943 23437,15889
+#: by ^^^
+#: by ^^^
+#: by ^^^
 Am Rehwechsel	N 1304,537 1447,561 1525,581
 (Am Rehwechsel - Dahlemer Weg)	NN 1525,581 1641,616 1655,666
 Laehr'scher Jagdweg	N 1482,359 1447,561 1377,897

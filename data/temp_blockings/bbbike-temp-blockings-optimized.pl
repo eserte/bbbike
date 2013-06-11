@@ -3207,20 +3207,7 @@ userdel	q2::inwork 5268,11274 5247,10992
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
-         'until' => 1370815199,
-         'text' => 'Fahrbahnsanierung Cauerstraße: Einbahnstraße, offen in Richtung Otto-Suhr-Allee, auch Einschränkungen in der Guerickestraße, von Montag, dem 29.04.2013, bis voraussichtlich Donnerstag, dem 09.06.2013',
-         'from' => 1367100000,
-         'id' => 2423,
-         'data' => '#: source_id: IM_019774 vvv
-userdel	q4::inwork; 4359,11979 4441,12185 4518,12350 4598,12501
-userdel auto	3 4601,12310 4518,12350 4358,12365
-userdel auto	3 4358,12365 4518,12350 4601,12310
-#: source_id ^^^
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -3308,26 +3295,8 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_019934',
-         'until' => 1370815199,
-         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, am 8. und 9. Juli 2013',
-         'from' => 1370556000,
-         'id' => 2439,
-         'data' => 'userdel	q4::temp 5475,10808 5351,10760 5229,10716 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_019938',
-         'until' => 1370836800,
-         'text' => 'Str. des 17. Juni zwischen Yitzak-Rabin-Str. und Ebertstr. wegen Velothon gesperrt ab 07.06.2013 6 Uhr, bis 10.06.2013 6:00 Uhr ',
-         'from' => 1370491200,
-         'id' => 2440,
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130607.1245.385821.html',
          'until' => 1373925599,

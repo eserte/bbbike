@@ -115,7 +115,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-06-06
+#: last_checked: 2013-06-10
 #: check_frequency: 90d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -359,6 +359,11 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5232
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45-181-136818730670/818730670/00065593/93-Anlagen/02/vzb0444_IV-B_Plan_XXIII_9b_Auswertung_Beteig_B.pdf
+#: next_check: 2014-06-10
+Planstraße zwischen Theodorstr. und Pilgramer Str.: Straße in Planung, Qualität?	? 24899,11017 25124,11022
+# 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036234258287/234258287/00057951/51-Anlagen/03/Anlage1zumDV_130510_-DUD-VHB-001-LP.PDF
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4531
 #: next_check: 2013-10-01
@@ -564,12 +569,6 @@ Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,608
 #: last_checked ^^^
 #: by: ^^^
 #: by: ^^^
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2012
-#: XXX fehlt auch bei Berlin.coords.data, PLZ=12629
-#: XXX siehe auch den anderen Abschnitt der Straße
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2012
-Stephan-Born-Str.: genaue Lage? Privatstraße?	?::projected 23307,15956 23313,16011 23447,15979 23442,15927
 # 
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_51%5B1%5D.pdf
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.0740.385616.html (Spatenstich)
@@ -3380,8 +3379,11 @@ Am Rodelberg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich 
 Carpinusweg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 759,5174 858,5085
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120727.1045.372992.html
-#: next_check: 2012-11-01 (wird noch dieses Jahr realisiert)
-Kolonie Frühauf: Radfahrverbindung wurde saniert, welchen Belag hat der Weg jetzt?	? 3645,19921 4076,20268 4088,20301
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130610.1230.385879.html
+#: XXX Bauarbeiten, der Weg bekommt eine neue Asphaltdecke -> Asphalt, Q0
+#: next_check: 2013-07-10 (evtl. automatisch ändern?)
+#: priority: #A
+Kolonie Frühauf: Radfahrverbindung wird saniert	? 3645,19921 4076,20268 4088,20301
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
