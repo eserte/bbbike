@@ -48,8 +48,10 @@ sub new {
 
     if (!-d $rootdir) {
 	require File::Path;
-	File::Path::mkpath($rootdir)
-		or die "Can't create $rootdir: $!";
+	File::Path::mkpath($rootdir);
+	if (!-d $rootdir) {
+	    die "Can't create $rootdir: $!";
+	}
     }
 
     bless {
