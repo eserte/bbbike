@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: check_crossings,v 1.9 2008/12/07 19:05:53 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2009,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -44,15 +43,14 @@ if (!GetOptions("o=s" => \$outfile,
 		    push @ignore_rx, map { '^' . quotemeta($_) . '$' } @s;
 		},
 		"ignorerx=s" => sub {
-		    my @s = split /,/, $_[1];
-		    push @ignore_rx, @s;
+		    push @ignore_rx, $_[1];
 		},
 		"autoflush" => \$autoflush,
 	       )) {
     die <<EOF;
 usage: $0 [-v | -v-if-interactive] [-autoflush] [-o outfile]
         [-encoding encoding]
-	[-ignore name,name,...] [-ignorerx namerx,namerx,...]
+	[-ignore name,name,...] [-ignorerx namerx]
 	[-against file | -included-brunnels] strassen ...
 EOF
 }
