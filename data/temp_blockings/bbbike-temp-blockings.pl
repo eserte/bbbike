@@ -1603,7 +1603,7 @@ EOF
        text  => 'Hussitenstr. (Mitte) in Richtung Bernauer Str. zwischen Bernauer Str. und Usedomer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 9112,14771 9250,14658 9338,14587 9472,14478
+userdel	q4; 9108,14777 9250,14658 9338,14587 9472,14478
 EOF
      },
      { from  => 1109628414, # 2005-02-28 23:06
@@ -4777,7 +4777,7 @@ userdel	2::temp 8021,11636 8016,11770 8172,11679
 userdel	2::temp 7816,12150 7875,12363
 userdel	2::temp 7504,11512 7382,11588 7163,11738 7287,11763 7535,11677 7606,11629 7621,11620 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8016,11770
 userdel	2::temp 7669,11586 7711,11558
-userdel	2::temp 8022,12016 8016,11770 7801,11875 7717,11918 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 7073,11798 7163,11738 6980,11583 6809,11570
+userdel	2::temp 8022,12016 8016,11770 7801,11875 7717,11918 7663,11946 7553,11887 7223,11897 7182,11870 7173,11864 7073,11798 7163,11738 6980,11583 6809,11570
 userdel	2::temp 7039,12314 7383,12095
 userdel	2::temp 7073,11798 6778,11742
 userdel	2::temp 8354,12416 8546,12279
@@ -15163,7 +15163,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013844',
        data  => <<EOF,
-userdel	2::temp 5253,12079 5231,12122 5181,12195 5243,12303 5325,12234
+userdel	2::temp 5231,12122 5181,12195 5243,12303 5325,12234
 userdel	2::temp 5181,12195 5133,12240 5203,12387 5243,12303
 EOF
      },
@@ -18002,7 +18002,7 @@ userdel	2::temp 7039,12314 7383,12095
 userdel	2::temp 7795,11823 7777,11787
 userdel	2::temp 6778,11742 7073,11798 6809,11979
 userdel	2::temp 8091,11992 8089,12041
-userdel	2::temp 8018,12131 7827,12105 7777,12098 7460,12054 7663,11946 7570,11855 7223,11897 7182,11870 7173,11864 7073,11798 7163,11738 6980,11583
+userdel	2::temp 8018,12131 7827,12105 7777,12098 7460,12054 7663,11946 7553,11887 7223,11897 7182,11870 7173,11864 7073,11798 7163,11738 6980,11583
 userdel	2::temp 7460,12054 6857,11992
 EOF
      },
@@ -20687,7 +20687,7 @@ EOF
        text  => 'Hussitenstr.: Fahrbahn zwischen Stralsunder Str. und Usedomer Str. gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 9112,14771 9250,14658
+userdel	q4::inwork 9108,14777 9250,14658
 EOF
      },
      { from  => 1346825940, # 2012-09-05 08:19
@@ -21132,15 +21132,16 @@ userdel	q2::inwork 5268,11274 5247,10992
 EOF
      },
      { from  => 1367100000, # 2013-04-28 00:00
-       until => 1370815199, # 2013-06-09 23:59
-       text  => 'Fahrbahnsanierung Cauerstraße: Einbahnstraße, offen in Richtung Otto-Suhr-Allee, auch Einschränkungen in der Guerickestraße, von Montag, dem 29.04.2013, bis voraussichtlich Donnerstag, dem 09.06.2013',
+       until => $isodate2epoch->("2013-06-18 15:00:00"), # 1370815199, # 2013-06-09 23:59
+       text  => 'Fahrbahnsanierung Cauerstraße: Einbahnstraße, offen in Richtung Otto-Suhr-Allee, auch Einschränkungen in der Guerickestraße, von Montag, dem 29.04.2013, bis Mitte Juni',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
        data  => <<EOF,
 #: source_id: IM_019774 vvv
-userdel	q4::inwork; 4359,11979 4441,12185 4518,12350 4598,12501
-userdel auto	3 4601,12310 4518,12350 4358,12365
-userdel auto	3 4358,12365 4518,12350 4601,12310
+userdel	q4::inwork; 4359,11979 4441,12185 4518,12350
+# REMOVED (dieser Abschnitt für Anlieger befahrbar) --- userdel	q4::inwork; 4518,12350 4598,12501
+# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4601,12310 4518,12350 4358,12365
+# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4358,12365 4518,12350 4601,12310
 #: source_id ^^^
 EOF
      },
@@ -21232,12 +21233,11 @@ userdel	q4::inwork; 25552,4829 25720,4832 25802,4823 25948,4823 26086,4861 26237
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Tegeler Str.: zwischen Triftstr. und Schlegelstr. Bauarbeiten, Ausweichen auf den Gehweg',
+       until => 1371066874, # undef, # XXX
+       text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-06-07
-#: XXX wann sind die Bauarbeiten beendet?
+# REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
 userdel	q4::inwork; 7085,15226 7131,15109
 EOF
      },
@@ -21350,6 +21350,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130607.1245.385821.html',
        data  => <<EOF,
 userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15797,4456
+EOF
+     },
+     { from  => 1349931600, # 2012-10-11 07:00
+       until => 1375279200, # 2013-07-31 16:00
+       text  => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Ende Juli 2013',
+       type  => 'handicap',
+       source_id => 'INKO_115299',
+       data  => <<EOF,
+userdel	q2::inwork; 6572,14639 6299,14660
 EOF
      },
     );

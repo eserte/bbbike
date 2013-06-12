@@ -3207,7 +3207,21 @@ userdel	q2::inwork 5268,11274 5247,10992
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
+         'until' => 1371560400,
+         'text' => 'Fahrbahnsanierung Cauerstraße: Einbahnstraße, offen in Richtung Otto-Suhr-Allee, auch Einschränkungen in der Guerickestraße, von Montag, dem 29.04.2013, bis Mitte Juni',
+         'from' => 1367100000,
+         'id' => 2423,
+         'data' => '#: source_id: IM_019774 vvv
+userdel	q4::inwork; 4359,11979 4441,12185 4518,12350
+# REMOVED (dieser Abschnitt für Anlieger befahrbar) --- userdel	q4::inwork; 4518,12350 4598,12501
+# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4601,12310 4518,12350 4358,12365
+# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4358,12365 4518,12350 4601,12310
+#: source_id ^^^
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'until' => undef,
@@ -3226,17 +3240,7 @@ userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Tegeler Str.: zwischen Triftstr. und Schlegelstr. Bauarbeiten, Ausweichen auf den Gehweg',
-         'from' => undef,
-         'id' => 2430,
-         'data' => '#: last_checked: 2013-06-07
-#: XXX wann sind die Bauarbeiten beendet?
-userdel	q4::inwork; 7085,15226 7131,15109
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.suppeundmucke.de/',
@@ -3306,6 +3310,16 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'data' => 'userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15797,4456
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_115299',
+         'until' => 1375279200,
+         'text' => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Ende Juli 2013',
+         'from' => 1349931600,
+         'id' => 2442,
+         'data' => 'userdel	q2::inwork; 6572,14639 6299,14660
+',
+         'type' => 'handicap'
        }
      
 );

@@ -1829,7 +1829,8 @@ tragen (Treppe)	0:30 9983,16561
 #: by: rjoop
 #: note: wahrscheinlich ebenso mindestens 50 Stufen
 tragen (Treppe)	0:30 9982,16527
-tragen (Treppe)	0:30 3756,12614
+tragen (Treppe, 6+7 Stufen)	0:30 3762,12599
+tragen (Treppe, 3 Stufen)	0:10 3810,12600
 tragen (Treppe)	0:30 4334,12551
 #: note: http://www.flickr.com/photos/berolino/524778263/
 tragen (Jungfernbrücke, 10 Stufen)	0:15 10212,12002
@@ -2540,7 +2541,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 # REMOVED --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
 # REMOVED (für Radfahrer befahrbar) --- #: last_checked: 2013-04-16 --- #: check_frequency: 7d --- #: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel) --- Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518
 # 
-#: last_checked: 2013-01-05
+#: last_checked: 2013-06-12
 #: next_check: 2014-09-01
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: osm_watch: way id="22792488" version="5"

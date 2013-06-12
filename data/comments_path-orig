@@ -48,7 +48,7 @@ abgehender Waldweg ist etwas versteckt, Bordstein muss überquert werden	CP2; 208
 #: XXX_prog: RL:ja, GPS:nein (gehört das nicht zu comments_misc?)
 Zugang durch Betonabsperrung	CP2; 21222,12501 21190,12515
 #: XXX_prog: RL:ja, GPS:nein
-am Gartenbauamt abbiegen	CP2; 7663,11946 7570,11855
+am Gartenbauamt abbiegen	CP2; 7663,11946 7553,11887
 Schillerstr. Richtung Ernst-Reuter-Platz: zunächst linken Gehweg bis zur Ampel am Ernst-Reuter-Platz benutzen	CP; 4574,11587 4900,11626 4838,11697
 Hardenbergstr. - Schillerstr.: bereits an der Knesebeckstraße auf den linken Gehweg wechseln	PI; 4919,11605 4900,11626 4574,11587
 # REMOVED (Fahrbahn geteilt) --- Torstr. - Weydemeyerstr.: bereits am Mollknoten die Straßenseite wechseln	PI; 11160,13492 11111,13518 11079,13492
@@ -63,11 +63,11 @@ Am Karlsbad - Potsdamer Str.: entweder Fußgängerampel am Schöneberger Ufer oder 
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
 Fußgängerampel auf der linken Seite benutzen	CP; 9929,13660 9918,13733 9799,13686
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der linken Seite zum Überqueren der Torstr. benutzen	CP; 9929,13660 9918,13733 9873,13872 9810,14066
+Fußgängerampel auf der linken Seite zum Überqueren der Torstr. benutzen	CP; 9929,13660 9918,13733 9873,13872
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der rechten Seite zum Überqueren der Torstr. benutzen	CP; 9810,14066 9873,13872 9918,13733 9929,13660
+Fußgängerampel auf der rechten Seite zum Überqueren der Torstr. benutzen	CP; 9873,13872 9918,13733 9929,13660
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der rechten Seite benutzen	CP; 9810,14066 9873,13872 9918,13733 10177,13766
+Fußgängerampel auf der rechten Seite benutzen	CP; 9873,13872 9918,13733 10177,13766
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Warschauer Str. benutzen	CP; 13467,11778 13651,11731 13895,11663
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
@@ -103,7 +103,7 @@ Gervinusstr./Lewishamstr.: linken Gehweg bis zur Ampel an der Mommsenstr. benutz
 #: XXX_prog: RL:ja, GPS:nein
 Tiergarten: rechts des Neuen Sees halten	CP2; 5900,11913 5858,11863
 #: XXX_prog: RL:ja, GPS:nein
-Tiergarten: links des Neuen Sees halten	CP; 5900,11913 5907,11874 5933,11775
+Tiergarten: links des Neuen Sees halten	PI; 5900,11913 5907,11874 5933,11775
 Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die Straßenseite wechseln	PI; 6825,11486 6851,11346 7103,11247
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4783,8557 4784,8508 4960,8440
 # REMOVED (Richtungsfahrbahnen!) --- #: XXX_prog Bei den beiden nächsten Einträgen (Am Volkspark) stand hier "PI:35;". --- #: XXX_prog Diese Schreibweise (verlorene Zeit in Sekunden) wird noch nirgendwo unterstützt, --- #: XXX_prog deshalb wieder zu "PI;" geändert. --- #: XXX_prog Die verlorene Zeit entspricht etwa 150m bei 15 km/h --- #: XXX_prog evtl. lohnt hier der Einsatz von routing_helper? Auf einer Straßenseite in beiden Richtungen würde reichen. Allerdings bräuchte man eine Routinganweisung "U-Turn", die es noch nicht gibt. --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	CP; 5320,8456 5433,8407 5598,8267 --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	CP; 5598,8267 5438,8402 5433,8407 5320,8456 --- Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5399,8344 5433,8407 5320,8456 --- #: XXX_prog: falls obiges implementiert mit routing_helper wird, braucht man hier vielleicht nichts zu machen --- oder doch, je nach Labelling? --- Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	CP; 5598,8267 5433,8407 5399,8344

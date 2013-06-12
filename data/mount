@@ -348,7 +348,6 @@ Steigung 3.3% (Kynaststr.)	St; 14950,11049 14928,10970
 Steigung 3.3% (Kynaststr.)	St; 14928,10970 14902,10859
 Steigung 3.3% (Hohenberger Steig)	St; 31500,4539 31635,4509
 Steigung 3.3% (Germanenstr. (Altglienicke))	St; 20347,1398 20365,1394
-Steigung 3.3% (Feldstr. (Gesundbrunnen))	St; 9048,14681 9112,14771
 Steigung 3.3% (Benekendorffstr.)	St; 5357,23004 5472,23081
 Steigung 3.3% (Am Großen Wannsee)	St; -5815,1649 -5645,1504
 Steigung 3.3% (Am Großen Wannsee)	St; -5645,1504 -5588,1454
@@ -374,6 +373,7 @@ Steigung 3.2% (Hugo-Vogel-Str.)	St; -6249,1332 -6304,1564
 Steigung 3.2% (Havelchaussee)	St; -3536,7856 -3531,7825
 Steigung 3.2% (Friedenstr. (Wannsee))	St; -7332,662 -7368,794
 Steigung 3.2% (Filandastr.)	St; 5681,5743 5683,5672
+Steigung 3.2% (Feldstr. (Gesundbrunnen))	St; 9048,14681 9108,14777
 Steigung 3.2% (Drössestr.)	St; 21169,1279 21078,1168
 Steigung 3.2% (Brentanostr.)	St; 4027,6088 4010,5888
 Steigung 3.2% (Bernauer Str. (Gesundbrunnen, Mitte))	St; 9472,14478 9621,14624
@@ -1182,7 +1182,6 @@ Steigung 1.7% (Anklamer Str.)	St; 10037,14379 10101,14455
 Steigung 1.7% (Am Fölzberg)	St; 6865,23103 6887,23070
 Steigung 1.7% (Alemannenstr. (Nikolassee))	St; -3452,2868 -3509,2817
 Steigung 1.7% (Alemannenstr. (Nikolassee))	St; -3360,2917 -3452,2868
-Steigung 1.7% (Ackerstr. (Mitte, Gesundbrunnen))	St; 9048,14681 8953,14758
 Steigung 1.7% ((zur Andreas-Rabe-Siedlung))	St; 6908,23244 6967,23278
 Steigung 1.6% (Werbellinstr. (Neukölln))	St; 12308,8088 12162,8055
 Steigung 1.6% (Weidenweg (Friedrichshain))	St; 13911,12692 14058,12709
@@ -1271,6 +1270,7 @@ Steigung 1.6% (Appelbacher Weg)	St; 27468,1279 27476,1287
 Steigung 1.6% (Appelbacher Weg)	St; 27453,1229 27468,1279
 Steigung 1.6% (Appelbacher Weg)	St; 27450,1182 27453,1229
 Steigung 1.6% (Alfredstr.)	St; 16207,11937 16246,12177
+Steigung 1.6% (Ackerstr. (Mitte, Gesundbrunnen))	St; 9048,14681 8953,14758
 Steigung 1.6% ((Waldweg an der Schilfdachkirche))	St; -8251,6214 -8385,6148
 Steigung 1.5% (Wissmannstr. (Grunewald))	St; 1704,9293 1569,9137
 Steigung 1.5% (Wissmannstr. (Grunewald))	St; 1569,9137 1483,9132
@@ -1422,7 +1422,7 @@ Steigung 1.4% (Koenigsallee)	St; 1932,9263 2056,9446
 Steigung 1.4% (Knobelsdorffstr.)	St; 2236,11753 2197,11757
 Steigung 1.4% (Kaiserstr. (Mariendorf))	St; 9079,4376 9192,4389
 Steigung 1.4% (Joachimstr. (Bohnsdorf))	St; 22177,-137 22029,-178
-Steigung 1.4% (Jasmunder Str.)	St; 9275,14846 9206,14987
+Steigung 1.4% (Jasmunder Str.)	St; 9270,14856 9201,14997
 Steigung 1.4% (Im Vogtland)	St; 6657,23334 6601,23412
 Steigung 1.4% (Hüttenweg (Grunewald, Dahlem))	St; 736,6217 869,6085
 Steigung 1.4% (Höchste Str.)	St; 11909,13387 11778,13498
@@ -1479,7 +1479,7 @@ Steigung 1.4% ((Berliner Allee - Uferweg))	St; 14485,16362 14499,16341
 Steigung 1.4% ((Berliner Allee - Uferweg))	St; 14480,16449 14485,16362
 Steigung 1.3% (Wiesendamm)	St; -729,13415 -346,13349
 Steigung 1.3% (Walterstr.)	St; 12973,6902 12934,6967
-Steigung 1.3% (Voltastr. (Gesundbrunnen))	St; 9041,14896 9206,14987
+Steigung 1.3% (Voltastr. (Gesundbrunnen))	St; 9034,14910 9201,14997
 Steigung 1.3% (Voigtstr.)	St; 14801,12517 14814,12626
 Steigung 1.3% (Teufelsseestr.)	St; 194,10846 265,10935
 Steigung 1.3% (Teufelsseechaussee)	St; -817,9533 -697,9598
@@ -1638,6 +1638,7 @@ Steigung 1.2% (Karl-Elsasser-Str.)	St; 11943,5825 12063,5927
 Steigung 1.2% (Kaiser-Wilhelm-Platz)	St; 7201,8870 7307,8945
 Steigung 1.2% (Johannisthaler Chaussee)	St; 13010,2085 12817,2031
 Steigung 1.2% (Hüttenweg (Grunewald, Dahlem))	St; 869,6085 884,5974
+Steigung 1.2% (Hussitenstr.)	St; 9034,14910 8900,15146
 Steigung 1.2% (Hugo-Vogel-Str.)	St; -6244,1315 -6249,1332
 Steigung 1.2% (Hohenfriedbergstr.)	St; 7791,8882 7790,8913
 Steigung 1.2% (Hoenerweg)	St; 15670,12298 15790,12289
@@ -1702,7 +1703,7 @@ Steigung 1.1% (Weidenweg (Friedrichshain))	St; 13463,12507 13548,12535
 Steigung 1.1% (Wallenbergstr.)	St; 4457,8484 4315,8478
 Steigung 1.1% (Waldstr. (Bohnsdorf))	St; 22003,-1625 21868,-1674
 Steigung 1.1% (Waldallee)	St; -8213,6349 -8290,6307
-Steigung 1.1% (Usedomer Str.)	St; 9275,14846 9437,14926
+Steigung 1.1% (Usedomer Str.)	St; 9270,14856 9432,14936
 Steigung 1.1% (Ulricistr.)	St; -7332,662 -7445,615
 Steigung 1.1% (Swinemünder Str.)	St; 9734,15579 9646,15737
 Steigung 1.1% (Suevenstr.)	St; 20836,982 20734,776
@@ -1740,7 +1741,6 @@ Steigung 1.1% (Modersohnstr.)	St; 14181,11434 14134,11272
 Steigung 1.1% (Mittelweg (Neukölln))	St; 12698,7677 12647,7672
 Steigung 1.1% (Metzer Str. (Prenzlauer Berg))	St; 10933,14122 11016,14081
 Steigung 1.1% (Maximilianstr. (Pankow))	St; 10774,17277 10897,17274
-Steigung 1.1% (Max-Urich-Str.)	St; 8953,14758 9041,14896
 Steigung 1.1% (Max-Liebermann-Allee)	St; -6331,2094 -6422,1932
 Steigung 1.1% (Mansfelder Str.)	St; 4228,9093 4158,9109
 Steigung 1.1% (Mansfelder Str.)	St; 4158,9109 4102,9164
@@ -1768,7 +1768,6 @@ Steigung 1.1% (Johannes-Tobei-Str.)	St; 21250,118 21354,142
 Steigung 1.1% (Joachim-Friedrich-Str.)	St; 3108,10069 3092,9886
 Steigung 1.1% (Im Eulengrund)	St; -5202,7045 -5163,7090
 Steigung 1.1% (Ilsestr. (Neukölln))	St; 12632,7137 12645,7087
-Steigung 1.1% (Hussitenstr.)	St; 9041,14896 8900,15146
 Steigung 1.1% (Hortwinkeler Weg)	St; 30407,4484 30345,4293
 Steigung 1.1% (Horchheimer Weg)	St; 27867,45 27922,141
 Steigung 1.1% (Horber Str.)	St; 4833,22587 4898,22459
@@ -1846,7 +1845,7 @@ Steigung 1.0% (Wiesenstr. (Gesundbrunnen))	St; 8742,15298 8683,15354
 Steigung 1.0% (Wiesenstr. (Gesundbrunnen))	St; 8683,15354 8607,15426
 Steigung 1.0% (Wendenstr.)	St; 20580,1406 20539,1285
 Steigung 1.0% (Weg H)	St; 27961,699 28083,592
-Steigung 1.0% (Wattstr. (Gesundbrunnen))	St; 9437,14926 9361,15066
+Steigung 1.0% (Wattstr. (Gesundbrunnen))	St; 9432,14936 9355,15078
 Steigung 1.0% (Warschauer Str.)	St; 13541,11355 13493,11217
 Steigung 1.0% (Wallenbergstr.)	St; 4139,8485 4220,8482
 Steigung 1.0% (Waldstr. (Bohnsdorf))	St; 21758,-1714 21649,-1725
@@ -1908,6 +1907,7 @@ Steigung 1.0% (Möllendorffstr.)	St; 15550,12625 15546,12690
 Steigung 1.0% (Mozartstr. (Biesdorf))	St; 20169,11852 20173,11971
 Steigung 1.0% (Mittelbrunner Steig)	St; 27948,439 27893,490
 Steigung 1.0% (Mehringdamm)	St; 9280,9476 9248,9350
+Steigung 1.0% (Max-Urich-Str.)	St; 8953,14758 9034,14910
 Steigung 1.0% (Maulbronner Ufer)	St; 7308,4080 7487,4104
 Steigung 1.0% (Marzahner Chaussee)	St; 18417,11854 18420,11864
 Steigung 1.0% (Mariendorfer Damm)	St; 9259,4815 9277,4664

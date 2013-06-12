@@ -57,20 +57,20 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn 2012)
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-05-01 (zumindest im nördlichen Bereich keine Anzeichen für Markierungsarbeiten)
-#: next_check: 2013-07-21
 #: osm_watch: way id="4410417" version="10"
 #: osm_watch: way id="4410418" version="10"
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130517.0940.384950.html (bis Herbst 2013)
-Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork 3735,12705 3716,12925 3714,12949 3711,13098 3711,13202
+#: last_checked: 2013-06-12
+#: next_check: 2013-09-01
+Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork 3734,12715 3716,12925 3714,12949 3711,13098 3711,13202
 # 
 #: XXX Baumaßnahme 4.12 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn noch nicht 2012)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-05-01
-#: next_check: 2013-07-21
 #: osm_watch: way id="38523780" version="4"
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130517.0940.384950.html (bis Herbst 2013)
+#: last_checked: 2013-06-12
+#: next_check: 2013-09-01
 Lise-Meitner-Str.: Radspuren werden hier 2013 markiert	?::inwork 3711,13202 3721,13274 3742,13416 3741,13495 3741,13558 3735,13618 3717,13743 3702,13865
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
@@ -129,7 +129,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-05-30
+#: last_checked: 2013-06-12
 #: check_frequency: 60d
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
 # 
@@ -153,22 +153,22 @@ Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="14"
 #: osm_watch: way id="42732291" version="5"
-#: last_checked: 2013-06-07
-#: next_check: 2013-08-08
+#: last_checked: 2013-06-12
+#: next_check: 2013-08-17
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: osm_watch: way id="5117259" version="8"
 #: osm_watch: way id="4581787" version="5"
 #: last_checked: 2013-05-08
-#: next_check: 2013-08-08
+#: next_check: 2013-08-17
 Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258,16111 6349,16213 6450,16325 6444,16331 6629,16538
 # 
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
-#: last_checked: 2013-04-17
-#: next_check: 2013-08-17
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: last_checked: 2013-06-12
+#: next_check: 2013-08-17
 Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7728,16538 7754,16364 7808,16215 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
 # 
 #: XXX Baumaßnahme 3.39 (Realisierung nach 2011)
@@ -721,15 +721,14 @@ Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,131
 #: by: https://www.spd-fraktion-mitte.de/system/files/dateien/anfrage/2011-11/2726/ka-0012-iv.pdf (Abschluss Ende 2013)
 #: note: Planstraße im Block 902
 #: XXX in Berlin.coords.data mit "(geplant)" gekennzeichnet
-#: last_checked: 2013-05-01 (teilweise schon fertiggestellt, Asphalt)
-#: next_check: 2013-11-30
 #: osm_watch: way id="182859952" version="7"
+#: last_checked: 2013-06-12 (teilweise schon fertiggestellt, Asphalt, Anbindung an Beusselbrücke fehlt)
+#: next_check: 2013-11-30
 Erna-Samuel-Straße: Straße wird gebaut, Qualität, Radwege/streifen, genaue Lage?	?::inwork 5340,14050 5522,14195 5704,14252 5954,14303 6106,14280
 # 
-#: last_checked: 2013-05-01
+#: last_checked: 2013-06-12
 #: next_check: 2013-11-30
-#: XXX nicht nicht fertiggestellt
-#: evtl. zusammen mit der Erna-Samuel-Straße?
+#: XXX wird evtl. zusammen mit der Erna-Samuel-Straße fertiggestellt?
 Weg im Stadtgarten Moabit: Qualität? Nachts beleuchtet?	?::inwork 5708,14077 5667,14212
 # 
 # REMOVED (keine Anzeichen für weitere Straßen hier) --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
@@ -944,7 +943,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 Greifswalder - Volkspark: Verbindung genauer anschauen	? 12584,14928 12572,14836
-#: XXX_indoor: Verbindung aufnehmen? 
+#: XXX_indoor: Verbindung aufnehmen?
+#: XXX_prog: wäre gut, wenn die Verlustzeit der versetzt arbeitenden Fußgängerampel hier einfließen könnte
 Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13163,12382 13176,12500
 # REMOVED (nein, sieht nur nach Leitungsarbeiten aus) --- Kirchhofstr.: Sackgasse --- eventuell Bauarbeiten, vielleicht wird die Qualität hier besser?	? 13027,7368 13117,7471
 #: priority: #C
@@ -1045,7 +1045,7 @@ Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshil
 # 
 #: XXX siehe auch: gesperrt-orig, handicap_s-orig
 #: last_checked: 2013-06-06
-#: next_check: 2013-06-10
+#: next_check: 2013-06-14
 #: priority: #A
 Grimmstr.: Einbahnstraße wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
 # 
@@ -2875,7 +2875,7 @@ Langenbeckstr.: ist die gesamte Straße asphaltiert?	? 24793,9860 25020,9728
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__30.pdf
 B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19858,-843 19869,-816
 Kramnitzer Weg: Qualität der Verlängerung nach Westen hin? Existiert eine Ausschilderung	? -9353,5012 -9395,5025 -9537,5083 -9617,5086
-Schlesingerstr.: existiert ein Zugang von der Schlesingerstr. zum Uferweg?	? 4968,13060 4994,13092
+# REMOVED (nein, kein Zugang) --- Schlesingerstr.: existiert ein Zugang von der Schlesingerstr. zum Uferweg?	? 4968,13060 4994,13092
 #: XXX wo genau?
 #: by: http://www.potsdam.de/cms/beitrag/10068669/966975/
 Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18091,1642 -18350,1540 -18688,1177 -18718,1243 -18673,1785 -18728,2153 -18989,2236 -19233,2251 -19422,2220 -19656,2362 -19721,2368
@@ -3075,7 +3075,8 @@ Fichtengrund (Hönow): Qualität im nördlichen Abschnitt?	? 25790,14277 25840,1441
 Christoph-Kolumbus-Str.: Qualität? Offen?	? -5758,6469 -5843,6524 -5952,6601 -6457,6973
 #: XXX oldname: bis 2011-11-01: Waldstr. (Kladow)
 #: XXX laut osm "residential", keine access restrictions
-#: osm_watch: way id="122634198" version="3"
+#: XXX laut osm Teile (?) hiervon zur "Marco-Polo-Str."
+#: osm_watch: way id="122634198" version="4"
 Ferdinand-Magellan-Str.: Qualität? Offen?	? -5843,6524 -5773,6619
 #: XXX oldname: bis 2011-11-01: Graf-Zeppelin-Str.
 #: osm_watch: way id="122617567" version="1"

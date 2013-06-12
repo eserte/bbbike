@@ -336,24 +336,24 @@ Gropiusstr.	1 8543,16364 8534,16355 8389,16214
 Osloer Str.	3nocross::ignrte 8503,16716 8721,16689 8759,16684 8939,16668
 Osloer Str. -> Pankeweg: Osloer Str.	3::igndisp 8503,16716 8721,16689 8804,16881
 Pankeweg -> Osloer Str.: Osloer Str.	3::igndisp 8804,16881 8721,16689 8759,16684
+Travemünder Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8688,16533 8759,16684 8783,16710
+Travemünder Str. -> Osloer Str.: Osloer Str.	3::igndisp 8688,16533 8759,16684 8721,16689
+Travemünder Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8688,16533 8759,16684 8776,16718
+Travemünder Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 8688,16533
 Travemünder Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 8783,16710
 Travemünder Str. -> Osloer Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 8721,16689
 Travemünder Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8759,16665 8759,16684 8776,16718
-Travemünder Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 8659,16494
+Stockholmer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8688,16533
 Stockholmer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8759,16665
-Stockholmer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8659,16494
 Stockholmer Str. -> Osloer Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8939,16668
 Osloer Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8721,16689 8759,16684 8783,16710
 Osloer Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8721,16689 8759,16684 8776,16718
+Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8688,16533
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8759,16665
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Stockholmer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8783,16710
-Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8659,16494
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Osloer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8939,16668
-Travemünder Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8659,16494 8759,16684 8783,16710
-Travemünder Str. -> Osloer Str.: Osloer Str.	3::igndisp 8659,16494 8759,16684 8721,16689
-Travemünder Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8659,16494 8759,16684 8776,16718
+Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8688,16533
 Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8759,16665
-Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8659,16494
 Müllerstr./Lindower Str.	3nocross::ignrte 7929,15006 7819,15103 7754,15160 7611,15286
 Lynarstr. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7629,15078 7754,15160 7611,15286
 Lynarstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7629,15078 7754,15160 7953,15362
@@ -1541,3 +1541,4 @@ Tempelhofer Damm -> Burgemeisterstr.: Mittelstreifen	3::igndisp 9161,5535 9158,5
 Burgemeisterstr. -> Burgemeisterstr.: Mittelstreifen	3::igndisp 8981,5692 9158,5673 9364,5652
 Burgemeisterstr. -> Tempelhofer Damm: Mittelstreifen	3::igndisp 8981,5692 9158,5673 9176,5803
 Tempelhofer Damm -> Burgemeisterstr.: Mittelstreifen	3::igndisp 9176,5803 9158,5673 9364,5652
+Triftstr.	1 6715,15152 6743,15102
