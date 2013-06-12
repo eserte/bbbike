@@ -1643,6 +1643,7 @@ check-names:	.check_names
 ${PERSISTENTTMPDIR}/crossings.bbd:	strassen landstrassen landstrassen2 \
 					brunnels
 	${PERL} ${MISCSRCDIR}/check_crossings -v-if-interactive \
+	    -ignorerx "^Alt-Friedrichsfelde, linker Gehweg" \
 	    -o $@~ -against brunnels \
 	    strassen landstrassen landstrassen2
 	mv $@~ $@
