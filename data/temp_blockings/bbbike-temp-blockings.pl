@@ -20819,8 +20819,12 @@ EOF
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20130614.1020.386081.html (Vollsperrung ab Juni 2013)
 #: by: IM_019421 (allerdings hier nur bis Dezember 2013)
-#: next_check: 2013-12-04
+#: next_check: 2013-06-22
+#: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen
+#: priority: #A
+# --- next_check: 2013-12-04 (für die alte Situation)
 #: XXX danach bessere Straßenqualität? Radstreifen?
 #: osm_watch: way id="24930947" version="20"
 userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
@@ -21359,6 +21363,90 @@ EOF
        source_id => 'INKO_115299',
        data  => <<EOF,
 userdel	q2::inwork; 6572,14639 6299,14660
+EOF
+     },
+     { from  => 1371160800, # 2013-06-14 00:00
+       until => 1371851999, # 2013-06-21 23:59
+       text  => 'Pariser Platz: Durchfahrt wegen des Obama-Besuchs gesperrt, auch für Radfahrer, 14. Juni bis 21. Juni 2013',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8538,12245 8610,12254 8731,12270 8804,12280
+EOF
+     },
+     { from  => 1371074400, # 2013-06-13 00:00
+       until => 1371333599, # 2013-06-15 23:59
+       text  => 'Behrenstr. zwischen Wilhelmstr. und Ebertstr.: Baustelle, Fahrbahn gesperrt, ab 14.06.2013 07 Uhr bis 15.06.2013 abends ',
+       type  => 'handicap',
+       source_id => 'INKO_117842',
+       data  => <<EOF,
+userdel	q4::inwork 8595,12066 8737,12098
+userdel	q4::inwork 8861,12125 8743,12099
+EOF
+     },
+     { from  => 1371506400, # 2013-06-18 00:00
+       until => 1375308000, # 2013-08-01 00:00
+       text  => 'Ordensmeisterstraße: Bauarbeiten zwischen Komturstr. und Colditzstr., Einbahnstraßenregelung, offen in Richtung Ma\'damm, vom 19.06.2013 bis voraussichtlich 31.07.2013',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130611.0925.385925.html',
+       data  => <<EOF,
+userdel	q4::inwork; 9796,5790 10027,5868 10254,5921
+EOF
+     },
+     { from  => 1372456800, # 2013-06-29 00:00
+       until => 1385938799, # 2013-12-01 23:59
+       text  => 'Földerichplatz: Bauarbeiten von Ende Juni bis Dezember 2013',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20130613.1320.386040.html',
+       data  => <<EOF,
+#: XXX wie sieht die Situation nach den Bauarbeiten aus, kommen Radfahrer noch weiterhin gut durch?
+#: next_check: 2013-12-01
+userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
+EOF
+     },
+     { from  => 1371074400, # 2013-06-13 00:00
+       until => 1371506399, # 2013-06-17 23:59
+       text  => 'Flughafen Tempelhof: Sperrung der Zugänge zum Peter-Strasser-Weg wegen einer Veranstaltung (Ironman Berlin)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 9522,7624 9362,7616 9281,7651
+userdel	2::temp 9562,7796 9372,7798 9281,7795
+EOF
+     },
+     { from  => 1371189600, # 2013-06-14 08:00
+       until => 1371419999, # 2013-06-16 23:59
+       text  => 'Karower Chaussee / Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße gesperrt, 15.06.2013-16.06.2013 ',
+       type  => 'gesperrt',
+       source_id => 'INKO_118700',
+       data  => <<EOF,
+userdel	2::inwork 16201,24354 16123,24232
+EOF
+     },
+     { from  => 1371528000, # 2013-06-18 06:00
+       until => 1371664800, # 2013-06-19 20:00
+       text  => 'Pariser Platz und weite Umgebung: umfangreiche Sperrungen wegen des Obama-Besuchs, 19. Juni 2003 von 6 bis 20 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2013
+userdel	2::temp 9141,12320 9130,12433 9123,12500 9008,12485 8907,12472 8775,12457 8540,12420 8400,12417 8354,12416 8546,12279 8570,12302 8573,12325 8540,12420
+userdel	2::temp 8596,11508 8592,11541 8623,11580 8698,11589 8736,11557 8740,11524
+userdel	2::temp 9054,12154 8861,12125 8743,12099
+userdel	2::temp 9130,12433 9016,12416 9028,12307 9141,12320 9164,12172 9064,12156 9076,12054 9183,12076 9164,12172
+userdel	2::temp 8965,11825 8901,12008 8861,12125 8804,12280 8775,12457
+userdel	2::temp 8553,11630 8548,11571 8502,11564 8442,11555 8209,11671 8203,11686
+userdel	2::temp 8502,11564 8473,11634 8397,11624
+userdel	2::temp 8354,12416 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254 8731,12270 8804,12280 9028,12307
+userdel	2::temp 8335,11718 8438,11753 8489,11782 8571,11846 8577,11896
+userdel	2::temp 8358,11477 8301,11469 8226,11458
+userdel	2::temp 8214,12205 8215,12156 8466,12197 8522,12239
+userdel	2::temp 8548,11571 8542,11502 8479,11493 8374,11479
+userdel	2::temp 8048,12135 8107,12145 8089,12041 8091,11992 8156,11863
+userdel	2::temp 8595,12066 8577,11896 8632,11912 8783,11959 8901,12008 9063,12051
+userdel	2::temp 8210,11775 8222,11881 8284,11905 8453,12099 8522,12187 8538,12245 8600,12165 8595,12066 8737,12098 8783,11959 8813,11825
+userdel	2::temp 8107,12145 8215,12156 8222,11881 8156,11863 8210,11775 8203,11686 8225,11692 8335,11718 8397,11624 8442,11555 8542,11502 8596,11508 8740,11524 9058,11564 9000,11727 8969,11814 8825,11773 8813,11825 8567,11799
+userdel	2::temp 8538,12245 8546,12279
+userdel	2::temp 9016,12416 9008,12485
+userdel	2::temp 8825,11773 8837,11676 8743,11663 8553,11638
+userdel	2::temp 8438,11753 8473,11634 8553,11638 8567,11799 8571,11846
 EOF
      },
     );

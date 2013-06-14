@@ -205,8 +205,8 @@ H‰nflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147
 # 
 #: XXX Baumaﬂnahme 11.34 (Realisierung nach 2011)
 #: XXX erste Vorabmarkierungen schon zu sehen (2013-05-24)
-#: last_checked: 2013-05-24
-#: next_check: 2013-06-30
+#: last_checked: 2013-06-14
+#: next_check: 2013-07-14
 Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projected 15058,14575 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaﬂnahme 11.12 (Realisierung nach 2011)
@@ -375,7 +375,7 @@ Am Lokdepot: Planung einer Erschlieﬂungsstraﬂe	?::inwork 8390,8879 8389,9087
 #: next_check: 2013-06-15
 Rampe in Bau	?::inwork 17904,8927 17888,8899 17915,8900
 # 
-#: last_checked: 2013-05-12 vvv
+#: last_checked: 2013-06-14 vvv
 Ampelanlage in Bau	?::inwork 9242,7286
 Ampelanlage in Bau	?::inwork 9242,7325
 #: last_checked ^^^
@@ -585,7 +585,7 @@ Humboldtinsel: Qualit‰t? Straﬂe bereits fertig gestellt?	?::projected 1612,20431
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: osm_watch: way id="4663347" version="14"
 #: last_checked: 2013-05-29
-#: check_frequency: 60d
+#: next_check: 2013-08-01 (Ende der Bauarbeiten)
 Ordensmeisterstr.: werden die Radspuren noch weiter gef¸hrt?	?::projected 10339,5948 10254,5921 10027,5868 9796,5790
 # 
 #: last_checked: 2013-05-10 vvv
@@ -1043,11 +1043,7 @@ Ampel (Fuﬂg‰nger? Auto?) in Bau	?::inwork 7595,12980
 #: priority: #C
 Florastr./Gˆrschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10033,17763
 # 
-#: XXX siehe auch: gesperrt-orig, handicap_s-orig
-#: last_checked: 2013-06-06
-#: next_check: 2013-06-14
-#: priority: #A
-Grimmstr.: Einbahnstraﬂe wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
+# REMOVED --- #: XXX siehe auch: gesperrt-orig, handicap_s-orig --- #: last_checked: 2013-06-06 --- #: next_check: 2013-06-14 --- #: priority: #A --- Grimmstr.: Einbahnstraﬂe wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
 # 
 Hˆhenweg am Wustrower Park: geht es hier weiter?	? 17275,18356 17564,18010 17585,17963 17557,17999
 # 
@@ -1137,7 +1133,7 @@ Fontanestr. (Lichtenrade): Qualit‰t des Rad/Gehweg-Abschnitts?	? 9779,-605 9822,
 #: XXX nochmal genau vor Ort anschauen
 An der Vogelweide: Qualit‰t? Lage? Straﬂenschilder?	? 8568,21863 8626,21892 8712,21858 8725,21910 8615,21955 8590,21894
 # 
-#: last_checked: 2013-05-29
+#: last_checked: 2013-06-14
 An der ehem. Blumengroﬂmarkthalle: hier wird eine neue Verbindung entstehen --- gepflastert (genaue Qualit‰t?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
 # 
 #: next_check: 2013-05-01
@@ -1185,8 +1181,9 @@ Schˆneberger Str.: eventuell wird hier eine (Fuﬂg‰nger-)Ampel entstehen	?::proje
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4193&options=4
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130613.1630.386060.html (geplanter Baubeginn 8/2013)
 #: last_checked: 2013-05-01
-#: next_check: 2013-08-01
+#: next_check: 2013-10-01
 Lauterstr.: wird die Straﬂe am Breslauer Platz komplett gesperrt?	?::projected 5810,7337 5817,7223
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361057749620/1057749620/00056359/59-Anlagen/04/vzbbvv01814_-_Fussgaengerueberweg_Alte_Hellers.pdf

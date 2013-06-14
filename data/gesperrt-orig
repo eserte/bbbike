@@ -177,7 +177,7 @@ Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
 Revaler Str. (Straßenbahn)	1s:q3 13588,11490 13473,11456
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
-# temporär Einbahnstraßenregelung aufgehoben --- Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
+Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
 Grimmstr.	1 11089,9751 11136,9851 11164,9885
 Grimmstr.	1 11164,9885 11175,9882
 Grimmstr.	1 11175,9882 11186,9861 11141,9732 11110,9661 11075,9576
@@ -1052,6 +1052,8 @@ Köttgenstr.	1 473,15169 556,15175 613,15195
 Rosenfelder Ring	1s:q3 18140,11932 18139,11833
 Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
+Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
+(Möllendorffstr. - Paul-Junius-Str.)	1 15361,13509 15470,13509
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1433,7 +1435,7 @@ Berliner Str.: U-Bahnrampe	3nocross 10975,16896 10992,16829 11008,16729 11021,16
 Wisbyer Str.: Straßenbahn	3nocross 11673,16367 11727,16358 11750,16354
 Wisbyer Str.: Straßenbahn	3nocross 11750,16354 11808,16343 11829,16339 11889,16328
 #: note: laut Kristina Nazarek ist die Wisbyer Str. in Höhe Talstr. überquerbar
-Wisbyer Str.: Straßenbahn	3nocross 11889,16328 11936,16302 12023,16242 12090,16199
+Wisbyer Str.: Straßenbahn	3nocross 11889,16328 11936,16302 12012,16250 12090,16199
 Wisbyer Str.: Straßenbahn	3nocross 11542,16384 11632,16373 11673,16367
 Wisbyer Str.: Straßenbahn	3nocross 11397,16405 11448,16398 11470,16394 11542,16384
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17240,11791 17440,11774 17497,11769 17746,11748 17966,11730 18098,11720 18220,11710
@@ -2185,7 +2187,7 @@ Drängelgitter	BNP:5 -7182,15524
 #: by: ^^^
 #: by: (x)qusor
 Drängelgitter und Schranke	BNP:5::trailer=15 14285,12190
-Drängelgitter	BNP:5 14060,14986
+Drängelgitter	BNP:5 14314,14841
 Drängelgitter	BNP:5 20586,10935
 Drängelgitter, relativ breite Durchfahrt	BNP:3 12363,2367
 Drängelgitter	BNP:5 15516,6357

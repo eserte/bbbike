@@ -31,7 +31,7 @@ Berliner Str. (Blankenfelde): Asphalt	Q0 9415,23699 9437,23680 9490,23531 9528,2
 B96a: Asphalt	Q0 9228,23643 9146,23843 8984,24078 8944,24186 8885,24344 8826,24501 8798,24575 8682,24883 8665,24941 8661,24952 8636,25016 8571,25180 8567,25189 8548,25239 8501,25358 8488,25390
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15589,27116 15230,26560 14859,26029 14472,25449 14314,25193 14219,25013
 Hobrechtsfelder Chaussee (ab Kurve)	Q0 15589,27116 15711,27928 15777,28037
-Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12023,16242 12090,16199
+Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 Weserstr.: asphaltiert, schmale Verbundsteinpflaster-Radwege	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0 15080,11905 14981,11751 14946,11697 14849,11539
@@ -244,7 +244,8 @@ Wriezener Karree: Asphalt	Q0 12726,11851 12959,11631
 Prenzlauer Promenade: Asphalt	Q0 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12097,16263 12090,16199
 Straﬂe 59: Asphalt	Q0 12459,21010 12524,20863
 Charlottenburger Str.: Asphalt	Q0 13712,16089 13642,16118 13479,16182 13440,16197 13429,16202 13404,16212
-Charlottenburger Str.: m‰ﬂiger Asphalt	Q1 13404,16212 13286,16267 13033,16387 12919,16438 12798,16493 12646,16563 12568,16599 12357,16696 12226,16757
+Charlottenburger Str.: teilweise m‰ﬂiger Asphalt	Q1 13404,16212 13286,16267 13033,16387 12919,16438 12798,16493 12646,16563 12568,16599
+Charlottenburger Str.: Asphalt, ein bisschen wellig	Q0 12568,16599 12357,16696 12226,16757
 Engeldamm: Asphalt	Q0 12025,11346 11985,11261 11921,11185 11800,11118 11656,11106 11473,11180
 Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10511,10800 10397,10852 10103,10989
 Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11808,11482
@@ -2791,7 +2792,7 @@ Schneeglˆckchenstr.: Asphalt mit einigen Sch‰den	Q1 14217,14206 14284,14469
 S¸derbrokweg: Kopfsteinpflaster	Q2 13933,14622 13940,14654
 S¸derbrokweg: m‰ﬂiger Beton	Q1 13940,14654 13990,14729 14051,14822 14080,14862 14103,14853
 Steengravenweg: m‰ﬂiger Beton	Q1 13733,14813 13795,14876 13856,14944
-(Kniprodestr./Michelangelostr. - Puccinistr.): Beton	Q1 13816,15137 13875,15142 13973,15259
+(Kniprodestr./Michelangelostr. - Puccinistr.): Beton	Q1 13816,15137 13854,15129 13875,15142 13973,15259
 (Kniprodestr./Michelangelostr. - Puccinistr.): Beton	Q1 13905,15306 13809,15370 13713,15440 13665,15475 13638,15485
 Puccinistr.: Beton	Q1 13665,15475 13700,15501
 Mahlerstr.: kleinteiliges Kopfsteinpflaster	Q1 13776,15546 13739,15643
@@ -3855,7 +3856,7 @@ Franz-Ehrlich-Str.: Asphalt	Q0 19732,3340 19767,3307 19890,3186
 Moriz-Seeler-Str.: Asphalt	Q0 19767,3307 19669,3200
 Steffenstr.: Beton	Q1 15580,14880 15568,14901 15536,14956 15425,15080
 Hohenschˆnhauser Str.: Asphalt	Q0 14754,14406 14682,14572
-Hohenschˆnhauser Str.: Beton	Q0 14682,14572 14580,14636
+Hohenschˆnhauser Str.: Beton	Q1 14682,14572 14580,14636
 Piesporter Str.: Beton/wassergebundene Decke	Q1 15388,16502 15381,16548
 Piesporter Str.: Beton	Q0 15381,16548 15323,16774
 Wittlicher Str.: welliger Asphalt	Q1 15178,17134 15188,17055 15208,16939 15235,16761
@@ -7302,8 +7303,8 @@ Zu den Gosener Bergen: Asphalt	Q0 30722,-2337 30640,-2803
 (Straﬂe zur Krampenburg - Uferweg am Langen See): guter Waldweg, feiner Schotter	Q1 27202,173 26676,-36
 (Straﬂe zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2 26676,-36 26479,-119
 Kuglerstr.: Asphalt	Q0 11758,16111 11680,16151 11618,16183
-Kuglerstr.: Asphalt mit leichten Sch‰den	Q1 12030,15968 11961,16002 11900,16036
-Kuglerstr.: Asphalt	Q0 11900,16036 11859,16058
+Kuglerstr.: Asphalt mit leichten Sch‰den	Q1 12030,15968 11961,16002 11899,16037
+Kuglerstr.: Asphalt	Q0 11899,16037 11859,16058
 Kuglerstr.: Asphalt mit leichten Sch‰den	Q1 11859,16058 11758,16111
 (Schˆnhauser Str. - Rosenthaler Str.): Asphalt	Q0 11858,21541 11889,21543
 (NisblÈstr. - Schˆnhauser Str.): Asphalt	Q0 11838,21580 11858,21541
@@ -7957,6 +7958,8 @@ Inselstr. (Hessenwinkel): unbefestigte Straﬂe	Q2 32101,2216 32067,2178
 (Weg im Salvador-Allende-Viertel): Beton	Q0 23279,4599 23445,4596
 (Weg im Salvador-Allende-Viertel - Am Berg): Asphalt	Q0 23051,4461 23010,4506
 (Forstmeisterweg): Waldweg	Q2 32121,3215 32167,3317 32222,3680
+(Zufahrt zum Gewerbegebiet): Beton	Q0 13875,15142 14073,15018
+Paul-Junius-Str.: Fahrbahnsch‰den	Q1 15040,13602 15225,13543
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3777,16532 -3870,16527 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): m‰ﬂiger Asphalt	Q1 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): unbefestigte Straﬂe	Q2 12608,22943 12589,22948 12526,22972
@@ -10039,8 +10042,8 @@ Hackbuschstr.: guter Asphalt	Q0 -6878,15024 -6861,15129
 Eichholzbahn: asphaltiert	Q0 -6454,14392 -6469,14390 -6477,14321 -6576,14303
 Eichholzbahn: asphaltiert	Q0 -6576,14303 -6611,14302 -6933,14328 -6963,14331 -7180,14351 -7445,14392
 Haﬂlingerweg: Asphalt	Q0 7644,17054 7894,17073 7926,17050
-(Michelangelostr. - Straﬂe 106): m‰ﬂiger Beton	Q1 13823,15111 14060,14986 14314,14841
-(Michelangelostr. - Straﬂe 106): Feldweg	Q2 14314,14841 14599,14679
+(Michelangelostr. - Straﬂe 106): m‰ﬂiger Beton	Q1 13854,15129 13867,15111 14314,14841
+(Michelangelostr. - Straﬂe 106): m‰ﬂiger Beton	Q1 14314,14841 14599,14679
 Willi-S‰nger-Str.: guter Beton	Q0 16003,8119 15904,8049 15843,8125 15798,8182
 Schneebergstr.: Asphalt	Q0 7573,3698 7710,3677 7768,3650 7778,3644 7827,3595 7879,3455 7916,3348
 Straﬂe 231: Asphalt mit Sch‰den	Q1 15337,889 15316,888 15269,930
@@ -10201,9 +10204,9 @@ Catostr.: Beton	Q0 10758,4611 10746,4546 10743,4515 10732,4437
 Schillerstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 9993,686 10051,642 10099,524 10192,296 10300,42 10353,-94 10414,-255 10495,-484
 Schillerstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 10508,-519 10556,-659 10609,-801
 Wesselburer Weg: Verbundsteinpflaster	Q1 -2055,22298 -2068,22213 -2082,22074 -2082,21963 -2079,21878 -2093,21532
-Max-Steinke-Str.: guter Asphalt	Q0 13512,15909 13523,15967
-Max-Steinke-Str.: Kopfsteinpflaster	Q2 13523,15967 13516,15993
-Max-Steinke-Str.: guter Asphalt	Q0 13516,15993 13440,16197
+Max-Steinke-Str.: guter Asphalt	Q0 13512,15909 13511,15964
+Max-Steinke-Str.: Kopfsteinpflaster	Q2 13511,15964 13504,15990
+Max-Steinke-Str.: guter Asphalt	Q0 13504,15990 13440,16197
 Max-Steinke-Str.: guter Asphalt	Q0 13429,16202 13421,16225 13377,16378
 Treskowstr.: guter Asphalt	Q0 24567,11980 24491,11972 24362,11954 24267,11933 24137,11930 23942,11975
 Hatzfeldtallee: guter Asphalt	Q1 2339,20559 2448,20592 2572,20622 2762,20648
@@ -12421,7 +12424,7 @@ Am Priesteracker: m‰ﬂiger Beton	Q2 4245,21105 4107,21059
 Kollostr.: guter Asphalt	Q0 9668,4403 9677,4518 9695,4638
 Sitzendorfer Str.: guter Asphalt	Q0 21962,17152 21915,17159 21812,17174 21677,17195
 Drausnitzer Str.: guter Asphalt	Q0 21625,8735 21540,8815 21512,8857 21508,8988
-Straﬂe 106: Beton	Q0 14580,14636 14599,14679
+Straﬂe 106: Beton	Q1 14580,14636 14599,14679
 Straﬂe 106: fester Sandweg	Q1 14599,14679 14666,14845 14828,15050
 Mandelbl¸tenweg: Asphalt	Q0 21538,479 21591,488 21671,509
 Krontalstr.: guter Asphalt	Q0 11569,-219 11530,-75 11451,114 11407,113

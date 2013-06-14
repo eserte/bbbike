@@ -151,6 +151,7 @@ Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
 Revaler Str. (Straﬂenbahn)	1s 13588,11490 13473,11456
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
+Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
 Grimmstr.	1 11089,9751 11136,9851 11164,9885
 Grimmstr.	1 11164,9885 11175,9882
 Grimmstr.	1 11175,9882 11186,9861 11141,9732 11110,9661 11075,9576
@@ -777,6 +778,8 @@ Kˆttgenstr.	1 473,15169 556,15175 613,15195
 Rosenfelder Ring	1s 18140,11932 18139,11833
 Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns M¸hle	1 24667,4900 24778,4821
+Mˆllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
+(Mˆllendorffstr. - Paul-Junius-Str.)	1 15361,13509 15470,13509
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 (Wollestr. - M¸hlenstr.)	1 -10790,-1178 -10787,-1162 -10730,-1103 -10691,-1097 -10648,-1130
@@ -1444,8 +1447,8 @@ Straﬂenbahn	3nocross::ignrte 11750,16354 11808,16343 11829,16339 11889,16328
 Wisbyer Str. -> Varnhagenstr.: Straﬂenbahn	3::igndisp 11829,16339 11808,16343 11680,16151
 Wisbyer Str. -> Max-Koska-Str.: Straﬂenbahn	3::igndisp 11808,16343 11829,16339 11846,16438
 Max-Koska-Str. -> Wisbyer Str.: Straﬂenbahn	3::igndisp 11846,16438 11829,16339 11889,16328
-Straﬂenbahn	3nocross::ignrte 11889,16328 11936,16302 12023,16242 12090,16199
-Dunckerstr. -> Wisbyer Str.: Straﬂenbahn	3::igndisp 11939,16084 12023,16242 11936,16302
+Straﬂenbahn	3nocross::ignrte 11889,16328 11936,16302 12012,16250 12090,16199
+Dunckerstr. -> Wisbyer Str.: Straﬂenbahn	3::igndisp 11925,16086 12012,16250 11936,16302
 Straﬂenbahn	3nocross::ignrte 11542,16384 11632,16373 11673,16367
 Glaﬂbrennerstr. -> Wisbyer Str.: Straﬂenbahn	3::igndisp 11543,16207 11632,16373 11542,16384
 Wisbyer Str. -> Glaﬂbrennerstr.: Straﬂenbahn	3::igndisp 11673,16367 11632,16373 11543,16207
@@ -2388,7 +2391,7 @@ Dr‰ngelgitter	BNP:5:-53 22280,11284
 Dr‰ngelgitter	BNP:5:66 -7228,15504
 Dr‰ngelgitter	BNP:5:-249 -7182,15524
 Dr‰ngelgitter und Schranke	BNP:5:-154:trailer=15 14285,12190
-Dr‰ngelgitter	BNP:5:-62 14060,14986
+Dr‰ngelgitter	BNP:5:-58 14314,14841
 Dr‰ngelgitter	BNP:5:-210 20586,10935
 Dr‰ngelgitter, relativ breite Durchfahrt	BNP:3:66 12363,2367
 Dr‰ngelgitter	BNP:5:28 15516,6357
