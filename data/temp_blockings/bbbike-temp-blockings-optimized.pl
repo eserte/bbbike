@@ -2874,7 +2874,9 @@ userdel	q4::inwork 425,8766 490,8716
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
 #: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
 #: by: http://www.morgenpost.de/bezirke/article112374495/Fussgaengerbruecke-wird-repariert.html (Reparatur ab Juni 2013, 2 Monate Bauzeit)
+#: last_checked: 2013-06-15
 #: next_check: 2013-07-31
+#: priority: #A
 userdel	2::inwork 19968,16 19940,52
 ',
          'type' => 'gesperrt'
@@ -3311,7 +3313,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'text' => 'Johannisthaler Chaussee von Königsheideweg bis Ligusterweg, wegen Bauarbeiten gesperrt, 24.06.2013 bis Mitte Juli',
          'from' => 1371938400,
          'id' => 2441,
-         'data' => 'userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15797,4456
+         'data' => 'userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15800,4464
 ',
          'type' => 'gesperrt'
        },

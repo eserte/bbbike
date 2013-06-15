@@ -780,6 +780,7 @@ Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
 Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
 (Möllendorffstr. - Paul-Junius-Str.)	1 15361,13509 15470,13509
+Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 (Wollestr. - Mühlenstr.)	1 -10790,-1178 -10787,-1162 -10730,-1103 -10691,-1097 -10648,-1130
@@ -2179,6 +2180,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-154:trailer=10 21755,625
+Drängelgitter	BNP:3:17:trailer=10 21783,660
 Tor, sollte geschlossen gehalten werden	BNP:10:-139:trailer=15 27812,756
 Tor, sollte geschlossen gehalten werden	BNP:10:-135:trailer=15 27625,539
 Drängelgitter (lichte Breite 80cm)	BNP:5:-60:trailer=no -9809,-608
@@ -2490,7 +2493,6 @@ Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
-Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058

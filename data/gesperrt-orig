@@ -1054,6 +1054,7 @@ Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
 Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
 (Möllendorffstr. - Paul-Junius-Str.)	1 15361,13509 15470,13509
+Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1902,6 +1903,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 21755,625
+Drängelgitter	BNP:3::trailer=10 21783,660
 Tor, sollte geschlossen gehalten werden	BNP:10::trailer=15 27812,756
 Tor, sollte geschlossen gehalten werden	BNP:10::trailer=15 27625,539
 Drängelgitter (lichte Breite 80cm)	BNP:5::trailer=no -9809,-608
@@ -2373,12 +2376,7 @@ Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,127
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
 # REMOVED (wieder offen) --- #: last_checked: 2013-02-04 --- #: XXX Bauzäune waren im Dezember 2012 weg, aber im Februar 2013 wurde wieder gebaut --- Am Sudhaus: Bauarbeiten, manchmal noch gesperrt	2:inwork 12134,8172 12282,8204
-# 
-#: by: rjoop
-#: last_checked: 2012-11
-#: next_check: 2013-03-15
-#: osm_watch: way id="35326794" version="7"
-Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
+# REMOVED (obwohl, Bauzäune stehen noch bereit) --- #: by: rjoop --- #: last_checked: 2012-11 --- #: next_check: 2013-03-15 --- #: osm_watch: way id="35326794" version="7" --- Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 # 
 #: XXX nach den Bauarbeiten gibt es wahrscheinlich keine Fahrbahn mehr --- wird man durch den Fußgängerbereich gut durchfahren können?
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf

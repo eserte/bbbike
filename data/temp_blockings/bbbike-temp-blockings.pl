@@ -1677,9 +1677,9 @@ EOF
        text  => 'Wassersportallee - Regattastraße, Zwischen Kreuzung Adlergestell und Kreuzung Wassersportallee in beiden Richtungen gesperrt, Baustelle, Dauer: 14.03.2005 03:00 Uhr bis 15.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 22453,1294 22367,1230 22287,1165 22217,1108
+userdel	q4 22453,1294 22367,1230 22287,1165 22208,1103
 userdel	q4 22453,1294 22493,1325 22560,1377 22655,1450
-userdel	q4 22217,1108 22162,1067
+userdel	q4 22208,1103 22162,1067
 EOF
      },
      { from  => 1110862800, # 2005-03-15 06:00
@@ -20064,7 +20064,9 @@ EOF
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
 #: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
 #: by: http://www.morgenpost.de/bezirke/article112374495/Fussgaengerbruecke-wird-repariert.html (Reparatur ab Juni 2013, 2 Monate Bauzeit)
+#: last_checked: 2013-06-15
 #: next_check: 2013-07-31
+#: priority: #A
 userdel	2::inwork 19968,16 19940,52
 EOF
      },
@@ -21353,7 +21355,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130607.1245.385821.html',
        data  => <<EOF,
-userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15797,4456
+userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15800,4464
 EOF
      },
      { from  => 1349931600, # 2012-10-11 07:00
@@ -21374,7 +21376,7 @@ userdel	2::temp 8538,12245 8610,12254 8731,12270 8804,12280
 EOF
      },
      { from  => 1371074400, # 2013-06-13 00:00
-       until => 1371333599, # 2013-06-15 23:59
+       until => 1371315146, # 1371333599, # 2013-06-15 23:59
        text  => 'Behrenstr. zwischen Wilhelmstr. und Ebertstr.: Baustelle, Fahrbahn gesperrt, ab 14.06.2013 07 Uhr bis 15.06.2013 abends ',
        type  => 'handicap',
        source_id => 'INKO_117842',
