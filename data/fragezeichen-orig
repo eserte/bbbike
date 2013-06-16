@@ -210,8 +210,8 @@ Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15058,14575 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-04-20
-#: next_check: 2013-07-20
+#: last_checked: 2013-06-16
+#: next_check: 2013-08-16
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
 #: XXX Baumaßnahme 11.45 (Realisierung nach 2011)
@@ -358,6 +358,11 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: XXX außerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist
+#: last_checked: 2013-06-16
+#: next_check: 2013-07-16
+Allee der Kosmonauten/Beilsteiner Str.: Ampel in Bau	?::inwork 18875,13467
 # 
 #: last_checked: 2013-06-15
 #: next_check: 2014-06-15
@@ -941,7 +946,11 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-Greifswalder - Volkspark: Verbindung genauer anschauen	? 12584,14928 12572,14836
+#: XXX vmz-Eintrag: Bergiusstr. (Neukölln) Einfahrt / Ausfahrt Kreuzung Grenzallee Geplant ab: 17.06.2013 07 Uhr, Baustelle, gesperrt (bis Mitte 08/13)	INKO_119210	
+Bergiusstr.: können Radfahrer hier trotz Sperrung der Fahrbahn weiterhin passieren?	? 14153,6795 14193,6718
+Helene-Weigel-Platz: Qualität (wahrscheinlich betoniert)? Zufahrt zur Märkischen Allee?	? 19439,13633 19463,13636 19482,13572 19602,13575 19625,13576 19697,13576
+Zugang zum Eastgate (?): möglich? Qualität?	? 19870,15172 19852,15201 19775,15276 19782,15309 19759,15336 19768,15361
+Greifswalder Str. - Volkspark: Verbindung genauer anschauen	? 12584,14928 12572,14836
 #: XXX_indoor: Verbindung aufnehmen?
 #: XXX_prog: wäre gut, wenn die Verlustzeit der versetzt arbeitenden Fußgängerampel hier einfließen könnte
 Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13163,12382 13176,12500
@@ -1225,7 +1234,6 @@ Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtl
 # REMOVED (-> strassen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2012 --- Weg im Harry-Bresslau-Park: wo genau liegt der Weg? Qualität? Nachts beleuchtet?	? 4997,6331 4937,6205
 # 
 Geißenweide - Blenheimstr.: gibt es für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
-westlicher Wuhlewanderweg: Qualität? Nachts beleuchtet? Ausschilderung?	? 22124,13606 22362,13865 22415,14151 22679,14450 22552,14777 22460,14820 22382,14908 22343,15115
 S-Bhf. Hermsdorf, Unterführung am Fellbacher Platz: existiert für Radfahrer eine Verbindung? Qualität?	? 3750,23363 3593,23297
 S-Bhf. Waidmannslust, Unterführung zwischen Nimrodstr. und Am Waidmannslust: existiert für Radfahrer eine Verbindung? Qualität?	? 4581,22106 4601,22067 4660,22101 4687,22056 4744,22065
 Niederneuendorfer Allee - Pappelweg: Qualität des Waldweges?	? -2827,18639 -3058,18358
@@ -1349,8 +1357,8 @@ Kurzer Weg: Qualität?	? 9169,21548 9066,21516
 #: osm_watch: way id="24152326" version="8"
 Anna-Seghers-Str.: wird es nach den Bauarbeiten eine bessere Straßenqualität geben?	?::inwork 20066,3466 20012,3532 19966,3596 19933,3641
 # 
-Poelchaustr. - Landsberger Allee: Qualität der Verbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19524,14474 19527,14655 19580,14864 19864,15169 20260,15434
-Springpfuhlpark: Qualität der Gehwegverbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19628,13517 19524,14474
+Poelchaustr. - Landsberger Allee: Qualität der Verbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19524,14474 19527,14655 19580,14864 19631,14926 19703,15043 19740,15086 19811,15126 19870,15172 20260,15434
+Springpfuhlpark: Qualität der Gehwegverbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19602,13575 19524,14474
 # REMOVED --- #: by: http://ftp.berlinonline.de/ba-temp-schoen/ba_beschluesse/2012-08-14/drucks._nr.1842_xviii_bezirkliches_fahrradroutennetz_fuer_tempelhof_schoeneberg_entwickeln_zwischenbericht.pdf (Treppe, wassergebundene Decke) --- Götzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster oder eine wassergebundene Decke? Gibt es hier Treppen?	? 9381,6277 9374,6189 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf vvv

@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-06-15 vvv
+#: last_checked: 2013-06-16 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -82,8 +82,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: last_checked: 2013-06-10 (wosch) vvv
 #: osm_watch: way id="25185423" version="14"
 Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
-#: osm_watch: way id="4597205" version="6"
-Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
+# REMOVED (by wosch) --- #: osm_watch: way id="4597205" version="6" --- Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
 #: last_checked ^^^
 # 
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
@@ -430,7 +429,7 @@ Ernststr.: Fuﬂg‰nger	q2 2497,19503 2700,19527
 #: note: jeweils zwei Serpentinen pro Seite, groﬂer Zeitverlust
 Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 12802,13584 12766,13621 12743,13634 12709,13691 12707,13706
-(Buckower Ring - Cecilienstr.): Fuﬂg‰nger, eng	q1 21874,13543 21928,13717
+(Buckower Ring - Cecilienstr.): Fuﬂg‰nger, eng	q1 21874,13543 21918,13720
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
 Leon-Jessel-Platz: Fuﬂg‰nger	q1 4700,9179 4750,9143
@@ -2304,7 +2303,7 @@ Landschˆppenpfad: Bordsteine, Fuﬂg‰nger	q2 12609,1780 12574,1866
 Pfarrer-Vogelsang-Weg: Bordsteine, Fuﬂg‰nger	q2 12487,1727 12452,1808
 #: by: ^^^
 #: by: Thomas Wolf: vvv
-Hans-Fallada-Str.: enge Straﬂe	q0- 21928,13717 21960,13776 21977,13942 22007,14209
+Hans-Fallada-Str.: enge Straﬂe	q0- 21918,13720 21960,13776 21977,13942 22007,14209
 Dudweilerstr.: enge Straﬂe	q0- 21766,13995 21809,13973 21885,13954 21977,13942 22042,13942 22118,13954
 #: by: ^^^
 #: by: anonymous

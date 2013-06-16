@@ -2891,7 +2891,7 @@ userdel	2::inwork 19968,16 19940,52
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende August 2013',
          'from' => 1330902000,
          'id' => 2316,
-         'data' => '#: osm_watch: way id="23243508" version="30"
+         'data' => '#: osm_watch: way id="23243508" version="31"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
@@ -3336,17 +3336,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_117842',
-         'until' => 1371333599,
-         'text' => 'Behrenstr. zwischen Wilhelmstr. und Ebertstr.: Baustelle, Fahrbahn gesperrt, ab 14.06.2013 07 Uhr bis 15.06.2013 abends ',
-         'from' => 1371074400,
-         'id' => 2444,
-         'data' => 'userdel	q4::inwork 8595,12066 8737,12098
-userdel	q4::inwork 8861,12125 8743,12099
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130611.0925.385925.html',
          'until' => 1375308000,
@@ -3415,6 +3405,16 @@ userdel	2::temp 8538,12245 8546,12279
 userdel	2::temp 9016,12416 9008,12485
 userdel	2::temp 8825,11773 8837,11676 8743,11663 8553,11638
 userdel	2::temp 8438,11753 8473,11634 8553,11638 8567,11799 8571,11846
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1371675600,
+         'text' => 'Spandauer Damm zwischen Sophie-Charlotten-Str. und Otto-Suhr-Allee: wegen des Obama-Besuchs möglicherweise nicht passierbar, 19. Juni 2003 von 12 bis 23 Uhr',
+         'from' => 1371549600,
+         'id' => 2450,
+         'data' => 'userdel	2::temp 2414,12418 2643,12453
+userdel	2::temp 3280,12512 3189,12519 3034,12502 2786,12473 2745,12467 2717,12463
 ',
          'type' => 'gesperrt'
        }

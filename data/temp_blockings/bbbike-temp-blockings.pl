@@ -20113,7 +20113,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
-#: osm_watch: way id="23243508" version="30"
+#: osm_watch: way id="23243508" version="31"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
@@ -21449,6 +21449,15 @@ userdel	2::temp 8538,12245 8546,12279
 userdel	2::temp 9016,12416 9008,12485
 userdel	2::temp 8825,11773 8837,11676 8743,11663 8553,11638
 userdel	2::temp 8438,11753 8473,11634 8553,11638 8567,11799 8571,11846
+EOF
+     },
+     { from  => 1371549600, # 2013-06-18 12:00
+       until => 1371675600, # 2013-06-19 23:00
+       text  => 'Spandauer Damm zwischen Sophie-Charlotten-Str. und Otto-Suhr-Allee: wegen des Obama-Besuchs möglicherweise nicht passierbar, 19. Juni 2003 von 12 bis 23 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 2414,12418 2643,12453
+userdel	2::temp 3280,12512 3189,12519 3034,12502 2786,12473 2745,12467 2717,12463
 EOF
      },
     );
