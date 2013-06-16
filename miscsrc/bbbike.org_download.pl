@@ -36,8 +36,11 @@ my $rooturl = 'http://download.bbbike.org/bbbike/data-osm';
 my $city;
 my $o;
 my $agent_suffix;
+my $debug = 0;
+
 GetOptions(
 	   "url=s" => \$rooturl,
+	   "debug=i" => \$debug,
 	   "city=s" => \$city,
 	   "o=s" => \$o, # download directory, for tests only
 	   "agentsuffix=s" => \$agent_suffix, # for tests only
@@ -84,13 +87,13 @@ sub city {
     chdir $data_osm_directory
 	or die "Can't chdir to $data_osm_directory: $!";
 
-    print STDERR "Downloading data for $city...\n";
+    print STDERR "Downloading data for $city...\n" if $debug;
 
     my $resp = $ua->mirror($url, $tmpfile);
     die "Can't get $url to $tmpfile: " . $resp->status_line
 	if !$resp->is_success;
 
-    print STDERR "Extracting data to $data_osm_directory...\n";
+    print STDERR "Extracting data to $data_osm_directory...\n" if $debug;
     if (eval { require Archive::Tar; Archive::Tar->has_bzip2_support }) {
 	my $success = Archive::Tar->extract_archive($tmpfile);
 	if (!$success) {
@@ -102,7 +105,7 @@ sub city {
 	die "Error while extracting using @cmd" if $? != 0;
     }
 
-    print STDERR "Finished.\n";
+    print STDERR "Finished.\n" if $debug;
 }
 
 sub usage () {
