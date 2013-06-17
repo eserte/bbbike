@@ -40,7 +40,7 @@ my $debug = 0;
 
 GetOptions(
 	   "url=s" => \$rooturl,
-	   "debug=i" => \$debug,
+	   "debug!" => \$debug,
 	   "city=s" => \$city,
 	   "o=s" => \$o, # download directory, for tests only
 	   "agentsuffix=s" => \$agent_suffix, # for tests only
