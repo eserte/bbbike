@@ -218,7 +218,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2013-06-14
+#: last_checked: 2013-06-18
 #: check_frequency: 90d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -1825,6 +1825,7 @@ Unterführung S-Bahnhof Poelchaustr.: asphaltiert	Q0 19235,14511 19290,14503 1939
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster	Q2 17533,12222 17466,12241
 Gudrunstr.: Asphalt mit einigen Schäden	Q1 17466,12241 17300,12173
 Gudrunstr.: Asphalt	Q0 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16870,11920
+#: XXX eventuell wurde hier neu asphaltiert, prüfen!
 Marzahner Chaussee (bis zur Kurve): mäßiger Asphalt	Q1; 19173,13478 19194,13272
 (Eichhörnchensteig - Wildpfad): enger Waldpfad	Q2 1449,7519 1485,7651 1509,7700
 Röntgentaler Weg (durch den Schloßpark): Asphalt	Q0 16166,25767 16222,25829
@@ -3100,6 +3101,7 @@ Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27863,943 27810,987 27568,1188
 Plutoweg: Asphalt	Q0 31078,3372 30965,3391 30811,3416 30750,3468 30608,3617 30499,3632 30366,3681
 Treptower Park: Asphalt	Q0 14310,9692 14316,9542 14347,9452 14398,9373 14485,9271 14601,9201
+Treptower Park: Asphalt	Q0 14398,9373 14382,9299
 Treptower Park: Asphalt, einige Wuzelschäden	Q1+ 14316,9542 14384,9565 14512,9528 14635,9441 14748,9420
 Treptower Park: Asphalt	Q0 14529,9141 14601,9201 14748,9420 14780,9480
 Treptower Park: Asphalt	Q0 14460,9814 14436,9784 14361,9772
@@ -4712,7 +4714,7 @@ Hofjagdweg: Beton	Q0 17824,1756 18103,1820
 Freigutweg: Asphalt	Q0 17809,1855 17909,1881 18076,1919
 Radewiesenweg: Kopfsteinpflaster	Q2- 17860,2061 17889,1971 17909,1881
 An der Nachtbucht: Verbundsteinpflaster	Q1 17889,1971 18052,2012
-Köpenicker Str.: Asphalt	Q0 17764,2032 17860,2061 17901,2075 18111,2135 18213,2160 18326,2202
+Köpenicker Str.: Asphalt	Q0 17764,2032 17860,2061 17901,2075 18111,2135 18213,2160 18337,2197
 Niederschlemaer Weg: grobes Verbundsteinpflaster	Q1- 18447,1727 18444,1782 18425,1831
 entlang der Teltowkanalautobahn: Asphalt	Q0 18496,2471 18446,2504 18382,2506 18350,2533 18388,2509 18496,2409 18518,2370 18567,2218 18580,2121
 Hornkleepfad: unbefestigte Straße	Q2 18750,1522 18830,1497
@@ -13726,7 +13728,7 @@ Max-Born-Str.: Asphalt	Q0 19111,2777 19064,2867 19053,2890 19021,2946 18951,3069
 #: by: Micha Becker: vvv
 #: confirmed_by: rjoop
 #: confirmed_by: srt (westlicher Abschnitt)
-Bildhauerweg: Asphalt	Q0 15984,1233 16057,1331
+Bildhauerweg: Asphalt	Q0 15984,1233 16036,1303 16057,1331
 #: corrected_by: srt ("guter Asphalt" -> "Beton", zumindest der mittlere Abschnitt)
 Bildhauerweg: Beton	Q0 16057,1331 16087,1372 16138,1436 16165,1468 16200,1499 16252,1544 16308,1585 16340,1609 16374,1634
 Bildhauerweg: guter Asphalt	Q0 16374,1634 16413,1664 16450,1691 16549,1758
@@ -19585,7 +19587,7 @@ Stienitzseestr.: schlechtes Kopfsteinpflaster	Q3 20329,3928 20522,4056 20694,417
 Hoffmannstr. (Adlershof): schlechtes Kopfsteinpflaster	Q3 20280,3996 20467,4122 20623,4227
 # 
 #: by: Ria (schl...z)
-Fleischerstr.: Asphalt	Q0 16433,1180 16352,1226 16087,1372 15834,1518 15729,1573
+Fleischerstr.: Asphalt	Q0 16433,1180 16352,1226 16087,1372 15987,1430 15834,1518 15729,1573
 # 
 #: by: Christian Riemer:
 #: note: Tempo 30-Zone

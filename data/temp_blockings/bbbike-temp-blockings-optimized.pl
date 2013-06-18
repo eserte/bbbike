@@ -55,20 +55,7 @@ userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1371419999,
-         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (15.6.2013 bis 16.6.2013',
-         'from' => 1371160800,
-         'id' => 74,
-         'data' => 'userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
-userdel	2::temp 6729,10212 6971,10346
-userdel	2::temp 6628,10318 6626,10155
-userdel	2::temp 6502,10273 6628,10318 6719,10347
-userdel	2::temp 6719,10347 6729,10212 6739,10120
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1742,19 +1729,6 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1371419999,
-         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (14.6.2013 bis 16.6.2013)',
-         'from' => 1371074400,
-         'id' => 1702,
-         'data' => 'userdel	2::temp 22111,4562 22093,4499 22076,4422
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22175,4730 22138,4661 22133,4644 22111,4562
-userdel	2::temp 22133,4644 22074,4664
-# REMOVED --- userdel	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -1828,17 +1802,8 @@ userdel	2::temp 22133,4644 22074,4664
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130604.0915.385618.html',
-         'data' => 'userdel	2::temp 9134,15953 9059,16038 8993,16100 8928,16158 8862,16208 8788,16264
-',
-         'periodic' => 1,
-         'until' => 1371419999,
-         'from' => 1371160800,
-         'text' => 'Badstr. (Wedding) zwischen Pankstr. und Behmstr. Veranstaltung (Seifenkistenderby), Straße vollständig gesperrt (15. und 16. Juni 2013)',
-         'type' => 'gesperrt',
-         'id' => 1776
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2891,7 +2856,7 @@ userdel	2::inwork 19968,16 19940,52
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende August 2013',
          'from' => 1330902000,
          'id' => 2316,
-         'data' => '#: osm_watch: way id="23243508" version="31"
+         'data' => '#: osm_watch: way id="23243508" version="33"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
@@ -2926,8 +2891,10 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
          'from' => 1371578400,
          'id' => 2330,
          'data' => '#: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
-#: XXX nächste Sperrung im Juli 2013
-#: next_check: 2013-07-06
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130618.1615.386236.html
+#: XXX nächste Sperrung: Mo 8. Juli (17 Uhr) bis So 14. Juli (4 Uhr)
+#: next_check: 2013-06-30
+#: priority: #A
 userdel	2::inwork 18731,8577 18709,8423
 ',
          'type' => 'gesperrt'
@@ -3213,21 +3180,7 @@ userdel	q2::inwork 5268,11274 5247,10992
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
-         'until' => 1371560400,
-         'text' => 'Fahrbahnsanierung Cauerstraße: Einbahnstraße, offen in Richtung Otto-Suhr-Allee, auch Einschränkungen in der Guerickestraße, von Montag, dem 29.04.2013, bis Mitte Juni',
-         'from' => 1367100000,
-         'id' => 2423,
-         'data' => '#: source_id: IM_019774 vvv
-userdel	q4::inwork; 4359,11979 4441,12185 4518,12350
-# REMOVED (dieser Abschnitt für Anlieger befahrbar) --- userdel	q4::inwork; 4518,12350 4598,12501
-# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4601,12310 4518,12350 4358,12365
-# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4358,12365 4518,12350 4601,12310
-#: source_id ^^^
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -3359,26 +3312,8 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1371506399,
-         'text' => 'Flughafen Tempelhof: Sperrung der Zugänge zum Peter-Strasser-Weg wegen einer Veranstaltung (Ironman Berlin)',
-         'from' => 1371074400,
-         'id' => 2447,
-         'data' => 'userdel	2::temp 9522,7624 9362,7616 9281,7651
-userdel	2::temp 9562,7796 9372,7798 9281,7795
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'INKO_118700',
-         'until' => 1371419999,
-         'text' => 'Karower Chaussee / Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße gesperrt, 15.06.2013-16.06.2013 ',
-         'from' => 1371189600,
-         'id' => 2448,
-         'data' => 'userdel	2::inwork 16201,24354 16123,24232
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1371664800,
          'text' => 'Pariser Platz und weite Umgebung: umfangreiche Sperrungen wegen des Obama-Besuchs, 19. Juni 2003 von 6 bis 20 Uhr',
@@ -3417,6 +3352,27 @@ userdel	2::temp 8438,11753 8473,11634 8553,11638 8567,11799 8571,11846
 userdel	2::temp 3280,12512 3189,12519 3034,12502 2786,12473 2745,12467 2717,12463
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_119210',
+         'until' => 1376229600,
+         'text' => 'Bergiusstr.: Baustelle, Fahrbahn gesperrt, Gehweg evtl. auch nicht passierbar, bis 11.08.2013 16:00 Uhr ',
+         'from' => 1371358800,
+         'id' => 2451,
+         'data' => 'userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
+         'from' => undef,
+         'id' => 2452,
+         'data' => '#: last_checked: 2013-06-18
+#: next_check: 2013-07-18
+userdel	q4::inwork 13301,8606 13262,8554 13217,8493
+',
+         'type' => 'handicap'
        }
      
 );

@@ -359,6 +359,11 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich (bis Anfang 08/13) Kreuzung Straße der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976
+#: XXX_indoor vmz-Eintrag: Straße der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich, Überfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975
+#: XXX_prog ich brauche eine Kombination aus den Kategorien "3" und "qX". Oder wahlweise "3" mit einer Zeitangabe (wie BNP oder 0).
+Straße der Pariser Kommune: Überqueren der Karl-Marx-Allee nur mit Zeitverlust möglich	?::inwork  12891,12549 12869,12425 12850,12286
+# 
 #: XXX außerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist
 #: last_checked: 2013-06-16
 #: next_check: 2013-07-16
@@ -472,14 +477,14 @@ Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 1
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
-#: last_checked: 2013-06-11
+#: last_checked: 2013-06-18
 #: check_frequency: 90d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12081,9680 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
 #: XXX zurzeit (2013-05-23) ein leerer Pfostem am Kottbusser Damm, kommt hier das Fahrradstraßenschild hin?
-#: last_checked: 2013-06-11
+#: last_checked: 2013-06-18
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -946,8 +951,11 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX vmz-Eintrag: Bergiusstr. (Neukölln) Einfahrt / Ausfahrt Kreuzung Grenzallee Geplant ab: 17.06.2013 07 Uhr, Baustelle, gesperrt (bis Mitte 08/13)	INKO_119210	
-Bergiusstr.: können Radfahrer hier trotz Sperrung der Fahrbahn weiterhin passieren?	? 14153,6795 14193,6718
+#: XXX_osm: laut osm gibt es jetzt cycleway=track
+Ruppiner Str.: existieren Radwege in beiden Richtungen?	? -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
+#: XXX ggfs. auch Grünfläche in flaechen-orig aufnehmen
+Wutzkyallee - Rudower Fließ: Verbindung durch Grünanlage aufnehmen. Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474 15686,1501 15776,1456 15795,1428 15878,1378 15920,1392 16038,1303 16086,1262 16329,1128 16419,1048
+Grünanlage - Fleischerstr.: Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15920,1392 15987,1430
 Helene-Weigel-Platz: Qualität (wahrscheinlich betoniert)? Zufahrt zur Märkischen Allee?	? 19439,13633 19463,13636 19482,13572 19602,13575 19625,13576 19697,13576
 Zugang zum Eastgate (?): möglich? Qualität?	? 19870,15172 19852,15201 19775,15276 19782,15309 19759,15336 19768,15361
 Greifswalder Str. - Volkspark: Verbindung genauer anschauen	? 12584,14928 12572,14836
@@ -1215,6 +1223,7 @@ Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::proj
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf?start&ts=1352885627&file=benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2013
 #: XXX Privatweg
+#: XXX fehlt in Berlin.coords.data, PLZ=13189
 #: note: Weg in der Anlage "Insel Rügen" eG
 #: osm_watch: way id="28997509" version="11"
 #: last_checked: 2013-06-04
@@ -1680,6 +1689,8 @@ Im Schäferfeld: Qualität?	? -8098,-3680 -8198,-3696 -8317,-3775 -8404,-3824 -847
 Fichtenallee (Potsdam): Qualität?	? -8563,-3805 -8451,-3728 -8226,-3592
 Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6767,-4463 -6671,-6390 -6516,-6520 -6508,-6969 -6191,-7587 -6319,-7823 -5766,-8911 -5387,-8896
 Königsdamm in Schlänitzsee: Qualität? Führt hier die F3 entlang?	? -19309,4359 -19392,4605
+#: XXX fehlt in Potsdam.coords.data, PLZ=14469
+Am Stichkanal: Qualität? Genaue Lage?	? -19450,4599 -19375,4360
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19392,4605 -18701,4578
 # REMOVED (warum eigentlich removed?) --- F3 nach Marquardt: genaue Wegführung? Laut "mobil-potsdam.de" Kopfsteinpflaster	? -18701,4574 -18722,4681 -18743,4789 -18811,4782
 Joachimsthal - Altkünkendorf: Qualität?	? 35512,66695 38125,66800 39287,67537 39575,67262 39875,66425

@@ -20113,7 +20113,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
-#: osm_watch: way id="23243508" version="31"
+#: osm_watch: way id="23243508" version="33"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
@@ -20245,8 +20245,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
-#: XXX nächste Sperrung im Juli 2013
-#: next_check: 2013-07-06
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130618.1615.386236.html
+#: XXX nächste Sperrung: Mo 8. Juli (17 Uhr) bis So 14. Juli (4 Uhr)
+#: next_check: 2013-06-30
+#: priority: #A
 userdel	2::inwork 18731,8577 18709,8423
 EOF
      },
@@ -21138,7 +21140,7 @@ userdel	q2::inwork 5268,11274 5247,10992
 EOF
      },
      { from  => 1367100000, # 2013-04-28 00:00
-       until => $isodate2epoch->("2013-06-18 15:00:00"), # 1370815199, # 2013-06-09 23:59
+       until => 1371492094, # $isodate2epoch->("2013-06-18 15:00:00"), # 1370815199, # 2013-06-09 23:59
        text  => 'Fahrbahnsanierung Cauerstraße: Einbahnstraße, offen in Richtung Otto-Suhr-Allee, auch Einschränkungen in der Guerickestraße, von Montag, dem 29.04.2013, bis Mitte Juni',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
@@ -21458,6 +21460,25 @@ EOF
        data  => <<EOF,
 userdel	2::temp 2414,12418 2643,12453
 userdel	2::temp 3280,12512 3189,12519 3034,12502 2786,12473 2745,12467 2717,12463
+EOF
+     },
+     { from  => 1371358800, # 2013-06-16 07:00
+       until => 1376229600, # 2013-08-11 16:00
+       text  => 'Bergiusstr.: Baustelle, Fahrbahn gesperrt, Gehweg evtl. auch nicht passierbar, bis 11.08.2013 16:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'INKO_119210',
+       data  => <<EOF,
+userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2013-06-18
+#: next_check: 2013-07-18
+userdel	q4::inwork 13301,8606 13262,8554 13217,8493
 EOF
      },
     );
