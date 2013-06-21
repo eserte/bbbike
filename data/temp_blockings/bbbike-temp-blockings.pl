@@ -15086,11 +15086,11 @@ EOF
 userdel	2::inwork -2997,-52781 -6384,-53390
 EOF
      },
-     { from  => undef, # 
-       until => 1248600361, # 2009-07-26 23:59 1248645599
+     { from  => $isodate2epoch->("2013-06-22 00:00:00"), # 
+       until => $isodate2epoch->("2013-07-10 22:00:00"), # XXX 1248600361, # 2009-07-26 23:59 1248645599
        text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
        type  => 'gesperrt',
-       source_id => 'IM_013767',
+       source_id => 'IM_019981',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 userdel	2::temp 8538,12245 8600,12165 8595,12066
@@ -20113,7 +20113,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
-#: osm_watch: way id="23243508" version="33"
+#: osm_watch: way id="23243508" version="34"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
@@ -20247,6 +20247,7 @@ EOF
 #: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130618.1615.386236.html
 #: XXX nächste Sperrung: Mo 8. Juli (17 Uhr) bis So 14. Juli (4 Uhr)
+#: source_id: INKO_118652
 #: next_check: 2013-06-30
 #: priority: #A
 userdel	2::inwork 18731,8577 18709,8423
@@ -20816,22 +20817,24 @@ EOF
      },
      { from  => 1353366000, # 2012-11-20 00:00
        until => 1386169200, # 2013-12-04 16:00
-       text  => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)',
+       text  => 'Friedrich-Engels-Str. in beiden Richtungen zwischen Nordendstr. und Platananenstr. Baustelle, gesperrt (bis September 2013), danach wieder Einbahnstraße',
        type  => 'handicap',
-       source_id => 'IM_019421',
+       source_id => 'INKO_119074',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130614.1020.386081.html (Vollsperrung ab Juni 2013)
 #: by: IM_019421 (allerdings hier nur bis Dezember 2013)
-#: next_check: 2013-06-22
+#: next_check: 2013-09-01
 #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen
+#: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074
 #: priority: #A
-# --- next_check: 2013-12-04 (für die alte Situation)
+# --- next_check: 2013-12-04 (für die alte Situation --- q4::inwork;, IM_019421)
+#: XXX alter Text: Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)
 #: XXX danach bessere Straßenqualität? Radstreifen?
 #: osm_watch: way id="24930947" version="20"
-userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
+userdel	q4::inwork 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 EOF
      },
      { from  => 1350252000, # 2012-10-15 00:00

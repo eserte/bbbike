@@ -49,7 +49,7 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-06-06
+#: last_checked: 2013-06-21
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -115,7 +115,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-06-10
+#: last_checked: 2013-06-20
 #: check_frequency: 90d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -232,7 +232,7 @@ Karl-Marx-Str.: wann werden hier die Radspuren markiert?	?::projected 13085,6925
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
-#: last_checked: 2013-06-15
+#: last_checked: 2013-06-21
 #: check_frequency: 90d
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
@@ -560,16 +560,16 @@ Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
 #: by: ^^^
 # 
-#: last_checked: 2013-05-04
-#: next_check: 2013-06-08
 #: note: Treskowallee (Lichtenberg) in Höhe Waldowallee Baustelle, Fahrbahn von 2 auf 1 Fahrstreifen reduziert, ein Abbiegen aus Richtung Am Tierpark in die Waldowallee ist nicht möglich (bis Ende 03/2013)
 #: source_id: IM_019443
 #: osm_watch: node id="28394944" version="19"
+#: last_checked: 2013-06-21
+#: next_check: 2013-07-21
 Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18867,9464 18834,9256
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2013-05-15
+#: last_checked: 2013-06-19
 #: next_check: 2013-10-28
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -951,8 +951,6 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX_osm: laut osm gibt es jetzt cycleway=track
-Ruppiner Str.: existieren Radwege in beiden Richtungen?	? -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 #: XXX ggfs. auch Grünfläche in flaechen-orig aufnehmen
 Wutzkyallee - Rudower Fließ: Verbindung durch Grünanlage aufnehmen. Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474 15686,1501 15776,1456 15795,1428 15878,1378 15920,1392 16038,1303 16086,1262 16329,1128 16419,1048
 Grünanlage - Fleischerstr.: Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15920,1392 15987,1430
@@ -961,6 +959,8 @@ Zugang zum Eastgate (?): möglich? Qualität?	? 19870,15172 19852,15201 19775,1527
 Greifswalder Str. - Volkspark: Verbindung genauer anschauen	? 12584,14928 12572,14836
 #: XXX_indoor: Verbindung aufnehmen?
 #: XXX_prog: wäre gut, wenn die Verlustzeit der versetzt arbeitenden Fußgängerampel hier einfließen könnte
+#: XXX von der Gubener Str. aus muss man ein kleines bisschen nach links fahren
+#: XXX BS am Weidenweg, wobei nach Osten hier irgendwo eine Absenkung ist
 Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13163,12382 13176,12500
 # REMOVED (nein, sieht nur nach Leitungsarbeiten aus) --- Kirchhofstr.: Sackgasse --- eventuell Bauarbeiten, vielleicht wird die Qualität hier besser?	? 13027,7368 13117,7471
 #: priority: #C
@@ -980,11 +980,7 @@ Grillostr. - Wehnertstr.: existiert hier eine Verbindung? Wenn ja: Qualität? Bel
 Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?	? 15102,20723 15220,20586 15255,19906
 Blankenburger Pflasterweg - Ornitstr.: Qualität? Beleuchtet? Genaue Wegführung?	? 15255,19906 15357,19880 15413,18626
 Am Heinersdorfer Graben: Qualität? Beleuchtet? Straßenname (bei osm: Kiebitzweg)	? 13902,18953 13404,19235 13040,19596
-Schwarzmeerstr. - Rummelsburger Str.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17751,10904 17768,10963 17700,11042 17719,11092
-Am Lindenplatz - Schwarzmeerstr.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17855,10873 17821,10741
-Schwarzmeerstr. - Moldaustr.: existiert hier eine Wegverbindung? Qualität? beleuchtet?	? 17882,10728 17847,10629 17850,10524 17829,10516
-Erieseering - am Tränkegraben: existiert hier eine Wegverbindung? Qualität? beleuchtet?	? 18141,10173 18039,10398 17999,10584
-# 
+# REMOVED (existiert zwar, ist aber nicht so wichtig, da Alternativen existieren. Parkplatz. Schranke im Süden, Poller im Norden) --- Am Lindenplatz - Schwarzmeerstr.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17856,10879 17821,10741
 Sophienwerderweg: Qualität des östlichen Abschnitts? Für Autos gesperrt? Beleuchtet?	? -729,13415 -787,13451 -684,13707 -1031,13925 -1188,13988
 # 
 Kurt-Schumacher-Damm: kann man hier entgegen der Einbahnstraßenrichtung auf dem Gehweg fahren?	?; 2831,14219 2803,14288
@@ -1147,8 +1143,11 @@ Fontanestr. (Lichtenrade): Qualität des Rad/Gehweg-Abschnitts?	? 9779,-605 9822,
 #: XXX nochmal genau vor Ort anschauen
 An der Vogelweide: Qualität? Lage? Straßenschilder?	? 8568,21863 8626,21892 8712,21858 8725,21910 8615,21955 8590,21894
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2013
+#: XXX fehlt in Berlin.coords.data
 #: last_checked: 2013-06-14
-An der ehem. Blumengroßmarkthalle: hier wird eine neue Verbindung entstehen --- gepflastert (genaue Qualität?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
+#: next_check: 2013-08-01 (Benennung wird wirksam)
+Fromet-und-Moses-Mendelssohn-Platz: hier wird eine neue Verbindung entstehen --- gepflastert (genaue Qualität?), beleuchtet	?::inwork 9777,10719 9784,10740 9733,10827 9682,10836 9666,10848
 # 
 #: next_check: 2013-05-01
 Tegelort - Hakenfelde (sowie Fähre via Valentinswerder): prüfen, ob es nennenswerte Verbindungen gibt (außer am Wochenende)	? -1694,17839 -1828,17796
@@ -3313,7 +3312,7 @@ Eulenweg: Qualität? Wo genau befindet sich die Straße (möglichst mit GPS-Track)?
 #: last_checked: 2012-04-14
 #: next_check: 2012-09-01
 #: XXX Wo genau befindet sich der Weg?
-#: osm_watch: way id="151742436" version="2"
+#: osm_watch: way id="151742436" version="3"
 #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg
 Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsberuhigt?	? 17610,-330 17651,-393
 # 
@@ -3349,9 +3348,10 @@ Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straße Straßenschild
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 vvv
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130620.1355.386320.html (Fertigstellung der Erschließungsstraße)
 #: XXX neue private Straßen entstehen, fehlen in Berlin.coords.data vvv
 #: last_checked: 2012-09-10 vvv
-#: next_check: 2013-09-10 vvv
+#: next_check: 2013-06-30 vvv
 #: osm_watch: way id="220390908" version="1"
 #: XXX ad osm_watch: id referenziert die construction area
 Lübarser Aue: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7185,22466 7147,22393

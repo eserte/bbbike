@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-06-18 vvv
+#: last_checked: 2013-06-21 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -33,7 +33,7 @@ Simplonstr.: Bauarbeiten, umst‰ndliches ‹berqueren der Modersohnstr.	q3::inwork 
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-06-18
+#: last_checked: 2013-06-20
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 13366,11651 13295,11792
 # 
 # REMOVED (fast keine Einschr‰nkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14247,11681 14272,11775
@@ -79,11 +79,8 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 #: note: ab Glinkastr. nur ungef‰hr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
-#: last_checked: 2013-06-10 (wosch) vvv
-#: osm_watch: way id="25185423" version="14"
-Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
+# REMOVED (by osm) --- #: last_checked: 2013-06-10 (wosch) vvv --- #: osm_watch: way id="25185423" version="15"--- Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978 --- #: last_checked ^^^
 # REMOVED (by wosch) --- #: osm_watch: way id="4597205" version="6" --- Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
-#: last_checked ^^^
 # 
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr.
 #: XXX Siehe auch Totalsperrung in der Voﬂstr.
@@ -129,18 +126,14 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 # 
 # REMOVED --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # REMOVED (eigentlich gut zu befahren) --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14513,11075 14442,11101
-# 
-#: last_checked: 2013-06-17
-#: next_check: 2013-06-20
-#: priority: #A
-Bernhard-Weiﬂ-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
+# REMOVED --- #: last_checked: 2013-06-17 --- #: next_check: 2013-06-20 --- #: priority: #A --- Bernhard-Weiﬂ-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
 # 
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2013-06-14
+#: last_checked: 2013-06-21
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erw‰hnt)
-#: last_checked: 2013-06-14
+#: last_checked: 2013-06-21
 #: priority: #A
 Rathausstr.: Fahrbahn an der Spandauer Str. gesperrt, Ausweichen auf Gehweg	q4::inwork 10584,12507 10601,12521
 # 
@@ -149,7 +142,7 @@ Rathausstr.: Fahrbahn an der Spandauer Str. gesperrt, Ausweichen auf Gehweg	q4::
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2013-06-18 vvv
+#: last_checked: 2013-06-20 vvv
 #: note: q4 zumindest im Berufsverkehr vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
 Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q4::inwork; 10389,11390 10446,11470
@@ -687,7 +680,7 @@ Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22236,6233 22214,6271 22146,6338 22097,6
 Wuhlewanderweg: Fuﬂg‰nger	q1 21385,9049 21468,9230 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10230 21581,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21830,10679 21867,10733 21950,10776 22060,10778 22097,10812 22160,10834
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18512,10337 18484,10411 18394,10348
-Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18101,10169 18048,10169
+Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18048,10169
 (Dathepromenade - Sewanstr.): Bordsteine	q3 17953,10123 17905,10122
 #: note: die "parkenden Autos" von Uwe Schellenberg in der Rheinsteinstr. habe ich wieder entfernt
 Rheingoldpark: Fuﬂg‰nger haben Vorrang	q1 19073,8828 19145,8659
@@ -933,7 +926,7 @@ Maselakepark: Fuﬂg‰nger	q1 -2587,16600 -2632,16347
 Nordhafen: Fuﬂg‰nger	q1 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2972,16399 -2972,16420
 (Gr¸nheider Weg - Fredersdorfer Weg): starker Anstieg, nicht f¸r Fahrr‰der geeignet	q4 30867,3806 30862,3816 30849,3843 30823,3866
 Seidenbienenweg: sehr eng	q4 31914,2767 31909,2802 31884,2841
-(entlang des Tr‰nkegrabens): Fuﬂg‰nger, Radfahren erlaubt	q2+ 16900,9861 17011,9950 17084,10036 17137,10098 17149,10160 17137,10238 17160,10376 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17897,10607 17999,10584 18059,10556 18150,10543
+(entlang des Tr‰nkegrabens): Fuﬂg‰nger, Radfahren erlaubt	q2+ 16900,9861 17011,9950 17084,10036 17137,10098 17149,10160 17137,10238 17160,10376 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
 Hortensienplatz: einige Fuﬂg‰nger, Bordsteine	q3 4156,4784 4121,4841 4116,4850
 (Lustgarten entlang des Spreekanals): Fuﬂg‰nger	q2 10063,12438 9956,12617 9948,12631
 Blaurackenweg: enge Straﬂe, spielende Kinder	q1 17613,7989 17647,8071 17532,8125
@@ -1598,6 +1591,12 @@ Kurzer Weg: Fuﬂg‰nger	q2+ 15154,5706 15151,5746 15204,5752
 Preuﬂensiedlung: einige Fuﬂg‰nger	q1 20971,1046 20957,1043 20850,963
 (Gr¸nzug am Falkenberg): Pfad	q2 21205,286 21230,309 21300,326
 (Bruno-Taut-Str. - Am Gartenstadtweg): Fuﬂg‰nger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21714,601 21679,596
+#: XXX_prog: s¸dliches Ende
+Erieseering: Bordstein	q2 18141,10173 18132,10183
+(Erieseering - am Tr‰nkegraben): einige Fuﬂg‰nger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
+#: note: am nˆrdlichen Eingang existiert ein Schild "Radfahrer absteigen", aber am s¸dlichen Ende fehlt so ein Schild
+(Zachertstr. - am Tr‰nkegraben): Fuﬂg‰nger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
+(am Tr‰nkegraben - Moldaustr.): einige Fuﬂg‰nger	q1 17870,10619 17856,10560 17864,10537 17856,10508
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

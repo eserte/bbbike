@@ -14,7 +14,6 @@ Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9580,12581 9601,12380
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
-Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689
 Scharnhorststr.: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
@@ -24,7 +23,6 @@ Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 Ella-Trebe-Str./Berta-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022 7867,13106 7937,13109
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
-Bernhard-Weiﬂ-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Rathausstr.: Fahrbahn an der Spandauer Str. gesperrt, Ausweichen auf Gehweg	q4::inwork 10584,12507 10601,12521
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -432,7 +430,7 @@ Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22236,6233 22214,6271 22146,6338 22097,6
 Wuhlewanderweg: Fuﬂg‰nger	q1 21385,9049 21468,9230 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10230 21581,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21830,10679 21867,10733 21950,10776 22060,10778 22097,10812 22160,10834
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18512,10337 18484,10411 18394,10348
-Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18101,10169 18048,10169
+Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18048,10169
 (Dathepromenade - Sewanstr.): Bordsteine	q3 17953,10123 17905,10122
 Rheingoldpark: Fuﬂg‰nger haben Vorrang	q1 19073,8828 19145,8659
 Schloﬂinsel Kˆpenick: Fuﬂg‰nger	q4 22093,4499 22076,4422
@@ -636,7 +634,7 @@ Maselakepark: Fuﬂg‰nger	q1 -2587,16600 -2632,16347
 Nordhafen: Fuﬂg‰nger	q1 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2972,16399 -2972,16420
 (Gr¸nheider Weg - Fredersdorfer Weg): starker Anstieg, nicht f¸r Fahrr‰der geeignet	q4 30867,3806 30862,3816 30849,3843 30823,3866
 Seidenbienenweg: sehr eng	q4 31914,2767 31909,2802 31884,2841
-(entlang des Tr‰nkegrabens): Fuﬂg‰nger, Radfahren erlaubt	q2 16900,9861 17011,9950 17084,10036 17137,10098 17149,10160 17137,10238 17160,10376 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17897,10607 17999,10584 18059,10556 18150,10543
+(entlang des Tr‰nkegrabens): Fuﬂg‰nger, Radfahren erlaubt	q2 16900,9861 17011,9950 17084,10036 17137,10098 17149,10160 17137,10238 17160,10376 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
 Hortensienplatz: einige Fuﬂg‰nger, Bordsteine	q3 4156,4784 4121,4841 4116,4850
 (Lustgarten entlang des Spreekanals): Fuﬂg‰nger	q2 10063,12438 9956,12617 9948,12631
 Blaurackenweg: enge Straﬂe, spielende Kinder	q1 17613,7989 17647,8071 17532,8125
@@ -1162,6 +1160,10 @@ Kurzer Weg: Fuﬂg‰nger	q2 15154,5706 15151,5746 15204,5752
 Preuﬂensiedlung: einige Fuﬂg‰nger	q1 20971,1046 20957,1043 20850,963
 (Gr¸nzug am Falkenberg): Pfad	q2 21205,286 21230,309 21300,326
 (Bruno-Taut-Str. - Am Gartenstadtweg): Fuﬂg‰nger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21714,601 21679,596
+Erieseering: Bordstein	q2 18141,10173 18132,10183
+(Erieseering - am Tr‰nkegraben): einige Fuﬂg‰nger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
+(Zachertstr. - am Tr‰nkegraben): Fuﬂg‰nger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
+(am Tr‰nkegraben - Moldaustr.): einige Fuﬂg‰nger	q1 17870,10619 17856,10560 17864,10537 17856,10508
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789

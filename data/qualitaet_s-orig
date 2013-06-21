@@ -2299,7 +2299,7 @@ Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322 19020,9364
 # REMOVED (nicht (mehr?) mäßig) --- Waldowallee: mäßiger Asphalt	Q1 18977,9322 18939,9417 18916,9468
 Seifertweg: Asphalt	Q0 18870,9960 18843,10028
 Heinrich-Dathe-Platz: große Gehwegplatten	Q1 18512,10337 18484,10411 18394,10348
-Dathepromenade: große Gehwegplatten	Q1 18394,10348 18320,10318 18302,10289 18314,10260 18101,10169 18048,10169
+Dathepromenade: große Gehwegplatten	Q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18048,10169
 (Erieseering - Dathepromenade): große Gehwegplatten	Q1 18319,10249 18314,10260
 #: XXX_osm: in osm ist fälschlicherweise surface=cobblestone eingetragen
 Rhododendronweg: Verbundsteinpflaster	Q1+ 16146,12881 16148,12772 16200,12771 16197,12880
@@ -2833,8 +2833,9 @@ An der Rehwiese: schlechtes Kopfsteinpflaster	Q3 -3215,2048 -3249,2002
 Am Kupfergraben: Kopfsteinpflaster	Q2 9870,12657 9900,12643 9919,12613
 #: XXX früher war hier ein Betonplattengehweg (Q0-), evtl. wird er nach den Bauarbeiten ("Besser Parken GmbH") wieder hergestellt
 #: XXX Bauarbeiten sind anscheinend fertig, aber der Weg sieht noch immer provisorisch aus
-#: last_checked: 2013-05-04
-#: next_check: 2013-07-04
+#: XXX 2013-06-21: der Weg ist noch immer nicht hergestellt, aber er sieht jetzt etwas besser aus, mal wieder ausprobieren...
+#: last_checked: 2013-06-21
+#: next_check: 2013-07-21
 (Ontarioseestr. - Treskowallee): unbefestigter Pfad	Q2- 18577,10023 18694,10018
 Bopparder Str.: mäßiger Beton	Q1- 18790,9018 18881,9002
 Sinziger Str.: Beton	Q1 18886,9031 18978,9014
@@ -3645,11 +3646,12 @@ Brückenstr. (Rahnsdorf): schlechtes Kopfsteinpflaster, teilweise Banketten vorha
 (entlang des Tränkegrabens): Asphalt	Q0 16900,9861 17011,9950
 (entlang des Tränkegrabens): Beton	Q0- 17011,9950 17084,10036 17137,10098 17149,10160 17137,10238 17160,10376
 (entlang des Tränkegrabens): Beton/Asphalt	Q0 17160,10376 17249,10666
-(entlang des Tränkegrabens): Beton	Q0- 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17897,10607 17999,10584 18059,10556 18150,10543
+(entlang des Tränkegrabens): Beton	Q0- 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
 (Baikalstr. - Tränkegraben): asphaltiert	Q0 17281,10598 17249,10666
 Schwarzmeerstr. [Wohngebiet]: asphaltiert	Q0 17708,10768 17751,10904
-Schwarzmeerstr. [Wohngebiet]: Beton	Q1 17751,10904 17838,10878 17855,10873
-Am Lindenplatz: Verbundsteinpflaster	Q1 17838,10878 17856,10961
+Schwarzmeerstr. [Wohngebiet]: Beton	Q1 17751,10904 17839,10883 17856,10879
+Am Lindenplatz: Verbundsteinpflaster	Q1 17839,10883 17856,10961
+(Kolonie Märkische Aue - Schwarzmeerstr./Am Lindenplatz): Beton	Q0- 17914,10861 17856,10879
 Bahrendorfer Str.: Beton	Q0- 21696,7674 21736,7489 21771,7466 21865,7403 21956,7428
 Außenweg: unbefestigte Straße, etwas holprig, Schotter	Q2+ -7783,8524 -7457,8282 -7431,8255
 Außenweg: Asphalt	Q0 -7431,8255 -7425,8153 -7460,7826 -7418,7842
@@ -5054,7 +5056,7 @@ Schwalbenflug: Asphalt	Q0- 20093,14591 20068,14516 20059,14477 20059,14441
 Annenstr. (Biesdorf): Asphalt	Q0 20371,14204 20467,14196
 Eugen-Roth-Weg: Asphalt	Q0 20072,13070 20068,13036 20048,12830
 Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
-Einbecker Str.: Asphalt mit Schäden	Q1 17880,11226 17764,11371
+Einbecker Str.: Asphalt mit Schäden	Q1 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
 Jaczostr.: Beton	Q0 -4063,11805 -4101,11708
 Jaczostr.: Asphalt	Q0 -4101,11708 -4243,11596 -4263,11582 -4367,11516
@@ -5561,7 +5563,7 @@ Schalauer Str.: Asphalt	Q0 17310,26452 17367,26349 17423,26253
 Straße 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
 (Straße 7 - Zepernicker Str.): Asphalt	Q0 17668,26607 17714,26509 17764,26410
 Am Wiesenweg: Asphalt	Q0 21977,988 21857,989 21708,937 21683,906
-(Bethaniendamm - Wrangelstr.): Kopfsteinpflaster	Q2 11845,11095 11893,11074 11958,11045
+(Bethaniendamm - Wrangelstr.): Kopfsteinpflaster	Q2+ 11845,11095 11893,11074 11958,11045
 Mariannenplatz: Kopfsteinpflaster	Q2 11893,11074 11854,10972 11819,10942 11805,10899 11803,10857 11799,10848 11770,10774
 (Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4816,17712
 Belowstr.: guter Beton	Q0 4946,17701 4992,17908
@@ -8634,6 +8636,13 @@ Helene-Weigel-Platz: Asphalt	Q0 19628,13517 19625,13576
 #: XXX (westlicher Wuhlewanderweg): wassergebundene Decke?
 #: add_fragezeichen: Wegbeschaffenheit und Qualität des Wuhlewanderwegs entlang des Kienbergs?
 	Q1 22415,14151 22679,14450 22552,14777 22460,14820 22382,14908 22343,15115
+(Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1- 18132,10183 18130,10201 18113,10208
+(Erieseering - am Tränkegraben): Parkweg, teilweise mit Schotter	Q2+ 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
+(Zachertstr. - am Tränkegraben): Beton	Q0- 17848,11204 17893,11146
+(Zachertstr. - am Tränkegraben): überwiegend Asphalt, kurzer unbefestigter Abschnitt	Q0- 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
+Schwarzmeerstr. [zur Rummelsburger Str.]: Asphalt	Q0 17751,10904 17763,10950 17676,10976
+Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]: Asphalt	Q0 17676,10976 17689,11025 17679,11052
+(am Tränkegraben - Moldaustr.): Gehwegplatten	Q1 17870,10619 17856,10560 17864,10537 17856,10508
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -9352,7 +9361,7 @@ Boschweg: Beton	Q0- 14784,6169 14788,6261 14760,6319 14564,6496
 #: confirmed_by: srt
 Sellinstr.: mäßiger Asphalt	Q1 11195,17911 11217,17783
 Erlenweg: mäßiger Asphalt	Q1 -3327,18007 -3226,18109
-Zachertstr.: Beton	Q0 17070,11375 17155,11348 17248,11317 17322,11296 17500,11252 17582,11240 17725,11228 17807,11219 17852,11202
+Zachertstr.: Beton	Q0 17070,11375 17155,11348 17248,11317 17322,11296 17500,11252 17582,11240 17725,11228 17807,11219 17848,11204
 Belziger Ring: Asphalt	Q0 22215,17784 22059,17842 21931,17818 21882,17748 21968,17714 21995,17754 22148,17687
 #: corrected_by: srt (Asphalt -> )
 Blesener Zeile: Beton	Q0 3214,20629 3395,20660
@@ -11892,7 +11901,7 @@ Buchfinkweg: gute Betonstraße	Q0 14407,3356 14579,3251 14616,3203 14674,3103 147
 Im Mühlenfelde: Asphalt	Q0 1255,2923 1320,2731 1324,2603
 # 
 #: by: Peter Thom:
-Schwarzmeerstr.: Beton	Q1 17569,10801 17708,10768 17821,10741 17882,10728
+Schwarzmeerstr.: Beton	Q1 17569,10801 17708,10768 17821,10741 17874,10729
 # 
 #: by: Alexander Quickert: vvv
 Prinz-Heinrich-Str.: Asphalt	Q0 9982,-1818 9959,-1918 9961,-2136
@@ -14860,7 +14869,7 @@ Rue Hyancinthe Vincent: guter Asphalt	Q0 3456,16713 3455,16659 3401,16582 3382,1
 Sachsenwaldstr.: guter Asphalt	Q0 5834,6142 5984,6233 6104,6258
 # 
 #: by: J.F. (jofmoher):
-Moldaustr.: guter Beton	Q0- 17511,10577 17702,10525 17826,10493 17829,10516 17950,10481 17915,10350
+Moldaustr.: guter Beton	Q0- 17511,10577 17702,10525 17826,10493 17829,10516 17856,10508 17950,10481 17915,10350
 # 
 #: by: Matthias Kaller: vvv
 #: corrected_by: Nicole Weber (gutes Kopfsteinpflaster -> Verbundsteinpflaster, plausibler in dieser Gegend)
@@ -15359,8 +15368,13 @@ Schwanter Weg: Kopfsteinpflaster	Q2 -4744,17053 -4758,16910 -4763,16809 -4770,16
 #: confirmed_by: srt
 Würzburger Str.: guter Asphalt	Q0 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891
 # 
-#: by: stegemann bodo:
-Erieseering: guter Asphalt	Q0 18387,10070 18369,10115 18328,10225 18319,10249 18141,10173 18184,10065 18220,10051 18287,10045 18296,10027
+#: by: stegemann bodo: vvv
+Erieseering: guter Asphalt	Q0 18387,10070 18369,10115 18328,10225 18319,10249 18141,10173
+#: corrected_by: srt (added "leichte Schäden")
+Erieseering: guter Asphalt, leichte Schäden	Q0- 18141,10173 18184,10065
+#: confirmed_by: srt
+Erieseering: guter Asphalt	Q0 18184,10065 18220,10051 18287,10045 18296,10027
+#: by ^^^
 # 
 #: by: Kerstin Post: vvv
 #: confirmed_by: srt

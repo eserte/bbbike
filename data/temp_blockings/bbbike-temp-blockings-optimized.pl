@@ -1798,7 +1798,17 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019981',
+         'until' => 1373486400,
+         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
+         'from' => 1371852000,
+         'id' => 1771,
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+userdel	2::temp 8538,12245 8600,12165 8595,12066
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2856,7 +2866,7 @@ userdel	2::inwork 19968,16 19940,52
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende August 2013',
          'from' => 1330902000,
          'id' => 2316,
-         'data' => '#: osm_watch: way id="23243508" version="33"
+         'data' => '#: osm_watch: way id="23243508" version="34"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
@@ -2893,6 +2903,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
          'data' => '#: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130618.1615.386236.html
 #: XXX nächste Sperrung: Mo 8. Juli (17 Uhr) bis So 14. Juli (4 Uhr)
+#: source_id: INKO_118652
 #: next_check: 2013-06-30
 #: priority: #A
 userdel	2::inwork 18731,8577 18709,8423
@@ -3005,9 +3016,9 @@ userdel	2::temp 8119,12414 8055,12186
        undef,
        undef,
        {
-         'source_id' => 'IM_019421',
+         'source_id' => 'INKO_119074',
          'until' => 1386169200,
-         'text' => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)',
+         'text' => 'Friedrich-Engels-Str. in beiden Richtungen zwischen Nordendstr. und Platananenstr. Baustelle, gesperrt (bis September 2013), danach wieder Einbahnstraße',
          'from' => 1353366000,
          'id' => 2391,
          'data' => '#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
@@ -3015,13 +3026,15 @@ userdel	2::temp 8119,12414 8055,12186
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130614.1020.386081.html (Vollsperrung ab Juni 2013)
 #: by: IM_019421 (allerdings hier nur bis Dezember 2013)
-#: next_check: 2013-06-22
+#: next_check: 2013-09-01
 #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen
+#: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074
 #: priority: #A
-# --- next_check: 2013-12-04 (für die alte Situation)
+# --- next_check: 2013-12-04 (für die alte Situation --- q4::inwork;, IM_019421)
+#: XXX alter Text: Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)
 #: XXX danach bessere Straßenqualität? Radstreifen?
 #: osm_watch: way id="24930947" version="20"
-userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
+userdel	q4::inwork 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 ',
          'type' => 'handicap'
        },
@@ -3280,15 +3293,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1371851999,
-         'text' => 'Pariser Platz: Durchfahrt wegen des Obama-Besuchs gesperrt, auch für Radfahrer, 14. Juni bis 21. Juni 2013',
-         'from' => 1371160800,
-         'id' => 2443,
-         'data' => 'userdel	2::temp 8538,12245 8610,12254 8731,12270 8804,12280
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130611.0925.385925.html',
@@ -3314,45 +3319,8 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
        },
        undef,
        undef,
-       {
-         'until' => 1371664800,
-         'text' => 'Pariser Platz und weite Umgebung: umfangreiche Sperrungen wegen des Obama-Besuchs, 19. Juni 2003 von 6 bis 20 Uhr',
-         'from' => 1371528000,
-         'id' => 2449,
-         'data' => '#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2013
-userdel	2::temp 9141,12320 9130,12433 9123,12500 9008,12485 8907,12472 8775,12457 8540,12420 8400,12417 8354,12416 8546,12279 8570,12302 8573,12325 8540,12420
-userdel	2::temp 8596,11508 8592,11541 8623,11580 8698,11589 8736,11557 8740,11524
-userdel	2::temp 9054,12154 8861,12125 8743,12099
-userdel	2::temp 9130,12433 9016,12416 9028,12307 9141,12320 9164,12172 9064,12156 9076,12054 9183,12076 9164,12172
-userdel	2::temp 8965,11825 8901,12008 8861,12125 8804,12280 8775,12457
-userdel	2::temp 8553,11630 8548,11571 8502,11564 8442,11555 8209,11671 8203,11686
-userdel	2::temp 8502,11564 8473,11634 8397,11624
-userdel	2::temp 8354,12416 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254 8731,12270 8804,12280 9028,12307
-userdel	2::temp 8335,11718 8438,11753 8489,11782 8571,11846 8577,11896
-userdel	2::temp 8358,11477 8301,11469 8226,11458
-userdel	2::temp 8214,12205 8215,12156 8466,12197 8522,12239
-userdel	2::temp 8548,11571 8542,11502 8479,11493 8374,11479
-userdel	2::temp 8048,12135 8107,12145 8089,12041 8091,11992 8156,11863
-userdel	2::temp 8595,12066 8577,11896 8632,11912 8783,11959 8901,12008 9063,12051
-userdel	2::temp 8210,11775 8222,11881 8284,11905 8453,12099 8522,12187 8538,12245 8600,12165 8595,12066 8737,12098 8783,11959 8813,11825
-userdel	2::temp 8107,12145 8215,12156 8222,11881 8156,11863 8210,11775 8203,11686 8225,11692 8335,11718 8397,11624 8442,11555 8542,11502 8596,11508 8740,11524 9058,11564 9000,11727 8969,11814 8825,11773 8813,11825 8567,11799
-userdel	2::temp 8538,12245 8546,12279
-userdel	2::temp 9016,12416 9008,12485
-userdel	2::temp 8825,11773 8837,11676 8743,11663 8553,11638
-userdel	2::temp 8438,11753 8473,11634 8553,11638 8567,11799 8571,11846
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1371675600,
-         'text' => 'Spandauer Damm zwischen Sophie-Charlotten-Str. und Otto-Suhr-Allee: wegen des Obama-Besuchs möglicherweise nicht passierbar, 19. Juni 2003 von 12 bis 23 Uhr',
-         'from' => 1371549600,
-         'id' => 2450,
-         'data' => 'userdel	2::temp 2414,12418 2643,12453
-userdel	2::temp 3280,12512 3189,12519 3034,12502 2786,12473 2745,12467 2717,12463
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'INKO_119210',
          'until' => 1376229600,

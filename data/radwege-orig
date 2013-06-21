@@ -613,7 +613,8 @@ asphaltierter gemeinsamer Rad- und Gehweg	RW2;RW2 9228,23643 9146,23843 8984,240
 #: XXX nach den Bauarbeiten in der Ruppiner Chaussee wieder Radwege in beide Richtungen vvv
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/ruppinerchaussee.html
 #: XXX Ende der Baumaßnahmen evtl. erst Ende 2013?
-#: next_check: 2013-06-01 vvv
+#: priority: #A
+#: next_check: 2013-08-30 vvv
 früherer Radweg ist nicht mehr erkennbar	RW0; -1281,23746 -1286,23753 -1367,23853 -1627,24105 -1746,24219 -1790,24260
 vorhandener Radweg ist abgesperrt	RW0; -656,23011 -783,23190 -903,23406 -984,23480 -997,23492 -1084,23564 -1281,23746
 #: next_check ^^^
@@ -2699,7 +2700,7 @@ gemeinsamer Geh- und Radweg	RW2; 12121,20969 12095,20832 12076,20731 12039,20538
 	RW1;RW1 17161,11681 17240,11791
 	RW1;RW1 17161,11681 17208,11658 17275,11626 17341,11595 17609,11467 17734,11408
 einige Meter nicht benutzungspflichtiger Radweg an der Einbecker Str.	RW0;RW0 17734,11408 17725,11228
-	RW1;RW1 17621,10994 17719,11092 17836,11189 17852,11202 17880,11226
+	RW1;RW1 17621,10994 17679,11052 17719,11092 17834,11192 17848,11204 17876,11217
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 18061,11240 18202,11253 18229,11256 18286,11275
 	RW4; 18286,11275 18229,11256 18179,11278 18059,11256 18027,11244
 	RW;RW1 4473,8351 4505,8321 4687,8306 4788,8318
@@ -3012,7 +3013,7 @@ gemeinsamer Rad- und Gehweg parallel zur Straße	RW8;RW2 30390,-3443 30343,-3454 
 #: corrected_by: Luftbild (nur die Lippstädter hat Radwege, nicht der Ahlener Weg)
 	RW;RW 3647,739 3834,502 3898,466
 # REMOVED ---	RW;RW 3898,466 3912,362 3899,305 3849,250 3795,221 3721,195
-	RW1;RW3 17880,11226 18027,11244
+	RW1;RW3 17876,11217 18027,11244
 	RW1; 18027,11244 18061,11240
 sehr schmaler Radweg, alter Asphalt, Wurzeln	RW1;RW1 22724,6608 22579,6700 22395,6821 22196,6957 22107,7020 22049,7085
 	RW1;RW0 22049,7085 22035,7146 22021,7245 22009,7327 21988,7367
@@ -3998,12 +3999,12 @@ Fußgängerzone, für Radfahrer und Anlieger frei	RW6;RW6 -561,4428 -595,4385 -590,
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120912.1600.375133.html
 #: XXX Baumaßnahme 9.12 (Realisierung in 2011)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036558175193/558175193/00067926/26-Anlagen/06/B1298ZB3.pdf
-#: last_checked: 2013-06-15 vvv
-#: next_check: 2013-07-01 vvv
+#: last_checked: 2013-06-21 vvv
+#: check_frequency: 14d vvv
 	RW3; 18245,5551 18370,5511
 	RW3;RW3 18370,5511 18680,5413 18955,5320
 	RW3; 18955,5320 19031,5316 19328,5304
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781

@@ -1124,6 +1124,8 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac 21595,271
 	culdesac_pseudo 21182,436
 	culdesac_pseudo 21790,682
+	culdesac_pseudo 17874,10729
+	culdesac 17856,10961
 #: section ^^^
 ######################################################################
 # busroute
@@ -1202,7 +1204,7 @@ Bus 296	busroute_N 18742,9903 18846,9948 18881,9865 18934,9826 19005,9816 19100,
 Bus 296	busroute_N 19536,9853 19669,9876
 Bus 296	busroute_N 17725,11228 17734,11408 17609,11467 17341,11595 17275,11626 17208,11658 17161,11681
 Bus 240, Bus 296	busroute_N 17161,11681 17020,11748 16977,11769 16958,11778
-Bus 194, ...	busroute_N 17852,11202 17807,11219 17725,11228 17719,11092
+Bus 194, ...	busroute_N 17848,11204 17807,11219 17725,11228 17719,11092
 Bus 193	busroute_N 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566 17346,12490 17314,12265 17375,12255 17466,12241 17300,12173 17195,12125 17139,12100 17092,12107 16994,12122 16890,12135
 Bus 193, Bus 256	busroute_N 16820,12339 16794,12144 16764,11919 16837,11920 16870,11920 16890,12135 16794,12144
 Bus 240	busroute_N 16863,13138 16426,13145 15912,13153 15715,13157 15515,13134
@@ -1444,7 +1446,7 @@ Philosophenweg: Privatstraße	CS 16073,12883 16074,12778
 Innovationspark Köpenick	CS 21683,6946 21498,7153 21475,7500 21497,7597 21546,7635
 entlang der Mauritiusschule	CS 15634,11656 15482,11729 15413,11690
 Vereinsweg (Charlottenburg): Privatstraße	CS 2828,11731 2855,11752 2907,11755 2934,11747
-Am Lindenplatz: Privatstraße	CS 17838,10878 17856,10961
+Am Lindenplatz: Privatstraße	CS 17839,10883 17856,10961
 (Marthastr. - Dietzgenstr.): durch den Brosepark	CS 10383,19911 10167,19797
 Willstätterstr.: Privatstraße, nur Zufahrt zum Betriebsgelände	CS 14193,6556 14306,6651
 #: note: Flughafen Tempelhof vvv
@@ -1755,3 +1757,6 @@ An der Alten Brauerei: Privatstraße	CS -10925,-1705 -10970,-1670 -11014,-1643 -1
 ausgeschildert Richtung Gärten der Welt	CP2; 22101,13616 22110,13639
 Niemetzstr.: als Böhmische Str. ausgeschildert	CP2; 13553,7594 13581,7586
 (Rudower Str. - Köpenicker Str.): über Parkplatz	CS 18491,2128 18448,2182 18337,2197
+Richtung Tränkegraben links halten	CP2; 17864,10537 17856,10560
+Richtung Tränkegraben/Upstallweg links halten	CP2; 18130,10201 18113,10208
+Richtung Kolonie Märkische Aue	CP2; 17848,11204 17893,11146
