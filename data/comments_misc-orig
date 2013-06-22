@@ -148,7 +148,7 @@ Röntgentaler Weg: durch den Schloßpark	CS 16166,25767 16222,25829 16532,26174
 (Autobahnzubringer): Fahrbahn ist Kraftfahrzeugstraße	CS 18036,2531 18247,2490 18496,2471
 #: by: Karin Millonig
 (In den Gärten - Hochspannungsweg): Privatweg	CS 11724,1629 11704,1692 11718,1771 11652,1959
-Privatweg, Durchfahrt eigentlich verboten, aber möglich	CS 19750,11730 19827,11686 19879,11595 19881,11591
+Privatweg, Durchfahrt eigentlich verboten, aber möglich	CS 19735,11721 19830,11677 19879,11595 19881,11591
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html
 Dreipfuhlpark: Freigegeben für Radfahrer	CS 1536,3780 1523,3904 1520,4006 1524,4054 1548,4168 1608,4313 1670,4477 1692,4575 1682,4607 1689,4630 1698,4653
 #: by: Kay-Uwe Ludwig [AM]
@@ -665,8 +665,8 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 22043,15282
 	culdesac_pseudo 22088,15557
 	culdesac_pseudo 22092,15610
-	culdesac 21221,11398
-	culdesac_pseudo 21217,11328
+	culdesac_pseudo 21221,11398
+	culdesac 21217,11328
 	culdesac 22001,10216
 	culdesac 25941,4971
 	culdesac 24991,4701
@@ -1126,6 +1126,11 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 21790,682
 	culdesac_pseudo 17874,10729
 	culdesac 17856,10961
+	culdesac 23096,10401
+	culdesac 24370,10198
+	culdesac 24314,10096
+	culdesac_pseudo 18619,11463
+	culdesac_pseudo 24671,989
 #: section ^^^
 ######################################################################
 # busroute
@@ -1760,3 +1765,6 @@ Niemetzstr.: als Böhmische Str. ausgeschildert	CP2; 13553,7594 13581,7586
 Richtung Tränkegraben links halten	CP2; 17864,10537 17856,10560
 Richtung Tränkegraben/Upstallweg links halten	CP2; 18130,10201 18113,10208
 Richtung Kolonie Märkische Aue	CP2; 17848,11204 17893,11146
+Eingang Heerstr.	CP2; 22274,9622 22280,9629
+Eingang Eschenstr.	CP2; 22473,9530 22482,9550
+unter der S-Bahnbrücke	CP2; 24650,6034 24647,5981

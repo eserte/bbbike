@@ -1542,3 +1542,6 @@ Burgemeisterstr. -> Burgemeisterstr.: Mittelstreifen	3::igndisp 8981,5692 9158,5
 Burgemeisterstr. -> Tempelhofer Damm: Mittelstreifen	3::igndisp 8981,5692 9158,5673 9176,5803
 Tempelhofer Damm -> Burgemeisterstr.: Mittelstreifen	3::igndisp 9176,5803 9158,5673 9364,5652
 Triftstr.	1 6715,15152 6743,15102
+Straßenbahntrasse	3nocross::ignrte 23822,5403 23851,5389 23950,5342
+Jastrower Weg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23877,5503 23851,5389 23950,5342
+Fürstenwalder Damm -> Jastrower Weg: Straßenbahntrasse	3::igndisp 23822,5403 23851,5389 23877,5503

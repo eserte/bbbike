@@ -653,7 +653,7 @@ Brachetweg: enge Straﬂe	q1 23569,10693 23544,10591 23561,10572
 Maipfad: enge Straﬂe	q1 23569,10693 23715,10665
 Pfingstweg: enge Straﬂe	q1 23596,10848 23668,10823 23750,10797
 Osterpfad: enge Straﬂe	q1 23668,10823 23639,10743
-(Kressenweg - Waldenburger Str.): eng, Fuﬂg‰nger	q2 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
+(Kressenweg - Waldenburger Str.): eng, Fuﬂg‰nger, evtl. f¸r Anh‰nger zu eng	q2 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
 (Weg entlang der Bahnstrecke): eng	q2 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
 Kurzer Weg (Karlshorst): kurvig und eng	q2 20334,7753 20451,7744 20503,7848
 Emrichstr. [Wohngebiet]: enge Straﬂe	q1 25353,4939 25443,4936 25453,5091 25467,5115 25470,5241
@@ -847,7 +847,7 @@ Tegelorter Promenade: Fuﬂg‰nger	q1 -1659,18104 -1660,18114 -1661,18132 -1717,182
 Kleine Eiswerderbr¸cke: enge Stelle, Gegenverkehr hat Vorrang	q1; -1978,15684 -2038,15683
 Gˆtzkeweg: eng durch parkende Autos	q1 27319,13589 27414,13508
 (Erntedankweg - Wuhlgartenweg): eng	q3 20861,12192 20841,12185 20823,12139
-(Alt-Friedrichsfelde - Alfred-Kowalke-Str.): eng, Fuﬂg‰nger	q1 18616,11654 18618,11452
+(Alt-Friedrichsfelde - Alfred-Kowalke-Str.): eng, Fuﬂg‰nger	q1 18616,11654 18619,11463
 (Mariannenstr. - Verl‰ngerte Georgenstr.): Radfahren verboten, Bordsteine	q4 6032,1348 5934,1310
 Kindelbergweg: eng	q1 6632,1482 6601,1471 6560,1473
 Melker Str.: Fuﬂg‰nger	q1 1778,1659 1848,1647
@@ -1164,6 +1164,9 @@ Erieseering: Bordstein	q2 18141,10173 18132,10183
 (Erieseering - am Tr‰nkegraben): einige Fuﬂg‰nger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tr‰nkegraben): Fuﬂg‰nger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
 (am Tr‰nkegraben - Moldaustr.): einige Fuﬂg‰nger	q1 17870,10619 17856,10560 17864,10537 17856,10508
+entlang der Erpe: Bordstein	q2 24584,5914 24637,5960
+(Park des Gr¸nderzeitmuseums): Radfahren nicht erlaubt	q3 24601,10992 24658,11013 24726,11037
+Lauinger Str.: einige Fuﬂg‰nger, nicht ganz abgesenkter Bordstein	q1 21221,11398 21137,11294
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1787,7 +1790,6 @@ Bernhard-B‰stlein-Str.: enge Straﬂe	q1 15354,13998 15487,14047 15595,14041 15593
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311
 Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230
 (Kniprodestr./Michelangelostr. - Puccinistr.): Fuﬂweg mit Bordsteinkanten	q2 13973,15259 13905,15306 13809,15370
-(Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21217,11328 21257,11323 21286,11319 21305,11363
 Eisweg: enge Straﬂe	q1 23569,10956 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
 Lauxweg: enge Straﬂe	q1 8979,3347 8921,3208
 Martinstr.: enge Straﬂe	q1 4956,5121 5102,5031
@@ -2082,7 +2084,7 @@ Kreuzung Sewanstr./Am Tierpark	q1::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Gehweg	q1::igndisp; 18647,10172 18715,10003
 Treskowallee, linker Gehweg	q1::igndisp; 18715,10003 18748,9922
 Kreuzung Gregoroviusweg/Treskowallee	q1::igndisp; 18748,9922 18742,9903
-Alt-Friedrichsfelde, linker Gehweg	q2::igndisp; 19750,11730 19005,11767 18778,11742 18624,11712 18520,11685 18228,11656
+Alt-Friedrichsfelde, linker Gehweg	q2::igndisp; 19735,11721 19005,11767 18778,11742 18624,11712 18520,11685 18228,11656
 Alt-Friedrichsfelde, linker Gehweg	q2::igndisp; 18626,11742 18624,11712
 Landsberger Allee, linker Gehweg	q2::igndisp; 15256,14237 15430,14272
 Sonnenallee, linker Gehweg	q4::igndisp; 13474,8060 13457,8069

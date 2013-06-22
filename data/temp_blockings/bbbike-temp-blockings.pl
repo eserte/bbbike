@@ -1306,8 +1306,8 @@ EOF
        text  => 'Volksradstr. (Friedrichsfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 23.05.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 17475,10442 17511,10577 17527,10640 17569,10801 17621,10994
-userdel	q4 17475,10442 17427,10259
+userdel	q4 17479,10452 17511,10577 17527,10640 17569,10801 17621,10994
+userdel	q4 17479,10452 17427,10259
 EOF
      },
      { from  => 1100991600, # 2004-11-21 00:00
@@ -6998,7 +6998,7 @@ EOF
        text  => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 19.01.2007 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 24639,10766 24653,10831 24740,10992 24693,11141 24654,11265
+userdel	2::inwork 24639,10766 24653,10831 24740,10992 24726,11037 24693,11141 24654,11265
 EOF
      },
      { from  => 1182281811, # 2007-06-19 21:36
@@ -7085,7 +7085,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004452',
        data  => <<EOF,
-userdel	2::inwork 24639,10766 24653,10831 24740,10992 24693,11141 24654,11265
+userdel	2::inwork 24639,10766 24653,10831 24740,10992 24726,11037 24693,11141 24654,11265
 EOF
      },
      { from  => 1170098849, # 2007-01-29 20:27
@@ -10932,7 +10932,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007852',
        data  => <<EOF,
-userdel	1::inwork 24654,11265 24693,11141 24740,10992 24653,10831 24639,10766
+userdel	1::inwork 24654,11265 24693,11141 24726,11037 24740,10992 24653,10831 24639,10766
 EOF
      },
      { from  => 1203374120, # 2008-02-18 23:35
@@ -19942,7 +19942,7 @@ EOF
        text  => 'Alt-Friedrichsfelde - Weißenhöher Straße: Bauarbeiten, Durchfahrt könnte gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 19750,11730 19827,11686 19879,11595 19881,11591
+userdel	2::inwork 19735,11721 19830,11677 19879,11595 19881,11591
 EOF
      },
      { from  => 1325955689, # 
@@ -20716,7 +20716,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120914.1355.375249.html',
        data  => <<EOF,
-userdel	2::inwork 18286,11275 18409,11348 18477,11388 18618,11452
+userdel	2::inwork 18286,11275 18409,11348 18477,11388 18619,11463
 EOF
      },
      { from  => 1347508800, # 2012-09-13 06:00

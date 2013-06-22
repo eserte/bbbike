@@ -110,8 +110,8 @@ Eichborndamm	1s:q3 4240,19019 4232,18981
 Eichborndamm	1 4232,18981 4210,18878 4171,18677 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17816,5733 17812,5726 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
-Archibaldweg	1 15674,10851 15861,10931
-Nöldnerplatz	1 15861,10931 16049,10844
+Archibaldweg	1 15674,10851 15870,10938
+Nöldnerplatz	1 15870,10938 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Richterstr.	1s:q3 22092,999 22120,886
 Richterstr.	1s:q3 22075,779 22007,711
@@ -1056,6 +1056,7 @@ Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
 (Möllendorffstr. - Paul-Junius-Str.)	1 15361,13509 15470,13509
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Kornmandelweg	1 21311,13522 21345,13550
+Immortellenweg: Schulhof	2 24282,10015 24314,10096
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1586,9 +1587,7 @@ Daumstr.: Mittelstreifen	3nocross -1783,16533 -1765,16603 -1746,16667
 Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
 Landsberger Chaussee: Straßenbahntrasse	3nocross 22771,16194 22974,16139 23159,16086
 Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
-#: XXX Wie wird die Situation nach den Bauarbeiten aussehen: wird man hier die Straßenbahntrasse weiterhin nicht überqueren können?
-#: last_checked: 2011-08-14
-#: next_check: 2013-07-01
+# REMOVED (ja, unveränderte Situation) --- #: XXX Wie wird die Situation nach den Bauarbeiten aussehen: wird man hier die Straßenbahntrasse weiterhin nicht überqueren können? --- #: last_checked: 2011-08-14 --- #: next_check: 2013-07-01
 Fürstenwalder Damm: Straßenbahntrasse	3nocross 23660,5477 23728,5446 23822,5403 23851,5389
 Tauernallee: Mittelstreifen	3nocross 10349,2188 10431,2258 10504,2321
 Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383
@@ -1904,6 +1903,17 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: by: public imagery
+Drängelgitter	BNP:3::trailer=10 24207,10858
+#: note: enge Führung, mit Anhänger wahrscheinlich nicht oder nur mit Aufwand passierbar vvv
+Drängelgitter	BNP:5::trailer=no 22482,9550
+Drängelgitter	BNP:5::trailer=no 22280,9629
+Drängelgitter	BNP:5::trailer=no 22595,9978
+Drängelgitter	BNP:5::trailer=no 22614,10001
+Drängelgitter	BNP:5::trailer=no 22720,9921
+Drängelgitter	BNP:5::trailer=no 22736,9944
+Drängelgitter	BNP:5::trailer=no 22975,10444
+#: note ^^^
 Drängelgitter	BNP:3::trailer=10 21755,625
 Drängelgitter	BNP:3::trailer=10 21783,660
 Tor, sollte geschlossen gehalten werden	BNP:10::trailer=15 27812,756
@@ -1954,7 +1964,7 @@ hohes Drängelgitter	BNP:3::trailer=10 12782,20191
 Drängelgitter	BNP:3::trailer=10 6928,23021
 Drängelgitter	BNP:3::trailer=10 6509,23198
 enges Drängelgitter, kann umfahren werden	BNP:3::trailer=10 6278,22615
-Schranke	BNP:3::trailer=10 19750,11730
+Schranke	BNP:3::trailer=10 19735,11721
 Schranke	BNP:3::trailer=10 19879,11595
 Drängelgitter	BNP:3::trailer=10 5394,23172
 Drängelgitter	BNP:3::trailer=10 3816,22602

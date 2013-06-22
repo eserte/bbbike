@@ -1941,7 +1941,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 9474,16297
 	F 12990,11006
 	X 21624,11379
-	X 21398,11482
+	X 21392,11486
 	X 21860,11278
 	X 17829,15015
 	X 12736,11186
@@ -2239,6 +2239,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: am Wochenende ausgeschaltet (immer?)
 #: XXX Ampel wird vielleicht zur Roedernstr. verlegt
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4836&options=4
+#: last_checked: 2013-06-22
+#: check_frequency: 180d
 	F 23933,8879
 #: note: am Wochenende ausgeschaltet (immer?)
 	F 24435,10065
@@ -2480,7 +2482,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -3892,13960
 	X 3005,13728
 #: XXX eventuell bleibt die Ampel hier permanent
-#: last_checked: 2013-06-09
+#: last_checked: 2013-06-22
 #: next_check: 2013-07-01
 	X::inwork 23660,5477
 	F 18165,7371

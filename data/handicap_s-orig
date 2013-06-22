@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-06-21 vvv
+#: last_checked: 2013-06-22 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -945,7 +945,7 @@ Brachetweg: enge Straße	q1+ 23569,10693 23544,10591 23561,10572
 Maipfad: enge Straße	q1+ 23569,10693 23715,10665
 Pfingstweg: enge Straße	q1+ 23596,10848 23668,10823 23750,10797
 Osterpfad: enge Straße	q1+ 23668,10823 23639,10743
-(Kressenweg - Waldenburger Str.): eng, Fußgänger	q2 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
+(Kressenweg - Waldenburger Str.): eng, Fußgänger, evtl. für Anhänger zu eng	q2- 23522,10456 23468,10423 23431,10435 23193,10426 23024,10455 22978,10451
 (Weg entlang der Bahnstrecke): eng	q2 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
 Kurzer Weg (Karlshorst): kurvig und eng	q2 20334,7753 20451,7744 20503,7848
 Emrichstr. [Wohngebiet]: enge Straße	q1 25353,4939 25443,4936 25453,5091 25467,5115 25470,5241
@@ -1191,7 +1191,7 @@ Tegelorter Promenade: Fußgänger	q1 -1659,18104 -1660,18114 -1661,18132 -1717,182
 Kleine Eiswerderbrücke: enge Stelle, Gegenverkehr hat Vorrang	q1; -1978,15684 -2038,15683
 Götzkeweg: eng durch parkende Autos	q1 27319,13589 27414,13508
 (Erntedankweg - Wuhlgartenweg): eng	q3 20861,12192 20841,12185 20823,12139
-(Alt-Friedrichsfelde - Alfred-Kowalke-Str.): eng, Fußgänger	q1 18616,11654 18618,11452
+(Alt-Friedrichsfelde - Alfred-Kowalke-Str.): eng, Fußgänger	q1 18616,11654 18619,11463
 (Mariannenstr. - Verlängerte Georgenstr.): Radfahren verboten, Bordsteine	q4 6032,1348 5934,1310
 Kindelbergweg: eng	q1 6632,1482 6601,1471 6560,1473
 Melker Str.: Fußgänger	q1 1778,1659 1848,1647
@@ -1591,12 +1591,17 @@ Kurzer Weg: Fußgänger	q2+ 15154,5706 15151,5746 15204,5752
 Preußensiedlung: einige Fußgänger	q1 20971,1046 20957,1043 20850,963
 (Grünzug am Falkenberg): Pfad	q2 21205,286 21230,309 21300,326
 (Bruno-Taut-Str. - Am Gartenstadtweg): Fußgänger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21714,601 21679,596
-#: XXX_prog: südliches Ende
+#: XXX_prog: BS südliches Ende
 Erieseering: Bordstein	q2 18141,10173 18132,10183
 (Erieseering - am Tränkegraben): einige Fußgänger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
 #: note: am nördlichen Eingang existiert ein Schild "Radfahrer absteigen", aber am südlichen Ende fehlt so ein Schild
 (Zachertstr. - am Tränkegraben): Fußgänger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
 (am Tränkegraben - Moldaustr.): einige Fußgänger	q1 17870,10619 17856,10560 17864,10537 17856,10508
+#: XXX_prog: BS südliches Ende
+entlang der Erpe: Bordstein	q2 24584,5914 24637,5960
+(Park des Gründerzeitmuseums): Radfahren nicht erlaubt	q3- 24601,10992 24658,11013 24726,11037
+#: XXX_prog: BS am nordöstlichen Ende, am Wendehammer
+Lauinger Str.: einige Fußgänger, nicht ganz abgesenkter Bordstein	q1 21221,11398 21137,11294
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2761,8 +2766,7 @@ Kulmseestr.: einige Fußgänger	q1 20252,12262 20303,12230
 #: by: Andreas Wettig:
 #: confirmed_by: srt
 (Kniprodestr./Michelangelostr. - Puccinistr.): Fußweg mit Bordsteinkanten	q2- 13973,15259 13905,15306 13809,15370
-#: by: Sebastian Koch:
-(Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21217,11328 21257,11323 21286,11319 21305,11363
+# REMOVED (existiert nicht mehr) --- #: by: Sebastian Koch: --- (Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21217,11328 21257,11323 21286,11319 21300,11369
 #: by: Elke Ortloff:
 Eisweg: enge Straße	q1+ 23569,10956 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
 #: by: Manuela Baumgärtel:

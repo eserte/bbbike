@@ -2198,11 +2198,16 @@ Uhlandallee: Beton	Q0 25509,-2715 25635,-2931
 Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 26028,-2572 26023,-2576 25836,-2749
 Godbersenstr.: schlechtes Kopfsteinpflaster, Verbundsteinpflastergehweg auf der südlichen Seite kann zum Ausweichen benutzt werden	Q2 26192,-2847 26201,-2845
 Rüsternallee (Waldesruh): Kopfsteinpflaster	Q2 24813,8594 24857,8567 24905,8533
-Schoppenhauerstr.: Kopfsteinpflaster	Q2 24905,8533 24974,8486
+Schoppenhauerstr.: Kopfsteinpflaster	Q2 24905,8533 24974,8486 25048,8432 25119,8379 25212,8313
+Schoppenhauerstr.: Waldweg	Q2 25212,8313 25301,8252 25347,8213
 Karl-Marx-Str. (Waldesruh): Kopfsteinpflaster	Q2 24836,8145 24849,8242 24870,8342 24905,8533
-Karl-Marx-Str. (Waldesruh): Asphalt	Q0 24905,8533 24958,8641 25064,8793
+Karl-Marx-Str. (Waldesruh): Asphalt	Q0 24905,8533 24958,8641 25064,8793 25114,8870 25169,8935 25214,8986 25280,9031
 Fichtestr.: Kopfsteinpflaster	Q2 24870,8342 24974,8486 25147,8731
-Kantstr.: Kopfsteinpflaster	Q2 24871,7931 24953,8152 25119,8379
+Kantstr.: Asphalt	Q0 24871,7931 24885,7970
+Kantstr.: Kopfsteinpflaster	Q2 24885,7970 24953,8152 25119,8379 25295,8623
+Hegelstr.: unbefestigte Straße	Q2 24836,8145 24885,8208 25048,8432 25217,8682
+Humboldtstr.: Asphalt	Q0 25064,8793 25147,8731
+Kleiststr.: Asphalt	Q0 25169,8935 25243,8878
 Köpenicker Allee (Waldesruh): Asphalt	Q0 25047,8086 24923,7903 24910,7896
 (Radweg BU): Asphalt	Q0 17964,26823 18133,26914
 Am Langen Grund (Großziethen): Verbundsteinpflaster	Q1 12647,-1187 12652,-1142 12629,-1134 12633,-1095 12622,-1089 12629,-1046
@@ -2533,6 +2538,7 @@ Zum Exerzierhaus: unbefestigt	Q2 -13044,1991 -12981,1992
 Brüssower Str. - Bahnhof: Asphalt	Q0 39977,102154 39974,102194 40020,102365
 Paul-Gloede-Str.: Asphalt	Q0 40037,101068 39994,100860
 Dr.-Bähr-Str.: Asphalt	Q0 39840,100844 39994,100860 40237,100872
+Friedhofstr.: Asphalt	Q0 25781,9966 26321,9868
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144
 Hermannswerder: guter Asphalt	Q0 -13733,-2967 -13765,-2974 -14044,-2918 -14306,-2867 -14577,-3068 -14750,-3266
@@ -2962,7 +2968,9 @@ Stormstr.: Beton	Q1 -15060,-2626 -15168,-2529 -15243,-2459 -15306,-2401 -15390,-
 Stormstr.: Beton	Q1 -15168,-2529 -15235,-2603 -15179,-2662 -15206,-2695 -15239,-2728 -15268,-2762 -15331,-2700 -15390,-2678
 Stormstr.: Beton	Q1 -15206,-2695 -15270,-2639 -15300,-2670 -15331,-2700
 Stormstr.: Beton	Q1 -15239,-2728 -15300,-2670
-Mahlsdorfer Allee (Waldesruh, Hoppegarten): sehr guter Asphalt	Q0 25280,9031 25307,9031 25756,9073 25892,9098
+Mahlsdorfer Allee (Waldesruh, Hoppegarten): sehr guter Asphalt	Q0 25280,9031 25686,9071
+Mahlsdorfer Allee (Waldesruh, Hoppegarten): Kopfsteinpflaster	Q2 25686,9071 25756,9073
+Mahlsdorfer Allee (Waldesruh, Hoppegarten): unbefestige Straße	Q2 25756,9073 25892,9098
 Pilsener Str. (Waldesruh): Asphalt	Q0 25169,9114 25211,9085 25235,9068 25265,9045 25280,9031
 Beethovenstr.: mäßiges Kopfsteinpflaster	Q2 -8283,-2917 -8219,-2795 -8167,-2704 -8107,-2600
 (An der Oder): Trampelpfad	Q2 89215,-6605 89243,-6760 89321,-6884 89315,-7107 89274,-7361 89525,-7786
@@ -3407,7 +3415,7 @@ Hubertushöhe - Schafbrücke	Q2 51092,-19548 51221,-19873
 Hubertushöhe - Storkow	Q0 49223,-18292 49090,-18279 48968,-18131 48887,-18098 48923,-17976 48825,-17821 48935,-17573 48501,-17248
 Am Vogelherd (Waldesruh, Dahlwitz-Hoppegarten): Sandweg	Q2 25228,7462 25179,7853 25175,7953
 Heinrich-Heine-Promenade (Waldesruh): Beton	Q0 25175,7953 25115,8033 25047,8086
-Heinrich-Heine-Promenade (Waldesruh): glatt asphaltiert	Q0 25047,8086 24953,8152 24885,8208 24849,8242 24797,8246 24767,8251
+Heinrich-Heine-Promenade (Waldesruh): glatt asphaltiert	Q0 25047,8086 24953,8152 24885,8208 24849,8242 24797,8248 24767,8251
 Mühlenstr.: Kopfsteinpflaster	Q2 25507,7428 25437,7460 25417,7457
 Mühlenstr.: schlechter Asphalt	Q1 25417,7457 25269,7432
 Stadtheide: guter Asphalt	Q0 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122

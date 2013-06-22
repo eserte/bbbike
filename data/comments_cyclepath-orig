@@ -628,6 +628,7 @@ Radstreifen nur schwach zu erkennen	RW3;RW3 -14023,-564 -14120,-543
 	RW2;RW4 -14676,418 -14665,481
 	RW6;RW6 -14769,582 -14776,560 -14732,528
 	RW6;RW6 -10278,-1140 -10019,-1198
+Verbundsteinpflasterradweg	RW1; 26321,9868 25781,9966
 ######################### User Contributions #################################
 #: by: Tagesspiegel
 	RW;RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
@@ -682,8 +683,13 @@ sehr guter Zweirichtungsradweg	RW;RW -34553,-10321 -34810,-10045 -34985,-9383 -3
 Radweg, wahrscheinlich für beide Richtungen	RW;RW 41409,-5222 41836,-5523 42349,-5620 42486,-5743
 #: by: ^^^
 # 
-#: by Per Zwiesigk [AM]
-	RW;RW 25868,9225 26321,9868 26771,10496 26892,10666
+#: by Per Zwiesigk [AM] vvv
+#: confirmed_by: srt
+gemeinsamer Rad- und Gehweg, Asphalt teilweise wellig	RW8;RW2 25868,9225 26321,9868
+#: confirmed_by: srt (südlicher Abschnitt)
+gemeinsamer Rad- und Gehweg	RW2;RW8 26321,9868 26771,10496
+	RW;RW 26771,10496 26892,10666
+#: by ^^^
 # 
 #: by: Janes Huff:
 freigegebener Gehweg	RW; -9723,-2451 -9963,-2253
