@@ -21481,4 +21481,13 @@ EOF
 userdel	q4::inwork 13301,8606 13262,8554 13217,8493
 EOF
      },
+     { from  => 1371816000, # 2013-06-21 14:00, 1 Tag Vorlauf
+       until => 1372010400, # 2013-06-23 20:00
+       text  => 'Britzer Rosenfest an der Britzer Dorfkirche, Backbergstr. ist gesperrt, 22. und 23. Juni 2013',
+       periodic => 1,
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 12826,4777 12836,4649
+EOF
+     },
     );

@@ -1706,8 +1706,8 @@ Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13136,5593 13116,5689 13105,5748 1
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20061221.1045.70244.html
 Rungiusstr.: sehr guter Asphalt	Q0 13027,6168 12997,6290 12981,6366 12979,6374
 Rungiusstr.: sehr guter Asphalt	Q0 12979,6374 12966,6424
-(Kolonie Blaschkotal): fester Sandweg, etwas Schotter	Q2 13158,5490 13162,5382 13112,5253
-(Weg durch Kolonie): fester Sandweg, etwas Schotter	Q2 13112,5253 13039,5122
+(Kolonie Blaschkotal): fester Sandweg, etwas Schotter	Q2+ 13158,5490 13173,5379 13112,5253
+(Weg durch Kolonie): fester Sandweg, etwas Schotter	Q2+ 13112,5253 13039,5122
 Braunschweiger Ufer: asphaltiert	Q0 13077,5893 13483,5973
 Braunschweiger Ufer: Parkweg	Q1 13077,5893 12718,5845
 Zeppelinstr.: Asphalt	Q0 18697,6605 18417,6775 18240,6845
@@ -8667,6 +8667,11 @@ Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
 (Park des Gründerzeitmuseums): wassergebundene Decke	Q1 24601,10992 24658,11013
 (Park des Gründerzeitmuseums): Kopfsteinpflaster	Q3 24658,11013 24726,11037
 Lauinger Str.: Asphalt	Q0 21221,11398 21137,11294
+Am Römersgrün: Verbundsteinpflaster	Q1+ 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706
+#: XXX wird wahrscheinlich später auch mit Verbundsteinpflaster versehen
+#: last_checked: 2013-06-23
+#: check_frequency: 90d
+Am Römersgrün: noch unbefestigt, Straße in Bau	Q2- 11725,3835 11742,3770 11703,3730
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -10551,14 +10556,18 @@ Iranische Str.: Kopfsteinpflaster	Q2 8092,16485 7875,16509 7728,16538 7707,16543
 #: by: Gabi Sieber: vvv
 Reinholdstr.: mäßiges Kopfsteinpflaster	Q2 12833,6796 12953,6820 13014,6833
 Bruno-Bauer-Str.: Kopfsteinpflaster	Q2 12816,6870 12833,6796 12843,6750 12860,6667 12876,6589 12893,6527
-#: note: laut Bild von Gabi:
-#: corrected_by: srt (Q2 -> Q2-)
-Juliusstr.: Kopfsteinpflaster	Q2- 13195,6560 13127,6545 12902,6495 12781,6470
+#: corrected_by: srt (Kopfsteinpflaster -> Asphalt (neu gemacht))
+Juliusstr.: Asphalt	Q0 13195,6560 13127,6545 12902,6495 12781,6470
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Juliusstr.: Asphalt	Q0 12781,6470 12553,6423
-Walterstr.: Kopfsteinpflaster	Q2 13126,6687 13099,6712 13014,6833 12973,6902 12934,6967
+#: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
+Walterstr.: Asphalt	Q0 13126,6687 13099,6712
+#: confirmed_by: srt
+Walterstr.: Kopfsteinpflaster	Q2 13099,6712 13014,6833 12973,6902 12934,6967
+#: confirmed_by: srt vvv
 Kranoldplatz: Kopfsteinpflaster	Q2 12833,6796 12715,6775
 Kranoldplatz: Kopfsteinpflaster	Q2 12726,6727 12843,6750
+#: confirmed_by ^^^
 #: by: ^^^
 # 
 #: by: Rüdiger Willer:
