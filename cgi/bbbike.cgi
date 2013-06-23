@@ -7584,6 +7584,8 @@ sub send_error {
 	    );
 	print "Error: $reason\n";
     }
+    warn "DEBUG: Error page sent for " . $q->query_string . ", reason: $reason\n";
+    http_req_logging();
     my_exit 0;
 }
 
