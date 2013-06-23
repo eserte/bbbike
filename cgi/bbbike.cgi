@@ -6443,6 +6443,16 @@ sub adjust_scope_for_search {
 	    }
 	}
     }
+
+    if (!$q->param("scope")) {
+	for my $coord (@$coordsref) {
+	    if (outside_berlin($coord)) {
+		upgrade_scope("region");
+		return;
+	    }
+	}
+    }
+
 }
 
 # falls die Koordinaten nicht exakt existieren, wird der nächste Punkt
