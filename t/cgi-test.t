@@ -46,11 +46,12 @@ sub _bbbike_lang_cgi ($);
 
 check_cgi_testing;
 
+my $json_xs_0_tests = 2;
 my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 109 + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 111 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -63,6 +64,23 @@ my $testcgi = "$cgidir/bbbike-test.cgi";
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
+
+SKIP: {
+    skip "need JSON::XS", $json_xs_0_tests
+	if !eval { require JSON::XS; 1 };
+
+    my $resp = bbbike_cgi_search +{ startc_wgs84 => '13.410891,52.544453', zielc_wgs84 => '0.000000,0.000000',
+				    output_as => 'json',
+				  }, 'json output';
+    my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
+    like $data->{error}, qr{highly probably wrong coordinate}i, 'detected wrong coordinate';
+}
+
+{
+    my $resp = bbbike_cgi_search +{ startc_wgs84 => '13.410891,52.544453', zielc_wgs84 => '0.000000,0.000000',
+				  }, 'non-json output';
+    like $resp->decoded_content, qr{highly probably wrong coordinate}i, 'detected wrong coordinate in text/plain';
+}
 
 {
     my $resp = bbbike_cgi_geocode +{start => 'Total unbekannter Weg'}, 'Completely unknown street';
