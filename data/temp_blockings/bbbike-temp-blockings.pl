@@ -9768,7 +9768,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006391',
        data  => <<EOF,
-userdel	2::inwork 16843,14420 16864,14226 16881,14063
+userdel	2::inwork 16851,14421 16871,14230 16881,14063
 EOF
      },
      { from  => 1188424800, # 2007-08-30 00:00
@@ -20029,7 +20029,7 @@ EOF
 #: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
 #: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
 #: note: am 2013-02-11 geprüft, keine Schranke, aber nur für "Linienverkehr frei"
-#: note: am 2013-04-11 geprüft: Radfahrer dürfen hier offiziel entlangfahren
+#: note: am 2013-04-11 geprüft: Radfahrer dürfen hier offiziell entlangfahren
 userdel	q3::inwork 10530,14452 10723,14772
 EOF
      },

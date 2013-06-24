@@ -205,13 +205,13 @@ Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147
 # 
 #: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
 #: XXX erste Vorabmarkierungen schon zu sehen (2013-05-24)
-#: last_checked: 2013-06-14
-#: next_check: 2013-07-14
+#: last_checked: 2013-06-24
+#: check_frequency: 45d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15058,14575 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-06-16
-#: next_check: 2013-08-16
+#: last_checked: 2013-06-24
+#: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
 #: XXX Baumaßnahme 11.45 (Realisierung nach 2011)
@@ -358,6 +358,13 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: last_checked: 2013-06-24 vvv
+#: check_frequency: 45d vvv
+Bauarbeiten im Landschaftspark Herzberge: werden in Bereich des "Zeltlagers" neue Wege entstehen?	? 17187,13609 17247,14055
+Baustraße zur Siegfriedstraße: wird diese Verbindung beibehalten?	? 17219,14133 17198,14156 17111,14184
+#: check_frequency ^^^
+#: last_checked: ^^^
 # 
 #: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich (bis Anfang 08/13) Kreuzung Straße der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976
 #: XXX_indoor vmz-Eintrag: Straße der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich, Überfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975
@@ -843,7 +850,7 @@ Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: last_checked: 2013-05-06
-#: next_check: 2013-09-15
+#: next_check: 2013-09-30
 #: XXX eventuell wird hier nach den Bauarbeiten die Einbahnstraße geöffnet?
 #: osm_watch: way id="8094229" version="10"
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
@@ -857,19 +864,7 @@ Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294
 #: next_check: 2010-09-01
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4314 29754,4398 29728,4435 29714,4461
 # 
-#: last_checked: 2013-06-05 vvv
-#: next_check: 2013-06-19 vvv
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv
-#: source_id: INKO_117706 vvv
-Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15058,14575
-#: XXX Richtung Süden wird es wohl ein Gehwegradweg fehlen (fehlt nur noch der Asphalt), Richtung Norden ist fertig
-Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15058,14575 15110,14486 15164,14392
-#: source_id ^^^
-#: by: ^^^
-#: by: ^^^
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED (so gut wie fertig, am 2013-06-24 hat noch ein kleines Stück gefehlt) --- #: last_checked: 2013-06-05 vvv --- #: next_check: 2013-06-19 vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv --- #: source_id: INKO_117706 vvv --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15058,14575 --- #: XXX Richtung Süden wird es wohl ein Gehwegradweg fehlen (fehlt nur noch der Asphalt), Richtung Norden ist fertig --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15058,14575 15110,14486 15164,14392 --- #: source_id ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: last_checked: 2013-04-20 (an der Degnerstr.)
 #: next_check: 2013-07-20
@@ -945,6 +940,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Weydemeyerstr.: genaue Hausnummern? wie weit geht es Richtung Norden weiter?	? 11805,12760 11818,12785
 #: XXX ggfs. auch Grünfläche in flaechen-orig aufnehmen
 Wutzkyallee - Rudower Fließ: Verbindung durch Grünanlage aufnehmen. Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474 15686,1501 15776,1456 15795,1428 15878,1378 15920,1392 16038,1303 16086,1262 16329,1128 16419,1048
 Grünanlage - Fleischerstr.: Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15920,1392 15987,1430
@@ -974,8 +970,6 @@ Am Heinersdorfer Graben: Qualität? Beleuchtet? Straßenname (bei osm: Kiebitzweg)
 Sophienwerderweg: Qualität des östlichen Abschnitts? Für Autos gesperrt? Beleuchtet?	? -729,13415 -787,13451 -684,13707 -1031,13925 -1188,13988
 # 
 Kurt-Schumacher-Damm: kann man hier entgegen der Einbahnstraßenrichtung auf dem Gehweg fahren?	?; 2831,14219 2803,14288
-# 
-Siegfriedstr. - Am Wasserwerk - Landsberger Allee: existiert hier eine Wegführung für Radfahrer? Qualität? Beleuchtung?	? 16864,14226 16775,14225 16654,14311 16634,14373 16589,14400
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf
 Dieselstr. (Potsdam): diese Straße wird "neu gewidmet", existiert schon etwas? Qualität?	? -10350,-2358 -10258,-2380 -10273,-2445

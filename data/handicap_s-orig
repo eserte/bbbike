@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-06-23 vvv
+#: last_checked: 2013-06-24 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -33,7 +33,7 @@ Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-06-20
+#: last_checked: 2013-06-24
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q2::inwork; 13366,11651 13295,11792
 # 
 # REMOVED (fast keine Einschränkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775
@@ -43,8 +43,7 @@ Marchlewskistr.: Bauarbeiten, Einbahnstraße	q2::inwork; 13366,11651 13295,11792
 # 
 ### Mitte ###
 # 
-#: last_checked: 2013-06-04
-Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
+# REMOVED --- #: last_checked: 2013-06-04 --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
 # 
 #: source_id: INKO_113388
 #: last_checked: 2013-06-02
@@ -62,7 +61,7 @@ Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehwe
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
-#: last_checked: 2013-06-07 vvv
+#: last_checked: 2013-06-24 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -101,6 +100,7 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und He
 Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
 Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
 #: source_id: IM_019009
+#: source_id: IM_018437
 Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: next_check ^^^
 #: last_checked: ^^^
@@ -129,11 +129,11 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 # REMOVED --- #: last_checked: 2013-06-17 --- #: next_check: 2013-06-20 --- #: priority: #A --- Bernhard-Weiß-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
 # 
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2013-06-21
+#: last_checked: 2013-06-24
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
-#: last_checked: 2013-06-21
+#: last_checked: 2013-06-24
 #: priority: #A
 Rathausstr.: Fahrbahn an der Spandauer Str. gesperrt, Ausweichen auf Gehweg	q4::inwork 10584,12507 10601,12521
 # 
@@ -149,15 +149,17 @@ Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q
 #: note ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-06-04 vvv
+#: last_checked: 2013-06-24 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 #: last_checked ^^^
 # 
-#: last_checked: 2013-05-27
 #: osm_watch: way id="131505633" version="4"
-Am Zirkus: Baustelle, Einbahnstraße	q3::inwork; 9167,13046 9239,12923
+#: XXX nach den Bauarbeiten wahrscheinlich bessere Qualität, siehe Eintrag in qualitaet_s-orig
+#: last_checked: 2013-06-24
+#: next_check: 2013-08-24
+Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
 # 
 # REMOVED (reported by wosch) --- #: last_checked: 2013-04-11 --- Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
 # 
@@ -196,13 +198,13 @@ Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entste
 ### Lichtenberg ###
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html
-#: last_checked: 2013-04-20
-#: next_check: 2013-06-20
 #: osm_watch: way id="7543672" version="17"
 #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz
-Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17266,14144
+#: last_checked: 2013-06-24
+#: check_frequency: 45d
+Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
 # 
-#: last_checked: 2013-06-14
+#: last_checked: 2013-06-24
 #: next_check: 2013-08-14
 #: XXX siehe auch qualitaet_s-orig: nach den Bauarbeiten besserer Asphalt?
 Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15402,12390 15350,12270
@@ -731,7 +733,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: XXX siehe auch Eintrag zum Spreeufer in gesperrt-orig
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
-#: last_checked: 2013-06-04
+#: last_checked: 2013-06-24
 #: next_check: 2013-08-01
 Friedrichsbrücke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
@@ -1602,6 +1604,8 @@ entlang der Erpe: Bordstein	q2 24584,5914 24637,5960
 (Park des Gründerzeitmuseums): Radfahren nicht erlaubt	q3- 24601,10992 24658,11013 24726,11037
 #: XXX_prog: BS am nordöstlichen Ende, am Wendehammer
 Lauinger Str.: einige Fußgänger, nicht ganz abgesenkter Bordstein	q1 21221,11398 21137,11294
+#: XXX_prog: BS an der Straße "Am Wasserwerk", kann umfahren werden, indem man schon an der Landsberger Allee auf den linken Gehweg wechselt
+Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

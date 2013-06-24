@@ -1459,7 +1459,7 @@ Fritschestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 3291,11832 3251,12025
 Hebbelstr.: gutes Gehwegpflaster	Q1 3117,11852 3251,12025 3258,12035 3295,12068
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
-Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16843,14420 17254,14451 17533,14484 17848,14523 18057,14549 18183,14573 18365,14607 18433,14620 18556,14687 18794,14819
+Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16851,14421 17254,14451 17533,14484 17848,14523 18057,14549 18183,14573 18365,14607 18433,14620 18556,14687 18794,14819
 #: XXX werden die Radwege demnächst instandgesetzt?
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html
 #: next_check: 2012-10-17
@@ -1610,7 +1610,7 @@ Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Grünstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
 #: XXX wird hier die Straße verbessert werden?
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2013-06-14
+#: last_checked: 2013-06-24
 #: next_check: 2013-10-14
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 Parkaue: mäßiger Asphalt	Q1 15535,12420 15446,12450 15399,12444 15402,12390 15350,12270
@@ -4800,7 +4800,7 @@ Waldkauzstr.: Verbundsteinpflaster	Q1 -1202,19877 -1364,19982 -1521,20041 -1630,
 Bidenswinkel: Verbundsteinpflaster	Q1+ 16242,12878 16242,12814 16255,12769
 Bornitzstr. [Wohngebiet]: Verbundsteinpflaster	Q1+ 16312,12876 16313,12762
 Bornitzstr. [Wohngebiet] (Silberweidenweg?): Verbundsteinpflaster	Q1+ 16376,12874 16377,12791
-(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655 17110,13811 17095,13972 17154,14093 17266,14144 18015,13846
+(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655 17110,13811 17095,13972 17154,14093 17219,14133 17266,14144 18015,13846
 (Herzbergstr. - Siegfriedstr.): Asphalt	Q0 17167,13655 17073,13765 16978,13819 16875,13834
 Allendorfer Weg: Verbundsteinpflaster	Q1+ 17794,14640 17879,14659
 Allendorfer Weg: Beton	Q1+ 17879,14659 17991,14684
@@ -8672,6 +8672,9 @@ Am Römersgrün: Verbundsteinpflaster	Q1+ 11698,3924 11725,3835 11690,3795 11703,3
 #: last_checked: 2013-06-23
 #: check_frequency: 90d
 Am Römersgrün: noch unbefestigt, Straße in Bau	Q2- 11725,3835 11742,3770 11703,3730
+#: note: es gibt noch eine Diagonalverbindung von der der Siegfriedstraße, welches aber nur ein enger, bewachsener Pfad ist
+(Siegfriedstr. - Am Wasserwerk): unbefestigter Weg, etwas Schotter	Q2+ 16871,14230 16762,14237
+(Siegfriedstr. - Am Wasserwerk): wassergebundene Decke	Q1- 16762,14237 16641,14325
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 

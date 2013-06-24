@@ -2328,8 +2328,9 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden!
-#: last_checked: 2013-06-04
-#: next_check: 2013-08-04
+#: source_id: INKO_113041
+#: last_checked: 2013-06-24
+#: check_frequency: 60d
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9852,12409
 # 
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
@@ -2377,10 +2378,7 @@ Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
-#: last_checked: 2013-06-04
-#: next_check: 2013-08-01
-#: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig
-Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
+# REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
 #: last_checked: 2013-02-20
 #: next_check: 2015-01-01
@@ -2411,8 +2409,8 @@ Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gespe
 # 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2013-06-07
-#: next_check: 2013-07-17
+#: last_checked: 2013-06-24
+#: check_frequency: 90d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 # 
 #: by: Kai Wagner
@@ -2498,9 +2496,9 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 # 
 # REMOVED --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
 # 
-#: last_checked: 2013-02-11
-#: next_check: 2013-06-11
 #: note: abgeschlossener Zaun
+#: last_checked: 2013-06-24
+#: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
 #: last_checked: 2013-05-08 vvv
