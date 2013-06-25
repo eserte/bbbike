@@ -51,7 +51,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 111 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 116 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -64,6 +64,22 @@ my $testcgi = "$cgidir/bbbike-test.cgi";
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
+
+{
+    # This used also to dump an error
+    # "bbbike-test.cgi: Search again with nearest node <-11472,-2406> instead of wanted goal <-10859,-3249>"
+    # to error.log, but not anymore (not tested here)
+    my $safe = Safe->new;
+    my $resp = bbbike_cgi_search +{ startc => '-11472,-2406', zielc => '-10859,-3249',
+				    pref_fragezeichen => 'yes',
+				    output_as => 'perldump',
+				  }, 'tricky search with fragezeichen in region scope';
+    my $res = $safe->reval($resp->decoded_content);
+    cmp_ok $res->{Len}, ">", 1300, 'expected length';
+    is $res->{Route}->[0]->{Strname}, 'Fragezeichen1', 'expected route, 1st hop';
+    is $res->{Route}->[1]->{Strname}, "Landstra\337e 1", 'expected route, 2nd hop';
+    is $res->{Route}->[2]->{Strname}, "Landstra\337e 1/Fragezeichen2", 'expected route, final hop';
+}
 
 SKIP: {
     skip "need JSON::XS", $json_xs_0_tests

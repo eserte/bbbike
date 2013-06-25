@@ -1,13 +1,13 @@
 EMPTY_FILES=	Potsdam.coords.data gesperrt \
 		handicap_s handicap_l qualitaet_s qualitaet_l \
-		fragezeichen berlin landstrassen landstrassen2 \
+		landstrassen2 \
 		comments_cyclepath comments_danger comments_ferry comments_misc comments_mount \
 		comments_route comments_tram comments_scenic plaetze \
 		upgrade_scope_hint faehren green wasserstrassen wasserumland wasserumland2 \
 		orte orte2 orte_city
 NON_EMPTY_FILES=	strassen gesperrt
 
-all:	Berlin.coords.data oldnames ${EMPTY_FILES}
+all:	Berlin.coords.data oldnames berlin ${EMPTY_FILES}
 
 Berlin.coords.data:	strassen BSDmakefile
 	perl -I../.. -I../../lib -MStrassen::Core -MStrassen::Strasse -e 'Strassen->new_stream(shift)->read_stream(sub { my $$r = shift; my($$s,@cps) = Strasse::split_street_citypart($$r->[0]); @cps = "" if !@cps; for my $$cp (@cps) { next if $$s =~ m{^\(}; print "$$s|$$cp||$$r->[1][0]\n" }})' ${.CURDIR}/strassen > Berlin.coords.data~
@@ -17,6 +17,11 @@ Berlin.coords.data:	strassen BSDmakefile
 
 oldnames: strassen Berlin.coords.data BSDmakefile
 	perl ../../miscsrc/oldname2plz -datadir ${.CURDIR} > $@~
+	chmod 644 $@~
+	mv $@~ $@
+
+berlin:	../../data/berlin
+	cp $> $@~
 	chmod 644 $@~
 	mv $@~ $@
 
