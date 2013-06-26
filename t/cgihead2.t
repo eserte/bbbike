@@ -57,6 +57,8 @@ push @var, (qw(
 	       $BBBike::HOMEPAGE
 	       $BBBike::BBBIKE_WWW
 	       @BBBike::BBBIKE_WWW
+	       "$BBBike::BBBIKE_WWW/beta"
+	       "$BBBike::BBBIKE_WWW/en"
 	       $BBBike::BBBIKE_DIRECT_WWW
 	       $BBBike::BBBIKE_SF_WWW
 	       $BBBike::BBBIKE_UPDATE_WWW
