@@ -21,6 +21,7 @@ use BBBikeVar;
 use BBBikeTest qw(check_cgi_testing);
 use File::Basename;
 use Sys::Hostname qw(hostname);
+use Time::HiRes qw(time);
 
 BEGIN {
     if (!eval q{
@@ -181,7 +182,9 @@ sub check_url {
 	}
 
 	my $method = "head";
+	my $t0 = time;
 	my $resp = $ua->$method($url);
+	my $dt = time - $t0;
 	my $redir_text = do {
 	    my $redir_url = $resp->request->uri;
 	    if ($redir_url eq $url) {
@@ -194,7 +197,7 @@ sub check_url {
 	skip("No internet available", $no_tests)
 	    if ($resp->code == 500 && $resp->message =~ /No route to host/i); # 'Bad hostname' was part of this regexp, but this mask a real test failure!
 	#warn $resp->content;
-	ok($resp->is_success, "Successful request of $url$redir_text")
+	ok($resp->is_success, "Successful request of $url$redir_text " . sprintf("%.3fs", $dt))
 	    or diag $resp->status_line . " " . $resp->content;
 	my $content_type = $resp->header('content-type');
 	if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
