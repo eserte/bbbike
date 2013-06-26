@@ -182,46 +182,48 @@ sub check_url {
 
 	my $method = "head";
 	my $resp = $ua->$method($url);
-	my $redir_url = $resp->request->uri;
-	if ($redir_url eq $url) {
-	    $redir_url = "(not redirected)";
-	} else {
-	    $redir_url = "(redirected to $redir_url)";
-	}
+	my $redir_text = do {
+	    my $redir_url = $resp->request->uri;
+	    if ($redir_url eq $url) {
+		'';
+	    } else {
+		" (redirected to $redir_url)";
+	    }
+	};
 
 	skip("No internet available", $no_tests)
 	    if ($resp->code == 500 && $resp->message =~ /No route to host/i); # 'Bad hostname' was part of this regexp, but this mask a real test failure!
 	#warn $resp->content;
-	ok($resp->is_success, "Successful request of $url")
+	ok($resp->is_success, "Successful request of $url$redir_text")
 	    or diag $resp->status_line . " " . $resp->content;
 	my $content_type = $resp->header('content-type');
 	if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
 	    $url eq $BBBike::BBBIKE_UPDATE_DIST_CGI ||
 	    $url =~ m{\.zip$}) {
-	    is($content_type, "application/zip", "Expected type (zip)") or diag("For URL $url $redir_url");
+	    is($content_type, "application/zip", "Expected type (zip)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{\.tar\.gz$}) {
-	    is($content_type, "application/x-gzip", "Expected type (gzip)") or diag("For URL $url $redir_url");
+	    is($content_type, "application/x-gzip", "Expected type (gzip)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{/\.modified$}) {
-	    like($content_type, qr{^text/plain}, "Expected type (plain text)") or diag("For URL $url $redir_url");
+	    like($content_type, qr{^text/plain}, "Expected type (plain text)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{wap}) {
-	    like($content_type, qr{^text/vnd.wap.wml}, "Expected type (wml)") or diag("For URL $url $redir_url");
+	    like($content_type, qr{^text/vnd.wap.wml}, "Expected type (wml)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{\.exe$}) {
 	    like($content_type, MSDOS_MIME_TYPE, "Expected type (binary or msdos program)")
-		or diag("For URL $url $redir_url");
+		or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{(?:\.tar\.bz2|\.tbz)$}) {
-	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)") or diag("For URL $url $redir_url");
+	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{\.tar\.gz/download$}) { # Sourceforge download
 	    # the inetbone mirror (213.203.218.125) running lighttpd returns octet-stream, so accept it, too
-	    like($content_type, qr{^application/(x-tar|x-gzip|octet-stream)$}, "Expected type (tar or gzip, but octet-stream also possible)") or diag("For URL $url $redir_url");
+	    like($content_type, qr{^application/(x-tar|x-gzip|octet-stream)$}, "Expected type (tar or gzip, but octet-stream also possible)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{\.exe/download$}) { # Sourceforge download
 	    like($content_type, MSDOS_MIME_TYPE, "Expected type (binary or msdos program)")
-		or diag("For URL $url $redir_url");
+		or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{\.deb/download$}) { # Sourceforge download
 	    # XXX One of the sourceforge mirrors uses text/plain as content-type
 	    like($content_type, qr{^application/(octet-stream|x-debian-package)$}, "Expected type (debian package), got $content_type")
-		or diag("For URL $url $redir_url");
+		or diag("For URL $url$redir_text");
 	} else {
-	    like($content_type, qr{^text/html}, "Expected type (html)") or diag("For URL $url $redir_url");
+	    like($content_type, qr{^text/html}, "Expected type (html)") or diag("For URL $url$redir_text");
 	}
     }
 }
