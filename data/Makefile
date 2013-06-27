@@ -145,7 +145,7 @@ fix-permissions:
 slow-checks:	check-categories \
 		check-names \
 		.check_targets \
-		inaccessible_strassen inaccessible_landstrassen \
+		inaccessible_strassen inaccessible_landstrassen ${PERSISTENTTMPDIR}/inaccessible_landstrassen+fragezeichen \
 		check-line-lengths \
 		check-coords.data \
 		persistent-tmp
@@ -263,7 +263,7 @@ inaccessible_strassen: strassen gesperrt
 	mv new.$@~ $@
 	-@$(READONLY) $@
 
-inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
+inaccessible_landstrassen: strassen landstrassen landstrassen2 faehren gesperrt
 	-@$(WRITEABLE) $@
 	${SEARCH_INACCESSIBLE} -street strassen -street landstrassen \
 	    -street landstrassen2 -street faehren -blocked gesperrt \
@@ -274,6 +274,19 @@ inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
 		(echo "*** If this is OK, then"; echo "        rm $@"; echo "    and rerun make"; false); \
 	fi
 	mv new.$@~ $@
+	-@$(READONLY) $@
+
+${PERSISTENTTMPDIR}/inaccessible_landstrassen+fragezeichen: strassen landstrassen landstrassen2 faehren gesperrt fragezeichen inaccessible_landstrassen
+	-@$(WRITEABLE) $@
+	${SEARCH_INACCESSIBLE} -street strassen -street landstrassen \
+	    -street landstrassen2 -street faehren -street fragezeichen -blocked gesperrt \
+	    -blockedtype einbahn -blockedtype sperre \
+	    > $@~
+	@if diff inaccessible_landstrassen $@~ | grep '^>' ; then \
+	    echo "Please make sure all non-ignored fragezeichen records are connected"; \
+	    false; \
+	fi
+	mv $@~ $@
 	-@$(READONLY) $@
 
 ######################################################################
