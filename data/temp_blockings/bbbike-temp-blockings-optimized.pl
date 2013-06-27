@@ -1801,7 +1801,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        {
          'source_id' => 'IM_019981',
          'until' => 1373486400,
-         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
+         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung (Fashion Week), Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
          'from' => 1371852000,
          'id' => 1771,
          'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
@@ -2798,7 +2798,7 @@ userdel	2::inwork 19968,16 19940,52
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende August 2013',
          'from' => 1330902000,
          'id' => 2316,
-         'data' => '#: osm_watch: way id="23243508" version="34"
+         'data' => '#: osm_watch: way id="23243508" version="35"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
@@ -3259,7 +3259,10 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
          'text' => 'Bergiusstr.: Baustelle, Fahrbahn gesperrt, Gehweg evtl. auch nicht passierbar, bis 11.08.2013 16:00 Uhr ',
          'from' => 1371358800,
          'id' => 2451,
-         'data' => 'userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
+         'data' => '#: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle
+#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf
+#: next_check: 2013-08-10
+userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
 ',
          'type' => 'gesperrt'
        },
@@ -3273,6 +3276,17 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
 userdel	q4::inwork 13301,8606 13262,8554 13217,8493
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'from' => undef,
+         'id' => 2454,
+         'data' => 'Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
+Kleistpark	2::night 7430,9576 7501,9573 7520,9572
+'
        }
      
 );

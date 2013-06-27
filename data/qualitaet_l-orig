@@ -886,7 +886,7 @@ Asphalt	Q0 27971,-20182 28009,-20086 28065,-19987
 Verbundsteinpflaster	Q1+ 28065,-19987 28071,-19862
 	Q0 28615,-19431 28853,-19212 29004,-18977
 Fahrbahn Asphalt	Q0 26276,-17489 26431,-16931 26455,-16852 26583,-15677
-	Q0 -13778,4492 -14244,5152 -14404,5435 -14728,5709 -15216,6079 -15452,6185 -15880,6273 -16002,6340
+	Q0 -13778,4492 -14244,5152 -14404,5435 -14728,5709 -15216,6079 -15452,6185 -15594,6231 -15880,6273 -16002,6340
 	Q0 -16002,6340 -16147,6611 -16182,6673 -16278,6718 -16590,6745 -17173,7182 -17404,7528
 	Q0 -17404,7528 -17603,7487 -17812,7349 -17909,7321 -19150,7320
 Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
@@ -2303,7 +2303,7 @@ Ludwig-Lesser-Str. (Potsdam): Verbundsteinpflaster	Q0- -13971,1415 -13941,1353 -
 Kirchstr. (Gramzow): Asphalt	Q0 49640,90243 49651,90395
 Kirchstr. (Gramzow): Kleinsteinpflaster	Q2+ 49651,90395 49655,90469
 Schulstr. (Gramzow): Kleinsteinpflaster	Q2+ 49655,90469 49841,90479
-Zum Wasserturm/Am Stellwerk (Potsdam): Asphalt	Q0 -11992,-2178 -11995,-2047 -11842,-2054 -11842,-2183
+Zum Wasserturm/Am Stellwerk (Potsdam): Asphalt	Q0 -11992,-2178 -11995,-2047 -11947,-2048 -11842,-2054 -11842,-2183
 Franz-Mehring-Str. (Frankfurt): Asphalt	Q0 88433,-5722 88440,-5572 88373,-5465 88280,-5402 88192,-5414 88148,-5201
 Bahnhofstr. (Frankfurt): Asphalt	Q0 88412,-6148 88409,-6032 88430,-5923 88433,-5722
 Georgenthal - Wilmersdorf: leicht welliger Asphalt	Q0- 71321,1319 71098,1130 70201,969 69806,656 69726,655
@@ -4469,3 +4469,12 @@ Neue Kirschallee (Potsdam-Bornim): Asphalt	Q0 -14731,644 -14711,690 -14788,744
 #: by: heinrich schwarzkopf:
 #: note: laut osm ebenfalls "unpaved"
 Lindstedter Str. (Potsdam-Eiche): fester Sandweg	Q2 -17807,-325 -17696,-360 -17477,-411
+# 
+#: by: Christoph Buller:
+In der Feldmark (Potsdam-Eiche/Golm): Asphalt	Q0 -17678,78 -17719,87 -17782,112 -17843,139 -17902,162 -17961,189 -18042,219 -18208,250 -18251,248 -18341,218 -18428,189 -18443,83
+# 
+#: by: Ramona Hesse vvv
+#: XXX anonymous meint aber: Beton, Q2 - was stimmt?
+Am Schlangenfenn (Potsdam): guter Asphalt	Q0 -10516,-5498 -10585,-5528 -10630,-5553 -10712,-5594 -10758,-5502 -10630,-5440
+Am Schlangenfenn (Potsdam): guter Asphalt	Q0 -10585,-5528 -10630,-5440 -10652,-5393 -10836,-5477
+#: by: ^^^

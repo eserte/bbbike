@@ -31,6 +31,9 @@ Markt - Neue Bahnhof	3 14988,11130 14918,11249 14879,11182
 Boxhagener - Neue Bahnhof	3 14799,11330 14918,11249 15016,11431
 Goeben - Kulmer	3 7725,9748 7829,9723 7848,9814 7866,9902
 Kulmer Str./Goeben	3 7771,9479 7829,9723 7848,9814 7866,9902
+Mittelstreifen	3nocross::ignrte 7631,9770 7725,9748 7829,9723
+Goebenstr. -> Kirchbachstr.: Mittelstreifen	3::igndisp 7631,9770 7725,9748 7757,9918
+Kirchbachstr. -> Goebenstr.: Mittelstreifen	3::igndisp 7757,9918 7725,9748 7829,9723
 Hermannstr. - Flughafen	3 11884,8492 11898,8362 12083,8411
 Karlshorster - Nöldner	3nocross::ignrte 15279,10862 15272,10790 15261,10738
 Nöldnerstr. -> Karlshorster Str.: Karlshorster - Nöldner	3::igndisp 15388,10758 15272,10790 15261,10738
@@ -546,9 +549,9 @@ Rognitzstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2314,11581 2282,11463 2391,
 Rognitzstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2219,11304 2282,11463 2191,11451
 Rognitzstr. -> Rognitzstr.: Mittelstreifen	3::igndisp 2219,11304 2282,11463 2314,11581
 Kaiserdamm -> Rognitzstr.: Mittelstreifen	3::igndisp 2391,11478 2282,11463 2219,11304
-Mittelstreifen	3nocross::ignrte 15838,14319 16008,14340 16310,14378
-Landsberger Allee -> Große-Leege-Str.: Mittelstreifen	3::igndisp 15838,14319 16008,14340 16007,14367
-Große-Leege-Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 16007,14367 16008,14340 16310,14378
+Mittelstreifen	3nocross::ignrte 15850,14308 16010,14326 16314,14361
+Landsberger Allee -> Große-Leege-Str.: Mittelstreifen	3::igndisp 15850,14308 16010,14326 16007,14367
+Große-Leege-Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 16007,14367 16010,14326 16314,14361
 Mittelstreifen	3nocross::ignrte -1485,15463 -1389,15285 -1345,15060
 Lüdenscheider Weg -> Daumstr.: Mittelstreifen	3::igndisp -1037,15482 -1389,15285 -1345,15060
 Lüdenscheider Weg -> Goldbeckweg: Mittelstreifen	3::igndisp -1037,15482 -1389,15285 -1532,15225
@@ -1154,10 +1157,10 @@ Pasteurstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12335,14246 12188
 Greifswalder Str. -> Pasteurstr.: Straßenbahntrasse	3::igndisp 12228,14404 12188,14350 12335,14246
 Greifswalder Str. -> Christburger Str.: Straßenbahntrasse	3::igndisp 12077,14186 12177,14335 11912,14486
 Christburger Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 11912,14486 12177,14335 12188,14350
-Sybelstr.	1 3978,10582 3883,10577
+Sybelstr.	1 3981,10590 3883,10585
 Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559
-Bayerische Str.	1 4296,10004 4349,10247
+Bayerische Str.	1 4296,10004 4352,10260
 Ferdinand-Schultze-Str - Landsberger Allee	3 17794,14640 17848,14523 18057,14549
 Michelangelostr./Kniprodestr.	3 13875,15142 13854,15129 13816,15137 13823,15111
 Kurmärkische Str.	3 7413,10244 7429,10366 7337,10396
@@ -1415,7 +1418,7 @@ Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 7417,16587
 Florastr.: Poller	3 1929,28119 1938,28171 1961,28239
 Florastr.: Poller	3 1961,28239 1938,28171 1929,28119
 Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
-Krumme Str.	1 4029,12158 3999,12050 3977,11854
+Krumme Str.	1 4029,12158 3999,12050 3976,11869
 Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,14749
 Eylauer Str.: Einfahrt gesperrt	3 8389,9087 8480,9080 8472,8776
 Eylauer Str.: Einfahrt gesperrt	3 8598,9074 8480,9080 8472,8776
@@ -1545,3 +1548,17 @@ Triftstr.	1 6715,15152 6743,15102
 Straßenbahntrasse	3nocross::ignrte 23822,5403 23851,5389 23950,5342
 Jastrower Weg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23877,5503 23851,5389 23950,5342
 Fürstenwalder Damm -> Jastrower Weg: Straßenbahntrasse	3::igndisp 23822,5403 23851,5389 23877,5503
+Mittelstreifen	3nocross::ignrte 3159,11562 3320,11583 3441,11598
+Fritschestr. -> Bismarckstr.: Mittelstreifen	3::igndisp 3339,11433 3320,11583 3159,11562
+Fritschestr. -> Fritschestr.: Mittelstreifen	3::igndisp 3339,11433 3320,11583 3287,11846
+Bismarckstr. -> Fritschestr.: Mittelstreifen	3::igndisp 3159,11562 3320,11583 3287,11846
+Bismarckstr. -> Fritschestr.: Mittelstreifen	3::igndisp 3441,11598 3320,11583 3339,11433
+Fritschestr. -> Fritschestr.: Mittelstreifen	3::igndisp 3287,11846 3320,11583 3339,11433
+Fritschestr. -> Bismarckstr.: Mittelstreifen	3::igndisp 3287,11846 3320,11583 3441,11598
+Mittelstreifen	3nocross::ignrte 4485,10307 4360,10320 4239,10358
+Wielandstr. -> Bayerische Str.: Mittelstreifen	3::igndisp 4371,10465 4360,10320 4352,10260
+Wielandstr. -> Lietzenburger Str.: Mittelstreifen	3::igndisp 4371,10465 4360,10320 4485,10307
+Bayerische Str. -> Wielandstr.: Mittelstreifen	3::igndisp 4352,10260 4360,10320 4371,10465
+Bayerische Str. -> Lietzenburger Str.: Mittelstreifen	3::igndisp 4352,10260 4360,10320 4239,10358
+Lietzenburger Str. -> Wielandstr.: Mittelstreifen	3::igndisp 4239,10358 4360,10320 4371,10465
+Lietzenburger Str. -> Bayerische Str.: Mittelstreifen	3::igndisp 4485,10307 4360,10320 4352,10260

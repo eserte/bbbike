@@ -25,6 +25,7 @@ Markt - Neue Bahnhof	3 14988,11130 14918,11249 14879,11182
 Boxhagener - Neue Bahnhof	3 14799,11330 14918,11249 15016,11431
 Goeben - Kulmer	3 7725,9748 7829,9723 7848,9814 7866,9902
 Kulmer Str./Goeben	3 7771,9479 7829,9723 7848,9814 7866,9902
+Goebenstr.: Mittelstreifen	3nocross 7631,9770 7725,9748 7829,9723
 Hermannstr. - Flughafen	3 11884,8492 11898,8362 12083,8411
 Karlshorster - Nöldner	3nocross 15279,10862 15272,10790 15261,10738
 Weydemeyerstr. - Mollstr.	3 11904,13058 11896,13075 11840,13085
@@ -328,7 +329,7 @@ Berliner Str.: Mittelstreifen	3nocross 4918,8872 5022,8879 5172,8880 5182,8880 5
 Heylstr.: Mittelstreifen	3nocross 6181,8181 6246,8222 6325,8259
 #: note: Luftbild
 Kaiserdamm: Mittelstreifen	3nocross 2191,11451 2282,11463 2391,11478
-Landsberger Allee: Mittelstreifen	3nocross 15838,14319 16008,14340 16310,14378
+Landsberger Allee: Mittelstreifen	3nocross 15850,14308 16010,14326 16314,14361
 #: note: Luftbild
 Daumstr.: Mittelstreifen	3nocross -1485,15463 -1389,15285 -1345,15060
 #: by: André Wolf: vvv
@@ -654,12 +655,12 @@ Berliner Str.: Mittelstreifen und Straßennbahntrasse	3nocross 10849,17848 10858,
 Hundekehlestr.: Mittelstreifen	3nocross 2346,7684 2460,7658 2576,7634
 Lietzenburger Str.	3nocross 5047,10381 5207,10399 5329,10422
 Greifswalder Str.: Straßenbahntrasse	3nocross 12228,14404 12188,14350 12177,14335 12077,14186
-Sybelstr.	1 3978,10582 3883,10577
+Sybelstr.	1 3981,10590 3883,10585
 Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559
 #: note ^^^
 #: by: andk
-Bayerische Str.	1 4296,10004 4349,10247
+Bayerische Str.	1 4296,10004 4352,10260
 Ferdinand-Schultze-Str - Landsberger Allee	3 17794,14640 17848,14523 18057,14549
 Michelangelostr./Kniprodestr.	3 13875,15142 13854,15129 13816,15137 13823,15111
 Kurmärkische Str.	3 7413,10244 7429,10366 7337,10396
@@ -828,7 +829,7 @@ Seestr.: Straßenbahntrasse	3nocross 7403,16575 7417,16587 7456,16620
 Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 *
 Florastr.: Poller	3 * 1938,28171 *
 Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
-Krumme Str.	1 4029,12158 3999,12050 3977,11854
+Krumme Str.	1 4029,12158 3999,12050 3976,11869
 Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,14749
 #: by: http://www.flickr.com/photos/lapidarium42/7708833948/in/pool-gwb
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8472,8776
@@ -909,3 +910,6 @@ Tempelhofer Damm: Mittelstreifen	3nocross 9161,5535 9158,5673 9176,5803
 Triftstr.	1 6715,15152 6743,15102
 #: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer wenige Meter östlich von der Kreuzung
 Fürstenwalder Damm/Jastrower Weg: Straßenbahntrasse	3nocross 23822,5403 23851,5389 23950,5342
+#: XXX_indoor: unbequemes Überqueren, parkende Autos --- eventuell auch für Radfahrer mit 3nocross markieren? Oder die Jüdenstr.-Lösung wählen?
+Bismarckstr.: Mittelstreifen	3nocross 3159,11562 3320,11583 3441,11598
+Lietzenburger Str./Olivaer Platz: Mittelstreifen	3nocross 4485,10307 4360,10320 4239,10358

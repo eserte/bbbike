@@ -843,7 +843,7 @@ EOF
        text  => 'Leibnizstraße (Charlottenburg) zwischen Bismarckstr. und Otto-Suhr-Allee in Richtung Kantstr. Baustelle, Fahrtrichtung gesperrt bis 5.9.2004, 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 4359,11979 4345,11710
+userdel	1 4367,11996 4345,11710
 EOF
      },
      { from  => 1094508000, # 2004-09-07 00:00
@@ -1925,7 +1925,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_77420',
        data  => <<EOF,
-userdel	q4; 15838,14319 15855,14207 15871,14106 15897,13942 15896,13760 15896,13594 15896,13547
+userdel	q4; 15850,14308 15860,14208 15871,14106 15897,13942 15896,13760 15896,13594 15896,13547
 EOF
      },
      { from  => 1114466400, # 2005-04-26 00:00
@@ -2651,10 +2651,10 @@ userdel auto	3 5829,10964 5782,10884 5681,10696
 userdel auto	3 5247,10992 5242,10918 5229,10716 5207,10399
 userdel auto	3 5207,10399 5229,10716 5242,10918 5247,10992
 userdel auto	3 5471,10719 5475,10808 5488,10978
-userdel auto	3 5877,10486 6025,10746 6131,10939 6145,10975
+userdel auto	3 5866,10492 6025,10746 6131,10939 6145,10975
 userdel auto	3 5488,10978 5475,10808 5471,10719
 userdel auto	3 5681,10696 5782,10884 5829,10964
-userdel auto	3 6145,10975 6131,10939 6025,10746 5877,10486
+userdel auto	3 6145,10975 6131,10939 6025,10746 5866,10492
 EOF
      },
      { from  => 1124575200, # 2005-08-21 00:00
@@ -5693,7 +5693,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003108',
        data  => <<EOF,
-userdel	1::inwork 4359,11979 4345,11710
+userdel	1::inwork 4367,11996 4345,11710
 EOF
      },
      { from  => 1156793020, # 2006-08-28 21:23
@@ -6215,7 +6215,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003744',
        data  => <<EOF,
-userdel	1::inwork 4359,11979 4345,11710
+userdel	1::inwork 4367,11996 4345,11710
 EOF
      },
      { from  => $isodate2epoch->("2013-05-31 00:00:00"), # 1 Tag Vorlauf
@@ -8282,7 +8282,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005511',
        data  => <<EOF,
-userdel	2::inwork 16373,-496 16400,-409 16431,-311 16536,26
+userdel	2::inwork 16373,-496 16400,-409 16431,-311 16481,-150 16536,26
 EOF
      },
      { from  => 1179698400, # 2007-05-21 00:00
@@ -9768,7 +9768,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006391',
        data  => <<EOF,
-userdel	2::inwork 16851,14421 16871,14230 16881,14063
+userdel	2::inwork 16852,14412 16871,14230 16881,14063
 EOF
      },
      { from  => 1188424800, # 2007-08-30 00:00
@@ -13391,7 +13391,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_011938',
        data  => <<EOF,
-userdel	q4::inwork; 15058,14575 15174,14638 15272,14691 15345,14736 15383,14759
+userdel	q4::inwork; 15066,14579 15174,14638 15272,14691 15345,14736 15383,14759
 EOF
      },
      { from  => 1244065297, # 2009-06-03 23:41
@@ -15088,7 +15088,7 @@ EOF
      },
      { from  => $isodate2epoch->("2013-06-22 00:00:00"), # 
        until => $isodate2epoch->("2013-07-10 22:00:00"), # XXX 1248600361, # 2009-07-26 23:59 1248645599
-       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
+       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung (Fashion Week), Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
        type  => 'gesperrt',
        source_id => 'IM_019981',
        data  => <<EOF,
@@ -16229,7 +16229,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014223',
        data  => <<EOF,
-userdel	q4::inwork 15838,14319 15855,14207 15871,14106 15897,13942
+userdel	q4::inwork 15850,14308 15860,14208 15871,14106 15897,13942
 EOF
      },
      { from  => 1254980700, # 2009-10-08 07:45
@@ -17886,7 +17886,7 @@ userdel auto	3 7115,10612 6972,10665 6818,10725
 userdel auto	3 8600,12165 8538,12245 8546,12279
 userdel auto	3 8600,12165 8538,12245 8522,12187
 userdel auto	3 8600,12165 8538,12245 8522,12239
-userdel auto	3 5877,10486 6025,10746 6131,10939
+userdel auto	3 5866,10492 6025,10746 6131,10939
 userdel auto	3 6216,10614 6228,10646 6250,10701
 userdel auto	3 7131,10331 7033,10328 7060,10221
 userdel auto	3 7131,10331 7033,10396 7245,10499
@@ -17925,7 +17925,7 @@ userdel auto	3 8522,12239 8538,12245 8546,12279
 userdel auto	3 8522,12239 8538,12245 8600,12165
 userdel auto	3 8522,12239 8538,12245 8522,12187
 userdel auto	3 6524,11583 6809,11570 6980,11583
-userdel auto	3 6131,10939 6025,10746 5877,10486
+userdel auto	3 6131,10939 6025,10746 5866,10492
 userdel auto	3 6719,10347 6753,10446 6745,10619
 userdel auto	3 6681,10959 6824,10904 6740,10755
 userdel auto	3 6540,11754 6778,11742 7073,11798
@@ -18892,7 +18892,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_105791',
        data  => <<EOF,
-userdel	q4::inwork; 15058,14575 15174,14638 15272,14691
+userdel	q4::inwork; 15066,14579 15174,14638 15272,14691
 EOF
      },
      { from  => 1299740460, # 2011-03-10 08:01
@@ -20110,7 +20110,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
-#: osm_watch: way id="23243508" version="34"
+#: osm_watch: way id="23243508" version="35"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
@@ -21146,7 +21146,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
        data  => <<EOF,
 #: source_id: IM_019774 vvv
-userdel	q4::inwork; 4359,11979 4441,12185 4518,12350
+userdel	q4::inwork; 4367,11996 4441,12185 4518,12350
 # REMOVED (dieser Abschnitt für Anlieger befahrbar) --- userdel	q4::inwork; 4518,12350 4598,12501
 # REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4601,12310 4518,12350 4358,12365
 # REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4358,12365 4518,12350 4601,12310
@@ -21330,7 +21330,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130604.1135.385636.html',
        data  => <<EOF,
-userdel	2::temp 3977,11854 3810,11843
+userdel	2::temp 3976,11869 3807,11859
 EOF
      },
      { from  => 1370556000, # 2013-06-07 00:00
@@ -21468,6 +21468,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_119210',
        data  => <<EOF,
+#: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle
+#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf
+#: next_check: 2013-08-10
 userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
 EOF
      },
@@ -21488,6 +21491,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 12826,4777 12836,4649
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Kleistpark: nachts geschlossen. Schließzeiten ' .
+		do {
+		    my @l = localtime;
+		    my($day, $mon) = ($l[3], $l[4]+1);
+		    ($mon >= 4 && $mon <= 9 || ($mon == 3 && $day >= 16) || ($mon == 10 && $day <= 14))
+			? 'im Sommer: 21.00 bis 6.00 Uhr'
+			: 'im Winter: 18.00 bis 6.00 Uhr'
+		    ;
+		},
+       recurring => 1,
+       data  => <<EOF,
+Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
+Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 EOF
      },
     );

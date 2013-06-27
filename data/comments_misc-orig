@@ -107,7 +107,7 @@ Carionweg: Kette	CS 3382,9223 3370,9215
 #: XXX_prog: doubled in gesperrt_orig, but needs implementation in Perl/Tk version
 Sesselmannweg: Kette	CS 3264,9261 3332,9181
 #: XXX_prog: should be superseded by a superiour BNP-like implementation vvv
-(Waitzstr. - Lewishamstr.): Bordsteine	CS 3800,10580 3739,10576
+(Waitzstr. - Lewishamstr.): Bordsteine	CS 3764,10580 3739,10576
 Sybelstr.: Bordsteine	CS 3739,10576 3712,10566
 Apeldorner Weg: Bordsteine	CP; * 3848,8689 3868,8759
 Apeldorner Weg: Bordsteine	CP2; 3952,8980 3868,8759
@@ -122,8 +122,9 @@ Sauerbruchweg: Gelände der Charité	CS 8487,13351 8555,13260 8605,13200 8630,1317
 (Luisenstr. - Hufelandweg): Gelände der Charité	CS 8665,13353 8582,13355
 (Reichsstr. - Westendallee): Privatstraße	CS 269,12576 151,12541
 (Guerickestr. - Einsteinufer): Privatstraße	CS 4601,12310 4658,12450
-#: XXX_prog: trailer=no implementation missing
-Stromstr: kann über schmale Furt (keine Anhänger!) gequert werden	CS 6218,12975 6190,12978 6165,12985 6106,12989
+#: XXX_prog: trailer=no implementation missing vvv
+Stromstr: kann über schmale Furt (keine Anhänger!) gequert werden	CP 6190,12978 6164,12980 6129,12976 6106,12981
+#: XXX_prog ^^^
 # REMOVED ("normale" Straße, die Märkte sind besser über "An der Ostbahn" erschlossen, jedenfalls für KfZ) --- #: XXX stimmt das noch mit den Märkten? --- Am Wriezener Bahnhof: Privatstraße zu diversen Märkten	CS 12794,11893 12944,11760 12993,11717
 #: XXX_prog should be superseded by a superiour BNP-like implementation/wird irgendwann mal zu "BS" vvv
 Bordstein	CP 12054,12903 11983,12949 11921,12990
@@ -1132,6 +1133,8 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 18619,11463
 	culdesac_pseudo 24671,989
 	culdesac 11713,3706
+	culdesac_pseudo 8009,9063
+	culdesac_pseudo 6106,12981
 #: section ^^^
 ######################################################################
 # busroute
@@ -1297,7 +1300,7 @@ Bus 175	busroute_N 9959,-1918 9853,-1921 9750,-1925 9648,-1928 9531,-1931 9428,-
 Bus 175	busroute_N 10096,-2137 10173,-2402 10257,-2654 10365,-2603 10382,-2598 10420,-2644 10506,-2642 10638,-2638 10657,-2639 10678,-2640 10832,-2636 10949,-2635 11063,-2615 11308,-2535 11496,-2484 11706,-2409 11818,-2356 11882,-2326 12052,-2250 12122,-2219 12154,-2202 12082,-1908 12058,-1785 12050,-1715 12046,-1678 11778,-1706
 Bus X76, ...	busroute_N 11778,-1706 11746,-1442 11739,-1384 11717,-1204
 Bus 373	busroute_N 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747 15799,1690 15729,1573 15670,1474 15639,1422 15880,1291 15984,1233 16142,1141 16282,1052 16342,959 16349,932
-Bus 271	busroute_N 15757,610 15803,522 15831,484 15944,368 15995,328 16035,298 16130,239 16055,153 15966,52 15960,-10 15995,-115 16051,-264 16079,-337 16142,-414 16234,-450 16297,-468 16373,-496 16400,-409 16431,-311 16536,26 16582,221 16642,393 16726,642 16735,668 16779,775 16799,819 16813,865 16889,1064 16868,1126 16839,1162
+Bus 271	busroute_N 15757,610 15803,522 15831,484 15944,368 15995,328 16035,298 16130,239 16055,153 15966,52 15960,-10 15995,-115 16051,-264 16079,-337 16142,-414 16234,-450 16297,-468 16373,-496 16400,-409 16431,-311 16481,-150 16536,26 16582,221 16642,393 16726,642 16735,668 16779,775 16799,819 16813,865 16889,1064 16868,1126 16839,1162
 Bus 260, ...	busroute_N 16450,1691 16549,1758
 Bus 372	busroute_N 16698,1392 16805,1488
 Bus 372	busroute_N 16849,1437 16988,1571 17241,1750 17347,1823 17431,1882 17567,1942 17747,2028 17764,2032
