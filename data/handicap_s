@@ -33,7 +33,6 @@ Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,104
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fuﬂg‰ngerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Radweg Herzberge: wegen Bauarbeiten m¸ssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
 Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15402,12390 15350,12270
-Malchower Weg: Einbahnstraﬂe wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -145,7 +144,6 @@ Volkspark Friedrichshain: Fuﬂg‰nger	q1 12344,13627 12204,13609 12169,13609 12141
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13609 12145,13628 12161,13711
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12129,13531 12111,13480 12060,13422
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 11857,13596 11842,13576
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12185,13298 12177,13283
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13341 12131,13333
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12038,13685 12145,13628 12169,13609
 Luisenhain: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
@@ -1127,7 +1125,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 (Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17289,14195
 (Genslerstr. - Landsberger Allee): Fuﬂg‰nger	q2 16669,14438 16665,14420 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
-(Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17267,18343
+(Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
 (entlang der Stadtbahn): Fuﬂg‰nger	q1 10117,12966 9930,12947
 (Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8483,10900 8399,10923
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
@@ -1168,6 +1166,8 @@ Lauinger Str.: einige Fuﬂg‰nger, nicht ganz abgesenkter Bordstein	q1 21221,11398
 Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 (Kleistpark): einige Fuﬂg‰nger	q1 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
 (Kleistpark): einige Fuﬂg‰nger	q1 7430,9576 7501,9573 7520,9572
+(Blockdammweg - Trautenauer Str.): Rampe	q2 17904,8927 17888,8899 17915,8900
+(Weg 1 im KGA Hochspannung): kurze Rampe	q3 18184,9631 18181,9619
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1312,11 +1312,12 @@ Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3587,7560
 Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger, kurze Rampe	q3 12382,13097 12380,13120
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12005,13481 11957,13528 11857,13596 11823,13610 11785,13625
-(Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785 11805,12760
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11839,12830 11818,12785 11805,12760
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0 11933,12701 11971,12785 11921,12810
-(Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
+(Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11721,12801
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11367,12940
-(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11600,12857 11589,12768
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
 (Berolinastr.): Fuﬂg‰nger	q1 11885,12905 11906,12947 11921,12990
 (Berolinastr.): Fuﬂg‰nger, Bordstein	q2 11921,12990 11983,12949
@@ -1652,7 +1653,7 @@ Wetterseestr.: enge Straﬂe	q1 11499,16883 11504,16746
 Kreuzritterstr.: enge Straﬂe	q1 2252,24700 2297,24682 2359,24677 2402,24687 2471,24709 2531,24702 2586,24678 2621,24638 2640,24608
 Askaloner Weg: enge Straﬂe	q1 2402,24687 2407,24657 2384,24603 2311,24546 2262,24505
 Juttastr.: enge Straﬂe	q1 1072,4542 949,4366
-Herbert-Baum-Str.: enge Straﬂe	q0 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
+Herbert-Baum-Str.: enge Straﬂe	q0 13826,16026 13869,15912 13904,15818 13939,15723 13964,15656 13989,15589
 Sendener Weg: enge Straﬂe	q0 964,18321 1040,18283 1178,18223 1221,18332 1281,18487 1346,18662
 Gilgenburger Str.: enge Straﬂe	q1 24387,5672 24434,5645 24549,5685 24666,5726
 Blochmannstr.: enge Straﬂe	q1 5097,988 5036,949 4986,959 4925,961 4862,975 4788,1023 4702,1147 4634,1245
@@ -1780,7 +1781,7 @@ Helgiweg: enge Straﬂe	q0 14533,18413 14565,18226 14576,18163 14595,18050
 Lummenweg: eng durch parkende Autos	q1 21879,2592 21919,2510 21936,2388
 Hermannstr. (Zehlendorf): enge Straﬂe	q1 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
 Groﬂkopfstr.: enge Straﬂe (parkende Autos)	q0 5167,17725 5363,17667
-Privatstr. 7: enge Straﬂe	q1 16978,16915 17051,16923 17129,16914 17199,16907 17264,16892
+Privatstr. 7: enge Straﬂe	q1 16978,16915 17051,16923 17129,16922 17199,16907 17264,16892
 (Deutschhofer Allee - Unter den Birken): Fuﬂg‰nger, Hunde	q1 21940,8158 22077,8104 22199,8028 22600,7711
 Roseggerstr. (Mahlsdorf): enge Straﬂe	q1 23661,8597 23860,8480
 Unionstr.: breiter Fuﬂweg, einige Fuﬂg‰nger	q2 5708,14077 5782,14067

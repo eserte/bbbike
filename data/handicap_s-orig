@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-06-27 vvv
+#: last_checked: 2013-06-28 vvv
 #: next_check: 2013-06-30 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -210,11 +210,7 @@ Radweg Herzberge: wegen Bauarbeiten m¸ssen teilweise Trampelpfade benutzt werden
 Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15402,12390 15350,12270
 ### Hohenschˆnhausen ###
 # 
-#: source_id: INKO_111447
-#: source_id: LMS_1290313357
-#: last_checked: 2013-04-20
-#: next_check: 2013-06-30 (Ende: 1.7.2013)
-Malchower Weg: Einbahnstraﬂe wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
+# REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraﬂe wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
 # 
 #: temporary ^^^
 ######################################################################
@@ -355,7 +351,6 @@ Volkspark Friedrichshain: Fuﬂg‰nger	q1 12344,13627 12204,13609 12169,13609 12141
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13609 12145,13628 12161,13711
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12129,13531 12111,13480 12060,13422
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 11857,13596 11842,13576
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12185,13298 12177,13283
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13341 12131,13333
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12038,13685 12145,13628 12169,13609
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120418.1330.368930.html
@@ -1550,7 +1545,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 (Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17289,14195
 (Genslerstr. - Landsberger Allee): Fuﬂg‰nger	q2 16669,14438 16665,14420 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
-(Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17267,18343
+(Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
 (entlang der Stadtbahn): Fuﬂg‰nger	q1 10117,12966 9930,12947
 (Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8483,10900 8399,10923
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
@@ -1577,8 +1572,8 @@ Arnimplatz: Fuﬂg‰nger	q2 10606,16319 10739,16146
 (Weg im Salvador-Allende-Viertel): eine Bodenschwelle, kann umfahren werden	q0 23279,4599 23445,4596
 (Weg im Salvador-Allende-Viertel - Am Berg): Fuﬂg‰nger	q2 23051,4461 23010,4506
 #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen
-#: last_checked: 2013-06-14
-#: next_check: 2013-09-14
+#: last_checked: 2013-06-28
+#: check_frequency: 90d
 # (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger	q1 15513,13539 15363,13531
 (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15363,13531
 Lilienweg: Fuﬂg‰nger	q2+ 15143,5705 15154,5706 15209,5713 15252,5719 15296,5725 15337,5730
@@ -1608,6 +1603,11 @@ Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 (Kleistpark): einige Fuﬂg‰nger	q1 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
 (Kleistpark): einige Fuﬂg‰nger	q1 7430,9576 7501,9573 7520,9572
 #: note ^^^
+(Blockdammweg - Trautenauer Str.): Rampe	q2 17904,8927 17888,8899 17915,8900
+#: XXX wie wird die endg¸ltige Lˆsung hier aussehen?
+#: last_checked: 2013-06-28
+#: next_check: 2013-07-02
+(Weg 1 im KGA Hochspannung): kurze Rampe	q3 18184,9631 18181,9619
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -1904,11 +1904,12 @@ Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3587,7560
 Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger, kurze Rampe	q3 12382,13097 12380,13120
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12005,13481 11957,13528 11857,13596 11823,13610 11785,13625
-(Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785 11805,12760
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11839,12830 11818,12785 11805,12760
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11921,12810
-(Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11584,12863 11600,12857 11622,12850 11725,12809
+(Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11721,12801
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11367,12940
-(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11600,12857 11589,12768
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
 (Berolinastr.): Fuﬂg‰nger	q1 11885,12905 11906,12947 11921,12990
 #: XXX_prog BS (am ˆstlichen Ende)
@@ -2413,7 +2414,7 @@ Juttastr.: enge Straﬂe	q1 1072,4542 949,4366
 # 
 #: by: Veit Bˆhnke:
 #: corrected_by: srt (q1 -> q0-)
-Herbert-Baum-Str.: enge Straﬂe	q0- 13826,16026 13869,15912 13904,15818 13943,15717 13964,15656 13989,15589
+Herbert-Baum-Str.: enge Straﬂe	q0- 13826,16026 13869,15912 13904,15818 13939,15723 13964,15656 13989,15589
 # 
 #: by: Bernd Mahrin:
 #: corrected_by: srt/policy (q1 -> q0-)
@@ -2746,7 +2747,7 @@ Hermannstr. (Zehlendorf): enge Straﬂe	q1 -1093,4529 -1025,4422 -947,4303 -851,41
 Groﬂkopfstr.: enge Straﬂe (parkende Autos)	q0- 5167,17725 5363,17667
 #: by: Lelek Torsten:
 #: corrected_by: srt/policy (q3 -> q1):
-Privatstr. 7: enge Straﬂe	q1 16978,16915 17051,16923 17129,16914 17199,16907 17264,16892
+Privatstr. 7: enge Straﬂe	q1 16978,16915 17051,16923 17129,16922 17199,16907 17264,16892
 #: by: Daniel (mag645):
 (Deutschhofer Allee - Unter den Birken): Fuﬂg‰nger, Hunde	q1 21940,8158 22077,8104 22199,8028 22600,7711
 #: by: A.Schulz:

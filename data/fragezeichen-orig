@@ -135,7 +135,7 @@ Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,1187
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-06-27
+#: last_checked: 2013-06-28
 #: check_frequency: 60d
 Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
@@ -214,10 +214,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
-#: XXX Baumaßnahme 11.45 (Realisierung nach 2011)
-#: last_checked: 2013-06-01
-#: next_check: 2013-07-01
-Weg 1 im KGA Hochspannung: die Qualität des Wegs wird verbessert, evtl. asphaltiert	?::inwork 18266,9853 18278,9818 18224,9795 18181,9619
+# REMOVED (realisiert) --- #: XXX Baumaßnahme 11.45 (Realisierung nach 2011) --- #: last_checked: 2013-06-01 --- #: next_check: 2013-07-01 --- Weg 1 im KGA Hochspannung: die Qualität des Wegs wird verbessert, evtl. asphaltiert	?::inwork 18266,9853 18278,9818 18224,9795 18184,9631 18181,9619
 # 
 #: XXX Baumaßnahme 8.20 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
@@ -395,12 +392,6 @@ Planstraße zwischen Theodorstr. und Pilgramer Str.: Straße in Planung, Qualität?
 #: next_check: 2013-10-01
 Am Lokdepot: Planung einer Erschließungsstraße	?::inwork 8390,8879 8389,9087
 # 
-#: XXX culdesac -> culdesac_pseudo, wenn's fertig ist
-#: XXX Rampe wird asphaltiert sein
-#: last_checked: 2013-06-09
-#: next_check: 2013-06-15
-Rampe in Bau	?::inwork 17904,8927 17888,8899 17915,8900
-# 
 #: last_checked: 2013-06-14 vvv
 Ampelanlage in Bau	?::inwork 9242,7286
 Ampelanlage in Bau	?::inwork 9242,7325
@@ -444,6 +435,7 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4&date=20130125 vvv
 #: priority: #C vvv
+#: check_frequency: 60d vvv
 #: next_check: 2013-04-01 vvv
 Frohnauer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 2437,24435 2437,24393
 Alt-Wittenau: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5235,20439
@@ -456,6 +448,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: next_check ^^^
 #: last_checked: 2013-06-07
 Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8091,17194
+#: check_frequency: ^^^
 #: priority ^^^
 #: by: ^^^
 #: by: ^^^
@@ -509,20 +502,22 @@ Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 
 # 
 #: XXX Gartenstadt Karlshorst: neue Straßen vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036705222332/705222332/00098126/26-Anlagen/02/AnlageDS430.pdf (Lage der Gartenstadt)
-#: next_check: 2013-07-01 vvv
 #: XXX folgende Straßen werden wahrscheinlich benannt:
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5092&options=4
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/4508103636166975/36166975/00104984/84-Anlagen/02/116-2013-1Blatt1ausB-PlanXVII-50aa-16012012.pdf
+#: last_checked: 2013-06-28 vvv
+#: check_frequency: 360d vvv
 Planstraße 1: Qualität? Name?	?::projected 19842,9895 19853,9774 19857,9682
 Planstraße 2 (evtl. Römerweg?): Qualität etc?	?::projected 19663,9757 19853,9774
-Planstraße 3 -> Viechtacher Str.: Qualität etc?	?::projected 19659,9676 19732,9678 19801,9680 19857,9682 19893,9683
+Planstraße 3 -> Viechtacher Str.: Qualität etc?	?::projected 19660,9681 19732,9678 19801,9680 19857,9682 19893,9683
 Planstraße 4 -> Eisensteiner Str.: Qualität etc?	?::projected 19732,9678 19727,9484
 Planstraße 5 -> Rinchnacher Weg: Qualität etc?	?::projected 19801,9680 19797,9480
 Planstraße 6 -> Teisnacher Str.: Qualität etc?	?::projected 19857,9682 19849,9477
 Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19651,9489 19727,9484 19797,9480 19849,9477 19921,9472
 #: XXX Planstraße 8+10 -> Regener Str.
 #XXXGartenstadt Karlshorst	?::projected 19698,9837 19671,9119 19931,9080 19846,9855 19698,9837
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # 
 #: by: http://www.moz.de/artikel-ansicht/dg/0/1/288137
@@ -560,15 +555,15 @@ Wackerweg - Otisstr.: im Zuge der RR4 könnte es hier eine neue Verbindung geben	
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: last_checked: 2013-06-02
-#: next_check: 2013-09-02
+#: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
-#: last_checked: 2013-04-20
-#: next_check: 2013-07-20
+#: last_checked: 2013-06-28
+#: check_frequency: 90d
 #: priority: #C
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16561,15956 16693,16202 16770,16465 16936,16606
 #: last_checked: 2012-08-25
-#: next_check: 2012-12-31
+#: check_frequency: 90d
 #: priority: #C
 Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368
 #: by: ^^^
@@ -872,20 +867,20 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 # 
 # REMOVED (so gut wie fertig, am 2013-06-24 hat noch ein kleines Stück gefehlt) --- #: last_checked: 2013-06-05 vvv --- #: next_check: 2013-06-19 vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv --- #: source_id: INKO_117706 vvv --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15066,14579 --- #: XXX Richtung Süden wird es wohl ein Gehwegradweg fehlen (fehlt nur noch der Asphalt), Richtung Norden ist fertig --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15066,14579 15110,14486 15164,14392 --- #: source_id ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2013-04-20 (an der Degnerstr.)
-#: next_check: 2013-07-20
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html
 #: XXX Baumaßnahme 11.46 (Realisierung in 2011)
 #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012)
 #: osm_watch: way id="22044872" version="10"
 #: osm_watch: way id="22045147" version="17"
+#: last_checked: 2013-06-28
+#: check_frequency: 90d
 Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16522,16206 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
 # 
-#: last_checked: 2013-06-05
-#: check_frequency: 60d
+#: last_checked: 2013-06-28
+#: check_frequency: 90d
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
-Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14650,15750 14823,15776 14934,15860 15124,16104 15187,16185 15432,16500
+Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 
 #: last_checked: 2013-05-06 (Baumarkierungen (?) auf der Fahrbahn gesehen)
 #: next_check: 2013-08-06
@@ -949,7 +944,6 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 #: XXX_indoor: Indoor prüfen
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 # 
-Weydemeyerstr.: genaue Hausnummern? wie weit geht es Richtung Norden weiter?	? 11805,12760 11818,12785
 #: XXX ggfs. auch Grünfläche in flaechen-orig aufnehmen
 Wutzkyallee - Rudower Fließ: Verbindung durch Grünanlage aufnehmen. Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474 15686,1501 15776,1456 15795,1428 15878,1378 15920,1392 16038,1303 16086,1262 16329,1128 16419,1048
 Grünanlage - Fleischerstr.: Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15920,1392 15987,1430
@@ -1048,8 +1042,6 @@ Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10033,17763
 # 
 # REMOVED --- #: XXX siehe auch: gesperrt-orig, handicap_s-orig --- #: last_checked: 2013-06-06 --- #: next_check: 2013-06-14 --- #: priority: #A --- Grimmstr.: Einbahnstraße wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
-# 
-Höhenweg am Wustrower Park: geht es hier weiter?	? 17275,18356 17564,18010 17585,17963 17557,17999
 # 
 # REMOVED (zumindest an der Rathausstr. nichts gesehen) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4429 --- Am Teltowkanal: gibt es durch die Bauarbeiten hier Einschränkungen? Wird die Qualität danach besser werden?	? 8784,5095 8881,5143 9171,5263 9192,5272
 # REMOVED (keine Vorfahrt!) --- # Linkstr.: hier auch Vorfahrt?	? 8392,11077 8370,11010 8342,10916
@@ -1629,6 +1621,45 @@ Carpinusweg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich d
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data
 Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -13094,-1158 -13162,-1263
 # 
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491
+Fresienweg: geplante Straße, wo wird sie genau liegen? Bleibt der Straßenname so? Qualität?	?::projected 15982,12678 16042,12735
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5489
+Nibelungenpark: neue Privatstraßen werden hier entstehen: Nibelungenring, Rumoldstr., Alzeyweg, Giselhersteig, Hadburgpfad. Genaue Lage, Qualität?	?::projected 17371,12447 17504,12433 17475,12277 17350,12295 17371,12447
+# 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587
+#: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)
+# 1. Liliensteinweg
+# 2. Lampertssteinweg
+# 3. Quirlweg
+# 4. Papststeinweg
+# 5. Rauensteinweg
+# 6. Pfaffensteinweg
+# 7. Hohler-Stein-Weg
+# 8. Zirkelsteinweg
+# 9. Friensteinweg
+# 10. Rittersteinweg
+# 11. Rauschensteinweg
+# 12. Cupetiussteinweg
+# 13. Zschirnsteinweg
+# 14. Schrammsteinweg
+# 15. Lasensteinweg
+# 16. Kohlbornsteinweg
+# 17. Arnsteinweg
+# 18. Katzsteinweg
+# 19. Bernhardsteinweg
+# 20. Benediktsteinweg
+# 21. Affensteinweg
+# 22. Basteiweg
+# 23. Lorenzsteinweg
+# 24. Müllersteinweg
+# 25. Rotsteinweg
+# 26. Kleinsteinweg
+# 27. Altarsteinweg
+# 28. Luchssteinweg
+# 29. Pöhligsteinweg
+# 30. Brausensteinweg
+KGA Am Rollberg: Benennung von 30 Privatwegen	? 9356,21363 10035,21581 10073,21339 9401,21144 9357,21362
 #: section ^^^
 #: section ^^^
 #

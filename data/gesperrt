@@ -230,7 +230,7 @@ Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1s 12349,8464 12368,8356
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13186,14397 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12723,14714 12520,14833
+Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12723,14714 12520,14833
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wöhlertstr.	1s 8442,14456 8669,14550
 Pflugstr.	1s 8669,14550 8776,14364
@@ -500,7 +500,7 @@ Wegastr	1 15222,7162 15175,7221
 Möllendorffstr.	1 15515,13134 15531,13022 15561,12950 15563,12860 15546,12690
 Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
-Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14317,15642
+Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14321,15636
 Prenzlauer Allee [Wohngebiet]	1 12154,15902 12030,15968
 (Prenzlauer Allee - Ostseestr.)	1 12232,16110 12198,15999 12154,15902
 Blumenstr.	1 12125,12490 12306,12459 12305,12440
@@ -1705,8 +1705,8 @@ Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 
 Brüsseler Str. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 7077,16078
 Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6936,15888
 Amsterdamer Str. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6802,15790
-Straßenbahntrasse	3nocross::ignrte 14597,15970 14609,15921 14650,15750
-Orankeweg -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14720,15905 14609,15921 14650,15750
+Straßenbahntrasse	3nocross::ignrte 14597,15970 14609,15921 14653,15738
+Orankeweg -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14720,15905 14609,15921 14653,15738
 Straßenbahntrasse	3nocross::ignrte 14550,16161 14522,16260 14499,16341
 Gartenstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14628,16249 14522,16260 14550,16161
 Indira-Gandhi-Str. -> Gartenstr.: Straßenbahntrasse	3::igndisp 14499,16341 14522,16260 14628,16249
@@ -1752,8 +1752,8 @@ Otto-Braun-Str. -> Theanolte-Bähnisch-Str.: Mittelstreifen	3::igndisp 11267,1301
 Theanolte-Bähnisch-Str. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11235,13143 11320,13095 11368,13170
 Mittelstreifen	3nocross::ignrte 11226,12945 11289,12908 11589,12768 11635,12745
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11367,12940 11289,12908 11589,12768
-Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11600,12857 11589,12768 11635,12745
-Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11289,12908 11589,12768 11600,12857
+Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11601,12858 11589,12768 11635,12745
+Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11289,12908 11589,12768 11601,12858
 unbequem zu überqueren (Bordsteine)	3nocross::ignrte 10796,8498 10911,8457 11225,8350 11266,8336
 Hasenheide, am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 10913,8463 10911,8457 11225,8350
 Columbiadamm -> Hasenheide, am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3::igndisp 10796,8498 10911,8457 10913,8463
@@ -2672,14 +2672,14 @@ Kniprodestr. -> Heinz-Kapelle-Str.: unpassierbarer Mittelstreifen (Straßenbahn, 
 Heinz-Kapelle-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12782,14300 12972,14173 12992,14196
 Kniprodestr. -> Ernst-Fürstenberg-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13026,14234 12992,14196 13049,14141
 Ernst-Fürstenberg-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13049,14141 12992,14196 12972,14173
-schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13057,14267 13097,14307 13186,14397 13242,14458 13301,14516 13367,14588
+schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13057,14267 13097,14307 13183,14400 13239,14461 13295,14521 13362,14593
 Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13057,14267 13097,14307 13079,14320
-Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13079,14320 13097,14307 13186,14397
-Anton-Saefkow-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13084,14472 13186,14397 13242,14458
-Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13195,14487 13242,14458 13301,14516
-Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13186,14397 13242,14458 13195,14487
-Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13242,14458 13301,14516 13266,14541
-Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13301,14516 13367,14588
+Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13079,14320 13097,14307 13183,14400
+Anton-Saefkow-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13084,14472 13183,14400 13239,14461
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13183,14400 13239,14461 13195,14487
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13195,14487 13239,14461 13295,14521
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13239,14461 13295,14521 13266,14541
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13295,14521 13362,14593
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40:90 6253,14184
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-172 6209,14245
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6228,14077 6230,14184 6234,14247 6237,14309
