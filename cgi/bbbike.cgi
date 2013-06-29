@@ -4593,10 +4593,14 @@ sub display_route {
 	    print "<b>" . M("Ereignisse, die die Route betreffen k&ouml;nnen") . "</b>:<br>";
 	    for my $tb (@affecting_blockings) {
 		my $lost_time_info = $tb->{lost_time}{$velocity_kmh};
-		print "<input type=\"" .
-		    (@affecting_blockings > 1 ? "checkbox" : "hidden") .
-			"\" name=\"custom\" value=\"temp-blocking-$tb->{'index'}\"> ";
-		print "$tb->{text}";
+		print qq{<input};
+		if (@affecting_blockings > 1) {
+		    print qq{ type="checkbox" checked};
+		} else {
+		    print qq{ type="hidden"}
+		};
+		print qq{ name="custom" value="temp-blocking-$tb->{'index'}"> };
+		print $tb->{text};
 		if ($lost_time_info && $lost_time_info->{lost_time_string_de}) {
 		    print " ($lost_time_info->{lost_time_string_de})";
 		}
