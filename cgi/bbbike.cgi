@@ -4569,7 +4569,7 @@ sub display_route {
 
  ROUTE_HEADER:
     if (!@out_route) {
-	if (@current_temp_blocking) {
+	if (@custom) {
 	    print "<center>";
 	    print M("Es existiert keine Ausweichroute.")."\n";
 	    my $qq = CGI->new($q->query_string);
