@@ -105,7 +105,7 @@ if (!@urls) {
     }
 }
 
-plan tests => (255 + ($test_file_cache ? 6*3 : 0)) * scalar @urls;
+plan tests => (264 + ($test_file_cache ? 6*3 : 0)) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -229,6 +229,9 @@ for my $cgiurl (@urls) {
 		    my $err = $@;
 		    ok $data, "Decoded JSON content"
 			or diag $err;
+		}
+		if ($test_file_cache) {
+		    ($content2, $resp2) = std_get $url, testname => "2nd fetch";
 		}
 	    } elsif ($output_as =~ m{^yaml}) {
 		if ($output_as eq 'yaml') {
