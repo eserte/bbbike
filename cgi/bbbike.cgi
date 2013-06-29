@@ -1153,7 +1153,7 @@ if (defined $q->param("ossp") && $q->param("ossp") !~ m{^\s*$}) {
 if ($use_file_cache) {
     my $file_cache;
     my $output_as = $q->param('output_as');
-    if ($output_as && $output_as =~ m{^(kml-track|gpx-track|gpx-route)$}) {
+    if ($output_as && $output_as =~ m{^(kml-track|gpx-track|gpx-route|json|json-short)$}) {
 	$file_cache = _get_weekly_filecache();
     } else {
 	my $imagetype = $q->param('imagetype');
@@ -4451,10 +4451,12 @@ sub display_route {
 	} elsif ($output_as =~ /^json(.*)/) {
 	    my $is_short = $1 eq '-short';
 	    require JSON::XS;
-	    http_header
+	    my @headers =
 		(-type => "application/json",
 		 @weak_cache,
 		);
+	    http_header(@headers);
+	    my $json_output;
 	    if ($is_short) {
 		my $short_res = {LongLatPath => $res->{LongLatPath}};
 		# XXX I think a temp_blockings-containing object might
@@ -4462,9 +4464,13 @@ sub display_route {
 		# fail. Maybe I should create a TO_JSON converter, or
 		# just leave it as is (that is, allow the blessed
 		# object to be converted to null)
-		print JSON::XS->new->utf8->allow_blessed(1)->encode($short_res);
+		$json_output = JSON::XS->new->utf8->allow_blessed(1)->encode($short_res);
 	    } else {
-		print JSON::XS->new->utf8->allow_blessed(1)->encode($res);
+		$json_output = JSON::XS->new->utf8->allow_blessed(1)->encode($res);
+	    }
+	    print $json_output;
+	    if ($cache_entry) {
+		$cache_entry->put_content($json_output, {headers => \@headers});
 	    }
 	} elsif ($output_as eq 'geojson') {
 	    http_header
