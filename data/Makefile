@@ -437,8 +437,9 @@ ubahnhof:	ubahnhof-orig
 .for i in u s
 $(i)bahnhof_bg:	$(i)bahnhof-orig
 	-@$(WRITEABLE) $@
-# XXX :U modifier does not work with older pmakes, need a workaround...
-	(echo "#: title: Fahrradfreundliche Zugänge bei der $(i:U)-Bahn"; \
+# :U modifier does not work with older pmakes, so don't use it,
+# instead use the echo | tr construct...
+	(i_upper=`echo $(i) | tr '[:lower:]' '[:upper:]'`; echo "#: title: Fahrradfreundliche Zugänge bei der $$i_upper-Bahn"; \
 	 [ "$(i)" = "s" ] && echo "#: note: http://www.s-bahn-berlin.de/fahrplanundnetz/sbahnhof_anzeige.php?ID=103"; \
 	 echo "#:") > $@~
 	$(PERL) -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
