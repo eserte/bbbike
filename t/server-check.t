@@ -25,6 +25,7 @@ BEGIN {
     }
 }
 
+use Getopt::Long;
 use IO::Socket::INET;
 use URI;
 
@@ -34,12 +35,17 @@ use BBBikeTest qw($cgiurl check_cgi_testing);
 
 check_cgi_testing;
 
-plan tests => 2 * 2;
+my @urls;
+GetOptions("url=s" => \@urls)
+    or die "usage: $0 [-url ...]";
 
-# I cannot check $BBBike::BBBIKE_DIRECT_WWW
-# (http://bbbike.de/cgi-bin/bbbike.cgi) because it seems that there's
-# no keep-alive with cgi requests at all.
-for my $_url ($cgiurl, "http://bbbike.de/BBBike/data/.modified") {
+if (!@urls) {
+    @urls = $cgiurl;
+}
+
+plan tests => 2 * @urls;
+
+for my $_url (@urls) {
     my $u = URI->new($_url);
     my $host = $u->host;
     my $port = $u->port;
