@@ -2827,21 +2827,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
        undef,
        undef,
        undef,
-       {
-         'until' => 1372557600,
-         'text' => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 19. Juni 2013, 22 Uhr bis 30. Juni 2013, 4 Uhr',
-         'from' => 1371578400,
-         'id' => 2330,
-         'data' => '#: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130618.1615.386236.html
-#: XXX nächste Sperrung: Mo 8. Juli (17 Uhr) bis So 14. Juli (4 Uhr)
-#: source_id: INKO_118652
-#: next_check: 2013-06-30
-#: priority: #A
-userdel	2::inwork 18731,8577 18709,8423
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

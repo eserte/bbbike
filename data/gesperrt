@@ -1130,6 +1130,9 @@ Hoernlestr. -> Mahlsdorfer Str.: Straßenbahntrasse	3::igndisp 22509,6519 22645,6
 Mittelstreifen	3nocross::ignrte 11023,17878 11047,17883 11113,17895
 Kissingenstr. -> Stubnitzstr.: Mittelstreifen	3::igndisp 11023,17878 11047,17883 11102,17942
 Stubnitzstr. -> Kissingenstr.: Mittelstreifen	3::igndisp 11102,17942 11047,17883 11113,17895
+Mittelstreifen	3nocross::ignrte 15850,14308 15925,14316 16010,14326
+Landsberger Allee -> Große-Leege-Str.: Mittelstreifen	3::igndisp 15850,14308 15925,14316 15923,14334
+Große-Leege-Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15923,14334 15925,14316 16010,14326
 Mittelstreifen	3nocross::ignrte -6144,15946 -6073,15925 -5911,15877
 Posthausweg -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -6089,15746 -6073,15925 -6144,15946
 Falkenseer Chaussee -> Posthausweg: Mittelstreifen	3::igndisp -5911,15877 -6073,15925 -6089,15746
@@ -3088,3 +3091,4 @@ zur Münchener Str. auf dem linken Gehweg	1::igndisp 6209,9771 6241,9772
 #: note: ^^^
 Karl-Lieknecht-Str., linker Gehweg	1::igndisp 11070,13357 11082,13371
 Potsdamer Str., linker Gehweg	1::igndisp 7526,9791 7501,9573
+Landsberger Allee, Radweg auf der linken Seite	1::igndisp 15923,14334 15848,14325 15850,14308
