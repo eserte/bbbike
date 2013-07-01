@@ -234,7 +234,7 @@ sub get_html {
 	$bbbikeroot = "/bbbike";
     } elsif ($host =~ m{bbbike\.org}) {
 	$bbbikeroot = "";
-    } elsif ($host eq "localhost") {
+    } elsif ($host eq "localhost" || $host eq '127.0.0.1') {
 	$bbbikeroot = "/bbbike";
 	$get_public_link = sub {
 	    my $link = BBBikeCGI::Util::my_url(CGI->new(), -full => 1);
