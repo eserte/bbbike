@@ -174,7 +174,7 @@ die letzten Meter sind benutzungspflichtig	RW1; 12169,10310 11949,10414
 	RW1;RW1 12169,10310 12243,10274 12341,10218
 	RW1; 12341,10218 12507,10130 12671,10042 12814,9966 12932,9900
 unklare Ausschilderung, teilweise ist das Zeichen 241 missverständlich aufgestellt (könnten auch die Parkwege durch den Görlitzer Park gemeint sein); kurz vor dem Spreewaldplatz gibt es das Zeichen 237 ohne Auffahrmöglichkeit	RW1; 12932,9900 12814,9966 12671,10042 12507,10130 12341,10218
-	RW2;RW2 12932,9900 13026,9854 13086,9825
+	RW1;RW1 12932,9900 13026,9854 13086,9825
 	RW1;RW1 12341,10218 12229,10014
 besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1;RW1 9827,10051 9922,10010 10006,9942
 besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1; 10006,9942 10134,9860
@@ -1123,8 +1123,8 @@ die letzten Meter sind benutzungspflichtig	RW3; 13906,13722 14006,13761
 	RW2;RW1 15670,12022 15863,11992
 	RW2;RW1 15863,11992 16127,11950 16207,11937
 	RW2;RW1 16207,11937 16317,11920 16368,11912
-#: XXX gilt hier tatsächlich noch die Benutzungspflicht?
-	RW2;RW2 13086,9825 13136,9883 13227,10001
+#: note: Benutzungspflicht in Nordost-Richtung unklar. Es existieren widersprüchliche Einbahnstraßenschilder mit und ohne "Radfahrer frei"-Zusatzschildern.
+	RW1;RW1 13086,9825 13136,9883 13227,10001
 	RW2;RW3 9753,9252 9793,9241
 	RW3;RW1 5975,13256 6214,13225
 	RW1; 6214,13225 6661,13130
@@ -1228,7 +1228,7 @@ asphaltiert	RW1;RW1 11632,8302 11767,8330 11898,8362
 Busspur gilt Mo-Fr 6-20 Uhr und Sa-So 10-20 Uhr	RW5; 9873,10285 9593,10238
 Busspur gilt Mo-Fr 7-9 Uhr und 14-17 Uhr	RW5; 9795,10512 9858,10350
 	RW3; 9858,10350 9795,10512
-	RW3;RW3 9795,10512 9770,10590 9777,10719 9805,10791 9829,10830
+	RW3;RW3 9795,10512 9770,10590 9777,10719 9797,10771 9805,10791 9829,10830
 	RW3;RW4 9829,10830 9935,11067 9973,11150
 	RW3;RW3 9973,11150 10020,11262
 	RW3;RW4 10020,11262 10072,11384 10116,11485

@@ -1754,7 +1754,17 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1376078400,
+         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (4.7.2013 - 8.7.2013; Sperrungen fangen schon früher an und dauern länger)',
+         'from' => 1372629600,
+         'id' => 1710,
+         'data' => '	q4::temp 9668,11928 9656,12021
+	2::temp 9524,12010 9656,12021
+	2::temp 9536,11912 9668,11928
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1818,11 +1828,12 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        {
          'source_id' => 'IM_019981',
          'until' => 1373486400,
-         'text' => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung (Fashion Week), Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung (Fashion Week), Straße vollständig gesperrt',
          'from' => 1371852000,
          'id' => 1771,
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-userdel	2::temp 8538,12245 8600,12165 8595,12066
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+#userdel	2::temp 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+#userdel	2::temp 8538,12245 8600,12165 8595,12066
 ',
          'type' => 'gesperrt'
        },
@@ -2702,7 +2713,18 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_020013',
+         'data' => 'userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
+userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
+',
+         'periodic' => 1,
+         'until' => 1372957200,
+         'from' => 1372654800,
+         'text' => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig zwischen Tempelhofer Damm und Columbiadamm gesperrt (bis Donnerstag)',
+         'type' => 'gesperrt',
+         'id' => 2245
+       },
        undef,
        undef,
        undef,
@@ -3290,8 +3312,8 @@ userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
          'text' => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2452,
-         'data' => '#: last_checked: 2013-06-18
-#: next_check: 2013-07-18
+         'data' => '#: last_checked: 2013-07-02
+#: check_frequency: 30d
 userdel	q4::inwork 13301,8606 13262,8554 13217,8493
 ',
          'type' => 'handicap'
@@ -3348,6 +3370,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'data' => '	q4::temp:clock 10354,14987 10238,15316
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_119430',
+         'until' => 1373119200,
+         'text' => 'Eichbuschallee (Treptow): Baustelle zwischen Köpenicker Landstr. und Bergaustr., Fahrbahn gesperrt (bis Mitte Juli 2013)',
+         'from' => 1372568400,
+         'id' => 2459,
+         'data' => 'userdel	q4::inwork 15920,7697 15765,7567 15696,7507
+',
+         'type' => 'handicap'
        }
      
 );

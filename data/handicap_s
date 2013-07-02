@@ -75,10 +75,10 @@ Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Fußgänger	q2 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
-Görlitzer Park: Fußgänger	q2 12670,10160 12567,10211 12543,10223 12506,10244 12384,10368 12328,10442
+Görlitzer Park: Fußgänger, Bauarbeiten	q4::inwork 12670,10160 12567,10211
+Görlitzer Park: Fußgänger	q2 12567,10211 12543,10223 12506,10244 12384,10368 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911,10156
-Görlitzer Park, Rondell: Bauarbeiten, Fußgänger	q4::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
-Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
+Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12516,10202 12543,10223
 Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12611,10299
@@ -242,7 +242,7 @@ Kieler Str.: Bordsteine, Fußgänger	q3 4998,5817 5052,5788
 Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
 Südstern: Fußgänger	q3 10747,9326 10710,9309 10647,9337
 Görlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
-Ruhlsdorfer Str.: Bordsteine	q3 9350,10176 9368,10211
+Ruhlsdorfer Str.: Bordstein	q3 9350,10176 9368,10211
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Fußgänger	q2 4360,10320 4352,10260
 (Parkplatz, Güntzelstr. - Pommersche Str.): Bordsteine, für Radfahrer verboten, ggfs. schieben	q3 4708,9498 4550,9539
 Naunynstr.: Fußgänger	q1 11365,10791 11329,10785
@@ -293,7 +293,7 @@ Elbingeroder Weg: hohe Bordsteine	q3 13178,9062 13146,9085
 Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8593,12742 8596,12760
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
 Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13448,12340
-(Molkenmarkt - Parochialstr.): Bordsteine	q2 10738,12364 10831,12371
+(Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666
@@ -1168,6 +1168,7 @@ Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 (Kleistpark): einige Fußgänger	q1 7430,9576 7501,9573 7520,9572
 (Blockdammweg - Trautenauer Str.): Rampe	q2 17904,8927 17888,8899 17915,8900
 (Weg 1 im KGA Hochspannung): kurze Rampe	q3 18184,9631 18181,9619
+Fromet-und-Moses-Mendelssohn-Platz: einige Fußgänger	q1 9797,10771 9733,10827 9682,10836 9666,10848
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789

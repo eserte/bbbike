@@ -12,8 +12,8 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-07-01 vvv
-#: next_check: 2013-07-03 vvv
+#: last_checked: 2013-07-02 vvv
+#: next_check: 2013-07-08 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
 Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 14254,11377 14181,11434 14099,11505
@@ -33,7 +33,7 @@ Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-06-26
+#: last_checked: 2013-07-02
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q2::inwork; 13366,11651 13295,11792
 # 
 # REMOVED (fast keine Einschränkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775
@@ -46,7 +46,8 @@ Marchlewskistr.: Bauarbeiten, Einbahnstraße	q2::inwork; 13366,11651 13295,11792
 # REMOVED --- #: last_checked: 2013-06-04 --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
 # 
 #: source_id: INKO_113388
-#: last_checked: 2013-06-02
+#: last_checked: 2013-07-02
+#: next_check: 2013-09-02
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # 
 #: last_checked: 2013-06-27
@@ -117,8 +118,8 @@ Ella-Trebe-Str./Berta-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einba
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: XXX siehe auch Einträge in fragezeichen-orig (Falkoniergasse etc.)
-#: last_checked: 2013-04-17 vvv
-#: next_check: 2013-07-17 vvv
+#: last_checked: 2013-07-02 vvv
+#: next_check: 2013-10-02 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 #: next_check ^^^
@@ -191,7 +192,7 @@ Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,104
 #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden
 #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf
 #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/
-#: last_checked: 2013-05-17
+#: last_checked: 2013-07-02
 #: next_check: 2013-11-30
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 # 
@@ -269,15 +270,15 @@ Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Fußgänger	q2 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
-Görlitzer Park: Fußgänger	q2 12670,10160 12567,10211 12543,10223 12506,10244 12384,10368 12328,10442
-Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911,10156
-#: XXX evtl. nach den Bauarbeiten asphaltiert oder zumindest besser gepflastert/gewalzt? Vielleicht wird auch der südliche Halbkreis neu gemacht?
+#: XXX evtl. nach den Bauarbeiten wahrscheinlich asphaltiert. Vielleicht wird auch der südliche Halbkreis des Rondells neu gemacht?
+#: XXX evtl. wird auch die Beleuchtung neu gemacht, auch beim nördlichen Rondell schauen
 #: XXX nach den Bauarbeiten den normalen Eintrag wieder aktivieren
-#: by: http://unsergoerli.de/wegebau-am-rondell-ab-november/ (Asphaltierung!)
-#: last_checked: 2013-06-03
-Görlitzer Park, Rondell: Bauarbeiten, Fußgänger	q4::inwork 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
-#Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
-Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
+#: last_checked: 2013-07-02
+Görlitzer Park: Fußgänger, Bauarbeiten	q4::inwork 12670,10160 12567,10211
+#Görlitzer Park: Fußgänger	q2 12670,10160 12567,10211
+Görlitzer Park: Fußgänger	q2 12567,10211 12543,10223 12506,10244 12384,10368 12328,10442
+Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911,10156
+Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12516,10202 12543,10223
 Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12611,10299
@@ -463,7 +464,8 @@ Kieler Str.: Bordsteine, Fußgänger	q3 4998,5817 5052,5788
 Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
 Südstern: Fußgänger	q3 10747,9326 10710,9309 10647,9337
 Görlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
-Ruhlsdorfer Str.: Bordsteine	q3 9350,10176 9368,10211
+#: XXX_prog BS zum Tempelhofer Ufer hin, zur Ruhlsdorfer existiert eine Absenkung
+Ruhlsdorfer Str.: Bordstein	q3 9350,10176 9368,10211
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Fußgänger	q2 4360,10320 4352,10260
 (Parkplatz, Güntzelstr. - Pommersche Str.): Bordsteine, für Radfahrer verboten, ggfs. schieben	q3 4708,9498 4550,9539
 Naunynstr.: Fußgänger	q1 11365,10791 11329,10785
@@ -528,7 +530,7 @@ Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8593,12742 8596,12760
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
 Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13448,12340
 #: XXX_prog Bordstein zur Parochialstr., die andere Seite ist abgesenkt
-(Molkenmarkt - Parochialstr.): Bordsteine	q2 10738,12364 10831,12371
+(Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666
@@ -1609,6 +1611,7 @@ Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 #: last_checked: 2013-06-28
 #: next_check: 2013-07-02
 (Weg 1 im KGA Hochspannung): kurze Rampe	q3 18184,9631 18181,9619
+Fromet-und-Moses-Mendelssohn-Platz: einige Fußgänger	q1 9797,10771 9733,10827 9682,10836 9666,10848
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -1952,7 +1955,7 @@ An der Brauerei: Fußgänger	q2 13283,13311 13235,13414
 (Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 #: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2013-05-29
+#: last_checked: 2013-07-02
 #: check_frequency: 90d
 Ritterstr.: Fußgänger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fußgänger	q2 5808,5332 5810,5340 5822,5388

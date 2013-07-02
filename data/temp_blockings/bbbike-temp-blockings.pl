@@ -14577,13 +14577,14 @@ EOF
 userdel	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => 1246206950, # 2009-06-28 18:35
-       until => 1247241600, # 2009-07-10 18:00
-       text  => 'Charlottenstr. (Mitte) in beiden Richtungen zwischen Taubenstr.. und Jägerstr. sowie Gendarmenmarkt: Classic Open Air, Straßen vollständig gesperrt (bis 10.07.09, 18 Uhr) ',
+     { from  => $isodate2epoch->("2013-07-01 00:00:00"), # mindestens 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-08-09 22:00:00"), # einen Tag für den Abbau
+       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (4.7.2013 - 8.7.2013; Sperrungen fangen schon früher an und dauern länger)',
        type  => 'gesperrt',
-       source_id => 'IM_012983',
        data  => <<EOF,
-userdel	2::temp 9668,11928 9536,11912 9524,12010 9656,12021
+	q4::temp 9668,11928 9656,12021
+	2::temp 9524,12010 9656,12021
+	2::temp 9536,11912 9668,11928
 EOF
      },
      { from  => 1246207852, # 2009-06-28 18:50
@@ -15088,12 +15089,14 @@ EOF
      },
      { from  => $isodate2epoch->("2013-06-22 00:00:00"), # 
        until => $isodate2epoch->("2013-07-10 22:00:00"), # XXX 1248600361, # 2009-07-26 23:59 1248645599
-       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung (Fashion Week), Straße vollständig gesperrt, außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr.',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung (Fashion Week), Straße vollständig gesperrt',
+# note: für Radfahrer befahrbar: ", außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr."
        type  => 'gesperrt',
        source_id => 'IM_019981',
        data  => <<EOF,
-userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-userdel	2::temp 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+#userdel	2::temp 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+#userdel	2::temp 8538,12245 8600,12165 8595,12066
 EOF
      },
      { from  => 1248645600, # 2009-07-27 00:00
@@ -19437,11 +19440,12 @@ EOF
 userdel	2::temp 9656,12021 9668,11928
 EOF
      },
-     { from  => 1358139600, # 2013-01-14 06:00
-       until => 1358445600, # 2013-01-17 19:00
-       text  => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig zwischen Tempelhofer Damm und Columbiadamm gesperrt (bis Donnerstag)',
+     { from  => $isodate2epoch->("2013-07-01 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-07-04 19:00:00"),
+       text  => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig zwischen Tempelhofer Damm und Columbiadamm gesperrt (bis Donnerstag)', # Bread and Butter, 2x im Jahr?
+       periodic => 1,
        type  => 'gesperrt',
-       source_id => 'IM_019522',
+       source_id => 'IM_020013',
        data  => <<EOF,
 userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
 userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
@@ -21480,8 +21484,8 @@ EOF
        text  => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-06-18
-#: next_check: 2013-07-18
+#: last_checked: 2013-07-02
+#: check_frequency: 30d
 userdel	q4::inwork 13301,8606 13262,8554 13217,8493
 EOF
      },
@@ -21547,6 +21551,15 @@ EOF
        recurring => 1,
        data  => <<EOF,
 	q4::temp:clock 10354,14987 10238,15316
+EOF
+     },
+     { from  => 1372568400, # 2013-06-30 07:00
+       until => 1373119200, # 2013-07-06 16:00
+       text  => 'Eichbuschallee (Treptow): Baustelle zwischen Köpenicker Landstr. und Bergaustr., Fahrbahn gesperrt (bis Mitte Juli 2013)',
+       type  => 'handicap',
+       source_id => 'INKO_119430',
+       data  => <<EOF,
+userdel	q4::inwork 15920,7697 15765,7567 15696,7507
 EOF
      },
     );

@@ -883,8 +883,10 @@ Mittelstreifen	3nocross::ignrte 8438,8676 8334,8655 8380,8545
 Loewenhardtdamm -> Loewenhardtdamm: Mittelstreifen	3::igndisp 8380,8545 8334,8655 8306,8722
 Loewenhardtdamm -> Höhndorfstr.: Mittelstreifen	3::igndisp 8306,8722 8334,8655 8438,8676
 Friedbergstr.	1 3012,10812 3204,10895
-Betonblöcke (aber für Radfahrer passierbar)	3nocross::ignrte 9777,10719 9805,10791 9829,10830 9935,11067
-Lindenstr. -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9777,10719 9805,10791 9786,10971
+Betonblöcke (aber für Radfahrer passierbar)	3nocross::ignrte 9777,10719 9797,10771 9805,10791 9829,10830 9935,11067
+Lindenstr. -> Fromet-und-Moses-Mendelssohn-Pl.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9777,10719 9797,10771 9733,10827
+Fromet-und-Moses-Mendelssohn-Pl. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9733,10827 9797,10771 9805,10791
+Lindenstr. -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9797,10771 9805,10791 9786,10971
 Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9786,10971 9805,10791 9829,10830
 Am Berlin Museum -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10032,10752 9829,10830 9805,10791
 Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9935,11067 9829,10830 10032,10752
