@@ -877,13 +877,12 @@ EOF
 userdel	2 2632,1706 2843,1281
 EOF
      },
-     { from  => 1314914400, # undef, # zweiter Termin im Jahr
-       until => 1315173600, # 1094421599, # 2004-09-05 23:59
-       text  => 'Alt-Rudow in beiden Richtungen, zwischen Krokusstr. und Neudecker Weg Veranstaltung, Straße vollständig gesperrt (3. und 4. Septermber 2011), Rudower Septermbermeile',
+     { from  => $isodate2epoch->("2013-09-06 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-09-08 22:00:00"),
+       text  => 'Alt-Rudow zwischen Krokusstr. und Neudecker Weg Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (7. und 8. Septermber 2013)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 16610,1715 16805,1488 16849,1437
-userdel	2 16975,1262 16849,1437
+userdel	2::temp 16610,1715 16805,1488 16849,1437 16975,1262
 EOF
      },
      { from  => undef, # 
@@ -1105,7 +1104,7 @@ EOF
      { from  => $isodate2epoch->("2013-09-13 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-09-15 20:00:00"),
        periodic => 1,
-       text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstalung (Herbstfest auf der Hauptstraße), Straße gesperrt (14.9.2013 10:00 - 15.9.2013 20:00)',
+       text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Herbstfest auf der Hauptstraße), Straße gesperrt (14.9.2013 10:00 - 15.9.2013 20:00)',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 6687,8385 6765,8480 6912,8617 6989,8687 7009,8705 7105,8788 7201,8870 7275,8960
@@ -12229,9 +12228,10 @@ EOF
 userdel	1::inwork 9164,12172 9183,12076 9201,11968
 EOF
      },
-     { from  => 1312513200, # zweiter Termin im Jahr (August oder September)
-       until => 1312754400,
-       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung, Straße vollständig gesperrt (5. bis 7. August 2011)',
+     { from  => $isodate2epoch->("2013-08-01 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-08-04 22:00:00"),
+       periodic => 1, # manchmal/immer (?) zwei Termine im Jahr, erster Termin
+       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung (Stadtteilfest Müllerstraße), Straße vollständig gesperrt (2. bis 4. August 2013)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
@@ -15489,7 +15489,7 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, Behinderungen möglich',
+       text  => 'Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, sowie Sa 11.00-17.00 "Neuköllner Stoff", Behinderungen möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -15498,11 +15498,12 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Friedrichstraße: zwischen Franz-Klühs-Str. und Mehringplatz, Markt Do 10.00-18.00 und Sa 08.00-13.00, Behinderungen möglich',
+       text  => 'Friedrichstraße: zwischen Franz-Klühs-Str. und Mehringplatz, Markt Mo und Do 10.00-18.00, Behinderungen möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
+#: XXX Überprüfen, ob die Wochentage (Mo+Do und _nicht_ Sa) stimmen
 	q4::temp:clock 9570,10566 9587,10421
 EOF
      },
@@ -15544,7 +15545,7 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Ladiusmarkt in der Andréezeile: Wochenmarkt Dienstag, Donnerstag und Sonnabend, Behinderungen möglich',
+       text  => 'Ladiusmarkt in der Andréezeile: Wochenmarkt Samstag 08.00-13.00, Behinderungen möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -16111,7 +16112,7 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Erich-Steinfurth-Str.: Antikmarkt am Ostbahnhof, Sonntag 9-17 Uhr, nur Schieben möglich',
+       text  => 'Erich-Steinfurth-Str.: Antikmarkt am Ostbahnhof, Sonntag 9-16 Uhr, nur Schieben möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -16120,7 +16121,7 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Am Kupfergraben und am Zeughaus: Berliner Kunst- und Nostalgiemarkt, Samstag und Sonntag ca. 11-17 Uhr, nur Schieben möglich',
+       text  => 'Am Kupfergraben und am Zeughaus: Antik-, Buch- und Kunstmarkt, Samstag und Sonntag ca. 10-17 Uhr, nur Schieben möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -17169,11 +17170,11 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => undef, # 1261945758, # 2009-12-27 21:29
-       until => 1357167540, # 1262494800, # 2010-01-03 06:00
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr. (bis 02.01. nachts)',
+     { from  => $isodate2epoch->("2013-12-30 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-01-01 10:00:00"),
+       periodic => 1,
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr.',
        type  => 'gesperrt',
-       source_id => 'IM_019485',
        data  => <<EOF,
 userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 8119,12414
 userdel	2::temp 8522,12239 8466,12197
@@ -17436,7 +17437,6 @@ EOF
        periodic => 1, # manchmal/immer (?) zwei Termine im Jahr, zweiter Termin
        text  => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Luxemburger Str. gesperrt, 30.08.2013 10:00 - 01.09.2013 20:00',
        type  => 'gesperrt',
-       source_id => 'IM_019233',
        data  => <<EOF,
 userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
 EOF
@@ -18358,9 +18358,10 @@ EOF
 userdel	q4::temp 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10609,18384 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
 EOF
      },
-    { from  => 1346295600, # 2012-08-30 05:00 # PERIODISCH!
-       until => 1346626800, # 2012-09-03 01:00
-       text  => 'Turmstraße (Moabit): Veranstaltung, Straße vollständig gesperrt (31.08.2012 bis 02.09.2012) in beiden Richtungen zwischen Stromstr. und Waldstr.',
+     { from  => $isodate2epoch->("2013-08-29 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-09-01 22:00:00"),
+       periodic => 1,
+       text  => 'Turmstraße (Moabit): Veranstaltung (Turmstraßenfest), Straße zwischen Stromstr. und Waldstr. vollständig gesperrt (30.08.2013 bis 01.09.2012)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
@@ -20397,9 +20398,10 @@ EOF
 userdel	2::inwork 4824,22907 5054,23025 5127,23042 5205,23094 5232,23139
 EOF
      },
-     { from  => 1339797175, # 2012-06-15 23:52
-       until => 1339970399, # 2012-06-17 23:59
-       text  => 'Veranstaltung auf dem Mariannenplatz "Berlin lacht", 15.-17. Juni 2012',
+     { from  => $isodate2epoch->("2013-09-12 16:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-09-15 23:59:59"),
+       periodic => 1,
+       text  => 'Veranstaltung auf dem Mariannenplatz "Berlin lacht", 13.-15. September 2013',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11770,10774 11841,10747 11897,10887 11958,11045
@@ -20913,9 +20915,8 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Kollwitzplatz: Wochenmarkt Samstag 9-18 Uhr',
+       text  => 'Kollwitzplatz: Wochenmarkt Samstag 9-16 Uhr',
        type  => 'gesperrt',
-       source_id => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
        recurring => 1,
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3228&options=4 vvv
@@ -21508,6 +21509,44 @@ EOF
        data  => <<EOF,
 Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
 Kleistpark	2::night 7430,9576 7501,9573 7520,9572
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Hohenzollernplatz: Wochenmarkt Mittwoch und Samstag 8-13 Uhr, Behinderungen möglich',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+	q4::temp:clock 5066,9645 5174,9708 5253,9754
+	q4::temp:clock 5155,9786 5174,9708
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Mainzer Straße (Wilmersdorf): Wochenmarkt Montag und Donnerstag 8-13 Uhr, Behinderungen möglich',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: XXX wo genau ist der Wochenmarkt?
+	q4::temp:clock 5066,8140 5177,8139
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Arkonaplatz: Wochenmarkt Freitag 12.00-19.00 Uhr sowie Trödelmarkt Sonntag 10.00-17.00, Behinderungen möglich',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+	q4::temp:clock 10228,14564 10189,14649
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Mauerpark: Flohmarkt Sonntag 08.00-18.00 Uhr, Behinderungen möglich',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+	q4::temp:clock 10354,14987 10238,15316
 EOF
      },
     );

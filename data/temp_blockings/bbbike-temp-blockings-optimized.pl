@@ -93,7 +93,15 @@ userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1378670400,
+         'text' => 'Alt-Rudow zwischen Krokusstr. und Neudecker Weg Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (7. und 8. Septermber 2013)',
+         'from' => 1378454400,
+         'id' => 112,
+         'data' => 'userdel	2::temp 16610,1715 16805,1488 16849,1437 16975,1262
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -121,7 +129,7 @@ userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
        {
          'periodic' => 1,
          'until' => 1379268000,
-         'text' => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstalung (Herbstfest auf der Hauptstraße), Straße gesperrt (14.9.2013 10:00 - 15.9.2013 20:00)',
+         'text' => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Herbstfest auf der Hauptstraße), Straße gesperrt (14.9.2013 10:00 - 15.9.2013 20:00)',
          'from' => 1379059200,
          'id' => 137,
          'data' => 'userdel	q4; 6687,8385 6765,8480 6912,8617 6989,8687 7009,8705 7105,8788 7201,8870 7275,8960
@@ -1449,7 +1457,16 @@ userdel	2::temp 14500,9856 14483,9843
        undef,
        undef,
        undef,
-       undef,
+       {
+         'periodic' => 1,
+         'until' => 1375646400,
+         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung (Stadtteilfest Müllerstraße), Straße vollständig gesperrt (2. bis 4. August 2013)',
+         'from' => 1375358400,
+         'id' => 1431,
+         'data' => 'userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1938,7 +1955,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, Behinderungen möglich',
+         'text' => 'Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, sowie Sa 11.00-17.00 "Neuköllner Stoff", Behinderungen möglich',
          'from' => undef,
          'id' => 1815,
          'data' => '	q4::temp:clock 11543,10015 11669,9987 11880,9874
@@ -1948,10 +1965,11 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Friedrichstraße: zwischen Franz-Klühs-Str. und Mehringplatz, Markt Do 10.00-18.00 und Sa 08.00-13.00, Behinderungen möglich',
+         'text' => 'Friedrichstraße: zwischen Franz-Klühs-Str. und Mehringplatz, Markt Mo und Do 10.00-18.00, Behinderungen möglich',
          'from' => undef,
          'id' => 1816,
          'data' => '#: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
+#: XXX Überprüfen, ob die Wochentage (Mo+Do und _nicht_ Sa) stimmen
 	q4::temp:clock 9570,10566 9587,10421
 ',
          'type' => 'gesperrt'
@@ -1999,7 +2017,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ladiusmarkt in der Andréezeile: Wochenmarkt Dienstag, Donnerstag und Sonnabend, Behinderungen möglich',
+         'text' => 'Ladiusmarkt in der Andréezeile: Wochenmarkt Samstag 08.00-13.00, Behinderungen möglich',
          'from' => undef,
          'id' => 1821,
          'data' => '	q4::temp:clock 1020,496 1078,443
@@ -2125,7 +2143,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Erich-Steinfurth-Str.: Antikmarkt am Ostbahnhof, Sonntag 9-17 Uhr, nur Schieben möglich',
+         'text' => 'Erich-Steinfurth-Str.: Antikmarkt am Ostbahnhof, Sonntag 9-16 Uhr, nur Schieben möglich',
          'from' => undef,
          'id' => 1886,
          'data' => '	q4::temp:clock 12596,11696 12453,11790 12366,11808
@@ -2135,7 +2153,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Am Kupfergraben und am Zeughaus: Berliner Kunst- und Nostalgiemarkt, Samstag und Sonntag ca. 11-17 Uhr, nur Schieben möglich',
+         'text' => 'Am Kupfergraben und am Zeughaus: Antik-, Buch- und Kunstmarkt, Samstag und Sonntag ca. 10-17 Uhr, nur Schieben möglich',
          'from' => undef,
          'id' => 1887,
          'data' => '	q4::temp:clock 9754,12775 9661,12876 9618,12907 9533,12925
@@ -2311,7 +2329,18 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'periodic' => 1,
+         'until' => 1388566800,
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr.',
+         'from' => 1388394000,
+         'id' => 2010,
+         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 8119,12414
+userdel	2::temp 8522,12239 8466,12197
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2341,15 +2370,14 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        {
-         'source_id' => 'IM_019233',
-         'data' => 'userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
-',
          'periodic' => 1,
          'until' => 1378058400,
-         'from' => 1377763200,
          'text' => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Luxemburger Str. gesperrt, 30.08.2013 10:00 - 01.09.2013 20:00',
-         'type' => 'gesperrt',
-         'id' => 2039
+         'from' => 1377763200,
+         'id' => 2039,
+         'data' => 'userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
+',
+         'type' => 'gesperrt'
        },
        {
          'until' => undef,
@@ -2390,7 +2418,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2441,19 +2469,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.xhain.info/termine/bergmannstrassenfest.htm',
-         'data' => 'userdel	q4::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
-userdel auto	3 9487,9209 9505,9306 9524,9426
-userdel auto	3 9524,9426 9505,9306 9487,9209
-',
-         'periodic' => 1,
-         'until' => 1372629599,
-         'from' => 1372284000,
-         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (28. bis 30. Juni 2013)',
-         'type' => 'handicap',
-         'id' => 2089
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2530,7 +2546,16 @@ userdel auto	3 9524,9426 9505,9306 9487,9209
        },
        undef,
        undef,
-       undef,
+       {
+         'periodic' => 1,
+         'until' => 1378065600,
+         'text' => 'Turmstraße (Moabit): Veranstaltung (Turmstraßenfest), Straße zwischen Stromstr. und Waldstr. vollständig gesperrt (30.08.2013 bis 01.09.2012)',
+         'from' => 1377777600,
+         'id' => 2129,
+         'data' => 'userdel	2::temp 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2844,7 +2869,16 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
        undef,
        undef,
        undef,
-       undef,
+       {
+         'periodic' => 1,
+         'until' => 1379282399,
+         'text' => 'Veranstaltung auf dem Mariannenplatz "Berlin lacht", 13.-15. September 2013',
+         'from' => 1378994400,
+         'id' => 2347,
+         'data' => 'userdel	2::temp 11770,10774 11841,10747 11897,10887 11958,11045
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html',
@@ -2975,19 +3009,18 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        {
-         'source_id' => 'http://www.berliner-zeitung.de/berlin/kollwitzplatz-mit-sack-und-pack-,10809148,11393926.html',
+         'until' => undef,
          'recurring' => 1,
+         'text' => 'Kollwitzplatz: Wochenmarkt Samstag 9-16 Uhr',
+         'from' => undef,
+         'id' => 2400,
          'data' => '#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3228&options=4 vvv
 	q4::temp:clock 11317,14564 11285,14515 11229,14422
 #: XXX_prog: q3, weil nur ca. 35m betroffen sind 
 	q3::temp:clock 11317,14564 11436,14741
 #: by: ^^^
 ',
-         'until' => undef,
-         'from' => undef,
-         'text' => 'Kollwitzplatz: Wochenmarkt Samstag 9-18 Uhr',
-         'type' => 'gesperrt',
-         'id' => 2400
+         'type' => 'gesperrt'
        },
        undef,
        {
@@ -3273,6 +3306,48 @@ userdel	q4::inwork 13301,8606 13262,8554 13217,8493
          'data' => 'Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
 Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 '
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Hohenzollernplatz: Wochenmarkt Mittwoch und Samstag 8-13 Uhr, Behinderungen möglich',
+         'from' => undef,
+         'id' => 2455,
+         'data' => '	q4::temp:clock 5066,9645 5174,9708 5253,9754
+	q4::temp:clock 5155,9786 5174,9708
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Mainzer Straße (Wilmersdorf): Wochenmarkt Montag und Donnerstag 8-13 Uhr, Behinderungen möglich',
+         'from' => undef,
+         'id' => 2456,
+         'data' => '#: XXX wo genau ist der Wochenmarkt?
+	q4::temp:clock 5066,8140 5177,8139
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Arkonaplatz: Wochenmarkt Freitag 12.00-19.00 Uhr sowie Trödelmarkt Sonntag 10.00-17.00, Behinderungen möglich',
+         'from' => undef,
+         'id' => 2457,
+         'data' => '	q4::temp:clock 10228,14564 10189,14649
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Mauerpark: Flohmarkt Sonntag 08.00-18.00 Uhr, Behinderungen möglich',
+         'from' => undef,
+         'id' => 2458,
+         'data' => '	q4::temp:clock 10354,14987 10238,15316
+',
+         'type' => 'gesperrt'
        }
      
 );

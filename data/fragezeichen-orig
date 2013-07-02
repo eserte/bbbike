@@ -115,8 +115,8 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-06-20
-#: check_frequency: 90d
+#: last_checked: 2013-07-01
+#: next_check: 2014-01-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
@@ -941,6 +941,8 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Wochenmarkt Nettelbeckplatz: gibt es hier Behinderungen? Di und Fr, 11-18 Uhr?	? 7891,15417 7989,15412 8024,15401
+# 
 #: XXX_indoor: Indoor prüfen
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 # 
@@ -1435,6 +1437,11 @@ Bordsteinkante Richtung Westen	? 17183,17385
 #: XXX_indoor
 Landschaftspark Herzberge: ebenfalls zum Landschaftspark gehörig, ggfs. in flaechen aufnehmen	? 17097,14140 17846,14179 17867,13868 17076,13861
 # 
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130701.1255.386582.html
+#: next_check: 2014-10-01
+#: XXX_indoor
+"Bürgerwiese" Slabystr./Wilhelminenhofstr.: in flaechen-orig eintragen, falls fertig	?::projected 18978,5944 18954,5973 18968,6009 19076,6117 19116,6080 18978,5944
+# 
 #: by: MichaelM
 #: XXX_prog:
 Bordsteinkante	? -831,4636
@@ -1500,8 +1507,6 @@ Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 8746,84188 
 Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15505,6342 15516,6357
-#: XXX_indoor:
-Arkonaplatz: Markt, zumindest sonntags, vielleicht auch an anderen Tagen?	? 10228,14564 10189,14649
 # 
 #: section ^^^
 #

@@ -1624,6 +1624,23 @@ Nikolaus-Ehlen-Weg: Privatstraße	CS 17308,-36 17215,94 17176,90
 #: XXX_indoor: würde besser unter sehenswuerdigkeit passen
 Gaslaternen-Freilichtmuseum Berlin	CS 5903,11683 5835,11768 5858,11863 5900,11913
 #: section ^^^
+#: section: ignorieren vvv
+Suarezstr.: Wochenmarkt Do 9.00-15.00, aber anscheinend nur auf dem Bürgersteig	CS 2921,10928 2845,10840
+Mierendorffplatz: Wochenmarkt Mi+Sa, 8.00-13.00, zwar auf der Fahrbahn, aber der Radweg scheint weiterhin befahrbar zu sein	CS 3534,13098 3645,13189
+Fehrbelliner Platz: Wochenmarkt Di+Do, 11.00-16.00, sowie Kunst- und Trödelmarkt Sa+So 10.00-16.00, nur auf der Parkplatzfläche	CS 4339,9224
+Kolberger Platz: Wochenmarkt Mi+Sa, 08.00-14.00, Fahrbahn weiterhin befahrbar, nur Halteverbote	CS; 2786,7721 2751,7811 2880,7801
+Str. des 17. Juni: Kunst- und Trödelmarkt, Sa+So, 10.00-17.00, Radweg wird freigehalten	CS; 5758,11895 5565,11871 5478,11860
+Boxhagener Platz: Wochenmarkt Sa 09.00-15.30, Trödelmarkt So 10.00-18.00, Fahrbahn weiterhin befahrbar, nur Halteverbote	CS; 14127,11811 14272,11775 14247,11681 14102,11715 14127,11811
+Schönleinstr.: Wochenmarkt Di+Sa, 11.00-19.00, betroffen ist wohl nur der abgesperrte und in BBBike sowieso nicht eingezeichnete Abschnitt	CS 11560,9524
+Chamissoplatz: Öko-Markt, Sa, 09.00-15.00, wahrscheinlich nur Halteverbote	CS 9596,9092 9617,9185
+Bergmannstr.: Trödelmarkt Sa, 10.00-16.00, nur die Fahrbahn ist betroffen	CS 9973,9232 9880,9233 9793,9241
+Skalitzer Str.: Trödelmarkt, Sa+So, 08.00-16.00, Gehweg ist betroffen	CS; 12731,10547 12545,10496
+Schillingstr.: Wochenmarkt, Di,Do,Fr, 09.00-17.00, Gehweg ist betroffen, man kann eigentlich immer irgendwie vorbeifahren	CS 11497,12463 11462,12384 11452,12318
+Ackerstr.: Wochenmarkt, Do, 11.00-18.00, anscheinend nur Halteverbot	CS; 9048,14681 9197,14562
+Jagowstr.: Wochenmarkt, Mi+Sa, 08.00-13.00, anscheinend nur Halteverbot	CS; 5601,12756 5543,12664
+#: XXX mal überprüfen - dienstags! Durchfahrverbot ist 7-18 Uhr (Anlieger frei)
+Koppenstr.: Wochenmarkt Di 10.00-18.00, eventuell ist die Farbahn trotzdem befahrbar	CS 12635,12629 12596,12472
+#: section ^^^
 (Kanzlerweg - Schreiberring): Privatweg	CS 8839,8168 8861,8242
 (Kanzlerweg - Schreiberring): Tordurchfahrt	CP2; 8861,8242 8839,8168
 (Rumeyplan - Kanzlerweg): Privatweg	CS 8895,7797 8839,7904
