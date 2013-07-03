@@ -400,7 +400,7 @@ EOF
 	    }
 	    currentPointMarker = null;
 	}
-	currentPointMarker = useV3 ? google.maps.Marker({point:pt}) : new GMarker(pt);
+	currentPointMarker = useV3 ? new google.maps.Marker({position:pt}) : new GMarker(pt);
 	if (useV3) {
 	    currentPointMarker.setMap(map);
 	} else {
