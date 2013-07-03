@@ -1258,13 +1258,13 @@ EOF
     // *** BEGIN DATA ***
 EOF
     for my $def ([$feeble_paths_polar, '#ff00ff', 5,  0.4],
-		 [$paths_polar,        '#ff0000', 10, undef],
+		 [$paths_polar,        '#ff0000', 10, 0.5],
 		) {
 	my($paths_polar, $color, $width, $opacity) = @$def;
 
 	for my $path_polar (@$paths_polar) {
 	    my $route_js_code = <<EOF;
-    var route = new GPolyline([
+    var path = [
 EOF
 	    $route_js_code .= join(",\n",
 				   map {
@@ -1272,12 +1272,15 @@ EOF
 				       sprintf 'new GLatLng(%.5f, %.5f)', $y, $x;
 				   } @$path_polar
 				  );
-	    $route_js_code .= qq{], "$color", $width};
-	    if (defined $opacity) {
-		$route_js_code .= qq{, $opacity};
-	    }
-	    $route_js_code .= qq{);};
-
+	    $route_js_code .= <<EOF;
+];
+    var route;
+    if (useV3) {
+	route = new google.maps.Polyline({path:path,strokeOpacity:$opacity,strokeColor:"$color",strokeWeight:$width});
+    } else {
+        route = new GPolyline(path,"$color",$width,$opacity);
+    }
+EOF
 	    $js .= <<EOF;
 $route_js_code
     if (useV3) {
