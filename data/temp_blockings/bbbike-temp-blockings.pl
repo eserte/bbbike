@@ -21393,7 +21393,7 @@ userdel	q4::inwork 8861,12125 8743,12099
 EOF
      },
      { from  => 1371506400, # 2013-06-18 00:00
-       until => 1375308000, # 2013-08-01 00:00
+       until => 1372871532, # XXX hmmm sieht mir nicht nach Bauarbeiten aus --- 1375308000, # 2013-08-01 00:00
        text  => 'Ordensmeisterstraße: Bauarbeiten zwischen Komturstr. und Colditzstr., Einbahnstraßenregelung, offen in Richtung Ma\'damm, vom 19.06.2013 bis voraussichtlich 31.07.2013',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130611.0925.385925.html',
@@ -21560,6 +21560,16 @@ EOF
        source_id => 'INKO_119430',
        data  => <<EOF,
 userdel	q4::inwork 15920,7697 15765,7567 15696,7507
+EOF
+     },
+     { from  => 1372834800, # 2013-07-03 09:00
+       until => 1376604000, # 2013-08-16 00:00
+       text  => 'Teltower Damm (Zehlendorf): Knesebeckbrücke Baustelle, Fahrbahn gesperrt, Radfahrer müssen schieben, vom 04.07.2013 bis voraussichtlich 15.08.2013',
+       type  => 'handicap',
+       source_id => 'INKO_119024',
+       data  => <<EOF,
+#: by: http://www.teltow.de/nachricht/artikel/knesebeckbruecke-sperrung-wegen-bauarbeiten.html
+userdel	q4::inwork 1460,-372 1453,-306
 EOF
      },
     );

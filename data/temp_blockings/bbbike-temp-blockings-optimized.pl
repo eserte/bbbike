@@ -3268,16 +3268,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130611.0925.385925.html',
-         'until' => 1375308000,
-         'text' => 'Ordensmeisterstraße: Bauarbeiten zwischen Komturstr. und Colditzstr., Einbahnstraßenregelung, offen in Richtung Ma\'damm, vom 19.06.2013 bis voraussichtlich 31.07.2013',
-         'from' => 1371506400,
-         'id' => 2445,
-         'data' => 'userdel	q4::inwork; 9796,5790 10027,5868 10254,5921
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20130613.1320.386040.html',
          'until' => 1385938799,
@@ -3378,6 +3369,17 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'from' => 1372568400,
          'id' => 2459,
          'data' => 'userdel	q4::inwork 15920,7697 15765,7567 15696,7507
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_119024',
+         'until' => 1376604000,
+         'text' => 'Teltower Damm (Zehlendorf): Knesebeckbrücke Baustelle, Fahrbahn gesperrt, Radfahrer müssen schieben, vom 04.07.2013 bis voraussichtlich 15.08.2013',
+         'from' => 1372834800,
+         'id' => 2460,
+         'data' => '#: by: http://www.teltow.de/nachricht/artikel/knesebeckbruecke-sperrung-wegen-bauarbeiten.html
+userdel	q4::inwork 1460,-372 1453,-306
 ',
          'type' => 'handicap'
        }
