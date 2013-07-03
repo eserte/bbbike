@@ -355,11 +355,22 @@ EOF
     var currentTempBlockingMarkers = [];
 
     function createMarker(point, html_name) {
-	var marker = useV3 ? new google.maps.Marker({position:point}) : new GMarker(point);
         var html = "<b>" + html_name + "</b>";
-	GEvent.addListener(marker, "click", function() {
-	    marker.openInfoWindowHtml(html);
-	});
+	var marker;
+	if (useV3) {
+	    marker = new google.maps.Marker({position:point})
+	    var infowindow = new google.maps.InfoWindow({
+		content: html
+	    });
+	    google.maps.event.addListener(marker, 'click', function() {
+		infowindow.open(map, marker);
+	    });
+	} else {
+	    marker = new GMarker(point);
+	    GEvent.addListener(marker, "click", function() {
+	        marker.openInfoWindowHtml(html);
+	    });
+	}
 	return marker;
     }
 
