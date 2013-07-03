@@ -1030,20 +1030,36 @@ EOF
             alert("Bitte Adresse angeben");
             return false;
         }
-	var geocoder = new GClientGeocoder();
-	geocoder.setViewport(map.getBounds());
-	geocoder.setBaseCountryCode("de");
-	waitMode();
-	geocoder.getLatLng(address, geocodeResult);
+	if (useV3) {
+	    waitMode();
+	    var geocoder = new google.maps.Geocoder();
+	    geocoder.geocode({address:address, bounds:map.getBounds(), region:"de"}, geocodeResultV3);
+	} else {
+	    var geocoder = new GClientGeocoder();
+	    geocoder.setViewport(map.getBounds());
+	    geocoder.setBaseCountryCode("de");
+	    waitMode();
+	    geocoder.getLatLng(address, geocodeResultV2);
+	}
         return false;
     }
 
-    function geocodeResult(point) {
+    function geocodeResultV2(point) {
 	nonWaitMode();
 	if (!point) {
 	    alert("Adresse nicht gefunden");
 	} else {
 	    setwptAndMark(point.x, point.y);
+	}
+    }
+
+    function geocodeResultV3(results, status) {
+	nonWaitMode();
+	if (status == google.maps.GeocoderStatus.OK) {
+	    map.setCenter(results[0].geometry.location);
+	    setwptAndMark(results[0].geometry.location.lng(),results[0].geometry.location.lat());
+	} else {
+	    alert("Adresse nicht gefunden. " + status);
 	}
     }
 
