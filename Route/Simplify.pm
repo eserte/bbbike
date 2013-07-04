@@ -81,6 +81,12 @@ use GPS::Util qw(eliminate_umlauts);
 #  - viele punkte für große winkel
 #  - punkte für straßennamenswechsel
 #  - evtl. minuspunkte für kleine entfernungen vom vorherigen+nächsten punkt
+#
+# -leftrightpair: defaults to '(-' and '-)' (but should be set to '<-' and '->'
+# for suitable tools): used for "hard" turns (more than 60°)
+# -leftrightpair2: defaults to '(\' and '/)', used for "soft" turns between
+# 30° and 60°
+#
 sub Route::simplify_for_gps {
     my($route, %args) = @_;
 
@@ -109,7 +115,8 @@ sub Route::simplify_for_gps {
     # "<" and ">" somehow does not work when used with perl-GPS, so
     # fallback to "(- " and " -)". But gpsbabel may use "<" and ">" or
     # so.
-    my $leftrightpair = $args{-leftrightpair} || ["(- ", " -)"];
+    my $leftrightpair  = $args{-leftrightpair}  || ["(- ", " -)"];
+    my $leftrightpair2 = $args{-leftrightpair2} || ["(\\ ", " /)"];
     my $uniquewpts = exists $args{-uniquewpts} ? $args{-uniquewpts} : 1;
     my $debug = $args{-debug};
 
@@ -164,6 +171,7 @@ sub Route::simplify_for_gps {
 
 	my $short_dir_left  = '';
 	my $short_dir_right = '';
+	my $significant_angle = 0;
 	my $large_angle = 0;
 	if ($obj_type eq 'routetoname') {
 	    my $this_street_info = $routetoname->[$n];
@@ -172,14 +180,26 @@ sub Route::simplify_for_gps {
 	    my $prev_street; $prev_street = $prev_street_info->[&StrassenNetz::ROUTE_NAME] if $n > 0;
 	    # The < or > prefix for showing the direction
 	    # XXX should use a better "situation_at_point" function
-	    if (($prev_street_info->[&StrassenNetz::ROUTE_ANGLE]||0) >= 30) {
-		$large_angle = 1;
+	    my $route_angle = $prev_street_info->[&StrassenNetz::ROUTE_ANGLE] || 0;
+	    if ($route_angle >= 30) {
+		$significant_angle = 1;
+		if ($route_angle >= 60) {
+		    $large_angle = 1;
+		}
 	    }
-	    if ($waypointcharset eq 'latin1' && $large_angle) {
+	    if ($waypointcharset eq 'latin1' && $significant_angle) {
 		if      ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'l') {
-		    $short_dir_left = $leftrightpair->[0];
+		    if ($large_angle) {
+			$short_dir_left = $leftrightpair->[0];
+		    } else {
+			$short_dir_left = $leftrightpair2->[0];
+		    }
 		} elsif ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'r') {
-		    $short_dir_right = $leftrightpair->[1];
+		    if ($large_angle) {
+			$short_dir_right = $leftrightpair->[1];
+		    } else {
+			$short_dir_right = $leftrightpair2->[1];
+		    }
 		}
 	    }
 
@@ -265,7 +285,7 @@ sub Route::simplify_for_gps {
 	    $importance = -1;
 	} else {
 	    $prev_used_street_name = $cross_streets[0];
-	    $importance = +1 if $large_angle;
+	    $importance = +1 if $significant_angle;
 	    # try to shorten street names
 	    if ($n < $#path) {
 		$cross_streets[0] = Route::Simplify::short_landstrasse($cross_streets[0], $net, $xy_string, join(",",@{ $path[$n+1] }));
