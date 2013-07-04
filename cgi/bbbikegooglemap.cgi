@@ -662,8 +662,25 @@ EOF
     }
 
     function checkSetCoordForm() {
-	if (document.googlemap.wpt_or_trk.value == "") {
+	var wpt_or_trk_value = document.googlemap.wpt_or_trk.value;
+	if (wpt_or_trk_value == "") {
 	    alert("Bitte Koordinaten eingeben (z.B. im WGS84-Modus: 13.376431,52.516172)");
+	    return false;
+	}
+	if (wpt_or_trk_value.match(/^([-+]?\\d+(?:\\.\\d+)?),([-+]?\\d+(?:\\.\\d+)?)\$/)) {
+	    if (document.googlemap.coordsystem[0].checked) { // polar
+	        if (Math.abs(RegExp.\$1) > 180 || Math.abs(RegExp.\$2) > 90) {
+		    alert("Ungültiger Wert für Longitude/Latitude, gültig wäre z.B. 13.376431,52.516172");
+		    return false;
+		}
+	    } else {
+		if (Math.abs(RegExp.\$1) > 1000000 || Math.abs(RegExp.\$2) > 1000000) {
+		    alert("Zu großer Wert für Rechts/Hochwert");
+		    return false;
+		}
+	    }
+	} else {
+	    alert("Bitte Koordinaten im Format 13.376431,52.516172 eingeben.");
 	    return false;
 	}
 	setZoomInForm();
