@@ -663,8 +663,8 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14311,11884
 Seumestr.: Kopfsteinpflaster	Q2 14395,11753 14358,11656 14305,11514 14254,11377
 Wismarplatz: Kopfsteinpflaster	Q2 14395,11753 14416,11815
-Mainzer Str.: Kopfsteinpflaster	Q2- 14311,11884 14357,12011 14384,12084
-Mainzer Str.: Asphalt	Q0 14384,12084 14427,12197
+Mainzer Str.: Kopfsteinpflaster	Q2- 14311,11884 14357,12011
+Mainzer Str.: Asphalt	Q0 14357,12011 14427,12197
 Colbestr.: Asphalt	Q0+ 14416,11815 14468,11992
 Kinzigstr.: mäßiger Asphalt	Q1 14589,11975 14471,11782
 Waldeyerstr.: Kopfsteinpflaster	Q2 15054,12323 14997,12243
@@ -21788,6 +21788,7 @@ Berolinastr.: Beton	Q2+ 11771,12909 11826,12883 11844,12926
 Berolinastr.: Beton	Q0 11541,12886 11590,12995
 Mollstr.: Beton	Q0 11739,13131 11719,13088 11660,12963
 Mollstr.: Beton	Q0 11673,12955 11622,12850
+#: XXX nochmal genau prüfen: ist es vielleicht Q0 oder zumindest Q0-?
 Weydemeyerstr.: Beton	Q1 12112,12861 12054,12903 11983,12949
 Weydemeyerstr.: Beton	Q1- 11983,12949 11952,12871 11921,12810 11890,12750
 (Weydemeyerstr.): Gehwegplatten	Q0- 11890,12750 11818,12785

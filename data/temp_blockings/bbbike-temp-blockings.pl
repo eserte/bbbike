@@ -21572,4 +21572,13 @@ EOF
 userdel	q4::inwork 1460,-372 1453,-306
 EOF
      },
+     { from  => 1372914000, # 2013-07-04 07:00
+       until => 1373148000, # 2013-07-07 00:00
+       text  => 'Französische Str. (Mitte) zwischen Mauerstr. und Glinkastr., Baustelle, Fahrbahn gesperrt, ab: 05.07.2013 07 Uhr bis ca. 06.07.2013 ',
+       type  => 'handicap',
+       source_id => 'INKO_116809',
+       data  => <<EOF,
+userdel	q4::inwork 9076,12054 9183,12076
+EOF
+     },
     );

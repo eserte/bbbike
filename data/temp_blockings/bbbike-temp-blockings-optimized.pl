@@ -3382,6 +3382,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 userdel	q4::inwork 1460,-372 1453,-306
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_116809',
+         'until' => 1373148000,
+         'text' => 'Französische Str. (Mitte) zwischen Mauerstr. und Glinkastr., Baustelle, Fahrbahn gesperrt, ab: 05.07.2013 07 Uhr bis ca. 06.07.2013 ',
+         'from' => 1372914000,
+         'id' => 2461,
+         'data' => 'userdel	q4::inwork 9076,12054 9183,12076
+',
+         'type' => 'handicap'
        }
      
 );

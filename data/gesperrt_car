@@ -411,8 +411,8 @@ Magnusstr. -> Rudower Chaussee: Magnusstr./Rudower Chaussee	3::igndisp 19268,278
 Rudower Chaussee -> Magnusstr.: Magnusstr./Rudower Chaussee	3::igndisp 19242,2876 19206,2848 19268,2784
 Gabelberger Str./Frankfurter Allee	3 14451,12396 14381,12205 14427,12197
 Mainzer Str./Frankfurter Allee	3nocross::ignrte 14381,12205 14427,12197 14488,12188
-Mainzer Str. -> Frankfurter Allee: Mainzer Str./Frankfurter Allee	3::igndisp 14384,12084 14427,12197 14381,12205
-Frankfurter Allee -> Mainzer Str.: Mainzer Str./Frankfurter Allee	3::igndisp 14488,12188 14427,12197 14384,12084
+Frankfurter Allee -> Mainzer Str.: Mainzer Str./Frankfurter Allee	3::igndisp 14488,12188 14427,12197 14357,12011
+Mainzer Str. -> Frankfurter Allee: Mainzer Str./Frankfurter Allee	3::igndisp 14357,12011 14427,12197 14381,12205
 Colbestr./Frankfurter Allee	3nocross::ignrte 14488,12188 14523,12183 14621,12168
 Frankfurter Allee -> Colbestr.: Colbestr./Frankfurter Allee	3::igndisp 14621,12168 14523,12183 14468,11992
 Colbestr. -> Frankfurter Allee: Colbestr./Frankfurter Allee	3::igndisp 14468,11992 14523,12183 14488,12188

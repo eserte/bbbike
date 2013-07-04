@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-07-03 vvv
+#: last_checked: 2013-07-04 vvv
 #: next_check: 2013-07-08 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -24,7 +24,7 @@ Simplonstr.: Bauarbeiten, umst‰ndliches ‹berqueren der Modersohnstr.	q3::inwork 
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-07-01 vvv
+#: last_checked: 2013-07-04 vvv
 #: check_frequency: 90d
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
@@ -33,8 +33,10 @@ Simplonstr.: Bauarbeiten, umst‰ndliches ‹berqueren der Modersohnstr.	q3::inwork 
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-07-02
+#: last_checked: 2013-07-02 vvv
+Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 13473,11456 13366,11651
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 13366,11651 13295,11792
+#: last_checked ^^^
 # 
 # REMOVED (fast keine Einschr‰nkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14247,11681 14272,11775
 # REMOVED (Bauarbeiten beendet) --- Mainzer Str., G‰rtnerstr.: Baustelle, Einbahnstraﬂenregelung	q3::inwork; 14311,11884 14357,12011
