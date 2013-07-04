@@ -22,4 +22,4 @@ lib/%%LOCAL_PERL_ARCH%%/auto/VectorUtil/Inline/Inline.so
 lib/%%LOCAL_PERL_ARCH%%/auto/VirtArray/VirtArray.bs
 lib/%%LOCAL_PERL_ARCH%%/auto/VirtArray/VirtArray.so
 # after: @dirrm BBBike/lib/%%LOCAL_PERL_ARCH%%
-@dirrmtry BBBike/lib/%%PERL_VER%%
+@dirrmtry BBBike/lib/%%PERL_VERSION%%
