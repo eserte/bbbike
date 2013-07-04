@@ -45,6 +45,31 @@ $comments_net->make_net_cat(-net2name => 1,
 			    -obeydir => 1);
 
 {
+    my @path = map { [ split /,/ ] } qw(13651,11731 13467,11778 13198,12311 13068,12332 13019,12316 13075,12207);
+    my $route = Route->new_from_realcoords(\@path);
+    my $routetoname = [ $s_net->route_to_name($route->path) ];
+
+    my @std_args = ($route, -streetobj => $s, -netobj => $s_net);
+    my @std_routetoname_args = (@std_args, -routetoname => $routetoname);
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1');
+
+	is $simplified_route->{routename}, 'Kopern-Marchl', 'Route name built from start and goal';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Kopernikusstr.', 'Gubener+Tor /)', '(\ Hildegard-J', '(- Marchlewski', '.'], 'Idents in path (with routetoname)';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1',
+						       -leftrightpair  => ['<-', '->'],
+						       -leftrightpair2 => ['<\\', '/>'],
+						      );
+	is $simplified_route->{routename}, 'Kopern-Marchl', 'Route name built from start and goal';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Kopernikusstr.', 'Gubener+Tore/>', '<\Hildegard-Ja', '<-Marchlewski+', '.'], 'Idents in path (with routetoname)';
+    }
+}
+
+{
     my @path = map { [ split /,/ ] } qw(15420,12178 15361,12071 15294,11964 15317,11953);
     my $route = Route->new_from_realcoords(\@path);
     my $routetoname = [ $s_net->route_to_name($route->path) ];
