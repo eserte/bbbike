@@ -1877,6 +1877,8 @@ $check_sub{'s'} = sub {
 };
 $check_sub{'l'} = sub {
     plot("str",'l');
+    # maybe invalidate net
+    if ($net && $net_type eq 's' && !grep { $_ eq 'l' } $net->get_source_abk) { undef $net }
 };
 $check_sub{'u'} = sub {
     $p_draw{'u'} = $p_draw{'sperre_u'} = $str_draw{'u'};
