@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-07-04 vvv
+#: last_checked: 2013-07-05 vvv
 #: next_check: 2013-07-08 vvv
 #: source_id: IM_019640
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -24,7 +24,7 @@ Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-07-04 vvv
+#: last_checked: 2013-07-05 vvv
 #: check_frequency: 90d
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
@@ -33,7 +33,7 @@ Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-07-02 vvv
+#: last_checked: 2013-07-05 vvv
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 13473,11456 13366,11651
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q2::inwork; 13366,11651 13295,11792
 #: last_checked ^^^
@@ -145,7 +145,7 @@ Rathausstr.: Fahrbahn an der Spandauer Str. gesperrt, Ausweichen auf Gehweg	q4::
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
-#: last_checked: 2013-06-27 vvv
+#: last_checked: 2013-07-05 vvv
 #: note: q4 zumindest im Berufsverkehr vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q4::inwork; 10389,11390 10446,11470
@@ -1610,8 +1610,8 @@ Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 #: note ^^^
 (Blockdammweg - Trautenauer Str.): Rampe	q2 17904,8927 17888,8899 17915,8900
 #: XXX wie wird die endgültige Lösung hier aussehen?
-#: last_checked: 2013-06-28
-#: next_check: 2013-07-02
+#: last_checked: 2013-07-05
+#: next_check: 2013-07-15
 (Weg 1 im KGA Hochspannung): kurze Rampe	q3 18184,9631 18181,9619
 Fromet-und-Moses-Mendelssohn-Platz: einige Fußgänger	q1 9797,10771 9733,10827 9682,10836 9666,10848
 ######################### User Contributions #################################
@@ -1674,7 +1674,7 @@ Eschershauser Weg: parkende Autos, unübersichtlich	q1 -190,4776 -146,4814 -97,48
 Begasstr.: eng	q1 6275,7004 6408,7008
 #: by: Martina Urban: vvv
 Friedrichsruher Str.: sehr eng	q1 6637,5952 6508,5931 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
-Schönhauser Str.: eng	q1 5803,6403 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
+Schönhauser Str.: eng	q1 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
 Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
 #: by: ^^^
 #: by: Hanswalter Schramm:

@@ -192,8 +192,8 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
 #: XXX_osm: in osm: access=private statt access=no, aber das ist wohl falsch
 #: osm_watch: way id="24869862" version="11"
-#: last_checked: 2013-03-09
-#: next_check: 2013-07-09
+#: last_checked: 2013-07-05
+#: next_check: 2014-02-09
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653 22314,4604
 Kietzer Str.	1s:q3 22372,4496 22383,4470
@@ -777,9 +777,9 @@ Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6241,9772 6209,9772 6108,9772
 Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6108,9772 6209,9773 6241,9772
 #: note ^^^
 #: note: Mittelstreifen vvv
-Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7078,5887
-Prellerweg (Richtungsfahrbahn)	1::igndisp 7078,5887 6895,5870 6757,5858
-Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7078,5887
+Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7052,5883
+Prellerweg (Richtungsfahrbahn)	1::igndisp 7052,5883 6895,5870 6757,5858
+Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7052,5883
 #: note ^^^
 #: note: Mittelstreifen vvv
 Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 7946,7411 8074,7295 8176,7194 8229,7154 8319,7084
@@ -1907,6 +1907,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:0::trailer=5 7222,6436
 Drängelgitter	BNP:3::trailer=10 6129,12976
 #: by: public imagery
 Drängelgitter	BNP:3::trailer=10 24207,10858

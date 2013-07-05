@@ -20241,17 +20241,14 @@ EOF
 userdel	q4::inwork 18731,8577 18709,8423
 EOF
      },
-     { from  => $isodate2epoch->("2013-06-18 20:00:00"), # 1 Tag Vorlauf # from  => 1338001200, # 2012-05-26 05:00
-       until => $isodate2epoch->("2013-06-30 04:00:00"), #        until => 1338602400, # 2012-06-02 04:00
-       text  => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 19. Juni 2013, 22 Uhr bis 30. Juni 2013, 4 Uhr',
+     { from  => $isodate2epoch->("2013-07-07 17:00:00"), # 1 Tag Vorlauf # from  => 1338001200, # 2012-05-26 05:00
+       until => $isodate2epoch->("2013-07-14 04:00:00"), #        until => 1338602400, # 2012-06-02 04:00
+       text  => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 8. Juli 2013, 17 Uhr bis 14. Juli 2013, 4 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130618.1615.386236.html
-#: XXX nächste Sperrung: Mo 8. Juli (17 Uhr) bis So 14. Juli (4 Uhr)
 #: source_id: INKO_118652
-#: next_check: 2013-06-30
-#: priority: #A
 userdel	2::inwork 18731,8577 18709,8423
 EOF
      },
@@ -21412,13 +21409,14 @@ EOF
 userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
 EOF
      },
-     { from  => 1371074400, # 2013-06-13 00:00
-       until => 1371506399, # 2013-06-17 23:59
-       text  => 'Flughafen Tempelhof: Sperrung der Zugänge zum Peter-Strasser-Weg wegen einer Veranstaltung (Ironman Berlin)',
+     { from  => $isodate2epoch->("2013-07-02 00:00:00"),
+       until => $isodate2epoch->("2013-07-07 23:59:59"),
+       text  => 'Flughafen Tempelhof: Sperrung der Zugänge zum Peter-Strasser-Weg wegen einer Veranstaltung (Bread and Butter)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9522,7624 9362,7616 9281,7651
 userdel	2::temp 9562,7796 9372,7798 9281,7795
+userdel	2::temp 9281,7795 9281,7651 9300,7312
 EOF
      },
      { from  => 1371189600, # 2013-06-14 08:00
@@ -21554,8 +21552,8 @@ EOF
 EOF
      },
      { from  => 1372568400, # 2013-06-30 07:00
-       until => 1373119200, # 2013-07-06 16:00
-       text  => 'Eichbuschallee (Treptow): Baustelle zwischen Köpenicker Landstr. und Bergaustr., Fahrbahn gesperrt (bis Mitte Juli 2013)',
+       until => 1373270400, # 2013-07-08 10:00
+       text  => 'Eichbuschallee (Treptow): Baustelle zwischen Köpenicker Landstr. und Bergaustr., Fahrbahn gesperrt, bis 08.07.2013 10:00 Uhr',
        type  => 'handicap',
        source_id => 'INKO_119430',
        data  => <<EOF,
@@ -21573,8 +21571,8 @@ userdel	q4::inwork 1460,-372 1453,-306
 EOF
      },
      { from  => 1372914000, # 2013-07-04 07:00
-       until => 1373148000, # 2013-07-07 00:00
-       text  => 'Französische Str. (Mitte) zwischen Mauerstr. und Glinkastr., Baustelle, Fahrbahn gesperrt, ab: 05.07.2013 07 Uhr bis ca. 06.07.2013 ',
+       until => 1373126400, # 2013-07-06 18:00
+       text  => 'Französische Str. (Mitte) zwischen Mauerstr. und Glinkastr., Baustelle, Fahrbahn gesperrt, ab: 05.07.2013 07 Uhr bis 06.07.2013 18 Uhr',
        type  => 'handicap',
        source_id => 'INKO_116809',
        data  => <<EOF,

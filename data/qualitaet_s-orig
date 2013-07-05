@@ -68,13 +68,13 @@ Jüterboger Str.: mäßiges Kopfsteinpflaster	Q2 10266,8946 9958,8966 9799,8962
 Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9170,9206 9150,9152 9125,9078 9115,9046
 Methfesselstr.: mäßiges Kopfsteinpflaster	Q2 9115,9046 9111,9036 9063,8935 8982,8781
 Wilhelmshöhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
-Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,7352 7230,7264 7222,6458 7217,6065
+Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,6436 7217,6065
 #: XXX wird dieses Teilstück asphaltiert?
 #: XXX Baumaßnahme GL7.6, GL7.7 (Realisierung nach 2011)
-#: last_checked: 2013-04-13
+#: last_checked: 2013-07-05
 #: check_frequency: 90d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7217,6065 7216,5888
-Priesterweg: Asphalt	Q0 7216,5888 7175,5843
+Priesterweg: Asphalt	Q0 7216,5888 7167,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
 Großgörschenstr.: Kopfsteinpflaster, OK	Q1 7771,9479 7882,9490
@@ -172,9 +172,9 @@ Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15655,11697 15634,11656 15572,11533 1
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0- 15634,11656 15482,11729 15413,11690
 #: XXX Bauarbeiten in Gange, danach vielleicht Q0?
-#: last_checked: 2013-06-22
-#: next_check: 2013-07-06
-Buchberger Str.: teilweise mäßige Betonplatten	Q1 16225,11523 16368,11912
+#: last_checked: 2013-07-05
+#: next_check: 2013-07-12
+Buchberger Str.: teilweise mäßige Betonplatten	Q1 16242,11533 16368,11912
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7402,8208 7250,8223 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7250,8223 7402,8208
@@ -222,7 +222,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2013-06-18
+#: last_checked: 2013-07-05
 #: check_frequency: 90d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -344,7 +344,7 @@ Werftstr.: Kopfsteinpflaster	Q2 7346,13022 7330,12871 7317,12751
 Melanchthonstr.: Kopfsteinpflaster	Q2 7111,12743 6907,12777 6802,12797
 Albrechtstr.: Kopfsteinpflaster	Q2 6360,4504 6416,4452 6492,4387
 Rembrandtstr.: Kopfsteinpflaster	Q2 6051,6758 6121,6851 6143,6853
-Körnerstr.: Kopfsteinpflaster	Q2 5780,6397 5697,6276 5598,6136 5460,5966 5464,5731 5466,5622 5466,5522
+Körnerstr.: Kopfsteinpflaster	Q2 5781,6404 5787,6389 5697,6276 5598,6136 5460,5966 5464,5731 5466,5622 5466,5522
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060922.1210.47859.html
 Bergstr.: asphaltiert	Q0 5681,5743 5581,5741 5464,5731 5280,5714
 Schützenstr.: Kopfsteinpflaster	Q2 5183,5437 5111,5337 5046,5244 5003,5183 4956,5121 4938,5096 4906,5052 4879,5017 4802,4921
@@ -774,9 +774,9 @@ Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2226,18228 1549,177
 Sembritzkistr.: Asphalt	Q0 6854,4931 6856,4963 6923,5057 6953,5102 7018,5201 7095,5317 7157,5418 7199,5479
 #: XXX wird hier irgendwann auch asphaltiert werden?
 #: XXX Baumaßnahme GL7.9 (Realisierung nach 2011)
-#: last_checked: 2013-04-13
-#: check_frequency: 90d
 #: osm_watch: way id="142367144" version="3"
+#: last_checked: 2013-07-05
+#: check_frequency: 90d
 Sembritzkistr.: mäßiges Kopfsteinpflaster	Q2 7199,5479 7245,5568 7230,5696
 #: by: Benjamin Hersch:
 Sembritzkistr.: Asphalt	Q0 6847,4802 6854,4931
@@ -1035,7 +1035,7 @@ Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11209,12430 11156,12581 11057,1
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7217,6065 7251,6071
 Liepnitzstr.: Asphalt	Q0 17803,8079 17852,8155 17920,8256 17961,8312 17988,8350 18007,8377 18072,8470 18151,8589 18273,8758
-Hegemeisterweg: Kopfsteinpflaster	Q2 17202,8391 17520,8219
+Hegemeisterweg: Kopfsteinpflaster	Q2- 17202,8391 17520,8219
 Hegemeisterweg: Asphalt	Q0- 17520,8219 17565,8197 17627,8167 17691,8135 17747,8107 17803,8079
 Hegemeisterweg: Asphalt	Q0 17803,8079 17987,7973 18287,7815 18325,7778 18382,7724
 Hegemeisterweg: Asphalt	Q0 18325,7778 18406,7760
@@ -2205,8 +2205,9 @@ Ceciliengärten: überwiegend guter Asphalt, kurze Stellen mit mäßigem Asphalt	Q0-
 Ceciliengärten: überwiegend guter Asphalt, kurze Stellen mit mäßigem Asphalt	Q0- 6257,7646 6238,7645 6241,7428 6256,7428
 Hedwigstr. (Friedenau, Schöneberg): Asphalt	Q0 5817,7223 5958,7220 6081,7215 6161,7216
 Semperstr.: Asphalt	Q0 6162,7232 6252,7233 6283,7231
-#: note: die ADFC-Karte lag hier kräftig daneben: gut geeignet
-Matthäifriedhofsweg: mäßiges Kopfsteinpflaster, teilweise welliger Asphalt	Q2+ 7230,7264 7305,7221 7477,7122 7563,7113
+Matthäifriedhofsweg: Verbundsteinpflaster	Q1+ 7229,7188 7302,7190 7353,7193
+Matthäifriedhofsweg: welliger Asphalt	Q1- 7305,7221 7353,7193 7382,7175
+Matthäifriedhofsweg: mäßiges Kopfsteinpflaster	Q2 7382,7175 7477,7122 7563,7113
 Matthäifriedhofsweg: kleinteiliges Kopfsteinpflaster	Q1 7563,7113 7605,7109
 Motardstr.: Beton	Q0 984,14086 386,14162 217,14181
 Motardstr.: Asphalt	Q0 217,14181 -32,14208 -224,14184 -260,14210
@@ -2339,8 +2340,8 @@ Malmöer Str.: Asphalt	Q0 10197,16528 10225,16436
 (Lauterberger Str. - Andreasberger Str.): Kleinsteinpflaster	Q1 12053,6042 12154,6063
 #: corrected_by: srt (Asphalt Q0 -> Beton Q1)
 Massower Str.: Beton	Q1 17734,11408 17861,11429 18005,11451 18178,11504
-Massower Str.: Beton	Q1 17861,11429 17864,11371 17964,11375 17967,11342 18016,11343
-Kurze Str. (Friedrichsfelde): Beton	Q1 18027,11244 18016,11343 18005,11451
+Massower Str.: Beton	Q1 17861,11429 17864,11371 17973,11384 17976,11352 18014,11350
+Kurze Str. (Friedrichsfelde): Beton	Q1 18027,11244 18014,11350 18005,11451
 Ribbecker Str.: Beton	Q0- 17612,11541 17609,11467
 Ribbecker Str.: Asphalt	Q0 17609,11467 17582,11240
 Ribbecker Str.: Kopfsteinpflaster	Q2 17582,11240 17574,11141 17560,10973
@@ -2839,8 +2840,8 @@ Am Kupfergraben: Kopfsteinpflaster	Q2 9870,12657 9900,12643 9919,12613
 #: XXX früher war hier ein Betonplattengehweg (Q0-), evtl. wird er nach den Bauarbeiten ("Besser Parken GmbH") wieder hergestellt
 #: XXX Bauarbeiten sind anscheinend fertig, aber der Weg sieht noch immer provisorisch aus
 #: XXX 2013-06-21: der Weg ist noch immer nicht hergestellt, aber er sieht jetzt etwas besser aus, mal wieder ausprobieren...
-#: last_checked: 2013-06-21
-#: next_check: 2013-07-21
+#: last_checked: 2013-07-05
+#: next_check: 2014-02-21
 (Ontarioseestr. - Treskowallee): unbefestigter Pfad	Q2- 18577,10023 18694,10018
 Bopparder Str.: mäßiger Beton	Q1- 18790,9018 18881,9002
 Sinziger Str.: Beton	Q1 18886,9031 18978,9014
@@ -13155,7 +13156,8 @@ Schwiegersteig: Beton	Q0 1112,14918 1130,14823 1134,14721
 (Krahmerstr. - Teltowkanalpromenade): Asphalt	Q0 4791,3395 4787,3342
 # 
 #: by: Tina (bodsch):
-Horst-Kohl-Str.: mäßiger Asphalt	Q1 6125,6132 6214,6132 6310,6121 6369,6109 6462,6115 6494,6128
+#: corrected_by: srt (mäßiger Asphalt -> )
+Horst-Kohl-Str.: Asphalt	Q0- 6116,6130 6214,6132 6310,6121 6369,6109 6462,6115 6494,6128
 # 
 #: by: Michael Langner:
 Moränenweg: guter Asphalt	Q0 3295,21202 3208,21425
@@ -13647,7 +13649,7 @@ Altmarkstr.: guter Asphalt	Q0 6338,6312 6323,6270 6310,6121 6318,6002 6326,5912 
 #: note: laut ADFC-Karte "gut geeignet"
 Friedrichsruher Str.: Asphalt	Q0 6637,5952 6508,5931 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 #: note: laut ADFC-Karte zumindest der nördliche Abschnitt gut geeignet
-Schönhauser Str.: Asphalt	Q0 5803,6403 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
+Schönhauser Str.: Asphalt	Q0 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
 #: note: laut ADFC-Karte "gut geeignet"
 Jeverstr.: Asphalt	Q0 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
 #: by: ^^^
@@ -15107,7 +15109,7 @@ Straße 339: Asphalt	Q0 -8479,15609 -8558,15306 -8612,15086
 #: by: ^^^
 # 
 #: by: verena halloweena:
-Lauenburger Platz: Asphalt	Q0 6014,6160 6118,6174
+Lauenburger Platz: Asphalt	Q0 6014,6160 6112,6173
 # 
 #: by: misersky:
 #: confirmed_by: srt
@@ -16490,8 +16492,10 @@ Schlehdornsteig: Wechsel zwischen Kopfsteinpflaster und Verbundsteinpflaster	Q1-
 Mittelstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 104,2802 50,3031
 # 
 #: by: Fabian Jakob: vvv
-#: confirmed_by: srt (zumindest den nördlichen Abschnitt)
-Trautenauer Str.: schlechtes Kopfsteinpflaster	Q3 17753,8290 17774,8342 17794,8429 17813,8508 17830,8578
+#: confirmed_by: srt (schlechtes Kopfsteinpflaster -> )
+Trautenauer Str.: Kopfsteinpflaster	Q2- 17753,8290 17774,8342 17794,8429 17813,8508
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
+Trautenauer Str.: Kopfsteinpflaster, mäßiger Asphaltstreifen in der Mitte	Q2+ 17813,8508 17830,8578
 #: corrected_by: srt (neuer Asphalt seit Juni 2013)
 Trautenauer Str.: Asphalt	Q0 17830,8578 17851,8662 17879,8773 17915,8900
 #: by: ^^^
@@ -16892,8 +16896,12 @@ Bernulfstr.: Kopfsteinpflaster	Q3 19876,984 19988,928
 #: confirmed_by ^^^
 #: by: ^^^
 # 
-#: by: Daniela (aleinad...):
-Straße 17: mäßiger Sandweg	Q2 7305,7221 7307,7425
+#: by: Daniela (aleinad...): vvv
+Straße 17: mäßiger Sandweg	Q2 7302,7190 7305,7221
+#: corrected_by: srt (Q2 -> Q2+, hier teilweise mit Asphalt (?) versetzt)
+Straße 17: mäßiger Sandweg	Q2+ 7305,7221 7304,7290
+Straße 17: mäßiger Sandweg	Q2 7304,7290 7307,7425
+#: by: ^^^
 # 
 #: by: Dominik (30bln): vvv
 #: corrected_by: srt (Kopfsteinpflaster, Q2- -> Asphalt/Beton) vvv
@@ -21856,7 +21864,7 @@ Kanzlerweg: Asphalt	Q0- 8830,8148 8834,8023 8839,7904
 #: corrected_by: srt (Q2 -> Q1)
 Wiesenerstr.: mäßiger Asphalt	Q1 8900,7643 8923,7673 8948,7689 8952,7719 8926,7705 8923,7673
 #: corrected_by: srt (Q2 -> Q1)
-Siegertweg: mäßiger Asphalt	Q1 8971,7359 8982,7438 9042,7462 9067,7490
+Siegertweg: mäßiger Asphalt	Q1 8971,7359 8982,7438 9042,7462 9070,7493
 Hessenring: Beton	Q0 8465,7699 8549,7622 8625,7594
 #: corrected_by: srt (Q1 -> Q0-)
 Hessenring: Asphalt	Q0- 8625,7594 8706,7585

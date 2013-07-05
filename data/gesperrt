@@ -561,9 +561,9 @@ Spittelmarkt (Mittelstreifen)	3nocross::ignrte 10213,11728 10240,11740 10299,117
 Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6108,9772 6209,9773 6241,9772
 Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6241,9772 6209,9772 6108,9772
 Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6108,9772 6209,9773 6241,9772
-Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7078,5887
-Prellerweg (Richtungsfahrbahn)	1::igndisp 7078,5887 6895,5870 6757,5858
-Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7078,5887
+Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7052,5883
+Prellerweg (Richtungsfahrbahn)	1::igndisp 7052,5883 6895,5870 6757,5858
+Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7052,5883
 Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 7946,7411 8074,7295 8176,7194 8229,7154 8319,7084
 Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 8319,7084 8224,7148 8150,7200 8069,7288 7946,7411
 Sachsendamm/Schöneberger Str. (Mittelstreifen)	3nocross::ignrte 8319,7084 8229,7154 8176,7194
@@ -2189,6 +2189,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke	BNP:0:-179:trailer=5 7222,6436
 Drängelgitter	BNP:3:83:trailer=10 6129,12976
 Drängelgitter	BNP:3:15:trailer=10 24207,10858
 Drängelgitter	BNP:5:-155:trailer=no 22482,9550

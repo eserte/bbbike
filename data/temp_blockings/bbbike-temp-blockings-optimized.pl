@@ -2713,18 +2713,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020013',
-         'data' => 'userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
-userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
-',
-         'periodic' => 1,
-         'until' => 1372957200,
-         'from' => 1372654800,
-         'text' => 'Platz der Luftbrücke (Tempelhof): Veranstaltung, Straße vollständig zwischen Tempelhofer Damm und Columbiadamm gesperrt (bis Donnerstag)',
-         'type' => 'gesperrt',
-         'id' => 2245
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2874,7 +2863,18 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1373767200,
+         'text' => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 8. Juli 2013, 17 Uhr bis 14. Juli 2013, 4 Uhr',
+         'from' => 1373209200,
+         'id' => 2330,
+         'data' => '#: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130618.1615.386236.html
+#: source_id: INKO_118652
+userdel	2::inwork 18731,8577 18709,8423
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3281,7 +3281,17 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => 1373234399,
+         'text' => 'Flughafen Tempelhof: Sperrung der Zugänge zum Peter-Strasser-Weg wegen einer Veranstaltung (Bread and Butter)',
+         'from' => 1372716000,
+         'id' => 2447,
+         'data' => 'userdel	2::temp 9522,7624 9362,7616 9281,7651
+userdel	2::temp 9562,7796 9372,7798 9281,7795
+userdel	2::temp 9281,7795 9281,7651 9300,7312
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3364,8 +3374,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        },
        {
          'source_id' => 'INKO_119430',
-         'until' => 1373119200,
-         'text' => 'Eichbuschallee (Treptow): Baustelle zwischen Köpenicker Landstr. und Bergaustr., Fahrbahn gesperrt (bis Mitte Juli 2013)',
+         'until' => 1373270400,
+         'text' => 'Eichbuschallee (Treptow): Baustelle zwischen Köpenicker Landstr. und Bergaustr., Fahrbahn gesperrt, bis 08.07.2013 10:00 Uhr',
          'from' => 1372568400,
          'id' => 2459,
          'data' => 'userdel	q4::inwork 15920,7697 15765,7567 15696,7507
@@ -3385,8 +3395,8 @@ userdel	q4::inwork 1460,-372 1453,-306
        },
        {
          'source_id' => 'INKO_116809',
-         'until' => 1373148000,
-         'text' => 'Französische Str. (Mitte) zwischen Mauerstr. und Glinkastr., Baustelle, Fahrbahn gesperrt, ab: 05.07.2013 07 Uhr bis ca. 06.07.2013 ',
+         'until' => 1373126400,
+         'text' => 'Französische Str. (Mitte) zwischen Mauerstr. und Glinkastr., Baustelle, Fahrbahn gesperrt, ab: 05.07.2013 07 Uhr bis 06.07.2013 18 Uhr',
          'from' => 1372914000,
          'id' => 2461,
          'data' => 'userdel	q4::inwork 9076,12054 9183,12076
