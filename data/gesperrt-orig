@@ -186,7 +186,7 @@ Körtestr.	1 11060,9549 11004,9554
 Fichtestr.	1 11075,9576 11060,9549
 Baerwaldstr.	1 10361,9755 10357,9813 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
-Dittersbacher Weg	1 7865,3344 7852,3183
+Dittersbacher Weg	1 7865,3354 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
@@ -418,7 +418,7 @@ Engelmannweg	1 4531,18217 4492,18013 4462,17892 4429,17763
 #: confirmed_by: srt
 Waldowstr.	1 5536,18234 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5547,18665 5550,18775
 Kienhorststr.	1 5543,18555 5324,18560
-Halbauer Weg	1 7720,3148 7719,3219 7734,3290 7753,3371
+Halbauer Weg	1 7720,3148 7719,3219 7734,3290 7755,3376
 #: by: Guido (guidoh):
 Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345
 # REMOVED (offen für Radfahrer) --- #: by: Jürgen Jacobi:Onkel-Bräsig-Str.	1 13324,4784 13305,4504
@@ -1233,7 +1233,7 @@ Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
-#: next_check: 2013-07-08
+#: next_check: 2013-07-15
 #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Niemannstr.	1s:q4 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
@@ -1907,6 +1907,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 10173,1049
+Drängelgitter	BNP:3::trailer=10 10223,1029
 Schranke	BNP:0::trailer=5 7222,6436
 Drängelgitter	BNP:3::trailer=10 6129,12976
 #: by: public imagery
@@ -2558,6 +2560,10 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: osm_watch: way id="22792488" version="5"
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6467,11780
+# 
+#: last_checked: 2013-07-06
+#: next_check: 2014-07-06
+Friedensweg: wegen Bauarbeiten gesperrt	2:inwork 12975,-1244 12804,-735
 # 
 # REMOVED --- #: last_checked: 2012-08-03 --- #: next_check: 2012-09-10 --- Queralleebrücke: wegen Bauarbeiten gesperrt, voraussichtlich bis September 2012	2:inwork 7621,11620 7649,11717
 # REMOVED --- #: by: tobias wirnsberger, Matthias Stief --- #: last_checked: 2011-08-24 (srt, von der Bahn aus) --- #: next_check: 2011-12-01 --- Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413

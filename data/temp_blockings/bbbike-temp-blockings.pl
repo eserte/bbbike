@@ -8281,7 +8281,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005511',
        data  => <<EOF,
-userdel	2::inwork 16373,-496 16400,-409 16431,-311 16481,-150 16536,26
+userdel	2::inwork 16373,-496 16400,-409 16431,-311 16477,-160 16536,26
 EOF
      },
      { from  => 1179698400, # 2007-05-21 00:00
@@ -19525,7 +19525,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016196',
        data  => <<EOF,
-userdel	q4::inwork 19819,1980 19840,2010 19939,2074 20100,2247
+userdel	q4::inwork 19819,1980 19839,2015 19933,2078 20100,2247
 EOF
      },
      { from  => 1312229266, # 2011-08-01 22:07
@@ -20961,7 +20961,7 @@ EOF
        text  => 'Nuthestraße zwischen Steinstraße und Bodmerstraße: Vollsperrung vom 05.11.2012 bis 30.11.2012 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 10293,-1904 10243,-1876 10099,-1482
+userdel	q4::inwork 10301,-1891 10243,-1876 10099,-1482
 EOF
      },
      { from  => undef, # 
@@ -21577,6 +21577,14 @@ EOF
        source_id => 'INKO_116809',
        data  => <<EOF,
 userdel	q4::inwork 9076,12054 9183,12076
+EOF
+     },
+     { from  => undef, # 
+       until => 1379239200, # 2013-09-15 12:00
+       text  => 'Waßmannsdorfer Straße: Bauarbeiten, Einbahnstraßenregelung, offen stadtauswärts, bis September 2013',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q2::inwork; 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
 EOF
      },
     );

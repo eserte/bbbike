@@ -3393,13 +3393,13 @@ userdel	q4::inwork 1460,-372 1453,-306
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'source_id' => 'INKO_116809',
-         'until' => 1373126400,
-         'text' => 'Französische Str. (Mitte) zwischen Mauerstr. und Glinkastr., Baustelle, Fahrbahn gesperrt, ab: 05.07.2013 07 Uhr bis 06.07.2013 18 Uhr',
-         'from' => 1372914000,
-         'id' => 2461,
-         'data' => 'userdel	q4::inwork 9076,12054 9183,12076
+         'until' => 1379239200,
+         'text' => 'Waßmannsdorfer Straße: Bauarbeiten, Einbahnstraßenregelung, offen stadtauswärts, bis September 2013',
+         'from' => undef,
+         'id' => 2462,
+         'data' => 'userdel	q2::inwork; 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
 ',
          'type' => 'handicap'
        }
