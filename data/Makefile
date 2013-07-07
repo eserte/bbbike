@@ -1379,13 +1379,13 @@ check-disabled:
 	@touch $@
 .endfor
 
-.check_gesperrt_car1:	gesperrt_car .strassen.tmp landstrassen landstrassen2
-	$(CHECK_POINTS) gesperrt_car .strassen.tmp landstrassen landstrassen2
+.check_gesperrt_car1:	gesperrt_car .strassen.tmp landstrassen landstrassen2 strassen_bab
+	$(CHECK_POINTS) gesperrt_car .strassen.tmp landstrassen landstrassen2 strassen_bab
 	@touch $@
 
-.check_gesperrt_car2:	gesperrt_car strassen landstrassen landstrassen2
+.check_gesperrt_car2:	gesperrt_car strassen landstrassen landstrassen2 strassen_bab
 	$(CHECK_NEIGHBOUR) -type standard -data gesperrt_car \
-		-against strassen -against landstrassen -against landstrassen2
+		-against strassen -against landstrassen -against landstrassen2 -against strassen_bab
 	@touch $@
 
 .check_ubahnhof:	ubahnhof ubahn
