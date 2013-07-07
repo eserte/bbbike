@@ -320,7 +320,7 @@ Verbundsteinpflasterradweg auf der südlichen Seite, streng benutzungspflichtig	R
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1644
 Betonsteinpflaster, bis 2,5m breit	RW8?;RW 1763,120930 1435,120973 1303,121143 842,121718 206,122655 -121,122847
 	RW2;RW2 18368,-1337 18561,-1183 18578,-1130 18539,-1021 18423,-843 18177,-449 18168,-434 18127,-367
-	RW2; 18368,-1337 18279,-1438 18298,-1488
+	RW2; 18368,-1337 18279,-1438 18293,-1472
 	RW2; 18419,-1418 18368,-1337
 Gehwegradweg	RW8;RW2 26439,-17829 26639,-17861 26706,-17867 26718,-17867 26832,-17882 27416,-17969 27605,-17999
 #: note: im Westen gesehen, im Osten durch osm bestätigt
@@ -554,7 +554,9 @@ etwas breitere Seitenstreifen, ca. 0.5m	RW3;RW3 35470,191333 35198,191966 35230,
 Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 15395,409 15333,378 14890,136 14239,-492 14091,-597
 	RW2;RW2 18588,-438 18555,-588 18523,-735 18496,-784 18423,-843
 Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 20711,-3869 20659,-3787 20630,-3690 20632,-3603 20687,-3424 20666,-3280 20564,-3076 20496,-3003 20401,-2960 20347,-2959 20238,-2931 20190,-2892 20120,-2774 20138,-2716 20208,-2688 20265,-2720 20285,-2775
-schlechte Gehwegplatten, teilweise sogar unbefestigt	RW2;RW2 19618,-1021 19529,-1061 18892,-1273 18777,-1298 18419,-1418
+schlechte Gehwegplatten, teilweise sogar unbefestigt	RW2;RW2 19618,-1021 19529,-1061 18892,-1273
+Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18892,-1273 18777,-1298 18666,-1325 18419,-1418
+mäßiger Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18419,-1418 18293,-1472
 	RW6;RW6 -13338,188 -13321,264 -13356,274 -13311,462
 	RW6;RW6 70199,73577 70022,73654 69900,73679
 	RW6;RW6 70022,73654 70249,73687 70661,73830
@@ -629,7 +631,23 @@ Radstreifen nur schwach zu erkennen	RW3;RW3 -14023,-564 -14120,-543
 	RW6;RW6 -14769,582 -14776,560 -14732,528
 	RW6;RW6 -10278,-1140 -10019,-1198
 Verbundsteinpflasterradweg	RW1; 26321,9868 25781,9966
+Verbundsteinpflaster, Gehweg wahrscheinlich für Radfahrer freigegeben	RW1;RW1 18050,-1636 17647,-1890 17586,-1937 17452,-2041
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW8;RW2 17452,-2041 17364,-2110
+Asphalt, gemeinsamer Rad- und Gehweg	RW8;RW2 17364,-2110 17255,-2197 17181,-2257 16435,-2870 16365,-3036
+Asphalt, gemeinsamer Rad- und Gehweg	RW8;RW2 16365,-3036 16287,-3031 15759,-3594 15661,-3730
+Asphalt, gemeinsamer Rad- und Gehweg	RW8;RW2 14993,-4196 14626,-4349 14246,-4718 13964,-4844 13677,-4801 13513,-4708
+Asphalt, gemeinsamer Rad- und Gehweg, breit	RW2;RW8 14993,-4196 15053,-4328 15297,-4462 15493,-4693
+Asphalt, gemeinsamer Rad- und Gehweg, ca. 3m breit	RW8;RW2 15342,-5771 15078,-5983 14990,-5999 14775,-5925 14274,-6153 13781,-6410 13562,-6525 13277,-6655
+	RW2;RW8 13277,-6655 12877,-6903
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 19579,-4027 19464,-4107 19268,-4192 19036,-4282 18517,-4502
+#: note: Teil des Rundwegs am BER
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18386,-4109 18423,-4094 18861,-3921 19019,-3859 19105,-3940 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18517,-4502 18492,-4417
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW8;RW2 19601,-3714 19904,-3581 20239,-3424 20285,-3346 20285,-3268 20071,-2917
 ######################### User Contributions #################################
+#: by: mopedfahrerrr:
+#: confirmed_by: anonymous:
+	RW;RW 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 #: by: Tagesspiegel
 	RW;RW 16953,35907 17114,35904 18082,36115 18440,36179 19193,36011
 # 

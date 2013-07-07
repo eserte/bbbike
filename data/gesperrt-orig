@@ -1141,7 +1141,7 @@ Bahnhofstr.	1s 26103,-11861 26300,-11864
 Bernau - Tempelfelde	1 23179,31047 23103,30923
 # REMOVED (permanent entfernt) --- #: by: grote energus: vvv
 # REMOVED (permanent entfernt) --- Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 18301,-6019 18367,-5665 18411,-5428
-# REMOVED (permanent entfernt) --- Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 15493,-4693 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18764,-5531
+# REMOVED (permanent entfernt) --- Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 15493,-4693 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18693,-5516
 # REMOVED (permanent entfernt) --- #: by: ^^^
 Dallgower Str.	1 -10799,15946 -10853,16230
 Altlandsberger Chaussee	1 40487,16703 40712,16743
@@ -1149,10 +1149,10 @@ Bernau, Bahnhofstr.	1 22850,30562 22892,30426
 Elisenau - Börnicke: Privatgelände?	2 24360,26503 24427,26841
 Weg nach Altlandsberg: Privatstraße, gesperrt	2 28159,19037 28715,18500
 Bernhard-Kellermann-Str. (Werder)	1 -21112,-3787 -21179,-3628 -21266,-3604
-Vorfahrt Flughafen Schönefeld	1 18419,-1418 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18298,-1488
+Vorfahrt Flughafen Schönefeld	1 18419,-1418 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18293,-1472
 Parkplatz Flughafen Schönefeld	1 18480,-1577 18350,-1629
 Mittelstr. B179	1 18368,-1337 18419,-1418
-Mittelstr. B179	1 18298,-1488 18279,-1438 18368,-1337
+Mittelstr. B179	1 18293,-1472 18279,-1438 18368,-1337
 Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q1 52431,94119 52422,94028 52350,93856
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
@@ -1180,6 +1180,15 @@ Zufahrt Bahnhof	1 68021,74671 68052,74741 68140,74703 68110,74631
 Brüderstr.	1 68884,73376 68810,73316
 #: note eigentlich verlaufen hier ausgeschilderte Radrouten?!
 Dorfstr. (Pieskow)	1s:q3 56031,-14776 55983,-14721
+B96a: Mittelstreifen	3nocross 18419,-1418 18666,-1325 18777,-1298 18892,-1273
+#: XXX_indoor evtl. nach strassen_bab übetragen? vvv
+B96a: Kraftfahrzeugstraße	2 16365,-3036 16209,-3558 15991,-3877 15751,-4002 14993,-4196
+B96a: Kraftfahrzeugstraße	2 13513,-4708 13237,-4511 12807,-4353 12108,-4288
+B96: Kraftfahrzeugstraße	2 13772,-10251 13878,-9818 14037,-9386 13972,-9073 13886,-8957 13720,-8736 13600,-8488 13584,-8205 13598,-7705 13550,-7265 13575,-7073 13638,-6738 13562,-6525 13382,-6353 12997,-6220
+#: XXX_indoor ^^^
+Jürgen-Schumann-Allee	1 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
+Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4062 19158,-4083
+Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -2450,7 +2459,9 @@ Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht mögl
 # 
 #: last_checked: 2012-05-06
 #: next_check: 2014-03-02
-B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18866,-1674
+#: osm_watch: way id="127091100" version="8" brb
+#: osm_watch: way id="54500456" version="10" brb
+B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 # 
 #: last_checked: 2013-05-27
 #: next_check: 2013-08-08

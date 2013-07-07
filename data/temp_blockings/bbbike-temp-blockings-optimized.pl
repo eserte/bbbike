@@ -2665,16 +2665,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1373223600,
-         'text' => 'Open Air Gallery am 7. Juli 2013 auf der Oberbaumbrücke (10:00 - 21:00)',
-         'from' => 1373097600,
-         'id' => 2206,
-         'data' => 'userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3402,6 +3393,27 @@ userdel	q4::inwork 1460,-372 1453,-306
          'data' => 'userdel	q2::inwork; 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
+         'from' => undef,
+         'id' => 2463,
+         'data' => '#: osm_watch: way id="80221295" version="17" brb
+	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
+#: osm_watch: way id="83106248" version="13" brb
+	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
+#: osm_watch: way id="60482011" version="24" brb
+#: osm_watch: way id="192153919" version="1" brb
+#: osm_watch: way id="192153925" version="4" brb
+#: osm_watch: way id="136089841" version="17" brb
+	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
+	2 19131,-2145 19198,-2118
+	2 19909,-2863 19996,-2880
+#: note: hier auch, sehr wahrscheinlich
+	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
+',
+         'type' => 'gesperrt'
        }
      
 );

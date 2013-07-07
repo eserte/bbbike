@@ -3658,7 +3658,7 @@ EOF
        text  => 'B 096 a Brücke über DB AG zw. Glasower Str. u. Waßmannsdorfer Ch. Brückenneubau Vollsperrung * 29.01.2006-29.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13237,-4511 13677,-4801
+	2 13237,-4511 13513,-4708 13677,-4801
 EOF
      },
      { from  => 1141340400, # 2006-03-03 00:00
@@ -11110,8 +11110,8 @@ EOF
        text  => 'L 075 Tollkrug - Selchow - Waßmannsdorf OD Selchow Straßenbauarbeiten Vollsperrung 25.03.2008-01.07.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 15355,-5280 15568,-5323 15771,-5575 15867,-5823 15889,-5898
-#XXX del wegen BBI: userdel	q4::inwork 15889,-5898 15987,-6248 16190,-6406
+userdel	q4::inwork 15355,-5280 15568,-5323 15771,-5575 15801,-5639 15837,-5745 15867,-5823 15887,-5875
+#XXX del wegen BBI: userdel	q4::inwork 15887,-5875 15987,-6248 16190,-6406
 EOF
      },
      { from  => 1205017200, # 2008-03-09 00:00
@@ -21585,6 +21585,26 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q2::inwork; 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: osm_watch: way id="80221295" version="17" brb
+	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
+#: osm_watch: way id="83106248" version="13" brb
+	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
+#: osm_watch: way id="60482011" version="24" brb
+#: osm_watch: way id="192153919" version="1" brb
+#: osm_watch: way id="192153925" version="4" brb
+#: osm_watch: way id="136089841" version="17" brb
+	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
+	2 19131,-2145 19198,-2118
+	2 19909,-2863 19996,-2880
+#: note: hier auch, sehr wahrscheinlich
+	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
 EOF
      },
     );
