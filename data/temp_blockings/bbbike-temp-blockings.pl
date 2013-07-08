@@ -15506,8 +15506,8 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
-#: XXX Überprüfen, ob die Wochentage (Mo+Do und _nicht_ Sa) stimmen
-	q4::temp:clock 9570,10566 9587,10421
+# REMOVED (Montag stimmt, geprüft!) --- #: XXX Überprüfen, ob die Wochentage (Mo+Do und _nicht_ Sa) stimmen
+	q3::temp:clock 9570,10566 9587,10421
 EOF
      },
      { from  => undef, #
@@ -21395,6 +21395,8 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130611.0925.385925.html',
        data  => <<EOF,
+#: XXX eventuell ist es erst jetzt gesperrt worden? --- Ordensmeisterstr. (Tempelhof): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 08/13) Richtung Komturstr. zwischen Colditzstr. und Komturstr., 08.07.2013 07:00 Uhr bis 16.08.2013 16:00 Uhr	INKO_119177
+#: source_id: INKO_119177
 userdel	q4::inwork; 9796,5790 10027,5868 10254,5921
 EOF
      },

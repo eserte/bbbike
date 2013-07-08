@@ -119,7 +119,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-07-01
+#: last_checked: 2013-07-08
 #: next_check: 2014-01-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -133,7 +133,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-07-04
+#: last_checked: 2013-07-08
 #: check_frequency: 60d
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
 # 
@@ -357,6 +357,10 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: by: http://www.sanierung-osw.de/index.php?id=419 (Blockdurchquerung)
+#: last_checked: 2013-07-06
+Siemensstr./Wattstr. - Wilhelminenhofstr.: entsteht hier ein Park? werden die Wege auch für Radfahrer befahrbar sein? Qualität? Nachts beleuchtet?	?::inwork 17766,6616 17783,6532 17992,6436
 # 
 #: last_checked: 2013-07-06
 #: next_check: 2014-04-15
@@ -1448,6 +1452,8 @@ Landschaftspark Herzberge: ebenfalls zum Landschaftspark gehörig, ggfs. in flaec
 #: next_check: 2014-10-01
 #: XXX_indoor
 "Bürgerwiese" Slabystr./Wilhelminenhofstr.: in flaechen-orig eintragen, falls fertig	?::projected 18978,5944 18954,5973 18968,6009 19076,6117 19116,6080 18978,5944
+# 
+Generationenpark: evtl. in flaechen-orig eintragen, Koordinaten!	? 17722,6796 17790,6815 17798,6790 17728,6772 17722,6796
 # 
 #: by: MichaelM
 #: XXX_prog:

@@ -1021,10 +1021,9 @@ Landsberger Allee -> Virchowstr.: Straßenbahntrasse	3::igndisp 12878,13229 12979
 Straßenbahntrasse	3nocross::ignrte 15639,10469 15404,10633 15379,10651
 Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straßenbahntrasse	3::igndisp 15358,10562 15404,10633 15379,10651
 Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 15639,10469 15404,10633 15358,10562
-Straßenbahntrasse	3nocross::ignrte 16004,10204 16114,10123 16138,10105
+Straßenbahntrasse	3nocross::ignrte 16004,10204 16114,10123 16138,10105 16187,10033 16261,9925 16302,9865
 Hauptstr. -> Friedrich-Jacobs-Promenade: Straßenbahntrasse	3::igndisp 16138,10105 16114,10123 16066,10054
 Friedrich-Jacobs-Promenade -> Hauptstr.: Straßenbahntrasse	3::igndisp 16066,10054 16114,10123 16004,10204
-Straßenbahntrasse	3nocross::ignrte 16138,10105 16187,10033 16261,9925 16302,9865
 Hauptstr. -> Saganer Str.: Straßenbahntrasse	3::igndisp 16138,10105 16187,10033 16206,10047
 Hauptstr. -> Georg-Löwenstein-Str.: Straßenbahntrasse	3::igndisp 16261,9925 16187,10033 16155,9992
 Saganer Str. -> Hauptstr.: Straßenbahntrasse	3::igndisp 16206,10047 16187,10033 16261,9925
@@ -1357,11 +1356,6 @@ Rosenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10476,12829 1052
 Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3::igndisp 10431,12709 10525,12789 10476,12829
 Rosa-Luxemburg-Str. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10685,12966 10695,12933 10733,12967
 Karl-Liebknecht-Str. -> Rosa-Luxemburg-Str.: Straßenbahntrasse	3::igndisp 10525,12789 10695,12933 10685,12966
-Mittelstreifen	3nocross::ignrte 6502,9782 6512,9866 6514,9947
-Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6463,9862 6512,9866 6514,9947
-Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6611,9879 6512,9866 6502,9782
-Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6514,9947 6512,9866 6611,9879
-Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3::igndisp 6502,9782 6512,9866 6463,9862
 Mittelstreifen	3nocross::ignrte 6502,9782 6447,9661 6445,9538
 Speyerer Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6348,9535 6447,9661 6553,9600
 Speyerer Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6348,9535 6447,9661 6502,9782
@@ -3105,3 +3099,4 @@ zur Münchener Str. auf dem linken Gehweg	1::igndisp 6209,9771 6241,9772
 Karl-Lieknecht-Str., linker Gehweg	1::igndisp 11070,13357 11082,13371
 Potsdamer Str., linker Gehweg	1::igndisp 7526,9791 7501,9573
 Landsberger Allee, Radweg auf der linken Seite	1::igndisp 15923,14334 15848,14325 15850,14308
+Hauptstr., linker Gehweg	1::igndisp 16206,10047 16195,10044 16150,10123 16018,10212 16004,10204

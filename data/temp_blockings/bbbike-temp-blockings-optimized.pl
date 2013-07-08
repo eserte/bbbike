@@ -1980,8 +1980,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 1816,
          'data' => '#: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
-#: XXX Überprüfen, ob die Wochentage (Mo+Do und _nicht_ Sa) stimmen
-	q4::temp:clock 9570,10566 9587,10421
+# REMOVED (Montag stimmt, geprüft!) --- #: XXX Überprüfen, ob die Wochentage (Mo+Do und _nicht_ Sa) stimmen
+	q3::temp:clock 9570,10566 9587,10421
 ',
          'type' => 'gesperrt'
        },
@@ -3272,17 +3272,7 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1373234399,
-         'text' => 'Flughafen Tempelhof: Sperrung der Zugänge zum Peter-Strasser-Weg wegen einer Veranstaltung (Bread and Butter)',
-         'from' => 1372716000,
-         'id' => 2447,
-         'data' => 'userdel	2::temp 9522,7624 9362,7616 9281,7651
-userdel	2::temp 9562,7796 9372,7798 9281,7795
-userdel	2::temp 9281,7795 9281,7651 9300,7312
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3363,16 +3353,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_119430',
-         'until' => 1373270400,
-         'text' => 'Eichbuschallee (Treptow): Baustelle zwischen Köpenicker Landstr. und Bergaustr., Fahrbahn gesperrt, bis 08.07.2013 10:00 Uhr',
-         'from' => 1372568400,
-         'id' => 2459,
-         'data' => 'userdel	q4::inwork 15920,7697 15765,7567 15696,7507
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_119024',
          'until' => 1376604000,

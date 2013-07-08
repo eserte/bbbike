@@ -1571,3 +1571,10 @@ Temporäre Umleitungsstrecke: eigentlich nur für Versorgung und Taxis offen	2 187
 (BAB113 - Flughafen Berlin-Brandenburg)	1 18048,-4186 18220,-4115 18329,-4154 18400,-4258 18497,-4285
 (Flughafen Berlin-Brandenburg - BAB113)	1 18497,-4285 18444,-4329 18429,-4421 18393,-4518 18222,-4592
 Elly-Beinhorn-Ring	1 18386,-4109 18423,-4094 18861,-3921 19019,-3859 19105,-3940 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
+Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3nocross::ignrte 6502,9782 6512,9866 6514,9947
+Luitpoldstr. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6463,9862 6512,9866 6611,9879
+Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6463,9862 6512,9866 6514,9947
+Luitpoldstr. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6611,9879 6512,9866 6463,9862
+Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6611,9879 6512,9866 6502,9782
+Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6514,9947 6512,9866 6611,9879
+Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6502,9782 6512,9866 6463,9862
