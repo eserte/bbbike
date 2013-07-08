@@ -1147,9 +1147,9 @@ EOF
         map.setOptions({mapTypeControlOptions:{mapTypeIds:[google.maps.MapTypeId.ROADMAP,
 							   google.maps.MapTypeId.SATELLITE,
 							   google.maps.MapTypeId.HYBRID,
-							   "BBBike",
-							   "Cycle",
 							   "Mapnik",
+							   "Cycle",
+							   "BBBike",
 							   // "T\@H"
 							  ]}});
     } else {
