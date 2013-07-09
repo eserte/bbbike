@@ -13,10 +13,12 @@ use BBBikeTest qw($cgidir);
 my $doit;
 my $debug;
 my $baseurl = 'bbbikegooglemap.cgi';
+my $with_jscover;
 GetOptions(
            "doit" => \$doit,
            "debug" => \$debug,
            "baseurl=s" => \$baseurl,
+	   "with-jscover" => \$with_jscover,
           )
     or die "usage: $0 [-doit] [-debug] [-baseurl ...]";
 
@@ -41,7 +43,15 @@ my $sel = Test::WWW::Selenium->new(
                                    auto_stop => !$debug,
                                   );
 
-$sel->open_ok("$cgidir/$baseurl", undef, "fetched bbbike+googlemap");
+if ($with_jscover) {
+    $sel->open_ok("http://localhost:8080/jscoverage.html");
+    $sel->type_ok('location', "http://localhost:8080/index.html");
+    $sel->click_ok('openInWindowButton');
+    $sel->wait_for_pop_up_ok('jscoverage_window', 10*1000);
+    $sel->select_window_ok('jscoverage_window');
+} else {
+    $sel->open_ok("$cgidir/$baseurl", undef, "fetched bbbike+googlemap");
+}
 
 {
     ## Geocoding checks
