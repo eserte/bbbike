@@ -113,13 +113,13 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2013-07-05
+#: last_checked: 2013-07-09
 #: check_frequency: 60d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-07-08
+#: last_checked: 2013-07-09
 #: next_check: 2014-01-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -133,7 +133,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-07-08
+#: last_checked: 2013-07-09
 #: check_frequency: 60d
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
 # 
@@ -271,7 +271,7 @@ Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,1516
 #: next_check: 2013-08-01
 Perleberger Str., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
-#: last_checked: 2013-05-14
+#: last_checked: 2013-07-09
 #: check_frequency: 90d
 Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
 # 
@@ -357,6 +357,37 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: by: http://www.potsdam.de/cms/dokumente/13300755_1771576/fcb5126b/Amtsblatt_09_13.pdf
+#: XXX Sackgasse, Privatstraße
+#: XXX fehlt in Potsdam.coords.data
+Am Palais Lichtenau: wo genau liegt die Straße? Qualität?	? -12436,-364 -12436,-447
+# 
+#: note: Potsdam, nördliche Gartenstadt vvv
+#: by: http://www.potsdam.de/cms/dokumente/10036505_480745/c5f90e8e/B-Plan_66B_Planzeichnung-rechtskraeftig.pdf#Planzeichnung
+#: by: http://www.potsdam.de/cms/dokumente/13300755_1771576/fcb5126b/Amtsblatt_09_13.pdf
+# die früher geplante Straßennamen wurden im Amtsblatt 9/2013 wieder zurückgezogen ("ersatzlos gestrichen")
+#: XXX neu geplante Namen, fehlen in Potsdam.coords.data:
+#   Opolestr. (Planstr. 1+2)
+#   Luzernstr. (Planstr. 3)
+#: XXX auch: Verkleinerung des Buga-Geländes
+#: XXX auch prüfen: Verkehrsberuhigung
+früher geplant Hans-Kölle-Weg: Straßenname? Qualität?	? -13632,1388 -13766,1469
+früher geplant Rudolf-Kierski-Weg: Straßenname? Qualität?	? -13612,1425 -13745,1504
+früher geplant Georg-Potente-Weg: Straßenname? Qualität?	? -13586,1540 -13701,1579
+früher geplant Ferdinand-Jühlke-Weg: Straßenname? Qualität?	? -13590,1649 -13671,1665
+Fritz-Encke-Str.: wird die wssergebundene Decke durch Asphalt ersetzt werden?	? -13766,1402 -13655,1339
+Erich-Mendelsohn-Allee: Verlängerung?	? -13695,1276 -13655,1339 -13632,1388 -13612,1425 -13593,1469 -13586,1540 -13586,1594 -13590,1649 -13600,1777 -13645,1807 -13682,1830 -13739,1855 -13784,1874 -13867,1901
+Gustav-Meyer-Str.: Verlängerung?	? -13593,1469 -13731,1525 -13779,1544
+Nietnerstr.: Verlängerung?	? -13586,1594 -13682,1614 -13748,1636
+Nietnerstr.: wird hier befestigt werden, evtl. Verbundsteinpflaster gelegt werden?	? -13843,1668 -13855,1673 -13962,1711
+Hermann-Mattern-Promenade: Verlängerung?	? -13795,1420 -13766,1469 -13745,1504 -13731,1525 -13701,1579 -13682,1614 -13671,1665 -13658,1730 -13645,1807
+Orville-Wright-Str.: Verlängerung?	? -13843,1668 -13811,1785 -13784,1874
+Theodor-Echtermeyer-Str.: Verlängerung?	? -13760,1765 -13739,1855
+Fintelmannstr.: Verlängerung?	? -13714,1747 -13682,1830
+Friedrich-Kunert-Weg: Verlängerung?	? -13781,1772 -13811,1785
+Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13658,1730
+#: note ^^^
 # 
 #: by: http://www.sanierung-osw.de/index.php?id=419 (Blockdurchquerung)
 #: last_checked: 2013-07-06
@@ -877,7 +908,7 @@ Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1
 #: next_check: 2013-09-30
 #: XXX eventuell wird hier nach den Bauarbeiten die Einbahnstraße geöffnet?
 #: osm_watch: way id="8094229" version="10"
-Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5268,11274 5247,10992 5242,10918 5229,10716 5207,10399
+Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5258,11285 5247,10992 5242,10918 5229,10716 5207,10399
 # 
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
 #: last_checked: 2013-06-23

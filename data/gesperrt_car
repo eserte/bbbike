@@ -52,7 +52,7 @@ Boxhagener von W - Holtei	3 14577,11582 14639,11512 14710,11626
 Holtei von N - Boxhagener	3 14710,11626 14639,11512 14752,11369 14771,11345
 Boxhagener von E - Holtei	3 14771,11345 14752,11369 14639,11512 14575,11407
 Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5900,11913
-Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5360,11510 5356,11500 5587,11397
+Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11512 5352,11502 5587,11397
 Fasanenstr.	1 5198,10234 5207,10399
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
 Naumannstr. N - H	3 7707,8915 7709,8777 7713,8600
@@ -838,12 +838,12 @@ Lötzener Allee	1 564,10584 452,10669 475,10882 495,11090
 keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 19904,3464
 Weerthstr. -> Adlergestell: keine Abbiegemöglichkeit	3::igndisp 20038,3357 20010,3340 20064,3278
 Adlergestell -> Weerthstr.: keine Abbiegemöglichkeit	3::igndisp 19904,3464 20010,3340 20038,3357
-Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5268,11274
+Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5258,11285
 Jebensstr. -> Yva-Bogen: Mittelstreifen	3::igndisp 5587,11397 5459,11135 5426,11039
 Jebensstr. -> Hardenbergstr.: Mittelstreifen	3::igndisp 5587,11397 5459,11135 5542,11075
-Hardenbergstr. -> Jebensstr.: Mittelstreifen	3::igndisp 5268,11274 5459,11135 5587,11397
+Hardenbergstr. -> Jebensstr.: Mittelstreifen	3::igndisp 5258,11285 5459,11135 5587,11397
 Yva-Bogen -> Jebensstr.: Mittelstreifen	3::igndisp 5426,11039 5459,11135 5587,11397
-Yva-Bogen -> Hardenbergstr.: Mittelstreifen	3::igndisp 5426,11039 5459,11135 5268,11274
+Yva-Bogen -> Hardenbergstr.: Mittelstreifen	3::igndisp 5426,11039 5459,11135 5258,11285
 Hardenbergstr. -> Yva-Bogen: Mittelstreifen	3::igndisp 5542,11075 5459,11135 5426,11039
 Mittelstreifen	3nocross::ignrte 6757,13112 6860,13093 6966,13075
 Alt-Moabit -> Calvinstr.: Mittelstreifen	3::igndisp 6966,13075 6860,13093 6802,12797

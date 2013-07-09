@@ -3152,8 +3152,8 @@ userdel	q4::inwork 10473,18113 10545,18143 10582,18159
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2013-06-08
-userdel	q2::inwork 5268,11274 5247,10992
+#: last_checked: 2013-07-09
+userdel	q2::inwork 5258,11285 5247,10992
 ',
          'type' => 'handicap'
        },
