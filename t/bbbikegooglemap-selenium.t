@@ -163,7 +163,12 @@ $sel->click_ok("id=mapmode_search");
     $sel->click_ok('xpath=//*[.="Route wiederherstellen"]');
     $sel->click_ok('xpath=//*[.="Letzten Punkt löschen"]');
     $sel->click_ok('xpath=//*[.="Kommentar zu Route und Waypoints senden"]');
-    $sel->click_ok('xpath=//*[.="Abbrechen"]');
+    $sel->type_ok('name=comment', 'TEST IGNORE (created by bbbikegooglemap-selenium.t)');
+    $sel->type_ok('name=author', 'TEST IGNORE');
+    $sel->click_ok('xpath=//*[.="Senden"]');
+    my $thanks_rx = qr{Danke, der folgende Kommentar};
+    poll(sub { $sel->get_text('id=answer') =~ $thanks_rx }, 'Sending comment mail');
+    $sel->text_like('id=answer', $thanks_rx);
 }
 
 sub poll {
