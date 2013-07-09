@@ -183,7 +183,7 @@ sub check_polyline {
 	fail("Cannot match Polyline");
     } else {
 	my $points = 0;
-	my $gpoint_qr = $gmap_api == 1 ? qr{new GPoint} : qr{new GLatLng};
+	my $gpoint_qr = qr{new GLatLng};
 	while($content =~ m{$gpoint_qr}g) {
 	    $points++;
 	}
@@ -200,7 +200,7 @@ sub check_points {
 	fail("Cannot match beginning of data");
     } else {
 	my $points = 0;
-	my $gpoint_qr = $gmap_api == 1 ? qr{new GPoint} : qr{new GLatLng};
+	my $gpoint_qr = qr{new GLatLng};
 	while($content =~ m{var\s+point\s+=\s+$gpoint_qr}g) {
 	    $points++;
 	}
