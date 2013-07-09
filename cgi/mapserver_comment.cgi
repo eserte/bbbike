@@ -217,6 +217,16 @@ eval {
 
 	my $is_spam = length param('url');
 	$subject = "SPAM: $subject" if $is_spam;
+    } elsif (
+	     request_method() eq 'OPTIONS' &&
+	     (http('origin')||'') =~ m{^https?://localhost(:\d+)?}
+	    ) {
+	# CORS handling, part one - a Preflighted request
+	print header(
+		     -Access_Control_Allow_Origin => http('origin'),
+		     -Access_Control_Allow_Methods => 'POST, GET, OPTIONS',
+		    );
+	exit;
     } else {
 	my $comment_param = param("comment");
 	$comment_param = '' if !defined $comment_param;
@@ -354,7 +364,12 @@ eval {
 	    a({-href => $url}, "Weitere Straße eintragen"),
 	    end_html;
     } else {
-	print header(-cookie => $cookie),
+	my $origin = http('origin');
+	print header(
+		     -cookie => $cookie,
+		     # CORS handling, part two
+		     ($origin && $origin =~ m{^https?://localhost(:\d+)?} ? (-Access_Control_Allow_Origin => $origin) : ()),
+		    ),
 	    start_html(-title=>"Kommentar abgesandt",
 		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
 	    "Danke, der folgende Kommentar wurde an " . BBBikeCGI::Util::my_escapeHTML($to) . " gesendet:",br(),br(),
