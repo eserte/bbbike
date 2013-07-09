@@ -4502,10 +4502,13 @@ sub display_route {
 	} else { # xml
 	    require XML::Simple;
 	    my $filename = filename_from_route($startname, $zielname) . ".xml";
+	    my $origin = $q->http('origin');
 	    http_header
 		(-type => 'application/xml',
 		 @weak_cache,
 		 -Content_Disposition => "attachment; filename=$filename",
+		 # CORS handling - additionally allow requests from localhost, e.g. for JSCover tests
+		 ($origin && $origin =~ m{^https?://localhost(:\d+)?} ? (-Access_Control_Allow_Origin => $origin) : ()),
 		);
 	    my $new_res = {};
 	    while(my($k,$v) = each %$res) {
