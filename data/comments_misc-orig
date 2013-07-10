@@ -1147,6 +1147,8 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 8853,820
 	culdesac_pseudo 10690,-1515
 	culdesac_pseudo 18428,6123
+	culdesac_pseudo 3918,18796
+	culdesac_pseudo 3753,18889
 #: section ^^^
 ######################################################################
 # busroute
@@ -1407,7 +1409,7 @@ als Privatstraﬂe ausgeschildert	CP2; 49381,107993 49487,110056
 Campingplatz an der Straﬂe	CS 52291,179768 52335,179650 52535,179597 53229,179049 53372,178875 54418,178046 54673,177683 54840,177668 55041,177444
 rechts vom Strand einbiegen	CP2; 28853,-19212 28805,-19189
 #: by: Tanja Vetter:
-Gotenburger Str.: zwei Schulen, also Vorsicht	CS 8844,16863 9000,16803
+Gotenburger Str.: zwei Schulen, also Vorsicht	CS 8847,16870 9000,16803
 Als Wiesenweg ausgeschildert	CS; 52215,83681 52346,83150
 Am Gutshof (Gramzow): Privatstraﬂe, Durchfahrt verboten	CS 50364,89561 50337,90193 50346,90286 50278,90449
 #: by: Jessica (gluecksmarie):
@@ -1809,3 +1811,7 @@ ausgeschildert als Weydemeyerstr. 3-18	CP2; 11805,12760 11818,12785
 #: next_check: 2013-08-01 (Benennung wird wirksam)
 Fromet-und-Moses-Mendelssohn-Platz: nicht ausgeschildert	CS 9797,10771 9733,10827 9682,10836 9666,10848
 Hauptstr., linker Gehweg: an der Ampel Hauptstr./Hildegard-Marcusson-Str. auf die linke Seite wechseln	CP2; 16004,10204 16018,10212
+(Otisstr. - Wackerweg): Privatgel‰nde	CP2; 3680,18913 3753,18889
+#: section: ignorieren
+Torstr./Gartenstr.: ‹berquerungshilfe existiert	CS 9668,13629
+ausgeschildert Kolonie Gr¸nlandtal	CP2; 3604,20603 3852,20415

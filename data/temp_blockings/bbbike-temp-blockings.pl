@@ -4718,7 +4718,7 @@ EOF
        text  => 'Reinhardtstraße - Otto-von-Bismarck-Allee: zwischen Kreuzung Kapelleufer und Kreuzung Willy-Brandt-Straße in beiden Richtungen Veranstaltung, gesperrt, Dauer: 07.05.2006 09:00 Uhr bis 14.07.2006 23:45 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 8120,12756 8206,12757 8301,12758 8309,12758 8417,12846 8503,12895
+userdel	2::temp 8120,12756 8206,12757 8301,12758 8309,12758 8424,12853 8503,12895
 EOF
      },
      { from  => 1149703449, # 2006-06-07 20:04
@@ -12143,7 +12143,7 @@ EOF
        text  => 'Straße des 17. Juni, John-Foster-Dulles-Allee und andere Straßen im Regierungsviertel am Sonntag von 12 bis 22 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 8417,12846 8503,12895
+userdel	2::temp 8424,12853 8503,12895
 userdel	2::temp 7936,12906 8017,12826
 userdel	2::temp 8737,12757 8596,12760 8545,12760
 userdel	2::temp 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
@@ -15898,7 +15898,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014098',
        data  => <<EOF,
-userdel	q4::inwork; 4014,19433 4170,19079 4195,19043
+userdel	q4::inwork; 4006,19443 4170,19079 4195,19043
 EOF
      },
      { from  => 1252010752, # 2009-09-03 22:45
@@ -16321,7 +16321,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_014247',
        data  => <<EOF,
-userdel	2::temp 8417,12846 8309,12758 8306,12609
+userdel	2::temp 8424,12853 8309,12758 8306,12609
 EOF
      },
      { from  => $isodate2epoch->("2013-09-20 11:00:00"), # 1 Tag Vorlauf
@@ -21607,6 +21607,16 @@ EOF
 	2 19909,-2863 19996,-2880
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Karl-Bonhoeffer-Nervenklinik: für Unbefugte ist das Befahren nicht erlaubt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: Der Hinweis existiert nur am Nordeingang, aber nicht am Südeingang
+	2 4997,19849 5003,19833 5060,19699 5073,19656
+	2 5032,19645 5073,19656 5110,19665
 EOF
      },
     );

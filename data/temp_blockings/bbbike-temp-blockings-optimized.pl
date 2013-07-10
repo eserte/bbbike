@@ -3395,6 +3395,17 @@ userdel	q4::inwork 1460,-372 1453,-306
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Karl-Bonhoeffer-Nervenklinik: für Unbefugte ist das Befahren nicht erlaubt',
+         'from' => undef,
+         'id' => 2464,
+         'data' => '#: note: Der Hinweis existiert nur am Nordeingang, aber nicht am Südeingang
+	2 4997,19849 5003,19833 5060,19699 5073,19656
+	2 5032,19645 5073,19656 5110,19665
+',
+         'type' => 'gesperrt'
        }
      
 );

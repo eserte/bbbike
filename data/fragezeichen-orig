@@ -160,8 +160,8 @@ Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 69
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: osm_watch: way id="5117259" version="8"
 #: osm_watch: way id="4581787" version="5"
-#: last_checked: 2013-05-08
-#: next_check: 2013-08-17
+#: last_checked: 2013-07-10
+#: check_frequency: 90d
 Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258,16111 6349,16213 6450,16325 6444,16331 6629,16538
 # 
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
@@ -358,6 +358,9 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX_indoor aufnehmen?
+Bellermannstr.: Bauarbeiten der Wasserbetriebe, ca. bis Mitte 2014, 70 Meter langer Abschnitt	?::inwork 8912,16582 9107,16389
+# 
 #: by: http://www.potsdam.de/cms/dokumente/13300755_1771576/fcb5126b/Amtsblatt_09_13.pdf
 #: XXX Sackgasse, Privatstraße
 #: XXX fehlt in Potsdam.coords.data
@@ -415,6 +418,8 @@ Baustraße zur Siegfriedstraße: wird diese Verbindung beibehalten?	? 17219,14133 
 #: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich (bis Anfang 08/13) Kreuzung Straße der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976
 #: XXX_indoor vmz-Eintrag: Straße der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich, Überfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975
 #: XXX_prog ich brauche eine Kombination aus den Kategorien "3" und "qX". Oder wahlweise "3" mit einer Zeitangabe (wie BNP oder 0).
+#: last_checked: 2013-07-10
+#: next_check: 2013-08-02
 Straße der Pariser Kommune: Überqueren der Karl-Marx-Allee nur mit Zeitverlust möglich	?::inwork  12891,12549 12869,12425 12850,12286
 # 
 #: XXX außerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist
@@ -480,17 +485,18 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4&date=20130125 vvv
 #: priority: #C vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 90d vvv
 #: next_check: 2013-04-01 vvv
 Frohnauer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 2437,24435 2437,24393
 Alt-Wittenau: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5235,20439
-Eichborndamm: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4580,19756
 Waidmannsluster Damm/Am Leitbruch: wird hier ein Zebrastreifen angelegt?	?::projected 4052,22089 4094,22065
 #: by: http://heiligensee.cdu-reinickendorf.de/Zeitung/Wir-im-Norden_12_0030_web.pdf
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=2909
 Eichelhäherstr.: hier wird ein Zebrastreifen entstehen (Bauarbeiten beginnen nach der Frostperiode Anfang 2013)	?::projected -1802,19653 -1778,19649
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3655,23244
 #: next_check ^^^
+#: last_checked: 2013-07-10
+Eichborndamm: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4580,19756
 #: last_checked: 2013-06-07
 Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8091,17194
 #: check_frequency: ^^^
@@ -594,9 +600,6 @@ Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,1191
 #: last_checked: 2013-05-08 (keinerlei Anzeichen für Bauarbeiten zu erkennen)
 #: next_check: 2014-04-08
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
-# 
-#: osm_watch: way id="14390759" version="12"
-Wackerweg - Otisstr.: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 3803,18855 3680,18913
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: last_checked: 2013-06-02
@@ -1009,8 +1012,8 @@ Greifswalder Str. - Volkspark: Verbindung genauer anschauen	? 12584,14928 12572,
 #: XXX_indoor: Verbindung aufnehmen?
 #: XXX_prog: wäre gut, wenn die Verlustzeit der versetzt arbeitenden Fußgängerampel hier einfließen könnte
 #: XXX von der Gubener Str. aus muss man ein kleines bisschen nach links fahren
-#: XXX BS am Weidenweg, wobei nach Osten hier irgendwo eine Absenkung ist
-Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13163,12382 13176,12500
+#: XXX halbhoher BS am Weidenweg, wobei nach Osten hier irgendwo eine Absenkung ist
+Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13173,12331 13163,12382 13176,12500
 # REMOVED (nein, sieht nur nach Leitungsarbeiten aus) --- Kirchhofstr.: Sackgasse --- eventuell Bauarbeiten, vielleicht wird die Qualität hier besser?	? 13027,7368 13117,7471
 #: priority: #C
 Florastr.: Vorfahrtsregelung?	? 10548,17817 10705,17931 10830,17985
@@ -3388,13 +3391,7 @@ Am Rodelberg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich 
 #: by: ^^^
 # 
 # REMOVED (es gibt nur einen Gehweg, ohne Radweg, aber siehe auch Kommentar in radwege-orig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120302.1240.366909.html --- #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html?date=20120505 --- #: next_check: 2012-07-13 --- #: XXX es gab hier Geh- und Radwegarbeiten --- Königsheideweg: Gibt es hier Radwege oder Radspuren? Einseitig oder auf beiden Seiten? Zwischen welchen Kreuzungen?	?::inwork 16784,4913 16554,5022 16362,5112 16279,5170
-# 
-#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120727.1045.372992.html
-#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130610.1230.385879.html
-#: XXX Bauarbeiten, der Weg bekommt eine neue Asphaltdecke -> Asphalt, Q0
-#: next_check: 2013-07-10 (evtl. automatisch ändern?)
-#: priority: #A
-Kolonie Frühauf: Radfahrverbindung wird saniert	? 3645,19921 4076,20268 4088,20301
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120727.1045.372992.html --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130610.1230.385879.html --- #: XXX Bauarbeiten, der Weg bekommt eine neue Asphaltdecke -> Asphalt, Q0 --- #: next_check: 2013-07-10 (evtl. automatisch ändern?) --- #: priority: #A --- Kolonie Frühauf: Radfahrverbindung wird saniert	? 3632,19934 4076,20268 4088,20301
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011

@@ -105,9 +105,9 @@ Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,181
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3171,25495
-Antonienstr.	1 3930,17920 3970,18126 4009,18322 4085,18694 4098,18762 4162,18891 4240,19019
+Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4098,18762 4162,18891 4240,19019
 Eichborndamm	1s:q3 4240,19019 4232,18981
-Eichborndamm	1 4232,18981 4210,18878 4171,18677 4102,18298 4059,18107 4015,17912
+Eichborndamm	1 4232,18981 4210,18878 4163,18676 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17816,5733 17812,5726 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15674,10851 15870,10938
@@ -156,7 +156,7 @@ An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11155,11750
 #: note: hier stand mal ein Polizeiauto, als ich reinfahren wollte...
-Weydemeyerstr.	1s:q4 11896,13075 11904,13058 12062,12986 12054,12903
+Weydemeyerstr.	1s:q4 11896,13075 11904,13058 12053,12984 12054,12903
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12529
 Georgenstr.	1 9434,12669 9568,12688 9659,12704 9754,12775
@@ -248,7 +248,7 @@ Schönblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724
 Knorrpromenade	1 14424,11639 14369,11489
 Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8627,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
-Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6801,18761 6879,18737 7003,18715
+Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18737 7003,18715
 Lauterstr.	1s:q3 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5314,7217
 Stolbergstr.	1 8850,6421 8834,6639
@@ -349,8 +349,7 @@ Graacher Str.	1 14672,17085 14533,17084
 #: by: Katja [AM]
 Wehlener Str.	1 14673,17003 14535,17003
 Riastr.	1 18247,9158 18221,8978
-#: by: Corinna Orth:
-Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 4997,19849 5021,19840 5077,19654 5111,19656 5183,19454 5239,19274 5429,19165
+# REMOVED (-> temp-blockings) --- #: by: Corinna Orth: --- Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 4997,19849 5003,19833 5060,19699 5073,19656 5110,19665 5183,19454 5208,19378 5187,19368 5219,19285 5388,19186 5429,19165
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7605,7109 7621,7105 7655,7096 7666,7093
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7666,7093 7344,6104 7296,5872
 Prießnitzstr.	1 11549,19258 11407,19186 11351,19169
@@ -1058,6 +1057,8 @@ Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5
 Kornmandelweg	1 21311,13522 21345,13550
 Immortellenweg: Schulhof	2 24282,10015 24314,10096
 Walterstr.	1s:q3 13126,6687 13099,6712
+Karl-Bonhoeffer-Nervenklinik	1 5187,19368 5219,19285
+Karl-Bonhoeffer-Nervenklinik	1 5219,19285 5172,19298 5150,19350
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1783,7 +1784,7 @@ tragen (ca. 35 Stufen)	0:30 7655,7096
 tragen (30 Stufen)	0:30 15571,4168
 tragen (26 Stufen, steile Treppe)	0:30 15156,6034
 tragen (Treppe)	0:30 4808,3404
-tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8822,16873
+tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8823,16877
 tragen (Treppe)	0:30 14390,5443
 tragen (Treppe)	0:30 14325,5409
 tragen (28 Stufen)	0:30 18180,12262
@@ -1914,6 +1915,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 5003,19833
+Schranke	BNP:0::trailer=3 5003,19833
 Drängelgitter	BNP:3::trailer=10 10173,1049
 Drängelgitter	BNP:3::trailer=10 10223,1029
 Schranke	BNP:0::trailer=5 7222,6436
@@ -2409,7 +2412,7 @@ Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 1
 # 
 # REMOVED (fertig asphaltiert) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html --- #: next_check: 2013-03-31 --- #: XXX nach den Bauarbeiten bessere Qualität? Zurzeit nur Q1-, siehe qualitaet_s-orig --- (Bellevuepark): Asphaltbauarbeiten	2:inwork 22787,5582 22855,5554 22835,5452 22851,5321
 # 
-#: last_checked: 2013-02-02
+#: last_checked: 2013-07-10
 #: next_check: 2014-01-01
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
@@ -2420,7 +2423,7 @@ Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gespe
 # 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2013-06-27
+#: last_checked: 2013-07-10
 #: check_frequency: 90d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 # 
@@ -2527,7 +2530,7 @@ Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480
 # REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
-#: last_checked: 2013-06-07 vvv
+#: last_checked: 2013-07-10 vvv
 #: next_check: 2014-06-01 vvv
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
@@ -2552,8 +2555,8 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # REMOVED --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
-#: last_checked: 2013-06-08
-#: next_check: 2013-08-08
+#: last_checked: 2013-07-10
+#: check_frequency: 60d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
 # REMOVED --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Eröffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung für handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728

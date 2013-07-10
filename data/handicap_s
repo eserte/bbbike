@@ -3,8 +3,10 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
+Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434
+Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 14181,11434 14211,11552
 Simplonstr.: Bauarbeiten, umst‰ndliches ‹berqueren der Modersohnstr.	q3::inwork 14254,11377 14181,11434 14099,11505
+Mainzer Str.: Bauarbeiten	q3::inwork 14311,11884 14357,12011
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 13473,11456 13366,11651
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 13366,11651 13295,11792
@@ -321,7 +323,7 @@ Schloﬂplatz Kˆpenick: Fuﬂg‰nger, Straﬂenbahn, Lieferverkehr	q2 22111,4562 22093,
 Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11111,13518
 Gustav-Heinemann-Br¸cke: Fuﬂg‰nger, enge Br¸cke	q3 8116,12938 8110,13042
 Beruner Str.: Rampen, Fuﬂg‰nger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
-(Parkweg Spreebogenpark): besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 8017,12826 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8302,12933 8341,12911 8417,12846
+(Parkweg Spreebogenpark): besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 8017,12826 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 7904,12803 7945,12878 7966,12913 8044,12989 8159,13032
 Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8277,13032 8315,13005 8401,12973 8464,12919 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8635,12629 8709,12605 8756,12608
@@ -366,8 +368,8 @@ Pankeweg: Fuﬂg‰nger	q1 8232,15220 8268,15312
 Pankeweg: Fuﬂg‰nger	q1 8312,15470 8156,15614 8176,15635 8150,15700 8164,15840 8250,16008 8270,16047 8330,16160 8389,16214
 Pankeweg: Fuﬂg‰nger, eng	q2 8486,16425 8522,16458 8573,16443 8592,16436
 Pankeweg: Fuﬂg‰nger	q1 8592,16436 8688,16533
-Pankeweg: Fuﬂg‰nger	q1 8759,16684 8776,16718 8836,16867 8904,17059 8927,17119 9009,17255 9017,17290 9034,17357 9073,17361 9136,17509 9120,17553 9110,17581 9131,17664 9089,17693 9147,17941
-Pankeweg: Fuﬂg‰nger	q1 8836,16867 8822,16873 8804,16881
+Pankeweg: Fuﬂg‰nger	q1 8759,16684 8776,16718 8839,16873 8904,17059 8927,17119 9009,17255 9017,17290 9034,17357 9073,17361 9136,17509 9120,17553 9110,17581 9131,17664 9089,17693 9147,17941
+Pankeweg: Fuﬂg‰nger	q1 8839,16873 8823,16877 8804,16881
 Pankeweg: Fuﬂg‰nger	q1 8721,16689 8804,16881 8866,17075
 Pankeweg: Fuﬂg‰nger	q1 8303,15298 8270,15237 8266,15134
 Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1861,20467 1826,20492 1761,20539
@@ -1171,6 +1173,8 @@ Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 (Weg 1 im KGA Hochspannung): kurze Rampe	q3 18184,9631 18181,9619
 Fromet-und-Moses-Mendelssohn-Platz: einige Fuﬂg‰nger	q1 9797,10771 9733,10827 9682,10836 9666,10848
 (Grillostr. - Wehnertstr.): eng, Fuﬂg‰nger, Bordstein	q2 8790,854 8672,919
+(Otisstr. - Wackerweg): eng	q2 3753,18889 3803,18855
+Breitkopfstr.: einige Fuﬂg‰nger	q1 7789,17853 7809,17708 7828,17550
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1235,7 +1239,6 @@ Jeanne-Mammen-Bogen: Fuﬂg‰ngerzone	q3 4954,10876 5090,10868
 Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger	q4 5367,2528 5413,2436
 Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
-(Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgel‰nde	q1 4997,19849 5021,19840 5077,19654 5111,19656 5183,19454 5239,19274 5429,19165
 Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6261,6391
 Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
 Georg-Lehnig-Str.: enge Straﬂe	q1 14551,13571 14527,13486 14447,13507
@@ -1979,7 +1982,7 @@ Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240
 Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886
 Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22075,779 22007,711
 Stolzenfelsstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540 18731,8577
-Weydemeyerstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 11896,13075 11904,13058 12062,12986 12054,12903
+Weydemeyerstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 11896,13075 11904,13058 12053,12984 12054,12903
 Dorotheenstr. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 9454,12558 9330,12529
 Revaler Str. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13473,11456
 Kietzer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22372,4496 22383,4470
