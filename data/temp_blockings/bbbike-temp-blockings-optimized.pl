@@ -1754,17 +1754,6 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'until' => 1376078400,
-         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (4.7.2013 - 8.7.2013; Sperrungen fangen schon früher an und dauern länger)',
-         'from' => 1372629600,
-         'id' => 1710,
-         'data' => '	q4::temp 9668,11928 9656,12021
-	2::temp 9524,12010 9656,12021
-	2::temp 9536,11912 9668,11928
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -1825,18 +1814,8 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019981',
-         'until' => 1373486400,
-         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung (Fashion Week), Straße vollständig gesperrt',
-         'from' => 1371852000,
-         'id' => 1771,
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
-#userdel	2::temp 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-#userdel	2::temp 8538,12245 8600,12165 8595,12066
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3406,6 +3385,16 @@ userdel	q4::inwork 1460,-372 1453,-306
 	2 5032,19645 5073,19656 5110,19665
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_020034',
+         'until' => 1375710600,
+         'text' => 'Neumannstr. (Pankow): Baustelle, Straße zwischen Thulestr. und Eschengraben gesperrt, bis 05.08.2013 ',
+         'from' => 1373460600,
+         'id' => 2465,
+         'data' => 'userdel	q4::inwork 11635,16616 11621,16749
+',
+         'type' => 'handicap'
        }
      
 );

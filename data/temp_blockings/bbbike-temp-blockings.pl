@@ -14578,7 +14578,7 @@ userdel	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
      { from  => $isodate2epoch->("2013-07-01 00:00:00"), # mindestens 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-08-09 22:00:00"), # einen Tag für den Abbau
+       until => $isodate2epoch->("2013-07-09 22:00:00"), # einen Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli war die Fahrbahn noch gesperrt
        text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (4.7.2013 - 8.7.2013; Sperrungen fangen schon früher an und dauern länger)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -21617,6 +21617,15 @@ EOF
 #: note: Der Hinweis existiert nur am Nordeingang, aber nicht am Südeingang
 	2 4997,19849 5003,19833 5060,19699 5073,19656
 	2 5032,19645 5073,19656 5110,19665
+EOF
+     },
+     { from  => 1373460600, # 2013-07-10 14:50
+       until => 1375710600, # 2013-08-05 15:50
+       text  => 'Neumannstr. (Pankow): Baustelle, Straße zwischen Thulestr. und Eschengraben gesperrt, bis 05.08.2013 ',
+       type  => 'handicap',
+       source_id => 'IM_020034',
+       data  => <<EOF,
+userdel	q4::inwork 11635,16616 11621,16749
 EOF
      },
     );
