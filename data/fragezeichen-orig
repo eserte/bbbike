@@ -27,10 +27,10 @@
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
-#: check_frequency: 60d
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-06-04
+#: last_checked: 2013-07-12
+#: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
 # REMOVED --- wahrscheinlich passiert hier nichts weiter, Busspur existiert --- #: last_checked: 2012-10-12 vvv --- #: next_check: 2012-10-17 vvv --- Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12640,13814 12695,13864 12784,13961 12856,14042 12901,14093 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -124,7 +124,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-07-11 vvv
+#: last_checked: 2013-07-12 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -133,7 +133,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-07-09
+#: last_checked: 2013-07-12
 #: check_frequency: 60d
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
 # 
@@ -205,7 +205,7 @@ Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147
 # 
 #: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
 #: XXX erste Vorabmarkierungen schon zu sehen (2013-05-24)
-#: last_checked: 2013-06-24
+#: last_checked: 2013-07-12
 #: check_frequency: 45d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15066,14579 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -934,9 +934,9 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 #: check_frequency: 90d
 Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16522,16206 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
 # 
-#: last_checked: 2013-06-28
-#: check_frequency: 90d
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
+#: last_checked: 2013-07-12
+#: check_frequency: 90d
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 
 #: last_checked: 2013-05-06 (Baumarkierungen (?) auf der Fahrbahn gesehen)
@@ -1008,7 +1008,6 @@ Wutzkyallee - Rudower Fließ: Verbindung durch Grünanlage aufnehmen. Genaue Wegfü
 Grünanlage - Fleischerstr.: Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15920,1392 15987,1430
 Helene-Weigel-Platz: Qualität (wahrscheinlich betoniert)? Zufahrt zur Märkischen Allee?	? 19439,13633 19463,13636 19482,13572 19602,13575 19625,13576 19697,13576
 Zugang zum Eastgate (?): möglich? Qualität?	? 19870,15172 19852,15201 19775,15276 19782,15309 19759,15336 19768,15361
-Greifswalder Str. - Volkspark: Verbindung genauer anschauen	? 12584,14928 12572,14836
 #: XXX_indoor: Verbindung aufnehmen?
 #: XXX_prog: wäre gut, wenn die Verlustzeit der versetzt arbeitenden Fußgängerampel hier einfließen könnte
 #: XXX von der Gubener Str. aus muss man ein kleines bisschen nach links fahren
@@ -1672,7 +1671,26 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -13094,-1158 
 Fresienweg: geplante Straße, wo wird sie genau liegen? Bleibt der Straßenname so? Qualität?	?::projected 16002,12640 16004,12750
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5489
-Nibelungenpark: neue Privatstraßen werden hier entstehen: Nibelungenring, Rumoldstr., Alzeyweg, Giselhersteig, Hadburgpfad. Genaue Lage, Qualität?	?::projected 17371,12447 17504,12433 17475,12277 17350,12295 17371,12447
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
+#: note: Nibelungenpark vvv
+#: XXX fehlen alle bei Berlin.coords.data vvv
+#: XXX Eintrag in str_cont_ausnahme fehlt
+Nibelungenring: genaue Lage? Qualität?	? 17328,12307 17358,12303 17448,12292 17454,12348
+Nibelungenring: genaue Lage? Qualität?	?  17476,12345 17484,12405 17432,12413 17376,12422 17345,12427
+Alzeyweg: genaue Lage? Qualität?	? 17376,12422 17366,12357 17358,12303
+#: XXX Sackgasse
+Rumoldstr.: genaue Lage? Qualität?	? 17366,12357 17454,12348 17476,12345 17530,12337
+#: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse
+Giselhersteig: genaue Lage? Qualität?	? 17359,12451 17437,12443 17536,12425
+Giselhersteig: genaue Lage? Qualität?	? 17432,12413 17437,12443
+#: XXX Sackgasse
+Hadburgpfad: genaue Lage? Qualität?	? 17484,12405 17531,12398
+#: XXX ^^^
+#: note ^^^
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
+#: XXX fehlt bei Berlin.coords.data
+Lindenschwärmerallee: genaue Lage? Qualität?	? 21323,11096 21197,11139
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)

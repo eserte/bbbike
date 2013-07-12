@@ -21354,11 +21354,12 @@ userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
 EOF
      },
      { from  => 1371938400, # 2013-06-23 00:00
-       until => 1373925599, # 2013-07-15 23:59
-       text  => 'Johannisthaler Chaussee von Königsheideweg bis Ligusterweg, wegen Bauarbeiten gesperrt, 24.06.2013 bis Mitte Juli',
+       until => 1374487200, # 2013-07-22 12:00
+       text  => 'Johannisthaler Chaussee von Königsheideweg bis Ligusterweg, wegen Bauarbeiten gesperrt, 24.06.2013 bis 22.07.2013',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130607.1245.385821.html',
        data  => <<EOF,
+#: source_id: INKO_119441
 userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15800,4464
 EOF
      },

@@ -230,7 +230,7 @@ Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1s 12349,8464 12368,8356
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12723,14714 12520,14833
+Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12700,14726 12520,14833
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wöhlertstr.	1s 8442,14456 8669,14550
 Pflugstr.	1s 8669,14550 8776,14364
@@ -1571,15 +1571,18 @@ Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 
 Chodowieckistr. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11977,14607 12266,14460 12556,14230
 Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12228,14404 12266,14460 11977,14607
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12422,14692 12473,14763 12520,14833 12584,14928
-Olga-Benario-Prestes-Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12653,14653 12473,14763 12422,14692
-Greifswalder Str. -> Olga-Benario-Prestes-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12520,14833 12473,14763 12653,14653
+Greifswalder Str. -> Olga-Benario-Prestes-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12520,14833 12473,14763 12628,14650
+Olga-Benario-Prestes-Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12628,14650 12473,14763 12422,14692
 Volkspark Anton Saefkow -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12572,14836 12520,14833 12473,14763
-Volkspark Anton Saefkow -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12572,14836 12520,14833 12723,14714
+Volkspark Anton Saefkow -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12572,14836 12520,14833 12700,14726
 Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12584,14928 12520,14833 12572,14836
-Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12584,14928 12520,14833 12723,14714
+Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12584,14928 12520,14833 12700,14726
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12584,14928 12620,14979 12709,15112
 Greifswalder Str. -> Güterbahnhof Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12620,14979 12717,14908
+Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12620,14979 12639,14913
+Güterbahnhof Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12717,14908 12620,14979 12639,14913
 Güterbahnhof Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12717,14908 12620,14979 12584,14928
+Volkspark Anton Saefkow -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12639,14913 12620,14979 12584,14928
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12709,15112 12737,15154 12870,15342
 Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12737,15154 12693,15225
 Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12693,15225 12737,15154 12870,15342
@@ -1993,6 +1996,7 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (2 Stufen)	0:5:-93 12572,14836
 tragen (3+5 Stufen)	0:15:5 9366,6150
 tragen (3+3+2+2 Stufen)	0:20:84 9244,3872
 tragen (10 Stufen)	0:15:-82 8035,10075
@@ -2611,8 +2615,8 @@ Klixstr. -> Grunewaldstr.: queren schlecht möglich	3::igndisp 6885,9132 6863,925
 Rumeyplan	1 8686,7726 8796,7751 8895,7797 8940,7835
 Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
 Greifswalder Str.	3nocross::ignrte 12422,14692 12473,14763 12520,14833
-Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12653,14653 12473,14763 12422,14692
-Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 12520,14833 12473,14763 12653,14653
+Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 12520,14833 12473,14763 12628,14650
+Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12628,14650 12473,14763 12422,14692
 Danziger Str.	3nocross::ignrte 12621,14313 12425,14459 12317,14535
 Danziger Str. -> Eugen-Schönhaar-Str.: Danziger Str.	3::igndisp 12317,14535 12425,14459 12496,14515
 Eugen-Schönhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12496,14515 12425,14459 12621,14313

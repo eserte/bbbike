@@ -273,7 +273,7 @@ Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1s:q4 12349,8464 12368,8356
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12723,14714 12520,14833
+Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12700,14726 12520,14833
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 #: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
 Wöhlertstr.	1s:q4 8442,14456 8669,14550
@@ -1629,6 +1629,7 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (2 Stufen)	0:5 12572,14836
 tragen (3+5 Stufen)	0:15 9366,6150
 tragen (3+3+2+2 Stufen)	0:20 9244,3872
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130116.0915.380245.html
@@ -2406,7 +2407,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-07-04
+#: last_checked: 2013-07-12
 #: check_frequency: 90d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
@@ -2517,14 +2518,14 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2013-05-08 vvv
-#: next_check: 2013-08-08 vvv
+#: last_checked: 2013-07-12 vvv
+#: check_frequency: 60d vvv
 #: XXX mit den Bauarbeiten "An den Eldenaer Höfen" in strassen-orig koordinieren vvv
 An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14449,12833 14594,12800
 #: XXX dieser Abschnitt wird wahrscheinlich offiziell eine Einbahnstraße, offen Richtung Westen sein
 Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
 #: XXX ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #
 # REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860

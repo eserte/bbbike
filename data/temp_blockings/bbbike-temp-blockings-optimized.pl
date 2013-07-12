@@ -3218,11 +3218,12 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130607.1245.385821.html',
-         'until' => 1373925599,
-         'text' => 'Johannisthaler Chaussee von Königsheideweg bis Ligusterweg, wegen Bauarbeiten gesperrt, 24.06.2013 bis Mitte Juli',
+         'until' => 1374487200,
+         'text' => 'Johannisthaler Chaussee von Königsheideweg bis Ligusterweg, wegen Bauarbeiten gesperrt, 24.06.2013 bis 22.07.2013',
          'from' => 1371938400,
          'id' => 2441,
-         'data' => 'userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15800,4464
+         'data' => '#: source_id: INKO_119441
+userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15800,4464
 ',
          'type' => 'gesperrt'
        },

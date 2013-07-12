@@ -8724,6 +8724,9 @@ Karl-Bonhoeffer-Nervenklinik: Asphalt	Q0 5187,19368 5219,19285 5388,19186
 Karl-Bonhoeffer-Nervenklinik: Asphalt	Q0 5150,19350 5172,19298 5219,19285
 Karl-Bonhoeffer-Nervenklinik: Kopfsteinpflaster	Q2+ 5388,19186 5429,19165
 Linienstr.: Kleinsteinpflaster	Q1 10718,13625 10740,13621
+(Greifswalder Str. - Volkspark Anton Saefkow): Gehwegplatten	Q1- 12620,14979 12639,14913
+(Greifswalder Str. - Volkspark Anton Saefkow): mäßiger Asphalt	Q1- 12639,14913 12592,14838 12640,14800
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12789,14689
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -10087,7 +10090,7 @@ Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 
 #: by: ^^^
 # 
 #: by: Sebastian Kröger/Andreas Mühlhausen vvv
-Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 12520,14833 12723,14714 12782,14676 12874,14608 12901,14594 13013,14523
+Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 12520,14833 12700,14726 12782,14676 12874,14608 12901,14594 13013,14523
 Anton-Saefkow-Str.: Beton mit Löchern und Kanten	Q2 13013,14523 13084,14472
 Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 13084,14472 13183,14400
 #: by: ^^^
@@ -10119,9 +10122,11 @@ Reichnerweg: Verbundsteinpflaster	Q1+ 10726,739 10539,662
 #: by: ^^^
 # 
 #: by: Ina Bartrow vvv
-Eugen-Schönhaar-Str.: Beton	Q0 12723,14714 12653,14653 12573,14581
-#: corrected_by: srt (Beton -> Kopfsteinpflaster)
+#: corrected_by: srt (Beton -> ...) vvv
+Eugen-Schönhaar-Str.: Asphalt und 20m Kopfsteinpflaster	Q1 12700,14726 12628,14650
+Eugen-Schönhaar-Str.: Asphalt	Q0 12628,14650 12573,14581
 Eugen-Schönhaar-Str.: Kopfsteinpflaster	Q2 12573,14581 12496,14515 12425,14459
+#: corrected_by ^^^
 #: by: ^^^
 # 
 #: by: Matthias Müller
@@ -11002,9 +11007,9 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: confirmed_by: srt
 #: XXX wird der Weg hier in Zukunft befestigt werden?
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928&options=4 (Befestigung)
-#: last_checked: 2013-04-30
-#: check_frequency: 80d
 #: osm_watch: way id="42689070" version="5"
+#: last_checked: 2013-07-12
+#: check_frequency: 90d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14934,15860 14802,15857 14720,15905 14609,15921
 #: confirmed_by: srt
 Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15598,15793
@@ -18457,8 +18462,8 @@ Am Rötepfuhl: guter Asphalt	Q0 11643,1338 11683,1285 11798,1212 11820,1185 11800
 Fichtestr. (Hermsdorf): mäßiges Kopfsteinpflaster	Q2 3495,22803 3477,23002 3494,23057 3530,23122 3544,23179
 # 
 #: by: Martin (...boden1):
-#: confirmed_by: srt
-Mutziger Str.: mäßiger Asphalt	Q1 14411,16008 14450,15910
+#: corrected_by: srt (mäßiger Asphalt -> ...)
+Mutziger Str.: Asphalt	Q0- 14411,16008 14450,15910
 # 
 #: by: Uwe Schrader: vvv
 #: note: "reine Wohngebietsstraße"
@@ -21867,7 +21872,7 @@ Weydemeyerstr.: mäßiger Beton, Fugen	Q2 11721,12801 11805,12760 11933,12701 1196
 (Berlolinastr.): Gehwegplatten	Q0 11885,12905 11906,12947 11921,12990 11983,12949
 (Berolinastr.): Gehwegplatten	Q0 11921,12990 11865,13027 11815,13045 11719,13088
 (Berolinastr. - Mollstr.): Gehwegplatten	Q0 11865,13027 11874,13048 11896,13075
-(Berolinastr. - Mollstr.): Beton/Verbundsteine	Q1 11608,12985 11681,13161
+(Berolinastr. - Mollstr.): Beton/Verbundsteine/gepflastert	Q1- 11608,12985 11656,13100 11681,13161
 (Lichtenberger Str.): Verbundsteine	Q1 12054,12903 12039,12675
 Barnimstr.: Beton	Q0 11561,13451 11608,13417 11655,13370 11793,13247
 Barnimstr.: Beton	Q0 11881,13147 11758,13210 11589,13305
@@ -22106,7 +22111,7 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12381,15034 12314,15008
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q0- 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q0- 11860,15309 11919,15314 11937,15349
 (Verlängerte Diesterwegstr.): Verbundsteine	Q0- 12078,15160 12103,15218
-Olga-Benario-Prestes-Str.: Asphalt	Q2 12653,14653 12473,14763
+Olga-Benario-Prestes-Str.: Asphalt	Q2 12628,14650 12473,14763
 #: corrected_by: srt (Asphalt -> Asphalt mit Schäden)
 Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12782,14676 12742,14622 12833,14553
 (Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13084,14472 13009,14371 12949,14292
@@ -23543,14 +23548,18 @@ Ibsenstr.: Kopfsteinpflaster	Q2+ 10209,16674 10295,16667 10382,16661 10465,16656
 Ibsenstr.: Asphalt	Q0 10465,16656 10549,16650 10632,16644 10774,16634
 #: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
 Schützenstr. (Mariendorf): Kopfsteinpflaster	Q2 8581,4342 8569,4459 8561,4535 8546,4629
-Hanns-Eisler-Str.: Asphalt	Q1 12987,15262 13043,15353 12989,15390 12984,15417 13035,15501 13065,15514 13151,15462 13240,15408 13365,15325 13504,15235 13476,15178 13614,15095
+#: corrected_by: srt (Q1 -> Q0)
+Hanns-Eisler-Str.: Asphalt	Q0 12987,15262 13043,15353 12989,15390 12984,15417 13035,15501 13065,15514 13151,15462
+#: XXX hier auch Q0?
+Hanns-Eisler-Str.: Asphalt	Q1 13151,15462 13240,15408 13365,15325 13504,15235 13476,15178 13614,15095
 #: confirmed_by: srt (added "einige Löcher", Q1 -> Q1+)
 Hanns-Eisler-Str.: einige Löcher im Asphalt	Q1 13614,15095 13550,14973
 #: corrected_by: srt (Q1 -> Q0)
 Hanns-Eisler-Str.: Asphalt	Q0 13550,14973 13596,14934 13633,14904
 #: corrected_by: srt (Q1 -> Q0)
 Hanns-Eisler-Str.: Asphalt	Q0 13550,14973 13453,14997
-Hanns-Eisler-Str.: Asphalt	Q1 13151,15462 13186,15518
+#: corrected_by: srt (Q1 -> Q0)
+Hanns-Eisler-Str.: Asphalt	Q0 13151,15462 13186,15518
 #: confirmed_by: srt (added "einige Löcher", Q1 -> Q1+)
 Hanns-Eisler-Str.: einige Löcher im Asphalt	Q1+ 13614,15095 13692,15231
 #: by:^^^

@@ -184,7 +184,7 @@ Hohenfriedbergstr.	3 7791,8882 7790,8913 7782,9115
 Hohenfriedbergstr.	3 7782,9115 7790,8913 7791,8882
 Hohenfriedbergstr. - Brunhildstr.	3 7782,9115 7790,8913 7707,8915
 Hohenfriedbergstr. - Brunhildstr.	3 7707,8915 7790,8913 7782,9115
-Olga-Benario-Prestes-Str.	1 12653,14653 12473,14763
+Olga-Benario-Prestes-Str.	1 12628,14650 12473,14763
 Filandastr.	3nocross::ignrte 5687,5486 5687,5586 5683,5672 5681,5743
 Althoffpl. -> Filandastr.: Filandastr.	3::igndisp 5609,5584 5687,5586 5683,5672
 Althoffpl. -> Kantstr.: Filandastr.	3::igndisp 5609,5584 5687,5586 5840,5588
@@ -1459,8 +1459,8 @@ Feldlerchenweg: Schranke	3 7109,22919 7000,23095 6956,23166
 Auswärtiges Amt	3 9961,12094 10003,12113 9972,12184
 Im Vogtland	1 6657,23334 6684,23308 6727,23287
 Überquerungsmöglichkeit nur für BVG frei	3nocross::ignrte 11557,13228 11681,13161 11723,13139
-Berolinastr. -> Mollstr.: Überquerungsmöglichkeit nur für BVG frei	3::igndisp 11608,12985 11681,13161 11557,13228
-Mollstr. -> Berolinastr.: Überquerungsmöglichkeit nur für BVG frei	3::igndisp 11723,13139 11681,13161 11608,12985
+Berolinastr. -> Mollstr.: Überquerungsmöglichkeit nur für BVG frei	3::igndisp 11656,13100 11681,13161 11557,13228
+Mollstr. -> Berolinastr.: Überquerungsmöglichkeit nur für BVG frei	3::igndisp 11723,13139 11681,13161 11656,13100
 Weidenweg - Str. der Pariser Kommune: Linksabbiegen verboten (Wendemöglichkeit an der Palisadenstr.)	3 13025,12523 12891,12549 12869,12425
 Mittelstreifen	3nocross::ignrte 6422,15708 6555,15827 6661,15921
 Antwerpener Str. -> Seestr.: Mittelstreifen	3::igndisp 6690,15671 6555,15827 6422,15708
