@@ -18436,7 +18436,9 @@ sub add_custom_layers_to_net {
 		if (!$str_obj{$abk}) {
 		    my $s = Strassen->new($str_file{$abk});
 		    if ($abk eq 'fz') {
-			$s = $s->grepstreets(sub { $_->[Strassen::CAT] !~ m{(?:projected|inwork)} });
+			$s = $s->grepstreets(sub { $_->[Strassen::CAT] !~ m{:(?:projected|inwork|ignrte)} });
+		    } else {
+			$s = $s->grepstreets(sub { $_->[Strassen::CAT] !~ m{:ignrte} });
 		    }
 		    $str_obj{$abk} = $s;
 		}
