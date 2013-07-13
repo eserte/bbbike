@@ -126,8 +126,11 @@ sub handle_file {
 				 my($date, $_cat) = @$time_limit;
 				 if ($dir->{_nextcheck_date}[0] le $date) {
 				     $cat = $_cat;
-				     if ($r->[Strassen::CAT] =~ m{:(inwork|projected)}) {
-					 $cat .= "::$1";
+				     if ($r->[Strassen::CAT] =~ m{^.*?:+(.*)}) { # preserve some category attributes like "projected", "inwork"
+					 my(@attr) = grep { $_ =~ m{^(?:projected|inwork|ignrte);?$} } split /::?/, $1;
+					 if (@attr) {
+					     $cat .= "::" . join("::", @attr);
+					 }
 				     }
 				     $add_name = "($dir->{_nextcheck_label}[0])";
 				     $check_now = 1;
