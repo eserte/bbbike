@@ -299,7 +299,7 @@ Weiterfahrt durch die Kleingartenanlage möglich, allerdings nur tagsüber während
 	culdesac 16541,12064
 	culdesac 17230,12481
 	culdesac 18766,13257
-	culdesac 18707,12225
+	culdesac_pseudo 18749,12226
 	culdesac 19410,12601
 	culdesac 19431,13160
 	culdesac 19312,13211
@@ -1160,6 +1160,9 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 #: note: verschlossenes Tor
 	culdesac -3384,13091
 	culdesac_pseudo -3560,13704
+	culdesac_pseudo 19842,13765
+	culdesac_pseudo 21211,15009
+	culdesac_pseudo 21574,16547
 #: section ^^^
 ######################################################################
 # busroute
@@ -1843,3 +1846,4 @@ links auf den Schotterweg halten	CP2; -6192,14252 -6413,14270
 Straße 357: Privatstraße	CS -6046,14253 -6053,14278 -6064,14321 -6091,14391 -6146,14317 -6064,14321
 (Weg an der Havel - Stabholzgarten): Bahnunterführung	CS -3494,13980 -3462,14041
 Kolonie Golfplatz	CP2; 797,12659 969,13290
+Am Rosengarten: nicht ausgeschildert	CP2; 18654,12255 18707,12225

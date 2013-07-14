@@ -199,11 +199,8 @@ Pasedagplatz: wird hier eine Ampel entstehen? Oder die Einbahnstraßenregelung fü
 # 
 #: XXX Baumaßnahme 10.11 (Realisierung nach 2011)
 Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20769,17650 20728,17670 20485,17784
-#: XXX Baumaßnahme 10.20 (Realisierung nach 2011)
-Marzahner Promenade: wird hier eine Anbindung für Radfahrer entstehen?	?::projected 20667,15721 20641,15622
-#: XXX Baumaßnahme 10.19 (Realisierung nach 2011)
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4797&options=4
-Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147,14570
+# REMOVED (hier besteht eine Verbindung, wobei fraglich ist, ob diese gemeint ist) --- #: XXX Baumaßnahme 10.20 (Realisierung nach 2011) --- Marzahner Promenade: wird hier eine Anbindung für Radfahrer entstehen?	?::projected 20693,15758 20703,15755 20714,15749 20729,15743 20733,15657
+# REMOVED (realisiert) --- #: XXX Baumaßnahme 10.19 (Realisierung nach 2011) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4797&options=4 --- Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147,14570
 # 
 #: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
 #: XXX erste Vorabmarkierungen schon zu sehen (2013-05-24)
@@ -212,7 +209,7 @@ Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15066,14579 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-07-03
+#: last_checked: 2013-07-14
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -434,8 +431,8 @@ Baustraße zur Siegfriedstraße: wird diese Verbindung beibehalten?	? 17219,14133 
 Straße der Pariser Kommune: Überqueren der Karl-Marx-Allee nur mit Zeitverlust möglich	?::inwork  12891,12549 12869,12425 12850,12286
 # 
 #: XXX außerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist
-#: last_checked: 2013-06-16
-#: next_check: 2013-07-16
+#: last_checked: 2013-07-14
+#: check_frequency: 30d
 Allee der Kosmonauten/Beilsteiner Str.: Ampel in Bau	?::inwork 18875,13467
 # 
 #: last_checked: 2013-06-15
@@ -455,8 +452,8 @@ Am Lokdepot: Planung einer Erschließungsstraße	?::inwork 8390,8879 8389,9087
 # 
 #: last_checked: 2013-07-05 vvv
 #: check_frequency: 10d vvv
-Ampelanlage in Bau	?::inwork 9242,7286
-Ampelanlage in Bau	?::inwork 9242,7325
+Te-Damm/Hoeppnerstr.: Ampelanlage in Bau	?::inwork 9242,7286
+Te-Damm/Manfred-von-Richthofen-Str.: Ampelanlage in Bau	?::inwork 9242,7325
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -750,9 +747,8 @@ Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,13
 #: last_checked: 2012-09-16
 #: next_check: 2013-06-01
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5098 (Verzögerung, März 2013)
+#: priority: #C
 Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,12824 23738,12799
-#: last_checked: 2011-10-22
-Cecilienstraße/Hannaweg: neuer Zebrastreifen wird markiert	?::projected 20909,13968 20936,13941
 #: by: ^^^
 # 
 #: last_checked: 2013-06-01 vvv
@@ -940,7 +936,7 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012)
 #: osm_watch: way id="22044872" version="10"
-#: osm_watch: way id="22045147" version="17"
+#: osm_watch: way id="22045147" version="18"
 #: last_checked: 2013-06-28
 #: check_frequency: 90d
 Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16522,16206 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
@@ -1017,7 +1013,6 @@ Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 #: XXX ggfs. auch Grünfläche in flaechen-orig aufnehmen
 Wutzkyallee - Rudower Fließ: Verbindung durch Grünanlage aufnehmen. Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474 15686,1501 15776,1456 15795,1428 15878,1378 15920,1392 16038,1303 16086,1262 16329,1128 16419,1048
 Grünanlage - Fleischerstr.: Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15920,1392 15987,1430
-Helene-Weigel-Platz: Qualität (wahrscheinlich betoniert)? Zufahrt zur Märkischen Allee?	? 19439,13633 19463,13636 19482,13572 19602,13575 19625,13576 19697,13576
 Zugang zum Eastgate (?): möglich? Qualität?	? 19870,15172 19852,15201 19775,15276 19782,15309 19759,15336 19768,15361
 #: XXX_indoor: Verbindung aufnehmen?
 #: XXX_prog: wäre gut, wenn die Verlustzeit der versetzt arbeitenden Fußgängerampel hier einfließen könnte
@@ -1027,9 +1022,6 @@ Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13173,12331 131
 # REMOVED (nein, sieht nur nach Leitungsarbeiten aus) --- Kirchhofstr.: Sackgasse --- eventuell Bauarbeiten, vielleicht wird die Qualität hier besser?	? 13027,7368 13117,7471
 #: priority: #C
 Florastr.: Vorfahrtsregelung?	? 10548,17817 10705,17931 10830,17985
-Glambecker Ring - Lea-Grundig-Str.: existiert hier eine Verbindung? Qualität? Beleuchtung?	? 21824,16506 21579,16545 21491,16631
-Max-Herrmann-Str. - Ludwig-Renn-Str.: existiert hier eine Verbindung? Qualität? Beleuchtung?	? 21291,16703 21017,16737
-Ludwig-Renn-Str. - Walter-Felsenstein-Str.: existiert hier eine Verbindung? Qualität? Beleuchtung?	? 20861,16819 20746,16832 20617,16614
 Kaulsdorfer Str. (Hönow): Qualität?	? 25418,14538 25490,14601 25555,14657 25644,14721 25745,14808 25866,14898 25932,14955 25991,14926
 Ernst-Bloch-Str. - Hellersdorfer Str.: besteht hier für Radfahrer eine Verbindung? Qualität? Kann die Hellersdorfer Str. hier überquert werden?	? 22985,12807 22924,12833
 Grünauer Str. - Kablower Weg: existiert hier eine Verbindung durch den Wald? Qualität?	? 22926,-340 22948,-322 22862,-126 22815,37
@@ -1193,8 +1185,7 @@ An der Vogelweide: Qualität? Lage? Straßenschilder?	? 8568,21863 8626,21892 8712
 #: next_check: 2013-05-01
 Tegelort - Hakenfelde (sowie Fähre via Valentinswerder): prüfen, ob es nennenswerte Verbindungen gibt (außer am Wochenende)	? -1694,17839 -1828,17796
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2013
-Am Valwigerteich: gibt es mittlerweile eine Durchfahrtmöglichkeit?	? 18867,12265 18917,12271
+# REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2013 --- Am Valwigerteich: gibt es mittlerweile eine Durchfahrtmöglichkeit?	? 18867,12265 18917,12271
 # 
 #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/buddestra__e_lp2_07_03_2011.pdf?start&ts=1299577401&file=buddestra__e_lp2_07_03_2011.pdf
 #: priority: #C
@@ -1279,7 +1270,6 @@ Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtl
 # 
 # REMOVED (-> strassen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2012 --- Weg im Harry-Bresslau-Park: wo genau liegt der Weg? Qualität? Nachts beleuchtet?	? 4997,6331 4937,6205
 # 
-Geißenweide - Blenheimstr.: gibt es für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? 21122,14713 21201,14994 21312,15268
 S-Bhf. Hermsdorf, Unterführung am Fellbacher Platz: existiert für Radfahrer eine Verbindung? Qualität?	? 3750,23363 3593,23297
 S-Bhf. Waidmannslust, Unterführung zwischen Nimrodstr. und Am Waidmannslust: existiert für Radfahrer eine Verbindung? Qualität?	? 4581,22106 4601,22067 4660,22101 4687,22056 4744,22065
 Niederneuendorfer Allee - Pappelweg: Qualität des Waldweges?	? -2827,18639 -3058,18358
@@ -1403,8 +1393,6 @@ Kurzer Weg: Qualität?	? 9169,21548 9066,21516
 #: osm_watch: way id="24152326" version="8"
 Anna-Seghers-Str.: wird es nach den Bauarbeiten eine bessere Straßenqualität geben?	?::inwork 20066,3466 20012,3532 19966,3596 19933,3641
 # 
-Poelchaustr. - Landsberger Allee: Qualität der Verbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19524,14474 19527,14655 19580,14864 19631,14926 19703,15043 19740,15086 19811,15126 19870,15172 20260,15434
-Springpfuhlpark: Qualität der Gehwegverbindung? Nachts beleuchtet? Genaue Lage des Weges (GPS-Track?)?	? 19602,13575 19524,14474
 # REMOVED --- #: by: http://ftp.berlinonline.de/ba-temp-schoen/ba_beschluesse/2012-08-14/drucks._nr.1842_xviii_bezirkliches_fahrradroutennetz_fuer_tempelhof_schoeneberg_entwickeln_zwischenbericht.pdf (Treppe, wassergebundene Decke) --- Götzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster oder eine wassergebundene Decke? Gibt es hier Treppen?	? 9381,6277 9374,6189 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf vvv
@@ -1676,10 +1664,12 @@ Fresienweg: geplante Straße, wo wird sie genau liegen? Bleibt der Straßenname so
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
+#: last_checked: 2013-07-14 vvv
+#: check_frequency: 180d vvv
+Alzeyweg: genaue Lage? Qualität?	? 17376,12422 17366,12357 17358,12303
 #: XXX Eintrag in str_cont_ausnahme fehlt
 Nibelungenring: genaue Lage? Qualität?	? 17328,12307 17358,12303 17448,12292 17454,12348
 Nibelungenring: genaue Lage? Qualität?	?  17476,12345 17484,12405 17432,12413 17376,12422 17345,12427
-Alzeyweg: genaue Lage? Qualität?	? 17376,12422 17366,12357 17358,12303
 #: XXX Sackgasse
 Rumoldstr.: genaue Lage? Qualität?	? 17366,12357 17454,12348 17476,12345 17530,12337
 #: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse
@@ -1687,6 +1677,8 @@ Giselhersteig: genaue Lage? Qualität?	? 17359,12451 17437,12443 17536,12425
 Giselhersteig: genaue Lage? Qualität?	? 17432,12413 17437,12443
 #: XXX Sackgasse
 Hadburgpfad: genaue Lage? Qualität?	? 17484,12405 17531,12398
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 #: note ^^^
 # 
@@ -1741,7 +1733,6 @@ Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79
 Werderscher Damm: existiert hier ein Radweg in Höhe Kaserne (wahrscheinlich ab 2006-11-30)?	? -18542,-2568 -18733,-2697 -19640,-3173
 B5: existiert ein Radweg in Höhe Wusterhausen (wahrscheinlich ab 2006-09-29)?	? -54140,51565 -54518,51910 -54926,52781
 B246: existiert ein Radweg bei Nächst Neuendorf (wahrscheinlich ab 2006-11-15)?	? 11412,-19943 11136,-20007
-Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20861,16819 21017,16737
 Stolper Weg: Qualität? Bis wo (vom Europarc aus) ist Autoverkehr vorhanden? Radwege? Genaue Straßennamen?	? -4709,-728 -5233,-902 -5380,-990 -5799,-1108 -5901,-1257 -6051,-1169 -6411,-868
 (Albrechts Teerofen - Stopler Weg): Qualität?	? -5364,-1204 -5380,-990
 Seenpromenade (Groß Glienicke): Qualität des südlichen Abschnitts?	? -9617,5086 -9678,4874

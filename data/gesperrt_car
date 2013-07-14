@@ -260,11 +260,11 @@ Landsberger Allee -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13543,13568 13635
 Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13706,13460 13635,13605 13521,13781
 Hausburgstr. -> Landsberger Allee: Straßenbahn	3::igndisp 13706,13460 13635,13605 13543,13568
 Landsberger Allee -> Hausburgstr.: Straßenbahn	3::igndisp 13702,13634 13635,13605 13706,13460
-Straßenbahn	3nocross::ignrte 21398,15671 21475,15705 21584,15753 21694,15802
+Straßenbahn	3nocross::ignrte 21398,15671 21475,15705 21584,15753 21709,15808
 Pöhlbergstr -> Landsberger Allee: Straßenbahn	3::igndisp 21491,15671 21475,15705 21398,15671
 Landsberger Allee -> Pöhlbergstr: Straßenbahn	3::igndisp 21584,15753 21475,15705 21491,15671
 Landsberger Allee -> Schönagelstr.: Straßenbahn	3::igndisp 21475,15705 21584,15753 21602,15908
-Schönagelstr. -> Landsberger Allee: Straßenbahn	3::igndisp 21602,15908 21584,15753 21694,15802
+Schönagelstr. -> Landsberger Allee: Straßenbahn	3::igndisp 21602,15908 21584,15753 21709,15808
 Topsstr.	1 10607,15142 10886,15251
 Schönhauser Allee	3nocross::ignrte 10902,15422 10917,15525 10941,15697
 Buchholzer Str. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 11055,15504 10917,15525 10902,15422
@@ -320,7 +320,7 @@ Skalitzer/Admiralstr.	3nocross::ignrte 11393,10390 11335,10375 11316,10372
 Skalitzer Str. -> Admiralstr.: Skalitzer/Admiralstr.	3::igndisp 11393,10390 11335,10375 11325,10317
 Admiralstr. -> Skalitzer Str.: Skalitzer/Admiralstr.	3::igndisp 11325,10317 11335,10375 11316,10372
 Gutenbergstr.	1 -12045,-757 -12219,-726
-Langhoffstr.	1 19817,14454 19818,14064
+Langhoffstr.	1 19817,14371 19818,14064
 Lintruper Str.	1 10307,922 10380,757
 Edison-/Siemensstr.	3 17992,6436 17962,6674 17860,6644 17766,6616
 Edisonstr.	1 17962,6674 17992,6436

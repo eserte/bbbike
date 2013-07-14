@@ -270,7 +270,6 @@ Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
 Am Bäkequell	1 4593,5235 4656,5101
-Sella-Hasse-Str.	1 20948,16612 20791,16679 20861,16819
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
@@ -326,8 +325,7 @@ Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
 Talstr.	1 11776,16753 11825,16666
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18451,8823
-Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20767,16903
-(Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
+Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20734,16819
 Jugendweg	1 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
 Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
@@ -434,7 +432,7 @@ Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
 Andernacher Str.	1 19030,8559 19000,8509
 Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14472
-Murtzaner Ring	1 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
+Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22246,4711 22175,4730
 Werrastr.: Firmengelände	2 13802,8195 13697,8279
@@ -484,7 +482,6 @@ Washingtonplatz	1s 8106,13130 7937,13126
 Pfarrer-Lütkehaus-Platz	1 10228,-2136 10231,-2159
 Radebeuler Str.	1 19067,13818 19025,14037
 Beilsteiner Str.	1 18749,12413 18800,12838 18832,13099 18852,13269
-Am Rosengarten	2 18707,12225 18834,12228 18867,12265
 (Breite Str., Verbindung)	1s 10463,18321 10487,18270
 Thuner Platz	1 3251,1881 3263,1904 3286,1912 3307,1904 3317,1884 3312,1866 3297,1845
 Lappiner Str.	1 20418,12699 20545,12683
@@ -680,7 +677,7 @@ Fritz-Lang-Platz	1 23871,14914 23882,14904 23856,14868 23820,14896 23846,14931 2
 Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 20769,17650 20895,17594 21066,17503
 Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20891,17572 20769,17650
 Trusetaler Str.	1s 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
-Blumberger Damm	1s 21731,15748 21719,15666
+Blumberger Damm	1s 21733,15755 21719,15666
 Landhausring	1 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
 Kaulsdorfer Str.	1 22539,6258 22324,6397
 Kreisverkehr Brebacher Weg	1 21655,12521 21642,12538 21651,12569 21666,12577 21674,12565 21671,12532 21655,12521
@@ -1114,9 +1111,9 @@ Allee der Kosmonauten -> Cecilienstr.: Straßenbahntrasse	3::igndisp 20269,14256 
 Straßenbahntrasse	3nocross::ignrte 20822,14594 20868,14698 20944,14840
 Allee der Kosmonauten -> Adersleber Weg: Straßenbahntrasse	3::igndisp 20944,14840 20868,14698 20935,14686
 Adersleber Weg -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20935,14686 20868,14698 20822,14594
-Mittelstreifen	3nocross::ignrte 20260,15434 20525,15571 20641,15622
-Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3::igndisp 20550,15551 20525,15571 20260,15434
-Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20641,15622 20525,15571 20550,15551
+Mittelstreifen	3nocross::ignrte 20260,15434 20532,15564 20733,15657
+Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20733,15657 20532,15564 20550,15551
+Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3::igndisp 20550,15551 20532,15564 20260,15434
 Mittelstreifen	3nocross::ignrte 15256,14237 15430,14262 15850,14308
 Mittelstr./Altenhofer Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15430,14272 15430,14262 15850,14308
 Landsberger Allee -> Mittelstr./Altenhofer Str.: Mittelstreifen	3::igndisp 15256,14237 15430,14262 15430,14272
@@ -1197,15 +1194,15 @@ Schloßstr. -> Wrangelstr.: Mittelstreifen	3::igndisp 4741,5309 4748,5357 4640,54
 Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21537,14932
 Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21537,14932 21408,14591 21450,14576
 Fridolinweg -> Blumberger Damm: Mittelstreifen	3::igndisp 21450,14576 21408,14591 21378,14490
-Mittelstreifen	3nocross::ignrte 21694,15802 21674,15675 21669,15637 21647,15496
-Blumberger Damm -> Hirschfelder Weg: Mittelstreifen	3::igndisp 21694,15802 21674,15675 21719,15666
-Hirschfelder Weg -> Blumberger Damm: Mittelstreifen	3::igndisp 21719,15666 21674,15675 21669,15637
-Pöhlbergstr. -> Spitzmühler Str.: Mittelstreifen	3::igndisp 21497,15639 21669,15637 21706,15626
-Pöhlbergstr. -> Blumberger Damm: Mittelstreifen	3::igndisp 21497,15639 21669,15637 21674,15675
-Blumberger Damm -> Pöhlbergstr.: Mittelstreifen	3::igndisp 21647,15496 21669,15637 21497,15639
-Spitzmühler Str. -> Pöhlbergstr.: Mittelstreifen	3::igndisp 21706,15626 21669,15637 21497,15639
-Spitzmühler Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21706,15626 21669,15637 21647,15496
-Blumberger Damm -> Spitzmühler Str.: Mittelstreifen	3::igndisp 21674,15675 21669,15637 21706,15626
+Mittelstreifen	3nocross::ignrte 21709,15808 21682,15673 21675,15636 21647,15496
+Blumberger Damm -> Hirschfelder Weg: Mittelstreifen	3::igndisp 21709,15808 21682,15673 21719,15666
+Hirschfelder Weg -> Blumberger Damm: Mittelstreifen	3::igndisp 21719,15666 21682,15673 21675,15636
+Pöhlbergstr. -> Blumberger Damm: Mittelstreifen	3::igndisp 21497,15639 21675,15636 21682,15673
+Pöhlbergstr. -> Spitzmühler Str.: Mittelstreifen	3::igndisp 21497,15639 21675,15636 21706,15626
+Blumberger Damm -> Spitzmühler Str.: Mittelstreifen	3::igndisp 21682,15673 21675,15636 21706,15626
+Blumberger Damm -> Pöhlbergstr.: Mittelstreifen	3::igndisp 21647,15496 21675,15636 21497,15639
+Spitzmühler Str. -> Pöhlbergstr.: Mittelstreifen	3::igndisp 21706,15626 21675,15636 21497,15639
+Spitzmühler Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21706,15626 21675,15636 21647,15496
 Straßenbahntrasse	3nocross::ignrte 21232,15465 21187,15350 21163,15289
 Allee der Kosmonauten -> Alt-Marzahn: Straßenbahntrasse	3::igndisp 21163,15289 21187,15350 21139,15376
 Alt-Marzahn -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21139,15376 21187,15350 21232,15465
@@ -1339,11 +1336,11 @@ Rhinstr. -> Witzenhauser Str.: Straßenbahntrasse	3::igndisp 17991,14684 17937,14
 Witzenhauser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17750,14736 17937,14795 17886,14899
 Rhinstr. -> Allendorfer Weg: Straßenbahntrasse	3::igndisp 18057,14549 17991,14684 17879,14659
 Allendorfer Weg -> Rhinstr.: Straßenbahntrasse	3::igndisp 17879,14659 17991,14684 17937,14795
-Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20073,13535 20150,13562
-Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19821,13604
-Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19821,13604 19807,13529 19837,13531
-Allee der Kosmonauten -> Biesdorfer Promenade: Straßenbahntrasse	3::igndisp 19894,13535 19837,13531 19826,13444
-Biesdorfer Promenade -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19826,13444 19837,13531 19807,13529
+Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19899,13534
+Unterführung -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19819,13606 19807,13529 19837,13531
+Allee der Kosmonauten -> Unterführung: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19819,13606
+Unterführung/Biesdorfer Promenade -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19826,13444 19837,13531 19807,13529
+Allee der Kosmonauten -> Unterführung/Biesdorfer Promenade: Straßenbahntrasse	3::igndisp 19899,13534 19837,13531 19826,13444
 Straßenbahntrasse	3nocross::ignrte 10765,16486 10699,16492 10620,16497
 Tegnerstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10708,16579 10699,16492 10765,16486
 Bornholmer Str. -> Tegnerstr.: Straßenbahntrasse	3::igndisp 10620,16497 10699,16492 10708,16579
@@ -1811,9 +1808,9 @@ Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3::igndisp 21602,15908
 Straßenbahntrasse	3nocross::ignrte 26871,-2500 26698,-2322 26286,-1901
 Adlergestell -> Langer See: Straßenbahntrasse	3::igndisp 26286,-1901 26698,-2322 26846,-2176
 Langer See -> Adlergestell: Straßenbahntrasse	3::igndisp 26846,-2176 26698,-2322 26871,-2500
-Mittelstreifen	3nocross::ignrte 21599,15213 21626,15357 21647,15496
-Krummenseer Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21657,15352 21626,15357 21599,15213
-Blumberger Damm -> Krummenseer Str.: Mittelstreifen	3::igndisp 21647,15496 21626,15357 21657,15352
+Mittelstreifen	3nocross::ignrte 21599,15213 21623,15357 21647,15496
+Krummenseer Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21657,15352 21623,15357 21599,15213
+Blumberger Damm -> Krummenseer Str.: Mittelstreifen	3::igndisp 21647,15496 21623,15357 21657,15352
 Mittelstreifen	3nocross::ignrte 21150,11925 21135,11799 21108,11628
 Blumberger Damm -> Dingolfinger Str.: Mittelstreifen	3::igndisp 21150,11925 21135,11799 21233,11781
 Dingolfinger Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21233,11781 21135,11799 21108,11628
@@ -2016,6 +2013,8 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (8+8 Stufen)	0:25:-183 19534,14459
+tragen (5 x 5 Stufen) bzw. steile Rampe zum Schieben benutzen	0:35:-181 19570,13833
 tragen bzw. steile Rampe benutzen	0:30:90 1523,13377
 tragen (7+9 Stufen)	0:25 -3621,13884 -3513,13800 -3503,13773
 tragen (7 Stufen)	0:14:-84 -4744,14392
@@ -2136,7 +2135,7 @@ tragen (Treppe)	0:30:-117 4808,3404
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30:-255 8823,16877
 tragen (Treppe)	0:30:11 14390,5443
 tragen (Treppe)	0:30:-171 14325,5409
-tragen (28 Stufen)	0:30:-108 18180,12262
+tragen (28 Stufen)	0:30:-93 18180,12262
 tragen (S-Bhf. Marzahn)	0:30:-195 19571,15417
 tragen (S-Bhf. Marzahn)	0:30:-155 19638,15431
 tragen (13 Stufen)	0:30:-180 7923,12876
@@ -2220,6 +2219,9 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-73:trailer=10 20703,15755
+Drängelgitter	BNP:3:-61:trailer=10 20714,15749
+2x Drängelgitter	BNP:4:-63:trailer=15 21305,16705
 Drängelgitter	BNP:5:-263:trailer=20 -5681,15113
 Drängelgitter	BNP:5:-251:trailer=20 -5689,15114
 Drängelgitter	BNP:3:-173:trailer=10 -4153,16463
@@ -2698,15 +2700,12 @@ Pintschstr.	1 13339,13196 13435,12973
 Landsberger Allee	3nocross::ignrte 12382,13097 12585,13118 12685,13135
 Ernst-Zinna-Weg -> Landsberger Allee: Landsberger Allee	3::igndisp 12564,13216 12585,13118 12685,13135
 Landsberger Allee -> Ernst-Zinna-Weg: Landsberger Allee	3::igndisp 12382,13097 12585,13118 12564,13216
-Landsberger Allee	3nocross::ignrte 20525,15571 20641,15622 20796,15667
-Landsberger Allee -> Alt-Marzahn: Landsberger Allee	3::igndisp 20796,15667 20641,15622 20658,15589
-Alt-Marzahn -> Landsberger Allee: Landsberger Allee	3::igndisp 20658,15589 20641,15622 20525,15571
 Straßenbahntrasse	3nocross::ignrte 13635,13605 13702,13634 13854,13701
 Landsberger Allee -> Otto-Ostrowski-Str.: Straßenbahntrasse	3::igndisp 13854,13701 13702,13634 13769,13487
 Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13769,13487 13702,13634 13635,13605
-Landsberger Allee	3nocross::ignrte 21475,15705 21584,15753 21694,15802
+Landsberger Allee	3nocross::ignrte 21475,15705 21584,15753 21709,15808
 Landsberger Allee -> Schönagelstr.: Landsberger Allee	3::igndisp 21475,15705 21584,15753 21602,15908
-Schönagelstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 21602,15908 21584,15753 21694,15802
+Schönagelstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 21602,15908 21584,15753 21709,15808
 Kalkhorster Weg (10 Stufen)	0:40:-199 3904,8664
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 3688,9051 3741,9047 3816,9045 3835,9044
 Hoffmann-von-Fallersleben-Pl. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3::igndisp 3741,8955 3741,9047 3688,9051

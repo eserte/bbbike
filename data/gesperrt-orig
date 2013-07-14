@@ -318,7 +318,7 @@ Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
 Am B‰kequell	1 4593,5235 4656,5101
-Sella-Hasse-Str.	1 20948,16612 20791,16679 20861,16819
+# REMOVED (nicht best‰tigt?) --- Sella-Hasse-Str.	1 20948,16612 20791,16679 20840,16777 20856,16807
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufh‰user-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
@@ -405,8 +405,7 @@ Talstr.	1 11776,16753 11825,16666
 #: confirmed_by: MichaelM (Regelung f¸r alle gleich)
 Scharfestr.	1 758,3417 935,3430
 Junker-Jˆrg-Str.	1 18545,9395 18511,9185 18471,8957 18451,8823
-Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20767,16903
-(Raoul-Wallenberg-Str. - Walter-Felsenstein-Str.)	1 20394,16162 20487,16392
+Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20734,16819
 #: by: Monika Weber-Jeremias (auch f¸r Radfahrer)
 #: confirmed_by: srt
 Jugendweg	1 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
@@ -571,7 +570,7 @@ Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
 Andernacher Str.	1 19030,8559 19000,8509
 Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14472
-Murtzaner Ring	1 19818,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20059,14441
+Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22246,4711 22175,4730
 # REMOVED --- Gotenburger Str.	1 9000,16803 8844,16863
@@ -656,8 +655,6 @@ Washingtonplatz	1s 8106,13130 7937,13126
 Pfarrer-L¸tkehaus-Platz	1 10228,-2136 10231,-2159
 Radebeuler Str.	1 19067,13818 19025,14037
 Beilsteiner Str.	1 18749,12413 18800,12838 18832,13099 18852,13269
-#: note: durch ein Tor versperrt; es existiert aber anscheinend parallel dazu ein Trampelpfad
-Am Rosengarten	2 18707,12225 18834,12228 18867,12265
 #: by: osm
 (Breite Str., Verbindung)	1s:q4 10463,18321 10487,18270
 #: by: Norbert Palzkill:
@@ -934,7 +931,7 @@ Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 20769,17650 20895,17594 21066,17503
 Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20891,17572 20769,17650
 #: note: Ausweichen auf Gehweg
 Trusetaler Str.	1s:q3 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
-Blumberger Damm	1s:q4 21731,15748 21719,15666
+Blumberger Damm	1s:q4 21733,15755 21719,15666
 Landhausring	1 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
 Kaulsdorfer Str.	1 22539,6258 22324,6397
 Kreisverkehr Brebacher Weg	1 21655,12521 21642,12538 21651,12569 21666,12577 21674,12565 21671,12532 21655,12521
@@ -1347,7 +1344,7 @@ Edisonstr.: Straﬂenbahn	3nocross 18010,7133 17934,7029 17919,6978
 Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5153,15658 -5370,15721 -5470,15750
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
-Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20525,15571 20641,15622
+Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20532,15564 20733,15657
 Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15850,14308
 Alt-Kaulsdorf: Mittelstreifen	3nocross 22484,11270 22756,11268 22937,11265
 Alt-Kaulsdorf: Mittelstreifen	3nocross 23101,11261 23362,11263 23447,11264 23648,11265
@@ -1379,7 +1376,7 @@ Zossener Str.: Straﬂenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23
 Schloﬂstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21537,14932
-Blumberger Damm: Mittelstreifen	3nocross 21694,15802 21674,15675 21669,15637 21647,15496
+Blumberger Damm: Mittelstreifen	3nocross 21709,15808 21682,15673 21675,15636 21647,15496
 #: note: Luftbild
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
 Schˆnholzer Str.: Straﬂenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
@@ -1422,7 +1419,7 @@ Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 479
 Rhinstr.: Straﬂenbahntrasse	3nocross 18215,12123 18216,12239 18216,12262 18220,12450
 Rhinstr.: Straﬂenbahntrasse	3nocross 18181,14110 18184,14078 18187,14039 18206,13817
 Rhinstr.: Straﬂenbahntrasse	3nocross 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
-Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 19628,13517 19726,13524 19807,13529 19837,13531 19894,13535 20073,13535 20150,13562
+Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 19628,13517 19726,13524 19807,13529 19837,13531 19899,13534
 Bornhomer Str.: Straﬂenbahntrasse	3nocross 10765,16486 10699,16492 10620,16497
 Bornhomer Str.: Straﬂenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straﬂenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
@@ -1551,7 +1548,7 @@ M¸hlenstr.: Mittelstreifen	3nocross 12908,11058 12848,11093 12793,11132 12736,11
 # REMOVED (jetzt mit 3nocross) --- Klingelhˆferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
 Raoul-Wallenberg-Str.: Straﬂenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
 Adlergestell: Straﬂenbahntrasse	3nocross 26871,-2500 26698,-2322 26286,-1901
-Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21626,15357 21647,15496
+Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21623,15357 21647,15496
 #: note: Luftbild:
 Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21108,11628
 Rudower Chaussee: Mittelstreifen, zuk¸nftig Straﬂenbahntrasse	3nocross 19206,2848 19242,2876 19324,2939
@@ -1635,6 +1632,8 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muﬂ:
 # die Zahl hinter dem ":" entspricht ungef‰hr den verlorenen Sekunden
 # 
+tragen (8+8 Stufen)	0:25 19534,14459
+tragen (5 x 5 Stufen) bzw. steile Rampe zum Schieben benutzen	0:35 19570,13833
 tragen bzw. steile Rampe benutzen	0:30 1523,13377
 tragen (7+9 Stufen)	0:25 -3621,13884 -3513,13800 -3503,13773
 tragen (7 Stufen)	0:14 -4744,14392
@@ -1927,6 +1926,10 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+Dr‰ngelgitter	BNP:3::trailer=10 20703,15755
+Dr‰ngelgitter	BNP:3::trailer=10 20714,15749
+#: note: relativ gut passierbar
+2x Dr‰ngelgitter	BNP:4::trailer=15 21305,16705
 #: note: doppeltes Dr‰ngelgitter vvv
 Dr‰ngelgitter	BNP:5::trailer=20 -5681,15113
 Dr‰ngelgitter	BNP:5::trailer=20 -5689,15114
@@ -2710,10 +2713,9 @@ Danziger Str.: Straﬂenbahnschienen	3nocross 12901,14093 12975,13990 13037,13897 
 Danziger Str.: Straﬂenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620
 Pintschstr.	1 13339,13196 13435,12973
 Landsberger Allee	3nocross 12382,13097 12585,13118 12685,13135
-Landsberger Allee	3nocross 20525,15571 20641,15622 20796,15667
 Landsberger Allee: Straﬂenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701
 # REMOVED (mitlerweile (ca. 2012) existiert f¸r Fuﬂg‰nger und Autofahrer eine Kreuzungsmˆglichkeit) --- #: by: jˆrg (schalkau): --- #: confirmed_by: srt --- Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
-Landsberger Allee	3nocross 21475,15705 21584,15753 21694,15802
+Landsberger Allee	3nocross 21475,15705 21584,15753 21709,15808
 Kalkhorster Weg (10 Stufen)	0:40 3904,8664
 Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9047 3816,9045 3835,9044
 Hohenzollerndamm: unpassierbarer Mittelstreifen	3nocross 3427,9010 3467,9045 3521,9059
