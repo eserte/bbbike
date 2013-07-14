@@ -16,10 +16,12 @@
 package GPS;
 
 use strict;
-use vars qw(@gps);
+use vars qw(@gps $_UTF8_BOM);
 
 # KML is checked before GPX, because the KML magic is more strict
 @gps = qw(GpsmanData MyNMEA G7toWin_2 G7toWin_ASCII Ovl WaypointPlus MPS Gardown KML GPX Gpsbabel);
+
+$_UTF8_BOM = "\xef\xbb\xbf";
 
 sub new { bless {}, shift }
 

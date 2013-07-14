@@ -1,8 +1,7 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode:perl;coding:iso-8859-1 -*-
 
 #
-# $Id: read-gps-formats.t,v 1.11 2008/02/02 22:09:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -51,6 +50,7 @@ my @gps_formats       = (
 			 ## Other ovl files tested seperately in ovl.t
 			 #["$miscdir/ovl_resources/various_from_net/bb02.ovl", "Ovl", "Binary 3.0"],
 			 # TODO: ["$miscdir/ovl_resources/various_from_net/10_um_die_hohe_reuth.ovl", "Ovl", "Binary 4.0"],
+			 [\&gpx_with_bom, 'GPX', 'with BOM'],
 			);
 my @strassen_formats  = (
 			 ["$gpsmandir/19.wpt", "GPSman waypoints and group"],
@@ -66,11 +66,22 @@ my @strassen_formats  = (
 plan tests => 2*@gps_formats + @strassen_formats;
 
 for my $def (@gps_formats) {
-    my($file, $fmt, $extra_info) = @$def;
+    my($file_or_sub, $fmt, $extra_info) = @$def;
     $extra_info = !$extra_info ? "" : " ($extra_info)";
-    print STDERR "$file ($fmt)...\n" if $v;
+    if ($v) {
+	diag(!ref $file_or_sub ? "$file_or_sub ($fmt)..." : "$fmt...");
+    }
  SKIP: {
 	my $tests = 2;
+	my $file;
+	my $tmpfh;
+	if (ref $file_or_sub) {
+	    ($tmpfh,$file) = tempfile(SUFFIX => "_read_gps_formats.$fmt", UNLINK => 1) or die $!;
+	    print $tmpfh $file_or_sub->();
+	    close $tmpfh or die $!;
+	} else {
+	    $file = $file_or_sub;
+	}
 	skip("File $file not available or readable", $tests) if !-f $file || !open my($fh), $file;
 	my $ret = Route::load($file);
 	ok($ret && $ret->{RealCoords} &&
@@ -104,6 +115,36 @@ for my $def (@strassen_formats) {
 	    warn "Written <$file> data to <$outfile> as Strassen file...\n";
 	}
     }
+}
+
+sub gpx_with_bom {
+    "\xef\xbb\xbf" . <<'EOF';
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="Somebody" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+	<bounds minlat="50.95682" minlon="14.03260" maxlat="50.97940" maxlon="14.08268"/>
+  </metadata>
+
+    <wpt lat="50.95682" lon="14.03402">
+    <ele>12</ele>
+    <name>wpt01</name>
+  </wpt>
+
+  <trk>
+<name>trk01</name>
+<trkseg>
+    <trkpt lat="50.95682" lon="14.03402">
+        <ele>12</ele>
+    </trkpt>
+    <trkpt lat="50.95705" lon="14.03376">
+        <ele>13</ele>
+    </trkpt>
+</trkseg>
+</trk>
+
+
+</gpx>
+EOF
 }
 
 __END__

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2008,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2008,2012,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
-$VERSION = '1.17';
+$VERSION = '1.18';
 
 use File::Basename qw(dirname);
 use BBBikeUtil qw(is_in_path bbbike_root);
@@ -36,7 +36,7 @@ use Msg qw(frommain);
 
 my %magics =
     ('pcx' => ['^H  SOFTWARE NAME & VERSION'],
-     'gpx' => ['^<\?xml\s+'],
+     'gpx' => ['^('.$GPS::_UTF8_BOM.')?<\?xml\s+'],
     );
 
 sub magics {

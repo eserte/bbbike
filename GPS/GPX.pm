@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.1 2006/08/29 22:37:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package GPS::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.02';
 
 require GPS;
 push @ISA, 'GPS';
@@ -24,7 +23,7 @@ push @ISA, 'GPS';
 use Strassen::GPX;
 use Route::Heavy;
 
-sub magics { ('^<(\?xml|gpx)') }
+sub magics { ('^('.$GPS::_UTF8_BOM.')?<(\?xml|gpx)') }
 
 sub convert_to_route {
     my($self, $file, %args) = @_;
