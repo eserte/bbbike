@@ -938,6 +938,14 @@ fragezeichen-nextcheck.org-exact-dist:
 	mv ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org~ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org
 	-@$(READONLY) ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org
 
+# Like fragezeichen-nextcheck.org-exact-dist, but using the home coordinate for both start/goal
+${PERSISTENTTMPDIR}/fragezeichen-nextcheck-home-home.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+	-@$(WRITEABLE) $@
+	centerc=`perl -nle 'm{centerc.*\x27(\d+,\d+)\x27} and print $$1' ~/.bbbike/config`; \
+	    ${MISCSRCDIR}/fragezeichen2org.pl --dist-dbfile=${PERSISTENTTMPDIR}/dist.db -centerc $$centerc -center2c $$centerc *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	mv $@~ $@
+	-@$(READONLY) $@
+
 ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
 
