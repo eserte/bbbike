@@ -166,8 +166,8 @@ Ausschilderung nach Trampe fehlt	CP2; 54790,104980 54861,105010
 Ausschilderung: nach Wallmow und zum Badesee	CP2; 51751,104213 51852,104256
 Mittenwalder Str. - Zossener Str.: zunächst auf dem linken Geh/Radweg fahren, Straßenbahntrasse 100m weiter oder an der Kreuzung Kastanienallee überqueren; alternativ parallele Wohngebietsstraße benutzen	CP; 23441,15780 23411,15632 23568,15603 23617,15594
 Zossener Str. - Mittenwalder Str.: bereits an der Kreuzung Alte Hellersdorfer Str. den linken Geh/Radweg benutzen	PI; 23080,15700 23218,15671 23411,15632 23441,15780
-Staakener Str. - Magistratsweg: linken Geh/Radweg benutzen und nach der Unterführung die Straße unterqueren	CP; -6442,14286 -6465,14291 -6470,14247
-Klosterbuschweg - Staakener Str.: frühzeitig auf den linken Geh/Radweg wechseln	PI; -6454,14392 -6461,14323 -6465,14291 -6442,14286
+Staakener Str. - Magistratsweg: linken Geh/Radweg benutzen und nach der Unterführung die Straße unterqueren	CP; -6458,14292 -6465,14291 -6470,14247
+Klosterbuschweg - Staakener Str.: frühzeitig auf den linken Geh/Radweg wechseln	PI; -6454,14392 -6461,14323 -6465,14291 -6458,14292
 Ellerbeker Str. - Behmstr.: links entlang des Sportplatzes fahren	CP2; 9727,16188 9754,16183
 Am Hohenzollernkanal: keine Unterquerung der Bernauer Brücke möglich	CP 44,15897 -196,16060 -224,16095 -238,16095 -822,16535 -910,16608
 Roonstr./Flotowstr.: Hindenburgdamm kann über Fußgängerfurt gequert werden	CP; 4265,4484 4515,4581 4651,4638
@@ -200,8 +200,8 @@ Prenzlauer Promenade - Arnold-Zweig-Str.: bereits an der Treskowstr. auf den lin
 Laudaer Str. - Prenzlauer Promenade: zunächst auf dem linken Geh/Radweg fahren, an der Kissingenstr. die Straßenseite wechseln	CP; 11785,17729 11843,17737 11884,18063
 Seidelstr. - Klixstr.: bereits an der Autobahnbrücke die Straßenseite wechseln	PI; 3570,17938 3706,17931 3833,17929 3871,18144
 Klixstr. - Scharnweberstr.: zunächst den linken Gehweg bis zur Antonienstr. benutzen	CP; 3871,18144 3833,17929 3930,17920
-Falkenseer Chaussee - Darbystr.: bereits am Bahnübergang die Straßenseite wechseln	PI; -5609,15780 -5526,15757 -5505,15859
-Darbystr. - Falkenseer Chaussee: zunächst auf dem linken Gehweg bis zur Frankenwaldstr. vorfahren	CP; -5505,15859 -5526,15757 -5473,15742
+Falkenseer Chaussee - Darbystr.: bereits am Bahnübergang die Straßenseite wechseln	PI; -5605,15790 -5523,15766 -5505,15859
+Darbystr. - Falkenseer Chaussee: zunächst auf dem linken Gehweg bis zur Frankenwaldstr. vorfahren	CP; -5505,15859 -5523,15766 -5470,15750
 B1 - Ilsensteinweg: bereits an der Ampel Spanische Allee die Gehwegseite wechseln	PI; -1646,2434 -1626,2441 -1724,2743
 Ilsensteinweg - B1: ggfs. die Ampel an der Spanischen Allee zur rechten Hand zum Überqueren der Straße benutzen	CP; -1724,2743 -1626,2441 -1340,2554
 Theodorstr. - Alt-Mahlsdorf: ggfs. die nächste Ampel benutzen	CP; 24907,11186 24893,11252 24824,11256
@@ -354,7 +354,7 @@ Straße an der Fußgängerampel vor der Moschee überqueren	CP; 10691,8532 10796,849
 Schulzendorfer Str. - Reinickendorfer Str.: bereits an der Ampel Müllerstr./Schulzendorfer Str. auf den linken Gehweg wechseln	PI; 8057,14876 8091,14895 8037,14958
 Karl-Marx-Allee - Berolinastr.: bereits an der Kreuzung Alexanderstr./Otto-Braun-Str. auf den linken Gehweg wechseln	PI; 11226,12945 11289,12908 11367,12940
 Reußstr. - Streitstr.: auf den linken Gehweg bis zur Fußgängerampel fahren	CP; -3129,16931 -3023,16925 -3018,16974
-Streitstr. - Reußstr: bereits an der Ampel Goltzstr. auf den linken Gehweg wechseln	PI; -3031,16807 -3023,16925 -3129,16931
+Streitstr. - Reußstr: bereits an der Ampel Goltzstr. auf den linken Gehweg wechseln	PI; -3029,16823 -3023,16925 -3129,16931
 Treskowallee - Traberweg: bereits an der Ampel Hegemeisterweg auf den linken Gehweg wechseln	PI; 18406,7760 18570,8025 18490,8104
 Traberweg - Treskowallee: den linken Gehweg bis zur Kreuzung Ehrlichstr. benutzen	CP; 18490,8104 18570,8025 18657,8163 18676,8236
 Columbiadamm - Straße 645: ggfs. bereits an der Ampel Columbiadamm/Fontanestr. auf den linken Gehweg wechseln	PI; 11632,8302 11512,8278 11441,8280 11419,8077
@@ -383,3 +383,5 @@ Karl-Lade-Str.: rechts von der Straßenbahnstrasse bleiben	CP2; 14821,13674 14987
 (Hansastr. - Gartenstr.): an der Fußgängerampel abbiegen	CP2; 15187,16185 15102,16212
 Mergenthalerring: links halten	CP2; 14469,8455 14422,8407
 Karl-Marx-Allee - Berolinastr.: hinter dem U-Bahnhofeingang Schillingstr. rechts abbiegen	CP; 11635,12745 11589,12768 11601,12858
+Jüdenstr. - Falkenseer Platz: auf den linken Gehweg bis zum Falkenseer Platz fahren	CP; -3239,14641 -3209,14662 -3255,14685
+Am Juliusturm - Jüdenstr.: bereits an der Ampel Hoher Steinweg auf den linken Gehweg wechseln	PI; -3150,14631 -3209,14662 -3239,14641

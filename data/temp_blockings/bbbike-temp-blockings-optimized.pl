@@ -2833,18 +2833,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
        undef,
        undef,
        undef,
-       {
-         'until' => 1373767200,
-         'text' => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 8. Juli 2013, 17 Uhr bis 14. Juli 2013, 4 Uhr',
-         'from' => 1373209200,
-         'id' => 2330,
-         'data' => '#: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130618.1615.386236.html
-#: source_id: INKO_118652
-userdel	2::inwork 18731,8577 18709,8423
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3131,7 +3120,7 @@ userdel	q4::inwork 10473,18113 10545,18143 10582,18159
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2013-07-09
+#: last_checked: 2013-07-13
 userdel	q2::inwork 5258,11285 5247,10992
 ',
          'type' => 'handicap'
@@ -3247,6 +3236,8 @@ userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4
          'from' => 1372456800,
          'id' => 2446,
          'data' => '#: XXX wie sieht die Situation nach den Bauarbeiten aus, kommen Radfahrer noch weiterhin gut durch?
+#: XXX zurzeit (2013-07-13) existiert keine Fahrbahn und keine Bürgersteige mehr, man muss auf den Parkweg ausweichen
+#: last_checked: 2013-07-13
 #: next_check: 2013-12-01
 userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
 ',

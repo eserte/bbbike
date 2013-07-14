@@ -355,7 +355,7 @@ Saganer Str.: Bahngelände	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,91
 Triniusstr.	1 18339,6660 18273,6606
 Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
-Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
+Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4755,14393
 Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
 Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22451,4441
 Zitadellenweg/BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1616,14527
@@ -959,6 +959,7 @@ Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
+Ritterstr.	1 -3360,14525 -3316,14504
 Mittelstreifen	3nocross::ignrte 2767,7592 2750,7444 2744,7397
 Hammersteinstr. -> Warnemünder Str.: Mittelstreifen	3::igndisp 2719,7415 2750,7444 2767,7592
 Warnemünder Str. -> Hammersteinstr.: Mittelstreifen	3::igndisp 2744,7397 2750,7444 2719,7415
@@ -1039,6 +1040,8 @@ Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
 nicht überquerbar	3nocross::ignrte 504,11243 571,11255 704,11273
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3501,14365 -3506,14306
+Altstädter Ring -> Münsingerstr./Martin-Albertz-Weg: Mittelstreifen	3::igndisp -3501,14365 -3498,14413 -3535,14408
+Münsingerstr./Martin-Albertz-Weg -> Altstädter Ring: Mittelstreifen	3::igndisp -3535,14408 -3498,14413 -3481,14523
 Altstädter Ring -> Augusta-Ufer: Mittelstreifen	3::igndisp -3498,14413 -3501,14365 -3440,14498
 Augusta-Ufer -> Altstädter Ring: Mittelstreifen	3::igndisp -3440,14498 -3501,14365 -3506,14306
 Mittelstreifen mit Zaun	3nocross::ignrte -3501,14365 -3506,14306 -3517,14218 -3552,14082
@@ -1100,11 +1103,11 @@ Attilastr. -> Ludwigsburger Weg: Mittelstreifen	3::igndisp 7263,4281 7310,4308 7
 Straßenbahn	3nocross::ignrte 18010,7133 17934,7029 17919,6978
 Edisonstr. -> Fuststr.: Straßenbahn	3::igndisp 17919,6978 17934,7029 17823,7203
 Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18010,7133
-Mittelstreifen	3nocross::ignrte -5039,15618 -5154,15651 -5373,15714 -5473,15742
-Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5039,15618 -5154,15651 -5192,15517
-Remscheider Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5192,15517 -5154,15651 -5373,15714
-Oberhauser Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5426,15528 -5373,15714 -5473,15742
-Falkenseer Chaussee -> Oberhauser Str.: Mittelstreifen	3::igndisp -5154,15651 -5373,15714 -5426,15528
+Mittelstreifen	3nocross::ignrte -5039,15618 -5153,15658 -5370,15721 -5470,15750
+Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5039,15618 -5153,15658 -5192,15517
+Remscheider Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5192,15517 -5153,15658 -5370,15721
+Falkenseer Chaussee -> Oberhauser Str.: Mittelstreifen	3::igndisp -5153,15658 -5370,15721 -5426,15528
+Oberhauser Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5426,15528 -5370,15721 -5470,15750
 Straßenbahntrasse	3nocross::ignrte 20269,14256 20241,14016 20210,13776
 Cecilienstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20281,14012 20241,14016 20210,13776
 Allee der Kosmonauten -> Cecilienstr.: Straßenbahntrasse	3::igndisp 20269,14256 20241,14016 20281,14012
@@ -1174,7 +1177,7 @@ Berliner Allee -> Wegenerstr.: Straßenbahntrasse	3::igndisp 14610,16522 14556,16
 Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross::ignrte -3043,16601 -3046,16548 -3050,16429
 Streitstr. -> Wegscheider Str.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3050,16429 -3046,16548 -3214,16561
 Wegscheider Str. -> Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3214,16561 -3046,16548 -3043,16601
-Mittelstreifen	3nocross::ignrte -3031,16807 -3023,16925 -3018,16974
+Mittelstreifen	3nocross::ignrte -3029,16823 -3023,16925 -3018,16974
 Mittelstreifen	3nocross::ignrte 10759,1112 10827,1140 11002,1211
 Marienfelder Chaussee -> Wingerter Str.: Mittelstreifen	3::igndisp 11002,1211 10827,1140 10845,1026
 Wingerter Str. -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 10845,1026 10827,1140 10759,1112
@@ -1965,11 +1968,27 @@ Straßenbahntrasse	3nocross::ignrte -13311,462 -13203,434 -13157,394
 Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,281 -13203,434 -13311,462
 Kiepenheuerallee -> Johannes-Lepsius-Str.: Straßenbahntrasse	3::igndisp -13157,394 -13203,434 -13244,281
 Mittelstreifen	3nocross::ignrte -3824,13350 -3813,13404 -3803,13464
-Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3705,13386 -3813,13404 -3824,13350
-Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -3705,13386
+Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3707,13377 -3813,13404 -3824,13350
+Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -3707,13377
 Mittelstreifen	3nocross::ignrte -4882,12061 -4637,11982 -4500,11937
 Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4500,11937 -4637,11982 -4687,11885
 Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4882,12061
+Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3746,13622
+Ziegelhof, Grünanlage -> Klosterstr.: Mittelstreifen	3::igndisp -3680,13512 -3789,13519 -3803,13464
+Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3746,13622 -3789,13519 -3680,13512
+Mittelstreifen	3nocross::ignrte -3621,13884 -3662,13797 -3677,13769 -3701,13719
+Klosterstr. -> Borkumer Str.: Mittelstreifen	3::igndisp -3677,13769 -3662,13797 -3849,13848
+Borkumer Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3849,13848 -3662,13797 -3621,13884
+Sedanstr. -> Klosterstr.: Mittelstreifen	3::igndisp -3595,13729 -3677,13769 -3701,13719
+Klosterstr. -> Sedanstr.: Mittelstreifen	3::igndisp -3662,13797 -3677,13769 -3595,13729
+Mittelstreifen	3nocross::ignrte -4239,12626 -4180,12690 -4116,12761 -4058,12838
+Wilhelmstr. -> Ulmenstr.: Mittelstreifen	3::igndisp -4116,12761 -4180,12690 -4053,12632
+Ulmenstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -4053,12632 -4180,12690 -4239,12626
+Sprengelstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -4026,12720 -4116,12761 -4180,12690
+Wilhelmstr. -> Sprengelstr.: Mittelstreifen	3::igndisp -4058,12838 -4116,12761 -4026,12720
+Mittelstreifen	3nocross::ignrte -3999,12912 -3962,12973 -3913,13054
+Wilhelmstr. -> Zimmerstr.: Mittelstreifen	3::igndisp -3913,13054 -3962,12973 -3942,12957
+Zimmerstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -3942,12957 -3962,12973 -3999,12912
 Straßenbahntrasse	3nocross::ignrte 10431,12709 10387,12760 10360,12793
 Spreegasse -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10309,12700 10387,12760 10360,12793
 Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10431,12709 10387,12760 10309,12700
@@ -1986,6 +2005,7 @@ Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 Mittelstreifen	3nocross::ignrte 15662,16656 15735,16698 15776,16721
 Hansastr. -> Stadion Buschallee: Mittelstreifen	3::igndisp 15776,16721 15735,16698 15759,16671
 Stadion Buschallee -> Hansastr.: Mittelstreifen	3::igndisp 15759,16671 15735,16698 15662,16656
+Mittelstreifen	3nocross::ignrte -3255,14685 -3209,14662 -3150,14631
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -1996,6 +2016,9 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen bzw. steile Rampe benutzen	0:30:90 1523,13377
+tragen (7+9 Stufen)	0:25 -3621,13884 -3513,13800 -3503,13773
+tragen (7 Stufen)	0:14:-84 -4744,14392
 tragen (2 Stufen)	0:5:-93 12572,14836
 tragen (3+5 Stufen)	0:15:5 9366,6150
 tragen (3+3+2+2 Stufen)	0:20:84 9244,3872
@@ -2104,7 +2127,7 @@ tragen (36 Stufen)	0:35:78 17759,11768
 tragen (15 Stufen)	0:30:-198 4710,23263
 tragen (ca. 30 Stufen)	0:30:-65 1179,13532
 tragen (7 Stufen)	0:20:-7 9762,16119
-tragen (ca. 10 Stufen)	0:20:-257 -6442,14286
+tragen (3+20 Stufen)	0:40:-263 -6458,14292
 tragen (ca. 35 Stufen)	0:30:-75 7621,7105
 tragen (ca. 35 Stufen)	0:30:-75 7655,7096
 tragen (30 Stufen)	0:30:-53 15571,4168
@@ -2180,8 +2203,8 @@ tragen (Treppe, 32 Stufen)	0:40:-7 3054,13638
 tragen (Treppe, 19 Stufen)	0:25:41 20939,2389
 tragen (Treppe)	0:30:-43 -633,12739
 tragen (Treppe)	0:30:-118 -7418,181
-tragen (Treppe, ca. 50 Stufen)	0:50:-64 -6933,14317
-tragen (Treppe, 50 Stufen)	0:50:2 -6934,14291
+tragen (Treppe, 56 Stufen)	0:50:-64 -6933,14317
+tragen (Treppe, 56 Stufen)	0:50:2 -6934,14291
 tragen (Treppe)	0:30:-233 20673,7260
 tragen (Treppe, ca. 6 Stufen)	0:15:-222 15488,8508
 tragen (Treppe, 50 Stufen)	0:50:-151 -12328,1941
@@ -2197,6 +2220,19 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:5:-263:trailer=20 -5681,15113
+Drängelgitter	BNP:5:-251:trailer=20 -5689,15114
+Drängelgitter	BNP:3:-173:trailer=10 -4153,16463
+Drängelgitter	BNP:3:-180:trailer=10 -4153,16562
+Drängelgitter	BNP:3:-165:trailer=10 -4152,16580
+Drängelgitter	BNP:3:-178:trailer=10 -4149,16670
+Drängelgitter	BNP:3:-170:trailer=10 -4149,16682
+Drängelgitter	BNP:3:-181:trailer=10 -4151,16772
+Drängelgitter	BNP:3:-172:trailer=10 -4151,16787
+Drängelgitter	BNP:3:-179:trailer=10 -4150,16849
+Drängelgitter	BNP:3:-171:trailer=10 -4150,16864
+Drängelgitter	BNP:3:-179:trailer=10 -4149,16929
+weites Drängelgitter	BNP:2:-264:trailer=7 -3436,16838
 Schranke	BNP:3:-20:trailer=10 5003,19833
 Schranke	BNP:0:-20:trailer=3 5003,19833
 Drängelgitter	BNP:3:-90:trailer=10 10173,1049
@@ -2277,7 +2313,7 @@ enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30:-19:trailer=no 10583,15
 Metallstange	BNP:3:-72:trailer=10 -5070,11199
 Metallstange	BNP:3:-72:trailer=10 -5082,11155
 Drängelgitter/Schranke	BNP:3:-194:trailer=10 -8113,13467
-Schranke	BNP:3:-29:trailer=10 -3451,13300
+Schranke	BNP:3:-27:trailer=10 -3451,13300
 Drängelgitter	BNP:3:4:trailer=10 -4760,13980
 Schranke	BNP:3:45:trailer=10 8828,13434
 Schranke	BNP:3:-96:trailer=10 8262,17361
@@ -2509,6 +2545,7 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
 Drängelgitter	BNP:3:64:trailer=10 49739,-90894
+Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -3441,13270 -3462,13256 -3467,13240 -3526,13196
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9852,12409
 Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp 9984,12426 9934,12420 9943,12364
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8828,13434 8800,13389 8764,13372

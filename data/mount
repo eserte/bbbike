@@ -475,7 +475,6 @@ Steigung 2.9% (Fercher Str. (Hellersdorf))	St; 22603,15188 22751,15191
 Steigung 2.9% (Fehrbelliner Str. (Mitte, Prenzlauer Berg))	St; 10695,13952 10612,14001
 Steigung 2.9% (Fanningerstr.)	St; 16359,12207 16445,12193
 Steigung 2.9% (Düsterhauptstr.)	St; 4533,22399 4603,22334
-Steigung 2.9% (Crusiusstr.)	St; 2112,12187 2013,12209
 Steigung 2.9% (Bautzener Str.)	St; 8183,9260 8182,9240
 Steigung 2.9% (Baumeisterstr.)	St; 6283,7231 6191,7122
 Steigung 2.9% (Atzpodienstr.)	St; 16413,11906 16445,12193
@@ -601,6 +600,7 @@ Steigung 2.6% (Flughafenstr.)	St; 12349,8464 12195,8436
 Steigung 2.6% (Erbacher Str.)	St; 1704,9293 1677,9404
 Steigung 2.6% (Dämeritzstr.)	St; 32512,2621 32445,2716
 Steigung 2.6% (Delbrückstr. (Neukölln))	St; 12981,6689 12860,6667
+Steigung 2.6% (Crusiusstr.)	St; 2112,12187 1999,12207
 Steigung 2.6% (Christinenstr.)	St; 10695,13952 10756,14067
 Steigung 2.6% (Chamierstr.)	St; 15801,15706 15840,15806
 Steigung 2.6% (Büchenbronner Steig)	St; 5291,23072 5357,23004
@@ -901,7 +901,6 @@ Steigung 2.1% (Hermannstr. (Wannsee))	St; -6124,1884 -6122,1834
 Steigung 2.1% (Hermannstr. (Wannsee))	St; -6122,1834 -6104,1764
 Steigung 2.1% (Hermannstr. (Wannsee))	St; -6104,1764 -6084,1715
 Steigung 2.1% (Hauptstr. (Schöneberg, Friedenau))	St; 7381,9165 7315,9038
-Steigung 2.1% (Fürstenbrunner Weg)	St; 1901,13061 1935,12761
 Steigung 2.1% (Friedrichsbrunner Str.)	St; 12301,5783 12284,5929
 Steigung 2.1% (Friedrich-Hanisch-Str.)	St; -6449,5282 -6640,5408
 Steigung 2.1% (Fregestr.)	St; 5657,6451 5629,6407
@@ -975,6 +974,7 @@ Steigung 2.0% (Glaschkestr.)	St; 16159,12301 16144,12388
 Steigung 2.0% (Glaschkestr.)	St; 16144,12388 16147,12424
 Steigung 2.0% (George-C.-Marshall-Brücke)	St; 8241,11024 8205,10979
 Steigung 2.0% (Gartenstr. (Bohnsdorf))	St; 22347,-19 22168,-71
+Steigung 2.0% (Fürstenbrunner Weg)	St; 1892,13058 1929,12741
 Steigung 2.0% (Friedrich-Olbricht-Damm)	St; 4879,14637 5056,14713
 Steigung 2.0% (Freienbrinker Saum)	St; 30686,4731 30810,4765
 Steigung 2.0% (Endestr.)	St; -6039,1683 -6054,1608
@@ -1577,8 +1577,6 @@ Steigung 1.3% (Havelchaussee)	St; -3296,3686 -3490,4212
 Steigung 1.3% (Gotha-Allee)	St; 77,12764 341,12652
 Steigung 1.3% (Gotha-Allee)	St; 109,12853 77,12764
 Steigung 1.3% (Gotenstr. (Schöneberg))	St; 7480,7683 7499,7880
-Steigung 1.3% (Fürstenbrunner Weg)	St; 1545,13418 1610,13380
-Steigung 1.3% (Fürstenbrunner Weg)	St; 1488,13454 1545,13418
 Steigung 1.3% (Falkentaler Steig)	St; 2903,24264 2873,24313
 Steigung 1.3% (Falkentaler Steig)	St; 2873,24313 2815,24405
 Steigung 1.3% (Eisenzahnstr.)	St; 3699,9613 3694,9330
@@ -1637,7 +1635,6 @@ Steigung 1.2% (Rüdigerstr. (Lichtenberg))	St; 16389,12394 16485,12384
 Steigung 1.2% (Richterstr. (Mariendorf))	St; 9099,4204 9107,4103
 Steigung 1.2% (Reichsstr.)	St; 481,12319 620,12144
 Steigung 1.2% (Reichsstr.)	St; 269,12576 329,12503
-Steigung 1.2% (Quellenweg)	St; 1610,13380 1551,13377
 Steigung 1.2% (Püttbergeweg)	St; 31670,4365 31591,4361
 Steigung 1.2% (Püttbergeweg)	St; 31591,4361 31547,4359
 Steigung 1.2% (Prinzenstr. (Mariendorf))	St; 9006,4196 9099,4204
@@ -1716,8 +1713,6 @@ Steigung 1.2% (Am Steilhang)	St; 27922,141 27975,107
 Steigung 1.2% (Am Schonungsberg)	St; 30655,4186 30605,4028
 Steigung 1.2% (Am Postfenn)	St; -1490,10734 -1490,10834
 Steigung 1.2% (Adolfstr. (Kaulsdorf))	St; 22751,11381 22743,11540
-Steigung 1.2% ((Spandauer Damm - Fürstenbrunnerweg): Qualität?)	St; 1601,12908 1459,12475
-Steigung 1.2% ((Spandauer Damm - Fürstenbrunnerweg): Qualität?)	St; 1551,13377 1601,12908
 Steigung 1.2% ((Mauerweg Spandau))	St; -7261,12299 -7342,12349
 Steigung 1.2% ((Benekendorffstr - Lübars))	St; 6674,23683 6744,23695
 Steigung 1.2% ((Benekendorffstr - Lübars))	St; 6457,23577 6674,23683

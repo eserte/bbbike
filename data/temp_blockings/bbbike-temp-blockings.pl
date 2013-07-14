@@ -1784,8 +1784,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -3913,13054 -3886,13120 -3824,13350
-userdel	2 -3913,13054 -3962,12973 -3999,12912 -4043,12833
-userdel	2 -4043,12833 -4099,12763 -4174,12683
+userdel	2 -3913,13054 -3962,12973 -3999,12912 -4058,12838
+userdel	2 -4058,12838 -4116,12761 -4180,12690
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -2363,7 +2363,7 @@ EOF
        text  => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Weißenburger Str. gesperrt bis 02.07.2006 (Sommerfest Wilhelmstadt) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3667,12919 -3693,13012 -3783,13261 -3824,13350
+userdel	2 -3667,12919 -3693,13012 -3786,13267 -3824,13350
 userdel	2 -3667,12919 -3658,12854 -3650,12762
 EOF
      },
@@ -4451,7 +4451,7 @@ EOF
        text  => 'Wilhelmstraße Richtung Pichelsdorf zwischen Einmündung Pichelsdorfer Straße und Einmündung Gatower Straße Baustelle, gesperrt bis 08.05.2006 13:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 -3824,13350 -3886,13120 -3913,13054 -3962,12973 -3999,12912 -4043,12833 -4099,12763 -4174,12683 -4239,12626 -4300,12571 -4351,12460
+userdel	1 -3824,13350 -3886,13120 -3913,13054 -3962,12973 -3999,12912 -4058,12838 -4116,12761 -4180,12690 -4239,12626 -4300,12571 -4351,12460
 EOF
      },
      { from  => 1146801600, # 2006-05-05 06:00
@@ -4776,7 +4776,7 @@ userdel	2::temp 8021,11636 8016,11770 8172,11679
 userdel	2::temp 7816,12150 7875,12363
 userdel	2::temp 7504,11512 7382,11588 7163,11738 7287,11763 7535,11677 7606,11629 7621,11620 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8016,11770
 userdel	2::temp 7669,11586 7711,11558
-userdel	2::temp 8022,12016 8016,11770 7801,11875 7717,11918 7658,11947 7634,11920 7518,11890 7449,11883 7240,11907 7182,11870 7173,11864 7058,11809 7163,11738 6980,11583 6809,11570
+userdel	2::temp 8022,12016 8016,11770 7801,11875 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7182,11870 7173,11864 7058,11809 7163,11738 6980,11583 6809,11570
 userdel	2::temp 7039,12314 7383,12095
 userdel	2::temp 7058,11809 6778,11742
 userdel	2::temp 8354,12416 8546,12279
@@ -8813,7 +8813,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005810',
        data  => <<EOF,
-userdel	2::inwork 1971,12368 1935,12761 1901,13061
+userdel	2::inwork 1971,12368 1929,12741 1892,13058
 userdel	2::inwork 1858,13231 1610,13380 1545,13418
 userdel	2::inwork 931,14268 984,14086 1053,13790 1124,13599
 userdel	2::inwork 1159,13541 1175,13513 1193,13485 1488,13454
@@ -10261,7 +10261,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006856',
        data  => <<EOF,
-userdel	2::temp -3650,12762 -3658,12854 -3667,12919 -3693,13012 -3783,13261 -3824,13350
+userdel	2::temp -3650,12762 -3658,12854 -3667,12919 -3693,13012 -3786,13267 -3824,13350
 EOF
      },
      { from  => 1192310039, # 2007-10-13 23:13
@@ -15803,7 +15803,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013995',
        data  => <<EOF,
-userdel	q4::inwork; -1258,13552 -990,13502 -729,13415 -346,13349 -307,13279 -264,13009
+userdel	q4::inwork; -1258,13552 -990,13502 -795,13437 -729,13415 -346,13349 -307,13279 -264,13009
 EOF
      },
      { from  => 1251530387, # 2009-08-29 09:19
@@ -18002,7 +18002,7 @@ userdel	2::temp 7039,12314 7383,12095
 userdel	2::temp 7795,11823 7777,11787
 userdel	2::temp 6778,11742 7058,11809 6809,11979
 userdel	2::temp 8091,11992 8089,12041
-userdel	2::temp 8018,12131 7827,12105 7777,12098 7460,12054 7658,11947 7634,11920 7518,11890 7449,11883 7240,11907 7182,11870 7173,11864 7058,11809 7163,11738 6980,11583
+userdel	2::temp 8018,12131 7827,12105 7777,12098 7460,12054 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7182,11870 7173,11864 7058,11809 7163,11738 6980,11583
 userdel	2::temp 7460,12054 6857,11992
 EOF
      },
@@ -21137,7 +21137,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2013-07-09
+#: last_checked: 2013-07-13
 userdel	q2::inwork 5258,11285 5247,10992
 EOF
      },
@@ -21408,6 +21408,8 @@ EOF
        source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20130613.1320.386040.html',
        data  => <<EOF,
 #: XXX wie sieht die Situation nach den Bauarbeiten aus, kommen Radfahrer noch weiterhin gut durch?
+#: XXX zurzeit (2013-07-13) existiert keine Fahrbahn und keine Bürgersteige mehr, man muss auf den Parkweg ausweichen
+#: last_checked: 2013-07-13
 #: next_check: 2013-12-01
 userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
 EOF

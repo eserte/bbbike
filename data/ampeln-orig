@@ -252,6 +252,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5381,11847
 	X 5478,11860
 	X 5900,11913
+#: XXX_prog gilt nicht für rechtsabbiegende Radfahrer
 	X 6642,12010
 	X 4981,12252
 	X 5018,12322
@@ -704,6 +705,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 8965,11825
 	X 8172,11679
 	F 8065,11349
+#: XXX_prog gilt nicht für Radfahrer in Richtung West->Ost
 	X 5758,11895
 	X 14211,11552
 	X 15863,11992
@@ -1404,11 +1406,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -5039,15618
 	X -4544,15940
 	X -3997,15664
-	X -3708,16654
+	X -3715,16710
 	X -2856,15687
 	X -3040,16246
-	X -3031,16807
-#: note: "F" laut Luftbild
+	F -3029,16823
 	F -3043,16601
 	X -2959,17507
 	X -302,15546
@@ -1469,7 +1470,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 20839,15978
 	X -8784,13321
 	X -8050,13080
-	X -6398,14969
+	X -6405,14971
 	X -6369,13858
 	X -6325,13668
 	X -6093,12801
@@ -1480,7 +1481,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -4731,13135
 	X -5595,13916
 	X -4759,13992
-	X -4741,14233
+	X -4748,14237
 	X -4724,14482
 #: note: gegen 23:30 ausgeschaltet (2010-02-15)
 	X -4220,14311
@@ -1938,7 +1939,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	B0 13302,2554
 	B0 13418,2357
 	F 14252,1945
-	F 1901,13061
+	F 1892,13058
 	F 9474,16297
 	F 12990,11006
 	X 21624,11379
@@ -1975,10 +1976,10 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: note: wahrscheinlich eine Anforderungsampel
 	F 9771,12400
 #: section: Osthavelländische Eisenbahn vvv
-	B0 -5487,16942
-	B0 -5551,16323
-	B0 -5609,15780
-	B0 -5680,15112
+	B0 -5480,16958
+	B0 -5544,16339
+	B0 -5605,15790
+	B0 -5686,15113
 	B0 -5718,14828
 #: section: ^^^
 	X 9183,15909
@@ -2006,7 +2007,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 16485,12384
 	X 1945,2127
 	F 4927,3147
-#: note: Luftbild
 	X -3913,13054
 	B -5242,17405
 	F 17130,16032
@@ -2216,7 +2216,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -1810,16391
 	X -1675,16813
 #: note: Bedarfsampeln, am Wochenende abgeschaltet (by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4302&options=4)
-	F -2072,13403
+	F -2088,13413
 	F 417,12115
 	F 6447,11144
 	F -196,16187
@@ -2420,7 +2420,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -7762,14067
 	F -4924,14535
 #: XXX Baustellenampel
-#: last_checked: 2012-08-04
+#: last_checked: 2013-07-13
+#: check_frequency: 180d
 	X::inwork -6861,15129
 	F 20614,18481
 	X 5628,17631

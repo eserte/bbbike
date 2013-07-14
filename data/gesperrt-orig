@@ -449,7 +449,7 @@ Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658
 # REMOVED (hier nicht) --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
 #: XXX_indoor bei osm fehlt oneway
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
-Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4750,14393
+Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4755,14393
 Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
 Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22451,4441
 Zitadellenweg/BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1616,14527
@@ -1243,7 +1243,7 @@ Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
-#: next_check: 2013-07-15
+#: next_check: 2013-07-20
 #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Niemannstr.	1s:q4 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
@@ -1277,6 +1277,7 @@ Ludolfinger Platz	1s:q4 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2
 Sewanstr. - Balatonstr.	1s:q3 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
+Ritterstr.	1 -3360,14525 -3316,14504
 #
 ####################################################################
 #
@@ -1343,7 +1344,7 @@ Allee der Kosmonauten: Straßenbahntrasse	3nocross 20944,14840 20980,14914 21163,
 Am Nordgraben: Mittelstreifen	3nocross 5201,20103 5299,20104 5399,20106 5517,20120
 Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7368,4342
 Edisonstr.: Straßenbahn	3nocross 18010,7133 17934,7029 17919,6978
-Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5154,15651 -5373,15714 -5473,15742
+Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5153,15658 -5370,15721 -5470,15750
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20525,15571 20641,15622
@@ -1368,7 +1369,7 @@ Suermondtstr: Straßenbahntrasse	3nocross 16095,16331 16260,16282 16416,16236
 Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
 #: by: Jörg Böhmer
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
-Streitstr.: Mittelstreifen	3nocross -3031,16807 -3023,16925 -3018,16974
+Streitstr.: Mittelstreifen	3nocross -3029,16823 -3023,16925 -3018,16974
 #: note: Luftbild
 Marienfelder Chaussee: Mittelstreifen	3nocross 10759,1112 10827,1140 11002,1211
 Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5545,19909 5533,19811
@@ -1611,12 +1612,17 @@ Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
 Wilhelmstr.: Mittelstreifen	3nocross -3824,13350 -3813,13404 -3803,13464
 Heerstr.: Mittelstreifen	3nocross -4882,12061 -4637,11982 -4500,11937
 #: by: ^^^
+Klosterstr.: Mittelstreifen	3nocross -3803,13464 -3789,13519 -3746,13622
+Klosterstr.: Mittelstreifen	3nocross -3621,13884 -3662,13797 -3677,13769 -3701,13719
+Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4116,12761 -4058,12838
+Wilhelmstr.: Mittelstreifen	3nocross -3999,12912 -3962,12973 -3913,13054
 Spandauer Str.: Straßenbahntrasse	3nocross 10431,12709 10387,12760 10360,12793
 Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7821,12934 7776,12943 7595,12980
 Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 Hansastr.: Mittelstreifen	3nocross 15662,16656 15735,16698 15776,16721
+Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -1629,6 +1635,9 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen bzw. steile Rampe benutzen	0:30 1523,13377
+tragen (7+9 Stufen)	0:25 -3621,13884 -3513,13800 -3503,13773
+tragen (7 Stufen)	0:14 -4744,14392
 tragen (2 Stufen)	0:5 12572,14836
 tragen (3+5 Stufen)	0:15 9366,6150
 tragen (3+3+2+2 Stufen)	0:20 9244,3872
@@ -1777,7 +1786,7 @@ tragen (36 Stufen)	0:35 17759,11768
 tragen (15 Stufen)	0:30 4710,23263
 tragen (ca. 30 Stufen)	0:30 1179,13532
 tragen (7 Stufen)	0:20 9762,16119
-tragen (ca. 10 Stufen)	0:20 -6442,14286
+tragen (3+20 Stufen)	0:40 -6458,14292
 #: note: Luftbild (Stufenanzahl)
 tragen (ca. 35 Stufen)	0:30 7621,7105
 #: note: Luftbild (Stufenanzahl)
@@ -1888,9 +1897,11 @@ tragen (Treppe)	0:30 -633,12739
 tragen (Treppe)	0:30 -7418,181
 #: by: stefan ruedel:
 #: note: Alexander (mrbubi13) schätzt 50 Stufen vvv
-tragen (Treppe, ca. 50 Stufen)	0:50 -6933,14317
+#: confirmed_by: srt (genaue Stufenzahl)
+tragen (Treppe, 56 Stufen)	0:50 -6933,14317
 #: confirmed_by: http://www.flickr.com/photos/30482855@N04/5555798133/in/pool-39413187@N00/
-tragen (Treppe, 50 Stufen)	0:50 -6934,14291
+#: confirmed_by: srt (genaue Stufenzahl)
+tragen (Treppe, 56 Stufen)	0:50 -6934,14291
 #: note ^^^
 tragen (Treppe)	0:30 20673,7260
 tragen (Treppe, ca. 6 Stufen)	0:15 15488,8508
@@ -1916,6 +1927,21 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: note: doppeltes Drängelgitter vvv
+Drängelgitter	BNP:5::trailer=20 -5681,15113
+Drängelgitter	BNP:5::trailer=20 -5689,15114
+#: note ^^^
+Drängelgitter	BNP:3::trailer=10 -4153,16463
+Drängelgitter	BNP:3::trailer=10 -4153,16562
+Drängelgitter	BNP:3::trailer=10 -4152,16580
+Drängelgitter	BNP:3::trailer=10 -4149,16670
+Drängelgitter	BNP:3::trailer=10 -4149,16682
+Drängelgitter	BNP:3::trailer=10 -4151,16772
+Drängelgitter	BNP:3::trailer=10 -4151,16787
+Drängelgitter	BNP:3::trailer=10 -4150,16849
+Drängelgitter	BNP:3::trailer=10 -4150,16864
+Drängelgitter	BNP:3::trailer=10 -4149,16929
+weites Drängelgitter	BNP:2::trailer=7 -3436,16838
 Schranke	BNP:3::trailer=10 5003,19833
 Schranke	BNP:0::trailer=3 5003,19833
 Drängelgitter	BNP:3::trailer=10 10173,1049
@@ -2341,6 +2367,10 @@ Drängelgitter	BNP:3::trailer=10 49739,-90894
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: last_checked: 2013-07-13
+#: check_frequency: 100d
+Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -3441,13270 -3462,13256 -3467,13240 -3526,13196
 # 
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden!
 #: source_id: INKO_113041
