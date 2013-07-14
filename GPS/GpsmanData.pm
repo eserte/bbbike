@@ -78,6 +78,9 @@ use GPS::Util; # for eliminate_umlauts
 	my $datetime = $wpt->DateTime;
 	if (!defined $datetime || $datetime eq '') {
 	    $datetime = $wpt->Comment;
+	    if (!defined $datetime || $datetime eq '') {
+		return undef;
+	    }
 	}
 	my $epoch;
 	if ($datetime =~ /^(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
