@@ -187,7 +187,15 @@ sub map_mode_activate {
 				 -value => 'perfect'));
 	Tk::grid($t->Radiobutton(-text => 'Bitonic tour (closed)',
 				 -variable => \$use_algorithm,
-				 -value => 'bitonictour-closed'));
+				 -value => 'bitonictour-closed',
+				 -command => sub {
+				     if (!eval { $salesman->can_bitonic_tour_closed_algorithm }) {
+					 if (!main::perlmod_install_advice('Algorithm::TravelingSalesman::BitonicTour')) {
+					     $use_algorithm = 'perfect'; # reset
+					 }
+				     }
+				 },
+				));
     }
 
     $t->bind('<<CloseWin>>' => sub { $t->destroy });

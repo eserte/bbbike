@@ -311,14 +311,22 @@ sub best_path_list_permutor {
     }
 }
 
+sub can_bitonic_tour_closed_algorithm {
+    my $self = shift;
+
+    if (!eval { require Algorithm::TravelingSalesman::BitonicTour; 1 }) {
+	die "The module Algorithm::TravelingSalesman::BitonicTour is not available";
+    }
+
+    1;
+}
+
 sub best_path_bitonic_tour_closed {
     my($self) = @_;
     my $progress  = $self->{Progress};
     $main::escape = 0;
 
-    if (!eval { require Algorithm::TravelingSalesman::BitonicTour; 1 }) {
-	die "The module Algorithm::TravelingSalesman::BitonicTour is not available";
-    }
+    $self->can_bitonic_tour_closed_algorithm;
 
     if ($progress) {
 	$progress->Init(-label => "Abbruch mit Esc");
