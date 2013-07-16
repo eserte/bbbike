@@ -135,7 +135,7 @@ my %rev_category_code;
 	    $rci = 1;
 	}
 	if (@{ $r->[Strassen::COORDS()] } < 2) {
-	    die "Sollte mindestens zwei Koordinaten enthalten, Position " . $s->pos;
+	    die "Sollte mindestens zwei Koordinaten enthalten, Position " . $s->pos . ", Zeile <" . Strassen::arr2line2($r) . ">";
 	}
 
 	# Currently, the "?" in RW...? are ignored
