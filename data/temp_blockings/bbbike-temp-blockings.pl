@@ -18331,7 +18331,7 @@ EOF
        text  => 'Die Wilhelm-Kabus-Str. ist noch nicht komplett fertig gestellt. Unter Umständen ist die Durchfahrt nicht möglich!',
        type  => 'handicap',
        data  => <<EOF,
-	2::inwork 7733,8023 7793,8043 7834,8085 7859,8252 7893,8327 7942,8380 8078,8772
+	2::inwork 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7893,8327 7942,8380 8078,8772
 EOF
      },
      { from  => $isodate2epoch->("2013-07-12 00:00:00"), # 1 Tag Vorlauf

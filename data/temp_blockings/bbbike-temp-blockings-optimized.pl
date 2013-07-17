@@ -2524,16 +2524,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1373839199,
-         'text' => 'Rheinstraße (Friedenau): Veranstaltung (traditionelles Rheinstraßenfest), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (13. und 14. Juli 2013)',
-         'from' => 1373580000,
-         'id' => 2126,
-         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-07-12
+#: last_checked: 2013-07-16
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -142,7 +142,7 @@ Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,1187
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2013-07-02
+#: last_checked: 2013-07-16
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -306,7 +306,7 @@ Zeppelinstr.: Radspuren bis 2015 geplant	?::projected -4724,14482 -4704,14571 -4
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385411.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?)
 Wilhelmstr.: Radspuren bis 2015 geplant	?::projected; -5501,11251 -5455,11321 -5392,11421
 # 
-#: last_checked: 2013-07-05
+#: last_checked: 2013-07-16
 #: check_frequency: 90d
 Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,6404 5823,6413
 # 
@@ -450,11 +450,11 @@ Planstraße zwischen Theodorstr. und Pilgramer Str.: Straße in Planung, Qualität?
 #: next_check: 2013-10-01
 Am Lokdepot: Planung einer Erschließungsstraße	?::inwork 8390,8879 8389,9087
 # 
-#: last_checked: 2013-07-05 vvv
-#: check_frequency: 10d vvv
+#: last_checked: 2013-07-16 vvv
+#: next_check: 2013-08-05 vvv
 Te-Damm/Hoeppnerstr.: Ampelanlage in Bau	?::inwork 9242,7286
 Te-Damm/Manfred-von-Richthofen-Str.: Ampelanlage in Bau	?::inwork 9242,7325
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED (keine interessant Radverbindung --- wassergebundene Decke, unbeleuchtet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4997.html (fertiggestellt) --- #: last_checked: 2013-05-29 --- #: next_check: 2013-06-26 --- Grünanlage an der Teilestr.: Parkwege entstehen, evtl. eine lohnende Abkürzung, Qualität, nachts beleuchtet?	?::inwork 11068,6006 11056,5861 11146,5851 11277,5988
@@ -542,14 +542,14 @@ Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 1
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
-#: last_checked: 2013-06-27
+#: last_checked: 2013-07-16
 #: check_frequency: 90d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
 #: XXX zurzeit (2013-05-23) ein leerer Pfostem am Kottbusser Damm, kommt hier das Fahrradstraßenschild hin?
-#: last_checked: 2013-06-27
+#: last_checked: 2013-07-16
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1110,10 +1110,7 @@ Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshil
 #: next_check: 2014-04-20
 Bebauungsplan 11-35: hier werden einige Straßen (verkehrsberuhigt, zumindest teilweise) entstehen	?::projected 17631,16258 17515,16215 17465,16340 17446,16393 17634,16681 17751,16603 17825,16554 17836,16522 17877,16423 17895,16373 17631,16258
 # 
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458
-#: last_checked: 2013-06-22
-#: check_frequency: 90d
-Brandenburgplatz: wird hier eine Fußgängerampel eingerichtet?	? 23363,5714 23309,5704
+# REMOVED (abgelehnt, siehe Schlussbericht) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458 --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036560602837/560602837/00092292/92-Anlagen/04/B0359SB.pdf (Schlussbericht) --- #: last_checked: 2013-06-22 --- #: check_frequency: 90d --- Brandenburgplatz: wird hier eine Fußgängerampel eingerichtet?	? 23363,5714 23309,5704
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656
 #: next_check: 2014-03-15
@@ -1223,7 +1220,7 @@ Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,87
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4193&options=4
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130613.1630.386060.html (geplanter Baubeginn 8/2013)
-#: last_checked: 2013-05-01
+#: last_checked: 2013-07-16
 #: next_check: 2013-10-01
 Lauterstr.: wird die Straße am Breslauer Platz komplett gesperrt?	?::projected 5810,7337 5817,7223
 # 
@@ -1683,9 +1680,16 @@ Hadburgpfad: genaue Lage? Qualität?	? 17484,12405 17531,12398
 #: note ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5292
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066433/33-Anlagen/02/vzbbvv0509_IV-Benennung_Privatstrasse_Lindensc.pdf
 #: XXX fehlt bei Berlin.coords.data
-Lindenschwärmerallee: genaue Lage? Qualität?	? 21323,11096 21197,11139
+#: XXX Privatstraße
+Lindenschwärmerweg: genaue Lage? Qualität? Existiert die Straße schon?	? 21323,11096 21197,11139
 # 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5291
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066429/29-Anlagen/02/vzb0507_IV-Benennung_Grimmener_Strasse.pdf
+#: XXX fehlt bei Berlin.coords.data
+Grimmener Str.: genaue Lage? Qualität? Existiert die Straße schon?	? 21315,13146 21398,13121
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)
 # 1. Liliensteinweg

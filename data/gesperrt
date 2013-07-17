@@ -1564,8 +1564,8 @@ Jerusalemer Str. -> Leipziger Str.: unbequem passierbarer Mittelstreifen	3::ignd
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12177,14335 12188,14350 12228,14404 12266,14460 12317,14535
 Pasteurstr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12335,14246 12188,14350 12177,14335
 Greifswalder Str. -> Pasteurstr.: Mittelstreifen mit Straßenbahn	3::igndisp 12228,14404 12188,14350 12335,14246
-Jablonskistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11941,14539 12228,14404 12266,14460
-Greifswalder Str. -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12188,14350 12228,14404 11941,14539
+Greifswalder Str. -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12188,14350 12228,14404 11949,14557
+Jablonskistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11949,14557 12228,14404 12266,14460
 Greifswalder Str. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12317,14535 12266,14460 12556,14230
 Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11977,14607 12266,14460 12317,14535
 Chodowieckistr. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11977,14607 12266,14460 12556,14230
@@ -1587,8 +1587,8 @@ Mittelstreifen mit Straßenbahn	3nocross::ignrte 12709,15112 12737,15154 12870,15
 Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12737,15154 12693,15225
 Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12693,15225 12737,15154 12870,15342
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11642,14625 11662,14695 11681,14759
-Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11941,14539 11662,14695 11642,14625
-Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 11681,14759 11662,14695 11941,14539
+Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11949,14557 11662,14695 11642,14625
+Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 11681,14759 11662,14695 11949,14557
 Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3nocross::ignrte 11801,15132 11828,15210 11852,15281
 Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3::igndisp 11657,15271 11828,15210 11852,15281
 Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3::igndisp 11801,15132 11828,15210 11657,15271
@@ -1609,6 +1609,9 @@ Küselstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 12058,15621 11967,15
 Küselstr. -> Zelterstr.: Straßenbahntrasse	3::igndisp 12058,15621 11967,15700 11852,15765
 Zelterstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11852,15765 11967,15700 11997,15834
 Zelterstr. -> Küselstr.: Straßenbahntrasse	3::igndisp 11852,15765 11967,15700 12058,15621
+Straßenbahntrasse	3nocross::ignrte 11435,14023 11468,14121 11476,14142
+Raabestr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11657,14018 11468,14121 11435,14023
+Prenzlauer Allee -> Raabestr.: Straßenbahntrasse	3::igndisp 11476,14142 11468,14121 11657,14018
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11709,14856 11609,14881 11535,14900
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11535,14688 11609,14881 11535,14900
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11709,14856 11609,14881 11535,14688
@@ -1900,7 +1903,6 @@ Wiesenschlag -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -2036,2150 -2074,2
 Mittelstreifen	3nocross::ignrte -2023,2279 -1959,2305 -1646,2434
 Potsdamer Chaussee -> Mutter-Mochow-Weg: Mittelstreifen	3::igndisp -1646,2434 -1959,2305 -1849,2043
 Straßenbahntrasse	3nocross::ignrte 22123,5452 22087,5404 22043,5346 21954,5229
-Bhf.str. -> Am Maria-Jankowski-Park: Straßenbahntrasse	3::igndisp 22043,5346 22087,5404 22018,5452
 Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22018,5452 22087,5404 22123,5452
 Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22046,5305 22043,5346 21954,5229
 Straßenbahngleise	3nocross::ignrte 20834,4035 21053,4162 21146,4229

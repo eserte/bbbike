@@ -589,8 +589,7 @@ Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 2
 Görlitzer Park: teils fester sandiger Weg	Q1- 12671,10042 12686,10045 12690,10062
 Görlitzer Park: teils fester sandiger Weg	Q1- 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Asphalt	Q0 13145,9920 12987,10007 12869,10071 12802,10097
-Görlitzer Park: teils fester sandiger Weg	Q2+ 12670,10160 12567,10211
-Görlitzer Park: Asphalt	Q0 12567,10211 12543,10223
+Görlitzer Park: Asphalt	Q0 12670,10160 12543,10223
 Görlitzer Park: Asphalt	Q0 12543,10223 12506,10244
 Görlitzer Park: teils fester sandiger Weg, teils Kopfsteinpflaster	Q2+ 12506,10244 12384,10368 12328,10442
 Görlitzer Park: Asphalt	Q0 12814,9966 12833,9998 12869,10071
@@ -3240,7 +3239,7 @@ Sandinostr.: Asphalt	Q0 15706,14752 15580,14880
 Max-Brunnow-Str.: Beton	Q0- 14089,13509 14170,13496 14186,13465 14169,13415 14186,13393 14318,13352
 Max-Brunnow-Str.: Beton	Q0- 14307,13318 14318,13352 14345,13443
 Max-Brunnow-Str.: Beton	Q0- 14328,13449 14345,13443 14474,13402
-Max-Brunnow-Str.: Asphalt	Q0- 14474,13402 14536,13383
+Max-Brunnow-Str.: Asphalt	Q0- 14474,13402 14529,13384
 Max-Brunnow-Str. [Geh- und Radweg]: Asphalt	Q0 14170,13496 14328,13449
 Karl-Vesper-Str.: Beton	Q0- 14184,13670 14205,13755 14263,13739
 Herbert-Tschäpe-Str.: guter Asphalt	Q0 14710,14185 14510,14104 14481,14095 14358,14155
@@ -8833,6 +8832,8 @@ Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19
 (Geißenweide - Blenheimstr./Bärensteinstr.): Beton	Q0 21122,14713 21128,14799
 (Geißenweide - Blenheimstr./Bärensteinstr.): Asphalt	Q0 21128,14799 21143,14803 21211,15009 21261,15153 21260,15209
 (Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0 21260,15209 21263,15291
+Dürerplatz: Verbundsteinpflaster	Q1 6243,7033 6275,7004
+Loewenhardtdamm: Asphalt mit einigen Schäden	Q1; 8632,8174 8730,8079
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -9018,7 +9019,11 @@ Hamburger Str. (Mahlsdorf): mäßiger Asphalt	Q1 26662,13876 26785,13925 26847,140
 #: confirmed_by: vito
 Steinbachstr.: guter Asphalt	Q0 19587,3801 19673,3888 19703,3979 19759,4160
 Am Kiebitzpfuhl: mäßiger Asphalt	Q1- 14334,22694 14402,22790 14434,22835 14436,22869
-Marwitzer Str.: guter Beton	Q0 -4763,16809 -4628,16803 -4322,16776 -4152,16779 -4122,16779 -3972,16781
+#: corrected_by: srt (guter Beton -> ...) vvv
+Marwitzer Str.: Asphalt	Q0 -4763,16809 -4628,16803 -4322,16776
+Marwitzer Str.: Verbundsteinpflaster	Q1 -4322,16776 -4152,16779 -4122,16779
+Marwitzer Str.: Asphalt	Q0 -4122,16779 -3972,16781
+#: corrected_by: ^^^
 Ahornstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 344,2679 322,2772 292,2905 255,3085
 Waldsängerpfad: schlechtes Kopfsteinpflaster	Q3 -2638,3281 -2745,3182 -2890,3135
 Gülser Weg: guter Asphalt	Q0 18896,12831 18923,13089
@@ -9435,8 +9440,8 @@ Enkenbacher Weg: guter Asphalt	Q0 27854,330 27734,437 27621,535 27548,598 27471,
 #: corrected_by: srt (Asphalt -> Verbundsteinpflaster)
 Enkenbacher Weg: Verbundsteinpflaster	Q0- 27325,1265 27344,1329
 #: note: es gab auch einen weiteren anonymen, unklaren Beitrag: Verbundstraße Q1, Fußgängerzone (?), q4
-Thomas-Mann-Str.: Asphalt	Q0 12870,15342 12931,15300 12987,15262 13101,15191 13131,15175
-Thomas-Mann-Str.: Asphalt	Q0 13101,15191 13132,15239 13240,15408
+Thomas-Mann-Str.: Asphalt	Q0 12870,15342 12931,15300 12987,15262 13094,15196 13131,15175
+Thomas-Mann-Str.: Asphalt	Q0 13094,15196 13123,15244 13227,15415
 #: confirmed_by: srt
 Löwensteinring: Asphalt	Q0 14812,2661 14703,2553 14682,2532 14599,2451 14497,2486 14477,2505 14467,2514 14411,2568 14408,2708 14407,2746 14500,2864
 #: corrected_by: srt (mäßiger Beton, Q2+ -> ...)
@@ -9862,7 +9867,7 @@ Polkwitzer Str.: schlechtes Kopfsteinpflaster	Q3 21367,-420 21463,-434 21618,-45
 Würmseestr.: guter Asphalt	Q0 22095,1572 22178,1589 22300,1627
 # 
 #: by: steffen (stache-bln): vvv
-(Hanns-Eisler-Str. - Thomas-Mann-Str.): asphaltiert	Q0 13550,14973 13324,15109 13328,15127 13132,15239
+(Hanns-Eisler-Str. - Thomas-Mann-Str.): asphaltiert	Q0 13550,14973 13324,15109 13328,15127 13123,15244
 #: note: wahrscheinlich wie die anderen Straßen im Viertel vvv
 Aurikelweg: Asphalt	Q0 21878,11112 21951,11144
 Alpenveilchenweg: Asphalt	Q0 21953,10936 22028,10968
@@ -10245,7 +10250,7 @@ Eugen-Schönhaar-Str.: Kopfsteinpflaster	Q2 12573,14581 12496,14515 12425,14459
 #: by: ^^^
 # 
 #: by: Matthias Müller
-Jablonskistr.: mäßiges Kopfsteinpflaster	Q2 12228,14404 11941,14539 11662,14695
+Jablonskistr.: mäßiges Kopfsteinpflaster	Q2 12228,14404 11949,14557 11662,14695
 # 
 #: by: Anne Geschke
 Margaretenstr.: schlechtes Kopfsteinpflaster	Q3 3142,4173 3501,4435
@@ -12040,7 +12045,8 @@ Summter Str.: Beton	Q1 24973,8954 25112,9151 25285,9397 25432,9600 25543,9755 25
 # 
 #: by: Florian Schintke:
 #: confirmed_by: Marie-Jo D.:
-Holsteinische Str. (Steglitz): mäßiges Kopfsteinpflaster	Q2 5275,6096 5390,6299 5470,6423 5533,6517 5576,6581 5777,6628
+#: corrected_by: srt (Q2 -> Q2+)
+Holsteinische Str. (Steglitz): mäßiges Kopfsteinpflaster	Q2+ 5275,6096 5390,6299 5470,6423 5533,6517 5576,6581 5777,6628
 # 
 #: by: Wolfgang Thurner: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster Q3 -> mäßiges-schlechtes Kopfsteinpflaster Q2-; Wolfgang Thurner hat 18km/h eingetragen, und rein optisch sah es wie Q2 aus)
@@ -15471,7 +15477,13 @@ Florastr. (Steglitz): Asphalt	Q0 5315,6103 5275,6096 5234,6086
 Im Amtmannsgarten: Asphalt	Q0 12643,1706 12609,1780 12560,1764 12487,1727
 # 
 #: by: Carsten (phoenix): vvv
-Pieskower Weg: Asphalt	Q0 13131,15175 13105,15122 13070,15063 12894,15165 12864,15185 12931,15300
+#: confirmed_by: srt
+Pieskower Weg: Asphalt	Q0 13131,15175 13105,15122 13070,15063
+#: corrected_by: srt (Q0 -> Q1)
+Pieskower Weg: Asphalt mit Schäden	Q1 13070,15063 12940,15138
+#: confirmed_by: srt
+Pieskower Weg: Asphalt	Q0 12940,15138 12894,15165 12864,15185 12931,15300
+#: confirmed_by: srt
 Pieskower Weg: Asphalt	Q0 12894,15165 12812,15053
 #: by: ^^^
 # 
@@ -23758,11 +23770,9 @@ Ibsenstr.: Asphalt	Q0 10465,16656 10549,16650 10632,16644 10774,16634
 #: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
 Schützenstr. (Mariendorf): Kopfsteinpflaster	Q2 8581,4342 8569,4459 8561,4535 8546,4629
 #: corrected_by: srt (Q1 -> Q0)
-Hanns-Eisler-Str.: Asphalt	Q0 12987,15262 13043,15353 12989,15390 12984,15417 13035,15501 13065,15514 13151,15462
-#: XXX hier auch Q0?
-Hanns-Eisler-Str.: Asphalt	Q1 13151,15462 13240,15408 13365,15325 13504,15235 13476,15178 13614,15095
-#: confirmed_by: srt (added "einige Löcher", Q1 -> Q1+)
-Hanns-Eisler-Str.: einige Löcher im Asphalt	Q1 13614,15095 13550,14973
+Hanns-Eisler-Str.: Asphalt	Q0 12987,15262 13043,15353 12989,15390 12984,15417 13035,15501 13065,15514 13151,15462 13227,15415 13365,15325 13504,15235 13476,15178 13614,15095
+#: corrected_by: srt (added "einige Löcher", Q1 -> Q0-)
+Hanns-Eisler-Str.: einige Löcher im Asphalt	Q0- 13614,15095 13550,14973
 #: corrected_by: srt (Q1 -> Q0)
 Hanns-Eisler-Str.: Asphalt	Q0 13550,14973 13596,14934 13633,14904
 #: corrected_by: srt (Q1 -> Q0)

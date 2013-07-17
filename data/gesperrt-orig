@@ -1240,7 +1240,7 @@ Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
-#: next_check: 2013-07-20
+#: next_check: 2013-07-30
 #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Niemannstr.	1s:q4 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
@@ -1481,6 +1481,7 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhan
 #: XXX_prog: eine Überquerungsmöglichkeit existiert 60m weiter südlich
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12071,16130 12030,15968 11997,15834
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11997,15834
+Prenzlauer Allee: Straßenbahntrasse	3nocross 11435,14023 11468,14121 11476,14142
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11709,14856 11609,14881 11535,14900
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12128,14640 12025,14695
 Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10463,13747

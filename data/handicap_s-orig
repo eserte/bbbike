@@ -12,18 +12,19 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-07-14 vvv
-#: next_check: 2013-07-20 vvv
-#: source_id: IM_019640
+#: last_checked: 2013-07-16 vvv
+#: next_check: 2013-07-30 (aber evtl. auch erst Ende August) vvv
+#: source_id: IM_020047
+#: source_id: IM_019640 (früher)
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
-Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 14254,11377 14181,11434 14099,11505
+# REMOVED (nicht mehr so umständlich) --- Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 14254,11377 14181,11434 14099,11505
 # REMOVED --- Dirschauer Str.: Einbahnstraßenregelung wegen Umleitungsstrecke	q4::inwork; 13970,11366 14031,11569
 #: next_check ^^^
 #: last_checked ^^^
 # 
 #: XXX evtl. danach asphaltiert?
-#: last_checked: 2013-07-14
-#: next_check: 2013-07-17
+#: last_checked: 2013-07-15
+#: next_check: 2013-07-20
 Mainzer Str.: Bauarbeiten	q3::inwork 14311,11884 14357,12011
 # 
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
@@ -38,7 +39,7 @@ Mainzer Str.: Bauarbeiten	q3::inwork 14311,11884 14357,12011
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-07-13 vvv
+#: last_checked: 2013-07-15 vvv
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 13473,11456 13366,11651 13295,11792
 #: last_checked ^^^
 # 
@@ -136,7 +137,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 # REMOVED --- #: last_checked: 2013-06-17 --- #: next_check: 2013-06-20 --- #: priority: #A --- Bernhard-Weiß-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
 # 
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2013-07-11
+#: last_checked: 2013-07-16
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
@@ -150,7 +151,7 @@ Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
 #: note: q4 zumindest im Berufsverkehr vvv
-#: last_checked: 2013-07-12 vvv
+#: last_checked: 2013-07-16 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q4::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
@@ -276,13 +277,7 @@ Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Fußgänger	q2 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
-#: XXX evtl. nach den Bauarbeiten wahrscheinlich asphaltiert. Vielleicht wird auch der südliche Halbkreis des Rondells neu gemacht?
-#: XXX evtl. wird auch die Beleuchtung neu gemacht, auch beim nördlichen Rondell schauen
-#: XXX nach den Bauarbeiten den normalen Eintrag wieder aktivieren
-#: last_checked: 2013-07-02
-Görlitzer Park: Fußgänger, Bauarbeiten	q4::inwork 12670,10160 12567,10211
-#Görlitzer Park: Fußgänger	q2 12670,10160 12567,10211
-Görlitzer Park: Fußgänger	q2 12567,10211 12543,10223 12506,10244 12384,10368 12328,10442
+Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12506,10244 12384,10368 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911,10156
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
@@ -466,7 +461,9 @@ Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
 Radweg eng und bewachsen	q1 5057,14607 5264,14671 5440,14840
 Tunnel S-Bhf. Grunewald: Fußgänger	q2 693,9129 731,9103 884,8954
 enge Kurven	q2 33533,2761 33293,2768
-Kieler Str.: Bordsteine, Fußgänger	q3 4998,5817 5052,5788
+#: XXX zur Schloßstr. sind die Bordsteine abgesenkt, wie sieht die Kieler aus?
+#: XXX_prog BS
+Kieler Str.: Bordstein, Fußgänger	q3 4998,5817 5052,5788
 Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
 Südstern: Fußgänger	q3 10747,9326 10710,9309 10647,9337
 Görlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
@@ -886,7 +883,8 @@ Brook-Taylor-Str.: Fußgängerzone	q1 19146,2975 19101,3028 19015,3129
 Heinrich-Mirbach-Str.: Fußgänger	q1 17288,4026 17244,4084
 Drosselbartstr.: enge Straße	q1 15188,6908 15024,7083 14951,7163
 Zimmermannstr.: Fußgänger, Bordsteine	q3 4997,5877 5024,5863
-Deitmerstr.: Fußgänger, Bordsteine	q3 5078,5889 5048,5904
+#: note: Bordstein am Wendehammer ist an zwei Stellen abgesenkt (aber nicht direkt am Scheitel)
+Deitmerstr.: Fußgänger	q3 5078,5889 5048,5904
 Friedrichsruher Platz: Fußgänger, eng	q2 5942,5775 5935,5874
 Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q1 6878,5946 6895,5873
 #: XXX_prog: für Anhänger q2 oder q3
@@ -1610,7 +1608,9 @@ Lauinger Str.: einige Fußgänger, nicht ganz abgesenkter Bordstein	q1 21221,11398
 Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 #: note Radfahren ist nicht verboten vvv
 (Kleistpark): einige Fußgänger	q1 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
-(Kleistpark): einige Fußgänger	q1 7430,9576 7501,9573 7520,9572
+(Kleistpark): einige Fußgänger	q1 7430,9576 7501,9573
+#: XXX_prog BS (ansonsten -> q1)
+(Kleistpark): einige Fußgänger, Bordstein	q2 7501,9573 7520,9572
 #: note ^^^
 (Blockdammweg - Trautenauer Str.): Rampe	q2 17904,8927 17888,8899 17915,8900
 #: XXX wie wird die endgültige Lösung hier aussehen?
@@ -1660,6 +1660,8 @@ Springpfuhlpark: einige Fußgänger	q1 19524,14474 19534,14459 19545,14290 19523,1
 (Geißenweide - Blenheimstr./Bärensteinstr.): Fußgänger	q1 21143,14803 21211,15009 21261,15153 21260,15209
 (Geißenweide - Blenheimstr./Bärensteinstr.): Fußgänger, Einkaufszeile	q2 21260,15209 21263,15291
 (Am Rosengarten - Lütztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
+Dürerplatz: einige Fußgänger	q1 6243,7033 6275,7004
+Straße 17: kurze Rampe	q3 7307,7425 7307,7457
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2399,7 +2401,7 @@ Romanshorner Weg: enge Straße	q1 6709,17466 6679,17568 6631,17721 6578,17898 655
 #: by: Reyk Bederke:
 Wegerichstr.: enge Straße	q1 16678,2330 16666,2437 16663,2450 16538,2543
 #: by: steffen (stache-bln):
-(Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fußgänger	q0 13550,14973 13324,15109 13328,15127 13132,15239
+(Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fußgänger	q0 13550,14973 13324,15109 13328,15127 13123,15244
 #: by: Beate Voigt: vvv
 Siegfried-Baruch-Weg: einige Fußgänger, recht eng	q2 7857,19693 7871,19698 7974,19739 8030,19762
 #: by: ^^^
