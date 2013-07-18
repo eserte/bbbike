@@ -29,6 +29,7 @@ my $data = do {
 
 my $track_segs = $data->{trackSegs}
     or die "No trackSegs found in file '$file'";
+my $ua = $data->{ua};
 
 setlocale(LC_TIME, 'C');
 
@@ -46,6 +47,15 @@ print <<EOF;
 !Format: DDD $tzoffset WGS 84
 !Creation: no
 
+EOF
+if ($ua) {
+    print <<EOF;
+!Uploaded from UA: $ua
+
+EOF
+}
+
+print <<EOF;
 !T:	ACTIVE LOG
 EOF
 

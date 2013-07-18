@@ -291,7 +291,7 @@ function doLeaflet() {
 		container.onclick = function() {
 		    L.DomUtil.removeClass(container, "anycontrol_inactive");
 		    L.DomUtil.addClass(container, "anycontrol_active");
-		    var serialized = JSON.stringify({trackSegs:trackSegs.upload});
+		    var serialized = JSON.stringify({ua:navigator.userAgent, trackSegs:trackSegs.upload});
 		    var uploadRequest = new XMLHttpRequest();
 		    uploadRequest.open("POST", "upload-track.cgi", false);
 		    uploadRequest.send(serialized);
