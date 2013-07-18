@@ -244,6 +244,7 @@ function doLeaflet() {
 		    L.DomUtil.removeClass(container, "anycontrol_active");
 		    L.DomUtil.addClass(container, "anycontrol_inactive");
 		    trackingRunning = false;
+		    removeLocation();
 		} else {
 		    map.my_locate({watch:true, setView:false});
 		    L.DomUtil.removeClass(container, "anycontrol_inactive");
@@ -338,12 +339,7 @@ function doLeaflet() {
 		trackPolyline = L.multiPolyline(trackSegs.polyline, {color:'#f00', weight:2, opacity:0.7}).addTo(map);
 	    }
 	} else {
-	    if (locationCircle && map.hasLayer(locationCircle)) {
-		map.removeLayer(locationCircle);
-	    }
-	    if (locationPoint && map.hasLayer(locationPoint)) {
-		map.removeLayer(locationPoint);
-	    }
+	    removeLocation();
 	    if (lastLatLon != null) {
 		trackSegs.addGap();
 		lastLatLon = null;
@@ -352,6 +348,15 @@ function doLeaflet() {
     }
     map.on('locationfound', function(e) { locationFoundOrNot('locationfound', e); });
     map.on('locationerror', function(e) { locationFoundOrNot('locationerror', e); });
+
+    function removeLocation() {
+	if (locationCircle && map.hasLayer(locationCircle)) {
+	    map.removeLayer(locationCircle);
+	}
+	if (locationPoint && map.hasLayer(locationPoint)) {
+	    map.removeLayer(locationPoint);
+	}
+    }
 
     map.on(//'click', //XXX has bugs, may fire on simple zooming
         'dblclick', function(e) {
