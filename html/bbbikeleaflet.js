@@ -91,6 +91,106 @@ var mapset = q.get('mapset') || 'stable';
 var base_map_url = base_map_url_mapping[mapset] || base_map_url_mapping['stable'];
 var smoothness_map_url = smoothness_map_url_mapping[mapset] || smoothness_map_url_mapping['stable'];
 
+/*
+ * Provides L.Map with convenient shortcuts for using browser geolocation features.
+ * This is Map.Geolocation.js with own changes.
+ */
+var L_Util = L.Util || L;
+L.Map.include({
+	_my_defaultLocateOptions: {
+		watch: false,
+		setView: false,
+		maxZoom: Infinity,
+		timeout: 10000,
+		maximumAge: 0,
+		enableHighAccuracy: false
+	},
+
+	my_locate: function (/*Object*/ options) {
+
+		options = this._my_locateOptions = L_Util.extend(this._my_defaultLocateOptions, options);
+
+		if (!navigator.geolocation) {
+			this._my_handleGeolocationError({
+				code: 0,
+				message: 'Geolocation not supported.'
+			});
+			return this;
+		}
+
+		var onResponse = L_Util.bind(this._my_handleGeolocationResponse, this),
+			onError = L_Util.bind(this._my_handleGeolocationError, this);
+
+		if (options.watch) {
+			this._my_locationWatchId =
+			        navigator.geolocation.watchPosition(onResponse, onError, options);
+		} else {
+			navigator.geolocation.getCurrentPosition(onResponse, onError, options);
+		}
+		return this;
+	},
+
+	my_stopLocate: function () {
+		if (navigator.geolocation) {
+			navigator.geolocation.clearWatch(this._my_locationWatchId);
+		}
+		if (this._my_locateOptions) {
+			this._my_locateOptions.setView = false;
+		}
+		return this;
+	},
+
+	_my_handleGeolocationError: function (error) {
+		var c = error.code,
+		    message = error.message ||
+		            (c === 1 ? 'permission denied' :
+		            (c === 2 ? 'position unavailable' : 'timeout'));
+
+		if (this._my_locateOptions.setView && !this._loaded) {
+			this.fitWorld();
+		}
+
+		this.fire('locationerror', {
+			code: c,
+			message: 'Geolocation error: ' + message + '.'
+		});
+	},
+
+	_my_handleGeolocationResponse: function (pos) {
+		var lat = pos.coords.latitude,
+		    lng = pos.coords.longitude,
+		    latlng = new L.LatLng(lat, lng),
+
+		    latAccuracy = 180 * pos.coords.accuracy / 40075017,
+		    lngAccuracy = latAccuracy / Math.cos(L.LatLng.DEG_TO_RAD * lat),
+
+		    bounds = L.latLngBounds(
+		            [lat - latAccuracy, lng - lngAccuracy],
+		            [lat + latAccuracy, lng + lngAccuracy]),
+
+		    options = this._my_locateOptions;
+
+		if (options.setView) {
+			var zoom = Math.min(this.getBoundsZoom(bounds), options.maxZoom);
+			this.setView(latlng, zoom);
+		}
+
+		var data = {
+			latlng: latlng,
+			bounds: bounds,
+			pos: pos
+		};
+
+		// for (var i in pos.coords) {
+		// 	if (typeof pos.coords[i] === 'number') {
+		// 		data[i] = pos.coords[i];
+		// 	}
+		// }
+
+		this.fire('locationfound', data);
+	}
+});
+
 function doLeaflet() {
     var bbbikeOrgMapnikGermanUrl = base_map_url + '/{z}/{x}/{y}.png',
     bbbikeAttribution = M("Kartendaten") + ' \u00a9 2012 <a href="http://bbbike.de">Slaven Rezić</a>',
@@ -125,8 +225,7 @@ function doLeaflet() {
     layersControl.addOverlay(routeLayer, "Route");
 
     var trackPolyline;
-    var trackSegs = [[]];
-    var undoTrackSegs;
+    var trackSegs = new TrackSegs();
     var lastLatLon = null;
     var trackingRunning;
     var LocControl = L.Control.extend({
@@ -141,12 +240,12 @@ function doLeaflet() {
 	    trackingRunning = false;
 	    container.onclick = function() {
 		if (trackingRunning) {
-		    map.stopLocate();
+		    map.my_stopLocate();
 		    L.DomUtil.removeClass(container, "anycontrol_active");
 		    L.DomUtil.addClass(container, "anycontrol_inactive");
 		    trackingRunning = false;
 		} else {
-		    map.locate({watch:true, setView:false});
+		    map.my_locate({watch:true, setView:false});
 		    L.DomUtil.removeClass(container, "anycontrol_inactive");
 		    L.DomUtil.addClass(container, "anycontrol_active");
 		    trackingRunning = true;
@@ -167,11 +266,11 @@ function doLeaflet() {
 	    container.innerHTML = "CLR";
 	    container.onclick = function() {
 		if (confirm("Clear track?")) {
-		    trackSegs = [[]];
+		    trackSegs.init();
 		    if (trackPolyline && map.hasLayer(trackPolyline)) {
 			map.removeLayer(trackPolyline);
 		    }
-		    trackPolyline = L.multiPolyline(trackSegs, {color:'#f00', weight:2, opacity:0.7}).addTo(map);
+		    trackPolyline = L.multiPolyline(trackSegs.polyline, {color:'#f00', weight:2, opacity:0.7}).addTo(map);
 		    lastLatLon = null;
 		}
 	    };
@@ -192,7 +291,7 @@ function doLeaflet() {
 		container.onclick = function() {
 		    L.DomUtil.removeClass(container, "anycontrol_inactive");
 		    L.DomUtil.addClass(container, "anycontrol_active");
-		    var serialized = JSON.stringify({trackSegs:trackSegs});
+		    var serialized = JSON.stringify({trackSegs:trackSegs.upload});
 		    var uploadRequest = new XMLHttpRequest();
 		    uploadRequest.open("POST", "upload-track.cgi", false);
 		    uploadRequest.send(serialized);
@@ -221,7 +320,7 @@ function doLeaflet() {
     function locationFoundOrNot(type, e) {
 	if (type == "locationfound") {
 	    locationCircle.setLatLng(e.latlng);
-	    locationCircle.setRadius(e.accuracy);
+	    locationCircle.setRadius(e.pos.coords.accuracy);
 	    if (!map.hasLayer(locationCircle)) {
 		locationCircle.addTo(map);
 	    }
@@ -231,12 +330,12 @@ function doLeaflet() {
 	    }
 	    map.panTo(e.latlng);
 	    if (!lastLatLon || !lastLatLon.equals(e.latlng)) {
-		trackSegs[trackSegs.length-1].push(e.latlng);
+		trackSegs.addPos(e);
 		lastLatLon = e.latlng;
 		if (trackPolyline && map.hasLayer(trackPolyline)) {
 		    map.removeLayer(trackPolyline);
 		}
-		trackPolyline = L.multiPolyline(trackSegs, {color:'#f00', weight:2, opacity:0.7}).addTo(map);
+		trackPolyline = L.multiPolyline(trackSegs.polyline, {color:'#f00', weight:2, opacity:0.7}).addTo(map);
 	    }
 	} else {
 	    if (locationCircle && map.hasLayer(locationCircle)) {
@@ -246,7 +345,7 @@ function doLeaflet() {
 		map.removeLayer(locationPoint);
 	    }
 	    if (lastLatLon != null) {
-		trackSegs.push([]);
+		trackSegs.addGap();
 		lastLatLon = null;
 	    }
 	}
@@ -368,4 +467,34 @@ function setLoadingMarker(latLng) {
 	loadingMarker.setLatLng(latLng);
     }
     map.addLayer(loadingMarker);
+}
+
+function TrackSegs() {
+    this.init();
+}
+TrackSegs.prototype.init = function() {
+    this.polyline = [[]];
+    this.upload = [[]];
+}
+TrackSegs.prototype.addPos = function(e) {
+    this.polyline[this.polyline.length-1].push(e.latlng);
+    if (enable_upload) {
+	var lat = e.latlng.lat.toString().replace(/(\.\d{6}).*/, "$1");
+	var lng = e.latlng.lng.toString().replace(/(\.\d{6}).*/, "$1");
+	var uplRec = {lat:lat,
+		      lng:lng,
+		      acc:e.pos.coords.accuracy,
+		      time:e.pos.timestamp};
+	if (e.pos.coords.altitude != null) {
+	    uplRec.alt = e.pos.coords.altitude;
+	}
+	if (e.pos.coords.altitudeAccuracy != null) {
+	    uplRec.altacc = e.pos.coords.altitudeAccuracy;
+	}
+	this.upload[this.upload.length-1].push(uplRec);
+    }
+}
+TrackSegs.prototype.addGap = function(e) {
+    this.polyline.push([]);
+    this.upload.push([]);
 }
