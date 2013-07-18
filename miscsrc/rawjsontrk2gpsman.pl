@@ -14,7 +14,7 @@
 
 use strict;
 use JSON::XS qw(decode_json);
-use POSIX qw(strftime);
+use POSIX qw(strftime setlocale LC_TIME);
 
 my $file = shift
     or die "File?";
@@ -30,15 +30,23 @@ my $data = do {
 my $track_segs = $data->{trackSegs}
     or die "No trackSegs found in file '$file'";
 
-# XXX Time Offset???
-# XXX does it need a track name here?
+setlocale(LC_TIME, 'C');
+
+my $tzoffset = strftime('%z', localtime);
+if (my($sgn,$h,$m) = $tzoffset =~ m{^([+-])(\d{2})(\d{2})$}) {
+    $tzoffset = $h + $m/60;
+    $tzoffset *= -1 if $sgn eq '-';
+} else {
+    warn "Cannot parse tzoffset <$tzoffset>, undefined results follow...";
+}
+
 print <<EOF;
 % Written by $0 @{[ strftime "%FT%T", localtime ]} (local time)
 
-!Format: DDD 2 WGS 84
+!Format: DDD $tzoffset WGS 84
 !Creation: no
 
-!T:
+!T:	ACTIVE LOG
 EOF
 
 my $initial_trk_seg = 1;
@@ -49,16 +57,22 @@ for my $track_seg (@$track_segs) {
 	$initial_trk_seg = 0;
     }
     for my $wpt (@$track_seg) {
-	my($lat,$lng) = @{$wpt}{qw(lat lng)};
-	# XXX use timestamp once it is there
-	# XXX can we get also the altitude (missing here)?
-	print "\t31-Dec-1989 01:00:00\t$lat\t$lng\n";
+	my($lat,$lng,$time,$alt,$acc,$altacc) = @{$wpt}{qw(lat lng time alt acc altacc)};
+	my $datetime;
+	if (defined $time) {
+	    $time /= 1000; # ms -> s
+	    $datetime = strftime "%d-%b-%Y %H:%M:%S", localtime $time;
+	} else {
+	    $datetime = '31-Dec-1989 01:00:00';
+	}
+	$alt = '' if !defined $alt;
+	print "\t$datetime\t$lat\t$lng\t$alt\n";
     }
 }
 
 __END__
 
-=pod
+=head1 DESCRIPTION
 
 Convert the bbbikeleaflet.js raw json tracks to gpsman format.
 
@@ -66,6 +80,10 @@ Mass conversion:
 
     for i in ~/biokovo/src/bbbike/tmp/www/upload-track/*.trk.json; do echo $i; ~/src/bbbike/miscsrc/rawjsontrk2gpsman.pl $i > /tmp/`basename $i`.trk; done 
 
-See source code for a number of TODOs.
+=head1 TODO
+
+* It seems it's not possible to store acc and altacc in the gpsman
+  format. This would only be possible with the gpx format (hdop,
+  vdop).
 
 =cut
