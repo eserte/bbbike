@@ -862,7 +862,8 @@ Dornacher Str.: Asphalt	Q0 20947,10137 20947,9999 20948,9847
 Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
 Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21458,8091 21529,8019 21593,7934
 Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22186,6672 22192,6659 22279,6470 22324,6397
-Marksburgstr.: schlechter Asphalt	Q2 19050,9142 18961,9109 18900,9119 18809,9133
+Marksburgstr.: schlechter Asphalt	Q2 19050,9142 18961,9109
+Marksburgstr.: Asphalt	Q0 18961,9109 18900,9119 18809,9133
 Marksburgstr.: Asphalt	Q0 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
 Walkürenstr.: Asphalt	Q0 18069,9289 18006,9335
 Walkürenstr.: Kopfsteinpflaster	Q2 18006,9335 17735,9533
@@ -8166,6 +8167,7 @@ Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19
 (Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0 21260,15209 21263,15291
 Dürerplatz: Verbundsteinpflaster	Q1 6243,7033 6275,7004
 Loewenhardtdamm: Asphalt mit einigen Schäden	Q1; 8632,8174 8730,8079
+Fischerstr.: Asphaltschäden	Q2 16423,10259 16404,10286
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -9531,7 +9533,8 @@ Philippistr.: Kopfsteinpflaster	Q2 2583,11613 2512,11602
 Ernststr.: Kopfsteinpflaster	Q2 2497,19503 2700,19527
 Ernststr.: Asphalt	Q0 3632,19934 3504,19849 3429,19786 3343,19727 3252,19658 3167,19597 3010,19572 2865,19562 2821,19559
 Thurgauer Str.: kleinteiliges Kopfsteinpflaster	Q1 7227,18010 7147,18149 7108,18199 7071,18232 7026,18267 6971,18299 6887,18330 6694,18351
-Römerweg: Asphalt	Q0 18807,9746 18687,9736 18685,9719 18452,9755 18421,9764
+Römerweg: Asphalt	Q0 18807,9746 18687,9736 18685,9719
+Römerweg: Asphalt	Q0 18685,9719 18452,9755 18421,9764
 Aristotelessteig: Asphalt, etwas wellig	Q1 18715,9589 18660,9599 18527,9623 18435,9639 18452,9755
 Cäsarstr.: Asphalt	Q0 18685,9719 18660,9599 18626,9406
 (Römerweg - Weg entlang der Bahnstrecke): Betonplatten	Q2 18421,9764 18436,9842
@@ -10554,7 +10557,7 @@ Regensburger Str. (Lichtenrade): Verbundsteinpflaster	Q1 11232,-2377 11433,-2320
 Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13249,22003 13315,21969 13601,21826
 Pfingstrosenweg: Verbundsteinpflaster	Q0 22079,10852 22053,10911 22028,10968 22006,11019 21975,11089 21951,11144 21920,11214 21872,11196
 Malersteig: Asphalt	Q0 13606,3085 13596,3039 13563,2909 13510,2690 13487,2621 13452,2548 13420,2509
-Weseler Str.: guter Beton	Q0 18866,8738 18857,8790 18854,8831 18860,8886 18877,8973 18881,9002 18886,9031 18900,9119
+Weseler Str.: mäßiger Asphalt	Q1 18866,8738 18857,8790 18854,8831 18860,8886 18877,8973 18881,9002 18886,9031 18900,9119
 Arthur-Weisbrodt-Str.: guter Asphalt	Q0 14170,13496 14218,13661
 Erdmann-Graeser-Weg: kleinteiliges Pflaster	Q1 -833,3619 -935,3706 -961,3737 -1013,3804
 Friedrich-Wolf-Str.: mäßiger Beton	Q1 22236,2029 22224,2061 22210,2140 22131,2333 22205,2367
@@ -10575,7 +10578,7 @@ Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,1923
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8266,5911 8385,5907
 Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8622,5867 8801,5844 8988,5821
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8988,5821 9176,5803 9378,5773 9668,5733
-Drachenfelsstr.: guter Asphalt	Q0 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18894,8749 18857,8790
+Drachenfelsstr.: welliger Asphalt	Q1 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18894,8749 18857,8790
 Mittelweg (Altglienicke): Beton	Q0 20252,901 20171,698 20136,608 20082,463 20035,348
 Mittelweg (Altglienicke): Beton	Q0 20098,359 20082,463
 Ecksteinweg: Asphalt	Q1 17830,5324 17765,5406

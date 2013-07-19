@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-07-16 vvv
+#: last_checked: 2013-07-17 vvv
 #: next_check: 2013-07-30 (aber evtl. auch erst Ende August) vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (früher)
@@ -54,7 +54,7 @@ Marchlewskistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 13473,11456 13366,11651 
 # 
 #: source_id: INKO_113388
 #: last_checked: 2013-07-02
-#: next_check: 2013-09-02
+#: next_check: 2013-12-31
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # 
 #: last_checked: 2013-07-10
@@ -824,7 +824,9 @@ Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
 Cuvrystr.: Bodenschwellen	q1 13053,10088 13132,10239
 Elsensteg: Fußgänger	q3 13366,8694 13376,8705 13394,8730 13402,8741
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
-(Blockpark): Fußgänger	q1 16300,10753 16246,10641 16187,10587
+#: XXX_prog BS an der Lückstr. (ansonsten wäre es q1)
+(Blockpark): Fußgänger, Bordstein	q2 16300,10753 16246,10641
+(Blockpark): Fußgänger	q1 16246,10641 16187,10587
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 Mayschweg: Fußgänger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fußgänger	q2 25571,4553 25658,4619

@@ -992,7 +992,9 @@ Dornacher Str.: Asphalt	Q0 20947,10137 20947,9999 20948,9847
 Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
 Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21458,8091 21529,8019 21593,7934
 Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22186,6672 22192,6659 22279,6470 22324,6397
-Marksburgstr.: schlechter Asphalt	Q2 19050,9142 18961,9109 18900,9119 18809,9133
+#: XXX ist der Asphalt hier auch neu gemacht worden?
+Marksburgstr.: schlechter Asphalt	Q2 19050,9142 18961,9109
+Marksburgstr.: Asphalt	Q0 18961,9109 18900,9119 18809,9133
 Marksburgstr.: Asphalt	Q0 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
 Walkürenstr.: Asphalt	Q0- 18069,9289 18006,9335
 Walkürenstr.: Kopfsteinpflaster	Q2 18006,9335 17735,9533
@@ -5576,7 +5578,7 @@ Bohrauer Pfad: Beton	Q0- 20981,4628 20827,4655 20716,4691
 Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2013-06-01
+#: last_checked: 2013-07-17
 #: next_check: 2013-10-01
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg	Q3+ 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Plattenweg (Längsplatten)	Q2- 19321,7360 19223,7231 19223,7189
@@ -8834,6 +8836,7 @@ Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19
 (Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0 21260,15209 21263,15291
 Dürerplatz: Verbundsteinpflaster	Q1 6243,7033 6275,7004
 Loewenhardtdamm: Asphalt mit einigen Schäden	Q1; 8632,8174 8730,8079
+Fischerstr.: Asphaltschäden	Q2+ 16423,10259 16404,10286
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -11640,7 +11643,9 @@ Thurgauer Str.: kleinteiliges Kopfsteinpflaster	Q1 7227,18010 7147,18149 7108,18
 # 
 #: by: Claudia Skowronnek: vvv
 #: corrected_by: srt (laut Claudia "vermutlich Beton", but Asphalt)
-Römerweg: Asphalt	Q0 18807,9746 18687,9736 18685,9719 18452,9755 18421,9764
+Römerweg: Asphalt	Q0 18807,9746 18687,9736 18685,9719
+#: corrected_by: srt (Q0 -> Q0-)
+Römerweg: Asphalt	Q0- 18685,9719 18452,9755 18421,9764
 #: corrected_by: srt (guter Beton -> ...)
 Aristotelessteig: Asphalt, etwas wellig	Q1+ 18715,9589 18660,9599 18527,9623 18435,9639 18452,9755
 #: corrected_by: srt (früher war hier "sandig", laut Claudia wurde 2005-06 gebaut)
@@ -14543,8 +14548,8 @@ Pfingstrosenweg: Verbundsteinpflaster	Q0- 22079,10852 22053,10911 22028,10968 22
 Malersteig: Asphalt	Q0 13606,3085 13596,3039 13563,2909 13510,2690 13487,2621 13452,2548 13420,2509
 # 
 #: by: Anna Behrend:
-#: XXX Qualität prüfen, insbesondere im südlichen Abschnitt
-Weseler Str.: guter Beton	Q0 18866,8738 18857,8790 18854,8831 18860,8886 18877,8973 18881,9002 18886,9031 18900,9119
+#: corrected_by: srt (guter Beton, Q0 ->)
+Weseler Str.: mäßiger Asphalt	Q1 18866,8738 18857,8790 18854,8831 18860,8886 18877,8973 18881,9002 18886,9031 18900,9119
 # 
 #: by: manfred aebi:
 Arthur-Weisbrodt-Str.: guter Asphalt	Q0 14170,13496 14218,13661
@@ -14612,7 +14617,8 @@ Friedrich-Wilhelm-Str.: Asphalt	Q0 8988,5821 9176,5803 9378,5773 9668,5733
 #: by: ^^^
 # 
 #: by: Thomas Pörs:
-Drachenfelsstr.: guter Asphalt	Q0- 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18894,8749 18857,8790
+#: corrected_by: srt (guter Asphalt, Q0- -> ...)
+Drachenfelsstr.: welliger Asphalt	Q1 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18894,8749 18857,8790
 # 
 #: by: Andrea Kliche: vvv
 #: note: ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
