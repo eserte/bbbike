@@ -126,7 +126,7 @@ Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaﬂnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-07-13 vvv
+#: last_checked: 2013-07-19 vvv
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -1653,9 +1653,12 @@ Carpinusweg: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet sich d
 Im Nikolaiquartier: neue Straﬂe, wo befindet sie sich? Qualit‰t?	? -13094,-1158 -13162,-1263
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013
+#: XXX Freesienweg (Amtsblatt) oder Fresienweg (BA)? Wikipedia meint "Freesien"
+#: XXX fehlt bei Berlin.coords.data
 #: last_checked: 2013-07-03 (Bauarbeiten in Gange, keine Straﬂe zu sehen)
 #: next_check: 2014-04-15
-Fresienweg: geplante Straﬂe, wo wird sie genau liegen? Bleibt der Straﬂenname so? Qualit‰t?	?::projected 16002,12640 16004,12750
+Freesienweg: geplante Straﬂe, wo wird sie genau liegen? Wie wird der Straﬂenname genau geschrieben? Qualit‰t?	?::projected 16002,12640 16004,12750
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5489
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
@@ -1688,8 +1691,10 @@ Lindenschw‰rmerweg: genaue Lage? Qualit‰t? Existiert die Straﬂe schon?	? 21323,1
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5291
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066429/29-Anlagen/02/vzb0507_IV-Benennung_Grimmener_Strasse.pdf
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013
 #: XXX fehlt bei Berlin.coords.data
 Grimmener Str.: genaue Lage? Qualit‰t? Existiert die Straﬂe schon?	? 21315,13146 21398,13121
+# 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)
 # 1. Liliensteinweg
