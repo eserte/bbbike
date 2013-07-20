@@ -34,13 +34,15 @@ $VERSION = '1.00';
 
 sub usage () {
     die <<EOF;
-usage: $0 [-ignore-missing] [-use-orig] [-quiet] [-debug] [datadir] [-optimize-for garmin|mapnik|mapnik-bbbike]
+usage: $0 [-ignore-missing] [-use-orig] [-quiet] [-debug] [-experiment ...] [datadir] [-optimize-for garmin|mapnik|mapnik-bbbike]
        $0 [-type area|waterway|highway|railway|ferry] -single bbdfile
 
 Either convert a whole bbbike data directory, or convert a single bbd
 file.
 EOF
 }
+
+my %known_experiments = map {($_,1)} qw(cycle-route addr);
 
 my $single_file;
 my $single_file_type;
@@ -53,6 +55,7 @@ my $quiet;
 my $debug;
 my $do_highway_primary_hack = 0;
 my $do_print_version;
+my %experiments;
 GetOptions("single=s" => \$single_file,
 	   "type=s" => \$single_file_type,
 	   "fragezeichen=s" => \$fragezeichen_file,
@@ -62,6 +65,16 @@ GetOptions("single=s" => \$single_file,
 	   "shorten-for-garmin!" => \$shorten_for_garmin,
 	   "quiet!" => \$quiet,
 	   "debug!" => \$debug,
+	   'experiment=s@' => sub {
+	       my $exp = $_[1];
+	       if (!$known_experiments{$exp}) {
+		   die <<EOF;
+Unknown experiment '$exp'. Known experiments are:
+@{[ sort keys %known_experiments ]}
+EOF
+	       }
+	       $experiments{$exp}++;
+	   },
 	   "version" => \$do_print_version,
 	  )
     or usage;
@@ -246,7 +259,7 @@ if ($single_file) {
     do_file("$datadir/landstrassen2", \&handle_anywhere_highway_like);
 
     # XXX not enabled by default
-    if (0 && $optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+    if ($experiments{'cycle-route'} && $optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
 	do_file("$datadir/comments_route", \&handle_comments_route_like);
     }
 
@@ -626,7 +639,7 @@ sub _handle_highway_like {
 	    print $wayfh qq{  <tag k="ref" v="$xml_ref" />\n};
 	}
 
-	if (0) {
+	if ($experiments{addr}) {
 	    print $wayfh qq{  <tag k="addr:street" v="$name" />\n};
 	    print $wayfh qq{  <tag k="addr:housenumber" v="0" />\n}; # XXX pure faked
 	    print $wayfh qq{  <tag k="addr:country" v="DE" />\n};
@@ -1121,7 +1134,7 @@ sub handle_comments_route_like {
     my($r, $dir) = @_;
     if ($geo && $geo->can('parse_street_type_nr')) {
 	my $name = $r->[Strassen::NAME];
-	my($type, $nr, $do_round, $image) = $geo->parse_street_type_nr($r->[$name]);
+	my($type, $nr, $do_round, $image) = $geo->parse_street_type_nr($name);
 	if (defined $type) {
 	    my @node_ids = get_node_ids($r);
 	    _xmlify($name);
