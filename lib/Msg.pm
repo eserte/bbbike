@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Msg.pm,v 1.9 2009/09/20 19:36:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2008,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2008,2009,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,17 +17,18 @@ use FindBin;
 use File::Basename;
 
 use vars qw($messages $lang $lang_messages $VERSION @EXPORT @EXPORT_OK
-	    $caller_file $frommain $noautosetup $DEBUG);
+	    $caller_file $frommain $noautosetup $DEBUG %missing_reported);
 use base qw(Exporter);
 @EXPORT = qw(M Mfmt);
 @EXPORT_OK = qw(frommain noautosetup);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.10';
 
 BEGIN {
     if ($ENV{PERL_MSG_DEBUG}) {
 	$DEBUG = 1;
     }
+    *REPORT_MISSING = $ENV{PERL_MSG_REPORT_MISSING} ? sub () { 1 } : sub () { 0 };
 }
 
 # XXX this is obfuscated... try something better
@@ -145,6 +145,12 @@ sub M ($) {
     if (exists $messages->{$_[0]}) {
 	$messages->{$_[0]};
     } else {
+	if (REPORT_MISSING) {
+	    if (!$missing_reported{$_[0]}) {
+		print STDERR "*** Missing translation for '$_[0]'\n";
+		$missing_reported{$_[0]} = 1;
+	    }
+	}
 	$_[0];
     }
 }
@@ -154,6 +160,16 @@ sub Mfmt {
 }
 
 setup_file() unless $noautosetup;
+
+END {
+    if (REPORT_MISSING) {
+	if (%missing_reported) {
+	    print STDERR "Summary of missing translations:\n" .
+		join("\n", map { "  $_" } sort keys %missing_reported) .
+		    "\n";
+	}
+    }
+}
 
 1;
 
