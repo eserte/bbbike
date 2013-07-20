@@ -195,7 +195,7 @@ sub parse_street_type_nr {
 	$image = "BK.gif";
     } elsif ($strname =~ /mauer.*weg/i) {
 	$type = 'M';
-	$image = 'M.gif';
+	$image = 'M.png';
     } elsif ($strname =~ /havellandradweg/i) {
 	$type = 'HVL';
 	$image = 'HVL.gif';
