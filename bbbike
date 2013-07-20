@@ -11910,7 +11910,7 @@ sub choose_ort {
 	IncBusy($top);
 	my $t;
 	eval {
-	    my %orte;
+	    my %orte; # strname -> index (possibly comma-separated list of indexes)
 	    my @orte;
 	    my $object;
 	    my $conv;
