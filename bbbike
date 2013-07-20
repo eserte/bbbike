@@ -930,7 +930,7 @@ TRY_SPEED_POWER_REFERENCE_STRING: {
 		}
 		$i++;
 	    }
-	    print STDERR "Referenzgeschwidigkeit/-leistung $type $val wird ignoriert\n";
+	    print STDERR "Referenzgeschwindigkeit/-leistung $type $val wird ignoriert\n";
 	} else {
 	    print STDERR "Die Option -reference sollte im Format type:value sein, wobei type entweder speed oder power ist und value die entsprechende Geschwindigkeit in km/h oder Leistung in W\n";
 	}
