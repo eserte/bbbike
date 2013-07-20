@@ -259,9 +259,6 @@ taken as the width at approx. 1:17000, and other widths are calculated
 proportionally to $line_width{default}. If it&#39;s six values, then this
 should represent the widths for the six standard scales defined by
 bbbike.
-<p class="POD_TEXT">
-XXX: The form with category is NYI!
-</p>
 <dt class="POD_ITEM"><a name="line_length_length"><code>line_length: <i>length</i></code></a>
 <dt><a name="line_length_category"><code>line_length.<i>category</i>: <i>length</i></code></a>
 <dd>
@@ -327,6 +324,18 @@ Define whether line items should be shortened at the end.
 XXX: Currently <code>category_line_shorten_end.category</code> is used instead
 of <code>line_shorten_end.category</code>.
 </p>
+<dt class="POD_ITEM"><a name="line_directed_weight"><code>line_directed_weight: <i>boolean</i></code></a>
+<dt><a name="line_directed_weight1"><code>line_directed_weight.<i>category</i>: <i>boolean</i></code></a>
+<dd>
+Define whether lines are directed and present weights.
+<dt class="POD_ITEM"><a name="line_do_offset_boole"><code>line_do_offset: <i>boolean</i></code></a>
+<dt><a name="line_do_offset_categ"><code>line_do_offset.<i>category</i>: <i>boolean</i></code></a>
+<dd>
+Define whether lines should be plotted with an offset or not. By
+default, lines which have a &quot;splitted&quot; category for the forward and
+backward directory (e.g. <code>A;B</code>) are plotted with an offset, but this
+can be disabled by explicitely setting line_do_offset to a false
+value.
 <dt class="POD_ITEM"><a name="item_size_integer"><code>item_size: <i>integer</i></code></a>
 <dt><a name="item_size_category_i"><code>item_size.<i>category</i>: <i>integer</i></code></a>
 <dd>
@@ -476,6 +485,10 @@ Examples:
     #: oldname: ?-20001001: Oldname street
     #: oldname: 20001001-2005: Not-so-old-name street
 </pre>
+<dt class="POD_ITEM"><a name="ignore_oldname_file_"><code>ignore_oldname_file: yes</code></a>
+<dd>
+Ignore this oldname entry when generating the <code>oldnames</code> data file.
+This is useful if for example only a part of the street was renamed.
 <dt class="POD_ITEM"><a name="section_section_name"><code>section: <i>section name</i></code></a>
 <dd>
 The next block is part of a named section. Sections may be nested.
@@ -538,6 +551,10 @@ descriptive text <i>string</i> to the <code>fragezeichen</code> file.
 <dd>
 May be used to mark a feature as complete or incomplete (e.g. cycle
 routes).
+<dt class="POD_ITEM"><a name="priority_string"><code>priority: <i>string</i></code></a>
+<dd>
+A priority for checks. The priority string should something between
+<code>#A</code> (highest) and <code>#C</code> (lowest).
 </dl>
 <h4 class="POD_HEAD3"><a name="Obsolete_and_to_be_d">Obsolete and to-be-decided directives</a></h4>
 <dl class="POD_LIST">
@@ -825,7 +842,7 @@ Auf 18 km/h.
 Auf 13 km/h.
 <dt class="POD_ITEM"><a name="q4"><code>q4</code></a>
 <dd>
-Auf Schrittgeschwidigkeit (z.B. in Fu&szlig;g&auml;ngerzonen).
+Auf Schrittgeschwindigkeit (z.B. in Fu&szlig;g&auml;ngerzonen).
 </dl>
 <h3 class="POD_HEAD2"><a name="RIGHT_OF_WAY">RIGHT OF WAY</a></h3>
 <dl class="POD_LIST">
@@ -1134,3 +1151,4 @@ Slaven Rezic &lt;slaven@rezic.de&gt;
 
 </body>
 </html>
+
