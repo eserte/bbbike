@@ -3256,7 +3256,7 @@ userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
          'text' => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2452,
-         'data' => '#: last_checked: 2013-07-02
+         'data' => '#: last_checked: 2013-07-20
 #: check_frequency: 30d
 userdel	q4::inwork 13301,8606 13262,8554 13217,8493
 ',

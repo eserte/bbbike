@@ -21487,7 +21487,7 @@ EOF
        text  => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-07-02
+#: last_checked: 2013-07-20
 #: check_frequency: 30d
 userdel	q4::inwork 13301,8606 13262,8554 13217,8493
 EOF
