@@ -2408,7 +2408,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2691,7 +2691,18 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       undef,
+       {
+         'periodic' => 1,
+         'until' => 1375660800,
+         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (bis 05.08.12, 02:00)',
+         'from' => 1375344000,
+         'id' => 2262,
+         'data' => 'userdel	2::temp 12360,12505 12362,12540 12364,12589
+userdel	2::temp 12891,12549 12869,12425
+userdel	2::temp 12635,12629 12596,12472
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2778,8 +2789,9 @@ userdel	q4::inwork 425,8766 490,8716
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
 #: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
 #: by: http://www.morgenpost.de/bezirke/article112374495/Fussgaengerbruecke-wird-repariert.html (Reparatur ab Juni 2013, 2 Monate Bauzeit)
-#: last_checked: 2013-06-15
-#: next_check: 2013-07-31
+#: by: http://www.altglienicke24.de/aktuelles.html (Eröffnung Mitte September)
+#: last_checked: 2013-08-02 (von der Bahn aus gesehen)
+#: next_check: 2013-09-15
 #: priority: #A
 userdel	2::inwork 19968,16 19940,52
 ',
@@ -2940,9 +2952,9 @@ userdel	2::temp 8119,12414 8055,12186
        undef,
        undef,
        {
-         'source_id' => 'INKO_119074',
+         'source_id' => 'IM_019421',
          'until' => 1386169200,
-         'text' => 'Friedrich-Engels-Str. in beiden Richtungen zwischen Nordendstr. und Platananenstr. Baustelle, gesperrt (bis September 2013), danach wieder Einbahnstraße',
+         'text' => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)',
          'from' => 1353366000,
          'id' => 2391,
          'data' => '#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
@@ -2950,15 +2962,11 @@ userdel	2::temp 8119,12414 8055,12186
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130614.1020.386081.html (Vollsperrung ab Juni 2013)
 #: by: IM_019421 (allerdings hier nur bis Dezember 2013)
-#: next_check: 2013-09-01
-#: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen
-#: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074
-#: priority: #A
-# --- next_check: 2013-12-04 (für die alte Situation --- q4::inwork;, IM_019421)
-#: XXX alter Text: Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)
+# REMOVED (bei VMZ abgelaufen) --- : next_check: 2013-09-01 --- #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen --- #: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074 --- #: priority: #A
+#: next_check: 2013-12-04
 #: XXX danach bessere Straßenqualität? Radstreifen?
 #: osm_watch: way id="24930947" version="20"
-userdel	q4::inwork 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
+userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 ',
          'type' => 'handicap'
        },
@@ -3011,16 +3019,7 @@ userdel	q4::inwork 10473,18113 10545,18143 10582,18159
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20121128.1200.378696.html',
-         'until' => 1375308000,
-         'text' => 'Weg am Nordgraben: Weg wird saniert und ist möglicherweise nicht passierbar',
-         'from' => undef,
-         'id' => 2406,
-         'data' => 'userdel	2::inwork 6378,20460 6428,20487 6487,20512 6601,20542 7083,20584 7289,20618
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.potsdamer-wassertaxi.de/fahrplan.php?y=2012',
          'recurring' => 1,
@@ -3092,16 +3091,7 @@ userdel	q4::inwork 10473,18113 10545,18143 10582,18159
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1374443999,
-         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (18.07.2013 bis 21.07.2013)',
-         'from' => 1374012000,
-         'id' => 2420,
-         'data' => 'userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_019747',
@@ -3184,33 +3174,15 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1375307999,
-         'text' => 'Jugendstr.: Bauarbeiten, Teile der Fahrbahn werden gesperrt, von 10. Juni bis Juli 2013',
-         'from' => 1370728800,
-         'id' => 2437,
-         'data' => 'userdel	q4::inwork 842,14518 936,14518 998,14516 1037,14515 1059,14515 1184,14515
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130607.1245.385821.html',
-         'until' => 1374832800,
-         'text' => 'Johannisthaler Chaussee von Königsheideweg bis Ligusterweg, wegen Bauarbeiten gesperrt, 24.06.2013 bis 26.07.2013',
-         'from' => 1371938400,
-         'id' => 2441,
-         'data' => '#: source_id: INKO_119441
-userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4524 15800,4464
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'INKO_115299',
-         'until' => 1375279200,
-         'text' => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Ende Juli 2013',
+         'until' => 1381068000,
+         'text' => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Anfang Oktober 2013',
          'from' => 1349931600,
          'id' => 2442,
          'data' => 'userdel	q2::inwork; 6572,14639 6299,14660
@@ -3366,6 +3338,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'from' => 1373460600,
          'id' => 2465,
          'data' => 'userdel	q4::inwork 11635,16616 11621,16749
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_119665',
+         'until' => 1377525600,
+         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen, bis Ende August ',
+         'from' => 1374381000,
+         'id' => 2466,
+         'data' => 'userdel	q3::inwork 15513,13539 15653,13542 15724,13544 15896,13547
 ',
          'type' => 'handicap'
        }

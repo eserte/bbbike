@@ -126,7 +126,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-07-19 vvv
+#: last_checked: 2013-08-02 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
@@ -423,12 +423,7 @@ Baustraße zur Siegfriedstraße: wird diese Verbindung beibehalten?	? 17219,14133 
 #: check_frequency ^^^
 #: last_checked: ^^^
 # 
-#: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich (bis Anfang 08/13) Kreuzung Straße der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976
-#: XXX_indoor vmz-Eintrag: Straße der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich, Überfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975
-#: XXX_prog ich brauche eine Kombination aus den Kategorien "3" und "qX". Oder wahlweise "3" mit einer Zeitangabe (wie BNP oder 0).
-#: last_checked: 2013-07-10
-#: next_check: 2013-08-02
-Straße der Pariser Kommune: Überqueren der Karl-Marx-Allee nur mit Zeitverlust möglich	?::inwork  12891,12549 12869,12425 12850,12286
+# REMOVED (Eintrag wurde aufgehoben, das Problem besteht aber weiterhin) --- #: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich (bis Anfang 08/13) Kreuzung Straße der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976 --- #: XXX_indoor vmz-Eintrag: Straße der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich, Überfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975 --- #: XXX_prog ich brauche eine Kombination aus den Kategorien "3" und "qX". Oder wahlweise "3" mit einer Zeitangabe (wie BNP oder 0). --- #: last_checked: 2013-07-10 --- #: next_check: 2013-08-02 --- Straße der Pariser Kommune: Überqueren der Karl-Marx-Allee nur mit Zeitverlust möglich	?::inwork  12891,12549 12869,12425 12850,12286
 # 
 #: XXX außerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist
 #: last_checked: 2013-07-14
@@ -1728,6 +1723,23 @@ Grimmener Str.: genaue Lage? Qualität? Existiert die Straße schon?	? 21315,13146
 # 29. Pöhligsteinweg
 # 30. Brausensteinweg
 KGA Am Rollberg und Anlage Schönwald: Benennung von 30 Privatwegen	? 9356,21363 10035,21581 10073,21339 9401,21144 9357,21362
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 vvv
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130620.1355.386320.html (Fertigstellung der Erschließungsstraße)
+#: XXX neue private Straßen entstehen, fehlen in Berlin.coords.data vvv
+#: last_checked: 2012-09-10 vvv
+#: next_check: 2013-07-30 vvv
+#: osm_watch: way id="220390908" version="2"
+#: XXX ad osm_watch: id referenziert die construction area
+Lübarser Aue: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7185,22466 7147,22393
+Am Rodelberg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7257,22381 7296,22458
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX: ^^^
+#: by: ^^^
+#: by: ^^^
+# 
 #: section ^^^
 #: section ^^^
 #
@@ -3361,22 +3373,6 @@ Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straß
 #: XXX eine Straße (eine Aldi-Zufahrt oder so) existiert hier, und laut 1:5K und gmaps ist es die Waadter Zeile, aber...
 #: XXX_osm: bei osm ohne Straßennamen
 Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straße Straßenschilder? Qualität?	? 3746,2108 3723,2118 3726,2209
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 vvv
-#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130620.1355.386320.html (Fertigstellung der Erschließungsstraße)
-#: XXX neue private Straßen entstehen, fehlen in Berlin.coords.data vvv
-#: last_checked: 2012-09-10 vvv
-#: next_check: 2013-07-30 vvv
-#: osm_watch: way id="220390908" version="2"
-#: XXX ad osm_watch: id referenziert die construction area
-Lübarser Aue: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7185,22466 7147,22393
-Am Rodelberg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7257,22381 7296,22458
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX: ^^^
-#: by: ^^^
-#: by: ^^^
 # 
 # REMOVED (es gibt nur einen Gehweg, ohne Radweg, aber siehe auch Kommentar in radwege-orig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120302.1240.366909.html --- #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html?date=20120505 --- #: next_check: 2012-07-13 --- #: XXX es gab hier Geh- und Radwegarbeiten --- Königsheideweg: Gibt es hier Radwege oder Radspuren? Einseitig oder auf beiden Seiten? Zwischen welchen Kreuzungen?	?::inwork 16784,4913 16554,5022 16362,5112 16279,5170
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120727.1045.372992.html --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130610.1230.385879.html --- #: XXX Bauarbeiten, der Weg bekommt eine neue Asphaltdecke -> Asphalt, Q0 --- #: next_check: 2013-07-10 (evtl. automatisch ändern?) --- #: priority: #A --- Kolonie Frühauf: Radfahrverbindung wird saniert	? 3632,19934 4076,20268 4088,20301

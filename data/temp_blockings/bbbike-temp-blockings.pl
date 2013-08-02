@@ -19600,11 +19600,11 @@ EOF
 userdel	2::inwork 3079,19045 2993,18962
 EOF
      },
-     { from  => 1343894400, # 2012-08-02 10:00
-       until => 1344211200, # 2012-08-06 02:00
-       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Str. vollständig gesperrt (bis 06.08.12, 02:00)',
+     { from  => $isodate2epoch->("2013-08-01 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-08-05 02:00:00"),
+       periodic => 1, # Biermeile oder wie heißt das genau?
+       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (bis 05.08.12, 02:00)',
        type  => 'gesperrt',
-       source_id => 'IM_019026',
        data  => <<EOF,
 userdel	2::temp 12360,12505 12362,12540 12364,12589
 userdel	2::temp 12891,12549 12869,12425
@@ -20066,8 +20066,9 @@ EOF
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
 #: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
 #: by: http://www.morgenpost.de/bezirke/article112374495/Fussgaengerbruecke-wird-repariert.html (Reparatur ab Juni 2013, 2 Monate Bauzeit)
-#: last_checked: 2013-06-15
-#: next_check: 2013-07-31
+#: by: http://www.altglienicke24.de/aktuelles.html (Eröffnung Mitte September)
+#: last_checked: 2013-08-02 (von der Bahn aus gesehen)
+#: next_check: 2013-09-15
 #: priority: #A
 userdel	2::inwork 19968,16 19940,52
 EOF
@@ -20817,24 +20818,20 @@ EOF
      },
      { from  => 1353366000, # 2012-11-20 00:00
        until => 1386169200, # 2013-12-04 16:00
-       text  => 'Friedrich-Engels-Str. in beiden Richtungen zwischen Nordendstr. und Platananenstr. Baustelle, gesperrt (bis September 2013), danach wieder Einbahnstraße',
+       text  => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)',
        type  => 'handicap',
-       source_id => 'INKO_119074',
+       source_id => 'IM_019421',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130614.1020.386081.html (Vollsperrung ab Juni 2013)
 #: by: IM_019421 (allerdings hier nur bis Dezember 2013)
-#: next_check: 2013-09-01
-#: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen
-#: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074
-#: priority: #A
-# --- next_check: 2013-12-04 (für die alte Situation --- q4::inwork;, IM_019421)
-#: XXX alter Text: Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)
+# REMOVED (bei VMZ abgelaufen) --- : next_check: 2013-09-01 --- #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen --- #: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074 --- #: priority: #A
+#: next_check: 2013-12-04
 #: XXX danach bessere Straßenqualität? Radstreifen?
 #: osm_watch: way id="24930947" version="20"
-userdel	q4::inwork 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
+userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 EOF
      },
      { from  => 1350252000, # 2012-10-15 00:00
@@ -21364,8 +21361,8 @@ userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4
 EOF
      },
      { from  => 1349931600, # 2012-10-11 07:00
-       until => 1375279200, # 2013-07-31 16:00
-       text  => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Ende Juli 2013',
+       until => $isodate2epoch->("2013-10-06 16:00:00"), # 1375279200, # 2013-07-31 16:00
+       text  => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Anfang Oktober 2013',
        type  => 'handicap',
        source_id => 'INKO_115299',
        data  => <<EOF,
@@ -21629,6 +21626,15 @@ EOF
        source_id => 'IM_020034',
        data  => <<EOF,
 userdel	q4::inwork 11635,16616 11621,16749
+EOF
+     },
+     { from  => 1374381000, # 2013-07-21 06:30
+       until => 1377525600, # 2013-08-26 16:00
+       text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen, bis Ende August ',
+       type  => 'handicap',
+       source_id => 'INKO_119665',
+       data  => <<EOF,
+userdel	q3::inwork 15513,13539 15653,13542 15724,13544 15896,13547
 EOF
      },
     );
