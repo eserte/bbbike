@@ -1,10 +1,9 @@
-# -*- perl -*-
+# -*- mode:perl;coding:iso-8859-1 -*-
 
 #
-# $Id: BBBikeOsmUtil.pm,v 1.15 2009/01/27 19:11:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.16;
+$VERSION = 1.17;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -453,6 +452,10 @@ sub plot_osm_files {
 		# large areas without real information
 		next;
 	    }
+	    if (exists $tag{natural} && $tag{natural} eq 'mountain_range') {
+		# seen: "Sächsische Schweiz"; no real information (alternatively could be plotted in a very very low layer)
+		next;
+	    }
 
 	    my %item_args;
 	    my %line_item_args;
@@ -512,6 +515,12 @@ sub plot_osm_files {
 			       exists $tag{'landuse'} ? 1 :
 			       $nodes[0] eq $nodes[-1] && ($tag{'junction'}||'') ne 'roundabout' && ($tag{'highway'}||'') eq ''
 			      );
+		if ($is_area && exists $tag{'FIXME'}) {
+		    # FIXME areas may possibly hide interesting items,
+		    # so never draw them as areas
+		    # seen in: "TMC" area for Sächsische Schweiz
+		    $is_area = 0;
+		}
 		if ($is_area) {
 		    my $light_color = '#a0b0a0';
 		    my $dark_color  = '#a06060';
