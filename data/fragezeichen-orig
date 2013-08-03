@@ -238,7 +238,7 @@ Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13600,5240 13594,5240 13323,5222 13248,5221 13112,5253 13046,5267
 # 
 #: XXX Baumaßnahme 9.10 (Realisierung nach 2011), 9.2 (Realisierung bis 2010)
-#: last_checked: 2013-06-09 (keine Anzeichen)
+#: last_checked: 2013-08-03 (keine Anzeichen)
 #: check_frequency: 100d
 Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
 # 
@@ -401,8 +401,10 @@ Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13658,1730
 #: note ^^^
 # 
 #: by: http://www.sanierung-osw.de/index.php?id=419 (Blockdurchquerung)
-#: last_checked: 2013-07-06
-Siemensstr./Wattstr. - Wilhelminenhofstr.: entsteht hier ein Park? werden die Wege auch für Radfahrer befahrbar sein? Qualität? Nachts beleuchtet?	?::inwork 17766,6616 17783,6532 17992,6436
+#: XXX asphaltiert, wahrscheinlich für Radfahrer frei
+#: XXX evtl. auch Park einzeichnen, Name?
+#: last_checked: 2013-08-03
+Siemensstr. - Wilhelminenhofstr. (durch die Grünanlage): wann wird hier eröffnet? Nachts beleuchtet?	?::inwork 17809,6619 17818,6562 17826,6495
 # 
 #: last_checked: 2013-07-06
 #: next_check: 2014-04-15
@@ -622,8 +624,8 @@ Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 1
 #: note: Treskowallee (Lichtenberg) in Höhe Waldowallee Baustelle, Fahrbahn von 2 auf 1 Fahrstreifen reduziert, ein Abbiegen aus Richtung Am Tierpark in die Waldowallee ist nicht möglich (bis Ende 03/2013)
 #: source_id: IM_019443
 #: osm_watch: node id="28394944" version="19"
-#: last_checked: 2013-07-17
-#: next_check: 2013-08-17
+#: last_checked: 2013-08-03
+#: check_frequency: 30d
 Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18867,9464 18834,9256
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
@@ -1474,8 +1476,6 @@ Landschaftspark Herzberge: ebenfalls zum Landschaftspark gehörig, ggfs. in flaec
 #: next_check: 2014-10-01
 #: XXX_indoor
 "Bürgerwiese" Slabystr./Wilhelminenhofstr.: in flaechen-orig eintragen, falls fertig	?::projected 18978,5944 18954,5973 18968,6009 19076,6117 19116,6080 18978,5944
-# 
-Generationenpark: evtl. in flaechen-orig eintragen, Koordinaten!	? 17722,6796 17790,6815 17798,6790 17728,6772 17722,6796
 # 
 #: by: MichaelM
 #: XXX_prog:
@@ -3499,3 +3499,6 @@ Bruno-Taut-Str. - Am Gartenstadtweg: nachts beleuchtet?	? 21790,682 21783,660 21
 Hultschiner Damm - Immortellenweg: existiert eine Verbindung für Fußgänger und Radfahrer? Beschaffenheit des Weges? Nachts beleuchtet?	? 24402,9987 24282,10015
 #: XXX_osm: by osm
 Lauinger Str. - Biesdorfer Friedhofsweg: existiert hier eine direkte Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? 21221,11398 21311,11528
+# 
+Verlängerung der Verlängerten Rathenaustr.: Qualität? Nachts beleuchtet? Existiert eine Ausschilderung?	? 19407,6660 19568,7067
+Wasserwerk Wuhlheide - S-Bhf. Wuhlheide: Qualität? nachts beleuchtet? Ausschilderung? Bahnübergang?	? 19338,7148 19568,7067 19791,7059 20060,7147 20439,7124

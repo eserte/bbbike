@@ -10453,7 +10453,7 @@ EOF
        text  => 'Bauarbeiten am Ostkreuz, Durchfahrt nicht mehr möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14911,10587 14843,10621
+userdel	2::inwork 14911,10587 14875,10605 14843,10621
 EOF
      },
      { from  => 1193776707, # 2007-10-30 21:38
