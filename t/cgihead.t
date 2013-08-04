@@ -12,6 +12,7 @@ use lib (
 	 $FindBin::RealBin,
 	);
 use File::Basename;
+use Time::HiRes qw(time);
 
 BEGIN {
     if (!eval q{
@@ -60,6 +61,11 @@ if ($cgi_dir !~ m{(bbbike.hosteurope|radzeit)\Q.herceg.de}) {
     push @prog, "bbbikegooglemap2.cgi";
 }
 
+# URLs which are sometimes slower than the rest
+my %prog2timeout = (qr{bbbike-(data|snapshot)\.cgi} => 30);
+
+use constant DEFAULT_SOFT_TIMEOUT => 10;
+
 my @static = qw(
 		html/bbbike.css
 		html/bbbikepod.css
@@ -90,7 +96,6 @@ plan tests => scalar(@prog) + scalar(@static) + $extra_tests;
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent('BBBike-Test/1.0');
 $ua->env_proxy;
-$ua->timeout(10);
 
 delete $ENV{PERL5LIB}; # override Test::Harness setting
 for my $prog (@prog) {
@@ -127,13 +132,28 @@ for my $static (@static) {
 }
 
 sub check_url {
-    my($url, $prog) = @_;
-    if (!defined $prog) {
-	$prog = basename $url;
+    my($url) = @_;
+
+    my $soft_timeout = DEFAULT_SOFT_TIMEOUT;
+    my $hard_timeout = $soft_timeout;
+    for my $rx (keys %prog2timeout) {
+	if ($url =~ $rx) {
+	    $hard_timeout = $prog2timeout{$rx};
+	    last;
+	}
     }
-    (my $safefile = $prog) =~ s/[^A-Za-z0-9._-]/_/g;
+    $ua->timeout($hard_timeout);
+
+    my $t0 = time;
     my $resp = $ua->head($url);
+    my $t1 = time;
     ok($resp->is_success, $url) or diag $resp->content;
+    {
+	my $dt = $t1-$t0;
+	if ($dt > $soft_timeout) {
+	    diag "Warning: Request to $url was slow: " . sprintf("%.3f", $dt) . "s (expected faster than ${soft_timeout}s)";
+	}
+    }
 
     if ($url =~ /bbbike-data.cgi/) {
 	is($resp->header('content-type'), "application/zip", "Expected mime-type for bbbike-data.cgi");
