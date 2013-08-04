@@ -78,10 +78,14 @@ successful-route-search-result =
   },
   ## description missing XXX
   element Session { text }?,
-  ## description missing XXX
+  ## mapping between speed and expected trip time, typically there are
+  ## a couple of speed entries here (for 10, 15, 20, and 25 km/h)
   element Speed {
+    ## speed in km/h
     element name { xsd:integer },
-    element Pref { "1" | "" }?,
+    ## if present and "1": this is the preferred speed as entered by the user
+    element Pref { "1" | "0" }?,
+    ## trip time in hours
     element Time { xsd:decimal }
   }+,
   ## number of traffic lights on route

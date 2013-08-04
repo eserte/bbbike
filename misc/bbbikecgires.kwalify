@@ -166,8 +166,22 @@ mapping:
               - 0
               - 1
   Speed:
-    # XXX Description missing
-    type: any
+    type: map
+    mapping:
+
+      # key is speed in km/h, typically there are at least entries for 10, 15, 20, and 25 km/h, and additionally the preferred speed
+      =:
+        type: map
+        mapping:
+
+          Time:
+          # time is in hours
+            type: float
+
+          Pref:
+          # true, if this entry is the preferred speed
+            type: bool
+            enum: [0, 1]
 
   Session:
     # XXX Description missing
