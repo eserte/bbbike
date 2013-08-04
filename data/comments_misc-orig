@@ -106,12 +106,6 @@ Georg-Wilhelm-Str.: 3 Bodenschwellen, rechts vorbei fahren	CS 2708,10245 2691,10
 Carionweg: Kette	CS 3382,9223 3370,9215
 #: XXX_prog: doubled in gesperrt_orig, but needs implementation in Perl/Tk version
 Sesselmannweg: Kette	CS 3264,9261 3332,9181
-#: XXX_prog: should be superseded by a superiour BNP-like implementation vvv
-(Waitzstr. - Lewishamstr.): Bordsteine	CS 3764,10580 3739,10576
-Sybelstr.: Bordsteine	CS 3739,10576 3712,10566
-Apeldorner Weg: Bordsteine	CP; * 3848,8689 3868,8759
-Apeldorner Weg: Bordsteine	CP2; 3952,8980 3868,8759
-#: XXX_prog: ^^^
 Apeldorner Weg: kein Straﬂenname ausgeschildert; Weg verl‰uft westl. direkt an der BAB (104)	CS 3848,8689 3868,8759 3952,8980
 #: XXX_prog: should be superseded by a superiour BNP-like implementation
 (Wallenbergstr. - Rudolst‰tter Str.): Bordsteine	CP; * 4029,8482 4139,8485
@@ -696,6 +690,7 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 14599,10039
 	culdesac_pseudo 15181,10154
 	culdesac_pseudo 15044,10297
+	culdesac_pseudo 14977,10348
 	culdesac_pseudo 14888,10385
 	culdesac_pseudo 15513,10298
 	culdesac_pseudo 15334,10528

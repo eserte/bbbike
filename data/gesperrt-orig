@@ -852,9 +852,7 @@ Wilhelm-von-Siemens-Str.	1s:q3 9284,2624 9437,2649
 Saaleckplatz	1 5204,1057 5187,1059 5162,1098 5162,1110
 Saaleckplatz	1s:q3 5162,1110 5178,1123
 Saaleckplatz	1 5178,1123 5190,1114 5212,1074 5204,1057
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1011/nachricht4142.html
-#: note: geschlossen ab 2012-12-01, kein Wiedererˆffnungstermin
-Fuﬂg‰ngertunnels Sybel-Waitz-Str.: provisorische Schlieﬂung	2 3712,10566 3731,10563 3759,10567 3764,10580
+# REMOVED (Tunnel wird zur¸ckgebaut) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1011/nachricht4142.html --- #: note: geschlossen ab 2012-12-01, kein Wiedererˆffnungstermin --- Fuﬂg‰ngertunnels Sybel-Waitz-Str.: provisorische Schlieﬂung	2 3712,10566 3731,10563 3759,10567 3764,10580
 Meyerinckplatz	1 4030,10575 4007,10559 3981,10590 3997,10607
 #: by: osm
 #: confirmed_by: Wilfried Spang & srt:
@@ -1647,9 +1645,10 @@ tragen (3+5 Stufen)	0:15 9366,6150
 tragen (3+3+2+2 Stufen)	0:20 9244,3872
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130116.0915.380245.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4276
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130722.1530.387208.html
 #: XXX evtl. wird hier barrierefrei umgebaut werden
 #: last_checked: 2013-07-01
-#: check_frequency: 90d
+#: next_check: 2013-08-15
 tragen (10 Stufen)	0:15 8035,10075
 tragen (7 weite Stufen)	0:30 15759,16671
 tragen (6 Stufen)	0:12 15915,16526
@@ -2735,10 +2734,7 @@ Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9
 Hohenzollerndamm: unpassierbarer Mittelstreifen	3nocross 3427,9010 3467,9045 3521,9059
 Kette	BNP:5 3370,9215
 Kette	BNP:5 3264,9261
-#: corrected_by: srt/new_policy (0:240 -> 2 x 0:40; 60s for 60 steps and 20s for the way under the tunnel, divided into two) vvv
-(Fuﬂg‰ngertunnel Sybelstr.): 30 Stufen	0:40 3731,10563
-(Fuﬂg‰ngertunnel Sybelstr.): 30 Stufen	0:40 3759,10567
-#: corrected_by ^^^
+# REMOVED (Tunnel wird zur¸ckgebaut) --- #: corrected_by: srt/new_policy (0:240 -> 2 x 0:40; 60s for 60 steps and 20s for the way under the tunnel, divided into two) vvv --- (Fuﬂg‰ngertunnel Sybelstr.): 30 Stufen	0:40 3731,10563 --- (Fuﬂg‰ngertunnel Sybelstr.): 30 Stufen	0:40 3759,10567 --- #: corrected_by ^^^
 Bregenzer Str.	1 4279,10270 4227,10014
 Kniprodestr.: unpassierbarer Mittelstreifen (Straﬂenbahn, Bordsteine)	3nocross 12901,14093 12972,14173 12992,14196 13026,14234
 Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13057,14267 13097,14307 13183,14400 13239,14461 13295,14521 13362,14593

@@ -422,10 +422,16 @@ Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 128
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
 Leon-Jessel-Platz: Fuﬂg‰nger	q1 4700,9179 4750,9143
+#: XXX_prog BS
 Nikolsburger Platz: Fuﬂg‰nger, Bordsteine	q3 5374,9619 5307,9664
+#: XXX_prog BS (an der Lewishamstr., ansonsten unbekannter qX-Wert)
 zur Sybelstr.: Bordsteine	q4 3712,10566 3739,10576
+#: XXX_prog BS (an der Lewishamstr., ansonsten unbekannter qX-Wert)
+(Waitzstr. - Lewishamstr.): Bordsteine	q4 3764,10580 3739,10576
+#: XXX_prog BS
 Rosa-Luxemburg-Str.: Fuﬂg‰nger, Bordsteine	q3 10695,12933 10685,12966
 #: note: ... und Sa 09:00-15:00 Bauernmarkt, aber keine zus‰tzlichen Behinderungen
+#: XXX_prog BS
 Lehniner Platz/Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307
 Br¸cke Schˆnflieﬂer Str.: Fuﬂg‰nger	q3 10593,16037 10592,15968 10575,15968
 #: corrected_by: Sven Reimann ("Radfahren nicht erlaubt")
@@ -2032,7 +2038,8 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 (Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13433,13346 13397,13426 13574,13505
 (Verl‰ngerte Wallenbergstr.): Fuﬂg‰nger, schmal	q3 4139,8485 4029,8482
 (Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3775,8771 3868,8759
-Apeldorner Weg: Fuﬂg‰nger	q1 3848,8689 3868,8759 3952,8980
+#: XXX_prog: Bordsteine an beiden Enden, ansonsten w‰re es q1
+Apeldorner Weg: Fuﬂg‰nger, Bordsteine	q2 3848,8689 3868,8759 3952,8980
 M¸nstersche Str.: Fuﬂg‰nger	q2 3763,9642 3699,9613
 (Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14076,10011 13995,9834
 (Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14076,10011 14118,10178
