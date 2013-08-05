@@ -362,7 +362,7 @@ sub Route::simplify_for_gps {
 	push @{ $simplified_route->{wpt} }, $wpt;
     }
     
-    if (!$routename) {
+    if (!defined $routename || !length $routename) {
 	if ($routetoname) {
 	    $routename = join("-",
 			      map {
