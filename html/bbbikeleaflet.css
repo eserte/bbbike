@@ -9,3 +9,9 @@ html, body, #map {
 .anycontrol { font-family: sans-serif; font-size: small; padding:2px; }
 .anycontrol_inactive { background-color:#ffffff; color:#000000; }
 .anycontrol_active   { background-color:#000000; color:#ffffff; }
+
+/* normal control positions are at z-index: 1000, make the copyright control below it */
+.leaflet-bottom.leaflet-right { z-index: 999; }
+
+/* looks better for tiny screens, everything is right-aligned */
+.leaflet-control-attribution { text-align: right; }
