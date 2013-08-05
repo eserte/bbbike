@@ -40,6 +40,8 @@ sub bbd_to_sourceid_exists {
 	    (sub {
 		 my(undef, $dir) = @_;
 		 for my $source_id (@{ $dir->{source_id} || [] }) {
+		     # Use only first token from source id
+		     $source_id =~ s{^(\S+).*}{$1};
 		     $existsid{$source_id} = 1;
 		 }
 	     });
