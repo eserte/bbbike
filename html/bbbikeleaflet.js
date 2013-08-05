@@ -486,17 +486,15 @@ TrackSegs.prototype.init = function() {
 TrackSegs.prototype.addPos = function(e) {
     this.polyline[this.polyline.length-1].push(e.latlng);
     if (enable_upload) {
-	var lat = e.latlng.lat.toString().replace(/(\.\d{6}).*/, "$1");
-	var lng = e.latlng.lng.toString().replace(/(\.\d{6}).*/, "$1");
-	var uplRec = {lat:lat,
-		      lng:lng,
-		      acc:e.pos.coords.accuracy,
+	var uplRec = {lat:this._trimDigits(e.latlng.lat, 6),
+		      lng:this._trimDigits(e.latlng.lng, 6),
+		      acc:this._trimDigits(e.pos.coords.accuracy, 1),
 		      time:e.pos.timestamp};
 	if (e.pos.coords.altitude != null) {
 	    uplRec.alt = e.pos.coords.altitude;
 	}
 	if (e.pos.coords.altitudeAccuracy != null) {
-	    uplRec.altacc = e.pos.coords.altitudeAccuracy;
+	    uplRec.altacc = this._trimDigits(e.pos.coords.altitudeAccuracy,1);
 	}
 	this.upload[this.upload.length-1].push(uplRec);
     }
@@ -504,4 +502,7 @@ TrackSegs.prototype.addPos = function(e) {
 TrackSegs.prototype.addGap = function(e) {
     this.polyline.push([]);
     this.upload.push([]);
+}
+TrackSegs.prototype._trimDigits = function(num,digits) {
+    return num.toString().replace(new RegExp("(\\.\\d{" + digits + "}).*"), "$1");
 }
