@@ -29,6 +29,7 @@ print $q->header('text/html; charset=utf-8');
 
 my $leaflet_dist = $q->param('leafletdist') || '';
 my $enable_upload = $q->param('upl') || 0;
+my $use_osm_de_map = $q->param('osmdemap') || 0;
 
 my $use_old_url_layout = $q->url(-absolute => 1) =~ m{/cgi/bbbikeleaflet};
 my($bbbike_htmlurl, $bbbike_imagesurl);
@@ -108,6 +109,7 @@ while(<$fh>) {
 
     if (m{\Q//--- INSERT DEVEL CODE HERE ---}) {
 	print "enable_upload = " . ($enable_upload ? 'true' : 'false') . ";\n";
+	print "use_osm_de_map = " . ($use_osm_de_map ? 'true' : 'false') . "\n";
     }
 }
 
