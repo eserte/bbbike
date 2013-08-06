@@ -338,7 +338,7 @@ tourism=hostel [0x2b02 resolution 24]
 tourism=hotel | tourism=motel { name '${name|def:}(${stars}*)${operator|def:}' | '${name} ${operator}' | '${name}' | '${operator}' } [0x2b01 resolution 24]
 tourism=information {name '${name} - ${description} (${operator})'|
 '${name} - (${description})' | '${name}' | '${description}' |
-'${operator}' | '${ref}'} [0x2f0c resolution 24]
+'${operator}' | '${ref}'} [0x4c00 resolution 24]
 # tourism=lean_to replaces some uses of amenity=shelter
 tourism=lean_to [0x2b05 resolution 24 default_name 'lean-to']
 tourism=wilderness_hut [0x2b07 resolution 24 default_name 'wilderness hut']
