@@ -477,16 +477,16 @@ Route:
     TotalDistString: 1.6 km
 Speed:
   10:
-    Pref: 0
+    Pref: ''
     Time: 0.157066841594913
   15:
-    Pref: 0
+    Pref: ''
     Time: 0.104711227729942
   20:
     Pref: 1
     Time: 0.0785334207974565
   25:
-    Pref: 0
+    Pref: ''
     Time: 0.0628267366379652
 Trafficlights: 0
 
@@ -662,16 +662,16 @@ EOF
 #     TotalDistString: 6.0 km
 # Speed:
 #   10:
-#     Pref: 0
+#     Pref: ''
 #     Time: 0.600582223743283
 #   15:
-#     Pref: 0
+#     Pref: ''
 #     Time: 0.400388149162189
 #   20:
 #     Pref: 1
 #     Time: 0.300291111871641
 #   25:
-#     Pref: 0
+#     Pref: ''
 #     Time: 0.240232889497313
 # Trafficlights: 5
 
@@ -847,16 +847,16 @@ EOF
 #     TotalDistString: 6.0 km
 # Speed:
 #   10:
-#     Pref: 0
+#     Pref: ''
 #     Time: 0.600582223743283
 #   15:
-#     Pref: 0
+#     Pref: ''
 #     Time: 0.400388149162189
 #   20:
 #     Pref: 1
 #     Time: 0.300291111871642
 #   25:
-#     Pref: 0
+#     Pref: ''
 #     Time: 0.240232889497313
 # Trafficlights: 5
 
@@ -919,16 +919,16 @@ Route:
     TotalDistString: 1.6 km
 Speed:
   10:
-    Pref: 0
+    Pref: ''
     Time: 0.15725245647252
   15:
-    Pref: 0
+    Pref: ''
     Time: 0.10483497098168
   20:
     Pref: 1
     Time: 0.0786262282362601
   25:
-    Pref: 0
+    Pref: ''
     Time: 0.0629009825890081
 Trafficlights: 6
 
@@ -993,16 +993,16 @@ Route:
     TotalDistString: 0.4 km
 Speed:
   10:
-    Pref: 0
+    Pref: ''
     Time: 0.0402994198815616
   15:
-    Pref: 0
+    Pref: ''
     Time: 0.0268662799210411
   20:
     Pref: 1
     Time: 0.0201497099407808
   25:
-    Pref: 0
+    Pref: ''
     Time: 0.0161197679526246
 Trafficlights: 1
 

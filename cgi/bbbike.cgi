@@ -3979,7 +3979,7 @@ sub display_route {
 		$speed = $speed_default; # sane default
 	    }
 	    my $def = {};
-	    $def->{Pref} = ($q->param('pref_speed') && $speed == $q->param('pref_speed')) ? 1 : 0;
+	    $def->{Pref} = ($q->param('pref_speed') && $speed == $q->param('pref_speed')) ? "1" : "";
 	    my $time;
 	    if ($handicap_net) {
 		$time = 0;

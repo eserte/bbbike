@@ -84,7 +84,7 @@ successful-route-search-result =
     ## speed in km/h
     element name { xsd:integer },
     ## if present and "1": this is the preferred speed as entered by the user
-    element Pref { "1" | "0" }?,
+    element Pref { "1" | "" }?,
     ## trip time in hours
     element Time { xsd:decimal }
   }+,

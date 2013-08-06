@@ -180,8 +180,8 @@ mapping:
 
           Pref:
           # true, if this entry is the preferred speed
-            type: bool
-            enum: [0, 1]
+            type: text
+            enum: ["", "1"]
 
   Session:
     # XXX Description missing
