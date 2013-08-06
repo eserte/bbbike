@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-08-02 vvv
+#: last_checked: 2013-08-06 vvv
 #: next_check: 2013-08-30 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (fr¸her)
@@ -147,7 +147,7 @@ Rathausstr.: Einbahnstraﬂe an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
 # 
 #: note: q4 zumindest im Berufsverkehr vvv
-#: last_checked: 2013-07-16 vvv
+#: last_checked: 2013-08-06 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
 Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q4::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
@@ -173,7 +173,7 @@ Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 
 #: osm_watch: way id="34390483" version="8"
 #: source_id: INKO_114376
 #: source_id: IM_019321
-#: last_checked: 2013-07-09
+#: last_checked: 2013-08-06
 #: priority: #A
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
@@ -2010,7 +2010,7 @@ An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13235,13414
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 #: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2013-07-03
+#: last_checked: 2013-08-06
 #: check_frequency: 90d
 Ritterstr.: Fuﬂg‰nger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fuﬂg‰nger	q2 5808,5332 5810,5340 5822,5388
@@ -3201,6 +3201,7 @@ Bulgenbachweg: enge Straﬂe	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,
 Schmˆckwitzwerder S¸d: enge Straﬂe	q1 30343,-3454 30133,-3840
 # 
 #: by: Stefan Klinkusch: vvv
+Litta-von-Stauffenberg-Weg: schmaler Rad- und Gehweg (1,5m-2m)	q1 -7009,5211 -7174,5307
 Scharfe Lanke: enge Straﬂe	q0- -4251,11112 -4254,10810 -4230,10679 -4323,10570 -4387,10496 -4445,10379
 (Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3441,13270 -3352,13135 -3339,13106 -3203,12895 -3205,12816 -3180,12719 -3142,12615
 (zum R‰cknitzer Steig): einige Fuﬂg‰nger	q1 -5535,12631 -5559,12557

@@ -2588,7 +2588,7 @@ EOF
        text  => 'L 793; (Alfred-Kühne-Str.); OD Ludwigsfelde, am OA in Ri. A 10 Einbau Anschlussgleis Vollsperrung 24.08.2005-10.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 2629,-10301 2580,-11069 2423,-11316 2001,-11983 1709,-12428
+userdel	2 2629,-10301 2580,-11069 2423,-11316 2001,-11983 1695,-12417
 EOF
      },
      { from  => 1161627703, # 2006-10-23 20:21
@@ -4094,7 +4094,7 @@ EOF
        text  => 'L 079 Ludwigsfelde-Ahrensdorf zw. Ludwigsfelde und Ahrensdorf Straßenbauarbeiten Vollsperrung 12.04.2006-23.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -2086,-9891 -1245,-9999
+userdel	2 -2058,-9925 -1495,-10029
 EOF
      },
      { from  => 1145570400, # 2006-04-21 00:00
@@ -4522,7 +4522,7 @@ EOF
        text  => 'L 079 Ludwigsfelde-Ahrensdorf zw. Ludwigsfelde und Ahrensdorf Straßenbauarbeiten Vollsperrung 20.05.2006-21.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -2086,-9891 -1245,-9999 -862,-9933
+userdel	2 -2058,-9925 -1495,-10029 -862,-9933
 EOF
      },
      { from  => 1147845153, # 2006-05-17 07:52

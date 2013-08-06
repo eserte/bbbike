@@ -1457,16 +1457,7 @@ userdel	2::temp 14500,9856 14483,9843
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1375646400,
-         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung (Stadtteilfest Müllerstraße), Straße vollständig gesperrt (2. bis 4. August 2013)',
-         'from' => 1375358400,
-         'id' => 1431,
-         'data' => 'userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2691,18 +2682,7 @@ userdel	q4::inwork 425,8766 490,8716
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1375660800,
-         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (bis 05.08.12, 02:00)',
-         'from' => 1375344000,
-         'id' => 2262,
-         'data' => 'userdel	2::temp 12360,12505 12362,12540 12364,12589
-userdel	2::temp 12891,12549 12869,12425
-userdel	2::temp 12635,12629 12596,12472
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3331,16 +3311,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_020034',
-         'until' => 1375710600,
-         'text' => 'Neumannstr. (Pankow): Baustelle, Straße zwischen Thulestr. und Eschengraben gesperrt, bis 05.08.2013 ',
-         'from' => 1373460600,
-         'id' => 2465,
-         'data' => 'userdel	q4::inwork 11635,16616 11621,16749
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_119665',
          'until' => 1377525600,

@@ -49,7 +49,7 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-07-17
+#: last_checked: 2013-08-06
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -123,7 +123,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-07-09
+#: last_checked: 2013-08-06
 #: next_check: 2014-01-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -137,7 +137,7 @@ Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-07-12
+#: last_checked: 2013-08-05
 #: check_frequency: 60d
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
 # 
@@ -230,7 +230,7 @@ Karl-Marx-Str.: wann werden hier die Radspuren markiert?	?::projected 13085,6925
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
-#: last_checked: 2013-07-17
+#: last_checked: 2013-08-06
 #: check_frequency: 90d
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
@@ -655,14 +655,14 @@ Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2013-06-27
-#: next_check: 2013-10-28
+#: last_checked: 2013-08-05
+#: next_check: 2013-12-05
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv
 #: osm_watch: way id="185792044" version="1"
-#: last_checked: 2013-06-15 (Trasse schon sichtbar) vvv
+#: last_checked: 2013-08-06 (Trasse schon sichtbar) vvv
 #: next_check: 2014-03-21 vvv
 Wasserstr.: geplante Straße in Niederschöneweide	?::projected 17477,6031 17639,6227
 Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,6083 17900,6072
@@ -3515,9 +3515,7 @@ Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 2442
 #: by: ^^^
 #: by: ^^^
 # 
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20130606.1000.385732.html
-#: XXX fehlt in Berlin.coords.data
-Litta-von-Stauffenberg-Weg: befindet sich der Weg hier? Qualität? Nachts beleuchtet?	? -7018,5218 -7174,5307
+# REMOVED (eingetragen) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130606.1000.385732.html --- #: XXX fehlt in Berlin.coords.data --- Litta-von-Stauffenberg-Weg: befindet sich der Weg hier? Qualität? Nachts beleuchtet?	? -7009,5211 -7174,5307
 # 
 Bruno-Taut-Str. - Am Gartenstadtweg: nachts beleuchtet?	? 21790,682 21783,660 21755,625 21714,601 21679,596
 #: XXX falls der Weg existiert -> culdesac_pseudo für den Immortellenweg eintragen, ansonsten culdesac
@@ -3525,8 +3523,6 @@ Hultschiner Damm - Immortellenweg: existiert eine Verbindung für Fußgänger und R
 #: XXX_osm: by osm
 Lauinger Str. - Biesdorfer Friedhofsweg: existiert hier eine direkte Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? 21221,11398 21311,11528
 # 
-(Verlängerung der Verlängerten Rathenaustr.): Qualität? Nachts beleuchtet? Existiert eine Ausschilderung?	? 19407,6660 19568,7067
-(Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Qualität? nachts beleuchtet? Ausschilderung? Bahnübergang?	? 19338,7148 19568,7067 19791,7059 20060,7147 20439,7124
 (Am Fasaneriegraben): Qualität des Weges (vielleicht asphaltiert?)	? 6907,21751 6878,21660 6839,21611 6849,21592 6886,21577 6917,21559 6917,21506
 (Am Fasaneriegraben - Senftenberger Ring): Qualität des Weges (vielleicht asphaltiert?)	? 6839,21611 6826,21587 6802,21563 6758,21565 6756,21528
 # 

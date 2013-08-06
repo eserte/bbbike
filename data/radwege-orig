@@ -471,13 +471,12 @@ Gehweg für Radfahrer frei	RW1; -4540,8535 -4540,8449 -4578,8336
 Gehweg für Radfahrer frei	RW1; -4578,8336 -4839,7791 -4906,7666 -4967,7567 -5046,7442 -5097,7361 -5170,7256 -5279,7113 -5454,6896 -5698,6551
 enger Radweg	RW1; -5698,6551 -5454,6896 -5279,7113 -5170,7256 -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4839,7791 -4578,8336
 Gehweg für Radfahrer frei	RW1;RW1 -5698,6551 -5758,6469 -5877,6308 -6170,6016 -6420,5771 -6480,5713 -6559,5637 -6666,5535 -6734,5470 -6982,5237
-	RW2;RW1 -6982,5237 -7082,5144 -7120,5076
+	RW2;RW1 -6982,5237 -7009,5211 -7082,5144 -7120,5076
 	RW1;RW1 -5392,11421 -5455,11321 -5501,11251 -5564,11209
-Radweg kaum erkennbar	RW1; -5564,11209 -5650,11143 -5716,11054
+#: note: Hinweis mit den Sträuchern von S. Klinkusch
+Radweg kaum erkennbar, in den Sommermonaten wegen hereinwuchernden Sträuchern teilweise unbenutzbar	RW1; -5564,11209 -5650,11143 -5716,11054
 	RW1; -5716,11054 -5650,11143 -5564,11209
-#: add_fragezeichen: Potsdamer Chaussee: ist die Qualität der Radwege nach den Bauarbeiten besser geworden?
-#: source_id: INKO_118920
-#: next_check: 2013-07-13 (evtl. S. Klinkusch fragen)
+# REMOVED (hat sich nicht verbessert, laut S. Klinkusch) --- #: add_fragezeichen: Potsdamer Chaussee: ist die Qualität der Radwege nach den Bauarbeiten besser geworden? --- #: source_id: INKO_118920 --- #: next_check: 2013-07-13 (evtl. S. Klinkusch fragen)
 holpriges Verbundsteinpflaster, Q1	RW8;RW2 -5716,11054 -5870,10847 -5928,10782 -6660,9953
 asphaltiert	RW8;RW2 -7783,8524 -7787,8517 -8215,7937 -8405,7751
 #: note im Juni 2009 erneuert, laut http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20090608.1540.129538.html
