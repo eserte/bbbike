@@ -113,15 +113,16 @@ sub merkaartor_via_cmdline {
 
 sub josm_via_cmdline {
     my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
+    # [--download=]minlat,minlon,maxlat,maxlon
     my $download_opt = sprintf '--download=%s,%s,%s,%s',
-	$maxy, $minx, $miny, $maxx;
+	$miny, $minx, $maxy, $maxx;
     double_forked_exec 'josm', $download_opt;
 }
 
 sub merkaartor_url {
     my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
     my $url = sprintf 'http://localhost:8111/load_and_zoom?left=%s&right=%s&top=%s&bottom=%s', # &select=way65780504
-	$minx, $maxx, $miny, $maxy;
+	$minx, $maxx, $maxy, $miny;
     $url;
 }
 
