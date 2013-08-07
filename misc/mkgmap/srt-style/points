@@ -121,7 +121,8 @@ amenity=drinking_water [0x5000 resolution 24 default_name 'Water']
 amenity=embassy & country=* { name '${country} ${name|def:}' } [0x3003 resolution 24]
 amenity=embassy & country!=* [0x3003 resolution 24 default_name 'Embassy']
 amenity=emergency_phone [0x2f12 resolution 24 default_name 'Emergency Phone']
-amenity=ferry_terminal [0x2f08 resolution 22]
+# SRT: changed 0x2f08 (generic service/bus stop) -> 0x2f1c (generic service/undefined; with ferry icon in typ file)
+amenity=ferry_terminal [0x2f1c resolution 22]
 amenity=fast_food & cuisine=grill [0x2a03 resolution 24]
 amenity=fast_food & cuisine ~ '.*pizza.*' [0x2a0a resolution 24]
 amenity=fast_food [0x2a07 resolution 24]
@@ -172,7 +173,8 @@ amenity=school [0x2c05 resolution 24]
 # amenity=shelter is ambiguous; when possible, consider using other tags:
 #  tourism=lean_to or tourism=picnic_site
 #  shelter=yes on highway=bus_stop or highway=tram_stop or railway=halt
-amenity=shelter [0x2b06 resolution 24 default_name 'Shelter']
+# SRT: changed 0x2b06 -> 0x2b10
+amenity=shelter [0x2b10 resolution 24 default_name 'Shelter']
 # amenity=supermarket is superceded by shop=supermarket
 amenity=supermarket [0x2e02 resolution 24]
 amenity=taxi [0x2f17 resolution 24]
@@ -336,6 +338,14 @@ tourism=chalet { name '${name}' | '${ref}' } [0x2b02 resolution 24]
 tourism=guest_house [0x2b02 resolution 24]
 tourism=hostel [0x2b02 resolution 24]
 tourism=hotel | tourism=motel { name '${name|def:}(${stars}*)${operator|def:}' | '${name} ${operator}' | '${name}' | '${operator}' } [0x2b01 resolution 24]
+# SRT: addition
+tourism=information & information=guidepost {name '${name} - ${description} (${operator})'|
+'${name} - (${description})' | '${name}' | '${description}' |
+'${operator}' | '${ref}'} [0x7204 resolution 24]
+# SRT: addition (this is also an info icon, but a smaller one)
+tourism=information & information=board {name '${name} - ${description} (${operator})'|
+'${name} - (${description})' | '${name}' | '${description}' |
+'${operator}' | '${ref}'} [0x7110 resolution 24]
 tourism=information {name '${name} - ${description} (${operator})'|
 '${name} - (${description})' | '${name}' | '${description}' |
 '${operator}' | '${ref}'} [0x4c00 resolution 24]
@@ -345,7 +355,8 @@ tourism=wilderness_hut [0x2b07 resolution 24 default_name 'wilderness hut']
 tourism=museum [0x2c02 resolution 24]
 tourism=picnic_site [0x4a00 resolution 24]
 tourism=theme_park [0x2c01 resolution 24]
-tourism=viewpoint {name '${name} - ${description}' | '${name}'} [0x2c04 resolution 24]
+# SRT: changed 0x2c04 -> 0x7205
+tourism=viewpoint {name '${name} - ${description}' | '${name}'} [0x7205 resolution 24]
 tourism=wine_cellar [0x2c0a resolution 24]
 tourism=zoo [0x2c07 resolution 24]
 
