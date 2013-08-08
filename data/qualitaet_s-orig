@@ -7216,9 +7216,8 @@ Straße am Schaltwerk: Asphalt	Q0 717,14894 537,14919 510,14923 443,14900
 Jungfernsteig: Kopfsteinpflaster	Q2 862,14463 938,14457
 Kapellensteig: Kopfsteinpflaster	Q2 937,14391 938,14457 936,14518
 Wattstr.: Asphalt	Q0 968,14263 999,14390 998,14435
-#: XXX wird die Wattstr. hier auch asphaltiert?
+#: add_fragezeichen: ist die Wattstr. mittlerweile ab der Kreuzung Jugendweg auch asphaltiert?
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130603.1405.385587.html
-#: next_check: 2013-07-25
 Wattstr.: Kopfsteinpflaster	Q2 998,14435 998,14516
 Grammestr.: Kopfsteinpflaster	Q2 1059,14515 1058,14459 1057,14389
 Halskesteig: Kopfsteinpflaster	Q2 1157,14459 1058,14459
@@ -9422,12 +9421,9 @@ Ifflandstr. (Mahlsdorf): guter Asphalt	Q0 25030,9626 24991,9561 24853,9312 24737
 Lotosweg: Kopfsteinpflaster	Q2 4910,23490 5019,23343 4951,23158 4742,23078
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Lotosweg: Verbundsteinpflaster	Q1 4728,23100 4613,23060
-#: confirmed_by: srt
-#: XXX Bauarbeiten, danach asphaltiert
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20130603.1405.385587.html
-#: next_check: 2013-07-25
-#: priority: #A
-Jugendweg: Kopfsteinpflaster	Q2 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
+#: add_fragezeichen: ist der Jugendweg seit den Bauarbeiten komplett asphaltiert?
+#: corrected_by: http://www.berlin.de/ba-spandau/presse/archiv/20130603.1405.385587.html (früher Kopfsteinpflaster, jetzt wahrscheinlich asphaltiert)
+Jugendweg: Asphalt	Q0 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
 #: corrected_by: srt (Verbundsteinpflaster -> unbefestigt)
 Schauensteiner Weg: unbefestigte Straße, teilweise mit Betonplatten	Q2+ -9294,4689 -9217,4645
 #: confirmed_by: srt
