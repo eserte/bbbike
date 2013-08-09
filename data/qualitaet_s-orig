@@ -222,7 +222,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2013-07-09
+#: last_checked: 2013-08-08
 #: check_frequency: 90d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -390,7 +390,13 @@ Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12991,7549 13100,7626
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622
 Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712
-Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742 13288,7653
+Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889
+#: XXX wird hier asphaltiert oder wieder Kopfsteinpflaster verlegt?
+#: last_checked: 2013-08-08
+Richardstr.: unbefestigt	Q2 13103,7889 13150,7845 13226,7775 13245,7742
+#: XXX bleibt die Asphaltierung hier permanent?
+#: last_checked: 2013-08-08
+Richardstr.: Asphalt	Q0 13245,7742 13288,7653
 Richardstr.: Kopfsteinpflaster	Q2 13288,7653 13303,7622
 Richardstr.: Asphalt	Q0 13303,7622 13339,7452
 Richardstr.: Kopfsteinpflaster, OK	Q1 13339,7452 13345,7424 13369,7307
@@ -682,7 +688,7 @@ Alter Markt: Asphalt	Q0 22495,4523 22458,4565
 Alter Markt: Kopfsteinpflaster	Q2 22458,4565 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Kopfsteinpflaster	Q2 22390,4702 22388,4737 22377,4836
 Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
-Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10238,15316 10186,15463 10122,15647
+Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10238,15316 10186,15463 10179,15483 10122,15647
 Norwegerstr.: mäßiger Asphalt	Q1- 9959,16510 9975,16425
 Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
 #: note: public imagery
@@ -1184,7 +1190,8 @@ Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
 Dunckerstr.: Kopfsteinpflaster	Q2 11337,14946 11450,15173 11480,15229 11595,15460
 Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11119,15385
 # REMOVED --- siehe http://www.berlin.de/ba-pankow/verwaltung/tiefbau/berliner_strasse.html --- #: XXX nach den Bauarbeiten wahrscheinlich asphaltiert, außerdem gibt es vermutlich Radwege --- #: next_check: 2012-01-01 (public) --- Berliner Str. (Pankow): außen Kopfsteinpflaster, innen betoniert	Q2 10830,17985 10819,18066 10755,18231 10739,18262 10680,18380
-Schudomastr.: Kopfsteinpflaster, OK	Q1 13887,7416 13798,7507 13781,7524
+Schudomastr.: Kleinsteinpflaster	Q1 13815,7490 13781,7524
+Schwarzastr.: Kleinsteinpflaster	Q1 13840,7513 13815,7490
 Wilskistr.: Kopfsteinpflaster, OK	Q1 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
 Wilskistr.: Asphalt	Q0 -219,4149 -303,4086 -343,4056 -402,4012
 Im Fischtal: Kopfsteinpflaster, OK	Q1 798,4766 723,4572
@@ -1961,6 +1968,7 @@ Götzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
 (Weg am Tegeler Fließ): Waldweg, OK	Q2 4251,22829 4166,22725 4114,22690 4087,22714 4022,22691
 #: XXX Sanierung des Fließtalwanderweges
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120917.1110.375306.html
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130805.1100.387522.html ("in wenigen Wochen fertig")
 #: next_check: 2013-09-01
 (Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 5596,23970 5409,23816 5297,23633 5214,23420 5242,23156 5232,23139
 (Weg am Tegeler Fließ): gut gewalzter Waldweg	Q0- 5232,23139 5205,23094 5127,23042 5054,23025 4824,22907 4731,22904
@@ -4582,12 +4590,18 @@ Sperberstr. (Bohnsdorf): Beton mit Schäden	Q1- 22340,-911 22364,-730
 Habichtstr. (Bohnsdorf): Beton	Q1 22657,-763 22553,-756 22458,-742 22364,-730 22271,-717
 Merkurstr. (Bohnsdorf): Beton	Q0 22668,-786 22799,-728
 Merkurstr. (Bohnsdorf): Asphalt	Q0- 22799,-728 22987,-655
+#: XXX Straßen erhalten vermutlich einen Asphaltüberzug, dann alle Asphalt+Q0? vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130808.1245.387707.html vvv
+#: next_check: 2013-09-28 vvv
 Fließstr. (Bohnsdorf): Beton	Q0 22707,-890 22866,-826
 Fließstr. (Bohnsdorf): rauer Asphalt	Q0- 22866,-826 23030,-761 23134,-720 23239,-679 23293,-657
 Schillerstr. (Bohnsdorf): Asphalt mit Schäden	Q1+ 23030,-761 22987,-655 22938,-555
 Goethestr. (Bohnsdorf): Asphalt	Q0- 23134,-720 23089,-609 23035,-507
 Lessingstr. (Bohnsdorf): Asphalt mit Schäden	Q1+ 23239,-679 23193,-569 23148,-487
 Amorstr.: Beton	Q0 22638,-705 22745,-650
+#: next_check ^^^
+#: by: ^^^
+#: XXX ^^^
 Amorstr.: Asphalt	Q0+ 22745,-650 22938,-555 23035,-507 23056,-499 23148,-487
 Grünauer Str. (Bohnsdorf): Asphalt	Q0 23056,-499 22990,-406 22926,-340
 Adlerstr.: Beton	Q0- 22278,-570 22471,-591 22605,-605
@@ -8844,6 +8858,7 @@ Fischerstr.: Asphaltschäden	Q2+ 16423,10259 16404,10286
 (Umleitungsstrecke für das Paul-und-Paula-Ufer): Schotterweg	Q2+ 15056,10625 14930,10646 14875,10605
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20439,7124
 (Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2+ 19407,6660 19599,7075
+(Lortzingstr. - Mauerpark): Asphalt	Q0 10038,15418 10179,15483
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -8955,7 +8970,11 @@ Trollblumenweg: guter Beton	Q0 16041,3718 16020,3732 15860,3838 15647,3977
 #: corrected_by: srt (Asphalt -> ...)
 Müllerstr. (Spandau): Beton	Q0 -3216,15155 -3138,15259
 Grünefelder Str.: guter Asphalt	Q0 -4879,16718 -4875,16928 -4871,17205
-Grabenstr. (Bohnsdorf): mäßiger Asphalt	Q1- 22315,490 22288,413 22319,295 22387,223 22530,190 22683,201
+#: XXX Fahrbahn wird grundhaft erneuert, danach wohl Q0 (zwischen Hausnummer 26 und Gründerstr., aber welche Seite?)
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130808.1245.387708.html
+#: next_check: 2013-08-23
+Grabenstr. (Bohnsdorf): mäßiger Asphalt	Q1- 22315,490 22288,413 22319,295 22387,223 22530,190
+Grabenstr. (Bohnsdorf): mäßiger Asphalt	Q1- 22530,190 22683,201
 #: note: "q4, einige Fußgänger" ignoriert
 Gemündener Str.: schlechtes Kopfsteinpflaster	Q3 11395,18274 11495,18129 11514,18101 11586,18126 11602,18133
 #: XXX Qualität überprüfen!

@@ -7742,7 +7742,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005138',
        data  => <<EOF,
-userdel	1::inwork 9443,15430 8900,15146
+userdel	1::inwork 9443,15430 9141,15272 8900,15146
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -20678,7 +20678,7 @@ userdel	q4::inwork 11615,15114 11595,15058
 EOF
      },
      { from  => $isodate2epoch->("2013-07-31 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-08-11 23:59:59"),
+       until => $isodate2epoch->("2013-07-31 00:00:00"), # XXX Das Gauklerfest 2013 wurde abgesagt!!!
        periodic => 1,
        text  => 'Gauklerfest, Straßen am Schinkelplatz gesperrt, vom 1. August bis 11. August 2013',
        type  => 'gesperrt',
@@ -21179,7 +21179,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-06-04
+#: last_checked: 2013-08-08
 #: check_frequency: 60d
 #: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
 userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
@@ -21484,7 +21484,7 @@ EOF
        text  => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-07-20
+#: last_checked: 2013-08-08
 #: check_frequency: 30d
 userdel	q4::inwork 13301,8606 13262,8554 13217,8493
 EOF

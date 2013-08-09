@@ -336,7 +336,9 @@ Karl-Marx-Platz: Kopfsteinpflaster	Q2 12991,7549 13100,7626
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622
 Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712
-Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742 13288,7653
+Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889
+Richardstr.: unbefestigt	Q2 13103,7889 13150,7845 13226,7775 13245,7742
+Richardstr.: Asphalt	Q0 13245,7742 13288,7653
 Richardstr.: Kopfsteinpflaster	Q2 13288,7653 13303,7622
 Richardstr.: Asphalt	Q0 13303,7622 13339,7452
 Richardstr.: Kopfsteinpflaster, OK	Q1 13339,7452 13345,7424 13369,7307
@@ -600,7 +602,7 @@ Alter Markt: Asphalt	Q0 22495,4523 22458,4565
 Alter Markt: Kopfsteinpflaster	Q2 22458,4565 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Kopfsteinpflaster	Q2 22390,4702 22388,4737 22377,4836
 Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
-Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10238,15316 10186,15463 10122,15647
+Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10238,15316 10186,15463 10179,15483 10122,15647
 Norwegerstr.: mäßiger Asphalt	Q1 9959,16510 9975,16425
 Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
 Gleimtunnel: Fahrbahn Kopfsteinpflaster, Radwege asphaltiert	Q0 10122,15647 9992,15625
@@ -1007,7 +1009,8 @@ Fasanenplatz, zur Meierottostr.: gutes Kopfsteinpflaster	Q1 5195,10175 5246,1016
 Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
 Dunckerstr.: Kopfsteinpflaster	Q2 11337,14946 11450,15173 11480,15229 11595,15460
 Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11119,15385
-Schudomastr.: Kopfsteinpflaster, OK	Q1 13887,7416 13798,7507 13781,7524
+Schudomastr.: Kleinsteinpflaster	Q1 13815,7490 13781,7524
+Schwarzastr.: Kleinsteinpflaster	Q1 13840,7513 13815,7490
 Wilskistr.: Kopfsteinpflaster, OK	Q1 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
 Wilskistr.: Asphalt	Q0 -219,4149 -303,4086 -343,4056 -402,4012
 Im Fischtal: Kopfsteinpflaster, OK	Q1 798,4766 723,4572
@@ -8176,6 +8179,7 @@ Fischerstr.: Asphaltschäden	Q2 16423,10259 16404,10286
 (Umleitungsstrecke für das Paul-und-Paula-Ufer): Schotterweg	Q2 15056,10625 14930,10646 14875,10605
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20439,7124
 (Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2 19407,6660 19599,7075
+(Lortzingstr. - Mauerpark): Asphalt	Q0 10038,15418 10179,15483
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -8242,7 +8246,8 @@ Korbmacherweg: guter Asphalt	Q0 16352,1226 16375,1313
 Trollblumenweg: guter Beton	Q0 16041,3718 16020,3732 15860,3838 15647,3977
 Müllerstr. (Spandau): Beton	Q0 -3216,15155 -3138,15259
 Grünefelder Str.: guter Asphalt	Q0 -4879,16718 -4875,16928 -4871,17205
-Grabenstr. (Bohnsdorf): mäßiger Asphalt	Q1 22315,490 22288,413 22319,295 22387,223 22530,190 22683,201
+Grabenstr. (Bohnsdorf): mäßiger Asphalt	Q1 22315,490 22288,413 22319,295 22387,223 22530,190
+Grabenstr. (Bohnsdorf): mäßiger Asphalt	Q1 22530,190 22683,201
 Gemündener Str.: schlechtes Kopfsteinpflaster	Q3 11395,18274 11495,18129 11514,18101 11586,18126 11602,18133
 Karlstadtder Str.: schlechtes Kopfsteinpflaster	Q3 11586,18126 11621,18011
 Siedelmeisterweg: Kleinsteinpflaster	Q1 4640,18818 4647,18980

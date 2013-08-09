@@ -2893,18 +2893,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1376258399,
-         'text' => 'Gauklerfest, Straßen am Schinkelplatz gesperrt, vom 1. August bis 11. August 2013',
-         'from' => 1375221600,
-         'id' => 2376,
-         'data' => 'userdel	2::temp 9994,12368 10008,12274 10010,12259 10035,12209
-userdel	2::temp 10008,12274 10058,12290 9996,12401
-userdel	2::temp 10091,12232 10058,12290
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3094,7 +3083,7 @@ userdel	q2::inwork 5258,11285 5247,10992
          'from' => undef,
          'id' => 2425,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-06-04
+#: last_checked: 2013-08-08
 #: check_frequency: 60d
 #: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
 userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
@@ -3208,7 +3197,7 @@ userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
          'text' => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2452,
-         'data' => '#: last_checked: 2013-07-20
+         'data' => '#: last_checked: 2013-08-08
 #: check_frequency: 30d
 userdel	q4::inwork 13301,8606 13262,8554 13217,8493
 ',

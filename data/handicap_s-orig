@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-08-07 vvv
+#: last_checked: 2013-08-08 vvv
 #: next_check: 2013-08-30 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (fr¸her)
@@ -26,7 +26,7 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-07-20 vvv
+#: last_checked: 2013-08-08 vvv
 #: check_frequency: 90d
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
@@ -94,7 +94,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: next_check: 2014-04-01
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 # 
-#: last_checked: 2013-06-07 vvv
+#: last_checked: 2013-08-09 vvv
 #: next_check: 2013-12-31 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -147,13 +147,13 @@ Rathausstr.: Einbahnstraﬂe an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
 # 
 #: note: q4 zumindest im Berufsverkehr vvv
-#: last_checked: 2013-08-06 vvv
+#: last_checked: 2013-08-08 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
 Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q4::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
 #: note ^^^
 # 
-#: last_checked: 2013-07-11 vvv
+#: last_checked: 2013-08-09 vvv
 #: note: siehe auch Eintrag zur Friedrichsbr¸cke
 Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -173,7 +173,7 @@ Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 
 #: osm_watch: way id="34390483" version="8"
 #: source_id: INKO_114376
 #: source_id: IM_019321
-#: last_checked: 2013-08-06
+#: last_checked: 2013-08-08
 #: priority: #A
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
@@ -333,7 +333,7 @@ vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8122,12608
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15433,12686 15454,12519
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
-Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10238,15316 10186,15463 10122,15647
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10238,15316 10186,15463 10179,15483 10122,15647
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12160 21930,12185 21615,12326 21367,12437 21268,12481 21222,12501
 (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14798,10985 14787,10972 14764,10877 14794,10844
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9892,9286 9880,9233
@@ -738,7 +738,7 @@ Buschrosenplatz: enge Straﬂe	q1 13002,5548 13054,5556 13075,5470
 #: XXX sp‰ter vielleicht wieder "Fuﬂg‰nger, q1", und evtl. nur den Br¸ckenabschnitt so markieren
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
-#: last_checked: 2013-07-11
+#: last_checked: 2013-08-09
 #: next_check: 2013-09-11
 Friedrichsbr¸cke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
@@ -1667,6 +1667,8 @@ Springpfuhlpark: einige Fuﬂg‰nger	q1 19524,14474 19534,14459 19545,14290 19523,1
 (Am Rosengarten - L¸tztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
 D¸rerplatz: einige Fuﬂg‰nger	q1 6243,7033 6275,7004
 Straﬂe 17: kurze Rampe	q3 7307,7425 7307,7457
+#: note: es gibt an der Baustraﬂe (?) noch zwei sehr weite Dr‰ngelgitter, die kaum eine Beeintr‰chtigung darstellen
+(Lortzingstr. - Mauerpark): einige Fuﬂg‰nger	q1 10038,15418 10179,15483
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
