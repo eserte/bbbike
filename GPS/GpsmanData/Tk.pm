@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Tk.pm,v 1.19 2009/01/25 15:36:09 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.20';
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -678,7 +677,7 @@ GPS::GpsmanData::Tk - make gpsman data visible in a Tk widget
 =head1 SYNOPSIS
 
     cd .../bbbike
-    perl -MTk -MGPS::GpsmanData -MGPS::GpsmanData::Tk -e '$w=tkinit->GpsmanData->pack(qw(-fill both -expand 1));$gps=GPS::GpsmanMultiData->new;$gps->load(shift);$w->associate_object($gps);MainLoop' ...
+    perl -MTk -Ilib -MGPS::GpsmanData -MGPS::GpsmanData::Tk -e '$w=tkinit->GpsmanData->pack(qw(-fill both -expand 1));$gps=GPS::GpsmanMultiData->new;$gps->load(shift);$w->associate_object($gps);MainLoop' ...
 
 =head1 DESCRIPTION
 
