@@ -64,6 +64,7 @@ for my $f (@files) {
 		        | BBBikeEdit.pm
 		        | PointEdit.pm
 			| GPS/GpsmanData/Tk.pm
+			| GPS/GpsmanData/TkViewer.pm
  			)$}x && !eval { require Tk };
 	myskip "$f needs Inline", $tests_per_file
 	    if $f =~ m{ext/(Strassen-Inline|StrassenNetz-CNetFile).*} && !eval { require Inline::MakeMaker };
