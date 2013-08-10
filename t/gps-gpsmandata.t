@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 35;
+plan tests => 36;
 
 use_ok 'GPS::GpsmanData';
 
@@ -122,11 +122,14 @@ EOF
 
     my $gps = GPS::GpsmanData->new;
     $gps->load($tmpfile);
-
     my $wpts_before = wpts_to_string($gps);
+
+    my @sorted_wpts = $gps->get_sorted_waypoints_by_time;
+    is join(",", map { $_->Ident } @sorted_wpts), 'Friedrichstad1,LaTrattoria', 'Sort without changing GPS object';
+
     $gps->sort_waypoints_by_time;
     my $wpts_after = wpts_to_string($gps);
-    isnt $wpts_after, $wpts_before, 'Changed after sorting (waypoints now sorted by time)';
+    isnt $wpts_after, $wpts_before, 'Changed object after sorting (waypoints now sorted by time)';
 
     is $wpts_after, 'Friedrichstad1,LaTrattoria', 'New sorting';
 }

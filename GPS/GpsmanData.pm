@@ -825,7 +825,12 @@ sub make_hash {
 
 sub sort_waypoints_by_time {
     my($self) = @_;
-    @{ $self->Waypoints } = map {
+    @{ $self->Waypoints } = $self->get_sorted_waypoints_by_time;
+}
+
+sub get_sorted_waypoints_by_time {
+    my($self) = @_;
+    map {
 	$_->[1]
     } sort {
 	$a->[0] <=> $b->[0]
