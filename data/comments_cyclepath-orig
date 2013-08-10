@@ -181,8 +181,11 @@ schmaler Radstreifen	RW4; -12045,-757 -12106,-699 -12194,-463 -12265,-418
 Radweg auf Gehweg	RW1; -12306,-496 -12571,-581 -12719,-630 -12812,-655 -12877,-655
 	RW4; -12877,-655 -12812,-655 -12719,-630 -12571,-581
 Radweg auf Gehweg, Kleinsteinpflaster	RW2; -12872,-565 -12877,-655
-	RW4; -12529,-789 -12531,-781 -12545,-698 -12571,-581
+#: XXX Radstreifen oder Suggestivstreifen?
+	RW4;RW3 -12529,-789 -12531,-781 -12545,-698 -12571,-581
+#: XXX Radstreifen oder Suggestivstreifen?
 	RW4;RW4 -12515,-889 -12529,-789
+	RW3;RW3 -12515,-889 -12512,-911 -12575,-1031
 	RW1; -12877,-655 -13044,-709 -13064,-715 -13137,-737 -13231,-763 -13433,-831 -13468,-847 -13625,-902
 asphaltierter Geh- und Radweg auf Grünstreifen	RW1; -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-737 -13064,-715 -13044,-709 -12877,-655
 	RW1; -12529,-789 -12219,-726
@@ -643,6 +646,11 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 19579,-4027 19464,-410
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18386,-4109 18423,-4094 18861,-3921 19019,-3859 19105,-3940 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18517,-4502 18492,-4417
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW8;RW2 19601,-3714 19904,-3581 20239,-3424 20285,-3346 20285,-3268 20071,-2917
+#: XXX die "Fahrradstraße" prüfen
+#: by: http://www.potsdam.de/cms/dokumente/10114884_1771576/e922e4ec/ENDFASSUNG%20Abl.%20PdmStadt%2002_13.pdf
+#: by: http://www.potsdam.de/cms/ziel/996205/DE/?date=20130809 (realisiert)
+#: by: http://www.potsdam.de/cms/beitrag/14359560/1761152/
+Am Babelsberger Park	RW7;RW7 -11056,-1726 -11098,-1616 -11099,-1573 -11090,-1506 -11084,-1396 -11407,-1086 -11494,-1014
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -720,7 +728,7 @@ straßenbegleitende Radwege	RW;RW -11253,13707 -11635,13818 -12145,13943 -13019,1
 # 
 #: by: Aimo Raasch vvv
 #: confirmed_by: srt (und teilweise korrigiert) vvv
-neuer Bürgersteigradweg, 1,50m	RW1; -12431,-2096 -12534,-2125
+neuer Bürgersteigradweg, 1,50m	RW2; -12431,-2096 -12534,-2125
 Radstreifen, 1,20m	RW4; -12534,-2125 -12712,-2256 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573
 Radstreifen, 1,20m	RW4; -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
 alter Bürgersteigradweg, etwas welliger Asphalt, 1,30m	RW1; -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573
