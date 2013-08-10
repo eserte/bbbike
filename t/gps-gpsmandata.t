@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 32;
+plan tests => 35;
 
 use_ok 'GPS::GpsmanData';
 
@@ -60,6 +60,11 @@ EOF
 	isa_ok($gps, "GPS::GpsmanData");
 	$gps->load($tmpfile);
 	pass "Loaded gpsman data";
+
+	my $wpts_before = wpts_to_string($gps);
+	$gps->sort_waypoints_by_time;
+	my $wpts_after = wpts_to_string($gps);
+	is $wpts_after, $wpts_before, 'No change after sorting (waypoints already sorted by time)';
     }
 
     {
@@ -93,6 +98,37 @@ EOF
 	    or diag "Please check the mapping in the bike2008 directory";
 	like($root->findvalue('/gpx/wpt/cmt'), qr{Pizza}, 'Found an official symbol name');
     }
+}
+
+{
+    # Same data as before, but waypoints are not sorted by time here
+    my $wpt_sample_file = <<'EOF';
+% Written by GPSManager 31-Jul-2010 16:54:01 (CET)
+% Edit at your own risk!
+
+!Format: DMS 2 WGS 84
+!Creation: no
+
+!W:
+LaTrattoria	26-JUL-10 14:44:48	N54 22 33.8	E9 05 16.4	symbol=pizza	GD110:dtyp=|c"	GD110:class=|c!	GD110:colour=|c@	GD110:attrs=|C!	GD110:depth=QY|c%|_i	GD110:state=|cAA	GD110:country=|cAA	GD110:ete=~|R$|Z	GD110:temp=QY|c%|_i	GD110:time=|c!!!!	GD110:cat=|c!!
+Friedrichstad1	26-JUL-10 11:37:07	N54 22 23.2	E9 05 41.9	symbol=user:7703	GD110:dtyp=|c"	GD110:class=|c!	GD110:colour=|c@	GD110:attrs=|C!	GD110:depth=QY|c%|_i	GD110:state=|cAA	GD110:country=|cAA	GD110:ete=~|R$|Z	GD110:temp=QY|c%|_i	GD110:time=|c!!!!	GD110:cat=|c!!
+EOF
+    my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".wpt", UNLINK => 1)
+	or die $!;
+    print $tmpfh $wpt_sample_file
+	or die $!;
+    close $tmpfh
+	or die $!;
+
+    my $gps = GPS::GpsmanData->new;
+    $gps->load($tmpfile);
+
+    my $wpts_before = wpts_to_string($gps);
+    $gps->sort_waypoints_by_time;
+    my $wpts_after = wpts_to_string($gps);
+    isnt $wpts_after, $wpts_before, 'Changed after sorting (waypoints now sorted by time)';
+
+    is $wpts_after, 'Friedrichstad1,LaTrattoria', 'New sorting';
 }
 
 {
@@ -245,5 +281,9 @@ EOF
     gpxlint_string($gpx);
 }
 
+sub wpts_to_string {
+    my $gps = shift;
+    join(",", map { $_->Ident } @{ $gps->Waypoints });
+}
 
 __END__
