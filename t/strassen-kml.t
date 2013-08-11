@@ -33,7 +33,7 @@ use BBBikeTest;
 
 sub load_from_file_and_check ($);
 
-plan tests => 66;
+plan tests => 67;
 
 use_ok("Strassen::KML")
     or exit 1; # avoid recursive calls to Strassen::new
@@ -201,6 +201,13 @@ for my $kml_filename ('doc.kml',
     }
 }
 
+{
+    my $s = Strassen->new_from_data_string(get_sample_onepoint_bbd());
+    my $s_kml = Strassen::KML->new($s);
+    my $kml = $s_kml->bbd2kml;
+    like $kml, qr{<Point>\s*?<coordinates>\s*?13.393556,52.524968\s*?</coordinates>\s*?</Point>}s, 'one-point converted to <Point>';
+}
+
 ######################################################################
 # Sample KMLs
 sub get_sample_kml_1 {
@@ -306,6 +313,15 @@ EOF
 
 sub get_sample_data_polygons {
     ("Mitte	X 8294,13544 8298,13544 8310,13522 8305,13513\n");
+}
+
+sub get_sample_onepoint_bbd {
+    <<'EOF';
+#: encoding: utf-8
+#: map: polar
+#:
+Streetname	X 13.393556,52.524968
+EOF
 }
 
 ######################################################################
