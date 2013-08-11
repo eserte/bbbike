@@ -1465,46 +1465,13 @@ sub add_any_streets_bbd {
 sub mark_layer_dialog {
     main::additional_layer_dialog
 	    (-title => "Layer markieren",
-	     -cb => \&mark_layer,
+	     -cb => \&main::mark_layer,
 	     -token => 'mark_additional_layer',
 	    );
 }
 
-sub mark_layer {
-    my $abk = shift;
-    my $s;
- TRY_LAYER: {
-	$s = $main::str_obj{$abk};
-	last TRY_LAYER if $s;
-	if ($main::str_file{$abk}) {
-	    $s = Strassen->new($main::str_file{$abk});
-	    last TRY_LAYER if $s;
-	}
-
-	$s = $main::p_obj{$abk};
-	last TRY_LAYER if $s;
-	if ($main::p_file{$abk}) {
-	    $s = Strassen->new($main::p_file{$abk});
-	    last TRY_LAYER if $s;
-	}
-	main::status_message("Cannot get street or point object for <$abk>", "die");
-    }
-    my @mc;
-    $s->init;
-    while(1) {
-	my $r = $s->next;
-	last if !@{ $r->[Strassen::COORDS()] };
-	push @mc, [ map { [ main::transpose(split /,/) ] } @{ $r->[Strassen::COORDS()] }];
-    }
-    if (@mc) {
-	main::mark_street(-coords => [@mc], -dont_scroll => 1, -dont_center => 1);
-    } else {
-	main::status_message("No points found in street object", "info");
-    }
-}
-
 sub mark_most_recent_layer {
-    mark_layer($main::most_recent_str_layer)
+    main::mark_layer($main::most_recent_str_layer)
 	if defined $main::most_recent_str_layer;
 }
 

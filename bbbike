@@ -12655,6 +12655,39 @@ sub mark_street {
     }
 }
 
+sub mark_layer {
+    my $abk = shift;
+    my $s;
+ TRY_LAYER: {
+	$s = $str_obj{$abk};
+	last TRY_LAYER if $s;
+	if ($str_file{$abk}) {
+	    $s = Strassen->new($str_file{$abk});
+	    last TRY_LAYER if $s;
+	}
+
+	$s = $p_obj{$abk};
+	last TRY_LAYER if $s;
+	if ($p_file{$abk}) {
+	    $s = Strassen->new($p_file{$abk});
+	    last TRY_LAYER if $s;
+	}
+	status_message("Cannot get street or point object for <$abk>", "die");
+    }
+    my @mc;
+    $s->init;
+    while(1) {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS()] };
+	push @mc, [ map { [ transpose(split /,/) ] } @{ $r->[Strassen::COORDS()] }];
+    }
+    if (@mc) {
+	mark_street(-coords => [@mc], -dont_scroll => 1, -dont_center => 1);
+    } else {
+	status_message("No points found in street object", "info");
+    }
+}
+
 sub delete_markers {
     $c->delete('show');
     if (Tk::Exists($overview_canvas)) {
