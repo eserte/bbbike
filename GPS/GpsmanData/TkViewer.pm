@@ -14,7 +14,7 @@
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 use FindBin;
 
@@ -26,7 +26,7 @@ use Karte::Polar;
 use Tk::PathEntry;
 
 # These are global and intentionally shared within a process.
-our($gps_data_viewer_file, $gps_data_dir);
+our($gps_data_viewer_file, $gps_data_dir, $include_associated_wpt_file);
 
 # XXX Code below works only within the bbbike process. "main::" refers
 # here to the BBBike Perl/Tk program namespace. In future, this should
@@ -56,7 +56,15 @@ sub gps_data_viewer {
 	if (defined $gps_data_viewer_file) {
 	    #XXX do it as late as possible, before the first edit operation: BBBikeEdit::ask_for_co($main::top, $gps_data_viewer_file);
 	    $gps = GPS::GpsmanData::Any->load($gps_data_viewer_file, -editable => 1);
-	    $gps_view->associate_object($gps);
+	    my $wpt_gps;
+	    if ($include_associated_wpt_file && $gps_data_viewer_file =~ m{\.trk$}) { # XXX what about .gpx files?
+		(my $wpt_file = $gps_data_viewer_file) =~ s{\.trk$}{\.wpt}; # XXX what about .gpx waypoint files?
+		if (-r $wpt_file) {
+		    $wpt_gps = GPS::GpsmanData->new;
+		    $wpt_gps->load($wpt_file);
+		}
+	    }
+	    $gps_view->associate_object($gps, $wpt_gps);
 	}
     };
     my $unplot_file = sub {
@@ -90,6 +98,9 @@ sub gps_data_viewer {
 		 -height => 20,
 		)->pack(-fill => "x", -expand => 1, -side => "left");
 	$pe->focus;
+	$f->Checkbutton(-text => 'Inc .wpt',
+			-variable => \$include_associated_wpt_file,
+		       )->pack(-side => 'left');
 	my $showb = 
 	    $f->Button(-text => "Show",
 		       -command => sub {
