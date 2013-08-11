@@ -195,6 +195,7 @@ sub bbd2kml {
 			coords => join("\n", map {
 			    join(",", $xy2longlat->($_))
 			} @c),
+			num_coords => scalar(@c),
 			color => $color,
 			dist => $dist,
 		      };
@@ -244,14 +245,18 @@ EOF
     }
     my $is_first_route = 1;
     for my $route (@routes) {
-	my($name, $coords, $color, $dist) = @{$route}{qw(name coords color dist)};
+	my($name, $coords, $num_coords, $color, $dist) = @{$route}{qw(name coords num_coords color dist)};
 	my $dist_km = m2km($dist);
 	my $style = $styles{$color};
 	$kml_tmpl .= <<EOF;
     <Placemark>
       <name>@{[ xml($name) ]}</name>
+EOF
+	if ($num_coords > 1) {
+	    $kml_tmpl .= <<EOF;
       <description>@{[ xml($dist_km) ]}</description>
 EOF
+	}
 	if ($is_first_route) {
 	    $is_first_route = 0;
 	    if (!$with_start_goal_icons) {
@@ -270,18 +275,28 @@ EOF
 EOF
 	    }
 	}
-	$kml_tmpl .= <<EOF;
+	if ($num_coords == 1) {
+	    $kml_tmpl .= <<EOF;
+      <Point>
+        <coordinates>
+@{[ xml($coords) ]}
+        </coordinates>
+      </Point>
+    </Placemark>
+EOF
+	} else {
+	    $kml_tmpl .= <<EOF;
       <styleUrl>#@{[ xml($styles{$color}) ]}</styleUrl> 
       <LineString>
-        <extrude>1</extrude>
+        <extrude>0</extrude>
         <tessellate>1</tessellate>
-        <altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 
+        <coordinates>
 @{[ xml($coords) ]}
         </coordinates>
       </LineString>
     </Placemark>
 EOF
+	}
     }
     if ($with_start_goal_icons && @routes) {
 	my($startcoord) = $routes[0]->{coords}  =~ m{^(\S+)};
