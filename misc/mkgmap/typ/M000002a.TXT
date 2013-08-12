@@ -5,15 +5,15 @@
 ; IF YOU USE THIS FILE AS SOURCE FOR cGPSmapper, IT WILL ALMOST CERTAINLY NOT PRODUCE WHAT YOU WANT.
 ; 
 ; IF YOU WANT JUST TO CHANGE SOMETHING, USE TYP EDITOR AT http://ati.land.cz/gps/typedit
-; Original TYP was created 7.8.2013 at 07:50:41, probably with Garmin MPC
+; Original TYP was created 12.8.2013 at 11:51:21, probably with Garmin MPC
 ; Text codepage=1252
 ; Version=1
 
 ; Header length: 0x005b bytes, header format: OLD
 ; Header dump:
-;  draworder:                                        info@0x0076b5-0x0077db (elem_size=5, #elements=59)
+;  draworder:                                        info@0x00774f-0x007875 (elem_size=5, #elements=59)
 ;    polygon: data@0x00005b-0x000fb6 (len=0x000f5c), info@0x000fb7-0x001036 (elem_size=4, #elements=32)
-;      point: data@0x001adc-0x0075d8 (len=0x005afd), info@0x0075d9-0x0076b4 (elem_size=4, #elements=55)
+;      point: data@0x001adc-0x007672 (len=0x005b97), info@0x007673-0x00774e (elem_size=4, #elements=55)
 ;       line: data@0x001037-0x001a2b (len=0x0009f5), info@0x001a2c-0x001adb (elem_size=4, #elements=44)
 ;   NT1point: data@0x000000-0x000000 (len=0x000000), info@0x000000-0x000000 (elem_size=0, #elements=0)
 
@@ -4550,55 +4550,99 @@ String2=0x02,Ortsschild
 ; Originally @(0x001adc+0x00360c)=0x0050e8
 Type=0x072
 SubType=0x02
-XPM="16 16 25 2",
+XPM="16 16 69 2",
 "XX  c #000000",
-"==  c #161616",
-"**  c #1a1a1a",
-"##  c #232323",
-"%%  c #aeaeae",
-"11  c #e4e4e4",
-"22  c #ababab",
-"33  c #747474",
-"44  c #f9f9f9",
+"==  c #ffffff",
+"**  c #1f1f1f",
+"##  c #5c5c5c",
+"%%  c #ffffff",
+"11  c #ffffff",
+"22  c #ffffff",
+"33  c #ffffff",
+"44  c #ffffff",
 "55  c #ffffff",
-"66  c #2f2f2f",
-"77  c #969696",
-"88  c #8b8b8b",
-"99  c #909090",
-"00  c #bfbfbf",
-"AA  c #000000",
-"BB  c #3e3e3e",
-"CC  c #dfdfdf",
-"DD  c #545454",
-"EE  c #0e0e0e",
-"FF  c #7e7e7e",
-"GG  c #a3a3a3",
-"HH  c #656565",
-"II  c #e9e9e9",
-"JJ  c #d6d6d6",
-"XXXXXXXXXX==**==****==XXXXXXXXXX",
-"XXXXXXXX##%%11222211%%##XXXXXXXX",
-"XXXX==33445555666655554433==XXXX",
-"XXXX335555555566665555555533XXXX",
-"XX##445555555566665555555544##XX",
-"==%%555555555566665555555555%%==",
-"**1155555555556666555555555511**",
-"==5555555555778899774455555555**",
-"**5555550066AABBBBAA6600555555==",
-"**11CCDDAAEE88FFFF88EEAADDCC11**",
-"==%%GGAAHHII55666655IIHHAAGG%%==",
-"XX##44JJ5555556666555555JJ44##XX",
-"XXXX335555555566665555555533XXXX",
-"XXXX==33445555666655554433==XXXX",
-"XXXXXXXX##%%11222211%%##XXXXXXXX",
-"XXXXXXXXXX==**==****==XXXXXXXXXX"
+"66  c #848484",
+"77  c #222222",
+"88  c #ffffff",
+"99  c #fefefe",
+"00  c #ffffff",
+"AA  c #ffffff",
+"BB  c #ffffff",
+"CC  c #ffffff",
+"DD  c #dedede",
+"EE  c #010101",
+"FF  c #f4f4f4",
+"GG  c #fbfbfb",
+"HH  c #909090",
+"II  c #5d5d5d",
+"JJ  c #1a1a1a",
+"KK  c #b1b1b1",
+"LL  c #000000",
+"MM  c #e2e2e2",
+"NN  c #f2f2f2",
+"OO  c #9b9b9b",
+"PP  c #bdbdbd",
+"QQ  c #5a5a5a",
+"RR  c #eaeaea",
+"SS  c #fcfcfc",
+"TT  c #fdfdfd",
+"UU  c #626262",
+"VV  c #0c0c0c",
+"WW  c #434343",
+"YY  c #a3a3a3",
+"ZZ  c #eeeeee",
+"aa  c #a8a8a8",
+"bb  c #747474",
+"cc  c #a0a0a0",
+"dd  c #5f5f5f",
+"ee  c #272727",
+"ff  c #090909",
+"gg  c #1e1e1e",
+"hh  c #efefef",
+"ii  c #131313",
+"jj  c #7b7b7b",
+"kk  c #b8b8b8",
+"ll  c #4c4c4c",
+"mm  c #fbfbfb",
+"nn  c #1d1d1d",
+"oo  c #0f0f0f",
+"pp  c #dddddd",
+"qq  c #7c7c7c",
+"rr  c #6c6c6c",
+"ss  c #fafafa",
+"tt  c #d8d8d8",
+"uu  c #8c8c8c",
+"vv  c #d3d3d3",
+"ww  c #cfcfcf",
+"xx  c #0e0e0e",
+"yy  c #565656",
+"zz  c #cacaca",
+"!!  c #010101",
+"@@  c #9d9d9d",
+"$$  c #505050",
+"XXXXXXXX==**##%%%%1122==XXXXXXXX",
+"XXXX3344556677889900AA554433XXXX",
+"XX33BBCC00DDEEFFGG888800CCBB33XX",
+"XX44CC888888EEHH8888888888CC44XX",
+"==5500888888IIJJ88888888880055==",
+"22AA88888888KKLLMM9988888888AA22",
+"110088888888NNLLOO88888888880011",
+"%%8888888888PPEEQQRR888888SSTT%%",
+"%%8888888888UULLLLLLVVWWYYZZ88%%",
+"1100888888aaEELLbbccddeeEEEEffgg",
+"22AA8888hhLLiiLLjj88888888ZZkkll",
+"==55mm88nnooppLLqq888888880055==",
+"XX44CCrrLLssttLLqq88888888CC44XX",
+"XX33uuLLvv88wwLLqq888800CCBB33XX",
+"XXXXxxyy55AAzzLLqq00AA554433XXXX",
+"XXXX!!XX==22@@LL$$1122==XXXXXXXX"
 };
 String1=0x00,wind generator
 String2=0x02,Windrad
 [end]
 
 [_point]
-; Originally @(0x001adc+0x003783)=0x00525f
+; Originally @(0x001adc+0x00381d)=0x0052f9
 Type=0x072
 SubType=0x03
 XPM="15 5 18 2",
@@ -4630,7 +4674,7 @@ String1=0x02,Ortshinweistafel
 [end]
 
 [_point]
-; Originally @(0x001adc+0x003825)=0x005301
+; Originally @(0x001adc+0x0038bf)=0x00539b
 Type=0x072
 SubType=0x04
 XPM="10 10 4 2",
@@ -4654,7 +4698,7 @@ String2=0x02,Wegweiser
 [end]
 
 [_point]
-; Originally @(0x001adc+0x00387c)=0x005358
+; Originally @(0x001adc+0x003916)=0x0053f2
 Type=0x072
 SubType=0x05
 XPM="13 13 2 2",
@@ -4679,7 +4723,7 @@ String2=0x02,Aussichtspunkt
 [end]
 
 [_point]
-; Originally @(0x001adc+0x0038d8)=0x0053b4
+; Originally @(0x001adc+0x003972)=0x00544e
 Type=0x073
 SubType=0x01
 XPM="16 16 117 2",
@@ -4821,7 +4865,7 @@ String1=0x02,Fragezeichen: Steigungen
 [end]
 
 [_point]
-; Originally @(0x001adc+0x003b92)=0x00566e
+; Originally @(0x001adc+0x003c2c)=0x005708
 Type=0x073
 SubType=0x02
 XPM="16 16 119 2",
@@ -4965,7 +5009,7 @@ String1=0x02,Fragezeichen: Qualit‰t
 [end]
 
 [_point]
-; Originally @(0x001adc+0x003e51)=0x00592d
+; Originally @(0x001adc+0x003eeb)=0x0059c7
 Type=0x073
 SubType=0x03
 XPM="16 16 127 2",
@@ -5117,7 +5161,7 @@ String1=0x02,Fragezeichen: Ampel
 [end]
 
 [_point]
-; Originally @(0x001adc+0x004129)=0x005c05
+; Originally @(0x001adc+0x0041c3)=0x005c9f
 Type=0x073
 SubType=0x04
 XPM="16 16 95 2",
@@ -5237,7 +5281,7 @@ String1=0x02,Fragezeichen: Einbahnstraﬂe
 [end]
 
 [_point]
-; Originally @(0x001adc+0x004399)=0x005e75
+; Originally @(0x001adc+0x004433)=0x005f0f
 Type=0x073
 SubType=0x05
 XPM="16 16 173 2",
@@ -5435,7 +5479,7 @@ String1=0x02,Fragezeichen: Radweg
 [end]
 
 [_point]
-; Originally @(0x001adc+0x004713)=0x0061ef
+; Originally @(0x001adc+0x0047ad)=0x006289
 Type=0x073
 SubType=0x06
 XPM="16 16 105 2",
@@ -5565,7 +5609,7 @@ String1=0x02,Fragezeichen: gesperrt
 [end]
 
 [_point]
-; Originally @(0x001adc+0x0049a1)=0x00647d
+; Originally @(0x001adc+0x004a3b)=0x006517
 Type=0x073
 SubType=0x07
 XPM="16 16 66 2",
@@ -5656,7 +5700,7 @@ String1=0x02,Fragezeichen: Mittelstreifen
 [end]
 
 [_point]
-; Originally @(0x001adc+0x004bac)=0x006688
+; Originally @(0x001adc+0x004c46)=0x006722
 Type=0x073
 SubType=0x08
 XPM="16 16 60 2",
@@ -5741,7 +5785,7 @@ String1=0x02,Fragezeichen: Vorfahrt
 [end]
 
 [_point]
-; Originally @(0x001adc+0x004d9c)=0x006878
+; Originally @(0x001adc+0x004e36)=0x006912
 Type=0x073
 SubType=0x09
 XPM="16 16 151 2",
@@ -5917,7 +5961,7 @@ String1=0x02,Fragezeichen: verkehrsberuhigt
 [end]
 
 [_point]
-; Originally @(0x001adc+0x0050d3)=0x006baf
+; Originally @(0x001adc+0x00516d)=0x006c49
 Type=0x073
 SubType=0x0a
 XPM="16 16 142 2",
@@ -6084,7 +6128,7 @@ String1=0x02,Fragezeichen: Zebrastreifen
 [end]
 
 [_point]
-; Originally @(0x001adc+0x0053e7)=0x006ec3
+; Originally @(0x001adc+0x005481)=0x006f5d
 Type=0x073
 SubType=0x0b
 XPM="16 16 53 2",
@@ -6162,7 +6206,7 @@ String1=0x02,Fragezeichen: unbeleuchtet
 [end]
 
 [_point]
-; Originally @(0x001adc+0x0055c3)=0x00709f
+; Originally @(0x001adc+0x00565d)=0x007139
 Type=0x073
 SubType=0x0c
 XPM="16 16 91 2",
@@ -6278,7 +6322,7 @@ String1=0x02,Fragezeichen: Straﬂenname
 [end]
 
 [_point]
-; Originally @(0x001adc+0x005823)=0x0072ff
+; Originally @(0x001adc+0x0058bd)=0x007399
 Type=0x073
 SubType=0x0d
 XPM="16 16 126 2",
