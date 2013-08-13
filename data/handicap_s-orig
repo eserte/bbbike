@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-08-10 vvv
+#: last_checked: 2013-08-13 vvv
 #: next_check: 2013-08-30 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (früher)
@@ -201,17 +201,12 @@ Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entste
 # 
 ### Lichtenberg ###
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html
-#: osm_watch: way id="7543672" version="17"
-#: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz
-#: last_checked: 2013-06-24
-#: check_frequency: 45d
-Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
+# REMOVED (Bauarbeiten sind beendet) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: osm_watch: way id="7543672" version="17" --- #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz --- #: last_checked: 2013-06-24 --- #: check_frequency: 45d --- Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
 # 
-#: last_checked: 2013-06-24
-#: next_check: 2013-08-14
+#: last_checked: 2013-08-13 (südlicher Abschnitt schon fertig asphaltiert)
+#: next_check: 2013-09-13
 #: XXX siehe auch qualitaet_s-orig: nach den Bauarbeiten besserer Asphalt?
-Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15402,12390 15350,12270
+Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15399,12444 15402,12390 15350,12270
 ### Hohenschönhausen ###
 # 
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
@@ -330,7 +325,7 @@ Böcklerpark: Fußgänger	q2 10917,10068 10863,10082 10802,10111 10794,10201 10690,
 Am Landwehrkanal: Parkweg	q1 10521,10126 10362,10120 10226,10145 10083,10192
 vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12608
 #: XXX_prog: BS: am Nordende Bordsteine
-Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15433,12686 15454,12519
+Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fußgänger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fußgänger	q1 22759,4430 22797,4518
 Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10238,15316 10186,15463 10179,15483 10122,15647
@@ -1583,11 +1578,13 @@ Arnimplatz: Fußgänger	q2 10606,16319 10739,16146
 #: XXX_prog für Anhänger aber q1 oder so
 (Weg im Salvador-Allende-Viertel): eine Bodenschwelle, kann umfahren werden	q0 23279,4599 23445,4596
 (Weg im Salvador-Allende-Viertel - Am Berg): Fußgänger	q2 23051,4461 23010,4506
+# 
 #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen
-#: last_checked: 2013-07-03
+#: last_checked: 2013-08-13
 #: check_frequency: 90d
-# (Möllendorffstr. - Karl-Lade-Str.): Fußgänger	q1 15513,13539 15363,13531
-(Möllendorffstr. - Karl-Lade-Str.): Fußgänger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15363,13531
+# (Möllendorffstr. - Karl-Lade-Str.): Fußgänger	q1 15513,13539 15374,13542
+(Möllendorffstr. - Karl-Lade-Str.): Fußgänger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15374,13542
+# 
 Lilienweg: Fußgänger	q2+ 15143,5705 15154,5706 15209,5713 15252,5719 15296,5725 15337,5730
 Rosenweg: Fußgänger	q2+ 15343,5687 15337,5730 15330,5821 15325,5934
 Spielplatzweg: Fußgänger	q2+ 15141,5800 15201,5807 15246,5812 15288,5816 15330,5821
@@ -1607,7 +1604,7 @@ Erieseering: Bordstein	q2 18141,10173 18132,10183
 #: XXX_prog: BS südliches Ende
 entlang der Erpe: Bordstein	q2 24584,5914 24637,5960
 (Park des Gründerzeitmuseums): Radfahren nicht erlaubt	q3- 24601,10992 24658,11013 24726,11037
-#: XXX_prog: BS am nordöstlichen Ende, am Wendehammer
+#: XXX_prog: BS am nordöstlichen Ende, am Wendehammer, nur relevant, wenn man von der/zur Lauinger Str. kommt/fährt, aber nicht, wenn man gerade auf dem unbefestigten Weg weiterfährt
 Lauinger Str.: einige Fußgänger, nicht ganz abgesenkter Bordstein	q1 21221,11398 21137,11294
 #: XXX_prog: BS an der Straße "Am Wasserwerk", kann umfahren werden, indem man schon an der Landsberger Allee auf den linken Gehweg wechselt
 Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
@@ -1619,8 +1616,9 @@ Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 #: note ^^^
 (Blockdammweg - Trautenauer Str.): Rampe	q2 17904,8927 17888,8899 17915,8900
 #: XXX danach vielleicht q3
-#: last_checked: 2013-08-03
-#: next_check: 2013-08-13
+#: osm_watch: way id="138948609" version="1"
+#: last_checked: 2013-08-13
+#: check_frequency: 14d
 (Weg 1 im KGA Hochspannung): Rampe in Bau	q4::inwork 18182,9623 18165,9627 18164,9623
 Fromet-und-Moses-Mendelssohn-Platz: einige Fußgänger	q1 9797,10771 9733,10827 9682,10836 9666,10848
 #: XXX_prog BS an der Grillostr., q2 belassen
@@ -1669,6 +1667,7 @@ Dürerplatz: einige Fußgänger	q1 6243,7033 6275,7004
 Straße 17: kurze Rampe	q3 7307,7425 7307,7457
 #: note: es gibt an der Baustraße (?) noch zwei sehr weite Drängelgitter, die kaum eine Beeinträchtigung darstellen
 (Lortzingstr. - Mauerpark): einige Fußgänger	q1 10038,15418 10179,15483
+(Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): einige Fußgänger	q1 21221,11398 21311,11528
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

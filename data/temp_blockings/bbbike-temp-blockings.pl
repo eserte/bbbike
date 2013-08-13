@@ -1567,8 +1567,8 @@ EOF
        text  => 'L 791; (Luckenwalder Str.); Bahnübergang in Zossen, Havarie, Vollsperrung, 19.02.2005-25.02.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13557,-21831 13014,-22300
-userdel	2 13557,-21831 13960,-21244
+userdel	2 13528,-21855 13014,-22300
+userdel	2 13528,-21855 13960,-21244
 EOF
      },
      { from  => 1109280022, # 2005-02-24 22:20
@@ -21631,11 +21631,39 @@ EOF
      },
      { from  => 1374381000, # 2013-07-21 06:30
        until => 1377525600, # 2013-08-26 16:00
-       text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen, bis Ende August ',
+       text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende August ',
        type  => 'handicap',
        source_id => 'INKO_119665',
        data  => <<EOF,
 userdel	q3::inwork 15513,13539 15653,13542 15724,13544 15896,13547
+EOF
+     },
+     { from  => undef, # 
+       until => 1381831200, # 2013-10-15 12:00
+       text  => 'Robert-Siewert-Str.: Bauarbeiten zwischen Brehmstr. und Zwieseler Str., Fahrbahn gesperrt, teilweise auch Einschränkungen am Geh-/Radweg, bis Mitte Oktober 2013',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html',
+       data  => <<EOF,
+userdel	q4::inwork 19398,9833 19459,9842 19536,9853 19669,9876
+EOF
+     },
+     { from  => 1376604000, # 2013-08-16 00:00
+       until => 1376863199, # 2013-08-18 23:59
+       text  => 'Uhlandstr.: Veranstaltung (Uhlandstraßenfest) zwischen Kurfürstendamm und Lietzenburger Str., Straße gesperrt, 17. und 18. August 2013',
+       type  => 'gesperrt',
+       source_id => 'http://www.kudamm-int.de/strassenfest.html', # und http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130812.1235.387804.html
+       data  => <<EOF,
+userdel	2::temp 5047,10381 5076,10658
+EOF
+     },
+     { from  => 1376193600, # 2013-08-11 06:00
+       until => 1387555200, # 2013-12-20 17:00
+       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), 12.08.2013 06:00 Uhr bis 20.12.2013 17:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_020145',
+       data  => <<EOF,
+#: XXX Umgehung durch den S-Bahnhof prüfen und ggfs. eintragen
+userdel	2::inwork 17736,5441 17886,5587
 EOF
      },
     );

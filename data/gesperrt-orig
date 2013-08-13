@@ -1050,7 +1050,7 @@ Rosenfelder Ring	1s:q3 18140,11932 18139,11833
 Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
 Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
-(Möllendorffstr. - Paul-Junius-Str.)	1 15361,13509 15470,13509
+(Möllendorffstr. - Paul-Junius-Str.)	1 15370,13508 15470,13509
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Kornmandelweg	1 21311,13522 21345,13550
 Immortellenweg: Schulhof	2 24282,10015 24314,10096
@@ -1635,6 +1635,7 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (4 Stufen)	0:10 21326,11122
 tragen (8+8 Stufen)	0:25 19534,14459
 tragen (5 x 5 Stufen) bzw. steile Rampe zum Schieben benutzen	0:35 19570,13833
 tragen bzw. steile Rampe benutzen	0:30 1523,13377
@@ -2410,7 +2411,7 @@ Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,1009
 Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982
 #: next_check ^^^
 # 
-#: last_checked: 2013-06-28
+#: last_checked: 2013-08-13
 #: check_frequency: 60d
 Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
 # 

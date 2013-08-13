@@ -123,7 +123,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-08-06
+#: last_checked: 2013-08-12
 #: next_check: 2014-01-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -273,7 +273,7 @@ Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,1516
 #: next_check: 2013-08-01
 Perleberger Str., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
-#: last_checked: 2013-07-09
+#: last_checked: 2013-08-12
 #: check_frequency: 90d
 Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
 # 
@@ -377,9 +377,7 @@ Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected
 #: next_check: 2013-10-05
 Ruppiner Chaussee: Fahrradstreifen nach den Bauarbeiten?	?::inwork -1872,24336 -1953,24435 -1982,24514
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html
-#: XXX Mitte Oktober sind die Sanierungsarbeiten fertig, dann diesen Eintrag entfernen
-Robert-Siewert-Str.: Bauarbeiten, gibt es Einschränkungen für Radfahrer, insbesondere im Abschnitt des "antiken" Radwegs?	?::inwork 19242,9815 19398,9833 19459,9842 19536,9853 19669,9876
+# REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html --- #: XXX Mitte Oktober sind die Sanierungsarbeiten fertig, dann diesen Eintrag entfernen --- Robert-Siewert-Str.: Bauarbeiten, gibt es Einschränkungen für Radfahrer, insbesondere im Abschnitt des "antiken" Radwegs?	?::inwork 19242,9815 19398,9833 19459,9842 19536,9853 19669,9876
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html
 #: XXX wahrscheinlich aber für Radfahrer nicht relevant
@@ -443,17 +441,16 @@ Rhinstr.: Radwegsituation nach den Bauarbeiten?	?::inwork 18234,13500 18206,1381
 #: next_check: 2013-07-31
 Kirchhainer Damm: Bau von drei neuen Ampeln	? 11655,-3248 11360,-2648 11308,-2535 11232,-2377 11172,-2224 11130,-2120 11080,-2035
 # 
-#: last_checked: 2013-06-24 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2013-08-13
+#: check_frequency: 45d
 Bauarbeiten im Landschaftspark Herzberge: werden in Bereich des "Zeltlagers" neue Wege entstehen?	? 17187,13609 17247,14055
-Baustraße zur Siegfriedstraße: wird diese Verbindung beibehalten?	? 17219,14133 17198,14156 17111,14184
-#: check_frequency ^^^
-#: last_checked: ^^^
+# 
+# REMOVED (nein, wird gerade zurückgebaut) --- Baustraße zur Siegfriedstraße: wird diese Verbindung beibehalten?	? 17219,14133 17198,14156 17111,14184
 # 
 # REMOVED (Eintrag wurde aufgehoben, das Problem besteht aber weiterhin) --- #: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich (bis Anfang 08/13) Kreuzung Straße der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976 --- #: XXX_indoor vmz-Eintrag: Straße der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich, Überfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975 --- #: XXX_prog ich brauche eine Kombination aus den Kategorien "3" und "qX". Oder wahlweise "3" mit einer Zeitangabe (wie BNP oder 0). --- #: last_checked: 2013-07-10 --- #: next_check: 2013-08-02 --- Straße der Pariser Kommune: Überqueren der Karl-Marx-Allee nur mit Zeitverlust möglich	?::inwork  12891,12549 12869,12425 12850,12286
 # 
 #: XXX außerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist
-#: last_checked: 2013-07-14
+#: last_checked: 2013-08-13
 #: check_frequency: 30d
 Allee der Kosmonauten/Beilsteiner Str.: Ampel in Bau	?::inwork 18875,13467
 # 
@@ -742,7 +739,7 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert?	?::project
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html
 #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
-#: last_checked: 2013-07-05 vvv
+#: last_checked: 2013-08-12 vvv
 #: next_check: 2013-11-30 vvv
 #: osm_watch: way id="187902666" version="2"
 Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8333,9583 8338,9443 8388,9242 8373,9022 8389,9087
@@ -1717,18 +1714,8 @@ Hadburgpfad: genaue Lage? Qualität?	? 17484,12405 17531,12398
 #: XXX ^^^
 #: note ^^^
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5292
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066433/33-Anlagen/02/vzbbvv0509_IV-Benennung_Privatstrasse_Lindensc.pdf
-#: XXX fehlt bei Berlin.coords.data
-#: XXX Privatstraße
-Lindenschwärmerweg: genaue Lage? Qualität? Existiert die Straße schon?	? 21323,11096 21197,11139
-# 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5291
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066429/29-Anlagen/02/vzb0507_IV-Benennung_Grimmener_Strasse.pdf
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013
-#: XXX fehlt bei Berlin.coords.data
-Grimmener Str.: genaue Lage? Qualität? Existiert die Straße schon?	? 21315,13146 21398,13121
+# REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5292 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066433/33-Anlagen/02/vzbbvv0509_IV-Benennung_Privatstrasse_Lindensc.pdf --- #: XXX fehlt bei Berlin.coords.data --- #: XXX Privatstraße --- Lindenschwärmerweg: genaue Lage? Qualität? Existiert die Straße schon?	? 21308,11075 21292,11093 21189,11137
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5291 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066429/29-Anlagen/02/vzb0507_IV-Benennung_Grimmener_Strasse.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013 --- #: XXX fehlt bei Berlin.coords.data --- Grimmener Str.: genaue Lage? Qualität? Existiert die Straße schon?	? 21298,13154 21395,13135 21443,13125
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)
@@ -3426,13 +3413,7 @@ Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straße Straßenschild
 #: check_frequency: 360d
 Am Orangeriepark: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 10293,19390 10419,19423
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2012 ("geplanter Straßenname")
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2012 (Lage)
-#: XXX fehlt auch in Berlin.coords.data PLZ=12683
-#: last_checked: 2012-09-16
-#: next_check: 2013-08-01
-#: osm_watch: way id="189453405" version="1"
-Fechinger Weg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 21373,11941 21371,11845 21430,11794
+# REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2012 ("geplanter Straßenname") --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2012 (Lage) --- #: XXX fehlt auch in Berlin.coords.data PLZ=12683 --- #: last_checked: 2012-09-16 --- #: next_check: 2013-08-01 --- #: osm_watch: way id="189453405" version="1" --- Fechinger Weg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 21409,11941 21411,11863 21456,11825
 # 
 #: last_checked: 2012-05-06 (noch keine Anzeichen) vvv
 #: next_check: 2013-03-01 vvv
@@ -3538,8 +3519,6 @@ Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 2442
 Bruno-Taut-Str. - Am Gartenstadtweg: nachts beleuchtet?	? 21790,682 21783,660 21755,625 21714,601 21679,596
 #: XXX falls der Weg existiert -> culdesac_pseudo für den Immortellenweg eintragen, ansonsten culdesac
 Hultschiner Damm - Immortellenweg: existiert eine Verbindung für Fußgänger und Radfahrer? Beschaffenheit des Weges? Nachts beleuchtet?	? 24402,9987 24282,10015
-#: XXX_osm: by osm
-Lauinger Str. - Biesdorfer Friedhofsweg: existiert hier eine direkte Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? 21221,11398 21311,11528
 # 
 (Am Fasaneriegraben): Qualität des Weges (vielleicht asphaltiert?)	? 6907,21751 6878,21660 6839,21611 6849,21592 6886,21577 6917,21559 6917,21506
 (Am Fasaneriegraben - Senftenberger Ring): Qualität des Weges (vielleicht asphaltiert?)	? 6839,21611 6826,21587 6802,21563 6758,21565 6756,21528

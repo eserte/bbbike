@@ -1026,17 +1026,7 @@ userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-21
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1376258399,
-         'text' => 'Treptower Hafenfest 9.8.2013 - 11.8.2013',
-         'from' => 1375912800,
-         'id' => 1010,
-         'data' => 'userdel	2::temp 14464,9927 14465,9900 14500,9856 14674,9764 14697,9726 14910,9643
-userdel	2::temp 14500,9856 14483,9843
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2693,16 +2683,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1376258399,
-         'text' => 'Berliner Allee (Weißensee): Veranstaltung (Blumenfest Weißensee), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 9.8.2013 bis 11.8.2013',
-         'from' => 1375912800,
-         'id' => 2275,
-         'data' => 'userdel	q4::temp; 14499,16341 14371,16252 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3292,12 +3273,43 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        {
          'source_id' => 'INKO_119665',
          'until' => 1377525600,
-         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen, bis Ende August ',
+         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende August ',
          'from' => 1374381000,
          'id' => 2466,
          'data' => 'userdel	q3::inwork 15513,13539 15653,13542 15724,13544 15896,13547
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html',
+         'until' => 1381831200,
+         'text' => 'Robert-Siewert-Str.: Bauarbeiten zwischen Brehmstr. und Zwieseler Str., Fahrbahn gesperrt, teilweise auch Einschränkungen am Geh-/Radweg, bis Mitte Oktober 2013',
+         'from' => undef,
+         'id' => 2467,
+         'data' => 'userdel	q4::inwork 19398,9833 19459,9842 19536,9853 19669,9876
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.kudamm-int.de/strassenfest.html',
+         'until' => 1376863199,
+         'text' => 'Uhlandstr.: Veranstaltung (Uhlandstraßenfest) zwischen Kurfürstendamm und Lietzenburger Str., Straße gesperrt, 17. und 18. August 2013',
+         'from' => 1376604000,
+         'id' => 2468,
+         'data' => 'userdel	2::temp 5047,10381 5076,10658
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_020145',
+         'until' => 1387555200,
+         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), 12.08.2013 06:00 Uhr bis 20.12.2013 17:00 Uhr',
+         'from' => 1376193600,
+         'id' => 2469,
+         'data' => '#: XXX Umgehung durch den S-Bahnhof prüfen und ggfs. eintragen
+userdel	2::inwork 17736,5441 17886,5587
+',
+         'type' => 'gesperrt'
        }
      
 );

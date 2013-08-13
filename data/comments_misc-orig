@@ -183,7 +183,7 @@ Freienbrinker Saum: die Straße führt am Waldrand entlang, in der Dunkelheit ist 
 (Deutschhofer Allee - Unter den Birken): in der Dämmerung ist mit Wildschweinen zu rechnen	CS 21940,8158 22077,8104 22199,8028 22600,7711
 Petriplatz: zusätzliche Ausschilderung "Zur Brüderstr."	CS; 10460,11979 10418,12016
 DB-Gelände: bei starken Regenfällen regelmäßig eine große und tiefe Pfütze, die die Durchfahrt erschwert	CS 14107,10911 14043,10928
-Straße 77: die Straße ist nicht ausgeschildert	CS 15402,12390 15315,12360
+Straße 77: die Straße ist nicht ausgeschildert	CS 15402,12390 15320,12375
 # REMOVED (das gilt für das gesamte Märchenland, deshalb Kommentar entfernt) --- #: by: antje weiss dorn: --- Drosselbartweg: Radfahren erlaubt	CS 13899,18833 13909,18835 13953,18842 13967,18842 13993,18833 14061,18791 14206,18700 14218,18674 14222,18666
 (Seeburger Str./Seecktstr. - Bullengraben): Zufahrt über Supermarktparkplatz (Lidl)	CS; -4299,13304 -4372,13384
 #: by: Ralf Henze vvv
@@ -289,7 +289,9 @@ Weiterfahrt durch die Kleingartenanlage möglich, allerdings nur tagsüber während
 	culdesac_pseudo 16587,10613
 	culdesac_pseudo 15433,12686
 	culdesac_pseudo 15395,12762
+	culdesac_pseudo 15454,12519
 	culdesac_pseudo 14285,12190
+	culdesac_pseudo 15320,12375
 	culdesac 16541,12064
 	culdesac 17230,12481
 	culdesac 18766,13257
@@ -1158,6 +1160,9 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 19842,13765
 	culdesac_pseudo 21211,15009
 	culdesac_pseudo 21574,16547
+	culdesac 21187,11132
+	culdesac_pseudo 21326,11122
+	culdesac 21396,11242
 #: section ^^^
 ######################################################################
 # busroute
@@ -1354,7 +1359,7 @@ Bus X69	busroute_N 22324,6397 22539,6258
 Bus 167, ...	busroute_N 23435,4179 23655,4205 23753,4218 23879,4233 24135,4264 24181,4270
 Bus 190	busroute_N 21025,7349 21341,7487 21475,7500
 Bus 190	busroute_N 21175,9989 20947,9999 20703,10004 20706,10047 20708,10144 20711,10230 20713,10293 20716,10434 21017,10423 21288,10431
-Bus 398	busroute_N 21135,10995 21249,11042 21385,11119 21420,11150 21537,11256 21624,11379
+Bus 398	busroute_N 21135,10995 21249,11042 21308,11075 21354,11101 21385,11119 21420,11150 21535,11267 21624,11379
 Bus 108	busroute_N 21124,11462 20959,11465 20828,11466 20641,11480 20623,11481 20525,11488 20549,11659 20575,11698
 Bus 192	busroute_N 18597,12162 19086,12134 19143,12078 19142,11804 19135,11713 19121,11681 19035,11671 19005,11705 19005,11767 19004,11780
 Bus 108, Bus 192	busroute_N 19389,11761 19142,11804
@@ -1848,3 +1853,5 @@ Weg ist schwierig zu erkennen	CP2; 18445,9887 18436,9842
 #: note: Zeitverlust ca. 2 Minuten
 An einigen Tagen im Sommer ist das Eichgestell vor der Freilichtbühne wegen Veranstaltungen gesperrt, in diesem Fall die Freilichtbühne nördlich umfahren	CS 19995,6406 20106,6357 20200,6321
 Am Bahnhof Wuhlheide: nicht ausgeschildert	CP2; 20635,7119 20654,7136
+Lindenschwärmerweg: Privatstraße	CS 21308,11075 21294,11097 21187,11132
+Fechinger Weg: Privatstraße	CS 21409,11941 21411,11863 21456,11825
