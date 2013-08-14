@@ -572,81 +572,6 @@ sub BBBikeGPS::get_cfc_file {
     "$main::bbbike_configdir/speed_color_mapping.cfc";
 }
 
-use vars qw($symbol_to_img);
-use File::Glob qw();
-use File::Temp qw();
-
-# the "ugly" interface, setting the global $symbol_to_img hash ref
-sub BBBikeGPS::make_symbol_to_img {
-    my $must_recreate = 1;
-    if ($symbol_to_img) {
-	$must_recreate = 0;
-	for my $file (values %$symbol_to_img) {
-	    if (!-f $file) {
-		$must_recreate = 1;
-		last;
-	    }
-	}
-    }
-    return if !$must_recreate;
-
-    $symbol_to_img = BBBikeGPS::get_symbol_to_img();
-}
-
-# the "clean" interface for make_symbol_to_img, returns a hash ref
-sub BBBikeGPS::get_symbol_to_img {
-    my $symbol_to_img = {};
-    # Try to find a gpsman gmicons directory for "official" Garmin
-    # symbols
-    {
-	my @gmicons;
-	for my $candidate ("/usr/share/gpsman/gmicons", # Debian default
-			   "/usr/local/share/gpsman/gmsrc/gmicons", # the FreeBSD location
-			  ) {
-	    if (-d $candidate) {
-		@gmicons = File::Glob::bsd_glob("$candidate/*15x15.gif");
-		last if @gmicons;
-	    }
-	}
-	if (!@gmicons) {
-	    warn "NOTE: no gpsman/gmicons directory found, no support for Garmin symbols.\n";
-	} else {
-	    require File::Basename;
-	    for my $gmicon (@gmicons) {
-		my $iconname = File::Basename::basename($gmicon);
-		$iconname =~ s{15x15.gif$}{};
-		$symbol_to_img->{$iconname} = $gmicon;
-	    }
-	}
-    }
-    # Now the user-defined symbols. Here's room for different "userdef
-    # symbol sets", which may be per-vehicle, per-user, per-year etc.
-    my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
-    if (!-d $userdef_symbol_dir) {
-	warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
-    } else {
-	for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
-	    my($inx) = $f =~ m{(\d+)\.bmp$};
-	    next if !defined $inx; # non parsable bmp filename
-	    $symbol_to_img->{"user:" . (7680 + $inx)} = $f;
-	}
-    }
-
-    # bbd: IMG:... syntax cannot handle whitespace, so create symlinks
-    # without whitespace if necessary (may happen on Windows systems)
-    for my $iconname (keys %$symbol_to_img) {
-	my $f = $symbol_to_img->{$iconname};
-	if ($f =~ m{\s}) {
-	    my($tmpnam) = File::Temp::tmpnam() . ".bmp";
-	    symlink $f, $tmpnam
-		or die "Can't create symlink $tmpnam -> $f: $!";
-	    $f = $tmpnam;
-	    $symbol_to_img->{$iconname} = $f;
-	}
-    }
-    $symbol_to_img;
-}
-
 use vars qw($global_draw_gpsman_data_s $global_draw_gpsman_data_p);
 $global_draw_gpsman_data_s = 1 if !defined $global_draw_gpsman_data_s;
 $global_draw_gpsman_data_p = 1 if !defined $global_draw_gpsman_data_p;
@@ -669,7 +594,8 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	BBBikeGPS::load_cfc_mapping();
     }
 
-    BBBikeGPS::make_symbol_to_img();
+    require GPS::Symbols::Garmin;
+    my $symbol_to_img = GPS::Symbols::Garmin::get_cached_symbol_to_img();
 
     require GPS::GpsmanData;
 
