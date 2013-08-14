@@ -15,7 +15,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.20';
+$VERSION = '1.21';
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -260,10 +260,14 @@ sub _fill_data_view {
     my $associated_wpt_info_i = 0;
     my $add_associated_wpts_sub;
     my $symbol_to_img;
-    my $symbol_to_tk_photo;
+    my $symbol_to_tk_photo = $w->privateData->{'symbol_to_tk_photo'};
     if ($associated_wpt_info) {
 	require GPS::Symbols::Garmin;
 	$symbol_to_img = GPS::Symbols::Garmin::get_cached_symbol_to_img();
+	if (!$symbol_to_tk_photo) {
+	    $symbol_to_tk_photo = {};
+	    $w->privateData->{'symbol_to_tk_photo'} = $symbol_to_tk_photo;
+	}
 	$add_associated_wpts_sub = sub {
 	    my($wpt) = @_;
 	    if ($associated_wpt_info) {
@@ -747,6 +751,18 @@ sub get_selected_items {
     my $dv = $self->Subwidget("data");
     my @items = $dv->info('selection');
     @items;
+}
+
+sub DESTROY {
+    my $self = shift;
+    $self->SUPER::DESTROY;
+    my $symbol_to_tk_photo = $self->privateData->{'symbol_to_tk_photo'};
+    if ($symbol_to_tk_photo) {
+	while(my($k,$v) = each %$symbol_to_tk_photo) {
+	    $v->delete;
+	    delete $symbol_to_tk_photo->{$k};
+	}
+    }
 }
 
 1;
