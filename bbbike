@@ -16779,7 +16779,12 @@ sub show_zoomrect {
 }
 
 # Mark blinking is only implemented in the main canvas,
-# not the overview canvas
+# not the overview canvas.
+#
+# Algorithm for blinking goes like this:
+# - always start with "unstippled" mark (stipple=undef)
+# - start with red mark
+# - when the least visible stipple (gray12) is shown, then toggle the color (red -> blue -> red)
 ### AutoLoad Sub
 sub show_mark {
     my($i, %args) = @_;
@@ -16788,25 +16793,28 @@ sub show_mark {
 	$showmark_after->cancel;
 	undef $showmark_after;
     }
-    my @stipple = ('gray12', 'gray25', 'gray50', 'gray75');
-    my $col = $i/8; # color ...
-    my $j   = $i%8; # stage ...
-    if ($col > 5 && !$args{'-endlessmark'}) {
+    my @stipple = (undef, 'gray75', 'gray50', 'gray25', 'gray12');
+    my $j   = $i%10; # stage ... 10: double count of stipples
+    if ($i > 10*5 && !$args{'-endlessmark'}) { # max. 5 iterations
 	$c->delete('show');
 	undef $showmark_after;
     } else {
-	$c->itemconfigure('show',
-  			  -fill => ($col % 2 == 1 ? 'blue' : 'red'));
-	if ($j < 4) {
-	    $c->itemconfigure('show',
-			      -stipple => $stipple[$j]);
-	} elsif ($j == 4) {
-	    $c->itemconfigure('show',
-			      -stipple => undef);
-	} else {
-	    $c->itemconfigure('show',
-			      -stipple => $stipple[8-$j]);
+	my($stipple_i, $color);
+	if ($j < 5) { # 5: count of stipples
+	    $stipple_i = $j;
+	}  else {
+	    $stipple_i = 9 - $j; # 9: one less than double count of stipples
 	}
+	if ($i < 5) { # 5: count of stipples
+	    $color = 'red';
+	} else {
+	    my $color_i = (($i-5)/10)%2;
+	    $color = $color_i == 0 ? 'blue' : 'red';
+	}
+	$c->itemconfigure('show',
+			  -stipple => $stipple[$stipple_i],
+  			  -fill => $color,
+			 );
 	unless ($steady_mark) {
 	    $showmark_after = $c->after(150, sub { show_mark($i+1, %args) });
 	} else {
