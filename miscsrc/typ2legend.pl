@@ -1,12 +1,17 @@
 #!/usr/bin/perl
 
 use strict;
+use FindBin;
+use lib $FindBin::RealBin;
 use utf8;
+
 use File::Basename qw(basename);
 use File::Temp qw(tempfile);
 use Getopt::Long;
 use HTML::Entities ();
 #use Imager;
+
+use Typ2Legend::XPM;
 
 sub usage (;$);
 
@@ -15,6 +20,7 @@ my $force;
 my @ignore;
 my @keep;
 my @nopngheuristic; # This is somewhat ugly, it is doing two things: turning on png transparency heuristics and defining examples where the heuristics shouldn't be applied
+my @noprefer15;
 my $title;
 my $encoding = 'utf-8';
 GetOptions("o=s"       => \$output_dir,
@@ -22,6 +28,7 @@ GetOptions("o=s"       => \$output_dir,
 	   'ignore=s@' => sub { push @ignore, split /,/, $_[1] },
 	   'keep=s@'   => sub { push @keep,   split /,/, $_[1] },
 	   'nopngheuristic=s@' => sub { push @nopngheuristic, split /,/, $_[1] },
+	   'noprefer15=s@' => sub { push @noprefer15, split /,/, $_[1] },
 	   'encoding=s' => \$encoding,
 	   'title=s'   => \$title,
 	  )
@@ -31,9 +38,11 @@ $output_dir or usage "-o is mandatory";
 my %ignore;
 my %keep;
 my %nopngheuristic;
+my %noprefer15;
 for my $def ([\%ignore, \@ignore],
 	     [\%keep, \@keep],
 	     [\%nopngheuristic, \@nopngheuristic],
+	     [\%noprefer15, \@noprefer15],
 	    ) {
     %{$def->[0]} = map {
 	my $type = $_;
@@ -49,28 +58,29 @@ my @items;
     my $in_section;
     my $do_parse_xpm;
     my $current_xpm_key;
-    my $parse_xpm_string_ref;
+    my @parse_xpm_lines;
     my $item;
+    my $finalize_xpm_object = sub {
+	if ($item->{ItemType} eq 'point') {
+	    $item->{$current_xpm_key} = join("\n", @parse_xpm_lines);
+	} else {
+	    $item->{$current_xpm_key . "_object"} = Typ2Legend::XPM->new(\@parse_xpm_lines);
+	}
+	$do_parse_xpm = 0;
+	@parse_xpm_lines = ();
+    };
     while(<>) {
 	s{\r}{};
 	if ($do_parse_xpm) {
 	    if (/^[}"]/) {
-		$$parse_xpm_string_ref .= $_;
+		chomp;
+		push @parse_xpm_lines, $_;
 	    } else {
-		if ($$parse_xpm_string_ref =~ m{^\"0 0 }) {
-		    $item->{"_Incomplete"}->{$current_xpm_key} = $$parse_xpm_string_ref;
-		    warn "INFO: remember incomplete 0x0 pixmap for later, item=" . _item_id($item) . "\n";
-		    undef $$parse_xpm_string_ref;
-		    $do_parse_xpm = 0;
-		} else {
-		    warn "WARN: Ignore invalid XPM, which is not a 0x0 pixmap...";
-		    undef $$parse_xpm_string_ref;
-		    $do_parse_xpm = 0;
-		}
-		redo;
+		$finalize_xpm_object->();
+		redo; # premature end of XPM data
 	    }
 	    if (/^};/) {
-		$do_parse_xpm = 0;
+		$finalize_xpm_object->();
 	    }
 	} elsif (m{^\[(.*)\]}) {
 	    my $tag = $1;
@@ -80,7 +90,7 @@ my @items;
 		$in_section = $tag;
 		if ($tag =~ $item_type_qr) {
 		    (my $itemtype = $1) =~ s{^_}{};
-		    $item = { ItemType => $itemtype };
+		    $item = Typ2Legend::Item->new({ItemType => $itemtype});
 		    push @items, $item;
 		}
 	    }
@@ -89,8 +99,8 @@ my @items;
 		if (m{^(XPM|DayXPM|NightXPM)=(.*)}) {
 		    $do_parse_xpm = 1;
 		    $current_xpm_key = $1;
-		    $item->{$1} = $2;
-		    $parse_xpm_string_ref = \$item->{$1};
+		    chomp(my $xpm_head = $2);
+		    @parse_xpm_lines = $xpm_head;
 		} elsif (m{^String\d+=([\dx]+),(.*)}) {
 		    $item->{String}->{$1} = $2;
 		} elsif (m{^Type=(.*)}) {
@@ -104,28 +114,28 @@ my @items;
     }
 }
 
-# xpm fixing
+# xpm transformation
 for my $item (@items) {
-    if ($item->{"_Incomplete"}) {
-	while(my($key, $val) = each %{ $item->{"_Incomplete"} }) {
-	    if ($item->{LineWidth}) {
-		# a line item
-		my $height = $item->{LineWidth} + 2*($item->{BorderWidth}||0);
-		($item->{$key} = $val) =~ s{^\"0 0 }{\"32 $height }; # turn 0x0 into 32x? pixmap
-		if ($item->{BorderWidth}) {
-		    _create_xpm_line_32(\($item->{$key}), "XX") for 1..$item->{BorderWidth};
-		}
-		_create_xpm_line_32(\($item->{$key}), "==") for 1..$item->{LineWidth};
-		if ($item->{BorderWidth}) {
-		    _create_xpm_line_32(\($item->{$key}), "XX") for 1..$item->{BorderWidth};
-		}
-	    } else {
-		# a polygon item
-		($item->{$key} = $val) =~ s{^\"0 0 }{\"32 32 }; # turn 0x0 into 32x32 pixmap
-		_create_xpm_line_32(\($item->{$key}), "XX") for 1..32;
-		$item->{$key} .= "};\n";
-	    }
+    my $itemkey     = $item->itemkey;
+    my $itemlongkey = $item->itemlongkey;
+    if ($item->{"XPM_object"}) { # XXX Can DayXPM_object/NightXPM_object happen at this point?
+	my $ret;
+	if ($item->{LineWidth}) {
+	    $ret = $item->{"XPM_object"}->transform(linewidth => $item->{LineWidth}, borderwidth => $item->{BorderWidth});
+	} else {
+	    my $noprefer15 = $noprefer15{$itemlongkey} || $noprefer15{$itemkey};
+	    $ret = $item->{"XPM_object"}->transform(prefer15=>$noprefer15?0:1);
 	}
+	if ($ret->{'day'}) {
+	    $item->{DayXPM} = $ret->{'day'}->as_string;
+	}
+	if ($ret->{'night'}) {
+	    $item->{NightXPM} = $ret->{'night'}->as_string;
+	}
+	if ($ret->{'day+night'}) {
+	    $item->{XPM} = $ret->{'day+night'}->as_string;
+	}
+	delete $item->{"XPM_object"};
     }
 }
 
@@ -151,6 +161,8 @@ for my $item (@items) {
   th,td           { border:1px solid black; padding: 1px 5px 1px 5px; }
   body		  { font-family:sans-serif; }
   .sml            { font-size: x-small; }
+  .daypng         { border:2px solid white; }
+  .nightpng       { border:2px solid white; } /* the "black" experiment was confusing */
   --></style>
   </head>
  <body>
@@ -169,8 +181,8 @@ EOF
 EOF
 
     for my $item (@items) {
-	my $itemkey     = $item->{ItemType}.'/'.$item->{Type};
-	my $itemlongkey = $item->{ItemType}.'/'.$item->{Type}.($item->{SubType}?"/$item->{SubType}":"");
+	my $itemkey     = $item->itemkey;
+	my $itemlongkey = $item->itemlongkey;
 	next if $ignore{$itemkey} || $ignore{$itemlongkey};
 	if (%keep) {
 	    next if !$keep{$itemkey} && !$keep{$itemlongkey};
@@ -188,10 +200,7 @@ EOF
 		    or die $!;
 
 		my $xpm_data = $item->{$xpm_type};
-		# XXX Hack: it seems that the colors are swapped for line items. Fixing this.
-		if ($item->{ItemType} eq 'line') {
-		    $xpm_data =~ s{"(XX|==)(\s+c\s+)}{ '"' . ($1 eq 'XX' ? '==' : 'XX') . $2 }eg;
-		} elsif ($item->{ItemType} eq 'point'
+		if ($item->{ItemType} eq 'point'
 			 && @nopngheuristic
 			 && !$nopngheuristic{$itemkey} && !$nopngheuristic{$itemlongkey}
 			) { # transparent not handled correctly --- but this heuristic does not work perfectly, so can be turned off with %nopngheuristic
@@ -211,7 +220,7 @@ EOF
 	if ($item->{PNG}) {
 	    print $ofh qq{<img src="$item->{PNG}" />};
 	} elsif ($item->{DayPNG}) {
-	    print $ofh qq{<img src="$item->{DayPNG}" /> <img src="$item->{NightPNG}" />};
+	    print $ofh qq{<img title="day image" class="daypng" src="$item->{DayPNG}" /> <img title="night image" class="nightpng" src="$item->{NightPNG}" />};
 	}
 	print $ofh "</td><td>";
 	my $de_label = $item->{String}->{'0x02'} || '';
@@ -249,11 +258,6 @@ sub _item_id {
     $item->{ItemType} . "/" . $item->{Type} . ($item->{SubType} ? "/" . $item->{SubType} : "");
 }
 
-sub _create_xpm_line_32 {
-    my($dataref, $colorcode) = @_;
-    $$dataref .= qq{"}.($colorcode x 32) . qq{",\n};
-}
-
 sub usage (;$) {
     my $msg = shift;
     warn $msg, "\n" if $msg;
@@ -262,23 +266,95 @@ usage: $0 -o outputdir [-encoding ...] [-igntype ...,...] < decompiled_typ_file.
 EOF
 }
 
+{
+    package
+	Typ2Legend::Item;
+
+    sub new {
+	my($class, $item) = @_;
+	bless $item, $class;
+    }
+
+    sub itemkey {
+	my $self = shift;
+	$self->{ItemType}.'/'.$self->{Type};
+    }
+
+    sub itemlongkey {
+	my $self = shift;
+	$self->{ItemType}.'/'.$self->{Type}.($self->{SubType}?"/$self->{SubType}":"");
+    }
+}
+
 __END__
 
-=head1 EXAMPLE
+=head1 NAME
+
+typ2legend.pl - create a HTML legend from a decompiled .TYP file
+
+=head1 DESCRIPTION
+
+This script created a HTML page together with .png images for a .TYP
+file. As input a decompiled .TYP file (usually with extension .TXT)
+has to be provided. See L<http://ati.land.cz/gps/typdecomp/editor.cgi>
+for a .TYP file editor and decompiler.
+
+=head1 EXAMPLES
 
 Currently the legend for the bbbike/garmin map is best created as
 such:
 
-    perl ./miscsrc/typ2legend.pl < misc/mkgmap/typ/M000002a.TXT -f -o /tmp/legend -title "Legende für die BBBike-Garmin-Karte" -keep polygon/0x0a,polygon/0x0c,polygon/0x0d,polygon/0x16,polygon/0x19,polygon/0x1a,polygon/0x3c,polygon/0x4e,polygon/0x50,line/0x01,line/0x03,line/0x04,line/0x05,line/0x06,line/0x0f,line/0x13,line/0x14,line/0x1a,line/0x1c,line/0x1e,line/0x2c,line/0x2d,line/0x2e,line/0x2f,line/0x30,line/0x31,line/0x32,line/0x33,line/0x34,line/0x35,line/0x36,line/0x37,line/0x38,line/0x39,line/0x3a,line/0x3b,line/0x3c,line/0x3d,line/0x3e,line/0x3f,point/0x70,point/0x71,point/0x72 -nopngheuristic point/0x70/0x01,point/0x71/0x01,point/0x71/0x06
+    perl ./miscsrc/typ2legend.pl < misc/mkgmap/typ/M000002a.TXT -f -o tmp/typ_legend -title "Legende für die BBBike-Garmin-Karte" -keep polygon/0x0a,polygon/0x0c,polygon/0x0d,polygon/0x16,polygon/0x19,polygon/0x1a,polygon/0x3c,polygon/0x4e,polygon/0x50,line/0x01,line/0x03,line/0x04,line/0x05,line/0x06,line/0x0f,line/0x13,line/0x14,line/0x1a,line/0x1c,line/0x1e,line/0x2c,line/0x2d,line/0x2e,line/0x2f,line/0x30,line/0x31,line/0x32,line/0x33,line/0x34,line/0x35,line/0x36,line/0x37,line/0x38,line/0x39,line/0x3a,line/0x3b,line/0x3c,line/0x3d,line/0x3e,line/0x3f,point/0x70,point/0x71,point/0x72/0x01,point/0x72/0x03 -nopngheuristic point/0x70/0x01,point/0x71/0x01,point/0x71/0x06 -noprefer15 line/0x13,line/0x14
+
+The generated html file may be found in C<tmp/typ_legend/index.html>.
 
 "keep" lists only items which are actually used in the bbd data and
 converted with bbd2osm.
 
+For OSM data the "keep" list is not necessary. Here the legend may be
+created with:
+
+    perl ./miscsrc/typ2legend.pl < misc/mkgmap/typ/M000002a.TXT -f -o tmp/typ_osm_legend -title "Legende für die OSM-Garmin-Karte" -nopngheuristic point/0x27,point/0x2f/0x08,point/0x70/0x01,point/0x71/0x01,point/0x71/0x06 -noprefer15 line/0x13,line/0x14
+
+The generated html file may be found in C<tmp/typ_osm_legend/index.html>.
+
+=head1 NOTES
+
+The decompiled .TXT file from
+L<http://ati.land.cz/gps/typdecomp/editor.cgi> is ambiguous. The
+following color style types cannot be distinguished and may be 
+
+=over
+
+=item polygon: 15 vs. 8 and bitmapped line: 7 vs. 0
+
+By default polygon 8 resp. line 0 is used. With the option
+C<-noprefer15> the other color style type may be chosen.
+
+=item polygon: 13 vs. 11 and bitmapped line: 5 vs. 3
+
+By default polygon 11 resp. line 3 is used. There's no cmdline option
+yet (but Typ2Legend::XPM has internally the option C<prefer13>).
+
+=back
+
 In special layers of the bbbike/garmin map the following items are
 also used:
 
-* line/0x040 (Ampelphasen)
+=over
 
-* point/0x073* (categorized fragezeichen)
+=item * line/0x040 (Ampelphasen)
+
+=item * point/0x073* (categorized fragezeichen)
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<Typ2Legend::XPM>.
 
 =cut
