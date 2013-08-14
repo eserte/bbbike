@@ -25,8 +25,9 @@ sub new {
 
     my %xpm;
 
+    $lines = dclone $lines;
     my $header = shift @$lines;
-    if (my($w,$h,$numcolors,$charonpixel) = $header =~ m{^"(\d+)\s+(\d+)\s+(\d+)\s+(\d+)"$}) {
+    if (my($w,$h,$numcolors,$charonpixel) = $header =~ m{^"(\d+)\s+(\d+)\s+(\d+)\s+(\d+)",?$}) {
 	if ($charonpixel != 2) {
 	    die "We deal only with charonpixel=2, not $charonpixel";
 	}
@@ -46,7 +47,7 @@ sub new {
 	    if (!defined $colormap_line) {
 		die "Short read while parsing XPM colormap";
 	    }
-	    if (my($code, $coltype, $color) = $colormap_line =~ m{^"(\S{$charonpixel})\s+(\S+)\s+(#[0-9a-fA-F]{6}|none)"$}) {
+	    if (my($code, $coltype, $color) = $colormap_line =~ m{^"(\S{$charonpixel})\s+(\S+)\s+(#[0-9a-fA-F]{6}|none)",?$}) {
 		push @colormap, {code => $code, coltype => $coltype, color => $color};
 	    } else {
 		die "Cannot parse XPM colormap line '$colormap_line'";
@@ -55,6 +56,7 @@ sub new {
 	$xpm{colormap} = \@colormap;
     }
 
+    s{,$}{} for @$lines;
     $xpm{data} = $lines;
 
     bless \%xpm, $class;
@@ -68,7 +70,7 @@ sub clone {
 sub transform {
     my($self,%opts) = @_;
     my $prefer13 = delete $opts{prefer13}; # over 11
-    my $prefer15 = delete $opts{prefer15}; # over 14
+    my $prefer15 = delete $opts{prefer15}; # over 8
     my $linewidth = delete $opts{linewidth};
     my $borderwidth = delete $opts{borderwidth};
     die "Unhandled arguments: " . join(" ", %opts) if %opts;

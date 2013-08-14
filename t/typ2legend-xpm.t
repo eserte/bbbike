@@ -736,7 +736,7 @@ sub parse_into_lines {
     my $s = shift;
     $s =~ s<^XPM=><>;
     $s =~ s<};$><>;
-    split /,?\n/, $s;
+    split /\n/, $s;
 }
 
 sub maybe_montage ($$) {
