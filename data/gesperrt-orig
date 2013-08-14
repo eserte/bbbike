@@ -1028,7 +1028,6 @@ Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 Amalienstr.	1s:q3 13789,16775 13722,16843 13653,16907 13589,16965
 Pasedagplatz	1 14099,17195 14150,17255 14170,17249
-Pasedagplatz	1s:q3 14174,17226 14144,17165
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
 Aristotelessteig	1s:q2 18527,9623 18660,9599
 #: by: Stefan Klinkusch vvv
@@ -2152,6 +2151,8 @@ Schranke	BNP:3::trailer=no 17826,9630
 #: confirmed_by: srt
 Einfahrsperre für Autos	BNP:0::trailer=2 19003,9800
 #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
+sehr enger Pfad	BNP:0::trailer=no 13733,18161
+#: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
 sehr enge Stelle	BNP:0::trailer=no 31909,2802
 #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
 sehr enge Stelle	BNP:0::trailer=no 1184,13544
@@ -2565,7 +2566,7 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2013-07-12 vvv
+#: last_checked: 2013-08-14 vvv
 #: check_frequency: 60d vvv
 #: XXX mit den Bauarbeiten "An den Eldenaer Höfen" in strassen-orig koordinieren vvv
 An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14449,12833 14594,12800

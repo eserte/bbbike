@@ -2725,7 +2725,24 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019212',
+         'until' => 1380636000,
+         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
+         'from' => 1348076973,
+         'id' => 2308,
+         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
+#: note: nur die halbe Strecke ist gesperrt, deshalb q3
+#: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
+#: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
+#: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
+#: note: am 2013-02-11 geprüft, keine Schranke, aber nur für "Linienverkehr frei"
+#: note: am 2013-04-11 geprüft: Radfahrer dürfen hier offiziell entlangfahren
+#: note: am 2013-08-14 geprüft: Fahrbahn war gesperrt
+userdel	q3::inwork 10530,14452 10723,14772
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {
@@ -2942,15 +2959,12 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        },
        undef,
        {
-         'source_id' => 'http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html',
+         'source_id' => 'http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html?date=20130814',
          'until' => 1412114400,
-         'text' => 'Neubau der Schulstraße, Bauabschnitt zwischen Duseke- und Grunowstraße',
+         'text' => 'Neubau der Schulstraße, Bauabschnitt zwischen Grunowstraße und Berliner Straße',
          'from' => undef,
          'id' => 2402,
-         'data' => '#: XXX: zweiter Bauabschnitt wird bis zur Berliner Str. gehen
-#: last_checked: 2013-06-04
-#: next_check: 2013-08-04
-userdel	q4::inwork 10473,18113 10545,18143 10582,18159
+         'data' => 'userdel	q4::inwork 10582,18159 10755,18231
 ',
          'type' => 'handicap'
        },

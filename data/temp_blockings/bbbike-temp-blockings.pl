@@ -20024,7 +20024,7 @@ userdel	q4::inwork 8634,13588 8626,13641 8619,13689
 EOF
      },
      { from  => 1348076973, # 1314604800, # 2011-08-29 10:00
-       until => 1365706902, # 1380636000, # 2013-10-01 16:00, # 1347721200, # 2012-09-15 17:00
+       until => 1380636000, # 2013-10-01 16:00, # 1347721200, # 2012-09-15 17:00
        text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
        type  => 'handicap',
        source_id => 'IM_019212',
@@ -20036,6 +20036,7 @@ EOF
 #: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
 #: note: am 2013-02-11 geprüft, keine Schranke, aber nur für "Linienverkehr frei"
 #: note: am 2013-04-11 geprüft: Radfahrer dürfen hier offiziell entlangfahren
+#: note: am 2013-08-14 geprüft: Fahrbahn war gesperrt
 userdel	q3::inwork 10530,14452 10723,14772
 EOF
      },
@@ -20936,14 +20937,11 @@ EOF
      },
      { from  => undef, # 
        until => 1412114400, # 2014-10-01 00:00
-       text  => 'Neubau der Schulstraße, Bauabschnitt zwischen Duseke- und Grunowstraße',
+       text  => 'Neubau der Schulstraße, Bauabschnitt zwischen Grunowstraße und Berliner Straße',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html',
+       source_id => 'http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html?date=20130814',
        data  => <<EOF,
-#: XXX: zweiter Bauabschnitt wird bis zur Berliner Str. gehen
-#: last_checked: 2013-06-04
-#: next_check: 2013-08-04
-userdel	q4::inwork 10473,18113 10545,18143 10582,18159
+userdel	q4::inwork 10582,18159 10755,18231
 EOF
      },
      { from  => 1351465200, # 2012-10-29 00:00

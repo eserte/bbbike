@@ -149,7 +149,7 @@ Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,1187
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
 #: XXX Baumaßnahme 3.18 (Realisierung in 2011)
-#: last_checked: 2013-08-09 (weiterhin nur Busspuren)
+#: last_checked: 2013-08-14 (weiterhin nur Busspuren)
 #: check_frequency: 60d
 Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
@@ -194,10 +194,7 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: next_check: 2013-06-01
 Schönerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 11929,23946 11981,24260 12177,24684 12261,24851 12405,25137 12632,25569 12698,25695 12944,26163 13192,26628 13256,26863 13348,27204
 #
-#: XXX Baumaßnahme 3.35 (Realisierung in 2011)
-#: last_checked: 2013-04-30
-#: next_check: 2013-07-30
-Pasedagplatz: wird hier eine Ampel entstehen? Oder die Einbahnstraßenregelung für Radfahrer aufgehoben?	?::projected 14174,17226 14144,17165
+# REMOVED (realisiert (Einbahnstraße offen)) --- #: XXX Baumaßnahme 3.35 (Realisierung in 2011) --- #: last_checked: 2013-04-30 --- #: next_check: 2013-07-30 --- Pasedagplatz: wird hier eine Ampel entstehen? Oder die Einbahnstraßenregelung für Radfahrer aufgehoben?	?::projected 14174,17226 14144,17165
 # 
 #: XXX Baumaßnahme 10.11 (Realisierung nach 2011)
 Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20769,17650 20728,17670 20485,17784
@@ -368,6 +365,15 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3594
+#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036373765264/373765264/00056582/82-Anlagen/02/BenennungsabsichtfuerdenPlatzanderBornhomerBru.pdf (Lage)
+#: next_check: 2014-04-01
+Platz des 9. November 1989: geplante Benennung	?::projected 9998,16547 10197,16528
+# 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3437
+#: next_check: 2014-04-01
+Bahnhofstr./Blankenburger Weg/Pankstr.: Ampel geplant	?::projected 12442,20805
+# 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3129
 #: priority: #C
 Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected 4575,22089 4582,22122
@@ -532,7 +538,7 @@ Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 809
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne) vvv
-#: next_check: 2013-08-19 vvv
+#: next_check: 2013-09-19 vvv
 #: priority: #C vvv
 Zeltinger Str. Höhe Einmündung in den Zeltinger Platz: wird hier ein Zebrastreifen angelegt?	?::projected 2440,25291 2480,25268
 Zeltinger Platz Höhe Reichelt/Post: wird hier ein Zebrastreifen angelegt? (genaue Position?)	?::projected 2455,25206 2503,25242
@@ -542,7 +548,7 @@ Zeltinger Platz Höhe Reichelt/Post: wird hier ein Zebrastreifen angelegt? (genau
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3317
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne)
-#: next_check: 2013-08-19
+#: next_check: 2013-09-19
 #: priority: #C
 Einmündung der Burgfrauenstraße in den Zeltinger Platz: hier wird ein Zebrastreifen angelegt	?::projected 2427,25126 2479,25116
 # 
@@ -813,8 +819,8 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: XXX Privatstraße
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
 #: osm_watch: way id="137340264" version="6"
-#: last_checked: 2013-05-30
-#: next_check: 2013-08-30
+#: last_checked: 2013-08-14
+#: check_frequency: 100d
 Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,13104
 # 
 # REMOVED (-> strassen-orig etc.) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: XXX siehe auch Eintrag für "Am Langen Jammer" in gesperrt-orig --- #: last_checked: 2012-10-26 vvv --- #: next_check: 2012-12-01 vvv --- An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14376,12849 14449,12833 14594,12800 --- An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14449,12833 14480,12932 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -1054,13 +1060,12 @@ Zugang zum Eastgate (?): möglich? Qualität?	? 19870,15172 19852,15201 19775,1527
 Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13173,12331 13163,12382 13176,12500
 # REMOVED (nein, sieht nur nach Leitungsarbeiten aus) --- Kirchhofstr.: Sackgasse --- eventuell Bauarbeiten, vielleicht wird die Qualität hier besser?	? 13027,7368 13117,7471
 #: priority: #C
-Florastr.: Vorfahrtsregelung?	? 10548,17817 10705,17931 10830,17985
 Kaulsdorfer Str. (Hönow): Qualität?	? 25418,14538 25490,14601 25555,14657 25644,14721 25745,14808 25866,14898 25932,14955 25991,14926
 Ernst-Bloch-Str. - Hellersdorfer Str.: besteht hier für Radfahrer eine Verbindung? Qualität? Kann die Hellersdorfer Str. hier überquert werden?	? 22985,12807 22924,12833
 Grünauer Str. - Kablower Weg: existiert hier eine Verbindung durch den Wald? Qualität?	? 22926,-340 22948,-322 22862,-126 22815,37
 # REMOVED (uninteressant?) --- Dohnagestell - Ugandastr.: Qualität? beleuchtet?	? 5522,15354 5710,15519 5906,15623
-Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?	? 15102,20723 15220,20586 15255,19906
-Blankenburger Pflasterweg - Ornitstr.: Qualität? Beleuchtet? Genaue Wegführung?	? 15255,19906 15357,19880 15413,18626
+#: XXX über Golfplatzgelände - gibt es hier Einschränkungen?
+Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?	? 15102,20723 15220,20586 15354,19879 15424,19861
 Am Heinersdorfer Graben: Qualität? Beleuchtet? Straßenname (bei osm: Kiebitzweg)	? 13902,18953 13404,19235 13040,19596
 # REMOVED (existiert zwar, ist aber nicht so wichtig, da Alternativen existieren. Parkplatz. Schranke im Süden, Poller im Norden) --- Am Lindenplatz - Schwarzmeerstr.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17856,10879 17821,10741
 # 
