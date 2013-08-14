@@ -27,7 +27,7 @@ GetOptions("skip!" => \$do_skip)
 
 chdir "$FindBin::RealBin/.." or die $!;
 
-my @files = grep { !m{\.el$} && !m{\.sh$} && !m{\.xslt$} } bsd_glob("miscsrc/*");
+my @files = grep { -f $_ && !m{\.el$} && !m{\.sh$} && !m{\.xslt$} } bsd_glob("miscsrc/*");
 
 my $has_skips = 0;
 sub myskip ($$) {
