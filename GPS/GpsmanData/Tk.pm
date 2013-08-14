@@ -282,7 +282,7 @@ sub _fill_data_view {
 			$do_add = 1;
 		    }
 		    if ($do_add) {
-			$dv->add(++$i, -text => ""); # XXX -data?
+			$dv->add(++$i, -text => "", -data => {AssociatedWpt => $associated_wpt_info_i});
 			my $col_i = -1;
 			my $current_associated_wpt = $current_associated_wpt_info->{wpt};
 			for my $def (@wpt_cols) {
@@ -725,8 +725,13 @@ sub wpt_by_item {
     my($self, $item) = @_;
     my $dv = $self->Subwidget("data");
     my $data = $dv->info('data', $item);
-    return undef if !exists $data->{Wpt};
-    $self->{GpsmanData}->Chunks->[$data->{Chunk}]->Track->[$data->{Wpt}];
+    if      (exists $data->{AssociatedWpt}) {
+	$self->_get_associated_wpt_info->[$data->{AssociatedWpt}]->{wpt};
+    } elsif (exists $data->{Wpt}) {
+	$self->{GpsmanData}->Chunks->[$data->{Chunk}]->Track->[$data->{Wpt}];
+    } else {
+	undef;
+    }
 }
 
 sub chunk_by_item {
