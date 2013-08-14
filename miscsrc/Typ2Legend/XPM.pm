@@ -69,6 +69,8 @@ sub transform {
     my($self,%opts) = @_;
     my $prefer13 = delete $opts{prefer13}; # over 11
     my $prefer15 = delete $opts{prefer15}; # over 14
+    my $linewidth = delete $opts{linewidth};
+    my $borderwidth = delete $opts{borderwidth};
     die "Unhandled arguments: " . join(" ", %opts) if %opts;
 
     my %ret;
@@ -77,36 +79,125 @@ sub transform {
     my $numcolors = $self->{numcolors};
 
     if ($w == 0) {
-	if      ($numcolors == 1) { # type 6
-	    my $day_night = $self->clone;
-	    $day_night->{data} = _create_xpm_polygon_body();
-	    $day_night->{w} = $day_night->{h} = 32;
-	    $ret{'day+night'} = $day_night;
-	} elsif ($numcolors == 2) { # type 7
-	    my($day, $night) = ($self->clone, $self->clone);
-	    for my $clone ($day, $night) {
-		$clone->{data} = _create_xpm_polygon_body();
-		$clone->{w} = $clone->{h} = 32;
-		$clone->{numcolors} = 1;
+	if (defined $linewidth) {
+	    my $final_h = $linewidth + ($borderwidth||0)*2;
+	    if (defined $borderwidth) {
+		if      ($numcolors == 2) { # line type 0
+		    my $day_night = $self->clone;
+		    $day_night->{data} = _create_xpm_line_body($linewidth, $borderwidth);
+		    $day_night->{w} = 32;
+		    $day_night->{h} = $final_h;
+		    $ret{'day+night'} = $day_night;
+		} elsif ($numcolors == 4) { # line type 1
+		    my($day, $night) = ($self->clone, $self->clone);
+		    for my $clone ($day, $night) {
+			$clone->{data} = _create_xpm_line_body($linewidth, $borderwidth);
+			$clone->{w} = 32;
+			$clone->{h} = $final_h;
+			$clone->{numcolors} = 2;
+		    }
+		    $day->{colormap} = [ dclone $self->{colormap}->[0],
+					 dclone $self->{colormap}->[1] ];
+		    $night->{colormap} = [ dclone $self->{colormap}->[2],
+					   dclone $self->{colormap}->[3] ];
+		    $night->{colormap}->[0]->{code} = 'XX';
+		    $night->{colormap}->[1]->{code} = '==';
+		    $ret{'day'} = $day;
+		    $ret{'night'} = $night;
+		} elsif ($numcolors == 3) { # line type 3
+		    my $day = $self->clone;
+		    $day->{data} = _create_xpm_line_body($final_h);
+		    $day->{w} = 32;
+		    $day->{h} = $final_h;
+		    $day->{numcolors} = 1;
+		    $day->{colormap} = [ dclone $self->{colormap}->[0] ];
+		    my $night = $self->clone;
+		    $night->{data} = _create_xpm_line_body($linewidth, $borderwidth);
+		    $night->{w} = 32;
+		    $night->{h} = $final_h;
+		    $night->{numcolors} = 2;
+		    $night->{colormap} = [ dclone $self->{colormap}->[1],
+					   dclone $self->{colormap}->[2] ];
+		    $night->{colormap}->[0]->{code} = 'XX';
+		    $night->{colormap}->[1]->{code} = '==';
+		    $ret{'day'} = $day;
+		    $ret{'night'} = $night;
+		} else {
+		    die "Cannot handle line with defined borderwidth and numcolors=$numcolors";
+		}
+	    } else {
+		if      ($numcolors == 3) { # line type 5 # XXX not definable borderwidth --- is this a bug in the typ editor?
+		    my $day = $self->clone;
+		    $day->{data} = _create_xpm_line_body($linewidth);
+		    $day->{w} = 32;
+		    $day->{h} = $final_h;
+		    $day->{numcolors} = 2;
+		    $day->{colormap} = [ dclone $self->{colormap}->[0],
+					 dclone $self->{colormap}->[1] ];
+		    my $night = $self->clone;
+		    $night->{data} = _create_xpm_line_body($linewidth);
+		    $night->{w} = 32;
+		    $night->{h} = $final_h;
+		    $night->{numcolors} = 1;
+		    $night->{colormap} = [ dclone $self->{colormap}->[2] ];
+		    $night->{colormap}->[0]->{code} = 'XX';
+		    $ret{'day'} = $day;
+		    $ret{'night'} = $night;
+		} elsif ($numcolors == 1) { # line type 6
+		    my $day_night = $self->clone;
+		    $day_night->{data} = _create_xpm_line_body($linewidth);
+		    $day_night->{w} = 32;
+		    $day_night->{h} = $final_h;
+		    $ret{'day+night'} = $day_night;
+		} elsif ($numcolors == 2) { # line type 7
+		    my($day, $night) = ($self->clone, $self->clone);
+		    for my $clone ($day, $night) {
+			$clone->{data} = _create_xpm_line_body($linewidth);
+			$clone->{w} = 32;
+			$clone->{h} = $final_h;
+			$clone->{numcolors} = 1;
+		    }
+		    $day->{colormap} = [ dclone $self->{colormap}->[0] ];
+		    $night->{colormap} = [ dclone $self->{colormap}->[1] ];
+		    $night->{colormap}->[0]->{code} = 'XX';
+		    $ret{'day'} = $day;
+		    $ret{'night'} = $night;
+		} else {
+		    die "Cannot handle line without borderwidth and numcolors=$numcolors";
+		}
 	    }
-	    $day->{colormap}   = [ dclone $self->{colormap}->[0] ];
-	    $night->{colormap} = [ dclone $self->{colormap}->[1] ];
-	    $night->{colormap}->[0]->{code} = 'XX';
-	    $ret{'day'} = $day;
-	    $ret{'night'} = $night;
 	} else {
-	    die "Cannot handle w=0 and numcolors=$numcolors";
+	    if      ($numcolors == 1) { # polygon type 6
+		my $day_night = $self->clone;
+		$day_night->{data} = _create_xpm_polygon_body();
+		$day_night->{w} = $day_night->{h} = 32;
+		$ret{'day+night'} = $day_night;
+	    } elsif ($numcolors == 2) { # polygon type 7
+		my($day, $night) = ($self->clone, $self->clone);
+		for my $clone ($day, $night) {
+		    $clone->{data} = _create_xpm_polygon_body();
+		    $clone->{w} = $clone->{h} = 32;
+		    $clone->{numcolors} = 1;
+		}
+		$day->{colormap}   = [ dclone $self->{colormap}->[0] ];
+		$night->{colormap} = [ dclone $self->{colormap}->[1] ];
+		$night->{colormap}->[0]->{code} = 'XX';
+		$ret{'day'} = $day;
+		$ret{'night'} = $night;
+	    } else {
+		die "Cannot handle w=0 and numcolors=$numcolors";
+	    }
 	}
     } else {
-	if    ($numcolors == 2) { # type 8, 14, or 15
-	    if ($self->{colormap}->[1]->{color} eq 'none') { # type 14
+	if    ($numcolors == 2) { # polygon types 8, 14, or 15, line types 0, 6, or 7
+	    if ($self->{colormap}->[1]->{color} eq 'none') { # polygon type 14, line type 6
 		my $day_night = $self->clone;
 		($day_night->{colormap}->[0]->{color},
 		 $day_night->{colormap}->[1]->{color})
 		    = ('none',
 		       $day_night->{colormap}->[0]->{color});
 		$ret{'day+night'} = $day_night;
-	    } elsif ($prefer15) { # type 15
+	    } elsif ($prefer15) { # polygon type 15, line type 7
 		my($day, $night) = ($self->clone, $self->clone);
 		($day->{colormap}->[0]->{color},
 		 $day->{colormap}->[1]->{color})
@@ -118,7 +209,7 @@ sub transform {
 		       $night->{colormap}->[1]->{color});
 		$ret{'day'} = $day;
 		$ret{'night'} = $night;
-	    } else { # type 8
+	    } else { # polygon type 8, line type 0
 		my $day_night = $self->clone;
 		($day_night->{colormap}->[0]->{color},
 		 $day_night->{colormap}->[1]->{color})
@@ -126,7 +217,7 @@ sub transform {
 		       $day_night->{colormap}->[0]->{color});
 		$ret{'day+night'} = $day_night;
 	    }
-	} elsif ($numcolors == 4) { # type 9
+	} elsif ($numcolors == 4) { # polygon type 9, line type 1
 	    my($day, $night) = ($self->clone, $self->clone);
 	    for my $clone ($day, $night) {
 		$clone->{numcolors} = 2;
@@ -144,7 +235,7 @@ sub transform {
 	    }
 	    $ret{'day'} = $day;
 	    $ret{'night'} = $night;
-	} elsif ($numcolors == 3) { # type 11 or 13
+	} elsif ($numcolors == 3) { # polygon types 11 or 13, line types 3 or 5
 	    my($day, $night) = ($self->clone, $self->clone);
 	    for my $clone ($day, $night) {
 		$clone->{numcolors} = 2;
@@ -173,7 +264,6 @@ sub transform {
 	    }
 	    $ret{'day'} = $day;
 	    $ret{'night'} = $night;
-	} elsif ($numcolors == 1) {
 	} else {
 	    die "Cannot handled numcolors=$numcolors";
 	}
@@ -205,6 +295,15 @@ sub _create_xpm_polygon_body {
     [ map { _create_xpm_line_32('XX') } 1..32 ]
 }
 
+sub _create_xpm_line_body {
+    my($linewidth, $borderwidth) = @_;
+    my @border = $borderwidth ? (map { _create_xpm_line_32('==') } 1..$borderwidth) : ();
+    [
+     @border,
+     (map { _create_xpm_line_32('XX') } 1..$linewidth),
+     @border,
+    ];
+}
 
 1;
 
