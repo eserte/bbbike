@@ -258,34 +258,69 @@ sub _fill_data_view {
 
     my $associated_wpt_info = $w->_get_associated_wpt_info;
     my $associated_wpt_info_i = 0;
-    my $add_associated_wpts_sub = sub {
-	my($wpt) = @_;
-	if ($associated_wpt_info) {
-	    while ($associated_wpt_info_i < @$associated_wpt_info) {
-		my $current_associated_wpt_info = $associated_wpt_info->[$associated_wpt_info_i];
-		my $do_add = 0;
-		if ($wpt) {
-		    if ($wpt->Comment_to_unixtime($w->{WptGpsmanData}) > $current_associated_wpt_info->{epoch}) {
+    my $add_associated_wpts_sub;
+    my $symbol_to_img;
+    my $symbol_to_tk_photo;
+    if ($associated_wpt_info) {
+	require GPS::Symbols::Garmin;
+	$symbol_to_img = GPS::Symbols::Garmin::get_cached_symbol_to_img();
+	$add_associated_wpts_sub = sub {
+	    my($wpt) = @_;
+	    if ($associated_wpt_info) {
+		while ($associated_wpt_info_i < @$associated_wpt_info) {
+		    my $current_associated_wpt_info = $associated_wpt_info->[$associated_wpt_info_i];
+		    my $do_add = 0;
+		    if ($wpt) {
+			if ($wpt->Comment_to_unixtime($w->{WptGpsmanData}) > $current_associated_wpt_info->{epoch}) {
+			    $do_add = 1;
+			}
+		    } else {
 			$do_add = 1;
 		    }
-		} else {
-		    $do_add = 1;
-		}
-		if ($do_add) {
-		    $dv->add(++$i, -text => ""); # XXX -data?
-		    my $col_i = -1;
-		    my $current_associated_wpt = $current_associated_wpt_info->{wpt};
-		    for my $def (@wpt_cols) {
-			my $val = $current_associated_wpt->can($def) ? $current_associated_wpt->$def : '';
-			$dv->itemCreate($i, ++$col_i, -text => $val);
+		    if ($do_add) {
+			$dv->add(++$i, -text => ""); # XXX -data?
+			my $col_i = -1;
+			my $current_associated_wpt = $current_associated_wpt_info->{wpt};
+			for my $def (@wpt_cols) {
+			    my $val = $current_associated_wpt->can($def) ? $current_associated_wpt->$def : '';
+			    if ($def eq 'Symbol') {
+				my $val = $current_associated_wpt->$def;
+				if (defined $val && length $val && $symbol_to_img) {
+				    my $photo = $symbol_to_tk_photo->{$val};
+				    if (!$photo) {
+					my $img = $symbol_to_img->{$val};
+					if ($img) {
+					    if (-r $img) {
+						$photo = $dv->Photo(-file => $img);
+						$symbol_to_tk_photo->{$val} = $photo;
+					    } else {
+						warn "WARN: image '$img' does not exist or is not readable";
+					    }
+					} else {
+					    warn "WARN: no image symbol for '$val'";
+					}
+				    }
+				    if ($photo) {
+					$dv->itemCreate($i, ++$col_i,
+							-itemtype => 'imagetext',
+							-image => $photo,
+						       );
+				    }
+				}
+			    } else {
+				$dv->itemCreate($i, ++$col_i, -text => $val);
+			    }
+			}
+			$associated_wpt_info_i++;
+		    } else {
+			last;
 		    }
-		    $associated_wpt_info_i++;
-		} else {
-		    last;
 		}
 	    }
-	}
-    };
+	};
+    } else {
+	$add_associated_wpts_sub = sub { };
+    }
 
     for my $chunk (@{ $w->{GpsmanData}->Chunks }) {
 	$chunk_i++;
