@@ -806,7 +806,7 @@ The internal item number of the clicked item.
 
 =item -wpt
 
-The L<GPS::Gpsman::Waypoint> object of the associated clicked item, if
+The B<GPS::Gpsman::Waypoint> object of the associated clicked item, if
 any.
 
 =item -chunk
@@ -823,7 +823,7 @@ The L<GPS::GpsmanData> object of the associated clicked item, if any.
 
 =item $w->associate_object($gpsmandata)
 
-Associate a L<GPS::GpsmanMultiData> object with the widget. This will
+Associate a B<GPS::GpsmanMultiData> object with the widget. This will
 also cause to fill the gps data into the widget.
 
 =item $w->reload
@@ -846,7 +846,7 @@ to use it with a small values (a meter or less).
 
 For a given (internal) I<$item> (for example, the result from the
 L</find_items_by_lat_lon> call), return the associated
-L<GPS::Gpsman::Waypoint> object, or undef.
+B<GPS::Gpsman::Waypoint> object, or undef.
 
 =item $w->chunk_by_item($item)
 
@@ -864,7 +864,7 @@ Get a list of (internal) items which are selected.
 
 =item $w->find_items_by_wpts(@wpts)
 
-For a list of L<GPS::Gpsman::Waypoint> objects, return a list of
+For a list of B<GPS::Gpsman::Waypoint> objects, return a list of
 corresponding (internal) items. Note: comparison is done by identity
 check, so make sure that the same waypoint objects are used as input
 parameters as are associated with the GpsmanData widget.
@@ -916,11 +916,6 @@ accuracy in selected ranges)
 
 =head2 Low priority
 
-  * Callbacks, so dass BBBike auf Änderungen reagieren kann
-
-  * BBBike integration: Möglichkeit eines Callbacks für eine Selektion
-    von Punkten (BBBike: call mark_street or mark_points)
-
   * Nice to have: Scrollbereich im GPS Viewer und im BBBike-Canvas
     können sich gegenseitig setzen, so dass immer der
     korrespondierende Bereich zu sehen ist
@@ -932,10 +927,19 @@ accuracy in selected ranges)
 
 =head2 GPX support
 
-  * Better support for GPX and other data types
+  * Better support for GPX and other data types (currently only
+    viewing is possible, but not editing)
  
   * GPX-Äquivalent für ~/~~ erfinden.
 
   * GPX-Äquivalent für srt:... erfinden.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<GPS::GpsmanData::TkViewer>.
 
 =cut

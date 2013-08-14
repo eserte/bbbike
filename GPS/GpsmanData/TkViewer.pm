@@ -14,7 +14,7 @@
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.01';
+$VERSION = '1.02';
 
 use FindBin;
 
@@ -28,11 +28,6 @@ use Tk::PathEntry;
 # These are global and intentionally shared within a process.
 our($gps_data_viewer_file, $gps_data_dir, $include_associated_wpt_file);
 
-# XXX Code below works only within the bbbike process. "main::" refers
-# here to the BBBike Perl/Tk program namespace. In future, this should
-# be OO-ified.
-#
-# Also, the code below will be either OO-ified or Tk-widgetified.
 sub gps_data_viewer {
     my($class, $parent, %opts) = @_;
 
@@ -239,3 +234,54 @@ sub gps_data_viewer {
 1;
 
 __END__
+
+=head1 NAME
+
+GPS::GpsmanData::TkViewer - toplevel around GPS::GpsmanData::Tk
+
+=head1 SYNOPSIS
+
+Used preferably within the BBBike Perl/Tk program:
+
+    use GPS::GpsmanData::TkViewer;
+    my $t = GPS::GpsmanData::TkViewer->gps_data_viewer($mw, -gpsfile => $gps_file);
+
+Limited support for direct cmdline access (but expect warnings in
+STDERR!):
+
+   perl -Ilib -MTk -MGPS::GpsmanData::TkViewer -e 'GPS::GpsmanData::TkViewer->gps_data_viewer(tkinit); MainLoop'
+
+=head1 DESCRIPTION
+
+A toplevel widget which includes the L<GPS::GpsmanData::Tk> widget for
+display per-waypoint information from a GPS track, as well as
+additional widgets for entering the GPS file name, load buttons etc.
+
+A GPS track may be associated with a waypoint-only file (usually using
+the same filename, only the suffix C<.trk> is replaced by C<.wpt>).
+
+A number of variables are intentionally global and thus shared within
+a process: the recently used gps file, the main gps data directory,
+and the check for using associated waypoint files.
+
+=head1 TODO
+
+Associating waypoint files works only for gpsman files, not for GPX
+files. For GPX file the association would be done by replacing C<.gpx>
+by C<_wpt.gpx>.
+
+The code below works only within the bbbike process. "main::" is used
+throughout the code and refers here to the BBBike Perl/Tk program
+namespace. In future, this should be OO-ified.
+
+Also, the code below will be either OO-ified or Tk-widgetified.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<GPS::GpsmanData::Tk>.
+
+=cut
