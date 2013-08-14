@@ -351,9 +351,24 @@ ${BBBIKETMPDIR}/bbbike_routable.img: ${BBBIKETMPDIR}/bbbike_routable.osm ${BBBIK
 	    mv -f 12117006.img bbbike_routable.img 
 
 ######################################################################
+# typ2legend
+
+typ-legend-all: typ-legend-bbbike typ-legend-osm
+
+typ-legend-bbbike: ${BBBIKETMPDIR}/typ_legend/index.html
+
+${BBBIKETMPDIR}/typ_legend/index.html:	${BBBIKEMKGMAPDIR}/typ/M000002a.TXT ${MISCSRCDIR}/typ2legend.pl
+	${PERL} ${MISCSRCDIR}/typ2legend.pl < ${BBBIKEMKGMAPDIR}/typ/M000002a.TXT -f -o ${BBBIKETMPDIR}/typ_legend -title "Legende für die BBBike-Garmin-Karte" -keep polygon/0x0a,polygon/0x0c,polygon/0x0d,polygon/0x16,polygon/0x19,polygon/0x1a,polygon/0x3c,polygon/0x4e,polygon/0x50,line/0x01,line/0x03,line/0x04,line/0x05,line/0x06,line/0x0f,line/0x13,line/0x14,line/0x1a,line/0x1c,line/0x1e,line/0x2c,line/0x2d,line/0x2e,line/0x2f,line/0x30,line/0x31,line/0x32,line/0x33,line/0x34,line/0x35,line/0x36,line/0x37,line/0x38,line/0x39,line/0x3a,line/0x3b,line/0x3c,line/0x3d,line/0x3e,line/0x3f,point/0x70,point/0x71,point/0x72/0x01,point/0x72/0x03 -nopngheuristic point/0x70/0x01,point/0x71/0x01,point/0x71/0x06 -noprefer15 line/0x13,line/0x14
+
+typ-legend-osm: ${BBBIKETMPDIR}/typ_osm_legend/index.html
+
+${BBBIKETMPDIR}/typ_osm_legend/index.html:	${BBBIKEMKGMAPDIR}/typ/M000002a.TXT ${MISCSRCDIR}/typ2legend.pl
+	${PERL} ${MISCSRCDIR}/typ2legend.pl < ${BBBIKEMKGMAPDIR}/typ/M000002a.TXT -f -o ${BBBIKETMPDIR}/typ_osm_legend -title "Legende für die OSM-Garmin-Karte" -nopngheuristic point/0x27,point/0x2f/0x08,point/0x70/0x01,point/0x71/0x01,point/0x71/0x06 -noprefer15 line/0x13,line/0x14
+
+######################################################################
 # Sourceforge release targets
 
-do-garmindata-dist:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
+do-garmindata-dist:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img typ-legend-bbbike
 	rm -rf /tmp/bbbike-b_de-garmin
 	mkdir /tmp/bbbike-b_de-garmin
 	(echo "Eine auf BBBike-Daten basierende Berlin-Karte für Garmin-Geräte."; \
@@ -370,9 +385,14 @@ do-garmindata-dist:	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 	 echo "* Eine existierende .../garmin/gmapsupp.img sollte gesichert werden."; \
 	 echo "* Die Datei bbbike_routable_gmapsupp.img als .../garmin/gmapsupp.img kopieren."; \
 	 echo ""; \
+	 echo "Kartenlegende:"; \
+	 echo "* Eine Legende der Karte ist in der ZIP-Datei unter map_legend/index.html"; \
+	 echo "  zu finden."; \
+	 echo ""; \
 	 echo "Fragen per E-Mail an: slaven AT rezic DOT de"; \
 	) | perl -pe 's{$$}{\r}' > /tmp/bbbike-b_de-garmin/README.txt
 	rsync --archive --cvs-exclude ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img /tmp/bbbike-b_de-garmin/
+	rsync --archive --cvs-exclude ${BBBIKETMPDIR}/typ_legend/ /tmp/bbbike-b_de-garmin/map_legend/
 	cd /tmp && \
 	    zip -r bbbike-b_de-garmin-$(TODAY_DATE).zip bbbike-b_de-garmin
 

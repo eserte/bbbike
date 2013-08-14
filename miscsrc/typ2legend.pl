@@ -318,6 +318,9 @@ created with:
 
 The generated html file may be found in C<tmp/typ_osm_legend/index.html>.
 
+The generation commands are also in F<misc/Makefile>, look for the
+C<typ-legend-all> target.
+
 =head1 NOTES
 
 The decompiled .TXT file from
