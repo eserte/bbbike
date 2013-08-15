@@ -202,7 +202,7 @@ data_berlin_osm_bbbike_untiled:
 	${MISCSRCDIR}/osm2bbd -map bbbike -experiment handle_relations -v -f -o ../data_berlin_osm_bbbike download/osm/berlin.osm.bz2
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
 
-# WGS84 version - note that still bbbike and bbbike.cgi cannot handled this correctly
+# WGS84 version - note that still bbbike and bbbike.cgi cannot handle this correctly
 data_berlin_osm_untiled:
 	${MISCSRCDIR}/osm2bbd -experiment add_postal_code -v -f -o ../data_berlin_osm download/osm/berlin.osm.bz2
 	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm
