@@ -558,8 +558,8 @@ radroute_body.html:	$(BBBIKE_DATA_DIR)/comments_route-orig \
 			$(BBBIKE_MISCSRC_DIR)/bbd2mapservhtml.pl \
 			$(BBBIKE_MISCSRC_DIR)/grepstrassen \
 			Makefile
-	$(BBBIKE_MISCSRC_DIR)/grepstrassen -v -sectionrx ignorieren $(BBBIKE_DATA_DIR)/comments_route-orig |\
-	    $(BBBIKE_MISCSRC_DIR)/grepstrassen -v -sectionrx "In Routenliste ignorieren" |\
+	$(BBBIKE_MISCSRC_DIR)/grepstrassen -v -directive 'ignore=' $(BBBIKE_DATA_DIR)/comments_route-orig |\
+	    $(BBBIKE_MISCSRC_DIR)/grepstrassen -v -directive 'ignore_routelist=' |\
 	    perl -pe 's{(Flaeming-Skate)\s+\(.*\)\t}{$$1\t}' |\
 	    $(BBBIKE_MISCSRC_DIR)/bbd2mapservhtml.pl \
 		-bbbikeurl $(BBBIKE_CGI_RELURL)/bbbike.cgi \

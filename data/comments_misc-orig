@@ -196,7 +196,7 @@ Zur Pariser Str.: Hausdurchfahrt benutzen	CS; 5464,9914 5416,9928
 #: note: "unechter" Kreisverkehr, auf der südlichen Fahrbahn kaum merkbar, auf der nördlichen aber schon
 Kreisverkehr	Roundabout 11393,10390
 # 
-#: section: ignorieren vvv
+#: ignore vvv
 #: XXX_prog: it's not clear what to do with this in the routelist (currently shown) or while rendering (currently ignored in normal perl/tk mode) vvv
 Kreisverkehr	Roundabout 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 Kreisverkehr	Roundabout 19414,15132
@@ -223,7 +223,7 @@ Kreisverkehr	Roundabout 13300,-1252
 #: note: mit benutzungspflichtigen Radwegen hier
 Kreisverkehr	Roundabout 15949,-5422
 #: XXX_prog ^^^
-#: section ^^^
+#: ignore ^^^
 #
 ######################################################################
 # cul-de-sac
@@ -237,7 +237,7 @@ Kreisverkehr	Roundabout 15949,-5422
 # Zum einen kann überprüft werden, ob eine Sackgasse tatsächlich eine
 # Sackgasse ist oder nur ein Datenfehler.
 #
-#: section: ignorieren vvv
+#: ignore vvv
 	culdesac 19748,8517
 	culdesac_pseudo 19577,8438
 	culdesac_pseudo 19526,8458
@@ -1166,7 +1166,7 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 13733,18161
 	culdesac_pseudo 13751,18180
 	culdesac_pseudo 12911,15865
-#: section ^^^
+#: ignore ^^^
 ######################################################################
 # busroute
 #
@@ -1174,7 +1174,7 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 # übergeordneten Straßen befinden. Das könnte z.B. für die
 # Winteroptimierung verwendet werden.
 #
-#: section: ignorieren vvv
+#: ignore vvv
 Bus 184	busroute_N 7949,7607 8263,7611 8267,7572 8302,7508 8376,7440 8386,7430 8429,7403 8479,7389 8604,7381 8715,7384 8806,7382 8879,7378 8971,7359 9051,7340 9107,7297 9242,7286
 Bus 106, Bus 204	busroute_N 7578,8358 7494,8364 7497,8168
 Bus 140	busroute_N 8969,9320 9000,9509 9044,9753
@@ -1387,7 +1387,7 @@ Bus 322	busroute_N 4810,21730 4655,21939 4613,21997 4581,22106 4456,22278
 Bus M85	busroute_N 8098,13419 8102,13304 8106,13130 8110,13042
 Bus 347	busroute_N 13541,11355 13496,11384 13427,11431 13473,11456 13496,11384
 Bus 248	busroute_N 8642,7876 8553,7795 8512,7757 8465,7699 8378,7623 8263,7611
-#: section: ^^^
+#: ignore ^^^
 ######################################################################
 #: by: Dagmar Schilka
 (Spießweg - Hermsdorfer Str.): Rad- und Fußweg	CS 4827,20862 4644,20952
@@ -1651,11 +1651,11 @@ Kolonie Fröhliche Eintracht	CP2; 10012,5231 10012,5210
 Straße 188: Anlieger frei	CS 16048,1091 15935,1043
 Straße 181: Anlieger frei	CS 16991,-81 16989,-147 17036,-421 17065,-589 17076,-644
 Nikolaus-Ehlen-Weg: Privatstraße	CS 17308,-36 17215,94 17176,90
-#: section: ignorieren vvv
+#: ignore vvv
 #: XXX_indoor: würde besser unter sehenswuerdigkeit passen
 Gaslaternen-Freilichtmuseum Berlin	CS 5903,11683 5835,11768 5858,11863 5900,11913
-#: section ^^^
-#: section: ignorieren vvv
+#: ignore ^^^
+#: ignore vvv
 Suarezstr.: Wochenmarkt Do 9.00-15.00, aber anscheinend nur auf dem Bürgersteig	CS 2921,10928 2845,10840
 Mierendorffplatz: Wochenmarkt Mi+Sa, 8.00-13.00, zwar auf der Fahrbahn, aber der Radweg scheint weiterhin befahrbar zu sein	CS 3534,13098 3645,13189
 Fehrbelliner Platz: Wochenmarkt Di+Do, 11.00-16.00, sowie Kunst- und Trödelmarkt Sa+So 10.00-16.00, nur auf der Parkplatzfläche	CS 4339,9224
@@ -1671,7 +1671,7 @@ Ackerstr.: Wochenmarkt, Do, 11.00-18.00, anscheinend nur Halteverbot	CS; 9048,14
 Jagowstr.: Wochenmarkt, Mi+Sa, 08.00-13.00, anscheinend nur Halteverbot	CS; 5601,12756 5543,12664
 Koppenstr.: Wochenmarkt Di+Do 10.00-18.00, die Farbahn ist trotzdem befahrbar	CS 12635,12629 12596,12472
 Nettelbeckplatz: Wochenmarkt Di+Fr, 11-18 Uhr, aber anscheinend nur im "Rondellbereich" und somit keine Beeinträchtigung für Radfahrer	CS 7891,15417 7989,15412 8024,15401
-#: section ^^^
+#: ignore ^^^
 (Kanzlerweg - Schreiberring): Privatweg	CS 8839,8168 8861,8242
 (Kanzlerweg - Schreiberring): Tordurchfahrt	CP2; 8861,8242 8839,8168
 (Rumeyplan - Kanzlerweg): Privatweg	CS 8895,7797 8839,7904
@@ -1830,7 +1830,7 @@ ausgeschildert als Weydemeyerstr. 3-18	CP2; 11805,12760 11818,12785
 Fromet-und-Moses-Mendelssohn-Platz: nicht ausgeschildert	CS 9797,10771 9733,10827 9682,10836 9666,10848
 Hauptstr., linker Gehweg: an der Ampel Hauptstr./Hildegard-Marcusson-Str. auf die linke Seite wechseln	CP2; 16004,10204 16018,10212
 (Otisstr. - Wackerweg): Privatgelände	CP2; 3680,18913 3753,18889
-#: section: ignorieren
+#: ignore
 Torstr./Gartenstr.: Überquerungshilfe existiert	CS 9668,13629
 ausgeschildert Kolonie Grünlandtal	CP2; 3604,20603 3852,20415
 Friedrichsgracht: nicht ausgeschildert	CP2; 10109,12238 10207,12055

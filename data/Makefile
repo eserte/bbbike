@@ -662,7 +662,7 @@ vorfahrt:	vorfahrt-orig
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat ${f}-orig | \
-	    ${GREPSTRASSEN} -v -sectionrx "ignorieren" | \
+	    ${GREPSTRASSEN} -v -directive 'ignore=' | \
 	    $(CONVERT2HAFAS) -basefile ${f}-orig - | \
 	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 	        ${ALL_STREETS} - > $@~
@@ -674,7 +674,7 @@ ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 comments_cyclepath: comments_cyclepath-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat comments_cyclepath-orig | \
-	    ${GREPSTRASSEN} -v -sectionrx "ignorieren" | \
+	    ${GREPSTRASSEN} -v -directive 'ignore=' | \
 	    $(CONVERT2HAFAS) -basefile comments_cyclepath-orig - | \
 	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 	        ${ALL_STREETS} - | \
@@ -691,7 +691,7 @@ comments_cyclepath: comments_cyclepath-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/g
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat ${f}-orig | \
-	    ${GREPSTRASSEN} -v -sectionrx "ignorieren" | \
+	    ${GREPSTRASSEN} -v -directive 'ignore=' | \
 	    $(CONVERT_ORIG) -keep-directive url -keep-directive alias -special as_of - | \
 	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 	        ${ALL_STREETS} - > $@~
@@ -816,7 +816,7 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 		Makefile
 	-@$(WRITEABLE) $@
 	cat fragezeichen-orig |\
-	        ${GREPSTRASSEN} -v -sectionrx "ignorieren" |\
+	        ${GREPSTRASSEN} -v -directive 'ignore=' |\
 	        ${GREPSTRASSEN} -special filternextcheck |\
 	    ${CONVERT_ORIG} > $@~
 	@echo "# added from ampeln-orig" >> $@~

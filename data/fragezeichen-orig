@@ -6,7 +6,7 @@
 #
 #  PROJEKTIERTE RADSTREIFEN
 #
-#: section ignorieren vvv
+#: ignore vvv
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #
 # XXX Eventuell könnte ich diesen Abschnitt auflösen und in die
@@ -335,13 +335,13 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: ^^^
 # 
 #: section ^^^
-#: section ^^^
+#: ignore ^^^
 #
 ######################################################################
 #
 #  STRASSEN IN BAU UND PLANUNG (PRIVAT)
 #
-#: section ignorieren vvv
+#: ignore vvv
 #: section Straßen in Bau und Planung vvv
 # 
 # In diesem Abschnitt kommen geplante und sich in Bau befindliche
@@ -1010,13 +1010,13 @@ Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,163
 #: next_check: 2010-10-30
 Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-17188 17398,-17485
 #: section ^^^
-#: section ^^^
+#: ignore ^^^
 #
 ######################################################################
 #
 #  PRIVATE FRAGEZEICHEN
 #
-#: section ignorieren vvv
+#: ignore vvv
 # In diesem Abschnitt kommen Straßen rein, die erst einmal nicht in
 # die Datenbank aufgenommen werden sollen und somit nicht öffentlich sind.
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
@@ -1575,14 +1575,14 @@ Route Lychen - Templin: wie sieht der Routenverlauf aus? Qualität?	? 11457,84997
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15505,6342 15516,6357
 # 
-#: section ^^^
+#: ignore ^^^
 #
 ######################################################################
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
 #
 #: section isolated entries vvv
-#: section ignorieren vvv
+#: ignore vvv
 # 
 #: by: anonymous:
 Fischerstieg (Bindow): guter Asphalt, Q0	? 34954,-14689 34843,-14689 34717,-14742 34639,-14721
@@ -1769,7 +1769,7 @@ Am Rodelberg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2013
 #: note: Privatstraße
 Schlotterkammsteig: genaue Lage? Qualität?	? 16420,-528 16465,-684
-#: section ^^^
+#: ignore ^^^
 #: section ^^^
 #
 ######################################################################
