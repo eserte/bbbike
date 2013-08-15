@@ -144,9 +144,24 @@ If a line begines with a hash sign followed by a color (<code>#:</code>), then
 the line is treated as a directive. There are global directives, line
 directives and block directives. Global directives should be specified
 at top of the file before the first data line and should be separated
-by the data lines with an empty directive line. Line directives are
-valid for the next line only. Block directives are valid for the
-specified block. Block directives are markes as such:
+by the data lines with an empty directive line. For example:
+</p>
+<pre class="POD_VERBATIM">
+ #: encoding: utf-8
+ #: map: polar
+ #:
+ ... data lines
+</pre>
+<p class="POD_TEXT">
+Line directives are valid for the next line only:
+</p>
+<pre class="POD_VERBATIM">
+ #: add_fragezeichen: Is this really correct?
+ Main street: bad cobblestone	Q3 13.5,52.5 13.4,52.5
+</pre>
+<p class="POD_TEXT">
+Block directives are valid for the specified block. Block directives
+are markes as such:
 </p>
 <pre class="POD_VERBATIM">
  #: directive_name directive_arguments ... vvv
@@ -154,15 +169,26 @@ specified block. Block directives are markes as such:
  #: directive_name ^^^
 </pre>
 <p class="POD_TEXT">
-XXX make directive_name before ^^^ optional? XXX
-</p>
-<p class="POD_TEXT">
-The <code>v</code> and <code>^</code> markers could be repeated an indefinite number of
+The <code>v</code> and <code>^</code> markers can be repeated an indefinite number of
 times, but at least three times.
 </p>
 <p class="POD_TEXT">
-An colon (:) after the directive_name is always optional.
+Directives have always at least the directive name (the first word
+token in the line) and zero, one or more directive values:
 </p>
+<pre class="POD_VERBATIM">
+ #: directive_name
+ #: directive_name: val1
+ #: directive_name: val1 val2
+</pre>
+<p class="POD_TEXT">
+The colon (:) after the directive name is optional. The following is
+equivalent:
+</p>
+<pre class="POD_VERBATIM">
+ #: encoding utf-8
+ #: encoding: utf-8
+</pre>
 <h4 class="POD_HEAD3"><a name="Global_directives">Global directives</a></h4>
 <dl class="POD_LIST">
 <dt class="POD_ITEM"><a name="type_bbd_type"><code>type: <i>bbd_type</i></code></a>
@@ -188,7 +214,8 @@ if a modern version controlling system like git is used.
 <dt class="POD_ITEM"><a name="encoding_encoding_na"><code>encoding: <i>encoding name</i></code></a>
 <dd>
 Treat this file as encoded in the given encoding (all names accepted
-by Perl/Encode may be used). If not set, then iso-8859-1 is assumed.
+by Perl&#39;s <a class="POD_LINK" href="http://search.cpan.org/perldoc?Encode">Encode</a> may be used, see <a class="POD_LINK" href="http://search.cpan.org/perldoc?Encode%3A%3ASupported">Encode::Supported</a>). If not
+set, then iso-8859-1 is assumed.
 <p class="POD_TEXT">
 The degree of support for encodings in bbbike.cgi and the Perl/Tk
 implementation differs. iso-8859-1 is supported best. utf-8 is
@@ -389,8 +416,8 @@ date, or a combination of all. <code>according_to:</code> is an alias for
 <dt class="POD_ITEM"><a name="corrected_by_source_"><code>corrected_by: <i>source</i> <i>previous -&gt; current</i> </code></a>
 <dd>
 Used after a <code>by</code> directive for a correction. It is advisable to put
-the previous a small note of the previous and current entry after the
-<i>source</i>.
+the previous a small note of the previous and maybe also the current
+entry after the <i>source</i>.
 <dt class="POD_ITEM"><a name="confirmed_by_source"><code>confirmed_by: <i>source</i></code></a>
 <dd>
 Denotes that the information in the next block or line was confirmed
@@ -402,10 +429,17 @@ Same as &quot;by:&quot; for unverified data.
 back to the information provider.
 <dt class="POD_ITEM"><a name="temporary_"><code>temporary:</code></a>
 <dd>
-The next block or line is just temporary. Typically the date
-information is included in the Name field of the data line, preferred
-in a ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a
-starting and an end date).
+The next block or line is just a temporary feature. Typically this
+directive is accompanied by a <code>next_check</code> directive to specify the
+end date, so systems like &quot;fragezeichen-nextcheck&quot; can include this
+feature in their lists.
+<p class="POD_TEXT">
+Earlier versions of this document suggested to put the date
+information into the Name field of the data line, preferred in a
+ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a starting
+and an end date). This may still be done additionally to the
+<code>next_check</code> directive, but is not evaluated by automatic scripts.
+</p>
 <dt class="POD_ITEM"><a name="XXX_why"><code>XXX: <i>why</i></code></a>
 <dd>
 The next block or line is unsure or unclear information, and usually
@@ -540,6 +574,10 @@ The difference between <code>last_checked</code> and <code>as_of</code> is subtl
 expected that <code>last_checked</code>-tagged entries should be actively
 checked for changes, and <code>as_of</code>-tagged entries only passively.
 </p>
+<p class="POD_TEXT">
+Currently <code>as_of</code> directives appear in <code>data/comments_ferry-orig</code>
+for ferry timetable and fare information.
+</p>
 <dt class="POD_ITEM"><a name="url_string"><code>url: <i>string</i></code></a>
 <dd>
 An (official) URL referring to more information.
@@ -553,7 +591,7 @@ May be used to mark a feature as complete or incomplete (e.g. cycle
 routes).
 <dt class="POD_ITEM"><a name="priority_string"><code>priority: <i>string</i></code></a>
 <dd>
-A priority for checks. The priority string should something between
+A priority for checks. The priority string should be something between
 <code>#A</code> (highest) and <code>#C</code> (lowest).
 </dl>
 <h4 class="POD_HEAD3"><a name="Obsolete_and_to_be_d">Obsolete and to-be-decided directives</a></h4>
@@ -1090,6 +1128,7 @@ line, separated by a &quot;---&quot;. For example:
 <h2 class="POD_HEAD1"><a name="EXAMPLES">EXAMPLES</a></h2>
 <pre class="POD_VERBATIM">
     #: map: polar
+    #:
     # a comment
     Dudenstr.	H 13.3857982559056,52.4850047136888 13.3822671967909,52.4849893166144 13.3765591649622,52.4849797043717 13.3721313913775,52.4849830887141 13.3708964575072,52.4850055627098
     Viktoriapark	F:P 13.3770529147335,52.4891642850551 13.376956820767,52.4876188211697 13.3778829456197,52.4875997186591
@@ -1151,4 +1190,3 @@ Slaven Rezic &lt;slaven@rezic.de&gt;
 
 </body>
 </html>
-

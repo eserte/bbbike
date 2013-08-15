@@ -92,20 +92,40 @@ If a line begines with a hash sign followed by a color (C<#:>), then
 the line is treated as a directive. There are global directives, line
 directives and block directives. Global directives should be specified
 at top of the file before the first data line and should be separated
-by the data lines with an empty directive line. Line directives are
-valid for the next line only. Block directives are valid for the
-specified block. Block directives are markes as such:
+by the data lines with an empty directive line. For example:
+
+ #: encoding: utf-8
+ #: map: polar
+ #:
+ ... data lines
+
+Line directives are valid for the next line only:
+
+ #: add_fragezeichen: Is this really correct?
+ Main street: bad cobblestone	Q3 13.5,52.5 13.4,52.5
+
+Block directives are valid for the specified block. Block directives
+are markes as such:
 
  #: directive_name directive_arguments ... vvv
  ... data lines
  #: directive_name ^^^
 
-XXX make directive_name before ^^^ optional? XXX
-
-The C<v> and C<^> markers could be repeated an indefinite number of
+The C<v> and C<^> markers can be repeated an indefinite number of
 times, but at least three times.
 
-An colon (:) after the directive_name is always optional.
+Directives have always at least the directive name (the first word
+token in the line) and zero, one or more directive values:
+
+ #: directive_name
+ #: directive_name: val1
+ #: directive_name: val1 val2
+
+The colon (:) after the directive name is optional. The following is
+equivalent:
+
+ #: encoding utf-8
+ #: encoding: utf-8
 
 =head3 Global directives
 
@@ -138,7 +158,8 @@ if a modern version controlling system like git is used.
 =item C<encoding: I<encoding name>>
 
 Treat this file as encoded in the given encoding (all names accepted
-by Perl/Encode may be used). If not set, then iso-8859-1 is assumed.
+by Perl's L<Encode> may be used, see L<Encode::Supported>). If not
+set, then iso-8859-1 is assumed.
 
 The degree of support for encodings in bbbike.cgi and the Perl/Tk
 implementation differs. iso-8859-1 is supported best. utf-8 is
@@ -359,8 +380,8 @@ C<by:>.
 =item C<corrected_by: I<source> I<< previous -> current >> >
 
 Used after a C<by> directive for a correction. It is advisable to put
-the previous a small note of the previous and current entry after the
-I<source>.
+the previous a small note of the previous and maybe also the current
+entry after the I<source>.
 
 =item C<confirmed_by: I<source>>
 
@@ -375,10 +396,16 @@ back to the information provider.
 
 =item C<temporary:>
 
-The next block or line is just temporary. Typically the date
-information is included in the Name field of the data line, preferred
-in a ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a
-starting and an end date).
+The next block or line is just a temporary feature. Typically this
+directive is accompanied by a C<next_check> directive to specify the
+end date, so systems like "fragezeichen-nextcheck" can include this
+feature in their lists.
+
+Earlier versions of this document suggested to put the date
+information into the Name field of the data line, preferred in a
+ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a starting
+and an end date). This may still be done additionally to the
+C<next_check> directive, but is not evaluated by automatic scripts.
 
 =item C<XXX: I<why>>
 
@@ -526,6 +553,9 @@ The difference between C<last_checked> and C<as_of> is subtle; it is
 expected that C<last_checked>-tagged entries should be actively
 checked for changes, and C<as_of>-tagged entries only passively.
 
+Currently C<as_of> directives appear in F<data/comments_ferry-orig>
+for ferry timetable and fare information.
+
 =item C<url: I<string>>
 
 An (official) URL referring to more information.
@@ -542,7 +572,7 @@ routes).
 
 =item C<priority: I<string>>
 
-A priority for checks. The priority string should something between
+A priority for checks. The priority string should be something between
 C<#A> (highest) and C<#C> (lowest).
 
 =back
@@ -1210,6 +1240,7 @@ line, separated by a "---". For example:
 =head1 EXAMPLES
 
     #: map: polar
+    #:
     # a comment
     Dudenstr.	H 13.3857982559056,52.4850047136888 13.3822671967909,52.4849893166144 13.3765591649622,52.4849797043717 13.3721313913775,52.4849830887141 13.3708964575072,52.4850055627098
     Viktoriapark	F:P 13.3770529147335,52.4891642850551 13.376956820767,52.4876188211697 13.3778829456197,52.4875997186591
