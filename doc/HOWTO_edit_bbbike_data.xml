@@ -910,9 +910,9 @@
     <listitem><para>Alle Einträge in
     <filename>fragezeichen-orig</filename>, die in Sections
 
-    <programlisting>        #: section ignorieren vvv
+    <programlisting>        #: ignore vvv
         ...
-        #: section ^^^</programlisting>
+        #: ignore ^^^</programlisting>
 
     stehen, werden nicht in die öffentliche
     <filename>fragezeichen</filename>-Datei übernommen. </para></listitem>
