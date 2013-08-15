@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.16 2009/01/10 21:20:45 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -193,8 +192,8 @@ EOF
 
     my $symbol_to_img;
     if ($use_symcat) {
-	require BBBikeGPS;
-	$symbol_to_img = BBBikeGPS::get_symbol_to_img();
+	require GPS::Symbols::Garmin;
+	$symbol_to_img = GPS::Symbols::Garmin::get_cached_symbol_to_img();
 	if (!$symbol_to_img || !%$symbol_to_img) {
 	    warn "WARN: the symbol to image mapping is empty!\n";
 	}
