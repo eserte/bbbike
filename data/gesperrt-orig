@@ -79,8 +79,8 @@ Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19480,1
 Knoten Märkische/Landsberger Allee	1 19852,15201 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
 Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19605,15073
-Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19675,15240 19582,15221
-Knoten Märkische/Landsberger Allee	1 19480,15094 19582,15221
+Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
+Knoten Märkische/Landsberger Allee	1 19480,15094 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5049,14675 5233,14753 5440,14840
@@ -1188,6 +1188,8 @@ B96: Kraftfahrzeugstraße	2 13772,-10251 13878,-9818 14037,-9386 13972,-9073 1388
 Jürgen-Schumann-Allee	1 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4062 19158,-4083
 Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
+Mehrow - Trappenfelde	1 24743,18606 24709,18578
+Mehrow - Trappenfelde	1 24696,18606 24743,18606
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -1438,7 +1440,7 @@ Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18165,7371
 Treskowallee: Straßenbahntrasse	3nocross 18406,7760 18570,8025 18657,8163
 Treskowallee: Straßenbahntrasse	3nocross 18867,9464 18834,9256 18809,9133
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5467,9866
-Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
+Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9207,5185 9196,5272 9188,5333 9179,5398 9161,5535
@@ -1930,6 +1932,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+zwei Drängelgitter an der Straßenbahntrasse	BNP:5::trailer=15 21860,18718
 Drängelgitter	BNP:3::trailer=10 20703,15755
 Drängelgitter	BNP:3::trailer=10 20714,15749
 #: note: relativ gut passierbar
@@ -2003,6 +2006,7 @@ Schranke	BNP:5::trailer=10 10919,9804
 Drängelgitter, kann umfahren werden	BNP:3::trailer=10 14969,10138
 #: note: öfters mal offen? (mindestens einmal im Herbst 2012 geschlossen, am 2012-12-18 offen, am 2013-05-08 geschlossen, am 2013-06-07 offen)
 Schwingtor	BNP:3::trailer=10 14146,12921
+#: note: am 2013-08-15 war das Tor offen
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schranke	BNP:3::trailer=10 8622,13042
 Drängelgitter	BNP:3::trailer=10 18788,27989
@@ -2370,6 +2374,8 @@ Schranke (lichte Breite ca. 120cm)	BNP:2::trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3::trailer=10 15179,3901
 Tor	BNP:5 26888,13976
 Drängelgitter	BNP:3::trailer=10 49739,-90894
+weites Drängelgitter/Schranke	BNP:1::trailer=3 23402,18067
+weites Drängelgitter/Schranke	BNP:1::trailer=3 24523,18542
 #
 ############################################################################
 #

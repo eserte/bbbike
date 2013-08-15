@@ -65,8 +65,8 @@ Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19480,1
 Knoten Märkische/Landsberger Allee	1 19852,15201 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
 Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19605,15073
-Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19675,15240 19582,15221
-Knoten Märkische/Landsberger Allee	1 19480,15094 19582,15221
+Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
+Knoten Märkische/Landsberger Allee	1 19480,15094 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5049,14675 5233,14753 5440,14840
@@ -895,6 +895,8 @@ B96: Kraftfahrzeugstraße	2 13772,-10251 13878,-9818 14037,-9386 13972,-9073 1388
 Jürgen-Schumann-Allee	1 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4062 19158,-4083
 Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
+Mehrow - Trappenfelde	1 24743,18606 24709,18578
+Mehrow - Trappenfelde	1 24696,18606 24743,18606
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -1418,9 +1420,11 @@ Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndi
 Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5541,9923
 Pariser Str. -> Bundesallee: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5463,9961
 Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5463,9961 5464,9914 5541,9923
-Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19582,15221 19506,15002 19466,14910 19422,14793
-Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19506,15002 19582,15221 19480,15094
-Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19681,15405 19582,15221 19675,15240
+Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19506,15002 19466,14910 19422,14793
+Märkische Allee -> Parkpl. Le Prom: Linksabbiegen nicht möglich	3::igndisp 19664,15366 19619,15262 19784,15191
+Parkpl. Le Prom -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19784,15191 19619,15262 19604,15227
+Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19577,15166 19604,15227 19480,15094
+Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19604,15227 19577,15166 19654,15219
 Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19551,14961 19506,15002 19466,14910
 Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19408,15007 19466,14910 19506,15002
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9865,10227 9858,10199 9837,10117
@@ -2223,6 +2227,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+zwei Drängelgitter an der Straßenbahntrasse	BNP:5:-117:trailer=15 21860,18718
 Drängelgitter	BNP:3:-73:trailer=10 20703,15755
 Drängelgitter	BNP:3:-61:trailer=10 20714,15749
 2x Drängelgitter	BNP:4:-63:trailer=15 21305,16705
@@ -2552,6 +2557,8 @@ Schranke (lichte Breite ca. 120cm)	BNP:2:-53:trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3:-45:trailer=10 15179,3901
 Tor	BNP:5:-57 26888,13976
 Drängelgitter	BNP:3:64:trailer=10 49739,-90894
+weites Drängelgitter/Schranke	BNP:1:-124:trailer=3 23402,18067
+weites Drängelgitter/Schranke	BNP:1:-133:trailer=3 24523,18542
 Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
 Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -3441,13270 -3462,13256 -3467,13240 -3526,13196
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9852,12409

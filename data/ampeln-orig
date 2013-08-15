@@ -1728,8 +1728,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13261,6456
 	X 13294,6386
 	X 8715,12956
+#: note: Anforderungsampel vvv
+#: XXX_prog: nur auf der südlichen Fahrbahn relevant vvv
 	X 19985,11727
 	X 20114,11719
+#: XXX_prog ^^^
+#: note ^^^
 	X 10849,17848
 	F 5618,14981
 	F 17816,5733
@@ -2164,8 +2168,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 7182,14998
 #: XXX_prog: nicht relevant für Radwege
 	F 18626,11742
+#: XXX_prog: auch relevant für Radfahrer auf der Straße Alt-Friedrichsfelde Richtung Westen
 	F 20025,11747
-#: XXX_prog: Ampel nur in Richtung Westen
+#: XXX_prog: auch relevant für Radfahrer auf der Straße Alt-Friedrichsfelde Richtung Westen
 	F 19785,11760
 	X 21324,3691
 	X -7484,13770
@@ -2615,6 +2620,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -9942,21
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X 21821,19021
+	X 21975,19068
+	X 22418,19268
 	F 17647,-1890
 	F 17452,-2041
 	X 17586,-1937
