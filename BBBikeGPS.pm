@@ -624,6 +624,8 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my $last_accurate_wpt;
     my $is_new_chunk;
     my $vehicle;
+    my $last_vehicle;
+    my @pos2vehicle;
     my $brand;
     my %brand; # per vehicle
     foreach my $chunk (@{ $gps->Chunks }) {
@@ -717,6 +719,13 @@ sub BBBikeGPS::do_draw_gpsman_data {
 			    $path_graph_elem->accuracy($max_acc);
 			    push @add_wpt_prop, $path_graph_elem;
 
+			    if ($show_track_graph && defined $vehicle) {
+				if (!defined $last_vehicle || $vehicle ne $last_vehicle) {
+				    push @pos2vehicle, {wholedist => $whole_dist, wholetime => $whole_time, vehicle => $vehicle};
+				    $last_vehicle = $vehicle;
+				}
+			    }
+
 			    my $s_cat = "#000000";
 			    if ($is_route) {
 				$s_cat = 'Rte';
@@ -777,6 +786,11 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	}
     }
 
+    if (@pos2vehicle) {
+	# finalize; vehicle here not necessary
+	push @pos2vehicle, {wholedist => $whole_dist, wholetime => $whole_time};
+    }
+
     if ($s_speed) {
 	my $msg = "";
 	$msg .= "Total distance = " . BBBikeUtil::m2km($whole_dist, 2) . "\n";
@@ -820,6 +834,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
     BBBikeGPS::draw_track_graph({-top => $top,
 				 -wpt => \@add_wpt_prop,
 				 -accuracylevel => $accuracy_level,
+				 -pos2vehicle => \@pos2vehicle,
 				})
 	    if $show_track_graph;
 
@@ -870,6 +885,7 @@ sub BBBikeGPS::draw_track_graph {
     my $smooth_ref = $o->{-smoothref};
     my $accuracy_level = $o->{-accuracylevel};
     my $against = $o->{-against}; # XXX only to be used if also -type is set!
+    my $pos2vehicle = $o->{-pos2vehicle};
 
     my %unit = (speed => "km/h",
 		grade => "%",
@@ -1366,6 +1382,33 @@ sub BBBikeGPS::draw_track_graph {
 	}
     }
 
+    {
+	# vehicle boxes
+	if ($pos2vehicle && @$pos2vehicle) {
+	    require GPS::GpsmanData::VehicleInfo;
+	    for my $type (@types) {
+		my $whole_what = $whole_what{$type};
+		for my $i (1 .. $#$pos2vehicle) {
+		    my $def0 = $pos2vehicle->[$i-1];
+		    my $def1 = $pos2vehicle->[$i];
+		    my $whole0 = $def0->{$whole_what};
+		    my $whole1 = $def1->{$whole_what};
+		    if (defined $whole0 && defined $whole1) {
+			my $vehicle = $def0->{vehicle};
+			my $color = GPS::GpsmanData::VehicleInfo::get_vehicle_color($vehicle);
+			if (defined $color) {
+			    $color = BBBikeGPS::_make_lighter_color($color);
+			    my $x0 = $c_x{$type} + ($c_w{$type}/$max_x{$type})*$whole0;
+			    my $x1 = $c_x{$type} + ($c_w{$type}/$max_x{$type})*$whole1;
+			    $graph_c{$type}->createRectangle($x0, $def_c_top, $x1, $def_c_top+$c_h{$type}, -fill => $color, -outline => $color, -tags => 'vehiclebox');
+			    $graph_c{$type}->lower('vehiclebox');
+			}
+		    }
+		}
+	    }
+	}
+    }
+
     # bind <1> to mark point
     foreach (@types) {
 	my $type = $_;
@@ -1378,6 +1421,26 @@ sub BBBikeGPS::draw_track_graph {
 				  -clever_center => 1);
 	     });
     }
+}
+
+# XXX Maybe should be moved to a utility module? Or use a CPAN module?
+sub BBBikeGPS::_make_lighter_color {
+    my $color = shift; # expected an X11 color
+    my $tk = (Tk::MainWindow::Existing())[0]; # pick a random Tk window
+    my($r,$g,$b) = $tk->rgb($color);
+    if (eval { require Imager::Color; 1 }) {
+	my $ic = Imager::Color->new($r,$g,$b);
+	my($h,$s,$v) = $ic->hsv;
+	$s = 0.2*$v; # make more 'greyish', # map [0 -> 0; 0 -> 0.2]
+	$v = 0.2*$v+0.8; # make brighter: # map [0 -> 0.8; 1 -> 1]
+	$ic = Imager::Color->new(hsv=>[$h,$s,$v]);
+	($r,$g,$b) = $ic->rgba;
+    } else {
+	# Simple fallback
+	my $by = 32*4;
+	($r,$g,$b) = map { ( $_ + $by > 255) ? 255 : $_ + $by  } ($r, $g, $b);
+    }
+    sprintf '#%02x%02x%02x', $r, $g, $b;
 }
 
 package BBBikeGPS;
