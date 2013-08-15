@@ -16787,6 +16787,12 @@ sub show_zoomrect {
 # - when the least visible stipple (gray12) is shown, then toggle the color (red -> blue -> red)
 ### AutoLoad Sub
 sub show_mark {
+    if ($steady_mark) {
+	$c->itemconfigure('show', -fill => 'red', -stipple => undef);
+	# use normal stack order here, no raise()
+	return; # kurzer prozess
+    }
+
     my($i, %args) = @_;
     $i = 0 if !defined $i;
     if ($i == 0 and $showmark_after) {
@@ -16815,12 +16821,11 @@ sub show_mark {
 			  -stipple => $stipple[$stipple_i],
   			  -fill => $color,
 			 );
-	unless ($steady_mark) {
-	    $showmark_after = $c->after(150, sub { show_mark($i+1, %args) });
-	} else {
-	    $c->itemconfigure('show',
-			      -stipple => undef);
-	}
+	# Don't use normal stack order here - the mark blinks, so does
+	# not hide any map elements permanently, and after a few
+	# blinks it vanishes anyway.
+	$c->raise('show');
+	$showmark_after = $c->after(150, sub { show_mark($i+1, %args) });
     }
 }
 
