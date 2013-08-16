@@ -1426,10 +1426,9 @@ sub BBBikeGPS::draw_track_graph {
 # XXX Maybe should be moved to a utility module? Or use a CPAN module?
 sub BBBikeGPS::_make_lighter_color {
     my $color = shift; # expected an X11 color
-    my $tk = (Tk::MainWindow::Existing())[0]; # pick a random Tk window
-    my($r,$g,$b) = $tk->rgb($color);
+    my($r,$g,$b);
     if (eval { require Imager::Color; 1 }) {
-	my $ic = Imager::Color->new($r,$g,$b);
+	my $ic = Imager::Color->new($color);
 	my($h,$s,$v) = $ic->hsv;
 	$s = 0.2*$v; # make more 'greyish', # map [0 -> 0; 0 -> 0.2]
 	$v = 0.2*$v+0.8; # make brighter: # map [0 -> 0.8; 1 -> 1]
@@ -1437,6 +1436,8 @@ sub BBBikeGPS::_make_lighter_color {
 	($r,$g,$b) = $ic->rgba;
     } else {
 	# Simple fallback
+	my $tk = (Tk::MainWindow::Existing())[0]; # pick a random Tk window
+	my($r,$g,$b) = $tk->rgb($color);
 	my $by = 32*4;
 	($r,$g,$b) = map { ( $_ + $by > 255) ? 255 : $_ + $by  } ($r, $g, $b);
     }
