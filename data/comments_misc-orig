@@ -754,9 +754,9 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 13958,8106
 	culdesac_pseudo 15384,15884
 	culdesac_pseudo 15313,15848
-	culdesac 16471,19825
+	culdesac 16472,19818
 	culdesac 16550,19829
-	culdesac 16633,20174
+	culdesac_pseudo 16633,20174
 	culdesac_pseudo 16384,19678
 	culdesac_pseudo 16161,18687
 	culdesac 24938,13811
@@ -1166,6 +1166,11 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac_pseudo 13733,18161
 	culdesac_pseudo 13751,18180
 	culdesac_pseudo 12911,15865
+#: note: man kann via Treppe zur Landsberger Allee
+	culdesac_pseudo 18938,14768
+	culdesac_pseudo 20693,15144
+	culdesac 22568,17956
+	culdesac 22670,17916
 #: ignore ^^^
 ######################################################################
 # busroute

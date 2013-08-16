@@ -2338,7 +2338,7 @@ EOF
        text  => 'B 158; (Freienwalder Chaussee); OD Blumberg, zw. Kietz u. Elisenauer Ch. Deckenerneuerung Vollsperrung 28.07.2005-02.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 24735,22556 24951,22681
+userdel	q4 24709,22522 24951,22681
 EOF
      },
      { from  => 1130018400, # 2005-10-23 00:00
@@ -7899,7 +7899,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005213',
        data  => <<EOF,
-userdel	2::inwork 12721,15807 12642,15668 12559,15524
+userdel	2::inwork 12721,15807 12642,15668 12556,15518
 EOF
      },
      { from  => 1177103024, # 2007-04-20 23:03
@@ -8591,7 +8591,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005738',
        data  => <<EOF,
-userdel	2::inwork 12721,15807 12642,15668 12559,15524 12466,15359 12421,15278
+userdel	2::inwork 12721,15807 12642,15668 12556,15518 12466,15359 12421,15278
 EOF
      },
      { from  => $isodate2epoch->("2013-08-08 00:00:00"), # 1 Tag Vorlauf
@@ -12040,7 +12040,7 @@ EOF
        text  => 'B 002 zw. Bernau und Stadtgrenze Berlin Deckenerneuerung, Radwegbau Richtungsverkehr 07.07.2008-08.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 19658,24589 19602,24153 19565,24028 19393,23690
+userdel	1::inwork 19658,24589 19627,24445 19593,24154 19565,24028 19393,23690
 EOF
      },
      { from  => 1216321760, # 
@@ -13009,7 +13009,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_010519',
        data  => <<EOF,
-userdel	q4::inwork 12463,15774 12384,15618 12299,15463
+userdel	q4::inwork 12463,15774 12375,15615 12299,15463
 EOF
      },
      { from  => 1230474690, # 2008-12-28 15:31
@@ -13740,7 +13740,7 @@ EOF
        text  => 'B 158 Blumberg - Werneuchen zw. Blumberg u. Seefeld Deckenerneuerung Vollsperrung 14.04.2009-13.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28531,24375 28246,24272 27608,23776 27283,23503 26936,23104 26764,23083 25641,22864 25295,22655 24951,22681 24735,22556
+userdel	2::inwork 28531,24375 28246,24272 27608,23776 27283,23503 26936,23104 26764,23083 25641,22864 25295,22655 24951,22681 24709,22522
 EOF
      },
      { from  => 1239919200, # 2009-04-17 00:00
@@ -17495,7 +17495,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LSO-SG33-E10030',
        data  => <<EOF,
-userdel	2::inwork 25170,18422 25654,17351
+userdel	2::inwork 25232,18413 25654,17351
 EOF
      },
      { from  => 1274300034, # 2010-05-19 22:13
@@ -19304,7 +19304,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_107899',
        data  => <<EOF,
-userdel	q4::inwork 11796,18482 11698,18446
+userdel	q4::inwork 11796,18482 11696,18454
 EOF
      },
      { from  => 1308592800, # 2011-06-20 20:00
@@ -19628,7 +19628,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_107049',
        data  => <<EOF,
-userdel	q4::inwork 16104,19165 15647,19165
+userdel	q4::inwork 16104,19165 16011,19158 15642,19179
 EOF
      },
      { from  => 1332272539, # 2012-03-20 20:42

@@ -76,9 +76,9 @@ Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19480,15094 19563,15113 19694,15141 19852,15201
-Knoten Märkische/Landsberger Allee	1 19852,15201 19605,15073 19408,15007 19350,14997 19156,14953 19013,14905
+Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
-Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19605,15073
+Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
 Knoten Märkische/Landsberger Allee	1 19480,15094 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
@@ -464,7 +464,7 @@ Kastanienallee	1 10838,14962 10881,15047
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
 Spindlersfelder Str.	2 21324,3691 21215,3919 21143,4150 21130,4239 21080,4702 21075,4769 21065,4957
 Rathausstr.:	1 15651,12214 15628,12246 15576,12315 15537,12367
-Alt-Marzahn	1 21112,15396 21042,15428 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
+Alt-Marzahn	1 21112,15396 21048,15424 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
 #: confirmed_by: srt vvv
 Bonifaziusstr.	1 2635,21559 2699,21401 2714,21369 2728,21336 2760,21269 2840,21141
 Bonifaziusstr.	1 2819,21128 2737,21256 2691,21360 2621,21538
@@ -1380,8 +1380,7 @@ Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21537,14932
 Blumberger Damm: Mittelstreifen	3nocross 21709,15808 21682,15673 21675,15636 21647,15496
-#: note: Luftbild
-Allee der Kosmonauten: Straßenbahntrasse	3nocross 21232,15465 21187,15350 21163,15289
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 21242,15529 21228,15449 21187,15350 21163,15289
 Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
 #: by: stefan: (sw-...)
 Müggelheimer Str.: Straßenbahntrasse	3nocross 22674,4309 22812,4227 22888,4184 22965,4124
@@ -1482,8 +1481,8 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3nocross
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3nocross 11776,15060 11801,15132 11828,15210
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross 11709,14856 11681,14759 11662,14695
 #: XXX_prog: eine Überquerungsmöglichkeit existiert 60m weiter südlich
-Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12071,16130 12030,15968 11997,15834
-Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11997,15834
+Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12071,16130 12030,15968 11995,15827
+Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11995,15827
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11435,14023 11468,14121 11476,14142
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11709,14856 11609,14881 11535,14900
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12128,14640 12025,14695
@@ -1550,7 +1549,7 @@ Mühlenstr.: Mittelstreifen	3nocross 12908,11058 12848,11093 12793,11132 12736,11
 # REMOVED (jetzt mit 3nocross) --- Klingelhöferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
 # REMOVED (jetzt mit 3nocross) --- Klingelhöferstr.: Mittelstreifen	3 7103,11247 6851,11346 6880,11110
 # REMOVED (jetzt mit 3nocross) --- Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
-Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21235,15641
+Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21239,15633
 Adlergestell: Straßenbahntrasse	3nocross 26871,-2500 26698,-2322 26286,-1901
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21623,15357 21647,15496
 #: note: Luftbild:
@@ -1932,6 +1931,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 22004,17470
 zwei Drängelgitter an der Straßenbahntrasse	BNP:5::trailer=15 21860,18718
 Drängelgitter	BNP:3::trailer=10 20703,15755
 Drängelgitter	BNP:3::trailer=10 20714,15749
@@ -2374,8 +2374,10 @@ Schranke (lichte Breite ca. 120cm)	BNP:2::trailer=8 14709,4307
 Schranke (lichte Breite ca. 100cm)	BNP:3::trailer=10 15179,3901
 Tor	BNP:5 26888,13976
 Drängelgitter	BNP:3::trailer=10 49739,-90894
-weites Drängelgitter/Schranke	BNP:1::trailer=3 23402,18067
-weites Drängelgitter/Schranke	BNP:1::trailer=3 24523,18542
+versetzte Schranke, manchmal offen	BNP:1::trailer=3 23402,18067
+versetzte Schranke, manchmal offen	BNP:1::trailer=3 24700,18981
+versetzte Schranke, manchmal offen	BNP:1::trailer=3 24523,18542
+versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #
 ############################################################################
 #
@@ -2572,11 +2574,12 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2013-08-14 vvv
+#: last_checked: 2013-08-16 vvv
 #: check_frequency: 60d vvv
 #: XXX mit den Bauarbeiten "An den Eldenaer Höfen" in strassen-orig koordinieren vvv
 An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14449,12833 14594,12800
 #: XXX dieser Abschnitt wird wahrscheinlich offiziell eine Einbahnstraße, offen Richtung Westen sein
+#: XXX mittlerweile manchmal (oder immer?) passierbar
 Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
 #: XXX ^^^
 #: check_frequency ^^^
@@ -2737,6 +2740,7 @@ Landsberger Allee	3nocross 12382,13097 12585,13118 12685,13135
 Landsberger Allee: Straßenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701
 # REMOVED (mitlerweile (ca. 2012) existiert für Fußgänger und Autofahrer eine Kreuzungsmöglichkeit) --- #: by: jörg (schalkau): --- #: confirmed_by: srt --- Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
 Landsberger Allee	3nocross 21475,15705 21584,15753 21709,15808
+Landsberger Allee	3nocross 19852,15201 19987,15280 20260,15434
 Kalkhorster Weg (10 Stufen)	0:40 3904,8664
 Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9047 3816,9045 3835,9044
 Hohenzollerndamm: unpassierbarer Mittelstreifen	3nocross 3427,9010 3467,9045 3521,9059
@@ -2884,7 +2888,7 @@ Drängelgitter	BNP:10 9171,5263
 Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2897,17861
 Zeiler Weg	1 11495,18129 11579,18184
 Zeiler Weg	1s 11835,18301 11914,18303
-Dettelbacher Weg	1 11698,18446 11750,18273
+Dettelbacher Weg	1 11696,18454 11750,18273
 Dettelbacher Weg	1 11819,18050 11750,18273
 Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
 Prenzlauer Promenade: nicht passierbarer Mittelstreifen	3nocross 11950,18529 11984,18771 12003,18896
