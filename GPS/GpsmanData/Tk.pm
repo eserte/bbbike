@@ -27,6 +27,7 @@ use Tk::ItemStyle;
 
 use BBBikeUtil qw(ms2kmh);
 use GPS::GpsmanData;
+use GPS::GpsmanData::VehicleInfo ();
 
 my @wpt_cols = qw(Ident Comment Latitude Longitude Altitude Symbol Accuracy Velocity VelocityGraph);
 
@@ -53,24 +54,6 @@ my @wpt_cols = qw(Ident Comment Latitude Longitude Altitude Symbol Accuracy Velo
       }
     }
 }
-
-my %vehicle_to_color = (
-			# get all vehicles with:
-			# cd .../misc/gps_data
-			# perl -nle 'm{srt:vehicle=(\S+)} and print $1' *.trk | sort | uniq -c
-			'bike'   => 'darkblue',
-			'bus'    => 'violet',
-			'car'    => 'darkgrey',
-			'ferry'  => 'lightblue',
-			'funicular' => 'red',
-			'pedes'  => 'orange',
-			'plane'  => 'black',
-			's-bahn' => 'green',
-			'ship'   => 'lightblue',
-			'train'  => 'darkgreen',
-			'tram'   => 'red',
-			'u-bahn' => 'blue',
-		       );
 
 sub Populate {
     my($w, $args) = @_;
@@ -441,7 +424,7 @@ sub _adjust_overview {
 	if (!$vehicle) {
 	    #warn "No vehicle found in chunk";
 	} else {
-	    my $color = $vehicle_to_color{$vehicle} || '#ffdead';
+	    my $color = GPS::GpsmanData::VehicleInfo::get_vehicle_color($vehicle) || '#ffdead';
 	    if (!defined $next_i) {
 		$next_i = $w->{_max_i};
 	    }
@@ -545,7 +528,7 @@ sub _track_attributes_editor {
 			     -autolimitheight => 1,
 			     -autolistwidth => 1,
 			     -listheight => 12, # hmmm, -autolimitheight does not work? or do i misunderstand this option?
-			     -choices => [sort keys %vehicle_to_color],
+			     -choices => [GPS::GpsmanData::VehicleInfo::all_vehicles()],
 			     ($brands_be
 			      ? (-browsecmd => sub { my(undef, $new_value) = @_; $fill_brands->($new_value) })
 			      : ()
