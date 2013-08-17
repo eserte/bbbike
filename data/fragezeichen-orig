@@ -190,9 +190,9 @@ Granitzstr.: Radspuren bis 2015 geplant	?::projected 11253,18168 11320,18218 113
 Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,21563 7959,21573 7781,21812 7742,21867 7594,22068 7516,22178 7439,22306 7416,22349
 # 
 #: XXX Baumaßnahme B3.4 (Realisierung nach 2011)
-#: last_checked: 2012-09-13
-#: next_check: 2013-06-01
-Schönerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 11929,23946 11981,24260 12177,24684 12261,24851 12405,25137 12632,25569 12698,25695 12944,26163 13192,26628 13256,26863 13348,27204
+#: last_checked: 2013-08-17
+#: check_frequency: 180d
+Schönerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 11929,23946 11959,24220 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570 12694,25696 12944,26163 13192,26628 13256,26863 13348,27204
 #
 # REMOVED (realisiert (Einbahnstraße offen)) --- #: XXX Baumaßnahme 3.35 (Realisierung in 2011) --- #: last_checked: 2013-04-30 --- #: next_check: 2013-07-30 --- Pasedagplatz: wird hier eine Ampel entstehen? Oder die Einbahnstraßenregelung für Radfahrer aufgehoben?	?::projected 14174,17226 14144,17165
 # 
@@ -807,7 +807,7 @@ Alfred-Siggel-Weg: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inw
 # 
 #: XXX diese Straßen existieren noch nicht
 #: XXX teilweise fehlen sie auch in Berlin.coords.data
-#: last_checked: 2013-08-15 vvv
+#: last_checked: 2013-08-17 vvv
 #: next_check: 2014-10-01 vvv
 An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
 Markus-Herz-Weg: Qualität?	?::projected 20701,18634 20906,18719 21123,18813
@@ -1166,7 +1166,8 @@ Bebauungsplan 11-35: hier werden einige Straßen (verkehrsberuhigt, zumindest tei
 Greifenhagener Str.: evtl. wird hier eine Fußgängerzone entstehen	? 11123,15851 11150,15908
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
-#: next_check: 2013-07-24
+#: last_checked: 2013-08-17
+#: check_frequency: 100d
 Alt-Karow: evtl. wird hier ein Schutzstreifen angelegt	? 15726,23475 15637,23251 15547,23024 15529,22981 15428,22736
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453
@@ -1232,11 +1233,7 @@ An der Vogelweide: Qualität? Lage? Straßenschilder?	? 8568,21863 8626,21892 8712
 Tegelort - Hakenfelde (sowie Fähre via Valentinswerder): prüfen, ob es nennenswerte Verbindungen gibt (außer am Wochenende)	? -1694,17839 -1828,17796
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2013 --- Am Valwigerteich: gibt es mittlerweile eine Durchfahrtmöglichkeit?	? 18867,12265 18917,12271
-# 
-#: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/buddestra__e_lp2_07_03_2011.pdf?start&ts=1299577401&file=buddestra__e_lp2_07_03_2011.pdf
-#: priority: #C
-Buddestr.: existiert hier ein Zebrastreifen?	? 2358,20199 2382,20210
-# 
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/buddestra__e_lp2_07_03_2011.pdf?start&ts=1299577401&file=buddestra__e_lp2_07_03_2011.pdf --- #: priority: #C --- Buddestr.: existiert hier ein Zebrastreifen?	? 2358,20199 2382,20210
 # REMOVED (ist mir nicht aufgefallen) --- Zugang zum Allendeweg möglich?	? 23025,4358 23001,4382
 # REMOVED (es ist nur eine Querungshilfe geworden) --- #: last_checked: 2013-04-28 (keine Fortschritte) --- #: next_check: 2013-06-28 --- #: priority: #C --- Möckernstr./Wartenbergstr.: wird hier ein Zebrastreifen entstehen? Oder nur eine Fußgängerinsel?	?::inwork 8762,9964 8800,9944
 # 

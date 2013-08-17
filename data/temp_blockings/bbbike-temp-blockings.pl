@@ -3701,7 +3701,7 @@ EOF
        text  => 'Berlin-Lübars: Am Freibad in beiden Richtungen Wasser auf der Fahrbahn, gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 5727,23485 5297,23633
+userdel	2 5727,23485 5316,23661
 EOF
      },
      { from  => undef, # 
@@ -18521,7 +18521,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101025.1235.315920.html',
        data  => <<EOF,
-userdel	2::inwork 5534,24005 5596,23970
+userdel	2::inwork 5534,24005 5621,23966
 EOF
      },
      { from  => 1288479600, # 2010-10-31 01:00
@@ -20399,7 +20399,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120612.1440.371422.html',
        data  => <<EOF,
-userdel	2::inwork 4824,22907 5054,23025 5127,23042 5205,23094 5232,23139
+userdel	2::inwork 4824,22907 4876,22955 4944,22978 4993,23020 5037,23036 5100,23045 5206,23103 5232,23139
 EOF
      },
      { from  => $isodate2epoch->("2013-09-12 16:00:00"), # 1 Tag Vorlauf
