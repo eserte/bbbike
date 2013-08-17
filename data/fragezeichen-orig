@@ -368,6 +368,18 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gudvanger_strasse.html vvv
+#: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf?start&ts=1365760997&file=kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf vvv
+#: last_checked: 2013-08-16 vvv
+#: next_check: 2013-10-16 vvv
+#: prio: #C
+Erich-Weinert-Str.: Zebrastreifen in Planung	?::projected 11710,15997 11691,15978
+Gudvangerstr.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11684,15997 11758,16111
+#: next_check ^^^
+#: last_checked ^^^
+#: by: ^^^
+#: by: ^^^
+# 
 #: XXX im südlichen Teil ist die asphaltierte Trasse schon erkennbar, der nördliche Teil wird wahrscheinlich noch gebaut
 #: last_checked: 2013-08-16
 #: next_check: 2013-09-16
@@ -546,19 +558,18 @@ Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 809
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne) vvv
+#: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/07_lp_zeltinger_platz_130424.pdf?start&ts=1372161246&file=07_lp_zeltinger_platz_130424.pdf vvv
 #: next_check: 2013-09-19 vvv
 #: priority: #C vvv
-Zeltinger Str. Höhe Einmündung in den Zeltinger Platz: wird hier ein Zebrastreifen angelegt?	?::projected 2440,25291 2480,25268
-Zeltinger Platz Höhe Reichelt/Post: wird hier ein Zebrastreifen angelegt? (genaue Position?)	?::projected 2455,25206 2503,25242
+Zeltinger Str. Höhe Einmündung in den Zeltinger Platz: Zebrastreifen ist geplant	?::projected 2441,25278 2464,25267
+Zeltinger Platz Höhe Reichelt/Post: Zebrastreifen ist geplant	?::projected 2461,25148 2480,25129
+#: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3317
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne)
+Einmündung der Burgfrauenstraße in den Zeltinger Platz: Zebrastreifen ist geplant	?::projected 2427,25126 2448,25146
 #: priority ^^^
 #: next_check ^^^
 #: by: ^^^
-# 
-#: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3317
-#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne)
-#: next_check: 2013-09-19
-#: priority: #C
-Einmündung der Burgfrauenstraße in den Zeltinger Platz: hier wird ein Zebrastreifen angelegt	?::projected 2427,25126 2479,25116
+#: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&options=4
 #: osm_watch: node id="29778885" version="4"
@@ -3481,10 +3492,11 @@ Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,3410
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036283513953/283513953/00094009/09-Anlagen/01/DRS0430VK.pdf vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4529 vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2013 vvv
 #: XXX Benennung von 7 Privatwegen auf dem Grundstück der KGA "Erpetal" vvv
 #: XXX fehlen alle in Berlin.coords.data, PLZ=12587 vvv
 #: last_checked: 2013-06-22 (Umbenennung nicht durchgeführt) vvv
-#: check_frequency: 180d vvv
+#: next_check: 2013-09-17 (Ablauf der Widerspruchsfrist) vvv
 Duftgeranienweg: (früher Hauptweg) Beton, Q0, verkehrsberuhigt, beleuchtet, Bodenschwellen, die leicht umfahren werden können	? 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25187,6549 25212,6560
 #: XXX wahrscheinlich unbeleuchtet vvv
 Klatschmohnweg: (früher Birkenweg) unbefestigter Weg, Q2, NN	? 24596,6292 24580,6319
@@ -3502,10 +3514,11 @@ Spitzwegerichweg: (früher Wiesenweg) unbefestigt, teilweise etwas sandig, Q2, un
 #: XXX ^^^
 Petersilienweg: (früher Feldweg) Qualität? Wo befindet sich der Weg?	? 24388,6098 24444,6165 24515,6201 24562,6221
 Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX ^^^
+#: by: ^^^
 #: by: ^^^
 #: by: ^^^
 # 

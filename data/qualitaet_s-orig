@@ -132,6 +132,10 @@ Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23138,8764 23108,8720 23012,8575 22
 Pariser Str.: Asphalt	Q0 23470,9403 23513,9567
 Kressenweg: Asphalt	Q0 23513,9567 23528,9680 23574,9782
 Kressenweg: Asphalt, einige "Moabiter Kissen"	Q0- 23574,9782 23603,9883 23659,10074
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130816.1515.388062.html
+#: XXX Sanierung der Fischerstr. bis Ende Oktober, danach asphaltiert
+#: prio: #A
+#: next_check: 2013-10-25
 Fischerstr.: Kopfsteinpflaster	Q2 16038,10818 16080,10743 16187,10587
 Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
 Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
@@ -2759,6 +2763,9 @@ Mauerstr.: kleinteiliges Kopfsteinpflaster	Q1 -3409,14241 -3316,14169
 (Maybachufer - Weigandufer): wassergebundene Decke	Q1 12851,9309 12907,9073
 Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2 12742,8635 12649,8535
 Schönstedtstr. (Neukölln): Asphalt	Q0 12649,8535 12540,8458
+#: XXX Straßenbauarbeiten (mit Vollsperrung) ab September 2013 geplant, danach vielleicht bessere Qualität?
+#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_08_02.pdf?start&ts=1375448176&file=stra__enbauliste_stand_2013_08_02.pdf
+#: next_check: 2013-09-02 (wegen Vollsperrung)
 Höhndorfstr.: Asphalt mit Schäden	Q1- 8455,8567 8438,8676 8425,8775
 Zionskirchstr.: Asphalt mit Schäden	Q1 10558,14176 10426,14262
 Arkonaplatz: Kopfsteinpflaster	Q2 10105,14608 10189,14649 10277,14691
@@ -12569,7 +12576,8 @@ Hieronymusweg: Beton	Q0 2556,21070 2691,21136
 Tile-Brügge-Weg: Asphalt/Beton mit Schäden	Q2+ 2380,20465 2473,20486 2595,20514
 #: XXX wird hier die Fahrbahndecke nach den Bauarbeiten besser sein?
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121218.0805.379437.html (Bauarbeiten bis Mitte 2015)
-#: next_check: 2015-06-01
+#: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/baumassnahmen.html?date=20130816 (Bauarbeiten bis Ende 2015)
+#: next_check: 2015-12-01
 Tile-Brügge-Weg: Asphalt/Beton mit Schäden	Q2+ 2595,20514 2793,20550 2968,20584 2982,20587 3119,20612 3196,20627 3214,20629 3287,20739 3306,20773
 #: confirmed_by ^^^
 Eschachstr.: Verbundsteinpflaster	Q1 2380,20465 2415,20380 2440,20294
@@ -15298,6 +15306,9 @@ Goethestr. (Wilhelmsruh): schlechtes Kopfsteinpflaster	Q3 7117,20181 7201,20161 
 # 
 #: by: Wilfried Flade:
 #: confirmed_by: anonymous (Q1)
+#: XXX Straßenbauarbeiten (mit Vollsperrung) ab September 2013, evtl. danach besser asphaltiert
+#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_08_02.pdf?start&ts=1375448176&file=stra__enbauliste_stand_2013_08_02.pdf
+#: next_check: 2013-09-02 (wegen Vollsperrung)
 Totilastr.: mäßiger Asphalt	Q1- 8176,5610 8276,5601 8374,5598 8574,5580
 # 
 #: by: Xanias (zeug):
