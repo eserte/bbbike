@@ -1289,6 +1289,15 @@ sub set_line_coord_interactive {
     return if !defined $t;
 
     my $map = "auto-detect";
+    my $partial_custom_code = <<'EOF';
+my($lng,$lat);
+if (m{longitude\s+([\d\.]+)}i) { $lng = $1 }
+if (m{latitude\s+([\d\.]+)}i)  { $lat = $1 }
+if (defined $lng && defined $lat) {
+    ($lng, $lat);
+}
+EOF
+    my $custom_code_sub;
 
     my $set_sub = sub {
 	my(@mark_args) = @_;
@@ -1308,6 +1317,18 @@ sub set_line_coord_interactive {
 		    for (@_coords) {
 			my($x, $y) = split / /, $_;
 			push @coords, [$x,$y]; # XXX assume always standard coordinates here, maybe should also auto-detect?
+		    }
+		}
+	    } elsif ($map eq 'custom') {
+		if (length $s) {
+		    if ($custom_code_sub) {
+			my($lon,$lat) = $custom_code_sub->($s);
+			if (defined $lat) {
+			    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
+			    push @coords, [$x, $y];
+			}
+		    } else {
+			main::status_message('Please define valid custom code', 'die');
 		    }
 		}
 	    } else {
@@ -1409,6 +1430,31 @@ sub set_line_coord_interactive {
     $t->Radiobutton(-variable => \$map,
 		    -value => "postgis",
 		    -text => "PostGIS-styled")->pack(-anchor => "w");
+    if ($devel_host) {
+	$t->Radiobutton(-variable => \$map,
+			-value => "custom",
+			-text => "custom code",
+			-command => sub {
+			    my $cctl = $t->Toplevel(-title => 'Custom code');
+			    my $cctxt = $cctl->Scrolled('Text')->pack(qw(-fill both -expand 1));
+			    my $new_partial_custom_code = $partial_custom_code;
+			    $cctxt->Contents($new_partial_custom_code);
+			    $cctl->Button(-text => 'Use',
+					  -command => sub {
+					      $new_partial_custom_code = $cctxt->Contents;
+					      my $new_complete_custom_code = 'sub { local $_ = $_[0]; ' . "\n$new_partial_custom_code\n" . '}';
+					      my $new_custom_code_sub = eval $new_complete_custom_code;
+					      if (!$new_custom_code_sub) {
+						  main::status_message("Cannot compile code:\n$new_complete_custom_code\nError: $@", 'die');
+					      } else {
+						  $partial_custom_code = $new_partial_custom_code;
+						  $custom_code_sub = $new_custom_code_sub;
+						  $cctl->destroy;
+					      }
+					  })->pack(-fill => 'x');
+			},
+		       )->pack(-anchor => "w");
+    }
 }
 
 sub coord_to_markers_dialog {
