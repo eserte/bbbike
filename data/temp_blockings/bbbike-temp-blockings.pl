@@ -1297,7 +1297,7 @@ EOF
        text  => 'L 23; (Templin-Lychen); OD Lychen Straßenbau Vollsperrung 17.11.2004-20.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 3125,88753 2797,89387
+userdel	q4 3153,88773 3049,88989 2864,89396 2797,89387
 EOF
      },
      { from  => 1116572111, # 2005-05-20 08:55
@@ -1759,7 +1759,7 @@ EOF
        text  => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straßenbau Vollsperrung 29.03.2005-03.05.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4 3125,88753 2797,89387
+userdel	q4 3153,88773 3049,88989 2864,89396 2797,89387
 EOF
      },
      { from  => 1113084000, # 2005-04-10 00:00
@@ -6936,7 +6936,7 @@ EOF
        text  => 'L 025 Schönermark-LG-Woldegk Brücke über den Dammseegraben am OA Fürstenwerder Brückenneubau Vollsperrung 18.12.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 20336,110197 20035,110983
+userdel	2::inwork 20423,110164 20035,110983
 EOF
      },
      { from  => 1167692400, # 2007-01-02 00:00
@@ -7167,7 +7167,7 @@ EOF
        text  => 'L 025 Fürstenwerder-Woldegk Brücke über den Dammseegraben am OA Fürstenwerder Änderung Wasserführung Vollsperrung 12.02.2007-15.02.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 20035,110983 20336,110197 20631,109980
+userdel	2::inwork 20035,110983 20423,110164 20679,110040
 EOF
      },
      { from  => 1172790000, # 2007-03-02 00:00
@@ -7684,7 +7684,7 @@ EOF
        text  => 'L 015 zw. Gollmitz u. Berkholz u. Boitzenburg Deckensanierung Vollsperrung 10.04.2007-22.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 29760,99768 27416,98865 26759,98614 26304,98234 26128,97916 25974,97619 24828,97295 24216,96897 23278,96396
+userdel	2::inwork 29760,99768 27887,98987 27416,98865 26773,98564 26332,98221 26174,97897 25950,97572 24777,97198 24290,96842
 EOF
      },
      { from  => undef, # 
@@ -14150,7 +14150,7 @@ EOF
        text  => 'L 025 Prenzlau - Fürstenwerder zw. OA Schönermark u. OE Kraatz Straßenbauarbeiten Vollsperrung 25.05.2009-31.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28511,103728 28338,104176 27732,105878 27213,107158 25934,109206 25606,109314
+userdel	2::inwork 28511,103728 28338,104176 27754,105827 27250,107145 26089,109088 25974,109208 25836,109313 25662,109362
 EOF
      },
      { from  => 1242712036, # 2009-05-19 07:47
@@ -15714,7 +15714,7 @@ EOF
        text  => 'L 025 Schönermark - Fürstenwerder - Woldegk zw. OL Kraatz u. Fürstenwerder u. LG Deckenerneuerung Vollsperrung 17.08.2009-02.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 21007,109931 21285,109895 22504,109807 23242,109707
+userdel	2::inwork 21007,109931 21277,109903 21482,109900 22042,109882 23242,109707
 EOF
      },
      { from  => 1250978400, # 2009-08-23 00:00
@@ -15948,7 +15948,7 @@ EOF
        text  => 'L 015 Berliner Straße OL Lychen, zw. Brücke Nesselpfuhlfließ u. Schlüßstr. Kanal- u. Straßenausbau Vollsperrung 15.09.2009-15.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 1544,89701 1907,89597
+userdel	2::inwork 1544,89701 1782,89633 1907,89597
 EOF
      },
      { from  => 1252015200, # 2009-09-04 00:00

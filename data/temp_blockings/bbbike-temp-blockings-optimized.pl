@@ -3304,16 +3304,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.kudamm-int.de/strassenfest.html',
-         'until' => 1376863199,
-         'text' => 'Uhlandstr.: Veranstaltung (Uhlandstraßenfest) zwischen Kurfürstendamm und Lietzenburger Str., Straße gesperrt, 17. und 18. August 2013',
-         'from' => 1376604000,
-         'id' => 2468,
-         'data' => 'userdel	2::temp 5047,10381 5076,10658
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_020145',
          'until' => 1387555200,
