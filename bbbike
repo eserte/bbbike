@@ -9702,15 +9702,15 @@ sub load_save_route {
         IncBusy($top) if $top;
 	eval {
 
-	    my $res = Route::load($file,
-				  { ResetRoute => \&reset_undo_route },
-				  -fuzzy => 0);
+	    my $res = Route::load($file, undef, -fuzzy => 0);
 
 	    if ($res->{IsStrFile}) {
 		# eine Strassen-Datei
 		plot_layer('str', $file);
 		return;
 	    }
+
+	    reset_undo_route();
 
 	    @realcoords          = @{ $res->{RealCoords} };
 	    @search_route_points = @{ $res->{SearchRoutePoints} };

@@ -346,9 +346,7 @@ sub make_new {
 
 # Lädt eine Route ein und gibt @realcoords heraus.
 sub load {
-    my $file    = shift;
-    my $context = shift;
-    my(%args)   = @_;
+    my($file, undef, %args) = @_; # 2nd argument used to be the "context", but is not used anymore
 
     my @realcoords;
     my @search_route_points;
@@ -367,7 +365,6 @@ sub load {
 		my $mod = GPS->preload($gps);
 		if ($mod->check($file, %gps_args)) {
 		    warn "Trying $mod...\n" if ($main::verbose);
-		    $context->{ResetRoute}->() if $context->{ResetRoute};
 		    @realcoords = $mod->convert_to_route($file, %gps_args);
 		    $check = 1;
 		}
@@ -415,7 +412,6 @@ sub load {
 		die "Die Datei <$file> enthält keine Route."
 		    if (!defined $realcoords_ref);
 
-		$context->{ResetRoute}->() if $context->{ResetRoute};
 		@realcoords = @$realcoords_ref;
 		if (defined $coords_ref) {
 		    warn "Achtung: <$file> enthält altes Routen-Format.\n".
