@@ -37,13 +37,15 @@ my $with_dist = 1;
 my $dist_dbfile;
 my $centerc;
 my $center2c;
+my $plan_dir;
 GetOptions(
 	   "with-dist!" => \$with_dist,
 	   "dist-dbfile=s" => \$dist_dbfile,
 	   "centerc=s" => \$centerc,
 	   "center2c=s" => \$center2c,
+	   "plan-dir=s" => \$plan_dir,
 	  )
-    or die "usage: $0 [--nowith-dist] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] bbdfile ...";
+    or die "usage: $0 [--nowith-dist] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] bbdfile ...";
 
 if ($with_dist && !$centerc) {
     my $config_file = "$ENV{HOME}/.bbbike/config";
@@ -73,6 +75,24 @@ if ($with_dist && !$centerc) {
 my $dists_are_exact;
 if ($with_dist) {
     $dists_are_exact = $dist_dbfile ? 1 : 0;
+}
+
+my $planned_points;
+if ($plan_dir) {
+    require File::Glob;
+    require Route;
+    require Route::Heavy;
+    require Strassen::MultiStrassen;
+    require Strassen::StrassenNetz;
+    require Strassen::CoreHeavy;
+    my @str;
+    for my $route_file (File::Glob::bsd_glob("$plan_dir/*.bbr")) {
+	my $route = Route->load_as_object($route_file);
+	my $name = $route_file;
+	push @str, $route->as_strassen(name => $name);
+    }
+    my $s = MultiStrassen->new(@str);
+    $planned_points = $s->as_reverse_hash;
 }
 
 my @files = @ARGV
@@ -116,7 +136,20 @@ for my $file (@files) {
 			     undef $prio;
 			 }
 		     }
-		     my $headline = "** TODO <$date $wd> " . ($prio ? "[$prio] " : "") . $subject;
+		     my @planned_route_files;
+		     if ($planned_points) {
+			 my %planned_route_files;
+			 for my $c (@{ $r->[Strassen::COORDS] }) {
+			     if (my $route_files = $planned_points->{$c}) {
+				 for my $route_file (@$route_files) {
+				     $planned_route_files{$route_file} = 1;
+				 }
+			     }
+			 }
+			 @planned_route_files = sort keys %planned_route_files;
+		     }
+		     my $todo_state = @planned_route_files ? 'PLANNED' : 'TODO';
+		     my $headline = "** $todo_state <$date $wd> " . ($prio ? "[$prio] " : "") . $subject;
 		     if ($dist_tag) {
 			 if (length($headline) + 1 + length($dist_tag) < ORG_MODE_HEADLINE_LENGTH) {
 			     $headline .= " " x (ORG_MODE_HEADLINE_LENGTH-length($headline)-length($dist_tag));
@@ -130,6 +163,12 @@ $headline
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
    [[${abs_file}::$.]]
 EOF
+		     if (@planned_route_files) {
+			 $body .= "\n   Planned in\n";
+			 for my $planned_route_file (@planned_route_files) {
+			     $body .= "   * [[shell:bbbikeclient $planned_route_file]]\n";
+			 }
+		     }
 		     push @records, { date => $date, body => $body, dist => $any_dist };
 		 }
 	     } else {
