@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-08-17 vvv
+#: last_checked: 2013-08-19 vvv
 #: next_check: 2013-08-30 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (früher)
@@ -1535,7 +1535,8 @@ Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
 (Rhinstr. - Am Mühlenberg): einige Fußgänger, Rampe	q1- 18220,11710 18242,11793 18258,11827
 (Kolonie Sanssouci): einige Fußgänger	q1 16488,10381 16297,10636 16246,10641
 Müggelstr., Hausdurchfahrt: einige Fußgänger	q1 14837,11706 14856,11740
-(Bushaltenstelle und Straßenbahnwendestelle Schöneweide): ggfs. Gehwege benutzen	q4 17736,5441 17675,5521 17588,5573 17578,5566
+(Bushaltestelle und Straßenbahnwendestelle Schöneweide): Bus- und Straßenbahnverkehr	q2 17736,5441 17675,5521
+(Bushaltestelle und Straßenbahnwendestelle Schöneweide): ggfs. Gehwege benutzen	q4 17675,5521 17588,5573 17578,5566
 (Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 #: XXX_prog: BS (2x)
 (Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8953,6492 8930,6295
@@ -1682,6 +1683,11 @@ Wischbergweg: sehr enger Pfad	q4 13733,18161 13751,18180
 #: XXX_prog BS, sonst entfernen
 Bordstein	q3 22004,17470 21992,17479
 (An der Margaretenhöhe - Astridstr.): schmaler Pfad	q3 16634,19839 16550,19829 16472,19818 16390,19806
+Cajamarcaplatz: viele Fußgänger	q3 17728,5756 17710,5668 17782,5698
+(Fußgängertunnel S-Bhf. Schöneweide): viele Fußgänger, ggfs. schieben	q4 17710,5668 17639,5612
+(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Fußgänger	q3 17639,5612 17675,5521
+#: XXX_prog BS, sonst entfernen
+Wasserweg: Bordstein	q2 15680,8914 15873,8884
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

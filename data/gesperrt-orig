@@ -1574,6 +1574,7 @@ Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,346
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19676,3705 19633,3751 19587,3801
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
 Michael-Brückner-Str.: Mittelstreifen	3nocross 18457,5000 18425,5032 18080,5376
+Michael-Brückner-Str.: Mittelstreifen	3nocross 17728,5756 17782,5698 17829,5648
 #: by: Thomas Pörs & srt:
 Rhinstr.: Straßenbahngleise	3nocross 17488,15766 17532,15645 17569,15561 17626,15433 17829,15015
 Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870,2737
@@ -1587,7 +1588,9 @@ Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14686,15608
 Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
-Groß-Berliner Damm: Mittelstreifen	3nocross 18928,3701 18882,3750 18854,3781 18235,4449
+Groß-Berliner Damm: Mittelstreifen	3nocross 18928,3701 18882,3750 18854,3781 18824,3814
+Groß-Berliner Damm: Mittelstreifen	3nocross 18824,3814 18771,3871 18538,4122
+Groß-Berliner Damm: Mittelstreifen	3nocross 18538,4122 18392,4279 18235,4449
 Stromstr.: Mittelstreifen	3nocross 6228,13324 6229,13517 6230,13596
 Warschauer Brücke: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross 13476,11174 13493,11217 13541,11355
 Waltersdorfer Chaussee: Mittelstreifen	3nocross 18009,-193 17946,-100 17879,-3
@@ -1647,9 +1650,9 @@ tragen (3+3+2+2 Stufen)	0:20 9244,3872
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130116.0915.380245.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4276
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130722.1530.387208.html
-#: XXX evtl. wird hier barrierefrei umgebaut werden
-#: last_checked: 2013-07-01
-#: next_check: 2013-08-15
+#: XXX hier entsteht bis voraussichtlich Oktober 2013 eine Rampe
+#: last_checked: 2013-08-19
+#: next_check: 2013-10-15
 tragen (10 Stufen)	0:15 8035,10075
 tragen (7 weite Stufen)	0:30 15759,16671
 tragen (6 Stufen)	0:12 15915,16526
@@ -2390,8 +2393,8 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: by: http://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10317_Berlin_Strassenbauarbeiten__607379.html (Asphaltierung)
 #: by: http://www.rubu.de/verkehr-planungen.html (Dauer)
 #: by: http://www.rubu.de/mediapool/115/1150729/data/Paul_u_Paula_UL3-Uebersicht-BA.pdf (Übersichtsplan)
-#: last_checked: 2013-08-03
-#: next_check: 2013-10-03
+#: last_checked: 2013-08-19
+#: next_check: 2013-10-03 (geplantes Bauende ist Ende September)
 Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
 # 
 #: last_checked: 2013-07-13

@@ -2279,7 +2279,8 @@ Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11921,11185 11950,11157
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
 #: XXX Baumaßnahme GR9.24 (Realisierung nach 2011) vvv
 #: XXX wird hier asphaltiert werden? Was ist mit dem Schlenker am Spreepark? vvv
-#: last_checked: 2013-04-16 vvv
+#: osm_watch: way id="207761374" version="1"
+#: last_checked: 2013-08-19 vvv
 #: check_frequency: 120d vvv
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
 Wasserweg: fester Sandweg	Q2 15873,8884 16023,8860 16161,8852 16201,8860
@@ -2507,8 +2508,10 @@ nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1+ 6608
 Kirchstr. (Köpenick): Asphalt, gepflasterter Parkstreifen	Q0 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 Am Alten Lokschuppen: Asphalt	Q0 15730,11279 15708,11193 15752,11115 15805,10949 15756,10966
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20071126.1325.89712.html vvv
+#: confirmed_by: srt vvv
 Silberberger Str.: Asphalt	Q0 19735,3643 19804,3697 19864,3742 19992,3839
 Thelenstr.: Asphalt	Q0 19804,3697 19871,3600
+#: confirmed_by ^^^
 #: by: ^^^
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20071126.1320.89710.html
 #: confirmed_by: srt
@@ -3332,8 +3335,8 @@ Landfliegerstr.: Asphalt	Q0 18050,4649 18157,4742 18202,4786 18236,4807
 Sportfliegerstr.: Asphalt	Q0 18157,4742 18343,4545 18423,4459
 Louis-Blériot-Str.: Asphalt	Q0 18343,4545 18235,4449
 Hermann-Dorner-Allee: Asphalt (Fahrbahn und Radwege)	Q0 18928,3701 18860,3634 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18496,2471
-Wagner-Régeny-Str.: Asphalt	Q0 19732,3340 19657,3417 19581,3495 19487,3593 19377,3721
-Georg-Schendel-Str.: Asphalt	Q0 19125,3491 19377,3721
+Wagner-Régeny-Str.: Asphalt	Q0 19732,3340 19657,3417 19581,3495 19487,3593 19363,3730
+Georg-Schendel-Str.: Asphalt	Q0 19125,3491 19363,3730
 Hans-Schmidt-Str.: Asphalt	Q0 19581,3495 19449,3358 19348,3253
 Merlitzstr.: Asphalt	Q0 19417,3184 19524,3286 19657,3417
 Karl-Otto-Reinsch-Str.: Verbundsteinpflaster	Q1 19603,3207 19524,3286
@@ -7814,6 +7817,9 @@ Jülicher Str.: Kopfsteinpflaster	Q2 9514,16603 9498,16480 9487,16395 9475,16307 
 (Mauerweg Frohnau-Heiligensee): Asphalt	Q0 -802,24541 -972,24498 -1655,24428 -1940,24464 -1953,24435
 (neben dem U-Bahn-Viadukt): wassergebundene Decke	Q1 7906,10098 7928,10094 8027,10076
 (Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8027,10076 8029,10106 8074,10292 8061,10310
+#: XXX wird durch Verbundsteinpflaster ersetzt, dann wohl Q1
+#: last_checked: 2013-08-19
+#: next_check: 2013-08-22
 (Park am Gleisdreieck, Eingang Schöneberger Str.): Rasengittersteine	Q2- 8296,10438 8322,10451
 (Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8322,10451 8338,10484 8393,10505
 (Treptower Park): Asphalt	Q0 15187,9038 15181,8967 15159,8934
@@ -8921,6 +8927,9 @@ Hinter der Mühle: Beton	Q0 21090,15525 21228,15449
 (Allmendeweg - Tegeler Fließ): Kleinsteinpflaster	Q1- 2990,22018 2966,22084
 (Weg am Tegeler Fließ): Verbundsteinpflaster	Q1 2074,21256 2061,21308 2048,21343
 (Weg am Tegeler Fließ): Waldweg	Q2 2048,21343 2074,21469
+Cajamarcaplatz: Gehwegplatten	Q0- 17728,5756 17710,5668 17782,5698
+(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Asphalt	Q0 17639,5612 17675,5521
+(Zufahrt Sersa): Asphalt	Q0 18538,4122 18445,4035
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -17675,7 +17684,9 @@ Kummerower Ring: guter Beton	Q0 22615,13734 22527,13708 22523,13680 22544,13602 
 #: by: ^^^
 # 
 #: by: where_are_you_between: vvv
+#: confirmed_by: srt
 Hainstr.: guter Asphalt	Q0 18370,5511 18370,5647 18349,5744 18312,5824
+#: confirmed_by: srt
 Fließstr.: mäßiges Kopfsteinpflaster	Q2 18164,5701 18017,5783
 Fließstr.: guter Asphalt	Q0 18017,5783 17877,5860
 Flutstr.: am Rand mäßiges Kopfsteinpflaster, in der Mitte eine gute asphaltierte Spur	Q1 18017,5783 17980,5721 17931,5695 17916,5675

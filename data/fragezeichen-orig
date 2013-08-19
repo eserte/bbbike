@@ -117,13 +117,13 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2013-07-09
+#: last_checked: 2013-08-19
 #: check_frequency: 60d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-08-12
+#: last_checked: 2013-08-19
 #: next_check: 2014-01-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -225,8 +225,8 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 Karl-Marx-Str.: wann werden hier die Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011)
-#: last_checked: 2013-06-15
-#: next_check: 2013-09-15
+#: last_checked: 2013-08-19
+#: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
@@ -273,7 +273,7 @@ Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,1516
 #: next_check: 2013-08-01
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
-#: last_checked: 2013-08-12
+#: last_checked: 2013-08-19
 #: check_frequency: 90d
 Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
 # 
@@ -368,6 +368,10 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: last_checked: 2013-08-19
+#: next_check: 2013-10-19
+Gleisdreieckpark - Bautzener Str.: entsteht hier ein Weg?	?::projected 8260,10183 8282,9996 8198,9749 8192,9619
+# 
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gudvanger_strasse.html vvv
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf?start&ts=1365760997&file=kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf vvv
 #: last_checked: 2013-08-16 vvv
@@ -452,8 +456,8 @@ Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13658,1730
 #: by: http://www.sanierung-osw.de/index.php?id=419 (Blockdurchquerung)
 #: XXX asphaltiert, wahrscheinlich für Radfahrer frei
 #: XXX evtl. auch Park einzeichnen, Name?
-#: last_checked: 2013-08-03
-Siemensstr. - Wilhelminenhofstr. (durch die Grünanlage): wann wird hier eröffnet? Nachts beleuchtet?	?::inwork 17809,6619 17818,6562 17826,6495
+#: last_checked: 2013-08-19
+Siemensstr. - Wilhelminenhofstr. (durch die Grünanlage): wann wird hier eröffnet? Nachts beleuchtet?	?::inwork 17860,6644 17826,6495
 # 
 #: last_checked: 2013-07-06
 #: next_check: 2014-04-15
@@ -520,9 +524,9 @@ Wassersportallee: wird hier eine Fußgängerampel eingerichtet?	? 22506,1379 22488
 Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,4376
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00079726/26-Anlagen/01/DRS0047VK.pdf (Bebauungsplan 9 - 47)
-#: last_checked: 2013-04-22
-#: next_check: 2013-08-22
 #: osm_watch: way id="199532117" version="1"
+#: last_checked: 2013-08-19
+#: check_frequency: 180d
 Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4086&options=4 vvv
@@ -757,7 +761,7 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert?	?::project
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html
 #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
-#: last_checked: 2013-08-12 vvv
+#: last_checked: 2013-08-19 vvv
 #: next_check: 2013-11-30 vvv
 #: osm_watch: way id="187902666" version="2"
 Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8333,9583 8338,9443 8388,9242 8373,9022 8389,9087
@@ -920,7 +924,7 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010): danach hat der Weg eine neue wassergebundene Decke	?::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
 # 
 #: osm_watch: way id="180800504" version="1"
-#: last_checked: 2013-06-09
+#: last_checked: 2013-08-19
 #: check_frequency: 90d
 Wilhelm-Hoff-Str.: Qualität	?::inwork 18833,3191 18892,3256 18953,3318 19047,3412 19125,3491
 # 
@@ -930,19 +934,26 @@ Wilhelm-Hoff-Str.: Qualität	?::inwork 18833,3191 18892,3256 18953,3318 19047,341
 Verlängerung der Katharina-Boll-Dornberger-Str.: Qualität? Straßenname?	?::inwork 19167,3287 19047,3412
 # 
 #: osm_watch: way id="142575677" version="2"
-#: last_checked: 2013-07-07
-#: next_check: 2013-09-09
+#: last_checked: 2013-08-19
+#: next_check: 2013-12-15
 Verlängerung der Hans-Schmidt-Str.: Qualität?	?::inwork 19581,3495 19667,3581
 # 
+#: osm_watch: way id="91218505" version="3" 
+#: XXX Radwege werden fortgeführt
+#: last_checked: 2013-08-19
+#: next_check: 2013-11-15
+Verlängerung der Wagner-Régeny-Str., Igo-Etrich-Str.: Qualität? Wo beginnt und verläuft die Igo-Etrich-Str.?	?::inwork 19363,3730 19155,3936
+# 
 #: osm_watch: way id="117951616" version="3"
-#: last_checked: 2013-06-09
+#: last_checked: 2013-08-19
 #: check_frequency: 90d
 Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18928,3701 19155,3936
 # 
 #: osm_watch: way id="224731112" version="2"
-#: last_checked: 2013-06-09
-#: next_check: 2013-12-01
-Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18763,3856 18542,3858 18402,3989
+#: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben
+#: last_checked: 2013-08-19
+#: next_check: 2014-12-01
+Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18771,3871 18701,3806 18520,3812 18229,4127 18392,4279
 # REMOVED --- #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/ --- #: by: (URL existiert nicht mehr) http://www.potsdam.de/cms/beitrag/10058808/757395/ --- #: XXX wo wird die Verbindung genau entlanggeführt? --- Neuer Garten (Potsdam): neue Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12263,-403 -12262,-362 -12328,-212 -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
 # 
 #: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend
@@ -1430,12 +1441,7 @@ Kurzer Weg: Qualität?	? 9169,21548 9066,21516
 #: by ^^^
 #: by ^^^
 # 
-#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120927.1435.375916.html
-#: next_check: 2012-11-30
-#: osm_watch: way id="187123053" version="2"
-#: osm_watch: way id="24152326" version="8"
-Anna-Seghers-Str.: wird es nach den Bauarbeiten eine bessere Straßenqualität geben?	?::inwork 20066,3466 20012,3532 19966,3596 19933,3641
-# 
+# REMOVED (alles beim alten) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120927.1435.375916.html --- #: next_check: 2012-11-30 --- #: osm_watch: way id="187123053" version="2" --- #: osm_watch: way id="24152326" version="8" --- Anna-Seghers-Str.: wird es nach den Bauarbeiten eine bessere Straßenqualität geben?	?::inwork 20066,3466 20012,3532 19966,3596 19933,3641
 # REMOVED --- #: by: http://ftp.berlinonline.de/ba-temp-schoen/ba_beschluesse/2012-08-14/drucks._nr.1842_xviii_bezirkliches_fahrradroutennetz_fuer_tempelhof_schoeneberg_entwickeln_zwischenbericht.pdf (Treppe, wassergebundene Decke) --- Götzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster oder eine wassergebundene Decke? Gibt es hier Treppen?	? 9381,6277 9374,6189 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf vvv

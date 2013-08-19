@@ -21660,7 +21660,6 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_020145',
        data  => <<EOF,
-#: XXX Umgehung durch den S-Bahnhof prüfen und ggfs. eintragen
 userdel	2::inwork 17736,5441 17886,5587
 EOF
      },

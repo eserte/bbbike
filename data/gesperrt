@@ -1884,6 +1884,11 @@ Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,35
 Mittelstreifen	3nocross::ignrte 18457,5000 18425,5032 18080,5376
 Hartriegelstr. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 18514,5028 18425,5032 18457,5000
 Michael-Brückner-Str. -> Hartriegelstr.: Mittelstreifen	3::igndisp 18080,5376 18425,5032 18514,5028
+Mittelstreifen	3nocross::ignrte 17728,5756 17782,5698 17829,5648
+Michael-Brückner-Str. -> Spreestr.: Mittelstreifen	3::igndisp 17728,5756 17782,5698 17812,5726
+Cajamarcapl. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 17710,5668 17782,5698 17728,5756
+Cajamarcapl. -> Spreestr.: Mittelstreifen	3::igndisp 17710,5668 17782,5698 17812,5726
+Michael-Brückner-Str. -> Cajamarcapl.: Mittelstreifen	3::igndisp 17829,5648 17782,5698 17710,5668
 Straßenbahngleise	3nocross::ignrte 17488,15766 17532,15645 17569,15561 17626,15433 17829,15015
 Str. 156 -> Rhinstr.: Straßenbahngleise	3::igndisp 17570,15658 17532,15645 17569,15561
 Rhinstr. -> Str. 156: Straßenbahngleise	3::igndisp 17488,15766 17532,15645 17570,15658
@@ -1926,9 +1931,11 @@ Straßenbahntrasse	3nocross::ignrte 14843,15007 14828,15050 14686,15608
 Straßenbahntrasse	3nocross::ignrte 16460,17214 16578,17285 16837,17440
 Neuzeller Weg -> Hansastr.: Straßenbahntrasse	3::igndisp 16658,17142 16578,17285 16460,17214
 Hansastr. -> Neuzeller Weg: Straßenbahntrasse	3::igndisp 16837,17440 16578,17285 16658,17142
-Mittelstreifen	3nocross::ignrte 18928,3701 18882,3750 18854,3781 18235,4449
+Mittelstreifen	3nocross::ignrte 18928,3701 18882,3750 18854,3781 18824,3814
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18882,3750 18854,3781
-Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18854,3781 18235,4449
+Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18854,3781 18824,3814
+Mittelstreifen	3nocross::ignrte 18824,3814 18771,3871 18538,4122
+Mittelstreifen	3nocross::ignrte 18538,4122 18392,4279 18235,4449
 Mittelstreifen	3nocross::ignrte 6228,13324 6229,13517 6230,13596
 Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6229,13517 6104,13522
 unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross::ignrte 13476,11174 13493,11217 13541,11355
