@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.51 2009/02/21 21:24:03 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2008,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -85,8 +84,9 @@ sub BBBikeGPS::gps_interface {
     $extra_args{-routetoname} = $routetoname if $routetoname;
     
     eval {
+	my $route_obj = Route->new_from_realcoords(\@realcoords, -searchroutepoints => \@search_route_points);
 	my $res = $modobj->convert_from_route
-	    (Route->new_from_realcoords(\@realcoords),
+	    ($route_obj,
 	     -streetobj   => $multistrassen || $str_obj{'s'},
 	     -netobj      => $net,
 	     -routename   => $gps_route_info->{Name},
@@ -104,11 +104,32 @@ sub BBBikeGPS::gps_interface {
 			  -res => $res,
 			  -test => $extra_args{-test},
 			  -top => $top);
+	if ($do_gps_upload_hist) {
+	    BBBikeGPS::gps_upload_history($route_obj, -gpsrouteinfo => $gps_route_info);
+	}
     };
     if ($@) {
 	status_message
 	    (Mfmt("Schreiben auf <%s> nicht möglich: %s", $file, $@), 'err');
     }
+}
+
+sub BBBikeGPS::gps_upload_history {
+    my($route_obj, %opts) = @_;
+    my $gps_route_info = delete $opts{'-gpsrouteinfo'};
+    die "Unhandled arguments: " . join(" ", %opts) if %opts;
+    if (!-d $gps_upload_dir) {
+	mkdir $gps_upload_dir;
+	if (!-d $gps_upload_dir) {
+	    main::status_message(Mfmt("Das Verzeichnis %s konnte nicht erzeugt werden. Grund: %s", $gps_upload_dir, $!), "error");
+	    return;
+	}
+    }
+    my $route_name = $gps_route_info->{Name};
+    $route_name =~ s{[^A-Za-z0-9_-]}{_}g;
+    require POSIX;
+    my $path = "$gps_upload_dir/" . POSIX::strftime("%Y%m%d_%H%M%S", localtime) . "_" . $route_name. ".bbr";
+    $route_obj->save_object($path);
 }
 
 sub get_route_simplification_mapping {

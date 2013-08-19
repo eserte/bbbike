@@ -729,6 +729,8 @@ $save2_path = $home;
     }
 }
 
+$gps_upload_dir = "$bbbike_configdir/gps_uploads";
+
 # XXX $do_wwwmap stuff is sort-of obsolete. Remove completely?
 Karte::preload('Berlinmap2000');
 $do_wwwmap = (! $Karte::Berlinmap2000::obj ||
@@ -5392,6 +5394,11 @@ dazu verwendet wird",
 		      :                [map { ($_."0", $_."1", $_."2", $_."3") } ("/dev/ttyUSB", "/dev/usb/ttyUSB", "/dev/tts/USB", "/dev/ttyS") ]
 		     ),
 	  label => M"GPS-Device", var => \$gps_device],
+	 ['gpsuploadhist','!',0, var => \$do_gps_upload_hist,
+	  ($devel_host ? () : (nogui => 1)),
+	  label => M"GPS-Uploads persistent machen",
+	  longhelp => Mfmt("GPS-Routen werden bei Uploads automatisch als BBR-Dateien im Verzeichnis %s gespeichert.", $gps_upload_dir),
+	 ],
 
 	 M"Sonstiges",
 	 ['kde','!',undef,
