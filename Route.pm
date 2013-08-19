@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2001,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2001,2012,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +19,7 @@ use strict;
 use vars qw($coords_ref $realcoords_ref $search_route_points_ref
 	    @EXPORT @ISA $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '2.00';
 
 require Exporter;
 @ISA    = qw(Exporter);
@@ -46,10 +46,15 @@ sub new {
 
 # $realcoords_ref is [[x,y], [x,y], ...]
 sub new_from_realcoords {
-    my $class = shift;
-    my $realcoords_ref = shift;
+    my($class, $realcoords_ref, %opts) = @_;
+    my $searchroutepoints = delete $opts{-searchroutepoints};
+    die "Unhandled arguments: " . join(" ", %opts) if %opts;
+
     my $obj = $class->new;
     $obj->{Path} = [ @$realcoords_ref ];
+    if ($searchroutepoints) {
+	$obj->{SearchRoutePoints} = $searchroutepoints;
+    }
     $obj->{From} = join ",", @{$obj->{Path}[0]};
     $obj->{To}   = join ",", @{$obj->{Path}[-1]};
 
@@ -133,6 +138,10 @@ sub set_to           { $_[0]->{To} = $_[1] }
 # erstellt eine String-Repräsentation der Route: x1,y1;x2,y2;...
 sub as_string        { $_[0]->_as_string(";") }
 sub as_cgi_string    { $_[0]->_as_string("!") } # ; ist schlecht bei CGI.pm
+
+# following return a reference, not a copy
+sub _realcoords        { $_[0]->{Path} }
+sub _searchroutepoints { $_[0]->{SearchRoutePoints} }
 
 sub new_from_cgi_string {
     my($class, $cgi_string) = @_;
@@ -343,6 +352,24 @@ sub make_new {
 	$self->{Ampeln}+=0; #  XXX, auch ab 0 anfangen!
     }
 }
+
+sub load_as_object {
+    my($class, $file, %args) = @_;
+    my $res = Route::load($file, undef, %args);
+    $class->new_from_realcoords($res->{RealCoords}, -searchroutepoints => $res->{SearchRoutePoints});
+}
+
+sub save_object {
+    my($self, $file) = @_;
+    Route::save(
+		-realcoords        => $self->_realcoords,
+		-searchroutepoints => $self->_searchroutepoints,
+		-file              => $file
+	       );
+}
+
+######################################################################
+# NON-OO FUNCTIONS
 
 # Lädt eine Route ein und gibt @realcoords heraus.
 sub load {
