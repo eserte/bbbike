@@ -98,7 +98,8 @@ sub get_sample_coords {
 sub load_from_string {
     my($string, @args) = @_;
     require File::Temp;
-    my($fh, $file) = File::Temp::tempfile(UNLINK => !$Route::DEBUG);
+    my($fh, $file) = File::Temp::tempfile(UNLINK => !$Route::DEBUG)
+	or die "Can't create temporary file: $!";
     print $fh $string;
     close $fh;
     my $ret = Route::load($file, @args);
