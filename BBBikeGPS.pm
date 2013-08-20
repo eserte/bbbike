@@ -119,7 +119,7 @@ sub BBBikeGPS::gps_upload_history {
     my $gps_route_info = delete $opts{'-gpsrouteinfo'};
     die "Unhandled arguments: " . join(" ", %opts) if %opts;
     if (!-d $gps_upload_dir) {
-	mkdir $gps_upload_dir;
+	mkdir $gps_upload_dir, 0700;
 	if (!-d $gps_upload_dir) {
 	    main::status_message(Mfmt("Das Verzeichnis %s konnte nicht erzeugt werden. Grund: %s", $gps_upload_dir, $!), "error");
 	    return;
