@@ -9095,7 +9095,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25506,15585 25955,15531 26071,15470
+userdel	2::inwork 25506,15585 25866,15543 25955,15531 26071,15470
 EOF
      },
      { from  => 1184709600, # 2007-07-18 00:00
@@ -9211,7 +9211,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26333,15481 26175,15461 26071,15470 25955,15531 25506,15585 25342,15609 25007,15650 23893,15893
+userdel	2::inwork 26336,15473 26175,15461 26071,15470 25955,15531 25866,15543 25506,15585 25342,15609 25007,15650 23893,15893
 EOF
      },
      { from  => 1186092000, # 2007-08-03 00:00
@@ -12309,7 +12309,7 @@ EOF
        text  => 'L 033 Strausberg - Berlin zw. AS Berlin-Marzahn und Abzw. Neuenhagen Deckenerneuerung Vollsperrung 11.08.2008-05.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 28569,16324 27328,15740
+# REMOVED (mittlerweile in strassen_bab) --- userdel	2::inwork 28406,16287 27178,15716
 EOF
      },
      { from  => 1218319200, # 2008-08-10 00:00
@@ -12366,7 +12366,8 @@ EOF
        text  => 'L 033 Strausberg - Berlin zw. AS Berlin-Marzahn und Hönow, Mahlsdorfer Str. Deckenerneuerung Vollsperrung 18.08.2008-26.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 27328,15740 26908,15630 26538,15523 26333,15481
+# REMOVED (mittlerweile in strassen_bab) --- userdel	2::inwork 27178,15716 26908,15630
+userdel	2::inwork 26908,15630 26493,15515 26336,15473
 EOF
      },
      { from  => 1219183200, # 2008-08-20 00:00
@@ -16171,7 +16172,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014203',
        data  => <<EOF,
-userdel	q4::inwork; 18234,13500 18382,13492 18783,13469 18875,13467 19059,13474 19173,13478
+userdel	q4::inwork; 18226,13506 18382,13492 18783,13469 18875,13467 19059,13474 19173,13478
 EOF
      },
      { from  => undef, # 
@@ -17495,7 +17496,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LSO-SG33-E10030',
        data  => <<EOF,
-userdel	2::inwork 25232,18413 25654,17351
+userdel	2::inwork 25232,18413 25686,17365
 EOF
      },
      { from  => 1274300034, # 2010-05-19 22:13

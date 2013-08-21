@@ -960,6 +960,9 @@ Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
+Mittelstreifen	3nocross::ignrte 21831,13801 21853,13784 21918,13720
+Cecilienstr. -> Siegmarstr.: Mittelstreifen	3::igndisp 21831,13801 21853,13784 21870,13852
+Siegmarstr. -> Cecilienstr.: Mittelstreifen	3::igndisp 21870,13852 21853,13784 21918,13720
 Mittelstreifen	3nocross::ignrte 2767,7592 2750,7444 2744,7397
 Hammersteinstr. -> Warnemünder Str.: Mittelstreifen	3::igndisp 2719,7415 2750,7444 2767,7592
 Warnemünder Str. -> Hammersteinstr.: Mittelstreifen	3::igndisp 2744,7397 2750,7444 2719,7415
@@ -2012,6 +2015,9 @@ Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10431,12709 10387,127
 Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7880,13315
 Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292 7880,13315
 Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13276 7842,13292 7822,13323
+Mittelstreifen	3nocross::ignrte 7880,13315 8003,13374 8098,13419
+Invalidenstr. -> Ella-Trebe-Str.: Mittelstreifen	3::igndisp 8098,13419 8003,13374 7938,13302
+Ella-Trebe-Str. -> Invalidenstr.: Mittelstreifen	3::igndisp 7938,13302 8003,13374 7880,13315
 Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross::ignrte 7821,12934 7776,12943 7595,12980
 Ingeborg-Drewitz-Allee -> Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7620,12757 7776,12943 7595,12980
 Alt-Moabit -> Ingeborg-Drewitz-Allee: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7821,12934 7776,12943 7620,12757
@@ -2023,6 +2029,9 @@ Mittelstreifen	3nocross::ignrte 15662,16656 15735,16698 15776,16721
 Hansastr. -> Stadion Buschallee: Mittelstreifen	3::igndisp 15776,16721 15735,16698 15759,16671
 Stadion Buschallee -> Hansastr.: Mittelstreifen	3::igndisp 15759,16671 15735,16698 15662,16656
 Mittelstreifen	3nocross::ignrte -3255,14685 -3209,14662 -3150,14631
+Mittelstreifen	3nocross::ignrte 22883,13013 22924,12833 22967,12647
+Ludwigsluster Str. -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22896,12827 22924,12833 22883,13013
+Hellersdorfer Str. -> Ludwigsluster Str.: Mittelstreifen	3::igndisp 22967,12647 22924,12833 22896,12827
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2528,7 +2537,7 @@ Barriere, kann auf dem Gehweg umfahren werden	BNP:3:28:trailer=6 12186,9205
 Schranke	BNP:5:-105 9393,21674
 Drängelgitter	BNP:5:48 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:1:88 17247,13519
-Schranke (Krankenhaus Herzberge)	BNP:2:-219 17780,13468
+Schranke (Krankenhaus Herzberge)	BNP:2:-174 17780,13468
 Drängelgitter (S-Bhf. Grunewald)	BNP:10:-55 731,9103
 Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5:-113 29103,4765
 Schranke	BNP:5:-107 32192,5915
@@ -2601,11 +2610,10 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen möglich	2:inwork 8837,1
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
-Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8238,14181
+Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8186,14150 8238,14181
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
-Sonnenkieker: Bauarbeiten	2:inwork 22610,13808 22669,13842 22692,13836
 Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 1826,20492 1761,20539 1741,20571

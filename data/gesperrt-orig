@@ -1284,6 +1284,7 @@ Ritterstr.	1 -3360,14525 -3316,14504
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Cecilienstr.: Mittelstreifen	3nocross 21831,13801 21853,13784 21918,13720
 Warnemünder Str.: Mittelstreifen	3nocross 2767,7592 2750,7444 2744,7397
 Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3nocross 8057,14876 8091,14895 8219,14897
 #: note: auf dem Radweg gibt es noch zusätzlich Absperrgitter
@@ -1621,11 +1622,13 @@ Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4116,12761 -4058,1
 Wilhelmstr.: Mittelstreifen	3nocross -3999,12912 -3962,12973 -3913,13054
 Spandauer Str.: Straßenbahntrasse	3nocross 10431,12709 10387,12760 10360,12793
 Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
+Invalidenstr.: Mittelstreifen	3nocross 7880,13315 8003,13374 8098,13419
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7821,12934 7776,12943 7595,12980
 Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 Hansastr.: Mittelstreifen	3nocross 15662,16656 15735,16698 15776,16721
 Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
+Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22924,12833 22967,12647
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -2009,7 +2012,7 @@ Schranke	BNP:5::trailer=10 10919,9804
 Drängelgitter, kann umfahren werden	BNP:3::trailer=10 14969,10138
 #: note: öfters mal offen? (mindestens einmal im Herbst 2012 geschlossen, am 2012-12-18 offen, am 2013-05-08 geschlossen, am 2013-06-07 offen)
 Schwingtor	BNP:3::trailer=10 14146,12921
-#: note: am 2013-08-15 war das Tor offen
+#: note: am 2013-08-15 war das Tor offen, am 2013-08-21 gegen 10 Uhr ebenso
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schranke	BNP:3::trailer=10 8622,13042
 Drängelgitter	BNP:3::trailer=10 18788,27989
@@ -2454,7 +2457,7 @@ Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
-#: last_checked: 2013-02-20
+#: last_checked: 2013-08-20
 #: next_check: 2015-01-01
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
@@ -2466,13 +2469,13 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-08-08
-#: check_frequency: 90d
+#: last_checked: 2013-08-20
+#: check_frequency: 60d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
 # REMOVED (fertig asphaltiert) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html --- #: next_check: 2013-03-31 --- #: XXX nach den Bauarbeiten bessere Qualität? Zurzeit nur Q1-, siehe qualitaet_s-orig --- (Bellevuepark): Asphaltbauarbeiten	2:inwork 22787,5582 22855,5554 22835,5452 22851,5321
 # 
-#: last_checked: 2013-07-10
+#: last_checked: 2013-08-20
 #: next_check: 2014-01-01
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
@@ -2524,9 +2527,9 @@ Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht mögl
 #: osm_watch: way id="54500456" version="10" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 # 
-#: last_checked: 2013-05-27
-#: next_check: 2013-08-08
-Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8238,14181
+#: last_checked: 2013-08-20
+#: check_frequency: 90d
+Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8186,14150 8238,14181
 # 
 # REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-08-30 --- #: next_check: 2012-10-15 --- Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 # REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-05-01 --- #: next_check: 2012-07-15 --- Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
@@ -2554,11 +2557,7 @@ Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,
 # REMOVED --- #: last_checked: 2012-03-23 --- #: next_check: 2012-04-25 --- Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
 # REMOVED (fertig!) --- #: last_checked: 2011-12-17 --- #: next_check: 2012-01-15 --- (Leuthener Platz - Wilhelm-Kabus-Str.): Bauzäune	2:inwork 7716,8356 7807,8354 7893,8327
 # REMOVED (fertig!) --- #: last_checked: 2011-09-27 --- #: next_check: 2011-10-15 --- (General-Pape-Str. - Gontermannstr.): Bauzäune	2:inwork 8106,8290 8202,8293 8265,8305 8276,8295
-# 
-#: last_checked: 2011-08-02
-#: next_check: 2012-01-01
-Sonnenkieker: Bauarbeiten	2:inwork 22610,13808 22669,13842 22692,13836
-# 
+# REMOVED (fertig!) --- #: last_checked: 2011-08-02 --- #: next_check: 2012-01-01 --- Sonnenkieker: Bauarbeiten	2:inwork 22600,13812 22668,13849 22692,13836
 # REMOVED (fertig, erfasst) --- #: last_checked: 2011-06-26 --- #: XXX hier muss noch der genaue Wegverlauf ermittelt werden --- Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
 # 
 #: last_checked: 2012-09-01 vvv
@@ -2607,7 +2606,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 # REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5062,6295 4997,6331 4971,6345
 # 
-#: last_checked: 2013-06-07
+#: last_checked: 2013-08-20
 #: next_check: 2013-12-31
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # 
@@ -2616,7 +2615,7 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # REMOVED --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
-#: last_checked: 2013-08-10
+#: last_checked: 2013-08-20
 #: check_frequency: 60d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

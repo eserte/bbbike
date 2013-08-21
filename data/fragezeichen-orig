@@ -123,7 +123,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-08-19
+#: last_checked: 2013-08-20
 #: next_check: 2014-01-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -211,7 +211,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15066,14579 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-07-14
+#: last_checked: 2013-08-21
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -246,7 +246,7 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-07-11
+#: last_checked: 2013-08-20
 #: next_check: 2013-11-02
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -465,7 +465,7 @@ Neues Wohnviertel in Rudow: hier entstehen auch neue Straßen (Verbundsteinpflast
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20130705.0855.386745.html
 #: next_check: 2014-09-30
-Rhinstr.: Radwegsituation nach den Bauarbeiten?	?::inwork 18234,13500 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
+Rhinstr.: Radwegsituation nach den Bauarbeiten?	?::inwork 18226,13506 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4987.html
 #: next_check: 2013-07-31
@@ -480,7 +480,7 @@ Bauarbeiten im Landschaftspark Herzberge: werden in Bereich des "Zeltlagers" neu
 # REMOVED (Eintrag wurde aufgehoben, das Problem besteht aber weiterhin) --- #: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich (bis Anfang 08/13) Kreuzung Straße der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976 --- #: XXX_indoor vmz-Eintrag: Straße der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich, Überfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975 --- #: XXX_prog ich brauche eine Kombination aus den Kategorien "3" und "qX". Oder wahlweise "3" mit einer Zeitangabe (wie BNP oder 0). --- #: last_checked: 2013-07-10 --- #: next_check: 2013-08-02 --- Straße der Pariser Kommune: Überqueren der Karl-Marx-Allee nur mit Zeitverlust möglich	?::inwork  12891,12549 12869,12425 12850,12286
 # 
 #: XXX außerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist
-#: last_checked: 2013-08-13
+#: last_checked: 2013-08-21
 #: check_frequency: 30d
 Allee der Kosmonauten/Beilsteiner Str.: Ampel in Bau	?::inwork 18875,13467
 # 
@@ -784,14 +784,7 @@ Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung
 Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,133 -11388,270
 # 
 # REMVOED --- mitten auf dem Weg wird gerade ein Haus gebaut; außerdem gab es in einem Amtsblatt eine "Entwidmung als Straßenland" --- #: last_checked: 2011-10-03 --- #: next_check: 2012-02-15 --- #: XXX zurzeit Bauarbeiten. Wahrscheinlich Gehwegplatten --- U Zwickauer Damm - U Wutzkyallee: für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 15622,2051 15622,2037 15312,2010
-# 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110922.1205.359607.html vvv
-#: last_checked: 2012-09-16
-#: next_check: 2013-06-01
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5098 (Verzögerung, März 2013)
-#: priority: #C
-Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,12824 23738,12799
-#: by: ^^^
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110922.1205.359607.html vvv --- #: last_checked: 2012-09-16 --- #: next_check: 2013-06-01 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5098 (Verzögerung, März 2013) --- #: priority: #C --- Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,12824 23738,12799 --- #: by: ^^^
 # 
 #: last_checked: 2013-07-17 vvv
 #: next_check: 2013-09-17 vvv
@@ -1081,9 +1074,7 @@ Grünanlage - Fleischerstr.: Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15
 #: XXX halbhoher BS am Weidenweg, wobei nach Osten hier irgendwo eine Absenkung ist
 Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13173,12331 13163,12382 13176,12500
 # REMOVED (nein, sieht nur nach Leitungsarbeiten aus) --- Kirchhofstr.: Sackgasse --- eventuell Bauarbeiten, vielleicht wird die Qualität hier besser?	? 13027,7368 13117,7471
-#: priority: #C
-Kaulsdorfer Str. (Hönow): Qualität?	? 25418,14538 25490,14601 25555,14657 25644,14721 25745,14808 25866,14898 25932,14955 25991,14926
-Ernst-Bloch-Str. - Hellersdorfer Str.: besteht hier für Radfahrer eine Verbindung? Qualität? Kann die Hellersdorfer Str. hier überquert werden?	? 22985,12807 22924,12833
+# REMOVED (uninteressante Verbindung mit 2x2 Stufen) --- Ernst-Bloch-Str. - Hellersdorfer Str.: besteht hier für Radfahrer eine Verbindung? Qualität? Kann die Hellersdorfer Str. hier überquert werden?	? 22985,12807 22924,12833
 Grünauer Str. - Kablower Weg: existiert hier eine Verbindung durch den Wald? Qualität?	? 22926,-340 22948,-322 22862,-126 22815,37
 # REMOVED (uninteressant?) --- Dohnagestell - Ugandastr.: Qualität? beleuchtet?	? 5522,15354 5710,15519 5906,15623
 #: XXX über Golfplatzgelände - gibt es hier Einschränkungen?
@@ -1141,6 +1132,7 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: wann wird die Fortsetzung gebaut? Qualität?	?::projected 8251,14337 8442,14456
 # 
 #: osm_watch: way id="186786509" version="2"
+#: last_checked: 2013-08-20
 #: next_check: 2014-04-15
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337
 # 
@@ -1488,9 +1480,7 @@ Radschutzstreifen, genaue Situation?	? -9620,-4939 -9642,-4916 -9862,-4705 -9872
 #: XXX siehe osm:
 Potsdam, Lutherplatz: ist dieser Abschnitt als Lutherplatz ausgeschildert?	? -10673,-2128 -10772,-2153
 # 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20111230.1240.364422.html
-#: priority: #C
-Neue Grottkauer Str.: Zebrastreifen, wo genau?	? 23189,13920 23368,13936
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20111230.1240.364422.html --- #: priority: #C --- Neue Grottkauer Str.: Zebrastreifen, wo genau?	? 23189,13920 23368,13936
 # 
 #: by: http://farm7.staticflickr.com/6051/6359918217_d76e41d8e1_b.jpg
 Hans-Werner-Klünner-Weg: Wo befindet sich der Weg? Qualität? Beleuchtet?	? -2916,12195 -2971,12062 -3112,12020
@@ -1696,7 +1686,7 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -13094,-1158 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013
 #: XXX Freesienweg (Amtsblatt) oder Fresienweg (BA)? Wikipedia meint "Freesien"
 #: XXX fehlt bei Berlin.coords.data
-#: last_checked: 2013-07-03 (Bauarbeiten in Gange, keine Straße zu sehen)
+#: last_checked: 2013-08-21 (Bauarbeiten in Gange, keine Straße zu sehen)
 #: next_check: 2014-04-15
 Freesienweg: geplante Straße, wo wird sie genau liegen? Wie wird der Straßenname genau geschrieben? Qualität?	?::projected 16002,12640 16004,12750
 # 
@@ -1824,7 +1814,6 @@ Potzlow - Fergitz: Gilt das hier noch immer: schlechtes Kopfsteinpflaster, breit
 # REMOVED (laut osm track, grade4 -> uninteressant!) --- Weg zwischen Tierpark und Bahntrasse: Qualität des Weges (Am westlichen Ende Beton, dann Feldweg Q2?), geht es weiter in Richtung Norden/Osten, vielleicht bis zur B1? Schranke am westlichen Ende	? 18690,10016 19641,10476 19734,10690 19713,10880
 Potsdamer Str., Wilhelm-Külz-Str., Bäkedamm, Potsdamer Allee: wo gibt es überall Radwege?	? -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -248,-1160 -71,-1037 348,-743 465,-662 586,-627 741,-584 925,-684 1212,-706 1346,-762
 Basdorf - Bernauer Heide: Ist der Weg wegen der Bahnstrecke überhaupt passierbar? Qualität? Dürfen hier Autos fahren?	? 12854,36464 13740,36119
-Ist eine Verbindung nach Seeberg vorhanden (westliche Seite des Ortes)?	? 28569,16324 28775,16193 29459,16348
 Leipe - Lübbenau: Waldweg, teilweise muss getragen werden (wie oft und wo genau?)	? 55335,-60336 55150,-60225 54925,-60300 54337,-60275 53208,-60124 52537,-60162 52137,-60387 51162,-59762 50725,-59237 50575,-59287
 Leipe - Burg, nördliche Strecke: Qualität?	? 55850,-60475 56425,-59960 57291,-59826 57848,-59878 57989,-59765 58120,-59786 58010,-60210 58351,-60356 58665,-60426 58659,-60530 58845,-60667 58915,-60655 59466,-60914 59518,-60816 59850,-60929 59987,-60862 60417,-61057 60545,-61185 60600,-61166 61066,-61334 61416,-61334 61355,-61459 61581,-61648 61645,-61855 61889,-61953 61998,-62056 62017,-62175 61953,-62212
 #: note: zumindest in Höhe des Bahnübergangs asphaltiert
@@ -2586,16 +2575,10 @@ Am Mönchberg: gesperrt (gesehen am 2008-10-25), scheint ein unbefestigter Weg zu
 Gartenallee: Qualität (wahrscheinlich Kopfsteinpflaster)?	? 1887,31658 2027,31518
 Erich-Mühsam-Str.: Qualität?	? 1762,31318 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
 (Eberswalde): Straßennamen, Qualität?	? 36020,48283 35838,47830 35428,47961
-Am Berge (Hönow): Qualität?	? 25526,14429 25642,14343 25790,14277 25916,14241 25934,14238
-Am Berge (Hönow): Qualität?	? 26431,14258 26552,14272 26670,14286
-Birkenstr. (Hönow): Qualität?	? 26437,14199 26435,14223 26431,14258 26418,14337 26403,14440 26374,14618
-Auf der Höhe (Hönow): Qualität des nördlichen Abschnitts?	? 26775,14653 26752,14811 26733,14936 26729,14969 26721,15024 26704,15122 26696,15196 26688,15261
-Dorfstr. (Hönow): Qualität?	? 26426,15806 26331,15786 26280,15773
-Hönow - Einkaufzentrum: Existiert eine Durchfahrt für Radfahrer? Qualität?	? 26426,15806 26656,15677
-Am Grünzug (Hönow): Qualität?	? 26844,15290 26828,15262 26812,15235 26778,15212 26696,15196 26624,15185 26547,15169 26473,15158 26334,15131
-Am Barschsee (Hönow): Qualität?	? 26093,15098 26113,15090 26182,15004 26194,14947 26055,14740
-#: XXX Zur Hoppegartener Str.: NN
-Am Weiher (Hönow): Qualität?	? 26113,15090 26242,15123 26316,15145 26328,15149
+Rosenstr. (Hönow): Qualität des nördlichen Abschnitts (auch asphaltiert?)?	? 26225,14620 26212,14754
+Am Kornfeld (Hönow): Qualität des nördlichen Abschnitts (auch Verbundsteinpflaster?)?	? 26321,14616 26293,14767 26268,14957 26242,15123
+Kirschallee (Hönow): Qualität des nördlichen Abschnitts (auch asphaltiert?)?	? 25942,14368 25991,14503
+Am Barschsee (Hönow): Qualität des südlichen Abschnitts?	? 26194,14947 26055,14740
 #: XXX laut anonymous: "Auf jeden Fall befahrbar! Mäßig bis gut!", aber leider keine genauen Angaben zur Wegbeschaffenheit
 Leo-Baeck-Str. - Seehofstr.: Beschaffenheit des Weges? Nachts beleuchtet?	? 1478,1721 1432,1904 1432,1964 1461,2073 1452,2095 1493,2249
 Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27007,11422 27165,11294
@@ -2976,10 +2959,16 @@ Mauswieselweg: Qualität? Wo wird die Straße genau liegen?	?::projected 26576,128
 #: last_checked ^^^
 #: XXX folgendes ist auch eine Privatstraße
 #: XXX evtl. existiert diese Straße bereits?
-Spitzmausweg: Qualität? Wo wird die Straße genau liegen?	?::projected 26138,12534 26231,12627 26285,12675
+#: last_checked: 2013-08-21 (in Bau --- wenn es die richtige Straße war)
+#: next_check: 2013-09-21
+Spitzmausweg: Qualität? Wo wird die Straße genau liegen?	?::projected 26160,12538 26231,12627 26285,12675
+#: XXX keine Straßenschilder vorhanden
+#: XXX Verbundsteinpflaster
+#: last_checked: 2013-08-21
+#: next_check: 2013-09-21
+Oder ist das der Spitzmausweg?	? 26096,12563 26183,12670
 #: XXX ^^^
-Verdistr.: Qualität der Verlängerung Richtung Osten? Existiert bereits eine direkte Verbindung zur Kaulbachstr.?	? 25980,12398 26174,12433 26201,12499
-# 
+# REMOVED (alles aktualisiert) --- Verdistr.: Qualität der Verlängerung Richtung Osten? Existiert bereits eine direkte Verbindung zur Kaulbachstr.?	? 26009,12407 26212,12449
 # REMOVED (bei osm ohne Namen --- und in der Realität auch nicht) --- Mühlenweg (Bohnsdorf): Qualität? Ist die Straße ausgeschildert?	? 20675,-526 20668,-251
 Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362
 # REMOVED (hier ist nur ein Einkaufszentrum; hmmm, vielleicht doch nicht, zweiter Versuch, siehe unten) --- #: XXX fehlt bei Berlin.coords.data: --- Märkische Zeile: gibt es tatsächlich einen Weg diesen Namens hier? Für Radfahrer relevant?	? 6855,21481 6874,21183
@@ -3174,8 +3163,7 @@ Gewerbestr. (Dahlwitz-Hoppegarten): Qualität?	? 25923,11076 25964,11310 26026,11
 (Weg entlang der Stadtgrenze): Qualität des südlichen Abschnitts?	? 25952,11935 25902,11846 25876,11774 25868,11706 25830,11636 25809,11613 25757,11479 25770,11431 25763,11396 25855,11296 25923,11076
 Uferweg (Tegeler See): Qualität?	? -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790
 # REMOVED (aber zumindest östlich der Aalemannkanalbrücke nicht bestätigt) --- #: XXX Eintrag von: Geske, Anselm [AM], --- Aalemannufer: gibt es Radstreifen am Aalemannufer?	? -1989,18378 -2053,18375 -2096,18376 -2535,18391 -2605,18393 -2678,18396 -2759,18400
-Ginsterweg (Hönow): Qualität im nördlichen Abschnitt?	? 26149,14332 26128,14458 26093,14649 26118,14697 26141,14744
-Fichtengrund (Hönow): Qualität im nördlichen Abschnitt?	? 25790,14277 25840,14419 25902,14532 26000,14699
+Ginsterweg (Hönow): Qualität im nördlichen Abschnitt?	? 26093,14649 26118,14697 26141,14744
 # 
 #: XXX Kasernengelände vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file vvv
@@ -3238,14 +3226,13 @@ Dahmsdorf - Münchehofe: alternative Strecke durch den Wald, Qualität?	? 59488,16
 # REMOVED (aber vorerst nicht aufnehmen) --- (Am Hohenzollernkanal): Rassengittersteine, zweispurig (Q2+), Schranke am östlichen Ende ? 1952,15825 2592,15824 2603,15838
 # REMOVED (aber vorerst nicht aufnehmen) --- Kolonieweg: Verbundsteinpflaster, geht nach Norden noch ein kleines Stück weiter	? 1737,15797 1708,16061
 # REMOVED (aber vorerst nicht aufnehmen) --- Nelkenweg: Gehwegplatten, eng, nur für Fußgänger	? 2350,15916 2342,15828
-# 
-Heinrich-Grüber-Str. - Waldheimer Str.: Wie ist die Qualität des Weges? Nachts beleuchtet?	? 24495,13780 24524,13763 24599,13817 24771,13949
 # REMOVED (existiert nicht) --- Putenweg - Waßmannsdorfer Chaussee: für Radfahrer befahrbar? Qualität?	? 16346,-394 16400,-409
 # REMOVED (Straße aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/56re.pdf/file?y=2011 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 --- #: XXX Privatstraße --- #: XXX fehlt in Berlin.coords.data --- #: XXX genaue Lage? --- Feldspatzwenweg: Qualität? Wo genau befindet sich die Straße?	? 7609,23108 7583,23177 7825,23265 7852,23200
 # REMOVED (vorerst nicht aufnehmen) --- #: XXX unbeleuchtet, geschützte Grünanlage, Weg teilt sich, 3 Stufen auf beiden Seiten --- Weg im Volkspark Wittenau: wie geht es weiter?	? 5356,21146 4942,20830
 # REMOVED (auf der Seite des Hohenschönhauser Tors habe ich keine Schilder gesehen, auf der anderen auch nicht; den Weg durch die Einkaufspassage habe ich trotzdem aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- #: XXX --- Stellerweg: existiert hier ein Weg? Ausgeschildert? Qualität für Radfahrer?	? 15367,14512 15221,14550
 # REMOVED (hier sind zwar Wege, aber keine ausgeschilderten) --- Dr.-Jacoby-Weg: Qualität? Befindet sich der Weg hier?	? 25598,6158 25413,6240
 # REMOVED (Weg aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- Winterweg: Qualität? Ausgeschildert?	? 28809,462 29120,271 29481,44 29979,-120 30421,-424
+# 
 #: by: http://www.potsdam.de/cms/dokumente/10084122_1189396/4d29ee09/Amtsblatt_9_2011.pdf vvv
 #: XXX fehlt in Potsdam.coords.data: PLZ=14471
 Mertz-von-Quirnheim-Str. (Potsdam): Qualität? Existiert eine Verbindung zum Uferweg?	? -14642,-2159 -14542,-2294
@@ -3556,3 +3543,64 @@ Route Lychen - Templin: Qualität?	? 2480,89399 2468,89293
 Route Lychen - Templin: Qualität?	? 3153,88773 3614,88158 3855,88004 3976,87729 4456,87107 5066,86624 5090,86419 5265,86347 5362,86099 5316,85945 6071,85495 6319,85251 8353,84535 8746,84188
 Route Lychen - Templin: Qualität?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
 Route Lychen - Templin: Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
+Hönow - Seeberg: Qualität der Straße?	? 27074,15434 27197,15707 28489,16294 28699,16330 28871,16297 28974,16181 29112,16187 29186,16273 29231,16386 29406,16338 29537,16344
+Berlin - Altlandsberg: ist der Radweg asphaltiert?	? 26908,15630 26930,15614 27197,15707
+Ulmenstr. (Hönow): Qualität im mittleren Abschnitt (auch asphaltiert?)?	? 26558,15092 26570,15003 26581,14919 26588,14870 26597,14806 26599,14791 26620,14639
+Ulmenstr. (Hönow): Qualität im südlichen Abschnitt (auch asphaltiert?)?	? 26670,14286 26689,14153
+Jägerweg (Hönow): Qualität im südlichen Abschnitt (auch Verbundsteinpflaster?)?	? 26901,15147 26933,15087 26974,15030
+Weidenweg (Hönow): Qualität im südwestlichen Abschnitt (auch Verbundsteinpflaster?)?	? 26815,15141 26786,15136
+Platanenstr. (Hönow): Qualität im westlichen Abschnitt (auch asphaltiert?)? Existiert für Radfahrer eine Verbindung zur Hoppegartener Str.?	? 26636,15108 26558,15092 26487,15080 26399,15064
+An der Heide (Hönow): Qualität im westlichen Abschnitt (auch Verbundsteinpflaster?)?	? 26570,15003 26374,14977 26268,14957 26194,14947
+Gartenstr. (Hönow): Qualität?	? 26597,14806 26424,14784 26293,14767 26212,14754 26141,14744 26055,14740
+Am Lärchengrund (Hönow): Qualität im westlichen Abschnitt?	? 26620,14639 26464,14627 26374,14618 26321,14616 26225,14620 26093,14649 25998,14704 26025,14756
+Am Lärchengrund (Hönow): Qualität im westlichen Abschnitt?	? 26118,14697 26055,14740 26025,14756 25924,14811
+Sophienstr. (Hönow): Qualität?	? 25490,14601 25444,14665 25420,14827 25503,14834 25527,14696 25555,14657
+Straße am Haussee (Hönow): Qualität?	? 26108,16196 26002,16251 25894,16347 25789,16193 25846,16101 25825,15968 25893,15778 25880,15649 25866,15543
+An der Herrenfurth (Hönow): Qualität?	? 25880,15649 26037,15628
+Wöhrdetalstr. (Hönow): Qualität?	? 25764,17255 25659,17133 25601,16925
+Seestr. (Hönow): Qualität?	? 25923,17002 25736,16894
+Grüner Weg (Hönow): Qualität?	? 26143,16154 26257,16204 26154,16397
+Teichgraben (Hönow): Qualität?	? 26586,15443 26561,15369
+#: XXX wahrscheinlich komplett wassergebundene Decke
+Mahlsdorfer Str. - Brandenburgische Str. (Hönow): Qualität?	? 26342,15374 26364,15370 26407,15441 26524,15476 26586,15443
+Stienitzstr. (Hönow): Qualität?	? 27074,15434 27060,15410 27013,15333 26951,15227 26901,15147
+Brandenburgische Str. (Hönow): existieren im Mittelteil auch Radwege?	? 26951,15227 27054,15168 27163,15105 27270,15044 27375,14984 27478,14924
+Parallelstr. (Hönow): Qualität?	? 26669,15394 26679,15418 26674,15452 26764,15477 26801,15456
+Mühlenfließ (Hönow): Qualität?	? 26738,15353 26801,15456
+Stöbberstr. (Hönow): Qualität?	? 26801,15456 26909,15389 27013,15333 27119,15272 27224,15209
+Am Wall (Hönow): Qualität? Nur für Radfahrer?	? 27060,15410 27104,15384
+Am Wall (Hönow): Qualität?	? 27104,15384 27164,15348 27265,15288 27374,15223 27479,15162 27540,15127
+Kalkseestr. (Hönow): Qualität?	? 27164,15348 27119,15272 27054,15168 26974,15030
+Wuhleweg (Hönow): Qualität?	? 26933,15087 26983,15164
+Schulstr. (Hönow): Qualität?	? 27265,15288 27224,15209 27163,15105 27068,14947 27025,14879 27010,14855 26976,14798 26959,14768 26940,14738 26915,14698 26857,14668
+Gänseblümchenweg (Hönow): Qualität?	? 26857,14668 26840,14783 26829,14852 26820,14915 26810,14978 26799,15050 26786,15136
+Bogenstr. (Hönow): Qualität im nordwestlichen Abschnitt?	? 26856,15071 26887,15018 26929,14963 26980,14915 27025,14879 27129,14815 27194,14793 27256,14775
+Kleewall (Hönow): Qualität?	? 26799,15050 26827,15056 26856,15071
+Schlehenweg (Hönow): Qualität?	? 26810,14978 26849,14990 26887,15018
+Sanddornweg (Hönow): Qualität?	? 26820,14915 26876,14927 26929,14963
+Rotdornstr. (Hönow): Qualität?	? 26829,14852 26902,14870 26980,14915
+#: XXX genaue Schreibweise des Straßennamens?
+Weißdornweg (Hönow): Qualität? Weissdornweg oder Weißdornweg?	? 26840,14783 26862,14787 26905,14800 26945,14815 27010,14855
+Hagebuttenweg (Hönow): Qualität?	? 26862,14787 26940,14738
+Mistelweg (Hönow): Qualität?	? 26959,14768 26905,14800
+Veilchenweg (Hönow): Qualität?	? 26945,14815 26976,14798
+Stöbberstr. - An der Alten Gärtnerei (Hönow): Qualität? Für Radfahrer befahrbar?	? 27224,15209 27330,15147
+An der Alten Gärtnerei (Hönow): Qualität?	? 27629,14972 27542,15024 27435,15086 27330,15147
+Marderstr. (Hönow): Qualität des nordöstlichen Abschnitts?	? 27374,15223 27330,15147 27270,15044 27167,14874 27129,14815 27056,14692 27005,14604 27010,14566
+Stuttgarter Str. (Hönow): Qualität im südlichen Abschnitt?	? 27137,14455 27148,14335 27159,14136
+Augsburger Str. (Hönow): Qualität des westlichen Abschnitts?	? 27338,14341 27237,14338 27148,14335
+Nürnberger Str. (Hönow): Qualität?	? 27250,14136 27237,14338 27258,14588
+Münchener Str. (Hönow): Qualität?	? 27349,14138 27338,14341 27367,14578 27434,14750
+Zochestr. (Hönow): Qualität?	? 27507,14969 27606,14913
+Bamberger Str. (Hönow): Qualität?	? 27663,15023 27594,15067
+Wildwechsel (Hönow): Qualität?	? 27479,15162 27435,15086 27375,14984 27288,14843
+Dachsbau (Hönow): Qualität?	? 27216,14836 27227,14855 27302,14977
+Fuchsbau (Hönow): Qualität?	? 27352,14836 27400,14916
+Rosenheimer Str. (Hönow): Qualität im nordöstlichen Abschnitt (auch Verbundsteinpflaster?)?	? 27534,14890 27506,14848
+Iltisbau (Hönow): Qualität im westlichen Abschnitt (auch Verbundsteinpflaster?)?	? 27352,14836 27288,14843 27227,14855 27167,14874
+Erpeweg (Hönow): Qualität?	? 27068,14947 27013,14977 27093,15102
+Amselweg (Hönow): Qualität im nördlichen Abschnitt (auch Verbundsteinpflaster?)?	? 27232,14712 27232,14720 27256,14775
+Kiebitzgrund (Hönow): Qualität im westlichen Abschnitt (auch Verbundsteinpflaster?)?	? 27161,14592 27099,14582 27010,14566
+Drosselgasse (Hönow): Qualität?	? 27099,14582 27083,14692
+Sperlingsweg (Hönow): Qualität? Teilweise für Autos gesperrt?	? 27056,14692 27083,14692 27148,14703 27232,14712 27327,14725
+Finkensteg (Hönow): Qualität?	? 27194,14793 27148,14703 27161,14592
