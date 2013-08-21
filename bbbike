@@ -18955,6 +18955,7 @@ sub set_coords_str {
 	Route::_coord_as_string([$x,$y]);
     } else {
 	my @accept_tags = qw(s l p pp lsa);
+	if ($add_net{fz}) { push @accept_tags, 'fz' }
 	if ($net_type eq 's-car') { push @accept_tags, 'sBAB' }
 	my($item, @tags) = find_below($c, @accept_tags);
 	return if !defined $item;
