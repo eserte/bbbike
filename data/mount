@@ -503,7 +503,6 @@ Steigung 2.8% (Veteranenstr.)	St; 10282,14212 10306,14247
 Steigung 2.8% (Sobernheimer Str.)	St; 28051,803 28003,747
 Steigung 2.8% (Sembritzkistr.)	St; 7018,5201 7095,5317
 Steigung 2.8% (Runebergweg)	St; -6747,5169 -6904,5175
-Steigung 2.8% (Rhinstr. (Marzahn, Friedrichsfelde, Lichtenberg, Alt-Hohenschönhausen))	St; 18220,11710 18215,12123
 Steigung 2.8% (Pfaueninselchaussee)	St; -6648,1613 -6784,1815
 Steigung 2.8% (Pfaueninselchaussee)	St; -6577,1395 -6648,1613
 Steigung 2.8% (Pfaueninselchaussee)	St; -6492,1204 -6577,1395
@@ -585,6 +584,7 @@ Steigung 2.6% (Sembritzkistr.)	St; 7199,5479 7157,5418
 Steigung 2.6% (Röblingstr.)	St; 7497,5610 7477,5475
 Steigung 2.6% (Röblingstr.)	St; 7477,5475 7492,5415
 Steigung 2.6% (Ruschestr.)	St; 15863,11992 15879,12131
+Steigung 2.6% (Rhinstr. (Marzahn, Friedrichsfelde, Lichtenberg, Alt-Hohenschönhausen))	St; 18215,11690 18215,12123
 Steigung 2.6% (Reuterstr. (Neukölln))	St; 12195,8436 12216,8323
 Steigung 2.6% (Quastenhornweg)	St; -7595,4374 -7557,4340
 Steigung 2.6% (Quastenhornweg)	St; -7557,4340 -7473,4306
@@ -943,6 +943,8 @@ Steigung 2.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 9020,9150 908
 Steigung 2.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 9007,9264 8982,9198
 Steigung 2.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 8990,9166 9020,9150
 Steigung 2.1% ((Methfesselstr. - Kreuzbergstr., Viktoriapark))	St; 8982,9198 8990,9166
+Steigung 2.1% ((Gensinger Str. - Alt-Friedrichsfelde))	St; 18934,11796 19138,11815
+Steigung 2.1% ((Gensinger Str. - Alt-Friedrichsfelde))	St; 18853,11780 18934,11796
 Steigung 2.0% (Wissmannstr. (Neukölln))	St; 11768,8739 11769,8515
 Steigung 2.0% (Warschauer Str.)	St; 13588,11490 13541,11355
 Steigung 2.0% (Trakehner Allee)	St; -157,11943 -110,12019
@@ -1003,8 +1005,6 @@ Steigung 2.0% (Alsenzer Weg)	St; 27863,943 27804,878
 Steigung 2.0% ((Jagdschloss Grunewald - westlicher Hüttenweg))	St; 546,6583 369,6594
 Steigung 2.0% ((Jagdschloss Grunewald - westlicher Hüttenweg))	St; 369,6594 340,6598
 Steigung 2.0% ((Jagdschloss Grunewald - westlicher Hüttenweg))	St; 340,6598 218,6571
-Steigung 2.0% ((Gensinger Str. - Alt-Friedrichsfelde))	St; 19064,11805 19142,11804
-Steigung 2.0% ((Gensinger Str. - Alt-Friedrichsfelde))	St; 18853,11780 19064,11805
 Steigung 1.9% (Zur Gartenstadt)	St; 21847,-303 21800,-109
 Steigung 1.9% (Wernerstr. (Wannsee))	St; -5944,1004 -6006,1234
 Steigung 1.9% (Walsheimer Str.)	St; 21251,11560 21352,11701
@@ -1280,7 +1280,6 @@ Steigung 1.6% (Grasehorstweg)	St; 30947,4528 31011,4750
 Steigung 1.6% (Grabertstr.)	St; 7058,4890 7091,4760
 Steigung 1.6% (Grabertstr.)	St; 7052,4911 7058,4890
 Steigung 1.6% (Gottfried-Arnold-Weg)	St; -8157,6259 -8251,6214
-Steigung 1.6% (Gensinger Str.)	St; 19004,11780 19005,11767
 Steigung 1.6% (Fintelmannstr.)	St; -7630,409 -7712,407
 Steigung 1.6% (Fintelmannstr.)	St; -7554,431 -7630,409
 Steigung 1.6% (Fintelmannstr.)	St; -7505,454 -7554,431
@@ -1385,6 +1384,7 @@ Steigung 1.5% (Gudrunstr.)	St; 17466,12241 17300,12173
 Steigung 1.5% (Grünheider Weg)	St; 31154,4547 31224,4775
 Steigung 1.5% (Grunewaldstr. (Steglitz))	St; 4419,5842 4312,5889
 Steigung 1.5% (Gerichtstr.)	St; 8456,15235 8570,15107
+Steigung 1.5% (Gensinger Str.)	St; 19004,11780 19005,11767
 Steigung 1.5% (Gatower Str.)	St; -4780,9838 -4784,9894
 Steigung 1.5% (Franklinstr.)	St; 5018,12322 5000,12288
 Steigung 1.5% (Frankfurter Allee [Nebenfahrbahn])	St; 16837,11920 16870,11920
@@ -1697,7 +1697,8 @@ Steigung 1.2% (Friedrich-Karl-Str. (Tempelhof))	St; 9161,5535 8968,5554
 Steigung 1.2% (Fregestr.)	St; 5657,6451 5777,6628
 Steigung 1.2% (Enkenbacher Weg)	St; 27325,1265 27344,1329
 Steigung 1.2% (Enkenbacher Weg)	St; 27280,1119 27325,1265
-Steigung 1.2% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22449,15127 22605,15111
+Steigung 1.2% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22578,15114 22605,15111
+Steigung 1.2% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22449,15127 22578,15114
 Steigung 1.2% (Ebereschenallee (Westend))	St; 1697,11911 1539,11955
 Steigung 1.2% (Dottistr.)	St; 15685,12154 15879,12131
 Steigung 1.2% (Diedenhofer Str.)	St; 11316,14360 11249,14267
@@ -1945,7 +1946,6 @@ Steigung 1.0% (Mittelbrunner Steig)	St; 27948,439 27893,490
 Steigung 1.0% (Mehringdamm)	St; 9280,9476 9248,9350
 Steigung 1.0% (Max-Urich-Str.)	St; 8953,14758 9034,14910
 Steigung 1.0% (Maulbronner Ufer)	St; 7308,4080 7487,4104
-Steigung 1.0% (Marzahner Chaussee)	St; 18417,11854 18420,11864
 Steigung 1.0% (Mariendorfer Damm)	St; 9259,4815 9277,4664
 Steigung 1.0% (Mariendorfer Damm)	St; 9248,4904 9259,4815
 Steigung 1.0% (Mariendorfer Damm)	St; 9239,4980 9248,4904

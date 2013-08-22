@@ -9095,7 +9095,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25506,15585 25866,15543 25955,15531 26071,15470
+userdel	2::inwork 25528,15587 25866,15543 25955,15531 26071,15470
 EOF
      },
      { from  => 1184709600, # 2007-07-18 00:00
@@ -9211,7 +9211,7 @@ EOF
        text  => 'L 033 zw. Kreuz. Hönow und Krz. Landsberger Ch./ Stendaler Str. Deckeninstandsetzung Vollsperrung 06.08.2007-17.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26336,15473 26175,15461 26071,15470 25955,15531 25866,15543 25506,15585 25342,15609 25007,15650 23893,15893
+userdel	2::inwork 26336,15473 26175,15461 26071,15470 25955,15531 25866,15543 25528,15587 25007,15650 23992,15894 23965,15894 23895,15904
 EOF
      },
      { from  => 1186092000, # 2007-08-03 00:00
@@ -18212,7 +18212,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100720.1055.303592.html',
        data  => <<EOF,
-userdel	q4::inwork 22605,15111 22449,15127 22419,15127 22326,15116 22059,15153
+userdel	q4::inwork 22605,15111 22578,15114 22449,15127 22419,15127 22326,15116 22059,15153
 EOF
      },
      { from  => 1281128604, # 2010-08-08 00:00 1281218400
@@ -20723,7 +20723,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120914.1355.375249.html',
        data  => <<EOF,
-userdel	2::inwork 18286,11275 18409,11348 18477,11388 18619,11463
+userdel	2::inwork 18286,11275 18421,11344 18477,11388 18619,11463
 EOF
      },
      { from  => 1347508800, # 2012-09-13 06:00
