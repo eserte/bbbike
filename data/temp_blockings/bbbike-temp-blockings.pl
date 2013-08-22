@@ -21664,4 +21664,22 @@ EOF
 userdel	2::inwork 17736,5441 17886,5587
 EOF
      },
+     { from  => 1376816220, # 2013-08-18 10:57
+       until => 1381485600, # 2013-10-11 12:00
+       text  => 'Neumannstr. (Pankow): Baustelle, zwischen Thulestr. und Eschengraben Richtung Norden gesperrt, bis 11.10.2013 ',
+       type  => 'handicap',
+       source_id => 'IM_020168',
+       data  => <<EOF,
+userdel	q4::inwork; 11635,16616 11621,16749
+EOF
+     },
+     { from  => 1376816220, # 2013-08-18 10:57
+       until => 1381500000, # 2013-10-11 16:00
+       text  => 'Thulestr. (Pankow): Baustelle zwischen Neumannstraße und Talstr., Fahrbahn gesperrt, bis 11.10.2013 ',
+       type  => 'handicap',
+       source_id => 'IM_020183',
+       data  => <<EOF,
+userdel	q4::inwork 11825,16666 11767,16631 11725,16626 11635,16616
+EOF
+     },
     );

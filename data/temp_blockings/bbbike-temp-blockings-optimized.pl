@@ -3314,6 +3314,26 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'data' => 'userdel	2::inwork 17736,5441 17886,5587
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_020168',
+         'until' => 1381485600,
+         'text' => 'Neumannstr. (Pankow): Baustelle, zwischen Thulestr. und Eschengraben Richtung Norden gesperrt, bis 11.10.2013 ',
+         'from' => 1376816220,
+         'id' => 2470,
+         'data' => 'userdel	q4::inwork; 11635,16616 11621,16749
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020183',
+         'until' => 1381500000,
+         'text' => 'Thulestr. (Pankow): Baustelle zwischen Neumannstraße und Talstr., Fahrbahn gesperrt, bis 11.10.2013 ',
+         'from' => 1376816220,
+         'id' => 2471,
+         'data' => 'userdel	q4::inwork 11825,16666 11767,16631 11725,16626 11635,16616
+',
+         'type' => 'handicap'
        }
      
 );
