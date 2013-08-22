@@ -3369,13 +3369,13 @@ Trollblumenweg: wird verl‰ngert, Qualit‰t der Verl‰ngerung?	?::inwork 16020,3732
 #: last_checked: 2012-09-05 (Kay Leonhardt) vvv
 #: next_check: 2013-04-01 vvv
 #: by: http://farm9.staticflickr.com/8020/7599711312_1407440291_c.jpg (noch in Bau)
-#: XXX bei osm bereits eingetragen, allerdings teilweise ohne Straﬂennamen (2013-02)
-Ellen-Widmann-Pfad: Existiert die Straﬂe schon? Qualit‰t? Wo liegt die Straﬂe genau?	? 3902,2454 3902,2405 3894,2368
+#: XXX bei osm bereits eingetragen
+Ellen-Widmann-Pfad: Existiert die Straﬂe schon? Qualit‰t? Wo liegt die Straﬂe genau?	? 3902,2454 3902,2405 3894,2368 3853,2301 3812,2302 3813,2368 3814,2408
 #: XXX bei osm mit Straﬂennamen eingetragen (2013-03) (living street)
-#: osm_watch: way id="169558830" version="2"
-Ines-Bolla-Pfad: Existiert die Straﬂe schon? Qualit‰t? Wo liegt die Straﬂe genau?	? 3730,2368 3894,2368
-#: osm_watch: way id="169558826" version="2"
-Maggy-Breittmayer-Pfad: Existiert die Straﬂe schon? Qualit‰t? Wo liegt die Straﬂe genau?	? 3731,2411 3902,2405
+# REMOVED --- : osm_watch: way id="169558830" version="2"
+Ines-Bolla-Pfad: Existiert die Straﬂe schon? Qualit‰t? Wo liegt die Straﬂe genau?	? 3730,2368 3813,2368 3894,2368
+# REMOVED --- : osm_watch: way id="169558826" version="2"
+Maggy-Breittmayer-Pfad: Existiert die Straﬂe schon? Qualit‰t? Wo liegt die Straﬂe genau?	? 3731,2411 3814,2408 3902,2405
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -3538,3 +3538,24 @@ Route Lychen - Templin: Qualit‰t?	? 2480,89399 2468,89293
 Route Lychen - Templin: Qualit‰t?	? 3153,88773 3614,88158 3855,88004 3976,87729 4456,87107 5066,86624 5090,86419 5265,86347 5362,86099 5316,85945 6071,85495 6319,85251 8353,84535 8746,84188
 Route Lychen - Templin: Qualit‰t?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
 Route Lychen - Templin: Qualit‰t?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
+Waldstr. (Waldesruh): Qualit‰t?	? 24768,8087 24797,8248 24857,8567 25065,8899 25211,9085
+Eichenstr. (Waldesruh): Qualit‰t?	? 25211,9085 25327,9244 25389,9332 25458,9424 25522,9522
+Buchenstr. (Waldesruh): Qualit‰t?	? 25329,9375 25389,9332 25549,9237
+Kiefernstr. (Waldesruh): Qualit‰t?	? 25458,9424 25633,9298 25656,9249
+Ahornstr. (Waldesruh): Qualit‰t?	? 25327,9244 25549,9237 25656,9249 25828,9259
+Kˆrnerstr. (Waldesruh): Qualit‰t?	? 25520,9055 25537,8960 25401,8763
+Arndtstr. (Waldesruh): Qualit‰t?	? 25243,8878 25301,8932 25537,8960 25626,8965 25661,8942
+Stichstr. (Waldesruh): Qualit‰t?	? 25014,8038 25069,7996
+Rˆdernstr. (Waldesruh): Qualit‰t? Rˆdernstr. oder Roedernstr.?	? 25084,8136 25159,8083
+Scharnweberstr (Waldesruh): Qualit‰t?	? 25159,8083 25191,8107 25347,8213 25534,8353 25603,8414 25655,8482 25694,8542 25709,8557 25731,8867 25731,8926 25677,8964
+Bredowstr. (Waldesruh): Qualit‰t?	? 25731,8867 25574,8634
+Bredowstr. (Waldesruh): Qualit‰t?	? 25484,8499 25433,8433 25301,8252 25191,8107
+Leibnizstr. (Waldesruh): Qualit‰t?	? 25433,8433 25534,8353
+Heidem¸hler Weg (Waldesruh): Qualit‰t?	? 25476,9561 25522,9522 25828,9259 25868,9225 26088,9034 26243,8586
+An der Trainierbahn (Waldesruh): Qualit‰t?	? 26243,8586 25887,8456 25780,8385 25175,7953 24975,7810
+An der Trainierbahn (Waldesruh): Qualit‰t?	? 25655,8482 25780,8385
+Marienfelder Str. (Waldblick): Qualit‰t?	? 10040,-3202 9971,-3342 9869,-3556 9792,-3734 9699,-3918 9546,-4339 9543,-4567
+Fritz-Reuter-Str. (Waldblick): Qualit‰t?	? 10138,-3226 10049,-3432
+Hans-Thoma-Str. (Waldblick): Qualit‰t?	? 9869,-3556 9976,-3604 10017,-3615 10131,-3630 10246,-3643 10270,-3646 10305,-3654 10343,-3661
+Hans-Olde-Str. (Waldblick): Qualit‰t?	? 10246,-3643 10217,-3722 10172,-3867 10105,-3999
+Lesser-Ury-Weg (Waldblick): Qualit‰t?	? 10217,-3722 10278,-3746 10305,-3654

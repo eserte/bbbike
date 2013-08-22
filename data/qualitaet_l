@@ -66,7 +66,7 @@ Löwenbruch: Kopfsteinpflaster	Q2 5044,-12402 5002,-12551 4555,-12852
 Diedersdorf: Pflastersteine, OK	Q1 7558,-7093 7390,-7184 7378,-7406 7309,-7482 7506,-7471
 Diedersdorf: Kopfsteinpflaster, OK	Q1 7506,-7471 7981,-7165
 Arcostr.: Asphalt	Q0 10323,-3150 10309,-3191
-Arcostr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 10309,-3191 10277,-3262 10184,-3499 10088,-3740
+Arcostr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 10309,-3191 10277,-3262 10192,-3477 10131,-3630 10088,-3740
 Arcostr.: Asphalt	Q0 10088,-3740 10070,-3790 9971,-3985
 Groß-Kienitz: schlechtes Kopfsteinpflaster	Q3 14702,-8736 14913,-9037 15109,-8950
 Am Fängersee: Feld- und Waldwege, größtenteils gut befahrbar (20 km/h), einige Stellen mit tiefen Sand	Q2 38908,19853 38889,20172 39128,20574 39130,20957 39431,21380 39367,21528 39251,21678 39439,21968 39372,22521
@@ -2359,7 +2359,7 @@ Kantstr.: Kopfsteinpflaster	Q2 24885,7970 24953,8152 25119,8379 25295,8623
 Hegelstr.: unbefestigte Straße	Q2 24836,8145 24885,8208 25048,8432 25217,8682
 Humboldtstr.: Asphalt	Q0 25064,8793 25147,8731
 Kleiststr.: Asphalt	Q0 25169,8935 25243,8878
-Köpenicker Allee (Waldesruh): Asphalt	Q0 25047,8086 24923,7903 24910,7896
+Köpenicker Allee (Waldesruh): Asphalt	Q0 25047,8086 25014,8038 24923,7903 24910,7896
 (Radweg BU): Asphalt	Q0 17964,26823 18133,26914
 Am Langen Grund (Großziethen): Verbundsteinpflaster	Q1 12647,-1187 12652,-1142 12629,-1134 12633,-1095 12622,-1089 12629,-1046
 Am Langen Grund (Großziethen): Verbundsteinpflaster	Q1 12703,-1057 12629,-1046 12556,-1033 12517,-1042
@@ -2752,6 +2752,8 @@ Hönow - Neuenhagen: leicht welliger Asphalt	Q0 27079,15430 27692,15066
 Hönow - Seeberg: Asphalt	Q0 27079,15430 27197,15707 27314,15749 28488,16299 28552,16299 28700,16335 28888,16293 28955,16206 29004,16177 29112,16187 29131,16204 29178,16259 29234,16391 29269,16380 29406,16338 29537,16344 29701,16449 29756,16464 29912,16507 30006,16534 30075,16535 30118,16565
 Berlin - Altlandsberg: asphaltierter Radweg	Q0 26908,15630 26930,15614 27197,15707
 Blumberger Weg (Seeberg): Kopfsteinpflaster	Q2 29537,16344 29528,16384 29485,16450 29451,16641
+Robinienweg (Waldesruh): Asphalt	Q0 25235,9068 25300,9149
+Robinienweg (Waldesruh): Asphalt	Q0 25300,9149 25727,9175 25822,9163
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144
@@ -3109,7 +3111,7 @@ Kastanienallee: sandiger Pferdeweg	Q3 29868,9084 29271,9562 28934,10184 28827,10
 Kreuzstr. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -10119,-1515 -10232,-1703 -10267,-1759
 Köpenicker Allee (Dahlewitz-Hoppegarten): Asphalt	Q0 26771,10496 26321,9868
 Dahlwitzer Str. (Waldesruh): Asphalt	Q0 26321,9868 25868,9225
-Köpenicker Allee (Waldesruh): Asphalt	Q0 25868,9225 25822,9163 25756,9073 25731,9038 25661,8942 25489,8699 25389,8558 25212,8313 25047,8086
+Köpenicker Allee (Waldesruh): Asphalt	Q0 25868,9225 25822,9163 25756,9073 25731,9038 25677,8964 25661,8942 25489,8699 25389,8558 25212,8313 25084,8136 25047,8086
 Weberplatz: schlechtes Kopfsteinpflaster	Q3 -10425,-1773 -10381,-1768 -10332,-1653 -10310,-1604 -10232,-1703
 Weberplatz: schlechtes Kopfsteinpflaster	Q3 -10310,-1604 -10334,-1565
 Weberplatz: Kleinsteinpflaster	Q1 -10332,-1653 -10267,-1759
@@ -3182,7 +3184,7 @@ Stormstr.: Beton	Q1 -15060,-2626 -15168,-2529 -15243,-2459 -15306,-2401 -15390,-
 Stormstr.: Beton	Q1 -15168,-2529 -15235,-2603 -15179,-2662 -15206,-2695 -15239,-2728 -15268,-2762 -15331,-2700 -15390,-2678
 Stormstr.: Beton	Q1 -15206,-2695 -15270,-2639 -15300,-2670 -15331,-2700
 Stormstr.: Beton	Q1 -15239,-2728 -15300,-2670
-Mahlsdorfer Allee (Waldesruh, Hoppegarten): sehr guter Asphalt	Q0 25280,9031 25686,9071
+Mahlsdorfer Allee (Waldesruh, Hoppegarten): sehr guter Asphalt	Q0 25280,9031 25520,9055 25686,9071
 Mahlsdorfer Allee (Waldesruh, Hoppegarten): Kopfsteinpflaster	Q2 25686,9071 25756,9073
 Mahlsdorfer Allee (Waldesruh, Hoppegarten): unbefestige Straße	Q2 25756,9073 25892,9098
 Pilsener Str. (Waldesruh): Asphalt	Q0 25169,9114 25211,9085 25235,9068 25265,9045 25280,9031

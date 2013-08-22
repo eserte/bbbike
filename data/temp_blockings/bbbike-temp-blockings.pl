@@ -2859,7 +2859,7 @@ EOF
        text  => 'K 6424; (Dahlwitzer Landstr.-Münchehofe-B 1); OD Münchehofe Straßenausbau Vollsperrung 12.09.2005-31.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 28619,9588 26851,9005
+userdel	q4 28619,9588 26928,9004
 EOF
      },
      { from  => 1127772000, # 2005-09-27 00:00
@@ -21475,6 +21475,8 @@ EOF
        data  => <<EOF,
 #: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5044.html
+#: prio: #A
 #: next_check: 2013-08-23
 userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
 EOF
@@ -21594,19 +21596,23 @@ EOF
        text  => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="80221295" version="17" brb
+#: XXX bei osm jetzt mit bicycle=yes getaggt vvv
+#: add_fragezeichen: Wurde das Verbot für Radfahrer mittlerweile wieder aufgehoben? vvv
+#: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
-#: osm_watch: way id="83106248" version="13" brb
+#: osm_watch: way id="83106248" version="14" brb
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
-#: osm_watch: way id="60482011" version="24" brb
-#: osm_watch: way id="192153919" version="1" brb
-#: osm_watch: way id="192153925" version="4" brb
-#: osm_watch: way id="136089841" version="17" brb
+#: osm_watch: way id="60482011" version="25" brb
+#: osm_watch: way id="192153919" version="2" brb
+#: osm_watch: way id="192153925" version="5" brb
+#: osm_watch: way id="136089841" version="18" brb
 	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
 	2 19131,-2145 19198,-2118
 	2 19909,-2863 19996,-2880
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
+#: add_fragezeichen ^^^
+#: XXX ^^^
 EOF
      },
      { from  => undef,

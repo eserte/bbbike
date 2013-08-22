@@ -1003,9 +1003,9 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3092,9886 3108,10069 3111,10116 3132,10499 3114,10550 3093,10594
 Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsberuhigt?	? 17610,-330 17651,-393
-Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3902,2454 3902,2405 3894,2368
-Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3730,2368 3894,2368
-Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3731,2411 3902,2405
+Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3902,2454 3902,2405 3894,2368 3853,2301 3812,2302 3813,2368 3814,2408
+Ines-Bolla-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3730,2368 3813,2368 3894,2368
+Maggy-Breittmayer-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3731,2411 3814,2408 3902,2405
 Waadter Zeile (Zufahrt am Supermarkt): existieren an dieser Straße Straßenschilder? Qualität?	? 3746,2108 3723,2118 3726,2209
 Rita-Maiburg-Str.: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::projected 20342,-777 20782,-1199 20822,-1242 20833,-1298 20872,-1748
 Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?	?::projected 20274,-845 20342,-777
@@ -1056,12 +1056,34 @@ Route Lychen - Templin: Qualität?	? 2480,89399 2468,89293
 Route Lychen - Templin: Qualität?	? 3153,88773 3614,88158 3855,88004 3976,87729 4456,87107 5066,86624 5090,86419 5265,86347 5362,86099 5316,85945 6071,85495 6319,85251 8353,84535 8746,84188
 Route Lychen - Templin: Qualität?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
 Route Lychen - Templin: Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
+Waldstr. (Waldesruh): Qualität?	? 24768,8087 24797,8248 24857,8567 25065,8899 25211,9085
+Eichenstr. (Waldesruh): Qualität?	? 25211,9085 25327,9244 25389,9332 25458,9424 25522,9522
+Buchenstr. (Waldesruh): Qualität?	? 25329,9375 25389,9332 25549,9237
+Kiefernstr. (Waldesruh): Qualität?	? 25458,9424 25633,9298 25656,9249
+Ahornstr. (Waldesruh): Qualität?	? 25327,9244 25549,9237 25656,9249 25828,9259
+Körnerstr. (Waldesruh): Qualität?	? 25520,9055 25537,8960 25401,8763
+Arndtstr. (Waldesruh): Qualität?	? 25243,8878 25301,8932 25537,8960 25626,8965 25661,8942
+Stichstr. (Waldesruh): Qualität?	? 25014,8038 25069,7996
+Rödernstr. (Waldesruh): Qualität? Rödernstr. oder Roedernstr.?	? 25084,8136 25159,8083
+Scharnweberstr (Waldesruh): Qualität?	? 25159,8083 25191,8107 25347,8213 25534,8353 25603,8414 25655,8482 25694,8542 25709,8557 25731,8867 25731,8926 25677,8964
+Bredowstr. (Waldesruh): Qualität?	? 25731,8867 25574,8634
+Bredowstr. (Waldesruh): Qualität?	? 25484,8499 25433,8433 25301,8252 25191,8107
+Leibnizstr. (Waldesruh): Qualität?	? 25433,8433 25534,8353
+Heidemühler Weg (Waldesruh): Qualität?	? 25476,9561 25522,9522 25828,9259 25868,9225 26088,9034 26243,8586
+An der Trainierbahn (Waldesruh): Qualität?	? 26243,8586 25887,8456 25780,8385 25175,7953 24975,7810
+An der Trainierbahn (Waldesruh): Qualität?	? 25655,8482 25780,8385
+Marienfelder Str. (Waldblick): Qualität?	? 10040,-3202 9971,-3342 9869,-3556 9792,-3734 9699,-3918 9546,-4339 9543,-4567
+Fritz-Reuter-Str. (Waldblick): Qualität?	? 10138,-3226 10049,-3432
+Hans-Thoma-Str. (Waldblick): Qualität?	? 9869,-3556 9976,-3604 10017,-3615 10131,-3630 10246,-3643 10270,-3646 10305,-3654 10343,-3661
+Hans-Olde-Str. (Waldblick): Qualität?	? 10246,-3643 10217,-3722 10172,-3867 10105,-3999
+Lesser-Ury-Weg (Waldblick): Qualität?	? 10217,-3722 10278,-3746 10305,-3654
 # added from ampeln-orig
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
-# added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ortsschilder ampeln ampelschaltung plz potsdam deutschland grenzuebergaenge sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_danger comments_ferry comments_misc  comments_mount comments_path comments_route  comments_tram comments_kfzverkehr comments_scenic fragezeichen exits)
+# added from other ../tmp/.fragezeichen-other-source
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet (laut ADFC-Karte)	? 4613,22928 4678,22776
+# added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ortsschilder ampeln ampelschaltung plz potsdam deutschland grenzuebergaenge sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_danger comments_ferry comments_misc  comments_mount comments_path comments_route  comments_tram comments_kfzverkehr comments_scenic fragezeichen exits)
 Verl. Pücklerstr. (Existieren Straßenschilder für die "Verlängerte Pücklerstr."?)	? 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645
 Sportforumstr. (Qualität der Sportforumstr. (asphaltiert?))	? -193,12051 -212,12095 -247,12117 -369,12175
 Birkenhain (Borkheide) (Fahrradstraße?)	? -25293,-19426 -26249,-20121
@@ -1163,6 +1185,7 @@ Mützlitz: gutes Kopfsteinpflaster (nach Ende der Bauarbeiten (2006-10-06) vielle
 Melzow - Warnitz: querliegende Betonplatten (Betonplatten zumindest auf der nördlichen Seite)	? 41910,85359 41901,85524 42245,86063
 (Qualität des Wegs (wahrscheinlich ein unbefestigter Feldweg)?)	? 18962,-5709 19915,-6315
 (ist der komplette Weg ein Schotterweg? Oder teilweise nur ein unbefestigter Feldweg?)	? 17162,-6465 17910,-6981
+Robinienweg (Waldesruh): Asphalt (ist der westliche Abschnitt ebenfalls asphaltiert?)	? 25235,9068 25300,9149
 (Steinstr. - Tschaikowskiweg): Waldweg (ist der Verbindungsweg mittlerweile asphaltiert?)	? -7996,-2293 -8024,-2468
 Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58390,23910 58422,23806 58340,23653
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47156,116507 47087,115725
@@ -1194,3 +1217,10 @@ F3.3 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
+# added from bbbike-temp-blockings-optimized
+Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten  (Wurde das Verbot für Radfahrer mittlerweile wieder aufgehoben?)	? 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
+Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten  (Wurde das Verbot für Radfahrer mittlerweile wieder aufgehoben?)	? 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
+Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten  (Wurde das Verbot für Radfahrer mittlerweile wieder aufgehoben?)	? 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
+Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten  (Wurde das Verbot für Radfahrer mittlerweile wieder aufgehoben?)	? 19131,-2145 19198,-2118
+Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten  (Wurde das Verbot für Radfahrer mittlerweile wieder aufgehoben?)	? 19909,-2863 19996,-2880
+Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten  (Wurde das Verbot für Radfahrer mittlerweile wieder aufgehoben?)	? 19601,-3714 19539,-3810 19460,-3818 19282,-3928
