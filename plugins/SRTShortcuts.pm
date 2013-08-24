@@ -1766,16 +1766,9 @@ sub street_name_experiment_init {
 	} elsif (abs($r + pi) < 0.1) {
 	    $r = -3.1;
 	}
-	my $mat;
 	my $a1 = $size*cos($r);
 	my $s1 = sin($r);
-	foreach ($a1, $size*$s1, $size*-$s1, $a1) {
-	    if ($mat) {
-		$mat .= " ";
-	    }
-	    $mat .= $_;
-	}
-	'matrix=' . $mat;
+	'matrix=' . join(" ", $a1, $size*$s1, $size*-$s1, $a1);
     };
 
     ## The normal Vera font, usually
