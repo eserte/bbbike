@@ -3162,21 +3162,7 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_119210',
-         'until' => 1377266400,
-         'text' => 'Bergiusstr.: Baustelle, Fahrbahn gesperrt, Gehweg evtl. auch nicht passierbar, bis 23.08.2013 16:00 Uhr ',
-         'from' => 1371358800,
-         'id' => 2451,
-         'data' => '#: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5044.html
-#: prio: #A
-#: next_check: 2013-08-23
-userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
@@ -3292,7 +3278,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'source_id' => 'INKO_119665',
-         'until' => 1377525600,
+         'until' => 1377871200,
          'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende August ',
          'from' => 1374381000,
          'id' => 2466,
@@ -3340,6 +3326,26 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'data' => 'userdel	q4::inwork 11825,16666 11767,16631 11725,16626 11635,16616
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020178',
+         'until' => 1377467999,
+         'text' => 'Kastanienallee und Oderberger Str.: Straßenfest bis 25. August 2013 ',
+         'from' => 1377324347,
+         'id' => 2472,
+         'data' => 'userdel	2::temp 10881,15047 10838,14962 10723,14772 10870,14689
+userdel	2::temp 10401,14963 10723,14772 10530,14452
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1378072799,
+         'text' => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, bis 1. September 2013',
+         'from' => 1377324534,
+         'id' => 2473,
+         'data' => 'userdel	2::temp 8652,9870 8571,9896
+',
+         'type' => 'gesperrt'
        }
      
 );

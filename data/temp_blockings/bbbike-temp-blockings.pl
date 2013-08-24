@@ -21473,11 +21473,6 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_119210',
        data  => <<EOF,
-#: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5044.html
-#: prio: #A
-#: next_check: 2013-08-23
 userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
 EOF
      },
@@ -21635,7 +21630,7 @@ userdel	q4::inwork 11635,16616 11621,16749
 EOF
      },
      { from  => 1374381000, # 2013-07-21 06:30
-       until => 1377525600, # 2013-08-26 16:00
+       until => 1377871200, # 2013-08-30 16:00 # was: until => 1377525600, # 2013-08-26 16:00
        text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende August ',
        type  => 'handicap',
        source_id => 'INKO_119665',
@@ -21686,6 +21681,24 @@ EOF
        source_id => 'IM_020183',
        data  => <<EOF,
 userdel	q4::inwork 11825,16666 11767,16631 11725,16626 11635,16616
+EOF
+     },
+     { from  => 1377324347, # 2013-08-24 08:05
+       until => 1377467999, # 2013-08-25 23:59
+       text  => 'Kastanienallee und Oderberger Str.: Straßenfest bis 25. August 2013 ',
+       type  => 'gesperrt',
+       source_id => 'IM_020178',
+       data  => <<EOF,
+userdel	2::temp 10881,15047 10838,14962 10723,14772 10870,14689
+userdel	2::temp 10401,14963 10723,14772 10530,14452
+EOF
+     },
+     { from  => 1377324534, # 2013-08-24 08:08
+       until => 1378072799, # 2013-09-01 23:59
+       text  => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, bis 1. September 2013',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8652,9870 8571,9896
 EOF
      },
     );
