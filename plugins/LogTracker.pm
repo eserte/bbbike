@@ -1108,7 +1108,8 @@ sub replay_accesslog {
     my $found_lines = 0;
     while(<$fh>) {
 	if (m{coordssession=([^& ]+)}) {
-	    print $ofh "/tmp/coordssession/ CLOSE_WRITE,CLOSE $1\n";
+	    my $session_id = uri_unescape($1);
+	    print $ofh "/tmp/coordssession/ CLOSE_WRITE,CLOSE $session_id\n";
 	    $found_lines++;
 	}
     }
@@ -1129,7 +1130,7 @@ sub replay_accesslog {
     }
     require Net::OpenSSH;
     $LOG_TRACKER_SSH = Net::OpenSSH->new(
-					 $SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'bbbike.de',
+					 $SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'live-bbbike',
 					 master_stdout_discard => 1, # does not work together with ptksh
 					 master_stderr_discard => 1,
 					);
