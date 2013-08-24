@@ -1018,19 +1018,23 @@ sub setup_new_online_tracking {
     if ($LOG_TRACKER_SSH) {
 	stop_online_tracking();
     }
-    require Net::OpenSSH;
-    $LOG_TRACKER_SSH = Net::OpenSSH->new(
-					 $SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'bbbike.de',
-					 master_stdout_discard => 1, # does not work together with ptksh
-					 master_stderr_discard => 1,
-					);
-    $LOG_TRACKER_SSH->error
-	and die "Couldn't establish SSH connection: " . $LOG_TRACKER_SSH->error;
-    ($LOG_TRACKER_FH, my($pid)) = $LOG_TRACKER_SSH->pipe_out($SETUP_NEW_ONLINE_TRACKING_TEST
-							     ? 'echo "/tmp/coordssession/ CLOSE_WRITE,CLOSE 01000000_0aa6e7661e8cfe43"'
-							     : 'inotifywait -m -e close_write /tmp/coordssession'
-							    )
-	or die "pipe out failed: " . $LOG_TRACKER_SSH->error;
+    if (!eval {
+	require Net::OpenSSH;
+	$LOG_TRACKER_SSH = Net::OpenSSH->new(
+					     $SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'bbbike.de',
+					     master_stdout_discard => 1, # does not work together with ptksh
+					     master_stderr_discard => 1,
+					    );
+	$LOG_TRACKER_SSH->error
+	    and die "Couldn't establish SSH connection: " . $LOG_TRACKER_SSH->error;
+	($LOG_TRACKER_FH, my($pid)) = $LOG_TRACKER_SSH->pipe_out($SETUP_NEW_ONLINE_TRACKING_TEST
+								 ? 'echo "/tmp/coordssession/ CLOSE_WRITE,CLOSE 01000000_0aa6e7661e8cfe43"'
+								 : 'inotifywait -m -e close_write /tmp/coordssession'
+								)
+	    or die "pipe out failed: " . $LOG_TRACKER_SSH->error;
+    }) {
+	main::status_message("Setting up online tracking failed: $@", "die");
+    }
     $main::top->fileevent($LOG_TRACKER_FH, 'readable', sub { new_online_tracking() });
 }
 
