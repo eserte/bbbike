@@ -4,10 +4,9 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.23 2009/01/10 10:23:06 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -34,7 +33,7 @@ use vars qw($VERSION $lastcoords
             $remoteuser $remotehost $logfile $ssh_cmd $tracking $tail_pid $bbbike_cgi
 	    $last_parselog_call $session_dir_prefix
 	   );
-$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.24';
 
 # XXX replace all %layer, %show etc. with @layer, @show...
 use constant ROUTES => 0;
@@ -115,112 +114,12 @@ sub add_button {
     BBBikePlugin::place_menu_button
             ($mmf,
              [
-              [Button => "Set preferences",
-               -command => sub {
-                   my $t = $main::top->Toplevel(-title => "LogTracker");
-		   $t->gridColumnconfigure($_, -weight => 1) for 1; # don't expand col 0
-                   require Tk::PathEntry;
-		   my $e;
-                   Tk::grid($t->Label(-text => "Logfile"),
-                            $e = $t->PathEntry(-textvariable => \$logfile),
-			    -sticky => "ew",
-                           );
-		   Tk::grid($t->Label(-text => "Remote SSH user"),
-			    $e = $t->Entry(-textvariable => \$remoteuser),
-			    -sticky => "ew",
-                           );
-		   Tk::grid($t->Label(-text => "Remote host"),
-			    $e = $t->Entry(-textvariable => \$remotehost),
-			    -sticky => "ew",
-                           );
-		   Tk::grid($t->Label(-text => "SSH command"),
-			    $e = $t->Entry(-textvariable => \$ssh_cmd),
-			    -sticky => "ew",
-                           );
-                   Tk::grid($t->Label(-text => "BBBike CGI"),
-                            $t->PathEntry(-textvariable => \$bbbike_cgi),
-			    -sticky => "ew",
-                           );
-		   my $return = sub {
-		       stop_parse_tail_log();
-		       warn "Stopped parsing log...\n";
-		       #parse_tail_log();
-		       $t->destroy;
-		   };
-		   $e->bind("<Return>" => $return);
-		   my $f;
-                   Tk::grid($f = $t->Frame, -columnspan => 2);
-		   Tk::grid($f->Button(-text => "Ok",
-				      -command => $return),
-			    $f->Button(-text => "Close",
-                                       -command => sub { $t->destroy }),
-                           );
-		   $t->Popup(@main::popup_style);
-		   $e->focus;
-               }],
-	      [Checkbutton => "Replay route search",
-	       -variable => \$do_search_route,
-	       -command => sub {
-		   if ($do_search_route) {
-		       init_search_route();
-		   }
-	       },
-	      ],
-              [Checkbutton => "Tracking",
-	       -variable => \$tracking,
-               -command => sub {
-		   if ($tracking) {
-		       parse_tail_log();
-		   } else {
-		       stop_parse_tail_log();
-		       warn "Stopped parsing log...\n";
-		   }
-               }],
-              [Checkbutton => "Error checks",
-	       -variable => \$error_checks,
-	      ],
-	      '-',
-              [Checkbutton => "Show bbbike routes",
-	       -variable => \$show{routes},
-	       -command => sub { update_view("routes") },
-	      ],
-              [Checkbutton => "Show mapserver tiles",
-	       -variable => \$show{mapserver},
-	       -command => sub { update_view("mapserver") },
-	      ],
-	      '-',
-	      [Button => 'AccessLog today',
-	       -command => sub {
-		   parse_accesslog_today();
-	       },
-	      ],
-	      [Button => 'AccessLog yesterday',
-	       -command => sub {
-		   parse_accesslog_yesterday();
-	       },
-	      ],
-	      [Button => 'AccessLog for date',
-	       -command => sub {
-		   parse_accesslog_for_date();
-	       },
-	      ],
-	      [Button => 'Complete AccessLog',
-	       -command => sub {
-		   parse_accesslog();
-	       },
-	      ],
-	      [Button => 'Preference statistics',
-	       -command => sub {
-		   pref_statistics();
-	       },
-	      ],
-	      '-',
-	      [Button => 'New online tracking',
+	      [Button => 'Start online tracking',
 	       -command => sub {
 		   setup_new_online_tracking();
 	       },
 	      ],
-	      [Button => 'Stop new online tracking',
+	      [Button => 'Stop online tracking',
 	       -command => sub {
 		   stop_new_online_tracking();
 	       },
@@ -232,6 +131,116 @@ sub add_button {
 	       },
 	      ],
               "-",
+	      # The following are unusable, because they depend on
+	      # coords in the accesslog lines (which does not happen
+	      # anymore since using sessions), or need to send a query
+	      # to a locally running bbbike.cgi (which is costly and
+	      # slow). So "hide" these items into a submenu.
+	      [Cascade => 'Old unusable tracking methods',
+	       -menuitems =>
+	       [
+		[Button => "Set preferences",
+		 -command => sub {
+		     my $t = $main::top->Toplevel(-title => "LogTracker");
+		     $t->gridColumnconfigure($_, -weight => 1) for 1; # don't expand col 0
+		     require Tk::PathEntry;
+		     my $e;
+		     Tk::grid($t->Label(-text => "Logfile"),
+			      $e = $t->PathEntry(-textvariable => \$logfile),
+			      -sticky => "ew",
+			     );
+		     Tk::grid($t->Label(-text => "Remote SSH user"),
+			      $e = $t->Entry(-textvariable => \$remoteuser),
+			      -sticky => "ew",
+			     );
+		     Tk::grid($t->Label(-text => "Remote host"),
+			      $e = $t->Entry(-textvariable => \$remotehost),
+			      -sticky => "ew",
+			     );
+		     Tk::grid($t->Label(-text => "SSH command"),
+			      $e = $t->Entry(-textvariable => \$ssh_cmd),
+			      -sticky => "ew",
+			     );
+		     Tk::grid($t->Label(-text => "BBBike CGI"),
+			      $t->PathEntry(-textvariable => \$bbbike_cgi),
+			      -sticky => "ew",
+			     );
+		     my $return = sub {
+			 stop_parse_tail_log();
+			 warn "Stopped parsing log...\n";
+			 #parse_tail_log();
+			 $t->destroy;
+		     };
+		     $e->bind("<Return>" => $return);
+		     my $f;
+		     Tk::grid($f = $t->Frame, -columnspan => 2);
+		     Tk::grid($f->Button(-text => "Ok",
+					 -command => $return),
+			      $f->Button(-text => "Close",
+					 -command => sub { $t->destroy }),
+			     );
+		     $t->Popup(@main::popup_style);
+		     $e->focus;
+		 }],
+		[Checkbutton => "Replay route search",
+		 -variable => \$do_search_route,
+		 -command => sub {
+		     if ($do_search_route) {
+			 init_search_route();
+		     }
+		 },
+		],
+		[Checkbutton => "Tracking",
+		 -variable => \$tracking,
+		 -command => sub {
+		     if ($tracking) {
+			 parse_tail_log();
+		     } else {
+			 stop_parse_tail_log();
+			 warn "Stopped parsing log...\n";
+		     }
+		 }],
+		[Checkbutton => "Error checks",
+		 -variable => \$error_checks,
+		],
+		'-',
+		[Checkbutton => "Show bbbike routes",
+		 -variable => \$show{routes},
+		 -command => sub { update_view("routes") },
+		],
+		[Checkbutton => "Show mapserver tiles",
+		 -variable => \$show{mapserver},
+		 -command => sub { update_view("mapserver") },
+		],
+		'-',
+		[Button => 'AccessLog today',
+		 -command => sub {
+		     parse_accesslog_today();
+		 },
+		],
+		[Button => 'AccessLog yesterday',
+		 -command => sub {
+		     parse_accesslog_yesterday();
+		 },
+		],
+		[Button => 'AccessLog for date',
+		 -command => sub {
+		     parse_accesslog_for_date();
+		 },
+		],
+		[Button => 'Complete AccessLog',
+		 -command => sub {
+		     parse_accesslog();
+		 },
+		],
+		[Button => 'Preference statistics',
+		 -command => sub {
+		     pref_statistics();
+		 },
+		],
+	       ],
+	      ],
+	      '-',
               [Button => "Delete this menu",
                -command => sub {
                    $mmf->after(100, sub {
@@ -1009,7 +1018,7 @@ sub worst_routes_of_the_day {
 }
 
 ######################################################################
-# New tracker XXX currently only a hack
+# New tracker using inotify and coordssession files
 
 use vars qw($SETUP_NEW_ONLINE_TRACKING_TEST $LOG_TRACKER_SSH $LOG_TRACKER_FH);
 $SETUP_NEW_ONLINE_TRACKING_TEST=0;
@@ -1021,7 +1030,7 @@ sub setup_new_online_tracking {
     if (!eval {
 	require Net::OpenSSH;
 	$LOG_TRACKER_SSH = Net::OpenSSH->new(
-					     $SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'bbbike.de',
+					     $SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'live-bbbike',
 					     master_stdout_discard => 1, # does not work together with ptksh
 					     master_stderr_discard => 1,
 					    );
@@ -1133,15 +1142,6 @@ sub replay_accesslog {
 # REPO BEGIN
 # REPO NAME apache2epoch /home/e/eserte/work/srezic-repository 
 # REPO MD5 e3d19a71595fe57b8b1200c8fd1cc60d
-
-=head2 apache2epoch($time)
-
-=for category Date
-
-Given an apache accesslog date/time (21/Jul/2003:21:30:19 +0200)
-return a Unix epoch time. Return undef if not parseable.
-
-=cut
 
 sub apache2epoch {
     my $str = shift;
