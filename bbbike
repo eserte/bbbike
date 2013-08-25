@@ -8154,12 +8154,17 @@ sub draw_street_numbers {
 		     -tags => "$abk-label"); # no strnr (only for images) and strnr-$item here
 	    } else {
 		my($item, $r_item);
+		my $text = ($type =~ /^(B|BAB|DK|DW)$/ ? "" : $type) . (defined $nr ? $nr : "");
+		my $font = (  $scale < SMALLER_TABLES ? $font{'tiny'}
+			    : length($text) >= 4      ? $font{'small'} # heuristic, so "101n" will fit in the BAB table
+			    :                           $font{'normal'}
+			   );
 		# XXX It seems that at least the BAB number is off by maybe half a pixel,
 		# but it's not possible in Tk to set subpixel positions.
 		$item = $c->createText
 		    ($midx,$midy,
-		     -text => ($type =~ /^(B|BAB|DK|DW)$/ ? "" : $type) . (defined $nr ? $nr : ""),
-		     -font => $scale < SMALLER_TABLES ? $font{'tiny'} : $font{'normal'},
+		     -text => $text,
+		     -font => $font,
 		     -fill => ($do_round             ? 'white'  :
 			       $type =~ /^(BAB|DK)$/ ? 'white'  :
 			       $type =~ /^(F|R)$/    ? 'green4' :
