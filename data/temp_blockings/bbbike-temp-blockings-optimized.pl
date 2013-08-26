@@ -3079,20 +3079,7 @@ userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.suppeundmucke.de/',
-         'data' => 'userdel	2::temp 14096,11134 14076,11057 14043,10928 14026,10869
-userdel	2::temp 13886,10939 14026,10869 13896,10851 13856,10864
-userdel	2::temp 14011,10812 13896,10851
-userdel	2::temp 13886,10939 13856,10864
-',
-         'periodic' => 1,
-         'until' => 1377381599,
-         'from' => 1377208800,
-         'text' => 'SUPPE&MUCKE 2013 am 24. August am Rudolfplatz',
-         'type' => 'gesperrt',
-         'id' => 2432
-       },
+       undef,
        {
          'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
          'data' => 'userdel	2::temp 14161,11930 14285,12190
@@ -3327,23 +3314,22 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_020178',
-         'until' => 1377467999,
-         'text' => 'Kastanienallee und Oderberger Str.: Straßenfest bis 25. August 2013 ',
-         'from' => 1377324347,
-         'id' => 2472,
-         'data' => 'userdel	2::temp 10881,15047 10838,14962 10723,14772 10870,14689
-userdel	2::temp 10401,14963 10723,14772 10530,14452
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1378072799,
          'text' => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, bis 1. September 2013',
          'from' => 1377324534,
          'id' => 2473,
          'data' => 'userdel	2::temp 8652,9870 8571,9896
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1380172611,
+         'text' => 'Britzer Park: Bauarbeiten, Zufahrt zur Gutschmidtstr. komplett gesperrt',
+         'from' => undef,
+         'id' => 2474,
+         'data' => 'userdel	2::inwork 12726,3870 12805,4020
 ',
          'type' => 'gesperrt'
        }

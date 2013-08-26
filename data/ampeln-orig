@@ -443,7 +443,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12649,6833
 	X 13236,6489
 	X 13566,5792
-	X 13434,6080
+#: note: nachts ausgeschaltet (gesehen: 2013-08-25 23:10 Uhr)
+	X 13430,6086
 	X 14344,7003
 	X 13761,7328
 	X 14015,7631
@@ -574,7 +575,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10425,971
 	X 10067,1939
 	X 12655,3882
-	X 12560,4290
+	X 12564,4308
 	X 12731,4841
 	X 12883,5257
 	X 12507,5228
@@ -680,6 +681,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4151,10026
 	X 13277,8211
 #: note: möglicherweise nur während der Schulzeit eingeschaltet
+#: note: ausgeschaltet: 2013-08-25 gegen 23:20 Uhr
 	X 14758,7373
 	X 15221,7778
 	F 15557,7404
@@ -773,6 +775,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15303,8343
 	X 15557,8077
 	X 14051,6731
+#: XXX_prog: für Radfahrer auf dem Rad/Gehweg nicht relevant
+	X 14106,6663
 	X 13712,6656
 	X 10558,9763
 	X 12025,11346
@@ -892,7 +896,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10788,-172
 	X 10831,-808
 	X 10844,-1335
-	X 11080,-2035
+	X 11073,-2037
 	B 10188,-2139
 	X 12938,1348
 	X 12911,1815
@@ -1186,7 +1190,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6878,17315
 	X 8503,16716
 	X 9494,15998
-	F 14310,9692
+	F 14318,9688
 	X 9918,13733
 	X 8570,15107
 # REMOVED --- del	X 6849,14831
@@ -1599,9 +1603,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: am Wochenende ausgeschaltet (immer?)
 	X 12643,1706
 	X 12207,1704
-	X 11475,1404
+	X 11476,1398
 	X 10661,2464
-	X 10759,1112
+	X 10761,1108
 	X 9751,3769
 	X 7115,3003
 	X 7234,2548
@@ -1721,6 +1725,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4572,7936
 	X 15080,11905
 	X 6454,8653
+#: note: nachts ausgeschaltet (gesehen: 2013-08-25 23:30 Uhr)
 	X 14652,10201
 # REMOVED --- #: note: temporäre Baustellenampel, ist immer bei einer Sperrung der Karlshorster Str. eingeschaltet --- #: last_checked: 2012-11-02 --- #: next_check: 2012-11-05 --- X::inwork 14832,10512
 	F 13030,7346
@@ -1802,7 +1807,10 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 15272,10790
 	F 11270,13412
 	X 14170,10675
-	X 14153,6795
+#: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen?
+#: last_checked: 2013-08-25
+#: next_check: 2019-09-02
+	F 14153,6795
 #: by: Andreas Mühlhausen: vvv
 	X 9418,11804
 	F 14619,16672
@@ -2620,8 +2628,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -12432,-226
 #: XXX_prog: Ampelanlage gilt für die gesamte Brücke, auf der anderen Seite ist auch eine
 	X -9942,21
+#: note nachts ausgeschaltet (gesehen: 2013-08-25 22:30 Uhr)
+	F 11579,-3093
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	F 37846,52750
+	X 11701,-3360
+	X 10246,-4271
 	X 30118,16565
 	X 26908,15630
 	X 26280,15332
@@ -2766,7 +2779,7 @@ UBB, halbstündlich	B 51270,179246
 	B -84994,-47451
 	B -89777,-42832
 	B -93557,-39865
-S-Bahn ca. alle 10 Minuten	B 10763,-4012
+S-Bahn ca. alle 10 Minuten	B 10778,-3988
 S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 99765,-46542
 	B 99245,-43974

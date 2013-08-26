@@ -237,8 +237,8 @@ Prenzlauer Allee - Kanzowstr.: bereits an der Fußgängerampel kurz vor der Kreuzu
 Frankfurter Allee - Liebigstr.: frühzeitig auf den Gehweg wechseln (wegen Grünfläche)	PI; 14208,12235 14020,12261 13885,12279 13927,12370
 Falkenberger Chaussee: Zufahrt zur Wartenberger Str.	CS; 17400,17790 17440,17746 17531,17802 17650,17875
 Langhansstr. - Allee der Kosmonauten: Zufahrt zum Parkweg schwierig einzusehen, einfach geradeaus fahren	CP2; 19818,14064 19847,14019
-In den Gärten - Marienfelder Chaussee: 100m auf der linken Straßenseite vorfahren	CP; 11724,1629 11765,1522 11865,1564
-Marienfelder Chaussee - In den Gärten: bereits am Quarzweg die Straßenseite wechseln	PI; 11475,1404 11765,1522 11724,1629
+In den Gärten - Marienfelder Chaussee: 100m auf der linken Straßenseite vorfahren	CP; 11724,1629 11744,1577 11765,1522 11865,1564
+Marienfelder Chaussee - In den Gärten: bereits am Quarzweg die Straßenseite wechseln	PI; 11476,1398 11765,1522 11744,1577 11724,1629
 Lange Brücke - Freundschaftsinsel: wegen der Tramtrasse bereits vor der Langen Brücke die Straßenseite wechseln	PI; -12758,-1654 -12730,-1681 -12659,-1700 -12567,-1817 -12396,-1681
 Freundschaftsinsel - Potsdam Hbf: wegen der Tramtrasse zunächst auf dem Gehweg bis zur nächsten Ampel vorfahren	CP; -12396,-1681 -12567,-1817 -12493,-1896
 Zum Barnimer Dörferweg: am Waidmannsluster Damm auf den Gehweg fahren, nicht auf die Radspur fahren (wegen eines nicht überwindbaren Geländers)	PI; 1858,20740 1808,20817 1787,20836 1750,20868 1712,20907 1819,21116
@@ -445,6 +445,7 @@ Munsterdamm - Kottesteig: bereits 40m vor der Kreuzung die Straßenseite wechseln
 Schorlemerallee - Albrecht-Thaer-Weg: bereits an der Kreuzung Schweinfurthstr. die Straßenseite wechseln	PI; 3306,6453 3347,6460 3449,6863
 Alemannenallee - Badenallee: Fußgängerampel rechts zum Überqueren der Heerstr. benutzen	CP; 1065,11216 943,11302 743,11462
 Badenallee - Alemannenallee: Fußgängerampel links zum Überqueren der Heerstr. benutzen	CP; 743,11462 943,11302 1065,11216
+#: XXX_prog: RL:ja, GPS:ja (default, bestätigt)
 bereits an der Ampel Parchimer Allee/Onkel-Bräsig-Str. auf die linke Straßenseite wechseln	PI; 13305,4504 13266,4503 13098,4452
 Weg am Marzahn-Hohenschönhauser Grenzgraben: zum Überqueren der Boxberger Str. rechts halten, um Bordsteine zu vermeiden	CP; 19313,16130 19361,16145 19427,16179
 Weg am Marzahn-Hohenschönhauser Grenzgraben: zum Überqueren der Boxberger Str. links halten, um Bordsteine zu vermeiden	CP; 19427,16179 19361,16145 19313,16130
@@ -529,3 +530,5 @@ Am Stadtpark: linken Gehweg benutzen, um Bordstein zu vermeiden	CP2; 15357,12813
 Hellersdorfer Weg: für die Weiterfahrt Richtung Norden empfiehlt es sich, an der Kreuzung Landsberger Chaussee die Fahrbahn und nicht den Gehweg zu benutzen	PI; 23162,16095 23175,16119 23193,16159 23263,16354
 Mahlsdorfer Str.: zur Weiterfahrt Richtung B1 oder Dorfstr. nicht den Radweg benutzen, da hier keine Verbindung besteht	CP2; 26280,15332 26332,15381
 Kyritzer Str.: nicht ausgeschildert	CP2; 22573,15552 22579,15416
+Buckower Damm - Britzer Park: bereits an der Kreuzung Mohriner Allee auf den linken Gehweg wechseln	PI; 12564,4308 12637,4014 12805,4020
+Britzer Park - Buckower Damm: linken Gehweg bis zur Ampel benutzen	CP; 12805,4020 12637,4014 12655,3882

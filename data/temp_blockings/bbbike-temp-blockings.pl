@@ -19163,7 +19163,7 @@ EOF
        source_id => 'IM_017318',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110530.1300.346009.html
-userdel	2::inwork 15383,9191 14883,9431 14819,9462 14780,9480 14310,9692
+userdel	2::inwork 15383,9191 14883,9431 14819,9462 14780,9480 14318,9688
 EOF
      },
      { from  => undef, # 
@@ -21473,7 +21473,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_119210',
        data  => <<EOF,
-userdel	2::inwork 14193,6556 14144,6627 14193,6718 14153,6795
+userdel	2::inwork 14193,6556 14106,6663 14051,6731
 EOF
      },
      { from  => undef, # 
@@ -21699,6 +21699,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8652,9870 8571,9896
+EOF
+     },
+     { from  => undef, # 
+       until => 1380172611, # 2013-09-26 07:16
+       text  => 'Britzer Park: Bauarbeiten, Zufahrt zur Gutschmidtstr. komplett gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 12726,3870 12805,4020
 EOF
      },
     );

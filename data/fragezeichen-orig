@@ -102,7 +102,7 @@ Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
-#: last_checked: 2013-07-06
+#: last_checked: 2013-08-26
 #: next_check: 2014-07-06
 Großziethener - Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 12078,-1170 12023,-1174 11953,-1181 11858,-1189 11761,-1199 11717,-1204 11666,-1209 11578,-1220 11548,-1223 11240,-1262 11149,-1274 11003,-1303 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9773,-786 9693,-815
 # 
@@ -235,7 +235,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
-#: last_checked: 2013-06-23
+#: last_checked: 2013-08-25
 #: check_frequency: 90d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13600,5240 13594,5240 13323,5222 13248,5221 13112,5253 13046,5267
 # 
@@ -368,6 +368,11 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: last_checked: 2013-08-25
+#: next_check: 2014-04-15
+#: XXX wahrscheinlich verboten für Radfahrer und ohne Radwege (prüfen!)
+Mahlow - Teltow: Schellstraße (?) in Bau	?::inwork 10246,-4271 7955,-4250
+# 
 #: last_checked: 2013-08-19
 #: next_check: 2013-10-19
 Gleisdreieckpark - Bautzener Str.: entsteht hier ein Weg?	?::projected 8260,10183 8282,9996 8198,9749 8192,9619
@@ -467,13 +472,11 @@ Neues Wohnviertel in Rudow: hier entstehen auch neue Straßen (Verbundsteinpflast
 #: next_check: 2014-09-30
 Rhinstr.: Radwegsituation nach den Bauarbeiten?	?::inwork 18226,13506 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
 # 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4987.html
-#: next_check: 2013-07-31
-Kirchhainer Damm: Bau von drei neuen Ampeln	? 11655,-3248 11360,-2648 11308,-2535 11232,-2377 11172,-2224 11130,-2120 11080,-2035
+# REMOVED (realisiert) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4987.html --- #: next_check: 2013-07-31 --- Kirchhainer Damm: Bau von drei neuen Ampeln	? 11663,-3266 11579,-3093 11360,-2648 11308,-2535 11232,-2377 11172,-2224 11130,-2120 11073,-2037
 # 
 #: last_checked: 2013-08-13
 #: check_frequency: 45d
-Bauarbeiten im Landschaftspark Herzberge: werden in Bereich des "Zeltlagers" neue Wege entstehen?	? 17187,13609 17247,14055
+Bauarbeiten im Landschaftspark Herzberge: werden im Bereich des "Zeltlagers" neue Wege entstehen?	? 17187,13609 17247,14055
 # 
 # REMOVED (nein, wird gerade zurückgebaut) --- Baustraße zur Siegfriedstraße: wird diese Verbindung beibehalten?	? 17219,14133 17198,14156 17111,14184
 # 
@@ -748,14 +751,15 @@ Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahns
 #: last_checked: 2013-08-08 (Bauarbeiten)
 #: check_frequency: 60d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
-#: next_check: 2013-01-01 vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
-Buckower Damm: eventuell werden die Radwege hier asphaltiert?	?::inwork; 12560,4290 12640,4001 12655,3882 12667,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2514
+#: last_checked: 2013-08-26
+#: next_check: 2014-03-01
+Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?::inwork; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2514
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Planung, Stand 2012-04)
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20130429.1340.384123.html (Beginn: 2013-05-06)
-#: next_check: 2013-06-06
-Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert?	?::projected; 12207,1704 11865,1564 11765,1522 11475,1404 11198,1291 11155,1273 11002,1211 10827,1140 10759,1112 10662,1072 10425,971
-#: next_check ^^^
+#: last_checked: 2013-08-26
+#: next_check: 2013-11-01
+Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?::projected; 12207,1704 11865,1564 11765,1522 11476,1398 11216,1293 11157,1269 11012,1210 10829,1135 10761,1108 10664,1068 10425,971
 #: XXX ^^^
 #: by: ^^^
 # 
@@ -2127,7 +2131,6 @@ Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2)	? -6
 Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,74445 -6794,74226 -6517,74079 -6100,73876 -6037,73865
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
 Thyrow - Kerzendorf (ehem. B101): laut "Berliner Umland" am Bahnübergang unterbrochen, B101n stattdessen benutzen!	? 1090,-16407 1773,-15712 1856,-15356
-Umfahrung Nauen: auch für Radfahrer benutzbar?	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 #: XXX: laut "Berliner Umland" bis auf ein kurzes Stück in Weesow gut geeignet , laut "Aktiv Regional" besonders gut geeignet; bei osm gibt es diesen Weg nicht
 Börnicke - Wessow: Qualität?	? 26036,28777 26419,28677 26930,28875 31165,27230 31738,27620
 Neue B2 zwischen Angermünde und Schwedt: für Radfahrer befahrbar?	? 54969,71959 54231,73193 54142,73542 54135,73581 54215,73962 54530,74354 54577,74390 55030,74628 55493,74881 55918,75087 56231,75134 56661,75123 57665,74740 57921,74778 58496,75012 59234,75181 60253,75275 60718,75431 61156,75803 61521,76262 61793,76362 62062,76375 63253,76165 64634,75906 65018,76081 65312,76500
@@ -3285,7 +3288,8 @@ Alter Fischerweg (Gosen): Qualität? Ausschilderung?	? 32778,-1044 33013,-790 331
 #: XXX Baumaßnahme 8.18 (Realisierung bis 2010)
 #: XXX_osm laut osm existieren bereits Radwege (track), aber stimmt das?
 Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege oder Radspuren?	? 12938,1348 12941,1256 12984,1011
-Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576 13396,3512 13526,3519
+# REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576
+Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13396,3512 13526,3519
 Fritz-Erler-Allee: sind die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
 #: XXX ^^^
 #: by: ^^^
@@ -3555,8 +3559,4 @@ Leibnizstr. (Waldesruh): Qualität?	? 25433,8433 25534,8353
 Heidemühler Weg (Waldesruh): Qualität?	? 25476,9561 25522,9522 25828,9259 25868,9225 26088,9034 26243,8586
 An der Trainierbahn (Waldesruh): Qualität?	? 26243,8586 25887,8456 25780,8385 25175,7953 24975,7810
 An der Trainierbahn (Waldesruh): Qualität?	? 25655,8482 25780,8385
-Marienfelder Str. (Waldblick): Qualität?	? 10040,-3202 9971,-3342 9869,-3556 9792,-3734 9699,-3918 9546,-4339 9543,-4567
-Fritz-Reuter-Str. (Waldblick): Qualität?	? 10138,-3226 10049,-3432
-Hans-Thoma-Str. (Waldblick): Qualität?	? 9869,-3556 9976,-3604 10017,-3615 10131,-3630 10246,-3643 10270,-3646 10305,-3654 10343,-3661
-Hans-Olde-Str. (Waldblick): Qualität?	? 10246,-3643 10217,-3722 10172,-3867 10105,-3999
-Lesser-Ury-Weg (Waldblick): Qualität?	? 10217,-3722 10278,-3746 10305,-3654
+Am Graben (Waldblick): Qualität?	? 9402,-3817 9354,-3949

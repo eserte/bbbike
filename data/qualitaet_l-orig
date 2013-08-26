@@ -70,8 +70,30 @@ Löwenbruch: Kopfsteinpflaster	Q2 5044,-12402 5002,-12551 4555,-12852
 Diedersdorf: Pflastersteine, OK	Q1 7558,-7093 7390,-7184 7378,-7406 7309,-7482 7506,-7471
 Diedersdorf: Kopfsteinpflaster, OK	Q1 7506,-7471 7981,-7165
 Arcostr.: Asphalt	Q0 10323,-3150 10309,-3191
-Arcostr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 10309,-3191 10277,-3262 10192,-3477 10131,-3630 10088,-3740
-Arcostr.: Asphalt	Q0 10088,-3740 10070,-3790 9971,-3985
+Arcostr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 10309,-3191 10277,-3262 10185,-3478 10125,-3626 10083,-3721
+Arcostr.: Asphalt	Q0 10083,-3721 10062,-3766 9973,-3973
+Keplerstr.: Asphalt	Q0 10460,-3199 10452,-3217
+Keplerstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 10452,-3217 10416,-3302 10320,-3524 10270,-3646
+Hubertusstr.: Schotterstraße	Q2 10466,-3366 10416,-3302
+Hubertusstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 10416,-3302 10277,-3262 10138,-3220 10052,-3194
+Fritz-Reuter-Str. (Waldblick): Asphalt	Q0 10138,-3220 10045,-3426
+(Hubertusstr. - Marienfelder Str.) (Waldblick): unbefestigter Weg	Q2 10052,-3194 10020,-3214
+Marienfelder Str. (Waldblick): Asphalt	Q0 10020,-3214 9964,-3333 9941,-3384
+Marienfelder Str. (Waldblick): Asphalt mit Schäden	Q1 9941,-3384 9869,-3556 9795,-3704 9744,-3822
+Marienfelder Str. (Waldblick): Asphalt	Q0 9744,-3822 9709,-3896 9659,-4021 9647,-4057 9593,-4234 9585,-4291 9559,-4445 9558,-4459 9540,-4600
+Menzelstr.: Asphalt	Q0- 9964,-3333 9973,-3397 9996,-3562 10003,-3611 10083,-3721
+Zeppelinstr.: Asphalt	Q0 9941,-3384 9973,-3397 10045,-3426 10185,-3478
+Zeppelinstr.: schlechtes Kopfsteinpflaster	Q3 10185,-3478 10320,-3524
+Zeppelinstr.: Schotterstraße	Q2 10320,-3524 10372,-3537
+Hans-Thoma-Str. (Waldblick): Schotterstraße	Q2 9869,-3556 9976,-3604
+Hans-Thoma-Str. (Waldblick): Asphalt	Q0 9976,-3604 10003,-3611 10125,-3626 10242,-3640
+Hans-Thoma-Str. (Waldblick): Verbundsteinpflaster	Q1+ 10242,-3640 10270,-3646 10305,-3654 10343,-3661
+Lesser-Ury-Weg (Waldblick): Verbundsteinpflaster	Q1+ 10210,-3718 10278,-3746 10305,-3654
+Hans-Olde-Str. (Waldblick): Verbundsteinpflaster	Q1+ 10242,-3640 10210,-3718 10168,-3817 10172,-3867 10119,-3925 10099,-3993
+Max-Planck-Str.: Schotterstraße	Q2 9996,-3562 9976,-3604 9914,-3743 9831,-3949
+Wilhelmstr.: Schotterstraße	Q2 9795,-3704 9914,-3743 10062,-3766
+Ziethener Str.: Asphalt	Q0 9244,-3778 9402,-3817 9709,-3896 9831,-3949 9973,-3973 10099,-3993 10185,-4006 10210,-4010 10346,-4027
+Brenzstr.: Schotterstraße	Q2 9659,-4021 9354,-3949
 Groß-Kienitz: schlechtes Kopfsteinpflaster	Q3 14702,-8736 14913,-9037 15109,-8950
 Am Fängersee: Feld- und Waldwege, größtenteils gut befahrbar (20 km/h), einige Stellen mit tiefen Sand	Q2 38908,19853 38889,20172 39128,20574 39130,20957 39431,21380 39367,21528 39251,21678 39439,21968 39372,22521
 Dahlwitz - Neuenhagen: meist Kopfsteinpflaster	Q2 26892,10666 27028,10890 27036,11142 27165,11294 27490,11678
@@ -177,6 +199,7 @@ Ragow (Köpenicker Str.): Asphalt	Q0 20127,-12521 20408,-13031
 Trebbiner Str.: Asphalt	Q0 11165,-5318 11291,-4485
 #: by: Stefan Schmidt:
 #: corrected_by: bergmann/osm (mäßiges Kopfsteinpflaster, Q2 -> ...)
+#: confirmed_by: srt
 Trebbiner Str.: Fahrbahn mäßiges Kopfsteinpflaster, Gehweg asphaltiert	Q0 11338,-3945 11671,-3400
 Schöneicher Str.: Kopfsteinpflaster	Q2 30587,8490 30700,8462 31221,8312
 Schöneiche: Kopfsteinpflaster	Q2 30587,8490 30409,8500 30290,8562
@@ -896,7 +919,7 @@ Fahrbahn Asphalt	Q0 26276,-17489 26431,-16931 26455,-16852 26583,-15677
 	Q0 -16002,6340 -16147,6611 -16182,6673 -16278,6718 -16590,6745 -17173,7182 -17404,7528
 	Q0 -17404,7528 -17603,7487 -17812,7349 -17909,7321 -19150,7320
 Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
-	Q0 -16640,1304 -16719,1369 -16742,1387 -16763,1402 -16905,1503 -16897,1518 -16840,1639 -16782,1767 -16706,1911 -16800,1991 -17309,2517 -17588,2815 -17956,3840 -18025,4018 -18233,4501 -18356,4783 -18598,5444 -18731,5799 -18804,5992 -18962,6183 -19576,6450 -19787,6551 -20023,6826 -20301,7082 -21443,8306 -21662,8537 -21931,8853 -22215,9500
+	Q0 -16640,1304 -16719,1369 -16742,1387 -16763,1402 -16905,1503 -16897,1518 -16840,1639 -16782,1767 -16706,1911 -16800,1991 -17309,2517 -17588,2815 -17956,3840 -18025,4018 -18233,4501 -18356,4783 -18598,5444 -18731,5799 -18804,5992 -18962,6183 -19576,6450 -19787,6551 -20023,6826 -20239,7026 -20301,7082 -21443,8306 -21662,8537 -21931,8853 -22215,9500
 	Q0 -20301,7082 -20771,6952 -21093,6607 -21057,6524 -21736,6259 -22711,6023 -23599,5864 -24240,6075
 	Q0 -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
 	Q0 -25898,6447 -26170,6459 -26525,6519 -27113,6829
@@ -1226,7 +1249,7 @@ Kamminke: Kopfsteinpflaster	Q2 61873,163628 61877,163797
 Kamminke - Garz: Asphalt	Q0 61877,163797 61889,164280 62010,164628 62078,164731 62081,164829 61995,164890 61739,164872
 Kamminke - B110: Waldweg	Q2 62081,164829 62087,165093
 Kamminke - B110: Waldweg, teilweise schlechte Qualität	Q3 62087,165093 62118,165706 62068,165856 61825,165987 61968,166237
-Britz: Asphalt	Q0 37940,52528 37650,53211
+Britz: Asphalt	Q0 37940,52528 37846,52750 37650,53211
 Wolliner Weg: Feldweg (Erschließungsweg für das Windradfeld Randowhöhe)	Q2 52527,98581 52471,98189 52505,97610
 Cremzow: sehr guter Asphalt	Q0 51178,106442 51391,106540
 Cremzow - Klockow: Feldweg in der Qualität eines Trampelpfads	Q3 51030,106885 50419,108545
@@ -1764,8 +1787,7 @@ Anna-Karbe-Str. (Gramzow): Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 5
 Anna-Karbe-Str. (Gramzow): Asphalt	Q0 50262,90540 50335,90610 50563,90705 50581,90731
 Dorfstr. (Lützlow): Verbundsteinpflaster	Q1 52151,93556 52142,93604 52196,93731 52262,93818 52324,93814
 Am Kietz (Lützlow): Verbundsteinpflaster	Q1+ 52350,93856 52422,94028 52431,94119
-#: note: laut Bild http://www.bsisb.de/dresdener/l_s_lr_mw/e30.jpg auf http://www.bsisb.de/default_f.htm?/dresdener/dresdener11.htm
-Wirtschaftsweg (verl. Ziethener Str. ): Schotterweg	Q2 10346,-4027 10763,-4012 11338,-3945
+Wirtschaftsweg (verl. Ziethener Str. ): Schotterweg, einige sandige Stellen	Q2- 10346,-4027 10778,-3988 11338,-3945
 #: note: laut Bild http://www.bsisb.de/sb/b101/b101_47.jpg
 Hauptstr. (Großbeeren): Asphalt	Q0 4418,-3332 5068,-3719
 #: note: laut Bild http://www.bsisb.de/sb/b101/b101_50.jpg und http://www.bsisb.de/sb/b101/b101_46.jpg
@@ -4689,7 +4711,7 @@ Seeweg: Verbundsteinpflaster	Q1 19352,-961 19404,-1076
 Franz-Mehring-Str.: mäßiger Asphalt	Q1- -9313,-2429 -9218,-2129 -9164,-1947
 # 
 #: by: Stefan Schmitz
-(Marienfelder Str./Hubertusstr. - Mauerradweg): Trampelpfad	Q2 10040,-3202 10051,-3173
+(Marienfelder Str./Hubertusstr. - Mauerradweg): Trampelpfad	Q2 10052,-3194 10051,-3173
 # 
 #: by: Marcus (mahabbel...):
 #: note: "Wohnstraße, für Auto 30 km/h"
