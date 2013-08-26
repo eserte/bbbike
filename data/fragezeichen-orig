@@ -49,7 +49,7 @@ Germanenstr.	?::projected 8304,19475 8268,19558 8234,19634 8233,19695 8231,19806
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-08-06
+#: last_checked: 2013-08-26
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -117,8 +117,8 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2013-08-19
-#: check_frequency: 60d
+#: last_checked: 2013-08-26
+#: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
@@ -157,8 +157,8 @@ Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="14"
 #: osm_watch: way id="42732291" version="5"
-#: last_checked: 2013-06-12
-#: next_check: 2013-08-17
+#: last_checked: 2013-08-26
+#: check_frequency: 60d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
@@ -171,13 +171,13 @@ Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-06-12
-#: next_check: 2013-08-17
+#: last_checked: 2013-08-26
+#: check_frequency: 60d
 Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7728,16538 7754,16364 7808,16215 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
 # 
 #: XXX Baumaßnahme 3.39 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: osm_watch: way id="144945039" version="3"
+#: osm_watch: way id="144945039" version="4"
 #: last_checked: 2013-08-16
 #: check_frequency: 100d
 Granitzstr.: Radspuren bis 2015 geplant	?::projected 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
@@ -250,9 +250,9 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 #: next_check: 2013-11-02
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
-#: last_checked: 2013-05-01
-#: next_check: 2013-08-01
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: last_checked: 2013-08-26
+#: check_frequency: 90d
 Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
@@ -260,17 +260,17 @@ Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,133
 #: check_frequency: 180d
 Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837 -6429,14879 -6405,14971
 # 
-#: next_check: 2013-06-01
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="30949821" version="19"
 #: osm_watch: way id="122121575" version="11"
 #: osm_watch: way id="30218983" version="18"
+#: next_check: 2013-06-01
 Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,15167 -707,15108 -834,15053 -945,14999 -1271,14843 -1307,14801 -1336,14786
 #: by: ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
-#: last_checked: 2013-05-01
-#: next_check: 2013-08-01
+#: last_checked: 2013-08-26
+#: check_frequency: 90d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
 #: last_checked: 2013-08-19
@@ -425,7 +425,7 @@ U Magdalenenstr.: Bau einer Fußgängerampel geplant	?::projected 16057,11988 1609
 Steg über den Packereigraben: wird er hier entstehen? Wie wird der Steg heißen?	?::inwork 6826,21587 6849,21496
 # 
 #: XXX_indoor aufnehmen?
-Bellermannstr.: Bauarbeiten der Wasserbetriebe, ca. bis Mitte 2014, 70 Meter langer Abschnitt	?::inwork 8912,16582 9107,16389
+Bellermannstr.: Bauarbeiten der Wasserbetriebe, bis Juni 2014, 70 Meter langer Abschnitt	?::inwork 8912,16582 9107,16389
 # 
 #: by: http://www.potsdam.de/cms/dokumente/13300755_1771576/fcb5126b/Amtsblatt_09_13.pdf
 #: XXX Sackgasse, Privatstraße
@@ -905,7 +905,7 @@ Templiner-See-Str.: Qualität? Kann die Daumstr. überquert werden?	?::projected -
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
-#: last_checked: 2013-07-11 vvv
+#: last_checked: 2013-08-26 vvv
 #: next_check: 2014-03-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1086,8 +1086,6 @@ Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?
 Am Heinersdorfer Graben: Qualität? Beleuchtet? Straßenname (bei osm: Kiebitzweg)	? 13902,18953 13404,19235 13040,19596
 # REMOVED (existiert zwar, ist aber nicht so wichtig, da Alternativen existieren. Parkplatz. Schranke im Süden, Poller im Norden) --- Am Lindenplatz - Schwarzmeerstr.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17856,10879 17821,10741
 # 
-Kurt-Schumacher-Damm: kann man hier entgegen der Einbahnstraßenrichtung auf dem Gehweg fahren?	?; 2831,14219 2803,14288
-# 
 #: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf
 Dieselstr. (Potsdam): diese Straße wird "neu gewidmet", existiert schon etwas? Qualität?	? -10350,-2358 -10258,-2380 -10273,-2445
 # 
@@ -1140,12 +1138,12 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: wann wird die Fortsetzung gebau
 #: next_check: 2014-04-15
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337
 # 
-#: last_checked: 2013-06-27
-#: next_check: 2013-08-17
-Fußgängerampel in Bau	?::inwork 7443,13008
+#: last_checked: 2013-08-26
+#: next_check: 2014-05-01
+Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7443,13008
 # 
 #: by: http://www.tagesspiegel.de/berlin/anbindung-an-hauptbahnhof-eroeffnung-von-strassenbahnstrecke-verzoegert-sich-erneut/7375642.html (Eröffnung Mitte oder Herbst 2014)
-#: last_checked: 2013-08-10
+#: last_checked: 2013-08-26
 #: next_check: 2014-05-01
 Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 # 
@@ -1329,9 +1327,7 @@ Sendener Str. - Bernauer Str.: Qualität des Waldweges?	? 964,18321 915,18352 625
 # REMOVED (keine Einbahnstraßenregelung hier, nur die südliche Fahrbahn ist gesperrt und der Verkehr wird über die nördliche umgeleitet ohne weitere Einschränkungen) --- #: last_checked: 2012-11-09 --- #: next_check: 2012-11-10 --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121029.1330.377234.html --- #: XXX Bauarbeiten gehen bis Dezember 2012 --- Bauarbeiten in der Köpenicker Str.: wie wird die Einbahnstraßenrichtung verlaufen? Behinderungen für Radfahrer?	? 11242,11720 11155,11750 11022,11782 11060,11753 11155,11750
 # REMOVED --- existiert nicht, aber siehe zwei unbenannte Straßen in dieser KGA --- Wiesengrund Straße 1|Karlshorst|10318|19960,8254 --- Wiesengrund Straße 1 (Karlshorst): Existiert diese Straße überhaupt?	? 19960,8254 19940,8292
 # REMOVED (auf der Nordseite existiert hier kein Weg) --- #: XXX fehlt auch in Berlin.coords.data: Fußweg 475|Rahnsdorf|12589 --- #: XXX_osm fehlt auch bei osm --- Fußweg 475: existiert hier tatsächlich ein befahrbarer Weg? Ausgeschildert? Qualität? Beleuchtet?	? 30794,4154 30757,3974
-# 
-#: XXX fehlt in Berlin.coords.data
-Am Festplatz: existieren hier Straßenschilder? Eine erkennbare Straße oder Platz?	? 3524,16111 3581,16221
+# REMOVED (Straßenschilder existieren hier nicht) --- #: XXX fehlt in Berlin.coords.data --- Am Festplatz: existieren hier Straßenschilder? Eine erkennbare Straße oder Platz?	? 3524,16111 3581,16221
 # 
 #: XXX wahrscheinlich Kopfsteinpflaster, jedenfalls am südlichen Ende, siehe http://www.flickr.com/photos/panwitz/8123017898/in/pool-gwb
 Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualität?	? 26931,-2871 26925,-3612 26860,-3805
@@ -3506,11 +3502,8 @@ Hultschiner Damm - Immortellenweg: existiert eine Verbindung für Fußgänger und R
 (Am Fasaneriegraben - Senftenberger Ring): Qualität des Weges (vielleicht asphaltiert?)	? 6839,21611 6826,21587 6802,21563 6758,21565 6756,21528
 # 
 # REMOVED (bearbeitet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1307/nachricht5017.html --- (Lortzingstr. - Mauerpark): existiert der neue Weg schon? Qualität des Weges? Nachts beleuchtet?	? 10038,15418 10179,15483
-# 
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130724.0930.387238.html
-#: XXX laut Artikel 3m breit
-(Weg zwischen Drontheimer Str. und Koloniestr.): Qualität? Nachts beleuchtet?	? 8457,16975 8606,16973
-(Weg zwischen Koloniestr. und Pankeweg/Gotenburger Str.): Qualität? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8606,16973 8804,16881
+# REMOVED (bearbeitet) --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130724.0930.387238.html --- #: XXX laut Artikel 3m breit--- (Weg zwischen Drontheimer Str. und Koloniestr.): Qualität? Nachts beleuchtet?	? 8457,16975 8606,16973
+# REMOVED (Hinterhöfe; sieht nicht wie ein öffentlicher Weg aus) --- (Weg zwischen Koloniestr. und Pankeweg/Gotenburger Str.): Qualität? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8606,16973 8804,16881
 Saarstr. (Eiche): Qualität?	? 23111,18784 23252,18529 23371,18325
 Rheinstr. (Eiche): Qualität?	? 23015,18687 23102,18552 23160,18461 23263,18275
 Ruhrstr. (Eiche): Qualität?	? 22999,18493 23048,18380 23126,18227

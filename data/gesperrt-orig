@@ -1663,7 +1663,7 @@ tragen (3+3+2+2 Stufen)	0:20 9244,3872
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4276
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130722.1530.387208.html
 #: XXX hier entsteht bis voraussichtlich Oktober 2013 eine Rampe
-#: last_checked: 2013-08-19
+#: last_checked: 2013-08-26
 #: next_check: 2013-10-15
 tragen (10 Stufen)	0:15 8035,10075
 tragen (7 weite Stufen)	0:30 15759,16671
@@ -2416,8 +2416,8 @@ Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -
 # 
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden!
 #: source_id: INKO_113041
-#: last_checked: 2013-06-24
-#: check_frequency: 60d
+#: last_checked: 2013-08-26
+#: check_frequency: 90d
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9852,12409
 # 
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
@@ -2489,10 +2489,6 @@ Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 1
 #: next_check: 2014-01-01
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
-# 
-#: last_checked: 2013-06-27
-#: next_check: 2013-08-17
-Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung gesperrt	2:inwork 7443,13008 7416,13058
 # 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig

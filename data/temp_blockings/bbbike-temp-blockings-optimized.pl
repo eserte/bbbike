@@ -2128,7 +2128,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Am Kupfergraben und am Zeughaus: Antik-, Buch- und Kunstmarkt, Samstag und Sonntag ca. 10-17 Uhr, nur Schieben möglich',
          'from' => undef,
          'id' => 1887,
-         'data' => '	q4::temp:clock 9754,12775 9661,12876 9618,12907 9533,12925
+         'data' => '	q4::temp:clock 9754,12775 9654,12882 9618,12907 9533,12925
 	q4::temp:clock 9919,12613 9956,12523 9984,12426
 ',
          'type' => 'gesperrt'
@@ -3320,9 +3320,10 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'text' => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, bis 1. September 2013',
          'from' => 1377324534,
          'id' => 2473,
-         'data' => 'userdel	2::temp 8652,9870 8571,9896
+         'data' => '#: note: außerhalb der Bühnenprogrammzeiten keine Behinderungen
+userdel	q3::temp 8652,9870 8571,9896
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        {
          'until' => 1380172611,

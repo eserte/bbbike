@@ -7742,7 +7742,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005138',
        data  => <<EOF,
-userdel	1::inwork 9443,15430 9141,15272 8900,15146
+userdel	1::inwork 9443,15430 9363,15388 9141,15272 8900,15146
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -16130,7 +16130,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	q4::temp:clock 9754,12775 9661,12876 9618,12907 9533,12925
+	q4::temp:clock 9754,12775 9654,12882 9618,12907 9533,12925
 	q4::temp:clock 9919,12613 9956,12523 9984,12426
 EOF
      },
@@ -21696,9 +21696,10 @@ EOF
      { from  => 1377324534, # 2013-08-24 08:08
        until => 1378072799, # 2013-09-01 23:59
        text  => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, bis 1. September 2013',
-       type  => 'gesperrt',
+       type  => 'handicap',
        data  => <<EOF,
-userdel	2::temp 8652,9870 8571,9896
+#: note: außerhalb der Bühnenprogrammzeiten keine Behinderungen
+userdel	q3::temp 8652,9870 8571,9896
 EOF
      },
      { from  => undef, # 

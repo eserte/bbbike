@@ -19,6 +19,7 @@ Schwarzer Weg: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13
 Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 Ella-Trebe-Str./Berta-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022 7867,13106 7937,13109
+Alt-Moabit - Invalidenstr.: wegen Bauarbeiten f¸r die Straﬂenbahnanbindung ist die Fahrbahn gesperrt	q4 7443,13008 7416,13058
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
@@ -226,7 +227,7 @@ Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10166,12777 10105,12855 9977
 Spreeufer: Fuﬂg‰nger	q2 9707,12974 9557,12992 9538,12993 9508,12991 9272,12952
 Henriette-Herz-Platz: Straﬂenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
 Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q1 9977,12912 10132,12941
-Monbijoubr¸cke: Fuﬂg‰nger	q1 9707,12974 9680,12916 9661,12876
+Monbijoubr¸cke: Fuﬂg‰nger	q1 9707,12974 9683,12913 9654,12882
 Garnisonkirchplatz: Straﬂenbahn	q2 10309,12854 10255,12959
 F¸rther Str.: Gehweg	q2 5773,10318 5808,10284
 (Zossener Br¸cke - Mehringplatz): Gehweg	q1 9873,10285 9668,10306
@@ -554,7 +555,7 @@ s¸dliches Spreeufer: besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 7
 (Fontanestr. - Kopenhagener Str.): Fuﬂg‰nger	q2 7522,19804 7518,19762 7617,19748
 Oleanderstr.: Fuﬂg‰nger, Bordsteine	q2 14271,14024 14298,14015
 Pankgrafenstr. (Pankow): Fuﬂg‰nger, ggfs. schieben	q2 10470,18402 10502,18338
-Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3162,15314 3045,15044 2960,14746
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3162,15314 3045,15044 2960,14746
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2904,14748 2934,14852 3000,15048 3106,15384 3095,15495 3160,15519 3165,15590 3257,15666 3314,15782 3398,16000 3564,16294
 H¸lsenplatz: Fuﬂg‰nger, Bordsteine	q3 18512,10744 18545,10752 18542,10762 18538,10774 18506,10769
 H¸lsenplatz: Fuﬂg‰nger, Bordsteine	q3 18542,10762 18570,10768
@@ -1228,6 +1229,11 @@ Europaplatz: einige Fuﬂg‰nger	q1 7880,13315 7938,13302
 Wuhlestr. [Wohngebiet]: Fuﬂg‰nger	q1 21580,13583 21430,13602
 (oberer Wuhlewanderweg): einige Fuﬂg‰nger	q1 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902 22795,14045 22855,14114 22872,14175 22872,14233 22860,14440 22873,14502 22864,14556
 (oberer Wuhlewanderweg): Fuﬂg‰nger, Kinderspielpl‰tze	q1 22864,14556 22851,14603 22756,14787 22599,15030 22578,15114
+Unterbaumstr.: Bordsteine	q2 8486,12918 8502,12935
+(Hofackerzeile - Kurt-Schumacher-Damm): einige Fuﬂg‰nger	q1 2769,14482 2793,14374
+(Charles-Corcelle-Ring - Dohnagestell/Am Schwarzen Graben): Bordstein	q2 4775,15929 4833,15916
+(Charles-Corcelle-Ring - Dohnagestell): Bordstein, enger Pfad	q4 4724,15925 4723,15907
+(Drontheimer Str. - Koloniestr.): Fuﬂg‰nger	q2 8457,16975 8606,16973
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1356,7 +1362,6 @@ Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
 Hackerstr.: schmale Straﬂe, schlecht einzusehen	q1 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 (Wuhlewanderweg - Teterower Ring): Fuﬂg‰nger	q1 22196,12961 22279,12938 22308,12940 22357,12956 22419,12975 22443,12998
-(Dahrendorfzeile - Kurt-Schumacher-Damm): enger Weg, Fuﬂg‰nger, Bordsteine	q2 2709,14284 2803,14288
 Retzdorffpromenade: Fuﬂg‰nger	q2 4893,6812 4993,6812
 Albestr.: enge Straﬂe	q1 5422,7461 5448,7436 5640,7435 5811,7433
 Leuthener Str.: enge Straﬂe	q1 7411,8364 7494,8364 7578,8358 7640,8359 7716,8356
@@ -2163,3 +2168,4 @@ Karl-Lieknecht-Str., linker Gehweg	q3::igndisp; 11082,13371 11070,13357
 Potsdamer Str., linker Gehweg	q4::igndisp; 7501,9573 7526,9791
 Landsberger Allee, Radweg auf der linken Seite	q0::igndisp; 15850,14308 15848,14325 15923,14334
 Hauptstr., linker Gehweg	q3::igndisp; 16004,10204 16018,10212 16150,10123 16195,10044 16206,10047
+Kurt-Schumacher-Damm, linker Gehweg	q2::igndisp; 2831,14219 2787,14284 2793,14374
