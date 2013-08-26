@@ -5,12 +5,29 @@ use CGI::Carp qw(fatalsToBrowser);
 
 use Archive::Zip qw(:ERROR_CODES);
 use Cwd qw(realpath);
-use CGI qw(:standard);
+use CGI qw();
 use ExtUtils::Manifest qw(maniread);
 use File::Basename qw(dirname);
 use File::Temp qw(tempfile);
 
 my $do_snapshot = $0 =~ /bbbike-snapshot\.cgi/;
+
+my $q = CGI->new;
+
+{
+    # Don't use RealBin here
+    require FindBin;
+    $FindBin::Bin = $FindBin::Bin if 0; # cease -w
+    my $f = "$FindBin::Bin/Botchecker_BBBike.pm";
+    if (-r $f) {
+	eval {
+	    local $SIG{'__DIE__'};
+	    do $f;
+	    Botchecker_BBBike::run_bbbike_snapshot($q);
+	};
+	warn $@ if $@;
+    }
+}
 
 my @l = localtime;
 my $date = sprintf '%04d%02d%02d', $l[5]+1900, $l[4]+1, $l[3];
@@ -42,11 +59,11 @@ if ($zip->writeToFileNamed($filename) != AZ_OK) {
     die q{Can't write zip file $filename};
 }
 
-print header(-Content_Type => 'application/zip',
-	     -charset => '', # CGI.pm bug, https://rt.cpan.org/Ticket/Display.html?id=67100
-	     -Content_Disposition => "attachment; filename=bbbike_" . ($do_snapshot ? "snapshot" : "data") . "_$date.zip",
-	     -Content_Length => -s $filename,
-	    );
+print $q->header(-Content_Type => 'application/zip',
+		 -charset => '', # CGI.pm bug, https://rt.cpan.org/Ticket/Display.html?id=67100
+		 -Content_Disposition => "attachment; filename=bbbike_" . ($do_snapshot ? "snapshot" : "data") . "_$date.zip",
+		 -Content_Length => -s $filename,
+		);
 open my $fh, $filename or die "Can't open $filename: $!";
 binmode $fh;
 seek $fh, 0, 0;
