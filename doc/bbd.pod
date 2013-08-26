@@ -587,6 +587,19 @@ C<#A> (highest) and C<#C> (lowest).
 
 =over
 
+=item C<off: I<when> I<comment>>
+
+Currently used in F<ampeln-orig>, needs to be decided on the exact
+format and even on the directive name. Example entry:
+
+    #: off: night (seen 2001-12-25)
+
+The I<comment> part may be completely missing.
+
+Currently the following labels are used in the I<when> part: C<night>,
+C<weekend>, C<holiday>, week day names, C<except_schooltime>,
+C<except_event>, I<HH:MM-HH:MM>.
+
 =item C<internal_note: I<string>>
 
 A free text note, which must not appear in the processed data. It is
