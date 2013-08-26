@@ -25,7 +25,7 @@ my $q = CGI->new;
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$q],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
 my $data = $q->param("XForms:Model") || $q->param("POSTDATA");
-warn "GOT request:\n$data\n------------\n";
+#warn "GOT request:\n$data\n------------\n"; # debugging
 
 my $isotime = strftime("%Y%m%d_%H%M%S", localtime);
 if (!-d $gps_upload_dir) {
