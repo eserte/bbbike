@@ -163,10 +163,10 @@
 Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängerampel	X 12869,12425
 	X 12497,11459
 	X 15361,12071
-#: note: zusammenhängende Ampelanlage vvv
+#: XXX_prog: zusammenhängende Ampelanlage vvv
 	X 15563,12860
 	X 15516,12838
-#: note: ^^^
+#: XXX_prog: ^^^
 	F 15367,12815
 	X 15515,13134
 	X 15513,13539
@@ -358,10 +358,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5644,6936
 	X 5817,7223
 	X 5397,7205
-#: note: zusammenhängende Ampelanlage vvv
+#: XXX_prog: zusammenhängende Ampelanlage vvv
 	X 5357,8013
 	X 5331,8012
-#: note ^^^
+#: XXX_prog ^^^
 	X 5346,7860
 	X 5635,8011
 	X 4788,7257
@@ -423,7 +423,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3501,11096
 	X 3830,10351
 	X 3813,10435
-# note: allerdings mit relativ langen Grünphasen für Fußgänger
+#: note: allerdings mit relativ langen Grünphasen für Fußgänger
 	F 3795,11098
 	X 4289,11060
 	X 4245,10435
@@ -443,7 +443,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12649,6833
 	X 13236,6489
 	X 13566,5792
-#: note: nachts ausgeschaltet (gesehen: 2013-08-25 23:10 Uhr)
+#: off: night (seen 2013-08-25 23:10)
 	X 13430,6086
 	X 14344,7003
 	X 13761,7328
@@ -680,8 +680,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4993,9843
 	X 4151,10026
 	X 13277,8211
-#: note: möglicherweise nur während der Schulzeit eingeschaltet
-#: note: ausgeschaltet: 2013-08-25 gegen 23:20 Uhr
+#: off: except_schooltime (seen 2013-08-25 23:20)
 	X 14758,7373
 	X 15221,7778
 	F 15557,7404
@@ -808,6 +807,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 1747,11719
 	X 2446,11776
 	X 2330,11762
+#: off: except_event
 #: note: Ampel wahrscheinlich nur bei Waldbühnen-Veranstaltungen eingeschaltet
 	X -1269,11008
 	X -1499,10990
@@ -985,10 +985,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11389,13887
 	X 11852,15281
 	X -3404,11589
-#: note: zusammenhängende Ampelanlage vvv
+#: XXX_prog: zusammenhängende Ampelanlage vvv
 	X -3495,15622
 	X -3501,15645
-#: note: ^^^
+#: XXX_prog: ^^^
 	X -3665,16378
 	X -1872,24336
 	F -1286,23753
@@ -1123,7 +1123,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13100,13803
 	F 15079,13106
 	X 15420,12178
-#permanent abgeschaltet:	F 10720,11805
+# REMOVED (permanent abgeschaltet) ---	F 10720,11805
 	X 14134,11272
 	X 11785,13625
 	X 10897,17274
@@ -1489,7 +1489,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -4759,13992
 	X -4748,14237
 	X -4724,14482
-#: note: gegen 23:30 ausgeschaltet (2010-02-15)
+#: off: night (seen 2010-02-15 23:30)
 	X -4220,14311
 	X -4378,14388
 	X -3851,14174
@@ -1534,7 +1534,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 13644,14915
 	X 12870,15342
-#: note: nachts möglicherweise ausgeschaltet (gesehen: 2013-05-30 gegen 0:30)
+#: off: night (seen 2013-05-30 0:30)
 	X 13276,12903
 	X 13747,13110
 	X 13844,12900
@@ -1568,6 +1568,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -4351,12460
 #: note: nachts zwischen 22 Uhr und 5 Uhr ausgeschaltet; Anforderungsampel, Wartezeit für Fußgänger zwischen 5 Sekunden und 1 Minute
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4408&options=4 (Zeiten)
+#: off: 22:00-05:00
 	F 404,12414
 	F 1264,11840
 	F 1775,11135
@@ -1578,6 +1579,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 17384,775
 	X 17518,564
 #: note: am Wochenende manchmal ausgeschaltet
+#: off: weekend
 	F 16096,803
 	X 11791,834
 	X 11407,113
@@ -1601,6 +1603,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13010,2085
 	F 12547,1852
 #: note: am Wochenende ausgeschaltet (immer?)
+#: off: weekend
 	X 12643,1706
 	X 12207,1704
 	X 11476,1398
@@ -1685,7 +1688,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 4520,9392
 	X 2201,8519
 	X 2129,8333
-#: note: an Wochenenden/Feiertagen vermutlich immer aus (gesehen: 2013-05-01)
+#: off: weekend/holiday (seen 2013-05-01)
 	F 1773,8859
 	X -5454,6896
 	X -5097,7361
@@ -1725,7 +1728,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4572,7936
 	X 15080,11905
 	X 6454,8653
-#: note: nachts ausgeschaltet (gesehen: 2013-08-25 23:30 Uhr)
+#: off: night (seend 2013-08-25 23:30)
 	X 14652,10201
 # REMOVED --- #: note: temporäre Baustellenampel, ist immer bei einer Sperrung der Karlshorster Str. eingeschaltet --- #: last_checked: 2012-11-02 --- #: next_check: 2012-11-05 --- X::inwork 14832,10512
 	F 13030,7346
@@ -1789,7 +1792,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 12042,21886
 	F 10427,15699
 # REMOVED (aufgehoben, by: Kaja Kruse) --- X 10713,15746
-#: note: Sa und So wahrscheinlich permanent ausgeschaltet
+#: off: weekend
 	X 1053,13790
 #: XXX_prog Ampel ist nach Osten versetzt, aber hier eingetragen, damit auch das Nord-Süd-Routing diese Ampel erfährt
 	F 10463,13747
@@ -1797,7 +1800,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 8571,11846
 	X 21823,4210
 	X 16868,5938
-#: note: am Wochenende und nachts ausgeschaltet
+#: off: weekend/night
 	X 12520,12938
 	X 9454,12558
 	F 7702,10146
@@ -2229,10 +2232,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 8901,12008
 	X 18206,13817
 #: note: Abends meist (immer?) ausgeschaltet, evtl. auch am Wochenende
+#: off: night
 	F 14802,11784
 	X -1810,16391
 	X -1675,16813
 #: note: Bedarfsampeln, am Wochenende abgeschaltet (by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4302&options=4)
+#: off: weekend
 	F -2088,13413
 	F 417,12115
 	F 6447,11144
@@ -2255,13 +2260,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 13256,26863
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100805.1445.305319.html
 	X -7365,15306
-#: note: am Wochenende ausgeschaltet (immer?)
+#: off: weekend
 #: XXX Ampel wird vielleicht zur Roedernstr. verlegt
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4836&options=4
 #: last_checked: 2013-06-22
 #: check_frequency: 180d
 	F 23933,8879
-#: note: am Wochenende ausgeschaltet (immer?)
+#: off: weekend
 	F 24435,10065
 	F 25546,5359
 #: by: Germar Molter
@@ -2335,10 +2340,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 18843,6013
 	F 19852,15201
 	F 22131,16000
-#: note: 2011-08-02 noch in Bau
 	X 23617,15594
 	F 24556,12056
-#: note: sonntags möglicherweise immer ausgeschaltet
+#: off: Sunday
 	F 24936,4838
 	X 23950,5342
 	F 11033,13086
@@ -2453,7 +2457,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 9822,14067
 #: XXX_prog Ampel existiert nur in Richtung Norden
 	X 5086,14504
-#: note: Ampel ist wahrscheinlich nur werktags eingeschaltet
+#: off: weekend/holiday
 	X 1932,14146
 	F -2866,17760
 	X -2728,17038
@@ -2501,6 +2505,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 3005,13728
 	X 23660,5477
 	F 18165,7371
+#: off: night (seen 2013-08-25 22:30)
+	F 11579,-3093
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/
@@ -2629,8 +2635,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -12432,-226
 #: XXX_prog: Ampelanlage gilt für die gesamte Brücke, auf der anderen Seite ist auch eine
 	X -9942,21
-#: note nachts ausgeschaltet (gesehen: 2013-08-25 22:30 Uhr)
-	F 11579,-3093
 ################################################################################
 #: note: Ampeln elsewhere vvv
 	F 37846,52750
