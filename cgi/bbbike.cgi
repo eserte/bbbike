@@ -101,7 +101,7 @@ use vars qw($VERSION $VERBOSE
 	    $with_lang_switch
 	    $newstreetform_encoding
 	    $use_region_image
-	    $include_outer_region @outer_berlin_places $outer_berlin_qr
+	    $include_outer_region @outer_berlin_places $outer_berlin_qr $outer_berlin_subplaces_qr
 	    $warn_message $use_utf8 $data_is_wgs84 $osm_data
 	    $bbbike_start_js_version $bbbike_css_version
 	    $use_file_cache $cache_entry
@@ -705,6 +705,7 @@ $newstreetform_encoding = "";
 			"Glienicke/Nordbahn", "Dahlewitz",
 		       );
 $outer_berlin_qr = "^(?:" . join("|", map { quotemeta } @outer_berlin_places) . ")\$"; $outer_berlin_qr = qr{$outer_berlin_qr};
+$outer_berlin_subplaces_qr = "^(?:" . join("|", map { quotemeta } @outer_berlin_places) . ")(-|\$)"; $outer_berlin_subplaces_qr = qr{$outer_berlin_subplaces_qr};
 
 ####################################################################
 
@@ -1717,11 +1718,14 @@ sub choose_form {
 		}
 	    }
 
-	    if (@$matchref == 1 && do {
-		my $first_rec_file_index = $matchref->[0]->get_field("i");
-		$first_rec_file_index = '' if !defined $first_rec_file_index;
-		$is_usable_without_strassen{$first_rec_file_index}
-	    }) {
+	    if (@$matchref == 1
+		&& $plz_scope eq 'Berlin/Potsdam' # important: %is_usable_without_strassen only valid for Berlin/Potsdam!
+		&& do {
+		     my $first_rec_file_index = $matchref->[0]->get_field("i");
+		     $first_rec_file_index = '' if !defined $first_rec_file_index;
+		     $is_usable_without_strassen{$first_rec_file_index}
+		 }
+	       ) {
 		$$nameref = $matchref->[0]->get_name;
 		$$tworef = _match_to_cgival($matchref->[0]);
 		$q->param($type . 'c', $matchref->[0]->get_coord);
@@ -1736,7 +1740,7 @@ sub choose_form {
 					 $match->get_citypart);
 		warn "Wähle $type-Straße für $strasse/$bezirk (2nd)\n"
 		    if $debug;
-		if ($bezirk =~ $outer_berlin_qr) {
+		if ($bezirk =~ $outer_berlin_subplaces_qr) {
 		    my $name = _outer_berlin_hack($strasse, $bezirk);
 		    if ($name) {
 			$$nameref = $name;
