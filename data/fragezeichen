@@ -835,7 +835,6 @@ Striewitzweg (Teltow): Qualität in den verschiedenen Abschnitten der Straße? Ist
 Bau einer Radfahrer- und Fußgängerbrücke in Friedrichsthal	?::inwork 1860,42884 1907,42835
 Altdöbern - Calau: Qualität?	? 55259,-83091 55388,-83077 55768,-82862 54521,-79452 54572,-78865 54600,-77483 53827,-76082
 Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362
-Märkische Zeile: existiert hier eine ausgeschilderte Straße? Qualität?	? 6793,21511 6849,21496 6856,21396
 B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19894,-835 19858,-843 19869,-816
 Kramnitzer Weg: Qualität der Verlängerung nach Westen hin? Existiert eine Ausschilderung	? -9353,5012 -9395,5025 -9537,5083 -9617,5086
 Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18091,1642 -18350,1540 -18688,1177 -18718,1243 -18673,1785 -18728,2153 -18989,2236 -19233,2251 -19422,2220 -19656,2362 -19721,2368
@@ -1021,8 +1020,6 @@ Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
 Bruno-Taut-Str. - Am Gartenstadtweg: nachts beleuchtet?	? 21790,682 21783,660 21755,625 21714,601 21679,596
 Hultschiner Damm - Immortellenweg: existiert eine Verbindung für Fußgänger und Radfahrer? Beschaffenheit des Weges? Nachts beleuchtet?	? 24402,9987 24282,10015
-(Am Fasaneriegraben): Qualität des Weges (vielleicht asphaltiert?)	? 6907,21751 6878,21660 6839,21611 6849,21592 6886,21577 6917,21559 6917,21506
-(Am Fasaneriegraben - Senftenberger Ring): Qualität des Weges (vielleicht asphaltiert?)	? 6839,21611 6826,21587 6802,21563 6758,21565 6756,21528
 Saarstr. (Eiche): Qualität?	? 23111,18784 23252,18529 23371,18325
 Rheinstr. (Eiche): Qualität?	? 23015,18687 23102,18552 23160,18461 23263,18275
 Ruhrstr. (Eiche): Qualität?	? 22999,18493 23048,18380 23126,18227
@@ -1070,6 +1067,10 @@ Heidemühler Weg (Waldesruh): Qualität?	? 25476,9561 25522,9522 25828,9259 25868,
 An der Trainierbahn (Waldesruh): Qualität?	? 26243,8586 25887,8456 25780,8385 25175,7953 24975,7810
 An der Trainierbahn (Waldesruh): Qualität?	? 25655,8482 25780,8385
 Am Graben (Waldblick): Qualität?	? 9402,-3817 9354,-3949
+(Wildstrubelpfad - Am Heinersdorfer Graben): Qualität des Weges? Nachts beleuchtet? Existiert eine Ausschilderung?	? 13352,18360 13335,18374 13415,18464 13466,18547 13511,18600 13351,18736 13344,18794 13356,18835 13408,18897 13430,18948 13470,18990 13492,19056 13452,19163 13416,19223 13431,19255
+Sowjetisches Ehrenmal - Friesenstr.: Qualität des Weges? Nachts beleuchtet?	? 8356,19291 8722,19265
+Schönholzer Str. - Waldsteg: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8314,19288 8211,19294 7857,19628 7857,19693
+zum Sowjetischen Ehrenmal: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8319,19299 8255,19366
 # added from ampeln-orig
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -1078,8 +1079,11 @@ S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet (laut ADFC-Karte)	? 4613,22928 4678,22776
 # added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ortsschilder ampeln ampelschaltung plz potsdam deutschland grenzuebergaenge sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_danger comments_ferry comments_misc  comments_mount comments_path comments_route  comments_tram comments_kfzverkehr comments_scenic fragezeichen exits)
 Verl. Pücklerstr. (Existieren Straßenschilder für die "Verlängerte Pücklerstr."?)	? 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645
+(Gladiolenweg) (wie ist der neue Name für den Gladiolenweg?)	? 9092,21677 9014,21650
+(Grenzweg) (wie ist der neue Name für den Grenzweg?)	? 8557,22063 8572,22094 8594,22158
 Sportforumstr. (Qualität der Sportforumstr. (asphaltiert?))	? -193,12051 -212,12095 -247,12117 -369,12175
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
+zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
 Birkenhain (Borkheide) (Fahrradstraße?)	? -25293,-19426 -26249,-20121
 Borkheide - Neuendorf (ungenaue Koordinaten!)	? -26270,-20176 -26560,-20828 -27908,-22935 -28547,-22981 -29244,-23127
 Grieben - Glambeck (Qualität? (möglicherweise asphaltiert?))	? -14640,54609 -14619,54872 -14667,54977 -14759,55179 -14847,55938 -14966,56468 -14783,56907 -14320,57151 -13528,57848 -13065,58263
@@ -1127,8 +1131,8 @@ Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
 Berliner Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert (Ist die Berliner Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?)	? 12736,17998 12467,17814
 Parforceweg: Waldweg? (Ist der Parforceweg ein "gewöhnlicher" Waldweg?)	? -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
-Schneeglöckchenstr.: mäßiger Beton (Ist die Straße mittlerweile asphaltiert?)	? 14122,13947 14137,13987 14166,14069 14217,14206
 Wattstr.: Kopfsteinpflaster (ist die Wattstr. mittlerweile ab der Kreuzung Jugendweg auch asphaltiert?)	? 998,14435 998,14516
+Kümmelweg: unbefestigte Straße (Wie ist die Fahrbahnbeschaffenheit hier? Tatsächlich unbefestigt?)	? 9169,21548 9066,21516
 Schauflerpfad: mäßiges Kopfsteinpflaster (Qualität des Schauflerpfads?)	? -716,21284 -734,21360 -796,21375 -865,21361 -1128,21421 -1218,21436
 Jugendweg: Asphalt (ist der Jugendweg seit den Bauarbeiten komplett asphaltiert?)	? 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
 Rosentreterpromenade: Asphalt mit Schäden (Ist die Qualität in der Rosentreterpromenade nach den Bauarbeiten besser geworden?)	? 4423,20848 4245,21105 4226,21133

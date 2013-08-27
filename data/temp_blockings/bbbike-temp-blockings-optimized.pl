@@ -3333,6 +3333,51 @@ userdel	q3::temp 8652,9870 8571,9896
          'data' => 'userdel	2::inwork 12726,3870 12805,4020
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.liepnitzinsel.de/faehre.php',
+         'recurring' => 1,
+         'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+	2::temp 17391,38405 17448,38277 17692,38138
+#: XXX_prog ^^^
+',
+         'until' => undef,
+         'from' => undef,
+         'text' => 'Fähre Liepnitzsee: fährt nur ab Ende März bis Ende Oktober',
+         'type' => 'gesperrt',
+         'id' => 2475
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html',
+         'until' => 1380146399,
+         'text' => 'Manfred-von-Richthofen-Str.: Bauarbeiten zwischen Kaiserkorso und Wolffring, Fahrbahn in Richtung Süden gesperrt, vom 09.09.2013 bis voraussichtlich zum 25.09.2013',
+         'from' => 1378591200,
+         'id' => 2476,
+         'data' => '#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 2,5 Wochen
+#: next_check: 2013-09-24
+userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1380578400,
+         'text' => 'Höhndorfstr.: Bauarbeiten, Fahrbahn gesperrt, vom 09.09.2013 bis zum 30.09.2013',
+         'from' => 1378591200,
+         'id' => 2477,
+         'data' => 'userdel	q4::inwork 8425,8775 8438,8676 8455,8567
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1378331999,
+         'text' => 'Totilastr.: Bauarbeiten zwischen Manteuffelstr. und Wittekindstr., Fahrbahn gesperrt, vom 26.08.2013 bis voraussichtlich zum 04.09.2013',
+         'from' => 1377381600,
+         'id' => 2478,
+         'data' => '#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 1,5 Wochen
+#: next_check: 2013-09-03
+userdel	q4::inwork 8374,5598 8574,5580
+',
+         'type' => 'handicap'
        }
      
 );

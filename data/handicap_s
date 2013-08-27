@@ -13,13 +13,15 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9580,12581 9601,12380
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
+Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689
 Scharnhorststr.: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
 Schwarzer Weg: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
 Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 Ella-Trebe-Str./Berta-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022 7867,13106 7937,13109
-Alt-Moabit - Invalidenstr.: wegen Bauarbeiten f¸r die Straﬂenbahnanbindung ist die Fahrbahn gesperrt	q4 7443,13008 7416,13058
+Alt-Moabit - Invalidenstr.: wegen Bauarbeiten f¸r die Straﬂenbahnanbindung ist die Fahrbahn gesperrt	q4::inwork 7443,13008 7416,13058
+Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
@@ -157,8 +159,8 @@ s¸dlicher Uferweg an der Krummen Lanke: Fuﬂg‰nger	q2 -1274,4367 -1245,4414 -1185
 nˆrdlicher/westlicher Uferweg an der Krummen Lanke: Fuﬂg‰nger	q2 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1245,4414
 Krumme Lanke - Parkplatz am Fischerh¸ttenweg: Fuﬂg‰nger	q2 -1287,4486 -1304,4450 -1315,4393
 Pankeweg, B¸rgerpark: Fuﬂg‰nger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9324,18137 9310,18108
-B¸rgerpark: Fuﬂg‰nger	q2 9460,18053 9479,18217 9701,18256 9716,18290
-B¸rgerpark: Fuﬂg‰nger	q1 9428,18330 9424,18276 9479,18217
+B¸rgerpark: Fuﬂg‰nger	q2 9460,18053 9462,18234 9701,18256 9716,18290
+B¸rgerpark: Fuﬂg‰nger	q1 9419,18330 9424,18276 9462,18234
 Breite Str.: Fuﬂg‰ngerzone	q4 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
 Markt: Fuﬂg‰ngerzone	q4 -3155,14340 -3204,14368 -3231,14383 -3275,14407
 Kirchgasse (Spandau): Fuﬂg‰ngerzone	q4 -3089,14440 -3150,14478
@@ -711,7 +713,7 @@ Katzengrabensteg: Fuﬂg‰nger	q1 22581,4932 22484,4868 22433,4887 22439,4838
 Samoastr.: Fuﬂg‰nger	q1 6886,15156 6833,15215
 Nazarethkirchstr.: einige Bodenschwellen	q0 7543,16016 7441,15909 7354,15817 7198,15656
 (Landsberger Allee - Treffurter Str.): Fuﬂg‰nger	q2 18057,14549 18119,14599
-(Storkower Str. - Schneeglˆckchenstr.): Fuﬂg‰nger, Bordsteine	q2 13964,13830 14037,13842
+(Storkower Str. - Schneeglˆckchenstr.): Fuﬂg‰nger, Bordsteine	q2 13964,13830 14032,13823 14049,13846
 (Antonplatz - Bizetstr.): Fuﬂg‰nger, Bauarbeiten, Umwege notwendig	q3::inwork 13487,15888 13525,15784
 (Othellostr. - Prenzlauer Promenade): Fuﬂg‰nger	q1 11990,18104 11894,18146
 Rolandstr.: Fuﬂg‰nger	q1 11380,19783 11229,19706 11134,19655
@@ -760,7 +762,7 @@ Am Graben [nˆrdlicher Weg]: teilweise recht eng (Pfad)	q2 14277,18684 14348,1871
 Schwarzelfenweg: enge Straﬂe	q0 14277,18684 14283,18669 14307,18608 14330,18547 14391,18389
 Andersenweg: Fuﬂg‰nger	q1 14565,18777 14521,18907 14495,18956 14452,19020 14414,19063 14279,19144 14150,19226 14053,19280 14018,19292 13990,19302 13951,19312
 Reineke-Fuchs-Weg: Fuﬂg‰nger	q1 14784,18995 14698,18967 14651,18950 14603,18934 14558,18920 14521,18907 14481,18893 14422,18874 14394,18876 14359,18896 14324,18916 14189,19000 14059,19079 13971,19125 13936,19132 13909,19133
-Sterntalerweg: Fuﬂg‰nger	q1 14030,19510 13951,19312 13924,19237 13909,19133 13903,18979 13902,18953 13899,18833 13892,18762 13898,18721 13916,18678 13945,18612 13950,18567
+Sterntalerweg: Fuﬂg‰nger	q1 14030,19510 13951,19312 13924,19237 13909,19133 13903,18979 13902,18960 13899,18833 13892,18762 13898,18721 13916,18678 13945,18612 13950,18567
 Hauffallee: Fuﬂg‰nger, querlaufende Ablaufrinnen	q1 13903,18979 13964,18985 14020,19033 14059,19079 14094,19134 14126,19188 14150,19226 14168,19256 14191,19294 14209,19327
 Ullerplatz: enge Straﬂe	q0 14205,18571 14307,18608
 Am Heimenstein: enge Straﬂe	q0 14354,18694 14397,18568
@@ -1070,6 +1072,10 @@ Straupitzer Steig: Fuﬂg‰ngerzone	q4 6765,21364 6766,21341
 (am Fasaneriegraben): einige Fuﬂg‰nger	q1 6907,21751 6911,21774 6938,21825
 (Rundweg um das Mittelfeldbecken): einige Fuﬂg‰nger	q1 6938,21825 6954,21809 7007,21821 7144,21838 7141,21865 7077,21860 7050,21904 6999,21908 6947,21895 6923,21858 6938,21825
 (am Fasaneriegraben): einige Fuﬂg‰nger	q1 7144,21838 7272,21855 7287,21845
+(am Fasaneriegraben): einige Fuﬂg‰nger	q1 6907,21751 6878,21660 6841,21615
+(am Fasaneriegraben - Senftenberger Ring Ost): einige Fuﬂg‰nger	q1 6841,21615 6856,21588 6917,21559 6925,21558
+(am Fasaneriegraben - Senftenberger Ring West): einige Fuﬂg‰nger	q1 6841,21615 6826,21587 6808,21565 6748,21565
+(Senftenberger Ring West - Senftenberger Ring Ost): einige Fuﬂg‰nger	q1 6826,21587 6856,21588
 (am Fasaneriegraben): teilweise eng	q2 7331,22037 7375,22146 7439,22138 7516,22178
 Schneefinkweg: enger Pfad	q3 12812,20239 12808,20233 12782,20191 12778,20184 12750,20128 12719,20065
 Schneefinkweg: enger Pfad	q3 12675,19974 12651,19928 12622,19874
@@ -1234,6 +1240,7 @@ Unterbaumstr.: Bordsteine	q2 8486,12918 8502,12935
 (Charles-Corcelle-Ring - Dohnagestell/Am Schwarzen Graben): Bordstein	q2 4775,15929 4833,15916
 (Charles-Corcelle-Ring - Dohnagestell): Bordstein, enger Pfad	q4 4724,15925 4723,15907
 (Drontheimer Str. - Koloniestr.): Fuﬂg‰nger	q2 8457,16975 8606,16973
+(M‰rkische Zeile): Einkaufszentrum, Fuﬂg‰nger	q4 6847,21509 6856,21396
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789

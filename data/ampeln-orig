@@ -1136,7 +1136,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5620,13120
 	X 6661,13130
 	X 12045,16574
-	X 12986,23392
+	X 12937,23357
 	B 12944,26163
 	X 11556,10869
 	X 10397,10852
@@ -1362,7 +1362,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6075,23022
 	X 4810,21730
 	X 5466,21910
-	X 12878,23311
+	X 12805,23268
 	X 15845,23717
 	X -1654,18711
 	X -130,21396
@@ -1937,7 +1937,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 10170,14905
 	F 10515,15045
 	X 21163,15289
-#: note: laut Luftbild:
 	X 23565,15993
 	B0 20722,6971
 	B0 14895,1842
@@ -2042,7 +2041,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X -4663,14820
 	X 18809,9133
 	X 21337,13470
-#: note: Luftbild
 	X 23021,13982
 	X 5476,19450
 #: note: Luftbild
@@ -2274,7 +2272,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 11056,15009
 	F 12158,7449
 	B 19302,-734
-#: note: Luftbild
 	X 10231,-1086
 	X 8078,8772
 	F 9781,16569
@@ -2398,8 +2395,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2013-05-29
-#: next_check: 2013-08-27
+#: last_checked: 2013-08-26
+#: check_frequency: 90d
 	F::inwork 9984,12426
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
 #: last_checked: 2013-06-02 vvv
@@ -2439,7 +2436,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -7762,14067
 	F -4924,14535
 #: XXX Baustellenampel
-#: last_checked: 2013-07-13
+#: last_checked: 2013-08-19 (indirekt via http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7375)
 #: check_frequency: 180d
 	X::inwork -6861,15129
 	F 20614,18481

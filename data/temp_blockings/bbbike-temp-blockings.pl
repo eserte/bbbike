@@ -1727,7 +1727,7 @@ EOF
        text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 13400,16395 13485,16362 13544,16339 13632,16305 13652,16297 13679,16286 13788,16240
+userdel	1 13400,16395 13485,16362 13544,16339 13632,16305 13679,16286 13788,16240
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -11392,7 +11392,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008423',
        data  => <<EOF,
-userdel	1::inwork 7832,20219 7937,20175 8040,20124 8196,20096
+userdel	1::inwork 7832,20219 7933,20171 8040,20124 8196,20096
 EOF
      },
      { from  => 1209496288, # 2008-04-29 21:11
@@ -18970,7 +18970,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_105693',
        data  => <<EOF,
-userdel	q4::inwork; 14144,17165 14099,17195 14060,17221 13912,17320
+userdel	q4::inwork; 14136,17170 14099,17195 14060,17221 13912,17320
 EOF
      },
      { from  => undef, #
@@ -19647,7 +19647,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_108874',
        data  => <<EOF,
-userdel	q4::inwork; 14144,17165 14099,17195 14060,17221 13912,17320
+userdel	q4::inwork; 14136,17170 14099,17195 14060,17221 13912,17320
 EOF
      },
      { from  => 1313270697, # 2011-08-13 23:24
@@ -21708,6 +21708,47 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 12726,3870 12805,4020
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Fähre Liepnitzsee: fährt nur ab Ende März bis Ende Oktober',
+       recurring => 1,
+       type  => 'gesperrt',
+       source_id => 'http://www.liepnitzinsel.de/faehre.php',
+       data  => <<EOF,
+#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+	2::temp 17391,38405 17448,38277 17692,38138
+#: XXX_prog ^^^
+EOF
+     },
+     { from  => 1378591200, # 2013-09-08 00:00
+       until => 1380146399, # 2013-09-25 23:59
+       text  => 'Manfred-von-Richthofen-Str.: Bauarbeiten zwischen Kaiserkorso und Wolffring, Fahrbahn in Richtung Süden gesperrt, vom 09.09.2013 bis voraussichtlich zum 25.09.2013',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html',
+       data  => <<EOF,
+#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 2,5 Wochen
+#: next_check: 2013-09-24
+userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353
+EOF
+     },
+     { from  => 1378591200, # 2013-09-08 00:00
+       until => 1380578400, # 2013-10-01 00:00
+       text  => 'Höhndorfstr.: Bauarbeiten, Fahrbahn gesperrt, vom 09.09.2013 bis zum 30.09.2013',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 8425,8775 8438,8676 8455,8567
+EOF
+     },
+     { from  => 1377381600, # 2013-08-25 00:00
+       until => 1378331999, # 2013-09-04 23:59
+       text  => 'Totilastr.: Bauarbeiten zwischen Manteuffelstr. und Wittekindstr., Fahrbahn gesperrt, vom 26.08.2013 bis voraussichtlich zum 04.09.2013',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 1,5 Wochen
+#: next_check: 2013-09-03
+userdel	q4::inwork 8374,5598 8574,5580
 EOF
      },
     );
