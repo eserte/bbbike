@@ -133,7 +133,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBike-Test/1.0" } @browsers;
 
-my $outer_berlin_tests = 30;
+my $outer_berlin_tests = 36;
 my $tests = 138 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
@@ -1103,6 +1103,26 @@ for my $browser (@browsers) {
 	    my_tidy_check($agent);
 	    $like_long_data->(qr/\QBahnhofstr. (Erkner)/, "Start known");
 	    $like_long_data->(qr{\Q<i>bahnhofstr</i> in <i>Schwanebeck</i> ist nicht bekannt}, "Unknown goal");
+	}
+
+	{
+	    # Test for subplaces like "Mahlow-Waldblick"
+	    $get_agent->();
+	    $agent->get($bbbike2_url);
+	    my $form = $agent->current_form;
+	    $form->value('start', 'max-plack-str');
+	    $form->value('via', 'Fritz-Reuter-Str.');
+	    $form->value('ziel', 'glasower damm');
+	    $form->value($_.'ort', 'Mahlow') for qw(start via ziel);
+	    $agent->submit;
+
+	    my_tidy_check($agent);
+	    $on_a_particular_page->('crossing');
+
+	    $like_long_data->(qr{\QMax-Planck-Str. (Mahlow-Waldblick)}, 'Found start in subplace (Mahlow-Waldblick)');
+	    $like_long_data->(qr{\QZiethener Str.}, 'Found a crossing in subplace (Mahlow-Waldblick)');
+	    $like_long_data->(qr{\QFritz-Reuter-Str. (Mahlow-Waldblick)}, 'Found via in subplace (Mahlow-Waldblick)');
+	    $like_long_data->(qr{\QGlasower Damm (Mahlow)}, 'Found goal in place (Mahlow)');
 	}
     }
 
