@@ -28,9 +28,10 @@ BEGIN {
 	use LWP::ConnCache;
 	use LWP::UserAgent;
 	use Image::Info;
+	use HTTP::Date qw(time2str);
 	1;
     }) {
-	print "1..0 # skip no Test::More, Image::Info LWP::ConnCache and/or LWP::UserAgent module\n";
+	print "1..0 # skip no Test::More, Image::Info, HTTP::Date, LWP::ConnCache and/or LWP::UserAgent module\n";
 	exit;
     }
 }
@@ -175,8 +176,8 @@ EOF
 }
 
 {
-    my $resp = $ua316->get("$datadir/label", 'If-Modified-Since' => 'Wed, 18 May 2033 05:33:20 GMT');
-    ok $resp->code==304 || $resp->code==200, 'Probably data/label hack'
+    my $resp = $ua316->get("$datadir/label", 'If-Modified-Since' => time2str(time));
+    ok $resp->code==304, 'Probably data/label hack'
 	or diag $resp->as_string;
 }
 
