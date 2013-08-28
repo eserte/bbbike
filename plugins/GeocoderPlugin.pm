@@ -231,10 +231,46 @@ sub geocoder_dialog {
 		 },
 		},
 
+		# Both Cloudmade modules have a lot of issues. For
+		# example, currently it does not seem to be possible
+		# to use normal German addressing "Seumestrasse 24,
+		# Berlin". It would pick "Straße 24" instead. Probably
+		# it has to be in US order (house number first, then
+		# street name). Generally, Cloudmade returns worst
+		# results of all available geocoders (see my test
+		# results in ChangeLog, dated 2013-02-09)
+
 		'Cloudmade' =>
 		{
-		 'label' => 'Cloudmade (needs API key, avoid umlauts)',
+		 'label' => 'Cloudmade (needs API key, avoid umlauts, using Geo::Coder::Cloudmade)',
 		 'short_label' => 'Cloudmade',
+		 'devel_only' => 1,
+
+		 'require' => sub { require Geo::Coder::Cloudmade; Geo::Coder::Cloudmade->VERSION('0.6') },
+		 'new' => sub {
+		     my $apikey = do {
+			 my $file = "$ENV{HOME}/.cloudmadeapikey";
+			 open my $fh, $file
+			     or main::status_message("Cannot get key from $file: $!", "die");
+			 local $_ = <$fh>;
+			 chomp;
+			 $_;
+		     };
+		     Geo::Coder::Cloudmade->new({ apikey => $apikey });
+		 },
+		 extract_addr => sub {
+		     # no address information available
+		 },
+		 extract_loc => sub {
+		     my $loc = shift;
+		     ($loc->{long}, $loc->{lat});
+		 },
+		},
+
+		'Cloudmade2' =>
+		{
+		 'label' => 'Cloudmade (needs API key, avoid umlauts, using Geo::Cloudmade)',
+		 'short_label' => 'Cloudmade2',
 		 'devel_only' => 1,
 
 		 'require' => sub { require Geo::Cloudmade },
