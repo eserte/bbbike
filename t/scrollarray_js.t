@@ -75,4 +75,10 @@ chdir "$FindBin::RealBin/../html";
     is $res, "2:3", 'after overflow, as_array';
 }
 
+{
+    my $script = 'load("scrollarray.js"); sa = new ScrollArray(2); sa.push("1"); sa.push("2"); sa.push("3"); sa.empty(); print(sa.as_array().join(":"))';
+    chomp(my $res = run_js($script));
+    is $res, "", 'after calling empty()';
+}
+
 __END__

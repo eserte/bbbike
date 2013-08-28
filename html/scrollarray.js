@@ -2,9 +2,7 @@
 
 function ScrollArray(capacity) {
     this.capacity = capacity;
-    this.container = [];
-    this.pos = -1;
-    this.wrapped = false;
+    this.empty();
 }
 ScrollArray.prototype.push = function(val) {
     this.pos++;
@@ -38,8 +36,12 @@ ScrollArray.prototype.get_val = function(inx) {
     } else {
 	return null;
     }
-}
-
+};
+ScrollArray.prototype.empty = function() {
+    this.container = [];
+    this.pos = -1;
+    this.wrapped = false;
+};
 ScrollArray.prototype.as_array = function() {
     var res = [];
     for (var inx = 0; inx < this.capacity; inx++) {
@@ -48,4 +50,4 @@ ScrollArray.prototype.as_array = function() {
 	res.push(val);
     }
     return res;
-}
+};
