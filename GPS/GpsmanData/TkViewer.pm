@@ -34,6 +34,7 @@ sub gps_data_viewer {
     my $gps_file = delete $opts{-gpsfile};
     my $title    = delete $opts{-title} || 'GPS data viewer';
     my $geometry = delete $opts{-geometry} || '1000x400';
+    my $stats_args_cb = delete $opts{-statsargscb};
 
     die "Unhandled arguments: " . join(" ", %opts) if %opts;
 
@@ -214,7 +215,11 @@ sub gps_data_viewer {
 		   -command => sub {
 		       require GPS::GpsmanData::Stats;
 		       require BBBikeYAML;
-		       my $stats = GPS::GpsmanData::Stats->new($gps);
+		       my %stats_args;
+		       if ($stats_args_cb) {
+			   %stats_args = $stats_args_cb->();
+		       }
+		       my $stats = GPS::GpsmanData::Stats->new($gps, %stats_args);
 		       $stats->run_stats;
 		       my $tt = $t->Toplevel(-title => 'GPS data statistics');
 		       my $txt = $tt->Scrolled('ROText', -width => 30, -scrollbars => 'osoe')->pack(qw(-fill both -expand 1));
@@ -263,6 +268,32 @@ the same filename, only the suffix C<.trk> is replaced by C<.wpt>).
 A number of variables are intentionally global and thus shared within
 a process: the recently used gps file, the main gps data directory,
 and the check for using associated waypoint files.
+
+=head2 CONSTRUCTOR OPTIONS
+
+=over
+
+=item C<-gpsfile> => I<filename>
+
+A gpsman file (or any other GPS file format supported by
+L<GPS::GpsmanData::Any> to be displayed.
+
+=item C<-title> => I<string>
+
+Title of the toplevel. By default, this is I<GPS data viewer>.
+
+=item C<-geometry> => I<x11-geom-string>
+
+Geometry of the toplevel.
+
+=item C<-statsargscb> => I<callback>
+
+A code reference which is supposed to return a hash with options for
+L<GPS::GpsmanData::Stats/new>. Typically one would set the C<areas>
+and C<places> options here. See L<SRTShortcuts/gps_data_viewer> for
+example code.
+
+=back
 
 =head1 TODO
 
