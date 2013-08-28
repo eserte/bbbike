@@ -34,9 +34,21 @@ plan 'no_plan';
 chdir "$FindBin::RealBin/../html";
 
 {
-    my $script = 'load("scrollarray.js"); sa = new ScrollArray(3); sa.push("1"); sa.push("2"); print(sa.get_val(0) + "," + sa.get_val(1) + "," + sa.get_val(2))';
+    my $script = 'load("scrollarray.js"); sa = new ScrollArray(3); print(sa.get_val(0) + "," + sa.get_val(1) + "," + sa.get_val(2))';
     chomp(my $res = run_js($script));
-    is $res, "1,2,null", 'before fillup';
+    is $res, "null,null,null", 'empty array';
+}
+
+{
+    my $script = 'load("scrollarray.js"); sa = new ScrollArray(3); print(sa.as_array().join(":"))';
+    chomp(my $res = run_js($script));
+    is $res, "", 'empty array, as_array';
+}
+
+{
+    my $script = 'load("scrollarray.js"); sa = new ScrollArray(3); sa.push("1"); sa.push("2"); print(sa.as_array().join(":"))';
+    chomp(my $res = run_js($script));
+    is $res, "1:2", 'before fillup, as_array';
 }
 
 {
@@ -46,9 +58,21 @@ chdir "$FindBin::RealBin/../html";
 }
 
 {
+    my $script = 'load("scrollarray.js"); sa = new ScrollArray(3); sa.push("1"); sa.push("2"); sa.push("3"); print(sa.as_array().join(":"))';
+    chomp(my $res = run_js($script));
+    is $res, "1:2:3", 'before overflow, as_array';
+}
+
+{
     my $script = 'load("scrollarray.js"); sa = new ScrollArray(2); sa.push("1"); sa.push("2"); sa.push("3"); print(sa.get_val(0) + "," + sa.get_val(1))';
     chomp(my $res = run_js($script));
     is $res, "2,3", 'after overflow';
+}
+
+{
+    my $script = 'load("scrollarray.js"); sa = new ScrollArray(2); sa.push("1"); sa.push("2"); sa.push("3"); print(sa.as_array().join(":"))';
+    chomp(my $res = run_js($script));
+    is $res, "2:3", 'after overflow, as_array';
 }
 
 __END__
