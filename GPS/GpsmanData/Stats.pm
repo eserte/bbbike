@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Stats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use POSIX qw(strftime);
 
@@ -361,6 +361,25 @@ sub _find_nearest_place {
 1;
 
 __END__
+
+=head1 NAME
+
+GPS::GpsmanData::Stats - run statistics on gpsman data
+
+=head1 SYNOPSIS
+
+    use GPS::GpsmanData::Any;
+    use GPS::GpsmanData::Stats;
+    my $gps = GPS::GpsmanData::Any->load($filename);
+    my $stats = GPS::GpsmanData::Stats->new($gps);
+    $stats->run_stats;
+    print Data::Dumper::Dumper($stats->human_readable);
+
+=head1 DESCRIPTION
+
+B<GPS::GpsmanData::Stats> calculates some statistics on gpsman data
+(resp. any GPS file format supported by L<GPS::GpsmanData::Any>, e.g.
+GPX).
 
 =head1 EXAMPLES
 
