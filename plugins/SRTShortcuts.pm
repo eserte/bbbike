@@ -1903,7 +1903,32 @@ sub gps_data_viewer {
 
     require GPS::GpsmanData::TkViewer;
 
-    my $t = GPS::GpsmanData::TkViewer->gps_data_viewer($main::top, -gpsfile => $gps_file);
+    my $t = GPS::GpsmanData::TkViewer->gps_data_viewer($main::top,
+						       -gpsfile => $gps_file,
+						       -statsargscb => sub {
+							   my %stats_args;
+							   require Strassen::MultiStrassen;
+
+							   my $areas = eval {
+							       MultiStrassen->new("$bbbike_rootdir/data/berlin_ortsteile", "$bbbike_rootdir/data/potsdam");
+							   };
+							   if (!$areas) {
+							       warn "Can't create areas for Stats: $@";
+							   } else {
+							       $stats_args{areas} = $areas;
+							   }
+
+							   my $places = eval {
+							       MultiStrassen->new("$bbbike_rootdir/data/orte", "$bbbike_rootdir/data/orte2");
+							   };
+							   if (!$places) {
+							       warn "Can't create places for Stats: $@";
+							   } else {
+							       $stats_args{places} = $places;
+							   }
+							   %stats_args;
+						       },
+						      );
     $main::toplevel{gps_data_viewer} = $t; # XXX what about an existing GPS data viewer?
 }
 
