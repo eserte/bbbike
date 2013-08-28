@@ -39,3 +39,13 @@ ScrollArray.prototype.get_val = function(inx) {
 	return null;
     }
 }
+
+ScrollArray.prototype.as_array = function() {
+    var res = [];
+    for (var inx = 0; inx < this.capacity; inx++) {
+	var val = this.get_val(inx);
+	if (val == null) break;
+	res.push(val);
+    }
+    return res;
+}
