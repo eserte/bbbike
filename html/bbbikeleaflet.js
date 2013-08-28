@@ -90,6 +90,7 @@ var smoothness_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbi
 var mapset = q.get('mapset') || 'stable';
 var base_map_url = base_map_url_mapping[mapset] || base_map_url_mapping['stable'];
 var smoothness_map_url = smoothness_map_url_mapping[mapset] || smoothness_map_url_mapping['stable'];
+var accel;
 
 /*
  * Provides L.Map with convenient shortcuts for using browser geolocation features.
@@ -226,6 +227,10 @@ function doLeaflet() {
     map.addLayer(routeLayer);
     layersControl.addOverlay(routeLayer, "Route");
 
+    if (enable_accel) {
+	accel = new AccelHandler();
+    }
+
     var trackPolyline;
     var trackSegs = new TrackSegs();
     var lastLatLon = null;
@@ -237,18 +242,28 @@ function doLeaflet() {
 
 	onAdd: function (map) {
 	    var container = L.DomUtil.create('div', 'anycontrol');
-	    container.innerHTML = "LOC";
+	    var label = "LOC";
+	    if (enable_accel) {
+		label += "+ACCEL";
+	    }
+	    container.innerHTML = label;
 	    L.DomUtil.addClass(container, "anycontrol_inactive");
 	    trackingRunning = false;
 	    container.onclick = function() {
 		if (trackingRunning) {
 		    map.my_stopLocate();
+		    if (accel) {
+			accel.stop();
+		    }
 		    L.DomUtil.removeClass(container, "anycontrol_active");
 		    L.DomUtil.addClass(container, "anycontrol_inactive");
 		    trackingRunning = false;
 		    removeLocation();
 		} else {
 		    map.my_locate({watch:true, setView:false});
+		    if (accel) {
+			accel.start();
+		    }
 		    L.DomUtil.removeClass(container, "anycontrol_inactive");
 		    L.DomUtil.addClass(container, "anycontrol_active");
 		    trackingRunning = true;
@@ -333,7 +348,8 @@ function doLeaflet() {
 	    }
 	    map.panTo(e.latlng);
 	    if (!lastLatLon || !lastLatLon.equals(e.latlng)) {
-		trackSegs.addPos(e);
+		var accelres = accel ? accel.flush() : null;
+		trackSegs.addPos(e, accelres);
 		lastLatLon = e.latlng;
 		if (trackPolyline && map.hasLayer(trackPolyline)) {
 		    map.removeLayer(trackPolyline);
@@ -476,14 +492,46 @@ function setLoadingMarker(latLng) {
     map.addLayer(loadingMarker);
 }
 
+////////////////////////////////////////////////////////////////////////
+
+function AccelHandler() {
+    this.scrollarray = new ScrollArray(20);
+}
+
+AccelHandler.prototype.start = function() {
+    var _this = this;
+    this.devicemotionlistener = function(event) {
+	var now = Date.now();
+	var g = event.accelerationIncludingGravity;
+	_this.scrollarray.push({'x':g.x,'y':g.y,'z':g.z,'time':now});
+    };
+    this.scrollarray.empty();
+    window.addEventListener("devicemotion", this.devicemotionlistener, true);
+};
+
+AccelHandler.prototype.stop = function() {
+    if (this.devicemotionlistener) {
+	window.removeEventListener("devicemotion", this.devicemotionlistener, true);
+	this.devicemotionlistener = null;
+    }
+};
+
+AccelHandler.prototype.flush = function() {
+    var res = this.scrollarray.as_array();
+    this.scrollarray.empty();
+    return res;
+};
+
+//////////////////////////////////////////////////////////////////////
+
 function TrackSegs() {
     this.init();
 }
 TrackSegs.prototype.init = function() {
     this.polyline = [[]];
     this.upload = [[]];
-}
-TrackSegs.prototype.addPos = function(e) {
+};
+TrackSegs.prototype.addPos = function(e, accelres) {
     this.polyline[this.polyline.length-1].push(e.latlng);
     if (enable_upload) {
 	var uplRec = {lat:this._trimDigits(e.latlng.lat, 6),
@@ -496,13 +544,30 @@ TrackSegs.prototype.addPos = function(e) {
 	if (e.pos.coords.altitudeAccuracy != null) {
 	    uplRec.altacc = this._trimDigits(e.pos.coords.altitudeAccuracy,1);
 	}
+	if (accelres) {
+	    var accelUplRecs = [];
+	    var firstTime;
+	    for(var i=0; i<accelres.length; i++) {
+		var accelUplRec = {x:this._trimDigits(accelres[i].x, 2),
+				   y:this._trimDigits(accelres[i].y, 2),
+				   z:this._trimDigits(accelres[i].z, 2)};
+		if (i == 0) {
+		    accelUplRec.time = accelres[i].time;
+		    firstTime = accelres[i].time;
+		} else {
+		    accelUplRec.dt = accelres[i].time - firstTime;
+		}
+		accelUplRecs.push(accelUplRec);
+	    }
+	    uplRec.accel = accelUplRecs;
+	}
 	this.upload[this.upload.length-1].push(uplRec);
     }
-}
+};
 TrackSegs.prototype.addGap = function(e) {
     this.polyline.push([]);
     this.upload.push([]);
-}
+};
 TrackSegs.prototype._trimDigits = function(num,digits) {
     return num.toString().replace(new RegExp("(\\.\\d{" + digits + "}).*"), "$1");
-}
+};

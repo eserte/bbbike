@@ -29,7 +29,12 @@ print $q->header('text/html; charset=utf-8');
 
 my $leaflet_dist = $q->param('leafletdist') || '';
 my $enable_upload = $q->param('upl') || 0;
+my $enable_accel = $q->param('accel') || 0;
 my $use_osm_de_map = $q->param('osmdemap') || 0;
+
+if ($enable_accel && !$enable_upload) { # no sense to enable accelerometer without upload functionality
+    $enable_upload = 1;
+}
 
 my $use_old_url_layout = $q->url(-absolute => 1) =~ m{/cgi/bbbikeleaflet};
 my($bbbike_htmlurl, $bbbike_imagesurl);
@@ -109,6 +114,7 @@ while(<$fh>) {
 
     if (m{\Q//--- INSERT DEVEL CODE HERE ---}) {
 	print "enable_upload = " . ($enable_upload ? 'true' : 'false') . ";\n";
+	print "enable_accel = " . ($enable_accel ? 'true' : 'false') . ";\n";
 	print "use_osm_de_map = " . ($use_osm_de_map ? 'true' : 'false') . "\n";
     }
 }
