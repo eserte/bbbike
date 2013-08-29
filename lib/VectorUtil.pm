@@ -426,12 +426,19 @@ sub offset_line {
 	my $after_azimuth = defined $p2x ? azimuth($p1x,$p1y, $p2x,$p2y) : $before_azimuth;
 	$before_azimuth = $after_azimuth if !defined $before_azimuth;
 
-	my $half_angle = ($after_azimuth-$before_azimuth)/2;
-	my $new_len = $delta / cos($half_angle);
+	my $angle = $after_azimuth-$before_azimuth;
+	# normalize angle
+	while ($angle <= -pi()) { $angle += pi*2 }
+	while ($angle >   pi()) { $angle -= pi*2 }
+	# # reliable detection of 180deg angle
+	if ($p_i >= 1 && defined $p2x && $pnts->[$p_i*2-2] == $p2x && $pnts->[$p_i*2-1] == $p2y) {
+	    $angle = -pi();
+	}
+	my $half_angle = $angle / 2;
 
-	# used vars here: $p1, $before_azimuth, $new_len
+	# used vars here: $p1, $before_azimuth
 	my $offset_position = sub {
-	    my($add_angle) = @_;
+	    my($add_angle, $new_len) = @_;
 	    my $angle = $before_azimuth + $add_angle;
 
 	    my $len_angle_to_d = sub {
@@ -447,11 +454,29 @@ sub offset_line {
 	};
 
 	if ($do_calc_right) {
-	    push @offset_pnts_right, $offset_position->($half_angle - 3/2*pi);
+	    if ($angle < 0) {
+		push @offset_pnts_right, ($offset_position->(-3/2*pi, $delta),
+					  $offset_position->($half_angle - 3/2*pi, $delta),
+					  $offset_position->($half_angle*2 - 3/2*pi, $delta));
+	    } else {
+		my $new_len = $delta / cos($half_angle);
+		push @offset_pnts_right, $offset_position->($half_angle - 3/2*pi, $new_len);
+	    }
 	}
 
 	if ($do_calc_left) {
-	    push @offset_pnts_left, $offset_position->($half_angle - pi/2);
+	    if ($angle == -pi()) { # XXX What's the rationale for this corner case?
+		push @offset_pnts_left, ($offset_position->(-pi()/2, $delta),
+					 $offset_position->($half_angle - 3/2*pi, $delta),
+					 $offset_position->($half_angle*2 - pi/2, $delta));
+	    } elsif ($angle > 0) {
+		push @offset_pnts_left, ($offset_position->(-pi()/2, $delta),
+					 $offset_position->($half_angle - pi/2, $delta),
+					 $offset_position->($half_angle*2 - pi/2, $delta));
+	    } else {
+		my $new_len = $delta / cos($half_angle);
+		push @offset_pnts_left, $offset_position->($half_angle - pi/2, $new_len);
+	    }
 	}
 
 	$before_azimuth = $after_azimuth;
