@@ -24,7 +24,7 @@ use Getopt::Long;
 use BBBikeTest qw(is_float);
 use Strassen::Util qw();
 
-plan tests => 18;
+plan tests => 20;
 
 my $do_bench;
 my $do_xxx;
@@ -140,22 +140,36 @@ goto XXX if $do_xxx;
 {
     my @coordlist                = (0,0, 100,0, 200,100);
     my @expected_coordlist_hin   = (0,3, 98.757,3, 197.879,102.121);
-    my @expected_coordlist_rueck = (0,-3, 101.243,-3, 202.121,97.879);
-    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 45° polyline');
+    my @expected_coordlist_rueck = (0,-3, 100,-3, 101.148,-2.772, 102.121,-2.121, 202.121,97.879);
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 45°/right polyline');
+}
+
+{
+    my @coordlist                = (0,0, 100,0, 200,-100);
+    my @expected_coordlist_hin   = (0,3, 100,3, 101.148,2.772, 102.121,2.121, 202.121,-97.879);
+    my @expected_coordlist_rueck = (0,-3, 98.757,-3, 197.879,-102.121);
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 45°/left polyline');
 }
 
 {
     my @coordlist                = (0,0, 100,0, 100,100);
     my @expected_coordlist_hin   = (0,3, 97,3, 97,100);
-    my @expected_coordlist_rueck = (0,-3, 103,-3, 103,100);
-    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 90° polyline');
+    my @expected_coordlist_rueck = (0,-3, 100,-3, 102.121,-2.121, 103,0, 103,100);
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 90°/right polyline');
 }
 
 XXX: {
     my @coordlist                = (0,0, 100,0, 0,0);
-    my @expected_coordlist_hin   = (0,3, 97,3, 0,3);
-    local $TODO = "Needs work!";
-    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, undef, 'offset_line, with 180° polyline');
+    my @expected_coordlist_hin   = (0,3, 100,3, 103,0, 100,-3, 0,-3);
+    my @expected_coordlist_rueck = (0,-3, 100,-3, 103,0, 100,3, 0,3);
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 180° polyline');
+}
+
+{
+    my @coordlist                = (0,0, -100,0, 0,0);
+    my @expected_coordlist_hin   = (0,-3, -100,-3, -103,0, -100,3, 0,3);
+    my @expected_coordlist_rueck = (0,3, -100,3, -103,0, -100,-3, 0,-3);
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 180° polyline');
 }
 
 # One test.
@@ -176,18 +190,19 @@ sub test_offset_line {
     };
 
     for my $i (0 .. $#$cl_hin) {
-	{
-	    my($got,$expected) = $get_got_expected_pair->($cl_hin, $expected_coordlist_hin, $i);
-	    push @got_hin, $got;
-	    push @expected_hin, $expected;
-	}
-	if (defined $expected_coordlist_rueck) {
+	my($got,$expected) = $get_got_expected_pair->($cl_hin, $expected_coordlist_hin, $i);
+	push @got_hin, $got;
+	push @expected_hin, $expected;
+    }
+    if (defined $expected_coordlist_rueck) {
+	for my $i (0 .. $#$cl_rueck) {
 	    my($got,$expected) = $get_got_expected_pair->($cl_rueck, $expected_coordlist_rueck, $i);
 	    push @got_rueck, $got;
 	    push @expected_rueck, $expected;
 	}
     }
 
+    local $Test::Builder::Level = $Test::Builder::Level+1;
     if (@got_rueck) {
 	is_deeply ["@got_hin", "@got_rueck"], ["@expected_hin", "@expected_rueck"], $testname;
     } else {
