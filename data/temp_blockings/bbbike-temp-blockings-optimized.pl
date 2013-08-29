@@ -2769,8 +2769,8 @@ userdel	2::inwork 19968,16 19940,52
        undef,
        {
          'source_id' => 'INKO_111647',
-         'until' => 1377867600,
-         'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende August 2013',
+         'until' => 1387548000,
+         'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende Dezember 2013',
          'from' => 1330902000,
          'id' => 2316,
          'data' => '#: osm_watch: way id="23243508" version="37"
@@ -3265,24 +3265,15 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'source_id' => 'INKO_119665',
-         'until' => 1377871200,
-         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende August ',
+         'until' => 1379944800,
+         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende September 2013',
          'from' => 1374381000,
          'id' => 2466,
          'data' => 'userdel	q3::inwork 15513,13539 15653,13542 15724,13544 15896,13547
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html',
-         'until' => 1381831200,
-         'text' => 'Robert-Siewert-Str.: Bauarbeiten zwischen Brehmstr. und Zwieseler Str., Fahrbahn gesperrt, teilweise auch Einschränkungen am Geh-/Radweg, bis Mitte Oktober 2013',
-         'from' => undef,
-         'id' => 2467,
-         'data' => 'userdel	q4::inwork 19398,9833 19459,9842 19536,9853 19669,9876
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_020145',
@@ -3376,6 +3367,28 @@ userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353
          'data' => '#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 1,5 Wochen
 #: next_check: 2013-09-03
 userdel	q4::inwork 8374,5598 8574,5580
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Landschaftspark Herzberge: nachts gesperrt',
+         'from' => undef,
+         'id' => 2479,
+         'data' => 'userdel	2::night 13437,10992 13471,10983
+userdel	2::night 17490,13133 17489,13125
+userdel	2::night 17671,13132 17698,13134
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130828.1240.388504.html',
+         'until' => 1388530799,
+         'text' => 'Alt-Lübars zwischen Quickborner Straße und Zabel-Krüger-Damm: Bauarbeiten, Fahrbahn gesperrt, bis Ende 2013',
+         'from' => 1377731580,
+         'id' => 2480,
+         'data' => 'userdel	q4::inwork 6805,23554 6801,23474 6764,23396
 ',
          'type' => 'handicap'
        }

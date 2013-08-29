@@ -201,7 +201,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15066,14579 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-08-21
+#: last_checked: 2013-08-29
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -406,8 +406,9 @@ Ruppiner Chaussee: Fahrradstreifen nach den Bauarbeiten?	?::inwork -1872,24336 -
 # REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html --- #: XXX Mitte Oktober sind die Sanierungsarbeiten fertig, dann diesen Eintrag entfernen --- Robert-Siewert-Str.: Bauarbeiten, gibt es Einschränkungen für Radfahrer, insbesondere im Abschnitt des "antiken" Radwegs?	?::inwork 19242,9815 19398,9833 19459,9842 19536,9853 19669,9876
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html
-#: XXX wahrscheinlich aber für Radfahrer nicht relevant
+#: XXX für Radfahrer evtl. relevant, da Überquerungsmöglichkeit zur Magdalenenstr.
 #: XXX evtl. auch ubahnhof_bg anpassen?
+#: last_checked: 2013-08-29
 #: next_check: 2013-09-16
 U Magdalenenstr.: Bau einer Fußgängerampel geplant	?::projected 16057,11988 16093,11927
 # 
@@ -472,7 +473,7 @@ Bauarbeiten im Landschaftspark Herzberge: werden im Bereich des "Zeltlagers" neu
 # REMOVED (Eintrag wurde aufgehoben, das Problem besteht aber weiterhin) --- #: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich (bis Anfang 08/13) Kreuzung Straße der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976 --- #: XXX_indoor vmz-Eintrag: Straße der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich, Überfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975 --- #: XXX_prog ich brauche eine Kombination aus den Kategorien "3" und "qX". Oder wahlweise "3" mit einer Zeitangabe (wie BNP oder 0). --- #: last_checked: 2013-07-10 --- #: next_check: 2013-08-02 --- Straße der Pariser Kommune: Überqueren der Karl-Marx-Allee nur mit Zeitverlust möglich	?::inwork  12891,12549 12869,12425 12850,12286
 # 
 #: XXX außerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist
-#: last_checked: 2013-08-21
+#: last_checked: 2013-08-29
 #: check_frequency: 30d
 Allee der Kosmonauten/Beilsteiner Str.: Ampel in Bau	?::inwork 18875,13467
 # 
@@ -482,6 +483,7 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5232
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45-181-136818730670/818730670/00065593/93-Anlagen/02/vzb0444_IV-B_Plan_XXIII_9b_Auswertung_Beteig_B.pdf
+#: last_checked: 2013-08-29 (noch nichts zu sehen)
 #: next_check: 2014-06-10
 Planstraße zwischen Theodorstr. und Pilgramer Str.: Straße in Planung, Qualität?	? 24899,11017 25124,11022
 # 
@@ -1017,7 +1019,7 @@ Werder - Phöben: Radweg in Planung, Realisierung bis 2007-12-31	? -22206,-1693 -
 Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
 # 
 #: last_checked: 2011-06-26
-#: next_check: 2013-09-01
+#: next_check: 2014-06-01
 Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,16357
 # 
 #: next_check: 2010-10-30
@@ -2475,7 +2477,6 @@ Erich-Mühsam-Str.: Qualität?	? 1762,31318 1787,31375 1851,31451 1878,31471 1916,
 (Eberswalde): Straßennamen, Qualität?	? 36020,48283 35838,47830 35428,47961
 #: XXX laut anonymous: "Auf jeden Fall befahrbar! Mäßig bis gut!", aber leider keine genauen Angaben zur Wegbeschaffenheit
 Leo-Baeck-Str. - Seehofstr.: Beschaffenheit des Weges? Nachts beleuchtet?	? 1478,1721 1432,1904 1432,1964 1461,2073 1452,2095 1493,2249
-Von-Canstein-Str. (Dahlwitz-Hoppegarten): Qualität?	? 26880,11479 26957,11450 27007,11422 27165,11294
 # REMOVED (hier existiert keine öffentliche Straße) --- Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
 Malergarten: Qualität?	? -7831,-2230 -7859,-2304
 # REMOVED (Straße wurde umbenannt) --- auch entfernt: Bachstelzenweg|Blankenfelde|13159|8708,24707 --- Bachstelzenweg (Blankenfelde): Qualität? Geht der Weg bis zum Hauptweg weiter?	? 8604,24747 8658,24686 8726,24659
@@ -3052,8 +3053,6 @@ Waldweg im Tegeler Forst: Qualität?	? -1543,18632 -671,19408 -421,19626
 Waldweg im Tegeler Forst: Qualität?	? -112,19901 66,20061 87,20066
 # REMOVED (Antwort: ja) --- Grünfließer Gang: existiert ein Straßenschild auf der nördlichen Seite?	? 23675,5823 23675,5729
 # REMOVED (ich habe mich auf den Gosener Teil der Straße beschränkt) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file --- #: XXX laut Link ein Teil auch in Berlin (Schmöckwitz) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file --- Am Zwiebusch (Gosen): Qualität?	? 30411,-1704 30361,-1756
-Gewerbestr. (Dahlwitz-Hoppegarten): Qualität?	? 25923,11076 25964,11310 26026,11377 26128,11457 26150,11516 26222,11726
-(Weg entlang der Stadtgrenze): Qualität des südlichen Abschnitts?	? 25952,11935 25902,11846 25876,11774 25868,11706 25830,11636 25809,11613 25757,11479 25770,11431 25763,11396 25855,11296 25923,11076
 Uferweg (Tegeler See): Qualität?	? -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790
 # REMOVED (aber zumindest östlich der Aalemannkanalbrücke nicht bestätigt) --- #: XXX Eintrag von: Geske, Anselm [AM], --- Aalemannufer: gibt es Radstreifen am Aalemannufer?	? -1989,18378 -2053,18375 -2096,18376 -2535,18391 -2605,18393 -2678,18396 -2759,18400
 # 
@@ -3093,8 +3092,6 @@ Stubenrauchstr. (Eichwalde): Qualität des mittleren Abschnitts?	? 25711,-2886 25
 Stubenrauchstr. (Eichwalde): Qualität des westlichen Abschnitts?	? 25246,-3167 25189,-3202 24999,-3312
 Platz der Republik (Eichwalde): Qualität?	? 25764,-2832 25735,-2826 25705,-2855 25711,-2886 25745,-2898 25771,-2884 25778,-2855 25764,-2832
 Händelplatz (Eichwalde): Qualität?	? 25368,-3091 25347,-3077 25295,-3103 25254,-3124 25246,-3167 25273,-3176 25320,-3153 25367,-3124 25368,-3091
-Humboldtstr. (Waldesruh): Qualität des östlichen Abschnitts?	? 25147,8731 25217,8682 25295,8623 25389,8558 25484,8499 25603,8414
-Kleiststr. (Waldesruh): Qualität des östlichen Abschnitts?	? 25243,8878 25401,8763 25489,8699 25574,8634 25694,8542
 # REMOVED (auch Kantstr.) --- Kantstr. (Waldesruh): Straßenname im Berliner Abschnitt? Ortsschild?	? 24893,7964 24871,7931
 Vogelsang - Hammelspring: gibt es hier mittlerweile einen Radweg?	? 7983,69794 7906,70007 8656,71489 10148,73146 11005,74052
 # 
@@ -3392,8 +3389,6 @@ Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 2442
 # REMOVED (eingetragen) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130606.1000.385732.html --- #: XXX fehlt in Berlin.coords.data --- Litta-von-Stauffenberg-Weg: befindet sich der Weg hier? Qualität? Nachts beleuchtet?	? -7009,5211 -7174,5307
 # 
 Bruno-Taut-Str. - Am Gartenstadtweg: nachts beleuchtet?	? 21790,682 21783,660 21755,625 21714,601 21679,596
-#: XXX falls der Weg existiert -> culdesac_pseudo für den Immortellenweg eintragen, ansonsten culdesac
-Hultschiner Damm - Immortellenweg: existiert eine Verbindung für Fußgänger und Radfahrer? Beschaffenheit des Weges? Nachts beleuchtet?	? 24402,9987 24282,10015
 # 
 # REMOVED (bearbeitet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1307/nachricht5017.html --- (Lortzingstr. - Mauerpark): existiert der neue Weg schon? Qualität des Weges? Nachts beleuchtet?	? 10038,15418 10179,15483
 # REMOVED (bearbeitet) --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130724.0930.387238.html --- #: XXX laut Artikel 3m breit--- (Weg zwischen Drontheimer Str. und Koloniestr.): Qualität? Nachts beleuchtet?	? 8457,16975 8606,16973
@@ -3430,22 +3425,6 @@ Route Lychen - Templin: Qualität?	? 2480,89399 2468,89293
 Route Lychen - Templin: Qualität?	? 3153,88773 3614,88158 3855,88004 3976,87729 4456,87107 5066,86624 5090,86419 5265,86347 5362,86099 5316,85945 6071,85495 6319,85251 8353,84535 8746,84188
 Route Lychen - Templin: Qualität?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
 Route Lychen - Templin: Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
-Waldstr. (Waldesruh): Qualität?	? 24768,8087 24797,8248 24857,8567 25065,8899 25211,9085
-Eichenstr. (Waldesruh): Qualität?	? 25211,9085 25327,9244 25389,9332 25458,9424 25522,9522
-Buchenstr. (Waldesruh): Qualität?	? 25329,9375 25389,9332 25549,9237
-Kiefernstr. (Waldesruh): Qualität?	? 25458,9424 25633,9298 25656,9249
-Ahornstr. (Waldesruh): Qualität?	? 25327,9244 25549,9237 25656,9249 25828,9259
-Körnerstr. (Waldesruh): Qualität?	? 25520,9055 25537,8960 25401,8763
-Arndtstr. (Waldesruh): Qualität?	? 25243,8878 25301,8932 25537,8960 25626,8965 25661,8942
-Stichstr. (Waldesruh): Qualität?	? 25014,8038 25069,7996
-Rödernstr. (Waldesruh): Qualität? Rödernstr. oder Roedernstr.?	? 25084,8136 25159,8083
-Scharnweberstr (Waldesruh): Qualität?	? 25159,8083 25191,8107 25347,8213 25534,8353 25603,8414 25655,8482 25694,8542 25709,8557 25731,8867 25731,8926 25677,8964
-Bredowstr. (Waldesruh): Qualität?	? 25731,8867 25574,8634
-Bredowstr. (Waldesruh): Qualität?	? 25484,8499 25433,8433 25301,8252 25191,8107
-Leibnizstr. (Waldesruh): Qualität?	? 25433,8433 25534,8353
-Heidemühler Weg (Waldesruh): Qualität?	? 25476,9561 25522,9522 25828,9259 25868,9225 26088,9034 26243,8586
-An der Trainierbahn (Waldesruh): Qualität?	? 26243,8586 25887,8456 25780,8385 25175,7953 24975,7810
-An der Trainierbahn (Waldesruh): Qualität?	? 25655,8482 25780,8385
 Am Graben (Waldblick): Qualität?	? 9402,-3817 9354,-3949
 #: XXX am nördlichen Ende: wassergebundene Decke. Sehr wahrscheinlich unbeleuchtet
 (Wildstrubelpfad - Am Heinersdorfer Graben): Qualität des Weges? Nachts beleuchtet? Existiert eine Ausschilderung?	? 13352,18360 13335,18374 13415,18464 13466,18547 13511,18600 13351,18736 13344,18794 13356,18835 13408,18897 13430,18948 13470,18990 13492,19056 13452,19163 13416,19223 13431,19255

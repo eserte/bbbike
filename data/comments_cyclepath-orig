@@ -94,7 +94,8 @@ Betonplatten	RW2; 22771,16194 22974,16139 23162,16095
 	RW3; 23162,16095 22974,16139 22771,16194
 Betonplatten	RW2;RW 23162,16095 23565,15993 23895,15904
 	RW1; 23895,15904 23965,15894 23992,15894
-	RW8?;RW 25641,11128 25923,11076 26449,10953 26596,10921
+Verbundsteinpflaster/Betonplatten	RW8;RW2 25632,11132 25912,11081
+	RW8;RW2 25912,11081 26449,10953 26596,10921
 	RW8?;RW 31456,17231 31457,17129 31212,16278 31053,15975 31027,15926 30768,15431
 asphaltiert	RW2;RW8 29756,16464 29912,16507 30006,16534 30075,16535 30118,16565 30335,16649 30837,16843
 	RW;RW 30837,16843 31456,17231
@@ -686,6 +687,8 @@ Verbundsteinpflaster	RW1; 29269,16380 29406,16338 29537,16344 29701,16449 29756,
 	RW2; 10185,-4006 10210,-4010 10346,-4027
 	RW2;RW2 11701,-3360 11686,-3321 11663,-3266
 asphaltiert	RW2;RW8 11701,-3360 11840,-3678
+Verbundsteinpflaster	RW1;RW1 25912,11081 25922,11127 25964,11310 26026,11377 26128,11457 26150,11516 26222,11726
+Verbundsteinpflaster	RW1;RW1 25964,11310 26404,11183
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -694,7 +697,8 @@ asphaltiert	RW2;RW8 11701,-3360 11840,-3678
 	RW;RW 16953,35907 17114,35904 18082,36115 18440,36179 19177,36016
 # 
 #: by: Eckart Seher:
-gegenläufiger Radweg, rotes Betonpflaster	RW;RW 25938,11837 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
+#: corrected_by: srt (gegenläufiger Radweg, rotes Betonpflaster -> ...)
+Verbundsteinpflasterradweg	RW1; 25927,11839 26042,11798 26222,11726 26555,11601 26794,11513 26880,11479
 # 
 #: by: Wolfhard Schleese: vvv
 	RW;RW 1596,29362 1631,29260 1748,29003 1805,28879 1838,28808 1896,28681 2015,28414
@@ -745,10 +749,10 @@ Radweg, wahrscheinlich für beide Richtungen	RW;RW 41409,-5222 41836,-5523 42349,
 # 
 #: by Per Zwiesigk [AM] vvv
 #: confirmed_by: srt
-gemeinsamer Rad- und Gehweg, Asphalt teilweise wellig	RW8;RW2 25868,9225 26321,9868
+gemeinsamer Rad- und Gehweg, Asphalt teilweise wellig	RW8;RW2 25868,9225 25886,9251 26321,9868
 #: confirmed_by: srt (südlicher Abschnitt)
 gemeinsamer Rad- und Gehweg	RW2;RW8 26321,9868 26771,10496
-	RW;RW 26771,10496 26892,10666
+gemeinsamer Rad- und Gehweg, Verbundsteinpflaster/Beton	RW2;RW8 26771,10496 26900,10665
 #: by ^^^
 # 
 #: by: Janes Huff:

@@ -177,7 +177,7 @@ Schildhornstr.	1 4937,6205 4984,6209 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4937,6205
 Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
 Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
-Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
+Martin-Wagner-Ring	1 12791,3814 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6430,6787 6529,6798 6668,6815 6793,6814
 Grazer Platz	1 6801,6736 6676,6734 6546,6724 6517,6722 6439,6716
@@ -785,6 +785,8 @@ Karl-Bonhoeffer-Nervenklinik	1 5219,19285 5172,19298 5150,19350
 Koppenplatz	1 9945,13669 9980,13559 9946,13550
 Luise-Zietz-Str.	1 20137,13016 20103,12698 20079,12479
 Ingwerweg: durch Tor versperrt	2 9260,21636 9282,21589
+Am Tierpark [Wohngebiet]	1 18512,10337 18552,10220
+Am Tierpark [Wohngebiet]	1 18552,10220 18534,10185 18484,10326
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -851,6 +853,7 @@ Ulrich-von-Hutten-Str.	1 -13456,-3099 -13481,-2956
 Johannes-R.-Becher-Str.	1 -10134,-4981 -10288,-4749
 Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
+Umfahrung Dahlwitz	2 26596,10921 26900,10665 27209,10666 27499,10859
 Krumme Str.	1 25490,14601 25444,14665 25418,14835
 Margaretenstr.	1 25418,14835 25503,14842
 Sophienstr.	1 25503,14842 25527,14696 25555,14657
@@ -1579,6 +1582,8 @@ Mainzer Str. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndi
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 13785,12292 13885,12279 14020,12261
 Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13927,12370 13885,12279 14020,12261
 Frankfurter Allee -> Liebigstr.: unbequem passierbarer Mittelstreifen	3::igndisp 13785,12292 13885,12279 13927,12370
+Mittelstreifen mit Geländer	3nocross::ignrte 15863,11992 16127,11950 16207,11937
+Frankfurter Allee -> Magdalenenstr.: Mittelstreifen mit Geländer	3::igndisp 15863,11992 16127,11950 16158,12191
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9701,11656 9898,11679 9981,11689
 Leipziger Str. -> Jerusalemer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9701,11656 9898,11679 9896,11703
 Jerusalemer Str. -> Leipziger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9896,11703 9898,11679 9981,11689
@@ -2255,6 +2260,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-50:trailer=10 27115,11335
 Schranke	BNP:3:-211:trailer=10 22004,17470
 zwei Drängelgitter an der Straßenbahntrasse	BNP:5:-117:trailer=15 21860,18718
 Drängelgitter	BNP:3:-73:trailer=10 20703,15755
@@ -2478,7 +2484,6 @@ Schwingtor	BNP:5:-54:trailer=10 7289,8259
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-135:trailer=no 14658,7513
 Schranke	BNP:3:45 8828,13434
 Drängelgitter an der Straßenbahntrasse	BNP:6:-167 14989,13630
-Drängelgitter	BNP:3:-74 25909,11844
 Schranke	BNP:3:-90 -3646,15717
 Drängelgitter am Bahnübergang	BNP:3:-21 11612,5253
 Schranke	BNP:0:-81 9265,6361

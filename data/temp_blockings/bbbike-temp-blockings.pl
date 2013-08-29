@@ -2859,7 +2859,7 @@ EOF
        text  => 'K 6424; (Dahlwitzer Landstr.-Münchehofe-B 1); OD Münchehofe Straßenausbau Vollsperrung 12.09.2005-31.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 28619,9588 26928,9004
+userdel	q4 28619,9588 26920,8985
 EOF
      },
      { from  => 1127772000, # 2005-09-27 00:00
@@ -20114,8 +20114,8 @@ userdel	q4::inwork 2295,20358 2241,20487
 EOF
      },
      { from  => 1330902000, # 2012-03-05 00:00
-       until => $isodate2epoch->("2013-08-30 15:00:00"), # 1370005200, # 2013-05-31 15:00
-       text  => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende August 2013',
+       until => $isodate2epoch->("2013-12-20 15:00:00"), # 1370005200, # 2013-05-31 15:00
+       text  => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende Dezember 2013',
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
@@ -21630,8 +21630,8 @@ userdel	q4::inwork 11635,16616 11621,16749
 EOF
      },
      { from  => 1374381000, # 2013-07-21 06:30
-       until => 1377871200, # 2013-08-30 16:00 # was: until => 1377525600, # 2013-08-26 16:00
-       text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende August ',
+       until => 1379944800, # 2013-09-23 16:00
+       text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende September 2013',
        type  => 'handicap',
        source_id => 'INKO_119665',
        data  => <<EOF,
@@ -21639,7 +21639,7 @@ userdel	q3::inwork 15513,13539 15653,13542 15724,13544 15896,13547
 EOF
      },
      { from  => undef, # 
-       until => 1381831200, # 2013-10-15 12:00
+       until => 1377779315, # XXX mittlerweile keine Behinderungen --- 1381831200, # 2013-10-15 12:00
        text  => 'Robert-Siewert-Str.: Bauarbeiten zwischen Brehmstr. und Zwieseler Str., Fahrbahn gesperrt, teilweise auch Einschränkungen am Geh-/Radweg, bis Mitte Oktober 2013',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html',
@@ -21749,6 +21749,26 @@ EOF
 #: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 1,5 Wochen
 #: next_check: 2013-09-03
 userdel	q4::inwork 8374,5598 8574,5580
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Landschaftspark Herzberge: nachts gesperrt',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+userdel	2::night 13437,10992 13471,10983
+userdel	2::night 17490,13133 17489,13125
+userdel	2::night 17671,13132 17698,13134
+EOF
+     },
+     { from  => 1377731580, # 2013-08-29 01:13
+       until => 1388530799, # 2013-12-31 23:59
+       text  => 'Alt-Lübars zwischen Quickborner Straße und Zabel-Krüger-Damm: Bauarbeiten, Fahrbahn gesperrt, bis Ende 2013',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130828.1240.388504.html',
+       data  => <<EOF,
+userdel	q4::inwork 6805,23554 6801,23474 6764,23396
 EOF
      },
     );

@@ -14,10 +14,9 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
 Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
-Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723 8659,13708 8626,13692 8619,13689
+Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 Scharnhorststr.: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
 Schwarzer Weg: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
-Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 Ella-Trebe-Str./Berta-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022 7867,13106 7937,13109
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten f¸r die Straﬂenbahnanbindung ist die Fahrbahn gesperrt	q4::inwork 7443,13008 7416,13058
@@ -542,8 +541,8 @@ Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
 Cuvrystr.: Bodenschwellen	q1 13053,10088 13132,10239
 Elsensteg: Fuﬂg‰nger	q3 13366,8694 13376,8705 13394,8730 13402,8741
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
-(Blockpark): Fuﬂg‰nger, Bordstein	q2 16300,10753 16246,10641
-(Blockpark): Fuﬂg‰nger	q1 16246,10641 16187,10587
+(Blockpark): Fuﬂg‰nger, Bordstein	q2 16300,10753 16265,10681
+(Blockpark): Fuﬂg‰nger	q1 16265,10681 16246,10641 16187,10587
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fuﬂg‰nger	q2 25571,4553 25658,4619
@@ -643,7 +642,7 @@ Am Britzer Garten - Straﬂe 229: enger Weg; Fuﬂg‰nger	q2 11104,3981 11111,4055
 Kaunstr.: Fuﬂg‰nger	q1 -999,2726 -984,2692
 (Rˆmerweg - Weg entlang der Bahnstrecke): enger Weg	q2 18445,9887 18436,9842 18421,9764
 Brascheweg: enge Straﬂe	q1 18881,9865 18810,9850
-Brascheweg: Fuﬂg‰nger, Bordstein	q2 18810,9850 18769,9839
+Brascheweg: Fuﬂg‰nger, Bordstein	q3 18810,9850 18769,9839
 Rudolf-Grosse-Str.: Fuﬂg‰nger	q1 19141,9709 19142,9755
 Nebelsteig: enge Straﬂe	q1 23561,10572 23534,10446
 Heuetsteig: enge Straﬂe	q1 23561,10572 23681,10552
@@ -927,7 +926,7 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15060,13735 15055,13768 15027,13801
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fuﬂg‰nger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
 (Darﬂer Str. - Malchower See): Fuﬂg‰nger	q1 15506,17973 15825,18385 15949,18555
-Am Malchower See: Fuﬂg‰nger	q1 15614,18649 15774,18656 15873,18561 15949,18555 16161,18687
+Am Malchower See: Fuﬂg‰nger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687
 (Wartenberger Str. - Margaretenhˆhe): Gehweg, f¸r Radfahrer freigegeben	q0 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
 (Siedlung Wartenberg - Tierheim): eng, mit Anh‰nger nur langsam passierbar	q2 19381,19830 19691,19748 19819,19602
 (J‰nschwalder Str. - Hˆnower Str.): eng	q2 25370,14421 25408,14189 25451,14018
@@ -1115,7 +1114,8 @@ Eyke-von-Repkow-Platz: einige Fuﬂg‰nger, Bordsteine	q3 5556,12536 5531,12501
 (Weg an der S¸dpanke - Am Pankepark): einige Fuﬂg‰nger, Rampe	q2 8307,14175 8323,14142
 (Weg an der S¸dpanke - Am Pankepark): einige Fuﬂg‰nger	q1 8323,14142 8282,14116
 (Rhinstr. - Am M¸hlenberg): einige Fuﬂg‰nger, Rampe	q1 18215,11690 18242,11793 18258,11827
-(Kolonie Sanssouci): einige Fuﬂg‰nger	q1 16488,10381 16297,10636 16246,10641
+(Kolonie Sanssouci): einige Fuﬂg‰nger	q1 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
+(Kolonie Sanssouci): einige Fuﬂg‰nger	q1 16288,10637 16265,10681
 M¸ggelstr., Hausdurchfahrt: einige Fuﬂg‰nger	q1 14837,11706 14856,11740
 (Bushaltestelle und Straﬂenbahnwendestelle Schˆneweide): Bus- und Straﬂenbahnverkehr	q2 17736,5441 17675,5521
 (Bushaltestelle und Straﬂenbahnwendestelle Schˆneweide): ggfs. Gehwege benutzen	q4 17675,5521 17588,5573 17578,5566
@@ -1175,7 +1175,7 @@ Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
 (Kleistpark): einige Fuﬂg‰nger	q1 7430,9576 7501,9573
 (Kleistpark): einige Fuﬂg‰nger, Bordstein	q2 7501,9573 7520,9572
 (Blockdammweg - Trautenauer Str.): Rampe	q2 17904,8927 17888,8899 17915,8900
-(Weg 1 im KGA Hochspannung): Rampe in Bau	q4::inwork 18182,9623 18165,9627 18164,9623
+(Weg 1 im KGA Hochspannung): Rampe, enge Radien	q3 18182,9623 18165,9627 18164,9623
 Fromet-und-Moses-Mendelssohn-Platz: einige Fuﬂg‰nger	q1 9797,10771 9733,10827 9682,10836 9666,10848
 (Grillostr. - Wehnertstr.): eng, Fuﬂg‰nger, Bordstein	q2 8790,854 8672,919
 (Otisstr. - Wackerweg): eng	q2 3753,18889 3803,18855
@@ -1239,8 +1239,10 @@ Unterbaumstr.: Bordsteine	q2 8486,12918 8502,12935
 (Hofackerzeile - Kurt-Schumacher-Damm): einige Fuﬂg‰nger	q1 2769,14482 2793,14374
 (Charles-Corcelle-Ring - Dohnagestell/Am Schwarzen Graben): Bordstein	q2 4775,15929 4833,15916
 (Charles-Corcelle-Ring - Dohnagestell): Bordstein, enger Pfad	q4 4724,15925 4723,15907
-(Drontheimer Str. - Koloniestr.): Fuﬂg‰nger	q2 8457,16975 8606,16973
+(Drontheimer Str. - Koloniestr.): Fuﬂg‰nger	q2 8457,16975 8592,16938
 (M‰rkische Zeile): Einkaufszentrum, Fuﬂg‰nger	q4 6847,21509 6856,21396
+(Mittelheide): teilweise recht eng	q1 23585,6523 23954,6721 24185,6880
+Hohenseeweg: nur f¸r Fuﬂg‰nger erlaubt, Bordstein	q4 23152,11065 22972,11066
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1849,7 +1851,7 @@ Lummenweg: eng durch parkende Autos	q1 21879,2592 21919,2510 21936,2388
 Hermannstr. (Zehlendorf): enge Straﬂe	q1 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
 Groﬂkopfstr.: enge Straﬂe (parkende Autos)	q0 5167,17725 5363,17667
 Privatstr. 7: enge Straﬂe	q1 16978,16915 17051,16923 17129,16922 17199,16907 17264,16892
-(Deutschhofer Allee - Unter den Birken): Fuﬂg‰nger, Hunde	q1 21940,8158 22077,8104 22199,8028 22600,7711
+(Deutschhofer Allee - Unter den Birken): Fuﬂg‰nger, Hunde	q1 21978,8132 22077,8104 22181,8009 22631,7692
 Roseggerstr. (Mahlsdorf): enge Straﬂe	q1 23661,8597 23860,8480
 Unionstr.: breiter Fuﬂweg, einige Fuﬂg‰nger	q2 5708,14077 5782,14067
 Rhenser Weg: Fuﬂweg	q1 19083,9062 19133,9087
