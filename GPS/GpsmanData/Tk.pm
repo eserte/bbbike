@@ -747,7 +747,7 @@ sub DESTROY {
     my $symbol_to_tk_photo = $self->privateData->{'symbol_to_tk_photo'};
     if ($symbol_to_tk_photo) {
 	while(my($k,$v) = each %$symbol_to_tk_photo) {
-	    $v->delete;
+	    $v->delete if $v;
 	    delete $symbol_to_tk_photo->{$k};
 	}
     }
