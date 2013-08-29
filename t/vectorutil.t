@@ -139,9 +139,8 @@ goto XXX if $do_xxx;
 
 {
     my @coordlist                = (0,0, 100,0, 200,100);
-    my @expected_coordlist_hin   = (0,3, 100,3, 200,103);
-    my @expected_coordlist_rueck = (0,-3, 100,-3, 200,-3);
-    local $TODO = "Expected coords are not correct";
+    my @expected_coordlist_hin   = (0,3, 98.757,3, 197.879,102.121);
+    my @expected_coordlist_rueck = (0,-3, 101.243,-3, 202.121,97.879);
     test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 45° polyline');
 }
 
