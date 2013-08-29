@@ -819,6 +819,26 @@ Warning:
 "GPS-Track nur mit Waypoints anzeigen" => "Show GPS track as waypoints only",
 "GPS-Uploads persistent machen" => "Make GPS uploads persistent",
 "GPS-Routen werden bei Uploads automatisch als BBR-Dateien im Verzeichnis %s gespeichert." => "Save uploaded GPS routes automatically as BBR files in directory %s.",
+"Vereinfachung von Routen" => "Route simplification",
+"GPS-Geräte können nur eine begrenzte Anzahl von Waypoints pro Route verwenden.
+Eine von BBBike berechnete Route erzeugt meist mehr Waypoints.
+Mit dieser Option kann eingestellt werden, welche Strategie
+dazu verwendet wird" => "GPS devices may only use a limited number of waypoints per route.
+A route calculated by BBBike often needs more waypoints.
+With this option it's possible to set the simplification
+strategy to reduce the number of waypoints",
+"Minimalwinkel bei Route-Vereinfachung" => "Minimum angle for route simplifications",
+"Minimalwinkel in Grad bei der Vereinfachung von Routen\n" => "Minimum angle in degrees",
+"Moderne Garmin-Geräte wie der eTrex Vista HCx können 250 Waypoints pro Route verwenden,\netwas ältere wie der eTrex Vista 50 Waypoints,\nwährend noch ältere nur 20 Waypoints laden können\n" => "Modern Garmin devices like eTrex Vista HCx max store 250 waypoints in a route,\nolder devices like the eTrex Vista 50 waypoints,\nwhile even older may store only 20 waypoints\n",
+"Maximale Länge von GPS-Waypoint-Namen" => "Maximum length of GPS waypoint names",
+"Typischerweise 10 bei älteren Garmin-Geräten, aber neuere Geräte können längere Namen verwenden (eTrex Vista HCx z.B. offiziell 14 Zeichen, tatsächlich sogar 20 Zeichen)" => "Typically 10 characters for older Garmin devices, but newer devices may use longer names (eTrex Vista HCX for example officially 14 characters, but in real 20 characters)",
+'Zeichensatz für Waypoints' => "Charset for waypoints",
+"Nur Großbuchstaben" => "Only uppercase",
+"Groß/Kleinbuchstaben" => "Upper/lowercase",
+"Groß/Kleinbuchstaben, Umlaute" => "Upper/lowercase, umlauts",
+"Waypointsymbol" => "Waypoint symbol",
+"Garmin-Symbol-ID. Falls leer gelassen, wird das Summit-Symbol verwendet" => "Garmin Symbol ID. May be left empty, in this case the 'summit' symbol is used",
+"Laut Garmin-Spezifikationen müssen übetragene Routen mit einer eindeutigen Routennummer versehen werden.\nExperimente haben aber gezeigt, dass die meisten (oder alle?) Garmin-Geräte dieses nicht benötigen." => "According to the Garmin specification transferred routes need a unique route number.\nBut it seems, that most (or all?) Garmin devices don't need this",
 "Bahn-Tracks bevorzugen" => "Prefer train tracks",
 "Penalty für unbeleuchtete Straßen" => "Penalty for unlit streets",
 "Penalty-Koeffizient" => "Penalty coefficient",
