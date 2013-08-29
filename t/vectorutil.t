@@ -163,18 +163,37 @@ XXX: {
 sub test_offset_line {
     my($coordlist, $delta, $expected_coordlist_hin, $expected_coordlist_rueck, $testname) = @_;
     my($cl_hin, $cl_rueck) = offset_line($coordlist, $delta, 1, defined $expected_coordlist_rueck);
-    my @errors;
+
+    my(@got_hin, @expected_hin, @got_rueck, @expected_rueck);
+    my $get_got_expected_pair = sub {
+	my($got_arr_ref, $expected_arr_ref, $inx) = @_;
+	if ($got_arr_ref->[$inx] == $expected_arr_ref->[$inx]) {
+	    ($got_arr_ref->[$inx], $expected_arr_ref->[$inx]);
+	} elsif (abs($got_arr_ref->[$inx] - $expected_arr_ref->[$inx]) <= 0.01) {
+	    ($got_arr_ref->[$inx] . "(+-0.01)", $got_arr_ref->[$inx] . "(+-0.01)");
+	} else {
+	    ("!".$got_arr_ref->[$inx]."!", "!".$expected_arr_ref->[$inx]."!"); # will fail
+	}
+    };
+
     for my $i (0 .. $#$cl_hin) {
-	if (abs($cl_hin->[$i] - $expected_coordlist_hin->[$i]) > 0.01) {
-	    push @errors, "hin, index=$i: got=$cl_hin->[$i], expected=$expected_coordlist_hin->[$i]\n";
+	{
+	    my($got,$expected) = $get_got_expected_pair->($cl_hin, $expected_coordlist_hin, $i);
+	    push @got_hin, $got;
+	    push @expected_hin, $expected;
 	}
 	if (defined $expected_coordlist_rueck) {
-	    if (abs($cl_rueck->[$i] - $expected_coordlist_rueck->[$i]) > 0.01) {
-		push @errors, "rueck, index=$i: got=$cl_rueck->[$i], expected=$expected_coordlist_rueck->[$i]\n";
-	    }
+	    my($got,$expected) = $get_got_expected_pair->($cl_rueck, $expected_coordlist_rueck, $i);
+	    push @got_rueck, $got;
+	    push @expected_rueck, $expected;
 	}
     }
-    is "@errors", "", $testname;
+
+    if (@got_rueck) {
+	is_deeply ["@got_hin", "@got_rueck"], ["@expected_hin", "@expected_rueck"], $testname;
+    } else {
+	is "@got_hin", "@expected_hin", $testname;
+    }
 }
 
 __END__
