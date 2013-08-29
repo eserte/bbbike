@@ -230,7 +230,7 @@ for my $record (@records) {
 }
 
 if (@expired_records) {
-    print "* expired records, alternative sorting\n";
+    print "* expired records, sort by dist\n";
     for my $expired_record (@expired_records) {
 	print $expired_record->{body};
     }
