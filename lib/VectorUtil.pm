@@ -426,7 +426,8 @@ sub offset_line {
 	my $after_azimuth = defined $p2x ? azimuth($p1x,$p1y, $p2x,$p2y) : $before_azimuth;
 	$before_azimuth = $after_azimuth if !defined $before_azimuth;
 
-	my $new_len = $delta / cos(($after_azimuth-$before_azimuth)/2);
+	my $half_angle = ($after_azimuth-$before_azimuth)/2;
+	my $new_len = $delta / cos($half_angle);
 
 	# used vars here: $p1, $before_azimuth, $new_len
 	my $offset_position = sub {
@@ -446,14 +447,11 @@ sub offset_line {
 	};
 
 	if ($do_calc_right) {
-	    my $add_angle_right = -((2*pi - (-pi() + $after_azimuth-$before_azimuth))/2);
-	    push @offset_pnts_right, $offset_position->($add_angle_right);
+	    push @offset_pnts_right, $offset_position->($half_angle - 3/2*pi);
 	}
 
 	if ($do_calc_left) {
-	    # To the left
-	    my $add_angle_left = (-pi() + ($after_azimuth-$before_azimuth))/2;
-	    push @offset_pnts_left, $offset_position->($add_angle_left);
+	    push @offset_pnts_left, $offset_position->($half_angle - pi/2);
 	}
 
 	$before_azimuth = $after_azimuth;
