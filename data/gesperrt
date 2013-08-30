@@ -443,7 +443,7 @@ Neuendorfer Str.	1 -3228,14794 -3251,14741
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
 Steilpfad	1s 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
-Breitenbachplatz	1 4107,6718 4074,6681 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
+Breitenbachplatz	1 4107,6718 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
 Südwestkorso	1 4061,6753 4206,6820
 Südwestkorso	1 4206,6820 4125,6763 4107,6718
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
@@ -787,6 +787,7 @@ Luise-Zietz-Str.	1 20137,13016 20103,12698 20079,12479
 Ingwerweg: durch Tor versperrt	2 9260,21636 9282,21589
 Am Tierpark [Wohngebiet]	1 18512,10337 18552,10220
 Am Tierpark [Wohngebiet]	1 18552,10220 18534,10185 18484,10326
+(Freiherr-vom-Stein-Str. - Dominicusstr.)	1::igndisp 6477,8654 6454,8653
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1342,9 +1343,9 @@ Rummelsburger Str. -> Grenzweg: wegen Überführung nicht überquerbar	3::igndisp 1
 Grenzweg -> Rummelsburger Landstr.: wegen Überführung nicht überquerbar	3::igndisp 17295,7336 17681,7589 17527,7812
 Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17743,7328 17839,7365 17681,7589
 Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18010,7133 17839,7365 17743,7328
-Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,7992
+Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,8005
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3::igndisp 4572,7936 4659,7982 4609,8013
-Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609,8013 4659,7982 4793,7992
+Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609,8013 4659,7982 4793,8005
 Straßenbahntrasse	3nocross::ignrte 18215,12123 18216,12239 18216,12262 18220,12450
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18216,12239 18216,12262 18180,12262
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3::igndisp 18180,12262 18216,12262 18220,12450
@@ -1414,9 +1415,9 @@ Sieglindestr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5458,7866 5348,7746 5
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 6880,11110 6882,11061 6873,11011 6824,10904
 Herkulesufer -> Schillstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6920,11064 6882,11061 6873,11011
 Klingelhöferstr. -> Herkulesufer: unbequem passierbarer Mittelstreifen	3::igndisp 6880,11110 6882,11061 6920,11064
-Lützowufer -> Lützowufer: unbequem passierbarer Mittelstreifen	3::igndisp 7002,11034 6873,11011 6732,11106
+Lützowufer -> Lützowufer: unbequem passierbarer Mittelstreifen	3::igndisp 7002,11034 6873,11011 6742,11099
 Lützowufer -> Schillstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7002,11034 6873,11011 6824,10904
-Lützowufer -> Lützowufer: unbequem passierbarer Mittelstreifen	3::igndisp 6732,11106 6873,11011 7002,11034
+Lützowufer -> Lützowufer: unbequem passierbarer Mittelstreifen	3::igndisp 6742,11099 6873,11011 7002,11034
 Tunneleinfahrt Adenauerplatz	3nocross::ignrte 3852,10236 3874,10153 3906,10035 3930,9919
 Brandenburgische Str. -> Duisburger Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3852,10236 3874,10153 4183,10144
 Brandenburgische Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3874,10153 3906,10035 4151,10026
@@ -2043,6 +2044,16 @@ Mittelstreifen	3nocross::ignrte 22883,13013 22924,12833 22967,12647
 Bansiner Str. -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22896,12827 22924,12833 22883,13013
 Hellersdorfer Str. -> Bansiner Str.: Mittelstreifen	3::igndisp 22967,12647 22924,12833 22896,12827
 Mittelstreifen	3nocross::ignrte 12564,4308 12637,4014 12655,3882
+Mittelstreifen	3nocross::ignrte 6102,4726 6006,4852 6034,4893
+Albrechtstr. -> Stadtpark Steglitz: Mittelstreifen	3::igndisp 6102,4726 6006,4852 5945,4828
+Albrechtstr. -> Stadtpark Steglitz, Brückenstr.: Mittelstreifen	3::igndisp 6102,4726 6006,4852 5957,4803
+Albrechtstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6102,4726 6006,4852 5920,4976
+Stadtpark Steglitz -> Bismarckstr.: Mittelstreifen	3::igndisp 5945,4828 6006,4852 6034,4893
+Stadtpark Steglitz -> zur Albrechtstr.: Mittelstreifen	3::igndisp 5945,4828 6006,4852 5920,4976
+Stadtpark Steglitz, Brückenstr. -> Stadtpark Steglitz: Mittelstreifen	3::igndisp 5957,4803 6006,4852 5945,4828
+Stadtpark Steglitz, Brückenstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5957,4803 6006,4852 6034,4893
+Stadtpark Steglitz, Brückenstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 5957,4803 6006,4852 5920,4976
+zur Albrechtstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5920,4976 6006,4852 6034,4893
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2361,7 +2372,6 @@ Metallstange	BNP:3:-72:trailer=10 -5082,11155
 Drängelgitter/Schranke	BNP:3:-194:trailer=10 -8113,13467
 Schranke	BNP:3:-27:trailer=10 -3451,13300
 Drängelgitter	BNP:3:4:trailer=10 -4760,13980
-Schranke	BNP:3:45:trailer=10 8828,13434
 Schranke	BNP:3:-96:trailer=10 8262,17361
 Schranke, enge Umfahrung	BNP:5:-6:trailer=15 8352,17285
 Schranke	BNP:3:-55:trailer=10 4347,21531
@@ -2482,7 +2492,6 @@ Schwingtor	BNP:5:-85:trailer=10 7366,8390
 Schwingtor	BNP:5:-49:trailer=10 7400,8273
 Schwingtor	BNP:5:-54:trailer=10 7289,8259
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-135:trailer=no 14658,7513
-Schranke	BNP:3:45 8828,13434
 Drängelgitter an der Straßenbahntrasse	BNP:6:-167 14989,13630
 Schranke	BNP:3:-90 -3646,15717
 Drängelgitter am Bahnübergang	BNP:3:-21 11612,5253
@@ -2595,11 +2604,13 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8588,13673 8594,13637
+Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8619,13689 8626,13641
+Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8659,13708 8668,13645
 Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
 Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -3441,13270 -3462,13256 -3467,13240 -3526,13196
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9852,12409
 Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp 9984,12426 9934,12420 9943,12364
-An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8828,13434 8800,13389 8764,13372
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572
 Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193
@@ -2616,7 +2627,6 @@ Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,1312
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
-Voßstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen möglich	2:inwork 8837,11676 9000,11727
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
@@ -2648,7 +2658,6 @@ Drängelgitter	BNP:5:-241 4386,6288
 Drängelgitter	BNP:5:-56 4351,6307
 Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
-Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5069,7498 5148,7500 5188,7536
 (Zur Dillenburger Str.)	1 3837,6926 3964,6928 3981,6850
@@ -2679,7 +2688,7 @@ Lietzenburger Str. -> Wormser Str.: Mittelstreifen schlecht zu überqueren	3::ign
 (Kolonieweg a. d. Forkenbeckstr.): schieben (Rampe 10 Stufen)	0:15:-78 3753,8073
 tragen (2 x 10 Stufen)	0:40:18 1666,4637
 tragen (2 x 10 Stufen)	0:40:21 1689,4630
-Sterzinger Str.	1 6096,8600 6128,8536
+Sterzinger Str.	1 6096,8600 6123,8546
 Bozener Str.	1 5904,8928 5971,8926 6049,8916
 Bozener Str.	1 5971,8926 5975,9094
 schwierig zu querender Mittelstreifen	3nocross::ignrte 6532,10529 6636,10492 6753,10446
@@ -2722,8 +2731,7 @@ Elisenstr.: tragen (3 Stufen)	0:15:-165 5810,5340
 tragen (9 Stufen)	0:30:-165 5822,5388
 tragen (3 x 10 Stufen)	0:90:-236 5535,4756
 tragen (8 Stufen)	0:30:-157 5466,4765
-tragen (Treppe)	0:20:-62 5371,4609
-(Stadtpark Steglitz)	BNP:15:-108 5765,4693
+tragen (Treppe)	0:20:-63 5371,4609
 tragen (16 Stufen)	0:45:-158 5469,4543
 tragen (ca. 5 x 9 Stufen)	0:120:35 13853,13712
 Straßenbahnschienen	3nocross::ignrte 12901,14093 12975,13990 13037,13897 13100,13803

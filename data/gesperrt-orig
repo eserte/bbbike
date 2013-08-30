@@ -584,7 +584,7 @@ Neuendorfer Str.	1 -3228,14794 -3251,14741
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
 Steilpfad	1s:q3 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
-Breitenbachplatz	1 4107,6718 4074,6681 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
+Breitenbachplatz	1 4107,6718 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
 Südwestkorso	1 4061,6753 4206,6820
 Südwestkorso	1 4206,6820 4125,6763 4107,6718
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
@@ -1061,6 +1061,7 @@ Luise-Zietz-Str.	1 20137,13016 20103,12698 20079,12479
 Ingwerweg: durch Tor versperrt	2 9260,21636 9282,21589
 Am Tierpark [Wohngebiet]	1 18512,10337 18552,10220
 Am Tierpark [Wohngebiet]	1 18552,10220 18534,10185 18484,10326
+(Freiherr-vom-Stein-Str. - Dominicusstr.)	1::igndisp 6477,8654 6454,8653
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1254,7 +1255,7 @@ Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
-#: next_check: 2013-08-30
+#: next_check: 2013-09-02
 #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Niemannstr.	1s:q4 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
@@ -1430,7 +1431,7 @@ Riesaer Str.: Straßenbahntrasse	3nocross 24120,14526 24097,14575 24030,14717
 Riesaer Str.: Straßenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526
 Riesaer Str.: Straßenbahntrasse	3nocross 24721,14293 24870,14244 24930,14225 24983,14208 25095,14171
 Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17681,7589 17839,7365 18010,7133
-Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,7992
+Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,8005
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12123 18216,12239 18216,12262 18220,12450
 Rhinstr.: Straßenbahntrasse	3nocross 18181,14110 18184,14078 18187,14039 18206,13817
 Rhinstr.: Straßenbahntrasse	3nocross 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
@@ -1643,6 +1644,7 @@ Hansastr.: Mittelstreifen	3nocross 15662,16656 15735,16698 15776,16721
 Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
 Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22924,12833 22967,12647
 Buckower Damm: Mittelstreifen	3nocross 12564,4308 12637,4014 12655,3882
+Albrechtstr.: Mittelstreifen	3nocross 6102,4726 6006,4852 6034,4893
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -2071,8 +2073,7 @@ Drängelgitter/Schranke	BNP:3::trailer=10 -8113,13467
 Schranke	BNP:3::trailer=10 -3451,13300
 Drängelgitter	BNP:3::trailer=10 -4760,13980
 #: by: ^^^
-#: note: explizite "Radfahren verboten"-Schilder
-Schranke	BNP:3::trailer=10 8828,13434
+# REMOVED (Parkplatz existiert nicht mehr) --- #: note: explizite "Radfahren verboten"-Schilder --- Schranke	BNP:3::trailer=10 8828,13434
 Schranke	BNP:3::trailer=10 8262,17361
 Schranke, enge Umfahrung	BNP:5::trailer=15 8352,17285
 Schranke	BNP:3::trailer=10 4347,21531
@@ -2229,8 +2230,6 @@ Schwingtor	BNP:5::trailer=10 7289,8259
 # 
 #: note: Fahrräder mit Anhänger könnten auf den parallelen Gehweg geführt werden
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14658,7513
-#: note: Hier steht ein "Radfahren verboten"-Schild
-Schranke	BNP:3 8828,13434
 #: note: Luftbild
 Drängelgitter an der Straßenbahntrasse	BNP:6 14989,13630
 # REMOVED (nicht bestätigt) --- #: by: Eckart Seher: --- Drängelgitter	BNP:3 25909,11844
@@ -2406,6 +2405,14 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2013-08-30 vvv
+#: next_check: 2013-12-31 vvv
+Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8588,13673 8594,13637
+Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8619,13689 8626,13641
+Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8659,13708 8668,13645
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: XXX siehe auch die Umleitungsstrecke
 #: XXX nach den Bauarbeiten asphaltiert
 #: by: http://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10317_Berlin_Strassenbauarbeiten__607379.html (Asphaltierung)
@@ -2425,10 +2432,7 @@ Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -
 #: check_frequency: 90d
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9852,12409
 # 
-#: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2013-05-27
-#: next_check: 2013-08-27
-An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8828,13434 8800,13389 8764,13372
+# REMOVED (eine direkte Umleitung entlang des Bauzauns existiert) --- #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein --- #: last_checked: 2013-05-27 --- #: next_check: 2013-08-27 --- An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8828,13434 8843,13408 8808,13377 8764,13372
 # 
 #: osm_watch: way id="201628184" version="3"
 #: last_checked: 2013-05-27
@@ -2484,7 +2488,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-08-20
+#: last_checked: 2013-08-30
 #: check_frequency: 60d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
@@ -2512,15 +2516,6 @@ Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 
 #: next_check: 2013-06-01
 #: osm_watch: way id="159457523" version="2"
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
-# 
-#: XXX Siehe auch Baustellenampel an der Wilhelmstr.
-#: XXX Siehe auch handicap in der Voßstr.
-#: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt
-#: source_id: INKO_113363
-#: osm_watch: way id="197160274" version="1"
-#: last_checked: 2013-07-09
-#: next_check: 2014-04-01
-Voßstr.: gesperrte Fahrbahn (Baustelle), kein Ausweichen möglich	2:inwork 8837,11676 9000,11727
 # 
 # REMOVED (Straße ist nicht (mehr?) gesperrt) --- #: last_checked: 2012-06-08 --- #: next_check: 2013-03-01 --- Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8390,8879 8409,8904 8405,8994
 # 
@@ -2626,7 +2621,7 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # REMOVED --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
-#: last_checked: 2013-08-20
+#: last_checked: 2013-08-30
 #: check_frequency: 60d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -2673,7 +2668,6 @@ Drängelgitter	BNP:5 4386,6288
 Drängelgitter	BNP:5 4351,6307
 Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
-Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5069,7498 5148,7500 5188,7536
 (Zur Dillenburger Str.)	1 3837,6926 3964,6928 3981,6850
@@ -2702,7 +2696,7 @@ Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3nocross 6494,10440 64
 (Kolonieweg a. d. Forkenbeckstr.): schieben (Rampe 10 Stufen)	0:15 3753,8073
 tragen (2 x 10 Stufen)	0:40 1666,4637
 tragen (2 x 10 Stufen)	0:40 1689,4630
-Sterzinger Str.	1 6096,8600 6128,8536
+Sterzinger Str.	1 6096,8600 6123,8546
 Bozener Str.	1 5904,8928 5971,8926 6049,8916
 Bozener Str.	1 5971,8926 5975,9094
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492 6753,10446
@@ -2740,8 +2734,7 @@ tragen (9 Stufen)	0:30 5822,5388
 tragen (3 x 10 Stufen)	0:90 5535,4756
 tragen (8 Stufen)	0:30 5466,4765
 tragen (Treppe)	0:20 5371,4609
-#: XXX Was ist das hier? Ein Drängelgitter, eine Schranke?
-(Stadtpark Steglitz)	BNP:15 5765,4693
+# REMOVED (existiert hier nicht) --- #: XXX Was ist das hier? Ein Drängelgitter, eine Schranke? --- (Stadtpark Steglitz)	BNP:15 5734,4694
 tragen (16 Stufen)	0:45 5469,4543
 # REMOVED (hier ist eine Rampe) --- tragen (6 Stufen)	0:20 12387,13107
 # REMOVED --- Schranke	BNP:10 12586,13368

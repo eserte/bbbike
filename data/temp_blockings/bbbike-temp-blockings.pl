@@ -7950,7 +7950,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005266',
        data  => <<EOF,
-userdel	2::inwork 9668,5733 9457,5641 9368,5608 9161,5535
+userdel	2::inwork 9668,5733 9456,5644 9447,5641 9368,5608 9161,5535
 EOF
      },
      { from  => undef, # 
@@ -11846,7 +11846,7 @@ userdel auto	3 6980,11583 6809,11570 6524,11583
 userdel auto	3 7215,10203 7245,10297 7281,10418
 userdel auto	3 7963,10716 7820,10768 7534,10850
 userdel auto	3 7828,11133 8000,11137 8102,11099
-userdel auto	3 6732,11106 6873,11011 7002,11034
+userdel auto	3 6742,11099 6873,11011 7002,11034
 userdel auto	3 6607,10801 6740,10755 6818,10725 6972,10665
 userdel auto	3 8596,11508 8542,11502 8573,11404
 userdel auto	3 8596,11508 8542,11502 8442,11555
@@ -11863,7 +11863,7 @@ userdel auto	3 8172,11679 8226,11458 8232,11414
 userdel auto	3 7444,10479 7633,10394 7744,10372
 userdel auto	3 9028,12307 9141,12320 9130,12433
 userdel auto	3 7744,10372 7633,10394 7444,10479
-userdel auto	3 7293,11519 7171,11510 6915,11492 6825,11486 6716,11439
+userdel auto	3 7293,11519 7171,11510 6987,11487 6915,11492 6825,11486 6716,11439
 userdel auto	3 9869,12297 9852,12409 9842,12506
 userdel auto	3 7849,10488 7689,10514 7478,10612
 userdel auto	3 7160,11225 7103,11247 6851,11346 6692,11365
@@ -11887,9 +11887,9 @@ userdel auto	3 9842,12506 9852,12409 9869,12297
 userdel auto	3 8205,10979 8104,11037 7980,11070 7747,11075
 userdel auto	3 6494,10440 6532,10529 6468,10550
 userdel auto	3 9343,12464 9358,12351 9369,12253
-userdel auto	3 7002,11034 6873,11011 6732,11106
+userdel auto	3 7002,11034 6873,11011 6742,11099
 userdel auto	3 9130,12433 9141,12320 9028,12307
-userdel auto	3 6716,11439 6825,11486 6915,11492 7171,11510 7293,11519
+userdel auto	3 6716,11439 6825,11486 6915,11492 6987,11487 7171,11510 7293,11519
 userdel auto	3 8804,12280 8861,12125 8901,12008
 userdel auto	3 7291,10506 7245,10499 7033,10396 7003,10513
 EOF
@@ -12786,7 +12786,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010086',
        data  => <<EOF,
-userdel	1::inwork 9796,5790 9668,5733 9457,5641 9368,5608
+userdel	1::inwork 9796,5790 9668,5733 9456,5644 9447,5641 9368,5608
 EOF
      },
      { from  => 1223320675, # 2008-10-06 21:17
@@ -13651,7 +13651,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012064',
        data  => <<EOF,
-userdel	q4::inwork; 9457,5641 9368,5608 9161,5535
+userdel	q4::inwork; 9456,5644 9447,5641 9368,5608 9161,5535
 EOF
      },
      { from  => 1238954845, # 2009-04-05 20:07
@@ -13798,7 +13798,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012244',
        data  => <<EOF,
-userdel	q4::inwork 9457,5641 9368,5608 9161,5535
+userdel	q4::inwork 9456,5644 9447,5641 9368,5608 9161,5535
 EOF
      },
      { from  => 1243371742, # 2009-05-26 23:02
@@ -13816,7 +13816,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012235',
        data  => <<EOF,
-userdel	q4::inwork; 6053,4942 6191,4923
+userdel	q4::inwork; 6055,4950 6184,4924 6191,4923
 EOF
      },
      { from  => 1240092000, # 2009-04-19 00:00
@@ -17896,7 +17896,7 @@ userdel auto	3 6216,10614 6228,10646 6250,10701
 userdel auto	3 7131,10331 7033,10328 7060,10221
 userdel auto	3 7131,10331 7033,10396 7245,10499
 userdel auto	3 6380,10704 6353,10583 6302,10462
-userdel auto	3 7002,11034 6873,11011 6732,11106
+userdel auto	3 7002,11034 6873,11011 6742,11099
 userdel auto	3 5681,10696 5782,10884 5829,10964
 userdel auto	3 7460,12054 7383,12095 7039,12314
 userdel auto	3 6692,11365 6851,11346 7103,11247
@@ -17916,7 +17916,7 @@ userdel auto	3 8048,12135 8055,12186 8119,12414
 userdel auto	3 7115,11220 6880,11110 6841,11114
 userdel auto	3 8119,12414 8055,12186 8048,12135
 userdel auto	3 6857,11992 6828,12031 6787,12099
-userdel auto	3 6732,11106 6873,11011 7002,11034
+userdel auto	3 6742,11099 6873,11011 7002,11034
 userdel auto	3 7875,12363 7816,12150 7827,12105
 userdel auto	3 7060,10221 7033,10328 7131,10331
 userdel auto	3 6250,10701 6228,10646 6216,10614
@@ -21388,14 +21388,13 @@ userdel	q4::inwork 8861,12125 8743,12099
 EOF
      },
      { from  => 1371506400, # 2013-06-18 00:00
-       until => 1372871532, # XXX hmmm sieht mir nicht nach Bauarbeiten aus --- 1375308000, # 2013-08-01 00:00
-       text  => 'Ordensmeisterstraße: Bauarbeiten zwischen Komturstr. und Colditzstr., Einbahnstraßenregelung, offen in Richtung Ma\'damm, vom 19.06.2013 bis voraussichtlich 31.07.2013',
+       until => 1379685600, # 2013-09-20 16:00
+       text  => 'Ordensmeisterstraße: Bauarbeiten zwischen Komturstr. und Colditzstr., Fahrbahn in Richtung Osten gesperrt, bis Mitte September',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130611.0925.385925.html',
        data  => <<EOF,
-#: XXX eventuell ist es erst jetzt gesperrt worden? --- Ordensmeisterstr. (Tempelhof): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 09/13) Richtung Komturstr. zwischen Colditzstr. und Komturstr., 08.07.2013 07:00 Uhr bis 20.09.2013 16:00 Uhr	INKO_119177	INUSE
 #: source_id: INKO_119177
-userdel	q4::inwork; 9796,5790 10027,5868 10254,5921
+userdel	q3::inwork; 9796,5790 10027,5868 10254,5921
 EOF
      },
      { from  => 1372456800, # 2013-06-29 00:00
@@ -21442,7 +21441,7 @@ userdel	2::temp 9054,12154 8861,12125 8743,12099
 userdel	2::temp 9130,12433 9016,12416 9028,12307 9141,12320 9164,12172 9064,12156 9076,12054 9183,12076 9164,12172
 userdel	2::temp 8965,11825 8901,12008 8861,12125 8804,12280 8775,12457
 userdel	2::temp 8553,11630 8548,11571 8502,11564 8442,11555 8209,11671 8203,11686
-userdel	2::temp 8502,11564 8473,11634 8397,11624
+userdel	2::temp 8502,11564 8473,11638 8387,11637
 userdel	2::temp 8354,12416 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254 8731,12270 8804,12280 9028,12307
 userdel	2::temp 8335,11718 8438,11753 8489,11782 8571,11846 8577,11896
 userdel	2::temp 8358,11477 8301,11469 8226,11458
@@ -21451,11 +21450,11 @@ userdel	2::temp 8548,11571 8542,11502 8479,11493 8374,11479
 userdel	2::temp 8048,12135 8107,12145 8089,12041 8091,11992 8156,11863
 userdel	2::temp 8595,12066 8577,11896 8632,11912 8783,11959 8901,12008 9063,12051
 userdel	2::temp 8210,11775 8222,11881 8284,11905 8453,12099 8522,12187 8538,12245 8600,12165 8595,12066 8737,12098 8783,11959 8813,11825
-userdel	2::temp 8107,12145 8215,12156 8222,11881 8156,11863 8210,11775 8203,11686 8225,11692 8335,11718 8397,11624 8442,11555 8542,11502 8596,11508 8740,11524 9058,11564 9000,11727 8969,11814 8825,11773 8813,11825 8567,11799
+userdel	2::temp 8107,12145 8215,12156 8222,11881 8156,11863 8210,11775 8203,11686 8225,11692 8335,11718 8387,11637 8442,11555 8542,11502 8596,11508 8740,11524 9058,11564 9000,11727 8969,11814 8825,11773 8813,11825 8567,11799
 userdel	2::temp 8538,12245 8546,12279
 userdel	2::temp 9016,12416 9008,12485
 userdel	2::temp 8825,11773 8837,11676 8743,11663 8553,11638
-userdel	2::temp 8438,11753 8473,11634 8553,11638 8567,11799 8571,11846
+userdel	2::temp 8438,11753 8473,11638 8553,11638 8567,11799 8571,11846
 EOF
      },
      { from  => 1371549600, # 2013-06-18 12:00
@@ -21523,13 +21522,12 @@ EOF
 EOF
      },
      { from  => undef, #
-       until => undef, #
+       until => 1, # undef, # DEAKTIVIERT! Wahrscheinlich keine Behinderung, Wochenmarkt passiert auf dem Gehweg.
        text  => 'Mainzer Straße (Wilmersdorf): Wochenmarkt Montag und Donnerstag 8-13 Uhr, Behinderungen möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: XXX wo genau ist der Wochenmarkt?
-	q4::temp:clock 5066,8140 5177,8139
+	q4::temp:clock 5050,8140 5177,8139
 EOF
      },
      { from  => undef, #
@@ -21741,14 +21739,12 @@ EOF
 userdel	q4::inwork 8425,8775 8438,8676 8455,8567
 EOF
      },
-     { from  => 1377381600, # 2013-08-25 00:00
-       until => 1378331999, # 2013-09-04 23:59
-       text  => 'Totilastr.: Bauarbeiten zwischen Manteuffelstr. und Wittekindstr., Fahrbahn gesperrt, vom 26.08.2013 bis voraussichtlich zum 04.09.2013',
+     { from  => $isodate2epoch->("2013-09-05 00:00:00"),
+       until => $isodate2epoch->("2013-09-13 23:59:59"),
+       text  => 'Totilastr.: Bauarbeiten zwischen Wittekindstr. und Alboinstr., Fahrbahn gesperrt, voraussichtlich in den ersten September-Wochen',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 1,5 Wochen
-#: next_check: 2013-09-03
-userdel	q4::inwork 8374,5598 8574,5580
+userdel	q4::inwork 8374,5598 8276,5601 8176,5610
 EOF
      },
      { from  => undef, # 
@@ -21769,6 +21765,28 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130828.1240.388504.html',
        data  => <<EOF,
 userdel	q4::inwork 6805,23554 6801,23474 6764,23396
+EOF
+     },
+     { from  => 1377665400, # 2013-08-28 06:50
+       until => 1378407600, # 2013-09-05 21:00
+       text  => 'Mauerstr. (Mitte): Veranstaltung, Fahrbahn zwischen Taubenstr. und Jägerstr. gesperrt (ggfs. auf Gehweg ausweichen), Einbiegen in die Jägerstr. nicht möglich, bis zum 05.09.2013',
+       type  => 'handicap',
+       source_id => 'IM_020213',
+       data  => <<EOF,
+userdel	q2::temp 9108,11961 9144,11866
+	3::temp 9201,11968 9108,11961 9076,12054
+	3::temp 9076,12054 9108,11961 9201,11968
+	3::temp 9201,11968 9108,11961 9144,11866
+	3::temp 9144,11866 9108,11961 9201,11968
+EOF
+     },
+     { from  => 1377986400, # 2013-09-01 00:00
+       until => 1379541599, # 2013-09-18 23:59
+       text  => 'Scheidemannstr.: Bauarbeiten, Fahrbahn zwischen Ebertstr. und Yitzhak-Rabin-Str. gesperrt, 02. September 2013 bis 18. September 2013 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130830.1005.388628.html',
+       data  => <<EOF,
+userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
 EOF
      },
     );

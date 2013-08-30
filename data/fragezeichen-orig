@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="3"
 #: osm_watch: way id="153373877" version="3"
-#: last_checked: 2013-06-27
+#: last_checked: 2013-08-30
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -102,7 +102,7 @@ Großziethener - Barnetstr.: werden hier die bestehenden Radwege verbessert oder 
 Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243,-1876 10301,-1891 10303,-1954
 # 
 #: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
-#: last_checked: 2013-08-08
+#: last_checked: 2013-08-30
 #: check_frequency: 100d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -493,10 +493,12 @@ Planstraße zwischen Theodorstr. und Pilgramer Str.: Straße in Planung, Qualität?
 #: next_check: 2013-10-01
 Am Lokdepot: Planung einer Erschließungsstraße	?::inwork 8390,8879 8389,9087
 # 
-#: last_checked: 2013-08-08 vvv
-#: next_check: 2013-08-22 vvv
+#: last_checked: 2013-08-30 vvv
+#: next_check: 2013-09-14 vvv
+#: XXX auch mrt/hrt fragen! vvv
 Te-Damm/Hoeppnerstr.: Ampelanlage in Bau	?::inwork 9242,7286
 Te-Damm/Manfred-von-Richthofen-Str.: Ampelanlage in Bau	?::inwork 9242,7325
+#: XXX ^^^
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -584,14 +586,14 @@ Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 1
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
-#: last_checked: 2013-07-16
-#: check_frequency: 90d
+#: last_checked: 2013-08-30
+#: next_check: 2014-09-01
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
 #: XXX zurzeit (2013-05-23) ein leerer Pfostem am Kottbusser Damm, kommt hier das Fahrradstraßenschild hin?
-#: last_checked: 2013-08-08
+#: last_checked: 2013-08-30
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -699,8 +701,8 @@ Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: osm_watch: way id="4663347" version="14"
-#: last_checked: 2013-05-29
-#: next_check: 2013-08-01 (Ende der Bauarbeiten)
+#: last_checked: 2013-08-30
+#: next_check: 2013-09-20 (Ende der Bauarbeiten)
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
 # 
 #: last_checked: 2013-05-10 vvv
@@ -983,12 +985,12 @@ Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16
 #: check_frequency: 90d
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 
-#: last_checked: 2013-05-06 (Baumarkierungen (?) auf der Fahrbahn gesehen)
-#: next_check: 2013-08-06
 #: XXX wahrscheinlich nur im nördlichen Teil bis Kaiserstr.
 #: XXX Baumaßnahme 7.13 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-Ringstr.: Radverkehrsanlagen	?::projected 8399,4244 8159,4354 8098,4376 7990,4420 7921,4451 7690,4552
+#: last_checked: 2013-08-30
+#: check_frequency: 120d
+Ringstr.: Radverkehrsanlagen	?::projected 8390,4248 8159,4354 8098,4376 7990,4420 7921,4451 7690,4552
 #: by: ^^^
 # 
 # REMOVED (eröffnet) --- #: last_checked: 2012-10-16 --- #: next_check: 2012-11-08 --- #: XXX_indoor Brückennamen evtl. in Berlin.coords.data erwähnen --- #: XXX_indoor sowohl in brunnels-orig --- Alfred-Lion-Steg: Fertigstellung?	?::inwork 7893,8327 8090,8291 8088,8254
@@ -1042,6 +1044,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Stadtpark Steglitz: evtl. befindet sich das Drängelgitter hier?	? 5709,4674 5734,4694
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
 #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf
 Kaninchenberg (Potsdam): befindet sich die Straße hier? Qualität?	? -8960,-5817 -9054,-5905
@@ -1078,8 +1081,6 @@ Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf
 Dieselstr. (Potsdam): diese Straße wird "neu gewidmet", existiert schon etwas? Qualität?	? -10350,-2358 -10258,-2380 -10273,-2445
-# 
-Arnulfstr.: was ist hier: Busspur, Radstreifen, Radweg, oder nichts?	? 8100,5517 8200,5510
 # 
 # REMOVED (aufgenommen) --- # by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7281 (Idee) --- Viktoriaufer/Jüdenstr. - Am Juliusturm: existiert eine Verbindung für Radfahrer? Kann man auch Richtung Falkenseer Platz fahren?	? -3239,14641 -3209,14662
 # 

@@ -136,7 +136,7 @@ Lefèvrestr.	1 5360,6642 5215,6643
 Kühlebornweg	1 5161,4664 5075,4600 5004,4709
 Gartenstr.	1 22467,3889 22281,4033 22263,4120 22279,4220
 Wichmannstr.	1 6462,11069 6552,11006 6681,10959 6824,10904
-Lützowufer	1 6873,11011 6732,11106 6626,11178 6582,11202
+Lützowufer	1 6873,11011 6742,11099 6626,11178 6582,11202
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
 Kirchhofstr.	1 13188,7590 13117,7471 13029,7353
 Siegfriedstr.	1 12664,7013 12810,7047 12843,7093 12872,7134
@@ -927,3 +927,7 @@ Am Bahnhof (Blumberg)	1 24319,22403 24107,22243
 Kaulsdorfer Str. (Hönow): Poller	3 * 25749,14812 *
 #: note: Fußgänger/Radfahrer können an der Haltestelle überqueren
 Treskowallee: Straßenbahntrasse	3nocross 18742,9903 18769,9839 18807,9746
+#: note: für Radfahrer aus der Fichtestr. gibt es mittlerweile eine offizielle Wegführung Richtung Park
+Hasenheide: Mittelstreifen	3nocross 11136,9183 11108,9187 10713,9260
+Rüdesheimer Str.	1 4317,7069 4391,7258
+Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597

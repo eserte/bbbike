@@ -3130,7 +3130,17 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130611.0925.385925.html',
+         'until' => 1379685600,
+         'text' => 'Ordensmeisterstraße: Bauarbeiten zwischen Komturstr. und Colditzstr., Fahrbahn in Richtung Osten gesperrt, bis Mitte September',
+         'from' => 1371506400,
+         'id' => 2445,
+         'data' => '#: source_id: INKO_119177
+userdel	q3::inwork; 9796,5790 10027,5868 10254,5921
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20130613.1320.386040.html',
          'until' => 1385938799,
@@ -3183,17 +3193,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => undef,
-         'recurring' => 1,
-         'text' => 'Mainzer Straße (Wilmersdorf): Wochenmarkt Montag und Donnerstag 8-13 Uhr, Behinderungen möglich',
-         'from' => undef,
-         'id' => 2456,
-         'data' => '#: XXX wo genau ist der Wochenmarkt?
-	q4::temp:clock 5066,8140 5177,8139
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -3360,13 +3360,11 @@ userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353
          'type' => 'handicap'
        },
        {
-         'until' => 1378331999,
-         'text' => 'Totilastr.: Bauarbeiten zwischen Manteuffelstr. und Wittekindstr., Fahrbahn gesperrt, vom 26.08.2013 bis voraussichtlich zum 04.09.2013',
-         'from' => 1377381600,
+         'until' => 1379109599,
+         'text' => 'Totilastr.: Bauarbeiten zwischen Wittekindstr. und Alboinstr., Fahrbahn gesperrt, voraussichtlich in den ersten September-Wochen',
+         'from' => 1378332000,
          'id' => 2478,
-         'data' => '#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 1,5 Wochen
-#: next_check: 2013-09-03
-userdel	q4::inwork 8374,5598 8574,5580
+         'data' => 'userdel	q4::inwork 8374,5598 8276,5601 8176,5610
 ',
          'type' => 'handicap'
        },
@@ -3389,6 +3387,30 @@ userdel	2::night 17671,13132 17698,13134
          'from' => 1377731580,
          'id' => 2480,
          'data' => 'userdel	q4::inwork 6805,23554 6801,23474 6764,23396
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020213',
+         'until' => 1378407600,
+         'text' => 'Mauerstr. (Mitte): Veranstaltung, Fahrbahn zwischen Taubenstr. und Jägerstr. gesperrt (ggfs. auf Gehweg ausweichen), Einbiegen in die Jägerstr. nicht möglich, bis zum 05.09.2013',
+         'from' => 1377665400,
+         'id' => 2481,
+         'data' => 'userdel	q2::temp 9108,11961 9144,11866
+	3::temp 9201,11968 9108,11961 9076,12054
+	3::temp 9076,12054 9108,11961 9201,11968
+	3::temp 9201,11968 9108,11961 9144,11866
+	3::temp 9144,11866 9108,11961 9201,11968
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130830.1005.388628.html',
+         'until' => 1379541599,
+         'text' => 'Scheidemannstr.: Bauarbeiten, Fahrbahn zwischen Ebertstr. und Yitzhak-Rabin-Str. gesperrt, 02. September 2013 bis 18. September 2013 ',
+         'from' => 1377986400,
+         'id' => 2482,
+         'data' => 'userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
 ',
          'type' => 'handicap'
        }

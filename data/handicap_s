@@ -5,14 +5,17 @@
 #:
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
-Marchlewskistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 13473,11456 13366,11651 13295,11792
+Marchlewskistr.: Bauarbeiten, Einbahnstraße, Asphaltdecke wurde entfernt	q3::inwork; 13473,11456 13366,11651
+Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
+Chausseestr.: direkte Zufahrt südlich der Invalidenstraße nicht möglich, umständliche Wegführung	q4::inwork 9042,13707 8935,13844
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
-Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg	q3::inwork 8743,11663 8837,11676
+Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676
+Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwork 8837,11676 9000,11727
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
@@ -32,6 +35,7 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
+Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15399,12444 15402,12390 15350,12270
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
@@ -189,7 +193,7 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848 7563,88
 Nettelbeckplatz: Fußgänger	q2 8024,15401 7989,15412 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7953,15362 7989,15412
 Nettelbeckplatz: Fußgänger	q2 7975,15500 7989,15412
-Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5919,8417 5805,8352 5666,8345 5533,8478 5472,8507
+Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5919,8417 5831,8358 5806,8350 5762,8335 5666,8345 5533,8478 5472,8507
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,8562
@@ -239,7 +243,7 @@ Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
 Radweg eng und bewachsen	q1 5057,14607 5264,14671 5440,14840
 Tunnel S-Bhf. Grunewald: Fußgänger	q2 693,9129 731,9103 884,8954
 enge Kurven	q2 33533,2761 33293,2768
-Kieler Str.: Bordstein, Fußgänger	q3 4998,5817 5052,5788
+Kieler Str.: Fußgänger	q3 4998,5817 5052,5788
 Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
 Südstern: Fußgänger	q3 10747,9326 10710,9309 10647,9337
 Görlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
@@ -274,15 +278,14 @@ Weisestr.: Bordsteine	q3 11767,8330 11770,8292
 Helgoländer Ufer - Stromstr.: Fußgänger	q2 6551,12901 6535,12934 6271,12985 6278,13053 6183,13083
 Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6129,12976 6106,12981
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
-(Stadtpark Steglitz): Fußgänger	q1 5817,4473 5898,4667 5957,4803 6018,4850
-Barsekowstr.: Fußgänger	q1 5344,4672 5417,4647 5476,4626 5589,4617
+(Stadtpark Steglitz): Fußgänger	q1 5817,4473 5889,4670 5957,4803 6006,4852
+Barsekowstr.: Fußgänger	q1 5336,4676 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5656,4621 5709,4674
-(Stadtpark Steglitz): Fußgänger, für Radfahrer freigegeben	q1 5709,4674 5765,4693 5898,4667 6107,4718
+(Stadtpark Steglitz): Fußgänger, für Radfahrer freigegeben	q1 5709,4674 5734,4694 5830,4661 5889,4670 6107,4718
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5582,4675 5555,4743
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
-(Stadtpark Steglitz): Fußgänger	q1 5797,4846 5826,4819 5909,4798 5945,4828 6018,4850
+(Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5945,4828 6006,4852
 Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655
-Dieffenbachstr.: Bodenschwellen, können gut umfahren werden	q0 11346,9655 11541,9576
 Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14076,10011
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
@@ -331,7 +334,7 @@ Uferweg, Mentzelpark: Fußgänger	q1 21487,5425 21512,5404 21600,5221 21696,5053 2
 Uferweg, Mentzelpark: Fußgänger, eng	q3 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Fußgänger	q1 21761,4979 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fußgänger	q1 21726,4896 21741,4889 21778,4916
-Heinrich-Lassen-Park: Fußgänger, Radfahren offiziell nicht erlaubt	q2 6664,8787 6705,8730 6740,8682 6815,8691 6912,8617
+Heinrich-Lassen-Park: Fußgänger, Radfahren offiziell nicht erlaubt	q3 6664,8787 6705,8730 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fußgänger	q1 7753,14528 7695,14545 7496,14660
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
@@ -493,7 +496,8 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11170,11558
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
-(Parkplatz Charité): Fußgänger, parkende Autos	q1 8828,13434 8800,13389 8764,13372 8665,13353
+(Parkplatz Charité): Fußgänger	q3 8828,13434 8843,13408 8808,13377 8764,13372
+(Parkplatz Charité): Fußgänger, parkende Autos	q1 8764,13372 8665,13353
 (Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q3 13375,12062 13339,12029
 Perleberger - Kieler: unterhalb der Brücke sehr eng	q3 7636,14414 7612,14449
 Ida-Wolff-Platz: Fußgänger	q2 9210,10614 9192,10528
@@ -590,7 +594,7 @@ Karl-Otto-Reinsch-Str.: Fußgänger	q1 19603,3207 19524,3286
 Brook-Taylor-Str.: Fußgängerzone	q1 19146,2975 19101,3028 19015,3129
 Heinrich-Mirbach-Str.: Fußgänger	q1 17288,4026 17244,4084
 Drosselbartstr.: enge Straße	q1 15188,6908 15024,7083 14951,7163
-Zimmermannstr.: Fußgänger, Bordsteine	q3 4997,5877 5024,5863
+Zimmermannstr.: Fußgänger	q3 4997,5877 5024,5863
 Deitmerstr.: Fußgänger	q3 5078,5889 5048,5904
 Friedrichsruher Platz: Fußgänger, eng	q2 5942,5775 5935,5874
 Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q1 6878,5946 6895,5873
@@ -1243,6 +1247,9 @@ Unterbaumstr.: Bordsteine	q2 8486,12918 8502,12935
 (Märkische Zeile): Einkaufszentrum, Fußgänger	q4 6847,21509 6856,21396
 (Mittelheide): teilweise recht eng	q1 23585,6523 23954,6721 24185,6880
 Hohenseeweg: nur für Fußgänger erlaubt, Bordstein	q4 23152,11065 22972,11066
+Totilastr.: Bordsteine, Fußgänger	q4 8574,5580 8610,5579
+Gersdorfstr. - Wulfila-Ufer: Bordstein, einige Fußgänger	q2 8249,4769 8184,4716
+(Brentanostr. - Breitenbachplatz): einige Fußgänger	q1 4058,6602 4034,6642
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1333,7 +1340,7 @@ Hünensteig: Fußgänger	q2 6395,5154 6405,5238 6108,5253
 (Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9404,6392 9389,6348 9381,6277 9374,6189
 (Götzstr. - Albrechtstr.): Fußgänger, Rampe	q4 9374,6189 9373,6179
 (Götzstr. - Albrechtstr.): Fußgänger	q2 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
-(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg	q4 7921,4451 7935,4466 8027,4571 8162,4725
+(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg, Bordstein	q4 7921,4451 7935,4466 8027,4571 8184,4716
 Mühlenbecker Weg: Fußgänger	q1 20150,15678 20334,16043
 (Nordmannzeile - Vorarlberger Damm): Fußgänger, Kleingartenweg	q1 6841,7283 6846,7306 7062,7376 7108,7416 7220,7442
 Herschelstr.: enge Wohnstraße	q1 3222,13252 3262,13406 3276,13481 3280,13625
@@ -1430,11 +1437,11 @@ Ritterstr.: Fußgänger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fußgänger	q2 5808,5332 5810,5340 5822,5388
 Mittelstr. (Steglitz): Fußgänger	q2 5111,5337 5203,5278
 Goebenstr.: Fußgänger	q1 5606,4726 5555,4743 5535,4756 5509,4773 5478,4792
-Johanna-Stegen-Str.: Fußgänger	q2 5557,4523 5479,4568 5397,4611 5371,4609 5325,4633
+Johanna-Stegen-Str.: Fußgänger	q2 5557,4523 5479,4568 5397,4611 5371,4609 5316,4637
 Vionvillestr.: Fußgänger	q2 5557,4523 5589,4617
 Rezonvillestr.: Fußgänger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fußgänger	q2 5656,4543 5751,4497 5817,4473
-(Stadtpark Steglitz): Fußgänger	q2 5826,4819 5765,4693 5697,4545 5656,4543
+(Stadtpark Steglitz): Fußgänger	q2 5806,4840 5772,4766 5734,4694 5676,4552 5656,4543
 Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5347,4841 5436,4983
 (Volkspark Friedrichshain): Fußgänger	q2 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
 (Volkspark Friedrichshain): Skater, Fußgänger	q2 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
