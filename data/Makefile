@@ -1374,7 +1374,7 @@ check-disabled:
 
 # Interactive test
 .check_ortsschilder_dist:	orte orte2 ortsschilder
-	perl -Mopen=:locale  -MData::Dumper -I.. -I../lib -MStrassen::Util -MStrassen::Core -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$pos{$$_[0]->[0]} = $$_[0]->[1][0]; $$cat{$$_[0]->[0]} = $$_[0]->[2] }) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$pos = $$_[0]->[1][0]; print int(Strassen::Util::strecke_s($$pos, $$pos{$$_[0]->[0]})) . " " . $$cat{$$_[0]->[0]} . " " . $$_[0]->[0] . "\n" }) ' | sort -nr | less
+	perl -MData::Dumper -I.. -I../lib -MStrassen::Util -MStrassen::Core -Mopen=:locale -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$pos{$$_[0]->[0]} = $$_[0]->[1][0]; $$cat{$$_[0]->[0]} = $$_[0]->[2] }) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$pos = $$_[0]->[1][0]; printf "%.1fkm cat=%s %s\n", Strassen::Util::strecke_s($$pos, $$pos{$$_[0]->[0]})/1000, $$cat{$$_[0]->[0]}, $$_[0]->[0] }) ' | sort -nr | less
 
 .check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen routing_helper-orig
 	$(CHECK_POINTS) gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen routing_helper-orig
