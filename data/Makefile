@@ -775,15 +775,17 @@ ${_img_gif_${img}}: ${_img_png_${img}}
 make_misc:
 	cd $(MISCDIR) && ${MAKE} ${MAKEFLAGS} 
 
-# create Storable versions of data files
+# Create Storable versions of data files
 # handling of Storable files is up to twice as fast as normal bbd files, but not well-tested, so it is not done by default
+#
+# This target assumes that all bbd files are up-to-date.
 STORABLE_TARGETS=${BBD_TARGETS:S/$/.st/}
-storable:	${STORABLE_TARGETS}
-
+storable:
 .for i in ${BBD_TARGETS}
-$i.st: $i
-	$(PERL) -I.. -I../lib ../Strassen/Storable.pm -v -u -f $i $i.st
-	$(READABLE) $i.st
+	@if [ ! -e $i.st -o $i.st -ot $i ] ; then \
+	    $(PERL) -I.. -I../lib ../Strassen/Storable.pm -v -u -f $i $i.st; \
+	    $(READABLE) $i.st; \
+	fi
 .endfor
 
 ######################################################################
