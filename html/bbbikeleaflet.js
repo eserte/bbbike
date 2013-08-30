@@ -225,7 +225,6 @@ function doLeaflet() {
 
     routeLayer = new L.GeoJSON();
     map.addLayer(routeLayer);
-    layersControl.addOverlay(routeLayer, "Route");
 
     if (enable_accel) {
 	accel = new AccelHandler();
