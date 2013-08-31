@@ -100,7 +100,12 @@ sub run {
 
 	    my $gpx = eval { Strassen->new_by_magic_or_suffix($tmpfile, name => "Uploaded GPX file") };
 	    if (!$gpx) {
-		warn $@;
+		if (param('debug')) {
+		    warn "ERROR: gpxfile upload failed. Detailed error: $@";
+		} else {
+		    my($err) = $@ =~ m{^(.*)};
+		    warn "ERROR: gpxfile upload failed. Short error: $err";
+		}
 		(my $short_err_msg = $@) =~ s{ at \S+ line \d+\.}{};
 		$self->{errormessageupload} = "Ungültiges Datenformat. Gültige Datenformate sind u.a. .gpx, .kml und .kmz.\nDetaillierte Fehlermeldung:\n$short_err_msg";
 	    } else {
