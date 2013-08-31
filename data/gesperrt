@@ -63,7 +63,7 @@ Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19480,15094 19563,15113 19694,15141 19852,15201
 Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19156,14953 19013,14905
-Knoten Märkische/Landsberger Allee	1 19466,14910 19408,15007
+Knoten Märkische/Landsberger Allee	1 19466,14910 19464,14971 19408,15007
 Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
 Knoten Märkische/Landsberger Allee	1 19480,15094 19604,15227
@@ -1440,13 +1440,13 @@ Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndi
 Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5541,9923
 Pariser Str. -> Bundesallee: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5463,9961
 Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5463,9961 5464,9914 5541,9923
-Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19506,15002 19466,14910 19422,14793
+Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19506,15002 19466,14910 19449,14790
 Märkische Allee -> Parkpl. Le Prom: Linksabbiegen nicht möglich	3::igndisp 19664,15366 19619,15262 19784,15191
 Parkpl. Le Prom -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19784,15191 19619,15262 19604,15227
 Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19577,15166 19604,15227 19480,15094
 Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19604,15227 19577,15166 19654,15219
 Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19551,14961 19506,15002 19466,14910
-Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19408,15007 19466,14910 19506,15002
+Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19464,14971 19466,14910 19506,15002
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9865,10227 9858,10199 9837,10117
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9884,10192 9858,10199 9837,10117
 Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
