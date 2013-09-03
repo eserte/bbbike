@@ -153,8 +153,8 @@ for my $file (@files) {
 		     my $searches;
 		     if ($searches_weight_net) {
 			 my $max_searches = 0;
-			 for my $c_i (1 .. $#{ $r->[Strassen::COORDS] }) {
-			     my($p1, $p2) = @{ $r->[Strassen::COORDS] }[$c_i-1, $c_i];
+			 my $update_max_searches = sub {
+			     my($p1, $p2) = @_;
 			     my $found_rec_hin   = $searches_weight_net->get_street_record($p1, $p2, -obeydir => 1);
 			     my $found_rec_rueck = $searches_weight_net->get_street_record($p2, $p1, -obeydir => 1);
 			     my $this_searches = 0;
@@ -165,6 +165,17 @@ for my $file (@files) {
 			     }
 			     if ($this_searches > $max_searches) {
 				 $max_searches = $this_searches;
+			     }
+			 };
+			 my @c = @{ $r->[Strassen::COORDS] };
+			 if (@c == 1) {
+			     for my $neighbor (keys %{ $searches_weight_net->{Net}{$c[0]} }) {
+				 $update_max_searches->($c[0], $neighbor);
+			     }
+			 } else {
+			     for my $c_i (1 .. $#c) {
+				 my($p1, $p2) = @c[$c_i-1, $c_i];
+				 $update_max_searches->($p1, $p2);
 			     }
 			 }
 			 $searches = $max_searches;
