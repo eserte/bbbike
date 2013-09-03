@@ -2,6 +2,9 @@
 #: title: sonstige Kommentare
 #: category_image.culdesac: ../misc/verkehrszeichen/Zeichen_357.svg:12x12=1:12000,xxx
 #: category_image.culdesac_pseudo: ../misc/verkehrszeichen/Zeichen_357.svg:8x8=1:12000,xxx
+#: line_color.busroute_N: #7f00e5
+#: line_width.busroute_N: 1,1,1,1,1,1
+#: line_dash.busroute_N: 2,4
 #
 # z.B.: path finding helper (maybe candidates for comments_path):
 #       * "ausgeschildert als"
