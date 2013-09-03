@@ -2092,7 +2092,7 @@ Möthlower Str.: Asphalt	Q0 -7736,15460 -7664,15601 -7588,15656
 #: confirmed_by: rjoop
 Möthlower Str.: Sand	Q2 -7588,15656 -7483,15690 -7457,15704
 #: by: rjoop photos vvv
-Straße 270: Kopfsteinpflaster mit Sandbanketten	Q2 -5870,10847 -5035,11007
+Straße 270: Kopfsteinpflaster mit Sandbanketten	Q2 -5870,10847 -5312,10948 -5035,11007
 Straße 270: Feldweg, im westlichen Teil nur zweispurig	Q2 -5035,11007 -4853,11044
 #: by: ^^^
 #: by: anonymous
@@ -2494,7 +2494,7 @@ Wriezener Str.: Kopfsteinpflaster	Q2 9210,16638 9245,16758 9299,16889 9361,17039
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7763,16779 7745,16889
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7585,16865 7594,16805
 Indische Str.: Asphalt	Q0 7231,16418 7056,16587
-Frundsbergstr.: Kopfsteinpflaster	Q2 15262,23106 15176,23168 15021,23280 14865,23388 14761,23453
+Frundsbergstr.: Kopfsteinpflaster	Q2 15280,23097 15176,23168 15021,23280 14865,23388 14761,23453
 Nisbléstr.: überwiegend guter Asphalt	Q0- 11870,21574 11838,21580 11764,21593 11653,21613 11425,21650 11408,21653 11304,21671 11228,21684 11200,21689 11145,21698 11112,21704 11060,21694
 La-Rochelle-Str.: asphaltiert	Q0 11173,22273 11347,22122 11364,22081 11304,21671
 (Am Nordgraben): unbefestigter, holpriger Weg, bei Regen große Pfützen	Q2- 10228,21940 10336,21901 10414,21876 10488,21860 10565,21840 10633,21827 10709,21804 10789,21786 10831,21774 10902,21753 10981,21731 11060,21694 11073,21680 11175,21571 11254,21457 11370,21320 11714,21130
@@ -3572,7 +3572,7 @@ Ruhlebener Str.: Asphalt	Q0 -2380,13195 -2338,13206 -2164,13191 -2051,13181 -201
 Stichstr.: Beton	Q0 -2051,13181 -2039,13276
 (Stichstr. - Charlottenburger Chaussee): Verbundsteinpflaster	Q1 -2039,13276 -2031,13310 -2047,13434
 Am Hain: Asphalt	Q0 -1337,13354 -1380,13126
-Murellenweg: Asphalt	Q0 -472,12961 -453,13012 -446,13035 -442,13058
+Rominter Allee: Asphalt	Q0 -472,12961 -453,13012 -446,13035 -442,13058
 (Stülpnagelstr. - Knobelsdorffstr.): Gehwegplatten	Q1 2188,11679 2197,11757
 Rahel-Hirsch-Weg: Gehwegplatten	Q1 8582,13355 8595,13375 8587,13436 8586,13440
 KGA Plötzensee: Verbundsteinpflaster, zweispurig	Q1 4957,15267 4624,15671 4444,15906 4390,15923
@@ -6692,7 +6692,7 @@ Hagenstr. (Karow): Kopfsteinpflaster	Q2 15249,23279 15176,23168 15037,22974 1495
 #: note: der Schotter ist allerdings "festgebacken", so dass er fast wie rauer Asphalt aussieht
 Lanker Str.: teilweise Asphalt, überwiegend unbefestigt	Q2+ 15347,23211 15387,23310 15428,23413 15475,23532 15527,23609
 Lanker Str.: Asphalt	Q0 15347,23211 15310,23085
-Lanker Str.: Asphalt	Q0 15262,23106 15141,22896 15050,22765
+Lanker Str.: Asphalt	Q0 15280,23097 15141,22896 15050,22765
 Grundackerweg: unbefestigte Straße	Q2 15310,23085 15229,22840
 Kreuzburger Str.: Asphalt	Q0 14545,23141 14501,22858
 Rybniker Str.: Asphalt	Q0 14597,22842 14482,22731
@@ -12466,6 +12466,7 @@ Würtzstr.: gutes Kopfsteinpflaster	Q1 11561,19149 11622,18964
 # 
 #: by: Stefan Warthmann:
 #: confirmed_by: srt (zumindest im nördlichen Abschnitt)
+#: confirmed_by: Stephan Kahnt
 Räuschstr.: Asphalt	Q0 3089,19869 3252,19658 3455,19389
 # 
 #: by: Michael (patgoody):
@@ -18062,7 +18063,7 @@ Tilburger Str.: guter Asphalt	Q0 13870,5436 13893,5374
 #: by: Andreas Manlik: vvv
 Kerkowstr.: guter Asphalt	Q0 14597,22842 14642,23072
 Kerkowstr.: schlechtes Kopfsteinpflaster	Q3 14642,23072 14726,23194 14865,23388
-Frundsbergstr.: Asphalt	Q0 15529,22981 15310,23085 15262,23106
+Frundsbergstr.: Asphalt	Q0 15529,22981 15310,23085 15280,23097
 #: by: ^^^
 # 
 #: by: Martin Müller:
@@ -21826,6 +21827,7 @@ Silzer Weg: Asphalt	Q0 5929,389 6130,449
 #: by: ^^^
 # 
 #: by: Stefan Klinkusch vvv
+(Strittweg - Straße 270): mäßige wassergebundene Decke	Q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: wassergebundene Decke	Q1 -7009,5211 -7174,5307
 Länderallee: Asphalt	Q0 1033,11754 929,11648 853,11573 743,11462 716,11418 702,11298 704,11273
 Eschenallee: Asphalt	Q0 1033,11754 1078,11895

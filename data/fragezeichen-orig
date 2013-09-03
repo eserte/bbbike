@@ -758,6 +758,7 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues 
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html
 #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Brücke)
 #: last_checked: 2013-08-19 vvv
 #: next_check: 2013-11-30 vvv
 #: osm_watch: way id="187902666" version="2"
@@ -1043,6 +1044,13 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX vmz-Eintrag relevant? NEW	Nestorstr. (Charlottenburg): Straße vollständig gesperrt, Baustelle (Ende 09/13) in beiden Richtungen zwischen Kurfürstendamm und Johann-Georg-Str., 02.09.2013 06:45 Uhr bis 30.09.2013 10:00 Uhr	IM_020246
+#: next_check: 2013-09-02
+Nestorstr.: Bauarbeiten?	? 3374,10201 3359,9968 3347,9793
+#: XXX vmz-Eintrag relevant? NEW	Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13) Richtung Berliner Allee zwischen Parkstr. und Berliner Allee, 02.09.2013 08:00 Uhr bis 15.09.2013 16:00 Uhr	IM_020230	
+#: next_check: 2013-09-02
+Rennbahnstr.: Bauarbeiten?	? 14235,17103 14341,17030 14510,16916 14559,16912
 # 
 Stadtpark Steglitz: evtl. befindet sich das Drängelgitter hier?	? 5709,4674 5734,4694
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
@@ -1821,6 +1829,7 @@ Grünstr.: Qualität?	? -9142,-2756 -9100,-2765 -9075,-2664
 #: note: Google+ADAC-Karte schreiben falsch ("Georg" statt "George")
 Heinrich-George-Str.: Qualität?	? -9075,-2664 -9054,-2632 -9013,-2614
 Emil-Jannings-Str.: Qualität?	? -9013,-2614 -8902,-2292 -8793,-2315
+#: XXX anonymous meint: Asphalt, Q2
 Kleine Str.: Qualität?	? -9206,-2461 -9254,-2605
 #: note: laut Postleitdaten nun mit Bindestrichen (früher ohne)
 Orenstein-&-Koppel-Str. (Potsdam): Qualität? Korrekte Schreibweise: mit oder ohne Bindestrich?	? -9110,-2651 -9052,-2510
@@ -3506,3 +3515,7 @@ Bertolt-Brecht-Str. (Ahrensfelde): Qualität?	? 21370,19480 21336,19412
 Gebrüder-Grimm-Str. (Ahrensfelde): Qualität?	? 21453,19438 21435,19406 21417,19377 21415,19356
 Erich-Kästner-Str. (Ahrensfelde): Qualität?	? 21435,19406 21388,19432
 Tucholskystr. (Ahrensfelde): Qualität?	? 21417,19377 21372,19397
+#: XXX nicht für Autos
+Fichtestr. (Ahrensfelde) - Ahrensfelder Chaussee: Qualität?	? 21113,19565 21101,19448 21289,19147 21322,19049
+Campus Buch: Straßennamen? Qualität?	? 17156,24786 17114,24771 17115,24738 16999,24735 16921,24608 16963,24578 16872,24432 16791,24482 16883,24623 16921,24608
+Schwanebecker Chaussee [Stichstraße]: Straßenname? Qualität?	? 17591,25405 17428,25235

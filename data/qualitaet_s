@@ -1783,7 +1783,7 @@ Dörbeckweg: asphaltiert	Q0 -6250,13396 -6425,13347
 Moritzstr.: Asphalt	Q0 -3637,14628 -3598,14587 -3481,14523
 Möthlower Str.: Asphalt	Q0 -7736,15460 -7664,15601 -7588,15656
 Möthlower Str.: Sand	Q2 -7588,15656 -7483,15690 -7457,15704
-Straße 270: Kopfsteinpflaster mit Sandbanketten	Q2 -5870,10847 -5035,11007
+Straße 270: Kopfsteinpflaster mit Sandbanketten	Q2 -5870,10847 -5312,10948 -5035,11007
 Straße 270: Feldweg, im westlichen Teil nur zweispurig	Q2 -5035,11007 -4853,11044
 Eschengraben: Asphalt	Q0 11778,17066 11783,17036 11831,16802 11776,16753 11720,16752 11621,16749
 Eschengraben: Beton	Q1 11755,17216 11778,17066
@@ -2105,7 +2105,7 @@ Wriezener Str.: Kopfsteinpflaster	Q2 9210,16638 9245,16758 9299,16889 9361,17039
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7763,16779 7745,16889
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7585,16865 7594,16805
 Indische Str.: Asphalt	Q0 7231,16418 7056,16587
-Frundsbergstr.: Kopfsteinpflaster	Q2 15262,23106 15176,23168 15021,23280 14865,23388 14761,23453
+Frundsbergstr.: Kopfsteinpflaster	Q2 15280,23097 15176,23168 15021,23280 14865,23388 14761,23453
 Nisbléstr.: überwiegend guter Asphalt	Q0 11870,21574 11838,21580 11764,21593 11653,21613 11425,21650 11408,21653 11304,21671 11228,21684 11200,21689 11145,21698 11112,21704 11060,21694
 La-Rochelle-Str.: asphaltiert	Q0 11173,22273 11347,22122 11364,22081 11304,21671
 (Am Nordgraben): unbefestigter, holpriger Weg, bei Regen große Pfützen	Q2 10228,21940 10336,21901 10414,21876 10488,21860 10565,21840 10633,21827 10709,21804 10789,21786 10831,21774 10902,21753 10981,21731 11060,21694 11073,21680 11175,21571 11254,21457 11370,21320 11714,21130
@@ -3117,7 +3117,7 @@ Ruhlebener Str.: Asphalt	Q0 -2380,13195 -2338,13206 -2164,13191 -2051,13181 -201
 Stichstr.: Beton	Q0 -2051,13181 -2039,13276
 (Stichstr. - Charlottenburger Chaussee): Verbundsteinpflaster	Q1 -2039,13276 -2031,13310 -2047,13434
 Am Hain: Asphalt	Q0 -1337,13354 -1380,13126
-Murellenweg: Asphalt	Q0 -472,12961 -453,13012 -446,13035 -442,13058
+Rominter Allee: Asphalt	Q0 -472,12961 -453,13012 -446,13035 -442,13058
 (Stülpnagelstr. - Knobelsdorffstr.): Gehwegplatten	Q1 2188,11679 2197,11757
 Rahel-Hirsch-Weg: Gehwegplatten	Q1 8582,13355 8595,13375 8587,13436 8586,13440
 KGA Plötzensee: Verbundsteinpflaster, zweispurig	Q1 4957,15267 4624,15671 4444,15906 4390,15923
@@ -6112,7 +6112,7 @@ Sandbergstr.: Kopfsteinpflaster	Q2 14438,23563 14382,23574 14316,23586
 Hagenstr. (Karow): Kopfsteinpflaster	Q2 15249,23279 15176,23168 15037,22974 14950,22853
 Lanker Str.: teilweise Asphalt, überwiegend unbefestigt	Q2 15347,23211 15387,23310 15428,23413 15475,23532 15527,23609
 Lanker Str.: Asphalt	Q0 15347,23211 15310,23085
-Lanker Str.: Asphalt	Q0 15262,23106 15141,22896 15050,22765
+Lanker Str.: Asphalt	Q0 15280,23097 15141,22896 15050,22765
 Grundackerweg: unbefestigte Straße	Q2 15310,23085 15229,22840
 Kreuzburger Str.: Asphalt	Q0 14545,23141 14501,22858
 Rybniker Str.: Asphalt	Q0 14597,22842 14482,22731
@@ -11900,7 +11900,7 @@ Leidener Str.: guter Asphalt	Q0 13756,5388 13870,5436 13954,5471
 Tilburger Str.: guter Asphalt	Q0 13870,5436 13893,5374
 Kerkowstr.: guter Asphalt	Q0 14597,22842 14642,23072
 Kerkowstr.: schlechtes Kopfsteinpflaster	Q3 14642,23072 14726,23194 14865,23388
-Frundsbergstr.: Asphalt	Q0 15529,22981 15310,23085 15262,23106
+Frundsbergstr.: Asphalt	Q0 15529,22981 15310,23085 15280,23097
 Hospitalstr.: guter Asphalt	Q0 -3650,15661 -3727,15695
 Agavensteig (Baumschulenweg): guter Beton	Q0 15587,4319 15716,4519 15774,4612 15908,4828 16083,5118
 Marmaraweg: mäßiger Beton	Q1 10348,3888 10355,4085 10363,4183 10368,4279
@@ -13120,6 +13120,7 @@ Menzer Weg: Beton	Q0 -1064,1696 -1054,1616
 Am Posseberg: guter Asphalt	Q0 12624,25570 12436,25580 12396,25478 12138,24989 12254,24857
 Silzer Weg: relativ glattes Pflaster	Q1 5688,312 5795,371 5867,412 5925,417
 Silzer Weg: Asphalt	Q0 5929,389 6130,449
+(Strittweg - Straße 270): mäßige wassergebundene Decke	Q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: wassergebundene Decke	Q1 -7009,5211 -7174,5307
 Länderallee: Asphalt	Q0 1033,11754 929,11648 853,11573 743,11462 716,11418 702,11298 704,11273
 Eschenallee: Asphalt	Q0 1033,11754 1078,11895

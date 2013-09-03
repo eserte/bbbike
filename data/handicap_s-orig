@@ -12,8 +12,8 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-08-30 vvv
-#: next_check: 2013-09-02 vvv
+#: last_checked: 2013-09-03 vvv
+#: next_check: 2013-09-14 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (früher)
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -543,9 +543,12 @@ Barsekowstr.: Fußgänger	q1 5336,4676 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5945,4828 6006,4852
 #: XXX_prog: für Anhänger q2
+#: XXX wurden hier auch die Bodenschwellen entfernt? vvv
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624
 Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655
 # REMOVED (hier ist nur eine einzige Bodenschwelle übrig geblieben) --- #: XXX_prog: für Anhänger evtl. q1 --- Dieffenbachstr.: Bodenschwellen, können gut umfahren werden	q0- 11346,9655 11541,9576
 Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
+#: XXX ^^^
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14076,10011
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
@@ -3274,6 +3277,8 @@ Bulgenbachweg: enge Straße	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840
 # 
 #: by: Stefan Klinkusch: vvv
+#: note: "... ist aber dennoch benutzbar"
+(Strittweg - Straße 270): teilweise durch hereinragende Pflanzen wie Brennnesseln eingeengt	q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: schmaler Rad- und Gehweg (1,5m-2m)	q1 -7009,5211 -7174,5307
 Scharfe Lanke: enge Straße	q0- -4251,11112 -4254,10810 -4230,10679 -4323,10570 -4387,10496 -4445,10379
 (Schiffahrtsufer - Betckestr.): einige Fußgänger	q1 -3441,13270 -3352,13135 -3339,13106 -3203,12895 -3205,12816 -3180,12719 -3142,12615

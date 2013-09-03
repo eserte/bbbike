@@ -6290,7 +6290,7 @@ EOF
        text  => 'L 863 B 5 Wustermark-L 86 Ketzin OD Wernitz Straﬂen- u. Radwegbau Vollsperrung 16.10.2006-15.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -22149,16586 -22959,16242 -24275,15746
+userdel	q4::inwork -22149,16586 -22959,16242 -23588,16023 -23724,16032 -23863,15938 -24005,15824 -24275,15746
 EOF
      },
      { from  => 1161295200, # 2006-10-20 00:00
@@ -20834,6 +20834,7 @@ EOF
 #: next_check: 2013-12-04
 #: XXX danach bessere Straﬂenqualit‰t? Radstreifen?
 #: osm_watch: way id="24930947" version="20"
+#: source_id: IM_020259 (zus‰tzlich)
 userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 EOF
      },

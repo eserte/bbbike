@@ -1255,7 +1255,7 @@ Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
-#: next_check: 2013-09-02
+#: next_check: 2013-09-14
 #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Niemannstr.	1s:q4 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
@@ -2459,10 +2459,12 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf vvv
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf vvv
+#: prio: #A vvv
 #: next_check: 2013-09-05 vvv
 Sperrung am zukünftigen Landtag: Bereich vor der Straßenbahnhaltestelle Richtung Norden gesperrt (8. April 2013 - 6. September 2013)	1:inwork -12758,-1654 -12772,-1577
 Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)	1::inwork -12659,-1700 -12730,-1681 -12758,-1654
 #: next_check ^^^
+#: prio ^^^
 #: by ^^^
 #: by ^^^
 # 

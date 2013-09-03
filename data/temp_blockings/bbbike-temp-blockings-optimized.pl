@@ -2341,16 +2341,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1378058400,
-         'text' => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Luxemburger Str. gesperrt, 30.08.2013 10:00 - 01.09.2013 20:00',
-         'from' => 1377763200,
-         'id' => 2039,
-         'data' => 'userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
@@ -2390,7 +2381,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2509,16 +2500,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1378065600,
-         'text' => 'Turmstraße (Moabit): Veranstaltung (Turmstraßenfest), Straße zwischen Stromstr. und Waldstr. vollständig gesperrt (30.08.2013 bis 01.09.2012)',
-         'from' => 1377777600,
-         'id' => 2129,
-         'data' => 'userdel	2::temp 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2921,6 +2903,7 @@ userdel	2::temp 8119,12414 8055,12186
 #: next_check: 2013-12-04
 #: XXX danach bessere Straßenqualität? Radstreifen?
 #: osm_watch: way id="24930947" version="20"
+#: source_id: IM_020259 (zusätzlich)
 userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
 ',
          'type' => 'handicap'
@@ -3080,27 +3063,8 @@ userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
-         'data' => 'userdel	2::temp 14161,11930 14285,12190
-',
-         'periodic' => 1,
-         'until' => 1377986399,
-         'from' => 1377864000,
-         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am Samstag, 31. August 2013, ab 14:00 Uhr',
-         'type' => 'gesperrt',
-         'id' => 2433
-       },
-       {
-         'source_id' => 'http://www.xhain.info/termine/reichefest.htm',
-         'until' => 1377979200,
-         'text' => 'Reichenberger Kiezfest (Reichefest) in der Reichenberger Straße zwischen Lausitzer und Ohlauer Straße, Straße könnte gesperrt sein, am Samstag, 31. August 2013, 15:00 - 22:00 Uhr',
-         'from' => 1377867600,
-         'id' => 2434,
-         'data' => 'userdel	2::temp 12048,10097 12229,10014
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
          'until' => 1398895200,
@@ -3306,16 +3270,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1378072799,
-         'text' => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, bis 1. September 2013',
-         'from' => 1377324534,
-         'id' => 2473,
-         'data' => '#: note: außerhalb der Bühnenprogrammzeiten keine Behinderungen
-userdel	q3::temp 8652,9870 8571,9896
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1380172611,
          'text' => 'Britzer Park: Bauarbeiten, Zufahrt zur Gutschmidtstr. komplett gesperrt',
