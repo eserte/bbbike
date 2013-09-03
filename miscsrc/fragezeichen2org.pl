@@ -27,7 +27,7 @@ use Getopt::Long;
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
 
-use BBBikeUtil qw(int_round);
+use BBBikeUtil qw(int_round bbbike_root);
 use Strassen::Util ();
 use StrassenNextCheck;
 
@@ -38,14 +38,16 @@ my $dist_dbfile;
 my $centerc;
 my $center2c;
 my $plan_dir;
+my $with_searches_weight;
 GetOptions(
 	   "with-dist!" => \$with_dist,
 	   "dist-dbfile=s" => \$dist_dbfile,
 	   "centerc=s" => \$centerc,
 	   "center2c=s" => \$center2c,
 	   "plan-dir=s" => \$plan_dir,
+	   "with-searches-weight!" => \$with_searches_weight,
 	  )
-    or die "usage: $0 [--nowith-dist] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] bbdfile ...";
+    or die "usage: $0 [--nowith-dist] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight] bbdfile ...";
 
 if ($with_dist && !$centerc) {
     my $config_file = "$ENV{HOME}/.bbbike/config";
@@ -95,6 +97,17 @@ if ($plan_dir) {
     $planned_points = $s->as_reverse_hash;
 }
 
+my $searches_weight_net;
+if ($with_searches_weight) {
+    require File::Glob;
+    require Strassen::StrassenNetz;
+    require Strassen::Core;
+    my($latest_weighted_bbd) = reverse File::Glob::bsd_glob(bbbike_root . "/tmp/weighted/20*weighted*.bbd");
+    my $s = Strassen->new($latest_weighted_bbd);
+    $searches_weight_net = StrassenNetz->new($s);
+    $searches_weight_net->make_net;
+}
+
 my @files = @ARGV
     or die "Please specify bbd file(s)";
 
@@ -136,6 +149,27 @@ for my $file (@files) {
 			     undef $prio;
 			 }
 		     }
+
+		     my $searches;
+		     if ($searches_weight_net) {
+			 my $max_searches = 0;
+			 for my $c_i (1 .. $#{ $r->[Strassen::COORDS] }) {
+			     my($p1, $p2) = @{ $r->[Strassen::COORDS] }[$c_i-1, $c_i];
+			     my $found_rec_hin   = $searches_weight_net->get_street_record($p1, $p2, -obeydir => 1);
+			     my $found_rec_rueck = $searches_weight_net->get_street_record($p2, $p1, -obeydir => 1);
+			     my $this_searches = 0;
+			     for ($found_rec_hin, $found_rec_rueck) {
+				 if ($_ && $_->[Strassen::NAME] =~ m{^(\d+)}) {
+				     $this_searches += $1;
+				 }
+			     }
+			     if ($this_searches > $max_searches) {
+				 $max_searches = $this_searches;
+			     }
+			 }
+			 $searches = $max_searches;
+		     }
+
 		     my @planned_route_files;
 		     if ($planned_points) {
 			 my %planned_route_files;
@@ -148,8 +182,12 @@ for my $file (@files) {
 			 }
 			 @planned_route_files = sort keys %planned_route_files;
 		     }
+
 		     my $todo_state = @planned_route_files ? 'PLANNED' : 'TODO';
 		     my $headline = "** $todo_state <$date $wd> " . ($prio ? "[$prio] " : "") . $subject;
+		     if (defined $searches) {
+			 $headline .= " ($searches)";
+		     }
 		     if ($dist_tag) {
 			 if (length($headline) + 1 + length($dist_tag) < ORG_MODE_HEADLINE_LENGTH) {
 			     $headline .= " " x (ORG_MODE_HEADLINE_LENGTH-length($headline)-length($dist_tag));
@@ -169,7 +207,7 @@ EOF
 			     $body .= "   * [[shell:bbbikeclient $planned_route_file]]\n";
 			 }
 		     }
-		     push @records, { date => $date, body => $body, dist => $any_dist };
+		     push @records, { date => $date, body => $body, dist => $any_dist, (defined $searches ? (searches => $searches) : ()) };
 		 }
 	     } else {
 		 warn "ERROR: Cannot parse date '$dir->{_nextcheck_date}[0]' (file $file), skipping...\n";
@@ -189,15 +227,22 @@ EOF
 
 my $today = strftime "%Y-%m-%d", localtime;
 
-my @expired_records;
+my @expired_sort_by_dist_records;
 if ($centerc) {
-    @expired_records = sort {
+    @expired_sort_by_dist_records = sort {
 	my $cmp = 0;
 	if (defined $a->{dist} && defined $b->{dist}) {
 	    $cmp = $a->{dist} <=> $b->{dist};
 	}
 	return $cmp if $cmp != 0;
 	return $b->{date} cmp $a->{date};
+    } grep { $_->{date} le $today } @records;
+}
+
+my @expired_searches_weight_records;
+if ($with_searches_weight) {
+    @expired_searches_weight_records = sort {
+	($b->{searches}||0) <=> ($a->{searches}||0);
     } grep { $_->{date} le $today } @records;
 }
 
@@ -229,9 +274,16 @@ for my $record (@records) {
     print $record->{body};
 }
 
-if (@expired_records) {
+if (@expired_searches_weight_records) {
+    print "* expired records, sort by number of route searches\n";
+    for my $expired_searches_weight_record (@expired_searches_weight_records) {
+	print $expired_searches_weight_record->{body};
+    }
+}
+
+if (@expired_sort_by_dist_records) {
     print "* expired records, sort by dist\n";
-    for my $expired_record (@expired_records) {
+    for my $expired_record (@expired_sort_by_dist_records) {
 	print $expired_record->{body};
     }
 }
@@ -356,6 +408,12 @@ coordinate to the fragezeichen record to the 2nd coordinate.
 Note that the <center2c> config option needs to be set manually in
 F<~/.bbbike/config>; it's not possible to do this with the option
 editor of the Perl/Tk app.
+
+=item C<--with-searches-weight>
+
+Create another section with expired records, sorted by number of route
+searches. This requires that a "weighted" bbd is created as described
+in L<weight_bbd/EXAMPLES>.
 
 =back
 
