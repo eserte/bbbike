@@ -72,7 +72,7 @@ use vars qw($VERSION $VERBOSE
 	    $ampeln $qualitaet_net $handicap_net
 	    $strcat_net $radwege_strcat_net $radwege_net $routen_net $comments_net
 	    $green_net $unlit_streets_net
-	    $crossings $kr %cached_plz $net
+	    $crossings $kr $culdesac_cached %cached_plz $net
 	    $sperre_tragen $sperre_narrowpassage
 	    $overview_map $city
 	    $use_umland $use_umland_jwd $use_special_destinations
@@ -2950,17 +2950,28 @@ sub make_crossing_choose_html {
 	} else {
 	    $used{$_}++;
 	}
+	my @kreuzung;
 	if (exists $crossings->{$_}) {
-	    my @kreuzung;
 	    foreach (@{$crossings->{$_}}) {
 		if ($_ ne $strname) {
 		    push(@kreuzung, $_);
 		}
 	    }
-	    if (@kreuzung == 0) {
-		# May happen if all street names at the crossing are the same
-		next;
+	}
+	if (@kreuzung == 0) {
+	    # May happen if all street names at the crossing are the same
+	    # or if there's simply no crossing. But maybe a culdesac?
+	    my $culdesac = get_culdesac_hash();
+	    if ($culdesac && $culdesac->{$_}) {
+		push @kreuzung, $culdesac->{$_};
 	    }
+	}
+	if (@kreuzung == 0) {
+	    # Still nothing, ignore this coord
+	    next;
+	}
+
+	{
 	    for (@kreuzung) {
 		if (m{^\s*$}) {
 		    $_ = '(' . M("Straße ohne Namen") . ')';
@@ -6184,6 +6195,20 @@ sub all_crossings {
 	$crossings = $str->all_crossings(RetType => 'hash',
 					 UseCache => 1);
     }
+}
+
+sub get_culdesac_hash {
+    # $culdesac_cached: defined but false: no culdesac file available
+    if (!defined $culdesac_cached) {
+	eval {
+	    $culdesac_cached = Strassen->new('culdesac')->get_hashref;
+	};
+	if (!$culdesac_cached || $@) {
+	    warn "WARN: culdesac data could not be loaded: $@";
+	    $culdesac_cached = 0;
+	}
+    }
+    $culdesac_cached;
 }
 
 sub new_kreuzungen {
