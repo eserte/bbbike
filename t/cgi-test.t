@@ -51,7 +51,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 116 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 119 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir"),
 	       )) {
@@ -151,6 +151,15 @@ SKIP: {
 	    on_crossing_pref_page($resp2);
 	}
     }
+}
+
+{
+    my $resp = bbbike_cgi_geocode +{start => 'Kleine Parkstr.',
+				    ziel => 'Dudenstr.',
+				   }, 'A street with culdesac';
+    on_crossing_pref_page($resp);
+    my $content = $resp->decoded_content;
+    like_html($content, qr{Sackgassenende, Gartenbauamt}, 'Seen culdesac');
 }
 
 {
