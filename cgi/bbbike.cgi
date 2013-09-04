@@ -2944,17 +2944,17 @@ sub make_crossing_choose_html {
     my $i = 0;
     my %used;
     my $ecke_printed = 0;
-    foreach (@$coords_ref) {
-	if ($used{$_}) {
+    for my $c (@$coords_ref) {
+	if ($used{$c}) {
 	    next;
 	} else {
-	    $used{$_}++;
+	    $used{$c}++;
 	}
 	my @kreuzung;
-	if (exists $crossings->{$_}) {
-	    foreach (@{$crossings->{$_}}) {
-		if ($_ ne $strname) {
-		    push(@kreuzung, $_);
+	if (exists $crossings->{$c}) {
+	    for my $crossing (@{$crossings->{$c}}) {
+		if ($crossing ne $strname) {
+		    push(@kreuzung, $crossing);
 		}
 	    }
 	}
@@ -2962,8 +2962,8 @@ sub make_crossing_choose_html {
 	    # May happen if all street names at the crossing are the same
 	    # or if there's simply no crossing. But maybe a culdesac?
 	    my $culdesac = get_culdesac_hash();
-	    if ($culdesac && $culdesac->{$_}) {
-		push @kreuzung, $culdesac->{$_};
+	    if ($culdesac && $culdesac->{$c}) {
+		push @kreuzung, $culdesac->{$c};
 	    }
 	}
 	if (@kreuzung == 0) {
@@ -2972,9 +2972,9 @@ sub make_crossing_choose_html {
 	}
 
 	{
-	    for (@kreuzung) {
-		if (m{^\s*$}) {
-		    $_ = '(' . M("Straﬂe ohne Namen") . ')';
+	    for my $kreuzung (@kreuzung) {
+		if ($kreuzung =~ m{^\s*$}) {
+		    $kreuzung = '(' . M("Straﬂe ohne Namen") . ')';
 		}
 	    }
 	    {
@@ -2996,12 +2996,12 @@ sub make_crossing_choose_html {
 	    }
 
 	    if ($use_select) {
-		$html .= "<option value=\"$_\">";
+		$html .= "<option value=\"$c\">";
 	    } else {
 		$html .= "<label>";
 		$html .=
 		    "<input type=radio name=" . $type . "c " .
-			"value=\"$_\"";
+			"value=\"$c\"";
 		if ($i++ == 0) {
 		    $html .= " checked";
 		}
