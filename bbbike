@@ -7890,7 +7890,7 @@ sub std_p_binding {
 		 $layer_post_enter_command{$tag}->()
 		     if exists $layer_post_enter_command{$tag};
 	     });
-    unless (/^lsa-/) { # lsa-fg/bg: leavepoint wird unten gesetzt
+    unless ($tag =~ /^lsa-/) { # lsa-fg/bg: leavepoint wird unten gesetzt
 	$c->bind($tag, '<Any-Leave>' => sub {
 		     $layer_pre_leave_command{$tag}->()
 			 if exists $layer_pre_leave_command{$tag};
