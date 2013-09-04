@@ -157,7 +157,7 @@ Seefelder Str.: Schranken, für Radler gut passierbar	CS 17341,16136 17344,16081
 #: by: Daniel Weber [AM] vvv
 # REMOVED (mittlerweile ein gemeinsamer Geh- und Radweg) --- (Malteserstr. - Hanielweg): Geschützte Grünanlage, Radfahren verboten	CS 7451,1818 7534,1818 7562,1796
 (Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6762,1226 6702,1197 6700,1184
-(Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
+(Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6409,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5578,936 5540,919 5358,822
@@ -167,7 +167,7 @@ Seefelder Str.: Schranken, für Radler gut passierbar	CS 17341,16136 17344,16081
 (Hildburghauser Str. - Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5682,767 5675,764 5615,735 5590,719
 #: by: ^^^
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html
-(Parkweg Schloßpark Lichterfelde): Radfahren erlaubt	CS 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4921,3593
+(Parkweg Schloßpark Lichterfelde): Radfahren erlaubt	CS 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4910,3599
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html
 (Parkweg Bäkepark): Radfahren erlaubt	CS 5337,4192 5320,4217 5246,4240 5129,4262 5100,4285 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
 #: by: Ben [AM] vvv
@@ -1200,6 +1200,10 @@ Zugang zum Bad	culdesac_pseudo 7306,13418
 	culdesac 25089,10697
 	culdesac 25382,10539
 	culdesac_pseudo 8574,5580
+	culdesac_pseudo 6150,4340
+#: note: Fußgänger können weiter gehen, es folgt ein Weg mit vier Stufen
+	culdesac_pseudo 3767,2367
+	culdesac_pseudo 5420,511
 #: ignore ^^^
 ######################################################################
 # busroute
@@ -1370,7 +1374,7 @@ Bus 284, Bus 380	busroute_N 5452,1940 5474,1940 5491,1955 5489,1981 5434,2122 54
 Bus 284	busroute_N 5204,1057 5342,845 5358,822 5514,580 5584,475 5486,461 5448,455 5061,409 4948,562
 Bus 186	busroute_N 4542,1188 4605,1089 4768,840 4875,677 4948,562
 Bus 186, Bus 284	busroute_N 4948,562 4748,453 4505,465 4279,459
-Bus M85	busroute_N 4136,505 4122,421 4068,406 3912,362 3898,466 3834,502 3647,739
+Bus M85	busroute_N 4136,505 4122,421 4068,406 3912,362 3898,466 3834,502 3655,752
 Bus M85	busroute_N 7873,12923 7872,13022 7941,13014 7937,13109 7867,13106 7872,13022
 Bus M77, Bus M82	busroute_N 6977,870 6941,690 6937,671 6959,509 7007,333 7014,203 6982,88
 Bus 283	busroute_N 7234,2548 7324,2559 7517,2574 7602,2522 7667,2501 7704,2482 7777,2447 7899,2391 7923,2319 7987,2337 7983,2348 7983,2348 7899,2391
@@ -1820,7 +1824,7 @@ Distelweg: Privatstraße	CS 8587,21218 8484,21282
 Quantzstr. - Potsdamer Chaussee: beim Linksabbiegen kann man nicht auf dem Radweg hinter der Autobahnauffahrt gelangen; dies ist erst später möglich	CP; -3044,1578 -3113,1692 -3184,1643
 Golfweg: Privatstraße, nur für Mitglieder	CS -7975,785 -8136,700
 #: by: Kay Leonhardt: vvv
-Eduard-Spranger-Promenade: nicht ausgeschildert	CS 4284,2626 4655,3060 4862,3363 4951,3516
+Eduard-Spranger-Promenade: nicht ausgeschildert	CS 4317,2638 4655,3060 4862,3363 4951,3516
 #: note: "Zufahrt verboten (aber kein Schild nach StVO)"
 Kirchmeisterweg: Privatstraße	CS 4980,1870 4958,1844 5007,1718 5035,1723
 #: by: ^^^

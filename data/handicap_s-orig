@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-09-03 vvv
+#: last_checked: 2013-09-04 vvv
 #: next_check: 2013-09-14 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (früher)
@@ -219,12 +219,12 @@ Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,104
 #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden
 #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf
 #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/
-#: last_checked: 2013-07-06
+#: last_checked: 2013-09-04
 #: next_check: 2013-11-30
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 # 
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2013-08-30
+#: last_checked: 2013-09-04
 #: next_check: 2014-09-01
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
@@ -299,7 +299,12 @@ Görlitzer Park: Fußgänger	q2 12761,10195 12769,10211 12774,10222
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12506,10244 12384,10368 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911,10156
-Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
+Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
+# später wieder herstellen: Görlitzer Park, Rondell: Fußgänger	q2 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
+#: XXX wahrscheinlich wird hier auch asphaltiert
+#: last_checked: 2013-09-04
+#: next_check: 2013-09-14
+Görlitzer Park, Rondell: Fußgänger, Bauarbeiten	q4::inwork 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12516,10202 12543,10223
 Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12611,10299
@@ -527,7 +532,7 @@ Am Rummelsburger See: teilweise enge Kurven, Fußgänger an schönen Tagen	q2 15453
 Am Rummelsburger See: Fußgänger an schönen Tagen	q1 15931,9846 16002,9787 16049,9749 16123,9692 16120,9653 16182,9591 16268,9670 16347,9594
 # REMOVED (ist jetzt breiter) --- Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20939,2413 20810,2398
 # REMOVED (nun komplett gesperrt) --- Vorfahrt Reichstagsgebäude: Fußgänger	q4 8400,12417 8399,12616
-Am Teltowkanal: kurverreich und recht eng	q1 3751,1402 3695,1308 3619,1207 3458,1063 3366,1007
+Am Teltowkanal: kurverreich und recht eng	q1 3764,1385 3695,1308 3619,1207 3419,1061 3375,1026 3366,1007
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 Fregestr. zur Feuerbachstr.: Gehweg, Fußgänger	q2 5629,6407 5582,6360
 Weisestr.: Bordsteine	q3 11767,8330 11770,8292
@@ -542,13 +547,11 @@ Barsekowstr.: Fußgänger	q1 5336,4676 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5582,4675 5555,4743
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5945,4828 6006,4852
-#: XXX_prog: für Anhänger q2
-#: XXX wurden hier auch die Bodenschwellen entfernt? vvv
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624
-Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655
-# REMOVED (hier ist nur eine einzige Bodenschwelle übrig geblieben) --- #: XXX_prog: für Anhänger evtl. q1 --- Dieffenbachstr.: Bodenschwellen, können gut umfahren werden	q0- 11346,9655 11541,9576
-Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
-#: XXX ^^^
+#: XXX_prog: für Anhänger q1
+#: note: nur zwei Schwellen sind übrig geblieben, können mit Normalrad umfahren werden
+Dieffenbachstr.: Bodenschwellen	q0- 11141,9732 11346,9655
+# REMOVED (hier ist nur eine einzige Bodenschwelle übrig geblieben) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624 --- #: XXX_prog: für Anhänger evtl. q1 --- Dieffenbachstr.: Bodenschwellen, können gut umfahren werden	q0- 11346,9655 11541,9576
+# REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14076,10011
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
@@ -1584,8 +1587,8 @@ Müggelstr., Hausdurchfahrt: einige Fußgänger	q1 14837,11706 14856,11740
 (Richterstr. - Rathausstr.): Fußgänger	q1- 9277,3993 9294,3921 9217,3906 9117,3898 9021,3878
 (Upstallweg - Richterstr.): Fußgänger	q1- 9264,3874 9244,3872 9226,3870 9217,3906
 Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fußgänger	q1 6534,1702 6673,1748 6844,1813
-(Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fußgänger	q1 6768,2143 6722,2096 6692,2024 6534,1702 6526,1688
-(Seydlitzstr., Verlängerung): einige Fußgänger	q1 6658,2079 6692,2024
+(Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fußgänger	q1 6768,2143 6722,2096 6695,2037 6534,1702 6526,1688
+(Seydlitzstr., Verlängerung): einige Fußgänger	q1 6597,2157 6695,2037
 (Hospitalgrabenpark): Fußgänger, Radfahren offiziell verboten	q4 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
 (Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17289,14195
 (Genslerstr. - Landsberger Allee): Fußgänger	q2 16669,14438 16665,14420 16632,14390
@@ -1741,8 +1744,12 @@ Hohenseeweg: nur für Fußgänger erlaubt, Bordstein	q4 23152,11065 22972,11066
 #: XXX_prog BS an beiden Seiten, sonst q1 oder so
 Totilastr.: Bordsteine, Fußgänger	q4 8574,5580 8610,5579
 #: XXX_prog BS an der Gersdorfstr., ansonsten q1
-Gersdorfstr. - Wulfila-Ufer: Bordstein, einige Fußgänger	q2 8249,4769 8184,4716
+Gersdorfstr. - Wulfila-Ufer: Bordstein, einige Fußgänger	q2 8255,4791 8184,4716
 (Brentanostr. - Breitenbachplatz): einige Fußgänger	q1 4058,6602 4034,6642
+(Rewe-Parkplatz): Supermarkt-Parkplatz	q2 3746,2108 3723,2118 3726,2209
+#: XXX_prog BS nur am Wendehammer, ansonsten q1
+Geitnerweg: Bordstein, einige Fußgänger	q2 5420,511 5448,455
+Seydlitzstr.: einige Fußgänger	q1 6511,2284 6459,2364
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2305,7 +2312,7 @@ Seefelder Str. (Fußweg): Fußgänger, schmal	q2 17274,16177 17371,16194 17383,1619
 (Parkweg Trippsteinstr. - Sondershauser Str.): Fußgänger, Bordsteine	q1- 6762,1226 6702,1197 6700,1184
 #: XXX_prog: Bordsteine an jeder Kreuzung
 #: corrected_by: srt (added Bordsteine)
-(Parkweg Trippsteinstr. - Sondershauser Str.): Fußgänger, Bordsteine	q2 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6406,1218
+(Parkweg Trippsteinstr. - Sondershauser Str.): Fußgänger, Bordsteine	q2 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6409,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Fußgänger	q1 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
 (Gräfentaler Str. - Georgenstr.): Fußgänger	q1 6189,1423 6132,1395
 #: XXX_prog: Bordsteine
@@ -2336,7 +2343,7 @@ Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5242,10918 5264,10921 5348,10960 5
 (Parkweg Bäkepark): Fußgänger	q1 5337,4192 5320,4217 5246,4240 5129,4262 5100,4285 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
 (Parkweg Bäkepark): Fußgänger	q1 5225,4095 5131,4207 5068,4259
 (Parkweg Bäkepark): Fußgänger	q1 5282,4145 5131,4207
-(Parkweg Schloßpark Lichterfelde): Fußgänger, Kinder	q2 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4921,3593
+(Parkweg Schloßpark Lichterfelde): Fußgänger, Kinder	q2 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4910,3599
 (Oberlinstr. - Wolfensteindamm): Fußgänger	q1 4732,4939 4692,4997
 (Gehweg Gélieustr. - Wolfensteindamm): Fußgänger	q1 4725,4876 4675,4983
 (Krahmerstr. - Stockweg): Queren des Hindenburgdamms unübersichtlich, starker Autoverkehr	q4 4564,3457 4523,3482
@@ -2367,7 +2374,8 @@ Trützschlerstr.: enge Straße	q1 17471,4570 17612,4460 17745,4351
 #: corrected_by: Roland Mohrbacher (added "hohe Bordsteinkanten", deshalb q3 -> q4)
 (Paster-Behrens-Str. - Hüsung): Fußgänger, hohe Bordsteinkanten	q4 13394,4735 13397,4762
 #: by: clara wronski:
-Stanzer Zeile: enge Straße	q1 6180,376 6130,449 6112,547 6089,643 6066,821 6067,865 6080,1011 6106,1133
+#: corrected_by: srt/policy (q1 -> q0-)
+Stanzer Zeile: enge Straße	q0- 6180,376 6130,449 6112,547 6089,643 6066,821 6067,865 6080,1011 6106,1133
 #: by: rjoop (Foto):
 (Uferweg an der Havel): enge Brücke	q1 -2413,18770 -2434,18832 -2460,18918
 #: by: Jörg Schulze:
@@ -2560,7 +2568,7 @@ Sendener Weg: enge Straße	q0- 964,18321 1040,18283 1178,18223 1221,18332 1281,18
 Gilgenburger Str.: enge Straße	q1 24387,5672 24434,5645 24549,5685 24666,5726
 # 
 #: by: Steffi (silver midi):
-Blochmannstr.: enge Straße	q1 5097,988 5036,949 4986,959 4925,961 4862,975 4788,1023 4702,1147 4634,1245
+Blochmannstr.: enge Straße	q1 5097,988 5051,959 5036,949 4986,959 4925,961 4862,975 4788,1023 4702,1147 4634,1245
 #: by: blasz
 Schenkestr.: enge Straße	q1 17961,8312 17794,8429
 #: by: anonymous
@@ -2961,7 +2969,7 @@ Gerstenweg: enge Straße	q0- 21262,13517 21214,13126 21168,12794 21101,12661 2105
 #: by: Katja Frenzel:
 Genfer Weg: Fußgänger	q1 2995,2119 3150,2113
 #: by anonymous:
-Renatenweg: enge Straße	q1 6368,2851 6376,2809 6423,2774 6463,2724
+Renatenweg: enge Straße	q1 6372,2856 6376,2809 6423,2774 6463,2724
 #: by: Tina Zimmer:
 #: corrected_by: srt/policy (q4 -> q2)
 Renatenweg: Fußgänger	q2 6463,2724 6529,2642
@@ -3178,7 +3186,7 @@ Parkanlage: einige Fußgänger	q1 13298,20917 13289,21001
 Hermesweg: einige Fußgänger	q1 6116,4707 6072,4606
 #: note: "Auf beiden Einfahrten stehen aber Schilder, dass Radfahren verboten ist."
 Reginenweg: Radfahren verboten, ggfs. schieben	q4 6484,3292 6482,3327 6431,3417 6426,3425
-Ruthstr.: Fußweg	q2 6330,3005 6320,3022
+Ruthstr.: Fußweg	q2 6332,3007 6320,3022
 Brigittenstr.: Fußweg	q2 6208,2954 6226,2936
 #: by: ^^^
 #: by: Rudolf Kionke:
@@ -3262,7 +3270,7 @@ Frommpromenade: enge Straße	q0- 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 # 
 #: by: Kay Leonhardt:
-Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4284,2626 4655,3060 4862,3363 4951,3516
+Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4317,2638 4655,3060 4862,3363 4951,3516
 # 
 #: by: Karsten Denkler vvv
 #: corrected_by: srt (q1 -> q0-)

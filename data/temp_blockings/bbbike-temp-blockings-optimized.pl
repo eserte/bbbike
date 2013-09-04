@@ -2387,7 +2387,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10598,8270 10729,8152
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	2::night 10384,8628 10360,8521 10298,8245
-(Rundkurs auf dem Flughafen Tempelhof)	2::night 11460,7802 11470,7744 11543,7369 11593,7314 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
+(Rundkurs auf dem Flughafen Tempelhof)	2::night 11460,7802 11470,7744 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10575,8218
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::night 9525,7558 9431,7425 9386,7326 9300,7312 9302,7294 9242,7286
@@ -2395,7 +2395,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
 (Eingang Peter-Strasser-Weg)	2::night 9281,7795 9240,7811
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg)	2::night 9362,7616 9281,7651
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	2::night 9562,7796 9372,7798 9281,7795
-(Südliche Landebahn)	2::night 9461,7190 9509,7195 9677,7206 11332,7305 11518,7314 11593,7314
+(Südliche Landebahn)	2::night 9461,7190 9509,7195 9677,7206 11332,7305 11518,7314 11555,7314 11593,7314
 (Südliche Landebahn - Rundkurs)	2::night 11332,7305 11438,7371 11460,7447
 (Nördliche Landebahn)	2::night 9362,7616 9522,7624 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781 11460,7802
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::night 11460,7802 11439,7894
@@ -2410,6 +2410,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
 (Flughafen Tempelhof - Eingang Oderstr.)	2::night 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
 (Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040 10037,8269
+(Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
 '
        },
        undef,
@@ -3126,12 +3127,15 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
        undef,
        {
          'until' => undef,
-         'text' => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
+         'text' => 'Innstr./Wildenbruchplatz: Bauarbeiten, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2452,
-         'data' => '#: last_checked: 2013-08-08
-#: check_frequency: 30d
-userdel	q4::inwork 13301,8606 13262,8554 13217,8493
+         'data' => '#: last_checked: 2013-09-04 vvv
+#: check_frequency: 60d vvv
+	q4::inwork 13301,8606 13314,8624 13366,8694
+	q4::inwork 13314,8624 13218,8693
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'type' => 'handicap'
        },
@@ -3317,7 +3321,7 @@ userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353
        {
          'until' => 1379109599,
          'text' => 'Totilastr.: Bauarbeiten zwischen Wittekindstr. und Alboinstr., Fahrbahn gesperrt, voraussichtlich in den ersten September-Wochen',
-         'from' => 1378332000,
+         'from' => 1378245600,
          'id' => 2478,
          'data' => 'userdel	q4::inwork 8374,5598 8276,5601 8176,5610
 ',

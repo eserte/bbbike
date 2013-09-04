@@ -1240,7 +1240,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4879,5017
 	X 4515,4760
 	X 4551,4042
-	X 4409,3173
+	X 4411,3180
 	X 4164,2717
 	X 4011,2942
 	X 2638,2843
@@ -1620,7 +1620,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6914,3093
 	X 7183,3570
 	F 7104,3416
-	X 4343,2607
+	X 4348,2619
 	X 3456,2835
 	X 3507,3635
 	X 1080,1637
@@ -1810,10 +1810,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 15272,10790
 	F 11270,13412
 	X 14170,10675
-#: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen?
-#: last_checked: 2013-08-25
-#: next_check: 2013-09-02
-	F 14153,6795
+# REMOVED (abgeschafft, seit Verschwenkung der Autobahnausfahrt) --- #: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02 ---	F 14153,6795
 #: by: Andreas Mühlhausen: vvv
 	X 9418,11804
 	F 14619,16672
@@ -1919,6 +1916,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X -6675,12632
 	F -1389,15285
 	X -1485,15463
+#: note: Anforderungsampel für Fußgängerüberweg über den Sachsendamm, wahrscheinlich Kontaktschleifen an der Lotte-Laserstein-Str.
 	X 7696,7562
 	X 12588,6337
 	X 12597,6293
@@ -2510,6 +2508,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 9447,5641
 #: note: Anforderungsampel
 	F 5058,8012
+#: XXX_prog die Ampelanlage umfasst auch die Einmündung Ritterstr. - sollte aber als eine Ampel gelten!
+	X 4832,2975
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

@@ -210,7 +210,7 @@ Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18737 7003,18715
 Lauterstr.	1s 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5314,7217
-Stolbergstr.	1 8850,6421 8834,6639
+Stolbergstr.	1 8850,6421 8848,6642
 Richnowstr.	1 8953,6492 8850,6421
 Menzelstr.	1 6185,6469 6155,6722
 Cranachstr.	1 6303,6736 6324,6480 6338,6312
@@ -275,7 +275,7 @@ Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
 Siegfried-Aufhäuser-Platz	1 13952,7497 13941,7522 13953,7548 13980,7548
 Saltykowstr.	1 12726,7887 12865,7923
 (Drorystr. - Braunschweiger Str., Schulhof)	2 13518,7477 13601,7366
-Barbarastr.	1s 6451,3034 6371,2955 6320,2909 6357,2863 6368,2851
+Barbarastr.	1s 6456,3038 6372,2959 6329,2916 6359,2875 6372,2856
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
 Crusemarkstr.	1 10825,18634 10712,18975
 Kavalierstr.	1 10625,18831 10721,18575
@@ -299,7 +299,7 @@ Prießnitzstr.	1 11549,19258 11407,19186 11351,19169
 Klaustaler Str.	1 11384,19067 11439,18890
 Paracelsusstr.	1 11599,19171 11549,19258 11543,19279 11575,19296 11613,19312 11671,19204
 Wormbacher Weg	1 3791,338 3782,397 3648,531
-Schwelmer Str.	1 3676,311 3569,469 3497,574
+Schwelmer Str.	1 3676,311 3569,469 3497,583
 Schöppinger Str.	1 3691,566 3648,531 3569,469
 Arberstr.	1 19424,9502 19407,9232
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
@@ -464,7 +464,7 @@ Eilveser Str.	1 12875,16350 12900,16341
 Eilveser Str.	1 12875,16350 12841,16366
 Ekhofplatz	1 23382,1429 23360,1390 23325,1418 23343,1454 23382,1429
 Müggelbergplatz	1 23293,1697 23321,1678 23303,1650 23278,1668 23293,1697
-Ingridpfad	1 6357,2863 6304,2825 6182,2727
+Ingridpfad	1 6359,2875 6304,2825 6182,2737
 Georgenstr. (Mitte)	1 9242,12652 9108,12635
 Georgenstr. (Mitte)	1 9117,12705 9242,12652
 Schulstr. (Tegel)	1 1953,20149 1794,20110
@@ -571,6 +571,9 @@ Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5465,8511 5502,85
 Bundesallee (Richtungsfahrbahn)	1::igndisp 5505,8832 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -283,14523 -457,14536 -914,14602
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -283,14523
+Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2619 4313,2630 4224,2671 4164,2717
+Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4164,2717 4233,2675 4317,2638 4348,2619
+Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2619 4317,2638 4233,2675 4164,2717
 Lötschbergstr.	1s 20161,11715 20150,11512
 Brodenbacher Weg	1s 15178,17134 14897,17093
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
@@ -722,7 +725,7 @@ Gemündener Str.	1 11586,18126 11514,18101 11495,18129 11395,18274
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11012,13278 11085,13239
 Döbrabergweg	1 9848,20926 9892,20776
 Reichsbahnstr.	2 -4648,1334 -4579,1397
-Dorstener Str.	1 3590,644 3691,566
+Dorstener Str.	1 3596,655 3691,566
 Selmaplatz	1 -391,4313 -384,4268 -396,4261 -405,4281 -407,4303 -391,4313
 Plantage	1 -3229,13832 -3308,13778 -3320,13802 -3247,13864
 Cyclopstr.	1 5349,21198 5297,21243
@@ -854,6 +857,10 @@ Ulrich-von-Hutten-Str.	1 -13456,-3099 -13481,-2956
 Johannes-R.-Becher-Str.	1 -10134,-4981 -10288,-4749
 Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
+Max-Sabersky-Allee (Teltow)	1 2457,-100 2399,-13 2545,92 2704,198 2902,329
+Hauffstr. (Teltow)	1 2763,103 2704,198
+Fritz-Reuter-Str. (Teltow)	1 2545,92 2560,-25
+Hannemannstr. (Teltow)	1 2902,329 2968,235
 Umfahrung Dahlwitz	2 26596,10921 26900,10665 27209,10666 27499,10859
 Krumme Str.	1 25490,14601 25444,14665 25418,14835
 Margaretenstr.	1 25418,14835 25503,14842
@@ -1105,6 +1112,7 @@ Allee der Kosmonauten -> Charlottenstr.: Straßenbahntrasse	3::igndisp 20727,1446
 Straßenbahntrasse	3nocross::ignrte 20944,14840 20980,14914 21163,15289
 Allee der Kosmonauten -> Schragenfeldstr.: Straßenbahntrasse	3::igndisp 21163,15289 20980,14914 21027,14886
 Schragenfeldstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21027,14886 20980,14914 20944,14840
+Mittelstreifen	3nocross::ignrte 7410,4373 7450,4397 7482,4416
 Mittelstreifen	3nocross::ignrte 5201,20103 5299,20104 5399,20106 5517,20120
 Im Wolfsgartenfeld -> Am Nordgraben: Mittelstreifen	3::igndisp 5307,20067 5299,20104 5201,20103
 Am Nordgraben -> Im Wolfsgartenfeld: Mittelstreifen	3::igndisp 5399,20106 5299,20104 5307,20067
@@ -1303,15 +1311,6 @@ Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht pas
 Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2880,15908
 Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2960,15847
 Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2960,15847 2913,15944 2880,15908
-Mittelstreifen nicht passierbar	3nocross::ignrte 4343,2607 4284,2626 4251,2637 4212,2675 4164,2717
-Königsberger Str. -> Eduard-Spranger-Promenade: Mittelstreifen nicht passierbar	3::igndisp 4251,2637 4284,2626 4655,3060
-Eduard-Spranger-Promenade -> Königsberger Str.: Mittelstreifen nicht passierbar	3::igndisp 4655,3060 4284,2626 4343,2607
-Paul-Schwarz-Promenade -> Königsberger Str.: Mittelstreifen nicht passierbar	3::igndisp 4261,2703 4212,2675 4251,2637
-Paul-Schwarz-Promenade -> Teltowkanalpromenade: Mittelstreifen nicht passierbar	3::igndisp 4261,2703 4212,2675 4193,2616
-Königsberger Str. -> Teltowkanalpromenade: Mittelstreifen nicht passierbar	3::igndisp 4251,2637 4212,2675 4193,2616
-Königsberger Str. -> Paul-Schwarz-Promenade: Mittelstreifen nicht passierbar	3::igndisp 4164,2717 4212,2675 4261,2703
-Teltowkanalpromenade -> Paul-Schwarz-Promenade: Mittelstreifen nicht passierbar	3::igndisp 4193,2616 4212,2675 4261,2703
-Teltowkanalpromenade -> Königsberger Str.: Mittelstreifen nicht passierbar	3::igndisp 4193,2616 4212,2675 4164,2717
 Straßenbahntrasse	3nocross::ignrte 10897,17274 10892,17330 10886,17396
 Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 11107,17340 10892,17330 10897,17274
 Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3::igndisp 10886,17396 10892,17330 11107,17340
@@ -2183,7 +2182,7 @@ tragen (ca. 35 Stufen)	0:30:-75 7621,7105
 tragen (ca. 35 Stufen)	0:30:-75 7655,7096
 tragen (30 Stufen)	0:30:-53 15571,4168
 tragen (26 Stufen, steile Treppe)	0:30:-213 15156,6034
-tragen (Treppe)	0:30:-117 4808,3404
+tragen (Treppe)	0:30:-139 4803,3409
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30:-255 8823,16877
 tragen (Treppe)	0:30:11 14390,5443
 tragen (Treppe)	0:30:-171 14325,5409
@@ -2604,6 +2603,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8588,13673 8594,13637
 Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8619,13689 8626,13641
 Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8659,13708 8668,13645
@@ -3200,3 +3200,13 @@ Potsdamer Str., linker Gehweg	1::igndisp 7526,9791 7501,9573
 Landsberger Allee, Radweg auf der linken Seite	1::igndisp 15923,14334 15848,14325 15850,14308
 Hauptstr., linker Gehweg	1::igndisp 16206,10047 16195,10044 16150,10123 16018,10212 16004,10204
 Kurt-Schumacher-Damm, linker Gehweg	1::igndisp 2793,14374 2787,14284 2831,14219
+#: last_checked: 2013-09-04 vvv
+#: next_check: 2014-03-31 vvv
+#: source_id: INKO_095722_COPY_1 vvv
+#: XXX: nach den Bauarbeiten wird der legale Radweg wahrscheinlich entfernt, dann -> q4 vvv
+Königsberger Str., linker Gehweg	1::igndisp 4164,2717 4220,2664
+Königsberger Str., linker Gehweg	1::igndisp 4236,2678 4164,2717
+#: XXX: ^^^
+#: source_id: ^^^
+#: next_check: ^^^
+#: last_checked: ^^^
