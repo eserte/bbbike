@@ -73,6 +73,7 @@ SOURCE_TARGETS+=	gesperrt gesperrt_car
 SOURCE_TARGETS+=	gesperrt_$(i)
 .endfor
 SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
+SOURCE_TARGETS+=	culdesac
 
 # These do not have a -orig file of their own, or another type of source file
 COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg berlin berlin_ortsteile
@@ -730,6 +731,14 @@ exits:	exits-orig
 	mv $@~ $@
 	-@$(READONLY) $@
 
+culdesac:	culdesac-orig
+	-@$(WRITEABLE) $@
+	cat $> | \
+	    ${GREPSTRASSEN} -v -directive 'ignore=' | \
+	    ${CONVERT2HAFAS} - > $@~
+	mv $@~ $@
+	-@$(READONLY) $@
+
 kneipen:	kneipen.yml
 	-@$(WRITEABLE) $@
 	${PERL} $(MISCSRCDIR)/yaml2bbd $> > $@~
@@ -1270,6 +1279,7 @@ do-checks:	.check_empty_lines \
 	.check_comments_tram_2 .check_comments_kfzverkehr_2 \
 	.check_comments_scenic_2 \
 	.check_exits \
+	.check_culdesac .check_culdesac_2 \
 	.check_temp_blockings .check_grenzuebergaenge \
 	.check_berlin .check_potsdam \
 	.check_ortsschilder .check_ortsschilder2
@@ -1602,6 +1612,16 @@ check-disabled:
 .check_grenzuebergaenge:	grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen deutschland
 	$(CHECK_POINTS) grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen
 	$(CHECK_POINTS) grenzuebergaenge deutschland
+	@touch $@
+
+.check_culdesac:	culdesac .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) culdesac .strassen.tmp landstrassen landstrassen2 fragezeichen
+	@touch $@
+
+# Check also the orig variant, because currently too much is
+# ignored...
+.check_culdesac_2:	culdesac-orig .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) culdesac-orig .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .for city in berlin potsdam

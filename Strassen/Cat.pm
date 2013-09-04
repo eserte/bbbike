@@ -102,6 +102,7 @@ my %older_file_to_cat;
      "comments_route"		=> [qw(radroute)],
      "comments_scenic"		=> [qw(CS), sub { m{^View:([-+]?\d+):([-+]?\d+)} }], # XXX duplicated as $viewangle_qr in bbbike
      "comments_tram"		=> [qw(CS)],
+     "culdesac"  	        => [qw(culdesac culdesac_pseudo)],
      "deutschland"		=> $filetype_to_cat{"borders"},
      "exits"			=> [qw(X)],
      "faehren"			=> [qw(Q QQ)], # XXX QQ may be removed again some day
