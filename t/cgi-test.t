@@ -53,7 +53,7 @@ my $yaml_syck_tests = 5;
 #plan 'no_plan';
 plan tests => 119 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
-if (!GetOptions(get_std_opts("cgidir"),
+if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
     die "usage!";
 }
