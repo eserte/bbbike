@@ -526,6 +526,11 @@ This is useful if for example only a part of the street was renamed.
 <dt class="POD_ITEM"><a name="section_section_name"><code>section: <i>section name</i></code></a>
 <dd>
 The next block is part of a named section. Sections may be nested.
+<dt class="POD_ITEM"><a name="ignore"><code>ignore</code></a>
+<dd>
+The next line/block is ignored for some processing instructions. For
+example, &quot;culdesac&quot; entries in <code>comments_misc-orig</code> are skipped when
+creating <code>comments_misc</code>.
 <dt class="POD_ITEM"><a name="append_comment_comme"><code>append_comment: <i>comment</i></code></a>
 <dd>
 Useful for preprocessing bbd data files to add a comment to each
@@ -596,6 +601,21 @@ A priority for checks. The priority string should be something between
 </dl>
 <h4 class="POD_HEAD3"><a name="Obsolete_and_to_be_d">Obsolete and to-be-decided directives</a></h4>
 <dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="off_when_comment"><code>off: <i>when</i> <i>comment</i></code></a>
+<dd>
+Currently used in <code>ampeln-orig</code>, needs to be decided on the exact
+format and even on the directive name. Example entry:
+<pre class="POD_VERBATIM">
+    #: off: night (seen 2001-12-25)
+</pre>
+<p class="POD_TEXT">
+The <i>comment</i> part may be completely missing.
+</p>
+<p class="POD_TEXT">
+Currently the following labels are used in the <i>when</i> part: <code>night</code>,
+<code>weekend</code>, <code>holiday</code>, week day names, <code>except_schooltime</code>,
+<code>except_event</code>, <i>HH:MM-HH:MM</i>.
+</p>
 <dt class="POD_ITEM"><a name="internal_note_string"><code>internal_note: <i>string</i></code></a>
 <dd>
 A free text note, which must not appear in the processed data. It is
