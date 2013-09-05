@@ -2954,8 +2954,12 @@ sub make_crossing_choose_html {
 	}
 	my @kreuzung;
 	# If there's a culdesac entry, then use it
-	if ($culdesac && $culdesac->{$c}) {
-	    push @kreuzung, $culdesac->{$c};
+	if ($culdesac && exists $culdesac->{$c}) {
+	    my $culdesac_name = $culdesac->{$c};
+	    if (!defined $culdesac_name || !length $culdesac_name) {
+		$culdesac_name = M('Sackgassenende');
+	    }
+	    push @kreuzung, $culdesac_name;
 	}
 	if (@kreuzung == 0) {
 	    # Most common case: a normal crossing
