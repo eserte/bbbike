@@ -17,6 +17,7 @@ use vars qw(@opt_vars);
 BEGIN {
     @opt_vars = qw($logfile $do_xxx $do_display $pdf_prog $debug
 		   $cgiurl $cgidir $htmldir $mapserverurl $wapurl
+		   $simulate_skips
 		  );
 }
 
@@ -116,6 +117,7 @@ sub get_std_opts {
 		    "display!"  => \$do_display,
 		    "debug!"    => \$debug,
 		    "pdfprog=s" => \$pdf_prog,
+		    "simulate-skips!" => \$simulate_skips,
 		   );
     my %opts;
  OPT: for (@what) {
@@ -234,6 +236,7 @@ sub tidy_check {
 	if (!defined $can_tidy) {
 	    $can_tidy = is_in_path("tidy");
 	}
+	Test::More::skip("simulate skips", $no_of_tests) if $simulate_skips;
 	Test::More::skip("tidy is not available", $no_of_tests) if !$can_tidy;
 	if (UNIVERSAL::isa($content, "HTTP::Message")) {
 	    Test::More::skip("No html output", $no_of_tests)
@@ -300,6 +303,8 @@ sub tidy_check {
 	    die "'$skip_count' does not look like a skip count";
 	}
 
+	Test::More::skip("simulate skips", $skip_count) if $simulate_skips;
+
 	my $doc = libxml_parse_html $content;
 	Test::More::skip("Cannot parse content as html", $skip_count) if !$doc;
 	$doc;
@@ -314,6 +319,7 @@ sub xmllint_string {
     local $Test::Builder::Level = $Test::Builder::Level+1;
  SKIP: {
 	my $no_of_tests = 1;
+	Test::More::skip("simulate skips", $no_of_tests) if $simulate_skips;
 	if (eval {
 	    require XML::LibXML;
 	    if ($schema && $schema =~ m{^https://}) {
@@ -498,6 +504,7 @@ sub kmllint_string {
 	my($content, $test_name) = @_;
 	local $Test::Builder::Level = $Test::Builder::Level+1;
     SKIP: {
+	    Test::More::skip("simulate skips", 1) if $simulate_skips;
 	    if (!defined $schema_file) {
 		if (!is_in_path('rnv')) {
 		    $schema_file = ''; # defined but false
@@ -555,6 +562,7 @@ sub kmllint_string {
 	local $Test::Builder::Level = $Test::Builder::Level+1;
       SKIP: {
 	  my $schema = _get_kwalify_schema();
+	  Test::More::skip("simulate skips", 1) if $simulate_skips;
 	  Test::More::skip('schema file not available', 1)
 	      if !$schema;
 
@@ -573,6 +581,7 @@ sub kmllint_string {
 	local $Test::Builder::Level = $Test::Builder::Level+1;
 
       SKIP: {
+	  Test::More::skip("simulate skips", 1) if $simulate_skips;
 	  Test::More::skip('BBBikeYAML cannot be loaded (YAML::XS not available?)', 1)
 	      if !eval { require BBBikeYAML; 1 };
 
@@ -591,6 +600,7 @@ sub kmllint_string {
 	local $Test::Builder::Level = $Test::Builder::Level+1;
 
       SKIP: {
+	  Test::More::skip("simulate skips", 1) if $simulate_skips;
 	  Test::More::skip('JSON::XS not available', 1)
 	      if !eval { require JSON::XS; 1 };
 
@@ -690,6 +700,7 @@ if (!eval {
 	local $Test::Builder::Level = $Test::Builder::Level+1;
 
     SKIP: {
+	    Test::More::skip("simulate skips", 1) if $simulate_skips;
 	    $@ = "";
 	    eval {
 		no warnings 'numeric'; # cease Argument "2.121_08" isn't numeric in subroutine entry
@@ -783,6 +794,8 @@ sub image_ok ($;$) {
 	$testlabel = "";
     }
     local $Test::Builder::Level = $Test::Builder::Level+1;
+
+    Test::More::skip("simulate skips", 2) if $simulate_skips;
 
     my $fails = 0;
 
