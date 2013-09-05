@@ -1047,6 +1047,47 @@
   Editieren</link> beschrieben, geändert werden.</para>
 
   </sect2>
+
+  <sect2><title xml:id="culdesac">Sackgassen (culdesac)</title>
+
+  <para>In der Datei <filename>culdesac</filename> werden
+  Sackgassenenden eingetragen. Es gibt zwei Kategorien:
+  <constant>culdesac</constant> für echte Sackgassen für alle
+  Verkehrsteilnehmer und <constant>culdesac_pseudo</constant> für
+  Sackgassen nur für Kfz. Als Namen wählt man typischerweise
+  "Sackgassenende", aber man kann auch davon abweichen (siehe
+  unten).</para>
+
+  <para>Weiterhin gibt es typischerweise zwei Abschnitte in der
+  <filename>culdesac-orig</filename>-Datei: Sackgassen, die nicht
+  ignoriert werden und somit in die Zieldatei
+  <filename>culdesac</filename> übernommen werden, sowie Sackgassen,
+  die sich innerhalb eines <constant>ignore</constant>-Abschnitts
+  befinden und nicht übernommen werden.</para>
+
+  <para>Sackgassen, die übernommen werden, werden zurzeit im
+  CGI-Programm auf der Kreuzungsseite ("Genaue Kreuzung angeben")
+  verwendet. Hier wird der Name, typischerweise "Sackgassenende",
+  anbgezeigt. Falls sich aber eine bekannte Institution an diesem
+  Punkt befindet, kann man den Namen der Institution zusätzlich oder
+  ausschließlich eintragen (siehe z.B. "S-Bhf. Ostkreuz" an der
+  Sonntagstraße).</para>
+
+  <para>Da Sackgasseneinträge Vorrang über Kreuzungsnamen haben, kann
+  man "schlechte" Kreuzungsnamen damit überschreiben. Z.B. ist
+  "Blücherplatz/Sackgassenende" wesentlich kürzer und prägnanter als
+  das automatisch erzeugte "Blücherplatz/(Blücherplatz -
+  Johanniterstr.)/(Blücherplatz - Zossener Str.)".</para>
+
+  <para>Ein weiterer Plan war, mithilfe der Sackgassendatei fehlende
+  Straßen/Wege automatisch zu ermitteln: eine Straße muss entweder
+  eine Fortsetzung haben oder als Sackgasse deklariert sein. Dieser
+  automatische Check fehlt allerdings noch.</para>
+
+  <para>Dateiname: <filename>culdesac</filename></para>
+  
+  </sect2>
+
   </sect1>
 
   <sect1><title xml:id="altedit">Alternative Editiermöglichkeiten</title>
