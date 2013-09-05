@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2011,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,10 +18,11 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 use Strassen;
 
-@Strassen::datadirs = ("$FindBin::RealBin/../data");
+my $datadir = "$FindBin::RealBin/../data";
+@Strassen::datadirs = ($datadir);
 
 my $datafile     = 'strassen';
-my $contausnahme = 'str_cont_ausnahme';
+my $contausnahme = "$datadir/str_cont_ausnahme";
 my $show_unconsumed;
 
 GetOptions("contausnahme=s"   => \$contausnahme,
@@ -39,6 +40,8 @@ if ($contausnahme ne '' and open(AUSNAHME, $contausnahme)) {
 	$ausnahme_unconsumed{$_}++ if $show_unconsumed;
     }
     close AUSNAHME;
+} else {
+    warn "WARN: Couldn't load $contausnahme: $!";
 }
 
 my $seen_header = 0;
