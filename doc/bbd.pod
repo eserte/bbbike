@@ -500,7 +500,7 @@ The next block is part of a named section. Sections may be nested.
 =item C<ignore>
 
 The next line/block is ignored for some processing instructions. For
-example, "culdesac" entries in F<comments_misc-orig> are skipped when
+example, "busroute_N" entries in F<comments_misc-orig> are skipped when
 creating F<comments_misc>.
 
 =item C<append_comment: I<comment>>
