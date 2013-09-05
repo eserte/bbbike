@@ -3349,20 +3349,7 @@ userdel	2::night 17671,13132 17698,13134
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_020213',
-         'until' => 1378407600,
-         'text' => 'Mauerstr. (Mitte): Veranstaltung, Fahrbahn zwischen Taubenstr. und Jägerstr. gesperrt (ggfs. auf Gehweg ausweichen), Einbiegen in die Jägerstr. nicht möglich, bis zum 05.09.2013',
-         'from' => 1377665400,
-         'id' => 2481,
-         'data' => 'userdel	q2::temp 9108,11961 9144,11866
-	3::temp 9201,11968 9108,11961 9076,12054
-	3::temp 9076,12054 9108,11961 9201,11968
-	3::temp 9201,11968 9108,11961 9144,11866
-	3::temp 9144,11866 9108,11961 9201,11968
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130830.1005.388628.html',
          'until' => 1379541599,
@@ -3372,6 +3359,16 @@ userdel	2::night 17671,13132 17698,13134
          'data' => 'userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020269',
+         'until' => 1378677599,
+         'text' => 'Platz der Luftbrücke: Straße wegen Veranstaltung gesperrt, 06.09.2013 bis 08.09.2013 ',
+         'from' => 1378332000,
+         'id' => 2483,
+         'data' => 'userdel	2::temp 9395,8726 9364,8640 9321,8607 9233,8597
+',
+         'type' => 'gesperrt'
        }
      
 );

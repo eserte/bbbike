@@ -21794,4 +21794,13 @@ EOF
 userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
 EOF
      },
+     { from  => 1378332000, # 2013-09-05 00:00
+       until => 1378677599, # 2013-09-08 23:59
+       text  => 'Platz der Luftbrücke: Straße wegen Veranstaltung gesperrt, 06.09.2013 bis 08.09.2013 ',
+       type  => 'gesperrt',
+       source_id => 'IM_020269',
+       data  => <<EOF,
+userdel	2::temp 9395,8726 9364,8640 9321,8607 9233,8597
+EOF
+     },
     );
