@@ -594,12 +594,12 @@ sub _bbbike_lang_cgi ($) {
 
 sub on_crossing_pref_page {
     my($resp) = @_;
-    like_html($resp->decoded_content, 'Genaue Kreuzung angeben:', 'On crossing/pref page');
+    like_html($resp->decoded_content, qr{(?:Genaue Kreuzung angeben|Choose crossing):}, 'On crossing/pref page');
 }
 
 sub not_on_crossing_pref_page {
     my($resp) = @_;
-    unlike_html($resp->decoded_content, 'Genaue Kreuzung angeben:', 'Not on crossing/pref page');
+    unlike_html($resp->decoded_content, qr{(?:Genaue Kreuzung angeben|Choose crossing):}, 'Not on crossing/pref page');
 }
 
 sub on_routelist_page {
