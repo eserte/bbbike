@@ -51,7 +51,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 119 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 121 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -155,11 +155,22 @@ SKIP: {
 
 {
     my $resp = bbbike_cgi_geocode +{start => 'Kleine Parkstr.',
-				    ziel => 'Dudenstr.',
+				    ziel => 'Blücherplatz',
 				   }, 'A street with culdesac';
     on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
-    like_html($content, qr{Sackgassenende, Gartenbauamt}, 'Seen culdesac');
+ SKIP: {
+	my $doc = libxml_parse_html_or_skip 2, $content;
+	{
+	    my $found_culdesac = !!$doc->findnodes('//select//option[normalize-space(.)="Sackgassenende, Gartenbauamt"]');
+	    ok $found_culdesac, 'Seen culdesac';
+	}
+	{
+	    my $found_culdesac = !!$doc->findnodes('//select//option[normalize-space(.)="Sackgassenende, AGB"]');
+	    ok $found_culdesac, 'Seen culdesac, not crossing name';
+	}
+    }
+    unlike_html $content, qr{Johanniterstr.}, 'Not seen, instead culdesac (prioritized) was seen';
 }
 
 {
