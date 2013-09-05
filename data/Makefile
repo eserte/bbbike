@@ -734,7 +734,7 @@ exits:	exits-orig
 culdesac:	culdesac-orig
 	-@$(WRITEABLE) $@
 	cat $> | \
-	    ${GREPSTRASSEN} -v -directive 'ignore=' | \
+	    ${GREPSTRASSEN} -preserveglobaldirectives -v -directive 'ignore=' | \
 	    ${CONVERT2HAFAS} - > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
