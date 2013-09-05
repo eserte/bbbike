@@ -26,7 +26,7 @@ am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9918 7813,10112
 Dennewitzplatz	1 7813,10112 7906,10098
 Dennewitzplatz	1s:q3 7906,10098 7866,9918
-Winterfeldtplatz	1 7049,9833 7039,10082
+Winterfeldtplatz	1 7049,9833 7038,10087
 Winterfeldtplatz	1 7080,10098 7126,9825
 Moritzplatz	1 10854,10854 10832,10910 10885,10928 10906,10874 10854,10854
 Segitzdamm etc.	1 10923,10113 10988,10268 10975,10334
@@ -53,7 +53,7 @@ Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4107,6718 4146,6693 4250,6625 
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
 Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 6118,9078 6083,9082 6063,9106
 #: confirmed_by: osm
-orthodoxe Kirche	1 3952,8980 3835,9044
+orthodoxe Kirche	1 3952,8980 3831,9052
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
 U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499,5144 2717,5578
 Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
@@ -154,7 +154,7 @@ Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
 An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
-Schulze-Delitzsch-Platz	1 11024,11789 11155,11750
+Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 #: note: hier stand mal ein Polizeiauto, als ich reinfahren wollte...
 Weydemeyerstr.	1s:q4 11896,13075 11904,13058 12053,12984 12054,12903
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
@@ -225,7 +225,7 @@ Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
 Friedrichsruher Str.	1 3196,9193 3333,9026
 Schweidnitzer Str	1 3202,9583 3223,9837
-Mansfelder Str.	1 4102,9164 4158,9109 4228,9093 4325,9082
+Mansfelder Str.	1 4096,9175 4158,9109 4228,9093 4325,9082
 Johann-Georg-Str.	1 3108,10069 3170,10041 3347,9793
 Damaschkestr.	1 3132,10499 3013,10553
 # REMOVED --- Herbartstr.	1 2346,11147 2340,11045
@@ -1069,6 +1069,7 @@ Ingwerweg: durch Tor versperrt	2 9260,21636 9282,21589
 Am Tierpark [Wohngebiet]	1 18512,10337 18552,10220
 Am Tierpark [Wohngebiet]	1 18552,10220 18534,10185 18484,10326
 (Freiherr-vom-Stein-Str. - Dominicusstr.)	1::igndisp 6477,8654 6454,8653
+Neue Jakobstr./Schulze-Delitzsch-Platz	1 11060,11753 11073,11774
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2127,6 +2128,7 @@ Tor	BNP:10::trailer=15 1707,1256
 Schranke	BNP:1::trailer=3 21514,11796
 #: note: verschwenkbar
 Drängelgitter	BNP:3::trailer=10 8236,10623
+Drängelgitter	BNP:3::trailer=10 8199,10424
 Drängelgitter	BNP:3::trailer=10 8357,9598
 Drängelgitter	BNP:3::trailer=10 8353,9642
 Drängelgitter	BNP:3::trailer=10 8350,9685
@@ -2771,7 +2773,7 @@ Landsberger Allee: Straßenbahntrasse	3nocross 13635,13605 13702,13634 13854,1370
 Landsberger Allee	3nocross 21475,15705 21584,15753 21709,15808
 Landsberger Allee	3nocross 19852,15201 19987,15280 20260,15434
 Kalkhorster Weg (10 Stufen)	0:40 3904,8664
-Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9047 3816,9045 3835,9044
+Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9051 3816,9052 3831,9052
 Hohenzollerndamm: unpassierbarer Mittelstreifen	3nocross 3427,9010 3467,9045 3521,9059
 Kette	BNP:5 3370,9215
 Kette	BNP:5 3264,9261

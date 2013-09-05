@@ -397,7 +397,7 @@ Dihlmannstr.: Radweg existiert	1 651,15091 755,15123 851,15155 957,15189 976,151
 Zwickauer Damm: Bahntrasse	3nocross 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747
 #: note: Luftbild:
 Buschkrugallee: Mittelstreifen	3nocross 13294,6386 13307,6359 13323,6322
-Gieselerstr.	1 4606,9023 4619,9200
+Gieselerstr.	1 4609,9027 4619,9200
 Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13136,9883 13227,10001
 #: note: Luftbild:
 Rudower Chaussee: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
@@ -931,3 +931,13 @@ Treskowallee: Straßenbahntrasse	3nocross 18742,9903 18769,9839 18807,9746
 Hasenheide: Mittelstreifen	3nocross 11136,9183 11108,9187 10713,9260
 Rüdesheimer Str.	1 4317,7069 4391,7258
 Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
+#: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer
+Brandenburgische Str.: Mittelstreifen	3nocross 4473,9154 4609,9027 4701,8941
+#: note: auch keine Überquerungsmöglichkeit für Fußgänger, Umweg über Ampel erforderlich
+Blissestr.: Mittelstreifen	3nocross 4783,8557 4772,8599 4777,8731
+#: note: Radfahrer können den Gehweg durch die Grünfläche nutzen
+Landhausstr.	1 5343,8858 5341,8927
+#: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer ca. 20 Meter westlich der Kreuzung
+Berliner Str.: Mittelstreifen	3nocross 5647,9022 5725,9041 5783,9060
+#: note: Überquerungsmöglichkeit für Fußgänger, allerdings keine abgesenkten Bordsteine
+Grunewaldstr.: Mittelstreifen	3nocross 6863,9254 6923,9266 7006,9282

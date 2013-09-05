@@ -692,7 +692,7 @@ Zwickauer Damm -> Theodor-Loos-Weg: Bahntrasse	3::igndisp 15835,1747 15875,1796 
 Mittelstreifen	3nocross::ignrte 13294,6386 13307,6359 13323,6322
 Bürgerstr. -> Buschkrugallee: Mittelstreifen	3::igndisp 13239,6344 13307,6359 13294,6386
 Buschkrugallee -> Bürgerstr.: Mittelstreifen	3::igndisp 13323,6322 13307,6359 13239,6344
-Gieselerstr.	1 4606,9023 4619,9200
+Gieselerstr.	1 4609,9027 4619,9200
 Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13136,9883 13227,10001
 Mittelstreifen	3nocross::ignrte 15980,2318 15804,2512 15736,2593
 Primelweg -> Neuköllner Str.: Mittelstreifen	3::igndisp 15862,2588 15804,2512 15980,2318
@@ -1593,3 +1593,15 @@ Fichtestr. -> Hasenheide: Mittelstreifen	3::igndisp 11060,9549 11108,9187 11136,
 Hasenheide -> Fichtestr.: Mittelstreifen	3::igndisp 10713,9260 11108,9187 11060,9549
 Rüdesheimer Str.	1 4317,7069 4391,7258
 Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
+Mittelstreifen	3nocross::ignrte 4473,9154 4609,9027 4701,8941
+Gieselerstr. -> Brandenburgische Str.: Mittelstreifen	3::igndisp 4619,9200 4609,9027 4701,8941
+Mittelstreifen	3nocross::ignrte 4783,8557 4772,8599 4777,8731
+zur Mannheimer Str./Wilmersdorf -> Blissestr.: Mittelstreifen	3::igndisp 4456,8598 4772,8599 4777,8731
+Blissestr. -> zur Mannheimer Str./Wilmersdorf: Mittelstreifen	3::igndisp 4783,8557 4772,8599 4456,8598
+Landhausstr.	1 5343,8858 5341,8927
+Mittelstreifen	3nocross::ignrte 5647,9022 5725,9041 5783,9060
+Berliner Str. -> Helmstedter Str.: Mittelstreifen	3::igndisp 5647,9022 5725,9041 5711,9357
+Helmstedter Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5711,9357 5725,9041 5783,9060
+Mittelstreifen	3nocross::ignrte 6863,9254 6923,9266 7006,9282
+Schwäbische Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6851,9365 6923,9266 7006,9282
+Grunewaldstr. -> Schwäbische Str.: Mittelstreifen	3::igndisp 6863,9254 6923,9266 6851,9365

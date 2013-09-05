@@ -77,8 +77,8 @@ Lise-Meitner-Str.: Radspuren werden hier 2013 markiert	?::inwork 3711,13202 3721
 Schulenburgstr./Weiﬂenburger Str.: werden hier Radspuren markiert?	?::projected -2706,13291 -2728,13269 -2960,13203 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
 # 
 #: XXX Baumaﬂnahme 4.18 (Realisierung nach 2011)
-#: last_checked: 2013-05-01
-#: next_check: 2013-08-01
+#: last_checked: 2013-09-05
+#: check_frequency: 100d
 #: osm_watch: way id="47266663" version="2"
 #: osm_watch: way id="47267054" version="1"
 Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,8717 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2114,7742
@@ -102,7 +102,7 @@ Groﬂziethener - Barnetstr.: werden hier die bestehenden Radwege verbessert oder 
 Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243,-1876 10301,-1891 10303,-1954
 # 
 #: XXX Baumaﬂnahme 2.29 (Realisierung nach 2011)
-#: last_checked: 2013-08-30
+#: last_checked: 2013-09-05
 #: check_frequency: 100d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -127,7 +127,7 @@ Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?
 # 
 #: XXX Baumaﬂnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-08-05
+#: last_checked: 2013-09-05
 #: check_frequency: 60d
 Br¸ckenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
 # 
@@ -236,8 +236,8 @@ M¸ggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-08-20
-#: next_check: 2013-11-02
+#: last_checked: 2013-09-05
+#: next_check: 2014-03-05
 Warschauer Str: Radspuren f¸r 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
@@ -763,7 +763,7 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html
 #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Br¸cke)
-#: last_checked: 2013-08-19 vvv
+#: last_checked: 2013-09-05 (Rampe noch in Bau) vvv
 #: next_check: 2013-11-30 vvv
 #: osm_watch: way id="187902666" version="2"
 Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8333,9583 8338,9443 8388,9242 8373,9022 8389,9087
@@ -772,13 +772,17 @@ Eingang zum Flaschenhalspark	?::projected 8358,9568 8338,9443
 #: next_check ^^^
 #: last_checked ^^^
 # 
+#: last_checked: 2013-09-05 (asphaltierter Weg ist schon zu sehen)
+#: next_check: 2013-11-30
+Weg entlang der Bautzener Str.	?::inwork 8204,9046 8209,9581
+# 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Noerdl-Teilstueck-a.5712.0.html
 #: last_checked: 2013-05-15
 #: next_check: 2015-01-01
 #: osm_watch: way id="182562157" version="2"
 #: XXX evtl. wird Richtung Norden bis zur Yorckstr. verl‰ngert, siehe folgende Drucksache:
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4411
-Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8235,9107 8200,8920 7998,8317
+Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8204,9046 8200,8920 7998,8317
 # 
 #: XXX_osm: fehlt bei osm komplett
 #: last_checked: 2011-12-25 (keine Baut‰tigkeit feststellbar)
@@ -1049,9 +1053,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
-#: XXX vmz-Eintrag relevant? NEW	Nestorstr. (Charlottenburg): Straﬂe vollst‰ndig gesperrt, Baustelle (Ende 09/13) in beiden Richtungen zwischen Kurf¸rstendamm und Johann-Georg-Str., 02.09.2013 06:45 Uhr bis 30.09.2013 10:00 Uhr	IM_020246
-#: next_check: 2013-09-02
-Nestorstr.: Bauarbeiten?	? 3374,10201 3359,9968 3347,9793
+Bismarckallee: ist die Bismarckallee durchg‰ngig eine Vorfahrtsstraﬂe?	? 1276,8659 1410,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
+Bismarckallee: ist die Bismarckallee durchg‰ngig eine Vorfahrtsstraﬂe?	? 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2163,9244 2316,9400
+# 
+# REMOVED (keine Bauarbeiten zu sehen) --- #: XXX vmz-Eintrag relevant? NEW	Nestorstr. (Charlottenburg): Straﬂe vollst‰ndig gesperrt, Baustelle (Ende 09/13) in beiden Richtungen zwischen Kurf¸rstendamm und Johann-Georg-Str., 02.09.2013 06:45 Uhr bis 30.09.2013 10:00 Uhr	IM_020246 --- #: next_check: 2013-09-02 --- Nestorstr.: Bauarbeiten?	? 3374,10201 3359,9968 3347,9793
 #: XXX vmz-Eintrag relevant? NEW	Rennbahnstr. (Weiﬂensee): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13) Richtung Berliner Allee zwischen Parkstr. und Berliner Allee, 02.09.2013 08:00 Uhr bis 15.09.2013 16:00 Uhr	IM_020230	
 #: next_check: 2013-09-02
 Rennbahnstr.: Bauarbeiten?	? 14235,17103 14341,17030 14510,16916 14559,16912
@@ -3165,8 +3170,7 @@ Am Speicher (Potsdam)	?::inwork -12783,-2269 -12771,-2220 -12754,-2154
 #: next_check: 2013-11-09
 Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Planstraﬂe D)	? -12712,-2233 -12728,-2227 -12771,-2220 -12803,-2219
 # 
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120405.1310.368452.html (Radfahren erlaubt)
-Preuﬂenpark: Qualit‰t des Weges? Nachts beleuchtet?	? 4374,9409 4353,9430 4281,9393 4279,9357
+# REMOVED (Weg existiert, wassergebundene Decke, unbeleuchtet, Radfahren frei, allerdings Bordstein an beiden Seiten, wenn man nicht via angrenzenden Bordstein kommt, und wahrscheinlich sowieso verkehrlich eher uninteressant) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120405.1310.368452.html (Radfahren erlaubt) --- Preuﬂenpark: Qualit‰t des Weges? Nachts beleuchtet?	? 4374,9409 4353,9430 4281,9393 4246,9406
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2012
 #: note: siehe auch: http://www.freilandlabor-kaniswall.de/kontakt.htm
 #: XXX fehlt in Berlin.coords.data, PLZ=12559
@@ -3233,7 +3237,7 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Realisierung noch nicht erfolgt, Mitte 2012) vvv
 #: osm_watch: way id="4389511" version="12"
 #: osm_watch: way id="4495273" version="16"
-#: last_checked: 2013-09-04 (by orl) vvv
+#: last_checked: 2013-09-05 vvv
 #: check_frequency: 100d vvv
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)

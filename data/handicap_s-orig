@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-09-04 vvv
+#: last_checked: 2013-09-05 vvv
 #: next_check: 2013-09-14 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (früher)
@@ -171,7 +171,7 @@ Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # 
 #: note: q4 zumindest im Berufsverkehr vvv
-#: last_checked: 2013-08-08 vvv
+#: last_checked: 2013-09-05 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
 Neue Grünstr.: Einbahnstraßenregelung wegen Bauarbeiten in der Alten Jakobstr.	q4::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
@@ -224,7 +224,7 @@ Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,104
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 # 
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2013-09-04
+#: last_checked: 2013-09-05
 #: next_check: 2014-09-01
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
@@ -548,7 +548,7 @@ Barsekowstr.: Fußgänger	q1 5336,4676 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5945,4828 6006,4852
 #: XXX_prog: für Anhänger q1
-#: note: nur zwei Schwellen sind übrig geblieben, können mit Normalrad umfahren werden
+#: note: nur drei Schwellen sind übrig geblieben, können mit Normalrad umfahren werden
 Dieffenbachstr.: Bodenschwellen	q0- 11141,9732 11346,9655
 # REMOVED (hier ist nur eine einzige Bodenschwelle übrig geblieben) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624 --- #: XXX_prog: für Anhänger evtl. q1 --- Dieffenbachstr.: Bodenschwellen, können gut umfahren werden	q0- 11346,9655 11541,9576
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
@@ -1608,7 +1608,8 @@ Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 #: XXX_prog BS zur Zechliner Str.
 (Landsberger Allee - Zechliner Str.): Fußgänger, Bordstein	q2 16590,14386 16544,14593
 (Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q2 12125,12490 12134,12540
-#: XXX_prog BS
+#: XXX_prog BS (ansonsten entfernen)
+#: XXX wurde der Bordstein mittlerweile abgesenkt?
 Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
 (Hansastr. - Gartenstr.): Fußgänger	q1 15187,16185 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): Fußgänger	q1 14810,16282 14721,16360
@@ -1750,6 +1751,7 @@ Gersdorfstr. - Wulfila-Ufer: Bordstein, einige Fußgänger	q2 8255,4791 8184,4716
 #: XXX_prog BS nur am Wendehammer, ansonsten q1
 Geitnerweg: Bordstein, einige Fußgänger	q2 5420,511 5448,455
 Seydlitzstr.: einige Fußgänger	q1 6511,2284 6459,2364
+Trabener Steg: abgeflachte Treppenstufen, Fußgänger	q2 2142,10027 2131,10014 2128,9999
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2073,6 +2075,7 @@ Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
 Fontaneplatz: Fußgänger, Bordsteinkante	q3 8474,11350 8427,11365
 (Fontaneplatz - Alte Potsdamer Str.): Fußgänger, schmal	q4 8427,11365 8389,11378
 Voxstr.: Fußgänger	q3 8309,11390 8375,11368
+#: XXX_prog: BS zur Rosenheimer Str., ansonsten q1
 Alice-Salomon-Park: getrennte Wege für Radfahrer und Fußgänger, Bordsteine	q2 6851,9365 6771,9458 6728,9457
 (Geßlerstr. - Monumentenstr.): Fußgänger, Kinder	q2 7970,8886 7964,9060 8009,9063
 (Loewenhardtdamm - Höhndorfstr.): Fußgänger, Bordsteine, Schranken	q2 8334,8655 8438,8676
