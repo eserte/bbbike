@@ -46,6 +46,8 @@ if ($contausnahme ne '' and open(AUSNAHME, $contausnahme)) {
 
 my $seen_header = 0;
 
+$| = 1; # we have a mixture of STDOUT+STDERR printing below, so autoflush has to be turned on.
+
 my $str = new Strassen $datafile;
 my $lastname;
 my $lastlastcoord;
