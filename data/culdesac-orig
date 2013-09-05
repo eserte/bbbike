@@ -149,10 +149,55 @@ Sackgassenende	culdesac 14989,8536
 #: note: Weiterfahrt auf der Abteiinsel möglich
 Insel der Jugend	culdesac_pseudo 15675,9090
 Sackgassenende	culdesac 16337,9581
+Sackgassenende, Pablo-Neruda-Bibliothek	culdesac 14008,12181
+Sackgassenende, DB-Gelände	culdesac 16654,9748
+Sackgassenende, DB-Gelände	culdesac 17308,9090
+Sackgassenende	culdesac 17733,8202
+Sackgassenende	culdesac 17658,8216
+Sackgassenende	culdesac 17597,8258
+Sackgassenende	culdesac 17961,8932
+Sackgassenende	culdesac 18021,9127
+Sackgassenende	culdesac 18125,9676
+Sackgassenende	culdesac 18354,9575
+Sackgassenende, südlicher Abschnitt	culdesac 18596,9485
+Sackgassenende, mittlerer Abschnitt	culdesac 18604,9535
+Sackgassenende, nördlicher Abschnitt	culdesac 18610,9569
+Sackgassenende	culdesac 18715,9589
+Sackgassenende	culdesac 18843,10028
+Sackgassenende	culdesac 18925,10064
+Sackgassenende	culdesac 19023,10088
+Sackgassenende	culdesac 19487,10205
+Sackgassenende	culdesac 19810,10155
+Sackgassenende	culdesac 20016,9914
+Sackgassenende	culdesac 19946,9328
+Sackgassenende	culdesac 20091,9330
+Sackgassenende	culdesac 20220,8976
+Sackgassenende, östlicher Abschnitt	culdesac 19599,9747
+Sackgassenende, westlicher Abschnitt	culdesac_pseudo 18421,9764
+Sackgassenende	culdesac_pseudo 17915,8900
+Sackgassenende	culdesac_pseudo 4655,12953
+Sackgassenende	culdesac_pseudo 4732,13030
+Sackgassenende	culdesac_pseudo 4829,13089
+Sackgassenende	culdesac_pseudo 5120,12963
+Sackgassenende, Mauerpark	culdesac_pseudo 10038,15418
+nördliches Sackgassenende	culdesac_pseudo 8830,8148
+südliches Sackgassenende	culdesac_pseudo 8839,7904
+Sackgassenende, Schwarzer Weg	culdesac_pseudo 13958,8106
+Sackgassenende, AGB	culdesac_pseudo 9702,10129
+Sackgassenende	culdesac_pseudo 15787,9321
+Sackgassenende, Rummelsburger Bucht	culdesac_pseudo 15334,10528
+Sackgassenende	culdesac_pseudo 15181,10154
+Sackgassenende	culdesac_pseudo 15393,11590
+Sackgassenende	culdesac_pseudo 15411,11823
+Sackgassenende	culdesac_pseudo 13375,12062
+Sackgassenende	culdesac_pseudo 14285,12190
+Sackgassenende, Weg am Moabiter Werder	culdesac_pseudo 7837,12860
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 19133,9087
+	culdesac_pseudo 13552,12435
 	culdesac_pseudo 6106,12981
 	culdesac_pseudo 6771,9458
 	culdesac_pseudo 6359,9244
@@ -179,11 +224,6 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2405,10131
 	culdesac_pseudo 6250,10701
 	culdesac_pseudo 6745,10619
 	culdesac_pseudo 6399,11558
-	culdesac_pseudo 4655,12953
-	culdesac_pseudo 4732,13030
-	culdesac_pseudo 4829,13089
-	culdesac_pseudo 5120,12963
-	culdesac_pseudo 10038,15418
 	culdesac_pseudo 8741,14928
 	culdesac_pseudo 7215,10203
 	culdesac_pseudo 7190,10150
@@ -198,28 +238,19 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2405,10131
 	culdesac_pseudo 7570,9124
 	culdesac_pseudo 7708,9075
 	culdesac_pseudo 8009,9063
-	culdesac_pseudo 8830,8148
-	culdesac_pseudo 8839,7904
-	culdesac_pseudo 13958,8106
 	culdesac_pseudo 12741,7224
 	culdesac_pseudo 11607,7145
 	culdesac_pseudo 11565,7402
-	culdesac_pseudo 9702,10129
 	culdesac_pseudo 9578,9417
-	culdesac_pseudo 15787,9321
 	culdesac_pseudo 15513,10298
 	culdesac_pseudo 15633,10442
-	culdesac_pseudo 15334,10528
-	culdesac_pseudo 15181,10154
 	culdesac_pseudo 15044,10297
 	culdesac_pseudo 14977,10348
 	culdesac_pseudo 14888,10385
 	culdesac_pseudo 14599,10039
 	culdesac_pseudo 15679,11591
 	culdesac_pseudo 15724,11680
-	culdesac_pseudo 15393,11590
 	culdesac_pseudo 15277,11684
-	culdesac_pseudo 15411,11823
 	culdesac_pseudo 15320,12375
 	culdesac_pseudo 15454,12519
 	culdesac_pseudo 15433,12686
@@ -236,10 +267,7 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2405,10131
 	culdesac_pseudo 15090,11237
 	culdesac_pseudo 13326,12056
 	culdesac_pseudo 13339,12029
-	culdesac_pseudo 13375,12062
-	culdesac_pseudo 14285,12190
 	culdesac_pseudo 9666,10848
-	culdesac_pseudo 7837,12860
 	culdesac_pseudo 7789,12764
 	culdesac_pseudo 12327,8161
 #: ignore ^^^
@@ -272,15 +300,6 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2405,10131
 	culdesac 18949,8107
 	culdesac 19110,8105
 	culdesac 19128,8131
-	culdesac 18715,9589
-	culdesac 18354,9575
-	culdesac 18125,9676
-	culdesac 18021,9127
-	culdesac 17961,8932
-	culdesac_pseudo 17915,8900
-	culdesac 17733,8202
-	culdesac 17658,8216
-	culdesac 17597,8258
 Weiterfahrt durch die Kleingartenanlage möglich, allerdings nur tagsüber während des Sommers	culdesac_pseudo 15960,17220
 	culdesac 15450,17861
 	culdesac 16109,17784
@@ -413,25 +432,13 @@ Weiterfahrt in den Innovationspark möglich	culdesac_pseudo 21284,7043
 	culdesac 21539,10435
 	culdesac 20868,9444
 	culdesac 20535,8964
-	culdesac 20220,8976
 	culdesac 19950,9234
-	culdesac 19946,9328
-	culdesac 20091,9330
-	culdesac 20016,9914
 	culdesac 20208,9932
-	culdesac 19810,10155
-	culdesac 19487,10205
-	culdesac 19599,9747
 	culdesac 19912,10543
 	culdesac 19831,10916
 	culdesac 20279,10516
-	culdesac 19023,10088
-	culdesac 18925,10064
-	culdesac 18843,10028
 	culdesac 18598,10661
 	culdesac 18520,10913
-	culdesac 17308,9090
-	culdesac 16654,9748
 	culdesac 16479,17447
 	culdesac_pseudo 16229,17217
 	culdesac_pseudo 16146,17304
@@ -839,7 +846,6 @@ Weiterfahrt in den Innovationspark möglich	culdesac_pseudo 21284,7043
 	culdesac_pseudo -1347,15506
 	culdesac_pseudo 16041,3718
 	culdesac 16340,3517
-	culdesac_pseudo 19133,9087
 	culdesac_pseudo 21576,6644
 	culdesac_pseudo 18778,8663
 	culdesac_pseudo 17455,5355
@@ -849,9 +855,6 @@ Weiterfahrt in den Innovationspark möglich	culdesac_pseudo 21284,7043
 	culdesac 19943,8279
 	culdesac_pseudo 4994,6387
 	culdesac 5062,6295
-	culdesac 18610,9569
-	culdesac 18604,9535
-	culdesac 18596,9485
 	culdesac -3673,17068
 	culdesac_pseudo -3657,16732
 	culdesac -3444,15978
