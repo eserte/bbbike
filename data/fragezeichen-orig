@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-07-16
+#: last_checked: 2013-09-06
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-08-26
+#: last_checked: 2013-09-06
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -236,7 +236,7 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-09-05
+#: last_checked: 2013-09-06
 #: next_check: 2014-03-05
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -385,8 +385,9 @@ Gudvangerstr.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projecte
 #: by: ^^^
 # 
 #: XXX im südlichen Teil ist die asphaltierte Trasse schon erkennbar, der nördliche Teil wird wahrscheinlich noch gebaut
+#: source_id: 111100069
 #: last_checked: 2013-08-16
-#: next_check: 2013-09-16
+#: next_check: 2013-10-04
 Lindenberg - Schwanebeck: Bau eines Radwegs auf der nordwestlichen Seite	?::inwork 18356,22225 18500,22348 18671,22604 19061,23130 19144,23267 19393,23690 19565,24028
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3594
@@ -575,10 +576,10 @@ Einmündung der Burgfrauenstraße in den Zeltinger Platz: Zebrastreifen ist geplan
 #: by: ^^^
 #: by: ^^^
 # 
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&options=4
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden)
 #: osm_watch: node id="29778885" version="4"
-#: last_checked: 2013-06-03
-#: check_frequency: 100d
+#: last_checked: 2013-09-06
+#: check_frequency: 150d
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::projected 13708,17453
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
@@ -675,8 +676,8 @@ Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2013-08-05
-#: next_check: 2013-12-05
+#: last_checked: 2013-09-06
+#: next_check: 2014-03-06
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv
@@ -865,8 +866,8 @@ Weg im Stadtgarten Moabit: Qualität? Nachts beleuchtet?	?::inwork 5708,14077 566
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
-#: last_checked: 2013-08-09
-#: next_check: 2013-09-07
+#: last_checked: 2013-09-06
+#: next_check: 2013-10-07
 Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772
 # 
 #: last_checked: 2013-06-15 vvv
@@ -1056,12 +1057,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1276,8659 1410,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2163,9244 2316,9400
 # 
-#: XXX vmz-Eintrag relevant? NEW	Behrenstr. (Mitte) Richtung Friedrichstr. zwischen Wilhelmstraße und Glinkastraße Geplant ab: 06.09.2013 07 Uhr, Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13)	INKO_119615	
-Behrenstr.: Bauarbeiten?	?; 8861,12125 9054,12154 9064,12156 9164,12172
+# REMOVED (keine Bauarbeiten zu sehen) --- #: XXX vmz-Eintrag relevant? NEW	Behrenstr. (Mitte) Richtung Friedrichstr. zwischen Wilhelmstraße und Glinkastraße Geplant ab: 06.09.2013 07 Uhr, Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13)	INKO_119615	 --- Behrenstr.: Bauarbeiten?	?; 8861,12125 9054,12154 9064,12156 9164,12172
 # REMOVED (keine Bauarbeiten zu sehen) --- #: XXX vmz-Eintrag relevant? NEW	Nestorstr. (Charlottenburg): Straße vollständig gesperrt, Baustelle (Ende 09/13) in beiden Richtungen zwischen Kurfürstendamm und Johann-Georg-Str., 02.09.2013 06:45 Uhr bis 30.09.2013 10:00 Uhr	IM_020246 --- #: next_check: 2013-09-02 --- Nestorstr.: Bauarbeiten?	? 3374,10201 3359,9968 3347,9793
-#: XXX vmz-Eintrag relevant? NEW	Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13) Richtung Berliner Allee zwischen Parkstr. und Berliner Allee, 02.09.2013 08:00 Uhr bis 15.09.2013 16:00 Uhr	IM_020230	
-#: next_check: 2013-09-02
-Rennbahnstr.: Bauarbeiten?	? 14235,17103 14341,17030 14510,16916 14559,16912
+# REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13) Richtung Berliner Allee zwischen Parkstr. und Berliner Allee, 02.09.2013 08:00 Uhr bis 15.09.2013 16:00 Uhr	IM_020230	 --- #: next_check: 2013-09-02 --- Rennbahnstr.: Bauarbeiten?	? 14235,17103 14341,17030 14528,16910 14558,16907
 # 
 Stadtpark Steglitz: evtl. befindet sich das Drängelgitter hier?	? 5709,4674 5734,4694
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
@@ -1622,6 +1620,7 @@ Freesienweg: geplante Straße, wo wird sie genau liegen? Wie wird der Straßenname
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5489
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Hausnummern)
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
 #: last_checked: 2013-07-14 vvv
@@ -3357,10 +3356,11 @@ Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,3410
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036283513953/283513953/00094009/09-Anlagen/01/DRS0430VK.pdf vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4529 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2013 vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Benennung wird wirksam)
 #: XXX Benennung von 7 Privatwegen auf dem Grundstück der KGA "Erpetal" vvv
 #: XXX fehlen alle in Berlin.coords.data, PLZ=12587 vvv
 #: last_checked: 2013-06-22 (Umbenennung nicht durchgeführt) vvv
-#: next_check: 2013-09-17 (Ablauf der Widerspruchsfrist) vvv
+#: next_check: 2013-10-01 (Benennung wird wirksam) vvv
 Duftgeranienweg: (früher Hauptweg) Beton, Q0, verkehrsberuhigt, beleuchtet, Bodenschwellen, die leicht umfahren werden können	? 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25187,6549 25212,6560
 #: XXX wahrscheinlich unbeleuchtet vvv
 Klatschmohnweg: (früher Birkenweg) unbefestigter Weg, Q2, NN	? 24596,6292 24580,6319

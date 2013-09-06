@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-09-05 vvv
+#: last_checked: 2013-09-06 vvv
 #: next_check: 2013-09-14 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (fr¸her)
@@ -85,7 +85,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: source_id: INKO_093369
 #: note: ab Glinkastr. nur ungef‰hr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
-#: last_checked: 2013-07-10
+#: last_checked: 2013-09-06
 #: next_check: 2014-01-01
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
@@ -145,7 +145,7 @@ Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: XXX siehe auch Eintr‰ge in fragezeichen-orig (Falkoniergasse etc.)
-#: last_checked: 2013-08-26 vvv
+#: last_checked: 2013-09-06 vvv
 #: next_check: 2013-11-02 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
@@ -157,11 +157,11 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 # REMOVED --- #: last_checked: 2013-06-17 --- #: next_check: 2013-06-20 --- #: priority: #A --- Bernhard-Weiﬂ-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
 # 
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2013-08-07
+#: last_checked: 2013-09-06
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erw‰hnt)
-#: last_checked: 2013-08-07
+#: last_checked: 2013-09-06
 #: priority: #A
 Rathausstr.: Einbahnstraﬂe an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
 # 
@@ -171,22 +171,24 @@ Rathausstr.: Einbahnstraﬂe an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
 # 
 #: note: q4 zumindest im Berufsverkehr vvv
-#: last_checked: 2013-09-05 vvv
+#: last_checked: 2013-09-06 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
 Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q4::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
 #: note ^^^
 # 
-#: last_checked: 2013-08-10 vvv
+#: last_checked: 2013-09-06 vvv
+#: next_check: 2013-10-20 vvv
 #: note: siehe auch Eintrag zur Friedrichsbr¸cke
 Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
+#: next_check ^^^
 #: last_checked ^^^
 # 
 #: osm_watch: way id="131505633" version="4"
 #: XXX nach den Bauarbeiten wahrscheinlich bessere Qualit‰t, siehe Eintrag in qualitaet_s-orig
-#: last_checked: 2013-08-26 (Asphalt wird gerade aufgetragen)
-#: next_check: 2013-09-02
+#: last_checked: 2013-09-06
+#: next_check: 2013-11-01
 Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
 # 
 # REMOVED (reported by wosch) --- #: last_checked: 2013-04-11 --- Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9870,12657 9900,12643 9919,12613
@@ -766,8 +768,8 @@ Buschrosenplatz: enge Straﬂe	q1 13002,5548 13054,5556 13075,5470
 #: XXX sp‰ter vielleicht wieder "Fuﬂg‰nger, q1", und evtl. nur den Br¸ckenabschnitt so markieren
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
-#: last_checked: 2013-08-10
-#: next_check: 2013-09-11
+#: last_checked: 2013-09-06
+#: next_check: 2013-10-20
 Friedrichsbr¸cke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
@@ -1752,6 +1754,7 @@ Gersdorfstr. - Wulfila-Ufer: Bordstein, einige Fuﬂg‰nger	q2 8255,4791 8184,4716
 Geitnerweg: Bordstein, einige Fuﬂg‰nger	q2 5420,511 5448,455
 Seydlitzstr.: einige Fuﬂg‰nger	q1 6511,2284 6459,2364
 Trabener Steg: abgeflachte Treppenstufen, Fuﬂg‰nger	q2 2142,10027 2131,10014 2128,9999
+Wilhelm-Stolze-Str.: Fuﬂg‰nger	q1 13267,13167 13233,13242
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2095,7 +2098,7 @@ An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13235,13414
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 #: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2013-08-20
+#: last_checked: 2013-09-06
 #: check_frequency: 90d
 Ritterstr.: Fuﬂg‰nger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fuﬂg‰nger	q2 5808,5332 5810,5340 5822,5388
@@ -2352,8 +2355,9 @@ Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5242,10918 5264,10921 5348,10960 5
 (Krahmerstr. - Stockweg): Queren des Hindenburgdamms un¸bersichtlich, starker Autoverkehr	q4 4564,3457 4523,3482
 #: by: ^^^
 (Amalienstr. - Uferweg): Fuﬂg‰nger	q2 14124,16544 14183,16547
+(Groﬂe Seestr. - Uferweg): Fuﬂg‰nger	q2 14184,16889 14189,16793 14232,16716
 (Berliner Allee - Uferweg): Fuﬂg‰nger	q2 14485,16362 14449,16394
-Uferweg am Weiﬂen See: Fuﬂg‰nger	q2 14185,16570 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
+Uferweg am Weiﬂen See: Fuﬂg‰nger	q2 14463,16735 14423,16749 14299,16740 14232,16716 14198,16651 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
 Berliner Allee - Uferweg: enge Rampe oder 6 Stufen	q4+ 14499,16341 14485,16362
 Seeweg (Weiﬂensee): Fuﬂg‰nger	q2 14485,16362 14480,16449
 Seeweg (Weiﬂensee): Fuﬂg‰nger	q1 14610,16522 14581,16529 14510,16549

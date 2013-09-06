@@ -366,11 +366,11 @@ Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7953,15362 7754
 Müllerstr. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7819,15103 7754,15160 7629,15078
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213
-Straßenbahntrasse	3nocross::ignrte 14621,16563 14619,16672 14619,16682 14608,16772 14559,16912
+Straßenbahntrasse	3nocross::ignrte 14621,16563 14619,16672 14619,16682 14608,16772 14558,16907
 Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14608,16772 14619,16682 14723,16691
 Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14723,16691 14619,16682 14619,16672
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
-Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790
+Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14558,16907 14608,16772 14700,16790
 Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
 Bahnübergang nur für Fußgänger/Radfahrer	3 20610,12050 20624,12133 20627,12162
 Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20610,12050
@@ -622,16 +622,19 @@ Neumannstr. -> Greta-Garbo-Str.: Mittelstreifen	3::igndisp 11531,17250 11519,173
 Straßenbahn	3nocross::ignrte 14045,16120 14248,16202 14371,16252
 Lindenallee -> Berliner Allee: Straßenbahn	3::igndisp 14296,16065 14248,16202 14045,16120
 Berliner Allee -> Lindenallee: Straßenbahn	3::igndisp 14371,16252 14248,16202 14296,16065
-Straßenbahn	3nocross::ignrte 13512,15909 13623,15954 13737,15994
-Mahlerstr. -> Tassostr.: Straßenbahn	3::igndisp 13667,15836 13623,15954 13614,15984
-Mahlerstr. -> Berliner Allee: Straßenbahn	3::igndisp 13667,15836 13623,15954 13512,15909
-Berliner Allee -> Tassostr.: Straßenbahn	3::igndisp 13512,15909 13623,15954 13614,15984
-Berliner Allee -> Mahlerstr.: Straßenbahn	3::igndisp 13737,15994 13623,15954 13667,15836
 Straßenbahn	3nocross::ignrte 13401,15821 13432,15843 13487,15888 13512,15909
 Streustr. -> Berliner Allee: Straßenbahn	3::igndisp 13263,15930 13432,15843 13487,15888
 Berliner Allee -> Streustr.: Straßenbahn	3::igndisp 13401,15821 13432,15843 13263,15930
 Bizetstr. -> Berliner Allee: Straßenbahn	3::igndisp 13525,15784 13487,15888 13432,15843
 Berliner Allee -> Bizetstr.: Straßenbahn	3::igndisp 13512,15909 13487,15888 13525,15784
+Straßenbahn	3nocross::ignrte 13512,15909 13623,15954 13737,15994
+Mahlerstr. -> Tassostr.: Straßenbahn	3::igndisp 13667,15836 13623,15954 13614,15984
+Mahlerstr. -> Berliner Allee: Straßenbahn	3::igndisp 13667,15836 13623,15954 13512,15909
+Berliner Allee -> Tassostr.: Straßenbahn	3::igndisp 13512,15909 13623,15954 13614,15984
+Berliner Allee -> Mahlerstr.: Straßenbahn	3::igndisp 13737,15994 13623,15954 13667,15836
+Straßenbahntrasse	3nocross::ignrte 13826,16026 13737,15994 13623,15954
+Parkstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13712,16089 13737,15994 13826,16026
+Berliner Allee -> Parkstr.: Straßenbahntrasse	3::igndisp 13623,15954 13737,15994 13712,16089
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
 Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10269,906
 Buckower Chaussee -> Glaserweg: Mittelstreifen	3::igndisp 10269,906 10187,872 10237,749
@@ -1371,8 +1374,8 @@ Dresdner Str.: Einfahrt vom Oranienplatz gesperrt	3 11159,10769 11189,10831 1116
 Sebastianstr.: Einfahrt gesperrt	3 11162,10919 11110,10946 10934,11038
 Sebastianstr.: Einfahrt gesperrt	3 11162,10919 11110,10946 11049,10816
 Sebastianstr.: Einfahrt gesperrt	3 11162,10919 11110,10946 11150,11030
-Rennbahnstr. -> Bernkastler	3 14510,16916 14559,16912 14673,16895
-Rennbahnstr. -> Berliner Allee	3 14510,16916 14559,16912 14535,17003
+Rennbahnstr. -> Bernkastler	3 14528,16910 14558,16907 14673,16895
+Rennbahnstr. -> Berliner Allee	3 14528,16910 14558,16907 14535,17003
 Stephaniweg: Poller	3 4836,1659 4855,1616 4800,1582
 Stephaniweg: Poller	3 4836,1659 4855,1616 4895,1523
 Stephaniweg: Poller	3 4836,1659 4855,1616 4942,1649

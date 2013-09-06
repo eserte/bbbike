@@ -555,7 +555,7 @@ Kirchhofstr.: Kopfsteinpflaster	Q2 13003,7316 13001,7296
 Kirchhofstr.: Asphalt	Q0 13001,7296 12909,7181 12872,7134
 Siegfriedstr.: Asphalt	Q0 12843,7093 12872,7134
 Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14766,17702 14754,17673 14673,17454
-Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14559,16912
+Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
 Lessingstr.: Kopfsteinpflaster	Q2- 10425,67 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
 Lessingstr.: Asphalt	Q0 10425,67 10512,83 10614,105 10737,132
 Monbijoustr.: Asphalt	Q0 9771,13182 9736,13061 9714,12995 9707,12974
@@ -3465,8 +3465,9 @@ Trachtenbrodtstr.: Asphalt	Q0- 12158,15556 12232,15695
 Trachtenbrodtstr.: Kopfsteinpflaster	Q2 12232,15695 12310,15837
 Chamierstr.: Asphalt	Q0- 15840,15806 15801,15706
 (Amalienstr. - Uferweg): wassergebundene Decke	Q1 14124,16544 14183,16547
+(Große Seestr. - Uferweg): Asphalt	Q0 14184,16889 14189,16793 14232,16716
 (Berliner Allee - Uferweg): Kleinsteinpflaster	Q1 14485,16362 14449,16394
-Uferweg am Weißen See: wassergebundene Decke	Q1 14185,16570 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
+Uferweg am Weißen See: wassergebundene Decke	Q1 14463,16735 14423,16749 14299,16740 14232,16716 14198,16651 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
 Seeweg: Kleinkopfsteinpflaster	Q1 14499,16341 14485,16362 14480,16449
 Seeweg: wassergebundene Decke, Kleinkopfsteinpflaster	Q1 14510,16549 14581,16529
 Gustav-Adolf-Str.: Asphalt, mit einigen Schäden	Q0- 12097,16263 12182,16322 12285,16392 12409,16475 12568,16599 12670,16675
@@ -9052,6 +9053,8 @@ Scheelestr.: Asphalt	Q0 5139,696 5242,776 5342,845
 Lichterfelder Ring: Asphalt mit einigen Schäden	Q0- 5061,409 5448,455 5486,461 5584,475
 Schwäbische Str.: etwas welliger Asphalt	Q1+ 6728,9457 6771,9458 6851,9365
 Schwäbische Str.: neuer Asphalt	Q0 6727,9497 6771,9458
+Krügerstr.: Kopfsteinpflaster	Q2 12016,16113 12071,16130
+Krügerstr.: Beton und Asphalt	Q0- 12016,16113 11925,16086 11859,16058 11684,15997
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -18402,7 +18405,7 @@ Wörther Str.: Kopfsteinpflaster	Q2 11582,14448 11446,14508 11317,14564
 #: note: Kathleen Kuminowski meint "guter Beton" und enge Straße, q0
 #: note: Ilka Gomoll meint "Asphalt, Q2" und "schlechter Beton, q1"
 #: confirmed_by: srt (zumindest am östl. Ende)
-Bernkasteler Str.: guter Asphalt	Q0 14559,16912 14673,16895 14739,16891 14800,16887 14923,16914 14923,16901
+Bernkasteler Str.: guter Asphalt	Q0 14558,16907 14673,16895 14739,16891 14800,16887 14923,16914 14923,16901
 #: corrected_by: srt (Asphalt -> mäßiger Beton)
 Bernkasteler Str.: mäßiger Beton	Q1- 14923,16901 15015,16908 15208,16939 15334,16961 15455,16984
 #: by: ^^^
@@ -22698,8 +22701,9 @@ Rudi-Arndt-Str.: Asphalt	Q0 13359,13832 13449,13892
 (Hinter dem Velodrom): Beton	Q0 13585,14117 13854,13701
 #: corrected_by: srt (Beton -> Verbundsteinpflaster);
 (Weg über das Sportgelände): Verbundsteinpflaster	Q1 13252,14179 13385,13992
-#: confirmed_by: srt (westlicher Abschnitt)
+#: confirmed_by: srt
 An der Brauerei: Beton	Q1 13130,13222 13223,13264 13290,13294 13283,13311 13381,13354
+#: confirmed_by: srt
 An der Brauerei: Verbundsteine	Q1 13283,13311 13235,13414
 #: corrected_by: srt (Gehwegplatten -> )
 Wilhelm-Stolze-Str.: Beton	Q0 13223,13264 13233,13242
@@ -24161,8 +24165,8 @@ Hanns-Eisler-Str.: Asphalt	Q0 13550,14973 13596,14934 13633,14904
 Hanns-Eisler-Str.: Asphalt	Q0 13550,14973 13453,14997
 #: corrected_by: srt (Q1 -> Q0)
 Hanns-Eisler-Str.: Asphalt	Q0 13151,15462 13186,15518
-#: confirmed_by: srt (added "einige Löcher", Q1 -> Q1+)
-Hanns-Eisler-Str.: einige Löcher im Asphalt	Q1+ 13614,15095 13692,15231
+#: confirmed_by: srt (added "einige Löcher", Q1 -> Q1+ -> Q0-)
+Hanns-Eisler-Str.: einige Löcher im Asphalt	Q0- 13614,15095 13692,15231
 #: by:^^^
 # 
 #: by: Kai Brueggemann [AM] vvv

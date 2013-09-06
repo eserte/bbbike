@@ -7609,7 +7609,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005060',
        data  => <<EOF,
-userdel	1::inwork 14535,17003 14559,16912
+userdel	1::inwork 14535,17003 14558,16907
 EOF
      },
      { from  => 1175031936, # 2007-03-27 23:45
@@ -20039,6 +20039,7 @@ EOF
 #: note: am 2013-02-11 geprüft, keine Schranke, aber nur für "Linienverkehr frei"
 #: note: am 2013-04-11 geprüft: Radfahrer dürfen hier offiziell entlangfahren
 #: note: am 2013-08-14 geprüft: Fahrbahn war gesperrt
+#: note: am 2013-09-06 geprüft: Schranke, nur Straßenbahnen und Lieferverkehr werden durchgelassen
 userdel	q3::inwork 10530,14452 10723,14772
 EOF
      },
@@ -21801,6 +21802,26 @@ EOF
        source_id => 'IM_020269',
        data  => <<EOF,
 userdel	2::temp 9395,8726 9364,8640 9321,8607 9233,8597
+EOF
+     },
+     { from  => 1378015200, # 2013-09-01 08:00
+       until => 1379253600, # 2013-09-15 16:00
+       text  => 'Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung zwischen Parkstr. und Berliner Allee gesperrt, bis Mitte September 2013',
+       type  => 'handicap',
+       source_id => 'IM_020230',
+       data  => <<EOF,
+userdel	q4::inwork; 14235,17103 14341,17030 14528,16910
+EOF
+     },
+     { from  => 1378454400, # 2013-09-06 10:00
+       until => 1378576800, # 2013-09-07 20:00
+       text  => 'Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 07.09.2013 von 14 bis 18 Uhr',
+       type  => 'gesperrt',
+       periodic => 1,
+       source_id => 'IM_020277',
+       data  => <<EOF,
+userdel	2::temp 8606,16973 8677,17154
+userdel	2::temp 8503,16716 8583,16914
 EOF
      },
     );

@@ -234,7 +234,7 @@ Osloer Str.	3nocross 8503,16716 8721,16689 8759,16684 8939,16668
 Müllerstr./Lindower Str.	3nocross 7929,15006 7819,15103 7754,15160 7611,15286
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213
-Falkenberger/B2: Straßenbahntrasse	3nocross 14621,16563 14619,16672 14619,16682 14608,16772 14559,16912
+Falkenberger/B2: Straßenbahntrasse	3nocross 14621,16563 14619,16672 14619,16682 14608,16772 14558,16907
 #: by: Andreas Mühlhausen (Einbahnstraße nur für Autofahrer)
 Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
 Bahnübergang nur für Fußgänger/Radfahrer	3 * 20624,12133 *
@@ -365,9 +365,11 @@ Knollstr.: Poller	3 17608,61 17558,126 17490,89
 Neumannstr.: Mittelstreifen	3nocross 11549,17154 11531,17250 11519,17316 11492,17460
 #: note: Luftbild: vvv
 Berliner Allee: Straßenbahn	3nocross 14045,16120 14248,16202 14371,16252
-Berliner Allee: Straßenbahn	3nocross 13512,15909 13623,15954 13737,15994
 Berliner Allee: Straßenbahn	3nocross 13401,15821 13432,15843 13487,15888 13512,15909
 #: note: ^^^
+Berliner Allee: Straßenbahn	3nocross 13512,15909 13623,15954 13737,15994
+#: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer mit Drängelgitter ca. 15 Meter östlich
+Berliner Allee: Straßenbahntrasse	3nocross 13826,16026 13737,15994 13623,15954
 #: by: Nicolas Schier:
 #: confirmed_by: srt
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
@@ -791,8 +793,8 @@ Kutscherweg: Poller	3 * -13700,-106 *
 Dresdner Str.: Einfahrt vom Oranienplatz gesperrt	3 * 11189,10831 11162,10919
 #: note: könnte auch die andere Richtung gesperrt sein
 Sebastianstr.: Einfahrt gesperrt	3 11162,10919 11110,10946 *
-Rennbahnstr. -> Bernkastler	3 14510,16916 14559,16912 14673,16895
-Rennbahnstr. -> Berliner Allee	3 14510,16916 14559,16912 14535,17003
+Rennbahnstr. -> Bernkastler	3 14528,16910 14558,16907 14673,16895
+Rennbahnstr. -> Berliner Allee	3 14528,16910 14558,16907 14535,17003
 Stephaniweg: Poller	3 4836,1659 4855,1616 *
 Blaumeisenweg	1 5194,1690 5251,1543
 Töpferweg: Poller	3 13238,2521 13309,2410 *

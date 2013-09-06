@@ -1070,6 +1070,7 @@ Am Tierpark [Wohngebiet]	1 18512,10337 18552,10220
 Am Tierpark [Wohngebiet]	1 18552,10220 18534,10185 18484,10326
 (Freiherr-vom-Stein-Str. - Dominicusstr.)	1::igndisp 6477,8654 6454,8653
 Neue Jakobstr./Schulze-Delitzsch-Platz	1 11060,11753 11073,11774
+Edith-Kiss-Str.	1 12793,11132 12866,11256
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1352,7 +1353,7 @@ Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 1134
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8679,9544 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
 Klemkestr.: Mittelstreifen	3nocross 7520,18701 7599,18705 7676,18713
-Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14559,16912
+Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14558,16907
 #: by: jan (...matrix):
 #: confirmed_by: srt
 Berliner Allee: Straßenbahntrasse	3nocross 13401,15821 13432,15843 13487,15888
@@ -2450,7 +2451,7 @@ Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -
 # 
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden!
 #: source_id: INKO_113041
-#: last_checked: 2013-08-26
+#: last_checked: 2013-09-06
 #: check_frequency: 90d
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9852,12409
 # 
@@ -2525,7 +2526,7 @@ Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,1312
 # 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2013-07-10
+#: last_checked: 2013-09-06
 #: check_frequency: 90d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 # 
@@ -2548,8 +2549,8 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert?
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2013-08-07
-#: next_check: 2013-09-07
+#: last_checked: 2013-09-06
+#: next_check: 2014-01-01
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
 #: last_checked: 2012-05-06
@@ -2621,7 +2622,7 @@ Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480
 # REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
-#: last_checked: 2013-07-10 vvv
+#: last_checked: 2013-09-06 vvv
 #: next_check: 2014-06-01 vvv
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
@@ -2769,6 +2770,7 @@ Danziger Str.: Straßenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620
 Pintschstr.	1 13339,13196 13435,12973
 Landsberger Allee	3nocross 12382,13097 12585,13118 12685,13135
 Landsberger Allee: Straßenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701
+Landsberger Allee: Straßenbahntrasse	3nocross 13164,13374 13235,13414 13330,13468
 # REMOVED (mitlerweile (ca. 2012) existiert für Fußgänger und Autofahrer eine Kreuzungsmöglichkeit) --- #: by: jörg (schalkau): --- #: confirmed_by: srt --- Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
 Landsberger Allee	3nocross 21475,15705 21584,15753 21709,15808
 Landsberger Allee	3nocross 19852,15201 19987,15280 20260,15434

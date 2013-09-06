@@ -792,6 +792,7 @@ Am Tierpark [Wohngebiet]	1 18512,10337 18552,10220
 Am Tierpark [Wohngebiet]	1 18552,10220 18534,10185 18484,10326
 (Freiherr-vom-Stein-Str. - Dominicusstr.)	1::igndisp 6477,8654 6454,8653
 Neue Jakobstr./Schulze-Delitzsch-Platz	1 11060,11753 11073,11774
+Edith-Kiss-Str.	1 12793,11132 12866,11256
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1085,9 +1086,9 @@ Klemkestr. -> Klemkepark: Mittelstreifen	3::igndisp 7520,18701 7599,18705 7588,1
 Armbrustweg -> Klemkepark: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7588,18761
 Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7520,18701
 Klemkestr. -> Armbrustweg: Mittelstreifen	3::igndisp 7676,18713 7599,18705 7620,18615
-Straßenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14559,16912
+Straßenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14558,16907
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
-Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14559,16912 14608,16772 14700,16790
+Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14558,16907 14608,16772 14700,16790
 Straßenbahntrasse	3nocross::ignrte 13401,15821 13432,15843 13487,15888
 Streustr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13263,15930 13432,15843 13487,15888
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
@@ -1829,7 +1830,6 @@ Hedwig-Wachenheim-Str. -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::i
 Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12990,11006 13080,10956 13150,11101
 Mittelstreifen	3nocross::ignrte 12908,11058 12848,11093 12793,11132 12736,11186
 Edith-Kiss-Str. -> Mühlenstr.: Mittelstreifen	3::igndisp 12866,11256 12793,11132 12848,11093
-Mühlenstr. -> Edith-Kiss-Str.: Mittelstreifen	3::igndisp 12736,11186 12793,11132 12866,11256
 Straßenbahntrasse	3nocross::ignrte 21158,15885 21220,15741 21239,15633
 Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3::igndisp 21158,15885 21220,15741 21602,15908
 Schönagelstr. -> Raoul-Wallenberg-Str.: Straßenbahntrasse	3::igndisp 21602,15908 21220,15741 21239,15633
@@ -2760,6 +2760,9 @@ Landsberger Allee -> Ernst-Zinna-Weg: Landsberger Allee	3::igndisp 12382,13097 1
 Straßenbahntrasse	3nocross::ignrte 13635,13605 13702,13634 13854,13701
 Landsberger Allee -> Otto-Ostrowski-Str.: Straßenbahntrasse	3::igndisp 13854,13701 13702,13634 13769,13487
 Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13769,13487 13702,13634 13635,13605
+Straßenbahntrasse	3nocross::ignrte 13164,13374 13235,13414 13330,13468
+Landsberger Allee -> An der Brauerei: Straßenbahntrasse	3::igndisp 13330,13468 13235,13414 13283,13311
+An der Brauerei -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13283,13311 13235,13414 13164,13374
 Landsberger Allee	3nocross::ignrte 21475,15705 21584,15753 21709,15808
 Landsberger Allee -> Schönagelstr.: Landsberger Allee	3::igndisp 21475,15705 21584,15753 21602,15908
 Schönagelstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 21602,15908 21584,15753 21709,15808

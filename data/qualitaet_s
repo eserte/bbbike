@@ -484,7 +484,7 @@ Kirchhofstr.: Kopfsteinpflaster	Q2 13003,7316 13001,7296
 Kirchhofstr.: Asphalt	Q0 13001,7296 12909,7181 12872,7134
 Siegfriedstr.: Asphalt	Q0 12843,7093 12872,7134
 Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14766,17702 14754,17673 14673,17454
-Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14559,16912
+Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
 Lessingstr.: Kopfsteinpflaster	Q2 10425,67 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
 Lessingstr.: Asphalt	Q0 10425,67 10512,83 10614,105 10737,132
 Monbijoustr.: Asphalt	Q0 9771,13182 9736,13061 9714,12995 9707,12974
@@ -3015,8 +3015,9 @@ Trachtenbrodtstr.: Asphalt	Q0 12158,15556 12232,15695
 Trachtenbrodtstr.: Kopfsteinpflaster	Q2 12232,15695 12310,15837
 Chamierstr.: Asphalt	Q0 15840,15806 15801,15706
 (Amalienstr. - Uferweg): wassergebundene Decke	Q1 14124,16544 14183,16547
+(Große Seestr. - Uferweg): Asphalt	Q0 14184,16889 14189,16793 14232,16716
 (Berliner Allee - Uferweg): Kleinsteinpflaster	Q1 14485,16362 14449,16394
-Uferweg am Weißen See: wassergebundene Decke	Q1 14185,16570 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
+Uferweg am Weißen See: wassergebundene Decke	Q1 14463,16735 14423,16749 14299,16740 14232,16716 14198,16651 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
 Seeweg: Kleinkopfsteinpflaster	Q1 14499,16341 14485,16362 14480,16449
 Seeweg: wassergebundene Decke, Kleinkopfsteinpflaster	Q1 14510,16549 14581,16529
 Gustav-Adolf-Str.: Asphalt, mit einigen Schäden	Q0 12097,16263 12182,16322 12285,16392 12409,16475 12568,16599 12670,16675
@@ -8359,6 +8360,8 @@ Scheelestr.: Asphalt	Q0 5139,696 5242,776 5342,845
 Lichterfelder Ring: Asphalt mit einigen Schäden	Q0 5061,409 5448,455 5486,461 5584,475
 Schwäbische Str.: etwas welliger Asphalt	Q1 6728,9457 6771,9458 6851,9365
 Schwäbische Str.: neuer Asphalt	Q0 6727,9497 6771,9458
+Krügerstr.: Kopfsteinpflaster	Q2 12016,16113 12071,16130
+Krügerstr.: Beton und Asphalt	Q0 12016,16113 11925,16086 11859,16058 11684,15997
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -12017,7 +12020,7 @@ Gotenburger Str.: Asphalt	Q0 8847,16870 9000,16803
 Strausberger Str. (Alt-Hohenschönhausen): Asphalt	Q0 16377,14952 16295,15024
 Strausberger Str. (Alt-Hohenschönhausen): schlechtes Kopfsteinpflaster	Q3 16295,15024 16211,15105 16152,15164 16028,15218
 Wörther Str.: Kopfsteinpflaster	Q2 11582,14448 11446,14508 11317,14564
-Bernkasteler Str.: guter Asphalt	Q0 14559,16912 14673,16895 14739,16891 14800,16887 14923,16914 14923,16901
+Bernkasteler Str.: guter Asphalt	Q0 14558,16907 14673,16895 14739,16891 14800,16887 14923,16914 14923,16901
 Bernkasteler Str.: mäßiger Beton	Q1 14923,16901 15015,16908 15208,16939 15334,16961 15455,16984
 Hranitzkystr.: guter Asphalt	Q0 8689,1670 8661,1649 8578,1692 8471,1741 8342,1803 8286,1830 8217,1866 8128,1908 8048,1945 8009,1959 7960,1977
 Am Waidmannseck: Asphalt	Q0 4887,21944 4839,21964 4786,22010 4744,22065 4762,22092 4859,22142
@@ -14674,7 +14677,7 @@ Hanns-Eisler-Str.: einige Löcher im Asphalt	Q0 13614,15095 13550,14973
 Hanns-Eisler-Str.: Asphalt	Q0 13550,14973 13596,14934 13633,14904
 Hanns-Eisler-Str.: Asphalt	Q0 13550,14973 13453,14997
 Hanns-Eisler-Str.: Asphalt	Q0 13151,15462 13186,15518
-Hanns-Eisler-Str.: einige Löcher im Asphalt	Q1 13614,15095 13692,15231
+Hanns-Eisler-Str.: einige Löcher im Asphalt	Q0 13614,15095 13692,15231
 (Parkweg Bäkepark): wassergebundene Decke	Q1 5337,4192 5320,4217 5246,4240 5129,4262 5100,4285 5015,4339 4957,4448 4870,4609
 (Parkweg Bäkepark): Verbundsteinpflaster	Q1 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
 Oberlinstr.: Asphalt	Q1 4742,4885 4732,4939 4846,5069
