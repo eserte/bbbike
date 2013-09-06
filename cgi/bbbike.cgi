@@ -5598,7 +5598,6 @@ sub draw_route {
     my $draw;
     my $route; # optional Route object
 
-    my $session_is_expired;
     if (defined $q->param('coordssession')) {
 	if (my $sess = tie_session($q->param('coordssession'))) {
 	    # Note: the session data specified by coordssession could
@@ -5610,7 +5609,7 @@ sub draw_route {
 	    # We can hopefully safely cache if a session id was involved.
 	    @cache = @weak_cache;
 	} else {
-	    $session_is_expired = 1;
+	    return show_session_expired_error();
 	}
     }
 
@@ -5799,10 +5798,12 @@ sub draw_route {
     };
     if ($@) {
 	my $err = "Fehler in BBBikeDraw: $@";
-	http_header(-type => 'text/html',
-		    @no_cache,
-		   );
-	print "<body>$err</body>";
+	if (!$header_written) {
+	    http_header(-type => 'text/html',
+			@no_cache,
+		       );
+	    print "<body>$err</body>";
+	} # else just die
 	die $err;
     }
 
@@ -5829,11 +5830,7 @@ sub draw_route {
 	}
     };
     if ($@) {
-	if ($session_is_expired) {
-	    die "Cannot draw image because session is expired";
-	} else {
-	    die $@;
-	}
+	die $@;
     }
 }
 
@@ -7662,6 +7659,19 @@ sub send_error {
     warn "DEBUG: Error page sent for " . $q->query_string . ", reason: $reason\n";
     http_req_logging();
     my_exit 0;
+}
+
+sub show_session_expired_error {
+    http_header
+	(-type => 'text/html',
+	 @no_cache,
+	);
+    header(-title => M('Fehler: Sitzung ist abgelaufen'));
+    print <<EOF;
+<a href="$bbbike_script?begin=1"><b>@{[ M("Neue Anfrage") ]}</b></a><p>
+EOF
+    footer();
+    warn "Cannot draw image because session is expired";
 }
 
 ######################################################################
