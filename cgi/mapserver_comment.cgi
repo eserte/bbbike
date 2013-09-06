@@ -169,8 +169,11 @@ eval {
 	$plain_body .= $dump;
 	close BACKUP;
 
-	if ($data->{strname} !~ m{^\s*$}) {
-	    $subject .= ": $data->{strname}";
+	{
+	    no warnings 'uninitialized'; # strname may be empty
+	    if ($data->{strname} !~ m{^\s*$}) {
+		$subject .= ": $data->{strname}";
+	    }
 	}
 	$subject = substr($subject, 0, 70) . "..." if length $subject > 70;
 
