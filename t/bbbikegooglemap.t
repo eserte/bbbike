@@ -212,7 +212,7 @@ sub check_points {
 sub do_post ($$$$$) {
     my($ua, $url, $key, $data, $suffix) = @_;
     require File::Temp;
-    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => $suffix);
+    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_bbbikegooglemap_t" . $suffix);
     print $tmpfh $data or die $!;
     close $tmpfh or die $!;
     $ua->post($url, Content_Type => 'form-data', Content => [$key => [$tmpfile]]);
