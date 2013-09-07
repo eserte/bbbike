@@ -432,7 +432,7 @@ EOF
 	$html .= ' id="submitbutton"';
     }
     $html .= <<EOF;
- type="submit" onclick='this.form.showroutelist.value="0";' value="@{[ CGI::escapeHTML($maplabel) ]}" />
+ type="submit" onclick='this.form.showroutelist.value="0"; this.form.imagetype.value="$imagetype";' value="@{[ CGI::escapeHTML($maplabel) ]}" />
  <input type="hidden" name="showroutelist" value="0" />
 EOF
     if ($routelistlabel) {
