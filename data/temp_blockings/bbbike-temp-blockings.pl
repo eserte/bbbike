@@ -18078,6 +18078,10 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: note: nicht gesperrt: 2010-07-09 (Fr) gegen 22 Uhr
+#: note: nicht gesperrt: 2011-07-16 (Sa) gegen 16 Uhr
+#: note: nicht gesperrt: 2012-07-19 (Do) gegen 14 Uhr
+#: note: nicht gesperrt: 2013-09-07 (Sa) gegen 13 Uhr
 userdel	2::temp 18870,5833 18932,5926
 EOF
      },
@@ -21822,6 +21826,14 @@ EOF
        data  => <<EOF,
 userdel	2::temp 8606,16973 8677,17154
 userdel	2::temp 8503,16716 8583,16914
+EOF
+     },
+     { from  => 1378576083, # 2013-09-07 19:48
+       until => 1380499200, # 2013-09-30 02:00
+       text  => 'Ostendstr.: Einbahnstraße Richtung Osten wegen Bauarbeiten an den Straßenbahngleisen, bis 30.09.2013 02:00',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
 EOF
      },
     );

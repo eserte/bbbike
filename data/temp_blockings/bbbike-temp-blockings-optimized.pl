@@ -2446,7 +2446,11 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
          'text' => 'Johannes-Kraatz-Str.: Tor, Zugang könnte versperrt sein',
          'from' => undef,
          'id' => 2096,
-         'data' => 'userdel	2::temp 18870,5833 18932,5926
+         'data' => '#: note: nicht gesperrt: 2010-07-09 (Fr) gegen 22 Uhr
+#: note: nicht gesperrt: 2011-07-16 (Sa) gegen 16 Uhr
+#: note: nicht gesperrt: 2012-07-19 (Do) gegen 14 Uhr
+#: note: nicht gesperrt: 2013-09-07 (Sa) gegen 13 Uhr
+userdel	2::temp 18870,5833 18932,5926
 ',
          'type' => 'gesperrt'
        },
@@ -3392,6 +3396,15 @@ userdel	2::temp 8503,16716 8583,16914
          'text' => 'Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 07.09.2013 von 14 bis 18 Uhr',
          'type' => 'gesperrt',
          'id' => 2485
+       },
+       {
+         'until' => 1380499200,
+         'text' => 'Ostendstr.: Einbahnstraße Richtung Osten wegen Bauarbeiten an den Straßenbahngleisen, bis 30.09.2013 02:00',
+         'from' => 1378576083,
+         'id' => 2486,
+         'data' => 'userdel	q4::inwork; 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
+',
+         'type' => 'handicap'
        }
      
 );
