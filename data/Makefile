@@ -1385,8 +1385,8 @@ check-disabled:
 	@touch $@
 
 # Interactive test
-.check_ortsschilder_dist:	orte orte2 ortsschilder
-	perl -MData::Dumper -I.. -I../lib -MStrassen::Util -MStrassen::Core -Mopen=:locale -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$pos{$$_[0]->[0]} = $$_[0]->[1][0]; $$cat{$$_[0]->[0]} = $$_[0]->[2] }) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$pos = $$_[0]->[1][0]; printf "%.1fkm cat=%s %s\n", Strassen::Util::strecke_s($$pos, $$pos{$$_[0]->[0]})/1000, $$cat{$$_[0]->[0]}, $$_[0]->[0] }) ' | sort -nr | less
+.check_ortsschilder_dist:	orte orte2 ortsschilder-orig
+	perl -MData::Dumper -I.. -I../lib -MStrassen::Util -MStrassen::Core -Mopen=:locale -e 'for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { my($$r) = @_; my $$label = $$r->[0]; $$pos{$$label} = $$r->[1][0]; $$cat{$$label} = $$r->[2] }) }; Strassen->new_stream("ortsschilder-orig")->read_stream(sub { my($$r, $$dir) = @_; my $$label = "@{ $$dir->{linked} || [] }" || $$r->[0]; $$pos = $$r->[1][0]; printf "%.1fkm cat=%s %s\n", Strassen::Util::strecke_s($$pos, $$pos{$$label})/1000, $$cat{$$label}, $$label }, UseLocalDirectives => 1) ' | sort -nr | less
 
 .check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen routing_helper-orig
 	$(CHECK_POINTS) gesperrt .strassen.tmp landstrassen landstrassen2 fragezeichen routing_helper-orig
