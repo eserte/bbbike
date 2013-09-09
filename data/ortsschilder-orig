@@ -7,6 +7,11 @@
 # OS = Ortsschild
 # OHT = Ortshinweistafel
 # 
+# Editor notes: the name mentioned here should be as spelled on the sign.
+# There are check scripts which check all names here against orte/orte2.
+# If there are differences, then the name as found in orte/orte2 should
+# be marked with a "linked" directive.
+# 
 Prenzlau	OS 41313,100608
 Prenzlau	OS 41817,103329
 Prenzlau	OS 36972,100027
@@ -339,11 +344,11 @@ Schwanebeck|b. Berlin	OS 19931,25260
 Schwanebeck|b. Berlin	OS 19565,24028
 #: note: existiert das Schild hier noch?
 Schwanebeck|b. Berlin	OS 18073,23456
-#: note: eigentlich Schwanebeck-West vvv
-Schwanebeck|b. Berlin	OS 17622,24160
-Schwanebeck|b. Berlin	OS 17190,24695
-Schwanebeck|b. Berlin	OS 18015,25653
-#: note ^^^
+#: linked: Schwanebeck|b. Berlin vvv
+Schwanebeck-West	OS 17622,24160
+Schwanebeck-West	OS 17190,24695
+Schwanebeck-West	OS 18015,25653
+#: linked ^^^
 Schwanebeck|b. Berlin	OS 19790,24572
 Schwanebeck|b. Berlin	OS 19395,24634
 Schwanebeck-West	OS 18583,24966
@@ -451,8 +456,8 @@ Waltersdorf	OS 21535,-4790
 Waltersdorf	OS 21696,-2925
 Waltersdorf	OS 20951,-4235
 Schulzendorf|b. Eichwalde	OS 21764,-4869
-#REMOVED (existiert nicht mehr) --- Kienberg|(bei Waltersdorf)	OS 20236,-3167
-#REMOVED (existiert nicht mehr) --- Kienberg|(bei Waltersdorf)	OS 20103,-2868
+# REMOVED (existiert nicht mehr) --- Kienberg|(bei Waltersdorf)	OS 20236,-3167
+# REMOVED (existiert nicht mehr) --- Kienberg|(bei Waltersdorf)	OS 20103,-2868
 # REMOVED (tatsächlich? Müsste aber, da ja etwas weiter wieder ein Schild steht) --- Siedlung Hubertus	OS 21088,-2461
 Siedlung Hubertus	OS 21062,-2006
 Siedlung Hubertus	OS 20211,-2805
@@ -714,10 +719,10 @@ Pinnow|bei Gerswalde	OS 34750,90372
 Buchholz|bei Gerswalde	OS 32377,89414
 Buchholz|bei Gerswalde	OS 31661,89289
 Sachsenhausen	OS -476,40852
-#: note: ausgeschildert ist "Mittenwalde Ortsteil Blankensee" vvv
-Blankensee|(Mittenwalde)	OS 29344,87921
-Blankensee|(Mittenwalde)	OS 27977,87375
-#: note: ^^^
+#: linked: Blankensee|(Mittenwalde) vvv
+Mittenwalde Ortsteil Blankensee	OS 29344,87921
+Mittenwalde Ortsteil Blankensee	OS 27977,87375
+#: linked: ^^^
 Mittenwalde|b. Templin	OS 26799,86909
 Mittenwalde|b. Templin	OS 24969,87287
 Herzfelde|bei Klosterwalde	OS 22917,87978
