@@ -166,6 +166,8 @@ Heringsdorf	OS 58487,172961
 Ahlbeck	OS 59540,172359
 Ahlbeck	OS 60363,170713
 Ahlbeck	OS 61861,170883
+#: linked: Swinoujscie
+#: XXX_prog: is there a reason why orte2 is written as latin1? backward-compat with ancient bbbike versions?
 Świnoujście	OS 62473,169641
 Korswandt	OS 58312,168956
 Ulrichshorst	OS 56709,168439
@@ -358,11 +360,11 @@ Zepernick	OS 18178,26668
 Zepernick	OS 20482,28536
 Leest	OS -20616,2567
 Grube	OS -19656,2362
-#: XXX_prog: eigentlich "Dahlwitz-Hoppegarten, Gemeinde Hoppegarten", aber Check-Skripte verlangen einen gleichnamigen Ort in orte(2)-orig! vvv
-Dahlwitz	OS 26791,10388
-Dahlwitz	OS 25922,11127
-Dahlwitz	OS 26449,10953
-#: XXX_prog ^^^
+#: linked: Dahlwitz vvv
+Dahlwitz-Hoppegarten, Gemeinde Hoppegarten	OS 26791,10388
+Dahlwitz-Hoppegarten, Gemeinde Hoppegarten	OS 25922,11127
+Dahlwitz-Hoppegarten, Gemeinde Hoppegarten	OS 26449,10953
+#: linked ^^^
 Hönow	OS 26493,15515
 Hönow	OS 25528,15587
 Hönow	OS 27451,14108
@@ -635,6 +637,7 @@ Niederfinow	OS 45322,48104
 Niederfinow	OS 42849,49552
 Trampe	OS 39350,42740
 Trampe	OS 38848,41198
+#: linked: Tuchen
 Tuchen-Klobbicke	OS 37425,39993
 Klobbicke	OS 36426,39424
 Tuchen	OS 36139,39155
@@ -768,8 +771,8 @@ Biesendahlshof	OS 63798,89230
 Biesendahlshof	OS 63517,88597
 Niederfelde	OHT 66087,84469
 Niederfelde	OHT 66263,84195
-#: XXX_prog: eigentlich "Dallgow-Döberitz", aber Check-Skripte verlangen einen gleichnamigen Ort in orte(2)-orig!
-Dallgow	OS -9503,12227
+#: linked: Dallgow
+Dallgow-Döberitz	OS -9503,12227
 Seeburg	OS -9034,11411
 Seeburg	OS -8809,10915
 Groß Glienicke	OHT -9935,7406
