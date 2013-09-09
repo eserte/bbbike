@@ -1380,8 +1380,8 @@ check-disabled:
 	$(CHECK_POINTS) ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
-.check_ortsschilder2:	orte orte2 ortsschilder
-	perl -MData::Dumper -I.. -I../lib -MStrassen::Core -e '$$seen{"Berlin"} = 1; for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { $$seen{$$_[0]->[0]}++; for (@{ $$_[1]->{alias} || [] }) { $$seen{$$_ }++ } }, UseLocalDirectives => 1) }; Strassen->new_stream("ortsschilder")->read_stream(sub { $$seen{$$_[0]->[0]}++ or $$error{$$_[0]->[0]}++ }); if (%error) { die Dumper(\%error) }' 
+.check_ortsschilder2:	orte orte2 ortsschilder-orig
+	perl -MData::Dumper -I.. -I../lib -MStrassen::Core -e '$$seen{"Berlin"} = 1; for $$o (qw(orte orte2)) { Strassen->new_stream($$o)->read_stream(sub { my($$r) = @_; my $$label = $$r->[0]; $$seen{$$label}++; }) }; Strassen->new_stream("ortsschilder-orig")->read_stream(sub { my($$r, $$dir) = @_; my $$label = "@{ $$dir->{linked} || [] }" || $$r->[0]; $$seen{$$label}++ or $$error{$$label}++ }, UseLocalDirectives => 1); if (%error) { die Dumper(\%error) }' 
 	@touch $@
 
 # Interactive test
