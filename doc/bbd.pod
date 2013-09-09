@@ -581,6 +581,12 @@ routes).
 A priority for checks. The priority string should be something between
 C<#A> (highest) and C<#C> (lowest).
 
+=item C<linked: I<string>>
+
+May be used for check purposes. Currently only utilized in
+F<ortsschilder-orig>, where the linked name is to be used to do checks
+against F<orte-orig>/F<orte2-orig>.
+
 =back
 
 =head3 Obsolete and to-be-decided directives
