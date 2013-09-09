@@ -10453,7 +10453,7 @@ EOF
        text  => 'Bauarbeiten am Ostkreuz, Durchfahrt nicht mehr möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14911,10587 14875,10605 14843,10621
+userdel	2::inwork 14911,10587 14843,10621
 EOF
      },
      { from  => 1193776707, # 2007-10-30 21:38
@@ -13917,7 +13917,7 @@ EOF
        text  => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-15.05.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 13506,-2809 13373,-3234 13321,-3678 13301,-4355 13237,-4511 13215,-4564 13289,-4660
+userdel	2::inwork 13506,-2809 13393,-3084 13373,-3234 13321,-3678 13302,-4314 13301,-4355 13237,-4511 13215,-4564 13289,-4660
 EOF
      },
      { from  => 1240783200, # 2009-04-27 00:00
@@ -21738,6 +21738,7 @@ EOF
        data  => <<EOF,
 #: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 2,5 Wochen
 #: next_check: 2013-09-24
+#: source_id: IM_020294
 userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353
 EOF
      },

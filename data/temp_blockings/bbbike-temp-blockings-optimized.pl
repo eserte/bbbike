@@ -1,18 +1,6 @@
-$#temp_blocking = 30;
+$#temp_blocking = 34;
 push @temp_blocking,
 (
-       {
-         'periodic' => 1,
-         'until' => 1378666800,
-         'text' => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Wein- und Winzerfest, vom 7.9.2013 11:00 bis 8.9.2013 21:00',
-         'from' => 1378458000,
-         'id' => 31,
-         'data' => '#: by: http://www.family-and-friends-ev.de/3.html
-#: by: http://www.ag-bahnhofstrasse.de/weinfest.html
-userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -91,17 +79,6 @@ userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       {
-         'until' => 1378670400,
-         'text' => 'Alt-Rudow zwischen Krokusstr. und Neudecker Weg Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (7. und 8. Septermber 2013)',
-         'from' => 1378454400,
-         'id' => 112,
-         'data' => 'userdel	2::temp 16610,1715 16805,1488 16849,1437 16975,1262
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -3310,6 +3287,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'id' => 2476,
          'data' => '#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 2,5 Wochen
 #: next_check: 2013-09-24
+#: source_id: IM_020294
 userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353
 ',
          'type' => 'handicap'
@@ -3365,16 +3343,7 @@ userdel	2::night 17671,13132 17698,13134
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_020269',
-         'until' => 1378677599,
-         'text' => 'Platz der Luftbrücke: Straße wegen Veranstaltung gesperrt, 06.09.2013 bis 08.09.2013 ',
-         'from' => 1378332000,
-         'id' => 2483,
-         'data' => 'userdel	2::temp 9395,8726 9364,8640 9321,8607 9233,8597
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_020230',
          'until' => 1379253600,
@@ -3385,18 +3354,7 @@ userdel	2::night 17671,13132 17698,13134
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_020277',
-         'data' => 'userdel	2::temp 8606,16973 8677,17154
-userdel	2::temp 8503,16716 8583,16914
-',
-         'periodic' => 1,
-         'until' => 1378576800,
-         'from' => 1378454400,
-         'text' => 'Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 07.09.2013 von 14 bis 18 Uhr',
-         'type' => 'gesperrt',
-         'id' => 2485
-       },
+       undef,
        {
          'until' => 1380499200,
          'text' => 'Ostendstr.: Einbahnstraße Richtung Osten wegen Bauarbeiten an den Straßenbahngleisen, bis 30.09.2013 02:00',
