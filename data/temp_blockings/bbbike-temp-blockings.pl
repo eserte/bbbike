@@ -21732,14 +21732,16 @@ EOF
      },
      { from  => 1378591200, # 2013-09-08 00:00
        until => 1380146399, # 2013-09-25 23:59
-       text  => 'Manfred-von-Richthofen-Str.: Bauarbeiten zwischen Kaiserkorso und Wolffring, Fahrbahn in Richtung Süden gesperrt, vom 09.09.2013 bis voraussichtlich zum 25.09.2013',
+       text  => 'Manfred-von-Richthofen-Str.: Bauarbeiten zwischen Kaiserkorso und Bayernring, Fahrbahn in Richtung Süden gesperrt, vom 09.09.2013 bis voraussichtlich zum 25.09.2013',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html',
        data  => <<EOF,
-#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 2,5 Wochen
-#: next_check: 2013-09-24
+#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 2,5 Wochen, wird evtl. bis zum Wolffsring ausgeweitet?
 #: source_id: IM_020294
-userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353
+#: last_checked: 2013-09-09
+#: next_check: 2013-09-24
+userdel	q4::inwork; 9099,8670 9006,8602 8919,8508
+# REMOVED (hier noch nicht) --- userdel	q4::inwork; 8919,8508 8851,8424 8807,8353
 EOF
      },
      { from  => 1378591200, # 2013-09-08 00:00
