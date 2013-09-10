@@ -2980,16 +2980,17 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'type' => 'gesperrt'
        },
        {
-         'until' => undef,
-         'text' => 'Westklüne - Ostklüne: keine offizielle Fähre, aber wenn man Glück hat, kann man per Ruderboot übergesetzt werden',
          'recurring' => 1,
-         'from' => undef,
-         'id' => 2410,
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
 	2::temp 42506,161075 42450,161090
 #: XXX_prog ^^^
 ',
-         'type' => 'gesperrt'
+         'until' => undef,
+         'from' => undef,
+         'text' => 'Westklüne - Ostklüne: keine offizielle Fähre, aber wenn man Glück hat, kann man per Ruderboot übergesetzt werden',
+         'permanent' => 1,
+         'type' => 'gesperrt',
+         'id' => 2410
        },
        undef,
        undef,
@@ -3203,6 +3204,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        },
        {
          'until' => undef,
+         'permanent' => 1,
          'text' => 'Karl-Bonhoeffer-Nervenklinik: für Unbefugte ist das Befahren nicht erlaubt',
          'from' => undef,
          'id' => 2464,

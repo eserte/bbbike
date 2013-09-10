@@ -21027,6 +21027,7 @@ EOF
        until => undef,
        recurring => 1,
        text  => 'Westklüne - Ostklüne: keine offizielle Fähre, aber wenn man Glück hat, kann man per Ruderboot übergesetzt werden',
+       permanent => 1,
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
@@ -21621,6 +21622,7 @@ EOF
      { from  => undef,
        until => undef,
        text  => 'Karl-Bonhoeffer-Nervenklinik: für Unbefugte ist das Befahren nicht erlaubt',
+       permanent => 1,
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: Der Hinweis existiert nur am Nordeingang, aber nicht am Südeingang
