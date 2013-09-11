@@ -164,7 +164,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: Rolf Schrˆder <001301c0fe12$f9c9eb00$fe78a8c0@pc166>
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18005,6681 18077,6690 18125,6694 18254,6679 18339,6660 18494,6588
-Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18080,6670 18008,6672 17962,6674
+Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18008,6672 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11075
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8340,3242 8327,2975
@@ -1027,7 +1027,7 @@ Lindenweg	1s:q3 -3111,18105 -3076,18053 -3038,18063
 K¸sterstr.	1 -624,15494 -593,15300 -569,15167
 Straﬂburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
-#XXX --- hmmm kann doch keine Einbahnstraﬂenregelung hier erkennen --- Waldowallee	1 18875,9570 18916,9468
+#XXX --- hmmm kann doch keine Einbahnstraﬂenregelung hier erkennen --- Waldowallee	1 18878,9517 18901,9499 18916,9468
 Waldowallee	1 18916,9468 18867,9464
 Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18229,11256
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
@@ -1130,7 +1130,6 @@ Friedrich-Ebert-Str.: Straﬂenbahntrasse	3nocross -12780,-1544 -12794,-1497 -1283
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13772,-623
 #: by: rjoop
 Br¸cke mittlerweile gesperrt	2 -19183,7299 -19150,7320
-Prof.-Dr.-Helmert-Str.: Schranke	BNP:3 -7969,-1659
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
 Kiezstr.: Mittelstreifen	3nocross -13450,-1595 -13374,-1709 -13328,-1790
 Ruinenbergstr.	1 -13794,178 -13918,-164
@@ -1571,7 +1570,7 @@ Linksabbiegen in den Wolfensteindamm gef‰hrlich/unbequem	3nocross 4772,5069 4692
 #: by ^^^
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6989,8687
 #: by: Jirka Klaue:
-Am Tierpark: Straﬂenbahntrasse	3nocross 18631,10167 18585,10278 18554,10354 18446,10620
+Am Tierpark: Straﬂenbahntrasse	3nocross 18585,10278 18554,10354 18446,10620
 Am Tierpark: Straﬂenbahntrasse	3nocross 18286,11275 18268,11391 18216,11656
 M¸hlenstr.: Mittelstreifen ohne ‹berquerungshilfe	3nocross 12497,11459 12539,11416 12576,11375 12641,11288
 M¸hlenstr.: Mittelstreifen ohne ‹berquerungshilfe	3nocross 12990,11006 13080,10956 13144,10921
@@ -1968,6 +1967,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3 -7969,-1659
+Dr‰ngelgitter	BNP:3::trailer=10 18126,9075
 Dr‰ngelgitter	BNP:3::trailer=10 27115,11335
 Schranke	BNP:3::trailer=10 22004,17470
 zwei Dr‰ngelgitter an der Straﬂenbahntrasse	BNP:5::trailer=15 21860,18718
@@ -2330,7 +2331,7 @@ Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit	BNP:2::trailer=4 14597,1012
 # XXX w‰hrend der Bauarbeiten entfernt (2010-10) --- wird es jemals wieder eingesetzt? --- Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit	BNP:2::trailer=4 14626,10162
 #: note: 90cm ÷ffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite
 #: note: hmmm, heute (2012-10-16) habe ich einen Radfahrer mit Croozer da durchfahren gesehen -> trailer=no -> trailer=15
-Dr‰ngelgitter	BNP:3::trailer=15 12904,10141
+Dr‰ngelgitter	BNP:3::trailer=15 12901,10134
 #: note: relativ groﬂz¸gige ÷ffnung
 Dr‰ngelgitter	BNP:1::trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5 25039,5304
@@ -2464,7 +2465,7 @@ Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,1009
 Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982
 #: next_check ^^^
 # 
-#: last_checked: 2013-08-13
+#: last_checked: 2013-09-11
 #: check_frequency: 60d
 Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
 # 
@@ -2509,7 +2510,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Eintr‰ge in handicap_s-orig
-#: last_checked: 2013-09-09
+#: last_checked: 2013-09-11
 #: check_frequency: 60d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
@@ -2893,7 +2894,7 @@ Treskowallee: Straﬂenbahntrasse	3nocross 18631,10167 18694,10018 18703,9997 1874
 # REMOVED --- Treskowallee: Straﬂenbahntrasse	3nocross 18807,9746 18763,9837 18742,9903
 #: by: Christian Schweda [AM]
 #: confirmed_by: srt
-Treskowallee: Straﬂenbahn	3nocross 18875,9570 18865,9608 18823,9708
+Treskowallee: Straﬂenbahn	3nocross 18878,9517 18875,9570 18865,9608 18823,9708
 Treskowallee: Straﬂenbahn	3nocross 18807,9746 18823,9708 18865,9608
 #: by: Kay-Uwe Ludwig [AM] vvv
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253

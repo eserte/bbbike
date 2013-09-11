@@ -687,6 +687,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15724,6229
 	X 15058,6784
 	F 16274,6929
+#: note: Anforderungsampel
+	F 16058,6629
 	X 18245,5551
 	X 18023,5623
 	X 17960,5511
@@ -1923,6 +1925,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 12588,6337
 	X 12597,6293
 	F 12694,2544
+#: note: Anforderungsampel
 	F 17834,11192
 	X 22724,6608
 	X 20277,2463
@@ -2202,6 +2205,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 10736,12285
 #: XXX_prog: die genaue Position ist südlich der Einmündung, aber querende Radfahrer müssen die Ampel immer nehmen
 	F 13603,11538
+#: note: Anforderungsampel
 	F 18585,10278
 	F 22455,1812
 	F 14519,7301

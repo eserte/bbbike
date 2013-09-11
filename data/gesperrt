@@ -140,7 +140,7 @@ Georgenstr.	1 9434,12669 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18005,6681 18077,6690 18125,6694 18254,6679 18339,6660 18494,6588
-Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18080,6670 18008,6672 17962,6674
+Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18008,6672 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11075
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8340,3242 8327,2975
@@ -842,7 +842,6 @@ Friedrich-Ebert-Str. -> Schwertfegerstr.: Straﬂenbahntrasse	3::igndisp -12780,-1
 Schwertfegerstr. -> Friedrich-Ebert-Str.: Straﬂenbahntrasse	3::igndisp -12870,-1493 -12794,-1497 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Br¸cke mittlerweile gesperrt	2 -19183,7299 -19150,7320
-Prof.-Dr.-Helmert-Str.: Schranke	BNP:3:-93 -7969,-1659
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
 Mittelstreifen	3nocross::ignrte -13450,-1595 -13374,-1709 -13328,-1790
 Kiezstr. -> Wall am Kiez: Mittelstreifen	3::igndisp -13328,-1790 -13374,-1709 -13397,-1729
@@ -1819,7 +1818,7 @@ Wolfensteindamm -> Gehweg Gelieustr.: Linksabbiegen in den Wolfensteindamm gef‰h
 Mittelstreifen	3nocross::ignrte 6687,8385 6765,8480 6912,8617 6989,8687
 Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3::igndisp 6815,8691 6912,8617 6989,8687
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3::igndisp 6765,8480 6912,8617 6815,8691
-Straﬂenbahntrasse	3nocross::ignrte 18631,10167 18585,10278 18554,10354 18446,10620
+Straﬂenbahntrasse	3nocross::ignrte 18585,10278 18554,10354 18446,10620
 Otto-Schmirgal-Str. -> Am Tierpark: Straﬂenbahntrasse	3::igndisp 18512,10337 18554,10354 18446,10620
 Am Tierpark -> Otto-Schmirgal-Str.: Straﬂenbahntrasse	3::igndisp 18585,10278 18554,10354 18512,10337
 Straﬂenbahntrasse	3nocross::ignrte 18286,11275 18268,11391 18216,11656
@@ -2273,6 +2272,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke	BNP:3:-93 -7969,-1659
+Dr‰ngelgitter	BNP:3:-124:trailer=10 18126,9075
 Dr‰ngelgitter	BNP:3:-50:trailer=10 27115,11335
 Schranke	BNP:3:-211:trailer=10 22004,17470
 zwei Dr‰ngelgitter an der Straﬂenbahntrasse	BNP:5:-117:trailer=15 21860,18718
@@ -2543,7 +2544,7 @@ Schranke	BNP:5:-102 12571,7899
 Dr‰ngelgitter	BNP:5:34:trailer=10 14453,9929
 Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit	BNP:2:39:trailer=4 14558,10082
 Dr‰ngelgitter mit asphaltierer Vorbeifahrmˆglichkeit	BNP:2:41:trailer=4 14597,10129
-Dr‰ngelgitter	BNP:3:-153:trailer=15 12904,10141
+Dr‰ngelgitter	BNP:3:-153:trailer=15 12901,10134
 Dr‰ngelgitter	BNP:1:-149:trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5:-180 25039,5304
 Schranke	BNP:2:85:trailer=4 9907,11752
@@ -2969,7 +2970,9 @@ Treskowallee -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18742,
 Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18445,9887 18703,9997 18715,10003
 Weg entlang der Bahnstrecke -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018
 Treskowallee -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18694,10018 18703,9997 18715,10003
-Straﬂenbahn	3nocross::ignrte 18875,9570 18865,9608 18823,9708
+Straﬂenbahn	3nocross::ignrte 18878,9517 18875,9570 18865,9608 18823,9708
+Hˆnower Str. -> Treskowallee: Straﬂenbahn	3::igndisp 18765,9426 18875,9570 18865,9608
+Treskowallee -> Hˆnower Str.: Straﬂenbahn	3::igndisp 18878,9517 18875,9570 18765,9426
 Treskowallee -> Rheinpfalzallee: Straﬂenbahn	3::igndisp 18823,9708 18865,9608 18931,9629
 Rheinpfalzallee -> Treskowallee: Straﬂenbahn	3::igndisp 18931,9629 18865,9608 18875,9570
 Straﬂenbahn	3nocross::ignrte 18807,9746 18823,9708 18865,9608

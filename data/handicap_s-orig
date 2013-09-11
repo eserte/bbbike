@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-09-10 vvv
+#: last_checked: 2013-09-11 vvv
 #: next_check: 2013-09-14 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (früher)
@@ -297,11 +297,11 @@ Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 1
 Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14910,9643
 Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9772
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
-Görlitzer Park: Fußgänger	q2 12761,10195 12769,10211 12774,10222
+Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12506,10244 12384,10368 12328,10442
-Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12904,10141 12911,10156
-Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,10192 12670,10160
+Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
+Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12757,10197 12712,10192 12670,10160
 # später wieder herstellen: Görlitzer Park, Rondell: Fußgänger	q2 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 #: XXX wahrscheinlich wird hier auch asphaltiert
 #: last_checked: 2013-09-04
@@ -309,8 +309,8 @@ Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12761,10195 12712,
 Görlitzer Park, Rondell: Fußgänger, Bauarbeiten	q4::inwork 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12516,10202 12543,10223
-Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12611,10299
-Görlitzer Park: Fußgänger	q2 13053,10088 13013,10068 13013,10047 12987,10007 12932,9900
+Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12608,10294
+Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 12987,10007 12932,9900
 Tiergartenufer: Fußgänger	q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg, Fußgänger	q1 6309,11443 6186,11466
 Tiergarten: Parkweg, Fußgänger	q2 5666,11362 5727,11573 5758,11630 5780,11622 5802,11672 5831,11697 5818,11722 5835,11768 5858,11863 5900,11913
@@ -348,7 +348,7 @@ Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11141,9107
 Am Flutgraben: Fußgänger	q1 13333,9929 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fußgänger	q1 13418,9944 13669,9994 13711,10022
 Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 10215,5959 9955,5993
-Am Landwehrkanal: Parkweg	q1 12739,9576 12796,9548 12919,9584 12981,9672 13086,9825 13145,9861 13241,9995
+Am Landwehrkanal: Parkweg	q1 12739,9576 12796,9548 12919,9584 12981,9672 13086,9825 13145,9861 13230,9981
 Uferweg an den Treptowers: enger und kurviger Weg	q3 14500,9856 14465,9900 14464,9927 14509,9997 14432,10059 14373,10046
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20070810.1330.83363.html
 #: confirmed_by: srt
@@ -420,9 +420,8 @@ Wuhlheide/R1: Fußgänger	q1 20453,6211 20293,6278
 Wuhlheide/FEZ: einige Fußgänger	q1 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 (am Schloß Schönhausen): Fußgänger	q2 10308,19297 10344,19181 10382,19066
 (am Schloß Schönhausen): Fußgänger	q1 10344,19181 10249,19148
-#: XXX mittlerweile darf die Brücke offiziell befahren werden - evtl. das "ggfs. schieben" entfernen?
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4830
-Blockdammweg (Brücke): eng, Fußgänger, ggfs. schieben	q2 17975,8971 17996,8966 18087,9035
+# REMOVED (done) --- #: XXX mittlerweile darf die Brücke offiziell befahren werden - evtl. das "ggfs. schieben" entfernen? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4830
+Blockdammweg (Brücke): eng, Fußgänger, Radfahren erlaubt	q2 17975,8971 17996,8966 18076,9027
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9536,11912 9668,11928
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9524,12010 9656,12021
@@ -722,7 +721,8 @@ Wuhlewanderweg: Fußgänger	q1 22271,11218 22236,11198
 Wuhlewanderweg: Fußgänger	q1 22238,6195 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21590,7414 21613,7521 21620,7647 21604,7715 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21185,8483 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21351,9066
 Wuhlewanderweg: Fußgänger	q1 21385,9049 21468,9230 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fußgänger	q1 21611,9893 21619,9993 21566,10230 21581,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21830,10679 21867,10733 21950,10776 22060,10778 22097,10812 22160,10834
-Heinrich-Dathe-Platz: Fußgänger	q2 18512,10337 18484,10411 18394,10348
+Heinrich-Dathe-Platz: Fußgänger	q2 18512,10337 18484,10411 18471,10430 18442,10467
+Heinrich-Dathe-Platz: Fußgänger	q2 18484,10411 18394,10348
 Dathepromenade: Fußgänger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18048,10169
 (Dathepromenade - Sewanstr.): Bordsteine	q3 17953,10123 17905,10122
 #: note: die "parkenden Autos" von Uwe Schellenberg in der Rheinsteinstr. habe ich wieder entfernt
@@ -769,7 +769,7 @@ Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9756,12139
 Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
 Am Flutgraben: Fußgänger, sechs Bodenschwellen	q3 13535,10184 13371,9974
 Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
-(Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fußgänger	q2 13241,9995 13270,10030
+(Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fußgänger	q2 13230,9981 13270,10030
 (Ernst-Heilmann-Steg): Fußgänger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX später vielleicht wieder "Fußgänger, q1", und evtl. nur den Brückenabschnitt so markieren
@@ -862,9 +862,9 @@ Dornbrunner Str.: zwei Bodenschwellen	q1 16144,6542 16043,6414
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
 (Neue Grünstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10526,11612
-#: XXX wurden die Bodenschwellen mittlerweile abgebaut?
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624&date=20130910
-Cuvrystr.: Bodenschwellen	q1 13053,10088 13132,10239
+# REMOVED (nein, existieren noch) --- XXX wurden die Bodenschwellen mittlerweile abgebaut? --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624&date=20130910
+#: note: vier Bodenschwellen, die eigentlich gut zu um fahren sind, sowie zwei Aufpflasterungen
+Cuvrystr.: Bodenschwellen, Aufpflasterungen	q1 13035,10076 13132,10239
 Elsensteg: Fußgänger	q3 13366,8694 13376,8705 13394,8730 13402,8741
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 #: XXX_prog BS an der Lückstr. (ansonsten wäre es q1)
@@ -1766,6 +1766,8 @@ Trabener Steg: abgeflachte Treppenstufen, Fußgänger	q2 2142,10027 2131,10014 212
 Wilhelm-Stolze-Str.: Fußgänger	q1 13267,13167 13233,13242
 Regatta-Ufer: Fußgänger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 Am Schwanenberg: einige Fußgänger	q1 15752,9385 15793,9334
+(Kaiser's-Parkplatz): Parkplatzverkehr, Fußgänger	q2 16058,6629 16138,6548
+(Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fußgänger	q1 17842,6639 17852,6589 17826,6495
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

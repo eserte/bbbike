@@ -219,7 +219,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 Karl-Marx-Str.: wann werden hier die Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011)
-#: last_checked: 2013-09-04
+#: last_checked: 2013-09-11
 #: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
@@ -462,11 +462,7 @@ Friedrich-Kunert-Weg: Verlängerung?	? -13781,1772 -13811,1785
 Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13658,1730
 #: note ^^^
 # 
-#: by: http://www.sanierung-osw.de/index.php?id=419 (Blockdurchquerung)
-#: XXX asphaltiert, wahrscheinlich für Radfahrer frei
-#: XXX evtl. auch Park einzeichnen, Name?
-#: last_checked: 2013-08-19
-Siemensstr. - Wilhelminenhofstr. (durch die Grünanlage): wann wird hier eröffnet? Nachts beleuchtet?	?::inwork 17860,6644 17826,6495
+# REMOVED (realisiert; Park existiert eigentlich noch nicht, nur ein Spielplatz) --- #: by: http://www.sanierung-osw.de/index.php?id=419 (Blockdurchquerung) --- #: XXX asphaltiert, wahrscheinlich für Radfahrer frei --- #: XXX evtl. auch Park einzeichnen, Name? --- #: last_checked: 2013-08-19 --- (Siemensstr./Deulstr. - Wilhelminenhofstr.): wann wird hier eröffnet? Nachts beleuchtet?	?::inwork 17842,6639 17852,6589 17826,6495
 # 
 #: last_checked: 2013-07-06
 #: next_check: 2014-04-15
@@ -612,10 +608,10 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
-#: last_checked: 2013-08-08
+#: last_checked: 2013-09-11
 #: check_frequency: 60d
 #: priority: #C
-Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13898,8613
+Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13860,8599 13898,8613
 # 
 #: XXX Gartenstadt Karlshorst: neue Straßen vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036705222332/705222332/00098126/26-Anlagen/02/AnlageDS430.pdf (Lage der Gartenstadt)
@@ -664,24 +660,25 @@ Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,1191
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2013-06-02
+#: last_checked: 2013-09-11
 #: check_frequency: 90d
 #: priority: #C
-Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16734,11416
+Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
 #: last_checked: 2013-06-28
 #: check_frequency: 90d
 #: priority: #C
-Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16561,15956 16693,16202 16770,16465 16936,16606
+Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
 # REMOVED (hier wurde nur eine "Rettungsinsel" realisiert) --- #: last_checked: 2012-08-25 --- #: check_frequency: 90d --- #: priority: #C --- Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368 
 #: by: ^^^
 # 
 #: note: Treskowallee (Lichtenberg) in Höhe Waldowallee Baustelle, Fahrbahn von 2 auf 1 Fahrstreifen reduziert, ein Abbiegen aus Richtung Am Tierpark in die Waldowallee ist nicht möglich (bis Ende 03/2013)
+#: XXX siehe auch Eintrag in vorfahrt-orig
 #: source_id: IM_019443
 #: source_id: INKO_117348
 #: osm_watch: node id="28394944" version="19"
-#: last_checked: 2013-08-03
-#: next_check: 2013-09-06
-Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; wird es Radwege geben?	?::inwork 18823,9708 18865,9608 18875,9570 18867,9464 18834,9256
+#: last_checked: 2013-09-11
+#: check_frequency: 30d
+Treskowallee/Waldowallee: nach den Bauarbeiten wird hier eine Ampel existieren; wie wird die Radwegsituation aussehen?	?::inwork 18875,9570 18878,9517 18867,9464 18834,9256
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
@@ -805,9 +802,8 @@ Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,13
 # REMVOED --- mitten auf dem Weg wird gerade ein Haus gebaut; außerdem gab es in einem Amtsblatt eine "Entwidmung als Straßenland" --- #: last_checked: 2011-10-03 --- #: next_check: 2012-02-15 --- #: XXX zurzeit Bauarbeiten. Wahrscheinlich Gehwegplatten --- U Zwickauer Damm - U Wutzkyallee: für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 15622,2051 15622,2037 15312,2010
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110922.1205.359607.html vvv --- #: last_checked: 2012-09-16 --- #: next_check: 2013-06-01 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5098 (Verzögerung, März 2013) --- #: priority: #C --- Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,12824 23738,12799 --- #: by: ^^^
 # 
-#: last_checked: 2013-07-17 vvv
-#: next_check: 2013-09-17 vvv
-#: XXX siehe auch temporäre Sperrung des Weges in die Wuhlheide
+#: last_checked: 2013-09-11 vvv
+#: check_frequency: 100d vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2012
@@ -818,7 +814,7 @@ Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,13
 Alfred-Siggel-Weg: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inwork 19406,7886 19531,7794
 #: XXX ^^^
 #: by: ^^^
-#: next_check: ^^^
+#: check_frequency: ^^^
 #: last_checked ^^^
 # 
 #: XXX diese Straßen existieren noch nicht
@@ -1168,7 +1164,7 @@ Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 #: last_checked: 2013-05-27
 #: next_check: 2013-08-27
 #: priority: #C
-Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10033,17763
+Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10056,17781 10033,17763
 # 
 # REMOVED --- #: XXX siehe auch: gesperrt-orig, handicap_s-orig --- #: last_checked: 2013-06-06 --- #: next_check: 2013-06-14 --- #: priority: #A --- Grimmstr.: Einbahnstraße wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
 # 
@@ -1237,8 +1233,8 @@ Am Brendegraben: Asphalt, Q0, unbeleuchtet	? 13231,22880 13203,22892 13149,23024
 # 
 Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsblatt 3/2013), ist es für Radfahrer irgendwie relevant?	? -12727,-1416 -12703,-1410
 # 
-#: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8
-#: last_checked: 2013-08-08
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
+#: last_checked: 2013-09-11
 #: check_frequency: 90d
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
