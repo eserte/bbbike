@@ -1207,8 +1207,8 @@ Dorfstr. (Pieskow)	1s:q3 56031,-14776 55983,-14721
 B96a: Mittelstreifen	3nocross 18419,-1418 18666,-1325 18777,-1298 18892,-1273
 #: XXX_indoor evtl. nach strassen_bab übetragen? vvv
 B96a: Kraftfahrzeugstraße	2 16365,-3036 16209,-3558 15991,-3877 15751,-4002 14993,-4196
-B96a: Kraftfahrzeugstraße	2 13513,-4708 13237,-4511 12807,-4353 12108,-4288
-B96: Kraftfahrzeugstraße	2 11989,-4015 12108,-4288 12185,-4455
+B96a: Kraftfahrzeugstraße	2 13513,-4708 13237,-4511 12807,-4353 12124,-4288
+B96: Kraftfahrzeugstraße	2 11701,-3360 12124,-4288 12321,-4750 12654,-5498
 # REMOVED (-> strassen_bab-orig) --- B96: Kraftfahrzeugstraße	2 13772,-10251 13878,-9818 14037,-9386 13972,-9073 13886,-8957 13720,-8736 13600,-8488 13584,-8205 13598,-7705 13550,-7265 13575,-7073 13638,-6738 13562,-6525 13382,-6353 12997,-6220
 #: XXX_indoor ^^^
 Jürgen-Schumann-Allee	1 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
@@ -1532,6 +1532,7 @@ Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19940,12076 199
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straße	3nocross 14222,10430 14405,10340 14558,10264
+Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11351,12221
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12630,8722 12742,8635 12772,8612
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
@@ -2444,8 +2445,9 @@ Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8659,13708 8668,
 Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -3441,13270 -3462,13256 -3467,13240 -3526,13196
 # 
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden!
+#: XXX siehe auch Busspur in radwege-orig
 #: source_id: INKO_113041
-#: last_checked: 2013-09-06
+#: last_checked: 2013-09-10
 #: check_frequency: 90d
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9852,12409
 # 
@@ -2507,7 +2509,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-08-30
+#: last_checked: 2013-09-09
 #: check_frequency: 60d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
@@ -2571,12 +2573,12 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: Kai Wagner (permanente Sperrung)
 #: confirmed_by: srt
 #: osm_watch: way id="4402045" version="9"
-#: last_checked: 2013-06-27
-#: check_frequency: 100d
+#: last_checked: 2013-09-10
+#: check_frequency: 180d
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
-#: last_checked: 2013-06-27
-#: check_frequency: 100d
+#: last_checked: 2013-09-10
+#: check_frequency: 180d
 #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
 # 
@@ -2626,7 +2628,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check: ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-06-03
+#: last_checked: 2013-09-10
 #: next_check: 2014-01-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

@@ -20251,14 +20251,12 @@ EOF
 userdel	q4::inwork 18731,8577 18709,8423
 EOF
      },
-     { from  => $isodate2epoch->("2013-07-07 17:00:00"), # 1 Tag Vorlauf # from  => 1338001200, # 2012-05-26 05:00
-       until => $isodate2epoch->("2013-07-14 04:00:00"), #        until => 1338602400, # 2012-06-02 04:00
-       text  => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 8. Juli 2013, 17 Uhr bis 14. Juli 2013, 4 Uhr',
+     { from  => 1381096800, # 2013-10-07 00:00
+       until => 1381787999, # 2013-10-14 23:59
+       text  => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 8. bis 14. Oktober 2013',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.s-bahn-berlin.de/aktuell/2013/pdf/faltblatt_bruecken_treskowstrasse.pdf
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130618.1615.386236.html
-#: source_id: INKO_118652
+#: by: http://www.karlshorst-buergerverein.de/index.php?option=com_content&task=view&id=516
 userdel	2::inwork 18731,8577 18709,8423
 EOF
      },
@@ -21801,6 +21799,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130830.1005.388628.html',
        data  => <<EOF,
+#: confirmed_by: srt
 userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
 EOF
      },
@@ -21839,6 +21838,28 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
+EOF
+     },
+     { from  => 1378332000, # 2013-09-05 00:00
+       until => 1379282399, # 2013-09-15 23:59
+       text  => 'Behrenstr. (Mitte) Richtung Friedrichstr. zwischen Wilhelmstraße und Glinkastraße, Baustelle, Fahrtrichtung gesperrt, bis Mitte September 2013 ',
+       type  => 'handicap',
+       source_id => 'INKO_119615',
+       data  => <<EOF,
+#: confirmed_by: srt (an der Wilhelmstr.)
+userdel	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
+EOF
+     },
+     { from  => 1379196000, # 2013-09-15 00:00
+       until => 1382738399, # 2013-10-25 23:59
+       text  => 'Maximilankorso: Bauarbeiten zwischen Sigismundkorso und Alemannenstraße, teilweise mit Vollsperrungen, Benediktinerstr. und Artuswall werden zu Einbahnstraßen, vom 16. September 2013 bis zum 25. Oktober 2013',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130910.1105.389039.html',
+       data  => <<EOF,
+userdel	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25251 1513,25253 1576,25249 1738,25243
+#: XXX Einbahnstraßenrichtung ist geraten
+#: next_check: 2013-09-16
+	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
 EOF
      },
     );

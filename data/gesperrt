@@ -910,8 +910,8 @@ Mittelstreifen	3nocross::ignrte 18419,-1418 18666,-1325 18777,-1298 18892,-1273
 Am Seegraben (B96a) -> temporäre Umleitungsstrecke: Mittelstreifen	3::igndisp 18777,-1298 18666,-1325 18672,-1340
 temporäre Umleitungsstrecke -> Am Seegraben (B96a): Mittelstreifen	3::igndisp 18672,-1340 18666,-1325 18419,-1418
 B96a: Kraftfahrzeugstraße	2 16365,-3036 16209,-3558 15991,-3877 15751,-4002 14993,-4196
-B96a: Kraftfahrzeugstraße	2 13513,-4708 13237,-4511 12807,-4353 12108,-4288
-B96: Kraftfahrzeugstraße	2 11989,-4015 12108,-4288 12185,-4455
+B96a: Kraftfahrzeugstraße	2 13513,-4708 13237,-4511 12807,-4353 12124,-4288
+B96: Kraftfahrzeugstraße	2 11701,-3360 12124,-4288 12321,-4750 12654,-5498
 Jürgen-Schumann-Allee	1 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4062 19158,-4083
 Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
@@ -1711,6 +1711,9 @@ Stralauer Allee -> Lehmbruckstr.: unbequemes Abbiegen	3::igndisp 13596,10722 136
 unbequem passierbare Straße	3nocross::ignrte 14222,10430 14405,10340 14558,10264
 Bödikerstr. -> Stralauer Allee: unbequem passierbare Straße	3::igndisp 14447,10491 14405,10340 14558,10264
 Stralauer Allee -> Bödikerstr.: unbequem passierbare Straße	3::igndisp 14222,10430 14405,10340 14447,10491
+Mittelstreifen	3nocross::ignrte 11221,12250 11300,12241 11351,12221
+Dircksenstr. -> Stralauer Str.: Mittelstreifen	3::igndisp 11273,12301 11300,12241 11351,12221
+Stralauer Str. -> Dircksenstr.: Mittelstreifen	3::igndisp 11221,12250 11300,12241 11273,12301
 unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross::ignrte 12630,8722 12742,8635 12772,8612
 Sonnenallee -> Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12772,8612 12742,8635 12649,8535
 Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12649,8535 12742,8635 12630,8722

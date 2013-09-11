@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-09-09 vvv
+#: last_checked: 2013-09-10 vvv
 #: next_check: 2013-09-14 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (fr¸her)
@@ -35,7 +35,7 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-08-30 vvv
+#: last_checked: 2013-09-09 vvv
 #: next_check: 2013-09-30
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe, Asphaltdecke wurde entfernt	q3::inwork; 13473,11456 13366,11651
 Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
@@ -56,23 +56,23 @@ Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,1165
 Chausseestr.: direkte Zufahrt s¸dlich der Invalidenstraﬂe nicht mˆglich, umst‰ndliche Wegf¸hrung	q4::inwork 9042,13707 8935,13844
 # 
 #: source_id: INKO_113388
-#: last_checked: 2013-08-10
+#: last_checked: 2013-09-10
 #: next_check: 2013-12-31
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraﬂe gesperrt, Ausweichen auf Gehweg mˆglich	q4::inwork 9343,12464 9358,12351
 # 
-#: last_checked: 2013-07-10
-#: next_check: 2013-12-31
 #: source_id: INKO_091722
 #: source_id: INKO_091722_COPY_1
 #: XXX siehe auch tempor‰re Ampel an der Neust‰dtischen Kirchstr.
 #: XXX siehe auch Busspur UdL
+#: last_checked: 2013-09-10
+#: next_check: 2013-12-31
 Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
 # 
-#: last_checked: 2013-07-10
+#: last_checked: 2013-09-10
 #: next_check: 2013-12-31
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # 
-#: last_checked: 2013-08-10 vvv
+#: last_checked: 2013-09-10 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -96,10 +96,10 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: source_id: INKO_113363 vvv
 #: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt vvv
 #: osm_watch: way id="197160274" version="1" vvv
-#: last_checked: 2013-08-30 vvv
+#: last_checked: 2013-09-10 vvv
 #: next_check: 2013-11-15 vvv
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, eng	q4::inwork 8743,11663 8837,11676
-Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwork 8837,11676 9000,11727
+Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, Bordstein	q3::inwork 8837,11676 9000,11727
 #: next_check ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -145,7 +145,7 @@ Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: XXX siehe auch Eintr‰ge in fragezeichen-orig (Falkoniergasse etc.)
-#: last_checked: 2013-09-06 vvv
+#: last_checked: 2013-09-10 vvv
 #: next_check: 2013-11-02 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
@@ -157,11 +157,11 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 # REMOVED --- #: last_checked: 2013-06-17 --- #: next_check: 2013-06-20 --- #: priority: #A --- Bernhard-Weiﬂ-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
 # 
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2013-09-06
+#: last_checked: 2013-09-10
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erw‰hnt)
-#: last_checked: 2013-09-06
+#: last_checked: 2013-09-10
 #: priority: #A
 Rathausstr.: Einbahnstraﬂe an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
 # 
@@ -171,7 +171,7 @@ Rathausstr.: Einbahnstraﬂe an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10256,11160
 # 
 #: note: q4 zumindest im Berufsverkehr vvv
-#: last_checked: 2013-09-06 vvv
+#: last_checked: 2013-09-10 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
 Neue Gr¸nstr.: Einbahnstraﬂenregelung wegen Bauarbeiten in der Alten Jakobstr.	q4::inwork; 10389,11390 10446,11470
 #: last_checked: ^^^
@@ -420,6 +420,8 @@ Wuhlheide/R1: Fuﬂg‰nger	q1 20453,6211 20293,6278
 Wuhlheide/FEZ: einige Fuﬂg‰nger	q1 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 (am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q2 10308,19297 10344,19181 10382,19066
 (am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q1 10344,19181 10249,19148
+#: XXX mittlerweile darf die Br¸cke offiziell befahren werden - evtl. das "ggfs. schieben" entfernen?
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4830
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, ggfs. schieben	q2 17975,8971 17996,8966 18087,9035
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11912 9668,11928
@@ -860,6 +862,8 @@ Dornbrunner Str.: zwei Bodenschwellen	q1 16144,6542 16043,6414
 #: XXX_prog: f¸r Anh‰nger relevant (q1 oder so)
 Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
 (Neue Gr¸nstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10526,11612
+#: XXX wurden die Bodenschwellen mittlerweile abgebaut?
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624&date=20130910
 Cuvrystr.: Bodenschwellen	q1 13053,10088 13132,10239
 Elsensteg: Fuﬂg‰nger	q3 13366,8694 13376,8705 13394,8730 13402,8741
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372

@@ -2101,6 +2101,8 @@ Eschengraben: Asphalt	Q0 11778,17066 11783,17036 11831,16802 11776,16753 11720,1
 #: corrected_by: srt (Kopfsteinpflaster, dann Asphalt->)
 Eschengraben: Beton	Q1 11755,17216 11778,17066
 #: by: rjoop: vvv
+#: note: "stark aufgefaltet", "Q4"
+(Mauerweg Rudow): schlechter Asphalt	Q3 16997,-663 17076,-644 17236,-602
 (Bucher Teiche - Hobrechtsfelde): Feldweg, zweispurig	Q2 14497,26727 14494,26854 14567,27165 14660,27310 14699,27471
 (Bucher Teiche - Hobrechtsfelde): Waldweg	Q2 14699,27471 14759,27468 15076,27753 15108,27979 15777,28037
 (Bucher Teiche - Schˆnerlinder Chaussee): eng, umgest¸rzte B‰ume	Q3+ 14017,25491 14141,25659 14216,25760 14302,26021 14352,26100 14366,26234 14538,26558 14497,26727
@@ -9058,6 +9060,8 @@ Tunnelstr.: Verbundsteinpflaster	Q1+ 15728,9415 15752,9385
 Regatta-Ufer: Parkweg	Q1 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 Tivoliplatz: Verbundsteinpflaster	Q1 8988,8990 8914,8988
 Am Weinhang: Verbundsteinpflaster	Q1 8914,8965 8914,8988 8913,9020
+#: by: osm
+(Postenweg - Mauerweg): Sand	Q2 17013,-745 16997,-663
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -10629,6 +10633,9 @@ Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15941,1483
 Freienwalder Str.: Kopfsteinpflaster (einigermaﬂen gut)	Q2 16849,15263 16651,15345 16618,15356 16406,15452 16331,15486
 Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16354,15323 16208,15379
 #: corrected_by: srt (geteert -> ...)
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5230
+#: XXX "... einen ersten Teilabschnitt der Fahrbahn in der Roedernstraﬂe instand zu setzen ..."
+#: next_check: 2013-11-30 ("Mit der Fertigstellung ist voraussichtlich nicht vor November zu rechnen")
 Roedernstr.: Asphalt mit Sch‰den	Q1- 16208,15379 15825,15547 15552,15660
 Prieﬂnitzstr.: Asphalt	Q0 11351,19169 11407,19186 11549,19258
 #: by: ^^^

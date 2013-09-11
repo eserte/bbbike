@@ -690,8 +690,8 @@ Verbundsteinpflaster	RW1; 29269,16380 29406,16338 29537,16344 29701,16449 29756,
 	RW6;RW6 10210,-3718 10278,-3746 10305,-3654
 	RW2; 10185,-4006 10210,-4010 10346,-4027
 	RW2;RW2 11701,-3360 11686,-3321 11663,-3266
-asphaltiert	RW2;RW8 11701,-3360 11840,-3678 11989,-4015
-	RW2;RW8 12185,-4455 12220,-4530 12321,-4750
+# REMOVED (als separater Weg eingezeichnet) --- asphaltiert	RW2;RW8 11701,-3360 11989,-4015
+# REMOVED (als separater Weg eingezeichnet) ---	RW2;RW8 12188,-4452 12321,-4750
 Verbundsteinpflaster	RW1;RW1 25912,11081 25922,11127 25964,11310 26026,11377 26128,11457 26150,11516 26222,11726
 Verbundsteinpflaster	RW1;RW1 25964,11310 26404,11183
 ######################### User Contributions #################################
@@ -769,7 +769,7 @@ straﬂenbegleitende Radwege	RW;RW -11253,13707 -11635,13818 -12145,13943 -13019,1
 # 
 #: by: Stefan Schmidt:
 #: note: bergmann (...beuth...) meint: "Radweg nicht mehr ganz so glatt"
-	RW;RW 11165,-5318 11291,-4485 11355,-4293 11338,-3945
+	RW;RW 11165,-5318 11189,-5157 11291,-4485 11355,-4293 11338,-3945
 # 
 #: by: Aimo Raasch vvv
 #: confirmed_by: srt (und teilweise korrigiert) vvv

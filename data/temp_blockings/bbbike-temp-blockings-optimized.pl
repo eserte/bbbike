@@ -2767,7 +2767,16 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1381787999,
+         'text' => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 8. bis 14. Oktober 2013',
+         'from' => 1381096800,
+         'id' => 2330,
+         'data' => '#: by: http://www.karlshorst-buergerverein.de/index.php?option=com_content&task=view&id=516
+userdel	2::inwork 18731,8577 18709,8423
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3343,7 +3352,8 @@ userdel	2::night 17671,13132 17698,13134
          'text' => 'Scheidemannstr.: Bauarbeiten, Fahrbahn zwischen Ebertstr. und Yitzhak-Rabin-Str. gesperrt, 02. September 2013 bis 18. September 2013 ',
          'from' => 1377986400,
          'id' => 2482,
-         'data' => 'userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
+         'data' => '#: confirmed_by: srt
+userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
 ',
          'type' => 'handicap'
        },
@@ -3365,6 +3375,30 @@ userdel	2::night 17671,13132 17698,13134
          'from' => 1378576083,
          'id' => 2486,
          'data' => 'userdel	q4::inwork; 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_119615',
+         'until' => 1379282399,
+         'text' => 'Behrenstr. (Mitte) Richtung Friedrichstr. zwischen Wilhelmstraße und Glinkastraße, Baustelle, Fahrtrichtung gesperrt, bis Mitte September 2013 ',
+         'from' => 1378332000,
+         'id' => 2487,
+         'data' => '#: confirmed_by: srt (an der Wilhelmstr.)
+userdel	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130910.1105.389039.html',
+         'until' => 1382738399,
+         'text' => 'Maximilankorso: Bauarbeiten zwischen Sigismundkorso und Alemannenstraße, teilweise mit Vollsperrungen, Benediktinerstr. und Artuswall werden zu Einbahnstraßen, vom 16. September 2013 bis zum 25. Oktober 2013',
+         'from' => 1379196000,
+         'id' => 2488,
+         'data' => 'userdel	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25251 1513,25253 1576,25249 1738,25243
+#: XXX Einbahnstraßenrichtung ist geraten
+#: next_check: 2013-09-16
+	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
 ',
          'type' => 'handicap'
        }

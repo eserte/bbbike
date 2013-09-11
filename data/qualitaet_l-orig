@@ -201,7 +201,7 @@ KW: Kopfsteinpflaster	Q2 26177,-11648 25859,-11559 25618,-11642
 Ragow: Asphalt	Q0 20843,-12781 20528,-12859 20408,-13031 20134,-13333 19800,-13610 19494,-13746
 Ragow (Köpenicker Str.): Asphalt	Q0 20127,-12521 20408,-13031
 #: corrected_by: bergmann (...beuth) (Kopfsteinpflaster, Q2 -> Q0)
-Trebbiner Str.: Asphalt	Q0 11165,-5318 11291,-4485
+Trebbiner Str.: Asphalt	Q0 11165,-5318 11189,-5157 11291,-4485
 #: by: Stefan Schmidt:
 #: corrected_by: bergmann/osm (mäßiges Kopfsteinpflaster, Q2 -> ...)
 #: confirmed_by: srt
@@ -1852,7 +1852,8 @@ Schulweg: Verbundsteinpflaster	Q1 28363,-19964 28398,-19911 28421,-19768
 Pätz (Groß Köriser Str.): Verbundsteinpflaster	Q1 28540,-19744 28514,-20071 28505,-20243
 Pätz (Groß Köriser Str.): Asphalt	Q0 28540,-19744 28615,-19431
 Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12271
-Postenweg Schönefeld: guter Beton	Q0 17234,-685 16205,-969 15796,-1112 15801,-1168
+# REMOVED (by rjoop: "Grundstück wurde abgetrennt") --- Postenweg Schönefeld: guter Beton	Q0 17234,-685 17013,-745
+Postenweg Schönefeld: guter Beton	Q0 17013,-745 16205,-969 15796,-1112 15801,-1168
 Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15933,-1592 15289,-2873
 Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0-; 15289,-2873 15933,-1592 16074,-1240 16205,-969
 Rudower Str.: Asphalt	Q0 15289,-2873 14977,-3505 14878,-3602
@@ -3104,6 +3105,7 @@ Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2560,-25 2611,-100
 	Q2 2611,-100 2669,-187 2757,-311 2847,-431
 Maxim-Gorki-Str. (Teltow): Asphalt	Q0 3187,380 3235,310
 Gerhart-Hauptmann-Str. (Teltow): Asphalt	Q0 3263,427 3304,356
+Radweg an der B96: asphaltier	Q0 11701,-3360 11697,-3397 11986,-4036
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:

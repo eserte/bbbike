@@ -118,23 +118,27 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-08-27 vvv
-Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12758,11915 12726,11851 12681,11741 12645,11673
+#: last_checked: 2013-09-10 vvv
+#: next_check: 2013-09-12 vvv
+Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::inwork; 12726,11851 12681,11741 12645,11673
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
+#: next_check ^^^
+#: last_checked ^^^
+#: last_checked: 2013-09-10 vvv
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
 #: last_checked ^^^
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-09-05
+#: last_checked: 2013-09-10
 #: check_frequency: 60d
 Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,11876 11242,11720
 # 
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2013-07-16
+#: last_checked: 2013-09-10
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -325,6 +329,9 @@ Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
 # 
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
+#: next_check: 2014-03-15
+Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 #: section ^^^
 #: ignore ^^^
 #
@@ -374,6 +381,7 @@ Gleisdreieckpark - Bautzener Str.: entsteht hier ein Weg?	?::projected 8260,1018
 # 
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gudvanger_strasse.html vvv
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf?start&ts=1365760997&file=kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf vvv
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20130910.1250.389055.html (Baubeginn 38. KW) vvv
 #: last_checked: 2013-08-16 vvv
 #: next_check: 2013-10-16 vvv
 #: prio: #C
@@ -381,6 +389,7 @@ Erich-Weinert-Str.: Zebrastreifen in Planung	?::projected 11710,15997 11691,1597
 Gudvangerstr.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11684,15997 11758,16111
 #: next_check ^^^
 #: last_checked ^^^
+#: by: ^^^
 #: by: ^^^
 #: by: ^^^
 # 
@@ -645,8 +654,8 @@ Am Dominikusteich: Qualität? Straße bereits fertiggestellt?	?::inwork 2760,23964
 #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16457,16204 16448,16102 16485,15979 16543,15892
 # 
-#: last_checked: 2013-07-02
-#: check_frequency: 90d
+#: last_checked: 2013-09-10
+#: check_frequency: 120d
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
 #: XXX Baumaßnahme 1.16 (Realisierung nach 2011)
@@ -764,6 +773,7 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html
 #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Brücke)
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619&date=20130910 (Antwort)
 #: last_checked: 2013-09-09 (Rampe noch in Bau) vvv
 #: next_check: 2013-11-30 vvv
 #: osm_watch: way id="187902666" version="2"
@@ -1059,7 +1069,6 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1276,8659 1410,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2163,9244 2316,9400
 # 
-# REMOVED (keine Bauarbeiten zu sehen) --- #: XXX vmz-Eintrag relevant? NEW	Behrenstr. (Mitte) Richtung Friedrichstr. zwischen Wilhelmstraße und Glinkastraße Geplant ab: 06.09.2013 07 Uhr, Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13)	INKO_119615	 --- Behrenstr.: Bauarbeiten?	?; 8861,12125 9054,12154 9064,12156 9164,12172
 # REMOVED (keine Bauarbeiten zu sehen) --- #: XXX vmz-Eintrag relevant? NEW	Nestorstr. (Charlottenburg): Straße vollständig gesperrt, Baustelle (Ende 09/13) in beiden Richtungen zwischen Kurfürstendamm und Johann-Georg-Str., 02.09.2013 06:45 Uhr bis 30.09.2013 10:00 Uhr	IM_020246 --- #: next_check: 2013-09-02 --- Nestorstr.: Bauarbeiten?	? 3374,10201 3359,9968 3347,9793
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13) Richtung Berliner Allee zwischen Parkstr. und Berliner Allee, 02.09.2013 08:00 Uhr bis 15.09.2013 16:00 Uhr	IM_020230	 --- #: next_check: 2013-09-02 --- Rennbahnstr.: Bauarbeiten?	? 14235,17103 14341,17030 14528,16910 14558,16907
 # 
@@ -2028,7 +2037,7 @@ Am Neuen Kanal/Trappenallee: Qualität?	? -3996,22969 -3994,23162 -3503,23811
 Dorfstr. Stolpe-Dorf: Qualität?	? -25,27812 237,28184 524,28171
 Weg am Flakensee: Qualität (Waldweg?)?	? 35021,2212 35000,2269 35045,2422 35024,2900 35088,3016 35167,3074 35353,3476 35347,3555 35252,3653 35143,3698 35103,3769 35134,3866 35103,3973 35170,4058 35207,4305 35134,4500
 Bodelschwinghstr./Grenzweg (Mahlow): Qualität?	? 11291,-4485 11651,-4515 11706,-4579 11779,-4549 12184,-4605 12233,-4608
-B96 (Radweg) - Grenzweg (Mahlow): Qualität (wahrscheinlich asphaltiert?)	? 12220,-4530 12180,-4554 12184,-4605
+B96 (Radweg) - Grenzweg (Mahlow): Qualität (wahrscheinlich asphaltiert?)	? 12215,-4532 12180,-4554 12184,-4605
 # REMOVED (unter Umständen nachts gesperrt, deshalb nicht aufgenommen) --- Britzer Garten - Mohriner Allee: Qualität? Genaue Wegführung?	? 12034,3198 12155,3389 12082,3425 11913,3652
 Sputendorf - Struveshof: Qualität (wahrscheinlich asphaltiert)? Genaue Wegführung?	? -1316,-7721 -862,-9933
 B198: laut Aktiv Regional viele Steigungen und Gefälle	? -8925,105645 -7570,105900 -7335,106120 -6848,106401 -6110,106473 -5887,106647 -4681,106367 -3724,105742 -3482,105401 -3330,105252 -2961,105166 -2570,105293
@@ -3512,3 +3521,8 @@ Schwanebecker Chaussee [Stichstraße]: Straßenname? Qualität?	? 17591,25405 17428
 Hauffstr. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 2809,28 2873,-60 2951,-185 3030,-312 3101,-427
 Maxim-Gorki-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3235,310 3325,179 3404,64 3485,-56 3578,-193 3627,-270
 Gerhart-Hauptmann-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3304,356 3320,335 3409,208 3490,102 3561,-5 3658,-145 3726,-242
+Neue Straße (Mahlow): Qualität?	? 12387,-4943 12241,-5186
+Poststr. (Mahlow): Qualität?	? 11082,-5172 11189,-5157 11281,-5178 11390,-5228
+Ernst-Thälmann-Str. (Mahlow): Qualität?	? 11390,-5228 11439,-5233 11639,-5201 11747,-5140 11772,-5124 11789,-5111 11919,-5061 12085,-5114
+Krügers Land (Mahlow): Qualität? Teilweise mit Radweg?	? 12085,-5114 12147,-5162 12241,-5186 12294,-5215 12583,-5521 12654,-5498 12769,-5423 12782,-5284
+Ibsenstr. (Mahlow): Qualität? Existiert ein Radweg?	? 12340,-4833 12307,-4851 12278,-4863 12208,-4975 12174,-5030 12085,-5114 11970,-5232 11922,-5279 11809,-5383 11691,-5503 11650,-5546 11608,-5585 11549,-5642 11512,-5679

@@ -900,19 +900,26 @@ Busspur gilt Mo-Sa 7-20.30 Uhr	RW5; 7813,10112 7866,9918 7866,9902
 Busspur gilt Mo-Sa 7-20.30 Uhr	RW5; 7866,9902 7866,9918 7906,10098
 Busspur ist immer gültig	RW5;RW0 7848,9814 7829,9723
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605 4900,11626 4838,11697
-Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494 10063,12438 10024,12431 9984,12426 9934,12420 9852,12409 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
+Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494 10063,12438
+#XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10063,12438 10024,12431 9984,12426 9934,12420 9852,12409
+#: XXX siehe auch 3nocross in gesperrt-orig
+#: source_id: INKO_113041
+#: last_checked: 2013-09-10
+#: check_frequency: 90d
+	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9852,12409
+Busspur ist immer gültig	RW5;RW5 9852,12409 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
 # 
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 9475,12365 9358,12351 9141,12320
-#: source_id: IM_018997
-#: last_checked: 2013-07-10
-#: next_check: 2013-09-09
 #: XXX später beide Richtungen wieder herstellen
+#: source_id: IM_018997
+#: last_checked: 2013-09-10
+#: next_check: 2014-01-26
 Busspur ist immer gültig	RW5; 9141,12320 9358,12351 9475,12365
 # 
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9601,12380 9475,12365
-#: last_checked: 2013-04-17
-#: next_check: 2015-06-01
 #: XXX später beide Richtungen wieder herstellen
+#: last_checked: 2013-09-10
+#: next_check: 2015-06-01
 Busspur ist immer gültig	RW5; 9475,12365 9601,12380
 # 
 Busspur ist immer gültig	RW5;RW5 9141,12320 9028,12307 8804,12280
@@ -938,7 +945,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280
 	RW3; 11134,12793 11105,12764
 asphaltierter Radweg	RW1;RW2 11134,12793 11226,12945
 Busspur gilt Mo-Fr 7-14 Uhr	RW5; 10876,12563 10803,12470
-#: last_checked: 2013-07-16
+#: last_checked: 2013-09-10
 #: check_frequency: 60d
 #: XXX Wegen Bauarbeiten aufgehoben, danach vielleicht wieder RW3;RW0
 	RW0;RW0 8740,11524 9058,11564
@@ -1288,8 +1295,8 @@ die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 in der Mitte sind 100 Meter nicht benutzungspflichtig	RW4; 13244,11112 13290,11144 13479,11147 13540,11148
 	RW4; 13540,11148 13479,11147 13290,11144 13244,11112
 	RW6;RW6 12638,11433 12594,11467
+	RW3;RW3 12758,11915 12726,11851
 	RW3; 12497,11459 12551,11515 12645,11673 12681,11741 12726,11851
-#: note: die letzten Meter zwischen Bahnbrücke und Einmündung "Am Ostbahnhof" sind nicht markiert
 	RW3; 12645,11673 12551,11515
 	RW3;RW3 12985,10665 12879,10750 12683,10896 12532,11008 12521,11016 12509,11025 12416,11084 12302,11160 12124,11280
 	RW4;RW3 12124,11280 12060,11323
