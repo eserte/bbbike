@@ -875,6 +875,8 @@ sub get_street_type {
 	    return 'restaurant';
 	} elsif ($name =~ m{\s\(Siedlung\)$}) {
 	    return 'settlement'; # XXX English wording?
+	} elsif ($name =~ m{\s\(Kaserne\)$}) {
+	    return 'barracks'; 
 	} elsif ($name =~ m{(?:^Insel\s|\s\(Insel\)$)}) {
 	    return 'island';
 	} elsif ($name =~ m{\s\(geplant\)$}) {
