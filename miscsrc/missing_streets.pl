@@ -79,19 +79,24 @@ foreach my $rec (@{ $plz->{Data} }) {
     }
 }
 
-#use BBBikeYAML qw(Dump);
-binmode STDOUT, ':encoding(iso-8859-1)';
-for my $key (sort { scalar(@{$missing_by_bezirk{$a}}) <=> scalar(@{$missing_by_bezirk{$b}}) } keys %missing_by_bezirk) {
-    print "$key (" . scalar(@{$missing_by_bezirk{$key}}) . ")\n";
-    for my $str (@{ $missing_by_bezirk{$key} }) {
-	print "  $str\n";
+if (%missing_by_bezirk) {
+    #use BBBikeYAML qw(Dump);
+    binmode STDOUT, ':encoding(iso-8859-1)';
+    for my $key (sort { scalar(@{$missing_by_bezirk{$a}}) <=> scalar(@{$missing_by_bezirk{$b}}) } keys %missing_by_bezirk) {
+	print "$key (" . scalar(@{$missing_by_bezirk{$key}}) . ")\n";
+	for my $str (@{ $missing_by_bezirk{$key} }) {
+	    print "  $str\n";
+	}
+	print "\n";
+	#    my %dump_hash = ("$key (" . scalar(@{$missing_by_bezirk{$key}}) . ")" => $missing_by_bezirk{$key});
+	#    print Dump(\%dump_hash);
     }
-    print "\n";
-#    my %dump_hash = ("$key (" . scalar(@{$missing_by_bezirk{$key}}) . ")" => $missing_by_bezirk{$key});
-#    print Dump(\%dump_hash);
+    #print Dump(\%missing_by_bezirk);
+    #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%missing_by_bezirk],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+    exit 1;
+} else {
+    exit 0;
 }
-#print Dump(\%missing_by_bezirk);
-#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%missing_by_bezirk],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
 __END__
 
