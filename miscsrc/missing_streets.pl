@@ -69,92 +69,9 @@ foreach my $rec (@{ $plz->{Data} }) {
 			);
     my $type = $plz->get_street_type($rec);
     next if $type ne 'street';
-#    next if $str =~ m{^[SU]-Bhf\s}; # later XXX
-#    next if $str =~ m{^Güterbahnhof\s}; # later XXX
-#    next if $str =~ m{\(Gaststätte\)}; # later XXX
-#    next if $str =~ m{\(Kolonie\)}; # later XXX
-#    next if $str =~ m{\(Siedlung\)}; # later XXX
-#    next if $str =~ m{^Kolonie\s}; # later XXX
-#    next if $str =~ m{^Siedlung\s}; # later XXX
-#    next if $str =~ m{^Wochenendsiedlung\s}; # later XXX
-#    next if $str =~ m{^KGA\s}; # later XXX
-#    next if $str =~ m{^(Modersohnbrücke
-#		      |Heinrich-von-Kleist-Park # Schöneberg
-#		      |Englischer[ ]Garten # Tiergarten
-#		      |Humboldthafen
-#		      |Schloß[ ]Bellevue
-#		      |Westhafen
-#		      |Eichgestell # Oberschöneweide, exists as "(...)"
-#		      |Waldfriedhof[ ]Oberschöneweide # Oberschöneweide
-#		      |Wasserwerk[ ]an[ ]der[ ]Wuhlheide
-#		      |Abstellbahnhof # Grunewald
-#		      |Hundekehle
-#		      |Jagdschloß[ ]Grunewald
-#		      |Lindwerder
-#		      |Wasserwerk[ ]Teufelssee
-#		      |Melli-Besse-Str. # Adlershof --- Ring oder Straße; Lage vollkommen unklar
-#		      |Ernst-Reuter-Siedlung # Wedding --- keine Straße hier zu erkennen
-#		      |Humboldthain # Wedding
-#		      |Albrechts[ ]Teerofen # Wannsee
-#		      |Landgut[ ]Eule # Ist das eine Straße?
-#		      |Glienicker[ ]Park
-#		      |Im[ ]Jagen # sieht uninteressant aus
-#		      |Moorlake
-#		      |Nikolskoe
-#		      |Pfaueninsel
-#		      |Schäferberg
-#		      |Siedlung[ ]10 # Baumschulenweg
-#		      |Am[ ]Sportplatz # Buch
-#		      |Britzer[ ]Hafen # Britz
-#		      |Am[ ]Bahnhof[ ]Grunewald[ ]Vorplatz[ ]II # Charlottenburg
-#                      |Avus[ ]Innenraum
-#		      |Avus[ ]Nordkurve
-#		      |DRK[ ]Kliniken
-#		      |Europa-Center
-#		      |Rudolf-Virchow-Krankenhaus
-#		      |Schleuse[ ]Charlottenburg
-#		      |Schleuse[ ]Plötzensee
-#		      |Schleuseninsel[ ]im[ ]Tiergarten
-#		      |Sportplatz[ ]Eichkamp
-#		      |Sportplatz[ ]Kühler[ ]Weg
-#		      |Sportplatz[ ]Maikäferpfad
-#		      |Volkspark[ ]Jungfernheide
-#		      |Waldbühne
-#		      |Löwe-Siedlung
-#		      |Jagen[ ]59 # Grünau
-#		      |Waldfriedhof[ ]Grünau
-#		      |AEG[ ]Siedlung[ ]I,[ ]II # Lübars
-#		      |Karpfenteich-Wald
-#		      |Stadtrandsiedlung # Mariendfelde
-#		      |Anglerweg # Schmöckwitz (auf der RV-Karte als "Schmöckwitzwerder Süd (Anglerweg)" gekennzeichnet
-#		      |Schmöckwitzwerder[ ]Süd # siehe Anglerweg
-#		      |Deutscher[ ]Camping[ ]Club[ ]Krossinsee
-#		      |Forstweg # keine eindeutige Referenzen
-#		      |Jagen[ ]17[ ]-[ ]20
-#		      |Jagen[ ]23
-#		      |Jagen[ ]25
-#		      |Jagen[ ]33
-#		      |Jagen[ ]37
-#		      |Schmöckwitzwerder[ ]Nord
-#		      |Gutshof[ ]Glienicke # Kladow
-#		      |Habichtsgrund
-#		      |Habichtswald
-#		      |Havelwiese # Kolonie
-#		      |Hottengrund # Kaserne
-#		      |Badewiese # Gatow
-#		      |Breitehorn
-#		      |Flugplatz[ ]Gatow
-#		      |Ruprecht
-#		      |Triftweg
-#		      |Straße[ ]1[ ]\(Wiesengrund\) # Karlshorst
-#		      |Behelfsheimsiedlung # Name der Siedlung zwischen Waldowallee und Köpenicker Allee
-#		      |Am[ ]Elektrizitätswerk # nirgendwo gefunden
-#		      |Am[ ]Hochwald # nirgendwo gefunden
-#		      |Erholung # nicht in Karlshorst gefunden
-#		      |Gartenfreunde[ ]Bahnhof[ ]Wuhlheide # nirgendwo gefunden
-#		      |Kleckersdorfer[ ]Weg # nirgendwo gefunden
-#		      |Stallwiesen # nirgendwo gefunden
-#		      )$}x; # decide later (non-strassen, e.g. brunnels or parks) XXX
+    next if $str =~ m{^Jagen\s\d+}; # XXX decide later
+    next if $str eq 'Im Jagen' && $bezirk eq 'Wannsee'; # XXX decide later
+    next if $str eq 'Rote-Kreuz-Str.'; # XXX Besonderheit ist in landstrassen-orig erklärt
     if (exists $seen_street_with_bezirk{$str}->{$bezirk}) {
     } elsif (exists $seen_street{$str}) {
     } else {
