@@ -20,6 +20,8 @@ $VERSION = '0.01';
 use DB_File;
 use Fcntl qw(O_CREAT O_RDWR);
 
+use Strassen::Util qw();
+
 
 sub new {
     my($class, $dbfile) = @_;
@@ -64,9 +66,18 @@ sub calculate_dist {
     if ($routing->Start->Coord eq $routing->Goal->Coord) {
 	0;
     } else {
-	$routing->search;
-	my $route_info = $routing->RouteInfo;
-	$route_info->[-1]->{WholeMeters};
+	my $dist = eval {
+	    $routing->search;
+	    my $route_info = $routing->RouteInfo;
+	    $route_info->[-1]->{WholeMeters};
+	};
+	if ($@) {
+	    # XXX Known issue: fix_position does not know about
+	    # inaccessible points, and search may fail
+	    $dist = Strassen::Util::strecke_s($from, $to);
+	    warn "calculate_dist failed, fallback to the as-the-bird-flies distance ($dist): $@";
+	}
+	$dist;
     }
 }
 
