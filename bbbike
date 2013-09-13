@@ -14881,10 +14881,21 @@ EOF
 	    }
 
 	    # XXX slightly hackish: link to the OSM node/way/... browser
-	    for (@tags) {
-		if (my($type,$id) = $_ =~ m{^osm-(node|way|relation)-(\d+)$}) {
-		    push @tags, "http://www.openstreetmap.org/browse/$type/$id";
-		    last;
+	    # XXX and a tag for osm_watch
+	    {
+		my $osm_version;
+		my $osm_type;
+		my $osm_id;
+		for (@tags) {
+		    if (my($_type,$_id) = $_ =~ m{^osm-(node|way|relation)-(\d+)$}) {
+			push @tags, "http://www.openstreetmap.org/browse/$_type/$_id";
+			($osm_type, $osm_id) = ($_type, $_id);
+		    } elsif ($_ =~ m{\bversion=(\d+)}) {
+			$osm_version = $1;
+		    }
+		}
+		if ($osm_version && $osm_id && $osm_type) {
+		    push @tags, qq{#: osm_watch: $osm_type id="$osm_id" version="$osm_version"};
 		}
 	    }
 

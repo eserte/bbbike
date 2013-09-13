@@ -394,8 +394,9 @@ sub plot_osm_files {
 
 	    if (exists $tag{name} || exists $tag{amenity}) {
 		my $uninteresting_tags = join(" ",
-					      "user=" . $node->getAttribute("user"),
-					      "timestamp=" . $node->getAttribute("timestamp"),
+					      "user=" . ($node->getAttribute("user")||"<undef>"),
+					      "timestamp=" . ($node->getAttribute("timestamp")||"<undef>"),
+					      "version=" . ($node->getAttribute("version")||"<undef>"),
 					      (map { "$_=$tag{$_}" } keys %tag)
 					     );
 		my $photo;
@@ -533,6 +534,7 @@ sub plot_osm_files {
 		my $uninteresting_tags = join(" ",
 					      "user=" . ($way->getAttribute("user")||"<undef>"),
 					      "timestamp=" . ($way->getAttribute("timestamp")||"<undef>"),
+					      "version=" . ($way->getAttribute("version")||"<undef>"),
 					      (map { "$_=$tag{$_}" } grep { $_ =~ $UNINTERESTING_TAGS } keys %tag)
 					     );
 		my @tags = ((exists $tag{name} ? $tag{name}.' ' : '') . $tags, $uninteresting_tags, 'osm', 'osm-way-' . $id);
