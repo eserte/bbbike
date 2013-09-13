@@ -1034,7 +1034,6 @@ Route Lychen - Templin: Qualität?	? 3153,88773 3614,88158 3855,88004 3976,87729 
 Route Lychen - Templin: Qualität?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
 Route Lychen - Templin: Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
 Am Graben (Waldblick): Qualität?	? 9402,-3817 9354,-3949
-(Wildstrubelpfad - Am Heinersdorfer Graben): Qualität des Weges? Nachts beleuchtet? Existiert eine Ausschilderung?	? 13352,18360 13335,18374 13415,18464 13466,18547 13511,18600 13351,18736 13344,18794 13356,18835 13408,18897 13430,18948 13470,18990 13492,19056 13452,19163 13416,19223 13431,19255
 Sowjetisches Ehrenmal - Friesenstr.: Qualität des Weges? Nachts beleuchtet?	? 8356,19291 8722,19265
 Schönholzer Str. - Waldsteg: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8314,19288 8211,19294 7857,19628 7857,19693
 zum Sowjetischen Ehrenmal: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8319,19299 8255,19366
@@ -1122,6 +1121,10 @@ Poststr. (Mahlow): Qualität?	? 11082,-5172 11189,-5157 11281,-5178 11390,-5228
 Ernst-Thälmann-Str. (Mahlow): Qualität?	? 11390,-5228 11439,-5233 11639,-5201 11747,-5140 11772,-5124 11789,-5111 11919,-5061 12085,-5114
 Krügers Land (Mahlow): Qualität? Teilweise mit Radweg?	? 12085,-5114 12147,-5162 12241,-5186 12294,-5215 12583,-5521 12654,-5498 12769,-5423 12782,-5284
 Ibsenstr. (Mahlow): Qualität? Existiert ein Radweg?	? 12340,-4833 12307,-4851 12278,-4863 12208,-4975 12174,-5030 12085,-5114 11970,-5232 11922,-5279 11809,-5383 11691,-5503 11650,-5546 11608,-5585 11549,-5642 11512,-5679
+Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2636,23915 2760,23964 2787,23971
+Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2760,23964 2784,23929
+Maselakeweg: Weg im Poelzigpark: Qualität? Beleuchtet? Ausgeschildert?	? -2414,16975 -2371,16776
+Südhafen: Ausgeschildert? Qualität? Nachts beleuchtet? Darf man hier fahren?	? -2940,13169 -3008,13052 -3013,12909 -2950,12589
 # added from ampeln-orig
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -1129,6 +1132,7 @@ S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from other ../tmp/.fragezeichen-other-source
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet (laut ADFC-Karte)	? 4613,22928 4678,22776
 # added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ortsschilder ampeln ampelschaltung plz potsdam deutschland grenzuebergaenge sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_danger comments_ferry comments_misc  comments_mount comments_path comments_route  comments_tram comments_kfzverkehr comments_scenic fragezeichen exits culdesac)
+(Heimdallstr. - Frithjofstr.) (Qualität des Wegs? Nachts beleuchtet? Gibt es Drängelgitter?)	? 12299,19143 12372,19203 12457,19248
 Verl. Pücklerstr. (Existieren Straßenschilder für die "Verlängerte Pücklerstr."?)	? 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645
 (Gladiolenweg) (wie ist der neue Name für den Gladiolenweg?)	? 9092,21677 9014,21650
 (Grenzweg) (wie ist der neue Name für den Grenzweg?)	? 8557,22063 8572,22094 8594,22158
@@ -1188,7 +1192,6 @@ Kümmelweg: unbefestigte Straße (Wie ist die Fahrbahnbeschaffenheit hier? Tatsäch
 Schauflerpfad: mäßiges Kopfsteinpflaster (Qualität des Schauflerpfads?)	? -716,21284 -734,21360 -796,21375 -865,21361 -1128,21421 -1218,21436
 Jugendweg: Asphalt (ist der Jugendweg seit den Bauarbeiten komplett asphaltiert?)	? 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
 Rosentreterpromenade: Asphalt mit Schäden (Ist die Qualität in der Rosentreterpromenade nach den Bauarbeiten besser geworden?)	? 4423,20848 4245,21105 4226,21133
-Martin-Opitz-Str.: Kopfsteinpflaster (ist der südöstliche Abschnitt der Martin-Opitz-Str. gepflastert oder asphaltiert?)	? 8236,16071 8077,16178
 Elstaler Str.: Kopfsteinpflaster (wird die Fahrbahnqualität nach den Bauarbeiten besser sein (z.B. die Fahrbahn asphaltiert sein)?)	? -4559,14341 -4548,14434
 Rohrweihstr.: guter Asphalt (Ist die Rohrweihstr. asphaltiert oder hat sie Verbundsteinpflaster?)	? -2103,19833 -2073,19990 -2055,20129 -2020,20309 -1991,20312
 Jühnsdorf: Asphalt (existiert durch Jühnsdorf ein Radweg?)	? 9792,-12090 9345,-11425 9472,-11297 9578,-10891

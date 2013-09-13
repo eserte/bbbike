@@ -781,6 +781,10 @@ nördliches Sackgassenende	culdesac 24370,10198
 	culdesac_pseudo 3767,2367
 Eingang Hauptbahnhof	culdesac 7861,13203
 	culdesac 8405,8994
+#: note: Betriebsangehörige können weiter fahren
+Siemens-Werksgelände	culdesac 1929,13843
+#: note: weiter geht's in eine Kleingartenanlage
+	culdesac_pseudo 12809,19050
 # 
 ######################################################################
 # culdesac entries which should remain invisible
@@ -1003,4 +1007,7 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2387,10131
 	culdesac 8913,9020
 	culdesac 8914,8965
 #: note ^^^
+#: note: not invisble, because of entry in plaetze-orig
+	culdesac 2548,13796
+	culdesac_pseudo 12299,19143
 #: ignore ^^^

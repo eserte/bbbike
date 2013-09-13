@@ -2721,6 +2721,7 @@ userdel	q3::inwork 10530,14452 10723,14772
 #: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
 #: by: http://www.morgenpost.de/bezirke/article112374495/Fussgaengerbruecke-wird-repariert.html (Reparatur ab Juni 2013, 2 Monate Bauzeit)
 #: by: http://www.altglienicke24.de/aktuelles.html (Eröffnung Mitte September)
+#: osm_watch: way id="152354629" version="2"
 #: last_checked: 2013-08-02 (von der Bahn aus gesehen)
 #: next_check: 2013-09-15
 #: priority: #A
@@ -2858,7 +2859,17 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_020306',
+         'data' => 'userdel	q4::temp 5464,5731 5280,5714
+',
+         'periodic' => 1,
+         'until' => 1379268000,
+         'from' => 1378958400,
+         'text' => 'Bergstr.: Veranstaltung (Bergstraßenfest), Straße zwischen Körnerstr. und Heesestr. gesperrt, bis 15.09.2013 20:00 Uhr ',
+         'type' => 'handicap',
+         'id' => 2381
+       },
        undef,
        undef,
        undef,
@@ -3170,7 +3181,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'text' => 'Mauerpark: Flohmarkt Sonntag 08.00-18.00 Uhr, Behinderungen möglich',
          'from' => undef,
          'id' => 2458,
-         'data' => '	q4::temp:clock 10354,14987 10238,15316
+         'data' => '	q4::temp:clock 10354,14987 10240,15318
 ',
          'type' => 'gesperrt'
        },
@@ -3378,17 +3389,7 @@ userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_119615',
-         'until' => 1379282399,
-         'text' => 'Behrenstr. (Mitte) Richtung Friedrichstr. zwischen Wilhelmstraße und Glinkastraße, Baustelle, Fahrtrichtung gesperrt, bis Mitte September 2013 ',
-         'from' => 1378332000,
-         'id' => 2487,
-         'data' => '#: confirmed_by: srt (an der Wilhelmstr.)
-userdel	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130910.1105.389039.html',
          'until' => 1382738399,

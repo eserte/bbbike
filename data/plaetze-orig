@@ -76,7 +76,7 @@ Leopoldplatz (Wedding)	Pl 7277,15586
 Leopoldplatz (Lichtenrade)	Pl 10831,-2919
 Max-Josef-Metzger-Platz	Pl 7474,15408
 Pekinger Platz	Pl 6964,14849
-Falkplatz	Pl 10122,15647
+Falkplatz	Pl 10130,15647
 Humannplatz	Pl 11455,15916
 Antonplatz	Pl 13512,15909
 Arnold-Schönberg-Platz	Pl 14063,15976
@@ -269,6 +269,7 @@ Marion-Gräfin-Dönhoff-Platz	Pl 9981,11689
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2013 (Hausnummer)
 Platz des Volksaufstandes von 1953	Pl 9058,11564
+Platz A	Pl 12799,19242
 ######################################################################
 #: section faked_plaetze vvv
 # Keine offiziellen Straßennamen, sondern
@@ -339,11 +340,33 @@ Warschauer Brücke	Pl 13476,11174
 Weidendammer Brücke	Pl 9280,12883
 Bösebrücke	Pl 9883,16557
 #: XXX_prog ^^^
+#: XXX_prog: weitere Brücken, die in Berlin.coords.data gelistet sind und hiermit auch gelistet sein müssen vvv
+Eugen-Kleine-Brücke	Pl 3696,1445
+#: XXX_prog ^^^
 #: XXX_prog: systematischer Fehler: alle Punkte in Potsdam/Berlin.coords.data müssen tatsächlich in strassen oder plaetze verfügbar sein
 Schleuseninsel im Tiergarten	Pl 5758,11630
 Eiskeller	Pl -7964,19490
 Ahrensfelder Berge	Pl 22382,16961
 Zentraler Festplatz	Pl 3546,16143
+Revierförsterei Tegelsee	Pl -51,19654
+Schleuse Plötzensee	Pl 4809,15214
+Schleuse Charlottenburg	Pl 2548,13796
+Rudolf-Virchow-Krankenhaus	Pl 6537,15156
+DRK Kliniken Berlin-Westend	Pl 1971,12368
+Waldfriedhof Zehlendorf	Pl -2671,1988
+Waldfriedhof Müggelheim	Pl 29116,502
+Waldfriedhof Grünau	Pl 23469,640
+Waldfriedhof Oberschöneweide	Pl 19372,6579
+Wasserwerk an der Wuhlheide	Pl 19463,7117
+Avus Innenraum	Pl 1692,10348
+Avus Nordkurve	Pl 1870,10406
+#: alias: Sportplatz Eichkamp
+#: alias: Sportanlage Eichkamp
+Julius-Hirsch-Sportanlage	Pl 556,10122
+#: alias: Sportplatz Kühler Weg
+Hans-Rosenthal-Sportanlage	Pl 743,9772
+Wally-Wittmann-Sportanlage	Pl 863,10363
+Sportplatz Maikäferpfad	Pl 748,9981
 # 
 #: section Eingänge vvv
 # Hier werden nur Eingänge für Flächen aufgenommen, die für Radfahrer gesperrt sind.

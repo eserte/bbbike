@@ -36,7 +36,7 @@ Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fuﬂg‰ngerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12074,9689 12088,9775
-Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15399,12444 15402,12390 15350,12270
+Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 15399,12444 15457,12449
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -133,7 +133,7 @@ vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8122,12608
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
-Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10238,15316 10186,15463 10179,15483 10122,15647
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10240,15318 10192,15465 10185,15487 10130,15647
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12160 21930,12185 21608,12320 21346,12427 21265,12468 21221,12484
 (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14798,10985 14787,10972 14764,10877 14794,10844
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9892,9286 9880,9233
@@ -442,7 +442,7 @@ Braunschweiger Ufer: Fuﬂg‰nger	q1 12718,5845 13077,5893 13483,5973
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q1 6513,7005 6650,7017
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q1 6650,7017 6770,7027
 Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4957,5894
-(Gaudystr. - Mauerpark): Fuﬂg‰nger, bei Veranstaltungen in der Max-Schmelling-Halle grˆﬂere Behinderungen mˆglich	q3 10456,15561 10256,15482 10186,15463
+(Gaudystr. - Mauerpark): Fuﬂg‰nger, bei Veranstaltungen in der Max-Schmelling-Halle grˆﬂere Behinderungen mˆglich	q3 10456,15561 10256,15482 10192,15465
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fuﬂg‰nger	q1 2934,14852 2900,14891 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fuﬂg‰nger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1372,15313
 (Jungfernheide): Fuﬂg‰nger	q1 1415,15190 1459,15196 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
@@ -1160,6 +1160,7 @@ Arnimplatz: Fuﬂg‰nger	q2 10606,16319 10739,16146
 (Weg im Salvador-Allende-Viertel): eine Bodenschwelle, kann umfahren werden	q0 23279,4599 23445,4596
 (Weg im Salvador-Allende-Viertel - Am Berg): Fuﬂg‰nger	q2 23051,4461 23010,4506
 (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15374,13542
+Paul-Junius-Str.: Umfahrung an der Straﬂenbahn¸berquerung	q4::inwork 15374,13542 15370,13508
 Lilienweg: Fuﬂg‰nger	q2 15143,5705 15154,5706 15209,5713 15252,5719 15296,5725 15337,5730
 Rosenweg: Fuﬂg‰nger	q2 15343,5687 15337,5730 15330,5821 15325,5934
 Spielplatzweg: Fuﬂg‰nger	q2 15141,5800 15201,5807 15246,5812 15288,5816 15330,5821
@@ -1221,7 +1222,7 @@ Springpfuhlpark: einige Fuﬂg‰nger	q1 19524,14474 19534,14459 19545,14290 19523,1
 (Am Rosengarten - L¸tztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
 D¸rerplatz: einige Fuﬂg‰nger	q1 6243,7033 6275,7004
 Straﬂe 17: kurze Rampe	q3 7307,7425 7307,7457
-(Lortzingstr. - Mauerpark): einige Fuﬂg‰nger	q1 10038,15418 10179,15483
+(Lortzingstr. - Mauerpark): einige Fuﬂg‰nger	q1 10038,15418 10185,15487
 (Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): einige Fuﬂg‰nger	q1 21221,11398 21311,11528
 Eigerstr.: einige Bodenschwellen, kˆnnen aber umfahren werden	q0 12825,17870 12882,17895 12902,17933 12945,17958 12994,17986 13036,18010 13043,18126 13042,18152
 Wischbergweg: sehr enger Pfad	q4 13733,18161 13751,18180
@@ -1262,6 +1263,7 @@ Regatta-Ufer: Fuﬂg‰nger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,
 Am Schwanenberg: einige Fuﬂg‰nger	q1 15752,9385 15793,9334
 (Kaiser's-Parkplatz): Parkplatzverkehr, Fuﬂg‰nger	q2 16058,6629 16138,6548
 (Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fuﬂg‰nger	q1 17842,6639 17852,6589 17826,6495
+Straﬂe 77: Bordstein	q1 15320,12375 15402,12390
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1665,7 +1667,7 @@ Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 541
 (Templerzeile - Gˆtzstr.): Parkweg, Fuﬂg‰nger, teilweise mit Radweg	q1 9681,6180 9683,6199 9695,6336 9708,6493
 (Darbystr. - Falkenseer Chaussee): schmal, aber auch mit H‰nger passierbar	q1 -5505,15859 -5523,15766
 Mittelheide: enge Straﬂe	q0 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
-Platanenstr.: teilweise recht eng	q1 9355,19789 9489,19826 9822,19916 10127,19992
+Platanenstr.: teilweise recht eng	q0 9355,19789 9489,19826 9822,19916 10127,19992
 Senegalstr.: enge Straﬂe	q1 5961,15562 5906,15623 5848,15685 5787,15741 5722,15795
 Tangastr.: enge Straﬂe	q1 6121,15697 5961,15562
 Rue Nungesser et Coli: enge Straﬂe	q1 3066,17833 3051,17879 3033,17903 3004,17917 2963,17917 2897,17902 2873,17867 2883,17801
@@ -1824,7 +1826,7 @@ Pl¸schowstr.: einige Fuﬂg‰nger	q1 242,3459 201,3764
 Johannes-Werner-Str.: enge Straﬂe	q1 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 M¸hlbergstr.: enge Straﬂe	q1 17187,3988 17288,4026 17341,4046
 M¸hlbergstr.: enge Straﬂe	q1 17346,4031 17402,4050 17405,4151
-Hohenschˆnhausener Weg: Fuﬂg‰nger haben Vorrang	q1 15600,18551 15825,18385 16307,18022
+Hohenschˆnhausener Weg: Fuﬂg‰nger haben Vorrang	q1 15600,18551 15825,18385 16306,18011 16397,17938 16502,17858 16607,17767 16697,17695
 Murtzaner Ring: enge Straﬂe	q1 19593,14472 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
 Lindenhoekweg: enge Straﬂe	q1 12382,15802 12310,15837 12247,15868
 Taxusweg: enge Straﬂe	q1 25649,13728 25671,13840 25681,13943 25681,14049

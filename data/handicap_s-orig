@@ -12,8 +12,8 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-09-11 vvv
-#: next_check: 2013-09-14 vvv
+#: last_checked: 2013-09-13 vvv
+#: next_check: 2013-09-20 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (früher)
 Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
@@ -85,8 +85,9 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: source_id: INKO_093369
 #: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
-#: last_checked: 2013-09-06
-#: next_check: 2014-01-01
+#: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
+# REMOVED --- : last_checked: 2013-09-06
+# REMOVED --- : next_check: 2014-01-01
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
 # REMOVED (by osm) --- #: last_checked: 2013-06-10 (wosch) vvv --- #: osm_watch: way id="25185423" version="15"--- Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978 --- #: last_checked ^^^
@@ -107,7 +108,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstei
 #: source_id ^^^
 #: XXX ^^^
 # 
-#: last_checked: 2013-08-27
+#: last_checked: 2013-09-13
 #: check_frequency: 60d
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
@@ -234,10 +235,10 @@ Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12
 # 
 # REMOVED (Bauarbeiten sind beendet) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: osm_watch: way id="7543672" version="17" --- #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz --- #: last_checked: 2013-06-24 --- #: check_frequency: 45d --- Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
 # 
-#: last_checked: 2013-08-13 (südlicher Abschnitt schon fertig asphaltiert)
-#: next_check: 2013-09-13
+#: last_checked: 2013-09-13
+#: next_check: 2013-10-13
 #: XXX siehe auch qualitaet_s-orig: nach den Bauarbeiten besserer Asphalt?
-Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15399,12444 15402,12390 15350,12270
+Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 15399,12444 15457,12449
 ### Hohenschönhausen ###
 # 
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
@@ -304,6 +305,7 @@ Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12901,10134 12905
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12757,10197 12712,10192 12670,10160
 # später wieder herstellen: Görlitzer Park, Rondell: Fußgänger	q2 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 #: XXX wahrscheinlich wird hier auch asphaltiert
+#: osm_watch: way id="233003901" version="1"
 #: last_checked: 2013-09-04
 #: next_check: 2013-09-14
 Görlitzer Park, Rondell: Fußgänger, Bauarbeiten	q4::inwork 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
@@ -364,7 +366,7 @@ vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12608
 Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fußgänger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fußgänger	q1 22759,4430 22797,4518
-Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10238,15316 10186,15463 10179,15483 10122,15647
+Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10240,15318 10192,15465 10185,15487 10130,15647
 (Fußweg am Griesinger-Krankenhaus): Fußgänger	q1 21935,12160 21930,12185 21608,12320 21346,12427 21265,12468 21221,12484
 (Fußgängerbrücke Ostkreuz): Fußgänger	q3 14798,10985 14787,10972 14764,10877 14794,10844
 Marheinekeplatz: Fußgänger, Brunnen	q3 9892,9286 9880,9233
@@ -733,7 +735,7 @@ Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen	q1 6513,7005
 Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe	q1 6650,7017 6770,7027
 Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4957,5894
 #: note: bei Veranstaltungen (Max-Schmelling-Halle) möglicherweise gesperrt oder größere Behinderungen:
-(Gaudystr. - Mauerpark): Fußgänger, bei Veranstaltungen in der Max-Schmelling-Halle größere Behinderungen möglich	q3 10456,15561 10256,15482 10186,15463
+(Gaudystr. - Mauerpark): Fußgänger, bei Veranstaltungen in der Max-Schmelling-Halle größere Behinderungen möglich	q3 10456,15561 10256,15482 10192,15465
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fußgänger	q1 2934,14852 2900,14891 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fußgänger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1372,15313
 (Jungfernheide): Fußgänger	q1 1415,15190 1459,15196 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
@@ -1633,10 +1635,15 @@ Arnimplatz: Fußgänger	q2 10606,16319 10739,16146
 (Weg im Salvador-Allende-Viertel - Am Berg): Fußgänger	q2 23051,4461 23010,4506
 # 
 #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen
-#: last_checked: 2013-08-13
+#: last_checked: 2013-09-13
 #: check_frequency: 90d
 # (Möllendorffstr. - Karl-Lade-Str.): Fußgänger	q1 15513,13539 15374,13542
 (Möllendorffstr. - Karl-Lade-Str.): Fußgänger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15374,13542
+#: temporary:
+#: XXX wann wird die Umfahrung wieder aufgehoben?
+#: last_checked: 2013-09-12
+#: check_frequency: 20d
+Paul-Junius-Str.: Umfahrung an der Straßenbahnüberquerung	q4::inwork 15374,13542 15370,13508
 # 
 Lilienweg: Fußgänger	q2+ 15143,5705 15154,5706 15209,5713 15252,5719 15296,5725 15337,5730
 Rosenweg: Fußgänger	q2+ 15343,5687 15337,5730 15330,5821 15325,5934
@@ -1715,7 +1722,7 @@ Springpfuhlpark: einige Fußgänger	q1 19524,14474 19534,14459 19545,14290 19523,1
 Dürerplatz: einige Fußgänger	q1 6243,7033 6275,7004
 Straße 17: kurze Rampe	q3 7307,7425 7307,7457
 #: note: es gibt an der Baustraße (?) noch zwei sehr weite Drängelgitter, die kaum eine Beeinträchtigung darstellen
-(Lortzingstr. - Mauerpark): einige Fußgänger	q1 10038,15418 10179,15483
+(Lortzingstr. - Mauerpark): einige Fußgänger	q1 10038,15418 10185,15487
 (Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): einige Fußgänger	q1 21221,11398 21311,11528
 #: XXX_prog mit Anhänger allerdings q1 oder sogar q2
 Eigerstr.: einige Bodenschwellen, können aber umfahren werden	q0- 12825,17870 12882,17895 12902,17933 12945,17958 12994,17986 13036,18010 13043,18126 13042,18152
@@ -1768,6 +1775,8 @@ Regatta-Ufer: Fußgänger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,
 Am Schwanenberg: einige Fußgänger	q1 15752,9385 15793,9334
 (Kaiser's-Parkplatz): Parkplatzverkehr, Fußgänger	q2 16058,6629 16138,6548
 (Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fußgänger	q1 17842,6639 17852,6589 17826,6495
+#: XXX_prog BS nach Osten hin, ansonsten entfernen
+Straße 77: Bordstein	q1 15320,12375 15402,12390
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2413,7 +2422,8 @@ Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 541
 #: corrected_by: srt (q1 -> q0-)
 Mittelheide: enge Straße	q0- 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
 #: by: Steffen Ryll:
-Platanenstr.: teilweise recht eng	q1 9355,19789 9489,19826 9822,19916 10127,19992
+#: corrected_by: srt/policy (q1 -> q0-)
+Platanenstr.: teilweise recht eng	q0- 9355,19789 9489,19826 9822,19916 10127,19992
 #: by: Michael Dinter: vvv
 Senegalstr.: enge Straße	q1 5961,15562 5906,15623 5848,15685 5787,15741 5722,15795
 Tangastr.: enge Straße	q1 6121,15697 5961,15562
@@ -2790,7 +2800,8 @@ Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
 Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
 #: by: ^^^
 #: confirmed_by: Daniel Prusseit:
-Hohenschönhausener Weg: Fußgänger haben Vorrang	q1+ 15600,18551 15825,18385 16307,18022
+#: confirmed_by: srt:
+Hohenschönhausener Weg: Fußgänger haben Vorrang	q1+ 15600,18551 15825,18385 16306,18011 16397,17938 16502,17858 16607,17767 16697,17695
 #: by: anonymous (q1 ohne genauere Kommentierung, aber auf dem Luftbild sieht es eng aus)
 Murtzaner Ring: enge Straße	q1 19593,14472 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
 #XXX: P. Loll:, corrected_by: Uwe Borgenhagen (not mentioned): Windenweg: enge Straße	q1 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
