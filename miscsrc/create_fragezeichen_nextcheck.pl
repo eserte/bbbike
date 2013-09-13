@@ -151,13 +151,11 @@ sub handle_file {
 		     return if (!$check_now &&
 				!exists $dir->{add_fragezeichen} &&
 				!exists $dir->{XXX} &&
-				!exists $dir->{XXX_outdoor} &&
 				!exists $dir->{temporary}
 			       );
 		     my $more_add_name = join(", ", grep { defined } 
 					      $dir->{add_fragezeichen}[0],
 					      $dir->{XXX}[0],
-					      $dir->{XXX_outdoor}[0]
 					     );
 		     if (length $more_add_name) {
 			 if (defined $add_name && length $add_name) { $add_name .= " " }
@@ -171,7 +169,6 @@ sub handle_file {
 		 return if defined $check_now && !$check_now;
 		 my $more_add_name = join(", ", grep { defined } 
 					  $dir->{XXX_prog}[0],
-					  $dir->{XXX_outdoor}[0]
 					 );
 		 if (length $more_add_name) {
 		     if (defined $add_name && length $add_name) { $add_name .= " " }
