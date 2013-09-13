@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode:perl; coding:utf-8; -*-
 
 #
 # Author: Slaven Rezic
@@ -23,6 +23,7 @@ use lib (
 	);
 
 use Cwd qw(realpath);
+use File::Basename qw(basename);
 use Getopt::Long;
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
@@ -39,6 +40,8 @@ my $centerc;
 my $center2c;
 my $plan_dir;
 my $with_searches_weight;
+my $with_nextcheckless_records = 1;
+my $debug;
 GetOptions(
 	   "with-dist!" => \$with_dist,
 	   "dist-dbfile=s" => \$dist_dbfile,
@@ -46,8 +49,10 @@ GetOptions(
 	   "center2c=s" => \$center2c,
 	   "plan-dir=s" => \$plan_dir,
 	   "with-searches-weight!" => \$with_searches_weight,
+	   "with-nextcheckless-records!" => \$with_nextcheckless_records,
+	   "debug" => \$debug,
 	  )
-    or die "usage: $0 [--nowith-dist] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight] bbdfile ...";
+    or die "usage: $0 [--nowith-dist] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight] [--nowith-nextcheckless-records] bbdfile ...";
 
 if ($with_dist && !$centerc) {
     my $config_file = "$ENV{HOME}/.bbbike/config";
@@ -113,120 +118,169 @@ my @files = @ARGV
 
 my @records;
 
+# gracefully exit, so DistDB may flush computed things
+$SIG{INT} = sub { exit };
+
 for my $file (@files) {
+    debug("$file...\n");
     my $abs_file = realpath $file;
+    my $is_fragezeichen_file = basename($file) =~ m{^fragezeichen(-orig)?$};
     my $s = StrassenNextCheck->new_stream($file);
     $s->read_stream_nextcheck_records
 	(sub {
+	     # We handle two kind of records here
+	     # - all records with a next_check entry, these will have date set in @records
+	     # - all records which look like a outdoor fragezeichen entry
+	     #   (all outdoor records in fragezeichen or fragezeichen-orig,
+	     #    and records in other files marked with add_fragezeichen, XXX,
+	     #    or similar), these won't have date set in @records
 	     my($r, $dir) = @_;
-	     if ($dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0] && (my($y,$m,$d) = $dir->{_nextcheck_date}[0] =~ m{^(\d{4})-(\d{2})-(\d{2})$})) {
-		 my $epoch = eval { timelocal 0,0,0,$d,$m-1,$y };
-		 if ($@) {
-		     warn "ERROR: Invalid day '$dir->{_nextcheck_date}[0]' ($@) in file '$file', line '" . $r->[Strassen::NAME] . "', skipping...\n";
+	     my $has_nextcheck = $dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0];
+	     if (!$has_nextcheck) {
+		 return if !$with_nextcheckless_records;
+
+		 # XXX this is taken from
+		 # create_fragezeichen_nextcheck.pl, probably should
+		 # be refactored into a function!
+		 # --- only $door_mode eq 'out' handled here
+		 if ($is_fragezeichen_file) {
+		     return if (exists $dir->{XXX_prog} || exists $dir->{XXX_indoor});
 		 } else {
-		     my $wd = [qw(Su Mo Tu We Th Fr Sa)]->[(localtime($epoch))[6]];
-		     my $date = "$y-$m-$d";
-		     my $subject = $r->[Strassen::NAME] || ($dir->{XXX} && join(" ", @{$dir->{XXX}})) || "(" . $file . "::$.)";
-		     my $dist_tag = '';
-		     my $any_dist; # either one way or two way dist in meters
-		     if ($centerc) {
-			 my $dist_m = _get_dist($centerc, $r->[Strassen::COORDS]);
-			 $dist_tag = ':' . _make_dist_tag($dist_m) . ':';
-			 if ($center2c) {
-			     my $dist2_m = _get_dist($center2c, $r->[Strassen::COORDS]);
-			     $dist2_m += $dist_m;
-			     $dist_tag .= _make_dist_tag($dist2_m) . ':';
-			     $any_dist = $dist2_m;
-			 } else {
-			     $any_dist = $dist_m;
-			 }
-		     }
-		     my $prio;
-		     if ($prio = $dir->{priority}) {
-			 $prio = $prio->[0];
-			 if ($prio !~ m{^#[ABC]$}) {
-			     warn "WARN: priority should be #A..#C, not '$prio', ignoring...\n";
-			     undef $prio;
-			 }
-		     }
+		     return if (!exists $dir->{add_fragezeichen} &&
+				!exists $dir->{XXX} &&
+				!exists $dir->{temporary}
+			       );
+		 }
+	     }
 
-		     my $searches;
-		     if ($searches_weight_net) {
-			 my $max_searches = 0;
-			 my $update_max_searches = sub {
-			     my($p1, $p2) = @_;
-			     my $found_rec_hin   = $searches_weight_net->get_street_record($p1, $p2, -obeydir => 1);
-			     my $found_rec_rueck = $searches_weight_net->get_street_record($p2, $p1, -obeydir => 1);
-			     my $this_searches = 0;
-			     for ($found_rec_hin, $found_rec_rueck) {
-				 if ($_ && $_->[Strassen::NAME] =~ m{^(\d+)}) {
-				     $this_searches += $1;
-				 }
-			     }
-			     if ($this_searches > $max_searches) {
-				 $max_searches = $this_searches;
-			     }
-			 };
-			 my @c = @{ $r->[Strassen::COORDS] };
-			 if (@c == 1) {
-			     for my $neighbor (keys %{ $searches_weight_net->{Net}{$c[0]} }) {
-				 $update_max_searches->($c[0], $neighbor);
-			     }
-			 } else {
-			     for my $c_i (1 .. $#c) {
-				 my($p1, $p2) = @c[$c_i-1, $c_i];
-				 $update_max_searches->($p1, $p2);
-			     }
-			 }
-			 $searches = $max_searches;
+	     my $nextcheck_date;
+	     my $nextcheck_wd;
+	     if ($has_nextcheck) {
+		 if (my($y,$m,$d) = $dir->{_nextcheck_date}[0] =~ m{^(\d{4})-(\d{2})-(\d{2})$}) {
+		     my $epoch = eval { timelocal 0,0,0,$d,$m-1,$y };
+		     if ($@) {
+			 warn "ERROR: Invalid day '$dir->{_nextcheck_date}[0]' ($@) in file '$file', line '" . $r->[Strassen::NAME] . "', skipping...\n";
+			 return;
+		     } else {
+			 $nextcheck_wd = [qw(Su Mo Tu We Th Fr Sa)]->[(localtime($epoch))[6]];
+			 $nextcheck_date = "$y-$m-$d";
 		     }
+		 } else {
+		     warn "ERROR: Cannot parse date '$dir->{_nextcheck_date}[0]' (file $file), skipping...\n";
+		     return;
+		 }
+	     }
 
-		     my @planned_route_files;
-		     if ($planned_points) {
-			 my %planned_route_files;
-			 for my $c (@{ $r->[Strassen::COORDS] }) {
-			     if (my $route_files = $planned_points->{$c}) {
-				 for my $route_file (@$route_files) {
-				     $planned_route_files{$route_file} = 1;
-				 }
-			     }
-			 }
-			 @planned_route_files = sort keys %planned_route_files;
-		     }
+	     my $subject = $r->[Strassen::NAME] || _get_first_XXX_directive($dir) || "(" . $file . "::$.)";
 
-		     my $todo_state = @planned_route_files ? 'PLANNED' : 'TODO';
-		     my $headline = "** $todo_state <$date $wd> " . ($prio ? "[$prio] " : "") . $subject;
-		     if (defined $searches) {
-			 $headline .= " ($searches)";
-		     }
-		     if ($dist_tag) {
-			 if (length($headline) + 1 + length($dist_tag) < ORG_MODE_HEADLINE_LENGTH) {
-			     $headline .= " " x (ORG_MODE_HEADLINE_LENGTH-length($headline)-length($dist_tag));
-			 } else {
-			     $headline .= " ";
+	     my $dist_tag = '';
+	     my $any_dist; # either one way or two way dist in meters
+	     if ($centerc) {
+		 my $dist_m = _get_dist($centerc, $r->[Strassen::COORDS]);
+		 $dist_tag = ':' . _make_dist_tag($dist_m) . ':';
+		 if ($center2c) {
+		     my $dist2_m = _get_dist($center2c, $r->[Strassen::COORDS]);
+		     $dist2_m += $dist_m;
+		     $dist_tag .= _make_dist_tag($dist2_m) . ':';
+		     $any_dist = $dist2_m;
+		 } else {
+		     $any_dist = $dist_m;
+		 }
+	     }
+
+	     my $prio;
+	     if ($prio = $dir->{priority}) {
+		 $prio = $prio->[0];
+		 if ($prio !~ m{^#[ABC]$}) {
+		     warn "WARN: priority should be #A..#C, not '$prio', ignoring...\n";
+		     undef $prio;
+		 }
+	     }
+
+	     my $searches;
+	     if ($searches_weight_net) {
+		 my $max_searches = 0;
+		 my $update_max_searches = sub {
+		     my($p1, $p2) = @_;
+		     my $found_rec_hin   = $searches_weight_net->get_street_record($p1, $p2, -obeydir => 1);
+		     my $found_rec_rueck = $searches_weight_net->get_street_record($p2, $p1, -obeydir => 1);
+		     my $this_searches = 0;
+		     for ($found_rec_hin, $found_rec_rueck) {
+			 if ($_ && $_->[Strassen::NAME] =~ m{^(\d+)}) {
+			     $this_searches += $1;
 			 }
-			 $headline .= $dist_tag;
 		     }
-		     my $body = <<EOF;
+		     if ($this_searches > $max_searches) {
+			 $max_searches = $this_searches;
+		     }
+		 };
+		 my @c = @{ $r->[Strassen::COORDS] };
+		 if (@c == 1) {
+		     for my $neighbor (keys %{ $searches_weight_net->{Net}{$c[0]} }) {
+			 $update_max_searches->($c[0], $neighbor);
+		     }
+		 } else {
+		     for my $c_i (1 .. $#c) {
+			 my($p1, $p2) = @c[$c_i-1, $c_i];
+			 $update_max_searches->($p1, $p2);
+		     }
+		 }
+		 $searches = $max_searches;
+	     }
+
+	     my @planned_route_files;
+	     if ($planned_points) {
+		 my %planned_route_files;
+		 for my $c (@{ $r->[Strassen::COORDS] }) {
+		     if (my $route_files = $planned_points->{$c}) {
+			 for my $route_file (@$route_files) {
+			     $planned_route_files{$route_file} = 1;
+			 }
+		     }
+		 }
+		 @planned_route_files = sort keys %planned_route_files;
+	     }
+
+	     my $todo_state = @planned_route_files ? 'PLAN' : 'TODO'; # make sure all states have four characters
+	     my $headline = "** $todo_state " .
+		 (defined $nextcheck_date ? "<$nextcheck_date $nextcheck_wd> " : "                ") .
+		     ($prio ? "[$prio] " : "") .
+			 $subject;
+	     if (defined $searches) {
+		 $headline .= " ($searches)";
+	     }
+	     if ($dist_tag) {
+		 if (length($headline) + 1 + length($dist_tag) < ORG_MODE_HEADLINE_LENGTH) {
+		     $headline .= " " x (ORG_MODE_HEADLINE_LENGTH-length($headline)-length($dist_tag));
+		 } else {
+		     $headline .= " ";
+		 }
+		 $headline .= $dist_tag;
+	     }
+	     my $body = <<EOF;
 $headline
+EOF
+	     $body .= join("", map { "   : " . $_ . "\n" } _get_all_XXX_directives($dir));
+	     $body .= <<EOF;
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
    [[${abs_file}::$.]]
 EOF
-		     if (@planned_route_files) {
-			 $body .= "\n   Planned in\n";
-			 for my $planned_route_file (@planned_route_files) {
-			     $body .= "   * [[shell:bbbikeclient $planned_route_file]]\n";
-			 }
-		     }
-		     push @records, { date => $date, body => $body, dist => $any_dist, (defined $searches ? (searches => $searches) : ()) };
+	     if (@planned_route_files) {
+		 $body .= "\n   Planned in\n";
+		 for my $planned_route_file (@planned_route_files) {
+		     $body .= "   * [[shell:bbbikeclient $planned_route_file]]\n";
 		 }
-	     } else {
-		 warn "ERROR: Cannot parse date '$dir->{_nextcheck_date}[0]' (file $file), skipping...\n";
 	     }
-	 });
+	     push @records, {
+			     body => $body,
+			     dist => $any_dist,
+			     (defined $nextcheck_date ? (date     => $nextcheck_date) : ()),
+			     (defined $searches       ? (searches => $searches)       : ()),
+			    };
+	 }, passthru_without_nextcheck => 1);
 }
 
-@records = sort {
+my @all_records_by_date = sort {
     my $cmp = $b->{date} cmp $a->{date};
     return $cmp if $cmp != 0;
     if (defined $a->{dist} && defined $b->{dist}) {
@@ -234,7 +288,7 @@ EOF
     } else {
 	0;
     }
-} @records;
+} grep { defined $_->{date} } @records;
 
 my $today = strftime "%Y-%m-%d", localtime;
 
@@ -246,15 +300,19 @@ if ($centerc) {
 	    $cmp = $a->{dist} <=> $b->{dist};
 	}
 	return $cmp if $cmp != 0;
-	return $b->{date} cmp $a->{date};
-    } grep { $_->{date} le $today } @records;
+	if (defined $a->{date} && defined $b->{date}) {
+	    return $b->{date} cmp $a->{date};
+	} else {
+	    return 0;
+	}
+    } grep { !defined $_->{date} || $_->{date} le $today } @records;
 }
 
 my @expired_searches_weight_records;
 if ($with_searches_weight) {
     @expired_searches_weight_records = sort {
-	($b->{searches}||0) <=> ($a->{searches}||0);
-    } grep { $_->{date} le $today } @records;
+	$b->{searches} <=> $a->{searches}
+    } grep { (!defined $_->{date} || $_->{date} le $today) && $_->{searches} } @records;
 }
 
 binmode STDOUT, ':utf8';
@@ -277,7 +335,7 @@ if ($with_dist) {
 }
 
 my $today_printed = 0;
-for my $record (@records) {
+for my $record (@all_records_by_date) {
     if (!$today_printed && $record->{date} le $today) {
 	print "** ---------- TODAY ----------\n";
 	$today_printed = 1;
@@ -286,14 +344,14 @@ for my $record (@records) {
 }
 
 if (@expired_searches_weight_records) {
-    print "* expired records, sort by number of route searches\n";
+    print "* expired " . ($with_nextcheckless_records ? "and open " : "") . "records, sort by number of route searches\n";
     for my $expired_searches_weight_record (@expired_searches_weight_records) {
 	print $expired_searches_weight_record->{body};
     }
 }
 
 if (@expired_sort_by_dist_records) {
-    print "* expired records, sort by dist\n";
+    print "* expired " . ($with_nextcheckless_records ? "and open " : "") . "records, sort by dist\n";
     for my $expired_record (@expired_sort_by_dist_records) {
 	print $expired_record->{body};
     }
@@ -301,12 +359,41 @@ if (@expired_sort_by_dist_records) {
 
 print <<'EOF';
 * settings
+#+SEQ_TODO: TODO | PLAN | DONE
 # Local variables:
 # compile-command: "(cd ../data && make fragezeichen-nextcheck.org-exact-dist)"
 # End:
 EOF
 # Alternative compile command (without using the dist.db):
 ## compile-command: "(cd ../data && make ../tmp/fragezeichen-nextcheck.org)"
+
+sub _get_first_XXX_directive {
+    my $dir = shift;
+    for my $dirkey (qw(add_fragezeichen XXX temporary)) {
+	if (exists $dir->{$dirkey}) {
+	    my $val = join(" ", @{ $dir->{$dirkey} });
+	    if (defined $val && length $val) {
+		return $val;
+	    }
+	}
+    }
+    undef;
+}
+
+sub _get_all_XXX_directives { # as an array
+    my $dir = shift;
+    my @res;
+    for my $dirkey (qw(add_fragezeichen XXX temporary)) {
+	if (exists $dir->{$dirkey}) {
+	    for my $val (@{ $dir->{$dirkey} }) {
+		if (defined $val && length $val) {
+		    push @res, "#: $dirkey: $val";
+		}
+	    }
+	}
+    }
+    @res;
+}
 
 sub _get_dist {
     my($p1, $p2s) = @_;
@@ -354,6 +441,12 @@ sub _make_dist_tag {
     ($dists_are_exact ? '' : '~') . int_round($dist_m/1000) . 'km';
 }
 
+sub debug {
+    return if !$debug;
+    my $msg = shift;
+    print STDERR $msg;
+}
+
 __END__
 
 =head1 NAME
@@ -375,8 +468,21 @@ additionally sorted by distance (if the C<--centerc> option is given).
 A special marker C<<--- TODAY --->> is created between past and future
 entries.
 
-Expired entries are additionally listed in a section "expired records,
-alternative sorting". This section is sorted by distance only.
+Expired entries are additionally listed the following two sections:
+
+=over
+
+=item section "expired records, sort by dist"
+
+This section is sorted by distance only.
+
+=item section "expired records, sort by number of route searches"
+
+This section is sorted by number of route searches of the latest
+month. It's only created if the C<--with-searches-weight> option is
+set.
+
+=back
 
 =head2 OPTIONS
 
@@ -425,6 +531,13 @@ editor of the Perl/Tk app.
 Create another section with expired records, sorted by number of route
 searches. This requires that a "weighted" bbd is created as described
 in L<weight_bbd/EXAMPLES>.
+
+=item C<--nowith-nextcheckless-records>
+
+If this option is not set, then additionally to expired records also
+fragezeichen-like records without an expiration date are parsed. Such
+records only appear in the two additional sections (sort by dist, and
+sort by number of route searches).
 
 =back
 
