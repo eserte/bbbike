@@ -105,7 +105,55 @@ if (!@urls) {
     }
 }
 
-plan tests => (264 + ($test_file_cache ? 6*3 : 0)) * scalar @urls;
+my @output_as_defs =
+    map {
+	+{
+	  format         => $_->[0],
+	  can_file_cache => $_->[1],
+	 }
+    } (
+       # format
+       #              can_file_cache
+       ["",           0],
+       ["xml",        0],
+       ["gpx-track",  1],
+       ["gpx-route",  1],
+       ["kml-track",  1],
+       ["print",      0],
+       ["perldump",   0],
+       ["yaml",       0],
+       ["yaml-short", 0],
+       ["json",       1],
+       ["json-short", 1],
+       ["geojson",    0],
+       ["palmdoc",    0],
+       ["mapserver",  0],
+      );
+
+my @imagetype_defs =
+    map {
+	+{
+	  format         => $_->[0],
+	  can_file_cache => $_->[1],
+	 }
+    } (
+       # format
+       #                 can_file_cache
+       ["gif",           0],
+       ["png",           0],
+       ["jpeg",          0],
+       ["svg",           0],
+       ["mapserver",     0],
+       ["pdf",           1],
+       ["pdf-auto",      1],
+       ["pdf-landscape", 1],
+       ["googlemaps",    0],
+      );
+
+my $file_cache_tests_per_format = 3;
+my $file_cache_tests_formats = scalar grep { $_->{can_file_cache} } (@output_as_defs, @imagetype_defs);
+
+plan tests => (255 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -164,17 +212,18 @@ for my $cgiurl (@urls) {
     }
 
     # search_coord
-    for my $output_as ("", qw(xml gpx-track gpx-route kml-track print perldump
-			      yaml yaml-short json json-short geojson palmdoc mapserver)) {
+    for my $output_as_def (@output_as_defs) {
+	my($output_as, $can_file_cache) = @{$output_as_def}{qw(format can_file_cache)};
+	my $this_test_file_cache = $can_file_cache && $test_file_cache;
+	my $this_file_cache_tests = $this_test_file_cache ? $file_cache_tests_per_format : 0;
     SKIP: {
-	    skip "No mapserver tests", 2
+	    skip "No mapserver tests", 2 + $this_file_cache_tests
 		if $output_as eq 'mapserver' && $skip{mapserver};
-	    skip "No palmdoc tests", 4
+	    skip "No palmdoc tests", 4 + $this_file_cache_tests
 		if $output_as eq 'palmdoc' && $skip{palmdoc};
 
 	    my $url = "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as";
 	    my($content, $resp) = std_get $url, testname => "Route result output_as=$output_as";
-	    my($content2, $resp2);
 	    if ($output_as eq '' || $output_as eq 'print') {
 		is $resp->content_type, 'text/html', "Expected content type";
 		my $len = extract_length($content);
@@ -209,16 +258,10 @@ for my $cgiurl (@urls) {
 				     )$}x) {
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.gpx$}, 'gpx filename';
 		gpxlint_string($content, "xmllint check with gpx schema for $output_as");
-		if ($test_file_cache) {
-		    ($content2, $resp2) = std_get $url, testname => "2nd fetch";
-		}
 	    } elsif ($output_as eq 'kml-track') {
 		is $resp->header("content-type"), 'application/vnd.google-earth.kml+xml', "The KML mime type";
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.kml$}, 'kml filename';
 		kmllint_string($content, "xmllint check for $output_as");
-		if ($test_file_cache) {
-		    ($content2, $resp2) = std_get $url, testname => "2nd fetch";
-		}
 	    } elsif ($output_as =~ m{^(json|geojson$)}) {
 		if ($output_as eq 'json') {
 		    validate_bbbikecgires_json_string($content, 'json content');
@@ -229,9 +272,6 @@ for my $cgiurl (@urls) {
 		    my $err = $@;
 		    ok $data, "Decoded JSON content"
 			or diag $err;
-		}
-		if ($test_file_cache) {
-		    ($content2, $resp2) = std_get $url, testname => "2nd fetch";
 		}
 	    } elsif ($output_as =~ m{^yaml}) {
 		if ($output_as eq 'yaml') {
@@ -245,7 +285,8 @@ for my $cgiurl (@urls) {
 			or diag $err;
 		}
 	    }
-	    if ($content2) {
+	    if ($this_test_file_cache) {
+		my ($content2, $resp2) = std_get $url, testname => "2nd fetch";
 		ok $content2 eq $content, "2nd fetch content equals ($output_as)";
 		is $resp2->content_type, $resp->content_type, "2nd fetch has same content-type ($output_as)";
 	    }
@@ -523,15 +564,13 @@ for my $cgiurl (@urls) {
 	like_html $content, qr/B(?:ö|&ouml;|&#246;)lschestr.*Brachvogelstr.*(?:Ö|&Ouml;|&#214;)schelbronner(?:.|&#160;)Weg.*Pallasstr/s, "Correct sort order";
     }
     
-    for my $imagetype (
-		       "gif", "png", "jpeg",
-		       "svg", "mapserver",
-		       "pdf", "pdf-auto", "pdf-landscape",
-		       "googlemaps",
-		      ) {
+    for my $imagetype_def (@imagetype_defs) {
+	my($imagetype, $can_file_cache) = @{$imagetype_def}{qw(format can_file_cache)};
+	my $this_test_file_cache = $can_file_cache && $test_file_cache;
+	my $this_file_cache_tests = $this_test_file_cache ? $file_cache_tests_per_format : 0;
+
     SKIP: {
-	    my $tests = 3;
-	    skip "No mapserver tests", $tests
+	    skip "No mapserver tests", 3 + $this_file_cache_tests
 		if $imagetype eq 'mapserver' && $skip{mapserver};
 
 	    my $imagetype_param = ($imagetype ne "" ? "imagetype=$imagetype&" : "");
@@ -554,11 +593,6 @@ for my $cgiurl (@urls) {
 		ok length $content, "The PDF is non-empty";
 		display($resp);
 		like $resp->header('Content-Disposition'), qr{inline; filename=.*\.pdf$}, 'PDF filename'; # unfortunately in this case (missing session?) there's no nice filename from route start/endpoint
-		if ($test_file_cache) {
-		    my($content2, $resp2) = std_get $url, testname => "imagetype=$imagetype (2nd possibly cached fetch)";
-		    ok $content2 eq $content, "2nd fetch content equals ($imagetype)";
-		    is $resp2->content_type, $resp->content_type, "2nd fetch has same content-type ($imagetype)";
-		}
 	    } elsif ($imagetype =~ /svg/) {
 		is $resp->header("content-type"), "image/svg+xml", "It's a SVG image";
 		ok length $content, "The SVG is non-empty";
@@ -566,6 +600,12 @@ for my $cgiurl (@urls) {
 	    } else {
 		like $resp->content_type, qr{^text/html}, "It's a $imagetype";
 		ok length $content, "The $imagetype is non-empty";
+	    }
+
+	    if ($this_test_file_cache) {
+		my($content2, $resp2) = std_get $url, testname => "imagetype=$imagetype (2nd possibly cached fetch)";
+		ok $content2 eq $content, "2nd fetch content equals ($imagetype)";
+		is $resp2->content_type, $resp->content_type, "2nd fetch has same content-type ($imagetype)";
 	    }
 	}
     }
