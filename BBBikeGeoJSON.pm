@@ -18,7 +18,12 @@ use vars qw($VERSION);
 $VERSION = '0.01';
 
 sub bbbikecgires_to_geojson_object {
-    my($res) = @_;
+    my($res, %args) = @_;
+    my $do_short_result = delete $args{short};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    my $result = $do_short_result ? undef : { map { ($_ => $res->{$_}) } qw(Route Trafficlights AffectingBlockings Speed Len Power) };
+
 #XXX FeatureCollection does not seem to work with Leaflet?
 #    +{ type => 'FeatureCollection',
 #       'features' =>
@@ -30,15 +35,16 @@ sub bbbikecgires_to_geojson_object {
 	properties =>
 	{
 	 type => 'Route',
+	 ($do_short_result ? () : (result => $result)),
 	},
 #       },
      };
 }
 
 sub bbbikecgires_to_geojson_json {
-    my($res) = @_;
+    my($res, %args) = @_;
     require JSON::XS;
-    JSON::XS->new->utf8->encode(bbbikecgires_to_geojson_object($res));
+    JSON::XS->new->utf8->encode(bbbikecgires_to_geojson_object($res, %args));
 }
 
 sub route_to_geojson_object {
@@ -48,7 +54,7 @@ sub route_to_geojson_object {
     bbbikecgires_to_geojson_object({LongLatPath => [map {
 	my($x,$y) = $Karte::Polar::obj->standard2map(@$_);
 	"$x,$y";
-    } @{ $route->path }]});
+    } @{ $route->path }]}, short => 1); # no additional information available, so always short
 }
 
 sub route_to_geojson_json {
