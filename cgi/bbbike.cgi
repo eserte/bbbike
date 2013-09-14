@@ -4418,7 +4418,7 @@ sub display_route {
     }
 
  OUTPUT_DISPATCHER:
-    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|json|json-short|geojson|perldump|gpx-route)$/) {
+    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|json|json-short|geojson|geojson-short|perldump|gpx-route)$/) {
 	for my $tb (@affecting_blockings) {
 	    $tb->{longlathop} = [ map { join ",", convert_data_to_wgs84(split /,/, $_) } @{ $tb->{hop} || [] } ];
 	}
@@ -4510,13 +4510,14 @@ sub display_route {
 	    if ($cache_entry) {
 		$cache_entry->put_content($json_output, {headers => \@headers});
 	    }
-	} elsif ($output_as eq 'geojson') {
+	} elsif ($output_as =~ m{^geojson(-short)?$}) {
+	    my $is_short = !!$1;
 	    http_header
 		(-type => "application/json",
 		 @weak_cache,
 		);
 	    require BBBikeGeoJSON;
-	    print BBBikeGeoJSON::bbbikecgires_to_geojson_json($res);
+	    print BBBikeGeoJSON::bbbikecgires_to_geojson_json($res, short => $is_short);
 	} elsif ($output_as eq 'gpx-route') {
 	    require Strassen::GPX;
 	    my $filename = filename_from_route($startname, $zielname) . ".gpx";

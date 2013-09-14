@@ -126,6 +126,7 @@ my @output_as_defs =
        ["json",       1],
        ["json-short", 1],
        ["geojson",    0],
+       ["geojson-short", 0],
        ["palmdoc",    0],
        ["mapserver",  0],
       );
@@ -153,7 +154,7 @@ my @imagetype_defs =
 my $file_cache_tests_per_format = 3;
 my $file_cache_tests_formats = scalar grep { $_->{can_file_cache} } (@output_as_defs, @imagetype_defs);
 
-plan tests => (255 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
+plan tests => (257 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -262,11 +263,11 @@ for my $cgiurl (@urls) {
 		is $resp->header("content-type"), 'application/vnd.google-earth.kml+xml', "The KML mime type";
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.kml$}, 'kml filename';
 		kmllint_string($content, "xmllint check for $output_as");
-	    } elsif ($output_as =~ m{^(json|geojson$)}) {
+	    } elsif ($output_as =~ m{^(json|json-short|geojson|geojson-short)$}) {
 		if ($output_as eq 'json') {
 		    validate_bbbikecgires_json_string($content, 'json content');
 		} else {
-		    # json-short and geojson are not valid against the bbbikecgires schema
+		    # json-short, geojson, and geojson-short are not valid against the bbbikecgires schema
 		    require JSON::XS;
 		    my $data = eval { JSON::XS::decode_json($content) };
 		    my $err = $@;
