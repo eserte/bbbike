@@ -243,7 +243,7 @@ for my $cgiurl (@urls) {
 		my $route = $cpt->reval($content);
 		is ref $route, 'HASH', "perldump is a hash";
 		is ref $route->{Route}, 'ARRAY', "Route member found";
-		like $route->{Route}[0]{DirectionString}, qr/nach\s+Osten/,
+		like $route->{Route}[0]{DirectionString}, qr/nach\s+(Norden|Osten)/,
 		    "Direction is correct";
 		like $route->{Route}[0]{Direction}, qr{^[NE]$}, # see above about initial direction
 		    "Raw direction is correct";
