@@ -4217,7 +4217,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002632',
        data  => <<EOF,
-userdel	q4; 9799,8962 9958,8966
+userdel	q4; 9799,8962 9951,8965
 EOF
      },
      { from  => 1145649600, # 2006-04-21 22:00
@@ -10713,7 +10713,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007404',
        data  => <<EOF,
-userdel	2::inwork 7578,8358 7494,8364
+userdel	2::inwork 7578,8358 7494,8354
 EOF
      },
      { from  => 1197062453, # 2007-12-07 22:20
@@ -16099,7 +16099,8 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	q4::temp:clock 5897,7337 5810,7337 5817,7223
+# REMOVED (hier wird neu gebaut) ---	q4::temp:clock 5897,7337 5810,7337
+	q4::temp:clock 5810,7337 5817,7223
 EOF
      },
      { from  => 1254261600, # 2009-09-30 00:00
@@ -18217,7 +18218,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100720.1055.303592.html',
        data  => <<EOF,
-userdel	q4::inwork 22605,15111 22578,15114 22449,15127 22419,15127 22326,15116 22059,15153
+userdel	q4::inwork 22599,15105 22577,15109 22441,15118 22326,15116 22059,15153
 EOF
      },
      { from  => 1281128604, # 2010-08-08 00:00 1281218400
@@ -20078,7 +20079,7 @@ EOF
 #: by: http://www.altglienicke24.de/aktuelles.html (Eröffnung Mitte September)
 #: osm_watch: way id="152354629" version="2"
 #: last_checked: 2013-08-02 (von der Bahn aus gesehen)
-#: next_check: 2013-09-15
+#: next_check: 2013-09-19
 #: priority: #A
 userdel	2::inwork 19968,16 19940,52
 EOF
@@ -20738,6 +20739,7 @@ EOF
        periodic => 1,
        source_id => 'IM_020306',
        data  => <<EOF,
+#: note: Fest findet auf der Fahrbahn statt, man kann nur schiebend die Gehwege benutzen
 userdel	q4::temp 5464,5731 5280,5714
 EOF
      },
@@ -21717,6 +21719,7 @@ EOF
        text  => 'Britzer Park: Bauarbeiten, Zufahrt zur Gutschmidtstr. komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: last_checked: 2013-09-15 (Bauzäune stehen noch, sind aber teilweise weggeschoben)
 userdel	2::inwork 12726,3870 12805,4020
 EOF
      },
@@ -21747,11 +21750,11 @@ userdel	q4::inwork; 9099,8670 9006,8602 8919,8508
 EOF
      },
      { from  => 1378591200, # 2013-09-08 00:00
-       until => 1380578400, # 2013-10-01 00:00
+       until => 1379264057, # 1380578400, # 2013-10-01 00:00
        text  => 'Höhndorfstr.: Bauarbeiten, Fahrbahn gesperrt, vom 09.09.2013 bis zum 30.09.2013',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 8425,8775 8438,8676 8455,8567
+userdel	q4::inwork 8425,8775 8438,8676 8454,8574
 EOF
      },
      { from  => $isodate2epoch->("2013-09-04 00:00:00"),
@@ -21770,7 +21773,7 @@ EOF
        data  => <<EOF,
 userdel	2::night 13437,10992 13471,10983
 userdel	2::night 17490,13133 17489,13125
-userdel	2::night 17671,13132 17698,13134
+userdel	2::night 17671,13132 17684,13133
 EOF
      },
      { from  => 1377731580, # 2013-08-29 01:13
@@ -21835,10 +21838,12 @@ userdel	2::temp 8503,16716 8583,16914
 EOF
      },
      { from  => 1378576083, # 2013-09-07 19:48
-       until => 1380499200, # 2013-09-30 02:00
-       text  => 'Ostendstr.: Einbahnstraße Richtung Osten wegen Bauarbeiten an den Straßenbahngleisen, bis 30.09.2013 02:00',
+       until => 1379270619, # 1380499200, # 2013-09-30 02:00
+       text  => 'Ostendstr./Weiskopffstr.: Einbahnstraße Richtung Osten wegen Bauarbeiten an den Straßenbahngleisen, bis 30.09.2013 02:00',
        type  => 'handicap',
        data  => <<EOF,
+#: note: der zweite Bauabschnitt dürfte für Radfahrer nicht relevant sein, siehe
+#: by: http://www.htw-berlin.de/uploads/media/Bauabschnitt-2-Umleitung-Wilhelminenhof.pdf
 userdel	q4::inwork; 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
 EOF
      },
@@ -21862,6 +21867,31 @@ userdel	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25
 #: XXX Einbahnstraßenrichtung ist geraten
 #: next_check: 2013-09-16
 	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Weg im Cheruskerpark: Bauarbeiten, Durchfahrt nicht möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX bis wann gehen die Bauarbeiten?
+#: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
+#: last_checked: 2013-09-15
+#: check_frequency: 30d
+#: prio: #A
+userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Torgauer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg möglich',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX bis wann gehen die Bauarbeiten?
+#: last_checked: 2013-09-15
+#: check_frequency: 30d
+#: prio: #A
+userdel	q4::inwork 7001,8161 7250,8223
 EOF
      },
     );

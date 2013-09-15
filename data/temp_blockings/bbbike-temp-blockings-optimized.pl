@@ -103,16 +103,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1379268000,
-         'text' => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Herbstfest auf der Hauptstraße), Straße gesperrt (14.9.2013 10:00 - 15.9.2013 20:00)',
-         'from' => 1379059200,
-         'id' => 137,
-         'data' => 'userdel	q4; 6687,8385 6765,8480 6912,8617 6989,8687 7009,8705 7105,8788 7201,8870 7275,8960
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2084,7 +2075,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Breslauer Platz: Wochenmarkt Mittwoch 8-13 Uhr, Donnerstag 12-17 Uhr, Samstag 8-14 Uhr, Behinderungen möglich',
          'from' => undef,
          'id' => 1884,
-         'data' => '	q4::temp:clock 5897,7337 5810,7337 5817,7223
+         'data' => '# REMOVED (hier wird neu gebaut) ---	q4::temp:clock 5897,7337 5810,7337
+	q4::temp:clock 5810,7337 5817,7223
 ',
          'type' => 'gesperrt'
        },
@@ -2723,7 +2715,7 @@ userdel	q3::inwork 10530,14452 10723,14772
 #: by: http://www.altglienicke24.de/aktuelles.html (Eröffnung Mitte September)
 #: osm_watch: way id="152354629" version="2"
 #: last_checked: 2013-08-02 (von der Bahn aus gesehen)
-#: next_check: 2013-09-15
+#: next_check: 2013-09-19
 #: priority: #A
 userdel	2::inwork 19968,16 19940,52
 ',
@@ -2859,17 +2851,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020306',
-         'data' => 'userdel	q4::temp 5464,5731 5280,5714
-',
-         'periodic' => 1,
-         'until' => 1379268000,
-         'from' => 1378958400,
-         'text' => 'Bergstr.: Veranstaltung (Bergstraßenfest), Straße zwischen Körnerstr. und Heesestr. gesperrt, bis 15.09.2013 20:00 Uhr ',
-         'type' => 'handicap',
-         'id' => 2381
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3188,15 +3170,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       {
-         'until' => 1379239200,
-         'text' => 'Waßmannsdorfer Straße: Bauarbeiten, Einbahnstraßenregelung, offen stadtauswärts, bis September 2013',
-         'from' => undef,
-         'id' => 2462,
-         'data' => 'userdel	q2::inwork; 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
@@ -3284,7 +3258,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'text' => 'Britzer Park: Bauarbeiten, Zufahrt zur Gutschmidtstr. komplett gesperrt',
          'from' => undef,
          'id' => 2474,
-         'data' => 'userdel	2::inwork 12726,3870 12805,4020
+         'data' => '#: last_checked: 2013-09-15 (Bauzäune stehen noch, sind aber teilweise weggeschoben)
+userdel	2::inwork 12726,3870 12805,4020
 ',
          'type' => 'gesperrt'
        },
@@ -3316,24 +3291,8 @@ userdel	q4::inwork; 9099,8670 9006,8602 8919,8508
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1380578400,
-         'text' => 'Höhndorfstr.: Bauarbeiten, Fahrbahn gesperrt, vom 09.09.2013 bis zum 30.09.2013',
-         'from' => 1378591200,
-         'id' => 2477,
-         'data' => 'userdel	q4::inwork 8425,8775 8438,8676 8455,8567
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1379109599,
-         'text' => 'Totilastr.: Bauarbeiten zwischen Wittekindstr. und Alboinstr., Fahrbahn gesperrt, voraussichtlich in den ersten September-Wochen',
-         'from' => 1378245600,
-         'id' => 2478,
-         'data' => 'userdel	q4::inwork 8374,5598 8276,5601 8176,5610
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -3342,7 +3301,7 @@ userdel	q4::inwork; 9099,8670 9006,8602 8919,8508
          'id' => 2479,
          'data' => 'userdel	2::night 13437,10992 13471,10983
 userdel	2::night 17490,13133 17489,13125
-userdel	2::night 17671,13132 17698,13134
+userdel	2::night 17671,13132 17684,13133
 ',
          'type' => 'gesperrt'
        },
@@ -3369,26 +3328,9 @@ userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_020230',
-         'until' => 1379253600,
-         'text' => 'Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung zwischen Parkstr. und Berliner Allee gesperrt, bis Mitte September 2013',
-         'from' => 1378015200,
-         'id' => 2484,
-         'data' => 'userdel	q4::inwork; 14235,17103 14341,17030 14528,16910
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'until' => 1380499200,
-         'text' => 'Ostendstr.: Einbahnstraße Richtung Osten wegen Bauarbeiten an den Straßenbahngleisen, bis 30.09.2013 02:00',
-         'from' => 1378576083,
-         'id' => 2486,
-         'data' => 'userdel	q4::inwork; 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130910.1105.389039.html',
@@ -3400,6 +3342,33 @@ userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
 #: XXX Einbahnstraßenrichtung ist geraten
 #: next_check: 2013-09-16
 	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Weg im Cheruskerpark: Bauarbeiten, Durchfahrt nicht möglich',
+         'from' => undef,
+         'id' => 2489,
+         'data' => '#: XXX bis wann gehen die Bauarbeiten?
+#: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
+#: last_checked: 2013-09-15
+#: check_frequency: 30d
+#: prio: #A
+userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Torgauer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg möglich',
+         'from' => undef,
+         'id' => 2490,
+         'data' => '#: XXX bis wann gehen die Bauarbeiten?
+#: last_checked: 2013-09-15
+#: check_frequency: 30d
+#: prio: #A
+userdel	q4::inwork 7001,8161 7250,8223
 ',
          'type' => 'handicap'
        }
