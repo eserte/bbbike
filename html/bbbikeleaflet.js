@@ -69,6 +69,7 @@ var routeLayer;
 var searchState = "start";
 var startLatLng;
 var map;
+var routelistPopup;
 
 var defaultLatLng = [52.516224, 13.377463]; // Brandenburger Tor, good for Berlin
 
@@ -448,6 +449,9 @@ function showRouteResult(request) {
 	    var json = "geojson = " + request.responseText;
 	    eval(json);
 	    showRoute(geojson);
+	    if (enable_routelist) {
+		populateRouteList(geojson);
+	    }
 	}
 	map.removeLayer(loadingMarker);
 	searchState = 'start';
@@ -489,6 +493,58 @@ function setLoadingMarker(latLng) {
 	loadingMarker.setLatLng(latLng);
     }
     map.addLayer(loadingMarker);
+}
+
+function populateRouteList(geojson) {
+    var routelist = document.getElementById('routelist');
+    var result = geojson.properties.result;
+    var route = result.Route;
+
+    var html = '<div id="routelist">'
+    html += "<div>Länge: " + sprintf("%.2f", result.Len / 1000) + " km</div>\n";
+
+    var pref_speed;
+    var pref_time;
+    for(var speed in result.Speed) {
+	if (result.Speed[speed].Pref == "1") {
+	    pref_speed = speed;
+	    pref_time = result.Speed[speed].Time;
+	    break;
+	}
+    }
+    if (pref_speed) {
+	var h = parseInt(pref_time);
+	var m = parseInt((pref_time-h)*60);
+	html += "<div>Fahrzeit (" + pref_speed + " km/h): " + h + "h" + m + "min</div>\n";
+    }
+
+    html += "<table>\n";
+    html += "<tr><th>Etappe</th><th>Richtung</th><th>Straße</th></tr>\n";
+    for(var i=0; i<route.length; i++) {
+	var elem = route[i];
+	html += "<tr>";
+	html += "<td>" + sprintf("%.2f", elem.Dist/1000) + " km</td>";
+	html += "<td>" + elem.DirectionHtml + "</td>";
+	var coord = L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[elem.PathIndex]);
+	html += '<td onclick="routelistPopup.setLatLng(new L.LatLng('+coord.lat+','+coord.lng+'))">' + escapeHtml(elem.Strname) + "</a></td>";
+	html += "</tr>\n";
+    }
+    html += "</table>\n";
+    html += "</div>\n";
+    routelistPopup = L.popup({maxWidth: window.innerWidth<1024 ? window.innerWidth/2 : 512,
+			      maxHeight: window.innerHeight*0.8,
+			      offset: new L.Point(0, -6)})
+	.setLatLng(L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[0]))
+	.setContent(html)
+	.openOn(map);
+}
+
+// from https://gist.github.com/BMintern/1795519
+// XXX is this fine or too hackish?
+function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
 }
 
 ////////////////////////////////////////////////////////////////////////
