@@ -785,6 +785,11 @@ Eingang Hauptbahnhof	culdesac 7861,13203
 Siemens-Werksgelände	culdesac 1929,13843
 #: note: weiter geht's in eine Kleingartenanlage
 	culdesac_pseudo 12809,19050
+#: note: Weiterfahrt in die Kleingartenkolonie ist wahrscheinlich möglich vvv
+Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2795,2187
+Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2271,2285
+Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2361,2156
+#: note ^^^
 # 
 ######################################################################
 # culdesac entries which should remain invisible
@@ -821,8 +826,8 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2387,10131
 	culdesac_pseudo 7190,10150
 	culdesac_pseudo 7947,10155
 	culdesac_pseudo 7933,9755
-	culdesac_pseudo 7614,9595
-	culdesac_pseudo 7612,9575
+	culdesac_pseudo 7614,9648
+	culdesac_pseudo 7612,9631
 	culdesac_pseudo 7242,8586
 	culdesac_pseudo 7288,8635
 	culdesac_pseudo 7490,9116

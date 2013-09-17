@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # 
-#: last_checked: 2013-09-15 vvv
+#: last_checked: 2013-09-16 vvv
 #: next_check: 2013-09-20 vvv
 #: source_id: IM_020047
 #: source_id: IM_019640 (fr¸her)
@@ -26,7 +26,7 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-08-30 vvv
+#: last_checked: 2013-09-16 vvv
 #: check_frequency: 60d
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
@@ -35,8 +35,8 @@ Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 #: last_checked ^^^
 # 
-#: last_checked: 2013-09-09 vvv
-#: next_check: 2013-09-30
+#: last_checked: 2013-09-16 vvv
+#: next_check: 2013-10-16
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe, Asphaltdecke wurde entfernt	q3::inwork; 13473,11456 13366,11651
 Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
 #: last_checked ^^^
@@ -68,9 +68,13 @@ Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraﬂe gesperrt, Aus
 #: next_check: 2013-12-31
 Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
 # 
-#: last_checked: 2013-09-10
-#: next_check: 2013-12-31
-Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
+#: source_id: IM_020322
+#: last_checked: 2013-09-16
+#: next_check: 2013-09-22
+#: prio: #A
+# --- sp‰ter wieder einsetzen --- : next_check: 2013-12-31
+# --- sp‰ter wieder einsetzen, wahrscheinlich --- Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
+Charlottenstr.: Bauarbeiten, Radfahrer kˆnnen passieren	q2::inwork; 9475,12365 9489,12263
 # 
 #: last_checked: 2013-09-10 vvv
 #: next_check: 2015-06-01 vvv
@@ -85,9 +89,9 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: source_id: INKO_093369
 #: note: ab Glinkastr. nur ungef‰hr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
-#: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
-# REMOVED --- : last_checked: 2013-09-06
-# REMOVED --- : next_check: 2014-01-01
+# REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
+#: last_checked: 2013-09-16
+#: next_check: 2014-01-01
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
 # REMOVED (by osm) --- #: last_checked: 2013-06-10 (wosch) vvv --- #: osm_watch: way id="25185423" version="15"--- Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978 --- #: last_checked ^^^
@@ -146,7 +150,7 @@ Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: XXX siehe auch Eintr‰ge in fragezeichen-orig (Falkoniergasse etc.)
-#: last_checked: 2013-09-10 vvv
+#: last_checked: 2013-09-16 vvv
 #: next_check: 2013-11-02 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
@@ -227,7 +231,7 @@ Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,104
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fuﬂg‰ngerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 # 
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2013-09-15
+#: last_checked: 2013-09-16
 #: next_check: 2014-09-01
 Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
@@ -316,11 +320,12 @@ Gˆrlitzer Park, Rondell: Fuﬂg‰nger	q2 12802,10097 12801,10146 12757,10197 12712,
 # sp‰ter wieder herstellen: Gˆrlitzer Park, Rondell: Fuﬂg‰nger	q2 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 #: XXX wahrscheinlich wird hier auch asphaltiert
 #: osm_watch: way id="233003901" version="1"
-#: last_checked: 2013-09-15
-#: next_check: 2013-09-22
+#: last_checked: 2013-09-16
+#: check_frequency: 7d
 Gˆrlitzer Park, Rondell: Fuﬂg‰nger, Bauarbeiten	q4::inwork 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Gˆrlitzer Park: Fuﬂg‰nger, eng	q2 12802,10097 12670,10160
 Gˆrlitzer Park: eng, Kurven, Fuﬂg‰nger	q2 12507,10130 12504,10172 12516,10202 12543,10223
+Gˆrlitzer Park: eng, Kurven, Fuﬂg‰nger	q2 12504,10172 12464,10153
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12543,10223 12580,10252 12608,10294
 Gˆrlitzer Park: Fuﬂg‰nger	q2 13035,10076 13013,10068 13013,10047 12987,10007 12932,9900
 Tiergartenufer: Fuﬂg‰nger	q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5736,11835 5543,11837 5478,11860
@@ -329,13 +334,13 @@ Tiergarten: Parkweg, Fuﬂg‰nger	q2 5666,11362 5727,11573 5758,11630 5780,11622 58
 Fasanerieallee: Parkweg	q1 6435,11606 6459,11638 6540,11754 6685,11954
 Groﬂe Sternallee: Parkweg	q1 6809,11979 7058,11809 7163,11738 7382,11588 7504,11512
 (Hiroshimastr. - Groﬂe Sternallee): Parkweg	q1 7356,11517 7382,11588
-Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7460,12054 7658,11947 7717,11918 7801,11875 8016,11770 8172,11679
-Ahornsteig: Parkweg	q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8016,11770 8156,11863 8222,11881 8284,11905 8453,12099 8522,12187 8538,12245
+Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7460,12054 7658,11947 7717,11918 7801,11875 8016,11770 8032,11761 8172,11679
+Ahornsteig: Parkweg	q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8014,11740 8032,11761 8156,11863 8221,11876 8262,11883 8453,12099 8522,12187 8538,12245
 Tiergarten: Parkweg	q1 8210,11775 8156,11863 8091,11992 8089,12041 8107,12145
 Tiergarten: Parkweg	q1 8016,11770 8022,12016
 Tiergarten: Parkweg	q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8048,12135 8055,12186
-Tiergarten: Parkweg	q1 8214,12205 8215,12156 8222,11881 8210,11775 8203,11686
-Tiergarten: Parkweg	q1 8021,11636 8016,11770
+Tiergarten: Parkweg	q1 8214,12205 8215,12156 8221,11876 8210,11775 8203,11686
+Tiergarten: Parkweg	q1 8005,11627 8014,11740 8016,11770
 Tiergarten: Parkweg	q1 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7182,11870 7173,11864 7058,11809 6778,11742 6540,11754
 #: XXX_prog: niedriger BS am S¸dende (nicht aufgef¸hrt in q1)
 Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
@@ -446,7 +451,7 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7485,8777 7531,8848 7563,88
 Nettelbeckplatz: Fuﬂg‰nger	q2 8024,15401 7989,15412 7891,15417
 Nettelbeckplatz: Fuﬂg‰nger	q2 7953,15362 7989,15412
 Nettelbeckplatz: Fuﬂg‰nger	q2 7975,15500 7989,15412
-Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5919,8417 5831,8358 5806,8350 5762,8335 5666,8345 5533,8478 5472,8507
+Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5919,8417 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
 zum Volksparksteg: kombinierter Rad- und Fuﬂweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fuﬂweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5465,8511 5417,8519 5347,8562
@@ -631,8 +636,8 @@ Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
 #: XXX Bauarbeiten; in Zukunft wird das Radfahren offiziell erlaubt sein; evtl. auch asphaltiert?
 #: XXX offiziell sollten die Bauarbeiten schon Ende 2010 (!) beendet sein
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120515.0900.370132.html (teilweise fertig)
-#: last_checked: 2013-08-30 (noch immer Radfahren verboten)
-#: check_frequency: 100d
+#: last_checked: 2013-09-16 (noch immer Radfahren verboten)
+#: check_frequency: 120d
 Heinrich-Lassen-Park: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q3 6664,8787 6705,8730 6740,8682 6815,8691 6912,8617
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7496,14660
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
@@ -755,7 +760,7 @@ Teltowkanalpromenade: eng, nicht anh‰ngertauglich	q2 2079,-12 1924,-188 1593,-31
 (Eitelstr. - Bahnhof Lichtenberg): Fuﬂg‰nger	q3 16727,11611 16766,11603
 Bennigsenstr.: enge Straﬂe	q1 5807,7771 5957,7773 6195,7775 6209,7765
 Perelsplatz: Fuﬂg‰nger, Park	q2 5809,7712 5636,7709
-Gustav-Rickelt-Weg: eng, Fuﬂg‰nger, Bordsteine	q2 4226,6712 4223,6796 4206,6820
+Gustav-Rickelt-Weg: eng, Fuﬂg‰nger, Bordsteine	q2 4224,6718 4223,6796 4206,6820
 Unterf¸hrung unter der Stromstr.: Fuﬂg‰nger, eng	q2 6218,12975 6180,12972
 nˆrdliches Spreeufer: drei niedrige Stufen, Fuﬂg‰nger	q2 6180,12972 6102,12960 6064,12950
 #: by: Mirko Grammel (Bordsteine):
@@ -954,9 +959,9 @@ Gounodstr.: Fuﬂg‰nger	q1 14239,15810 14251,15828 14366,15877
 Seidenberger Str.: Bordstein, Gel‰nder	q3 12379,16998 12373,17007
 Mulackstr.: enge Straﬂe	q1 10640,13471 10535,13509 10406,13543 10308,13575
 R¸ckerstr.: enge Straﬂe	q1 10597,13647 10535,13509
-Cheruskerpark: Fuﬂg‰nger	q1 7439,8716 7405,8698 7384,8665 7368,8595 7352,8391 7352,8390 7283,8265 7282,8264 7250,8223
+Cheruskerpark: Fuﬂg‰nger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 7352,8390 7283,8265 7282,8264 7250,8223
 (Ebersstr. - Park GASAG Nordspitze): Fuﬂg‰nger	q1 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
-(Ebersstr. - Cheruskerstr.): Fuﬂg‰nger	q1 7353,8633 7384,8665
+(Ebersstr. - Cheruskerstr.): Fuﬂg‰nger	q1 7353,8633 7371,8660 7382,8658
 (Cheruskerpark - Cheruskerstr.): Fuﬂg‰nger	q1 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
 (Torgauer Str. - Cheruskerstr.): Fuﬂg‰nger	q1 7282,8264 7289,8259 7332,8292 7375,8294
 (Bernhardstr. - Varziner Platz): S-Bahnunterf¸hrung, Fuﬂg‰nger	q4 5471,7915 5475,7906 5492,7868
@@ -1633,6 +1638,8 @@ Koseler Weg: einige Fuﬂg‰nger, Bordstein	q2 9850,6135 9679,6160
 (Krautstr./Blumenstr. - Strausberger Platz): Fuﬂg‰nger, Hausdurchfahrt	q2 12125,12490 12134,12540
 #: XXX_prog BS (ansonsten entfernen)
 #: XXX wurde der Bordstein mittlerweile abgesenkt?
+#: last_checked: 2013-09-16 (nein, zus‰tzlich noch Engstelle durch Bauarbeiten)
+#: check_frequency: 100d
 Gleisdreieckpark, Einfahrt L¸tzowstr.: Bordstein	q2 8236,10623 8199,10634
 (Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 15187,16185 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 14810,16282 14721,16360

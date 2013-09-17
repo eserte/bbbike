@@ -10,7 +10,7 @@ Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,1165
 Chausseestr.: direkte Zufahrt südlich der Invalidenstraße nicht möglich, umständliche Wegführung	q4::inwork 9042,13707 8935,13844
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
-Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
+Charlottenstr.: Bauarbeiten, Radfahrer können passieren	q2::inwork; 9475,12365 9489,12263
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
@@ -86,6 +86,7 @@ Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12757,10197 12712,
 Görlitzer Park, Rondell: Fußgänger, Bauarbeiten	q4::inwork 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12516,10202 12543,10223
+Görlitzer Park: eng, Kurven, Fußgänger	q2 12504,10172 12464,10153
 Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12608,10294
 Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 12987,10007 12932,9900
 Tiergartenufer: Fußgänger	q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5736,11835 5543,11837 5478,11860
@@ -94,13 +95,13 @@ Tiergarten: Parkweg, Fußgänger	q2 5666,11362 5727,11573 5758,11630 5780,11622 58
 Fasanerieallee: Parkweg	q1 6435,11606 6459,11638 6540,11754 6685,11954
 Große Sternallee: Parkweg	q1 6809,11979 7058,11809 7163,11738 7382,11588 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	q1 7356,11517 7382,11588
-Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7460,12054 7658,11947 7717,11918 7801,11875 8016,11770 8172,11679
-Ahornsteig: Parkweg	q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8016,11770 8156,11863 8222,11881 8284,11905 8453,12099 8522,12187 8538,12245
+Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7460,12054 7658,11947 7717,11918 7801,11875 8016,11770 8032,11761 8172,11679
+Ahornsteig: Parkweg	q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8014,11740 8032,11761 8156,11863 8221,11876 8262,11883 8453,12099 8522,12187 8538,12245
 Tiergarten: Parkweg	q1 8210,11775 8156,11863 8091,11992 8089,12041 8107,12145
 Tiergarten: Parkweg	q1 8016,11770 8022,12016
 Tiergarten: Parkweg	q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8048,12135 8055,12186
-Tiergarten: Parkweg	q1 8214,12205 8215,12156 8222,11881 8210,11775 8203,11686
-Tiergarten: Parkweg	q1 8021,11636 8016,11770
+Tiergarten: Parkweg	q1 8214,12205 8215,12156 8221,11876 8210,11775 8203,11686
+Tiergarten: Parkweg	q1 8005,11627 8014,11740 8016,11770
 Tiergarten: Parkweg	q1 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7182,11870 7173,11864 7058,11809 6778,11742 6540,11754
 Tiergarten: Parkweg	q1 7816,12150 7827,12105 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
 Tiergarten: Parkweg	q1 7777,12098 7772,12040 7717,11918 7706,11878 7701,11798 7649,11717 7621,11620 7615,11602
@@ -195,7 +196,7 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848 7563,88
 Nettelbeckplatz: Fußgänger	q2 8024,15401 7989,15412 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7953,15362 7989,15412
 Nettelbeckplatz: Fußgänger	q2 7975,15500 7989,15412
-Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5919,8417 5831,8358 5806,8350 5762,8335 5666,8345 5533,8478 5472,8507
+Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5919,8417 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,8562
@@ -453,7 +454,7 @@ Teltowkanalpromenade: eng, nicht anhängertauglich	q2 2079,-12 1924,-188 1593,-31
 (Eitelstr. - Bahnhof Lichtenberg): Fußgänger	q3 16727,11611 16766,11603
 Bennigsenstr.: enge Straße	q1 5807,7771 5957,7773 6195,7775 6209,7765
 Perelsplatz: Fußgänger, Park	q2 5809,7712 5636,7709
-Gustav-Rickelt-Weg: eng, Fußgänger, Bordsteine	q2 4226,6712 4223,6796 4206,6820
+Gustav-Rickelt-Weg: eng, Fußgänger, Bordsteine	q2 4224,6718 4223,6796 4206,6820
 Unterführung unter der Stromstr.: Fußgänger, eng	q2 6218,12975 6180,12972
 nördliches Spreeufer: drei niedrige Stufen, Fußgänger	q2 6180,12972 6102,12960 6064,12950
 Wustermarker Str.: Fußgänger, Bordsteine	q2 -4755,14393 -4744,14392 -4678,14382
@@ -610,9 +611,9 @@ Gounodstr.: Fußgänger	q1 14239,15810 14251,15828 14366,15877
 Seidenberger Str.: Bordstein, Geländer	q3 12379,16998 12373,17007
 Mulackstr.: enge Straße	q1 10640,13471 10535,13509 10406,13543 10308,13575
 Rückerstr.: enge Straße	q1 10597,13647 10535,13509
-Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7384,8665 7368,8595 7352,8391 7352,8390 7283,8265 7282,8264 7250,8223
+Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 7352,8390 7283,8265 7282,8264 7250,8223
 (Ebersstr. - Park GASAG Nordspitze): Fußgänger	q1 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
-(Ebersstr. - Cheruskerstr.): Fußgänger	q1 7353,8633 7384,8665
+(Ebersstr. - Cheruskerstr.): Fußgänger	q1 7353,8633 7371,8660 7382,8658
 (Cheruskerpark - Cheruskerstr.): Fußgänger	q1 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
 (Torgauer Str. - Cheruskerstr.): Fußgänger	q1 7282,8264 7289,8259 7332,8292 7375,8294
 (Bernhardstr. - Varziner Platz): S-Bahnunterführung, Fußgänger	q4 5471,7915 5475,7906 5492,7868

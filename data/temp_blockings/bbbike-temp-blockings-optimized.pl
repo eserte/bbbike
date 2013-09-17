@@ -712,7 +712,7 @@ userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-21
          'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 5. und 6.10.2013',
          'from' => 1380837600,
          'id' => 731,
-         'data' => 'userdel	2::temp 7006,9282 7022,9211 7044,9163 7110,9024
+         'data' => 'userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
 ',
          'type' => 'gesperrt'
        },
@@ -2645,16 +2645,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1379282399,
-         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (14.09.2013 und 15.09.2013)',
-         'from' => 1379023200,
-         'id' => 2281,
-         'data' => 'userdel	2::temp 10609,18384 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2786,16 +2777,7 @@ userdel	2::inwork 18731,8577 18709,8423
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1379282399,
-         'text' => 'Veranstaltung auf dem Mariannenplatz "Berlin lacht", 13.-15. September 2013',
-         'from' => 1378994400,
-         'id' => 2347,
-         'data' => 'userdel	2::temp 11770,10774 11841,10747 11897,10887 11958,11045
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html',
@@ -3340,7 +3322,6 @@ userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
          'id' => 2488,
          'data' => 'userdel	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25251 1513,25253 1576,25249 1738,25243
 #: XXX Einbahnstraßenrichtung ist geraten
-#: next_check: 2013-09-16
 	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
 ',
          'type' => 'handicap'
@@ -3365,10 +3346,30 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'from' => undef,
          'id' => 2490,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
-#: last_checked: 2013-09-15
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?)
+#: last_checked: 2013-09-16
 #: check_frequency: 30d
 #: prio: #A
 userdel	q4::inwork 7001,8161 7250,8223
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1396047599,
+         'text' => 'Görrestr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
+         'from' => 1379328680,
+         'id' => 2491,
+         'data' => 'userdel	q4::inwork; 5352,7428 5318,7424 5272,7458 5188,7536 5067,7652
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020332',
+         'until' => 1380142800,
+         'text' => 'Reichstagufer (Mitte): Fahrbahn zwischen Wilhelmstr. und Bunsenstr. gesperrt, bis 25.09.2013 ',
+         'from' => 1379149200,
+         'id' => 2492,
+         'data' => 'userdel	q4::temp 8892,12576 8766,12541
 ',
          'type' => 'handicap'
        }

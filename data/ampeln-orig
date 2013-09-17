@@ -180,7 +180,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7563,8871
 	X 7497,8916
 	F 7315,8941
-	X 7275,8960
+	X 7268,8960
 	X 7201,8870
 #: XXX_prog nur eine Ampel: vvv
 	X 7009,8705
@@ -192,7 +192,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED (aufgehoben, gesehen 2009-05) --- X 7782,9115
 	X 7479,9357
 	X 7526,9791
-	X 7110,9024
+	X 7107,9030
 	X 7006,9282
 	X 7049,9833
 	X 7126,9825
@@ -363,7 +363,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5331,8012
 #: XXX_prog ^^^
 	X 5346,7860
-	X 5635,8011
+	X 5631,8011
 	X 4788,7257
 	X 4743,7212
 	X 4787,7213
@@ -789,7 +789,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Ampel ohne Fuß/Radquerung der Michael-Brückner-Str.
 #: XXX eventuell wird diese Einschränkung aufgehoben:
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
-#: last_checked: 2013-06-19
+#: last_checked: 2013-08-19
 #: check_frequency: 90d
 	X 18080,5376
 	X 19904,3464
@@ -2409,7 +2409,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
 #: last_checked: 2013-09-06 vvv
 #: next_check: 2013-12-31 vvv
-	X::inwork 9123,12500
+	X::inwork 9122,12509
 	X::inwork 9280,12883
 	X::inwork 9343,12464
 	X::inwork 9475,12365
@@ -2418,7 +2418,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX ^^^
 # 
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (südlicher Bereich) vvv
-#: last_checked: 2013-08-30 vvv
+#: last_checked: 2013-09-16 vvv
 #: next_check: 2013-12-31 vvv
 	F::inwork 9063,12051
 	F::inwork 9270,12086
@@ -3108,7 +3108,7 @@ Granseer Str. Höhe Post	F -1235,41150
 Zum Bahnhof / Nordbahn	B -521,40612
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: append_comment Oranienburg-Schmachtenhagen vvvvvvvvvvvvvvvvvvvvvvv
-Bauernmarktchaussee / nGAR	B0 5150,41018
+# REMOVED (Bahnübergang wird rückgebaut, siehe LSBB-Meldung 136502343) --- Bauernmarktchaussee / nGAR	B0 5150,41018
 Malzer Weg / nGAR	B0 4581,41115
 Schwarzer Weg / nGAR	B0 3167,41284
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

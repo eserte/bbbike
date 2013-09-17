@@ -118,15 +118,10 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
-#: last_checked: 2013-09-10 vvv
-#: next_check: 2013-09-12 vvv
-Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::inwork; 12726,11851 12681,11741 12645,11673
-Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459
-#: next_check ^^^
-#: last_checked ^^^
-#: last_checked: 2013-09-10 vvv
+# REMOVED (weitgehend realisiert, bis auf das letzte Stück vor der Kreuzung) --- #: last_checked: 2013-09-10 vvv --- #: next_check: 2013-09-12 vvv --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::inwork; 12726,11851 12681,11741 12645,11673 --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459 --- #: next_check ^^^ --- #: last_checked ^^^
+#: last_checked: 2013-09-10
+#: check_frequency: 90d
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
-#: last_checked ^^^
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
@@ -368,6 +363,10 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: last_checked: 2013-09-16
+#: check_frequency: 7d
+Görlitzer Park: Diagonalverbindung entsteht. Wann fertig? Qualität? Beleuchtet?	?::inwork 12516,10202 12506,10244
+# 
 #: last_checked: 2013-09-04
 #: next_check: 2014-03-01
 Ellen-Widmann-Pfad: Bauarbeiten	?::inwork 3902,2454 3902,2405 3894,2368 3853,2301 3812,2302
@@ -602,13 +601,13 @@ Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 1
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
-#: last_checked: 2013-09-15
+#: last_checked: 2013-09-16
 #: next_check: 2014-09-01
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2013-09-15
+#: last_checked: 2013-09-16
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -770,7 +769,7 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues 
 #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Brücke)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619&date=20130910 (Antwort)
-#: last_checked: 2013-09-09 (Rampe noch in Bau) vvv
+#: last_checked: 2013-09-16 (Rampe noch in Bau) vvv
 #: next_check: 2013-11-30 vvv
 #: osm_watch: way id="187902666" version="2"
 Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8333,9583 8338,9443 8388,9242 8373,9022 8389,9087
@@ -783,7 +782,7 @@ Eingang zum Flaschenhalspark	?::projected 8358,9568 8338,9443
 #: XXX Beleuchtung wird wohl existieren
 #: XXX_osm die Strecke bei osm muss lagemäßig korrigiert werden
 #: osm_watch: way id="182562157" version="2"
-#: last_checked: 2013-09-09 (asphaltierter Weg ist schon zu sehen)
+#: last_checked: 2013-09-16 (asphaltierter Weg ist schon zu sehen)
 #: next_check: 2013-11-09
 Weg entlang der Bautzener Str.	?::inwork 8204,9046 8207,9324 8185,9338
 # 
@@ -917,7 +916,7 @@ Templiner-See-Str.: Qualität? Kann die Daumstr. überquert werden?	?::projected -
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 #
-#: last_checked: 2013-08-26 vvv
+#: last_checked: 2013-09-16 vvv
 #: next_check: 2014-03-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1068,10 +1067,8 @@ Aronsstr.: existiert hier eine Verbindung zur Sonnenallee?	? 14519,7301 14571,74
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1276,8659 1410,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2163,9244 2316,9400
 # 
-#: XXX vmz-Eintrag relevant? NEW	Charlottenstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Ende 09/13) in beiden Richtungen zwischen Unter den Linden und Rosmarinstr., 13.09.2013 07:00 Uhr bis 23.09.2013 16:00 Uhr	IM_020322	
-Charlottenstr.: Vollsperrung?	? 9475,12365 9489,12263
-#: XXX vmz-Eintrag relevant? NEW	Reichstagufer (Mitte): Straße vollständig gesperrt (bis 25.09.2013) zwischen Wilhelmstr. und Bunsenstr., 15.09.2013 11:00 Uhr bis 25.09.2013 23:00 Uhr	IM_020332	
-Reichstagufer: Sperrung?	? 8766,12541 8892,12576
+# REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Charlottenstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Ende 09/13) in beiden Richtungen zwischen Unter den Linden und Rosmarinstr., 13.09.2013 07:00 Uhr bis 23.09.2013 16:00 Uhr	IM_020322	 --- Charlottenstr.: Vollsperrung?	? 9475,12365 9489,12263
+# REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Reichstagufer (Mitte): Straße vollständig gesperrt (bis 25.09.2013) zwischen Wilhelmstr. und Bunsenstr., 15.09.2013 11:00 Uhr bis 25.09.2013 23:00 Uhr	IM_020332	 --- Reichstagufer: Sperrung?	? 8766,12541 8892,12576
 # REMOVED (keine Bauarbeiten zu sehen) --- #: XXX vmz-Eintrag relevant? NEW	Nestorstr. (Charlottenburg): Straße vollständig gesperrt, Baustelle (Ende 09/13) in beiden Richtungen zwischen Kurfürstendamm und Johann-Georg-Str., 02.09.2013 06:45 Uhr bis 30.09.2013 10:00 Uhr	IM_020246 --- #: next_check: 2013-09-02 --- Nestorstr.: Bauarbeiten?	? 3374,10201 3359,9968 3347,9793
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13) Richtung Berliner Allee zwischen Parkstr. und Berliner Allee, 02.09.2013 08:00 Uhr bis 15.09.2013 16:00 Uhr	IM_020230	 --- #: next_check: 2013-09-02 --- Rennbahnstr.: Bauarbeiten?	? 14235,17103 14341,17030 14528,16910 14558,16907
 # 
