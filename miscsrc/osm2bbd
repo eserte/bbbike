@@ -212,6 +212,8 @@ my $handle_relations = $experiments{'handle_relations'};
      'grenzuebergaenge' => ['category_image.GU: grenzuebergang_16'],
      'ortsschilder' => ['category_image.OS: ../misc/verkehrszeichen/Zeichen_310_leer.svg:24x24=1:12000,xxx',
 			'title: Ortsschilder'],
+     'radwege_exact' => ['line_do_offset: 1',
+			 'line_arrow: none'],
     );
 
 # see http://www.mail-archive.com/talk@openstreetmap.org/msg06041.html
@@ -963,29 +965,7 @@ for my $osm_file (@osm_files) {
 		$name .= "; id=$id";
 	    }
 
-	    my $cycleway = $tag{'cycleway'};
 	    my $place    = $tag{'place'};
-
-	    my $cycleway_handled;
-	    my $do_cycleway = sub {
-		return if $cycleway_handled;
-		my @or;
-		if      ($cycleway eq 'lane') {
-		    push @or, ["radwege_exact", "RW4"];
-		} elsif ($cycleway eq 'track') {
-		    push @or, ["radwege_exact", "RW1"];
-		} elsif ($cycleway eq 'opposite_track' ||
-			 $cycleway eq 'opposite_lane' # sollte in Berlin nicht vorkommen
-			) {
-		    push @or, ["radwege_exact", "RW9"];
-		} elsif ($cycleway eq 'opposite') {
-		    # wird in Zusammenhang mit oneway verwendet
-		} else {
-		    $unhandled{"cycleway-$cycleway"}++;
-		}
-		$cycleway_handled = 1;
-		@or;
-	    };
 
 	    my $do_railway = sub {
 		my $railway_cat = $tag{'railway'};
@@ -1176,17 +1156,6 @@ for my $osm_file (@osm_files) {
 		    push @or, ['fragezeichen', '?', name => 'road category missing'];
 		} elsif ($highway_cat eq 'cycleway') {
 		    push @or, ["strassen", "NN".$addcat];
-		CYCLEWAY_KEY: {
-			if ($cycleway) {
-			    my @sub_or = $do_cycleway->();
-			    if (@sub_or) {
-				push @or, @sub_or;
-				last CYCLEWAY_KEY;
-			    }
-			}
-			# fallback
-			push @or, ["radwege_exact", "RW1"];
-		    }
 		} elsif ($highway_cat eq 'unsurfaced') { # XXX not mentioned in Map_Features, maybe fix data and remove?
 		    push @or, ["strassen", "N".$addcat];
 		    if (!defined $quality_cat) {
@@ -1227,8 +1196,6 @@ for my $osm_file (@osm_files) {
 			    $quality_cat = "Q3";
 			    $quality_name = $lang eq 'en' ? $highway_cat : "Pfad";
 			}
-		    } else {
-			push @or, ["radwege_exact", "RW1"];
 		    }
 		} elsif ($highway_cat =~ m{^(footway|pedestrian)$}) {
 		    my $label = ($highway_cat eq 'footway'
@@ -1291,7 +1258,7 @@ for my $osm_file (@osm_files) {
 			$lost_time = int($step_count * 0.7); # XXX need more scientific background for the coefficient
 		    }
 		    push @or, ["gesperrt", "0:$lost_time", name => $name]; # XXX really should be only one point, or maybe better, change bbbike to handle line features for "Treppe"; Also missing: precalculated angle. In case of a line feature I need to think something else...
-		} elsif ($highway_cat eq 'cycleroad') { # It seems that this tag is not anymore in use
+		} elsif ($highway_cat eq 'cycleroad') { # It seems that this tag is not anymore in use, see bicycle_road=yes
 		    push @or, ["strassen", "N".$addcat];
 		    push @or, ["radwege_exact", "RW7;RW7"];
 		} else {
@@ -1313,6 +1280,7 @@ for my $osm_file (@osm_files) {
 		}
 
 		my $oneway = $tag{'oneway'};
+		my $no_oneway_for_cyclists;
 		if ($oneway) {
 		    my $reversed = 1;
 		    # Special case -1, see
@@ -1324,10 +1292,12 @@ for my $osm_file (@osm_files) {
 			$oneway = "yes";
 		    }
 		    if ($oneway eq 'yes') {
-			if ($is_motorway ||
-			    (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') || # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
-			    (exists $tag{'cycleway'} && $tag{'cycleway'} =~ m{^opposite(?:$|_lane|_track)$}) # described in http://wiki.openstreetmap.org/wiki/DE:Germany_roads_tagging
-			   ) {
+			$no_oneway_for_cyclists =
+			    (
+			     (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') || # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
+			     (exists $tag{'cycleway'} && $tag{'cycleway'} =~ m{^opposite(?:$|_lane|_track)$}) # described in http://wiki.openstreetmap.org/wiki/DE:Germany_roads_tagging
+			    );
+			if ($is_motorway || $no_oneway_for_cyclists) {
 			    if (!$gesperrt_car_seen) {
 				push @or, ['gesperrt_car', '1', reversed => $reversed];
 			    }
@@ -1380,6 +1350,40 @@ for my $osm_file (@osm_files) {
 
 		if (exists $tag{'railway'}) {
 		    $do_railway->(); # typically tram on street
+		}
+
+		my $bicycle_road = $tag{'bicycle_road'};
+		if ($bicycle_road && $bicycle_road eq 'yes') {
+		    push @or, ["radwege_exact", "RW7;RW7"];
+		} else {
+		    my $cycleway = $tag{'cycleway'};
+		    ## XXX uneinheitliche Verwendung; unklar, ob man folgende Tags für Zweirichtungsradwege benutzen kann
+		    #my $cycleway_left = $tag{'cycleway:left'};
+		    #my $cycleway_right = $tag{'cycleway:right'};
+		    if ($cycleway) {
+			my $cycleway_oneway_handling = sub {
+			    my $cat = shift;
+			    if ($oneway && $oneway eq 'yes' && !$no_oneway_for_cyclists) {
+				"$cat;";
+			    } else {
+				"$cat;$cat";
+			    }
+			};
+
+			if      ($cycleway eq 'lane') {
+			    push @or, ["radwege_exact", $cycleway_oneway_handling->("RW4")];
+			} elsif ($cycleway eq 'track') {
+			    push @or, ["radwege_exact", $cycleway_oneway_handling->("RW1")];
+			} elsif ($cycleway eq 'opposite_track' ||
+				 $cycleway eq 'opposite_lane' # sollte in Berlin nicht vorkommen
+				) {
+			    push @or, ["radwege_exact", $cycleway_oneway_handling->("RW1")];
+			} elsif ($cycleway eq 'opposite') {
+			    # wird in Zusammenhang mit oneway verwendet
+			} else {
+			    $unhandled{"cycleway-$cycleway"}++;
+			}
+		    }
 		}
 
 	    } elsif (exists $tag{'waterway'}) {
@@ -1544,10 +1548,6 @@ for my $osm_file (@osm_files) {
 		    $name = ($name ? $name.": " : "") . $tag{'operator'};
 		}
 		add_underline(\@or, "_power", "X");
-	    }
-
-	    if ($cycleway) {
-		push @or, $do_cycleway->();
 	    }
 
 	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
