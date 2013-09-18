@@ -8879,8 +8879,8 @@ sub enter_scale {
 		      -showvalue => 0);
     };
     my $scale = $t->$Scale
-      (-from => 1000,
-       -to => 3_000_000,
+      (-from => min(1000, $old_mapscale),
+       -to => max(3_000_000, $old_mapscale),
        %scaleargs,
        -orient => 'horiz',
        -variable => \$new_mapscale_scale,
