@@ -10850,37 +10850,52 @@ sub plot_sperre {
 }
 
 sub _line_shorten {
-    my($cref, $begin, $end) = @_;
-    if (@$cref <= 2) {
+    my($cref, $begin, $end, $short_length) = @_;
+    if (@$cref < 4) {
 	warn "Coordinate list too short for shortening either begin or end\n";
 	return;
     }
-    if ($begin && $end && @$cref <= 4) {
-	warn "Coordinate list too short for shortening begin and end (@$cref)\n";
+    $short_length = 20 if !$short_length;
+
+    if ($begin && $end && @$cref == 4) {
+	# This is a special case: introduce a middle point, from where the
+	# line is plotted (shortened) to both sides. Another special case:
+        # the created line may exceed the original line length, if
+        # $short_length is larger.
+	my $len = Strassen::Util::strecke([@{$cref}[0,1]], [@{$cref}[2,3]]);
+	return if $len == 0;
+	my($middlex, $middley) = ($cref->[0] + ($cref->[2]-$cref->[0])/2,
+				  $cref->[1] + ($cref->[3]-$cref->[1])/2);
+	@$cref =
+	    (($cref->[0]-$middlex)/$len*$short_length+$middlex,
+	     ($cref->[1]-$middley)/$len*$short_length+$middley,
+	     ($cref->[-2]-$middlex)/$len*$short_length+$middlex,
+	     ($cref->[-1]-$middley)/$len*$short_length+$middley,
+	    );
 	return;
     }
 
     if ($begin) {
 	my $len1 = Strassen::Util::strecke([@{$cref}[0,1]], [@{$cref}[2,3]]);
-	my $whole_len1 = $len1 > 20 ? 20 : $len1;
+	my $used_short_length1 = $len1 > $short_length ? $short_length : $len1;
 	@{$cref}[0,1] =
-	    (($cref->[0]-$cref->[2])/$len1*$whole_len1+$cref->[2],
-	     ($cref->[1]-$cref->[3])/$len1*$whole_len1+$cref->[3],
+	    (($cref->[0]-$cref->[2])/$len1*$used_short_length1+$cref->[2],
+	     ($cref->[1]-$cref->[3])/$len1*$used_short_length1+$cref->[3],
 	    );
     }
     if ($end) {
 	my $len2 = Strassen::Util::strecke([@{$cref}[-4,-3]], [@{$cref}[-2,-1]]);
-	my $whole_len2 = $len2 > 20 ? 20 : $len2;
+	my $used_short_length2 = $len2 > $short_length ? $short_length : $len2;
 	@{$cref}[-2,-1] =
-	    (($cref->[-2]-$cref->[-4])/$len2*$whole_len2+$cref->[-4],
-	     ($cref->[-1]-$cref->[-3])/$len2*$whole_len2+$cref->[-3],
+	    (($cref->[-2]-$cref->[-4])/$len2*$used_short_length2+$cref->[-4],
+	     ($cref->[-1]-$cref->[-3])/$len2*$used_short_length2+$cref->[-3],
 	    );
     }
 }
 
-sub line_shorten_begin { _line_shorten(shift, 1, 0) }
-sub line_shorten       { _line_shorten(shift, 1, 1) }
-sub line_shorten_end   { _line_shorten(shift, 0, 1) }
+sub line_shorten_begin { _line_shorten(shift, 1, 0, shift) }
+sub line_shorten       { _line_shorten(shift, 1, 1, shift) }
+sub line_shorten_end   { _line_shorten(shift, 0, 1, shift) }
 
 sub split_by_crossings {
     my @p = @_;
