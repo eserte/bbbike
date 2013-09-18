@@ -6883,12 +6883,12 @@ EOF
 			    $std_tags_rueck[2] = "$abk-$cat_rueck";
 			    $line_dash_rueck = (exists $layer_category_line_dash{$abk} && $layer_category_line_dash{$abk}{$cat_rueck}) || $layer_line_dash{$abk} || $category_dash{$cat_rueck} || $line_dash{$abk};
 			    $line_capstyle_rueck = (exists $layer_category_capstyle{$abk} && $layer_category_capstyle{$abk}{$cat_rueck}) || $layer_line_capstyle{$abk} || $category_capstyle{$cat_rueck} || $line_capstyle{$abk};
-			    if ("$cat_hin $cat_rueck" =~ $cyclepath_opposite_qr) {
-				if ($cat_hin =~ $cyclepath_opposite_qr) {
-				    $special_cyclepath_opposite_hin = 1;
-				} else {
-				    $special_cyclepath_opposite_rueck = 1;
-				}
+			}
+			if ((($cat_hin||'').' '.($cat_rueck||'')) =~ $cyclepath_opposite_qr) {
+			    if ($cat_hin =~ $cyclepath_opposite_qr) {
+				$special_cyclepath_opposite_hin = 1;
+			    } else {
+				$special_cyclepath_opposite_rueck = 1;
 			    }
 			}
 			my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $layer_stipple{$abk} || $category_stipple{$category};
@@ -7039,7 +7039,7 @@ EOF
 					    # skip this plot, too many symbols
 					} else {
 					    my @section_cl = @{$cl}[$i-2..$i+1];
-					    line_shorten(\@section_cl);
+					    line_shorten(\@section_cl, 22); # default arrowhead length is 10, so add 2 to avoid the both arrows touching
 					    $c->createLine
 						(@section_cl,
 						 -fill  => $this_color,
