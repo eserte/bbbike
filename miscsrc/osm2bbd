@@ -193,6 +193,7 @@ my @bbox_wgs84;
 my %global_directives;
 my %place_to_population;
 my $handle_relations = $experiments{'handle_relations'};
+my %additional_data_per_file;
 
 %global_directives =
     (
@@ -1793,6 +1794,7 @@ if ($handle_relations) {
 
 resolve_node_fallback();
 sort_by_population_and_category();
+unhandled_stats();
 
 ######################################################################
 # OUTPUT
@@ -1848,12 +1850,6 @@ if ($parsefor) {
     }
     touch "temp_blockings/bbbike-temp-blockings.pl";
     output_meta();
-}
-
-if (%unhandled && $debug >= 1) {
-    print "Unhandled categories:\n";
-    local $Data::Dumper::Sortkeys = 1;
-    print Dumper (\%unhandled);
 }
 
 #exit;
@@ -2010,6 +2006,38 @@ sub sort_by_population_and_category {
     } @{$out{"orte"}};
 }
 
+sub unhandled_stats {
+    return if !%unhandled;
+
+    my $max_key_len = max map { length } keys %unhandled;
+    my $stats = "";
+
+    $stats .= <<'EOF';
+#
+######################################################################
+#
+## Unhandled data statistics
+#
+## ... by count
+#
+EOF
+    for my $key (sort { $unhandled{$b} <=> $unhandled{$a} } keys %unhandled) {
+	$stats .= sprintf "# %-${max_key_len}s: %d\n", $key, $unhandled{$key};
+    }
+    $stats .= <<'EOF';
+#
+## ... alphabetically
+#
+EOF
+    for my $key (sort keys %unhandled) {
+	$stats .= sprintf "# %-${max_key_len}s: %d\n", $key, $unhandled{$key};
+    }
+    $additional_data_per_file{"_unhandled"} = $stats;
+}
+
+######################################################################
+# output helpers
+
 sub output_data {
     my($ofh, $data, $filename) = @_;
     print $ofh <<EOF;
@@ -2083,6 +2111,11 @@ EOF
 	    print $ofh $namecat, " ", $coord_string, "\n";
 	}
     }
+
+    if ($additional_data_per_file{$filename}) {
+	print $ofh $additional_data_per_file{$filename};
+    }
+
 }
 
 sub output_meta {
