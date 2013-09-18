@@ -42,6 +42,8 @@ TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_HOSTEUROPE_SSH_HOST?=	${BBBIKE_HOSTEUROPE_HOST}
 STERNFAHRT_YEAR?=	2007
 TARGET_LIVE=		hosteurope
+HOST!=			hostname
+DEPLOYMENT_HOST?=	cvrsnica.herceg.de
 
 EXTRA_MISCSRC_FILES=	bbd2esri \
 			relevant_errorlog.pl \
@@ -887,5 +889,15 @@ automatic-deployment-temp-blockings:
 	-@${XTERM_CONF_TITLE} "BBBike temp-blockings deployment finished"
 
 automatic-deployment--check-prerequisites:
+	if [ "${HOST}" != "${DEPLOYMENT_HOST}" ] ; then \
+	    echo "*** ERROR: deployment was not started on \"${DEPLOYMENT_HOST}\","; \
+	    echo "but on host \"${HOST}\". If you think this is OK, then change or set"; \
+	    echo "the DEPLOYMENT_HOST make variable to the current host, e.g."; \
+	    echo ""; \
+	    echo "    ${MAKE} ${.MAKEFLAGS} ${.TARGETS} DEPLOYMENT_HOST=\$$HOST"; \
+	    false; \
+	else \
+	    true; \
+	fi
 	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' bbbike-pps
 	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' bbbike.de
