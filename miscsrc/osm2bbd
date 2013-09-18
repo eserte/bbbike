@@ -1818,7 +1818,7 @@ if ($parsefor) {
 
     # required files (dummy files, bbbike or bbbike.cgi like to have these):
     for my $file (qw(gesperrt gesperrt_car
-		     wasserumland wasserumland2 hoehe
+		     wasserstrassen wasserumland wasserumland2 hoehe
 		     orte orte2 qualitaet_l handicap_l
 		     berlin deutschland orte_city
 		     landstrassen landstrassen2
@@ -1827,7 +1827,7 @@ if ($parsefor) {
 		     radwege_exact fragezeichen
 		     Berlin.coords.data Potsdam.coords.data
 		     plaetze ampeln green nolighting
-		     culdesac
+		     culdesac faehren
 		    )) {
 	touch $file;
     }
