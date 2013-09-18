@@ -215,7 +215,8 @@ TARGET=bbbike.hosteurope.herceg.de
       make(automatic-deployment--check-prerequisites) || \
       make(after-deployment-set-tags) || \
       make(deploy-pps) || \
-      make(all)
+      make(all) || \
+      make(.PHONY)
 # no TARGET=
 .elif ${.TARGETS} == ""
 # no TARGET=
