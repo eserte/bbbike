@@ -6899,9 +6899,13 @@ EOF
 			        if ($addinfo_hin =~ $tunnel_qr) {
 				    $line_dash_hin = $line_dash{"Tu"};
 				    $line_dash_rueck = $line_dash_hin if defined $line_dash_hin;
-				    draw_tunnel_entrance($c, \@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin, -mounds => $addinfo_hin);
+				    if ($scale >= 1) { # bridges/tunnels shouldn't be drawn in small scales
+					draw_tunnel_entrance($c, \@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin, -mounds => $addinfo_hin);
+				    }
 				} elsif ($addinfo_hin eq 'Br') {
-				    draw_bridge($c, \@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin);
+				    if ($scale >= 1) { # bridges/tunnels shouldn't be drawn in small scales
+					draw_bridge($c, \@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin);
+				    }
 				}
 			    }
 			}
@@ -7056,7 +7060,9 @@ EOF
 
 			    }
 			} elsif ($cat_hin eq 'Br') {
-			    draw_bridge($c, \@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin);
+			    if ($scale >= 1) {
+				draw_bridge($c, \@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin);
+			    }
 			} elsif ($cat_hin =~ $roundabout_qr) {
 			    if ($edit_normal_mode) {
 				$c->createLine(@coordlist,
@@ -7071,7 +7077,9 @@ EOF
 				return;
 			    }
 			} elsif ($cat_hin =~ $tunnel_qr) {
-			    draw_tunnel_entrance($c, \@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin, -mounds => $cat_hin);
+			    if ($scale >= 1) {
+				draw_tunnel_entrance($c, \@coordlist, -width => $this_width_hin+4, -tags => \@std_tags_hin, -mounds => $cat_hin);
+			    }
 			} else {
 			    my $arrow =
 EOF
@@ -10264,15 +10272,12 @@ sub plotstr {
 
     my $default_width = get_line_width($abk) || 4;
     if (defined $args{Width}) { $default_width = $args{Width} }
-    my %category_width; # XXX the global category_width is ignored!!! should be changed
-    {
-	my $scale = (exists $args{Canvas}
-		     ? ($show_overview_mode eq 'region'
-			? $small_scale
-			: $medium_scale)
-		     : $scale);
-	%category_width = _set_category_width($abk, $scale);
-    }
+    my $scale = (exists $args{Canvas}
+		 ? ($show_overview_mode eq 'region'
+		    ? $small_scale
+		    : $medium_scale)
+		 : $scale);
+    my %category_width = _set_category_width($abk, $scale); # XXX the global category_width is ignored!!! should be changed
 
     # current category size
     my %category_size = map {
