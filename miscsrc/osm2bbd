@@ -966,7 +966,9 @@ for my $osm_file (@osm_files) {
 	    my $cycleway = $tag{'cycleway'};
 	    my $place    = $tag{'place'};
 
+	    my $cycleway_handled;
 	    my $do_cycleway = sub {
+		return if $cycleway_handled;
 		my @or;
 		if      ($cycleway eq 'lane') {
 		    push @or, ["radwege_exact", "RW4"];
@@ -981,6 +983,7 @@ for my $osm_file (@osm_files) {
 		} else {
 		    $unhandled{"cycleway-$cycleway"}++;
 		}
+		$cycleway_handled = 1;
 		@or;
 	    };
 
@@ -1466,8 +1469,6 @@ for my $osm_file (@osm_files) {
 		} else {
 		    $unhandled{"leisure=$leisure"}++;
 		}
-	    } elsif ($cycleway) {
-		push @or, $do_cycleway->();
 	    } elsif (exists $tag{'landuse'}) {
 		my $landuse = $tag{'landuse'};
 		if      ($landuse eq 'cemetery') {
@@ -1541,6 +1542,10 @@ for my $osm_file (@osm_files) {
 		    $name = ($name ? $name.": " : "") . $tag{'operator'};
 		}
 		add_underline(\@or, "_power", "X");
+	    }
+
+	    if ($cycleway) {
+		push @or, $do_cycleway->();
 	    }
 
 	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
