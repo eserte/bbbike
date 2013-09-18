@@ -1317,11 +1317,13 @@ for my $osm_file (@osm_files) {
 		    my $reversed = 1;
 		    # Special case -1, see
 		    # http://wiki.openstreetmap.org/index.php/Key:oneway
-		    if ($oneway eq '-1') {
-			$oneway = "true";
+		    if ($oneway =~ m{^(-1|reverse)$}) {
+			$oneway = "yes";
 			$reversed = 0;
+		    } elsif ($oneway =~ m{^(true|1)$}) {
+			$oneway = "yes";
 		    }
-		    if ($oneway =~ m{^(?:yes|true)$}) {
+		    if ($oneway eq 'yes') {
 			if ($is_motorway ||
 			    (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') || # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
 			    (exists $tag{'cycleway'} && $tag{'cycleway'} =~ m{^opposite(?:$|_lane|_track)$}) # described in http://wiki.openstreetmap.org/wiki/DE:Germany_roads_tagging
