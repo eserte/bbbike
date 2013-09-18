@@ -214,7 +214,10 @@ TARGET=bbbike.hosteurope.herceg.de
       make(automatic-deployment-temp-blockings) || \
       make(automatic-deployment--check-prerequisites) || \
       make(after-deployment-set-tags) || \
-      make(deploy-pps)
+      make(deploy-pps) || \
+      make(all)
+# no TARGET=
+.elif ${.TARGETS} == ""
 # no TARGET=
 .else
 .error "Please set TARGET to ${TARGET_LIVE} or bbbike.hosteurope.herceg.de"
