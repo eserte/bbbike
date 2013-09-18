@@ -1120,6 +1120,11 @@ for my $osm_file (@osm_files) {
 		    if (defined $foot_tag && $foot_tag eq 'no') {
 			push @or, ["gesperrt", 2]; $gesperrt_seen = 1;
 		    } else {
+			# Heuristic: if cyclists are explicit
+			# disallowed but pedestrians not, then assume
+			# that dismounting is possible. Does not work
+			# everywhere, example: Heerstrasse (foot=no is
+			# lacking here)
 			$set_handicap->('q4', $cyclists_dismount_label);
 		    }
 		}
