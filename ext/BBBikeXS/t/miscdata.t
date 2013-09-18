@@ -130,11 +130,13 @@ sub write_data {
 
 # XXX It is not completely clear if cloning should be necessary here.
 sub draw_bridge          {
+    my $c = shift;
     @bridge_arguments = @{ dclone \@_ };
     my($cl,%args) = @_;
     $c->createLine($cl, -fill=>"red", -dash=>".-", -tags=>$args{-tags});
 }
 sub draw_tunnel_entrance {
+    my $c = shift;
     @tunnel_entrance_arguments = @{ dclone \@_ };
     my($cl,%args) = @_;
     $c->createLine($cl, -fill=>"blue", -dash=>".-", -tags=>$args{-tags});

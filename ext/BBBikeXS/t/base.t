@@ -46,6 +46,8 @@ use BBBikeXS;
 use Getopt::Long;
 use Benchmark;
 
+use BBBikeCanvasUtil qw(draw_bridge draw_tunnel_entrance);
+
 my $datadir = "../../data";
 my $imgdir = "../../images";
 push(@Strassen::datadirs, $datadir);

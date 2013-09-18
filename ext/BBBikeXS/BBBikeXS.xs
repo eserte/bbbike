@@ -1035,6 +1035,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 			}
 			if (has_draw_bridge) {
 			  PUSHMARK(sp);
+			  XPUSHs(canvas);
 			  XPUSHs(sv_2mortal(newRV_inc((SV*)coords)));
 			  XPUSHs(width_sv);
 			  XPUSHs(sv_2mortal(newSViv(width+4)));
@@ -1057,6 +1058,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 			}
 			if (has_draw_tunnel_entrance) {
 			  PUSHMARK(sp);
+			  XPUSHs(canvas);
 			  XPUSHs(sv_2mortal(newRV_inc((SV*)coords)));
 			  XPUSHs(width_sv);
 			  XPUSHs(sv_2mortal(newSViv(width+4)));
