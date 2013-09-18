@@ -1381,6 +1381,8 @@ for my $osm_file (@osm_files) {
 			    push @or, ["radwege_exact", $cycleway_oneway_handling->("RW1")];
 			} elsif ($cycleway eq 'opposite') {
 			    # wird in Zusammenhang mit oneway verwendet
+			} elsif ($cycleway eq 'share_busway') {
+			    push @or, ["radwege_exact", $cycleway_oneway_handling->("RW5")];
 			} else {
 			    $unhandled{"cycleway-$cycleway"}++;
 			}
