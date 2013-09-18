@@ -6940,8 +6940,9 @@ EOF
 			    my $cat_rueck = defined $cat_rueck ? $cat_rueck: ''; # avoid warnings
 			    my $line_directed_weight = ($layer_category_line_directed_weight{$abk} && $layer_category_line_directed_weight{$abk}{$cat_hin}) || $layer_line_directed_weight{$abk};
 			    my($cl_hin,$cl_rueck);
+			    my $delta;
 			    if (!$line_directed_weight) {
-				my $delta = $this_width_hin/2; # XXX need a better rule for this
+				$delta = $this_width_hin/2; # XXX need a better rule for this
 				($cl_hin,$cl_rueck) = offset_line(\@coordlist, $delta, $cat_hin ne '', $cat_rueck ne '');
 			    }
 			    for my $dir (1, -1) {
@@ -6953,7 +6954,7 @@ EOF
 					($cl)       = offset_line(\@coordlist, $this_width_hin/2-0.5, 1, 0);
 					$this_width = $this_width_hin;
 				    } elsif ($special_cyclepath_opposite) {
-					(undef, $cl) = offset_line(\@coordlist, $this_width_hin, 0, 1);
+					(undef, $cl) = offset_line(\@coordlist, $delta+$this_width_hin/2+3, 0, 1); # "3" is the default arrowshape half-width (last element from "8 10 3")
 				    } else {
 				        $cl         = $cl_hin;
 				        $this_width = $this_width_hin/2;
@@ -6971,7 +6972,7 @@ EOF
 					(undef, $cl_rueck) = offset_line(\@coordlist, $this_width_rueck/2-0.5, 0, 1);
 					$this_width = $this_width_rueck;
 				    } elsif ($special_cyclepath_opposite) {
-					($cl_rueck) = offset_line(\@coordlist, $this_width_hin, 1, 0);
+					($cl_rueck) = offset_line(\@coordlist, $delta+$this_width_rueck/2+3, 1, 0); # "3": see above
 				    } else {
 					$this_width = $this_width_rueck/2;
 				    }
