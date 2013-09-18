@@ -1118,7 +1118,7 @@ for my $osm_file (@osm_files) {
 		my $foot_tag = $tag{'foot'};
 		if (defined $bicycle_tag && $bicycle_tag eq 'no') {
 		    if (defined $foot_tag && $foot_tag eq 'no') {
-			$is_motorroad = 1;
+			push @or, ["gesperrt", 2]; $gesperrt_seen = 1;
 		    } else {
 			$set_handicap->('q4', $cyclists_dismount_label);
 		    }
