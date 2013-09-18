@@ -166,7 +166,7 @@ use vars qw($mapscale $default_mapscale);
 use vars qw($small_scale $medium_scale $small_scale_edit $medium_scale_edit);
 use vars qw($zoomrect_after $showmark_after $bbbike_route_ext);
 use vars qw(%active_speed_power);
-use vars qw(%str_restrict %str_ignore $tunnel_qr $roundabout_qr $complex_IMG_qr $viewangle_qr);
+use vars qw(%str_restrict %str_ignore $tunnel_qr $roundabout_qr $complex_IMG_qr $viewangle_qr $cyclepath_opposite_qr);
 use vars qw(%tag_group);
 use vars qw(@route_strnames);
 use vars qw($net_type %add_net);

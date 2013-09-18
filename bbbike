@@ -480,6 +480,7 @@ $roundabout_qr = qr{^(Mini)?Roundabout$};
 # no $cat_rueck handling here
 $complex_IMG_qr = qr/^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/;
 $viewangle_qr = qr{^View:([-+]?\d+):([-+]?\d+)}; # XXX duplicated in Strassen::Cat
+$cyclepath_opposite_qr = qr{\bRW[89]\??\b};
 
 # do not draw Steigung and Gefälle at the same time:
 $str_ignore{'comm'} = {'Gf' => 1}; # XXX with ";"???
@@ -6876,11 +6877,19 @@ EOF
 			my $line_dash_rueck;
 			my $line_capstyle_hin = (exists $layer_category_capstyle{$abk} && $layer_category_capstyle{$abk}{$cat_hin}) || $layer_line_capstyle{$abk} || $category_capstyle{$cat_hin} || $line_capstyle{$abk};
 			my $line_capstyle_rueck;
+			my($special_cyclepath_opposite_hin, $special_cyclepath_opposite_rueck);
 			if ($cat_rueck) {
 			    @std_tags_rueck = @std_tags_hin;
 			    $std_tags_rueck[2] = "$abk-$cat_rueck";
 			    $line_dash_rueck = (exists $layer_category_line_dash{$abk} && $layer_category_line_dash{$abk}{$cat_rueck}) || $layer_line_dash{$abk} || $category_dash{$cat_rueck} || $line_dash{$abk};
 			    $line_capstyle_rueck = (exists $layer_category_capstyle{$abk} && $layer_category_capstyle{$abk}{$cat_rueck}) || $layer_line_capstyle{$abk} || $category_capstyle{$cat_rueck} || $line_capstyle{$abk};
+			    if ("$cat_hin $cat_rueck" =~ $cyclepath_opposite_qr) {
+				if ($cat_hin =~ $cyclepath_opposite_qr) {
+				    $special_cyclepath_opposite_hin = 1;
+				} else {
+				    $special_cyclepath_opposite_rueck = 1;
+				}
+			    }
 			}
 			my $stipple = ($layer_category_stipple{$abk} && $layer_category_stipple{$abk}{$category}) || $layer_stipple{$abk} || $category_stipple{$category};
 			$stipple = load_stipple($stipple) if $stipple;
@@ -6936,12 +6945,15 @@ EOF
 				($cl_hin,$cl_rueck) = offset_line(\@coordlist, $delta, $cat_hin ne '', $cat_rueck ne '');
 			    }
 			    for my $dir (1, -1) {
-				my($cl, $this_color, $this_width, $cat, $std_tags, $line_dash, $line_capstyle);
+				my($cl, $this_color, $this_width, $cat, $std_tags, $line_dash, $line_capstyle, $dont_plot_line, $special_cyclepath_opposite);
 				if ($dir == 1 && $cat_hin ne '') {
+				    $special_cyclepath_opposite = $special_cyclepath_opposite_hin;
 				    if (!$cl_hin) {
 					# -0.5, to avoid occasional gaps between two directed lines
 					($cl)       = offset_line(\@coordlist, $this_width_hin/2-0.5, 1, 0);
 					$this_width = $this_width_hin;
+				    } elsif ($special_cyclepath_opposite) {
+					(undef, $cl) = offset_line(\@coordlist, $this_width_hin, 0, 1);
 				    } else {
 				        $cl         = $cl_hin;
 				        $this_width = $this_width_hin/2;
@@ -6951,11 +6963,15 @@ EOF
 				    $std_tags   = \@std_tags_hin;
 				    $line_dash  = $line_dash_hin;
 				    $line_capstyle = $line_capstyle_hin;
+				    $dont_plot_line = $special_cyclepath_opposite;
 				} elsif ($dir == -1 && $cat_rueck ne '') {
+				    $special_cyclepath_opposite = $special_cyclepath_opposite_rueck;
 				    if (!$cl_rueck) {
 					# -0.5: see above
 					(undef, $cl_rueck) = offset_line(\@coordlist, $this_width_rueck/2-0.5, 0, 1);
 					$this_width = $this_width_rueck;
+				    } elsif ($special_cyclepath_opposite) {
+					($cl_rueck) = offset_line(\@coordlist, $this_width_hin, 1, 0);
 				    } else {
 					$this_width = $this_width_rueck/2;
 				    }
@@ -6968,36 +6984,39 @@ EOF
 				    $std_tags   = \@std_tags_rueck;
 				    $line_dash  = $line_dash_rueck;
 				    $line_capstyle = $line_capstyle_rueck;
+				    $dont_plot_line = $special_cyclepath_opposite;
 				} else {
 				    next;
 				}
 
-				my $arrow;
-				if ($line_capstyle && $line_capstyle eq 'round') {
-				    # XXX Tk problem? bad rendering with capstyle=>"round" and arrow=>something
-				    $arrow = 'none';
-				} else {
-				    $arrow = 
+				if (!$dont_plot_line) {
+				    my $arrow;
+				    if ($line_capstyle && $line_capstyle eq 'round') {
+					# XXX Tk problem? bad rendering with capstyle=>"round" and arrow=>something
+					$arrow = 'none';
+				    } else {
+					$arrow =
 EOF
 . $get_arrow_code . <<'EOF'
-			            ;
-				    if (!$arrow) {
-					$arrow = 'last';
+					;
+					if (!$arrow) {
+					    $arrow = 'last';
+					}
 				    }
-				}
 
-				$c->createLine
-				    (@$cl,
-				     -fill  => $this_color,
-				     -width => $this_width,
-				     -joinstyle => 'bevel',
-				     -tags  => [@$std_tags,
-						@extra_tags],
-				     ($line_dash ? (-dash => $line_dash) : ()),
-				     ($line_capstyle ? (-capstyle => $line_capstyle) : ()),
-				     ($stipple ? (-stipple => $stipple) : ()),
-				     -arrow => $arrow,
-				    );
+				    $c->createLine
+					(@$cl,
+					 -fill  => $this_color,
+					 -width => $this_width,
+					 -joinstyle => 'bevel',
+					 -tags  => [@$std_tags,
+						    @extra_tags],
+					 ($line_dash ? (-dash => $line_dash) : ()),
+					 ($line_capstyle ? (-capstyle => $line_capstyle) : ()),
+					 ($stipple ? (-stipple => $stipple) : ()),
+					 -arrow => $arrow,
+					);
+				}
 
 				# Draw an extra point indicating the point of action for CP/CP2 items
 				if ($cat_hin =~ m{^( CP | CP2 | PI )$}x) {
@@ -7007,6 +7026,30 @@ EOF
 					-width => 2,
 					-tags => [@$std_tags, @extra_tags],
 				    );
+				}
+
+				if ($special_cyclepath_opposite) {
+				    my $last_draw_position;
+				    my $current_draw_position = 0;
+				    for(my $i=2; $i<=$#$cl; $i+=2) {
+					my $length = Strassen::Util::strecke([@{$cl}[$i-2,$i-1]], [@{$cl}[$i,$i+1]]);
+					$current_draw_position += $length/2;
+					if ($last_draw_position && $current_draw_position - $last_draw_position < 50) {
+					    # skip this plot, too many symbols
+					} else {
+					    my @section_cl = @{$cl}[$i-2..$i+1];
+					    line_shorten(\@section_cl);
+					    $c->createLine
+						(@section_cl,
+						 -fill  => $this_color,
+						 -width => 1,
+						 -tags  => [@$std_tags, @extra_tags],
+						 -arrow => 'both',
+						);
+					    $last_draw_position = $current_draw_position;
+					}
+					$current_draw_position += $length/2;
+				    }
 				}
 
 			    }
