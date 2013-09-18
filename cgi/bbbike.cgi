@@ -1832,7 +1832,8 @@ EOF
 	# aufgeführt sind, ergibt als Summe 10129
 	# Da aber auch einige "unoffizielle" Wege in der DB sind, dürften es an die 11000 werden
 	# ---> es sind aber mehr als 11000. Am besten, ich lasse $all_bln_str weg...
-	my($bln_str, $pdm_str) = (11200, 450);
+        # ---> es sind doch weniger als 11000, ich runde aber trotzdem auf
+	my($bln_str, $pdm_str) = (11000, 550);
 	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
 	    print <<EOF;
