@@ -562,8 +562,15 @@ sub plot_osm_files {
 		    } elsif (exists $tag{'landuse'} && $tag{'landuse'} =~ m{^(?:industrial|commercial)$}) {
 			$light_color = '#b0a0b0';
 			$dark_color = '#a060a0';
-		    } elsif (exists $tag{'building'} && $tag{'building'} eq 'yes') {
-			$light_color = '#b98a68';
+		    } elsif (exists $tag{'building'}) {
+			if ($tag{'construction'} ||
+			    $tag{'building'} =~ CONSTRUCTION_RX) {
+			    $light_color = '#dddddd';
+			} elsif ($tag{'building'} =~ m{^(yes|residential|apartments)$}) {
+			    $light_color = '#b98a68';
+			} else {
+			    $light_color = '#c99a78';
+			}
 		    } elsif ((exists $tag{'amenity'} && $tag{'amenity'} eq 'parking') ||
 			     (exists $tag{'highway'})
 			    ) {
