@@ -88,8 +88,8 @@ Seestr.	1 5440,14840 5264,14671 5057,14607
 Waidmannsluster Damm	1 2144,20870 1835,21427 1882,21468 2195,20898
 Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16280 2819,16141
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
-Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2904,14748
-Kurt-Schumacher-Damm (Süd)	1 2960,14746 2847,14356 2857,14222
+Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2905,14754
+Kurt-Schumacher-Damm (Süd)	1 2963,14752 2847,14356 2857,14222
 Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1508,14508 -1369,14644 -1119,14659 -925,14631
@@ -144,9 +144,8 @@ Stolzenfelsstr.	1s:q2 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 187
 Bersarinplatz	1 13730,12535 13698,12544 13678,12571 13686,12611 13695,12643 13747,12642 13767,12626 13761,12578 13730,12535
 Petersburger Platz	1 13470,12990 13559,12779
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
-#: XXX wird die Einbahnstraßenregelung für Radfahrer zumindest im östlichen Abschnitt wegen der Radroute aufgehoben?
-#: osm_watch: way id="42826410" version="5"
-Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972 1465,14963
+# REMOVED (aufgehoben für alle) --- #: XXX wird die Einbahnstraßenregelung für Radfahrer zumindest im östlichen Abschnitt wegen der Radroute aufgehoben? --- #: osm_watch: way id="42826410" version="5" --- Schuckertdamm	1 1343,14972 1465,14963
+Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
 Scheelestr.	1 5740,1227 5697,1098 5556,984 5493,935 5424,882 5342,845
@@ -796,8 +795,8 @@ Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5465,8511 5502,85
 Bundesallee (Richtungsfahrbahn)	1::igndisp 5505,8832 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
 #: note: ^^^
 # 
-Nonnendammallee (Richtungsfahrbahn)	1::igndisp -283,14523 -457,14536 -914,14602
-Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -283,14523
+Nonnendammallee (Richtungsfahrbahn)	1::igndisp -278,14532 -457,14536 -914,14602
+Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
 #: note: Mittelstreifen vvv
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2619 4313,2630 4224,2671 4164,2717
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4164,2717 4233,2675 4317,2638 4348,2619
@@ -1072,6 +1071,7 @@ Am Tierpark [Wohngebiet]	1 18552,10220 18534,10185 18484,10326
 Neue Jakobstr./Schulze-Delitzsch-Platz	1 11060,11753 11073,11774
 Edith-Kiss-Str.	1 12793,11132 12866,11256
 Garzauer Str.	1 21830,13688 21722,13708
+Flankenschanze	1 -3507,15341 -3534,15219
 ######################################################################
 # empfohlene Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1269,7 +1269,7 @@ Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
-#: next_check: 2013-09-20
+#: next_check: 2013-09-30
 #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Niemannstr.	1s:q4 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
@@ -1390,8 +1390,8 @@ Landsberger Allee: Mittelstreifen	3nocross 15850,14308 15925,14316 16010,14326
 Falkenseer Chaussee: Mittelstreifen	3nocross -6144,15946 -6073,15925 -5911,15877
 #: by: Tobias (Lung)
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 889,14392
-Siemensdamm: Mittelstreifen	3nocross 1133,14387 1182,14384 1246,14384 1305,14384 1360,14375
-Siemensdamm: Mittelstreifen	3nocross 1360,14375 1420,14369 1479,14343
+Siemensdamm: Mittelstreifen	3nocross 1133,14387 1182,14384 1246,14384 1305,14384 1361,14384
+Siemensdamm: Mittelstreifen	3nocross 1361,14384 1420,14369 1479,14343
 Suermondtstr: Straßenbahntrasse	3nocross 16095,16331 16260,16282 16416,16236
 #: by: Vicky (senchi):
 #: confirmed_by: srt
@@ -1629,7 +1629,6 @@ Neuköllner Str.: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
 Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3347,6460 3459,6484
 Berliner Str.: Straßenbahntrasse	3nocross 12396,17514 12436,17682 12467,17814
 Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
-Daumstr.: Mittelstreifen	3nocross -1783,16533 -1765,16603 -1746,16667
 Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
 Landsberger Chaussee: Straßenbahntrasse	3nocross 22771,16194 22974,16139 23162,16095
 Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
@@ -1673,11 +1672,16 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (10+11 Stufen)	0:30 -1584,11499
+#: XXX wird die Treppe während der Bauarbeiten an der Freybrücke benutzbar sein?
+#: last_checked: 2013-09-19
+#: next_check: 2014-03-19
+tragen (ca. 45 Stufen)	0:45 -3177,11507
 tragen (4 Stufen)	0:10 21326,11122
 tragen (8+8 Stufen)	0:25 19534,14459
 tragen (5 x 5 Stufen) bzw. steile Rampe zum Schieben benutzen	0:35 19570,13833
 tragen bzw. steile Rampe benutzen	0:30 1523,13377
-tragen (7+9 Stufen)	0:25 -3621,13884 -3513,13800 -3503,13773
+tragen (7+9 Stufen)	0:25 -3513,13800
 tragen (7 Stufen)	0:14 -4744,14392
 tragen (2 Stufen)	0:5 12572,14836
 tragen (3+5 Stufen)	0:15 9366,6150
@@ -2045,10 +2049,7 @@ Schranke	BNP:3::trailer=10 -4300,15295
 Schranke	BNP:3::trailer=10 -4117,15255
 #: by: ^^^
 Schranke	BNP:3::trailer=10 15090,11237
-#: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7030&options=4
-#: XXX genaue Position der Schranke?
-#: prio: #C
-Schranke	BNP:3::trailer=10 -822,16535
+# REMOVED (existiert nicht) --- #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7030&options=4 --- #: XXX genaue Position der Schranke? --- #: prio: #C --- Schranke	BNP:3::trailer=10 -822,16535
 #: note: in Richtung Dieffenbachstr. recht eng, in die andere Richtung ist mehr Platz
 Schranke	BNP:5::trailer=10 10919,9804
 Drängelgitter, kann umfahren werden	BNP:3::trailer=10 14969,10138
@@ -2815,7 +2816,6 @@ Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363
 #: corrected_by: srt/new_policy (0:40 -> 0:20, matches better the 10 steps)
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20 9223,14608
 Tor	BNP:0 3332,12742
-Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
 tragen (Treppe, 14 Stufen)	0:30 7931,12876
 Joachim-Karnatz-Allee	1 7142,12584 7131,12615
 Joachim-Karnatz-Allee	1 7175,12630 7187,12598

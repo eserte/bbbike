@@ -506,12 +506,30 @@ Fridolinweg -> Cecilienstr.: Mittelstreifen	3::igndisp 21412,14023 21398,13906 2
 Cecilienstr. -> Fridolinweg: Mittelstreifen	3::igndisp 21358,13909 21398,13906 21412,14023
 Blumberger Damm [Nebenfahrbahn] -> Cecilienstr.: Mittelstreifen	3::igndisp 21430,13602 21466,13903 21398,13906
 Cecilienstr. -> Blumberger Damm [Nebenfahrbahn]: Mittelstreifen	3::igndisp 21576,13898 21466,13903 21430,13602
-Mittelstreifen	3nocross::ignrte -1675,16813 -1710,16735 -1746,16667
+Mittelstreifen	3nocross::ignrte -1746,16667 -1710,16735 -1675,16813
 Daumstr. -> Glindowseestr.: Mittelstreifen	3::igndisp -1675,16813 -1710,16735 -1555,16696
+Glindowseestr. -> Langer-See-Str.: Mittelstreifen	3::igndisp -1555,16696 -1710,16735 -1857,16766
 Glindowseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1555,16696 -1710,16735 -1746,16667
-Mittelstreifen	3nocross::ignrte -1765,16603 -1746,16667 -1710,16735
+Langer-See-Str. -> Daumstr.: Mittelstreifen	3::igndisp -1857,16766 -1710,16735 -1675,16813
+Langer-See-Str. -> Glindowseestr.: Mittelstreifen	3::igndisp -1857,16766 -1710,16735 -1555,16696
+Daumstr. -> Langer-See-Str.: Mittelstreifen	3::igndisp -1746,16667 -1710,16735 -1857,16766
+Mittelstreifen	3nocross::ignrte -1710,16735 -1746,16667 -1765,16603 -1783,16533 -1798,16465 -1810,16391
 Daumstr. -> Schwielowseestr.: Mittelstreifen	3::igndisp -1765,16603 -1746,16667 -1856,16694
 Schwielowseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1856,16694 -1746,16667 -1710,16735
+Schwielowseestr. -> Quenzseeweg: Mittelstreifen	3::igndisp -1856,16694 -1746,16667 -1671,16653
+Daumstr. -> Quenzseeweg: Mittelstreifen	3::igndisp -1710,16735 -1746,16667 -1671,16653
+Quenzseeweg -> Daumstr.: Mittelstreifen	3::igndisp -1671,16653 -1746,16667 -1765,16603
+Quenzseeweg -> Schwielowseestr.: Mittelstreifen	3::igndisp -1671,16653 -1746,16667 -1856,16694
+Schwielowseestr. -> Beetzseeweg: Mittelstreifen	3::igndisp -1872,16631 -1765,16603 -1689,16584
+Schwielowseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1872,16631 -1765,16603 -1746,16667
+Daumstr. -> Schwielowseestr.: Mittelstreifen	3::igndisp -1783,16533 -1765,16603 -1872,16631
+Beetzseeweg -> Schwielowseestr.: Mittelstreifen	3::igndisp -1689,16584 -1765,16603 -1872,16631
+Beetzseeweg -> Daumstr.: Mittelstreifen	3::igndisp -1689,16584 -1765,16603 -1783,16533
+Daumstr. -> Beetzseeweg: Mittelstreifen	3::igndisp -1746,16667 -1765,16603 -1689,16584
+Daumstr. -> Zernseestr.: Mittelstreifen	3::igndisp -1798,16465 -1783,16533 -1897,16562
+Zernseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1897,16562 -1783,16533 -1765,16603
+Daumstr. -> Templiner-See-Str.: Mittelstreifen	3::igndisp -1810,16391 -1798,16465 -1902,16493
+Templiner-See-Str. -> Daumstr.: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1783,16533
 Karlstr.	1 22556,4386 22458,4134
 Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21251,18508
 Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,18679 21251,18508
@@ -738,8 +756,8 @@ Grunerstr. -> Klosterstr.: Mittelstreifen	3::igndisp 10954,12635 10878,12560 109
 Bayernring	1 8616,8605 8454,8574 8380,8545
 Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13418,1668
 Mittelstreifen	3nocross::ignrte -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2706,13291
-Tiefwerderweg -> Ruhlebener Str.: Mittelstreifen	3::igndisp -2960,13203 -2967,13417 -2977,13424
-Ruhlebener Str. -> Tiefwerderweg: Mittelstreifen	3::igndisp -2937,13399 -2967,13417 -2960,13203
+Tiefwerderweg -> Ruhlebener Str.: Mittelstreifen	3::igndisp -2974,13188 -2967,13417 -2977,13424
+Ruhlebener Str. -> Tiefwerderweg: Mittelstreifen	3::igndisp -2937,13399 -2967,13417 -2974,13188
 Baumgartensteg -> Ruhlebener Str.: Mittelstreifen	3::igndisp -2882,13474 -2937,13399 -2706,13291
 Ruhlebener Str. -> Baumgartensteg: Mittelstreifen	3::igndisp -2967,13417 -2937,13399 -2882,13474
 Brückenauffahrt	3nocross::ignrte 18492,6893 18404,6946 18225,7004 18010,7133
@@ -1228,11 +1246,11 @@ Teikeweg: Poller	3 9428,4419 9412,4537 9519,4537
 Medebacher Weg: Schranke	3 1886,19835 1896,19801 1945,19622
 Medebacher Weg: Schranke	3 1945,19622 1896,19801 1886,19835
 Dievenowstr.	1 3228,7401 3208,7328 3189,7249 3202,7121
-Abbestr.: nur für Anlieger, herausfahrbare Poller	2 4757,12219 4683,12072
+Abbestr.: nur für Anlieger, herausfahrbare Poller	2 4762,12229 4683,12072
 Knesebeckstr. - Hardenbergstr.	3 4897,11354 4919,11605 4900,11626
 Sakrower Kirchweg	1 -8162,4025 -8255,3946 -8308,3902 -8401,3894 -8449,3907
 Sibeliusweg	1 -6797,4991 -6789,5052 -6787,5076 -6762,5133 -6747,5169
-Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1986,11487
+Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1994,11496
 Sensburger Allee	1 200,11428 326,11391 439,11228
 Kyllburger - Darßer Str	3 16670,17454 16779,17521 16751,17560
 Am Steinberg	1 13183,17580 12998,17480
@@ -1610,3 +1628,4 @@ Helmstedter Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5711,9357 5725,9041
 Mittelstreifen	3nocross::ignrte 6863,9254 6923,9266 7006,9282
 Schwäbische Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6851,9365 6923,9266 7006,9282
 Grunewaldstr. -> Schwäbische Str.: Mittelstreifen	3::igndisp 6863,9254 6923,9266 6851,9365
+Herderstr. (Charlottenburg)	1 4452,11570 4434,11360

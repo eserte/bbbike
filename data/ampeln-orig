@@ -639,7 +639,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3255,14685
 	X -3352,14676
 	X -3355,14764
-	X -1986,11487
+	X -1994,11496
 	X -2419,13237
 	X -2706,13291
 	X -3189,13588
@@ -893,8 +893,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3677,11685
 	X -4500,11937
 	X -4882,12061
-	X -2850,11423
-	X -2209,11222
+	X -2851,11417
+	X -2222,11225
 	X 9621,3155
 	X 9720,2887
 	X 10788,-172
@@ -1003,9 +1003,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2020,20327
 	X 127,17176
 	X -344,15200
-	X -283,14523
+	X -278,14532
 	X 1479,14343
-	X 1360,14375
+	X 1361,14384
 	X 2087,14078
 	X 2881,14061
 	X 3038,13612
@@ -1204,10 +1204,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3788,16621
 	X 3753,16638
 	X 3676,16497
-	X 2960,14746
-	X 2904,14748
+	X 2963,14752
+	X 2905,14754
 	X 3395,13605
-	X 3741,13558
+	X 3739,13563
 	X 4271,13735
 	X 6817,13862
 	X 6935,13645
@@ -1790,6 +1790,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: XXX_prog: lange Wartezeiten für Radfahrer (zwei Umläufe)
 	X 8241,11024
 #: XXX_indoor eigentlich zwei Fußgängerampeln in ca. 50-100m Abstand
+#: note: Anforderungsampel (aber wahrscheinlich oft genutzt)
 	F 5829,10964
 	X 12060,11323
 	X 3872,10749
@@ -2384,7 +2385,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog: Ampel gilt nicht auf dem Radweg
 	F 13163,12382
 	X -284,14738
-	F 608,14423
+	F 609,14429
 	X 1709,14243
 	X 7979,20528
 	F 198,4580
@@ -2518,6 +2519,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 5058,8012
 #: XXX_prog die Ampelanlage umfasst auch die Einmündung Ritterstr. - sollte aber als eine Ampel gelten!
 	X 4832,2975
+	F -1099,14925
 ################################################################################
 #: note: Potsdam vvv
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/

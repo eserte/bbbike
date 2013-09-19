@@ -3004,7 +3004,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2013-07-13
+#: last_checked: 2013-09-19
 userdel	q2::inwork 5258,11285 5247,10992
 ',
          'type' => 'handicap'
@@ -3298,17 +3298,7 @@ userdel	2::night 17671,13132 17684,13133
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130830.1005.388628.html',
-         'until' => 1379541599,
-         'text' => 'Scheidemannstr.: Bauarbeiten, Fahrbahn zwischen Ebertstr. und Yitzhak-Rabin-Str. gesperrt, 02. September 2013 bis 18. September 2013 ',
-         'from' => 1377986400,
-         'id' => 2482,
-         'data' => '#: confirmed_by: srt
-userdel	q4::inwork 8119,12414 8354,12416 8400,12417 8540,12420
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

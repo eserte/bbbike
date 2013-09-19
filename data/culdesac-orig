@@ -790,6 +790,18 @@ Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2795,2187
 Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2271,2285
 Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2361,2156
 #: note ^^^
+	culdesac -1857,16766
+#: note: Fußwegverbindungen sind in Bau vvv
+	culdesac -1671,16653
+	culdesac -1689,16584
+	culdesac -1680,16441
+#: note ^^^
+	culdesac -1897,16562
+	culdesac -1902,16493
+	culdesac_pseudo -4156,14677
+	culdesac_pseudo -4947,14873
+	culdesac -2950,12589
+	culdesac_pseudo -2345,10609
 # 
 ######################################################################
 # culdesac entries which should remain invisible
@@ -1015,4 +1027,8 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2387,10131
 #: note: not invisble, because of entry in plaetze-orig
 	culdesac 2548,13796
 	culdesac_pseudo 12299,19143
+	culdesac_pseudo -4793,15369
+	culdesac_pseudo -4967,15414
+	culdesac_pseudo -1017,16184
 #: ignore ^^^
+######################################################################

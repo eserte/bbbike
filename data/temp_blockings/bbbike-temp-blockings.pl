@@ -17777,7 +17777,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015726',
        data  => <<EOF,
-userdel	q4::inwork; -260,14210 -245,14333 -283,14523
+userdel	q4::inwork; -260,14210 -245,14333 -278,14532
 EOF
      },
      { from  => 1274188260, # 2010-05-18 15:11
@@ -20824,7 +20824,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_113279',
        data  => <<EOF,
-userdel	q4::inwork; -2960,13203 -2728,13269 -2706,13291
+userdel	q4::inwork; -2974,13188 -2728,13269 -2706,13291
 EOF
      },
      { from  => 1353366000, # 2012-11-20 00:00
@@ -21144,7 +21144,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2013-07-13
+#: last_checked: 2013-09-19
 userdel	q2::inwork 5258,11285 5247,10992
 EOF
      },
