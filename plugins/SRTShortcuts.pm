@@ -604,6 +604,9 @@ EOF
 		[Button => $do_compound->("local bbbike.cgi"),
 		 -command => sub { current_search_in_bbbike_cgi() },
 		],
+		[Button => $do_compound->("BBBike.org (Berlin)"),
+		 -command => sub { current_search_in_bbbike_org_cgi() },
+		],
 		[Button => $do_compound->("komoot"),
 		 -command => sub { current_search_in_komoot() },
 		],
@@ -1502,6 +1505,39 @@ sub current_search_in_bbbike_cgi {
 			pref_seen => 1, # gelogen
 		      })->query_string;
     my $url = "http://localhost/bbbike/cgi/bbbike.cgi?$qs";
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+sub current_search_in_bbbike_org_cgi {
+    if (@main::search_route_points < 2) {
+	main::status_message("Not enough points", "die");
+    }
+    if (@main::search_route_points > 3) {
+	main::status_message("Too many points, bbbike.cgi only supports one via", "die");
+    }
+    my $inx = 0;
+    my($start, $via, $goal);
+    $start = $main::search_route_points[$inx++]->[0];
+    if (@main::search_route_points == 3) {
+	$via = $main::search_route_points[$inx++]->[0];
+    }
+    $goal = $main::search_route_points[$inx]->[0];
+
+    require Karte::Polar;
+    my $o = $Karte::Polar::obj;
+    for my $coord ($start, (defined $via ? $via : ()), $goal) {
+	$coord = join(",", $o->trim_accuracy($o->standard2map(split /,/, $coord)));
+    }
+
+    require CGI;
+    my $qs = CGI->new({ startc_wgs84 => $start,
+			($via ? (viac_wgs84 => $via) : ()),
+			zielc_wgs84 => $goal,
+			pref_seen => 1, # gelogen
+		      })->query_string;
+    my $url = "http://www.bbbike.org/Berlin/?$qs";
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
