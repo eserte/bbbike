@@ -20079,7 +20079,7 @@ EOF
 #: by: http://www.altglienicke24.de/aktuelles.html (Eröffnung Mitte September)
 #: osm_watch: way id="152354629" version="2"
 #: last_checked: 2013-08-02 (von der Bahn aus gesehen)
-#: next_check: 2013-09-19
+#: next_check: 2013-09-22
 #: priority: #A
 userdel	2::inwork 19968,16 19940,52
 EOF
@@ -21602,8 +21602,7 @@ EOF
        text  => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX bei osm jetzt mit bicycle=yes getaggt vvv
-#: add_fragezeichen: Wurde das Verbot für Radfahrer mittlerweile wieder aufgehoben? vvv
+#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht vvv
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 #: osm_watch: way id="83106248" version="14" brb
@@ -21617,8 +21616,7 @@ EOF
 	2 19909,-2863 19996,-2880
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
-#: add_fragezeichen ^^^
-#: XXX ^^^
+#: XXX_osm ^^^
 EOF
      },
      { from  => undef,
@@ -21642,7 +21640,7 @@ userdel	q4::inwork 11635,16616 11621,16749
 EOF
      },
      { from  => 1374381000, # 2013-07-21 06:30
-       until => 1379944800, # 2013-09-23 16:00
+       until => 1379912400, # 2013-09-23 07:00
        text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende September 2013',
        type  => 'handicap',
        source_id => 'INKO_119665',

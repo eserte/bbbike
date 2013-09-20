@@ -3996,7 +3996,10 @@ Seydlitzstr. (Moabit)	N 7131,13261 7263,13331 7295,13346 7419,13416 7655,13539
 Clara-Jaschke-Str.	N 7759,13246 7788,13202 7791,13166 7795,13093 7799,13019
 Emma-Herwegh-Str.	N 7595,12980 7791,13166
 Emma-Herwegh-Str.	NN 7791,13166 7861,13203
-Berta-Benz-Str.	N 7799,13019 7872,13022 7941,13014
+#: note: falsche Schreibweise ("Berta-Benz-Str.") wurde am 12. September 2013 berichtigt
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013
+#: XXX wurden die Straßenschilder schon korrigiert?
+Bertha-Benz-Str.	N 7799,13019 7872,13022 7941,13014
 Katharina-Paulus-Str.	N 7873,12923 7872,13022 7867,13106 7867,13127
 Ella-Trebe-Str.	N 7948,12918 7941,13014 7937,13109 7937,13126 7938,13150 7938,13302
 (Ella-Trebe-Str. - Invalidenstr.)	NN 7938,13302 8003,13374
@@ -5079,6 +5082,7 @@ Arthur-Müller-Str.	N 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 1819
 (Arthur-Müller-Str. - Wolfgang-Harlan-Str.)	NN 17942,3205 17943,3282
 Hugo-Junkers-Str.	N 18156,2912 18007,3066 17890,3204
 #: note: tatsächlich so geschrieben (siehe Foto), aber es müsste eigentlich "Fokkerstr." sein
+#: XXX prüfen, ob sich seit 2009 bei der Schreibweise was getan hat
 Fokker-Str.	N 18057,3117 18007,3066 17910,3004
 Eisenhutweg	H 18445,2642 18164,2712 18017,2751 17894,2783 17741,2824 17525,3029 17274,3267 17194,3343 17142,3393
 Johannes-Sasse-Ring	N 17274,3267 17206,3189 17146,3125 17199,3082 17412,2908 17465,2964 17525,3029
@@ -11938,6 +11942,10 @@ Breiterweg	N 9843,26077 10078,26233
 Grundweg	N 9855,26032 10091,26183
 Kiesweg (Blankenfelde)	N 9863,26000 10100,26146
 Feldweg (Blankenfelde)	N 9879,25933 10081,26057
+#: XXX Benennungsabsicht des BA Pankow: "Straße nach Arkenberge"
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3620
+#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036478781743/478781743/00057240/40-Anlagen/02/BenennungsabsichtfuerdieoeffentlicheStrasseabe.pdf
+#: next_check: 2013-11-20
 (zum Arkenberger Kiessee)	N 11929,23946 11514,24284 11760,24470 11768,24522 11706,24797 11272,25373 11248,25403 11077,25604 10678,26074 10566,26205
 Rathenaustr.	N 18861,6000 18970,6110 19033,6167 19118,6248 19161,6291 19245,6379
 #: note: Anlieger frei, Zugang zum Friedhof
@@ -13109,6 +13117,9 @@ Erlenbruchring	N 16297,592 16409,774
 Klein-Ziethener Weg	N 15966,52 15949,53 15834,-28 15812,-65 15784,-91 15694,-178 15655,-245
 Andreas-Hermes-Siedlung	N 15834,-28 15881,-163
 Leghornweg	N 16192,24 16055,153
+#: XXX: Trasse wird verlegt, laut Bebauungsplan 8-23 (nicht im Internet zu finden)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013
+#: next_check: 2014-03-01
 Gockelweg	N 16297,-468 16284,-507 16114,-610 15846,-591
 Steinstr. (Mitte)	N 10286,13548 10311,13537 10390,13493 10603,13395
 Kalkscheunenstr.	N 9385,13174 9413,13071

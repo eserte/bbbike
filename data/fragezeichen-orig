@@ -357,6 +357,10 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20130919.1410.389491.html
+#: next_check: 2014-08-31
+Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663 16273,-824
+# 
 #: last_checked: 2013-09-16
 #: check_frequency: 7d
 Gˆrlitzer Park: Diagonalverbindung entsteht. Wann fertig? Qualit‰t? Beleuchtet?	?::inwork 12516,10202 12506,10244
@@ -1052,6 +1056,10 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html
+#: next_check: 2013-09-25
+Heidestr.: w‰hrend der ersten Umbauphase wird es einen "Angebotsstreifen" Richtung Norden geben	?; 8023,13632 7976,13727 7938,13791 7601,14350 7597,14417
+# 
 Aronsstr.: existiert hier eine Verbindung zur Sonnenallee?	? 14519,7301 14571,7427 14579,7576 14593,7584
 # 
 Bismarckallee: ist die Bismarckallee durchg‰ngig eine Vorfahrtsstraﬂe?	? 1276,8659 1410,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
@@ -1291,13 +1299,13 @@ Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,87
 #: priority: #C
 Uhlandstr./Ludwigkirchstr.: Planung eines Zebrastreifens f¸r 2012	?::projected 5024,10153
 # 
-#: last_checked: 2013-06-12
-#: next_check: 2013-09-23
+#: last_checked: 2013-09-19
+#: check_frequency: 180d
 #: priority: #C
 Sˆmmeringstraﬂe/Quedlinburger Straﬂe: Planung eines Zebrastreifens f¸r 2013	?::projected 3714,12949
 # 
-#: last_checked: 2013-06-12
-#: next_check: 2013-09-23
+#: last_checked: 2013-09-19
+#: check_frequency: 180d
 #: priority: #C
 Sˆmmeringstraﬂe/Nordhauser Straﬂe: Planung eines Zebrastreifens f¸r 2013	?::projected 3711,13098
 #: by: ^^^
@@ -1674,10 +1682,10 @@ KGA Am Rollberg und Anlage Schˆnwald: Benennung von 30 Privatwegen	? 9356,21363 
 # 
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 vvv --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130620.1355.386320.html (Fertigstellung der Erschlieﬂungsstraﬂe) --- #: XXX neue private Straﬂen entstehen, fehlen in Berlin.coords.data vvv --- #: last_checked: 2012-09-10 vvv --- #: next_check: 2013-07-30 vvv --- #: osm_watch: way id="220390908" version="2" --- #: XXX ad osm_watch: id referenziert die construction area --- L¸barser Aue: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet sich die Straﬂe (mˆglichst mit GPS-Track)?	?::inwork 7313,22515 7292,22505 7235,22505 7082,22414 7049,22393 --- Am Rodelberg: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet sich die Straﬂe (mˆglichst mit GPS-Track)?	?::inwork 7082,22414 7287,22403 7292,22505
 # 
-#: osm_watch: way id="55949128" version="5"
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2013
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013 (Berichtigung der Lage -> westlich der Waﬂmannsdorfer Chaussee)
 #: note: Privatstraﬂe
-Schlotterkammsteig: genaue Lage? Qualit‰t?	? 16420,-528 16465,-684
+Schlotterkammsteig: genaue Lage? Qualit‰t?	? 16191,-680 16319,-515
 # 
 # REMOVED (erˆffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
 # 
@@ -3247,8 +3255,8 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: XXX Baumaﬂnahme 4.22, Realisierung in 2011 vvv
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Realisierung noch nicht erfolgt, Mitte 2012) vvv
-#: osm_watch: way id="4389511" version="12"
-#: osm_watch: way id="4495273" version="16"
+#: osm_watch: way id="4389511" version="13"
+#: osm_watch: way id="4495273" version="17"
 #: last_checked: 2013-09-05 vvv
 #: check_frequency: 100d vvv
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886
@@ -3533,3 +3541,7 @@ Am Dominikusteich: Qualit‰t? vielleicht verkehrsberuhigt?	? 2636,23915 2760,2396
 Am Dominikusteich: Qualit‰t? vielleicht verkehrsberuhigt?	? 2760,23964 2784,23929
 #: XXX ^^^
 #: osm_watch ^^^
+# 
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20130919.1210.389478.html
+#: XXX Fuﬂweg. Fehlt noch in Berlin.coords.data.
+Lee-Parry-Weg: wo genau liegt die Straﬂe? Qualit‰t?	? -5093,8398 -5088,8449 -5008,8475 -4999,8465

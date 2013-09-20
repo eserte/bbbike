@@ -2706,7 +2706,7 @@ userdel	q3::inwork 10530,14452 10723,14772
 #: by: http://www.altglienicke24.de/aktuelles.html (Eröffnung Mitte September)
 #: osm_watch: way id="152354629" version="2"
 #: last_checked: 2013-08-02 (von der Bahn aus gesehen)
-#: next_check: 2013-09-19
+#: next_check: 2013-09-22
 #: priority: #A
 userdel	2::inwork 19968,16 19940,52
 ',
@@ -3062,17 +3062,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130611.0925.385925.html',
-         'until' => 1379685600,
-         'text' => 'Ordensmeisterstraße: Bauarbeiten zwischen Komturstr. und Colditzstr., Fahrbahn in Richtung Osten gesperrt, bis Mitte September',
-         'from' => 1371506400,
-         'id' => 2445,
-         'data' => '#: source_id: INKO_119177
-userdel	q3::inwork; 9796,5790 10027,5868 10254,5921
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20130613.1320.386040.html',
          'until' => 1385938799,
@@ -3158,8 +3148,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'text' => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
          'from' => undef,
          'id' => 2463,
-         'data' => '#: XXX bei osm jetzt mit bicycle=yes getaggt vvv
-#: add_fragezeichen: Wurde das Verbot für Radfahrer mittlerweile wieder aufgehoben? vvv
+         'data' => '#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht vvv
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 #: osm_watch: way id="83106248" version="14" brb
@@ -3173,8 +3162,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 	2 19909,-2863 19996,-2880
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
-#: add_fragezeichen ^^^
-#: XXX ^^^
+#: XXX_osm ^^^
 ',
          'type' => 'gesperrt'
        },
@@ -3193,7 +3181,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'source_id' => 'INKO_119665',
-         'until' => 1379944800,
+         'until' => 1379912400,
          'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende September 2013',
          'from' => 1374381000,
          'id' => 2466,

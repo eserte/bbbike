@@ -909,9 +909,15 @@ Taldorfer Weg	1 5170,20182 5259,20186 5506,20197
 Im Waldwinkel	1 184,22257 238,22412
 Im Erpelgrund	1 -428,21933 -629,21975 -827,22039 -973,22117
 Im Erpelgrund	1 -973,22117 -786,22110 -735,22103 -586,22064 -403,21991
+#: XXX wird die Einbahnstraßenregelung für Radfahrer _offiziell_ aufgehoben?
+#: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3391
+#: next_check: 2014-03-20
 Bernauer Str.	1s:q3 2643,18738 2731,18729 2867,18736
 Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geöffnet	2 1377,18602 1302,18398
 Krumpuhler Weg	1 1405,18749 1390,18651
+#: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
+#: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3391
+#: next_check: 2014-03-20
 Oelder Weg	1 1967,18743 1965,18686
 Steffenshagener Str.	1s 23159,11097 22983,11098
 Pestalozzistr.	1s:q3 24652,11794 24706,11838 24769,11819
@@ -2472,9 +2478,11 @@ Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 99
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 # 
 #: next_check: 2013-10-06 vvv
+#: prio: #A vvv
 Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572
 Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193
 Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982
+#: prio ^^^
 #: next_check ^^^
 # 
 #: last_checked: 2013-09-11
