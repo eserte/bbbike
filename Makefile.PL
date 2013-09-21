@@ -379,6 +379,7 @@ sub build_prereq {
 		next if $_->[REQTABLE_MODNAME] =~ m{^(
 							Image::Magick # needs exact matching imagemagick library version
 						    |   Geo::GDAL     # dito
+						    |   Geo::Proj4    # needs -lproj, missing on the travis machines
 						    |   X11::Protocol # interactive test
 						    )$}x;
 	    }
