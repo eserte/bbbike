@@ -375,6 +375,13 @@ sub build_prereq {
 	    if ($type != 0) {
 		next if ($_->[REQTABLE_REQ] & $type) == 0;
 	    }
+	    if (($ENV{TRAVIS}||'') eq 'true') { # XXX actually, check for "batch environment where difficult modules cannot be installed easily"
+		next if $_->[REQTABLE_MODNAME] =~ m{^(
+							Image::Magick # needs exact matching imagemagick library version
+						    |   Geo::GDAL     # dito
+						    |   X11::Protocol # interactive test
+						    )$}x;
+	    }
 	    $prereq{$_->[REQTABLE_MODNAME]} = $_->[REQTABLE_VERSION];
 	    push @prereq, $_;
 	}
@@ -517,9 +524,15 @@ sub MY::test {
 EOF
     }
     if (-r "t/Makefile") {
-	$out .= <<'EOF';
+	if (($ENV{TRAVIS}||'') eq 'true') { # XXX actually, should check for no-cgi setup
+	    $out .= <<'EOF';
+	cd t && $(MAKE) test-no-cgi PERL=$(FULLPERL)
+EOF
+	} else {
+	    $out .= <<'EOF';
 	cd t && $(MAKE) test PERL=$(FULLPERL)
 EOF
+	}
     }
     if (-r "ext/Makefile") {
 	$out .= <<'EOF'; # XXX "build" should not be here!
