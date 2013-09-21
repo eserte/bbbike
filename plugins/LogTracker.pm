@@ -334,26 +334,14 @@ sub date_to_apachedate {
 }
 
 sub _today {
-    eval {
-	require Date::Pcalc;
-	Date::Pcalc->import(qw(Today));
-    };
-    if ($@) {
-	require Date::Calc;
-	Date::Calc->import(qw(Today));
-    };
+    require Date::Calc;
+    Date::Calc->import(qw(Today));
     date_to_apachedate(Today());
 }
 
 sub _yesterday {
-    eval {
-	require Date::Pcalc;
-	Date::Pcalc->import(qw(Today Add_Delta_Days));
-    };
-    if ($@) {
-	require Date::Calc;
-	Date::Calc->import(qw(Today Add_Delta_Days));
-    }
+    require Date::Calc;
+    Date::Calc->import(qw(Today Add_Delta_Days));
     date_to_apachedate(Add_Delta_Days(Today(), -1));
 }
 

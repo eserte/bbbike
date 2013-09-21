@@ -123,7 +123,7 @@ WWW::Shorten	- Kürzen der langen Mapserver-Links im Info-Fenster
 
 File::ReadBackwards	- LogTracker plugin, Edititeren
 
-Date::Pcalc	- LogTracker plugin (mögliche Alternative ist Date::Calc)
+Date::Calc	- LogTracker plugin
 
 XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien
 
