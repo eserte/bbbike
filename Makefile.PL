@@ -379,7 +379,7 @@ sub build_prereq {
 		next if $_->[REQTABLE_MODNAME] =~ m{^(
 							Image::Magick # needs exact matching imagemagick library version
 						    |   Geo::GDAL     # dito
-						    |   Geo::Proj4    # needs -lproj, missing on the travis machines
+						    # |   Geo::Proj4    # needs -lproj, missing on the travis machines
 						    |   X11::Protocol # interactive test
 						    |   GD            # fails because of multiple issues, probably: https://rt.cpan.org/Ticket/Display.html?id=85789 https://rt.cpan.org/Ticket/Display.html?id=49053
 						    |   GD::SVG       # a GD dependency
@@ -521,14 +521,23 @@ ext:
 }
 
 sub MY::test {
+    my $is_travis = ($ENV{TRAVIS}||'') eq 'true';
     my $out = "test ::\n";
+
+    # XXX This is some kind of hack, travis skips the "make all" step (rightly, I should fix my deps!)
+    if ($is_travis && -r "ext/Makefile") {
+	$out .= <<'EOF';
+	$(MAKE) ext PERL=$(FULLPERL)
+EOF
+    }
+
     if (-d "ESRI") {
 	$out .= <<'EOF';
 	cd ESRI && $(TEST_F) Makefile && $(MAKE) test $(PASTHRU)
 EOF
     }
     if (-r "t/Makefile") {
-	if (($ENV{TRAVIS}||'') eq 'true') { # XXX actually, should check for no-cgi setup
+	if ($is_travis) { # XXX actually, should check for no-cgi setup
 	    $out .= <<'EOF';
 	cd t && $(MAKE) test-no-cgi PERL=$(FULLPERL)
 EOF
