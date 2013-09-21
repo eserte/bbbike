@@ -49,6 +49,8 @@ String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)
 
 Storable	- für das Caching beim CGI-Programm
 
+DB_File	- Caching, Sessionhandling etc.
+
 MLDBM
 
 Algorithm::Permute 0.08	- Für das Problem des Handlungsreisenden (schnellerer Permutor)

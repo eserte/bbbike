@@ -81,6 +81,8 @@ Storable	- für das Caching beim CGI-Programm
 
 Digest::MD5	- für den File-Cache im CGI-Programm
 
+DB_File	- Caching, Sessionhandling etc.
+
 MLDBM
 
 GD 1.18	- zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm

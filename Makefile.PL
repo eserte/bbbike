@@ -122,6 +122,8 @@ my @req_table =
    'für das Caching beim CGI-Programm'],
   [qw/Digest::MD5	0	all	2	cgi/,
    'für den File-Cache im CGI-Programm'],
+  [qw/DB_File		0	all	2|4	base/,
+   'Caching, Sessionhandling etc.'],
   [qw/MLDBM		0	all	0|4	base/],
   [qw/GD		1.18	all	2	base/,
    'zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm'],
