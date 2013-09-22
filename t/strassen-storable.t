@@ -50,6 +50,7 @@ use vars qw($token %times $ext);
 unless ($fast) {
     my $make = get_pmake;
     diag "Regenerating storable files in data, please be patient...\n";
+    local $ENV{MAKEFLAGS}; # protect from gnu make brain damage (MAKEFLAGS is set to "w" in recursive calls)
     system("cd $FindBin::RealBin/../data && $make storable >/dev/null 2>&1");
 }
 
