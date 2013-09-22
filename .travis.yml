@@ -5,7 +5,8 @@ before_install:
 # - libproj-dev + proj-bin: prerequisites for Geo::Proj4
 # - libdb-dev:              prerequisite for DB_File
 # - agrep:                  needed as String::Approx alternative
- - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep
+# - libgd2-xpm-dev:         prerequisite for GD
+ - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev
 language: perl
 perl:
   - "5.18"

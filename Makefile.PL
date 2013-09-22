@@ -379,11 +379,6 @@ sub build_prereq {
 		next if $_->[REQTABLE_MODNAME] =~ m{^(
 							Image::Magick # needs exact matching imagemagick library version
 						    |   Geo::GDAL     # dito
-						    # |   Geo::Proj4    # needs -lproj, missing on the travis machines
-						    |   X11::Protocol # interactive test
-						    |   GD            # fails because of multiple issues, probably: https://rt.cpan.org/Ticket/Display.html?id=85789 https://rt.cpan.org/Ticket/Display.html?id=49053
-						    |   GD::SVG       # a GD dependency
-						    |   Chart::ThreeD::Pie # another GD dependency
 						    )$}x;
 	    }
 	    $prereq{$_->[REQTABLE_MODNAME]} = $_->[REQTABLE_VERSION];
