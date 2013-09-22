@@ -186,14 +186,14 @@ sub init {
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed-Bold.ttf', # found on Debian
 	      @windows_bold_fonts,
-	      $TTF_CITY,
+	      (defined $TTF_CITY ? $TTF_CITY : ()),
 	     ]);
 
 	$TTF_SCALE ||= $self->search_ttf_font
 	    ([
 	      '/usr/local/lib/X11/fonts/TTF/luxirr.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxirr.ttf',
-	      $TTF_CITY,
+	      (defined $TTF_CITY ? $TTF_CITY : ()),
 	     ]);
     }
 
@@ -749,7 +749,7 @@ sub draw_map {
        ){
 	eval {
 	    my $ttf = $TTF_STREET;
-	    local $^W = -r $ttf; # no warnings if ttf could not be found...
+	    local $^W = defined $ttf && -r $ttf; # no warnings if ttf could not be found...
 
 	    my $fontsize = 10;
 	    $Tk::RotFont::NO_X11 = 1;
@@ -917,7 +917,7 @@ sub _draw_scale_label {
     my($self, $x, $y, $string, $color) = @_;
     my $ttf = $TTF_SCALE;
     my $im = $self->{Image};
-    if ($self->{GD_Image}->can("stringFT") && -r $ttf) {
+    if ($self->{GD_Image}->can("stringFT") && defined $ttf && -r $ttf) {
 	# XXX why +8?
 	$im->stringFT($color, $ttf, 8, 0, $x, $y+8, $string);
     } else {
