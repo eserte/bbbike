@@ -1,0 +1,17 @@
+before_install:
+ - sudo apt-get update -qq
+# Reasons for the following dependencies
+# - freebsd-buildutils:     provides freebsd-make
+# - libproj-dev + proj-bin: prerequisites for Geo::Proj4
+# - libdb-dev:              prerequisite for DB_File
+# - agrep:                  needed as String::Approx alternative
+# - libgd2-xpm-dev:         prerequisite for GD
+# - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
+ - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu
+language: perl
+perl:
+  - "5.18"
+  - "5.14"
+  - "5.10"
+## disabled because of DBD::XBase issues, see https://rt.cpan.org/Ticket/Display.html?id=88873
+#  - "5.8"
