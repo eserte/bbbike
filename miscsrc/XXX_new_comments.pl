@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: XXX_new_comments.pl,v 1.4 2005/03/28 22:53:36 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -27,6 +26,7 @@ use Strassen::Dataset;
 use BBBikeUtil qw(m2km);
 use BBBikeYAML ();
 use Getopt::Long;
+use Tie::IxHash;
 
 my $skip_lines;
 my $use_internal_test_data;
@@ -260,7 +260,7 @@ sub process_data {
 	    $ret;
 	};
 
-	my %last_attribs;
+	tie my %last_attribs, 'Tie::IxHash';
 	my @new_comments;
 	for my $hop_coord_i (1 .. $#hop_coords) {
 
@@ -294,7 +294,7 @@ sub process_data {
 	    };
 
 	    my $is = $qs_net->{Net2Name}{$hop_coords[$hop_coord_i-1]}{$hop_coords[$hop_coord_i]};
-	    my %next_last_attribs;
+	    tie my %next_last_attribs, 'Tie::IxHash';
 	    if (defined $is) {
 		for my $i (@$is) {
 		    my($r) = $qs->get($i);
