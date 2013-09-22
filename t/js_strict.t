@@ -31,7 +31,6 @@ my @js_files = (
 		"$FindBin::RealBin/../html/bbbike_result.js",
 		"$FindBin::RealBin/../html/bbbike_start.js",
 		"$FindBin::RealBin/../html/bbbike_util.js",
-		"$FindBin::RealBin/../html/google2brb.js",
 		"$FindBin::RealBin/../html/sprintf.js",
 	       );
 

@@ -443,8 +443,6 @@ sub redirect_to_map {
     my $usemap = param("usemap") || "mapserver";
     if ($usemap eq 'googlemaps') {
 	redirect_to_googlemaps($coord, %args);
-    } elsif ($usemap eq 'google2brb') {
-	redirect_to_google2brb($coord, %args);
     } else {
 	redirect_to_ms($coord, %args);
     }
@@ -455,19 +453,6 @@ sub redirect_to_googlemaps {
     my $q2 = CGI->new({wpt_or_trk => "!$coord"});
     # XXX do not hardcode
     print redirect("http://bbbike.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
-    return;
-}
-
-sub redirect_to_google2brb {
-    my($coord, %args) = @_;
-    my($x,$y) = split /,/, $coord;
-    require Karte;
-    $Karte::Polar::obj = $Karte::Polar::obj; # cease -w
-    Karte::preload("Standard", "Polar");
-    my($lon, $lat) = $Karte::Polar::obj->standard2map($x, $y);
-    my $q2 = CGI->new({center => "$lat,$lon"});
-    # XXX do not hardcode
-    print redirect("http://bbbike.de/BBBike/html/google2brb.html?" . $q2->query_string);
     return;
 }
 
