@@ -147,6 +147,7 @@ sub convert_net {
 sub convert_wegfuehrung {
     my($self, $wegfuehrung, $old_wegfuehrung) = @_;
     my $new_wegf = $old_wegfuehrung || {};
+    keys %$wegfuehrung; # reset iterator
     while(my($k1,$v) = each %$wegfuehrung) {
 	my $new_node = [];
 	for my $elem (@$v) {
