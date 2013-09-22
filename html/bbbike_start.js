@@ -67,9 +67,11 @@ function pos_rel(lay,rel_lay,x,y) {
 }
 
 function any_init(type) {
+  var below_layer; // sigh - no block scoping in javascript
+  var above_layer; // sigh - no block scoping in javascript
   if (document.implementation && document.implementation.hasFeature("CSS2","2.0")) { // Mozilla 1.1+, Galeon, Firefox
-    var below_layer = find_layer(type + "below");
-    var above_layer = find_layer(type + "above");
+    below_layer = find_layer(type + "below");
+    above_layer = find_layer(type + "above");
     above_layer.style.visibility = 'hidden';
     below_layer.style.visibility = 'visible';
     // positioning of the above layer happens now in any_highlight, so
@@ -105,8 +107,8 @@ function any_init(type) {
     document.all[type + "above"].onmouseup = eval(type + "_detail");
     all_above_layer[all_above_layer.length] = document.all[type + "above"];
   } else if (document.body) { // NS6.0
-    var below_layer = find_layer(type + "below");
-    var above_layer = find_layer(type + "above");
+    below_layer = find_layer(type + "below");
+    above_layer = find_layer(type + "above");
     above_layer.style.visibility = 'hidden';
     below_layer.style.visibility = 'visible';
     // XXX theoretically this belongs also to any_highlight
@@ -123,6 +125,8 @@ function any_init(type) {
 
 function any_highlight(type, Evt) {
   var xgridwidth, ygridwidth, offset;
+  var above, below, x, y; // sigh - no block scoping in javascript
+  var l; // sigh - no block scoping in javascript
   if (type.indexOf("map") != -1) {
       xgridwidth = 20;
       ygridwidth = 20;
@@ -133,25 +137,24 @@ function any_highlight(type, Evt) {
       offset = 4;
   }
   if (document.layers) {
-    var above = document.layers[type + "above"];
-    var below = document.layers[type + "below"];
+    above = document.layers[type + "above"];
+    below = document.layers[type + "below"];
     if (above && below) {
       below.captureEvents(Event.MOUSEMOVE);
       below.onmousemove = eval(type + "_highlight");
-      var x = Math.floor((Evt.pageX-below.pageX)/xgridwidth)*xgridwidth;
-      var y = Math.floor((Evt.pageY-below.pageY)/ygridwidth)*ygridwidth+offset;
+      x = Math.floor((Evt.pageX-below.pageX)/xgridwidth)*xgridwidth;
+      y = Math.floor((Evt.pageY-below.pageY)/ygridwidth)*ygridwidth+offset;
       // with is evil?
       above.clip.left = x;
       above.clip.top = y;
       above.clip.right = x+xgridwidth;
       above.clip.bottom = y+xgridwidth;
       above.visibility = 'show';
-      for (var x in all_above_layer) {
-	if (all_above_layer[x] != above) all_above_layer[x].visibility = 'hide';
+      for (l in all_above_layer) {
+	if (all_above_layer[l] != above) all_above_layer[l].visibility = 'hide';
       }
     }
   } else if (document.all || document.body) {
-    var above, below, x, y;
     if (document.all) {
       above = document.all[type + "above"];
       below = document.all[type + "below"];
@@ -180,8 +183,8 @@ function any_highlight(type, Evt) {
     }
     below.onmousemove = eval(type + "_highlight");
     above.style.visibility = 'visible';
-    for (var x in all_above_layer) {
-      if (all_above_layer[x] != above) all_above_layer[x].style.visibility = 'hidden';
+    for (l in all_above_layer) {
+      if (all_above_layer[l] != above) all_above_layer[l].style.visibility = 'hidden';
     }
   }
 }

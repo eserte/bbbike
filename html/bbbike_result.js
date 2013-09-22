@@ -84,7 +84,8 @@ function show_map(bbbike_html_dir) {
 function all_checked() {
     var all_checked_flag = false;
     var elems = document.forms["showmap"].elements;
-    for (var e = 0; e < elems.length; e++) {
+    var e; // sigh - no block scoping in javascript
+    for (e = 0; e < elems.length; e++) {
 	if (elems[e].name == "draw" &&
 	    elems[e].value == "all" &&
 	    elems[e].checked) {
@@ -92,7 +93,7 @@ function all_checked() {
 	    break;
 	}
     }
-    for (var e = 0; e < elems.length; e++) {
+    for (e = 0; e < elems.length; e++) {
 	if (elems[e].name == "draw") {
 	    if (all_checked_flag) {
 		elems[e].checked = true;

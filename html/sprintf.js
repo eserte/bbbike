@@ -57,12 +57,13 @@ function sprintf()
 
 	if (subst.length < minLength) {
 	    var padLength = minLength - subst.length;
+	    var i; // sigh - no block scoping in javascript
 	    if (!justifyRight) {
-		for(var i=0; i<padLength; i++) {
+		for(i=0; i<padLength; i++) {
 		    subst += pad;
 		}
 	    } else {
-		for(var i=0; i<padLength; i++) {
+		for(i=0; i<padLength; i++) {
 		    subst = pad + subst;
 		}
 	    }
