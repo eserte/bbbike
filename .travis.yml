@@ -1,5 +1,10 @@
 before_install:
  - sudo apt-get update -qq
+# Reasons for the following dependencies
+# - freebsd-buildutils:     provides freebsd-make
+# - libproj-dev + proj-bin: prerequisites for Geo::Proj4
+# - libdb-dev:              prerequisite for DB_File
+# - agrep:                  needed as String::Approx alternative
  - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep
 language: perl
 perl:
