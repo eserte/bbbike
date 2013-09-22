@@ -1,6 +1,6 @@
 before_install:
  - sudo apt-get update -qq
- - sudo apt-get install -qq freebsd-buildutils libproj-dev
+ - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev
 language: perl
 perl:
   - "5.18"
