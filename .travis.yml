@@ -6,7 +6,8 @@ before_install:
 # - libdb-dev:              prerequisite for DB_File
 # - agrep:                  needed as String::Approx alternative
 # - libgd2-xpm-dev:         prerequisite for GD
- - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev
+# - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
+ - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu
 language: perl
 perl:
   - "5.18"
