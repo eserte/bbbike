@@ -26,7 +26,6 @@ use Strassen::Dataset;
 use BBBikeUtil qw(m2km);
 use BBBikeYAML ();
 use Getopt::Long;
-use Tie::IxHash;
 
 my $skip_lines;
 my $use_internal_test_data;
@@ -260,7 +259,7 @@ sub process_data {
 	    $ret;
 	};
 
-	tie my %last_attribs, 'Tie::IxHash';
+	my %last_attribs; _ordered_hash(\%last_attribs);
 	my @new_comments;
 	for my $hop_coord_i (1 .. $#hop_coords) {
 
@@ -294,7 +293,7 @@ sub process_data {
 	    };
 
 	    my $is = $qs_net->{Net2Name}{$hop_coords[$hop_coord_i-1]}{$hop_coords[$hop_coord_i]};
-	    tie my %next_last_attribs, 'Tie::IxHash';
+	    my %next_last_attribs; _ordered_hash(\%next_last_attribs);
 	    if (defined $is) {
 		for my $i (@$is) {
 		    my($r) = $qs->get($i);
@@ -347,6 +346,15 @@ sub process_data {
 			 }
 		     } keys %same_hop);
 	}
+    }
+}
+
+sub _ordered_hash {
+    my $hashref = shift;
+    if ($] >= 5.018) { # hash randomization again active, and producing random test results
+	require Tie::IxHash;
+	Tie::IxHash->VERSION("1.23"); # I am deleting while iteraring, which is fixed in 1.23, see https://rt.cpan.org/Ticket/Display.html?id=82248
+	tie %$hashref, 'Tie::IxHash';
     }
 }
 
