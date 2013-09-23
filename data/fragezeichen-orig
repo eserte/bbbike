@@ -111,7 +111,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
 # REMOVED (weitgehend realisiert, bis auf das letzte Stück vor der Kreuzung) --- #: last_checked: 2013-09-10 vvv --- #: next_check: 2013-09-12 vvv --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::inwork; 12726,11851 12681,11741 12645,11673 --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459 --- #: next_check ^^^ --- #: last_checked ^^^
-#: last_checked: 2013-09-10
+#: last_checked: 2013-09-23
 #: check_frequency: 90d
 Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
 #: XXX ^^^
@@ -361,8 +361,8 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 #: next_check: 2014-08-31
 Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663 16273,-824
 # 
-#: last_checked: 2013-09-16
-#: check_frequency: 7d
+#: last_checked: 2013-09-23
+#: check_frequency: 14d
 Görlitzer Park: Diagonalverbindung entsteht. Wann fertig? Qualität? Beleuchtet?	?::inwork 12516,10202 12506,10244
 # 
 #: last_checked: 2013-09-04
@@ -708,7 +708,7 @@ Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_06_21.pdf?start&ts=1340354416&file=stra__enbauliste_stand_2012_06_21.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
-#: osm_watch: way id="4663347" version="14"
+#: osm_watch: way id="4663347" version="15"
 #: last_checked: 2013-08-30
 #: next_check: 2013-09-20 (Ende der Bauarbeiten)
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
@@ -966,7 +966,7 @@ Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: XXX eventuell wird hier nach den Bauarbeiten die Einbahnstraße geöffnet?
-#: osm_watch: way id="8094229" version="10"
+#: osm_watch: way id="8094229" version="11"
 #: last_checked: 2013-07-13
 #: next_check: 2013-09-30
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5258,11285 5247,10992 5242,10918 5229,10716 5207,10399

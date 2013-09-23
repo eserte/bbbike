@@ -20067,7 +20067,7 @@ userdel	2::temp 8538,12245 8303,12216 8214,12205 8089,12190
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1379961574, # undef, # XXX
        text  => 'Vollsperrung der Fußgängerbrücke Altglienicke, mindestens bis zum Sommer 2013',
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4399.html',
@@ -20077,10 +20077,8 @@ EOF
 #: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
 #: by: http://www.morgenpost.de/bezirke/article112374495/Fussgaengerbruecke-wird-repariert.html (Reparatur ab Juni 2013, 2 Monate Bauzeit)
 #: by: http://www.altglienicke24.de/aktuelles.html (Eröffnung Mitte September)
-#: osm_watch: way id="152354629" version="2"
-#: last_checked: 2013-08-02 (von der Bahn aus gesehen)
-#: next_check: 2013-09-22
-#: priority: #A
+#: by: http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/altglienicke/artikel/26142-zwei-jahre-nach-sperrung-ist-die-verbindung-wieder-auf/ (eröffnet)
+# REMOVED --- : osm_watch: way id="152354629" version="2" --- #: last_checked: 2013-08-02 (von der Bahn aus gesehen) --- #: next_check: 2013-09-22 --- #: priority: #A
 userdel	2::inwork 19968,16 19940,52
 EOF
      },
@@ -21640,12 +21638,12 @@ userdel	q4::inwork 11635,16616 11621,16749
 EOF
      },
      { from  => 1374381000, # 2013-07-21 06:30
-       until => 1379912400, # 2013-09-23 07:00
-       text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende September 2013',
+       until => 1381759200, # 2013-10-14 16:00
+       text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße Richtung Osten gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Mitte Oktober 2013',
        type  => 'handicap',
-       source_id => 'INKO_119665',
+       source_id => 'IM_020361',
        data  => <<EOF,
-userdel	q3::inwork 15513,13539 15653,13542 15724,13544 15896,13547
+userdel	q3::inwork; 15513,13539 15653,13542 15724,13544 15896,13547
 EOF
      },
      { from  => undef, # 
@@ -21894,7 +21892,7 @@ EOF
      },
      { from  => 1379328680, # 2013-09-16 12:51
        until => 1396047599, # 2014-03-28 23:59
-       text  => 'Görrestr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
+       text  => 'Görresstr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 5352,7428 5318,7424 5272,7458 5188,7536 5067,7652

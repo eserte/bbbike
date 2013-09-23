@@ -2124,16 +2124,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1379872800,
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (21. und 22. September 2013) ',
-         'from' => 1379667600,
-         'id' => 1910,
-         'data' => 'userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2693,25 +2684,7 @@ userdel	q3::inwork 10530,14452 10723,14772
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4399.html',
-         'until' => undef,
-         'text' => 'Vollsperrung der Fußgängerbrücke Altglienicke, mindestens bis zum Sommer 2013',
-         'from' => undef,
-         'id' => 2311,
-         'data' => '#: by: http://www.altglienicke24.de/meldungen.html
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4563.html
-#: by: http://pf-tk.de/ai1ec_event/podiumsdiskussion-wie-weiter-im-kolner-viertel/?instance_id=
-#: by: http://www.morgenpost.de/bezirke/article112374495/Fussgaengerbruecke-wird-repariert.html (Reparatur ab Juni 2013, 2 Monate Bauzeit)
-#: by: http://www.altglienicke24.de/aktuelles.html (Eröffnung Mitte September)
-#: osm_watch: way id="152354629" version="2"
-#: last_checked: 2013-08-02 (von der Bahn aus gesehen)
-#: next_check: 2013-09-22
-#: priority: #A
-userdel	2::inwork 19968,16 19940,52
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3180,12 +3153,12 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        },
        undef,
        {
-         'source_id' => 'INKO_119665',
-         'until' => 1379912400,
-         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Ende September 2013',
+         'source_id' => 'IM_020361',
+         'until' => 1381759200,
+         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße Richtung Osten gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Mitte Oktober 2013',
          'from' => 1374381000,
          'id' => 2466,
-         'data' => 'userdel	q3::inwork 15513,13539 15653,13542 15724,13544 15896,13547
+         'data' => 'userdel	q3::inwork; 15513,13539 15653,13542 15724,13544 15896,13547
 ',
          'type' => 'handicap'
        },
@@ -3334,7 +3307,7 @@ userdel	q4::inwork 7001,8161 7250,8223
        },
        {
          'until' => 1396047599,
-         'text' => 'Görrestr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
+         'text' => 'Görresstr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
          'from' => 1379328680,
          'id' => 2491,
          'data' => 'userdel	q4::inwork; 5352,7428 5318,7424 5272,7458 5188,7536 5067,7652
