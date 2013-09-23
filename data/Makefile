@@ -139,7 +139,9 @@ targets-clean:
 	-rm -f .strassen.tmp
 
 fix-permissions:
-	$(READABLE) $(TARGETS) $(NON_TARGETS) temp_blockings/bbbike-temp-blockings.pl temp_blockings/*.bbd
+	for i in $(TARGETS) $(NON_TARGETS) temp_blockings/bbbike-temp-blockings.pl temp_blockings/*.bbd; do \
+	     [ -e $$i ] && $(READABLE) $$i || echo "$$i does not exist, skip fix-permission task"; \
+	done
 
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
