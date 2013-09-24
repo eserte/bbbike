@@ -119,14 +119,17 @@ ok(!(!@arr || ref $arr[0] ne 'ARRAY'), "Path result");
 {
     my $handle;
     my($sv1, $sv2);
+    my($has_arr, $first_element_ref);
     if ($leaktest) {
 	$sv1 = quiet_stderr(sub { Devel::Leak::NoteSV($handle) });
     }
     {
 	my @arr = Strassen::Inline::search_c($net, $fixed_start, $fixed_goal);
-	ok(@arr, "Path between $fixed_start and $fixed_goal");
-	is(ref $arr[0], 'ARRAY', "Path elements correct");
-	#XXX use Devel::Peek;Dump($arr[0]);
+	# Only remember the test results here --- calling Test::More
+	# functions seem to add some scalars which may Devel::Leak
+	# operation
+	$has_arr = scalar @arr > 0;
+	$first_element_ref = ref $arr[0];
 	if ($v && $v > 2) {
 	    require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$fixed_start, $fixed_goal, \@arr, scalar @{ $arr[0] }],[])->Indent(1)->Useqq(1)->Dump; # XXX
 	}
@@ -135,6 +138,9 @@ ok(!(!@arr || ref $arr[0] ne 'ARRAY'), "Path result");
     if ($leaktest) {
 	$sv2 = quiet_stderr(sub { Devel::Leak::CheckSV($handle) });
     }
+
+    ok($has_arr, "Path between $fixed_start and $fixed_goal");
+    is($first_element_ref, 'ARRAY', "Path elements correct");
 
  SKIP: {
 	skip("No Devel::Leak, no leak tests", 1) if !$leaktest;
