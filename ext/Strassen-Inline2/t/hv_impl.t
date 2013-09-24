@@ -71,8 +71,10 @@ sub quiet_stderr {
 	$ret = $code->();
     };
     my $err = $@;
-    close STDERR;
-    open STDERR, ">&OLDERR" or die $!;
+    if (!$v) {
+	close STDERR;
+	open STDERR, ">&OLDERR" or die $!;
+    }
     if ($err) {
 	die $err;
     }
@@ -123,7 +125,7 @@ ok(!(!@arr || ref $arr[0] ne 'ARRAY'), "Path result");
 	ok(@arr, "Path between $fixed_start and $fixed_goal");
 	is(ref $arr[0], 'ARRAY', "Path elements correct");
 	#XXX use Devel::Peek;Dump($arr[0]);
-	if ($v > 2) {
+	if ($v && $v > 2) {
 	    require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$fixed_start, $fixed_goal, \@arr, scalar @{ $arr[0] }],[])->Indent(1)->Useqq(1)->Dump; # XXX
 	}
 
