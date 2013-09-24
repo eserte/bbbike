@@ -135,8 +135,10 @@ sub yml_to_bbd {
 	    }
 	}
 	my $t = $rec->{text};
-	$t =~ s/[\n\t]/ /g;
-	$d =~ s/^(?!\#)/$t /gm;
+	$t =~ s{[\n\t]}{ }g;
+	$d =~ s{^(?!\#)(.)}{
+	    $t . (substr($1,0,1) eq "\t" ? "" : " ") . $1 # separate with space only if there's a non-empty name in the bbd line
+	}gme;
 	print $d;
     }
 }
