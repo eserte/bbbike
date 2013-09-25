@@ -113,7 +113,7 @@ Sesselmannweg: Kette	CS 3264,9261 3332,9181
 Apeldorner Weg: kein Straßenname ausgeschildert; Weg verläuft westl. direkt an der BAB (104)	CS 3848,8689 3868,8759 3952,8980
 #: XXX_prog: should be superseded by a superiour BNP-like implementation
 (Wallenbergstr. - Rudolstätter Str.): Bordsteine	CP; * 4029,8482 4139,8485
-Virchowweg: Gelände der Charité	CS 8548,13577 8503,13553 8379,13457 8371,13399 8434,13310 8602,13075 8622,13042 8628,13033
+Virchowweg: Gelände der Charité	CS 8548,13577 8503,13553 8377,13463 8371,13399 8434,13310 8602,13075 8622,13042 8628,13033
 Hufelandweg: Gelände der Charité	CS 8503,13553 8554,13476 8504,13441 8538,13388 8582,13355 8618,13306 8630,13172 8632,13133 8602,13075
 Bonhoefferweg: Gelände der Charité	CS 8538,13388 8487,13351 8434,13310
 Sauerbruchweg: Gelände der Charité	CS 8487,13351 8555,13260 8605,13200 8630,13172
@@ -817,7 +817,16 @@ in Höhe Erkelenzdamm 5 abbiegen	CP2; 11192,10629 11145,10638
 (Zobtener Str. - Fischerstr.): durch eine Kleingartenanlage	CS 16353,10207 16404,10286
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Straße verläuft zwischen Bahnstrecke und Wohnhäusern	CS 17210,11950 17201,11975 17137,11969 17023,11908 17026,11888
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.): Privatstraße	CS 11012,13278 11085,13239
-Agnes-Zahn-Harnack-Str.: nicht ausgeschildert	CS 7795,13093 7867,13127 7938,13150
+#: note: nur an der Katharina-Paulus-Str. steht ein Schild vvv
+#: XXX vielleicht wird hier mal ausgeschildert werden? vvv
+#: last_checked: 2013-09-25 vvv
+#: check_frequency: 360d vvv
+Agnes-von-Zahn-Harnack-Str.: nicht ausgeschildert	CP2; 7938,13150 7867,13127
+Agnes-von-Zahn-Harnack-Str.: nicht ausgeschildert	CP2; 7795,13093 7867,13127
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: note ^^^
 Petrusweg: Anlieger frei	CS 15225,1553 15217,1463
 Am Rudower Waldrand: Anlieger frei	CS 15467,349 15476,332 15600,116 15707,-6
 Gertrud-Dorka-Weg: Privatstraße	CS 17848,-173 17796,-97
@@ -998,3 +1007,4 @@ Südhafen: BEHALA-Betriebsgelände, nur für Anlieger	CS -2940,13169 -3008,13052 -3
 Sportforumstr.: nur für Anlieger frei	CS -193,12051 -212,12095 -247,12117 -263,12125 -369,12175
 Kaiserdamm: Überquerung des Mittelstreifens wegen parkender Autos u.U. schwierig	CP; 3287,11846 3320,11583 3339,11433
 Kaiserdamm: Überquerung des Mittelstreifens wegen parkender Autos u.U. schwierig	CP; 3339,11433 3320,11583 3287,11846
+Mehringplatz - Zossener Brücke: ausgeschildert zum Senioren-Wohnhaus am Mehringplatz 5	CP2; 9668,10306 9873,10285

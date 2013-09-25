@@ -3,7 +3,6 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Modersohnstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe, Asphaltdecke wurde entfernt	q3::inwork; 13473,11456 13366,11651
 Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
@@ -21,7 +20,7 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und He
 Scharnhorststr.: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
 Schwarzer Weg: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
-Ella-Trebe-Str./Berta-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022 7867,13106 7937,13109
+Ella-Trebe-Str./Bertha-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022 7867,13106 7937,13109
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten f¸r die Straﬂenbahnanbindung ist die Fahrbahn gesperrt	q4::inwork 7443,13008 7416,13058
 Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
@@ -2148,7 +2147,7 @@ Eschenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3306,1
 Lindenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3111,18105 -3076,18053 -3038,18063
 Amalienstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13789,16775 13722,16843 13653,16907 13589,16965
 Aristotelessteig: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 18527,9623 18660,9599
-Ella-Trebe-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 7938,13302 7938,13150
+Ella-Trebe-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 7938,13302 7938,13150
 Rosenfelder Ring: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 18140,11932 18139,11833
 Walterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13126,6687 13099,6712
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25802,4681 25802,4823

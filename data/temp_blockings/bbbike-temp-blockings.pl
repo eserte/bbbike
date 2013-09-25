@@ -15447,11 +15447,11 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-(Am Neuen Palais, direkter Weg) 	2::night -15810,-1274 -15820,-1146 -15854,-656
-(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -13857,-1040 -14153,-1135 -14171,-1026
-(Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
-(Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -14614,-1342 -14856,-1223 -14865,-1118
-(Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -14129,-1258 -14131,-1181 -14153,-1135
+(Am Neuen Palais, direkter Weg)	2::night -15810,-1274 -15820,-1146 -15854,-656
+(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14153,-1135 -14171,-1026
+(Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
+(Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14614,-1342 -14856,-1223 -14865,-1118
+(Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14153,-1135
 EOF
      },
      { from  => undef, #
@@ -16194,14 +16194,12 @@ EOF
 userdel	q4::temp 8540,12420 8400,12417 8354,12416 8119,12414 8122,12608 8207,12608 8306,12609 8348,12609 8399,12610
 EOF
      },
-     { from  => 1253359000, # 2009-09-19 13:16
-       until => 1253570399, # 2009-09-21 23:59
-       text  => 'Straße des 17. Juni (Tiergarten) in beiden Richtungen zwischen Großer Stern und Brandenburger Tor (Marathon), Straße vollständig gesperrt, auch gesperrt ist die Ebertstr. zwischen Behrenstr. und Dorotheenstr. (bis 21.09., 12 Uhr)',
-       type  => 'handicap',
-       source_id => 'IM_014191',
+     { from  => $isodate2epoch->("2013-09-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-09-27 00:00:00"), # und dann geht's unten weiter mit der noch größeren Sperrung
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon-Vorbereitungen gesperrt',
+       type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-userdel	q4::temp 6828,12031 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
 EOF
      },
      { from  => 1276547726, # 2010-06-14 22:35
@@ -20795,10 +20793,10 @@ EOF
 userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-28 00:00:00"), # 1 Tag Vorlauf
+     { from  => $isodate2epoch->("2013-09-27 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-10-06 23:59:59"),
        periodic => 1,
-       text  => 'Sperrungen wegen Marathon und Tag der deutschen Einheit: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., 29.09.2013 bis 06.10.2013',
+       text  => 'Sperrungen wegen Veranstaltungen (Marathon, Deutschlandfest): Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., bis 06.10.2013',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8573,12325 8540,12420
@@ -21905,6 +21903,32 @@ EOF
        source_id => 'IM_020332',
        data  => <<EOF,
 userdel	q4::temp 8892,12576 8766,12541
+EOF
+     },
+     { from  => 1380520800, # 2013-09-30 08:00
+       until => 1411768800, # 2014-09-27 00:00
+       text  => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist vorausichtlich auch für Radfahrer nicht passierbar, 01.10.2013 bis 26.09.2014 ',
+       type  => 'gesperrt',
+       source_id => '131100196',
+       data  => <<EOF,
+userdel	2::inwork 21169,27133 21320,27078
+EOF
+     },
+     { from  => 1379944980, # 2013-09-23 16:03
+       until => 1380466980, # 2013-09-29 17:03
+       text  => 'Mohrenstr.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Mauerstr. gesperrt, bis Ende September 2013',
+       type  => 'handicap',
+       source_id => 'IM_020378',
+       data  => <<EOF,
+userdel	q4::inwork 9075,11756 9000,11727
+EOF
+     },
+     { from  => undef, # 
+       until => 1381701599, # 2013-10-13 23:59
+       text  => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
 EOF
      },
     );

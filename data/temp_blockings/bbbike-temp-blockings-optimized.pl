@@ -1842,11 +1842,11 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Sanssouci: Wege sind nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet',
          'from' => undef,
          'id' => 1810,
-         'data' => '(Am Neuen Palais, direkter Weg) 	2::night -15810,-1274 -15820,-1146 -15854,-656
-(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -13857,-1040 -14153,-1135 -14171,-1026
-(Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
-(Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -14614,-1342 -14856,-1223 -14865,-1118
-(Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -14129,-1258 -14131,-1181 -14153,-1135
+         'data' => '(Am Neuen Palais, direkter Weg)	2::night -15810,-1274 -15820,-1146 -15854,-656
+(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14153,-1135 -14171,-1026
+(Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
+(Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14614,-1342 -14856,-1223 -14865,-1118
+(Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14153,-1135
 ',
          'type' => 'gesperrt'
        },
@@ -2109,7 +2109,15 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1380232800,
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon-Vorbereitungen gesperrt',
+         'from' => 1379973600,
+         'id' => 1895,
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2816,8 +2824,8 @@ userdel	2::night 14838,11410 14792,11391
        {
          'periodic' => 1,
          'until' => 1381096799,
-         'text' => 'Sperrungen wegen Marathon und Tag der deutschen Einheit: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., 29.09.2013 bis 06.10.2013',
-         'from' => 1380319200,
+         'text' => 'Sperrungen wegen Veranstaltungen (Marathon, Deutschlandfest): Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., bis 06.10.2013',
+         'from' => 1380232800,
          'id' => 2388,
          'data' => 'userdel	2::temp 8573,12325 8540,12420
 userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
@@ -3321,6 +3329,35 @@ userdel	q4::inwork 7001,8161 7250,8223
          'from' => 1379149200,
          'id' => 2492,
          'data' => 'userdel	q4::temp 8892,12576 8766,12541
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '131100196',
+         'until' => 1411768800,
+         'text' => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist vorausichtlich auch für Radfahrer nicht passierbar, 01.10.2013 bis 26.09.2014 ',
+         'from' => 1380520800,
+         'id' => 2493,
+         'data' => 'userdel	2::inwork 21169,27133 21320,27078
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_020378',
+         'until' => 1380466980,
+         'text' => 'Mohrenstr.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Mauerstr. gesperrt, bis Ende September 2013',
+         'from' => 1379944980,
+         'id' => 2494,
+         'data' => 'userdel	q4::inwork 9075,11756 9000,11727
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1381701599,
+         'text' => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), Ende der Bauarbeiten unbekannt',
+         'from' => undef,
+         'id' => 2495,
+         'data' => 'userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
 ',
          'type' => 'handicap'
        }
