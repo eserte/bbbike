@@ -2394,7 +2394,7 @@ sub show_bbbike_suggest_toplevel {
 	return;
     }
     {
-	local $ENV{LANG} = $ENV{LC_CTYPE} = $ENV{LC_ALL} = $is_utf8 ? 'en_US.utf8' : 'C';
+	local $ENV{LANG} = $ENV{LC_CTYPE} = $ENV{LC_ALL} = $is_utf8 ? 'de_DE.UTF-8' : 'de_DE.ISO8859-1'; # XXX what about other languages? what if iso-8859-1 or utf-8 locale is N/A?
 	open my $fh, "-|", 'sort', $srcfile
 	    or die "Cannot sort $srcfile: $!";
 	binmode $fh, ':utf8' if $is_utf8;
