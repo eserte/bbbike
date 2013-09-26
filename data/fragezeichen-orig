@@ -71,7 +71,7 @@ Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected 
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
 #: last_checked: 2013-09-05
 #: check_frequency: 100d
-#: osm_watch: way id="47266663" version="2"
+#: osm_watch: way id="47266663" version="3"
 #: osm_watch: way id="47267054" version="1"
 Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,8717 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2114,7742
 # 
@@ -1080,6 +1080,8 @@ Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,88
 # REMOVED (keine Bauarbeiten zu sehen) --- #: XXX vmz-Eintrag relevant? NEW	Nestorstr. (Charlottenburg): Straße vollständig gesperrt, Baustelle (Ende 09/13) in beiden Richtungen zwischen Kurfürstendamm und Johann-Georg-Str., 02.09.2013 06:45 Uhr bis 30.09.2013 10:00 Uhr	IM_020246 --- #: next_check: 2013-09-02 --- Nestorstr.: Bauarbeiten?	? 3374,10201 3359,9968 3347,9793
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13) Richtung Berliner Allee zwischen Parkstr. und Berliner Allee, 02.09.2013 08:00 Uhr bis 15.09.2013 16:00 Uhr	IM_020230	 --- #: next_check: 2013-09-02 --- Rennbahnstr.: Bauarbeiten?	? 14235,17103 14341,17030 14528,16910 14558,16907
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Mohrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/13) Richtung Gendarmenmarkt zwischen Wilhelmstr. und Glinkastr., 24.09.2013 16:03 Uhr bis 29.09.2013 17:03 Uhr	IM_020378	 --- Mohrenstr.: Bauarbeiten?	?; 9000,11727 9075,11756 9171,11777 9220,11781
+#: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388	
+Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
 # 
 Stadtpark Steglitz: evtl. befindet sich das Drängelgitter hier?	? 5709,4674 5734,4694
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
@@ -1294,7 +1296,7 @@ Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,985
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=3934&options=4
 #: last_checked: 2013-07-03
 #: check_frequency: 90d
-Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8655,6796
+Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8645,6781 8655,6796
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4106&options=4 (Konzeptphase)
 #: last_checked: 2013-09-09
@@ -3280,9 +3282,9 @@ Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::p
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=2867
-#: osm_watch: way id="34822334" version="6"
-#: osm_watch: way id="69126601" version="2"
-#: osm_watch: way id="150397570" version="2"
+#: osm_watch: way id="34822334" version="7"
+#: osm_watch: way id="69126601" version="3"
+#: osm_watch: way id="150397570" version="3"
 #: last_checked: 2013-09-15
 #: check_frequency: 100d
 Lauenburger Str.: wurde die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5829,6397 5823,6413
@@ -3546,7 +3548,7 @@ Ernst-Thälmann-Str. (Mahlow): Qualität?	? 11390,-5228 11439,-5233 11639,-5201 11
 Krügers Land (Mahlow): Qualität? Teilweise mit Radweg?	? 12085,-5114 12147,-5162 12241,-5186 12294,-5215 12583,-5521 12654,-5498 12769,-5423 12782,-5284
 Ibsenstr. (Mahlow): Qualität? Existiert ein Radweg?	? 12340,-4833 12307,-4851 12278,-4863 12208,-4975 12174,-5030 12085,-5114 11970,-5232 11922,-5279 11809,-5383 11691,-5503 11650,-5546 11608,-5585 11549,-5642 11512,-5679
 # 
-#: osm_watch: way id="117879323" version="2" vvv
+#: osm_watch: way id="117879323" version="3" vvv
 #: XXX auch culdesac-Einträge vornehmen vvv
 Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2636,23915 2760,23964 2787,23971
 Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2760,23964 2784,23929
