@@ -2366,7 +2366,7 @@ sub show_bbbike_suggest_toplevel {
     require Strassen::Strasse;
     require "$FindBin::RealBin/babybike/lib/BBBikeSuggest.pm";
     my $suggest = BBBikeSuggest->new;
-    my($ofh,$sorted_zipfile) = File::Temp::tempfile(SUFFIX => ".data", UNLINK => 1);
+    my($ofh,$sorted_zipfile) = File::Temp::tempfile(SUFFIX => "_bbbike_suggest.data", UNLINK => 1);
     my $srcfile;
     my $is_opensearch_file;
     my %alias2street;
@@ -2412,6 +2412,8 @@ sub show_bbbike_suggest_toplevel {
 	}
 	close $fh
 	    or die "Cannot sort $srcfile: $!";
+	close $ofh
+	    or die "Error while writing to $sorted_zipfile: $!";
     }
     $suggest->set_zipfile($sorted_zipfile);
     my $t = main::redisplay_top($main::top, 'bbbike_suggest', -force => 1, -title => 'Search street', %args);
