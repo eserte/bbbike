@@ -315,11 +315,13 @@ sub dump_future_as_perl {
     my $first_index;
     for my $i (0 .. $#temp_blocking) {
 	my $o = $temp_blocking[$i];
-	if (!defined $o->{until} || $o->{until} > time) {
-	    if (!defined $first_index) {
-		$first_index = $i;
+	if (defined $o) {
+	    if (!defined $o->{until} || $o->{until} > time) {
+		if (!defined $first_index) {
+		    $first_index = $i;
+		}
+		$new_temp_blocking[$i] = $temp_blocking[$i];
 	    }
-	    $new_temp_blocking[$i] = $temp_blocking[$i];
 	}
     }
     if (!$first_index) {
