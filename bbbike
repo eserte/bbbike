@@ -11034,8 +11034,8 @@ sub activate_temp_blockings {
 	    if (defined $from && (!defined $o->{until} || $o->{until} > $from)) {
 		$do_it = 1;
 	    }
-	    if (!$do_it && ((!defined $o->{from} || $o->{from} < $now) &&
-			    (!defined $o->{until} || $o->{until} > $now))) {
+	    if (!$do_it && ((!defined $o->{from} || $o->{from} <= $now) &&
+			    (!defined $o->{until} || $o->{until} >= $now))) {
 		$do_it = 1;
 	    }
 
