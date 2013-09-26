@@ -1068,7 +1068,7 @@ sub handle_cycleway_like {
 		$extra_tags .= qq{  <tag k="bbbike:cycleway_type" v="dualdir" />\n};
 		$extra_tags .= $extra_tags_for_dualdir->();
 	    }
-	} elsif ($cat eq 'RW' || $cat eq 'RW?' || $cat eq 'RW8?') {
+	} elsif ($cat eq 'RW' || $cat eq 'RW?' || $cat eq 'RW8?' || $cat eq 'RW2?') {
 	    $extra_tags .= qq{  <tag k="cycleway" v="track" />\n};
 	    $extra_tags .= qq{  <tag k="bbbike:usage" v="unknown" />\n};
 	} elsif ($cat eq 'RW1' || $cat eq 'RW9') {
