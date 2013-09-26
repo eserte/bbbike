@@ -4140,6 +4140,7 @@ sub active_temp_blockings_for_date_dialog {
 	Tk::grid($f->Label(-text => "Sperrungen für Datum: "),
 		 $f->DateEntry
 		 (-dateformat => 2,
+		  -weekstart => 1,
 		  -textvariable => \$date,
 		  -configcmd => sub {
 		      my(%args) = @_;
