@@ -69,7 +69,7 @@ long mmap_net_file(SV* self, char* filename) {
     if (!sv)
       croak("Can't get $StrassenNetz::CNetFile::FILE_VERSION");
     if (SvIV(sv) != version)
-      croak("Wrong version <%d> found in %s\n", version, filename);
+      croak("Wrong version <%d> found in %s, expected %d\n", version, filename, SvIV(sv));
 
     hv_store(self_hash, "CNetMagic", strlen("CNetMagic"), newSVpv(magic,0), 0);
     hv_store(self_hash, "CNetFileVersion", strlen("CNetFileVersion"), newSViv(version), 0);
