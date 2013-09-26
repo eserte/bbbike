@@ -2367,17 +2367,39 @@ sub show_bbbike_suggest_toplevel {
     require "$FindBin::RealBin/babybike/lib/BBBikeSuggest.pm";
     my $suggest = BBBikeSuggest->new;
     my($ofh,$sorted_zipfile) = File::Temp::tempfile(SUFFIX => "_bbbike_suggest.data", UNLINK => 1);
+    my $tempstreetsfile;
     my $srcfile;
     my $is_opensearch_file;
     my %alias2street;
     my $is_utf8;
     my $plz;
     for my $def (["$main::datadir/opensearch.streetnames", 1, 1],
-		 ["$main::datadir/Berlin.coords.data", 0, 0], # check for this file, but possibly use the combined cache file
+		 ["$main::datadir/strassen", 0, 1],
+		 ["$main::datadir/Berlin.coords.data", 0, 0], # usually never used --- check for this file, but possibly use the combined cache file
 		) {
 	my($try_srcfile, $try_is_opensearch_file, $try_is_utf8) = @$def;
 	if (-s $try_srcfile) {
-	    if (!$is_opensearch_file) {
+	    if ($try_srcfile =~ m{/strassen$}) {
+		require Strassen::MultiStrassen;
+		require Strassen::Core;
+		require Strassen::CoreHeavy;
+		require PLZ;
+		my @ms;
+		push @ms, Strassen->new("$main::datadir/strassen");
+		if ($main::city_obj->cityname eq 'Berlin' && -r "$main::datadir/landstrassen") {
+		    my $s = Strassen->new("$main::datadir/landstrassen");
+		    push @ms, $s->grepstreets(sub { $_->[Strassen::NAME()] =~ m{ \(Potsdam\)$} });
+		}
+		my $ms = MultiStrassen->new(@ms);
+		(my($tmpfh), $tempstreetsfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_bbbike_suggest0.data")
+		    or die $!;
+		binmode $tmpfh, ':encoding(utf-8)';
+		print $tmpfh PLZ->new_data_from_streets($ms);
+		close $tmpfh
+		    or die $!;
+		$plz = PLZ->new($tempstreetsfile);
+		$srcfile = $tempstreetsfile;
+	    } elsif ($try_srcfile =~ m{Berlin.coords.data}) {
 		$plz = main::make_plz();
 		$srcfile = $plz->{File};
 		main::status_message("Should never happen: Keine PLZ-Datenbank vorhanden!", 'die') if (!$plz);
