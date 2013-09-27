@@ -29,6 +29,7 @@ sub teaser {
 			       ];
     $teasers_mandatory{"de"} = [
 				#teaser_maintenance(), # schaltet sich selbstständig ab
+				teaser_marathon(), # schaltet sich selbstständig ab
 				teaser_velothon(), # schaltet sich selbstständig ab
 				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
@@ -101,6 +102,21 @@ sub teaser_kreisfahrt_adfc {
 	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
 	<<EOF
 <div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0"" /></a> am 21. September $year</div>
+EOF
+    } else {
+	();
+    }
+}
+
+sub teaser_marathon {
+    my @l = localtime; $l[4]++;$l[5]+=1900;
+    my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
+    my $out_of_date = $today gt "20130929";
+    if (!$out_of_date) {
+	my $marathon_map_url = 'http://www.bmw-berlin-marathon.com/event/streckensperrungen.html';
+	<<EOF
+<div class="teaser" style="font-weight:bold">Am 28. und 29. September findet der Marathon statt.<br/>
+<a href="$marathon_map_url">Karte mit den Sperrungen</a></div>
 EOF
     } else {
 	();
