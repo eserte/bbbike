@@ -18914,14 +18914,6 @@ EOF
 userdel	q3::inwork; 13651,11731 13895,11663
 EOF
      },
-     { from  => 1299740460, # 2011-03-10 08:01
-       until => 1300314164, # 2011-03-18 00:00 1300402800
-       text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt Richtung Boxhagener Str. zwischen Libauer Str. und Simon-Dach-Str., 11.03.2011 08:01 Uhr bis 17.03.2011 ',
-       type  => 'handicap',
-       source_id => 'IM_017007',
-       data  => <<EOF,
-EOF
-     },
      { from  => 1299992400, # 2011-03-13 06:00
        until => 1300467600, # 2011-03-18 18:00
        text  => 'Königs Wusterhausen: B179: Gleisbauarbeiten BÜ Zeesen, 14.03.2011 06:00 Uhr bis 18.03.2011 18:00 Uhr ',
