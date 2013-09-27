@@ -136,6 +136,11 @@ sub run_checks {
 	    $o->{from} > $o->{until}) {
 	    die "Interval mismatch: " . Dumper($o);
 	}
+	if (exists $o->{data}) {
+	    if ($o->{data} =~ m{^\s*$}) {
+		die "Empty data: " . Dumper($o);
+	    }
+	}
 
 	my $str_obj;
 	my $full_path;
