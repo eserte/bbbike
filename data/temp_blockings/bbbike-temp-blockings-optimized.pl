@@ -2159,6 +2159,16 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
+       {
+         'source_id' => 'IM_020398',
+         'until' => 1382104800,
+         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte September 2013',
+         'from' => 1380175440,
+         'id' => 2188,
+         'data' => 'userdel	q3::inwork; 13651,11731 13895,11663
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -2172,7 +2182,7 @@ userdel	2::temp 18870,5833 18932,5926
          'recurring' => 1,
          'text' => 'Albrecht-Thaer-Weg: Privatstraße, eventuell zeitweise gesperrt (nachts?)',
          'from' => undef,
-         'id' => 2196,
+         'id' => 2197,
          'data' => 'Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3347,6460 3449,6863
 ',
          'type' => 'gesperrt'
@@ -2256,7 +2266,7 @@ userdel	2::temp 18870,5833 18932,5926
          'recurring' => 1,
          'text' => 'Hausvogteiplatz: Wochenmarkt Mittwoch und Freitag 9-16 Uhr, Behinderungen möglich',
          'from' => undef,
-         'id' => 2271,
+         'id' => 2272,
          'data' => '#: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2011/1122_MI.pdf
 	q4::temp:clock 9925,11947 9878,11857
 ',
@@ -2303,7 +2313,7 @@ userdel	2::temp 18870,5833 18932,5926
          'until' => 1380636000,
          'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
          'from' => 1348076973,
-         'id' => 2308,
+         'id' => 2309,
          'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
 #: note: nur die halbe Strecke ist gesperrt, deshalb q3
 #: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
@@ -2329,7 +2339,7 @@ userdel	q3::inwork 10530,14452 10723,14772
          'until' => 1387548000,
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende Dezember 2013',
          'from' => 1330902000,
-         'id' => 2316,
+         'id' => 2317,
          'data' => '#: osm_watch: way id="23243508" version="37"
 userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
@@ -2343,7 +2353,7 @@ userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 
          'recurring' => 1,
          'text' => 'Am Schloss Schönhausen: nachts gesperrt (im Sommer ab ca. 19 Uhr, im Winter ab Einbruch der Dunkelheit)',
          'from' => undef,
-         'id' => 2320,
+         'id' => 2321,
          'data' => '#: by: cornelia (bayer...): vvv
 Am Schloss Schönhausen	2::night 10308,19297 10344,19181 10382,19066
 Am Schloss Schönhausen	2::night 10249,19148 10344,19181
@@ -2363,7 +2373,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
          'until' => 1381787999,
          'text' => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 8. bis 14. Oktober 2013',
          'from' => 1381096800,
-         'id' => 2330,
+         'id' => 2331,
          'data' => '#: by: http://www.karlshorst-buergerverein.de/index.php?option=com_content&task=view&id=516
 userdel	2::inwork 18731,8577 18709,8423
 ',
@@ -2396,7 +2406,7 @@ userdel	2::inwork 18731,8577 18709,8423
          'from' => undef,
          'text' => 'Földerichplatz: Wochenmarkt Dienstag 8-13 Uhr und Donnerstag 14-18 Uhr',
          'type' => 'gesperrt',
-         'id' => 2349
+         'id' => 2350
        },
        undef,
        undef,
@@ -2425,7 +2435,7 @@ userdel	2::inwork 18731,8577 18709,8423
          'recurring' => 1,
          'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und sonntags gesperrt',
          'from' => undef,
-         'id' => 2372,
+         'id' => 2373,
          'data' => '#: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
 #: note: und am 2012-11-15 (gegen 21:00 - offen)
 #: note: und am Sonntag, den 2012-06-02 (vormittags - geschlossen)
@@ -2447,21 +2457,13 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'until' => 1380232800,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon und Deutschlandfest gesperrt',
-         'from' => 1379995200,
-         'id' => 2387,
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'periodic' => 1,
          'until' => 1380513600,
          'text' => 'Sperrungen wegen Veranstaltungen (Marathon, Deutschlandfest): Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 30.09.2013 06:00 Uhr',
          'from' => 1380232800,
-         'id' => 2388,
+         'id' => 2389,
          'data' => 'userdel	2::temp 8573,12325 8540,12420
 userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
 userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
@@ -2486,7 +2488,7 @@ userdel	2::temp 8119,12414 8122,12608 8207,12608 8306,12609 8348,12609 8399,1261
          'until' => 1386169200,
          'text' => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)',
          'from' => 1353366000,
-         'id' => 2391,
+         'id' => 2392,
          'data' => '#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
@@ -2510,7 +2512,7 @@ userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,
          'recurring' => 1,
          'text' => 'Jüdenstr.: das Überqueren der Grunerstr. ist insbesondere außerhalb der Parkbewirtschaftungszeiten (abends, am Wochenende) sehr unbequem (eng parkende Autos)',
          'from' => undef,
-         'id' => 2396,
+         'id' => 2397,
          'data' => '#: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
 userdel	2::temp::igndisp 10805,12468 10803,12470
 ',
@@ -2524,7 +2526,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'recurring' => 1,
          'text' => 'Kollwitzplatz: Wochenmarkt Samstag 9-16 Uhr',
          'from' => undef,
-         'id' => 2400,
+         'id' => 2401,
          'data' => '#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3228&options=4 vvv
 	q4::temp:clock 11317,14564 11285,14515 11229,14422
 #: XXX_prog: q3, weil nur ca. 35m betroffen sind 
@@ -2539,7 +2541,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'until' => 1412114400,
          'text' => 'Neubau der Schulstraße, Bauabschnitt zwischen Grunowstraße und Berliner Straße',
          'from' => undef,
-         'id' => 2402,
+         'id' => 2403,
          'data' => 'userdel	q4::inwork 10582,18159 10755,18231
 ',
          'type' => 'handicap'
@@ -2560,7 +2562,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => undef,
          'text' => 'Potsdamer Wassertaxi: fährt nur im Sommer an Wochenenden und Feiertagen',
          'type' => 'gesperrt',
-         'id' => 2407
+         'id' => 2408
        },
        {
          'source_id' => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html',
@@ -2575,14 +2577,14 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => undef,
          'text' => 'Fähren F21, F23, F24: fahren nur ab Karfreitag bis zum 3. Oktober, fahren nicht am Montag',
          'type' => 'gesperrt',
-         'id' => 2408
+         'id' => 2409
        },
        {
          'until' => undef,
          'text' => 'Karniner Fähre: fährt nur von Mai bis Oktober',
          'recurring' => 1,
          'from' => undef,
-         'id' => 2409,
+         'id' => 2410,
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
 	2::temp 38674,160390 37644,160344 38049,160420 38325,160573
 #: XXX_prog ^^^
@@ -2600,7 +2602,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'text' => 'Westklüne - Ostklüne: keine offizielle Fähre, aber wenn man Glück hat, kann man per Ruderboot übergesetzt werden',
          'permanent' => 1,
          'type' => 'gesperrt',
-         'id' => 2410
+         'id' => 2411
        },
        undef,
        undef,
@@ -2609,7 +2611,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'recurring' => 1,
          'text' => 'Friedhofswege nachts gesperrt',
          'from' => undef,
-         'id' => 2413,
+         'id' => 2414,
          'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
 	2::night 12773,12683 13046,12956
 '
@@ -2627,7 +2629,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'until' => 1380578399,
          'text' => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Straße gesperrt (bis Ende September 2013) ',
          'from' => 1366740818,
-         'id' => 2422,
+         'id' => 2423,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: last_checked: 2013-09-19
@@ -2639,14 +2641,13 @@ userdel	q2::inwork 5258,11285 5247,10992
        undef,
        {
          'until' => undef,
-         'text' => 'Richardstr.: Baustelle zwischen Richardplatz und Herrnhuter Weg, Fahrtrichtung gesperrt',
+         'text' => 'Richardstr.: Baustelle zwischen Kirchgasse und Berthelsdorfer Str., Fahrtrichtung gesperrt',
          'from' => undef,
-         'id' => 2425,
+         'id' => 2426,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-08-08
+#: last_checked: 2013-09-27
 #: check_frequency: 60d
-#: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
-userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
+userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904 12870,8087
 ',
          'type' => 'handicap'
        },
@@ -2664,7 +2665,7 @@ userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
          'until' => 1398895200,
          'text' => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
          'from' => 1370210400,
-         'id' => 2435,
+         'id' => 2436,
          'data' => '#: source_id: INKO_117520
 userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
 ',
@@ -2681,7 +2682,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'until' => 1381068000,
          'text' => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Anfang Oktober 2013',
          'from' => 1349931600,
-         'id' => 2442,
+         'id' => 2443,
          'data' => 'userdel	q2::inwork; 6572,14639 6299,14660
 ',
          'type' => 'handicap'
@@ -2694,7 +2695,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'until' => 1385938799,
          'text' => 'Földerichplatz: Bauarbeiten von Ende Juni bis Dezember 2013',
          'from' => 1372456800,
-         'id' => 2446,
+         'id' => 2447,
          'data' => '#: XXX wie sieht die Situation nach den Bauarbeiten aus, kommen Radfahrer noch weiterhin gut durch?
 #: XXX zurzeit (2013-07-13) existiert keine Fahrbahn und keine Bürgersteige mehr, man muss auf den Parkweg ausweichen
 #: last_checked: 2013-07-13
@@ -2712,7 +2713,7 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
          'until' => undef,
          'text' => 'Innstr./Wildenbruchplatz: Bauarbeiten, Fahrbahn gesperrt',
          'from' => undef,
-         'id' => 2452,
+         'id' => 2453,
          'data' => '#: last_checked: 2013-09-04 vvv
 #: check_frequency: 60d vvv
 	q4::inwork 13301,8606 13314,8624 13366,8694
@@ -2728,7 +2729,7 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
          'recurring' => 1,
          'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
          'from' => undef,
-         'id' => 2454,
+         'id' => 2455,
          'data' => 'Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
 Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 '
@@ -2738,7 +2739,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'recurring' => 1,
          'text' => 'Hohenzollernplatz: Wochenmarkt Mittwoch und Samstag 8-13 Uhr, Behinderungen möglich',
          'from' => undef,
-         'id' => 2455,
+         'id' => 2456,
          'data' => '	q4::temp:clock 5066,9645 5174,9708 5253,9754
 	q4::temp:clock 5155,9786 5174,9708
 ',
@@ -2750,7 +2751,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'recurring' => 1,
          'text' => 'Arkonaplatz: Wochenmarkt Freitag 12.00-19.00 Uhr sowie Trödelmarkt Sonntag 10.00-17.00, Behinderungen möglich',
          'from' => undef,
-         'id' => 2457,
+         'id' => 2458,
          'data' => '	q4::temp:clock 10228,14564 10189,14649
 ',
          'type' => 'gesperrt'
@@ -2760,7 +2761,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'recurring' => 1,
          'text' => 'Mauerpark: Flohmarkt Sonntag 08.00-18.00 Uhr, Behinderungen möglich',
          'from' => undef,
-         'id' => 2458,
+         'id' => 2459,
          'data' => '	q4::temp:clock 10354,14987 10240,15318
 ',
          'type' => 'gesperrt'
@@ -2773,7 +2774,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'until' => undef,
          'text' => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
          'from' => undef,
-         'id' => 2463,
+         'id' => 2464,
          'data' => '#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht vvv
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
@@ -2797,7 +2798,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'permanent' => 1,
          'text' => 'Karl-Bonhoeffer-Nervenklinik: für Unbefugte ist das Befahren nicht erlaubt',
          'from' => undef,
-         'id' => 2464,
+         'id' => 2465,
          'data' => '#: note: Der Hinweis existiert nur am Nordeingang, aber nicht am Südeingang
 	2 4997,19849 5003,19833 5060,19699 5073,19656
 	2 5032,19645 5073,19656 5110,19665
@@ -2810,7 +2811,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'until' => 1381759200,
          'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße Richtung Osten gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Mitte Oktober 2013',
          'from' => 1374381000,
-         'id' => 2466,
+         'id' => 2467,
          'data' => 'userdel	q3::inwork; 15513,13539 15653,13542 15724,13544 15896,13547
 ',
          'type' => 'handicap'
@@ -2822,7 +2823,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'until' => 1387555200,
          'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), 12.08.2013 06:00 Uhr bis 20.12.2013 17:00 Uhr',
          'from' => 1376193600,
-         'id' => 2469,
+         'id' => 2470,
          'data' => 'userdel	2::inwork 17736,5441 17886,5587
 ',
          'type' => 'gesperrt'
@@ -2832,7 +2833,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'until' => 1381485600,
          'text' => 'Neumannstr. (Pankow): Baustelle, zwischen Thulestr. und Eschengraben Richtung Norden gesperrt, bis 11.10.2013 ',
          'from' => 1376816220,
-         'id' => 2470,
+         'id' => 2471,
          'data' => 'userdel	q4::inwork; 11635,16616 11621,16749
 ',
          'type' => 'handicap'
@@ -2842,7 +2843,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'until' => 1381500000,
          'text' => 'Thulestr. (Pankow): Baustelle zwischen Neumannstraße und Talstr., Fahrbahn gesperrt, bis 11.10.2013 ',
          'from' => 1376816220,
-         'id' => 2471,
+         'id' => 2472,
          'data' => 'userdel	q4::inwork 11825,16666 11767,16631 11725,16626 11635,16616
 ',
          'type' => 'handicap'
@@ -2861,7 +2862,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'from' => undef,
          'text' => 'Fähre Liepnitzsee: fährt nur ab Ende März bis Ende Oktober',
          'type' => 'gesperrt',
-         'id' => 2475
+         'id' => 2476
        },
        undef,
        undef,
@@ -2871,7 +2872,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'recurring' => 1,
          'text' => 'Landschaftspark Herzberge: nachts gesperrt',
          'from' => undef,
-         'id' => 2479,
+         'id' => 2480,
          'data' => 'userdel	2::night 13437,10992 13471,10983
 userdel	2::night 17490,13133 17489,13125
 userdel	2::night 17671,13132 17684,13133
@@ -2883,7 +2884,7 @@ userdel	2::night 17671,13132 17684,13133
          'until' => 1388530799,
          'text' => 'Alt-Lübars zwischen Quickborner Straße und Zabel-Krüger-Damm: Bauarbeiten, Fahrbahn gesperrt, bis Ende 2013',
          'from' => 1377731580,
-         'id' => 2480,
+         'id' => 2481,
          'data' => 'userdel	q4::inwork 6805,23554 6801,23474 6764,23396
 ',
          'type' => 'handicap'
@@ -2900,7 +2901,7 @@ userdel	2::night 17671,13132 17684,13133
          'until' => 1382738399,
          'text' => 'Maximilankorso: Bauarbeiten zwischen Sigismundkorso und Alemannenstraße, teilweise mit Vollsperrungen, Benediktinerstr. und Artuswall werden zu Einbahnstraßen, vom 16. September 2013 bis zum 25. Oktober 2013',
          'from' => 1379196000,
-         'id' => 2488,
+         'id' => 2489,
          'data' => 'userdel	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25251 1513,25253 1576,25249 1738,25243
 #: XXX Einbahnstraßenrichtung ist geraten
 	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
@@ -2911,7 +2912,7 @@ userdel	2::night 17671,13132 17684,13133
          'until' => undef,
          'text' => 'Weg im Cheruskerpark: Bauarbeiten, Durchfahrt nicht möglich',
          'from' => undef,
-         'id' => 2489,
+         'id' => 2490,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
 #: last_checked: 2013-09-15
@@ -2925,7 +2926,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'until' => undef,
          'text' => 'Torgauer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg möglich',
          'from' => undef,
-         'id' => 2490,
+         'id' => 2491,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?)
 #: last_checked: 2013-09-16
@@ -2939,7 +2940,7 @@ userdel	q4::inwork 7001,8161 7250,8223
          'until' => 1396047599,
          'text' => 'Görresstr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
          'from' => 1379328680,
-         'id' => 2491,
+         'id' => 2492,
          'data' => 'userdel	q4::inwork; 5352,7428 5318,7424 5272,7458 5188,7536 5067,7652
 ',
          'type' => 'handicap'
@@ -2950,7 +2951,7 @@ userdel	q4::inwork 7001,8161 7250,8223
          'until' => 1411768800,
          'text' => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist vorausichtlich auch für Radfahrer nicht passierbar, 01.10.2013 bis 26.09.2014 ',
          'from' => 1380520800,
-         'id' => 2493,
+         'id' => 2494,
          'data' => 'userdel	2::inwork 21169,27133 21320,27078
 ',
          'type' => 'gesperrt'
@@ -2960,7 +2961,7 @@ userdel	q4::inwork 7001,8161 7250,8223
          'until' => 1380466980,
          'text' => 'Mohrenstr.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Mauerstr. gesperrt, bis Ende September 2013',
          'from' => 1379944980,
-         'id' => 2494,
+         'id' => 2495,
          'data' => 'userdel	q4::inwork 9075,11756 9000,11727
 ',
          'type' => 'handicap'
@@ -2969,8 +2970,11 @@ userdel	q4::inwork 7001,8161 7250,8223
          'until' => 1381701599,
          'text' => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), Ende der Bauarbeiten unbekannt',
          'from' => undef,
-         'id' => 2495,
-         'data' => 'userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
+         'id' => 2496,
+         'data' => '#: XXX wird die Sperrung vielleicht früher aufgehoben?
+#: last_checked: 2013-09-27
+#: next_check: 2013-10-04
+userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
 ',
          'type' => 'handicap'
        }

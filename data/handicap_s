@@ -33,6 +33,7 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
+Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12792,8190
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 15399,12444 15457,12449
 Breslauer Platz: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 5810,7337 5897,7337
@@ -81,7 +82,7 @@ Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12506,10244 12384,10368 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12757,10197 12712,10192 12670,10160
-Görlitzer Park, Rondell: Fußgänger, Bauarbeiten	q4::inwork 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
+Görlitzer Park, Rondell: Fußgänger	q2 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12516,10202 12543,10223
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12504,10172 12464,10153
@@ -1160,7 +1161,6 @@ Arnimplatz: Fußgänger	q2 10606,16319 10739,16146
 (Weg im Salvador-Allende-Viertel): eine Bodenschwelle, kann umfahren werden	q0 23279,4599 23445,4596
 (Weg im Salvador-Allende-Viertel - Am Berg): Fußgänger	q2 23051,4461 23010,4506
 (Möllendorffstr. - Karl-Lade-Str.): Fußgänger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15374,13542
-Paul-Junius-Str.: Umfahrung an der Straßenbahnüberquerung	q4::inwork 15374,13542 15370,13508
 Lilienweg: Fußgänger	q2 15143,5705 15154,5706 15209,5713 15252,5719 15296,5725 15337,5730
 Rosenweg: Fußgänger	q2 15343,5687 15337,5730 15330,5821 15325,5934
 Spielplatzweg: Fußgänger	q2 15141,5800 15201,5807 15246,5812 15288,5816 15330,5821
@@ -1275,6 +1275,7 @@ Ackerstr.: Bordstein	q1 -3937,15299 -3869,15333
 (Spektegrünzug - Unnaer Str.): Fußgänger	q1 -5610,15079 -5608,15105
 (Schulzenstr. - Spekteweg): Fußgänger	q1 -4947,14873 -4945,14883 -4932,14968
 Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3116,12012
+(Sonnenallee - Aronsstr.): einige Fußgänger	q1 14519,7301 14571,7427
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1676,7 +1677,7 @@ Stanzer Zeile: enge Straße	q0 6180,376 6130,449 6112,547 6089,643 6066,821 6067,
 Mommsenstr. (Lichterfelde): enge Straße	q1 3583,4011 3356,3860
 Sodtkestr.: enge Straße	q1 12221,15514 12298,15658 12382,15802 12423,15875
 Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 5411,1259
-(Templerzeile - Götzstr.): Parkweg, Fußgänger, teilweise mit Radweg	q1 9681,6180 9683,6199 9695,6336 9708,6493
+(Templerzeile - Götzstr.): Parkweg, Fußgänger, teilweise mit Radweg	q1 9681,6180 9683,6199 9695,6336 9719,6492
 (Darbystr. - Falkenseer Chaussee): schmal, aber auch mit Hänger passierbar	q1 -5505,15859 -5523,15766
 Mittelheide: enge Straße	q0 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
 Platanenstr.: teilweise recht eng	q0 9355,19789 9489,19826 9822,19916 10127,19992

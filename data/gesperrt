@@ -797,6 +797,7 @@ Flankenschanze	1 -3507,15341 -3534,15219
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
+Görlitzer Park	1::igndisp 12464,10153 12504,10172
 (Wollestr. - Mühlenstr.)	1 -10790,-1178 -10787,-1162 -10730,-1103 -10691,-1097 -10648,-1130
 Wollestr.	1s -10717,-1227 -10984,-1574
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12297,738
@@ -2622,9 +2623,6 @@ Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9852,12409
 Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp 9984,12426 9934,12420 9943,12364
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
-Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572
-Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193
-Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982
 Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
 An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-1339 -11235,-1465 -11137,-1680 -11089,-1730 -10973,-1764
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094

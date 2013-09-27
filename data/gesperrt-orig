@@ -1080,7 +1080,7 @@ Edith-Kiss-Str.	1 12793,11132 12866,11256
 Garzauer Str.	1 21830,13688 21722,13708
 Flankenschanze	1 -3507,15341 -3534,15219
 ######################################################################
-# empfohlene Sperrungen
+# empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
 #: note: "das Befahren der Heerstraße dort [ist] zwar nicht verboten, aber nicht empfehlenswert" (starker Verkehr, Busse, Schwerlastverkehr, kaum Bebauung, Tempolimit wird nicht eingehalten)
 Heerstr.	1::igndisp -6675,12632 -7294,12833
@@ -1091,6 +1091,8 @@ Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 #: by: ^^^
 #: note: nicht explizit verboten, aber es existieren "Radfahrerführungsschilder" sowohl an der Straße Alt-Biesdorf Richtung Norden als auch Märkische Allee Richtung Osten
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
+#: note: von der Fahrbahnseite von Westen aus gibt es keinen Zugang (Bordsteine, Pflanzungen)
+Görlitzer Park	1::igndisp 12464,10153 12504,10172
 ######################################################################
 #
 # Potsdam
@@ -2478,13 +2480,7 @@ Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 99
 #: next_check: 2014-02-13
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 # 
-#: next_check: 2013-10-06 vvv
-#: prio: #A vvv
-Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572
-Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193
-Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982
-#: prio ^^^
-#: next_check ^^^
+# REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: prio: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^
 # 
 #: last_checked: 2013-09-11
 #: check_frequency: 60d
@@ -2522,7 +2518,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-09-25
+#: last_checked: 2013-09-27
 #: check_frequency: 30d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 

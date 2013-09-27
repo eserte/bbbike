@@ -18905,13 +18905,21 @@ EOF
 userdel	q4::inwork; 15066,14579 15174,14638 15272,14691
 EOF
      },
+     { from  => 1380175440, # 2013-09-26 08:04
+       until => 1382104800, # 2013-10-18 16:00
+       text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte September 2013',
+       type  => 'handicap',
+       source_id => 'IM_020398',
+       data  => <<EOF,
+userdel	q3::inwork; 13651,11731 13895,11663
+EOF
+     },
      { from  => 1299740460, # 2011-03-10 08:01
        until => 1300314164, # 2011-03-18 00:00 1300402800
        text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt Richtung Boxhagener Str. zwischen Libauer Str. und Simon-Dach-Str., 11.03.2011 08:01 Uhr bis 17.03.2011 ',
        type  => 'handicap',
        source_id => 'IM_017007',
        data  => <<EOF,
-userdel	q4::inwork; 13895,11663 13954,11647
 EOF
      },
      { from  => 1299992400, # 2011-03-13 06:00
@@ -21190,14 +21198,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Richardstr.: Baustelle zwischen Richardplatz und Herrnhuter Weg, Fahrtrichtung gesperrt',
+       text  => 'Richardstr.: Baustelle zwischen Kirchgasse und Berthelsdorfer Str., Fahrtrichtung gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-08-08
+#: last_checked: 2013-09-27
 #: check_frequency: 60d
-#: XXX Straße wird asphaltiert (siehe auch Eintrag in fragezeichen-orig)
-userdel	q4::inwork; 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
+userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904 12870,8087
 EOF
      },
      { from  => 1367560561, # 2013-05-03 07:56
@@ -21937,6 +21944,9 @@ EOF
        text  => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: XXX wird die Sperrung vielleicht früher aufgehoben?
+#: last_checked: 2013-09-27
+#: next_check: 2013-10-04
 userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
 EOF
      },

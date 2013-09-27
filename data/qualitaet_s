@@ -140,7 +140,8 @@ Helmstr.: gutes Kopfsteinpflaster	Q1 7524,9093 7490,9116 7444,9148 7387,9184
 Belziger Str.: Asphalt	Q0 7308,9163 7107,9030
 Suadicanistr.: Asphalt	Q0 7859,7486 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
-Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10627,8706 10615,8558
+Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10627,8706
+Lilienthalstr.: Asphalt, etwas rau	Q0 10627,8706 10615,8558
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 12330,8636 12394,8729 12434,8776 12483,8834 12590,8977 12681,9083 12761,9190
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 12761,9190 12851,9309
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 12851,9309 12844,9351
@@ -337,7 +338,7 @@ Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622
 Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712
 Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889
-Richardstr.: unbefestigt	Q2 13103,7889 13150,7845 13226,7775 13245,7742
+Richardstr.: Kopfsteinpflaster/unbefestigt	Q2 13103,7889 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13288,7653
 Richardstr.: Kopfsteinpflaster	Q2 13288,7653 13303,7622
 Richardstr.: Asphalt	Q0 13303,7622 13339,7452
@@ -520,7 +521,7 @@ Görlitzer Park: Asphalt	Q0 12543,10223 12506,10244
 Görlitzer Park: teils fester sandiger Weg, teils Kopfsteinpflaster	Q2 12506,10244 12384,10368 12328,10442
 Görlitzer Park: Asphalt	Q0 12814,9966 12833,9998 12869,10071
 Görlitzer Park: Gehwegplatten	Q0 12869,10071 12901,10134 12905,10143
-Görlitzer Park, Rondell: teils fester sandiger Weg	Q1 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
+Görlitzer Park, Rondell: Asphalt	Q0 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
 Görlitzer Park, Rondell: Asphalt	Q0 12670,10160 12712,10192 12757,10197 12801,10146 12802,10097
 Görlitzer Park: Asphalt	Q0 12802,10097 12670,10160
 Görlitzer Park: Kleinsteinpflaster	Q1 12507,10130 12504,10172
@@ -8417,6 +8418,8 @@ Hans-Werner-Klünner-Weg: Schotterweg	Q2 -3109,12021 -3116,12012
 Sportforumstr.: Kleinsteinpflaster	Q1 -193,12051 -212,12095 -247,12117 -263,12125
 Sportforumstr.: Asphalt	Q0 -263,12125 -369,12175
 Parkplatz Möbel Hübner: Verbundsteinpflaster	Q1 7354,10671 7478,10612
+Aronsstr. [Richtung Sonnenallee]: Asphalt mit Schäden	Q2 14571,7427 14579,7576 14593,7584
+(Sonnenallee - Aronsstr.): Gehwegplatten	Q0 14519,7301 14571,7427
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -8759,7 +8762,7 @@ Stößerstr.: Verbundsteinpflaster	Q1 -1806,19806 -1739,19803
 Dürkheimer Str.: mäßiges Kopfsteinpflaster	Q2 6704,3662 6794,3755
 Georg-Knorr-Str.: guter Asphalt	Q0 19414,15132 19191,15043 19169,15015
 Trützschlerstr.: guter Asphalt	Q0 17471,4570 17612,4460 17745,4351
-Werbergstr.: Asphalt	Q0 9708,6493 9739,6635
+Werbergstr.: Asphalt	Q0 9719,6492 9735,6636
 Horst-Caspar-Steig: guter Beton	Q0 15923,2129 15912,2100 15836,2113 15767,2097 15705,2085 15467,2073 15466,2049 15313,2041
 Lindenberger Str.: Beton	Q0 11312,19537 11278,19607
 Lindenberger Str.: gut geeignet	Q0 11278,19607 11229,19706 11162,19844
@@ -10939,7 +10942,7 @@ Barnackufer: schlechtes Kopfsteinpflaster	Q3 4245,2207 4351,2225 4454,2221
 Bernshausener Ring: Asphalt	Q0 5322,21849 5292,21921 5297,21960 5326,21982 5440,22012 5475,22006 5496,21991 5527,21942
 Kekuléstr.: guter Asphalt	Q0 19136,2673 19268,2784 19375,2888 19425,2934
 (Templerzeile - Götzstr.): Asphalt	Q0 9681,6180 9683,6199 9695,6336
-(Templerzeile - Götzstr.): Verbundsteinpflaster	Q1 9695,6336 9708,6493
+(Templerzeile - Götzstr.): Verbundsteinpflaster	Q1 9695,6336 9719,6492
 Straße 614: Asphalt	Q0 13105,5748 12885,5699
 Marschnerstr.: mäßiges Kopfsteinpflaster	Q2 4613,4515 4641,4287 4634,4053 4629,3916
 Odilostr.: mäßiger Beton	Q1 3216,24135 3311,24150 3483,24186 3632,24214

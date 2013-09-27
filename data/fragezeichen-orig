@@ -206,7 +206,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 Karl-Marx-Str.: wann werden hier die Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011)
-#: last_checked: 2013-09-11
+#: last_checked: 2013-09-27
 #: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
@@ -310,12 +310,12 @@ Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
 #: next_check: 2013-10-13
 Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9308,4407 9192,4389 9079,4376
 # 
-#: last_checked: 2013-07-03
+#: last_checked: 2013-09-27
 #: check_frequency: 90d
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8496,6919 8447,6964 8414,6995 8319,7084
 # 
-#: last_checked: 2013-05-06
-#: next_check: 2013-09-06
+#: last_checked: 2013-09-27
+#: check_frequency: 120d
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
@@ -361,7 +361,7 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 #: next_check: 2014-08-31
 Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663 16273,-824
 # 
-#: last_checked: 2013-09-23
+#: last_checked: 2013-09-27
 #: check_frequency: 14d
 Görlitzer Park: Diagonalverbindung entsteht. Wann fertig? Qualität? Beleuchtet?	?::inwork 12516,10202 12506,10244
 # 
@@ -506,16 +506,7 @@ Planstraße zwischen Theodorstr. und Pilgramer Str.: Straße in Planung, Qualität?
 #: prio: #A
 Am Lokdepot: Bau einer Erschließungsstraße	?::inwork 8390,8879 8389,9087
 # 
-#: last_checked: 2013-09-04 vvv
-#: next_check: 2013-09-14 vvv
-#: XXX auch mrt/hrt fragen! vvv
-Te-Damm/Hoeppnerstr.: Ampelanlage in Bau	?::inwork 9242,7286
-Te-Damm/Manfred-von-Richthofen-Str.: Ampelanlage in Bau	?::inwork 9242,7325
-#: XXX ^^^
-#: next_check ^^^
-#: last_checked ^^^
-# 
-# REMOVED (keine interessant Radverbindung --- wassergebundene Decke, unbeleuchtet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4997.html (fertiggestellt) --- #: last_checked: 2013-05-29 --- #: next_check: 2013-06-26 --- Grünanlage an der Teilestr.: Parkwege entstehen, evtl. eine lohnende Abkürzung, Qualität, nachts beleuchtet?	?::inwork 11068,6006 11056,5861 11146,5851 11277,5988
+# REMOVED (keine interessante Radverbindung --- wassergebundene Decke, unbeleuchtet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4997.html (fertiggestellt) --- #: last_checked: 2013-05-29 --- #: next_check: 2013-06-26 --- Grünanlage an der Teilestr.: Parkwege entstehen, evtl. eine lohnende Abkürzung, Qualität, nachts beleuchtet?	?::inwork 11068,6006 11056,5861 11146,5851 11277,5988
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130410.1200.383317.html
 Schönwalder Allee: Radweg wird saniert, danach asphaltiert	?::inwork; -3807,17226 -3820,17276 -3936,17516
@@ -593,20 +584,20 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-09-04
-#: check_frequency: 60d
-Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 12650,8164 12541,8140
+#: last_checked: 2013-09-27 (Markierungsarbeiten haben begonnen)
+#: next_check: 2013-10-04
+Werbellinstr.: Radstreifen werden erstellt	?::projected; 12753,8187 12698,8175 12650,8164 12541,8140 12426,8115
 #: last_checked: 2013-09-04
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12888,9338
-#: last_checked: 2013-09-16
+#: last_checked: 2013-09-27
 #: next_check: 2014-09-01
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2013-09-16
+#: last_checked: 2013-09-27
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -709,8 +700,8 @@ Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: osm_watch: way id="4663347" version="15"
-#: last_checked: 2013-08-30
-#: next_check: 2013-09-20 (Ende der Bauarbeiten)
+#: last_checked: 2013-09-27 (Bauarbeiten sind noch nicht beendet, evtl. wird noch markiert?)
+#: next_check: 2013-10-11
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
 # 
 #: last_checked: 2013-05-10 vvv
@@ -744,7 +735,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: osm_watch: way id="42852292" version="7"
 #: osm_watch: way id="155605306" version="1"
 #: osm_watch: way id="155605307" version="3"
-#: last_checked: 2013-08-08
+#: last_checked: 2013-09-27
 #: check_frequency: 60d
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11472,7899 11573,7924 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11823,7980 11979,8014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
@@ -1070,8 +1061,6 @@ Seestr.: Sanierung der Radwege - wie wird die Qualität danach sein (asphaltiert?
 #: next_check: 2013-09-27
 Heidestr.: während der ersten Umbauphase wird es einen "Angebotsstreifen" Richtung Norden geben	?; 8019,13650 7979,13733 7943,13794 7589,14359 7597,14417
 # 
-Aronsstr.: existiert hier eine Verbindung zur Sonnenallee?	? 14519,7301 14571,7427 14579,7576 14593,7584
-# 
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1276,8659 1410,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2163,9244 2316,9400
 # 
@@ -1082,6 +1071,7 @@ Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,88
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Mohrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/13) Richtung Gendarmenmarkt zwischen Wilhelmstr. und Glinkastr., 24.09.2013 16:03 Uhr bis 29.09.2013 17:03 Uhr	IM_020378	 --- Mohrenstr.: Bauarbeiten?	?; 9000,11727 9075,11756 9171,11777 9220,11781
 #: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388	
 Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
+# REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Simon-Dach-Str. ab Warschauer Str., 27.09.2013 08:04 Uhr bis 18.10.2013 16:00 Uhr	IM_020398 --- Kopernikusstr.: Bauarbeiten?	?::inwork; 13651,11731 13895,11663
 # 
 Stadtpark Steglitz: evtl. befindet sich das Drängelgitter hier?	? 5709,4674 5734,4694
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
@@ -1249,7 +1239,7 @@ Am Brendegraben: Asphalt, Q0, unbeleuchtet	? 13231,22880 13203,22892 13149,23024
 Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsblatt 3/2013), ist es für Radfahrer irgendwie relevant?	? -12727,-1416 -12703,-1410
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2013-09-11
+#: last_checked: 2013-09-27
 #: check_frequency: 90d
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
@@ -1259,7 +1249,7 @@ Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12168,7368
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
-#: last_checked: 2013-09-15
+#: last_checked: 2013-09-27
 #: check_frequency: 120d
 #: priority: #C
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
@@ -1294,7 +1284,7 @@ Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,985
 # REMOVED (das sah nicht öffentlich aus...) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121129.1435.378795.html vvv --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21211,3474 21270,3407 20867,3018 --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21046,3188 20927,3292 --- #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=3934&options=4
-#: last_checked: 2013-07-03
+#: last_checked: 2013-09-27
 #: check_frequency: 90d
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8645,6781 8655,6796
 # 
@@ -1340,7 +1330,7 @@ Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage
 # ("historisches Reihensteinpflaster" - noch schlechtere Qualität?)
 #: last_checked: 2013-09-04
 #: check_frequency: 60d
-Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschränkungen.	? 13288,7653 13245,7742 13226,7775 13150,7845 13103,7889
+Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschränkungen.	? 13245,7742 13226,7775 13150,7845 13103,7889
 #: last_checked: 2013-09-04
 #: check_frequency: 120d
 Richardstr.: wird hier auch gebaut werden?	? 13103,7889 13085,7904 12870,8087
