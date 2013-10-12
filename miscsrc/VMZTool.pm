@@ -333,11 +333,13 @@ EOF
     my $handle_rec = sub {
 	my($rec, $is_removed) = @_;
 	my $id = $rec->{id};
-	my @attribs;
+
+	# Check if record should be ignored
+	my $do_ignore = 0;
 	if (grep { m{^A(\s|\d)} } @{ $rec->{strassen} }) {
-	    push @attribs, 'IGNORE';
+	    $do_ignore = 1;
 	} elsif (grep { m{Tunnel Tiergarten Spreebogen} } @{ $rec->{strassen} }) { # Berlin specialities
-	    push @attribs, 'IGNORE';
+	    $do_ignore = 1;
 	} elsif ($rec->{place} eq 'Berlin') {
 	    # special ignore detection for Berlin
 	    my @lines = split /\n/, $rec->{text};
@@ -382,9 +384,18 @@ EOF
 			       |Baustelle
 			       )}{}xgi;
 		if ($lines[0] eq '') {
-		    push @attribs, 'IGNORE';
+		    $do_ignore = 1;
 		}
 	    }
+	}
+	if ($do_ignore && $self->{existsid_current}->{$id}) {
+	    $do_ignore = 0; # because it's "INUSE"
+	}
+
+	# Gather attributes
+	my @attribs;
+	if ($do_ignore) {
+	    push @attribs, 'IGNORE';
 	}
 	if ($is_removed) {
 	    push @attribs, 'REMOVED';
