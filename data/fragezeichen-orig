@@ -47,8 +47,8 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn 2012)
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: osm_watch: way id="4410417" version="10"
-#: osm_watch: way id="4410418" version="10"
+#: osm_watch: way id="4410417" version="11"
+#: osm_watch: way id="4410418" version="11"
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130517.0940.384950.html (bis Herbst 2013)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130802.1020.387484.html
 #: last_checked: 2013-09-19 (Richtung Norden fehlt noch)
@@ -78,7 +78,7 @@ Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
 #: last_checked: 2013-05-12
 #: check_frequency: 90d
-#: osm_watch: way id="4323788" version="12"
+#: osm_watch: way id="4323788" version="13"
 #: osm_watch: way id="23109081" version="6"
 #: osm_watch: way id="41108858" version="5"
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
@@ -202,7 +202,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: last_checked: 2013-09-04
-#: check_frequency: 90d
+#: next_check: 2013-10-18
 Karl-Marx-Str.: wann werden hier die Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011)
@@ -357,6 +357,10 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20131004.1210.390027.html
+#: next_check: 2014-01-01
+Spreeuferweg: wird der neu gebaute Abschnitt sich hier befinden?	?::inwork 5128,13012 5243,12903
+# 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20130919.1410.389491.html
 #: next_check: 2014-08-31
 Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663 16273,-824
@@ -395,7 +399,7 @@ Gudvangerstr.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projecte
 #: XXX im südlichen Teil ist die asphaltierte Trasse schon erkennbar, der nördliche Teil wird wahrscheinlich noch gebaut
 #: source_id: 111100069
 #: last_checked: 2013-08-16
-#: next_check: 2013-10-04
+#: next_check: 2013-10-31
 Lindenberg - Schwanebeck: Bau eines Radwegs auf der nordwestlichen Seite	?::inwork 18356,22225 18500,22348 18671,22604 19061,23130 19144,23267 19393,23690 19565,24028
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3594
@@ -819,7 +823,7 @@ An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18
 Markus-Herz-Weg: Qualität?	?::projected 20701,18634 20906,18719 21123,18813
 David-Friedländer-Weg: Qualität?	?::projected 20727,18726 20901,18793 21038,18851 21024,18915 20995,18988
 Dohmweg: Qualität?	?::projected 20760,18812 20894,18861 21024,18915
-#: osm_watch: way id="163492498" version="3"
+#: osm_watch: way id="163492498" version="4"
 Georg-Förster-Allee: Qualität?	?::projected 20915,18601 20906,18719 20901,18793 20894,18861 20889,18943 20883,19045
 Löffleranger: Qualität?	?::projected 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
 Weidenröschenweg: Qualität?	?::projected 21123,18813 21310,18889
@@ -849,8 +853,8 @@ Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,131
 #: note: Planstraße im Block 902
 #: XXX in Berlin.coords.data mit "(geplant)" gekennzeichnet
 #: osm_watch: way id="182859952" version="7"
-#: last_checked: 2013-06-12 (teilweise schon fertiggestellt, Asphalt, Anbindung an Beusselbrücke fehlt)
-#: next_check: 2013-11-30
+#: last_checked: 2013-06-12 (teilweise schon fertiggestellt, Asphalt, anscheinend schon befahrbar, aber Anbindung an Beusselbrücke fehlt)
+#: next_check: 2013-10-12
 Erna-Samuel-Straße: Straße wird gebaut, Qualität, Radwege/streifen, genaue Lage?	?::inwork 5340,14050 5522,14195 5704,14252 5954,14303 6106,14280
 # 
 #: last_checked: 2013-06-12
@@ -869,7 +873,7 @@ Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
 #: last_checked: 2013-09-06
-#: next_check: 2013-10-07
+#: next_check: 2013-10-18
 Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772
 # 
 #: last_checked: 2013-06-15 vvv
@@ -928,7 +932,7 @@ Wilhelm-Hoff-Str.: Qualität	?::inwork 18833,3191 18892,3256 18953,3318 19047,341
 #: next_check: 2013-11-15 (synchronize with Wilhelm-Hoff-Str.)
 Verlängerung der Katharina-Boll-Dornberger-Str.: Qualität? Straßenname?	?::inwork 19167,3287 19047,3412
 # 
-#: osm_watch: way id="142575677" version="2"
+#: osm_watch: way id="142575677" version="3"
 #: last_checked: 2013-08-19
 #: next_check: 2013-12-15
 Verlängerung der Hans-Schmidt-Str.: Qualität?	?::inwork 19581,3495 19667,3581
@@ -1058,22 +1062,28 @@ Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geä
 #: next_check: 2013-12-31
 Seestr.: Sanierung der Radwege - wie wird die Qualität danach sein (asphaltiert?)	? 6239,15553 6422,15708 6555,15827 6661,15921 6781,16026
 # 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html
-#: last_checked: 2013-09-25 (Radspur noch nicht gemalt)
-#: next_check: 2013-09-27
-Heidestr.: während der ersten Umbauphase wird es einen "Angebotsstreifen" Richtung Norden geben	?; 8019,13650 7979,13733 7943,13794 7589,14359 7597,14417
-# 
+#: prio: #C vvv
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1276,8659 1410,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2163,9244 2316,9400
+#: prio: ^^^
 # 
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Charlottenstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Ende 09/13) in beiden Richtungen zwischen Unter den Linden und Rosmarinstr., 13.09.2013 07:00 Uhr bis 23.09.2013 16:00 Uhr	IM_020322	 --- Charlottenstr.: Vollsperrung?	? 9475,12365 9489,12263
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Reichstagufer (Mitte): Straße vollständig gesperrt (bis 25.09.2013) zwischen Wilhelmstr. und Bunsenstr., 15.09.2013 11:00 Uhr bis 25.09.2013 23:00 Uhr	IM_020332	 --- Reichstagufer: Sperrung?	? 8766,12541 8892,12576
 # REMOVED (keine Bauarbeiten zu sehen) --- #: XXX vmz-Eintrag relevant? NEW	Nestorstr. (Charlottenburg): Straße vollständig gesperrt, Baustelle (Ende 09/13) in beiden Richtungen zwischen Kurfürstendamm und Johann-Georg-Str., 02.09.2013 06:45 Uhr bis 30.09.2013 10:00 Uhr	IM_020246 --- #: next_check: 2013-09-02 --- Nestorstr.: Bauarbeiten?	? 3374,10201 3359,9968 3347,9793
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13) Richtung Berliner Allee zwischen Parkstr. und Berliner Allee, 02.09.2013 08:00 Uhr bis 15.09.2013 16:00 Uhr	IM_020230	 --- #: next_check: 2013-09-02 --- Rennbahnstr.: Bauarbeiten?	? 14235,17103 14341,17030 14528,16910 14558,16907
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Mohrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/13) Richtung Gendarmenmarkt zwischen Wilhelmstr. und Glinkastr., 24.09.2013 16:03 Uhr bis 29.09.2013 17:03 Uhr	IM_020378	 --- Mohrenstr.: Bauarbeiten?	?; 9000,11727 9075,11756 9171,11777 9220,11781
+# REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Simon-Dach-Str. ab Warschauer Str., 27.09.2013 08:04 Uhr bis 18.10.2013 16:00 Uhr	IM_020398 --- Kopernikusstr.: Bauarbeiten?	?::inwork; 13651,11731 13895,11663
+# REMOVED (siehe Sperrung der Friedrichsbrücke) --- #: XXX vmz-Eintrag relevant? NEW	Burgstr. (Mitte): Straße vollständig gesperrt (bis 19.10.2013, 24:00 Uhr) in beiden Richtungen zwischen Neue Promenade und Spandauer Str., 10.10.2013 17:29 Uhr bis 19.10.2013 23:59 Uhr	IM_020483	--- #: prio: #A --- Burgstr. und Anna-Louisa-Karsch-Str.: volständig gesperrt?	?::inwork 10132,12941 10166,12777 10264,12826
 #: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388	
 Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
-# REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Simon-Dach-Str. ab Warschauer Str., 27.09.2013 08:04 Uhr bis 18.10.2013 16:00 Uhr	IM_020398 --- Kopernikusstr.: Bauarbeiten?	?::inwork; 13651,11731 13895,11663
+#: XXX vmz-Eintrag relevant? CHANGED	Waßmannsdorfer Chaussee (Neukölln): Baustelle, Straße vollständig gesperrt (bis Mitte 12/13) in beiden Richtungen in Höhe Rhodeländerweg, 28.05.2013 13:06 Uhr bis 20.12.2013 15:00 Uhr	IM_019886	
+#: XXX ask rj?
+Waßmannsdorfer Chaussee: Bauarbeiten?	?::inwork 16400,-409 16373,-496 16273,-824
+# 
+#: XXX vmz-Eintrag relevant? NEW	Gürtelstr. (Friedrichhain): Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Frankfurter Allee zwischen Oderstr. und Frankfurter Allee, 01.10.2013 09:22 Uhr bis 14.10.2013 16:00 Uhr	IM_020415	
+Gürtelstr.: Fahrtrichtung gesperrt?	?::inwork; 15106,11598 15202,11789 15248,11880 15294,11964 15361,12071
+#: XXX vmz-Eintrag dazu: UNCHANGED	Fasanenstr./Müller-Breslau-Str. (Charlottenburg): Bauarbeiten, Fahrtrichtung gesperrt (bis 2015) Richtung Str. des 17. Juni zwischen Hardenbergstr. und Str. des 17. Juni, 18.02.2013 13:00 Uhr bis 01.07.2015 17:00 Uhr¦IM_019582¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50911&y=13.32901&zoom=13&meldungId=IM_019582	
+Fasanenstr.: Radfahrer können zwar offiziell passieren, aber gibt es vielleicht trotzdem Behinderungen durch die Bauarbeiten?	?::inwork; 5258,11285 5352,11502 5356,11512 5456,11742 5381,11847
 # 
 Stadtpark Steglitz: evtl. befindet sich das Drängelgitter hier?	? 5709,4674 5734,4694
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
@@ -1148,12 +1158,12 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 # 
 (Alter Tornow - Fähre): Qualität (vielleicht Verbundsteinpflaster?)? Tatsächlich NN?	? -13980,-2690 -14045,-2595
 # 
-#: osm_watch: way id="129104626" version="1"
+#: osm_watch: way id="129104626" version="2"
 #: last_checked: 2013-06-07
 #: next_check: 2014-04-15
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: wann wird die Fortsetzung gebaut? Qualität?	?::projected 8251,14337 8442,14456
 # 
-#: osm_watch: way id="186786509" version="2"
+#: osm_watch: way id="186786509" version="3"
 #: last_checked: 2013-08-20
 #: next_check: 2014-04-15
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337
@@ -1617,7 +1627,8 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -13094,-1158 
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013
-#: XXX Freesienweg (Amtsblatt) oder Fresienweg (BA)? Wikipedia meint "Freesien"
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern)
+#: XXX Freesienweg (beide Amtsblätter) oder Fresienweg (BA)? Wikipedia meint "Freesien"
 #: XXX fehlt bei Berlin.coords.data
 #: last_checked: 2013-08-21 (Bauarbeiten in Gange, keine Straße zu sehen)
 #: next_check: 2014-04-15
@@ -1698,6 +1709,11 @@ Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
 #: last_checked: 2013-09-15
 #: check_frequency: 30d
 Cheruskerpark: entsteht hier eine neue Wegverbindung?	?::projected 7391,8231 7369,8278
+# 
+#: XXX_osm: fehlt bei osm
+#: last_checked: 2013-05-10 (keine Anzeichen für Bautätigkeiten zu sehen)
+#: next_check: 2013-10-10
+Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -15999,1387 -16046,1203 -15925,1365
 # 
 #: ignore ^^^
 #: section ^^^
@@ -2839,11 +2855,6 @@ Kirschallee - Rückertstr.: Qualität der Wege? Unbeleuchtet?	? -13944,1764 -14171
 #: next_check: 2013-10-10
 Zum Weizenring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -16566,1579 -16498,1444
 # 
-#: XXX_osm: fehlt bei osm
-#: last_checked: 2013-05-10 (keine Anzeichen für Bautätigkeiten zu sehen)
-#: next_check: 2013-10-10
-Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -15999,1387 -16046,1203 -15925,1365
-# 
 Gröbenstr. (Potsdam-Bornim): Qualität?	? -17646,1636 -18095,1928
 Am Großen Herzberg (Potsdam-Eiche): Qualität?	? -17419,551 -17083,624 -16939,671
 Herzbergstr., Verlängerung nach Eiche: Qualität?	? -17083,624 -17098,554 -17220,212
@@ -3215,7 +3226,7 @@ Alter Fischerweg (Gosen): Qualität? Ausschilderung?	? 32778,-1044 33013,-790 331
 #: XXX Fahrbahn wird saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht?
 #: source_id: INKO_119740
 #: last_checked: 2013-09-15
-#: next_check: 2013-10-04
+#: next_check: 2013-10-18
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	?::projected 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
 #: XXX ^^^
 #: by: ^^^

@@ -1309,13 +1309,14 @@ Wuhlewanderweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::ignd
 wegen Absperrgitter nicht überquerbar	3nocross::ignrte 16961,16042 16917,16001 16819,15912
 Große-Leege-Str. -> Konrad-Wolf-Str.: wegen Absperrgitter nicht überquerbar	3::igndisp 16922,15977 16917,16001 16819,15912
 Konrad-Wolf-Str. -> Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3::igndisp 16961,16042 16917,16001 16922,15977
-Mittelstreifen nicht passierbar	3nocross::ignrte 2975,15813 2960,15847 2913,15944 2819,16141
-Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2913,15944 2960,15847 2996,15930
-Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2880,15884 2960,15847 2913,15944
+Mittelstreifen nicht passierbar	3nocross::ignrte 2975,15813 2960,15847 2944,15880
+Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2944,15880 2960,15847 2996,15930
+Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2880,15884 2960,15847 2944,15880
 Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2880,15884 2960,15847 2996,15930
+Mittelstreifen nicht passierbar	3nocross::ignrte 2944,15880 2913,15944 2819,16141
+Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2944,15880 2913,15944 2880,15908
+Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2944,15880
 Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2880,15908
-Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2960,15847
-Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2960,15847 2913,15944 2880,15908
 Straßenbahntrasse	3nocross::ignrte 10897,17274 10892,17330 10886,17396
 Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 11107,17340 10892,17330 10897,17274
 Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3::igndisp 10886,17396 10892,17330 11107,17340

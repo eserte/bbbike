@@ -17438,7 +17438,7 @@ EOF
      },
      { from  => $isodate2epoch->("2013-09-27 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-09-29 23:59:59"),
-       periodic => 1, # manchmal/immer (?) zwei Termine im Jahr, zweiter Termin
+       periodic => 1, # manchmal/immer (?) zwei Termine im Jahr, zweiter Termin # 2013 war es am 12./13. Oktober, nicht im September!
        text  => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Leopoldplatz gesperrt, 28. und 29. September 2013',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -20029,7 +20029,7 @@ userdel	q4::inwork 8634,13588 8626,13641 8619,13689
 EOF
      },
      { from  => 1348076973, # 1314604800, # 2011-08-29 10:00
-       until => 1380636000, # 2013-10-01 16:00, # 1347721200, # 2012-09-15 17:00
+       until => 1382104800, # 2013-10-18 16:00
        text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
        type  => 'handicap',
        source_id => 'IM_019212',
@@ -21142,8 +21142,8 @@ userdel	1::inwork -12659,-1700 -12730,-1681 -12758,-1654
 EOF
      },
      { from  => 1366740818, # 2013-04-23 20:13
-       until => 1380578399, # 2013-09-30 23:59
-       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Straße gesperrt (bis Ende September 2013) ',
+       until => 1427727600, # 2015-03-30 17:00
+       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Straße gesperrt (bis Ende März 2014) ',
        type  => 'handicap',
        source_id => 'IM_019747',
        data  => <<EOF,
@@ -21375,11 +21375,12 @@ userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4
 EOF
      },
      { from  => 1349931600, # 2012-10-11 07:00
-       until => $isodate2epoch->("2013-10-06 16:00:00"), # 1375279200, # 2013-07-31 16:00
-       text  => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Anfang Oktober 2013',
+       until => 1383318000, # 2013-11-01 16:00
+       text  => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Anfang November 2013',
        type  => 'handicap',
        source_id => 'INKO_115299',
        data  => <<EOF,
+#: last_checked: 2013-10-12
 userdel	q2::inwork; 6572,14639 6299,14660
 EOF
      },
@@ -21644,8 +21645,8 @@ userdel	q4::inwork 11635,16616 11621,16749
 EOF
      },
      { from  => 1374381000, # 2013-07-21 06:30
-       until => 1381759200, # 2013-10-14 16:00
-       text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße Richtung Osten gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Mitte Oktober 2013',
+       until => 1384527600, # 2013-11-15 16:00
+       text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße Richtung Osten gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Mitte November 2013',
        type  => 'handicap',
        source_id => 'IM_020361',
        data  => <<EOF,
@@ -21680,8 +21681,8 @@ userdel	2::inwork 17736,5441 17886,5587
 EOF
      },
      { from  => 1376816220, # 2013-08-18 10:57
-       until => 1381485600, # 2013-10-11 12:00
-       text  => 'Neumannstr. (Pankow): Baustelle, zwischen Thulestr. und Eschengraben Richtung Norden gesperrt, bis 11.10.2013 ',
+       until => 1382104800, # 2013-10-18 16:00
+       text  => 'Neumannstr. (Pankow): Baustelle, zwischen Thulestr. und Eschengraben Richtung Norden gesperrt, bis 18.10.2013 ',
        type  => 'handicap',
        source_id => 'IM_020168',
        data  => <<EOF,
@@ -21689,8 +21690,8 @@ userdel	q4::inwork; 11635,16616 11621,16749
 EOF
      },
      { from  => 1376816220, # 2013-08-18 10:57
-       until => 1381500000, # 2013-10-11 16:00
-       text  => 'Thulestr. (Pankow): Baustelle zwischen Neumannstraße und Talstr., Fahrbahn gesperrt, bis 11.10.2013 ',
+       until => 1382104800, # 2013-10-18 16:00
+       text  => 'Thulestr. (Pankow): Baustelle zwischen Neumannstraße und Talstr., Fahrbahn gesperrt, bis 18.10.2013 ',
        type  => 'handicap',
        source_id => 'IM_020183',
        data  => <<EOF,
@@ -21932,14 +21933,42 @@ userdel	q4::inwork 9075,11756 9000,11727
 EOF
      },
      { from  => undef, # 
-       until => 1381701599, # 2013-10-13 23:59
-       text  => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), Ende der Bauarbeiten unbekannt',
+       until => 1383238800, # 2013-10-31 18:00
+       text  => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), bis Ende Oktober 2013',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wird die Sperrung vielleicht früher aufgehoben?
-#: last_checked: 2013-09-27
-#: next_check: 2013-10-04
+#: last_checked: 2013-10-12
+#: next_check: 2013-10-31
 userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
+EOF
+     },
+     { from  => 1382220000, # 2013-10-20 00:00
+       until => 1382824800, # 2013-10-27 00:00
+       text  => 'Grünbergallee: zwischen Hufenweg und B 96 A wird die Fahrbahn in Stand gesetzt, Vollsperrung vom 21.10.2013 bis zum 26.10.2013 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131007.1105.390062.html',
+       data  => <<EOF,
+userdel	q4::inwork 20790,-537 20675,-526 20362,-511
+userdel	q4::inwork 20354,-569 20252,-571 20205,-548
+EOF
+     },
+     { from  => 1381615200, # 2013-10-13 00:00
+       until => 1384642799, # 2013-11-16 23:59
+       text  => 'Remstaler Straße: Fahrbahnflächeninstandsetzung zwischen Zerndorfer Weg und Edelhofdamm, vom 14. Oktober 2013 bis zum 16. November 2013 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131010.1450.390218.html',
+       data  => <<EOF,
+userdel	q4::inwork 3171,25495 3141,25575 3141,25626 3154,25659
+EOF
+     },
+     { from  => 1381651200, # 2013-10-13 10:00
+       until => 1382133600, # 2013-10-19 00:00
+       text  => 'Friedrichsbrücke: ab dem 14.10.2013 um 10.00 Uhr bis zum 18.10.2013 um 24.00 Uhr ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt ',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5082.html',
+       data  => <<EOF,
+userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
     );

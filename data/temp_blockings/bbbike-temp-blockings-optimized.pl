@@ -324,16 +324,7 @@ userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-21
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1381096799,
-         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 5. und 6.10.2013',
-         'from' => 1380837600,
-         'id' => 731,
-         'data' => 'userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1727,15 +1718,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'until' => 1381096799,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon und Deutschlandfest gesperrt',
-         'from' => 1380427200,
-         'id' => 1895,
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1927,16 +1910,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1380491999,
-         'text' => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Leopoldplatz gesperrt, 28. und 29. September 2013',
-         'from' => 1380268800,
-         'id' => 2039,
-         'data' => 'userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
@@ -1976,7 +1950,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2070,16 +2044,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'source_id' => '126200259',
-         'until' => 1380578400,
-         'text' => 'Lichterfeld-Schacksdorf: L60: Baumaßnahme der LMBV Lauchhammer - Licherfelde und umgekehrt, 23.04.2012 bis 30.09.2013 ',
-         'from' => 1335556384,
-         'id' => 2108,
-         'data' => 'userdel	2::inwork 37809,-92300 37918,-93202 37419,-94853 37230,-95682
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2309,7 +2274,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        {
          'source_id' => 'IM_019212',
-         'until' => 1380636000,
+         'until' => 1382104800,
          'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
          'from' => 1348076973,
          'id' => 2308,
@@ -2457,29 +2422,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1380513600,
-         'text' => 'Sperrungen wegen Veranstaltungen (Marathon, Deutschlandfest): Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 30.09.2013 06:00 Uhr',
-         'from' => 1380232800,
-         'id' => 2388,
-         'data' => 'userdel	2::temp 8573,12325 8540,12420
-userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
-userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-userdel	2::temp 8119,12414 8055,12186
-userdel	2::temp 8538,12245 8522,12239 8466,12197
-userdel	2::temp 8538,12245 8522,12187
-userdel	2::temp 8546,12279 8354,12416
-userdel	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
-userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-userdel	3 7460,12054 7383,12095 7039,12314
-userdel	3 7039,12314 7383,12095 7460,12054
-userdel	3 7827,12105 7816,12150 7875,12363
-userdel	3 7875,12363 7816,12150 7827,12105
-userdel	2::temp 8119,12414 8122,12608 8207,12608 8306,12609 8348,12609 8399,12610 8485,12612
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -2625,8 +2568,8 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        {
          'source_id' => 'IM_019747',
-         'until' => 1380578399,
-         'text' => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Straße gesperrt (bis Ende September 2013) ',
+         'until' => 1427727600,
+         'text' => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Straße gesperrt (bis Ende März 2014) ',
          'from' => 1366740818,
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
@@ -2678,11 +2621,12 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
        undef,
        {
          'source_id' => 'INKO_115299',
-         'until' => 1381068000,
-         'text' => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Anfang Oktober 2013',
+         'until' => 1383318000,
+         'text' => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Anfang November 2013',
          'from' => 1349931600,
          'id' => 2442,
-         'data' => 'userdel	q2::inwork; 6572,14639 6299,14660
+         'data' => '#: last_checked: 2013-10-12
+userdel	q2::inwork; 6572,14639 6299,14660
 ',
          'type' => 'handicap'
        },
@@ -2807,8 +2751,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'source_id' => 'IM_020361',
-         'until' => 1381759200,
-         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße Richtung Osten gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Mitte Oktober 2013',
+         'until' => 1384527600,
+         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße Richtung Osten gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Mitte November 2013',
          'from' => 1374381000,
          'id' => 2466,
          'data' => 'userdel	q3::inwork; 15513,13539 15653,13542 15724,13544 15896,13547
@@ -2829,8 +2773,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        },
        {
          'source_id' => 'IM_020168',
-         'until' => 1381485600,
-         'text' => 'Neumannstr. (Pankow): Baustelle, zwischen Thulestr. und Eschengraben Richtung Norden gesperrt, bis 11.10.2013 ',
+         'until' => 1382104800,
+         'text' => 'Neumannstr. (Pankow): Baustelle, zwischen Thulestr. und Eschengraben Richtung Norden gesperrt, bis 18.10.2013 ',
          'from' => 1376816220,
          'id' => 2470,
          'data' => 'userdel	q4::inwork; 11635,16616 11621,16749
@@ -2839,8 +2783,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        },
        {
          'source_id' => 'IM_020183',
-         'until' => 1381500000,
-         'text' => 'Thulestr. (Pankow): Baustelle zwischen Neumannstraße und Talstr., Fahrbahn gesperrt, bis 11.10.2013 ',
+         'until' => 1382104800,
+         'text' => 'Thulestr. (Pankow): Baustelle zwischen Neumannstraße und Talstr., Fahrbahn gesperrt, bis 18.10.2013 ',
          'from' => 1376816220,
          'id' => 2471,
          'data' => 'userdel	q4::inwork 11825,16666 11767,16631 11725,16626 11635,16616
@@ -2955,27 +2899,49 @@ userdel	q4::inwork 7001,8161 7250,8223
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_020378',
-         'until' => 1380466980,
-         'text' => 'Mohrenstr.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Mauerstr. gesperrt, bis Ende September 2013',
-         'from' => 1379944980,
-         'id' => 2494,
-         'data' => 'userdel	q4::inwork 9075,11756 9000,11727
+         'until' => 1383238800,
+         'text' => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), bis Ende Oktober 2013',
+         'from' => undef,
+         'id' => 2495,
+         'data' => '#: XXX wird die Sperrung vielleicht früher aufgehoben?
+#: last_checked: 2013-10-12
+#: next_check: 2013-10-31
+userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
 ',
          'type' => 'handicap'
        },
        {
-         'until' => 1381701599,
-         'text' => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), Ende der Bauarbeiten unbekannt',
-         'from' => undef,
-         'id' => 2495,
-         'data' => '#: XXX wird die Sperrung vielleicht früher aufgehoben?
-#: last_checked: 2013-09-27
-#: next_check: 2013-10-04
-userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131007.1105.390062.html',
+         'until' => 1382824800,
+         'text' => 'Grünbergallee: zwischen Hufenweg und B 96 A wird die Fahrbahn in Stand gesetzt, Vollsperrung vom 21.10.2013 bis zum 26.10.2013 ',
+         'from' => 1382220000,
+         'id' => 2496,
+         'data' => 'userdel	q4::inwork 20790,-537 20675,-526 20362,-511
+userdel	q4::inwork 20354,-569 20252,-571 20205,-548
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131010.1450.390218.html',
+         'until' => 1384642799,
+         'text' => 'Remstaler Straße: Fahrbahnflächeninstandsetzung zwischen Zerndorfer Weg und Edelhofdamm, vom 14. Oktober 2013 bis zum 16. November 2013 ',
+         'from' => 1381615200,
+         'id' => 2497,
+         'data' => 'userdel	q4::inwork 3171,25495 3141,25575 3141,25626 3154,25659
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5082.html',
+         'until' => 1382133600,
+         'text' => 'Friedrichsbrücke: ab dem 14.10.2013 um 10.00 Uhr bis zum 18.10.2013 um 24.00 Uhr ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt ',
+         'from' => 1381651200,
+         'id' => 2498,
+         'data' => 'userdel	2::inwork 10086,12725 10166,12777
+',
+         'type' => 'gesperrt'
        }
      
 );

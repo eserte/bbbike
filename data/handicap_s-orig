@@ -44,7 +44,8 @@ Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,1165
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html
 #: last_checked: 2013-09-23
-#: next_check: 2013-11-30
+#: next_check: 2013-10-12 (mittlerweile wieder aufgehoben? vorher bis 2013-11-30)
+#: prio: #A
 Chausseestr.: direkte Zufahrt südlich der Invalidenstraße nicht möglich, umständliche Wegführung	q4::inwork 9042,13707 8935,13844
 # 
 #: source_id: INKO_113388
@@ -106,7 +107,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstei
 #: check_frequency: 60d
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
-#: last_checked: 2013-09-23 vvv
+#: last_checked: 2013-10-12 vvv
 #: next_check: 2013-12-31 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -120,7 +121,7 @@ Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13
 #: next_check ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-09-25
+#: last_checked: 2013-10-12
 #: next_check: 2013-11-28
 #: XXX anscheinend Baulager für die S21-Bauarbeiten
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
@@ -192,6 +193,7 @@ Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 
 #: source_id: INKO_114376
 #: source_id: IM_019321
 #: last_checked: 2013-09-26
+#: next_check: 2013-12-01 (laut VMZ bis 15.12.2013)
 #: priority: #A
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 

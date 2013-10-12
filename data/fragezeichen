@@ -818,6 +818,7 @@ Schönerlinder Dorfstr.: Qualität Richtung Bahnhof?	? 12151,27606 11856,27418
 Schönerlinder Bahnhofstr.: Qualität? Ist der Bahnübergang beschrankt?	? 11856,27418 11312,27124
 Industriestr. (Schönerlinde): Qualität?	? 12126,26016 11655,26469 11621,26746 11530,26931 11360,27051 11312,27124
 Kirschallee - Rückertstr.: Qualität der Wege? Unbeleuchtet?	? -13944,1764 -14171,1878 -14205,1864 -14588,1918 -15132,1992 -15560,2052 -15671,1990 -15875,2079 -15942,2110 -16004,2136 -16034,2150 -16396,2310
+Zum Weizenring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -16566,1579 -16498,1444
 Gröbenstr. (Potsdam-Bornim): Qualität?	? -17646,1636 -18095,1928
 Am Großen Herzberg (Potsdam-Eiche): Qualität?	? -17419,551 -17083,624 -16939,671
 Herzbergstr., Verlängerung nach Eiche: Qualität?	? -17083,624 -17098,554 -17220,212
@@ -1000,6 +1001,18 @@ Potsdam Hbf - Uferweg: Qualität?	? -12247,-1858 -12210,-1857 -12200,-1813 -12165
 Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9766,5437 -9677,5430 -9478,5549 -9372,5532
 Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
+Duftgeranienweg: (früher Hauptweg) Beton, Q0, verkehrsberuhigt, beleuchtet, Bodenschwellen, die leicht umfahren werden können	? 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25187,6549 25212,6560
+Klatschmohnweg: (früher Birkenweg) unbefestigter Weg, Q2, NN	? 24596,6292 24580,6319
+Klatschmohnweg: (früher Birkenweg) Gras, Q3+, NN	? 24580,6319 24746,6391
+Klatschmohnweg: (früher Birkenweg) unbefestigter Weg, Q2, NN	? 24746,6391 24756,6364
+Storchschnabelweg: (früher Kastanienweg) Qualität?	? 24300,6142 24341,6197 24402,6249 24480,6290
+Borretschweg: (früher Asternweg) Qualität?	? 24344,6117 24300,6142 24275,6156
+zum Wiesenweg: unbefestigter Straße, etwas sandig	? 24508,6043 24470,6071 24460,6109
+Spitzwegerichweg: (früher Wiesenweg) - unbefestigter Weg, Q2, unbeleuchtet	? 24344,6117 24388,6098 24417,6082
+Spitzwegerichweg: (früher Wiesenweg) - Gras, Q3+, für Autos nicht passierbar, unbeleuchtet	? 24417,6082 24442,6117 24460,6109
+Spitzwegerichweg: (früher Wiesenweg) unbefestigt, teilweise etwas sandig, Q2, unbeleuchtet	? 24460,6109 24528,6177 24623,6251 24773,6329 24910,6388 25113,6452 25187,6549
+Petersilienweg: (früher Feldweg) Qualität? Wo befindet sich der Weg?	? 24388,6098 24444,6165 24515,6201 24562,6221
+Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 Bruno-Taut-Str. - Am Gartenstadtweg: nachts beleuchtet?	? 21790,682 21783,660 21755,625 21714,601 21679,596
 Saarstr. (Eiche): Qualität?	? 23111,18784 23252,18529 23371,18325
 Rheinstr. (Eiche): Qualität?	? 23015,18687 23102,18552 23160,18461 23263,18275
@@ -1186,8 +1199,6 @@ Parforceweg: Waldweg? (Ist der Parforceweg ein "gewöhnlicher" Waldweg?)	? -643,7
 Kümmelweg: unbefestigte Straße (Wie ist die Fahrbahnbeschaffenheit hier? Tatsächlich unbefestigt?)	? 9169,21548 9066,21516
 Schauflerpfad: mäßiges Kopfsteinpflaster (Qualität des Schauflerpfads?)	? -716,21284 -734,21360 -796,21375 -865,21361 -1128,21421 -1218,21436
 Rosentreterpromenade: Asphalt mit Schäden (Ist die Qualität in der Rosentreterpromenade nach den Bauarbeiten besser geworden?)	? 4423,20848 4245,21105 4226,21133
-Elstaler Str.: Kopfsteinpflaster (wird die Fahrbahnqualität nach den Bauarbeiten besser sein (z.B. die Fahrbahn asphaltiert sein)?)	? -4559,14341 -4548,14434
-Rohrweihstr.: guter Asphalt (Ist die Rohrweihstr. asphaltiert oder hat sie Verbundsteinpflaster?)	? -2103,19833 -2073,19990 -2055,20129 -2020,20309 -1991,20312
 Jühnsdorf: Asphalt (existiert durch Jühnsdorf ein Radweg?)	? 9792,-12090 9345,-11425 9472,-11297 9578,-10891
 Dahlwitz - Neuenhagen: teilweise nur mäßiger Asphalt (nach den Bauarbeiten (2006-10-31) vielleicht besserer Asphalt?)	? 29093,13456 29743,14143
 Sputendorf: teilweise Kopfsteinpflaster, OK (Stimmt das oder ist das Stück in Sputendorf auch asphaltiert?)	? -1316,-7721 -1734,-7716 -2500,-7557

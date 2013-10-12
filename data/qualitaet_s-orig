@@ -778,7 +778,7 @@ Maienwerderweg: teils Waldweg (OK), teils m‰ﬂiger Asphalt	Q1 2226,18228 1549,177
 Sembritzkistr.: Asphalt	Q0 6854,4931 6856,4963 6923,5057 6953,5102 7018,5201 7095,5317 7157,5418 7199,5479
 #: XXX wird hier irgendwann auch asphaltiert werden?
 #: XXX Baumaﬂnahme GL7.9 (Realisierung nach 2011)
-#: osm_watch: way id="142367144" version="5"
+#: osm_watch: way id="142367144" version="6"
 #: last_checked: 2013-09-15
 #: check_frequency: 90d
 Sembritzkistr.: m‰ﬂiges Kopfsteinpflaster	Q2 7199,5479 7245,5568 7230,5689
@@ -7730,9 +7730,12 @@ Weislingenstr.: Asphalt	Q0 3169,26048 3217,26049 3271,26067
 Remstaler Str.: Kleinsteinpflaster	Q1 3169,26048 3186,25969 3221,25876 3216,25778 3154,25659
 #: XXX wie wird die Qualit‰t nach der Sanierung sein? vvv
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130531.1320.385519.html
-#: next_check: 2013-09-01 vvv
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20131010.1450.390218.html
+#: next_check: 2013-11-16 vvv
+#: prio: #A vvv
 Remstaler Str.: schlechtes Kopfsteinpflaster	Q3 3154,25659 3141,25626 3141,25575
 Remstaler Str.: Asphalt mit starken Sch‰den	Q2- 3141,25575 3171,25495
+#: prio ^^^
 #: next_check ^^^
 #: XXX ^^^
 Bieselheider Weg: Asphalt	Q0 3324,26100 3271,26067

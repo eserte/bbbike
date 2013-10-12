@@ -562,8 +562,18 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14193,
 	RW2;RW2 11250,13655 11389,13887 11435,14023 11468,14121 11476,14142 11506,14230 11582,14448 11642,14625 11662,14695 11681,14759 11709,14856 11776,15060 11801,15132 11828,15210 11852,15281 11860,15309 11877,15366 11891,15413 11905,15462 11913,15490 11941,15586
 #: by: rudolf kionke:
 	RW0;RW0 8092,13467 8048,13578 8019,13650
-	RW2;RW 8019,13650 7979,13733
-aufgemalter Radweg teilweise kaum erkennbar	RW1;RW1 7979,13733 7943,13794 7589,14359 7597,14417
+	RW2;RW2 8019,13650 7979,13733
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv
+#: last_checked: 2013-10-12 vvv
+#: next_check: 2014-03-01 vvv
+#: XXX während der Bauarbeiten ein Radstreifen, wie wird die Situation danach aussehen?
+	RW3?; 7979,13733 7943,13794 7589,14359
+#: XXX Benutzungspflicht während der Bauarbeiten, wie wird die Situation danach aussehen?
+aufgemalter Radweg teilweise kaum erkennbar, trotzdem benutzungspflichtig	RW2; 7589,14359 7943,13794 7979,13733
+#: next_check ^^^
+#: last_checked ^^^
+#: by: ^^^
+aufgemalter Radweg teilweise kaum erkennbar	RW1;RW1 7589,14359 7597,14417
 	RW1;RW2 7741,14560 7597,14417
 	RW1;RW 8057,14876 7741,14560
 aufgemalter Radweg teilweise kaum erkennbar	RW1;RW1 7597,14417 7373,14566
@@ -1510,7 +1520,7 @@ benutzungspflichtige Radspur auf den letzten 10 Metern	RW0; 7567,13143 7759,1324
 	RW2;RW0 7567,13143 7440,13073 7416,13058
 # 
 #: XXX während der Bauarbeiten geänderte Radwegführung vvv
-#: last_checked: 2013-09-25 vvv
+#: last_checked: 2013-10-12 vvv
 #: next_check: 2013-12-31 vvv
 #: source_id: IM_017330 vvv
 #: source_id: INKO_113944 vvv

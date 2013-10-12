@@ -137,6 +137,10 @@ Lilienthalstr.	N 10615,8558 10627,8706 10640,8832 10675,8940 10748,9054 10709,91
 (Flughafen Tempelhof - Eingang Leinestr.)	NN 11547,7432 11558,7438
 (Flughafen Tempelhof - Eingang Oderstr.)	NN 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	NN 9302,7294 9351,7241 9461,7190
+#: XXX wahrscheinlich wird dieser Weg für den Bau des Wasserbeckens entfernt
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5081.html
+#: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles_neu/Downloads/2013-08_Flyer_Parklandschaft.pdf
+#: next_check: 2014-01-01
 (Alter Hafen)	NN 10204,7680 10134,7797 10076,8040 10037,8269
 #: note: ^^^
 Südstern	N 10564,9292 10547,9233 10705,9234
@@ -1442,7 +1446,7 @@ Kastanienallee (Prenzlauer Berg, Mitte)	N 10370,14158 10426,14262
 #: note: Kuriosum: aufgemalte Fahrradpiktogramme zwischen den Straßenbahngleisen
 #: XXX werden diese Piktogramme nach den Bauarbeiten entfernt?
 #: last_checked: 2013-09-06
-#: next_check: 2013-10-07
+#: next_check: 2013-10-18
 Kastanienallee (Prenzlauer Berg, Mitte)	H 10426,14262 10511,14418 10530,14452 10723,14772
 Kastanienallee (Prenzlauer Berg, Mitte)	H 10723,14772 10838,14962 10881,15047
 (Kastanienallee - Schönhauser Allee)	N 10838,14962 10884,14952
@@ -9426,7 +9430,7 @@ Straße am Wald	N 21475,7500 21341,7487 21025,7349
 #: XXX umbenennen, "ehemaligen", evtl. auch degradieren (NH oder N, prüfen)
 #: XXX auch andere Straßen/Flächen/... umbenennen
 #: next_check: 2014-03-02
-Zum Flughafen Tegel	H 3033,15694 2975,15813 2960,15847 2913,15944 2819,16141 2863,16280 2832,16343 2756,16344 2713,16286 2757,16194 2819,16141
+Zum Flughafen Tegel	H 3033,15694 2975,15813 2960,15847 2944,15880 2913,15944 2819,16141 2863,16280 2832,16343 2756,16344 2713,16286 2757,16194 2819,16141
 (Zur Luftfracht)	N 2226,16096 2290,16022 2566,15942 2590,15916 2600,15872 2638,15842 2701,15853 2787,15870 2828,15903
 (Knoten am Flughafen Tegel)	N 2960,15847 2996,15930 2998,15973 2982,15992 2953,15999 2848,15979 2818,15966 2810,15931 2828,15903 2880,15884 2960,15847
 (Knoten am Flughafen Tegel)	N 2996,15930 2977,15923 2949,15922 2913,15944

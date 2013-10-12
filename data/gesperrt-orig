@@ -25,6 +25,9 @@ am Hackeschen Markt (Süd)	1 10132,12941 10117,12966 10105,13004 9932,13109
 am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9918 7813,10112
 Dennewitzplatz	1 7813,10112 7906,10098
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html
+#: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen
+#: next_check: 2014-05-01
 Dennewitzplatz	1s:q3 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
 Winterfeldtplatz	1 7080,10098 7126,9825
@@ -1278,7 +1281,7 @@ Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
-#: next_check: 2013-09-30
+#: next_check: 2013-10-30
 #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Niemannstr.	1s:q4 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
@@ -1443,7 +1446,8 @@ Sterndamm: Straßenbahntrasse	3nocross 17601,5090 17542,4772 17520,4649
 Sterndamm: Straßenbahntrasse	3nocross 17645,5328 17601,5090 17542,4772
 Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
 Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
-Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2975,15813 2960,15847 2913,15944 2819,16141
+Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2975,15813 2960,15847 2944,15880
+Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2944,15880 2913,15944 2819,16141
 Berliner Str.: Straßenbahntrasse	3nocross 10897,17274 10892,17330 10886,17396
 Berliner Str.: Straßenbahntrasse	3nocross 10886,17396 10880,17469 10878,17490
 #: note: Luftbild:
@@ -2451,7 +2455,7 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 # 
 #: prio: #A vvv
-#: last_checked: 2013-08-30 vvv
+#: last_checked: 2013-10-12 vvv
 #: next_check: 2013-12-31 vvv
 Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8588,13673 8594,13637
 Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8619,13689 8626,13641
@@ -2506,7 +2510,7 @@ Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
-#: last_checked: 2013-08-20
+#: last_checked: 2013-10-12
 #: next_check: 2015-01-01
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
