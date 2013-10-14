@@ -100,7 +100,7 @@ Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11669,9987 11880,9874 12088,9775
 Maybachufer: Asphalt	Q0 12088,9775 12250,9691 12412,9610 12563,9536
 Maybachufer: Asphalt	Q0 12563,9536 12764,9433 12844,9351 12871,9356
 Am Landwehrkanal: Parkweg, Schotterstellen, bei Regen groﬂe Pf¸tzen	Q1- 12897,9365 12900,9465 13109,9743
-Am Landwehrkanal: Asphalt	Q0 13109,9743 13225,9897
+Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0- 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
 Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2- 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13760,9188
@@ -649,6 +649,7 @@ Lynarstr.: Kopfsteinpflaster	Q2 7152,14779 7263,14873 7436,14964 7629,15078 7754
 Kiautschoustr.: Kopfsteinpflaster	Q2 7192,14976 7007,14911 6853,14854 6837,14848
 Samoastr.: Kopfsteinpflaster	Q2 7001,14837 7007,14911 6945,15045 6886,15156
 Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10312,12982 10371,13006
+#: XXX liegt hier noch immer Kopfsteinpflaster oder wurde wegen des Busverkehrs asphaltiert? Auﬂerdem: Vorfahrtsregelung?
 Emser Str.: Kopfsteinpflaster	Q2 12645,7087 12766,7113 12806,7120
 Emser Str.: Asphalt	Q0 12806,7120 12872,7134 13051,7157
 Neiﬂestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11937,6929 11951,6862
@@ -1635,8 +1636,7 @@ Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Gr¸nstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
 #: XXX wird hier die Straﬂe verbessert werden?
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2013-09-14
-#: next_check: 2013-10-13
+#: last_checked: 2013-10-14
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 Parkaue: m‰ﬂiger Asphalt	Q1 15535,12420 15457,12449 15399,12444
 #: XXX wird hier die Straﬂe verbessert werden?
@@ -1776,8 +1776,8 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 F‰rberstr.: Beton	Q0- 21607,4850 21649,4946
 F‰rberstr. - Uferweg: wassergebundener Belag	Q1- 21662,4974 21665,5035 21696,5053
 F‰rberstr. - Uferweg: wassergebundener Belag	Q1 21649,4946 21662,4974 21740,5004
-#: note: von der S-Bahn aus gesehen:
 Glanzstr.: Asphalt	Q0 16323,6998 16430,6880 16588,6724
+Rodelbergweg: Asphalt	Q0 16430,6880 16498,6944 16568,7009 16615,7062
 Heinrich-Lassen-Park: glatte Pflasterung	Q0 6664,8787 6705,8730
 Heinrich-Lassen-Park: wassergebundener Belag	Q1- 6705,8730 6740,8682 6815,8691 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
@@ -4885,7 +4885,7 @@ Waldkauzstr.: Verbundsteinpflaster	Q1 -1202,19877 -1364,19982 -1521,20041 -1630,
 Bidenswinkel: Verbundsteinpflaster	Q1+ 16242,12878 16242,12814 16255,12769
 Bornitzstr. [Wohngebiet]: Verbundsteinpflaster	Q1+ 16312,12876 16313,12762
 Bornitzstr. [Wohngebiet] (Silberweidenweg?): Verbundsteinpflaster	Q1+ 16376,12874 16377,12791
-(Radweg nˆrdl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655 17110,13811 17095,13972 17154,14093 17219,14133 17266,14144 18024,13843
+(Radweg nˆrdl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655 17110,13811 17095,13972 17152,14084 17219,14133 17266,14144 18024,13843
 (Herzbergstr. - Siegfriedstr.): Asphalt	Q0 17167,13655 17073,13765 16978,13819 16875,13834
 Allendorfer Weg: Verbundsteinpflaster	Q1+ 17794,14640 17879,14659
 Allendorfer Weg: Beton	Q1+ 17879,14659 17991,14684
@@ -8581,18 +8581,18 @@ Rathausstr.: Asphalt mit einigen Sch‰den	Q1+ 10601,12521 10584,12507 10476,12432
 (Weg an der S¸dpanke - Am Pankepark): Pflasterung	Q1- 8307,14175 8323,14142
 (Weg an der S¸dpanke - Am Pankepark): unbefestigter Weg	Q2+ 8323,14142 8282,14116
 Sigridstr.: Asphalt mit einigen Sch‰den	Q1+ 14284,14469 14159,14495 14025,14519
-#: XXX Qualit‰t nach den Bauarbeiten? vvv
-#: last_checked: 2013-09-11 (teilweise existert eine erste Asphaltschicht) vvv
-#: check_frequency: 60d vvv
+#: XXX letzte Deckschicht fehlt noch vvv
+#: last_checked: 2013-10-14 vvv
+#: check_frequency: 30d vvv
 #: osm_watch: way id="51260521" version="4" vvv
-Sokratesweg: unbefestigt, Bauarbeiten	Q2- 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
-Sokratesweg: unbefestigt, Bauarbeiten	Q2- 18505,9500 18596,9485
-Sokratesweg: unbefestigt, Bauarbeiten	Q2- 18514,9552 18604,9535
-Sokratesweg: unbefestigt, Bauarbeiten	Q2- 18520,9585 18610,9569
+Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q1 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
+Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q1 18505,9500 18596,9485
+Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q1 18520,9585 18610,9569
 #: osm_watch ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+Sokratesweg: Verbundsteinpflaster	Q1+ 18514,9552 18604,9535
 Rhinstr. [Nebenstraﬂe]: Beton	Q1+ 18258,11827 18340,11830 18381,11857 18417,11854
 (Rhinstr. - Am M¸hlenberg): Beton	Q1+ 18215,11690 18242,11793 18258,11827
 #: note: interpoliert
@@ -9115,6 +9115,12 @@ Sportforumstr.: Asphalt	Q0 -263,12125 -369,12175
 Parkplatz Mˆbel H¸bner: Verbundsteinpflaster	Q1 7354,10671 7478,10612
 Aronsstr. [Richtung Sonnenallee]: Asphalt mit Sch‰den	Q2+ 14571,7427 14579,7576 14593,7584
 (Sonnenallee - Aronsstr.): Gehwegplatten	Q0- 14519,7301 14571,7427
+(Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): Asphalt mit einigen Sch‰den	Q1+ 17187,13609 17185,13765
+(Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): neuer Asphalt	Q0 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903
+(Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): teilweise alter Beton	Q0- 17190,13903 17213,13931 17210,14054 17164,14067
+(Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): neuer Asphalt	Q0 17164,14067 17152,14084
+(Hellweg-Parkplatz): Asphalt	Q0 8243,9766 8242,9699 8200,9662 8192,9619
+(Bautzener Str. - S¸dkreuz): Asphalt	Q0 8185,9338 8207,9324 8204,9046
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -12876,12 +12882,16 @@ Charlottenstr.: Asphalt	Q0 5929,2982 6044,3110 6129,3203 6218,3302 6426,3425 652
 # 
 #: by: Sandra (sspp):
 Magdalenenstr.: Kopfsteinpflaster	Q2 16127,11950 16158,12191 16159,12301
+# 
 #: by: Sebastian Scheller: vvv
 Okertalstr.: gutes Kopfsteinpflaster	Q1 14847,20776 14925,21013
 Okertalstr.: Sandweg, kaum Lˆcher	Q2 14925,21013 14977,21194
 #: by: ^^^
+# 
 #: by: Gerd Nˆtzel:
+#: confirmed_by: srt
 Bacharacher Str.: Asphalt	Q0 11304,6147 11339,6341 11339,6351 11344,6572
+# 
 #: by: Johannes Nerger: vvv
 #: note: ADFC-Karte meint hier "m‰ﬂig geeignet"
 Friesenstr. (Niederschˆnhausen): schlechter Sandweg mit vielen Schlaglˆchern	Q2- 8765,19288 8944,19197 9475,18862
@@ -12890,6 +12900,7 @@ Friesenstr. (Niederschˆnhausen): schlechter Sandweg mit vielen Schlaglˆchern	Q2-
 #: corrected_by: srt (Q0 -> Q0-)
 Friesickestr.: Asphalt	Q0- 12673,16209 12725,16321 12798,16493 12857,16627
 #: by: ^^^
+# 
 #: by: Rolf (singer): vvv
 #: note: ADFC-Karte meint hier "m‰ﬂig geeignet" (viel Autoverkehr?)
 #: confirmed_by: srt
@@ -14366,8 +14377,12 @@ Am Seeschloﬂ: Asphalt	Q0 4757,23184 4750,23211 4713,23254
 (Um den Laﬂzinssee): asphaltiert	Q0 -6459,20769 -6465,21060 -6099,21157 -6044,20971 -5795,20965
 #: by: ^^^
 # 
-#: by: coco (taschkent):
-Scheiblerstr.: m‰ﬂiges Kopfsteinpflaster	Q2 16375,7070 16498,6944 16630,6800
+#: by: coco (taschkent): vvv
+#: confirmed_by: srt
+Scheiblerstr.: m‰ﬂiges Kopfsteinpflaster	Q2 16375,7070 16498,6944
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Scheiblerstr.: asphaltiert	Q0 16498,6944 16630,6800
+#: by ^^^
 # 
 #: by: Igor Smikalla: vvv
 #: confirmed_by: Uschi (papermoon) (but ignored her "viele Fuﬂg‰nger, q3"), srt

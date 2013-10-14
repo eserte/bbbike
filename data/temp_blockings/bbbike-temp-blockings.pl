@@ -18906,7 +18906,7 @@ userdel	q4::inwork; 15066,14579 15174,14638 15272,14691
 EOF
      },
      { from  => 1380175440, # 2013-09-26 08:04
-       until => 1382104800, # 2013-10-18 16:00
+       until => 1381932000, # 2013-10-16 16:00
        text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte September 2013',
        type  => 'handicap',
        source_id => 'IM_020398',
@@ -20425,9 +20425,8 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Földerichplatz: Wochenmarkt Dienstag 8-13 Uhr und Donnerstag 14-18 Uhr',
+       text  => 'Földerichplatz: Wochenmarkt Dienstag und Freitag 8-13 Uhr', # Do -> Fr laut wochen_troedel2013.csv, alter Eintrag: http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html sowie bestätigt von Stefan Klinkusch
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html', # und bestätigt von Stefan Klinkusch
        recurring => 1,
        data  => <<EOF,
 	q4::temp:clock -3941,12545 -3941,12376
@@ -21645,12 +21644,12 @@ userdel	q4::inwork 11635,16616 11621,16749
 EOF
      },
      { from  => 1374381000, # 2013-07-21 06:30
-       until => 1384527600, # 2013-11-15 16:00
+       until => 1381748950, # vorzeitig aufgehoben, keine Behinderungen mehr --- 1384527600, # 2013-11-15 16:00
        text  => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße Richtung Osten gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Mitte November 2013',
        type  => 'handicap',
        source_id => 'IM_020361',
        data  => <<EOF,
-userdel	q3::inwork; 15513,13539 15653,13542 15724,13544 15896,13547
+userdel	q3::inwork; 15513,13539 15626,13541 15653,13542 15724,13544 15896,13547
 EOF
      },
      { from  => undef, # 
@@ -21739,17 +21738,13 @@ EOF
 EOF
      },
      { from  => 1378591200, # 2013-09-08 00:00
-       until => 1380146399, # 2013-09-25 23:59
-       text  => 'Manfred-von-Richthofen-Str.: Bauarbeiten zwischen Kaiserkorso und Bayernring, Fahrbahn in Richtung Süden gesperrt, vom 09.09.2013 bis voraussichtlich zum 25.09.2013',
+       until => 1381831200, # 2013-10-15 12:00
+       text  => 'Manfred-von-Richthofen-Str.: Bauarbeiten zwischen Kaiserkorso und Schreiberring, Fahrbahn in Richtung Süden gesperrt, vom 09.09.2013 bis voraussichtlich zum 15.10.2013',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html',
        data  => <<EOF,
-#: XXX danach wird die Sperrung umgedreht, ebenfalls für ca. 2,5 Wochen, wird evtl. bis zum Wolffsring ausgeweitet?
 #: source_id: IM_020294
-#: last_checked: 2013-09-09
-#: next_check: 2013-09-24
-userdel	q4::inwork; 9099,8670 9006,8602 8919,8508
-# REMOVED (hier noch nicht) --- userdel	q4::inwork; 8919,8508 8851,8424 8807,8353
+userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353 8776,8285
 EOF
      },
      { from  => 1378591200, # 2013-09-08 00:00
@@ -21938,7 +21933,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wird die Sperrung vielleicht früher aufgehoben?
-#: last_checked: 2013-10-12
+#: last_checked: 2013-10-14
 #: next_check: 2013-10-31
 userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
 EOF
@@ -21969,6 +21964,16 @@ EOF
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5082.html',
        data  => <<EOF,
 userdel	2::inwork 10086,12725 10166,12777
+EOF
+     },
+     { from  => 1381633200, # 2013-10-13 05:00
+       until => 1384185600, # 2013-11-11 17:00
+       text  => 'Rosenthaler Str. (Mitte): Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Linienstr. und Weinmeisterstr., 14.10.2013 bis 11.11.2013 ',
+       type  => 'handicap',
+       source_id => 'IM_020486',
+       data  => <<EOF,
+#: by: http://www.bvg.de/index.php/de/56927/name/fahrinfo+Update+-+was+ist+neu%3F.html (Enddatum)
+userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13691
 EOF
      },
     );

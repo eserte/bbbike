@@ -81,7 +81,7 @@ X	Vf 9098,42254 9043,42165 9032,42153
 X	Vf 7717,11540 7665,11353 7595,11086
 X	Vf 17609,11467 17734,11408 17725,11228
 #: XXX entfernen, wenn die Ampel aktiviert wird
-#: last_checked: 2013-09-11
+#: last_checked: 2013-10-14
 #: check_frequency: 30d
 X	Vf 18875,9570 18878,9517 18867,9464
 X	Vf 18878,9517 18867,9464 18834,9256
@@ -1356,10 +1356,14 @@ X	Vf 25927,11839 26042,11798 26222,11726
 X	Vf 26042,11798 26222,11726 26555,11601
 X	Vf 26222,11726 26555,11601 26794,11513
 X	Vf 26555,11601 26794,11513 26880,11479
-#: XXX eventuell nur temporäre Vorfahrtregelung wegen der Sperrung der U8
-#: last_checked: 2013-09-04
-#: next_check: 2014-07-01
+#: XXX eventuell nur temporäre Vorfahrtregelung wegen der Sperrung der U8 vvv
+#: last_checked: 2013-09-04 vvv
+#: next_check: 2014-07-01 vvv
 X	Vf 12463,7037 12645,7087 12766,7113
+X	Vf 12645,7087 12463,7037 12317,7007
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
 X	Vf 1659,8744 1767,8853 1773,8859
 X	Vf -790,11512 -722,11598 -496,11720
 X	Vf -722,11598 -706,11536 -684,11464

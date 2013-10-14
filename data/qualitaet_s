@@ -83,7 +83,7 @@ Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11669,9987 11880,9874 12088,9775
 Maybachufer: Asphalt	Q0 12088,9775 12250,9691 12412,9610 12563,9536
 Maybachufer: Asphalt	Q0 12563,9536 12764,9433 12844,9351 12871,9356
 Am Landwehrkanal: Parkweg, Schotterstellen, bei Regen große Pfützen	Q1 12897,9365 12900,9465 13109,9743
-Am Landwehrkanal: Asphalt	Q0 13109,9743 13225,9897
+Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
 Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13760,9188
@@ -1532,6 +1532,7 @@ Färberstr.: Beton	Q0 21607,4850 21649,4946
 Färberstr. - Uferweg: wassergebundener Belag	Q1 21662,4974 21665,5035 21696,5053
 Färberstr. - Uferweg: wassergebundener Belag	Q1 21649,4946 21662,4974 21740,5004
 Glanzstr.: Asphalt	Q0 16323,6998 16430,6880 16588,6724
+Rodelbergweg: Asphalt	Q0 16430,6880 16498,6944 16568,7009 16615,7062
 Heinrich-Lassen-Park: glatte Pflasterung	Q0 6664,8787 6705,8730
 Heinrich-Lassen-Park: wassergebundener Belag	Q1 6705,8730 6740,8682 6815,8691 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
@@ -4365,7 +4366,7 @@ Waldkauzstr.: Verbundsteinpflaster	Q1 -1202,19877 -1364,19982 -1521,20041 -1630,
 Bidenswinkel: Verbundsteinpflaster	Q1 16242,12878 16242,12814 16255,12769
 Bornitzstr. [Wohngebiet]: Verbundsteinpflaster	Q1 16312,12876 16313,12762
 Bornitzstr. [Wohngebiet] (Silberweidenweg?): Verbundsteinpflaster	Q1 16376,12874 16377,12791
-(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655 17110,13811 17095,13972 17154,14093 17219,14133 17266,14144 18024,13843
+(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655 17110,13811 17095,13972 17152,14084 17219,14133 17266,14144 18024,13843
 (Herzbergstr. - Siegfriedstr.): Asphalt	Q0 17167,13655 17073,13765 16978,13819 16875,13834
 Allendorfer Weg: Verbundsteinpflaster	Q1 17794,14640 17879,14659
 Allendorfer Weg: Beton	Q1 17879,14659 17991,14684
@@ -7952,10 +7953,10 @@ Rathausstr.: Asphalt mit einigen Schäden	Q1 10601,12521 10584,12507 10476,12432
 (Weg an der Südpanke - Am Pankepark): Pflasterung	Q1 8307,14175 8323,14142
 (Weg an der Südpanke - Am Pankepark): unbefestigter Weg	Q2 8323,14142 8282,14116
 Sigridstr.: Asphalt mit einigen Schäden	Q1 14284,14469 14159,14495 14025,14519
-Sokratesweg: unbefestigt, Bauarbeiten	Q2 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
-Sokratesweg: unbefestigt, Bauarbeiten	Q2 18505,9500 18596,9485
-Sokratesweg: unbefestigt, Bauarbeiten	Q2 18514,9552 18604,9535
-Sokratesweg: unbefestigt, Bauarbeiten	Q2 18520,9585 18610,9569
+Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q1 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
+Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q1 18505,9500 18596,9485
+Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q1 18520,9585 18610,9569
+Sokratesweg: Verbundsteinpflaster	Q1 18514,9552 18604,9535
 Rhinstr. [Nebenstraße]: Beton	Q1 18258,11827 18340,11830 18381,11857 18417,11854
 (Rhinstr. - Am Mühlenberg): Beton	Q1 18215,11690 18242,11793 18258,11827
 Am Kleinen Platz: Asphalt	Q0 -7292,14811 -7248,14826
@@ -8420,6 +8421,12 @@ Sportforumstr.: Asphalt	Q0 -263,12125 -369,12175
 Parkplatz Möbel Hübner: Verbundsteinpflaster	Q1 7354,10671 7478,10612
 Aronsstr. [Richtung Sonnenallee]: Asphalt mit Schäden	Q2 14571,7427 14579,7576 14593,7584
 (Sonnenallee - Aronsstr.): Gehwegplatten	Q0 14519,7301 14571,7427
+(Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): Asphalt mit einigen Schäden	Q1 17187,13609 17185,13765
+(Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): neuer Asphalt	Q0 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903
+(Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): teilweise alter Beton	Q0 17190,13903 17213,13931 17210,14054 17164,14067
+(Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): neuer Asphalt	Q0 17164,14067 17152,14084
+(Hellweg-Parkplatz): Asphalt	Q0 8243,9766 8242,9699 8200,9662 8192,9619
+(Bautzener Str. - Südkreuz): Asphalt	Q0 8185,9338 8207,9324 8204,9046
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -10631,7 +10638,8 @@ Am Seeschloß: Asphalt	Q0 4757,23184 4750,23211 4713,23254
 (Uferweg an der Havel): sehr guter Asphalt	Q0 -2460,18918 -2503,18945 -2516,19186 -2597,19251 -2723,19255
 (Uferweg an der Havel): gut befahrbarer Wanderweg	Q0 -2723,19255 -2726,19408 -2763,19450 -2775,19532 -2870,19589 -2905,19636 -2908,19715
 (Um den Laßzinssee): asphaltiert	Q0 -6459,20769 -6465,21060 -6099,21157 -6044,20971 -5795,20965
-Scheiblerstr.: mäßiges Kopfsteinpflaster	Q2 16375,7070 16498,6944 16630,6800
+Scheiblerstr.: mäßiges Kopfsteinpflaster	Q2 16375,7070 16498,6944
+Scheiblerstr.: asphaltiert	Q0 16498,6944 16630,6800
 Skarbinastr.: guter Asphalt	Q0 12046,-1678 11997,-1407 11948,-1368 11739,-1384
 Freiheitsweg: gutes Verbundsteinpflaster	Q1 6636,18934 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
 Freiheitsweg: Gehwegplatten	Q1 7157,18810 7248,18793

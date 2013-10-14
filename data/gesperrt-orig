@@ -27,6 +27,7 @@ Dennewitzplatz	1 7866,9918 7813,10112
 Dennewitzplatz	1 7813,10112 7906,10098
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html
 #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen
+#: last_checked: 2013-10-14
 #: next_check: 2014-05-01
 Dennewitzplatz	1s:q3 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
@@ -1289,9 +1290,8 @@ Ibsenstr.	1s:q1 10295,16667 10209,16674
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: XXX wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5407
-#: last_checked: 2013-09-14
-#: next_check: 2013-10-14
-Paul-Junius-Str.	1s:q2 15096,12974 15092,13105
+#: last_checked: 2013-10-14
+Paul-Junius-Str.	1s:q2 15096,12974 15090,13116
 Ahornallee	1s:q3 1589,11483 1574,11379
 Lindenallee	1s:q3 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s:q1 49779,90206 49841,90479
@@ -1376,6 +1376,7 @@ Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 535
 Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9225,13389 9281,13374 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16568,7009
+Schnellerstr.: Mittelstreifen	3nocross 17290,6228 17216,6308 16843,6712
 Stendaler Str.: Straßenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 23952,15086
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20944,14840 20980,14914 21163,15289
@@ -1702,9 +1703,8 @@ tragen (3+3+2+2 Stufen)	0:20 9244,3872
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130116.0915.380245.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4276
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130722.1530.387208.html
-#: XXX hier entsteht bis voraussichtlich Oktober 2013 eine Rampe
-#: last_checked: 2013-09-16
-#: next_check: 2013-10-15
+#: XXX hier entsteht bis voraussichtlich Oktober 2013 eine Rampe (klappt wahrscheinlich nicht mit dem Termin)
+#: last_checked: 2013-10-14
 tragen (10 Stufen)	0:15 8035,10075
 tragen (7 weite Stufen)	0:30 15759,16671
 tragen (6 Stufen)	0:12 15915,16526
@@ -2447,6 +2447,11 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: osm_watch: way id="182562157" version="2"
+#: last_checked: 2013-10-14
+#: next_check: 2013-11-09
+(Bautzener Str. - Südkreuz): Bauzaun, Zugang noch nicht erlaubt	2:inwork 8185,9338 8207,9324 8204,9046
+# 
 #: source_id: INKO_095722_COPY_1
 #: XXX siehe auch routing_helper addition
 #: prio: #A
@@ -2485,10 +2490,7 @@ Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 99
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 # 
 # REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: prio: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^
-# 
-#: last_checked: 2013-09-11
-#: check_frequency: 60d
-Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
+# REMOVED --- #: last_checked: 2013-09-11 --- #: check_frequency: 60d --- Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
 # 
 #: by: http://www.potsdam.de/cms/ziel/996205/DE/?date=20130419
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/a6add3f2/NeueRadfuehrungen.pdf

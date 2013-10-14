@@ -2126,7 +2126,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        {
          'source_id' => 'IM_020398',
-         'until' => 1382104800,
+         'until' => 1381932000,
          'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte September 2013',
          'from' => 1380175440,
          'id' => 2188,
@@ -2362,15 +2362,14 @@ userdel	2::inwork 18731,8577 18709,8423
        undef,
        undef,
        {
-         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html',
+         'until' => undef,
          'recurring' => 1,
+         'text' => 'Földerichplatz: Wochenmarkt Dienstag und Freitag 8-13 Uhr',
+         'from' => undef,
+         'id' => 2349,
          'data' => '	q4::temp:clock -3941,12545 -3941,12376
 ',
-         'until' => undef,
-         'from' => undef,
-         'text' => 'Földerichplatz: Wochenmarkt Dienstag 8-13 Uhr und Donnerstag 14-18 Uhr',
-         'type' => 'gesperrt',
-         'id' => 2349
+         'type' => 'gesperrt'
        },
        undef,
        undef,
@@ -2749,16 +2748,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_020361',
-         'until' => 1384527600,
-         'text' => 'Herzbergstr.(Lichtenberg): Fahrbahn zwischen Möllendorffstraße und Vulkanstraße Richtung Osten gesperrt, ggfs. auf Gehweg ausweichen (Radfahren erlaubt), bis Mitte November 2013',
-         'from' => 1374381000,
-         'id' => 2466,
-         'data' => 'userdel	q3::inwork; 15513,13539 15653,13542 15724,13544 15896,13547
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -2807,7 +2797,17 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'type' => 'gesperrt',
          'id' => 2475
        },
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html',
+         'until' => 1381831200,
+         'text' => 'Manfred-von-Richthofen-Str.: Bauarbeiten zwischen Kaiserkorso und Schreiberring, Fahrbahn in Richtung Süden gesperrt, vom 09.09.2013 bis voraussichtlich zum 15.10.2013',
+         'from' => 1378591200,
+         'id' => 2476,
+         'data' => '#: source_id: IM_020294
+userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353 8776,8285
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {
@@ -2906,7 +2906,7 @@ userdel	q4::inwork 7001,8161 7250,8223
          'from' => undef,
          'id' => 2495,
          'data' => '#: XXX wird die Sperrung vielleicht früher aufgehoben?
-#: last_checked: 2013-10-12
+#: last_checked: 2013-10-14
 #: next_check: 2013-10-31
 userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
 ',
@@ -2942,6 +2942,17 @@ userdel	q4::inwork 20354,-569 20252,-571 20205,-548
          'data' => 'userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_020486',
+         'until' => 1384185600,
+         'text' => 'Rosenthaler Str. (Mitte): Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Linienstr. und Weinmeisterstr., 14.10.2013 bis 11.11.2013 ',
+         'from' => 1381633200,
+         'id' => 2499,
+         'data' => '#: by: http://www.bvg.de/index.php/de/56927/name/fahrinfo+Update+-+was+ist+neu%3F.html (Enddatum)
+userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13691
+',
+         'type' => 'handicap'
        }
      
 );
