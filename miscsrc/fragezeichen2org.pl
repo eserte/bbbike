@@ -135,6 +135,7 @@ for my $file (@files) {
 	     #    and records in other files marked with add_fragezeichen, XXX,
 	     #    or similar), these won't have date set in @records
 	     my($r, $dir) = @_;
+	     my $where = "${abs_file}::$.";
 	     my $has_nextcheck = $dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0];
 	     if (!$has_nextcheck) {
 		 return if !$with_nextcheckless_records;
@@ -195,6 +196,11 @@ for my $file (@files) {
 		     warn "WARN: priority should be #A..#C, not '$prio', ignoring...\n";
 		     undef $prio;
 		 }
+	     }
+
+	     if ($dir->{prio}) {
+		 # happens too often, so make it a fatal error
+		 die "Wrong directive 'prio' detected, maybe you mean 'priority' at $where\n";
 	     }
 
 	     my $searches;
@@ -263,7 +269,7 @@ EOF
 	     $body .= join("", map { "   : " . $_ . "\n" } _get_all_XXX_directives($dir));
 	     $body .= <<EOF;
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
-   [[${abs_file}::$.]]
+   [[$where]]
 EOF
 	     if (@planned_route_files) {
 		 $body .= "\n   Planned in\n";
