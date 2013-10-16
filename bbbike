@@ -14932,6 +14932,35 @@ sub show_statistics {
     }
 }
 
+sub get_layer_by_abk {
+    my $abk = shift;
+    if      ($str_draw{$abk}) {
+	return {
+		obj  => $str_obj{$abk},
+		file => $str_file{$abk},
+		type => 's',
+		abk  => $abk,
+	       };
+    } elsif ($p_draw{$abk}) {
+	return {
+		obj  => $p_obj{$abk},
+		file => $p_file{$abk},
+		type => 'p',
+		abk  => $abk,
+	       };
+    } elsif ($p_draw{"$abk-sperre"}) {
+	my $key = "$abk-sperre";
+	return {
+		obj  => $p_obj{$key},
+		file => $p_file{$key},
+		type => 'sperre',
+		abk  => $key,
+	       };
+    } else {
+	return undef;
+    }
+}
+
 ### AutoLoad Sub
 sub next_free_layer {
     my $max_i = 1;
