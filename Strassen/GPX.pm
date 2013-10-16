@@ -90,7 +90,9 @@ sub new {
 #
 sub gpx2bbd {
     my($self, $file, %args) = @_;
-    
+
+    $self->{File} = $file;
+
     if ($use_xml_module eq 'XML::LibXML') {
 	_require_XML_LibXML;
 	my $p = XML::LibXML->new;

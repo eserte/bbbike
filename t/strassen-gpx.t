@@ -37,7 +37,7 @@ sub load_from_file_and_check ($$);
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 88 + $new_strassen_gpx_tests;
+my $tests_per_variant = 96 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -118,6 +118,8 @@ for my $use_xml_module (@variants) {
 
 	    my $s3 = Strassen::GPX->new;
 	    $s3->gpx2bbd($ofilename);
+	    is $s3->file, $ofilename;
+	    is "@{[ $s3->dependent_files ]}", $ofilename;
 	    is_deeply($s3->data, $s->data, "File loading OK");
 
 	    load_from_file_and_check $ofilename, $s3;
@@ -133,6 +135,8 @@ for my $use_xml_module (@variants) {
 	    # Parsing from file, overriding name and cat
 	    my $s5 = Strassen::GPX->new;
 	    $s5->gpx2bbd($ofilename, name => "My Name", cat => "MYCAT");
+	    is $s5->file, $ofilename;
+	    is "@{[ $s5->dependent_files ]}", $ofilename;
 	    is_deeply($s5->data, $s4->data, "Check overriden data in files");
 	}
 
@@ -163,6 +167,8 @@ for my $use_xml_module (@variants) {
 
 	    my $s3 = Strassen::GPX->new;
 	    $s3->gpx2bbd($ofilename);
+	    is $s3->file, $ofilename;
+	    is "@{[ $s3->dependent_files ]}", $ofilename;
 	    is_deeply($s->data, $s3->data, "File loading OK");
 
 	    load_from_file_and_check $ofilename, $s3;
@@ -178,6 +184,8 @@ for my $use_xml_module (@variants) {
 	    # Parsing from file, overriding name and cat
 	    my $s5 = Strassen::GPX->new;
 	    $s5->gpx2bbd($ofilename, name => "My Name", cat => "MYCAT");
+	    is $s5->file, $ofilename;
+	    is "@{[ $s5->dependent_files ]}", $ofilename;
 	    is_deeply($s5->data, $s4->data, "Check overriden data in files");
 	}
 
