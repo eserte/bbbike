@@ -64,7 +64,7 @@ sub suggest_widget {
 sub scan_zip_file {
     my $self = shift;
     my $ZIP;
-    if ($] < 5.006) { require Symbol; Symbol::gensym() }
+    if ($] < 5.006) { require Symbol; $ZIP = Symbol::gensym() }
     if (open($ZIP, $self->{zip_file})) {
 	while(<$ZIP>) {
 	    my $zip_firstch = lc substr($_, 0, 1);
