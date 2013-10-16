@@ -2062,7 +2062,7 @@ Schranke	BNP:3::trailer=10 -4300,15295
 Schranke	BNP:3::trailer=10 -4117,15255
 #: by: ^^^
 Schranke	BNP:3::trailer=10 15090,11237
-# REMOVED (existiert nicht) --- #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7030&options=4 --- #: XXX genaue Position der Schranke? --- #: prio: #C --- Schranke	BNP:3::trailer=10 -822,16535
+# REMOVED (existiert nicht) --- #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7030&options=4 --- #: XXX genaue Position der Schranke? --- #: priority: #C --- Schranke	BNP:3::trailer=10 -822,16535
 #: note: in Richtung Dieffenbachstr. recht eng, in die andere Richtung ist mehr Platz
 Schranke	BNP:5::trailer=10 10919,9804
 Drängelgitter, kann umfahren werden	BNP:3::trailer=10 14969,10138
@@ -2447,6 +2447,10 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2013-10-15
+#: next_check: 2015-08-30
+tragen (2 Stufen)	0:5 8818,13365
+# 
 #: osm_watch: way id="182562157" version="2"
 #: last_checked: 2013-10-14
 #: next_check: 2013-11-09
@@ -2454,12 +2458,12 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 # 
 #: source_id: INKO_095722_COPY_1
 #: XXX siehe auch routing_helper addition
-#: prio: #A
+#: priority: #A
 #: last_checked: 2013-09-04
 #: next_check: 2014-03-31
 Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 # 
-#: prio: #A vvv
+#: priority: #A vvv
 #: last_checked: 2013-10-12 vvv
 #: next_check: 2013-12-31 vvv
 Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8588,13673 8594,13637
@@ -2467,7 +2471,7 @@ Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8619,13689 8626,
 Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8659,13708 8668,13645
 #: next_check ^^^
 #: last_checked ^^^
-#: prio ^^^
+#: priority ^^^
 # 
 # REMOVED (Bauarbeiten beendet) --- #: XXX siehe auch die Umleitungsstrecke --- #: XXX nach den Bauarbeiten asphaltiert --- #: by: http://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10317_Berlin_Strassenbauarbeiten__607379.html (Asphaltierung) --- #: by: http://www.rubu.de/verkehr-planungen.html (Dauer) --- #: by: http://www.rubu.de/mediapool/115/1150729/data/Paul_u_Paula_UL3-Uebersicht-BA.pdf (Übersichtsplan) --- #: last_checked: 2013-08-19 --- #: next_check: 2013-10-03 (geplantes Bauende ist Ende September) --- Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
 # 
@@ -2489,7 +2493,7 @@ Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 99
 #: next_check: 2014-02-13
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 # 
-# REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: prio: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^
+# REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: priority: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^
 # REMOVED --- #: last_checked: 2013-09-11 --- #: check_frequency: 60d --- Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
 # 
 #: by: http://www.potsdam.de/cms/ziel/996205/DE/?date=20130419
@@ -2500,7 +2504,7 @@ An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-133
 #: next_check: 2013-08-10
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 # 
-# REMOVED (Termin abgelaufen) --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf vvv --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf vvv --- #: prio: #A vvv --- #: next_check: 2013-09-05 vvv --- Sperrung am zukünftigen Landtag: Bereich vor der Straßenbahnhaltestelle Richtung Norden gesperrt (8. April 2013 - 6. September 2013)	1:inwork -12758,-1654 -12772,-1577 --- Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)	1::inwork -12659,-1700 -12730,-1681 -12758,-1654 --- #: next_check ^^^ --- #: prio ^^^ --- #: by ^^^ --- #: by ^^^
+# REMOVED (Termin abgelaufen) --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf vvv --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf vvv --- #: priority: #A vvv --- #: next_check: 2013-09-05 vvv --- Sperrung am zukünftigen Landtag: Bereich vor der Straßenbahnhaltestelle Richtung Norden gesperrt (8. April 2013 - 6. September 2013)	1:inwork -12758,-1654 -12772,-1577 --- Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)	1::inwork -12659,-1700 -12730,-1681 -12758,-1654 --- #: next_check ^^^ --- #: prio ^^^ --- #: by ^^^ --- #: by ^^^
 # 
 #: by: Torben Müllers
 #: confirmed_by: srt
@@ -2524,7 +2528,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
 #: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-09-27
+#: last_checked: 2013-10-15
 #: check_frequency: 30d
 Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
 # 
@@ -2746,7 +2750,7 @@ Matthäikirchplatz	1 7954,11399 7965,11380 7934,11275
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064
 Potsdamer Str.: schwierig zu überqueren - besser Ampel benutzen	3nocross 7912,10945 7968,11048 7980,11070
 Grunewaldstr.: queren schlecht möglich	3nocross 6709,9234 6863,9254 6923,9266
-# REMOVED (keine Einbahnstraßenregelung, aber gegen die Richtung fahren ist mit handicap versehen) --- Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
+Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8686,7726 8796,7751 8895,7797 8940,7835
 Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
 Greifswalder Str.	3nocross 12422,14692 12473,14763 12520,14833

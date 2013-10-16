@@ -3325,6 +3325,7 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Nördliche Landebahn): Beton	Q0 9362,7616 9522,7624 9653,7635
 (Nördliche Landebahn): Asphalt	Q0 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781
 (zur nördlichen Landebahn): unbefestigt	Q2 11430,7781 11460,7802
+(zur nördlichen Landebahn): Asphalt	Q0 11470,7744 11430,7781
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.): Asphalt	Q0 11460,7802 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof): Asphalt	Q0 11472,7899 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10803,8251 10644,8363
@@ -7899,7 +7900,7 @@ Am Tierpark [Nebenfahrbahn]: Beton	Q0 18245,11233 18276,11146
 Am Tierpark [Nebenfahrbahn]: Asphalt	Q0 18276,11146 18301,11033 18368,10763
 (Planufer - Böckhstr.): Kleinsteinpflaster	Q1 11160,9932 11170,9919 11197,9894
 Grimmstr. (Kreuzberg): Verbundsteinpflaster	Q0 11164,9885 11164,9904 11170,9919 11177,9935
-Peter-Strasser-Weg: Asphalt mit leichten Schäden	Q0 9240,7811 9130,7810
+Peter-Strasser-Weg: Asphalt mit einigen Schäden	Q1 9240,7811 9130,7810
 (Straße unter dem U-Bahnhof Gleisdreieck): Kopfsteinpflaster	Q2 8333,10167 8393,10505
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8354,12416 8348,12609
@@ -13821,7 +13822,7 @@ Kernhofer Str.: glattes Pflaster	Q0 15369,10921 15355,10875
 Eichendorffstr.: Kopfsteinpflaster	Q2 9275,13720 9231,13843
 Eichendorffstr.: Kopfsteinpflaster	Q2 9231,13843 9203,13953
 Novalisstr.: Kopfsteinpflaster	Q2 9340,13510 9275,13720
-Philippstr.: Asphalt	Q0 8892,13498 8828,13434
+Philippstr.: Asphalt	Q0 8892,13498 8833,13440
 Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707
 Claire-Waldoff-Str.: Asphalt	Q0 9242,13235 9132,13187
 Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
@@ -13832,7 +13833,7 @@ Am Zirkus: Asphalt	Q1 9090,13009 9137,13032 9167,13046 9239,12923
 (südliches Spreeufer - Spreebogenpark): wassergebundene Decke	Q1 8427,12871 8385,12881 8304,12938
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 (Willy-Brandt-Str. - Rahel-Hirsch-Str.): wassergebundene Decke	Q1 8120,12756 8124,12840 8116,12938
-(entlang der Baustelle an der Charité): teilweise Schotter	Q2 8828,13434 8843,13408 8808,13377 8764,13372
+(entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372
 (Parkplatz Charité): Asphalt	Q1 8764,13372 8665,13353
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8673,13597 8668,13645 8659,13708
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8668,13645 8626,13641

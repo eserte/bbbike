@@ -17749,6 +17749,7 @@ EOF
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
 (Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040 10037,8269
 (Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
+(zur nördlichen Landebahn)	2::night 11470,7744 11430,7781
 EOF
      },
      { from  => 1304110406, # 2011-04-29 22:53
@@ -18906,7 +18907,7 @@ userdel	q4::inwork; 15066,14579 15174,14638 15272,14691
 EOF
      },
      { from  => 1380175440, # 2013-09-26 08:04
-       until => 1381932000, # 2013-10-16 16:00
+       until => 1381834786, # so gut wie aufgehoben - 1381932000, # 2013-10-16 16:00
        text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte September 2013',
        type  => 'handicap',
        source_id => 'IM_020398',
@@ -20029,8 +20030,8 @@ userdel	q4::inwork 8634,13588 8626,13641 8619,13689
 EOF
      },
      { from  => 1348076973, # 1314604800, # 2011-08-29 10:00
-       until => 1382104800, # 2013-10-18 16:00
-       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
+       until => 1387724400, # 2013-12-22 16:00
+       text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Ende 2013',
        type  => 'handicap',
        source_id => 'IM_019212',
        data  => <<EOF,
@@ -21490,16 +21491,12 @@ userdel	2::inwork 14193,6556 14106,6663 14051,6731
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1381928811, # beendet --- undef, # XXX
        text  => 'Innstr./Wildenbruchplatz: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2013-09-04 vvv
-#: check_frequency: 60d vvv
 	q4::inwork 13301,8606 13314,8624 13366,8694
 	q4::inwork 13314,8624 13218,8693
-#: check_frequency ^^^
-#: last_checked ^^^
 EOF
      },
      { from  => 1371816000, # 2013-06-21 14:00, 1 Tag Vorlauf
@@ -21873,9 +21870,9 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-09-15
+#: last_checked: 2013-10-16
 #: check_frequency: 30d
-#: prio: #A
+#: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 EOF
      },
@@ -21886,9 +21883,9 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?)
-#: last_checked: 2013-09-16
+#: last_checked: 2013-10-16
 #: check_frequency: 30d
-#: prio: #A
+#: priority: #A
 userdel	q4::inwork 7001,8161 7250,8223
 EOF
      },
@@ -21932,10 +21929,8 @@ EOF
        text  => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), bis Ende Oktober 2013',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wird die Sperrung vielleicht früher aufgehoben?
-#: last_checked: 2013-10-14
-#: next_check: 2013-10-31
-userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
+userdel	q3::inwork; 14134,11272 14181,11434
+userdel	q2::inwork; 14181,11434 14211,11552
 EOF
      },
      { from  => 1382220000, # 2013-10-20 00:00
@@ -21974,6 +21969,15 @@ EOF
        data  => <<EOF,
 #: by: http://www.bvg.de/index.php/de/56927/name/fahrinfo+Update+-+was+ist+neu%3F.html (Enddatum)
 userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13691
+EOF
+     },
+     { from  => 1371198900, # 2013-06-14 10:35
+       until => 1402758000, # 2014-06-14 17:00
+       text  => 'Romain-Rolland-Str.: Baustelle zwischen Sleipnerstr. und Neukirchstr., Fahrbahn in Richtung Süden gesperrt, bis Mitte Juni 2014',
+       type  => 'handicap',
+       source_id => 'IM_020491',
+       data  => <<EOF,
+userdel	q4::inwork; 12510,18954 12522,18813 12541,18625 12548,18503
 EOF
      },
     );

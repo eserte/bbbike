@@ -1980,6 +1980,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
 (Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040 10037,8269
 (Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
+(zur nördlichen Landebahn)	2::night 11470,7744 11430,7781
 '
        },
        undef,
@@ -2124,16 +2125,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020398',
-         'until' => 1381932000,
-         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte September 2013',
-         'from' => 1380175440,
-         'id' => 2188,
-         'data' => 'userdel	q3::inwork; 13651,11731 13895,11663
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2274,8 +2266,8 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        {
          'source_id' => 'IM_019212',
-         'until' => 1382104800,
-         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Herbst 2013',
+         'until' => 1387724400,
+         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Ende 2013',
          'from' => 1348076973,
          'id' => 2308,
          'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
@@ -2333,16 +2325,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10344,19181
        undef,
        undef,
        undef,
-       {
-         'until' => 1381787999,
-         'text' => 'Sperrung der Bahnbrücke Karlshorst (Treskowallee): 8. bis 14. Oktober 2013',
-         'from' => 1381096800,
-         'id' => 2330,
-         'data' => '#: by: http://www.karlshorst-buergerverein.de/index.php?option=com_content&task=view&id=516
-userdel	2::inwork 18731,8577 18709,8423
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2651,25 +2634,12 @@ userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Innstr./Wildenbruchplatz: Bauarbeiten, Fahrbahn gesperrt',
-         'from' => undef,
-         'id' => 2452,
-         'data' => '#: last_checked: 2013-09-04 vvv
-#: check_frequency: 60d vvv
-	q4::inwork 13301,8606 13314,8624 13366,8694
-	q4::inwork 13314,8624 13218,8693
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'from' => undef,
          'id' => 2454,
          'data' => 'Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
@@ -2797,17 +2767,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'type' => 'gesperrt',
          'id' => 2475
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html',
-         'until' => 1381831200,
-         'text' => 'Manfred-von-Richthofen-Str.: Bauarbeiten zwischen Kaiserkorso und Schreiberring, Fahrbahn in Richtung Süden gesperrt, vom 09.09.2013 bis voraussichtlich zum 15.10.2013',
-         'from' => 1378591200,
-         'id' => 2476,
-         'data' => '#: source_id: IM_020294
-userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353 8776,8285
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -2858,9 +2818,9 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2489,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-09-15
+#: last_checked: 2013-10-16
 #: check_frequency: 30d
-#: prio: #A
+#: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
          'type' => 'gesperrt'
@@ -2872,9 +2832,9 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2490,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?)
-#: last_checked: 2013-09-16
+#: last_checked: 2013-10-16
 #: check_frequency: 30d
-#: prio: #A
+#: priority: #A
 userdel	q4::inwork 7001,8161 7250,8223
 ',
          'type' => 'handicap'
@@ -2905,10 +2865,8 @@ userdel	q4::inwork 7001,8161 7250,8223
          'text' => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), bis Ende Oktober 2013',
          'from' => undef,
          'id' => 2495,
-         'data' => '#: XXX wird die Sperrung vielleicht früher aufgehoben?
-#: last_checked: 2013-10-14
-#: next_check: 2013-10-31
-userdel	q4::inwork; 14134,11272 14181,11434 14211,11552
+         'data' => 'userdel	q3::inwork; 14134,11272 14181,11434
+userdel	q2::inwork; 14181,11434 14211,11552
 ',
          'type' => 'handicap'
        },
@@ -2951,6 +2909,16 @@ userdel	q4::inwork 20354,-569 20252,-571 20205,-548
          'id' => 2499,
          'data' => '#: by: http://www.bvg.de/index.php/de/56927/name/fahrinfo+Update+-+was+ist+neu%3F.html (Enddatum)
 userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13691
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020491',
+         'until' => 1402758000,
+         'text' => 'Romain-Rolland-Str.: Baustelle zwischen Sleipnerstr. und Neukirchstr., Fahrbahn in Richtung Süden gesperrt, bis Mitte Juni 2014',
+         'from' => 1371198900,
+         'id' => 2500,
+         'data' => 'userdel	q4::inwork; 12510,18954 12522,18813 12541,18625 12548,18503
 ',
          'type' => 'handicap'
        }

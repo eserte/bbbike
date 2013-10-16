@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-09-06
+#: last_checked: 2013-10-16 (nordwestliches Ende)
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -99,7 +99,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2013-09-09
+#: last_checked: 2013-10-16
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -111,9 +111,8 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
 # REMOVED (weitgehend realisiert, bis auf das letzte Stück vor der Kreuzung) --- #: last_checked: 2013-09-10 vvv --- #: next_check: 2013-09-12 vvv --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::inwork; 12726,11851 12681,11741 12645,11673 --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459 --- #: next_check ^^^ --- #: last_checked ^^^
-#: last_checked: 2013-09-25
-#: check_frequency: 90d
-Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12833,12154 12850,12286 12869,12425 12891,12549
+#: last_checked: 2013-10-15
+Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12850,12286 12869,12425
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
@@ -129,15 +128,12 @@ Brückenstr.: werden hier Radspuren markiert?	?::projected 11325,12021 11283,1187
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
-#: XXX Baumaßnahme 3.18 (Realisierung in 2011)
-#: last_checked: 2013-08-14 (weiterhin nur Busspuren)
-#: check_frequency: 60d
-Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
+# REMOVED (wahrscheinlich bleibt es bei den Busspuren) --- #: XXX Baumaßnahme 3.18 (Realisierung in 2011) --- #: last_checked: 2013-08-14 (weiterhin nur Busspuren) --- #: check_frequency: 60d --- Otto-Braun-Str.: werden hier Radspuren markiert?	?::projected 11446,13294 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
-#: osm_watch: way id="4543585" version="14"
-#: osm_watch: way id="42732291" version="5"
+#: osm_watch: way id="4543585" version="15"
+#: osm_watch: way id="42732291" version="7"
 #: last_checked: 2013-08-26
 #: check_frequency: 60d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
@@ -227,7 +223,7 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-09-06
+#: last_checked: 2013-10-15
 #: next_check: 2014-03-05
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -391,7 +387,7 @@ Gleisdreieckpark - Hellweg-Parkplatz: entsteht hier ein Weg?	?::projected 8260,1
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130910.1250.389055.html (Baubeginn 38. KW) vvv
 #: last_checked: 2013-08-16 vvv
 #: next_check: 2013-10-16 vvv
-#: prio: #C
+#: priority: #C
 Erich-Weinert-Str.: Zebrastreifen in Planung	?::projected 11710,15997 11691,15978
 Gudvangerstr.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11684,15997 11758,16111
 #: next_check ^^^
@@ -478,6 +474,17 @@ Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13658,1730
 #: next_check: 2014-04-15
 Neues Wohnviertel in Rudow: hier entstehen auch neue Straßen (Verbundsteinpflaster?), evtl. mit Straßennamen?	?::inwork 16491,-160 16642,-543
 # 
+#: XXX neue Straßen/Wege im Zuge des Bebauungsplans XV-29b, Ortsteil Altglienicke vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/beteiligungxv-29bve.html vvv
+#: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/st__dtebauliche_untersuchung.pdf?start&ts=1381739816&file=st__dtebauliche_untersuchung.pdf vvv
+#: next_check: 2015-03-01 vvv
+neuer Weg?	?::projected 19618,849 19316,951 19184,991
+brunolfweg: Verknüpfung gefordert	?::projected 19290,894 19316,951 19334,997
+#: next_check ^^^
+#: by: ^^^
+#: by: ^^^
+#: XXX ^^^
+# 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20130705.0855.386745.html
 #: last_checked: 2013-10-14
 #: next_check: 2014-09-30
@@ -506,9 +513,9 @@ Planstraße zwischen Theodorstr. und Pilgramer Str.: Straße in Planung, Qualität?
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4531
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 (Eröffnungstermin)
 #: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen?
-#: last_checked: 2013-10-14
+#: last_checked: 2013-10-16
 #: next_check: 2013-11-30
-#: prio: #A
+#: priority: #A
 Am Lokdepot: Bau einer Erschließungsstraße	?::inwork 8390,8879 8389,9087
 # 
 # REMOVED (keine interessante Radverbindung --- wassergebundene Decke, unbeleuchtet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4997.html (fertiggestellt) --- #: last_checked: 2013-05-29 --- #: next_check: 2013-06-26 --- Grünanlage an der Teilestr.: Parkwege entstehen, evtl. eine lohnende Abkürzung, Qualität, nachts beleuchtet?	?::inwork 11068,6006 11056,5861 11146,5851 11277,5988
@@ -737,12 +744,12 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: osm_watch: way id="42852292" version="7"
 #: osm_watch: way id="155605306" version="1"
 #: osm_watch: way id="155605307" version="3"
-#: last_checked: 2013-09-27
+#: last_checked: 2013-10-16
 #: check_frequency: 60d
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11472,7899 11573,7924 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11823,7980 11979,8014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: osm_watch: way id="182693863" version="1"
-#: last_checked: 2013-09-04
+#: last_checked: 2013-10-16
 #: check_frequency: 90d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
@@ -1057,10 +1064,10 @@ Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geä
 #: next_check: 2013-12-31
 Seestr.: Sanierung der Radwege - wie wird die Qualität danach sein (asphaltiert?)	? 6239,15553 6422,15708 6555,15827 6661,15921 6781,16026
 # 
-#: prio: #C vvv
+#: priority: #C vvv
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1276,8659 1410,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
 Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2163,9244 2316,9400
-#: prio: ^^^
+#: priority: ^^^
 # 
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Charlottenstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Ende 09/13) in beiden Richtungen zwischen Unter den Linden und Rosmarinstr., 13.09.2013 07:00 Uhr bis 23.09.2013 16:00 Uhr	IM_020322	 --- Charlottenstr.: Vollsperrung?	? 9475,12365 9489,12263
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Reichstagufer (Mitte): Straße vollständig gesperrt (bis 25.09.2013) zwischen Wilhelmstr. und Bunsenstr., 15.09.2013 11:00 Uhr bis 25.09.2013 23:00 Uhr	IM_020332	 --- Reichstagufer: Sperrung?	? 8766,12541 8892,12576
@@ -1068,7 +1075,7 @@ Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,88
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Rennbahnstr. (Weißensee): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/13) Richtung Berliner Allee zwischen Parkstr. und Berliner Allee, 02.09.2013 08:00 Uhr bis 15.09.2013 16:00 Uhr	IM_020230	 --- #: next_check: 2013-09-02 --- Rennbahnstr.: Bauarbeiten?	? 14235,17103 14341,17030 14528,16910 14558,16907
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Mohrenstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 09/13) Richtung Gendarmenmarkt zwischen Wilhelmstr. und Glinkastr., 24.09.2013 16:03 Uhr bis 29.09.2013 17:03 Uhr	IM_020378	 --- Mohrenstr.: Bauarbeiten?	?; 9000,11727 9075,11756 9171,11777 9220,11781
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Simon-Dach-Str. ab Warschauer Str., 27.09.2013 08:04 Uhr bis 18.10.2013 16:00 Uhr	IM_020398 --- Kopernikusstr.: Bauarbeiten?	?::inwork; 13651,11731 13895,11663
-# REMOVED (siehe Sperrung der Friedrichsbrücke) --- #: XXX vmz-Eintrag relevant? NEW	Burgstr. (Mitte): Straße vollständig gesperrt (bis 19.10.2013, 24:00 Uhr) in beiden Richtungen zwischen Neue Promenade und Spandauer Str., 10.10.2013 17:29 Uhr bis 19.10.2013 23:59 Uhr	IM_020483	--- #: prio: #A --- Burgstr. und Anna-Louisa-Karsch-Str.: volständig gesperrt?	?::inwork 10132,12941 10166,12777 10264,12826
+# REMOVED (siehe Sperrung der Friedrichsbrücke) --- #: XXX vmz-Eintrag relevant? NEW	Burgstr. (Mitte): Straße vollständig gesperrt (bis 19.10.2013, 24:00 Uhr) in beiden Richtungen zwischen Neue Promenade und Spandauer Str., 10.10.2013 17:29 Uhr bis 19.10.2013 23:59 Uhr	IM_020483	--- #: priority: #A --- Burgstr. und Anna-Louisa-Karsch-Str.: volständig gesperrt?	?::inwork 10132,12941 10166,12777 10264,12826
 # REMOVED (Richtung Norden können Radfahrer explizit passieren; Richtung Süden entweder einen legalen Schlenker über die Scharnweberstr. machen (die ebenfalls gesperrt ist), oder abenteuerlicherweise die Fahrbahn benutzen) --- #: XXX vmz-Eintrag relevant? NEW	Gürtelstr. (Friedrichhain): Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Frankfurter Allee zwischen Oderstr. und Frankfurter Allee, 01.10.2013 09:22 Uhr bis 14.10.2013 16:00 Uhr	IM_020415	 --- Gürtelstr.: Fahrtrichtung gesperrt?	?::inwork; 15106,11598 15202,11789 15248,11880 15294,11964 15361,12071
 #: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388	
 Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
