@@ -658,13 +658,17 @@ sub new_data_from_streets {
 	my $r = $s->next;
 	last if !@{ $r->[Strassen::COORDS()] };
 	my($street, %args) = split_street($r->[Strassen::NAME()]);
-	$ret .= "$street$sep";
+	my $rec_front = "$street$sep";
+	my $rec_back = "$sep$sep";
+	$rec_back .= $r->[Strassen::COORDS()][$#{$r->[Strassen::COORDS()]}/2];
+	$rec_back .= "\n";
 	if ($args{Citypart}) {
-	    $ret .= join(", ", @{ $args{Citypart} });
+	    for my $citypart (sort @{ $args{Citypart} }) {
+		$ret .= $rec_front . $citypart . $rec_back;
+	    }
+	} else {
+	    $ret .= $rec_front . $rec_back; # with empty citypart
 	}
-	$ret .= "$sep$sep";
-	$ret .= $r->[Strassen::COORDS()][$#{$r->[Strassen::COORDS()]}/2];
-	$ret .= "\n";
     }
     $ret;
 }
