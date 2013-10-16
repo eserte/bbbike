@@ -367,6 +367,10 @@ sub custom_draw {
     if (@BBBike::ExtFile::scrollregion) {
 	set_scrollregion(@BBBike::ExtFile::scrollregion);
     }
+    if ($auto_enlarge_scrollregion) {
+	enlarge_scrollregion_for_layer($abk);
+    }
+
     if ($BBBike::ExtFile::p_attrib && $linetype eq 'p') {
 	$p_attrib{$abk} = $BBBike::ExtFile::p_attrib;
     } else {
@@ -395,10 +399,6 @@ sub custom_draw {
     }
     if (defined $coord) {
 	choose_from_plz(-coord => $coord);
-    }
-
-    if ($auto_enlarge_scrollregion) {
-	enlarge_scrollregion_for_layer($abk);
     }
 
     $toplevel{"chooseort-$abk-$linetype"}->destroy
