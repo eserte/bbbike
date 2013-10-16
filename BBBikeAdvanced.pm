@@ -404,16 +404,7 @@ sub custom_draw {
     }
 
     if ($auto_enlarge_scrollregion) {
-	if ($lazy_plot) { # must get bbox of new layer, as not everything is plotted right now
-	    if ($layer_obj) {
-		my @bbox = $layer_obj->bbox;
-		enlarge_scrollregion(@bbox);
-	    } else {
-		warn "Cannot auto enlarge scrollregion, layer object is missing (unexpectedly)";
-	    }
-	} else {
-	    enlarge_scrollregion_for_layer($abk);
-	}
+	enlarge_scrollregion_for_layer($abk);
     }
 
     $toplevel{"chooseort-$abk-$linetype"}->destroy
@@ -493,9 +484,23 @@ sub enlarge_scrollregion_for_layer {
     my $abk = shift;
     IncBusy($top);
     eval {
-	my(@bbox) = $c->bbox(_layer_tag_expr($abk));
-	if (@bbox) {
-	    enlarge_transposed_scrollregion(@bbox);
+	my @untransposed_bbox;
+	if ($lazy_plot) { # must get bbox of new layer, as not everything is plotted right now
+	    my $ret = main::get_layer_by_abk($abk);
+	    if ($ret && $ret->{obj}) {
+		@untransposed_bbox = $ret->{obj}->bbox;
+	    } else {
+		warn "Cannot get bbox for layer $abk, just enlarge scrollregion to the already visible parts...\n";
+	    }
+	}
+	my @transposed_bbox;
+	if (!@untransposed_bbox) { # non lazy-plot mode, or if getting bbox failed above
+	    @transposed_bbox = $c->bbox(_layer_tag_expr($abk));
+	}
+	if (@untransposed_bbox) {
+	    enlarge_scrollregion(@untransposed_bbox);
+	} elsif (@transposed_bbox) {
+	    enlarge_transposed_scrollregion(@transposed_bbox);
 	} else {
 	    die "No bbox for tag $abk: maybe the layer is empty";
 	}
@@ -641,25 +646,19 @@ sub additional_layer_dialog {
 	#$f->Label(-text => $title, -font => $font{large}, @b_opts)->pack(@pack_opts);
 	for my $i (1..MAX_LAYERS) {
 	    my $abk = "L$i";
-	    if ($str_draw{$abk}) {
-		$f->Button(-text => "Straßen $abk ($str_file{$abk})",
+	    my $ret = main::get_layer_by_abk($abk);
+	    if ($ret) {
+		my $type = $ret->{type};
+		my $full_abk = $ret->{abk};
+		my $cb = $type eq 's' ? $s_cb : $p_cb;
+		my $label = ($type eq 's' ? M"Straßen" :
+			     $type eq 'p' ? M"Punkte" :
+			     $type eq 'sperre' ? M"Sperrungen" : M"unbekannter Typ"
+			    );
+		$f->Button(-text => "$label $abk ($ret->{file})",
 			   @b_opts,
 			   -command => sub {
-			       $s_cb->($abk);
-			   })->pack(@pack_opts);
-	    }
-	    if ($p_draw{$abk}) {
-		$f->Button(-text => "Punkte $abk ($p_file{$abk})",
-			   @b_opts,
-			   -command => sub {
-			       $p_cb->($abk);
-			   })->pack(@pack_opts);
-	    }
-	    if ($p_draw{"$abk-sperre"}) {
-		$f->Button(-text => "Sperrungen $abk (" . $p_file{"$abk-sperre"} . ")",
-			   @b_opts,
-			   -command => sub {
-			       $p_cb->($abk . "-sperre");
+			       $cb->($full_abk);
 			   })->pack(@pack_opts);
 	    }
 	}
