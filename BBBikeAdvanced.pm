@@ -164,11 +164,15 @@ sub custom_draw {
     # XXX -retargs is a hack, please refactor the whole plot_additional_layer
     # and custom_draw thingy
     my $retargs  = (delete $args{-retargs}) || {};
+    # XXX -retobj is also a hack, would be better to have
+    # a rich return object
+    my $retobjref = delete $args{-retobj};
     my $draw      = eval '\%' . $linetype . "_draw";
     my $fileref   = eval '\%' . $linetype . "_file";
     my $name_draw = eval '\%' . $linetype . "_name_draw";
     my $coord_input;
     my $center_beginning = 0;
+    my $auto_enlarge_scrollregion = 1;
 
     $custom_draw_directory = $datadir if !defined $custom_draw_directory;
 
@@ -268,6 +272,10 @@ sub custom_draw {
 		     $f->Checkbutton(-variable => \$center_beginning),
 		     -sticky => "w");
 
+	    Tk::grid($f->Label(-text => M"Scrollregion bei Bedarf vergrößern"),
+		     $f->Checkbutton(-variable => \$auto_enlarge_scrollregion),
+		     -sticky => "w");
+
 	    $f = $t->Frame->pack(-fill => "x");
 	    Tk::grid($f->Button(Name => "ok",
 				-command => sub {
@@ -351,6 +359,11 @@ sub custom_draw {
 	delete $str_obj{$abk};
     }
     plot($linetype, $abk, %args);
+    # the freshly created object
+    my $layer_obj = ($linetype eq 'p' ? $p_obj{$abk} : $str_obj{$abk});
+    if ($retobjref) {
+	$$retobjref = $layer_obj;
+    }
 
     # XXX The bindings should also be recycled if the layer is deleted!
     for (($linetype eq 'p' ? ("$abk-img", "$abk-fg") : ($abk))) {
@@ -375,12 +388,11 @@ sub custom_draw {
     if (defined $BBBike::ExtFile::center_on_coord) {
 	$coord = $BBBike::ExtFile::center_on_coord;
     } elsif ($center_beginning) {
-	my $obj = $linetype eq 'p' ? \%p_obj : \%str_obj;
-	if ($obj->{$abk}) {
-	    my $r = $obj->{$abk}->get(0);
+	if ($layer_obj) {
+	    my $r = $layer_obj->get(0);
 	    if ($r) {
 		$coord = $r->[Strassen::COORDS()]->[0];
-		my $conv = $obj->{$abk}->get_conversion; # XXX %conv_args???
+		my $conv = $layer_obj->get_conversion; # XXX %conv_args???
 		if ($conv) {
 		    $coord = $conv->($coord);
 		}
@@ -389,6 +401,19 @@ sub custom_draw {
     }
     if (defined $coord) {
 	choose_from_plz(-coord => $coord);
+    }
+
+    if ($auto_enlarge_scrollregion) {
+	if ($lazy_plot) { # must get bbox of new layer, as not everything is plotted right now
+	    if ($layer_obj) {
+		my @bbox = $layer_obj->bbox;
+		enlarge_scrollregion(@bbox);
+	    } else {
+		warn "Cannot auto enlarge scrollregion, layer object is missing (unexpectedly)";
+	    }
+	} else {
+	    enlarge_scrollregion_for_layer($abk);
+	}
     }
 
     $toplevel{"chooseort-$abk-$linetype"}->destroy
@@ -542,6 +567,7 @@ sub plot_additional_layer {
     add_to_stack($abk, "before", "pp");
 
     my @args;
+    my $layer_obj;
     {
 	# "sperre" linetype should be "p" for drawing, but still "sperre"
 	# for the last loaded menu
@@ -550,6 +576,7 @@ sub plot_additional_layer {
 	    $linetype = 'p';
 	}
 	$args{-retargs} = {};
+	$args{-retobj} = \$layer_obj;
 	if (defined $file) {
 	    custom_draw($linetype, $abk, $file, %args);
 	} else {
