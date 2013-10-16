@@ -164,9 +164,6 @@ sub custom_draw {
     # XXX -retargs is a hack, please refactor the whole plot_additional_layer
     # and custom_draw thingy
     my $retargs  = (delete $args{-retargs}) || {};
-    # XXX -retobj is also a hack, would be better to have
-    # a rich return object
-    my $retobjref = delete $args{-retobj};
     my $draw      = eval '\%' . $linetype . "_draw";
     my $fileref   = eval '\%' . $linetype . "_file";
     my $name_draw = eval '\%' . $linetype . "_name_draw";
@@ -361,9 +358,6 @@ sub custom_draw {
     plot($linetype, $abk, %args);
     # the freshly created object
     my $layer_obj = ($linetype eq 'p' ? $p_obj{$abk} : $str_obj{$abk});
-    if ($retobjref) {
-	$$retobjref = $layer_obj;
-    }
 
     # XXX The bindings should also be recycled if the layer is deleted!
     for (($linetype eq 'p' ? ("$abk-img", "$abk-fg") : ($abk))) {
@@ -572,7 +566,6 @@ sub plot_additional_layer {
     add_to_stack($abk, "before", "pp");
 
     my @args;
-    my $layer_obj;
     {
 	# "sperre" linetype should be "p" for drawing, but still "sperre"
 	# for the last loaded menu
@@ -581,7 +574,6 @@ sub plot_additional_layer {
 	    $linetype = 'p';
 	}
 	$args{-retargs} = {};
-	$args{-retobj} = \$layer_obj;
 	if (defined $file) {
 	    custom_draw($linetype, $abk, $file, %args);
 	} else {
