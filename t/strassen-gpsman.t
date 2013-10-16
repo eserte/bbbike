@@ -37,9 +37,9 @@ BEGIN {
 
 sub load_from_string_and_check ($$);
 
-my $tests_with_data = 5; # in my private directory
+my $tests_with_data = 7; # in my private directory
 my $test_do_all = 1;
-my $tests = $tests_with_data + $test_do_all + 35;
+my $tests = $tests_with_data + $test_do_all + 39;
 plan tests => $tests + $have_nowarnings;
 
 my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
@@ -64,19 +64,21 @@ SKIP: {
     my $wpt = $wpt[rand @wpt];
 
  SKIP: {
-	skip("Permission denied for $trk", 2)
+	skip("Permission denied for $trk", 3)
 	    if !open my($fh), $trk;
 	my $s1 = Strassen->new($trk);
 	isa_ok($s1, "Strassen");
 	isa_ok($s1, "Strassen::Gpsman");
+	is "@{[ $s1->dependent_files ]}", $trk;
     }
 
  SKIP: {
-	skip("Permission denied for $wpt", 2)
+	skip("Permission denied for $wpt", 3)
 	    if !open my($fh), $wpt;
 	my $s2 = eval { Strassen->new($wpt) };
 	isa_ok($s2, "Strassen");
 	isa_ok($s2, "Strassen::Gpsman");
+	is "@{[ $s2->dependent_files ]}", $wpt;
     }
 
     #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$s1, $s2],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
@@ -189,7 +191,7 @@ EOF
 	], 'wpt data with PositionFormat change and UTM/UPS usage';
 }
 
-# 8 tests
+# 9 tests
 sub load_from_string_and_check ($$) {
     my($data, $type) = @_;
 
@@ -214,6 +216,7 @@ sub load_from_string_and_check ($$) {
 	isa_ok $s_file, "Strassen";
 	isa_ok $s_file, "Strassen::Gpsman";
 	is_deeply $s_file->data, $s->data, "Loading $type with magic check in factory method";
+	is "@{[ $s_file->dependent_files ]}", $tmpfile;
     }
 
     $s;
