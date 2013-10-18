@@ -126,7 +126,10 @@ trivial_pdf_test($pdffile);
 pdfinfo_test($pdffile);
 
 {
-    # testing with UTF-8 encoding --- currently does not work!
+    # testing with UTF-8 encoding
+    # note on renderers:
+    # - PDF::Create does not handle full set of Unicode, instead Text::Unidecode is used
+    # - Cairo+Pango support much of Unicode, i.e. all of the following test cases look fine
     my(undef, $pdffile) = tempfile(SUFFIX => "_test.pdf",
 				   UNLINK => 1);
     my $s = Strassen->new_from_data_string(<<EOF);
