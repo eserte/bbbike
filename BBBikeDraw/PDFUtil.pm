@@ -1,9 +1,9 @@
-# -*- perl -*-
+# -*- mode:perl; coding:iso-8859-1; -*-
 
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -167,7 +167,7 @@ L<BBBikeDraw::PDFCairo>. The following cmdlines
     perl5.12.3 ./miscsrc/bbbikedraw.pl -nocompress -routefile /tmp/diagonal.bbr -routelist -drawtypes all -imagetype pdf -module PDFCairo -o ...
 
 with diaginal.bbr, which is a route diagonally across Berlin's center
-(approx. Jungfernheide - KÃ¶llnische Heide) takes
+(approx. Jungfernheide - Köllnische Heide) takes
 
     6.7..7.0s wallclock time with -nocompress
     10.2..11.1s wallclock time with pdftk compression enabled
