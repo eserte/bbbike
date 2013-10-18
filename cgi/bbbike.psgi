@@ -36,25 +36,21 @@ builder {
 
     my $app;
     for my $cgidef (
+		    # first is the physical file and the primary URL basename, rest is aliases
 		    ['bbbike.cgi', 'bbbike2.cgi'],
 		    ['bbbike.en.cgi', 'bbbike2.en.cgi'],
 		    ['bbbikegooglemap.cgi', 'bbbikegooglemap2.cgi'],
-		    'bbbike-data.cgi',
-		    'bbbike-snapshot.cgi',
-		    'bbbike-test.cgi',
-		    'mapserver_address.cgi',
-		    'mapserver_comment.cgi',
-		    'mapserver_setcoord.cgi',
-		    'wapbbbike.cgi',
+		    ['bbbike-data.cgi'],
+		    ['bbbike-snapshot.cgi'],
+		    ['bbbike-test.cgi'],
+		    ['mapserver_address.cgi'],
+		    ['mapserver_comment.cgi'],
+		    ['mapserver_setcoord.cgi'],
+		    ['wapbbbike.cgi'],
 		   ) {
-	my $fs_file;
-	if (ref $cgidef eq 'ARRAY') {
-	    $fs_file = $cgidef->[0];
-	} else {
-	    $fs_file = $cgidef;
-	}
+	my $fs_file = $cgidef->[0];
 	$fs_file = catfile($root, 'cgi', $fs_file);
-	for my $cgi (ref $cgidef eq 'ARRAY' ? @$cgidef : $cgidef) {
+	for my $cgi (@$cgidef) {
 	    $app = mount "/bbbike/cgi/$cgi" => Plack::App::WrapCGI->new(
                 script  => $fs_file,
 	        execute => 1,
