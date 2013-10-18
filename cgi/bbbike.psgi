@@ -40,12 +40,15 @@ builder {
 		    ['bbbike.cgi', 'bbbike2.cgi'],
 		    ['bbbike.en.cgi', 'bbbike2.en.cgi'],
 		    ['bbbikegooglemap.cgi', 'bbbikegooglemap2.cgi'],
+		    ['bbbikeleaflet.cgi', 'bbbikeleaflet.en.cgi'],
 		    ['bbbike-data.cgi'],
 		    ['bbbike-snapshot.cgi'],
-		    ['bbbike-test.cgi'],
+		    ['bbbike-test.cgi', 'bbbike-test.en.cgi'],
+		    ['bbbike-osm.cgi'],
 		    ['mapserver_address.cgi'],
 		    ['mapserver_comment.cgi'],
 		    ['mapserver_setcoord.cgi'],
+		    ['upload-track.cgi'],
 		    ['wapbbbike.cgi'],
 		   ) {
 	my $fs_file = $cgidef->[0];
