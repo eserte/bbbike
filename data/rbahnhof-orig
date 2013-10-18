@@ -41,7 +41,7 @@ Melchow	R 29469,41288
 Biesenthal	R 28262,39241
 Rüdnitz	RC 25726,34974
 Berlin-Lichtenberg	RB 16767,11787
-Berlin-Schöneweide	RC 17722,5573
+Berlin-Schöneweide	RBau 17722,5573
 Königs Wusterhausen	RC 26348,-11950
 Berlin-Spandau	RB -3663,14083
 Albrechtshof	RB -8380,15635
@@ -160,8 +160,8 @@ Dannenwalde	R -6044,74616
 Fürstenberg	R -9110,86517
 Neustrelitz	R -13963,105660
 Herzberg (Mark)	R -19634,55184
-Grieben (b Gransee)	R -14608,54966
-Löwenberg (Mark) Dorf	R -7661,54585
+Grieben (b Gransee)	R0 -14608,54966
+Löwenberg (Mark) Dorf	R0 -7661,54585
 Lindow	R -19439,61399
 Rheinsberg (Mark)	R -25318,75961
 Bergsdorf	R -315,58852
@@ -271,9 +271,9 @@ Dresden-Stetzsch	R 30508,-147078
 Dresden-Cotta	R 32714,-149119
 Dresden-Friedrichstadt	R 34421,-149741
 Dresden-Hauptbahnhof	R 36066,-151447
-Werder (b Neuruppin)	R -37715,55491
-Wildberg (b Neuruppin)	R -42493,51900
-Dessow (Mark)	R -48066,53112
+Werder (b Neuruppin)	R0 -37715,55491
+Wildberg (b Neuruppin)	R0 -42493,51900
+Dessow (Mark)	R0 -48066,53112
 Seelow	R 77633,16073
 Werbig	R 78342,18886
 Letschin	R 74233,26397
@@ -424,7 +424,9 @@ Berlin Jungfernheide	RA 3352,13752
 Leuenberg	R0 42836,32047
 Sternebeck	R0 50375,30836
 Schulzendorf	R0 55571,30338
+#: section: disused vvv
 Bergholz (bei Potsdam)	R0 -11202,-7672
+#: section ^^^
 Schmachtenhagen	RC 5206,41006
 Waldsieversdorf	R 56716,15990
 Buckow (Märk. Schweiz)	R 55959,18038
