@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-# -*- perl -*-
+# -*- mode:perl;coding:latin1; -*-
 
 #
 # Author: Slaven Rezic
@@ -28,18 +28,18 @@ plan 'no_plan';
 
 {
     my $s = Strassen->new_from_data_string(<<EOF);
-Z-Stra√üe	NN 100,100 200,200 300,300
-S-Stra√üe	H 300,300 400,400 500,500
-E-Stra√üe	HH 300,300 400,400 500,500
-A-Stra√üe	N 300,300 400,400 500,500
+Z-Straﬂe	NN 100,100 200,200 300,300
+S-Straﬂe	H 300,300 400,400 500,500
+E-Straﬂe	HH 300,300 400,400 500,500
+A-Straﬂe	N 300,300 400,400 500,500
 EOF
     $s->sort_by_anything(sub ($$) { $_[0]->{data} cmp $_[1]->{data} });
     is_deeply $s->data,
 	[
-	 "A-Stra√üe	N 300,300 400,400 500,500\n",
-	 "E-Stra√üe	HH 300,300 400,400 500,500\n",
-	 "S-Stra√üe	H 300,300 400,400 500,500\n",
-	 "Z-Stra√üe	NN 100,100 200,200 300,300\n",
+	 "A-Straﬂe	N 300,300 400,400 500,500\n",
+	 "E-Straﬂe	HH 300,300 400,400 500,500\n",
+	 "S-Straﬂe	H 300,300 400,400 500,500\n",
+	 "Z-Straﬂe	NN 100,100 200,200 300,300\n",
 	], 'simple sorting without map function';
 
     my %cat2prio = (
@@ -58,10 +58,10 @@ EOF
 			);
     is_deeply $s->data,
 	[
-	 "E-Stra√üe	HH 300,300 400,400 500,500\n",
-	 "S-Stra√üe	H 300,300 400,400 500,500\n",
-	 "A-Stra√üe	N 300,300 400,400 500,500\n",
-	 "Z-Stra√üe	NN 100,100 200,200 300,300\n",
+	 "E-Straﬂe	HH 300,300 400,400 500,500\n",
+	 "S-Straﬂe	H 300,300 400,400 500,500\n",
+	 "A-Straﬂe	N 300,300 400,400 500,500\n",
+	 "Z-Straﬂe	NN 100,100 200,200 300,300\n",
 	], 'sorting without Schwartzian Transform';
 }
 
