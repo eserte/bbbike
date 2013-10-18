@@ -1425,11 +1425,11 @@ check-disabled:
 	@touch $@
 
 .check_ubahnhof:	ubahnhof ubahn
-	$(CHECK_STATION_CATEGORY) -special noinwork ubahnhof-orig ubahn
+	$(CHECK_STATION_CATEGORY) ubahnhof-orig ubahn
 	@touch $@
 
 .check_sbahnhof:	sbahnhof sbahn
-	$(CHECK_STATION_CATEGORY) -special noinwork sbahnhof-orig sbahn
+	$(CHECK_STATION_CATEGORY) sbahnhof-orig sbahn
 	@touch $@
 
 .for i in u s
@@ -1447,7 +1447,7 @@ check-disabled:
 .endfor
 
 .check_rbahnhof:	rbahnhof rbahn
-	$(CHECK_STATION_CATEGORY) -special noinwork rbahnhof-orig rbahn
+	$(CHECK_STATION_CATEGORY) rbahnhof-orig rbahn
 	@touch $@
 
 .check_orte: orte orte2 orte_city
