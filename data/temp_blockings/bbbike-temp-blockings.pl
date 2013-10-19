@@ -10055,7 +10055,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006787',
        data  => <<EOF,
-userdel	2::inwork 17900,17068 17839,16987 17788,16916 17634,16681 17446,16393
+userdel	2::inwork 17902,17074 17839,16987 17796,16926 17634,16681 17446,16393
 EOF
      },
      { from  => 1186524000, # 2007-08-08 00:00
@@ -21007,15 +21007,15 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Fähren F21, F23, F24: fahren nur ab Karfreitag bis zum 3. Oktober, fahren nicht am Montag',
+       text  => 'Fähren F21 und F23: fahren nur ab Karfreitag bis zum 3. Oktober, fahren nicht am Montag',
        recurring => 1,
        type  => 'gesperrt',
-       source_id => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html', # und 23 und 24
+       source_id => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html', # und 23
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 	2::temp 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
-	2::temp 29959,3031 29968,2986
+# REMOVED (F24 wurde eingestellt) ---	2::temp 29959,3031 29968,2986
 #: XXX_prog ^^^
 EOF
      },
@@ -21978,6 +21978,15 @@ EOF
        source_id => 'IM_020491',
        data  => <<EOF,
 userdel	q4::inwork; 12510,18954 12522,18813 12541,18625 12548,18503
+EOF
+     },
+     { from  => 1382220000, # 2013-10-20 00:00
+       until => 1387666799, # 2013-12-21 23:59
+       text  => 'Lengeder Str.: Bauarbeiten zwischen Montanstr. und Roedernallee, Einbahnstraße offen in Richtung Montanstr., ab dem 21. Oktober 2013 bis Ende Dezember 2013',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131017.1305.390466.html',
+       data  => <<EOF,
+userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6247,19454
 EOF
      },
     );

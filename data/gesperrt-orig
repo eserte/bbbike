@@ -79,12 +79,12 @@ Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19480,15094 19563,15113 19694,15141 19852,15201
+Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19507,15095 19563,15113 19694,15141 19852,15201
 Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19156,14953 19013,14905
-Knoten Märkische/Landsberger Allee	1 19466,14910 19464,14971 19408,15007
-Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19614,15061
+Knoten Märkische/Landsberger Allee	1 19452,14807 19464,14971 19408,15007
+Knoten Märkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
-Knoten Märkische/Landsberger Allee	1 19480,15094 19604,15227
+Knoten Märkische/Landsberger Allee	1 19507,15095 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5049,14675 5233,14753 5440,14840
@@ -1162,6 +1162,7 @@ Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
 ###################################################################### 
 # elsewhere in Brandenburg
+Wachtelweg (Ahrensfelde)	1 22212,19404 22239,19349
 Max-Sabersky-Allee (Teltow)	1 2457,-100 2399,-13 2545,92 2704,198 2902,329
 Hauffstr. (Teltow)	1 2763,103 2704,198
 Fritz-Reuter-Str. (Teltow)	1 2545,92 2560,-25
@@ -1446,7 +1447,7 @@ Rudower Chaussee: Mittelstreifen	3 19498,3054 19475,3074 19426,3024
 Sterndamm: Straßenbahntrasse	3nocross 17601,5090 17542,4772 17520,4649
 Sterndamm: Straßenbahntrasse	3nocross 17645,5328 17601,5090 17542,4772
 Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
-Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
+# REMOVED (es existiert ein offizieller Radweg auf der linken Seite) --- Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2975,15813 2960,15847 2944,15880
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2944,15880 2913,15944 2819,16141
 Berliner Str.: Straßenbahntrasse	3nocross 10897,17274 10892,17330 10886,17396
@@ -1481,7 +1482,7 @@ Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18165,7371
 Treskowallee: Straßenbahntrasse	3nocross 18406,7760 18570,8025 18657,8163
 Treskowallee: Straßenbahntrasse	3nocross 18867,9464 18834,9256 18809,9133
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5467,9866
-Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19506,15002 19466,14910 19449,14790
+Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9207,5185 9196,5272 9188,5333 9179,5398 9161,5535
@@ -1539,7 +1540,7 @@ Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12562,8432 12540,8
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,12933 6150,12875
-Märkische Allee: Linksabbiegen verboten	3nocross 20109,16305 20219,16523 20339,16752
+Märkische Allee: Linksabbiegen verboten	3nocross 20116,16303 20219,16523 20318,16710
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
 Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19940,12076 19944,12115 19947,12140 19953,12177 19960,12222 19967,12270 19982,12405 19994,12484
 # REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17601,17922 17675,17971 17744,18016 17843,18078
@@ -2584,8 +2585,8 @@ Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8186,14150 82
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html
 #: XXX Sanierungstermin steht noch nicht fest
-#: last_checked: 2013-01-05
-#: next_check: 2013-10-01
+#: last_checked: 2013-10-17
+#: next_check: 2014-10-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
 #: XXX wo gibt es Informationen hierzu?
@@ -2623,14 +2624,15 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 182
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2013-08-16 vvv
+#: last_checked: 2013-10-19 vvv
 #: check_frequency: 60d vvv
-#: XXX mit den Bauarbeiten "An den Eldenaer Höfen" in strassen-orig koordinieren vvv
-An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14449,12833 14594,12800
+#: XXX wird man nach den Bauarbeiten direkt zur Eldenaer Str. fahren können (Kfz/Rad)?
+#: XXX Qualität im östlichen Abschnitt?
+#: osm_watch: way id="137941886" version="4"
+An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14509,12819 14594,12800
 #: XXX dieser Abschnitt wird wahrscheinlich offiziell eine Einbahnstraße, offen Richtung Westen sein
 #: XXX mittlerweile manchmal (oder immer?) passierbar
-Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
-#: XXX ^^^
+Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536,12916 14682,12874
 #: check_frequency ^^^
 #: last_checked ^^^
 #
@@ -2945,8 +2947,8 @@ Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21869,18227
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3056,22693
 Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
-Gehrenseestr.	1 18477,16748 18324,16625
-tragen	0:60 18448,16759
+Gehrenseestr.	1 18494,16750 18324,16625
+tragen	0:60 18475,16761
 Drängelgitter	BNP:5 6367,825
 Drängelgitter	BNP:5 6352,825
 Drängelgitter	BNP:5 6267,834

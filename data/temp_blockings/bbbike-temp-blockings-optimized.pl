@@ -2494,12 +2494,12 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
 	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 	2::temp 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
-	2::temp 29959,3031 29968,2986
+# REMOVED (F24 wurde eingestellt) ---	2::temp 29959,3031 29968,2986
 #: XXX_prog ^^^
 ',
          'until' => undef,
          'from' => undef,
-         'text' => 'Fähren F21, F23, F24: fahren nur ab Karfreitag bis zum 3. Oktober, fahren nicht am Montag',
+         'text' => 'Fähren F21 und F23: fahren nur ab Karfreitag bis zum 3. Oktober, fahren nicht am Montag',
          'type' => 'gesperrt',
          'id' => 2408
        },
@@ -2731,26 +2731,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_020168',
-         'until' => 1382104800,
-         'text' => 'Neumannstr. (Pankow): Baustelle, zwischen Thulestr. und Eschengraben Richtung Norden gesperrt, bis 18.10.2013 ',
-         'from' => 1376816220,
-         'id' => 2470,
-         'data' => 'userdel	q4::inwork; 11635,16616 11621,16749
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_020183',
-         'until' => 1382104800,
-         'text' => 'Thulestr. (Pankow): Baustelle zwischen Neumannstraße und Talstr., Fahrbahn gesperrt, bis 18.10.2013 ',
-         'from' => 1376816220,
-         'id' => 2471,
-         'data' => 'userdel	q4::inwork 11825,16666 11767,16631 11725,16626 11635,16616
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2891,16 +2873,7 @@ userdel	q4::inwork 20354,-569 20252,-571 20205,-548
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5082.html',
-         'until' => 1382133600,
-         'text' => 'Friedrichsbrücke: ab dem 14.10.2013 um 10.00 Uhr bis zum 18.10.2013 um 24.00 Uhr ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt ',
-         'from' => 1381651200,
-         'id' => 2498,
-         'data' => 'userdel	2::inwork 10086,12725 10166,12777
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_020486',
          'until' => 1384185600,
@@ -2919,6 +2892,16 @@ userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13691
          'from' => 1371198900,
          'id' => 2500,
          'data' => 'userdel	q4::inwork; 12510,18954 12522,18813 12541,18625 12548,18503
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131017.1305.390466.html',
+         'until' => 1387666799,
+         'text' => 'Lengeder Str.: Bauarbeiten zwischen Montanstr. und Roedernallee, Einbahnstraße offen in Richtung Montanstr., ab dem 21. Oktober 2013 bis Ende Dezember 2013',
+         'from' => 1382220000,
+         'id' => 2501,
+         'data' => 'userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6247,19454
 ',
          'type' => 'handicap'
        }

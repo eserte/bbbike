@@ -418,8 +418,8 @@ Viktoriapark: Fuﬂg‰nger	q1 9007,9264 8982,9198 8990,9166 9020,9150 9080,9163 915
 (Parkweg Mˆllendorffstr. - Rathausstr.): Fuﬂg‰nger	q2 15420,12178 15520,12160 15628,12246
 Bleckmannweg: Fuﬂg‰nger, eng	q1 15656,12235 15746,12209
 Hoenerweg: Fuﬂg‰nger, eng	q1 15670,12298 15790,12289 15896,12273
-S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20109,16305
-(S-Bhf. Raoul-Wallenberg-Str. - Alfred-Dˆblin-Str.): Fuﬂg‰nger, Bordsteine	q2 20109,16305 20198,16322
+S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20116,16303
+(S-Bhf. Raoul-Wallenberg-Str. - Alfred-Dˆblin-Str.): Fuﬂg‰nger, Bordsteine	q2 20116,16303 20198,16322
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fuﬂg‰nger	q1 20286,16494 20547,16485 20865,16440 21102,16415
 (Kinderbad Platsch - Max-Herrmann-Str.): Fuﬂg‰nger	q1 21102,16415 21177,16499 21238,16627
 Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
@@ -587,10 +587,10 @@ Verdener Gasse: enge Straﬂe	q1 15878,14761 15946,14702
 Verdener Gasse: Bordsteine	q3 15946,14702 15972,14681
 (Waisenstr. - Littenstr.): Fuﬂg‰nger	q3 11049,12386 11084,12395
 Karl-Vesper-Str.: enge Straﬂe	q1 14184,13670 14205,13755 14263,13739
-(Karl-Vesper-Str. - Landsberger Allee): Fuﬂg‰nger, Bordsteine	q2 14205,13755 14218,13834
+(Karl-Vesper-Str. - Landsberger Allee): Fuﬂg‰nger, Bordstein	q2 14205,13755 14218,13834
 Mahlerstr.: Fuﬂg‰ngerzone, Radfahrer frei	q2 13739,15643 13714,15709
 Fuﬂg‰ngerbr¸cke Storkower Str.: Fuﬂg‰nger	q2 14481,13143 14524,13271 14530,13269
-(Fuﬂg‰ngerbr¸cke Storkower Str.): Bordstein	q2 14469,13137 14481,13143
+(Fuﬂg‰ngerbr¸cke Storkower Str.): Bordstein	q2 14465,13138 14481,13143
 Lemgoer Str.: Fuﬂg‰nger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
 (Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
@@ -818,7 +818,7 @@ Rehauer Pfad: enge Straﬂe	q1 7587,3411 7626,3554
 Appelbacher Weg: Rampe	q2 27780,893 27804,878
 Hallgarter Steig: eng und kurvig	q1 27890,373 27961,321 28042,304 28046,268 28058,155 28068,148 28071,112 28086,101 28070,22 28083,-34 28065,-114 28042,-152
 Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 27624,-480 27605,-661 27573,-757 27603,-906 27562,-1043 27578,-1153 27539,-1337
-Papendickstr.: enge Straﬂe	q0 17071,16166 17073,16222 17135,16334 17170,16365
+Papendickstr.: enge Straﬂe	q0 17071,16174 17073,16222 17135,16334 17170,16365
 Am Wiesenweg: Fuﬂg‰nger	q1 21977,988 21857,989 21708,937 21683,906
 Grasm¸ckenweg: Fuﬂg‰nger, eng	q2 14877,3475 14822,3409
 (Scharnweberstr. - Berenhorststr.): Fuﬂg‰nger	q1 4801,17623 4816,17712
@@ -958,7 +958,7 @@ Idealpassage: Fuﬂg‰nger, eng, Schrittgeschwindigkeit	q3 12434,8776 12578,8654
 (Am Wriezener Bahnhof - R¸dersdorfer Str.): enger Weg, Bordsteine	q2 12944,11760 13052,11867
 (Normannenstr. - Jobcenter Lichtenberg): Bordstein, Fuﬂg‰nger	q2 16056,12317 16068,12376
 (Normannenstr. - Jobcenter Lichtenberg): Fuﬂg‰nger	q1 16068,12376 16079,12432 16089,12522
-(Parkweg): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 14690,12900 14414,12979
+(Parkweg): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 14690,12900 14419,12978
 Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 (Zobtener Str. - Fischerstr.): Fuﬂg‰nger, Rampe, Bordstein	q2 16353,10207 16404,10286
 (Fischerstr. - L¸ckstr.): Fuﬂg‰nger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
@@ -1624,7 +1624,7 @@ Krebsgang: enge Straﬂe	q1 15085,7258 14997,7240 14878,7211 14792,7192 14693,7168
 Einhornstr.: enge Straﬂe	q1 14708,7325 14792,7192
 Steinbockstr.: enge Straﬂe	q1 14775,7385 14840,7307 14848,7288 14878,7211
 Steinbockstr.: enge Straﬂe	q1 14840,7307 14861,7316 14868,7297 14848,7288
-Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, schmal	q2 17274,16177 17371,16194 17383,16197
+Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, schmal	q2 17273,16187 17371,16194 17383,16197
 (Malteserstr. - Hanielweg): Fuﬂg‰nger	q1 7451,1818 7534,1818 7562,1796
 (An der Kol. Kˆnigsgraben, nˆrdl. Parkweg): Fuﬂg‰nger	q1 7189,1942 7390,2021
 (An der Kol. Kˆnigsgraben, s¸dl. Parkweg): Fuﬂg‰nger	q1 7415,1846 7275,1843 7226,1842 7119,1829
@@ -1666,7 +1666,7 @@ Uferweg am Weiﬂen See: Fuﬂg‰nger	q2 14463,16735 14423,16749 14299,16740 14232,16
 Berliner Allee - Uferweg: enge Rampe oder 6 Stufen	q4 14499,16341 14485,16362
 Seeweg (Weiﬂensee): Fuﬂg‰nger	q2 14485,16362 14480,16449
 Seeweg (Weiﬂensee): Fuﬂg‰nger	q1 14610,16522 14581,16529 14510,16549
-(Treppe zur Gehrenseestr.)	q4 18465,16761 18448,16759 18454,16775
+(Treppe zur Gehrenseestr.)	q4 18490,16761 18475,16761 18482,16774
 (Blohmstr. - Diedersdorfer Str.): kaum Fuﬂg‰nger	q1 9093,-1670 8968,-1576 8845,-1521 8776,-1487 8492,-1376 8073,-1137
 (Dinnendahlstr. - Schichauweg): kaum Fuﬂg‰nger	q1 9123,-1321 8953,-1184 8882,-1142 8873,-1118
 K¸hleweinstr.: Schule	q1 8014,17468 7998,17564

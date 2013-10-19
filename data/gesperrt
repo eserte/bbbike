@@ -61,12 +61,12 @@ Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19480,15094 19563,15113 19694,15141 19852,15201
+Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19507,15095 19563,15113 19694,15141 19852,15201
 Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19156,14953 19013,14905
-Knoten Märkische/Landsberger Allee	1 19466,14910 19464,14971 19408,15007
-Knoten Märkische/Landsberger Allee	1 19506,15002 19551,14961 19615,14960 19643,15025 19614,15061
+Knoten Märkische/Landsberger Allee	1 19452,14807 19464,14971 19408,15007
+Knoten Märkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
-Knoten Märkische/Landsberger Allee	1 19480,15094 19604,15227
+Knoten Märkische/Landsberger Allee	1 19507,15095 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5049,14675 5233,14753 5440,14840
@@ -861,6 +861,7 @@ Ulrich-von-Hutten-Str.	1 -13456,-3099 -13481,-2956
 Johannes-R.-Becher-Str.	1 -10134,-4981 -10288,-4749
 Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
+Wachtelweg (Ahrensfelde)	1 22212,19404 22239,19349
 Max-Sabersky-Allee (Teltow)	1 2457,-100 2399,-13 2545,92 2704,198 2902,329
 Hauffstr. (Teltow)	1 2763,103 2704,198
 Fritz-Reuter-Str. (Teltow)	1 2545,92 2560,-25
@@ -1309,9 +1310,6 @@ Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 
 Alt-Biesdorf -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22326,11266 22242,11269 22238,11223
 Wuhlewanderweg -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22244,11311 22242,11269 22238,11223
 Wuhlewanderweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22244,11311 22242,11269 22326,11266
-wegen Absperrgitter nicht überquerbar	3nocross::ignrte 16961,16042 16917,16001 16819,15912
-Große-Leege-Str. -> Konrad-Wolf-Str.: wegen Absperrgitter nicht überquerbar	3::igndisp 16922,15977 16917,16001 16819,15912
-Konrad-Wolf-Str. -> Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3::igndisp 16961,16042 16917,16001 16922,15977
 Mittelstreifen nicht passierbar	3nocross::ignrte 2975,15813 2960,15847 2944,15880
 Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2944,15880 2960,15847 2996,15930
 Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2880,15884 2960,15847 2944,15880
@@ -1448,13 +1446,13 @@ Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndi
 Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5541,9923
 Pariser Str. -> Bundesallee: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5463,9961
 Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5463,9961 5464,9914 5541,9923
-Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19506,15002 19466,14910 19449,14790
+Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Märkische Allee -> Parkpl. Le Prom: Linksabbiegen nicht möglich	3::igndisp 19664,15366 19619,15262 19784,15191
 Parkpl. Le Prom -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19784,15191 19619,15262 19604,15227
-Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19577,15166 19604,15227 19480,15094
+Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19577,15166 19604,15227 19507,15095
 Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19604,15227 19577,15166 19654,15219
-Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19551,14961 19506,15002 19466,14910
-Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19464,14971 19466,14910 19506,15002
+Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19551,14961 19516,14993 19452,14807
+Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19464,14971 19452,14807 19516,14993
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9865,10227 9858,10199 9837,10117
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9884,10192 9858,10199 9837,10117
 Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
@@ -1691,9 +1689,9 @@ Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6129,12976 
 nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6164,12980 6157,12933
 nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6164,12980 6129,12976
 Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6183,13083 6164,12980 6190,12978
-Linksabbiegen verboten	3nocross::ignrte 20109,16305 20219,16523 20339,16752
-Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,16494 20219,16523 20109,16305
-Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20339,16752 20219,16523 20286,16494
+Linksabbiegen verboten	3nocross::ignrte 20116,16303 20219,16523 20318,16710
+Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,16494 20219,16523 20116,16303
+Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20318,16710 20219,16523 20286,16494
 Linksabbiegen verboten	3nocross::ignrte 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
 zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20727,17558 20691,17463 20717,17516
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20853,17528 20717,17516 20691,17463
@@ -2223,7 +2221,7 @@ tragen (23 Stufen)	0:25:16 13138,9897
 unter der S-Bahn-Brücke tragen (6 Stufen)	0:10:-180 3726,18982
 unter der S-Bahn-Brücke tragen (5 Stufen)	0:10:-154 3733,18997
 tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30:-71 14530,13269
-tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40:-116 14481,13143
+tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40:-107 14481,13143
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35:-45 14383,10036
 tragen (1+3 Stufen)	0:30:-114 13232,12628
 tragen (34 Stufen)	0:40:40 14787,10972
@@ -2649,8 +2647,8 @@ Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,2
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 1826,20492 1761,20539 1741,20571
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
-An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14449,12833 14594,12800
-Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14480,12932 14682,12874
+An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14509,12819 14594,12800
+Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536,12916 14682,12874
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9869,12297
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245 9795,12293 9780,12401
@@ -2985,7 +2983,7 @@ Rheinpfalzallee -> Treskowallee: Straßenbahn	3::igndisp 18931,9629 18865,9608 18
 Straßenbahn	3nocross::ignrte 18807,9746 18823,9708 18865,9608
 Römerweg -> Treskowallee: Straßenbahn	3::igndisp 18994,9707 18823,9708 18865,9608
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253
-Drängelgitter	BNP:10:-99 17371,16194
+Drängelgitter	BNP:10:-94 17371,16194
 Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7277,1747 7332,1718
 Arnstädter Str.	1 6553,1409 6528,1207 6512,1086 6526,1083 6515,1010
 tragen (5 Stufen)	0:20:90 6501,1207
@@ -3008,8 +3006,8 @@ Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21869,18227
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3056,22693
 Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
-Gehrenseestr.	1 18477,16748 18324,16625
-tragen	0:60:83 18448,16759
+Gehrenseestr.	1 18494,16750 18324,16625
+tragen	0:60:90 18475,16761
 Drängelgitter	BNP:5:80 6367,825
 Drängelgitter	BNP:5:90 6352,825
 Drängelgitter	BNP:5:-263 6267,834

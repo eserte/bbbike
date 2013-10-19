@@ -531,8 +531,8 @@ Zernseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1897,16562 -1783,16533 -1765
 Daumstr. -> Templiner-See-Str.: Mittelstreifen	3::igndisp -1810,16391 -1798,16465 -1902,16493
 Templiner-See-Str. -> Daumstr.: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1783,16533
 Karlstr.	1 22556,4386 22458,4134
-Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21251,18508
-Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,18679 21251,18508
+Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21309,18626 21251,18508
+Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,18679 21309,18626
 Märkische Allee -> Klandorfer Str.: Mittelstreifen	3::igndisp 21400,18817 21335,18679 21377,18663
 Mittelstreifen	3nocross::ignrte 1214,3198 1338,3300 1415,3362
 Mörchinger Str. -> Berliner Str.: Mittelstreifen	3::igndisp 1388,3197 1338,3300 1214,3198
@@ -1632,3 +1632,5 @@ Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
 Sperrfläche, Abbiegen nicht erlaubt	3nocross::ignrte 17492,6462 17530,6496 17614,6571
 Tabbertstr. -> Siemensstr.: Sperrfläche, Abbiegen nicht erlaubt	3::igndisp 17418,6702 17530,6496 17614,6571
 Siemensstr. -> Tabbertstr.: Sperrfläche, Abbiegen nicht erlaubt	3::igndisp 17492,6462 17530,6496 17418,6702
+Fasanenstr. (Ahrensfelde): Poller	3 21895,19198 22031,19261 22049,19268
+Fasanenstr. (Ahrensfelde): Poller	3 22049,19268 22031,19261 21895,19198
