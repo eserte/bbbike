@@ -794,6 +794,7 @@ Neue Jakobstr./Schulze-Delitzsch-Platz	1 11060,11753 11073,11774
 Edith-Kiss-Str.	1 12793,11132 12866,11256
 Garzauer Str.	1 21830,13688 21722,13708
 Flankenschanze	1 -3507,15341 -3534,15219
+Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -983,6 +984,8 @@ Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
+Straßenbahnhaltestelle	3nocross::ignrte 10908,17142 10917,17088 10927,17022
+Berliner Str. -> Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]: Straßenbahnhaltestelle	3::igndisp 10927,17022 10917,17088 10891,17088
 Mittelstreifen	3nocross::ignrte 21831,13801 21853,13784 21918,13720
 Cecilienstr. -> Siegmarstr.: Mittelstreifen	3::igndisp 21831,13801 21853,13784 21870,13852
 Siegmarstr. -> Cecilienstr.: Mittelstreifen	3::igndisp 21870,13852 21853,13784 21918,13720
@@ -1754,8 +1757,8 @@ Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 7077,1607
 Amsterdamer Str. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6802,15790
 Straßenbahntrasse	3nocross::ignrte 14597,15970 14609,15921 14653,15738
 Orankeweg -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14720,15905 14609,15921 14653,15738
-Straßenbahntrasse	3nocross::ignrte 14550,16161 14522,16260 14499,16341
-Gartenstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14628,16249 14522,16260 14550,16161
+Straßenbahntrasse	3nocross::ignrte 14552,16171 14522,16260 14499,16341
+Gartenstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14628,16249 14522,16260 14552,16171
 Indira-Gandhi-Str. -> Gartenstr.: Straßenbahntrasse	3::igndisp 14499,16341 14522,16260 14628,16249
 unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross::ignrte 16737,11866 16803,11859 16962,11833 17037,11820 17121,11806 17151,11801
 Frankfurter Allee -> Gudrunstr.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16737,11866 16803,11859 16833,11897
@@ -2279,6 +2282,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+mehrere Poller	BNP:1:-139:trailer=6 12299,19143
 Drängelgitter	BNP:3:-194:trailer=10 10062,15927
 zwei weite Drängelgitter	BNP:4:64:trailer=12 10038,15418
 Schranke	BNP:3:-93 -7969,-1659
@@ -2617,6 +2621,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+(Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
 tragen (2 Stufen)	0:5:57 8818,13365
 (Bautzener Str. - Südkreuz): Bauzaun, Zugang noch nicht erlaubt	2:inwork 8185,9338 8207,9324 8204,9046
 Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616

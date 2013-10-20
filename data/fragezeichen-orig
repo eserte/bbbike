@@ -155,9 +155,9 @@ Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 76
 #: XXX Baumaßnahme 3.39 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: osm_watch: way id="144945039" version="4"
-#: last_checked: 2013-08-16
-#: check_frequency: 100d
-Granitzstr.: Radspuren bis 2015 geplant	?::projected 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
+#: last_checked: 2013-10-20 (Markierungsarbeiten in Gange, aber anscheinend wird nur in Richtung Nordosten markiert)
+#: next_check: 2013-10-25
+Granitzstr.: Radspuren bis 2015 geplant	?::inwork; 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
 # 
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
 #: last_checked: 2013-08-27
@@ -390,8 +390,8 @@ Gleisdreieckpark - Hellweg-Parkplatz: entsteht hier ein Weg?	?::projected 8260,1
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gudvanger_strasse.html vvv
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf?start&ts=1365760997&file=kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf vvv
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130910.1250.389055.html (Baubeginn 38. KW) vvv
-#: last_checked: 2013-08-16 vvv
-#: next_check: 2013-10-16 vvv
+#: last_checked: 2013-10-20 vvv
+#: next_check: 2013-11-20 vvv
 #: priority: #C
 Erich-Weinert-Str.: Zebrastreifen in Planung	?::projected 11710,15997 11691,15978
 Gudvangerstr.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11684,15997 11758,16111
@@ -595,7 +595,7 @@ Einmündung der Burgfrauenstraße in den Zeltinger Platz: Zebrastreifen ist geplan
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden)
 #: osm_watch: node id="29778885" version="4"
-#: last_checked: 2013-09-06
+#: last_checked: 2013-10-20
 #: check_frequency: 150d
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::projected 13708,17453
 # 
@@ -666,7 +666,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
-#: last_checked: 2013-09-13
+#: last_checked: 2013-10-20
 #: check_frequency: 100d
 #: priority: #C
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
@@ -841,8 +841,8 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: XXX Privatstraße
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
 #: osm_watch: way id="137340264" version="6"
-#: last_checked: 2013-08-16
-#: check_frequency: 100d
+#: last_checked: 2013-10-20
+#: check_frequency: 90d
 Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,13104
 # 
 # REMOVED (-> strassen-orig etc.) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: XXX siehe auch Eintrag für "Am Langen Jammer" in gesperrt-orig --- #: last_checked: 2012-10-26 vvv --- #: next_check: 2012-12-01 vvv --- An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14376,12849 14449,12833 14594,12800 --- An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14449,12833 14480,12932 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -985,11 +985,12 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012)
 #: osm_watch: way id="22044872" version="10"
 #: osm_watch: way id="22045147" version="18"
-#: XXX anscheinend existiert schon was auf der Fahrbahn Richtung Osten
-Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen	?::projected 16964,16042 16961,16042 16660,16165 16522,16206 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
+#: last_checked: 2013-10-20
+#: next_check: 2013-10-26
+Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 16964,16042 16961,16042 16883,16074 16660,16165 16522,16206 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
-#: last_checked: 2013-07-12
+#: last_checked: 2013-10-20
 #: check_frequency: 90d
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 
@@ -1083,8 +1084,7 @@ Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,88
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Kopernikusstr. (Friedrichshain): Baustelle, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Simon-Dach-Str. ab Warschauer Str., 27.09.2013 08:04 Uhr bis 18.10.2013 16:00 Uhr	IM_020398 --- Kopernikusstr.: Bauarbeiten?	?::inwork; 13651,11731 13895,11663
 # REMOVED (siehe Sperrung der Friedrichsbrücke) --- #: XXX vmz-Eintrag relevant? NEW	Burgstr. (Mitte): Straße vollständig gesperrt (bis 19.10.2013, 24:00 Uhr) in beiden Richtungen zwischen Neue Promenade und Spandauer Str., 10.10.2013 17:29 Uhr bis 19.10.2013 23:59 Uhr	IM_020483	--- #: priority: #A --- Burgstr. und Anna-Louisa-Karsch-Str.: volständig gesperrt?	?::inwork 10132,12941 10166,12777 10264,12826
 # REMOVED (Richtung Norden können Radfahrer explizit passieren; Richtung Süden entweder einen legalen Schlenker über die Scharnweberstr. machen (die ebenfalls gesperrt ist), oder abenteuerlicherweise die Fahrbahn benutzen) --- #: XXX vmz-Eintrag relevant? NEW	Gürtelstr. (Friedrichhain): Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Frankfurter Allee zwischen Oderstr. und Frankfurter Allee, 01.10.2013 09:22 Uhr bis 14.10.2013 16:00 Uhr	IM_020415	 --- Gürtelstr.: Fahrtrichtung gesperrt?	?::inwork; 15106,11598 15202,11789 15248,11880 15294,11964 15361,12071
-#: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388	
-Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
+# REMOVED (aufgenommmen) --- #: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388 --- Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
 #: XXX vmz-Eintrag relevant? CHANGED	Waßmannsdorfer Chaussee (Neukölln): Baustelle, Straße vollständig gesperrt (bis Mitte 12/13) in beiden Richtungen in Höhe Rhodeländerweg, 28.05.2013 13:06 Uhr bis 20.12.2013 15:00 Uhr	IM_019886	
 #: XXX ask rj?
 Waßmannsdorfer Chaussee: Bauarbeiten?	?::inwork 16400,-409 16373,-496 16273,-824
@@ -1338,7 +1338,7 @@ Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::proj
 #: XXX fehlt in Berlin.coords.data, PLZ=13189
 #: note: Weg in der Anlage "Insel Rügen" eG
 #: osm_watch: way id="28997509" version="11"
-#: last_checked: 2013-08-16
+#: last_checked: 2013-10-20
 #: check_frequency: 90d
 Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage (GPS-Koordinaten!)	?::inwork 10960,17674 10969,17587 11064,17599 11354,17642
 # 

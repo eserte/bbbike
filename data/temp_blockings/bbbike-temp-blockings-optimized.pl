@@ -2904,6 +2904,28 @@ userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13691
          'data' => 'userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6247,19454
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020388',
+         'until' => 1388502000,
+         'text' => 'Mühlenstr. (Pankow): Baustelle zwischen Berliner Str. und Tiroler Str., Fahrtrichtung gesperrt, bis Ende Dezember 2013 ',
+         'from' => 1380101700,
+         'id' => 2502,
+         'data' => 'userdel	1::inwork 10927,17022 10862,17087
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Krügerstr. und Gudvanger Str.: Bauarbeiten im Bereich Erich-Weinert-Str., Fahrbahn gesperrt',
+         'from' => undef,
+         'id' => 2503,
+         'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2013-10-20
+#: next_check: 2013-11-20
+userdel	q3::inwork 11758,16111 11684,15997 11859,16058
+',
+         'type' => 'handicap'
        }
      
 );

@@ -12447,7 +12447,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009790',
        data  => <<EOF,
-userdel	1::inwork 16660,16165 16961,16042
+userdel	1::inwork 16660,16165 16883,16074 16961,16042
 EOF
      },
      { from  => 1247724607, # 2009-07-16 08:10
@@ -20556,7 +20556,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_019006',
        data  => <<EOF,
-userdel	q4::inwork; 10927,17022 10908,17142
+userdel	q4::inwork; 10927,17022 10917,17088 10908,17142
 EOF
      },
      { from  => 1342940400, # 2012-07-22 09:00
@@ -21987,6 +21987,26 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131017.1305.390466.html',
        data  => <<EOF,
 userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6247,19454
+EOF
+     },
+     { from  => 1380101700, # 2013-09-25 11:35
+       until => 1388502000, # 2013-12-31 16:00
+       text  => 'Mühlenstr. (Pankow): Baustelle zwischen Berliner Str. und Tiroler Str., Fahrtrichtung gesperrt, bis Ende Dezember 2013 ',
+       type  => 'gesperrt',
+       source_id => 'IM_020388',
+       data  => <<EOF,
+userdel	1::inwork 10927,17022 10862,17087
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Krügerstr. und Gudvanger Str.: Bauarbeiten im Bereich Erich-Weinert-Str., Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2013-10-20
+#: next_check: 2013-11-20
+userdel	q3::inwork 11758,16111 11684,15997 11859,16058
 EOF
      },
     );

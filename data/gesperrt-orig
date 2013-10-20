@@ -1083,6 +1083,7 @@ Neue Jakobstr./Schulze-Delitzsch-Platz	1 11060,11753 11073,11774
 Edith-Kiss-Str.	1 12793,11132 12866,11256
 Garzauer Str.	1 21830,13688 21722,13708
 Flankenschanze	1 -3507,15341 -3534,15219
+Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1323,6 +1324,7 @@ Ritterstr.	1 -3360,14525 -3316,14504
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
 Cecilienstr.: Mittelstreifen	3nocross 21831,13801 21853,13784 21918,13720
 Warnemünder Str.: Mittelstreifen	3nocross 2767,7592 2750,7444 2744,7397
 Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3nocross 8057,14876 8091,14895 8219,14897
@@ -1556,7 +1558,7 @@ Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7043,15793
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14653,15738
-Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14550,16161 14522,16260 14499,16341
+Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14552,16171 14522,16260 14499,16341
 # REMOVED (das Überqueren ist möglich!) --- Weißenseer Weg: Straßenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
 Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16803,11859 16962,11833 17037,11820 17121,11806 17151,11801
 #: by: Kerstin Pantos:
@@ -1987,6 +1989,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+mehrere Poller	BNP:1::trailer=6 12299,19143
 Drängelgitter	BNP:3::trailer=10 10062,15927
 #: XXX eventuell temporär wegen der Baustraße
 #: XXX siehe auch in zebrastreifen-orig
@@ -2447,6 +2450,10 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: last_checked: 2013-10-20
+#: next_check: 2014-02-14
+(Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
 # 
 #: last_checked: 2013-10-15
 #: next_check: 2015-08-30
