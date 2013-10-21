@@ -113,6 +113,19 @@ if ($with_searches_weight) {
     $searches_weight_net->make_net;
 }
 
+my $str_net;
+my $crossings;
+{
+    require Strassen::Core;
+    require Strassen::Kreuzungen;
+    require Strassen::MultiStrassen;
+    require Strassen::StrassenNetz;
+    my $ms = MultiStrassen->new(qw(strassen landstrassen landstrassen2));
+    $str_net = StrassenNetz->new($ms);
+    $str_net->make_net(UseCache => 1);
+    $crossings = Kreuzungen->new(UseCache => 1, Strassen => $ms, WantPos => 1);
+}
+
 my @files = @ARGV
     or die "Please specify bbd file(s)";
 
@@ -121,10 +134,16 @@ my @records;
 # gracefully exit, so DistDB may flush computed things
 $SIG{INT} = sub { exit };
 
+my %files_add_street_name = map{($_,1)} ('radwege', 'ampeln');
+
 for my $file (@files) {
     debug("$file...\n");
     my $abs_file = realpath $file;
-    my $is_fragezeichen_file = basename($file) =~ m{^fragezeichen(-orig)?$};
+    my $basename = basename($file);
+    (my $basebasename = $basename) =~ s{-orig$}{};
+    my $is_fragezeichen_file = $basebasename eq 'fragezeichen';
+    my $do_add_street_name = $files_add_street_name{$basebasename};
+
     my $s = StrassenNextCheck->new_stream($file);
     $s->read_stream_nextcheck_records
 	(sub {
@@ -173,6 +192,21 @@ for my $file (@files) {
 	     }
 
 	     my $subject = $r->[Strassen::NAME] || _get_first_XXX_directive($dir) || "(" . $file . "::$.)";
+	     if ($do_add_street_name) {
+		 my $add_street_name;
+		 my @c = @{ $r->[Strassen::COORDS] };
+		 if (@c == 1) {
+		     $add_street_name = $crossings->get_crossing_name($c[0]);
+		 } elsif (@c > 1) {
+		     my $rec = $str_net->get_street_record($c[0], $c[1]);
+		     if ($rec) {
+			 $add_street_name = $rec->[Strassen::NAME];
+		     }
+		 } # else: should not happen
+		 if ($add_street_name) {
+		     $subject = $add_street_name . ': ' . $subject;
+		 }
+	     }
 
 	     my $dist_tag = '';
 	     my $any_dist; # either one way or two way dist in meters
