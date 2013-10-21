@@ -113,7 +113,7 @@ Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
 Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5045,7623
 Wassergasse	1 11034,11895 11024,11789
 Kienitzer Str.	1 12830,8031 12692,7996 12583,7974 12466,7946
-Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9410,3793 9731,3889
+Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9426,3797 9731,3889
 Almstadtstr.	1 10790,13565 10767,13443 10757,13401 10699,13173
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
@@ -1261,9 +1261,9 @@ Poller	3 7181,-15 7231,25 7184,150
 Poller	3 7181,-15 7231,25 7277,-77
 Poller	3 7184,150 7231,25 7181,-15
 Poller	3 7277,-77 7231,25 7181,-15
-Mittelstreifen	3nocross::ignrte 9336,4142 9364,4011 9410,3793
-Mariendorfer Damm -> Richterstr.: Mittelstreifen	3::igndisp 9410,3793 9364,4011 9277,3993
-Richterstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9277,3993 9364,4011 9336,4142
+Mittelstreifen	3nocross::ignrte 9346,4144 9372,4012 9426,3797
+Richterstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9277,3993 9372,4012 9346,4144
+Mariendorfer Damm -> Richterstr.: Mittelstreifen	3::igndisp 9426,3797 9372,4012 9277,3993
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18296,10027
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18387,10070
 Ontarioseestr.: Sackgasse für Autos	3 18296,10027 18339,10048 18408,10041
@@ -1634,3 +1634,5 @@ Tabbertstr. -> Siemensstr.: Sperrfläche, Abbiegen nicht erlaubt	3::igndisp 17418
 Siemensstr. -> Tabbertstr.: Sperrfläche, Abbiegen nicht erlaubt	3::igndisp 17492,6462 17530,6496 17418,6702
 Fasanenstr. (Ahrensfelde): Poller	3 21895,19198 22031,19261 22049,19268
 Fasanenstr. (Ahrensfelde): Poller	3 22049,19268 22031,19261 21895,19198
+Oelder Weg	1 1967,18743 1965,18686
+Bernhard-Lichtenberg-Platz	1 2643,18738 2731,18729 2867,18736

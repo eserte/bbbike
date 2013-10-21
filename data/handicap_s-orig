@@ -38,6 +38,12 @@ Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,1165
 # REMOVED --- #: last_checked: 2013-04-16 --- #: check_frequency: 7d --- #: XXX abhängig von den Arbeiten in der Kynaststr. --- #: source_id: IM_018694 --- Alt-Stralau: Asphaltierungsarbeiten unter der Brücke, Fahrbahn gesperrt, Gehweg passierbar	q3::inwork 14652,10201 14619,10223 14558,10264
 # REMOVED (erstmal wieder befahrbar) --- #: last_checked: 2013-03-26 --- Markgrafendamm - Modersohnstr.: Bauarbeiten, Fahrbahn gesperrt, enger Gehweg kann benutzt werden	q3::inwork 14672,10760 14564,10792
 # 
+### Treptow ###
+#
+#: last_checked: 2013-10-21
+#: check_frequency: 60d
+Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 14157,9345 13973,9465
+# 
 ### Mitte ###
 # 
 # REMOVED --- #: last_checked: 2013-06-04 --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
@@ -192,8 +198,9 @@ Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 
 #: osm_watch: way id="34390483" version="8"
 #: source_id: INKO_114376
 #: source_id: IM_019321
-#: last_checked: 2013-09-26
-#: next_check: 2013-12-01 (laut VMZ bis 15.12.2013)
+# REMOVED --- #: last_checked: 2013-09-26
+# REMOVED --- #: next_check: 2013-12-01 (laut VMZ bis 15.12.2013)
+#: XXX mittlerweile vielleicht umgedreht?
 #: priority: #A
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # 
@@ -1229,6 +1236,7 @@ Hilchenbacher Weg: Fußgänger, eng	q2 2426,18544 2444,18487
 #: XXX_prog: BS
 Straße 455: Bordstein	q2 4916,17201 4931,17174
 (Uferweg Plötzensee): Fußgänger	q1- 5618,14981 5518,15236 5291,15424 5073,15619 5036,15615 5008,15592 5051,15508 5084,15415 5005,15213
+#: XXX_prog -> Steigung nach comments_mount?
 (Brücke über den Maselakekanal): Steigung 14%	q2 -2152,17108 -2140,17171 -2165,17176
 Kleingartenstr.: enge Straße	q1 24118,4404 24075,4417 24022,4442 23978,4484
 Gladiolenstr.: enge Straße	q1 23536,4543 23541,4439
@@ -1792,6 +1800,9 @@ Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3116,12012
 (Sonnenallee - Aronsstr.): einige Fußgänger	q1 14519,7301 14571,7427
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): einige Fußgänger, kurvenreich	q2 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
 (Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8242,9699 8200,9662 8192,9619
+(Langensalzaer Str. - Gräfentaler Str.): Fußgänger, eng, kurvig	q3 6188,1542 6182,1536 6199,1486 6212,1483 6231,1442
+#: XXX_prog Steigung -> eigentlich comments_mount
+Am Lokdepot: starke Steigung	q4; 8390,8879 8389,8775
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2121,8 +2132,10 @@ Alice-Salomon-Park: getrennte Wege für Radfahrer und Fußgänger, Bordsteine	q2 68
 (Loewenhardtdamm - Höhndorfstr.): Fußgänger, Bordsteine, Schranken	q2 8334,8655 8438,8676
 (Weg d. Kol. Papestr.): Fußgänger	q1 8215,8631 8259,8628 8265,8305
 (zum Bayernring): Fußgänger	q1 8454,8574 8531,8404
+#: XXX_prog: BS zu beiden Seiten (ansonsten wäre es vielleicht q1 oder q2) vvv
 Bautzener Platz: Fußgänger, Bordsteine	q3 8182,9240 8100,9240
 Bautzener Platz: Fufgänger, Bordsteine	q3 8102,9262 8183,9260
+#: XXX_prog ^^^
 (Danziger Str. - Lilli-Henoch-Str.): Fußgänger	q2 12128,14640 12189,14767 12220,14779 12255,14849 12241,14865 12314,15008
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fußgänger	q2 11860,15309 11919,15314 11937,15349
@@ -2358,7 +2371,8 @@ Seefelder Str. (Fußweg): Fußgänger, schmal	q2 17273,16187 17371,16194 17383,1619
 #: XXX_prog: Bordsteine an jeder Kreuzung
 #: corrected_by: srt (added Bordsteine)
 (Parkweg Trippsteinstr. - Sondershauser Str.): Fußgänger, Bordsteine	q2 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6409,1218
-(Parkweg Blankenhainer Str. - Hildburghauser Str.): Fußgänger	q1 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
+#: corrected_by: srt (added "schieben", q1 -> q2)
+(Parkweg Blankenhainer Str. - Hildburghauser Str.): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben	q2 6578,1595 6554,1564 6539,1476 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
 (Gräfentaler Str. - Georgenstr.): Fußgänger	q1 6189,1423 6132,1395
 #: XXX_prog: Bordsteine
 #: corrected_by: srt (added Bordsteine)
@@ -2368,7 +2382,7 @@ Altenburger Str.: Fußgänger, Bordsteine	q2 6651,1063 6631,968
 (Lilienthalpark): Fußgänger	q2 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
 (Lilienthalpark): Fußgänger	q2 5571,614 5533,663
 (Lilienthalpark): Fußgänger	q2 5539,773 5576,800
-(Hildburghauser Str. - Lilienthalpark): Fußgänger	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5682,767 5675,764 5615,735 5590,719
+(Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5682,767 5675,764 5615,735 5590,719
 (Mauerweg Lichtenrade - Lichterfelde): Fußgänger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6253,361 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 #: by: ^^^
 #: by: Josch [AM]
@@ -3379,8 +3393,10 @@ Narzissenpfad: enge Straße	q0- -7387,14951 -7523,14969
 (Pankeweg zwischen Pankstr. und Wiesenstr.): einige Fußgänger	q1 8140,15859 8129,15701 8156,15614
 # 
 #: by: Wolfgang Koehne vvv
+#: XXX_prog Steigung -> comments_mount? vvvv
 (Am Rosenanger - Am Sandkrug, Entenschnabel): stark abschüssig, eine 30cm-Stufe	q4; 3462,24702 3489,24659 3535,24626
 (Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3489,24659 3462,24702
+#: XXX_prog ^^^
 #: by: ^^^
 # 
 #: by: j. bethsold

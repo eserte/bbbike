@@ -21939,8 +21939,8 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131007.1105.390062.html',
        data  => <<EOF,
-userdel	q4::inwork 20790,-537 20675,-526 20362,-511
-userdel	q4::inwork 20354,-569 20252,-571 20205,-548
+#: source_id: IM_020526
+userdel	q4::inwork 20790,-537 20675,-526 20362,-511 20354,-569 20252,-571 20205,-548
 EOF
      },
      { from  => 1381615200, # 2013-10-13 00:00

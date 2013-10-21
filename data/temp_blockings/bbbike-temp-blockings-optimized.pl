@@ -2858,8 +2858,8 @@ userdel	q2::inwork; 14181,11434 14211,11552
          'text' => 'Grünbergallee: zwischen Hufenweg und B 96 A wird die Fahrbahn in Stand gesetzt, Vollsperrung vom 21.10.2013 bis zum 26.10.2013 ',
          'from' => 1382220000,
          'id' => 2496,
-         'data' => 'userdel	q4::inwork 20790,-537 20675,-526 20362,-511
-userdel	q4::inwork 20354,-569 20252,-571 20205,-548
+         'data' => '#: source_id: IM_020526
+userdel	q4::inwork 20790,-537 20675,-526 20362,-511 20354,-569 20252,-571 20205,-548
 ',
          'type' => 'handicap'
        },

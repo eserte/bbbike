@@ -99,13 +99,13 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2013-10-16
+#: last_checked: 2013-10-21
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-10-14
+#: last_checked: 2013-10-21
 #: next_check: 2014-01-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -196,7 +196,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: XXX Baumaßnahme 8.20 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-10-14 (Richtung Süden teilweise realisiert)
+#: last_checked: 2013-10-21 (Richtung Süden teilweise realisiert)
 #: next_check: 2013-11-01
 Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
@@ -250,10 +250,7 @@ Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,1516
 #: check_frequency: 90d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
-#: XXX Markierungsarbeiten haben wohl angefangen, genauer anschauen
-#: last_checked: 2013-10-18
-#: next_check: 2013-10-18
-Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
+# REMOVED (-> radwege-orig) --- #: XXX Markierungsarbeiten haben wohl angefangen, genauer anschauen --- #: last_checked: 2013-10-18 --- #: next_check: 2013-10-18 --- Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
 # 
 #: last_checked: 2013-09-13
 #: check_frequency: 100d
@@ -298,13 +295,11 @@ Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,
 #: check_frequency: 90d
 Königstr.: Radspuren bis 2015 geplant	?::projected -9412,546 -9730,514 -9969,519 -10052,521 -10269,445 -10593,476
 # 
-#: last_checked: 2013-07-06
-#: next_check: 2013-10-13
-Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
+# REMOVED (realisiert) --- #: last_checked: 2013-07-06 --- #: next_check: 2013-10-13 --- Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
 # 
-#: last_checked: 2013-07-06
-#: next_check: 2013-10-13
-Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9308,4407 9192,4389 9079,4376
+#: last_checked: 2013-10-21
+#: next_check: 2014-01-21
+Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,4376
 # 
 #: last_checked: 2013-09-27
 #: check_frequency: 90d
@@ -354,9 +349,6 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4644
-Mariendorfer Damm/Alt-Mariendorf: werden hier Radverkehrsanlagen erstellt?	?::inwork; 9440,3665 9410,3793
-# 
 #: last_checked: 2013-10-14
 #: next_check: 2013-11-01
 Siegfriedstr. - Landschaftspark Herzberge: neuer Weg entsteht, Qualität, Beleuchtung?	?::inwork 17111,14184 17219,14133 17219,14133 17111,14184
@@ -383,7 +375,7 @@ Ellen-Widmann-Pfad: Bauarbeiten	?::inwork 3902,2454 3902,2405 3894,2368 3853,230
 #: XXX wahrscheinlich verboten für Radfahrer und ohne Radwege (prüfen!)
 Mahlow - Teltow: Schellstraße (?) in Bau	?::inwork 10246,-4271 7955,-4250
 # 
-#: last_checked: 2013-10-14
+#: last_checked: 2013-10-21
 #: XXX im südlichen Teil Verbundsteinpflaster
 Gleisdreieckpark - Hellweg-Parkplatz: entsteht hier ein Weg?	?::projected 8260,10183 8282,9996 8243,9766
 # 
@@ -536,8 +528,8 @@ Wassersportallee: wird hier eine Fußgängerampel eingerichtet?	? 22506,1379 22488
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/B-XIII-102U.jpg
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/UeberXIII-102.htm
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036573567460/573567460/00038455/55-Anlagen/03/3_Version_vom_05_12_2012.pdf
-#: last_checked: 2013-07-06
-#: next_check: 2014-03-15
+#: last_checked: 2013-10-21
+#: next_check: 2014-06-21
 Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,4376
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00079726/26-Anlagen/01/DRS0047VK.pdf (Bebauungsplan 9 - 47)
@@ -617,7 +609,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
-#: last_checked: 2013-09-11
+#: last_checked: 2013-10-21
 #: check_frequency: 60d
 #: priority: #C
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13860,8599 13898,8613
@@ -758,10 +750,9 @@ Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahns
 #: check_frequency: 90d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
-#: XXX eventuell passiert etwas in Zuge der Bauarbeiten (bis Oktober 2013)?
 #: source_id: IM_020353	
-#: last_checked: 2013-09-15
-#: next_check: 2013-10-31
+#: last_checked: 2013-10-21
+#: check_frequency: 100d
 Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?::inwork; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2514
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Planung, Stand 2012-04)
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20130429.1340.384123.html (Beginn: 2013-05-06)
@@ -775,12 +766,12 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues 
 #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Brücke)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619&date=20130910 (Antwort)
-#: last_checked: 2013-10-14 (Rampe noch in Bau) vvv
+#: last_checked: 2013-10-21 (südliche Rampe noch in Bau) vvv
 #: next_check: 2013-11-30 vvv
 #: osm_watch: way id="187902666" version="2"
-Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert	?::projected 8333,9583 8338,9443 8388,9242 8373,9022 8389,9087
+Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert, asphaltiert	?::projected 8333,9583 8338,9443 8388,9242 8373,9022 8389,9087
 #: by: http://gleisdreieck-blog.de/wordpress/wp-content/uploads/eingang-yorck-collignon.jpg
-Eingang zum Flaschenhalspark	?::projected 8358,9568 8338,9443
+Eingang zum Flaschenhalspark: betoniert, wahrscheinlich auch mit Drängelgittern?	?::projected 8358,9568 8338,9443
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -969,7 +960,7 @@ Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1
 Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5258,11285 5247,10992 5242,10918 5229,10716 5207,10399
 # 
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
-#: last_checked: 2013-10-14
+#: last_checked: 2013-10-21
 #: check_frequency: 120d
 Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337
 # 
@@ -1052,6 +1043,11 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+Stadtrandstr.: in Richtung Süd teilweise Radstreifen? gibt es in Richtung Nord überhaupt einen Radweg?	? -6316,17363 -6515,16793
+# 
+#: XXX Asphalt teilweise mit Schäden, beide Richtungen mal komplett abfahren...
+Hildburghauser Str.: Qualität des Asphalts?	? 4806,1360 4897,1346 5056,1321 5223,1318 5414,1304 5585,1275 5740,1227 5793,1211 5865,1190 5913,1176 6006,1155 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6467,1028 6515,1010 6631,968
 # 
 Schwarzwurzel-Park: Bordsteine? Qualität? Nachts beleuchtet?	? 20654,18336 20700,18358 20817,18344 20826,18331
 # 
@@ -1347,7 +1343,7 @@ Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage
 # REMOVED (Bauarbeiten) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphaltierung) --- Emser Str.: Straßenbauarbeiten?	? 12872,7134 13058,7165
 #: by: http://www.aktion-kms.de/projekte/umbau-richardstrasse/
 # ("historisches Reihensteinpflaster" - noch schlechtere Qualität?)
-#: last_checked: 2013-09-04
+#: last_checked: 2013-10-21
 #: check_frequency: 60d
 Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschränkungen.	? 13245,7742 13226,7775 13150,7845 13103,7889
 #: last_checked: 2013-09-04

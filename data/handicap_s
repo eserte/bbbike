@@ -6,6 +6,7 @@
 Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe, Asphaltdecke wurde entfernt	q3::inwork; 13473,11456 13366,11651
 Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
+Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 14157,9345 13973,9465
 Chausseestr.: direkte Zufahrt s¸dlich der Invalidenstraﬂe nicht mˆglich, umst‰ndliche Wegf¸hrung	q4::inwork 9042,13707 8935,13844
 Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraﬂe gesperrt, Ausweichen auf Gehweg mˆglich	q4::inwork 9343,12464 9358,12351
 Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend mˆglich	q4::inwork 9358,12351 9369,12253 9373,12197
@@ -1280,6 +1281,8 @@ Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3116,12012
 (Sonnenallee - Aronsstr.): einige Fuﬂg‰nger	q1 14519,7301 14571,7427
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): einige Fuﬂg‰nger, kurvenreich	q2 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
 (Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8242,9699 8200,9662 8192,9619
+(Langensalzaer Str. - Gr‰fentaler Str.): Fuﬂg‰nger, eng, kurvig	q3 6188,1542 6182,1536 6199,1486 6212,1483 6231,1442
+Am Lokdepot: starke Steigung	q4; 8390,8879 8389,8775
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1635,7 +1638,7 @@ Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, schmal	q2 17273,16187 17371,16194 17383,1619
 (Orlam¸nder Weg - Tambacher Str.): Fuﬂg‰nger	q1 7172,1630 7144,1591
 (Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger, Bordsteine	q1 6762,1226 6702,1197 6700,1184
 (Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger, Bordsteine	q2 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6409,1218
-(Parkweg Blankenhainer Str. - Hildburghauser Str.): Fuﬂg‰nger	q1 6578,1595 6528,1573 6517,1479 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
+(Parkweg Blankenhainer Str. - Hildburghauser Str.): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben	q2 6578,1595 6554,1564 6539,1476 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
 (Gr‰fentaler Str. - Georgenstr.): Fuﬂg‰nger	q1 6189,1423 6132,1395
 Altenburger Str.: Fuﬂg‰nger, Bordsteine	q2 6651,1063 6631,968
 (Lilienthalpark): Fuﬂg‰nger	q2 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
@@ -1643,7 +1646,7 @@ Altenburger Str.: Fuﬂg‰nger, Bordsteine	q2 6651,1063 6631,968
 (Lilienthalpark): Fuﬂg‰nger	q2 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
 (Lilienthalpark): Fuﬂg‰nger	q2 5571,614 5533,663
 (Lilienthalpark): Fuﬂg‰nger	q2 5539,773 5576,800
-(Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5682,767 5675,764 5615,735 5590,719
+(Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5682,767 5675,764 5615,735 5590,719
 (Mauerweg Lichtenrade - Lichterfelde): Fuﬂg‰nger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6253,361 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 (Gielower Str - Buschkrugallee): Fuﬂg‰nger	q1 14012,4184 14053,4173 14119,4153
@@ -2132,7 +2135,6 @@ Saaleckplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5162
 Steubenplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 668,12190 689,12152
 Am Flugplatz Gatow: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8582,6987 -8606,6978
 Hossauerweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9056,1288 9022,1220 9083,1017 9129,986
-Bernauer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 2643,18738 2731,18729 2867,18736
 Pestalozzistr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 24652,11794 24706,11838 24769,11819
 Finsterberger Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 23086,12565 23129,12496 23233,12406
 Boraweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 6763,2879 6710,2909 6658,2907

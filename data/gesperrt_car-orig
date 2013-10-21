@@ -103,7 +103,7 @@ Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
 Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5045,7623
 Wassergasse	1 11034,11895 11024,11789
 Kienitzer Str.	1 12830,8031 12692,7996 12583,7974 12466,7946
-Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9410,3793 9731,3889
+Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9426,3797 9731,3889
 # seit November/Dezember 2007 (Bau der Ampel) nicht mehr: Modersohnstr. - B96a	3 14007,10802 13919,10583 13986,10549 14103,10489
 Almstadtstr.	1 10790,13565 10767,13443 10757,13401 10699,13173
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
@@ -707,7 +707,7 @@ Schäßburger Weg: Poller	3 * 7127,-248 *
 Fuchsmühler Weg: Durchfahrt gesperrt	2 7277,-77 7231,25
 Poller	3 7181,-15 7231,25 *
 Poller	3 * 7231,25 7181,-15
-Mittelstreifen	3nocross 9336,4142 9364,4011 9410,3793
+Mittelstreifen	3nocross 9346,4144 9372,4012 9426,3797
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 *
 Ontarioseestr.: Sackgasse für Autos	3 * 18339,10048 18408,10041
 #: by: Almuth Maasz vvv
@@ -945,3 +945,7 @@ Grunewaldstr.: Mittelstreifen	3nocross 6863,9254 6923,9266 7006,9282
 Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
 Siemensstr.: Sperrfläche, Abbiegen nicht erlaubt	3nocross 17492,6462 17530,6496 17614,6571
 Fasanenstr. (Ahrensfelde): Poller	3 * 22031,19261 *
+#: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3391&date=20131021 (für Radverkehr freigegeben) vvv
+Oelder Weg	1 1967,18743 1965,18686
+Bernhard-Lichtenberg-Platz	1 2643,18738 2731,18729 2867,18736
+#: by: ^^^
