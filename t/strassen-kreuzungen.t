@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-kreuzungen.t,v 1.3 2009/02/01 16:25:57 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -68,6 +67,12 @@ for my $kr ($kr1, $kr2) {
     my %situation = $kr->situation_at_point($at_point, $before_point, $after_point);
     is($situation{before_street}->[Strassen::NAME()], "Platz der Luftbrücke", "Street before");
     is($situation{after_street}->[Strassen::NAME()],  "Mehringdamm", "Street after");
+
+    is $kr->get_crossing_name($at_point), 'Dudenstr./Mehringdamm/Platz der Luftbrücke/Tempelhofer Damm', 'get_crossing_name';
+    is $kr->get_crossing_name($before_point), 'Platz der Luftbrücke', 'get_crossing_name, "Kurvenpoint"';
+    is $kr->get_crossing_name($after_point), 'Mehringdamm/Schwiebusser Str.', 'get_crossing_name';
+
+    is $kr->get_crossing_name($after_point, sep => " "), 'Mehringdamm Schwiebusser Str.', 'get_crossing_name, changed separator';
 }
 
 for my $kr ($kr1, $kr2) {

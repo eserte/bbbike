@@ -1,9 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.18 2009/04/04 12:47:52 eserte Exp $
-#
-# Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2001,2013 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -12,7 +10,7 @@
 
 package Strassen::Kreuzungen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = 1.19;
 
 package Kreuzungen;
 use strict;
@@ -160,6 +158,17 @@ sub get_records {
     die "get_records does not work with WantPos=>0" if !$self->{IsPos};
     return [] if !exists $self->{Hash}{$coord}; # necessary to avoid errors with read-only hashes (e.g. CDB_File)
     [ map { $self->{Strassen}->get($_) } @{ $self->{Hash}{$coord} } ];
+}
+
+# Return an array reference of street records of this coord
+# Fails if this object was not constructed with WantPos=>1
+### AutoLoad Sub
+sub get_crossing_name {
+    my($self, $coord, %args) = @_;
+    my $sep = exists $args{sep} ? delete $args{sep} : '/';
+    die "Unhandled arguments: " . join(", ", %args) if %args;
+    my $records = $self->get_records($coord);
+    join $sep, map { $_->[Strassen::NAME()] } @$records;
 }
 
 ### AutoLoad Sub
