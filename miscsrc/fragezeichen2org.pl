@@ -54,6 +54,8 @@ GetOptions(
 	  )
     or die "usage: $0 [--nowith-dist] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight] [--nowith-nextcheckless-records] bbdfile ...";
 
+# --with-dist requires one or two reference positions. Use from
+# cmdline arguments, or look into the user's bbbike config.
 if ($with_dist && !$centerc) {
     my $config_file = "$ENV{HOME}/.bbbike/config";
     if (!-e $config_file) {
@@ -84,6 +86,9 @@ if ($with_dist) {
     $dists_are_exact = $dist_dbfile ? 1 : 0;
 }
 
+# Find bbr files with planned survey tours, and store it in
+# $planned_points, so fragezeichen records touching these tours may be
+# set with "PLAN" instead of "TODO" keyword.
 my $planned_points;
 if ($plan_dir) {
     require File::Glob;
@@ -102,6 +107,9 @@ if ($plan_dir) {
     $planned_points = $s->as_reverse_hash;
 }
 
+# The "weighted" bbd file usually contains the number of route
+# searches per street section, which will be used for "importance"
+# sorting later.
 my $searches_weight_net;
 if ($with_searches_weight) {
     require File::Glob;
@@ -113,6 +121,9 @@ if ($with_searches_weight) {
     $searches_weight_net->make_net;
 }
 
+# Some bbd files don't have street/crossing information. Build
+# $str_net (for street names) and $crossings (for crossing names) to
+# add this information.
 my $str_net;
 my $crossings;
 {
@@ -126,6 +137,8 @@ my $crossings;
     $crossings = Kreuzungen->new(UseCache => 1, Strassen => $ms, WantPos => 1);
 }
 
+# Usually all -orig and bbbike-temp-blockings files should be supplied
+# here. See data/Makefile.
 my @files = @ARGV
     or die "Please specify bbd file(s)";
 
@@ -140,7 +153,7 @@ for my $file (@files) {
     debug("$file...\n");
     my $abs_file = realpath $file;
     my $basename = basename($file);
-    (my $basebasename = $basename) =~ s{-orig$}{};
+    (my $basebasename = $basename) =~ s{-orig$}{}; # without "-orig"
     my $is_fragezeichen_file = $basebasename eq 'fragezeichen';
     my $do_add_street_name = $files_add_street_name{$basebasename};
 
@@ -191,6 +204,9 @@ for my $file (@files) {
 		 }
 	     }
 
+	     # The "subject" of the record, usually the bbd record
+	     # name. For some file types (radwege, ampeln, see above)
+	     # the street or crossing name is prepended.
 	     my $subject = $r->[Strassen::NAME] || _get_first_XXX_directive($dir) || "(" . $file . "::$.)";
 	     if ($do_add_street_name) {
 		 my $add_street_name;
@@ -208,6 +224,7 @@ for my $file (@files) {
 		 }
 	     }
 
+	     # Exact or as-the-bird-flies distance calculation
 	     my $dist_tag = '';
 	     my $any_dist; # either one way or two way dist in meters
 	     if ($centerc) {
@@ -223,6 +240,7 @@ for my $file (@files) {
 		 }
 	     }
 
+	     # Getting priority
 	     my $prio;
 	     if ($prio = $dir->{priority}) {
 		 $prio = $prio->[0];
@@ -237,6 +255,9 @@ for my $file (@files) {
 		 die "Wrong directive 'prio' detected, maybe you mean 'priority' at $where\n";
 	     }
 
+	     # Get the number of route searches from the "weighted"
+	     # bbd file. Note that the maximum number for all street
+	     # sections is taken.
 	     my $searches;
 	     if ($searches_weight_net) {
 		 my $max_searches = 0;
@@ -268,6 +289,7 @@ for my $file (@files) {
 		 $searches = $max_searches;
 	     }
 
+	     # Get list of planned survey tours, if any
 	     my @planned_route_files;
 	     if ($planned_points) {
 		 my %planned_route_files;
@@ -281,6 +303,11 @@ for my $file (@files) {
 		 @planned_route_files = sort keys %planned_route_files;
 	     }
 
+	     # the todo state depends if there are planned survey
+	     # tours here: then it's "PLAN", otherwise it's "TODO"
+	     #
+	     # build first the org-mode headline, and then the
+	     # complete org-mode item ($body)
 	     my $todo_state = @planned_route_files ? 'PLAN' : 'TODO'; # make sure all states have four characters
 	     my $headline = "** $todo_state " .
 		 (defined $nextcheck_date ? "<$nextcheck_date $nextcheck_wd> " : "                ") .
@@ -542,6 +569,10 @@ Disable the generation of distance tags.
 
 Specify a F<dist.db> for use with L<DistDB>. Using this option
 automatically enables exact distance calculation.
+
+Be prepared, first-time calculation of exact distances is quite slow.
+Subsequent calls of the script are B<much> faster thank to the
+distance database (unless you delete the F<dist.db>, of course).
 
 Note that it's possible that the route search might find no route for
 a coordinate pair (e.g. because of inaccessible points not covered by
