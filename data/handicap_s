@@ -21,7 +21,8 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und He
 Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
 Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
-Ella-Trebe-Str./Bertha-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022 7867,13106 7937,13109
+Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022
+Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7867,13106 7937,13109
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung ist die Fahrbahn gesperrt	q4::inwork 7443,13008 7416,13058
 Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg für einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
@@ -33,6 +34,9 @@ Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
+Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5258,11285 5352,11502
+Fasanenstr.: Bauarbeiten, gemeinsamer Rad- und Gehweg	q2; 5352,11502 5356,11512 5456,11742
+Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,11847
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12792,8190
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
@@ -80,15 +84,16 @@ Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14361,9
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
-Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12506,10244 12384,10368 12328,10442
+Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12502,10244 12384,10368 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12757,10197 12712,10192 12670,10160
 Görlitzer Park, Rondell: Fußgänger	q2 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
-Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12516,10202 12543,10223
+Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12509,10189 12543,10223
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12504,10172 12464,10153
 Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12608,10294
 Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 12987,10007 12932,9900
+Görlitzer Park: Fußgänger	q2 12509,10189 12502,10244
 Tiergartenufer: Fußgänger	q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg, Fußgänger	q1 6309,11443 6186,11466
 Tiergarten: Parkweg, Fußgänger	q2 5666,11362 5727,11573 5758,11630 5780,11622 5802,11672 5831,11697 5818,11722 5835,11768 5858,11863 5900,11913
@@ -131,7 +136,7 @@ Böcklerpark: enge Kurven, manchmal Fußgänger auf dem Radweg	q3 10967,10092 10917
 Böcklerpark: enge Kurven, Fußgänger	q3 10923,10113 10917,10068
 Böcklerpark: Fußgänger	q2 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
 Am Landwehrkanal: Parkweg	q1 10521,10126 10362,10120 10226,10145 10083,10192
-vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12608
+vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fußgänger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fußgänger	q1 22759,4430 22797,4518
@@ -230,7 +235,7 @@ Pfalzburger Str.: Gehweg	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger	q2 8467,11125 8410,11143
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3358,12718 3396,12741
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3396,12741 3476,12735 3582,12704 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Spreeufer: Fußgänger, besonders an schönen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
 Spreeufer: Fußgänger	q2 9707,12974 9557,12992 9538,12993 9508,12991 9272,12952
 Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
@@ -244,7 +249,8 @@ Goerdelersteg: enge wendelförmige Rampen	q3 3663,14137 3634,14187 3625,14230 360
 Goerdelersteg: enge wendelförmige Rampen	q3 3655,14237 3610,14219 3625,14230
 Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
 Radweg eng und bewachsen	q1 5057,14607 5264,14671 5440,14840
-Tunnel S-Bhf. Grunewald: Fußgänger	q2 693,9129 731,9103 884,8954
+zum Tunnel S-Bhf. Grunewald: Fußgänger	q1 693,9129 731,9103
+Tunnel S-Bhf. Grunewald: Fußgänger, Radfahren nicht erlaubt, ggfs. absteigen	q3 731,9103 884,8954
 enge Kurven	q2 33533,2761 33293,2768
 Kieler Str.: Fußgänger	q3 4998,5817 5052,5788
 Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
@@ -309,7 +315,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13448,12340
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17249,10702 17247,10755 17261,10827 17258,10870
 (Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Fußgänger	q1 17261,10827 17228,10860
-Verl. Pücklerstr.: Fußgänger, Hundeauslaufgebiet	q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6592 640,6576 546,6583 369,6594 340,6598 218,6571
+Verl. Pücklerstr.: Fußgänger, Hundeauslaufgebiet	q1 1553,6741 1348,6701 1152,6659 967,6620 905,6631 880,6645 832,6607 778,6603 698,6592 640,6576 546,6583 369,6594 340,6598 218,6571
 Weimarer Str.: Fußgänger	q1 4101,11347 4101,11233
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger	q1 20222,15519 20181,15658 20150,15678
@@ -330,7 +336,7 @@ Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,
 Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11111,13518
 Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q3 8116,12938 8110,13042
 Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
-(Parkweg Spreebogenpark): besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 8017,12826 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
+(Parkweg Spreebogenpark): besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 7904,12803 7945,12878 7966,12913 8044,12989 8159,13032
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8277,13032 8315,13005 8401,12973 8464,12919 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8635,12629 8709,12605 8756,12608
@@ -441,8 +447,8 @@ Dathepromenade: Fußgänger	q1 18394,10348 18320,10318 18302,10289 18314,10260 181
 Rheingoldpark: Fußgänger haben Vorrang	q1 19073,8828 19145,8659
 Schloßinsel Köpenick: Fußgänger	q4 22093,4499 22076,4422
 Braunschweiger Ufer: Fußgänger	q1 12718,5845 13077,5893 13483,5973
-Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen	q1 6513,7005 6650,7017
-Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe	q1 6650,7017 6770,7027
+Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen	q2 6513,7005 6650,7017
+Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe	q2 6650,7017 6770,7027
 Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4954,5888
 (Gaudystr. - Mauerpark): Fußgänger, bei Veranstaltungen in der Max-Schmelling-Halle größere Behinderungen möglich	q3 10456,15561 10256,15482 10192,15465
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fußgänger	q1 2934,14852 2900,14891 2685,15167 2707,15205 2695,15258 2632,15295
@@ -454,7 +460,7 @@ Teltowkanalpromenade: eng, nicht anhängertauglich	q2 2079,-12 1924,-188 1593,-31
 (Eitelstr. - Bahnhof Lichtenberg): Fußgänger	q3 16727,11611 16766,11603
 Bennigsenstr.: enge Straße	q1 5807,7771 5957,7773 6195,7775 6209,7765
 Perelsplatz: Fußgänger, Park	q2 5809,7712 5636,7709
-Gustav-Rickelt-Weg: eng, Fußgänger, Bordsteine	q2 4224,6718 4223,6796 4206,6820
+Gustav-Rickelt-Weg: eng, Fußgänger, Bordsteine	q3 4224,6718 4223,6796 4206,6820
 Unterführung unter der Stromstr.: Fußgänger, eng	q2 6218,12975 6180,12972
 nördliches Spreeufer: drei niedrige Stufen, Fußgänger	q2 6180,12972 6102,12960 6064,12950
 Wustermarker Str.: Fußgänger, Bordsteine	q2 -4755,14393 -4744,14392 -4678,14382
@@ -1283,6 +1289,8 @@ Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3116,12012
 (Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8242,9699 8200,9662 8192,9619
 (Langensalzaer Str. - Gräfentaler Str.): Fußgänger, eng, kurvig	q3 6188,1542 6182,1536 6199,1486 6212,1483 6231,1442
 Am Lokdepot: starke Steigung	q4; 8390,8879 8389,8775
+Lübbener Str.: Fußgänger	q2 12729,10515 12731,10547
+Parforceweg: einige umgestürzte Bäume	q4 -643,7252 -728,7310 -1020,7446 -1328,7597 -1643,7828
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
@@ -1496,9 +1504,9 @@ Münstersche Str.: Fußgänger	q2 3763,9642 3699,9613
 (Hoffmannstr. - Puschkinallee): Fußgänger	q1 14076,10011 13995,9834
 (Hoffmannstr. - Uferweg an den Treptowers): Fußgänger	q1 14076,10011 14118,10178
 August-Lindemann-Str.: Fußgänger	q3 14355,12752 14360,12792
-(Jagdschloß Grunewald - Umgehungschaussee): Fußgänger, Hundeauslaufgebiet	q2 880,6645 884,6701 1024,6898 1066,7093 1149,7205
+(Jagdschloß Grunewald - Umgehungschaussee): Fußgänger, Hundeauslaufgebiet	q2 880,6645 884,6701 1024,6898 1066,7093 1125,7184
 (Uferweg am Grunewaldsee): Fußgänger, Hundeauslaufgebiet	q2 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 340,6598
-Umgehungschaussee: Fußgänger, Hundeauslaufgebiet	q2 1149,7205 1251,7429
+Umgehungschaussee: Fußgänger, Hundeauslaufgebiet	q2 1125,7184 1251,7429
 Umgehungschaussee: Fußgänger, Hundeauslaufgebiet	q1 1251,7429 1263,7450 1252,7741 1215,7797 1043,7929 860,8052 834,8067
 (Auerbachstr. - Koenigsallee): Fußgänger, schmal	q2 490,8716 445,8429 614,8006 761,7922
 (Verlängerte Harbigstr.): Jogger etc.	q1 556,10122 461,9997 328,9820
@@ -1538,10 +1546,10 @@ Holsteiner Ufer: schmal, Fußgänger	q2 6580,12775 6469,12867 6449,12865
 (Zufahrt Parkplätze Bartningallee): schmal, unübersichtlich, Fußgänger	q3 6159,12505 6149,12454
 (Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fußgänger	q2 6178,12387 6149,12454 6137,12532 6160,12681
 (Cuxhavener Str. - Altonaer Str.): schmal, Fußgänger	q2 5999,12280 6086,12446
-(Parkweg Ortelsburger Allee): Fußgänger	q2 50,10910 37,11014 23,11137 21,11167
-(Parkweg Kranzallee): Fußgänger	q1 -526,10985 -535,11096
+(Parkweg Ortelsburger Allee): Fußgänger	q2 48,10922 37,11014 23,11137 16,11190
+(Parkweg Kranzallee): Fußgänger	q1 -532,10994 -511,11127
 (Teufelsseechaussee - Waldschulallee): Fußgänger	q1 194,10846 355,10740
-(Teufelsseechaussee - Maikäferpfad): Fußgänger	q1 556,10122 460,10193 332,10286 41,10501
+(Teufelsseechaussee - Maikäferpfad): Fußgänger	q1 556,10122 460,10193 304,10305 41,10501
 Gutsmuthsweg: Fußgänger (nur bei Veranstaltungen ein Problem)	q1 -505,11882 -503,11782
 Gutsmuthsweg: Fußgänger (nur bei Veranstaltungen ein Problem), Bordstein	q2 -503,11782 -496,11720
 Südtorweg: Fußgänger (nur bei Veranstaltungen ein Problem)	q1 -503,11782 -750,11740
@@ -1655,7 +1663,7 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 (Parkweg Fritz-Reuter-Allee - Britzer-Park):Fußgänger	q1 13463,3854 13302,3837
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fußgänger, Radfahren nicht erlaubt	q3 13487,3862 13531,3768 13545,3692 13629,3511
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fußgänger	q1 13951,2697 13904,2787 13807,2863 13778,2987 13766,3018 13730,3111 13740,3252 13738,3302 13728,3332 13629,3511
-Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5242,10918 5264,10921 5348,10960 5373,10981
+Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
 (Parkweg Bäkepark): Fußgänger	q1 5337,4192 5320,4217 5246,4240 5129,4262 5100,4285 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
 (Parkweg Bäkepark): Fußgänger	q1 5225,4095 5131,4207 5068,4259
 (Parkweg Bäkepark): Fußgänger	q1 5282,4145 5131,4207

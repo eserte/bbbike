@@ -830,10 +830,18 @@ Sackgassenende, Friedhof Ahrensfelde	culdesac_pseudo 21747,19784
 	culdesac_pseudo 6189,1423
 	culdesac_pseudo 6695,1706
 	culdesac 9000,3065
+	culdesac 766,9394
+	culdesac -918,10785
+	culdesac -835,11004
+	culdesac -726,11031
+#: note: anscheinend existiert ein Waldweg als Fortführung
+	culdesac_pseudo -847,10754
+	culdesac 1524,8524
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 10086,12725
 	culdesac_pseudo 19133,9087
 	culdesac_pseudo 13552,12435
 	culdesac_pseudo 6106,12981

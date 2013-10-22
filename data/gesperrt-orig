@@ -98,8 +98,8 @@ Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,1
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1508,14508 -1369,14644 -1119,14659 -925,14631
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
-Fasanenstr.	1 5207,10399 5229,10716 5242,10918 5247,10992
-# REMOVED (für die Dauer der Bauarbeiten) --- Fasanenstr.	1 5247,10992 5268,11274
+Fasanenstr.	1 5215,10711 5230,10919 5236,10994
+# REMOVED (für die Dauer der Bauarbeiten) --- Fasanenstr.	1 5236,10994 5268,11274
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
 Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,18771 11950,18529
@@ -520,7 +520,7 @@ Rapsstr.	1 755,15123 702,15274 693,15335 665,15414 659,15469
 #: by: ^^^
 Im Heidewinkel	1 1065,15229 1009,15400 978,15496 877,15474 772,15460
 #: note: Luftbild
-Teufelsseestr.	1 454,11159 439,11228
+Teufelsseestr.	1 454,11159 438,11236
 #: by: Michael Häusler:
 Auerhahnbalz	1 723,4572 697,4605 668,4653 650,4712 636,4765
 #: by: Marco (mar-bet):
@@ -1546,7 +1546,7 @@ Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,12315 10723,12346 10738,12364
-Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5475,10808
+Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5351,10760 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7043,15793
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14653,15738
@@ -1660,7 +1660,7 @@ Wilhelmstr.: Mittelstreifen	3nocross -3999,12912 -3962,12973 -3913,13054
 Spandauer Str.: Straßenbahntrasse	3nocross 10431,12709 10387,12760 10360,12793
 Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
 Invalidenstr.: Mittelstreifen	3nocross 7880,13315 8003,13374 8098,13419
-Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7821,12934 7776,12943 7595,12980
+Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7822,12937 7776,12945 7595,12980
 Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 Hansastr.: Mittelstreifen	3nocross 15662,16656 15735,16698 15776,16721
@@ -1669,6 +1669,7 @@ Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22924,12833 22967,12647
 Buckower Damm: Mittelstreifen	3nocross 12564,4308 12637,4014 12655,3882
 Albrechtstr.: Mittelstreifen	3nocross 6102,4726 6006,4852 6034,4893
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7327
+Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4206,6820 4237,6840
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -2564,7 +2565,7 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert?
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2013-09-06
+#: last_checked: 2013-10-22
 #: next_check: 2014-01-01
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
@@ -2592,11 +2593,11 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: Kai Wagner (permanente Sperrung)
 #: confirmed_by: srt
 #: osm_watch: way id="4402045" version="9"
-#: last_checked: 2013-09-16
+#: last_checked: 2013-10-22
 #: check_frequency: 180d
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
-#: last_checked: 2013-09-10
+#: last_checked: 2013-10-22
 #: check_frequency: 180d
 #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
@@ -2681,6 +2682,10 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: next_check: 2014-09-01
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6467,11780
 # 
+#: last_checked: 2013-10-22
+#: next_check: 2015-03-01
+Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
+# 
 # REMOVED --- #: last_checked: 2012-08-03 --- #: next_check: 2012-09-10 --- Queralleebrücke: wegen Bauarbeiten gesperrt, voraussichtlich bis September 2012	2:inwork 7621,11620 7649,11717
 # REMOVED --- #: by: tobias wirnsberger, Matthias Stief --- #: last_checked: 2011-08-24 (srt, von der Bahn aus) --- #: next_check: 2011-12-01 --- Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
 #
@@ -2716,7 +2721,7 @@ Am Fuchspaß	1 389,5111 388,4951
 Treibjagdweg	1 469,5138 472,4974
 Hochwildpfad	1 544,5165 549,4992
 Am Lappjagen	1 622,5192 625,5004
-Schranke	BNP:5 -20,10076
+Schranke	BNP:5 -45,10096
 Pfähle	BNP:1::trailer=6 467,9516
 Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
 Vogelsang	1 2229,6203 2170,5939 2137,5798
@@ -2841,9 +2846,9 @@ Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6020,12492 6086,12446 
 tragen (Treppe)	0:30 8159,13042
 tragen (Treppe)	0:30 8276,13041
 Hanseatenweg	1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
-Heerstr.	3nocross -1039,11034 -831,11060 -776,11067 -731,11073 -587,11090
-Heerstr.	3nocross -587,11090 -535,11096 -420,11110 -346,11121 -68,11156
-Heerstr.	3nocross -68,11156 21,11167 231,11198 439,11228 504,11243
+Heerstr.	3nocross -1050,11061 -848,11086 -779,11093 -733,11098 -593,11119
+Heerstr.	3nocross -593,11119 -511,11127 -406,11141 -360,11145 -82,11178
+Heerstr.	3nocross -82,11178 16,11190 229,11213 438,11236 504,11243
 tragen (20 Stufen)	0:30 23,11137
 Oldenburgallee	1 454,11670 461,11455
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4509&options=4

@@ -53,7 +53,7 @@ Holtei von N - Boxhagener	3 14710,11626 14639,11512 14752,11369
 Boxhagener von E - Holtei	3 14752,11369 14639,11512 14575,11407
 Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5900,11913
 Fasanen - Hertzallee (nur f¸r BVG frei)	3 5456,11742 5356,11512 5352,11502 5587,11397
-Fasanenstr.	1 5198,10234 5207,10399
+Fasanenstr.	1 5198,10234 5196,10398
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
 Naumannstr. N - H	3 7707,8915 7709,8777 7713,8600
 zum Mariannenplatz	2 11950,11157 11921,11185
@@ -199,9 +199,9 @@ Althoffpl. -> Filandastr.: Filandastr.	3::igndisp 5613,5672 5683,5672 5681,5743
 Filandastr. -> Althoffpl.: Filandastr.	3::igndisp 5687,5586 5683,5672 5613,5672
 Filandastr. -> Wuthenowstr.: Filandastr.	3::igndisp 5681,5743 5683,5672 5840,5679
 Gelnitzstr.	1 22882,5834 22897,5740
-Kurf¸rstendamm	3nocross::ignrte 2770,10024 2828,10040 2963,10078
+Kurf¸rstendamm	3nocross::ignrte 2770,10024 2828,10040 2974,10081
 Kurf¸rstendamm -> Katharinenstr.: Kurf¸rstendamm	3::igndisp 2770,10024 2828,10040 2849,10445
-Katharinenstr. -> Kurf¸rstendamm: Kurf¸rstendamm	3::igndisp 2849,10445 2828,10040 2963,10078
+Katharinenstr. -> Kurf¸rstendamm: Kurf¸rstendamm	3::igndisp 2849,10445 2828,10040 2974,10081
 Kurf¸rstendamm	3nocross::ignrte 3111,10116 3189,10141 3289,10174 3374,10201
 Kurf¸rstendamm -> Hektorstr.: Kurf¸rstendamm	3::igndisp 3111,10116 3189,10141 3206,10458
 Hektorstr. -> Kurf¸rstendamm: Kurf¸rstendamm	3::igndisp 3206,10458 3189,10141 3289,10174
@@ -1174,11 +1174,10 @@ Berliner Str. -> Borkumstr.: Mittelstreifen und Straﬂennbahntrasse	3::igndisp 10
 Mittelstreifen	3nocross::ignrte 2346,7684 2460,7658 2576,7634
 Sulzaer Str. -> Hundekehlestr.: Mittelstreifen	3::igndisp 2499,7930 2460,7658 2576,7634
 Hundekehlestr. -> Sulzaer Str.: Mittelstreifen	3::igndisp 2346,7684 2460,7658 2499,7930
-Lietzenburger Str.	3nocross::ignrte 5047,10381 5207,10399 5329,10422
-Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5198,10234
-Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5229,10716 5207,10399 5329,10422
-Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5047,10381 5207,10399 5229,10716
-Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5329,10422 5207,10399 5198,10234
+Lietzenburger Str.	3nocross::ignrte 5047,10381 5196,10398 5329,10422
+Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5329,10422 5196,10398 5198,10234
+Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5198,10234
+Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5329,10422
 Straﬂenbahntrasse	3nocross::ignrte 12228,14404 12188,14350 12177,14335 12077,14186
 Pasteurstr. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 12335,14246 12188,14350 12177,14335
 Greifswalder Str. -> Pasteurstr.: Straﬂenbahntrasse	3::igndisp 12228,14404 12188,14350 12335,14246
@@ -1250,8 +1249,8 @@ Abbestr.: nur f¸r Anlieger, herausfahrbare Poller	2 4762,12229 4683,12072
 Knesebeckstr. - Hardenbergstr.	3 4897,11354 4919,11605 4900,11626
 Sakrower Kirchweg	1 -8162,4025 -8255,3946 -8308,3902 -8401,3894 -8449,3907
 Sibeliusweg	1 -6797,4991 -6789,5052 -6787,5076 -6762,5133 -6747,5169
-Angerburger Allee	1 -1524,11108 -1608,11133 -1885,11392 -1931,11437 -1994,11496
-Sensburger Allee	1 200,11428 326,11391 439,11228
+Angerburger Allee	1 -1538,11126 -1608,11133 -1885,11392 -1931,11437 -1994,11496
+Sensburger Allee	1 200,11428 326,11391 438,11236
 Kyllburger - Darﬂer Str	3 16670,17454 16779,17521 16751,17560
 Am Steinberg	1 13183,17580 12998,17480
 Sch‰ﬂburger Weg: Poller	3 7090,-225 7127,-248 7225,-312
@@ -1636,3 +1635,4 @@ Fasanenstr. (Ahrensfelde): Poller	3 21895,19198 22031,19261 22049,19268
 Fasanenstr. (Ahrensfelde): Poller	3 22049,19268 22031,19261 21895,19198
 Oelder Weg	1 1967,18743 1965,18686
 Bernhard-Lichtenberg-Platz	1 2643,18738 2731,18729 2867,18736
+Fasanenstr.	1 5196,10398 5215,10711

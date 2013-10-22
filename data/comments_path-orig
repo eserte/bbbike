@@ -140,7 +140,7 @@ zur Müggelstr. Hausdurchfahrt benutzen	CS; 14994,12121 14994,12064
 #: XXX_prog: RL:ja, GPS:nein
 Zugang zum Bahndamm über die Terasse der Mambo-Bar	CS; 13923,9405 13953,9372
 #: XXX_prog: RL:ja, GPS:nein
-Große Querallee: nicht ausgeschildert, vor dem "Tipi" nach links abbiegen	CP; 8122,12608 7945,12592 7875,12363
+Große Querallee: nicht ausgeschildert, vor dem "Tipi" nach links abbiegen	CP; 8122,12603 7945,12592 7875,12363
 Stralauer Allee - Warschauer Platz: bereits an der Kreuzung Am Oberbaum/Stralauer Allee auf den linken Gehweg wechseln	PI; 13332,10832 13389,10808 13471,10983
 #: XXX_indoor: hmmm, why not use Steinmetzstr. at all for such routes? Maybe use routing_helper with some penalty instead? Ah, it would minimize Kopfsteinpflaster...
 bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7702,10146 7813,10112 7850,10351
@@ -207,10 +207,10 @@ Fritz-Schiff-Str. beginnt am Ende der Parallelstraße zur Karl-Marx-Allee	CP2; 13
 Siegertweg - Manfred-von-Richthofen-Str.: Überqueren der Straße am Kleineweg (rechts) oder am Thuyring (links)	CP; 9042,7462 9070,7493 8947,7601
 Manfred-von-Richthofen-Str. - Siegertweg: bereits am Kleineweg links abbiegen	PI; 9097,7469 9070,7493 9042,7462
 (Auerbachstr. - Koenigsallee): nicht den Weg direkt am Bahndamm, sondern Weg links daneben nehmen	CP2; 490,8716 445,8429
-Den linken Weg wählen, der direkt entlang des Geländes des Jugendfreizeitheims entlang geht	CP; 1449,7519 1405,7471 1229,7254 1149,7205
-Am Ende des Sees scharf links in den schmalen Waldweg hinunter	CP; 1696,6520 1627,6553 1612,6534
-Am befestigten Weg (Kreuzung) rechts	CP; 1627,6553 1612,6534 1512,6553
-An der Kreuzung ca. 50m vor der Jugenerholungsstätte links	CP; 1558,6729 1512,6553 1612,6534
+Den linken Weg wählen, der direkt entlang des Geländes des Jugendfreizeitheims entlang geht	CP; 1449,7519 1405,7471 1229,7254 1125,7184
+Am Ende des Sees scharf links in den schmalen Waldweg hinunter	CP; 1644,6569 1581,6573 1575,6557
+Am befestigten Weg (Kreuzung) rechts	CP; 1581,6573 1575,6557 1495,6602
+An der Kreuzung ca. 50m vor der Jugenerholungsstätte links	CP; 1553,6741 1495,6602 1575,6557
 Den rechten Weg direkt an den Grundstücken entlang wählen	CP2; 761,7922 614,8006
 (Luisenstr. - Hufelandweg): durch die Gebäudedurchfahrt	CP2; 8665,13353 8582,13355
 (Hufelandweg - Luisenstr.): durch die Gebäudedurchfahrt	CP2; 8582,13355 8665,13353

@@ -240,10 +240,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5725,9846
 	X 5912,9788
 	X 5013,10039
-	X 5229,10716
+	X 5215,10711
 	X 5076,10658
 	X 5102,11006
-	X 5247,10992
+	X 5236,10994
 	X 5258,11285
 	X 4921,11017
 	X 4827,11025
@@ -812,9 +812,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2330,11762
 #: off: except_event
 #: note: Ampel wahrscheinlich nur bei Waldbühnen-Veranstaltungen eingeschaltet
-	X -1269,11008
-	X -1499,10990
-	X -587,11090
+	X -1288,11037
+	X -1523,11012
+	X -593,11119
 	X 504,11243
 	X 9134,15953
 	X 9864,14578
@@ -1868,8 +1868,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F -6512,12581
 	F -6275,12498
 # REMOVED (existiert wohl nicht mehr) --- F 7938,13791
-	F -1039,11034
-	X -68,11156
+	F -1050,11061
+	X -82,11178
 	F 3381,12087
 	F 6936,15888
 	F 1205,10114
@@ -1981,8 +1981,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 16857,12600
 	X 11722,10533
 	X 5219,6215
-#: XXX_prog: eigentlich bezieht die Ampelanlage auch 5268,6305 ein, das kann aber nicht dargestellt werden...
-	X 5244,6261
+	X 5269,6305
 	F 5091,5979
 	F 4982,5789
 	F 4900,5648
@@ -2410,7 +2409,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: check_frequency: 90d
 	F::inwork 9984,12426
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2013-09-06 vvv
+#: last_checked: 2013-10-22 vvv
 #: next_check: 2013-12-31 vvv
 	X::inwork 9122,12509
 	X::inwork 9280,12883

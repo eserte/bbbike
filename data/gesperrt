@@ -80,7 +80,7 @@ Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,1
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1508,14508 -1369,14644 -1119,14659 -925,14631
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
-Fasanenstr.	1 5207,10399 5229,10716 5242,10918 5247,10992
+Fasanenstr.	1 5215,10711 5230,10919 5236,10994
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
 Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,18771 11950,18529
@@ -397,7 +397,7 @@ Rieppelstr.	1 851,15155 780,15358 794,15362 772,15460 768,15486
 Harriesstr.	1 768,15486 659,15469 525,15435
 Rapsstr.	1 755,15123 702,15274 693,15335 665,15414 659,15469
 Im Heidewinkel	1 1065,15229 1009,15400 978,15496 877,15474 772,15460
-Teufelsseestr.	1 454,11159 439,11228
+Teufelsseestr.	1 454,11159 438,11236
 Auerhahnbalz	1 723,4572 697,4605 668,4653 650,4712 636,4765
 Schmohlstr.	1 13239,17269 13196,17223 13159,17196 13057,17120
 Flughafen Tempelhof	1 9364,8640 9451,8548 9401,8510 9321,8607
@@ -1739,8 +1739,8 @@ Eiergasse -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 106
 Mühlendamm -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10675,12280 10700,12315 10671,12356
 Spandauer Str. [Gehweg] -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10723,12346 10738,12364
 Mühlendamm -> Spandauer Str. [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10700,12315 10723,12346 10665,12413
-unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5229,10716 5351,10760 5475,10808
-Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5329,10422 5351,10760 5229,10716
+unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,10711 5351,10760 5475,10808
+Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5329,10422 5351,10760 5215,10711
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5351,10760 5329,10422
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 15420,12178 15443,12222 15480,12306 15508,12367
 Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15350,12270 15443,12222 15480,12306
@@ -2035,9 +2035,9 @@ Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13
 Mittelstreifen	3nocross::ignrte 7880,13315 8003,13374 8098,13419
 Invalidenstr. -> Ella-Trebe-Str.: Mittelstreifen	3::igndisp 8098,13419 8003,13374 7938,13302
 Ella-Trebe-Str. -> Invalidenstr.: Mittelstreifen	3::igndisp 7938,13302 8003,13374 7880,13315
-Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross::ignrte 7821,12934 7776,12943 7595,12980
-Ingeborg-Drewitz-Allee -> Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7620,12757 7776,12943 7595,12980
-Alt-Moabit -> Ingeborg-Drewitz-Allee: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7821,12934 7776,12943 7620,12757
+Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross::ignrte 7822,12937 7776,12945 7595,12980
+Alt-Moabit -> Ingeborg-Drewitz-Allee: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7822,12937 7776,12945 7620,12757
+Ingeborg-Drewitz-Allee -> Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7620,12757 7776,12945 7595,12980
 Mittelstreifen	3nocross::ignrte 21137,11294 21134,11331 21124,11462
 Elsterwerdaer Pl. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21110,11326 21134,11331 21124,11462
 Köpenicker Str. -> Elsterwerdaer Pl.: Mittelstreifen	3::igndisp 21137,11294 21134,11331 21110,11326
@@ -2063,6 +2063,10 @@ zur Albrechtstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5920,4976 6006,4852 
 Mittelstreifen, parkende Autos	3nocross::ignrte 4909,7436 4874,7382 4836,7327
 Südwestkorso -> Liane-Berkowitz-Pl.: Mittelstreifen, parkende Autos	3::igndisp 4909,7436 4874,7382 4874,7326
 Rheingaustr. -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4874,7326 4874,7382 4836,7327
+Mittelstreifen, parkende Autos	3nocross::ignrte 4125,6763 4206,6820 4237,6840
+Südwestkorso -> Gustav-Rickelt-Weg: Mittelstreifen, parkende Autos	3::igndisp 4237,6840 4206,6820 4223,6796
+Gustav-Rickelt-Weg -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4223,6796 4206,6820 4061,6753
+Südwestkorso -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4125,6763 4206,6820 4061,6753
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2660,6 +2664,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6467,11780
+Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417
 tragen (Treppe)	0:30:-82 2279,5112
 tragen (Treppe)	0:15:-136 2211,5120
@@ -2679,7 +2684,7 @@ Am Fuchspaß	1 389,5111 388,4951
 Treibjagdweg	1 469,5138 472,4974
 Hochwildpfad	1 544,5165 549,4992
 Am Lappjagen	1 622,5192 625,5004
-Schranke	BNP:5:-234 -20,10076
+Schranke	BNP:5:-234 -45,10096
 Pfähle	BNP:1:-194:trailer=6 467,9516
 Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
 Vogelsang	1 2229,6203 2170,5939 2137,5798
@@ -2867,35 +2872,35 @@ Altonaer Str. -> Cuxhavener Str.: Mittelstreifen schlecht zu queren	3::igndisp 6
 tragen (Treppe)	0:30:5 8159,13042
 tragen (Treppe)	0:30:-186 8276,13041
 Hanseatenweg	1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
-Heerstr.	3nocross::ignrte -1039,11034 -831,11060 -776,11067 -731,11073 -587,11090
-Shawweg -> Heerstr.: Heerstr.	3::igndisp -826,11021 -831,11060 -1039,11034
-Heerstr. -> Shawweg: Heerstr.	3::igndisp -776,11067 -831,11060 -826,11021
-Byronweg -> Heerstr.: Heerstr.	3::igndisp -726,11031 -731,11073 -776,11067
-Heerstr. -> Byronweg: Heerstr.	3::igndisp -587,11090 -731,11073 -726,11031
-Heerstr.	3nocross::ignrte -587,11090 -535,11096 -420,11110 -346,11121 -68,11156
-Parkweg Kranzallee -> Heerstr.: Heerstr.	3::igndisp -526,10985 -535,11096 -587,11090
-Heerstr. -> Parkweg Kranzallee: Heerstr.	3::igndisp -420,11110 -535,11096 -526,10985
-Heilsberger Allee -> Heerstr.: Heerstr.	3::igndisp -391,11322 -420,11110 -346,11121
-Heerstr. -> Heilsberger Allee: Heerstr.	3::igndisp -535,11096 -420,11110 -391,11322
-Rauschener Allee -> Heerstr.: Heerstr.	3::igndisp -328,10971 -346,11121 -420,11110
-Heerstr. -> Rauschener Allee: Heerstr.	3::igndisp -68,11156 -346,11121 -328,10971
-Heerstr.	3nocross::ignrte -68,11156 21,11167 231,11198 439,11228 504,11243
-Heerstr. -> Parkweg Ortelsburger Allee: Heerstr.	3::igndisp 231,11198 21,11167 23,11137
-Heerstr. -> Pillkaller Allee: Heerstr.	3::igndisp -68,11156 21,11167 14,11215
-Pillkaller Allee -> Heerstr.: Heerstr.	3::igndisp 14,11215 21,11167 231,11198
-Pillkaller Allee -> Parkweg Ortelsburger Allee: Heerstr.	3::igndisp 14,11215 21,11167 23,11137
-Parkweg Ortelsburger Allee -> Heerstr.: Heerstr.	3::igndisp 23,11137 21,11167 -68,11156
-Parkweg Ortelsburger Allee -> Pillkaller Allee: Heerstr.	3::igndisp 23,11137 21,11167 14,11215
-Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 200,11428 231,11198 439,11228
-Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 200,11428 231,11198 251,11039
-Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 21,11167 231,11198 200,11428
-Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 439,11228 231,11198 251,11039
-Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 251,11039 231,11198 200,11428
-Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 251,11039 231,11198 21,11167
-Heerstr. -> Sensburger Allee: Heerstr.	3::igndisp 231,11198 439,11228 326,11391
-Sensburger Allee -> Teufelsseestr.: Heerstr.	3::igndisp 326,11391 439,11228 454,11159
-Sensburger Allee -> Heerstr.: Heerstr.	3::igndisp 326,11391 439,11228 504,11243
-Heerstr. -> Teufelsseestr.: Heerstr.	3::igndisp 504,11243 439,11228 454,11159
+Heerstr.	3nocross::ignrte -1050,11061 -848,11086 -779,11093 -733,11098 -593,11119
+Shawweg -> Heerstr.: Heerstr.	3::igndisp -835,11004 -848,11086 -1050,11061
+Heerstr. -> Shawweg: Heerstr.	3::igndisp -779,11093 -848,11086 -835,11004
+Byronweg -> Heerstr.: Heerstr.	3::igndisp -726,11031 -733,11098 -779,11093
+Heerstr. -> Byronweg: Heerstr.	3::igndisp -593,11119 -733,11098 -726,11031
+Heerstr.	3nocross::ignrte -593,11119 -511,11127 -406,11141 -360,11145 -82,11178
+Heerstr. -> Parkweg Kranzallee: Heerstr.	3::igndisp -406,11141 -511,11127 -532,10994
+Parkweg Kranzallee -> Heerstr.: Heerstr.	3::igndisp -532,10994 -511,11127 -593,11119
+Heilsberger Allee -> Heerstr.: Heerstr.	3::igndisp -391,11322 -406,11141 -360,11145
+Heerstr. -> Heilsberger Allee: Heerstr.	3::igndisp -511,11127 -406,11141 -391,11322
+Heerstr. -> Rauschener Allee: Heerstr.	3::igndisp -82,11178 -360,11145 -333,10976
+Rauschener Allee -> Heerstr.: Heerstr.	3::igndisp -333,10976 -360,11145 -406,11141
+Heerstr.	3nocross::ignrte -82,11178 16,11190 229,11213 438,11236 504,11243
+Heerstr. -> Pillkaller Allee: Heerstr.	3::igndisp -82,11178 16,11190 14,11215
+Heerstr. -> Parkweg Ortelsburger Allee: Heerstr.	3::igndisp 229,11213 16,11190 23,11137
+Pillkaller Allee -> Heerstr.: Heerstr.	3::igndisp 14,11215 16,11190 229,11213
+Pillkaller Allee -> Parkweg Ortelsburger Allee: Heerstr.	3::igndisp 14,11215 16,11190 23,11137
+Parkweg Ortelsburger Allee -> Heerstr.: Heerstr.	3::igndisp 23,11137 16,11190 -82,11178
+Parkweg Ortelsburger Allee -> Pillkaller Allee: Heerstr.	3::igndisp 23,11137 16,11190 14,11215
+Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 200,11428 229,11213 438,11236
+Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 200,11428 229,11213 251,11039
+Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 438,11236 229,11213 251,11039
+Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 251,11039 229,11213 200,11428
+Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 251,11039 229,11213 16,11190
+Heerstr. -> Insterburgallee: Heerstr.	3::igndisp 16,11190 229,11213 200,11428
+Sensburger Allee -> Teufelsseestr.: Heerstr.	3::igndisp 326,11391 438,11236 454,11159
+Sensburger Allee -> Heerstr.: Heerstr.	3::igndisp 326,11391 438,11236 504,11243
+Heerstr. -> Sensburger Allee: Heerstr.	3::igndisp 229,11213 438,11236 326,11391
+Heerstr. -> Teufelsseestr.: Heerstr.	3::igndisp 504,11243 438,11236 454,11159
 tragen (20 Stufen)	0:30:-186 23,11137
 Oldenburgallee	1 454,11670 461,11455
 Westendallee	1s 461,11455 425,11455 395,11486 329,11696 323,11801
