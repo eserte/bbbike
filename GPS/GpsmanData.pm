@@ -744,7 +744,7 @@ sub convert_DMS_to_DDD {
 sub convert_DDD_to_DDD {
     my($in) = @_;
     if ($in =~ /^([NESW]?)(\d+\.?\d*)$/) {
-	my($dir,$ddd) = ($1,$2,$3,$4);
+	my($dir,$ddd) = ($1,$2);
 	if (defined $dir && $dir =~ /[SW]/) {
 	    $ddd *= -1;
 	}
