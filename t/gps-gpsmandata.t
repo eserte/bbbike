@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 44;
+plan tests => 47;
 
 use_ok 'GPS::GpsmanData';
 
@@ -184,6 +184,13 @@ EOF
     gpxlint_string($gpx);
 
     {
+	my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
+	$root->setNamespaceDeclURI(undef, undef);
+	is($root->findvalue('/gpx/trk[1]/name'), q{ACTIVE LOG}, 'Found 1st name');
+	is($root->findvalue('/gpx/trk[2]/name'), q{ACTIVE LOG 12}, 'Found 2nd name');
+    }
+
+    {
 	my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => '.trk')
 	    or die $!;
 	print $tmpfh $trk_sample_file;
@@ -225,6 +232,12 @@ EOF
     $gps_multi->load($tmpfile);
     my $gpx = $gps_multi->as_gpx(symtocmt => 1);
     gpxlint_string($gpx);
+
+    {
+	my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
+	$root->setNamespaceDeclURI(undef, undef);
+	is($root->findvalue('/gpx/rte[1]/name'), q{Seume -  Ebe}, 'Found 1st name in route');
+    }
 }
 
 {

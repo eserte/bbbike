@@ -1200,13 +1200,25 @@ sub as_gpx {
     $gpx->setNamespace("http://www.topografix.com/GPX/1/1");
     $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd");
     for my $chunk (@{ $self->Chunks }) {
+
+	my $add_name = sub {
+	    my $elem = shift;
+	    my $name = $chunk->Name;
+	    if (defined $name && length $name) {
+		my $namexml = $elem->addNewChild(undef, 'name');
+		$namexml->appendText($name);
+	    }
+	};
+
 	if ($chunk->Type eq $chunk->TYPE_WAYPOINT) {
+	    # No name handling for waypoints, waypoints have their own idents
 	    for my $wpt (@{ $chunk->Waypoints }) {
 		my $wptxml = $gpx->addNewChild(undef, "wpt");
 		$wpt->as_gpx($wptxml, $chunk, @std_wpt_as_gpx_args);
 	    }
 	} elsif ($chunk->Type eq $chunk->TYPE_TRACK) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
+	    $add_name->($trkxml);
 	    my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
 	    for my $wpt (@{ $chunk->Track }) {
 		my $trkptxml = $trksegxml->addNewChild(undef, "trkpt");
@@ -1214,6 +1226,7 @@ sub as_gpx {
 	    }
 	} elsif ($chunk->Type eq $chunk->TYPE_ROUTE) {
 	    my $rtexml = $gpx->addNewChild(undef, 'rte');
+	    $add_name->($rtexml);
 	    for my $wpt (@{ $chunk->Track }) {
 		my $rteptxml = $rtexml->addNewChild(undef, 'rtept');
 		$wpt->as_gpx($rteptxml, $chunk, @std_wpt_as_gpx_args);
