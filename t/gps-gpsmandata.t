@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 42;
+plan tests => 44;
 
 use_ok 'GPS::GpsmanData';
 
@@ -171,7 +171,9 @@ EOF
     is(scalar @{ $gps->Chunks }, 3, 'Expected number of chunks');
 
     is($gps->Chunks->[0]->TrackAttrs->{'srt:vehicle'}, 'pedes', 'Expected attribute');
+    is($gps->Chunks->[0]->Name, 'ACTIVE LOG', 'Expected first track name');
     is($gps->Chunks->[1]->TrackAttrs->{'srt:vehicle'}, 'u-bahn', 'Expected attribute in 2nd chunk');
+    is($gps->Chunks->[1]->Name, 'ACTIVE LOG 12', 'Expected track name in 2nd chunk');
 
     my @flat_wpt = $gps->flat_track;
     is(scalar(@flat_wpt), 4, 'Found four wpts in track');
