@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 36;
+plan tests => 37;
 
 use_ok 'GPS::GpsmanData';
 
@@ -282,6 +282,24 @@ EOF
     $gps_multi->load($tmpfile);
     my $gpx = $gps_multi->as_gpx(symtocmt => 1);
     gpxlint_string($gpx);
+}
+
+{
+    # track + waypoint
+    my $gpsman_sample_file = <<'EOF';
+!Format: DMS 0 WGS 84
+!Creation: no
+
+!T:	1. Dessau-Wittenberg
+	12-Aug-2013 08:54:33	N51 50 24.7	E12 14 01.3	67.9
+	12-Aug-2013 08:54:39	N51 50 24.5	E12 14 01.2	68.4
+!W:
+Bauhaus Dessau		N51 50 20.8	E12 13 36.3
+EOF
+    my $gps = GPS::GpsmanMultiData->new;
+    $gps->parse($gpsman_sample_file);
+    my @track = $gps->flat_track;
+    is scalar @track, 2, 'Found two waypoints in track (waypoints ignored)';
 }
 
 sub wpts_to_string {

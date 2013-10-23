@@ -1266,7 +1266,7 @@ sub flat_track {
     my($self) = @_;
     my @track;
     for my $chunk (@{ $self->Chunks }) {
-	for my $wpt (@{ $chunk->Track }) {
+	for my $wpt (@{ $chunk->Track || [] }) {
 	    push @track, $wpt;
 	}
     }
