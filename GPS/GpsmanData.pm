@@ -150,6 +150,9 @@ use GPS::Util; # for eliminate_umlauts
 	    require POSIX;
 	    my $timexml = $xmlnode->addNewChild(undef, 'time');
 	    $timexml->appendText(POSIX::strftime("%Y-%m-%dT%H:%M:%SZ", gmtime($epoch))); # %FT%T is not portable
+	    if ($args{autoskipcmt}) { # if the comment was recognized as a datetime, then there's no need to dump it also as a comment
+		$args{skipcmt} = 1;
+	    }
 	}
 
 	my $ident = $wpt->Ident;
@@ -1173,12 +1176,18 @@ sub convert_to_route {
 # Options:
 #   symtocmt => $bool: hack to put symbol name into comment, for gpx
 #                      renderers not dealing the sym tag (e.g. merkaartor)
+#   skipcmt => $bool: hack to skip creation of comment elements
+#   autoskipcmt => $bool: skip creation of comment elements if recognized as
+#                         a date/time element; by default set to a true value
 sub as_gpx {
     my($self, %args) = @_;
 
     my $sym_to_cmt = delete $args{symtocmt};
     my $skip_cmt = $sym_to_cmt ? 1 : delete $args{skipcmt};
+    my $auto_skip_cmt = exists $args{autoskipcmt} ? delete $args{autoskipcmt} : 1;
     die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    my @std_wpt_as_gpx_args = (symtocmt => $sym_to_cmt, skipcmt => $skip_cmt, autoskipcmt => $auto_skip_cmt);
 
     require GPS::GpsmanData::GarminGPX;
     require XML::LibXML;
@@ -1194,20 +1203,20 @@ sub as_gpx {
 	if ($chunk->Type eq $chunk->TYPE_WAYPOINT) {
 	    for my $wpt (@{ $chunk->Waypoints }) {
 		my $wptxml = $gpx->addNewChild(undef, "wpt");
-		$wpt->as_gpx($wptxml, $chunk, symtocmt => $sym_to_cmt, skipcmt => $skip_cmt);
+		$wpt->as_gpx($wptxml, $chunk, @std_wpt_as_gpx_args);
 	    }
 	} elsif ($chunk->Type eq $chunk->TYPE_TRACK) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
 	    my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
 	    for my $wpt (@{ $chunk->Track }) {
 		my $trkptxml = $trksegxml->addNewChild(undef, "trkpt");
-		$wpt->as_gpx($trkptxml, $chunk, symtocmt => $sym_to_cmt);
+		$wpt->as_gpx($trkptxml, $chunk, @std_wpt_as_gpx_args);
 	    }
 	} elsif ($chunk->Type eq $chunk->TYPE_ROUTE) {
 	    my $rtexml = $gpx->addNewChild(undef, 'rte');
 	    for my $wpt (@{ $chunk->Track }) {
 		my $rteptxml = $rtexml->addNewChild(undef, 'rtept');
-		$wpt->as_gpx($rteptxml, $chunk, symtocmt => $sym_to_cmt);
+		$wpt->as_gpx($rteptxml, $chunk, @std_wpt_as_gpx_args);
 	    }
 	}
     }

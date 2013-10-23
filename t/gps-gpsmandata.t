@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string);
 use File::Temp qw(tempfile);
 
-plan tests => 37;
+plan tests => 42;
 
 use_ok 'GPS::GpsmanData';
 
@@ -71,14 +71,28 @@ EOF
 	my $gps = GPS::GpsmanMultiData->new;
 	isa_ok($gps, "GPS::GpsmanMultiData");
 	$gps->load($tmpfile);
-	my $gpx = $gps->as_gpx; # preserve comments
-	gpxlint_string($gpx);
 
-	my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
-	$root->setNamespaceDeclURI(undef, undef);
-	like($root->findvalue('/gpx/wpt/cmt'), qr{26-JUL-10 11:37:07}, 'Found first comment')
-	    or diag "Please check the mapping in the bike2008 directory";
-	like($root->findvalue('/gpx/wpt/cmt'), qr{26-JUL-10 14:44:48}, 'Found second comment');
+	{
+	    my $gpx = $gps->as_gpx(autoskipcmt => 0); # preserve comments
+	    gpxlint_string($gpx);
+
+	    my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
+	    $root->setNamespaceDeclURI(undef, undef);
+	    is($root->findvalue('/gpx/wpt[1]/cmt'), q{26-JUL-10 11:37:07}, 'Found first comment');
+	    is($root->findvalue('/gpx/wpt[2]/cmt'), q{26-JUL-10 14:44:48}, 'Found second comment');
+	}
+
+	{
+	    my $gpx = $gps->as_gpx; # autoskipcmt => 1, does not preserve date comments
+	    gpxlint_string($gpx);
+
+	    my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
+	    $root->setNamespaceDeclURI(undef, undef);
+	    isnt($root->findvalue('/gpx/wpt[1]/cmt'), q{26-JUL-10 11:37:07}, 'Did not find datetime-like comment');
+	    is($root->findvalue('/gpx/wpt[1]/time'), q{2010-07-26T09:37:07Z}, '... but time is still set');
+	    isnt($root->findvalue('/gpx/wpt[2]/cmt'), q{26-JUL-10 14:44:48}, 'Also did not find second comment');
+	    is($root->findvalue('/gpx/wpt[2]/time'), q{2010-07-26T12:44:48Z}, '... but time is still set');
+	}
     }
 
     {
