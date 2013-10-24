@@ -763,13 +763,13 @@ Ruhlebener Str. -> Baumgartensteg: Mittelstreifen	3::igndisp -2967,13417 -2937,1
 Brückenauffahrt	3nocross::ignrte 18492,6893 18404,6946 18225,7004 18010,7133
 Fontanestr. -> An der Wuhlheide: Brückenauffahrt	3::igndisp 18240,6845 18225,7004 18010,7133
 An der Wuhlheide -> Fontanestr.: Brückenauffahrt	3::igndisp 18404,6946 18225,7004 18240,6845
-Mittelstreifen	3nocross::ignrte 6311,16457 6208,16546 6103,16635
-Sansibarstr. -> Müllerstr.: Mittelstreifen	3::igndisp 6106,16433 6208,16546 6103,16635
-Sansibarstr. -> Ofener Str.: Mittelstreifen	3::igndisp 6106,16433 6208,16546 6256,16601
-Müllerstr. -> Sansibarstr.: Mittelstreifen	3::igndisp 6311,16457 6208,16546 6106,16433
-Müllerstr. -> Ofener Str.: Mittelstreifen	3::igndisp 6103,16635 6208,16546 6256,16601
-Ofener Str. -> Sansibarstr.: Mittelstreifen	3::igndisp 6256,16601 6208,16546 6106,16433
-Ofener Str. -> Müllerstr.: Mittelstreifen	3::igndisp 6256,16601 6208,16546 6311,16457
+Mittelstreifen	3nocross::ignrte 6304,16447 6201,16538 6098,16630
+Sansibarstr. -> Müllerstr.: Mittelstreifen	3::igndisp 6106,16433 6201,16538 6098,16630
+Sansibarstr. -> Ofener Str.: Mittelstreifen	3::igndisp 6106,16433 6201,16538 6256,16601
+Müllerstr. -> Ofener Str.: Mittelstreifen	3::igndisp 6098,16630 6201,16538 6256,16601
+Ofener Str. -> Sansibarstr.: Mittelstreifen	3::igndisp 6256,16601 6201,16538 6106,16433
+Ofener Str. -> Müllerstr.: Mittelstreifen	3::igndisp 6256,16601 6201,16538 6304,16447
+Müllerstr. -> Sansibarstr.: Mittelstreifen	3::igndisp 6304,16447 6201,16538 6106,16433
 B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
 Mittelstreifen	3nocross::ignrte 16643,1460 16698,1392 16815,1278
 Am Rudower Fließ -> Neuköllner Str.: Mittelstreifen	3::igndisp 16650,1356 16698,1392 16643,1460
@@ -793,8 +793,8 @@ Flotowstr. -> Hindenburgdamm: Mittelstreifen	3::igndisp 4651,4638 4515,4581 4521
 Straßenbahntrasse	3nocross::ignrte 10878,17490 10880,17469 10886,17396
 Berliner Str. -> Masurenstr.: Straßenbahntrasse	3::igndisp 10886,17396 10880,17469 10670,17458
 Masurenstr. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10670,17458 10880,17469 10878,17490
-Mittelstreifen	3nocross::ignrte 6608,16180 6450,16325 6444,16331
-Müllerstr. -> Kongostr.: Mittelstreifen	3::igndisp 6608,16180 6450,16325 6349,16213
+Mittelstreifen	3nocross::ignrte 6608,16180 6447,16321 6440,16327
+Müllerstr. -> Kongostr.: Mittelstreifen	3::igndisp 6608,16180 6447,16321 6349,16213
 Mittelstreifen	3nocross::ignrte 7948,15802 7962,15633 7966,15571
 Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7948,15802 7962,15633 8053,15598
 Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8053,15598 7962,15633 7966,15571
@@ -1119,11 +1119,11 @@ Methfesselstr.: Durchfahrt gesperrt (Schranke)	3 9150,9152 9125,9078 9115,9046
 Neue Filandastr./Filandatr.	3nocross::ignrte 5687,5486 5671,5389 5659,5313
 Filandastr. -> Neue Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5637,5401 5671,5389 5687,5486
 Neue Filandastr. -> Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5659,5313 5671,5389 5637,5401
-Mittelstreifen	3nocross::ignrte 6019,16712 5937,16784 5900,16817 5777,16924
-Liverpooler Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5995,16836 5937,16784 6019,16712
-Müllerstr. -> Liverpooler Str.: Mittelstreifen	3::igndisp 5900,16817 5937,16784 5995,16836
-Querweg durch die Dauerkolonie Togo -> Müllerstr.: Mittelstreifen	3::igndisp 5700,16584 5900,16817 5777,16924
-Müllerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5937,16784 5900,16817 5700,16584
+Mittelstreifen	3nocross::ignrte 6013,16705 5931,16777 5894,16810 5772,16919
+Liverpooler Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5995,16836 5931,16777 6013,16705
+Müllerstr. -> Liverpooler Str.: Mittelstreifen	3::igndisp 5894,16810 5931,16777 5995,16836
+Querweg durch die Dauerkolonie Togo -> Müllerstr.: Mittelstreifen	3::igndisp 5700,16584 5894,16810 5772,16919
+Müllerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5931,16777 5894,16810 5700,16584
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16353,10207
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16353,10207 16539,10097 16734,9990
 Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 19478,7967 19509,7999 19558,8064
@@ -1216,7 +1216,7 @@ Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9985,18735 1000
 Killisch-von-Horn-Weg: Poller	3 9590,18082 9707,17941 9730,17927
 Killisch-von-Horn-Weg: Poller	3 9730,17927 9707,17941 9590,18082
 Frauenfelder Weg - Markstr.	3 7441,17009 7647,17037 7644,17054
-Kongostr.	1 6349,16213 6450,16325
+Kongostr.	1 6349,16213 6447,16321
 Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13483,3064
 Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13563,2909
 Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13606,3085

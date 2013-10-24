@@ -837,6 +837,27 @@ Sackgassenende, Friedhof Ahrensfelde	culdesac_pseudo 21747,19784
 #: note: anscheinend existiert ein Waldweg als Fortführung
 	culdesac_pseudo -847,10754
 	culdesac 1524,8524
+Sackgassenende, zum Uferweg	culdesac_pseudo -2188,20129
+Sackgassenende, zum Uferweg	culdesac_pseudo -2185,19996
+Sackgassenende, zum Uferweg	culdesac_pseudo -2231,19360
+	culdesac -1218,21436
+	culdesac -1720,23923
+#: note: ein Trampelpfad führt weiter
+	culdesac_pseudo -1404,23750
+#: note: ein Weg geht im Park weiter
+	culdesac_pseudo 2492,19897
+	culdesac 2997,18632
+Sackgassenende, Eingang U-Bhf. Scharnweberstr.	culdesac 4187,17765
+#: note: laut OSM geht's hier weiter
+	culdesac_pseudo 1080,20617
+	culdesac 1137,20712
+	culdesac 1218,20724
+	culdesac 1299,20722
+	culdesac 1377,20737
+#: note: laut OSM geht's hier weiter
+	culdesac_pseudo 989,20366
+#: note: laut OSM geht's hier weiter
+	culdesac_pseudo 2009,20604
 # 
 ######################################################################
 # culdesac entries which should remain invisible

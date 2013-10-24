@@ -392,8 +392,8 @@ EOF
        text  => 'Müllerstraße, Zwischen Kreuzung Seestraße und Kreuzung Leopoldplatz in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 01.04.2005 06:00 Uhr bis 03.04.2005 23:00 Uhr (Müllerstraßenfest) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 7043,15793 7129,15717 7198,15656
-userdel	2 7043,15793 6936,15888 6914,15908
+userdel	2 7024,15810 7129,15717 7198,15656
+userdel	2 7024,15810 6936,15888 6914,15908
 userdel	2 7198,15656 7277,15586
 userdel	2 6781,16026 6914,15908
 EOF
@@ -433,8 +433,8 @@ EOF
        text  => 'Hermannstraße, Straßenfest zwischen Flughafenstraße und Thomasstraße, Dauer: 21.05.2005 04:00 Uhr bis 23.05.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 7043,15793 7129,15717 7198,15656
-userdel	2 7043,15793 6936,15888 6914,15908
+userdel	2 7024,15810 7129,15717 7198,15656
+userdel	2 7024,15810 6936,15888 6914,15908
 userdel	2 7198,15656 7277,15586
 userdel	2 6781,16026 6914,15908
 EOF
@@ -591,9 +591,9 @@ EOF
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Transvaalstr. Veranstaltung, Straße vollständig gesperrt (bis 17.07.2005 24 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6019,16712 5937,16784 5900,16817 5777,16924
-userdel	2 6019,16712 6038,16694 6103,16635
-userdel	2 6103,16635 6208,16546 6311,16457
+userdel	2 6013,16705 5931,16777 5894,16810 5772,16919
+userdel	2 6013,16705 6032,16688 6098,16630
+userdel	2 6098,16630 6201,16538 6304,16447
 EOF
      },
      { from  => 1090533600, # 2004-07-23 00:00
@@ -675,7 +675,7 @@ EOF
        text  => 'L 88; (Beelitz-Lehnin); Bahnübergang zw. Beelitz u. AS Beelitz-Heilstätten Einbau Hilfsbrücke Vollsperrung 17.09.2004-20.09.2004 ',
        type  => 'gesperrt',
       data  => <<EOF,
-userdel	2 -21587,-16648 -21341,-17172
+userdel	2 -21587,-16648 -21342,-17087
 EOF
      },
      { from  => 1095717600, # 2004-09-21 00:00
@@ -683,7 +683,7 @@ EOF
        text  => 'L 88; (Beelitz-Lehnin); Bahnübergang zw. Beelitz u. AS Beelitz-Heilstätten Einbau Hilfsbrücke Vollsperrung 22.09.2004-25.09.2004 ',
        type  => 'gesperrt',
       data  => <<EOF,
-userdel	2 -21587,-16648 -21341,-17172
+userdel	2 -21587,-16648 -21342,-17087
 EOF
      },
      { from  => 1092866435, # 2004-08-19 00:00
@@ -1078,7 +1078,7 @@ EOF
        text  => 'Ruppiner Chaussee (Hennigsdorf) Kreuzung Hennigsdorfer Straße wegen Bauarbeiten gesperrt (bis 17.10.2004)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746
+userdel	q4 -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746
 userdel	q4 -1872,24336 -1896,24275 -1940,24176
 userdel	q4 -1872,24336 -1953,24435
 EOF
@@ -2261,7 +2261,7 @@ EOF
        text  => 'L 793; (Schönhagen-Ludwigsfelde); zw. Abzw. Gröben und Siethen Straßenbauarbeiten Vollsperrung 29.06.2005-02.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -2542,-13926 -3842,-14180
+userdel	2 -2553,-13899 -3842,-14180
 EOF
      },
      { from  => 1119909600, # 2005-06-28 00:00
@@ -4381,7 +4381,7 @@ EOF
        text  => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 06.11.2006 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -915,22935 -1103,22889 -1251,22853 -1299,22842
+userdel	2::inwork -919,22943 -1104,22898 -1246,22864 -1309,22848
 EOF
      },
      { from  => 1146701434, # 2006-05-04 02:10
@@ -4702,7 +4702,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_83663',
        data  => <<EOF,
-userdel	2::inwork 5777,16924 5847,17018 5953,17131 6051,17269 6091,17346 6126,17448
+userdel	2::inwork 5772,16919 5847,17018 5953,17131 6051,17269 6091,17346 6126,17448
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -4804,7 +4804,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002867',
        data  => <<EOF,
-userdel	2 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
+userdel	2 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -4868,7 +4868,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82301_COPY_1',
        data  => <<EOF,
-userdel	2::inwork -915,22935 -774,22977 -728,22990 -700,22998 -656,23011
+userdel	2::inwork -919,22943 -774,22977 -728,22990 -700,22998 -656,23011
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -5187,7 +5187,7 @@ EOF
        text  => 'L 023 Storkow-Grünheide Brücke über die Müggelspree bei Neuhartmannsdorf Asphaltarbeiten Vollsperrung 05.08.2006-06.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 40333,-4484 40503,-4571 40652,-4743
+userdel	2::inwork 40374,-4432 40534,-4568 40652,-4743
 EOF
      },
      { from  => 1153738184, # 2006-07-24 12:49
@@ -5585,7 +5585,7 @@ EOF
        text  => 'L 017 Königshorst-Warsow zw. Lobeofsund und KG bei Wiesenaue Straßenbauarbeiten Vollsperrung 21.08.2006-07.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -36125,34218 -34868,34062
+userdel	2::inwork -36193,34231 -35556,34192 -34868,34062
 EOF
      },
      { from  => 1156456800, # 2006-08-25 00:00
@@ -7499,7 +7499,7 @@ EOF
        text  => 'B 246 Brücker Str. OL Beelitz, zw. Bahnübergang u. Karl-Marx-Str. Ausbau Kreisverkehr Vollsperrung 21.01.2007-05.04.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -17930,-19476 -18615,-19264
+userdel	q4::inwork -17900,-19478 -18615,-19264
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -7636,7 +7636,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005069',
        data  => <<EOF,
-userdel	q4::inwork; 5988,16099 6104,16223 6215,16340
+userdel	q4::inwork; 5988,16099 6104,16223 6211,16343
 EOF
      },
      { from  => 1176674400, # 2007-04-16 00:00
@@ -8489,7 +8489,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005655',
        data  => <<EOF,
-userdel	2::temp 6311,16457 6208,16546 6103,16635 6038,16694 6019,16712 5937,16784 5900,16817 5777,16924
+userdel	2::temp 6304,16447 6201,16538 6098,16630 6032,16688 6013,16705 5931,16777 5894,16810 5772,16919
 EOF
      },
      { from  => 1180783165, # 2007-06-02 13:19
@@ -11307,7 +11307,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008238',
        data  => <<EOF,
-userdel	2::temp 7277,15586 7198,15656 7129,15717 7043,15793
+userdel	2::temp 7277,15586 7198,15656 7129,15717 7024,15810
 EOF
      },
      { from  => 1209506400, # 2008-04-30 00:00
@@ -12234,7 +12234,7 @@ EOF
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung (Stadtteilfest Müllerstraße), Straße vollständig gesperrt (2. bis 4. August 2013)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
+userdel	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
 EOF
      },
      { from  => 1217625939, # 2008-08-01 23:25
@@ -12811,7 +12811,7 @@ EOF
        text  => 'K 6312 Brandenburger Allee, Bahnhofstaße OD Paulinenaue Straßenbau Vollsperrung 01.10.2008-09.11.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -36724,28543 -36808,28769 -37053,29229
+userdel	q4::inwork -36693,28537 -36786,28765 -36922,29080 -37053,29229
 EOF
      },
      { from  => 1223157600, # 2008-10-05 00:00
@@ -13527,7 +13527,7 @@ EOF
        text  => 'L 016 Flatow - Fehrbellin zw. Tarmow und Hakenberg Deckenerneuerung Vollsperrung 23.03.2009-30.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -29100,40590 -29745,41348 -30926,42438
+userdel	2::inwork -29082,40714 -29754,41443 -30965,42616
 EOF
      },
      { from  => 1236812400, # 2009-03-12 00:00
@@ -13960,7 +13960,7 @@ EOF
        text  => 'K 6315 Nennhausen - Rhinsmühlen zw. Nennhausen und Kotzen Straßenbau Vollsperrung 04.05.2009-26.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -50010,23562 -50201,23411 -50255,22794 -50938,21256
+userdel	2::inwork -50010,23562 -50201,23411 -50255,22794 -51061,21342
 userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
 EOF
      },
@@ -17208,7 +17208,7 @@ EOF
        text  => 'B 246 Clara-Zetkin-Straße OD Beelitz, zw. Trebbiner Str. u. Brücker Str. Kanal- u. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 29.05.2009-27.08.2010 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -17930,-19476 -18615,-19264
+userdel	q4::inwork -17900,-19478 -18615,-19264
 EOF
      },
      { from  => 1275342093, # 2010-05-31 23:41
@@ -17442,7 +17442,7 @@ EOF
        text  => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Leopoldplatz gesperrt, 28. und 29. September 2013',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586
+userdel	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
 EOF
      },
      { from  => undef, # 
@@ -19504,7 +19504,7 @@ EOF
 #: XXX Weiterbau zwischen Gorkistr. und Bernstorffstraße ab März 2012 vorgesehen
 #: next_check: 2012-03-01
 userdel	q4::inwork 2358,20368 2295,20358 2241,20487
-userdel	q4::inwork 2295,20358 2362,20218 2402,20126
+userdel	q4::inwork 2295,20358 2356,20216 2395,20126
 EOF
      },
      { from  => 1311832800, # 2011-07-28 08:00
@@ -20044,6 +20044,7 @@ EOF
 #: note: am 2013-04-11 geprüft: Radfahrer dürfen hier offiziell entlangfahren
 #: note: am 2013-08-14 geprüft: Fahrbahn war gesperrt
 #: note: am 2013-09-06 geprüft: Schranke, nur Straßenbahnen und Lieferverkehr werden durchgelassen
+#: note: am 2013-10-24 geprüft: Radfahrer konnten heute wohl durchfahren, aber offiziell noch immer gesperrt
 userdel	q3::inwork 10530,14452 10723,14772
 EOF
      },
@@ -20125,7 +20126,8 @@ EOF
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
 #: osm_watch: way id="23243508" version="37"
-userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
+#: note: Radfahrer dürfen offiziell in Gegenrichtung fahren
+userdel	q2::inwork; -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
      { from  => undef, # 1329631200, # 2012-02-19 07:00
@@ -21858,7 +21860,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130910.1105.389039.html',
        data  => <<EOF,
 userdel	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25251 1513,25253 1576,25249 1738,25243
-#: XXX Einbahnstraßenrichtung ist geraten
+# REMOVED --- #: XXX Einbahnstraßenrichtung ist geraten
 	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
 EOF
      },
@@ -22006,6 +22008,24 @@ EOF
 #: last_checked: 2013-10-20
 #: next_check: 2013-11-20
 userdel	q3::inwork 11758,16111 11684,15997 11859,16058
+EOF
+     },
+     { from  => 1382507820, # 2013-10-23 07:57
+       until => 1383055200, # 2013-10-29 15:00
+       text  => 'Augustastr. (Steglitz): Baustelle, Fahrbahn zwischen Augustaplatz und Moltkestr. bis Ende Oktober 2013 gesperrt ',
+       type  => 'handicap',
+       source_id => 'IM_020548',
+       data  => <<EOF,
+userdel	q4::inwork 4045,4005 4234,4020
+EOF
+     },
+     { from  => 1382626800, # 2013-10-24 17:00
+       until => 1382810400, # 2013-10-26 20:00
+       text  => 'Oranienburger Chaussee (Frohnau) zwischen Schwarzkittelweg und Landesgrenze gesperrt, von 25.10.2013 17 Uhr bis 26.10.2013 20 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_020557',
+       data  => <<EOF,
+userdel	2::inwork 2178,28067 2345,27670 2666,27009 2842,26710
 EOF
      },
     );

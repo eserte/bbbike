@@ -111,8 +111,8 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
 # REMOVED (weitgehend realisiert, bis auf das letzte Stück vor der Kreuzung) --- #: last_checked: 2013-09-10 vvv --- #: next_check: 2013-09-12 vvv --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::inwork; 12726,11851 12681,11741 12645,11673 --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459 --- #: next_check ^^^ --- #: last_checked ^^^
-#: last_checked: 2013-10-15
-Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected 12850,12286 12869,12425
+#: last_checked: 2013-10-24
+Straße der Pariser Kommune: werden hier die fehlenden Meter Radspur noch markiert?	?::projected 12850,12286 12869,12425
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 1.39 (Realisierung in 2011)
@@ -134,23 +134,23 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="15"
 #: osm_watch: way id="42732291" version="7"
-#: last_checked: 2013-08-26
+#: last_checked: 2013-10-24
 #: check_frequency: 60d
-Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7043,15793 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
+Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: osm_watch: way id="5117259" version="8"
 #: osm_watch: way id="4581787" version="5"
-#: last_checked: 2013-07-10
+#: last_checked: 2013-10-24
 #: check_frequency: 90d
-Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258,16111 6349,16213 6450,16325 6444,16331 6629,16538
+Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258,16111 6349,16213 6447,16321 6440,16327 6629,16538
 # 
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-08-26
+#: last_checked: 2013-10-24
 #: check_frequency: 60d
-Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7728,16538 7754,16364 7808,16215 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
+Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7717,16541 7754,16364 7800,16233 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
 # 
 #: XXX Baumaßnahme 3.39 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
@@ -200,7 +200,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: next_check: 2013-11-01
 Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
-#: XXX Baumaßnahme 9.16 (Realisierung nach 2011)
+#: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
 #: last_checked: 2013-09-27
 #: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
@@ -211,7 +211,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
-#: last_checked: 2013-09-15
+#: last_checked: 2013-10-23 (westlicher Abschnitt)
 #: check_frequency: 90d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13600,5240 13594,5240 13323,5222 13248,5221 13112,5253 13046,5267
 # 
@@ -413,11 +413,7 @@ Bahnhofstr./Blankenburger Weg/Pankstr.: Ampel geplant	?::projected 12442,20805
 #: priority: #C
 Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected 4575,22089 4582,22122
 # 
-#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130730.0800.387345.html
-#: source_id: INKO_120069 (hier aber nur bis Ende September)
-#: next_check: 2013-10-05
-Ruppiner Chaussee: Fahrradstreifen nach den Bauarbeiten?	?::inwork -1872,24336 -1953,24435 -1982,24514
-# 
+# REMOVED (aufgenommen, Radweg) --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130730.0800.387345.html --- #: source_id: INKO_120069 (hier aber nur bis Ende September) --- #: next_check: 2013-10-05 --- Ruppiner Chaussee: Fahrradstreifen nach den Bauarbeiten?	?::inwork -1872,24336 -1953,24435 -1982,24514
 # REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html --- #: XXX Mitte Oktober sind die Sanierungsarbeiten fertig, dann diesen Eintrag entfernen --- Robert-Siewert-Str.: Bauarbeiten, gibt es Einschränkungen für Radfahrer, insbesondere im Abschnitt des "antiken" Radwegs?	?::inwork 19242,9815 19398,9833 19459,9842 19536,9853 19669,9876
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html ("Durchführungszeit zwei Wochen, allerdings wurde der Termin (16.9.) nicht realisiert)
@@ -556,15 +552,12 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 Frohnauer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 2437,24435 2437,24393
 Alt-Wittenau: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5235,20439
 Waidmannsluster Damm/Am Leitbruch: wird hier ein Zebrastreifen angelegt?	?::projected 4052,22089 4094,22065
-#: by: http://heiligensee.cdu-reinickendorf.de/Zeitung/Wir-im-Norden_12_0030_web.pdf
-#: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=2909
-Eichelhäherstr.: hier wird ein Zebrastreifen entstehen (Bauarbeiten beginnen nach der Frostperiode Anfang 2013)	?::projected -1802,19653 -1778,19649
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3655,23244
 #: next_check ^^^
 #: last_checked: 2013-07-10
 Eichborndamm: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4580,19756
-#: last_checked: 2013-06-07
-Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8091,17194
+#: last_checked: 2013-10-24
+Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8055,17179 8091,17194
 #: check_frequency: ^^^
 #: priority ^^^
 #: by: ^^^
@@ -698,7 +691,7 @@ Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,608
 #: XXX die Reinickendorfer Pressemeldungsschreiber sind fleißig, höchstwahrscheinlich wird es dort erscheinen, falls hier was passiert
 #: XXX fehlt in Berlin.coords.data, PLZ=13507
 #: osm_watch: way id="23099023" version="8"
-#: last_checked: 2012-09-01 (keine Anzeichen für Bauarbeiten)
+#: last_checked: 2013-10-24 (Bauarbeiten)
 #: next_check: 2014-06-30
 Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431 1708,20459
 # 
@@ -862,8 +855,8 @@ Weg im Stadtgarten Moabit: Qualität? Nachts beleuchtet?	?::inwork 5708,14077 566
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
-#: last_checked: 2013-09-06
-#: next_check: 2013-10-18
+#: last_checked: 2013-10-24
+#: next_check: 2013-11-24
 Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772
 # 
 #: last_checked: 2013-06-15 vvv
@@ -1045,6 +1038,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: next_check: 2014-03-15 (im Herbst/Winter sind Waldwege schwierig zu überprüfen)
+Reinickendorfer Route 3: genauer Streckenverlauf? Qualität?	? 2566,23584 2272,23574 2137,23626 2114,23720 2056,23749 1980,23711 1848,23679 1702,23692 1622,23726 1607,23777 1576,23785 1433,23738 1363,23746 1304,23736 1157,23752
 # 
 Auffahrt zum ehem. Horchposten (Ostseite): Auffahrt möglich? Qualität (an der Teufelsseechaussee asphaltiert)	? -1,10327 -98,10356 -180,10407 -233,10406 -276,10380 -295,10325 -285,10227 -301,10160 -385,9972 -574,9832 -615,9831 -641,9882 -710,9854 -769,9856
 # 
@@ -1280,9 +1276,6 @@ Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9
 #: XXX nochmal genau vor Ort anschauen
 An der Vogelweide: Qualität? Lage? Straßenschilder?	? 8568,21863 8626,21892 8712,21858 8725,21910 8615,21955 8590,21894
 # 
-#: next_check: 2013-05-01
-Tegelort - Hakenfelde (sowie Fähre via Valentinswerder): prüfen, ob es nennenswerte Verbindungen gibt (außer am Wochenende)	? -1694,17839 -1828,17796
-# 
 # REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2013 --- Am Valwigerteich: gibt es mittlerweile eine Durchfahrtmöglichkeit?	? 18867,12265 18917,12271
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/buddestra__e_lp2_07_03_2011.pdf?start&ts=1299577401&file=buddestra__e_lp2_07_03_2011.pdf --- #: priority: #C --- Buddestr.: existiert hier ein Zebrastreifen?	? 2358,20199 2382,20210
 # REMOVED (ist mir nicht aufgefallen) --- Zugang zum Allendeweg möglich?	? 23025,4358 23001,4382
@@ -1388,24 +1381,20 @@ Weg H: Steigung müsste in die andere Richtung verlaufen!	? 27961,699 28083,592
 # REMOVED --- #: by: http://ftp.berlinonline.de/ba-temp-schoen/ba_beschluesse/2012-08-14/drucks._nr.1842_xviii_bezirkliches_fahrradroutennetz_fuer_tempelhof_schoeneberg_entwickeln_zwischenbericht.pdf (Treppe, wassergebundene Decke) --- Götzstr. - Albrechtstr.: liegt hier auch Verbundsteinpflaster oder eine wassergebundene Decke? Gibt es hier Treppen?	? 9381,6277 9374,6189 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf vvv
-#: XXX Befahrbarkeit soll laut Maßnahmenkatalog verbessert werden
-#: XXX_indoor: evtl. nach future.bbd verschieben?
-Forstweg in der Köllnischen Heide: Qualität?	? 20490,4895 19802,4248
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-989 21479,-925 21393,-871
 #: last_checked: 2013-06-09
 #: check_frequency: 100d
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25691,4716 25724,4706 25802,4681
-#: XXX dieser Abschnitt existiert wahrscheinlich schon
-Querungsmöglichkeit der Bahntrassen soll ermöglicht werden: Qualität?	? 23504,-938 23711,-1054 24058,-1287
-Querungsmöglichkeit der Bahntrassen soll ermöglicht werden	?::projected 24058,-1287 24153,-1140
 #: last_checked: 2013-07-06
 #: next_check: 2013-10-15
 Verbesserung der Befahrbarkeit	?::projected 22655,1450 22756,1524
 Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23955,728 24019,711 24211,585 24571,514 24660,440
 Fahrradstraße soll eingerichtet werden	?::projected 25646,-209 25760,-427 25958,-731
-Forstweg zur Bammelecke: existiert schon etwas? Qualität?	? 24425,-580 25497,418
 Verbesserung der Befahrbarkeit	?::projected 25958,-731 26004,-705 26045,-718 26073,-745 26129,-807 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
 Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26846,-2176 27021,-2336 27161,-2474 27093,-2560
+#: last_checked: 2013-06-09
+#: next_check: 2014-06-09
+Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 21053,4162 21146,4229
 #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4 (Prüfung der Maßnahme)
@@ -1505,7 +1494,7 @@ Radweg auf Alt-Biesdorf hier verschwenkt	? 20114,11719 20025,11747
 Alt-Friedrichsfelde/Gensinger Straße: zwei Radwegverschwenkungen auf der nördlichen Seite	? 19389,11761 19004,11780 18853,11780
 # 
 B87 (Umfahrung Müllrose): Ist die Straße eine Kfz-Straße?	? 78295,-17575 78445,-17324 78503,-16995 78474,-16794 78366,-16150 78445,-15684 78732,-15297 79126,-15047 79949,-14674 80501,-14338 81246,-13757 81362,-13667
-B87 (Umfahrung Beeskow): Ist die Straße eine Kfz-Straße?	? 66269,-27581 66283,-27438 66441,-26994 66462,-26428 66441,-25347 66426,-23979 66605,-23083 67085,-22374 67558,-22059 68152,-21851 68883,-21844 69506,-22088 70838,-22847 71168,-22890 71397,-22833
+B87 (Umfahrung Beeskow): Ist die Straße eine Kfz-Straße?	? 66269,-27581 66283,-27438 66441,-26994 66462,-26428 66441,-25347 66426,-23979 66605,-23083 67085,-22374 67558,-22059 68152,-21851 68883,-21844 69530,-22083 70838,-22847 71168,-22890 71397,-22833
 # 
 # REMOVED (aufgenommen) --- #: next_check: 2006-06-01 --- #: XXX oder vielleicht dieser Weg hier? --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20101109.1255.318039.html --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20120314.1050.367483.html --- (am Burgwallgraben): neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006. Qualität? Nachts beleuchtet?	? -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3339,13106
 # 
@@ -1712,7 +1701,7 @@ Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf
-#: last_checked: 2013-09-15
+#: last_checked: 2013-10-16
 #: check_frequency: 30d
 Cheruskerpark: entsteht hier eine neue Wegverbindung?	?::projected 7391,8231 7369,8278
 # 
@@ -1950,8 +1939,8 @@ Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -897
 # REMOVED --- XXX Koordinaten stimmen nicht mehr! Darßer Str.: beidseitiger Radweg ja, eintragen!	? B24943,-13819 B23513,-13631
 # REMOVED --- XXX Koordinaten stimmen nicht mehr! Granitzstr.: wenigstens teilweise Radweg Richtung Osten? (Richtung Westen definitiv kein Radweg)	? B14908,-13452 B15798,-14098
 # REMOVED (wozu gehört das überhaupt?) --- XXX: B96 ab Ende Schnellstraße bis mindestens Fürstenberg als "stark befahren" markieren!
-Fresdorf - Kähnsdorf: Qualität?	? -11553,-15502 -12187,-15175 -12289,-15205 -12402,-15326 -12765,-15415 -12909,-15368 -13133,-15396 -13607,-15551
-Kähnsdorf - Seddin: Qualität?	? -13607,-15551 -13887,-15575 -13996,-15825 -14270,-15906 -15863,-15363 -16345,-15170
+Fresdorf - Kähnsdorf: Qualität?	? -11553,-15502 -11959,-15330 -12187,-15175 -12289,-15205 -12783,-15481 -13016,-15396 -13260,-15429 -13607,-15551
+Kähnsdorf - Seddin: Qualität?	? -13607,-15551 -13887,-15575 -14015,-15822 -14299,-15894 -15316,-15469 -15863,-15363 -16345,-15170
 Rheinsberg - Großzerlang: Qualität?	? -25439,77907 -25050,79662 -24100,80450 -23725,81512 -23550,82037 -23462,82925 -23612,83475 -23525,84137 -23152,84531 -22637,85912 -22325,86300
 Kleinzerlang - Großzerlang: Qualität?	? -26211,86312 -25700,86287 -24725,86237 -24416,86433 -24200,86500 -24062,86312 -23737,86225 -22525,86225 -22325,86300 -22141,86580 -21800,87725
 Zechlinerhütte - Kleinzerlang: Qualität?	? -26098,84240 -25500,85050 -25187,85225 -25100,85862 -24725,86237
@@ -2015,9 +2004,9 @@ Hirschfelde - Tiefensee: Qualität?	? 36528,26746 36987,26462 37337,26575 38500,2
 Strausberg, an der S-Bahn entlang: Qualität?	? 41396,16324 41725,16362 42262,17487 42650,17962 42837,18038
 Hennickendorf - Strausberg, östliche Route: Qualität?	? 40747,11863 41300,12400 41562,12900 41875,12875 42412,13837 42850,14400 43162,14428 43839,15716 43737,16362 43450,16950 43587,17012 43612,17175 43512,17250 43312,17750 43250,17737 43050,18137 43062,18362 42975,18637 42815,18713
 # REMOVED (hier scheint nichts zu existieren) --- Fürstenwalde - ... [Spreeradweg]: Qualität?	? 55506,-4975 56050,-5037 56725,-5300 56825,-5212 57775,-5300 58059,-5432 58287,-5650 59537,-5725 60250,-5487 60875,-5575 62175,-6512 62100,-6612 62237,-6825 62250,-7200 62399,-7465
-# REMOVED (hier existiert wahrscheinlich auch nichts) --- Fürstenwalde - ... [Spreeradweg]: Qualität?	? 62496,-7767 62537,-7912 62900,-7937 64087,-9287 64412,-9325 64975,-10037 65525,-10312 65737,-10612 66350,-10725 66537,-11400 67062,-11925 67225,-11762 67250,-11550 67412,-11475 67537,-11025 67512,-10212
-Fürstenwalde - ... [Spreeradweg]: Qualität?	? 61358,-5058 62256,-5499 63553,-5638 63806,-5749 64394,-6041 64341,-6204 63883,-6862 64481,-7869 65221,-8370 65720,-9072 65861,-9765 66502,-10163 66750,-9994 66949,-10257 67512,-10212 68737,-10537 69150,-11150 69475,-11212 69887,-11025 70241,-11085 70350,-11262 70612,-11450 70600,-12200 70475,-12362 70337,-13525 70236,-13850
-Raßmannsdorf - Beeskow [Spreeradweg]: Qualität?	? 68832,-15661 68725,-15912 68837,-16362 68837,-16687 68937,-16912 69112,-17475 69150,-18437 69000,-18562 68962,-19137 69300,-19425 69750,-20150 69862,-20487 70000,-20537 69977,-20717 69887,-21300 69506,-22088 68725,-24375 68537,-24400
+# REMOVED (hier existiert wahrscheinlich auch nichts) --- Fürstenwalde - ... [Spreeradweg]: Qualität?	? 62496,-7767 62537,-7912 62900,-7937 64087,-9287 64412,-9325 64975,-10037 65525,-10312 65737,-10612 66350,-10725 66537,-11400 67062,-11925 67225,-11762 67250,-11550 67412,-11475 67537,-11025 67562,-10189
+Fürstenwalde - ... [Spreeradweg]: Qualität?	? 61358,-5058 62256,-5499 63553,-5638 63806,-5749 64394,-6041 64341,-6204 63883,-6862 64481,-7869 65221,-8370 65720,-9072 65861,-9765 66502,-10163 66750,-9994 66949,-10257 67562,-10189 67888,-10270 67951,-10337 68111,-10346 68311,-10439 68603,-10478 68694,-10720 68866,-10708 69105,-11091 69307,-11218 69475,-11212 69887,-11025 70179,-11052 70297,-11118 70632,-11508 70560,-11725 70584,-12196 70445,-12347 70285,-13512 70279,-13778 70236,-13850
+Raßmannsdorf - Beeskow [Spreeradweg]: Qualität?	? 68832,-15661 68725,-15912 68791,-16226 68824,-16682 68875,-16851 69020,-17241 69105,-17633 69086,-18442 68975,-18623 68945,-19100 69300,-19425 69702,-20084 69745,-20229 69883,-20468 70000,-20537 69977,-20717 69820,-21274 69530,-22083 69029,-23550 68673,-24335 68519,-24365
 Beeskow - Ranzig [Spreeradweg]: Qualität?	? 67701,-25662 67579,-25769 65675,-26512 65562,-27012 65037,-27312 64887,-27712 63887,-28687 63350,-29387 63362,-29687 63887,-30462 64853,-30986
 Trebatsch - Alt Schadow [Spreeradweg]: Qualität?	? 63095,-34910 61300,-34362 61250,-34250 59650,-33375 59962,-33025 59925,-32687 60200,-32350 59973,-32331 59512,-32275 59237,-32125 58950,-32100 58137,-32200 57850,-32300 57425,-32237 56875,-31837 54712,-32300 54200,-32512 53912,-32262 54112,-32025 53825,-31700 53906,-31539 53787,-31237 53250,-31150 52737,-30700 52400,-30587 52425,-30275 52112,-30475 51487,-31037 51075,-30925 49650,-30912 49312,-30662 48875,-30837 48700,-31000 48393,-31006
 Alt Schadow - Leibsch [Spreeradweg/Gurkenradweg]: Qualität?	? 48393,-31006 48140,-30425 48000,-30262 47812,-29750 47750,-29162 47587,-29137 47400,-29412 47025,-29575 46662,-29937 46387,-29937 45887,-30287 45862,-31150 45662,-31325 45287,-32475 45106,-32618 44687,-32975 44175,-33112 43887,-33112 43434,-33326 43200,-33487 43119,-33913 42875,-34425 42854,-34816
@@ -2131,7 +2120,7 @@ Gamensee - Tiefensee (südl.): Qualität?	? 40206,30002 40160,30018 40043,30084 39
 Gamensee - Tiefensee (nördl.): Qualität?	? 40302,30617 40191,30703 39469,30977 39362,31019
 Blumberg - Trappenfelde: Qualität?	? 25315,21433 26595,20119 26717,20063
 Altlandsberg - Neuenhagen (alternative Strecke): Qualität?	? 32293,18093 32527,18001 32090,15994 32156,15827 32024,15680 31953,15259 32014,14695 32009,14476 31841,13897 31694,13989 31480,14029 31303,13933 31277,13730 31161,13562 31181,13354
-Spreeradweg: Qualität? ausgeschildert?	? 35912,-1171 35978,-1196 36008,-1254 36107,-1546 36176,-1661 36387,-1760 36625,-1843 36704,-1907 37316,-2196 37326,-2262 37405,-2468 37491,-2791 37532,-3029 38042,-3415 38179,-3448 38329,-3425 38774,-3522 38855,-3570 39150,-3862 39287,-3900 39355,-3877 39518,-3910 39805,-3908 39820,-3918 40013,-3857 40008,-3834 40168,-3811 40256,-3818
+Spreeradweg: Qualität? ausgeschildert?	? 35912,-1171 35978,-1196 36008,-1254 36107,-1546 36176,-1661 36387,-1760 36625,-1843 36704,-1907 37316,-2196 37326,-2262 37405,-2468 37491,-2791 37532,-3029 38042,-3415 38179,-3448 38329,-3425 38774,-3522 38855,-3570 39150,-3862 39287,-3900 39355,-3877 39518,-3910 39805,-3908 39820,-3918 40013,-3857 40008,-3834 40168,-3811 40278,-3816
 Steinfurth - Spreeradweg: Qualität?	? 35828,-2672 35879,-2595 36001,-2511 36267,-2143 36290,-2080 36257,-1948 36308,-1922 36387,-1760
 Spreeradweg - Straße nach Hangelsberg: Qualität?	? 37316,-2196 37458,-2229 37613,-2204 37644,-1788 37560,-1526 37565,-1455 37661,-1285 37532,-1145 37527,-1102 37598,-1021 37684,-950 37892,-866 38002,-856 38294,-896 38563,-873 38697,-909 39142,-1089 39341,-1057
 Hangelsberg - A10: Qualität? Für Radfahrer überhaupt benutzbar?	? 37527,-1102 37397,-1192 36991,-1329 36678,-1432
@@ -2161,7 +2150,7 @@ Töplitz - Neu-Töplitz - Leest: Qualität (von Leest aus asphaltiert!)? Durchgehen
 Töplitz - Göttin: Qualität? Ausschilderung?	? -23694,2739 -23826,2871 -23975,2925 -24013,2975 -24073,2959 -24121,3026 -24076,3347 -24359,3569 -24613,3867 -24464,3972 -24362,3987 -24308,4092 -24368,4124 -24276,4282 -24191,4349 -24098,4329
 Göttin - Neu-Töplitz: Qualität? Ausschilderung?	? -24098,4329 -23819,4206 -23597,4083 -23423,3918 -23353,3762 -23229,3692
 Göttin - Neu-Töplitz (längere Alternativstrecke): Qualität? Ausschilderung?	? -24098,4329 -23927,4682 -23439,4685 -22782,4597 -22836,4190 -22906,4136 -22909,4076
-Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15840,-19875 -15820,-18897 -15477,-18643 -15211,-18664 -15160,-18324 -15198,-18059 -14322,-17043 -14233,-16484 -14270,-15906
+Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15840,-19875 -15820,-18897 -15404,-18617 -15211,-18664 -15120,-18337 -14640,-17630 -14257,-16930 -14085,-15997 -14015,-15822
 #: XXX cat=H
 Lug - Altdöbern: Qualität?	? 48113,-85526 48562,-85550 49162,-85300 50237,-84450 50962,-84350 52312,-83050 52625,-83050 53571,-83335
 #: XXX: laut Aktiv Regional gut geeignet
@@ -2420,7 +2409,7 @@ Löpten - Halbe (West): Qualität?	? 30295,-28418 29920,-28522 29923,-28702 30082,
 Barkhausenstr.: Qualität?	? -10530,16281 -10744,16241
 Barkhausenstr.: Qualität?	? -10853,16230 -10970,16232 -11136,16247 -11296,16308 -11549,16413 -11783,16506
 #: next_check: 2009-06-01
-K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen: Qualität (bis Ende 2005 bei der LBVS als "schlechte Straße" gekennzeichnet; evtl. ab Juni 2009 gut befahrbar)	? -50149,24689 -50048,24475 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
+K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen: Qualität (bis Ende 2005 bei der LBVS als "schlechte Straße" gekennzeichnet; evtl. ab Juni 2009 gut befahrbar)	? -50149,24689 -50048,24475 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -51061,21342
 Bergholz - Grimme: Qualität?	? 60460,115792 59564,114268 58985,114226
 Grimme - Brüssow: Qualität?	? 58985,114226 58692,114171 58644,113939 58570,113866 58577,113531 58619,113397 58625,113293 58595,113171 58522,113056 58497,112964 58461,112854 58272,112531 58199,112288 57900,111758 57821,111672
 Radweg Lychen - Himmelpfort: Qualität (Am Anfang bei Lychen noch asphaltiert)?	? 234,89271 213,89085 188,88982 -12,88820 -1764,87733 -2306,87318 -3001,86675 -3236,86304
@@ -2805,8 +2794,6 @@ Liefelds Grund (Potsdam): Qualität?	? -10397,-5379 -10344,-5504 -10482,-5572
 Moosglöckchenweg (Potsdam): Qualität?	? -10535,-5751 -10630,-5553
 Am Springbruch (Potsdam): Qualität?	? -10641,-5814 -10721,-5678 -10659,-5648
 # 
-Führt hier auch die Route 3 entlang?	? 873,24112 904,23964 875,23836
-# 
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2669
 Radweg zwischen Groß Schulzendorf und Ludwigsfelde: existiert bereits der Radweg? Qualität?	? 7638,-14868 7475,-14774 7135,-14839 5497,-15134 4880,-15498 4580,-15515 4453,-15366 4282,-15325 4048,-14854 3323,-14135
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2669
@@ -3105,13 +3092,8 @@ Kleinmutz - Bergsdorf: Qualität?	? 1291,60437 38,59019 41,58699 -44,58487 -285,5
 Neuhäsen - B167: Qualität?	? -5505,57159 -5163,56099
 Neuhäsen - B167: Qualität?	? -4948,55812 -4424,54552
 Neuhäsen - Gutengermendorf: Qualität?	? -5505,57159 -5795,58115 -5792,58185
-Elchdamm: Qualität?	? -1168,21308 -865,21244 -716,21284 -627,21304 -501,21304
-Bärbelweg: Qualität?	? -2288,18976 -2192,18782 -2064,18667
-Waldweg im Tegeler Forst: Qualität?	? -1543,18632 -671,19408 -421,19626
-Waldweg im Tegeler Forst: Qualität?	? -112,19901 66,20061 87,20066
 # REMOVED (Antwort: ja) --- Grünfließer Gang: existiert ein Straßenschild auf der nördlichen Seite?	? 23675,5823 23675,5729
 # REMOVED (ich habe mich auf den Gosener Teil der Straße beschränkt) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file --- #: XXX laut Link ein Teil auch in Berlin (Schmöckwitz) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file --- Am Zwiebusch (Gosen): Qualität?	? 30411,-1704 30361,-1756
-Uferweg (Tegeler See): Qualität?	? -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790
 # REMOVED (aber zumindest östlich der Aalemannkanalbrücke nicht bestätigt) --- #: XXX Eintrag von: Geske, Anselm [AM], --- Aalemannufer: gibt es Radstreifen am Aalemannufer?	? -1989,18378 -2053,18375 -2096,18376 -2535,18391 -2605,18393 -2678,18396 -2759,18400
 # 
 #: XXX Kasernengelände vvv
@@ -3506,6 +3488,13 @@ Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2760,23964 2784,2392
 #: XXX ^^^
 #: osm_watch ^^^
 # 
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20130919.1210.389478.html
-#: XXX Fußweg. Fehlt noch in Berlin.coords.data.
-Lee-Parry-Weg: wo genau liegt die Straße? Qualität?	? -5093,8398 -5088,8449 -5008,8475 -4999,8465
+# REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130919.1210.389478.html --- #: XXX Fußweg. Fehlt noch in Berlin.coords.data. --- Lee-Parry-Weg: wo genau liegt die Straße? Qualität?	? -5093,8398 -5088,8449 -5008,8475 -4999,8465
+#: XXX im Norden als "Ritterlandstr." ausgeschildert, dort Verbundsteinpflaster
+Tromsöer Str. - Ritterlandstr.: besteht für Radfahrer eine Durchfahrtmöglichkeit? Qualität? Ausschilderung?	? 8243,16889 8363,17192
+#: XXX wahrscheinlich Waldweg, wahrscheinlich unbeleuchtet, green2 vvv
+#: next_check: 2014-03-15 (im Herbst/Winter sind Waldwege schwierig zu überprüfen) vvv
+Ehrenpfortensteig, Verlängerung: Qualität? Existiert eine Ausschilderung?	? 2203,22749 2088,22798 1897,22781 1760,22839 1661,22851 1563,22850 1518,22874 1460,22874
+Am Buchenberg - Schulzendorfer Str.: Qualität? Existiert eine Ausschilderung?	? 2827,23132 2773,23164 2458,23272 1794,23255 1479,23355 1050,23447 894,23477 737,23442
+Am Buchenberg - Schulzendorfer Str.: Qualität? Existiert eine Ausschilderung?	? 554,23349 224,23440 -38,23355 -190,23187 -404,23107 -417,23034 -573,23032 -656,23011
+#: next_check ^^^
+#: XXX ^^^

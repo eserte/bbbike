@@ -1041,6 +1041,8 @@ Aristotelessteig	1s:q2 18527,9623 18660,9599
 #: by: Stefan Klinkusch vvv
 Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
+#: note: Weg ist nur noch Anwohnern vorbehalten (hoher Zaun, abgeschlossenes Tor)
+(Roedeliusweg - Heerstr.)	2 -4431,11779 -4437,11919
 #: by: ^^^
 #: note: interpoliert
 Am Kleinen Platz	1 -7248,14826 -7292,14811
@@ -1548,7 +1550,7 @@ Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,12315 10723,12346 10738,12364
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5351,10760 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
-Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7043,15793
+Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7024,15810
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14653,15738
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14552,16171 14522,16260 14499,16341
 # REMOVED (das Überqueren ist möglich!) --- Weißenseer Weg: Straßenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
@@ -1670,6 +1672,7 @@ Buckower Damm: Mittelstreifen	3nocross 12564,4308 12637,4014 12655,3882
 Albrechtstr.: Mittelstreifen	3nocross 6102,4726 6006,4852 6034,4893
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7327
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4206,6820 4237,6840
+Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -1743,7 +1746,7 @@ tragen (ca. 32 Stufen)	0:35 22675,12008
 tragen (ca. 30 Stufen)	0:30 22859,12059
 tragen (ca. 30 Stufen)	0:30 22857,12014
 tragen (20 Stufen)	0:30 -1887,16673
-tragen (ca. 10 Stufen)	0:15 -2196,20140
+tragen (ca. 10 Stufen)	0:15 -2194,20135
 tragen (ca. 60 Stufen)	0:100 28016,71
 #: by: Detlev Deter
 tragen	0:180 6376,23358
@@ -1872,13 +1875,9 @@ tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6702,12633
 #: note: exakt 48 oder 49 Stufen
 tragen (Spreetunnel, ca. 50 Stufen)	0:60 25658,4619
 tragen (Spreetunnel, 50 Stufen)	0:60 25571,4553
-#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20111222.1040.364196.html
-#: XXX Fahrradschienen werden im Frühjahr 2012 installiert vvv
-#: next_check: 2012-03-15 vvv
-tragen (Brücke Tegeler Hafen)	0:60 1227,20281
-tragen (Brücke Tegeler Hafen)	0:60 1166,20330
-#: next_check ^^^
-#: XXX ^^^
+# REMOVED --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20111222.1040.364196.html --- #: XXX Fahrradschienen werden im Frühjahr 2012 installiert vvv --- #: next_check: 2012-03-15
+tragen (Brücke Tegeler Hafen, Fahrradschienen existieren)	0:30 1227,20281
+tragen (Brücke Tegeler Hafen, 4+10 Stufen, Fahrradschienen existieren)	0:30 1166,20330
 # REMOVED (hier ist keine Treppe) --- tragen? (Fußgängerbrücke)	0:120 19762,-160
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
 tragen (23 Stufen)	0:25 13138,9897
@@ -1982,6 +1981,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Baumstamm als Barriere	BNP:0::trailer=5 -1527,18645
 mehrere Poller	BNP:1::trailer=6 12299,19143
 Drängelgitter	BNP:3::trailer=10 10062,15927
 #: XXX eventuell temporär wegen der Baustraße
@@ -2490,6 +2490,7 @@ Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 99
 # REMOVED (eine direkte Umleitung entlang des Bauzauns existiert) --- #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein --- #: last_checked: 2013-05-27 --- #: next_check: 2013-08-27 --- An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8828,13434 8843,13408 8808,13377 8764,13372
 # 
 #: osm_watch: way id="201628184" version="3"
+#: XXX siehe auch Eintrag in qualitaet_s-orig
 #: last_checked: 2013-09-13
 #: next_check: 2014-02-13
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
@@ -2608,12 +2609,12 @@ Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,
 # REMOVED (fertig!) --- #: last_checked: 2011-08-02 --- #: next_check: 2012-01-01 --- Sonnenkieker: Bauarbeiten	2:inwork 22600,13812 22668,13849 22692,13836
 # REMOVED (fertig, erfasst) --- #: last_checked: 2011-06-26 --- #: XXX hier muss noch der genaue Wegverlauf ermittelt werden --- Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
 # 
-#: last_checked: 2012-09-01 vvv
-#: next_check: 2013-12-31 vvv
+#: last_checked: 2013-10-24 vvv
+#: next_check: 2014-06-30 vvv
 Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
-#: XXX jetzt werden Häuser hier gebaut; wird später das Durchfahren möglich sein?
-Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 1826,20492 1761,20539 1741,20571
+# REMOVED (Treppe!) --- #: XXX jetzt werden Häuser hier gebaut; wird später das Durchfahren möglich sein? --- Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1863,20478 1826,20492 1761,20539
+Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 1741,20571
 #: next_check: ^^^
 #: last_checked ^^^
 # 
@@ -2900,8 +2901,10 @@ Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8355,18142 8333,18132 8310,18132
 #: by: Holger Buechner [AM]
 Brauerstr.	1 5167,2160 5317,2345
 #: by: rene carmosin [AM]
-Grußdorfstr.	1 2323,20214 2109,20188
+#: confirmed_by: srt
+Grußdorfstr.	1 2356,20216 2323,20214 2109,20188
 #: by: rene carmosin [AM]
+#: confirmed_by: srt
 Am Buddeplatz	1 2323,20214 2336,20117
 Karl-Pokern-Str.	1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.	1 25860,5159 26028,5153

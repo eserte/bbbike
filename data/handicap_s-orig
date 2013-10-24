@@ -144,7 +144,7 @@ Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung weg
 #: next_check: 2013-12-26
 Alt-Moabit - Invalidenstr.: wegen Bauarbeiten für die Straßenbahnanbindung ist die Fahrbahn gesperrt	q4::inwork 7443,13008 7416,13058
 # 
-#: last_checked: 2013-08-27
+#: last_checked: 2013-10-24
 #: next_check: 2014-06-01
 Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg für einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 # 
@@ -685,7 +685,8 @@ Pankeweg: Fußgänger	q1 8759,16684 8776,16718 8839,16873 8904,17059 8927,17119 90
 Pankeweg: Fußgänger	q1 8839,16873 8823,16877 8804,16881
 Pankeweg: Fußgänger	q1 8721,16689 8804,16881 8866,17075
 Pankeweg: Fußgänger	q1 8303,15298 8270,15237 8266,15134
-Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1861,20467 1826,20492 1761,20539
+Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1863,20478
+# REMOVED --- Uferweg am Tegeler Hafen: Fußgänger	q1 1863,20478 1826,20492 1761,20539
 (Berliner Str. - Tegeler Hafen): Fußgänger	q1 1872,20683 1741,20571
 (Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Brücke über den Tegeler Fließ): eng, Fußgänger	q3 2371,21524 2352,21559
@@ -1244,7 +1245,7 @@ Fliederweg (Heiligensee): enger Weg	q3 -3394,21915 -3363,21916
 #: XXX_prog: für Anhänger q2
 Wesselburer Weg: vier Bodenschwellen, ohne Anhänger leicht umfahrbar	q0 -2082,21963 -2079,21878
 #: XXX_prog: Bordstein (BS) am nördlichen Ende
-Uferpromenade Tegelort/Heiligensee: Fußgänger	q1- -2285,19053 -2251,19216 -2250,19361 -2279,19503 -2266,19692 -2248,19849 -2216,20003 -2205,20141 -2146,20345 -2101,20423 -2087,20479 -2087,20586
+Uferpromenade Tegelort/Heiligensee: Fußgänger	q1- -2281,19064 -2272,19170 -2241,19285 -2250,19361 -2279,19503 -2266,19692 -2248,19849 -2216,20003 -2205,20141 -2146,20345 -2101,20423 -2087,20479 -2087,20586
 (Uferpromenade - Sperberstr.): Rampe	q3 -2216,20003 -2185,19996
 Kirchgasse (Tegel): Fußgänger	q1 1630,20097 1669,19982
 Hilchenbacher Weg: Fußgänger, eng	q2 2413,18655 2416,18598
@@ -1261,9 +1262,10 @@ Hamsterstr.: eng, Fußgänger	q2 23928,11620 23917,11600 23799,11646 23694,11678 2
 Wieselstr.: eng, Fußgänger	q2 24068,11577 23954,11615 23940,11592
 (Lindenufer - Behnitz): Fußgänger	q1 -2964,14478 -2926,14496 -2907,14534 -2922,14642 -2944,14652
 Tegelorter Promenade: Fußgänger	q1 -1478,17889 -1604,17851 -1694,17839 -1686,17918 -1660,18035 -1659,18076
-Tegelorter Promenade: Fußgänger	q1 -1659,18104 -1660,18114 -1661,18132 -1717,18237 -1750,18278 -1834,18414 -1857,18506 -2064,18667
+Tegelorter Promenade: Fußgänger	q1 -1659,18104 -1660,18114 -1661,18132 -1717,18237 -1835,18417 -1877,18495 -2050,18643
 (Uferweg am Tegeler See): Fußgänger, Restaurantbetrieb	q1- -1197,17860 -1102,17869 -1085,17878 -997,18069 -984,18136 -934,18284 -930,18337
 (Uferweg am Tegeler See): Fußgänger	q1 72,19790 119,19931 167,19978 193,20024 209,20083 226,20116 222,20175 248,20233 324,20350 430,20338
+(Uferweg am Tegeler See): Fußgänger	q1 -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790 6,19817
 (Uferweg Eiswerder): Fußgänger	q1 -2038,15683 -2094,15663 -2138,15622 -2163,15571 -2177,15511 -2325,15431 -2431,15436 -2465,15471 -2454,15472 -2453,15476
 Kleine Eiswerderbrücke: enge Stelle, Gegenverkehr hat Vorrang	q1; -1978,15684 -2038,15683
 Götzkeweg: eng durch parkende Autos	q1 27319,13589 27414,13508
@@ -3106,7 +3108,7 @@ Gebrüder-Grimm-Weg: Fußgänger, querlaufende Ablaufrinnen	q1- 14277,18684 14265,1
 Charles-H.-King-Str.: enge Straße	q1 -1248,2451 -1401,2391 -1604,2324
 #: by: Carsten Schmidt:
 #: corrected_by: srt/policy (q2 -> q0-)
-Rohrweihstr.: enge Straße	q0- -2141,19681 -2103,19833 -2073,19990 -2055,20129 -2020,20309 -1991,20312
+Rohrweihstr.: enge Straße	q0- -2141,19681 -2103,19833 -2073,19990 -2052,20120 -2019,20297 -1991,20312
 #: by: Nina Bohlmann
 Kolkrabenweg: enge Straße	q1 14655,3687 14885,3891
 #: by: ruth mantei: vvv
@@ -3174,7 +3176,7 @@ Straße 245 (Weißensee): enge Straße	q1 13590,17368 13271,17589
 #: by: ^^^
 #: by: Joachim Faust:
 #: XXX_prog: BS (an der Südwestseite, noch nicht in die Kategorie eingeflossen)
-(Querweg durch die Dauerkolonie Togo): einige Fußgänger	q1 5900,16817 5700,16584
+(Querweg durch die Dauerkolonie Togo): einige Fußgänger	q1 5894,16810 5700,16584
 #: by: Thomas Döring:
 #: corrected_by: srt/policy (q1 -> q0-)
 Forster Str. (Hellersdorf): enge Straße	q0- 25237,14627 25365,14667 25397,14563 25418,14538
@@ -3296,7 +3298,7 @@ Dompfaffenweg: enge Straße	q1 20068,14516 19729,14564
 # 
 #: by: Andreas (...behm...):
 #: corrected_by: srt/policy (q2 -> q0-)
-Luisenstr. (Konradshöhe): enge Straße	q0- -1846,18778 -2064,18667
+Luisenstr. (Konradshöhe): enge Straße	q0- -1846,18778 -2050,18643
 # 
 #: by: Nora Luetge:
 Jan-Petersen-Str.: enge Straße	q0- 21086,15910 21108,15955 21196,16119 21030,16206
@@ -3367,6 +3369,8 @@ Bulgenbachweg: enge Straße	q0- 3431,26192 3452,26160 3478,26119 3520,26081 3574,
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840
 # 
 #: by: Stefan Klinkusch: vvv
+#: note: "Die Kombination aus dem Untergrund Schotter und der Führung an einem Berghang zeigt auch die Schwierigkeit beim Befahren des Weges. Abwärts bedeutet dies eine deutlich verminderte Bremswirkung, aufwärts fehlt beim Fahren auch ein wenig die Bodenhaftung."
+Lee-Parry-Weg: schwieriges Befahren durch Steigung, in beiden Richtungen	q3 -5097,8448 -4998,8477
 #: note: "... ist aber dennoch benutzbar"
 (Strittweg - Straße 270): teilweise durch hereinragende Pflanzen wie Brennnesseln eingeengt	q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: schmaler Rad- und Gehweg (1,5m-2m)	q1 -7009,5211 -7174,5307

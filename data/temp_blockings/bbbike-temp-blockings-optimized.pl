@@ -2279,6 +2279,7 @@ userdel	2::temp 18870,5833 18932,5926
 #: note: am 2013-04-11 geprüft: Radfahrer dürfen hier offiziell entlangfahren
 #: note: am 2013-08-14 geprüft: Fahrbahn war gesperrt
 #: note: am 2013-09-06 geprüft: Schranke, nur Straßenbahnen und Lieferverkehr werden durchgelassen
+#: note: am 2013-10-24 geprüft: Radfahrer konnten heute wohl durchfahren, aber offiziell noch immer gesperrt
 userdel	q3::inwork 10530,14452 10723,14772
 ',
          'type' => 'handicap'
@@ -2297,7 +2298,8 @@ userdel	q3::inwork 10530,14452 10723,14772
          'from' => 1330902000,
          'id' => 2316,
          'data' => '#: osm_watch: way id="23243508" version="37"
-userdel	q4::inwork; -1872,24336 -1790,24260 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
+#: note: Radfahrer dürfen offiziell in Gegenrichtung fahren
+userdel	q2::inwork; -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
          'type' => 'handicap'
        },
@@ -2787,7 +2789,7 @@ userdel	2::night 17671,13132 17684,13133
          'from' => 1379196000,
          'id' => 2488,
          'data' => 'userdel	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25251 1513,25253 1576,25249 1738,25243
-#: XXX Einbahnstraßenrichtung ist geraten
+# REMOVED --- #: XXX Einbahnstraßenrichtung ist geraten
 	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
 ',
          'type' => 'handicap'
@@ -2925,6 +2927,26 @@ userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13691
 userdel	q3::inwork 11758,16111 11684,15997 11859,16058
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020548',
+         'until' => 1383055200,
+         'text' => 'Augustastr. (Steglitz): Baustelle, Fahrbahn zwischen Augustaplatz und Moltkestr. bis Ende Oktober 2013 gesperrt ',
+         'from' => 1382507820,
+         'id' => 2504,
+         'data' => 'userdel	q4::inwork 4045,4005 4234,4020
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020557',
+         'until' => 1382810400,
+         'text' => 'Oranienburger Chaussee (Frohnau) zwischen Schwarzkittelweg und Landesgrenze gesperrt, von 25.10.2013 17 Uhr bis 26.10.2013 20 Uhr',
+         'from' => 1382626800,
+         'id' => 2505,
+         'data' => 'userdel	2::inwork 2178,28067 2345,27670 2666,27009 2842,26710
+',
+         'type' => 'gesperrt'
        }
      
 );

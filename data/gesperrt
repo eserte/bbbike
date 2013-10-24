@@ -764,6 +764,7 @@ Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 Aristotelessteig	1s 18527,9623 18660,9599
 H¸gelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
+(Roedeliusweg - Heerstr.)	2 -4431,11779 -4437,11919
 Am Kleinen Platz	1 -7248,14826 -7292,14811
 Ella-Trebe-Str.	1s 7938,13302 7938,13150
 Waldmeisterstr.	1 1736,7557 1880,7558 1930,7594
@@ -1005,8 +1006,8 @@ Mittelstreifen	3nocross::ignrte 5713,18777 5791,18778 5869,18779
 Holzweidepfad -> Lindauer Allee: Mittelstreifen	3::igndisp 5792,18727 5791,18778 5713,18777
 Lindauer Allee -> Holzweidepfad: Mittelstreifen	3::igndisp 5869,18779 5791,18778 5792,18727
 Mittelstreifen	3nocross::ignrte 5906,16403 5700,16584 5596,16662
-Querweg durch die Dauerkolonie Togo -> Togostr.: Mittelstreifen	3::igndisp 5900,16817 5700,16584 5906,16403
-Togostr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5596,16662 5700,16584 5900,16817
+Querweg durch die Dauerkolonie Togo -> Togostr.: Mittelstreifen	3::igndisp 5894,16810 5700,16584 5906,16403
+Togostr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5596,16662 5700,16584 5894,16810
 Mittelstreifen	3nocross::ignrte 21251,18508 21163,18347 21009,18055
 M‰rkische Allee -> Fl‰mingstr.: Mittelstreifen	3::igndisp 21251,18508 21163,18347 21220,18323
 Fl‰mingstr. -> M‰rkische Allee: Mittelstreifen	3::igndisp 21220,18323 21163,18347 21009,18055
@@ -1570,8 +1571,8 @@ Straﬂenbahntrasse	3nocross::ignrte 7417,16587 7456,16620 7606,16746
 Seestr. -> Iranische Str.: Straﬂenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
 Iranische Str. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7707,16543 7456,16620 7417,16587
 Straﬂenbahntrasse	3nocross::ignrte 7231,16418 7051,16264 6965,16190
-Seestr. -> Malplaquetstr.: Straﬂenbahntrasse	3::igndisp 7231,16418 7051,16264 7162,16163
-Malplaquetstr. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7162,16163 7051,16264 6965,16190
+Seestr. -> Malplaquetstr.: Straﬂenbahntrasse	3::igndisp 7231,16418 7051,16264 7158,16167
+Malplaquetstr. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7158,16167 7051,16264 6965,16190
 Straﬂenbahntrasse	3nocross::ignrte 7231,16418 7295,16477 7403,16575
 Seestr. -> Syrische Str.: Straﬂenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
 Syrische Str. -> Seestr.: Straﬂenbahntrasse	3::igndisp 7263,16508 7295,16477 7403,16575
@@ -1746,7 +1747,7 @@ Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 15420,12178 15443,12222 15480,12
 Deutschmeisterstr. -> Mˆllendorffstr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 15350,12270 15443,12222 15480,12306
 Mˆllendorffstr. -> Vorfahrt am Rathaus Lichtenberg: Mittelstreifen mit Straﬂenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
 Vorfahrt am Rathaus Lichtenberg -> Mˆllendorffstr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 15531,12300 15480,12306 15443,12222
-Zaun auf dem Mittelstreifen	3nocross::ignrte 6781,16026 6914,15908 6936,15888 7043,15793
+Zaun auf dem Mittelstreifen	3nocross::ignrte 6781,16026 6914,15908 6936,15888 7024,15810
 M¸llerstr. -> Br¸sseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 6936,15888 6914,15908 6802,15790
 M¸llerstr. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6781,16026 6914,15908 7077,16078
 Br¸sseler Str. -> M¸llerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 6781,16026
@@ -2067,6 +2068,7 @@ Mittelstreifen, parkende Autos	3nocross::ignrte 4125,6763 4206,6820 4237,6840
 S¸dwestkorso -> Gustav-Rickelt-Weg: Mittelstreifen, parkende Autos	3::igndisp 4237,6840 4206,6820 4223,6796
 Gustav-Rickelt-Weg -> S¸dwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4223,6796 4206,6820 4061,6753
 S¸dwestkorso -> S¸dwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4125,6763 4206,6820 4061,6753
+Mittelstreifen	3nocross::ignrte 1910,20548 1929,20501 1955,20435
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2122,7 +2124,7 @@ tragen (ca. 32 Stufen)	0:35:-138 22675,12008
 tragen (ca. 30 Stufen)	0:30:-177 22859,12059
 tragen (ca. 30 Stufen)	0:30:-174 22857,12014
 tragen (20 Stufen)	0:30:-75 -1887,16673
-tragen (ca. 10 Stufen)	0:15:-83 -2196,20140
+tragen (ca. 10 Stufen)	0:15:-61 -2194,20135
 tragen (ca. 60 Stufen)	0:100:-55 28016,71
 tragen	0:180:-218 6376,23358
 tragen (ca. 30 Stufen)	0:30:-142 -1711,11452
@@ -2219,8 +2221,8 @@ tragen (Gerickesteg, ungef‰hr 20 Stufen)	0:30:-128 6748,12669
 tragen (Gerickesteg, ungef‰hr 20 Stufen)	0:30:-126 6702,12633
 tragen (Spreetunnel, ca. 50 Stufen)	0:60:18 25658,4619
 tragen (Spreetunnel, 50 Stufen)	0:60:52 25571,4553
-tragen (Br¸cke Tegeler Hafen)	0:60:-256 1227,20281
-tragen (Br¸cke Tegeler Hafen)	0:60:-231 1166,20330
+tragen (Br¸cke Tegeler Hafen, Fahrradschienen existieren)	0:30:-256 1227,20281
+tragen (Br¸cke Tegeler Hafen, 4+10 Stufen, Fahrradschienen existieren)	0:30:-231 1166,20330
 tragen (Stufen), mit MTB befahrbar	0:30:-69 5725,11644
 tragen (23 Stufen)	0:25:16 13138,9897
 unter der S-Bahn-Br¸cke tragen (6 Stufen)	0:10:-180 3726,18982
@@ -2284,6 +2286,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Baumstamm als Barriere	BNP:0:-129:trailer=5 -1527,18645
 mehrere Poller	BNP:1:-139:trailer=6 12299,19143
 Dr‰ngelgitter	BNP:3:-194:trailer=10 10062,15927
 zwei weite Dr‰ngelgitter	BNP:4:64:trailer=12 10038,15418
@@ -2585,7 +2588,7 @@ Schranke	BNP:5:-190 7612,9446
 Barriere	BNP:0:-88:trailer=3 3268,11847
 Dr‰ngelgitter	BNP:5:-260 -5890,25875
 Schranke, meistens offen	BNP:3:-263:trailer=6 7875,16509
-Schranke, meistens offen	BNP:3:-256:trailer=6 7707,16543
+Schranke, meistens offen	BNP:3:-258:trailer=6 7707,16543
 Barriere	BNP:10:-12 12178,7985
 Dr‰ngelgitter	BNP:0:52:trailer=3 10535,13006
 Dr‰ngelgitter	BNP:10:-84 7158,9509
@@ -2652,7 +2655,7 @@ Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8
 Vorfahrt Reichstagsgeb‰ude: Absperrgitter, keine Durchfahrt mehr mˆglich	2 8400,12417 8399,12610
 Tegeler Hafen: Weg ¸ber Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
-Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1861,20467 1826,20492 1761,20539 1741,20571
+Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 1741,20571
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 An den Eldenaer Hˆfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14509,12819 14594,12800
 Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536,12916 14682,12874
@@ -2852,8 +2855,6 @@ Roedeliusweg	1 -4413,11628 -4431,11779
 Bollmannweg	1 -4431,11779 -4310,11770
 Weinmeisterhornweg	1s -4789,11225 -4564,11180
 Heerstr.	3nocross::ignrte -4500,11937 -4437,11919 -4310,11882
-Heerstr. -> Roedeliusweg: Heerstr.	3::igndisp -4310,11882 -4437,11919 -4431,11779
-Roedeliusweg -> Heerstr.: Heerstr.	3::igndisp -4431,11779 -4437,11919 -4500,11937
 Heerstr.	3nocross::ignrte -4310,11882 -4278,11873 -4063,11805
 Heerstr. -> Enger St.: Heerstr.	3::igndisp -4063,11805 -4278,11873 -4310,11770
 Enger St. -> Heerstr.: Heerstr.	3::igndisp -4310,11770 -4278,11873 -4310,11882
@@ -2962,7 +2963,7 @@ tragen (ca. 60 Stufen)	0:80:-213 -8120,-1500
 tragen	0:60:-128 -8451,-1418
 Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8355,18142 8333,18132 8310,18132 8296,18154 8299,18172 8319,18190
 Brauerstr.	1 5167,2160 5317,2345
-Gruﬂdorfstr.	1 2323,20214 2109,20188
+Gruﬂdorfstr.	1 2356,20216 2323,20214 2109,20188
 Am Buddeplatz	1 2323,20214 2336,20117
 Karl-Pokern-Str.	1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.	1 25860,5159 26028,5153
