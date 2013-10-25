@@ -84,7 +84,7 @@ Fasanenstr.	1 5215,10711 5230,10919 5236,10994
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
 Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,18771 11950,18529
-Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,18338 10567,18366 10609,18384
+Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,18338 10567,18366 10602,18382
 Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
@@ -721,7 +721,7 @@ Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11655,18018
 Karlstadter Str.	1 11621,18011 11586,18126
 Gemündener Str.	1 11586,18126 11514,18101 11495,18129 11395,18274
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11012,13278 11085,13239
-Döbrabergweg	1 9848,20926 9892,20776
+Döbrabergweg	1 9848,20926 9895,20766
 Reichsbahnstr.	2 -4648,1334 -4579,1397
 Dorstener Str.	1 3596,655 3691,566
 Selmaplatz	1 -391,4313 -384,4268 -396,4261 -405,4281 -407,4303 -391,4313
@@ -1201,9 +1201,9 @@ Voltastr. -> Nonnendammallee: Mittelstreifen	3::igndisp 1200,14227 1246,14384 11
 Nonnendammallee -> Wehneltst.: Mittelstreifen	3::igndisp 1361,14384 1305,14384 1256,14217
 Mittelstreifen	3nocross::ignrte 1361,14384 1420,14369 1479,14343
 Siemensdamm -> Hefnerst.: Mittelstreifen	3::igndisp 1479,14343 1420,14369 1392,14287
-Straßenbahntrasse	3nocross::ignrte 16095,16331 16260,16282 16416,16236
-Klarastr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16234,16203 16260,16282 16095,16331
-Suermondtstr. -> Klarastr.: Straßenbahntrasse	3::igndisp 16416,16236 16260,16282 16234,16203
+Straßenbahntrasse	3nocross::ignrte 16099,16339 16263,16288 16416,16236
+Klarastr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16234,16203 16263,16288 16099,16339
+Suermondtstr. -> Klarastr.: Straßenbahntrasse	3::igndisp 16416,16236 16263,16288 16234,16203
 Straßenbahntrasse	3nocross::ignrte 14499,16341 14556,16391 14610,16522
 Wegenerstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14692,16328 14556,16391 14499,16341
 Berliner Allee -> Wegenerstr.: Straßenbahntrasse	3::igndisp 14610,16522 14556,16391 14692,16328
@@ -1374,7 +1374,6 @@ Unterführung/Biesdorfer Promenade -> Allee der Kosmonauten: Straßenbahntrasse	3:
 Allee der Kosmonauten -> Unterführung/Biesdorfer Promenade: Straßenbahntrasse	3::igndisp 19899,13534 19837,13531 19826,13444
 Straßenbahntrasse	3nocross::ignrte 10765,16486 10699,16492 10620,16497
 Tegnerstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10708,16579 10699,16492 10765,16486
-Bornholmer Str. -> Tegnerstr.: Straßenbahntrasse	3::igndisp 10620,16497 10699,16492 10708,16579
 Straßenbahntrasse	3nocross::ignrte 10620,16497 10533,16505 10458,16509
 Aalesunder Str. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10549,16650 10533,16505 10620,16497
 Bornholmer Str. -> Aalesunder Str.: Straßenbahntrasse	3::igndisp 10458,16509 10533,16505 10549,16650
@@ -1586,8 +1585,8 @@ unbequem passierbarer Mittelstreifen	3nocross::ignrte 14208,12235 14291,12220 14
 Kreutzigerstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14285,12190 14291,12220 14208,12235
 Frankfurter Allee -> Kreutzigerstr.: unbequem passierbarer Mittelstreifen	3::igndisp 14381,12205 14291,12220 14285,12190
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 14381,12205 14427,12197 14488,12188
-Frankfurter Allee -> Mainzer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 14488,12188 14427,12197 14357,12011
-Mainzer Str. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14357,12011 14427,12197 14381,12205
+Frankfurter Allee -> Mainzer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 14488,12188 14427,12197 14354,12012
+Mainzer Str. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 14354,12012 14427,12197 14381,12205
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 13785,12292 13885,12279 14020,12261
 Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13927,12370 13885,12279 14020,12261
 Frankfurter Allee -> Liebigstr.: unbequem passierbarer Mittelstreifen	3::igndisp 13785,12292 13885,12279 13927,12370
@@ -1633,10 +1632,10 @@ Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straßenbahn, aber Ampe
 Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross::ignrte 11709,14856 11681,14759 11662,14695
 Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11709,14856 11681,14759 11977,14607
 Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11977,14607 11681,14759 11662,14695
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 12071,16130 12030,15968 11995,15827
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12075,16144 12030,15968 11995,15827
 Prenzlauer Allee -> Kuglerstr.: Mittelstreifen mit Straßenbahn	3::igndisp 11995,15827 12030,15968 11961,16002
+Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11961,16002 12030,15968 12075,16144
 Kuglerstr. -> Prenzlauer Allee [Wohngebiet]: Mittelstreifen mit Straßenbahn	3::igndisp 11961,16002 12030,15968 12154,15902
-Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11961,16002 12030,15968 12071,16130
 Straßenbahntrasse	3nocross::ignrte 11941,15586 11967,15700 11995,15827
 Prenzlauer Allee -> Zelterstr.: Straßenbahntrasse	3::igndisp 11941,15586 11967,15700 11852,15765
 Prenzlauer Allee -> Küselstr.: Straßenbahntrasse	3::igndisp 11995,15827 11967,15700 12058,15621
@@ -2069,6 +2068,8 @@ Südwestkorso -> Gustav-Rickelt-Weg: Mittelstreifen, parkende Autos	3::igndisp 42
 Gustav-Rickelt-Weg -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4223,6796 4206,6820 4061,6753
 Südwestkorso -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4125,6763 4206,6820 4061,6753
 Mittelstreifen	3nocross::ignrte 1910,20548 1929,20501 1955,20435
+Mittelstreifen	3nocross::ignrte 10083,21848 10097,21809 10106,21784
+Am Nordgraben -> Dietzgenstr.: Mittelstreifen	3::igndisp 10275,21793 10097,21809 10106,21784
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2286,6 +2287,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke (lichte Breite ca. 120cm)	BNP:2:-127:trailer=4 11973,21385
 Baumstamm als Barriere	BNP:0:-129:trailer=5 -1527,18645
 mehrere Poller	BNP:1:-139:trailer=6 12299,19143
 Drängelgitter	BNP:3:-194:trailer=10 10062,15927
@@ -2576,7 +2578,7 @@ Drängelgitter	BNP:5:-96 11995,19759
 Drängelgitter	BNP:3:-257:trailer=6 9884,10192
 Barriere	BNP:5:-247:trailer=10 12316,9477
 Barriere, kann auf dem Gehweg umfahren werden	BNP:3:28:trailer=6 12186,9205
-Schranke	BNP:5:-115 9420,21687
+Schranke (lichte Breite ca. 90cm)	BNP:5:-115:trailer=15 9420,21687
 Drängelgitter	BNP:5:48 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:1:88 17247,13519
 Schranke (Krankenhaus Herzberge)	BNP:2:-174 17780,13468
@@ -3005,8 +3007,8 @@ Dettelbacher Weg	1 11696,18454 11750,18273
 Dettelbacher Weg	1 11819,18050 11750,18273
 Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
 nicht passierbarer Mittelstreifen	3nocross::ignrte 11950,18529 11984,18771 12003,18896
-Mittelstreifen, Bordsteine	3nocross::ignrte 11854,17656 11870,17522 11893,17397
-Mittelstreifen	3nocross::ignrte 11854,17656 11843,17737 11884,18063
+Mittelstreifen, Bordsteine	3nocross::ignrte 11849,17655 11872,17522 11893,17397
+Mittelstreifen	3nocross::ignrte 11849,17655 11839,17738 11884,18063
 Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
 tragen (insgesamt 16 Stufen, auf vier Gruppen verteilt)	0:40:-256 14581,16529

@@ -58,7 +58,7 @@ Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
 Naumannstr. N - H	3 7707,8915 7709,8777 7713,8600
 zum Mariannenplatz	2 11950,11157 11921,11185
 Herbartstr.	1 2340,11045 2372,10941 2476,10790 2498,10665
-Breite Str. Pankow	1 10609,18384 10680,18380
+Breite Str. Pankow	1 10602,18382 10680,18380
 Gormannstr.	1 10463,13747 10445,13675 10406,13543 10390,13493
 Reichenberger Str.	1 11291,10438 11393,10390
 Weserstr.	1 12074,9217 12005,9211 11888,9189
@@ -411,8 +411,8 @@ Magnusstr. -> Rudower Chaussee: Magnusstr./Rudower Chaussee	3::igndisp 19268,278
 Rudower Chaussee -> Magnusstr.: Magnusstr./Rudower Chaussee	3::igndisp 19242,2876 19206,2848 19268,2784
 Gabelberger Str./Frankfurter Allee	3 14451,12396 14381,12205 14427,12197
 Mainzer Str./Frankfurter Allee	3nocross::ignrte 14381,12205 14427,12197 14488,12188
-Frankfurter Allee -> Mainzer Str.: Mainzer Str./Frankfurter Allee	3::igndisp 14488,12188 14427,12197 14357,12011
-Mainzer Str. -> Frankfurter Allee: Mainzer Str./Frankfurter Allee	3::igndisp 14357,12011 14427,12197 14381,12205
+Frankfurter Allee -> Mainzer Str.: Mainzer Str./Frankfurter Allee	3::igndisp 14488,12188 14427,12197 14354,12012
+Mainzer Str. -> Frankfurter Allee: Mainzer Str./Frankfurter Allee	3::igndisp 14354,12012 14427,12197 14381,12205
 Colbestr./Frankfurter Allee	3nocross::ignrte 14488,12188 14523,12183 14621,12168
 Frankfurter Allee -> Colbestr.: Colbestr./Frankfurter Allee	3::igndisp 14621,12168 14523,12183 14468,11992
 Colbestr. -> Frankfurter Allee: Colbestr./Frankfurter Allee	3::igndisp 14468,11992 14523,12183 14488,12188
@@ -1011,9 +1011,9 @@ Ludwig-Boltzmann-Str. -> Max-Born-Str.: Max-Born-Str./Ludwig-Boltzmann-Str.	3::i
 Johannes-Sasse-Ring	1 17525,3029 17465,2964 17412,2908 17199,3082 17146,3125 17206,3189 17274,3267
 Podbielskiallee - Englerallee	3 3641,5836 3712,5806 3732,5920
 Frieda-Seidlitz-Str.	1 12761,16862 12613,16749 12602,16727
-Straßenbahntrasse	3nocross::ignrte 15918,16383 16095,16331 16260,16282
-Suermondtstr. -> Annemariestr.: Straßenbahntrasse	3::igndisp 16260,16282 16095,16331 16075,16249
-Annemariestr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16075,16249 16095,16331 15918,16383
+Straßenbahntrasse	3nocross::ignrte 15918,16383 16099,16339 16263,16288
+Suermondtstr. -> Annemariestr.: Straßenbahntrasse	3::igndisp 16263,16288 16099,16339 16075,16249
+Annemariestr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16075,16249 16099,16339 15918,16383
 Mittelstreifen	3nocross::ignrte 3587,9905 3620,9936 3706,10039
 Paulsborner Str. -> Albrecht-Achilles-Str.: Mittelstreifen	3::igndisp 3587,9905 3620,9936 3604,9961
 Albrecht-Achilles-Str. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3604,9961 3620,9936 3706,10039
@@ -1194,9 +1194,9 @@ Kurmärkische Str.	3 7337,10396 7429,10366 7444,10479
 Hentigstr.	1 18518,8778 18548,8942
 Hentigstr.	1 18548,8942 18586,9172 18626,9406
 Oberwallstr.	1 9852,12409 9869,12297 9875,12257 9890,12161
-Prenzlauer Promenade	3nocross::ignrte 11854,17656 11843,17737 11884,18063
-Prenzlauer Promenade -> Laudaer Str.: Prenzlauer Promenade	3::igndisp 11854,17656 11843,17737 11785,17729
-Laudaer Str. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11785,17729 11843,17737 11884,18063
+Prenzlauer Promenade	3nocross::ignrte 11849,17655 11839,17738 11884,18063
+Laudaer Str. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11785,17729 11839,17738 11884,18063
+Prenzlauer Promenade -> Laudaer Str.: Prenzlauer Promenade	3::igndisp 11849,17655 11839,17738 11785,17729
 Prenzlauer Promenade	3nocross::ignrte 11884,18063 11894,18146 11907,18246 11914,18303 11950,18529
 Othellostr. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11990,18104 11894,18146 11884,18063
 Prenzlauer Promenade -> Othellostr.: Prenzlauer Promenade	3::igndisp 11907,18246 11894,18146 11990,18104
@@ -1267,10 +1267,8 @@ Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18296,10027
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18387,10070
 Ontarioseestr.: Sackgasse für Autos	3 18296,10027 18339,10048 18408,10041
 Ontarioseestr.: Sackgasse für Autos	3 18387,10070 18339,10048 18408,10041
-Schranke	3 11889,21543 11982,21392 11948,21366
-Schranke	3 12074,21243 11982,21392 11948,21366
-Schranke	3 11948,21366 11982,21392 11889,21543
-Schranke	3 11948,21366 11982,21392 12074,21243
+Schranke	3 11948,21366 11973,21385 11982,21392
+Schranke	3 11982,21392 11973,21385 11948,21366
 Pestalozzistr.	1 24769,11819 24908,11785
 Baumstamm	3 24978,2634 24981,2580 25496,2429
 Baumstamm	3 24982,2519 24981,2580 25496,2429
@@ -1463,9 +1461,9 @@ Marie-Elisabeth-Lüders-Str. -> Am Schillertheater: Mittelstreifen	3::igndisp 447
 Marie-Elisabeth-Lüders-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 4476,11811 4507,11728 4737,11768
 Stadtgärten - Saupéweg: Poller	3 11518,21727 11551,21720 11589,21713
 Stadtgärten - Saupéweg: Poller	3 11589,21713 11551,21720 11518,21727
-Mittelstreifen	3nocross::ignrte 11870,17522 11893,17397 11920,17245
+Mittelstreifen	3nocross::ignrte 11872,17522 11893,17397 11920,17245
 Treskowstr. -> Prenzlauer Promenade: Mittelstreifen	3::igndisp 12327,17211 11893,17397 11920,17245
-Prenzlauer Promenade -> Treskowstr.: Mittelstreifen	3::igndisp 11870,17522 11893,17397 12327,17211
+Prenzlauer Promenade -> Treskowstr.: Mittelstreifen	3::igndisp 11872,17522 11893,17397 12327,17211
 Voigtstr. - Pettenkoferstr.	1 14862,12777 14834,12767
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
@@ -1511,7 +1509,7 @@ Seestr. (Bad Saarow): Poller	3 54732,-11898 54681,-11900 54643,-11904
 Halenseestr.	1 1928,10728 2028,10612 2112,10488 2076,10357 2069,10330 2094,10286 2229,10045
 Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16152,15164
 Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16295,15024
-Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16319,15229
+Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16314,15223
 Frankfurter Allee	3nocross::ignrte 17151,11801 17240,11791 17440,11774
 Alt-Friedrichsfelde -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17440,11774 17240,11791 17161,11681
 Rosenfelder Str. -> Alt-Friedrichsfelde: Frankfurter Allee	3::igndisp 17306,11866 17240,11791 17440,11774
@@ -1524,13 +1522,13 @@ Ehrensfelsstr.: Durchfahrt verboten	3 18846,8616 18778,8663 18737,8686
 Buggenhagenstr.	1 14425,13780 14371,13619
 Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13614,15984 13623,15954
 Pasedagplatz: nur für Straßenbahnen	2 14170,17249 14150,17255 14099,17195
-Straßenbahntrasse	3nocross::ignrte 16416,16236 16522,16206 16660,16165
-Am Faulen See -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16551,16307 16522,16206 16660,16165
-Am Faulen See -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16551,16307 16522,16206 16505,16096
-Suermondtstr. -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16660,16165 16522,16206 16505,16096
-Hedwigstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16505,16096 16522,16206 16551,16307
-Hedwigstr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16505,16096 16522,16206 16416,16236
-Suermondtstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16416,16236 16522,16206 16551,16307
+Straßenbahntrasse	3nocross::ignrte 16416,16236 16476,16216 16520,16200 16656,16157
+Am Faulen See -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16551,16307 16520,16200 16505,16096
+Am Faulen See -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16551,16307 16520,16200 16656,16157
+Hedwigstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16505,16096 16520,16200 16551,16307
+Hedwigstr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16505,16096 16520,16200 16476,16216
+Suermondtstr. -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16656,16157 16520,16200 16505,16096
+Suermondtstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16476,16216 16520,16200 16551,16307
 Kohlfurter Str.: provisorisch, Anlieger frei	1 11464,10102 11274,10184 11094,10261
 Friedbergstr.:	3 2812,10753 2766,10750 2679,10931
 Friedbergstr.:	3 2812,10753 2766,10750 2697,10669
@@ -1636,3 +1634,8 @@ Fasanenstr. (Ahrensfelde): Poller	3 22049,19268 22031,19261 21895,19198
 Oelder Weg	1 1967,18743 1965,18686
 Bernhard-Lichtenberg-Platz	1 2643,18738 2731,18729 2867,18736
 Fasanenstr.	1 5196,10398 5215,10711
+Straßenbahntrasse	3nocross::ignrte 12030,15968 12075,16144 12090,16199
+Krügerstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 12013,16120 12075,16144 12090,16199
+Prenzlauer Allee -> Krügerstr.: Straßenbahntrasse	3::igndisp 12030,15968 12075,16144 12013,16120
+B2 - Piesporter Str.: Linksabbiegen verboten	3 15569,18492 15181,18137 15239,18063
+Ruschestr. - Schulze-Boysen-Str.: Geradeausfahren verboten	3 15879,12131 15863,11992 15836,11840

@@ -58,7 +58,7 @@ zum Mariannenplatz	2 11950,11157 11921,11185
 # REMOVED (gemeldet von andk, 2013-02-08) --- Großgörschen/Kulmer	3 7609,9463 7771,9479 7829,9723
 # REMOVED (gemeldet von andk, 2013-02-08) --- Großgörschen/Kulmer	3 7771,9389 7771,9479 7829,9723
 Herbartstr.	1 2340,11045 2372,10941 2476,10790 2498,10665
-Breite Str. Pankow	1 10609,18384 10680,18380
+Breite Str. Pankow	1 10602,18382 10680,18380
 Gormannstr.	1 10463,13747 10445,13675 10406,13543 10390,13493
 Reichenberger Str.	1 11291,10438 11393,10390
 Weserstr.	1 12074,9217 12005,9211 11888,9189
@@ -559,7 +559,7 @@ Max-Born-Str./Ludwig-Boltzmann-Str.	3nocross 19053,2890 19064,2867 19111,2777
 Johannes-Sasse-Ring	1 17525,3029 17465,2964 17412,2908 17199,3082 17146,3125 17206,3189 17274,3267
 Podbielskiallee - Englerallee	3 3641,5836 3712,5806 3732,5920
 Frieda-Seidlitz-Str.	1 12761,16862 12613,16749 12602,16727
-Suermondtstr: Straßenbahntrasse	3nocross 15918,16383 16095,16331 16260,16282
+Suermondtstr: Straßenbahntrasse	3nocross 15918,16383 16099,16339 16263,16288
 Paulsborner Str.: Mittelstreifen	3nocross 3587,9905 3620,9936 3706,10039
 Paulsborner Str.: Mittelstreifen	3nocross 3620,9936 3706,10039 3747,10094 3852,10236
 Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
@@ -670,7 +670,7 @@ Hentigstr.	1 18518,8778 18548,8942
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110309.1150.334660.html (südlicher Abschnitt confirmed)
 Hentigstr.	1 18548,8942 18586,9172 18626,9406
 Oberwallstr.	1 9852,12409 9869,12297 9875,12257 9890,12161
-Prenzlauer Promenade	3nocross 11854,17656 11843,17737 11884,18063
+Prenzlauer Promenade	3nocross 11849,17655 11839,17738 11884,18063
 #: note: keine legale Überquerungsmöglichkeit für Radfahrer, aber dennoch möglich
 Prenzlauer Promenade	3nocross 11884,18063 11894,18146 11907,18246 11914,18303 11950,18529
 Pasewalker Str.	3nocross 11984,20246 11963,20136 11931,19965
@@ -710,11 +710,9 @@ Poller	3 * 7231,25 7181,-15
 Mittelstreifen	3nocross 9346,4144 9372,4012 9426,3797
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 *
 Ontarioseestr.: Sackgasse für Autos	3 * 18339,10048 18408,10041
-#: by: Almuth Maasz vvv
+#: by: Almuth Maasz
 #: note: "für Radfahrer mit Anhänger passierbar"
-Schranke	3 * 11982,21392 11948,21366
-Schranke	3 11948,21366 11982,21392 *
-#: by: ^^^
+Schranke	3 * 11973,21385 *
 Pestalozzistr.	1 24769,11819 24908,11785
 Baumstamm	3 * 24981,2580 25496,2429
 Baumstamm	3 25496,2429 24981,2580 *
@@ -841,7 +839,7 @@ Eisbärenweg: Schranken an beiden Einfahrten	2 6950,17669 6909,17796
 Bismarckstr.: Mittelstreifen	3nocross 4345,11710 4507,11728 4737,11768
 Stadtgärten - Saupéweg: Poller	3 * 11551,21720 *
 #: note: Radfahrer können explizit den Mittelstreifen überqueren
-Prenzlauer Promenade: Mittelstreifen	3nocross 11870,17522 11893,17397 11920,17245
+Prenzlauer Promenade: Mittelstreifen	3nocross 11872,17522 11893,17397 11920,17245
 Voigtstr. - Pettenkoferstr.	1 14862,12777 14834,12767
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
@@ -875,7 +873,7 @@ Buggenhagenstr.	1 14425,13780 14371,13619
 Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13614,15984 13623,15954
 Pasedagplatz: nur für Straßenbahnen	2 14170,17249 14150,17255 14099,17195
 #: note: für Fußgänger existiert eine Überquerungsmöglichkeit einige Meter weiter östlich
-Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16522,16206 16660,16165
+Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16476,16216 16520,16200 16656,16157
 Kohlfurter Str.: provisorisch, Anlieger frei	1 11464,10102 11274,10184 11094,10261
 #: by: http://www.flickr.com/photos/79200003@N05/8050610558/in/pool-gwb
 Friedbergstr.:	3 2812,10753 2766,10750 *
@@ -951,3 +949,7 @@ Oelder Weg	1 1967,18743 1965,18686
 Bernhard-Lichtenberg-Platz	1 2643,18738 2731,18729 2867,18736
 #: by: ^^^
 Fasanenstr.	1 5196,10398 5215,10711
+#: note: Radfahrer können Überquerungsmöglichkeit wenige Meter südlich benutzen, oder ggfs. auf dem linken Gehweg zur Ostseestr./Wisbyer Str. vorfahren
+Prenzlauer Allee: Straßenbahntrasse	3nocross 12030,15968 12075,16144 12090,16199
+B2 - Piesporter Str.: Linksabbiegen verboten	3 15569,18492 15181,18137 15239,18063
+Ruschestr. - Schulze-Boysen-Str.: Geradeausfahren verboten	3 15879,12131 15863,11992 15836,11840

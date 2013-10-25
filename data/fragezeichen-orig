@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-09-06
+#: last_checked: 2013-10-25
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -155,9 +155,9 @@ Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 76
 #: XXX Baumaßnahme 3.39 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: osm_watch: way id="144945039" version="4"
-#: last_checked: 2013-10-20 (Markierungsarbeiten in Gange, aber anscheinend wird nur in Richtung Nordosten markiert)
-#: next_check: 2013-10-25
-Granitzstr.: Radspuren bis 2015 geplant	?::inwork; 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
+#: last_checked: 2013-10-25 (Richtung Nordosten fertig)
+#: next_check: 2014-01-25
+Granitzstr.: wird auch etwas in der anderen Richtung gemacht?	? 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
 # 
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
 #: last_checked: 2013-08-27
@@ -187,7 +187,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15066,14579 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-09-14
+#: last_checked: 2013-10-25
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -252,9 +252,9 @@ Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,1
 # 
 # REMOVED (-> radwege-orig) --- #: XXX Markierungsarbeiten haben wohl angefangen, genauer anschauen --- #: last_checked: 2013-10-18 --- #: next_check: 2013-10-18 --- Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
 # 
-#: last_checked: 2013-09-13
-#: check_frequency: 100d
-Dietzgenstr.: Radspuren bis 2015 geplant	?::projected 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
+#: last_checked: 2013-10-25
+#: next_check: 2013-11-25
+Dietzgenstr.: wird auch in Richtung Süden markiert? wird auch zwischen Heinrich-Böll-Str. und Schillerstr. markiert?	? 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
 # 
 #: last_checked: 2013-08-27 vvv
 #: check_frequency: 100d vvv
@@ -419,8 +419,8 @@ Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html ("Durchführungszeit zwei Wochen, allerdings wurde der Termin (16.9.) nicht realisiert)
 #: XXX für Radfahrer evtl. relevant, da Überquerungsmöglichkeit zur Magdalenenstr.
 #: XXX evtl. auch ubahnhof_bg anpassen?
-#: last_checked: 2013-09-25
-#: next_check: 2013-10-15
+#: last_checked: 2013-10-25
+#: next_check: 2013-11-25
 U Magdalenenstr.: Bau einer Fußgängerampel geplant	?::projected 16057,11988 16093,11927
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130723.1140.387220.html
@@ -630,11 +630,12 @@ Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19651,9489 19727,9484 1
 # 
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf
-#: next_check: 2014-11-30
 #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
 #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
 #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014
-Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16457,16204 16448,16102 16485,15979 16543,15892
+#: last_checked: 2013-10-25
+#: next_check: 2014-11-30
+Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16476,16216 16458,16104 16493,15983 16563,15900
 # 
 #: last_checked: 2013-09-25
 #: check_frequency: 120d
@@ -650,7 +651,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
-#: last_checked: 2013-10-20
+#: last_checked: 2013-10-25
 #: check_frequency: 100d
 #: priority: #C
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
@@ -971,12 +972,13 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012)
 #: osm_watch: way id="22044872" version="10"
 #: osm_watch: way id="22045147" version="18"
-#: last_checked: 2013-10-20
-#: next_check: 2013-10-26
-Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 16964,16042 16961,16042 16883,16074 16660,16165 16522,16206 16416,16236 16260,16282 16095,16331 15919,16383 15871,16399 15845,16405 15432,16500
+#: last_checked: 2013-10-25
+#: next_check: 2013-11-02
+# REMOVED (realisiert) --- Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 16964,16042 16961,16042 16883,16074 16656,16157 16522,16206 16476,16216 16416,16236
+Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 16416,16236 16263,16288 16099,16339 15919,16383 15866,16393 15843,16399 15432,16500
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
-#: last_checked: 2013-10-20
+#: last_checked: 2013-10-25
 #: check_frequency: 90d
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 
@@ -1038,6 +1040,14 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131024.1605.390772.html
+#: XXX eventuell nur inoffiziell, und eventuell nur auf dem Firmengelände
+#: priority: #C
+Schindler-Platz: ist irgendwo hier der Schindler-Platz ausgeschildert?	? 8766,4038 8780,3983
+# 
+#: XXX Frage: kann es zu unerwünschten Routing gemeinsam mit dem comments_path-Eintrag für diese Straße geben?
+Tegnerstr.: gibt es hier einen Weg durch einen Spielplatz oder Grünfläche?	? 10708,16579 10713,16635 10774,16634
 # 
 #: next_check: 2014-03-15 (im Herbst/Winter sind Waldwege schwierig zu überprüfen)
 Reinickendorfer Route 3: genauer Streckenverlauf? Qualität?	? 2566,23584 2272,23574 2137,23626 2114,23720 2056,23749 1980,23711 1848,23679 1702,23692 1622,23726 1607,23777 1576,23785 1433,23738 1363,23746 1304,23736 1157,23752
@@ -1117,8 +1127,7 @@ Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13173,12331 131
 # REMOVED (uninteressante Verbindung mit 2x2 Stufen) --- Ernst-Bloch-Str. - Hellersdorfer Str.: besteht hier für Radfahrer eine Verbindung? Qualität? Kann die Hellersdorfer Str. hier überquert werden?	? 22985,12807 22924,12833
 Grünauer Str. - Kablower Weg: existiert hier eine Verbindung durch den Wald? Qualität?	? 22926,-340 22948,-322 22862,-126 22815,37
 # REMOVED (uninteressant?) --- Dohnagestell - Ugandastr.: Qualität? beleuchtet?	? 5522,15354 5710,15519 5906,15623
-#: XXX über Golfplatzgelände - gibt es hier Einschränkungen?
-Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?	? 15102,20723 15220,20586 15354,19879 15424,19861
+# REMOVED (nein, keine Einschränkungen) --- #: XXX über Golfplatzgelände - gibt es hier Einschränkungen? --- Brockenweg - Blankenburger Pflasterweg: Qualität? Beleuchtet? Genaue Wegführung?	? 15102,20723 15119,20655 15226,20587 15269,20508 15276,20231 15310,20176 15354,19879
 # REMOVED (existiert zwar, ist aber nicht so wichtig, da Alternativen existieren. Parkplatz. Schranke im Süden, Poller im Norden) --- Am Lindenplatz - Schwarzmeerstr.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17856,10879 17821,10741
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf
@@ -1272,9 +1281,6 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: last_checked: 2013-10-14
 #: check_frequency: 90d
 Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9190
-# 
-#: XXX nochmal genau vor Ort anschauen
-An der Vogelweide: Qualität? Lage? Straßenschilder?	? 8568,21863 8626,21892 8712,21858 8725,21910 8615,21955 8590,21894
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2013 --- Am Valwigerteich: gibt es mittlerweile eine Durchfahrtmöglichkeit?	? 18867,12265 18917,12271
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/buddestra__e_lp2_07_03_2011.pdf?start&ts=1299577401&file=buddestra__e_lp2_07_03_2011.pdf --- #: priority: #C --- Buddestr.: existiert hier ein Zebrastreifen?	? 2358,20199 2382,20210
@@ -1625,7 +1631,7 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -13094,-1158 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern)
 #: XXX Freesienweg (beide Amtsblätter) oder Fresienweg (BA)? Wikipedia meint "Freesien"
 #: XXX fehlt bei Berlin.coords.data
-#: last_checked: 2013-08-21 (Bauarbeiten in Gange, keine Straße zu sehen)
+#: last_checked: 2013-10-25 (Bauarbeiten in Gange, keine Straße zu sehen)
 #: next_check: 2014-04-15
 Freesienweg: geplante Straße, wo wird sie genau liegen? Wie wird der Straßenname genau geschrieben? Qualität?	?::projected 16002,12640 16004,12750
 # 
@@ -3323,7 +3329,7 @@ Trollblumenweg: wird verlängert, Qualität der Verlängerung?	?::inwork 16020,3732
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
-#: last_checked: 2013-06-04
+#: last_checked: 2013-10-25
 #: check_frequency: 360d
 Am Orangeriepark: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 10293,19390 10419,19423
 # 

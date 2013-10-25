@@ -104,7 +104,7 @@ Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
 Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,18771 11950,18529
 # REMOVED (hier darf man fahren...) --- Prenzlauer Promenade	2 11927,19308 12020,19333
-Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,18338 10567,18366 10609,18384
+Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,18338 10567,18366 10602,18382
 Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
@@ -986,7 +986,7 @@ Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11655,18018
 Karlstadter Str.	1 11621,18011 11586,18126
 Gemündener Str.	1 11586,18126 11514,18101 11495,18129 11395,18274
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11012,13278 11085,13239
-Döbrabergweg	1 9848,20926 9892,20776
+Döbrabergweg	1 9848,20926 9895,20766
 #: note: eine Absperrkette kann hier hängen
 Reichsbahnstr.	2 -4648,1334 -4579,1397
 #: by: Kay Leonhardt:
@@ -1402,7 +1402,7 @@ Falkenseer Chaussee: Mittelstreifen	3nocross -6144,15946 -6073,15925 -5911,15877
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 889,14392
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1182,14384 1246,14384 1305,14384 1361,14384
 Siemensdamm: Mittelstreifen	3nocross 1361,14384 1420,14369 1479,14343
-Suermondtstr: Straßenbahntrasse	3nocross 16095,16331 16260,16282 16416,16236
+Suermondtstr: Straßenbahntrasse	3nocross 16099,16339 16263,16288 16416,16236
 #: by: Vicky (senchi):
 #: confirmed_by: srt
 Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
@@ -1521,7 +1521,7 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3nocross
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3nocross 11776,15060 11801,15132 11828,15210
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross 11709,14856 11681,14759 11662,14695
 #: XXX_prog: eine Überquerungsmöglichkeit existiert 60m weiter südlich
-Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12071,16130 12030,15968 11995,15827
+Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12075,16144 12030,15968 11995,15827
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11995,15827
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11435,14023 11468,14121 11476,14142
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11709,14856 11609,14881 11535,14900
@@ -1673,6 +1673,7 @@ Albrechtstr.: Mittelstreifen	3nocross 6102,4726 6006,4852 6034,4893
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7327
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4206,6820 4237,6840
 Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
+Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -1981,6 +1982,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke (lichte Breite ca. 120cm)	BNP:2::trailer=4 11973,21385
 Baumstamm als Barriere	BNP:0::trailer=5 -1527,18645
 mehrere Poller	BNP:1::trailer=6 12299,19143
 Drängelgitter	BNP:3::trailer=10 10062,15927
@@ -2374,7 +2376,7 @@ Drängelgitter	BNP:3::trailer=6 9884,10192
 Barriere	BNP:5::trailer=10 12316,9477
 Barriere, kann auf dem Gehweg umfahren werden	BNP:3::trailer=6 12186,9205
 # REMOVED --- immer offen? --- Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
-Schranke	BNP:5 9420,21687
+Schranke (lichte Breite ca. 90cm)	BNP:5::trailer=15 9420,21687
 Drängelgitter	BNP:5 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:1 17247,13519
 Schranke (Krankenhaus Herzberge)	BNP:2 17780,13468
@@ -2944,8 +2946,8 @@ Dettelbacher Weg	1 11696,18454 11750,18273
 Dettelbacher Weg	1 11819,18050 11750,18273
 Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
 Prenzlauer Promenade: nicht passierbarer Mittelstreifen	3nocross 11950,18529 11984,18771 12003,18896
-Prenzlauer Promenade: Mittelstreifen, Bordsteine	3nocross 11854,17656 11870,17522 11893,17397
-Prenzlauer Promenade: Mittelstreifen	3nocross 11854,17656 11843,17737 11884,18063
+Prenzlauer Promenade: Mittelstreifen, Bordsteine	3nocross 11849,17655 11872,17522 11893,17397
+Prenzlauer Promenade: Mittelstreifen	3nocross 11849,17655 11839,17738 11884,18063
 Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
 tragen (insgesamt 16 Stufen, auf vier Gruppen verteilt)	0:40 14581,16529

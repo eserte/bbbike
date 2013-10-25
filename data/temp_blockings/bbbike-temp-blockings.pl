@@ -2678,7 +2678,7 @@ EOF
        text  => 'Buschallee (Weißensee) in Richtung Berliner Allee zwischen Elsastr. und Hansastr. Baustelle, Fahrtrichtung gesperrt (bis 23.09.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 15918,16383 15871,16399 15845,16405 15432,16500
+userdel	q4; 15918,16383 15866,16393 15843,16399 15432,16500
 EOF
      },
      { from  => 1124575200, # 2005-08-21 00:00
@@ -7233,7 +7233,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004803',
        data  => <<EOF,
-userdel	1::inwork 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644 9551,20662 9622,20677 9676,20700 9737,20728 9848,20764
+userdel	1::inwork 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749
 EOF
      },
      { from  => 1172642400, # 2007-02-28 07:00
@@ -10297,7 +10297,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006873',
        data  => <<EOF,
-userdel	1::inwork 15918,16383 16095,16331 16260,16282 16416,16236 16522,16206
+userdel	1::inwork 15918,16383 16099,16339 16263,16288 16416,16236 16476,16216 16520,16200
 EOF
      },
      { from  => 1182031200, # 2007-06-17 00:00
@@ -12447,7 +12447,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009790',
        data  => <<EOF,
-userdel	1::inwork 16660,16165 16883,16074 16961,16042
+userdel	1::inwork 16656,16157 16882,16072 16961,16042
 EOF
      },
      { from  => 1247724607, # 2009-07-16 08:10
@@ -16054,7 +16054,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014139',
        data  => <<EOF,
-userdel	q4::temp 10609,18384 10565,18507 10532,18601
+userdel	q4::temp 10602,18382 10562,18506 10532,18601
 EOF
      },
      { from  => 1252651497, # 2009-09-11 08:44
@@ -16072,7 +16072,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014138',
        data  => <<EOF,
-userdel	q4::temp 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10609,18384 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
+userdel	q4::temp 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
 EOF
      },
      { from  => 1252651605, # 2009-09-11 08:46
@@ -18365,7 +18365,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016308',
        data  => <<EOF,
-userdel	q4::temp 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10609,18384 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
+userdel	q4::temp 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
 EOF
      },
      { from  => $isodate2epoch->("2013-08-29 14:00:00"), # 1 Tag Vorlauf
@@ -18536,7 +18536,7 @@ EOF
        type  => 'handicap',
        # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20101028.1120.316439.html',
        data  => <<EOF,
-userdel	q4::inwork; 16430,15168 16376,15209 16319,15229 16119,15302
+userdel	q4::inwork; 16430,15168 16376,15209 16314,15223 16119,15302
 EOF
      },
      { from  => 1288384501, # 2010-10-29 22:35
@@ -19789,7 +19789,7 @@ EOF
        text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (14.09.2013 und 15.09.2013)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 10609,18384 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
+userdel	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
 EOF
      },
      { from  => 1315040400, # 2011-09-03 11:00
@@ -20167,8 +20167,8 @@ EOF
        recurring => 1,
        data => <<EOF,
 #: by: cornelia (bayer...): vvv
-Am Schloss Schönhausen	2::night 10308,19297 10344,19181 10382,19066
-Am Schloss Schönhausen	2::night 10249,19148 10344,19181
+Am Schloss Schönhausen	2::night 10294,19298 10339,19179 10382,19066
+Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: ^^^
 EOF
      },
@@ -21935,7 +21935,7 @@ userdel	q3::inwork; 14134,11272 14181,11434
 EOF
      },
      { from  => 1382220000, # 2013-10-20 00:00
-       until => 1382824800, # 2013-10-27 00:00
+       until => 1382718376, # 1382824800, # 2013-10-27 00:00
        text  => 'Grünbergallee: zwischen Hufenweg und B 96 A wird die Fahrbahn in Stand gesetzt, Vollsperrung vom 21.10.2013 bis zum 26.10.2013 ',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131007.1105.390062.html',
@@ -22020,8 +22020,8 @@ userdel	q4::inwork 4045,4005 4234,4020
 EOF
      },
      { from  => 1382626800, # 2013-10-24 17:00
-       until => 1382810400, # 2013-10-26 20:00
-       text  => 'Oranienburger Chaussee (Frohnau) zwischen Schwarzkittelweg und Landesgrenze gesperrt, von 25.10.2013 17 Uhr bis 26.10.2013 20 Uhr',
+       until => 1382824740, # 2013-10-26 23:59
+       text  => 'Oranienburger Chaussee (Frohnau) zwischen Schwarzkittelweg und Landesgrenze gesperrt, von 25.10.2013 17 Uhr bis 26.10.2013 Mitternacht',
        type  => 'gesperrt',
        source_id => 'IM_020557',
        data  => <<EOF,

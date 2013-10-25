@@ -443,8 +443,8 @@ Eichgestell: bei schˆnem Wetter viele Fuﬂg‰nger	q1 19052,6823 19407,6660 19590,6
 Wuhlheide: bei schˆnem Wetter viele Fuﬂg‰nger und Kinder	q2 20200,6321 20262,6493 20225,6631 20313,6841
 Wuhlheide/R1: Fuﬂg‰nger	q1 20453,6211 20293,6278
 Wuhlheide/FEZ: einige Fuﬂg‰nger	q1 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
-(am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q2 10308,19297 10344,19181 10382,19066
-(am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q1 10344,19181 10249,19148
+(am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q2 10294,19298 10339,19179 10382,19066
+(am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q1 10339,19179 10249,19148
 # REMOVED (done) --- #: XXX mittlerweile darf die Br¸cke offiziell befahren werden - evtl. das "ggfs. schieben" entfernen? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4830
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, Radfahren erlaubt	q2 17975,8971 17996,8966 18076,9027
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
@@ -1825,6 +1825,7 @@ Am Lokdepot: starke Steigung	q4; 8390,8879 8389,8775
 L¸bbener Str.: Fuﬂg‰nger	q2 12729,10515 12731,10547
 #: note: es war nur einer (2013-10-22), aber der Weg ist so schlecht, dass er auch einen Eintrag in handicap verdient
 Parforceweg: einige umgest¸rzte B‰ume	q4 -643,7252 -728,7310 -1020,7446 -1328,7597 -1643,7828
+(Brockenweg - Blankenburger Pflasterweg): schmaler Pfad	q3+ 15102,20723 15119,20655 15226,20587
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2520,7 +2521,9 @@ Hobeckweg: enge Straﬂe	q0- 27190,13327 27414,13508 27530,13627 27556,13641
 Rosenorter Steig: enge Straﬂe	q0- -1349,23497 -1451,23525 -1535,23575 -1617,23624 -1700,23671
 # 
 #: by: Alfred Zudse:
-Straﬂe 40 (Blankenburg): enge Straﬂe	q1 14893,20583 14945,20748 15035,21026
+#: corrected_by: srt/policy (q1 -> q0-)
+Straﬂe 40 (Blankenburg): enge Straﬂe	q0- 14893,20583 14945,20748 15035,21026
+# 
 #: by: Andreas Vildman:
 (Mˆrchinger Str. - Berliner Str.): Fuﬂg‰nger	q2 1393,3183 1388,3197 1338,3300
 # REMOVED (corrected_by: srt q1 -> q0) --- #: by: Liana (lumielle): --- Sanddornstr.: enge Straﬂe	q1 19184,4888 19199,4954 19191,5075 19173,5139
@@ -2717,6 +2720,7 @@ Im Lesachtal: enge Straﬂe	q0- 10526,2282 10504,2321
 # 
 #: by: anonymous
 Rotdornstr.: enge Straﬂe	q1 5139,7210 5141,7158 5121,7132 5085,7109
+# 
 #: by: Ines Junge: vvv
 #: corrected_by: srt (was: "enger Weg mit B‰umen mitten auf dem Weg", q3) vvv
 Im Eichengrund: Fuﬂg‰nger	q1 976,15195 919,15365 902,15362 877,15474
@@ -2726,7 +2730,9 @@ Im Eichengrund: Fuﬂg‰nger, Bordstein	q2 919,15365 1009,15400
 #: by: ^^^
 # 
 #: by: anonymous
-Hedwigstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 16616,16046 16505,16096 16522,16206
+#: confirmed_by: srt (weil kurvig)
+Hedwigstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 16616,16046 16505,16096 16520,16200
+# 
 # REMOVED --- #: by: anonymous --- Hopfenweg: enge Straﬂe	q1 15745,2294 15745,2320 15593,2495 15588,2520 15590,2724
 #: by: Kai (regionalorenz): vvv
 #: corrected_by: srt/policy (q2 -> q1)
@@ -2734,6 +2740,7 @@ Kasinoweg: enge Straﬂe	q1 2624,24710 2444,24950 2364,24886
 #: corrected_by: srt/policy (q2 -> q1)
 Knappenpfad: enge Straﬂe	q1 2471,24709 2410,24837 2364,24886 2340,24884
 #: by: ^^^
+# 
 #: by: Michael H‰usler:
 Auerhahnbalz: enge Straﬂe	q2 636,4765 650,4712 668,4653 697,4605 723,4572
 #: by: Anna Lytik:

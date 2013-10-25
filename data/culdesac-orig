@@ -858,10 +858,22 @@ Sackgassenende, Eingang U-Bhf. Scharnweberstr.	culdesac 4187,17765
 	culdesac_pseudo 989,20366
 #: note: laut OSM geht's hier weiter
 	culdesac_pseudo 2009,20604
+#: note: ein Weg geht weiter
+	culdesac_pseudo 8737,21942
+	culdesac 15018,20624
+	culdesac_pseudo 15102,20723
+	culdesac 11561,21429
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 10382,19066
+	culdesac_pseudo 10249,19148
+	culdesac_pseudo 10294,19298
+	culdesac_pseudo 15946,14702
+	culdesac_pseudo 15278,17152
+	culdesac_pseudo 15439,17698
+	culdesac_pseudo 15548,17684
 	culdesac_pseudo 10086,12725
 	culdesac_pseudo 19133,9087
 	culdesac_pseudo 13552,12435

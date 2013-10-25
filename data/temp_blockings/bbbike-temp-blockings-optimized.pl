@@ -2313,8 +2313,8 @@ userdel	q2::inwork; -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 
          'from' => undef,
          'id' => 2320,
          'data' => '#: by: cornelia (bayer...): vvv
-Am Schloss Schönhausen	2::night 10308,19297 10344,19181 10382,19066
-Am Schloss Schönhausen	2::night 10249,19148 10344,19181
+Am Schloss Schönhausen	2::night 10294,19298 10339,19179 10382,19066
+Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: ^^^
 '
        },
@@ -2853,17 +2853,7 @@ userdel	q4::inwork 7001,8161 7250,8223
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131007.1105.390062.html',
-         'until' => 1382824800,
-         'text' => 'Grünbergallee: zwischen Hufenweg und B 96 A wird die Fahrbahn in Stand gesetzt, Vollsperrung vom 21.10.2013 bis zum 26.10.2013 ',
-         'from' => 1382220000,
-         'id' => 2496,
-         'data' => '#: source_id: IM_020526
-userdel	q4::inwork 20790,-537 20675,-526 20362,-511 20354,-569 20252,-571 20205,-548
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131010.1450.390218.html',
          'until' => 1384642799,
@@ -2940,8 +2930,8 @@ userdel	q3::inwork 11758,16111 11684,15997 11859,16058
        },
        {
          'source_id' => 'IM_020557',
-         'until' => 1382810400,
-         'text' => 'Oranienburger Chaussee (Frohnau) zwischen Schwarzkittelweg und Landesgrenze gesperrt, von 25.10.2013 17 Uhr bis 26.10.2013 20 Uhr',
+         'until' => 1382824740,
+         'text' => 'Oranienburger Chaussee (Frohnau) zwischen Schwarzkittelweg und Landesgrenze gesperrt, von 25.10.2013 17 Uhr bis 26.10.2013 Mitternacht',
          'from' => 1382626800,
          'id' => 2505,
          'data' => 'userdel	2::inwork 2178,28067 2345,27670 2666,27009 2842,26710

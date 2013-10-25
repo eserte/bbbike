@@ -296,10 +296,10 @@ Treskowallee - Römerweg: bereits an der Ampel Römerweg die Straßenseite wechseln
 Cyclopstr. - Blomberger Weg: Einfahrt zum Parkplatz OSZ Enährungs-, Hauswirtschaft u. Drucktechnik nehmen	CP2; 5106,21418 5041,21343
 Gürtelstr. - Lehderstr.: Fußgängerampel zum Überqueren der Berliner Allee/Greifswalder Str. benutzen	CP; 13409,15687 13316,15758 13214,15830
 Gürtelstr. - Greifswalder Str.: Fußgängerampel zum Linksabbiegen in die Greifswalder Str. benutzen	CP; 13409,15687 13316,15758 13229,15692
-Prenzlauer Promenade - Laudaer Str.: bereits an der Binzstr. die Straßenseite wechseln	PI; 11854,17656 11843,17737 11785,17729
-Arnold-Zweig-Str. - Prenzlauer Promenade: den linken Gehweg bis zur Binzstr. benutzen	CP; 11729,17499 11870,17522 11854,17656
-Prenzlauer Promenade - Arnold-Zweig-Str.: bereits an der Treskowstr. auf den linken Gehweg wechseln	PI; 11893,17397 11870,17522 11729,17499
-Laudaer Str. - Prenzlauer Promenade: zunächst auf dem linken Geh/Radweg fahren, an der Kissingenstr. die Straßenseite wechseln	CP; 11785,17729 11843,17737 11884,18063
+Prenzlauer Promenade - Laudaer Str.: bereits an der Binzstr. die Straßenseite wechseln	PI; 11849,17655 11839,17738 11785,17729
+Arnold-Zweig-Str. - Prenzlauer Promenade: den linken Gehweg bis zur Binzstr. benutzen	CP; 11729,17499 11872,17522 11849,17655
+Prenzlauer Promenade - Arnold-Zweig-Str.: bereits an der Treskowstr. auf den linken Gehweg wechseln	PI; 11893,17397 11872,17522 11729,17499
+Laudaer Str. - Prenzlauer Promenade: zunächst auf dem linken Geh/Radweg fahren, an der Kissingenstr. die Straßenseite wechseln	CP; 11785,17729 11839,17738 11884,18063
 #: by: Helga Rief (Mittelinsel auf der Scharnweberstr.) vvv
 Seidelstr. - Klixstr.: bereits an der Autobahnbrücke die Straßenseite wechseln	PI; 3570,17938 3706,17931 3833,17929 3871,18144
 Klixstr. - Scharnweberstr.: zunächst den linken Gehweg bis zur Antonienstr. benutzen	CP; 3871,18144 3833,17929 3930,17920
@@ -456,11 +456,11 @@ Yorckstr. - Park am Gleisdreieck: ggfs. schon an der Ampel Bautzener Str. auf de
 #: note: Lastwagen parken an der Einmündung Grenzallee/Straße 12, unübersichtlich!
 Grenzallee - Straße 12: ggfs. schon an der Ampel Autobahnausfahrt auf den linken Gehweg wechseln	PI; 14051,6731 13930,6686 13883,6682 13881,6634
 Buschkrugallee - Bürgerstr.: bereits an der Fußgängerampel die Straßenseite wechseln	PI; 13323,6322 13307,6359 13239,6344
-Prenzlauer Allee - Wohngebiet: bereits an der Krügerstr. oder Wisbyer Str. auf den linken Gehweg wechseln	PI; 12071,16130 12030,15968 12154,15902
+Prenzlauer Allee - Wohngebiet: bereits an der Krügerstr. oder Wisbyer Str. auf den linken Gehweg wechseln	PI; 12075,16144 12030,15968 12154,15902
 Mariendorfer Damm - Göllweg: Mittelstreifen kann nicht überquert werden, bis zum Ankogelweg vorfahren und dort den Mariendorfer Damm überqueren	CP; 10276,1383 10239,1481 10119,1435
 Göllweg - Mariendorfer Damm: zunächst den linken Gehweg benutzen und am Ankogelweg die Straßenseite wechseln	CP; 10119,1435 10239,1481 10226,1515
 Johannisthaler Chaussee - Weg zur Gutschmidtstr.: bereits an der Kreuzung Johannisthaler Chaussee/Kirschnerweg auf den linken Radweg wechseln	CP; 13886,2653 13915,2673 13887,2710
-Suermondtstr. - Orankestrand: bereits an der Kreuzung Augustastr. die Straßenseite wechseln	PI; 15918,16383 15871,16399 15782,16277
+Suermondtstr. - Orankestrand: bereits an der Kreuzung Augustastr. die Straßenseite wechseln	PI; 15918,16383 15866,16393 15782,16277
 Hasenheide - Park: bereits an der Kreuzung Hasenheide/Jahnstr. auf den linken Gehweg wechseln	PI; 11500,9116 11449,9125 11439,9049
 Hasenheide - Park: bereits an der Ampel Neue Welt auf den linken Gehweg wechseln	PI; 11629,9086 11550,9104 11515,9066
 Park - Hasenheide: auf dem linken Gehweg bis zur Ampel fahren	CP; 11515,9066 11550,9104 11500,9116
@@ -536,3 +536,5 @@ Buckower Damm - Britzer Park: bereits an der Kreuzung Mohriner Allee auf den lin
 Britzer Park - Buckower Damm: linken Gehweg bis zur Ampel benutzen	CP; 12805,4020 12637,4014 12655,3882
 Magdalenenstr. - Frankfurter Allee: linken Gehweg bis zur Ampel benutzen	CP; 16158,12191 16127,11950 16207,11937
 Malchower Chaussee - Hohenschönhauser Weg: bereits an der Kreuzung Malchower Chaussee/Ortnitstr. auf den linken Radweg wechseln	PI; 15611,18603 15600,18551 15825,18385
+Bornholmer Str. - Tegnerstr.: bereits an der Ampel Schönfließer Str. auf den linken Gehweg wechseln	PI; 10620,16497 10699,16492 10708,16579
+Dietzgenstr. - (Am Nordgraben): bereits am Kräuterweg auf den linken Gehweg wechseln	PI; 10083,21848 10097,21809 10275,21793
