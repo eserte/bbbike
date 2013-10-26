@@ -1,11 +1,3 @@
-#
-# $Id: Makefile,v 1.17 2009/04/04 11:44:59 eserte Exp $
-#
-
-# XXX don't duplicate, see ../Makefile.PL
-STRPP=	strpp
-# XXX replace with tpage from Template 2.14?
-#TPAGE=	mytpage
 TPAGE=	tpage
 # XXX get from elsewhere
 CGIDIR?=../cgi
