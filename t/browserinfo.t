@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2005,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2012,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -27,7 +27,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 22 }
+BEGIN { plan tests => 25 }
 
 #use vars qw($uaprofdir);
 #$uaprofdir = "$FindBin::RealBin/../tmp/uaprof";
@@ -99,5 +99,14 @@ BEGIN { plan tests => 22 }
     is $bi->{user_agent_name}, 'Safari';
     is $bi->{user_agent_os}, 'Android';
 }
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'MSIE', 'MSIE 11 detection (name)';
+    is $bi->{user_agent_version}, '11.0', 'MSIE 11 detection (version)';
+    is $bi->{user_agent_os}, 'Windows NT 6.3', 'MSIE 11 detection (os)';
+}
+
 
 __END__

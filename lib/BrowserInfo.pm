@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2005,2011,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2005,2011,2012,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.55;
+$VERSION = 1.56;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -80,33 +80,39 @@ sub set_info {
 	$self->{'user_agent_os'} = 'Android';
     } elsif ($user_agent =~ /\((.*)\)/) {
 	my(@infos) = split(/;\s*/, $1);
-	my $ignore_next = 0;
-	my $i; # be compatible with 5.003
-	for($i=0; $i<=$#infos; $i++) {
-	    my $info = $infos[$i];
-	    if ($ignore_next) {
-		$ignore_next = 0;
-		next;
-	    }
-	    next if $info =~ /^(I|U|N|X11|AK|AOL\s\d\.\d|MSN\s\d\.\d|Update\s.|1und1|R3SSL1.1|SK|pdQbrowser|\d+bit|\d+-bit|\d\.\d+)$/;
-	    if ($info =~ /^compatible$/i) {
-		$i++;
-		$info = $infos[$i];
-		$self->{'user_agent_compatible'} =
-		    $self->{'user_agent_name'} . "/" .
-		    $self->{'user_agent_version'};
-
-		if ($info =~ /^Konqueror/) {
-		    ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
-			_get_browser_version($info);
-		} elsif ($self->{'user_agent_name'} ne 'Opera') {
-		    ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
-			_get_browser_version($info, " ");
+	if ($infos[1] =~ m{^Trident/} && $infos[2] =~ m{^rv:(\d+\.\d+)}) { # special handling for MSIE11
+	    $self->{user_agent_name} = 'MSIE';
+	    $self->{user_agent_version} = $1;
+	    $self->{user_agent_os} = $infos[0];
+	} else {
+	    my $ignore_next = 0;
+	    my $i;		# be compatible with 5.003
+	    for ($i=0; $i<=$#infos; $i++) {
+		my $info = $infos[$i];
+		if ($ignore_next) {
+		    $ignore_next = 0;
+		    next;
 		}
-		next;
+		next if $info =~ /^(I|U|N|X11|AK|AOL\s\d\.\d|MSN\s\d\.\d|Update\s.|1und1|R3SSL1.1|SK|pdQbrowser|\d+bit|\d+-bit|\d\.\d+)$/;
+		if ($info =~ /^compatible$/i) {
+		    $i++;
+		    $info = $infos[$i];
+		    $self->{'user_agent_compatible'} =
+			$self->{'user_agent_name'} . "/" .
+			    $self->{'user_agent_version'};
+
+		    if ($info =~ /^Konqueror/) {
+			($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
+			    _get_browser_version($info);
+		    } elsif ($self->{'user_agent_name'} ne 'Opera') {
+			($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
+			    _get_browser_version($info, " ");
+		    }
+		    next;
+		}
+		$self->{'user_agent_os'} = $info;
+		last;
 	    }
-	    $self->{'user_agent_os'} = $info;
-	    last;
 	}
     }
 
