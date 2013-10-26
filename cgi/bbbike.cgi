@@ -838,7 +838,7 @@ $detailheight = 500;
 $nice_berlinmap = 0;
 $nice_abcmap    = 0;
 
-$bbbike_start_js_version = '1.23';
+$bbbike_start_js_version = '1.24';
 $bbbike_css_version = '1.01';
 
 use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
@@ -1789,20 +1789,20 @@ sub choose_form {
     http_header(%header_args);
     my @extra_headers;
 
-    my $onloadscript = "";
-    if ($nice_berlinmap || $nice_abcmap) {
-	$onloadscript .= "init_hi(); window.onresize = init_hi; "
-    }
-    $onloadscript .= "focus_first(); ";
-    $onloadscript .= "check_locate_me(); ";
-    if ($nice_berlinmap || $nice_abcmap) {
+    if ($bi->{'can_javascript'}) {
+	my $onloadscript = "";
+	if ($nice_berlinmap || $nice_abcmap) {
+	    $onloadscript .= "init_hi(); window.onresize = init_hi; "
+	}
+	$onloadscript .= "focus_first(); ";
+	$onloadscript .= "check_locate_me(); ";
 	push @extra_headers, -onLoad => $onloadscript,
-	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=$bbbike_start_js_version"},
-			 ($nice_berlinmap
-			  ? {-code => qq{set_bbbike_images_dir('$bbbike_images')}}
-			  : ()
-			 ),
-			],
+	    -script => [{-src => $bbbike_html . "/bbbike_start.js?v=$bbbike_start_js_version"},
+			($nice_berlinmap
+			 ? {-code => qq{set_bbbike_images_dir('$bbbike_images')}}
+			 : ()
+			),
+		       ];
     }
 
     my $show_introduction;

@@ -315,7 +315,7 @@ function check_locate_me() {
   if (!navigator || !navigator.geolocation) {
     return;
   }
-  if (!document.implementation || !document.implementation.hasFeature("CSS2","2.0")) { // Mozilla 1.1+, Galeon, Firefox
+  if (!document.getElementById) {
     return;
   }
   var elem = document.getElementById("locateme");
