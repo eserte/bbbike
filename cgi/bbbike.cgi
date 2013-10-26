@@ -6812,6 +6812,10 @@ sub header {
     if ($is_m) {
 	$meta{'viewport'} = 'width=320; initial-scale=1.0, max-scale=1.0, user-scalable=no';
     }
+    # MSIE11 pinned site metadata
+    $meta{'application-name'} = 'BBBike' . ($is_beta ? ' (beta)' : '');
+    $meta{'msapplication-config'} = "$bbbike_html/msapp/browserconfig_" . ($use_cgi_bin_layout ? "cgilayout" : "bbbikelayout") . ".xml";
+    $meta{'msapplication-starturl'} = $bbbike_script;
 
     print $q->start_html
 	(%args,
