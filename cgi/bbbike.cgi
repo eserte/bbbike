@@ -6805,15 +6805,20 @@ sub header {
 
     $args{-head} = $head if $head && @$head;
 
+    my %meta = (
+		'keywords'  => 'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner entfernungsrechner',
+		'copyright' => '(c) 1998-2013 Slaven Rezic',
+	       );
+    if ($is_m) {
+	$meta{'viewport'} = 'width=320; initial-scale=1.0, max-scale=1.0, user-scalable=no';
+    }
+
     print $q->start_html
 	(%args,
 	 -lang => 'de-DE',
 	 -BGCOLOR => '#ffffff',
 	 ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
-	 -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner entfernungsrechner',
-		 'copyright'=>'(c) 1998-2013 Slaven Rezic',
-		 ($is_m ? ('viewport'=>'width=320; initial-scale=1.0, max-scale=1.0, user-scalable=no') : ()),
-		},
+	 -meta => \%meta,
 	 -author => $BBBike::EMAIL,
 	);
     if (!$smallform) {
