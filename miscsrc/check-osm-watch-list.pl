@@ -13,10 +13,21 @@
 #
 
 use strict;
-use open ':locale';
 use FindBin;
 use Getopt::Long;
 use IPC::Run qw(run);
+
+{
+    # I don't understand "use open". Especially how it may be used to
+    # set STDIN/OUT/ERR to locale encoding.
+    require encoding;
+    my $locale_encoding = encoding::_get_locale_encoding(); # yes, unfortunately using the private function
+    if ($locale_encoding) {
+	for my $fh (\*STDOUT, \*STDERR) { # STDIN not needed here
+	    binmode $fh, ":encoding($locale_encoding)";
+	}
+    }
+}
 
 our $VERSION = '0.02';
 
