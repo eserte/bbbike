@@ -13,6 +13,7 @@ before_install:
  - (sleep 10; env DISPLAY=:123 twm) &
 env:
  - DISPLAY=:123
+ - BBBIKE_LONG_TESTS=1
 language: perl
 perl:
   - "5.18"
