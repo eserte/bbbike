@@ -441,7 +441,29 @@ sub xmllint_file {
 # only usable with Test::More, generates one test
 sub gpxlint_string {
     my($content, $test_name, %args) = @_;
-    my $schema_version = delete $args{schema_version} || '1.1';
+
+    my $schema_version;
+    if (defined $args{schema_version}) {
+	$schema_version = delete $args{schema_version};
+    } else {
+	# Try to autodetect the GPX schema version.
+	if (eval { require XML::LibXML; 1 }) {
+	    eval {
+		my $root_ns = XML::LibXML->new->parse_string($content)->documentElement->namespaceURI;
+		if ($root_ns =~ m{^\Qhttp://www.topografix.com/GPX/\E(\d+)/(\d+)$}) {
+		    $schema_version = "$1.$2";
+		}
+	    };
+	    if ($@) {
+		warn "WARN: failure while auto-detecting GPX schema version: $@";
+	    }
+	}
+	if (!defined $schema_version) {
+	    warn "INFO: cannot auto-detect GPX version, fallback to 1.1 (may be wrong)\n";
+	    $schema_version = '1.1';
+	}
+    }
+
     local $Test::Builder::Level = $Test::Builder::Level+1;
     my $gpx_schema = File::Spec->catfile(dirname(dirname(File::Spec->rel2abs(__FILE__))),
 					 "misc",
