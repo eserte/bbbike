@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Win32Util.pm,v 1.38 2007/04/08 18:33:12 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2004,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -35,7 +34,7 @@ these modules are already bundled with the popular ActivePerl package.
 use strict;
 use vars qw($DEBUG $browser_ole_obj $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.39';
 $DEBUG=0 unless defined $DEBUG;
 
 # XXX Win-Registry-Funktionen mit Hilfe von Win32::API und
@@ -781,7 +780,23 @@ sub get_user_folder {
         return unless $key_ref->GetValues($hashref);
         $folder = $hashref->{$foldertype}[2];
     };
-    warn $@ if $@;
+    my $win32_registry_err = $@;
+    if ($win32_registry_err) {
+	if ($foldertype eq 'Personal' && !$public) {
+	    # File::HomeDir is available in Strawberry Perl
+	    if (eval { require File::HomeDir; 1 }) {
+		$folder = File::HomeDir->my_home;
+		if (!defined $folder) {
+		    warn "WARN: can't get user folder neither using Win32::Registry ($win32_registry_err) nor with File::HomeDir";
+		}
+	    } else {
+		warn "WARN: can't get user folder using Win32::Registry ($win32_registry_err) and File::HomeDir is not installed";
+	    }
+	} else {
+	    # No fallback possible
+	    warn $win32_registry_err;
+	}
+    }
     # XXX could also use Win32::GetFolderPath(CSIDL_APPDATA) ...
     $folder;
 }
