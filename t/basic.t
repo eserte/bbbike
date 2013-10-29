@@ -162,6 +162,10 @@ for my $f (@files) {
 		push @add_opt, "-M$non_heavy";
 	    }
 	}
+	if ($f =~ m{miscsrc/BBBikeOrgDownload.pm$}) {
+	    push @add_opt, "-Imiscsrc"; # because of BBBikeDir.pm
+	}
+
 	*OLDERR = *OLDERR; # cease -w
 	open(OLDERR, ">&STDERR") or die;
 	my $diag_file = File::Spec->tmpdir . "/bbbike-basic.text";
