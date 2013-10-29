@@ -42,6 +42,12 @@ if (!$doit) {
     plan skip_all => "Neither -doit cmdline option specified nor is the env var BBBIKE_LONG_TESTS set";
     exit 0;
 }
+
+if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
+    plan skip_all => "Mapserver tests explicitly skipped";
+    exit 0;
+}
+
 my $bbbikedraw = "$FindBin::RealBin/../miscsrc/bbbikedraw.pl";
 if (!-e $bbbikedraw) {
     plan skip_all => "The executable $bbbikedraw is not available";
