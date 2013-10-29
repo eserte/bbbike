@@ -70,6 +70,14 @@ sub guess_dataset_title_from_dir ($);
 
 my $rootdir = my $this_rootdir = realpath(File::Spec->catfile($FindBin::RealBin, File::Spec->updir));
 
+my $bod = eval {
+    require BBBikeOrgDownload;
+    BBBikeOrgDownload->new;
+};
+if (!$bod) {
+    warn "WARN: cannot create BBBikeOrgDownload object, no downloads from bbbike.org possible (error: $@)";
+}
+
 Getopt::Long::Configure("pass_through");
 GetOptions("rootdir=s" => \$rootdir);
 
@@ -81,11 +89,6 @@ $mw->optionAdd('*advOpts*font', '{sans serif} 7');
 #{ my $bg = '#dfdbd7'; $mw->configure(-background => $bg); $mw->optionAdd('*background', $bg) }
 
 @ARGV and usage;
-
-my $download_script = "$rootdir/miscsrc/bbbike.org_download.pl";
-if (!-e $download_script) {
-    warn "Das Download-Skript $download_script ist nicht verfügbar.\n";
-}
 
 my @bbbike_datadirs = find_all_datadirs();
 
@@ -157,7 +160,7 @@ sub fill_chooser {
 	$bln->attach($b, -msg => $datadir);
 	$last_b = $b;
     }
-    if ($download_script) {
+    if ($bod) {
 	Tk::grid($p->Button(-text => M('More cities/regions @ bbbike.org'),
 			    -anchor => 'w',
 			    -command => \&download_more,
@@ -271,7 +274,7 @@ sub load_meta {
 }
 
 sub download_more {
-    chomp(my(@cities) = `$^X $download_script`);
+    my @cities = $bod->listing;
     if (!@cities) {
 	$mw->messageBox(-message => M('Problem: cannot find more data at bbbike.org.'));
 	return;
@@ -299,13 +302,15 @@ sub download_more {
 sub download_city {
     my($city, $t) = @_;
     $t->Busy;
-    system($^X, $download_script, '-city', $city);
-    my $st = $?;
+    eval {
+	$bod->get_city($city);
+    };
+    my $err = $@;
     $t->Unbusy;
-    if ($st == 0) {
+    if (!$err) {
 	$mw->messageBox(-message => Mfmt("The download of '%s' was successful.", $city));
     } else {
-	$mw->messageBox(-message => Mfmt("An error occurred while downloading '%s'.", $city));
+	$mw->messageBox(-message => Mfmt("An error occurred while downloading '%s' (error: $err)", $city));
     }
     $t->destroy;
 
