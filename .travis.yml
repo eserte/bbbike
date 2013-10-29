@@ -14,8 +14,7 @@ before_install:
  - Xvfb :123 &
  - (sleep 10; env DISPLAY=:123 twm) &
 env:
- - DISPLAY=:123
- - BBBIKE_LONG_TESTS=1
+ - DISPLAY=:123 BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1
 language: perl
 perl:
   - "5.18"
