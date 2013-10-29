@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: point_in_poly.t,v 1.7 2005/04/05 22:48:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -31,6 +30,8 @@ if (!$mw) {
     CORE::exit(0);
 }
 plan tests => 1;
+
+$mw->geometry("+1+1"); # for twm and other interactive placement WMs
 
 my $c = $mw->Scrolled("Canvas")->pack;
 my $cw = 400;
