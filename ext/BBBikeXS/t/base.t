@@ -98,6 +98,7 @@ SKIP: {
     skip "Tk not available", $tk_tests if !eval { require Tk; 1 };
     my $top = eval { Tk::tkinit() };
     skip "Cannot create MainWindow", $tk_tests if !$top;
+    $top->geometry("+0+0"); # for WMs with interactive placement - twm
 
     my $c = $top->Canvas(-width => 1000,
 			 -height => 700)->pack;
