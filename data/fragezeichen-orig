@@ -94,7 +94,7 @@ Groﬂziethener - Barnetstr.: werden hier die bestehenden Radwege verbessert oder 
 Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243,-1876 10301,-1891 10303,-1954
 # 
 #: XXX Baumaﬂnahme 2.29 (Realisierung nach 2011)
-#: last_checked: 2013-09-05
+#: last_checked: 2013-10-27
 #: check_frequency: 100d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -187,7 +187,7 @@ Wuhletalstr.: werden hier die Radspuren fortgef¸hrt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projected 15066,14579 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaﬂnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-10-25
+#: last_checked: 2013-10-29
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -239,7 +239,7 @@ Klosterbuschweg: Radspuren f¸r 2013 geplant	?::projected -6442,14535 -6438,14609
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="30949821" version="19"
 #: osm_watch: way id="122121575" version="11"
-#: osm_watch: way id="30218983" version="18"
+#: osm_watch: way id="30218983" version="19"
 #: last_checked: 2013-09-19
 #: check_frequency: 180d
 Gartenfelder Str.: Radspuren f¸r 2013 geplant	?::projected; -532,15184 -569,15167 -707,15108 -834,15053 -945,14999 -1099,14925 -1271,14843 -1307,14801 -1336,14786
@@ -312,7 +312,7 @@ Kˆpenicker Landstraﬂe: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
-#: last_checked: 2013-10-19
+#: last_checked: 2013-10-29
 #: next_check: 2014-03-15
 Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 #: section ^^^
@@ -349,9 +349,9 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: last_checked: 2013-10-14
-#: next_check: 2013-11-01
-Siegfriedstr. - Landschaftspark Herzberge: neuer Weg entsteht, Qualit‰t, Beleuchtung?	?::inwork 17111,14184 17219,14133 17219,14133 17111,14184
+#: last_checked: 2013-10-29
+#: next_check: 2013-11-13
+Siegfriedstr. - Landschaftspark Herzberge: wird es hier noch Dr‰ngelgitter geben?	?::inwork 17110,14187
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20131004.1210.390027.html
 #: last_checked: 2013-10-17
@@ -478,18 +478,15 @@ brunolfweg: Verkn¸pfung gefordert	?::projected 19290,894 19316,951 19334,997
 #: XXX ^^^
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20130705.0855.386745.html
-#: last_checked: 2013-10-14
+#: XXX In Richtung S¸den wahrscheinlich Radwege, wahrscheinlich asphaltiert
+#: last_checked: 2013-10-29
 #: next_check: 2014-09-30
 Rhinstr.: Radwegsituation nach den Bauarbeiten?	?::inwork 18226,13506 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
 # 
 # REMOVED (realisiert) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4987.html --- #: next_check: 2013-07-31 --- Kirchhainer Damm: Bau von drei neuen Ampeln	? 11663,-3266 11579,-3093 11360,-2648 11308,-2535 11232,-2377 11172,-2224 11130,-2120 11073,-2037
 # REMOVED (realisiert) --- #: last_checked: 2013-08-13 --- #: check_frequency: 45d --- Bauarbeiten im Landschaftspark Herzberge: werden im Bereich des "Zeltlagers" neue Wege entstehen?	? 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
 # REMOVED (Eintrag wurde aufgehoben, das Problem besteht aber weiterhin) --- #: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen mˆglich (bis Anfang 08/13) Kreuzung Straﬂe der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976 --- #: XXX_indoor vmz-Eintrag: Straﬂe der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen mˆglich, ‹berfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975 --- #: XXX_prog ich brauche eine Kombination aus den Kategorien "3" und "qX". Oder wahlweise "3" mit einer Zeitangabe (wie BNP oder 0). --- #: last_checked: 2013-07-10 --- #: next_check: 2013-08-02 --- Straﬂe der Pariser Kommune: ‹berqueren der Karl-Marx-Allee nur mit Zeitverlust mˆglich	?::inwork  12891,12549 12869,12425 12850,12286
-# 
-#: XXX auﬂerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist
-#: last_checked: 2013-09-14
-#: check_frequency: 30d
-Allee der Kosmonauten/Beilsteiner Str.: Ampel in Bau	?::inwork 18875,13467
+# REMOVED (realisiert) --- auﬂerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist --- #: last_checked: 2013-09-14 --- #: check_frequency: 30d --- Allee der Kosmonauten/Beilsteiner Str.: Ampel in Bau	?::inwork 18875,13467
 # 
 #: last_checked: 2013-06-15
 #: next_check: 2014-06-15
@@ -590,13 +587,13 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fuﬂg‰ng
 #: check_frequency: 60d
 #: priority: #C
 Lohm¸hlenbr¸cke: Zebrastreifen wird angelegt	?::projected 12850,9375 12871,9356 12888,9338
-#: last_checked: 2013-09-27
+#: last_checked: 2013-10-27
 #: next_check: 2014-09-01
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2013-09-27
+#: last_checked: 2013-10-27
 #: check_frequency: 60d
 B¸rknerstr.: wird hier eine Fahrradstraﬂe eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1041,6 +1038,14 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: last_checked: 2013-10-29 (Kreidemarkierungen zu sehen)
+#: next_check: 2014-11-29
+Seddiner Str.: anscheinend werden hier Radspuren markiert? Was passiert mit der vorhandenen Busspur?	? 18559,12105 18408,12105 18215,12123
+# 
+#: last_checked: 2013-10-29
+#: next_check: 2014-03-29
+Beilsteiner Str.: wird es hier f¸r das neue Wohngebiet eine Erschlieﬂungsstraﬂe geben?	? 18737,12753 18706,12488
+# 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131024.1605.390772.html
 #: XXX eventuell nur inoffiziell, und eventuell nur auf dem Firmengel‰nde
 #: priority: #C
@@ -1392,14 +1397,14 @@ Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projecte
 #: check_frequency: 100d
 Josef-Nawrocki-Str.: Einbahnstraﬂe soll freigegeben werden	?::projected 25552,4829 25554,4758 25691,4716 25724,4706 25802,4681
 #: last_checked: 2013-07-06
-#: next_check: 2013-10-15
-Verbesserung der Befahrbarkeit	?::projected 22655,1450 22756,1524
-Fahrradstraﬂe soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23955,728 24019,711 24211,585 24571,514 24660,440
-Fahrradstraﬂe soll eingerichtet werden	?::projected 25646,-209 25760,-427 25958,-731
-Verbesserung der Befahrbarkeit	?::projected 25958,-731 26004,-705 26045,-718 26073,-745 26129,-807 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
-Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26846,-2176 27021,-2336 27161,-2474 27093,-2560
+#: next_check: 2014-06-15
+Wassersportallee: Verbesserung der Befahrbarkeit	?::projected 22655,1450 22756,1524
+Regattastr.: Fahrradstraﬂe soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23955,728 24019,711 24211,585 24571,514 24660,440
+Sportpromenade: Fahrradstraﬂe soll eingerichtet werden	?::projected 25646,-209 25760,-427 25958,-731
+Rehfeldtstr./Rohrwallallee: Verbesserung der Befahrbarkeit	?::projected 25958,-731 26004,-705 26045,-718 26073,-745 26129,-807 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
+Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26846,-2176 27021,-2336 27161,-2474 27093,-2560
 #: last_checked: 2013-06-09
-#: next_check: 2014-06-09
+#: next_check: 2014-06-15
 Dˆrpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 21053,4162 21146,4229
 #: by ^^^
 # 
@@ -1631,7 +1636,7 @@ Im Nikolaiquartier: neue Straﬂe, wo befindet sie sich? Qualit‰t?	? -13094,-1158 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern)
 #: XXX Freesienweg (beide Amtsbl‰tter) oder Fresienweg (BA)? Wikipedia meint "Freesien"
 #: XXX fehlt bei Berlin.coords.data
-#: last_checked: 2013-10-25 (Bauarbeiten in Gange, keine Straﬂe zu sehen)
+#: last_checked: 2013-10-29 (Bauarbeiten in Gange, keine Straﬂe zu sehen)
 #: next_check: 2014-04-15
 Freesienweg: geplante Straﬂe, wo wird sie genau liegen? Wie wird der Straﬂenname genau geschrieben? Qualit‰t?	?::projected 16002,12640 16004,12750
 # 
@@ -1640,20 +1645,17 @@ Freesienweg: geplante Straﬂe, wo wird sie genau liegen? Wie wird der Straﬂenname
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Hausnummern)
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
-#: last_checked: 2013-07-14 vvv
-#: check_frequency: 100d vvv
-Alzeyweg: genaue Lage? Qualit‰t?	? 17376,12422 17366,12357 17358,12303
+#: last_checked: 2013-10-29 vvv
+#: next_check: 2014-03-29 vvv
+Alzeyweg: genaue Lage? Qualit‰t?	? 17376,12422 17366,12357 17365,12301
 #: XXX Eintrag in str_cont_ausnahme fehlt
-Nibelungenring: genaue Lage? Qualit‰t?	? 17328,12307 17358,12303 17448,12292 17454,12348
-Nibelungenring: genaue Lage? Qualit‰t?	?  17476,12345 17484,12405 17432,12413 17376,12422 17345,12427
-#: XXX Sackgasse
-Rumoldstr.: genaue Lage? Qualit‰t?	? 17366,12357 17454,12348 17476,12345 17530,12337
+Nibelungenring: genaue Lage? Qualit‰t?	? 17474,12344 17484,12405 17432,12413 17376,12422 17337,12428
 #: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse
 Giselhersteig: genaue Lage? Qualit‰t?	? 17359,12451 17437,12443 17536,12425
 Giselhersteig: genaue Lage? Qualit‰t?	? 17432,12413 17437,12443
 #: XXX Sackgasse
 Hadburgpfad: genaue Lage? Qualit‰t?	? 17484,12405 17531,12398
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: note ^^^
@@ -3236,7 +3238,11 @@ Alter Fischerweg (Gosen): Qualit‰t? Ausschilderung?	? 32778,-1044 33013,-790 331
 #: source_id: INKO_119740
 #: last_checked: 2013-09-15
 #: next_check: 2013-10-25
-Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	?::projected 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
+Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
+#: source_id: IM_020569
+#: last_checked: 2013-09-15
+#: next_check. 2013-11-22
+Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	?::inwork 13775,3500 13629,3511 13526,3519
 #: XXX ^^^
 #: by: ^^^
 # 
@@ -3504,3 +3510,5 @@ Am Buchenberg - Schulzendorfer Str.: Qualit‰t? Existiert eine Ausschilderung?	? 
 Am Buchenberg - Schulzendorfer Str.: Qualit‰t? Existiert eine Ausschilderung?	? 554,23349 224,23440 -38,23355 -190,23187 -404,23107 -417,23034 -573,23032 -656,23011
 #: next_check ^^^
 #: XXX ^^^
+Stolper Weg (Kienwerder): Qualit‰t?	? -4963,-3121 -4765,-3352 -4462,-3588 -4439,-3613 -4394,-3652 -4382,-3683 -4364,-3719
+Am Kienwerder (Kienwerder): Qualit‰t?	? -4765,-3352 -4694,-3304 -4341,-3227 -4208,-3215 -4027,-3236 -3761,-3313

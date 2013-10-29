@@ -115,7 +115,8 @@ Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23138,8764 23108,8720 23012,8575 22
 Pariser Str.: Asphalt	Q0 23470,9403 23513,9567
 Kressenweg: Asphalt	Q0 23513,9567 23528,9680 23574,9782
 Kressenweg: Asphalt, einige "Moabiter Kissen"	Q0 23574,9782 23603,9883 23659,10074
-Fischerstr.: Kopfsteinpflaster	Q2 16038,10818 16080,10743 16187,10587
+Fischerstr.: Asphaltstreifen in der Mitte	Q2 16080,10743 16187,10587
+Fischerstr.: Kopfsteinpflaster	Q2 16038,10818 16080,10743
 Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
 Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
 Wallensteinstr.: Asphalt	Q0 18037,9195 18120,9100 18134,9080
@@ -1417,7 +1418,7 @@ Parkaue: mäßiger Asphalt	Q1 15535,12420 15457,12449 15399,12444
 Deutschmeisterstr.: mäßiger Asphalt	Q1 15443,12222 15350,12270 15320,12375
 Parkaue: Asphalt	Q0 15399,12444 15402,12390 15350,12270
 Am Stadtpark: mäßiger Asphalt	Q1 15454,12519 15457,12449
-Kielblockstr.: mäßiger Asphalt	Q1 15433,12686 15546,12690
+Kielblockstr.: mäßiger Asphalt, Löcher	Q2 15433,12686 15546,12690
 Im Bereich des Fähranlegers: Kopfsteinpflaster	Q2 -8468,2152 -8540,2209 -8591,2144
 (zur Pfaueninselfähre): Kopfsteinpflaster	Q2 -8540,2209 -8561,2236 -8564,2276
 Pfaueninsel - Moorlake: Asphalt	Q0 -8591,2144 -8636,2102 -8747,2023 -8861,1855 -8934,1801 -9016,1782 -9108,1798 -9393,1831 -9444,1820 -9511,1739 -9584,1703 -9632,1672 -9663,1622 -9673,1519 -9647,1462 -9606,1389
@@ -4372,7 +4373,7 @@ Waldkauzstr.: Verbundsteinpflaster	Q1 -1202,19877 -1364,19982 -1521,20041 -1630,
 Bidenswinkel: Verbundsteinpflaster	Q1 16242,12878 16242,12814 16255,12769
 Bornitzstr. [Wohngebiet]: Verbundsteinpflaster	Q1 16312,12876 16313,12762
 Bornitzstr. [Wohngebiet] (Silberweidenweg?): Verbundsteinpflaster	Q1 16376,12874 16377,12791
-(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655 17110,13811 17095,13972 17152,14084 17219,14133 17266,14144 18024,13843
+(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655 17111,13792 17098,13969 17117,14036 17152,14084 17196,14120 17236,14140 17266,14144 18024,13843
 (Herzbergstr. - Siegfriedstr.): Asphalt	Q0 17167,13655 17073,13765 16978,13819 16875,13834
 Allendorfer Weg: Verbundsteinpflaster	Q1 17794,14640 17879,14659
 Allendorfer Weg: Beton	Q1 17879,14659 17991,14684
@@ -5719,7 +5720,7 @@ am Oder-Spree-Kanal: Waldweg	Q2 29559,-2866 30540,-3125
 (Uferweg - Ernst-Ziesel-Str.): Verbundsteinpflaster	Q1 18744,5612 18787,5676
 Plönzeile: Asphalt	Q0 18574,6401 18676,6333 18767,6268 18859,6198 18970,6110
 (Zufahrt Zentrum Schöneweide): Asphalt, in der Lieferzone Beton	Q0 17728,5756 17656,5701 17412,5951 17477,6031
-(Gotlindestr. - Herzbergstr.): Asphalt	Q0 17301,12585 17313,12609 17279,13004 17267,13067 17257,13117
+(Gotlindestr. - Herzbergstr.): Asphalt	Q0 17301,12585 17313,12609 17289,12964 17267,13067 17257,13117
 Rudolf-Filter-Weg: Beton	Q0 20988,15505 21009,15539 21040,15589
 (Rudolf-Filter-Weg - Landsberger Allee): Beton	Q0 21040,15589 21068,15646
 Ludwigsfelder Str. (Hellersdorf): Asphalt	Q0 22883,15740 22888,15768 22909,15877 22991,15864 23001,15898 23011,15947 22940,15964 22961,16077 22974,16139
@@ -8094,7 +8095,7 @@ westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinp
 (Zachertstr. - am Tränkegraben): Beton	Q0 17848,11204 17893,11146
 (Zachertstr. - am Tränkegraben): überwiegend Asphalt, kurzer unbefestigter Abschnitt	Q0 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
 Schwarzmeerstr. [zur Rummelsburger Str.]: Asphalt	Q0 17751,10904 17763,10950 17676,10976
-Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]: Asphalt	Q0 17676,10976 17689,11025 17679,11052
+Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]: Asphalt	Q0 17676,10976 17689,11025 17676,11055
 (am Tränkegraben - Moldaustr.): Gehwegplatten	Q1 17870,10619 17856,10560 17864,10537 17856,10508
 (Blumenweg): Asphalt	Q0 22274,9622 22280,9629 22595,9978 22604,9988
 (Buschallee): Asphalt	Q0 22473,9530 22482,9550 22525,9665 22720,9921 22729,9932
@@ -8471,6 +8472,9 @@ An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1 8725,21910 8615,21955 8
 (Brockenweg - Blankenburger Pflasterweg): unbefestigter Weg	Q2 15102,20723 15119,20655 15226,20587
 (Brockenweg - Blankenburger Pflasterweg): wassergebundene Decke	Q1 15226,20587 15269,20508 15276,20231 15310,20176 15354,19879
 Große-Leege-Str.: Beton mit einigen Hebungen	Q0 16035,14748 15972,14681 15899,14598
+Nibelungenring: Verbundsteinpflaster	Q1 17320,12308 17365,12301 17442,12292 17454,12348
+Rumoldstr.: Verbundsteinpflaster	Q1 17366,12357 17454,12348 17474,12344 17526,12336
+(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt	Q0 17110,14187 17224,14151 17236,14140
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -14767,7 +14771,7 @@ Dietlindestr.: Asphalt mit leichten Schäden	Q1 17087,12501 17088,12617
 Ortliebstr.: Asphalt	Q0 17087,12501 17197,12488 17230,12481
 Kriemhildstr.: schlechtes Kopfsteinpflaster	Q3; 17300,12173 17314,12265
 Kriemhildstr.: schlechtes Kopfsteinpflaster, schmaler Asphaltstreifen am Rand	Q2; 17314,12265 17300,12173
-Kriemhildstr.: Asphalt	Q0 17314,12265 17346,12490 17357,12566
+Kriemhildstr.: Asphalt	Q0 17314,12265 17320,12308 17337,12428 17346,12490 17357,12566
 Hagenstr. (Lichtenberg): Asphalt mit Schäden	Q1 16957,12599 16933,12432
 Hagenstr. (Lichtenberg): Kopfsteinpflaster	Q2 16933,12432 16918,12325
 Hagenstr. (Lichtenberg): Asphalt	Q0 16918,12325 16890,12135 16870,11920

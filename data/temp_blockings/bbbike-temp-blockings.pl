@@ -18269,7 +18269,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/W-SG33-P/10/410',
        data  => <<EOF,
-userdel	2::inwork -2815,-3574 -3368,-4430
+userdel	2::inwork -2815,-3574 -3170,-4140 -3368,-4430
 EOF
      },
      { from  => 1290975348, # 2010-11-28 21:15
@@ -21926,7 +21926,7 @@ userdel	q4::inwork 9075,11756 9000,11727
 EOF
      },
      { from  => undef, # 
-       until => 1383238800, # 2013-10-31 18:00
+       until => 1383047340, # 1383238800, # 2013-10-31 18:00
        text  => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), bis Ende Oktober 2013',
        type  => 'handicap',
        data  => <<EOF,
@@ -21963,8 +21963,8 @@ userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
      { from  => 1381633200, # 2013-10-13 05:00
-       until => 1384185600, # 2013-11-11 17:00
-       text  => 'Rosenthaler Str. (Mitte): Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Linienstr. und Weinmeisterstr., 14.10.2013 bis 11.11.2013 ',
+       until => 1384704000, # 2013-11-17 17:00
+       text  => 'Rosenthaler Str. (Mitte): Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Linienstr. und Weinmeisterstr., 14.10.2013 bis 17.11.2013 ',
        type  => 'handicap',
        source_id => 'IM_020486',
        data  => <<EOF,
@@ -22011,7 +22011,7 @@ userdel	q3::inwork 11758,16111 11684,15997 11859,16058
 EOF
      },
      { from  => 1382507820, # 2013-10-23 07:57
-       until => 1383055200, # 2013-10-29 15:00
+       until => 1383228000, # 2013-10-31 15:00
        text  => 'Augustastr. (Steglitz): Baustelle, Fahrbahn zwischen Augustaplatz und Moltkestr. bis Ende Oktober 2013 gesperrt ',
        type  => 'handicap',
        source_id => 'IM_020548',
@@ -22026,6 +22026,34 @@ EOF
        source_id => 'IM_020557',
        data  => <<EOF,
 userdel	2::inwork 2178,28067 2345,27670 2666,27009 2842,26710
+EOF
+     },
+     { from  => 1383433200, # 2013-11-03 00:00
+       until => 1385161199, # 2013-11-22 23:59
+       text  => 'Ernststr./Schubertstr.: Bauarbeiten, Sperrung der Fahrbahn, vom 4. November 2013 bis zum 22. November 2013 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
+       data  => <<EOF,
+userdel	q4::inwork 3167,19597 3252,19658 3343,19727 3546,19477
+EOF
+     },
+     { from  => 1383433200, # 2013-11-03 00:00
+       until => 1385420399, # 2013-11-25 23:59
+       text  => 'Sommerstraße: Bauarbeiten zwischen Klemkestraße und Hoppestraße, Fahrbahn gesperrt, vom 4. November 2013 bis ca. zum 25. November 2013 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
+       data  => <<EOF,
+userdel	q4::inwork 8482,18284 8465,18365 8447,18446 8425,18542 8261,18689 8182,18761
+EOF
+     },
+     { from  => 1385247600, # 2013-11-24 00:00
+       until => 1387234799, # 2013-12-16 23:59
+       text  => 'Herbststr.: Bauarbeiten zwischen Provinzstr. und Kamekestr., sowie in der Sommerstr. zwischen Herbststr. und Hoppestr., Fahrbahn gesperrt, ca. vom 25. November 2013 bis zum 16. Dezember 2013 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
+       data  => <<EOF,
+userdel	q4::inwork 8482,18284 8465,18365 8627,18402
+userdel	q4::inwork 8465,18365 8286,18331
 EOF
      },
     );

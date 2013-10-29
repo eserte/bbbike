@@ -108,8 +108,9 @@ Chamissoplatz	N 9596,9092 9617,9185
 Züllichauer Str.	N 10268,8810 10291,8810 10481,8814 10675,8940
 Lilienthalstr.	N 10615,8558 10627,8706 10640,8832 10675,8940 10748,9054 10709,9192 10705,9234 10713,9260
 #: note: ehemaliger Flughafen Tempelhof vvv
-#: XXX der westliche Eingang wird gesperrt, alternativ wird es einen Eingang ggü der Lilienthalstr. geben --- wie wird die genaue Wegführung aussehen?
+#: XXX der westliche Eingang wird gesperrt ("Herbst dieses Jahres"), alternativ wird es einen Eingang ggü der Lilienthalstr. geben --- wie wird die genaue Wegführung aussehen?
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4187
+#: last_checked: 2013-10-27
 #: next_check: 2013-11-30
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10691,8532 10644,8363
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10644,8363 10598,8270 10575,8218
@@ -145,6 +146,7 @@ Lilienthalstr.	N 10615,8558 10627,8706 10640,8832 10675,8940 10748,9054 10709,91
 #: XXX wahrscheinlich wird dieser Weg für den Bau des Wasserbeckens entfernt
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5081.html
 #: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles_neu/Downloads/2013-08_Flyer_Parklandschaft.pdf
+#: last_checked: 2013-10-27
 #: next_check: 2014-01-01
 (Alter Hafen)	NN 10204,7680 10134,7797 10076,8040 10037,8269
 #: note: ^^^
@@ -487,7 +489,7 @@ Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,
 Kynaststr.	N 14805,10518 14832,10512 14843,10621 14882,10732 14906,10820
 #: XXX wann erfolgt der Rückbau der Ersatzstraße?
 #: osm_watch: way id="58929537" version="26"
-#: last_checked: 2013-09-08
+#: last_checked: 2013-10-29
 #: check_frequency: 60d
 Kynaststr. [Ersatzstraße]	NN 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
 (Alt-Stralau - Spreeufer)	NN 14652,10201 14569,10055
@@ -2407,11 +2409,11 @@ Herzbergstr.	NN 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
 (Krankenhaus Herzberge - Landschaftspark Herzberge)	N 17479,13434 17482,13316 17484,13257
 (Krankenhaus Herzberge - Landschaftspark Herzberge)	NN 17484,13257 17487,13198 17490,13133 17489,13125 17498,13015
 #: note: im Landschaftspark Herzberge vvv
-(Radweg nördl. des Krankenhauses Herzberge)	NN 17201,13519 17200,13530 17187,13609 17167,13655 17110,13811 17095,13972 17152,14084 17219,14133 17266,14144
+(Radweg nördl. des Krankenhauses Herzberge)	NN 17201,13519 17200,13530 17187,13609 17167,13655 17111,13792 17098,13969 17117,14036 17152,14084 17196,14120 17236,14140 17266,14144
 #: note: möglicher Name: "Rohrdammweg" (by: http://www.landschaftspark-herzberge.de/uploads/tx_userbildgalerie/Luftbild.jpg)
 (Radweg nördl. des Krankenhauses Herzberge)	NN 17266,14144 18024,13843
 (Herzbergstr. - Siegfriedstr.)	NN 17167,13655 17073,13765 16978,13819 16875,13834
-(Gotlindestr. - Herzbergstr.)	NN 17301,12585 17313,12609 17279,13004 17267,13067 17257,13117
+(Gotlindestr. - Herzbergstr.)	NN 17301,12585 17313,12609 17289,12964 17267,13067 17257,13117
 #: note: (URL existiert nicht mehr) http://www.berlin.de/ba-lichtenberg/presse/archiv/20090504.1220.126942.html
 (Siegfriedstr. - Herzbergstr.)	NN 16865,13000 17048,13000 17113,13025 17170,13070 17227,13075 17257,13117 17219,13430 17201,13510 17201,13519
 (Siegfriedstr. - Herzbergstr.)	NN 17219,13430 17300,13459
@@ -2424,10 +2426,11 @@ Herzbergstr.	NN 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.)	NN 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18094,13505
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert)
 #: XXX evtl. entsteht hier auch eine offizielle Verbindung?
-#: last_checked: 2013-10-14
+#: last_checked: 2013-10-29
 #: check_frequency: 180d
 (Landschaftspark Herzberge - Arendsweg)	NN 17266,14144 17289,14195
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager)	NN 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
+(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge)	NN 17110,14187 17224,14151 17236,14140
 (zum Friedhof)	NN 17906,13141 17923,13134
 Möllendorffstr.	H 15513,13539 15515,13134
 Möllendorffstr.	H 15515,13134 15531,13022 15561,12950 15563,12860 15546,12690
@@ -5138,8 +5141,8 @@ Lückstr.	H 16049,10844 16085,10844 16153,10818 16300,10753 16313,10747 16468,106
 #: XXX eventuell wird dieser Abschnitt auch zur "Rummelsburger Str."
 #: XXX außerdem: mit Bau des Aldi-Marktes auf der westlichen Seite wird vielleicht auch der Gehweg neu gebaut, dann mit Radweg?
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5490
-#: last_checked: 2013-09-25
-#: next_check: 2013-11-22
+#: last_checked: 2013-10-29
+#: next_check: 2013-12-29
 (Zufahrt zum Kaufland)	N 16699,10611 16628,10442
 #: note: offiziell nur Lieferverkehr
 (Zufahrt zum Kaufland)	N 16628,10442 16751,10403
@@ -5150,8 +5153,8 @@ Giselastr.	N 16153,10818 16196,10911 16227,10991 16273,11113 16311,11226 16338,1
 Rupprechtstr.	N 16537,10895 16452,10922 16374,10946 16334,10958 16227,10991 16034,11053
 Emanuelstr.	N 16313,10747 16349,10860 16374,10946
 Rummelsburger Str. (Friedrichsfelde, Rummelsburg)	NH 16699,10611 16735,10668 16892,10731 17081,10806 17166,10840 17228,10860 17258,10870 17466,10941 17560,10973 17621,10994
-Rummelsburger Str. (Friedrichsfelde, Rummelsburg)	H 17621,10994 17679,11052 17719,11092 17834,11192 17848,11204 17876,11217
-Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]	N 17676,10976 17689,11025 17679,11052
+Rummelsburger Str. (Friedrichsfelde, Rummelsburg)	H 17621,10994 17645,11028 17676,11055 17719,11092 17834,11192 17848,11204 17876,11217
+Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]	N 17676,10976 17689,11025 17676,11055
 Sewanstr.	H 16647,10632 16699,10611 16808,10554 16941,10487 17076,10418 17160,10376 17202,10355 17210,10350 17427,10259 17605,10199 17905,10122 17958,10012 17997,9929 18045,9917 18296,10027 18339,10048 18387,10070 18552,10135 18631,10167
 Otto-Schmirgal-Str.	N 18554,10354 18512,10337 18484,10326 18404,10294 18340,10269 18319,10249
 Otto-Schmirgal-Str.	N 18404,10294 18418,10263 18328,10225
@@ -5539,7 +5542,7 @@ Schalkauer Str.	NN 17507,14693 17514,14613 17533,14484
 Schleizer Str.	N 16799,15007 17240,14978 17624,15003
 Arendsweg	N 17221,15181 17230,15083 17240,14978 17236,14882 17239,14719 17242,14664 17247,14581 17254,14451 17262,14384 17274,14280
 (Zufahrt IKEA Lichtenberg)	N 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17335,14167 17289,14195 17274,14280
-(Siegfriedstr. - Autowaschcenter)	N 16871,14230 16965,14235 17111,14184
+(Siegfriedstr. - Autowaschcenter)	N 16871,14230 16965,14235 17110,14187
 (Zufahrt ehem. Einkaufszentrum)	N 16965,14235 17010,14269 17060,14255 17221,14268 17274,14280
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee)	NN 18024,13843 17266,14144
 # REMOVED (Zufahrt nur theoretisch möglich, mit tragen und viel Gestrüpp) --- (Rhinstr. - Arendsweg/Landsberger Allee)	NN 17266,14144 17319,14159 17230,14206 17221,14268
@@ -16518,7 +16521,13 @@ Gemündener Str.	N 11395,18274 11495,18129 11514,18101 11586,18126 11602,18133
 Stuckstr.	N 14439,8987 14525,8894 14619,8794
 Heidenelkenweg	N 16112,12622 16111,12685 16073,12685 16071,12623
 Gotlindestr.	N 15947,12626 16071,12623 16112,12622 16132,12621 16284,12616 16409,12612 16576,12612 16720,12614 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566
-Kriemhildstr.	N 17300,12173 17314,12265 17346,12490 17357,12566
+#: note: Nibelungenpark vvv
+#: note: Privatstraße vvv
+Nibelungenring	N 17320,12308 17365,12301 17442,12292 17454,12348
+Rumoldstr.	N 17366,12357 17454,12348 17474,12344 17526,12336
+#: note ^^^
+#: note ^^^
+Kriemhildstr.	N 17300,12173 17314,12265 17320,12308 17337,12428 17346,12490 17357,12566
 Kriemhildstr. [24-72 gerade]	N 17346,12490 17513,12465
 Hagenstr. (Lichtenberg)	N 16957,12599 16933,12432 16918,12325 16890,12135 16870,11920
 Gernotstr. (Lichtenberg)	N 17115,12296 17092,12107 17088,12069

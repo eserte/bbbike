@@ -49,6 +49,7 @@ Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 14157,934
 # REMOVED --- #: last_checked: 2013-06-04 --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html
+#: source_id: IM_020581
 #: last_checked: 2013-10-15
 #: next_check: 2013-11-30
 #: priority: #A
@@ -251,10 +252,21 @@ Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12
 # 
 # REMOVED (Bauarbeiten sind beendet) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: osm_watch: way id="7543672" version="17" --- #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz --- #: last_checked: 2013-06-24 --- #: check_frequency: 45d --- Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
 # 
-#: last_checked: 2013-10-20
-#: next_check: 2013-11-01
 #: XXX siehe auch qualitaet_s-orig: nach den Bauarbeiten besserer Asphalt?
-Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 15399,12444 15457,12449
+#: last_checked: 2013-10-29 vvv
+#: next_check: 2013-11-29 vvv
+#: priority: #A vvv
+Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 15399,12444 15457,12449 15535,12420
+Am Stadtpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15457,12449 15454,12519
+#: priority ^^^
+#: next_check ^^^
+#: last_checked ^^^
+# 
+#: last_checked: 2013-10-29
+#: next_check: 2013-12-15 (laut Schild bis Dezember 2013)
+#: priority: #A
+Kriemhildstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 17337,12428 17320,12308
+# 
 ### Hohenschönhausen ###
 # 
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197

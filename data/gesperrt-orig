@@ -1120,7 +1120,7 @@ Benkertstr.	1 -12677,-823 -12697,-729 -12719,-630
 Hans-Thoma-Str.	1 -12219,-726 -12223,-713 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Hebbelstr.	1 -12621,-359 -12571,-581
-Potsdamer Damm	2 -5736,-3629 -6119,-3907 -6426,-4014
+Potsdamer Damm	2 -5324,-3716 -5490,-3666 -5722,-3669 -6119,-3907 -6426,-4014
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 Spornstr.	1 -13220,-1416 -13350,-1403
@@ -1278,9 +1278,8 @@ Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
-#: next_check: 2013-10-30
-#: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
-Niemannstr.	1s:q4 14254,11377 14211,11229
+# REMOVED --- #: next_check: 2013-10-30 --- #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
+Niemannstr.	1s:q3 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
 Ibsenstr.	1s:q1 10295,16667 10209,16674
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
@@ -2445,6 +2444,10 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: last_checked: 2013-10-29
+#: next_check: 2014-03-29
+Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17366,12357
 # 
 #: last_checked: 2013-10-20
 #: next_check: 2014-02-14

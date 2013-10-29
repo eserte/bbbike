@@ -2782,18 +2782,7 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130910.1105.389039.html',
-         'until' => 1382738399,
-         'text' => 'Maximilankorso: Bauarbeiten zwischen Sigismundkorso und Alemannenstraße, teilweise mit Vollsperrungen, Benediktinerstr. und Artuswall werden zu Einbahnstraßen, vom 16. September 2013 bis zum 25. Oktober 2013',
-         'from' => 1379196000,
-         'id' => 2488,
-         'data' => 'userdel	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25251 1513,25253 1576,25249 1738,25243
-# REMOVED --- #: XXX Einbahnstraßenrichtung ist geraten
-	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Weg im Cheruskerpark: Bauarbeiten, Durchfahrt nicht möglich',
@@ -2843,16 +2832,7 @@ userdel	q4::inwork 7001,8161 7250,8223
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1383238800,
-         'text' => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), bis Ende Oktober 2013',
-         'from' => undef,
-         'id' => 2495,
-         'data' => 'userdel	q3::inwork; 14134,11272 14181,11434
-# REMOVED (since 2013-10-22) --- userdel	q2::inwork; 14181,11434 14211,11552
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131010.1450.390218.html',
@@ -2867,8 +2847,8 @@ userdel	q4::inwork 7001,8161 7250,8223
        undef,
        {
          'source_id' => 'IM_020486',
-         'until' => 1384185600,
-         'text' => 'Rosenthaler Str. (Mitte): Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Linienstr. und Weinmeisterstr., 14.10.2013 bis 11.11.2013 ',
+         'until' => 1384704000,
+         'text' => 'Rosenthaler Str. (Mitte): Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Linienstr. und Weinmeisterstr., 14.10.2013 bis 17.11.2013 ',
          'from' => 1381633200,
          'id' => 2499,
          'data' => '#: by: http://www.bvg.de/index.php/de/56927/name/fahrinfo+Update+-+was+ist+neu%3F.html (Enddatum)
@@ -2920,7 +2900,7 @@ userdel	q3::inwork 11758,16111 11684,15997 11859,16058
        },
        {
          'source_id' => 'IM_020548',
-         'until' => 1383055200,
+         'until' => 1383228000,
          'text' => 'Augustastr. (Steglitz): Baustelle, Fahrbahn zwischen Augustaplatz und Moltkestr. bis Ende Oktober 2013 gesperrt ',
          'from' => 1382507820,
          'id' => 2504,
@@ -2928,15 +2908,37 @@ userdel	q3::inwork 11758,16111 11684,15997 11859,16058
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'source_id' => 'IM_020557',
-         'until' => 1382824740,
-         'text' => 'Oranienburger Chaussee (Frohnau) zwischen Schwarzkittelweg und Landesgrenze gesperrt, von 25.10.2013 17 Uhr bis 26.10.2013 Mitternacht',
-         'from' => 1382626800,
-         'id' => 2505,
-         'data' => 'userdel	2::inwork 2178,28067 2345,27670 2666,27009 2842,26710
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
+         'until' => 1385161199,
+         'text' => 'Ernststr./Schubertstr.: Bauarbeiten, Sperrung der Fahrbahn, vom 4. November 2013 bis zum 22. November 2013 ',
+         'from' => 1383433200,
+         'id' => 2506,
+         'data' => 'userdel	q4::inwork 3167,19597 3252,19658 3343,19727 3546,19477
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
+         'until' => 1385420399,
+         'text' => 'Sommerstraße: Bauarbeiten zwischen Klemkestraße und Hoppestraße, Fahrbahn gesperrt, vom 4. November 2013 bis ca. zum 25. November 2013 ',
+         'from' => 1383433200,
+         'id' => 2507,
+         'data' => 'userdel	q4::inwork 8482,18284 8465,18365 8447,18446 8425,18542 8261,18689 8182,18761
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
+         'until' => 1387234799,
+         'text' => 'Herbststr.: Bauarbeiten zwischen Provinzstr. und Kamekestr., sowie in der Sommerstr. zwischen Herbststr. und Hoppestr., Fahrbahn gesperrt, ca. vom 25. November 2013 bis zum 16. Dezember 2013 ',
+         'from' => 1385247600,
+         'id' => 2508,
+         'data' => 'userdel	q4::inwork 8482,18284 8465,18365 8627,18402
+userdel	q4::inwork 8465,18365 8286,18331
+',
+         'type' => 'handicap'
        }
      
 );
