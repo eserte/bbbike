@@ -120,9 +120,6 @@ __END__
   directory, e.g. ~/.bbbike/data-osm.
   -> need a function which determines the install type.
      Does something like this exist already?
-* How bbbike-chooser.pl and bbbike.org-download.pl should interact?
-  Probably this should be a proper module. Name? BBBikeOrgDownload? Or
-  BBBikeOrg::Download?
 * tar bzip2 under Windows
   Probably done with a module. Is it already in Strawberry?
   -> Archive::Tar & ...::Bzip is available, just try it out
