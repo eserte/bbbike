@@ -11,7 +11,7 @@ use utf8;
 use FindBin;
 use lib "$FindBin::RealBin/..";
 
-use Cwd qw(realpath);
+use Cwd qw(realpath cwd);
 use File::Basename qw(dirname);
 
 BEGIN {
@@ -138,5 +138,26 @@ is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for b
 	is_deeply \@res, \@test_with_polish, 'sort_german (with some Polish characters)';
     }
 }
+
+{
+    my $pre_cwd = cwd();
+    BBBikeUtil::save_pwd
+	    (sub {
+		 chdir "/";
+	     });
+    my $post_cwd = cwd();
+    is $post_cwd, $pre_cwd, "cwd restored (save_pwd operation)";
+}
+
+{
+    my $pre_cwd = cwd();
+    {
+	my $save_pwd = BBBikeUtil::save_pwd2();
+	chdir "/";
+    }
+    my $post_cwd = cwd();
+    is $post_cwd, $pre_cwd, "cwd restored (save_pwd2 operation)";
+}
+
 
 __END__

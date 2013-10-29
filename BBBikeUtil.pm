@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.33;
+$VERSION = 1.34;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -28,7 +28,7 @@ require Exporter;
 	     kmh2ms
 	     STAT_MODTIME);
 @EXPORT_OK = qw(min max first sum ms2kmh clone bbbike_root
-		s2hms s2hm_or_s save_pwd);
+		s2hms s2hm_or_s save_pwd save_pwd2);
 
 use constant STAT_MODTIME => 9;
 
@@ -404,6 +404,20 @@ sub save_pwd (&) {
     die $err if $err;
 }
 # REPO END
+
+{
+    package BBBikeUtil::SavePwd2;
+    sub new {
+	require Cwd;
+	bless { cwd => Cwd::cwd() }, shift;
+    }
+    sub DESTROY {
+	my $self = shift;
+	chdir $self->{cwd}
+	    or die "Can't chdir to $self->{cwd}: $!";
+    }
+}
+sub save_pwd2 { BBBikeUtil::SavePwd2->new }
 
 1;
 
