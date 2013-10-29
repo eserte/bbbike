@@ -68,7 +68,7 @@ SKIP: {
 	my(undef, $gpxfile) = tempfile(UNLINK => 1,
 				       SUFFIX => ".gpx");
 	$gpsb->strassen_to_gpsbabel($s, "gpx", $gpxfile, as => "track");
-	gpxlint_file($gpxfile, "track gpx file converted from strassen using gpsbabel", schema_version => "1.0");
+	gpxlint_file($gpxfile, "track gpx file converted from strassen using gpsbabel");
 	unlink $gpxfile unless $keep;
     }
 
@@ -76,7 +76,7 @@ SKIP: {
 	my(undef, $gpxfile) = tempfile(UNLINK => 1,
 				       SUFFIX => ".gpx");
 	$gpsb->strassen_to_gpsbabel($s, "gpx", $gpxfile, as => "route");
-	gpxlint_file($gpxfile, "route gpx file converted from strassen using gpsbabel", schema_version => "1.0");
+	gpxlint_file($gpxfile, "route gpx file converted from strassen using gpsbabel");
 	unlink $gpxfile unless $keep;
     }
 
