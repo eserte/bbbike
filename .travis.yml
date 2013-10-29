@@ -7,7 +7,12 @@ before_install:
 # - agrep:                  needed as String::Approx alternative
 # - libgd2-xpm-dev:         prerequisite for GD
 # - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
- - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel
+# - xvfb + twm:             some optional tests require an X server
+ - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb twm
+ - Xvfb :123 &
+ - (sleep 10; env DISPLAY=:123 twm) &
+env:
+ - DISPLAY=:123
 language: perl
 perl:
   - "5.18"
