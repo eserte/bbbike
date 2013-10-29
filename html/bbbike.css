@@ -226,3 +226,14 @@ span.tagcloud7 { font-size: 14px; }
 span.tagcloud8 { font-size: 15px; }
 span.tagcloud9 { font-size: 16px; }
 span.tagcloud10 { font-size: 17px; }
+
+table.footer {
+    padding-top: 5px;
+    margin-left: auto; margin-right: auto; /* center */
+    background-color: #ffcc66;
+}
+
+table.footer td {
+    text-align: center;
+    vertical-align: top;
+}

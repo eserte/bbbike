@@ -839,7 +839,7 @@ $nice_berlinmap = 0;
 $nice_abcmap    = 0;
 
 $bbbike_start_js_version = '1.24';
-$bbbike_css_version = '1.01';
+$bbbike_css_version = '1.02';
 
 use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
 @b_and_p_plz_multi_files = 
@@ -1186,6 +1186,8 @@ if ($q->param('startc') && $q->param('scvf') && $q->param('scvf') ne $q->param('
 }
 
 if (defined $q->param('begin')) {
+    # The begin=1 parameter was introduced for buggy ancient browsers
+    # (Netscape3, Solaris2?)
     $q->delete('begin');
     choose_form();
 } elsif (defined $q->param('info') || $q->path_info eq '/_info') {
@@ -6878,45 +6880,35 @@ sub footer { print footer_as_string() }
 
 sub footer_as_string {
     my $s = "";
-# ?begin anscheinend notwendig (Bug in Netscape3, Solaris2?)
-    my $smallformstr = ($q->param('smallform')
-			? '&smallform=' . $q->param('smallform')
-			: '');
-    $s .= qq{<center } . (!$bi->{'css_buggy'} ? qq{style="padding-top:5px;" } : "") . qq{><table };
-    if (1 || !$bi->{'can_css'}) { # XXX siehe oben Kommentar am Anfang von "sub search_*" bzgl. css
-	$s .= "bgcolor=\"#ffcc66\" ";
-    }
-    $s .= "cellpadding=3>\n";
+    my $smallformstr = ($q->param('smallform') ? '&smallform=' . $q->param('smallform') : '');
     $s .= <<EOF;
-<tr>
-<td align=center>bbbike.cgi $VERSION</td>
+<table class="footer" cellpadding="3">
+ <tr>
+  <td>bbbike.cgi $VERSION</td>
 EOF
     if (!$is_m) {
 	$s .= <<EOF;
-<td align=center> <a target="_top" href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike">@{[ M("E-Mail") ]}</a></td>
+  <td><a target="_top" href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike">@{[ M("E-Mail") ]}</a></td>
 EOF
     }
     $s .= <<EOF;
-<td align=center><a target="_top" href="$bbbike_script?begin=1$smallformstr">@{[ M("Neue Anfrage") ]}</a></td>
-<td align=center><a target="_top" href="$bbbike_script?info=1$smallformstr">@{[ M("Kontakt, Info &amp; Disclaimer") ]}</a></td>
+  <td><a target="_top" href="$bbbike_script?begin=1$smallformstr">@{[ M("Neue Anfrage") ]}</a></td>
+  <td><a target="_top" href="$bbbike_script?info=1$smallformstr">@{[ M("Kontakt, Info &amp; Disclaimer") ]}</a></td>
 EOF
     if (!$is_m) {
-	$s .= "<td align=center>";
-	$s .= complete_link_to_einstellungen();
-	$s .= "</td>\n";
+	$s .= "  <td>" . complete_link_to_einstellungen() . "</td>\n";
 	if ($can_mapserver) {
-	    $s .= "<td><a href=\"$bbbike_script?mapserver=1\">Mapserver</a></td>";
+	    $s .= "  <td><a href=\"$bbbike_script?mapserver=1\">Mapserver</a></td>\n";
 	} elsif (defined $mapserver_init_url) {
-	    $s .= "<td><a href=\"$mapserver_init_url\">Mapserver</a></td>";
+	    $s .= "  <td><a href=\"$mapserver_init_url\">Mapserver</a></td>\n";
 	}
 	if ($can_google_maps) {
-	    $s .= qq{<td><a href="@{[ _bbbikegooglemap_url() ]}?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>};
+	    $s .= qq{  <td><a href="@{[ _bbbikegooglemap_url() ]}?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>\n};
 	}
     }
     $s .= <<EOF;
-</tr>
+ </tr>
 </table>
-</center>
 EOF
     $s;
 }
