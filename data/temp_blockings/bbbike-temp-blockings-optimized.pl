@@ -2898,7 +2898,16 @@ userdel	q3::inwork 11758,16111 11684,15997 11859,16058
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'IM_020548',
+         'until' => 1383314400,
+         'text' => 'Augustastr. (Steglitz): Baustelle, Fahrbahn zwischen Augustaplatz und Moltkestr. bis Anfang November 2013 gesperrt ',
+         'from' => 1382507820,
+         'id' => 2504,
+         'data' => 'userdel	q4::inwork 4045,4005 4234,4020
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',

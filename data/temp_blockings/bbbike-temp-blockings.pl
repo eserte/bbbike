@@ -2219,7 +2219,7 @@ EOF
        text  => 'B 168; (Lieberose-Friedland); zw. Lieberose und Abzw. Mochlitz Straßenbauarbeiten Vollsperrung 23.06.2005-07.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 73201,-43677 72887,-44704
+userdel	2 73168,-43677 73171,-43858 73026,-44211 72878,-44534
 EOF
      },
      { from  => 1119132000, # 2005-06-19 00:00
@@ -2406,7 +2406,7 @@ EOF
        text  => 'B 168; zw. Abzw. Mochlitz und LG in Ri. Friedland Straßenbauarbeiten Vollsperrung 30.07.2005-30.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 72781,-41234 71792,-39389
+userdel	2 72751,-41195 71779,-39357
 EOF
      },
      { from  => 1122501600, # 2005-07-28 00:00
@@ -2463,7 +2463,7 @@ EOF
        text  => 'B 112; (Kupferhammerstr.); Bahnübergang in OL Guben Gleisinstandhaltungsarb. Vollsperrung 20.07.2005-23.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 99825,-46697 99765,-46542 99702,-46376
+userdel	2 99825,-46697 99765,-46542 99770,-46280
 EOF
      },
      { from  => 1152309600, # 2006-07-08 00:00
@@ -2471,7 +2471,7 @@ EOF
        text  => 'B 112 OL Guben, Bahnübergang OL Guben, Bahnübergang zw. OT Gr. Breesen u. Bresinchen Arbeiten Deutsche Bahn Vollsperrung 09.07.2006-09.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 99245,-43974 99228,-44346
+userdel	2 99245,-43974 99190,-44226 99205,-44314 99223,-44380
 EOF
      },
      { from  => 1121892756, # 2005-07-20 22:52
@@ -2555,7 +2555,7 @@ EOF
        text  => 'B 112; (OU Neuzelle-OU Guben); Ber. Steinsdorf Vorwerk Bau Oder-Lausitz-Trasse Vollsperrung 29.08.2005-30.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 98777,-43381 98337,-41604
+userdel	2 98769,-43414 98337,-41604
 EOF
      },
      { from  => 1123103274, # 2005-08-03 23:07
@@ -3456,8 +3456,8 @@ EOF
        text  => 'K 6950 Gohlitzstr. OL Lehnin, zw. Belziger Str. u. Lindenstr. Straßenbau; Herst.Umleit.stre. Vollsperrung 11.10.2005-31.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -34655,-11263 -34337,-11047
-userdel	q4 -34232,-10832 -34337,-11047
+userdel	q4 -34752,-11288 -34324,-11007
+userdel	q4 -34232,-10832 -34324,-11007
 EOF
      },
      { from  => 1131836400, # 2005-11-13 00:00
@@ -3632,7 +3632,7 @@ EOF
        text  => 'L 088 Bahnhofstr. OD Lehnin, Höhe Marktplatz Umgestaltung Marktplatz Vollsperrung 16.01.2006-17.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -34063,-10552 -34488,-10578
+userdel	q4 -33986,-10466 -34009,-10453 -34112,-10516 -34429,-10543 -34492,-10500
 EOF
      },
      { from  => undef, # 
@@ -5659,7 +5659,7 @@ EOF
        text  => 'B 112 Guben, OT Bresinchen Guben, OT Bresinchen, Bahnübergang Gleisbauarbeiten Vollsperrung 26.08.2006-27.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 99176,-43536 99245,-43974 99228,-44346
+userdel	2::inwork 99267,-43580 99311,-43692 99245,-43974 99190,-44226 99205,-44314 99223,-44380
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -8674,7 +8674,7 @@ EOF
        text  => 'B 112 Guben-Eisenhüttenstadt Bahnübergang bei Groß Breesen Gleisbauarbeiten Vollsperrung 20.06.2007-21.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 99176,-43536 99245,-43974 99228,-44346
+userdel	2::inwork 99267,-43580 99311,-43692 99245,-43974 99190,-44226 99205,-44314 99223,-44380
 EOF
      },
      { from  => 1181768451, # 2007-06-13 23:00
@@ -9103,7 +9103,7 @@ EOF
        text  => 'B 246 Ernst-Thälmann-Str. OL Belzig, Höhe Gymnasium Kanalarbeiten Vollsperrung 19.07.2007-19.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -44441,-30214 -44189,-30306
+userdel	q4::inwork -44481,-30188 -44189,-30306
 EOF
      },
      { from  => 1184222221, # 2007-07-12 08:37
@@ -9381,7 +9381,7 @@ EOF
        text  => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung halbseitig gesperrt; Einbahnstraße 01.08.2007-09.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 73977,-74037 73211,-74836 72657,-75488
+userdel	1::inwork 73892,-73968 73133,-74760 72657,-75488
 EOF
      },
      { from  => 1186869600, # 2007-08-12 00:00
@@ -9389,7 +9389,7 @@ EOF
        text  => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung halbseitig gesperrt; Einbahnstraße 13.08.2007-16.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 73977,-74037 73211,-74836 72657,-75488
+userdel	1::inwork 73892,-73968 73133,-74760 72657,-75488
 EOF
      },
      { from  => 1186264800, # 2007-08-05 00:00
@@ -9540,7 +9540,7 @@ EOF
        text  => 'B 169 zw. Cottbus und Klein Gaglow Deckenerneuerung Vollsperrung 10.08.2007-12.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 72657,-75488 73211,-74836 73977,-74037
+userdel	2::inwork 72657,-75488 73133,-74760 73892,-73968
 EOF
      },
      { from  => 1186819867, # 2007-08-11 10:11
@@ -10835,7 +10835,7 @@ EOF
        text  => 'L 085 Brück-Golzow zw. OA Golzow und OE Cammer Straßenbau Vollsperrung 19.12.2007-21.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -42483,-15134 -41439,-15493 -41352,-15664 -39523,-16953
+userdel	2::inwork -42591,-15106 -41553,-15466 -41188,-15843 -39570,-16890
 EOF
      },
      { from  => 1198328869, # 2007-12-22 14:07
@@ -10879,7 +10879,7 @@ EOF
        text  => 'B 246 Beelitz - Brück Bahnübergang Brück-Ausbau Gleisbauarbeiten Vollsperrung 17.01.2008-18.01.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -29244,-23127 -30149,-22937 -30811,-22899
+userdel	2::inwork -29203,-23058 -30149,-22937 -30806,-22850
 EOF
      },
      { from  => undef, # 
@@ -10972,7 +10972,7 @@ EOF
        text  => 'B 246 Beelitz - Brück Bahnübergang Brück-Ausbau Gleisbauarbeiten Vollsperrung 21.02.2008-22.02.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -30811,-22899 -30149,-22937 -29244,-23127
+userdel	2::inwork -30806,-22850 -30149,-22937 -29203,-23058
 EOF
      },
      { from  => 1203202800, # 2008-02-17 00:00
@@ -11357,7 +11357,7 @@ EOF
        text  => 'L 086 Golzow - Damsdorf OD Lehnin Fläming-Frühlingsfest Vollsperrung 27.04.2008-27.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp -34063,-10552 -33914,-10466 -33873,-10337
+userdel	q4::temp -33986,-10466 -33923,-10395 -33897,-10328 -33761,-10213
 EOF
      },
      { from  => 1209160800, # 2008-04-26 00:00
@@ -11365,7 +11365,7 @@ EOF
        text  => 'L 088 Emstal - Netzen OD Lehnin Fläming-Frühlingsfest Vollsperrung 27.04.2008-27.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp -34063,-10552 -34488,-10578
+userdel	q4::temp -33986,-10466 -34009,-10453 -34112,-10516 -34429,-10543 -34492,-10500
 EOF
      },
      { from  => 1208546772, # 2008-04-18 21:26
@@ -12285,7 +12285,7 @@ EOF
        text  => 'B 168 OD Peitz, zw. Kreisverkehr und Spreewaldstr. 55. Fischerfest Vollsperrung 10.08.2008-10.08.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 80426,-59644 80046,-59594
+userdel	q4::temp 80384,-59655 80215,-59539 80067,-59547 79760,-59436
 EOF
      },
      { from  => 1218319200, # 2008-08-10 00:00
@@ -12677,7 +12677,7 @@ EOF
        text  => 'L 050 Gubener Str. OD Peitz, zw. Malxebogen und A.-Bebel-Str. Instandsetz.Durchlass, Entwä. Vollsperrung 15.09.2008-30.10.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 80426,-59644 80719,-59219
+userdel	q4::inwork 80384,-59655 80718,-59070
 EOF
      },
      { from  => 1221681660, # 2008-09-17 22:01
@@ -13100,7 +13100,7 @@ EOF
        text  => 'L 088 Bahnhofstr. OD Lehnin, zw. Friedensstr. und Kreisverkehr Gehwegbau halbseitig gesperrt; Einbahnstraße 20.10.2008-19.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -34488,-10578 -34063,-10552
+userdel	q4::inwork -34492,-10500 -34429,-10543 -34112,-10516 -34009,-10453 -33986,-10466
 EOF
      },
      { from  => 1224367200, # 2008-10-19 00:00
@@ -13583,7 +13583,7 @@ EOF
        text  => 'L 086 Belziger Straße OD Lehnin Kreuzungsbereich Gohlitzstraße Straßenbau Vollsperrung 23.03.2009-31.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -34655,-11263 -34337,-11047
+userdel	q4::inwork -34752,-11288 -34324,-11007
 EOF
      },
      { from  => 1224540000, # 2008-10-21 00:00
@@ -16503,7 +16503,7 @@ EOF
        text  => 'B 166 zw. Heinersdorf und Abzw. Passow Deckenerneuerung Vollsperrung 12.10.2009-30.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 64624,77291 61819,80513 61420,80705 60511,80745 60070,81164 59018,81801 58771,82019
+userdel	2::inwork 64624,77291 61819,80513 61420,80705 60923,80665 60511,80745 60070,81164 59018,81801 58771,82019
 EOF
      },
      { from  => 1254607200, # 2009-10-04 00:00
@@ -22011,8 +22011,8 @@ userdel	q3::inwork 11758,16111 11684,15997 11859,16058
 EOF
      },
      { from  => 1382507820, # 2013-10-23 07:57
-       until => 1383228000, # 2013-10-31 15:00
-       text  => 'Augustastr. (Steglitz): Baustelle, Fahrbahn zwischen Augustaplatz und Moltkestr. bis Ende Oktober 2013 gesperrt ',
+       until => 1383314400, # 2013-11-01 15:00
+       text  => 'Augustastr. (Steglitz): Baustelle, Fahrbahn zwischen Augustaplatz und Moltkestr. bis Anfang November 2013 gesperrt ',
        type  => 'handicap',
        source_id => 'IM_020548',
        data  => <<EOF,

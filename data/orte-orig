@@ -35,7 +35,8 @@ Stüdenitz	2 -66831,52431
 Nitzow	2 -82250,50568
 #: alias: Brandenburg an der Havel
 Brandenburg	5 -46517,-691
-Belzig	3 -44189,-30306
+#: alias: Belzig
+Bad Belzig	3 -44189,-30306
 Neuruppin	4 -30969,56746
 Alt Ruppin	3 -28477,59467
 Fehrbellin	3 -33927,44655
@@ -90,7 +91,7 @@ Altlandsberg	3 32293,18093
 Beeskow	3 68467,-25032
 Niewisch	1 67356,-35639
 Pieskow|(am Schwielochsee)	1 67823,-37818
-Klein-Muckrow	1 80718,-38828
+Klein-Muckrow	1 80667,-38759
 Groß-Muckrow	1 81401,-36545
 Trebitz|(bei Lieberose)	1 74237,-39744
 Schadow	1 70459,-39199
@@ -149,10 +150,10 @@ Zechow	0 -24687,71412
 Kramnitz	0 -21237,64885
 #: alias: Baruth/Mark
 Baruth	3 18138,-39957
-Brück	3 -32505,-24207
-Lieberose	3 72499,-45463
+Brück	3 -32506,-24024
+Lieberose	3 72546,-45349
 Cottbus	5 74971,-71085
-Peitz	3 80426,-59644
+Peitz	3 80384,-59655
 Burg|/Spreewald	2 62522,-62647
 Straupitz	2 60493,-54009
 Leipe	1 55335,-60336
@@ -721,7 +722,7 @@ Hohenferchesar	1 -50863,8908
 Göttin	1 -47391,-5298
 Schmerzke	1 -44824,-2740
 Rietz	1 -41302,-4550
-Prützke	1 -42050,-6999
+Prützke	1 -41976,-6972
 Schenkenberg	1 -36473,-2788
 Trechwitz	1 -36008,-5363
 Damsdorf	2 -33837,-5725
@@ -987,9 +988,9 @@ Fredersdorf Süd	0 34139,13113
 Krausnick	1 40863,-40904
 Petkamsberg	0 43695,-43899
 Kietz|(Beeskow)	0 69306,-25497
-Friedland	2 69851,-32733
+Friedland	2 69850,-32667
 Neuendorf|b. Willmersdorf	1 81217,-65010
-Willmersdorf|b. Cottbus	1 78761,-65071
+Willmersdorf|b. Cottbus	1 78707,-65002
 Branitz	0 77730,-73107
 Werben|(Spreewald)	2 65155,-65147
 Kolonie Briese	0 2877,33228
@@ -1017,16 +1018,16 @@ Neuschmerzke	0 -44044,-1860
 Reckahn	1 -47539,-8760
 Krahne	1 -46286,-10542
 Grüneiche	0 -44942,-12835
-Ragösen	2 -44886,-19405
-Golzow	3 -43225,-15267
-Bullenberg	0 -46082,-18944
+Ragösen	2 -44886,-19315
+Golzow	3 -43404,-15242
+Bullenberg	0 -45942,-18963
 Gollwitz	1 -40923,806
 Wust	1 -43470,-62
-Grebs	1 -39784,-8319
-Pernitz	0 -43588,-14061
+Grebs	1 -39790,-8332
+Pernitz	0 -43645,-13973
 Oberjünne	1 -40998,-14913
-Cammer	2 -39606,-17211
-Dippmannsdorf	1 -43760,-21549
+Cammer	2 -39687,-17144
+Dippmannsdorf	1 -43787,-21612
 Lütte	1 -43080,-23895
 Fredersdorf	1 -40948,-25033
 Schwanebeck|b. Belzig	1 -41656,-26516
@@ -1037,18 +1038,18 @@ Jeserig	1 -37663,-163
 Netzen	1 -38121,-8062
 Nahmitz	1 -35328,-8424
 Michelsdorf	1 -37095,-11620
-Damelang	1 -37208,-18666
+Damelang	1 -37233,-18632
 Theerofen	0 -36593,-18556
-Freienthal	1 -35856,-20560
+Freienthal	1 -35799,-20519
 Baitz	1 -38257,-26854
 Trebitz|(bei Brück)	0 -34505,-26761
 Gömnigk	0 -34264,-27232
 Neschholz	1 -36773,-29280
 Neu Bochow	0 -32698,-3925
-Lehnin	2 -33914,-10466
+Lehnin	2 -33923,-10395
 Emstal	1 -31776,-12438
 Rädel	1 -33397,-14236
-Hackenhausen	0 -33392,-22119
+Hackenhausen	0 -33429,-22047
 Rottstock	0 -33464,-26393
 Linthe	1 -30746,-28772
 Kemnitz|b. Derwitz	1 -25815,-298
@@ -1062,7 +1063,7 @@ Klaistow	0 -26509,-13787
 Fichtenwalde	2 -24298,-14066
 Borkwalde	1 -28163,-17495
 Borkheide	1 -26240,-20161
-Neuendorf|b. Brück	1 -28374,-23594
+Neuendorf|b. Brück	1 -28346,-23538
 Alt Bork	1 -25247,-24864
 Deutsch Bork	1 -26120,-27384
 Schlalach	1 -26848,-29675
@@ -1201,7 +1202,7 @@ Kobbeln	1 90062,-33160
 Chossewitz	1 81230,-33882
 Bahro	1 90072,-37342
 Pinnow|bei Guben	1 88590,-46225
-Tauer	1 83231,-55423
+Tauer	1 83142,-55423
 Jänschwalde	2 86337,-59181
 Groß Drewitz	1 92158,-43132
 Steinsdorf	1 98074,-40791
