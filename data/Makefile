@@ -357,7 +357,7 @@ landstrassen: landstrassen-orig plaetze
 
 landstrassen2: landstrassen2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -keep-directive alias landstrassen2-orig > $@~
+	$(CONVERT_ORIG) -keep-directive alias -unutf8ify landstrassen2-orig > $@~
 	mv $@~ $@
 	-rm -f landstrassen2-cooked
 	-@$(READONLY) $@
