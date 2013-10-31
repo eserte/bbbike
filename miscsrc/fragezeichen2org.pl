@@ -478,6 +478,15 @@ sub _get_dist {
 	return $min_dist;
     }
 
+    if (!$min_p) {
+	# May happen if all points for this street are inaccessible (a
+	# rare case in bbbike data). So we cannot do a real search. In
+	# this case, just choose the first one for as-the-bird-flies
+	# distance, and multiply with a factor (1.5), so distance is
+	# not too low.
+	return Strassen::Util::strecke_s($p1, $p2s->[0]) * 1.5;
+    }
+
     # $min_p is only an approximation for the nearest point from $p1
     my $dist_db = _get_distdb();
     my $dist = eval { $dist_db->get_dist($p1, $min_p) };
