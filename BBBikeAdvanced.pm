@@ -1406,6 +1406,11 @@ EOF
 		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
 		    push @coords, [$x, $y];
 		}
+
+		# copied from Gallery 2 Photo Properties
+		if ($s =~ m{GPS: \s+ Latitude \s+ (\d+.\d+) \s .* GPS: \s+ Longitude \s+ (\d+.\d+)}xs) {
+		    push @coords, [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($2, $1))];
+		}
 	    }
 	    last if (@coords); # otherwise try the other selection type
 	}
