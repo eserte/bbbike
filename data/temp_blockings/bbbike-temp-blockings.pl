@@ -21195,7 +21195,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-09-27
+#: last_checked: 2013-10-31
 #: check_frequency: 60d
 userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904 12870,8087
 EOF

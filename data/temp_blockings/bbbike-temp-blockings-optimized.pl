@@ -2570,7 +2570,7 @@ userdel	q2::inwork 5258,11285 5236,10994
          'from' => undef,
          'id' => 2425,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-09-27
+#: last_checked: 2013-10-31
 #: check_frequency: 60d
 userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904 12870,8087
 ',
@@ -2898,16 +2898,7 @@ userdel	q3::inwork 11758,16111 11684,15997 11859,16058
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_020548',
-         'until' => 1383228000,
-         'text' => 'Augustastr. (Steglitz): Baustelle, Fahrbahn zwischen Augustaplatz und Moltkestr. bis Ende Oktober 2013 gesperrt ',
-         'from' => 1382507820,
-         'id' => 2504,
-         'data' => 'userdel	q4::inwork 4045,4005 4234,4020
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',

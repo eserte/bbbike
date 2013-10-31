@@ -196,12 +196,12 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: XXX Baumaßnahme 8.20 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-10-21 (Richtung Süden teilweise realisiert)
-#: next_check: 2013-11-01
+#: last_checked: 2013-10-31 (Richtung Süden teilweise realisiert)
+#: next_check: 2013-11-14
 Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
-#: last_checked: 2013-09-27
+#: last_checked: 2013-10-31
 #: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
@@ -211,7 +211,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
-#: last_checked: 2013-10-23 (westlicher Abschnitt)
+#: last_checked: 2013-10-31
 #: check_frequency: 90d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13600,5240 13594,5240 13323,5222 13248,5221 13112,5253 13046,5267
 # 
@@ -598,7 +598,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
-#: last_checked: 2013-10-21
+#: last_checked: 2013-10-31
 #: check_frequency: 60d
 #: priority: #C
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13860,8599 13898,8613
@@ -904,17 +904,17 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010): danach hat der Weg eine neue wassergebundene Decke	?::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
 # 
 #: osm_watch: way id="180800504" version="1"
-#: last_checked: 2013-08-19
-#: check_frequency: 90d
+#: last_checked: 2013-10-31
+#: check_frequency: 60d
 Wilhelm-Hoff-Str.: Qualität	?::inwork 18833,3191 18892,3256 18953,3318 19047,3412 19125,3491
 # 
 #: osm_watch: way id="180789857" version="1"
 #: last_checked: 2013-06-09
-#: next_check: 2013-11-15 (synchronize with Wilhelm-Hoff-Str.)
+#: next_check: 2013-12-31 (synchronize with Wilhelm-Hoff-Str.)
 Verlängerung der Katharina-Boll-Dornberger-Str.: Qualität? Straßenname?	?::inwork 19167,3287 19047,3412
 # 
 #: osm_watch: way id="142575677" version="3"
-#: last_checked: 2013-08-19
+#: last_checked: 2013-10-31
 #: next_check: 2013-12-15
 Verlängerung der Hans-Schmidt-Str.: Qualität?	?::inwork 19581,3495 19667,3581
 # 
@@ -925,13 +925,13 @@ Verlängerung der Hans-Schmidt-Str.: Qualität?	?::inwork 19581,3495 19667,3581
 Verlängerung der Wagner-Régeny-Str., Igo-Etrich-Str.: Qualität? Wo beginnt und verläuft die Igo-Etrich-Str.?	?::inwork 19363,3730 19155,3936
 # 
 #: osm_watch: way id="117951616" version="3"
-#: last_checked: 2013-08-19
-#: check_frequency: 90d
+#: last_checked: 2013-10-31
+#: check_frequency: 60d
 Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18928,3701 19155,3936
 # 
 #: osm_watch: way id="224731112" version="2"
 #: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben
-#: last_checked: 2013-08-19
+#: last_checked: 2013-10-31
 #: next_check: 2014-12-01
 Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18771,3871 18701,3806 18520,3812 18229,4127 18392,4279
 # REMOVED --- #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/ --- #: by: (URL existiert nicht mehr) http://www.potsdam.de/cms/beitrag/10058808/757395/ --- #: XXX wo wird die Verbindung genau entlanggeführt? --- Neuer Garten (Potsdam): neue Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12263,-403 -12262,-362 -12328,-212 -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
@@ -953,7 +953,7 @@ Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::inwork 5236,10994 5230,1
 # REMOVED (realisiert) --- Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5215,10711 5207,10399
 # 
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
-#: last_checked: 2013-10-21
+#: last_checked: 2013-10-31
 #: check_frequency: 120d
 Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337
 # 
@@ -1350,12 +1350,12 @@ Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage
 # REMOVED (Bauarbeiten) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphaltierung) --- Emser Str.: Straßenbauarbeiten?	? 12872,7134 13058,7165
 #: by: http://www.aktion-kms.de/projekte/umbau-richardstrasse/
 # ("historisches Reihensteinpflaster" - noch schlechtere Qualität?)
-#: last_checked: 2013-10-21
+#: last_checked: 2013-10-31
 #: check_frequency: 60d
 Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschränkungen.	? 13245,7742 13226,7775 13150,7845 13103,7889
-#: last_checked: 2013-09-04
+#: last_checked: 2013-10-31
 #: check_frequency: 120d
-Richardstr.: wird hier auch gebaut werden?	? 13103,7889 13085,7904 12870,8087
+Richardstr.: hier wird auch gebaut	? 13103,7889 13085,7904 12870,8087
 #: by: ^^^
 # 
 # REMOVED (-> strassen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2012 --- Weg im Harry-Bresslau-Park: wo genau liegt der Weg? Qualität? Nachts beleuchtet?	? 4997,6331 4937,6205
@@ -1805,7 +1805,7 @@ F3 nach Marquardt: genaue Wegführung? Qualität?	? -19392,4605 -18701,4578
 Joachimsthal - Altkünkendorf: Qualität?	? 35512,66695 38125,66800 39287,67537 39575,67262 39875,66425
 Gartz - Mescherin: Qualität?	? 75502,90490 75544,90356 75700,90288 76023,90222
 Mescherin - B113: Qualität?	? 78641,95024 78662,95275 78787,95425 78812,95825 78921,96072
-B2 - entlang der polnischen Grenze: Qualität?	? 76848,101276 76087,101337 75912,101137 75359,101224 74448,102157 73976,102559 74112,103100 74475,103750 74825,104062 74887,104275 75125,104387 75237,104637 75412,104775 75425,105250 75775,105512 76187,106212 75525,106650 75716,107215 75837,108375 75780,109058 75400,110350 74579,111943 74225,112737 74237,113462 73987,113512 74125,113863 72925,113675 72801,113578
+B2 - entlang der polnischen Grenze: Qualität?	? 76848,101276 76087,101337 75912,101137 75359,101224 74448,102157 73976,102559 74084,103027 74284,103401 74303,103510 74475,103750 74597,103827 74635,103933 74741,104031 74854,104072 74850,104253 75152,104419 75237,104637 75390,104767 75401,104872 75367,105080 75428,105163 75425,105250 75775,105512 76187,106212 75525,106650 75716,107215 75837,108375 75780,109058 75400,110350 74579,111943 74225,112737 74237,113462 73987,113512 74125,113863 72925,113675 72801,113578
 zur B158: Qualität?	? 56450,48250 56587,48550 57328,48981
 Neue Trasse der B167: für Radfahrer benutzbar? Alte Trasse nicht mehr Bundesstraße, sondern K6436?	? 58206,37275 58206,37675 58225,37959 58087,38231 57734,38743 57612,39937 57403,40340 56862,40818 56659,41179 56381,41675 56087,41956 55506,42350 54895,43268 54515,43803 53987,44157 53425,44300 53187,44262 52341,43207
 Freiheitstr., Wildau: Qualität?	? 25187,-8934 25916,-8709 26563,-8522 26749,-8475
@@ -1918,7 +1918,7 @@ Crossiw - Gellmersdorf: Qualität?	? 54909,66268 54715,64807 54474,64173 54646,63
 Gellmersdorf - Lüderitz: Qualität?	? 54723,63351 54755,63252 54571,63040 54852,61486 55328,60452 55302,59998
 #: note: Straßenbau bis 13.6.2009 (mit Vollsperrung), evtl. danach gut geeignet?
 Luckow - Petershagen: Qualität?	? 63733,93765 63880,93703 65689,93950 66328,94287
-Hohenreinkendorf - Petershagen: Qualität?	? 71721,92864 70825,92985 70679,92967 70499,92989 69963,93144 69622,93126 69451,93153 69003,93257 68845,93278 66541,93799 66499,93857 66310,94244 66328,94287
+Hohenreinkendorf - Petershagen: Qualität?	? 71794,92835 71721,92864 70825,92985 70679,92967 70499,92989 69963,93144 69622,93126 69451,93153 69003,93257 68845,93278 66541,93799 66499,93857 66310,94244 66328,94287
 Tantow - Hohenreinkendorf: Qualität?	? 73031,97443 72935,97227 72879,97158 72847,96864 72865,96745 72897,96631 72941,96540 72995,96477 73135,96358 73130,96307 72969,96202 72879,96107 72839,96045 72460,95382 72425,95307 72017,93861 71928,93552 71851,93385 71805,93237 71755,93139 71721,92864
 Hohenreinkendorf - Heinrichshof: Qualität (wahrscheinlich asphaltiert)?	? 71721,92864 71697,92696 71642,92416 71648,92361 71605,92245 71148,91331 71112,90892
 Hohenselchow - Groß Pinnow: Qualität?	? 68345,89710 68168,89119 68174,88260 68302,87998 68308,87937 68174,87742 68150,87638
@@ -2623,7 +2623,7 @@ Grünz - Radewitz: Qualität?	? 59477,99336 59588,99540 59496,99728 59670,99855
 #: last_checked: 2012-07-29
 Kummerow - Woltersdorf: Qualität nach den Bauarbeiten?	? 63468,83897 63719,84166 63909,84187 65384,85315
 Kummerow - Kunow: Qualität?	? 63202,83842 63468,83897 63701,83897 64030,83689 64199,83388 64560,83095 65187,82762 65732,81931 65968,82128 66459,82296 66731,82468
-Kummerow - Jamikow: Qualität?	? 63202,83842 62902,83983 61889,84194 61022,84291
+Kummerow - Jamikow: Qualität?	? 63202,83842 62902,83983 61889,84194 61598,84224 61349,84292 61022,84291
 Prädikow - Ihlow: Qualität? Für Autos gesperrt?	? 51867,25572 53381,24795 55410,24766
 Kastanienweg (Prädikow): Qualität?	? 51257,25175 51562,25039 51776,25017
 Dorfstr. (Prädikow): Qualität?	? 51461,25613 51464,25638 51509,25735
@@ -3234,15 +3234,15 @@ Alter Fischerweg (Gosen): Qualität? Ausschilderung?	? 32778,-1044 33013,-790 331
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 8.18 (Realisierung bis 2010) --- #: XXX_osm laut osm existieren bereits Radwege (track), aber stimmt das? --- Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege oder Radspuren?	? 12938,1348 12941,1256 12984,1011
 # REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576
 # REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13396,3512 13526,3519
-#: XXX Fahrbahn wird saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht?
+#: XXX Fahrbahn wird saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht? -> nein, nichts passiert
 #: source_id: INKO_119740
-#: last_checked: 2013-09-15
-#: next_check: 2013-10-25
+#: last_checked: 2013-10-31
+#: check_frequency: 120d
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
 #: source_id: IM_020569
-#: last_checked: 2013-09-15
-#: next_check. 2013-11-22
-Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	?::inwork 13775,3500 13629,3511 13526,3519
+#: last_checked: 2013-10-31
+#: check_frequency: 120d
+Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 13775,3500 13710,3522 13623,3523 13526,3519
 #: XXX ^^^
 #: by: ^^^
 # 
@@ -3322,7 +3322,7 @@ Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsber
 #: XXX str_cont_ausnahme-Eintrag wird notwendig sein
 #: XXX hier auch Privatstraße?
 #: last_checked: 2013-06-15
-#: next_check: 2014-03-15
+#: next_check: 2014-05-15
 Trollblumenweg: wird verlängert, Qualität der Verlängerung?	?::inwork 16020,3732 16039,3766 16104,3717
 # 
 # REMOVED (eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2011 --- #: last_checked: 2011-09-10 --- #: next_check: 2012-03-01 --- #: osm_watch: way id="180482046" version="1" --- Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	?::inwork 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706

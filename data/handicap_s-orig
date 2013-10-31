@@ -40,7 +40,7 @@ Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,1165
 # 
 ### Treptow ###
 #
-#: last_checked: 2013-10-21
+#: last_checked: 2013-10-31
 #: check_frequency: 60d
 Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 14157,9345 13973,9465
 # 
@@ -2428,8 +2428,8 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 (Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fußgänger	q1 13463,3854 13487,3862 13601,3895
 (Parkweg Fritz-Reuter-Allee - Britzer-Park):Fußgänger	q1 13463,3854 13302,3837
 #: corrected_by: rjoop ("Radfahren nicht erlaubt")
-(Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fußgänger, Radfahren nicht erlaubt	q3 13487,3862 13531,3768 13545,3692 13629,3511
-(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fußgänger	q1 13951,2697 13904,2787 13807,2863 13778,2987 13766,3018 13730,3111 13740,3252 13738,3302 13728,3332 13629,3511
+(Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fußgänger, Radfahren nicht erlaubt	q3 13487,3862 13531,3768 13545,3692 13623,3523
+(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fußgänger	q1 13951,2697 13904,2787 13807,2863 13778,2987 13766,3018 13730,3111 13740,3252 13738,3302 13728,3332 13623,3523
 #: by: ^^^
 #: by: anonymous [AM]
 Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
@@ -2467,6 +2467,7 @@ Rathener Str.: enge Straße	q1 24228,14644 24271,14576 24362,14542
 Trützschlerstr.: enge Straße	q1 17471,4570 17612,4460 17745,4351
 #: by: Jürgen Jacobi:
 #: corrected_by: Roland Mohrbacher (added "hohe Bordsteinkanten", deshalb q3 -> q4)
+#: XXX_prog BS am Wendehammer (ansonsten q2)
 (Paster-Behrens-Str. - Hüsung): Fußgänger, hohe Bordsteinkanten	q4 13394,4735 13397,4762
 #: by: clara wronski:
 #: corrected_by: srt/policy (q1 -> q0-)
