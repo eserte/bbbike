@@ -33,6 +33,7 @@ if (defined &Hash::Util::lock_keys) {
 
 
 use Cwd qw(realpath);
+use CGI qw();
 use File::Basename qw(dirname basename);
 use File::Glob qw(bsd_glob);
 
@@ -45,10 +46,10 @@ $UNINTERESTING_TAGS = qr{^(name|created_by|source|url)$};
 my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
 my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
 
-use vars qw($OSM_API_URL $OSM_FALLBACK_API_URL);
+use vars qw($OSM_API_URL $OVERPASS_API_URL);
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
-## XXX The informationfreeway URL redirects to xapi.openstreetmap.org, which does not exist anymore
-#$OSM_FALLBACK_API_URL = "http://www.informationfreeway.org/api/0.6";
+#$OVERPASS_API_URL = "http://overpass.osm.rambler.ru/cgi/interpreter";
+$OVERPASS_API_URL = "http://overpass-api.de/api/interpreter";
 
 use vars qw($MERKAARTOR_MAS_BASE $MERKAARTOR_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
 
@@ -121,9 +122,8 @@ sub mirror_and_plot_osm_files {
 		my($this_x0,$this_y0,$this_x1,$this_y1) = ($1, $2, $3, $4);
 		my $success = 0;
 		my $err;
-		for my $rooturl ($OSM_API_URL, $OSM_FALLBACK_API_URL) {
-		    next if !$rooturl;
-		    my $url = "$rooturl/map?bbox=$this_x0,$this_y0,$this_x1,$this_y1";
+		for my $url_getter (\&get_overpass_download_url, \&get_download_url) {
+		    my $url = $url_getter->($this_x0,$this_y0,$this_x1,$this_y1);
 		    main::status_message("Mirror $url ...", "info"); $main::top->update;
 		    main::IncBusy($main::top);
 		    eval {
@@ -213,10 +213,10 @@ sub get_download_url {
     $url;
 }
 
-sub get_fallback_download_url {
-    return if !$OSM_FALLBACK_API_URL;
+sub get_overpass_download_url {
     my($x0,$y0,$x1,$y1) = @_;
-    my $url = "$OSM_FALLBACK_API_URL/map?bbox=$x0,$y0,$x1,$y1";
+    my $ql = "(node($y0,$x0,$y1,$x1);<;);out meta;";
+    my $url = "$OVERPASS_API_URL?" . CGI->new({data => $ql})->query_string;
     $url;
 }
 
