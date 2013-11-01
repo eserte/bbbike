@@ -80,7 +80,7 @@ sub set_info {
 	$self->{'user_agent_os'} = 'Android';
     } elsif ($user_agent =~ /\((.*)\)/) {
 	my(@infos) = split(/;\s*/, $1);
-	if ($infos[1] =~ m{^Trident/} && $infos[2] =~ m{^rv:(\d+\.\d+)}) { # special handling for MSIE11
+	if ($#infos >= 2 && $infos[1] =~ m{^Trident/} && $infos[2] =~ m{^rv:(\d+\.\d+)}) { # special handling for MSIE11
 	    $self->{user_agent_name} = 'MSIE';
 	    $self->{user_agent_version} = $1;
 	    $self->{user_agent_os} = $infos[0];

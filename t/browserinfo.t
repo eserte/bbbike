@@ -27,7 +27,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 25 }
+BEGIN { plan tests => 26 }
 
 #use vars qw($uaprofdir);
 #$uaprofdir = "$FindBin::RealBin/../tmp/uaprof";
@@ -68,6 +68,14 @@ BEGIN { plan tests => 25 }
     local $ENV{HTTP_PROFILE} = "http://does.not-exist.example.com/UAprof/foo.xml";
     my $bi = BrowserInfo->new;
     is("@{ $bi->{display_size} }", "750 590", "Fallback for unknown device");
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "UnknownDevice/1.0 (with something)";
+    my @warnings;
+    local $SIG{__WARN__} = sub { push @warnings, @_ };
+    my $bi = BrowserInfo->new;
+    is "@warnings", "", 'No warnings';
 }
 
 {
