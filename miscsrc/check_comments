@@ -1,0 +1,46 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/../lib", "$FindBin::RealBin/..");
+
+use Strassen::Core;
+use Object::Iterate qw(iterate);
+
+my @files = @ARGV;
+if (!@files) {
+    die "Please specify comment-like bbd files to check.\n";
+}
+
+my @errors;
+
+for my $file (@ARGV) {
+    my $s = Strassen->new($file);
+    my $push_error = sub {
+	my($errmsg, $rec) = @_;
+	push @errors, "*** $file ($rec->[Strassen::NAME]) (@{ $rec->[Strassen::COORDS] }): $errmsg";
+    };
+
+    iterate {
+	$_->[Strassen::CAT] =~ m{^CP2;}    and @{$_->[Strassen::COORDS]} != 2 and $push_error->("CP2; != 2 coordinates", $_);
+	$_->[Strassen::CAT] =~ m{^PI;}     and @{$_->[Strassen::COORDS]} < 3  and $push_error->("PI; too few coordinates", $_);
+	$_->[Strassen::CAT] =~ m{^CP(;|$)} and @{$_->[Strassen::COORDS]} < 3  and $push_error->("CP; too few coordinates", $_);
+	$_->[Strassen::CAT] =~ m{^P0}                                         and $push_error->("P0 is unsupported", $_);
+    } $s;
+}
+
+die join "", @errors if @errors;
+
+__END__

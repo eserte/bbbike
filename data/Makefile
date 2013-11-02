@@ -40,6 +40,7 @@ CHECK_COUNT=		${PERL} ${MISCSRCDIR}/check_count
 CHECK_HOUSENUMBERS=	${PERL} ${MISCSRCDIR}/check_housenumbers
 CHECK_IMAGES=		${PERL} ${MISCSRCDIR}/check_images
 CHECK_STATION_CATEGORY=	${PERL} ${MISCSRCDIR}/check_station_category
+CHECK_COMMENTS=		${PERL} ${MISCSRCDIR}/check_comments
 RESOLVE_STARS=		${PERL} ${MISCSRCDIR}/resolve_stars
 SORTBYCAT=		${PERL} ${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${PERL} ${MISCSRCDIR}/search_inaccessible_points
@@ -1516,19 +1517,8 @@ check-disabled:
 	    ${COMMENTS_PARTIAL:S/^/-data /g}
 	@touch $@
 
-.check_comments3:	$(COMMENTS_PARTIAL);
-	@$(PERL) -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
-	for $$file (@ARGV) {\
-	    $$s=Strassen->new($$file);\
-	    iterate {\
-		$$_->[Strassen::CAT] =~ m{^CP2;} and @{$$_->[Strassen::COORDS]} != 2 and push @errors, "*** $$file ($$_->[Strassen::NAME]): CP2; != 2 coordinates";\
-		$$_->[Strassen::CAT] =~ m{^PI;} and @{$$_->[Strassen::COORDS]} < 3 and push @errors, "*** $$file ($$_->[Strassen::NAME]): PI; too few coordinates";\
-		$$_->[Strassen::CAT] =~ m{^CP(;|$$)} and @{$$_->[Strassen::COORDS]} < 3 and push @errors, "*** $$file ($$_->[Strassen::NAME]): CP; too few coordinates";\
-		$$_->[Strassen::CAT] =~ m{^P0} and push @errors, "*** $$file ($$_->[Strassen::NAME]): P0 is unsupported";\
-	    } $$s;\
-        }\
-	die join "", @errors if @errors;\
-	' $(COMMENTS_PARTIAL)
+.check_comments3:	$(COMMENTS_PARTIAL)
+	${CHECK_COMMENTS} ${COMMENTS_PARTIAL}
 	@touch $@
 
 .check_comments_ferry:	comments_ferry faehren
