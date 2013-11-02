@@ -284,6 +284,7 @@ sub get_html {
 	body.waitMode *    { cursor:wait; }
         html,body     { height:100%; }
     --></style>
+    <meta name="msapplication-config" content="none">
   </head>
   <body onload="init()" onunload="GUnload()" class="nonWaitMode">
     <div id="map" style="width:100%; height:75%; min-height:500px;"></div>
