@@ -48,8 +48,9 @@ my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.o
 
 use vars qw($OSM_API_URL $OVERPASS_API_URL);
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
-#$OVERPASS_API_URL = "http://overpass.osm.rambler.ru/cgi/interpreter";
-$OVERPASS_API_URL = "http://overpass-api.de/api/interpreter";
+#$OVERPASS_API_URL = "http://overpass.osm.rambler.ru/cgi/interpreter"; # feels slower than the .de server (2013-11)
+#$OVERPASS_API_URL = "http://overpass-api.de/api/interpreter"; # quick, but compresses only sometimes
+$OVERPASS_API_URL = "http://api.openstreetmap.fr/oapi/interpreter"; # compresses always
 
 use vars qw($MERKAARTOR_MAS_BASE $MERKAARTOR_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
 
