@@ -215,7 +215,10 @@ sub get_download_url {
 
 sub get_overpass_download_url {
     my($x0,$y0,$x1,$y1) = @_;
-    my $ql = "(node($y0,$x0,$y1,$x1);<;);out meta;";
+    my $bbox = "($y0,$x0,$y1,$x1)";
+    #my $ql = "(node${bbox};<;);out meta;";
+    ## http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide#Completed_ways.2C_but_not_relations
+    my $ql = "(node${bbox};rel(bn)->.x;way${bbox};node(w)->.x;rel(bw););out meta;";
     my $url = "$OVERPASS_API_URL?" . CGI->new({data => $ql})->query_string;
     $url;
 }
