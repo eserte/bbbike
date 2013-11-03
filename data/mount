@@ -231,13 +231,11 @@ Steigung 4.3% (Preußenstr.)	St; 20668,1524 20693,1447
 Steigung 4.3% (Köpenicker Str. (Altglienicke, Adlershof))	St; 19771,1793 19728,1660
 Steigung 4.3% (Köpenicker Str. (Altglienicke, Adlershof))	St; 19728,1660 19679,1571
 Steigung 4.3% (Koenigsallee)	St; 761,7922 674,7758
-Steigung 4.3% (Jagowstr. (Hermsdorf))	St; 3077,22234 3046,22292
 Steigung 4.3% (Höhensteig)	St; 21799,234 21844,238
 Steigung 4.3% (Höhensteig)	St; 21712,215 21799,234
 Steigung 4.3% (Friesenstr. (Kreuzberg, Tempelhof))	St; 9793,9241 9795,9162
 Steigung 4.3% (Bergstr. (Wannsee))	St; -5929,1649 -6039,1683
 Steigung 4.3% (Alt-Kladow)	St; -6811,4893 -6947,4861
-Steigung 4.3% ((Jagowstr. - Egidysteg))	St; 3094,22216 3077,22234
 Steigung 4.2% (Theodorstr. (Mahlsdorf))	St; 24928,10737 24923,10774
 Steigung 4.2% (Tannenbergallee)	St; 48,10922 265,10935
 Steigung 4.2% (Straße zum Löwen)	St; -5929,1649 -5901,1562
@@ -263,10 +261,12 @@ Steigung 4.0% (Kalkbergeweg)	St; 31469,4678 31542,4680
 Steigung 4.0% (Kalkbergeweg)	St; 31424,4658 31469,4678
 Steigung 4.0% (Kaisersteg)	St; 18420,6009 18393,5964
 Steigung 4.0% (Kaisersteg)	St; 18326,5850 18353,5897
+Steigung 4.0% (Jagowstr. (Hermsdorf))	St; 3077,22234 3046,22292
 Steigung 4.0% (Hasselwerderstr.)	St; 18312,5824 18326,5850
 Steigung 4.0% (Gritznerstr.)	St; 4370,6052 4312,5889
 Steigung 4.0% (Chamissoplatz)	St; 9546,9198 9526,9104
 Steigung 4.0% (Briesestr.)	St; 12668,8077 12446,8032
+Steigung 4.0% ((Jagowstr. - Egidysteg))	St; 3094,22216 3077,22234
 Steigung 3.9% (Zeunepromenade)	St; 3919,5670 3978,5600
 Steigung 3.9% (Wannseebadweg)	St; -4964,4100 -4918,4087
 Steigung 3.9% (Wannseebadweg)	St; -4918,4087 -4650,3902
@@ -509,6 +509,7 @@ Steigung 2.8% (Sobernheimer Str.)	St; 28051,803 28003,747
 Steigung 2.8% (Sembritzkistr.)	St; 7018,5201 7095,5317
 Steigung 2.8% (Schöneberger Str. (Steglitz))	St; 5470,6423 5582,6360
 Steigung 2.8% (Runebergweg)	St; -6747,5169 -6904,5175
+Steigung 2.8% (Rialtoring)	St; 31057,3279 31082,3366
 Steigung 2.8% (Pfaueninselchaussee)	St; -6648,1613 -6784,1815
 Steigung 2.8% (Pfaueninselchaussee)	St; -6577,1395 -6648,1613
 Steigung 2.8% (Pfaueninselchaussee)	St; -6492,1204 -6577,1395
@@ -551,7 +552,6 @@ Steigung 2.7% (Saarstr.)	St; 5811,6833 5896,6785
 Steigung 2.7% (Röblingstr.)	St; 7807,4975 7773,5027
 Steigung 2.7% (Rosestr.)	St; 21497,1042 21329,832
 Steigung 2.7% (Rosestr.)	St; 21329,832 21202,727
-Steigung 2.7% (Rialtoring)	St; 31054,3282 31078,3372
 Steigung 2.7% (Pfaueninselchaussee)	St; -8468,2152 -8400,2156
 Steigung 2.7% (Pfaueninselchaussee)	St; -8400,2156 -8284,2156
 Steigung 2.7% (Pfaueninselchaussee)	St; -8284,2156 -8106,2034
@@ -894,7 +894,6 @@ Steigung 2.1% (Salzufer)	St; 4900,12372 5018,12322
 Steigung 2.1% (Sakrower Kirchweg)	St; -7792,4249 -7714,4279
 Steigung 2.1% (Saarbrücker Str.)	St; 11250,13655 11134,13820
 Steigung 2.1% (Saarbrücker Str.)	St; 11134,13820 11052,13870
-Steigung 2.1% (Rialtoring)	St; 31078,3372 31139,3497
 Steigung 2.1% (Proskauer Str.)	St; 14297,12553 14319,12629
 Steigung 2.1% (Proskauer Str.)	St; 14208,12235 14229,12311
 Steigung 2.1% (Pilgramer Str.)	St; 25150,10555 25150,10562
@@ -977,6 +976,7 @@ Steigung 2.0% (Röblingstr.)	St; 8018,4823 7879,4874
 Steigung 2.0% (Röblingstr.)	St; 7492,5415 7773,5027
 Steigung 2.0% (Rothenburgstr.)	St; 4383,5249 4285,5180
 Steigung 2.0% (Ritterfelddamm)	St; -7556,5515 -7389,5294
+Steigung 2.0% (Rialtoring)	St; 31082,3366 31139,3497
 Steigung 2.0% (Rathausstr. (Mariendorf))	St; 9021,3878 9065,3693
 Steigung 2.0% (Prühßstr.)	St; 8967,4082 9107,4103
 Steigung 2.0% (Oranienburger Str. (Wittenau))	St; 5210,21636 5136,21738
@@ -1478,7 +1478,7 @@ Steigung 1.4% (Richard-Sorge-Str.)	St; 13463,12507 13371,12694
 Steigung 1.4% (Richard-Sorge-Str.)	St; 13371,12694 13276,12903
 Steigung 1.4% (Reuterstr. (Neukölln))	St; 12156,8760 12170,8548
 Steigung 1.4% (Potsdamer Chaussee (Zehlendorf, Nikolassee))	St; -2074,2258 -2280,2177
-Steigung 1.4% (Plutoweg)	St; 30965,3391 31078,3372
+Steigung 1.4% (Plutoweg)	St; 30965,3391 31082,3366
 Steigung 1.4% (Platz am Wilden Eber)	St; 2742,7056 2733,7039
 Steigung 1.4% (Platz am Wilden Eber)	St; 2733,7039 2723,7029
 Steigung 1.4% (Petersburger Str.)	St; 13622,12806 13579,12904

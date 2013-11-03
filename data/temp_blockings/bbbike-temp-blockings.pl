@@ -731,7 +731,7 @@ EOF
        text  => 'Bachstraße: In beiden Richtungen Störungen durch Rohrbruch, gesperrt bis Do 12:00 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 6020,12492 5951,12353 5938,12281 5874,12165 5807,12070 5790,12026
+userdel	q4 6020,12492 5951,12353 5938,12281 5870,12179 5807,12070 5790,12026
 userdel	q4 5758,11895 5775,11975 5790,12026
 EOF
      },
@@ -6895,7 +6895,7 @@ EOF
        text  => 'L 285 Günterberg-Schönermark OD Günterberg Kanal- und Straßenbau Vollsperrung 21.07.2006-18.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 48203,79315 47091,77570
+userdel	q4::inwork 48305,79400 48006,79147 47713,78664 47269,77634 47091,77570
 EOF
      },
      { from  => 1165952495, # 2006-12-12 20:41
@@ -21607,7 +21607,7 @@ EOF
 #: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht vvv
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
-#: osm_watch: way id="83106248" version="14" brb
+#: osm_watch: way id="83106248" version="15" brb
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 #: osm_watch: way id="60482011" version="25" brb
 #: osm_watch: way id="192153919" version="2" brb
