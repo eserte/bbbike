@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.88;
+$VERSION = 1.89;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -184,12 +184,12 @@ sub add_button {
     my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
     return unless defined $mf;
 
-    my $b;
-    $b = $mf->Label
+    my $btn;
+    $btn = $mf->Label
 	(-text => "Srt",
 	);
-    BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
-    $main::balloon->attach($b, -msg => "SRT Shortcuts")
+    BBBikePlugin::replace_plugin_widget($mf, $btn, __PACKAGE__.'_on');
+    $main::balloon->attach($btn, -msg => "SRT Shortcuts")
 	if $main::balloon;
 
     my $rare_or_old_menu = $mmf->Menu
@@ -449,11 +449,33 @@ EOF
 		  } @acc_cat_split_streets_years,
 		 ],
 		],
-		layer_checkbutton([$do_compound->('Weighted matches')],
-				  'str', "$bbbike_rootdir/tmp/weighted-matches.bbd",
-				  above => $str_layer_level,
-				  Width => undef, # XXX weighted-matches.desc sets its own widths, but why it isn't winning?
-				 ),
+		do {
+		    my $glob = "$bbbike_rootdir/tmp/weighted/*_weighted_dir_*.bbd";
+		    require File::Glob;
+		    my @candidates = File::Glob::bsd_glob($glob);
+		    if (!@candidates) {
+			warn <<EOF;
+No candidates for a weighted bbd found
+(tried the glob $glob).
+Please create a file using $bbbike_rootdir/miscsrc/weight_bbd
+(see documentation there)
+EOF
+			();
+		    } else {
+			my($latest) = sort { $b cmp $a } @candidates;
+			my $date_desc;
+			if ($latest =~ m{/(\d{4}-\d{2})_}) {
+			    $date_desc = " (for month $1)";
+			} else {
+			    $date_desc = " (unknown month)";
+			}
+			layer_checkbutton([$do_compound->("Weighted matches$date_desc")],
+					  'str', $latest,
+					  above => $str_layer_level,
+					  Width => undef, # XXX weighted-matches.desc sets its own widths, but why it isn't winning?
+					 );
+		    }
+		},
 		[Button => $do_compound->("Abdeckung"),
 		 -command => sub {
 		     local $main::p_draw{'pp-all'} = 1;
@@ -717,7 +739,7 @@ EOF
 			       });
 	       }],
 	     ],
-	     $b,
+	     $btn,
 	     __PACKAGE__."_menu",
 	     -title => "SRT Shortcuts",
 	    );
