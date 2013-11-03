@@ -725,6 +725,7 @@ sub _process {
 		    $names .= " (" . join(", ", @{ $change_special_flags{$file} }) . ")";
 		}
 		$check[$type]->{$file} = 1;
+		$names = decode_for_file($names, $file);
 		push @checkbutton_info, { -text => "$file$names",
 					  -variable => \$check[$type]->{$file},
 					};
@@ -1125,6 +1126,32 @@ sub emacs_lockfile {
 	$lock_file = '.#' . $file;
     }
     $lock_file;
+}
+
+sub decode_for_file {
+    my($text, $file) = @_;
+
+    # Assume that encoding never changes for files, so we can cache it
+    our %file_to_encoding;
+
+    if (!exists $file_to_encoding{$file}) {
+	require Strassen::Core;
+	my $s = Strassen->new($file, NoRead => 1);
+	$s->read_data(ReadOnlyGlobalDirectives => 1);
+	my $encoding = $s->get_global_directive('encoding');
+	if ($encoding) {
+	    $file_to_encoding{$file} = $encoding;
+	} else {
+	    $file_to_encoding{$file} = undef;
+	}
+    }
+
+    if (my $encoding = $file_to_encoding{$file}) {
+	require Encode;
+	Encode::decode($encoding, $text);
+    } else {
+	$text;
+    }
 }
 
 return 1 if caller;
