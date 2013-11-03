@@ -716,8 +716,12 @@ sub showmap_url_bikemapnet {
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.bikemap.net/#lat=%s&lng=%s&zoom=%d&type=0",
-	$py, $px, $scale;
+    $scale = 17 if $scale > 17;
+#    sprintf "http://www.bikemap.net/#lat=%s&lng=%s&zoom=%d&type=0",
+#	$py, $px, $scale;
+    sprintf "http://www.bikemap.net/#/z%d/%s,%s/terrain",
+	$scale, $py, $px;
+
 }
 
 sub showmap_bikemapnet {
