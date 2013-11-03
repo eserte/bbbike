@@ -581,8 +581,7 @@ sub _process {
 		    my @changed = grep(/(?:(?<=\s)|^)(?:$map_from $map_to|$map_to $map_from)\b/, @data);
 		    if (@changed) {
 			push @{$change_files[$type]}, $file;
-			push @{$change_names{$file}},
-			    map { /^([^\t]+)/ ? $1 : () } @changed;
+			push @{$change_names{$file}}, extract_bbd_names(@changed);
 			if ($operation eq 'changeline' && first { /(?:\t\S+\s(?:$map_from $map_to|$map_to $map_from)\b|\b(?:$map_from $map_to|$map_to $map_from)$)/ } @data) {
 			    push @{$change_special_flags{$file}}, "endpoint";
 			}
@@ -617,11 +616,13 @@ sub _process {
 		my $map_rx = ($current_coordsys eq '' ? 'B?' : $current_coordsys.'?');
 		# XXX verbose fehlt
 		if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_TEMPBLOCKMAIN || $type == T_COMMENTS || $type == T_OLD_RADWEGE || $type == T_RADWEGE || $type == T_VORFAHRT) {
-		    if (grep(/(?:(?<=\s)|^)$map_rx$map_from(\b|$)/, @data)) {
+		    my @changed = grep(/(?:(?<=\s)|^)$map_rx$map_from(\b|$)/, @data);
+		    if (@changed) {
 			push @{$change_files[$type]}, $file;
-			if (first { /\t\S+\s$map_rx$map_from$/ } @data) {
+			push @{$change_names{$file}}, extract_bbd_names(@changed);
+			if (first { /\t\S+\s$map_rx$map_from$/ } @changed) {
 			    push @{$change_special_flags{$file}}, "single-point";
-			} elsif (first { /(?:\t\S+\s$map_rx$map_from\b|\b$map_rx$map_from$)/ } @data) {
+			} elsif (first { /(?:\t\S+\s$map_rx$map_from\b|\b$map_rx$map_from$)/ } @changed) {
 			    push @{$change_special_flags{$file}}, "endpoint";
 			}
 		    }
@@ -660,6 +661,16 @@ sub _process {
     if ($report) {
 	print join("\n", _interpolate(@change_files)), "\n";
 	return RET_NOMOD;
+    }
+
+    # %change_names values are octets currently, make it into
+    # perl characters (if necessary)
+    if (%change_names) {
+	for my $file (keys %change_names) {
+	    for my $val (@{ $change_names{$file} }) {
+		$val = decode_for_file($val, $file);
+	    }
+	}
     }
 
     $dialog_text = "Betroffene Dateien:\n";
@@ -725,7 +736,6 @@ sub _process {
 		    $names .= " (" . join(", ", @{ $change_special_flags{$file} }) . ")";
 		}
 		$check[$type]->{$file} = 1;
-		$names = decode_for_file($names, $file);
 		push @checkbutton_info, { -text => "$file$names",
 					  -variable => \$check[$type]->{$file},
 					};
@@ -1152,6 +1162,11 @@ sub decode_for_file {
     } else {
 	$text;
     }
+}
+
+sub extract_bbd_names {
+    my(@lines) = @_;
+    map { /^([^\t]+)/ ? $1 : () } @lines;
 }
 
 return 1 if caller;
