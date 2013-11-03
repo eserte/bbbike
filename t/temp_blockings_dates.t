@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.12 2007/09/20 21:04:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -17,18 +16,26 @@ require BBBikeEdit;
 BEGIN {
     if (!eval q{
 	use Test::More;
-	use Date::Calc qw(Mktime Today_and_Now); # fallback to Date::PCalc?
+	use Date::Calc qw(System_Clock);
+	use POSIX qw(mktime);
 	1;
     }) {
-	print "1..0 # skip no Test::More and/or Date::Calc modules\n";
+	print "1..0 # skip no Test::More, POSIX and/or Date::Calc modules\n";
 	exit;
     }
 }
 
 plan tests => 81;
 
-my @Today_and_Now = Today_and_Now;
+my @Today_and_Now = System_Clock(); # use System_Clock(), to include DST information
 my $This_Year = $Today_and_Now[0];
+
+# Don't use Mktime from Date::Calc, use a mktime() which has $is_dst available
+sub Mktime {
+    my($y,$m,$d,$H,$M,$S,undef,undef,$is_dst) = @_;
+    if (!defined $is_dst) { $is_dst = -1 }
+    mktime $S,$M,$H,$d,$m-1,$y-1900,0,0,$is_dst;
+}
 
 for my $test_data
     ([<<EOF,
