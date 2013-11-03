@@ -736,8 +736,10 @@ sub showmap_url_geocaching {
     my $py = $args{py};
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.geocaching.com/seek/gmnearest.aspx?lat=%s&lng=%s&zm=%d&mt=m",
-	$py, $px, $scale;
+#    sprintf "http://www.geocaching.com/seek/gmnearest.aspx?lat=%s&lng=%s&zm=%d&mt=m",
+#	$py, $px, $scale;
+    sprintf "http://www.geocaching.com/map/default.aspx?lat=%s&lng=%s&zm=%d&mt=m&#?ll=%s,%s&z=%d",
+	($py, $px, $scale) x 2;
 }
 
 sub showmap_geocaching {
