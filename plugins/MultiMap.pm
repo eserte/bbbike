@@ -540,6 +540,12 @@ sub showmap_openstreetmap_sautter {
 sub show_openstreetmap_menu {
     my(%args) = @_;
     my $lang = $Msg::lang || 'de';
+    # XXX the sautter map seems to be defect since 2012 (only googlemap visible,
+    #     no transparency effect)
+    #     see discussions in http://forum.openstreetmap.org/viewtopic.php?id=15653
+    #     the replacement mentioned in
+    #     http://forum.openstreetmap.org/viewtopic.php?id=18081 also does not work
+    use constant USE_SAUTTER_MAP => 0;
     my $w = $args{widget};
     my $menu_name = __PACKAGE__ . '_OpenStreetMap_Menu';
     if (Tk::Exists($w->{$menu_name})) {
@@ -555,10 +561,12 @@ sub show_openstreetmap_menu {
 	(-label => 'OpenStreetMap.org ' . ($lang eq 'de' ? '(ohne Marker)' : '(without marker)'),
 	 -command => sub { showmap_openstreetmap(osmmarker => 0, %args) },
 	);
-    $link_menu->command
-	(-label => 'Transparent Map Comparison',
-	 -command => sub { showmap_openstreetmap(variant => 'sautter', %args) },
-	);
+    if (USE_SAUTTER_MAP) {
+	$link_menu->command
+	    (-label => 'Transparent Map Comparison',
+	     -command => sub { showmap_openstreetmap(variant => 'sautter', %args) },
+	    );
+    }
     $link_menu->separator;
     $link_menu->command
 	(-label => ".de-Link kopieren", # XXX lang!
@@ -572,10 +580,12 @@ sub show_openstreetmap_menu {
 	(-label => ".org-Link ohne Marker kopieren", # XXX lang!
 	 -command => sub { _copy_link(showmap_url_openstreetmap(osmmarker => 0, %args)) },
 	);
-    $link_menu->command
-	(-label => "Transparent Map Comparison-Link kopieren", # XXX lang!
-	 -command => sub { _copy_link(showmap_url_openstreetmap(variant => 'sautter', %args)) },
-	);
+    if (USE_SAUTTER_MAP) {
+	$link_menu->command
+	    (-label => "Transparent Map Comparison-Link kopieren", # XXX lang!
+	     -command => sub { _copy_link(showmap_url_openstreetmap(variant => 'sautter', %args)) },
+	    );
+    }
 
     $w->{$menu_name} = $link_menu;
     my $e = $w->XEvent;
