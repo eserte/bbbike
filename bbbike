@@ -620,16 +620,11 @@ use enum qw(:SRP_ COORD TYPE);
 
 $aufschlag = 1; # XXX ???
 
-# Do as early as possible to avoid warnings:
-if (!$ENV{HOME} || !-d $ENV{HOME}) { # z.B. unter Win32
-    $ENV{HOME} = $FindBin::RealBin;
-}
-
 # Weather variables section
 $wetter_force_update = 1 if !defined $wetter_force_update;
 $wetter_route_update = 0 if !defined $wetter_route_update;
 $wetter_station = 'uptodate' if !defined $wetter_station;
-@wetter_dir = ("$ENV{HOME}/doc/met", "/home/e/eserte/doc/met");
+@wetter_dir = ((defined $ENV{HOME} ? "$ENV{HOME}/doc/met" : ()), "/home/e/eserte/doc/met"); # XXX $home not yet set at this point
 %wetter_zuordnung =
   ('dahlem1'   => 'wetter-full',
    'dahlem2'   => 'wetter',
@@ -667,8 +662,9 @@ $nr = -1; # number of points in route (XXX correct???)
 my $home = $ENV{HOME};
 if ($os eq 'win') {
     $home = Win32Util::get_user_folder();
-    if (-d $home) {
+    if (defined $home && -d $home) {
         $bbbike_configdir = catfile($home, "BBBike");
+	$ENV{HOME} = $home; # many code places are using $ENV{HOME}
     }
 }
 if (!defined $bbbike_configdir) {
