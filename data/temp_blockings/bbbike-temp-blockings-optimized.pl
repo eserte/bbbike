@@ -2602,7 +2602,17 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'INKO_115299',
+         'until' => 1388329200,
+         'text' => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Ende 2013',
+         'from' => 1349931600,
+         'id' => 2442,
+         'data' => '#: last_checked: 2013-10-12
+userdel	q2::inwork; 6572,14639 6299,14660
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -2918,6 +2928,16 @@ userdel	q3::inwork 11758,16111 11684,15997 11859,16058
          'id' => 2508,
          'data' => 'userdel	q4::inwork 8482,18284 8465,18365 8627,18402
 userdel	q4::inwork 8465,18365 8286,18331
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020626',
+         'until' => 1384268400,
+         'text' => 'Behrenstr.: Baustelle zwischen Wilhelmstr. und Glinkastr., Richtung Friedrichstr. bis zum 12.11.2013 gesperrt ',
+         'from' => 1383462000,
+         'id' => 2509,
+         'data' => 'userdel	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 ',
          'type' => 'handicap'
        }
