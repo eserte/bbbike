@@ -82,7 +82,7 @@ Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10793,12906 10923,
 Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726 14674,9764 14500,9856 14483,9843 14460,9871 14448,9922
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14460,9814 14483,9843
 (Uferweg - Puschkinallee): Fußgänger	q1 14443,9731 14318,9688
-Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14910,9643
+Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14844,9513 14910,9643
 Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14443,9731 14361,9772
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
@@ -1297,6 +1297,9 @@ Am Lokdepot: starke Steigung	q4; 8390,8879 8389,8775
 Lübbener Str.: Fußgänger	q2 12729,10515 12731,10547
 Parforceweg: einige umgestürzte Bäume	q4 -643,7252 -728,7310 -1020,7446 -1328,7597 -1643,7828
 (Brockenweg - Blankenburger Pflasterweg): schmaler Pfad	q3 15102,20723 15119,20655 15226,20587
+(S-Bahnhof Treptower Park - Rosengarten): Fußgänger	q1 14575,9648 14627,9609 14705,9578
+(S-Bahnhof Treptower Park - Rosengarten): Parkplatzverkehr	q1 14705,9578 14791,9537
+(S-Bahnhof Treptower Park - Rosengarten): Fußgänger, Bordstein	q2 14791,9537 14844,9513
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789

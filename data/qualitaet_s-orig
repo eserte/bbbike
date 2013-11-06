@@ -134,10 +134,7 @@ Kressenweg: Asphalt	Q0 23513,9567 23528,9680 23574,9782
 Kressenweg: Asphalt, einige "Moabiter Kissen"	Q0- 23574,9782 23603,9883 23659,10074
 # REMOVED --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130816.1515.388062.html --- #: XXX Sanierung der Fischerstr. bis Ende Oktober, danach asphaltiert --- #: priority: #A --- #: last_checked: 2013-10-19
 #: note: auﬂen Kopfsteinpflaster
-Fischerstr.: Asphaltstreifen in der Mitte	Q2 16080,10743 16187,10587
-#: XXX wird hier auch asphaltiert?
-#: last_checked: 2013-10-29 (war mir nicht sicher)
-#: next_check: 2013-11-02
+Fischerstr.: Asphaltstreifen in der Mitte	Q0- 16080,10743 16187,10587
 Fischerstr.: Kopfsteinpflaster	Q2 16038,10818 16080,10743
 Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
 Wallensteinstr./Neuer Feldweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
@@ -1257,6 +1254,7 @@ Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10
 (Stresemannstr. - Wilhelmstr.): Parkweg	Q1 9250,10563 9375,10616
 #: by Olaf Schulz vvv
 Frˆbelstr.: guter Asphalt	Q0 11776,15060 11870,15004 11968,14950 12089,14891
+#: confirmed_by: srt
 Ella-Kay-Str.: guter Asphalt	Q0 12089,14891 11990,14714
 #: confirmed_by: srt
 Ella-Kay-Str.: Beton	Q0 12234,15151 12208,15108 12089,14891
@@ -1271,8 +1269,8 @@ Treptower Park: Asphalt, einige Wurzelhebungen	Q1 14910,9643 15052,9584 15174,95
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 Treptower Park: wassergebundene Decke	Q1 14854,8964 15057,8910 15159,8934
 Treptower Park: Schotterweg	Q2 14242,9448 14316,9542
-Treptower Park: Asphalt mit m‰ﬂigen Stellen	Q1 14697,9726 14645,9710 14575,9648 14496,9705 14443,9731 14361,9772
-Am Rosengarten: Parkweg	Q1 14910,9643 14819,9462
+Treptower Park: Asphalt mit m‰ﬂigen Stellen	Q1+ 14697,9726 14645,9710 14575,9648 14496,9705 14443,9731 14361,9772
+Am Rosengarten: Parkweg	Q1 14910,9643 14844,9513 14819,9462
 Am Kˆllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
 Lichtensteinallee: gutes Kopfsteinpflaster	Q1 6399,11558 6309,11443 6252,11367
 Storkwinkel: Kopfsteinpflaster	Q2 2489,9784 2482,9870
@@ -9174,6 +9172,10 @@ Groﬂe-Leege-Str.: Beton mit einigen Hebungen	Q0- 16035,14748 15972,14681 15899,1
 Nibelungenring: Verbundsteinpflaster	Q1+ 17320,12308 17365,12301 17442,12292 17454,12348
 Rumoldstr.: Verbundsteinpflaster	Q1+ 17366,12357 17454,12348 17474,12344 17526,12336
 (Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt	Q0 17110,14187 17224,14151 17236,14140
+(S-Bahnhof Treptower Park - Rosengarten): Asphalt	Q0 14575,9648 14627,9609 14705,9578
+(S-Bahnhof Treptower Park - Rosengarten): Beton, teilweise mit groﬂen Fugen	Q1- 14705,9578 14791,9537
+(S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0- 14791,9537 14844,9513
+(Uferweg - Puschkinallee): Asphalt	Q0- 14443,9731 14318,9688
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 

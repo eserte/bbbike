@@ -2280,6 +2280,7 @@ userdel	2::temp 18870,5833 18932,5926
 #: note: am 2013-08-14 geprüft: Fahrbahn war gesperrt
 #: note: am 2013-09-06 geprüft: Schranke, nur Straßenbahnen und Lieferverkehr werden durchgelassen
 #: note: am 2013-10-24 geprüft: Radfahrer konnten heute wohl durchfahren, aber offiziell noch immer gesperrt
+#: note: am 2013-11-05 geprüft: offiziell gesperrt, aber Durchfahrt mit Umrunden der Sperren möglich
 userdel	q3::inwork 10530,14452 10723,14772
 ',
          'type' => 'handicap'
@@ -2845,17 +2846,7 @@ userdel	q4::inwork 7001,8161 7250,8223
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_020486',
-         'until' => 1384704000,
-         'text' => 'Rosenthaler Str. (Mitte): Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Linienstr. und Weinmeisterstr., 14.10.2013 bis 17.11.2013 ',
-         'from' => 1381633200,
-         'id' => 2499,
-         'data' => '#: by: http://www.bvg.de/index.php/de/56927/name/fahrinfo+Update+-+was+ist+neu%3F.html (Enddatum)
-userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13691
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_020491',
          'until' => 1402758000,
@@ -2938,6 +2929,16 @@ userdel	q4::inwork 8465,18365 8286,18331
          'from' => 1383462000,
          'id' => 2509,
          'data' => 'userdel	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020657',
+         'until' => 1384786800,
+         'text' => 'Rosenthaler Str.: zwischen Neue Schönhauser Str. und Weinmeisterstr. Baustelle, Fahrbahn Richtung Rosenthaler Platz gesperrt, bis 18.11.2013 ',
+         'from' => 1383458400,
+         'id' => 2510,
+         'data' => 'userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 ',
          'type' => 'handicap'
        }

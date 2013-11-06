@@ -20045,6 +20045,7 @@ EOF
 #: note: am 2013-08-14 geprüft: Fahrbahn war gesperrt
 #: note: am 2013-09-06 geprüft: Schranke, nur Straßenbahnen und Lieferverkehr werden durchgelassen
 #: note: am 2013-10-24 geprüft: Radfahrer konnten heute wohl durchfahren, aber offiziell noch immer gesperrt
+#: note: am 2013-11-05 geprüft: offiziell gesperrt, aber Durchfahrt mit Umrunden der Sperren möglich
 userdel	q3::inwork 10530,14452 10723,14772
 EOF
      },
@@ -21963,7 +21964,7 @@ userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
      { from  => 1381633200, # 2013-10-13 05:00
-       until => 1384704000, # 2013-11-17 17:00
+       until => 1383773729, # 1384704000, # 2013-11-17 17:00
        text  => 'Rosenthaler Str. (Mitte): Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Linienstr. und Weinmeisterstr., 14.10.2013 bis 17.11.2013 ',
        type  => 'handicap',
        source_id => 'IM_020486',
@@ -22063,6 +22064,15 @@ EOF
        source_id => 'IM_020626',
        data  => <<EOF,
 userdel	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
+EOF
+     },
+     { from  => 1383458400, # 2013-11-03 07:00
+       until => 1384786800, # 2013-11-18 16:00
+       text  => 'Rosenthaler Str.: zwischen Neue Schönhauser Str. und Weinmeisterstr. Baustelle, Fahrbahn Richtung Rosenthaler Platz gesperrt, bis 18.11.2013 ',
+       type  => 'handicap',
+       source_id => 'IM_020657',
+       data  => <<EOF,
+userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 EOF
      },
     );

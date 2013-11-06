@@ -253,6 +253,9 @@ John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12573,14581 12422,
 Straßenbahntrasse	3nocross::ignrte 12709,15112 12737,15154 12870,15342
 Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3::igndisp 12709,15112 12737,15154 12693,15225
 Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12693,15225 12737,15154 12870,15342
+Straßenbahntrasse	3nocross::ignrte 12620,14979 12584,14928 12520,14833
+Greifswalder Str. -> Lilli-Henoch-Str.: Straßenbahntrasse	3::igndisp 12520,14833 12584,14928 12477,14987
+Lilli-Henoch-Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12477,14987 12584,14928 12620,14979
 Straßenbahn	3nocross::ignrte 13543,13568 13635,13605 13702,13634
 Fritz-Riedel-Str. -> Hausburgstr.: Straßenbahn	3::igndisp 13521,13781 13635,13605 13706,13460
 Fritz-Riedel-Str. -> Landsberger Allee: Straßenbahn	3::igndisp 13521,13781 13635,13605 13702,13634
@@ -371,7 +374,6 @@ Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14608,16772 14
 Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14723,16691 14619,16682 14619,16672
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14558,16907 14608,16772 14700,16790
-Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
 Bahnübergang nur für Fußgänger/Radfahrer	3 20610,12050 20624,12133 20627,12162
 Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20610,12050
 Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
@@ -1377,6 +1379,9 @@ Lychener Str. -> Danziger Str.: Danziger/Knaack/Lychener	3::igndisp 11236,15312 
 Straßenbahntrasse	3nocross::ignrte 13225,13620 13228,13615 13330,13468
 Danziger Str. -> Cotheniusstr.: Straßenbahntrasse	3::igndisp 13225,13620 13228,13615 13430,13733
 Cotheniusstr. -> Danziger Str.: Straßenbahntrasse	3::igndisp 13430,13733 13228,13615 13330,13468
+Straßenbahntrasse	3nocross::ignrte 11864,14781 11990,14714 12025,14695
+Danziger Str. -> Ella-Kay-Str.: Straßenbahntrasse	3::igndisp 11864,14781 11990,14714 12089,14891
+Ella-Kay-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12089,14891 11990,14714 12025,14695
 Thaters Privatweg	1 4148,15205 4103,15137 3892,14944 3893,14911 3899,14868 3956,14750
 Heinickeweg	1 2224,14825 2210,14696 2207,14576
 Jungfernsteig	1 938,14457 862,14463
@@ -1642,3 +1647,4 @@ Krügerstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 12013,16120 12075,1
 Prenzlauer Allee -> Krügerstr.: Straßenbahntrasse	3::igndisp 12030,15968 12075,16144 12013,16120
 B2 - Piesporter Str.: Linksabbiegen verboten	3 15569,18492 15181,18137 15239,18063
 Ruschestr. - Schulze-Boysen-Str.: Geradeausfahren verboten	3 15879,12131 15863,11992 15836,11840
+Bizetstr. - Indira-Gandhi-Str.: nur Rechtsabbiegen erlaubt	3 14293,16073 14552,16171 14522,16260

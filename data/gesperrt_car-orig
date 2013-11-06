@@ -194,6 +194,8 @@ Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11019,16465 11004,1636
 Prenzlauer Allee: Straßenbahn	3nocross 11860,15309 11877,15366 11891,15413
 Greifswalder Str.: Straßenbahn	3nocross 12473,14763 12422,14692 12403,14663 12371,14615
 Greifswalder Str.: Straßenbahntrasse	3nocross 12709,15112 12737,15154 12870,15342
+#: note: Radfahrer können einen Übergang mit Drängelgitter benutzen
+Greifswalder Str.: Straßenbahntrasse	3nocross 12620,14979 12584,14928 12520,14833
 Landsberger Allee: Straßenbahn	3nocross 13543,13568 13635,13605 13702,13634
 #: note: Luftbild:
 Landsberger Allee: Straßenbahn	3nocross 21398,15671 21475,15705 21584,15753 21709,15808
@@ -235,8 +237,7 @@ Müllerstr./Lindower Str.	3nocross 7929,15006 7819,15103 7754,15160 7611,15286
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213
 Falkenberger/B2: Straßenbahntrasse	3nocross 14621,16563 14619,16672 14619,16682 14608,16772 14558,16907
-#: by: Andreas Mühlhausen (Einbahnstraße nur für Autofahrer)
-Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
+# REMOVED (http://taxi-weblog.de/980: seit 2013-09 keine Einbahnstraße mehr) --- #: by: Andreas Mühlhausen (Einbahnstraße nur für Autofahrer) --- Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
 Bahnübergang nur für Fußgänger/Radfahrer	3 * 20624,12133 *
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 #: note: nur temporär gültig
@@ -777,6 +778,8 @@ Landhausweg: Schranke	3 * 16464,1194 *
 Danziger/Knaack/Lychener	3nocross 11154,14985 11056,15009 10881,15047
 #: note: Radfahrer benutzen die Fußgängerampel
 Danziger Str.: Straßenbahntrasse	3nocross 13225,13620 13228,13615 13330,13468
+#: note: Radfahrer nutzen den kleinen Umweg via Ampel an der Winsstr.
+Danziger Str.: Straßenbahntrasse	3nocross 11864,14781 11990,14714 12025,14695
 Thaters Privatweg	1 4148,15205 4103,15137 3892,14944 3893,14911 3899,14868 3956,14750
 Heinickeweg	1 2224,14825 2210,14696 2207,14576
 Jungfernsteig	1 938,14457 862,14463
@@ -954,3 +957,4 @@ Fasanenstr.	1 5196,10398 5215,10711
 Prenzlauer Allee: Straßenbahntrasse	3nocross 12030,15968 12075,16144 12090,16199
 B2 - Piesporter Str.: Linksabbiegen verboten	3 15569,18492 15181,18137 15239,18063
 Ruschestr. - Schulze-Boysen-Str.: Geradeausfahren verboten	3 15879,12131 15863,11992 15836,11840
+Bizetstr. - Indira-Gandhi-Str.: nur Rechtsabbiegen erlaubt	3 14293,16073 14552,16171 14522,16260

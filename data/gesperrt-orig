@@ -242,7 +242,7 @@ Alfredstr.	1 16207,11937 16246,12177 16255,12224
 # REMOVED (stimmt nicht) --- Alfredstr.	1 16255,12224 16276,12273
 Fanningerstr.	1s:q4 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
-Knaackstr.	1 11056,15009 11038,14972 11101,14768
+# REMOVED (Einbahnstraßenregelung mittlerweile aufgehoben) --- Knaackstr.	1 11056,15009 11038,14972 11101,14768
 Hagenplatz	1 1149,8538 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
 Reutlinger Str.	1 7676,4216 7601,4485
@@ -2459,7 +2459,7 @@ Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,100
 #: next_check: 2014-03-29
 Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17366,12357
 # 
-#: last_checked: 2013-10-20
+#: last_checked: 2013-11-05
 #: next_check: 2014-02-14
 (Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
 # 
@@ -2529,6 +2529,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: next_check: 2013-11-15
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
+#: XXX wrote Mail about current status (2013-11-05), wait for response
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855

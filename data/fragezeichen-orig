@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-10-25
+#: last_checked: 2013-11-05
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -111,7 +111,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # 
 #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
 # REMOVED (weitgehend realisiert, bis auf das letzte Stück vor der Kreuzung) --- #: last_checked: 2013-09-10 vvv --- #: next_check: 2013-09-12 vvv --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::inwork; 12726,11851 12681,11741 12645,11673 --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459 --- #: next_check ^^^ --- #: last_checked ^^^
-#: last_checked: 2013-11-04
+#: last_checked: 2013-11-05
 Straße der Pariser Kommune: werden hier die fehlenden Meter Radspur noch markiert?	?::projected 12850,12286 12869,12425
 #: XXX ^^^
 # 
@@ -187,7 +187,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 15066,14579 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-10-29
+#: last_checked: 2013-11-05
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -312,7 +312,7 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
-#: last_checked: 2013-10-29
+#: last_checked: 2013-11-05
 #: next_check: 2014-03-15
 Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 #: section ^^^
@@ -421,7 +421,7 @@ Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html ("Durchführungszeit zwei Wochen, allerdings wurde der Termin (16.9.) nicht realisiert)
 #: XXX für Radfahrer evtl. relevant, da Überquerungsmöglichkeit zur Magdalenenstr.
 #: XXX evtl. auch ubahnhof_bg anpassen?
-#: last_checked: 2013-10-25
+#: last_checked: 2013-11-05
 #: next_check: 2013-11-25
 U Magdalenenstr.: Bau einer Fußgängerampel geplant	?::projected 16057,11988 16093,11927
 # 
@@ -633,7 +633,7 @@ Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19651,9489 19727,9484 1
 #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
 #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
 #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014
-#: last_checked: 2013-10-25
+#: last_checked: 2013-11-05
 #: next_check: 2014-11-30
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16476,16216 16458,16104 16493,15983 16563,15900
 # 
@@ -651,7 +651,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
-#: last_checked: 2013-10-25
+#: last_checked: 2013-11-05
 #: check_frequency: 100d
 #: priority: #C
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
@@ -837,12 +837,13 @@ Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,131
 #: note: Planstraße im Block 902
 #: XXX in Berlin.coords.data mit "(geplant)" gekennzeichnet
 #: osm_watch: way id="182859952" version="7"
+#: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014)
 #: last_checked: 2013-10-22 (teilweise schon fertiggestellt, Asphalt, anscheinend schon befahrbar, aber Anbindung an Beusselbrücke fehlt)
-#: next_check: 2013-11-30
+#: next_check: 2014-01-01
 Erna-Samuel-Straße: Straße wird gebaut, Qualität, Radwege/streifen, genaue Lage?	?::inwork 5340,14050 5522,14195 5704,14252 5954,14303 6106,14280
 # 
 #: last_checked: 2013-10-22
-#: next_check: 2013-11-30
+#: next_check: 2014-01-01
 #: XXX wird evtl. zusammen mit der Erna-Samuel-Straße fertiggestellt?
 Weg im Stadtgarten Moabit: Qualität? Nachts beleuchtet?	?::inwork 5708,14077 5667,14212
 # 
@@ -856,7 +857,8 @@ Weg im Stadtgarten Moabit: Qualität? Nachts beleuchtet?	?::inwork 5708,14077 566
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
-#: last_checked: 2013-10-24
+#: XXX Richtung Norden existieren schon Radspuren
+#: last_checked: 2013-11-05
 #: next_check: 2013-11-24
 Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772
 # 
@@ -972,10 +974,9 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012)
 #: osm_watch: way id="22044872" version="10"
 #: osm_watch: way id="22045147" version="18"
-#: last_checked: 2013-10-25
-#: next_check: 2013-11-02
-# REMOVED (realisiert) --- Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 16964,16042 16961,16042 16883,16074 16656,16157 16522,16206 16476,16216 16416,16236
-Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 16416,16236 16263,16288 16099,16339 15919,16383 15866,16393 15843,16399 15432,16500
+#: last_checked: 2013-11-05
+#: next_check: 2013-11-19
+Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 16099,16339 15919,16383 15866,16393 15843,16399 15432,16500
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
 #: last_checked: 2013-10-25

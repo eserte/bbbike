@@ -18,7 +18,7 @@
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-10-15
+#: last_checked: 2013-11-04
 #: check_frequency: 7d
 #: XXX siehe auch den Eintrag in gesperrt-orig
 # REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
@@ -333,7 +333,7 @@ Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10793,12906 10923,
 Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726 14674,9764 14500,9856 14483,9843 14460,9871 14448,9922
 (S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14361,9772 14436,9784 14460,9814 14483,9843
 (Uferweg - Puschkinallee): Fuﬂg‰nger	q1 14443,9731 14318,9688
-Treptower Park, am Rosengarten: Fuﬂg‰nger	q2 14819,9462 14910,9643
+Treptower Park, am Rosengarten: Fuﬂg‰nger	q2 14819,9462 14844,9513 14910,9643
 Treptower Park: Fuﬂg‰nger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14443,9731 14361,9772
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12671,10042 12686,10045 12690,10062
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12757,10197 12763,10207 12767,10216
@@ -1680,7 +1680,7 @@ Arnimplatz: Fuﬂg‰nger	q2 10606,16319 10739,16146
 # 
 #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen
 #: last_checked: 2013-10-20
-#: check_frequency: 90d
+#: next_check: 2013-11-18
 # (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger	q1 15513,13539 15374,13542
 (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15374,13542
 # REMOVED (evtl. schon aufgehoben, kann ich nicht pr¸fen) --- #: temporary: --- #: XXX wann wird die Umfahrung wieder aufgehoben? --- #: last_checked: 2013-09-12 --- #: check_frequency: 20d --- Paul-Junius-Str.: Umfahrung an der Straﬂenbahn¸berquerung	q4::inwork 15374,13542 15370,13508
@@ -1840,6 +1840,10 @@ L¸bbener Str.: Fuﬂg‰nger	q2 12729,10515 12731,10547
 #: note: es war nur einer (2013-10-22), aber der Weg ist so schlecht, dass er auch einen Eintrag in handicap verdient
 Parforceweg: einige umgest¸rzte B‰ume	q4 -643,7252 -728,7310 -1020,7446 -1328,7597 -1643,7828
 (Brockenweg - Blankenburger Pflasterweg): schmaler Pfad	q3+ 15102,20723 15119,20655 15226,20587
+(S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger	q1 14575,9648 14627,9609 14705,9578
+(S-Bahnhof Treptower Park - Rosengarten): Parkplatzverkehr	q1 14705,9578 14791,9537
+#: XXX_prog BS am Parkplatz (ansonsten -> q1)
+(S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger, Bordstein	q2 14791,9537 14844,9513
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

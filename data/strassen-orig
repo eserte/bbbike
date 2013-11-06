@@ -448,7 +448,7 @@ Bulgarische Str.	N 15591,8848 15680,8914 15778,8990
 Puschkinallee	H 13535,10184 13579,10146 13711,10022 13789,9949 13829,9905 13884,9882 13995,9834 14193,9746
 Puschkinallee	HH 14193,9746 14318,9688 14780,9480 14819,9462 14883,9431 15383,9191
 (Treptower Park)	NN 14529,9141 14601,9201 14748,9420 14780,9480
-(Treptower Park: am Rosengarten)	NN 14819,9462 14910,9643
+(Treptower Park: am Rosengarten)	NN 14819,9462 14844,9513 14910,9643
 (Treptower Park: südl./westl. des Karpfenteichs)	NN 15378,8668 15335,8714 15036,8728 14949,8773 14906,8822 14854,8964
 (Treptower Park: um das Sowjetische Ehrenmal herum)	NN 14614,9052 14854,8964 15057,8910 15159,8934 15181,8967 15187,9038 15154,9106 15025,9171 14950,9307 14898,9364 14883,9431
 (Treptower Park: östl. des Karpfenteichs)	NN 15335,8714 15235,8841 15223,8893 15159,8934
@@ -489,7 +489,7 @@ Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,
 Kynaststr.	N 14805,10518 14832,10512 14843,10621 14882,10732 14906,10820
 #: XXX wann erfolgt der Rückbau der Ersatzstraße?
 #: osm_watch: way id="58929537" version="26"
-#: last_checked: 2013-10-31
+#: last_checked: 2013-11-05
 #: check_frequency: 60d
 Kynaststr. [Ersatzstraße]	NN 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
 (Alt-Stralau - Spreeufer)	NN 14652,10201 14569,10055
@@ -11976,8 +11976,10 @@ Schlosserweg	N 13168,2931 13129,2999 13048,3134 12726,3684 12724,3746 12663,3762
 (Uferweg, Treptower Park)	NN 15778,8990 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726
 (Uferweg - S-Bahnhof Treptower Park/Puschkinallee)	NN 14697,9726 14645,9710 14575,9648 14496,9705 14443,9731
 (Uferweg - S-Bahnhof Treptower Park)	NN 14443,9731 14361,9772
-#: XXX ist hier asphaltiert? Beleuchtet?
 (Uferweg - Puschkinallee)	NN 14443,9731 14318,9688
+(S-Bahnhof Treptower Park - Rosengarten)	NN 14575,9648 14627,9609 14705,9578
+(S-Bahnhof Treptower Park - Rosengarten)	N 14705,9578 14791,9537
+(S-Bahnhof Treptower Park - Rosengarten)	NN 14791,9537 14844,9513
 (Treptower Hafen)	NN 14697,9726 14674,9764 14500,9856
 (S-Bahnhof - Treptower Hafen)	NN 14361,9772 14436,9784 14460,9814 14483,9843
 (Uferweg - Parkweg)	NN 14500,9856 14483,9843 14460,9871 14448,9922
@@ -11995,7 +11997,7 @@ Feldweg (Blankenfelde)	N 9879,25933 10081,26057
 #: XXX Benennungsabsicht des BA Pankow: "Straße nach Arkenberge"
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3620
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036478781743/478781743/00057240/40-Anlagen/02/BenennungsabsichtfuerdieoeffentlicheStrasseabe.pdf
-#: next_check: 2013-11-20
+#: next_check: 2013-12-31
 (zum Arkenberger Kiessee)	N 11929,23946 11514,24284 11760,24470 11768,24522 11706,24797 11272,25373 11248,25403 11077,25604 10678,26074 10566,26205
 Rathenaustr.	N 18861,6000 18970,6110 19033,6167 19118,6248 19161,6291 19245,6379
 #: note: Anlieger frei, Zugang zum Friedhof
