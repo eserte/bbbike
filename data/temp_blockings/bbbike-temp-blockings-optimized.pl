@@ -2941,6 +2941,26 @@ userdel	q4::inwork 8465,18365 8286,18331
          'data' => 'userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020670',
+         'until' => 1385852399,
+         'text' => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis Ende November 2013 ',
+         'from' => 1384038000,
+         'id' => 2511,
+         'data' => 'userdel	q4::inwork; 8731,7956 8731,7990 8731,8020 8731,8050 8730,8079 8776,8285 8807,8353
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020674',
+         'until' => 1385161200,
+         'text' => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 22.11.2013',
+         'from' => 1384077600,
+         'id' => 2512,
+         'data' => 'userdel	q4::inwork; 10738,12364 10804,12291
+',
+         'type' => 'handicap'
        }
      
 );

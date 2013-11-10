@@ -22075,4 +22075,22 @@ EOF
 userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 EOF
      },
+     { from  => 1384038000, # 2013-11-10 00:00
+       until => 1385852399, # 2013-11-30 23:59
+       text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis Ende November 2013 ',
+       type  => 'handicap',
+       source_id => 'IM_020670',
+       data  => <<EOF,
+userdel	q4::inwork; 8731,7956 8731,7990 8731,8020 8731,8050 8730,8079 8776,8285 8807,8353
+EOF
+     },
+     { from  => 1384077600, # 2013-11-10 11:00
+       until => 1385161200, # 2013-11-23 00:00
+       text  => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 22.11.2013',
+       type  => 'handicap',
+       source_id => 'IM_020674',
+       data  => <<EOF,
+userdel	q4::inwork; 10738,12364 10804,12291
+EOF
+     },
     );

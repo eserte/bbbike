@@ -467,10 +467,11 @@ Friedrich-Kunert-Weg: Verl‰ngerung?	? -13714,1747 -13658,1730
 # 
 # REMOVED (realisiert; Park existiert eigentlich noch nicht, nur ein Spielplatz) --- #: by: http://www.sanierung-osw.de/index.php?id=419 (Blockdurchquerung) --- #: XXX asphaltiert, wahrscheinlich f¸r Radfahrer frei --- #: XXX evtl. auch Park einzeichnen, Name? --- #: last_checked: 2013-08-19 --- (Siemensstr./Deulstr. - Wilhelminenhofstr.): wann wird hier erˆffnet? Nachts beleuchtet?	?::inwork 17842,6639 17852,6589 17826,6495
 # 
-#: osm_watch: way id="55948936" version="2"
+#: osm_watch: way id="55948936" version="3"
+#: XXX laut osm auch "Seeadlerweg", stimmt das??? Nicht mehr construction=yes.
+#: XXX Sackgasse
 #: last_checked: 2013-07-06
-#: next_check: 2014-04-15
-Neues Wohnviertel in Rudow: hier entstehen auch neue Straﬂen (Verbundsteinpflaster?), evtl. mit Straﬂennamen?	?::inwork 16491,-160 16642,-543
+Neues Wohnviertel in Rudow: wie heiﬂt die Straﬂe parallel zum Seeadlerweg? Wie ist die Qualit‰t (wahrscheinlich Verbundsteinpflaster?)?	?::inwork 16477,-160 16491,-160 16642,-543
 # 
 #: XXX neue Straﬂen/Wege im Zuge des Bebauungsplans XV-29b, Ortsteil Altglienicke vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/beteiligungxv-29bve.html vvv
@@ -840,14 +841,15 @@ Edith-Stein-Str.: Qualit‰t nach den Bauarbeiten?	?::inwork 14089,13247 14035,131
 #: by: https://www.spd-fraktion-mitte.de/system/files/dateien/anfrage/2011-11/2726/ka-0012-iv.pdf (Abschluss Ende 2013)
 #: note: Planstraﬂe im Block 902
 #: XXX in Berlin.coords.data mit "(geplant)" gekennzeichnet
-#: osm_watch: way id="182859952" version="7"
+#: osm_watch: way id="182859952" version="9"
 #: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014)
+#: XXX laut osm schon fertiggestellt! (8.12.2013)
 #: last_checked: 2013-10-22 (teilweise schon fertiggestellt, Asphalt, anscheinend schon befahrbar, aber Anbindung an Beusselbr¸cke fehlt)
-#: next_check: 2014-01-01
-Erna-Samuel-Straﬂe: Straﬂe wird gebaut, Qualit‰t, Radwege/streifen, genaue Lage?	?::inwork 5340,14050 5522,14195 5704,14252 5954,14303 6106,14280
+#: next_check: 2013-11-08
+Erna-Samuel-Straﬂe: Ist die Straﬂe schon fertigestellt? Qualit‰t, Radwege/streifen, genaue Lage?	?::inwork 5340,14050 5522,14195 5704,14252 5954,14303 6106,14280
 # 
 #: last_checked: 2013-10-22
-#: next_check: 2014-01-01
+#: next_check: 2013-11-08
 #: XXX wird evtl. zusammen mit der Erna-Samuel-Straﬂe fertiggestellt?
 Weg im Stadtgarten Moabit: Qualit‰t? Nachts beleuchtet?	?::inwork 5708,14077 5667,14212
 # 
@@ -1743,6 +1745,28 @@ S8: wird in der Hauptverkehrszeit bis KW verl‰ngert	? 26029,-6170 26057,-6241
 #: by: http://www.tagesspiegel.de/berlin/berlin-koepenick-aus-fuer-berlins-letzte-ruderfaehre/8937114.html (nein, kein Hinweis darauf)
 #: next_check: 2014-03-01
 Ersatz f¸r die F24?	? 29959,3031 29968,2986
+# 
+#: XXX neue Straﬂen in Potsdam: Qualit‰t? Genauer Verlauf? vvv
+#: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
+#: XXX fehlt in Potsdam.coords.data, PLZ=14473 vvv
+#: osm_watch: way id="174465897" version="1" brb
+#: last_checked: 2013-05-09
+#: next_check: 2013-11-09
+An der Kornm¸hle (Potsdam)	?::inwork -12712,-2172 -12728,-2227
+#: osm_watch: way id="174465898" version="1" brb
+#: last_checked: 2013-05-09
+#: next_check: 2013-11-09
+Am Speicher (Potsdam)	?::inwork -12783,-2269 -12771,-2220 -12754,-2154
+#: XXX ^^^
+#: by: ^^^
+#: XXX ^^^
+# 
+#: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
+#: XXX fehlt in Potsdam.coords.data, PLZ=14473
+#: osm_watch: way id="174465895" version="1" brb
+#: last_checked: 2013-05-09
+#: next_check: 2013-11-09
+Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Planstraﬂe D)	? -12712,-2233 -12728,-2227 -12771,-2220 -12803,-2219
 # 
 #: ignore ^^^
 #: section ^^^
@@ -3196,28 +3220,6 @@ An der Jubelitz (Potsdam-Fahrland): Qualit‰t?	? -17173,7182 -17268,7122 -17170,7
 #: XXX fehlt in Potsdam.coords.data: PLZ=14476
 #: by: http://www.potsdam.de/cms/dokumente/10086330_1189396/91ec2de3/Amtsblatt_12_11.pdf
 M¸llerweg (Potsdam-Fahrland): Qualit‰t? Genauer Verlauf?	? -15503,6422 -15392,6426
-# 
-#: XXX neue Straﬂen in Potsdam: Qualit‰t? Genauer Verlauf? vvv
-#: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
-#: XXX fehlt in Potsdam.coords.data, PLZ=14473 vvv
-#: osm_watch: way id="174465897" version="1" brb
-#: last_checked: 2013-05-09
-#: next_check: 2013-11-09
-An der Kornm¸hle (Potsdam)	?::inwork -12712,-2172 -12728,-2227
-#: osm_watch: way id="174465898" version="1" brb
-#: last_checked: 2013-05-09
-#: next_check: 2013-11-09
-Am Speicher (Potsdam)	?::inwork -12783,-2269 -12771,-2220 -12754,-2154
-#: XXX ^^^
-#: by: ^^^
-#: XXX ^^^
-# 
-#: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
-#: XXX fehlt in Potsdam.coords.data, PLZ=14473
-#: osm_watch: way id="174465895" version="1" brb
-#: last_checked: 2013-05-09
-#: next_check: 2013-11-09
-Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Planstraﬂe D)	? -12712,-2233 -12728,-2227 -12771,-2220 -12803,-2219
 # 
 # REMOVED (Weg existiert, wassergebundene Decke, unbeleuchtet, Radfahren frei, allerdings Bordstein an beiden Seiten, wenn man nicht via angrenzenden Bordstein kommt, und wahrscheinlich sowieso verkehrlich eher uninteressant) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120405.1310.368452.html (Radfahren erlaubt) --- Preuﬂenpark: Qualit‰t des Weges? Nachts beleuchtet?	? 4374,9409 4353,9430 4281,9393 4246,9406
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2012
