@@ -177,7 +177,7 @@ Quickborner Str.	1 8016,21499 8162,21302
 #: by: Jessaï Arakelian
 #: confirmed_by: srt
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
-Revaler Str. (Straßenbahn)	1s:q3 13588,11490 13473,11456
+Revaler Str. (Straßenbahn)	1s:q3 13588,11490 13565,11492 13473,11456
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
 Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
@@ -963,7 +963,7 @@ A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 U
 Rubensstr.	1 6429,7876 6307,7893
 Bäumerplan	1 8527,7939 8553,7795
 Bäumerplan	1 8512,7757 8466,7918
-Mierendorffstr.	1 3645,13189 3534,13098
+Mierendorffstr.	1 3645,13201 3534,13098
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s:q3 11012,13278 11085,13239
 Zwerghuhnweg	1s 15615,410 15565,379
@@ -2445,6 +2445,10 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2013-11-12
+#: next_check: 2014-01-15
+Erna-Samuel-Str.: Einbahnstraße bis zur kompletten Fertigstellung	1::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
+# 
 #: XXX: allerdings könnten die Bauzäune beiseite geschoben sein, so dass ein Durchgang existiert
 #: XXX: "inwork" ist ein Euphemismus --- es sind keinerlei Anzeichen von Bauarbeiten zu sehen
 #: last_checked: 2013-11-04
@@ -2467,10 +2471,7 @@ Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17366,12357
 #: next_check: 2015-08-30
 tragen (2 Stufen)	0:5 8818,13365
 # 
-#: osm_watch: way id="182562157" version="2"
-#: last_checked: 2013-11-04
-#: next_check: 2013-11-11
-(Bautzener Str. - Südkreuz): Bauzaun, Zugang noch nicht erlaubt	2:inwork 8185,9338 8207,9324 8204,9046
+# REMOVED (habe Leute hier langlaufen/fahren sehen) --- #: osm_watch: way id="182562157" version="2" --- #: last_checked: 2013-11-04 --- #: next_check: 2013-11-11 --- (Bautzener Str. - Südkreuz): Bauzaun, Zugang noch nicht erlaubt	2:inwork 8185,9338 8207,9324 8204,9046
 # 
 #: source_id: INKO_095722_COPY_1
 #: XXX siehe auch routing_helper addition
@@ -2484,7 +2485,6 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 #: next_check: 2013-12-31 vvv
 Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8588,13673 8594,13637
 Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8619,13689 8626,13641
-Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8659,13708 8668,13645
 #: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -2542,14 +2542,6 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 # REMOVED (wieder offen) --- #: last_checked: 2013-02-04 --- #: XXX Bauzäune waren im Dezember 2012 weg, aber im Februar 2013 wurde wieder gebaut --- Am Sudhaus: Bauarbeiten, manchmal noch gesperrt	2:inwork 12134,8172 12282,8204
 # REMOVED (obwohl, Bauzäune stehen noch bereit) --- #: by: rjoop --- #: last_checked: 2012-11 --- #: next_check: 2013-03-15 --- #: osm_watch: way id="35326794" version="7" --- Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 # 
-#: XXX nach den Bauarbeiten gibt es wahrscheinlich keine Fahrbahn mehr --- wird man durch den Fußgängerbereich gut durchfahren können?
-#: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
-#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
-#: XXX siehe auch Einträge in handicap_s-orig
-#: last_checked: 2013-11-04 (halb-legal kommt man schon durch)
-#: check_frequency: 7d
-Helsingforser Str.: Bauarbeiten, auch der Gehweg ist nicht passierbar	2:inwork 13496,11384 13427,11431
-# 
 # REMOVED (fertig asphaltiert) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html --- #: next_check: 2013-03-31 --- #: XXX nach den Bauarbeiten bessere Qualität? Zurzeit nur Q1-, siehe qualitaet_s-orig --- (Bellevuepark): Asphaltbauarbeiten	2:inwork 22787,5582 22855,5554 22835,5452 22851,5321
 # 
 #: last_checked: 2013-08-20
@@ -2592,10 +2584,7 @@ Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht mögl
 #: osm_watch: way id="54500456" version="10" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 # 
-#: last_checked: 2013-08-20
-#: check_frequency: 90d
-Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8186,14150 8238,14181
-# 
+# REMOVED (wahrscheinlich sind Sperrungen hier selten) --- #: last_checked: 2013-11-12 --- #: check_frequency: 90d --- Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8186,14150 8238,14181
 # REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-08-30 --- #: next_check: 2012-10-15 --- Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
 # REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-05-01 --- #: next_check: 2012-07-15 --- Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
 # REMOVED (now in handicap_l-orig) --- #: last_checked: 2011-11-27 --- #: next_check: 2012-03-01 --- Am Alten Markt: wegen Bauarbeiten (Wiederaufbau des Schlosses) gesperrt	2:inwork -12643,-1694 -12624,-1598
@@ -2672,7 +2661,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 # REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5062,6295 4997,6331 4971,6345
 # 
-#: last_checked: 2013-08-20
+#: last_checked: 2013-11-12
 #: next_check: 2013-12-31
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # 
@@ -2874,8 +2863,8 @@ Brixplatz	1 419,12397 335,12343 208,12305
 Brixplatz	1 179,12434 269,12462 329,12503
 Lerschpfad	1 2181,12276 2152,12389
 Gottfried-Keller-Str.	1 1697,11911 1792,11889
-tragen (5 Stufen)	0:20 3795,13541
-Schranke	BNP:5 3981,13292
+tragen (5 Stufen)	0:20 3829,13572
+Schranke	BNP:5 3966,13333
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5 3822,14195
 Wiebestr.: (Privatweg)	2 4527,13232 4495,13107
 Spandauer Damm: queren nur mit tragen möglich	3nocross 3034,12502 3189,12519 3280,12512

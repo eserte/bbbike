@@ -18,18 +18,22 @@
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-11-04
+#: last_checked: 2013-11-12
 #: check_frequency: 7d
-#: XXX siehe auch den Eintrag in gesperrt-orig
-# REMOVED (Sackgasse) --- Marchlewskistr., Helsingforser Str.: Bauarbeiten, u.U. Ausweichen auf Gehweg	q3::inwork; 13473,11456 13496,11384
-# REMOVED (Einbahnstraﬂe) --- Helsingforser Str.: Bauarbeiten, Einbahnstraﬂe, u.U. Ausweichen auf Gehweg	q3::inwork; 13496,11384 13541,11355
 #: XXX_prog: BS (beide Seiten)
-Helsingforser Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13473,11456 13427,11431
+Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
 # 
-#: last_checked: 2013-11-04 (Asphaltierungsarbeiten) vvv
+#: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
+#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
+#: XXX kommt man nach den Bauarbeiten hier noch gut durch?
+#: last_checked: 2013-11-12 (halb-legal kommt man schon durch)
+#: check_frequency: 7d
+Helsingforser Str.: Bauarbeiten, einige Fuﬂg‰nger	q3::inwork 13496,11384 13427,11431
+# 
+#: last_checked: 2013-11-12 (Asphaltierungsarbeiten) vvv
 #: check_frequency: 7d vvv
-Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe, Asphaltdecke wurde entfernt	q3::inwork; 13473,11456 13366,11651
-Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
+Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 13473,11456 13366,11651
+# REMOVED (man wird ¸ber die asphaltierte Seite geleitet) --- Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -46,11 +50,15 @@ Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 14157,934
 # 
 ### Mitte ###
 # 
+#: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren
+#: last_checked: 2013-11-12
+Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
+# 
 # REMOVED --- #: last_checked: 2013-06-04 --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html
 #: source_id: IM_020581
-#: last_checked: 2013-10-15
+#: last_checked: 2013-11-12
 #: next_check: 2013-11-30
 #: priority: #A
 Chausseestr.: direkte Zufahrt s¸dlich der Invalidenstraﬂe nicht mˆglich, umst‰ndliche Wegf¸hrung	q4::inwork 9042,13707 8935,13844
@@ -99,7 +107,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: source_id: INKO_113363 vvv
 #: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt vvv
 #: osm_watch: way id="197160274" version="1" vvv
-#: last_checked: 2013-11-07 (webcam) vvv
+#: last_checked: 2013-11-12 vvv
 #: next_check: 2013-12-01 vvv
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, eng	q4::inwork 8743,11663 8837,11676
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, Bordstein	q3::inwork 8837,11676 9000,11727
@@ -114,7 +122,7 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, Bordstei
 #: check_frequency: 60d
 Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
-#: last_checked: 2013-10-15 vvv
+#: last_checked: 2013-11-12 vvv
 #: next_check: 2013-12-31 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -124,6 +132,7 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und He
 # REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8659,13708 8626,13692 8619,13689
 Scharnhorststr.: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
 Schwarzer Weg: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
+Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
 # REMOVED (wieder offen ab 2013-08-29) --- #: source_id: IM_019009 --- #: source_id: IM_018437 --- Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: next_check ^^^
 #: last_checked: ^^^
@@ -132,6 +141,10 @@ Schwarzer Weg: Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13
 #: next_check: 2013-11-28
 #: XXX anscheinend Baulager f¸r die S21-Bauarbeiten
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
+# 
+#: last_checked: 2013-11-12
+#: next_check: 2014-01-15
+Siemensstr.: Bauarbeiten, Einbahnstraﬂe, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
 # 
 #: last_checked: 2013-09-25 vvv
 #: check_frequency: 60d vvv
@@ -662,7 +675,7 @@ Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
 #: last_checked: 2013-09-16 (noch immer Radfahren verboten)
 #: check_frequency: 120d
 Heinrich-Lassen-Park: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q3 6664,8787 6705,8730 6740,8682 6815,8691 6912,8617
-(Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7496,14660
+(Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7527,14644 7486,14652
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
 Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13251,7972
@@ -1844,6 +1857,9 @@ Parforceweg: einige umgest¸rzte B‰ume	q4 -643,7252 -728,7310 -1020,7446 -1328,75
 (S-Bahnhof Treptower Park - Rosengarten): Parkplatzverkehr	q1 14705,9578 14791,9537
 #: XXX_prog BS am Parkplatz (ansonsten -> q1)
 (S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger, Bordstein	q2 14791,9537 14844,9513
+#: XXX_prog BS an der Wintersteinstr (ansonsten -> q2)
+#: note: offizieller gemeinsamer Rad- und Gehweg
+(Spreeuferweg - Wintersteinstr.): Fuﬂg‰nger, Bordstein	q3 3654,12672 3741,12607
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2063,7 +2079,7 @@ M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20334,16043
 #: by: Marijke Maij
 (Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q1 6841,7283 6846,7306 7062,7376 7108,7416 7220,7442
 #: by: Michael C.:
-Herschelstr.: enge Wohnstraﬂe	q1 3222,13252 3262,13406 3276,13481 3280,13625
+Herschelstr.: enge Wohnstraﬂe	q1 3200,13277 3239,13461 3262,13547 3280,13625
 #: by: Skander Morgenthaler:
 #: corrected_by: srt (Radweg zwischen Fuﬂweg und Spielplatz -> ...)
 Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
@@ -2131,7 +2147,7 @@ Berchtesgadener Str.: Fuﬂg‰nger, Bordsteine	q2 6361,9175 6359,9244
 #: by: Uta Voigt:
 Waldstr.: enge Straﬂe	q1 9718,20498 9724,20291 9723,20269
 #: by: Wolfram (...007...):
-Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3248,12954 3292,13123 3315,13231 3346,13342 3366,13432 3395,13605
+Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3240,12966 3283,13132 3310,13253 3349,13406 3371,13501 3395,13605
 (Bad Kissingen): Fuﬂg‰nger	q2 3634,7601 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): Fuﬂg‰nger, teilweise eng	q3 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
 Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3587,7560
@@ -2146,14 +2162,14 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
 (Berolinastr.): Fuﬂg‰nger	q1 11885,12905 11906,12947 11921,12990
-#: XXX_prog BS (am ˆstlichen Ende)
+#: XXX_prog BS (am ˆstlichen Ende) (ansonsten q1)
 (Berolinastr.): Fuﬂg‰nger, Bordstein	q2 11921,12990 11983,12949
 (Berolinastr.): Fuﬂg‰nger	q1 11921,12990 11865,13027
 #: XXX_prog BS (am westlichen Ende)
 (Berolinastr.): Fuﬂg‰nger, Bordstein	q2 11815,13045 11719,13088
 (Berolinastr.): Weg am Spielplatz vorbei	q2 11865,13027 11815,13045
-#: XXX_prog BS (zur Mollstr. hin)
-(Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q2 11865,13027 11874,13048 11896,13075
+#: XXX_prog BS (zur Mollstr. hin) (ansonsten -> q2)
+(Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q3 11865,13027 11874,13048 11896,13075
 #: XXX_prog BS (zur Mollstr. hin)
 (Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q2 11656,13100 11681,13161
 (Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12039,12675
@@ -2279,9 +2295,9 @@ Rossitter Weg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Olbestr. - Lamberstr.): Fuﬂg‰nger	q2 3280,13625 3304,13685 3365,13695
 (Goslarer Ufer - Am Bahnhof Jungfernheide): Fuﬂg‰nger	q1 4187,13704 4156,13914 4151,13961 4076,14203 4011,14245
 (Lise-Meitner-Str. - Goslarer Ufer): Fuﬂg‰nger	q1 4011,14245 3957,14229
-(Verl‰ngerung der Ilsenburger Str. (Charlottenburg)): Fuﬂg‰nger	q2 3981,13292 3975,13448
-(Schwarzer Weg): Fuﬂg‰nger	q2 4255,13222 4185,13386 4081,13418 3975,13448 3797,13499
-(Dahlienweg): Fuﬂg‰nger	q2 3797,13499 3795,13541 3795,13579
+(Verl‰ngerung der Ilsenburger Str. (Charlottenburg)): Fuﬂg‰nger	q2 3966,13333 3969,13487
+(Schwarzer Weg): Fuﬂg‰nger	q2 4237,13224 4167,13375 4093,13429 3969,13487 3823,13540
+(Dahlienweg): Fuﬂg‰nger	q2 3823,13540 3829,13572 3833,13590
 (Lambertstr. - Lise-Meitner-Str.): Fuﬂg‰nger, schmal	q3 3508,13727 3713,13787
 (Bonhoefferufer - Tegeler Weg): Fuﬂg‰nger	q2 3154,12936 3164,13067
 Eosanderstr.: Fuﬂg‰nger	q1 3344,12611 3271,12609

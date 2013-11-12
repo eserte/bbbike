@@ -2609,7 +2609,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
          'text' => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Ende 2013',
          'from' => 1349931600,
          'id' => 2442,
-         'data' => '#: last_checked: 2013-10-12
+         'data' => '#: last_checked: 2013-11-12
 userdel	q2::inwork; 6572,14639 6299,14660
 ',
          'type' => 'handicap'
@@ -2922,16 +2922,7 @@ userdel	q4::inwork 8465,18365 8286,18331
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_020626',
-         'until' => 1384268400,
-         'text' => 'Behrenstr.: Baustelle zwischen Wilhelmstr. und Glinkastr., Richtung Friedrichstr. bis zum 12.11.2013 gesperrt ',
-         'from' => 1383462000,
-         'id' => 2509,
-         'data' => 'userdel	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_020657',
          'until' => 1384786800,
@@ -2944,7 +2935,7 @@ userdel	q4::inwork 8465,18365 8286,18331
        },
        {
          'source_id' => 'IM_020670',
-         'until' => 1385852399,
+         'until' => 1385319600,
          'text' => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis Ende November 2013 ',
          'from' => 1384038000,
          'id' => 2511,
@@ -2954,13 +2945,33 @@ userdel	q4::inwork 8465,18365 8286,18331
        },
        {
          'source_id' => 'IM_020674',
-         'until' => 1385161200,
+         'until' => 1385132400,
          'text' => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 22.11.2013',
          'from' => 1384077600,
          'id' => 2512,
          'data' => 'userdel	q4::inwork; 10738,12364 10804,12291
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020680',
+         'until' => 1385391600,
+         'text' => 'Hosemannstr./Roelckestr.: zwischen Paul-Grasse-Str. und Lehderstr. Richtung Norden Bauarbeiten, Fahrbahn gesperrt, bis Ende November 2013',
+         'from' => 1384124400,
+         'id' => 2513,
+         'data' => 'userdel	q4::inwork; 12783,15921 12817,15985 12842,16032
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1311/nachricht5105.html',
+         'until' => 1384729199,
+         'text' => 'Schönerlinder Straße: zwischen Str. am Posseberg und Str. am Vorwerk (unter der Autobahnbrücke) für alle Verkehrsteilnehmer komplett gesperrt, 16. November 2013 08:00 Uhr bis 17. November 2013 24:00 Uhr',
+         'from' => 1384498800,
+         'id' => 2514,
+         'data' => 'userdel	2::inwork 12624,25570 12694,25696
+',
+         'type' => 'gesperrt'
        }
      
 );

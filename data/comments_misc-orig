@@ -278,7 +278,7 @@ Bus 247	busroute_N 7198,15656 7354,15817 7436,15746
 Bus 101, Bus 106	busroute_N 5368,13406 5351,13238 5328,13019
 Bus 107	busroute_N 9855,26032 9863,26000 9879,25933 9882,25918 9900,25796 9912,25130 9900,24943 9882,24724 9797,24154 9794,23980 9774,23936 9625,23781 9415,23699
 Bus M27	busroute_N 4295,13653 4363,13336 4382,13232
-Bus M27	busroute_N 3559,13177 3587,13296 3642,13548
+Bus M27	busroute_N 3556,13200 3583,13313 3642,13548
 Bus M27	busroute_N 3739,13563 3724,13702 3713,13787 3702,13865 3695,13902
 Bus M21, Bus M27	busroute_N 3005,13728 3320,13796 3695,13902
 Bus M21	busroute_N 3695,13902 3663,14137
@@ -524,7 +524,7 @@ Bus 395, Bus 398	busroute_N 24578,11928 24739,11968 24727,12027 24936,12071 2507
 (Erbendorfer Weg - Lichterfelder Ring): markierter Radweg	CS 7131,694 7117,725 7023,694 6941,690
 Wall am Kiez: Hausdurchfahrt	CP2; -13331,-1802 -13394,-1771
 #: by: rjoop
-Tegeler Weg: Alternativ kann der Spreeuferweg genutzt werden	CS 3164,13067 3143,13175 3123,13274 3080,13459 3038,13612
+Tegeler Weg: Alternativ kann der Spreeuferweg genutzt werden	CS 3164,13067 3140,13174 3112,13296 3066,13514 3038,13612
 #: by: trixi (putsch):
 #: note: genau hier: 19221,9499
 #: XXX_indoor: gehört das nach comments_scenic? Oder hilft es bei der Orientierung hier?
@@ -786,7 +786,7 @@ Gaslaternen-Freilichtmuseum Berlin	CS 5903,11683 5835,11768 5858,11863 5900,1191
 #: ignore ^^^
 #: ignore vvv
 Suarezstr.: Wochenmarkt Do 9.00-15.00, aber anscheinend nur auf dem Bürgersteig	CS 2921,10928 2845,10840
-Mierendorffplatz: Wochenmarkt Mi+Sa, 8.00-13.00, zwar auf der Fahrbahn, aber der Radweg scheint weiterhin befahrbar zu sein	CS 3534,13098 3645,13189
+Mierendorffplatz: Wochenmarkt Mi+Sa, 8.00-13.00, zwar auf der Fahrbahn, aber der Radweg scheint weiterhin befahrbar zu sein	CS 3534,13098 3645,13201
 Fehrbelliner Platz: Wochenmarkt Di+Do, 11.00-16.00, sowie Kunst- und Trödelmarkt Sa+So 10.00-16.00, nur auf der Parkplatzfläche	CS 4339,9224
 Kolberger Platz: Wochenmarkt Mi+Sa, 08.00-14.00, Fahrbahn weiterhin befahrbar, nur Halteverbote	CS; 2786,7721 2751,7811 2880,7801
 Str. des 17. Juni: Kunst- und Trödelmarkt, Sa+So, 10.00-17.00, Radweg wird freigehalten	CS; 5758,11895 5565,11871 5478,11860

@@ -1011,7 +1011,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2087,14078
 	X 2881,14061
 	X 3038,13612
-	X 3123,13274
+	X 3112,13296
 	X 3711,13202
 	X 3967,13211
 	X 4382,13232
@@ -1758,6 +1758,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10408,9800
 	X 9972,12184
 #: note: keine Anforderungsampel
+#: XXX_prog: man bekommt wohl niemals eine durchgängige Grünphase als Fußgänger
+#: XXX_prog: auch beim Überqueren der Karl-Marx-Allee im Zuge der Koppenstraße relevant
 	F 12612,12470
 	X 14461,11738
 	X 21135,10995
@@ -2301,9 +2303,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 5807,12070
 	F 6833,15215
 #: note: Luftbild
-	F 3537,13182
+	F 3542,13203
 #: note: Luftbild
-	X 3408,13210
+	X 3429,13227
 	X 7733,8023
 	X 17533,14484
 	X 18166,14277
@@ -2431,7 +2433,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX ^^^
 # 
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2013-10-12 vvv
+#: last_checked: 2013-11-12 vvv
 #: next_check: 2013-12-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8879,13913

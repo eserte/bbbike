@@ -7954,11 +7954,11 @@ userdel	2::inwork 9668,5733 9456,5644 9447,5641 9368,5608 9161,5535
 EOF
      },
      { from  => undef, # 
-       until => 1214463306, # undef # war, ist nicht mehr: Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich;	3 9996,13678 10085,13684 10142,13556; 	3 10142,13556 10085,13684 10220,13691
+       until => 1214463306, # undef # war, ist nicht mehr: Abbiegen in Kleine Auguststr. und Joachimstr. nicht möglich;	3 9996,13678 10085,13684 10142,13556; 	3 10142,13556 10085,13684 10220,13694
        text  => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 10220,13691 10085,13684 9996,13678 9945,13669
+userdel	1::inwork 10220,13694 10085,13684 9996,13678 9945,13669
 EOF
      },
      { from  => 1177625221, # 
@@ -21382,7 +21382,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_115299',
        data  => <<EOF,
-#: last_checked: 2013-10-12
+#: last_checked: 2013-11-12
 userdel	q2::inwork; 6572,14639 6299,14660
 EOF
      },
@@ -21970,7 +21970,7 @@ EOF
        source_id => 'IM_020486',
        data  => <<EOF,
 #: by: http://www.bvg.de/index.php/de/56927/name/fahrinfo+Update+-+was+ist+neu%3F.html (Enddatum)
-userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13691
+userdel	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13694
 EOF
      },
      { from  => 1371198900, # 2013-06-14 10:35
@@ -22076,7 +22076,7 @@ userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 EOF
      },
      { from  => 1384038000, # 2013-11-10 00:00
-       until => 1385852399, # 2013-11-30 23:59
+       until => 1385319600, # 2013-11-24 20:00
        text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis Ende November 2013 ',
        type  => 'handicap',
        source_id => 'IM_020670',
@@ -22085,12 +22085,30 @@ userdel	q4::inwork; 8731,7956 8731,7990 8731,8020 8731,8050 8730,8079 8776,8285 
 EOF
      },
      { from  => 1384077600, # 2013-11-10 11:00
-       until => 1385161200, # 2013-11-23 00:00
+       until => 1385132400, # 2013-11-22 16:00
        text  => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 22.11.2013',
        type  => 'handicap',
        source_id => 'IM_020674',
        data  => <<EOF,
 userdel	q4::inwork; 10738,12364 10804,12291
+EOF
+     },
+     { from  => 1384124400, # 2013-11-11 00:00
+       until => 1385391600, # 2013-11-25 16:00
+       text  => 'Hosemannstr./Roelckestr.: zwischen Paul-Grasse-Str. und Lehderstr. Richtung Norden Bauarbeiten, Fahrbahn gesperrt, bis Ende November 2013',
+       type  => 'handicap',
+       source_id => 'IM_020680',
+       data  => <<EOF,
+userdel	q4::inwork; 12783,15921 12817,15985 12842,16032
+EOF
+     },
+     { from  => 1384498800, # 2013-11-15 08:00
+       until => 1384729199, # 2013-11-17 23:59
+       text  => 'Schönerlinder Straße: zwischen Str. am Posseberg und Str. am Vorwerk (unter der Autobahnbrücke) für alle Verkehrsteilnehmer komplett gesperrt, 16. November 2013 08:00 Uhr bis 17. November 2013 24:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1311/nachricht5105.html',
+       data  => <<EOF,
+userdel	2::inwork 12624,25570 12694,25696
 EOF
      },
     );
