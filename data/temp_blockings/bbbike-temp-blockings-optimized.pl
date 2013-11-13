@@ -1,6 +1,164 @@
-$#temp_blocking = 165;
+$#temp_blocking = 35;
 push @temp_blocking,
 (
+       {
+         'source_id' => 'http://partner-fuer-spandau.de/Weihnachtsmarkt-2013_604_0.html',
+         'data' => 'userdel	2::temp -3275,14407 -3231,14383 -3204,14368 -3155,14340
+userdel	2::temp -3275,14407 -3338,14333
+userdel	2::temp -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
+userdel	2::temp -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+userdel	2::temp -3227,14260 -3155,14340
+userdel	2::temp -3227,14260 -3293,14304 -3338,14333
+userdel	2::temp -3552,14082 -3457,14189 -3409,14241 -3338,14333
+userdel	2::temp -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
+userdel	2::temp -3110,14408 -3174,14438 -3228,14468
+userdel	2::temp -3231,14383 -3293,14304
+',
+         'periodic' => 1,
+         'until' => 1387839599,
+         'from' => 1385247600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Spandauer Weihnachtsmarkt, vom 25. November 2013 bis 23. Dezember 2013',
+         'id' => 36,
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
          'data' => 'userdel	2::temp 9986,13412 10317,13248
@@ -2764,7 +2922,7 @@ userdel	q3::inwork 10530,14452 10723,14772
          'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende Dezember 2013',
          'from' => 1330902000,
          'id' => 2316,
-         'data' => '#: osm_watch: way id="23243508" version="37"
+         'data' => '#: osm_watch: way id="23243508" version="40"
 #: note: Radfahrer dürfen offiziell in Gegenrichtung fahren
 userdel	q2::inwork; -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 ',
@@ -3497,6 +3655,86 @@ userdel	q4::inwork 8465,18365 8286,18331
                             ]
                           ],
          'id' => 2517,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
+',
+         'periodic' => 1,
+         'until' => 1385920800,
+         'from' => 1385809200,
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2013, 12:00 bis 19:00 Uhr',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2518,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
+',
+         'periodic' => 1,
+         'until' => 1386525600,
+         'from' => 1386414000,
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 8. Dezember 2013, 12:00 bis 19:00 Uhr',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2519,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
+',
+         'periodic' => 1,
+         'until' => 1387130400,
+         'from' => 1387018800,
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 15. Dezember 2013, 12:00 bis 19:00 Uhr',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2520,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
+',
+         'periodic' => 1,
+         'until' => 1387735200,
+         'from' => 1387623600,
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2013, 12:00 bis 19:00 Uhr',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              22,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2521,
          'type' => 'gesperrt'
        }
      

@@ -288,11 +288,13 @@ EOF
      #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
      #   data => '', # dummy
      # },
-     { from  => 1353884400, # 2012-11-26 00:00, # 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
-       until => 1356303599, # 2012-12-23 23:59, # 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
-       text  => 'Spandauer Weihnachtsmarkt, vom 26. November 2012 bis 23. Dezember 2012',
+     { from  => $isodate2epoch->("2013-11-24 00:00:00"), # 1353884400, # 2012-11-26 00:00, # 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
+       until => $isodate2epoch->("2013-12-23 23:59:59"), # 1356303599, # 2012-12-23 23:59, # 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
+       periodic => 1,
+       recurrences => [['yearly', days => 26, months => 11]],
+       text  => 'Spandauer Weihnachtsmarkt, vom 25. November 2013 bis 23. Dezember 2013',
        type  => 'gesperrt',
-       source_id => 'http://partner-fuer-spandau.de/Weihnachtsmarkt-2012_479_0.html',
+       source_id => 'http://partner-fuer-spandau.de/Weihnachtsmarkt-2013_604_0.html',
        data  => <<EOF,
 userdel	2::temp -3275,14407 -3231,14383 -3204,14368 -3155,14340
 userdel	2::temp -3275,14407 -3338,14333
@@ -20181,7 +20183,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
-#: osm_watch: way id="23243508" version="37"
+#: osm_watch: way id="23243508" version="40"
 #: note: Radfahrer dürfen offiziell in Gegenrichtung fahren
 userdel	q2::inwork; -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
@@ -22208,6 +22210,50 @@ EOF
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
 userdel	2::temp 9986,13412 10317,13248
+EOF
+     },
+     { from  => 1385809200, # 2013-11-30 12:00
+       until => 1385920800, # 2013-12-01 19:00
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2013, 12:00 bis 19:00 Uhr',
+       periodic => 1,
+       recurrences => [['yearly', days => 1, months => 12]],
+       type  => 'gesperrt',
+       source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+       data  => <<EOF,
+userdel	2::temp 11317,14564 11255,14572 11163,14548
+EOF
+     },
+     { from  => $isodate2epoch->("2013-12-07 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-12-08 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 8. Dezember 2013, 12:00 bis 19:00 Uhr',
+       periodic => 1,
+       recurrences => [['yearly', days => 8, months => 12]],
+       type  => 'gesperrt',
+       source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+       data  => <<EOF,
+userdel	2::temp 11317,14564 11255,14572 11163,14548
+EOF
+     },
+     { from  => $isodate2epoch->("2013-12-14 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-12-15 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 15. Dezember 2013, 12:00 bis 19:00 Uhr',
+       periodic => 1,
+       recurrences => [['yearly', days => 15, months => 12]],
+       type  => 'gesperrt',
+       source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+       data  => <<EOF,
+userdel	2::temp 11317,14564 11255,14572 11163,14548
+EOF
+     },
+     { from  => $isodate2epoch->("2013-12-21 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-12-22 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2013, 12:00 bis 19:00 Uhr',
+       periodic => 1,
+       recurrences => [['yearly', days => 22, months => 12]],
+       type  => 'gesperrt',
+       source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+       data  => <<EOF,
+userdel	2::temp 11317,14564 11255,14572 11163,14548
 EOF
      },
     );
