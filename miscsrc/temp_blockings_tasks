@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2011,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -44,13 +44,8 @@ if ($task eq 'pl_to_yml') {
     _add_bbbike_inc();
     require BBBikeYAML;
 
-    no warnings 'once';
-    #local $YAML::UseBlock = 1;
-    use vars qw(@temp_blocking);
-    local @temp_blocking;
-    do $in_file;
-    die "Can't find \@temp_blocking array in $in_file" if not @temp_blocking;
-    BBBikeYAML::DumpFile($out_file, \@temp_blocking);
+    my $temp_blocking_records = _load_records($in_file);
+    BBBikeYAML::DumpFile($out_file, $temp_blocking_records);
 
 } elsif ($task eq 'cmp_pl_and_yml') {
     my $file_pl = shift
@@ -106,6 +101,20 @@ if ($task eq 'pl_to_yml') {
 
     yml_to_bbd($infile, filter => 'nonrecurring');
 
+} elsif ($task eq 'check_recurrences') {
+    require Getopt::Long;
+    my $prewarn_days = 7;
+    my $now;
+    if (!Getopt::Long::GetOptions(
+				  "prewarn-days=f" => \$prewarn_days,
+				  "now=s" => \$now,
+				 )) {
+	die "usage: $0 $task [--prewarn-days=...] [--now=YYYY-MM-DDTHH:MM:SS] bbbike_temp_blockings.pl\n";
+    }
+    my $pl_file = shift
+	or usage "pl file is missing";
+    my $temp_blocking_records = _load_records($pl_file);
+    check_recurrences($temp_blocking_records, prewarn_days => $prewarn_days, now => $now);
 } else {
     usage("Task $task is unknown");
 }
@@ -143,6 +152,74 @@ sub yml_to_bbd {
     }
 }
 
+sub check_recurrences {
+    my($temp_blocking_records, %args) = @_;
+
+    my $prewarn_days = delete $args{prewarn_days};
+    my $now = delete $args{now};
+    die "Unhandled args: " . join(" ", %args) if %args;
+
+    require DateTime;
+    require DateTime::Event::Easter;
+    require DateTime::Event::Recurrence;
+
+    require Encode::Locale;
+
+    my $now_dt;
+    if ($now) {
+	require DateTime::Format::ISO8601;
+	$now_dt = DateTime::Format::ISO8601->parse_datetime($now);
+    } else {
+	$now_dt = DateTime->now;
+    }
+    $now_dt = $now_dt->add(days => $prewarn_days);
+
+    my @candidates;
+    my $id = -1;
+    for my $record (@$temp_blocking_records) {
+	$id++;
+	my $set;
+	for my $recurrence (@{ $record->{recurrences} || [] }) {
+	    my($method, @method_args) = @$recurrence;
+	    my $set;
+	    if ($method eq 'easter') {
+		$set = DateTime::Event::Easter->new(day => $method_args[0]);
+	    } else {
+		## does not work: start parameter seems to work only together with interval
+		#my %method_args = @method_args;
+		#if ($method_args{start}) {
+		#    require DateTime::Format::ISO8601;
+		#    $method_args{start} = DateTime::Format::ISO8601->parse_datetime($method_args{start});
+		#}
+		#$set = DateTime::Event::Recurrence->$method(%method_args);
+		$set = DateTime::Event::Recurrence->$method(@method_args);
+	    }
+	    if ($set) {
+		my $dt_last = DateTime->from_epoch(epoch => $record->{until});
+		my $dt_next = $set->can('next') ? $set->next($dt_last) : $set->following($dt_last); # next for ::Recurrence, ->following for ::Easter
+		if ($dt_next <= $now_dt) {
+		    push @candidates, { record => $record, id => $id, date => $dt_next };
+		}
+	    }
+	}
+    }
+
+    if (@candidates) {
+	binmode STDOUT, ':encoding(console_out)';
+	my $max_text_len = 50;
+	for my $candidate (sort { $a->{date} cmp $b->{date} } @candidates) {
+	    my $text = $candidate->{record}->{text};
+	    if (length $text > $max_text_len) {
+		$text = substr($text, 0, $max_text_len-3).'...';
+	    }
+	    printf "%6d: %s %-${max_text_len}s\n", $candidate->{id}, $candidate->{date}, $text;
+	}
+	exit 1;
+    } else {
+	exit 0;
+    }
+}
+
 sub _filter_real_source_ids {
     my(@source_ids) = @_;
     my @ret_source_ids;
@@ -158,6 +235,18 @@ sub _add_bbbike_inc {
     require lib;
     require FindBin;
     lib->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+}
+
+sub _load_records {
+    my $in_file = shift;
+
+    no warnings 'once';
+    use vars qw(@temp_blocking);
+    local @temp_blocking;
+    do $in_file;
+    die "Can't find \@temp_blocking array in $in_file" if not @temp_blocking;
+
+    \@temp_blocking;
 }
 
 __END__
