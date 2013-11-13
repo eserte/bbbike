@@ -4425,7 +4425,7 @@ EOF
        source_id => 'LMS_1146113785841',
        data  => <<EOF,
 userdel	2 9098,12687 9117,12705 9171,12758 9209,12795
-userdel	2 9280,12883 9209,12795
+userdel	2 9286,12886 9209,12795
 EOF
      },
      { from  => 1146693600, # 2006-05-04 00:00
@@ -7439,7 +7439,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2009-08-29
-userdel	q4::inwork 9209,12795 9280,12883
+userdel	q4::inwork 9209,12795 9286,12886
 EOF
      },
      { from  => 1174068872, # 2007-03-16 19:14
@@ -12411,7 +12411,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009757',
        data  => <<EOF,
-userdel	2::temp 9385,13174 9250,13163
+userdel	2::temp 9385,13174 9255,13164
 EOF
      },
      { from  => 1219523521, # 2008-08-23 22:32
@@ -16979,17 +16979,17 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
-       until => 1356994740, # 1325372340, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
-       text  => 'Voltairestr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht oder nur schwer möglich',
+     { from  => 1384350862, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
+       until => $isodate2epoch->("2013-12-31 23:59:59"), # 1384350812, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
+       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 11209,12430 11329,12497
+userdel	2::temp 11329,12497 11209,12430 11273,12301 11355,12331
 EOF
      },
-     { from  => 1352734264, # 1290960699, # PERIODISCH! # früher: 1258207217, # 2009-11-14 15:00
-       until => 1356994740, # 1293836399, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt, Durchfahrt nicht möglich (Eintritt!)',
+     { from  => $isodate2epoch->("2013-11-24 00:00:00"), # 1352734264, # 1290960699, # PERIODISCH! # früher: 1258207217, # 2009-11-14 15:00
+       until => $isodate2epoch->("2013-12-31 23:59:59"), # 1356994740, # 1293836399, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2013 bis 31.12.2013, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9536,11912 9668,11928
@@ -17632,7 +17632,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_015565',
        data  => <<EOF,
-userdel	2::temp 9262,13050 9413,13071 9559,13087
+userdel	2::temp 9269,13060 9413,13071 9559,13087
 EOF
      },
      { from  => 1272607309, # 2010-04-30 08:01
@@ -22002,13 +22002,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Krügerstr. und Gudvanger Str.: Bauarbeiten im Bereich Erich-Weinert-Str., Fahrbahn gesperrt',
+       text  => 'Gudvanger Str.: Bauarbeiten zwischen Krügerstr. und Erich-Weinert-Str., Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2013-10-20
-#: next_check: 2013-11-20
-userdel	q3::inwork 11758,16111 11684,15997 11859,16058
+#: last_checked: 2013-11-13
+#: check_frequency: 30d
+userdel	q4::inwork 11694,16034 11673,16003
 EOF
      },
      { from  => 1382507820, # 2013-10-23 07:57

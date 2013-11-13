@@ -21,7 +21,7 @@ Skalitzer Str.	1 12899,10595 12985,10665
 Oppelner Str.	1 13028,10629 12978,10581
 Oberbaumstr.	1 12985,10665 13015,10659 13082,10634
 Oberbaumstr.	1 13082,10634 13028,10629
-am Hackeschen Markt (Süd)	1 10132,12941 10117,12966 10105,13004 9932,13109
+am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 9932,13109
 am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9918 7813,10112
 Dennewitzplatz	1 7813,10112 7906,10098
@@ -1460,7 +1460,7 @@ Rhinstr.: Straßenbahntrasse	3nocross 18215,12123 18216,12239 18216,12262 18220,1
 Rhinstr.: Straßenbahntrasse	3nocross 18181,14110 18184,14078 18187,14039 18206,13817
 Rhinstr.: Straßenbahntrasse	3nocross 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19726,13524 19807,13529 19837,13531 19899,13534
-Bornhomer Str.: Straßenbahntrasse	3nocross 10765,16486 10699,16492 10620,16497
+Bornhomer Str.: Straßenbahntrasse	3nocross 10778,16485 10699,16492 10620,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
 Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10431,12709 10525,12789 10695,12933 10733,12967
@@ -1496,7 +1496,7 @@ Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18215,11690 18520,11707 18626,1
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3623,10800 3644,10759
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,10435
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,11346 6880,11110
-Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 9998,16547 9883,16557 9816,16565
+Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9781,16569 9816,16565
 Osloer Str.: Straßenbahntrasse	3nocross 7687,16770 7763,16779 7852,16790
 Seestr.: Straßenbahntrasse	3nocross 7417,16587 7456,16620 7606,16746
@@ -1903,11 +1903,13 @@ tragen (rund 12 Stufen)	0:20 3619,9331
 tragen (22 Stufen)	0:30 9557,12992
 tragen (Treppe)	0:30 9508,12991
 #: by: rjoop
-#: note: mindestens 50 Stufen, laut Luftbild
-tragen (Treppe)	0:30 9983,16561
+#: confirmed_by: srt
+#: note: 10+10+11+10 Stufen
+tragen (41 Stufen)	0:45 9983,16561
 #: by: rjoop
-#: note: wahrscheinlich ebenso mindestens 50 Stufen
-tragen (Treppe)	0:30 9982,16527
+#: confirmed_by: srt
+#: note: wahrscheinlich ebenso ca. 40 Stufen
+tragen (Treppe)	0:45 9982,16527
 tragen (Treppe, 6+7 Stufen)	0:30 3762,12599
 tragen (Treppe, 3 Stufen)	0:10 3810,12600
 tragen (Treppe)	0:30 4334,12551
@@ -2525,11 +2527,11 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 # 
 #: by: Torben Müllers
 #: confirmed_by: srt
-#: last_checked: 2013-04-28
-#: next_check: 2013-11-15
+#: last_checked: 2013-11-13
+#: next_check: 2013-12-31
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
-#: XXX wrote Mail about current status (2013-11-05), wait for response
+#: XXX wrote Mail about current status (2013-11-05), no response
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855

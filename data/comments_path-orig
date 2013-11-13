@@ -200,7 +200,8 @@ das Portal des Anhalter Bahnhofs links liegen lassen	CP2; 8938,10872 8912,10846
 rechts an der Tiefgarageneinfart vorbei, Vorsicht Kette!	CP; 13385,13992 13485,14054 13585,14117
 Vorsicht Kette! (auf Höhe der Tiefgarageneinfahrt)	CP; 13585,14117 13485,14054 13385,13992
 bereits an der Kirche auf den Gehweg wechseln	CP; 12635,12629 12483,12682 12594,12866
-Etwa in Höhe Kino Kosmos abbiegen	CP2; 13543,12326 13556,12302
+etwa in Höhe Kino Kosmos abbiegen	CP; 13448,12340 13543,12326 13556,12302
+vor dem Kino Kosmos abbiegen	CP; 13785,12292 13543,12326 13556,12302
 #: note: die Straße ist hier nicht ausgeschildert
 Ludwig-Pick-Str. beginnt an der Zufahrt zur Tiefgarage Kosmos-Kino	CP2; 13543,12326 13552,12435
 Fritz-Schiff-Str. beginnt am Ende der Parallelstraße zur Karl-Marx-Allee	CP2; 13448,12340 13484,12436
@@ -412,7 +413,7 @@ Caligariplatz - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren
 Am Alten Markt: Richtung TFH/Friedrich-Ebert-Str. abbiegen	CP; -12624,-1598 -12619,-1549 -12677,-1536 -12780,-1544
 Richtung Bergmannstr.	CP2; 10564,9292 10547,9233
 Ausgeschildert als "Zur Straße 545"	CP2; 30357,3555 30378,3501
-Virchowstr. - Landsberger Allee: auf dem linken Geh-/Radweg bis zur Ampel fahren	CP; 12925,13373 12979,13280 13078,13330
+# REMOVED (-> routing_helper-orig) --- Virchowstr. - Landsberger Allee: auf dem linken Geh-/Radweg bis zur Ampel fahren	CP; 12974,13289 12979,13280 13078,13330
 #: by: Juliane (alberts...) vvv
 (Gruberzeile - Weinmeisterhornweg): an Wohnhäusern vorbei, dann nach rechts abbiegen neben der Grundschule	CS; -5735,11793 -5584,11706 -5590,11651 -5623,11552
 (Weinmeisterhornweg - Gruberzeile): neben der Grundschule, dann links abbiegen an Wohnhäusern vorbei	CS; -5623,11552 -5590,11651 -5584,11706 -5735,11793

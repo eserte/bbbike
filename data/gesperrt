@@ -14,7 +14,7 @@ Skalitzer Str.	1 12899,10595 12985,10665
 Oppelner Str.	1 13028,10629 12978,10581
 Oberbaumstr.	1 12985,10665 13015,10659 13082,10634
 Oberbaumstr.	1 13082,10634 13028,10629
-am Hackeschen Markt (Süd)	1 10132,12941 10117,12966 10105,13004 9932,13109
+am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 9932,13109
 am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9918 7813,10112
 Dennewitzplatz	1 7813,10112 7906,10098
@@ -1046,7 +1046,8 @@ Mittelstreifen mit hoher Kante	3nocross::ignrte 13939,4778 13914,4877 13892,4955
 Dürtenstr. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13874,4867 13914,4877 13892,4955
 Buschkrugallee -> Dürtenstr.: Mittelstreifen mit hoher Kante	3::igndisp 13939,4778 13914,4877 13874,4867
 Straßenbahntrasse	3nocross::ignrte 12878,13229 12979,13280 13078,13330
-Landsberger Allee -> Virchowstr.: Straßenbahntrasse	3::igndisp 12878,13229 12979,13280 12925,13373
+Virchowstr. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 12974,13289 12979,13280 13078,13330
+Landsberger Allee -> Virchowstr.: Straßenbahntrasse	3::igndisp 12878,13229 12979,13280 12974,13289
 Straßenbahntrasse	3nocross::ignrte 15639,10469 15404,10633 15379,10651
 Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straßenbahntrasse	3::igndisp 15358,10562 15404,10633 15379,10651
 Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 15639,10469 15404,10633 15358,10562
@@ -1371,8 +1372,8 @@ Unterführung -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19819,13606 
 Allee der Kosmonauten -> Unterführung: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19819,13606
 Unterführung/Biesdorfer Promenade -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19826,13444 19837,13531 19807,13529
 Allee der Kosmonauten -> Unterführung/Biesdorfer Promenade: Straßenbahntrasse	3::igndisp 19899,13534 19837,13531 19826,13444
-Straßenbahntrasse	3nocross::ignrte 10765,16486 10699,16492 10620,16497
-Tegnerstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10708,16579 10699,16492 10765,16486
+Straßenbahntrasse	3nocross::ignrte 10778,16485 10699,16492 10620,16497
+Tegnerstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10708,16579 10699,16492 10778,16485
 Straßenbahntrasse	3nocross::ignrte 10620,16497 10533,16505 10458,16509
 Aalesunder Str. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10549,16650 10533,16505 10620,16497
 Bornholmer Str. -> Aalesunder Str.: Straßenbahntrasse	3::igndisp 10458,16509 10533,16505 10549,16650
@@ -1552,9 +1553,11 @@ Rauchstr. -> Köbisstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6692,113
 Köbisstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7103,11247 6851,11346 6692,11365
 Köbisstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7103,11247 6851,11346 6880,11110
 Klingelhöferstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6880,11110 6851,11346 6692,11365
-Straßenbahn auf Mittelstreifen	3nocross::ignrte 10197,16528 9998,16547 9883,16557 9816,16565
-Bornholmer Str. -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3::igndisp 10197,16528 9998,16547 9982,16527
-Treppe zum Kolonnenweg -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9983,16561 9998,16547 10197,16528
+Straßenbahn auf Mittelstreifen	3nocross::ignrte 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565
+Pl. des 9. November 1989 -> Kolonnenweg: Straßenbahn auf Mittelstreifen	3::igndisp 9998,16547 10134,16534 10118,16561
+Kolonnenweg -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3::igndisp 10118,16561 10134,16534 10197,16528
+Pl. des 9. November 1989 -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3::igndisp 10134,16534 9998,16547 9982,16527
+Treppe zum Kolonnenweg -> Pl. des 9. November 1989: Straßenbahn auf Mittelstreifen	3::igndisp 9983,16561 9998,16547 10134,16534
 Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3::igndisp 9983,16561 9998,16547 9982,16527
 Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3::igndisp 9982,16527 9998,16547 9983,16561
 Treppe zum Kolonnenweg -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9982,16527 9998,16547 9883,16557
@@ -2242,8 +2245,8 @@ schieben (Rampe Schmöckwitzwerdersteg)	0:30:30 30546,-3072
 tragen (rund 12 Stufen)	0:20:-269 3619,9331
 tragen (22 Stufen)	0:30:-263 9557,12992
 tragen (Treppe)	0:30:86 9508,12991
-tragen (Treppe)	0:30:-226 9983,16561
-tragen (Treppe)	0:30:38 9982,16527
+tragen (41 Stufen)	0:45:-226 9983,16561
+tragen (Treppe)	0:45:38 9982,16527
 tragen (Treppe, 6+7 Stufen)	0:30:-69 3762,12599
 tragen (Treppe, 3 Stufen)	0:10:-91 3810,12600
 tragen (Treppe)	0:30:-267 4334,12551
@@ -3205,6 +3208,7 @@ Kreuzung Gregoroviusweg/Treskowallee	1::igndisp 18742,9903 18748,9922
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18216,11656 18520,11685 18624,11712 18778,11742 19005,11767 19735,11721
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18624,11712 18626,11742
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
+Landsberger Allee, linker Gehweg	1::igndisp 13078,13330 12974,13289
 Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060
 Bundesallee, linker Gehweg zur Durlacher Str.	1::igndisp 5399,8344 5438,8402
 Bundesallee, linker Gehweg zur Straße Am Volkspark	1::igndisp 5419,8415 5399,8344
@@ -3233,3 +3237,4 @@ Königsberger Str., linker Gehweg	1::igndisp 4236,2678 4164,2717
 #: source_id: ^^^
 #: next_check: ^^^
 #: last_checked: ^^^
+Bornholmer Str., linker Gehweg	1::igndisp 10197,16528 10118,16561

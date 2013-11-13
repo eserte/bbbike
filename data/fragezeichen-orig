@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-11-05
+#: last_checked: 2013-11-13
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -143,7 +143,7 @@ Kongostr./Türkenstr.: wird hier asphaltiert werden?	?::projected 6244,16096 6258
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-10-24
+#: last_checked: 2013-11-13
 #: check_frequency: 60d
 Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7717,16541 7754,16364 7800,16233 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
 # 
@@ -217,7 +217,7 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-11-12
+#: last_checked: 2013-11-13
 #: next_check: 2014-03-05
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -392,25 +392,18 @@ Mahlow - Teltow: Schellstraße (?) in Bau	?::inwork 10246,-4271 7955,-4250
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gudvanger_strasse.html vvv
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf?start&ts=1365760997&file=kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf vvv
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130910.1250.389055.html (Baubeginn 38. KW) vvv
-#: last_checked: 2013-10-20 vvv
-#: next_check: 2013-11-20 vvv
+#: last_checked: 2013-11-13 vvv
+#: check_frequency: 30d vvv
 #: priority: #C
-Erich-Weinert-Str.: Zebrastreifen in Planung	?::projected 11710,15997 11691,15978
-Gudvangerstr.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11684,15997 11758,16111
-#: next_check ^^^
+Erich-Weinert-Str.: Zebrastreifen in Planung	?::projected 11676,15986 11688,16006
+Gudvangerstr.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11567,15842 11673,16003 11694,16034 11750,16116
+#: check_frequency ^^^
 #: last_checked ^^^
 #: by: ^^^
 #: by: ^^^
 #: by: ^^^
 # 
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3594
-#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036373765264/373765264/00056582/82-Anlagen/02/BenennungsabsichtfuerdenPlatzanderBornhomerBru.pdf (Lage)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2013 (Benennung am 11.11.2013 wirksam)
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20131104.1110.391159.html
-#: XXX fehlt in Berlin.coords.data
-#: XXX außerdem: "barrierefreie Anbindung" zum Mauerweg
-#: next_check: 2013-11-09
-Platz des 9. November 1989: geplante Benennung	?::projected 9998,16547 10197,16528
+# REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3594 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036373765264/373765264/00056582/82-Anlagen/02/BenennungsabsichtfuerdenPlatzanderBornhomerBru.pdf (Lage) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2013 (Benennung am 11.11.2013 wirksam) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20131104.1110.391159.html --- #: XXX fehlt in Berlin.coords.data --- #: XXX außerdem: "barrierefreie Anbindung" zum Mauerweg --- #: next_check: 2013-11-09 --- Platz des 9. November 1989: geplante Benennung	?::projected 9998,16547 10134,16534 10197,16528
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3437
 #: next_check: 2014-04-01
@@ -1059,8 +1052,7 @@ Beilsteiner Str.: wird es hier für das neue Wohngebiet eine Erschließungsstraße 
 #: priority: #C
 Schindler-Platz: ist irgendwo hier der Schindler-Platz ausgeschildert?	? 8766,4038 8780,3983
 # 
-#: XXX Frage: kann es zu unerwünschten Routing gemeinsam mit dem comments_path-Eintrag für diese Straße geben?
-Tegnerstr.: gibt es hier einen Weg durch einen Spielplatz oder Grünfläche?	? 10708,16579 10713,16635 10774,16634
+# REMOVED (nein, kein öffentlicher Weg, hier ist eine Kita+Spielplatz) --- #: XXX Frage: kann es zu unerwünschten Routing gemeinsam mit dem comments_path-Eintrag für diese Straße geben? --- Tegnerstr.: gibt es hier einen Weg durch einen Spielplatz oder Grünfläche?	? 10708,16579 10713,16635 10793,16636
 # 
 #: next_check: 2014-03-15 (im Herbst/Winter sind Waldwege schwierig zu überprüfen)
 Reinickendorfer Route 3: genauer Streckenverlauf? Qualität?	? 2566,23584 2272,23574 2137,23626 2114,23720 2056,23749 1980,23711 1848,23679 1702,23692 1622,23726 1607,23777 1576,23785 1433,23738 1363,23746 1304,23736 1157,23752
@@ -3506,8 +3498,6 @@ Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2760,23964 2784,2392
 #: osm_watch ^^^
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130919.1210.389478.html --- #: XXX Fußweg. Fehlt noch in Berlin.coords.data. --- Lee-Parry-Weg: wo genau liegt die Straße? Qualität?	? -5093,8398 -5088,8449 -5008,8475 -4999,8465
-#: XXX im Norden als "Ritterlandstr." ausgeschildert, dort Verbundsteinpflaster
-Tromsöer Str. - Ritterlandstr.: besteht für Radfahrer eine Durchfahrtmöglichkeit? Qualität? Ausschilderung?	? 8243,16889 8363,17192
 #: XXX wahrscheinlich Waldweg, wahrscheinlich unbeleuchtet, green2 vvv
 #: next_check: 2014-03-15 (im Herbst/Winter sind Waldwege schwierig zu überprüfen) vvv
 Ehrenpfortensteig, Verlängerung: Qualität? Existiert eine Ausschilderung?	? 2203,22749 2088,22798 1897,22781 1760,22839 1661,22851 1563,22850 1518,22874 1460,22874

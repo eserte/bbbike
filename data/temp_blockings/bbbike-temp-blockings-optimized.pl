@@ -1848,8 +1848,25 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'until' => 1388530799,
+         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich',
+         'from' => 1384350862,
+         'id' => 1988,
+         'data' => 'userdel	2::temp 11329,12497 11209,12430 11273,12301 11355,12331
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1388530799,
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2013 bis 31.12.2013, Durchfahrt nicht möglich (Eintritt!)',
+         'from' => 1385247600,
+         'id' => 1989,
+         'data' => 'userdel	2::temp 9536,11912 9668,11928
+userdel	2::temp 9524,12010 9656,12021
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2879,13 +2896,13 @@ userdel	q4::inwork 7001,8161 7250,8223
        },
        {
          'until' => undef,
-         'text' => 'Krügerstr. und Gudvanger Str.: Bauarbeiten im Bereich Erich-Weinert-Str., Fahrbahn gesperrt',
+         'text' => 'Gudvanger Str.: Bauarbeiten zwischen Krügerstr. und Erich-Weinert-Str., Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2503,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2013-10-20
-#: next_check: 2013-11-20
-userdel	q3::inwork 11758,16111 11684,15997 11859,16058
+#: last_checked: 2013-11-13
+#: check_frequency: 30d
+userdel	q4::inwork 11694,16034 11673,16003
 ',
          'type' => 'handicap'
        },

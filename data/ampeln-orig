@@ -630,7 +630,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4783,8557
 	X 6753,10446
 	X 9330,12529
-	X 9255,13109
+	X 9262,13111
 	X 8607,15426
 	X 8024,15401
 	X 8016,15085
@@ -917,6 +917,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 1229,18750
 	X 2268,19919
 #: note: etwas nach Nordwesten versetzt
+#: XXX_prog: zusätzlicher Zeitverlust durch Fußgängerverkehr zwischen S- und U-Bahnhof möglich
 	F 7754,15160
 	X 7474,15408
 	X 7396,15479
@@ -1912,7 +1913,7 @@ Industriebahn	B0 -2410,13746
 	F 8831,13973
 	X 8442,14456
 	F 13732,12526
-	F 9294,12765
+	F 9298,12765
 	X 9224,14169
 	Zbr 1721,20603
 nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
@@ -2071,6 +2072,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	X 19733,15511
 	F 7164,-473
 	F 22640,4081
+#: XXX_prog: muss auch für Radfahrer aus der Biesentaler Str. benutzt werden (Mittelstreifen)
+#: note: Anforderungsampel
 	F 9028,16864
 	F 8443,15901
 	F 5373,10981
@@ -2091,6 +2094,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 16590,14386
 	X 14052,13389
 	X 14109,13449
+#: XXX_prog Radfahrer Richtung Heinz-Galinski-Str. müssen auch die Fußgängerampel benutzen; insgesamt drei Ampeln, unabhängig voneinander geschaltet
+#: note: Anforderungsampel
 	F 8144,16754
 	F 4123,11683
 	F 10943,6498
@@ -2416,7 +2421,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked: 2013-10-22 vvv
 #: next_check: 2013-12-31 vvv
 	X::inwork 9122,12509
-	X::inwork 9280,12883
+	X::inwork 9286,12886
 	X::inwork 9343,12464
 	X::inwork 9475,12365
 #: next_check ^^^

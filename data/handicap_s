@@ -36,6 +36,7 @@ Neue Gr¸nstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10389,11390 10446,11470
 Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
+Ziegelstr.: Baustelle, Einbahnstraﬂe	q3::inwork; 9269,13060 9413,13071
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5258,11285 5352,11502
 Fasanenstr.: Bauarbeiten, gemeinsamer Rad- und Gehweg	q2; 5352,11502 5356,11512 5456,11742
@@ -204,9 +205,9 @@ Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
 Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12409,11902 12522,11837
 Hermann-Stˆhr-Platz: Fuﬂg‰nger	q2 12453,11790 12409,11902
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7485,8777 7531,8848 7563,8871
-Nettelbeckplatz: Fuﬂg‰nger	q2 8024,15401 7989,15412 7891,15417
-Nettelbeckplatz: Fuﬂg‰nger	q2 7953,15362 7989,15412
-Nettelbeckplatz: Fuﬂg‰nger	q2 7975,15500 7989,15412
+Nettelbeckplatz: Fuﬂg‰nger	q2 8024,15401 7974,15418 7891,15417
+Nettelbeckplatz: Fuﬂg‰nger	q2 7929,15355 7974,15418
+Nettelbeckplatz: Fuﬂg‰nger	q2 7975,15500 7974,15418
 Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5919,8417 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
 zum Volksparksteg: kombinierter Rad- und Fuﬂweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fuﬂweg	q1 5531,8458 5417,8519
@@ -242,8 +243,8 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fuﬂg‰nger	q2 8467,11125 8410,11143
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3358,12718 3396,12741
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
-Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9714,12995
-Spreeufer: Fuﬂg‰nger	q2 9707,12974 9557,12992 9538,12993 9508,12991 9272,12952
+Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
+Spreeufer: Fuﬂg‰nger	q2 9707,12974 9557,12992 9538,12993 9508,12991 9279,12953
 Henriette-Herz-Platz: Straﬂenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
 Monbijoupark - Henriette-Herz-Platz: Fuﬂg‰nger	q1 9977,12912 10132,12941
 Monbijoubr¸cke: Fuﬂg‰nger	q1 9707,12974 9683,12913 9654,12882
@@ -1158,7 +1159,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 (Genslerstr. - Landsberger Allee): Fuﬂg‰nger	q2 16669,14438 16665,14420 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
-(entlang der Stadtbahn): Fuﬂg‰nger	q1 10117,12966 9930,12947
+(entlang der Stadtbahn): Fuﬂg‰nger	q1 10117,12973 10004,12966 9930,12947
 (Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8483,10900 8399,10923
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
@@ -1304,6 +1305,7 @@ Parforceweg: einige umgest¸rzte B‰ume	q4 -643,7252 -728,7310 -1020,7446 -1328,75
 (S-Bahnhof Treptower Park - Rosengarten): Parkplatzverkehr	q1 14705,9578 14791,9537
 (S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger, Bordstein	q2 14791,9537 14844,9513
 (Spreeuferweg - Wintersteinstr.): Fuﬂg‰nger, Bordstein	q3 3654,12672 3741,12607
+(Bornholmer Str. - Kolonnenweg): einige Fuﬂg‰nger	q1 10134,16534 10118,16561 10108,16576 9954,16590
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1732,7 +1734,7 @@ Hobeckweg: enge Straﬂe	q0 27190,13327 27414,13508 27530,13627 27556,13641
 Rosenorter Steig: enge Straﬂe	q0 -1349,23497 -1451,23525 -1535,23575 -1617,23624 -1700,23671
 Straﬂe 40 (Blankenburg): enge Straﬂe	q0 14893,20583 14945,20748 15035,21026
 (Mˆrchinger Str. - Berliner Str.): Fuﬂg‰nger	q2 1393,3183 1388,3197 1338,3300
-Biesentaler Str.: Bodenschwellen	q1 9024,16855 9245,16758
+Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0 9024,16855 9245,16758
 Chamissostr. (Franzˆsisch Buchholz): enge Straﬂe	q0 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
 Tassostr.: enge Straﬂe	q1 13623,15954 13614,15984 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
 An der Wildbahn: viele parkende Autos in enger Straﬂe	q1 -1581,22553 -1447,22522 -1333,22495 -1267,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
@@ -2222,6 +2224,7 @@ Kreuzung Gregoroviusweg/Treskowallee	q1::igndisp; 18748,9922 18742,9903
 Alt-Friedrichsfelde, linker Gehweg	q2::igndisp; 19735,11721 19005,11767 18778,11742 18624,11712 18520,11685 18216,11656
 Alt-Friedrichsfelde, linker Gehweg	q2::igndisp; 18626,11742 18624,11712
 Landsberger Allee, linker Gehweg	q2::igndisp; 15256,14237 15430,14272
+Landsberger Allee, linker Gehweg	q3::igndisp; 12974,13289 13078,13330
 Sonnenallee, linker Gehweg	q4::igndisp; 13474,8060 13457,8069
 Bundesallee, linker Gehweg zur Durlacher Str.	q3::igndisp; 5438,8402 5399,8344
 Bundesallee, linker Gehweg zur Straﬂe Am Volkspark	q3::igndisp; 5399,8344 5419,8415
@@ -2250,3 +2253,4 @@ Kˆnigsberger Str., linker Gehweg	q2::igndisp; 4164,2717 4236,2678
 #: source_id: ^^^
 #: next_check: ^^^
 #: last_checked: ^^^
+Bornholmer Str., linker Gehweg	q3::igndisp; 10118,16561 10197,16528
