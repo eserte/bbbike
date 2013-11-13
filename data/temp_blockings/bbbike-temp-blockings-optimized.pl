@@ -1,15 +1,315 @@
-$#temp_blocking = 416;
+$#temp_blocking = 165;
 push @temp_blocking,
 (
        {
-         'until' => 1386543599,
-         'text' => 'Lichtenrader Weihnachtsmarkt: Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Steinstr. und Goltzstr gesperrt (am 7. und 8. Dezember 2013)',
-         'from' => 1386284400,
-         'id' => 417,
-         'data' => '#: by: http://www.ag-bahnhofstrasse.de/weihnachtsmarkt.html
-userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
 ',
+         'periodic' => 1,
+         'until' => 1385938799,
+         'from' => 1385679600,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.+1.12.)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              11
+                            ]
+                          ],
+         'id' => 166,
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/charlottenburg-wilmersdorf/971524-1323017-weihnachtsmarktanderged%C3%A4chtniskirche.html',
+         'data' => '# sowieso schon mit q4 markiert, deshalb -> 2
+userdel	2::temp 5829,10964 5782,10884
+userdel	2::temp 5656,10876 5652,11004
+',
+         'periodic' => 1,
+         'until' => 1388617199,
+         'from' => 1385247600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, vom 25. November 2013 bis 01. Januar 2014',
+         'id' => 394,
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'data' => 'userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'periodic' => 1,
+         'until' => 1385938799,
+         'from' => 1385766000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 1. Dezember 2013)',
+         'type' => 'gesperrt',
+         'id' => 417
        },
        undef,
        undef,
@@ -383,7 +683,33 @@ userdel	q4 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-21
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berliner-weihnacht.de/?y=2013',
+         'data' => 'userdel	2::temp 10008,12274 9994,12368
+# REMOVED (passierbar!) --- userdel	2::temp 9943,12364 9961,12273 9972,12184
+userdel	2::temp 10010,12259 10035,12209
+# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
+userdel	2::temp 10008,12274 10058,12290
+userdel	2::temp 10091,12232 10058,12290 9996,12401
+# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9961,12273 9875,12257
+userdel	q4::temp 9994,12368 9996,12401 9984,12426
+',
+         'periodic' => 1,
+         'until' => 1388098799,
+         'from' => 1385247600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, vom 25.11. bis 26.12.2013',
+         'id' => 790,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1849,23 +2175,43 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        {
-         'until' => 1388530799,
-         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich',
-         'from' => 1384350862,
-         'id' => 1988,
          'data' => 'userdel	2::temp 11329,12497 11209,12430 11273,12301 11355,12331
 ',
-         'type' => 'gesperrt'
+         'periodic' => 1,
+         'until' => 1388530799,
+         'from' => 1384350862,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              11,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich, bis Ende Dezember 2013',
+         'type' => 'gesperrt',
+         'id' => 1988
        },
        {
-         'until' => 1388530799,
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2013 bis 31.12.2013, Durchfahrt nicht möglich (Eintritt!)',
-         'from' => 1385247600,
-         'id' => 1989,
          'data' => 'userdel	2::temp 9536,11912 9668,11928
 userdel	2::temp 9524,12010 9656,12021
 ',
-         'type' => 'gesperrt'
+         'periodic' => 1,
+         'until' => 1388530799,
+         'from' => 1385247600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2013 bis 31.12.2013, Durchfahrt nicht möglich (Eintritt!)',
+         'type' => 'gesperrt',
+         'id' => 1989
        },
        undef,
        undef,
@@ -1874,13 +2220,80 @@ userdel	2::temp 9524,12010 9656,12021
        undef,
        undef,
        undef,
+       {
+         'source_id' => 'http://www.winterwelt-berlin.de/',
+         'data' => 'userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296 8278,11257
+#: XXX_prog "3::temp" geht nicht?
+userdel	3 8427,11365 8389,11378 8374,11479
+userdel	3 8374,11479 8389,11378 8427,11365
+',
+         'periodic' => 1,
+         'until' => 1388098799,
+         'from' => 1385247600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Winterwelt am Potsdamer Platz vom 25. November 2013 bis 26. Dezember 2013',
+         'id' => 1997,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
+         'data' => 'userdel	2::temp 13416,7712 13426,7674
+userdel	2::temp 13416,7712 13288,7653
+userdel	2::temp 13426,7674 13400,7642 13303,7622
+userdel	2::temp 12969,7610 13100,7626 13177,7644
+userdel	2::temp 13188,7590 13177,7644
+userdel	2::temp 13188,7590 13303,7622
+userdel	2::temp 13288,7653 13303,7622
+userdel	2::temp 13288,7653 13177,7644
+',
+         'periodic' => 1,
+         'until' => 1386543599,
+         'from' => 1386198000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (vom 6. Dezember 2013 bis 8. Dezember 2013)',
+         'id' => 1998,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
+         'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
+',
+         'periodic' => 1,
+         'until' => 1387148399,
+         'from' => 1386802800,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2013 bis zum 15.12.2013',
+         'id' => 2003,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1888,16 +2301,25 @@ userdel	2::temp 9524,12010 9656,12021
        undef,
        undef,
        {
-         'periodic' => 1,
-         'until' => 1388566800,
-         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr.',
-         'from' => 1388394000,
-         'id' => 2010,
          'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 8119,12414
 userdel	2::temp 8522,12239 8466,12197
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 ',
-         'type' => 'gesperrt'
+         'periodic' => 1,
+         'until' => 1388566800,
+         'from' => 1388394000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr.',
+         'type' => 'gesperrt',
+         'id' => 2010
        },
        undef,
        undef,
@@ -2208,7 +2630,34 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.breadandbutter.com/winter2014/de/home/',
+         'data' => 'userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
+userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
+',
+         'periodic' => 1,
+         'until' => 1389895200,
+         'from' => 1389592800,
+         'text' => 'Platz der Luftbrücke (Tempelhof): Straße vollständig zwischen Tempelhofer Damm und Columbiadamm wegen einer Veranstaltung (Bread & Butter) gesperrt (14. Januar 2013 bis 16. Januar 2013)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              7
+                            ]
+                          ],
+         'id' => 2245,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2988,6 +3437,66 @@ userdel	q4::inwork 8465,18365 8286,18331
          'id' => 2514,
          'data' => 'userdel	2::inwork 12624,25570 12694,25696
 ',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'periodic' => 1,
+         'until' => 1386543599,
+         'from' => 1386284400,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (7.12.+8.12)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2515,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'periodic' => 1,
+         'until' => 1387148399,
+         'from' => 1386889200,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (14.12.+15.12.)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2516,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'periodic' => 1,
+         'until' => 1387753199,
+         'from' => 1387494000,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.+22.12.)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2517,
          'type' => 'gesperrt'
        }
      
