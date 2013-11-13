@@ -1606,6 +1606,10 @@ check-disabled:
 	@rm -f /tmp/all_temp_blockings.bbd
 	@touch $@
 
+.check_recurring_temp_blockings: temp_blockings/bbbike-temp-blockings.pl .check_daily
+	${TEMP_BLOCKINGS_TASKS} --prewarn-days=30 temp_blockings/bbbike-temp-blockings.pl
+	@touch $@
+
 .check_grenzuebergaenge:	grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen deutschland
 	$(CHECK_POINTS) grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen
 	$(CHECK_POINTS) grenzuebergaenge deutschland
