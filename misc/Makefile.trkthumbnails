@@ -18,7 +18,7 @@ thumbnails-googlemaps:
 	@[ -d .thumbnails_googlemaps ] || (echo "Please create .thumbnails_googlemaps directory manually."; false)
 	for i in `csh -c 'echo *.{trk,gpx,bbr,xml}'`; do \
 	    [ -e .thumbnails_googlemaps/$$i -a .thumbnails_googlemaps/$$i -nt $$i ] || (\
-		echo -n ".thumbnails/$$i ... "; \
+		echo -n ".thumbnails_googlemaps/$$i ... "; \
 	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -o .thumbnails_googlemaps/$$i~ -routefile $$i -module GoogleMapsStatic; \
 		mv .thumbnails_googlemaps/$$i~ .thumbnails_googlemaps/$$i; \
 		echo "done" \
