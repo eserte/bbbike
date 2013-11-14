@@ -37,7 +37,7 @@ if (!GetOptions(get_std_opts("cgidir", "xxx"),
 if ($do_xxx) {
     Test::More->import(qw(no_plan));
 } else {
-    plan tests => 102;
+    plan tests => 106;
 }
 
 sub get_agent {
@@ -101,17 +101,27 @@ XXX: {
 			fields => {'city', 'rollberg'},
 		       );
     is_on_mapserver_page($agent, "city");
-
-    # Lat/long
     $agent->back();
+
+    # Lat/long DDD
     $agent->submit_form(form_number => 4,
 			fields => {'lat', '52.5',
 				   'long', '13.5',
 				  },
 		       );
     is_on_mapserver_page($agent, "lat/long DDD");
-
     $agent->back();
+
+    # wrong Lat/long (non-number)
+    $agent->submit_form(form_number => 4,
+			fields => {'lat', 'a',
+				   'long', 'b',
+				  },
+		       );
+    like($agent->uri, qr{/mapserver_address.cgi}, "Error, same URL");
+    like($agent->content, qr{Falsche Werte.*DDD}, "Error message (DDD)");
+
+    # Lat/long DMS
     $agent->submit_form(form_number => 4,
 			fields => {'latD', '52',
 				   'latM', '30',
@@ -121,6 +131,17 @@ XXX: {
 		       );
     is_on_mapserver_page($agent, "lat/long DMS");
     $agent->back();
+
+    # wrong Lat/long (non-number)
+    $agent->submit_form(form_number => 4,
+			fields => {'latD', 'a',
+				   'latM', 'b',
+				   'longD', 'c',
+				   'longM', 'd',
+				  },
+		       );
+    like($agent->uri, qr{/mapserver_address.cgi}, "Error, same URL");
+    like($agent->content, qr{Falsche Werte.*DMS}, "Error message (DMS)");
 
     ######################################################################
     # non-existent

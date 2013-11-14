@@ -82,17 +82,46 @@ if (defined param("mapserver")) {
 	) {
     my $latS  = param("latS")||0;
     my $longS = param("longS")||0;
-    my $lat  = param("latD")  + param("latM")/60  + $latS/3600;
-    my $long = param("longD") + param("longM")/60 + $longS/3600;
-    resolve_latlong($lat, $long);
+    require Scalar::Util;
+    if (
+	!Scalar::Util::looks_like_number(param("latD")) ||
+	!Scalar::Util::looks_like_number(param("latM")) ||
+	!Scalar::Util::looks_like_number(param("longD")) ||
+	!Scalar::Util::looks_like_number(param("longM"))
+       ) {
+	show_html(error_dms => 1);
+    } else {
+	my $lat  = param("latD")  + param("latM")/60  + $latS/3600;
+	my $long = param("longD") + param("longM")/60 + $longS/3600;
+	resolve_latlong($lat, $long);
+    }
 } elsif (defined param("lat") && defined param("long") &&
 	 param("lat") !~ /^\s*$/ && param("long") !~ /^\s*$/) {
-    resolve_latlong(param("lat"), param("long"));
+    require Scalar::Util;
+    if (
+	!Scalar::Util::looks_like_number(param("lat")) ||
+	!Scalar::Util::looks_like_number(param("long"))
+       ) {
+	show_html(error_ddd => 1);
+    } else {
+	resolve_latlong(param("lat"), param("long"));
+    }
 } else {
+    show_html();
+}
+
+sub show_html {
+    my(%args) = @_;
+    my $css = <<'EOF';
+.error { color:red; font-weightbold; }
+EOF
     print header,
-	  start_html("Auswahl nach Straßen und Orten"),
+	  start_html(
+		     -title => "Auswahl nach Straßen und Orten",
+		     -style => {-code => $css},
+		    ),
 	  h1("Auswahl nach Straßen und Orten");
-    show_form();
+    show_form(%args);
     print end_html;
 }
 
@@ -104,6 +133,11 @@ sub _form {
 }
 
 sub show_form {
+    my(%args) = @_;
+    my $error_dms = delete $args{error_dms};
+    my $error_ddd = delete $args{error_ddd};
+    warn "WARN: Unhandled argumets: " . join(" ", %args) if %args;
+
     print h2("Berlin");
     _form;
     print table({-border=>0},
@@ -144,16 +178,20 @@ sub show_form {
 		Tr(
 		   [
 		    td(['(Angaben als DDD)']),
+		    ($error_ddd ? td({colspan=>9}, [span({-class=>'error'}, "Falsche Werte für DDD-Koordinaten, bitte nur Zahlen verwenden!")]) : ()),
 		    td(['Breite' , textfield('lat')]),
 		    td(['Länge' , textfield('long'), submit(-value => "Zeigen")]),
 		   ]
                   )
 	       );
+    print end_form;
+    _form;
     # Check -size and -maxlength, N and E if porting to other world regions.
     print table({-border=>0},
 		Tr(
 		   [
 		    td(['(Angaben als DMS)']),
+		    ($error_dms ? td({colspan=>9}, [span({-class=>'error'}, "Falsche Werte für DMS-Koordinaten, bitte nur Zahlen verwenden!")]) : ()),
 		    td(['Breite' ,
 			'N', textfield(-name => 'latD', -size => 2, -maxlength => 2), '°',
 			textfield(-name => 'latM', -size => 2, -maxlength => 2),"'",
