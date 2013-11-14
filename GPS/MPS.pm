@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2005,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2005,2012,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::MPS;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = '1.10';
+$VERSION = '1.11';
 
 use Data::Dumper;
 
@@ -89,6 +89,8 @@ EOF
 	    $version = 2; # XXX?
 	} elsif ($buf eq 'Dl') {
 	    $version = 3; # even newer
+	} elsif ($buf eq 'Dg') {
+	    $version = 2; # XXX not tested, but Dg is between Df and Di...
 	} else {
 	    warn "Unknown version $buf";
 	}
