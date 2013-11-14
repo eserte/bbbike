@@ -370,7 +370,7 @@ EOF
 	      [Cascade => $do_compound->('Add layer', $main::newlayer_photo), -menuitems =>
 	       [
 		layer_checkbutton([$do_compound->('hm96.bbd (Höhenpunkte)')],
-				  'p', "$bbbike_rootdir/misc/senat_b/hm96.bbd",
+				  'p', "$bbbike_auxdir/data/senat_b/hm96.bbd",
 				  oncallback  => sub { $main::top->bind("<F12>"=> \&find_nearest_hoehe) },
 				  offcallback => sub { $main::top->bind("<F12>"=> '') },
 				 ),
