@@ -22657,6 +22657,7 @@ Barnimstr.: Beton	Q0 11881,13147 11758,13210 11589,13305
 (Erschließungstr./Parkplatz): Beton	Q0 11608,13417 11546,13327 11589,13305
 (Erschließungsstr.): Beton	Q0 11608,13417 11646,13465
 (Verbindungsweg): Kopfsteinpflaster	Q1 11646,13465 11703,13422
+#: XXX Qualität nochmal prüfen. Liegt hier Asphalt oder Verbundsteinpflaster?
 Weinstr.: Asphalt stark verwurzelt	Q3 11793,13247 11909,13387
 Weinstr.: Asphalt	Q0+ 11909,13387 11982,13471
 (Plus-Parkplatz): Verbundsteinpflaster	Q0- 11881,13147 11958,13079
@@ -22664,7 +22665,8 @@ Weinstr.: Asphalt	Q0+ 11909,13387 11982,13471
 Höchste Str.: Asphalt	Q0 11778,13498 11909,13387 12017,13299 12066,13237
 (Parkplatz): Beton	Q0 12066,13237 12046,13150 12011,13136 11920,13181
 Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11703,13422 11655,13370 11589,13305
-(Mollstr. - Barnimstr.): Verbundsteine	Q0 11723,13139 11758,13210
+#: corrected_by: srt (Q0 -> Q0-)
+(Mollstr. - Barnimstr.): Verbundsteine	Q0- 11723,13139 11758,13210
 #: corrected_by: srt ("kurze Kopfsteinpflasterabschnitte")
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und kurze Kopfsteinpflasterabschnitte	Q0- 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12005,13481 11957,13528 11857,13596 11823,13610 11785,13625
 Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9801,12245 9795,12293 9780,12401
