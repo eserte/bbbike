@@ -269,11 +269,11 @@ Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12
 # REMOVED (Bauarbeiten sind beendet) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: osm_watch: way id="7543672" version="17" --- #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz --- #: last_checked: 2013-06-24 --- #: check_frequency: 45d --- Radweg Herzberge: wegen Bauarbeiten m¸ssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
 # 
 #: XXX siehe auch qualitaet_s-orig: nach den Bauarbeiten besserer Asphalt?
-#: last_checked: 2013-10-29 vvv
-#: next_check: 2013-11-29 vvv
+#: last_checked: 2013-11-17 vvv
+#: next_check: 2013-12-17 vvv
 #: priority: #A vvv
-Parkaue: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 15399,12444 15457,12449 15535,12420
-Am Stadtpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 15457,12449 15454,12519
+Parkaue: Bauarbeiten, ggfs. auf Gehweg ausweichen	q4::inwork 15399,12444 15457,12449 15535,12420
+Am Stadtpark: Bauarbeiten, ggfs. auf Gehweg ausweichen	q3::inwork 15457,12449 15454,12519
 #: priority ^^^
 #: next_check ^^^
 #: last_checked ^^^
@@ -1019,7 +1019,7 @@ Cheruskerpark: Fuﬂg‰nger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 (Kolonie Z‰hringer Korso): eng	q3 8553,7795 8554,7746 8573,7710 8549,7622
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): enge Straﬂe	q1 15634,11656 15482,11729 15413,11690
 (Unterf¸hrung S-Bhf. Rummelsburg): Fuﬂg‰nger	q4 15379,10651 15419,10706 15433,10765
-(Unterf¸hrung Bhf. Karlshorst): Fuﬂg‰nger	q3 18877,8368 18910,8390 18949,8437
+(Unterf¸hrung Bhf. Karlshorst): Fuﬂg‰nger	q3 18875,8365 18910,8390 18949,8437
 Vereinsweg (Charlottenburg): Radfahren verboten	q4 2828,11731 2855,11752 2907,11755 2934,11747
 Neue Br¸cke: Fuﬂg‰nger	q1 -3139,14710 -3143,14676 -3150,14631
 (Stichstr. - Charlottenburger Chaussee): Fuﬂg‰nger	q1 -2039,13276 -2031,13310 -2047,13434
@@ -1696,8 +1696,8 @@ Arnimplatz: Fuﬂg‰nger	q2 10606,16319 10739,16146
 (Weg im Salvador-Allende-Viertel - Am Berg): Fuﬂg‰nger	q2 23051,4461 23010,4506
 # 
 #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen
-#: last_checked: 2013-10-20
-#: next_check: 2013-11-18
+#: last_checked: 2013-11-17
+#: next_check: 2013-11-20
 # (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger	q1 15513,13539 15374,13542
 (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15374,13542
 # REMOVED (evtl. schon aufgehoben, kann ich nicht pr¸fen) --- #: temporary: --- #: XXX wann wird die Umfahrung wieder aufgehoben? --- #: last_checked: 2013-09-12 --- #: check_frequency: 20d --- Paul-Junius-Str.: Umfahrung an der Straﬂenbahn¸berquerung	q4::inwork 15374,13542 15370,13508
@@ -1723,8 +1723,7 @@ entlang der Erpe: Bordstein	q2 24584,5914 24637,5960
 (Park des Gr¸nderzeitmuseums): Radfahren nicht erlaubt	q3- 24601,10992 24658,11013 24726,11037
 #: XXX_prog: BS am nordˆstlichen Ende, am Wendehammer, nur relevant, wenn man von der/zur Lauinger Str. kommt/f‰hrt, aber nicht, wenn man gerade auf dem unbefestigten Weg weiterf‰hrt
 Lauinger Str.: einige Fuﬂg‰nger, nicht ganz abgesenkter Bordstein	q1 21221,11398 21137,11294
-#: XXX_prog: BS an der Straﬂe "Am Wasserwerk", kann umfahren werden, indem man schon an der Landsberger Allee auf den linken Gehweg wechselt
-Am Wasserwerk - Siegfriedstr.: Bordstein	q2 16641,14325 16762,14237
+Landsberger Allee - Siegfriedstr.: einige Fuﬂg‰nger	q1+ 16590,14386 16596,14367 16641,14329 16762,14237 16873,14236
 #: note Radfahren ist nicht verboten vvv
 (Kleistpark): einige Fuﬂg‰nger	q1 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
 (Kleistpark): einige Fuﬂg‰nger	q1 7430,9576 7501,9573
@@ -1865,6 +1864,8 @@ Parforceweg: einige umgest¸rzte B‰ume	q4 -643,7252 -728,7310 -1020,7446 -1328,75
 #: note: offizieller gemeinsamer Rad- und Gehweg
 (Spreeuferweg - Wintersteinstr.): Fuﬂg‰nger, Bordstein	q3 3654,12672 3741,12607
 (Bornholmer Str. - Kolonnenweg): einige Fuﬂg‰nger	q1 10134,16534 10118,16561 10108,16576 9954,16590
+#: note: gemeinsamer Rad- und Gehweg, mit Vorrang f¸r Fuﬂg‰nger
+(Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fuﬂg‰nger	q2 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2240,7 +2241,7 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 (Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3775,8771 3868,8759
 #: XXX_prog: Bordsteine an beiden Enden, ansonsten w‰re es q1
 Apeldorner Weg: Fuﬂg‰nger, Bordsteine	q2 3848,8689 3868,8759 3952,8980
-M¸nstersche Str.: Fuﬂg‰nger	q2 3763,9642 3699,9613
+M¸nstersche Str.: Fuﬂg‰nger	q2 3856,9687 3698,9624
 (Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14076,10011 13995,9834
 (Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14076,10011 14118,10178
 August-Lindemann-Str.: Fuﬂg‰nger	q3 14355,12752 14360,12792

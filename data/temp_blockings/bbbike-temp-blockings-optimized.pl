@@ -1981,7 +1981,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Nestorstr.: Di und Fr 08.00-13.00 Wochenmarkt, Behinderungen möglich',
          'from' => undef,
          'id' => 1814,
-         'data' => '	q4::temp:clock 3374,10201 3359,9968 3347,9793
+         'data' => '	q4::temp:clock 3374,10201 3359,9968 3348,9806
 ',
          'type' => 'gesperrt'
        },
@@ -3459,16 +3459,7 @@ userdel	q4::inwork 7001,8161 7250,8223
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131010.1450.390218.html',
-         'until' => 1384642799,
-         'text' => 'Remstaler Straße: Fahrbahnflächeninstandsetzung zwischen Zerndorfer Weg und Edelhofdamm, vom 14. Oktober 2013 bis zum 16. November 2013 ',
-         'from' => 1381615200,
-         'id' => 2497,
-         'data' => 'userdel	q4::inwork 3171,25495 3141,25575 3141,25626 3154,25659
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3736,6 +3727,17 @@ userdel	q4::inwork 8465,18365 8286,18331
                           ],
          'id' => 2521,
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_020714',
+         'until' => 1401659999,
+         'text' => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, Fahrtrichtung Friedrichstr. gesperrt, vom 18.11.2013 bis Mitte 2014 ',
+         'from' => 1384642800,
+         'id' => 2522,
+         'data' => '#: XXX prüfen, ob tatsächlich für Radfahrer relevant, ggfs. nach handicap_s übertragen
+userdel	q4::inwork; 9130,12433 9343,12464
+',
+         'type' => 'handicap'
        }
      
 );

@@ -307,7 +307,7 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
-#: last_checked: 2013-11-05
+#: last_checked: 2013-11-17
 #: next_check: 2014-03-15
 Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 #: section ^^^
@@ -344,7 +344,7 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: last_checked: 2013-11-11
+#: last_checked: 2013-11-17
 Neue Bahnhofstr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14879,11182 14811,11067 14752,11041
 # 
 #: last_checked: 2013-11-11
@@ -364,8 +364,8 @@ Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::projected
 #: check_frequency: 360d
 Fußgängersteg über den Kietzer Graben: wann wird er errichtet, wird er auch für Radfahrer befahrbar sein?	?::projected 22489,4621 22509,4595
 # 
-#: last_checked: 2013-10-29
-#: next_check: 2013-11-13
+#: last_checked: 2013-11-17
+#: next_check: 2014-03-15
 Siegfriedstr. - Landschaftspark Herzberge: wird es hier noch Drängelgitter geben?	?::inwork 17110,14187
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20131004.1210.390027.html
@@ -419,8 +419,8 @@ Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html ("Durchführungszeit zwei Wochen, allerdings wurde der Termin (16.9.) nicht realisiert)
 #: XXX für Radfahrer evtl. relevant, da Überquerungsmöglichkeit zur Magdalenenstr.
 #: XXX evtl. auch ubahnhof_bg anpassen?
-#: last_checked: 2013-11-05
-#: next_check: 2013-11-25
+#: last_checked: 2013-11-17 (aus der Ferne nichts gesehen)
+#: next_check: 2013-12-17
 U Magdalenenstr.: Bau einer Fußgängerampel geplant	?::projected 16057,11988 16093,11927
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130723.1140.387220.html
@@ -479,10 +479,10 @@ brunolfweg: Verknüpfung gefordert	?::projected 19290,894 19316,951 19334,997
 #: XXX ^^^
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20130705.0855.386745.html
-#: XXX In Richtung Süden wahrscheinlich Radwege, wahrscheinlich asphaltiert
-#: last_checked: 2013-10-29
-#: next_check: 2014-09-30
-Rhinstr.: Radwegsituation nach den Bauarbeiten?	?::inwork 18226,13506 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
+#: XXX In beiden Richtungen werden asphaltierte Radwege entstehen
+#: last_checked: 2013-11-17
+#: next_check: 2014-03-15
+Rhinstr.: wann werden die neuen Radwege freigegeben?	?::inwork 18226,13506 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
 # 
 # REMOVED (realisiert) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4987.html --- #: next_check: 2013-07-31 --- Kirchhainer Damm: Bau von drei neuen Ampeln	? 11663,-3266 11579,-3093 11360,-2648 11308,-2535 11232,-2377 11172,-2224 11130,-2120 11073,-2037
 # REMOVED (realisiert) --- #: last_checked: 2013-08-13 --- #: check_frequency: 45d --- Bauarbeiten im Landschaftspark Herzberge: werden im Bereich des "Zeltlagers" neue Wege entstehen?	? 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
@@ -663,7 +663,7 @@ Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 #: source_id: INKO_117348
 #: osm_watch: node id="28394944" version="19"
 #: osm_watch: way id="192487146" version="3"
-#: last_checked: 2013-10-14
+#: last_checked: 2013-11-17
 #: check_frequency: 30d
 Treskowallee/Waldowallee: wann wird die Ampel fertig sein?	?::inwork 18878,9517
 # 
@@ -736,6 +736,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: XXX laut osm ist der westliche Abschnitt bereits asphaltiert
 #: last_checked: 2013-10-16
 #: next_check: 2013-11-13
+#: priority: #A
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11472,7899 11573,7924 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11823,7980 11979,8014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: osm_watch: way id="182693863" version="1"
@@ -1041,9 +1042,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 #: next_check: 2014-05-01
 Neubaugebiet am Dahlemer Weg: entstehen hier neue Straßen oder werden bestehende Straßen verlängert?	? 1946,3142 2094,3231 2203,3213 2172,3043 2031,3004 1946,3142
 # 
-#: last_checked: 2013-10-29 (Kreidemarkierungen zu sehen)
-#: next_check: 2014-11-29
-Seddiner Str.: anscheinend werden hier Radspuren markiert? Was passiert mit der vorhandenen Busspur?	? 18559,12105 18408,12105 18215,12123
+# REMOVED (realisiert) --- #: last_checked: 2013-10-29 (Kreidemarkierungen zu sehen) --- #: next_check: 2014-11-29 --- Seddiner Str.: anscheinend werden hier Radspuren markiert? Was passiert mit der vorhandenen Busspur?	? 18559,12105 18408,12105 18296,12115 18215,12123
 # 
 #: last_checked: 2013-10-29
 #: next_check: 2014-03-29
@@ -1069,6 +1068,7 @@ Hildburghauser Str.: Qualität des Asphalts?	? 4806,1360 4897,1346 5056,1321 5223
 Schwarzwurzel-Park: Bordsteine? Qualität? Nachts beleuchtet?	? 20654,18336 20700,18358 20817,18344 20826,18331
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5569
+#: last_checked: 2013-11-17
 #: next_check: 2014-10-01
 Johannes-Fest-Platz: hier wird wahrscheinlich ein Platz benannt	? 18791,8597
 # 

@@ -188,9 +188,9 @@ Joachimstr.	1 10142,13556 10085,13684
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
 Friedrichsruher Str.	1 3196,9193 3333,9026
-Schweidnitzer Str	1 3202,9583 3223,9837
+Schweidnitzer Str	1 3220,9598 3225,9844
 Mansfelder Str.	1 4096,9175 4158,9109 4228,9093 4325,9082
-Johann-Georg-Str.	1 3108,10069 3170,10041 3347,9793
+Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
 Damaschkestr.	1 3132,10499 3013,10553
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Darßer Str.	1 15000,18056 15031,18106 15181,18137
@@ -760,7 +760,7 @@ Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 Amalienstr.	1s 13789,16775 13722,16843 13653,16907 13589,16965
 Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
-Aristotelessteig	1s 18527,9623 18660,9599
+Aristotelessteig	1s 18496,9628 18527,9623 18660,9599
 Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
 (Roedeliusweg - Heerstr.)	2 -4431,11779 -4437,11919
@@ -960,7 +960,6 @@ Niemannstr.	1s 14254,11377 14211,11229
 Björnsonstr	1s 10209,16674 10197,16528
 Ibsenstr.	1s 10295,16667 10209,16674
 Eichhornstr.	1s 8232,11414 8253,11306 8280,11296
-Paul-Junius-Str.	1s 15096,12974 15090,13116
 Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
@@ -1425,13 +1424,13 @@ Klingelhöferstr. -> Herkulesufer: unbequem passierbarer Mittelstreifen	3::igndis
 Lützowufer -> Lützowufer: unbequem passierbarer Mittelstreifen	3::igndisp 7002,11034 6873,11011 6742,11099
 Lützowufer -> Schillstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7002,11034 6873,11011 6824,10904
 Lützowufer -> Lützowufer: unbequem passierbarer Mittelstreifen	3::igndisp 6742,11099 6873,11011 7002,11034
-Tunneleinfahrt Adenauerplatz	3nocross::ignrte 3852,10236 3874,10153 3906,10035 3930,9919
+Tunneleinfahrt Adenauerplatz	3nocross::ignrte 3852,10236 3874,10153 3902,10043 3927,9935
 Brandenburgische Str. -> Duisburger Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3852,10236 3874,10153 4183,10144
-Brandenburgische Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3874,10153 3906,10035 4151,10026
-Düsseldorfer Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 4151,10026 3906,10035 3930,9919
-Düsseldorfer Str. -> Paderborner Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 4151,10026 3906,10035 3720,9996
-Paderborner Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3720,9996 3906,10035 3874,10153
-Paderborner Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3720,9996 3906,10035 4151,10026
+Brandenburgische Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3874,10153 3902,10043 4152,10033
+Düsseldorfer Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 4152,10033 3902,10043 3927,9935
+Düsseldorfer Str. -> Paderborner Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 4152,10033 3902,10043 3719,10004
+Paderborner Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3719,10004 3902,10043 3874,10153
+Paderborner Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3719,10004 3902,10043 4152,10033
 Straßenbahntrasse	3nocross::ignrte 18809,9133 18790,9018 18770,8898
 Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,9018 18770,8898
 Treskowallee -> Bopparder Str.: Straßenbahntrasse	3::igndisp 18809,9133 18790,9018 18881,9002
@@ -2630,7 +2629,6 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
-Alfred-Siggel-Weg: wird noch gebaut	2::inwork 19406,7886 19531,7794
 Erna-Samuel-Str.: Einbahnstraße bis zur kompletten Fertigstellung	1::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Zugang durch Bauzäune versperrt	2::inwork 8243,9766 8233,9863 8201,9869 8255,9938 8285,9956
 Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,10098 7928,10094 8027,10076 8035,10075
@@ -2719,7 +2717,7 @@ schwierig zu querender Mittelstreifen	3nocross::ignrte 6532,10529 6636,10492 675
 Kalckreuthstr. -> Kleiststr.: schwierig zu querender Mittelstreifen	3::igndisp 6628,10318 6636,10492 6532,10529
 Kleiststr. -> Kalckreuthstr.: schwierig zu querender Mittelstreifen	3::igndisp 6753,10446 6636,10492 6628,10318
 (Los-Angeles-Platz)	1s 5681,10696 5822,10609
-Bregenzer Str.	1 4279,10270 4227,10014
+Bregenzer Str.	1 4279,10270 4228,10020
 Schwingtor zum Spielplatz	BNP:10:-236 11865,13027
 Schwingtor zum Spielplatz	BNP:10:-156 11874,13048
 Schwingtor zum Spielplatz	BNP:10:-250 11815,13045
@@ -2803,7 +2801,7 @@ Bechstedter Weg -> Hohenzollerndamm: unpassierbarer Mittelstreifen	3::igndisp 36
 Hohenzollerndamm -> Bechstedter Weg: unpassierbarer Mittelstreifen	3::igndisp 3521,9059 3467,9045 3661,8815
 Kette	BNP:5:-131 3370,9215
 Kette	BNP:5:-220 3264,9261
-Bregenzer Str.	1 4279,10270 4227,10014
+Bregenzer Str.	1 4279,10270 4228,10020
 unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross::ignrte 12901,14093 12972,14173 12992,14196 13026,14234
 Kniprodestr. -> Heinz-Kapelle-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12901,14093 12972,14173 12782,14300
 Heinz-Kapelle-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12782,14300 12972,14173 12992,14196

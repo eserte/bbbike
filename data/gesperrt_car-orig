@@ -563,8 +563,8 @@ Johannes-Sasse-Ring	1 17525,3029 17465,2964 17412,2908 17199,3082 17146,3125 172
 Podbielskiallee - Englerallee	3 3641,5836 3712,5806 3732,5920
 Frieda-Seidlitz-Str.	1 12761,16862 12613,16749 12602,16727
 Suermondtstr: Straﬂenbahntrasse	3nocross 15918,16383 16099,16339 16263,16288
-Paulsborner Str.: Mittelstreifen	3nocross 3587,9905 3620,9936 3706,10039
-Paulsborner Str.: Mittelstreifen	3nocross 3620,9936 3706,10039 3747,10094 3852,10236
+Paulsborner Str.: Mittelstreifen	3nocross 3587,9905 3605,9929 3701,10047
+Paulsborner Str.: Mittelstreifen	3nocross 3605,9929 3701,10047 3741,10097 3852,10236
 Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
 Brandenburger Str. (Potsdam): Fuﬂg‰ngerzone	3nocross -13556,-1140 -13410,-1101 -13289,-1071 -13173,-1039 -12999,-1000 -12883,-976
 Eichhornstr. - Potsdamer: abbiegen verboten	3 8232,11414 8226,11458 8145,11438
@@ -664,7 +664,7 @@ Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10
 Clausewitzstr.	1 3971,10381 4007,10559
 #: note ^^^
 #: by: andk
-Bayerische Str.	1 4296,10004 4352,10260
+Bayerische Str.	1 4297,10008 4352,10260
 Ferdinand-Schultze-Str - Landsberger Allee	3 17794,14640 17848,14523 18057,14549
 Michelangelostr./Kniprodestr.	3 13875,15142 13854,15129 13816,15137 13823,15111
 Kurm‰rkische Str.	3 7413,10244 7429,10366 7337,10396
@@ -963,3 +963,5 @@ Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777
 Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10872,13570
 Ibsenstr.: Barriere	3 10549,16650 10632,16644 *
 Ibsenstr.: Barriere	3 * 10632,16644 10549,16650
+# REMOVED (realisiert) --- #: XXX wird hier die Einbahnstraﬂenregelung f¸r Radfahrer aufgehoben? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5407 --- #: last_checked: 2013-10-14
+Paul-Junius-Str.	1 15096,12974 15090,13116

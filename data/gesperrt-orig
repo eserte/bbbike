@@ -227,9 +227,9 @@ Joachimstr.	1 10142,13556 10085,13684
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
 Friedrichsruher Str.	1 3196,9193 3333,9026
-Schweidnitzer Str	1 3202,9583 3223,9837
+Schweidnitzer Str	1 3220,9598 3225,9844
 Mansfelder Str.	1 4096,9175 4158,9109 4228,9093 4325,9082
-Johann-Georg-Str.	1 3108,10069 3170,10041 3347,9793
+Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
 Damaschkestr.	1 3132,10499 3013,10553
 # REMOVED --- Herbartstr.	1 2346,11147 2340,11045
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
@@ -1037,7 +1037,7 @@ Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 Amalienstr.	1s:q3 13789,16775 13722,16843 13653,16907 13589,16965
 Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
-Aristotelessteig	1s:q2 18527,9623 18660,9599
+Aristotelessteig	1s:q2 18496,9628 18527,9623 18660,9599
 #: by: Stefan Klinkusch vvv
 Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
@@ -1283,10 +1283,6 @@ Niemannstr.	1s:q3 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
 Ibsenstr.	1s:q1 10295,16667 10209,16674
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
-#: XXX wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben?
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5407
-#: last_checked: 2013-10-14
-Paul-Junius-Str.	1s:q2 15096,12974 15090,13116
 Ahornallee	1s:q3 1589,11483 1574,11379
 Lindenallee	1s:q3 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s:q1 49779,90206 49841,90479
@@ -1471,7 +1467,7 @@ Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21390,4637 21494,4605
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11898,8362 11920,8252 11931,8206
 Bundesplatztunnel	3nocross 5350,7554 5349,7619 5348,7681 5348,7746 5346,7860
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
-Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
+Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3902,10043 3927,9935
 Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18165,7371
 Treskowallee: Straßenbahntrasse	3nocross 18406,7760 18570,8025 18657,8163
@@ -2447,11 +2443,6 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: XXX siehe XXX-Eintrag in strassen-orig
-#: last_checked: 2013-09-11
-#: check_frequency: 100d
-Alfred-Siggel-Weg: wird noch gebaut	2::inwork 19406,7886 19531,7794
-# 
 #: last_checked: 2013-11-12
 #: next_check: 2014-01-15
 Erna-Samuel-Str.: Einbahnstraße bis zur kompletten Fertigstellung	1::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
@@ -2564,7 +2555,7 @@ Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 # 
 #: by: Kai Wagner
 #: confirmed_by: srt
-#: last_checked: 2013-08-29
+#: last_checked: 2013-11-17
 #: next_check: 2014-05-01
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 #
@@ -2758,7 +2749,7 @@ Bozener Str.	1 5971,8926 5975,9094
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492 6753,10446
 # REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Queren nicht möglich	3nocross 5354,8236 5363,8170 5376,8104 5357,8013
 (Los-Angeles-Platz)	1s:q3 5681,10696 5822,10609
-Bregenzer Str.	1 4279,10270 4227,10014
+Bregenzer Str.	1 4279,10270 4228,10020
 Schwingtor zum Spielplatz	BNP:10 11865,13027
 Schwingtor zum Spielplatz	BNP:10 11874,13048
 Schwingtor zum Spielplatz	BNP:10 11815,13045
@@ -2810,7 +2801,7 @@ Hohenzollerndamm: unpassierbarer Mittelstreifen	3nocross 3427,9010 3467,9045 352
 Kette	BNP:5 3370,9215
 Kette	BNP:5 3264,9261
 # REMOVED (Tunnel wird zurückgebaut) --- #: corrected_by: srt/new_policy (0:240 -> 2 x 0:40; 60s for 60 steps and 20s for the way under the tunnel, divided into two) vvv --- (Fußgängertunnel Sybelstr.): 30 Stufen	0:40 3731,10563 --- (Fußgängertunnel Sybelstr.): 30 Stufen	0:40 3759,10567 --- #: corrected_by ^^^
-Bregenzer Str.	1 4279,10270 4227,10014
+Bregenzer Str.	1 4279,10270 4228,10020
 Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross 12901,14093 12972,14173 12992,14196 13026,14234
 Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13057,14267 13097,14307 13183,14400 13239,14461 13295,14521 13362,14593
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40 6253,14184

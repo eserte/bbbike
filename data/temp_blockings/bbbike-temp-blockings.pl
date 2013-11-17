@@ -1406,7 +1406,7 @@ EOF
        text  => 'Düsseldorfer Str. in beiden Richtungen zwischen Brandenburgische Str. und Konstanzer Str. Baustelle, Straße vollständig gesperrt (bis 24.12.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 4151,10026 3906,10035
+userdel	2 4152,10033 3902,10043
 EOF
      },
      { from  => undef, # 
@@ -9791,7 +9791,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006391',
        data  => <<EOF,
-userdel	2::inwork 16852,14412 16871,14230 16881,14063
+userdel	2::inwork 16852,14412 16873,14236 16881,14063
 EOF
      },
      { from  => 1188424800, # 2007-08-30 00:00
@@ -15517,7 +15517,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	q4::temp:clock 3374,10201 3359,9968 3347,9793
+	q4::temp:clock 3374,10201 3359,9968 3348,9806
 EOF
      },
      { from  => undef, #
@@ -18548,7 +18548,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20101007.1035.313571.html',
        data  => <<EOF,
-userdel	q4::inwork; 3431,9763 3467,9793 3587,9905 3620,9936 3706,10039 3747,10094 3852,10236
+userdel	q4::inwork; 3427,9771 3469,9807 3587,9905 3605,9929 3701,10047 3741,10097 3852,10236
 EOF
      },
      { from  => 1287892800, # 2010-10-24 06:00
@@ -22254,6 +22254,16 @@ EOF
        source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
        data  => <<EOF,
 userdel	2::temp 11317,14564 11255,14572 11163,14548
+EOF
+     },
+     { from  => 1384642800, # 2013-11-17 00:00
+       until => 1401659999, # 2014-06-01 23:59
+       text  => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, Fahrtrichtung Friedrichstr. gesperrt, vom 18.11.2013 bis Mitte 2014 ',
+       type  => 'handicap',
+       source_id => 'IM_020714',
+       data  => <<EOF,
+#: XXX prüfen, ob tatsächlich für Radfahrer relevant, ggfs. nach handicap_s übertragen
+userdel	q4::inwork; 9130,12433 9343,12464
 EOF
      },
     );

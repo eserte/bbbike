@@ -999,9 +999,9 @@ Dominicusstr. -> Feurigstr.: ‹berqueren verboten	3::igndisp 6687,8385 6807,8309 
 Schranke	3 8992,14176 8825,14401 8776,14364
 Schranke	3 8776,14364 8825,14401 8992,14176
 Plonzstr.	1 16227,12280 16252,12411
-Seddiner -> Hohenschˆnhausener Weg: Poller	3 18215,12123 18408,12105 18420,11864
+Seddiner -> Hohenschˆnhausener Weg: Poller	3 18296,12115 18408,12105 18420,11864
 Seddiner -> Hohenschˆnhausener Weg: Poller	3 18559,12105 18408,12105 18420,11864
-Hohenschˆnhausener Weg -> Seddiner: Poller	3 18420,11864 18408,12105 18215,12123
+Hohenschˆnhausener Weg -> Seddiner: Poller	3 18420,11864 18408,12105 18296,12115
 Hohenschˆnhausener Weg -> Seddiner: Poller	3 18420,11864 18408,12105 18559,12105
 Gluckweg	1 6039,3275 5853,3050
 Rosenfelder Ring	3 17978,12084 18093,12093 18165,12091
@@ -1026,14 +1026,14 @@ Frieda-Seidlitz-Str.	1 12761,16862 12613,16749 12602,16727
 Straﬂenbahntrasse	3nocross::ignrte 15918,16383 16099,16339 16263,16288
 Suermondtstr. -> Annemariestr.: Straﬂenbahntrasse	3::igndisp 16263,16288 16099,16339 16075,16249
 Annemariestr. -> Suermondtstr.: Straﬂenbahntrasse	3::igndisp 16075,16249 16099,16339 15918,16383
-Mittelstreifen	3nocross::ignrte 3587,9905 3620,9936 3706,10039
-Paulsborner Str. -> Albrecht-Achilles-Str.: Mittelstreifen	3::igndisp 3587,9905 3620,9936 3604,9961
-Albrecht-Achilles-Str. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3604,9961 3620,9936 3706,10039
-Mittelstreifen	3nocross::ignrte 3620,9936 3706,10039 3747,10094 3852,10236
-Eisenzahnstr. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3720,10027 3706,10039 3620,9936
-Paulsborner Str. -> Eisenzahnstr.: Mittelstreifen	3::igndisp 3747,10094 3706,10039 3720,10027
-Paulsborner Str. -> Eisenzahnstr.: Mittelstreifen	3::igndisp 3706,10039 3747,10094 3728,10125
-Eisenzahnstr. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3728,10125 3747,10094 3852,10236
+Mittelstreifen	3nocross::ignrte 3587,9905 3605,9929 3701,10047
+Paulsborner Str. -> Albrecht-Achilles-Str.: Mittelstreifen	3::igndisp 3587,9905 3605,9929 3604,9961
+Albrecht-Achilles-Str. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3604,9961 3605,9929 3701,10047
+Mittelstreifen	3nocross::ignrte 3605,9929 3701,10047 3741,10097 3852,10236
+Paulsborner Str. -> Eisenzahnstr.: Mittelstreifen	3::igndisp 3741,10097 3701,10047 3720,10027
+Eisenzahnstr. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3720,10027 3701,10047 3605,9929
+Eisenzahnstr. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3728,10125 3741,10097 3852,10236
+Paulsborner Str. -> Eisenzahnstr.: Mittelstreifen	3::igndisp 3701,10047 3741,10097 3728,10125
 Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
 Fuﬂg‰ngerzone	3nocross::ignrte -13556,-1140 -13410,-1101 -13289,-1071 -13173,-1039 -12999,-1000 -12883,-976
 Brandenburger Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13289,-1071 -13410,-1101 -13392,-1196
@@ -1198,7 +1198,7 @@ Christburger Str. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 11912,14486
 Sybelstr.	1 3981,10590 3883,10585
 Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559
-Bayerische Str.	1 4296,10004 4352,10260
+Bayerische Str.	1 4297,10008 4352,10260
 Ferdinand-Schultze-Str - Landsberger Allee	3 17794,14640 17848,14523 18057,14549
 Michelangelostr./Kniprodestr.	3 13875,15142 13854,15129 13816,15137 13823,15111
 Kurm‰rkische Str.	3 7413,10244 7429,10366 7337,10396
@@ -1663,3 +1663,4 @@ Ibsenstr.: Barriere	3 10549,16650 10632,16644 10793,16636
 Ibsenstr.: Barriere	3 10620,16497 10632,16644 10549,16650
 Ibsenstr.: Barriere	3 10635,16706 10632,16644 10549,16650
 Ibsenstr.: Barriere	3 10793,16636 10632,16644 10549,16650
+Paul-Junius-Str.	1 15096,12974 15090,13116
