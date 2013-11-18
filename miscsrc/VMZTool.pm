@@ -14,11 +14,13 @@
 package VMZTool;
 
 use strict;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
+use File::Basename qw(basename);
 use HTML::FormatText 2;
 use HTML::TreeBuilder;
 use HTML::Tree;
+use JSON::XS qw(decode_json);
 use LWP::UserAgent ();
 use URI ();
 use URI::QueryParam ();
@@ -39,7 +41,8 @@ use Karte::Standard;
 use constant MELDUNGSLISTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungsliste.jsp?back=true';
 use constant MELDUNGSKARTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true';
 
-use constant MELDUNGSLISTE_BERLIN_URL => 'http://www.vmz-info.de/web/guest/2?p_p_id=simaps_WAR_simapsportlet_INSTANCE_ovXy&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_simaps_WAR_simapsportlet_INSTANCE_ovXy_cmd=traffic&_simaps_WAR_simapsportlet_INSTANCE_ovXy_submenu=traffic_construction';
+# @TIMER@ is replaced here:
+use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://www.vmz-info.de/web/guest/home?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_url=http%3A%2F%2Fwms.viz.mobilitaetsdienste.de%2Fpoint_list%2F%3Flang%3Dde&timer=@TIMER@&category=trafficmessage&state=BB';
 
 sub _trim ($);
 
@@ -55,6 +58,11 @@ sub new {
     $self->{formatter} = HTML::FormatText->new(leftmargin => 0, rightmargin => 60);
     $self->{existsid_current} = {};
     $self->{existsid_old} = {};
+    {
+	my $timer = time * 1000;
+	(my $meldungsliste_berlin_url = MELDUNGSLISTE_BERLIN_URL_FMT) =~ s{\@TIMER\@}{$timer};
+	$self->{meldungsliste_berlin_url} = $meldungsliste_berlin_url;
+    }
     eval { require Hash::Util; Hash::Util::lock_keys($self) }; warn $@ if $@;
     $self;
 }
@@ -90,9 +98,10 @@ sub fetch_mappage {
 sub fetch_berlin_summary {
     my($self, $file) = @_;
     my $ua = $self->{ua};
-    my $resp = $ua->mirror(MELDUNGSLISTE_BERLIN_URL, $file);
+    my $meldungsliste_berlin_url = $self->{meldungsliste_berlin_url};
+    my $resp = $ua->mirror($meldungsliste_berlin_url, $file);
     if (!$resp->is_success) {
-	die "Failed while fetching " . MELDUNGSLISTE_BERLIN_URL . ": " . $resp->as_string;
+	die "Failed while fetching $meldungsliste_berlin_url: " . $resp->as_string;
     }
 }
 
@@ -222,81 +231,24 @@ sub parse_mappage {
 }
 
 sub parse_berlin_summary {
-    my($self, $summary_file, $detail_file) = @_;
+    my($self, $summary_file) = @_;
 
-    my %place2rec;
-    my %id2rec;
+    my $json = do { open my $fh, '<:raw', $summary_file or die $!; local $/; <$fh> };
+    my $summary_data = decode_json $json;
 
     my $place = 'Berlin';
 
-    my $id_to_points;
-    my $fetch_idtopoints = sub {
-	return $id_to_points if $id_to_points;
-	my($href) = @_;
-	my $content;
-	if (defined $detail_file) {
-	    $content = do { open my $fh, '<:utf8', $detail_file or die $!; local $/; <$fh> };
-	} else {
-	    my $resp = $self->{ua}->get($href);
-	    if (!$resp->is_success) {
-		die "No success fetching $href: " . $resp->status_line;
-	    }
-	    $content = $resp->decoded_content;
-	}
+    my %id2rec;
+    my %place2rec;
 
-	my @chunks = split /function _simaps_WAR_simapsportlet_INSTANCE_ovXy_marker/, $content;
-	shift @chunks;
-	$chunks[-1] =~ s{function removeFolderMessages.*}{}s;
-	for my $chunk (@chunks) {
-	    my $id;
-	    if ($chunk =~ m{INSTANCE_ovXy_markerTM_([A-Za-z0-9_]+)'}) {
-		$id = $1;
-	    }
-	    if (defined $id) {
-		my @points;
-		while($chunk =~ m{new GLatLng\(([\d\.]+),([\d\.]+)\)}g) {
-		    my($y, $x) = ($1, $2);
-		    push @points, { lon => $x, lat => $y };
-		}
-		$id_to_points->{$id} = \@points;
-	    }
-	}
-    };
+    for my $record (@{ $summary_data->{list} }) {
+	my $type = lc basename $record->{icon}; # something like "ROADWORKS" or "INDEFINITION"
 
-    my $htmltb = HTML::TreeBuilder->new;
-    my $html = do { open my $fh, '<:utf8', $summary_file or die $!; local $/; <$fh> };
-    my $tree = $htmltb->parse($html);
-    my $table = $tree->look_down('_tag', 'table',
-				 'id', 'project')
-	or die "Cannot find table id=project";
+	(my $id = $record->{pointId}) =~ s{^News_id_}{};
 
-    for my $tr ($table->look_down('_tag', 'tr')) {
-	my(@td) = $tr->look_down('_tag', 'td');
-	# first td has warning image
-	my $warn_img = $td[0]->look_down('_tag', 'img');
-	my $type = 'unknown';
-	if ($warn_img) {
-	    my $img_src = $warn_img->attr('src');
-	    if ($img_src =~ m{/signs/(.*)\.(?:gif|png)}) {
-		$type = $1;
-	    } else {
-		warn "Cannot get warning type from '$img_src'";
-	    }
-	}
-	my $a = $td[1]->look_down('_tag', 'a');
-	my $a_href;
-	my $id;
-	if ($a) {
-	    $a_href = $a->attr('href');
-	    if ($a_href) {
-		if ($a_href =~ m{Xy_markerTM_([^&;]+)}) {
-		    $id = $1;
-		}
-		$a_href = URI->new_abs($a_href, MELDUNGSLISTE_BERLIN_URL)->as_string;
-		$fetch_idtopoints->($a_href);
-	    }
-	}
-	my $text = $self->{formatter}->format($td[1]);
+	my $htmltb = HTML::TreeBuilder->new;
+	my $tree = $htmltb->parse($record->{description});
+	my $text = $self->{formatter}->format($htmltb);
 	$text =~ s{^\n+}{}; $text =~ s{\n+$}{};
 	$text =~ s{^\s*Straße:\s+(.*)}{$1}m;
 	my $strasse = $1;
@@ -306,9 +258,9 @@ sub parse_berlin_summary {
 	if (defined $id) { # currently we cannot use entries without id
 	    my $record = { place  => $place,
 			   id     => $id,
-			   points => $id_to_points->{$id},
+			   points => [ {lon => $record->{x}, lat => $record->{y}} ],
 			   type   => $type,
-			   href   => $a_href,
+			   #href   => $a_href,
 			   text   => $text,
 			   strassen => [$strasse],
 			 };
@@ -502,8 +454,7 @@ if ($do_test) {
     my $samples_dir = "$ENV{HOME}/src/bbbike-aux/samples";
     $file       = "$samples_dir/Meldungsliste.jsp?back=true";
     $mapfile    = "$samples_dir/Meldungskarte.jsp?back=true&map=true&x=52.1034702789087&y=14.270757485947728&zoom=13&meldungId=LS%2FO-SG33-F%2F10%2F027";
-    $berlinsummaryfile = "$samples_dir/berlin_summary";
-    $berlindetailfile  = "$samples_dir/berlin_detail";
+    $berlinsummaryfile = "$samples_dir/vmz-2013.json";
 } elsif ($do_fetch) {
     ($tmpfh,$file)     = tempfile(UNLINK => 1) or die $!;
     ($tmp2fh,$mapfile) = tempfile(UNLINK => 1) or die $!;
@@ -530,7 +481,7 @@ if ($file && $mapfile) {
     %res = %$res;
 }
 if ($berlinsummaryfile) {
-    my %berlin_res = $vmz->parse_berlin_summary($berlinsummaryfile, $berlindetailfile);
+    my %berlin_res = $vmz->parse_berlin_summary($berlinsummaryfile);
     while(my($id,$rec) = each %{ $berlin_res{id2rec} }) {
 	if (!exists $res{id2rec}->{$id}) {
 	    $res{id2rec}->{$id} = $rec;
@@ -562,6 +513,11 @@ Conversion between old vmz file into new format for "removed"
 detection:
 
     perl -MYAML::XS=LoadFile,Dump -e '$d = LoadFile(shift); for (@$d) { $seen{$_->{id}} = $_ } print Dump { id2rec => \%seen }' ~/cache/misc/vmz.yaml > /tmp/oldvmz.yaml
+
+Test usage:
+
+    echo "---" > /tmp/oldvmz.yaml
+    perl miscsrc/VMZTool.pm -test -oldstore /tmp/oldvmz.yaml -newstore /tmp/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
 
 First-time usage:
 
