@@ -3538,16 +3538,7 @@ userdel	q4::inwork 8465,18365 8286,18331
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_020657',
-         'until' => 1384786800,
-         'text' => 'Rosenthaler Str.: zwischen Neue Schönhauser Str. und Weinmeisterstr. Baustelle, Fahrbahn Richtung Rosenthaler Platz gesperrt, bis 18.11.2013 ',
-         'from' => 1383458400,
-         'id' => 2510,
-         'data' => 'userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_020670',
          'until' => 1385319600,
@@ -3578,16 +3569,7 @@ userdel	q4::inwork 8465,18365 8286,18331
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1311/nachricht5105.html',
-         'until' => 1384729199,
-         'text' => 'Schönerlinder Straße: zwischen Str. am Posseberg und Str. am Vorwerk (unter der Autobahnbrücke) für alle Verkehrsteilnehmer komplett gesperrt, 16. November 2013 08:00 Uhr bis 17. November 2013 24:00 Uhr',
-         'from' => 1384498800,
-         'id' => 2514,
-         'data' => 'userdel	2::inwork 12624,25570 12694,25696
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
          'data' => 'userdel	2::temp 9986,13412 10317,13248
@@ -3730,12 +3712,23 @@ userdel	q4::inwork 8465,18365 8286,18331
        },
        {
          'source_id' => 'IM_020714',
-         'until' => 1401659999,
-         'text' => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, Fahrtrichtung Friedrichstr. gesperrt, vom 18.11.2013 bis Mitte 2014 ',
+         'until' => 1404136800,
+         'text' => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, Fahrtrichtung Friedrichstr. gesperrt, vom 18.11.2013 bis Ende Juni 2014 ',
          'from' => 1384642800,
          'id' => 2522,
          'data' => '#: XXX prüfen, ob tatsächlich für Radfahrer relevant, ggfs. nach handicap_s übertragen
 userdel	q4::inwork; 9130,12433 9343,12464
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_020737',
+         'until' => 1385938799,
+         'text' => 'Monumentenbrücke: zwischen Kreuzbergstr. und Bautzener Str. Baustelle, Fahrbahn gesperrt, bis Anfang Dezember 2013 ',
+         'from' => 1384642800,
+         'id' => 2523,
+         'data' => '#: XXX prüfen, ob tatsächlich für Radfahrer relevant
+userdel	q4::inwork 8180,9099 8389,9087
 ',
          'type' => 'handicap'
        }

@@ -22257,13 +22257,23 @@ userdel	2::temp 11317,14564 11255,14572 11163,14548
 EOF
      },
      { from  => 1384642800, # 2013-11-17 00:00
-       until => 1401659999, # 2014-06-01 23:59
-       text  => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, Fahrtrichtung Friedrichstr. gesperrt, vom 18.11.2013 bis Mitte 2014 ',
+       until => 1404136800, # 2014-06-30 16:00
+       text  => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, Fahrtrichtung Friedrichstr. gesperrt, vom 18.11.2013 bis Ende Juni 2014 ',
        type  => 'handicap',
        source_id => 'IM_020714',
        data  => <<EOF,
 #: XXX prüfen, ob tatsächlich für Radfahrer relevant, ggfs. nach handicap_s übertragen
 userdel	q4::inwork; 9130,12433 9343,12464
+EOF
+     },
+     { from  => 1384642800, # 2013-11-17 00:00
+       until => 1385938799, # 2013-12-01 23:59
+       text  => 'Monumentenbrücke: zwischen Kreuzbergstr. und Bautzener Str. Baustelle, Fahrbahn gesperrt, bis Anfang Dezember 2013 ',
+       type  => 'handicap',
+       source_id => 'IM_020737',
+       data  => <<EOF,
+#: XXX prüfen, ob tatsächlich für Radfahrer relevant
+userdel	q4::inwork 8180,9099 8389,9087
 EOF
      },
     );
