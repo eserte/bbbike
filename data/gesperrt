@@ -603,7 +603,7 @@ Boppstr.	1s 11785,9437 11560,9524
 Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s 21774,-436 21719,-397 21637,-381
-Herrfurthstr.	1s 11979,8014 11823,7980
+Herrfurthstr.	1s 11979,8014 11833,7980
 Dankratstr.	1s 21105,9538 20943,9543
 Helen-Ernst-Str., hinter der o2-Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
 Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13909,3845
@@ -1402,11 +1402,10 @@ Oberspreestr. -> Flemmingstr.: Straßenbahntrasse	3::igndisp 21579,4579 21726,453
 Straßenbahntrasse	3nocross::ignrte 21332,4655 21390,4637 21494,4605
 Westendstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21370,4442 21390,4637 21332,4655
 Oberspreestr. -> Westendstr.: Straßenbahntrasse	3::igndisp 21494,4605 21390,4637 21370,4442
-Gitter auf Mittelstreifen	3nocross::ignrte 11898,8362 11920,8252 11931,8206
-Mahlower Str. -> Boddinstr.: Gitter auf Mittelstreifen	3::igndisp 11773,8231 11920,8252 12104,8299
-Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3::igndisp 11773,8231 11920,8252 11898,8362
-Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3::igndisp 11931,8206 11920,8252 11773,8231
-Hermannstr. -> Boddinstr.: Gitter auf Mittelstreifen	3::igndisp 11898,8362 11920,8252 12104,8299
+Gitter auf Mittelstreifen	3nocross::ignrte 11898,8362 11915,8279 11920,8252 11931,8206
+Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3::igndisp 11920,8252 11915,8279 11776,8253
+Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3::igndisp 11776,8253 11915,8279 11898,8362
+Hermannstr. -> Boddinstr.: Gitter auf Mittelstreifen	3::igndisp 11915,8279 11920,8252 12104,8299
 Bundesplatztunnel	3nocross::ignrte 5350,7554 5349,7619 5348,7681 5348,7746 5346,7860
 Ortrudstr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5493,7590 5349,7619 5350,7554
 Bundesallee -> Ortrudstr.: Bundesplatztunnel	3::igndisp 5348,7681 5349,7619 5493,7590
@@ -2069,6 +2068,8 @@ Südwestkorso -> Gustav-Rickelt-Weg: Mittelstreifen, parkende Autos	3::igndisp 42
 Gustav-Rickelt-Weg -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4223,6796 4206,6820 4061,6753
 Südwestkorso -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4125,6763 4206,6820 4061,6753
 Mittelstreifen	3nocross::ignrte 1910,20548 1929,20501 1955,20435
+Uferweg am Tegeler Hafen -> Berliner Str.: Mittelstreifen	3::igndisp 1863,20478 1929,20501 1910,20548
+Berliner Str. -> Uferweg am Tegeler Hafen: Mittelstreifen	3::igndisp 1955,20435 1929,20501 1863,20478
 Mittelstreifen	3nocross::ignrte 10083,21848 10097,21809 10106,21784
 Am Nordgraben -> Dietzgenstr.: Mittelstreifen	3::igndisp 10275,21793 10097,21809 10106,21784
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
@@ -3237,3 +3238,4 @@ Königsberger Str., linker Gehweg	1::igndisp 4236,2678 4164,2717
 #: next_check: ^^^
 #: last_checked: ^^^
 Bornholmer Str., linker Gehweg	1::igndisp 10197,16528 10118,16561
+Platz der Vereinten Nationen, linker Gehweg	1::igndisp 11984,13081 11962,13089 11952,13095

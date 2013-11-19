@@ -82,7 +82,7 @@ Alexanderplatz: langsame Straﬂenbahnen, Fuﬂg‰ngerverkehr	q2 11139,13008 11064,12
 Rathausstr.: Fuﬂg‰nger	q1 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
-Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10793,12906 10923,12779
+Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10801,12901 10923,12779
 Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726 14674,9764 14500,9856 14483,9843 14460,9871 14448,9922
 (S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14361,9772 14436,9784 14460,9814 14483,9843
 (Uferweg - Puschkinallee): Fuﬂg‰nger	q1 14443,9731 14318,9688
@@ -392,6 +392,7 @@ Pankeweg: Fuﬂg‰nger	q1 8839,16873 8823,16877 8804,16881
 Pankeweg: Fuﬂg‰nger	q1 8721,16689 8804,16881 8866,17075
 Pankeweg: Fuﬂg‰nger	q1 8303,15298 8270,15237 8266,15134
 Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1863,20478
+(Uferweg am Tegeler Hafen - Berliner Str.): Fuﬂg‰nger	q1 1863,20478 1929,20501
 (Berliner Str. - Tegeler Hafen): Fuﬂg‰nger	q1 1872,20683 1741,20571
 (Tegeler Hafen - An der M¸hle): Fuﬂg‰nger, teilweise eng	q2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Br¸cke ¸ber den Tegeler Flieﬂ): eng, Fuﬂg‰nger	q3 2371,21524 2352,21559
@@ -1463,8 +1464,8 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 (Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q3 11865,13027 11874,13048 11896,13075
 (Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q2 11656,13100 11681,13161
 (Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12039,12675
-(Verbindungsweg): Fuﬂg‰nger	q1 11646,13465 11703,13422
-Weinstr.: Fuﬂg‰nger, Wurzeln	q3 11793,13247 11909,13387
+(Verbindungsweg): Fuﬂg‰nger, Bordstein	q2 11667,13465 11703,13426
+Weinstr.: Fuﬂg‰nger, Schulen	q2 11793,13247 11909,13387
 (Mollstr. - Barnimstr.): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 11723,13139 11758,13210
 Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (zum Anhalter Steg): eng, Fuﬂg‰nger	q2 8677,10224 8662,10227 8711,10322
@@ -1611,7 +1612,7 @@ S¸dpark): Fuﬂg‰nger	q2 -4070,12006 -3990,11912 -3890,11775
 S¸dpark): Fuﬂg‰nger	q2 -3989,12223 -3968,12138 -3883,12053 -3786,11913
 (S¸dpark): Fuﬂg‰nger	q2 -3968,12138 -3985,12056
 (Rosenstr. - Karl-Liebknecht-Str.): Fuﬂg‰nger	q2 10476,12829 10525,12789
-Panoramastr.: Fuﬂg‰nger	q2 10793,12906 10734,12850
+Panoramastr.: Fuﬂg‰nger	q2 10801,12901 10739,12844
 Spandauer Str. [Gehweg]: Touristen	q4 10584,12507 10626,12455 10665,12413 10723,12346
 Poststr.: Touristen	q3 10476,12432 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10659,12259
 Nikolaikirchplatz: Touristen	q3 10639,12394 10671,12356 10625,12315 10595,12328 10569,12311
@@ -2150,7 +2151,7 @@ Fuchsbergeweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 205
 (Marchlewskistr. - Gubener Str.): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13168,12219 13173,12202 13097,12166
 Boppstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 11785,9437 11560,9524
 Pitschener Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21774,-436 21719,-397 21637,-381
-Herrfurthstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11979,8014 11823,7980
+Herrfurthstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11979,8014 11833,7980
 Dankratstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21105,9538 20943,9543
 Havermannstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13803,4932 13892,4955
 Rambowstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13853,4759 13825,4850 13803,4932
@@ -2254,3 +2255,4 @@ Kˆnigsberger Str., linker Gehweg	q2::igndisp; 4164,2717 4236,2678
 #: next_check: ^^^
 #: last_checked: ^^^
 Bornholmer Str., linker Gehweg	q3::igndisp; 10118,16561 10197,16528
+Platz der Vereinten Nationen, linker Gehweg	q3::igndisp; 11952,13095 11962,13089 11984,13081

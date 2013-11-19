@@ -18,19 +18,18 @@
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # 
-#: last_checked: 2013-11-12
+#: last_checked: 2013-11-19
 #: check_frequency: 7d
-#: XXX_prog: BS (beide Seiten)
 Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
 # 
 #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
-#: XXX kommt man nach den Bauarbeiten hier noch gut durch?
-#: last_checked: 2013-11-12 (halb-legal kommt man schon durch)
+#: XXX der handicap_s-Eintrag wird wohl bleiben, q2 oder q1?
+#: last_checked: 2013-11-19
 #: check_frequency: 7d
 Helsingforser Str.: Bauarbeiten, einige Fuﬂg‰nger	q3::inwork 13496,11384 13427,11431
 # 
-#: last_checked: 2013-11-12 (Asphaltierungsarbeiten) vvv
+#: last_checked: 2013-11-19 (Asphaltierungsarbeiten) vvv
 #: check_frequency: 7d vvv
 Marchlewskistr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 13473,11456 13366,11651
 # REMOVED (man wird ¸ber die asphaltierte Seite geleitet) --- Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
@@ -82,7 +81,7 @@ Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehwe
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # REMOVED --- Charlottenstr.: Bauarbeiten, Radfahrer kˆnnen passieren	q2::inwork; 9475,12365 9489,12263
 # 
-#: last_checked: 2013-09-23 vvv
+#: last_checked: 2013-11-19 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -118,8 +117,9 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, Bordstei
 #: source_id ^^^
 #: XXX ^^^
 # 
+#: XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
 #: last_checked: 2013-10-16
-#: check_frequency: 60d
+#: next_check: 2013-12-05
 Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
 #: last_checked: 2013-11-12 vvv
@@ -165,7 +165,7 @@ Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: XXX siehe auch Eintr‰ge in fragezeichen-orig (Falkoniergasse etc.)
-#: last_checked: 2013-11-04 vvv
+#: last_checked: 2013-11-19 vvv
 #: next_check: 2014-03-02 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
@@ -346,7 +346,7 @@ Alexanderplatz: langsame Straﬂenbahnen, Fuﬂg‰ngerverkehr	q2 11139,13008 11064,12
 Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
-Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10793,12906 10923,12779
+Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10801,12901 10923,12779
 Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726 14674,9764 14500,9856 14483,9843 14460,9871 14448,9922
 (S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14361,9772 14436,9784 14460,9814 14483,9843
 (Uferweg - Puschkinallee): Fuﬂg‰nger	q1 14443,9731 14318,9688
@@ -699,6 +699,9 @@ Hildburghauser Str.: Bahnunterf¸hrung f¸r Fuﬂg‰nger und Radfahrer	q1 4595,1387 4
 (B¸rgipfad - Jenbacher Weg): Fuﬂg‰nger	q2 5591,240 5671,118 5703,74
 Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 (Kolonie Friedrichsfelde Nord, entlang der Fernw‰rmeleitung): Fuﬂg‰nger	q1 17785,12257 17832,12244 18135,12246 18142,12260 18180,12262 18216,12262
+#: XXX wird es hier eine Verbesserung geben?
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651
+#: next_check: 2014-06-01
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur f¸r Fuﬂg‰nger erlaubt	q4 12699,5909 13064,5953
@@ -717,6 +720,7 @@ Pankeweg: Fuﬂg‰nger	q1 8839,16873 8823,16877 8804,16881
 Pankeweg: Fuﬂg‰nger	q1 8721,16689 8804,16881 8866,17075
 Pankeweg: Fuﬂg‰nger	q1 8303,15298 8270,15237 8266,15134
 Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1863,20478
+(Uferweg am Tegeler Hafen - Berliner Str.): Fuﬂg‰nger	q1 1863,20478 1929,20501
 # REMOVED --- Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1863,20478 1826,20492 1761,20539
 (Berliner Str. - Tegeler Hafen): Fuﬂg‰nger	q1 1872,20683 1741,20571
 (Tegeler Hafen - An der M¸hle): Fuﬂg‰nger, teilweise eng	q2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
@@ -2179,8 +2183,10 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 7959,10910 8113,10786
 #: XXX_prog BS (zur Mollstr. hin)
 (Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q2 11656,13100 11681,13161
 (Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12039,12675
-(Verbindungsweg): Fuﬂg‰nger	q1 11646,13465 11703,13422
-Weinstr.: Fuﬂg‰nger, Wurzeln	q3 11793,13247 11909,13387
+#: XXX_prog BS (zur Georgenkirchstr. hin) (ansonsten w‰re es q1)
+(Verbindungsweg): Fuﬂg‰nger, Bordstein	q2 11667,13465 11703,13426
+#: corrected_by: srt ("Wurzeln" entfernt, "Schule" hinzugef¸gt)
+Weinstr.: Fuﬂg‰nger, Schulen	q2 11793,13247 11909,13387
 (Mollstr. - Barnimstr.): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 11723,13139 11758,13210
 Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (zum Anhalter Steg): eng, Fuﬂg‰nger	q2 8677,10224 8662,10227 8711,10322
@@ -2340,7 +2346,7 @@ S¸dpark): Fuﬂg‰nger	q2 -3989,12223 -3968,12138 -3883,12053 -3786,11913
 (S¸dpark): Fuﬂg‰nger	q2 -3968,12138 -3985,12056
 #: XXX_prog BS Bordstein zur KLS, aber ca. 10-20 Meter s¸dwestlich ist eine Bordsteinabsenkung
 (Rosenstr. - Karl-Liebknecht-Str.): Fuﬂg‰nger	q2 10476,12829 10525,12789
-Panoramastr.: Fuﬂg‰nger	q2 10793,12906 10734,12850
+Panoramastr.: Fuﬂg‰nger	q2 10801,12901 10739,12844
 Spandauer Str. [Gehweg]: Touristen	q4 10584,12507 10626,12455 10665,12413 10723,12346
 Poststr.: Touristen	q3 10476,12432 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10659,12259
 Nikolaikirchplatz: Touristen	q3 10639,12394 10671,12356 10625,12315 10595,12328 10569,12311

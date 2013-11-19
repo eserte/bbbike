@@ -854,12 +854,12 @@ userdel	q4::temp 9994,12368 9996,12401 9984,12426
 ',
          'periodic' => 1,
          'until' => 1388098799,
-         'from' => 1385247600,
+         'from' => 1384815600,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              25,
+                              18,
                               'months',
                               11
                             ]
@@ -3415,27 +3415,14 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2489,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-10-16
+#: last_checked: 2013-11-19
 #: check_frequency: 30d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => undef,
-         'text' => 'Torgauer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg möglich',
-         'from' => undef,
-         'id' => 2490,
-         'data' => '#: XXX bis wann gehen die Bauarbeiten?
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?)
-#: last_checked: 2013-10-16
-#: check_frequency: 30d
-#: priority: #A
-userdel	q4::inwork 7001,8161 7250,8223
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1396047599,
          'text' => 'Görresstr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
@@ -3541,11 +3528,12 @@ userdel	q4::inwork 8465,18365 8286,18331
        undef,
        {
          'source_id' => 'IM_020670',
-         'until' => 1385319600,
-         'text' => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis Ende November 2013 ',
+         'until' => 1386370799,
+         'text' => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum 6. Dezember 2013',
          'from' => 1384038000,
          'id' => 2511,
-         'data' => 'userdel	q4::inwork; 8731,7956 8731,7990 8731,8020 8731,8050 8730,8079 8776,8285 8807,8353
+         'data' => '#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf (Endedatum)
+userdel	q4::inwork; 8731,7956 8731,7990 8731,8020 8731,8050 8730,8079 8776,8285 8807,8353
 ',
          'type' => 'handicap'
        },
@@ -3713,22 +3701,30 @@ userdel	q4::inwork 8465,18365 8286,18331
        {
          'source_id' => 'IM_020714',
          'until' => 1404136800,
-         'text' => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, Fahrtrichtung Friedrichstr. gesperrt, vom 18.11.2013 bis Ende Juni 2014 ',
+         'text' => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, in Richtung Friedrichstr. ca. 60 Meter gesperrt, vom 18.11.2013 bis Ende Juni 2014 ',
          'from' => 1384642800,
          'id' => 2522,
-         'data' => '#: XXX prüfen, ob tatsächlich für Radfahrer relevant, ggfs. nach handicap_s übertragen
-userdel	q4::inwork; 9130,12433 9343,12464
+         'data' => 'userdel	q3::inwork; 9130,12433 9343,12464
 ',
          'type' => 'handicap'
        },
        {
          'source_id' => 'IM_020737',
-         'until' => 1385938799,
-         'text' => 'Monumentenbrücke: zwischen Kreuzbergstr. und Bautzener Str. Baustelle, Fahrbahn gesperrt, bis Anfang Dezember 2013 ',
+         'until' => 1386082800,
+         'text' => 'Monumentenstr./Kreuzbergstr.: Bauarbeiten im Kreuzungsbereich, Fußgänger können passieren, bis Anfang Dezember 2013 ',
          'from' => 1384642800,
          'id' => 2523,
-         'data' => '#: XXX prüfen, ob tatsächlich für Radfahrer relevant
-userdel	q4::inwork 8180,9099 8389,9087
+         'data' => 'userdel	q3::inwork 8180,9099 8389,9087
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf',
+         'until' => 1385161200,
+         'text' => 'Riemenschneiderweg zwischen Vorarlberger Damm und Peter-Vischer-Straße: Bauarbeiten, Sperrung der Fahrbahn, bis 22.11.2013 ',
+         'from' => 1384897151,
+         'id' => 2524,
+         'data' => 'userdel	q4::inwork 6820,6522 6801,6736 6793,6814 6770,7027 6762,7109
 ',
          'type' => 'handicap'
        }

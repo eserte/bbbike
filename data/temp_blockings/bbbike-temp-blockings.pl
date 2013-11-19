@@ -869,7 +869,7 @@ EOF
        data  => <<EOF,
 userdel	2 12180,7387 12158,7449 12122,7553
 userdel	2 11920,8252 11931,8206 11933,8198
-userdel	2 11920,8252 11898,8362
+userdel	2 11920,8252 11915,8279 11898,8362
 userdel	2 12041,7788 12055,7751 12075,7696
 userdel	2 11979,8014 11963,8074
 userdel	2 11979,8014 12001,7937 12025,7852
@@ -3074,7 +3074,7 @@ userdel	2 12090,7651 12081,7679 12075,7696
 userdel	2 12090,7651 12122,7553
 userdel	2 12180,7387 12158,7449 12122,7553
 userdel	2 11920,8252 11931,8206 11933,8198
-userdel	2 11920,8252 11898,8362
+userdel	2 11920,8252 11915,8279 11898,8362
 userdel	2 12041,7788 12055,7751
 userdel	2 12041,7788 12025,7852
 userdel	2 12001,7937 12025,7852
@@ -6747,10 +6747,10 @@ EOF
 userdel	2::inwork -31993,-726 -32143,-211 -32153,-176
 EOF
      },
-     { from  => $isodate2epoch->("2013-11-24 00:00:00"), # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
+     { from  => $isodate2epoch->("2013-11-19 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
        until => $isodate2epoch->("2013-12-26 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 11]], 
+       recurrences => [['yearly', days => 18, months => 11]], 
        text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, vom 25.11. bis 26.12.2013',
        type  => 'gesperrt',
        source_id => 'http://www.berliner-weihnacht.de/?y=2013',
@@ -21940,22 +21940,18 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-10-16
+#: last_checked: 2013-11-19
 #: check_frequency: 30d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1384864722, # undef, # XXX
        text  => 'Torgauer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg möglich',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX bis wann gehen die Bauarbeiten?
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?)
-#: last_checked: 2013-10-16
-#: check_frequency: 30d
-#: priority: #A
+# REMOVED (beendet) --- #: XXX bis wann gehen die Bauarbeiten? --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?) --- #: last_checked: 2013-10-16 --- #: check_frequency: 30d --- #: priority: #A
 userdel	q4::inwork 7001,8161 7250,8223
 EOF
      },
@@ -22144,11 +22140,12 @@ userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 EOF
      },
      { from  => 1384038000, # 2013-11-10 00:00
-       until => 1385319600, # 2013-11-24 20:00
-       text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis Ende November 2013 ',
+       until => $isodate2epoch->("2013-12-06 23:59:59"), # 1385319600, # 2013-11-24 20:00
+       text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum 6. Dezember 2013',
        type  => 'handicap',
        source_id => 'IM_020670',
        data  => <<EOF,
+#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf (Endedatum)
 userdel	q4::inwork; 8731,7956 8731,7990 8731,8020 8731,8050 8730,8079 8776,8285 8807,8353
 EOF
      },
@@ -22258,22 +22255,29 @@ EOF
      },
      { from  => 1384642800, # 2013-11-17 00:00
        until => 1404136800, # 2014-06-30 16:00
-       text  => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, Fahrtrichtung Friedrichstr. gesperrt, vom 18.11.2013 bis Ende Juni 2014 ',
+       text  => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, in Richtung Friedrichstr. ca. 60 Meter gesperrt, vom 18.11.2013 bis Ende Juni 2014 ',
        type  => 'handicap',
        source_id => 'IM_020714',
        data  => <<EOF,
-#: XXX prüfen, ob tatsächlich für Radfahrer relevant, ggfs. nach handicap_s übertragen
-userdel	q4::inwork; 9130,12433 9343,12464
+userdel	q3::inwork; 9130,12433 9343,12464
 EOF
      },
      { from  => 1384642800, # 2013-11-17 00:00
-       until => 1385938799, # 2013-12-01 23:59
-       text  => 'Monumentenbrücke: zwischen Kreuzbergstr. und Bautzener Str. Baustelle, Fahrbahn gesperrt, bis Anfang Dezember 2013 ',
+       until => 1386082800, # 2013-12-03 16:00
+       text  => 'Monumentenstr./Kreuzbergstr.: Bauarbeiten im Kreuzungsbereich, Fußgänger können passieren, bis Anfang Dezember 2013 ',
        type  => 'handicap',
        source_id => 'IM_020737',
        data  => <<EOF,
-#: XXX prüfen, ob tatsächlich für Radfahrer relevant
-userdel	q4::inwork 8180,9099 8389,9087
+userdel	q3::inwork 8180,9099 8389,9087
+EOF
+     },
+     { from  => 1384897151, # 2013-11-19 22:39
+       until => 1385161200, # 2013-11-23 00:00
+       text  => 'Riemenschneiderweg zwischen Vorarlberger Damm und Peter-Vischer-Straße: Bauarbeiten, Sperrung der Fahrbahn, bis 22.11.2013 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf',
+       data  => <<EOF,
+userdel	q4::inwork 6820,6522 6801,6736 6793,6814 6770,7027 6762,7109
 EOF
      },
     );
