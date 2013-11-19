@@ -2396,7 +2396,7 @@ sub show_bbbike_suggest_toplevel {
     my $is_utf8;
     my $plz;
     for my $def (["$main::datadir/opensearch.streetnames", 1, 1],
-		 ["$main::datadir/strassen", 0, 1],
+		 ["$main::datadir/strassen", 0, 0],
 		 ["$main::datadir/Berlin.coords.data", 0, 0], # usually never used --- check for this file, but possibly use the combined cache file
 		) {
 	my($try_srcfile, $try_is_opensearch_file, $try_is_utf8) = @$def;
@@ -2415,7 +2415,8 @@ sub show_bbbike_suggest_toplevel {
 		my $ms = MultiStrassen->new(@ms);
 		(my($tmpfh), $tempstreetsfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_bbbike_suggest0.data")
 		    or die $!;
-		binmode $tmpfh, ':encoding(utf-8)';
+		## XXX PLZ.pm is not utf-8 capable, so don't use utf-8 here.
+		#binmode $tmpfh, ':encoding(utf-8)';
 		print $tmpfh PLZ->new_data_from_streets($ms);
 		close $tmpfh
 		    or die $!;
