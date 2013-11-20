@@ -33,6 +33,7 @@ use Route;
 
 sub keep_file ($$);
 sub load_from_file_and_check ($$);
+sub xpath_checks ($$&);
 
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
@@ -259,19 +260,12 @@ EOF
 # 		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
 # 	    }
 	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 128 < 256)");
-	SKIP: {
-		skip("No XML::LibXML parser available for checking", 2)
-		    if !eval { require XML::LibXML; 1 };
-		my $p = XML::LibXML->new;
-		my $doc = eval { $p->parse_string($xml_res) };
-		ok($doc, "XML::LibXML was available to parse result");
-		if ($doc) {
+	    xpath_checks $xml_res, 1,
+		sub {
+		    my $doc = shift;
 		    my $name = $doc->findvalue("//*[local-name(.)='name']");
 		    is($name, 'fooäöü', "Unicode parsed correctly");
-		} else {
-		    fail("Document was not parsed correctly...");
-		}
-	    }
+		};
 	}
 
     SKIP: {
@@ -300,19 +294,12 @@ EOF
 # 		$TODO = "Possible XML::Twig problem, missing preamble or missing encoding of data";
 # 	    }
 	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (string data with unicode > 255)");
-	SKIP: {
-		skip("No XML::LibXML parser available for checking", 2)
-		    if !eval { require XML::LibXML; 1 };
-		my $p = XML::LibXML->new;
-		my $doc = eval { $p->parse_string($xml_res) };
-		ok($doc, "XML::LibXML was available to parse result");
-		if ($doc) {
+	    xpath_checks $xml_res, 1,
+		sub {
+		    my $doc = shift;
 		    my $name = $doc->findvalue("//*[local-name(.)='name']");
 		    is($name, "foo\x{20ac}\x{0107}", "Unicode parsed correctly");
-		} else {
-		    fail("Document was not parsed correctly...");
-		}
-	    }
+		};
 	}
 
 	{ # empty bbd file
@@ -610,6 +597,26 @@ sub load_from_file_and_check ($$) {
     is_deeply $s->data, $check_against->data, "Loading gpx with factory";
     is_deeply $s_gpx->data, $check_against->data, "Loading gpx explicitely with Strassen::GPX";
     is_deeply $s_magic->data, $check_against->data, "Loading gpx with magic check";
+}
+
+# one test + specified number of $tests
+sub xpath_checks ($$&) {
+    my($xml_res, $tests, $testcode) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
+ SKIP: {
+	skip("No XML::LibXML parser available for checking", $tests + 1)
+	    if !eval { require XML::LibXML; 1 };
+	my $p = XML::LibXML->new;
+	my $doc = eval { $p->parse_string($xml_res) };
+	ok($doc, "XML::LibXML was available to parse result");
+    SKIP: {
+	    skip "Document was not parsed correctly, skip reamining subtests...", $tests
+		if !$doc;
+
+	    local $Test::Builder::Level = $Test::Builder::Level + 1;
+	    $testcode->($doc);
+	}
+    }
 }
 
 __END__
