@@ -1,7 +1,6 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.22 2008/11/06 22:06:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +15,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.23';
 
 use Strassen::Core;
 
@@ -66,6 +65,8 @@ use Karte::Standard;
 @ISA = 'Strassen';
 
 my @COMMON_META_ATTRS = qw(name cmt desc src link number type); # common for rte and trk
+
+use constant TRIP_EXT_NS => 'http://www.garmin.com/xmlschemas/TripExtensions/v1';
 
 sub new {
     my($class, $filename_or_object, %args) = @_;
@@ -284,6 +285,7 @@ sub _bbd2gpx_libxml {
     my $as = delete $args{-as} || 'track';
     my $name = delete $args{-name};
     my $number = delete $args{-number};
+    my $with_trip_extensions = delete $args{-withtripext};
 
     my $has_encode = eval { require Encode; 1 };
     if (!$has_encode) {
@@ -336,19 +338,33 @@ sub _bbd2gpx_libxml {
     $gpx->setAttribute("version", "1.1");
     $gpx->setAttribute("creator", "Strassen::GPX $VERSION (XML::LibXML $XML::LibXML::VERSION) - http://www.bbbike.de");
     $gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
-    $gpx->setNamespace("http://www.topografix.com/GPX/1/1");
-    $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd");
+    my $schema_location = "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd";
+    if ($with_trip_extensions) {
+	$gpx->setNamespace(TRIP_EXT_NS, 'trp');
+	$schema_location .= ' ' . TRIP_EXT_NS . ' http://www.garmin.com/xmlschemas/TripExtensionsv1.xsd';
+    }
+    $gpx->setAttribute("xsi:schemaLocation", $schema_location);
+    $gpx->setNamespace("http://www.topografix.com/GPX/1/1"); # should be the last setNamespace call
 
     if ($as eq 'route') {
 	my $rtexml = $gpx->addNewChild(undef, "rte");
 	_add_meta_attrs_libxml($rtexml, $meta);
 	$rtexml->appendTextChild('name', $name) if defined $name && $name ne '';
 	$rtexml->appendTextChild('number', $number) if defined $number && $number ne '';
-	for my $wpt (@wpt) {
+	for my $wpt_i (0 .. $#wpt) {
+	    my $wpt = $wpt[$wpt_i];
 	    my $rteptxml = $rtexml->addNewChild(undef, "rtept");
 	    $rteptxml->setAttribute("lat", $wpt->{coords}[1]);
 	    $rteptxml->setAttribute("lon", $wpt->{coords}[0]);
 	    $rteptxml->appendTextChild("name", $wpt->{name});
+	    if ($with_trip_extensions) {
+		my $ext = $rteptxml->addNewChild(undef, 'extensions');
+		if ($wpt_i != 0 && $wpt_i != $#wpt) {
+		    $ext->addNewChild(TRIP_EXT_NS, 'ShapingPoint');
+		} else {
+		    $ext->addNewChild(TRIP_EXT_NS, 'ViaPoint');
+		}
+	    }
 	}
     } else {
 	for my $wpt (@wpt) {
@@ -383,6 +399,7 @@ sub _bbd2gpx_twig {
     my($self, %args) = @_;
     my $xy2longlat = delete $args{xy2longlat};
     my $meta = delete $args{-meta} || {};
+    my $with_trip_extensions = delete $args{-withtripext};
 
     # Try to find minimum needed encoding. This is to help
     # broken applications (wrt correct XML parsing) like gpsman 6.3.2
@@ -439,6 +456,7 @@ EOF
 					   xmlns => "http://www.topografix.com/GPX/1/1",
 					   #$gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
 					   #"xsi:schemaLocation" => "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
+					   'xmlns:trp' => TRIP_EXT_NS,
 					 },
 				 );
     $twig->set_root($gpx);
@@ -447,7 +465,8 @@ EOF
 	my $rtexml = XML::Twig::Elt->new("rte");
 	$rtexml->paste(last_child => $gpx);
 	_add_meta_attrs_twig($rtexml, $meta);
-	for my $wpt (@wpt) {
+	for my $wpt_i (0 .. $#wpt) {
+	    my $wpt = $wpt[$wpt_i];
 	    my $rteptxml = XML::Twig::Elt->new("rtept", {lat => $wpt->{coords}[1],
 							 lon => $wpt->{coords}[0],
 							},
@@ -455,6 +474,17 @@ EOF
 	    $rteptxml->paste(last_child => $rtexml);
 	    my $namexml = XML::Twig::Elt->new("name", {}, $wpt->{name});
 	    $namexml->paste(last_child => $rteptxml);
+	    if ($with_trip_extensions) {
+		my $ext = XML::Twig::Elt->new('extensions');
+		$ext->paste(last_child => $rteptxml);
+		if ($wpt_i != 0 && $wpt_i != $#wpt) {
+		    my $shppnt = XML::Twig::Elt->new('trp:ShapingPoint');
+		    $shppnt->paste(last_child => $ext);
+		} else {
+		    my $viapnt = XML::Twig::Elt->new('trp:ViaPoint');
+		    $viapnt->paste(last_child => $ext);
+		}
+	    }
 	}
     } else {
 	for my $wpt (@wpt) {

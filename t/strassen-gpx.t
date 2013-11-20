@@ -38,7 +38,7 @@ sub xpath_checks ($$&);
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 96 + $new_strassen_gpx_tests;
+my $tests_per_variant = 106 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -348,6 +348,33 @@ EOF
 		or diag("Got $gotx/$goty");
 	    cmp_ok(abs($sy-$goty), "<", 2, "Back conversion with expected y coordinate")
 		or diag("Got $gotx/$goty");
+	}
+
+	# Trip extensions
+	{
+	    my $s0 = Strassen->new_from_data_string(<<EOF);
+#: map: polar
+#:
+TestAstr.	X 13.377315,52.516216
+TestBstr.	X 13.380722,52.516467
+TestCstr.	X 13.389209,52.514702
+EOF
+	    my $s = Strassen::GPX->new($s0);
+	    my $xml_res = $s->Strassen::GPX::bbd2gpx(-withtripext => 1, -as => 'route');
+	    like($xml_res, qr{^<(\?xml|gpx)}, "Looks like XML");
+	    gpxlint_string($xml_res, "xmllint for bbd2gpx output (with polar map)");
+	    xpath_checks $xml_res, 7,
+		sub {
+		    my $doc = shift;
+		    my @rtept = $doc->findnodes('//*[local-name(.)="rtept"]');
+		    is @rtept, 3, 'three route points';
+		    ok !$rtept[0]->exists('.//*[local-name(.)="ShapingPoint"]'), 'first point is not a shaping point';
+		    ok  $rtept[0]->exists('.//*[local-name(.)="ViaPoint"]'), '... but a via point';
+		    ok  $rtept[1]->exists('.//*[local-name(.)="ShapingPoint"]'), 'middle point is a shaping point';
+		    ok !$rtept[1]->exists('.//*[local-name(.)="ViaPoint"]'), '... and no via point';
+		    ok !$rtept[2]->exists('.//*[local-name(.)="ShapingPoint"]'), 'goal is not a shaping point, again';
+		    ok  $rtept[2]->exists('.//*[local-name(.)="ViaPoint"]'), '... and also a via point';
+		};
 	}
 
 	# Generate route/track with many meta data

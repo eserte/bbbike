@@ -1756,6 +1756,7 @@ sub tk_interface {
 	print $ofh $s->bbd2gpx(-as => "route",
 			       -name => $simplified_route->{routename},
 			       -number => $args{-routenumber},
+			       #-withtripext => 1,
 			      );
 	close $ofh;
 	my $gpsb = GPS::Gpsbabel->new;
