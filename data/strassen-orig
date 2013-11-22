@@ -110,8 +110,9 @@ Lilienthalstr.	N 10615,8558 10627,8706 10640,8832 10675,8940 10748,9054 10709,91
 #: note: ehemaliger Flughafen Tempelhof vvv
 #: XXX der westliche Eingang wird gesperrt ("Herbst dieses Jahres"), alternativ wird es einen Eingang ggü der Lilienthalstr. geben --- wie wird die genaue Wegführung aussehen?
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4187
-#: last_checked: 2013-10-27
-#: next_check: 2013-11-30
+#: by: http://mobil.morgenpost.de/bezirke/neukoelln/article121808816/Mehr-Platz-fuer-muslimische-Graeber-am-Tempelhofer-Feld.html (Bauarbeiten Anfang 2014)
+#: last_checked: 2013-11-22
+#: next_check: 2014-01-15
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10691,8532 10644,8363
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10644,8363 10598,8270 10575,8218
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10598,8270 10729,8152
@@ -143,12 +144,8 @@ Lilienthalstr.	N 10615,8558 10627,8706 10640,8832 10675,8940 10748,9054 10709,91
 (Flughafen Tempelhof - Eingang Leinestr.)	NN 11547,7432 11558,7438
 (Flughafen Tempelhof - Eingang Oderstr.)	NN 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	NN 9302,7294 9351,7241 9461,7190
-#: XXX wahrscheinlich wird dieser Weg für den Bau des Wasserbeckens entfernt
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5081.html
-#: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles_neu/Downloads/2013-08_Flyer_Parklandschaft.pdf
-#: last_checked: 2013-11-19
-#: next_check: 2014-01-01
-(Alter Hafen)	NN 10204,7680 10134,7797 10076,8040 10037,8269
+(Alter Hafen)	NN 10204,7680 10134,7797 10076,8040
+# REMOVED (für den Bau eines Wasserbeckens) --- #: XXX wahrscheinlich wird dieser Weg für den Bau des Wasserbeckens entfernt --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5081.html --- #: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles_neu/Downloads/2013-08_Flyer_Parklandschaft.pdf --- #: last_checked: 2013-11-19 --- #: next_check: 2014-01-01 --- (Alter Hafen)	NN 10076,8040 10037,8269
 #: note: ^^^
 Südstern	N 10564,9292 10547,9233 10705,9234
 Südstern	HH 10564,9292 10625,9259 10713,9260
@@ -8308,16 +8305,16 @@ Zu den Krugwiesen	N 18506,17236 18646,17345
 Hauptweg (Wartenberg, Neu-Hohenschönhausen)	NN 18737,18380 18761,18480 18864,18772
 Hauptweg (Wartenberg, Neu-Hohenschönhausen)	N 18864,18772 18923,18941 18997,19157 19066,19380 19126,19560
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5608 vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file?y=2013 vvv
 #: XXX die folgenden Wege werden bekommen neue _offizielle_ Namen vvv
-#: next_check: 2014-10-01 vvv
 #: XXX neuer Name "Am Ahornweg"
 Ahornweg (Wartenberg)	N 18879,18954 18947,19168 19019,19396 19071,19576
 #: XXX neuer Name "Am Lindenweg"
 Lindenweg (Wartenberg)	N 18983,18906 19061,19145 19129,19360 19187,19543
 #: XXX neuer Name "Am Akazienweg"
 Akazienweg (Wartenberg)	N 19043,18876 19125,19130 19190,19340 19248,19525
-#: next_check ^^^
 #: XXX ^^^
+#: by ^^^
 #: by ^^^
 Grüne Trift (Wartenberg)	N 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18074,19227
 Hellersdorfer Str. (Falkenberg)	N 19685,18259 19734,18181 19820,18091
@@ -9093,7 +9090,7 @@ Wipperstr.	N 13117,7471 13134,7360 13150,7254 13161,7173
 Schöneweider Str.	N 13134,7360 13345,7424
 Kanner Str.	N 13345,7424 13373,7426 13487,7337
 Unstrutstr.	N 13487,7337 13495,7249
-Richardstr.	N 12792,8190 12870,8087 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742 13288,7653 13303,7622 13339,7452 13345,7424 13369,7307
+Richardstr.	N 12792,8190 12870,8087 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742 13278,7673 13288,7653 13303,7622 13339,7452 13345,7424 13369,7307
 Karl-Marx-Platz	N 12969,7610 13100,7626 13177,7644
 Karl-Marx-Platz	N 12991,7549 13100,7626
 Richardplatz	N 13177,7644 13288,7653 13416,7712
@@ -14030,7 +14027,6 @@ Nahariyastr.	N 11717,-1204 11739,-1384 11746,-1442 11778,-1706 11784,-1809
 Nahariyastr. [zur Kita]	N 11746,-1442 11619,-1459
 Skarbinastr.	N 12046,-1678 11997,-1407 11948,-1368 11739,-1384
 Borsigstr.	N 9517,13571 9376,13765 9316,13870
-#: XXX heißt ein Teil hier "Verlängerte Friedrich-Wilhelm-Straße", evtl. der westliche Abschnitt? (by https://www.statistik-berlin-brandenburg.de/produkte/verzeichnisse/Strassenumbenennungen.xls )
 Friedrich-Wilhelm-Str. (Tempelhof)	N 8266,5911 8385,5907 8622,5867 8801,5844 8988,5821 9176,5803 9378,5773 9668,5733
 Newtonstr.	N 19324,2939 19216,3052 19175,3095 19079,3190 18953,3318
 Rosenbecker Str.	N 21684,18283 21699,18314 21751,18421 21732,18493 21678,18648 21627,18814

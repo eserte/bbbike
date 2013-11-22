@@ -338,10 +338,13 @@ Karl-Marx-Platz: Kopfsteinpflaster	Q2 12991,7549 13100,7626
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622
 Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712
-Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889
-Richardstr.: Kopfsteinpflaster	Q2 13103,7889 13150,7845 13226,7775 13245,7742
-Richardstr.: Asphalt	Q0 13245,7742 13288,7653
-Richardstr.: Kopfsteinpflaster	Q2 13288,7653 13303,7622
+Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087
+Richardstr.: Asphalt	Q0 12870,8087 13085,7904
+Richardstr.: Kopfsteinpflaster, OK	Q1 13085,7904 13103,7889
+Richardstr.: Kopfsteinpflaster, OK	Q1 13103,7889 13150,7845
+Richardstr.: Kopfsteinpflaster	Q2 13150,7845 13226,7775 13245,7742
+Richardstr.: Asphalt	Q0 13245,7742 13278,7673
+Richardstr.: Kopfsteinpflaster	Q2 13278,7673 13288,7653 13303,7622
 Richardstr.: Asphalt	Q0 13303,7622 13339,7452
 Richardstr.: Kopfsteinpflaster, OK	Q1 13339,7452 13345,7424 13369,7307
 Hertzbergstr.: Kopfsteinpflaster	Q2 13423,7757 13416,7712
@@ -676,7 +679,7 @@ Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2226,18228 1549,177
 (Uferweg): gut befahrbarer Waldweg	Q1 -431,17169 -389,17168 -305,17249 -304,17280 -252,17325 -155,17409 61,17495 117,17549 144,17638 209,17735 225,17815 234,17930 320,18117 372,18411 413,18500 465,18533 534,18553 616,18640 710,18727 714,18758 897,18943 1002,19014 1122,19036 1165,19009 1200,18969 1404,18974
 (Uferweg): Verbundsteinpflaster	Q1 1404,18974 1426,18973 1447,18933
 Sembritzkistr.: Asphalt	Q0 6854,4931 6856,4963 6923,5057 6953,5102 7018,5201 7095,5317 7157,5418 7199,5479
-Sembritzkistr.: mäßiges Kopfsteinpflaster	Q2 7199,5479 7245,5568 7230,5689
+Sembritzkistr.: Asphalt	Q0 7199,5479 7245,5568 7230,5689
 Sembritzkistr.: Asphalt	Q0 6847,4802 6854,4931
 Clauertstr.: Kopfsteinpflaster	Q2 -1082,2140 -763,1976 -613,1949
 Hanstedter Weg: Asphalt	Q0 6747,5010 6783,5011
@@ -3349,7 +3352,7 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg): unbefestigter Pfad	Q2 9362,7616 9281,7651
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): mäßiger Asphalt	Q1 9562,7796 9372,7798
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): unbefestigter Weg	Q2 9372,7798 9281,7795
-(Alter Hafen): Asphalt	Q0 10204,7680 10134,7797 10076,8040 10037,8269
+(Alter Hafen): Asphalt	Q0 10204,7680 10134,7797 10076,8040
 Ederstr.: Fahrbahn asphaltiert, gemeinsamer Rad- und Gehweg mit Verbundsteinpflaster	Q0 13946,7918 13958,8106
 Ederstr.: Verbundsteinpflaster	Q0 13958,8106 13957,8209 13939,8228
 (Zur Eisackstr.): Kleinkopfsteinpflaster	Q1 6409,8026 6418,7958 6429,7876
@@ -8494,6 +8497,7 @@ Ritterlandweg [Wohngebiet]: schlechtes Kopfsteinpflaster	Q3 8315,17079 8346,1714
 Ritterlandweg [Wohngebiet]: Verbundsteinpflaster	Q1 8346,17148 8363,17192
 Alfred-Siggel-Weg: unbefestigte Straße, Bauarbeiten	Q3 19406,7886 19531,7794
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
+Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7607,5944
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972

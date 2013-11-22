@@ -2575,7 +2575,8 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
 (Flughafen Tempelhof - Eingang Leinestr.)	2::night 11547,7432 11558,7438
 (Flughafen Tempelhof - Eingang Oderstr.)	2::night 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
-(Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040 10037,8269
+(Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040
+# REMOVED --- (Alter Hafen)	2::night 10076,8040 10037,8269
 (Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
 (zur nördlichen Landebahn)	2::night 11470,7744 11430,7781
 '
@@ -3191,13 +3192,14 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        {
          'until' => undef,
-         'text' => 'Richardstr.: Baustelle zwischen Kirchgasse und Berthelsdorfer Str., Fahrtrichtung gesperrt',
+         'text' => 'Richardstr.: Baustelle zwischen Jan-Hus-Weg und Berthelsdorfer Str., Fahrtrichtung gesperrt',
          'from' => undef,
          'id' => 2425,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-10-31
+#: last_checked: 2013-11-22 (Asphaltierungsarbeiten)
 #: check_frequency: 60d
-userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904 12870,8087
+# REMOVED --- userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
+userdel	q4::inwork; 13085,7904 12870,8087
 ',
          'type' => 'handicap'
        },
@@ -3526,21 +3528,11 @@ userdel	q4::inwork 8465,18365 8286,18331
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_020670',
-         'until' => 1386370799,
-         'text' => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum 6. Dezember 2013',
-         'from' => 1384038000,
-         'id' => 2511,
-         'data' => '#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf (Endedatum)
-userdel	q4::inwork; 8731,7956 8731,7990 8731,8020 8731,8050 8730,8079 8776,8285 8807,8353
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_020674',
-         'until' => 1385132400,
-         'text' => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 22.11.2013',
+         'until' => 1385996400,
+         'text' => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 2.12.2013',
          'from' => 1384077600,
          'id' => 2512,
          'data' => 'userdel	q4::inwork; 10738,12364 10804,12291

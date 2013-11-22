@@ -71,7 +71,7 @@ Wilhelmshˆhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
 Priesterweg: m‰ﬂiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,6436 7217,6065
 #: XXX wird dieses Teilst¸ck asphaltiert?
 #: XXX Baumaﬂnahme GL7.6, GL7.7 (Realisierung nach 2011)
-#: last_checked: 2013-09-04
+#: last_checked: 2013-11-22
 #: check_frequency: 90d
 Priesterweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 7217,6065 7216,5888
 Priesterweg: Asphalt	Q0 7216,5888 7167,5831
@@ -393,12 +393,17 @@ Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12991,7549 13100,7626
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622
 Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712
-Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087 13085,7904 13103,7889
-#: XXX wie gut wird das Kopfsteinpflaster sein?
-#: last_checked: 2013-10-31
-Richardstr.: Kopfsteinpflaster	Q2 13103,7889 13150,7845 13226,7775 13245,7742
-Richardstr.: Asphalt	Q0 13245,7742 13288,7653
-Richardstr.: Kopfsteinpflaster	Q2 13288,7653 13303,7622
+Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087
+#: XXX Asphalt wird gerade aufgetragen, danach Q0
+#: last_checked: 2013-11-22
+Richardstr.: Asphalt	Q0- 12870,8087 13085,7904
+Richardstr.: Kopfsteinpflaster, OK	Q1- 13085,7904 13103,7889
+#: XXX bleibt das Kopfsteinpflaster so? Oder wird hier auch asphaltiert?
+#: last_checked: 2013-11-22
+Richardstr.: Kopfsteinpflaster, OK	Q1- 13103,7889 13150,7845
+Richardstr.: Kopfsteinpflaster	Q2 13150,7845 13226,7775 13245,7742
+Richardstr.: Asphalt	Q0 13245,7742 13278,7673
+Richardstr.: Kopfsteinpflaster	Q2 13278,7673 13288,7653 13303,7622
 Richardstr.: Asphalt	Q0 13303,7622 13339,7452
 Richardstr.: Kopfsteinpflaster, OK	Q1 13339,7452 13345,7424 13369,7307
 Hertzbergstr.: Kopfsteinpflaster	Q2 13423,7757 13416,7712
@@ -779,13 +784,8 @@ Maienwerderweg: teils Waldweg (OK), teils m‰ﬂiger Asphalt	Q1 2226,18228 1549,177
 #: confirmed_by: http://www.berlin.de/ba-steglitz-zehlendorf/verwaltung/bauen/tiefbau/bauarbeiten.html?date=20120505
 #: confirmed_by: srt
 Sembritzkistr.: Asphalt	Q0 6854,4931 6856,4963 6923,5057 6953,5102 7018,5201 7095,5317 7157,5418 7199,5479
-#: XXX wird hier irgendwann auch asphaltiert werden?
-#: XXX Baumaﬂnahme GL7.9 (Realisierung nach 2011)
-#: XXX laut osm (wieder?) asphaltiert? check!
-#: osm_watch: way id="142367144" version="7"
-#: last_checked: 2013-09-15
-# REMOVED --- : check_frequency: 90d
-Sembritzkistr.: m‰ﬂiges Kopfsteinpflaster	Q2 7199,5479 7245,5568 7230,5689
+# REMOVED --- #: XXX Baumaﬂnahme GL7.9 (Realisierung nach 2011) --- #: osm_watch: way id="142367144" version="7" --- #: last_checked: 2013-09-15 --- #: check_frequency: 90d
+Sembritzkistr.: Asphalt	Q0 7199,5479 7245,5568 7230,5689
 #: by: Benjamin Hersch:
 Sembritzkistr.: Asphalt	Q0 6847,4802 6854,4931
 Clauertstr.: Kopfsteinpflaster	Q2 -1082,2140 -763,1976 -613,1949
@@ -3820,7 +3820,8 @@ Willst‰tterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Nˆrdliche Landebahn - Eingang Peter-Strasser-Weg): unbefestigter Pfad	Q2 9362,7616 9281,7651
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): m‰ﬂiger Asphalt	Q1- 9562,7796 9372,7798
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): unbefestigter Weg	Q2 9372,7798 9281,7795
-(Alter Hafen): Asphalt	Q0 10204,7680 10134,7797 10076,8040 10037,8269
+(Alter Hafen): Asphalt	Q0 10204,7680 10134,7797 10076,8040
+# REMOVED --- (Alter Hafen): Asphalt	Q0 10076,8040 10037,8269
 Ederstr.: Fahrbahn asphaltiert, gemeinsamer Rad- und Gehweg mit Verbundsteinpflaster	Q0 13946,7918 13958,8106
 Ederstr.: Verbundsteinpflaster	Q0- 13958,8106 13957,8209 13939,8228
 (Zur Eisackstr.): Kleinkopfsteinpflaster	Q1 6409,8026 6418,7958 6429,7876
@@ -9200,6 +9201,7 @@ Ritterlandweg [Wohngebiet]: Verbundsteinpflaster	Q1 8346,17148 8363,17192
 #: check_frequency: 100d
 Alfred-Siggel-Weg: unbefestigte Straﬂe, Bauarbeiten	Q3+ 19406,7886 19531,7794
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1- 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
+Rˆblingstr.: Verbundsteinpflaster	Q1 7598,5926 7607,5944
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 

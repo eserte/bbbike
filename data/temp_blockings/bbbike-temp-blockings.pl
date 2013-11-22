@@ -17789,7 +17789,8 @@ EOF
 (Flughafen Tempelhof - Eingang Leinestr.)	2::night 11547,7432 11558,7438
 (Flughafen Tempelhof - Eingang Oderstr.)	2::night 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
-(Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040 10037,8269
+(Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040
+# REMOVED --- (Alter Hafen)	2::night 10076,8040 10037,8269
 (Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
 (zur nördlichen Landebahn)	2::night 11470,7744 11430,7781
 EOF
@@ -21253,13 +21254,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Richardstr.: Baustelle zwischen Kirchgasse und Berthelsdorfer Str., Fahrtrichtung gesperrt',
+       text  => 'Richardstr.: Baustelle zwischen Jan-Hus-Weg und Berthelsdorfer Str., Fahrtrichtung gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2013-10-31
+#: last_checked: 2013-11-22 (Asphaltierungsarbeiten)
 #: check_frequency: 60d
-userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904 12870,8087
+# REMOVED --- userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
+userdel	q4::inwork; 13085,7904 12870,8087
 EOF
      },
      { from  => 1367560561, # 2013-05-03 07:56
@@ -22140,7 +22142,7 @@ userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 EOF
      },
      { from  => 1384038000, # 2013-11-10 00:00
-       until => $isodate2epoch->("2013-12-06 23:59:59"), # 1385319600, # 2013-11-24 20:00
+       until => 1385146834, # $isodate2epoch->("2013-12-06 23:59:59"), # 1385319600, # 2013-11-24 20:00
        text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum 6. Dezember 2013',
        type  => 'handicap',
        source_id => 'IM_020670',
@@ -22150,8 +22152,8 @@ userdel	q4::inwork; 8731,7956 8731,7990 8731,8020 8731,8050 8730,8079 8776,8285 
 EOF
      },
      { from  => 1384077600, # 2013-11-10 11:00
-       until => 1385132400, # 2013-11-22 16:00
-       text  => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 22.11.2013',
+       until => 1385996400, # 2013-12-02 16:00
+       text  => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 2.12.2013',
        type  => 'handicap',
        source_id => 'IM_020674',
        data  => <<EOF,

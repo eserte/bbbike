@@ -43,14 +43,14 @@ Marchlewskistr.: Bauarbeiten, Einbahnstraße	q4::inwork; 13473,11456 13366,11651
 # 
 ### Treptow ###
 #
-#: last_checked: 2013-10-31
+#: last_checked: 2013-11-22
 #: check_frequency: 60d
-Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 14157,9345 13973,9465
+Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 # 
 ### Mitte ###
 # 
 #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualität -> qualitaet_s-orig-Eintrag revidieren
-#: last_checked: 2013-11-12
+#: last_checked: 2013-11-21
 Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 # 
 # REMOVED --- #: last_checked: 2013-06-04 --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
@@ -118,9 +118,9 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstei
 #: XXX ^^^
 # 
 #: XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2013-10-16
+#: last_checked: 2013-11-21
 #: next_check: 2013-12-05
-Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
+Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: last_checked: 2013-11-12 vvv
 #: next_check: 2013-12-31 vvv
@@ -252,15 +252,15 @@ Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,
 #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden
 #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf
 #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/
-#: last_checked: 2013-10-14 vvv
-#: next_check: 2013-11-30 vvv
+#: last_checked: 2013-11-22 vvv
+#: next_check: 2013-12-22 vvv
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12792,8190
 #: next_check ^^^
 #: last_checked ^^^
 # 
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2013-09-27
+#: last_checked: 2013-11-22
 #: next_check: 2014-09-01
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
