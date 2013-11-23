@@ -28,8 +28,12 @@ use Strassen::MultiStrassen;
 use Strassen::StrassenNetz;
 
 my $only_berlin;
-GetOptions("only-berlin" => \$only_berlin)
-    or die "usage: $0 [-only-berlin]";
+my $ignore_culdesac_pseudo;
+GetOptions(
+	   "only-berlin" => \$only_berlin,
+	   "ignore-culdesac-pseudo" => \$ignore_culdesac_pseudo,
+	  )
+    or die "usage: $0 [-only-berlin] [-ignore-culdesac-pseudo]";
 
 # need to find border ends
 my $cr_landstrassen;
@@ -40,7 +44,7 @@ if ($only_berlin) {
 
 my $cm_s = Strassen->new("culdesac-orig"); # -orig variant has also otherwise records
 my $culdesac_s = $cm_s->grepstreets(sub { my $r = $_;
-					  $_->[Strassen::CAT] eq 'culdesac';
+					  $_->[Strassen::CAT] eq 'culdesac' || ($ignore_culdesac_pseudo && $_->[Strassen::CAT] eq 'culdesac_pseudo');
 				      });
 my $culdesac = $culdesac_s->get_hashref;
 
@@ -72,6 +76,7 @@ listed here. To fix this, one of the following could be done:
 
 * mark such points as culdesac, not culdesac_pseudo
 
-* use also culdesac_pseudo points when building the hash
+* use also culdesac_pseudo points when building the hash. This can
+  already be done using the --ignore-culdesac-pseudo switch
 
 =cut
