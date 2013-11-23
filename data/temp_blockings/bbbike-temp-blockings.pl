@@ -17789,7 +17789,7 @@ EOF
 (Flughafen Tempelhof - Eingang Leinestr.)	2::night 11547,7432 11558,7438
 (Flughafen Tempelhof - Eingang Oderstr.)	2::night 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
-(Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040
+(Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040 10328,8102 10444,8086 10486,7972 10405,7898 10134,7797
 # REMOVED --- (Alter Hafen)	2::night 10076,8040 10037,8269
 (Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
 (zur nördlichen Landebahn)	2::night 11470,7744 11430,7781

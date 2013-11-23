@@ -870,10 +870,34 @@ Autowaschcenter	culdesac_pseudo 17110,14187
 	culdesac 8243,16889
 	culdesac 8315,17079
 	culdesac 4152,9688
+	culdesac 9482,5557
+Fähranleger	culdesac_pseudo -1989,18378
+#: note: als Radfahrer kann man Richtung Panke oder Reinhardtstr. weiterfahren
+	culdesac_pseudo 9132,13187
+#: XXX wird bei der Verlängerung der Ida-von-Arnim-Str. aufgehoben
+#: next_check: 2014-04-15
+	culdesac 8251,14337
+#: XXX wird bei der Verlängerung des Südpankewegs aufgehoben
+#: next_check: 2014-04-15
+	culdesac 8294,14194
+Tor	culdesac 8388,13993
+#: note: es gibt hier noch weiterführende Straßen
+Flughafengelände	culdesac_pseudo 9300,8027
+#: XXX: wird bei der Verlängerung der Schöneberger Schleife aufgehoben vvv
+#: next_check: 2015-01-01 vvv
+	culdesac 7998,8317
+	culdesac 8204,9001
+#: next_check ^^^
+#: XXX ^^^
+Berlinische Galerie, Sackgassenende	culdesac 9966,10874
+Sackgassenende, unter der Warschauer Brücke	culdesac 13513,11351
+Spreeufer	culdesac 12441,11373
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+#: note: als Radfahrer/Fußgänger kann man über den Gehweg weiterfahren/gehen
+	culdesac_pseudo 11017,12487
 	culdesac_pseudo 3856,9687
 	culdesac_pseudo 7765,15417
 	culdesac_pseudo 7929,15355

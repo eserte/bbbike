@@ -2575,7 +2575,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
 (Flughafen Tempelhof - Eingang Leinestr.)	2::night 11547,7432 11558,7438
 (Flughafen Tempelhof - Eingang Oderstr.)	2::night 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
-(Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040
+(Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040 10328,8102 10444,8086 10486,7972 10405,7898 10134,7797
 # REMOVED --- (Alter Hafen)	2::night 10076,8040 10037,8269
 (Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
 (zur nördlichen Landebahn)	2::night 11470,7744 11430,7781
@@ -3495,16 +3495,7 @@ userdel	q4::inwork 11694,16034 11673,16003
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
-         'until' => 1385161199,
-         'text' => 'Ernststr./Schubertstr.: Bauarbeiten, Sperrung der Fahrbahn, vom 4. November 2013 bis zum 22. November 2013 ',
-         'from' => 1383433200,
-         'id' => 2506,
-         'data' => 'userdel	q4::inwork 3167,19597 3252,19658 3343,19727 3546,19477
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
          'until' => 1385420399,
@@ -3707,16 +3698,6 @@ userdel	q4::inwork 8465,18365 8286,18331
          'from' => 1384642800,
          'id' => 2523,
          'data' => 'userdel	q3::inwork 8180,9099 8389,9087
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf',
-         'until' => 1385161200,
-         'text' => 'Riemenschneiderweg zwischen Vorarlberger Damm und Peter-Vischer-Straße: Bauarbeiten, Sperrung der Fahrbahn, bis 22.11.2013 ',
-         'from' => 1384897151,
-         'id' => 2524,
-         'data' => 'userdel	q4::inwork 6820,6522 6801,6736 6793,6814 6770,7027 6762,7109
 ',
          'type' => 'handicap'
        }
