@@ -15,6 +15,10 @@ use FindBin;
 use lib ($FindBin::RealBin,
 	 "$FindBin::RealBin/../lib",
 	);
+
+use File::Temp qw(tempdir);
+use Getopt::Long;
+
 use BrowserInfo;
 
 BEGIN {
@@ -29,9 +33,15 @@ BEGIN {
 
 BEGIN { plan tests => 26 }
 
-#use vars qw($uaprofdir);
-#$uaprofdir = "$FindBin::RealBin/../tmp/uaprof";
-#mkdir $uaprofdir, 0755 if ! -d $uaprofdir;
+my $use_fresh_uaprof_dir;
+GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
+    or die "usage: $0 [--fresh-uaprof-dir]";
+
+if ($use_fresh_uaprof_dir) {
+    my $tempdir = tempdir("browserinfo-XXXXXXXX", TMPDIR => 1, CLEANUP => 1)
+	or die $!;
+    $main::uaprofdir = $tempdir;
+}
 
 {
     local $ENV{HTTP_USER_AGENT} = "Nokia6100/1.0";
