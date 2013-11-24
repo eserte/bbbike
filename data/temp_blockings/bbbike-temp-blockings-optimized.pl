@@ -3519,7 +3519,17 @@ userdel	q4::inwork 8465,18365 8286,18331
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_020670',
+         'until' => 1385852399,
+         'text' => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum Ende November 2013',
+         'from' => 1384038000,
+         'id' => 2511,
+         'data' => '#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf (Endedatum)
+userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 8731,7956
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'IM_020674',
          'until' => 1385996400,

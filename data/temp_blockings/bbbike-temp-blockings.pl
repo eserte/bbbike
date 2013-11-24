@@ -22142,13 +22142,13 @@ userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 EOF
      },
      { from  => 1384038000, # 2013-11-10 00:00
-       until => 1385146834, # $isodate2epoch->("2013-12-06 23:59:59"), # 1385319600, # 2013-11-24 20:00
-       text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum 6. Dezember 2013',
+       until => $isodate2epoch->("2013-11-30 23:59:59"), # 1385319600, # 2013-11-24 20:00
+       text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum Ende November 2013',
        type  => 'handicap',
        source_id => 'IM_020670',
        data  => <<EOF,
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf (Endedatum)
-userdel	q4::inwork; 8731,7956 8731,7990 8731,8020 8731,8050 8730,8079 8776,8285 8807,8353
+userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 8731,7956
 EOF
      },
      { from  => 1384077600, # 2013-11-10 11:00
