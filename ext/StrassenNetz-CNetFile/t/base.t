@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: base.t,v 1.4 2005/04/05 22:48:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -18,49 +17,49 @@ use strict;
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
 	1;
     }) {
-	print "1..0 # skip no Test module\n";
+	print "1..0 # skip no Test::More module\n";
 	exit;
     }
 }
 
-BEGIN { plan tests => 11 }
+plan tests => 11;
 
 my $s = Strassen->new("strassen");
 my $net = StrassenNetz->new($s);
-ok($net->isa("StrassenNetz"));
+isa_ok $net, 'StrassenNetz';
 $net->use_data_format($StrassenNetz::FMT_MMAP);
-ok($net->isa("StrassenNetz::CNetFile"));
+isa_ok $net, 'StrassenNetz::CNetFile';
 {
     my $c1 = $net->can("make_net"); # workaround Test.pm DWIMery
     my $c2 = \&StrassenNetz::CNetFile::make_net;
-    ok($c1 eq $c2);
+    is $c1, $c2;
 }
 {
     my $c1 = $net->can("reachable");
     my $c2 = \&StrassenNetz::CNetFile::reachable;
-    ok($c1 eq $c2);
+    is $c1, $c2;
 }
 $net->make_net;
-ok(1);
+pass "No failure while running make_net";
 
 {
     keys %{ $net->{Net} };
     my($k,$v) = each %{ $net->{Net} };
-    ok(defined $k);
-    ok(defined $v);
+    ok defined $k, 'key on each initialization defined';
+    ok defined $v, 'value on each initialization defined';
 
     my $keys = scalar keys %{ $net->{Net} };
-    ok($keys > 0);
+    cmp_ok $keys, ">", 0, 'have keys';
     #warn $keys;
 
     my($k2,$v2) = each %{ $net->{Net}{$k} };
-    ok(defined $k2);
-    ok(defined $v2);
+    ok defined $k2, 'key on each on 2nd level hash defined';
+    ok defined $v2, 'value on each on 2nd level hash defined';
 
-    ok(scalar keys %{ $net->{Net}{$k} } > 0);
+    cmp_ok scalar keys %{ $net->{Net}{$k} }, ">", 0, 'have keys in 2nd level hash';
 
 }
 
