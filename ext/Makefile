@@ -52,8 +52,9 @@ ext-strassennetz-cnetfile-clean:
 ext-strassennetz-cnetfile-build:
 	cd StrassenNetz-CNetFile && $(PERL) Makefile.PL && rm -f Inline.inl && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS}
 
+# XXX temporarily TEST_VERBOSE set to true (for segfault debugging)
 ext-strassennetz-cnetfile-test:
-	cd StrassenNetz-CNetFile && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS} test
+	cd StrassenNetz-CNetFile && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS} test TEST_VERBOSE=1
 
 ext-strassennetz-cnetfile-install:
 	cd StrassenNetz-CNetFile && ${MAKE} ${.MAKEFLAGS} install
