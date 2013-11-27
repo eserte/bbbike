@@ -1609,17 +1609,18 @@ sub tk_interface {
     my $weiter = 0;
     {
 	my $f = $t->Frame->grid(-columnspan => 2, -sticky => "ew");
-	my @bfb;
-	push @bfb, $f->Button(-text => ($args{-test} ?
-					$self->ok_test_label :
-					$self->ok_label),
-			      -command => sub { $weiter = 1 });
+	my $okb = $f->Button(-text => ($args{-test} ?
+				       $self->ok_test_label :
+				       $self->ok_label),
+			     -command => sub { $weiter = 1 },
+			     -default => 'active',
+			    );
 	my $cb = $f->Button(Name => "cancel",
 			    -text => M"Abbruch",
 			    -command => sub { $weiter = -1 });
-	push @bfb, $cb;
-	pack_buttonframe($f, \@bfb);
+	pack_buttonframe($f, [$okb, $cb]);
 	$t->bind('<<CloseWin>>' => sub { $cb->invoke });
+	$e->bind('<Return>' => sub { $okb->invoke });
     }
     $t->gridColumnconfigure($_, -weight => 1) for (0..1);
     $t->OnDestroy(sub { $weiter = -1 });
