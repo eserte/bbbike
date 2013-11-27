@@ -3738,7 +3738,8 @@ sub search_coord {
 			    push @{ $custom_s{$type} }, $strobj_per_type;
 			}
 		    }
-		} else {
+		}
+		{
 		    my $strobj_3    = $strobj->grepstreets(sub { $_->[Strassen::CAT] eq '3' });
 		    my $strobj_non3 = $strobj->grepstreets(sub { $_->[Strassen::CAT] ne '3' });
 		    my $tb_net = $tb->{net} = StrassenNetz->new($strobj_non3);
@@ -4381,7 +4382,7 @@ sub display_route {
     }
 
     my @affecting_blockings;
-    if (@current_temp_blocking && !@custom && !$printmode) {
+    if (@current_temp_blocking && !$printmode) {
     TEMP_BLOCKING:
 	for my $tb (@current_temp_blocking) {
 	    my $net         = $tb->{net}{Net};
