@@ -1645,22 +1645,14 @@ Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 Naumannstr.: Asphalt	Q0 7707,8915 7709,8777
 Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Grünstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
-#: XXX hier wird die Straße asphaltiert
-#: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2013-11-17
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
-Parkaue: mäßiger Asphalt	Q1 15535,12420 15457,12449
-Parkaue: Asphalt	Q0 15457,12449 15399,12444
+Parkaue: Asphalt	Q0 15535,12420 15457,12449 15399,12444
 #: XXX wird hier die Straße verbessert werden?
-#: last_checked: 2013-11-17
+#: last_checked: 2013-11-26
 #: next_check: 2014-03-01
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524 (Beginn der Bauarbeiten: Frühjahr 2014)
 Deutschmeisterstr.: mäßiger Asphalt	Q1 15443,12222 15350,12270 15320,12375
 Parkaue: Asphalt	Q0 15399,12444 15402,12390 15350,12270
-#: XXX hier wird die Straße asphaltiert
-#: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2013-11-17
-Am Stadtpark: unbefestigte Straße	Q2 15454,12519 15457,12449
+Am Stadtpark: Asphalt	Q0 15454,12519 15457,12449
 Kielblockstr.: mäßiger Asphalt, Löcher	Q2+ 15433,12686 15546,12690
 Im Bereich des Fähranlegers: Kopfsteinpflaster	Q2 -8468,2152 -8540,2209 -8591,2144
 (zur Pfaueninselfähre): Kopfsteinpflaster	Q2 -8540,2209 -8561,2236 -8564,2276
@@ -1993,15 +1985,17 @@ Mühlenfeldstr.: Kopfsteinpflaster	Q2 3046,22292 2757,22310 2587,22332
 #: XXX Baumaßnahme 12.2 (Realisierung bis 2010) (nicht ganz sicher, ob es wirklich hier ist)
 Götzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
 (Weg am Tegeler Fließ): Waldweg, OK	Q2 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
-#: XXX Sanierung des Fließtalwanderweges vvv
+#: XXX Wie ist die Qualität des Fließtalwanderweges? Q1? Wassergebundene Decke? vvv
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120917.1110.375306.html vvv
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130805.1100.387522.html ("in wenigen Wochen fertig") vvv
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20131125.1330.392092.html (Sanierung fertig) vvv
 #: last_checked: 2013-08-17 vvv
 #: next_check: 2013-10-17 vvv
-(Weg am Tegeler Fließ): Waldweg, einige matschige Stellen	Q2- 5621,23966 5409,23816 5350,23717
-(Weg am Tegeler Fließ): Waldweg, einige matschige Stellen	Q2- 5316,23661 5214,23420 5242,23156 5232,23139
+(Weg am Tegeler Fließ): Waldweg	Q1 5621,23966 5409,23816 5350,23717
+(Weg am Tegeler Fließ): Waldweg	Q1 5316,23661 5214,23420 5242,23156 5232,23139
 #: next_check ^^^
 #: last_checked ^^^
+#: by: ^^^
 #: by: ^^^
 #: by: ^^^
 #: XXX ^^^
@@ -8141,7 +8135,7 @@ Fritz-Schloß-Park: Asphalt mit Wurzelschäden	Q1- 6988,13539 7021,13560 7056,1358
 (Weg durch den Geschichtspark): Beton	Q0 7822,13323 7811,13344
 (Weg durch den Geschichtspark): Asphalt	Q0 7811,13344 7784,13392
 (Weg durch den Geschichtspark): wassergebundene Decke	Q1 7784,13392 7767,13431
-(Weg durch den Geschichtspark): Asphalt	Q0 7767,13431 7732,13484 7651,13447
+(Weg durch den Geschichtspark): Asphalt	Q0 7767,13431 7732,13484 7696,13470 7651,13447
 (Ingeborg-Drewitz-Allee - Alt-Moabit): Kopfsteinpflaster, schmaler Streifen mit Gehwegplatten	Q1- 7592,12730 7620,12757 7776,12945
 (Weg am Moabiter Werder): Asphalt	Q0 7649,12758 7707,12813 7787,12918 7813,12961 7799,13019
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Parkweg	Q1 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910
@@ -9186,8 +9180,9 @@ Rumoldstr.: Verbundsteinpflaster	Q1+ 17366,12357 17454,12348 17474,12344 17526,1
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0- 14791,9537 14844,9513
 (Uferweg - Puschkinallee): Asphalt	Q0- 14443,9731 14318,9688
 (Spreeuferweg - Wintersteinstr.): Asphalt mit Regenablaufrinnen	Q1- 3654,12672 3741,12607
-#: XXX evtl. wird hier noch eine Wegoberfläche erstellt?
-#: last_checked: 2013-11-12
+#: XXX entsteht hier Asphalt oder eine andere Pflasterung?
+#: XXX siehe auch Eintrag in gesperrt-orig
+#: last_checked: 2013-11-25 (Bauarbeiten)
 #: next_check: 2014-01-15
 (Weg am Stadtgarten Moabit): unbefestigter Weg	Q2- 5708,14077 5685,14215
 Helsingforser Platz: Betonpflaster	Q0- 13473,11456 13427,11431
@@ -10020,8 +10015,8 @@ Kunkelstr.: Gehwegplatten	Q0 8227,15075 8229,15128
 Kunkelstr.: Fahrbahn ist Kopfsteinpflaster, Uferweg ist wassergebundene Decke	Q1 8229,15128 8232,15220
 Kunkelstr.: Parkweg	Q1 8232,15220 8268,15312
 Luzinstr.: Beton	Q0 22929,13661 22859,13684 22759,13715
-#: XXX Qualität überprüfen, hier waren anscheinend Asphaltierungsarbeiten
-Rudolf-Seiffert-Str.: mäßiger Asphalt	Q1 14871,13135 14978,13581 14784,13642
+#: corrected_by: srt (mäßiger Asphalt -> ..., anscheinend neu asphaltiert)
+Rudolf-Seiffert-Str.: Asphalt	Q0 14871,13135 14978,13581 14784,13642
 #: corrected_by: srt (Beton -> Asphalt)
 Rosenbecker Str.: Asphalt	Q0- 21684,18283 21699,18314 21751,18421 21732,18493 21678,18648 21627,18814
 Biesenbrower Str.: Beton	Q0 18118,17795 18237,17637 18403,17631 18556,17752 18740,17900 18875,18009 18893,18137 18737,18350 18620,18283
@@ -10790,12 +10785,20 @@ Goeckestr.: mäßiges Kleinsteinpflaster, wellig	Q2 16128,14685 16256,14828 16361,
 Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15941,14834 16035,14748 16128,14685 16284,14601
 Freienwalder Str.: Kopfsteinpflaster (einigermaßen gut)	Q2 16849,15263 16651,15345 16618,15356 16406,15452 16331,15486
 Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16354,15323 16208,15379
-#: corrected_by: srt (geteert -> ...)
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5230
-#: XXX "... einen ersten Teilabschnitt der Fahrbahn in der Roedernstraße instand zu setzen ..."
-#: last_checked: 2013-09-13 (keine Bauarbeiten zu sehen)
-#: next_check: 2013-11-30 ("Mit der Fertigstellung ist voraussichtlich nicht vor November zu rechnen")
-Roedernstr.: Asphalt mit Schäden	Q1- 16208,15379 15825,15547 15552,15660
+#: corrected_by: srt (geteert -> ...) vvv
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5230 vvv
+#: XXX werden die restlichen Abschnitte auch neu asphaltiert? vvv
+#: last_checked: 2013-11-26 (nur der Mittelteil ist neu asphaltiert) vvv
+#: next_check: 2014-03-01 vvv
+Roedernstr.: Asphalt mit Schäden	Q1- 16208,15379 16083,15434
+Roedernstr.: Asphalt mit Schäden	Q1- 15712,15594 15552,15660
+#: last_checked ^^^
+#: next_check ^^^
+#: XXX ^^^
+#: by ^^^
+#: corrected_by ^^^
+#: corrected_by: srt (Asphalt mit Schäden -> ..., neu asphaltiert)
+Roedernstr.: Asphalt	Q0 16083,15434 15825,15547 15712,15594
 Prießnitzstr.: Asphalt	Q0 11351,19169 11407,19186 11549,19258
 #: by: ^^^
 # 
@@ -11571,7 +11574,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928&options=4 (Befestigung)
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2013-10-20
+#: last_checked: 2013-11-26
 #: check_frequency: 90d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14934,15860 14802,15857 14720,15905 14609,15921
 #: confirmed_by: srt

@@ -3,8 +3,6 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
-Helsingforser Str.: Bauarbeiten, einige Fußgänger	q3::inwork 13496,11384 13427,11431
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q4::inwork; 13473,11456 13366,11651
 Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
@@ -32,7 +30,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
-Neue Grünstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10389,11390 10446,11470
+Neue Grünstr.: Bauarbeiten, Fahrbahn könnte gesperrt sein	q3::inwork 10389,11390 10446,11470
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
@@ -1074,7 +1072,7 @@ Henrionweg: eng	q3 11154,21760 11145,21698
 (Weg zum Hohenschönhauser Tor): Fußgänger	q1 15367,14512 15221,14550
 (Hohenschönhauser Tor): Fußgänger (Einkaufszentrum)	q4 15221,14550 15066,14579
 (Anlieferung Hohenschönhauser Tor): Lieferverkehr, Fußgänger	q1 15116,14489 15221,14550 15174,14638
-(Weg durch den Geschichtspark): Fußgänger	q1 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7651,13447
+(Weg durch den Geschichtspark): Fußgänger	q1 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470 7651,13447
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Fußgänger, eng, kurvig	q4 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910 7788,12907 7787,12918
 (Wickeder Str. - Seidelstr./Holzhauser Str.): eng, Fußgänger	q3 2713,18851 2720,18836 2768,18825 2794,18836 2821,18831
 Alt-Tegel: Fußgänger	q3 1529,20131 1462,20133 1397,20125
@@ -1308,6 +1306,8 @@ Parforceweg: einige umgestürzte Bäume	q4 -643,7252 -728,7310 -1020,7446 -1328,75
 (Spreeuferweg - Wintersteinstr.): Fußgänger, Bordstein	q3 3654,12672 3741,12607
 (Bornholmer Str. - Kolonnenweg): einige Fußgänger	q1 10134,16534 10118,16561 10108,16576 9954,16590
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fußgänger	q2 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
+Helsingforser Str.: einige Fußgänger	q1 13496,11384 13427,11431
+Karl-Lade-Str.: Fußgänger	q2 14821,13674 14987,13621 15040,13602
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789

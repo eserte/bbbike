@@ -2333,7 +2333,9 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 11329,12497 11209,12430 11273,12301 11355,12331
+         'data' => 'userdel	2::temp 11329,12497 11209,12430
+userdel	q4::temp 11209,12430 11273,12301
+userdel	2::temp 11273,12301 11355,12331
 ',
          'periodic' => 1,
          'until' => 1388530799,
@@ -2347,7 +2349,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
                               11
                             ]
                           ],
-         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich, bis Ende Dezember 2013',
+         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr.) bzw. nur schiebend auf dem Gehweg möglich (Dircksenstr.), bis Ende Dezember 2013',
          'type' => 'gesperrt',
          'id' => 1988
        },
@@ -3496,16 +3498,7 @@ userdel	q4::inwork 11694,16034 11673,16003
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
-         'until' => 1385420399,
-         'text' => 'Sommerstraße: Bauarbeiten zwischen Klemkestraße und Hoppestraße, Fahrbahn gesperrt, vom 4. November 2013 bis ca. zum 25. November 2013 ',
-         'from' => 1383433200,
-         'id' => 2507,
-         'data' => 'userdel	q4::inwork 8482,18284 8465,18365 8447,18446 8425,18542 8261,18689 8182,18761
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
          'until' => 1387234799,
@@ -3521,8 +3514,8 @@ userdel	q4::inwork 8465,18365 8286,18331
        undef,
        {
          'source_id' => 'IM_020670',
-         'until' => 1385852399,
-         'text' => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum Ende November 2013',
+         'until' => 1386615600,
+         'text' => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum 9.12.2013',
          'from' => 1384038000,
          'id' => 2511,
          'data' => '#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf (Endedatum)
@@ -3540,16 +3533,7 @@ userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_020680',
-         'until' => 1385391600,
-         'text' => 'Hosemannstr./Roelckestr.: zwischen Paul-Grasse-Str. und Lehderstr. Richtung Norden Bauarbeiten, Fahrbahn gesperrt, bis Ende November 2013',
-         'from' => 1384124400,
-         'id' => 2513,
-         'data' => 'userdel	q4::inwork; 12783,15921 12817,15985 12842,16032
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
@@ -3710,6 +3694,17 @@ userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 
          'data' => 'userdel	q3::inwork 8180,9099 8389,9087
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Weg durch den Geschichtspark Moabit nachts geschlossen, Öffnungszeiten Winter (1.10.-31.3.) 8.00-16.00, Sommer (1.4.-30.9.) 8.00-21.00',
+         'from' => undef,
+         'id' => 2525,
+         'data' => '	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
+',
+         'type' => 'gesperrt'
        }
      
 );

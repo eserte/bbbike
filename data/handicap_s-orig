@@ -17,19 +17,9 @@
 # REMOVED (realisiert) --- #: XXX evtl. danach asphaltiert? --- #: last_checked: 2013-07-15 --- #: next_check: 2013-07-20 --- Mainzer Str.: Bauarbeiten	q3::inwork 14311,11884 14357,12011
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
+# REMOVED (keine Absperrung mehr) --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d --- Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
 # 
-#: last_checked: 2013-11-19
-#: check_frequency: 7d
-Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
-# 
-#: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf
-#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html
-#: XXX der handicap_s-Eintrag wird wohl bleiben, q2 oder q1?
-#: last_checked: 2013-11-19
-#: check_frequency: 7d
-Helsingforser Str.: Bauarbeiten, einige Fußgänger	q3::inwork 13496,11384 13427,11431
-# 
-#: last_checked: 2013-11-19 (Asphaltierungsarbeiten) vvv
+#: last_checked: 2013-11-25 (Asphaltierungsarbeiten) vvv
 #: check_frequency: 7d vvv
 Marchlewskistr.: Bauarbeiten, Einbahnstraße	q4::inwork; 13473,11456 13366,11651
 # REMOVED (man wird über die asphaltierte Seite geleitet) --- Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
@@ -137,16 +127,15 @@ Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwo
 #: next_check ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-10-12
-#: next_check: 2013-11-28
-#: XXX anscheinend Baulager für die S21-Bauarbeiten
+#: last_checked: 2013-11-25 (Neubau)
+#: next_check: 2014-02-28
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
 #: last_checked: 2013-11-12
 #: next_check: 2014-01-15
 Siemensstr.: Bauarbeiten, Einbahnstraße, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
 # 
-#: last_checked: 2013-09-25 vvv
+#: last_checked: 2013-11-25 vvv
 #: check_frequency: 60d vvv
 Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022
 # REMOVED (nicht mehr) --- Ella-Trebe-Str./Bertha-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7872,13022 7867,13106
@@ -177,11 +166,11 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 # REMOVED --- #: last_checked: 2013-06-17 --- #: next_check: 2013-06-20 --- #: priority: #A --- Bernhard-Weiß-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
 # 
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2013-11-13
+#: last_checked: 2013-11-25
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
-#: last_checked: 2013-11-13
+#: last_checked: 2013-11-25
 #: priority: #A
 Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
 # 
@@ -191,8 +180,8 @@ Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 # REMOVED (zwar existiert die Baustelle noch, aber alle Schilder wurden entfernt) --- #: last_checked: 2013-05-15 --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10256,11160
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
 # 
-#: last_checked: 2013-11-04
-Neue Grünstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10389,11390 10446,11470
+#: last_checked: 2013-11-25 (Fahrbahn inoffiziell befahrbar)
+Neue Grünstr.: Bauarbeiten, Fahrbahn könnte gesperrt sein	q3::inwork 10389,11390 10446,11470
 # 
 #: last_checked: 2013-11-13 vvv
 #: next_check: 2013-12-20 vvv
@@ -207,8 +196,8 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q
 #: check_frequency: 30d
 Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
 # 
-#: last_checked: 2013-11-13
-#: check_frequency: 30d
+#: last_checked: 2013-11-25 (Asphaltierungsarbeiten)
+#: next_check: 2013-12-09
 Ziegelstr.: Baustelle, Einbahnstraße	q3::inwork; 9269,13060 9413,13071
 # 
 # REMOVED (reported by wosch) --- #: last_checked: 2013-04-11 --- Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
@@ -268,9 +257,8 @@ Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12
 # 
 # REMOVED (Bauarbeiten sind beendet) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: osm_watch: way id="7543672" version="17" --- #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz --- #: last_checked: 2013-06-24 --- #: check_frequency: 45d --- Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
 # 
-#: XXX siehe auch qualitaet_s-orig: nach den Bauarbeiten besserer Asphalt?
-#: last_checked: 2013-11-17 vvv
-#: next_check: 2013-12-17 vvv
+#: last_checked: 2013-11-26 vvv
+#: next_check: 2013-11-30 vvv
 #: priority: #A vvv
 Parkaue: Bauarbeiten, ggfs. auf Gehweg ausweichen	q4::inwork 15399,12444 15457,12449 15535,12420
 Am Stadtpark: Bauarbeiten, ggfs. auf Gehweg ausweichen	q3::inwork 15457,12449 15454,12519
@@ -1567,7 +1555,7 @@ Henrionweg: eng	q3 11154,21760 11145,21698
 (Weg zum Hohenschönhauser Tor): Fußgänger	q1 15367,14512 15221,14550
 (Hohenschönhauser Tor): Fußgänger (Einkaufszentrum)	q4 15221,14550 15066,14579
 (Anlieferung Hohenschönhauser Tor): Lieferverkehr, Fußgänger	q1 15116,14489 15221,14550 15174,14638
-(Weg durch den Geschichtspark): Fußgänger	q1 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7651,13447
+(Weg durch den Geschichtspark): Fußgänger	q1 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470 7651,13447
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Fußgänger, eng, kurvig	q4 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910 7788,12907 7787,12918
 (Wickeder Str. - Seidelstr./Holzhauser Str.): eng, Fußgänger	q3 2713,18851 2720,18836 2768,18825 2794,18836 2821,18831
 Alt-Tegel: Fußgänger	q3 1529,20131 1462,20133 1397,20125
@@ -1700,8 +1688,8 @@ Arnimplatz: Fußgänger	q2 10606,16319 10739,16146
 (Weg im Salvador-Allende-Viertel - Am Berg): Fußgänger	q2 23051,4461 23010,4506
 # 
 #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen
-#: last_checked: 2013-11-17
-#: next_check: 2013-11-20
+#: last_checked: 2013-11-26
+#: next_check: 2013-12-07
 # (Möllendorffstr. - Karl-Lade-Str.): Fußgänger	q1 15513,13539 15374,13542
 (Möllendorffstr. - Karl-Lade-Str.): Fußgänger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15374,13542
 # REMOVED (evtl. schon aufgehoben, kann ich nicht prüfen) --- #: temporary: --- #: XXX wann wird die Umfahrung wieder aufgehoben? --- #: last_checked: 2013-09-12 --- #: check_frequency: 20d --- Paul-Junius-Str.: Umfahrung an der Straßenbahnüberquerung	q4::inwork 15374,13542 15370,13508
@@ -1870,6 +1858,10 @@ Parforceweg: einige umgestürzte Bäume	q4 -643,7252 -728,7310 -1020,7446 -1328,75
 (Bornholmer Str. - Kolonnenweg): einige Fußgänger	q1 10134,16534 10118,16561 10108,16576 9954,16590
 #: note: gemeinsamer Rad- und Gehweg, mit Vorrang für Fußgänger
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fußgänger	q2 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
+# REMOVED --- #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html --- #: XXX der handicap_s-Eintrag wird wohl bleiben, q2 oder q1? --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d
+Helsingforser Str.: einige Fußgänger	q1 13496,11384 13427,11431
+#: note: offiziell nur für Fußgänger, der Radweg ist auf der nördlichen Seite
+Karl-Lade-Str.: Fußgänger	q2 14821,13674 14987,13621 15040,13602
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2217,7 +2209,7 @@ An der Brauerei: Fußgänger	q2 13283,13311 13235,13414
 (Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 #: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2013-10-16
+#: last_checked: 2013-11-25
 #: check_frequency: 90d
 Ritterstr.: Fußgänger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fußgänger	q2 5808,5332 5810,5340 5822,5388

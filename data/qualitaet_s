@@ -1419,11 +1419,10 @@ Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 Naumannstr.: Asphalt	Q0 7707,8915 7709,8777
 Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Gr¸nstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
-Parkaue: m‰ﬂiger Asphalt	Q1 15535,12420 15457,12449
-Parkaue: Asphalt	Q0 15457,12449 15399,12444
+Parkaue: Asphalt	Q0 15535,12420 15457,12449 15399,12444
 Deutschmeisterstr.: m‰ﬂiger Asphalt	Q1 15443,12222 15350,12270 15320,12375
 Parkaue: Asphalt	Q0 15399,12444 15402,12390 15350,12270
-Am Stadtpark: unbefestigte Straﬂe	Q2 15454,12519 15457,12449
+Am Stadtpark: Asphalt	Q0 15454,12519 15457,12449
 Kielblockstr.: m‰ﬂiger Asphalt, Lˆcher	Q2 15433,12686 15546,12690
 Im Bereich des F‰hranlegers: Kopfsteinpflaster	Q2 -8468,2152 -8540,2209 -8591,2144
 (zur Pfaueninself‰hre): Kopfsteinpflaster	Q2 -8540,2209 -8561,2236 -8564,2276
@@ -1711,8 +1710,8 @@ M¸hlenfeldstr.: Kopfsteinpflaster	Q2 3046,22292 2757,22310 2587,22332
 (Tegeler Flieﬂ - M¸hlenfeldstr.): Verbundsteinpflaster	Q1 3740,22520 3772,22482
 Gˆtzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
 (Weg am Tegeler Flieﬂ): Waldweg, OK	Q2 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
-(Weg am Tegeler Flieﬂ): Waldweg, einige matschige Stellen	Q2 5621,23966 5409,23816 5350,23717
-(Weg am Tegeler Flieﬂ): Waldweg, einige matschige Stellen	Q2 5316,23661 5214,23420 5242,23156 5232,23139
+(Weg am Tegeler Flieﬂ): Waldweg	Q1 5621,23966 5409,23816 5350,23717
+(Weg am Tegeler Flieﬂ): Waldweg	Q1 5316,23661 5214,23420 5242,23156 5232,23139
 (Weg am Tegeler Flieﬂ): asphaltiert	Q0 5350,23717 5316,23661
 (Weg am Tegeler Flieﬂ): gut gewalzter Waldweg	Q0 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4731,22904
 (Weg am Tegeler Flieﬂ): Waldweg	Q2 4731,22904 4693,22897 4613,22928
@@ -7511,7 +7510,7 @@ Fritz-Schloﬂ-Park: Asphalt mit Wurzelsch‰den	Q1 6988,13539 7021,13560 7056,13584
 (Weg durch den Geschichtspark): Beton	Q0 7822,13323 7811,13344
 (Weg durch den Geschichtspark): Asphalt	Q0 7811,13344 7784,13392
 (Weg durch den Geschichtspark): wassergebundene Decke	Q1 7784,13392 7767,13431
-(Weg durch den Geschichtspark): Asphalt	Q0 7767,13431 7732,13484 7651,13447
+(Weg durch den Geschichtspark): Asphalt	Q0 7767,13431 7732,13484 7696,13470 7651,13447
 (Ingeborg-Drewitz-Allee - Alt-Moabit): Kopfsteinpflaster, schmaler Streifen mit Gehwegplatten	Q1 7592,12730 7620,12757 7776,12945
 (Weg am Moabiter Werder): Asphalt	Q0 7649,12758 7707,12813 7787,12918 7813,12961 7799,13019
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Parkweg	Q1 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910
@@ -8991,7 +8990,7 @@ Kunkelstr.: Gehwegplatten	Q0 8227,15075 8229,15128
 Kunkelstr.: Fahrbahn ist Kopfsteinpflaster, Uferweg ist wassergebundene Decke	Q1 8229,15128 8232,15220
 Kunkelstr.: Parkweg	Q1 8232,15220 8268,15312
 Luzinstr.: Beton	Q0 22929,13661 22859,13684 22759,13715
-Rudolf-Seiffert-Str.: m‰ﬂiger Asphalt	Q1 14871,13135 14978,13581 14784,13642
+Rudolf-Seiffert-Str.: Asphalt	Q0 14871,13135 14978,13581 14784,13642
 Rosenbecker Str.: Asphalt	Q0 21684,18283 21699,18314 21751,18421 21732,18493 21678,18648 21627,18814
 Biesenbrower Str.: Beton	Q0 18118,17795 18237,17637 18403,17631 18556,17752 18740,17900 18875,18009 18893,18137 18737,18350 18620,18283
 Woltmannweg: Asphalt	Q0 5056,1321 4939,1148 4897,1054 4862,975 4837,890 4768,840
@@ -9315,7 +9314,9 @@ Goeckestr.: m‰ﬂiges Kleinsteinpflaster, wellig	Q2 16128,14685 16256,14828 16361,
 Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15941,14834 16035,14748 16128,14685 16284,14601
 Freienwalder Str.: Kopfsteinpflaster (einigermaﬂen gut)	Q2 16849,15263 16651,15345 16618,15356 16406,15452 16331,15486
 Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16354,15323 16208,15379
-Roedernstr.: Asphalt mit Sch‰den	Q1 16208,15379 15825,15547 15552,15660
+Roedernstr.: Asphalt mit Sch‰den	Q1 16208,15379 16083,15434
+Roedernstr.: Asphalt mit Sch‰den	Q1 15712,15594 15552,15660
+Roedernstr.: Asphalt	Q0 16083,15434 15825,15547 15712,15594
 Prieﬂnitzstr.: Asphalt	Q0 11351,19169 11407,19186 11549,19258
 Ortlerweg: schlechtes Kopfsteinpflaster	Q3 3509,1598 3762,1953 3716,2063
 Kˆgelstr.: m‰ﬂiges Kopfsteinpflaster	Q2 5213,17936 5303,17914 5367,17899

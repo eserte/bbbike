@@ -17012,10 +17012,12 @@ EOF
        until => $isodate2epoch->("2013-12-31 23:59:59"), # 1384350812, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
        periodic => 1,
        recurrences => [['yearly', days => 11, months => 11]],
-       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich, bis Ende Dezember 2013',
+       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr.) bzw. nur schiebend auf dem Gehweg möglich (Dircksenstr.), bis Ende Dezember 2013',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 11329,12497 11209,12430 11273,12301 11355,12331
+userdel	2::temp 11329,12497 11209,12430
+userdel	q4::temp 11209,12430 11273,12301
+userdel	2::temp 11273,12301 11355,12331
 EOF
      },
      { from  => $isodate2epoch->("2013-11-24 00:00:00"), # 1352734264, # 1290960699, # PERIODISCH! # früher: 1258207217, # 2009-11-14 15:00
@@ -22142,8 +22144,8 @@ userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 EOF
      },
      { from  => 1384038000, # 2013-11-10 00:00
-       until => $isodate2epoch->("2013-11-30 23:59:59"), # 1385319600, # 2013-11-24 20:00
-       text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum Ende November 2013',
+       until => $isodate2epoch->("2013-12-09 20:00:00"), # VMZ (8.12.) und reales Schild (9.12.) widersprechen sich
+       text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum 9.12.2013',
        type  => 'handicap',
        source_id => 'IM_020670',
        data  => <<EOF,
@@ -22280,6 +22282,15 @@ EOF
        source_id => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf',
        data  => <<EOF,
 userdel	q4::inwork 6820,6522 6801,6736 6793,6814 6770,7027 6762,7109
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Weg durch den Geschichtspark Moabit nachts geschlossen, Öffnungszeiten Winter (1.10.-31.3.) 8.00-16.00, Sommer (1.4.-30.9.) 8.00-21.00',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
 EOF
      },
     );
