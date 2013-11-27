@@ -183,7 +183,7 @@ if ($do_xxx) {
 
 	my $route =
 	    [ map { [ split /,/ ] } split / /,
-	      "5085,24232 5216,24157 5534,24005 5621,23966 5632,23992"
+	      "5216,24157 5275,24168 5534,24005 5621,23966 5676,23971 5780,23997"
 	    ];
 	my $comment;
 
@@ -201,10 +201,10 @@ if ($do_xxx) {
 	    ($comment) = $net->get_point_comment($route, 2, undef);
 	    like($comment, qr{Landschaftlich sehr schön}i, "CS comment for second point in feature, pass $pass")
 		or diag $comment;
-	    ($comment) = $net->get_point_comment($route, 3, undef);
+	    ($comment) = $net->get_point_comment($route, 4, undef);
 	    is($comment, undef, "No CS comment for last point in feature, pass $pass")
 		or diag $comment;
-	    ($comment) = $net->get_point_comment($route, 4, undef);
+	    ($comment) = $net->get_point_comment($route, 5, undef);
 	    is($comment, undef, "No CS comment for last point in route, pass $pass")
 		or diag $comment;
 	}
