@@ -33,11 +33,6 @@ BEGIN {
 
 BEGIN { plan tests => 26 }
 
-{
-    use POSIX qw(strftime);
-    use constant TODO_FETCH_UAPROF_ERRORS => "2013-12-30T12:00:00" gt strftime("%FT%T", localtime) && 'Fetching UAProf fails';
-}
-
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
     or die "usage: $0 [--fresh-uaprof-dir]";
@@ -68,8 +63,9 @@ if ($use_fresh_uaprof_dir) {
     ok($bi->{can_table}, "Nokia6630 can tables");
 }
 
-{
-    local $TODO = TODO_FETCH_UAPROF_ERRORS;
+SKIP: {
+    skip "This UAProf URL seems to be permanently down", 3;
+
     local $ENV{HTTP_USER_AGENT} = "SharpTQ-GX1/1.0";
     local $ENV{HTTP_PROFILE} = "http://sharp-mobile.com/UAprof/GX1.xml";
     my $bi = BrowserInfo->new;
