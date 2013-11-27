@@ -536,6 +536,9 @@ EOF
 				   ),
 		 ],
 		],
+		[Button => $do_compound->("All layers for editing"),
+		 -command => sub { enable_all_layers_for_editing() },
+		],
 	       ],
 	      ],
 	      [Cascade => $do_compound->('OSM Live data', $MultiMap::images{OpenStreetMap}), -menuitems =>
@@ -1078,6 +1081,27 @@ sub add_todays_geocoded_images {
 	main::status_message("The command '@cmd' failed", 'die');
     }
     add_new_layer('str', $tmpfile);
+}
+
+sub enable_all_layers_for_editing {
+    # Don't include "u" here, because it usually disturbs normal editing
+    for my $str_abk (qw(s f w b r rw e qs hs nl gr)) {
+	main::plot('str', $str_abk, -draw => 1);
+    }
+    # XXX hackish. There should be an easier way to do this
+    for my $basefile (qw(zebrastreifen culdesac ortsschilder)) {
+	my $type = "p";
+	my $file = "$main::datadir/$basefile";
+	my $type_file = "$type $file";
+	if (!$layer_for_type_file{$type_file}) {
+	    toggle_new_layer($type, $file);
+	}
+    }
+    main::plot_comments_all(1);
+    # Don't include "u" here, too, see above.
+    for my $p_abk (qw(b r lsa vf sperre)) {
+	main::plot('p', $p_abk, -draw => 1);
+    }
 }
 
 ######################################################################
