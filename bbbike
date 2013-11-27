@@ -760,6 +760,17 @@ if ($devel_host && !$public && !grep { "danger" eq $_ } @Strassen::Dataset::comm
     push @Strassen::Dataset::comments_types, "danger";
 }
 @comments_types = @Strassen::Dataset::comments_types;
+my @used_comments_types;
+foreach my $type (@comments_types) {
+    next if $type =~ /^(cyclepath|mount|route|ferry)$/; # handled elsewhere
+    if (!$advanced) {
+	# kfzverkehr: poor presentation
+	# scenic: almost no data
+	next if $type =~ /^(kfzverkehr|scenic)$/;
+    }
+    push @used_comments_types, $type;
+}
+
 
 if ($lowmem) {
     @image_type_order = ('xpm', 'gif', 'jpg', 'png');
@@ -2255,16 +2266,8 @@ unless($skip_features{"strassen"}) {
     {
 	$c_bpcm = $strcm->Menu(-title => M"Sonstige");
 	$strcm->entryconfigure("last", -menu => $c_bpcm);
-	my @used_types;
-	foreach my $type (@comments_types) {
-	    next if $type =~ /^(cyclepath|mount|route|ferry)$/; # handled elsewhere
-	    if (!$advanced) {
-		# kfzverkehr: poor presentation
-		# scenic: almost no data
-		next if $type =~ /^(kfzverkehr|scenic)$/;
-	    }
+	foreach my $type (@used_comments_types) {
 	    $create_comment_layers_cb->($c_bpcm, $type);
-	    push @used_types, $type;
 	}
 	$c_bpcm->separator;
 	my $str_draw_all = 0;
@@ -2273,13 +2276,7 @@ unless($skip_features{"strassen"}) {
 	     -variable => \$str_draw_all,
 	     -command => sub {
 		 my $onoff = $str_draw_all;
-		 $progress->InitGroup;
-		 for my $type (@used_types) {
-		     my $def = 'comm-' . $type;
-		     $str_draw{$def} = $onoff;
-		     plot('str', $def, Filename => get_strassen_file("comments_" . $type));
-		 }
-		 $progress->FinishGroup;
+		 plot_comments_all($onoff);
 	     },
 	     -accelerator => 'Shift-C',
 	    );
@@ -10564,6 +10561,16 @@ sub plot_mount {
 				    $comm_mount);
     }
     plot('str','mount', -object => $mount);
+}
+
+sub plot_comments_all {
+    my($onoff) = @_;
+    $progress->InitGroup;
+    for my $type (@used_comments_types) {
+	my $def = 'comm-' . $type;
+	plot('str', $def, -draw => $onoff, Filename => get_strassen_file("comments_" . $type));
+    }
+    $progress->FinishGroup;
 }
 
 # Zeichnet gesperrte Straßen und Einbahnstraßen.
