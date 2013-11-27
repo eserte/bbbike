@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: any2bbd,v 1.26 2009/01/16 21:34:23 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2013 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -38,7 +37,7 @@ use Strassen::MultiStrassen;
 my %opt;
 
 GetOptions(\%opt,
-	   "dir=s",
+	   'dir=s@',
 	   'exclude=s@',
 	   'excluderx=s@',
 	   "o=s",
@@ -66,7 +65,7 @@ if ($opt{v}) {
     $verbose = $opt{v};
 }
 
-my $download_dir; $download_dir = $opt{dir} if defined $opt{dir};
+my @download_dirs; @download_dirs = @{ $opt{dir} } if $opt{dir};
 my $outfile = $opt{o} || die "Missing option -o for output file, use -o - for stdout";
 my $routenamefmt = $opt{routenamefmt} || "%b";
 my %exclude = map {($_,1)} @{ $opt{exclude} || [] };
@@ -86,10 +85,8 @@ if ($file_info) {
 }
 
 my @files = @ARGV;
-if (!@files) {
-    if (defined $download_dir) {
-	@files = glob("$download_dir/*");
-    }
+for my $download_dir (@download_dirs) {
+    push @files, glob("$download_dir/*");
 }
 
 my @s;
