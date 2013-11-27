@@ -51,7 +51,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 125 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 139 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -486,6 +486,40 @@ SKIP: {
 	is $first_blocking->{Index}, 0, 'Index of affecting blockings';
 	like $first_blocking->{Text}, qr{Maybachufer.*Wochenmarkt}, 'Text of affecting blockings';
 	like $first_blocking->{LongLatHop}->{XY}->[0], qr{^13\.\d+,52\.\d+$}, 'looks like a coordinate in Berlin';
+    }
+}
+
+{ # double "Ausweichroute"
+    my %route_endpoints = (startc => '11092,12375',
+			   zielc  => '11329,12497',
+			  );
+    my $resp = bbbike_cgi_search +{ %route_endpoints }, 'Ausweichroute (Voltairestr., Weihnachtsmarkt) should follow';
+    on_routelist_page($resp);
+    my $content = $resp->decoded_content;
+    like_html($content, qr{Voltairestr.: Weihnachtsmarkt}, 'Found Ausweichroute reason');
+    like_html($content, qr{Ausweichroute suchen}, 'Found Ausweichroute button');
+    my($ausweichroute_form) = grep { $_->attr('name') eq 'Ausweichroute' } HTML::Form->parse($resp);
+    ok($ausweichroute_form, 'Found form with name "Ausweichroute"');
+
+    {
+	my $req = $ausweichroute_form->click;
+	my $resp = $ua->request($req);
+	ok($resp->is_success, 'Ausweichroute request was successful');
+	$content = $resp->decoded_content;
+	like_html($content, qr{Mögliche Ausweichroute}, 'Expected Ausweichroute text');
+	like_html($content, qr{Stralauer Str.}, 'Expected route');
+	like_html($content, qr{Stralauer Str.: Bauarbeiten}, 'Found another Ausweichroute reason');
+	($ausweichroute_form) = grep { $_->attr('name') eq 'Ausweichroute' } HTML::Form->parse($resp);
+	ok($ausweichroute_form, 'Found again form with name "Ausweichroute"');
+    }
+
+    {
+	my $req = $ausweichroute_form->click;
+	my $resp = $ua->request($req);
+	ok($resp->is_success, 'Ausweichroute request was successful');
+	$content = $resp->decoded_content;
+	like_html($content, qr{Mögliche Ausweichroute}, 'Expected Ausweichroute text');
+	like_html($content, qr{Grunerstr.}, 'Expected route');
     }
 }
 
