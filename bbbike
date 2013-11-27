@@ -10002,18 +10002,26 @@ sub realcoords2coords {
 
 ######################################################################
 #
-# Funktionen zum Zeichnen der Kartenelemente (Strecken und Punkte)
+# Functions for plotting map layers (street and points)
 #
-# Allegemeine Plot-Funktion
+# generic plot function, handles both "str" (streets) and "p" (points) types
+# $type: either "str" or "p"
+# $abk:  short layer identifier (e.g. "s" for the "strassen" layer)
+# %args: named parameters
+#  -draw: boolean value, specify whether to plot the layer or to delete it
+#  -object: a Strassen-compatible object to plot
+#  -filename: a bbd file to plot
+#  other named parameters are passed to plotstr() and plotp()
 sub plot {
     my($type, $abk, %args) = @_;
     Hooks::get_hooks("before_plot")->execute;
     if (exists $args{'-draw'}) {
-	if ($type eq 'str') {
-	    $str_draw{$abk} = $args{'-draw'};
-	} else {
-	    $p_draw{$abk} = $args{'-draw'};
+	my $draw_ref = $type eq 'str' ? \$str_draw{$abk} : \$p_draw{$abk};
+	if ((!!$$draw_ref) == (!!$args{'-draw'})) {
+	    # nothing to do
+	    return;
 	}
+	$$draw_ref = $args{'-draw'};
     }
     if ($type eq 'str') {
 	plotstr($abk, %args);
@@ -10028,10 +10036,6 @@ sub plot {
     } else {
 	die "Unknown type $type";
     }
-###XXX Häh?
-#    if ($BBBikeLazy::mode && defined &bbbikelazy_remove_data) {
-#	bbbikelazy_remove_data($type, $abk);
-#    }
     Hooks::get_hooks("after_plot")->execute;
 }
 
