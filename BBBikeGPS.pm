@@ -38,6 +38,11 @@ sub BBBikeGPS::gps_interface {
 
     die "Unhandled args: " . join(" ", %args) if %args;
 
+    if (!@realcoords) {
+	status_message(M('Keine Route'), 'error');
+	return;
+    }
+
     $mod = 'GPS::' . $mod;
     my %extra_args;
     if ($mod =~ s/_Test$//) {
