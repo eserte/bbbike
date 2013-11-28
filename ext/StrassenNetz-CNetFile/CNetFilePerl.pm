@@ -54,15 +54,16 @@ sub make_net {
 
     my $try = 0;
     $self->create_mmap_net_if_needed($cache_prefix, %args2);
-    $self->mmap_net_file($self->filename_c_net_mmap($cache_prefix));
+    my $mmap_filename = $self->filename_c_net_mmap($cache_prefix);
+    $self->mmap_net_file($mmap_filename);
 
     my $coord2ptr_cache_file = $cachefile . "_coord2ptr";
     $self->{CNetCoord2Ptr} = Strassen::Util::get_from_cache
-	($coord2ptr_cache_file, [$self->{Strassen}->{File}])
+	($coord2ptr_cache_file, [$mmap_filename])
 	    or die "Should not happen: Cachefile " . Strassen::Util::get_cachefile($coord2ptr_cache_file) . " is not current and/or cannot be created";
     my $net2name_cache_file = $cachefile . "_net2name";
     $self->{Net2Name} = Strassen::Util::get_from_cache
-	($net2name_cache_file, [$self->{Strassen}->{File}])
+	($net2name_cache_file, [$mmap_filename])
 	    or die "Should not happen: Cachefile " . Strassen::Util::get_cachefile($net2name_cache_file) . " is not current and/or cannot be created";
 
     tie %{ $self->{Net} }, 'StrassenNetz::CNetFile::Net', $self;

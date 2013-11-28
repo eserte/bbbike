@@ -94,27 +94,37 @@ sub create_mmap_net {
 	$total_structlength += $this_structlength;
     }
 
-    warn "Second pass: create mmap file...\n" if $VERBOSE;
-    open(F, "> $mmap_file") or die "Can't create $mmap_file: $!";
-    binmode F;
+    my $temp_mmap_file = "$mmap_file.~$$~";
+    warn "Second pass: create mmap file (temporary $temp_mmap_file first)...\n" if $VERBOSE;
+    
+    open my $ofh, ">", $temp_mmap_file
+	or die "Can't create $temp_mmap_file: $!";
+    binmode $ofh;
 
-    print F $MAGIC;
-    print F pack("V", $FILE_VERSION);
+    print $ofh $MAGIC;
+    print $ofh pack("V", $FILE_VERSION);
 
     while(my($coord, $val) = each %{ $self->{Net} }) {
 	my($x,$y) = split /,/, $coord;
 	my $header = pack("VVV", $x, $y, scalar keys %$val);
-	print F $header;
+	print $ofh $header;
 	while(my($succ, $dist) = each %{ $val }) {
 	    my $ptr = $coord2ptr->{$succ};
 	    if (!defined $ptr) {
 		die "No pointer in coord2ptr hash for $succ";
 	    }
 	    my $succrecord = pack("VV", $ptr, $dist);
-	    print F $succrecord;
+	    print $ofh $succrecord;
 	}
     }
-    close F;
+    close $ofh
+	or die "Failure while writing $temp_mmap_file: $!";
+    warn "Rename $temp_mmap_file to final destination $mmap_file...\n" if $VERBOSE;
+    rename $temp_mmap_file, $mmap_file
+	or do {
+	    unlink $temp_mmap_file;
+	    die "Failure while renaming $temp_mmap_file to $mmap_file: $!";
+	};
 
     warn "Write cache files...\n" if $VERBOSE;
     Strassen::Util::write_cache($coord2ptr, $self->get_cachefile(%args) . "_coord2ptr");
@@ -130,6 +140,7 @@ sub filename_c_net_mmap {
 
 sub create_mmap_net_if_needed {
     my($self, $file_prefix, %args) = @_;
+    my $mmap_filename = $self->filename_c_net_mmap($file_prefix);
     my @depend_files = ($self->{Strassen}->dependent_files);
     if ($args{-blocked}) {
 	my $blocked = Strassen->new($args{-blocked}, NoRead => 1);
@@ -148,18 +159,16 @@ sub create_mmap_net_if_needed {
 # 	}
 #     }
     if (   !$doit &&
-	   (!Strassen::Util::valid_cache($self->get_cachefile(%args) . "_coord2ptr",
-					 \@depend_files)
-	    || !-e $self->filename_c_net_mmap($file_prefix)
-	    || !Strassen::Util::valid_cache($self->get_cachefile(%args) . "_net2name",
-					    \@depend_files)
+	   (!-e $mmap_filename
+	    || !Strassen::Util::valid_cache($self->get_cachefile(%args) . "_coord2ptr", [$mmap_filename])
+	    || !Strassen::Util::valid_cache($self->get_cachefile(%args) . "_net2name", [$mmap_filename])
 	   )
        ) {
 	$doit = 1;
 	warn "Cache is not valid\n" if $VERBOSE;
     } else {
 	for my $f (@depend_files) {
-	    if (-M $f < -M $self->filename_c_net_mmap($file_prefix)) {
+	    if (-M $f < -M $mmap_filename) {
 		$doit = 1;
 		warn "Dependent file $f was changed => update net\n" if $VERBOSE;
 		last;
