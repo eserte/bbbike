@@ -23,6 +23,7 @@ thumbnails-googlemaps:
 		echo -n ".thumbnails_googlemaps/$$img ... "; \
 	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -o .thumbnails_googlemaps/$$img~ -routefile $$trk -module GoogleMapsStatic; \
 		mv .thumbnails_googlemaps/$$img~ .thumbnails_googlemaps/$$img; \
-		echo "done" \
+		echo "done (and sleep for Google...)"; \
+		sleep 1; \
 	    ); \
 	done
