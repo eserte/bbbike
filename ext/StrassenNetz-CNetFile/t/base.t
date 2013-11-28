@@ -14,6 +14,7 @@ use Strassen::Core;
 use StrassenNetz::CNetFileDist;
 
 use strict;
+use Getopt::Long;
 
 BEGIN {
     if (!eval q{
@@ -26,6 +27,13 @@ BEGIN {
 }
 
 plan tests => 11;
+
+GetOptions("v" => sub {
+	       no warnings 'once';
+	       $StrassenNetz::CNetFile::VERBOSE = 1;
+	       $StrassenNetz::VERBOSE = 1;
+	   })
+    or die "usage: $0 [-v]";
 
 my $s = Strassen->new("strassen");
 my $net = StrassenNetz->new($s);
