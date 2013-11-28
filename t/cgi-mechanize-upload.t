@@ -63,7 +63,7 @@ my $sample_coords = do {
     [map { [split/,/] } qw(8982,8781 9076,8783 9229,8785 9227,8890 9801,8889)];
 };
 
-plan tests => 3 + $gpsman_tests * @gps_types;
+plan tests => 4 + $gpsman_tests * @gps_types;
 
 {
     my $agent = WWW::Mechanize->new();
@@ -216,8 +216,6 @@ EOF
 		$agent->back;
 	    }
 
-	XXX: 1;
-	    
 	SKIP: {
 		my $form = $agent->current_form;
 		$form->strict(1) if $form->can('strict');
@@ -256,6 +254,25 @@ EOF
 		$agent->back;
 	    }
 	}
+    }
+
+ XXX: 1;
+    {
+	my($tmpfh,$tmpfile) = tempfile(
+				       UNLINK => !$debug,
+				       SUFFIX => '_cgi-mechanize-upload.t.garbage',
+				      )
+	    or die $!;
+	print $tmpfh "!?#ThIs iS GaRbAge!?#\n";
+	close $tmpfh
+	    or die $!;
+
+	my $form = $agent->current_form;
+	$form->strict(1) if $form->can('strict');
+	$form->value('routefile', $tmpfile);
+	$agent->submit;
+	like $agent->content, qr{Dateiformat nicht erkannt};
+	$agent->back;
     }
 }
 

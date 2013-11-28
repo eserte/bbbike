@@ -7236,7 +7236,7 @@ sub draw_route_from_fh {
     my $err = $@;
     unlink $file;
 
-    if ($res->{RealCoords}) {
+    if (@{ $res->{RealCoords} || [] }) {
 	$q->param('draw', 'all');
 	$q->param('scope', 'wideregion');
 	$q->param('geometry', "800x600") if !defined $q->param("geometry");
