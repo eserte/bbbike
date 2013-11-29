@@ -3205,7 +3205,26 @@ userdel	q4::inwork; 13085,7904 12870,8087
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'IM_020814',
+         'data' => 'userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+',
+         'periodic' => 1,
+         'until' => 1385938799,
+         'from' => 1385679600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 30.11.2013 und 1.12.2013',
+         'id' => 2426,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3525,8 +3544,8 @@ userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 
        },
        {
          'source_id' => 'IM_020674',
-         'until' => 1385996400,
-         'text' => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 2.12.2013',
+         'until' => 1386169200,
+         'text' => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 4.12.2013',
          'from' => 1384077600,
          'id' => 2512,
          'data' => 'userdel	q4::inwork; 10738,12364 10804,12291
@@ -3705,6 +3724,27 @@ userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 
          'data' => '	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'data' => '#: by: http://www.potsdam.de/cms/beitrag/10046424/302934/
+#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/91842041/Radverkehrsfuehrung_Gro%C3%9Fveranstaltungen.pdf
+userdel	1::temp -13556,-1182 -13643,-1220
+',
+         'periodic' => 1,
+         'until' => 1388357999,
+         'from' => 1385334000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 25. November - 29. Dezember 2013',
+         'type' => 'gesperrt',
+         'id' => 2526
        }
      
 );

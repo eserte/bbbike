@@ -3550,8 +3550,8 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => $isodate2epoch->("2013-11-30 00:00:00"), # 1 Tag Vorlauf # PERIODISCH! früher (<=2012) an allen Adventssamstagen
-       until => $isodate2epoch->("2013-12-01 23:59:59"), #                 PERIODISCH! früher (<=2012) an allen Adventssamstagen
+     { from  => $isodate2epoch->("2013-11-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-12-01 23:59:59"), #
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
        text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 1. Dezember 2013)',
@@ -21266,11 +21266,13 @@ EOF
 userdel	q4::inwork; 13085,7904 12870,8087
 EOF
      },
-     { from  => 1367560561, # 2013-05-03 07:56
-       until => 1367791199, # 2013-05-05 23:59
-       text  => 'Bahnhofstr. (Lichtenrade) zwischen Riedingerstr. und Goltzstr. Veranstaltung, Vollsperrung (bis Sonntag, 24:00)',
+     { from  => 1385679600, # 2013-11-29 00:00
+       until => 1385938799, # 2013-12-01 23:59
+       periodic => 1,
+       recurrences => [['yearly', days => 1, months => 12]],
+       text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 30.11.2013 und 1.12.2013',
        type  => 'gesperrt',
-       source_id => 'IM_019787',
+       source_id => 'IM_020814',
        data  => <<EOF,
 userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
@@ -22154,8 +22156,8 @@ userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 
 EOF
      },
      { from  => 1384077600, # 2013-11-10 11:00
-       until => 1385996400, # 2013-12-02 16:00
-       text  => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 2.12.2013',
+       until => 1386169200, # 2013-12-04 16:00
+       text  => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 4.12.2013',
        type  => 'handicap',
        source_id => 'IM_020674',
        data  => <<EOF,
@@ -22291,6 +22293,18 @@ EOF
        recurring => 1,
        data  => <<EOF,
 	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
+EOF
+     },
+     { from  => 1385334000, # 2013-11-25 00:00
+       until => 1388357999, # 2013-12-29 23:59
+       periodic => 1,
+       recurrences => [['yearly', days => 25, months => 11]],
+       text  => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 25. November - 29. Dezember 2013',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.potsdam.de/cms/beitrag/10046424/302934/
+#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/91842041/Radverkehrsfuehrung_Gro%C3%9Fveranstaltungen.pdf
+userdel	1::temp -13556,-1182 -13643,-1220
 EOF
      },
     );
