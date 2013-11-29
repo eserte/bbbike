@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-build.t,v 1.4 2007/09/20 23:22:27 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -16,6 +15,7 @@ use lib ("$FindBin::RealBin/..",
 use Config;
 use Strassen;
 use Strassen::Build;
+use Strassen::Util;
 use StrassenNetz::CNetFile;
 use Storable;
 eval 'use BBBikeXS';
@@ -42,6 +42,10 @@ if ($^O eq 'MSWin32') {
 	skip(1,1);
     }
 }
+
+# To not interfere with the "real" net as created by
+# StrassenNetz-CNetFile.
+$Strassen::Util::cacheprefix = "b_de_strassen_build_test";
 
 my $tmpdir = "$FindBin::RealBin/tmp/strassen-build";
 mkdir $tmpdir, 0755 if !-d $tmpdir;
