@@ -159,26 +159,7 @@ userdel	2::temp -3231,14383 -3293,14304
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'data' => 'userdel	2::temp 9986,13412 10317,13248
-',
-         'periodic' => 1,
-         'until' => 1385938799,
-         'from' => 1385679600,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.+1.12.)',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              11
-                            ]
-                          ],
-         'id' => 166,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -450,25 +431,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'periodic' => 1,
-         'until' => 1385938799,
-         'from' => 1385766000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 1. Dezember 2013)',
-         'type' => 'gesperrt',
-         'id' => 417
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2549,7 +2512,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -3039,7 +3002,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        {
          'source_id' => 'IM_019421',
-         'until' => 1386169200,
+         'until' => 1388530799,
          'text' => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)',
          'from' => 1353366000,
          'id' => 2391,
@@ -3049,7 +3012,7 @@ userdel	2::night 14838,11410 14792,11391
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130614.1020.386081.html (Vollsperrung ab Juni 2013)
 #: by: IM_019421 (allerdings hier nur bis Dezember 2013)
 # REMOVED (bei VMZ abgelaufen) --- : next_check: 2013-09-01 --- #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen --- #: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074 --- #: priority: #A
-#: next_check: 2013-12-04
+#: next_check: 2013-12-15
 #: XXX danach bessere Straßenqualität? Radstreifen?
 #: osm_watch: way id="24930947" version="20"
 #: source_id: IM_020259 (zusätzlich)
@@ -3205,26 +3168,7 @@ userdel	q4::inwork; 13085,7904 12870,8087
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_020814',
-         'data' => 'userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
-',
-         'periodic' => 1,
-         'until' => 1385938799,
-         'from' => 1385679600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 30.11.2013 und 1.12.2013',
-         'id' => 2426,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3264,20 +3208,7 @@ userdel	q2::inwork; 6572,14639 6299,14660
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20130613.1320.386040.html',
-         'until' => 1385938799,
-         'text' => 'Földerichplatz: Bauarbeiten von Ende Juni bis Dezember 2013',
-         'from' => 1372456800,
-         'id' => 2446,
-         'data' => '#: XXX wie sieht die Situation nach den Bauarbeiten aus, kommen Radfahrer noch weiterhin gut durch?
-#: XXX zurzeit (2013-07-13) existiert keine Fahrbahn und keine Bürgersteige mehr, man muss auf den Parkweg ausweichen
-#: last_checked: 2013-07-13
-#: next_check: 2013-12-01
-userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3614,26 +3545,7 @@ userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 
          'id' => 2517,
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
-         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
-',
-         'periodic' => 1,
-         'until' => 1385920800,
-         'from' => 1385809200,
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2013, 12:00 bis 19:00 Uhr',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12
-                            ]
-                          ],
-         'id' => 2518,
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
          'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
@@ -3704,16 +3616,7 @@ userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_020737',
-         'until' => 1386082800,
-         'text' => 'Monumentenstr./Kreuzbergstr.: Bauarbeiten im Kreuzungsbereich, Fußgänger können passieren, bis Anfang Dezember 2013 ',
-         'from' => 1384642800,
-         'id' => 2523,
-         'data' => 'userdel	q3::inwork 8180,9099 8389,9087
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -3745,6 +3648,27 @@ userdel	1::temp -13556,-1182 -13643,-1220
          'text' => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 25. November - 29. Dezember 2013',
          'type' => 'gesperrt',
          'id' => 2526
+       },
+       {
+         'source_id' => 'IM_020820',
+         'until' => 1401458400,
+         'text' => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Straße gesperrt, 02.12.2013 bis Ende Mai 2014',
+         'from' => 1385766000,
+         'id' => 2527,
+         'data' => '#: add_fragezeichen: Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?
+userdel	2::inwork 21385,9049 21365,9059 21351,9066
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131202.1025.392342.html',
+         'until' => 1386561600,
+         'text' => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 06.12.2013 um 16:30 Uhr bis voraussichtlich 09.12.2013 05:00 Uhr',
+         'from' => 1386257400,
+         'id' => 2528,
+         'data' => 'userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
+',
+         'type' => 'gesperrt'
        }
      
 );

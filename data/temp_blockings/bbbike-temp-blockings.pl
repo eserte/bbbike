@@ -20899,7 +20899,7 @@ userdel	q4::inwork; -2974,13188 -2728,13269 -2706,13291
 EOF
      },
      { from  => 1353366000, # 2012-11-20 00:00
-       until => 1386169200, # 2013-12-04 16:00
+       until => $isodate2epoch->("2013-12-31 23:59:59"), # 1386169200, # 2013-12-04 16:00
        text  => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)',
        type  => 'handicap',
        source_id => 'IM_019421',
@@ -20910,7 +20910,7 @@ EOF
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130614.1020.386081.html (Vollsperrung ab Juni 2013)
 #: by: IM_019421 (allerdings hier nur bis Dezember 2013)
 # REMOVED (bei VMZ abgelaufen) --- : next_check: 2013-09-01 --- #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen --- #: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074 --- #: priority: #A
-#: next_check: 2013-12-04
+#: next_check: 2013-12-15
 #: XXX danach bessere Straßenqualität? Radstreifen?
 #: osm_watch: way id="24930947" version="20"
 #: source_id: IM_020259 (zusätzlich)
@@ -22305,6 +22305,25 @@ EOF
 #: by: http://www.potsdam.de/cms/beitrag/10046424/302934/
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/91842041/Radverkehrsfuehrung_Gro%C3%9Fveranstaltungen.pdf
 userdel	1::temp -13556,-1182 -13643,-1220
+EOF
+     },
+     { from  => 1385766000, # 2013-11-30 00:00
+       until => 1401458400, # 2014-05-30 16:00
+       text  => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Straße gesperrt, 02.12.2013 bis Ende Mai 2014',
+       type  => 'gesperrt',
+       source_id => 'IM_020820',
+       data  => <<EOF,
+#: add_fragezeichen: Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?
+userdel	2::inwork 21385,9049 21365,9059 21351,9066
+EOF
+     },
+     { from  => 1386257400, # 2013-12-05 16:30
+       until => 1386561600, # 2013-12-09 05:00
+       text  => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 06.12.2013 um 16:30 Uhr bis voraussichtlich 09.12.2013 05:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131202.1025.392342.html',
+       data  => <<EOF,
+userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
 EOF
      },
     );

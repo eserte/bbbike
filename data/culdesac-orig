@@ -30,10 +30,10 @@ Sackgassenende, Kreuzberger Balkon	culdesac 12582,11103
 	culdesac 8521,10268
 Sackgassenende, Gartenbauamt	culdesac 9124,9262
 	culdesac 9149,8961
-Sackgassenende, Potsdamer Platz Arkaden	culdesac 8404,11290
-Sackgassenende, Potsdamer Platz Arkaden	culdesac 8382,11224
-Sackgassenende, Potsdamer Platz Arkaden	culdesac 8373,11301
-Sackgassenende, Potsdamer Platz Arkaden	culdesac 8354,11230
+Sackgassenende (östlicher Abschnitt), Potsdamer Platz Arkaden	culdesac 8404,11290
+Sackgassenende (östlicher Abschnitt), Potsdamer Platz Arkaden	culdesac 8382,11224
+Sackgassenende (westlicher Abschnitt), Potsdamer Platz Arkaden	culdesac 8373,11301
+Sackgassenende (westlicher Abschnitt), Potsdamer Platz Arkaden	culdesac 8354,11230
 	culdesac 8796,11393
 	culdesac 10209,11918
 	culdesac 11506,11851
@@ -78,10 +78,10 @@ S-Bhf. Frankfurter Allee	culdesac_pseudo 15175,12180
 Ende des Bahndamms	culdesac 13966,9340
 	culdesac 14305,9213
 	culdesac 14327,9117
-	culdesac 13103,9478
-	culdesac 13007,9347
-	culdesac 12615,9132
-	culdesac 12910,8929
+nordöstliches Sackgassenende	culdesac 13103,9478
+südwestliches Sackgassenende	culdesac 13007,9347
+westliches Sackgassenende	culdesac 12615,9132
+östliches Sackgassenende	culdesac 12910,8929
 	culdesac 10111,9942
 #: XXX_osm fehlt komplett
 	culdesac 12090,7865
@@ -896,6 +896,14 @@ Spreeufer	culdesac 12441,11373
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 9350,10176
+	culdesac_pseudo 9853,10543
+	culdesac_pseudo 11343,10528
+	culdesac_pseudo 10911,11080
+	culdesac_pseudo 11000,11327
+	culdesac_pseudo 11236,11508
+	culdesac_pseudo 14837,11706
+	culdesac_pseudo 14994,12064
 #: note: als Radfahrer/Fußgänger kann man über den Gehweg weiterfahren/gehen
 	culdesac_pseudo 11017,12487
 	culdesac_pseudo 3856,9687
