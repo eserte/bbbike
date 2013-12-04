@@ -870,6 +870,7 @@ after-deployment-set-tags:
 automatic-deployment: automatic-deployment--check-prerequisites
 	-@${XTERM_CONF_TITLE} "BBBike pre-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -update
+	-@perl -MTerm::ANSIColor=colored -e 'print colored("Automatic deployment continues...", "black on_green"), "\n"'
 	-@${XTERM_CONF_TITLE} "BBBike pps deployment"
 	nice ${MAKE} deploy-pps NO_PARALLEL=1
 	-@${XTERM_CONF_TITLE} "BBBike deployment"
@@ -893,6 +894,7 @@ automatic-deployment-temp-blockings:
 	-@${XTERM_CONF_TITLE} "BBBike temp-blockings deployment finished"
 
 automatic-deployment--check-prerequisites:
+	-@perl -MTerm::ANSIColor=colored -e 'print colored("Please stand by...", "white on_red"), "\n"'
 	if [ "${HOST}" != "${DEPLOYMENT_HOST}" ] ; then \
 	    echo "*** ERROR: deployment was not started on \"${DEPLOYMENT_HOST}\","; \
 	    echo "but on host \"${HOST}\". If you think this is OK, then change or set"; \
