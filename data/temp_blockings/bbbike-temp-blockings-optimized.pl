@@ -3475,8 +3475,8 @@ userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 
        },
        {
          'source_id' => 'IM_020674',
-         'until' => 1386169200,
-         'text' => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 4.12.2013',
+         'until' => 1386342000,
+         'text' => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 6.12.2013',
          'from' => 1384077600,
          'id' => 2512,
          'data' => 'userdel	q4::inwork; 10738,12364 10804,12291

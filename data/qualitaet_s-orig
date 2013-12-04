@@ -212,9 +212,9 @@ Tiergartenufer: mäßiges Kopfsteinpflaster	Q2 6476,11325 6436,11343
 Tiergartenufer: Parkweg/Kleinsteinpflaster	Q1 6436,11343 6358,11394 6262,11426 6186,11466
 Tiergarten: Kopfsteinpflaster	Q2 5835,11768 5758,11895
 Garibaldistr.: schlechtes Kopfsteinpflaster	Q3 7324,19795 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7711,19956 7838,19884
-#: XXX projektierte Bauarbeiten, danach vielleicht bessere Qualität
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/alt_luebars.html (Baubeginn Mitte 2013)
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130531.1320.385519.html
+#: add_fragezeichen: Ist die Straße zwischen Wittenauer Str. und Zabel-Krüger-Damm mittlerweile asphaltiert?
 #: osm_watch: way id="4802841" version="7"
 #: next_check: 2013-12-01 (Bauende voraussichtlich Ende 2013)
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6764,23396 6801,23474 6805,23554
@@ -1799,11 +1799,11 @@ Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130111.1435.380126.html (Fertigstellung Ende 2013)
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/gabrielenstr.html
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130531.1320.385519.html
+#: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/baumassnahmen.html?date=20131204 (Fertigstellung April 2014)
 #: last_checked: 2013-10-24 (Bauarbeiten in Gang)
-#: next_check: 2013-11-30 (voraussichtlich Bauende November 2013)
+#: next_check: 2014-04-01 (voraussichtlich Bauende April 2014)
 #: priority: #A
-Gabrielenstr.: mäßiger Asphalt	Q1 1630,20731 1518,20615
-Gabrielenstr.: guter Asphalt	Q0 1518,20615 1407,20563
+Gabrielenstr.: guter Asphalt	Q0 1630,20731 1518,20615 1407,20563
 Gabrielenstr.: mäßiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 989,20366
 An der Malche: fester Waldweg	Q1- 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Avenue Jean Mermoz: asphaltiert	Q0 3333,18034 3248,17921 3213,17858 3159,17780 3080,17634
