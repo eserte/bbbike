@@ -11137,7 +11137,10 @@ sub gui_activate_temp_blockings {
 
 sub refresh_temp_blockings {
     if ($show_active_temp_blockings) {
-	activate_temp_blockings($show_active_temp_blockings);
+	# XXX simple minded refresh: turn off, then on
+	activate_temp_blockings(0); # off
+	$show_active_temp_blockings = 1; # XXX needed because activate_temp_blockings() resets this variable as a side-effect
+	activate_temp_blockings($show_active_temp_blockings); # on
     }
 }
 
