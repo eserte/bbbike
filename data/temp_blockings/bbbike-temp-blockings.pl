@@ -20181,13 +20181,14 @@ userdel	q4::inwork 2295,20358 2241,20487
 EOF
      },
      { from  => 1330902000, # 2012-03-05 00:00
-       until => $isodate2epoch->("2013-12-20 15:00:00"), # 1370005200, # 2013-05-31 15:00
-       text  => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Ende Dezember 2013',
+       until => $isodate2epoch->("2013-12-09 11:00:00"), # 1370005200, # 2013-05-31 15:00
+       text  => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte Dezember 2013',
        type  => 'handicap',
        source_id => 'INKO_111647', # auch: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120228.1300.366751.html
        data  => <<EOF,
 #: osm_watch: way id="23243508" version="40"
 #: note: Radfahrer dürfen offiziell in Gegenrichtung fahren
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20131206.0905.392490.html (neues Ende)
 userdel	q2::inwork; -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
@@ -21210,7 +21211,7 @@ EOF
      },
      { from  => 1366740818, # 2013-04-23 20:13
        until => 1427727600, # 2015-03-30 17:00
-       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Straße gesperrt (bis Ende März 2014) ',
+       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende März 2015) ',
        type  => 'handicap',
        source_id => 'IM_019747',
        data  => <<EOF,
@@ -21455,6 +21456,7 @@ EOF
        source_id => 'INKO_115299',
        data  => <<EOF,
 #: last_checked: 2013-11-12
+#: check_frequency: 70d
 userdel	q2::inwork; 6572,14639 6299,14660
 EOF
      },
@@ -22146,7 +22148,7 @@ userdel	q4::inwork; 10310,13227 10317,13248 10350,13376
 EOF
      },
      { from  => 1384038000, # 2013-11-10 00:00
-       until => $isodate2epoch->("2013-12-09 20:00:00"), # VMZ (8.12.) und reales Schild (9.12.) widersprechen sich
+       until => 1386361049, # $isodate2epoch->("2013-12-09 20:00:00"), # VMZ (8.12.) und reales Schild (9.12.) widersprechen sich
        text  => 'Manfred-von-Richthofen-Str.: zwischen Werner-Voß-Damm und Wolffring in Richtung Platz der Luftbrücke Baustelle, Fahrbahn gesperrt, bis zum 9.12.2013',
        type  => 'handicap',
        source_id => 'IM_020670',
@@ -22156,8 +22158,8 @@ userdel	q4::inwork; 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 
 EOF
      },
      { from  => 1384077600, # 2013-11-10 11:00
-       until => 1386342000, # 2013-12-06 16:00
-       text  => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, bis 6.12.2013',
+       until => $isodate2epoch->("2013-12-08 23:59:59"), # 1386342000, # 2013-12-06 16:00
+       text  => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, Dezember 2013',
        type  => 'handicap',
        source_id => 'IM_020674',
        data  => <<EOF,
@@ -22324,6 +22326,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131202.1025.392342.html',
        data  => <<EOF,
 userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
+EOF
+     },
+     { from  => 1386198000, # 2013-12-05 00:00
+       until => 1386525600, # 2013-12-08 19:00
+       text  => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 07.12.2013 10 Uhr bis 08.12.2013 19 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_020883',
+       data  => <<EOF,
+userdel	2::temp 16849,1437 16805,1488 16610,1715
 EOF
      },
     );

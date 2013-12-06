@@ -345,6 +345,15 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5506
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036111279461/111279461/00069067/67-Anlagen/02/vzb0592_IV-Benenng_Privatstrasse.pdf
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
+#: XXX Privatstraße
+#: XXX fehlt in Berlin.coords.data
+#: XXX mit Abzweig zur Kaulsdorfer Str.
+#: next_check: 2014-07-01
+Am Wuhlebogen: wann wird die Straße fertiggestellt? Qualität?	?::projected 21671,7957 21627,8156 21420,8362
+# 
 #: by: http://www.lindenufer-spandau.de/das-neue-lindenufer/havelradweg.html
 #: next_check: 2014-09-01
 Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
@@ -415,7 +424,7 @@ Mahlow - Teltow: Schellstraße (?) in Bau	?::inwork 10246,-4271 7955,-4250
 #: check_frequency: 30d vvv
 #: priority: #C
 Erich-Weinert-Str.: Zebrastreifen in Planung	?::projected 11676,15986 11688,16006
-Gudvangerstr.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11567,15842 11673,16003 11694,16034 11750,16116
+Gudvanger Str.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11567,15842 11673,16003 11694,16034 11750,16116
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by: ^^^
@@ -436,6 +445,7 @@ Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected
 # REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html --- #: XXX Mitte Oktober sind die Sanierungsarbeiten fertig, dann diesen Eintrag entfernen --- Robert-Siewert-Str.: Bauarbeiten, gibt es Einschränkungen für Radfahrer, insbesondere im Abschnitt des "antiken" Radwegs?	?::inwork 19242,9815 19398,9833 19459,9842 19536,9853 19669,9876
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html ("Durchführungszeit zwei Wochen, allerdings wurde der Termin (16.9.) nicht realisiert)
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5676 (Vorschlag: "Behelfsampel")
 #: XXX für Radfahrer evtl. relevant, da Überquerungsmöglichkeit zur Magdalenenstr.
 #: XXX evtl. auch ubahnhof_bg anpassen?
 #: source_id: IM_020837	(vielleicht)
@@ -585,7 +595,8 @@ Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 805
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne) vvv
 #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/07_lp_zeltinger_platz_130424.pdf?start&ts=1372161246&file=07_lp_zeltinger_platz_130424.pdf vvv
-#: next_check: 2013-09-19 vvv
+#: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3533 (Beginn der Baumaßnahmen November 2013)
+#: next_check: 2014-01-01 vvv
 #: priority: #C vvv
 Zeltinger Str. Höhe Einmündung in den Zeltinger Platz: Zebrastreifen ist geplant	?::projected 2441,25278 2464,25267
 Zeltinger Platz Höhe Reichelt/Post: Zebrastreifen ist geplant	?::projected 2461,25148 2480,25129
@@ -632,17 +643,25 @@ Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5092&options=4
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/4508103636166975/36166975/00104984/84-Anlagen/02/116-2013-1Blatt1ausB-PlanXVII-50aa-16012012.pdf
 #: last_checked: 2013-06-28 vvv
-#: check_frequency: 360d vvv
+#: next_check: 2014-05-01 vvv
 Planstraße 1: Qualität? Name?	?::projected 19842,9895 19853,9774 19857,9682
 Planstraße 2 (evtl. Römerweg?): Qualität etc?	?::projected 19663,9757 19853,9774
 Planstraße 3 -> Viechtacher Str.: Qualität etc?	?::projected 19660,9681 19732,9678 19801,9680 19857,9682 19893,9683
 Planstraße 4 -> Eisensteiner Str.: Qualität etc?	?::projected 19732,9678 19727,9484
 Planstraße 5 -> Rinchnacher Weg: Qualität etc?	?::projected 19801,9680 19797,9480
 Planstraße 6 -> Teisnacher Str.: Qualität etc?	?::projected 19857,9682 19849,9477
-Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19651,9489 19727,9484 19797,9480 19849,9477 19921,9472
+Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19651,9489 19727,9484 19797,9480 19849,9477 19878,9477
 #: XXX Planstraße 8+10 -> Regener Str.
-#XXXGartenstadt Karlshorst	?::projected 19698,9837 19671,9119 19931,9080 19846,9855 19698,9837
-#: check_frequency ^^^
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/03/246-2013-2Anlage2UebersichtsplanErschliessung.pdf vvv
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf vvv
+Planstraße 8: Name vielleicht Regener Str.? Qualität?	?::projected 19837,9147 19869,9403 19878,9477
+Planstraße 9: Name? Qualität etc?	?::projected 19634,9192 19639,9173 19837,9147
+Planstraße (evtl. 10): Name vielleicht auch Regener Str.? Qualität?	?::projected 19869,9403 19795,9407
+#: by: ^^^
+#: by: ^^^
+#: by: ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -1080,9 +1099,16 @@ Neubaugebiet am Dahlemer Weg: entstehen hier neue Straßen oder werden bestehende
 #: next_check: 2014-03-29
 Beilsteiner Str.: wird es hier für das neue Wohngebiet eine Erschließungsstraße geben?	? 18737,12753 18706,12488
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
+#: XXX Privatstraße
+#: XXX fehlt in Berlin.coords.data
+#: next_check: 2014-04-15
+In den Leonorengärten: existiert die Straße schon? Genaue Lage? Qualität?	?::inwork 6315,3974 6527,4089
+# 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131024.1605.390772.html
-#: XXX eventuell nur inoffiziell, und eventuell nur auf dem Firmengelände
-#: priority: #C
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
+#: XXX fehlt in Berlin.coords.data
+#: next_check: 2014-01-08 (Wirksamkeit der Benennung laut Amtsblatt)
 Schindler-Platz: ist irgendwo hier der Schindler-Platz ausgeschildert?	? 8766,4038 8780,3983
 # 
 # REMOVED (nein, kein öffentlicher Weg, hier ist eine Kita+Spielplatz) --- #: XXX Frage: kann es zu unerwünschten Routing gemeinsam mit dem comments_path-Eintrag für diese Straße geben? --- Tegnerstr.: gibt es hier einen Weg durch einen Spielplatz oder Grünfläche?	? 10708,16579 10713,16635 10793,16636
@@ -1132,9 +1158,11 @@ Seestr.: Sanierung der Radwege - wie wird die Qualität danach sein (asphaltiert?
 # REMOVED (siehe Sperrung der Friedrichsbrücke) --- #: XXX vmz-Eintrag relevant? NEW	Burgstr. (Mitte): Straße vollständig gesperrt (bis 19.10.2013, 24:00 Uhr) in beiden Richtungen zwischen Neue Promenade und Spandauer Str., 10.10.2013 17:29 Uhr bis 19.10.2013 23:59 Uhr	IM_020483	--- #: priority: #A --- Burgstr. und Anna-Louisa-Karsch-Str.: volständig gesperrt?	?::inwork 10132,12941 10166,12777 10264,12826
 # REMOVED (Richtung Norden können Radfahrer explizit passieren; Richtung Süden entweder einen legalen Schlenker über die Scharnweberstr. machen (die ebenfalls gesperrt ist), oder abenteuerlicherweise die Fahrbahn benutzen) --- #: XXX vmz-Eintrag relevant? NEW	Gürtelstr. (Friedrichhain): Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Frankfurter Allee zwischen Oderstr. und Frankfurter Allee, 01.10.2013 09:22 Uhr bis 14.10.2013 16:00 Uhr	IM_020415	 --- Gürtelstr.: Fahrtrichtung gesperrt?	?::inwork; 15106,11598 15202,11789 15248,11880 15294,11964 15361,12071
 # REMOVED (aufgenommmen) --- #: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388 --- Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
-#: XXX vmz-Eintrag relevant? CHANGED	Waßmannsdorfer Chaussee (Neukölln): Baustelle, Straße vollständig gesperrt (bis Mitte 12/13) in beiden Richtungen in Höhe Rhodeländerweg, 28.05.2013 13:06 Uhr bis 20.12.2013 15:00 Uhr	IM_019886	
-#: XXX ask rj?
-Waßmannsdorfer Chaussee: Bauarbeiten?	?::inwork 16400,-409 16373,-496 16273,-824
+# REMOVED (lohnt sich wohl nicht mehr) --- #: XXX vmz-Eintrag relevant? CHANGED	Waßmannsdorfer Chaussee (Neukölln): Baustelle, Straße vollständig gesperrt (bis Mitte 12/13) in beiden Richtungen in Höhe Rhodeländerweg, 28.05.2013 13:06 Uhr bis 20.12.2013 15:00 Uhr	IM_019886 --- #: XXX ask rj? --- Waßmannsdorfer Chaussee: Bauarbeiten?	?::inwork 16400,-409 16373,-496 16273,-824
+#: XXX relevant?
+#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131206.1025.392499.html
+#: next_check: 2013-12-09
+Unter den Linden: Asphaltierungsarbeiten vor dem Zeughaus, Richtung Brandenburger Tor gesperrt, 09. Dezember 2013 bis 10. Dezember 2013	?::inwork 9984,12426 9934,12420 9852,12409
 # 
 Stadtpark Steglitz: evtl. befindet sich das Drängelgitter hier?	? 5709,4674 5734,4694
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
@@ -3385,6 +3413,7 @@ Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20110930.1255.360473.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html?date=20121116 --- #: next_check: 2013-03-01 --- #: osm_watch: way id="145055197" version="3" --- Blankenburger Str.: Gibt es nach den Bauarbeiten Radstreifen in beiden Richtungen?	? 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5476 ("kann mit dem Bau in diesem Jahr noch gerechnet werden?" (2013))
 #: XXX Ampelanlage in Planung, Realisierung 2011
 #: XXX: Vorfahrtsregelung kann dann entfernt werden
 #: last_checked: 2013-06-22
