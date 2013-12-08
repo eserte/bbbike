@@ -46,8 +46,24 @@ if ($is_coordssession_data && !$do_distinguish_dir) {
     die "-coordssession-data option requires -distinguish-dir option!";
 }
 
-my $file = shift || "-";
-my $s = Strassen->new($file) or die "Strassen file '$file' cannot be opened";
+my @files;
+if (@ARGV == 0) {
+    if (-t STDIN) {
+	print STDERR "Reading from STDIN...\n";
+    }
+    @files = '-';
+} elsif (@ARGV == 1) {
+    @files = $ARGV[0];
+} else {
+    @files = @ARGV;
+}
+my $s;
+if (@files == 1) {
+    $s = Strassen->new($files[0]) or die "Strassen file '$files[0]' cannot be opened";
+} else {
+    require Strassen::MultiStrassen;
+    $s = MultiStrassen->new(@files);
+}
 if (-e $out && !$force) {
     die "Will not overwrite existing file $out, to force use the -f option.\n";
 }
@@ -210,8 +226,8 @@ weight_bbd - create weighted bbd files
 
 =head2 EXAMPLES
 
-Create a weighted plot from bbbike.de coordssessions (session packed
-in a zip file):
+Create a monthly weighted plot from bbbike.de coordssessions (session
+packed in a zip file):
 
     YYYYMM=2013-09
     WEIGHTEDTMP=$HOME/src/bbbike/tmp/weighted
@@ -219,5 +235,11 @@ in a zip file):
     ~/src/bbbike/miscsrc/coordssession2bbd coordssession-$YYYYMM.zip > $WEIGHTEDTMP/$YYYYMM.bbd
     ~/src/bbbike/miscsrc/weight_bbd                  -logarithmic=2.5 -f $WEIGHTEDTMP/$YYYYMM.bbd -o $WEIGHTEDTMP/${YYYYMM}_weighted_25.bbd
     ~/src/bbbike/miscsrc/weight_bbd -distinguish-dir -logarithmic=2.5 -f $WEIGHTEDTMP/$YYYYMM.bbd -o $WEIGHTEDTMP/${YYYYMM}_weighted_dir_25.bbd
+
+Create a yearly plot (prerequisite: monthly bbd files from
+coordssession2bbd):
+
+    YYYY=2013
+    ~/src/bbbike/miscsrc/weight_bbd -distinguish-dir -logarithmic=2.5 -f $WEIGHTEDTMP/$YYYY-??.bbd -o $WEIGHTEDTMP/${YYYY}_weighted_dir_25.bbd
 
 =cut
