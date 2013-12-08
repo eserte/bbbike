@@ -44,10 +44,14 @@ Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,946
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html
 #: source_id: IM_020581 ("bis Ende 2014")
-#: last_checked: 2013-11-12
-#: next_check: 2013-12-31
-#: priority: #A
+#: last_checked: 2013-11-12 vvv
+#: next_check: 2013-12-31 vvv
+#: priority: #A vvv
 Chausseestr.: direkte Zufahrt südlich der Invalidenstraße nicht möglich, umständliche Wegführung	q4::inwork 9042,13707 8935,13844
+Chausseestr.: Einbahnstraße zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwork; 8879,13913 8935,13844
+#: priority ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: source_id: INKO_113388
 #: last_checked: 2013-09-10
@@ -109,7 +113,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstei
 #: next_check: 2014-01-02
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
-#: last_checked: 2013-11-12 vvv
+#: last_checked: 2013-12-08 vvv
 #: next_check: 2014-03-31 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -124,7 +128,7 @@ Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwo
 #: next_check ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-11-25 (Neubau)
+#: last_checked: 2013-12-08 (Neubau)
 #: next_check: 2014-02-28
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 

@@ -2376,6 +2376,7 @@ userdel	2::temp 13188,7590 13177,7644
 userdel	2::temp 13188,7590 13303,7622
 userdel	2::temp 13288,7653 13303,7622
 userdel	2::temp 13288,7653 13177,7644
+userdel	2::temp 13288,7653 13278,7673 13245,7742
 ',
          'periodic' => 1,
          'until' => 1386543599,
@@ -3538,26 +3539,7 @@ userdel	q4::inwork 8465,18365 8286,18331
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
-         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
-',
-         'periodic' => 1,
-         'until' => 1386525600,
-         'from' => 1386414000,
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 8. Dezember 2013, 12:00 bis 19:00 Uhr',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              12
-                            ]
-                          ],
-         'id' => 2519,
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
          'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
@@ -3662,15 +3644,17 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_020883',
-         'until' => 1386525600,
-         'text' => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 07.12.2013 10 Uhr bis 08.12.2013 19 Uhr ',
-         'from' => 1386198000,
-         'id' => 2529,
-         'data' => 'userdel	2::temp 16849,1437 16805,1488 16610,1715
+         'source_id' => 'IM_020889',
+         'until' => 1386702000,
+         'text' => 'Unter den Linden: in Höhe Zeughaus Richtung Brandenburger Tor Bauarbeiten, Fahrbahn wahrscheinlich nicht passierbar, von 9.12.2013 morgens bis 10.12.2013 abends',
+         'from' => 1386482400,
+         'id' => 2530,
+         'data' => '#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131206.1025.392499.html
+userdel	q4::inwork; 9984,12426 9934,12420 9852,12409
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        }
      
 );

@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2013-11-13
+#: last_checked: 2013-12-08
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -99,7 +99,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2013-11-04
+#: last_checked: 2013-12-08
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -345,6 +345,8 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+Mühsamstr.: Baustelle abfahren, genaue Position sowie Penalty abschätzen	?::inwork 13559,12779 13506,12752
+# 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5506
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036111279461/111279461/00069067/67-Anlagen/02/vzb0592_IV-Benenng_Privatstrasse.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
@@ -363,11 +365,10 @@ Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggefü
 #: priority: #A
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung in Bau	?::inwork; 13588,11490 13565,11492 13473,11456
 # 
-#: last_checked: 2013-11-17
+#: last_checked: 2013-12-08
 Neue Bahnhofstr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14879,11182 14811,11067 14752,11041
 # 
-#: last_checked: 2013-11-11
-Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
+# REMOVED (neu asphaltiert) --- #: last_checked: 2013-11-11 --- Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20131108.1050.391371.html (bis September 2014)
 #: next_check: 2014-09-01
@@ -1005,7 +1006,7 @@ Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::inwork 5236,10994 5230,1
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
 #: last_checked: 2013-11-22
 #: check_frequency: 120d
-Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337
+Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337 13519,7345
 # 
 #: last_checked: 2010-06-06
 #: next_check: 2010-09-01
@@ -1159,10 +1160,7 @@ Seestr.: Sanierung der Radwege - wie wird die Qualität danach sein (asphaltiert?
 # REMOVED (Richtung Norden können Radfahrer explizit passieren; Richtung Süden entweder einen legalen Schlenker über die Scharnweberstr. machen (die ebenfalls gesperrt ist), oder abenteuerlicherweise die Fahrbahn benutzen) --- #: XXX vmz-Eintrag relevant? NEW	Gürtelstr. (Friedrichhain): Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Frankfurter Allee zwischen Oderstr. und Frankfurter Allee, 01.10.2013 09:22 Uhr bis 14.10.2013 16:00 Uhr	IM_020415	 --- Gürtelstr.: Fahrtrichtung gesperrt?	?::inwork; 15106,11598 15202,11789 15248,11880 15294,11964 15361,12071
 # REMOVED (aufgenommmen) --- #: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388 --- Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
 # REMOVED (lohnt sich wohl nicht mehr) --- #: XXX vmz-Eintrag relevant? CHANGED	Waßmannsdorfer Chaussee (Neukölln): Baustelle, Straße vollständig gesperrt (bis Mitte 12/13) in beiden Richtungen in Höhe Rhodeländerweg, 28.05.2013 13:06 Uhr bis 20.12.2013 15:00 Uhr	IM_019886 --- #: XXX ask rj? --- Waßmannsdorfer Chaussee: Bauarbeiten?	?::inwork 16400,-409 16373,-496 16273,-824
-#: XXX relevant?
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131206.1025.392499.html
-#: next_check: 2013-12-09
-Unter den Linden: Asphaltierungsarbeiten vor dem Zeughaus, Richtung Brandenburger Tor gesperrt, 09. Dezember 2013 bis 10. Dezember 2013	?::inwork 9984,12426 9934,12420 9852,12409
+# REMOVED (aufgenommen) --- #: XXX relevant? --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131206.1025.392499.html --- #: next_check: 2013-12-09 --- Unter den Linden: Asphaltierungsarbeiten vor dem Zeughaus, Richtung Brandenburger Tor gesperrt, 09. Dezember 2013 bis 10. Dezember 2013	?::inwork 9984,12426 9934,12420 9852,12409
 # 
 Stadtpark Steglitz: evtl. befindet sich das Drängelgitter hier?	? 5709,4674 5734,4694
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
@@ -3312,7 +3310,7 @@ Gutschmidtstr.: werden die Radwege asphaltiert oder saniert?	? 13775,3500 13710,
 Ahornstr. (Potsdam): Qualität?	? -8829,-2741 -8870,-2876
 Alter Torfweg (Potsdam): Qualität? Existieren Straßenschilder?	? -10836,-5477 -10829,-5608 -10917,-5739 -11089,-5909
 #: XXX an der Sachtlebenstr. Gehwegplatten; Ausschilderung "Zum Ramsteinweg"
-Ramsteinweg - Sachtlebenstr.: Qualität? Beleuchtet?	? 581,670 523,684 481,731 400,765 332,819 247,822
+Ramsteinweg - Sachtlebenstr.: Wie ist die Qualität des Wegs? Ist der Weg nachts beleuchtet?	? 581,670 523,684 481,731 400,765 332,819 247,822
 # 
 # REMOVED (keine Änderung, sagt Mr. Lichterfelde-Scout) --- #: last_checked: 2011-07-09 --- #: next_check: 2011-08-31 --- Holbeinstr.: Sind die Bauarbeiten zwischen Potsdamer Str. und Drakestr. beendet? Wie ist die Fahrbahnbeschaffenheit?	?::inwork 3492,3371 3626,3465
 # 

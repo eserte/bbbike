@@ -17120,6 +17120,7 @@ userdel	2::temp 13188,7590 13177,7644
 userdel	2::temp 13188,7590 13303,7622
 userdel	2::temp 13288,7653 13303,7622
 userdel	2::temp 13288,7653 13177,7644
+userdel	2::temp 13288,7653 13278,7673 13245,7742
 EOF
      },
      { from  => 1212876000, # 2008-06-08 00:00
@@ -22335,6 +22336,16 @@ EOF
        source_id => 'IM_020883',
        data  => <<EOF,
 userdel	2::temp 16849,1437 16805,1488 16610,1715
+EOF
+     },
+     { from  => 1386482400, # 2013-12-08 07:00
+       until => 1386702000, # 2013-12-10 20:00
+       text  => 'Unter den Linden: in Höhe Zeughaus Richtung Brandenburger Tor Bauarbeiten, Fahrbahn wahrscheinlich nicht passierbar, von 9.12.2013 morgens bis 10.12.2013 abends',
+       type  => 'handicap',
+       source_id => 'IM_020889',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131206.1025.392499.html
+userdel	q4::inwork; 9984,12426 9934,12420 9852,12409
 EOF
      },
     );

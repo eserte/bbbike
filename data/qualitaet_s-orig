@@ -489,7 +489,7 @@ Simplonstr.: Kopfsteinpflaster	Q2; 14465,11195 14530,11137
 Simplonstr.: bis zur Fahrbahnmitte asphaltiert	Q0; 14530,11137 14465,11195
 Simplonstr.: Kopfsteinpflaster	Q2 14530,11137 14601,11074 14634,11048 14677,11027 14752,11041
 Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
-Matkowskystr.: Kopfsteinpflaster	Q2 14530,11137 14513,11075
+Matkowskystr.: Asphalt	Q0 14530,11137 14513,11075
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2 14752,11041 14811,11067 14879,11182
 Neue Bahnhofstr.: Asphalt	Q0 14879,11182 14918,11249
 (Klein-Glienicke - Hahn-Meitner-Institut): Waldweg	Q2+ -9313,54 -8629,175
@@ -18240,7 +18240,9 @@ Raschdorffstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7954,18251 8096,184
 # 
 #: by: Bernd (magneticpole): vvv
 #: note: laut ADFC-Karte mäßiger *Radweg* Richtung Südosten, wahrscheinlich ein Druckfehler
-Saalburgstr.: mäßiges Kopfsteinpflaster	Q2 11128,5782 11392,5505 11596,5450 11611,5479
+Saalburgstr.: mäßiges Kopfsteinpflaster	Q2 11128,5782 11392,5505 11596,5450
+#: corrected_by: srt/public imagery (mäßiges Kopfsteinpflaster -> ...)
+Saalburgstr.: Asphalt	Q0 11596,5450 11611,5479
 Cafeastr.: mäßiges Kopfsteinpflaster	Q2 11596,5450 11548,5344 11579,5311 11596,5293
 Cafeastr. - Gradestr.: glattes Verbundsteinpflaster	Q1- 11596,5293 11612,5253 11603,5241 11676,5185
 #: by: ^^^
