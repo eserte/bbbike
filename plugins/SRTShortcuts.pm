@@ -456,7 +456,7 @@ EOF
 		 ],
 		],
 		do {
-		    my $glob = "$bbbike_rootdir/tmp/weighted/*_weighted_dir_*.bbd";
+		    my $glob = "$bbbike_rootdir/tmp/weighted/????-??_weighted_dir_*.bbd";
 		    require File::Glob;
 		    my @candidates = File::Glob::bsd_glob($glob);
 		    if (!@candidates) {
@@ -474,6 +474,33 @@ EOF
 			    $date_desc = " (for month $1)";
 			} else {
 			    $date_desc = " (unknown month)";
+			}
+			layer_checkbutton([$do_compound->("Weighted matches$date_desc")],
+					  'str', $latest,
+					  above => $str_layer_level,
+					  Width => undef, # XXX weighted-matches.desc sets its own widths, but why it isn't winning?
+					 );
+		    }
+		},
+		do {
+		    my $glob = "$bbbike_rootdir/tmp/weighted/????_weighted_dir_*.bbd";
+		    require File::Glob;
+		    my @candidates = File::Glob::bsd_glob($glob);
+		    if (!@candidates) {
+			warn <<EOF;
+No candidates for a yearly weighted bbd found
+(tried the glob $glob).
+Please create a file using $bbbike_rootdir/miscsrc/weight_bbd
+(see documentation there)
+EOF
+			();
+		    } else {
+			my($latest) = sort { $b cmp $a } @candidates;
+			my $date_desc;
+			if ($latest =~ m{/(\d{4})_}) {
+			    $date_desc = " (for year $1)";
+			} else {
+			    $date_desc = " (unknown year)";
 			}
 			layer_checkbutton([$do_compound->("Weighted matches$date_desc")],
 					  'str', $latest,
