@@ -15,6 +15,8 @@ before_install:
  - cpanm --quiet --notest PDF::Create~"!=1.07"
 # Temporary hack: Glib does not install (see https://rt.cpan.org/Ticket/Display.html?id=91313), force version before 1.303
  - cpanm --quiet --notest Glib~"!=1.303"
+# DBD::XBase versions between 1.00..1.05 explicitely want Perl 5.10.0 as a minimum. See https://rt.cpan.org/Ticket/Display.html?id=88873
+ - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05" || true'
  - Xvfb :123 &
  - (sleep 10; env DISPLAY=:123 twm) &
 env:
@@ -24,5 +26,4 @@ perl:
   - "5.18"
   - "5.14"
   - "5.10"
-## disabled because of DBD::XBase issues, see https://rt.cpan.org/Ticket/Display.html?id=88873
-#  - "5.8"
+  - "5.8"
