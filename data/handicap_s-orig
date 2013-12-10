@@ -19,9 +19,12 @@
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # REMOVED (keine Absperrung mehr) --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d --- Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
 # 
-#: last_checked: 2013-12-03 vvv
-#: check_frequency: 14d vvv
-Marchlewskistr.: Bauarbeiten, Einbahnstraße	q4::inwork; 13473,11456 13366,11651
+#: last_checked: 2013-12-10
+Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
+# 
+#: last_checked: 2013-12-09 vvv
+#: check_frequency: 7d vvv
+Marchlewskistr.: Bauarbeiten, Fahrbahn möglicherweise gesperrt	q2::inwork; 13473,11456 13366,11651
 # REMOVED (man wird über die asphaltierte Seite geleitet) --- Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -109,8 +112,8 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstei
 #: XXX ^^^
 # 
 #: XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2013-12-02
-#: next_check: 2014-01-02
+#: last_checked: 2013-12-10
+#: next_check: 2014-01-10
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: last_checked: 2013-12-08 vvv
@@ -856,7 +859,7 @@ Kiautschoustr.: Fußgänger, Bordsteine	q3 6837,14848 6853,14854
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getränke-Hoffmann-Parkplatz): Parkplatz	q1 13208,11658 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11170,11558
-#: XXX_prog BS am westlichen Ende, östliches ist leicht abgesenkt
+#: XXX_prog BS am westlichen Ende, östliches ist leicht abgesenkt und eigentlich kein Problem
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
 (Parkplatz Charité): Fußgänger	q3 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372
@@ -1488,8 +1491,8 @@ Rampe	q2 10503,19371 10489,19406
 Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11051,23620 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 (Tomatenweg - Straße 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloßpark Schönhausen): Fußgänger	q1 10600,19225 10638,19149
-#: XXX ist die Fahrbahn noch immer gesperrt?
-Alex-Wedding-Str.: Fahrbahn gesperrt, Ausweichen auf Gehweg	q4 11085,13239 11045,13183
+#: note: nachts sind die Ketten schlecht sichtbar
+Alex-Wedding-Str.: Fahrbahn durch Ketten gesperrt, Ausweichen auf Gehweg	q4 11085,13239 11045,13183
 (Braunlager Str. - Tempelhofer Weg): Fußgänger	q2 12062,5779 12017,5747
 Am Vierling: Fußgänger	q1 -472,4185 -444,4126
 #: note: der nördliche Abschnitt hat getrennte Wege für Fußgänger und Radfahrer

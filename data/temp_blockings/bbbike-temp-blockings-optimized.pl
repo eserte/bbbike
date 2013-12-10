@@ -2366,34 +2366,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
          'id' => 1997,
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
-         'data' => 'userdel	2::temp 13416,7712 13426,7674
-userdel	2::temp 13416,7712 13288,7653
-userdel	2::temp 13426,7674 13400,7642 13303,7622
-userdel	2::temp 12969,7610 13100,7626 13177,7644
-userdel	2::temp 13188,7590 13177,7644
-userdel	2::temp 13188,7590 13303,7622
-userdel	2::temp 13288,7653 13303,7622
-userdel	2::temp 13288,7653 13177,7644
-userdel	2::temp 13288,7653 13278,7673 13245,7742
-',
-         'periodic' => 1,
-         'until' => 1386543599,
-         'from' => 1386198000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (vom 6. Dezember 2013 bis 8. Dezember 2013)',
-         'id' => 1998,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2883,19 +2856,7 @@ userdel	q3::inwork 10530,14452 10723,14772
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_111647',
-         'until' => 1386583200,
-         'text' => 'Neubau der Ruppiner Chaussee, Fahrbahn Richtung Tegel bis Schulzendorfer Str. gesperrt, bis Mitte Dezember 2013',
-         'from' => 1330902000,
-         'id' => 2316,
-         'data' => '#: osm_watch: way id="23243508" version="40"
-#: note: Radfahrer dürfen offiziell in Gegenrichtung fahren
-#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20131206.0905.392490.html (neues Ende)
-userdel	q2::inwork; -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3170,7 +3131,26 @@ userdel	q4::inwork; 13085,7904 12870,8087
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'IM_020815',
+         'data' => 'userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+',
+         'periodic' => 1,
+         'until' => 1387148399,
+         'from' => 1386910800,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 14.12.2013 und 15.12.2013',
+         'id' => 2426,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3466,38 +3446,10 @@ userdel	q4::inwork 8465,18365 8286,18331
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020674',
-         'until' => 1386543599,
-         'text' => 'Stralauer Str.: zwischen Mühlendamm und Jüdenstr. Richtung Jannowitzbrücke Bauarbeiten, Fahrbahn gesperrt, Dezember 2013',
-         'from' => 1384077600,
-         'id' => 2512,
-         'data' => 'userdel	q4::inwork; 10738,12364 10804,12291
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'data' => 'userdel	2::temp 9986,13412 10317,13248
-',
-         'periodic' => 1,
-         'until' => 1386543599,
-         'from' => 1386284400,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (7.12.+8.12)',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              12
-                            ]
-                          ],
-         'id' => 2515,
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
          'data' => 'userdel	2::temp 9986,13412 10317,13248
@@ -3633,28 +3585,6 @@ userdel	1::temp -13556,-1182 -13643,-1220
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131202.1025.392342.html',
-         'until' => 1386561600,
-         'text' => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 06.12.2013 um 16:30 Uhr bis voraussichtlich 09.12.2013 05:00 Uhr',
-         'from' => 1386257400,
-         'id' => 2528,
-         'data' => 'userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       {
-         'source_id' => 'IM_020889',
-         'until' => 1386702000,
-         'text' => 'Unter den Linden: in Höhe Zeughaus Richtung Brandenburger Tor Bauarbeiten, Fahrbahn wahrscheinlich nicht passierbar, von 9.12.2013 morgens bis 10.12.2013 abends',
-         'from' => 1386482400,
-         'id' => 2530,
-         'data' => '#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131206.1025.392499.html
-userdel	q4::inwork; 9984,12426 9934,12420 9852,12409
-',
-         'type' => 'handicap'
        }
      
 );

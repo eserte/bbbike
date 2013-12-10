@@ -217,7 +217,7 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-12-02
+#: last_checked: 2013-12-09
 #: next_check: 2014-06-05
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -345,7 +345,7 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
-Mühsamstr.: Baustelle abfahren, genaue Position sowie Penalty abschätzen	?::inwork 13559,12779 13506,12752
+# REMOVED (in handicap_s-orig aufgenommen) --- Mühsamstr.: Baustelle abfahren, genaue Position sowie Penalty abschätzen	?::inwork 13559,12779 13506,12752
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5506
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036111279461/111279461/00069067/67-Anlagen/02/vzb0592_IV-Benenng_Privatstrasse.pdf
@@ -361,7 +361,7 @@ Am Wuhlebogen: wann wird die Straße fertiggestellt? Qualität?	?::projected 21671
 Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
 # 
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
-#: last_checked: 2013-12-03
+#: last_checked: 2013-12-09
 #: priority: #A
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung in Bau	?::inwork; 13588,11490 13565,11492 13473,11456
 # 
@@ -471,14 +471,14 @@ Am Palais Lichtenau: wo genau liegt die Straße? Qualität?	? -12436,-364 -12436,-
 # die früher geplante Straßennamen wurden im Amtsblatt 9/2013 wieder zurückgezogen ("ersatzlos gestrichen")
 #: XXX neu geplante Namen, fehlen in Potsdam.coords.data:
 #   Opolestr. (Planstr. 1+2)
-#   Luzernstr. (Planstr. 3)
+#   Luzernstr. (Planstr. 3) PLZ=14469 (in DPAG-Mitteilungsblatt 12/2013)
 #: XXX auch: Verkleinerung des Buga-Geländes
 #: XXX auch prüfen: Verkehrsberuhigung
 früher geplant Hans-Kölle-Weg: Straßenname? Qualität?	? -13632,1388 -13766,1469
 früher geplant Rudolf-Kierski-Weg: Straßenname? Qualität?	? -13612,1425 -13745,1504
 früher geplant Georg-Potente-Weg: Straßenname? Qualität?	? -13586,1540 -13701,1579
 früher geplant Ferdinand-Jühlke-Weg: Straßenname? Qualität?	? -13590,1649 -13671,1665
-Fritz-Encke-Str.: wird die wssergebundene Decke durch Asphalt ersetzt werden?	? -13766,1402 -13655,1339
+Fritz-Encke-Str.: wird die wassergebundene Decke durch Asphalt ersetzt werden?	? -13766,1402 -13655,1339
 Erich-Mendelsohn-Allee: Verlängerung?	? -13695,1276 -13655,1339 -13632,1388 -13612,1425 -13593,1469 -13586,1540 -13586,1594 -13590,1649 -13600,1777 -13645,1807 -13682,1830 -13739,1855 -13784,1874 -13867,1901
 Gustav-Meyer-Str.: Verlängerung?	? -13593,1469 -13731,1525 -13779,1544
 Nietnerstr.: Verlängerung?	? -13586,1594 -13682,1614 -13748,1636
@@ -985,7 +985,7 @@ Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18928,37
 Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18771,3871 18701,3806 18520,3812 18229,4127 18392,4279
 # REMOVED --- #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/ --- #: by: (URL existiert nicht mehr) http://www.potsdam.de/cms/beitrag/10058808/757395/ --- #: XXX wo wird die Verbindung genau entlanggeführt? --- Neuer Garten (Potsdam): neue Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12263,-403 -12262,-362 -12328,-212 -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
 # 
-#: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend
+#: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend, PLZ=14467, Eintrag in Potsdam.coords.data fehlt
 #: XXX siehe auch Eintrag in landstrassen-orig, eventuell wird sich die Humboldtstr. auf der anderen Seite des Schlosses befinden?
 Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
 # 
@@ -1293,32 +1293,48 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen angelegt	? 15726,23475 15637,23251
 #: XXX Benennung von 20 Privatwegen in der Anlage Gravenstein: genaue Lage der Wege? Qualität? Beleuchtet? vvv
 #: last_checked: 2013-08-27 vvv
 #: next_check: 2014-03-27 vvv
+#: XXX oldname: Asternweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren vvv
 Landapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 12826,21779 12940,21738
 Landapfelweg: unbefestigter Weg, Q2-, unbeleuchtet, für Autos nicht befahrbar (NN)	? 12940,21738 12994,21719
+#: XXX ^^^
 # Bananenapfelweg existiert schon als Geometrie
+#: XXX oldname: Am Graben (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Weinapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 12940,21738 12963,21835 12968,21848 12996,21953 13050,21994 13060,22043 13075,22130 13091,22220 13115,22311
 Weinapfelweg: wird dieser Abschnitt auch unbenannt?	? 13115,22311 13122,22336 13139,22401
 Weinapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13139,22401 13162,22480 13180,22539 13202,22605 13221,22667
 Weinapfelweg: Asphalt mit Schäden, Q1-, unbeleuchtet	? 13221,22667 13219,22689 13200,22766 13183,22817 13156,22889
+#: XXX oldname: Blumenweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Kornapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 12963,21835 12837,21876
+#: XXX oldname: Kirchweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Eiserapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 12968,21848 12863,21995
+#: XXX oldname: Dahlienweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Paradiesapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 12996,21953 12863,21995 12843,22010
+#: XXX oldname: Erdbeerweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Petersapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13060,22043 12846,22070
+#: XXX oldname: Fliederweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Pfaffenapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 13075,22130 12849,22161
+#: XXX oldname: Gladiolenweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Mönchsapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13091,22220 12852,22250
+#: XXX oldname: Jasminweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Nelkenapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13122,22336 12853,22368
 # Klarapfelweg: siehe strassen-orig
 Edelapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 13162,22480 12946,22509 12938,22513
+#: XXX oldname: Lilienweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Kantapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 13180,22539 13021,22589
 Kantapfelweg: unbefestigter Weg, Q2-, unbeleuchtet; Sackgasse?	? 13021,22589 12968,22620
 # Prinzenapfelweg: siehe strassen-orig
+#: XXX oldname: Nelkenweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren vvv
 Rosenapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 13219,22689 13127,22716
 Rosenapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13127,22716 12917,22829
+#: XXX ^^^
+#: XXX oldname: Rosenweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
 Silberapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13200,22766 13160,22776 13006,22858
 Glasapfelweg: Qualität?	? 12883,22615 12820,22518 12825,22486
 # Herrgottsapfelweg: siehe strassen-orig
+#: XXX oldname: Petunienweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren vvv
 Jubiläumsapfelweg: unbefestigter Weg, Q2, unbeleuchtet, für Autos nicht befahrbar	? 13303,22732 13244,22753
 Jubiläumsapfelweg: unbefestigter Weg, Q2, unbeleuchtet	? 13244,22753 13273,22857
+#: XXX ^^^
 #: XXX Sackgasse am Ende
 Am Brendegraben: Schotterstraße, Q2+, unbeleuchtet	? 13283,22668 13303,22732 13312,22765 13292,22838 13273,22857 13231,22880
 Am Brendegraben: Asphalt, Q0, unbeleuchtet	? 13231,22880 13203,22892 13149,23024 13194,23100 13043,23212 13121,23311 13012,23424
@@ -1696,27 +1712,28 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -13094,-1158 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern)
-#: XXX Freesienweg (beide Amtsblätter) oder Fresienweg (BA)? Wikipedia meint "Freesien"
-#: XXX fehlt bei Berlin.coords.data
+#: XXX Freesienweg (beide Amtsblätter, DPAG-Mitteilungsblatt 12/2013) oder Fresienweg (BA)? Wikipedia meint "Freesien"
+#: XXX fehlt bei Berlin.coords.data, PLZ=10365
 #: last_checked: 2013-10-29 (Bauarbeiten in Gange, keine Straße zu sehen)
 #: next_check: 2014-04-15
-Freesienweg: geplante Straße, wo wird sie genau liegen? Wie wird der Straßenname genau geschrieben? Qualität?	?::projected 16002,12640 16004,12750
+Freesienweg: geplante Straße, wo wird sie genau liegen? Qualität?	?::projected 16002,12640 16004,12750
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5489
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Hausnummern)
+#: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
 #: last_checked: 2013-10-29 vvv
 #: next_check: 2014-03-29 vvv
-Alzeyweg: genaue Lage? Qualität?	? 17376,12422 17366,12357 17365,12301
+Alzeyweg: genaue Lage? Qualität? PLZ=10365	? 17376,12422 17366,12357 17365,12301
 #: XXX Eintrag in str_cont_ausnahme fehlt
-Nibelungenring: genaue Lage? Qualität?	? 17474,12344 17484,12405 17432,12413 17376,12422 17337,12428
+Nibelungenring: genaue Lage? Qualität? PLZ=10365	? 17474,12344 17484,12405 17432,12413 17376,12422 17337,12428
 #: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse
-Giselhersteig: genaue Lage? Qualität?	? 17359,12451 17437,12443 17536,12425
-Giselhersteig: genaue Lage? Qualität?	? 17432,12413 17437,12443
+Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17359,12451 17437,12443 17536,12425
+Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17432,12413 17437,12443
 #: XXX Sackgasse
-Hadburgpfad: genaue Lage? Qualität?	? 17484,12405 17531,12398
+Hadburgpfad: genaue Lage? Qualität? PLZ=10365	? 17484,12405 17531,12398
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1767,6 +1784,7 @@ KGA Am Rollberg und Anlage Schönwald: Benennung von 30 Privatwegen	? 9356,21363 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013 (Berichtigung der Lage -> westlich der Waßmannsdorfer Chaussee)
 #: note: Privatstraße
+#: XXX PLZ=12355, fehlt in Berlin.coords.data
 Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
 # 
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
@@ -3485,9 +3503,11 @@ Borretschweg: (früher Asternweg) Qualität?	? 24344,6117 24300,6142 24275,6156
 #: XXX wird diese Verbindung auch einen Straßennamen bekommen?
 zum Wiesenweg: unbefestigter Straße, etwas sandig	? 24508,6043 24470,6071 24460,6109
 #: XXX Wegführung nicht ganz klar vvv
+#: XXX teilweise früher auch Asternweg, laut DPAG-Mitteilungsblatt 12/2013, teilweise Wiesenweg vvv
 Spitzwegerichweg: (früher Wiesenweg) - unbefestigter Weg, Q2, unbeleuchtet	? 24344,6117 24388,6098 24417,6082
 Spitzwegerichweg: (früher Wiesenweg) - Gras, Q3+, für Autos nicht passierbar, unbeleuchtet	? 24417,6082 24442,6117 24460,6109
 Spitzwegerichweg: (früher Wiesenweg) unbefestigt, teilweise etwas sandig, Q2, unbeleuchtet	? 24460,6109 24528,6177 24623,6251 24773,6329 24910,6388 25113,6452 25187,6549
+#: XXX ^^^
 #: XXX ^^^
 Petersilienweg: (früher Feldweg) Qualität? Wo befindet sich der Weg?	? 24388,6098 24444,6165 24515,6201 24562,6221
 Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304

@@ -2254,7 +2254,7 @@ Hosemannstr. (Prenzlauer Berg)	NH 12421,15278 12466,15359 12556,15518 12642,1566
 #: XXX wird hier eine Einbahnstraße eingerichtet?
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3355&options=4 (Antrag zur Einbahnstraße; Zwischenbericht)
 #: last_checked: 2013-08-14
-#: check_frequency: 120d
+#: next_check: 2014-03-14
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]	N 12948,15771 12762,15882
 Naugarder Str.	N 12737,15154 12693,15225 12615,15461 12624,15481
 Malchower Chaussee	HH 14828,17856 15181,18137 15569,18492 15600,18551 15611,18603
@@ -3917,6 +3917,7 @@ Straße 166	N 12843,22010 12757,22021 12732,22024 12666,22036 12632,22043 12603,2
 Straße 74 (Französisch Buchholz)	N 12592,22427 12700,22451 12821,22437 12855,22431
 #: XXX wird in Klarapfelweg umbenannt, siehe andere Straßen in der Anlage Gravenstein
 #: XXX auch Privatstraße, Straße 74 als oldname aufführen
+#: XXX laut DPAG-Mitteilungsblatt 12/2013 früherer Name "Tulpenweg" --- evtl. ignore_oldname_file=yes verwenden?
 #: last_checked: 2013-08-27
 #: next_check: 2014-03-27
 Straße 74 (Französisch Buchholz)	N 12855,22431 13139,22401
@@ -3938,10 +3939,10 @@ Straße 77a	N 12848,22776 12982,22703
 #: last_checked: 2013-08-27 vvv
 #: next_check: 2014-03-27 vvv
 #: XXX wird zu Prinzenapfelweg umbenannt
-#: XXX Anlage Gravenstein; oldname XXX
+#: XXX Anlage Gravenstein; oldname + ignore_oldname_file=yes XXX
 (Margueritenweg)	N 12982,22703 13088,22646 13202,22605
 #: XXX wird zu Herrgottsapfelweg umbenannt
-#: XXX Anlage Gravenstein; oldname XXX
+#: XXX Anlage Gravenstein; oldname, hier _ohne_ ignore_oldname_file XXX
 Karower Weg	N 12821,22437 12825,22486 12938,22513 12942,22521 13021,22589 13088,22646 13127,22716 13160,22776 13183,22817
 #: XXX wird zu Edelapfelweg umbenannt, siehe auch das andere Teilstück
 #: XXX Anlage Gravenstein; oldname XXX
@@ -4208,6 +4209,7 @@ Frank-L.-Howley-Weg	N 2345,1283 2233,1528
 #: next_check: 2014-07-01
 (Verlängerung Frank-L.-Howley-Weg)	N 2408,1144 2352,1267
 #: XXX: vielleicht wird das irgendwann der Floyd-L.-Parks-Weg - Floyd-L.-Parks-Weg|Lichterfelde|14167|2408,1144
+#: XXX laut DPAG-Mitteilungsblatt 12/2013 ist der Name "Floyd-L.-Parks-Weg" "entfallen"
 #: next_check: 2014-07-01
 (William-H.-Tunner-Str. - Harry-S.-Truman-Allee)	N 2336,1111 2408,1144 2504,1186
 Hochbaumstr.	N 1750,2636 1772,2602 1812,2594 1927,2570 2026,2542
@@ -4379,6 +4381,7 @@ Waldsängerpfad	N -2638,3281 -2745,3182 -2890,3135
 Rolandstr. (Nikolassee)	N -3032,3166 -3023,2965
 Kirchblick	N -1981,3353 -1972,3418 -2014,3564
 Salzachstr.	N -2103,3536 -2014,3564 -1940,3620 -1882,3643 -1759,3634 -1695,3614 -1637,3596 -1593,3507 -1495,3444 -1360,3314
+#: note: laut DPAG-Mitteilungsblatt 12/2013 "entfällt" der Straßenname
 Slatdorpweg	NN -1637,3596 -1495,3509 -1478,3498 -1460,3487 -1144,3276
 (Breisgauer Str. - Parkplatz Einkaufszentrum)	N -2295,3523 -2195,3564 -2133,3591
 (Parkplatz Einkaufszentrum)	N -2164,3488 -2173,3513 -2195,3564
@@ -4464,8 +4467,10 @@ Hüttenweg (Grunewald, Dahlem)	N 1585,5136 1964,5070
 Hüttenweg (Grunewald, Dahlem)	NN 1964,5070 2075,5075 2174,5081 2211,5120
 Hüttenweg (Grunewald, Dahlem)	NN 2211,5120 2232,5118 2279,5112 2313,5111
 Auerbachtunnel	N 425,8766 490,8716
+#: note: laut DPAG-Mitteilungsblatt 12/2013 ist der Straßenname "entfallen" vvv
 Pappelplatz (Grunewald)	N 425,8766 297,8894
 Pappelplatz (Grunewald)	NN 297,8894 197,8973 30,9105
+#: note ^^^
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2013 (Umbenennung)
 #: oldname: -20130408: Auerbacher Str.
 Auerbachstr.	N 490,8716 634,8852 731,8872 912,8895
@@ -7098,7 +7103,9 @@ Ritterfelddamm [Nebenfahrbahn]	N -8598,7018 -8658,7157 -8742,7350 -8738,7365
 Wilhelmine-Reichard-Weg	NN -8195,6459 -8068,6261 -8044,6251 -7999,6258
 (Am Donnerberg - Wilhelmine-Reichard-Weg)	NN -8196,6504 -8195,6459
 (Zufahrt Luftwaffenmuseum)	N -7915,7063 -7668,7117
+#: note: früher wohl "August-Parseval-Str." (laut DPAG-Mitteilungsblatt 12/2013)
 Sparnecker Weg	N -8125,6184 -7999,6258
+#: note: am Kladower Damm 184 existierte laut DPAG-Mitteilungsblatt 12/2013 die Adresse "Hans-Grade-Ring"
 Kladower Damm	H -7170,4962 -7144,4981 -7120,5076 -7082,5144 -7009,5211 -6982,5237 -6734,5470 -6666,5535 -6559,5637 -6480,5713 -6420,5771 -6170,6016 -5877,6308 -5758,6469 -5698,6551 -5454,6896 -5279,7113 -5170,7256 -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4839,7791 -4578,8336
 Kladower Damm	N -7144,4981 -7175,5031 -7160,5090
 Dechtower Steig	N -7254,5164 -7279,5120
@@ -7254,9 +7261,11 @@ Teufelsseestr.	N 438,11236 454,11159
 Lyckallee	N 368,11051 251,11039 37,11014 -57,11006 -233,10989 -333,10976 -434,10964 -532,10994 -640,10997
 Kranzallee	N -593,11119 -597,11050 -640,10997 -691,10954 -760,10921 -865,10906 -909,10899 -929,10897 -1028,10889 -1167,10873 -1318,10854 -1501,10833
 Stallupöner Allee	N -909,10899 -976,10798 -1305,10759 -1504,10736
+#: note: laut DPAG-Mitteilungsblatt 12/2013 ist der Straßenname "entfallen" vvv
 Neuer Schildhornweg	NN -1047,9123 -942,9251 -756,9382 -426,9473
 Neuer Schildhornweg	N -426,9473 -249,9479 73,9438
 Neuer Schildhornweg	NN 73,9438 321,9346 383,9305 676,9104
+#: note ^^^
 Verbindungschaussee	N -471,9647 -426,9473
 Verbindungschaussee	NN -426,9473 -360,9193 -310,8989 -345,8899 -1112,7891
 Teltower Weg	NN -903,6923 -1020,7446 -1112,7891 -1317,8836 -1336,9001 -1435,9168
@@ -7555,6 +7564,7 @@ Conradstr. (Wannsee)	N -5804,1163 -5742,1142
 Zum Heckeshorn	H -6025,1999 -6021,2068 -5945,2381 -5749,2701 -5722,2714
 Am Großen Wannsee	H -5922,2793 -5917,2865 -5881,2935 -5842,2926 -5801,2860 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Kaiserstr. (Wannsee)	N -5675,1429 -5901,1562
+#: note: laut DPAG-Mitteilungsblatt "entfällt" der Straßenname, anscheinend gibt es hier keine Adressen
 Seglerweg	N -5885,1791 -5961,1767
 Colomierstr.	N -5719,2323 -5577,2242
 Koblanckstr.	N -5893,1969 -6021,2068
@@ -8079,6 +8089,8 @@ Ferdinand-Buisson-Str.	N 12337,20954 12459,21010 12562,21055 12629,21083 12762,2
 #: XXX sobald der Straßenname auf Schildern existiert, in Berlin.coords.data eintragen, Klammern entfernen etc.
 #: last_checked: 2013-08-27
 #: next_check: 2014-03-27
+#: oldname: -2013: Hyazinthenweg
+#: ignore_oldname_file: yes
 (Bananenapfelweg)	N 12994,21719 13008,21783 13050,21994
 #: note ^^^
 Straße 55	N 12837,21229 12696,21342
@@ -10246,6 +10258,7 @@ Giesebrechtstr.	N 4157,10418 4153,10453 4030,10575 4017,10585 3997,10607 3912,10
 Straße 264	N -4841,8235 -5121,8283 -5230,8301
 Annenweg	N -5136,8147 -5121,8283
 Annenweg	NN -5121,8283 -5118,8290 -5094,8391 -5093,8398
+#: note: laut DPAG-Mitteilungsblatt 12/2013 "entfällt" der Straßenname
 Triftweg	N -5635,9464 -5645,9443 -5657,8897 -5640,8560 -5643,8268 -5658,8184
 Groß-Glienicker Weg	N -4578,8336 -4682,8292 -4841,8235 -5136,8147 -5240,8122 -5658,8184 -6460,8223 -6700,8193 -6869,8150 -6986,8074 -7070,7984 -7330,7878 -7340,7873 -7418,7842 -7460,7826
 Fliegerhorstsiedlung	N -7330,7878 -7305,7838 -7266,7775 -7168,7825 -7099,7851 -7096,7881 -7114,7900 -7146,7905 -7305,7838
@@ -11635,8 +11648,10 @@ Imchenallee	N -6811,4893 -6495,5128 -6474,5144
 Im Eulengrund	N -5349,6836 -5217,7022 -5202,7045 -5163,7090 -5032,7269 -5014,7295
 Breitehornweg	N -5454,6896 -5349,6836 -5123,6701 -5058,6656 -4935,6587 -4838,6591
 (Breitehornweg - Ernst-Liesegang-Ufer)	NN -5058,6656 -5020,6592 -4876,6523 -4774,6514
+#: note: Straßenname "entfällt" im DPAG-Mitteilungsblatt 12/2013 vvv
 Ernst-Liesegang-Ufer	NN -6474,5144 -6361,5222 -6277,5180 -6037,5371 -5918,5610 -5853,5674 -5828,5739 -5688,5837 -5390,5941
 Ernst-Liesegang-Ufer	N -5390,5941 -5264,6001 -5037,6085 -4835,6220 -4774,6514
+#: note ^^^
 (Havel-Ufer Hohengatow)	NN -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4490,7203 -4491,7330 -4511,7503 -4521,7578 -4518,7664
 (Kolonie Havelmathen)	NN -4518,7664 -4520,7748 -4755,7736 -4839,7791
 #: note: Schranke Richtung Dr. Kleusberg-Promenade, aber anscheinend kein Problem für Radfahrer
@@ -13178,6 +13193,8 @@ Paul-Krause-Str.	N -4090,2370 -3983,2280
 (Paul-Krause-Str. - Borussenstr.)	NN -3983,2280 -3966,2291 -3972,2265 -3955,2283 -3938,2287
 Badeweg	N -4188,2674 -4292,2762
 Badeweg	NN -4292,2762 -4471,2917
+#: add_fragezeichen: Ist der Weg ausgeschildert?
+#: note: laut DPAG-Mitteilungsblatt 12/2013 "entfällt" der Straßenname
 Rosemeyerweg	NN -3758,2678 -3852,2730 -3956,2787 -4001,2858
 Bornemannstr.	N 8187,15965 8014,16089
 Holsteinische Str. (Wilmersdorf)	N 5069,9735 5066,9645 5065,9418 5053,8979
@@ -13644,6 +13661,7 @@ Hohenzollernstr. (Zehlendorf)	N 21,2728 53,2708 226,2752 322,2772 475,2811 492,2
 Hohenzollernstr. (Zehlendorf)	N 492,2813 522,2802 537,2772
 Mittelstr. (Zehlendorf)	N 104,2802 50,3031
 Düppelstr. (Zehlendorf)	N 34,2550 45,2592 45,2644 39,2669 21,2728 12,2752 -49,3003
+#: note: Straßenname "entfällt" im DPAG-Mitteilungsblatt 12/2013
 Fischer-Dieskau-Weg	NN -151,2975 -81,2699
 Propst-Süßmilch-Weg	NN 856,3188 709,3229 649,3221
 (Kolonie Blaschkotal)	NN 13158,5490 13173,5379 13112,5253
@@ -14178,6 +14196,7 @@ Ribeckweg	N 656,961 587,1230
 Nieritzweg	N 1207,1051 1088,1031 1075,1029 958,1009 932,1005 848,990 786,979 760,975 725,970 656,961 538,944 463,933 230,899
 Pfarrlandstr.	N 887,618 918,651 848,990
 #: note: gemeinsamer Rad- und Gehweg, beleuchtet
+#: note: laut DPAG-Mitteilungsblatt 12/2013 "entfällt" der Straßenname
 Werner-Sylten-Weg	NN 1016,737 1022,738 1129,763 1267,789
 Am Birkenknick	N 1248,871 1377,897 1416,906
 Rendtorffstr.	N 1304,537 1217,527 1212,559 1046,537
@@ -14787,6 +14806,8 @@ Steinstr. (Wannsee)	N -7996,-2293 -8060,-2228
 Dalandweg	N 5557,4294 5396,4229 5266,4302 5233,4249 5128,4310
 Klopstockstr. (Zehlendorf)	N -1710,3676 -1683,3723 -1629,3761 -1509,3740 -1488,3750 -1422,3785 -1394,3798 -1277,3854 -1174,4029 -1096,4267
 Schillerstr. (Zehlendorf)	N -1013,3804 -1086,3907 -1174,4029 -1230,4078 -1323,4111
+#: add_fragezeichen: ist der Weg ausgeschildert?
+#: XXX laut DPAG-Mitteilungsblatt 12/2013 ist eine Adresse zur Argentinische Allee gewandert
 Erdmann-Graeser-Weg	NN -833,3619 -935,3706 -961,3737 -1013,3804
 Grillparzerstr.	N 3891,6295 4040,6289 4124,6288 4173,6284 4221,6283 4298,6239
 Flemmingstr. (Steglitz)	N 4298,6239 4355,6207 4430,6165 4549,6106 4616,6071 4658,6049
@@ -15760,11 +15781,14 @@ Pillkaller Allee	N 16,11190 14,11215 22,11362 45,11482
 (Heilsberger Allee - Heerstr.)	NN -391,11322 -406,11141
 (Zufahrt Corbusier-Haus)	N -684,11464 -568,11483 -514,11415
 Coubertinplatz	N -722,11598 -750,11740
+#: note: laut DPAG-Mitteilungsblatt 12/2013 "entfällt" der Straßenname vvv
 Südtorweg	NN -503,11782 -750,11740 -794,11732
 Südtorweg	N -794,11732 -940,11708
+#: note ^^^
 Friedrich-Friesen-Allee	N -1398,11803 -1395,11854 -1379,11963 -1327,12066 -1298,12095
 Tharauer Allee	N -1515,11278 -1679,11336 -1749,11403 -1818,11466 -1885,11392
 (Scottweg - Tharauer Allee)	NN -1403,11279 -1505,11307
+#: note: Straßenname "entfällt" im DPAG-Mitteilungsblatt 12/2013
 Gutsmuthsweg	NN -505,11882 -503,11782 -496,11720
 Badenallee	N 943,11302 743,11462 550,11607 454,11670
 Württembergallee	N 1051,11311 1051,11368 906,11517 853,11573 797,11630 640,11676 560,11695

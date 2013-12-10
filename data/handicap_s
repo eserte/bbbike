@@ -3,7 +3,8 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Marchlewskistr.: Bauarbeiten, Einbahnstraße	q4::inwork; 13473,11456 13366,11651
+Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
+Marchlewskistr.: Bauarbeiten, Fahrbahn möglicherweise gesperrt	q2::inwork; 13473,11456 13366,11651
 Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 Chausseestr.: direkte Zufahrt südlich der Invalidenstraße nicht möglich, umständliche Wegführung	q4::inwork 9042,13707 8935,13844
 Chausseestr.: Einbahnstraße zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwork; 8879,13913 8935,13844
@@ -1020,7 +1021,7 @@ Rampe	q2 10503,19371 10489,19406
 Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11051,23620 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 (Tomatenweg - Straße 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloßpark Schönhausen): Fußgänger	q1 10600,19225 10638,19149
-Alex-Wedding-Str.: Fahrbahn gesperrt, Ausweichen auf Gehweg	q4 11085,13239 11045,13183
+Alex-Wedding-Str.: Fahrbahn durch Ketten gesperrt, Ausweichen auf Gehweg	q4 11085,13239 11045,13183
 (Braunlager Str. - Tempelhofer Weg): Fußgänger	q2 12062,5779 12017,5747
 Am Vierling: Fußgänger	q1 -472,4185 -444,4126
 Mutter-Mochow-Weg: Fußgänger	q1 -1849,2043 -1802,1919
