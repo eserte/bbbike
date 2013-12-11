@@ -31,10 +31,8 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
-Neue Grünstr.: Bauarbeiten, Fahrbahn könnte gesperrt sein	q3::inwork 10389,11390 10446,11470
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
-Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
 Ziegelstr.: Baustelle, Einbahnstraße	q3::inwork; 9269,13060 9413,13071
 Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5258,11285 5352,11502
@@ -43,8 +41,6 @@ Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12792,8190
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
-Parkaue: Bauarbeiten, ggfs. auf Gehweg ausweichen	q4::inwork 15399,12444 15457,12449 15535,12420
-Am Stadtpark: Bauarbeiten, ggfs. auf Gehweg ausweichen	q3::inwork 15457,12449 15454,12519
 Kriemhildstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 17337,12428 17320,12308
 Breslauer Platz: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 5810,7337 5897,7337
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
@@ -2215,6 +2211,7 @@ Zeltinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 2
 Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
+Am Zirkus: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 9118,13070 9137,13032 9167,13046 9239,12923
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5681,10696 5822,10609
 Westendallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 461,11455 425,11455 395,11486 329,11696 323,11801
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590

@@ -814,6 +814,7 @@ userdel	2::temp 10008,12274 10058,12290
 userdel	2::temp 10091,12232 10058,12290 9996,12401
 # REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9961,12273 9875,12257
 userdel	q4::temp 9994,12368 9996,12401 9984,12426
+	q2::temp 9972,12184 9961,12273 9943,12364 9994,12368
 ',
          'periodic' => 1,
          'until' => 1388098799,
@@ -827,7 +828,7 @@ userdel	q4::temp 9994,12368 9996,12401 9984,12426
                               11
                             ]
                           ],
-         'text' => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, vom 25.11. bis 26.12.2013',
+         'text' => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, teilweise reger Fußgängerverkehr, vom 25.11. bis 26.12.2013',
          'id' => 790,
          'type' => 'gesperrt'
        },
@@ -3585,6 +3586,19 @@ userdel	1::temp -13556,-1182 -13643,-1220
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_020924',
+         'until' => 1387551600,
+         'text' => 'Neheimer Str.: Baustelle, Fahrtbahn Richtung Borsigdamm gesperrt, bis zum 20. Dezember 2013 ',
+         'from' => 1386667020,
+         'id' => 2531,
+         'data' => 'userdel	q4::inwork; 1229,18750 1328,18878 1447,18933 1528,18971
+',
+         'type' => 'handicap'
        }
      
 );

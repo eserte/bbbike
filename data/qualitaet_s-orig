@@ -1648,7 +1648,7 @@ Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Grünstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
 Parkaue: Asphalt	Q0 15535,12420 15457,12449 15399,12444
 #: XXX wird hier die Straße verbessert werden?
-#: last_checked: 2013-11-26
+#: last_checked: 2013-12-11
 #: next_check: 2014-03-01
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524 (Beginn der Bauarbeiten: Frühjahr 2014)
 Deutschmeisterstr.: mäßiger Asphalt	Q1 15443,12222 15350,12270 15320,12375
@@ -1814,7 +1814,7 @@ Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 960
 Grüntaler Str. - Esplanade: Asphalt	Q0 9795,16936 9846,16981 9880,16994 9980,16973 10013,16972
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 10997,16280 11295,16199 11404,16140 11550,16068
-Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13521,13781 13635,13605
+Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
 Hausburgstr.: Asphalt	Q0 13635,13605 13706,13460 13742,13376
 Hausburgstr.: Kopfsteinpflaster	Q2 13742,13376 13835,13149 13895,13017
 Konitzer Str.: Kopfsteinpflaster	Q2 14099,11505 14087,11467
@@ -22975,7 +22975,9 @@ Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707
 Claire-Waldoff-Str.: Asphalt	Q0 9246,13235 9132,13187
 Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
 Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
-Am Zirkus: neuer Asphalt	Q0 9137,13032 9167,13046 9239,12923
+#: XXX danach wohl Q0
+#: last_checked: 2013-12-11
+Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938
 (südliches Spreeufer - Gustav-Heinemann-Brücke): wassergebundene Decke	Q1 8032,12889 8053,12871 8116,12938

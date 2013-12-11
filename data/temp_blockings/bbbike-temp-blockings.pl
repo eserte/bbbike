@@ -6751,7 +6751,7 @@ EOF
        until => $isodate2epoch->("2013-12-26 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11]], 
-       text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, vom 25.11. bis 26.12.2013',
+       text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, teilweise reger Fußgängerverkehr, vom 25.11. bis 26.12.2013',
        type  => 'gesperrt',
        source_id => 'http://www.berliner-weihnacht.de/?y=2013',
        data  => <<EOF,
@@ -6763,6 +6763,7 @@ userdel	2::temp 10008,12274 10058,12290
 userdel	2::temp 10091,12232 10058,12290 9996,12401
 # REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9961,12273 9875,12257
 userdel	q4::temp 9994,12368 9996,12401 9984,12426
+	q2::temp 9972,12184 9961,12273 9943,12364 9994,12368
 EOF
      },
      { from  => 1163718000, # 2006-11-17 00:00
@@ -22346,6 +22347,15 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131206.1025.392499.html
 userdel	q4::inwork; 9984,12426 9934,12420 9852,12409
+EOF
+     },
+     { from  => 1386667020, # 2013-12-10 10:17
+       until => 1387551600, # 2013-12-20 16:00
+       text  => 'Neheimer Str.: Baustelle, Fahrtbahn Richtung Borsigdamm gesperrt, bis zum 20. Dezember 2013 ',
+       type  => 'handicap',
+       source_id => 'IM_020924',
+       data  => <<EOF,
+userdel	q4::inwork; 1229,18750 1328,18878 1447,18933 1528,18971
 EOF
      },
     );

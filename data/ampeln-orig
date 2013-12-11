@@ -1810,6 +1810,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: off: weekend
 	X 1053,13790
 #: XXX_prog Ampel ist nach Osten versetzt, aber hier eingetragen, damit auch das Nord-Süd-Routing diese Ampel erfährt
+#: XXX_prog in Nord->Süd-Richtung gilt eigentlich nur die Ampel über die Straßenbahntrasse
 	F 10463,13747
 	F 8553,11630
 	X 8571,11846
@@ -2425,7 +2426,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: check_frequency: 90d
 	F::inwork 9984,12426
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2013-10-22 vvv
+#: last_checked: 2013-12-11 vvv
 #: next_check: 2013-12-31 vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2443,6 +2444,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
+#
+#: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
+#: last_checked: 2013-12-11
+	F::inwork 9812,12145
 # 
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
 #: last_checked: 2013-12-08 vvv
