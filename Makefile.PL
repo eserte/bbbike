@@ -534,7 +534,7 @@ EOF
     if (-r "t/Makefile") {
 	if ($is_travis) { # XXX actually, should check for no-cgi setup
 	    $out .= <<'EOF';
-	cd t && BBBIKE_TEST_FOR_LIVE=1 $(MAKE) test-no-cgi PERL=$(FULLPERL)
+	cd t && BBBIKE_TEST_FOR_LIVE=1 $(MAKE) test PERL=$(FULLPERL)
 EOF
 	} else {
 	    $out .= <<'EOF';

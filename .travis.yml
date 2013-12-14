@@ -19,6 +19,11 @@ before_install:
  - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05" || true'
 # Perl 5.8.9's File::Path has a version with underscores, and this is causing warnings and failures in the test suite
  - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest File::Path || true'
+# Additional psgi dependencies
+ - cpanm --quiet --notest Plack CGI::Emulate::PSGI CGI::Compile Starman Plack::Middleware::Rewrite
+ - (cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
+ - (cd cgi && make symlinks fix-permissions fixin-shebangs)
+ - sudo -E `which plackup` --server=Starman --env=test --port=80 cgi/bbbike.psgi &
  - Xvfb :123 &
  - (sleep 10; env DISPLAY=:123 twm) &
 env:
