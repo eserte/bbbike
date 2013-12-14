@@ -19,6 +19,11 @@ BEGIN {
     }
 }
 
+if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
+    plan skip_all => 'Skipping mapserver-related tests';
+    exit;
+}
+
 use FindBin;
 use lib ("$FindBin::RealBin",
 	 "$FindBin::RealBin/..",
