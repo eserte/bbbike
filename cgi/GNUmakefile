@@ -1,7 +1,8 @@
 .CURDIR?=	${CURDIR}
 CGI_SCRIPTS=		bbbike.cgi bbbike.en.cgi bbbikegooglemap.cgi bbbikeleaflet.cgi bbbikeleaflet.en.cgi \
 			mapserver_address.cgi mapserver_comment.cgi mapserver_setcoord.cgi \
-			wapbbbike.cgi bbbiketile.cgi bbbike-data.cgi bbbike-snapshot.cgi
+			wapbbbike.cgi bbbiketile.cgi bbbike-data.cgi bbbike-snapshot.cgi \
+			upload-track.cgi
 DEVEL_CGI_SCRIPTS=	bbbike2.cgi bbbike2.en.cgi bbbikegooglemap2.cgi bbbike-test.cgi bbbike-test.en.cgi bbbike-osm.cgi
 ROOT_URL?=		/bbbike
 # Set this to "cgi" or "ModPerl::Registry" or "Apache::Registry"
@@ -24,6 +25,7 @@ symlinks:
 	[ -e bbbike-test.cgi ] || ln -s bbbike.cgi bbbike-test.cgi
 	[ -e bbbike-test.en.cgi ] || ln -s bbbike.cgi bbbike-test.en.cgi
 	[ -e bbbikeleaflet.en.cgi ] || ln -s bbbikeleaflet.cgi bbbikeleaflet.en.cgi
+	[ -e bbbikegooglemap2.cgi ] || ln -s bbbikegooglemap.cgi bbbikegooglemap2.cgi
 
 biokovo.conf:
 	$(MAKE) \
@@ -83,3 +85,4 @@ rights:
 	chmod ugo+rx *.cgi
 	chmod ugo+r *.cgi.config
 	[ ! -e ../tmp/www ] || chmod 777 ../tmp/www
+	chmod ugo-x *.psgi
