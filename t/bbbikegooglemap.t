@@ -177,6 +177,7 @@ EOF
 
 sub check_polyline {
     my($resp, $expected_points, $testname) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
     $testname = "Found exactly $expected_points points in polyline" if !$testname;
     my $content = $resp->content;
     if ($content !~ m{\Qvar path = [}g) {
@@ -194,6 +195,7 @@ sub check_polyline {
 
 sub check_points {
     my($resp, $expected_points, $testname) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
     $testname = "Found exactly $expected_points points" if !$testname;
     my $content = $resp->content;
     if ($content !~ m{\QBEGIN DATA}g) {
