@@ -19,6 +19,7 @@ my $cgidir = catpath $root, 'cgi';
 builder {
 
     enable 'Head';
+    enable "ConditionalGET";
 
     enable 'Rewrite', rules => sub {
 	if (m{^/(?:\?.*)?$}) {
