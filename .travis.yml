@@ -25,7 +25,6 @@ env:
  - DISPLAY=:123 BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1
 language: perl
 perl:
-  - "5.19"
   - "5.18"
   - "5.14"
   - "5.10"
