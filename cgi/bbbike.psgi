@@ -60,7 +60,7 @@ builder {
 	}
     }
 
-    mount "/bbbike" => Plack::App::File->new(root => $root, encoding => 'iso-8859-1');
+    $app = mount "/bbbike" => Plack::App::File->new(root => $root, encoding => 'iso-8859-1')->to_app;
 
     {
 	my $mapserv_cgibin;
