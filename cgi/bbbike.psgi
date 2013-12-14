@@ -27,9 +27,6 @@ builder {
     };
 
     enable "Plack::Middleware::Static",
-	path => sub { s!^/BBBike/!! }, root => $root, encoding => 'iso-8859-1';
-
-    enable "Plack::Middleware::Static",
 	path => sub { s!^/bbbike/(html/opensearch/)!$1! }, root => $root, encoding => 'utf-8';
 
     enable "Plack::Middleware::Static",
@@ -60,6 +57,8 @@ builder {
 	    )->to_app;
 	}
     }
+
+    mount "/bbbike" => Plack::App::File->new(root => $root, encoding => 'iso-8859-1');
 
     {
 	my $mapserv_cgibin;
