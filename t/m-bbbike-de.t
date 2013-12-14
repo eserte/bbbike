@@ -26,10 +26,12 @@ BEGIN {
     }
 }
 
+use Sys::Hostname qw(hostname);
 use LWP::UserAgent;
 
-use BBBikeTest qw(check_cgi_testing);
+use BBBikeTest qw(check_cgi_testing on_author_system);
 check_cgi_testing;
+on_author_system;
 
 plan tests => 3;
 
