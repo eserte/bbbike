@@ -5,6 +5,7 @@ use warnings;
 use FindBin;
 
 use Plack::Builder;
+use Plack::Middleware::Rewrite;
 use Plack::Middleware::Static;
 use Plack::App::WrapCGI;
 
@@ -17,12 +18,12 @@ my $cgidir = catpath $root, 'cgi';
 
 builder {
 
-    mount '/' => sub {
-	my $env = shift;
-	require Plack::Response;
-	my $res = Plack::Response->new;
-	$res->redirect("http://$env->{HTTP_HOST}/bbbike/cgi/bbbike.cgi");
-	$res->finalize;
+    enable 'Rewrite', rules => sub {
+	if (m{^/(?:\?.*)?$}) {
+	    no warnings 'uninitialized'; # $1 may be undef
+	    $_ = "/bbbike/cgi/bbbike.cgi$1";
+	    return 301;
+	}
     };
 
     enable "Plack::Middleware::Static",
