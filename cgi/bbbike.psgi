@@ -36,7 +36,7 @@ builder {
 
     my $app;
     for my $cgidef (
-		    # first is the physical file and the primary URL basename, rest is aliases
+		    # first is the main file, rest is aliases via symlinks
 		    ['bbbike.cgi', 'bbbike2.cgi'],
 		    ['bbbike.en.cgi', 'bbbike2.en.cgi'],
 		    ['bbbikegooglemap.cgi', 'bbbikegooglemap2.cgi'],
@@ -51,9 +51,8 @@ builder {
 		    ['upload-track.cgi'],
 		    ['wapbbbike.cgi'],
 		   ) {
-	my $fs_file = $cgidef->[0];
-	$fs_file = catfile($root, 'cgi', $fs_file);
 	for my $cgi (@$cgidef) {
+	    my $fs_file = catfile($root, 'cgi', $cgi);
 	    $app = mount "/bbbike/cgi/$cgi" => Plack::App::WrapCGI->new(
                 script  => $fs_file,
 	        execute => 1,
