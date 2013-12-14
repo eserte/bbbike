@@ -49,6 +49,8 @@ sub myskip ($$) {
 
 for my $f (@files) {
  SKIP: {
+	local $TODO;
+
 	skip "$f not ready for stand-alone test", $tests_per_file
 	    if $f =~ m{^ (BBBikeWeather.pm) $}x;
 
@@ -147,6 +149,13 @@ for my $f (@files) {
 	    myskip "$f needs mod_perl2", $tests_per_file
 	        if $f =~ m{^( BBBikeApacheSessionCountedHandler\.pm
 		          )$}x && !eval { require Apache2::Const; 1 };
+	} elsif (($ENV{TRAVIS}||'') eq 'true' &&
+		 $f eq 'BBBikeApacheSessionCountedHandler.pm' &&
+		 !eval { require Apache2::Const; 1 }
+		) {
+	    # XXX There should be a BBBikeApacheSessionCountedHandler
+	    # replacement for Plack
+	    $TODO = "$f needs mod_perl2, which is not installed";
 	}
 
 	my @add_opt;
