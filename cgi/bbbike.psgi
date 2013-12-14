@@ -18,6 +18,8 @@ my $cgidir = catpath $root, 'cgi';
 
 builder {
 
+    enable 'Head';
+
     enable 'Rewrite', rules => sub {
 	if (m{^/(?:\?.*)?$}) {
 	    no warnings 'uninitialized'; # $1 may be undef
