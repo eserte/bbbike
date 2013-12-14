@@ -66,7 +66,8 @@ $ua->env_proxy;
     # would escape the query string (again), leading to wrong results.
     my $uri = $resp->request->uri;
     my($new_qs) = $uri =~ m{\?(.*)};
-    is_deeply({CGI->new($new_qs)->Vars}, \%query, "Querystring unchanged");
+    is_deeply({CGI->new($new_qs)->Vars}, \%query, "Querystring unchanged")
+	or diag "Request URI is '$uri'";
 }
 
 {
