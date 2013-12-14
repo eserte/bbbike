@@ -85,3 +85,12 @@ rights:
 	chmod ugo+r *.cgi.config
 	[ ! -e ../tmp/www ] || chmod 777 ../tmp/www
 	chmod ugo-x *.psgi
+
+# Assuming all .cgi files are perl
+fixin-shebangs:
+	for i in ${CGI_SCRIPTS} ${DEVEL_CGI_SCRIPTS}; do \
+	    export PERL=`which perl`; \
+	    if [ -f $$i -a ! -L $$i ] ; then \
+		perl -pi -e 'print "#!$$ENV{PERL}\n" if $$. == 1' -- $$i; \
+	    fi \
+	done
