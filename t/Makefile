@@ -5,8 +5,9 @@
 PERL?=		perl
 # TEST_FILES must be a single argument
 TEST_FILES=	*.t
-# Guessing on cgi test scripts
-CGI_TEST_FILES=	t/server-check.t t/mapserver.t t/bbbikegooglemap.t t/wwwdata.t t/*cgi*.t
+# List created with:
+#    echo `git grep -l '^check_cgi_testing' t/*.t`
+CGI_TEST_FILES=	t/bbbikecgiapi.t t/bbbikegooglemap.t t/cgi-cookie.t t/cgi-mechanize-upload.t t/cgi-mechanize.t t/cgi-test.t t/cgi-validator.t t/cgi.t t/cgihead.t t/cgihead2.t t/m-bbbike-de.t t/mapserver-util.t t/mapserver.t t/mapserver_comment.t t/old_comments.t t/radrouten.t t/server-check.t t/wapcgi.t t/wwwdata.t
 
 test:
 	LANG=C $(PERL) -w -I.. -I../lib -MTest::Harness -e \
