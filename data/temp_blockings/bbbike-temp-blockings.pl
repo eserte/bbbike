@@ -21747,8 +21747,8 @@ userdel	2::temp 5047,10381 5076,10658
 EOF
      },
      { from  => 1376193600, # 2013-08-11 06:00
-       until => 1387555200, # 2013-12-20 17:00
-       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), 12.08.2013 06:00 Uhr bis 20.12.2013 17:00 Uhr',
+       until => $isodate2epoch->("2014-02-28 17:00:00"), # 1387555200, # 2013-12-20 17:00
+       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), 12.8.2013 06:00 Uhr bis 28.2.2014 17:00 Uhr',
        type  => 'gesperrt',
        source_id => 'IM_020145',
        data  => <<EOF,
