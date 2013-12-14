@@ -18,7 +18,7 @@ use lib (
 	 $FindBin::RealBin,
 	);
 use BBBikeVar;
-use BBBikeTest qw(check_cgi_testing);
+use BBBikeTest qw(check_cgi_testing on_author_system);
 use File::Basename;
 use Sys::Hostname qw(hostname);
 use Time::HiRes qw(time);
@@ -39,11 +39,7 @@ BEGIN {
 }
 
 check_cgi_testing;
-
-if (hostname !~ m{\.(rezic|herceg)\.de$}) {
-    plan skip_all => "Live server tests only activated on author systems";
-    exit 0;
-}
+on_author_system;
 
 use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-msdownload)$};
 
