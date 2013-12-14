@@ -24,8 +24,8 @@ BEGIN {
     }
 }
 
-if (hostname !~ m{^(biokovo|biokovo-amd64|vran)\.herceg\.de}) {
-    print "1..0 # skip works only on vran/biokovo\n";
+if (hostname !~ m{^cvrsnica\.herceg\.de}) {
+    print "1..0 # skip works only on cvrsnica\n";
     exit;
 }
 
@@ -120,21 +120,12 @@ my $ms = get_config();
 # 		      program => $ms->{MAPSERVER_PROG_RELURL},
 # 		     });
 #     $url = $ms->{MAPSERVER_PROG_URL} . "?" . $q->query_string;
-    my $host = "bbbike.hosteurope.herceg.de";
+    my $host = "bbbike.cvrsnica.herceg.de";
     $url = "http://$host/cgi-bin/bbbike.cgi?mapserver=1";
     $agent->get($url);
     ok($agent->success, "$url is ok");
 
-    my $skip_not_useable = (index($agent->content, 'Unable to access file.') > -1 &&
-			    index($agent->content, '/root/work/bbbike-webserver') > -1);
-
-    SKIP:
     {
-	if ($skip_not_useable) {
-	    diag "To fix this, do: cd $FindBin::RealBin/../projects/bbbike.de-hosteurope && make deploy-local";
-	    skip("not setup for local operation", $core_tests)
-	}
-
 	is_on_mapserver_page($agent, "...");
 
 	for my $layer (@layers) {
