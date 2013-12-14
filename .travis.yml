@@ -22,6 +22,7 @@ before_install:
 # Additional psgi dependencies
  - cpanm --quiet --notest Plack CGI::Emulate::PSGI CGI::Compile Starman Plack::Middleware::Rewrite
  - (cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
+ - (cd cgi && ln -snf bbbike2-travis.cgi.config bbbike2.cgi.config)
  - (cd cgi && make symlinks fix-permissions fixin-shebangs)
  - sudo -E `which plackup` --server=Starman --env=test --port=80 cgi/bbbike.psgi &
  - Xvfb :123 &
