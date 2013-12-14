@@ -60,6 +60,24 @@ builder {
 	    )->to_app;
 	}
     }
+
+    {
+	my $mapserv_cgibin;
+	if ($^O eq 'freebsd') { # needs graphics/mapserver to be installed
+	    $mapserv_cgibin = '/usr/local/www/cgi-bin/mapserv';
+	} elsif ($^O eq 'linux') { # on debian, needs cgi-mapserver to be installed
+	    $mapserv_cgibin = '/usr/lib/cgi-bin/mapserv';
+	}
+	if ($mapserv_cgibin) {
+	    $app = mount '/cgi-bin/mapserv' => Plack::App::WrapCGI->new(
+		script => $mapserv_cgibin,
+		execute => 1,
+	    )->to_app;
+	} else {
+	    warn "WARN: Don't know how to run mapserver cgi";
+	}
+    }
+
     $app;
 
 };
