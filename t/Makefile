@@ -6,7 +6,7 @@ PERL?=		perl
 # TEST_FILES must be a single argument
 TEST_FILES=	*.t
 # Guessing on cgi test scripts
-CGI_TEST_FILES=	t/mapserver.t t/bbbikegooglemap.t t/*cgi*.t
+CGI_TEST_FILES=	t/server-check.t t/mapserver.t t/bbbikegooglemap.t t/wwwdata.t t/*cgi*.t
 
 test:
 	LANG=C $(PERL) -w -I.. -I../lib -MTest::Harness -e \
