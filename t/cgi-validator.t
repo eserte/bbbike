@@ -23,7 +23,7 @@ use BBBikeUtil qw(is_in_path);
 check_cgi_testing;
 
 BEGIN {
-    if (($ENV{USER}||'') ne 'eserte' || do { require Sys::Hostname; Sys::Hostname::hostname() !~ m{biokovo}}) {
+    if (($ENV{USER}||'') ne 'eserte' || do { require Sys::Hostname; Sys::Hostname::hostname() !~ m{cvrsnica}}) {
 	print "1..0 # skip Should not be used everywhere...\n";
 	exit;
     }
