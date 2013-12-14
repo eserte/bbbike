@@ -21,9 +21,10 @@ BEGIN {
     }
 }
 
-use BBBikeTest qw(check_cgi_testing $cgidir);
+use BBBikeTest qw(check_cgi_testing using_bbbike_test_data $cgidir);
 
 check_cgi_testing;
+using_bbbike_test_data;
 
 plan tests => 12;
 
