@@ -306,7 +306,10 @@ for my $cgiurl (@urls) {
 	    # Hardenbergplatz]" with the same coordinate is still
 	    # there.
 	    like_html $content, qr/start2.*Zoologischer Garten.*Elefantentor/, "First alternative is Zoologischer Garten Elefantentor";
-	    like_html $content, qr/start2.*\bZoo\b/, "Second alternative is just Zoo (Hardenbergplatz)";
+	    # In perls < 5.18 the response was always "Zoo". Since
+	    # perl 5.18 and hash randomization it maybe be either one
+	    # of the two names for the coordinate 5698,11333
+	    like_html $content, qr/start2.*(\bZoo\b|Zoologischer Garten.*Eingang Hardenbergplatz)/, "Second alternative is either 'Zoo' or explicitely the entrance Hardenbergplatz";
 	} else {
 	    like_html $content, qr/Start.*Zoologischer Garten/, "Start is Zoologischer Garten";
 	    unlike_html $content, qr/\bZoo\b/, "Zoo not found (same point optimization)";
