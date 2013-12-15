@@ -37,6 +37,7 @@ use BBBikeTest qw(
 		     check_cgi_testing xmllint_string gpxlint_string kmllint_string
 		     validate_bbbikecgires_xml_string validate_bbbikecgires_json_string
 		     validate_bbbikecgires_yaml_string validate_bbbikecgires_data
+		     eq_or_diff
 		);
 
 eval { require Compress::Zlib };
@@ -288,7 +289,7 @@ for my $cgiurl (@urls) {
 	    }
 	    if ($this_test_file_cache) {
 		my ($content2, $resp2) = std_get $url, testname => "2nd fetch";
-		ok $content2 eq $content, "2nd fetch content equals ($output_as)";
+		eq_or_diff $content2, $content, "2nd fetch content equals ($output_as)";
 		is $resp2->content_type, $resp->content_type, "2nd fetch has same content-type ($output_as)";
 	    }
 	}
