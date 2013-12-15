@@ -21,7 +21,7 @@ sub decode_possible_utf8_params {
 	require Encode;
 	local $^W = 0; # version not numeric warning
 	Encode->VERSION(2.08); # "Süd" gets destroyed in older versions
-	my %new_param;
+	my @new_params;
 	for my $key ($q->param) {
 	    next if $q->upload($key);
 	    my @vals;
@@ -38,10 +38,11 @@ sub decode_possible_utf8_params {
 		}
 		push @vals, $val;
 	    }
-	    $new_param{$key} = \@vals;
+	    push @new_params, [$key, \@vals];
 	}
-	$q->delete(keys %new_param);
-	while(my($k,$v) = each %new_param) {
+	for my $new_param (@new_params) {
+	    my($k,$v) = @$new_param;
+	    $q->delete($k);
 	    $q->param($k,@$v);
 	}
     };
