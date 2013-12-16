@@ -1803,17 +1803,12 @@ Cheruskerpark: entsteht hier eine neue Wegverbindung?	?::projected 7391,8231 736
 #: next_check: 2013-10-10
 Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -15999,1387 -16046,1203 -15925,1365
 # 
-#: XXX Fahrplanwechsel am 15. Dezember 2013 (laut Tsp vom 17. Oktober 2013) vvv
-#: next_check: 2013-12-14 vvv
-#: priority: #A vvv
-#: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20131018 (Zugteilung in Schönefeld, davor zusammen mit RB14)
-RB19: Gesundbrunnen, Hauptbahnhof, Potsdamer Platz, Südkreuz, Flughafen Schönefeld, weiter wie RB14; wird nach Inbetriebnahme des BER durch den Airport-Express ersetzt	? 17035,-2287 18079,-1507 18161,-1456
-RE6: wird in der Hauptverkehrszeit bis Gesundbrunnen verlängert	? -4149,14167 -3663,14083 -3361,13966
-RB11: RE11 wird umbenannt zu RB11	? 96550,-27095 96361,-28541
-S8: wird in der Hauptverkehrszeit bis KW verlängert	? 26029,-6170 26057,-6241
-#: priority ^^^
-#: next_check ^^^
-#: XXX ^^^
+# REMOVED --- #: XXX Fahrplanwechsel am 15. Dezember 2013 (laut Tsp vom 17. Oktober 2013) vvv --- #: next_check: 2013-12-14 vvv --- #: priority: #A vvv --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20131018 (Zugteilung in Schönefeld, davor zusammen mit RB14)
+# REMOVED (aufgenommen) --- RB19: Gesundbrunnen, Hauptbahnhof, Potsdamer Platz, Südkreuz, Flughafen Schönefeld, weiter wie RB14; wird nach Inbetriebnahme des BER durch den Airport-Express ersetzt	? 17035,-2287 18079,-1507 18161,-1456
+# REMOVED (aufgenommen) --- RE6: wird in der Hauptverkehrszeit bis Gesundbrunnen verlängert	? -4149,14167 -3663,14083 -3361,13966
+# REMOVED (umbenannt) --- RB11: RE11 wird umbenannt zu RB11	? 96550,-27095 96361,-28541
+# REMVOED (ist doch nicht passiert) --- S8: wird in der Hauptverkehrszeit bis KW verlängert	? 26029,-6170 26057,-6241
+# REMOVED --- #: priority ^^^ --- #: next_check ^^^ --- #: XXX ^^^
 # 
 #: XXX wird es einen Ersatz für die Ruderfähre F24 geben?
 #: by: http://www.berliner-zeitung.de/berlin/mueggelheim-aus-fuer-ruderfaehre,10809148,24637330.html (sagt nein: kein Platz für einen Anleger)
