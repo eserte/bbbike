@@ -61,10 +61,12 @@ if ($cgi_dir !~ m{(bbbike.hosteurope|radzeit)\Q.herceg.de}) {
     push @prog, "bbbikegooglemap2.cgi";
 }
 
-# URLs which are sometimes slower than the rest
-my %prog2timeout = (qr{bbbike-(data|snapshot)\.cgi} => 30);
-
+use constant HARD_TIMEOUT => 30;
 use constant DEFAULT_SOFT_TIMEOUT => 10;
+
+# URLs which are sometimes slower than the rest,
+# use possible maximum
+my %prog2timeout = (qr{bbbike-(data|snapshot)\.cgi} => HARD_TIMEOUT);
 
 my @static = qw(
 		html/bbbike.css
@@ -90,10 +92,14 @@ if (defined $mapserver_prog_url) {
     diag("No URL for mapserv defined");
 }
 
+my $per_check_url_test_cases = 2;
 my $extra_tests = 7;
-plan tests => scalar(@prog) + scalar(@static) + $extra_tests;
+plan tests => (scalar(@prog) + scalar(@static)) * $per_check_url_test_cases + $extra_tests;
 
-my $ua = LWP::UserAgent->new(keep_alive => 1);
+# Note: in keep_alive connections it's not possible to change the
+# timeout, thus we have the maximum specified here, and working
+# with "soft timeouts" later.
+my $ua = LWP::UserAgent->new(keep_alive => 1, timeout => HARD_TIMEOUT);
 $ua->agent('BBBike-Test/1.0');
 $ua->env_proxy;
 
@@ -131,18 +137,17 @@ for my $static (@static) {
     }
 }
 
+# Typically two test cases, except for bbbike-data/snapshot
 sub check_url {
     my($url) = @_;
 
     my $soft_timeout = DEFAULT_SOFT_TIMEOUT;
-    my $hard_timeout = $soft_timeout;
     for my $rx (keys %prog2timeout) {
 	if ($url =~ $rx) {
-	    $hard_timeout = $prog2timeout{$rx};
+	    $soft_timeout = $prog2timeout{$rx};
 	    last;
 	}
     }
-    $ua->timeout($hard_timeout);
 
     my $t0 = time;
     my $resp = $ua->head($url);
@@ -150,9 +155,7 @@ sub check_url {
     ok($resp->is_success, $url) or diag $resp->content;
     {
 	my $dt = $t1-$t0;
-	if ($dt > $soft_timeout) {
-	    diag "Warning: Request to $url was slow: " . sprintf("%.3f", $dt) . "s (expected faster than ${soft_timeout}s)";
-	}
+	cmp_ok $dt, "<=", $soft_timeout, "Request to $url was fast enough";
     }
 
     if ($url =~ /bbbike-data.cgi/) {
