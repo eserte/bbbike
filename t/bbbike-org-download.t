@@ -67,7 +67,11 @@ my @listing;
     is $?, 0, "Downloading city '$city'";
     ok -d "$dir/$city", "Directory $dir/$city exists";
     ok -f "$dir/$city/strassen", "strassen found for $city";
-    ok -f "$dir/$city/meta.yml", "meta.yml found for $city";
+ SKIP: {
+	skip "No 'meta.yml' expected in '$city' file", 1
+	    if $city eq 'data';
+	ok -f "$dir/$city/meta.yml", "meta.yml found for $city";
+    }
 
     my $s = Strassen->new("$dir/$city/strassen");
     isa_ok $s, 'Strassen';
