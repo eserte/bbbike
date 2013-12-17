@@ -2925,26 +2925,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019421',
-         'until' => 1388530799,
-         'text' => 'Friedrich-Engels-Str. stadteinwärts zwischen Nordendstr. und Platananenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2013/Anfang 2014)',
-         'from' => 1353366000,
-         'id' => 2391,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121015.1240.376583.html (Verzögerung bei den Bauarbeiten)
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html
-#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html?date=20121116
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20130614.1020.386081.html (Vollsperrung ab Juni 2013)
-#: by: IM_019421 (allerdings hier nur bis Dezember 2013)
-# REMOVED (bei VMZ abgelaufen) --- : next_check: 2013-09-01 --- #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen --- #: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074 --- #: priority: #A
-#: next_check: 2013-12-15
-#: XXX danach bessere Straßenqualität? Radstreifen?
-#: osm_watch: way id="24930947" version="20"
-#: source_id: IM_020259 (zusätzlich)
-userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3361,13 +3342,17 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        },
        {
          'until' => undef,
-         'text' => 'Gudvanger Str.: Bauarbeiten zwischen Krügerstr. und Erich-Weinert-Str., Fahrbahn gesperrt',
+         'text' => 'Gudvanger Str.: Bauarbeiten zwischen Krügerstr. und Erich-Weinert-Str. sowie am Humannplatz, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2503,
-         'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2013-11-13
-#: check_frequency: 30d
-userdel	q4::inwork 11694,16034 11673,16003
+         'data' => '#: XXX wann sind die Bauarbeiten beendet? vvv
+#: last_checked: 2013-12-17 vvv
+#: check_frequency: 30d vvv
+	q4::inwork 11694,16034 11673,16003
+	q3::inwork 11673,16003 11567,15842
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 ',
          'type' => 'handicap'
        },
@@ -3375,17 +3360,7 @@ userdel	q4::inwork 11694,16034 11673,16003
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
-         'until' => 1387234799,
-         'text' => 'Herbststr.: Bauarbeiten zwischen Provinzstr. und Kamekestr., sowie in der Sommerstr. zwischen Herbststr. und Hoppestr., Fahrbahn gesperrt, ca. vom 25. November 2013 bis zum 16. Dezember 2013 ',
-         'from' => 1385247600,
-         'id' => 2508,
-         'data' => 'userdel	q4::inwork 8482,18284 8465,18365 8627,18402
-userdel	q4::inwork 8465,18365 8286,18331
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

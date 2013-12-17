@@ -636,7 +636,8 @@ Niederkirchnerstr.: Asphalt	Q0 8720,11226 9155,11283
 Johanniterstr.: Asphalt	Q0 9837,10117 10066,10071 10251,9979
 Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
-Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
+Friedrich-Engels-Str.: Asphalt	Q0 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
+Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8900,20601
 Friedrich-Engels-Str.: Kopfsteinpflaster, Radweg auf asphaltierter Nebenfahrbahn	Q0 8900,20601 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
 Friedrich-Engels-Str.: Kopfsteinpflaster, Radweg auf Nebenfahrbahn mit Verbundsteinpflaster	Q1 8513,21099 8409,21183 8316,21240 8277,21257
@@ -8497,6 +8498,7 @@ Alfred-Siggel-Weg: unbefestigte Straße, Bauarbeiten	Q3 19406,7886 19531,7794
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7607,5944
 (Alboinstr. - Paul-Schmidt-Str.): Gehwegplatten	Q0 8200,5510 8242,5427
+Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -9210,7 +9212,8 @@ Spindelmühler Weg: Kopfsteinpflaster	Q2 2400,3375 2518,3258 2701,3064
 Thurneysserstr.: Kopfsteinpflaster	Q2 8582,16052 8481,16136 8389,16214
 Dievenowstr.: Asphalt	Q0 3202,7121 3189,7249 3208,7328 3228,7401
 Borkumer Str.: Asphalt	Q0 3056,7095 3110,7112 3202,7121 3302,7092 3382,7074 3488,7050 3585,7028
-Görschstr.: Asphalt mit einigen Schäden	Q1 10085,17379 10066,17636 10056,17781
+Görschstr.: Asphalt mit einigen Schäden	Q1 10085,17379 10066,17636
+Görschstr.: Asphalt	Q0 10066,17636 10056,17781
 Görschstr.: Kopfsteinpflaster	Q3 10056,17781 9870,17971
 Neue Schönholzer Str.: guter Asphalt	Q0 10089,18180 10141,18030 10179,17772
 Guntherstr.: Kopfsteinpflaster	Q2 17020,12309 16994,12122 16975,12000
@@ -9329,7 +9332,7 @@ Apostel-Paulus-Str.: Asphalt	Q0 6591,9080 6443,9060 6367,9048 6279,9034 6214,900
 Waldstr. (Niederschönhausen): asphaltiert	Q0 9991,19417 9955,19507
 Waldstr. (Niederschönhausen): Asphalt	Q0 9955,19507 9916,19625 9878,19741
 Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9878,19741 9864,19793 9822,19916
-Waldstr. (Niederschönhausen): asphaltiert	Q0 9822,19916 9788,20035 9754,20134 9727,20251 9723,20269 9724,20291 9718,20498
+Waldstr. (Niederschönhausen): asphaltiert	Q0 9822,19916 9788,20035 9754,20134 9727,20251 9723,20269 9724,20291 9717,20501
 Robert-Rössle-Str.: Beton	Q0 16521,24864 16682,24758 16719,24734
 Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 3452,3717 3568,3784 3629,3715
 Korsörer Str.: mäßiges Kopfsteinpflaster	Q2 10105,15752 10398,15797
@@ -12825,7 +12828,7 @@ Uetzer Steig: Beton	Q0 -4907,7372 -4720,7345 -4663,7335 -4623,7335
 Am Kiefernhang: Kopfsteinpflaster, Sandbanketten	Q2 -5189,6890 -5137,6960 -5090,7005 -5050,7058 -4982,7164 -4943,7223 -4927,7248
 Besingweg: gutes Verbundsteinpflaster	Q1 -4982,7164 -4680,7114 -4674,7094
 Marquardter Weg: Asphalt von mäßiger Qualität	Q2 -5279,7113 -5218,7070 -5202,7045
-Akazienallee (Rosenthal): loser Sandweg, viele Schlaglöcher	Q3 9551,20662 9615,20469 9627,20443
+Akazienallee (Rosenthal): loser Sandweg, viele Schlaglöcher	Q3 9551,20662 9615,20469 9624,20442
 Lunder Str.: mäßiges Kopfsteinpflaster	Q2 11357,16610 11351,16744
 Am Wasserturm: mäßiges Kopfsteinpflaster	Q2 12467,17814 12338,17862 12231,17908 12196,17920 12118,17959
 Am Wasserturm: Beton	Q0 12118,17959 12015,18010
@@ -14673,7 +14676,7 @@ Treskowstr. (Heinersdorf): Asphalt	Q0 11893,17397 12327,17211
 Elsflether Weg: Beton	Q0 -4011,13407 -4023,13493 -4011,13656 -3989,13785 -3965,13870 -3937,13975
 Nordendstr.: Asphalt	Q0 9149,20336 8964,20259
 Nordendstr.: moderat fester Sandweg mit vielen Löchern	Q2 8964,20259 8606,20063 8402,19959
-Nordendstr.: Asphalt	Q0 9983,20581 9910,20556 9859,20542 9815,20530 9739,20508 9718,20498 9615,20469 9498,20435 9324,20386 9209,20361 9149,20336
+Nordendstr.: Asphalt	Q0 9983,20581 9910,20556 9859,20542 9815,20530 9739,20508 9717,20501 9615,20469 9498,20435 9324,20386 9209,20361 9149,20336
 Bültenring: Verbundsteinpflaster	Q0 21433,10367 21473,10369 21542,10398 21549,10404 21539,10435
 Bültenring: Verbundsteinpflaster	Q0 21473,10369 21546,10352
 Bültenring: Verbundsteinpflaster	Q0 21542,10398 21549,10377 21546,10352 21548,10329

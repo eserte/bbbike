@@ -725,7 +725,8 @@ Niederkirchnerstr.: Asphalt	Q0 8720,11226 9155,11283
 Johanniterstr.: Asphalt	Q0 9837,10117 10066,10071 10251,9979
 Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
-Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
+Friedrich-Engels-Str.: Asphalt	Q0 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
+Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8900,20601
 Friedrich-Engels-Str.: Kopfsteinpflaster, Radweg auf asphaltierter Nebenfahrbahn	Q0- 8900,20601 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
 Friedrich-Engels-Str.: Kopfsteinpflaster, Radweg auf Nebenfahrbahn mit Verbundsteinpflaster	Q1+ 8513,21099 8409,21183 8316,21240 8277,21257
@@ -2807,7 +2808,7 @@ Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2 12742,8635 12649,8535
 Schönstedtstr. (Neukölln): Asphalt	Q0 12649,8535 12540,8458
 # REMOVED (Asphalt neu gemacht) --- #: XXX Straßenbauarbeiten (mit Vollsperrung) ab September 2013, danach vielleicht bessere Qualität? --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_08_02.pdf?start&ts=1375448176&file=stra__enbauliste_stand_2013_08_02.pdf --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html --- #: last_checked: 2013-09-09 --- #: next_check: 2013-09-30
 Höhndorfstr.: Asphalt	Q0 8454,8574 8438,8676 8425,8775
-Zionskirchstr.: Asphalt	Q0 10558,14176 10426,14262
+Zionskirchstr.: Asphalt	Q0+ 10558,14176 10426,14262
 Arkonaplatz: Kopfsteinpflaster	Q2 10105,14608 10189,14649 10277,14691
 Armbrustweg: Asphalt mit Schäden	Q1 7599,18705 7620,18615
 Armbrustweg: Mosaikpflaster	Q1 7635,18570 7620,18615
@@ -8706,7 +8707,7 @@ Koseler Weg: welliges Verbundsteinpflaster	Q1- 9850,6135 9679,6160
 In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9903,17711 9904,17748
 #: XXX Qualität nach den Bauarbeiten? Wird dieser Teil der Straße überhaupt noch existieren?
 #: XXX siehe auch Eintrag in gesperrt-orig
-#: last_checked: 2013-09-13
+#: last_checked: 2013-12-17
 #: next_check: 2014-02-13
 In den Floragärten: unbefestigte Straße	Q2 9903,17711 9996,17707 9997,17646 10014,17646
 #: note: und ein paar Meter Verbundsteinpflaster an der Neustrelitzer Str.
@@ -9199,6 +9200,7 @@ Alfred-Siggel-Weg: unbefestigte Straße, Bauarbeiten	Q3+ 19406,7886 19531,7794
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1- 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7607,5944
 (Alboinstr. - Paul-Schmidt-Str.): Gehwegplatten	Q0- 8200,5510 8242,5427
+Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -9944,6 +9946,7 @@ Nikolaus-Groß-Weg: guter Asphalt	Q0 2038,13870 2025,13815
 Bansiner Str.: guter Asphalt	Q0 22723,12631 22722,12710 22692,12747 22597,12751 22595,12856 22619,12885 22679,12888 22785,12840 22807,12782 22906,12766
 Bruno-Taut-Ring: mäßiger Asphalt	Q1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13909,3845
 Pfeilstr.: mäßiges Kopfsteinpflaster	Q2 9897,18496 9568,18682
+#: confirmed_by: srt
 Lauterbachstr.: guter Asphalt	Q0 11272,17930 11297,17795
 #: corrected_by: srt (Q0 -> Q1)
 Hannaweg: Beton mit Schäden	Q1 20923,13953 20938,14066
@@ -10521,7 +10524,9 @@ Borkumer Str.: Asphalt	Q0 3056,7095 3110,7112 3202,7121 3302,7092 3382,7074 3488
 # 
 #: by: Stefan Micke: vvv
 #: corrected_by: srt ("mäßiger Asphalt" -> )
-Görschstr.: Asphalt mit einigen Schäden	Q1 10085,17379 10066,17636 10056,17781
+Görschstr.: Asphalt mit einigen Schäden	Q1+ 10085,17379 10066,17636
+#: corrected_by: srt ("mäßiger Asphalt" -> )
+Görschstr.: Asphalt	Q0 10066,17636 10056,17781
 #: corrected_by: srt (Q2 -> Q3+)
 Görschstr.: Kopfsteinpflaster	Q3+ 10056,17781 9870,17971
 #: by: ^^^
@@ -10835,7 +10840,7 @@ Waldstr. (Niederschönhausen): Asphalt	Q0 9955,19507 9916,19625 9878,19741
 #: confirmed_by: srt
 Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9878,19741 9864,19793 9822,19916
 #: confirmed_by: Uta Voigt:
-Waldstr. (Niederschönhausen): asphaltiert	Q0 9822,19916 9788,20035 9754,20134 9727,20251 9723,20269 9724,20291 9718,20498
+Waldstr. (Niederschönhausen): asphaltiert	Q0 9822,19916 9788,20035 9754,20134 9727,20251 9723,20269 9724,20291 9717,20501
 #: by: ^^^
 # 
 #: by: Raik:
@@ -20675,7 +20680,7 @@ Marquardter Weg: Asphalt von mäßiger Qualität	Q2+ -5279,7113 -5218,7070 -5202,70
 # 
 #: by: yvonne (yvet...)
 #: confirmed_by: srt (zumindest den Sandweg...)
-Akazienallee (Rosenthal): loser Sandweg, viele Schlaglöcher	Q3 9551,20662 9615,20469 9627,20443
+Akazienallee (Rosenthal): loser Sandweg, viele Schlaglöcher	Q3 9551,20662 9615,20469 9624,20442
 # 
 #: by: Klimesch:
 #: confirmed_by: srt
@@ -24119,7 +24124,7 @@ Nordendstr.: moderat fester Sandweg mit vielen Löchern	Q2 8964,20259 8606,20063 
 #: by: ^^^
 # 
 #: by: Jacqueline Naber-Siemon, Peter Scherbarth [AM]
-Nordendstr.: Asphalt	Q0 9983,20581 9910,20556 9859,20542 9815,20530 9739,20508 9718,20498 9615,20469 9498,20435 9324,20386 9209,20361 9149,20336
+Nordendstr.: Asphalt	Q0 9983,20581 9910,20556 9859,20542 9815,20530 9739,20508 9717,20501 9615,20469 9498,20435 9324,20386 9209,20361 9149,20336
 # 
 #: by: Melanie Henke [AM] vvv
 #: corrected_by: srt (Asphalt -> Verbundsteinpflaster) vvv
