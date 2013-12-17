@@ -15,14 +15,14 @@ use FindBin;
 use lib $FindBin::RealBin;
 
 BEGIN {
-    if (!eval q{
-	use HTML::TreeBuilder::XPath;
-	use LWP::UserAgent;
-	use Test::More;
-	use URI;
-	1;
-    }) {
-	print "1..0 # skip no HTML::TreeBuilder::XPath, LWP::UserAgent, URI, and/or Test::More modules\n";
+    my @missing_mods;
+    for my $mod (qw(HTML::TreeBuilder::XPath LWP::UserAgent Test::More URI)) {
+	if (!eval qq{use $mod; 1}) {
+	    push @missing_mods, $mod;
+	}
+    }
+    if (@missing_mods) {
+	print "1..0 # skip The following module(s) are/is missing: @missing_mods\n";
 	exit;
     }
 }
