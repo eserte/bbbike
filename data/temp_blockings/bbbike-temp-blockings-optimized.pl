@@ -2810,27 +2810,7 @@ userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_019212',
-         'until' => 1387724400,
-         'text' => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Ende 2013',
-         'from' => 1348076973,
-         'id' => 2308,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html
-#: note: nur die halbe Strecke ist gesperrt, deshalb q3
-#: note: am 2012-09-19 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
-#: note: am 2012-10-18 geprüft, Schranke, nur Straßenbahnen werden durchgelassen
-#: note: am 2012-10-31 am südlichen Ende vorbeigefahren, möglicherweise war heute die Schranke nicht aktiv
-#: note: am 2013-02-11 geprüft, keine Schranke, aber nur für "Linienverkehr frei"
-#: note: am 2013-04-11 geprüft: Radfahrer dürfen hier offiziell entlangfahren
-#: note: am 2013-08-14 geprüft: Fahrbahn war gesperrt
-#: note: am 2013-09-06 geprüft: Schranke, nur Straßenbahnen und Lieferverkehr werden durchgelassen
-#: note: am 2013-10-24 geprüft: Radfahrer konnten heute wohl durchfahren, aber offiziell noch immer gesperrt
-#: note: am 2013-11-05 geprüft: offiziell gesperrt, aber Durchfahrt mit Umrunden der Sperren möglich
-userdel	q3::inwork 10530,14452 10723,14772
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

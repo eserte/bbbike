@@ -20092,7 +20092,7 @@ userdel	q4::inwork 8634,13588 8626,13641 8619,13689
 EOF
      },
      { from  => 1348076973, # 1314604800, # 2011-08-29 10:00
-       until => 1387724400, # 2013-12-22 16:00
+       until => 1387219146, # 1387724400, # 2013-12-22 16:00
        text  => 'Kastanienallee (Prenzlauer Berg): Bauarbeiten zwischen Oderberger Str. und Schwedter Str., Fahrbahn ist manchmal gesperrt, bis Ende 2013',
        type  => 'handicap',
        source_id => 'IM_019212',

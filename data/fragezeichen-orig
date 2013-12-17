@@ -111,7 +111,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # 
 #: XXX Baumaﬂnahme 2.23 (Realisierung nach 2011) vvv
 # REMOVED (weitgehend realisiert, bis auf das letzte St¸ck vor der Kreuzung) --- #: last_checked: 2013-09-10 vvv --- #: next_check: 2013-09-12 vvv --- Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::inwork; 12726,11851 12681,11741 12645,11673 --- Straﬂe der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459 --- #: next_check ^^^ --- #: last_checked ^^^
-#: last_checked: 2013-12-14
+#: last_checked: 2013-12-16
 #: check_frequency: 60d
 Straﬂe der Pariser Kommune: werden hier die fehlenden Meter Radspur noch markiert?	?::projected 12850,12286 12869,12425
 #: XXX ^^^
@@ -898,12 +898,7 @@ Erna-Samuel-Straﬂe: werden hier noch Radstreifen erstellt?	?::inwork 5299,14049 
 #: next_check: 2013-12-15
 Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # 
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html
-#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html (aktuelle Infos)
-#: XXX Richtung Norden existieren schon Radspuren
-#: last_checked: 2013-11-05
-#: next_check: 2013-11-24
-Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html (aktuelle Infos) --- #: XXX Richtung Norden existieren schon Radspuren --- #: last_checked: 2013-11-05 --- #: next_check: 2013-11-24 --- Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772
 # 
 #: last_checked: 2013-06-15 vvv
 #: next_check: 2014-06-15 vvv
