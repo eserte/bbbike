@@ -9,7 +9,8 @@ before_install:
 # - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
 # - xvfb + twm:             some optional tests require an X server
 # - rnv:                    schema validation in tests
- - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb twm rnv
+# - rhino:                  javascript tests
+ - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb twm rnv rhino
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
  - cpanm --quiet --installdeps --notest Test::LectroTest Email::MIME HTML::TreeBuilder::XPath
 ## Temporary hack: PDF::Create does not install (see https://rt.cpan.org/Ticket/Display.html?id=91312), force 1.06
