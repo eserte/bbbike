@@ -29,7 +29,7 @@ BEGIN {
 
 use Getopt::Long;
 
-my $doit;
+my $doit = !!$ENV{BBBIKE_LONG_TESTS};
 GetOptions("doit" => \$doit)
     or die "usage: $0 [-doit]";
 if (!$doit) {
@@ -37,11 +37,16 @@ if (!$doit) {
     exit 0;
 }
 
+my $mw = eval { tkinit };
+if (!Tk::Exists($mw)) {
+    plan skip_all => "Cannot create MainWindow: $@";
+    exit 0;
+}
+
 plan tests => 4;
 
 require Tk::SmoothShow;
 
-my $mw = tkinit;
 $mw->geometry("+20+20");
 my $c = $mw->Canvas->pack(qw(-fill both -expand 1));
 
