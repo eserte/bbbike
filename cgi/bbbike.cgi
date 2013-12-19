@@ -1532,7 +1532,7 @@ sub choose_form {
 	   ) {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
-	} elsif ($bi->is_browser_version("MSIE", 5.0, 9.999999)) { # mit IE 8 getestet, mit IE 10 (Surface) geht's nicht! (XXX)
+	} elsif ($bi->is_browser_version("MSIE", 5.0, 8.999999)) { # mit IE 8 getestet, mit IE 9 und IE 10 (Surface) geht's nicht! (XXX)
 	    $nice_berlinmap = $nice_abcmap = 1;
 	    # png was for long time unsupported by IE
 	} elsif ($bi->is_browser_version("Opera", 9.0, 9999999)) { # mit 9.80 getestet
