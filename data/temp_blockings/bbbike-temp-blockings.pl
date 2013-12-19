@@ -4528,7 +4528,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002765',
        data  => <<EOF,
-userdel	q4; 9607,13507 9296,13397 9281,13374
+userdel	q4; 9611,13517 9296,13397 9281,13374
 EOF
      },
      { from  => 1147989600, # 2006-05-19 00:00
@@ -7260,7 +7260,7 @@ EOF
        text  => 'Linienstr. zwischen Tucholskystr. und Kleine Hamburger Str. gesperrt wegen Straßenbauarbeiten. Dauer: 01.03.2007 07.00 Uhr bis 02.03.2007 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 9752,13575 9607,13507
+userdel	2::inwork 9749,13582 9611,13517
 EOF
      },
      { from  => 1172962800, # 2007-03-04 00:00
@@ -7977,7 +7977,7 @@ EOF
        text  => 'Linienstr.: Baustelle zwischen Koppenplatz (östliche Straße) und Rosenthaler Str., Einbahnstraße',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 10220,13694 10085,13684 9996,13678 9945,13669
+userdel	1::inwork 10220,13694 10085,13684 9996,13678 9947,13674
 EOF
      },
      { from  => 1177625221, # 
@@ -10080,7 +10080,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006787',
        data  => <<EOF,
-userdel	2::inwork 17902,17074 17839,16987 17796,16926 17634,16681 17446,16393
+userdel	2::inwork 17902,17074 17839,16987 17796,16926 17634,16681 17512,16495 17446,16393
 EOF
      },
      { from  => 1186524000, # 2007-08-08 00:00
@@ -14197,7 +14197,7 @@ EOF
        source_id => 'IM_012706',
        data  => <<EOF,
 #: last_checked: 2009-05-28
-userdel	q4::inwork 9531,13797 9668,13629
+userdel	q4::inwork 9531,13797 9670,13637
 EOF
      },
      { from  => 1242712177, # 2009-05-19 07:49
@@ -15387,7 +15387,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013876',
        data  => <<EOF,
-userdel	q4::inwork; 9355,19789 9408,19707 9468,19599 9606,19510 9698,19443 9791,19363
+userdel	q4::inwork; 9348,19786 9404,19691 9468,19599 9562,19529 9588,19511 9688,19440 9791,19363
 EOF
      },
      { from  => 1249365600, # 2009-08-04 08:00
@@ -19925,7 +19925,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110928.1340.360235.html',
        data  => <<EOF,
-userdel	q4::inwork; 9212,13471 9340,13510 9394,13528 9517,13571 9571,13590 9668,13629 9799,13686 9918,13733 10177,13766
+userdel	q4::inwork; 9212,13471 9340,13510 9394,13528 9508,13578 9580,13600 9670,13637 9796,13694 9917,13741 10177,13766
 EOF
      },
      { from  => 1317679200, # 2011-10-04 00:00
@@ -20915,7 +20915,7 @@ EOF
 # REMOVED (bei VMZ abgelaufen) --- : next_check: 2013-09-01 --- #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen --- #: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074 --- #: priority: #A
 # REMOVED (ja) --- #: next_check: 2013-12-15 --- #: XXX danach bessere Straßenqualität? Radstreifen? --- #: osm_watch: way id="24930947" version="20"
 #: source_id: IM_020259 (zusätzlich)
-userdel	q4::inwork; 9149,20336 9235,20125 9266,20048 9300,19949 9333,19853 9355,19789
+userdel	q4::inwork; 9149,20336 9226,20124 9255,20038 9289,19947 9325,19851 9348,19786
 EOF
      },
      { from  => 1350252000, # 2012-10-15 00:00

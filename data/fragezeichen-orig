@@ -1258,9 +1258,30 @@ Florastr./Gˆrschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshil
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/bplan1135.pdf?start&ts=1363256158&file=bplan1135.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5597
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036477239018/477239018/00108573/73-Anlagen/02/249-2013-1B-Plan11-35-ErschliessungAnlage1.pdf
-#: last_checked: 2013-10-19
-#: next_check: 2014-07-20
-Bebauungsplan 11-35: hier werden einige Straﬂen (verkehrsberuhigt, zumindest teilweise) entstehen	?::projected 17631,16258 17515,16215 17465,16340 17446,16393 17634,16681 17751,16603 17825,16554 17836,16522 17877,16423 17895,16373 17631,16258
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5697 (Empfehlung f¸r Straﬂenbenennungen)
+#: XXX fehlen alle in Berlin.coords.data vvv
+#: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt
+#: last_checked: 2013-10-19 vvv
+#: next_check: 2014-07-20 vvv
+Planstraﬂe 1: Helga-Haase-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
+Planstraﬂe 2: Jutta-Langenau-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17607,16328 17632,16336 17816,16401 17877,16423
+Planstraﬂe 3: Gerhard-Schulz-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17508,16356 17497,16385 17552,16461
+Fuﬂweg zur Wartenberger Str.: genaue Lage, Qualit‰t?	?::projected 17512,16495 17552,16461
+Planstraﬂe 4: Harry-Glaﬂ-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17552,16461 17603,16415 17611,16396 17632,16336
+Planstraﬂe 5: Joachim-Bˆhmer-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17673,16420 17657,16464 17712,16549
+Planstraﬂe 6: Erich-Hagen-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17816,16401 17792,16465 17776,16504 17712,16549 17673,16577
+Fuﬂweg zur Gehrenseestr.: genaue Lage, Qualit‰t?	?::projected 17607,16328 17631,16258
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5696 (Straﬂenname)
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036439860180/439860180/00109962/62-Anlagen/02/LageplanDS1034.pdf (grober Lageplan)
+#: by: http://w6898n4pa.homepage.t-online.de/Lage.pdf (Lageplan)
+#: XXX Baustart: Ende 2013, Bauende: Fr¸hjahr 2015
+#: XXX fehlt in Berlin.coords.data
+#: next_check: 2014-09-01
+Am Gutspark: neue geplante Privatstraﬂe, Lage, Qualit‰t?	?::projected 15752,12879 15747,12985 15808,12989
 # 
 # REMOVED (abgelehnt, siehe Schlussbericht) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458 --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036560602837/560602837/00092292/92-Anlagen/04/B0359SB.pdf (Schlussbericht) --- #: last_checked: 2013-06-22 --- #: check_frequency: 90d --- Brandenburgplatz: wird hier eine Fuﬂg‰ngerampel eingerichtet?	? 23363,5714 23309,5704
 # 
@@ -1379,7 +1400,7 @@ Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,985
 Schˆneberger Str.: eventuell wird hier eine (Fuﬂg‰nger-)Ampel entstehen	?::projected 8640,6770 8645,6781 8655,6796
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4106&options=4 (Konzeptphase)
-#: last_checked: 2013-09-09
+#: last_checked: 2013-12-15
 #: check_frequency: 100d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
@@ -1823,6 +1844,11 @@ Am Speicher (Potsdam)	?::inwork -12783,-2269 -12771,-2220 -12754,-2154
 #: last_checked: 2013-05-09
 #: next_check: 2013-11-09
 Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Planstraﬂe D)	? -12712,-2233 -12728,-2227 -12771,-2220 -12803,-2219
+# 
+#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straﬂenname)
+#: by: http://www.fatkoehl.com/index.php?article_id=31
+#: XXX fehlt in Berlin.coords.data
+neue Stichstraﬂe: neuer Name wird wahrscheinlich Wilhelmine-Gemberg-Straﬂe sein, Lage, Qualit‰t?	?::projected 11742,11535 11798,11670
 # 
 #: ignore ^^^
 #: section ^^^

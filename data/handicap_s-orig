@@ -90,8 +90,8 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: source_id: INKO_113363 vvv
 #: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt vvv
 #: osm_watch: way id="197160274" version="1" vvv
-#: last_checked: 2013-11-12 vvv
-#: next_check: 2013-12-19 vvv
+#: last_checked: 2013-12-19 vvv
+#: next_check: 2014-01-19 vvv
 Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676
 Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstein	q3::inwork 8837,11676 9000,11727
 #: next_check ^^^
@@ -107,7 +107,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstei
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: last_checked: 2013-12-08 vvv
-#: next_check: 2014-03-31 vvv
+#: next_check: 2014-06-30 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
 #: XXX siehe auch temporäre Ampel an der Chausseestr. sowie an der Luisenstr.
@@ -2504,7 +2504,7 @@ Mittelheide: enge Straße	q0- 22724,6608 22858,6535 23033,6511 23135,6500 23220,6
 # 
 #: by: Steffen Ryll:
 #: corrected_by: srt/policy (q1 -> q0-)
-Platanenstr.: teilweise recht eng	q0- 9355,19789 9489,19826 9822,19916 10127,19992
+Platanenstr.: teilweise recht eng	q0- 9348,19786 9489,19826 9822,19916 10127,19992
 # 
 #: by: Michael Dinter: vvv
 Senegalstr.: enge Straße	q1 5961,15562 5906,15623 5848,15685 5787,15741 5722,15795
@@ -2752,7 +2752,7 @@ Zietenstr. (Lankwitz): enge Straße	q1 6196,2204 6108,2326 6065,2443 5971,2691
 #: by: ^^^
 # 
 #: by: Knappe:
-Jenny-Lind-Str.: enge Straße	q1 11531,17250 11645,17271 11768,17296
+Jenny-Lind-Str.: enge Straße	q1 11522,17248 11645,17271 11768,17296
 # 
 #: by: Katjana Brennecke: vvv
 Sandhofweg: enge Straße	q1 5848,272 5795,371 5757,434 5688,402
@@ -3226,7 +3226,7 @@ Dualastr.: enge Straße	q1 6019,15841 5848,15685
 #: corrected_by: srt/policy (q3 -> q1)
 (Horterweg - Römerweg): einige Fußgänger	q1 19005,9816 19003,9800 18994,9707
 #: by: Markus Brandt:
-Kissingenplatz: Bordsteine	q4 11405,17985 11398,17962
+Kissingenplatz: Bordsteine	q4 11405,17985 11390,17962
 #: by: Wicharz:
 #: confirmed_by: anonymous
 Ruben-Wolf-Str.: einige Fußgänger	q1+ 19906,217 19865,263 19785,361

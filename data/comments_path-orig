@@ -61,13 +61,13 @@ Potsdamer Str. - Am Karlsbad: bereits am Schöneberger Ufer auf linken Gehweg wec
 Am Karlsbad - Potsdamer Str.: entweder Fußgängerampel am Schöneberger Ufer oder an der Lützowstr. benutzen	CP; 8011,11014 7968,11048 7912,10945
 # REMOVED (hierfür gibt's keinen Grund --- man kann auch an der Straßenbahntrasse entlang fahren) --- Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straßenseite wechseln	PI; 11228,12951 11267,13012 11314,13087 11368,13170 11326,13196
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der linken Seite benutzen	CP; 9929,13660 9918,13733 9799,13686
+Fußgängerampel auf der linken Seite benutzen	CP; 9927,13666 9917,13741 9796,13694
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der linken Seite zum Überqueren der Torstr. benutzen	CP; 9929,13660 9918,13733 9873,13872
+Fußgängerampel auf der linken Seite zum Überqueren der Torstr. benutzen	CP; 9927,13666 9917,13741 9873,13872
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der rechten Seite zum Überqueren der Torstr. benutzen	CP; 9873,13872 9918,13733 9929,13660
+Fußgängerampel auf der rechten Seite zum Überqueren der Torstr. benutzen	CP; 9873,13872 9917,13741 9927,13666
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Fußgängerampel auf der rechten Seite benutzen	CP; 9873,13872 9918,13733 10177,13766
+Fußgängerampel auf der rechten Seite benutzen	CP; 9873,13872 9917,13741 10177,13766
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Warschauer Str. benutzen	CP; 13467,11778 13651,11731 13895,11663
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
@@ -144,7 +144,7 @@ Große Querallee: nicht ausgeschildert, vor dem "Tipi" nach links abbiegen	CP; 81
 Stralauer Allee - Warschauer Platz: bereits an der Kreuzung Am Oberbaum/Stralauer Allee auf den linken Gehweg wechseln	PI; 13332,10832 13389,10808 13471,10983
 #: XXX_indoor: hmmm, why not use Steinmetzstr. at all for such routes? Maybe use routing_helper with some penalty instead? Ah, it would minimize Kopfsteinpflaster...
 bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7702,10146 7813,10112 7850,10351
-Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	CP; 5541,9923 5464,9914 5467,9866
+Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	CP; 5537,9938 5464,9914 5467,9866
 Bundesallee - Pariser Str.: bereits an der Kreuzung Bundesallee/Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5467,9866 5464,9914 5416,9928
 Mehringbrücke - Ruhlsdorfer Str.: den linken Gehweg benutzen	CP2; 9416,10196 9368,10211
 Buchholzer Str. - Schönhauser Allee: zunächst auf der linken Geh/Radwegseite der Schönhauser Allee fahren, an der Kreuzung Gneiststr. die Straßenseite wechseln	CP; 11055,15504 10917,15525 10902,15422
