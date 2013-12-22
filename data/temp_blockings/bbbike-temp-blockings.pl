@@ -1910,7 +1910,7 @@ EOF
        text  => 'Rosa-Luxemburg-Str. (Mitte) Richtung stadtauswärts, zwischen Memhardstr. und Torstr. Baustelle, Straße vollständig gesperrt (bis Ende 2005) Umleitung über Karl-Liebknecht-Straße - Torstraße',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 10755,13152 10846,13362 10852,13377 10825,13463 10790,13565 10777,13614 10746,13673
+userdel	q4; 10755,13152 10846,13362 10852,13377 10828,13464 10797,13575 10777,13614 10746,13673
 EOF
      },
      { from  => 1112220000, # 2005-03-31 00:00
@@ -2301,7 +2301,7 @@ EOF
        text  => 'Rosa-Luxemburg-Str. Richtung Schönhauser Tor wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 10755,13152 10846,13362 10852,13377 10825,13463 10790,13565 10777,13614 10746,13673
+userdel	1 10755,13152 10846,13362 10852,13377 10828,13464 10797,13575 10777,13614 10746,13673
 EOF
      },
      { from  => 1114293600, # 2005-04-24 00:00
@@ -11078,7 +11078,7 @@ EOF
        text  => 'Das letzte Ende (zur Schönhauser Allee) der Saarbrücker Str. ist momentan wg. Baustelle gesperrt. Es ist zu vermuten, dass dort das Kopfsteinpflaster entfernt wird.',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 10969,13914 10924,13940
+userdel	q4::inwork 10895,13961 11052,13870
 EOF
      },
      { from  => undef, # 
@@ -11226,7 +11226,7 @@ EOF
        text  => 'Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Unter Umständen Umfahrung über Alten Markt notwendig. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -12758,-1654 -12772,-1577 -12780,-1544
+userdel	2::inwork -12758,-1654 -12776,-1575 -12786,-1556
 EOF
      },
      { from  => 1211228399, # 2008-05-19 22:19
@@ -16755,7 +16755,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	2::temp 6611,9879 6670,9887
+	2::temp 6611,9879 6688,9897
 EOF
      },
      { from  => undef, #
@@ -17114,7 +17114,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 13416,7712 13426,7674
-userdel	2::temp 13416,7712 13288,7653
+userdel	2::temp 13416,7712 13378,7695 13288,7653
 userdel	2::temp 13426,7674 13400,7642 13303,7622
 userdel	2::temp 12969,7610 13100,7626 13177,7644
 userdel	2::temp 13188,7590 13177,7644
@@ -21206,7 +21206,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf
-userdel	1::inwork -12659,-1700 -12730,-1681 -12758,-1654
+userdel	1::inwork -12655,-1714 -12730,-1681 -12758,-1654
 EOF
      },
      { from  => 1366740818, # 2013-04-23 20:13
@@ -21948,7 +21948,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-11-19
+#: last_checked: 2013-12-22
 #: check_frequency: 30d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
@@ -22352,8 +22352,8 @@ userdel	q4::inwork; 9984,12426 9934,12420 9852,12409
 EOF
      },
      { from  => 1386667020, # 2013-12-10 10:17
-       until => 1387551600, # 2013-12-20 16:00
-       text  => 'Neheimer Str.: Baustelle, Fahrtbahn Richtung Borsigdamm gesperrt, bis zum 20. Dezember 2013 ',
+       until => 1409320800, # 2014-08-29 16:00
+       text  => 'Neheimer Str.: Baustelle, Fahrbahn Richtung Borsigdamm gesperrt, bis Ende August 2014',
        type  => 'handicap',
        source_id => 'IM_020924',
        data  => <<EOF,

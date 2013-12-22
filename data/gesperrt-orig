@@ -98,8 +98,6 @@ Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,1
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1508,14508 -1369,14644 -1119,14659 -925,14631
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
-Fasanenstr.	1 5215,10711 5230,10919 5236,10994
-# REMOVED (für die Dauer der Bauarbeiten) --- Fasanenstr.	1 5236,10994 5268,11274
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
 Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,18771 11950,18529
@@ -243,7 +241,7 @@ Alfredstr.	1 16207,11937 16246,12177 16255,12224
 Fanningerstr.	1s:q4 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
 # REMOVED (Einbahnstraßenregelung mittlerweile aufgehoben) --- Knaackstr.	1 11056,15009 11038,14972 11101,14768
-Hagenplatz	1 1149,8538 1094,8398
+Hagenplatz	1 1167,8556 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
 Reutlinger Str.	1 7676,4216 7601,4485
 Sybel-/Waitzstr.	1 3883,10585 3764,10580 3731,10640 3726,10757
@@ -1110,7 +1108,7 @@ Am Lustgartenwall: Ministerien	2 -13281,-1796 -12948,-1863
 Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
 Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12839,-1342 -12718,-1327
-Am Kanal	1 -12718,-1327 -12833,-1365
+Am Kanal	1 -12718,-1327 -12747,-1336 -12833,-1365
 Yorckstr.	1 -12833,-1365 -12976,-1356 -13001,-1349 -13208,-1315
 Yorckstr.	1 -13206,-1294 -13001,-1329 -12839,-1342
 Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
@@ -1127,14 +1125,14 @@ Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
-Lange Brücke: Straßenbahntrasse	3nocross -12758,-1654 -12730,-1681 -12659,-1700 -12567,-1817
+Lange Brücke: Straßenbahntrasse	3nocross -12758,-1654 -12730,-1681 -12655,-1714 -12567,-1817
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14213,-1695 -14143,-1662 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12756,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
-Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12780,-1544 -12794,-1497 -12833,-1365
+Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12786,-1556 -12808,-1488 -12833,-1365
 #: XXX_prog: Treppe sollte besser als -13733,-722 -13772,-623 -13784,-537 dargestellt sein, wenn es geht
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13772,-623
 #: by: rjoop
@@ -1503,7 +1501,7 @@ Luxemburger Str.: Mittelstreifen	3nocross 6626,15104 6715,15152 6833,15215
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14381,12205 14427,12197 14488,12188
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14020,12261
-Frankfurter Allee: Mittelstreifen mit Geländer	3nocross 15863,11992 16127,11950 16207,11937
+Frankfurter Allee: Mittelstreifen mit Geländer	3nocross 16066,11960 16127,11950 16207,11937
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9898,11679 9981,11689
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13330,13468
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12177,14335 12188,14350 12228,14404 12266,14460 12317,14535
@@ -1597,7 +1595,7 @@ Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11916,11846 11764,12001
 Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8380,8545
 Mehringdamm/Wilhelmshöhe: Mittelstreifen	3nocross 9224,9053 9225,9111 9248,9350
-Unter den Eichen: Mittelstreifen, Tunnelrampe	3nocross 3344,4488 3235,4421 3048,4305
+Unter den Eichen: Mittelstreifen, Tunnelrampe	3nocross 3344,4488 3264,4439 3048,4305
 Kottbusser Damm: Mittelstreifen	3nocross 11785,9437 11757,9509 11745,9541
 Gertraudenstr.: Mittelstreifen	3nocross 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979
 Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross 6181,8181 6246,8222 6325,8259
@@ -1642,7 +1640,6 @@ Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
 Fürstenwalder Damm: Straßenbahntrasse	3nocross 23660,5477 23728,5446 23822,5403 23851,5389
 Tauernallee: Mittelstreifen	3nocross 10349,2188 10431,2258 10504,2321
 Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383
-Berliner Str.: Straßenbahnhaltestelle	3nocross -11307,133 -11390,72 -11494,-4
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11449,9125 11136,9183
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11550,9104 11629,9086
 Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
@@ -1822,7 +1819,8 @@ tragen (Treppe)	0:30 2854,23062
 tragen (ca. 30 Stufen)	0:30 8773,10399
 #: note: Luftbild (Stufenanzahl)
 tragen (ca. 25 Stufen)	0:30 -18702,4551
-tragen (Treppe)	0:20 -12681,-1726
+tragen (11 Stufen)	0:20 -12676,-1742
+tragen (11 Stufen)	0:20 -12685,-1449
 tragen (Treppe)	0:20 -12625,-1703
 tragen (ca. 30 Stufen)	0:30 -13802,-1856
 tragen (ca. 30 Stufen)	0:30 -13733,-1856
@@ -2444,6 +2442,9 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2013-12-22
+Alter Markt - Uferweg: Zugang höchstwahrscheinlich gesperrt	2::inwork -12608,-1715 -12625,-1703 -12643,-1694
+# 
 #: XXX oder bleibt die Einbahnstraßenregelung permanent?
 #: XXX_prog 1s:q4:inwork geht als Kategorie nicht, falsche Übersetzung!
 #: last_checked: 2013-12-11
@@ -2529,7 +2530,7 @@ An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-133
 #: next_check: 2013-08-10
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 # 
-# REMOVED (Termin abgelaufen) --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf vvv --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf vvv --- #: priority: #A vvv --- #: next_check: 2013-09-05 vvv --- Sperrung am zukünftigen Landtag: Bereich vor der Straßenbahnhaltestelle Richtung Norden gesperrt (8. April 2013 - 6. September 2013)	1:inwork -12758,-1654 -12772,-1577 --- Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)	1::inwork -12659,-1700 -12730,-1681 -12758,-1654 --- #: next_check ^^^ --- #: prio ^^^ --- #: by ^^^ --- #: by ^^^
+# REMOVED (Termin abgelaufen) --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf vvv --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf vvv --- #: priority: #A vvv --- #: next_check: 2013-09-05 vvv --- Sperrung am zukünftigen Landtag: Bereich vor der Straßenbahnhaltestelle Richtung Norden gesperrt (8. April 2013 - 6. September 2013)	1:inwork -12758,-1654 -12772,-1577 --- Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)	1::inwork -12655,-1714 -12730,-1681 -12758,-1654 --- #: next_check ^^^ --- #: prio ^^^ --- #: by ^^^ --- #: by ^^^
 # 
 #: by: Torben Müllers
 #: confirmed_by: srt
@@ -2638,7 +2639,7 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 174
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2013-10-19 vvv
+#: last_checked: 2013-12-20 vvv
 #: check_frequency: 60d vvv
 #: XXX wird man nach den Bauarbeiten direkt zur Eldenaer Str. fahren können (Kfz/Rad)?
 #: XXX Qualität im östlichen Abschnitt?
@@ -2705,8 +2706,8 @@ Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12659,-1700 -12730,-1681 -12758,-1654 -12755,-1585 -12780,-1544
-# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12794,-1497
+# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12655,-1714 -12730,-1681 -12758,-1654 -12755,-1585 -12786,-1556
+# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12808,-1488
 # REMOVED --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2805,6 +2806,7 @@ Landsberger Allee: Straßenbahntrasse	3nocross 13164,13374 13235,13414 13330,1346
 # REMOVED (mitlerweile (ca. 2012) existiert für Fußgänger und Autofahrer eine Kreuzungsmöglichkeit) --- #: by: jörg (schalkau): --- #: confirmed_by: srt --- Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
 Landsberger Allee	3nocross 21475,15705 21584,15753 21709,15808
 Landsberger Allee	3nocross 19852,15201 19987,15280 20260,15434
+Landsberger Allee	3nocross 16852,14412 16632,14390 16590,14386
 Kalkhorster Weg (10 Stufen)	0:40 3904,8664
 Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9051 3816,9052 3831,9052
 Hohenzollerndamm: unpassierbarer Mittelstreifen	3nocross 3427,9010 3467,9045 3521,9059

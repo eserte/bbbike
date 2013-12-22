@@ -1813,6 +1813,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: XXX_prog in Nord->Süd-Richtung gilt eigentlich nur die Ampel über die Straßenbahntrasse
 	F 10463,13747
 	F 8553,11630
+#: XXX_prog Ampel ist auch relevant, wenn man aus In den Ministergärten nach links in die Ebertstr. abbiegt
 	X 8571,11846
 	X 21823,4210
 	X 16868,5938
@@ -1917,6 +1918,8 @@ Industriebahn	B0 -2410,13746
 	F -5877,6308
 	F 8831,13973
 	X 8442,14456
+#: note: Anforderungsampel (2x)
+#: XXX_prog: Ampel ist für Radfahrer, die den Bersarinplatz nicht auf der Fahrbahn umrunden, quasi verpflichtend
 	F 13732,12526
 	F 9298,12765
 	X 9224,14169
@@ -2385,7 +2388,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B0 17953,15221
 #: note: provisorische Ampel
 #: XXX Siehe auch Baustelle in der Voßstr.
-#: last_checked: 2013-11-12
+#: last_checked: 2013-12-22
 #: next_check: 2014-01-19
 	X::inwork 9000,11727
 	X 25451,14018
@@ -2548,14 +2551,19 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note ^^^
 	F 2944,15880
 	X 18875,13467
+#: note: Anforderungsampel
+#: XXX_prog: Ampel für Radfahrer offiziell nicht relevant
+	F 16066,11960
 ################################################################################
 #: note: Potsdam vvv
+	X -12940,-1625
 #: by: http://www.potsdam.de/cms/beitrag/10067917/966975/
 	X -12549,-1277
 #: by: http://www.potsdam.de/cms/beitrag/10044614/620526/
 	X -13051,-3101
 	X -12839,-1342
 	X -12833,-1365
+#: note: Anforderungsampel
 	F -12674,-1313
 	X -12758,-1654
 	X -13238,-1569
@@ -2655,17 +2663,17 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -13811,182
 	F -14485,-1998
 	F -15155,592
+#: note: Anforderungsampel
 	F -12515,-889
 	F -13556,-1140
 	F -9872,-4694
-	F -13212,-1356
+	F -13209,-1332
 	F -7214,-4362
 	X -13778,4492
 	X -13044,-709
 	F -11133,262
 	X 18417,10738
-#: XXX temporäre Ampel?
-#: last_checked: 2012-12-09
+#: note: Anforderungsampel
 	F -12531,-781
 	F -12223,-713
 	B -8417,-2867
@@ -2676,6 +2684,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -12432,-226
 #: XXX_prog: Ampelanlage gilt für die gesamte Brücke, auf der anderen Seite ist auch eine
 	X -9942,21
+	X -12655,-1714
 ################################################################################
 #: note: Ampeln elsewhere vvv
 #: note: zwei Drängelgitter, keine Schranke

@@ -80,7 +80,6 @@ Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,1
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1508,14508 -1369,14644 -1119,14659 -925,14631
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
-Fasanenstr.	1 5215,10711 5230,10919 5236,10994
 Alt-M¸ggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
 Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,18771 11950,18529
@@ -197,7 +196,7 @@ Darﬂer Str.	1 15000,18056 15031,18106 15181,18137
 Alfredstr.	1 16207,11937 16246,12177 16255,12224
 Fanningerstr.	1s 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
-Hagenplatz	1 1149,8538 1094,8398
+Hagenplatz	1 1167,8556 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
 Reutlinger Str.	1 7676,4216 7601,4485
 Sybel-/Waitzstr.	1 3883,10585 3764,10580 3731,10640 3726,10757
@@ -809,7 +808,7 @@ Am Lustgartenwall: Ministerien	2 -13281,-1796 -12948,-1863
 Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
 Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12839,-1342 -12718,-1327
-Am Kanal	1 -12718,-1327 -12833,-1365
+Am Kanal	1 -12718,-1327 -12747,-1336 -12833,-1365
 Yorckstr.	1 -12833,-1365 -12976,-1356 -13001,-1349 -13208,-1315
 Yorckstr.	1 -13206,-1294 -13001,-1329 -12839,-1342
 Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
@@ -826,22 +825,22 @@ Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straﬂe	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 nicht passierbarer Mittelstreifen	3nocross::ignrte -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 nicht passierbarer Mittelstreifen	3nocross::ignrte -13238,-1569 -13375,-1546 -13516,-1517
-Straﬂenbahntrasse	3nocross::ignrte -12758,-1654 -12730,-1681 -12659,-1700 -12567,-1817
-Mercure-Hotel -> Am Alten Markt: Straﬂenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12643,-1694
-Mercure-Hotel -> Lange Br¸cke: Straﬂenbahntrasse	3::igndisp -12681,-1726 -12659,-1700 -12730,-1681
-Lange Br¸cke -> Mercure-Hotel: Straﬂenbahntrasse	3::igndisp -12567,-1817 -12659,-1700 -12681,-1726
-Am Alten Markt -> Mercure-Hotel: Straﬂenbahntrasse	3::igndisp -12643,-1694 -12659,-1700 -12681,-1726
-Am Alten Markt -> Lange Br¸cke: Straﬂenbahntrasse	3::igndisp -12643,-1694 -12659,-1700 -12567,-1817
-Lange Br¸cke -> Am Alten Markt: Straﬂenbahntrasse	3::igndisp -12730,-1681 -12659,-1700 -12643,-1694
+Straﬂenbahntrasse	3nocross::ignrte -12758,-1654 -12730,-1681 -12655,-1714 -12567,-1817
+Lange Br¸cke -> Mercure-Hotel: Straﬂenbahntrasse	3::igndisp -12567,-1817 -12655,-1714 -12676,-1742
+Humboldtstr. -> Lange Br¸cke: Straﬂenbahntrasse	3::igndisp -12643,-1694 -12655,-1714 -12567,-1817
+Humboldtstr. -> Mercure-Hotel: Straﬂenbahntrasse	3::igndisp -12643,-1694 -12655,-1714 -12676,-1742
+Lange Br¸cke -> Humboldtstr.: Straﬂenbahntrasse	3::igndisp -12730,-1681 -12655,-1714 -12643,-1694
+Mercure-Hotel -> Humboldtstr.: Straﬂenbahntrasse	3::igndisp -12676,-1742 -12655,-1714 -12643,-1694
+Mercure-Hotel -> Lange Br¸cke: Straﬂenbahntrasse	3::igndisp -12676,-1742 -12655,-1714 -12730,-1681
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14213,-1695 -14143,-1662 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12756,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
-Straﬂenbahntrasse	3nocross::ignrte -12780,-1544 -12794,-1497 -12833,-1365
-Friedrich-Ebert-Str. -> Schwertfegerstr.: Straﬂenbahntrasse	3::igndisp -12780,-1544 -12794,-1497 -12870,-1493
-Schwertfegerstr. -> Friedrich-Ebert-Str.: Straﬂenbahntrasse	3::igndisp -12870,-1493 -12794,-1497 -12833,-1365
+Straﬂenbahntrasse	3nocross::ignrte -12786,-1556 -12808,-1488 -12833,-1365
+Friedrich-Ebert-Str. -> Schwertfegerstr.: Straﬂenbahntrasse	3::igndisp -12786,-1556 -12808,-1488 -12870,-1493
+Schwertfegerstr. -> Friedrich-Ebert-Str.: Straﬂenbahntrasse	3::igndisp -12870,-1493 -12808,-1488 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Br¸cke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
@@ -1590,8 +1589,8 @@ Mainzer Str. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndi
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 13785,12292 13885,12279 14020,12261
 Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13927,12370 13885,12279 14020,12261
 Frankfurter Allee -> Liebigstr.: unbequem passierbarer Mittelstreifen	3::igndisp 13785,12292 13885,12279 13927,12370
-Mittelstreifen mit Gel‰nder	3nocross::ignrte 15863,11992 16127,11950 16207,11937
-Frankfurter Allee -> Magdalenenstr.: Mittelstreifen mit Gel‰nder	3::igndisp 15863,11992 16127,11950 16158,12191
+Mittelstreifen mit Gel‰nder	3nocross::ignrte 16066,11960 16127,11950 16207,11937
+Frankfurter Allee -> Magdalenenstr.: Mittelstreifen mit Gel‰nder	3::igndisp 16066,11960 16127,11950 16158,12191
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9701,11656 9898,11679 9981,11689
 Leipziger Str. -> Jerusalemer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9701,11656 9898,11679 9896,11703
 Jerusalemer Str. -> Leipziger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9896,11703 9898,11679 9981,11689
@@ -1867,9 +1866,9 @@ Mehringdamm -> Baruther Str.: Mittelstreifen	3::igndisp 9444,9919 9387,9804 9588
 Hˆhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8380,8545
 Mittelstreifen	3nocross::ignrte 9224,9053 9225,9111 9248,9350
 Wilhelmshˆhe -> Mehringdamm: Mittelstreifen	3::igndisp 9186,9107 9225,9111 9248,9350
-Mittelstreifen, Tunnelrampe	3nocross::ignrte 3344,4488 3235,4421 3048,4305
-Reichensteiner Weg -> Unter den Eichen: Mittelstreifen, Tunnelrampe	3::igndisp 3203,4471 3235,4421 3344,4488
-Unter den Eichen -> Reichensteiner Weg: Mittelstreifen, Tunnelrampe	3::igndisp 3048,4305 3235,4421 3203,4471
+Mittelstreifen, Tunnelrampe	3nocross::ignrte 3344,4488 3264,4439 3048,4305
+Unter den Eichen -> Reichensteiner Weg: Mittelstreifen, Tunnelrampe	3::igndisp 3048,4305 3264,4439 3243,4469
+Reichensteiner Weg -> Unter den Eichen: Mittelstreifen, Tunnelrampe	3::igndisp 3243,4469 3264,4439 3344,4488
 Mittelstreifen	3nocross::ignrte 11785,9437 11757,9509 11745,9541
 Kottbusser Damm -> Pfl¸gerstr.: Mittelstreifen	3::igndisp 11745,9541 11757,9509 11934,9538
 Pfl¸gerstr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11934,9538 11757,9509 11785,9437
@@ -1997,7 +1996,6 @@ Mittelstreifen	3nocross::ignrte 10349,2188 10431,2258 10504,2321
 Lienzer Pfad -> Tauernallee: Mittelstreifen	3::igndisp 10444,2234 10431,2258 10349,2188
 Tauernallee -> Lienzer Pfad: Mittelstreifen	3::igndisp 10504,2321 10431,2258 10444,2234
 Mittelstreifen	3nocross::ignrte 10226,1515 10239,1481 10276,1383
-Straﬂenbahnhaltestelle	3nocross::ignrte -11307,133 -11390,72 -11494,-4
 Mittelstreifen	3nocross::ignrte 11500,9116 11449,9125 11136,9183
 Hasenheide, zwischen Jahnstr. und Columbiadamm -> Hasenheide: Mittelstreifen	3::igndisp 11439,9049 11449,9125 11136,9183
 Mittelstreifen	3nocross::ignrte 11500,9116 11550,9104 11629,9086
@@ -2182,7 +2180,8 @@ tragen (15 Stufen oder steile Kinderwagenrampe)	0:30:55 2956,24373
 tragen (Treppe)	0:30:-96 2854,23062
 tragen (ca. 30 Stufen)	0:30:-173 8773,10399
 tragen (ca. 25 Stufen)	0:30:-14 -18702,4551
-tragen (Treppe)	0:20:-195 -12681,-1726
+tragen (11 Stufen)	0:20:-195 -12676,-1742
+tragen (11 Stufen)	0:20:-12 -12685,-1449
 tragen (Treppe)	0:20:-234 -12625,-1703
 tragen (ca. 30 Stufen)	0:30:-246 -13802,-1856
 tragen (ca. 30 Stufen)	0:30:-90 -13733,-1856
@@ -2513,7 +2512,7 @@ Dr‰ngelgitter, f¸r Anh‰nger nicht passierbar	BNP:5:-211:trailer=no 1980,3409
 Schwingtor	BNP:5:-153:trailer=10 15054,10168
 Schwingtor	BNP:5:-153:trailer=10 15097,10255
 Schwingtor	BNP:5:0:trailer=10 7352,8390
-Schwingtor	BNP:5:28:trailer=10 7283,8265
+Schwingtor	BNP:5:35:trailer=10 7283,8265
 Schwingtor	BNP:5:-85:trailer=10 7366,8390
 Schwingtor	BNP:5:-49:trailer=10 7400,8273
 Schwingtor	BNP:5:-54:trailer=10 7289,8259
@@ -2630,6 +2629,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Alter Markt - Uferweg: Zugang hˆchstwahrscheinlich gesperrt	2::inwork -12608,-1715 -12625,-1703 -12643,-1694
 Am Zirkus: Einbahnstraﬂe	1s 9118,13070 9137,13032 9167,13046 9239,12923
 (Weg am Stadtgarten Moabit): Bauarbeiten	2::inwork 5708,14077 5685,14215
 Erna-Samuel-Str.: Einbahnstraﬂe bis zur kompletten Fertigstellung	1::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
@@ -2793,6 +2793,13 @@ Schˆnagelstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 21602,15908 215
 Landsberger Allee	3nocross::ignrte 19852,15201 19987,15280 20260,15434
 Landsberger Allee -> Parkpl. Le Prom: Landsberger Allee	3::igndisp 19852,15201 19987,15280 19953,15286
 Parkpl. Le Prom -> Landsberger Allee: Landsberger Allee	3::igndisp 19953,15286 19987,15280 20260,15434
+Landsberger Allee	3nocross::ignrte 16852,14412 16632,14390 16590,14386
+Am Wasserwerk -> Genslerstr.: Landsberger Allee	3::igndisp 16634,14373 16632,14390 16644,14401
+Am Wasserwerk -> Landsberger Allee: Landsberger Allee	3::igndisp 16634,14373 16632,14390 16590,14386
+Genslerstr. -> Am Wasserwerk: Landsberger Allee	3::igndisp 16644,14401 16632,14390 16634,14373
+Genslerstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 16644,14401 16632,14390 16852,14412
+Landsberger Allee -> Genslerstr.: Landsberger Allee	3::igndisp 16590,14386 16632,14390 16644,14401
+Landsberger Allee -> Am Wasserwerk: Landsberger Allee	3::igndisp 16852,14412 16632,14390 16634,14373
 Kalkhorster Weg (10 Stufen)	0:40:-199 3904,8664
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 3688,9051 3741,9051 3816,9052 3831,9052
 Hohenzollerndamm -> Hoffmann-von-Fallersleben-Pl.: unbequem passierbarer Mittelstreifen	3::igndisp 3816,9052 3741,9051 3741,8955
@@ -3211,6 +3218,8 @@ Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18216,11656 18520,11685 18624,1171
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18624,11712 18626,11742
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
 Landsberger Allee, linker Gehweg	1::igndisp 13078,13330 12974,13289
+Landsberger Allee, linker Gehweg	1::igndisp 16665,14420 16590,14409
+Landsberger Allee, Fuﬂg‰ngerampel	1::igndisp 16590,14409 16590,14386
 Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060
 Bundesallee, linker Gehweg zur Durlacher Str.	1::igndisp 5399,8344 5438,8402
 Bundesallee, linker Gehweg zur Straﬂe Am Volkspark	1::igndisp 5419,8415 5399,8344

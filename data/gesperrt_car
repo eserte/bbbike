@@ -114,7 +114,7 @@ Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5045,7623
 Wassergasse	1 11034,11895 11024,11789
 Kienitzer Str.	1 12830,8031 12692,7996 12583,7974 12466,7946
 Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9426,3797 9731,3889
-Almstadtstr.	1 10790,13565 10767,13443 10757,13401 10699,13173
+Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
 Straßenbahntrasse	3nocross::ignrte 10976,13229 11012,13278 11070,13357
@@ -287,15 +287,15 @@ Siegfriedstr. -> Siegfriedstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12477,697
 Siegfriedstr. -> Hermannstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12477,6975 12340,6947 12348,6923
 Siegfriedstr. -> Hermannstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12303,6937 12340,6947 12317,7007
 Hermannstr. -> Siegfriedstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12348,6923 12340,6947 12303,6937
-Almstadtstr.	1 10790,13565 10767,13443 10757,13401 10699,13173
+Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
 Lohmeyerstr.	1 3348,12314 3409,12451
-Martin-Luther-Str.	3nocross::ignrte 6514,10088 6514,9947 6512,9866
-Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6633,9980 6514,9947 6512,9866
-Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6633,9980 6514,9947 6270,9910
-Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6514,10088 6514,9947 6633,9980
-Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6512,9866 6514,9947 6270,9910
-Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6270,9910 6514,9947 6633,9980
-Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6270,9910 6514,9947 6514,10088
+Martin-Luther-Str.	3nocross::ignrte 6514,10088 6512,9962 6512,9866
+Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6630,9990 6512,9962 6512,9866
+Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6630,9990 6512,9962 6270,9910
+Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6514,10088 6512,9962 6630,9990
+Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6512,9866 6512,9962 6270,9910
+Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6270,9910 6512,9962 6630,9990
+Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6270,9910 6512,9962 6514,10088
 Straßenbahntrasse	3nocross::ignrte 12621,14313 12729,14227 12901,14093
 Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12901,14093 12729,14227 12608,14070
 Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12608,14070 12729,14227 12782,14300
@@ -843,10 +843,10 @@ Winterfeldtstr. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7369,10018 7539,99
 Winterfeldtstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7579,10183
 Potsdamer Str. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7526,9791 7539,9970 7369,10018
 Potsdamer Str. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7579,10183 7539,9970 7648,9944
-Mittelstreifen	3nocross::ignrte 10779,13793 10832,13877 10895,13961
-Schönhauser Allee -> Fehrbelliner Str.: Mittelstreifen	3::igndisp 10779,13793 10832,13877 10695,13952
-Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10695,13952 10832,13877 10895,13961
-Schönhauser Allee: Abbiegen verboten	3 10703,13832 10779,13793 10832,13877
+Mittelstreifen	3nocross::ignrte 10779,13793 10836,13883 10895,13961
+Schönhauser Allee -> Fehrbelliner Str.: Mittelstreifen	3::igndisp 10779,13793 10836,13883 10697,13956
+Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10697,13956 10836,13883 10895,13961
+Schönhauser Allee: Abbiegen verboten	3 10703,13832 10779,13793 10836,13883
 Straßenbahntrasse	3nocross::ignrte 21796,4517 21775,4470 21773,4440
 Rudower Str. -> Köllnischer Pl.: Straßenbahntrasse	3::igndisp 21585,4459 21775,4470 21796,4517
 Grünauer Str. -> Rudower Str.: Straßenbahntrasse	3::igndisp 21773,4440 21775,4470 21585,4459
@@ -963,7 +963,7 @@ Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
 Neue Schönholzer Str.	1 10089,18180 10141,18030 10179,17772
 Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
-Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12712,-2256 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
+Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12697,-2235 -12708,-2257 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
 Mittelstreifen	3nocross::ignrte 6161,9128 6264,9156 6361,9175
 Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6361,9175
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6279,9034
@@ -1606,12 +1606,12 @@ Temporäre Umleitungsstrecke: eigentlich nur für Versorgung und Taxis offen	2 187
 (BAB113 - Flughafen Berlin-Brandenburg)	1 18048,-4186 18220,-4115 18329,-4154 18400,-4258 18497,-4285
 (Flughafen Berlin-Brandenburg - BAB113)	1 18497,-4285 18444,-4329 18429,-4421 18393,-4518 18222,-4592
 Elly-Beinhorn-Ring	1 18386,-4109 18423,-4094 18861,-3921 19019,-3859 19105,-3940 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
-Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3nocross::ignrte 6502,9782 6512,9866 6514,9947
+Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3nocross::ignrte 6502,9782 6512,9866 6512,9962
 Luitpoldstr. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6463,9862 6512,9866 6611,9879
-Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6463,9862 6512,9866 6514,9947
+Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6463,9862 6512,9866 6512,9962
 Luitpoldstr. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6611,9879 6512,9866 6463,9862
 Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6611,9879 6512,9866 6502,9782
-Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6514,9947 6512,9866 6611,9879
+Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6512,9962 6512,9866 6611,9879
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6502,9782 6512,9866 6463,9862
 Straße 600: Bake	3 -6890,15692 -6939,15700 -6977,15706
 Straße 600: Bake	3 -6977,15706 -6939,15700 -6890,15692
@@ -1648,7 +1648,7 @@ Fasanenstr. (Ahrensfelde): Poller	3 21895,19198 22031,19261 22049,19268
 Fasanenstr. (Ahrensfelde): Poller	3 22049,19268 22031,19261 21895,19198
 Oelder Weg	1 1967,18743 1965,18686
 Bernhard-Lichtenberg-Platz	1 2643,18738 2731,18729 2867,18736
-Fasanenstr.	1 5196,10398 5215,10711
+Fasanenstr.	1 5196,10398 5215,10711 5230,10919 5236,10994 5258,11285
 Straßenbahntrasse	3nocross::ignrte 12030,15968 12075,16144 12090,16199
 Krügerstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 12013,16120 12075,16144 12090,16199
 Prenzlauer Allee -> Krügerstr.: Straßenbahntrasse	3::igndisp 12030,15968 12075,16144 12013,16120
@@ -1665,3 +1665,10 @@ Ibsenstr.: Barriere	3 10635,16706 10632,16644 10549,16650
 Ibsenstr.: Barriere	3 10793,16636 10632,16644 10549,16650
 Paul-Junius-Str.	1 15096,12974 15090,13116
 Schulzendorfer Str.	1 -1538,22800 -2024,22899
+Betonblöcke	3 -12870,-1493 -12808,-1488 -12786,-1556
+Betonblöcke	3 -12870,-1493 -12808,-1488 -12833,-1365
+Betonblöcke	3 -12786,-1556 -12808,-1488 -12870,-1493
+Betonblöcke	3 -12833,-1365 -12808,-1488 -12870,-1493
+Straßenbahnhaltestelle	3nocross::ignrte -11307,133 -11390,72 -11494,-4
+Berliner Str. (B1) -> Leonardo-da-Vinci-Str.: Straßenbahnhaltestelle	3::igndisp -11494,-4 -11390,72 -11609,400
+Leonardo-da-Vinci-Str. -> Berliner Str. (B1): Straßenbahnhaltestelle	3::igndisp -11609,400 -11390,72 -11307,133

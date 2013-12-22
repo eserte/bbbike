@@ -2244,7 +2244,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Luitpoldstr., Durchfahrt über Schulhof: nicht immer geöffnet!',
          'from' => undef,
          'id' => 1957,
-         'data' => '	2::temp 6611,9879 6670,9887
+         'data' => '	2::temp 6611,9879 6688,9897
 ',
          'type' => 'gesperrt'
        },
@@ -3276,7 +3276,7 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2489,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-11-19
+#: last_checked: 2013-12-22
 #: check_frequency: 30d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
@@ -3320,16 +3320,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131017.1305.390466.html',
-         'until' => 1387666799,
-         'text' => 'Lengeder Str.: Bauarbeiten zwischen Montanstr. und Roedernallee, Einbahnstraße offen in Richtung Montanstr., ab dem 21. Oktober 2013 bis Ende Dezember 2013',
-         'from' => 1382220000,
-         'id' => 2501,
-         'data' => 'userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6247,19454
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_020388',
          'until' => 1388502000,
@@ -3471,8 +3462,8 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
        undef,
        {
          'source_id' => 'IM_020924',
-         'until' => 1387551600,
-         'text' => 'Neheimer Str.: Baustelle, Fahrtbahn Richtung Borsigdamm gesperrt, bis zum 20. Dezember 2013 ',
+         'until' => 1409320800,
+         'text' => 'Neheimer Str.: Baustelle, Fahrbahn Richtung Borsigdamm gesperrt, bis Ende August 2014',
          'from' => 1386667020,
          'id' => 2531,
          'data' => 'userdel	q4::inwork; 1229,18750 1328,18878 1447,18933 1528,18971

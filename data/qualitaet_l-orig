@@ -508,7 +508,7 @@ Heilig-Geist-Str. (Potsdam): Kopfsteinpflaster	Q2 -12070,-1153 -12070,-1269 -120
 T¸rkstr.: Kopfsteinpflaster	Q2 -12248,-1107 -12078,-1068 -11960,-1041
 Holzmarktstr. (Potsdam): Asphalt	Q0 -12168,-965 -12100,-962 -11910,-945
 Mangerstr. (Potsdam): Kopfsteinpflaster	Q2+ -11669,-138 -11751,-58
-Mangerstr. (Potsdam): glattes Kleinsteinpflaster	Q1 -11751,-58 -11831,-70 -11903,-71 -12000,-156 -12054,-274
+Mangerstr. (Potsdam): glattes Kleinsteinpflaster	Q1 -11751,-58 -11831,-70 -11903,-71 -11947,-108 -12054,-274
 Mangerstr. (Potsdam): Asphalt	Q0 -12054,-274 -12123,-294 -12265,-418
 Wilhelm-Leuschner-Str.: schlechtes Kopfsteinpflaster (Potsdam)	Q3 -10059,374 -10097,200
 Gutenbergstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -12886,-869 -13025,-901 -13158,-930 -13264,-952 -13433,-991
@@ -551,7 +551,7 @@ Griebnitzstr. (Potsdam): Kopfsteinpflaster	Q2 -9627,-27 -9432,-57
 Griebnitzstr. (Potsdam): Waldweg	Q1 -9432,-57 -9399,-139
 Albert-Einstein-Str. (Potsdam): Kopfsteinpflaster	Q2+ -12358,-2278 -12330,-2297
 Albert-Einstein-Str. (Potsdam): asphaltiert, im Wohngebiet teils m‰ﬂige Stellen, im Wald sehr gut	Q0- -12330,-2297 -12335,-2571 -12317,-2637 -12219,-2760 -12222,-2932
-Schloﬂstr. (Potsdam): Kopfsteinpflaster	Q2 -12923,-1558 -12882,-1565 -12772,-1577
+Schloﬂstr. (Potsdam): Kopfsteinpflaster	Q2 -12923,-1558 -12882,-1565 -12776,-1575
 Johannes-Lepsius-Str.: Asphalt	Q0 -13240,32 -13232,98 -13226,157 -13225,179 -13209,260
 Johannes-Lepsius-Str.: Verbundsteinpflaster	Q0- -13209,260 -13244,281
 (Johannes-Lepsius-Str. - Kiepenheuerallee): Asphalt	Q0 -13244,281 -13203,434
@@ -945,7 +945,7 @@ Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
 	Q0 -19449,-5977 -19420,-6014 -19420,-6060 -19534,-6344 -19760,-6450 -20051,-6631 -20281,-6915 -20472,-7292 -20740,-7375 -20778,-7496 -20684,-7570 -20725,-8059 -20893,-8318 -21318,-8660 -21561,-8963 -21590,-9622
 	Q0 -20816,-10818 -20590,-10806 -20112,-10437 -19606,-9698 -19146,-9196 -18909,-9080 -18756,-8962 -18631,-8412 -18431,-7978 -17984,-7684 -17963,-7670 -17650,-7464 -17334,-7253 -17267,-7134 -16995,-7004 -16812,-7010
 	Q0 -16280,-6747 -15811,-6533 -15472,-6233 -15275,-5928 -15228,-5678 -14947,-5405 -14795,-5169 -14710,-4977 -14712,-4614 -14267,-4206 -14119,-3845 -14095,-3670 -14031,-3554 -14038,-3356 -13771,-3023 -13718,-2991 -13481,-2956 -13381,-2943 -13155,-2913 -13062,-2901
-	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12712,-2256 -12534,-2125 -12431,-2096
+	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12708,-2257 -12697,-2235 -12620,-2174 -12534,-2125 -12431,-2096
 	Q0 -17643,-7028 -17703,-7228 -18009,-7528
 	Q0 -5736,-3629 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609 -3521,-2552 -2984,-2184 -2831,-1956 -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -248,-1160 -71,-1037 348,-743 465,-662 586,-627 741,-584 925,-684 1212,-706 1346,-762 1453,-746
 	Q0 3467,560 3417,524 3263,427 3187,380 2968,235 2763,103 2560,-25 2457,-100 2338,-210 2215,-328 1974,-440 1677,-582 1453,-746
@@ -1659,12 +1659,9 @@ Joliot-Curie-Str.: Asphalt	Q0 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-143
 Am Kanal, Nebenstraﬂe.: Asphalt	Q0 -12542,-1305 -12657,-1338
 Am Alten Markt: Asphalt	Q0 -12666,-1311 -12657,-1338 -12628,-1423
 #: note: "historisierendes" Verbundsteinpflaster
-Am Alten Markt: Verbundsteinpflaster	Q0- -12628,-1423 -12614,-1471 -12583,-1552
-#: note: aus der Straﬂenbahn heraus gesehen:
-#: XXX bleibt der Asphalt in Zukunft bestehen, oder wird er durch Verbundsteinpflaster ersetzt?
-#: last_checked: 2013-05-09
-#: next_check: 2013-09-01
-Am Alten Markt: Asphalt	Q0 -12659,-1700 -12643,-1694 -12624,-1598 -12583,-1552
+Alter Markt: Verbundsteinpflaster	Q0- -12628,-1423 -12614,-1471 -12583,-1552
+# REMOVED (wahrscheinlich permanent?) --- #: note: aus der Straﬂenbahn heraus gesehen: --- #: XXX bleibt der Asphalt in Zukunft bestehen, oder wird er durch Verbundsteinpflaster ersetzt? --- #: last_checked: 2013-05-09 --- #: next_check: 2013-09-01
+Humboldtstr.: Asphalt	Q0 -12655,-1714 -12643,-1694 -12624,-1598 -12583,-1552
 Ebr‰erstr.: Kopfsteinpflaster, evtl. OK	Q2 -12981,-1222 -12854,-1243
 Wilhelm-Staab-Str.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ -13001,-1329 -12981,-1222 -12961,-1105
 Eltesterstr.: Kopfsteinpflaster	Q2 -12062,-1378 -11981,-1390
@@ -2027,8 +2024,13 @@ Schloﬂstr.: Kopfsteinpflaster	Q2 -12946,-1659 -12940,-1625 -12927,-1576 -12923,-
 (Lustgarten): wassergebundene Decke	Q1 -12931,-1761 -12678,-1812
 Am Hinzenberg: Beton	Q0 -12708,-1928 -12894,-2111 -12946,-2119
 Am Hinzenberg: gute Pflasterung	Q0 -12708,-1928 -12678,-1812 -12669,-1768
-Am Alten Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12780,-1544
-Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12794,-1497 -12870,-1493
+Alter Markt: gepflastert	Q2+ -12614,-1471 -12619,-1549 -12624,-1598
+Alter Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12728,-1539
+#: XXX bleibt es hier asphaltiert?
+#: last_checked: 2013-12-22
+#: next_check: 2014-05-22
+Alter Markt: provisorischer Asphalt	Q0- -12728,-1539 -12786,-1556
+Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12808,-1488 -12870,-1493
 Am Neuen Markt: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- -12882,-1565 -12870,-1493
 Am Neuen Markt: teils schlechtes Kopfsteinpflaster	Q3 -12870,-1493 -12865,-1462 -12913,-1451
 Siefertstr.: teils schlechtes Kopfsteinpflaster	Q3 -12913,-1451 -12975,-1363 -12976,-1356
@@ -3231,6 +3233,8 @@ Kutschersteig: Verbundsteinpflaster	Q1 21895,19198 21794,19159 21778,19155 21724
 An der alten Post: Verbundsteinpflaster	Q1 21724,19139 21760,19077 21814,19105 21778,19155
 (Mohnblumenweg - Kutschersteig): Verbundsteinpflaster	Q1 21619,19235 21638,19181 21660,19120
 zum Gehrensee: wassergebundene Decke	Q1 21101,19448 21077,19452
+Leonardo-da-Vinci-Str. (Potsdam): Asphalt	Q0 -11390,72 -11609,400
+Am Alten Markt: Gehwegplatten	Q1 -12747,-1336 -12727,-1416 -12694,-1408 -12685,-1449 -12677,-1536
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:

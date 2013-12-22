@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="4"
 #: osm_watch: way id="153373877" version="4"
-#: last_checked: 2013-11-12
+#: last_checked: 2013-12-22
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-11-25
+#: last_checked: 2013-12-20
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10915,11535 10815,11662
 # 
@@ -69,14 +69,14 @@ Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork; 3734,12715 3716,12
 Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2706,13291 -2728,13269 -2974,13188 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
 # 
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
-#: last_checked: 2013-09-05
-#: check_frequency: 100d
 #: osm_watch: way id="47266663" version="3"
 #: osm_watch: way id="47267054" version="1"
-Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2327,8717 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2114,7742
+#: last_checked: 2013-12-22
+#: check_frequency: 100d
+Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2320,8722 2299,8675 2279,8638 2201,8519 2132,8422 2129,8333 2106,8075 2087,7811 2114,7742
 # 
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
-#: last_checked: 2013-05-12
+#: last_checked: 2013-12-22
 #: check_frequency: 90d
 #: osm_watch: way id="4323788" version="13"
 #: osm_watch: way id="23109081" version="6"
@@ -94,7 +94,7 @@ Großziethener - Barnetstr.: werden hier die bestehenden Radwege verbessert oder 
 Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243,-1876 10301,-1891 10303,-1954
 # 
 #: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
-#: last_checked: 2013-12-02
+#: last_checked: 2013-12-20
 #: check_frequency: 100d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -182,7 +182,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-11-05
+#: last_checked: 2013-12-20
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -284,10 +284,7 @@ Wilhelmstr.: Radspuren bis 2015 geplant	?::projected; -5501,11251 -5455,11321 -5
 #: check_frequency: 90d
 Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,6404 5823,6413
 # 
-#: last_checked: 2013-05-10
-#: check_frequency: 90d
-Königstr.: Radspuren bis 2015 geplant	?::projected -9412,546 -9730,514 -9969,519 -10052,521 -10269,445 -10593,476
-# 
+# REMOVED (realisiert) --- #: last_checked: 2013-05-10 --- #: check_frequency: 90d --- Königstr.: Radspuren bis 2015 geplant	?::projected -9412,546 -9730,514 -9969,519 -10052,521 -10269,445 -10593,476
 # REMOVED (realisiert) --- #: last_checked: 2013-07-06 --- #: next_check: 2013-10-13 --- Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
 # 
 #: last_checked: 2013-10-21
@@ -358,12 +355,9 @@ Am Wuhlebogen: wann wird die Straße fertiggestellt? Qualität?	?::projected 21671
 Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
 # 
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
-#: last_checked: 2013-12-09
+#: last_checked: 2013-12-22
 #: priority: #A
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung in Bau	?::inwork; 13588,11490 13565,11492 13473,11456
-# 
-#: last_checked: 2013-12-17
-Neue Bahnhofstr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14879,11182 14811,11067 14752,11041
 # 
 # REMOVED (neu asphaltiert) --- #: last_checked: 2013-11-11 --- Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
 # 
@@ -441,15 +435,7 @@ Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected
 # 
 # REMOVED (aufgenommen, Radweg) --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130730.0800.387345.html --- #: source_id: INKO_120069 (hier aber nur bis Ende September) --- #: next_check: 2013-10-05 --- Ruppiner Chaussee: Fahrradstreifen nach den Bauarbeiten?	?::inwork -1872,24336 -1953,24435 -1982,24514
 # REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html --- #: XXX Mitte Oktober sind die Sanierungsarbeiten fertig, dann diesen Eintrag entfernen --- Robert-Siewert-Str.: Bauarbeiten, gibt es Einschränkungen für Radfahrer, insbesondere im Abschnitt des "antiken" Radwegs?	?::inwork 19242,9815 19398,9833 19459,9842 19536,9853 19669,9876
-# 
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html ("Durchführungszeit zwei Wochen, allerdings wurde der Termin (16.9.) nicht realisiert)
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5676 (Vorschlag: "Behelfsampel")
-#: XXX für Radfahrer evtl. relevant, da Überquerungsmöglichkeit zur Magdalenenstr.
-#: XXX evtl. auch ubahnhof_bg anpassen?
-#: source_id: IM_020837	(vielleicht)
-#: last_checked: 2013-11-17 (aus der Ferne nichts gesehen)
-#: next_check: 2013-12-20
-U Magdalenenstr.: Bau einer Fußgängerampel geplant	?::projected 16057,11988 16093,11927
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html ("Durchführungszeit zwei Wochen, allerdings wurde der Termin (16.9.) nicht realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5676 (Vorschlag: "Behelfsampel") --- #: XXX für Radfahrer evtl. relevant, da Überquerungsmöglichkeit zur Magdalenenstr. --- #: XXX evtl. auch ubahnhof_bg anpassen? --- #: source_id: IM_020837	(vielleicht) --- #: last_checked: 2013-11-17 (aus der Ferne nichts gesehen) --- #: next_check: 2013-12-20 --- U Magdalenenstr.: Bau einer Fußgängerampel geplant	?::projected 16057,11988 16093,11927
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130723.1140.387220.html
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20131128.1510.392270.html ("zweite Jahreshälfte")
@@ -533,7 +519,7 @@ Planstraße zwischen Theodorstr. und Pilgramer Str.: Straße in Planung, Qualität?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 (Eröffnungstermin)
 #: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen?
 #: XXX gehört zu Tempelhof-Schöneberg
-#: last_checked: 2013-12-14 (nur die ersten Meter existieren an der Monumentenstr.)
+#: last_checked: 2013-12-22 (nur die ersten Meter existieren an der Monumentenstr.)
 #: priority: #A
 Am Lokdepot: Bau einer Erschließungsstraße	?::inwork 8390,8879 8389,9087
 # 
@@ -629,7 +615,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
-#: last_checked: 2013-10-31
+#: last_checked: 2013-12-20
 #: check_frequency: 60d
 #: priority: #C
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13860,8599 13898,8613
@@ -773,14 +759,10 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: osm_watch: way id="155605306" version="1"
 #: osm_watch: way id="155605307" version="4"
 #: XXX laut osm ist der westliche Abschnitt bereits asphaltiert
-#: last_checked: 2013-11-19 vvv
-#: next_check: 2013-12-13 vvv
-#: priority: #A vvv
-Herrfurthstr.: Asphaltierungsarbeiten	?::inwork 11472,7899 11573,7924 11647,7940
+#: last_checked: 2013-12-20
+#: check_frequency: 60d
+# REMOVED (realisiert) --- Herrfurthstr.: Asphaltierungsarbeiten	?::inwork 11472,7899 11573,7924 11647,7940
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11833,7980 11979,8014
-#: priority ^^^
-#: next_check ^^^
-#: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: osm_watch: way id="182693863" version="1"
 #: last_checked: 2013-11-22
@@ -803,8 +785,8 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues 
 #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Brücke)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619&date=20130910 (Antwort)
-#: last_checked: 2013-12-14 (südliche Rampe noch in Bau) vvv
-#: next_check: 2013-12-30 vvv
+#: last_checked: 2013-12-22 (südliche Rampe noch in Bau) vvv
+#: next_check: 2014-01-30 vvv
 #: osm_watch: way id="187902666" version="2"
 Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert, asphaltiert	?::projected 8333,9583 8338,9443 8388,9242 8373,9022 8389,9087
 #: by: http://gleisdreieck-blog.de/wordpress/wp-content/uploads/eingang-yorck-collignon.jpg
@@ -822,8 +804,8 @@ Eingang zum Flaschenhalspark: betoniert, wahrscheinlich auch mit Drängelgittern?
 Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8204,9001 8200,8920 7998,8317
 # 
 #: XXX_osm: fehlt bei osm komplett
-#: last_checked: 2011-12-25 (keine Bautätigkeit feststellbar)
-#: next_check: 2012-06-01
+#: last_checked: 2013-12-22 (Bautätigkeit)
+#: check_frequency: 180d
 Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,133 -11388,270
 # 
 # REMVOED --- mitten auf dem Weg wird gerade ein Haus gebaut; außerdem gab es in einem Amtsblatt eine "Entwidmung als Straßenland" --- #: last_checked: 2011-10-03 --- #: next_check: 2012-02-15 --- #: XXX zurzeit Bauarbeiten. Wahrscheinlich Gehwegplatten --- U Zwickauer Damm - U Wutzkyallee: für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 15622,2051 15622,2037 15312,2010
@@ -915,12 +897,12 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 #: next_check ^^^
 #: last_checked ^^^
 # 
-# REMOVED (nicht passiert) --- #: last_checked: 2011-12-25 (südöstlicher Abschnitt) --- #: next_check: 2012-03-01 --- #: by: http://www.potsdam.de/cms/beitrag/10061626/966975/ --- Mangerstr. (Potsdam): Bauarbeiten bis September 2011, danach asphaltiert	?::inwork -11669,-138 -11751,-58 -11831,-70 -11903,-71 -12000,-156 -12054,-274
-# REMOVED (passiert) --- #: next_check: 2011-11-15 --- #: by: http://www.potsdam.de/cms/beitrag/10079162/1191938/ --- Mangerstr. (Potsdam): Bauarbeiten bis November 2011, danach vielleicht etwas besseres Kleinsteinpflaster?	?::inwork -12054,-274 -12000,-156 -11903,-71 -11831,-70 -11751,-58
+# REMOVED (nicht passiert) --- #: last_checked: 2011-12-25 (südöstlicher Abschnitt) --- #: next_check: 2012-03-01 --- #: by: http://www.potsdam.de/cms/beitrag/10061626/966975/ --- Mangerstr. (Potsdam): Bauarbeiten bis September 2011, danach asphaltiert	?::inwork -11669,-138 -11751,-58 -11831,-70 -11903,-71 -11947,-108 -12054,-274
+# REMOVED (passiert) --- #: next_check: 2011-11-15 --- #: by: http://www.potsdam.de/cms/beitrag/10079162/1191938/ --- Mangerstr. (Potsdam): Bauarbeiten bis November 2011, danach vielleicht etwas besseres Kleinsteinpflaster?	?::inwork -12054,-274 -11947,-108 -11903,-71 -11831,-70 -11751,-58
 # 
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
-#
+# 
 #: last_checked: 2013-12-11 vvv
 #: next_check: 2014-03-02 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
@@ -931,7 +913,7 @@ Falkoniergasse: Genaue Lage? Qualität?	?::inwork 9945,12180 9915,12259
 Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 #: next_check ^^^
 #: last_checked ^^^
-#
+# 
 #: next_check: 2010-05-01
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20091119.1240.146739.html
 Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010): danach hat der Weg eine neue wassergebundene Decke	?::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
@@ -968,25 +950,13 @@ Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18928,37
 #: next_check: 2014-12-01
 Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18771,3871 18701,3806 18520,3812 18229,4127 18392,4279
 # REMOVED --- #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/ --- #: by: (URL existiert nicht mehr) http://www.potsdam.de/cms/beitrag/10058808/757395/ --- #: XXX wo wird die Verbindung genau entlanggeführt? --- Neuer Garten (Potsdam): neue Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12263,-403 -12262,-362 -12328,-212 -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
-# 
-#: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend, PLZ=14467, Eintrag in Potsdam.coords.data fehlt
-#: XXX siehe auch Eintrag in landstrassen-orig, eventuell wird sich die Humboldtstr. auf der anderen Seite des Schlosses befinden?
-Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
-# 
+# REMOVED --- #: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend, PLZ=14467, Eintrag in Potsdam.coords.data fehlt --- #: XXX siehe auch Eintrag in landstrassen-orig, eventuell wird sich die Humboldtstr. auf der anderen Seite des Schlosses befinden? --- Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
 # REMOVED (hier wird wohl nichts weiter passieren - Radwege existieren, und die Qualität ist wohl egal?) --- #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv --- #: last_checked: 2011-06-25 --- Alt-Biesdorf (nördliche Seite): Bau von Radwegen	?::inwork; 22242,11269 21960,11269 21860,11278 21750,11319 21624,11379 21398,11482 21311,11528 --- #: last_checked: 2011-06-25 --- Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von asphaltierten Radwegen	?::inwork; 22242,11269 22326,11266 22484,11270 --- #: by ^^^
-# 
-#: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
-#: osm_watch: way id="8094229" version="12"
-#: last_checked: 2013-11-01 (Markierungen sind schon vorbereitet; evtl. wird noch die Ampelanlage an der Hardenbergstr. erweitert werden müssen)
-#: next_check: 2013-12-01
-Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::inwork 5258,11285 5236,10994
-#: XXX laut osm schon eröffnet, aber das ist hier definitiv zum Zeitpunkt der Datensatzänderung nicht passiert
-#: add_fragezeichen: Ist die Fasanenstr. zwischen Kurfürstendamm und Kantstr. für Radfahrer entgegen der Einbahnstraßenrichtung befahrbar?
-#: last_checked: 2013-11-12 (Schilder sind schon verbereitet)
-#: next_check: 2013-12-01
-Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::inwork 5236,10994 5230,10919 5215,10711
+# REMOVED (realisiert) --- #: osm_watch: way id="8094229" version="12" --- #: last_checked: 2013-11-01 (Markierungen sind schon vorbereitet; evtl. wird noch die Ampelanlage an der Hardenbergstr. erweitert werden müssen) --- #: next_check: 2013-12-01 --- Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::inwork 5258,11285 5236,10994
+# REMOVED (realisiert) --- #: XXX laut osm schon eröffnet, aber das ist hier definitiv zum Zeitpunkt der Datensatzänderung nicht passiert --- #: add_fragezeichen: Ist die Fasanenstr. zwischen Kurfürstendamm und Kantstr. für Radfahrer entgegen der Einbahnstraßenrichtung befahrbar? --- #: last_checked: 2013-11-12 (Schilder sind schon verbereitet) --- #: next_check: 2013-12-01 --- Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::inwork 5236,10994 5230,10919 5215,10711
 # REMOVED (realisiert) --- Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5215,10711 5207,10399
 # 
+#: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
 #: last_checked: 2013-11-22
 #: check_frequency: 120d
@@ -1128,7 +1098,7 @@ Am Hechtgraben: Name, Qualität, Beleuchtung?	? 18853,18959 18879,18954 18923,189
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2013-12-02
+#: last_checked: 2013-12-22
 #: check_frequency: 60d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
@@ -1162,6 +1132,8 @@ Otto-Braun-Platz (Potsdam): befindet sich hier der Platz? Ist er ausgeschildert?
 # 
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14467
 #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf
+#: last_checked: 2013-12-22
+#: next_check: 2014-10-01
 Neue Plantage (Potsdam): befindet sich hier die Straße? Qualität?	? -13108,-1407 -12995,-1490
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130805.1100.387522.html
@@ -1280,8 +1252,9 @@ Fußweg zur Gehrenseestr.: genaue Lage, Qualität?	?::projected 17607,16328 17631,
 #: by: http://w6898n4pa.homepage.t-online.de/Lage.pdf (Lageplan)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
 #: XXX fehlt in Berlin.coords.data
+#: last_checked: 2013-12-20
 #: next_check: 2014-09-01
-Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::projected 15752,12879 15747,12985 15808,12989
+Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::projected 15747,12880 15747,12985 15808,12989
 # 
 # REMOVED (abgelehnt, siehe Schlussbericht) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458 --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036560602837/560602837/00092292/92-Anlagen/04/B0359SB.pdf (Schlussbericht) --- #: last_checked: 2013-06-22 --- #: check_frequency: 90d --- Brandenburgplatz: wird hier eine Fußgängerampel eingerichtet?	? 23363,5714 23309,5704
 # 
@@ -1353,7 +1326,7 @@ Am Brendegraben: Asphalt, Q0, unbeleuchtet	? 13231,22880 13203,22892 13149,23024
 #: XXX ^^^
 #: XXX ^^^
 # 
-Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsblatt 3/2013), ist es für Radfahrer irgendwie relevant?	? -12727,-1416 -12703,-1410
+# REMOVED --- Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsblatt 3/2013), ist es für Radfahrer irgendwie relevant?	? -12727,-1416 -12703,-1410
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
 #: last_checked: 2013-09-27
@@ -1361,7 +1334,7 @@ Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsbla
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
-#: last_checked: 2013-09-04
+#: last_checked: 2013-12-20
 #: check_frequency: 90d
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
@@ -1734,7 +1707,7 @@ Freesienweg: geplante Straße, wo wird sie genau liegen? Qualität?	?::projected 1
 #: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
-#: last_checked: 2013-10-29 vvv
+#: last_checked: 2013-12-20 vvv
 #: next_check: 2014-03-29 vvv
 Alzeyweg: genaue Lage? Qualität? PLZ=10365	? 17376,12422 17366,12357 17365,12301
 #: XXX Eintrag in str_cont_ausnahme fehlt
@@ -1800,7 +1773,7 @@ Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf
-#: last_checked: 2013-11-19
+#: last_checked: 2013-12-22
 #: check_frequency: 30d
 Cheruskerpark: entsteht hier eine neue Wegverbindung?	?::projected 7391,8231 7369,8278
 # 
@@ -1823,27 +1796,24 @@ Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -15999,1387 -16
 #: next_check: 2014-03-01
 Ersatz für die F24?	? 29959,3031 29968,2986
 # 
+#: last_checked: 2013-12-22 vvv
+#: check_frequency: 180d vvv
 #: XXX neue Straßen in Potsdam: Qualität? Genauer Verlauf? vvv
 #: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
 #: XXX fehlt in Potsdam.coords.data, PLZ=14473 vvv
 #: osm_watch: way id="174465897" version="1" brb
-#: last_checked: 2013-05-09
-#: next_check: 2013-11-09
 An der Kornmühle (Potsdam)	?::inwork -12712,-2172 -12728,-2227
 #: osm_watch: way id="174465898" version="1" brb
-#: last_checked: 2013-05-09
-#: next_check: 2013-11-09
 Am Speicher (Potsdam)	?::inwork -12783,-2269 -12771,-2220 -12754,-2154
 #: XXX ^^^
 #: by: ^^^
 #: XXX ^^^
-# 
 #: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
 #: XXX fehlt in Potsdam.coords.data, PLZ=14473
 #: osm_watch: way id="174465895" version="1" brb
-#: last_checked: 2013-05-09
-#: next_check: 2013-11-09
-Altstadtblick (Potsdam): neue Straße in Potsdam, Qualität? Genauer Verlauf? (Planstraße D)	? -12712,-2233 -12728,-2227 -12771,-2220 -12803,-2219
+Altstadtblick (Potsdam): neue Straße in Potsdam, Qualität? Genauer Verlauf? (Planstraße D)	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
+#: check_frequency: ^^^
+#: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straßenname)
 #: by: http://www.fatkoehl.com/index.php?article_id=31
@@ -2778,9 +2748,7 @@ bei Gollwitz: fehlendes Stück des Havelradwegs? Qualität?	? -40352,2075 -40343,1
 Zützen - ehem. B2: Qualität?	? 66091,69964 65762,70023 65345,70168 65207,70639
 Oder-Neiße-Radweg - Stützkow: Qualität?	? 61783,66148 61731,66250 61584,66212
 Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610
-#: XXX Privatstraße, Durchfahrt verboten
-#: XXX südicher Abschnitt ist asphaltiert
-Leonardo-da-Vinci-Str. (Potsdam): Qualität des nördlichen Abschnitts?	? -11390,72 -11609,400
+Leonardo-da-Vinci-Str. (Potsdam): Qualität des nördlichen Abschnitts? Ist die Durchfahrt zur Seestr. möglich (für Radfahrer, für Autos)?	? -11609,400 -11534,289
 Im Wustrocken: Qualität?	? 27081,-18824 27020,-18866 26961,-18891 26906,-18961 26825,-19031
 #: XXX als B1 kennzeichnen!
 Ortsumgehung Küstrin-Kietz: für Radfahrer befahrbar? Qualität?	? 90278,18738 90572,19032 91116,19713 91940,20028 92606,20056 93050,20293 93286,20636 93405,20640
@@ -3377,7 +3345,7 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Realisierung noch nicht erfolgt, Mitte 2012) vvv
 #: osm_watch: way id="4389511" version="13"
 #: osm_watch: way id="4495273" version="17"
-#: last_checked: 2013-10-22 vvv
+#: last_checked: 2013-12-22 vvv
 #: check_frequency: 100d vvv
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
@@ -3402,7 +3370,7 @@ Lauenburger Str.: wurde die gesamte Lauenburger Str. (oder Teile davon) als Fahr
 #: last_checked: 2012-04-14
 #: next_check: 2012-09-01
 #: XXX Wo genau befindet sich der Weg?
-#: osm_watch: way id="151742436" version="3"
+#: osm_watch: way id="151742436" version="4"
 #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg
 Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsberuhigt?	? 17610,-330 17651,-393
 # 
@@ -3478,8 +3446,8 @@ Potsdam Hbf - Uferweg: Qualität?	? -12247,-1858 -12210,-1857 -12200,-1813 -12165
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf vvv
 #: XXX wahrscheinlich wird zumindest in der Speicherstadt kein direkter Weg am Wasser sein
 #: by: http://www.grothgruppe.de/site/179/Speicherstadt_Potsdam.html (-> Galerie)
-#: last_checked: 2013-05-09
-#: next_check: 2014-03-09
+#: last_checked: 2013-12-22
+#: check_frequency: 180d
 Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg bereits (oder Teile davon)? Qualität?	?::inwork -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
 Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9766,5437 -9677,5430 -9478,5549 -9372,5532
 #: by ^^^

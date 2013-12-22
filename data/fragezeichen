@@ -677,7 +677,7 @@ bei Gollwitz: fehlendes Stück des Havelradwegs? Qualität?	? -40352,2075 -40343,1
 Zützen - ehem. B2: Qualität?	? 66091,69964 65762,70023 65345,70168 65207,70639
 Oder-Neiße-Radweg - Stützkow: Qualität?	? 61783,66148 61731,66250 61584,66212
 Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610
-Leonardo-da-Vinci-Str. (Potsdam): Qualität des nördlichen Abschnitts?	? -11390,72 -11609,400
+Leonardo-da-Vinci-Str. (Potsdam): Qualität des nördlichen Abschnitts? Ist die Durchfahrt zur Seestr. möglich (für Radfahrer, für Autos)?	? -11609,400 -11534,289
 Im Wustrocken: Qualität?	? 27081,-18824 27020,-18866 26961,-18891 26906,-18961 26825,-19031
 Ortsumgehung Küstrin-Kietz: für Radfahrer befahrbar? Qualität?	? 90278,18738 90572,19032 91116,19713 91940,20028 92606,20056 93050,20293 93286,20636 93405,20640
 Dimitroffstr. (Basdorf): Qualität?	? 12224,34508 12123,34469 11996,34459
@@ -1067,7 +1067,6 @@ S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet (laut ADFC-Karte)	? 4613,22928 4678,22776
 # added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ortsschilder ampeln ampelschaltung plz potsdam deutschland grenzuebergaenge sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_danger comments_ferry comments_misc  comments_mount comments_path comments_route  comments_tram comments_kfzverkehr comments_scenic fragezeichen exits culdesac)
 Marienfelder Allee (Wurde die "Straße 427" tatsächlich in "Marienfelder Allee" benannt?)	? 7861,818 7758,821
-Rosemeyerweg (Ist der Weg ausgeschildert?)	? -3758,2678 -3852,2730 -3956,2787 -4001,2858
 Erdmann-Graeser-Weg (ist der Weg ausgeschildert?)	? -833,3619 -935,3706 -961,3737 -1013,3804
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
@@ -1078,7 +1077,6 @@ Choriner Dorfstr. (Qualität?)	? 41250,55694 41337,55907 41467,56125 41578,56248
 Münchehofe - Pritzhagen (Qualität des Weges?)	? 58747,18799 58736,19057 58754,19301 58819,19419 58815,19562 58506,19814 58471,20088 58199,20110 58153,20017 57856,20046
 Rauen - Markgrafpieske (Qualität?)	? 52566,-7994 52315,-8018 51964,-7898 49889,-7783 49609,-8108 49249,-8271 48486,-8368
 (Straßenname?)	? 23036,17919 22914,17893
-(Am Lustgarten) (Heißt diese Straße "Am Lustgartenwall"?)	? -12920,-1663 -12931,-1761 -12948,-1863 -12953,-1889 -12708,-1928
 Baumschulenweg (Qualität?)	? -17444,-628 -17477,-411 -17444,-312 -17409,-209 -17391,-156 -17372,-96
 Eichenweg (Qualität?)	? -9534,-2515 -9500,-2389
 (Telegrafenberg) (Qualität der Wege auf dem Telegrafenberg?)	? -12222,-2932 -12306,-2979 -12288,-3075 -12282,-3226 -12346,-3232 -12391,-3296
@@ -1117,9 +1115,7 @@ Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
-(existiert eine Radspur zwischen Heilbronner Str. und Damaschkestr. in Südrichtung?)	? 3132,10499 3114,10550 3093,10594
 (existiert eine Radspur zwischen Kurfürstendamm und Damaschkestr. in Nordrichtung?)	? 3132,10499 3111,10116
-Nymphenufer: teilweise etwas Kopfsteinpflaster, sonst mäßiger Asphalt (Hat die Straße mittlerweile bessere Qualität (z.B. neuer Asphalt?)?)	? -4164,1993 -4119,1972 -4079,1869 -4048,1851
 Alt-Lübars: schlechtes Kopfsteinpflaster (Ist die Straße zwischen Wittenauer Str. und Zabel-Krüger-Damm mittlerweile asphaltiert?)	? 6764,23396 6801,23474 6805,23554
 Berliner Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert (Ist die Berliner Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?)	? 12736,17998 12467,17814
 Riemenschneiderweg: mäßiger Asphalt (ist die Qualität des Asphalts nach den Bauarbeiten besser geworden?)	? 6820,6522 6801,6736 6793,6814 6770,7027 6762,7109
@@ -1204,6 +1200,5 @@ F3.3 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
-Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer (Ist die Fasanenstr. zwischen Kurfürstendamm und Kantstr. für Radfahrer entgegen der Einbahnstraßenrichtung befahrbar?)	? 5236,10994 5230,10919 5215,10711
 # added from bbbike-temp-blockings-optimized
 Zimmermannstraßenbrücke über die Wuhle: Baustelle, Straße gesperrt, 02.12.2013 bis Ende Mai 2014 userdel (Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?)	? 21385,9049 21365,9059 21351,9066
