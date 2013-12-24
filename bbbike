@@ -3345,6 +3345,8 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 	    $am->command
 		(-label => M"Aktuelle und zukünftige Sperrungen zeichnen",
 		 -command => sub {
+		     # XXX need to turn off first
+		     activate_temp_blockings(0) if $show_active_temp_blockings;
 		     $show_active_temp_blockings = 1;
 		     activate_temp_blockings($show_active_temp_blockings, -from => time);
 		 },
@@ -3364,6 +3366,8 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 	    $am->command
 		(-label => M"Frühere und zukünftige Sperrungen zeichnen",
 		 -command => sub {
+		     # XXX need to turn off first
+		     activate_temp_blockings(0) if $show_active_temp_blockings;
 		     $show_active_temp_blockings = 1;
 		     activate_temp_blockings($show_active_temp_blockings, -from => 0);
 		 },

@@ -4137,7 +4137,6 @@ sub marks_to_selection {
 }
 
 sub active_temp_blockings_for_date_dialog {
-    $show_active_temp_blockings = 1;
     require Tk::DateEntry;
     Tk::DateEntry->VERSION("1.38");
     require POSIX;
@@ -4188,8 +4187,11 @@ sub active_temp_blockings_for_date_dialog {
 		 (Name => 'ok',
 		  -command => sub {
 		      $t->destroy;
+		      # XXX need to turn off first
+		      activate_temp_blockings(0) if $show_active_temp_blockings;
 		      my($y,$m,$d) = split m{/}, $date;
 		      my $now = Time::Local::timelocal(0,0,0,$d,$m-1,$y-1900);
+		      $show_active_temp_blockings = 1;
 		      activate_temp_blockings($show_active_temp_blockings, -now => $now);
 		  }),
 		 $f->Button(Name => 'cancel',
