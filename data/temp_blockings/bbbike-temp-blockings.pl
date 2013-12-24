@@ -21450,13 +21450,11 @@ userdel	2::inwork 16279,5170 16209,5067 16146,4974 16004,4764 15863,4554 15843,4
 EOF
      },
      { from  => 1349931600, # 2012-10-11 07:00
-       until => 1388329200, # 2013-12-29 16:00
+       until => 1387830925, # 1388329200, # 2013-12-29 16:00
        text  => 'Friedrich-Krause-Ufer (Moabit) Richtung Föhrer Brücke Höhe Kraftwerk: Baustelle, Fahrtrichtung gesperrt, Ausweichen auf Gehweg, bis Ende 2013',
        type  => 'handicap',
        source_id => 'INKO_115299',
        data  => <<EOF,
-#: last_checked: 2013-11-12
-#: check_frequency: 70d
 userdel	q2::inwork; 6572,14639 6299,14660
 EOF
      },

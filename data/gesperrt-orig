@@ -2442,6 +2442,11 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0186-neubau-eines-boardingwohn-und.html
+#: XXX_prog 1s:q3:inwork geht als Kategorie nicht, falsche Übersetzung!
+#: next_check: 2014-03-23
+Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13299
+# 
 #: last_checked: 2013-12-22
 Alter Markt - Uferweg: Zugang höchstwahrscheinlich gesperrt	2::inwork -12608,-1715 -12625,-1703 -12643,-1694
 # 
@@ -2506,8 +2511,9 @@ Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -
 # 
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden!
 #: XXX siehe auch Busspur in radwege-orig
+#: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
 #: source_id: INKO_113041
-#: last_checked: 2013-11-04
+#: last_checked: 2013-12-22
 #: check_frequency: 90d
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9852,12409
 # 
@@ -2556,12 +2562,14 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: last_checked: 2013-08-20
 #: next_check: 2014-01-01
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
+#: XXX existiert mittlerweile vielleicht ein enger Durchgang?
 Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
 # 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2013-12-11
-#: next_check: 2014-03-02
+#: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
+#: last_checked: 2013-12-22
+#: next_check: 2014-06-02
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 # 
 #: by: Kai Wagner
@@ -2584,7 +2592,7 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
 #: last_checked: 2013-11-19
-#: next_check: 2014-01-01
+#: next_check: 2014-03-19
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
 #: last_checked: 2012-05-06

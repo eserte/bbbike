@@ -74,8 +74,9 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: source_id: INKO_093369
 #: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
-#: last_checked: 2013-12-11
-#: next_check: 2014-01-11
+#: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
+#: last_checked: 2013-12-22
+#: next_check: 2014-04-22
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
 # REMOVED (by osm) --- #: last_checked: 2013-06-10 (wosch) vvv --- #: osm_watch: way id="25185423" version="15"--- Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13978 --- #: last_checked ^^^
@@ -84,6 +85,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: XXX Siehe auch Baustellenampel an der Wilhelmstr. vvv
 #: source_id: INKO_113363 vvv
 #: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt vvv
+#: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html
 #: osm_watch: way id="197160274" version="1" vvv
 #: last_checked: 2013-12-22 vvv
 #: next_check: 2014-01-19 vvv
@@ -144,7 +146,8 @@ Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg für einen 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: XXX siehe auch Einträge in fragezeichen-orig (Falkoniergasse etc.)
-#: last_checked: 2013-11-19 vvv
+#: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
+#: last_checked: 2013-12-22 vvv
 #: next_check: 2014-03-02 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
@@ -155,12 +158,14 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 # REMOVED (eigentlich gut zu befahren) --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14513,11075 14442,11101
 # REMOVED --- #: last_checked: 2013-06-17 --- #: next_check: 2013-06-20 --- #: priority: #A --- Bernhard-Weiß-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
 # 
+#: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2013-12-20
+#: last_checked: 2013-12-23
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
-#: last_checked: 2013-11-25
+#: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig
+#: last_checked: 2013-12-23
 #: priority: #A
 Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
 # 
@@ -171,8 +176,8 @@ Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
 # REMOVED (Anlieger frei, eigentlich kaum noch Behinderungen) --- #: last_checked: 2013-11-25 (Fahrbahn inoffiziell befahrbar) --- Neue Grünstr.: Bauarbeiten, Fahrbahn könnte gesperrt sein	q3::inwork 10389,11390 10446,11470
 # 
-#: last_checked: 2013-11-13 vvv
-#: next_check: 2013-12-20 vvv
+#: last_checked: 2013-12-23 vvv
+#: next_check: 2014-01-20 vvv
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -782,8 +787,8 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX später vielleicht wieder "Fußgänger, q1", und evtl. nur den Brückenabschnitt so markieren
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
-#: last_checked: 2013-11-13
-#: next_check: 2013-12-20
+#: last_checked: 2013-12-23
+#: next_check: 2014-01-20
 Friedrichsbrücke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346

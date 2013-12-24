@@ -217,7 +217,7 @@ M¸ggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2013-12-17
+#: last_checked: 2013-12-23
 #: next_check: 2014-06-05
 Warschauer Str: Radspuren f¸r 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -692,8 +692,8 @@ Treskowallee/Waldowallee: wann wird die Ampel fertig sein?	?::inwork 18878,9517
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2013-11-25
-#: next_check: 2014-06-06
+#: last_checked: 2013-12-23
+#: check_frequency: 180d
 Planstraﬂe C: Einfahrten existieren noch, aber statt einer Straﬂe ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv
@@ -903,8 +903,8 @@ Wolzenseeweg: Qualit‰t? Straﬂe bereits fertiggestellt? Wird es eine ‹berquerungs
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straﬂe	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
-#: last_checked: 2013-12-11 vvv
-#: next_check: 2014-03-02 vvv
+#: last_checked: 2013-12-22 vvv
+#: next_check: 2014-06-02 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
@@ -1818,7 +1818,10 @@ Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Pla
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straﬂenname)
 #: by: http://www.fatkoehl.com/index.php?article_id=31
 #: XXX fehlt in Berlin.coords.data
-neue Stichstraﬂe: neuer Name wird wahrscheinlich Wilhelmine-Gemberg-Straﬂe sein, Lage, Qualit‰t?	?::projected 11742,11535 11798,11670
+#: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein
+#: last_checked: 2013-12-23 (zur Zeit nur eine Baustraﬂe)
+#: next_check: 2014-05-23
+neue Stichstraﬂe: neuer Name wird wahrscheinlich Wilhelmine-Gemberg-Straﬂe sein, Lage, Qualit‰t?	?::inwork 11707,11526 11769,11683
 # 
 #: ignore ^^^
 #: section ^^^
@@ -3370,7 +3373,7 @@ Lauenburger Str.: wurde die gesamte Lauenburger Str. (oder Teile davon) als Fahr
 #: last_checked: 2012-04-14
 #: next_check: 2012-09-01
 #: XXX Wo genau befindet sich der Weg?
-#: osm_watch: way id="151742436" version="4"
+#: osm_watch: way id="151742436" version="5"
 #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" f¸r den neu zu bauenden Weg
 Mathilde-Vaerting-Weg: Qualit‰t nach den Bauarbeiten? Ist die Straﬂe verkehrsberuhigt?	? 17610,-330 17651,-393
 # 
