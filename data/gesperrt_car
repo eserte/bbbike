@@ -450,13 +450,6 @@ Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5811,6833 5896,6785 5957,6889
 Putlitzstr.	1 6212,13944 6205,14216
 Bornitzstr.	1 15643,12875 15563,12860
-Straßenbahntrasse	3nocross::ignrte 18875,9570 18878,9517 18867,9464 18834,9256 18809,9133
-Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18875,9570 18878,9517 18901,9499
-Waldowallee -> Treskowallee: Straßenbahntrasse	3::igndisp 18901,9499 18878,9517 18867,9464
-Waldowallee -> Treskowallee: Straßenbahntrasse	3::igndisp 18916,9468 18867,9464 18834,9256
-Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18878,9517 18867,9464 18916,9468
-Rolandseck -> Treskowallee: Straßenbahntrasse	3::igndisp 18903,9244 18834,9256 18809,9133
-Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
 Washingtonplatz: nur für Taxis	2 8106,13130 7937,13126
 Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
 Straßenbahntrasse	3nocross::ignrte 20352,5877 20428,5841 20536,5789
@@ -1479,14 +1472,14 @@ Stadtgärten - Saupéweg: Poller	3 11589,21713 11551,21720 11518,21727
 Mittelstreifen	3nocross::ignrte 11872,17522 11893,17397 11920,17245
 Treskowstr. -> Prenzlauer Promenade: Mittelstreifen	3::igndisp 12327,17211 11893,17397 11920,17245
 Prenzlauer Promenade -> Treskowstr.: Mittelstreifen	3::igndisp 11872,17522 11893,17397 12327,17211
-Voigtstr. - Pettenkoferstr.	1 14862,12777 14834,12767
+Voigtstr. - Pettenkoferstr.	1 14858,12775 14834,12767
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
 Straßenbahntrasse	3nocross::ignrte 10387,12760 10360,12793 10309,12854
 St. Wolfgang-Str. -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10285,12744 10360,12793 10309,12854
 Spandauer Str. -> St. Wolfgang-Str.: Straßenbahntrasse	3::igndisp 10387,12760 10360,12793 10285,12744
-Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16512,11894 16541,12064 16556,12180
-Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16556,12180 16541,12064 16512,11894
+Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16512,11894 16541,12071 16556,12180
+Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16556,12180 16541,12071 16512,11894
 Grünspechtweg: Schranke	3 6988,23244 7059,23127 7171,22942
 Grünspechtweg: Schranke	3 7171,22942 7059,23127 6988,23244
 Feldlerchenweg: Schranke	3 6956,23166 7000,23095 7109,22919
@@ -1672,3 +1665,4 @@ Betonblöcke	3 -12833,-1365 -12808,-1488 -12870,-1493
 Straßenbahnhaltestelle	3nocross::ignrte -11307,133 -11390,72 -11494,-4
 Berliner Str. (B1) -> Leonardo-da-Vinci-Str.: Straßenbahnhaltestelle	3::igndisp -11494,-4 -11390,72 -11609,400
 Leonardo-da-Vinci-Str. -> Berliner Str. (B1): Straßenbahnhaltestelle	3::igndisp -11609,400 -11390,72 -11307,133
+Hubertusstr. - Frankfurter Allee	3 16541,12071 16512,11894 16737,11866

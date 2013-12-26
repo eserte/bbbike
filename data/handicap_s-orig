@@ -42,7 +42,7 @@ Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,946
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html (Abschluss der Arbeiten im M‰rz 2014)
 #: source_id: IM_020581 ("bis Ende 2014")
-#: last_checked: 2013-12-11 vvv
+#: last_checked: 2013-12-25 vvv
 #: next_check: 2014-03-01 vvv
 #: priority: #A vvv
 Chausseestr.: direkte Zufahrt s¸dlich der Invalidenstraﬂe nicht mˆglich, umst‰ndliche Wegf¸hrung	q4::inwork 9042,13707 8935,13844
@@ -103,7 +103,7 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, Bordstei
 #: next_check: 2014-01-10
 Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
-#: last_checked: 2013-12-08 vvv
+#: last_checked: 2013-12-25 vvv
 #: next_check: 2014-06-30 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -119,7 +119,7 @@ Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwo
 #: next_check ^^^
 #: last_checked: ^^^
 # 
-#: last_checked: 2013-12-08 (Neubau)
+#: last_checked: 2013-12-25 (Neubau)
 #: next_check: 2014-02-28
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
@@ -423,7 +423,7 @@ Wuhlheide/FEZ: einige Fuﬂg‰nger	q1 20225,6631 20169,6636 20118,6617 20060,6575 1
 (am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q2 10294,19298 10339,19179 10382,19066
 (am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q1 10339,19179 10249,19148
 # REMOVED (done) --- #: XXX mittlerweile darf die Br¸cke offiziell befahren werden - evtl. das "ggfs. schieben" entfernen? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4830
-Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, Radfahren erlaubt	q2 17975,8971 17996,8966 18076,9027
+Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, Radfahren erlaubt	q2 17975,8971 17996,8966 18070,9022
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11912 9668,11928
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9524,12010 9656,12021
@@ -884,7 +884,7 @@ Elsensteg: Fuﬂg‰nger	q3 13394,8730 13402,8741
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 #: XXX_prog BS an der L¸ckstr. (ansonsten w‰re es q1)
 (Blockpark): Fuﬂg‰nger, Bordstein	q2 16300,10753 16265,10681
-(Blockpark): Fuﬂg‰nger	q1 16265,10681 16246,10641 16187,10587
+(Blockpark): Fuﬂg‰nger	q1 16265,10681 16246,10641 16193,10593
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fuﬂg‰nger	q2 25571,4553 25658,4619
@@ -1525,7 +1525,7 @@ Alt-Tegel: Fuﬂg‰nger	q3 1462,20133 1457,20159
 (Uferweg am Tegeler Hafen - Am Tegeler Hafen): 3x kurze und steile Rampe	q4 1858,20431 1871,20399
 (Am Rosensteg - An der Heide): eng	q3 3065,20646 3101,20649 3109,20650
 (Rosentreterpromenade - Ziekowstr.): schmal	q2+ 4156,21175 4060,21147 3649,21102 3456,21071 2911,20953 2571,20886
-(Oskar-Ziethen-Krankenhaus): Krankenhausgel‰nde, Fuﬂg‰nger	q2 16541,12064 16556,12180
+(Oskar-Ziethen-Krankenhaus): Krankenhausgel‰nde, Fuﬂg‰nger	q2 16541,12071 16556,12180
 (U-Bahnunterf¸hrung Elsterwerdaer Platz): Fuﬂg‰nger	q3 21137,11294 21086,11321
 #: XXX_prog: BS (an der westlichen Seite)
 Frankfurter Allee/Harnackstr.: hoher abgeschr‰gter Bordstein	q2 15941,11855 15989,11834
@@ -1649,12 +1649,9 @@ Arnimplatz: Fuﬂg‰nger	q2 10606,16319 10739,16146
 (Weg im Salvador-Allende-Viertel): eine Bodenschwelle, kann umfahren werden	q0 23279,4599 23445,4596
 (Weg im Salvador-Allende-Viertel - Am Berg): Fuﬂg‰nger	q2 23051,4461 23010,4506
 # 
-#: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen
-#: last_checked: 2013-12-11
-#: next_check: 2013-12-18
-# (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger	q1 15513,13539 15374,13542
-(Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger, wegen Bauarbeiten recht eng	q3::inwork 15513,13539 15374,13542
-# REMOVED (evtl. schon aufgehoben, kann ich nicht pr¸fen) --- #: temporary: --- #: XXX wann wird die Umfahrung wieder aufgehoben? --- #: last_checked: 2013-09-12 --- #: check_frequency: 20d --- Paul-Junius-Str.: Umfahrung an der Straﬂenbahn¸berquerung	q4::inwork 15374,13542 15370,13508
+# REMOVED (Bauarbeiten weitgehend beendet) --- #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen --- #: last_checked: 2013-12-11 --- #: next_check: 2013-12-18
+(Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger	q2 15513,13539 15374,13542
+# REMOVED (aufgehoben) --- #: temporary: --- #: XXX wann wird die Umfahrung wieder aufgehoben? --- #: last_checked: 2013-09-12 --- #: check_frequency: 20d --- Paul-Junius-Str.: Umfahrung an der Straﬂenbahn¸berquerung	q4::inwork 15374,13542 15370,13508
 # 
 Lilienweg: Fuﬂg‰nger	q2+ 15143,5705 15154,5706 15209,5713 15252,5719 15296,5725 15337,5730
 Rosenweg: Fuﬂg‰nger	q2+ 15343,5687 15337,5730 15330,5821 15325,5934
@@ -1684,7 +1681,7 @@ Landsberger Allee - Siegfriedstr.: einige Fuﬂg‰nger	q1+ 16590,14386 16596,14367 
 #: XXX_prog BS (ansonsten -> q1)
 (Kleistpark): einige Fuﬂg‰nger, Bordstein	q2 7501,9573 7520,9572
 #: note ^^^
-(Blockdammweg - Trautenauer Str.): Rampe	q2 17904,8927 17888,8899 17915,8900
+(Blockdammweg - Trautenauer Str.): Rampe	q2 17904,8924 17888,8899 17910,8881
 (Weg 1 im KGA Hochspannung): Rampe, enge Radien	q3 18182,9623 18165,9627 18164,9623
 Fromet-und-Moses-Mendelssohn-Platz: einige Fuﬂg‰nger	q1 9797,10771 9733,10827 9682,10836 9666,10848
 #: XXX_prog BS an der Grillostr., q2 belassen

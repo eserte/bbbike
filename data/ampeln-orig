@@ -2453,8 +2453,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9812,12145
 # 
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2013-12-08 vvv
-#: next_check: 2013-12-31 vvv
+#: last_checked: 2013-12-25 vvv
+#: next_check: 2014-06-30 vvv
 	X::inwork 8732,14098
 	X::inwork 8879,13913
 # REMOVED (ausgeschaltet) --- X::inwork 8634,13588
@@ -2523,7 +2523,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 12221,7271
 	X -3631,16224
 	X 15640,4222
-	X 14842,12826
+	X 14836,12826
 	X -3782,17125
 	X 10301,16186
 	X 13199,23657
@@ -2554,6 +2554,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 #: XXX_prog: Ampel für Radfahrer offiziell nicht relevant
 	F 16066,11960
+#: note: Anforderungsampel für linksabbiegende Radfahrer, aber evtl. ist die Anforderung immer aktiv
+	X 18878,9517
 ################################################################################
 #: note: Potsdam vvv
 	X -12940,-1625

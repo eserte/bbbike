@@ -211,7 +211,7 @@ Gutsmuthsstr.	1 5312,6382 5065,6515
 Bornstr.	1 5210,6522 5346,6443
 Schildhornstr.	1 4937,6205 4984,6209 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4937,6205
-Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
+Atzpodienstr.	1 16485,12384 16456,12191 16413,11906
 #: by: Robert Joop:
 Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12791,3814 12895,3991 12941,4015 12995,4003 13007,3949 12910,3739
@@ -1058,6 +1058,8 @@ Rosenfelder Ring	1s:q3 18140,11932 18139,11833
 Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
 Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
+#: XXX wird hier die Einbahnstraße für Radfahrer geöffnet (wegen der neuen Radwegführung)?
+#: last_checked: 2013-12-26
 (Möllendorffstr. - Paul-Junius-Str.)	1 15370,13508 15470,13509
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Kornmandelweg	1 21311,13522 21345,13550
@@ -1469,7 +1471,7 @@ Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,101
 Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18165,7371
 Treskowallee: Straßenbahntrasse	3nocross 18406,7760 18570,8025 18657,8163
-Treskowallee: Straßenbahntrasse	3nocross 18867,9464 18834,9256 18809,9133
+Treskowallee: Straßenbahntrasse	3nocross 18878,9517 18867,9464 18834,9256 18809,9133
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5467,9866
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
@@ -1978,6 +1980,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:2::trailer=4 16541,12071
 Schranke (lichte Breite ca. 120cm)	BNP:2::trailer=4 11973,21385
 Baumstamm als Barriere	BNP:0::trailer=5 -1527,18645
 mehrere Poller	BNP:1::trailer=6 12299,19143

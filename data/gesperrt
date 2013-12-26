@@ -174,7 +174,7 @@ Gutsmuthsstr.	1 5312,6382 5065,6515
 Bornstr.	1 5210,6522 5346,6443
 Schildhornstr.	1 4937,6205 4984,6209 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4937,6205
-Atzpodienstr.	1 16485,12384 16445,12193 16413,11906
+Atzpodienstr.	1 16485,12384 16456,12191 16413,11906
 Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12791,3814 12895,3991 12941,4015 12995,4003 13007,3949 12910,3739
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
@@ -1436,7 +1436,8 @@ Straßenbahntrasse	3nocross::ignrte 18010,7133 18086,7243 18165,7371
 Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18010,7133
 Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18165,7371 18086,7243 18186,7200
 Straßenbahntrasse	3nocross::ignrte 18406,7760 18570,8025 18657,8163
-Straßenbahntrasse	3nocross::ignrte 18867,9464 18834,9256 18809,9133
+Straßenbahntrasse	3nocross::ignrte 18878,9517 18867,9464 18834,9256 18809,9133
+Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18878,9517 18867,9464 18916,9468
 Rolandseck -> Treskowallee: Straßenbahntrasse	3::igndisp 18903,9244 18834,9256 18809,9133
 Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 5463,9961 5464,9914 5467,9866
@@ -2288,6 +2289,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke	BNP:2:-170:trailer=4 16541,12071
 Schranke (lichte Breite ca. 120cm)	BNP:2:-127:trailer=4 11973,21385
 Baumstamm als Barriere	BNP:0:-129:trailer=5 -1527,18645
 mehrere Poller	BNP:1:-139:trailer=6 12299,19143

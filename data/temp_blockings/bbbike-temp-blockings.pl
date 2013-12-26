@@ -8630,7 +8630,7 @@ EOF
        text  => 'Holteistraße: Bauarbeiten, Fahrbahn ist nicht benutzbar',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 14535,11327 14506,11275 14465,11195
+userdel	q4::inwork 14535,11327 14506,11275 14468,11203
 EOF
      },
      { from  => 1181768521, # 
@@ -13259,7 +13259,7 @@ EOF
        text  => 'Simplonstr. zwischen Lenbachstr. und Matkowskystr. bis 24.12.2008 gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14601,11074 14530,11137
+userdel	2::inwork 14605,11078 14531,11142
 EOF
      },
      { from  => 1229377415, # 2008-12-15 22:43
@@ -13649,8 +13649,8 @@ EOF
        text  => 'Bauarbeiten in der Simplonstr., Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 14601,11074 14530,11137
-userdel	q4::inwork 14530,11137 14465,11195
+userdel	q4::inwork; 14605,11078 14531,11142
+userdel	q4::inwork 14531,11142 14468,11203
 EOF
      },
      { from  => undef, # 
@@ -17218,14 +17218,15 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-30 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-01-01 10:00:00"),
+     { from  => $isodate2epoch->("2013-12-25 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-01-02 00:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 30, months => 12]],
+       recurrences => [['yearly', days => 26, months => 12]],
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 8119,12414
+userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
+userdel	2::temp 8055,12186 8119,12414
 userdel	2::temp 8522,12239 8466,12197
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 EOF
@@ -21118,9 +21119,11 @@ EOF
 userdel	q3::inwork; 13474,8060 13444,7879
 EOF
      },
-     { from  => 1357040979, # 2013-01-01 12:49
-       until => 1358981999, # 2013-01-23 23:59
-       text  => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, bis 23. Januar 2013',
+     { from  => $isodate2epoch->("2014-01-01 00:00:00"), # 1 Tag Vorlauf --- 1357040979, # 2013-01-01 12:49
+       until => $isodate2epoch->("2014-01-23 12:00:00"), # 1358981999, # 2013-01-23 23:59
+       periodic => 1,
+       recurrences => [['yearly', days => 1, months => 1]],
+       text  => 'Straße des 17. Juni: wegen der Fashion Week bis zum 23. Januar 2014 gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_019489',
        data  => <<EOF,

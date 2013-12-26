@@ -432,7 +432,7 @@ Steigung 3.1% (Philipp-Jacob-Rauch-Str.)	St; 27476,1287 27344,1329
 Steigung 3.1% (Parchwitzer Str.)	St; 21945,-1031 21828,-1015
 Steigung 3.1% (Oberfeldstr.)	St; 20575,11698 20587,11824
 Steigung 3.1% (Lindenstr. (Bohnsdorf))	St; 21914,-1278 21794,-1260
-Steigung 3.1% (Hubertusstr. (Lichtenberg))	St; 16512,11894 16541,12064
+Steigung 3.1% (Hubertusstr. (Lichtenberg))	St; 16512,11894 16541,12071
 Steigung 3.1% (Hermannstr. (Neukölln))	St; 11879,8672 11882,8527
 Steigung 3.1% (Hermannstr. (Neukölln))	St; 11845,8824 11879,8672
 Steigung 3.1% (Hermannstr. (Neukölln))	St; 11831,8989 11830,8917
@@ -442,7 +442,7 @@ Steigung 3.1% (Fichtenauer Str.)	St; 30179,3966 30210,4046
 Steigung 3.1% (Bornholmer Str.)	St; 9514,16603 9617,16590
 Steigung 3.1% (Bornholmer Str.)	St; 10197,16528 10134,16534
 Steigung 3.1% (Blissestr.)	St; 4784,8508 4788,8354
-Steigung 3.1% ((Oskar-Ziethen-Krankenhaus))	St; 16541,12064 16556,12180
+Steigung 3.1% ((Oskar-Ziethen-Krankenhaus))	St; 16541,12071 16556,12180
 Steigung 3.0% (Zur Haveldüne)	St; -4793,10711 -4715,10705
 Steigung 3.0% (Zur Gartenstadt)	St; 21800,-109 21769,-30
 Steigung 3.0% (Straßmannstr.)	St; 13435,12973 13470,12990
@@ -494,11 +494,10 @@ Steigung 2.9% (Grunewaldstr. (Steglitz))	St; 4520,5793 4419,5842
 Steigung 2.9% (Grabensprung)	St; 20549,11659 20575,11698
 Steigung 2.9% (Fercher Str. (Hellersdorf))	St; 22603,15188 22751,15191
 Steigung 2.9% (Fehrbelliner Str. (Mitte, Prenzlauer Berg))	St; 10697,13956 10612,14001
-Steigung 2.9% (Fanningerstr.)	St; 16359,12207 16445,12193
 Steigung 2.9% (Düsterhauptstr.)	St; 4533,22399 4603,22334
 Steigung 2.9% (Bautzener Str.)	St; 8183,9260 8182,9240
 Steigung 2.9% (Baumeisterstr.)	St; 6283,7231 6191,7122
-Steigung 2.9% (Atzpodienstr.)	St; 16413,11906 16445,12193
+Steigung 2.9% (Atzpodienstr.)	St; 16413,11906 16456,12191
 Steigung 2.9% (Arndtstr. (Kreuzberg))	St; 9487,9209 9546,9198
 Steigung 2.9% (Amselweg (Bohnsdorf))	St; 22303,67 22169,14
 Steigung 2.9% (Am Rupenhorn)	St; -2222,11225 -2425,10956
@@ -627,6 +626,7 @@ Steigung 2.6% (Inselstr. (Nikolassee))	St; -5393,4211 -5453,4274
 Steigung 2.6% (Inselstr. (Nikolassee))	St; -5310,4216 -5393,4211
 Steigung 2.6% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; 16,11190 229,11213
 Steigung 2.6% (Flughafenstr.)	St; 12349,8464 12195,8436
+Steigung 2.6% (Fanningerstr.)	St; 16359,12207 16456,12191
 Steigung 2.6% (Erbacher Str.)	St; 1704,9293 1677,9404
 Steigung 2.6% (Dämeritzstr.)	St; 32512,2621 32445,2716
 Steigung 2.6% (Delbrückstr. (Neukölln))	St; 12981,6689 12860,6667
@@ -795,6 +795,7 @@ Steigung 2.3% (Frankfurter Allee)	St; 17151,11801 17121,11806
 Steigung 2.3% (Frankfurter Allee)	St; 17121,11806 17037,11820
 Steigung 2.3% (Frankfurter Allee)	St; 17037,11820 16962,11833
 Steigung 2.3% (Frankenholzer Weg)	St; 21275,11942 21152,11945
+Steigung 2.3% (Fanningerstr.)	St; 16456,12191 16556,12180
 Steigung 2.3% (Edmundstr.)	St; 12981,6689 12953,6820
 Steigung 2.3% (Bornholmer Str.)	St; 9998,16547 9883,16557
 Steigung 2.3% (Boddinstr.)	St; 12177,8263 12116,8247
@@ -936,7 +937,6 @@ Steigung 2.1% (Friedrichsbrunner Str.)	St; 12301,5783 12284,5929
 Steigung 2.1% (Friedrich-Hanisch-Str.)	St; -6449,5282 -6640,5408
 Steigung 2.1% (Frankfurter Allee)	St; 16737,11866 16803,11859
 Steigung 2.1% (Frankfurter Allee)	St; 16512,11894 16737,11866
-Steigung 2.1% (Fanningerstr.)	St; 16445,12193 16556,12180
 Steigung 2.1% (Falkentaler Steig)	St; 3012,24107 2903,24264
 Steigung 2.1% (Elmsteiner Weg)	St; 27567,936 27393,732
 Steigung 2.1% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22059,15153 21903,15174
@@ -1338,7 +1338,7 @@ Steigung 1.6% (Bergstr. (Wannsee))	St; -6214,1709 -6202,1684
 Steigung 1.6% (Bendastr.)	St; 12715,6775 12702,6846
 Steigung 1.6% (Bellermannstr.)	St; 9248,16248 9259,16236
 Steigung 1.6% (Beiersdorfer Weg)	St; 30837,4521 30913,4766
-Steigung 1.6% (Atzpodienstr.)	St; 16445,12193 16485,12384
+Steigung 1.6% (Atzpodienstr.)	St; 16456,12191 16485,12384
 Steigung 1.6% (Attilastr.)	St; 7221,4255 7263,4281
 Steigung 1.6% (Attilastr.)	St; 7171,4200 7221,4255
 Steigung 1.6% (Appelbacher Weg)	St; 27514,1129 27450,1182

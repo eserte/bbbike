@@ -1994,18 +1994,19 @@ userdel	3 8374,11479 8389,11378 8427,11365
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 8119,12414
+         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 6828,12031
+userdel	2::temp 8055,12186 8119,12414
 userdel	2::temp 8522,12239 8466,12197
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 ',
          'periodic' => 1,
-         'until' => 1388566800,
-         'from' => 1388394000,
+         'until' => 1388617200,
+         'from' => 1387947600,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              30,
+                              26,
                               'months',
                               12
                             ]
@@ -2642,7 +2643,26 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'id' => 2410
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019489',
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+',
+         'periodic' => 1,
+         'until' => 1390474800,
+         'from' => 1388530800,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              1
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni: wegen der Fashion Week bis zum 23. Januar 2014 gesperrt',
+         'id' => 2412,
+         'type' => 'gesperrt'
+       },
        {
          'until' => undef,
          'recurring' => 1,

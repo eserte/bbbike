@@ -273,7 +273,7 @@ Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3nocross 5966,6747 5896,
 #: by: rjoop:
 Putlitzstr.	1 6212,13944 6205,14216
 Bornitzstr.	1 15643,12875 15563,12860
-Treskowallee: Straßenbahntrasse	3nocross 18875,9570 18878,9517 18867,9464 18834,9256 18809,9133
+# REMOVED (dupliziert in gesperrt-orig) --- Treskowallee: Straßenbahntrasse	3nocross 18875,9570 18878,9517 18867,9464 18834,9256 18809,9133
 Washingtonplatz: nur für Taxis	2 8106,13130 7937,13126
 Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
 An der Wuhlheide: Straßenbahntrasse	3nocross 20352,5877 20428,5841 20536,5789
@@ -845,11 +845,11 @@ Bismarckstr.: Mittelstreifen	3nocross 4345,11710 4507,11728 4737,11768
 Stadtgärten - Saupéweg: Poller	3 * 11551,21720 *
 #: note: Radfahrer können explizit den Mittelstreifen überqueren
 Prenzlauer Promenade: Mittelstreifen	3nocross 11872,17522 11893,17397 11920,17245
-Voigtstr. - Pettenkoferstr.	1 14862,12777 14834,12767
+Voigtstr. - Pettenkoferstr.	1 14858,12775 14834,12767
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
 Spandauer Str.: Straßenbahntrasse	3nocross 10387,12760 10360,12793 10309,12854
-Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 * 16541,12064 *
+Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 * 16541,12071 *
 #: note: kein Problem für Radfahrer vvv
 Grünspechtweg: Schranke	3 * 7059,23127 *
 Feldlerchenweg: Schranke	3 * 7000,23095 *
@@ -971,3 +971,4 @@ Betonblöcke	3 -12870,-1493 -12808,-1488 *
 Betonblöcke	3 * -12808,-1488 -12870,-1493
 #: note: Radfahrer und Fußgänger können etwas versetzt überqueren
 Berliner Str.: Straßenbahnhaltestelle	3nocross -11307,133 -11390,72 -11494,-4
+Hubertusstr. - Frankfurter Allee	3 16541,12071 16512,11894 16737,11866
