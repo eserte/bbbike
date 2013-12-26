@@ -30,6 +30,13 @@ use GPS::GpsmanData;
 use GPS::GpsmanData::VehicleInfo ();
 
 my @wpt_cols = qw(Ident Comment Latitude Longitude Altitude Symbol Accuracy Velocity VelocityGraph);
+my %wpt_col_label = map {
+    # Shorten some header labels
+    ($_ => ($_ eq 'Symbol' ? 'Sym.' :
+	    $_ eq 'Accuracy' ? 'Acc.' :
+	    $_)
+    )
+} @wpt_cols;
 
 {
     package GPS::GpsmanData::Tk::HList;
@@ -74,7 +81,7 @@ sub Populate {
 	{
 	    my $col = 0;
 	    for my $def (@wpt_cols) {
-		$dv->header('create', $col++, -text => $def);
+		$dv->header('create', $col++, -text => $wpt_col_label{$def});
 	    }
 	}
 
