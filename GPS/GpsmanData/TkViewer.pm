@@ -33,7 +33,7 @@ sub gps_data_viewer {
 
     my $gps_file = delete $opts{-gpsfile};
     my $title    = delete $opts{-title} || 'GPS data viewer';
-    my $geometry = delete $opts{-geometry} || '1000x400';
+    my $geometry = delete $opts{-geometry} || '1065x400';
     my $stats_args_cb = delete $opts{-statsargscb};
 
     die "Unhandled arguments: " . join(" ", %opts) if %opts;
