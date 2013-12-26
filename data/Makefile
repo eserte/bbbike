@@ -1283,7 +1283,7 @@ do-checks:	.check_empty_lines \
 	.check_comments_tram_2 .check_comments_kfzverkehr_2 \
 	.check_comments_scenic_2 \
 	.check_exits \
-	.check_culdesac .check_culdesac_2 \
+	.check_culdesac .check_culdesac_2 .check_culdesac_3 \
 	.check_temp_blockings .check_grenzuebergaenge \
 	.check_berlin .check_potsdam \
 	.check_ortsschilder .check_ortsschilder2 \
@@ -1624,6 +1624,10 @@ check-disabled:
 # ignored...
 .check_culdesac_2:	culdesac-orig .strassen.tmp landstrassen landstrassen2 fragezeichen
 	$(CHECK_POINTS) culdesac-orig .strassen.tmp landstrassen landstrassen2 fragezeichen
+	@touch $@
+
+.check_culdesac_3:	culdesac-orig
+	$(CHECK_DOUBLE) -points culdesac-orig
 	@touch $@
 
 .for city in berlin potsdam
