@@ -1078,6 +1078,7 @@ Edith-Kiss-Str.	1 12793,11132 12866,11256
 Garzauer Str.	1 21830,13688 21722,13708
 Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
+Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1655,6 +1656,8 @@ Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4116,12761 -4058,1
 Wilhelmstr.: Mittelstreifen	3nocross -3999,12912 -3962,12973 -3913,13054
 Spandauer Str.: Straﬂenbahntrasse	3nocross 10431,12709 10387,12760 10360,12793
 Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
+#: XXX_prog hack f¸r das bekannte 3nocross-Problem
+Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
 Invalidenstr.: Mittelstreifen	3nocross 7880,13315 8003,13374 8098,13419
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7822,12937 7776,12945 7595,12980
 Kˆpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
@@ -2455,7 +2458,7 @@ Alter Markt - Uferweg: Zugang hˆchstwahrscheinlich gesperrt	2::inwork -12608,-17
 # 
 #: XXX oder bleibt die Einbahnstraﬂenregelung permanent?
 #: XXX_prog 1s:q4:inwork geht als Kategorie nicht, falsche ‹bersetzung!
-#: last_checked: 2013-12-11
+#: last_checked: 2013-12-27
 Am Zirkus: Einbahnstraﬂe	1s:q4 9118,13070 9137,13032 9167,13046 9239,12923
 # 
 #: last_checked: 2013-11-25 (Bauarbeiten)
@@ -2496,15 +2499,6 @@ tragen (2 Stufen)	0:5 8818,13365
 #: last_checked: 2013-09-04
 #: next_check: 2014-03-31
 Promenade am Teltowkanal: w‰hrend der Bauarbeiten an der Emil-Schulz-Br¸cke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
-# 
-#: priority: #A vvv
-#: last_checked: 2013-10-12 vvv
-#: next_check: 2013-12-31 vvv
-Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8588,13673 8594,13637
-Luisenstr./Invalidenstr./Neues Tor: Zufahrten gesperrt	2:inwork 8619,13689 8626,13641
-#: next_check ^^^
-#: last_checked ^^^
-#: priority ^^^
 # 
 # REMOVED (Bauarbeiten beendet) --- #: XXX siehe auch die Umleitungsstrecke --- #: XXX nach den Bauarbeiten asphaltiert --- #: by: http://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10317_Berlin_Strassenbauarbeiten__607379.html (Asphaltierung) --- #: by: http://www.rubu.de/verkehr-planungen.html (Dauer) --- #: by: http://www.rubu.de/mediapool/115/1150729/data/Paul_u_Paula_UL3-Uebersicht-BA.pdf (‹bersichtsplan) --- #: last_checked: 2013-08-19 --- #: next_check: 2013-10-03 (geplantes Bauende ist Ende September) --- Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
 # 
@@ -2561,12 +2555,6 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 # REMOVED (obwohl, Bauz‰une stehen noch bereit) --- #: by: rjoop --- #: last_checked: 2012-11 --- #: next_check: 2013-03-15 --- #: osm_watch: way id="35326794" version="7" --- Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
 # 
 # REMOVED (fertig asphaltiert) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html --- #: next_check: 2013-03-31 --- #: XXX nach den Bauarbeiten bessere Qualit‰t? Zurzeit nur Q1-, siehe qualitaet_s-orig --- (Bellevuepark): Asphaltbauarbeiten	2:inwork 22787,5582 22855,5554 22835,5452 22851,5321
-# 
-#: last_checked: 2013-08-20
-#: next_check: 2014-01-01
-#: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
-#: XXX existiert mittlerweile vielleicht ein enger Durchgang?
-Margarete-Steffin-Str.: wegen Bauarbeiten gesperrt	2:inwork 8315,13181 8406,13127 8525,12958
 # 
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
@@ -2665,7 +2653,7 @@ Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536
 # REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
-#: last_checked: 2013-11-19 vvv
+#: last_checked: 2013-12-27 vvv
 #: next_check: 2014-06-01 vvv
 #: XXX siehe auch aufgehobene Einbahnstraﬂenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollst‰ndig gesperrt	2:inwork 9743,12239 9801,12245

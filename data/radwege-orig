@@ -736,7 +736,7 @@ der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW
 der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW0;RW0 8119,12414 8055,12186
 #: by: RW2 by Robert:
 #: confirmed_by: srt
-	RW1;RW2 7346,13022 7443,13008 7595,12980
+	RW1;RW2 7346,13022 7422,13012 7595,12980
 	RW4;RW4 7595,12980 7776,12945 7822,12937 7873,12927 7936,12906
 	RW1;RW2 6239,15553 6133,15680
 	RW2; 6562,15177 6626,15104
@@ -940,7 +940,7 @@ Busspur ist immer gültig	RW5;RW5 9852,12409 9780,12401 9771,12400 9734,12395 969
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 9475,12365 9358,12351 9141,12320
 #: XXX später beide Richtungen wieder herstellen
 #: source_id: IM_018997
-#: last_checked: 2013-09-10
+#: last_checked: 2013-12-27
 #: next_check: 2014-01-26
 Busspur ist immer gültig	RW5; 9141,12320 9358,12351 9475,12365
 # 
@@ -1524,18 +1524,21 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 	RW6;RW6 10150,2006 10344,1944 10486,1908 10541,1889 10593,1875
 	RW6;RW6 10344,1944 10383,2088
 #: by: ^^^
-#: note: Radspur: by Luftbild
-	RW2;RW4? 7416,13058 7346,13022
-	RW2; 7759,13246 7567,13143
-benutzungspflichtige Radspur auf den letzten 10 Metern	RW0; 7567,13143 7759,13246
-	RW2;RW0 7567,13143 7440,13073 7416,13058
+	RW3; 7759,13246 7567,13143
+#: XXX evtl. nur während der Bauarbeiten?
+#: last_checked: 2013-12-27
+existierende Radspur ist aufgehoben	RW0; 7567,13143 7440,13073 7415,13060 7346,13022
+	RW3; 7346,13022 7415,13060
+#: XXX wie sieht es nach den Bauarbeiten aus?
+#: last_checked: 2013-12-27
+provisorischer Radweg, benutzungspflichtige Radspur auf den letzten 10 Metern	RW1; 7415,13060 7440,13073 7567,13143 7759,13246
 # 
 # REMOVED (Bauarbeiten beendet) --- #: XXX während der Bauarbeiten geänderte Radwegführung vvv --- #: last_checked: 2013-10-12 vvv --- #: next_check: 2013-12-31 vvv --- #: source_id: IM_017330 vvv --- #: source_id: INKO_113944 vvv --- # XXX alter Eintrag: RW3;RW4 8450,13599 8337,13541 8268,13506 8098,13419 --- Radweg auf dem Gehweg aufgemalt, eng RW1; 8450,13599 8337,13541 8268,13506 8098,13419 ---	RW0; 8098,13419 8268,13506 8337,13541 8450,13599 --- #: source_id ^^^ --- #: source_id ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html
 #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder
 #: XXX kommen die Radwegschilder noch?
-#: last_checked: 2013-12-25
-	RW3;RW3 8098,13419 8268,13506 8337,13541 8450,13599 8574,13666
+#: last_checked: 2013-12-27
+	RW3;RW3 8098,13419 8268,13506 8337,13541 8450,13599
 # 
 #: note: hier existiert noch ein alter enger Radweg, der aber nicht weiter "beworben" wird
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12784,13961 12856,14042

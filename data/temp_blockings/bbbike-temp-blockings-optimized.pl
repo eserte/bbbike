@@ -418,34 +418,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berliner-weihnacht.de/?y=2013',
-         'data' => 'userdel	2::temp 10008,12274 9994,12368
-# REMOVED (passierbar!) --- userdel	2::temp 9943,12364 9961,12273 9972,12184
-userdel	2::temp 10010,12259 10035,12209
-# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9852,12409 9869,12297 9875,12257 9890,12161
-userdel	2::temp 10008,12274 10058,12290
-userdel	2::temp 10091,12232 10058,12290 9996,12401
-# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9961,12273 9875,12257
-userdel	q4::temp 9994,12368 9996,12401 9984,12426
-	q2::temp 9972,12184 9961,12273 9943,12364 9994,12368
-',
-         'periodic' => 1,
-         'until' => 1388098799,
-         'from' => 1384815600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, teilweise reger Fußgängerverkehr, vom 25.11. bis 26.12.2013',
-         'id' => 790,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1958,29 +1931,7 @@ userdel	2::temp 9524,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.winterwelt-berlin.de/',
-         'data' => 'userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296 8278,11257
-#: XXX_prog "3::temp" geht nicht?
-userdel	3 8427,11365 8389,11378 8374,11479
-userdel	3 8374,11479 8389,11378 8427,11365
-',
-         'periodic' => 1,
-         'until' => 1388098799,
-         'from' => 1385247600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Winterwelt am Potsdamer Platz vom 25. November 2013 bis 26. Dezember 2013',
-         'id' => 1997,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
