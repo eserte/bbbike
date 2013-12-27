@@ -2350,6 +2350,8 @@ sub show_situation_at_point_for_route {
 	$angle = int($angle/10)*10;
 	if ($angle < 30 && !$important) {
 	    $direction = "";
+	} elsif ($angle >= 160 && $angle <= 200) {
+	    $direction = 'turn-back';
 	} elsif ($angle <= 45) {
 	    $direction = 'half-' . $direction . " $angle°";
 	} else {
