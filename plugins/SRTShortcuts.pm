@@ -2320,6 +2320,7 @@ sub toggle_situation_at_point_for_route {
     if ($show_situation_at_point_for_route) {
 	Hooks::get_hooks("new_route")->add(\&show_situation_at_point_for_route, $hookname_add);
 	Hooks::get_hooks("del_route")->add(\&delete_situation_at_point_for_route, $hookname_del);
+	main::add_to_stack("situation_at_point", "topmost");
 	show_situation_at_point_for_route();
     } else {
 	Hooks::get_hooks("new_route")->del($hookname_add);
@@ -2365,11 +2366,12 @@ sub show_situation_at_point_for_route {
     for my $i (1 .. $#main::realcoords-1) {
 	my @p = map { join ",", @$_ } @main::realcoords[$i,$i-1,$i+1];
 	my %result = $kreuzungen->situation_at_point(@p);
-	$main::c->createText(main::transpose(@{$main::realcoords[$i]}),
-			     -text => $result{action} . (exists $point_to_dir{$p[0]} ? " ($point_to_dir{$p[0]})" : ""),
-			     -anchor => 'w',
-			     -tags => ['situation_at_point'],
-			    );
+	main::outline_text($main::c,
+			   main::transpose(@{$main::realcoords[$i]}),
+			   -text => $result{action} . (exists $point_to_dir{$p[0]} ? " ($point_to_dir{$p[0]})" : ""),
+			   -anchor => 'w',
+			   -tags => ['situation_at_point'],
+			  );
     }
 }
 
