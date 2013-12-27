@@ -384,12 +384,14 @@ sub situation_at_point {
     use constant SAP_MIN_ANGLE   => BBBikeUtil::deg2rad(5);
     use constant SAP_HALF_ANGLE  => BBBikeUtil::deg2rad(45);
     use constant SAP_SHARP_ANGLE => BBBikeUtil::deg2rad(130);
+    use constant SAP_TURN_ANGLE_FROM => BBBikeUtil::deg2rad(160);
+    use constant SAP_TURN_ANGLE_TO   => BBBikeUtil::deg2rad(200);
 
     my $l_or_r = sub { $dir eq 'l' ? 'left' : 'right' };
     my $action;
     if (@neighbors == 2) {
 	$action = ''; # no crossings
-    } elsif ($after_coord eq $before_coord) {
+    } elsif ($angle >= SAP_TURN_ANGLE_FROM && $angle <= SAP_TURN_ANGLE_TO) {
 	$action = 'back';
     } elsif ($angle >= SAP_SHARP_ANGLE) {
 	$action = 'sharp-' . $l_or_r->();

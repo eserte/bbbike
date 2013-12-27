@@ -116,10 +116,16 @@ for my $kr ($kr1, $kr2) {
 	}
     }
 
-    # Wilhelmstr.: drive back
+    # Wilhelmstr.: drive back (= 180°)
     {
 	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9404,10250));
 	is($situation{action}, 'back', q{Driving back"} . " (with @{[ ref $kr ]})");
+    }
+
+    # Hohenstaufenstr./Münchener Str. (umdrehen < 180°)
+    {
+	my %situation = situation_at_point_inorder($kr, qw(6209,9772 6241,9772 6209,9773));
+	is($situation{action}, 'back', q{Driving back, not quite 180 degrees});
     }
 
     # Wilhelmstr. -> Stresemannstr.
