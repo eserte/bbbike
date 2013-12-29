@@ -315,6 +315,9 @@ for my $file (@files) {
 		 (defined $nextcheck_date ? "<$nextcheck_date $nextcheck_wd> " : "                ") .
 		     ($prio ? "[$prio] " : "") .
 			 $subject;
+	     if ($dir->{osm_watch}) {
+		 $headline .= " (+osm_watch)";
+	     }
 	     if (defined $searches) {
 		 $headline .= " ($searches)";
 	     }
