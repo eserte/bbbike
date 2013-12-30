@@ -30,9 +30,7 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # 
 ### Treptow ###
 #
-#: last_checked: 2013-11-22
-#: check_frequency: 60d
-Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
+# REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 # 
 ### Mitte ###
 # 
@@ -796,6 +794,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX später vielleicht wieder "Fußgänger, q1", und evtl. nur den Brückenabschnitt so markieren
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
+#: osm_watch: way id="4610599" version="14"
 #: last_checked: 2013-12-23
 #: next_check: 2014-01-20
 Friedrichsbrücke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777

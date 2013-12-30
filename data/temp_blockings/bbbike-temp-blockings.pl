@@ -21949,7 +21949,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-12-22
+#: last_checked: 2013-12-29
 #: check_frequency: 30d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264

@@ -143,6 +143,10 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: osm_watch: way id="120633717" version="6"
+#: osm_watch: way id="162964323" version="4"
+#: osm_watch: way id="4541085" version="12"
+#: osm_watch: way id="4638315" version="12"
 #: last_checked: 2013-11-13
 #: check_frequency: 60d
 Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7717,16541 7754,16364 7800,16233 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
@@ -177,6 +181,9 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 10.19 (Realisierung nach 2011) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4797&options=4 --- Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147,14570
 # 
 #: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
+#: osm_watch: way id="182782708" version="3"
+#: osm_watch: way id="168307255" version="3"
+#: osm_watch: way id="4687243" version="23"
 #: last_checked: 2013-11-26
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
@@ -222,11 +229,15 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: osm_watch: way id="4424794" version="12"
+#: osm_watch: way id="30195541" version="6"
 #: last_checked: 2013-11-25 (neu asphaltiert, Markierung fehlt teilweise komplett)
 #: check_frequency: 14d
 Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: osm_watch: way id="4884674" version="8"
+#: osm_watch: way id="8023415" version="6"
 #: last_checked: 2013-07-13
 #: check_frequency: 180d
 Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837 -6429,14879 -6405,14971
@@ -241,6 +252,8 @@ Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,1516
 #: by: ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
+#: osm_watch: way id="25219757" version="8"
+#: osm_watch: way id="4600236" version="11"
 #: last_checked: 2013-08-26
 #: next_check: 2013-12-09
 # REMOVED (wieder aktivieren?) --- #: check_frequency: 90d
@@ -259,6 +272,7 @@ Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9457,18612 9454,1857
 #: next_check: 2014-05-01
 Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11162,19844 11312,19920 11425,19978 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
 # 
+#: osm_watch: way id="33836252" version="11"
 #: last_checked: 2013-09-13
 #: check_frequency: 100d
 Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11915,19580 11927,19308 11937,19175
@@ -268,6 +282,7 @@ Alt-Gatow: Radspuren bis 2015 geplant	?::projected; -4760,9343 -4751,9259 -4757,
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385410.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?)
 Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4839,7791 -4578,8336 -4540,8449 -4540,8535 -4590,8666
 # 
+#: osm_watch: way id="42727071" version="5"
 #: last_checked: 2013-07-13
 #: check_frequency: 180d
 Nauener Str.: Radspuren bis 2015 geplant	?::projected -4748,14237 -4757,14303 -4755,14393 -4724,14482
@@ -280,6 +295,7 @@ Zeppelinstr.: Radspuren bis 2015 geplant	?::projected -4724,14482 -4704,14571 -4
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385411.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?)
 Wilhelmstr.: Radspuren bis 2015 geplant	?::projected; -5501,11251 -5455,11321 -5392,11421
 # 
+#: osm_watch: way id="4472041" version="11"
 #: last_checked: 2013-10-22
 #: check_frequency: 90d
 Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,6404 5823,6413
@@ -287,6 +303,7 @@ Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,
 # REMOVED (realisiert) --- #: last_checked: 2013-05-10 --- #: check_frequency: 90d --- Königstr.: Radspuren bis 2015 geplant	?::projected -9412,546 -9730,514 -9969,519 -10052,521 -10269,445 -10593,476
 # REMOVED (realisiert) --- #: last_checked: 2013-07-06 --- #: next_check: 2013-10-13 --- Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
 # 
+#: osm_watch: way id="151617776" version="3"
 #: last_checked: 2013-10-21
 #: next_check: 2014-01-21
 Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,4376
@@ -804,7 +821,7 @@ Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,13
 # REMVOED --- mitten auf dem Weg wird gerade ein Haus gebaut; außerdem gab es in einem Amtsblatt eine "Entwidmung als Straßenland" --- #: last_checked: 2011-10-03 --- #: next_check: 2012-02-15 --- #: XXX zurzeit Bauarbeiten. Wahrscheinlich Gehwegplatten --- U Zwickauer Damm - U Wutzkyallee: für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 15622,2051 15622,2037 15312,2010
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110922.1205.359607.html vvv --- #: last_checked: 2012-09-16 --- #: next_check: 2013-06-01 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5098 (Verzögerung, März 2013) --- #: priority: #C --- Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,12824 23738,12799 --- #: by: ^^^
 # 
-#: last_checked: 2013-09-11 vvv
+#: last_checked: 2013-12-26 vvv
 #: check_frequency: 100d vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012 vvv
@@ -979,6 +996,8 @@ Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,
 #: XXX wahrscheinlich nur im nördlichen Teil bis Kaiserstr.
 #: XXX Baumaßnahme 7.13 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
+#: osm_watch: way id="4677913" version="13"
+#: osm_watch: way id="38198022" version="7"
 #: last_checked: 2013-09-04
 #: check_frequency: 120d
 Ringstr.: Radverkehrsanlagen	?::projected 8390,4248 8159,4354 8098,4376 7990,4420 7921,4451 7690,4552
@@ -1037,6 +1056,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 #: XXX wahrscheinlich nach den Bauarbeiten?
+#: osm_watch: way id="4687118" version="11"
 #: last_checked: 2013-12-20
 Parkaue: wann wird hier die Einbahnstraße ausgeschildert, wird sie tatsächlich für Radfahrer nicht offen sein?	? 15399,12444 15402,12390 15350,12270
 # 
@@ -1256,6 +1276,7 @@ Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::projected 15747,1288
 Greifenhagener Str.: evtl. wird hier eine Fußgängerzone entstehen	? 11123,15851 11150,15908
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
+#: osm_watch: way id="145485550" version="2"
 #: last_checked: 2013-08-17
 #: check_frequency: 100d
 Alt-Karow: evtl. wird hier ein Schutzstreifen angelegt	? 15726,23475 15637,23251 15547,23024 15529,22981 15428,22736
@@ -1322,7 +1343,7 @@ Am Brendegraben: Asphalt, Q0, unbeleuchtet	? 13231,22880 13203,22892 13149,23024
 # REMOVED --- Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsblatt 3/2013), ist es für Radfahrer irgendwie relevant?	? -12727,-1416 -12703,-1410
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2013-09-27
+#: last_checked: 2013-12-29
 #: check_frequency: 90d
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
@@ -1338,6 +1359,7 @@ Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehe
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
+#: osm_watch: way id="47155976" version="9"
 #: last_checked: 2013-10-14
 #: check_frequency: 90d
 Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9190
@@ -1490,6 +1512,7 @@ Potsdam, Lutherplatz: ist dieser Abschnitt als Lutherplatz ausgeschildert?	? -10
 # REMOVED (aufgenommen) --- #: by: http://farm7.staticflickr.com/6051/6359918217_d76e41d8e1_b.jpg --- Hans-Werner-Klünner-Weg: Wo befindet sich der Weg? Qualität? Beleuchtet?	? -2914,12223 -2935,12165 -2945,12138 -2976,12057 -3027,12055 -3088,12040 -3109,12021 -3116,12012
 # REMOVED (eingezeichnet) --- #: XXX kann man es schon in flaechen-orig einzeichnen? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 --- Stuttgarter Platz: Widmung als Grünanlage	? 3571,10913 3546,10962 3827,10980 3828,10967 3571,10913
 # 
+#: osm_watch: way id="87199071" version="2"
 #: last_checked: 2012-09-16
 #: next_check: 2013-12-01
 entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebauter Weg irgendwann entstehen?	? 25334,15051 25499,15010 25742,14907 25866,14898
@@ -1751,6 +1774,8 @@ Hadburgpfad: genaue Lage? Qualität? PLZ=10365	? 17484,12405 17531,12398
 # 28. Luchssteinweg
 # 29. Pöhligsteinweg
 # 30. Brausensteinweg
+#: osm_watch: way id="225014551" version="1"
+#: osm_watch: way id="42779047" version="5"
 #: last_checked: 2013-08-27 (noch keine Umbenennung)
 #: next_check: 2014-01-01
 KGA Am Rollberg und Anlage Schönwald: Benennung von 30 Privatwegen	? 9356,21363 10035,21581 10073,21339 9401,21144 9357,21362
@@ -1766,7 +1791,7 @@ Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf
-#: last_checked: 2013-12-22
+#: last_checked: 2013-12-29
 #: check_frequency: 30d
 Cheruskerpark: entsteht hier eine neue Wegverbindung?	?::projected 7391,8231 7369,8278
 # 
@@ -3404,8 +3429,9 @@ Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5476 ("kann mit dem Bau in diesem Jahr noch gerechnet werden?" (2013))
-#: XXX Ampelanlage in Planung, Realisierung 2011
+#: XXX: Ampelanlage in Planung, Realisierung 2011
 #: XXX: Vorfahrtsregelung kann dann entfernt werden
+#: osm_watch: node id="31532799" version="11"
 #: last_checked: 2013-06-22
 #: check_frequency: 180d
 Kohlisstr./Hultschiner Damm: gibt es hier mittlerweile eine Ampelanlage?	?::inwork 23810,7946

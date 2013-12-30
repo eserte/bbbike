@@ -493,7 +493,7 @@ Simplonstr.: bis zur Fahrbahnmitte asphaltiert	Q0; 14531,11142 14468,11203
 Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,11037 14752,11041
 Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
 Matkowskystr.: Asphalt	Q0 14531,11142 14513,11075
-#: last_checked: 2013-12-26
+#: last_checked: 2013-12-29
 #: XXX wird die andere Fahrtrichtung auch asphaltiert?
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2; 14752,11041 14811,11067 14879,11182
 Neue Bahnhofstr.: Asphalt	Q0; 14879,11182 14811,11067 14752,11041
@@ -1785,6 +1785,7 @@ F‰rberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: XXX Umbau in Asphaltwege
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110922.0700.359578.html
+#: osm_watch: way id="152046369" version="4"
 #: last_checked: 2013-09-07
 #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21487,5425 21512,5404 21600,5221 21696,5053
@@ -17304,6 +17305,8 @@ Gustave-Courbet-Str.: Asphalt	Q0 3836,16273 3881,16259 3992,16198
 #: corrected_by: srt (added "schlechtes")
 #: XXX wird diese Straﬂe asphaltiert?
 #: XXX Baumaﬂnahme GL6.11 (Realisierung nach 2011)
+#: osm_watch: way id="102486207" version="3"
+#: osm_watch: way id="102486181" version="4"
 #: last_checked: 2013-09-04
 #: check_frequency: 120d
 Brandenburgische Str. (Steglitz): schlechtes Kopfsteinpflaster	Q3 6889,4334 6820,4347 6677,4384

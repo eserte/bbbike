@@ -2850,7 +2850,7 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2489,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-12-22
+#: last_checked: 2013-12-29
 #: check_frequency: 30d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
@@ -2961,27 +2961,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
          'type' => 'gesperrt'
        },
-       {
-         'data' => '#: by: http://www.potsdam.de/cms/beitrag/10046424/302934/
-#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/91842041/Radverkehrsfuehrung_Gro%C3%9Fveranstaltungen.pdf
-userdel	1::temp -13556,-1182 -13643,-1220
-',
-         'periodic' => 1,
-         'until' => 1388357999,
-         'from' => 1385334000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 25. November - 29. Dezember 2013',
-         'type' => 'gesperrt',
-         'id' => 2526
-       },
+       undef,
        {
          'source_id' => 'IM_020820',
          'until' => 1401458400,
