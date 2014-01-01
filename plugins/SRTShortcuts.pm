@@ -468,18 +468,22 @@ Please create a file using $bbbike_rootdir/miscsrc/weight_bbd
 EOF
 			();
 		    } else {
-			my($latest) = sort { $b cmp $a } @candidates;
-			my $date_desc;
-			if ($latest =~ m{/(\d{4}-\d{2})_}) {
-			    $date_desc = " (for month $1)";
-			} else {
-			    $date_desc = " (unknown month)";
+			my @checkbuttons;
+			my($latest, $prev) = sort { $b cmp $a } @candidates;
+			for my $file ($latest, $prev) {
+			    my $date_desc;
+			    if ($file =~ m{/(\d{4}-\d{2})_}) {
+				$date_desc = " (for month $1)";
+			    } else {
+				$date_desc = " (unknown month)";
+			    }
+			    push @checkbuttons, layer_checkbutton([$do_compound->("Weighted matches$date_desc")],
+								  'str', $file,
+								  above => $str_layer_level,
+								  Width => undef, # XXX weighted-matches.desc sets its own widths, but why it isn't winning?
+								 );
 			}
-			layer_checkbutton([$do_compound->("Weighted matches$date_desc")],
-					  'str', $latest,
-					  above => $str_layer_level,
-					  Width => undef, # XXX weighted-matches.desc sets its own widths, but why it isn't winning?
-					 );
+			@checkbuttons;
 		    }
 		},
 		do {
