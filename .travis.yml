@@ -12,10 +12,6 @@ before_install:
  - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb twm rhino
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
  - cpanm --quiet --notest Test::LectroTest Email::MIME HTML::TreeBuilder::XPath
-## Temporary hack: PDF::Create does not install (see https://rt.cpan.org/Ticket/Display.html?id=91312), force 1.06
-# - cpanm --quiet --notest PDF::Create~"!=1.07"
-# Temporary hack: Glib does not install (see https://rt.cpan.org/Ticket/Display.html?id=91313), force version before 1.303
- - cpanm --quiet --notest Glib~"!=1.303"
 # DBD::XBase versions between 1.00..1.05 explicitely want Perl 5.10.0 as a minimum. See https://rt.cpan.org/Ticket/Display.html?id=88873
  - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05" || true'
 # Perl 5.8.9's File::Path has a version with underscores, and this is causing warnings and failures in the test suite
