@@ -1883,47 +1883,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 11329,12497 11209,12430
-userdel	q4::temp 11209,12430 11273,12301
-userdel	2::temp 11273,12301 11355,12331
-',
-         'periodic' => 1,
-         'until' => 1388530799,
-         'from' => 1384350862,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              11,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr.) bzw. nur schiebend auf dem Gehweg möglich (Dircksenstr.), bis Ende Dezember 2013',
-         'type' => 'gesperrt',
-         'id' => 1988
-       },
-       {
-         'data' => 'userdel	2::temp 9536,11912 9668,11928
-userdel	2::temp 9524,12010 9656,12021
-',
-         'periodic' => 1,
-         'until' => 1388530799,
-         'from' => 1385247600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2013 bis 31.12.2013, Durchfahrt nicht möglich (Eintritt!)',
-         'type' => 'gesperrt',
-         'id' => 1989
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2034,7 +1995,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2825,16 +2786,7 @@ userdel	2::night 17671,13132 17684,13133
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130828.1240.388504.html',
-         'until' => 1388530799,
-         'text' => 'Alt-Lübars zwischen Quickborner Straße und Zabel-Krüger-Damm: Bauarbeiten, Fahrbahn gesperrt, bis Ende 2013',
-         'from' => 1377731580,
-         'id' => 2480,
-         'data' => 'userdel	q4::inwork 6805,23554 6801,23474 6764,23396
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2895,16 +2847,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_020388',
-         'until' => 1388502000,
-         'text' => 'Mühlenstr. (Pankow): Baustelle zwischen Berliner Str. und Tiroler Str., Fahrtrichtung gesperrt, bis Ende Dezember 2013 ',
-         'from' => 1380101700,
-         'id' => 2502,
-         'data' => 'userdel	1::inwork 10927,17022 10862,17087
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Gudvanger Str.: Bauarbeiten zwischen Krügerstr. und Erich-Weinert-Str. sowie am Humannplatz, Fahrbahn gesperrt',
