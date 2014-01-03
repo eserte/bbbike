@@ -447,7 +447,7 @@ Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11500,9116
 Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7289,20618
 #: XXX nach den Bauarbeiten bessere Qualität?
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121128.1200.378696.html
-#: XXX siehe auch Eintrag in bbbike-temp-blockings
+#: XXX siehe auch ausgelaufenen Eintrag in bbbike-temp-blockings
 #: next_check: 2013-06-15
 Weg am Nordgraben: teilweise nur mäßiger Asphalt	Q1 7289,20618 7083,20584 6601,20542 6487,20512 6428,20487 6378,20460
 An der Nordbahn: Rasengittersteine	Q2 6669,20129 6639,20153 6572,20165 6499,20221
@@ -1225,6 +1225,7 @@ Wuhlewanderweg: guter Beton	Q0 22295,13530 22359,13599 22516,13799 22607,13890 2
 Wuhlewanderweg: guter Beton	Q0 22806,14631 22741,14761 22573,15043 22441,15118
 Wuhlewanderweg: Beton/Verbundsteinpflaster	Q1 22359,13599 22259,13508
 Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22221,13027 22196,12961
+#: next_check_id: WUHLEWANDERWEG-2014
 #: XXX: der Abschnitt nördlich des Bahnhofs Wuhletal ist noch nicht fertiggestellt:
 #: last_checked: 2013-08-21
 #: check_frequency: 300d
@@ -8646,6 +8647,7 @@ Rhinstr. [Nebenstraße]: Beton	Q1+ 18258,11827 18340,11830 18381,11857 18417,1185
 Am Kleinen Platz: Asphalt	Q0 -7292,14811 -7248,14826
 Jean-Monnet-Str.: Verbundsteinpflaster	Q0- 7995,13537 8048,13578
 Heidenelkenweg: Verbundsteinpflaster	Q0- 16112,12622 16111,12685 16073,12685 16071,12623
+#: next_check_id: RITTER-2014
 #: XXX nach den Bauarbeiten wird sich Qualität ändern
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: last_checked: 2013-11-25
@@ -8721,6 +8723,7 @@ Conradstr.: unbefestigte Straße	Q2 -5781,1120 -5753,998
 Koseler Weg: Asphalt, wellig	Q1 9850,6135 9971,6114
 Koseler Weg: welliges Verbundsteinpflaster	Q1- 9850,6135 9679,6160
 In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9903,17711 9904,17748
+#: next_check_id: FLORAGAERTEN-2014
 #: XXX Qualität nach den Bauarbeiten? Wird dieser Teil der Straße überhaupt noch existieren?
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: last_checked: 2013-12-17
@@ -9198,6 +9201,7 @@ Rumoldstr.: Verbundsteinpflaster	Q1+ 17366,12357 17454,12348 17474,12344 17526,1
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0- 14791,9537 14823,9523 14844,9513
 (Uferweg - Puschkinallee): Asphalt	Q0- 14443,9731 14318,9688
 (Spreeuferweg - Wintersteinstr.): Asphalt mit Regenablaufrinnen	Q1- 3654,12672 3741,12607
+#: next_check_id: STADTGARTENMOABIT-2014
 #: XXX entsteht hier Asphalt oder eine andere Pflasterung?
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: last_checked: 2013-11-25 (Bauarbeiten)
@@ -9219,6 +9223,7 @@ Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7607,5944
 Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 (Borussenstr. - Kronprinzessinnenweg): Verbundsteinpflaster	Q1+ -4134,1984 -4166,1941 -4180,1941
 (Rasthof Dreilinden): Asphalt	Q0 -4003,1234 -3994,1170 -3642,1199 -3577,1148
+#: next_check_id: RATHAUSSTR-2014
 #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
 #: last_checked: 2013-12-23
 Spandauer Str.: mäßiger Asphalt im Bereich Kreuzung Rathaustr.	Q1 10431,12709 10601,12521 10644,12469

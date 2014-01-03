@@ -612,6 +612,7 @@ Schmachtenhagen - Fichtengrund (Süd)	R0 1331,41308 282,41321 56,41332 -76,41304 
 Fichtengrund (Nord) - Fichtengrund (Ost)	R0 -353,42368 -281,42234 -225,42090 -193,41909 -192,41820 -168,41684 -115,41560 -54,41487 -4,41437 78,41382 173,41346 282,41321
 	RG 8333,8902 8333,9001 8470,9486 8477,9562 8497,9654 8571,9896 8594,9968 8614,10095 8637,10201
 # 
+#: next_check_id: BER-20XX vvv
 #: XXX Eröffnung: Oktober 2013. Zone=RC, Linien? Siehe auch Bahnhöfe. Wird es noch R-Bahnen via Schönefeld geben? vvv
 #: next_check: 2014-03-02 vvv
 	RBau 13869,-4636 14193,-4500 14580,-4521 15049,-4665 15729,-4815
@@ -620,4 +621,5 @@ Fichtengrund (Nord) - Fichtengrund (Ost)	R0 -353,42368 -281,42234 -225,42090 -19
 	RBau 23596,-1362 23862,-1325 24081,-1414 24263,-1586
 #: next_check ^^^
 #: XXX ^^^
+#: next_check_id ^^^
 Flughafen Berlin-Brandenburg	RG 19866,-3009 19540,-3166 19348,-3339 18797,-3862

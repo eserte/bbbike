@@ -21681,6 +21681,7 @@ EOF
        text  => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: BER-20XX vvv
 #: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht vvv
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
@@ -21696,6 +21697,7 @@ EOF
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
 #: XXX_osm ^^^
+#: next_check_id ^^^
 EOF
      },
      { from  => undef,
@@ -22078,6 +22080,7 @@ EOF
        text  => 'Gudvanger Str.: Bauarbeiten zwischen Krügerstr. und Erich-Weinert-Str. sowie am Humannplatz, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: GUDVANGER-2014 vvv
 #: XXX wann sind die Bauarbeiten beendet? vvv
 #: last_checked: 2013-12-17 vvv
 #: check_frequency: 30d vvv
@@ -22086,6 +22089,7 @@ EOF
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+#: next_check_id ^^^
 EOF
      },
      { from  => 1382507820, # 2013-10-23 07:57

@@ -1436,7 +1436,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'text' => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
          'from' => undef,
          'id' => 2463,
-         'data' => '#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht vvv
+         'data' => '#: next_check_id: BER-20XX vvv
+#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht vvv
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 #: osm_watch: way id="83106248" version="15" brb
@@ -1451,6 +1452,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
 #: XXX_osm ^^^
+#: next_check_id ^^^
 ',
          'type' => 'gesperrt'
        },
@@ -1580,7 +1582,8 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'text' => 'Gudvanger Str.: Bauarbeiten zwischen Krügerstr. und Erich-Weinert-Str. sowie am Humannplatz, Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2503,
-         'data' => '#: XXX wann sind die Bauarbeiten beendet? vvv
+         'data' => '#: next_check_id: GUDVANGER-2014 vvv
+#: XXX wann sind die Bauarbeiten beendet? vvv
 #: last_checked: 2013-12-17 vvv
 #: check_frequency: 30d vvv
 	q4::inwork 11694,16034 11673,16003
@@ -1588,6 +1591,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+#: next_check_id ^^^
 ',
          'type' => 'handicap'
        },
