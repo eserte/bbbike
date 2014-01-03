@@ -27,6 +27,7 @@ my($v, $i, $cat, $catrx, $name, $namerx, $section, $sectionrx, @directive_def, @
 my($minarea, $minlength);
 my $preserveglobaldirectives;
 my $ignoreglobaldirectives;
+my $ignorelocaldirectives;
 my %special;
 my %special_init;
 my %special_end;
@@ -53,6 +54,7 @@ GetOptions("v" => \$v,
 	   },
 	   "preserveglobaldirectives!" => \$preserveglobaldirectives,
 	   "ignoreglobaldirectives!" => \$ignoreglobaldirectives,
+	   "ignorelocaldirectives!" => \$ignorelocaldirectives,
 	   "minarea=f" => \$minarea,
 	   "minlength=f" => \$minlength,
 	   'inner=s@' => \@inner,
@@ -64,6 +66,7 @@ usage: $0 [-v] [-i] [-cat category | -catrx regexp]
        [-directive key=val|key~val [-directive ...]]
        [-special name] [-minarea ...km²] [-minlength ...km]
        [-preserveglobaldirectives] [-ignoreglobaldirectives]
+       [-ignorelocaldirectives]
        [-inner file [-inner ...]] [-outer file [-outer ...]] bbd ...
 
 section is a region marked with the "section" directive in a bbd file.
@@ -224,7 +227,11 @@ LOOP_STREETS: while(1) {
     while(my($k,$v) = each %special) {
 	next LOOP_STREETS if !$v->($r, $dir);
     }
-    $new_s->push_ext($r, $dir);
+    if ($ignorelocaldirectives) {
+	$new_s->push_ext($r);
+    } else {
+	$new_s->push_ext($r, $dir);
+    }
 }
 
 if (@errors) {
