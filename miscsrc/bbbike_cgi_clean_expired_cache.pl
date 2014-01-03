@@ -26,6 +26,7 @@ GetOptions(
 
 my @cgis = qw(bbbike.cgi bbbike2.cgi bbbike.en.cgi bbbike2.en.cgi);
 my $ua = LWP::UserAgent->new;
+$ua->agent($ua->_agent . " (BBBike-Tools)");
 
 my $has_errors = 0;
 
