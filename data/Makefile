@@ -211,7 +211,7 @@ strassen:	.strassen.tmp plaetze routing_helper-orig
 	-@$(WRITEABLE) $@
 	cat .strassen.tmp > $@~
 	${GREPSTRASSEN} -v --namerx ' \(Potsdam\)' plaetze >> $@~
-	${GREPSTRASSEN} -ignoreglobaldirectives -catrx . routing_helper-orig |\
+	${GREPSTRASSEN} -ignoreglobaldirectives -ignorelocaldirectives -catrx . routing_helper-orig |\
 	    ${REPLACESTRASSEN} -catexpr 's/.*/NN::igndisp/' >> $@~
 	mv $@~ $@
 	-@$(READONLY) $@
@@ -521,7 +521,7 @@ gesperrt .gesperrt.tmp:	gesperrt-orig strassen landstrassen landstrassen2 commen
 	    -specsperre-exceptions=comments_path gesperrt-orig |\
 	    ${RESOLVE_STARS} ${ALL_STREETS} - > .gesperrt.tmp
 	$(REPLACESTRASSEN) -catexpr 's/:q\d//' < .gesperrt.tmp > gesperrt~
-	${GREPSTRASSEN} -ignoreglobaldirectives -catrx ';$$' routing_helper-orig |\
+	${GREPSTRASSEN} -ignoreglobaldirectives -ignorelocaldirectives -catrx ';$$' routing_helper-orig |\
 	    ${REPLACESTRASSEN} -catexpr 's/.*/1::igndisp/' -revcoords >> gesperrt~
 	mv gesperrt~ gesperrt
 	-@$(READONLY) gesperrt
@@ -635,7 +635,7 @@ handicap_s:	handicap_s-orig berlin .gesperrt.tmp routing_helper-orig
 		-catexpr 's/.*:(q\d)/$$1::igndisp;/' \
 		-nameexpr 's/(.*)/$$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/' \
 		>> handicap_s~
-	${GREPSTRASSEN} -ignoreglobaldirectives -catrx '^q\d+;$$' routing_helper-orig |\
+	${GREPSTRASSEN} -ignoreglobaldirectives -ignorelocaldirectives -catrx '^q\d+;$$' routing_helper-orig |\
 	    ${REPLACESTRASSEN} -catexpr 's/;/::igndisp;/' >> handicap_s~
 	mv handicap_s~ handicap_s
 	-@$(READONLY) $@
