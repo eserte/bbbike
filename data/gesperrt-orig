@@ -720,7 +720,7 @@ Harzburger Str. (Pankow), Klaustaler Str...	1s:q4 11442,18736 11419,18801 11463,
 #: XXX_indoor bei osm falsch herum
 Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
 Römerweg	1s:q2 19236,9710 19450,9728 19459,9842
-Michaelkirchplatz	1 11415,11392 11498,11417
+Michaelkirchplatz	1 11415,11392 11498,11417 11542,11342
 #: by: Ulrike Orlowski vvv
 #: XXX_osm Einbahnstraßen fehlen bei osm vvv
 Berenhorststr.	1 4816,17712 4862,17934
@@ -1079,6 +1079,7 @@ Garzauer Str.	1 21830,13688 21722,13708
 Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
 Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
+(Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14270,9710
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1314,6 +1315,7 @@ Ritterstr.	1 -3360,14525 -3316,14504
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2016,11034 2116,11288 2109,11441
 Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
 Cecilienstr.: Mittelstreifen	3nocross 21831,13801 21853,13784 21918,13720
 Warnemünder Str.: Mittelstreifen	3nocross 2767,7592 2750,7444 2744,7397
@@ -1683,6 +1685,7 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (2 Stufen)	0:5 14823,9523
 tragen (10+11 Stufen)	0:30 -1584,11499
 #: XXX wird die Treppe während der Bauarbeiten an der Freybrücke benutzbar sein?
 #: last_checked: 2013-09-19

@@ -525,7 +525,7 @@ Blaurackenweg	1 17532,8125 17647,8071 17613,7989
 Harzburger Str. (Pankow), Klaustaler Str...	1s 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
 Rˆmerweg	1s 19236,9710 19450,9728 19459,9842
-Michaelkirchplatz	1 11415,11392 11498,11417
+Michaelkirchplatz	1 11415,11392 11498,11417 11542,11342
 Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
 Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4872,17703 4816,17712
@@ -793,6 +793,7 @@ Garzauer Str.	1 21830,13688 21722,13708
 Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
 Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
+(Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14270,9710
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten M‰rkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -981,6 +982,13 @@ Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich)	1s 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
+Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2016,11034 2116,11288 2109,11441
+Messedamm -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2109,11441 2116,11288 2219,11304
+Bredtschneiderstr. -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2219,11304 2116,11288 1979,11277
+Bredtschneiderstr. -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndisp 2219,11304 2116,11288 2016,11034
+Bredtschneiderstr. -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndisp 1979,11277 2116,11288 2109,11441
+Bredtschneiderstr. -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 1979,11277 2116,11288 2219,11304
+Messedamm -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2016,11034 2116,11288 1979,11277
 Straﬂenbahnhaltestelle	3nocross::ignrte 10908,17142 10917,17088 10927,17022
 Berliner Str. -> Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]: Straﬂenbahnhaltestelle	3::igndisp 10927,17022 10917,17088 10891,17088
 Mittelstreifen	3nocross::ignrte 21831,13801 21853,13784 21918,13720
@@ -2083,6 +2091,7 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (2 Stufen)	0:5:-66 14823,9523
 tragen (10+11 Stufen)	0:30:-213 -1584,11499
 tragen (ca. 45 Stufen)	0:45:-160 -3177,11507
 tragen (4 Stufen)	0:10:-233 21326,11122

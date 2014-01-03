@@ -19458,7 +19458,7 @@ EOF
        source_id => 'IM_017436',
        data  => <<EOF,
 userdel	2::inwork 13829,9905 13884,9882 13995,9834 14193,9746
-	q4::inwork; 13835,10083 13928,10053 14012,10029 14076,10011 14289,9870
+	q4::inwork; 13842,10095 13936,10062 14016,10038 14077,10016 14289,9870
 EOF
      },
      { from  => 1309644000, # 2011-07-03 00:00
@@ -22359,6 +22359,17 @@ EOF
        source_id => 'IM_020924',
        data  => <<EOF,
 userdel	q4::inwork; 1229,18750 1328,18878 1447,18933 1528,18971
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bredtschneiderstr.: wegen Bauarbeiten Durchfahrt gesperrt',
+       type  => 'gesperrt',
+       source_id => 'http://berlinerbaustellen.blogspot.de/2014/01/0214-bmw-haupstadtniederlassung-in.html',
+       data  => <<EOF,
+#: XXX bleibt die Sperrung permanent oder wird sie irgendwann aufgehoben?
+#: last_checked: 2014-01-02
+userdel	2::inwork 2219,11304 2116,11288
 EOF
      },
     );

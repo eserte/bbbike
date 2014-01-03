@@ -1055,6 +1055,12 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: XXX hat die "Einziehung von Straﬂenland" hier irgendwelche Konsequenzen?
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/54re.pdf/file?y=2013
+#: last_checked: 2014-01-02
+#: check_frequency: 120d
+Fanny-Zobel-Str.	? 13975,10187 14049,10164
+# 
 #: XXX wahrscheinlich nach den Bauarbeiten?
 #: osm_watch: way id="4687118" version="11"
 #: last_checked: 2013-12-20
@@ -1535,9 +1541,7 @@ Bodenschwelle, Umfahrung kann zugeparkt sein	? 23349,2240
 Heiﬂt dieser Abschnitt "Chaussee nach Bornim"?	? -19100,407 -18964,793 -18688,1177
 # 
 # REMOVED (hier ‰ndert sich bestimmt nichts) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file --- Fichtenweg: Teilst¸ck als Straﬂenland eingezogen?	? -2949,17946 -2961,17875
-# 
-#: XXX_prog
-Bordsteinkante Richtung Westen	? 17183,17385
+# REMOVED (now in handicap_s-orig) --- #: XXX_prog --- Bordsteinkante Richtung Westen	? 17183,17385
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file
 #: XXX_indoor
@@ -3244,11 +3248,11 @@ Vogelsang - Hammelspring: gibt es hier mittlerweile einen Radweg?	? 7983,69794 7
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2011
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012
-#: XXX Privatstraﬂe, fehlt in Berlin.coords.data: ‹ckeritzer Ring|Neu-Hohenschˆnhausen|13059
+#: XXX laut osm nicht mehr "under construction"
 #: last_checked: 2013-04-20 (erste H‰user stehen, Straﬂen noch nicht)
 #: next_check: 2013-10-20
-#: osm_watch: way id="203211083" version="4"
-‹ckeritzer Ring: Ist die Straﬂe schon fertig gestellt? Qualit‰t? Wo genau verl‰uft die Straﬂe?	? 17247,19212 17301,19300 17403,19327 17436,19272
+#: osm_watch: way id="203211083" version="5"
+‹ckeritzer Ring: Ist die Straﬂe schon fertig gestellt? Qualit‰t der Straﬂe?	? 17247,19212 17247,19229 17251,19264 17403,19313 17404,19258 17339,19231 17247,19229
 # 
 Groﬂ-Ziethener Chaussee: Gehweg f¸r Radfahrer zwischen Meiﬂner Weg und Ascherslebener Weg in Richtung Westen freigegeben?	?; 15854,666 15757,610
 # REMOVED --- #: XXX laut osm Verbundsteinpflaster --- Schwarzer Weg (Groﬂziethen): Qualit‰t?	? 13215,-570 13022,-647 12804,-735

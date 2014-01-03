@@ -107,7 +107,7 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, Bordstei
 #: XXX ^^^
 # 
 #: XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2013-12-27
+#: last_checked: 2014-01-02
 Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: last_checked: 2013-12-27 vvv
@@ -573,7 +573,7 @@ Barsekowstr.: Fuﬂg‰nger	q1 5336,4676 5417,4647 5476,4626 5589,4617
 Dieffenbachstr.: Bodenschwellen	q0- 11141,9732 11346,9655
 # REMOVED (hier ist nur eine einzige Bodenschwelle ¸brig geblieben) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624 --- #: XXX_prog: f¸r Anh‰nger evtl. q1 --- Dieffenbachstr.: Bodenschwellen, kˆnnen gut umfahren werden	q0- 11346,9655 11541,9576
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schˆnleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
-Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14076,10011
+Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14077,10016
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
 (Gr¸nanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fuﬂg‰nger	q2 17678,18171 17744,18016
@@ -1818,7 +1818,7 @@ Parforceweg: einige umgest¸rzte B‰ume	q4 -643,7252 -728,7310 -1020,7446 -1328,75
 (S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger	q1 14575,9648 14627,9609 14705,9578
 (S-Bahnhof Treptower Park - Rosengarten): Parkplatzverkehr	q1 14705,9578 14791,9537
 #: XXX_prog BS am Parkplatz (ansonsten -> q1)
-(S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger, Bordstein	q2 14791,9537 14844,9513
+(S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger, Bordstein	q2 14791,9537 14823,9523 14844,9513
 #: XXX_prog BS an der Wintersteinstr (ansonsten -> q2)
 #: note: offizieller gemeinsamer Rad- und Gehweg
 (Spreeuferweg - Wintersteinstr.): Fuﬂg‰nger, Bordstein	q3 3654,12672 3741,12607
@@ -1831,6 +1831,9 @@ Helsingforser Str.: einige Fuﬂg‰nger	q1 13496,11384 13427,11431
 Karl-Lade-Str.: Fuﬂg‰nger	q2 14821,13674 14987,13621 15040,13602
 #: XXX_prog BS zu beiden Seiten, ansonsten q1 oder q2 wegen Fuﬂg‰nger
 Magdeburger Platz: Bordsteine	q3 7393,10809 7414,10804
+(Fanny-Zobel-Str. - Uferweg): Fuﬂg‰nger, eng	q2 14049,10164 14116,10149
+#: XXX_prog BS an der Privatstraﬂe 10 (ˆstliche Seite), anonsten Eintrag entfernen
+(Gr¸nanlage): Bordsteinkante	q1 17183,17385 17006,17473
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2209,8 +2212,8 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,
 #: XXX_prog: Bordsteine an beiden Enden, ansonsten w‰re es q1
 Apeldorner Weg: Fuﬂg‰nger, Bordsteine	q2 3848,8689 3868,8759 3952,8980
 M¸nstersche Str.: Fuﬂg‰nger	q2 3856,9687 3698,9624
-(Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14076,10011 13995,9834
-(Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14076,10011 14118,10178
+(Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14077,10016 13995,9834
+(Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14077,10016 14116,10149 14126,10176
 August-Lindemann-Str.: Fuﬂg‰nger	q3 14355,12752 14360,12792
 (Jagdschloﬂ Grunewald - Umgehungschaussee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 880,6645 884,6701 1024,6898 1066,7093 1125,7184
 (Uferweg am Grunewaldsee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 340,6598
