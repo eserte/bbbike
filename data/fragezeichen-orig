@@ -208,7 +208,7 @@ Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 1308
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
-#: last_checked: 2013-08-06
+#: last_checked: 2014-01-04
 #: check_frequency: 90d
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
@@ -713,8 +713,8 @@ Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur e
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv
 #: osm_watch: way id="185792044" version="1"
-#: last_checked: 2013-08-06 (Trasse schon sichtbar) vvv
-#: next_check: 2014-03-21 vvv
+#: last_checked: 2014-01-04 (Trasse schon sichtbar) vvv
+#: next_check: 2014-06-21 vvv
 Wasserstr.: geplante Straße in Niederschöneweide	?::projected 17477,6031 17639,6227
 Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,6083 17900,6072
 #: next_check ^^^
@@ -937,37 +937,17 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20091119.1240.146739.html
 Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010): danach hat der Weg eine neue wassergebundene Decke	?::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
 # 
-#: osm_watch: way id="180800504" version="1"
-#: last_checked: 2013-10-31
-#: check_frequency: 60d
-Wilhelm-Hoff-Str.: Qualität	?::inwork 18833,3191 18892,3256 18953,3318 19047,3412 19125,3491
-# 
-#: osm_watch: way id="180789857" version="1"
-#: last_checked: 2013-06-09
-#: next_check: 2013-12-31 (synchronize with Wilhelm-Hoff-Str.)
-Verlängerung der Katharina-Boll-Dornberger-Str.: Qualität? Straßenname?	?::inwork 19167,3287 19047,3412
-# 
-#: osm_watch: way id="142575677" version="3"
-#: last_checked: 2013-10-31
-#: next_check: 2013-12-15
-Verlängerung der Hans-Schmidt-Str.: Qualität?	?::inwork 19581,3495 19667,3581
-# 
-#: osm_watch: way id="91218505" version="3" 
-#: XXX Radwege werden fortgeführt
-#: last_checked: 2013-08-19
-#: next_check: 2013-11-15
-Verlängerung der Wagner-Régeny-Str., Igo-Etrich-Str.: Qualität? Wo beginnt und verläuft die Igo-Etrich-Str.?	?::inwork 19363,3730 19155,3936
-# 
-#: osm_watch: way id="117951616" version="3"
-#: last_checked: 2013-10-31
-#: check_frequency: 60d
-Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18928,3701 19155,3936
+# REMOVED (realisiert) --- #: osm_watch: way id="180800504" version="1" --- #: last_checked: 2013-10-31 --- #: check_frequency: 60d --- Wilhelm-Hoff-Str.: Qualität	?::inwork 18833,3191 18892,3256 18953,3318 19047,3412 19125,3491
+# REMOVED (realisiert) --- #: osm_watch: way id="180789857" version="1" --- #: last_checked: 2013-06-09 --- #: next_check: 2013-12-31 (synchronize with Wilhelm-Hoff-Str.) --- Verlängerung der Katharina-Boll-Dornberger-Str.: Qualität? Straßenname?	?::inwork 19167,3287 19047,3412
+# REMOVED (realisiert) --- #: osm_watch: way id="142575677" version="3" --- #: last_checked: 2013-10-31 --- #: next_check: 2013-12-15 --- Verlängerung der Hans-Schmidt-Str.: Qualität?	?::inwork 19581,3495 19667,3581
+# REMOVED (realisiert) --- #: osm_watch: way id="91218505" version="3"  --- #: XXX Radwege werden fortgeführt --- #: last_checked: 2013-08-19 --- #: next_check: 2013-11-15 --- Verlängerung der Wagner-Régeny-Str., Igo-Etrich-Str.: Qualität? Wo beginnt und verläuft die Igo-Etrich-Str.?	?::inwork 19363,3730 19162,3935
+# REMOVED (realisiert) --- #: osm_watch: way id="117951616" version="3" --- #: last_checked: 2013-10-31 --- #: check_frequency: 60d --- Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18930,3703 19162,3935
 # 
 #: osm_watch: way id="224731112" version="2"
 #: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben
-#: last_checked: 2013-10-31
+#: last_checked: 2014-01-04
 #: next_check: 2014-12-01
-Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18771,3871 18701,3806 18520,3812 18229,4127 18392,4279
+Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18773,3873 18701,3806 18520,3812 18229,4127 18396,4282
 # REMOVED --- #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/ --- #: by: (URL existiert nicht mehr) http://www.potsdam.de/cms/beitrag/10058808/757395/ --- #: XXX wo wird die Verbindung genau entlanggeführt? --- Neuer Garten (Potsdam): neue Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12263,-403 -12262,-362 -12328,-212 -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
 # REMOVED --- #: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend, PLZ=14467, Eintrag in Potsdam.coords.data fehlt --- #: XXX siehe auch Eintrag in landstrassen-orig, eventuell wird sich die Humboldtstr. auf der anderen Seite des Schlosses befinden? --- Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
 # REMOVED (hier wird wohl nichts weiter passieren - Radwege existieren, und die Qualität ist wohl egal?) --- #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv --- #: last_checked: 2011-06-25 --- Alt-Biesdorf (nördliche Seite): Bau von Radwegen	?::inwork; 22242,11269 21960,11269 21860,11278 21750,11319 21624,11379 21398,11482 21311,11528 --- #: last_checked: 2011-06-25 --- Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von asphaltierten Radwegen	?::inwork; 22242,11269 22326,11266 22484,11270 --- #: by ^^^
@@ -1025,7 +1005,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2012/1213_KOE.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
-#: last_checked: 2013-10-14
+#: last_checked: 2014-01-04
 #: next_check: 2016-12-01
 Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
@@ -1557,10 +1537,9 @@ Heißt dieser Abschnitt "Chaussee nach Bornim"?	? -19100,407 -18964,793 -18688,11
 Landschaftspark Herzberge: ebenfalls zum Landschaftspark gehörig, ggfs. in flaechen aufnehmen	? 17097,14140 17846,14179 17867,13868 17076,13861
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130701.1255.386582.html
-#: last_checked: 2013-09-07
+#: last_checked: 2014-01-04
 #: next_check: 2014-10-01
-#: XXX_indoor
-"Bürgerwiese" Slabystr./Wilhelminenhofstr.: in flaechen-orig eintragen, falls fertig	?::projected 18978,5944 18954,5973 18968,6009 19076,6117 19116,6080 18978,5944
+"Bürgerwiese" Slabystr./Wilhelminenhofstr.: in flaechen-orig eintragen, wenn fertig	?::projected 18978,5944 18954,5973 18968,6009 19076,6117 19116,6080 18978,5944
 # 
 #: by: MichaelM
 #: XXX_prog:

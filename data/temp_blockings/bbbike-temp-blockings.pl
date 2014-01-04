@@ -10204,7 +10204,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006820',
        data  => <<EOF,
-userdel	1::inwork 16868,5938 16993,5841 17337,5574 17366,5551 17471,5469 17599,5371
+userdel	1::inwork 16868,5938 16993,5841 17337,5574 17366,5552 17473,5471 17601,5374
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00
@@ -21753,6 +21753,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_020145',
        data  => <<EOF,
+#: next_check_id: STERNDAMM-2014
 userdel	2::inwork 17736,5441 17886,5587
 EOF
      },

@@ -599,10 +599,11 @@ Fuﬂg‰ngerbr¸cke Storkower Str.: Fuﬂg‰nger	q2 14481,13143 14524,13271 14530,13269
 Lemgoer Str.: Fuﬂg‰nger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
 (Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
-(Allmersweg - Groﬂ-Berliner Damm): Fuﬂg‰nger, Bordsteine	q3 17789,5189 17735,5170
+(Allmersweg - Groﬂ-Berliner Damm): Fuﬂg‰nger, Bordsteine	q3 17789,5189 17726,5166
 Sportfliegerstr.: drei Bodenschwellen, nicht umfahrbar	q2 18157,4742 18343,4545
 Karl-Otto-Reinsch-Str.: Fuﬂg‰nger	q1 19603,3207 19524,3286
 Brook-Taylor-Str.: Fuﬂg‰ngerzone	q1 19146,2975 19101,3028 19015,3129
+Alexander-von-Humboldt-Weg: Fuﬂg‰ngerzone	q1 19015,3129 18892,3256
 Heinrich-Mirbach-Str.: Fuﬂg‰nger	q1 17288,4026 17244,4084
 Drosselbartstr.: enge Straﬂe	q1 15188,6908 15024,7083 14951,7163
 Zimmermannstr.: Fuﬂg‰nger	q3 4992,5868 5018,5854
@@ -677,7 +678,7 @@ Don-Ugoletti-Platz - Regattastr.: Fuﬂg‰nger, Bordsteine	q1 22449,1569 22478,1602
 Ede-und-Unku-Weg: Fuﬂg‰nger, Radfahren erlaubt	q1 15140,11811 15122,11834 15121,11899
 Chiemseestr.: enge Straﬂe	q1 22204,1496 22334,1553
 (Kˆnigsheideweg - Am Alten Fenn): eng	q3 17037,4794 17060,4848
-(Am Alten Fenn - S¸dostallee): teilweise recht eng, Anh‰nger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17326,5463 17366,5551
+(Am Alten Fenn - S¸dostallee): teilweise recht eng, Anh‰nger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17326,5463 17366,5552
 (D‰meritzstr. - D‰meritzsee): Radfahren verboten	q4 32512,2621 32558,2562
 (Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22017,5159 22046,5305 22043,5346
 Waldpromenade: eng	q2 23792,7861 23710,7940 23668,7967
@@ -1242,7 +1243,8 @@ Wischbergweg: sehr enger Pfad	q4 13733,18161 13751,18180
 (Scheibenbergstr. - Blenheimstr.): Fuﬂg‰nger, Bordstein an der Blenheimstr.	q3 20693,15144 20689,15175
 Bordstein	q3 22004,17470 21992,17479
 (An der Margaretenhˆhe - Astridstr.): schmaler Pfad	q3 16634,19839 16550,19829 16472,19818 16390,19806
-Cajamarcaplatz: viele Fuﬂg‰nger	q3 17728,5756 17710,5668 17782,5698
+Cajamarcaplatz: viele Fuﬂg‰nger	q4 17728,5756 17710,5668
+Cajamarcaplatz: viele Fuﬂg‰nger, Bordstein	q4 17710,5668 17782,5698
 (Fuﬂg‰ngertunnel S-Bhf. Schˆneweide): viele Fuﬂg‰nger, ggfs. schieben	q4 17710,5668 17639,5612
 (S-Bhf. Schˆneweide - Straﬂenbahn-/Bushaltestelle): Fuﬂg‰nger	q3 17639,5612 17675,5521
 Wasserweg: Bordstein	q2 15680,8914 15873,8884
@@ -1302,6 +1304,7 @@ Karl-Lade-Str.: Fuﬂg‰nger	q2 14821,13674 14987,13621 15040,13602
 Magdeburger Platz: Bordsteine	q3 7393,10809 7414,10804
 (Fanny-Zobel-Str. - Uferweg): Fuﬂg‰nger, eng	q2 14049,10164 14116,10149
 (Gr¸nanlage): Bordsteinkante	q1 17183,17385 17006,17473
+Friedlander Str.: Bodenschwelle	q1 20574,4317 20594,4342
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q3 11805,19071 11895,19183 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
@@ -1370,7 +1373,7 @@ Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910
 Georg-Lehnig-Str.: enge Straﬂe	q1 14551,13571 14527,13486 14447,13507
 Erich-Kuttner-Str.: enge Straﬂe	q1 14590,13560 14551,13571 14439,13600 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
 (Kˆnigsheideweg - Weststr.): Weg durch den Park, Bordstein	q1 17115,4757 17129,4837 17173,4902
-(Breiter Weg - S¸dostallee/Sterndamm): Fuﬂg‰nger	q1 17599,5371 17538,5301
+(Breiter Weg - S¸dostallee/Sterndamm): Fuﬂg‰nger	q1 17601,5374 17538,5301
 Birkenwerderstr.: enge Straﬂe mit parkenden Autos	q0 6450,20753 6930,20808
 Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q0 6473,20858 6951,20898
 Germendorfer Str.: enge Straﬂe mit parkenden Autos	q0 6368,20956 6494,20944 6972,20993 7079,21008 7150,21018
@@ -1878,7 +1881,7 @@ Flotowstr. (Lichterfelde): enge Straﬂe	q1 4515,4581 4651,4638
 Pfalzgrafenweg: enge Straﬂe	q0 25594,11939 25827,11867
 Spachtelweg: enge Straﬂe	q0 5900,20487 5970,20353
 Leuenberger Zeile: eng	q1 2821,19559 2789,19600 2684,19765
-Waldstr.: Bodenschwellen vor der Schule	q2 20540,4285 20623,4227
+Waldstr.: mehrere Bodenschwellen vor der Schule	q2 20540,4285 20623,4227
 Janitzkystr.: Siedlung, eng	q1 22763,6398 22889,6428 23002,6428 23027,6425 23131,6398 23192,6362 23242,6308
 Kaiser-Wilhelm-Str. - Langkofelweg: Fuﬂg‰nger	q2 6957,3699 6998,3596
 (Uferweg im Wrˆhm‰nnerpark): Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 -3066,14718 -3030,14844 -2998,14879 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129

@@ -1305,9 +1305,9 @@ Waldstr. -> Ellernweg: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17428,
 Waldstr. -> Sterndamm: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17520,4649
 Sterndamm -> Waldstr.: Straßenbahntrasse	3::igndisp 17601,5090 17542,4772 17580,4761
 Sterndamm -> Ellernweg: Straßenbahntrasse	3::igndisp 17520,4649 17542,4772 17428,4792
-Straßenbahntrasse	3nocross::ignrte 17645,5328 17601,5090 17542,4772
-Sterndamm -> Pietschkerstr.: Straßenbahntrasse	3::igndisp 17645,5328 17601,5090 17652,5082
-Staudenweg -> Sterndamm: Straßenbahntrasse	3::igndisp 17493,5112 17601,5090 17645,5328
+Straßenbahntrasse	3nocross::ignrte 17648,5338 17601,5090 17542,4772
+Sterndamm -> Pietschkerstr.: Straßenbahntrasse	3::igndisp 17648,5338 17601,5090 17652,5082
+Staudenweg -> Sterndamm: Straßenbahntrasse	3::igndisp 17493,5112 17601,5090 17648,5338
 Staudenweg -> Pietschkerstr.: Straßenbahntrasse	3::igndisp 17493,5112 17601,5090 17652,5082
 Sterndamm -> Staudenweg: Straßenbahntrasse	3::igndisp 17542,4772 17601,5090 17493,5112
 Pietschkerstr. -> Staudenweg: Straßenbahntrasse	3::igndisp 17652,5082 17601,5090 17493,5112
@@ -1404,8 +1404,8 @@ Martin-Luther-Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6502,9782 644
 U-Bahnviadukt und Straßenbahn	3nocross::ignrte 10997,16280 10989,16197 10982,16121
 Schönhauser Allee -> Rodenbergstr.: U-Bahnviadukt und Straßenbahn	3::igndisp 10997,16280 10989,16197 11253,16118
 Rodenbergstr. -> Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3::igndisp 11253,16118 10989,16197 10982,16121
-Straßenbahntrasse	3nocross::ignrte 21579,4579 21726,4537 21796,4517
-Flemmingstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21848,4882 21726,4537 21796,4517
+Straßenbahntrasse	3nocross::ignrte 21579,4579 21726,4537 21789,4520
+Flemmingstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21848,4882 21726,4537 21789,4520
 Oberspreestr. -> Flemmingstr.: Straßenbahntrasse	3::igndisp 21579,4579 21726,4537 21848,4882
 Straßenbahntrasse	3nocross::ignrte 21332,4655 21390,4637 21494,4605
 Westendstr. -> Oberspreestr.: Straßenbahntrasse	3::igndisp 21370,4442 21390,4637 21332,4655
@@ -1963,11 +1963,14 @@ Straßenbahntrasse	3nocross::ignrte 14843,15007 14828,15050 14686,15608
 Straßenbahntrasse	3nocross::ignrte 16460,17214 16578,17285 16837,17440
 Neuzeller Weg -> Hansastr.: Straßenbahntrasse	3::igndisp 16658,17142 16578,17285 16460,17214
 Hansastr. -> Neuzeller Weg: Straßenbahntrasse	3::igndisp 16837,17440 16578,17285 16658,17142
-Mittelstreifen	3nocross::ignrte 18928,3701 18882,3750 18854,3781 18824,3814
-Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18882,3750 18854,3781
-Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18854,3781 18824,3814
-Mittelstreifen	3nocross::ignrte 18824,3814 18771,3871 18538,4122
-Mittelstreifen	3nocross::ignrte 18538,4122 18392,4279 18235,4449
+Mittelstreifen	3nocross::ignrte 18930,3703 18884,3752 18856,3783 18826,3816
+Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18884,3752 18856,3783
+Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18856,3783 18826,3816
+Mittelstreifen	3nocross::ignrte 18826,3816 18773,3873 18541,4125
+Mittelstreifen	3nocross::ignrte 18541,4125 18396,4282 18239,4453
+Mittelstreifen	3nocross::ignrte 18930,3703 19029,3595 19125,3491
+Konrad-Zuse-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18943,3508 19029,3595 18930,3703
+Groß-Berliner Damm -> Konrad-Zuse-Str.: Mittelstreifen	3::igndisp 19125,3491 19029,3595 18943,3508
 Mittelstreifen	3nocross::ignrte 6228,13324 6229,13517 6230,13596
 Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6229,13517 6104,13522
 unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross::ignrte 13476,11174 13493,11217 13541,11355
@@ -2512,7 +2515,7 @@ Drängelgitter	BNP:2:-265:trailer=5 18361,2972
 Drängelgitter	BNP:2:90:trailer=5 18220,2973
 Drängelgitter	BNP:2:-165:trailer=5 18167,2724
 Drängelgitter	BNP:2:-71:trailer=5 17621,4063
-Drängelgitter	BNP:2:90:trailer=5 18833,3781
+Drängelgitter	BNP:2:85:trailer=5 18833,3781
 Drängelgitter	BNP:2:-88:trailer=5 18018,3276
 Schranke	BNP:2:82:trailer=6 16368,7425
 Drängelgitter	BNP:3:-101:trailer=10 23012,3598
@@ -2642,6 +2645,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Wilhelm-Hoff-Str.: Weg noch nicht fertig	2::inwork 19033,3397 19057,3422
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s 10077,13100 10018,13299
 Alter Markt - Uferweg: Zugang höchstwahrscheinlich gesperrt	2::inwork -12608,-1715 -12625,-1703 -12643,-1694
 Am Zirkus: Einbahnstraße	1s 9118,13070 9137,13032 9167,13046 9239,12923
@@ -2656,6 +2660,7 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -3441,13270 -3462,13256 -3467,13240 -3526,13196
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9852,12409
 Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp 9984,12426 9934,12420 9943,12364
+Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9852,12409 9934,12420 9943,12364
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-1339 -11235,-1465 -11137,-1680 -11089,-1730 -10973,-1764
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094

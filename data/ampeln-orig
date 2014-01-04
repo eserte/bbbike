@@ -113,9 +113,11 @@
 	X 11671,10402
 	X 11949,10414
 #: XXX_prog: Ampel gilt nicht für Radfahrer
+#: note: Anforderungsampel
 	F 12274,10436
 	X 12731,10547
 #: XXX_prog: Ampel gilt nicht für Radfahrer
+#: note: Anforderungsampel
 	F 12545,10496
 	F 11130,10326
 	X 12341,10218
@@ -699,10 +701,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 18023,5623
 	X 17960,5511
 	X 17728,5756
+#: next_check_id: STERNDAMM-2014
 #: XXX_prog: zurzeit bis 2013-12-20 außer Betrieb (Sterndamm gesperrt) --- evtl. mit valid_...-Direktive implementieren
 	X 17886,5587
 	X 21332,4655
-	X 21796,4517
+	X 21789,4520
 	X 22093,4499
 	X 21954,5229
 	X 22123,5452
@@ -790,12 +793,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15920,7697
 #: XXX_prog: zurzeit bis 2013-12-20 außer Betrieb (Sterndamm gesperrt) --- evtl. mit valid_...-Direktive implementieren
 	X 17736,5441
-	X 17645,5328
+	X 17648,5338
 #: note: Ampel ohne Fuß/Radquerung der Michael-Brückner-Str.
 #: XXX eventuell wird diese Einschränkung aufgehoben:
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
-#: last_checked: 2013-08-19
-#: check_frequency: 90d
+#: last_checked: 2014-01-04
+#: check_frequency: 120d
 	X 18080,5376
 	X 19904,3464
 	X 20565,2754
@@ -1600,6 +1603,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 1345,184
 # REMOVED (hier existiert nichts, Stand 2010) ---	X 31447,3372
 	F 21496,3849
+#: note: Anforderungsampel
 	F 20136,3609
 	X 19251,1240
 	X 15312,2010
@@ -2248,7 +2252,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 15074,12850
 	F 14667,14336
 	F 14721,14379
-	X 18050,4649
+	X 18045,4663
 	X 18445,2642
 	X 17364,3565
 	F 8053,9123
@@ -2386,7 +2390,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/wiltbergstra__e_bpu_lp4.pdf?start&ts=1358154468&file=wiltbergstra__e_bpu_lp4.pdf
 	X 16669,25373
 	F 16606,25141
-	X 17885,4912
+	X 17879,4910
 	F 730,2734
 	X 8206,12757
 	F 13999,2727
