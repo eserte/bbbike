@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: SportsTracker.pm,v 1.6 2009/01/16 21:55:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2010,2013 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package GPS::GpsmanData::SportsTracker;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.07';
 
 use XML::LibXML::Reader;
 
@@ -79,11 +78,26 @@ sub load {
 	my $gpsman_time = sprintf "%02d-%s-%04d %02d:%02d:%02d", $D, $number_to_monthabbrev{$M+0}, $Y, $h, $m, $s;
     };
 
+    my $track_accuracy;
     my @gps_fix_lost;
 
+    {
+	my $pattern = XML::LibXML::Pattern->new('/workout/activity | /workout/srt:trackaccuracy', { 'srt' => 'http://rezic.de/gpxext/1' });
+	while() {
+	    $reader->nextPatternMatch($pattern) == 1
+		or die "Cannot find activity or trackaccuracy element";
+	    if ($reader->localName eq 'activity') {
+		last;
+	    } else {
+		my $track_accuracy_node = $reader->copyCurrentNode(1);
+		$track_accuracy = $track_accuracy_node->findvalue('.');
+		$reader->nextSibling;
+	    }
+	}
+    }
+    # assume we're now on the activity node
+
  PARSE: {
-	$reader->nextElement("activity") == 1
-	    or die "Cannot find activity element";
 	my $activity = $reader->copyCurrentNode(1);
 	my $activity_name = $activity->findvalue("./name");
 	my $activity_oid  = $activity->findvalue("./oid");
@@ -139,7 +153,11 @@ sub load {
 	    }
 	    my $wpt = GPS::Gpsman::Waypoint->new;
 	    $wpt->Ident("");
-	    $wpt->Accuracy($fixq >= 3 ? 0 : $fixq == 2 ? 1 : 2);
+	    if (defined $track_accuracy) { # has precedence
+		$wpt->Accuracy($track_accuracy);
+	    } else {
+		$wpt->Accuracy($fixq >= 3 ? 0 : $fixq == 2 ? 1 : 2);
+	    }
 	    $wpt->Latitude($lat);
 	    $wpt->Longitude($lon);
 	    $wpt->Altitude($alt);
