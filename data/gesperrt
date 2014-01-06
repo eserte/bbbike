@@ -774,7 +774,7 @@ Rosenfelder Ring	1s 18140,11932 18139,11833
 Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
 Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
-(Möllendorffstr. - Paul-Junius-Str.)	1 15370,13508 15470,13509
+(Möllendorffstr. - Paul-Junius-Str.)	1s 15370,13508 15470,13509
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Kornmandelweg	1 21311,13522 21345,13550
 Immortellenweg: Schulhof	2 24282,10015 24314,10096
@@ -794,6 +794,7 @@ Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
 Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14270,9710
+Parkaue	1s 15406,12444 15408,12394 15370,12264
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1368,10 +1369,10 @@ Straßenbahntrasse	3nocross::ignrte 18181,14110 18184,14078 18187,14039 18206,138
 Rhinstr. [134-130] -> Rhinstr.: Straßenbahntrasse	3::igndisp 18477,14042 18187,14039 18206,13817
 Rhinstr. -> Rhinstr. [134-130]: Straßenbahntrasse	3::igndisp 18184,14078 18187,14039 18477,14042
 Straßenbahntrasse	3nocross::ignrte 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
-Rhinstr. -> Worbiser Str.: Straßenbahntrasse	3::igndisp 17937,14795 17886,14899 17700,14844
-Worbiser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17700,14844 17886,14899 17829,15015
-Rhinstr. -> Witzenhauser Str.: Straßenbahntrasse	3::igndisp 17991,14684 17937,14795 17750,14736
-Witzenhauser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17750,14736 17937,14795 17886,14899
+Rhinstr. -> Worbiser Str.: Straßenbahntrasse	3::igndisp 17937,14795 17886,14899 17693,14840
+Worbiser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17693,14840 17886,14899 17829,15015
+Rhinstr. -> Witzenhauser Str.: Straßenbahntrasse	3::igndisp 17991,14684 17937,14795 17745,14734
+Witzenhauser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17745,14734 17937,14795 17886,14899
 Rhinstr. -> Allendorfer Weg: Straßenbahntrasse	3::igndisp 18057,14549 17991,14684 17879,14659
 Allendorfer Weg -> Rhinstr.: Straßenbahntrasse	3::igndisp 17879,14659 17991,14684 17937,14795
 Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19899,13534
@@ -1752,7 +1753,7 @@ unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,1071
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5329,10422 5351,10760 5215,10711
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5351,10760 5329,10422
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 15420,12178 15443,12222 15480,12306 15508,12367
-Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15350,12270 15443,12222 15480,12306
+Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15370,12264 15443,12222 15480,12306
 Möllendorffstr. -> Vorfahrt am Rathaus Lichtenberg: Mittelstreifen mit Straßenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
 Vorfahrt am Rathaus Lichtenberg -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15531,12300 15480,12306 15443,12222
 Zaun auf dem Mittelstreifen	3nocross::ignrte 6781,16026 6914,15908 6936,15888 7024,15810

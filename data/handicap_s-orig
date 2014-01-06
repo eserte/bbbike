@@ -590,7 +590,8 @@ Dieffenbachstr.: Bodenschwellen	q0- 11141,9732 11346,9655
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14077,10016
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
-(Gr¸nanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fuﬂg‰nger	q2 17678,18171 17744,18016
+#: XXX_prog BS Bordstein an der Falkenberger Chausse, ansonsten q2
+(Gr¸nanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fuﬂg‰nger, Bordstein	q3 17686,18172 17721,18001
 Erich-Steinfurth-Str.: Fuﬂg‰nger	q2 12645,11673 12596,11696
 Elbingeroder Weg: hohe Bordsteine	q3 13178,9062 13146,9085
 (An der Apostelkirche - Kurf¸rstenstr.): Fuﬂg‰nger, Bordsteine	q3 7312,10505 7315,10537
@@ -1809,7 +1810,7 @@ Am Schwanenberg: einige Fuﬂg‰nger	q1 15752,9385 15793,9334
 (Kaiser's-Parkplatz): Parkplatzverkehr, Fuﬂg‰nger	q2 16058,6629 16138,6548
 (Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fuﬂg‰nger	q1 17842,6639 17852,6589 17826,6495
 #: XXX_prog BS nach Osten hin, ansonsten entfernen
-Straﬂe 77: Bordstein	q1 15320,12375 15402,12390
+Straﬂe 77: Bordstein	q1 15320,12375 15408,12394
 Wuhlebr¸cken: Fuﬂg‰nger	q2 22843,14452 22839,14453 22819,14457 22788,14468 22743,14488 22670,14520
 (oberer Wuhlewanderweg - unterer Wuhlewanderweg): Fuﬂg‰nger	q2+ 22873,14502 22843,14452
 Bootshausweg: einige Fuﬂg‰nger	q1+ -1017,16184 -960,16396 -972,16553 -1016,16585 -1033,16621 -1067,16635
@@ -1853,6 +1854,7 @@ Magdeburger Platz: Bordsteine	q3 7393,10809 7414,10804
 #: XXX_prog BS an der Privatstraﬂe 10 (ˆstliche Seite), anonsten Eintrag entfernen
 (Gr¸nanlage): Bordsteinkante	q1 17183,17385 17006,17473
 Friedlander Str.: Bodenschwelle	q1 20574,4317 20594,4342
+(Paul-Junius-Str. - Alfred-Jung-Str.): Fuﬂg‰nger	q1 15370,13508 15346,13298
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

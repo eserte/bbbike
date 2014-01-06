@@ -184,7 +184,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="3"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2013-11-26
+#: last_checked: 2014-01-05 (Bauarbeiten zu sehen, unklar, ob sie mit den Radspuren zu tun haben)
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -303,7 +303,7 @@ Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,
 # REMOVED (realisiert) --- #: last_checked: 2013-05-10 --- #: check_frequency: 90d --- Königstr.: Radspuren bis 2015 geplant	?::projected -9412,546 -9730,514 -9969,519 -10052,521 -10269,445 -10593,476
 # REMOVED (realisiert) --- #: last_checked: 2013-07-06 --- #: next_check: 2013-10-13 --- Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
 # 
-#: osm_watch: way id="151617776" version="3"
+#: osm_watch: way id="151617776" version="4"
 #: last_checked: 2013-10-21
 #: next_check: 2014-01-21
 Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,4376
@@ -695,8 +695,8 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
-#: last_checked: 2013-11-26
-#: check_frequency: 100d
+#: last_checked: 2014-01-05
+#: check_frequency: 120d
 #: priority: #C
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
 # REMOVED (hier wurde nur eine "Rettungsinsel" realisiert) --- #: last_checked: 2012-08-25 --- #: check_frequency: 90d --- #: priority: #C --- Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368 
@@ -868,7 +868,7 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: XXX Privatstraße
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
 #: osm_watch: way id="137340264" version="6"
-#: last_checked: 2013-10-20
+#: last_checked: 2014-01-05
 #: check_frequency: 90d
 Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,13104
 # 
@@ -973,20 +973,19 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012)
 #: osm_watch: way id="22044872" version="10"
 #: osm_watch: way id="22045147" version="18"
-#: last_checked: 2013-11-26
-#: next_check: 2013-12-14
-Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 16099,16339 15919,16383 15866,16393 15843,16399 15432,16500
+#: last_checked: 2014-01-05
+Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 15771,16417 15432,16500
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
-#: last_checked: 2013-11-26
+#: last_checked: 2014-01-05
 #: check_frequency: 90d
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 
 #: XXX wahrscheinlich nur im nördlichen Teil bis Kaiserstr.
 #: XXX Baumaßnahme 7.13 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: osm_watch: way id="4677913" version="13"
-#: osm_watch: way id="38198022" version="7"
+#: osm_watch: way id="4677913" version="14"
+#: osm_watch: way id="38198022" version="8"
 #: last_checked: 2013-09-04
 #: check_frequency: 120d
 Ringstr.: Radverkehrsanlagen	?::projected 8390,4248 8159,4354 8098,4376 7990,4420 7921,4451 7690,4552
@@ -1050,10 +1049,7 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 #: check_frequency: 120d
 Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
-#: XXX wahrscheinlich nach den Bauarbeiten?
-#: osm_watch: way id="4687118" version="11"
-#: last_checked: 2013-12-20
-Parkaue: wann wird hier die Einbahnstraße ausgeschildert, wird sie tatsächlich für Radfahrer nicht offen sein?	? 15399,12444 15402,12390 15350,12270
+# REMOVED (realisiert) --- #: XXX wahrscheinlich nach den Bauarbeiten? --- #: osm_watch: way id="4687118" version="11" --- #: last_checked: 2013-12-20 --- Parkaue: wann wird hier die Einbahnstraße ausgeschildert, wird sie tatsächlich für Radfahrer nicht offen sein?	? 15406,12444 15408,12394 15370,12264
 # 
 Ahornsteig: Ausgeschildert? Qualität? Nachts beleuchtet?	? 7669,11586 7615,11602 7615,11602 7549,11608 7418,11566 7361,11565 7037,11600 7012,11608 7003,11624 6980,11790 6977,11820 6987,11857 7007,11923 7059,11978
 # 
@@ -1531,10 +1527,7 @@ Heißt dieser Abschnitt "Chaussee nach Bornim"?	? -19100,407 -18964,793 -18688,11
 # 
 # REMOVED (hier ändert sich bestimmt nichts) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file --- Fichtenweg: Teilstück als Straßenland eingezogen?	? -2949,17946 -2961,17875
 # REMOVED (now in handicap_s-orig) --- #: XXX_prog --- Bordsteinkante Richtung Westen	? 17183,17385
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file
-#: XXX_indoor
-Landschaftspark Herzberge: ebenfalls zum Landschaftspark gehörig, ggfs. in flaechen aufnehmen	? 17097,14140 17846,14179 17867,13868 17076,13861
+# REMOVED (now in flaechen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file --- #: XXX_indoor --- Landschaftspark Herzberge: ebenfalls zum Landschaftspark gehörig, ggfs. in flaechen aufnehmen	? 17097,14140 17846,14179 17867,13868 17076,13861
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130701.1255.386582.html
 #: last_checked: 2014-01-04
@@ -3234,13 +3227,7 @@ Händelplatz (Eichwalde): Qualität?	? 25368,-3091 25347,-3077 25295,-3103 25254,-
 # REMOVED (auch Kantstr.) --- Kantstr. (Waldesruh): Straßenname im Berliner Abschnitt? Ortsschild?	? 24893,7964 24871,7931
 Vogelsang - Hammelspring: gibt es hier mittlerweile einen Radweg?	? 7983,69794 7906,70007 8656,71489 10148,73146 11005,74052
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2011
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012
-#: XXX laut osm nicht mehr "under construction"
-#: last_checked: 2013-04-20 (erste Häuser stehen, Straßen noch nicht)
-#: next_check: 2013-10-20
-#: osm_watch: way id="203211083" version="5"
-Ückeritzer Ring: Ist die Straße schon fertig gestellt? Qualität der Straße?	? 17247,19212 17247,19229 17251,19264 17403,19313 17404,19258 17339,19231 17247,19229
+# REMOVED (survey done) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2011 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012 --- #: XXX laut osm nicht mehr "under construction" --- #: last_checked: 2013-04-20 (erste Häuser stehen, Straßen noch nicht) --- #: next_check: 2013-10-20 --- #: osm_watch: way id="203211083" version="5" --- Ückeritzer Ring: Ist die Straße schon fertig gestellt? Qualität der Straße?	? 17247,19212 17247,19229 17251,19264 17403,19313 17405,19252 17339,19231 17247,19229
 # 
 Groß-Ziethener Chaussee: Gehweg für Radfahrer zwischen Meißner Weg und Ascherslebener Weg in Richtung Westen freigegeben?	?; 15854,666 15757,610
 # REMOVED --- #: XXX laut osm Verbundsteinpflaster --- Schwarzer Weg (Großziethen): Qualität?	? 13215,-570 13022,-647 12804,-735
