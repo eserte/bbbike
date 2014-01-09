@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2002,2003,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2002,2003,2011,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,7 +22,7 @@ Slaven Rezic <slaven.rezic@berlin.de>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1999,2001,2002,2003,2011 Slaven Rezic. All rights reserved.
+Copyright (c) 1999,2001,2002,2003,2011,2014 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
@@ -64,13 +64,15 @@ sub make_long_streets {
 
     my $tmpfile;
     if ($strfile eq '-') {
-	require POSIX;
-	$tmpfile = POSIX::tmpnam();
-	open(TMP, ">$tmpfile") or die "Can't write to $tmpfile: $!";
+	require File::Temp;
+	my $tmpfh;
+	($tmpfh,$tmpfile) = File::Temp::tempfile(SUFFIX => "_combine_steeets.bbd", UNLINK => 1)
+	    or die "Can't create temporary file: $!";
 	while (<STDIN>) {
-	    print TMP $_;
+	    print $tmpfh $_;
 	}
-	close TMP;
+	close $tmpfh
+	    or die "While writing to temporary file: $!";
 	$strfile = $tmpfile;
     }
 
