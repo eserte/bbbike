@@ -74,6 +74,7 @@ TESTS_FROM_LOCAL=	cgihead.t \
 			cgi-mechanize.t \
 			cgi.t \
 			cgi-test.t \
+			cgi-download.t \
 			bbbikegooglemap.t \
 			wapcgi.t \
 			wwwdata.t
