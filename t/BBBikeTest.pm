@@ -46,7 +46,7 @@ use BBBikeUtil qw(is_in_path);
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing on_author_system
-	      get_pmake image_ok
+	      get_pmake image_ok zip_ok
 	    ),
 	   @opt_vars);
 
@@ -883,6 +883,63 @@ sub image_ok ($;$) {
     }
 
     $fails ? 0 : 1;
+}
+
+# largely taken from examples/zipcheck.pl in Archive-Zip
+sub zip_ok {
+    my($zip_name, %args) = @_;
+
+    require Archive::Zip;
+
+    # instead of stack dump:
+    Archive::Zip::setErrorHandler( sub { warn shift() } );
+
+    my $nullFileName = File::Spec->devnull;
+    my $zip = Archive::Zip->new;
+    eval {
+	my $status = $zip->read($zip_name);
+	die "Status while reading $zip_name is not AZ_OK" if $status != Archive::Zip::AZ_OK();
+    };
+    if ($@) {
+	Test::More::fail("Checking $zip_name in read phase");
+	Test::More::diag($@);
+	return 0;
+    }
+
+    my %member_checks;
+    if ($args{-memberchecks}) {
+	%member_checks = map {($_,1)} @{$args{-memberchecks}};
+    }
+
+    eval {
+	for my $member ($zip->members) {
+	    my $buffer;
+	    open my $fh, ">", \$buffer or die;
+	    my $status = $member->extractToFileHandle($fh);
+	    if ($status != Archive::Zip::AZ_OK()) {
+		die "Extracting " . $member->fileName() . " from $zip_name failed";
+	    }
+	    for my $member_check (keys %member_checks) {
+		if ($member->fileName =~ $member_check) {
+		    delete $member_checks{$member_check};
+		}
+	    }
+	}
+    };
+    if ($@) {
+	Test::More::fail("Test extracting members from $zip_name");
+	Test::More::diag($@);
+	return 0;
+    }
+
+    if (keys %member_checks) {
+	Test::More::fail("Member checks in $zip_name are OK");
+	Test::More::diag("The following file(s) are missing: " . join(", ", sort keys %member_checks));
+	return 0;
+    }
+
+    Test::More::pass("Zip file $zip_name looks OK");
+    1;
 }
 
 1;
