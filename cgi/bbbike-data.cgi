@@ -47,6 +47,13 @@ for my $file (@files) {
     warn "Expect error, cannot read file <$file>" if !-r $file; # help bad error message from Archive::Zip
     $zip->addFile($file, ($do_snapshot ? "BBBike-snapshot-$date/$file" : ()));
 }
+
+# It seems that the cgi gets a SIGTERM if the
+# the client connection was closed prematurely
+# (maybe apache2 only). In this case exit
+# gracefully to cleanup temporary files.
+$SIG{TERM} = sub {  exit 1 };
+
 my(undef, $filename) = tempfile(SUFFIX => "-bbbike-" . ($do_snapshot ? "snapshot" : "data") .  ".zip",
 				UNLINK => 1);
 # I can use writeToFileNamed and have Content-Length set,
@@ -68,9 +75,16 @@ open my $fh, $filename or die "Can't open $filename: $!";
 binmode $fh;
 seek $fh, 0, 0;
 local $/ = \8192;
-print <$fh>;
+while(<$fh>) {
+    print $_;
+}
+STDOUT->flush;
 
-unlink $filename;
+END {
+    if (defined $filename) {
+	unlink $filename;
+    }
+}
 
 __END__
 
