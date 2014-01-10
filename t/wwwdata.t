@@ -187,7 +187,12 @@ EOF
     # to "now".
     my $modtime = (stat("$FindBin::RealBin/../data/label"))[9];    
     my $resp = $ua316->get("$datadir/label", 'If-Modified-Since' => time2str($modtime || time));
-    ok $resp->code==304, 'Probably data/label hack'
+    # Normally 304 is returned. But if client (where the $modtime comes from)
+    # and server (where data/label is actually served) have slightly different
+    # clocks, then it may happen that $modtime is in the future from the
+    # point of the server. In this case Apache is sending a complete 200
+    # response. Seen on bbbike-pps.
+    ok $resp->code==304 || $resp->code==200, 'Probably data/label hack'
 	or diag $resp->as_string;
 }
 
