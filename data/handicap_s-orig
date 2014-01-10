@@ -10,6 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
+#: last_checked: 2014-01-10 vvv
+Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14357,11148 14442,11101
+Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
+#: last_checked ^^^
+# 
+# REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 14442,11101 14468,11203
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
 # REMOVED (wg. Urlaub -> temp blocking) --- #: last_checked: 2013-09-25 vvv --- #: next_check: 2013-09-30 vvv --- #: source_id: IM_020047 --- #: source_id: IM_019640 (früher) --- #: source_id: LMS_3261840849	 --- Modersohnstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14134,11272 14181,11434 14211,11552 --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (nicht mehr so umständlich) --- Simplonstr.: Bauarbeiten, umständliches Überqueren der Modersohnstr.	q3::inwork 14254,11377 14181,11434 14099,11505
@@ -112,7 +118,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstei
 #: next_check_id ^^^
 # 
 #: XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-01-02
+#: last_checked: 2014-01-10
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv

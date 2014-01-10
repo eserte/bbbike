@@ -371,7 +371,7 @@ Am Wuhlebogen: wann wird die Straﬂe fertiggestellt? Qualit‰t?	?::projected 21671
 Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggef¸hrt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
 # 
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
-#: last_checked: 2013-12-27
+#: last_checked: 2014-01-10
 #: next_check: 2014-06-05
 #: priority: #A
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraﬂenrichtung existiert teilweise, teilweise muss noch gebaut werden	?::inwork; 13588,11490 13565,11492 13473,11456
@@ -516,6 +516,17 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: last_checked: 2013-08-29 (noch nichts zu sehen)
 #: next_check: 2014-06-10
 Planstraﬂe zwischen Theodorstr. und Pilgramer Str.: Straﬂe in Planung, Qualit‰t?	? 24899,11017 25124,11022
+#
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5551&options=4 vvv
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/4508103642254042/42254042/00069846/46-Anlagen/02/vzb_0594_IV_Aenderung_Pln-ziele_B-Plan_XXIII_9.pdf vvv
+#: XXX Bebauungsplanverfahren XXIII-9a; geplante Entlastungsstraﬂe "Ortsumfahrung Mahlsdorf" vvv
+#: next_check: 2014-06-10 vvv
+Planstraﬂe A: Straﬂe in Planung, Qualit‰t? Wird das die neue Hauptstraﬂenf¸hrung?	? 24740,10992 24824,11256
+Rad- und Gehwegverbindung geplant: Qualit‰t? Name des Weges? Beleuchtet?	? 24899,11017 24740,10992
+#: next_check ^^^
+#: XXX ^^^
+#: by: ^^^
+#: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036234258287/234258287/00057951/51-Anlagen/03/Anlage1zumDV_130510_-DUD-VHB-001-LP.PDF
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4531
@@ -688,7 +699,7 @@ Degnerstr.: f¸r 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2013-12-23
+#: last_checked: 2014-01-10
 #: check_frequency: 180d
 Planstraﬂe C: Einfahrten existieren noch, aber statt einer Straﬂe ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -1034,6 +1045,8 @@ Kastanienallee (Potsdam): teilweise Entwidmung f¸r den Kfzverkehr (wo genau? wan
 # 
 #: XXX hat die "Einziehung von Straﬂenland" hier irgendwelche Konsequenzen?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/54re.pdf/file?y=2013
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4709
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036976863406/976863406/00098274/74-Anlagen/01/DRS0610VK.pdf
 #: last_checked: 2014-01-02
 #: check_frequency: 120d
 Fanny-Zobel-Str.	? 13975,10187 14049,10164
@@ -1716,6 +1729,7 @@ Hadburgpfad: genaue Lage? Qualit‰t? PLZ=10365	? 17484,12405 17531,12398
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5291 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066429/29-Anlagen/02/vzb0507_IV-Benennung_Grimmener_Strasse.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013 --- #: XXX fehlt bei Berlin.coords.data --- Grimmener Str.: genaue Lage? Qualit‰t? Existiert die Straﬂe schon?	? 21298,13154 21395,13135 21443,13125
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587
+#: by; http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3697
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2013 (Amtsblatt)
 # 1. Liliensteinweg
@@ -1808,7 +1822,9 @@ Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Pla
 #: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straﬂenname)
+#: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/4508103642561748/42561748/00111971/71-Anlagen/03/4_Version_vom_30_12_2013.pdf (weitere Vorschl‰ge)
 #: by: http://www.fatkoehl.com/index.php?article_id=31
+#: XXX gibt noch zwei weitere Alternativen: Kate-K¸hl-Straﬂe und Alisa-Fuss-Straﬂe
 #: XXX fehlt in Berlin.coords.data
 #: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein
 #: last_checked: 2013-12-23 (zur Zeit nur eine Baustraﬂe)

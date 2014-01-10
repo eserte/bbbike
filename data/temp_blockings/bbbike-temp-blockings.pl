@@ -22181,11 +22181,11 @@ EOF
 userdel	q4::inwork; 12783,15921 12817,15985 12842,16032
 EOF
      },
-     { from  => 1384498800, # 2013-11-15 08:00
-       until => 1384729199, # 2013-11-17 23:59
-       text  => 'Schönerlinder Straße: zwischen Str. am Posseberg und Str. am Vorwerk (unter der Autobahnbrücke) für alle Verkehrsteilnehmer komplett gesperrt, 16. November 2013 08:00 Uhr bis 17. November 2013 24:00 Uhr',
+     { from  => $isodate2epoch->("2014-01-10 08:00:00"), # 1384498800, # 2013-11-15 08:00
+       until => $isodate2epoch->("2014-01-11 23:59:59"), # 1384729199, # 2013-11-17 23:59
+       text  => 'Schönerlinder Straße: zwischen Str. am Posseberg und Str. am Vorwerk (unter der Autobahnbrücke) für alle Verkehrsteilnehmer komplett gesperrt, 10. Januar 2013 08:00 Uhr bis 11. Januar 2013 nachts',
        type  => 'gesperrt',
-       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1311/nachricht5105.html',
+       source_id => 'IM_021027',
        data  => <<EOF,
 userdel	2::inwork 12624,25570 12694,25696
 EOF

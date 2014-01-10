@@ -1602,7 +1602,16 @@ userdel	2::inwork 10086,12725 10166,12777
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_021027',
+         'until' => 1389481199,
+         'text' => 'Schönerlinder Straße: zwischen Str. am Posseberg und Str. am Vorwerk (unter der Autobahnbrücke) für alle Verkehrsteilnehmer komplett gesperrt, 10. Januar 2013 08:00 Uhr bis 11. Januar 2013 nachts',
+         'from' => 1389337200,
+         'id' => 2514,
+         'data' => 'userdel	2::inwork 12624,25570 12694,25696
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
