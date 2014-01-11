@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -31,6 +31,7 @@ use BBBikeUtil qw(bbbike_root m2km kmh2ms s2ms);
 use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::Util;
+use Strassen::StrassenNetz;
 
 # XXX use Msg.pm some day
 sub M ($) { $_[0] } # XXX
@@ -45,11 +46,16 @@ $PEDES_MS = kmh2ms(5);
 use vars qw($data_source);
 $data_source = "vbb";
 
+use vars qw($use_search);
+$use_search = 1 if !defined $use_search;
+
 my $bbbike_root = bbbike_root;
 
 my $openvbb_data_url = 'http://datenfragen.de/openvbb/GTFS_VBB_Okt2012/stops.txt';
 my $openvbb_local_file = "$bbbike_root/tmp/GTFS_VBB_Okt2012_stops.txt";
 my $openvbb_bbd_file = "$bbbike_root/tmp/vbb.bbd";
+
+my $search_net;
 
 sub register {
     # XXX (noch) keine Prüfung auf city==Berlin, da die Daten auch mit
@@ -69,6 +75,7 @@ sub unregister {
     my $subw = $mf->Subwidget($pkg . '_action');
     if (Tk::Exists($subw)) { $subw->destroy }
     delete $BBBikePlugin::plugins{$pkg};
+    undef $search_net;
 }
 
 sub _create_image {
@@ -135,6 +142,12 @@ sub add_button {
 	      [Radiobutton => "VBB-Daten verwenden",
 	       -variable => \$data_source,
 	       -value => "vbb",
+	      ],
+	      "-",
+	      [Checkbutton => "Exaktes Routing des Fußwegs",
+	       -variable => \$use_search,
+	       -onvalue => 1,
+	       -offvalue => 0,
 	      ],
 	      "-",
 	      [Button => "Dieses Menü löschen",
@@ -258,11 +271,17 @@ sub choose {
 	$lb->bind('<Double-1>' => sub {
 		      my($cursel) = $lb->curselection;
 		      my $conv = $ms->get_conversion(-tomap => $main::coord_system);
-		      my $coord = $stops->[$cursel]->{StreetObj}->[Strassen::COORDS()]->[0];
-		      $coord = $conv->($coord) if $conv;
-		      main::mark_point(-coords => [[[ main::transpose(split /,/, $coord) ]]],
-				       -clever_center => 1,
-				      );
+		      my $info = $stops->[$cursel];
+		      if ($info->{Path}) {
+			  my $path = [[ map { [main::transpose(@$_)] } @{ $info->{Path} } ]];
+			  main::mark_street(-coords => $path, -clever_center => 1);
+		      } else {
+			  my $coord = $info->{StreetObj}->[Strassen::COORDS()]->[0];
+			  $coord = $conv->($coord) if $conv;
+			  main::mark_point(-coords => [[[ main::transpose(split /,/, $coord) ]]],
+					   -clever_center => 1,
+					  );
+		      }
 		  });
 	$lb->bind('<<ListboxSelect>>' => $adjust_expected_foottime);
     }
@@ -301,6 +320,15 @@ sub get_nearest {
     my($x,$y) = split /,/, $xy;
     $s->make_grid(UseCache => 1, Exact => 1, -tomap => $main::coord_system) unless $s->{Grid};
     my $conv = $s->get_conversion(-tomap => $main::coord_system);
+
+    # for the search
+    my($search_net, $search_net_strassen, $nxy);
+    if ($use_search) {
+	$search_net = _get_search_net();
+	($search_net_strassen) = $search_net->sourceobjects;
+	($nxy) = $search_net_strassen->nearest_point("$x,$y");
+    }
+
     my @res;
     {
 	my %seen;
@@ -317,9 +345,12 @@ sub get_nearest {
 		    my $p0 = $r->[Strassen::COORDS]->[0];
 		    $p0 = $conv->($p0) if $conv;
 		    my($px,$py) = split /,/, $p0;
-		    my $this_mindist = Strassen::Util::strecke([$px,$py], [$x,$y]);
-		    my $line = {StreetObj  => $r,
-				Dist       => $this_mindist,
+		    my $as_the_bird_flies_dist = Strassen::Util::strecke([$x,$y], [$px,$py]);
+		    my $npxy = $search_net_strassen ? $search_net_strassen->nearest_point("$px,$py") : undef;
+		    my $search_res = $nxy && $npxy && $search_net ? $search_net->search($nxy, $npxy, AsObj => 1) : undef;
+		    my $line = {StreetObj => $r,
+				Dist      => $search_res ? $search_res->len : $as_the_bird_flies_dist,
+				Path      => $search_res ? $search_res->path : undef,
 			       };
 		    push @res, $line;
 		}
@@ -444,6 +475,16 @@ sub _convert_vbb_stops {
     rename "$openvbb_bbd_file~", $openvbb_bbd_file
 	or die "Failed to rename $openvbb_bbd_file~ to $openvbb_bbd_file: $!";
     1;
+}
+
+sub _get_search_net {
+    if (!$search_net) {
+	my $s = MultiStrassen->new('strassen', 'landstrassen', 'landstrassen2'); # all ov VBB
+	$search_net = StrassenNetz->new($s);
+	# XXX what about gesperrt? do I know about gesperrt for cyclists vs. pedes?
+	$search_net->make_net(UseCache => 1);
+    }
+    $search_net;
 }
 
 1;
