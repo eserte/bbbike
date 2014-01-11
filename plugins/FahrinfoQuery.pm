@@ -26,6 +26,7 @@ use vars qw($icon %city_border_points $menu);
 
 use CGI qw();
 use Encode qw(encode);
+use File::Basename qw(basename);
 
 use BBBikeUtil qw(bbbike_root m2km kmh2ms s2ms);
 use Strassen::Core;
@@ -33,6 +34,9 @@ use Strassen::MultiStrassen;
 use Strassen::Util;
 use Strassen::StrassenNetz;
 
+# The 2012 version is only here because
+# - it needs a prereq less (Archive::Zip not needed)
+# - the stops.txt can be downloaded directly, which is much smaller than the whole .zip
 sub _provide_vbb_2012_stops ();
 sub _prereq_check_vbb_2012_stops ();
 sub _download_vbb_2012_stops ();
@@ -62,13 +66,15 @@ $use_search = 1 if !defined $use_search;
 
 my $bbbike_root = bbbike_root;
 
+my $openvbb_2012_download_size = '784kB';
 my $openvbb_2012_data_url = 'http://datenfragen.de/openvbb/GTFS_VBB_Okt2012/stops.txt';
 my $openvbb_2012_local_file = "$bbbike_root/tmp/GTFS_VBB_Okt2012_stops.txt";
 my $openvbb_2012_bbd_file = "$bbbike_root/tmp/vbb_2012.bbd";
 
-my $openvbb_2013_data_url = 'http://datenfragen.de/openvbb/GTFS_2013_VBB_bis_Aug_2013.zip';
-my $openvbb_2013_archive_file = "$bbbike_root/tmp/GTFS_2013_VBB_bis_Aug_2013.zip";
-my $openvbb_2013_local_file = "$bbbike_root/tmp/GTFS_2013_VBB_bis_Aug_2013_stops.txt";
+my $openvbb_2013_download_size = '22MB';
+my $openvbb_2013_data_url = 'http://www.vbb.de/de/datei/GTFSOkt2013.zip';
+my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
+my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
 my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_2013.bbd";
 
 my $search_net;
@@ -460,7 +466,7 @@ sub _provide_vbb_2013_stops () {
     if (!-s $openvbb_2013_archive_file) {
 	if ($main::top->messageBox(
 				   -icon => "question",
-				   -message => "Download $openvbb_2013_data_url (about 17MB)?", # XXX Msg!
+				   -message => "Download $openvbb_2013_data_url (about $openvbb_2013_download_size)?", # XXX Msg!
 				   -type => "YesNo"
 				  ) !~ /yes/i) {
 	    main::status_message("Not possible to use FahrinfoQuery with this data source", "error"); # XXX Msg!
@@ -534,7 +540,7 @@ sub _provide_vbb_2012_stops () {
 
     if ($main::top->messageBox(
 			       -icon => "question",
-			       -message => "Download $openvbb_2012_data_url (about 784kB)?", # XXX Msg!
+			       -message => "Download $openvbb_2012_data_url (about $openvbb_2012_download_size)?", # XXX Msg!
 			       -type => "YesNo"
 			      ) !~ /yes/i) {
 	main::status_message("Not possible to use FahrinfoQuery with this data source", "error"); # XXX Msg!
