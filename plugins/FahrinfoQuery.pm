@@ -166,19 +166,26 @@ sub choose {
 
     my $t = $main::top->Toplevel(-title => 'Fahrinfo');
     $t->transient($main::top) if $main::transient;
-    my $f = $t->Frame->pack(qw(-fill both -expand 1));
-    my $start_lb = $f->Scrolled('Listbox',
-				-scrollbars => 'osoe',
-				-exportselection => 0,
-				-width => 50,
-				-height => $LIMIT_LB,
-			       )->pack(qw(-side left -fill both -expand 1));
-    my $goal_lb  = $f->Scrolled('Listbox',
-				-scrollbars => 'osoe',
-				-exportselection => 0,
-				-width => 50,
-				-height => $LIMIT_LB,
-			       )->pack(qw(-side left -fill both -expand 1));
+    my($start_lb, $goal_lb);
+    {
+	my $col = 0;
+	my $f = $t->Frame->pack(qw(-fill both -expand 1));
+	$f->Label(-text => M("Start"))->grid(-column => $col, -row => 0, -sticky => 'ew');
+	$start_lb = $f->Scrolled('Listbox',
+				 -scrollbars => 'osoe',
+				 -exportselection => 0,
+				 -width => 50,
+				 -height => $LIMIT_LB,
+				)->grid(-column => $col, -row => 1, -sticky => 'news');
+	$col++;
+	$f->Label(-text => M("Ziel"))->grid(-column => $col, -row => 0, -sticky => 'ew');
+	$goal_lb  = $f->Scrolled('Listbox',
+				 -scrollbars => 'osoe',
+				 -exportselection => 0,
+				 -width => 50,
+				 -height => $LIMIT_LB,
+				)->grid(-column => $col, -row => 1, -sticky => 'news');
+    }
     my $expected_foottime;
     my $b;
     {
