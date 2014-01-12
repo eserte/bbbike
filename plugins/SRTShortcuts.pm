@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -977,17 +977,20 @@ sub add_new_layer {
 
 sub toggle_new_layer {
     my($type, $file, %args) = @_;
+    my $layer;
+    my $active = 0;
     my $method = delete $args{method} || 'add_new_layer';
     my $type_file = "$type $file";
     if (!$layer_for_type_file{$type_file}) {
 	eval {
 	    no strict 'refs';
-	    &{$method}($type, $file, %args);
+	    $layer = &{$method}($type, $file, %args);
 	    if ($args{above}) {
 		main::set_in_stack($layer_for_type_file{$type_file}, 'above', $args{above});
 	    } elsif ($args{below}) {
 		main::set_in_stack($layer_for_type_file{$type_file}, 'below', $args{below});
 	    }
+	    $active = 1;
 	};
 	if ($@) {
 	    $want_plot_type_file{$type_file} = 0;
@@ -995,7 +998,7 @@ sub toggle_new_layer {
 	}
     } else {
 	eval {
-	    my $layer = $layer_for_type_file{$type_file};
+	    $layer = $layer_for_type_file{$type_file};
 	    delete $main::str_draw{$layer};
 	    delete $main::p_draw{$layer};
 	    if ($type eq 'p') {
@@ -1006,14 +1009,17 @@ sub toggle_new_layer {
 	    }
 	    delete $layer_for_type_file{$type_file};
 	    BBBikeLazy::bbbikelazy_remove_data($type, $layer);
+	    $active = 0;
 	};
 	if ($@) {
 	    $want_plot_type_file{$type_file} = 1;
 	    main::status_message("Cannot toggle layer: $@", 'die');
 	}
     }
+    ($layer, $active);
 }
 
+our %layer_checkbutton; # XXX our just for debugging
 sub layer_checkbutton {
     my($label, $type, $file, %args) = @_;
     my $oncallback  = delete $args{oncallback};
@@ -1026,9 +1032,11 @@ sub layer_checkbutton {
     my $maybe_orig_file = delete $args{maybe_orig_file};
     my $set_layer_highlightning = delete $args{set_layer_highlightning};
     my $special_raise = delete $args{special_raise};
+    my $real_file = $maybe_orig_file ? _maybe_orig_file($file) : $file;
+    my $key = "$type $real_file";
     
     [Checkbutton => (ref $label eq 'ARRAY' ? @$label : $label),
-     -variable => "$type $file",
+     -variable => \$layer_checkbutton{$key},
      -command => sub {
 	 if ($below_above_cb) {
 	     my %below_above_args = $below_above_cb->();
@@ -1039,12 +1047,10 @@ sub layer_checkbutton {
 	     }
 	 }
 
-	 my $key = "$type $file";
-	 my $real_file = $maybe_orig_file ? _maybe_orig_file($file) : $file;
-	 my $layer = toggle_new_layer($type, $real_file, below => $below, above => $above, %args);
-	 if ($oncallback && $layer_for_type_file{"$key"}) {
+	 my($layer, $active) = toggle_new_layer($type, $real_file, below => $below, above => $above, %args);
+	 if ($oncallback && $layer_for_type_file{$key}) {
 	     $oncallback->($layer, $type, $real_file);
-	 } elsif ($offcallback && !$layer_for_type_file{"$key"}) {
+	 } elsif ($offcallback && !$layer_for_type_file{$key}) {
 	     $offcallback->($layer, $type, $real_file);
 	 }
 	 if ($set_layer_highlightning) {
@@ -1122,16 +1128,23 @@ sub add_todays_geocoded_images {
 
 sub enable_all_layers_for_editing {
     # Don't include "u" here, because it usually disturbs normal editing
-    for my $str_abk (qw(s f w b r rw e qs hs nl gr)) {
+    for my $str_abk (qw(s l f w b r rw e qs ql hs hl nl gr)) {
 	main::plot('str', $str_abk, -draw => 1);
     }
     # XXX hackish. There should be an easier way to do this
-    for my $basefile (qw(zebrastreifen culdesac ortsschilder)) {
+    for my $basefile_def (
+			  ['zebrastreifen', maybe_orig_file => 0],
+			  ['culdesac', maybe_orig_file => 1],
+			  ['ortsschilder', maybe_orig_file => 1],
+			 ) {
+	my($basefile, %layer_opts) = @$basefile_def;
 	my $type = "p";
 	my $file = "$main::datadir/$basefile";
-	my $type_file = "$type $file";
+	my $real_file = $layer_opts{maybe_orig_file} ? _maybe_orig_file($file) : $file;
+	my $type_file = "$type $real_file";
 	if (!$layer_for_type_file{$type_file}) {
-	    toggle_new_layer($type, $file);
+	    my(undef, $active) = toggle_new_layer($type, $real_file);
+	    $layer_checkbutton{$type_file} = $active;
 	}
     }
     main::plot_comments_all(1);
