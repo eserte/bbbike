@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,6 +26,8 @@ use Strassen::Core;
 sub usage () {
     die "usage: $0 [-frequency days] [-n] [-v] -log file bbdfile ...";
 }
+
+our $VERSION = '0.02';
 
 my $check_frequency = 30; # days
 my $log_file;
@@ -64,6 +66,8 @@ my $ua = LWP::UserAgent->new;
 # some servers (e.g. flaeming-skate.de) return a 403 if no Accept
 # header is available
 $ua->default_headers->push_header('Accept' => 'text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5');
+# some servers don't like user agents with "libwww-perl" or "LWP"
+$ua->agent("url_checker.pl/$VERSION");
 
 my @files = @ARGV
     or usage;
