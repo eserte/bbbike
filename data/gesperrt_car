@@ -448,7 +448,7 @@ Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 
 Fregestr. -> Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5896,6785 5966,6747
 Fregestr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5957,6889 5896,6785 5777,6628
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5811,6833 5896,6785 5957,6889
-Putlitzstr.	1 6212,13944 6205,14216
+Putlitzstr.	1 6212,13944 6204,14220
 Bornitzstr.	1 15643,12875 15563,12860
 Washingtonplatz: nur für Taxis	2 8106,13130 7937,13126
 Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
@@ -791,8 +791,8 @@ Flotowstr. -> Hindenburgdamm: Mittelstreifen	3::igndisp 4651,4638 4515,4581 4521
 Straßenbahntrasse	3nocross::ignrte 10878,17490 10880,17469 10886,17396
 Berliner Str. -> Masurenstr.: Straßenbahntrasse	3::igndisp 10886,17396 10880,17469 10670,17458
 Masurenstr. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10670,17458 10880,17469 10878,17490
-Mittelstreifen	3nocross::ignrte 6608,16180 6447,16321 6440,16327
-Müllerstr. -> Kongostr.: Mittelstreifen	3::igndisp 6608,16180 6447,16321 6349,16213
+Mittelstreifen	3nocross::ignrte 6587,16199 6572,16212 6447,16321 6440,16327
+Müllerstr. -> Kongostr.: Mittelstreifen	3::igndisp 6572,16212 6447,16321 6349,16213
 Mittelstreifen	3nocross::ignrte 7948,15802 7962,15633 7966,15571
 Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7948,15802 7962,15633 8053,15598
 Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8053,15598 7962,15633 7966,15571

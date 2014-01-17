@@ -1832,7 +1832,7 @@ tragen (ca. 30 Stufen)	0:30 8773,10399
 tragen (ca. 25 Stufen)	0:30 -18702,4551
 tragen (11 Stufen)	0:20 -12676,-1742
 tragen (11 Stufen)	0:20 -12685,-1449
-tragen (Treppe)	0:20 -12625,-1703
+tragen (18 Stufen)	0:25 -12625,-1703
 tragen (ca. 30 Stufen)	0:30 -13802,-1856
 tragen (ca. 30 Stufen)	0:30 -13733,-1856
 #: note: Luftbild
@@ -2465,8 +2465,7 @@ Wilhelm-Hoff-Str.: Weg noch nicht fertig	2::inwork 19033,3397 19057,3422
 #: check_frequency: 180d
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13299
 # 
-#: last_checked: 2013-12-22
-Alter Markt - Uferweg: Zugang höchstwahrscheinlich gesperrt	2::inwork -12608,-1715 -12625,-1703 -12643,-1694
+# REMOVED (anscheinend ist ein Viertel der Treppe zugänglich, siehe http://berlinerbaustellen.blogspot.de/2014/01/0246-gastbaustelle-potsdam-potsdamer.html) --- : last_checked: 2014-01-11 --- Alter Markt - Uferweg: Zugang höchstwahrscheinlich gesperrt	2::inwork -12608,-1715 -12625,-1703 -12643,-1694
 # 
 #: XXX oder bleibt die Einbahnstraßenregelung permanent?
 #: XXX_prog 1s:q4:inwork geht als Kategorie nicht, falsche Übersetzung!
@@ -2474,13 +2473,12 @@ Alter Markt - Uferweg: Zugang höchstwahrscheinlich gesperrt	2::inwork -12608,-17
 Am Zirkus: Einbahnstraße	1s:q4 9118,13070 9137,13032 9167,13046 9239,12923
 # 
 #: next_check_id: STADTGARTENMOABIT-2014
-#: last_checked: 2013-11-25 (Bauarbeiten)
-#: next_check: 2014-01-15
+#: last_checked: 2014-01-17 (Bauarbeiten)
 (Weg am Stadtgarten Moabit): Bauarbeiten	2::inwork 5708,14077 5685,14215
 # 
-#: last_checked: 2013-11-25
-#: next_check: 2014-01-15
-Erna-Samuel-Str.: Einbahnstraße bis zur kompletten Fertigstellung	1::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
+#: next_check_id: ERNASAMUEL-2014
+#: last_checked: 2014-01-17
+Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 # 
 #: XXX: vom Hellweg-Parkplatz kann man einige Meter Richtung Norden passieren
 #: XXX: "inwork" ist ein Euphemismus --- es sind keinerlei Anzeichen von Bauarbeiten zu sehen
@@ -2562,8 +2560,8 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 #: osm_watch: way id="183406331" version="2"
-#: last_checked: 2013-11-13
-#: next_check: 2013-12-31
+#: last_checked: 2014-01-17
+#: check_frequency: 120d
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
@@ -2662,7 +2660,7 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 174
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2013-12-20 vvv
+#: last_checked: 2014-01-07 vvv
 #: check_frequency: 60d vvv
 #: XXX wird man nach den Bauarbeiten direkt zur Eldenaer Str. fahren können (Kfz/Rad)?
 #: XXX Qualität im östlichen Abschnitt?

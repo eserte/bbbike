@@ -126,14 +126,14 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="15"
 #: osm_watch: way id="42732291" version="7"
-#: last_checked: 2013-10-24
+#: last_checked: 2014-01-17
 #: check_frequency: 60d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: osm_watch: way id="4581787" version="5"
-#: last_checked: 2013-10-24
-#: next_check: 2013-11-21
+#: last_checked: 2014-01-17
+#: check_frequency: 90d
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
@@ -143,7 +143,7 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: osm_watch: way id="162964323" version="4"
 #: osm_watch: way id="4541085" version="12"
 #: osm_watch: way id="4638315" version="12"
-#: last_checked: 2013-11-13
+#: last_checked: 2014-01-17
 #: check_frequency: 60d
 Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7717,16541 7754,16364 7800,16233 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
 # 
@@ -220,15 +220,14 @@ Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::p
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2014-01-07
+#: last_checked: 2014-01-17
 #: next_check: 2014-06-05
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="4424794" version="12"
 #: osm_watch: way id="30195541" version="6"
-#: last_checked: 2013-11-25 (neu asphaltiert, Markierung fehlt teilweise komplett)
-#: check_frequency: 14d
+#: last_checked: 2014-01-17 (neu asphaltiert, Markierung fehlt teilweise komplett)
 Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
@@ -250,9 +249,8 @@ Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,1516
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
 #: osm_watch: way id="25219757" version="8"
 #: osm_watch: way id="4600236" version="11"
-#: last_checked: 2013-08-26
-#: next_check: 2013-12-09
-# REMOVED (wieder aktivieren?) --- #: check_frequency: 90d
+#: last_checked: 2014-01-17
+#: check_frequency: 120d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
 # REMOVED (-> radwege-orig) --- #: XXX Markierungsarbeiten haben wohl angefangen, genauer anschauen --- #: last_checked: 2013-10-18 --- #: next_check: 2013-10-18 --- Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
@@ -490,7 +488,7 @@ Neues Wohnviertel in Rudow: wie heißt die Straße parallel zum Seeadlerweg? Wie i
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/st__dtebauliche_untersuchung.pdf?start&ts=1381739816&file=st__dtebauliche_untersuchung.pdf vvv
 #: next_check: 2015-03-01 vvv
 neuer Weg?	?::projected 19618,849 19316,951 19184,991
-brunolfweg: Verknüpfung gefordert	?::projected 19290,894 19316,951 19334,997
+Brunolfweg: Verknüpfung gefordert	?::projected 19290,894 19316,951 19334,997
 #: next_check ^^^
 #: by: ^^^
 #: by: ^^^
@@ -861,7 +859,7 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: XXX Privatstraße
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
 #: osm_watch: way id="137340264" version="6"
-#: last_checked: 2014-01-05
+#: last_checked: 2014-01-07
 #: check_frequency: 90d
 Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,13104
 # 
@@ -874,8 +872,7 @@ Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,131
 #: note: Planstraße im Block 902
 #: osm_watch: way id="182859952" version="10"
 #: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014)
-#: last_checked: 2013-11-12
-#: next_check: 2014-01-15
+#: last_checked: 2014-01-17
 Erna-Samuel-Straße: werden hier noch Radstreifen erstellt?	?::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 # 
 # REMOVED (keine Anzeichen für weitere Straßen hier) --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
@@ -1018,6 +1015,12 @@ Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,163
 # 
 #: next_check: 2010-10-30
 Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-17188 17398,-17485
+# 
+#: XXX -> strassen_bab-orig, wenn fertig
+#: XXX weitere Änderungen: Matthesstr. wird aufgehoben, Teile des Mergenthalerrings wahrscheinlich auch
+#: next_check: 2022-01-01
+BAB100	?::inwork 14270,9710 14186,9546 14147,9383 14160,9132 14307,8805 14270,8379 14421,8032 14451,7774 14356,7365 14219,6838 14180,6755 14106,6663
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -1035,6 +1038,9 @@ Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-171
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX wo genau hört die Bucher Chaussee auf und die Karower Chaussee an?
+Bucher Chaussee/Karower Chaussee	? 16123,24232 16156,24284 16201,24354
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 #: XXX wahrscheinlich nur ein Eintrag in comments_cyclepath notwendig, genaue Abschnitte der Nebenfahrbahn müssen erfasst werden
@@ -1110,7 +1116,9 @@ Am Hechtgraben: Name, Qualität, Beleuchtung?	? 18853,18959 18879,18954 18923,189
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
 #
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130925.1340.389712.html (Beginn: 30. September 2013, Ende offen)
-#: next_check: 2013-12-31
+#: XXX zwischen Lütticher Str. und Antwerpener Str. (Richtung Osten) zurzeit Bauarbeiten (2014-01-17), Radweg gesperrt
+#: XXX zwischen Lüderitzstr. und Guineastr. (Richtung Westen) asphaltiert ohne die letzte Asphaltdecke
+#: last_checked: 2014-01-17
 Seestr.: Sanierung der Radwege - wie wird die Qualität danach sein (asphaltiert?)	? 6239,15553 6422,15708 6555,15827 6661,15921 6781,16026
 # 
 # REMOVED (nein, keine Vorfahrt) --- Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1276,8659 1403,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
@@ -1385,7 +1393,10 @@ Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::proje
 #: check_frequency: 100d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
-# REMOVED (siehe handicap_s-orig) --- #: last_checked: 2013-07-16 --- #: next_check: 2013-09-01 --- Lauterstr.: wird die Straße am Breslauer Platz komplett gesperrt? Wird die Verlängerung der Niedstraße keine Einbahnstraße mehr sein?	?::projected 5810,7337 5817,7223
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4744
+#: next_check: 2014-11-01
+Lauterstr.: wird die Straße am Breslauer Platz komplett für Autofahrer/Radfahrer gesperrt?	?::projected 5810,7337 5817,7223
+# 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361057749620/1057749620/00056359/59-Anlagen/04/vzbbvv01814_-_Fussgaengerueberweg_Alte_Hellers.pdf --- #: priority: #C --- Alte Hellersdorfer Str.: wird hier ein Zebrastreifen entstehen	? 23079,15855 23134,15883
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4550&options=4 vvv
@@ -3467,11 +3478,17 @@ Potsdam Hbf - Uferweg: Qualität?	? -12247,-1858 -12210,-1857 -12200,-1813 -12165
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf vvv
 #: XXX wahrscheinlich wird zumindest in der Speicherstadt kein direkter Weg am Wasser sein
 #: by: http://www.grothgruppe.de/site/179/Speicherstadt_Potsdam.html (-> Galerie)
-#: last_checked: 2013-12-22
-#: check_frequency: 180d
+#: by: http://berlinerbaustellen.blogspot.de/2014/01/0249-gastbaustelle-potsdam-lange-brucke.html (Unterführung)
+#: last_checked: 2014-01-12 vvv
+#: check_frequency: 180d vvv
+Unterführung Lange Brücke: hier scheint etwas zu entstehen	?::inwork -12377,-1743 -12663,-2039 -12759,-2066
 Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg bereits (oder Teile davon)? Qualität?	?::inwork -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
-Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9766,5437 -9677,5430 -9478,5549 -9372,5532
+#: last_checked ^^^
+#: check_frequency ^^^
 #: by ^^^
+# 
+#: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
+Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9766,5437 -9677,5430 -9478,5549 -9372,5532
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10110579_1471008/70377ba5/ENDFASSUNGAbl.%20PdmStadt%2016_12.pdf
 #: last_checked: 2013-05-10 (in Bau, aber ist es tatsächlich diese Straße?)
@@ -3487,6 +3504,7 @@ Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,3410
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4529 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2013 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Benennung wird wirksam)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: XXX Benennung von 7 Privatwegen auf dem Grundstück der KGA "Erpetal" vvv
 #: XXX fehlen alle in Berlin.coords.data, PLZ=12587 vvv
 #: last_checked: 2013-06-22 (Umbenennung nicht durchgeführt) vvv
@@ -3602,8 +3620,8 @@ Lindenberg - Schwanebeck: ist der Radweg fertig gebaut?	?::inwork 18356,22225 18
 Straße 84 (Karow): existiert hier tatsächlich eine Straße?	? 15310,23085 15380,23039 15356,22948
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
-#: XXX laut osm ist die Kongostraße mittlerweile asphaltiert
+#: XXX laut osm ist die Kongostraße mittlerweile asphaltiert - stimmt aber nicht (korrigiert)!
 #: osm_watch: way id="5117259" version="10"
-#: last_checked: 2013-10-24
-#: next_check: 2013-11-21
+#: last_checked: 2014-01-17
+#: check_frequency: 90d
 Kongostr.: ist die Kongostr. mittlerweile asphaltiert?	? 6244,16096 6258,16111 6349,16213 6447,16321

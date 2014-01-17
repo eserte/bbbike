@@ -549,7 +549,7 @@ Großer Weg: Parkweg	Q1 5900,11913 5907,11874 5933,11775 6022,11757 6154,11798 62
 Großer Weg: asphaltiert	Q0 7606,11629 7621,11620 7669,11586 7711,11558 7717,11540
 Große Sternallee: Parkweg	Q1 6809,11979 7058,11809 7163,11738 7382,11588 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	Q1 7356,11517 7382,11588
-Bellevueallee: Kleinsteinpflaster	Q1 7039,12314 7383,12095 7460,12054 7658,11947 7717,11918 7801,11875 8016,11770 8032,11761 8172,11679
+Bellevueallee: Mosaikpflaster	Q1 7039,12314 7383,12095 7460,12054 7658,11947 7717,11918 7801,11875 8016,11770 8032,11761 8172,11679
 Ahornsteig: Parkweg	Q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8014,11740
 Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8014,11740 8032,11761 8156,11863 8221,11876 8262,11883 8453,12099 8522,12187 8538,12245
 Tiergarten: wassergebundene Decke	Q1 8210,11775 8156,11863 8091,11992 8089,12041 8107,12145
@@ -930,8 +930,8 @@ Manteuffelstr.: Asphalt	Q0 4015,4053 4092,4217
 Augustaplatz: Asphalt	Q0 4015,4053 3986,4051 3955,4039 3936,4014 3937,3993 3946,3967 3971,3950 4000,3950 4025,3958 4042,3982 4045,4005 4034,4033 4015,4053
 Kyllmannstr. (Lichterfelde): Kopfsteinpflaster	Q2 3500,4146 3467,4247
 Kyllmannstr. (Lichterfelde): Asphalt	Q0 3518,4106 3583,4011 3632,3943 3724,3799
-Maxstr.: mäßiges Kopfsteinpflaster	Q2 7786,15785 7744,15831
-Maxstr.: gutes Kopfsteinpflaster	Q1 7744,15831 7673,15897
+Maxstr.: mäßiges Kopfsteinpflaster	Q2 7786,15785 7738,15838
+Maxstr.: gutes Kopfsteinpflaster	Q1 7738,15838 7673,15897
 Maxstr.: Asphalt	Q0 7673,15897 7622,15946
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7622,15946 7543,16016 7474,16086
 Genter Str.: Asphalt	Q0 7270,15307 7138,15437 7012,15571
@@ -8958,7 +8958,7 @@ Wiesenstr. (Rahnsdorf): Asphalt	Q0 29591,4035 29632,3968 29917,3697
 Ruthnerweg: Beton mit Schäden	Q2 3640,1959 3577,2000
 Ruthnerweg: Beton	Q1 3577,2000 3465,2006 3430,1998 3286,2006 3240,2007
 Lüderitzstr.: Asphalt	Q0 6003,16521 6106,16433 6211,16343
-Lüderitzstr.: Kopfsteinpflaster	Q2 6503,16068 6661,15921
+Lüderitzstr.: Kopfsteinpflaster	Q2 6484,16085 6661,15921
 Tollensestr.: Asphalt mit Schäden	Q1 22552,13018 22519,13139 22527,13232 22563,13340
 Tollensestr.: guter Asphalt	Q0 22563,13340 22594,13408
 Freienwalder Str. (Gesundbrunnen): Kopfsteinpflaster	Q2 9331,16624 9435,16832 9503,16988
@@ -9142,7 +9142,7 @@ Bochumer Str.: Asphalt	Q0 5863,13214 5889,13032 5914,12845 5922,12765
 Schwartzkopffstr.: Asphalt	Q0 8607,14253 8776,14364
 Pflugstr.: Asphalt	Q0 8776,14364 8669,14550
 Wöhlertstr.: Asphalt	Q0 8669,14550 8442,14456
-Kameruner Str.: Kopfsteinpflaster	Q2 6133,15680 6282,15830 6401,15956 6503,16068 6608,16180
+Kameruner Str.: Kopfsteinpflaster	Q2 6127,15688 6267,15844 6383,15972 6484,16085 6587,16199
 Eulerstr.: Asphalt	Q0 9248,16248 9322,16317 9381,16372 9498,16480
 Boizenburger Str.: guter Asphalt	Q0 22310,12829 22310,12637 22309,12350 22385,12268
 Grässeweg: guter Beton	Q0 -5510,13326 -5295,13415 -5217,13446
@@ -9236,8 +9236,8 @@ Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17429,-453
 Mellenseestr.: Asphalt	Q0 17534,9897 17618,9887 17958,10012
 Carnotstr.: Asphalt	Q0 4806,12902 4655,12953
 Pintschstr.: Kopfsteinpflaster	Q2 13435,12973 13339,13196
-Guineastr.: Kopfsteinpflaster	Q2 6422,15708 6282,15830
-Guineastr.: Asphalt	Q0 6282,15830 6129,15970 5988,16099
+Guineastr.: Kopfsteinpflaster	Q2 6422,15708 6267,15844
+Guineastr.: Asphalt	Q0 6267,15844 6129,15970 5988,16099
 Troppauer Str.: Kopfsteinpflaster	Q2 2289,3331 2400,3375 2510,3447 2684,3520
 Jägerndorfer Zeile: asphaltiert	Q0 2746,3699 2712,3602 2684,3520
 Jägerndorfer Zeile: Kopfsteinpflaster	Q2 2684,3520 2632,3411 2595,3356 2518,3258 2436,3180 2346,3077 2194,2930
@@ -9396,7 +9396,7 @@ Emdener Str.: Kopfsteinpflaster	Q2 5560,13382 5580,13587 5609,13790 5647,14067
 Fercher Str. (Zehlendorf): guter Beton	Q0 -908,1749 -894,1489
 Bouchestr.: Asphalt	Q0 13606,9578 13645,9621 13867,9864
 Hosemannstr.: schlechtes Kopfsteinpflaster	Q3 23653,12122 23707,12258 23725,12302 23774,12423 23816,12542
-Togostr.	Q0 6555,15827 6530,15849 6401,15956 6244,16096
+Togostr.	Q0 6555,15827 6530,15849 6383,15972 6244,16096
 Togostr.: Verbundsteinpflaster	Q1 6244,16096 6104,16223
 Togostr.	Q0 6104,16223 6005,16313 5906,16403 5700,16584 5596,16662
 Togostr.	Q0 5531,16734 5315,16936
@@ -9793,8 +9793,8 @@ Kurfürstenstr. (Lankwitz): mäßiges Kopfsteinpflaster	Q2 6160,1896 6134,1929 6097
 Kurfürstenstr. (Lankwitz): Asphalt	Q0 6097,1975 6021,2071 5934,2198 5889,2319 5789,2604
 Lansstr.: mäßiges Kopfsteinpflaster	Q2 3054,5677 2953,5606 2858,5535 2785,5482
 Krumme Str. (Bohnsdorf): Beton	Q0 21941,-422 22000,-470 22064,-481 22146,-490 22201,-496 22275,-461
-Prinz-Eugen-Str.: mäßiges Kopfsteinpflaster	Q2 7532,15849 7644,15731 7796,15590
-Antonstr.: Asphalt	Q0 7396,15479 7518,15605 7644,15731 7744,15831
+Prinz-Eugen-Str.: mäßiges Kopfsteinpflaster	Q2 7532,15849 7648,15741 7796,15590
+Antonstr.: Asphalt	Q0 7396,15479 7518,15605 7648,15741 7738,15838
 Paradiesstr.: sehr guter Asphalt	Q0 21168,212 21250,118 21319,-178 21355,-309
 (Am Gartenstadtweg - Paradiesstr.): Verbundsteinpflaster	Q0 21262,375 21199,309 21168,212
 Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21355,-309 21371,-374 21367,-420 21360,-455 21350,-549 21291,-767
@@ -12765,7 +12765,7 @@ Lutherstr. (Niederschönhausen): schlechtes Kopfsteinpflaster	Q3 9159,19818 9325,
 Bäckerstr.: guter Beton	Q0 16726,1074 16700,1104 16657,1124
 Druckerkehre: guter Beton	Q0 16657,1124 16669,1166 16698,1198
 Lüderitzstr.: Kopfsteinpflaster	Q2 6211,16343 6349,16213
-Lüderitzstr.: Asphalt	Q0 6349,16213 6503,16068
+Lüderitzstr.: Asphalt	Q0 6349,16213 6484,16085
 (Mauerweg - Matthäusweg): Asphalt	Q0 14876,1686 14962,1667
 (Matthäusweg - Friedrich-Kayßler-Weg): Asphalt	Q0 15016,1562 14996,1564 14962,1667
 Nidwaldener Zeile: Verbundsteinpflaster	Q0 3581,2211 3581,2125 3581,2105
@@ -14005,10 +14005,10 @@ Lortzingstr.: Kopfsteinpflaster	Q2 9814,15312 9702,15251 9566,15188
 Putbusser Str.: Asphalt	Q0 9474,15714 9578,15500 9702,15251 9778,15107
 Strahlsunder Str.: Gehwegplatten	Q0 9918,14986 9843,14949 9718,14888
 Strahlsunder Str.: schlechtes Kopfsteinpflaster	Q3 9718,14888 9517,14785 9341,14701 9250,14658
-Vineta Platz: Gehwegplatten	Q0 9942,14936 10029,14974 10111,15018
-Vineta Platz: Gehwegplatten	Q0 9904,15014 9988,15057 10071,15096
+Vinetaplatz: Gehwegplatten	Q0 9942,14936 10029,14974 10111,15018
+Vinetaplatz: Gehwegplatten	Q0 9904,15014 9988,15057 10071,15096
 Ruppiner Str.: Asphalt	Q0 9847,15134 9904,15014
-Ruppiner Str.: Gehwegplatten	Q0 9904,15014 9918,14986 9942,14936
+Ruppiner Str.: Gehwegplatten	Q1 9904,15014 9918,14986 9942,14936
 Ruppiner Str.: Asphalt	Q0 9942,14936 10003,14823 10043,14735 10070,14678 10105,14608 10150,14525
 Wattstr.: Kopfsteinpflaster	Q2 9517,14785 9432,14936 9355,15078
 Jasmunder Str.: Kopfsteinpflaster	Q2 9341,14701 9270,14856 9201,14997

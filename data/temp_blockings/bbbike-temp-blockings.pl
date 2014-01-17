@@ -32,11 +32,11 @@ my $isodate2epoch = sub {
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => $isodate2epoch->("2013-05-16 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-05-20 23:59:59"),
+     { from  => $isodate2epoch->("2014-06-05 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-06-09 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 47]], # zwei Tage vor Pfingsten
-       text  => 'Straßenfest rund um den Blücherplatz, 17.05.2013 bis 20.05.2013',
+       text  => 'Straßenfest rund um den Blücherplatz, 6.6.2014 bis 9.6.2014',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9521,10010 9827,10051
@@ -55,11 +55,11 @@ userdel	3 9922,10010 9827,10051 9837,9856
 userdel	3 9837,9856 9827,10051 9922,10010
 EOF
      },
-     { from  => $isodate2epoch->("2013-05-18 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-05-19 23:59:59"),
+     { from  => $isodate2epoch->("2014-06-07 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-06-08 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49]], # Pfingstsonntag
-       text  => 'Karneval der Kulturen, 19.5.2013',
+       text  => 'Karneval der Kulturen, 8.6.2014',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
@@ -568,11 +568,11 @@ EOF
        source_id => 'IM_015896',
        file  => 'badstr.bbd',
      },
-     { from  => $isodate2epoch->("2013-06-14 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-06-16 23:59:59"),
+     { from  => $isodate2epoch->("2014-06-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-06-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (15.6.2013 bis 16.6.2013',
+       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (14.6.2014 bis 15.6.2014',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
@@ -9449,11 +9449,11 @@ EOF
 userdel	2::temp 12891,12549 12869,12425
 EOF
      },
-     { from  => $isodate2epoch->("2013-06-01 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-06-02 21:00:00"),
+     { from  => $isodate2epoch->("2014-05-31 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-06-01 22:00:00"),
        periodic => 1, # erster Termin im Sommer
-       recurrences => [['yearly', days => 2, months => 6]], # kann aber auch erst im Juli stattfinden
-       text  => 'Open Air Gallery am 2. Juni 2013 auf der Oberbaumbrücke (10:00 - 21:00)',
+       recurrences => [['yearly', days => 31, months => 5]], # kann aber auch erst im Juli stattfinden
+       text  => 'Open Air Gallery am 1. Juni 2014 auf der Oberbaumbrücke (10:00 - 22:00)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
@@ -17927,15 +17927,19 @@ EOF
 userdel	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => $isodate2epoch->("2013-06-21 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-06-22 23:59:59"),
+     { from  => $isodate2epoch->("2014-06-20 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-06-21 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 21, months => 6]],
+       recurrences => [['yearly', days => 20, months => 6]],
        source_id => 'http://www.csd-berlin.de/',
-       text  => 'CSD am 22.6.2012',
+       text  => 'CSD am 21.6.2014',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 6171,10657 6216,10614 6268,10588 6353,10583 6468,10550 6532,10529 6636,10492 6753,10446 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6918,10854 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254
+#: XXX andere Route? von Alex aus?
+#: next_check: 2014-06-01
+#: priority: #A
+userdel	2::temp 6171,10657 6216,10614
+userdel	2::temp 6216,10614 6268,10588 6353,10583 6468,10550 6532,10529 6636,10492 6753,10446 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6918,10854 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254
 userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808
 userdel	2::temp 7033,10396 6851,10416
 userdel auto	3 7039,12314 7383,12095 7460,12054
@@ -18060,11 +18064,11 @@ userdel	2::temp 8018,12131 7827,12105 7777,12098 7460,12054 7658,11947 7634,1192
 userdel	2::temp 7460,12054 6857,11992
 EOF
      },
-     { from  => $isodate2epoch->("2013-06-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-06-30 23:59:59"),
+     { from  => $isodate2epoch->("2014-06-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-06-29 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6]],
-       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (28. bis 30. Juni 2013)',
+       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (27. bis 29. Juni 2014)',
        type  => 'handicap',
        source_id => 'http://www.xhain.info/termine/bergmannstrassenfest.htm',
        data  => <<EOF,
@@ -19122,11 +19126,11 @@ EOF
 userdel	1::temp 1574,11379 1625,11380 1834,11408 1960,11426 2109,11441
 EOF
      },
-     { from  => $isodate2epoch->("2013-07-06 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-07-07 21:00:00"),
+     { from  => $isodate2epoch->("2014-07-05 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-07-06 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
-       recurrences => [['yearly', days => 7, months => 7]], # kann aber auch erst im August stattfinden
-       text  => 'Open Air Gallery am 7. Juli 2013 auf der Oberbaumbrücke (10:00 - 21:00)',
+       recurrences => [['yearly', days => 5, months => 7]], # kann aber auch erst im August stattfinden
+       text  => 'Open Air Gallery am 6. Juli 2014 auf der Oberbaumbrücke (10:00 - 22:00)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
@@ -19665,11 +19669,11 @@ EOF
 userdel	2::inwork 3079,19045 2993,18962
 EOF
      },
-     { from  => $isodate2epoch->("2013-08-01 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-08-05 02:00:00"),
-       periodic => 1, # Biermeile oder wie heißt das genau?
-       recurrences => [['yearly', days => 1, months => 8]],
-       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung, Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (bis 05.08.12, 02:00)',
+     { from  => $isodate2epoch->("2014-07-31 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-08-04 02:00:00"),
+       periodic => 1, # Internationales Berliner Bierfestival
+       recurrences => [['yearly', days => 31, months => 7]],
+       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (1.8.2014 bis 3.8.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 12360,12505 12362,12540 12364,12589
@@ -21513,13 +21517,13 @@ userdel	2::temp 9562,7796 9372,7798 9281,7795
 userdel	2::temp 9281,7795 9281,7651 9300,7312
 EOF
      },
-     { from  => 1371189600, # 2013-06-14 08:00
-       until => 1371419999, # 2013-06-16 23:59
-       text  => 'Karower Chaussee / Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße gesperrt, 15.06.2013-16.06.2013 ',
+     { from  => $isodate2epoch->("2014-01-17 18:00:00"), # 1371189600, # 2013-06-14 08:00
+       until => $isodate2epoch->("2014-01-19 10:00:00"), # 1371419999, # 2013-06-16 23:59
+       text  => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße gesperrt, 18. Januar 2014 18 Uhr bis 19. Januar 2014 10 Uhr',
        type  => 'gesperrt',
-       source_id => 'INKO_118700',
+       source_id => 'IM_021028',
        data  => <<EOF,
-userdel	2::inwork 16201,24354 16123,24232
+userdel	2::inwork 16201,24354 16156,24284 16123,24232
 EOF
      },
      { from  => 1371528000, # 2013-06-18 06:00
@@ -22039,7 +22043,7 @@ EOF
        data  => <<EOF,
 #: XXX Aufhebung der Sperrung aus Witterungsgründen möglich
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: next_check: 2013-01-23
+#: next_check: 2014-01-23
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
@@ -22371,6 +22375,17 @@ EOF
 #: XXX bleibt die Sperrung permanent oder wird sie irgendwann aufgehoben?
 #: last_checked: 2014-01-02
 userdel	2::inwork 2219,11304 2116,11288
+EOF
+     },
+     { from  => 1399554000, # 2014-05-08 15:00 # 1 Tag Vorlauf
+       until => 1399838400, # 2014-05-11 22:00
+       periodic => 1, # erster Termin im Jahr
+       recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
+       text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 9.5.2014 15 Uhr bis 11.5.2014 22 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/bezirk/festdernationen.html',
+       data  => <<EOF,
+userdel	2::temp 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 EOF
      },
     );

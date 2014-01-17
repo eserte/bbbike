@@ -2198,7 +2198,7 @@ tragen (ca. 30 Stufen)	0:30:-173 8773,10399
 tragen (ca. 25 Stufen)	0:30:-14 -18702,4551
 tragen (11 Stufen)	0:20:-195 -12676,-1742
 tragen (11 Stufen)	0:20:-12 -12685,-1449
-tragen (Treppe)	0:20:-234 -12625,-1703
+tragen (18 Stufen)	0:25:-234 -12625,-1703
 tragen (ca. 30 Stufen)	0:30:-246 -13802,-1856
 tragen (ca. 30 Stufen)	0:30:-90 -13733,-1856
 tragen (21 Stufen)	0:30:-127 15091,21172
@@ -2648,10 +2648,9 @@ versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Wilhelm-Hoff-Str.: Weg noch nicht fertig	2::inwork 19033,3397 19057,3422
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s 10077,13100 10018,13299
-Alter Markt - Uferweg: Zugang höchstwahrscheinlich gesperrt	2::inwork -12608,-1715 -12625,-1703 -12643,-1694
 Am Zirkus: Einbahnstraße	1s 9118,13070 9137,13032 9167,13046 9239,12923
 (Weg am Stadtgarten Moabit): Bauarbeiten	2::inwork 5708,14077 5685,14215
-Erna-Samuel-Str.: Einbahnstraße bis zur kompletten Fertigstellung	1::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
+Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Zugang durch Bauzäune versperrt	2::inwork 8243,9766 8233,9863 8201,9869 8255,9938 8285,9956
 Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,10098 7928,10094 8027,10076 8035,10075
 Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17366,12357
@@ -2842,7 +2841,7 @@ Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (B
 Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13239,14461 13295,14521 13266,14541
 Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13295,14521 13362,14593
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40:90 6253,14184
-(Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-172 6209,14245
+(Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-168 6209,14245
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6228,14077 6230,14184 6234,14247 6237,14309
 An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6234,14247 6230,14184 6253,14184
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6253,14184 6230,14184 6228,14077

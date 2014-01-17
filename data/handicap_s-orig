@@ -10,10 +10,14 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2014-01-10 vvv
+#: last_checked: 2014-01-11 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
+# 
+#: next_check_id: NEUEBAHNHOF-2014
+#: last_checked: 2014-01-11
+Neue Bahnhofstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14879,11182 14918,11249
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 14442,11101 14468,11203
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 13332,10832 13305,10789
@@ -105,11 +109,11 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html
 #: osm_watch: way id="197160274" version="1" vvv
-#: last_checked: 2013-12-22 vvv
-#: next_check: 2014-01-19 vvv
+#: last_checked: 2014-01-17 vvv
+#: check_frequency: 60d vvv
 Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676
-Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstein	q3::inwork 8837,11676 9000,11727
-#: next_check ^^^
+Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwork 8837,11676 9000,11727
+#: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
 #: XXX ^^^
@@ -118,7 +122,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, Bordstei
 #: next_check_id ^^^
 # 
 #: XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-01-10
+#: last_checked: 2014-01-16
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -141,10 +145,7 @@ Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13
 #: next_check: 2014-02-28
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
-#: next_check_id: ERNASAMUEL-2014
-#: last_checked: 2013-11-12
-#: next_check: 2014-01-15
-Siemensstr.: Bauarbeiten, Einbahnstraße, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
+# REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2013-11-12 --- #: next_check: 2014-01-15 --- Siemensstr.: Bauarbeiten, Einbahnstraße, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
 # 
 #: last_checked: 2013-12-27 vvv
 #: check_frequency: 60d vvv
@@ -1864,6 +1865,8 @@ Magdeburger Platz: Bordsteine	q3 7393,10809 7414,10804
 (Grünanlage): Bordsteinkante	q1 17183,17385 17006,17473
 Friedlander Str.: Bodenschwelle	q1 20574,4317 20594,4342
 (Paul-Junius-Str. - Alfred-Jung-Str.): Fußgänger	q1 15370,13508 15346,13298
+Hans-Bülow-Str.: Fußgänger	q1 8553,11638 8473,11638
+Berliner Freiheit: Fußgänger	q1 8473,11638 8387,11637
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

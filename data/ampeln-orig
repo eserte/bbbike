@@ -133,11 +133,13 @@
 	X 13335,9019
 	X 13849,9310
 	X 14089,9610
-#: XXX_prog an der Kurve Puschkinallee - Elsenstr. ist auch eine Ampel, zurzeit nicht eingetragen
 	X 14193,9746
+#: XXX_prog diese Ampel ist auch für den Radverkehr in Puschkinalle (Geradeausfahrer) relevant
+	F 14250,9756
 	X 13614,9333
 	X 15261,10738
 	X 14641,10552
+#: XXX_prog Radfahrer aus der Neuen Bahnhofstr. Richtung Norden müssen die Ampel auf der linken Seite benutzen und benötigen typischerweise länger
 	X 14918,11249
 	X 16049,10844
 	X 15639,10469
@@ -1236,6 +1238,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 23435,4179
 	X 25579,5958
 	X 22074,9273
+#: XXX_prog eigentlich zwei leicht versetzte Ampeln, die aber für die Reinickendorfer Str. gleich geschaltet sind; ein Geradeausfahren aus der Schererstr. in die Wiesenstr. ist also nicht möglich
 	X 7948,15802
 	X 9640,-833
 	X 6211,16343
@@ -1448,7 +1451,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4997,17241
 	X 6126,17448
 	X 6380,17836
-	X 6608,16180
+	F 6572,16212
 	F 7403,16575
 	X 7231,16418
 	X 6965,16190
@@ -2400,8 +2403,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: VOSSSTR-2014
 #: note: provisorische Ampel
 #: XXX Siehe auch Baustelle in der Voßstr.
-#: last_checked: 2013-12-22
-#: next_check: 2014-01-19
+#: last_checked: 2014-01-17
+#: check_frequency: 60d
 	X::inwork 9000,11727
 	X 25451,14018
 #: by: ossi vvv
