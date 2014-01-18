@@ -7504,7 +7504,7 @@ sub can_handle_image_suffix {
 	    # real image
 	    if (can_handle_image_suffix('png') && eval {
 		require File::Temp;
-		is_in_path('convert');
+		(is_in_path('convert') || is_in_path('rsvg-convert'))
 	    }) {
 		$can_handle_image{$suffix} = 1;
 	    } else {
@@ -22176,7 +22176,14 @@ sub svg2photo {
     require Tk::PNG;
     my(undef,$tmpfile) = File::Temp::tempfile(SUFFIX => ".png", UNLINK => 1)
 	or die "Can't create temporary file: $!";
-    my @cmd = ("convert", "-geometry", "${w}x${h}", $file, $tmpfile);
+    my @cmd;
+    if (is_in_path_cached('rsvg-convert')) {
+	# rsvg-convert seems to be faster than convert, which is anyway just
+	# delegating to inkscape or rsvg-convert itself
+	@cmd = ('rsvg-convert', '--keep-aspect-ratio', '-w', $w, '-h', $h, '-o', $tmpfile, $file);
+    } else {
+	@cmd = ("convert", "-geometry", "${w}x${h}", $file, $tmpfile);
+    }
     system(@cmd) == 0
 	or die "Error while converting: @cmd, status=$?";
     my $p = $c->Photo(-file => $tmpfile);
