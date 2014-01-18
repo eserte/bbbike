@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.34;
+$VERSION = 1.35;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -21,7 +21,7 @@ use vars qw(@ISA @EXPORT @EXPORT_OK);
 require Exporter;
 @ISA = qw(Exporter);
 
-@EXPORT = qw(is_in_path catfile file_name_is_absolute
+@EXPORT = qw(is_in_path is_in_path_cached catfile file_name_is_absolute
              int_round sqr s2hm s2ms h2hm m2km
 	     pi deg2rad rad2deg schnittwinkel float_prec
 	     cp850_iso iso_cp850 nil
@@ -66,6 +66,17 @@ sub is_in_path {
     undef;
 }
 # REPO END
+
+use vars qw(%is_in_path_cache);
+sub is_in_path_cached {
+    my $prog = shift;
+    if (exists $is_in_path_cache{$prog}) {
+	return $is_in_path_cache{$prog};
+    }
+    my $res = is_in_path($prog);
+    $is_in_path_cache{$prog} = $res;
+    $res;
+}
 
 sub catfile {
     my(@args) = @_;

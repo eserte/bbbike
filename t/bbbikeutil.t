@@ -159,5 +159,15 @@ is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for b
     is $post_cwd, $pre_cwd, "cwd restored (save_pwd2 operation)";
 }
 
+for my $exec (qw(perl sh)) {
+    my $path = BBBikeUtil::is_in_path($exec);
+    if (!$path) {
+	diag "Strange: $exec is not found on this system";
+    }
+    my $cached_path1 = BBBikeUtil::is_in_path_cached($exec);
+    my $cached_path2 = BBBikeUtil::is_in_path_cached($exec);
+    is $cached_path1, $path, "Results of is_in_path and is_in_path_cached do not differ ($exec)";
+    is $cached_path2, $cached_path1, "Same result for subsequent is_in_path_cached calls ($exec)";
+}
 
 __END__
