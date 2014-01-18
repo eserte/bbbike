@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2014-01-11 vvv
+#: last_checked: 2014-01-18 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -255,7 +255,7 @@ Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12792,8190
 #: last_checked ^^^
 # 
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2013-11-22
+#: last_checked: 2014-01-18
 #: next_check: 2014-09-01
 Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
@@ -583,11 +583,14 @@ Helgol‰nder Ufer - Stromstr.: Fuﬂg‰nger, CafÈ	q3 6551,12901 6535,12934 6271,1298
 Helgol‰nder Ufer - Stromstr.: Fuﬂg‰nger	q2 6271,12985 6289,13081 6183,13083
 Bundesratufer: Rampe, Fuﬂg‰nger	q2 6164,12980 6129,12976 6106,12981
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
-(Stadtpark Steglitz): Fuﬂg‰nger	q1 5817,4473 5889,4670 5957,4803 6006,4852
+#: note: dieser Abschnitt ist legal befahrbar
+(Stadtpark Steglitz): Fuﬂg‰nger	q1 5817,4473 5890,4674 5957,4803 6006,4852
 Barsekowstr.: Fuﬂg‰nger	q1 5336,4676 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5589,4617 5656,4621 5709,4674
-#: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html (Freigabe)
-(Stadtpark Steglitz): Fuﬂg‰nger, f¸r Radfahrer freigegeben	q1 5709,4674 5734,4694 5830,4661 5889,4670 6107,4718
+#: XXX_prog Bordstein zur Sedanstr., ansonsten q2
+(Stadtpark Steglitz): Fuﬂg‰nger, Bordstein	q3 5709,4674 5715,4672 5724,4670
+#: note: offiziell wohl nicht legal befahrbar
+(Stadtpark Steglitz): Fuﬂg‰nger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6032,4745 6092,4717 6107,4718
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5589,4617 5582,4675 5555,4743
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5509,4773 5453,4665 5417,4647
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5797,4846 5806,4840 5909,4798 5945,4828 6006,4852
@@ -2079,7 +2082,7 @@ H¸nensteig: Fuﬂg‰nger	q2 6395,5154 6405,5238 6108,5253
 (Gˆtzstr. - Albrechtstr.): Fuﬂg‰nger	q2 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 #: note: ‰hnliche Angaben von Christian (chrispan), nach Mailverkehr mit ihm (Message-Id: <E1EtpOe-0001ZH-IJ@www.radzeit.de>) von q2 auf q4 degradiert:
 #: XXX_prog BS an der Gersdorfstr., ansonsten bleibt es aber bei q4
-(Ringstr. - Gersdorfstr. (Kolonie Marienhˆhe)): Kleingartenanlage, Fuﬂg‰nger (schieben!), tiefe Steinregenabl‰ufe quer zum Weg, Bordstein	q4 7921,4451 7935,4466 8027,4571 8184,4716
+(Ringstr. - Gersdorfstr. (Kolonie Marienhˆhe)): Kleingartenanlage, Fuﬂg‰nger (schieben!), tiefe Steinregenabl‰ufe quer zum Weg, Bordstein	q4 7928,4458 7935,4466 8027,4571 8184,4716
 #: by: ^^^
 #: by: Philipp Kaufmann
 M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20334,16043
@@ -2225,7 +2228,7 @@ Johanna-Stegen-Str.: Fuﬂg‰nger	q2 5557,4523 5479,4568 5397,4611 5371,4609 5316,4
 Vionvillestr.: Fuﬂg‰nger	q2 5557,4523 5589,4617
 Rezonvillestr.: Fuﬂg‰nger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fuﬂg‰nger	q2 5656,4543 5751,4497 5817,4473
-(Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5734,4694 5676,4552 5656,4543
+(Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5734,4694 5724,4670 5676,4552 5656,4543
 Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,4841 5436,4983
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
 (Volkspark Friedrichshain): Skater, Fuﬂg‰nger	q2 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621

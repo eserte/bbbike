@@ -178,8 +178,8 @@ Atzpodienstr.	1 16485,12384 16456,12191 16413,11906
 Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12791,3814 12895,3991 12941,4015 12995,4003 13007,3949 12910,3739
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
-Grazer Platz	1 6430,6787 6529,6798 6668,6815 6793,6814
-Grazer Platz	1 6801,6736 6676,6734 6546,6724 6517,6722 6439,6716
+Grazer Platz	1 6430,6787 6529,6798 6668,6810 6791,6821
+Grazer Platz	1 6798,6755 6675,6740 6546,6724 6517,6722 6439,6716
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (auﬂer Tram)	1 12045,16574 12189,16578 12409,16475
 Triftstr. (Buchholz)	1 12023,23039 12185,23021
@@ -2304,6 +2304,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Dr‰ngelgitter	BNP:3:-71:trailer=10 5715,4672
 Schranke	BNP:2:-170:trailer=4 16541,12071
 Schranke (lichte Breite ca. 120cm)	BNP:2:-127:trailer=4 11973,21385
 Baumstamm als Barriere	BNP:0:-129:trailer=5 -1527,18645
@@ -2574,7 +2575,7 @@ Schranke	BNP:3:-132 6749,15339
 Schranke	BNP:3:-130 6869,15441
 Dr‰ngelgitter	BNP:5:3 24759,11666
 Dr‰ngelgitter	BNP:5:-17 24815,11329
-Dr‰ngelgitter	BNP:5:-136 7935,4466
+Dr‰ngelgitter	BNP:5:-138 7935,4466
 Dr‰ngelgitter (lichte Breite ca. 80cm)	BNP:8:-151:trailer=no 6526,21015
 Dr‰ngelgitter (lichte Breite ca. 80cm)	BNP:8:-139:trailer=no 6548,21041
 Dr‰ngelgitter/Schranke	BNP:5:-180 10012,5210

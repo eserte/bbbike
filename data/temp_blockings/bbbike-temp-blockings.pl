@@ -4486,7 +4486,7 @@ EOF
        text  => 'Riemenschneiderweg zwischen Vorarlberger Damm und Grazer Platz, Baustelle, in beiden Richtungen gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6793,6814 6770,7027 6762,7109
+userdel	2 6791,6821 6770,7027 6762,7109
 EOF
      },
      { from  => 1147816800, # 2006-05-17 00:00
@@ -11626,7 +11626,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008845',
        data  => <<EOF,
-userdel	1::inwork 8496,4331 8618,4187 8605,4138
+userdel	1::inwork 8496,4331 8618,4187 8615,4151
 EOF
      },
      { from  => 1212098400, # 2008-05-30 00:00
@@ -21507,14 +21507,19 @@ EOF
 userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
 EOF
      },
-     { from  => $isodate2epoch->("2013-07-02 00:00:00"),
-       until => $isodate2epoch->("2013-07-07 23:59:59"),
-       text  => 'Flughafen Tempelhof: Sperrung der Zugänge zum Peter-Strasser-Weg wegen einer Veranstaltung (Bread and Butter)',
+     { from  => $isodate2epoch->("2014-01-08 00:00:00"),
+       until => $isodate2epoch->("2014-01-21 23:59:59"),
+       periodic => 1,
+       recurrences => [['yearly', days => 8, months => 1],
+                       ['yearly', days => 1, months => 7]],
+       text  => 'Flughafen Tempelhof: die Nebeneingänge Columbiadamm und Peter-Strasser-Weg sind wegen einer Veranstaltung (Bread and Butter) geschlossen (bis zum 21. Januar 2014)',
        type  => 'gesperrt',
+       source_id => 'http://www.gruen-berlin.de/parks-gaerten/tempelhofer-freiheit/?date=20140118',
        data  => <<EOF,
 userdel	2::temp 9522,7624 9362,7616 9281,7651
 userdel	2::temp 9562,7796 9372,7798 9281,7795
 userdel	2::temp 9281,7795 9281,7651 9300,7312
+userdel	2::temp 10384,8628 10360,8521
 EOF
      },
      { from  => $isodate2epoch->("2014-01-17 18:00:00"), # 1371189600, # 2013-06-14 08:00
@@ -22295,7 +22300,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf',
        data  => <<EOF,
-userdel	q4::inwork 6820,6522 6801,6736 6793,6814 6770,7027 6762,7109
+userdel	q4::inwork 6820,6522 6798,6755 6791,6821 6770,7027 6762,7109
 EOF
      },
      { from  => undef,

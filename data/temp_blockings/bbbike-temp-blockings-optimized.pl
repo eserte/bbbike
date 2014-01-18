@@ -3222,7 +3222,36 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.gruen-berlin.de/parks-gaerten/tempelhofer-freiheit/?date=20140118',
+         'data' => 'userdel	2::temp 9522,7624 9362,7616 9281,7651
+userdel	2::temp 9562,7796 9372,7798 9281,7795
+userdel	2::temp 9281,7795 9281,7651 9300,7312
+userdel	2::temp 10384,8628 10360,8521
+',
+         'periodic' => 1,
+         'until' => 1390345199,
+         'from' => 1389135600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Flughafen Tempelhof: die Nebeneingänge Columbiadamm und Peter-Strasser-Weg sind wegen einer Veranstaltung (Bread and Butter) geschlossen (bis zum 21. Januar 2014)',
+         'id' => 2447,
+         'type' => 'gesperrt'
+       },
        {
          'source_id' => 'IM_021028',
          'until' => 1390122000,
