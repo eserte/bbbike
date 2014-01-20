@@ -22393,4 +22393,21 @@ EOF
 userdel	2::temp 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 EOF
      },
+     { from  => 1390086000, # 2014-01-19 00:00
+       until => 1390309200, # 2014-01-21 14:00
+       text  => 'Glienicker Weg (Adlershof) zwischen Adlergestell und Spindlersfelder Str., sowie angrenzende Straßen: Bombenentschärfung, Straßen vollständig gesperrt, ab 21. Januar 2014 9 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_021122',
+       data  => <<EOF,
+userdel	2::temp 21055,3415 21153,3484 21198,3522 21244,3571 21275,3607 21256,3640 21220,3642
+userdel	2::temp 20833,3519 20906,3433 20967,3343
+userdel	2::temp 21503,3592 21357,3705
+userdel	2::temp 20992,3493 20924,3577
+userdel	2::temp 21153,3484 21119,3572 20992,3493 21055,3415 20967,3343 20927,3292 20832,3170 20772,3244 20717,3310 20644,3395
+userdel	2::temp 21352,3599 21308,3644 21275,3607
+userdel	2::temp 21119,3572 21049,3657
+userdel	2::temp 21324,3691 21308,3644
+userdel	2::temp 20808,3374 20750,3440
+EOF
+     },
     );
