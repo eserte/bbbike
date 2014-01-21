@@ -98,10 +98,8 @@ function any_init(type) {
   } else if (document.all) { // MSIE, Opera
     document.all[type + "above"].style.visibility = 'hidden';
     document.all[type + "below"].style.visibility = 'visible';
-    document.all[type + "above"].style.left
-      = getOffsetLeft(document.all[type + "below"]);
-    document.all[type + "above"].style.top
-      = getOffsetTop(document.all[type + "below"]);
+    // positioning of the above layer happens now in any_highlight, so
+    // it works correctly if the user zooms the page 
     document.all[type + "below"].onmousemove = eval(type + "_highlight");
     document.all[type + "above"].onmouseout = eval(type + "_byebye");
     document.all[type + "above"].onmouseup = eval(type + "_detail");
@@ -167,6 +165,8 @@ function any_highlight(type, Evt) {
 	// pre-IE8
 	above.style.clip = "rect("+y+" "+(x+xgridwidth)+" "+(y+ygridwidth)+" "+x+")";
       }
+      above.style.left = getOffsetLeft(document.all[type + "below"]);
+      above.style.top  = getOffsetTop(document.all[type + "below"]);
     } else {
       above = find_layer(type + "above");
       below = find_layer(type + "below");
@@ -414,6 +414,17 @@ function redirect_to_bbbikeorg(lng, lat) {
     }, function() {
       alert("Die Position " + lng + "," + lat + " wird von bbbike.de und bbbike.org nicht unterstützt.");
     });
+}
+
+// return the screen scale factor used for IE
+// implementation idea from http://stackoverflow.com/questions/15193524/ie-does-not-scale-clicks-on-a-scaled-desktop-when-submitting-web-form-using-inpu
+function get_scale_factor_MSIE10(elem_id) {
+    try {
+        nscalefactor = screen.deviceXDPI / screen.logicalXDPI;
+        find_layer(elem_id).value = nscalefactor;
+    } catch (e) {
+	// fail silently
+    }
 }
 
 // Local variables:

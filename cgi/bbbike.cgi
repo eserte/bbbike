@@ -798,6 +798,7 @@ if (%Apache::) {
 
 use vars qw($xgridwidth $ygridwidth $xgridnr $ygridnr $xm $ym $x0 $y0
 	    $detailwidth $detailheight $nice_berlinmap $nice_abcmap
+	    $need_zoom_hack $hack_scalefactor
 	    $start_bgcolor $via_bgcolor $ziel_bgcolor @pref_keys);
 # Konstanten für die Imagemaps
 # Die Werte (bis auf $ym) werden mit small_berlinmap.pl ausgegeben.
@@ -837,8 +838,9 @@ $detailwidth  = 500; # muß quadratisch sein!
 $detailheight = 500;
 $nice_berlinmap = 0;
 $nice_abcmap    = 0;
+$need_zoom_hack = undef; # will be defined in _zoom_hack_init
 
-$bbbike_start_js_version = '1.24';
+$bbbike_start_js_version = '1.25';
 $bbbike_css_version = '1.02';
 
 use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
@@ -1019,11 +1021,19 @@ if (defined $q->param('api')) {
     my_exit(0);
 }
 
+if ($q->param('_hack_scalefactor')) {
+    $hack_scalefactor = $q->param('_hack_scalefactor');
+    $q->delete('_hack_scalefactor');
+} else {
+    undef $hack_scalefactor;
+}
+
 foreach my $type (qw(start via ziel)) {
     if (defined $q->param($type . "charimg.x") and
 	$q->param($type . "charimg.x") ne ""   and
 	defined $q->param($type . "charimg.y") and
 	$q->param($type . "charimg.y") ne "") {
+	_apply_hack_scalefactor($type . "charimg");
 	my($x, $y) = (int(($q->param($type . "charimg.x")-2)/30),
 		      int(($q->param($type . "charimg.y")-2)/30));
 	my $ch = $x + $y*9 + ord("A");
@@ -1094,6 +1104,7 @@ foreach my $type (qw(start via ziel)) {
 	$q->param($type . "mapimg.x") ne ""   and
 	defined $q->param($type . "mapimg.y") and
 	$q->param($type . "mapimg.y") ne "") {
+	_apply_hack_scalefactor($type . "mapimg");
 	my($x, $y) = (int($q->param($type . 'mapimg.x')/$xgridwidth),
 		      int($q->param($type . 'mapimg.y')/$ygridwidth));
 	$q->param('type', $type);
@@ -1110,6 +1121,7 @@ if (defined $q->param('detailmapx') and
     defined $q->param('detailmap.x') and
     defined $q->param('detailmap.y')
    ) {
+    _apply_hack_scalefactor("detailmap");
     my $c = detailmap_to_coord($q->param('detailmapx'),
 			       $q->param('detailmapy'),
 			       $q->param('detailmap.x'),
@@ -1362,10 +1374,41 @@ function ${type}char_detail(Evt) { return any_detail("${type}char", Evt); }
 // --></script>
 
 EOF
-
     } else {
+	_zoom_hack_init();
 	print "<input type=image name=" . $type
-	  . "charimg src=\"$bbbike_images/abc.gif\" class=\"charmap\" alt=\"A..Z\">";
+	  . "charimg src=\"$bbbike_images/abc.gif\" class=\"charmap\" alt=\"A..Z\"";
+	if ($need_zoom_hack) {
+	    _zoom_hack_onclick_code();
+	}
+	print ">";
+    }
+}
+
+sub _zoom_hack_init {
+    return if defined $need_zoom_hack && !$need_zoom_hack;
+    if ($bi->is_browser_version("MSIE", 8.0, 9999999)) { # mit 8.0 und 10.0 getestet
+	$need_zoom_hack = 1;
+    } else {
+	$need_zoom_hack = 0;
+	return;
+    }
+    print qq{<input type="hidden" id="_hack_scalefactor" name="_hack_scalefactor" value="1">};
+}
+
+sub _zoom_hack_onclick_code {
+    print qq{ onclick="get_scale_factor_MSIE10('_hack_scalefactor'); return true;"};
+}
+
+sub _apply_hack_scalefactor {
+    if ($hack_scalefactor) {
+	my $input_param_prefix = shift;
+	for my $axis ('x', 'y') {
+	    my $input_param = $input_param_prefix . '.' . $axis;
+	    my $val = $q->param($input_param);
+	    $val /= $hack_scalefactor;
+	    $q->param($input_param, $val);
+	}
     }
 }
 
@@ -1532,9 +1575,12 @@ sub choose_form {
 	   ) {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
-	} elsif ($bi->is_browser_version("MSIE", 5.0, 8.999999)) { # mit IE 8 getestet, mit IE 9 und IE 10 (Surface) geht's nicht! (XXX)
+	} elsif ($bi->is_browser_version("MSIE", 5.0, 8.999999)) { # mit IE 8 getestet
 	    $nice_berlinmap = $nice_abcmap = 1;
-	    # png was for long time unsupported by IE
+	    # png was for long time unsupported by IE, so don't set $prefer_png
+	} elsif ($bi->is_browser_version("MSIE", 9.0, 9999999)) { # mit 9.0 und 10.0 getestet, $nice_... geht nicht (versetzte Kacheln), sollte gefixt werden XXX
+	    $nice_berlinmap = $nice_abcmap = 0;
+	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version("Opera", 9.0, 9999999)) { # mit 9.80 getestet
 	    $nice_berlinmap = $nice_abcmap = 0; # the multiple street chooser would work, but cannot be set separately from $nice_berlinmap
 	    $prefer_png = 1;
@@ -2311,8 +2357,13 @@ function $ {type}map_detail(Evt) { return any_detail("${type}map", Evt); }
 // --></script>
 EOF
 		} elsif (!$bi->{'text_browser'} && !$no_berlinmap) {
+		    _zoom_hack_init();
 		    print "<input type=image name=" . $type
-		      . "mapimg src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" class=\"citymap\" style=\"width:${berlin_small_width}px; height:${berlin_small_height}px\" alt=\"\">";
+		      . "mapimg src=\"$bbbike_images/berlin_small$berlin_small_suffix.gif\" class=\"citymap\" style=\"width:${berlin_small_width}px; height:${berlin_small_height}px\" alt=\"\"";
+		    if ($need_zoom_hack) {
+			_zoom_hack_onclick_code();
+		    }
+		    print ">";
 		}
 		print "</td>" if $bi->{'can_table'};
 	    }
@@ -5972,17 +6023,9 @@ sub draw_map {
 
     my $type = $q->param('type') || '';
 
-    my $script = <<EOF;
-function jump_to_map() {
-    window.location.hash = "mapbegin";
-}
-EOF
-
-    # XXX jump_to_map macht Probleme mit Opera und ist nervig mit anderen
-    # Browsern.
-    header(#-script => $script,
-	   #-onLoad => 'jump_to_map()'
-	   -from => 'map',
+    header(-from => 'map',
+	   -script => {-src => $bbbike_html . "/bbbike_start.js?v=$bbbike_start_js_version",
+		      },
 	  );
     if ($lang eq 'en') {
 	print "Choose <b><a name='mapbegin'>" . M(ucfirst($type)) . "</a></b>:<br>\n";
@@ -6020,11 +6063,16 @@ EOF
     if ($x > 0) {
 	print qq{<input type=submit name=movemap_w value="} . M("West") . qq{">};
     }
-    print
-	"</td><td><input type=image title='' name=detailmap ",
+    print "</td><td>";
+    _zoom_hack_init();
+    print "<input type=image title='' name=detailmap ",
 	"src=\"$img_url\" alt=\"\" border=0 ",
-	"align=middle width=$detailwidth height=$detailheight>",
-	"</td>\n";
+	"align=middle width=$detailwidth height=$detailheight";
+    if ($need_zoom_hack) {
+	_zoom_hack_onclick_code();
+    }
+    print ">";
+    print "</td>\n";
     if ($x < $xgridnr-1) {
 	print qq{<td align=left><input type=submit name=movemap_e value="} . M("Ost") . qq{"></td>};
     }
