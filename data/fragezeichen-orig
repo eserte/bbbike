@@ -318,6 +318,12 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: last_checked: 2013-12-26
 #: next_check: 2014-03-15
 Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
+# 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
+#: XXX Realisierung von Radstreifen bis 2015
+#: next_check: 2014-07-22
+Manteuffelstr.: werden Radstreifen markiert?	?::projected 8606,5496 8610,5579 8617,5745 8622,5867 8641,5998 8661,6169 8680,6322 8697,6455 8707,6537 8722,6656 8735,6695
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -627,8 +633,9 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4425
 #: last_checked: 2013-12-20
-#: check_frequency: 60d
+#: check_frequency: 90d
 #: priority: #C
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13860,8599 13898,8613
 # 

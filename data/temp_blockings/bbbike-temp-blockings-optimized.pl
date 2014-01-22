@@ -3416,7 +3416,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2498,
          'data' => '#: XXX Aufhebung der Sperrung aus Witterungsgründen möglich
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: next_check: 2014-01-23
+#: next_check: 2014-02-01
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'
