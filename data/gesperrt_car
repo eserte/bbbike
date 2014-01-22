@@ -475,6 +475,9 @@ Kettinger Str. -> Sandsteinweg: Mittelstreifen	3::igndisp 10228,1194 10329,1231 
 Mariendorfer Damm -> Sandsteinweg: Mittelstreifen	3::igndisp 10276,1383 10329,1231 10440,1283
 Sandsteinweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10440,1283 10329,1231 10379,1097
 Sandsteinweg -> Kettinger Str.: Mittelstreifen	3::igndisp 10440,1283 10329,1231 10228,1194
+Mittelstreifen	3nocross::ignrte 9277,4664 9294,4536 9310,4407
+Mariendorfer Damm -> Königstr.: Mittelstreifen	3::igndisp 9310,4407 9294,4536 9172,4521
+Königstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9172,4521 9294,4536 9277,4664
 Lilienthalstr.: Barriere für Autos	3 10615,8558 10627,8706 10640,8832
 Lilienthalstr.: Barriere für Autos	3 10640,8832 10627,8706 10615,8558
 Mittelstreifen	3nocross::ignrte 23021,13982 22975,13814 22970,13798 22929,13661

@@ -3222,36 +3222,7 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.gruen-berlin.de/parks-gaerten/tempelhofer-freiheit/?date=20140118',
-         'data' => 'userdel	2::temp 9522,7624 9362,7616 9281,7651
-userdel	2::temp 9562,7796 9372,7798 9281,7795
-userdel	2::temp 9281,7795 9281,7651 9300,7312
-userdel	2::temp 10384,8628 10360,8521
-',
-         'periodic' => 1,
-         'until' => 1390345199,
-         'from' => 1389135600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              1
-                            ],
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Flughafen Tempelhof: die Nebeneingänge Columbiadamm und Peter-Strasser-Weg sind wegen einer Veranstaltung (Bread and Butter) geschlossen (bis zum 21. Januar 2014)',
-         'id' => 2447,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3559,24 +3530,6 @@ userdel	2::inwork 2219,11304 2116,11288
                           ],
          'text' => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 9.5.2014 15 Uhr bis 11.5.2014 22 Uhr',
          'id' => 2533,
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_021122',
-         'until' => 1390309200,
-         'text' => 'Glienicker Weg (Adlershof) zwischen Adlergestell und Spindlersfelder Str., sowie angrenzende Straßen: Bombenentschärfung, Straßen vollständig gesperrt, ab 21. Januar 2014 9 Uhr ',
-         'from' => 1390086000,
-         'id' => 2534,
-         'data' => 'userdel	2::temp 21055,3415 21153,3484 21198,3522 21244,3571 21275,3607 21256,3640 21220,3642
-userdel	2::temp 20833,3519 20906,3433 20967,3343
-userdel	2::temp 21503,3592 21357,3705
-userdel	2::temp 20992,3493 20924,3577
-userdel	2::temp 21153,3484 21119,3572 20992,3493 21055,3415 20967,3343 20927,3292 20832,3170 20772,3244 20717,3310 20644,3395
-userdel	2::temp 21352,3599 21308,3644 21275,3607
-userdel	2::temp 21119,3572 21049,3657
-userdel	2::temp 21324,3691 21308,3644
-userdel	2::temp 20808,3374 20750,3440
-',
          'type' => 'gesperrt'
        }
      

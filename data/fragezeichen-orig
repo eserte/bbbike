@@ -131,7 +131,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
-#: osm_watch: way id="4581787" version="5"
+#: osm_watch: way id="4581787" version="6"
 #: last_checked: 2014-01-17
 #: check_frequency: 90d
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
@@ -1097,9 +1097,11 @@ Hildburghauser Str.: Qualität des Asphalts?	? 4806,1360 4897,1346 5056,1321 5223
 Schwarzwurzel-Park: Bordsteine? Qualität? Nachts beleuchtet?	? 20654,18336 20700,18358 20817,18344 20826,18331
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5569
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140121.1245.393675.html
+#: XXX Benennung am 05. Februar 2014
 #: last_checked: 2013-11-17
-#: next_check: 2014-10-01
-Johannes-Fest-Platz: hier wird wahrscheinlich ein Platz benannt	? 18791,8597
+#: next_check: 2014-02-05
+Johannes-Fest-Platz: hier wird ein Platz benannt	? 18791,8597
 # 
 #: XXX Ist das hier die Straße "Am Hechtgraben"? Laut http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5608 wird die Bezeichnung offiziell (Berlin.coords.data!)
 #: XXX http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file?y=2013
@@ -3621,7 +3623,7 @@ Straße 84 (Karow): existiert hier tatsächlich eine Straße?	? 15310,23085 15380,2
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: XXX laut osm ist die Kongostraße mittlerweile asphaltiert - stimmt aber nicht (korrigiert)!
-#: osm_watch: way id="5117259" version="10"
+#: osm_watch: way id="5117259" version="11"
 #: last_checked: 2014-01-17
 #: check_frequency: 90d
 Kongostr.: ist die Kongostr. mittlerweile asphaltiert?	? 6244,16096 6258,16111 6349,16213 6447,16321
