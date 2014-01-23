@@ -1287,7 +1287,7 @@ for my $osm_file (@osm_files) {
 
 		my $oneway = $tag{'oneway'};
 		my $no_oneway_for_cyclists;
-		if ($oneway) {
+		if ($oneway && $highway_cat !~ PROJECTED_RX) {
 		    my $reversed = 1;
 		    # Special case -1, see
 		    # http://wiki.openstreetmap.org/index.php/Key:oneway
