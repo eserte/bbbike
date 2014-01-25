@@ -134,7 +134,7 @@ MainLoop;
 
 sub fill_chooser {
     # clean pane (for the refresh case)
-    $_->destroy for $p->Subwidget('scrolled')->Subwidget("frame")->children;
+    $_->destroy for _get_chooser_frame()->children;
 
     my $last_b;
     for my $bbbike_datadir (sort { $a->{dataset_title} cmp $b->{dataset_title} } @bbbike_datadirs) {
@@ -174,6 +174,11 @@ sub fill_chooser {
     if ($last_b) {
 	create_adjust_geometry_cb($p, $last_b);
     }
+}
+
+# Return the frame which has the city buttons as children
+sub _get_chooser_frame {
+    $p->Subwidget('scrolled')->Subwidget("frame");
 }
 
 sub create_adjust_geometry_cb {
@@ -323,6 +328,39 @@ sub download_city {
     @bbbike_datadirs = find_all_datadirs();
     uniquify_titles();
     fill_chooser();
+    flash_city_button($city);
+}
+
+sub flash_city_button {
+    my $city = shift;
+    for my $b (_get_chooser_frame()->children) {
+	if (eval { $b->cget(-text) eq $city }) {
+	    flash_button($b);
+	    return;
+	}
+    }
+    warn "WARN: bbbike_chooser.pl: cannot find city '$city' in list of buttons.\n";
+}
+
+sub flash_button {
+    my $b = shift;
+    my $orig_bg = $b->cget(-background);
+    my $flash_color = 'red';
+    my $i = 6;
+    my $change_color_cb;
+    $change_color_cb = sub {
+	return if !Tk::Exists($b);
+	$i--;
+	if ($i % 2 == 0) {
+	    $b->configure(-background => $orig_bg);
+	} else {
+	    $b->configure(-background => $flash_color);
+	}
+	if ($i > 0) {
+	    $b->after(200, $change_color_cb);
+	}
+    };
+    $change_color_cb->();
 }
 
 sub usage () {
