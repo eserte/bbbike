@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -78,8 +78,12 @@ if (!$bod) {
     warn "WARN: cannot create BBBikeOrgDownload object, no downloads from bbbike.org possible (error: $@)";
 }
 
+my $debug;
 Getopt::Long::Configure("pass_through");
-GetOptions("rootdir=s" => \$rootdir);
+GetOptions(
+	   "rootdir=s" => \$rootdir,
+	   "debug!" => \$debug,
+	  );
 
 my $mw = tkinit;
 
@@ -124,7 +128,8 @@ $mw->Label(-text => M"Choose city/region:")->pack;
 my $p = $mw->Scrolled("Pane", -sticky => 'nw', -scrollbars => 'ose')->pack(qw(-fill both));
 fill_chooser();
 
-#$mw->WidgetDump;
+$mw->WidgetDump if $debug;
+#$mw->after(1000,sub{warn "do it"; flash_city_button('Ruegen')});
 MainLoop;
 
 sub fill_chooser {
