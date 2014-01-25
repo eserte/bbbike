@@ -562,6 +562,14 @@ for my $osm_file (@osm_files) {
 	    die "The file '$osm_file' is not starting with a <osm> tag, probably not an osm file?"
 		if $reader->name ne 'osm';
 	    $reader->nextElement == 1 or last PARSE;
+	    # Overpass API generated osm files have a <note> element
+	    if ($reader->name eq 'note') {
+		$reader->nextElement == 1 or last PARSE;
+	    }
+	    # ... and a <meta> element
+	    if ($reader->name eq 'meta') {
+		$reader->nextElement == 1 or last PARSE;
+	    }
 	    # $reader stays now on <bounds> or <bound> or the first <node>
 	    if (DO_ASSERTS) {
 		$reader->name =~ m{^(?:bounds|bound|node)}
