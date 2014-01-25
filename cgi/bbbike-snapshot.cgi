@@ -13,6 +13,19 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+use strict;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+use CGI;
+use BBBikeVar;
+
+my $q = CGI->new;
+print $q->redirect($BBBike::BBBIKE_UPDATE_DIST_CGI);
+exit;
+
+# Following the old code doing an on-the-fly archive from the current
+# directory
+
 # Do not use FindBin, because it does not work with Apache::Registry
 (my $target = $0) =~ s{bbbike-snapshot.cgi}{bbbike-data.cgi};
 do $target;

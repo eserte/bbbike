@@ -49,6 +49,7 @@ $BBBIKE_UPDATE_DATA_DIRECT_CGI = "http://bbbike.de/cgi-bin/bbbike-data.cgi";
 $BBBIKE_UPDATE_DATA_CGI = "http://www.bbbike.de/cgi-bin/bbbike-data.cgi";
 $BBBIKE_UPDATE_DIST_DIRECT_CGI = "http://bbbike.de/cgi-bin/bbbike-snapshot.cgi";
 $BBBIKE_UPDATE_DIST_CGI = "http://www.bbbike.de/cgi-bin/bbbike-snapshot.cgi";
+$BBBIKE_UPDATE_GITHUB_ARCHIVE = "https://github.com/eserte/bbbike/archive/master.zip";
 
 # WAP version
 $BBBIKE_WAP	   = 'http://bbbike.de/wap';
