@@ -1293,6 +1293,18 @@ for my $osm_file (@osm_files) {
 		    }
 		}
 
+		if (!$gesperrt_seen) {
+		    my $sac_scale = $tag{'sac_scale'};
+		    if ($sac_scale && $sac_scale ne 'hiking') {
+			push @or, ["gesperrt", '2', name => "sac_scale=$sac_scale"];
+		    } else {
+			my $path = $tag{'path'};
+			if ($path && $path eq 'climbing_access') {
+			    push @or, ["gesperrt", '2', name => "climbing_access"];
+			}
+		    }
+		}
+
 		my $oneway = $tag{'oneway'};
 		my $no_oneway_for_cyclists;
 		if ($oneway && $highway_cat !~ PROJECTED_RX) {
