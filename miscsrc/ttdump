@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: ttdump,v 1.1 2005/04/08 21:49:16 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,6 +18,7 @@ use Getopt::Long;
 
 my $package;
 my $prefix;
+my @orig_ARGV = @ARGV;
 GetOptions("package=s" => \$package,
 	   "prefix=s" => \$prefix,
 	  ) or die "usage!";
@@ -46,6 +46,11 @@ while(my($k,$v) = each %$stash) {
 
 my $out = "";
 $out .= "[% PERL -%]\n";
+$out .= "# DO NOT EDIT. Instead edit the source $mod\n";
+$out .= "# and re-run the following command:\n";
+$out .= "#\n";
+$out .= "#    $^X $0 @orig_ARGV\n";
+$out .= "#\n";
 while(my($k,$v) = each %$vars) {
     my $v_s = Data::Dumper->new([$v],[''])->Useqq(1)->Indent(1)->Dump;
     $v_s =~ s/^.*?=\s*//;
