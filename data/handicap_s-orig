@@ -96,7 +96,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
-#: last_checked: 2013-12-27
+#: last_checked: 2014-01-24
 #: next_check: 2014-04-22
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
@@ -122,7 +122,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 #: XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-01-16
+#: last_checked: 2014-01-24
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -1674,7 +1674,7 @@ Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 (Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q2 12125,12490 12134,12540
 #: XXX_prog BS (ansonsten entfernen)
 #: XXX wurde der Bordstein mittlerweile abgesenkt?
-#: last_checked: 2013-09-16 (nein, zusätzlich noch Engstelle durch Bauarbeiten)
+#: last_checked: 2014-01-25 (nein, zusätzlich noch Engstelle durch Bauarbeiten)
 #: check_frequency: 100d
 Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
 (Hansastr. - Gartenstr.): Fußgänger	q1 15187,16185 15102,16212 14810,16282 14665,16294
