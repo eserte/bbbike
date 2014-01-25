@@ -151,6 +151,7 @@ Vielleicht läuft Merkaartor nicht? Bitte starten!
 Falls JOSM verwendet werden soll:
 Vielleicht läuft JOSM nicht? Bitte starten!
 Vielleicht ist die Fernsteuerung in JOSM nicht aktiviert? Bitte über die Einstellung aktivieren.
+Für ältere JOSM-Version (älter als 3715) muss das RemoteControl-Plugin installiert sein.
 EOF
 	return;
     }
