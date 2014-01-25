@@ -184,7 +184,7 @@ sub _get_chooser_frame {
 sub create_adjust_geometry_cb {
     my($p, $b) = @_;
     my $height = 400; $height = $p->screenheight - 40 if $height > $p->screenheight;
-    $p->after(50, sub { $p->GeometryRequest($b->Width+20, $height) });
+    $p->after(50, sub { $p->GeometryRequest($b->Width+22, $height) });
 }
 
 sub find_all_datadirs {
