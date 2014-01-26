@@ -20,7 +20,23 @@ use CGI;
 use BBBikeVar;
 
 my $q = CGI->new;
-print $q->redirect($BBBike::BBBIKE_UPDATE_DIST_CGI);
+
+{
+    # Don't use RealBin here
+    require FindBin;
+    $FindBin::Bin = $FindBin::Bin if 0; # cease -w
+    my $f = "$FindBin::Bin/Botchecker_BBBike.pm";
+    if (-r $f) {
+	eval {
+	    local $SIG{'__DIE__'};
+	    do $f;
+	    Botchecker_BBBike::run_bbbike_snapshot($q);
+	};
+	warn $@ if $@;
+    }
+}
+
+print $q->redirect($BBBike::BBBIKE_UPDATE_GITHUB_ARCHIVE);
 exit;
 
 # Following the old code doing an on-the-fly archive from the current

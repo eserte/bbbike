@@ -37,11 +37,13 @@ my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
 
+my $snapshot_rootdir_qr = qr{(BBBike-snapshot-\d+|bbbike-master)};
+
 my($tmpfh,$tempfile) = tempfile(UNLINK => 1, SUFFIX => "_cgi-download.t.zip")
     or die $!;
 for my $def (
 	     ['bbbike-data.cgi',     qr{^data/\.modified$}, qr{^data/strassen$}],
-	     ['bbbike-snapshot.cgi', qr{^BBBike-snapshot-\d+/bbbike$}, qr{^BBBike-snapshot-\d+/data/strassen$}],
+	     ['bbbike-snapshot.cgi', qr{^$snapshot_rootdir_qr/bbbike$}, qr{^$snapshot_rootdir_qr/data/strassen$}],
 	    ) {
     my($baseurl, @member_checks) = @$def;
     my $resp = $ua->get("$cgidir/$baseurl", ':content_file' => $tempfile);

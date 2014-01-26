@@ -163,7 +163,11 @@ sub check_url {
 	like($resp->header("content-disposition"), qr{^attachment;\s*filename=bbbike_data.*\.zip$}, "Expected attachment marker");
     } elsif ($url =~ /bbbike-snapshot.cgi/) {
 	is($resp->header('content-type'), "application/zip", "Expected mime-type for bbbike-shapshot.cgi");
-	like($resp->header("content-disposition"), qr{^attachment;\s*filename=bbbike_snapshot_\d+\.zip$}, "Expected attachment marker");
+	like($resp->header("content-disposition"), qr{^attachment;\s*filename=(
+							bbbike_snapshot_\d+\.zip # old bbbike-snapshot.cgi implementation in bbbike-data.cgi
+						      | bbbike-master\.zip       # redirect to github
+						      )$}x, "Expected attachment marker");
+
     }
 }
 
