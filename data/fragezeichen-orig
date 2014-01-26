@@ -387,6 +387,7 @@ Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert
 Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,16203 22696,16208 22631,16215 22495,16165 22131,16000 21951,15918 21709,15808
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3629
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2014
 #: XXX Öffentliche Straßen:
 #: XXX Planstraße A -> Marseillestraße
 #: XXX Planstraße B -> Lyonstraße
@@ -634,7 +635,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4425
-#: last_checked: 2013-12-20
+#: last_checked: 2014-01-25
 #: check_frequency: 90d
 #: priority: #C
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13860,8599 13898,8613
@@ -1001,9 +1002,10 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2012/1213_KOE.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
+#: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straßenbenennung, Vorschlag)
 #: last_checked: 2014-01-04
 #: next_check: 2016-12-01
-Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
+Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
 # REMOVED (laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 (URL existiert nicht mehr) sowie laut http://de.wikipedia.org/wiki/Kanzleramtssteg nicht mehr in Planung) --- Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 # 
@@ -1705,16 +1707,14 @@ An der Hinterkappe (Potsdam): Existiert diese Straße? Ausgeschildert? Qualität?	
 #: XXX in Potsdam-Grube
 Aalsteig (Potsdam): Qualität?	? -19584,4326
 # 
-#: last_checked: 2012-05-28
-#: next_check: 2013-05-15
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2012 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2013 (Grundstücksnummerierungen)
 #: XXX fehlt in Berlin.coords.data: Carpinusweg|Dahlem|14169
-#: XXX Am Hegewinkel entsteht ein neues Wohngebiet, eventuell entsteht diese Straße hier?
-#: osm_watch: way id="192644096" version="1"
-#: XXX ad os_watch: dahlem paradise (mit Carpinusweg?)
-Carpinusweg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 759,5174 858,5085
+#: osm_watch: way id="257541600" version="1"
+#: last_checked: 2012-05-28
+#: next_check: 2014-03-15
+Carpinusweg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 715,5209 715,5129 825,5130 827,5200
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10115978_1771576/bbb8d1f2/ENDFASSUNGAbl.%20PdmStadt%2004_13.pdf
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data
@@ -3131,7 +3131,7 @@ Am Küssel (Potsdam-Grube): Qualität?	? -19233,2251 -19505,2798
 Zum Mühlenteich (Potsdam-Golm): Qualität? Bereits fertig gebaut?	?::inwork -19022,109 -19192,166
 #: XXX PLZ? vvv
 Schwalbenhof (Potsdam-Golm): Qualität?	? -19279,-106 -19186,-132
-Kossätenweg (Potsdam-Golm): Qualität?	? -19247,-20 -18785,-77
+Kossätenweg (Potsdam-Golm) (PLZ=14476): Qualität?	? -19247,-20 -18785,-77
 Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18804,-345 -18785,-247 -18785,-77
 Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18804,-345 -19183,-364
 Falknerstr. (Potsdam-Golm): Qualität?	? -18889,-591 -18889,-641 -18939,-739
