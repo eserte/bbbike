@@ -44,7 +44,7 @@ my $sel = eval {
 if (!$sel || $@) {
     diag <<EOF;
 ERROR: Please remember to start the Selenium server first, e.g.
-java -jar /usr/ports/distfiles/selenium-server-standalone-2.33.0.jar
+java -jar /usr/ports/distfiles/selenium-server-standalone-2.39.0.jar
 
 EOF
     fail $@;
@@ -59,6 +59,11 @@ if ($with_jscover) {
     $sel->select_window_ok('jscoverage_window');
 } else {
     $sel->open_ok("$cgidir/$baseurl", undef, "fetched bbbike+googlemap");
+}
+
+{
+    ## Basic checks
+    $sel->is_element_present_ok('xpath=//*[@id="map"]', 'map element is present');
 }
 
 {
@@ -117,11 +122,8 @@ $sel->click_ok("id=mapmode_search");
 #sleep 60;
 
 {
-    # Workaround the canvas/click issues by calling the javascript
-    # functions for setting start/goal directly
-
-    $sel->get_eval('window.onClick(null, new window.GLatLng(52.5,13.5))'); # XXX v2 vs. v3 gmap api?
-    $sel->get_eval('window.onClick(null, new window.GLatLng(52.5,13.4))');
+    simulate_map_click(52.5,13.5);
+    simulate_map_click(52.5,13.4);
 
     my $hin_street_rx = qr{Markgrafendamm};
     poll(sub { $sel->get_text('id=wpt') =~ $hin_street_rx }, 'Async call to route search');
@@ -144,8 +146,8 @@ $sel->click_ok("id=mapmode_search");
 
 {
     $sel->click_ok("id=mapmode_search");
-    $sel->get_eval('window.onClick(null, new window.GLatLng(52.471557,13.384699))'); # Hoeppnerstr.
-    $sel->get_eval('window.onClick(null, new window.GLatLng(52.471176,13.422007))'); # Kirchhofweg
+    simulate_map_click(52.471557,13.384699); # Hoeppnerstr.
+    simulate_map_click(52.471176,13.422007); # Kirchhofweg
 
     my $street_rx = qr{Tempelhof};
     poll(sub { $sel->get_text('id=wpt') =~ $street_rx }, 'Async call to route search');
@@ -165,8 +167,8 @@ $sel->click_ok("id=mapmode_search");
 
 {
     $sel->click_ok('id=mapmode_addroute');
-    $sel->get_eval('window.onClick(null, new window.GLatLng(52.471557,13.384699))');
-    $sel->get_eval('window.onClick(null, new window.GLatLng(52.471176,13.422007))');
+    simulate_map_click(52.471557,13.384699);
+    simulate_map_click(52.471176,13.422007);
     $sel->click_ok('xpath=//*[.="Route löschen"]');
     $sel->click_ok('xpath=//*[.="Route wiederherstellen"]');
     $sel->click_ok('xpath=//*[.="Letzten Punkt löschen"]');
@@ -191,4 +193,15 @@ sub poll {
 	    diag "$diag, wait max. $timeout s...";
 	}
     }
+}
+
+sub simulate_map_click {
+    my($lat,$lng) = @_;
+    # Workaround the canvas/click issues by calling the javascript
+    # functions for setting start/goal directly
+    #
+    # For some reason, get_eval() does not work here: the complex
+    # argument in the onClick call simply gets transformed into an
+    # empty hash (Selenium 2.39.0). Use run_script() as a workaround.
+    $sel->run_script('window.onClick({latLng: new window.google.maps.LatLng(' . $lat . ',' . $lng . ')})');
 }
