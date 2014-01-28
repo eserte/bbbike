@@ -29,19 +29,27 @@ if (!$doit) {
 
 plan 'no_plan';
 
-# Remember to start the Selenium server first, e.g.
-# java -jar /usr/ports/distfiles/selenium-server-standalone-2.33.0.jar
-
 require Test::WWW::Selenium;
-my $sel = Test::WWW::Selenium->new(
-                                   host => "localhost",
-                                   port => 4444,
-                                   browser => "*firefox",
-                                   browser_url => "$cgidir/",
-                                   default_names => 1,
-                                   #error_callback => sub { die "error_callback NYI / args=@_" },
-                                   auto_stop => !$debug,
-                                  );
+my $sel = eval {
+    Test::WWW::Selenium->new(
+			     host => "localhost",
+			     port => 4444,
+			     browser => "*firefox",
+			     browser_url => "$cgidir/",
+			     default_names => 1,
+			     #error_callback => sub { die "error_callback NYI / args=@_" },
+			     auto_stop => !$debug,
+			    );
+};
+if (!$sel || $@) {
+    diag <<EOF;
+ERROR: Please remember to start the Selenium server first, e.g.
+java -jar /usr/ports/distfiles/selenium-server-standalone-2.33.0.jar
+
+EOF
+    fail $@;
+    exit 1;
+}
 
 if ($with_jscover) {
     $sel->open_ok("http://localhost:8080/jscoverage.html");
