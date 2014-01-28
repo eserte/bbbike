@@ -22,7 +22,7 @@ my $q = CGI->new;
     if (-r $f) {
 	eval {
 	    local $SIG{'__DIE__'};
-	    do $f;
+	    require $f;
 	    Botchecker_BBBike::run_bbbike_snapshot($q);
 	};
 	warn $@ if $@;

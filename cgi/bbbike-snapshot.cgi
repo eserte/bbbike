@@ -29,21 +29,19 @@ my $q = CGI->new;
     if (-r $f) {
 	eval {
 	    local $SIG{'__DIE__'};
-	    do $f;
+	    require $f;
 	    Botchecker_BBBike::run_bbbike_snapshot($q);
 	};
 	warn $@ if $@;
     }
 }
 
-print $q->redirect($BBBike::BBBIKE_UPDATE_GITHUB_ARCHIVE);
-exit;
-
-# Following the old code doing an on-the-fly archive from the current
-# directory
-
-# Do not use FindBin, because it does not work with Apache::Registry
-(my $target = $0) =~ s{bbbike-snapshot.cgi}{bbbike-data.cgi};
-do $target;
+if ($q->param('local')) {
+    # Do not use FindBin, because it does not work with Apache::Registry
+    (my $target = $0) =~ s{bbbike-snapshot.cgi}{bbbike-data.cgi};
+    do $target;
+} else {
+    print $q->redirect($BBBike::BBBIKE_UPDATE_GITHUB_ARCHIVE);
+}
 
 # no __END__ for Apache::Registry
