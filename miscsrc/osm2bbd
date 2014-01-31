@@ -1007,7 +1007,7 @@ for my $osm_file (@osm_files) {
 		    # example for "preserved": Buckower Kleinbahn (Museumsbetrieb)
 		    push @or, ["rbahn", "RG".$addcat];
 		    resolve_node_now('railway', 'rbahnhof', "RG", \@nodes);
-		} elsif ($railway_cat =~ m{^(?:abandoned|disused)$}) {
+		} elsif ($railway_cat =~ m{^(?:abandoned|disused|razed)$}) {
 		    push @or, ["rbahn", "R0".$addcat];
 		    resolve_node_now('railway', 'rbahnhof', "R0", \@nodes);
 		} elsif ($railway_cat =~ CONSTRUCTION_RX) { # ignoring PROJECTED_RX
