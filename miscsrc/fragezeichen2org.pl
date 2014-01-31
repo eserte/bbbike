@@ -387,6 +387,16 @@ if ($with_searches_weight) {
     } grep { (!defined $_->{date} || $_->{date} le $today) && $_->{searches} } @records;
 }
 
+my %monthly_stats;
+{
+    for (@records) {
+	if (defined $_->{date}) {
+	    my($ym) = $_->{date} =~ m{^(\d{4}-\d{2})};
+	    $monthly_stats{$ym}++;
+	}
+    }
+}
+
 binmode STDOUT, ':utf8';
 print "fragezeichen/nextcheck\t\t\t-*- mode:org; coding:utf-8 -*-\n\n";
 
@@ -426,6 +436,13 @@ if (@expired_sort_by_dist_records) {
     print "* expired " . ($with_nextcheckless_records ? "and open " : "") . "records, sort by dist\n";
     for my $expired_record (@expired_sort_by_dist_records) {
 	print $expired_record->{body};
+    }
+}
+
+if (%monthly_stats) {
+    print "* monthly stats\n";
+    for my $date (reverse sort keys %monthly_stats) {
+	print "** $date $monthly_stats{$date}\n";
     }
 }
 
