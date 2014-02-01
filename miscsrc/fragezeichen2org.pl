@@ -391,8 +391,11 @@ my %monthly_stats;
 {
     for (@records) {
 	if (defined $_->{date}) {
-	    my($ym) = $_->{date} =~ m{^(\d{4}-\d{2})};
-	    $monthly_stats{$ym}++;
+	    if (my($ym) = $_->{date} =~ m{^(\d{4}-\d{2})}) {
+		$monthly_stats{$ym}++;
+	    } else {
+		warn "WARN (unexpected): Cannot parse $_->{date}";
+	    }
 	}
     }
 }
