@@ -1128,7 +1128,7 @@ if (@ARGV) {
 # * EmptyMenubar zeichnen
 # * Geometry setzen
 
-use enum qw(:GEOMETRY_ X Y WIDTH HEIGHT);
+use Tk::GeometryCalc qw(crop_geometry parse_geometry_string GEOMETRY_X GEOMETRY_Y GEOMETRY_WIDTH GEOMETRY_HEIGHT);
 
 # Geometry
 set_default_geometry();
@@ -5712,6 +5712,7 @@ sub set_default_geometry {
     } else {
 	@want_extends = (0, 0, $top->screenwidth, $top->screenheight);
     }
+    my @max_extends;
     if ($kde) {
 	@max_extends = $kde->client_window_region();
     } elsif ($os eq 'win') {
@@ -5741,7 +5742,7 @@ sub set_default_geometry {
 	@max_extends = (0, 0, $top->screenwidth-10, $top->screenheight-24);
     }
 
-    crop_geometry(\@want_extends, \@max_extends);
+    crop_geometry($top, \@want_extends, \@max_extends);
 }
 
 
@@ -21516,48 +21517,6 @@ sub set_verbose {
     $Hooks::VERBOSE           = $verbose;
     $FURadar::VERBOSE         = $verbose;
     $PLZ::VERBOSE             = $verbose;
-}
-
-# crops the array in $want_extends to the limits in $extends
-sub crop_geometry {
-    my($want_extends, $extends) = @_;
-
-    # right/bottom limits
-    my $x = $want_extends->[GEOMETRY_X] =~ /^-/ ?
-	$top->screenwidth - $want_extends->[GEOMETRY_WIDTH] + $want_extends->[GEOMETRY_X] :
-	    $want_extends->[GEOMETRY_X];
-    my $y = $want_extends->[GEOMETRY_Y] =~ /^-/ ?
-	$top->screenheight - $want_extends->[GEOMETRY_HEIGHT] + $want_extends->[GEOMETRY_Y] :
-	    $want_extends->[GEOMETRY_Y];
-    my($maxx) = $want_extends->[GEOMETRY_WIDTH] + $x;
-    my($maxy) = $want_extends->[GEOMETRY_HEIGHT] + $y;
-
-    if ($x < $extends->[GEOMETRY_X]) {
-	$want_extends->[GEOMETRY_X] = $extends->[GEOMETRY_X];
-    }
-    if ($y < $extends->[GEOMETRY_Y]) {
-	$want_extends->[GEOMETRY_Y] = $extends->[GEOMETRY_Y];
-    }
-    if ($x + $want_extends->[GEOMETRY_WIDTH] > $extends->[GEOMETRY_WIDTH]) {
-	$want_extends->[GEOMETRY_WIDTH] = $extends->[GEOMETRY_WIDTH] - $x;
-    }
-    if ($y + $want_extends->[GEOMETRY_HEIGHT] > $extends->[GEOMETRY_HEIGHT]) {
-	$want_extends->[GEOMETRY_HEIGHT] = $extends->[GEOMETRY_HEIGHT] - $y;
-    }
-}
-
-sub parse_geometry_string {
-    my $geometry = shift;
-    my @extends = (0, 0, 0, 0);
-    if ($geometry =~ /([-+]?\d+)x([-+]?\d+)/) {
-	$extends[GEOMETRY_WIDTH] = $1;
-	$extends[GEOMETRY_HEIGHT] = $2;
-    }
-    if ($geometry =~ /([-+]\d+)([-+]\d+)/) {
-	$extends[GEOMETRY_X] = $1;
-	$extends[GEOMETRY_Y] = $2;
-    }
-    @extends;
 }
 
 # Alternative way to set geometry.

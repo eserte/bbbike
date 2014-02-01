@@ -243,7 +243,7 @@ use vars qw($steigung_net %steigung_penalty_env $steigung_penalty
 use vars qw(@search_route_points $search_route_flag $in_search
 	    $show_grade);
 use vars qw(%wetter_full $temperature %wind_colors $stderr $stderr_window
-	    $geometry $open_maximized $scaling $visual @max_extends);
+	    $geometry $open_maximized $scaling $visual);
 ### Fonts
 use vars qw(%font @font $font_family $fixed_font_family $font_size $font_weight
 	    $standard_height $use_font_rot $label_font_size
