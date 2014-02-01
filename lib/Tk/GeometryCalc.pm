@@ -37,8 +37,6 @@ sub crop_geometry {
     my $y = $want_extends->[GEOMETRY_Y] =~ /^-/ ?
 	$top->screenheight - $want_extends->[GEOMETRY_HEIGHT] + $want_extends->[GEOMETRY_Y] :
 	    $want_extends->[GEOMETRY_Y];
-    my($maxx) = $want_extends->[GEOMETRY_WIDTH] + $x;
-    my($maxy) = $want_extends->[GEOMETRY_HEIGHT] + $y;
 
     if ($x < $extends->[GEOMETRY_X]) {
 	$want_extends->[GEOMETRY_X] = $extends->[GEOMETRY_X];
