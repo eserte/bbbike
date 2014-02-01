@@ -22048,7 +22048,7 @@ EOF
        data  => <<EOF,
 #: XXX Aufhebung der Sperrung aus Witterungsgründen möglich
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: next_check: 2014-02-01
+#: next_check: 2014-02-15
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
