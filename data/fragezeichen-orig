@@ -149,6 +149,8 @@ Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 76
 # 
 #: XXX Baumaßnahme 3.39 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
+#: XXX evtl. wird erst etwas mit Realisierung des Stadtquartiers "Pankower Tor" entstehen
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3701
 #: osm_watch: way id="144945039" version="4"
 #: last_checked: 2013-10-25 (Richtung Nordosten fertig)
 #: next_check: 2014-01-25
@@ -566,6 +568,11 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: check_frequency: 180d
 Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4693
+#: priority: #C
+#: next_check: 2014-08-01
+Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen angelegt?	?::projected 16395,7401 16406,7430 16412,7463
+# 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4086&options=4 vvv
 #: priority: #C vvv
 Baseler Str./Altdorfer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 3144,2490 3175,2458
@@ -935,7 +942,7 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20091119.1240.146739.html
 Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010): danach hat der Weg eine neue wassergebundene Decke	?::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
 # 
-# REMOVED (realisiert) --- #: osm_watch: way id="180800504" version="1" --- #: last_checked: 2013-10-31 --- #: check_frequency: 60d --- Wilhelm-Hoff-Str.: Qualität	?::inwork 18833,3191 18892,3256 18953,3318 19047,3412 19125,3491
+# REMOVED (realisiert) --- #: osm_watch: way id="180800504" version="1" --- #: last_checked: 2013-10-31 --- #: check_frequency: 60d --- Wilhelm-Hoff-Str.: Qualität	?::inwork 18828,3196 18892,3256 18953,3318 19047,3412 19125,3491
 # REMOVED (realisiert) --- #: osm_watch: way id="180789857" version="1" --- #: last_checked: 2013-06-09 --- #: next_check: 2013-12-31 (synchronize with Wilhelm-Hoff-Str.) --- Verlängerung der Katharina-Boll-Dornberger-Str.: Qualität? Straßenname?	?::inwork 19167,3287 19047,3412
 # REMOVED (realisiert) --- #: osm_watch: way id="142575677" version="3" --- #: last_checked: 2013-10-31 --- #: next_check: 2013-12-15 --- Verlängerung der Hans-Schmidt-Str.: Qualität?	?::inwork 19581,3495 19667,3581
 # REMOVED (realisiert) --- #: osm_watch: way id="91218505" version="3"  --- #: XXX Radwege werden fortgeführt --- #: last_checked: 2013-08-19 --- #: next_check: 2013-11-15 --- Verlängerung der Wagner-Régeny-Str., Igo-Etrich-Str.: Qualität? Wo beginnt und verläuft die Igo-Etrich-Str.?	?::inwork 19363,3730 19162,3935
@@ -1047,6 +1054,15 @@ BAB100	?::inwork 14270,9710 14186,9546 14147,9383 14160,9132 14307,8805 14270,83
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+#
+Wilhelm-Hoff-Str.: geht die Straße hier weiter? Qualität?	? 18828,3196 18710,3087 18601,2971
+# 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3657
+#: next_check: 2014-08-01
+Sültstr.: Wird hier eine Einbahnstraße eingerichtet? Auch für Radfahrer?	? 12295,15953 12347,16039
+# 
+Alt-Friedrichsfelde [Wohngebiet]: Qualität?	? 17744,11703 17742,11633 17890,11621 17939,11655 18144,11643
+Am Tierpark [Wohngebiet]: Qualität?	? 18144,11643 18189,11594 18178,11504 18208,11376 18207,11265 18179,11278
 # 
 Lützowstr.: Vorfahrtsregelung?	? 7963,10716 8070,10680 8199,10634
 # 
@@ -1112,6 +1128,7 @@ Schwarzwurzel-Park: Bordsteine? Qualität? Nachts beleuchtet?	? 20654,18336 20700
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5569
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140121.1245.393675.html
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014
 #: XXX Benennung am 05. Februar 2014
 #: last_checked: 2013-11-17
 #: next_check: 2014-02-05
@@ -1289,9 +1306,10 @@ Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::projected 15747,1288
 Greifenhagener Str.: evtl. wird hier eine Fußgängerzone entstehen	? 11123,15851 11150,15908
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385&date=20140201 (noch nichts passiert)
 #: osm_watch: way id="145485550" version="2"
 #: last_checked: 2013-08-17
-#: check_frequency: 100d
+#: next_check: 2014-08-01
 Alt-Karow: evtl. wird hier ein Schutzstreifen angelegt	? 15726,23475 15637,23251 15547,23024 15529,22981 15428,22736
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453
@@ -3529,6 +3547,7 @@ Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,3410
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2013 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Benennung wird wirksam)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2014 (Grundstücksnummerierungen)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014 (weitere Grundstücksnummerierungen)
 #: XXX Benennung von 7 Privatwegen auf dem Grundstück der KGA "Erpetal" vvv
 #: XXX fehlen alle in Berlin.coords.data, PLZ=12587 vvv
 #: last_checked: 2013-06-22 (Umbenennung nicht durchgeführt) vvv
@@ -3557,6 +3576,27 @@ Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 2442
 #: XXX ^^^
 #: XXX ^^^
 #: by: ^^^
+#: by: ^^^
+#: by: ^^^
+# 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3698 vvv
+#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036596039932/596039932/00059240/40-Anlagen/02/Benennungsabsichtfuer8PrivatwegeinderAnlageNor.pdf vvv
+#: XXX Benennungsabsicht für 8 Privatwege in der Anlage Nordend vvv
+#: XXX ebenso: Lehmweg, siehe strassen-orig vvv
+#: next_check_id: NORDEND-2014 vvv
+#: next_check: 2014-06-01 vvv
+Tonweg: Qualität, Umbenennung?	? 10177,21802 10211,21697
+Buntsteinweg: Qualität, Umbenennung?	? 10111,21667 10211,21697 10269,21718 10328,21737
+Marmorweg: Qualität, Umbenennung? Kann die Dietzgenstr. hier überquert werden?	? 10114,21592 10284,21653 10350,21676 10423,21701 10565,21748 10588,21759
+Granitweg: Qualität, Umbenennung? Kann die Dietzgenstr. hier überquert werden?	? 10118,21510 10313,21574 10379,21597 10593,21676 10751,21725
+Granitweg: Qualität, Umbenennung?	? 10593,21676 10565,21748
+Schiefertonweg: Qualität, Umbenennung?	? 10313,21574 10284,21653 10269,21718 10248,21795
+Zechsteinweg: Qualität, Umbenennung?	? 10379,21597 10350,21676 10328,21737 10319,21774
+Kieselweg: Qualität, Umbenennung?	? 10423,21701 10388,21801
+#: next_check ^^^
+#: next_check_id ^^^
+#: XXX ^^^
+#: XXX ^^^
 #: by: ^^^
 #: by: ^^^
 # 
