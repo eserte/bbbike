@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2004,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2004,2013,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,6 +24,8 @@ use File::Basename;
 use File::Copy qw(cp);
 use File::Path qw(mkpath);
 use Getopt::Long;
+
+use BBBikeUtil qw(is_in_path);
 
 use vars qw($bbbike_version $tmpdir $bbbike_dir);
 use vars qw($bbbike_base $bbbike_archiv
@@ -47,6 +49,9 @@ if (!GetOptions("v" => \$v,
 -fast: do not call the port test script, only call portlint
 ";
 }
+
+chdir $FindBin::RealBin
+    or die "Can't chdir to $FindBin::RealBin: $!";
 
 if (defined $use_version) {
     if ($use_version eq 'last' && $BBBike::STABLE_VERSION =~ m{^(\d+)\.(\d+)}) {
@@ -216,8 +221,19 @@ substitute("pkg-message", "$portdir/pkg-message");
 if ($do_fast) {
     system("cd $tmpdir/BBBike && portlint -a -b -c -t");
 } else {
-    # "port" is part of porttools package
-    system("cd $tmpdir/BBBike && port test");
+    if (!is_in_path("port")) {
+	warn <<EOF;
+WARN: cannot find "port" utility. Please install
+
+    sudo pkg_add -r porttools
+
+and re-run the command.
+EOF
+    }
+    my $cmd = "cd $tmpdir/BBBike && port test";
+    system($cmd);
+    $? == 0
+	or die "The command '$cmd' failed";
     unlink "$tmpdir/BBBike/BBBike-${bbbike_version}.tgz"; # created by "port test"
 }
 system("cd $tmpdir && tar cfvz $tmpdir/bbbike-fbsdport.tar.gz BBBike");
@@ -277,5 +293,6 @@ sub substitute {
     close DEST;
     close SRC;
 }
+
 
 __END__
