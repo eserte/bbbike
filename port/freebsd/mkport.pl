@@ -234,7 +234,19 @@ EOF
     system($cmd);
     $? == 0
 	or die "The command '$cmd' failed";
-    unlink "$tmpdir/BBBike/BBBike-${bbbike_version}.tgz"; # created by "port test"
+
+    # check for and delete package file, created by "port test"
+    chomp(my $pkgfile = `cd $tmpdir/BBBike && make -VPKGFILE`);
+    if (!defined $pkgfile) {
+	warn "WARN: Cannot get PKGFILE from Makefile, cannot delete package file";
+    } else {
+	if (!-e $pkgfile) {
+	    warn "WARN: no package file '$pkgfile' found, but it should be created by 'port test'";
+	} else {
+	    unlink $pkgfile
+		or die "Cannot delete package file '$pkgfile': $!";
+	}
+    }
 }
 system("cd $tmpdir && tar cfvz $tmpdir/bbbike-fbsdport.tar.gz BBBike");
 
