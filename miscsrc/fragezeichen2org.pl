@@ -457,7 +457,12 @@ if (@expired_sort_by_dist_records) {
 }
 
 if (%monthly_stats) {
-    print "* monthly stats\n";
+    print <<'EOF';
+* monthly stats
+  :PROPERTIES:
+  :VISIBILITY: folded
+  :END:
+EOF
     for my $date (reverse sort keys %monthly_stats) {
 	print "** $date $monthly_stats{$date}\n";
     }
