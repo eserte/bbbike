@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: check_nearest,v 1.10 2005/11/17 23:37:03 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2004,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -29,6 +28,7 @@ my $map;
 my $use_orig_map;
 my $as_bbd;
 my $ignore_file;
+my $show_unconsumed_ignore;
 GetOptions("v!" => \$verbose,
 	   "datadir=s" => sub {
 	       my $dir = $_[1];
@@ -42,6 +42,7 @@ GetOptions("v!" => \$verbose,
 	   "useorigmap!" => \$use_orig_map,
 	   "asbbd" => \$as_bbd,
 	   "ignore=s" => \$ignore_file,
+	   "show-unconsumed-ignore" => \$show_unconsumed_ignore,
 	  ) or usage();
 
 usage() if (@ARGV);
@@ -94,6 +95,7 @@ my $kr = new Kreuzungen Hash => $crossings;
 $kr->make_grid;
 
 my $ignore = {};
+my %ignore_consumed;
 if (defined $ignore_file) {
     print STDERR "reading ignore file...\r" if $verbose;
     my $ignore_s = Strassen->new($ignore_file);
@@ -148,7 +150,10 @@ foreach my $c (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
     } else {
 	@outc = @{$c}[0, 1];
     }
-    next if ($ignore->{$outc[0]}{$outc[1]});
+    if ($ignore->{$outc[0]}{$outc[1]}) {
+	$ignore_consumed{$outc[0]}{$outc[1]} = 1;
+	next;
+    }
     my $dist = $c->[2];
     if ($as_bbd) {
 	my $d = $dist > 100 ? 100 : $dist;
@@ -163,6 +168,16 @@ foreach my $c (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
     $i++;
 }
 print STDERR "\n" if $verbose;
+
+if ($show_unconsumed_ignore) {
+    while(my($k,$v) = each %$ignore) {
+	while(my($k2,$v2) = each %$v) {
+	    if (!$ignore_consumed{$k}{$k2} && !$ignore_consumed{$k2}{$k}) {
+		print STDERR "UNCONSUMED: $k $k2\n";
+	    }
+	}
+    }
+}
 
 __END__
 

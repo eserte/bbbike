@@ -1846,6 +1846,18 @@ ${PERSISTENTTMPDIR}/check_nearest.bbd:	strassen landstrassen landstrassen2 frage
 		> $@~
 	mv $@~ $@
 
+check-nearest-ignore-show-unconsumed:
+	${PERL} ${MISCSRCDIR}/check_nearest -ignore check_nearest_ignore \
+		-asbbd \
+		-strfile strassen \
+		-strfile landstrassen \
+		-strfile landstrassen2 \
+		-strfile fragezeichen \
+		-strfile brunnels \
+		-strfile faehren \
+		-show-unconsumed-ignore \
+		> /dev/null
+
 do-check-nearest:	.check-do-check-nearest
 
 .check-do-check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd
