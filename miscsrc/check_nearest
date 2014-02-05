@@ -29,6 +29,7 @@ my $use_orig_map;
 my $as_bbd;
 my $ignore_file;
 my $show_unconsumed_ignore;
+my $remove_unconsumed_ignore;
 GetOptions("v!" => \$verbose,
 	   "datadir=s" => sub {
 	       my $dir = $_[1];
@@ -43,6 +44,7 @@ GetOptions("v!" => \$verbose,
 	   "asbbd" => \$as_bbd,
 	   "ignore=s" => \$ignore_file,
 	   "show-unconsumed-ignore" => \$show_unconsumed_ignore,
+	   "remove-unconsumed-ignore" => \$remove_unconsumed_ignore,
 	  ) or usage();
 
 usage() if (@ARGV);
@@ -169,13 +171,52 @@ foreach my $c (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
 }
 print STDERR "\n" if $verbose;
 
-if ($show_unconsumed_ignore) {
-    while(my($k,$v) = each %$ignore) {
-	while(my($k2,$v2) = each %$v) {
-	    if (!$ignore_consumed{$k}{$k2} && !$ignore_consumed{$k2}{$k}) {
-		print STDERR "UNCONSUMED: $k $k2\n";
+{
+    my %ignore_unconsumed;
+    if ($show_unconsumed_ignore || $remove_unconsumed_ignore) {
+	while(my($k,$v) = each %$ignore) {
+	    while(my($k2,$v2) = each %$v) {
+		if (!$ignore_consumed{$k}{$k2} && !$ignore_consumed{$k2}{$k}) {
+		    print STDERR "UNCONSUMED: $k $k2\n";
+		    $ignore_unconsumed{$k}{$k2} = 1;
+		}
 	    }
 	}
+    }
+    if ($remove_unconsumed_ignore && keys %ignore_unconsumed) {
+	if (!defined $ignore_file) {
+	    die "-remove-unconsumed-ignore must operate on an 'ignore' file";
+	}
+	open my $fh, "<", $ignore_file
+	    or die "Can't open $ignore_file: $!";
+	open my $ofh, ">", "$ignore_file~"
+	    or die "Can't write to $ignore_file~: $!";
+	while(<$fh>) {
+	    if (/^#/ || /^$/) {
+		# pass
+	    } else {
+		my $r = Strassen::parse($_);
+		if (!$r) {
+		    # pass
+		} else {
+		    my @c = @{ $r->[Strassen::COORDS] };
+		    if (
+			$ignore_unconsumed{$c[0]}{$c[1]} ||
+			$ignore_unconsumed{$c[1]}{$c[0]}
+		       ) {
+			# ignore
+			next;
+		    } else {
+			# pass
+		    }
+		}
+	    }
+	    print $ofh $_;
+	}
+	close $ofh
+	    or die "Error while writing to $ignore_file~: $!";
+	rename "$ignore_file~", $ignore_file
+	    or die "Can't rename $ignore_file~ to $ignore_file: $!";
     }
 }
 
@@ -189,7 +230,8 @@ check_nearest - return list of nearest non-connected neighbors
 
     perl check_nearest [-useorigmap] [-map mapname] [-maxdist distance]
                        [-datadir directory] [-strfile bbdfile [-strfile ...]]
-		       [-asbbd] [-ignore ignorefile] [-v] 
+		       [-asbbd] [-ignore ignorefile] [-v]
+		       [-show-unconsumed-ignore] [-remove-unconsumed-ignore]
 
 =head1 DESCRIPTION
 
@@ -240,6 +282,15 @@ Output as a bbd stream.
 =item -ignore bbdfile
 
 Ignore the coordinate pairs listet in bbdfile.
+
+=item -show-unconsumed-ignore
+
+Show list of unconsumed coordinate pairs in the given C<-ignore> file.
+
+=item -remove-unconsumed-ignore
+
+Show and remove unconsumed coordinate pairs in the given C<-ignore>
+file.
 
 =back
 
