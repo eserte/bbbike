@@ -84,7 +84,7 @@ if (grep { /data_corrected/ } @files) {
 	= "b_de_corrected";
 }
 
-my $s1 = MultiStrassen->new(map { Strassen->new($_, UseLocalDirectives => 1) } @gpsfile);
+my $s1 = MultiStrassen->new(map { Strassen->new($_, UseLocalDirectives => 1, PreserveTime => 1) } @gpsfile);
 my $s2 = MultiStrassen->new(@files);
 
 if (!$gridwidth) {
