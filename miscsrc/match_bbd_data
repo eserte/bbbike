@@ -2,15 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: match_bbd_data,v 1.22 2008/08/22 18:03:37 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2010,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
-# WWW:  http://www.rezic.de/eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
 #
 
 # Match a bbd file against other bbd files.
@@ -85,7 +84,7 @@ if (grep { /data_corrected/ } @files) {
 	= "b_de_corrected";
 }
 
-my $s1 = MultiStrassen->new(@gpsfile);
+my $s1 = MultiStrassen->new(map { Strassen->new($_, UseLocalDirectives => 1) } @gpsfile);
 my $s2 = MultiStrassen->new(@files);
 
 if (!$gridwidth) {
@@ -133,6 +132,7 @@ my $tp = eval {
     $tp;
 };
     
+my $out_s = Strassen->new;
 while(1) {
     if ($tp) {
 	print STDERR $tp->report(undef, $iter++);
@@ -143,6 +143,7 @@ while(1) {
     my $coords = $r->[Strassen::COORDS];
     last if !@$coords;
     next unless $r->[Strassen::CAT] =~ /$incat_rx/;
+    my $directives = $s1->get_directives;
     my $last_nearest_point;
     my @out_recs;
  COORDS_LOOP:
@@ -295,15 +296,16 @@ while(1) {
 		}
 		my $key = "$r->[Strassen::NAME]/@$coords";
 		if (!$seen{$key}) {
-		    push @out_recs, ["$r->[Strassen::NAME]/$near->[$inx]{StreetObj}[Strassen::NAME]", $outcat, $coords];
+		    push @out_recs, ["$r->[Strassen::NAME]/$near->[$inx]{StreetObj}[Strassen::NAME]", $outcat, $coords, $directives];
 		    $seen{$key}++;
 		}
 	    }
 	}
     }
+
     for my $i (0 .. $#out_recs) {
 	my $out_rec = $out_recs[$i];
-	my($name,$cat,$coords) = @$out_rec;
+	my($name,$cat,$coords,$directives) = @$out_rec;
 	if ($autoconnect_net && $i >= 1) {
 	    my $last_coord = $out_recs[$i-1][2][-1];
 	    my $this_coord = $out_recs[$i][2][0];
@@ -311,14 +313,15 @@ while(1) {
 		if (Strassen::Util::strecke_s($last_coord, $this_coord) < 200) { # XXX don't hardcode, or introduce constant
 		    my $res = Strassen::SimpleSearch::simple_search($autoconnect_net, $last_coord, [$this_coord]);
 		    if ($res) {
-			print "\t$cat @{$res->{route}}\n";
+			$out_s->push_ext([$name, $res->{route}, $cat], $directives);
 		    }
 		}
 	    }
 	}
-	print "$name\t$cat @$coords\n";
+	$out_s->push_ext([$name, $coords, $cat], $directives);
     }
 }
+print $out_s->as_string;
 
 printf STDERR "\nReady\n" if $v;
 
