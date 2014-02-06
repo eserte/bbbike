@@ -39,7 +39,7 @@ sub load_from_string_and_check ($$);
 
 my $tests_with_data = 7; # in my private directory
 my $test_do_all = 1;
-my $tests = $tests_with_data + $test_do_all + 39;
+my $tests = $tests_with_data + $test_do_all + 43;
 plan tests => $tests + $have_nowarnings;
 
 my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
@@ -189,6 +189,30 @@ EOF
 	 "A2 (ALT STRALAU MARKGRAFENDAMM)\tX 14548,10215\n",
 	 "A3 (ELSEN KIEFHOLZ)\tX 13852,9335\n"
 	], 'wpt data with PositionFormat change and UTM/UPS usage';
+}
+
+{
+    my $sample = <<'EOF';
+% Written by GPS::GpsmanConn/1.13 Sun Jun 19 13:19:04 2005
+
+!Format: DMS 1 WGS 84
+
+!T:	ACTIVE LOG	srt:vehicle=bike	srt:brand=Maxcycles
+	18-Jun-2005 07:03:00	N52 30 28.1	E13 27 53.0	33.783447265625
+	18-Jun-2005 07:03:12	N52 30 27.8	E13 27 54.6	34.744873046875
+	18-Jun-2005 07:03:39	N52 30 27.6	E13 27 55.9	33.783447265625
+	18-Jun-2005 07:04:00	N52 30 25.9	E13 28 02.6	33.783447265625
+EOF
+    my $s = Strassen::Gpsman->new_from_string($sample, PreserveTime => 1 );
+    is_deeply $s->data,
+	[
+	 "ACTIVE LOG\tX 14534,11418 14565,11409\n",
+	 "ACTIVE LOG\tX 14565,11409 14590,11404\n",
+	 "ACTIVE LOG\tX 14590,11404 14717,11353\n",
+	];
+    is_deeply $s->get_directives(0), { time => [1119074580] };
+    is_deeply $s->get_directives(1), { time => [1119074592] };
+    is_deeply $s->get_directives(2), { time => [1119074619] };
 }
 
 # 9 tests

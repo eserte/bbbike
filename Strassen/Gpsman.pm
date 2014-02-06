@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 2004,2012 Slaven Rezic. All rights reserved.
+# Copyright (c) 2004,2012,2014 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -61,6 +61,8 @@ sub new_from_string {
 sub _read_gpsman {
     my($self, $gpsman, %args) = @_;
 
+    my $preserve_time = delete $args{PreserveTime};
+
     # Options for this? XXX
     my $in_map = $Karte::Polar::obj = $Karte::Polar::obj;
     my $out_map = $Karte::Standard::obj = $Karte::Standard::obj;
@@ -89,22 +91,29 @@ sub _read_gpsman {
 	} elsif ($chunk->Type eq GPS::GpsmanData::TYPE_GROUP()) {
 	    # ignore this chunk
 	} else {
-	    my @coords;
-	    for my $wpt (@{ $chunk->Track }) {
-		push @coords, $convert_coordinates->($wpt);
-	    }
-	    if (@coords) {
+	    my @wpts = @{ $chunk->Track };
+	    if (@wpts) {
 		my $name = $args{name} || $chunk->Name;
 		if (   defined $name
-		    && $name =~ /^ACTIVE LOG(?:\s+\d+)?$/i # see Pod for "ACTIVE LOG" handling
-		    && $args{fallbackname}
+		       && $name =~ /^ACTIVE LOG(?:\s+\d+)?$/i # see Pod for "ACTIVE LOG" handling
+		       && $args{fallbackname}
 		   ) {
 		    $name = $args{fallbackname};
 		}
 		if (!defined $name) {
 		    $name = "";
 		}
-		$self->push([$name, \@coords, $cat]);
+
+		my @coords = map { $convert_coordinates->($_) } @wpts;
+		if ($preserve_time) {
+		    for my $i (0 .. $#coords-1) {
+			my $wpt = $wpts[$i];
+			my $epoch = $wpt->Comment_to_unixtime($chunk);
+			$self->push_ext([$name, [$coords[$i], $coords[$i+1]], $cat], { time => [ $epoch ] });
+		    }
+		} else {
+		    $self->push([$name, \@coords, $cat]);
+		}
 	    }
 	}
     }
@@ -155,16 +164,36 @@ track attributes, e.g. different srt:vehicle values). If the option
 C<< -fallbackname => ... >> is supplied to the constructur, then
 "ACTIVE LOG" and "ACTIVE LOG <number>" are replaced by this value.
 
+=head1 OPTIONS
+
+=over
+
+=item C<< PreserveTime => 1 >>
+
+Time in the GPS track is preserved by creating C<< time >> directives
+(which is in seconds since Unix epoch). The track is split into pairs
+of coordinates.
+
+An example to convert a GPSman track into a bbd file with C<< time >>
+directives:
+
+    cd .../bbbike
+    perl -Ilib -MStrassen::Core -e '$f=shift; $s = Strassen->new($f,PreserveTime=>1); print $s->as_string' /path/to/gpsman.trk > /path/to/result.bbd
+
+=back
+
 =head1 AUTHOR
 
 Slaven Rezic <eserte@users.sourceforge.net>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2004 Slaven Rezic. All rights reserved.
+Copyright (c) 2004,2012,2014 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 
 =head1 SEE ALSO
 
-L<Strassen::Core>.
+L<Strassen::Core>, L<gpsman(1)>.
+
+=cut
