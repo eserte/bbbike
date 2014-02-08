@@ -3461,10 +3461,13 @@ userdel	2::inwork 10086,12725 10166,12777
        {
          'source_id' => 'IM_020820',
          'until' => 1401458400,
-         'text' => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Straße gesperrt, 02.12.2013 bis Ende Mai 2014',
+         'text' => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Fahrbahn gesperrt, Fußgänger und Radfahrer können passieren, 02.12.2013 bis Ende Mai 2014',
          'from' => 1385766000,
          'id' => 2527,
-         'data' => '#: add_fragezeichen: Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?
+         'data' => '#: next_check_id: ZIMMERMANNSTRBR-2014
+#: last_checked: 2014-02-08
+#: next_check: 2014-05-31
+# REMOVED (ja) --- #: add_fragezeichen: Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 ',
          'type' => 'gesperrt'

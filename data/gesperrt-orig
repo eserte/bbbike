@@ -1028,7 +1028,7 @@ Straßburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
 #XXX --- hmmm kann doch keine Einbahnstraßenregelung hier erkennen --- Waldowallee	1 18878,9517 18901,9499 18916,9468
 Waldowallee	1 18916,9468 18867,9464
-Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18229,11256
+Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18200,11269 18229,11256
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
@@ -1441,7 +1441,7 @@ Rudower Chaussee: Mittelstreifen	3nocross 16135,2135 16028,2261 15980,2318
 Rudower Chaussee: Mittelstreifen	3 19498,3054 19475,3074 19426,3024
 Sterndamm: Straßenbahntrasse	3nocross 17601,5090 17542,4772 17520,4649
 Sterndamm: Straßenbahntrasse	3nocross 17648,5338 17601,5090 17542,4772
-Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21960,11269 22242,11269 22326,11266
+Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21954,11269 22242,11269 22326,11266
 # REMOVED (es existiert ein offizieller Radweg auf der linken Seite) --- Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2975,15813 2960,15847 2944,15880
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2944,15880 2913,15944 2819,16141
@@ -2321,7 +2321,7 @@ Drängelgitter kann ohne Absteigen passiert werden	BNP:2 1388,3197
 Barriere für Autofahrer	BNP:2 17301,7645
 #: by: Niels Weber
 Drängelgitter	BNP:5 11010,-378
-Drängelgitter	BNP:5 22280,11284
+Drängelgitter	BNP:5 22268,11285
 #: by: rjoop vvv
 #: confirmed_by: srt vvv
 Drängelgitter	BNP:5 -7228,15504
@@ -2455,6 +2455,12 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: ZIMMERMANNSTRBR-2014
+#: last_checked: 2014-02-08
+#: next_check: 2014-05-31
+#: priority: #A
+Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
 # 
 #: XXX wird hier eine wassergebundene Decke sein? handicap?
 #: last_checked: 2014-01-04

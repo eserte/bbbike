@@ -15920,7 +15920,7 @@ EOF
        type  => 'handicap',
        # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20090813.1105.134956.html',
        data  => <<EOF,
-userdel	q4::inwork 17746,11748 17744,11703 17741,11607
+userdel	q4::inwork 17746,11748 17744,11703 17742,11636 17741,11607
 EOF
      },
      { from  => 1252228140, # 2009-09-06 11:09
@@ -16202,7 +16202,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014203',
        data  => <<EOF,
-userdel	q4::inwork; 18226,13506 18382,13492 18783,13469 18875,13467 19059,13474 19173,13478
+userdel	q4::inwork; 18226,13506 18382,13492 18783,13469 18875,13467 19059,13479 19171,13486
 EOF
      },
      { from  => undef, # 
@@ -18459,7 +18459,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016343',
        data  => <<EOF,
-userdel	q3::inwork 21027,7432 21032,7590 21037,7751
+userdel	q3::inwork 21027,7432 21029,7485 21032,7590 21037,7751
 EOF
      },
      { from  => 1288905888, # 2010-11-04 22:24
@@ -22327,11 +22327,14 @@ EOF
      },
      { from  => 1385766000, # 2013-11-30 00:00
        until => 1401458400, # 2014-05-30 16:00
-       text  => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Straße gesperrt, 02.12.2013 bis Ende Mai 2014',
+       text  => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Fahrbahn gesperrt, Fußgänger und Radfahrer können passieren, 02.12.2013 bis Ende Mai 2014',
        type  => 'gesperrt',
        source_id => 'IM_020820',
        data  => <<EOF,
-#: add_fragezeichen: Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?
+#: next_check_id: ZIMMERMANNSTRBR-2014
+#: last_checked: 2014-02-08
+#: next_check: 2014-05-31
+# REMOVED (ja) --- #: add_fragezeichen: Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 EOF
      },

@@ -752,7 +752,7 @@ Küsterstr.	1 -624,15494 -593,15300 -569,15167
 Straßburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
 Waldowallee	1 18916,9468 18867,9464
-Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18229,11256
+Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18200,11269 18229,11256
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
@@ -1313,10 +1313,10 @@ Staudenweg -> Pietschkerstr.: Straßenbahntrasse	3::igndisp 17493,5112 17601,5090
 Sterndamm -> Staudenweg: Straßenbahntrasse	3::igndisp 17542,4772 17601,5090 17493,5112
 Pietschkerstr. -> Staudenweg: Straßenbahntrasse	3::igndisp 17652,5082 17601,5090 17493,5112
 Pietschkerstr. -> Sterndamm: Straßenbahntrasse	3::igndisp 17652,5082 17601,5090 17542,4772
-unbequemes Passieren des Mittelstreifens	3nocross::ignrte 21960,11269 22242,11269 22326,11266
-Alt-Biesdorf -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 21960,11269 22242,11269 22244,11311
-Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22238,11223 22242,11269 21960,11269
+unbequemes Passieren des Mittelstreifens	3nocross::ignrte 21954,11269 22242,11269 22326,11266
+Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22238,11223 22242,11269 21954,11269
 Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22238,11223 22242,11269 22244,11311
+Alt-Biesdorf -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 21954,11269 22242,11269 22244,11311
 Alt-Biesdorf -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22326,11266 22242,11269 22238,11223
 Wuhlewanderweg -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22244,11311 22242,11269 22238,11223
 Wuhlewanderweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22244,11311 22242,11269 22326,11266
@@ -2555,7 +2555,7 @@ Drängelgitter	BNP:3:7:trailer=5 22061,15168
 Drängelgitter kann ohne Absteigen passiert werden	BNP:2:-199 1388,3197
 Barriere für Autofahrer	BNP:2:-2 17301,7645
 Drängelgitter	BNP:5:72 11010,-378
-Drängelgitter	BNP:5:-53 22280,11284
+Drängelgitter	BNP:5:-42 22268,11285
 Drängelgitter	BNP:5:66 -7228,15504
 Drängelgitter	BNP:5:-249 -7182,15524
 Drängelgitter und Schranke	BNP:5:-154:trailer=15 14285,12190
@@ -2647,6 +2647,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
 Wilhelm-Hoff-Str.: Weg noch nicht fertig	2::inwork 19033,3397 19057,3422
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s 10077,13100 10018,13299
 Am Zirkus: Einbahnstraße	1s 9118,13070 9137,13032 9167,13046 9239,12923

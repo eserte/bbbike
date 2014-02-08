@@ -697,7 +697,7 @@ Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,1191
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2013-10-19
+#: last_checked: 2014-02-08
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
@@ -1055,14 +1055,19 @@ BAB100	?::inwork 14270,9710 14186,9546 14147,9383 14160,9132 14307,8805 14270,83
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+zum Unfallkrankenhaus Berlin: Qualität wahrscheinlich Verbundsteinpflaster, q1 wegen Fußgängern, Beleuchtung?	? 21400,12135 21403,12230 21429,12393 21476,12590 21494,12617 21530,12778
+# 
+#: XXX_indoor: Ausschilderung nach comments_misc/path? Oder ist es zu verwirrend, weil später ein weiteres Schild Richtung Norden zeigt?
+Ausgeschildert "Unfallkrankenhaus Berlin"	? 21930,12185 21608,12320
+# 
+#: XXX_indoor: soll ich diese Verbindung mit aufnehmen? Wie soll die Straßenbezeichnung aussehen?
+Alt-Friedrichsfelde/Am Tierpark - Wohngebiet: Gehweg/flache breite Rampe, abgesenkte Bordsteine	? 18158,11631 18216,11656
+# 
 Wilhelm-Hoff-Str.: geht die Straße hier weiter? Qualität?	? 18828,3196 18710,3087 18601,2971
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3657
 #: next_check: 2014-08-01
 Sültstr.: Wird hier eine Einbahnstraße eingerichtet? Auch für Radfahrer?	? 12295,15953 12347,16039
-# 
-Alt-Friedrichsfelde [Wohngebiet]: Qualität?	? 17744,11703 17742,11633 17890,11621 17939,11655 18144,11643
-Am Tierpark [Wohngebiet]: Qualität?	? 18144,11643 18189,11594 18178,11504 18208,11376 18207,11265 18179,11278
 # 
 Lützowstr.: Vorfahrtsregelung?	? 7963,10716 8070,10680 8199,10634
 # 
@@ -1100,8 +1105,9 @@ Neubaugebiet am Dahlemer Weg: entstehen hier neue Straßen oder werden bestehende
 # REMOVED (realisiert) --- #: last_checked: 2013-10-29 (Kreidemarkierungen zu sehen) --- #: next_check: 2014-11-29 --- Seddiner Str.: anscheinend werden hier Radspuren markiert? Was passiert mit der vorhandenen Busspur?	? 18559,12105 18408,12105 18296,12115 18215,12123
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2014 (Nummerierungen, evtl. hier)
-#: last_checked: 2013-10-29
-#: next_check: 2014-03-29
+#: XXX nördlich hiervon werden weitere Häuser entstehen
+#: last_checked: 2014-02-08
+#: next_check: 2014-05-08
 Beilsteiner Str.: wird es hier für das neue Wohngebiet eine Erschließungsstraße geben?	? 18737,12753 18706,12488
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
@@ -1127,13 +1133,7 @@ Hildburghauser Str.: Qualität des Asphalts?	? 4806,1360 4897,1346 5056,1321 5223
 # 
 Schwarzwurzel-Park: Bordsteine? Qualität? Nachts beleuchtet?	? 20654,18336 20700,18358 20817,18344 20826,18331
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5569
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140121.1245.393675.html
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014
-#: XXX Benennung am 05. Februar 2014
-#: last_checked: 2013-11-17
-#: next_check: 2014-02-05
-Johannes-Fest-Platz: hier wird ein Platz benannt	? 18791,8597 18846,8616
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5569 --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140121.1245.393675.html --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014 --- #: XXX Benennung am 05. Februar 2014 --- #: last_checked: 2013-11-17 --- #: next_check: 2014-02-05 --- Johannes-Fest-Platz: hier wird ein Platz benannt	? 18791,8597 18846,8616
 # 
 #: XXX Ist das hier die Straße "Am Hechtgraben"? Laut http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5608 wird die Bezeichnung offiziell (Berlin.coords.data!)
 #: XXX http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file?y=2013
@@ -1754,8 +1754,8 @@ Freesienweg: geplante Straße, wo wird sie genau liegen? Qualität?	?::projected 1
 #: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
-#: last_checked: 2013-12-20 vvv
-#: next_check: 2014-03-29 vvv
+#: last_checked: 2014-02-08 vvv
+#: next_check: 2014-05-08 vvv
 Alzeyweg: genaue Lage? Qualität? PLZ=10365	? 17376,12422 17366,12357 17365,12301
 #: XXX Eintrag in str_cont_ausnahme fehlt
 Nibelungenring: genaue Lage? Qualität? PLZ=10365	? 17474,12344 17484,12405 17432,12413 17376,12422 17337,12428

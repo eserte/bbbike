@@ -16,7 +16,7 @@ Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,1
 #: last_checked ^^^
 # 
 #: next_check_id: NEUEBAHNHOF-2014
-#: last_checked: 2014-01-11
+#: last_checked: 2014-02-08
 Neue Bahnhofstr.: Einbahnstraﬂe wegen Bauarbeiten	q3::inwork; 14879,11182 14918,11249
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 14442,11101 14468,11203
@@ -278,7 +278,7 @@ Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12
 ######################################################################
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
-#: last_checked: 2013-08-21 vvv
+#: last_checked: 2014-02-08 vvv
 #: check_frequency: 300d vvv
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
@@ -398,7 +398,7 @@ Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 1545
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
 Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10240,15318 10192,15465 10185,15487 10130,15647
-(Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12160 21930,12185 21608,12320 21346,12427 21265,12468 21221,12484
+(Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21429,12393 21346,12427 21265,12468 21221,12484
 (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14798,10985 14787,10972 14764,10877 14794,10844
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9892,9286 9880,9233
 #: note: zumindest auf der westlichen Seite existiert kein explizites Verbotsschild f¸r Radfahrer
@@ -684,8 +684,8 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 (Kolonie Friedrichsfelde Nord, entlang der Fernw‰rmeleitung): Fuﬂg‰nger	q1 17785,12257 17832,12244 18135,12246 18142,12260 18180,12262 18216,12262
 #: XXX wird es hier eine Verbesserung geben?
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651
-#: last_checked: 2013-12-20
-#: next_check: 2014-06-01
+#: last_checked: 2014-02-08
+#: next_check: 2014-06-08
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur f¸r Fuﬂg‰nger erlaubt	q4 12699,5909 13064,5953
@@ -760,13 +760,14 @@ Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 225
 Wuhlewanderweg: Fuﬂg‰nger	q1 22441,15118 22573,15043 22741,14761 22806,14631 22836,14520 22843,14452 22827,14356 22839,14149 22825,14109 22607,13890 22516,13799 22359,13599 22295,13530
 Wuhlewanderweg: enge Unterf¸hrung	q3 22359,13599 22259,13508
 Wuhlewanderweg: Fuﬂg‰nger	q1 22295,13530 22259,13508 22191,13414 22221,13027 22196,12961 22036,12367 21998,12204
-Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21886,11843 21914,12019 21936,12022
-Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22280,11284
-Wuhlewanderweg: enge Unterf¸hrung	q3 22280,11284 22271,11218
-Wuhlewanderweg: Fuﬂg‰nger	q1 22271,11218 22236,11198
+Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
+Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22268,11285
+Wuhlewanderweg: enge Unterf¸hrung	q3 22268,11285 22279,11272 22270,11210
+Wuhlewanderweg: Fuﬂg‰nger	q1 22270,11210 22236,11208
 Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21590,7414 21613,7521 21620,7647 21604,7715 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21185,8483 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21351,9066
-Wuhlewanderweg: Fuﬂg‰nger	q1 21385,9049 21468,9230 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
-Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10230 21581,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21830,10679 21867,10733 21950,10776 22060,10778 22097,10812 22160,10834
+Wuhlewanderweg: Fuﬂg‰nger	q1 21385,9049 21471,9246 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
+Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
+Wuhlewanderweg: Fuﬂg‰nger	q1 22059,10782 22103,10814 22160,10834
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18512,10337 18484,10411 18471,10430 18442,10467
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18484,10411 18394,10348
 Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18048,10169
@@ -1341,7 +1342,7 @@ Spreepromenade: Pfad	q2 23608,5196 23785,5169 23808,5177
 Liebstadter Gang: Bordsteine	q1 24434,5645 24471,5544
 (Unterf¸hrung S-Bhf. Hirschgarten): Fuﬂg‰nger	q3 23948,6054 23947,6014 23930,6013 23931,5992
 (S-Bhf. Hirschgarten - KGA Erpetal): eng	q2 23948,6054 23951,6063 23941,6118
-Spatenweg: Betonbarriere, eng	q3 21190,12515 21221,12484
+Spatenweg: Betonbarriere, eng	q3 21191,12516 21200,12512 21205,12489 21221,12484
 Alt-Karow - Strˆmannstr.: enger Pfad	q3 15428,22736 15574,22640
 (Straﬂe 70 - Ingw‰onenweg): enger Pfad	q3 16486,22267 16495,22350 16421,22433 16415,22467 16442,22505
 #: XXX_prog BS (an der Achillesstr.)
@@ -1871,6 +1872,8 @@ Friedlander Str.: Bodenschwelle	q1 20574,4317 20594,4342
 (Paul-Junius-Str. - Alfred-Jung-Str.): Fuﬂg‰nger	q1 15370,13508 15346,13298
 Hans-B¸low-Str.: Fuﬂg‰nger	q1 8553,11638 8473,11638
 Berliner Freiheit: Fuﬂg‰nger	q1 8473,11638 8387,11637
+Alfred-Kowalke-Str. [Mittelstreifen]: einige Fuﬂg‰nger	q1 18200,11269 18202,11253
+(Wuhlewanderweg - Ulmenstr.): einige Fuﬂg‰nger	q1 21471,9246 21513,9232
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
