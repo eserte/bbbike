@@ -7977,7 +7977,8 @@ Treitschkestr.: Betonplatten	Q0 5062,6295 4997,6331 4971,6345 4854,6413
 (Schildhornstr. - Treitschkestr./Hackerstr.): Betonplatten	Q0 4937,6205 4997,6331 5015,6363 4999,6397
 An den Eldenaer Höfen: Verbundsteinpflaster	Q1 14449,12833 14480,12932
 An den Eldenaer Höfen: Verbundsteinpflaster	Q1 14509,12819 14536,12916
-An den Eldenaer Höfen: Kopfsteinpflaster	Q2 14376,12849 14449,12833 14509,12819 14594,12800
+An den Eldenaer Höfen: Verbundsteinpflaster	Q1 14588,12901 14560,12808
+An den Eldenaer Höfen: Kopfsteinpflaster	Q2 14376,12849 14449,12833 14509,12819 14560,12808 14594,12800
 (zur Pablo-Neruda-Bibliothek): Asphalt/Beton	Q0 14020,12261 14008,12181
 (an den Gebäuden der Deutschen Rentenversicherung): Asphalt	Q0 15322,11335 15273,11350 15168,11327 15058,11250
 (an den Gebäuden der Deutschen Rentenversicherung): schlechtes Kopfsteinpflaster	Q3 15058,11250 15010,11170
@@ -8534,6 +8535,8 @@ Rostocker Str.: Beton	Q0 17343,19000 17337,18871 17443,18858 17426,18695 17430,1
 Neustrelitzer Str.: Asphalt	Q0 16752,14745 16668,14765 16524,14749
 Ganghoferstr. (Neukölln): gepflastert	Q1 12753,8187 12792,8190
 Feuerbachstr.: Asphalt teilweise aufgebrochen	Q1; 5823,6413 6083,6451
+Storkower Str. [Gewerbegebiet]: Asphalt	Q0 13737,14204 13639,14133
+Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13639,14133 13715,14018 13784,13908
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -13635,7 +13638,7 @@ Prinz-Eitel-Weg: Asphalt	Q1 -3832,16847 -3972,16826
 Verlängerte Schulzendorfer Str.: mäßig bis gut befahrbarer Waldweg, je nach Witterung	Q2 2150,22464 2015,22435 1834,22421 1583,22376 1505,22368 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 Erich-Nehlhans-Str.: Asphalt	Q0 13999,13276 14089,13247 14132,13234 14231,13204
 Richard-Ermisch-Str.: Asphalt	Q0 14252,13263 14231,13204 14211,13150 14180,13064 14166,13024 14130,12926 14096,12827
-Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14682,12874 14536,12916 14480,12932 14411,12951
+Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14682,12874 14588,12901 14536,12916 14480,12932 14411,12951
 (Parkweg): Asphalt	Q0 14690,12900 14419,12978
 (Bad Kissingen): wassergebunde Decke	Q1 3634,7601 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): wassergebunde Decke	Q1 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
@@ -13722,7 +13725,7 @@ Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q0 9631,12227 9643,12127
 Am Festungsgraben: Kopfsteinpflaster	Q2 9842,12506 9764,12492
 (Dorotheenstr. - Unter den Linden): Asphalt	Q0 9744,12601 9747,12584
 (Dorotheenstr. - Unter den Linden): wassergebundene Decke	Q1 9747,12584 9764,12492
-(Dorotheenstr. - Unter den Linden): Kopfsteinpflaster	Q1 9764,12492 9771,12400
+(Dorotheenstr. - Unter den Linden): Mosaikpflaster	Q1 9764,12492 9771,12400
 (Eichhornstr. - Reichpietschufer): Kopfsteinplaster, Gehweg OK	Q2 8232,11414 8205,11401 8184,11160
 Kuppenheimerstr.: Schotterweg	Q1 5820,8117 5824,8035
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7140,11156 7115,11220

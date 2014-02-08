@@ -705,6 +705,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 17728,5756
 #: next_check_id: STERNDAMM-2014
 #: XXX_prog: zurzeit bis 2013-12-20 außer Betrieb (Sterndamm gesperrt) --- evtl. mit valid_...-Direktive implementieren
+#: next_check: 2014-02-28
 	X 17886,5587
 	X 21332,4655
 	X 21789,4520
@@ -2404,7 +2405,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: VOSSSTR-2014
 #: note: provisorische Ampel
 #: XXX Siehe auch Baustelle in der Voßstr.
-#: last_checked: 2014-01-17
+#: last_checked: 2014-02-04
 #: check_frequency: 60d
 	X::inwork 9000,11727
 	X 25451,14018
@@ -2443,12 +2444,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: last_checked: 2013-11-19
-#: check_frequency: 90d
+#: next_check: 2014-04-04
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
 #: last_checked: 2014-01-24 vvv
-#: next_check: 2014-02-26 vvv
+#: next_check: 2014-12-31 vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
 	X::inwork 9343,12464
@@ -2456,10 +2457,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
-# 
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (südlicher Bereich) vvv
 #: last_checked: 2013-09-16 vvv
-#: next_check: 2014-02-26 vvv
+#: next_check: 2014-12-31 vvv
 	F::inwork 9063,12051
 	F::inwork 9270,12086
 #: next_check ^^^
@@ -2468,7 +2468,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
-#: last_checked: 2013-12-27
+#: last_checked: 2014-02-05
 	F::inwork 9812,12145
 # 
 #: next_check_id: INVALIDEN-2014

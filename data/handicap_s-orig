@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2014-01-28 vvv
+#: last_checked: 2014-02-05 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -51,8 +51,8 @@ M¸hsamstr.: Bauarbeiten in Hˆhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html (Abschluss der Arbeiten im M‰rz 2014)
 #: source_id: IM_020581 ("bis Ende 2014")
-#: last_checked: 2014-01-03 vvv
-#: next_check: 2014-03-01 vvv
+#: last_checked: 2014-02-04 vvv
+#: next_check: 2014-12-01 vvv
 #: priority: #A vvv
 Chausseestr.: direkte Zufahrt s¸dlich der Invalidenstraﬂe nicht mˆglich, umst‰ndliche Wegf¸hrung	q4::inwork 9042,13707 8935,13844
 Chausseestr.: Einbahnstraﬂe zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwork; 8879,13913 8935,13844
@@ -62,8 +62,8 @@ Chausseestr.: Einbahnstraﬂe zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwo
 # 
 #: osm_watch: way id="4412885" version="23" vvv
 #: priority: #A vvv
-#: last_checked: 2014-01-03 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2014-02-04 vvv
+#: check_frequency: 30d vvv
 Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8588,13673 8594,13637
 Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8619,13689 8626,13641
 Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
@@ -78,7 +78,7 @@ Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 865
 #: next_check_id: UDLU5-2014
 #: source_id: IM_020322
 #: last_checked: 2013-12-11
-#: next_check: 2014-02-26
+#: next_check: 2014-12-31
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # REMOVED --- Charlottenstr.: Bauarbeiten, Radfahrer kˆnnen passieren	q2::inwork; 9475,12365 9489,12263
 # 
@@ -112,7 +112,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html
 #: osm_watch: way id="197160274" version="1" vvv
-#: last_checked: 2014-01-17 vvv
+#: last_checked: 2014-02-04 vvv
 #: check_frequency: 60d vvv
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, eng	q4::inwork 8743,11663 8837,11676
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwork 8837,11676 9000,11727
@@ -129,7 +129,7 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwor
 Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2014-01-03 vvv
+#: last_checked: 2014-02-04 vvv
 #: next_check: 2014-06-30 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -167,13 +167,11 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten, Ausweichen auf Gehweg	q3::in
 #: next_check: 2014-06-01
 Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 # 
-#: next_check_id: OBERWALL-2014 vvv
+#: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
-#: XXX siehe auch Eintrag in gesperrt-orig
-#: XXX siehe auch Eintr‰ge in fragezeichen-orig (Falkoniergasse etc.)
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
 #: last_checked: 2014-01-04 vvv
-#: next_check: 2014-04-04 vvv
+#: next_check: 2014-06-01 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9875,12257 9869,12297
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 #: next_check ^^^
@@ -187,12 +185,12 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 #: next_check_id: RATHAUSSTR-2014 vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-01-04
+#: last_checked: 2014-02-03
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erw‰hnt)
 #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig
-#: last_checked: 2014-01-04
+#: last_checked: 2014-02-03
 #: priority: #A
 Rathausstr.: Einbahnstraﬂe an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
 #: next_check_id ^^^
@@ -2221,7 +2219,7 @@ An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13235,13414
 #: next_check_id: RITTER-2014
 #: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2013-11-25
+#: last_checked: 2014-02-05
 #: check_frequency: 90d
 Ritterstr.: Fuﬂg‰nger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fuﬂg‰nger	q2 5808,5332 5810,5340 5822,5388

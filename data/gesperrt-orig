@@ -2481,9 +2481,10 @@ Am Zirkus: Einbahnstraße	1s:q4 9118,13070 9137,13032 9167,13046 9239,12923
 #: last_checked: 2014-01-17
 Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 # 
+#: next_check_id: HELLWEG-2014
 #: XXX: vom Hellweg-Parkplatz kann man einige Meter Richtung Norden passieren
 #: XXX: "inwork" ist ein Euphemismus --- es sind keinerlei Anzeichen von Bauarbeiten zu sehen
-#: last_checked: 2013-11-19
+#: last_checked: 2014-02-05
 #: check_frequency: 100d
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Zugang durch Bauzäune versperrt	2::inwork 8243,9766 8233,9863 8201,9869 8255,9938 8285,9956
 # 
@@ -2662,15 +2663,13 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 174
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2014-01-07 vvv
+#: last_checked: 2014-02-06 vvv
 #: check_frequency: 60d vvv
 #: XXX wird man nach den Bauarbeiten direkt zur Eldenaer Str. fahren können (Kfz/Rad)?
 #: XXX Qualität im östlichen Abschnitt?
 #: osm_watch: way id="137941886" version="4"
-An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14509,12819 14594,12800
-#: XXX dieser Abschnitt wird wahrscheinlich offiziell eine Einbahnstraße, offen Richtung Westen sein
-#: XXX mittlerweile manchmal (oder immer?) passierbar
-Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536,12916 14682,12874
+An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14509,12819 14560,12808
+# REMOVED (nicht mehr gesperrt) --- #: XXX dieser Abschnitt wird wahrscheinlich offiziell eine Einbahnstraße, offen Richtung Westen sein --- #: XXX mittlerweile manchmal (oder immer?) passierbar --- Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536,12916 14588,12901 14682,12874
 #: check_frequency ^^^
 #: last_checked ^^^
 #
@@ -2678,7 +2677,7 @@ Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2014-01-04 vvv
+#: last_checked: 2014-02-05 vvv
 #: next_check: 2014-06-01 vvv
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
@@ -2695,7 +2694,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 # REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5062,6295 4997,6331 4971,6345
 # 
-#: last_checked: 2014-01-03
+#: last_checked: 2014-02-04
 #: next_check: 2014-06-30
 Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # 
@@ -2705,7 +2704,7 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
 #: osm_watch: way id="158025179" version="1"
-#: last_checked: 2014-01-03
+#: last_checked: 2014-02-04
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

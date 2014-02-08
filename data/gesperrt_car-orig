@@ -781,6 +781,7 @@ Danziger/Knaack/Lychener	3nocross 11154,14985 11056,15009 10881,15047
 #: note: Radfahrer benutzen die Fußgängerampel
 Danziger Str.: Straßenbahntrasse	3nocross 13225,13620 13228,13615 13330,13468
 #: note: Radfahrer nutzen den kleinen Umweg via Ampel an der Winsstr.
+#: XXX_prog dieser Umweg sollte möglichst in die Routenplanung einfließen, auch die zusätzliche Ampel
 Danziger Str.: Straßenbahntrasse	3nocross 11864,14781 11990,14714 12025,14695
 Thaters Privatweg	1 4148,15205 4103,15137 3892,14944 3893,14911 3899,14868 3956,14750
 Heinickeweg	1 2224,14825 2210,14696 2207,14576
@@ -975,3 +976,6 @@ Berliner Str.: Straßenbahnhaltestelle	3nocross -11307,133 -11390,72 -11494,-4
 Hubertusstr. - Frankfurter Allee	3 16541,12071 16512,11894 16737,11866
 Ückeritzer Ring: Betonkübel	3 17405,19252 17448,19243 *
 Ückeritzer Ring: Betonkübel	3 * 17448,19243 17405,19252
+Zum Langen Jammer: Poller	3 14480,12932 14411,12951 *
+#: note: wahrscheinlich auch für Radfahrer, aber die Einschränkung ist hier ziemlich sinnlos
+Zum Langen Jammer: Einbahnstraße	1 14682,12874 14588,12901 14536,12916 14480,12932
