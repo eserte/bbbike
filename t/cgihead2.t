@@ -46,7 +46,7 @@ use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-
 {
     use POSIX qw(strftime);
     use constant TODO_FREEBSD_PKG_ERRORS => 0; # "2013-08-05T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available, waiting for 3.18_1';
-    use constant TODO_CS_TU_BERLIN_UNREACHABLE => "2013-02-04T20:00:00" gt strftime("%FT%T", localtime) && 'BBBike diplom location not reachable (user.cs.tu-berlin.de down)';
+    use constant TODO_CS_TU_BERLIN_UNREACHABLE => "2014-02-10T20:00:00" gt strftime("%FT%T", localtime) && 'BBBike diplom location not reachable (user.cs.tu-berlin.de down)';
 }
 
 my @var;
