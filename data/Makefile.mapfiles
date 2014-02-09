@@ -1,7 +1,3 @@
-#
-# $Id: Makefile.mapfiles,v 1.44 2009/02/07 20:36:53 eserte Exp $
-#
-
 .ifndef COMMENTS_PARTIAL
 .error "Do not use Makefile.mapfiles directly, use through the main Makefile!"
 .endif
@@ -14,8 +10,8 @@ MAPFILES_IMG_DIR=	$(MAPFILES_ROOT_DIR)/graphics
 MISCDIR?=		../misc
 MISCSRCDIR?=		../miscsrc
 
-BBBIKEDRAW=		${MISCSRCDIR}/bbbikedraw.pl
-SORTBYCAT=		${MISCSRCDIR}/sortbycat
+BBBIKEDRAW?=		${MISCSRCDIR}/bbbikedraw.pl
+SORTBYCAT?=		${MISCSRCDIR}/sortbycat
 # Specify encoding in case some non-latin1 unicode characters need to be
 # converted 
 BBD2ESRI=		${MISCSRCDIR}/bbd2esri -igndisp -dbfencoding iso-8859-1
@@ -24,7 +20,7 @@ BBD2ESRI=		${MISCSRCDIR}/bbd2esri -igndisp -dbfencoding iso-8859-1
 #BBD2ESRI=		${MISCSRCDIR}/bbd2esri -igndisp -dbfencoding utf-8
 #BBD2ESRI=		${MISCSRCDIR}/bbd2esri -igndisp -dbfencoding html
 
-CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
+CONVERT_RADWEGE?=	${MISCSRCDIR}/convert_radwege
 
 .if ${HOSTNAME} == "biokovo-amd64.herceg.de"
 MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver-amd64
