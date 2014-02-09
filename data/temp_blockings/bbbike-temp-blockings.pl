@@ -12327,7 +12327,7 @@ EOF
        text  => 'L 031 Prenden - Zerpenschleuse Graben zw. Abzw. Marienwerder und Zerpenschleuse Brückenneubau Vollsperrung 18.08.2008-31.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 20048,48519 20965,48351
+userdel	2::inwork 20015,48530 20583,48418 20755,48330 20965,48351
 EOF
      },
      { from  => 1218319200, # 2008-08-10 00:00
