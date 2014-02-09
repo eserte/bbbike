@@ -31,6 +31,7 @@ HAFAS2HAFAS=		${PERL} ${MISCSRCDIR}/hafas2hafas -strict
 CONVERT2HAFAS=		${PERL} ${MISCSRCDIR}/convert2hafas -strict
 CONVERT_ORIG_FILE=	${MISCSRCDIR}/convert_orig_to_bbd
 CONVERT_ORIG=		${PERL} ${CONVERT_ORIG_FILE}
+CONVERT_RADWEGE=	${PERL} ${MISCSRCDIR}/convert_radwege
 CHECK_POINTS=		${PERL} ${MISCSRCDIR}/check_points
 CHECK_STR_PLZ=		${PERL} ${MISCSRCDIR}/check_str_plz
 CHECK_CONT=		${PERL} ${MISCSRCDIR}/check_cont
@@ -600,7 +601,7 @@ obst:	obst-orig
 
 radwege:	radwege-orig
 	-@$(WRITEABLE) $@
-	${PERL} ${MISCSRCDIR}/convert_radwege < radwege-orig | \
+	${CONVERT_RADWEGE} < radwege-orig | \
 	    $(COMBINE_STREETS) - > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
@@ -608,9 +609,9 @@ radwege:	radwege-orig
 radwege_exact:	radwege-orig
 	-@$(WRITEABLE) $@
 ## XXX combine streets is buggy, see strassen-combine.t test!
-#	${PERL} ${MISCSRCDIR}/convert_radwege -exact < radwege-orig | \
+#	${CONVERT_RADWEGE} -exact < radwege-orig | \
 #	    $(COMBINE_STREETS) - > $@~
-	${PERL} ${MISCSRCDIR}/convert_radwege -exact < radwege-orig > $@~
+	${CONVERT_RADWEGE} -exact < radwege-orig > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
