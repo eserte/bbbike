@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMenubar.pm,v 1.20 2007/03/16 21:39:50 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2002,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2002,2003,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -176,12 +175,12 @@ sub EmptyMenubar {
 
 sub plugin_menu {
     my($mb) = @_;
-    my $menulabel = M("~Plugins");
-    $plugins_menu = my $menu = $mb->Menu(-title => $menulabel);
-    main::plugin_menu($menu);
-    # $menu->separator; # XXX enable if there's actually something
-    # XXX more to follow... (what?)
-    $mb->cascade(-menu => $menu,
+    my $menulabel = M("~Plugins"); # with underline marker
+    (my $menutitle = $menulabel) =~ s{~}{}; # without underline marker
+    $plugins_menu = $mb->Menu(-title => $menutitle);
+    main::plugin_menu($plugins_menu);
+    $mb->cascade(
+		 -menu  => $plugins_menu,
 		 -label => $menulabel,
 		);
 }
