@@ -350,7 +350,7 @@ sub better_make_net_steigung {
 	my @errors;
 	while(my($p1,$v) = each %$net) {
 	    while(my($p2,$v2) = each %$v) {
-		if (exists $net->{$p2}{$p1}) {
+		if (exists $net->{$p2} && exists $net->{$p2}{$p1}) {
 		    push @errors, "$p1 $p2";
 		}
 	    }
