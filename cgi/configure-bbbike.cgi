@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: configure-bbbike.cgi,v 1.7 2007/10/14 20:29:10 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -109,7 +108,7 @@ sub check_gd_img_formats {
     }
 
     if (!eval q{ require GD; 1 } &&
-	!eval q{ require PDF::Create; require PDF::Image::GIFImage; 1 }) {
+	!eval q{ require PDF::Create; PDF::Create->VERSION(1.06) }) {
 	return;
     }
     $cap{'can_image'} = 1;
@@ -144,7 +143,7 @@ sub check_gd_img_formats {
 	}
     }
 
-    if (eval q{ require PDF::Create; require PDF::Image::GIFImage; 1 }) {
+    if (eval q{ require PDF::Create; PDF::Create->VERSION(1.06) }) {
     }
 }
 
@@ -165,7 +164,7 @@ EOF
 }
 
 sub check_pdf {
-    if (!eval { require PDF::Create; PDF::Create->VERSION(0.06); 1}) {
+    if (!eval { require PDF::Create; PDF::Create->VERSION(1.06); 1}) {
 	$cap{'cannot_pdf'} = 1;
     } else {
 	$cap{'cannot_pdf'} = 0;
