@@ -1535,20 +1535,22 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 	RW6;RW6 10344,1944 10383,2088
 #: by: ^^^
 	RW3; 7759,13246 7567,13143
+#: next_check_id: INVALIDENSTRMOABIT-2014
 #: XXX evtl. nur während der Bauarbeiten?
-#: last_checked: 2013-12-27
+#: last_checked: 2014-02-10
 existierende Radspur ist aufgehoben	RW0; 7567,13143 7440,13073 7415,13060 7346,13022
 	RW3; 7346,13022 7415,13060
-#: XXX wie sieht es nach den Bauarbeiten aus?
-#: last_checked: 2013-12-27
-provisorischer Radweg, benutzungspflichtige Radspur auf den letzten 10 Metern	RW1; 7415,13060 7440,13073 7567,13143 7759,13246
-# 
-# REMOVED (Bauarbeiten beendet) --- #: XXX während der Bauarbeiten geänderte Radwegführung vvv --- #: last_checked: 2013-10-12 vvv --- #: next_check: 2013-12-31 vvv --- #: source_id: IM_017330 vvv --- #: source_id: INKO_113944 vvv --- # XXX alter Eintrag: RW3;RW4 8450,13599 8337,13541 8268,13506 8098,13419 --- Radweg auf dem Gehweg aufgemalt, eng RW1; 8450,13599 8337,13541 8268,13506 8098,13419 ---	RW0; 8098,13419 8268,13506 8337,13541 8450,13599 --- #: source_id ^^^ --- #: source_id ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
+# REMOVED (aufgehoben) --- #: XXX wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2013-12-27 --- provisorischer Radweg, benutzungspflichtige Radspur auf den letzten 10 Metern	RW1; 7415,13060 7440,13073 7567,13143 7759,13246
+# REMOVED (Bauarbeiten beendet) --- #: XXX während der Bauarbeiten geänderte Radwegführung vvv --- #: last_checked: 2013-10-12 vvv --- #: next_check: 2013-12-31 vvv --- #: source_id: IM_017330 vvv --- #: source_id: INKO_113944 vvv --- # XXX alter Eintrag: RW3;RW4 8450,13599 8337,13541 8268,13506 8098,13419 --- Radweg auf dem Gehweg aufgemalt, eng RW1; 8450,13599 8337,13541 8268,13506 8098,13419 ---	RW0; 8098,13419 8268,13506 8337,13541 8362,13554 8450,13599 --- #: source_id ^^^ --- #: source_id ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html
 #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder
 #: XXX kommen die Radwegschilder noch?
-#: last_checked: 2013-12-27
-	RW3;RW3 8098,13419 8268,13506 8337,13541 8450,13599
+#: last_checked: 2014-02-10
+	RW3; 8098,13419 8268,13506 8337,13541
+	RW2; 8337,13541 8362,13554
+	RW3; 8362,13554 8450,13599
+	RW3; 8450,13599 8362,13554 8337,13541 8268,13506 8098,13419
+	RW2; 8450,13599 8574,13666
 # 
 #: note: hier existiert noch ein alter enger Radweg, der aber nicht weiter "beworben" wird
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12784,13961 12856,14042
@@ -2422,7 +2424,6 @@ gemeinsamer Rad- und Gehweg	RW2;RW8 14193,6556 14106,6663 14051,6731
 	RW6;RW6 5782,14067 5943,14049
 #: by: Bernhard Hartmann, teilweise srt
 	RW3;RW3 4574,11587 4558,11366 4555,11216 4540,11041 4525,10850 4513,10702 4503,10497
-benutzungspflichtige Radspur auf den letzten 10 Metern	RW0; 9164,12172 9141,12320
 #: by: Jule (henriejetta ...):
 #: confirmed_by: srt
 	RW6;RW6 17845,19186 17761,19221 17750,19181 17697,18989
