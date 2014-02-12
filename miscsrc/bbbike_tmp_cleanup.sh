@@ -30,15 +30,23 @@ case "`hostname`" in
 	;;
 esac
 
+# Usually invoked with sudo, so $HOME is not available
+USERHOME=/home/e/eserte
+USERCACHE=$USERHOME/.bbbike/cache
+
 # Used for various cache files if no cache directory is provided (as
 # seems to be the case in some test scripts, in data/Makefile etc.,
 # maybe also in the cgi implementations)
 rm /tmp/*.cache
+rm $USERCACHE/*.cache
 rm /tmp/b_de_*
+rm $USERCACHE/b_de_*
 rm /tmp/bbbike_b_de_*
+rm $USERCACHE/bbbike_b_de_*
 rm /tmp/bbbike_test_b_de_*
 # last * is a pid file - unfinished creation of cache file
 rm /tmp/bbbike_*.cache.*
+rm $USERCACHE/bbbike_*.cache.*
 # Various temporary files created by data/Makefile
 rm /tmp/XXX_*-orig.bbd
 rm /tmp/fragezeichen_*.bbd
