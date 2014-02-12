@@ -40,10 +40,9 @@ BBOX_POTSDAM!=	perl -I.. -MBBBikeMapserver -e 'print BBBikeMapserver->get_bbox_s
 
 mapfiles:	mapfiles-without-reference-maps mapfiles-reference-maps
 
-.ORDER: 	mapfiles-prepare mapfiles-convert mapfiles-shptree \
-		mapfiles-permissions
 mapfiles-without-reference-maps: \
-		mapfiles-prepare mapfiles-convert mapfiles-shptree \
+		mapfiles-prepare .WAIT \
+		mapfiles-convert mapfiles-shptree .WAIT \
 		mapfiles-permissions 
 
 mapfiles-prepare:
