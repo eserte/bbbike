@@ -3398,7 +3398,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'data' => '#: XXX Aufhebung der Sperrung aus Witterungsgründen möglich
 #: next_check_id: FRIEDRICHSBRUECKE-2014
 #: last_checked: 2014-02-03
-#: next_check: 2014-02-15
+#: next_check: 2014-02-28
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'
@@ -3516,6 +3516,44 @@ userdel	2::inwork 2219,11304 2116,11288
          'text' => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 9.5.2014 15 Uhr bis 11.5.2014 22 Uhr',
          'id' => 2533,
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_021244',
+         'until' => 1393599600,
+         'text' => 'Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis 28.02.2014 16:00 Uhr',
+         'from' => 1392016320,
+         'id' => 2535,
+         'data' => 'userdel	q3::inwork 13173,11788 13295,11792 13366,11651
+userdel	q3::inwork 13275,11830 13295,11792 13467,11778
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Wadzeckstr. - Mollstr.: Parkplatzzufahrt gesperrt',
+         'from' => undef,
+         'id' => 2536,
+         'data' => '#: XXX bleibt das dauerhaft gesperrt?
+#: XXX_indoor: evtl. Umfahrung über Otto-Braun-Str. definieren
+#: last_checked: 2014-02-12
+#: next_check: 2014-02-13 (von Süden aus ausprobieren)
+userdel	2::inwork 11406,13321 11379,13279 11326,13196
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_021257',
+         'until' => 1393610580,
+         'text' => 'Greifswalder Str.: geplatzte Wasserleitung, Fahrtrichtung gesperrt stadteinwärts zwischen Heinrich-Roller-Str. und Straße Prenzlauer Berg, evtl. kann auf dem Gehweg umfahren werden, 12.02.2014 13:00 Uhr bis 28.02.2014 19:03 Uhr ',
+         'from' => 1392120000,
+         'id' => 2537,
+         'data' => '#: by: http://www.morgenpost.de/berlin-aktuell/article124783293/Geplatzte-Wasserleitung-Greifswalder-Strasse-gesperrt.html
+#: XXX laut MoPo nur bis Freitag, prüfen
+#: next_check: 2014-02-14
+userdel	q4::inwork; 11946,13993 11820,13804
+',
+         'type' => 'handicap'
        }
      
 );

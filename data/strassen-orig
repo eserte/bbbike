@@ -486,7 +486,7 @@ Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,
 #: alias: Untere Kynaststr.
 Kynaststr.	N 14805,10518 14832,10512 14843,10621 14882,10732 14906,10820
 #: XXX wann erfolgt der Rückbau der Ersatzstraße?
-#: osm_watch: way id="58929537" version="26"
+#: osm_watch: way id="58929537" version="28"
 #: last_checked: 2014-01-04
 #: check_frequency: 60d
 Kynaststr. [Ersatzstraße]	NN 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
@@ -13840,6 +13840,12 @@ Quaritzer Str.	NN 21252,-500 21245,-533
 Polkwitzer Str.	N 21367,-420 21463,-434 21618,-456
 Sausenberger Str.	N 21358,-834 21423,-732 21437,-662 21451,-561 21458,-488 21463,-434 21468,-338 21463,-280
 Hüttendorfer Weg	N 21463,-280 21409,-109
+#: XXX im Zuge des Bebauungsplans XV-37 c wird hier wahrscheinlich eine neue Straße entstehen
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140211.0935.394295.html
+#: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/beteiligungxv-37c.html
+#: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_1.pdf?start&ts=1392044607&file=planungsvariante_1.pdf
+#: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
+#: next_check: 2015-06-15
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21373,490 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375
 (Am Gartenstadtweg - Paradiesstr.)	NN 21262,375 21199,309 21168,212
