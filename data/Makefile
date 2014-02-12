@@ -125,8 +125,7 @@ TODAY_DATE!=	date +'%Y%m%d'
 ######################################################################
 # META TARGETS
 
-.ORDER: targets data-images check .modified make_misc
-all:	targets data-images check .modified make_misc
+all:	targets data-images check .WAIT .modified .WAIT make_misc
 
 # Some targets have to be rebuild once a day. These should depend on
 # ".check_daily"
