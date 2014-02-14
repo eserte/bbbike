@@ -2662,6 +2662,7 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9852,12409
 Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp 9984,12426 9934,12420 9943,12364
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9852,12409 9934,12420 9943,12364
+An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-1339 -11235,-1465 -11137,-1680 -11089,-1730 -10973,-1764
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
@@ -3226,6 +3227,36 @@ Treppe mit 19 Stufen (Birkenwerder)	BNP:45:55 1112,32717
 Poller (Birkenwerder)	BNP:0:-168 1306,33008
 Poller (Birkenwerder)	BNP:0:0 1207,33025
 An den Kanalwiesen (Wendisch Rietz)	1 51857,-20420 51900,-20326 51916,-20240
+Kreuzung Sewanstr./Am Tierpark	1::igndisp 18647,10172 18631,10167
+Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
+Treskowallee, linker Gehweg	1::igndisp 18748,9922 18715,10003
+Kreuzung Gregoroviusweg/Treskowallee	1::igndisp 18742,9903 18748,9922
+Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18216,11656 18520,11685 18624,11712 18778,11742 19005,11767 19735,11721
+Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18624,11712 18626,11742
+Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237
+Landsberger Allee, linker Gehweg	1::igndisp 13078,13330 12974,13289
+Landsberger Allee, linker Gehweg	1::igndisp 16665,14420 16590,14409
+Landsberger Allee, Fußgängerampel	1::igndisp 16590,14409 16590,14386
+Sonnenallee, linker Gehweg	1::igndisp 13457,8069 13474,8060
+Bundesallee, linker Gehweg zur Durlacher Str.	1::igndisp 5399,8344 5438,8402
+Bundesallee, linker Gehweg zur Straße Am Volkspark	1::igndisp 5419,8415 5399,8344
+Urbanstr.	1::igndisp 11861,9183 11888,9189
+Badstr., linker Gehweg	1::igndisp 8486,16425 8486,16412 8534,16355
+Tempelhofer Ufer, linker Gehweg	1::igndisp 8661,10377 8717,10322 8804,10303
+Leipziger Str., linker Gehweg	1::igndisp 9985,11711 9896,11703
+zur Ampel Jerusalemer Str.	1::igndisp 9982,11681 9987,11690 9985,11711
+Columbiadamm, linker Gehweg	1::igndisp 10913,8463 10799,8504 10796,8498
+Hohenstaufenstr., linker Gehweg bis zur Fußgängerampel	1::igndisp 6241,9772 6209,9774
+zur Münchener Str. auf dem linken Gehweg	1::igndisp 6209,9771 6241,9772
+Karl-Lieknecht-Str., linker Gehweg	1::igndisp 11070,13357 11082,13371
+Potsdamer Str., linker Gehweg	1::igndisp 7526,9791 7501,9573
+Landsberger Allee, Radweg auf der linken Seite	1::igndisp 15923,14334 15848,14325 15850,14308
+Hauptstr., linker Gehweg	1::igndisp 16206,10047 16195,10044 16150,10123 16018,10212 16004,10204
+Kurt-Schumacher-Damm, linker Gehweg	1::igndisp 2793,14374 2787,14284 2831,14219
+Königsberger Str., linker Gehweg	1::igndisp 4164,2717 4220,2664
+Königsberger Str., linker Gehweg	1::igndisp 4236,2678 4164,2717
+Bornholmer Str., linker Gehweg	1::igndisp 10197,16528 10118,16561
+Platz der Vereinten Nationen, linker Gehweg	1::igndisp 11984,13081 11962,13089 11952,13095
 Kreuzung Sewanstr./Am Tierpark	1::igndisp 18647,10172 18631,10167
 Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
 Treskowallee, linker Gehweg	1::igndisp 18748,9922 18715,10003
