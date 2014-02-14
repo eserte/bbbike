@@ -215,6 +215,8 @@ HTML::FormatText	- Für VMZTool
 
 Math::Round	- Für downloadosm -round
 
+DateTime::Event::Easter	- Für Feiertagsberechnungen in temp_blockings_tasks
+
 
 =head1 DESCRIPTION
 

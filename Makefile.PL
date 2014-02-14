@@ -267,6 +267,8 @@ my @req_table =
    'Für VMZTool'],
   [qw/Math::Round	0	all	0	devel/,
    'Für downloadosm -round'],
+  [qw/DateTime::Event::Easter	0	all	0	devel/,
+   'Für Feiertagsberechnungen in temp_blockings_tasks'],
 
   # CGI 3.43 which comes with Debian has a couple of problems (self
   # urls have port, encoding problems with params...)
