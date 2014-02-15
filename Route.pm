@@ -162,11 +162,13 @@ sub _as_string {
 sub rueckweg {
     my $self = shift;
     @{$self->{Path}}       = reverse @{$self->{Path}};
-    @{$self->{PathCanvas}} = reverse @{$self->{PathCanvas}};
-    @{$self->{Via}}        = reverse @{$self->{Via}};
-    my $swap      = $self->{From};
-    $self->{From} = $self->{To};
-    $self->{To}   = $swap;
+    if ($self->{PathCanvas}) {
+	@{$self->{PathCanvas}} = reverse @{$self->{PathCanvas}};
+    }
+    if ($self->{Via}) {
+	@{$self->{Via}}        = reverse @{$self->{Via}};
+    }
+    ($self->{From}, $self->{To}) = ($self->{To}, $self->{From});
 }
 
 sub add {
