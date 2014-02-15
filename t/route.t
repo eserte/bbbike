@@ -64,7 +64,14 @@ EOF
     is $r->from, '2000,0';
     is $r->to, '0,0';
     is $r->len, 2000;
+    is $r->trafficlights, 0;
     is $r->as_string, "2000,0;1000,0;500,0;0,0";
+
+    $r->prepend(3000,0);
+    is $r->from, '3000,0';
+    is $r->len, 3000;
+    is $r->trafficlights, 0;
+    is $r->as_string, "3000,0;2000,0;1000,0;500,0;0,0";
 }
 
 __END__

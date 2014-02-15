@@ -190,6 +190,25 @@ sub add {
     $self->{To} = _coord_as_string($xy);
 }
 
+sub prepend {
+    my($self, $x, $y, $cx, $cy, $as_via) = @_;
+    my $xy = [$x, $y];
+    unshift @{$self->{Path}}, $xy;
+    unshift @{$self->{PathCanvas}}, [$cx, $cy]
+	if defined $cx;
+    if ($as_via) {
+	unshift @{$self->{Via}}, $xy;
+    }
+    $self->{Ampeln} += 0; # XXX
+    if (!defined $self->{To}) {
+	$self->{To} = _coord_as_string($xy);
+    } else {
+	$self->{Len} += _strecke($xy, $self->{Path}[1]);
+	# XXX penalty fehlt
+    }
+    $self->{From} = _coord_as_string($xy);
+}
+
 sub dellast {
     my $self = shift;
     my $popped = pop @{$self->{Path}};
