@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -52,8 +52,9 @@ sub _convert_vbb_2013_stops ();
 sub M ($) { $_[0] } # XXX
 sub Mfmt { sprintf M(shift), @_ } # XXX
 
-use vars qw($LIMIT_LB);
-$LIMIT_LB = 12;
+use vars qw($LIMIT_LB %MIN_STATIONS);
+$LIMIT_LB = 15;
+%MIN_STATIONS = ('u' => 2, 's' => 2); # sum here should be smaller than $LIMIT_LB
 
 use vars qw($PEDES_MS);
 $PEDES_MS = kmh2ms(5);
@@ -388,7 +389,68 @@ sub get_nearest {
 	my %seen;
 	@res = grep { !$seen{$_->{StreetObj}->[Strassen::NAME()]}++ } @res;
     }
-    @res = @res[0..$LIMIT_LB-1] if @res >= $LIMIT_LB;
+    if (@res >= $LIMIT_LB) {
+	# We need to limit the count. But also make sure that the
+	# %MIN_STATIONS constraint is satisfied.
+
+	# Return "u", "s", or undef
+	my $get_station_type = sub {
+	    my($line) = @_;
+	    my $name = $line->{StreetObj}->[Strassen::NAME];
+	    if ($name =~ m{^([US])(?:\s|-)}i) {
+		lc $1;
+	    } else {
+		undef;
+	    }
+	};
+
+	my %count_stations;
+	for my $line_i (0 .. $LIMIT_LB-1) {
+	    my $line = $res[$line_i];
+	    my $station_type = $get_station_type->($line);
+	    if (defined $station_type) {
+		$count_stations{$station_type}++;
+	    }
+	}
+	my %need_stations; # $station_type -> $need_count
+	for my $station_type (keys %MIN_STATIONS) {
+	    my $count_stations = $count_stations{$station_type} || 0;
+	    my $need_stations;
+	    if ($count_stations < $MIN_STATIONS{$station_type}) {
+		$need_stations{$station_type} = $MIN_STATIONS{$station_type} - $count_stations;
+	    }
+	}
+
+	my @add_stations;
+	for my $line_i ($LIMIT_LB .. $#res) {
+	    my $line = $res[$line_i];
+	    my $station_type = $get_station_type->($line);
+	    if (defined $station_type && $need_stations{$station_type} > 0) {
+		push @add_stations, $line;
+		$need_stations{$station_type}--;
+	    }
+	}
+
+	# limit
+	splice @res, $LIMIT_LB;
+
+	if (@add_stations) {
+	    # remove non-stations from the end
+	    my $remove_count = scalar @add_stations;
+	    for(my $line_i=$#res; $line_i>=0; $line_i--) {
+		my $line = $res[$line_i];
+		if (!defined $get_station_type->($line)) {
+		    splice @res, $line_i, 1;
+		    $remove_count--;
+		    last if ($remove_count <= 0);
+		}
+	    }
+	}
+
+	# Replace tail
+	push @res, @add_stations;
+    }
+
     @res;
 }
 
