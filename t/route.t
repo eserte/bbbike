@@ -41,4 +41,30 @@ EOF
     is_deeply $route2, $route, 'roundtrip';
 }
 
+{
+    my $r = Route->new_from_realcoords([[0,0],[500,0],[1000,0]]);
+    is $r->from, '0,0';
+    is $r->to, '1000,0';
+    is $r->len, 1000; # XXX accuracy?
+    is_deeply $r->path, [[0,0],[500,0],[1000,0]];
+    is_deeply [$r->path_list], [[0,0],[500,0],[1000,0]];
+    is_deeply $r->path_s, ["0,0","500,0","1000,0"];
+    is_deeply [$r->path_s_list], ["0,0","500,0","1000,0"];
+    ok !$r->is_empty;
+    { local $TODO = "Should be zero, not undef"; is $r->trafficlights, 0; }
+    is $r->as_string, "0,0;500,0;1000,0";
+    is $r->as_cgi_string, "0,0!500,0!1000,0";
+
+    $r->add(2000,0);
+    is $r->to, '2000,0';
+    is $r->len, 2000;
+    is $r->as_string, "0,0;500,0;1000,0;2000,0";
+
+    $r->rueckweg;
+    is $r->from, '2000,0';
+    is $r->to, '0,0';
+    is $r->len, 2000;
+    is $r->as_string, "2000,0;1000,0;500,0;0,0";
+}
+
 __END__
