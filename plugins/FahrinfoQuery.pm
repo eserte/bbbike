@@ -375,6 +375,16 @@ sub get_nearest {
 		    my $as_the_bird_flies_dist = Strassen::Util::strecke([$x,$y], [$px,$py]);
 		    my $npxy = $search_net_strassen ? $search_net_strassen->nearest_point("$px,$py") : undef;
 		    my $search_res = $nxy && $npxy && $search_net ? $search_net->search($nxy, $npxy, AsObj => 1) : undef;
+		    if ($search_res) {
+			# add the difference from the nearest net
+			# point and the actual station point
+			if ($npxy ne "$px,$py") {
+			    $search_res->add($px,$py);
+			}
+			if ($nxy ne "$x,$y") {
+			    $search_res->prepend($x,$y);
+			}
+		    }
 		    my $line = {StreetObj => $r,
 				Dist      => $search_res ? $search_res->len : $as_the_bird_flies_dist,
 				Path      => $search_res ? $search_res->path : undef,
