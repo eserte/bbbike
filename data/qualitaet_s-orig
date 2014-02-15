@@ -230,7 +230,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2014-02-05
+#: last_checked: 2014-02-14
 #: check_frequency: 90d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -277,8 +277,8 @@ Alte Jakobstr.: Kopfsteinpflaster	Q2 10256,11160 10437,11352
 Ackerstr.: Kopfsteinpflaster	Q2 9439,14368 9400,14400
 Ackerstr.: Rasengitterstein	Q2 9400,14400 9375,14419
 Ackerstr.: Kopfsteinpflaster	Q2 9375,14419 9279,14495 9197,14562 9048,14681 8953,14758 8741,14928
-Ackerstr.: Kopfsteinpflaster	Q2 9810,14066 9750,14132 9627,14229
-Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13978 9510,13823 9531,13797 9670,13637
+Ackerstr.: Kopfsteinpflaster	Q2 9804,14071 9750,14132 9627,14229
+Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13986 9514,13826 9535,13801 9670,13637
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -400,11 +400,11 @@ Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712 13378,7695
 Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087
 #: XXX Asphalt wird gerade aufgetragen, danach Q0
-#: last_checked: 2014-01-08
+#: last_checked: 2014-02-14
 Richardstr.: Asphalt	Q0- 12870,8087 13085,7904
 Richardstr.: Kopfsteinpflaster, OK	Q1- 13085,7904 13103,7889
 #: XXX bleibt das Kopfsteinpflaster so? Oder wird hier auch asphaltiert?
-#: last_checked: 2014-01-08
+#: last_checked: 2014-02-14
 Richardstr.: Kopfsteinpflaster, OK	Q1- 13103,7889 13150,7845
 Richardstr.: Kopfsteinpflaster	Q2 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
@@ -495,7 +495,7 @@ Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,1103
 Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
 Matkowskystr.: Asphalt	Q0 14531,11142 14513,11075
 #: next_check_id: NEUEBAHNHOF-2014
-#: last_checked: 2014-02-08
+#: last_checked: 2014-02-14
 #: XXX wird die andere Fahrtrichtung auch asphaltiert?
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2; 14752,11041 14811,11067 14879,11182
 Neue Bahnhofstr.: Asphalt	Q0; 14879,11182 14811,11067 14752,11041
@@ -906,7 +906,8 @@ Sandinostr.: Kopfsteinpflaster	Q2 15899,14598 15830,14647 15799,14674 15706,1475
 Orankeweg: asphaltiert	Q0 14934,15860 15313,15858 15395,15852 15453,15848
 #: corrected_by: srt (Q3 -> Q3+)
 Orankestr.: schlechtes Kopfsteinpflaster	Q3+ 16331,15486 15996,15620 15877,15673 15801,15706 15665,15765
-Orankestrand: guter Parkweg	Q1 15866,16393 15782,16277 15731,16208 15664,16115 15592,16069 15479,16060
+#: note: teilweise guckt etwas Schotter hervor
+Orankestrand: guter Parkweg	Q1- 15866,16393 15782,16277 15731,16208 15664,16115 15592,16069 15479,16060
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht durchgängig asphaltiert? Wie werden sich die Verschwenkungen auswirken? --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20100714.1400.303010.html --- #: next_check: 2011-10-01 --- #: last_checked: 2010-10-05 (noch in Bau)
 Degnerstr.: Asphalt	Q0 16806,16496 16849,16551 17014,16724
 Genslerstr.: schadhafter Beton	Q1- 16898,15453 16868,15337
@@ -1386,8 +1387,8 @@ Um den Flughafen: mäßiger Asphalt	Q2+ 1033,16278 1018,16321 872,16369 762,16318 
 Um den Flughafen: Schotter, fester Sand	Q1- 315,16262 259,16628 318,16740 1450,17366 1464,17373
 # REMOVED asphaltiert (mittlerweile?) --- Klemkestr.: Kopfsteinpflaster	Q2 7217,18681
 Arnimplatz: Mosaikpflaster	Q1 10739,16146 10606,16319
-Bergstr. (Mitte): Kopfsteinpflaster	Q2 9796,13694 9741,13850 9725,13894 9679,14039
-Schröderstr.: Kopfsteinpflaster	Q2 9531,13797 9725,13894
+Bergstr. (Mitte): Kopfsteinpflaster	Q2 9796,13694 9741,13850 9725,13894 9676,14046
+Schröderstr.: Kopfsteinpflaster	Q2 9535,13801 9725,13894
 Lepsiusstr.: Kopfsteinpflaster	Q2 4981,6642 4948,6582 4922,6537
 #: by: Johann Eickhoff-Koberg (Nordteil, Q2) vvv
 #: corrected_by: srt (Südteil, korrigiert zu Q1-)
@@ -1532,9 +1533,8 @@ Paul-und-Paula-Ufer: Kleinteiliges Kopfsteinpflaster	Q1 15314,10121 15261,10167
 Paul-und-Paula-Ufer: Parkweg	Q1 15261,10167 15204,10201 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411
 Paul-und-Paula-Ufer: Beton	Q0 14892,10411 14864,10451 14868,10467 14884,10508
 Paul-und-Paula-Ufer: Asphalt	Q0 14884,10508 14911,10587 14937,10598 14990,10581 15056,10625 15101,10640
-#: XXX wird dieser Abschnitt auch noch asphaltiert?
-#: last_checked: 2013-12-26
-#: check_frequency: 90d
+#: XXX dieser Abschnitt wird gerade neu gemacht
+#: last_checked: 2014-02-14
 Paul-und-Paula-Ufer: Parkweg	Q1 15101,10640 15248,10562
 Uferweg: Parkweg	Q1 15314,10121 15260,10048 15295,10022 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15545,9818 15583,9779 15626,9710
@@ -1665,8 +1665,8 @@ Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Grünstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
 Parkaue: Asphalt	Q0 15535,12420 15457,12449 15406,12444
 #: XXX wird hier die Straße verbessert werden?
-#: last_checked: 2014-01-05
-#: next_check: 2014-04-05
+#: last_checked: 2014-02-14
+#: next_check: 2014-05-14
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524 (Beginn der Bauarbeiten: Frühjahr 2014)
 Deutschmeisterstr.: mäßiger Asphalt	Q1 15443,12222 15370,12264 15353,12280 15320,12375
 Parkaue: Asphalt	Q0 15406,12444 15408,12394 15370,12264
@@ -1869,7 +1869,7 @@ Ekhofstr.: Asphalt	Q0; 23158,1379 23243,1398
 Ekhofstr.: Kopfsteinpflaster	Q2; 23243,1398 23158,1379
 Ekhofstr.: Kopfsteinpflaster	Q2 23243,1398 23325,1418
 Ekhofstr.: Kopfsteinpflaster	Q2 23382,1429 23464,1449 23552,1468 23562,1470
-Pappelplatz (Mitte): alte Berliner Gehwegplatten	Q1 9750,14132 9679,14039
+Pappelplatz (Mitte): alte Berliner Gehwegplatten	Q1 9750,14132 9676,14046
 Am Krögel: kleinteiliges Kopfsteinpflaster	Q1 10766,12184 10772,12288
 Spinatweg: Betonstraße	Q1 20915,18601 20921,18479
 Schwarzwurzelstr.: Betonstraße	Q1 21009,18503 20921,18479 20814,18419 20759,18390 20654,18336 20544,18279 20452,18273 20407,18273 20289,18274 20186,18238
@@ -2831,7 +2831,7 @@ Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2 12742,8635 12649,8535
 Schönstedtstr. (Neukölln): Asphalt	Q0 12649,8535 12540,8458
 # REMOVED (Asphalt neu gemacht) --- #: XXX Straßenbauarbeiten (mit Vollsperrung) ab September 2013, danach vielleicht bessere Qualität? --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_08_02.pdf?start&ts=1375448176&file=stra__enbauliste_stand_2013_08_02.pdf --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html --- #: last_checked: 2013-09-09 --- #: next_check: 2013-09-30
 Höhndorfstr.: Asphalt	Q0 8454,8574 8438,8676 8425,8775
-Zionskirchstr.: Asphalt	Q0+ 10558,14176 10426,14262
+Zionskirchstr.: Asphalt	Q0+ 10561,14181 10426,14262
 Arkonaplatz: Kopfsteinpflaster	Q2 10105,14608 10189,14649 10277,14691
 Armbrustweg: Asphalt mit Schäden	Q1 7599,18705 7620,18615
 Armbrustweg: Mosaikpflaster	Q1 7635,18570 7620,18615
@@ -9265,6 +9265,7 @@ Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 17742,11636 17887,11625 17931,11656 
 Am Tierpark [Wohngebiet]: Beton	Q1+ 18158,11631 18188,11592 18178,11515 18179,11481 18202,11383 18208,11298 18200,11269
 Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21471,9246 21513,9232
+Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -11784,7 +11785,7 @@ Rosenheimer Str.: Asphalt	Q0 6163,9337 6067,9329
 #: by: Jana Eberhart: vvv
 #: corrected_by: srt (Aufpflasterungen noch erwähnt)
 Tieckstr.: asphaltiert mit Aufpflasterungen	Q0- 9094,13641 9275,13720
-Tieckstr.: asphaltiert	Q0 9275,13720 9376,13765 9510,13823
+Tieckstr.: asphaltiert	Q0 9275,13720 9376,13765 9514,13826
 #: by: ^^^
 # 
 #: by: H.-G. Danelski: vvv
@@ -22735,7 +22736,7 @@ Schrammstr.: grobes Kopfsteinpflaster	Q3 4960,8440 4958,8355
 Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5686,10468 5578,10529
 Los-Angeles-Platz: Kopfsteinpflaster	Q1 5681,10696 5822,10609
 #: corrected_by: srt ("neues Kopfsteinpflaster" -> )
-Elisabethkirchstr.: Kleinsteinpflaster	Q1- 9937,14080 9901,14197 9856,14204 9769,14175 9750,14132
+Elisabethkirchstr.: Kleinsteinpflaster	Q1- 9936,14085 9901,14197 9856,14204 9769,14175 9750,14132
 Greifenhagener Str.: Kopfsteinpflaster	Q1 11123,15851 11150,15908
 #: corrected_by: srt (Q2 -> Q0, Asphalt mit Löchern und Flicken -> Asphalt)
 Gethsemanestr.: Asphalt	Q0 11158,15739 11191,15810 11123,15851
@@ -22782,7 +22783,7 @@ Barnimstr.: Beton	Q0 11881,13147 11758,13210 11589,13305
 (Verbindungsweg): Kleinsteinpflaster	Q1- 11667,13465 11703,13426
 #: corrected_by: srt (Asphalt stark verwurzelt, Q3 -> ...)
 Weinstr.: Verbundsteinpflaster	Q1 11793,13247 11909,13387
-Weinstr.: Asphalt	Q0+ 11909,13387 11982,13471
+Weinstr.: Asphalt	Q0+ 11909,13387 11984,13473
 (Plus-Parkplatz): Verbundsteinpflaster	Q0- 11881,13147 11952,13095 11958,13079
 (Friedenstr.): Beton	Q0 12131,13333 12138,13294 12139,13262 12066,13237
 Höchste Str.: Asphalt	Q0 11786,13511 11909,13387 12017,13299 12066,13237

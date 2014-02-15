@@ -274,7 +274,7 @@ Travestr.	1 14835,11840 14897,11801 14981,11751
 Müggelstr.	1 14897,11801 14965,11921
 Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1s:q4 12349,8464 12368,8356
-Zionskirchplatz	1 10306,14247 10277,14350 10311,14391 10365,14372 10389,14274
+Zionskirchplatz	1 10304,14254 10277,14350 10311,14391 10365,14372 10391,14280
 Ohmstr.	1 11324,11689 11378,11856
 Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12700,14726 12520,14833
 Spilstr.	1 3865,6758 3826,6656 3836,6550
@@ -1059,7 +1059,7 @@ Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
 Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
 #: XXX wird hier die Einbahnstraße für Radfahrer geöffnet (wegen der neuen Radwegführung)?
-#: last_checked: 2014-01-05
+#: last_checked: 2014-02-14
 (Möllendorffstr. - Paul-Junius-Str.)	1s:q4 15370,13508 15470,13509
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Kornmandelweg	1 21311,13522 21345,13550
@@ -1270,7 +1270,7 @@ Johanna-Spyri-Weg	1s:q1 3211,2221 3221,2473
 #: note: nach Anmerkungen von Sandra Franz mit "q3" versehen:
 Seelbuschring	1s:q3 8485,4619 8432,4712 8242,4648
 #: note: die Straßenbahn fährt hier auch lang
-Zionskirchstr.	1s:q1 10389,14274 10426,14262
+Zionskirchstr.	1s:q1 10391,14280 10426,14262
 Walsroder Str.	1s:q3 6395,5154 6295,5158 6202,5163 6094,5171
 Hünensteig	1s:q3 6419,5048 6387,5057 6395,5154
 #: note: Radfahren auf dem Uferweg ist wohl Sitte
@@ -2503,8 +2503,8 @@ Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,100
 #: next_check: 2014-03-29
 Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17366,12357
 # 
-#: last_checked: 2013-11-05
-#: next_check: 2014-02-14
+#: last_checked: 2014-02-14
+#: check_frequency: 100d
 (Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
 # 
 #: last_checked: 2013-10-15

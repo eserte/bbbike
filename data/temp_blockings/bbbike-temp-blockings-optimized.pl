@@ -3164,7 +3164,7 @@ userdel	q2::inwork 5258,11285 5236,10994
          'from' => undef,
          'id' => 2425,
          'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-01-09 (Asphaltierungsarbeiten)
+#: last_checked: 2014-02-14 (Asphaltierungsarbeiten)
 #: check_frequency: 30d
 # REMOVED --- userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13085,7904 12870,8087
@@ -3551,7 +3551,7 @@ userdel	q3::inwork 13275,11830 13295,11792 13467,11778
          'id' => 2537,
          'data' => '#: by: http://www.morgenpost.de/berlin-aktuell/article124783293/Geplatzte-Wasserleitung-Greifswalder-Strasse-gesperrt.html
 #: XXX laut MoPo nur bis Freitag, prüfen
-#: last_checked: 2014-02-13
+#: last_checked: 2014-02-14
 #: next_check: 2014-02-18
 userdel	q3::inwork; 11946,13993 11820,13804
 ',

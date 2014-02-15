@@ -816,8 +816,8 @@ EOF
        text  => 'Gartenstraße zwischen Invalidenstraße und Bernauer Straße gesperrt, Baustelle, Einbahnstraße in südlicher Richtung wird eingerichtet, zudem wird die Ackerstraße zwischen Invalidenstraße und Bernauer Straße gesperrt. Dauer: 01.09.2004, 06.00 Uhr bis 22.10.2004',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 9383,13978 9224,14169
-userdel	1 9400,14400 9439,14368 9627,14229 9750,14132 9810,14066
+userdel	1 9383,13986 9224,14169
+userdel	1 9400,14400 9439,14368 9627,14229 9750,14132 9804,14071
 EOF
      },
      { from  => 1093928400, # 2004-08-31 07:00
@@ -4315,7 +4315,7 @@ EOF
        text  => 'Invalidenstraße, Prenzlauer Berg Richtung Tiergarten Zwischen Kreuzung Gartenstraße und Kreuzung Chausseestraße Baustelle, gesperrt, Dauer: 19.04.2006 09:00 Uhr bis 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9383,13978 9274,13963 9203,13953
+userdel	2 9383,13986 9274,13963 9203,13953
 userdel	2 9151,13941 9203,13953
 userdel	2 9151,13941 9085,13919
 userdel	2 9085,13919 8935,13844
@@ -4519,7 +4519,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002776',
        data  => <<EOF,
-userdel	1 15388,16502 15142,16499 15134,16499 14809,16525 14621,16563
+userdel	1 15388,16502 15142,16499 15134,16499 14809,16525 14619,16551
 EOF
      },
      { from  => 1147721063, # 2006-05-15 21:24
@@ -5184,7 +5184,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84063',
        data  => <<EOF,
-userdel	1::inwork 14621,16563 14809,16525 15134,16499 15142,16499 15388,16502
+userdel	1::inwork 14619,16551 14809,16525 15134,16499 15142,16499 15388,16502
 EOF
      },
      { from  => 1152566231, # 2006-07-10 23:17
@@ -5219,7 +5219,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_83906_COPY_1',
        data  => <<EOF,
-userdel	1::inwork 9224,14169 9383,13978
+userdel	1::inwork 9224,14169 9383,13986
 EOF
      },
      { from  => 1159397648, # 2006-09-28 00:54
@@ -5442,7 +5442,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_70880',
        data  => <<EOF,
-userdel	1::inwork 9810,14066 9679,14039
+userdel	1::inwork 9804,14071 9676,14046
 EOF
      },
      { from  => 1154815200, # 2006-08-06 00:00
@@ -5633,7 +5633,7 @@ EOF
        text  => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 14621,16563 14809,16525 15134,16499 15142,16499 15388,16502 15432,16500
+userdel	1::inwork 14619,16551 14809,16525 15134,16499 15142,16499 15388,16502 15432,16500
 EOF
      },
      { from  => 1156478400, # 2006-08-25 06:00
@@ -8867,7 +8867,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005812',
        data  => <<EOF,
-userdel	1::inwork 9810,14066 9822,14067 9937,14080 10003,14088
+userdel	1::inwork 9804,14071 9821,14073 9936,14085 10002,14092
 EOF
      },
      { from  => 1182722400, # 2007-06-25 00:00
@@ -14197,7 +14197,7 @@ EOF
        source_id => 'IM_012706',
        data  => <<EOF,
 #: last_checked: 2009-05-28
-userdel	q4::inwork 9531,13797 9670,13637
+userdel	q4::inwork 9535,13801 9670,13637
 EOF
      },
      { from  => 1242712177, # 2009-05-19 07:49
@@ -19288,7 +19288,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017330',
        data  => <<EOF,
-userdel	q4::inwork; 9383,13978 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
+userdel	q4::inwork; 9383,13986 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 EOF
      },
      { from  => 1308261600, # 2011-06-17 00:00
@@ -19612,7 +19612,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_107796',
        data  => <<EOF,
-userdel	q4::inwork; 9224,14169 9383,13978
+userdel	q4::inwork; 9224,14169 9383,13986
 EOF
      },
      { from  => 1313269753, # 2011-08-13 23:09
@@ -21019,7 +21019,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20121114.1215.378008.html',
        data  => <<EOF,
-userdel	q4::inwork 10558,14176 10426,14262
+userdel	q4::inwork 10561,14181 10426,14262
 EOF
      },
      { from  => undef, # 
@@ -21268,7 +21268,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-01-09 (Asphaltierungsarbeiten)
+#: last_checked: 2014-02-14 (Asphaltierungsarbeiten)
 #: check_frequency: 30d
 # REMOVED --- userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13085,7904 12870,8087
@@ -22445,7 +22445,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.morgenpost.de/berlin-aktuell/article124783293/Geplatzte-Wasserleitung-Greifswalder-Strasse-gesperrt.html
 #: XXX laut MoPo nur bis Freitag, prüfen
-#: last_checked: 2014-02-13
+#: last_checked: 2014-02-14
 #: next_check: 2014-02-18
 userdel	q3::inwork; 11946,13993 11820,13804
 EOF
