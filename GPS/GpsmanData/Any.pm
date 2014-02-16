@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Any.pm,v 1.8 2009/01/13 22:11:04 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.09';
 
 use GPS::GpsmanData;
 
@@ -115,6 +114,7 @@ sub load_gpx {
 	my $gpsman_time = sprintf "%02d-%s-%04d %02d:%02d:%02d", $D, $number_to_monthabbrev{$M+0}, $Y, $h, $m, $s;
     };
 
+    require GPS::GpsmanData::GarminGPX;
     require XML::Twig;
 
     my $twig = XML::Twig->new;
@@ -128,13 +128,17 @@ sub load_gpx {
 	    my $wpt_in = $wpt_or_trk;
 	    my $name;
 	    my $gpsman_time;
+	    my $gpsman_symbol;
 	    for my $wpt_child ($wpt_in->children) {
 		if ($wpt_child->name eq 'name') {
 		    $name = $wpt_child->children_text;
 		} elsif ($wpt_child->name eq 'time') {
 		    my $time = $wpt_child->children_text;
 		    $gpsman_time = $gpsman_time_to_time->($time);
-		}
+		} elsif ($wpt_child->name eq 'sym') {
+		    my $sym = $wpt_child->children_text;
+		    $gpsman_symbol = GPS::GpsmanData::GarminGPX::garmin_symbol_name_to_gpsman_symbol_name($sym);
+		}		    
 	    }
 	    my($lat, $lon) = $latlong2xy_twig->($wpt_in);
 	    my $wpt = GPS::Gpsman::Waypoint->new;
@@ -143,6 +147,7 @@ sub load_gpx {
 	    $wpt->Latitude($lat);
 	    $wpt->Longitude($lon);
 	    $wpt->Comment($gpsman_time) if $gpsman_time;
+	    $wpt->Symbol($gpsman_symbol) if defined $gpsman_symbol;
 	    push @wpts, $wpt;
 	} elsif ($wpt_or_trk->name eq 'trk') {
 	    my $trk = $wpt_or_trk;
