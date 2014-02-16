@@ -323,6 +323,21 @@ use vars qw(%garmin_id_to_garmin_gpx_symbol_name);
 # until here
 );
 
+
+my $garmin_id_to_gpsman_symbol_name;
+sub _setup_garmin_id_to_gpsman_symbol_name {
+    if (!$garmin_id_to_gpsman_symbol_name) {
+	$garmin_id_to_gpsman_symbol_name = { reverse %gpsman_symbol_name_to_garmin_id };
+    }
+}
+
+my $garmin_gpx_symbol_name_to_garmin_id;
+sub _setup_garmin_gpx_symbol_name_to_garmin_id {
+    if (!$garmin_gpx_symbol_name_to_garmin_id) {
+	$garmin_gpx_symbol_name_to_garmin_id = { reverse %garmin_id_to_garmin_gpx_symbol_name };
+    }
+}
+
 # XXX The user defined symbols; currently hardcoded to the bike2008 set
 my $garmin_user_id_to_name;
 sub _setup_garmin_user_id_to_name {
@@ -349,6 +364,14 @@ sub _setup_garmin_user_id_to_name {
     }
 }
 
+my $garmin_user_name_to_id;
+sub _setup_garmin_user_name_to_id {
+    if (!$garmin_user_name_to_id) {
+	_setup_garmin_user_id_to_name();
+	$garmin_user_name_to_id = { reverse %$garmin_user_id_to_name };
+    }
+}
+
 sub gpsman_symbol_to_garmin_symbol_name {
     my($gpsman_symbol) = @_;
     if ($gpsman_symbol =~ m{^user:(\d+)$}) {
@@ -361,6 +384,21 @@ sub gpsman_symbol_to_garmin_symbol_name {
 	my $name = $garmin_id_to_garmin_gpx_symbol_name{$id};
 	$name;
     }
+}
+
+sub garmin_symbol_name_to_gpsman_symbol_name {
+    my($garmin_symbol) = @_;
+    _setup_garmin_user_name_to_id();
+    if (exists $garmin_user_name_to_id->{$garmin_symbol}) {
+	return "user:" . $garmin_user_name_to_id->{$garmin_symbol};
+    } else {
+	_setup_garmin_gpx_symbol_name_to_garmin_id();
+	my $id = $garmin_gpx_symbol_name_to_garmin_id->{$garmin_symbol};
+	return if !defined $id;
+	_setup_garmin_id_to_gpsman_symbol_name();
+	my $gpsman_symbol = $garmin_id_to_gpsman_symbol_name->{$id};
+	$gpsman_symbol;
+    };	
 }
 
 1;
