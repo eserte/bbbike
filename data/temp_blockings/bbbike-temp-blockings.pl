@@ -363,11 +363,11 @@ EOF
 userdel	2 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5368,13406 5248,13434
 EOF
      },
-     { from  => $isodate2epoch->("2013-04-30 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-05-01 23:59:59"),
+     { from  => $isodate2epoch->("2014-04-30 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-05-01 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 5]],
-       text  => 'MyFest 2013: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2013',
+       text  => 'MyFest 2014: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2014',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.myfest36.de/
