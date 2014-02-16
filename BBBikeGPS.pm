@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2008,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2008,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -244,7 +244,7 @@ sub BBBikeGPS::draw_gpsman_data {
     $cfc_top->transient($top) if $main::transient;
     $main::toplevel{'BBBikeGPS.pm'} = $cfc_top;
 
-    use vars qw($draw_gpsman_data_auto $draw_gpsman_data_s $draw_gpsman_data_p
+    use vars qw($gui_draw_gpsman_data_auto $gui_draw_gpsman_data_s $gui_draw_gpsman_data_p
 		$show_track_graph
 		$show_track_graph_speed
 		$show_track_graph_alt
@@ -253,9 +253,9 @@ sub BBBikeGPS::draw_gpsman_data {
 		$show_statistics
 		$do_center_begin
 		$draw_point_names);
-    $draw_gpsman_data_auto = 1 if !defined $draw_gpsman_data_auto;
-    $draw_gpsman_data_s = 0 if !defined $draw_gpsman_data_s;
-    $draw_gpsman_data_p = 0 if !defined $draw_gpsman_data_p;
+    $gui_draw_gpsman_data_auto = 1 if !defined $gui_draw_gpsman_data_auto;
+    $gui_draw_gpsman_data_s = 0 if !defined $gui_draw_gpsman_data_s;
+    $gui_draw_gpsman_data_p = 0 if !defined $gui_draw_gpsman_data_p;
     $show_track_graph = 0   if !defined $show_track_graph;
     $show_track_graph_speed = 1 if !defined $show_track_graph_speed;
     $show_track_graph_alt = 0 if !defined $show_track_graph_alt;
@@ -267,22 +267,6 @@ sub BBBikeGPS::draw_gpsman_data {
 
     my $file = $gpsman_last_dir || Cwd::cwd();
     my $weiter = 0;
-
-    my $draw_gpsman_data_auto_handler = sub {
-	if ($draw_gpsman_data_auto && defined $file) {
-	    if ($file =~ m{\.(trk|gpx)$}) {
-		$draw_gpsman_data_s = 1;
-		$draw_gpsman_data_p = 0;
-	    } elsif ($file =~ m{\.wpt$}) {
-		$draw_gpsman_data_s = 0;
-		$draw_gpsman_data_p = 1;
-	    } else {
-		# don't know, select both
-		$draw_gpsman_data_s = 1;
-		$draw_gpsman_data_p = 1;
-	    }
-	}
-    };
 
     $cfc_top->Label(-text => M("Gpsman-Datei").":")->pack(-anchor => "w");
     my $f = $cfc_top->Frame->pack(-fill => "x", -expand => 1);
@@ -385,8 +369,8 @@ sub BBBikeGPS::draw_gpsman_data {
 				      if (!-r $file && -r "$heute.gpx") {
 					  $file = "$heute.gpx";
 				      }					  
-				      $draw_gpsman_data_s = 1;
-				      $draw_gpsman_data_p = 0;
+				      $gui_draw_gpsman_data_s = 1;
+				      $gui_draw_gpsman_data_p = 0;
 				  }
 		   )->grid(-row => $row, -column => 0, -sticky => "ew");
 	$ff->Button(-text => M"Track gestern",
@@ -395,23 +379,23 @@ sub BBBikeGPS::draw_gpsman_data {
 				      if (!-r $file && -r "$gestern.gpx") {
 					  $file = "$gestern.gpx";
 				      }
-				      $draw_gpsman_data_s = 1;
-				      $draw_gpsman_data_p = 0;
+				      $gui_draw_gpsman_data_s = 1;
+				      $gui_draw_gpsman_data_p = 0;
 				  }
 		   )->grid(-row => $row, -column => 1, -sticky => "ew");
 	$row++;
 	$ff->Button(-text => M"Waypoints heute",
 		    (!-r "$heute.wpt" ? (-state => "disabled") : ()),
 		    -command => sub { $file = "$heute.wpt";
-				      $draw_gpsman_data_s = 0;
-				      $draw_gpsman_data_p = 1;
+				      $gui_draw_gpsman_data_s = 0;
+				      $gui_draw_gpsman_data_p = 1;
 				  }
 		   )->grid(-row => $row, -column => 0, -sticky => "ew");
 	$ff->Button(-text => M"Waypoints gestern",
 		    (!-r "$gestern.wpt" ? (-state => "disabled") : ()),
 		    -command => sub { $file = "$gestern.wpt";
-				      $draw_gpsman_data_s = 0;
-				      $draw_gpsman_data_p = 1;
+				      $gui_draw_gpsman_data_s = 0;
+				      $gui_draw_gpsman_data_p = 1;
 				  }
 		   )->grid(-row => $row, -column => 1, -sticky => "ew");
 	$row++;
@@ -435,7 +419,7 @@ EOF
     {
 	my($draw_gpsman_data_s_check, $draw_gpsman_data_p_check);
 	my $fix_draw_gpsman_data_check_visibility = sub {
-	    if ($draw_gpsman_data_auto) {
+	    if ($gui_draw_gpsman_data_auto) {
 		$_->configure(-state => 'disabled')
 		    for ($draw_gpsman_data_s_check, $draw_gpsman_data_p_check);
 	    } else {
@@ -444,13 +428,13 @@ EOF
 	    }
 	};
 	$f2->Checkbutton(-text => M"Auto",
-			 -variable => \$draw_gpsman_data_auto,
+			 -variable => \$gui_draw_gpsman_data_auto,
 			 -command => $fix_draw_gpsman_data_check_visibility,
 			)->pack(-anchor => "w");
 	$draw_gpsman_data_s_check = $f2->Checkbutton(-text => M"Strecken zeichnen",
-						     -variable => \$draw_gpsman_data_s)->pack(-anchor => "w");
+						     -variable => \$gui_draw_gpsman_data_s)->pack(-anchor => "w");
 	$draw_gpsman_data_p_check = $f2->Checkbutton(-text => M"Punkte zeichnen",
-						     -variable => \$draw_gpsman_data_p)->pack(-anchor => "w");
+						     -variable => \$gui_draw_gpsman_data_p)->pack(-anchor => "w");
 	$fix_draw_gpsman_data_check_visibility->();
     }
 
@@ -557,13 +541,12 @@ EOF
     $cfc_top->destroy;
     $top->update;
 
-    $draw_gpsman_data_auto_handler->();
-
     my %draw_args =
 	(-gap => $max_gap,
 	 -solidcoloring => $solid_coloring,
-	 -drawstreets => $draw_gpsman_data_s,
-	 -drawpoints  => $draw_gpsman_data_p,
+	 -drawtypeauto => $gui_draw_gpsman_data_auto,
+	 -drawstreets => $gui_draw_gpsman_data_s,
+	 -drawpoints  => $gui_draw_gpsman_data_p,
 	 -accuracylevel => $accuracy_level,
 	 -centerbegin => $do_center_begin,
 	);
@@ -606,14 +589,18 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my($top, $file, %args) = @_;
     my $max_gap = exists $args{-gap} ? $args{-gap} : DEFAULT_MAX_GAP;
     my $solid_coloring = $args{-solidcoloring};
-    my $draw_gpsman_data_s = exists $args{-drawstreets} ? $args{-drawstreets} : $global_draw_gpsman_data_s;
-    my $draw_gpsman_data_p = exists $args{-drawpoints} ? $args{-drawpoints} : $global_draw_gpsman_data_p;
+    my $draw_gpsman_data_auto = $args{-drawtypeauto};
+    # maybe, because auto may take precedence
+    my $maybe_draw_gpsman_data_s = exists $args{-drawstreets} ? $args{-drawstreets} : $global_draw_gpsman_data_s;
+    my $maybe_draw_gpsman_data_p = exists $args{-drawpoints} ? $args{-drawpoints} : $global_draw_gpsman_data_p;
     my $accuracy_level = exists $args{-accuracylevel} ? $args{-accuracylevel} : 3;
     my $do_center_begin = $args{-centerbegin} || 0;
     my $plotted_layer_info = $args{-plottedlayerinfo} || {};
 
     my $base;
     my $s;
+    my $draw_gpsman_data_s;
+    my $draw_gpsman_data_p;
 
     if (!$cfc_mapping) { # may happen if loading from "last loaded
                          # tracks" menu
@@ -631,14 +618,26 @@ sub BBBikeGPS::do_draw_gpsman_data {
     require GPS::GpsmanData::Any;
     my $gps = GPS::GpsmanData::Any->load($file);
 
+    # streets or points or both?
+    # $draw_gpsman_data_auto needs the gps file already loaded
+    if ($draw_gpsman_data_auto) {
+	if ($gps->has_track || $gps->has_route) {
+	    $draw_gpsman_data_s = 1;
+	    $draw_gpsman_data_p = 0;
+	} else {
+	    $draw_gpsman_data_s = 0;
+	    $draw_gpsman_data_p = 1;
+	}
+    } else {
+	$draw_gpsman_data_s = $maybe_draw_gpsman_data_s;
+	$draw_gpsman_data_p = $maybe_draw_gpsman_data_p;
+    }
+
     require Karte;
     Karte::preload(qw(Polar));
     require Strassen;
     $s = Strassen->new;
-    my $s_speed;
-    if (($gps->has_track || $gps->has_route) && $draw_gpsman_data_s) {
-	$s_speed = Strassen->new;
-    }
+    my $s_speed = $draw_gpsman_data_s ? Strassen->new : undef;
     my $whole_dist = 0;
     my $whole_time = 0;
     my $max_speed = 0;
