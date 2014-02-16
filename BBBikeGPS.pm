@@ -892,6 +892,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	if ($draw_point_names) {
 	    $args{NameDraw} = 1;
 	}
+	$args{Width} = [7, 8, 10, 14, 18, 25]->[main::get_index_by_scale($main::scale)]; # XXX width is fixed and does not change on zooming XXX
 	my $abk = main::plot_layer('p',$outfile, %args);
 	$plotted_layer_info->{"p-$abk"}++ if defined $abk;
     }
