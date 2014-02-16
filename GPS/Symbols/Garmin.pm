@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,10 +15,12 @@ package GPS::Symbols::Garmin;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use File::Glob qw();
 use File::Temp qw();
+
+use BBBikeUtil qw();
 
 my $cached_symbol_to_img;
 
