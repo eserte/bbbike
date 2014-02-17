@@ -7,7 +7,7 @@
 # (This is a slightly modified version of the original pmake as found in
 # the FreeBSD sources)
 #
-# Debian users may use freebsd-make from the freebsd-buildutils
+# Debian users may use freebsd-make resp. fmake from the freebsd-buildutils
 # package.
 
 .ifndef HOSTNAME

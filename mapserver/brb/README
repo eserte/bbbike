@@ -3,7 +3,8 @@ README
 
 Showing bbbike data within Mapserver.
 
-Rough installation procedure on a Debian system:
+Rough installation procedure on a Debian system (note that for
+Debian/jessie and later "freebsd-make" must be replaced by "fmake"):
 
    * Install the following packages:
 

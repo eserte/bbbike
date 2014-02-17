@@ -1,4 +1,4 @@
-# NOTE: use BSD make (pmake or freebsd-make on some systems!)
+# NOTE: use BSD make (pmake or freebsd-make or fmake on some systems!)
 #
 
 PERL=			perl

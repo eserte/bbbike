@@ -265,6 +265,7 @@
   xlink:href="http://sourceforge.net/project/showfiles.php?group_id=91459package_id=115420">Sourceforge</link>
   als <command>pmake</command> im Quellcode erhältlich ist.
   Debian-Benutzer können das Kommando <command>freebsd-make</command>
+  (bis Debian/wheezy) bzw. <command>fmake</command> (seit Debian/jessie)
   aus dem Paket <package>freebsd-buildutils</package> verwenden. Ein
   Windows-Binary existiert noch nicht.</para>
 
