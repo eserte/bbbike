@@ -40,6 +40,7 @@ use Getopt::Long;
 use Cwd;
 use Cwd qw(abs_path);
 
+use BBBikeBuildUtil qw(get_pmake);
 use BBBikeUtil qw(is_in_path save_pwd);
 
 # be nice:
@@ -65,9 +66,9 @@ if (!GetOptions("n" => sub { $do_exec = 0; $verbose = 1; },
 die "Works only on the source system and not on Win32"
     if $^O eq 'MSWin32';
 
-my $make = $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
+my $make = get_pmake;
 if (!is_in_path($make)) {
-    die "The $make program is not available.\n";
+    die "The BSD make program is not available.\n";
 }
 
 # Vorgehensweise:

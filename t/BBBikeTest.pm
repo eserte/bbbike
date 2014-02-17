@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -38,6 +38,7 @@ use base qw(Exporter);
 use File::Basename qw(dirname);
 use File::Spec     qw();
 
+use BBBikeBuildUtil qw(get_pmake);
 use BBBikeUtil qw(is_in_path);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
@@ -767,10 +768,6 @@ sub is_float ($$;$) {
     } else {
 	Test::More::is($value, $expected, $testname); # will fail
     }
-}
-
-sub get_pmake () {
-    $^O =~ m{bsd}i ? "make" : is_in_path("freebsd-make") ? "freebsd-make" : "pmake";
 }
 
 sub _update_bbbike_test_data () {
