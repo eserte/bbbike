@@ -22424,22 +22424,19 @@ userdel	q3::inwork 13173,11788 13295,11792 13366,11651
 userdel	q3::inwork 13275,11830 13295,11792 13467,11778
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
+     { from  => 1392677587, # undef, # 
+       until => 1392677592, # undef, # XXX
        text  => 'Wadzeckstr. - Mollstr.: Parkplatzzufahrt gesperrt, Umfahrung auf dem Gehweg der Otto-Braun-Str. langsam möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX bleibt das dauerhaft gesperrt?
-#: XXX_indoor: evtl. Umfahrung über Otto-Braun-Str. definieren
-#: last_checked: 2014-02-13
-#: check_frequency: 7d
+# REMOVED (-> gesperrt-orig) --- #: XXX bleibt das dauerhaft gesperrt? --- #: XXX_indoor: evtl. Umfahrung über Otto-Braun-Str. definieren --- #: last_checked: 2014-02-13 --- #: check_frequency: 7d
 	q4::inwork; 11406,13321 11379,13279 11326,13196
 	q3::inwork; 11326,13196 11379,13279 11406,13321
 EOF
      },
      { from  => 1392120000, # 2014-02-11 13:00
-       until => 1392832980, # 2014-02-19 19:03
-       text  => 'Greifswalder Str.: geplatzte Wasserleitung an der Kreuzung Heinrich-Roller-Str., Fahrbahn stadteinwärts gesperrt, langsame Umfahrung über Gehweg möglich, bis 19.02.2014 abends',
+       until => 1392814800, # 2014-02-19 14:00
+       text  => 'Greifswalder Str.: geplatzte Wasserleitung an der Kreuzung Heinrich-Roller-Str., Fahrbahn stadteinwärts gesperrt, langsame Umfahrung über Gehweg möglich, bis 19.02.2014 mittags',
        type  => 'handicap',
        source_id => 'IM_021257',
        data  => <<EOF,
