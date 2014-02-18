@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -43,9 +43,6 @@ BEGIN {
     #   (for example, ski.gpx (1.5MB) takes less than 1 second with XML::LibXML,
     #    and 8 seconds with XML::Twig, on a Athlon64, i386-freebsd,
     #    perl 5.8.8)
-    # Downside:
-    # * XML::Twig has additional support for gracefully drop encoding to
-    #   avoid using utf-8 or iso-8859-1 if possible
     if (_require_XML_LibXML) {
 	$use_xml_module = "XML::LibXML";
     } else {
@@ -401,27 +398,6 @@ sub _bbd2gpx_twig {
     my $meta = delete $args{-meta} || {};
     my $with_trip_extensions = delete $args{-withtripext};
 
-    # Try to find minimum needed encoding. This is to help
-    # broken applications (wrt correct XML parsing) like gpsman 6.3.2
-    my $need_utf8;
-    my $need_latin1;
-    my $encoding_checker = ($] >= 5.008 ? eval <<'EOF' :
-sub {
-    my $name = shift;
-    if (!$need_utf8) {
-	if ($name =~ m{[\x{0100}-\x{1ffff}]}) {
-	    $need_utf8 = 1;
-	} elsif (!$need_latin1) {
-	    if ($name =~ m{[\x80-\xff]}) {
-		$need_latin1 = 1;
-	    }
-	}
-    }
-}
-EOF
-			    sub { } # no/limited unicode support with older perls
-			   );
-
     $self->init;
     my @wpt;
     my @trkseg;
@@ -429,7 +405,6 @@ EOF
 	my $r = $self->next;
 	last if !@{ $r->[Strassen::COORDS] };
 	my $name = $r->[Strassen::NAME];
-	$encoding_checker->($name);
 	if (@{ $r->[Strassen::COORDS] } == 1) {
 	    push @wpt, { name => $name,
 			 coords => [ $xy2longlat->($r->[Strassen::COORDS][0]) ],
@@ -447,10 +422,7 @@ EOF
 	$meta->{name} = make_name_from_trkseg(\@trkseg);
     }
 
-    my $twig = XML::Twig->new($need_utf8   ? (output_encoding => 'utf-8') :
-			      $need_latin1 ? (output_encoding => 'iso-8859-1') :
-			      ()
-			     );
+    my $twig = XML::Twig->new(output_encoding => 'utf-8');
     my $gpx = XML::Twig::Elt->new(gpx => { version => "1.1",
 					   creator => "Strassen::GPX $VERSION (XML::Twig $XML::Twig::VERSION) - http://www.bbbike.de",
 					   xmlns => "http://www.topografix.com/GPX/1/1",
