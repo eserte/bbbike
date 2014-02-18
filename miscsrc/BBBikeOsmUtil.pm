@@ -226,12 +226,10 @@ sub get_overpass_download_url {
 
 sub download_and_plot_visible_area {
     my(%args) = @_;
-    my $withfallback = delete $args{withfallback};
     die "Unhandled args: " . join(" ", %args) if %args;
 
     my($x0,$y0,$x1,$y1) = get_visible_area();
     my $url  = get_download_url($x0,$y0,$x1,$y1);
-    my $url2 = get_fallback_download_url($x0,$y0,$x1,$y1);
     require File::Temp;
     my $ua = _get_ua();
     my(undef,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ".osm");
@@ -242,14 +240,7 @@ sub download_and_plot_visible_area {
     eval {
 	my $resp = $ua->get($url, ':content_file' => $tmpfile);
 	if (!$resp->is_success) {
-	    if ($withfallback && $url2) {
-		my $resp2 = $ua->get($url2, ':content_file' => $tmpfile);
-		if (!$resp->is_success) {
-		    die "Could not download $url: " . $resp->status_line . " and $url2: " . $resp2->status_line . "\n";
-		}
-	    } else {
-		die "Could not download $url: " . $resp->status_line . "\n";
-	    }
+	    die "Could not download $url: " . $resp->status_line . "\n";
 	}
 	main::status_message("Download successful, now plotting $tmpfile...", "info"); $main::top->update;
 	plot_osm_files([$tmpfile]);

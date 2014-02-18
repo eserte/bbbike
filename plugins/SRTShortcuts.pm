@@ -603,7 +603,7 @@ EOF
 		[Button => "Download and display any OSM data",
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
-		     BBBikeOsmUtil::download_and_plot_visible_area(withfallback => 1);
+		     BBBikeOsmUtil::download_and_plot_visible_area();
 		 }],
 		[Button => "Delete OSM layer",
 		 -command => sub {
