@@ -57,6 +57,9 @@ for my $line (`@cmd`) {
     } elsif ($line =~ m{^diff.*? a/(\S+) b/\S+}) { # new git diff style
 	$current_file = $1;
 	$new_file_started = 1;
+    } elsif ($line =~ m{^diff.* (\S+) (\S+)$}) { # traditional diff
+	$current_file = $1;
+	$new_file_started = 1;
     }
 
     if ($new_file_started) {
