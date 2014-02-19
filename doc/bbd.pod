@@ -394,6 +394,21 @@ Same as E<quot>by:E<quot> for unverified data.
 E<quot>UnverifiedE<quot> means that there's no communication channel
 back to the information provider.
 
+=item C<valid: YYYYMMDD-YYYYMMDD>
+
+=item C<valid: YYYYMMDD->
+
+=item C<valid: -YYYYMMDD>
+
+Define the validity period of records. Other tools (e.g.
+L<grepstrassen>) may remove non-valid records automatically.
+
+Note: in future L<Strassen::Core> may deal automatically (or optional)
+with removal of non-valid records.
+
+NOTE: Makefile rules don't cope well with the ability that source
+files are processed differently depending on time.
+
 =item C<temporary:>
 
 The next block or line is just a temporary feature. Typically this
