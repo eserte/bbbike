@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.64 2008/08/06 21:25:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2001,2004,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2001,2004,2005,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -106,6 +105,7 @@ my $specsperre_cr;
 my $specsperre_exceptions;
 my $specsperre_exceptions_hash;
 my $append;
+my $append_once;
 my $verbose = 0;
 my $quiet = 0;
 my $do_cropdouble = 0;
@@ -316,6 +316,7 @@ LINES: while(defined($_ = nextline())) {
 
     if (/^\#: (\S+)\s*(.*\S)\s+v+$/) {
 	my($dir, $text) = ($1, $2);
+	$dir =~ s{:$}{};
 	if ($dir eq 'append_comment') {
 	    $append = $text;
 	} elsif ($dir =~ /$skip_directives/) {
@@ -325,6 +326,7 @@ LINES: while(defined($_ = nextline())) {
 	}
     } elsif (/^\#: (\S+)\s+\^+$/) {
 	my($dir) = ($1);
+	$dir =~ s{:$}{};
 	if ($dir eq 'append_comment') {
 	    undef $append;
 	} elsif ($dir =~ /$skip_directives/) {
@@ -332,7 +334,13 @@ LINES: while(defined($_ = nextline())) {
 	} else {
 	    #die "Unknown directive: $dir";
 	}
-    }
+    } elsif (/^\#: (\S+)\s*(.*)/) {
+	my($dir, $text) = ($1, $2);
+	$dir =~ s{:$}{};
+	if ($dir eq 'append_comment') {
+	    $append_once = $text;
+	}
+    }	
 
     next if /^\#/ or /^\s*$/;
 
@@ -344,6 +352,9 @@ LINES: while(defined($_ = nextline())) {
     }
     if (defined $append) {
 	$name .= " ($append)";
+    } elsif (defined $append_once) {
+	$name .= " ($append_once)";
+	undef $append_once;
     }
     if ($strict) {
 	if ($rest =~ /^\s/) {
