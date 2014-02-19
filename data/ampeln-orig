@@ -2577,6 +2577,22 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 16066,11960
 #: note: Anforderungsampel für linksabbiegende Radfahrer, aber evtl. ist die Anforderung immer aktiv
 	X 18878,9517
+# 
+#: next_check_id: GRENZALLEE-2014 vvv
+#: valid: 20140224-20170601 vvv
+#: next_check: 2017-06-01 vvv
+#: note: Ampel befindet sich nordwestlich der Kreuzung
+	F::inwork 14567,6810
+#: note: Extra-Umweg für Radfahrer in Richtung Südosten
+	X::inwork 14724,6668
+	X::inwork 14366,6337
+	X::inwork 14193,6556
+	X::inwork 13891,7107
+	X::inwork 13278,6967
+#: next_check ^^^
+#: valid ^^^
+#: next_check_id ^^^
+# 
 ################################################################################
 #: note: Potsdam vvv
 	X -12940,-1625
