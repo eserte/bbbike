@@ -197,8 +197,6 @@ EOF
 
 {
     my $expected = <<'EOF';
-#:
-#: valid: -20120101
 Samplestreet	X1 100,100 200,200
 Alwaysvalidalley	X4 400,400 500,500
 EOF
@@ -215,8 +213,6 @@ EOF
 
 {
     my $expected = <<'EOF';
-#:
-#: valid: 20120201-20120401
 Primjerulica	X3 300,300 400,400
 Alwaysvalidalley	X4 400,400 500,500
 EOF
@@ -225,10 +221,7 @@ EOF
 
 {
     my $expected = <<'EOF';
-#:
-#: valid: 20120301-
 Beispielstrasse	X2 200,200 300,300
-#: valid: 20120201-20120401
 Primjerulica	X3 300,300 400,400
 Alwaysvalidalley	X4 400,400 500,500
 EOF
@@ -238,8 +231,6 @@ EOF
 
 {
     my $expected = <<'EOF';
-#:
-#: valid: 20120301-
 Beispielstrasse	X2 200,200 300,300
 Alwaysvalidalley	X4 400,400 500,500
 EOF

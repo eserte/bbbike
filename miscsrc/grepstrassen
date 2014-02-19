@@ -126,14 +126,16 @@ if ($valid_def) {
 	}
     }
     my $code = sub {
-	my($dirs) = @_;
-	if (!$dirs) { # no 'valid' directive -> assume it's valid
+	my($all_dirs) = @_;
+	if (!$all_dirs->{'valid'}) { # no 'valid' directive -> assume it's valid
 	    return 1;
 	}
+	my $dirs = $all_dirs->{'valid'};
 	if (@$dirs != 1) {
 	    die "No support for multiple 'valid' directives (@$dirs)";
 	}
 	my $dir = $dirs->[0];
+	delete $all_dirs->{'valid'}; # note, side effect: 'valid' directive is removed for output
 	if (my($from, $to) = $dir =~ m{^(\d{8})?-(\d{8})?$}) {
 	    if (!$from && !$to) {
 		die "Please specify either from or to date, or both";
@@ -149,7 +151,7 @@ if ($valid_def) {
 	    die "Invalid 'valid' directive '$dir', should be either YYYYMMDD-YYYYMMDD or -YYYYMMDD or YYYYMMDD-";
 	}
     };
-    push @directivecode, ['valid', $code];
+    push @directivecode, $code;
 }
 
 my @datafiles = @ARGV;
@@ -234,8 +236,7 @@ LOOP_STREETS: while(1) {
     }
     if (@directivecode) {
 	for my $directivecode (@directivecode) {
-	    my($key, $code) = @$directivecode;
-	    if ($code->($dir->{$key})) { next LOOP_STREETS if $v } else { next LOOP_STREETS unless $v }
+	    if ($directivecode->($dir)) { next LOOP_STREETS if $v } else { next LOOP_STREETS unless $v }
 	}
     }
     # Match length/area
