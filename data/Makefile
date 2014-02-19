@@ -90,6 +90,11 @@ COMPUTED_TARGETS+=	inaccessible_strassen inaccessible_landstrassen oldnames
 # permissions
 NON_TARGETS=		upgrade_scope_hint
 
+INTERMEDIATE_TARGETS=	.strassen.tmp \
+			${PERSISTENTTMPDIR}/gesperrt-with-handicaps \
+			${PERSISTENTTMPDIR}/gesperrt-orig-valid \
+			${PERSISTENTTMPDIR}/gesperrt-without-nocross
+
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
@@ -136,8 +141,9 @@ targets:	${TARGETS}
 
 targets-clean:
 	-mkdir /tmp/old-data
+	-mkdir /tmp/old-tmp-data
+	-mv -f ${INTERMEDIATE_TARGETS} /tmp/old-tmp-data/
 	mv -f ${TARGETS} /tmp/old-data/
-	-rm -f .strassen.tmp
 
 fix-permissions:
 	for i in $(TARGETS) $(NON_TARGETS) temp_blockings/bbbike-temp-blockings.pl temp_blockings/*.bbd; do \
