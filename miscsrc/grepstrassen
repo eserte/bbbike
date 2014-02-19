@@ -23,6 +23,8 @@ use Storable qw(dclone);
 use Strassen::Core;
 use Strassen::Stat;
 
+my $iso_date_qr = qr{(\d{4})\D*(\d{2})\D*(\d{2})};
+
 my($v, $i, $cat, $catrx, $name, $namerx, $section, $sectionrx, @directive_def, @directive, @directiverx, @directivecode, $valid_def);
 my($minarea, $minlength);
 my $preserveglobaldirectives;
@@ -119,7 +121,7 @@ if ($valid_def) {
 	require POSIX;
 	$date = POSIX::strftime("%Y%m%d", localtime);
     } else {
-	if (my($y,$m,$d) = $valid_def =~ m{^(\d{4})\D*(\d{2})\D*(\d{2})$}) {
+	if (my($y,$m,$d) = $valid_def =~ m{^$iso_date_qr$}) {
 	    $date = sprintf "%04d%02d%02d", $y,$m,$d;
 	} else {
 	    die "Cannot parse date '$valid_def', should be in the form 'YYYY-MM-DD' or 'YYYYMMDD'";
@@ -136,7 +138,9 @@ if ($valid_def) {
 	}
 	my $dir = $dirs->[0];
 	delete $all_dirs->{'valid'}; # note, side effect: 'valid' directive is removed for output
-	if (my($from, $to) = $dir =~ m{^(\d{8})?-(\d{8})?$}) {
+	if (my($y1,$m1,$d1, $y2,$m2,$d2) = $dir =~ m{^(?:$iso_date_qr)?-(?:$iso_date_qr)?$}) {
+	    my $from = defined $y1 ? sprintf("%04d%02d%02d", $y1, $m1, $d1): undef;
+	    my $to   = defined $y2 ? sprintf("%04d%02d%02d", $y2, $m2, $d2): undef;
 	    if (!$from && !$to) {
 		die "Please specify either from or to date, or both";
 	    }

@@ -237,6 +237,27 @@ EOF
     is run_grepstrassen($sample_valid_bbd, ["-valid", "20120402"]), $expected;
 }
 
+{
+    my $sample_valid2_bbd = <<'EOF';
+#:
+#: valid: -2012-01-01
+Samplestreet	X1 100,100 200,200
+#: valid: 2012-03-01-
+Beispielstrasse	X2 200,200 300,300
+#: valid: 2012-02-01-2012-04-01
+Primjerulica	X3 300,300 400,400
+Alwaysvalidalley	X4 400,400 500,500
+EOF
+    my $expected = <<'EOF';
+Beispielstrasse	X2 200,200 300,300
+Primjerulica	X3 300,300 400,400
+Alwaysvalidalley	X4 400,400 500,500
+EOF
+    is run_grepstrassen($sample_valid_bbd, ["-valid", "2012-03-01"]), $expected;
+    is run_grepstrassen($sample_valid_bbd, ["-valid", "2012-04-01"]), $expected;
+}
+
+
 sub run_grepstrassen ($$) {
     my($in_data, $args) = @_;
     my($out_data, $err);
