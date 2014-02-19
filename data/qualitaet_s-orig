@@ -636,16 +636,17 @@ Große Sternallee: Parkweg	Q1 6809,11979 7058,11809 7163,11738 7382,11588 7504,11
 (Hiroshimastr. - Große Sternallee): Parkweg	Q1 7356,11517 7382,11588
 Bellevueallee: Mosaikpflaster	Q1 7039,12314 7383,12095 7460,12054 7658,11947 7717,11918 7801,11875 8016,11770 8032,11761 8172,11679
 Ahornsteig: Parkweg	Q1 7669,11586 7696,11621 7735,11656 7796,11681 7901,11684 8014,11740
-Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8014,11740 8032,11761 8156,11863 8221,11876 8262,11883 8453,12099 8522,12187 8538,12245
-Tiergarten: wassergebundene Decke	Q1 8210,11775 8156,11863 8091,11992 8089,12041 8107,12145
-Tiergarten: Parkweg	Q1 8005,11627 8014,11740 8016,11770 8022,12016
+Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8014,11740 8032,11761 8156,11863 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+Tiergarten: wassergebundene Decke	Q1 8210,11775 8156,11863 8132,11910 8091,11992 8089,12041 8107,12145
+Tiergarten: Parkweg	Q1 8005,11627 8014,11740 8016,11770 8020,11937 8022,12016
 Tiergarten: Parkweg	Q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8048,12135 8055,12186
 Tiergarten: Asphalt	Q0 8214,12205 8215,12156
-Tiergarten: Parkweg	Q1 8215,12156 8221,11876 8210,11775 8203,11686
+Tiergarten: Parkweg	Q1 8215,12156 8221,11885 8221,11876 8210,11775 8203,11686
 Tiergarten: Parkweg	Q1 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7182,11870 7173,11864 7058,11809 6778,11742 6540,11754
 Tiergarten: Parkweg	Q1 7777,12098 7772,12040
 Tiergarten: Asphalt	Q0 7772,12040 7717,11918 7706,11878 7701,11798 7649,11717 7621,11620 7615,11602
 Tiergarten: Parkweg	Q1 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
+Tiergarten: Parkweg	Q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8020,11937
 Parkweg: sehr gutes Kopfsteinpflaster	Q1 14318,9688 14361,9772 14404,9847 14448,9922
 Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 #: note: mittlerweile etwas wellig
@@ -6801,7 +6802,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8270,10613 8236,10623 8199,10634
 (Park am Gleisdreieck, Eingang Pohlstr.): Beton	Q0 8159,10430 8199,10424 8237,10418 8278,10384
 (Park am Gleisdreieck, Eingang Pohlstr.): Beton	Q0 8237,10418 8296,10438
-(Park am Gleisdreieck, Eingang Bülowstr.): Beton	Q0 8027,10076 8035,10075 8040,10076 8042,10084 8145,10090 8211,10083
+(Park am Gleisdreieck, Eingang Bülowstr.): Beton	Q0 8027,10076 8033,10047 8040,10076 8042,10084 8145,10090 8211,10083
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8362,10779 8357,10764 8341,10721
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8336,10829 8340,10753 8341,10721
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8357,10764 8340,10753 8318,10738
@@ -7904,7 +7905,7 @@ Elchdamm: Beton mit einigen leichten Schäden	Q0- -941,21260 -865,21244 -716,2128
 Jülicher Str.: Kopfsteinpflaster	Q2 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297 9458,16180 9441,16058
 (Mauerweg Frohnau-Heiligensee): Asphalt, teilweise mit einigen Fugen/Hebungen	Q0- 1896,26788 1869,26304 1832,26248 1595,26061 1410,25993 990,25895 442,25997 415,25974 413,25823 418,25771 565,25332 585,25069 600,24882 575,24601 105,24545 -382,24522 -708,24577
 (Mauerweg Frohnau-Heiligensee): Asphalt	Q0 -802,24541 -972,24498 -1655,24428 -1940,24464 -1953,24435
-(neben dem U-Bahn-Viadukt): wassergebundene Decke	Q1 7906,10098 7928,10094 8027,10076
+(neben dem U-Bahn-Viadukt): Asphalt	Q0 7906,10098 7928,10094 8027,10076
 (Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8027,10076 8029,10106 8074,10292 8061,10310
 (Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8338,10484 8393,10505
 (Treptower Park): Asphalt	Q0 15187,9038 15181,8967 15159,8934
@@ -9219,6 +9220,7 @@ Rumoldstr.: Verbundsteinpflaster	Q1+ 17366,12357 17454,12348 17474,12344 17526,1
 #: XXX entsteht hier Asphalt oder eine andere Pflasterung?
 #: XXX siehe auch Eintrag in gesperrt-orig
 #: last_checked: 2014-01-17 (Bauarbeiten)
+#: next_check: 2014-02-28
 (Weg am Stadtgarten Moabit): unbefestigter Weg	Q2- 5708,14077 5685,14215
 Helsingforser Platz: Betonpflaster	Q0- 13473,11456 13427,11431
 (Bornholmer Str. - Kolonnenweg): Asphalt	Q0 10134,16534 10118,16561 10108,16576 9954,16590
@@ -9266,6 +9268,8 @@ Am Tierpark [Wohngebiet]: Beton	Q1+ 18158,11631 18188,11592 18178,11515 18179,11
 Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21471,9246 21513,9232
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
+Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
+Engelwurzweg: unbefestigter Weg	Q2 25176,6544 25153,6596
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -22741,7 +22745,8 @@ Greifenhagener Str.: Kopfsteinpflaster	Q1 11123,15851 11150,15908
 #: corrected_by: srt (Q2 -> Q0, Asphalt mit Löchern und Flicken -> Asphalt)
 Gethsemanestr.: Asphalt	Q0 11158,15739 11191,15810 11123,15851
 Zehdenicker Str.: Kopfsteinpflaster	Q2 10599,13775 10480,13871
-Bissingzeile: Kopfsteinpflaster	Q2 8113,10786 8070,10680
+#: confirmed_by: srt
+Bissingzeile: Kopfsteinpflaster	Q2 8119,10797 8070,10680
 Reichpietschufer: Kleinpflaster	Q2 7595,11086 7575,11076
 Herkulesufer: Kleinpflaster	Q2 7575,11076 7251,11181 7218,11181 7140,11156 7142,11145 6920,11064 6882,11061
 #: corrected_by: srt (Q0 -> Q1+)

@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-02-13
+#: last_checked: 2014-02-18
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2014-02-14
+#: last_checked: 2014-02-18
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -357,6 +357,10 @@ Manteuffelstr.: werden Radstreifen markiert?	?::projected 8606,5496 8610,5579 86
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: by: https://www.facebook.com/SPDSchoeneberg/posts/391419604276368
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4769
+Uwe-Saager-Steig: ist das ein offizieller Name? Ausschilderung vor Ort?	? 7353,8633 7313,8661
 # 
 #: last_checked: 2014-02-14
 Konrad-Wolf-Str.: wahrscheinlich Bau eines Radwegs	?::inwork; 15066,14579 15174,14638
@@ -713,7 +717,7 @@ Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2014-01-10
+#: last_checked: 2014-02-18
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -891,6 +895,7 @@ Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,131
 #: osm_watch: way id="182859952" version="10"
 #: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014)
 #: last_checked: 2014-01-17
+#: next_check: 2014-02-23
 Erna-Samuel-Straße: werden hier noch Radstreifen erstellt?	?::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 # 
 # REMOVED (keine Anzeichen für weitere Straßen hier) --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
@@ -1075,8 +1080,6 @@ Wilhelm-Hoff-Str.: geht die Straße hier weiter? Qualität?	? 18828,3196 18710,308
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3657
 #: next_check: 2014-08-01
 Sültstr.: Wird hier eine Einbahnstraße eingerichtet? Auch für Radfahrer?	? 12295,15953 12347,16039
-# 
-Lützowstr.: Vorfahrtsregelung?	? 7963,10716 8070,10680 8199,10634
 # 
 Stadtpark Steglitz: möglicherweise interessante Verbindung zwischen Albrechtstr. und Beymestr., Qualität, Beleuchtung, Fußgängerfrequenz?	? 6032,4745 5909,4798
 # 
@@ -3554,10 +3557,8 @@ Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,3410
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014 (weitere Grundstücksnummerierungen)
 #: XXX Benennung von 7 Privatwegen auf dem Grundstück der KGA "Erpetal" vvv
-#: XXX fehlen alle in Berlin.coords.data, PLZ=12587 vvv
 #: last_checked: 2013-06-22 (Umbenennung nicht durchgeführt) vvv
 #: next_check: 2013-10-01 (Benennung wird wirksam) vvv
-Duftgeranienweg: (früher Hauptweg) Beton, Q0, verkehrsberuhigt, beleuchtet, Bodenschwellen, die leicht umfahren werden können	? 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25187,6549 25212,6560
 #: XXX wahrscheinlich unbeleuchtet vvv
 Klatschmohnweg: (früher Birkenweg) unbefestigter Weg, Q2, NN	? 24596,6292 24580,6319
 Klatschmohnweg: (früher Birkenweg) Gras, Q3+, NN	? 24580,6319 24746,6391
@@ -3576,9 +3577,9 @@ Spitzwegerichweg: (früher Wiesenweg) unbefestigt, teilweise etwas sandig, Q2, un
 #: XXX ^^^
 Petersilienweg: (früher Feldweg) Qualität? Wo befindet sich der Weg?	? 24388,6098 24444,6165 24515,6201 24562,6221
 Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
+Engelwurzweg: (früher Waldweg) Qualität? Geht es Richtung Westen noch weiter?	? 25153,6596 25100,6612
 #: next_check ^^^
 #: last_checked ^^^
-#: XXX ^^^
 #: XXX ^^^
 #: by: ^^^
 #: by: ^^^
@@ -3698,3 +3699,7 @@ Kongostr.: ist die Kongostr. mittlerweile asphaltiert?	? 6244,16096 6258,16111 6
 #: XXX http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2014
 #: XXX fehlt in Berlin.coords.data
 Helen-Keller-Weg: wo genau liegt die Straße? Qualität? Nachts beleuchtet? Ausgeschildert?	? -3252,17758 -3376,17534 -3418,17525
+#
+Friedlander Promenade - Hundsteinweg: Qualität? Existieren Schranken (Einschränkung für Anhänger)? Nachts beleuchtet? Ausgeschildert?	? 10870,2625 10777,2745 10775,2765
+#: XXX laut osm "grade 2"
+Alter Radelander Weg - Schappachstr.: Qualität? Ausgeschildert?	? 25007,-2620 25731,-1524

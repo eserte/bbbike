@@ -3555,21 +3555,6 @@ userdel	2::inwork 2219,11304 2116,11288
 userdel	q3::inwork 13275,11830 13295,11792 13467,11778
 ',
          'type' => 'handicap'
-       },
-       undef,
-       {
-         'source_id' => 'IM_021257',
-         'until' => 1392814800,
-         'text' => 'Greifswalder Str.: geplatzte Wasserleitung an der Kreuzung Heinrich-Roller-Str., Fahrbahn stadteinwärts gesperrt, langsame Umfahrung über Gehweg möglich, bis 19.02.2014 mittags',
-         'from' => 1392120000,
-         'id' => 2537,
-         'data' => '#: by: http://www.morgenpost.de/berlin-aktuell/article124783293/Geplatzte-Wasserleitung-Greifswalder-Strasse-gesperrt.html
-#: XXX laut MoPo nur bis Freitag, prüfen
-#: last_checked: 2014-02-14
-#: next_check: 2014-02-18
-userdel	q3::inwork; 11946,13993 11820,13804
-',
-         'type' => 'handicap'
        }
      
 );
