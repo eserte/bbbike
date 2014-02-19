@@ -403,6 +403,9 @@ back to the information provider.
 Define the validity period of records. Other tools (e.g.
 L<grepstrassen>) may remove non-valid records automatically.
 
+If the value is preceded by a C<!>, then the validation period is
+inverted.
+
 Note: in future L<Strassen::Core> may deal automatically (or optional)
 with removal of non-valid records.
 

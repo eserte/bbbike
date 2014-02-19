@@ -261,6 +261,25 @@ EOF
     is run_grepstrassen($sample_valid2_bbd, ["-valid", "2012-04-01"]), $expected;
 }
 
+{
+    my $sample_inverted_valid_bbd = <<'EOF';
+#: 
+#: valid: 20140224-20170601
+Bergiusstr.	H 14106,6663 14193,6556 14366,6337
+#: valid: !20140224-20170601
+Bergiusstr.	N 14106,6663 14193,6556 14366,6337
+EOF
+    my $expected_without_period = <<'EOF';
+Bergiusstr.	N 14106,6663 14193,6556 14366,6337
+EOF
+    my $expected_within_period = <<'EOF';
+Bergiusstr.	H 14106,6663 14193,6556 14366,6337
+EOF
+    is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20140223"]), $expected_without_period;
+    is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20140224"]), $expected_within_period;
+    is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20170601"]), $expected_within_period;
+    is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20170602"]), $expected_without_period;
+}
 
 sub run_grepstrassen ($$) {
     my($in_data, $args) = @_;

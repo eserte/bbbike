@@ -138,6 +138,7 @@ if ($valid_def) {
 	}
 	my $dir = $dirs->[0];
 	delete $all_dirs->{'valid'}; # note, side effect: 'valid' directive is removed for output
+	my $is_inverted = ($dir =~ s{^!}{});
 	if (my($y1,$m1,$d1, $y2,$m2,$d2) = $dir =~ m{^(?:$iso_date_qr)?-(?:$iso_date_qr)?$}) {
 	    my $from = defined $y1 ? sprintf("%04d%02d%02d", $y1, $m1, $d1): undef;
 	    my $to   = defined $y2 ? sprintf("%04d%02d%02d", $y2, $m2, $d2): undef;
@@ -145,12 +146,12 @@ if ($valid_def) {
 		die "Please specify either from or to date, or both";
 	    }
 	    if (defined $from) {
-		return 0 if $date lt $from;
+		return $is_inverted ? 1 : 0 if $date lt $from;
 	    }
 	    if (defined $to) {
-		return 0 if $date gt $to;
+		return $is_inverted ? 1 : 0 if $date gt $to;
 	    }
-	    return 1;
+	    return $is_inverted ? 0 : 1;
 	} else {
 	    die "Invalid 'valid' directive '$dir', should be either YYYYMMDD-YYYYMMDD or -YYYYMMDD or YYYYMMDD-";
 	}
