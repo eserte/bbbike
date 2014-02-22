@@ -29,7 +29,10 @@ BEGIN {
     }
     if (!eval q{
 	use Test::More;
-        use W3C::LogValidator::HTMLValidator;
+	use LWP::UserAgent;
+	use URI;
+	use URI::QueryParam ();
+
         use W3C::LogValidator::CSSValidator 1.021; # possible strange errors with older versions
 	use W3C::LogValidator::LinkChecker 1.005;
 	1;
@@ -44,13 +47,6 @@ BEGIN {
     }
 }
 
-plan tests => 3;
-
-{
-    use POSIX qw(strftime);
-    use constant TODO_CSS_VALIDATOR_PROBLEM => "2011-07-01T12:00:00" gt strftime("%FT%T", localtime) && 'See https://rt.cpan.org/Ticket/Display.html?id=59930';
-}
-
 my %config = ("verbose" => 0,
 	      AuthorizedExtensions => ".html .xhtml .phtml .htm .shtml .php .svg .xml / .cgi",
 	     );
@@ -63,46 +59,67 @@ real URL.
 EOF
 my $rooturl = delete $config{rooturl} || "http://bbbike.dyndns.org/bbbike/cgi";
 
-my @uris = ("$rooturl/bbbike.cgi",
-	    "$rooturl/bbbike.cgi?start=heerstr&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=simplonstr&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=",
-	    "$rooturl/bbbike.cgi?startname=Heerstr.+%28Spandau%2C+Charlottenburg%29&startplz=14052%2C+14055&startc=1381%2C11335&zielname=Simplonstr.&zielplz=10245&zielc=14752%2C11041&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=",
-	    "$rooturl/bbbike.cgi?startname=Heerstr.%20(Spandau%2C%20Charlottenburg);startplz=14052%2C%2014055;startc=1381%2C11335;zielname=Simplonstr.;zielplz=10245;zielc=14752%2C11041;pref_seen=1;pref_speed=20;pref_cat=;pref_quality=;pref_green=;scope=;output_as=print",
-	    "$rooturl/bbbike.cgi?all=1",
-	    "$rooturl/bbbike.cgi?info=1",
+my @uri_defs = (
+		{ uri => "$rooturl/bbbike.cgi", accepted_html_errors => 1 },
+		{ uri => "$rooturl/bbbike.cgi?start=heerstr&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=simplonstr&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=", accepted_html_errors => 3 },
+		{ uri => "$rooturl/bbbike.cgi?startname=Heerstr.+%28Spandau%2C+Charlottenburg%29&startplz=14052%2C+14055&startc=1381%2C11335&zielname=Simplonstr.&zielplz=10245&zielc=14752%2C11041&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=", accepted_html_errors => 1 },
+		{ uri => "$rooturl/bbbike.cgi?startname=Heerstr.%20(Spandau%2C%20Charlottenburg);startplz=14052%2C%2014055;startc=1381%2C11335;zielname=Simplonstr.;zielplz=10245;zielc=14752%2C11041;pref_seen=1;pref_speed=20;pref_cat=;pref_quality=;pref_green=;scope=;output_as=print", accepted_html_errors => 1 },
+		{ uri => "$rooturl/bbbike.cgi?all=1", accepted_html_errors => 1 },
+		{ uri => "$rooturl/bbbike.cgi?info=1", accepted_html_errors => 1 },
 	   );
 
+plan tests => 2 + scalar(@uri_defs);
+
+my $validator_url = 'http://validator.w3.org/check';
+my $ua = LWP::UserAgent->new;
+
 {
-    # XXX
-    # maybe replace with just:
-    # checklink --broken --directory 'http://bbbike.dyndns.org/bbbike/cgi/bbbike.cgi?startname=Heerstr.+%28Spandau%2C+Charlottenburg%29&startplz=14052%2C+14055&startc=1381%2C11335&zielname=Simplonstr.&zielplz=10245&zielc=14752%2C11041&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope='
-    # which hopefully returns a non-zero exit value on problems and prints a
-    # lot of diagnostics to stdout/stderr
-
-    #XXX del: local $TODO = "The validator seems to have a bug with fragments...";
-
     my $validator = W3C::LogValidator::LinkChecker->new(\%config);
-    $validator->uris(@uris);
+    $validator->uris(map { $_->{uri} } @uri_defs);
     my %results = $validator->process_list;
     is(scalar(@{$results{trows}}), 0, "Link checking")
 	or diag Dumper(\%results) . "\nTry http://validator.w3.org/checklink for more information";
 }
 
 {
-    local $TODO = TODO_CSS_VALIDATOR_PROBLEM;
-
     my $validator = W3C::LogValidator::CSSValidator->new(\%config);
-    $validator->uris(@uris);
+    $validator->uris(map { $_->{uri} } @uri_defs);
     my %results = $validator->process_list;
-    ok($validator->valid, "CSS validation")
+    is($validator->valid_err_num, 0, "No CSS validation errors")
 	or diag Dumper(\%results);
 }
 
-{
-    my $validator = W3C::LogValidator::HTMLValidator->new(\%config);
-    $validator->uris(@uris);
-    my %results = $validator->process_list;
-    ok($validator->valid, "HTML validation")
-	or diag Dumper(\%results);
+for my $uri_def (@uri_defs) {
+    html_validate($uri_def);
+}
+
+sub html_validate {
+    my $uri_def = shift;
+    my($uri, $accepted_html_errors) = @{$uri_def}{qw(uri accepted_html_errors)};
+    my $testname = "html validation for $uri";
+    my $validate_uri_obj = URI->new($validator_url);
+    $validate_uri_obj->query_form_hash({ uri => $uri });
+    my $resp = $ua->head($validate_uri_obj->as_string);
+    if (!$resp->is_success) {
+	local $TODO = "no successful response from w3c validator, maybe network problems";
+	fail $testname;
+    } else {
+	my $validator_status = $resp->header('X-W3C-Validator-Status');
+	if ($validator_status eq 'Abort') {
+	    local $TODO = "w3c validator returns Abort, maybe network problems";
+	    fail $testname;
+	} elsif ($validator_status eq 'Valid') {
+	    pass $testname;
+	} elsif ($validator_status eq 'Invalid') {
+	    my $validator_errors = $resp->header('X-W3C-Validator-Errors');
+	    if ($validator_errors <= $accepted_html_errors) {
+		local $TODO = "currently $accepted_html_errors known error(s) on page (sizes attribute)";
+		fail $testname;
+	    } else {
+		is $validator_errors, 0, "$testname (number of errors is zero)";
+	    }
+	}
+    }
 }
 
 __END__
