@@ -5,8 +5,6 @@
 # Author: Slaven Rezic
 #
 
-# In case of problems (test failures) try to update W3C-LogValidator
-
 use strict;
 use FindBin;
 use lib (
@@ -33,11 +31,10 @@ BEGIN {
 	use URI;
 	use URI::QueryParam ();
 
-        use W3C::LogValidator::CSSValidator 1.021; # possible strange errors with older versions
 	use W3C::LogValidator::LinkChecker 1.005;
 	1;
     }) {
-	print "1..0 # skip no Test::More and/or W3C::LogValidator modules\n";
+	print "1..0 # skip no Test::More, LWP::UserAgent, URI and/or W3C::LogValidator modules\n";
 	exit;
     }
 
@@ -68,9 +65,12 @@ my @uri_defs = (
 		{ uri => "$rooturl/bbbike.cgi?info=1", accepted_html_errors => 1 },
 	   );
 
-plan tests => 2 + scalar(@uri_defs);
+plan tests => 1 + 2 * scalar(@uri_defs);
 
-my $validator_url = 'http://validator.w3.org/check';
+my %validator_urls = (
+		      html => 'http://validator.w3.org/check',
+		      css  => 'http://jigsaw.w3.org/css-validator/validator',
+		     );
 my $ua = LWP::UserAgent->new;
 
 {
@@ -81,23 +81,28 @@ my $ua = LWP::UserAgent->new;
 	or diag Dumper(\%results) . "\nTry http://validator.w3.org/checklink for more information";
 }
 
-{
-    my $validator = W3C::LogValidator::CSSValidator->new(\%config);
-    $validator->uris(map { $_->{uri} } @uri_defs);
-    my %results = $validator->process_list;
-    is($validator->valid_err_num, 0, "No CSS validation errors")
-	or diag Dumper(\%results);
+# {
+#     my $validator = W3C::LogValidator::CSSValidator->new(\%config);
+#     $validator->uris(map { $_->{uri} } @uri_defs);
+#     my %results = $validator->process_list;
+#     is($validator->valid_err_num, 0, "No CSS validation errors")
+# 	or diag Dumper(\%results);
+# }
+
+for my $uri_def (@uri_defs) {
+    any_validate('css', $uri_def);
 }
 
 for my $uri_def (@uri_defs) {
-    html_validate($uri_def);
+    any_validate('html', $uri_def);
 }
 
-sub html_validate {
-    my $uri_def = shift;
-    my($uri, $accepted_html_errors) = @{$uri_def}{qw(uri accepted_html_errors)};
-    my $testname = "html validation for $uri";
-    my $validate_uri_obj = URI->new($validator_url);
+sub any_validate {
+    my($type, $uri_def) = @_;
+    die "Invalid type '$type'" if $type !~ m{^(html|css)$};
+    my($uri, $accepted_errors) = @{$uri_def}{'uri', 'accepted_'.$type.'_errors'};
+    my $testname = "$type validation for $uri";
+    my $validate_uri_obj = URI->new($validator_urls{$type});
     $validate_uri_obj->query_form_hash({ uri => $uri });
     my $resp = $ua->head($validate_uri_obj->as_string);
     if (!$resp->is_success) {
@@ -112,8 +117,8 @@ sub html_validate {
 	    pass $testname;
 	} elsif ($validator_status eq 'Invalid') {
 	    my $validator_errors = $resp->header('X-W3C-Validator-Errors');
-	    if ($validator_errors <= $accepted_html_errors) {
-		local $TODO = "currently $accepted_html_errors known error(s) on page (sizes attribute)";
+	    if ($validator_errors <= $accepted_errors) {
+		local $TODO = "currently $accepted_errors known error(s) on page (sizes attribute)";
 		fail $testname;
 	    } else {
 		is $validator_errors, 0, "$testname (number of errors is zero)";
