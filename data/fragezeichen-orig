@@ -141,7 +141,7 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="120633717" version="6"
 #: osm_watch: way id="162964323" version="4"
-#: osm_watch: way id="4541085" version="12"
+#: osm_watch: way id="4541085" version="13"
 #: osm_watch: way id="4638315" version="12"
 #: last_checked: 2014-01-17
 #: check_frequency: 60d
@@ -323,6 +323,10 @@ Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 #: XXX Realisierung von Radstreifen bis 2015
 #: next_check: 2014-07-22
 Manteuffelstr.: werden Radstreifen markiert?	?::projected 8606,5496 8610,5579 8617,5745 8622,5867 8641,5998 8661,6169 8680,6322 8697,6455 8707,6537 8722,6656 8735,6695
+# 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
+#: XXX mittelfristig Realisierung von Radstreifen
+Hauptstr. (Wilhelmsruh): Radstreifen?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
 #: section ^^^
 #: ignore ^^^
@@ -1103,8 +1107,6 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 # REMOVED (realisiert) --- #: XXX wahrscheinlich nach den Bauarbeiten? --- #: osm_watch: way id="4687118" version="11" --- #: last_checked: 2013-12-20 --- Parkaue: wann wird hier die Einbahnstraße ausgeschildert, wird sie tatsächlich für Radfahrer nicht offen sein?	? 15406,12444 15408,12394 15370,12264
 # 
-Ahornsteig: Ausgeschildert? Qualität? Nachts beleuchtet?	? 7669,11586 7615,11602 7615,11602 7549,11608 7418,11566 7361,11565 7037,11600 7012,11608 7003,11624 6980,11790 6977,11820 6987,11857 7007,11923 7059,11978
-# 
 #: XXX ggfs. Sackgassen aufheben
 #: next_check: 2014-05-01
 Neubaugebiet am Dahlemer Weg: entstehen hier neue Straßen oder werden bestehende Straßen verlängert?	? 1946,3142 2094,3231 2203,3213 2172,3043 2031,3004 1946,3142
@@ -1315,6 +1317,7 @@ Greifenhagener Str.: evtl. wird hier eine Fußgängerzone entstehen	? 11123,15851 
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385&date=20140201 (noch nichts passiert)
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385&date=20140221 (Maßnahme beschlossen, kein Realisierungszeitraum genannt)
 #: osm_watch: way id="145485550" version="2"
 #: last_checked: 2013-08-17
 #: next_check: 2014-08-01
@@ -1785,6 +1788,7 @@ Hadburgpfad: genaue Lage? Qualität? PLZ=10365	? 17484,12405 17531,12398
 #: by; http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3697
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2013 (Amtsblatt)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2014 (Nummerierung)
 # 1. Liliensteinweg
 # 2. Lampertssteinweg
 # 3. Quirlweg
@@ -3405,9 +3409,10 @@ Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73
 # 
 # REMOVED (aufgenommen) --- #: XXX Qualität ist wahrscheinlich gutes Verbundsteinpflaster, unbeleuchtet, -> green2 --- Spektegrünzug: genauer Wegverlauf, Qualität?	? -4945,14883 -5053,14926 -5168,14943 -5383,14984 -5564,15039 -5610,15079 -5641,15109
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20111117.1435.362688.html
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20140220.1140.394604.html ("Landschaftsbauarbeiten werden in zwei Etappen bis Juni 2015 fertig gestellt")
 #: osm_watch: way id="236677390" version="1"
 #: last_checked: 2013-09-19
-#: next_check: 2014-03-19
+#: next_check: 2014-08-19
 Spektegrünzug: hier fehlt teilweise noch der Weg	?::inwork -4945,14883 -4827,14823 -4667,14712 -4670,14637
 # 
 #: XXX wahrscheinlich zweiteres
