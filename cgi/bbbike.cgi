@@ -2323,12 +2323,12 @@ EOF
 		print <<EOF;
 <div id="locateme" style="visibility:hidden;">
   <a href="javascript:locate_me()">@{[ M("Aktuelle Position verwenden") ]}</a>
-  <img id="locateme_wait" src="$bbbike_images/loading.gif" style="visibility:hidden;">
+  <img id="locateme_wait" src="$bbbike_images/loading.gif" alt="" style="visibility:hidden;">
 EOF
 		print help_link('geolocation');
 		print <<EOF;
 </div>
-<div id="locateme_marker" style="position:absolute; visibility:hidden;"><img src="$bbbike_images/bluedot.png" border=0 width=8 height=8></div>
+<div id="locateme_marker" style="position:absolute; visibility:hidden;"><img src="$bbbike_images/bluedot.png" alt="" border=0 width=8 height=8></div>
 <script type="text/javascript"><!--
  $transpose_dot_func
 // --></script>
@@ -6904,7 +6904,7 @@ sub header {
 	$query_string = '?' . $query_string if $query_string;
 
 	print qq{<div style="position:absolute; top:5px; right:10px;">};
-	my $img_attribs = 'width="48" height=24"';
+	my $img_attribs = 'width="48" height="24"';
 	if ($lang eq 'en') {
 	    print <<EOF;
 <a href="$bbbike_de_script$query_string"><img class="unselectedflag" src="$bbbike_images/de_flag.png" alt="Deutsch" title="Deutsch" border="0" $img_attribs></a>
@@ -7164,8 +7164,8 @@ sub choose_all_form {
 # 	}
 # 	@bhf = sort @bhf;
 # 	print "<hr>\n";
-# 	print qq{<a name="${type}bhf"><b>} . uc($type) . qq{-Bahnhöfe</b></a><br/>\n};
-# 	print join("<br/>\n", map { uc($type) . " " . $_ } @bhf), "\n";
+# 	print qq{<a name="${type}bhf"><b>} . uc($type) . qq{-Bahnhöfe</b></a><br>\n};
+# 	print join("<br>\n", map { uc($type) . " " . $_ } @bhf), "\n";
 #     }
 
     print "</div>";
@@ -7903,7 +7903,7 @@ EOF
 	print <<EOF;
 <h4 id="leaflet">BBBike &amp; Leaflet</h4>
 Noch in Entwicklung: 
-BBBike-Routen auf einer <a href="$href">Leaflet-Karte</a> suchen.<br/>
+BBBike-Routen auf einer <a href="$href">Leaflet-Karte</a> suchen.<br>
 Um Start- und Zielpunkt zu setzen, einfach Doppel-Klicks oder -Taps machen.
 EOF
     }
@@ -7952,9 +7952,9 @@ EOF
     }
     $data_date = "unbekannt" if !defined $data_date;
     print <<EOF;
-Version des Programms bbbike.cgi: $VERSION ($cgi_date)<br/>
-Stand der Daten: $data_date<br/>
-bbbike.cgi ist Bestandteil von <a href="$BBBike::BBBIKE_SF_WWW">BBBike</a> Release $BBBike::VERSION<br/><br/>
+Version des Programms bbbike.cgi: $VERSION ($cgi_date)<br>
+Stand der Daten: $data_date<br>
+bbbike.cgi ist Bestandteil von <a href="$BBBike::BBBIKE_SF_WWW">BBBike</a> Release $BBBike::VERSION<br><br>
 EOF
 
     if (defined $os) {

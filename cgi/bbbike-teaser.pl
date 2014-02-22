@@ -196,11 +196,11 @@ EOF
     } else { # graphical
 	if ($lang eq 'en') {
 	    $teaser = <<EOF;
-<div class="teaser"><a href="$twitter_url">BBBikeDE @ <img border="0" src="$twitter_img" alt="Twitter" /></a></div>
+<div class="teaser"><a href="$twitter_url">BBBikeDE @ <img border="0" src="$twitter_img" alt="Twitter"></a></div>
 EOF
 	} else {
 	    $teaser = <<EOF;
-<div class="teaser"><a href="$twitter_url">BBBikeDE bei <img border="0" src="$twitter_img" alt="Twitter" /></a></div>
+<div class="teaser"><a href="$twitter_url">BBBikeDE bei <img border="0" src="$twitter_img" alt="Twitter"></a></div>
 EOF
 	}
     }
@@ -366,14 +366,14 @@ sub teaser_ios1 {
     my $baseurl = "https://itunes.apple.com/de/app/bbybike-made-in-berlin-for/id639384862?mt=8";
     my $new_until = "2013-07-01";
     if ($lang eq 'en') {
-	my $url = "$baseurl&l=en";
+	my $url = "$baseurl&amp;l=en";
 	<<EOF;
 <div class="teaser">
   <a href="$url"><b>bbybike for iPhone</b></a> @{[ _teaser_new_html $new_until ]} &#x2014; using the BBBike routing engine
 </div>
 EOF
     } else {
-	my $url = "$baseurl&l=de";
+	my $url = "$baseurl&amp;l=de";
 	<<EOF;
 <div class="teaser">
   <a href="$url"><b>bbybike auf iPhone</b></a> @{[ _teaser_new_html $new_until ]} &#x2014; verwendet die BBBike-Routensuche
