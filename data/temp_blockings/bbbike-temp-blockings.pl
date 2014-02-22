@@ -5433,7 +5433,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84352',
        data  => <<EOF,
-userdel	q4::inwork 16868,5938 17056,6133 17156,6235 17239,6182 17290,6228
+userdel	q4::inwork 16868,5938 17056,6133 17160,6239 17231,6179 17290,6228
 EOF
      },
      { from  => 1154876732, # 2006-08-06 17:05
@@ -5566,7 +5566,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004079',
        data  => <<EOF,
-userdel	1::inwork 17290,6228 17239,6182 17156,6235 17056,6133 16868,5938
+userdel	1::inwork 17290,6228 17231,6179 17160,6239 17056,6133 16868,5938
 EOF
      },
      { from  => 1155836502, # 2006-08-17 19:41
@@ -6025,7 +6025,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003692',
        data  => <<EOF,
-userdel	1::inwork 17156,6235 17056,6133 16868,5938
+userdel	1::inwork 17160,6239 17056,6133 16868,5938
 EOF
      },
      { from  => 1159221600, # 2006-09-26 00:00
@@ -22048,7 +22048,7 @@ EOF
        data  => <<EOF,
 #: XXX Aufhebung der Sperrung aus Witterungsgründen möglich
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-02-03
+#: last_checked: 2014-02-22
 #: next_check: 2014-02-28
 userdel	2::inwork 10086,12725 10166,12777
 EOF
@@ -22452,6 +22452,23 @@ EOF
        data  => <<EOF,
 #: XXX impact überprüfen!
 userdel	q4::inwork; 12189,16578 12045,16574
+EOF
+     },
+     { from  => 1393534800, # 2014-02-27 22:00
+       until => 1393722000, # 2014-03-02 02:00
+       text  => 'Niederfinow: L29: Neubau Schiffshebewerk - Rückbau Turmdrehkran OD Niederfinow, Straße evtl. komplett gesperrt, 28.02.2014 22:00 Uhr bis 02.03.2014 02:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '146000021',
+       data  => <<EOF,
+userdel	2::inwork 46132,49993 46390,50091
+EOF
+     },
+     { from  => 1393110000, # 2014-02-23 00:00
+       until => 1496354399, # 2017-06-01 23:59
+       text  => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2017',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 14257,6895 14153,6795
 EOF
      },
     );

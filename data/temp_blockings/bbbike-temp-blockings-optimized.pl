@@ -3424,7 +3424,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2498,
          'data' => '#: XXX Aufhebung der Sperrung aus Witterungsgründen möglich
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-02-03
+#: last_checked: 2014-02-22
 #: next_check: 2014-02-28
 userdel	2::inwork 10086,12725 10166,12777
 ',
@@ -3568,6 +3568,25 @@ userdel	q3::inwork 13275,11830 13295,11792 13467,11778
 userdel	q4::inwork; 12189,16578 12045,16574
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => '146000021',
+         'until' => 1393722000,
+         'text' => 'Niederfinow: L29: Neubau Schiffshebewerk - Rückbau Turmdrehkran OD Niederfinow, Straße evtl. komplett gesperrt, 28.02.2014 22:00 Uhr bis 02.03.2014 02:00 Uhr ',
+         'from' => 1393534800,
+         'id' => 2539,
+         'data' => 'userdel	2::inwork 46132,49993 46390,50091
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1496354399,
+         'text' => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2017',
+         'from' => 1393110000,
+         'id' => 2540,
+         'data' => 'userdel	2::inwork 14257,6895 14153,6795
+',
+         'type' => 'gesperrt'
        }
      
 );

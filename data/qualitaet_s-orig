@@ -495,7 +495,7 @@ Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,1103
 Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
 Matkowskystr.: Asphalt	Q0 14531,11142 14513,11075
 #: next_check_id: NEUEBAHNHOF-2014
-#: last_checked: 2014-02-14
+#: last_checked: 2014-02-22
 #: XXX wird die andere Fahrtrichtung auch asphaltiert?
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2; 14752,11041 14811,11067 14879,11182
 Neue Bahnhofstr.: Asphalt	Q0; 14879,11182 14811,11067 14752,11041
@@ -1769,7 +1769,7 @@ Zeppelinstr.: Asphalt	Q0 18697,6605 18417,6775 18240,6845
 Zeppelinstr.: Asphalt	Q0 18240,6845 18041,6924 17919,6968
 Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2+ 18010,7133 18041,6924 18069,6753
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
-Roedernstr.: Asphalt	Q0 18069,6753 18077,6690 18079,6678
+Roedernstr.: Asphalt	Q0 18069,6753 18076,6693 18079,6678
 Scharnweberstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 19344,6119 19495,6029
 Scharnweberstr.: Asphalt	Q0 19495,6029 19650,5920
 Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt	Q0 22196,4847 22175,4730 22138,4661 22133,4644 22111,4562
@@ -2523,7 +2523,7 @@ Koppenstr.: Asphalt mit einigen Schäden	Q1+ 12575,12223 12596,12472 12635,12629
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21089,4731 21124,4420 21146,4229 21170,4111 21260,3848 21324,3691
 #: by: http://www.reinickendorf.de/index_7745_de.html
 Montanstr.: Asphalt	Q0 6792,19733 6680,19098
-Griechische Allee: Asphalt	Q0 18125,6694 18077,6690 18005,6681 17962,6674 18008,6672 18079,6678 18159,6642 18273,6606 18429,6582 18494,6588
+Griechische Allee: Asphalt	Q0 18125,6694 18076,6693 18002,6695 17962,6674 18008,6672 18079,6678 18159,6642 18273,6606 18429,6582 18494,6588
 Griechische Allee: Asphalt	Q0 18645,6511 18628,6520 18494,6588 18339,6660 18254,6679 18125,6694
 Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16159,12301
 Straße 18: Beton	Q0- 16426,13145 16429,13021
@@ -5688,7 +5688,7 @@ Bohrauer Pfad: Beton	Q0- 20981,4628 20827,4655 20716,4691
 Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2013-11-17
+#: last_checked: 2014-02-22
 #: check_frequency: 100d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Plattenweg (Längsplatten)	Q2- 19321,7360 19223,7231 19223,7189
@@ -9231,7 +9231,7 @@ Ritterlandweg [Wohngebiet]: Verbundsteinpflaster	Q1 8346,17148 8363,17192
 #: XXX Qualität nach den Bauarbeiten?
 #: XXX ggfs. als Sackgasse eintragen
 #: XXX genaue Lage der Straße? Wird es eine Zufahrt zur Georg-Stern-Str. bzw. zum Parkweg geben?
-#: last_checked: 2013-12-26
+#: last_checked: 2014-02-22
 #: check_frequency: 100d
 Alfred-Siggel-Weg: unbefestigte Straße, Bauarbeiten	Q3+ 19406,7886 19531,7794
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1- 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
@@ -12600,7 +12600,7 @@ Holsteinische Str. (Steglitz): mäßiges Kopfsteinpflaster	Q2+ 5275,6096 5390,6299
 # 
 #: by: Wolfgang Thurner: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster Q3 -> mäßiges-schlechtes Kopfsteinpflaster Q2-; Wolfgang Thurner hat 18km/h eingetragen, und rein optisch sah es wie Q2 aus)
-Goethestr. (Oberschöneweide): mäßiges bis schlechtes Kopfsteinpflaster	Q2- 18005,6681 18008,6672 18031,6568 18073,6523 18088,6507 18219,6447 18429,6407 18483,6460
+Goethestr. (Oberschöneweide): mäßiges bis schlechtes Kopfsteinpflaster	Q2- 18002,6695 18008,6672 18031,6568 18073,6523 18088,6507 18219,6447 18429,6407 18483,6460
 #: confirmed_by: srt
 Schillerpromenade (Oberschöneweide): Asphalt	Q0 18191,6363 18219,6447 18244,6518 18273,6606
 #: by: ^^^
