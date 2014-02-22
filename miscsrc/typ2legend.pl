@@ -97,7 +97,7 @@ my @items;
 	    }
 	} elsif ($in_section) {
 	    if ($in_section =~ $item_type_qr) {
-		if (m{^(XPM|DayXPM|NightXPM)=(.*)}) {
+		if (m{^(XPM|DayXPM|NightXPM)=(.*)}i) {
 		    $do_parse_xpm = 1;
 		    $current_xpm_key = $1;
 		    chomp(my $xpm_head = $2);
@@ -105,7 +105,8 @@ my @items;
 		} elsif (m{^String\d+=([\dx]+),(.*)}) {
 		    $item->{String}->{$1} = $2;
 		} elsif (m{^Type=(.*)}) {
-		    (my $type = $1) =~ s{(0x)0}{$1}; # remove leading zero
+		    my $type = $1;
+		    $type =~ s{^(0x)0(..)$}{$1$2}; # remove leading zero, found in the typdecomp files
 		    $item->{Type} = $type;
 		} elsif (m{^(SubType|LineWidth|BorderWidth)=(.*)}) {
 		    $item->{$1} = $2;
