@@ -187,7 +187,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2013-12-26
+#: last_checked: 2014-02-23
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -366,7 +366,7 @@ Hauptstr. (Wilhelmsruh): Radstreifen?	?::projected 7672,19869 7711,19956 7748,20
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4769
 Uwe-Saager-Steig: ist das ein offizieller Name? Ausschilderung vor Ort?	? 7353,8633 7313,8661
 # 
-#: last_checked: 2014-02-14
+#: last_checked: 2014-02-23
 Konrad-Wolf-Str.: wahrscheinlich Bau eines Radwegs	?::inwork; 15066,14579 15174,14638
 # 
 # REMOVED (in handicap_s-orig aufgenommen) --- Mühsamstr.: Baustelle abfahren, genaue Position sowie Penalty abschätzen	?::inwork 13559,12779 13506,12752
@@ -692,7 +692,7 @@ Planstraße (evtl. 10): Name vielleicht auch Regener Str.? Qualität?	?::projected
 #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
 #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
 #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014
-#: last_checked: 2013-11-26
+#: last_checked: 2014-02-23
 #: next_check: 2014-11-30
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16476,16216 16458,16104 16493,15983 16563,15900
 # 
@@ -710,7 +710,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
-#: last_checked: 2014-01-05
+#: last_checked: 2014-02-23
 #: check_frequency: 120d
 #: priority: #C
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
@@ -994,7 +994,7 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 15866,16393 15843,16399 15771,16417 15432,16500
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
-#: last_checked: 2014-01-05
+#: last_checked: 2014-02-23
 #: check_frequency: 90d
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 
@@ -1087,8 +1087,7 @@ Sültstr.: Wird hier eine Einbahnstraße eingerichtet? Auch für Radfahrer?	? 12295
 # 
 Stadtpark Steglitz: möglicherweise interessante Verbindung zwischen Albrechtstr. und Beymestr., Qualität, Beleuchtung, Fußgängerfrequenz?	? 6032,4745 5909,4798
 # 
-#: XXX wo genau hört die Bucher Chaussee auf und die Karower Chaussee an?
-Bucher Chaussee/Karower Chaussee	? 16123,24232 16156,24284 16201,24354
+# REMOVED (unter der Autobahnbrücke gibt es keine Straßenschilder, aber die Kreuzungen sind hier eindeutig) --- #: XXX wo genau hört die Bucher Chaussee auf und die Karower Chaussee an? --- Bucher Chaussee/Karower Chaussee	? 16123,24232 16156,24284 16201,24354
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 #: XXX wahrscheinlich nur ein Eintrag in comments_cyclepath notwendig, genaue Abschnitte der Nebenfahrbahn müssen erfasst werden
@@ -1143,10 +1142,6 @@ Hildburghauser Str.: Qualität des Asphalts?	? 4806,1360 4897,1346 5056,1321 5223
 Schwarzwurzel-Park: Bordsteine? Qualität? Nachts beleuchtet?	? 20654,18336 20700,18358 20817,18344 20826,18331
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5569 --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140121.1245.393675.html --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014 --- #: XXX Benennung am 05. Februar 2014 --- #: last_checked: 2013-11-17 --- #: next_check: 2014-02-05 --- Johannes-Fest-Platz: hier wird ein Platz benannt	? 18791,8597 18846,8616
-# 
-#: XXX Ist das hier die Straße "Am Hechtgraben"? Laut http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5608 wird die Bezeichnung offiziell (Berlin.coords.data!)
-#: XXX http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file?y=2013
-Am Hechtgraben: Name, Qualität, Beleuchtung?	? 18853,18959 18879,18954 18923,18941 18983,18906 19043,18876 19072,18859
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
@@ -1319,9 +1314,9 @@ Greifenhagener Str.: evtl. wird hier eine Fußgängerzone entstehen	? 11123,15851 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385&date=20140201 (noch nichts passiert)
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385&date=20140221 (Maßnahme beschlossen, kein Realisierungszeitraum genannt)
 #: osm_watch: way id="145485550" version="2"
-#: last_checked: 2013-08-17
+#: last_checked: 2014-02-23
 #: next_check: 2014-08-01
-Alt-Karow: evtl. wird hier ein Schutzstreifen angelegt	? 15726,23475 15637,23251 15547,23024 15529,22981 15428,22736
+Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23475 15637,23251 15547,23024 15529,22981 15428,22736
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3501
@@ -3655,8 +3650,8 @@ Am Graben (Waldblick): Qualität?	? 9402,-3817 9354,-3949
 Sowjetisches Ehrenmal - Friesenstr.: Qualität des Weges? Nachts beleuchtet?	? 8356,19291 8722,19265
 Schönholzer Str. - Waldsteg: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8314,19288 8211,19294 7857,19628 7857,19693
 zum Sowjetischen Ehrenmal: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8319,19299 8255,19366
-Campus Buch: Straßennamen? Qualität?	? 17156,24786 17114,24771 17115,24738 16999,24735 16921,24608 16963,24578 16872,24432 16791,24482 16883,24623 16921,24608
-Schwanebecker Chaussee [Stichstraße]: Straßenname? Qualität?	? 17591,25405 17428,25235
+# REMOVED (weitgehend aufgenommen) --- Campus Buch: Straßennamen? Qualität?	? 17156,24786 17114,24771 17115,24738 16999,24735 16921,24608 16963,24578 16872,24432 16791,24482 16883,24623 16921,24608
+# REMOVED (aufgenommen) --- Schwanebecker Chaussee [Stichstraße]: Straßenname? Qualität?	? 17591,25405 17428,25235
 Hauffstr. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 2809,28 2873,-60 2951,-185 3030,-312 3101,-427
 Maxim-Gorki-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3235,310 3325,179 3404,64 3485,-56 3578,-193 3627,-270
 Gerhart-Hauptmann-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3304,356 3320,335 3409,208 3490,102 3561,-5 3658,-145 3726,-242
@@ -3684,15 +3679,8 @@ Am Buchenberg - Schulzendorfer Str.: Qualität? Existiert eine Ausschilderung?	? 
 Stolper Weg (Kienwerder): Qualität?	? -4963,-3121 -4765,-3352 -4462,-3588 -4439,-3613 -4394,-3652 -4382,-3683 -4364,-3719
 Am Kienwerder (Kienwerder): Qualität?	? -4765,-3352 -4694,-3304 -4341,-3227 -4208,-3215 -4027,-3236 -3761,-3313
 # 
-#: XXX im südlichen Teil ist die asphaltierte Trasse schon erkennbar, der nördliche Teil wird wahrscheinlich noch gebaut; Zweirichtungsweg auf der nordwestlichen Seite der Straße
-#: source_id: 111100069
-#: last_checked: 2013-08-16
-#: next_check: 2013-10-31
-Lindenberg - Schwanebeck: ist der Radweg fertig gebaut?	?::inwork 18356,22225 18500,22348 18671,22604 19061,23130 19144,23267 19393,23690 19565,24028
-# 
-#: XXX laut 1:5k und pharus ist hier eine Straße. LOR listet auch eine Straße diesen Namens. Google und OSM kennen die Straße (hier) nicht.
-#: XXX falls sie existiert -> für Berlin.coords.data: Straße 84|Karow|13125
-Straße 84 (Karow): existiert hier tatsächlich eine Straße?	? 15310,23085 15380,23039 15356,22948
+# REMOVED (realisiert) --- #: XXX im südlichen Teil ist die asphaltierte Trasse schon erkennbar, der nördliche Teil wird wahrscheinlich noch gebaut; Zweirichtungsweg auf der nordwestlichen Seite der Straße --- #: source_id: 111100069 --- #: last_checked: 2013-08-16 --- #: next_check: 2013-10-31 --- Lindenberg - Schwanebeck: ist der Radweg fertig gebaut?	?::inwork 18356,22225 18500,22348 18671,22604 19061,23130 19144,23267 19246,23441 19293,23520 19393,23690 19539,23981
+# REMOVED (aufgenommen) --- #: XXX laut 1:5k und pharus ist hier eine Straße. LOR listet auch eine Straße diesen Namens. Google und OSM kennen die Straße (hier) nicht. --- #: XXX falls sie existiert -> für Berlin.coords.data: Straße 84|Karow|13125 --- Straße 84 (Karow): existiert hier tatsächlich eine Straße?	? 15382,23051 15365,22990
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: XXX laut osm ist die Kongostraße mittlerweile asphaltiert - stimmt aber nicht (korrigiert)!
@@ -3708,3 +3696,16 @@ Helen-Keller-Weg: wo genau liegt die Straße? Qualität? Nachts beleuchtet? Ausges
 Friedlander Promenade - Hundsteinweg: Qualität? Existieren Schranken (Einschränkung für Anhänger)? Nachts beleuchtet? Ausgeschildert?	? 10870,2625 10777,2745 10775,2765
 #: XXX laut osm "grade 2"
 Alter Radelander Weg - Schappachstr.: Qualität? Ausgeschildert?	? 25007,-2620 25731,-1524
+# 
+Neue Schwanebecker Str. (Zepernick): Qualität?	? 19512,27392 19457,27268
+Schwanebecker Str. (Zepernick): Qualität?	? 19426,27374 19457,27268 19525,27100 19577,26970 19627,26852 19669,26755
+Zepernicker Str. (Schwanebeck): Qualität?	? 19669,26755 19717,26638 19722,26581 19737,26323 19768,25905 19805,25232 19793,25153 19809,25130
+Hochstr. (Schwanebeck): Qualität?	? 18942,26470 19340,26610 19669,26755 19715,26770 20051,26756 20225,26711
+Kiesstr. (Schwanebeck): Qualität?	? 20192,26621 20225,26711 20304,26861
+Humboldtstr. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 17990,24572 18122,24440 18492,24049
+Stefan-Heym-Str. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18057,24641 18200,24498
+Einsteinstr. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18124,24709 18280,24557
+Wolfgang-Amadeus-Mozart-Str. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18039,24940 18122,24858 18198,24789 18355,24639
+Vierwaldstätter Str. (Schwanebeck): Qualität des südlichen Abschnitts?	? 18281,26008 18226,25889 18171,25619 18131,25316 18106,25171
+Thuner Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18810,25948 18929,26214
+Wilhelm-Tell-Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18885,25916 19000,26147

@@ -12065,7 +12065,7 @@ EOF
        text  => 'B 002 zw. Bernau und Stadtgrenze Berlin Deckenerneuerung, Radwegbau Richtungsverkehr 07.07.2008-08.08.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 19658,24589 19627,24445 19593,24154 19565,24028 19393,23690
+userdel	1::inwork 19658,24589 19625,24451 19593,24154 19554,24018 19539,23981 19393,23690
 EOF
      },
      { from  => 1216321760, # 

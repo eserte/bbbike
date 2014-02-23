@@ -6645,11 +6645,11 @@ Birnbaumer Str.: Beton	Q0- 22093,6630 22186,6672
 Am Flutgraben: Parkweg	Q1 13333,9929 13418,9944 13579,10146
 Feldtmannstr.: Kopfsteinpflaster	Q2 14766,17702 14671,17735
 (B2 - Straﬂe 52): Beton	Q0- 15872,20496 15851,20517
-(B2 - Straﬂe 52): wassergebundene Decke	Q1 15851,20517 15730,20549 15605,21098 15499,21569
+(B2 - Straﬂe 52): wassergebundene Decke	Q1- 15851,20517 15821,20539 15730,20549 15605,21098 15499,21569
 (B2 - Straﬂe 52): Beton/Asphalt	Q1+ 15499,21569 15477,21650
 Lindenberger Weg (Blankenburg, Stadtrandsiedlung Malchow): wassergebundene Decke	Q1 15158,21049 15605,21098 16341,21194 16576,21165 16818,21150
 Straﬂe 52: Beton/Asphalt	Q1+ 15477,21650 15470,21760
-Straﬂe 52: etwas rauer Asphalt	Q0- 15470,21760 15464,21894 15459,22025 15452,22180 15450,22232 15445,22352 15442,22412 15434,22604
+Straﬂe 52: etwas rauer Asphalt	Q0- 15470,21760 15464,21894 15459,22025 15452,22180 15450,22232 15445,22352 15442,22412 15434,22604 15428,22736
 Straﬂe 51: unbefestigte Straﬂe, Feinschotter	Q1- 15325,21777 15377,21921
 Straﬂe 50: alter Asphalt	Q2 15452,22180 15430,22196 15353,22105
 Straﬂe 50: Asphalt	Q0 15305,22017 15281,21960 15197,21791 15118,21585
@@ -9272,6 +9272,14 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 Engelwurzweg: unbefestigter Weg	Q2 25176,6544 25153,6596
+Straﬂe 84 (Karow): Gras	Q3 15382,23051 15365,22990
+(Campus Buch, zum Lindenberger Weg): Asphalt	Q0 17117,24902 16999,24735 16921,24608
+(Campus Buch, zur Robert-Rˆssle-Str.): Asphalt, in der Mitte Kleinsteinpflaster	Q0- 16984,24565 16963,24578 16921,24608 16883,24630 16793,24685 16778,24671
+(Campus Buch, zur Robert-Rˆssle-Str.): Verbundsteinpflaster	Q1 16778,24671 16722,24701
+(Campus Buch, zur Robert-Rˆssle-Str.): Asphalt	Q0 16722,24701 16719,24734
+(Campus Buch, zum Max-Delbr¸ck-Haus): Asphalt	Q0 16883,24630 16791,24482 16872,24432 16963,24578
+(zum Helios-Klinikum Buch): Asphalt	Q0 17591,25405 17428,25235
+(Am Hechtgraben): unbefestigt	Q2 18853,18959 18879,18954 18923,18941 18983,18906 19043,18876 19072,18859
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -10062,13 +10070,10 @@ Am Faulen See: Asphalt, leichte Sch‰den	Q0- 16520,16200 16551,16307
 #: corrected_by: srt (Q1 -> Q0, neu gemacht)
 Am Faulen See: Asphalt	Q0 16551,16307 16592,16447 16622,16569 16633,16687 16608,16806
 #: confirmed_by: srt
-#: XXX: wurde hier die Qualit‰t verbessert? vvv
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4761 vvv
+# REMOVED (nein) --- #: XXX: wurde hier die Qualit‰t verbessert? vvv --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4761 vvv
 Am Faulen See: Asphalt mit Sch‰den	Q1 16608,16806 16550,16914
 #: corrected_by: srt (Asphalt -> Beton)
 Am Faulen See: guter Beton	Q1 16550,16914 16471,17036
-#: by ^^^
-#: XXX ^^^
 Badeweg: guter Belag	Q0 -4188,2674 -4292,2762
 Badeweg: guter Belag	Q0 -4292,2762 -4471,2917
 Brˆndbystr.: Asphalt	Q0 3509,1598 3273,1302 3312,1241 3384,1297
@@ -10938,7 +10943,7 @@ Waldstr. (Niederschˆnhausen): asphaltiert	Q0 9822,19916 9788,20035 9754,20134 97
 # 
 #: by: Raik:
 #: note: grundhafter Neubau der Fahrbahn, http://www.berlin.de/ba-pankow/presse/archiv/20080530.1030.101683.html
-Robert-Rˆssle-Str.: Beton	Q0 16521,24864 16682,24758 16719,24734
+Robert-Rˆssle-Str.: Beton	Q0 16521,24864 16681,24764 16719,24734
 # 
 #: by: Christa L.:
 Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 3452,3717 3568,3784 3629,3715
@@ -11676,8 +11681,8 @@ Marienstr. (Franzˆsisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2013-11-26
-#: next_check: 2014-03-01
+#: last_checked: 2014-02-23
+#: check_frequency: 100d
 Orankeweg: Sandweg im Gr¸nzug, m‰ﬂig bis gut	Q2+ 14934,15860 14802,15857 14720,15905 14609,15921
 #: confirmed_by: srt
 Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15598,15793
@@ -18429,7 +18434,7 @@ Tilburger Str.: guter Asphalt	Q0 13870,5436 13893,5374
 #: by: Andreas Manlik: vvv
 Kerkowstr.: guter Asphalt	Q0 14597,22842 14642,23072
 Kerkowstr.: schlechtes Kopfsteinpflaster	Q3 14642,23072 14726,23194 14865,23388
-Frundsbergstr.: Asphalt	Q0 15529,22981 15310,23085 15280,23097
+Frundsbergstr.: Asphalt	Q0 15529,22981 15382,23051 15310,23085 15280,23097
 #: by: ^^^
 # 
 #: by: Martin M¸ller:
@@ -22030,7 +22035,7 @@ Fichtengrund: Kopfsteinpflaster	Q2 24922,-3063 24918,-3050 24882,-2945 24872,-28
 #
 #: by: Jens Pappelbaum:
 #: note: enge Straﬂe, aber q0
-Ernst-Ludwig-Heim-Str.: guter Asphalt	Q0 16682,24758 16613,24643 16487,24721
+Ernst-Ludwig-Heim-Str.: guter Asphalt	Q0 16681,24764 16613,24643 16487,24721
 # 
 #: by: Joachim Wolf vvv
 #: corrected_by: srt (Schotter -> ...)
@@ -22243,7 +22248,8 @@ Seeburger Weg: Asphalt	Q0 -5282,12730 -5263,12784 -5234,12812 -5030,13017
 Cosmarweg: Asphalt	Q0 -5822,13088 -5928,13060 -6029,13033 -6151,13001
 Lutoner Str.: Asphalt	Q0 -5030,13017 -5118,13053 -5245,13138 -5321,13191 -5472,13235 -5606,13170 -5684,13132 -5753,13107 -5790,13097 -5822,13088
 Schmidt-Knobelsdorf-Str.: Asphalt	Q0 -5030,13017 -4725,12883
-Schmidt-Knobelsdorf-Str.: gutes Kopfsteinpflaster	Q1 -4725,12883 -4494,12776
+#: note: fr¸her gutes Kopfsteinpflaster (bis ca. 2013/2014)
+Schmidt-Knobelsdorf-Str.: Asphalt	Q0 -4725,12883 -4494,12776
 Schmidt-Knobelsdorf-Str.: Asphalt	Q0 -4494,12776 -4277,12675 -4239,12626
 #: note: "Die Befahrbarkeit kann sich witterungsbedingt ‰ndern"
 Dˆberitzer Weg: fester, aber lˆchriger Sandweg	Q2 -9049,12498 -8753,12827 -8385,13138
@@ -23716,7 +23722,7 @@ Kehler Weg: asphaltiert	Q0 2027,4792 2025,4935
 #: confirmed_by: srt
 Bitscher Str.: asphaltiert	Q0 1884,4811 1939,4949 1969,4978
 #: corrected_by: srt (Q1 -> Q0-)
-Darﬂer Str.: Beton	Q0- 15230,18021 15506,17973 15568,17962 15715,17930 15783,17915 15881,17899 16277,17830 16468,17792 16487,17785 16563,17759 16671,17672 16751,17560 16779,17521 16837,17440
+Darﬂer Str.: Beton	Q0- 15238,18020 15506,17973 15568,17962 15715,17930 15783,17915 15881,17899 16277,17830 16468,17792 16487,17785 16563,17759 16671,17672 16751,17560 16779,17521 16837,17440
 Gehrenseestr.: Beton	Q0 18316,16636 18490,16761 18587,16834 18738,16957
 # 
 #: by: Jens Velten [AM] vvv

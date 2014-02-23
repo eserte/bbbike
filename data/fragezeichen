@@ -1039,8 +1039,6 @@ Am Graben (Waldblick): Qualität?	? 9402,-3817 9354,-3949
 Sowjetisches Ehrenmal - Friesenstr.: Qualität des Weges? Nachts beleuchtet?	? 8356,19291 8722,19265
 Schönholzer Str. - Waldsteg: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8314,19288 8211,19294 7857,19628 7857,19693
 zum Sowjetischen Ehrenmal: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8319,19299 8255,19366
-Campus Buch: Straßennamen? Qualität?	? 17156,24786 17114,24771 17115,24738 16999,24735 16921,24608 16963,24578 16872,24432 16791,24482 16883,24623 16921,24608
-Schwanebecker Chaussee [Stichstraße]: Straßenname? Qualität?	? 17591,25405 17428,25235
 Hauffstr. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 2809,28 2873,-60 2951,-185 3030,-312 3101,-427
 Maxim-Gorki-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3235,310 3325,179 3404,64 3485,-56 3578,-193 3627,-270
 Gerhart-Hauptmann-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3304,356 3320,335 3409,208 3490,102 3561,-5 3658,-145 3726,-242
@@ -1053,11 +1051,21 @@ Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2636,23915 2760,2396
 Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2760,23964 2784,23929
 Stolper Weg (Kienwerder): Qualität?	? -4963,-3121 -4765,-3352 -4462,-3588 -4439,-3613 -4394,-3652 -4382,-3683 -4364,-3719
 Am Kienwerder (Kienwerder): Qualität?	? -4765,-3352 -4694,-3304 -4341,-3227 -4208,-3215 -4027,-3236 -3761,-3313
-Lindenberg - Schwanebeck: ist der Radweg fertig gebaut?	?::inwork 18356,22225 18500,22348 18671,22604 19061,23130 19144,23267 19393,23690 19565,24028
-Straße 84 (Karow): existiert hier tatsächlich eine Straße?	? 15310,23085 15380,23039 15356,22948
 Helen-Keller-Weg: wo genau liegt die Straße? Qualität? Nachts beleuchtet? Ausgeschildert?	? -3252,17758 -3376,17534 -3418,17525
 Friedlander Promenade - Hundsteinweg: Qualität? Existieren Schranken (Einschränkung für Anhänger)? Nachts beleuchtet? Ausgeschildert?	? 10870,2625 10777,2745 10775,2765
 Alter Radelander Weg - Schappachstr.: Qualität? Ausgeschildert?	? 25007,-2620 25731,-1524
+Neue Schwanebecker Str. (Zepernick): Qualität?	? 19512,27392 19457,27268
+Schwanebecker Str. (Zepernick): Qualität?	? 19426,27374 19457,27268 19525,27100 19577,26970 19627,26852 19669,26755
+Zepernicker Str. (Schwanebeck): Qualität?	? 19669,26755 19717,26638 19722,26581 19737,26323 19768,25905 19805,25232 19793,25153 19809,25130
+Hochstr. (Schwanebeck): Qualität?	? 18942,26470 19340,26610 19669,26755 19715,26770 20051,26756 20225,26711
+Kiesstr. (Schwanebeck): Qualität?	? 20192,26621 20225,26711 20304,26861
+Humboldtstr. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 17990,24572 18122,24440 18492,24049
+Stefan-Heym-Str. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18057,24641 18200,24498
+Einsteinstr. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18124,24709 18280,24557
+Wolfgang-Amadeus-Mozart-Str. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18039,24940 18122,24858 18198,24789 18355,24639
+Vierwaldstätter Str. (Schwanebeck): Qualität des südlichen Abschnitts?	? 18281,26008 18226,25889 18171,25619 18131,25316 18106,25171
+Thuner Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18810,25948 18929,26214
+Wilhelm-Tell-Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18885,25916 19000,26147
 # added from ampeln-orig
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
@@ -1167,6 +1175,9 @@ Melzow - Warnitz: querliegende Betonplatten (Betonplatten zumindest auf der nörd
 (Qualität des Wegs (wahrscheinlich ein unbefestigter Feldweg)?)	? 18962,-5709 19915,-6315
 (ist der komplette Weg ein Schotterweg? Oder teilweise nur ein unbefestigter Feldweg?)	? 17162,-6465 17910,-6981
 (ist der südliche Abschnitt der Fritz-Reuter-Str. ebenfalls gepflastert?)	? 2611,-100 2669,-187 2757,-311 2847,-431
+Ernst-Toller-Str.: unbefestigte Straße (ist der nordwestliche Abschnitt tatsächlich unbefestigt?)	? 17581,24815 17638,24756
+Ernst-Toller-Str.: Asphalt (ist der südöstliche Abschnitt tatsächlich asphaltiert?)	? 17900,24483 18010,24370
+Humboldtstr.: unbefestigte Straße (ist der nordwestliche Abschnitt tatsächlich unbefestigt?)	? 17699,24874 17728,24824
 (Steinstr. - Tschaikowskiweg): Waldweg (ist der Verbindungsweg mittlerweile asphaltiert?)	? -7996,-2293 -8024,-2468
 Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58390,23910 58422,23806 58340,23653
 Casekow - Blumberg: Kopfsteinpflaster (ist das Kopfsteinpflaster eher mäßig oder eher schlecht?)	? 60187,90018 59648,89982

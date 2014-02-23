@@ -584,9 +584,10 @@ mäßiger Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18419,-1418 18293,-1472
 	RW;RW2 69480,73471 69302,73357
 	RW;RW2 69480,73471 69236,73732
 	RW2;RW2 69236,73732 69121,73868 69031,73974 68933,74089 68778,74271 68682,74325 68555,74317 68334,74207 68240,74219 67951,74351 67258,74691 
-gemeinsamer Rad- und Gehweg	RW2; 19593,24154 19627,24445 19658,24589
-teilweise gemeinsamer, teilweise separater Rad- und Gehweg	RW2; 19658,24589 19670,24710 19765,25058 19825,25144
-asphaltiert	RW2;RW8 19825,25144 19931,25260 20734,26128 20835,26335
+gemeinsamer Rad- und Gehweg	RW2; 19554,24018 19593,24154 19625,24451 19658,24589
+teilweise gemeinsamer, teilweise separater Rad- und Gehweg	RW2; 19658,24589 19667,24722 19777,25080 19809,25130
+Verbundsteinpflaster	RW; 19809,25130 19777,25080 19667,24722
+asphaltiert	RW2;RW8 19809,25130 19931,25260 20734,26128 20835,26335
 Verbundsteinpflaster	RW8;RW2 69575,77256 69531,77125 69364,76624 69009,75559 69000,75533 68839,75050 68641,74483
 	RW2;RW2 68641,74483 68638,74416 68658,74376 68682,74325
 	RW1;RW1 67951,74351 68022,74501 68080,74514 68138,74616
@@ -672,8 +673,9 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 23263,16354 23295,1648
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW8;RW2 22887,18465 22916,18354 22931,18295 22993,18088 23032,17941
 Verbundsteinpflaster, gemeinsamer Rad- und Geweg	RW2;RW8 19658,24589 19395,24634
 Asphalt, gemeinsamer Rad- und Geweg	RW2;RW8 19395,24634 18583,24966 18562,24975
-Verbundsteinpflaster, gemeinsamer Rad- und Geweg	RW2;RW8 18562,24975 17967,25231
-Verbundsteinpflaster	RW1; 19627,24445 19593,24154
+Verbundsteinpflaster, gemeinsamer Rad- und Geweg	RW2;RW8 18562,24975 18236,25113 18106,25171 17967,25231
+Verbundsteinpflaster	RW1; 19625,24451 19593,24154 19554,24018
+Asphalt	RW2;RW8 19554,24018 19539,23981 19393,23690 19293,23520 19246,23441 19144,23267 19128,23188 19061,23130 18671,22604 18500,22348 18356,22225
 #: by: http://fotos.benno-koch.de/v/Radfernwege_Deutschland/Radfernwege_und_Radwege_Brandenburg_im_Test/Uckermaerkischer_Radrundweg/Spur_der_Steine/P1040882.JPG.html (asphaltierter Radweg existiert)
 Asphalt	RW8?;RW2? 21870,95768 21160,95892 20885,96088 20755,96116 20669,96087 20220,95784 20048,95612 19952,95554 19496,95361 19316,95227
 #: by: http://fotos.benno-koch.de/v/Radfernwege_Deutschland/Radfernwege_und_Radwege_Brandenburg_im_Test/Uckermaerkischer_Radrundweg/Spur_der_Steine/P1040967.JPG.html
@@ -705,6 +707,10 @@ asphaltiert	RW2;RW8 21946,21541 21731,21815 21449,21662 21395,21467 21356,21335 
 	RW6;RW6 21619,19235 21609,19266 21666,19378
 	RW2;RW3 -13238,-1569 -13220,-1416
 	RW3;RW3 -13220,-1416 -13209,-1332 -13208,-1315 -13206,-1294 -13203,-1246 -13187,-1150
+Verbundsteinpflaster	RW2;RW2 18104,26043 18174,26035 18281,26008 18441,25967
+Verbundsteinpflaster	RW1;RW1 18441,25967 18551,25938 18654,25911 18777,25879 18844,25823 18875,25796
+#: note: keine Ausschilderung Richtung Südosten, aber faktisch als Zweirichtungsradweg nutzbar
+asphaltiert	RW;RW9 19777,25080 19651,25131 18875,25796
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
