@@ -10,7 +10,6 @@ use File::Basename qw(basename);
 use File::Temp qw(tempfile);
 use Getopt::Long;
 use HTML::Entities ();
-#use Imager;
 
 use Typ2Legend::XPM;
 
@@ -20,8 +19,6 @@ my $output_dir;
 my $force;
 my @ignore;
 my @keep;
-my @nopngheuristic; # This is somewhat ugly, it is doing two things: turning on png transparency heuristics and defining examples where the heuristics shouldn't be applied
-my @noprefer15;
 my $title;
 my $encoding = 'utf-8';
 my $debug_parser;
@@ -29,8 +26,6 @@ GetOptions("o=s"       => \$output_dir,
 	   "f"         => \$force,
 	   'ignore=s@' => sub { push @ignore, split /,/, $_[1] },
 	   'keep=s@'   => sub { push @keep,   split /,/, $_[1] },
-	   'nopngheuristic=s@' => sub { push @nopngheuristic, split /,/, $_[1] },
-	   'noprefer15=s@' => sub { push @noprefer15, split /,/, $_[1] },
 	   'encoding=s' => \$encoding,
 	   'title=s'   => \$title,
 	   'debug-parser' => \$debug_parser,
@@ -40,12 +35,9 @@ $output_dir or usage "-o is mandatory";
 
 my %ignore;
 my %keep;
-my %nopngheuristic;
-my %noprefer15;
-for my $def ([\%ignore, \@ignore],
+for my $def (
+	     [\%ignore, \@ignore],
 	     [\%keep, \@keep],
-	     [\%nopngheuristic, \@nopngheuristic],
-	     [\%noprefer15, \@noprefer15],
 	    ) {
     %{$def->[0]} = map {
 	my $type = $_;
@@ -67,6 +59,7 @@ my @items;
     my $debug_item_counter = 0;
     my $finalize_xpm_object = sub {
 	if ($item->{ItemType} eq 'point') {
+	    Typ2Legend::XPM::_perform_alpha_hack(\@parse_xpm_lines);
 	    $item->{$current_xpm_key} = join("\n", @parse_xpm_lines);
 	} else {
 	    $item->{$current_xpm_key . "_object"} = Typ2Legend::XPM->new(\@parse_xpm_lines);
@@ -102,14 +95,14 @@ my @items;
 		push @parse_xpm_lines, $_;
 	    } else {
 		$finalize_xpm_object->();
-		redo; # premature end of XPM data
+		redo; # premature end of XPM data; with TYPViewer output XPM data always ends like this
 	    }
 	    if (/^};/) {
 		$finalize_xpm_object->();
 	    }
-	} elsif (m{^\[(.*)\]}) {
+	} elsif (m{^\s*\[(.*)\]}) { # may have preceding spaces in TYPViewer output
 	    my $tag = $1;
-	    if ($tag eq 'end') {
+	    if ($tag =~ m{^end$}i) { # may be "End" in TYPViewer output
 		undef $in_section;
 	    } else {
 		$in_section = $tag;
@@ -125,6 +118,7 @@ my @items;
 		    $do_parse_xpm = 1;
 		    $current_xpm_key = $1;
 		    chomp(my $xpm_head = $2);
+		    $current_xpm_key =~ s{xpm}{XPM}i; # normalize (TYPViewer has "Xpm", ati.land.cz had "XPM")
 		    @parse_xpm_lines = $xpm_head;
 		} elsif (m{^String\d+=([\dx]+),(.*)}) {
 		    $item->{String}->{$1} = $2;
@@ -149,8 +143,7 @@ for my $item (@items) {
 	if ($item->{LineWidth}) {
 	    $ret = $item->{"XPM_object"}->transform(linewidth => $item->{LineWidth}, borderwidth => $item->{BorderWidth});
 	} else {
-	    my $noprefer15 = $noprefer15{$itemlongkey} || $noprefer15{$itemkey};
-	    $ret = $item->{"XPM_object"}->transform(prefer15=>$noprefer15?0:1);
+	    $ret = $item->{"XPM_object"}->transform;
 	}
 	if ($ret->{'day'}) {
 	    $item->{DayXPM} = $ret->{'day'}->as_string;
@@ -216,27 +209,14 @@ EOF
 	for my $xpm_type (qw(XPM DayXPM NightXPM)) {
 	    if ($item->{$xpm_type}) {
 		my $out_image = $output_dir . "/" . sprintf("%04d.png", $png_i++);
-## XXX Imager does not have xpm support, surprise, surprise...
-#		my $img = Imager->new;
-#		$img->read(data => $item->{$xpm_type}, type => 'xpm')
-#		    or die "Cannot read: " . $img->errstr;
-#		$img->write(file => $out_image, type => "png")
-#		    or die "Cannot write: " . $img->errstr;
 		my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".xpm", UNLINK => 1)
 		    or die $!;
 
 		my $xpm_data = $item->{$xpm_type};
-		if ($item->{ItemType} eq 'point'
-			 && @nopngheuristic
-			 && !$nopngheuristic{$itemkey} && !$nopngheuristic{$itemlongkey}
-			) { # transparent not handled correctly --- but this heuristic does not work perfectly, so can be turned off with %nopngheuristic
-		    $xpm_data =~ s{("XX\s+c\s+)#[0-9a-f]+}{$1 . "none"}e;
-		}
-
 		print $tmpfh $xpm_data;
 		close $tmpfh or die $!;
-		system("convert", $tmpfile, $out_image);
-		$? == 0 or die "Failure while converting $tmpfile to $out_image, item " . _item_name($item) . ', xpm: ' . $item->{$xpm_type};
+		system("convert", "-gamma", "2.2", $tmpfile, $out_image); # XXX why is setting the gamma value necessary? (seen with ImageMagick 6.8.0-7 on freebsd 9.2) --- and still 2.2 is not correct
+		$? == 0 or die "Failure while converting $tmpfile to $out_image using ImageMagick, item " . _item_name($item) . ', xpm: ' . $item->{$xpm_type};
 		unlink $tmpfile;
 		(my $png_type = $xpm_type) =~ s{XPM}{PNG};
 		$item->{$png_type} = basename $out_image;
@@ -245,8 +225,10 @@ EOF
 	print $ofh "<tr><td>";
 	if ($item->{PNG}) {
 	    print $ofh qq{<img src="$item->{PNG}" />};
-	} elsif ($item->{DayPNG}) {
+	} elsif ($item->{NightPNG}) {
 	    print $ofh qq{<img title="day image" class="daypng" src="$item->{DayPNG}" /> <img title="night image" class="nightpng" src="$item->{NightPNG}" />};
+	} elsif ($item->{DayPNG}) { # DayPNG without NightPNG, treat like single PNG (seen with TYPViewer, but not ati.land.cz)
+	    print $ofh qq{<img src="$item->{DayPNG}" />};
 	}
 	print $ofh "</td><td>";
 	my $de_label = $item->{String}->{'0x02'} || '';
@@ -322,15 +304,15 @@ typ2legend.pl - create a HTML legend from a decompiled .TYP file
 
 This script created a HTML page together with .png images for a .TYP
 file. As input a decompiled .TYP file (usually with extension .TXT)
-has to be provided. See L<http://ati.land.cz/gps/typdecomp/editor.cgi>
-for a .TYP file editor and decompiler.
+has to be provided. See L<https://sites.google.com/site/sherco40/> for
+an offline .TYP file editor and decompiler.
 
 =head1 EXAMPLES
 
 Currently the legend for the bbbike/garmin map is best created as
 such:
 
-    perl ./miscsrc/typ2legend.pl < misc/mkgmap/typ/M000002a.TXT -f -o tmp/typ_legend -title "Legende für die BBBike-Garmin-Karte" -keep polygon/0x0a,polygon/0x0c,polygon/0x0d,polygon/0x16,polygon/0x19,polygon/0x1a,polygon/0x3c,polygon/0x4e,polygon/0x50,line/0x01,line/0x03,line/0x04,line/0x05,line/0x06,line/0x0f,line/0x13,line/0x14,line/0x1a,line/0x1c,line/0x1e,line/0x2c,line/0x2d,line/0x2e,line/0x2f,line/0x30,line/0x31,line/0x32,line/0x33,line/0x34,line/0x35,line/0x36,line/0x37,line/0x38,line/0x39,line/0x3a,line/0x3b,line/0x3c,line/0x3d,line/0x3e,line/0x3f,point/0x70,point/0x71,point/0x72/0x01,point/0x72/0x03 -nopngheuristic point/0x70/0x01,point/0x71/0x01,point/0x71/0x06 -noprefer15 line/0x13,line/0x14
+    perl ./miscsrc/typ2legend.pl < misc/mkgmap/typ/M000002a.TXT -f -o tmp/typ_legend -title "Legende für die BBBike-Garmin-Karte" -keep polygon/0x0a,polygon/0x0c,polygon/0x0d,polygon/0x16,polygon/0x19,polygon/0x1a,polygon/0x3c,polygon/0x4e,polygon/0x50,line/0x01,line/0x03,line/0x04,line/0x05,line/0x06,line/0x0f,line/0x13,line/0x14,line/0x1a,line/0x1c,line/0x1e,line/0x2c,line/0x2d,line/0x2e,line/0x2f,line/0x30,line/0x31,line/0x32,line/0x33,line/0x34,line/0x35,line/0x36,line/0x37,line/0x38,line/0x39,line/0x3a,line/0x3b,line/0x3c,line/0x3d,line/0x3e,line/0x3f,point/0x70,point/0x71,point/0x74/0x01,point/0x74/0x02
 
 The generated html file may be found in C<tmp/typ_legend/index.html>.
 
@@ -340,7 +322,7 @@ converted with bbd2osm.
 For OSM data the "keep" list is not necessary. Here the legend may be
 created with:
 
-    perl ./miscsrc/typ2legend.pl < misc/mkgmap/typ/M000002a.TXT -f -o tmp/typ_osm_legend -title "Legende für die OSM-Garmin-Karte" -nopngheuristic point/0x27,point/0x2f/0x08,point/0x70/0x01,point/0x71/0x01,point/0x71/0x06 -noprefer15 line/0x13,line/0x14
+    perl ./miscsrc/typ2legend.pl < misc/mkgmap/typ/M000002a.TXT -f -o tmp/typ_osm_legend -title "Legende für die OSM-Garmin-Karte"
 
 The generated html file may be found in C<tmp/typ_osm_legend/index.html>.
 
@@ -348,6 +330,29 @@ The generation commands are also in F<misc/Makefile>, look for the
 C<typ-legend-all> target.
 
 =head1 NOTES
+
+In special layers of the bbbike/garmin map the following items are
+also used:
+
+=over
+
+=item * line/0x040 (Ampelphasen)
+
+=item * point/0x073* (categorized fragezeichen)
+
+=back
+
+=head1 HISTORY
+
+This script was written around the decompiled output which was
+produced by the TYP editor software found at
+L<http://ati.land.cz/gps/typdecomp/editor.cgi>. This output had some
+bugs which needed some helper options (-nopngheuristic, -noprefer15).
+Since 2014 the site was shutdown, and this script now tries to handle
+the decompiled output created by TYPViewer
+(L<https://sites.google.com/site/sherco40/>).
+
+Following historical notes applying to the old ati.land.cz output.
 
 The decompiled .TXT file from
 L<http://ati.land.cz/gps/typdecomp/editor.cgi> is ambiguous. The
@@ -367,14 +372,13 @@ yet (but Typ2Legend::XPM has internally the option C<prefer13>).
 
 =back
 
-In special layers of the bbbike/garmin map the following items are
-also used:
+=head1 BUGS
 
 =over
 
-=item * line/0x040 (Ampelphasen)
-
-=item * point/0x073* (categorized fragezeichen)
+=item * Does not handle alpha information for POIs. Currently there's
+just a hack to convert full alpha transparency into a transparent
+color.
 
 =back
 
