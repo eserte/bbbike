@@ -24,6 +24,7 @@ my @nopngheuristic; # This is somewhat ugly, it is doing two things: turning on 
 my @noprefer15;
 my $title;
 my $encoding = 'utf-8';
+my $debug_parser;
 GetOptions("o=s"       => \$output_dir,
 	   "f"         => \$force,
 	   'ignore=s@' => sub { push @ignore, split /,/, $_[1] },
@@ -32,6 +33,7 @@ GetOptions("o=s"       => \$output_dir,
 	   'noprefer15=s@' => sub { push @noprefer15, split /,/, $_[1] },
 	   'encoding=s' => \$encoding,
 	   'title=s'   => \$title,
+	   'debug-parser' => \$debug_parser,
 	  )
     or usage;
 $output_dir or usage "-o is mandatory";
@@ -61,6 +63,8 @@ my @items;
     my $current_xpm_key;
     my @parse_xpm_lines;
     my $item;
+    my $debug_last_item;
+    my $debug_item_counter = 0;
     my $finalize_xpm_object = sub {
 	if ($item->{ItemType} eq 'point') {
 	    $item->{$current_xpm_key} = join("\n", @parse_xpm_lines);
@@ -72,6 +76,26 @@ my @items;
     };
     while(<>) {
 	s{\r}{};
+	if ($debug_parser) {
+	    if ($item && $item ne $debug_last_item) {
+		$debug_item_counter++;
+		$debug_last_item = $item;
+	    }
+	    my $state =
+		($in_section ? 'S' : ' ') .
+		    ($item ? sprintf("I%03d", $debug_item_counter) : '    ') .
+			($do_parse_xpm
+			 ? ('X ' .
+			    ($current_xpm_key eq 'XPM' ? 'X' :
+			     $current_xpm_key eq 'DayXPM' ? 'D' :
+			     $current_xpm_key eq 'NightXPM' ? 'N' : '?'
+			    ) .
+			    sprintf("%02d", scalar @parse_xpm_lines)
+			   )
+			 : '    '
+			);
+	    print STDERR $state . " " . $_;
+	}
 	if ($do_parse_xpm) {
 	    if (/^[}"]/) {
 		chomp;
