@@ -477,7 +477,10 @@ sub _handle_highway_like {
 	# Find citypart from PLZ.pm
 	my $res = $street_to_citypart->{$name};
 	if ($res) {
-	    push @cityparts, keys %$res;
+	    # XXX sorted because of hash randomization; but it would
+	    # be better to have another stable order, for example the
+	    # citypart which the biggest portion of the street
+	    push @cityparts, sort keys %$res;
 	}
     }
 
