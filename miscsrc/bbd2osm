@@ -196,12 +196,15 @@ my %cat_to_railway = ('U' => 'subway',
 
 my %cat_to_area_landuse = ('Forest'     => 'forest',
 			   'Cemetery'   => 'cemetery',
-			   'Industrial' => 'industrial',
+			   ($optimize_for != OPTIMIZE_FOR_GARMIN ? ('Industrial' => 'industrial') : ()),
 			   # 'Ae' => 'airport', # does not exist
 			   'Orchard'    => 'allotments',
 			   ($optimize_for != OPTIMIZE_FOR_MAPNIK ? ('Sport' => 'sports') : ()),
 			   'Green'      => 'village_green',
 			  );
+my %cat_to_area_bbbike_landuse = (
+				  ($optimize_for == OPTIMIZE_FOR_GARMIN ? ('Industrial' => 'industrial') : ()),
+				 );
 my %cat_to_area_leisure = ('P'          => 'park',
 			   'Pabove'     => 'park',
 			   ($optimize_for == OPTIMIZE_FOR_MAPNIK ? ('Sport' => 'sports_centre') : ()),
@@ -842,13 +845,16 @@ sub handle_area_like {
     if ($rest =~ m{^\|(religion):(.*)$}) { # XXX could support more attributes here
 	$tags{$1} = $2;
     }
-    my($landuse, $leisure);
+    my($landuse, $bbbike_landuse, $leisure);
     $landuse = $cat_to_area_landuse{$cat};
     if (!defined $landuse) {
-	$leisure = $cat_to_area_leisure{$cat};
-	if (!defined $leisure) {
-	    #warn "Ignoring $cat...\n";
-	    return;
+	$bbbike_landuse = $cat_to_area_bbbike_landuse{$cat};
+	if (!defined $bbbike_landuse) {
+	    $leisure = $cat_to_area_leisure{$cat};
+	    if (!defined $leisure) {
+		#warn "Ignoring $cat...\n";
+		return;
+	    }
 	}
     }
 
@@ -865,6 +871,8 @@ sub handle_area_like {
     print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
     if (defined $landuse) {
 	print $wayfh qq{  <tag k="landuse" v="$landuse" />\n};
+    } elsif (defined $bbbike_landuse) {
+	print $wayfh qq{  <tag k="bbbike:landuse" v="$bbbike_landuse" />\n};
     } else {
 	print $wayfh qq{  <tag k="leisure" v="$leisure" />\n};
     }
@@ -1456,6 +1464,17 @@ Maximum length on Garmin devices (verified on etrex Vista HCX) is 151.
 There are some heuristics used to abbreviate some common (german)
 words. Also the function L<Strasse/short> is called with the
 abbreviation level 4.
+
+=item * C<bbbike:landuse=industrial> instead of C<landuse=industrial>
+
+The default mkgmap style file (and bbbike's adaption of the style
+file) renders industrial areas only for zoom levels 19-23. The zoom
+level 24 is dedicated for related buildings. The bbbike Berlin data
+has no building elements, so it's useful to render industrial areas
+also in level 24 (especially if the Garmin device is set to "most
+detail" rendering). To make it possible to use the same style file for
+OSM data and BBBike data, this optimization (or better, hack) makes
+the distinction by using a custom tag C<bbbike:landuse>.
 
 =back
 

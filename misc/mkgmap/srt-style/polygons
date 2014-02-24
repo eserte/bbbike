@@ -158,6 +158,7 @@ landuse=allotments [0x4e resolution 21]
 (landuse=cemetery|landuse=cemetary|amenity=grave_yard) & religion=muslim [0x1c resolution 21]
 # XXX the island hack...
 landuse=island [0x10200 resolution 18]
+bbbike:landuse=industrial [0x0c resolution 19]
 # SRT: additions ^^^
 landuse=cemetery|landuse=cemetary|amenity=grave_yard [0x1a resolution 21]
 landuse=commercial [0x0c resolution 19]
