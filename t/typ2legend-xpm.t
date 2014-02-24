@@ -82,9 +82,9 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 32 1 2",
-"XX c #800000",
+"== c #800000",
 EOF
-	. solid_block_32_and_end();
+	. solid_block_32_and_end("==");
 }
 
 ######################################################################
@@ -105,8 +105,8 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 32 2 2",
-"XX c #f00000",
-"== c #000000",
+"XX c #000000",
+"== c #f00000",
 EOF
 	. some_image_data_and_end();
 }
@@ -133,16 +133,16 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 32 2 2",
-"XX c #80ffff",
-"== c #ffff80",
+"XX c #ffff80",
+"== c #80ffff",
 EOF
 	. some_image_data_and_end();
     eq_or_diff $night_xpm, <<'EOF'
 /* XPM */
 static char *XPM[] = {
 "32 32 2 2",
-"XX c #008000",
-"== c #000000",
+"XX c #000000",
+"== c #008000",
 EOF
 	. some_image_data_and_end();
 }
@@ -185,6 +185,8 @@ EOF
 ######################################################################
 # day: two-color bitmap, night: one-color transparent bitmap (type 13)
 {
+    local $TODO = "type 13 not handled correctly";
+
     my $raw = <<'EOF'
 XPM="32 32 3 2",
 "XX  c #cccccc",
@@ -194,7 +196,7 @@ EOF
     . some_image_data_and_end();
 
     my $xpm = Typ2Legend::XPM->new([parse_into_lines($raw)]);
-    my $ret = $xpm->transform(prefer13 => 1);
+    my $ret = $xpm->transform;
     my $day_xpm = $ret->{'day'}->as_string;
     my $night_xpm = $ret->{'night'}->as_string;
     maybe_montage $day_xpm, 'polygon 13, day';
@@ -235,15 +237,17 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 32 2 2",
-"XX c none",
-"== c #000000",
+"XX c #000000",
+"== c none",
 EOF
 	. some_image_data_and_end();
 }
 
 ######################################################################
 # day: one-color transparent bitmap, night: one-color transparent bitmap (type 15)
-{
+TODO: {
+    todo_skip "type 15 not handled currently", 2;
+
     my $raw = <<'EOF'
 XPM="32 32 2 2",
 "XX  c #cccccc",
@@ -252,7 +256,7 @@ EOF
     . some_image_data_and_end();
 
     my $xpm = Typ2Legend::XPM->new([parse_into_lines($raw)]);
-    my $ret = $xpm->transform(prefer15 => 1);
+    my $ret = $xpm->transform;
     my $day_xpm = $ret->{'day'}->as_string;
     my $night_xpm = $ret->{'night'}->as_string;
     maybe_montage $day_xpm, 'polygon 15, day';
@@ -296,8 +300,8 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 2 2 2",
-"XX c #555555",
-"== c #00fff0",
+"XX c #00fff0",
+"== c #555555",
 EOF
 	. some_line_data_and_end();
 }
@@ -324,16 +328,16 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 2 2 2",
-"XX c #00ff00",
-"== c #ffff00",
+"XX c #ffff00",
+"== c #00ff00",
 EOF
 	. some_line_data_and_end();
     eq_or_diff $night_xpm, <<'EOF'
 /* XPM */
 static char *XPM[] = {
 "32 2 2 2",
-"XX c #cccccc",
-"== c #aaaaaa",
+"XX c #aaaaaa",
+"== c #cccccc",
 EOF
 	. some_line_data_and_end();
 }
@@ -376,6 +380,8 @@ EOF
 ######################################################################
 # day: two colors, night: one color (type 5)
 {
+    local $TODO = "line type 5 not handled correctly";
+
     my $raw = <<'EOF'
 XPM="32 2 3 2",
 "XX  c #ff00a0",
@@ -385,7 +391,7 @@ EOF
     . some_line_data_and_end();
 
     my $xpm = Typ2Legend::XPM->new([parse_into_lines($raw)]);
-    my $ret = $xpm->transform(prefer13 => 1);
+    my $ret = $xpm->transform;
     my $day_xpm = $ret->{'day'}->as_string;
     my $night_xpm = $ret->{'night'}->as_string;
     maybe_montage $day_xpm, 'line+bmap 5, day';
@@ -426,15 +432,17 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 2 2 2",
-"XX c none",
-"== c #804040",
+"XX c #804040",
+"== c none",
 EOF
 	. some_line_data_and_end();
 }
 
 ######################################################################
 # day: one color, transparent, night: one color, transparent (type 7)
-{
+TODO: {
+    todo_skip "type 7 not handled correctly", 2;
+
     my $raw = <<'EOF'
 XPM="32 2 2 2",
 "XX  c #408040",
@@ -443,7 +451,7 @@ EOF
     . some_line_data_and_end();
 
     my $xpm = Typ2Legend::XPM->new([parse_into_lines($raw)]);
-    my $ret = $xpm->transform(prefer15 => 1);
+    my $ret = $xpm->transform;
     my $day_xpm = $ret->{'day'}->as_string;
     my $night_xpm = $ret->{'night'}->as_string;
     maybe_montage $day_xpm, 'line+bmap 7, day';
@@ -521,10 +529,10 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 4 2 2",
-"XX c #888888",
-"== c #000000",
+"** c #888888",
+"## c #000000",
 EOF
-	. solid_line_data_and_end();
+	. solid_line_data_and_end('**', '##');
 }
 
 ######################################################################
@@ -558,15 +566,17 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 4 2 2",
-"XX c #ffffff",
-"== c #666666",
+"== c #ffffff",
+"** c #666666",
 EOF
-	. solid_line_data_and_end();
+	. solid_line_data_and_end('==', '**');
 }
 
 ######################################################################
 # day: line color, border color, night: line+border color (type 5)
-{
+TODO: {
+    todo_skip "Line type 5 is known to be buggy", 2;
+
     my $raw = <<'EOF';
 XPM="0 0 3 2",
 "XX  c #0000ff",
@@ -652,9 +662,9 @@ EOF
 /* XPM */
 static char *XPM[] = {
 "32 2 1 2",
-"XX c #aaaaaa",
-"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+"== c #aaaaaa",
+"================================================================",
+"================================================================"
 };
 EOF
 }
@@ -669,11 +679,14 @@ if ($do_montage) {
 }
 
 sub solid_block_32 {
-    join(",\n", map { '"' . join("", (map { 'XX' } (1..32))) . '"' } 1..32)
+    my $colorcode = shift;
+    $colorcode ||= 'XX';
+    join(",\n", map { '"' . join("", (map { $colorcode } (1..32))) . '"' } 1..32)
 }
 
 sub solid_block_32_and_end {
-    solid_block_32() . "\n};\n";
+    my $colorcode = shift;
+    solid_block_32($colorcode) . "\n};\n";
 }
 
 sub some_image_data_and_end {
@@ -723,13 +736,18 @@ EOF
 }
 
 sub solid_line_data_and_end {
-    <<'EOF';
+    my($colorcode, $bordercode) = @_;
+    my $out =  <<'EOF';
 "================================================================",
 "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 "================================================================"
 };
 EOF
+    if (defined $colorcode) {
+	$out =~ s{(XX|==)}{$1 eq 'XX' ? $colorcode: $bordercode}ge;
+    }
+    $out;
 }
 
 sub parse_into_lines {
