@@ -10,10 +10,6 @@ use FindBin;
 use Test::More;
 use File::Basename qw(basename);
 
-# List of test files which fail for hash randomization-enabled perls,
-# i.e. 5.18.x. These test scripts should probably be fixed!
-my %TODO_hash_randomization = ('bbd2osm.t' => 1);
-
 my $bbbike_aux_t = "$FindBin::RealBin/../../bbbike-aux/t";
 if (!-d $bbbike_aux_t) {
     plan skip_all => "$bbbike_aux_t does not exist, nothing to test here";
@@ -29,10 +25,6 @@ if (!@tests) {
 plan tests => scalar @tests;
 for my $test (@tests) {
     my $test_basename = basename $test;
-    local $TODO;
-    if ($] >= 5.018 && $TODO_hash_randomization{$test_basename}) {
-	$TODO = "Known test failure because of hash randomization";
-    }
     my @cmd = ($^X, $test);
     open my $ofh, "-|", @cmd
 	or die "@cmd failed: $!";
