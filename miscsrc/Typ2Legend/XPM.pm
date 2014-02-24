@@ -150,7 +150,7 @@ sub transform {
 		    $ret{'night'} = $night;
 		} elsif ($numcolors == 1) { # line type 6
 		    my $day_night = $self->clone;
-		    $day_night->{data} = _create_xpm_line_body($linewidth, 0, $colorcode[0]);
+		    $day_night->{data} = _create_xpm_line_body($linewidth, $colorcode[0]);
 		    $day_night->{w} = 32;
 		    $day_night->{h} = $final_h;
 		    $ret{'day+night'} = $day_night;
