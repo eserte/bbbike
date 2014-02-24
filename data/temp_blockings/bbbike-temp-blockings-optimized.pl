@@ -3587,6 +3587,16 @@ userdel	q4::inwork; 12189,16578 12045,16574
          'data' => 'userdel	2::inwork 14257,6895 14153,6795
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_021331',
+         'until' => 1393592400,
+         'text' => 'Niemetzstr.: Baustelle, Straße zwischen Neuköllnische Allee und Saalestr. gesperrt, Gehweg eventuell passierbar, täglich 08:00 bis 14:00 Uhr bis zum 28.02.2014',
+         'from' => 1393138800,
+         'id' => 2541,
+         'data' => 'userdel	2::inwork 13797,7267 13761,7328
+',
+         'type' => 'gesperrt'
        }
      
 );

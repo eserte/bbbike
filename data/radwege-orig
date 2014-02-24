@@ -2623,11 +2623,16 @@ die letzten 100 Meter werden auf dem Gehweg geführt	RW3; 7487,3089 7115,3003
 #: next_check_id: GRENZALLEE-2014 vvv
 #: next_check: 2017-06-01 vvv
 #: valid: 20140224-20170601
-	RW0;RW0 13500,7018 13278,6967 13085,6925
+#: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
+	RW0; 13500,7018 13278,6967 13085,6925
+#: note: einige Meter vor der Ampel ist die Radspur aufgehoben
+	RW0; 13085,6925 13278,6967
 #: valid: !20140224-20170601
-	RW4;RW3 13500,7018 13278,6967 13085,6925
+	RW4; 13500,7018 13278,6967 13085,6925
+	RW3; 13085,6925 13278,6967
 #: next_check ^^^
 #: next_check_id ^^^
+	RW3; 13278,6967 13500,7018
 	RW1;RW1 14011,7103 14069,7100 14196,7086 14344,7003
 	RW1; 14344,7003 14567,6810
 bestehender Radweg abgesperrt	RW0; 14567,6810 14344,7003

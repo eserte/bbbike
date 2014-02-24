@@ -128,7 +128,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-02-21
+#: last_checked: 2014-02-24
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -188,12 +188,12 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 #: next_check_id: RATHAUSSTR-2014 vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-02-03
+#: last_checked: 2014-02-24
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
 #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig
-#: last_checked: 2014-02-03
+#: last_checked: 2014-02-24
 #: priority: #A
 Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
 #: next_check_id ^^^

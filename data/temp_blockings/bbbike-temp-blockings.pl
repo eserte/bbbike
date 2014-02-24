@@ -22471,4 +22471,13 @@ EOF
 userdel	2::inwork 14257,6895 14153,6795
 EOF
      },
+     { from  => 1393138800, # 2014-02-23 08:00
+       until => $isodate2epoch->("2014-02-28 14:00:00"),
+       text  => 'Niemetzstr.: Baustelle, Straße zwischen Neuköllnische Allee und Saalestr. gesperrt, Gehweg eventuell passierbar, täglich 08:00 bis 14:00 Uhr bis zum 28.02.2014',
+       type  => 'gesperrt',
+       source_id => 'IM_021331',
+       data  => <<EOF,
+userdel	2::inwork 13797,7267 13761,7328
+EOF
+     },
     );
