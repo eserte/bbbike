@@ -726,11 +726,23 @@ sub choose_from_additional_layer {
 	(-title => M"Straßen/Punkte auswählen",
 	 -scb => sub {
 	     my $abk = shift;
-	     choose_ort('s', $abk, -rebuild => 1);
+	     my %extra_args;
+	     # heuristic to detect layers created by "GPSMan-Daten zeichnen"
+	     # chronologically sorted works better here
+	     if ($str_file{$abk} =~ m{gpsspeed\.bbd}) {
+		 $extra_args{'-unsorted'} = 1;
+	     }
+	     choose_ort('s', $abk, -rebuild => 1, %extra_args);
 	 },
 	 -pcb => sub {
 	     my $abk = shift;
-	     choose_ort('p', $abk, -rebuild => 1);
+	     my %extra_args;
+	     # heuristic to detect layers created by "GPSMan-Daten zeichnen"
+	     # XXX unfortunately gpsman-created .wpt files are not chronologically sorted
+	     if ($p_file{$abk} =~ m{gpspoints\.bbd}) {
+		 $extra_args{'-unsorted'} = 1;
+	     }
+	     choose_ort('p', $abk, -rebuild => 1, %extra_args);
 	 },
 	 -token => 'choose_from_additional_layer',
 	);
