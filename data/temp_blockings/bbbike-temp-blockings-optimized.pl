@@ -3326,8 +3326,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'source_id' => 'IM_020145',
-         'until' => 1393603200,
-         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), 12.8.2013 06:00 Uhr bis 28.2.2014 17:00 Uhr',
+         'until' => 1402758000,
+         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), 12.8.2013 06:00 Uhr bis 14.6.2014 17:00 Uhr',
          'from' => 1376193600,
          'id' => 2469,
          'data' => '#: next_check_id: STERNDAMM-2014

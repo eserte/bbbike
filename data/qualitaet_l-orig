@@ -3063,12 +3063,12 @@ Krewitz - Fürstenwerder: Asphalt	Q0 21488,103411 21583,103592 21751,104209 21763
 Parmen - Fürstenwerder: Asphalt	Q0 21388,105770 21324,105996 21150,106277 21119,106390 21001,107598 20942,108183 20987,108826 21017,109192 21220,109584 21282,109705 21276,109794
 #: by: osm
 Templin - Metzelthin: Asphalt	Q0 19029,81437 18965,81375 18771,81559 18370,81773
-#: XXX ab 08. Juli 2013 beginnen die Bauarbeiten, danach vielleicht auch asphaltiert?
 #: by: http://www.tourismus-uckermark.de/spurdersteine0.html?&contUid=8871 (Bauarbeiten)
-#: osm_watch: way id="220315178" version="1" brb
-#: osm_watch: way id="220314636" version="2" brb
-#: next_check: 2014-01-01
-Templin - Metzelthin: überwiegend zweispuriger Feldweg, teilweise mit Kopfsteinpflaster, auch schlechtem Kopfsteinpflaster	Q2 18370,81773 18210,81858 18098,82362 17911,82688 17908,82800 17763,82881 17422,83352 16842,84701 16390,85815 16272,85947
+# REMOVED --- #: XXX ab 08. Juli 2013 beginnen die Bauarbeiten, danach vielleicht auch asphaltiert? --- osm_watch: way id="220315178" version="1" brb --- #: osm_watch: way id="220314636" version="2" brb --- #: next_check: 2014-01-01
+#: by: osm
+Templin - Metzelthin: wassergebundene Decke	Q1 18370,81773 18210,81858 18098,82362
+#: by: osm
+Templin - Metzelthin: Asphalt	Q0 18098,82362 17911,82688 17908,82800 17763,82881 17422,83352 16842,84701 16390,85815 16272,85947
 Dorfstr. - Neue Mehrower Str. (Hönow): Asphalt	Q0 26281,15811 26331,15786 26370,15796
 Dorfstr. - Neue Mehrower Str. (Hönow): unbefestigter Weg	Q2 26370,15796 26426,15806
 Dorfstr. - Neue Mehrower Str. (Hönow): wassergebundene Decke	Q1 26426,15806 26546,15740

@@ -134,7 +134,7 @@
 	X 13849,9310
 	X 14089,9610
 	X 14193,9746
-#: XXX_prog diese Ampel ist auch für den Radverkehr in Puschkinalle (Geradeausfahrer) relevant
+#: XXX_prog diese Ampel ist auch für den Radverkehr in Puschkinallee (Geradeausfahrer) relevant
 	F 14250,9756
 	X 13614,9333
 	X 15261,10738
@@ -704,10 +704,16 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 18023,5623
 	X 17960,5511
 	X 17728,5756
-#: next_check_id: STERNDAMM-2014
-#: XXX_prog: zurzeit bis 2013-12-20 außer Betrieb (Sterndamm gesperrt) --- evtl. mit valid_...-Direktive implementieren
-#: next_check: 2014-02-28
+#: next_check_id: STERNDAMM-2014 vvv
+#: XXX wegen der Sperrung des Sterndamms zurzeit außer Betrieb vvv
+#: valid: 20140614- vvv
+#: next_check: 2014-06-14 vvv
 	X 17886,5587
+	X 17736,5441
+#: next_check ^^^
+#: valid ^^^
+#: XXX ^^^
+#: next_check_id ^^^
 	X 21332,4655
 	X 21789,4520
 	X 22093,4499
@@ -795,8 +801,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10558,9763
 	X 12025,11346
 	X 15920,7697
-#: XXX_prog: zurzeit bis 2013-12-20 außer Betrieb (Sterndamm gesperrt) --- evtl. mit valid_...-Direktive implementieren
-	X 17736,5441
 	X 17648,5338
 #: note: Ampel ohne Fuß/Radquerung der Michael-Brückner-Str.
 #: XXX eventuell wird diese Einschränkung aufgehoben:
