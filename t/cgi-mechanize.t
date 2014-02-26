@@ -105,6 +105,7 @@ use lib ("$FindBin::RealBin",
 use BBBikeTest;
 
 use Getopt::Long;
+use POSIX qw(strftime);
 use URI ();
 use URI::QueryParam ();
 
@@ -659,13 +660,17 @@ for my $browser (@browsers) {
 	$like_long_data->(qr{M.*gliche Ausweichroute}, "Using Ausweichroute");
 	$like_long_data->(qr{\(um \d+ Meter l.*nger\)}, "Info: längere Route")
 	    or diag("Test is known to fail if Apache::Session::Counted is not available");
-	if (get_ct($agent) =~ /L.*?nge:.*([\d\.]+)\s*km/) {
+	if (get_ct($agent) =~ /L.*?nge:.*?([\d\.]+)\s*km/) {
 	    my $length = $1;
 	    cmp_ok($length, ">=", 1, "Longer path ($length km)");
 	} else {
 	    fail("Cannot get length from content");
 	}
-	$like_long_data->(qr{Sterndamm}, "Expected street in Ausweichroute");
+	if (strftime("%Y-%m-%d %H:%M:%S", localtime) lt "2014-06-14 17:00:00") {
+	    $like_long_data->(qr{Baumschulenweg}, "Expected street in Ausweichroute (while Sterndamm is blocked)");
+	} else {
+	    $like_long_data->(qr{Sterndamm}, "Expected street in Ausweichroute");
+	}
 
 	$agent->form_name('search');
 	$agent->click_button(value => "Rückweg");
