@@ -3,6 +3,8 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651
+R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 13467,11778
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 Neue Bahnhofstr.: Einbahnstraﬂe wegen Bauarbeiten	q3::inwork; 14879,11182 14918,11249
@@ -37,6 +39,7 @@ Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q
 Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5258,11285 5352,11502
 Fasanenstr.: Bauarbeiten, gemeinsamer Rad- und Gehweg	q2; 5352,11502 5356,11512 5456,11742
 Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,11847
+Maybachufer: Bauarbeiten an der Kreuzung Friedelstr.	q2::inwork 12088,9775 12250,9691
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fuﬂg‰ngerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12792,8190
 Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12074,9689 12088,9775
@@ -748,7 +751,7 @@ Limburger Str.: Fuﬂg‰nger	q2 7012,15571 7129,15717
 Litfaﬂ-Platz: Fuﬂg‰ngerzone, Radfahren erlaubt	q3 10348,12879 10312,12982
 (Finkenweg - Mariendorfer Damm): Fuﬂg‰nger	q1 9360,4996 9239,4980
 Yva-Bogen: Fuﬂg‰nger	q2 5373,10981 5426,11039 5459,11135
-(Georgenkirchstr. - Mollstr.): Fuﬂg‰nger	q1 11589,13305 11524,13247
+(Georgenkirchstr. - Mollstr.): Fuﬂg‰nger	q1 11589,13305 11526,13252
 Kelchstr.: enge Straﬂe	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fuﬂg‰nger	q2 7424,4821 7487,4802
 Kottesteig: Bordsteine, Fuﬂg‰nger	q1 6868,5262 6820,5237 6806,5230
@@ -1169,6 +1172,7 @@ Koseler Weg: einige Fuﬂg‰nger, Bordstein	q2 9850,6135 9679,6160
 (Landsberger Allee - Zechliner Str.): Fuﬂg‰nger, Bordstein	q2 16590,14386 16544,14593
 (Krautstr./Blumenstr. - Strausberger Platz): Fuﬂg‰nger, Hausdurchfahrt	q2 12125,12490 12134,12540
 Gleisdreieckpark, Einfahrt L¸tzowstr.: Bordstein	q2 8236,10623 8199,10634
+Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
 Gleisdreieck: flache Bordsteine	q1 8296,10438 8237,10418
 (Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 15187,16185 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 14810,16282 14721,16360
@@ -2128,7 +2132,7 @@ Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4240
 Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886
 Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22075,779 22007,711
 Stolzenfelsstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540 18731,8577
-Weydemeyerstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 11896,13075 11904,13058 12053,12984 12054,12903
+Weydemeyerstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 11896,13075 11904,13052 12053,12984 12054,12903
 Dorotheenstr. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 9454,12558 9330,12529
 Revaler Str. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13588,11490 13565,11492 13473,11456
 Kirchstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q0::igndisp; 22314,4604 22284,4653
@@ -2243,7 +2247,7 @@ Kreuzung Gregoroviusweg/Treskowallee	q1::igndisp; 18748,9922 18742,9903
 Alt-Friedrichsfelde, linker Gehweg	q2::igndisp; 19735,11721 19005,11767 18778,11742 18624,11712 18520,11685 18216,11656
 Alt-Friedrichsfelde, linker Gehweg	q2::igndisp; 18626,11742 18624,11712
 Landsberger Allee, linker Gehweg	q2::igndisp; 15256,14237 15430,14272
-Landsberger Allee, linker Gehweg	q3::igndisp; 12974,13289 13078,13330
+Landsberger Allee, linker Gehweg	q3::igndisp; 12974,13289 13073,13329
 Landsberger Allee, linker Gehweg	q3::igndisp; 16590,14409 16665,14420
 Landsberger Allee, Fuﬂg‰ngerampel	q3::igndisp; 16590,14386 16590,14409
 Sonnenallee, linker Gehweg	q4::igndisp; 13474,8060 13457,8069

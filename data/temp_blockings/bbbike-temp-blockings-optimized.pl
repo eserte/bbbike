@@ -3384,7 +3384,7 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2489,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-12-29
+#: last_checked: 2014-02-28
 #: check_frequency: 30d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
@@ -3418,14 +3418,14 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        undef,
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html',
-         'until' => 1393628399,
-         'text' => 'Friedrichsbrücke: ab dem 8.1.2014 bis zum 28.2.2014 Uhr ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt',
+         'until' => undef,
+         'text' => 'Friedrichsbrücke: ab dem 8.1.2014 ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt, Ende unbekannt',
          'from' => 1389135600,
          'id' => 2498,
-         'data' => '#: XXX Aufhebung der Sperrung aus Witterungsgründen möglich
+         'data' => '#: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-02-22
-#: next_check: 2014-02-28
+#: last_checked: 2014-02-28
+#: next_check: 2014-03-06
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'
@@ -3545,17 +3545,7 @@ userdel	2::inwork 2219,11304 2116,11288
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_021244',
-         'until' => 1393599600,
-         'text' => 'Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis 28.02.2014 16:00 Uhr',
-         'from' => 1392016320,
-         'id' => 2535,
-         'data' => 'userdel	q3::inwork 13173,11788 13295,11792 13366,11651
-userdel	q3::inwork 13275,11830 13295,11792 13467,11778
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3564,8 +3554,7 @@ userdel	q3::inwork 13275,11830 13295,11792 13467,11778
          'text' => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 06.06.2014 16:00 Uhr ',
          'from' => 1392902100,
          'id' => 2538,
-         'data' => '#: XXX impact überprüfen!
-userdel	q4::inwork; 12189,16578 12045,16574
+         'data' => 'userdel	q3::inwork; 12189,16578 12045,16574
 ',
          'type' => 'handicap'
        },
@@ -3588,13 +3577,17 @@ userdel	q4::inwork; 12189,16578 12045,16574
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_021331',
-         'until' => 1393592400,
-         'text' => 'Niemetzstr.: Baustelle, Straße zwischen Neuköllnische Allee und Saalestr. gesperrt, Gehweg eventuell passierbar, täglich 08:00 bis 14:00 Uhr bis zum 28.02.2014',
-         'from' => 1393138800,
-         'id' => 2541,
-         'data' => 'userdel	2::inwork 13797,7267 13761,7328
+         'until' => 1397512800,
+         'text' => 'Großgörschenstr.: die Unterführung an der S-Bahn ist gesperrt, bis voraussichtlich April 2014',
+         'from' => 1393624717,
+         'id' => 2542,
+         'data' => '#: by: http://www.punkt3.de/cms/files/2014-02_punkt3.pdf
+#: by: http://www.lars-oberg.de/aus_dem_wahlkreis/6278820.html
+#: XXX prüfen, ob schon früher geöffnet wird?
+#: next_check: 2014-04-01
+userdel	2::inwork 7882,9490 7960,9466
 ',
          'type' => 'gesperrt'
        }

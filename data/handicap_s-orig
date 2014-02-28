@@ -10,6 +10,15 @@
 # 
 ### Friedrichshain ###
 # 
+#: source_id: IM_021244 vvv
+#: valid: -20140320 vvv
+#: next_check: 2014-03-20 vvv
+Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651
+Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 13467,11778
+#: next_check ^^^
+#: valid: ^^^
+#: source_id ^^^
+# 
 #: last_checked: 2014-02-22 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
@@ -29,7 +38,7 @@ Neue Bahnhofstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14879,11182 14918,
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # REMOVED (keine Absperrung mehr) --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d --- Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
 # 
-#: last_checked: 2014-02-13
+#: last_checked: 2014-02-26
 #: check_frequency: 60d
 Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
 # 
@@ -128,7 +137,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-02-24
+#: last_checked: 2014-02-27
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -189,11 +198,13 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9869,12297 9852,12409
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: last_checked: 2014-02-24
+#: next_check: 2014-03-30
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
 #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig
 #: last_checked: 2014-02-24
+#: next_check: 2014-03-30
 #: priority: #A
 Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
 #: next_check_id ^^^
@@ -208,7 +219,7 @@ Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html (Ende der Baumaßnahme im April 2014)
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 #: next_check_id: FRIEDRICHSBRUECKE-2014 vvv
-#: last_checked: 2013-12-23 vvv
+#: last_checked: 2014-02-28 vvv
 #: next_check: 2014-03-14 vvv
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -245,6 +256,10 @@ Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,
 # 
 ### Neukölln ###
 # 
+#: XXX genaue Beeinträchtigung feststellen
+#: next_check: 2014-03-01
+Maybachufer: Bauarbeiten an der Kreuzung Friedelstr.	q2::inwork 12088,9775 12250,9691
+# 
 #: next_check_id: PLATZHOF-2014
 #: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof
 #: by: http://www.aktion-kms.de/files/p23.v_l01_120809.pdf
@@ -252,7 +267,7 @@ Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,
 #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden
 #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf
 #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/
-#: last_checked: 2014-02-14 vvv
+#: last_checked: 2014-02-28 vvv
 #: check_frequency: 30d vvv
 Platz der Stadt Hof: Bauarbeiten (in Zukunft wird hier eine Fußgängerzone entstehen), Fahrbahn ist gesperrt	q4::inwork 12753,8187 12792,8190
 Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12792,8190
@@ -260,7 +275,7 @@ Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12792,8190
 #: last_checked ^^^
 # 
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2014-01-18
+#: last_checked: 2014-02-28
 #: next_check: 2014-09-01
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
@@ -620,6 +635,7 @@ Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
 Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13448,12340
 #: XXX_prog Bordstein zur Parochialstr., die andere Seite ist abgesenkt (ansonsten q1 oder sogar besser)
 (Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
+#: note: von Süden aus explizit für Radfahrer verboten, von Norden aus fehlt so ein Schild
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666
@@ -831,7 +847,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
 #: osm_watch: way id="4610599" version="14"
-#: last_checked: 2013-12-23
+#: last_checked: 2014-02-28
 #: next_check: 2014-03-14
 Friedrichsbrücke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
@@ -1145,7 +1161,7 @@ Litfaß-Platz: Fußgängerzone, Radfahren erlaubt	q3 10348,12879 10312,12982
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/55re.pdf/file?y=2011
 #: note: Fahrradfahren uneingeschränkt erlaubt (früher: Fußgängerzone)
 Yva-Bogen: Fußgänger	q2 5373,10981 5426,11039 5459,11135
-(Georgenkirchstr. - Mollstr.): Fußgänger	q1 11589,13305 11524,13247
+(Georgenkirchstr. - Mollstr.): Fußgänger	q1 11589,13305 11526,13252
 Kelchstr.: enge Straße	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fußgänger	q2 7424,4821 7487,4802
 Kottesteig: Bordsteine, Fußgänger	q1 6868,5262 6820,5237 6806,5230
@@ -1681,11 +1697,19 @@ Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 #: XXX_prog BS zur Zechliner Str.
 (Landsberger Allee - Zechliner Str.): Fußgänger, Bordstein	q2 16590,14386 16544,14593
 (Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q2 12125,12490 12134,12540
+# 
 #: XXX_prog BS (ansonsten entfernen)
-#: XXX wurde der Bordstein mittlerweile abgesenkt?
+#: XXX wird der Bordstein noch abgesenkt?
 #: last_checked: 2014-01-25 (nein, zusätzlich noch Engstelle durch Bauarbeiten)
 #: check_frequency: 100d
 Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
+# 
+#: XXX_prog BS (ansonsten entfernen)
+#: XXX wird der Bordstein noch abgesenkt?
+#: last_checked: 2014-02-28
+#: check_frequency: 100d
+Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
+# 
 #: XXX_prog BS zu beiden Seiten (aber flach!) (ansonsten entfernen)
 Gleisdreieck: flache Bordsteine	q1 8296,10438 8237,10418
 (Hansastr. - Gartenstr.): Fußgänger	q1 15187,16185 15102,16212 14810,16282 14665,16294

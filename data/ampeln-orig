@@ -317,7 +317,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX Ampelanlange wird umgebaut (Richtung Kreuzung)
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20120514.1415.370100.html
 #: last_checked: 2014-01-03
-#: check_frequency: 60d
+#: next_check: 2014-08-28
 	F 10511,14418
 	X 10002,14092
 	X 9800,14722
@@ -866,7 +866,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 17418,16014
 	X 15896,13547
 	X 16852,14412
-	X 11446,13294
+	X 11451,13301
 	X 4015,17912
 	X 3930,17920
 	X 2821,18831
@@ -1560,10 +1560,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 13644,14915
 	X 12870,15342
 #: off: night (seen 2013-05-30 0:30)
-	X 13276,12903
+	X 13273,12902
 	X 13747,13110
 	X 13844,12900
-	X 13078,13330
+	X 13073,13329
 	X 14770,14048
 	X 15912,13153
 	X 15850,14308
@@ -2451,8 +2451,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2013-11-19
-#: next_check: 2014-04-04
+#: last_checked: 2014-02-28
+#: next_check: 2014-05-29
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
@@ -2476,7 +2476,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
-#: last_checked: 2014-02-05
+#: last_checked: 2014-02-28
 	F::inwork 9812,12145
 # 
 #: next_check_id: INVALIDEN-2014
@@ -2595,7 +2595,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork 14724,6668
 	X::inwork 14366,6337
 	X::inwork 14193,6556
-# angekündigt, existiert aber nicht ---	X::inwork 13891,7107
+#: XXX noch nicht eingeschaltet
+#: last_checked: 2014-02-28
+	X0::inwork 13891,7107
 	X::inwork 13278,6967
 #: next_check ^^^
 #: valid ^^^
@@ -3149,8 +3151,8 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 #: next_check_id: BER-20XX vvv
 #: XXX: Ampel am 2012-05-06 noch ausgeschaltet, wird wahrscheinlich mit BER in Betrieb gehen vvv
 #: next_check: 2015-01-01 vvv
-	X 19909,-2863
-	F 18861,-3921
+	X0 19909,-2863
+	F0 18861,-3921
 #: XXX ^^^
 #: next_check ^^^
 #: next_check_id ^^^

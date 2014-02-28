@@ -745,7 +745,7 @@ Steigung 2.4% (Bornstedter Str.)	St; 2551,9995 2590,9949
 Steigung 2.4% (Boddinstr.)	St; 12216,8323 12168,8313
 Steigung 2.4% (Boddinstr.)	St; 12168,8313 12104,8299
 Steigung 2.4% (Berghofer Weg)	St; 30950,3985 30979,3941
-Steigung 2.4% (Auerstr.)	St; 13202,12790 13276,12903
+Steigung 2.4% (Auerstr.)	St; 13202,12790 13273,12902
 Steigung 2.4% (Am Fölzberg)	St; 6887,23070 6907,23067
 Steigung 2.4% (Am Fichtenberg)	St; 4185,5349 4259,5390
 Steigung 2.4% (Am Fichtenberg)	St; 4134,5284 4185,5349
@@ -837,6 +837,8 @@ Steigung 2.2% (Methfesselstr.)	St; 8982,8781 9063,8935
 Steigung 2.2% (Marchstr.)	St; 4981,12252 5000,12288
 Steigung 2.2% (Machandelweg)	St; 90,12277 -45,12243
 Steigung 2.2% (Lauterberger Str.)	St; 12177,5746 12168,5855
+Steigung 2.2% (Landsberger Allee)	St; 12711,13150 12786,13185
+Steigung 2.2% (Landsberger Allee)	St; 12585,13118 12711,13150
 Steigung 2.2% (Königstr. (Wannsee))	St; -5268,1393 -5499,1349
 Steigung 2.2% (Königstr. (Wannsee))	St; -5161,1387 -5268,1393
 Steigung 2.2% (Kyritzer Str.)	St; 22599,15105 22603,15188
@@ -914,8 +916,6 @@ Steigung 2.1% (Mascha-Kaléko-Weg)	St; -6474,5216 -6449,5282
 Steigung 2.1% (Mascha-Kaléko-Weg)	St; -6474,5144 -6474,5216
 Steigung 2.1% (Mainzer Str. (Neukölln))	St; 12083,8411 12104,8299
 Steigung 2.1% (Lepsiusstr.)	St; 4520,5793 4404,5613
-Steigung 2.1% (Landsberger Allee)	St; 12685,13135 12786,13185
-Steigung 2.1% (Landsberger Allee)	St; 12585,13118 12685,13135
 Steigung 2.1% (Köpenicker Str. (Biesdorf, Köpenick))	St; 21124,11462 21108,11628
 Steigung 2.1% (Königstr. (Wannsee))	St; -9412,546 -8357,726
 Steigung 2.1% (Kranzallee)	St; -929,10897 -1028,10889
@@ -1105,7 +1105,7 @@ Steigung 1.8% (Werbellinstr. (Neukölln))	St; 12308,8088 12162,8055
 Steigung 1.8% (Weidenweg (Friedrichshain))	St; 13548,12535 13598,12554
 Steigung 1.8% (Virchowstr.)	St; 12709,13691 12743,13634
 Steigung 1.8% (Virchowstr.)	St; 12707,13706 12709,13691
-Steigung 1.8% (Straßmannstr.)	St; 13276,12903 13368,12943
+Steigung 1.8% (Straßmannstr.)	St; 13273,12902 13368,12943
 Steigung 1.8% (Storkower Str.)	St; 14089,13509 14109,13449
 Steigung 1.8% (Steilpfad)	St; 3280,21477 3375,21230
 Steigung 1.8% (Spandauer Damm)	St; 1828,12370 1690,12407
@@ -1394,7 +1394,6 @@ Steigung 1.5% (Kronprinzessinnenweg)	St; -4280,2539 -4188,2674
 Steigung 1.5% (Kreuzbergstr.)	St; 8769,9290 8598,9264
 Steigung 1.5% (Krampenburger Weg)	St; 27948,439 27890,373
 Steigung 1.5% (Kochhannstr.)	St; 13339,13196 13434,13234
-Steigung 1.5% (Kochhannstr.)	St; 13175,13128 13267,13167
 Steigung 1.5% (Kaiserdamm)	St; 2109,11441 1960,11426
 Steigung 1.5% (Jonasstr. (Neukölln))	St; 12585,7357 12396,7312
 Steigung 1.5% (Joachimstr. (Bohnsdorf))	St; 22382,-87 22177,-137
@@ -1485,7 +1484,7 @@ Steigung 1.4% (Rudolf-Reusch-Str.)	St; 15670,12298 15710,12365
 Steigung 1.4% (Rosenfelder Str.)	St; 17161,11681 17240,11791
 Steigung 1.4% (Richterstr. (Mariendorf))	St; 9099,4204 9106,4114
 Steigung 1.4% (Richard-Sorge-Str.)	St; 13463,12507 13371,12694
-Steigung 1.4% (Richard-Sorge-Str.)	St; 13371,12694 13276,12903
+Steigung 1.4% (Richard-Sorge-Str.)	St; 13371,12694 13273,12902
 Steigung 1.4% (Reuterstr. (Neukölln))	St; 12156,8760 12170,8548
 Steigung 1.4% (Potsdamer Chaussee (Zehlendorf, Nikolassee))	St; -2074,2258 -2280,2177
 Steigung 1.4% (Plutoweg)	St; 30965,3391 31082,3366
@@ -1615,6 +1614,7 @@ Steigung 1.3% (Köpenicker Str. (Biesdorf, Köpenick))	St; 20887,7267 20653,7289
 Steigung 1.3% (Königstr. (Mariendorf))	St; 9066,4512 9172,4521
 Steigung 1.3% (Kurze Str. (Hermsdorf))	St; 2932,24056 3012,24107
 Steigung 1.3% (Kolmarer Str.)	St; 11299,14112 11354,14187
+Steigung 1.3% (Kochhannstr.)	St; 13168,13125 13267,13167
 Steigung 1.3% (Karl-Marx-Str.)	St; 13068,7043 13072,7013
 Steigung 1.3% (Karl-Marx-Str.)	St; 13058,7112 13068,7043
 Steigung 1.3% (Kalkbergeweg)	St; 31542,4680 31673,4641
@@ -1966,7 +1966,7 @@ Steigung 1.0% (Rothenbücherweg)	St; -4651,9487 -4657,9594
 Steigung 1.0% (Rothenbücherweg)	St; -4645,9365 -4651,9487
 Steigung 1.0% (Rosenfelder Str.)	St; 17240,11791 17306,11866
 Steigung 1.0% (Roedeliusplatz)	St; 16227,12280 16276,12273
-Steigung 1.0% (Richard-Sorge-Str.)	St; 13276,12903 13175,13128
+Steigung 1.0% (Richard-Sorge-Str.)	St; 13273,12902 13168,13125
 Steigung 1.0% (Rapunzelstr.)	St; 19240,1674 19207,1592
 Steigung 1.0% (Quickborner Str.)	St; 6882,23209 7072,22905
 Steigung 1.0% (Quickborner Str.)	St; 6830,23293 6873,23224

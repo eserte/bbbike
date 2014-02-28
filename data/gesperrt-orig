@@ -28,7 +28,7 @@ Dennewitzplatz	1 7813,10112 7906,10098
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679
 #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen
-#: last_checked: 2014-02-18
+#: last_checked: 2014-02-28
 #: next_check: 2014-05-01
 Dennewitzplatz	1s:q3 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
@@ -158,7 +158,7 @@ An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 #: note: hier stand mal ein Polizeiauto, als ich reinfahren wollte...
-Weydemeyerstr.	1s:q4 11896,13075 11904,13058 12053,12984 12054,12903
+Weydemeyerstr.	1s:q4 11896,13075 11904,13052 12053,12984 12054,12903
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12529
 Georgenstr.	1 9434,12669 9568,12688 9659,12704 9754,12775
@@ -1345,7 +1345,7 @@ Aroser Allee: Mittelstreifen	3nocross 6689,17911 6711,17839 6739,17749
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13824,5204 13892,4955
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14048,4363 14023,4475
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13939,4778 13914,4877 13892,4955
-Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13078,13330
+Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13073,13329
 Hauptstr.: Straßenbahntrasse	3nocross 15639,10469 15404,10633 15379,10651
 Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105 16187,10033 16261,9925 16302,9865
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
@@ -1558,13 +1558,13 @@ Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14552,16171 14522,16260 14499,163
 Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16803,11859 16962,11833 17037,11820 17121,11806 17151,11801
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
-Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11524,13247 11557,13228 11681,13161
+Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11526,13252 11560,13232 11681,13161
 #: by: Andreas Mühlhausen: vvv
 Heerstr.: schlecht passierbar	3nocross -4063,11805 -4009,11789 -3707,11693
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
-Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11406,13321 11306,13386 11276,13408
-Otto-Braun-Str.: Straßenbahntrasse	3nocross 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11446,13294
-Otto-Braun-Str.: Straßenbahntrasse	3nocross 11446,13294 11368,13170 11320,13095
+Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11409,13327 11308,13389 11276,13408
+Otto-Braun-Str.: Straßenbahntrasse	3nocross 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11451,13301
+Otto-Braun-Str.: Straßenbahntrasse	3nocross 11451,13301 11368,13170 11320,13095
 Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11320,13095 11267,13012 11226,12945
 #: by: ^^^
 Karl-Marx-Allee: Mittelstreifen	3nocross 11226,12945 11289,12908 11589,12768 11635,12745
@@ -1995,8 +1995,8 @@ Drängelgitter	BNP:3::trailer=10 10062,15927
 #: next_check_id: LORTZING-2014
 #: XXX eventuell temporär wegen der Baustraße
 #: XXX siehe auch in zebrastreifen-orig
-#: last_checked: 2013-09-13
-#: next_check: 2014-03-13
+#: last_checked: 2014-02-26
+#: check_frequency: 120d
 zwei weite Drängelgitter	BNP:4::trailer=12 10038,15418
 Schranke	BNP:3 -7969,-1659
 Drängelgitter	BNP:3::trailer=10 18126,9075
@@ -2453,6 +2453,13 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2014-02-28 vvv
+#: check_frequency: 90d vvv
+Schinkelplatz: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 10008,12274 9994,12368 9996,12401
+Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 9943,12364 9961,12273
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: STERNDAMM-2014
 #: source_id: IM_020145
 #: valid: -20140614
@@ -2468,8 +2475,7 @@ Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und 
 #: next_check: 2017-06-01
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 # 
-#: last_checked: 2014-02-25
-Wadzeckstr. - Mollstr.: Baustelle, möglicherweise wird es diese Verbindung in Zukunft nicht mehr geben	2::inwork 11326,13196 11379,13279 11406,13321
+# REMOVED (wahrscheinlich dauerhaft) --- #: last_checked: 2014-02-25 --- Wadzeckstr. - Mollstr.: Baustelle, möglicherweise wird es diese Verbindung in Zukunft nicht mehr geben	2::inwork 11326,13196 11379,13279 11409,13327
 # 
 #: next_check_id: ZIMMERMANNSTRBR-2014
 #: last_checked: 2014-02-08
@@ -2513,8 +2519,8 @@ Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,1404
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Zugang durch Bauzäune versperrt	2::inwork 8243,9766 8233,9863 8201,9869 8255,9938 8285,9956
 # 
 #: next_check_id: GLEISDREIECKBUELOW-2014
-#: last_checked: 2014-02-18
-#: next_check: 2014-02-28 (Bauarbeiten bis Ende Februar)
+#: last_checked: 2014-02-28
+#: next_check: 2014-03-14
 Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,10098 7928,10094 8027,10076 8033,10047
 # 
 #: last_checked: 2013-10-29
@@ -2547,7 +2553,7 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 #: XXX siehe auch Busspur in radwege-orig vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
-#: last_checked: 2014-01-04 vvv
+#: last_checked: 2014-02-28 vvv
 #: check_frequency: 90d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9852,12409
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9852,12409 9934,12420 9943,12364
@@ -2567,8 +2573,8 @@ An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 #: next_check_id: FLORAGAERTEN-2014
 #: osm_watch: way id="201628184" version="3"
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2013-12-17
-#: next_check: 2014-02-13
+#: last_checked: 2014-02-26
+#: check_frequency: 90d
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 # 
 # REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: priority: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^
@@ -2610,7 +2616,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
-#: last_checked: 2013-12-22
+#: last_checked: 2014-02-28
 #: next_check: 2014-06-02
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
 # 
@@ -2853,7 +2859,7 @@ tragen (ca. 5 x 9 Stufen)	0:120 13853,13712
 Danziger Str.: Straßenbahnschienen	3nocross 12901,14093 12975,13990 13037,13897 13100,13803
 Danziger Str.: Straßenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620
 Pintschstr.	1 13339,13196 13435,12973
-Landsberger Allee	3nocross 12382,13097 12585,13118 12685,13135
+Landsberger Allee	3nocross 12382,13097 12585,13118 12711,13150
 Landsberger Allee: Straßenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701
 Landsberger Allee: Straßenbahntrasse	3nocross 13164,13374 13235,13414 13330,13468
 # REMOVED (mitlerweile (ca. 2012) existiert für Fußgänger und Autofahrer eine Kreuzungsmöglichkeit) --- #: by: jörg (schalkau): --- #: confirmed_by: srt --- Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523

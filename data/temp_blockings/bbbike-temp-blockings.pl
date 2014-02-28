@@ -5823,7 +5823,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_83350',
        data  => <<EOF,
-userdel	q4::inwork; 12979,13280 12878,13229 12786,13185 12685,13135 12585,13118 12382,13097
+userdel	q4::inwork; 12979,13280 12878,13229 12786,13185 12711,13150 12585,13118 12382,13097
 EOF
      },
      { from  => 1158618023, # 2006-09-19 00:20
@@ -21962,7 +21962,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2013-12-29
+#: last_checked: 2014-02-28
 #: check_frequency: 30d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
@@ -22041,15 +22041,15 @@ userdel	q4::inwork 3171,25495 3141,25575 3141,25626 3154,25659
 EOF
      },
      { from  => $isodate2epoch->("2014-01-08 00:00:00"), # 1381651200, # 2013-10-13 10:00
-       until => $isodate2epoch->("2014-02-28 23:59:59"), # 1382133600, # 2013-10-19 00:00
-       text  => 'Friedrichsbrücke: ab dem 8.1.2014 bis zum 28.2.2014 Uhr ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt',
+       until => undef, # $isodate2epoch->("2014-02-28 23:59:59"), # 1382133600, # 2013-10-19 00:00
+       text  => 'Friedrichsbrücke: ab dem 8.1.2014 ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt, Ende unbekannt',
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html',
        data  => <<EOF,
-#: XXX Aufhebung der Sperrung aus Witterungsgründen möglich
+#: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-02-22
-#: next_check: 2014-02-28
+#: last_checked: 2014-02-28
+#: next_check: 2014-03-06
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
@@ -22415,8 +22415,8 @@ userdel	2::temp 20808,3374 20750,3440
 EOF
      },
      { from  => 1392016320, # 2014-02-10 08:12
-       until => 1393599600, # 2014-02-28 16:00
-       text  => 'Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis 28.02.2014 16:00 Uhr',
+       until => 1393617214, # -> handicap_s-orig # $isodate2epoch->("2014-04-30 16:00:00"), # 1393599600, # 2014-02-28 16:00
+       text  => 'Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014',
        type  => 'handicap',
        source_id => 'IM_021244',
        data  => <<EOF,
@@ -22425,13 +22425,13 @@ userdel	q3::inwork 13275,11830 13295,11792 13467,11778
 EOF
      },
      { from  => 1392677587, # undef, # 
-       until => 1392677592, # undef, # XXX
+       until => 1393464152, # 1392677592, # undef, # XXX
        text  => 'Wadzeckstr. - Mollstr.: Parkplatzzufahrt gesperrt, Umfahrung auf dem Gehweg der Otto-Braun-Str. langsam möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (-> gesperrt-orig) --- #: XXX bleibt das dauerhaft gesperrt? --- #: XXX_indoor: evtl. Umfahrung über Otto-Braun-Str. definieren --- #: last_checked: 2014-02-13 --- #: check_frequency: 7d
-	q4::inwork; 11406,13321 11379,13279 11326,13196
-	q3::inwork; 11326,13196 11379,13279 11406,13321
+# REMOVED ---	q4::inwork; 11409,13327 11379,13279 11326,13196
+# REMOVED ---	q3::inwork; 11326,13196 11379,13279 11409,13327
 EOF
      },
      { from  => 1392120000, # 2014-02-11 13:00
@@ -22450,8 +22450,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021322',
        data  => <<EOF,
-#: XXX impact überprüfen!
-userdel	q4::inwork; 12189,16578 12045,16574
+userdel	q3::inwork; 12189,16578 12045,16574
 EOF
      },
      { from  => 1393534800, # 2014-02-27 22:00
@@ -22478,6 +22477,18 @@ EOF
        source_id => 'IM_021331',
        data  => <<EOF,
 userdel	2::inwork 13797,7267 13761,7328
+EOF
+     },
+     { from  => 1393624717, # 2014-02-28 22:58
+       until => 1397512800, # 2014-04-15 00:00
+       text  => 'Großgörschenstr.: die Unterführung an der S-Bahn ist gesperrt, bis voraussichtlich April 2014',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.punkt3.de/cms/files/2014-02_punkt3.pdf
+#: by: http://www.lars-oberg.de/aus_dem_wahlkreis/6278820.html
+#: XXX prüfen, ob schon früher geöffnet wird?
+#: next_check: 2014-04-01
+userdel	2::inwork 7882,9490 7960,9466
 EOF
      },
     );

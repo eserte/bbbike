@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-02-18
+#: last_checked: 2014-02-26
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2014-02-24
+#: last_checked: 2014-02-28
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -147,14 +147,7 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: check_frequency: 60d
 Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7717,16541 7754,16364 7800,16233 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
 # 
-#: XXX Baumaßnahme 3.39 (Realisierung nach 2011)
-#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: XXX evtl. wird erst etwas mit Realisierung des Stadtquartiers "Pankower Tor" entstehen
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3701
-#: osm_watch: way id="144945039" version="4"
-#: last_checked: 2013-10-25 (Richtung Nordosten fertig)
-#: next_check: 2014-01-25
-Granitzstr.: wird auch etwas in der anderen Richtung gemacht?	? 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
+# REMOVED (wahrscheinlich passiert hier nichts bevor das Pankower Tor realisiert wird) --- #: XXX Baumaßnahme 3.39 (Realisierung nach 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: XXX evtl. wird erst etwas mit Realisierung des Stadtquartiers "Pankower Tor" entstehen --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3701 --- #: osm_watch: way id="144945039" version="4" --- #: last_checked: 2013-10-25 (Richtung Nordosten fertig) --- #: next_check: 2014-01-25 --- Granitzstr.: wird auch etwas in der anderen Richtung gemacht?	? 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
 # 
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
 #: last_checked: 2013-08-27
@@ -183,7 +176,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
 #: last_checked: 2014-01-05 (Bauarbeiten zu sehen, unklar, ob sie mit den Radspuren zu tun haben)
-#: check_frequency: 60d
+#: next_check: 2014-03-25
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
@@ -317,7 +310,7 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
 #: last_checked: 2013-12-26
 #: next_check: 2014-03-15
-Schlichallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
+Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
 #: XXX Realisierung von Radstreifen bis 2015
@@ -361,10 +354,6 @@ Hauptstr. (Wilhelmsruh): Radstreifen?	?::projected 7672,19869 7711,19956 7748,20
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
-# 
-#: by: https://www.facebook.com/SPDSchoeneberg/posts/391419604276368
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4769
-Uwe-Saager-Steig: ist das ein offizieller Name? Ausschilderung vor Ort?	? 7353,8633 7313,8661
 # 
 #: last_checked: 2014-02-23
 Konrad-Wolf-Str.: wahrscheinlich Bau eines Radwegs	?::inwork; 15066,14579 15174,14638
@@ -639,19 +628,19 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12871,9356 12888,9338
-#: last_checked: 2014-01-18
+#: last_checked: 2014-02-28
 #: next_check: 2014-09-01
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2014-02-24
+#: last_checked: 2014-02-28
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4425
-#: last_checked: 2014-01-25
+#: last_checked: 2014-02-28
 #: check_frequency: 90d
 #: priority: #C
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13860,8599 13898,8613
@@ -832,8 +821,8 @@ Eingang zum Flaschenhalspark: betoniert, wahrscheinlich auch mit Drängelgittern?
 #: XXX evtl. wird Richtung Norden bis zur Yorckstr. verlängert, siehe folgende Drucksache:
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4411
 #: XXX culdesac-Einträge entfernen, wenn die Verlängerung erfolgt ist
-#: last_checked: 2013-11-19
-#: next_check: 2015-01-01
+#: last_checked: 2014-02-28
+#: next_check: 2015-02-28
 Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8204,9001 8200,8920 7998,8317
 # 
 #: XXX_osm: fehlt bei osm komplett
@@ -938,7 +927,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2013-12-22 vvv
+#: last_checked: 2014-02-28 vvv
 #: next_check: 2014-06-02 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1145,7 +1134,7 @@ Schwarzwurzel-Park: Bordsteine? Qualität? Nachts beleuchtet?	? 20654,18336 20700
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2014-02-05
+#: last_checked: 2014-02-28
 #: check_frequency: 60d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
@@ -1265,7 +1254,7 @@ Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7422,13012
 Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3404 (Verfahren wurde eingeleitet)
-#: last_checked: 2013-12-17
+#: last_checked: 2014-02-27
 #: check_frequency: 180d
 #: priority: #C
 Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10056,17781 10033,17763
@@ -1458,8 +1447,8 @@ Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::proj
 #: XXX fehlt in Berlin.coords.data: Insel-Rügen-Weg|Pankow|13189
 #: note: Weg in der Anlage "Insel Rügen" eG
 #: osm_watch: way id="28997509" version="11"
-#: last_checked: 2013-10-20
-#: next_check: 2014-02-17
+#: last_checked: 2014-02-27
+#: check_frequency: 90d
 Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage (GPS-Koordinaten!)	?::inwork 10960,17674 10969,17587 11064,17599 11354,17642
 # 
 #: by: http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf vvv
@@ -1831,7 +1820,7 @@ Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf
-#: last_checked: 2013-12-29
+#: last_checked: 2014-02-28
 #: check_frequency: 30d
 Cheruskerpark: entsteht hier eine neue Wegverbindung?	?::projected 7391,8231 7369,8278
 # 
@@ -1846,13 +1835,7 @@ Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -15999,1387 -16
 # REMOVED (umbenannt) --- RB11: RE11 wird umbenannt zu RB11	? 96550,-27095 96361,-28541
 # REMVOED (ist doch nicht passiert) --- S8: wird in der Hauptverkehrszeit bis KW verlängert	? 26029,-6170 26057,-6241
 # REMOVED --- #: priority ^^^ --- #: next_check ^^^ --- #: XXX ^^^
-# 
-#: XXX wird es einen Ersatz für die Ruderfähre F24 geben?
-#: by: http://www.berliner-zeitung.de/berlin/mueggelheim-aus-fuer-ruderfaehre,10809148,24637330.html (sagt nein: kein Platz für einen Anleger)
-#: by: http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/rahnsdorf/artikel/8416-im-herbst-2013-stellt-die-faehre-f-24-den-betrieb-ein/ (sagt ja, durch die F23)
-#: by: http://www.tagesspiegel.de/berlin/berlin-koepenick-aus-fuer-berlins-letzte-ruderfaehre/8937114.html (nein, kein Hinweis darauf)
-#: next_check: 2014-03-01
-Ersatz für die F24?	? 29959,3031 29968,2986
+# REMOVED (sieht nicht so aus) --- #: XXX wird es einen Ersatz für die Ruderfähre F24 geben? --- #: by: http://www.berliner-zeitung.de/berlin/mueggelheim-aus-fuer-ruderfaehre,10809148,24637330.html (sagt nein: kein Platz für einen Anleger) --- #: by: http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/rahnsdorf/artikel/8416-im-herbst-2013-stellt-die-faehre-f-24-den-betrieb-ein/ (sagt ja, durch die F23) --- #: by: http://www.tagesspiegel.de/berlin/berlin-koepenick-aus-fuer-berlins-letzte-ruderfaehre/8937114.html (nein, kein Hinweis darauf) --- #: next_check: 2014-03-01 --- Ersatz für die F24?	? 29959,3031 29968,2986
 # 
 #: last_checked: 2013-12-22 vvv
 #: check_frequency: 180d vvv
@@ -3212,7 +3195,9 @@ Sperberweg (Potsdam-Golm): Qualität?	? -17843,139 -17789,300
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
 Am Golmer Weinberg (Potsdam-Golm): Qualität?	? -19197,-348 -19180,-292 -19175,-237
 #: XXX fehlt in Potsdam.coords.data
-Ritterstr. (Potsdam-Golm): Qualität?	? -19180,-292 -19101,-318
+#: by: http://www.potsdam.de/cms/dokumente/31998475_2027173/1fd58c39/Amtsblatt_02_14.pdf
+#: XXX laut Amtsblatt 335m lang
+Ritterstr. (Potsdam-Golm): Qualität? Genaue Lage	? -19180,-292 -19101,-318
 #: XXX fehlt in Potsdam.coords.data
 Alter Weinberg (Groß Glienicke): Qualität?	? -9276,7226 -9198,7051
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
@@ -3518,9 +3503,13 @@ Neubrücker Str.: Ist die Neubrücker Str. eine Vorfahrtsstraße?	? 1364,25882 1213
 # 
 Ahlimbsmühle - Templin: Qualität?	? 24006,74469 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
 # 
-#: XXX fehlt in Potsdam.coords.data, PLZ=14476 oder PLZ=14478 (letzteres im Amtsblatt)
+#: XXX fehlt in Potsdam.coords.data, PLZ=14476 oder PLZ=14478 (letzteres im Amtsblatt, möglicherweise falsch)
 #: by: http://www.potsdam.de/cms/dokumente/10097197_1471008/9e11fd84/Amtsblatt_09_12.pdf
 Heinz-Sielmann-Ring (Potsdam-Groß-Glienicke): Qualität?	? -8632,8641 -8192,8567
+#
+#: by: http://www.potsdam.de/cms/dokumente/31998475_2027173/1fd58c39/Amtsblatt_02_14.pdf
+#: XXX fehlt in Potsdam.coords.data, PLZ=14476
+Georg-Sigismund-von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8632,8641 -8569,8406 -8485,8162
 # 
 #: XXX der erste Abschnitt bis zum P+R (?)-Parkplatz ist auch für Autos befahrbar
 Potsdam Hbf - Uferweg: Qualität?	? -12247,-1858 -12210,-1857 -12200,-1813 -12165,-1815 -12122,-1737 -12103,-1679 -12059,-1617
