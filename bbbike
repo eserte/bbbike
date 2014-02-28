@@ -21287,7 +21287,9 @@ sub load_photo {
 	eval {
 	    my @name = exists $args{-name} ? ($args{-name}) : ();
 	    my $do_subsample = $small_icons;
-	    if ($file =~ m{\.xpm$}i && !$small_icons) {
+	    if ($file =~ m{\.xpm$}i && !$small_icons &&
+		!$photo_args{'-palette'} && !$photo_args{'-gamma'} # not support ed by Pixmap
+	       ) {
 		# Pixmap seem to be more memory-efficient, but it's
 		# not possible to do subsample operations (in case of
 		# $small_icons)
