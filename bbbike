@@ -5660,17 +5660,31 @@ sub load_photos {
     $flag_photo{'start'} = load_photo($top, 'flag2_bl_centered');
     $flag_photo{'via'}   = load_photo($top, 'flag_via_centered');
     $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel_centered');
+
     $ampel_photo         = load_photo($top, 'ampel');
+    # $ampel_klein_photo elsewhere loaded
     $ampel_klein2_photo  = load_photo($top, 'ampel_klein2');
+
+    $ampel_grey_photo	 = load_photo($top, 'ampel', -palette => 256);
+    # $ampel_klein_grey_photo elsewhere loaded
+    $ampel_klein2_grey_photo = load_photo($top, 'ampel_klein2', -palette => 256);
+
     $ampelf_photo        = load_photo($top, 'ampelf');
     $ampelf_klein_photo  = load_photo($top, 'ampelf_klein');
     $ampelf_klein2_photo = load_photo($top, 'ampelf_klein2');
+
+    $ampelf_grey_photo        = load_photo($top, 'ampelf.xpm', -palette => 256); # XXX force .xpm needed because png is not transferred into grayscale image
+    $ampelf_klein_grey_photo  = load_photo($top, 'ampelf_klein.xpm', -palette => 256); # XXX see above
+    $ampelf_klein2_grey_photo = load_photo($top, 'ampelf_klein2.xpm', -palette => 256); # XXX see above
+
     $andreaskr_klein_photo = load_photo($top, 'andreaskr_klein');
     $andreaskr_klein2_photo= load_photo($top, 'andreaskr_klein2');
     $andreaskr_photo     = load_photo($top, 'andreaskr');
+
     $andreaskr_grey_klein_photo = load_photo($top, 'andreaskr_klein', -palette => 256);
     $andreaskr_grey_klein2_photo= load_photo($top, 'andreaskr_klein2', -palette => 256);
     $andreaskr_grey_photo       = load_photo($top, 'andreaskr', -palette => 256);
+
     $kreisverkehr_photo  = load_photo($top, 'kreisverkehr');
     $windrose2_photo     = load_photo($top, 'windrose2');
     $kneipen_photo       = load_photo($top, 'glas');
@@ -7264,7 +7278,11 @@ EOF
 				      ? $zugbruecke_photo
 				      : $rawcategory eq 'F'
 				        ? $ampelf_photo
-			                : $ampel_photo
+					: $rawcategory eq 'F0'
+					  ? $ampelf_grey_photo
+					  : $rawcategory eq 'X0'
+					    ? $ampel_grey_photo
+					    : $ampel_photo
 			         ),
 		       -tags => \@tags,
 		      );
@@ -11707,7 +11725,9 @@ sub plot_point {
     my($ampel_photo, $ampelf_photo, $andreaskr_photo, $andreaskr_grey_photo, $zugbruecke_photo);
     if ($abk eq 'lsa') {
 	$ampel_photo      = get_symbol_scale('lsa-X');
+	$ampel_grey_photo = get_symbol_scale('lsa-X0');
 	$ampelf_photo     = get_symbol_scale('lsa-F');
+	$ampelf_grey_photo = get_symbol_scale('lsa-F0');
 	$andreaskr_photo  = get_symbol_scale('lsa-B');
 	$andreaskr_grey_photo = get_symbol_scale('lsa-B0');
 	$zugbruecke_photo = get_symbol_scale('lsa-Zbr');
@@ -16157,7 +16177,7 @@ sub scale_width {
 	}
     }
 
-    foreach (qw(lsa-X lsa-B lsa-B0 lsa-F lsa-Zbr rest kn vf-Vf vf-Kz u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
+    foreach (qw(lsa-X lsa-X0 lsa-B lsa-B0 lsa-F lsa-F0 lsa-Zbr rest kn vf-Vf vf-Kz u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
 	$c->itemconfigure($_ . '-fg && !attrib-inwork', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(u-U0 u-UBau b-S0 b-SBau r-R0 r-RBau r-RP)) { # overwrite the previous settings of u,b,r
@@ -16435,6 +16455,16 @@ sub get_symbol_scale {
 	} else {
 	    return undef;
 	}
+    } elsif ($tag eq 'lsa-X0') {
+	if ($myscale > 4*$mod) {
+	    return $ampel_grey_photo;
+	} elsif ($scale >= 2*$mod) {
+	    return $ampel_klein_grey_photo;
+	} elsif ($scale >= 0.5*$mod) {
+	    return $ampel_klein2_grey_photo;
+	} else {
+	    return undef;
+	}
     } elsif ($tag eq 'lsa-F') {
 	if ($myscale > 4*$mod) {
 	    return $ampelf_photo;
@@ -16442,6 +16472,16 @@ sub get_symbol_scale {
 	    return $ampelf_klein_photo;
 	} elsif ($scale >= 0.5*$mod) {
 	    return $ampelf_klein2_photo;
+	} else {
+	    return undef;
+	}
+    } elsif ($tag eq 'lsa-F0') {
+	if ($myscale > 4*$mod) {
+	    return $ampelf_grey_photo;
+	} elsif ($scale >= 2*$mod) {
+	    return $ampelf_klein_grey_photo;
+	} elsif ($scale >= 0.5*$mod) {
+	    return $ampelf_klein2_grey_photo;
 	} else {
 	    return undef;
 	}

@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.37 2009/06/07 21:07:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2003,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -563,10 +562,12 @@ sub BBBikeLazy::plotstr_on_demand {
 				: 0);
 	    # ^^^
 	    # XXX Duplikate in plot_point:
-	    my($ampel_photo, $ampelf_photo, $andreaskr_photo, $andreaskr_grey_photo, $zugbruecke_photo);
+	    my($ampel_photo, $ampel_grey_photo, $ampelf_photo, $ampelf_grey_photo, $andreaskr_photo, $andreaskr_grey_photo, $zugbruecke_photo);
 	    if ($abk eq 'lsa') {
 		$ampel_photo      = get_symbol_scale('lsa-X');
+		$ampel_grey_photo = get_symbol_scale('lsa-X0');
 		$ampelf_photo     = get_symbol_scale('lsa-F');
+		$ampelf_grey_photo = get_symbol_scale('lsa-F0');
 		$andreaskr_photo  = get_symbol_scale('lsa-B');
 		$andreaskr_grey_photo = get_symbol_scale('lsa-B0');
 		$zugbruecke_photo = get_symbol_scale('lsa-Zbr');

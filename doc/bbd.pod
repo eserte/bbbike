@@ -1124,8 +1124,13 @@ The category will not be used in this case.
 
 File with point records for traffic lights (Ampeln). The category is
 set to B<B> for railroad crossings, B<B0> for railroad crossing
-without frequent traffic, B<F> for pedestrian-only traffic lights and
-B<Zbr> for drawbridges, otherwise not used.
+without frequent traffic, B<F> for pedestrian-only traffic lights,
+B<F0> for inactive pedestrian-only traffic lights, B<Zbr> for
+drawbridges, B<X0> for inactive traffic lights, and otherwise (normal
+traffic lights), B<X> is used.
+
+Inactive traffic lights are currently only available in the
+F<ampeln-orig> file and not processed into the final F<ampeln> file.
 
 =item hoehe
 

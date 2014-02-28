@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.55 2009/02/07 17:54:02 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2004,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2004,2008,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -35,7 +34,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.55 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '2.56';
 
 sub init {
     my $self = shift;
@@ -327,7 +326,7 @@ if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Proble
 		my $image;
 		if ($cat =~ m{^(B|B0)$}) {
 		    $image = $kl_andreas;
-		} elsif ($cat =~ m{^(X|F)$}) {
+		} elsif ($cat =~ m{^(X|F)$}) { # note: X0 and F0 currently ignored
 		    $image = $kl_ampel;
 		} elsif ($cat =~ m{^Zbr$}) {
 		    $image = $kl_zugbruecke;

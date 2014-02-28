@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.19';
+$VERSION = '1.20';
 
 use File::Basename qw(basename);
 
@@ -88,7 +88,7 @@ my %older_file_to_cat;
     );
 
     %file_to_cat =
-    ("ampeln"			=> [sub { /^(?:\?|B|B0|F|X|Zbr)(?:::inwork)?$/ }],
+    ("ampeln"			=> [sub { /^(?:\?|B|B0|F|F0|X|X0|Zbr)(?:::inwork)?$/ }],
      "berlin"			=> $filetype_to_cat{"borders"},
      "berlin_ortsteile"		=> $filetype_to_cat{"borders"},
      "brunnels"			=> [qw(Br Tu TuBr)],

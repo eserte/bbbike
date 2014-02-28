@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 # XXX hmmm, also defined in Route::PDF::Cairo...
 use constant DIN_A4_WIDTH => 595;
@@ -314,9 +314,9 @@ sub draw_map {
 		my $image;
 		if ($cat =~ m{^(B|B0)$}) {
 		    $image = $kl_andreas;
-		} elsif ($cat eq 'F' && $kl_ampelf) {
+		} elsif ($cat eq 'F' && $kl_ampelf) { # note: F0 currently ignored
 		    $image = $kl_ampelf;
-		} elsif ($cat =~ m{^(X|F)$}) { # F: only fallback
+		} elsif ($cat =~ m{^(X|F)$}) { # F: only fallback; X0 currently ignored
 		    $image = $kl_ampel;
 		} elsif ($cat =~ m{^Zbr$}) {
 		    $image = $kl_zugbruecke;

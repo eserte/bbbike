@@ -43,9 +43,11 @@ use vars
 
 # Photos
 use vars qw(
-     $ampel_photo $ampelf_photo $ampel_klein_photo $ampelf_klein_photo
-     $ampel_klein2_photo $ampelf_klein2_photo
-     $ampel_klein_grey_photo $zugbruecke_photo $zugbruecke_klein_photo
+     $ampel_photo $ampel_klein_photo $ampel_klein2_photo
+     $ampel_grey_photo $ampel_klein_grey_photo $ampel_klein2_grey_photo
+     $ampelf_photo $ampelf_klein_photo $ampelf_klein2_photo
+     $ampelf_grey_photo $ampelf_klein_grey_photo $ampelf_klein2_grey_photo
+     $zugbruecke_photo $zugbruecke_klein_photo
      $kopfstein_klein_photo $kopfstein_klein_grey_photo
      $vorfahrt_photo $vorfahrt_klein_photo
      $kreuzung_photo $kreuzung_klein_photo

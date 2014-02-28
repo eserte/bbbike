@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -562,12 +562,12 @@ sub draw_map {
 			$im->copy($kl_zugbruecke, $x-$w_zbr/2, $y-$h_zbr/2, 0, 0,
 				  $w_zbr, $h_zbr);
 		    }
-		} elsif ($cat eq 'F') {
+		} elsif ($cat eq 'F') { # note: F0 currently ignored
 		    if ($kl_ampelf) {
 			$im->copy($kl_ampelf, $x-$w_lsaf/2, $y-$h_lsaf/2, 0, 0,
 				  $w_lsaf, $h_lsaf);
 		    }
-		} elsif ($cat eq 'X') {
+		} elsif ($cat eq 'X') { # note: X0 currently ignored
 		    if ($kl_ampel) {
 			$im->copy($kl_ampel, $x-$w_lsa/2, $y-$h_lsa/2, 0, 0,
 				  $w_lsa, $h_lsa);
