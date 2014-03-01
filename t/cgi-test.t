@@ -35,7 +35,7 @@ use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		  using_bbbike_test_cgi check_cgi_testing
 		  validate_bbbikecgires_xml_string
 		  validate_bbbikecgires_data
-		  libxml_parse_html_or_skip
+		  libxml_parse_html_or_skip eq_or_diff
 		);
 
 sub bbbike_cgi_search ($$);
@@ -51,7 +51,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 139 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 142 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -134,22 +134,43 @@ SKIP: {
 				    ziel => 'Yorckstr.',
 				   }, 'Find normal street';
     on_crossing_pref_page($resp);
+    my $content = $resp->decoded_content;
+ SKIP: {
+	my $doc = libxml_parse_html_or_skip 3, $content;
+	eq_or_diff
+	    [extract_crossings($doc, 'start')],
+	    [
+	     'Dudenstr.',
+	     'Wilhelmshöhe',
+	     'Kreuzbergstr.',
+	     'Yorckstr.',
+	    ],
+	    'List of start crossings as expected and in order';
+	eq_or_diff [extract_crossings($doc, 'via')], [], 'No via seen';
+	eq_or_diff
+	    [extract_crossings($doc, 'ziel')],
+	    [
+	     'Mehringdamm',
+	     'Katzbachstr.',
+	    ],
+	    'List of goal crossings';
+    }
+}
 
- TODO: {
-	todo_skip "Alias handling not yet implemented", 4;
+TODO: {
+    todo_skip "Alias handling not yet implemented", 4;
 
-	my $resp2 = bbbike_cgi_geocode +{start => 'Aliaswidestr.',
-					 ziel => 'Aliasstr.',
-					}, 'Find aliases';
+    my $resp2 = bbbike_cgi_geocode +{start => 'Aliaswidestr.',
+				     ziel => 'Aliasstr.',
+				    }, 'Find aliases';
+    on_crossing_pref_page($resp2);
+
+    my $resp3 = bbbike_cgi_geocode +{start => 'B96',
+				     ziel => 'Aliasstr.',
+				    }, 'Find aliases, 2nd check';
+    {
+	local $TODO = "Approx is too good here";
 	on_crossing_pref_page($resp2);
-
-	my $resp3 = bbbike_cgi_geocode +{start => 'B96',
-					 ziel => 'Aliasstr.',
-					}, 'Find aliases, 2nd check';
-	{
-	    local $TODO = "Approx is too good here";
-	    on_crossing_pref_page($resp2);
-	}
     }
 }
 
@@ -665,6 +686,17 @@ sub on_routelist_page {
 sub diag_route {
     my($res) = @_;
     diag join(" - ", map { $_->{Strname} } @{$res->{Route}});
+}
+
+sub extract_crossings {
+    my($doc, $type) = @_;
+    die "type must be start, via, or ziel" if $type !~ m{^(start|via|ziel)$};
+    my $html_name = $type.'c';
+    my @crossings = map {
+	chomp(my $text = $_->textContent);
+	$text;
+    } $doc->findnodes('//select[@name="'.$html_name.'"]/option');
+    @crossings;
 }
 
 __END__
