@@ -107,6 +107,12 @@ Create per-month diffs since beginning of time:
     cd .../bbbike
     for y in `seq 2003 2014`; do for m in 01 02 03 04 05 06 07 08 09 10 11 12; do echo $y$m; git diff $(git rev-list -n1 --before="$y-$m-01 00:00:00" master)..$(git rev-list -n1 --before="$y-$m-$(perl -MDate::Calc=Days_in_Month -e "print Days_in_Month(@ARGV)" $y $m) 23:59:59" master) -- data | ./miscsrc/cvsdiffbbd --diff-file - >| /tmp/diff-$y$m.bbd; done; done
 
+Like before, but restrict to changes relevant for routing (routing
+algorithm and routing instructions):
+
+    cd .../bbbike
+    for y in `seq 2003 2014`; do for m in 01 02 03 04 05 06 07 08 09 10 11 12; do echo $y$m; git diff $(git rev-list -n1 --before="$y-$m-01 00:00:00" master)..$(git rev-list -n1 --before="$y-$m-$(perl -MDate::Calc=Days_in_Month -e "print Days_in_Month(@ARGV)" $y $m) 23:59:59" master) -- data/strassen data/plaetze data/landstrassen data/landstrassen2 data/faehren data/hoehe data/orte data/orte2 data/orte_city data/ampeln data/qualitaet_s data/qualitaet_l data/handicap_s data/handicap_l data/nolighting data/green data/gesperrt data/comments_cyclepath data/comments_ferry data/comments_misc data/comments_mount data/comments_path data/comments_route data/comments_tram data/comments_kfzverkehr data/comments_scenic data/fragezeichen data/culdesac data/radwege_exact data/mount data/temp_blockings/bbbike-temp-blockings.pl data/inaccessible_strassen data/inaccessible_landstrassen | ./miscsrc/cvsdiffbbd --diff-file - >| /tmp/diff-routing-$y$m.bbd; done; done
+
 Create a gif animation out of it:
 
     for i in /tmp/diff-2*bbd; do mkdir $(echo $i | sed 's/.bbd//'); done
