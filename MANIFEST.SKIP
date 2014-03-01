@@ -67,15 +67,9 @@ patch\.gz$
 ^BBBike-\d\.\d+-DEVEL/
 ^Bundle/BBBike.tpl.pm$
 ^Bundle/BBBike_cgi.pm$
+^Bundle/BBBike_psgi.pm$
 ^Bundle/BBBike_radzeit.pm$
 ^Bundle/BBBike_windist.pm$
-^Bundle/make_cgi_bundle$
-^Bundle/make_radzeit_bundle$
-^Bundle/make_bundle$
-^Bundle/make_small_bundle$
-^Bundle/make_pi_osd$
-^Bundle/make_small_pi_osd$
-^Bundle/make_windist_bundle$
 \bbbbike-advanced.pod$
 ^bench/
 ^misc/

@@ -2,7 +2,7 @@
 
 package [% bundle_module %];
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.04'; # XXX need another solution here, not a hardcoded version
 
 1;
 
@@ -15,6 +15,8 @@ __END__
 	    SET shortname = "only mandatory";
 	CASE "cgi";
 	    SET shortname = "cgi";
+	CASE "psgi";
+	    SET shortname = "psgi";
 	CASE "windist";
 	    SET shortname = "windows distribution";
 	CASE "";
@@ -50,6 +52,8 @@ fE<uuml>r BBBike auf.
 This bundle lists only mandatory perl modules for BBBike.
 [% ELSIF type == "cgi" -%]
 Module für eine CGI-Installation.
+[% ELSIF type == "psgi" -%]
+Module für eine PSGI/Plack-Installation.
 [% ELSIF type == "windist" -%]
 Module für die binäre Windows-Distribution.
 [% ELSE -%]

@@ -2,7 +2,7 @@
 
 package Bundle::BBBike_windist;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.04'; # XXX need another solution here, not a hardcoded version
 
 1;
 

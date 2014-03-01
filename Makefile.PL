@@ -24,7 +24,7 @@ use BBBikeVar;
 
 my $action;
 GetOptions('action=s' => \$action)
-    or die "usage: $^X $0 [-action make_bundle|make_small_bundle|make_windist_bundle|make_cgi_bundle]";
+    or die "usage: $^X $0 [-action make_bundle|make_small_bundle|make_windist_bundle|make_cgi_bundle|make_psgi_bundle]";
 
 my $author = 'Slaven Rezic (' . $BBBike::EMAIL . ')',
 my $abstract = "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg";
@@ -44,6 +44,7 @@ use constant REQTABLE_LONGDESC=> 5;
 use constant REQ_BBBIKE_TK      => 1; # mandatory for the Perl/Tk version
 use constant REQ_BBBIKE_CGI     => 2; # mandatory for a full cgi install
 use constant REQ_BBBIKE_WINDIST => 4; # for windows distribution (not yet!)
+use constant REQ_BBBIKE_PSGI	=> 8; # mandatory for the experimental plack install (note: all REQ_BBBIKE_CGI prereqs are needed here, too)
 # ... 4, 8, 16 ...
 
 # Table of prerequisites:
@@ -276,6 +277,17 @@ my @req_table =
    [qw/CGI		3.46	all	2	cgi/,
     'CGI-Handling'] : ()),
 
+  [qw/Plack		0	all	8	cgi/,
+   'Basis für die PSGI-Anwendung'],
+  [qw/CGI::Emulate::PSGI	0	all	8	cgi/,
+   'Für die CGI-Emulation mit PSGI'],
+  [qw/CGI::Compile	0	all	8	cgi/,
+   'Für die CGI-Emulation mit PSGI'],
+  [qw/Plack::Middleware::Rewrite	0	all	8	cgi/,
+   'Für das Plack/PSGI-Routing benötigt'],
+  [qw/Starman	0	all	8	cgi/,
+   'Ein performanterer PSGI-Server als der Standard-Server bei Plack'],
+
   ## Maybe in future:
   # DBD::Pg - Strassen::Pg
   # Text::LevenshteinXS - PLZ::Levenshtein
@@ -286,6 +298,16 @@ my @req_table =
 ## May be taken in again if ExtUtils::MakeMaker is patched (patch
 ## and ticket pending):
 #  [qw/Test::NoWarnings	0	all	0	test/],
+
+# Two things done here:
+# - resolving the string "1|2|4" -> 7
+# - add all cgi dependencies also for psgi
+for (@req_table) {
+    $_->[REQTABLE_REQ] = eval $_->[REQTABLE_REQ]; # to resolve binary or: "|"
+    if ($_->[REQTABLE_REQ] & REQ_BBBIKE_CGI) {
+	$_->[REQTABLE_REQ] |= REQ_BBBIKE_PSGI;
+    }
+}
 
 # EXE corequisites ####################################################
 # standard Unix: uname, who, tee, at, diff, zcat, ping
@@ -320,6 +342,9 @@ if ($action) {
     } elsif ($action eq 'make_cgi_bundle') {
 	$make_bundle = "cgi";
 	$type_bundle = REQ_BBBIKE_CGI;
+    } elsif ($action eq 'make_psgi_bundle') {
+	$make_bundle = "psgi";
+	$type_bundle = REQ_BBBIKE_PSGI;
     } elsif ($action eq 'make_windist_bundle') {
 	$make_bundle = "windist";
 	$type_bundle = REQ_BBBIKE_WINDIST;
@@ -341,6 +366,7 @@ if ($make_bundle) {
     exit make_bundle()         if $make_bundle eq 'normal';
     exit make_small_bundle()   if $make_bundle eq 'small';
     exit make_cgi_bundle()     if $make_bundle eq 'cgi';
+    exit make_psgi_bundle()    if $make_bundle eq 'psgi';
     exit make_windist_bundle() if $make_bundle eq 'windist';
     die "Should not happen: unhandled value <$make_bundle>";
 }
@@ -371,7 +397,6 @@ sub build_prereq {
     my($os, $type) = @_;
     my(%prereq, @prereq);
     foreach (@req_table) {
-	$_->[REQTABLE_REQ] = eval $_->[REQTABLE_REQ]; # to resolve binary or: "|"
 	my(%for_os) = map { ($_, 1) } split ",", $_->[REQTABLE_OS];
 	if ($for_os{$os} || $for_os{"all"} || ($type == REQ_BBBIKE_WINDIST && $for_os{win})) {
 	    if ($type != 0) {
@@ -402,6 +427,10 @@ sub make_small_bundle {
 
 sub make_cgi_bundle {
     make_general_bundle(REQ_BBBIKE_CGI, "BBBike_cgi.pm");
+}
+
+sub make_psgi_bundle {
+    make_general_bundle(REQ_BBBIKE_PSGI, "BBBike_psgi.pm");
 }
 
 sub make_windist_bundle {
@@ -446,6 +475,7 @@ sub make_general_bundle {
 				   type => {0,                  "full",
 					    REQ_BBBIKE_TK,      "small",
 					    REQ_BBBIKE_CGI,     "cgi",
+					    REQ_BBBIKE_PSGI,    "psgi",
 					    REQ_BBBIKE_WINDIST, "windist",
 					   }->{$type},
 				   file => $file,

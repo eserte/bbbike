@@ -519,6 +519,7 @@ bundles:
 	$(FULLPERL) Makefile.PL -action make_bundle && \
 	    $(FULLPERL) Makefile.PL -action make_small_bundle && \
 	    $(FULLPERL) Makefile.PL -action make_cgi_bundle && \
+	    $(FULLPERL) Makefile.PL -action make_psgi_bundle && \
 	    $(FULLPERL) Makefile.PL -action make_windist_bundle
 
 Strassen/Generated.pm: Strassen/Generated_src.pm Strassen.pm

@@ -1,6 +1,6 @@
 # -*- perl -*-
 
-package Bundle::BBBike_cgi;
+package Bundle::BBBike_psgi;
 
 $VERSION = '1.04'; # XXX need another solution here, not a hardcoded version
 
@@ -10,11 +10,11 @@ __END__
 
 =head1 NAME
 
-Bundle::BBBike_cgi - A bundle to install cgi dependencies of BBBike
+Bundle::BBBike_psgi - A bundle to install psgi dependencies of BBBike
 
 =head1 SYNOPSIS
 
- perl -I`pwd` -MCPAN -e 'install Bundle::BBBike_cgi'
+ perl -I`pwd` -MCPAN -e 'install Bundle::BBBike_psgi'
 
 =head1 CONTENTS
 
@@ -69,10 +69,20 @@ WWW::Mechanize	- Für Testen des CGI-Interfaces
 
 WWW::Mechanize::FormFiller	- Für Testen des CGI-Interfaces
 
+Plack	- Basis für die PSGI-Anwendung
+
+CGI::Emulate::PSGI	- Für die CGI-Emulation mit PSGI
+
+CGI::Compile	- Für die CGI-Emulation mit PSGI
+
+Plack::Middleware::Rewrite	- Für das Plack/PSGI-Routing benötigt
+
+Starman	- Ein performanterer PSGI-Server als der Standard-Server bei Plack
+
 
 =head1 DESCRIPTION
 
-Module für eine CGI-Installation.
+Module für eine PSGI/Plack-Installation.
 
 =head1 AUTHOR
 
