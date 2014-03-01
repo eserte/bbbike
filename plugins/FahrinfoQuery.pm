@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -42,6 +42,9 @@ sub _prereq_check_vbb_2012_stops ();
 sub _download_vbb_2012_stops ();
 sub _convert_vbb_2012_stops ();
 
+# Usable for 2013 and 2014/1 data
+# NOTE: "2013" applies in this file to the data format,
+# not the actual year.
 sub _provide_vbb_2013_stops ();
 sub _prereq_check_vbb_2013_stops ();
 sub _download_vbb_2013_stops ();
@@ -72,11 +75,17 @@ my $openvbb_2012_data_url = 'http://datenfragen.de/openvbb/GTFS_VBB_Okt2012/stop
 my $openvbb_2012_local_file = "$bbbike_root/tmp/GTFS_VBB_Okt2012_stops.txt";
 my $openvbb_2012_bbd_file = "$bbbike_root/tmp/vbb_2012.bbd";
 
-my $openvbb_2013_download_size = '22MB';
-my $openvbb_2013_data_url = 'http://www.vbb.de/de/datei/GTFSOkt2013.zip';
+#my $openvbb_2013_download_size = '22MB';
+#my $openvbb_2013_data_url = 'http://www.vbb.de/de/datei/GTFSOkt2013.zip';
+#my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
+#my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
+#my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_2013.bbd";
+
+my $openvbb_2013_download_size = '32MB';
+my $openvbb_2013_data_url = 'http://www.vbb.de/de/datei/GTF_VBB_Dez2013-Aug2014.zip';
 my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
 my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
-my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_2013.bbd";
+my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_2014_1.bbd";
 
 my $search_net;
 
@@ -158,14 +167,14 @@ sub add_button {
 	       -state => 'disabled',
 	       -font => $main::font{'bold'},
 	      ],
-	      [Radiobutton => "VBB-Daten von 2013 verwenden",
+	      [Radiobutton => "VBB-Daten von 2014 verwenden",
 	       -variable => \$data_source,
 	       -value => "vbb_2013",
 	      ],
-	      [Radiobutton => "VBB-Daten von 2012 verwenden",
-	       -variable => \$data_source,
-	       -value => "vbb_2012",
-	      ],
+	      #[Radiobutton => "VBB-Daten von 2012 verwenden",
+	      # -variable => \$data_source,
+	      # -value => "vbb_2012",
+	      #],
 	      [Radiobutton => "OSM-Daten verwenden",
 	       -variable => \$data_source,
 	       -value => "osm",
