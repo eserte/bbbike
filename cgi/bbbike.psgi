@@ -9,12 +9,17 @@ use Plack::Middleware::Rewrite;
 use Plack::Middleware::Static;
 use Plack::App::WrapCGI;
 
+use Config qw(%Config);
 use Cwd 'cwd', 'realpath';
 use File::Basename 'dirname';
 use File::Spec::Functions 'catfile', 'catpath';
 
 my $root = dirname(realpath($FindBin::RealBin));
 my $cgidir = catpath $root, 'cgi';
+
+# Force the current perl's path as first entry in PATH,
+# so the CGI is executed with the same perl.
+$ENV{PATH} = "$Config{bin}:$ENV{PATH}";
 
 builder {
 
