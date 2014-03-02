@@ -5681,7 +5681,7 @@ EOF
        text  => 'L 030 Rüdersdorfer Str. OD Woltersdorf Straßenbau, Entwässerung Vollsperrung 28.08.2006-30.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 34535,5319 34579,5745
+userdel	q4::inwork 34521,5351 34508,5441 34532,5658
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -6906,7 +6906,7 @@ EOF
        text  => 'L 030 Rüdersdorfer Str. OD Woltersdorf, zw. R.-Breitschei-Str. u. Interlakenstr. Straßenbau, Entwässerung Vollsperrung 28.08.2006-30.01.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 34579,5745 34535,5319
+userdel	2::inwork 34532,5658 34508,5441 34521,5351
 EOF
      },
      { from  => 1153346400, # 2006-07-20 00:00
@@ -7671,7 +7671,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf Straßenbau, Entwässerung Vollsperrung 10.04.2007-29.06.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 34535,5319 34511,4787 34574,4552
+userdel	q4::inwork 34521,5351 34510,4849 34549,4551
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -7679,7 +7679,7 @@ EOF
        text  => 'L 030 Rüdersdorfer Str. OD Woltersdorf, zw. R.-Breitschei-Str. u. Interlakenstr. Straßenbau, Entwässerung Vollsperrung 28.08.2006-09.04.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 34579,5745 34535,5319
+userdel	q4::inwork 34532,5658 34508,5441 34521,5351
 EOF
      },
      { from  => 1175378400, # 2007-04-01 00:00
@@ -9143,7 +9143,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006066',
        data  => <<EOF,
-userdel	2::inwork 30090,5436 30074,5402 30041,5329
+userdel	2::inwork 30090,5436 30074,5402 30038,5338
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -9718,7 +9718,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, Kno. A.-Bebel-Str. Straßenbau, Entwässerung Vollsperrung 15.08.2007-24.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 34511,4787 34535,5319
+userdel	q4::inwork 34510,4849 34521,5351
 EOF
      },
      { from  => 1187647200, # 2007-08-21 00:00
@@ -10852,7 +10852,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 34511,4787 34535,5319
+userdel	q4::inwork 34510,4849 34521,5351
 EOF
      },
      { from  => 1197932400, # 2007-12-18 00:00
@@ -11658,7 +11658,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, ab A.-Bebel-Str. in Ri. Erkner Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 34511,4787 34574,4552
+userdel	q4::inwork 34510,4849 34549,4551
 EOF
      },
      { from  => 1213736980, # 2008-06-17 23:09
@@ -15280,7 +15280,7 @@ EOF
        text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 22294,5777 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
+userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -15289,7 +15289,7 @@ EOF
        type  => 'handicap',
        # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
        data  => <<EOF,
-userdel	q4::inwork; 22294,5777 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
+userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
 EOF
      },
      { from  => 1252879200, # 2009-09-14 00:00
@@ -18859,7 +18859,7 @@ EOF
        source_id => 'IM_016826',
        data  => <<EOF,
 userdel	2::inwork 29898,5149 29832,5065 29705,4987 29712,4548
-userdel	2::inwork 30041,5329 30074,5402
+userdel	2::inwork 30038,5338 30074,5402
 EOF
      },
      { from  => 1297201855, # 2011-02-08 22:50
@@ -19484,7 +19484,7 @@ userdel	2::inwork 22365,6149 22467,6135 22539,6258
 userdel	2::inwork 22358,5918 22428,6063 22467,6135 22603,6141
 userdel	2::inwork 22478,6041 22544,6037
 userdel	2::inwork 22324,6397 22365,6149 22296,6170
-userdel	2::inwork 22513,5747 22531,5871 22358,5918 22294,5777
+userdel	2::inwork 22513,5747 22531,5871 22358,5918 22292,5774
 userdel	2::inwork 22777,6151 22603,6141
 userdel	2::inwork 22608,5732 22631,5866 22531,5871 22539,5956 22730,5944
 userdel	2::inwork 22639,6062 22544,6037 22539,5956

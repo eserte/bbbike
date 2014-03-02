@@ -109,7 +109,8 @@ Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die li
 # REMOVED (Richtungsfahrbahnen!) --- #: XXX_prog Bei den beiden nächsten Einträgen (Am Volkspark) stand hier "PI:35;". --- #: XXX_prog Diese Schreibweise (verlorene Zeit in Sekunden) wird noch nirgendwo unterstützt, --- #: XXX_prog deshalb wieder zu "PI;" geändert. --- #: XXX_prog Die verlorene Zeit entspricht etwa 150m bei 15 km/h --- #: XXX_prog evtl. lohnt hier der Einsatz von routing_helper? Auf einer Straßenseite in beiden Richtungen würde reichen. Allerdings bräuchte man eine Routinganweisung "U-Turn", die es noch nicht gibt. --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	CP; 5320,8456 5433,8407 5598,8267 --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	CP; 5598,8267 5438,8402 5433,8407 5320,8456 --- Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5399,8344 5433,8407 5320,8456 --- #: XXX_prog: falls obiges implementiert mit routing_helper wird, braucht man hier vielleicht nichts zu machen --- oder doch, je nach Labelling? --- Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	CP; 5598,8267 5433,8407 5399,8344
 Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5458,10443 5529,10453 5578,10529 5636,10626
 weiter links auf Uferweg	CP; 6334,14756 5972,14820 5873,14847
-An der Wuhlheide - Wuhlewanderweg: bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21569,5730 21596,5693 21602,5685 21744,5804
+#: note: unbequemes Überqueren, aber (mittlerweile?) möglich; 
+An der Wuhlheide - Wuhlewanderweg: ggfs. bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (insbesondere mit Anhänger oder mit Lastenrad wenig Platz auf dem Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21569,5730 21596,5693 21602,5685 21744,5804
 #: XXX_prog: RL:ja, GPS:nein
 An der Wuhlheide - Alte Försterei: bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21653,6037 21737,6068 21832,6129 21869,6190 21958,6248 22000,6245
 Wuhlewanderweg - Lindenstr.: zunächst linken Gehweg benutzen, an der Cardinalstr. oder Ampel Joachimstr. die Straßenseite wechseln	CP; 21744,5804 21602,5685 21706,5541
@@ -178,7 +179,7 @@ als "Wiesenweg" ausgeschildert	CS; 52215,83681 52346,83150
 Richtung Bellevuestr. und Kemperplatz	CS; 8548,11571 8502,11564 8442,11555
 Ausgeschildert als Kemperplatz	CP2; 8203,11686 8209,11671
 Richtung Linkstr.	CS; 8573,11404 8554,11386 8474,11350
-Einfahrt gegenüber Waldcafe	CP2; 30041,5329 27096,5828
+Einfahrt gegenüber Waldcafe	CP2; 30038,5338 29450,5435
 Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4971,6345 4985,6370
 Lützowplatz - Wichmannstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6681,10959
 Lützowplatz - Schillstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6740,10755
