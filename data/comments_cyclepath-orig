@@ -196,10 +196,10 @@ Radweg auf Gehweg, Kleinsteinpflaster	RW2; -12872,-565 -12877,-655
 	RW3;RW3 -12571,-581 -12545,-698 -12531,-781 -12529,-789 -12515,-889 -12512,-911 -12575,-1031
 	RW1; -12877,-655 -13044,-709 -13064,-715 -13137,-737 -13231,-763 -13433,-831 -13468,-847 -13625,-902
 asphaltierter Geh- und Radweg auf Grünstreifen	RW1; -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-737 -13064,-715 -13044,-709 -12877,-655
-	RW1; -12529,-789 -12219,-726
-sehr schlechter Radweg	RW2; -12306,-496 -12262,-612
-sehr schlechter Radweg	RW1; -12262,-612 -12223,-713 -12219,-726
-gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -12045,-757 -12219,-726
+	RW1; -12529,-789 -12227,-724
+sehr schlechter Radweg	RW2; -12306,-496 -12266,-613
+sehr schlechter Radweg	RW1; -12266,-613 -12235,-713 -12227,-724
+gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -12045,-757 -12227,-724
 gemeinsamer Rad- und Gehweg, teilweise sehr eng	RW2; -13556,-1182 -13643,-1220 -13727,-1300
 Gehweg für Radfahrer frei	RW1; -13727,-1300 -13643,-1220 -13556,-1182
 gemeinsamer Rad- und Gehweg, teilweise sehr eng	RW2;RW2 -13727,-1300 -13879,-1445 -14115,-1678 -14187,-1740 -14279,-1820 -14351,-1882 -14369,-1898 -14485,-1998 -14500,-2012 -14642,-2159 -14859,-2384
@@ -211,8 +211,8 @@ Verbundsteinpflasterradweg, teilweise Zweirichtungsradweg, oft wechselnde Seite	
 	RW;RW -1436,-887 -1378,-1022 -1348,-1098 -1503,-1328 -1573,-1477
 Radweg auf Gehweg	RW2;RW2 -14909,-1818 -14733,-1812 -14612,-1809
 Verbundsteinpflaster	RW;RW -840,-185 -775,-304 -543,-691 -513,-736
-	RW4;RW4 -12317,-1212 -12549,-1277 -12666,-1311
-	RW4; -12666,-1311 -12674,-1313 -12718,-1327
+	RW3;RW4 -12317,-1212 -12549,-1277 -12666,-1311
+	RW3; -12666,-1311 -12674,-1313 -12718,-1327
 	RW2; -12718,-1327 -12839,-1342
 	RW; -12833,-1365 -12747,-1336 -12718,-1327
 #: unverified_by: http://www.ruppin.de/rheinsberg/freizeit/sport/radwege.html vvv
@@ -385,6 +385,7 @@ gemeinsamer Geh- und Zweirichtungsradweg	RW;RW8? -14705,-10543 -14831,-10652 -15
 	RW8?;RW -26258,-20094 -26809,-18383
 	RW6;RW6 -12808,-1488 -12870,-1493 -12865,-1462 -12913,-1451
 	RW6;RW6 -12884,-769 -12697,-729 -12545,-698
+	RW6;RW6 -12719,-630 -12697,-729 -12677,-823
 	RW3; -13546,527 -13456,500
 	RW3;RW3 -13456,500 -13311,462 -13203,434 -13157,394 -13094,347 -13036,342
 	RW2;RW2 -84506,-74450 -84172,-74293

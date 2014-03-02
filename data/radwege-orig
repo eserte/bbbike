@@ -936,13 +936,13 @@ Busspur ist immer gültig	RW5;RW0 7848,9814 7829,9723
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494 10063,12438
 #: next_check_id: ZEUGHAUS-2014
-#XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10063,12438 10024,12431 9984,12426 9934,12420 9852,12409
+#XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 #: XXX siehe auch 3nocross in gesperrt-orig
 #: source_id: INKO_113041
 #: last_checked: 2014-02-28
 #: check_frequency: 90d
-	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9852,12409
-Busspur ist immer gültig	RW5;RW5 9852,12409 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
+	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
+Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
 # 
 #: next_check_id: UDLU5-2014
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 9475,12365 9358,12351 9141,12320
@@ -1086,7 +1086,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW1;RW1 7402,8208 7446,8200 7497,8168 7582,8123 7639,8091 7710,8051 7733,8023
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
-#: last_checked: 2013-12-29
+#: last_checked: 2014-03-01
 #: check_frequency: 90d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7717,7830 7696,7771
@@ -1800,7 +1800,6 @@ Gehweg für Radfahrer frei	RW1;RW1 4454,3260 4411,3180 4164,2717
 	RW1;RW1 2076,2626 2005,2738 1888,2925 1724,3187 1687,3244
 	RW1;RW2 820,3081 751,2860
 	RW2;RW2 751,2860 730,2734 725,2702 749,2616 772,2538 803,2435
-#: XXX zumindest von der Potsdamer Str. aus gibt es keinen Radweg?
 	RW1;RW 534,3149 251,3325
 	RW;RW 251,3325 231,3338 137,3396 17,3471
 	RW;RW1 17,3471 -135,3567

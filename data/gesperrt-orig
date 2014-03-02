@@ -1121,7 +1121,7 @@ Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraße	1 -12542,-1305 -12657,-1338
 Mauerstr.	1 -13433,-831 -13519,-625
 Benkertstr.	1 -12677,-823 -12697,-729 -12719,-630
-Hans-Thoma-Str.	1 -12219,-726 -12223,-713 -12262,-612 -12306,-496
+Hans-Thoma-Str.	1 -12227,-724 -12235,-713 -12266,-613 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Hebbelstr.	1 -12621,-359 -12571,-581
 Potsdamer Damm	2 -5324,-3716 -5490,-3666 -5722,-3669 -6119,-3907 -6426,-4014
@@ -2555,8 +2555,8 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 #: source_id: INKO_113041 vvv
 #: last_checked: 2014-02-28 vvv
 #: check_frequency: 90d vvv
-Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9852,12409
-Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9852,12409 9934,12420 9943,12364
+Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
+Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 #: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -2584,8 +2584,8 @@ In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/a6add3f2/NeueRadfuehrungen.pdf
 #: next_check: 2014-06-01
 An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-1339 -11235,-1465 -11137,-1680 -11089,-1730 -10973,-1764
-#: last_checked: 2013-05-10
-#: next_check: 2013-08-10
+#: last_checked: 2014-03-01
+#: check_frequency: 100d
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 # 
 # REMOVED (Termin abgelaufen) --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf vvv --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf vvv --- #: priority: #A vvv --- #: next_check: 2013-09-05 vvv --- Sperrung am zukünftigen Landtag: Bereich vor der Straßenbahnhaltestelle Richtung Norden gesperrt (8. April 2013 - 6. September 2013)	1:inwork -12758,-1654 -12772,-1577 --- Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)	1::inwork -12655,-1714 -12730,-1681 -12758,-1654 --- #: next_check ^^^ --- #: prio ^^^ --- #: by ^^^ --- #: by ^^^
@@ -2618,7 +2618,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
 #: last_checked: 2014-02-28
 #: next_check: 2014-06-02
-Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9890,12161 9875,12257
+Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
 #: by: Kai Wagner
 #: confirmed_by: srt
@@ -2715,7 +2715,7 @@ An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 
 #: next_check: 2014-06-01 vvv
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
-Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9869,12297
+Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245 9795,12293 9780,12401
 Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12395
 #: next_check: ^^^

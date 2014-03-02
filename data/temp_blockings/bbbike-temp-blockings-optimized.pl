@@ -1994,10 +1994,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 1810,
          'data' => '(Am Neuen Palais, direkter Weg)	2::night -15810,-1274 -15820,-1146 -15854,-656
-(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14153,-1135 -14171,-1026
+(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14159,-1119 -14171,-1026
 (Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
 (Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14614,-1342 -14856,-1223 -14865,-1118
-(Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14153,-1135
+(Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14159,-1119
 ',
          'type' => 'gesperrt'
        },
@@ -2481,7 +2481,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -3384,7 +3384,7 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2489,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-02-28
+#: last_checked: 2014-03-01
 #: check_frequency: 30d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
@@ -3558,16 +3558,7 @@ userdel	2::inwork 2219,11304 2116,11288
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => '146000021',
-         'until' => 1393722000,
-         'text' => 'Niederfinow: L29: Neubau Schiffshebewerk - Rückbau Turmdrehkran OD Niederfinow, Straße evtl. komplett gesperrt, 28.02.2014 22:00 Uhr bis 02.03.2014 02:00 Uhr ',
-         'from' => 1393534800,
-         'id' => 2539,
-         'data' => 'userdel	2::inwork 46132,49993 46390,50091
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1496354399,
          'text' => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2017',
@@ -3588,6 +3579,28 @@ userdel	2::inwork 2219,11304 2116,11288
 #: XXX prüfen, ob schon früher geöffnet wird?
 #: next_check: 2014-04-01
 userdel	2::inwork 7882,9490 7960,9466
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Uferweg wegen Bauarbeiten gesperrt',
+         'from' => undef,
+         'id' => 2543,
+         'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
+#: last_checked: 2014-03-01
+userdel	2::inwork -12335,-1725 -12420,-1853
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Wege am Ufer wegen Bauarbeiten gesperrt',
+         'from' => undef,
+         'id' => 2544,
+         'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
+#: last_checked: 2014-03-01
+userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 ',
          'type' => 'gesperrt'
        }

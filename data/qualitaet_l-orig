@@ -1618,7 +1618,7 @@ Jahnstr.: mäßiges Kopfsteinpflaster	Q2 741,-584 767,-542 818,-298
 Im Tal: Kopfsteinpflaster	Q2 -882,-1220 -940,-1256 -1112,-1123 -1310,-1137
 Am Weinberg: Kopfsteinpflaster, etwas kleinteiliger	Q2 -1348,-1098 -1310,-1137 -1112,-1353 -940,-1256
 Allee am Forsthaus: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten, und teilweise unebener Sandweg	Q3 -1503,-1328 -1607,-1389 -1698,-1384 -1976,-1325 -2071,-1259 -2262,-1317 -2334,-1392 -2614,-1434
-Leiblstr.: Kopfsteinpflaster	Q2 -12545,-698 -12262,-612
+Leiblstr.: Kopfsteinpflaster	Q2 -12545,-698 -12266,-613
 Mittelstr.: Kopfsteinpflaster	Q2 -12545,-698 -12697,-729 -12884,-769
 Am Schafgraben: Parkweg	Q1 -14500,-2012 -14536,-1943 -14571,-1881 -14612,-1809
 (Schafgraben - Maybachstr.): Parkweg	Q1 -14536,-1943 -14705,-1949
@@ -1656,7 +1656,7 @@ Köhlerplatz (Potsdam): Kopfsteinpflaster	Q2 -13876,-1226 -13876,-1263
 Kastanienallee (Potsdam): Kopfsteinpflaster, Tram auf Fahrbahn	Q2 -14909,-1818 -14896,-1968 -14881,-2098 -14868,-2244 -14859,-2384
 bei Zechow: Asphalt	Q0 -26350,70262 -24687,71412 -24162,71612
 dt. Alleenstraße: Asphalt	Q0 -24436,65301 -22589,66989 -22477,67059 -21066,67757
-An der Alten Fahrt: Parkweg	Q1 -12608,-1715 -12475,-1496 -12265,-1434 -12114,-1409 -12110,-1379
+An der Alten Fahrt: Parkweg	Q1 -12608,-1715 -12485,-1482 -12265,-1434 -12114,-1409 -12110,-1379
 Burgstr.: Kopfsteinpflaster	Q2 -12110,-1379 -12062,-1378
 #: by: phelim: vvv
 Burgstr.: Beton	Q1 -12500,-1437 -12422,-1416 -12281,-1378 -12265,-1434
@@ -1894,11 +1894,11 @@ Lichterfeld - Besucherbergwerk F60: Asphalt	Q0 37870,-89814 37883,-89858 37885,-
 B96, Finsterwalde: Kopfsteinpflaster, OK	Q1 33060,-85292 33240,-85187
 Finsterwalde, Markt: Kopfsteinpflaster, OK	Q1 33115,-86029 33103,-85728
 Lichterfeld - Finsterwalde: Asphalt	Q0 37906,-89609 37820,-89570 37574,-89532 37609,-89082 37306,-89106 36662,-89253 36710,-88670 36767,-88091 36808,-87793
-(Am Grünen Gitter, Sanssouci): asphaltiert	Q0 -13857,-1040 -14153,-1135 -14171,-1026
+(Am Grünen Gitter, Sanssouci): asphaltiert	Q0 -13857,-1040 -14159,-1119 -14171,-1026
 (Ökonomieweg, Sanssouci): asphaltiert	Q0 -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
 (Lennéstr. - Ökonomieweg, Sanssouci): asphaltiert	Q0 -14614,-1342 -14856,-1223
 (Lennéstr. - Ökonomieweg, Sanssouci): Pflasterung	Q1 -14856,-1223 -14865,-1118
-(Affengang, Sanssouci): Parkweg	Q1 -14129,-1258 -14131,-1181 -14153,-1135
+(Affengang, Sanssouci): Parkweg	Q1 -14129,-1258 -14131,-1181 -14159,-1119
 (Am Neuen Palais, direkter Weg): asphaltiert	Q0- -15810,-1274 -15820,-1146 -15854,-656
 Yorckstr.: asphaltiert	Q0 -12839,-1342 -13001,-1329 -13206,-1294
 Yorckstr.: asphaltiert	Q0 -13208,-1315 -13001,-1349 -12976,-1356 -12833,-1365
@@ -3275,6 +3275,8 @@ Einsteinstr.: unbefestigte Straße	Q2 17864,24956 17901,24919
 Einsteinstr.: Asphalt	Q0 17901,24919 18124,24709
 Wolfgang-Amadeus-Mozart-Str.: Kopfsteinpflaster	Q2 17913,25005 17987,24982 18039,24940
 Bodenseestr.: Asphalt	Q0 18003,25349 18131,25316
+An der Alten Fahrt - Joliot-Curie-Str.: Parkweg	Q1 -12485,-1482 -12489,-1465
+An der Alten Fahrt - Joliot-Curie-Str.: Asphalt	Q1 -12489,-1465 -12500,-1437
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
