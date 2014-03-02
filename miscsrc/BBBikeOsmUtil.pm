@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.18;
+$VERSION = 1.19;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -36,6 +36,7 @@ use Cwd qw(realpath);
 use CGI qw();
 use File::Basename qw(dirname basename);
 use File::Glob qw(bsd_glob);
+use File::Temp qw(tempfile);
 
 use BBBikeUtil qw(bbbike_root);
 use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
@@ -230,9 +231,8 @@ sub download_and_plot_visible_area {
 
     my($x0,$y0,$x1,$y1) = get_visible_area();
     my $url  = get_download_url($x0,$y0,$x1,$y1);
-    require File::Temp;
     my $ua = _get_ua();
-    my(undef,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ".osm");
+    my(undef,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => ".osm");
     local $defer_restacking = 1;
     main::status_message("Download $url to $tmpfile...", "info");
     warn "Latest downloaded temporary .osm file is $tmpfile\n";
@@ -366,7 +366,7 @@ sub plot_osm_files {
 
     my %node2ll;
     for my $osm_file (@$osm_files) {
-	my $root = XML::LibXML->new->parse_file($osm_file)->documentElement;
+	my $root = _parse_xml($osm_file);
 	for my $node ($root->findnodes('/osm/node')) {
 	    my $id = $node->getAttribute('id');
 	    next if exists $node2ll{$id};
@@ -430,7 +430,7 @@ sub plot_osm_files {
     }
 
     for my $osm_file (@$osm_files) {
-	my $root = XML::LibXML->new->parse_file($osm_file)->documentElement;
+	my $root = _parse_xml($osm_file);
 	for my $way ($root->findnodes('/osm/way')) {
 	    my $visible = $way->getAttribute('visible');
 	    next if $visible && $visible eq 'false';
@@ -602,6 +602,31 @@ sub plot_osm_files {
     if (!$defer_restacking) {
 	main::restack();
     }
+}
+
+# Assumes XML::LibXML is already loaded.
+# May create a temporary file for compressed osm files.
+sub _parse_xml {
+    my $file = shift;
+    my $tmpfh;
+    if ($file =~ m{\.gz$} && XML::LibXML::LIBXML_RUNTIME_VERSION() < 20901) {
+	# See https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=696300
+	# and https://bugzilla.redhat.com/show_bug.cgi?id=877567
+	# for problems with gzipped files. Possibly fixed with libxml2 2.9.1
+	require IO::Uncompress::Gunzip;
+	$tmpfh = File::Temp->new(SUFFIX => '.osm');
+	no warnings 'once'; # $GunzipError
+	my $gzipfh = IO::Uncompress::Gunzip->new($file)
+	    or die "Can't open $file: $IO::Uncompress::Gunzip::GunzipError";
+	while(<$gzipfh>) {
+	    print $tmpfh $_
+		or die "While writing to temporary file: $!";
+	}
+	close $tmpfh
+	    or die "While closing temporary file: $!";
+	$file = $tmpfh->filename;
+    }
+    XML::LibXML->new->parse_file($file)->documentElement;
 }
 
 sub plot_osm_cover {
