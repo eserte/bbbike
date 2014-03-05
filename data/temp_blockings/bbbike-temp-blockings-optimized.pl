@@ -3362,8 +3362,7 @@ userdel	2::inwork 17736,5441 17886,5587
          'text' => 'Landschaftspark Herzberge: nachts gesperrt',
          'from' => undef,
          'id' => 2479,
-         'data' => 'userdel	2::night 13437,10992 13471,10983
-userdel	2::night 17490,13133 17489,13125
+         'data' => 'userdel	2::night 17490,13133 17489,13125
 userdel	2::night 17671,13132 17684,13133
 ',
          'type' => 'gesperrt'
@@ -3424,8 +3423,8 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2498,
          'data' => '#: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-02-28
-#: next_check: 2014-03-06
+#: last_checked: 2014-03-03
+#: next_check: 2014-03-10
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'

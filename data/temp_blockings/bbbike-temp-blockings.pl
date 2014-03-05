@@ -21858,7 +21858,6 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-userdel	2::night 13437,10992 13471,10983
 userdel	2::night 17490,13133 17489,13125
 userdel	2::night 17671,13132 17684,13133
 EOF
@@ -22049,8 +22048,8 @@ EOF
        data  => <<EOF,
 #: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-02-28
-#: next_check: 2014-03-06
+#: last_checked: 2014-03-03
+#: next_check: 2014-03-10
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },

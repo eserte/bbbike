@@ -3497,7 +3497,7 @@ Augustastr. (Alt-Hohenschönhausen): Asphalt	Q0; 15929,16342 15894,16189 15894,16
 Augustastr. (Alt-Hohenschönhausen): Asphalt	Q0 15929,16342 15918,16383
 Bertastr. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2+ 15894,16189 15840,16246 15782,16277
 Orankestr.: sehr guter Asphalt	Q0 15665,15765 15598,15793 15453,15848
-Hansastr. [Wohngebiet]: Beton	Q0- 15384,15884 15341,15912 15220,16019 15124,16104
+Hansastr. [Wohngebiet]: Beton	Q0- 15381,15873 15341,15912 15220,16019 15124,16104
 Else-Jahn-Str.: Beton	Q0- 15120,16349 14807,16396 14769,16414
 Otto-Brahm-Str.: Asphalt	Q0- 14321,15636 14282,15746 14365,15778 14400,15787 14440,15682
 (Gounodstr. - Otto-Brahm-Str.): Asphalt	Q0 14435,15904 14451,15873 14383,15848 14349,15825 14365,15778
@@ -9245,7 +9245,8 @@ Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 (Rasthof Dreilinden): Asphalt	Q0 -4003,1234 -3994,1170 -3642,1199 -3577,1148
 #: next_check_id: RATHAUSSTR-2014
 #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
-#: last_checked: 2014-02-28
+#: last_checked: 2014-03-03
+#: next_check: 2014-03-17
 Spandauer Str.: mäßiger Asphalt im Bereich Kreuzung Rathaustr.	Q1 10431,12709 10601,12521 10644,12469
 #: next_check_id: INVALIDENSTRMOABIT-2014
 #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
@@ -9284,6 +9285,8 @@ Straße 84 (Karow): Gras	Q3 15382,23051 15365,22990
 (zum Helios-Klinikum Buch): Asphalt	Q0 17591,25405 17428,25235
 (Am Hechtgraben): unbefestigt	Q2 18853,18959 18879,18954 18923,18941 18983,18906 19043,18876 19072,18859
 Kurpark: Parkweg	Q1- 25584,6029 25529,6058 25382,6056 25260,6038 24964,6046
+Orankeweg - Hansastr.: Asphalt	Q0 15395,15852 15381,15873
+Wörther Str.: Asphalt mit einigen Aufpflasterungen	Q1+ 11163,14548 10910,14488
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -10896,8 +10899,8 @@ Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16354,15323 16208,1
 #: corrected_by: srt (geteert -> ...) vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5230 vvv
 #: XXX werden die restlichen Abschnitte auch neu asphaltiert? vvv
-#: last_checked: 2013-11-26 (nur der Mittelteil ist neu asphaltiert) vvv
-#: next_check: 2014-03-01 vvv
+#: last_checked: 2014-03-04 (nur der Mittelteil ist neu asphaltiert) vvv
+#: next_check: 2014-05-04 vvv
 Roedernstr.: Asphalt mit Schäden	Q1- 16208,15379 16083,15434
 Roedernstr.: Asphalt mit Schäden	Q1- 15712,15594 15552,15660
 #: last_checked ^^^
@@ -11685,7 +11688,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2014-02-23
+#: last_checked: 2014-03-04
 #: check_frequency: 100d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14934,15860 14802,15857 14720,15905 14609,15921
 #: confirmed_by: srt
@@ -19271,8 +19274,8 @@ Frauenlobstr.: guter Asphalt	Q0 15697,6688 15830,6579 15954,6481 16043,6414 1622
 # 
 #: by: Robert (klemm): vvv
 #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2013-10-19 vvv
-#: next_check: 2014-03-09 vvv
+#: last_checked: 2014-03-04 vvv
+#: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: confirmed_by: srt (nördliches Ende)
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15941,14834
@@ -19286,7 +19289,7 @@ Küstriner Str.: Asphalt mit leichten Schäden	Q0- 16123,15025 16211,15105
 Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
 #: confirmed_by: srt
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: by: ^^^

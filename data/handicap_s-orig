@@ -12,10 +12,12 @@
 # 
 #: source_id: IM_021244 vvv
 #: valid: -20140320 vvv
+#: last_checked: 2014-03-04 vvv
 #: next_check: 2014-03-20 vvv
 Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651
 Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 13467,11778
 #: next_check ^^^
+#: last_checked ^^^
 #: valid: ^^^
 #: source_id ^^^
 # 
@@ -197,16 +199,16 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: next_check_id: RATHAUSSTR-2014 vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-02-24
-#: next_check: 2014-03-30
+#: last_checked: 2014-03-03
+#: next_check: 2014-03-17
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
 #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig
-#: last_checked: 2014-02-24
-#: next_check: 2014-03-30
+#: last_checked: 2014-03-03
+#: next_check: 2014-03-17
 #: priority: #A
-Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwork; 10584,12507 10601,12521
+Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
 #: next_check_id ^^^
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
@@ -219,7 +221,7 @@ Rathausstr.: Einbahnstraße an der Spandauer Str., Ausweichen auf Gehweg	q4::inwo
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html (Ende der Baumaßnahme im April 2014)
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 #: next_check_id: FRIEDRICHSBRUECKE-2014 vvv
-#: last_checked: 2014-02-28 vvv
+#: last_checked: 2014-03-03 vvv
 #: next_check: 2014-03-14 vvv
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
@@ -256,9 +258,9 @@ Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,
 # 
 ### Neukölln ###
 # 
-#: XXX genaue Beeinträchtigung feststellen
-#: next_check: 2014-03-01
-Maybachufer: Bauarbeiten an der Kreuzung Friedelstr.	q2::inwork 12088,9775 12250,9691
+#: last_checked: 2014-03-03
+#: check_frequency: 30d
+Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen über Gehweg	q3::inwork 12088,9775 12250,9691
 # 
 #: next_check_id: PLATZHOF-2014
 #: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof
@@ -275,7 +277,7 @@ Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12792,8190
 #: last_checked ^^^
 # 
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2014-02-28
+#: last_checked: 2014-03-03
 #: next_check: 2014-09-01
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
@@ -1645,7 +1647,8 @@ Mendelssohnstr.: Fußgänger, Bordstein	q3 11598,13598 11652,13564
 (Wiese vor dem Reichstag): Fußgänger, Bordsteine, Radfahren nicht erlaubt	q3 8354,12416 8348,12609
 #: note: gegen 19:15 abends ist hier reger Fußgängerverkehr (Sportler!)
 (Weg über das Sportgelände): zu manchen Zeiten reger Fußgängerverkehr	q1 13252,14179 13385,13992
-Schliemannstr. [über Helmholtzplatz]: Fußgänger	q2 11368,15301 11334,15248
+#: XXX_prog BS auf nördlicher Seite normal hoch, auf südlicher etwas niedriger, ansonsten q2
+Schliemannstr. [über Helmholtzplatz]: Fußgänger, Bordsteine	q3 11368,15301 11334,15248
 (Museumsinsel): Fußgänger, besonders zu Museumsöffnungszeiten	q2 10017,12675 9972,12732 9987,12744 9952,12791
 Pasedagplatz: Straßenbahn	q2 14170,17249 14150,17255 14099,17195
 Hochwaldstr.: eng, kurvig	q3 19577,8438 19544,8421 19526,8458
