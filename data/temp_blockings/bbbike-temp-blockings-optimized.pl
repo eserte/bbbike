@@ -3602,6 +3602,26 @@ userdel	2::inwork -12335,-1725 -12420,-1853
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140305.1100.394979.html',
+         'until' => 1396648800,
+         'text' => 'Wassersportallee und Richterstr.: Sperrungen wegen Bauarbeiten an der Kreuzung Adlergestell, ggfs. auf Gehweg ausweichen, von 17.03.2014 bis 04.04.2014 ',
+         'from' => 1394924400,
+         'id' => 2545,
+         'data' => 'userdel	q4::inwork 22208,1103 22162,1067 22092,999
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_021395',
+         'until' => 1406127600,
+         'text' => 'Golzstr.: Baustelle, Fahrbahn zwischen Lichtenrader Damm und Bahnhofstr. in Richtung S-Bhf. gesperrt, 03.03.2014 08:00 Uhr bis 23.07.2014 17:00 Uhr ',
+         'from' => 1393743600,
+         'id' => 2546,
+         'data' => 'userdel	q4::inwork; 11073,-2037 10983,-2116
+',
+         'type' => 'handicap'
        }
      
 );

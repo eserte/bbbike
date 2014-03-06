@@ -22511,4 +22511,22 @@ EOF
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 EOF
      },
+     { from  => 1394924400, # 2014-03-16 00:00
+       until => 1396648800, # 2014-04-05 00:00
+       text  => 'Wassersportallee und Richterstr.: Sperrungen wegen Bauarbeiten an der Kreuzung Adlergestell, ggfs. auf Gehweg ausweichen, von 17.03.2014 bis 04.04.2014 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140305.1100.394979.html',
+       data  => <<EOF,
+userdel	q4::inwork 22208,1103 22162,1067 22092,999
+EOF
+     },
+     { from  => 1393743600, # 2014-03-02 08:00
+       until => 1406127600, # 2014-07-23 17:00
+       text  => 'Golzstr.: Baustelle, Fahrbahn zwischen Lichtenrader Damm und Bahnhofstr. in Richtung S-Bhf. gesperrt, 03.03.2014 08:00 Uhr bis 23.07.2014 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_021395',
+       data  => <<EOF,
+userdel	q4::inwork; 11073,-2037 10983,-2116
+EOF
+     },
     );

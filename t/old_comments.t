@@ -26,9 +26,10 @@ BEGIN {
 }
 
 {
-    #use POSIX qw(strftime);
+    use POSIX qw(strftime);
     #use constant TODO_NEW_COMMENTS => "2009-11-01T12:00:00" gt strftime("%FT%T", localtime) && 'Known failures';
     use constant TODO_NEW_COMMENTS => 'Known failure (missing implementation for compressing Teilstrecke)';
+    use constant TODO_BERGMANNSTR => "2014-05-23T12:00:00" gt strftime("%FT%T", localtime) && 'Temporary changed comments in Bergmannstr.';
 }
 
 use BBBikeTest qw(eq_or_diff check_cgi_testing);
@@ -96,7 +97,7 @@ EOF
 EOF
 
 	     # Bergmannstr.
-	     ["9248,9350", "10533,9240", <<EOF, "CS (was Route, now no route here)"],
+	     ["9248,9350", "10533,9240", <<EOF, "CS (was Route, now no route here)", TODO_BERGMANNSTR],
 - Kopfsteinpflaster (Teilstrecke): 1
   TR4: 1
 - {}

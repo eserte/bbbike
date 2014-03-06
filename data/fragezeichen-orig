@@ -211,8 +211,9 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5901 (2014 passiert wahrscheinlich nichts)
 #: last_checked: 2014-03-04
-#: next_check: 2014-08-10
+#: next_check: 2015-03-01
 Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
@@ -373,7 +374,7 @@ Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggefü
 # 
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
 #: last_checked: 2014-01-19
-#: next_check: 2014-06-05
+#: next_check: 2015-03-01
 #: priority: #A
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?::inwork; 13588,11490 13565,11492 13473,11456
 # 
@@ -398,10 +399,17 @@ Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,
 Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::projected 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12168,21218 12337,20954
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2013
+#: next_check: 2014-08-01 vvv
+#: check_frequency: 360d vvv
 #: XXX außerdem sind schon die Zugänge als Straßenland gewidmet
-#: next_check: 2014-08-01
-#: check_frequency: 360d
+#: XXX Namensvorschlag "Claus-Dieter-Sprink-Brücke"
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4751 (Vorschlag)
 Fußgängersteg über den Kietzer Graben: wann wird er errichtet, wird er auch für Radfahrer befahrbar sein?	?::projected 22489,4621 22509,4595
+#: XXX Namensvorschlag "Henriette-Lustig-Straße"
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4753 (Vorschlag)
+Straße zur Brücke: Name der Straße, Qualität, Fertigstellung?	?::projected 22475,4658 22489,4621
+#: check_frequency ^^^
+#: next_check ^^^
 # 
 #: last_checked: 2013-11-17
 #: next_check: 2014-03-15
@@ -515,6 +523,7 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5232
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45-181-136818730670/818730670/00065593/93-Anlagen/02/vzb0444_IV-B_Plan_XXIII_9b_Auswertung_Beteig_B.pdf
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361000447622/1000447622/00071108/08-Anlagen/02/vzb0703_IV-B-Plan_XXIII-9b_Aenderg_Plangziele.pdf
 #: last_checked: 2013-08-29 (noch nichts zu sehen)
 #: next_check: 2014-06-10
 Planstraße zwischen Theodorstr. und Pilgramer Str.: Straße in Planung, Qualität?	? 24899,11017 25124,11022
@@ -3574,10 +3583,11 @@ Engelwurzweg: (früher Waldweg) Qualität? Geht es Richtung Westen noch weiter?	? 
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3698 vvv
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036596039932/596039932/00059240/40-Anlagen/02/Benennungsabsichtfuer8PrivatwegeinderAnlageNor.pdf vvv
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3724 (Benennung) vvv
 #: XXX Benennungsabsicht für 8 Privatwege in der Anlage Nordend vvv
 #: XXX ebenso: Lehmweg, siehe strassen-orig vvv
 #: next_check_id: NORDEND-2014 vvv
-#: next_check: 2014-06-01 vvv
+#: next_check: 2014-05-01 vvv
 Tonweg: Qualität, Umbenennung?	? 10177,21802 10211,21697
 Buntsteinweg: Qualität, Umbenennung?	? 10111,21667 10211,21697 10269,21718 10328,21737
 Marmorweg: Qualität, Umbenennung? Kann die Dietzgenstr. hier überquert werden?	? 10114,21592 10284,21653 10350,21676 10423,21701 10565,21748 10588,21759
@@ -3590,6 +3600,7 @@ Kieselweg: Qualität, Umbenennung?	? 10423,21701 10388,21801
 #: next_check_id ^^^
 #: XXX ^^^
 #: XXX ^^^
+#: by: ^^^
 #: by: ^^^
 #: by: ^^^
 # 

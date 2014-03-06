@@ -2,6 +2,19 @@
 #: title: Qualität der Straßen in Berlin
 #: note: XXX_* categorization done 2008-01-26
 #:
+######################################################################
+# Vorübergehende Einschränkungen
+# 
+#: temporary vvv
+# 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898
+#: XXX mal vor Ort prüfen
+#: valid: -20140523
+Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
+# 
+#: temporary ^^^
+######################################################################
+# 
 Mozartstr.: Kopfsteinpflaster	Q3+ 10257,-2654 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10460,-3199
 #: corrected_by: Ulrike Burchardt: (was: Kopfsteinpflaster, now: "wunderbar zu fahren")
@@ -21989,6 +22002,11 @@ Sudermannstr.: sehr guter Asphalt	Q0 24978,12793 25126,12710 25189,12661
 #: note: laut osm "unpaved", bicycle=yes
 #: confirmed_by: srt
 #: note: Beleuchtung existiert
+#: XXX evtl. wird hier die Straße im Zuge des B-Plans 10-51 neu gemacht
+#: XXX es wird auch noch ein "verkehrsberuhigter Bereich" bis zum Pfarrhufenweg gebaut
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5649
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45-181-1361000447875/1000447875/00070908/08-Anlagen/02/vzb0704_IV-B-Plan_10-51_Festsetzung.pdf
+#: next_check: 2015-06-01
 Sudermannstr.: fester Sandweg	Q2+ 25189,12661 25218,12653 25305,12597
 #: note: "frisch asphaltiert"
 #: confirmed_by: srt
