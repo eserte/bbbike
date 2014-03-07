@@ -27,27 +27,30 @@ Sacrow - Krughorn: Potsdamer Wassertaxi; im Sommer am Wochenende 6x täglich; pro
 #: by: http://www.swp-potsdam.de/swp/media/05-verkehr_1/fahrplaene_pdf/fahrplanwechsel_2011/dezember_11/busfahrplaene/ViP_F1_gesamt.pdf
 F1 (Auf dem Kiewitt - Hermannswerder): im 15-Minuten-Abstand von ca. 7 bis 18 Uhr; VBB-Tarif	CS -14107,-2278 -14081,-2516
 # 
-#: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/S_wannsee_bhf_beAlt_kladow_berli.pdf?pathinfo=/dn&dwn=sc/scm2utgcgiycygw8_1_1.pdf
-#: as_of: 2010-06
-F10 (Wannsee - Kladow): stündlich werktags zwischen 6 und 19 Uhr (im Winter bis 18 Uhr), am Samstag von 7 bis 19 Uhr und am Sonntag von 10 bis 20 Uhr (im Winter bis 16 Uhr); BVG-Tarif; ca. 20 Minuten Fahrzeit	CS -4905,1514 -5029,1713 -5171,2450 -5285,2795 -5519,3167 -6605,4019 -6797,4562 -6866,4765
+#: by: http://www.bvg.de/index.php/de/binaries/asset/download/21406/pdf_image_width_2000_jpeg
+#: as_of: 2014-03
+F10 (Wannsee - Kladow): Mo-Sa stündlich zwischen ca. 6 und 19 Uhr (im Winter bis 18 Uhr); am Sonntag von ca. 9 bis 19 Uhr (im Winter bis 16 Uhr); BVG-Tarif; ca. 20 Minuten Fahrzeit	CS -4905,1514 -5029,1713 -5171,2450 -5285,2795 -5519,3167 -6605,4019 -6797,4562 -6866,4765
 # 
-#: as_of: 2011-08
-#: by: ole (new price)
-F11 (Baumschulenstr. - Wilhelmstrand): Mo-Fr von ca. 6 bis 20 Uhr im 10/20-Minuten-Abstand; Sa/So von ca. 9 bis 20 Uhr im 20/30-Minuten-Abstand. Die Überfahrt kostet 1,30 Euro pro Person und 1,10 Euro pro Fahrrad/Kind bzw. BVG-Tarif.	CS 16655,7572 16796,7715
+#: by: http://www.bvg.de/index.php/de/binaries/asset/download/21408/pdf_image_width_2000_jpeg
+#: as_of: 2014-03
+F11 (Baumschulenstr. - Wilhelmstrand): Mo-Fr von ca. 6 bis 19 Uhr im 10/20-Minuten-Abstand; Sa/So von ca. 9 bis 19 Uhr im 20-Minuten-Abstand. Die Überfahrt kostet 1,50 Euro pro Person und 1,10 Euro pro Fahrrad bzw. BVG-Tarif.	CS 16655,7572 16796,7715
 # 
-#: as_of: 2010-06
-F12 (Dahme): von ca. 6 bis 19 Uhr alle 10 bis 20 Minuten, Sa/So im 20/30-Minuten-Abstand; BVG-Tarif	CS 22756,1524 23068,1638
+#: by: http://www.bvg.de/index.php/de/binaries/asset/download/21410/pdf_image_width_2000_jpeg
+#: as_of: 2014-03
+F12 (Dahme): Mo-Fr von ca. 6 bis 20 Uhr alle 10 bis 20 Minuten; Sa/So von ca. 7 bis 20 Uhr im 20-Minuten-Abstand; BVG-Tarif	CS 22756,1524 23068,1638
 # 
+#: by: http://www.bvg.de/index.php/de/binaries/asset/download/21412/pdf_image_width_2000_jpeg
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive
-#: by: http://www.bvg.de/index.php/de/binaries/asset/download/21412/file/1-1
-#: as_of: 2010-06
+#: as_of: 2014-03
 #: XXX_prog: Zusatzinfos von Gregor Wrobel (2013-05) (gelten auch für F23, F24): im April fahren die Fähren nur am Wochenende (sollte im April auch so angezeigt werden), der Karfreitag sollte als Datum aufgelöst werden
-F21 (Krampe): Mo keine Fahrten; stündlich von ca. 10 bis 18 Uhr; Saisonbetrieb (ab Karfreitag bis zum 3. Oktober); BVG-Tarif; ca. 6 Minuten Fahrzeit	CS 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
+#: XXX_prog: die Regel ist: ab ersten Samstag im April oder Karfreitag, was früher ist
+F21 (Krampe): Mo keine Fahrten; stündlich von ca. 10 bis 18 Uhr; Saisonbetrieb (ab 5. April bis zum 2. November); BVG-Tarif; ca. 6 Minuten Fahrzeit	CS 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 # 
+#: by: http://www.bvg.de/index.php/de/binaries/asset/download/21414/pdf_image_width_2000_jpeg
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive
-#: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/MueggelwerderwegKruggasse_berlin.pdf?pathinfo=/dn&dwn=45/45iamtmciihp9iw8_1_1.pdf
-#: as_of: 2010-06
-F23: nicht montags, ca. stündlich von 10 bis 18 Uhr; Saisonbetrieb (ab Karfreitag bis zum 3. Oktober); BVG-Tarif; ca. 25 Minuten Fahrzeit zwischen Müggelwerderweg und Kruggasse	CS 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
+#: as_of: 2014-03
+#: XXX_prog: die Regel ist: ab ersten Samstag im April oder Karfreitag, was früher ist
+F23: Mo keine Fahrten; stündlich von ca. 10 bis 18 Uhr; Saisonbetrieb (ab 5. April bis zum 3. Oktober); BVG-Tarif; ca. 25 Minuten Fahrzeit zwischen Müggelwerderweg und Kruggasse	CS 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
 # REMOVED (F23 fährt nun in beiden Richtungen) --- die Haltestelle Neu-Helgoland wird nur in Fahrtrichtung Osten angefahren
 # REMOVED (Ruderfähre wird nicht mehr fahren, siehe auch http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/rahnsdorf/artikel/8416-im-herbst-2013-stellt-die-faehre-f-24-den-betrieb-ein/) --- #: by: http://www.fahrinfo-berlin.de/Fahrinfo/bin/tb/query.bin/Spreewiesen_berlKruggasse_berlin.pdf?pathinfo=/dn&dwn=8u/8ug2stkciiytyi4c_1_1.pdf --- #: as_of: 2010-06 --- #: XXX evtl. wird die Fähre im Oktober 2013 zum letzten Mal fahren --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4460&options=4 --- #: next_check: 2013-10-03 --- F24 (Spree): nicht montags, ca. stündlich von 11 bis 19 Uhr, bei Bedarf auch außerhalb des Fahrplans; Saisonbetrieb (ab Karfreitag bis zum 3. Oktober); BVG-Tarif; ca. 5 Minuten Fahrzeit; Ruderfähre	CS 29959,3031 29968,2986 --- #: XXX_prog ^^^
 # 

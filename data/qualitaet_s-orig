@@ -8,7 +8,8 @@
 #: temporary vvv
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898
-#: XXX mal vor Ort prüfen
+#: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten
+#: last_checked: 2014-03-07
 #: valid: -20140523
 Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
@@ -6814,23 +6815,24 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Hornstr. - Park am Gleisdreieck): Beton	Q0 8779,9829 8761,9765 8722,9743
 (Park am Gleisdreieck, südöstlicher Weg): Asphalt	Q0 8722,9743 8540,9644 8508,9551 8477,9562 8426,9572
 (Rampe Hornstr. - Generalszug): Asphalt	Q0 8733,9841 8722,9743
-(Park am Gleisdreieck): Asphalt	Q0 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8260,10183 8211,10083
+(Park am Gleisdreieck): Asphalt	Q0 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8263,10187 8211,10083
 (Park am Gleisdreieck, Weg über dem Tunnelmund): Asphalt	Q0 8263,10349 8315,10347
 (Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8328,10585 8270,10613
 (Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8270,10613 8236,10623 8199,10634
 (Park am Gleisdreieck, Eingang Pohlstr.): Beton	Q0 8159,10430 8199,10424 8237,10418 8278,10384
 (Park am Gleisdreieck, Eingang Pohlstr.): Beton	Q0 8237,10418 8296,10438
-(Park am Gleisdreieck, Eingang Bülowstr.): Beton	Q0 8027,10076 8033,10047 8040,10076 8042,10084 8145,10090 8211,10083
+(Park am Gleisdreieck, Eingang Bülowstr.): Beton	Q0 8011,10085 8013,10055 8027,10074 8042,10084 8145,10090 8211,10083
+(Park am Gleisdreieck, Eingang Bülowstr.): wassergebundene Decke	Q1 8211,10083 8276,10079
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8362,10779 8357,10764 8341,10721
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8336,10829 8340,10753 8341,10721
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8357,10764 8340,10753 8318,10738
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8061,10310 8180,10282 8253,10265
-(Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8260,10183 8273,10074
+(Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8263,10187 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2014-02-05 vvv
+#: last_checked: 2014-03-07 vvv
 #: check_frequency: 100d vvv
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
-(Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8273,10074 8285,9956
+(Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8285,9956
 #: XXX wird hier noch verbessert werden?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Betonplattenweg	Q2- 8285,9956 8255,9938 8201,9869
 #: check_frequency ^^^
@@ -7923,8 +7925,8 @@ Elchdamm: Beton mit einigen leichten Schäden	Q0- -941,21260 -865,21244 -716,2128
 Jülicher Str.: Kopfsteinpflaster	Q2 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297 9458,16180 9441,16058
 (Mauerweg Frohnau-Heiligensee): Asphalt, teilweise mit einigen Fugen/Hebungen	Q0- 1896,26788 1869,26304 1832,26248 1595,26061 1410,25993 990,25895 442,25997 415,25974 413,25823 418,25771 565,25332 585,25069 600,24882 575,24601 105,24545 -382,24522 -708,24577
 (Mauerweg Frohnau-Heiligensee): Asphalt	Q0 -802,24541 -972,24498 -1655,24428 -1940,24464 -1953,24435
-(neben dem U-Bahn-Viadukt): Asphalt	Q0 7906,10098 7928,10094 8027,10076
-(Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8027,10076 8029,10106 8074,10292 8061,10310
+(neben dem U-Bahn-Viadukt): Asphalt	Q0 7906,10098 7928,10094 8011,10085
+(Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8011,10085 8023,10106 8074,10292 8061,10310
 (Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8338,10484 8393,10505
 (Treptower Park): Asphalt	Q0 15187,9038 15181,8967 15159,8934
 (Treptower Park): wassergebundene Decke	Q1- 15187,9038 15154,9106 15025,9171 14950,9307
@@ -9237,8 +9239,8 @@ Rumoldstr.: Verbundsteinpflaster	Q1+ 17366,12357 17454,12348 17474,12344 17526,1
 #: next_check_id: STADTGARTENMOABIT-2014
 #: XXX entsteht hier Asphalt oder eine andere Pflasterung?
 #: XXX siehe auch Eintrag in gesperrt-orig
-#: last_checked: 2014-01-17 (Bauarbeiten)
-#: next_check: 2014-02-28
+#: last_checked: 2014-03-07 (Bauarbeiten)
+#: check_frequency: 60d
 (Weg am Stadtgarten Moabit): unbefestigter Weg	Q2- 5708,14077 5685,14215
 Helsingforser Platz: Betonpflaster	Q0- 13473,11456 13427,11431
 (Bornholmer Str. - Kolonnenweg): Asphalt	Q0 10134,16534 10118,16561 10108,16576 9954,16590
@@ -9263,7 +9265,7 @@ Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 Spandauer Str.: mäßiger Asphalt im Bereich Kreuzung Rathaustr.	Q1 10431,12709 10601,12521 10644,12469
 #: next_check_id: INVALIDENSTRMOABIT-2014
 #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
-#: last_checked: 2014-02-10
+#: last_checked: 2014-03-07
 Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7567,13143 7440,13073 7415,13060 7346,13022
 (Möllendorffstr. - Paul-Junius-Str.): Verbundsteinpflaster	Q1+ 15513,13539 15470,13509
 (Möllendorffstr. - Paul-Junius-Str.): Asphalt mit einigen Schäden	Q0- 15470,13509 15370,13508
@@ -9300,6 +9302,7 @@ Straße 84 (Karow): Gras	Q3 15382,23051 15365,22990
 Kurpark: Parkweg	Q1- 25584,6029 25529,6058 25382,6056 25260,6038 24964,6046
 Orankeweg - Hansastr.: Asphalt	Q0 15395,15852 15381,15873
 Wörther Str.: Asphalt mit einigen Aufpflasterungen	Q1+ 11163,14548 10910,14488
+(Kleiner Tiergarten): leicht schadhafter Asphalt	Q1 6561,13151 6556,13240 6526,13327
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -12814,9 +12817,9 @@ Räuschstr.: Asphalt	Q0 3089,19869 3252,19658 3455,19389
 Maximilianstr. (Rummelsburg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16420,11189 16465,11313
 # 
 #: by: Felix Beutler: vvv
-Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8525,12958 8556,12989
+Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8525,12958 8553,12991
 #: corrected_by: srt (nur dieser Abschnitt)
-Unterbaumstr.: Asphalt	Q0 8556,12989 8581,13013
+Unterbaumstr.: Asphalt	Q0 8553,12991 8578,13020
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: confirmed_by: srt --- Nordufer: Verbundsteinpflaster	Q1 7212,14738 7427,14648 7464,14636
 Mönkeberger Str.: asphaltiert	Q0 9475,16307 9582,16296 9725,16281
 Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
@@ -23134,7 +23137,7 @@ Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
 Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: next_check_id: AMZIRKUS-2014
 #: XXX danach wohl Q0
-#: last_checked: 2014-02-10
+#: last_checked: 2014-03-07
 Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938

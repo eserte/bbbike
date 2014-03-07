@@ -28,8 +28,8 @@ Dennewitzplatz	1 7813,10112 7906,10098
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679
 #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen
-#: last_checked: 2014-02-28
-#: next_check: 2014-05-01
+#: last_checked: 2014-03-07
+#: next_check: 2014-05-07
 Dennewitzplatz	1s:q3 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
 Winterfeldtplatz	1 7080,10098 7126,9825
@@ -1708,7 +1708,7 @@ tragen (3+3+2+2 Stufen)	0:20 9244,3872
 tragen (7 weite Stufen)	0:30 15759,16671
 tragen (6 Stufen)	0:12 15915,16526
 # REMOVED (jetzt eine Rampe) --- tragen (8 Stufen)	0:12 18184,9626
-tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10 8029,10106
+tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10 8023,10106
 #: by: Stefan Klinkusch:
 tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30 -5561,12909
 #: by: Stefan Klinkusch:
@@ -2077,7 +2077,7 @@ Schwingtor	BNP:3::trailer=10 14146,12921
 #: note: am 2013-08-15 war das Tor offen, am 2013-08-21 gegen 10 Uhr ebenso, am 2013-09-14 mittags geschlossen
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schwingtor	BNP:5::trailer=10 17684,13133
-Schranke	BNP:3::trailer=10 8622,13042
+Schranke	BNP:3::trailer=10 8623,13049
 Drängelgitter	BNP:3::trailer=10 18788,27989
 Schranke	BNP:3::trailer=10 -2162,17924
 Schranke	BNP:3::trailer=10 -2278,17805
@@ -2489,7 +2489,7 @@ Wilhelm-Hoff-Str.: Weg noch nicht fertig	2::inwork 19033,3397 19057,3422
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0186-neubau-eines-boardingwohn-und.html
 #: XXX_prog 1s:q3:inwork geht als Kategorie nicht, falsche Übersetzung!
-#: last_checked: 2014-01-03
+#: last_checked: 2014-03-07
 #: check_frequency: 180d
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13299
 # 
@@ -2498,30 +2498,26 @@ Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13
 #: next_check_id: AMZIRKUS-2014
 #: XXX oder bleibt die Einbahnstraßenregelung permanent?
 #: XXX_prog 1s:q4:inwork geht als Kategorie nicht, falsche Übersetzung!
-#: last_checked: 2014-02-10
+#: last_checked: 2014-03-07
 Am Zirkus: Einbahnstraße	1s:q4 9118,13070 9137,13032 9167,13046 9239,12923
 # 
 #: next_check_id: STADTGARTENMOABIT-2014
-#: last_checked: 2014-01-17 (Bauarbeiten)
-#: next_check: 2014-02-28
+#: last_checked: 2014-03-07 (Bauarbeiten)
+#: check_frequency: 60d
 (Weg am Stadtgarten Moabit): Bauarbeiten	2::inwork 5708,14077 5685,14215
 # 
 #: next_check_id: ERNASAMUEL-2014
-#: last_checked: 2014-01-17
-#: next_check: 2014-02-28
+#: last_checked: 2014-03-07
 Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 # 
 #: next_check_id: HELLWEG-2014
 #: XXX: vom Hellweg-Parkplatz kann man einige Meter Richtung Norden passieren
 #: XXX: "inwork" ist ein Euphemismus --- es sind keinerlei Anzeichen von Bauarbeiten zu sehen
-#: last_checked: 2014-02-05
+#: last_checked: 2014-03-07
 #: check_frequency: 100d
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Zugang durch Bauzäune versperrt	2::inwork 8243,9766 8233,9863 8201,9869 8255,9938 8285,9956
 # 
-#: next_check_id: GLEISDREIECKBUELOW-2014
-#: last_checked: 2014-02-28
-#: next_check: 2014-03-14
-Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,10098 7928,10094 8027,10076 8033,10047
+# REMOVED (realisiert) --- #: next_check_id: GLEISDREIECKBUELOW-2014 --- #: last_checked: 2014-02-28 --- #: next_check: 2014-03-14 --- Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,10098 7928,10094 8011,10085 8013,10055
 # 
 #: last_checked: 2013-10-29
 #: next_check: 2014-03-29
@@ -2566,7 +2562,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: next_check_id ^^^
 # 
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2014-02-04
+#: last_checked: 2014-03-07
 #: next_check: 2015-08-30
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 # 
@@ -2602,7 +2598,7 @@ Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
-#: last_checked: 2013-11-25
+#: last_checked: 2014-03-07
 #: next_check: 2015-01-01
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
@@ -2739,7 +2735,7 @@ Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
 #: osm_watch: way id="158025179" version="1"
-#: last_checked: 2014-02-04
+#: last_checked: 2014-03-07
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

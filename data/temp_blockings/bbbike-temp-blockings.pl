@@ -20653,7 +20653,7 @@ EOF
 userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
 userdel	2::inwork 8328,10585 8270,10613
 userdel	2::inwork 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
-userdel	2::inwork 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8260,10183 8211,10083 8145,10090 8042,10084 8040,10076 8033,10047 8027,10076 8033,10047 8027,10076
+userdel	2::inwork 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8263,10187 8276,10079 8211,10083 8145,10090 8042,10084 8027,10074 8013,10055 8011,10085 8013,10055 8011,10085
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 userdel	2::inwork 8270,10613 8236,10623 8199,10634
 userdel	2::inwork 8159,10430 8199,10424 8237,10418 8278,10384
@@ -21080,7 +21080,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Fähren F21 und F23: fahren nur ab Karfreitag bis zum 3. Oktober, fahren nicht am Montag',
+       text  => 'Fähren F21 und F23: fahren nur ab 5. April bis zum 2. November, fahren nicht am Montag',
        recurring => 1,
        type  => 'gesperrt',
        source_id => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html', # und 23

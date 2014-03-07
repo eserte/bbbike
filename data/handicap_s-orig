@@ -56,6 +56,12 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # 
 ### Mitte ###
 # 
+#: XXX Ende der Bauarbeiten?
+#: XXX_prog: zu eng für Anhänger
+#: last_checked: 2014-03-07
+Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
+# 
+#: XXX Ende der Bauarbeiten?
 #: last_checked: 2014-02-22
 Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # 
@@ -76,9 +82,9 @@ Chausseestr.: Einbahnstraße zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwo
 # 
 #: osm_watch: way id="4412885" version="23" vvv
 #: priority: #A vvv
-#: last_checked: 2014-02-04 vvv
+#: last_checked: 2014-03-07 vvv
 #: check_frequency: 30d vvv
-Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8588,13673 8594,13637
+# REMOVED (keine Behinderung mehr) --- Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8588,13673 8594,13637
 Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8619,13689 8626,13641
 Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
 #: check_frequency ^^^
@@ -143,7 +149,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2014-02-10 vvv
+#: last_checked: 2014-03-07 vvv
 #: next_check: 2014-06-30 vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -158,13 +164,13 @@ Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13
 #: last_checked: ^^^
 #: next_check_id ^^^
 # 
-#: last_checked: 2013-12-27 (Bauarbeiten wegen Neubau)
-#: next_check: 2014-02-28
+#: last_checked: 2014-03-07 (Bauarbeiten wegen Neubau)
+#: check_frequency: 60d
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2013-11-12 --- #: next_check: 2014-01-15 --- Siemensstr.: Bauarbeiten, Einbahnstraße, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
 # 
-#: last_checked: 2014-02-10 vvv
+#: last_checked: 2014-03-07 vvv
 #: check_frequency: 60d vvv
 Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022
 # REMOVED (nicht mehr) --- Ella-Trebe-Str./Bertha-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7872,13022 7867,13106
@@ -172,7 +178,7 @@ Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung weg
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2014-02-10
+#: last_checked: 2014-03-07
 #: next_check: 2014-05-10
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127 8525,12958
@@ -1541,8 +1547,8 @@ Neptunstr.: Fußgänger	q2 8354,17270 8352,17285 8345,17350 8324,17362 8262,17361
 #: note: Parklücke ist durch Parkverbotsschilder gesichert
 Mühsamstr.: Bordstein	q2 13232,12628 13273,12649
 (Neufährer Steig - Hennigsdorfer Str.): eng	q2 -2151,23379 -2180,23384 -2248,23409
-(neben dem U-Bahn-Viadukt): Fußgänger	q1 7906,10098 7928,10094 8027,10076
-(Dennewitzstr., hinterer Weg): Fußgänger	q1 8027,10076 8029,10106 8074,10292 8061,10310
+# REMOVED (nach dem Neubau breit genug) --- (neben dem U-Bahn-Viadukt): Fußgänger	q1 7906,10098 7928,10094 8011,10085
+(Dennewitzstr., hinterer Weg): Fußgänger	q1 8011,10085 8023,10106 8074,10292 8061,10310
 #: XXX_prog BS zum Stresowplatz
 Havelbrücke: Rampe, Fußgänger	q3 -3204,13913 -3159,13886 -3285,13947
 Havelbrücke: Fußgänger	q2 -3371,13987 -3437,14029 -3445,14033
@@ -1715,6 +1721,8 @@ Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
 # 
 #: XXX_prog BS zu beiden Seiten (aber flach!) (ansonsten entfernen)
 Gleisdreieck: flache Bordsteine	q1 8296,10438 8237,10418
+#: XXX_prog BS zu beiden Seiten (aber flach!) (ansonsten entfernen)
+Gleisdreieck: flache Bordsteine	q1 8145,10090 8211,10083
 (Hansastr. - Gartenstr.): Fußgänger	q1 15187,16185 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): Fußgänger	q1 14810,16282 14721,16360
 (Dohnagestell - Tangastr.): Fußgänger	q2 5802,15399 5889,15457 5961,15562
@@ -1914,6 +1922,8 @@ Duftgeranienweg: Bodenschwellen, die leicht umfahren werden können	q0- 24329,608
 Friedenstr. - Parkplatz: Fußgänger	q2 12131,13333 12152,13294 12141,13256 12107,13264 12066,13237
 #: XXX_prog BS ansonsten Eintrag entfernen
 Am Treptower Park: Bordstein	q2; 15166,8489 15079,8575
+(Kleiner Tiergarten): Fußgänger	q2 6561,13151 6556,13240 6526,13327
+Gleisdreieckpark: Rampe	q2 8011,10085 8013,10055 8027,10074 8042,10084
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch

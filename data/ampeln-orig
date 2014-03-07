@@ -478,13 +478,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4777,8870
 	X 5493,9367
 #: related vvv
-#: note: nur für W->O relevant
+#: XXX_prog: nur für W->O relevant
 	X 12028,12519
-#: note: nur für S->N relevant
+#: XXX_prog: nur für S->N relevant
 	X 12114,12546
-#: note: nur für O->W relevant
+#: XXX_prog: nur für O->W relevant
 	X 12050,12616
-#: note: nur für N->S relevant
+#: XXX_prog: nur für N->S relevant
 	X 11976,12595
 #: related ^^^
 	X 11635,12745
@@ -2482,7 +2482,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2014-02-10 vvv
+#: last_checked: 2014-03-07 vvv
 #: next_check: 2014-06-30 vvv
 	X::inwork 8732,14098
 	X::inwork 8879,13913

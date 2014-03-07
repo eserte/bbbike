@@ -3122,7 +3122,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
 ',
          'until' => undef,
          'from' => undef,
-         'text' => 'Fähren F21 und F23: fahren nur ab Karfreitag bis zum 3. Oktober, fahren nicht am Montag',
+         'text' => 'Fähren F21 und F23: fahren nur ab 5. April bis zum 2. November, fahren nicht am Montag',
          'type' => 'gesperrt',
          'id' => 2408
        },
