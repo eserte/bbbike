@@ -805,7 +805,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Ampel ohne Fuß/Radquerung der Michael-Brückner-Str.
 #: XXX eventuell wird diese Einschränkung aufgehoben:
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
-#: last_checked: 2014-01-04
+#: last_checked: 2014-03-08
 #: check_frequency: 120d
 	X 18080,5376
 	X 19904,3464
@@ -1496,12 +1496,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 21854,18192
 #: XXX_prog ^^^
 #: XXX_prog: nur eine Ampel: vvv
+#: note: Anforderungsampel für Radfahrer in N-S-Richtung
 	X 21417,16896
 	X 21390,16903
 #: XXX_prog ^^^
 	F 21785,16273
 	X 22495,16165
-	X 20839,15978
+	X 20832,15981
 	X -8784,13321
 	X -8050,13080
 	X -6405,14971
@@ -2754,7 +2755,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 26020,14975
 #: note: Anforderungsampel
 	F 25788,14579
+#: note: Anforderungsampel für Radfahrer
 	X 23930,21873
+#: note: hier keine Anforderungsampel
 	X 24114,22074
 	X 23565,21396
 	X 17717,21834

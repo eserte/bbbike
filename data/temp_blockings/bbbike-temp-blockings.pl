@@ -22526,6 +22526,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021395',
        data  => <<EOF,
+#: note: laut BVG navi 03.2014 sogar bis September 2014
 userdel	q4::inwork; 11073,-2037 10983,-2116
 EOF
      },

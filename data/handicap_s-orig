@@ -21,13 +21,13 @@ R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfah
 #: valid: ^^^
 #: source_id ^^^
 # 
-#: last_checked: 2014-03-01 vvv
+#: last_checked: 2014-03-08 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
 # 
 #: next_check_id: NEUEBAHNHOF-2014
-#: last_checked: 2014-03-02
+#: last_checked: 2014-03-08
 Neue Bahnhofstr.: Einbahnstraﬂe wegen Bauarbeiten	q3::inwork; 14879,11182 14918,11249
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 14442,11101 14468,11203
@@ -1924,6 +1924,8 @@ Friedenstr. - Parkplatz: Fuﬂg‰nger	q2 12131,13333 12152,13294 12141,13256 12107,
 Am Treptower Park: Bordstein	q2; 15166,8489 15079,8575
 (Kleiner Tiergarten): Fuﬂg‰nger	q2 6561,13151 6556,13240 6526,13327
 Gleisdreieckpark: Rampe	q2 8011,10085 8013,10055 8027,10074 8042,10084
+#: XXX_prog BS an der Schwarzwurzelstr., ansonsten q2
+Schwarzwurzel-Park: Bordstein, Fuﬂg‰nger, Spielplatz	q3 20698,18359 20814,18341 20823,18329
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch
@@ -2464,7 +2466,7 @@ Wittenberger Str. (Einkaufzentrum): Fuﬂg‰nger	q3 21590,17918 21647,17889
 (Parkweg an der Neuen Wuhle): wenig Fuﬂg‰nger	q1 20889,17838 20983,17846 21057,17785 21093,17765 21353,17635 21535,17550 21555,17546
 (Parkweg an der neuen Wuhle): wenig Fuﬂg‰nger	q1 21555,17546 21751,17511 21875,17533 21925,17542 22022,17519 22071,17509 22093,17505 22121,17495 22364,17323
 # REMOVED (scheint jetzt breiter zu sein?) --- (Radweg an der Straﬂenbahn): wenig Fuﬂg‰nger, eng	q1 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21179,16455 21067,16327 21043,16299 21035,16280 20995,16237 20931,16164 20851,16037 20839,15978
-Wuhlewanderweg: Spazierg‰nger	q1 22313,18595 22332,18496 22391,18349 22395,18313 22367,18226 22341,18091 22324,18030 22327,17997 22343,17960 22353,17940 22353,17920 22365,17864 22381,17811 22384,17764 22333,17664 22329,17644 22364,17323
+Wuhlewanderweg: Spazierg‰nger	q1 22313,18595 22332,18496 22391,18349 22395,18313 22363,18219 22355,18190 22341,18091 22324,18030 22327,17997 22343,17960 22353,17940 22353,17920 22365,17864 22381,17811 22384,17764 22333,17664 22329,17644 22364,17323
 Wuhlewanderweg: Spazierg‰nger	q1 22314,17916 22365,17864
 #: by: ^^^
 # del by srt: #: by: kathrin dorenburg-bunn [AM] vvv Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482 Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343 #: by: ^^^
@@ -3169,7 +3171,8 @@ Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13744,15018
 (Rudower Str. - Girlitzweg): gemeinsamer Fuﬂ- und Radweg	q1 15176,3136 15273,3269
 #: by: Sybille Koppermann
 #: note: Olaf (zioerjen) meint nur q2, ohne weitere Angaben
-Bernhard-B‰stlein-Str.: enge Straﬂe	q1 15354,13998 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
+#: corrected_by: srt/policy (q1 -> q0-)
+Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15354,13998 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
 #: by: anonymous vvv
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311
 Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230

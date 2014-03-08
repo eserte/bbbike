@@ -34,7 +34,7 @@ Buckow - Waldsieversdorf: OK (guter Asphalt)	Q0 55164,17565 55103,17455 55091,17
 Müncheberg - Prötzel: sehr guter Asphalt	Q0 54469,15962 53884,16566
 Garzin - Garzau: Asphalt	Q0 49700,16565 49437,16565 49359,15759 49278,15634 47968,14759 47589,14695 47381,14731 46984,14990 46421,14990
 Altlandsberg - Strausberg: sehr guter Asphalt	Q0 32513,18082 32690,18122 32941,18121 33133,18131 33961,17989 34154,17882 34813,17682 35225,17557 35618,17440 35728,17428 36768,17309 38480,17478 38537,17484 38846,17400 39133,17299 39235,17255 39287,17231 39984,16734 40166,16723 40487,16703 40712,16743 41193,17512 41698,17577
-Blumberg - Ahrensfelde: sehr guter Asphalt	Q0 24709,22522 24540,22469 24418,22375 24405,22365 24203,22171 24114,22074 24010,21960 23973,21919 23930,21873 23565,21396 23281,21043 23026,20493 22986,20408 22551,19476 22525,19420 22475,19310 22418,19268 21975,19068
+Blumberg - Ahrensfelde: sehr guter Asphalt	Q0 24709,22522 24540,22469 24418,22375 24405,22365 24203,22171 24196,22163 24114,22074 24010,21960 23973,21919 23930,21873 23565,21396 23285,21067 23026,20493 22986,20408 22551,19476 22525,19420 22475,19310 22418,19268 21975,19068
 Bernau - Albertshof: Asphalt	Q0 23109,30968 23179,31047 23325,31194 23526,31290 23549,31301 23647,31351 23701,31395 23954,31612 24376,31986 25093,32573 25548,33027 25912,33255 26443,33278 26497,33280 26755,33126 27004,32977 27103,32918 27237,32838 27708,32556
 Albertshof - Tempelfelde: Asphalt	Q0 27708,32556 27942,32634 28254,32737 28437,32745 30136,33545 30694,33698 31134,33924 31293,33987
 B96 Oranienburg - Abzweig nach Grüneberg: sehr guter Asphalt (Fahrbahn)	Q0 -1864,43042 -1943,43360 -2602,45078 -2631,45150 -3168,45996 -3962,47034 -4284,47803 -4587,48481 -5125,48725 -6068,49150 -6042,49596 -6042,49937 -6459,50093 -6671,50534 -6542,51278
@@ -1101,26 +1101,20 @@ Kirchweg (Eiche): Asphalt	Q0 22773,17951 22873,18022 22993,18088
 Straße der Einheit (Eiche): Asphalt	Q0 22773,17951 22725,18147 22679,18293 22661,18361
 Straße der Jugend (Eiche): Verbundsteinfpflaster	Q0- 22531,18075 22553,18076 22626,18103
 Straße der Jugend [54-72]: Verbundsteinfpflaster	Q0- 22553,18076 22563,18037 22568,17956
-Straße der Jugend (Eiche): Asphalt	Q0 22626,18103 22725,18147 22827,18212 22931,18295 23048,18380
-#: add_fragezeichen: ist der östliche Abschnitt der Straße ebenfalls asphaltiert?
-Straße der Jugend (Eiche): Asphalt	Q0 23048,18380 23160,18461 23252,18529
+Straße der Jugend (Eiche): Asphalt	Q0 22626,18103 22725,18147 22827,18212 22931,18295 23048,18380 23160,18461 23252,18529
 Friedenstr. (Eiche): Asphalt	Q0 22626,18103 22571,18294
-Straße der Arbeit (Eiche): Asphalt	Q0 22756,18449 22801,18321
-#: add_fragezeichen: ist der südliche Abschnitt der Straße ebenfalls asphaltiert?
-Straße der Arbeit (Eiche): Asphalt	Q0 22801,18321 22827,18212 22873,18022
-Straße der Freundschaft (Eiche): Asphalt	Q0 22916,18354 22801,18321
-#: add_fragezeichen: ist der westliche Abschnitt der Straße ebenfalls asphaltiert?
-Straße der Freundschaft (Eiche): Asphalt	Q0 22801,18321 22679,18293
-Mühlenstr. (Eiche): Asphalt	Q0 22887,18465 22999,18493
-#: add_fragezeichen: ist der östliche Abschnitt der Straße ebenfalls asphaltiert?
-Mühlenstr. (Eiche): Asphalt	Q0 22999,18493 23102,18552
-Immenweg (Eiche): Asphalt	Q0 22993,18088 23126,18227
-#: add_fragezeichen: ist der östliche Abschnitt der Straße ebenfalls asphaltiert?
-Immenweg (Eiche): Asphalt	Q0 23126,18227 23263,18275 23371,18325
+Straße der Arbeit (Eiche): Asphalt	Q0 22756,18449 22801,18321 22827,18212 22873,18022
+Straße der Freundschaft (Eiche): Asphalt	Q0 22916,18354 22801,18321 22679,18293
+Mühlenstr. (Eiche): Asphalt	Q0 22887,18465 22999,18493 23102,18552
+Immenweg (Eiche): Asphalt	Q0 22993,18088 23126,18227 23263,18275 23371,18325
 Eichner Spitze (Eiche): Asphalt	Q0 23579,18772 23602,18882
-Gärtnerstr. (Eiche): Asphalt	Q0 23315,18836 23395,18929
-#: add_fragezeichen: ist der nordöstliche Abschnitt der Straße ebenfalls asphaltiert?
-Gärtnerstr. (Eiche): Asphalt	Q0 23395,18929 23508,19025
+Gärtnerstr. (Eiche): Asphalt	Q0 23315,18836 23393,18938 23508,19025
+Am Gehrenberg (Eiche): Asphalt	Q0 23323,19004 23393,18938 23602,18882
+An der Wiese (Eiche): Asphalt	Q0 23194,18879 23323,19004 23371,19051 23475,19131
+Zur Rehwiese (Eiche): Verbundsteinfpflaster	Q1 23371,19051 23340,19088
+Saarstr. (Eiche): Asphalt	Q0 23111,18784 23252,18529 23371,18325
+Rheinstr. (Eiche): Asphalt	Q0 23015,18687 23102,18552 23160,18461 23263,18275
+Ruhrstr. (Eiche): Asphalt	Q0 22999,18493 23048,18380 23126,18227
 Verbundsteinpflaster	Q1+ 23036,17919 22914,17893
 Bucher Weg/Lindenberger Weg: asphaltiert	Q0 18356,22225 18339,22271 18224,22531 18193,22656 18162,22831 18061,23456 18033,23657 17995,23719 17836,23873 17622,24160 17615,24168 17464,24358 17228,24640 17193,24683
 Karower Str.: unbefestigte Straße	Q2+ 17052,23958 17110,23990 17264,24021
@@ -1472,7 +1466,8 @@ Stolpe - Criewen: gut	Q0 57400,63075 57518,63446 57500,64000 57557,64187 57672,6
 #: by ^^^^^^^^^^^^^^^
 Bötzseestr.: Verbundsteinpflaster	Q1 39287,17231 39193,16900 39400,15803
 Rehfelde - Strausberg: Asphalt	Q0 45856,14437 44121,14615 43743,14634 43162,14428 42996,14793 42578,15750 42300,15756 41681,15915
-Helgolandstr.: Asphalt	Q0 22909,18581 23015,18687 23111,18784 23194,18879
+Helgolandstr.: Verbundsteinpflaster	Q1 22909,18581 23015,18687
+Helgolandstr.: Asphalt	Q0 23015,18687 23111,18784 23194,18879
 Buchholz - Bötzsee: Waldweg mit grobem Schotter	Q3 36479,20207 36629,20049 36862,19895 37040,19671 37146,19140 37278,18981 37634,18965 37862,18703 38243,18328 38471,18034 38515,17931
 zur Bungalowsiedlung am Bötzsee: Asphalt	Q0 38537,17484 38693,17618 38834,17625 38893,17687 39018,17571 39143,17575 39121,17878
 Strausberg - Postbruch: mäßiger Asphalt, viele Schlaglöcher	Q1 41268,17834 40159,17843
@@ -1505,14 +1500,12 @@ Mehrow - Blumberg: Kopfsteinpflaster	Q2+ 24659,20968 24709,21125
 Mehrow - Blumberg: Asphalt	Q0 24709,21125 24730,21184
 Mehrow - Blumberg: Kopfsteinpflaster	Q2+ 24730,21184 24863,21549
 Mehrow - Blumberg: schlechtes Kopfsteinpflaster, mit Sandbanketten	Q3 24863,21549 24960,21815
-Am Dorfteich (Mehrow): Asphalt	Q0 24743,18606 24959,18488
-#: add_fragezeichen: Ist der südöstliche Abschnitt auch aspaltiert?
-Am Dorfteich (Mehrow): Asphalt	Q0 24959,18488 25002,18407
+Am Dorfteich (Mehrow): Asphalt	Q0 24743,18606 24959,18488 25002,18407
 Landsberger Str. (Blumberg): Asphalt	Q0 24885,21922 24960,21815 24999,21757 25315,21433
 Krummenseer Str. (Blumberg): schlechtes Kopfsteinpflaster und Sandbanketten	Q3 24999,21757 25048,21778 25106,21837
 Krummenseer Str. (Blumberg): Verbundsteinpflaster	Q1 25106,21837 25151,21864
 Krummenseer Str. (Blumberg): unbefestigte Straße, teilweise mit Kopfsteinpflaster	Q2- 25151,21864 25239,21918
-Gartenstr. (Blumberg): Asphalt	Q0 24885,21922 24774,21843 24635,22101 24626,22129
+Gartenstr. (Blumberg): Asphalt	Q0 24885,21922 24774,21843 24666,22052 24635,22101 24626,22129
 Schloßstr. (Blumberg): Asphalt	Q0 24804,22347 24879,22241 24944,22130 24914,21971 24885,21922
 Bahnhofstr. (Blumberg): Betonsteinpflaster	Q1- 24626,22129 24732,22192 24746,22198 24815,22230 24879,22241
 Bahnhofstr. (Blumberg): Asphalt	Q0 24319,22403 24405,22365 24528,22316 24626,22129
@@ -1521,9 +1514,11 @@ Berliner Str. (Blumberg): Betonsteinpflaster	Q1- 24815,22230 24819,22268 24804,2
 Berliner Str. (Blumberg): Asphalt	Q0 24804,22347 24727,22427 24704,22477 24709,22522
 Berliner Str. (Blumberg): schlechtes Kopfsteinpflaster	Q3 24635,22101 24458,22009
 Kleine Bahnhofstr. (Blumberg): schlechtes Kopfsteinpflaster	Q3 24528,22316 24656,22379 24727,22427
-#: XXX evtl. im Norden mit Betonsteinpflaster, im Süden vielleicht auch oder mit normalen Kopfsteinpflaster
-Schulstr. (Blumberg): gepflastert	Q1- 24914,21971 24732,22192
+Schulstr. (Blumberg): schlechtes Kopfsteinpflaster	Q3 24914,21971 24829,22061 24772,22125
+Schulstr. (Blumberg): Betonsteinpflaster	Q1- 24772,22125 24732,22192
 Mittelstr. (Blumberg): Betonsteinpflaster	Q1- 24746,22198 24656,22379
+Grünstr. (Blumberg): Betonsteinpflaster	Q1- 24772,22125 24666,22052
+Spittelweg (Blumberg): Betonsteinpflaster	Q1- 24829,22061 24944,22130
 Blumberg - Krummensee: schlechtes Kopfsteinpflaster	Q3 25239,21918 25407,22008
 #: add_fragezeichen: Wie ist die Qualität im östlichen Abschnitt, auch schlechtes Kopfsteinpflaster?
 Blumberg - Krummensee: schlechtes Kopfsteinpflaster	Q3 25407,22008 25897,22058 27458,21831 29124,21709 29271,21673 29573,21750
@@ -3302,6 +3297,11 @@ Grünstr.: unbefestigte holprige Straße	Q2 33943,5568 34060,5599 34160,5624 34265
 Höhenweg (Schöneiche): Kleinsteinpflaster	Q2+ 32111,6229 32094,6243 32075,6275
 #: add_fragezeichen: ist der nördliche Abschnitt tatsächlich gepflastert?
 Höhenweg (Schöneiche): Kleinsteinpflaster	Q2+ 32075,6275 31945,6555 31873,6746
+Rehhahn: Asphalt	Q0 23565,21396 23579,21383 23983,21040
+Mc-Donald's-Str.: Asphalt	Q0 23565,21396 23450,21493
+Chausseedreieck: Asphalt	Q0 24203,22171 24458,22009 24149,22011
+#: note: zumindest am nördlichen Ende
+Am Busch: Asphalt	Q0 24458,22009 24393,21721
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:

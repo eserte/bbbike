@@ -3619,7 +3619,8 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'text' => 'Golzstr.: Baustelle, Fahrbahn zwischen Lichtenrader Damm und Bahnhofstr. in Richtung S-Bhf. gesperrt, 03.03.2014 08:00 Uhr bis 23.07.2014 17:00 Uhr ',
          'from' => 1393743600,
          'id' => 2546,
-         'data' => 'userdel	q4::inwork; 11073,-2037 10983,-2116
+         'data' => '#: note: laut BVG navi 03.2014 sogar bis September 2014
+userdel	q4::inwork; 11073,-2037 10983,-2116
 ',
          'type' => 'handicap'
        }
