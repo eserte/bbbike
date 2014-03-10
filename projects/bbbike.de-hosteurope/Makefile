@@ -17,6 +17,7 @@
 #  test:	Test the remote server from the local host (and one test on
 #		the remote server).
 #  test-local:	Run all tests locally.
+#  test-pps:    Test on a pps system (bbbike-pps).
 #  deploy:	Do everything from preparing to rsync'ing and testing.
 #  deploy-local:	Prepare a local distribution for testing. Do not rsync.
 #  deploy-pps:		Do a deployment to a pps system (bbbike-pps).
@@ -216,6 +217,7 @@ TARGET=bbbike.hosteurope.herceg.de
       make(automatic-deployment--check-prerequisites) || \
       make(after-deployment-set-tags) || \
       make(deploy-pps) || \
+      make(test-pps) || \
       make(all) || \
       make(.PHONY)
 # no TARGET=
@@ -386,6 +388,9 @@ deploy-temp-blockings:	check-temp-blockings-integrity-pre \
 			prepare-bbbike-dist-data-temp-blockings-dir \
 			check-temp-blockings-integrity \
 			rsync-temp-blockings
+
+test-pps:
+			${MAKE} test TARGET=bbbike-pps
 
 test-makefile:
 	${MAKE} -n deploy-local > /tmp/test-makefile.cmd
