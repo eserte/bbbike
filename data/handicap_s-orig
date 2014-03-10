@@ -21,13 +21,13 @@ Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfah
 #: valid: ^^^
 #: source_id ^^^
 # 
-#: last_checked: 2014-03-08 vvv
+#: last_checked: 2014-03-09 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
 # 
 #: next_check_id: NEUEBAHNHOF-2014
-#: last_checked: 2014-03-08
+#: last_checked: 2014-03-09
 Neue Bahnhofstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14879,11182 14918,11249
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 14442,11101 14468,11203
@@ -414,7 +414,7 @@ Am Landwehrkanal: Parkweg	q1 12739,9576 12796,9548 12919,9584 12981,9672 13086,9
 Uferweg an den Treptowers: enger und kurviger Weg	q3 14500,9856 14465,9900 14464,9927 14509,9997 14432,10059 14373,10046
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20070810.1330.83363.html
 #: confirmed_by: srt
-Denewitzstr.: kombinierter Fuß- und Radweg	q1 8061,10310 7947,10155
+Denewitzstr.: kombinierter Fuß- und Radweg	q1 8058,10306 7947,10155
 Linienstr.: Gehweg	q2 11104,13456 11131,13455
 Böcklerpark: gemeinsamer Fuß- und Radweg	q2 10885,10045 10723,10088 10521,10126
 Böcklerpark: enge Kurven, manchmal Fußgänger auf dem Radweg	q3 10967,10092 10917,10068 10885,10045
@@ -1548,7 +1548,7 @@ Neptunstr.: Fußgänger	q2 8354,17270 8352,17285 8345,17350 8324,17362 8262,17361
 Mühsamstr.: Bordstein	q2 13232,12628 13273,12649
 (Neufährer Steig - Hennigsdorfer Str.): eng	q2 -2151,23379 -2180,23384 -2248,23409
 # REMOVED (nach dem Neubau breit genug) --- (neben dem U-Bahn-Viadukt): Fußgänger	q1 7906,10098 7928,10094 8011,10085
-(Dennewitzstr., hinterer Weg): Fußgänger	q1 8011,10085 8023,10106 8074,10292 8061,10310
+(Dennewitzstr., hinterer Weg): Fußgänger	q1 8011,10085 8023,10106 8074,10292 8058,10306
 #: XXX_prog BS zum Stresowplatz
 Havelbrücke: Rampe, Fußgänger	q3 -3204,13913 -3159,13886 -3285,13947
 Havelbrücke: Fußgänger	q2 -3371,13987 -3437,14029 -3445,14033

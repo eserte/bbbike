@@ -3623,6 +3623,26 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 userdel	q4::inwork; 11073,-2037 10983,-2116
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_021400',
+         'until' => 1396303199,
+         'text' => 'Ehrlichstr. Richtung Treskowallee zwischen Eginhardstr. und Treskowallee: Baustelle, Fahrbahn gesperrt, ab 10.03.2014 bis Ende März 2014',
+         'from' => 1394233200,
+         'id' => 2547,
+         'data' => 'userdel	q4::inwork; 18615,8269 18676,8236
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_021410',
+         'until' => 1394924399,
+         'text' => 'Friedrich-Krause-Ufer: Sperrung an der Kreuzung Fennstr., ab 10.03.2014 bis Mitte März 2014',
+         'from' => 1394233200,
+         'id' => 2548,
+         'data' => 'userdel	q4::inwork 7373,14566 7314,14599
+',
+         'type' => 'handicap'
        }
      
 );

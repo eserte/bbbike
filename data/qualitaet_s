@@ -382,7 +382,7 @@ Simon-Dach-Str.: Kopfsteinpflaster	Q2 14006,11843 13981,11746 13954,11647 13888,
 Krossener Str.: Kopfsteinpflaster	Q2 14561,11600 14496,11620 14424,11639 14358,11656 14247,11681 14102,11715 13981,11746
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 14161,11930 14127,11811
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 14102,11715 14065,11605 14049,11553
-Kurfürstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8061,10310
+Kurfürstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8058,10306
 (Im Jagen, Verlängerung): Waldweg	Q1 1375,6138 1057,6461 909,6584 905,6631
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11500,9116
 Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7289,20618
@@ -6197,7 +6197,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Yorckstr. - Park am Gleisdreieck): Beton	Q0 8358,9568 8357,9598 8353,9642 8350,9685 8349,9697
 (Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8497,9654 8540,9644
 (Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8341,10721 8332,10637 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8333,9583
-(Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
+(Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8336,10829 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
 (Park am Gleisdreieck, Generalszug): Beton	Q0 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
 (Park am Gleisdreieck, östlicher Weg): Kopfsteinpflaster	Q2 8775,10289 8780,10248 8726,10056
 (Park am Gleisdreieck, östlicher Weg): Asphalt	Q0 8726,10056 8652,9870
@@ -6218,7 +6218,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8362,10779 8357,10764 8341,10721
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8336,10829 8340,10753 8341,10721
 (Park am Gleisdreieck, Eingang Schöneberger Ufer): Asphalt	Q0 8357,10764 8340,10753 8318,10738
-(Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8061,10310 8180,10282 8253,10265
+(Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8253,10265
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8263,10187 8276,10079
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8285,9956
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Betonplattenweg	Q2 8285,9956 8255,9938 8201,9869
@@ -7276,7 +7276,7 @@ Jülicher Str.: Kopfsteinpflaster	Q2 9514,16603 9498,16480 9487,16395 9475,16307 
 (Mauerweg Frohnau-Heiligensee): Asphalt, teilweise mit einigen Fugen/Hebungen	Q0 1896,26788 1869,26304 1832,26248 1595,26061 1410,25993 990,25895 442,25997 415,25974 413,25823 418,25771 565,25332 585,25069 600,24882 575,24601 105,24545 -382,24522 -708,24577
 (Mauerweg Frohnau-Heiligensee): Asphalt	Q0 -802,24541 -972,24498 -1655,24428 -1940,24464 -1953,24435
 (neben dem U-Bahn-Viadukt): Asphalt	Q0 7906,10098 7928,10094 8011,10085
-(Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8011,10085 8023,10106 8074,10292 8061,10310
+(Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8011,10085 8023,10106 8074,10292 8058,10306
 (Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8338,10484 8393,10505
 (Treptower Park): Asphalt	Q0 15187,9038 15181,8967 15159,8934
 (Treptower Park): wassergebundene Decke	Q1 15187,9038 15154,9106 15025,9171 14950,9307
@@ -14723,7 +14723,8 @@ Golliner Str.: Beton	Q1 22217,17989 22276,18107 22191,18150
 Kölpiner Str.: Beton	Q1 22069,18401 22114,18244 22213,18193
 Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 (Radweg an der Straßenbahn): Beton	Q0 21871,18244 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896
-(Radweg an der Straßenbahn): asphaltiert	Q0 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21179,16455 21067,16327 21043,16299 21035,16280 20995,16237 20931,16164 20863,16042 20870,16024
+(Radweg an der Straßenbahn): asphaltiert	Q0 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21179,16455 21067,16327 21043,16299 21035,16280 20995,16237
+(Radweg an der Straßenbahn): Betonplatten	Q1 20995,16237 20931,16164 20863,16042 20870,16024
 (Parkweg an der Neuen Wuhle): wassergebundene Decke	Q1 20889,17838 20983,17846 21057,17785 21093,17765 21353,17635 21535,17550 21555,17546
 (Parkweg an der neuen Wuhle): wassergebundene Decke	Q1 21555,17546 21751,17511 21875,17533 21925,17542 22022,17519
 (Parkweg an der neuen Wuhle): Kopfsteinpflaster	Q2 22022,17519 22071,17509

@@ -20652,7 +20652,7 @@ EOF
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130529.1525.385421.html (Eröffnung am 1. Juni)
 userdel	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
 userdel	2::inwork 8328,10585 8270,10613
-userdel	2::inwork 8336,10829 8318,10738 8270,10613 8264,10460 8237,10418 8191,10346 8180,10282 8145,10090
+userdel	2::inwork 8336,10829 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
 userdel	2::inwork 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8263,10187 8276,10079 8211,10083 8145,10090 8042,10084 8027,10074 8013,10055 8011,10085 8013,10055 8011,10085
 userdel	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 userdel	2::inwork 8270,10613 8236,10623 8199,10634
@@ -22528,6 +22528,24 @@ EOF
        data  => <<EOF,
 #: note: laut BVG navi 03.2014 sogar bis September 2014
 userdel	q4::inwork; 11073,-2037 10983,-2116
+EOF
+     },
+     { from  => 1394233200, # 2014-03-08 00:00
+       until => 1396303199, # 2014-03-31 23:59
+       text  => 'Ehrlichstr. Richtung Treskowallee zwischen Eginhardstr. und Treskowallee: Baustelle, Fahrbahn gesperrt, ab 10.03.2014 bis Ende März 2014',
+       type  => 'handicap',
+       source_id => 'IM_021400',
+       data  => <<EOF,
+userdel	q4::inwork; 18615,8269 18676,8236
+EOF
+     },
+     { from  => 1394233200, # 2014-03-08 00:00
+       until => 1394924399, # 2014-03-15 23:59
+       text  => 'Friedrich-Krause-Ufer: Sperrung an der Kreuzung Fennstr., ab 10.03.2014 bis Mitte März 2014',
+       type  => 'handicap',
+       source_id => 'IM_021410',
+       data  => <<EOF,
+userdel	q4::inwork 7373,14566 7314,14599
 EOF
      },
     );
