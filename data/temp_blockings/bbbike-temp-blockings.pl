@@ -12255,8 +12255,8 @@ EOF
      },
      { from  => $isodate2epoch->("2013-08-01 14:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-08-04 22:00:00"),
-       ##XXX später prüfen
-       #periodic => 1, # manchmal/immer (?) zwei Termine im Jahr, erster Termin
+       periodic => 1, # manchmal/immer (?) zwei Termine im Jahr, erster Termin
+       ##XXX später prüfen, für 2014 gibt es noch keinen Termin
        #recurrences => [['yearly', days => 1, months => 4]],
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung (Stadtteilfest Müllerstraße), Straße vollständig gesperrt (2. bis 4. August 2013)',
        type  => 'gesperrt',
@@ -18429,7 +18429,8 @@ EOF
      { from  => $isodate2epoch->("2013-08-29 14:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-09-01 22:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 10, months => 4]], # kann auch erst im Juni oder sogar September stattfinden
+       ##XXX später prüfen, für 2014 gibt es noch keinen Termin
+       #recurrences => [['yearly', days => 10, months => 4]], # kann auch erst im Juni oder sogar September stattfinden
        text  => 'Turmstraße (Moabit): Veranstaltung (Turmstraßenfest), Straße zwischen Stromstr. und Waldstr. vollständig gesperrt (30.08.2013 bis 01.09.2012)',
        type  => 'gesperrt',
        data  => <<EOF,
