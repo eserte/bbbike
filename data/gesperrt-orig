@@ -376,7 +376,7 @@ Ringbahnstr.	1 12934,6967 13072,7013
 #: corrected_by: Michael Kiekebusch (Radfahren auf breiten Gehweg möglich)
 Stiftsweg	1s:q3 11001,18528 11268,18851
 #: note: zur Not könnte man entgegengesetzt auf dem Gehweg fahren, oder sogar auf dem für die Straßenbahn reservierten Fahrbahnteil
-Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11805,19071
+Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 #: by: ^^^
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Spreepark	2 16023,8860 16161,8852
@@ -1689,6 +1689,8 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: XXX_prog Zeitverlust nicht durch tragen, sondern wegen der Wartezeit
+Aufzug	0:45 11947,19161
 tragen (2 Stufen)	0:5 14823,9523
 tragen (10+11 Stufen)	0:30 -1584,11499
 #: XXX wird die Treppe während der Bauarbeiten an der Freybrücke benutzbar sein?
@@ -2479,7 +2481,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 # 
 #: next_check_id: ZIMMERMANNSTRBR-2014
 #: last_checked: 2014-02-08
-#: next_check: 2014-05-31
+#: next_check: 2015-12-31
 #: priority: #A
 Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
 # 

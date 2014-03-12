@@ -6933,8 +6933,8 @@ Wodanstr. (Französisch Buchholz): Asphalt	Q0 12216,21945 12162,21743
 (Pasewalker Str. - Einsiedelring): Verbundsteinpflaster	Q0 12039,20538 11996,20545
 Straße 171: Asphalt	Q0 12694,22570 12657,22596 12598,22605
 Borkumstr.: Kopfsteinpflaster	Q2 11259,17792 11275,17690
-Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0 10819,18066 10907,18109 10938,18147 10989,18172 11132,18346
-Hadlichstr.: Asphalt	Q0 11132,18346 11001,18528
+Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0 10815,18074 10900,18113 10970,18164 10993,18203 11123,18343
+Hadlichstr.: Asphalt	Q0 11123,18343 11001,18528
 Straße 44 (Französisch Buchholz): Asphalt	Q0 12211,20486 12118,20557
 Straße 42 (Französisch Buchholz): unbefestigte Straße mit einigen Asphaltflicken	Q2 12211,20486 12274,20570 12222,20637
 Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12629,21083
@@ -8082,7 +8082,7 @@ Blockdammweg: Asphalt	Q0 17904,8924 17975,8971
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 14810,16282 14721,16360
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinsteinpflaster	Q2 12948,15771 12762,15882
 Parkstr.: Asphalt mit einigen leichten Schäden	Q0 13788,16240 13972,16639
-Prenzlauer Promenade: Beton	Q0 11950,18529 11934,18576 11980,18900 11940,19380 11953,19541 11942,19567 11915,19580
+Prenzlauer Promenade: Beton	Q0 11950,18529 11934,18576 11980,18900 11958,19158 11940,19380 11953,19541 11942,19567 11915,19580
 (Dohnagestell - Tangastr.): Fahrbahn Kopfsteinpflaster, breiter Nebenstreifen als Parkweg	Q1 5553,15271 5722,15332
 (Dohnagestell - Tangastr.): schlechtes Kopfsteinpflaster	Q3 5722,15332 5802,15399
 (Dohnagestell - Tangastr.): Parkweg, Schotter, Regenrinnen	Q2 5802,15399 5889,15457 5961,15562
@@ -8568,6 +8568,9 @@ Wörther Str.: Asphalt mit einigen Aufpflasterungen	Q1 11163,14548 10910,14488
 (Kleiner Tiergarten): leicht schadhafter Asphalt	Q1 6561,13151 6556,13240 6526,13327
 Schwarzwurzel-Park: Gehwegplatten	Q0 20698,18359 20814,18341 20823,18329
 (Raoul-Wallenberg-Str. - Landsberger Allee): Betonplatten	Q1 20774,15850 20758,15851 20719,15755 20729,15743
+(Pasewalker Str. - Vesaliusstr.): Beton	Q0 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
+(Pasewalker Str. - Vesaliusstr.): Gehwegplatten	Q0 11884,19169 11841,19188 11763,19191
+(Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11912,19279 11927,19308
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): mäßiger Asphalt	Q1 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): unbefestigte Straße	Q2 12608,22943 12589,22948 12526,22972
@@ -9130,9 +9133,9 @@ Enkircher Str.: Asphalt	Q0 3314,25243 3460,25132 3485,25112 3518,25086 3550,2504
 (Schildower Weg): wassergebunden	Q1 8218,24269 8191,24233 8172,24234 7946,24088 7887,24043 7877,24037
 (Schildower Weg - Schildower Str.): wassergebunden	Q1 8427,24391 8513,24464 8872,24343 8885,24344
 Waldstr.: Kopfsteinpflaster, "Moabiter Kissen"	Q2 5384,13555 5390,13616 5417,13817 5443,14028
-Vesaliusstr.: Asphalt	Q0 11805,19071 11748,19235 11698,19489
+Vesaliusstr.: Asphalt	Q0 11818,19089 11763,19191 11748,19235 11698,19489
 Stiftsweg: Asphalt	Q0 11001,18528 11268,18851
-Bleicheroder Str.: Asphalt	Q0 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11805,19071
+Bleicheroder Str.: Asphalt	Q0 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 Paracelsusstr.: schlechter Asphalt	Q2 11523,19393 11575,19296 11543,19279 11549,19258 11599,19171
 Paracelsusstr.: Kopfsteinpflaster	Q2 11634,19187 11727,19001
 Paracelsusstr.: schlechter Asphalt	Q2 11671,19204 11613,19312 11575,19296

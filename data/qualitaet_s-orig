@@ -1226,7 +1226,7 @@ Fasanenplatz, zur Meierottostr.: gutes Kopfsteinpflaster	Q1 5195,10175 5246,1016
 Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
 Dunckerstr.: Kopfsteinpflaster	Q2 11337,14946 11450,15173 11480,15229 11595,15460
 Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11119,15385
-# REMOVED --- siehe http://www.berlin.de/ba-pankow/verwaltung/tiefbau/berliner_strasse.html --- #: XXX nach den Bauarbeiten wahrscheinlich asphaltiert, auﬂerdem gibt es vermutlich Radwege --- #: next_check: 2012-01-01 (public) --- Berliner Str. (Pankow): auﬂen Kopfsteinpflaster, innen betoniert	Q2 10830,17985 10819,18066 10755,18231 10739,18262 10680,18380
+# REMOVED --- siehe http://www.berlin.de/ba-pankow/verwaltung/tiefbau/berliner_strasse.html --- #: XXX nach den Bauarbeiten wahrscheinlich asphaltiert, auﬂerdem gibt es vermutlich Radwege --- #: next_check: 2012-01-01 (public) --- Berliner Str. (Pankow): auﬂen Kopfsteinpflaster, innen betoniert	Q2 10830,17985 10815,18074 10755,18231 10739,18262 10680,18380
 Schudomastr.: Kleinsteinpflaster	Q1 13815,7490 13781,7524
 Schwarzastr.: Kleinsteinpflaster	Q1 13840,7513 13815,7490
 Wilskistr.: Kopfsteinpflaster, OK	Q1 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
@@ -7567,8 +7567,8 @@ Wodanstr. (Franzˆsisch Buchholz): Asphalt	Q0 12216,21945 12162,21743
 (Pasewalker Str. - Einsiedelring): Verbundsteinpflaster	Q0- 12039,20538 11996,20545
 Straﬂe 171: Asphalt	Q0 12694,22570 12657,22596 12598,22605
 Borkumstr.: Kopfsteinpflaster	Q2 11259,17792 11275,17690
-Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0- 10819,18066 10907,18109 10938,18147 10989,18172 11132,18346
-Hadlichstr.: Asphalt	Q0 11132,18346 11001,18528
+Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0- 10815,18074 10900,18113 10970,18164 10993,18203 11123,18343
+Hadlichstr.: Asphalt	Q0 11123,18343 11001,18528
 Straﬂe 44 (Franzˆsisch Buchholz): Asphalt	Q0 12211,20486 12118,20557
 Straﬂe 42 (Franzˆsisch Buchholz): unbefestigte Straﬂe mit einigen Asphaltflicken	Q2 12211,20486 12274,20570 12222,20637
 Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12629,21083
@@ -8775,7 +8775,7 @@ Blockdammweg: Asphalt	Q0 17904,8924 17975,8971
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 14810,16282 14721,16360
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraﬂe zur Mandelstr.]: welliges Kleinsteinpflaster	Q2+ 12948,15771 12762,15882
 Parkstr.: Asphalt mit einigen leichten Sch‰den	Q0- 13788,16240 13972,16639
-Prenzlauer Promenade: Beton	Q0- 11950,18529 11934,18576 11980,18900 11940,19380 11953,19541 11942,19567 11915,19580
+Prenzlauer Promenade: Beton	Q0- 11950,18529 11934,18576 11980,18900 11958,19158 11940,19380 11953,19541 11942,19567 11915,19580
 (Dohnagestell - Tangastr.): Fahrbahn Kopfsteinpflaster, breiter Nebenstreifen als Parkweg	Q1- 5553,15271 5722,15332
 (Dohnagestell - Tangastr.): schlechtes Kopfsteinpflaster	Q3 5722,15332 5802,15399
 (Dohnagestell - Tangastr.): Parkweg, Schotter, Regenrinnen	Q2 5802,15399 5889,15457 5961,15562
@@ -9263,8 +9263,8 @@ Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 (Rasthof Dreilinden): Asphalt	Q0 -4003,1234 -3994,1170 -3642,1199 -3577,1148
 #: next_check_id: RATHAUSSTR-2014
 #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
-#: last_checked: 2014-03-03
-#: next_check: 2014-03-17
+#: last_checked: 2014-03-11
+#: check_frequency: 30d
 Spandauer Str.: m‰ﬂiger Asphalt im Bereich Kreuzung Rathaustr.	Q1 10431,12709 10601,12521 10644,12469
 #: next_check_id: INVALIDENSTRMOABIT-2014
 #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
@@ -9308,6 +9308,9 @@ Wˆrther Str.: Asphalt mit einigen Aufpflasterungen	Q1+ 11163,14548 10910,14488
 (Kleiner Tiergarten): leicht schadhafter Asphalt	Q1 6561,13151 6556,13240 6526,13327
 Schwarzwurzel-Park: Gehwegplatten	Q0- 20698,18359 20814,18341 20823,18329
 (Raoul-Wallenberg-Str. - Landsberger Allee): Betonplatten	Q1 20774,15850 20758,15851 20719,15755 20729,15743
+(Pasewalker Str. - Vesaliusstr.): Beton	Q0 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
+(Pasewalker Str. - Vesaliusstr.): Gehwegplatten	Q0- 11884,19169 11841,19188 11763,19191
+(Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11912,19279 11927,19308
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -10256,11 +10259,11 @@ Enkircher Str.: Asphalt	Q0 3314,25243 3460,25132 3485,25112 3518,25086 3550,2504
 Waldstr.: Kopfsteinpflaster, "Moabiter Kissen"	Q2 5384,13555 5390,13616 5417,13817 5443,14028
 #: note: laut ADFC-Karte "gut geeignet":
 #: confirmed_by: srt
-Vesaliusstr.: Asphalt	Q0 11805,19071 11748,19235 11698,19489
+Vesaliusstr.: Asphalt	Q0 11818,19089 11763,19191 11748,19235 11698,19489
 #: note: laut ADFC-Karte "gut geeignet":
 Stiftsweg: Asphalt	Q0 11001,18528 11268,18851
 #: note: laut ADFC-Karte "gut geeignet":
-Bleicheroder Str.: Asphalt	Q0 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11805,19071
+Bleicheroder Str.: Asphalt	Q0 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 #: note: "‡ la Linienstr."
 Paracelsusstr.: schlechter Asphalt	Q2+ 11523,19393 11575,19296 11543,19279 11549,19258 11599,19171
 #: corrected_by: srt (schlechter Asphalt -> ...)
@@ -15519,7 +15522,7 @@ T‰ubchenstr.: Asphalt	Q0 -862,4542 -947,4303
 # 
 #: by: Chris Stader:
 #: XXX wird die Qualit‰t nach den Bauarbeiten besser sein?
-#: last_checked: 2014-02-26
+#: last_checked: 2014-03-11
 Masurenstr.: m‰ﬂiger Asphalt	Q1 10880,17469 10670,17458
 # 
 #: by: Gudrun Feix: vvv

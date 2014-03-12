@@ -78,7 +78,24 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       undef,
+       {
+         'periodic' => 1,
+         'until' => 1397412000,
+         'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 12.04.2013 und 13.04.2013',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              11,
+                              'months',
+                              4
+                            ]
+                          ],
+         'from' => 1397203200,
+         'id' => 10,
+         'data' => 'userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
+'
+       },
        undef,
        undef,
        undef,
@@ -3423,8 +3440,8 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2498,
          'data' => '#: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-03-03
-#: next_check: 2014-03-10
+#: last_checked: 2014-03-11
+#: next_check: 2014-03-18
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'
@@ -3486,13 +3503,13 @@ userdel	2::inwork 10086,12725 10166,12777
        undef,
        {
          'source_id' => 'IM_020820',
-         'until' => 1401458400,
-         'text' => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Fahrbahn gesperrt, Fußgänger und Radfahrer können passieren, 02.12.2013 bis Ende Mai 2014',
+         'until' => 1451602799,
+         'text' => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Fahrbahn gesperrt, Fußgänger und Radfahrer können passieren, bis Ende 2015',
          'from' => 1385766000,
          'id' => 2527,
          'data' => '#: next_check_id: ZIMMERMANNSTRBR-2014
 #: last_checked: 2014-02-08
-#: next_check: 2014-05-31
+#: next_check: 2015-12-31
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 ',

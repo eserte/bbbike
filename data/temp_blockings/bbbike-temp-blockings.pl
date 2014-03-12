@@ -123,11 +123,11 @@ userdel	2 8993,16100 9059,16038
 userdel	2 9134,15953 9059,16038
 EOF
      },
-     { from  => $isodate2epoch->("2013-04-19 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-04-21 20:00:00"),
+     { from  => $isodate2epoch->("2014-04-11 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-04-13 20:00:00"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 11, months => 4]],
-       text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz. Dauer: 20.04.2013 10:00 bis 21.04.2013 20:00",
+       text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 12.04.2013 und 13.04.2013",
        data  => <<EOF,
 userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
 EOF
@@ -14556,7 +14556,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013029',
        data  => <<EOF,
-userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11001,18528
+userdel	q4::inwork; 11357,18598 11168,18542 11001,18528
 EOF
      },
      { from  => 1244930400, # 2009-06-14 00:00
@@ -16142,8 +16142,8 @@ EOF
 #: XXX nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden Radwege geben
 #: last_checked: 2010-07-11
 #: next_check: 2010-10-01
-userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10819,18066 10830,17985
-userdel	q4::inwork; 10819,18066 10907,18109 10938,18147 10989,18172 11132,18346 11001,18528
+userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10815,18074 10830,17985
+userdel	q4::inwork; 10815,18074 10900,18113 10970,18164 10993,18203 11123,18343 11001,18528
 EOF
      },
      { from  => undef, #
@@ -18398,11 +18398,11 @@ EOF
 	2::inwork 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7893,8327 7942,8380 8078,8772
 EOF
      },
-     { from  => $isodate2epoch->("2013-07-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-07-14 23:59:59"),
+     { from  => $isodate2epoch->("2013-07-04 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-07-06 23:59:59"),
        periodic => 1, # zweiter Termin im Jahr
        recurrences => [['yearly', days => 5, months => 7]], # kann auch erst im September stattfinden
-       text  => 'Rheinstraße (Friedenau): Veranstaltung (traditionelles Rheinstraßenfest), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (13. und 14. Juli 2013)',
+       text  => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (5. und 6. Juli 2014)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
@@ -18823,7 +18823,7 @@ EOF
        source_id => 'IM_018078',
        data  => <<EOF,
 #: next_check: 2012-05-15
-userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10819,18066 10830,17985
+userdel	q4::inwork; 10680,18380 10739,18262 10755,18231 10815,18074 10830,17985
 EOF
      },
      { from  => 1295721886, # 2011-01-22 19:44
@@ -20229,7 +20229,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018478',
        data  => <<EOF,
-userdel	q4::inwork; 11357,18598 11204,18545 11168,18542 11001,18528
+userdel	q4::inwork; 11357,18598 11168,18542 11001,18528
 EOF
      },
      { from  => undef, #
@@ -22049,8 +22049,8 @@ EOF
        data  => <<EOF,
 #: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-03-03
-#: next_check: 2014-03-10
+#: last_checked: 2014-03-11
+#: next_check: 2014-03-18
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
@@ -22327,14 +22327,14 @@ userdel	1::temp -13556,-1182 -13643,-1220
 EOF
      },
      { from  => 1385766000, # 2013-11-30 00:00
-       until => 1401458400, # 2014-05-30 16:00
-       text  => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Fahrbahn gesperrt, Fußgänger und Radfahrer können passieren, 02.12.2013 bis Ende Mai 2014',
+       until => $isodate2epoch->("2015-12-31 23:59:59"), # 1401458400, # 2014-05-30 16:00
+       text  => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Fahrbahn gesperrt, Fußgänger und Radfahrer können passieren, bis Ende 2015',
        type  => 'gesperrt',
        source_id => 'IM_020820',
        data  => <<EOF,
 #: next_check_id: ZIMMERMANNSTRBR-2014
 #: last_checked: 2014-02-08
-#: next_check: 2014-05-31
+#: next_check: 2015-12-31
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 EOF
