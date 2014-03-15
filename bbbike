@@ -21246,6 +21246,31 @@ sub set_fonts {
     }
 }
 
+sub find_font_by_height {
+    my($height) = @_;
+    my $best_match = [undef, undef];
+    for my $fontkey (keys %font) {
+	my %fa = $top->fontActual($font{$fontkey});
+	next if $fa{'-weight'} ne 'normal';
+	next if $fa{'-family'} eq $fixed_font_family;
+	my $height_diff = $height - size2px($fa{'-size'});
+	if ($height_diff > 0 &&
+	    (
+	     !defined $best_match->[0] ||
+	     $height_diff < $best_match->[1]
+	    )
+	   ) {
+	    $best_match = [$fontkey, $height_diff];
+	}
+    }
+    if (!defined $best_match->[0]) {
+	warn "Cannot find a suitable font for height $height, fallback to standard font...\n";
+        $font{'normal'};
+    } else {
+	$font{$best_match->[0]};
+    }
+}
+
 # Set image, if available, otherwise the fallback label
 sub image_or_text {
     my($image, $text) = @_;
