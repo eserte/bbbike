@@ -187,6 +187,7 @@ sub add_button {
     my $btn;
     $btn = $mf->Label
 	(-text => "Srt",
+	 -font => main::find_font_by_height(15), # match the icon size of symbol bar
 	);
     BBBikePlugin::replace_plugin_widget($mf, $btn, __PACKAGE__.'_on');
     $main::balloon->attach($btn, -msg => "SRT Shortcuts")
