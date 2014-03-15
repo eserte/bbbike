@@ -1371,8 +1371,10 @@ sub show_any_diff {
 				require File::Copy;
 				require POSIX;
 				my $today = POSIX::strftime("%Y%m%d", localtime);
+				my $archive_dir = "$vmz_lbvs_directory/archive";
+				mkdir $archive_dir if !-d $archive_dir;
 				my @copy = ("$vmz_lbvs_directory/newvmz.yaml",
-					    "$vmz_lbvs_directory/archive/newvmz-$today.yaml");
+					    "$archive_dir/newvmz-$today.yaml");
 				File::Copy::copy(@copy)
 					or main::status_message("Cannot copy @copy: $!", "warn");
 			    }
