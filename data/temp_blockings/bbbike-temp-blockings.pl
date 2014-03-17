@@ -14537,11 +14537,11 @@ EOF
 userdel	2::inwork 26001,-6257 26057,-6241 26146,-6218
 EOF
      },
-     { from  => $isodate2epoch->("2013-06-13 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-06-16 23:59:59"),
+     { from  => $isodate2epoch->("2014-06-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-06-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (14.6.2013 bis 16.6.2013)',
+       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (14.6.2014 - 15.6.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 22111,4562 22093,4499 22076,4422
@@ -22547,6 +22547,51 @@ EOF
        source_id => 'IM_021410',
        data  => <<EOF,
 userdel	q4::inwork 7373,14566 7314,14599
+EOF
+     },
+     { from  => 1394953200, # 2014-03-16 08:00
+       until => 1400860800, # 2014-05-23 18:00
+       text  => 'Eldenaer Str../Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Hermann-Blankenstein-Str. und Paul-Junlus-Str., gesperrt 17.03.2014 08:00 Uhr bis 23.05.2014 18:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_021474',
+       data  => <<EOF,
+userdel	q4::inwork; 14836,12826 14906,12837 14940,12843 15010,12855 15074,12850 15098,12849
+EOF
+     },
+     { from  => 1394604000, # 2014-03-12 07:00
+       until => 1395421200, # 2014-03-21 18:00
+       text  => 'Scharnweberstr. (Friedrichshain): Baustelle, Fahrbahn zwischen Müggelstr. und Jessnerstr. gesperrt, 13.03.2014 07:00 Uhr bis 21.03.2014 18:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_021449',
+       data  => <<EOF,
+userdel	q4::inwork 15080,11905 14965,11921
+EOF
+     },
+     { from  => 1394953200, # 2014-03-16 08:00
+       until => 1396627200, # 2014-04-04 18:00
+       text  => 'Suermondtstr.: Baustelle, Fahrbahn Richtung Hauptstr. zwischen Hedwigstr. und Konrad-Wolf-Str. gesperrt, 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_021477',
+       data  => <<EOF,
+userdel	q4::inwork; 16520,16200 16656,16157 16882,16072
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Siemensstr.: Umbau der Kreuzung Erna-Samuel-Str., Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wie sieht die Kreuzungssituation danach aus?
+#: last_checked: 2014-03-12
+userdel	q4::inwork 5443,14028 5299,14049
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Wühlischstr.: Bauarbeiten zwischen Gärtnerstr. und Seumestr. Richtung Osten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 14211,11552 14305,11514
 EOF
      },
     );

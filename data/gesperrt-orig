@@ -2508,9 +2508,7 @@ Am Zirkus: Einbahnstraße	1s:q4 9118,13070 9137,13032 9167,13046 9239,12923
 #: check_frequency: 60d
 (Weg am Stadtgarten Moabit): Bauarbeiten	2::inwork 5708,14077 5685,14215
 # 
-#: next_check_id: ERNASAMUEL-2014
-#: last_checked: 2014-03-07
-Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
+# REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2014-03-07 --- Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 # 
 #: next_check_id: HELLWEG-2014
 #: XXX: vom Hellweg-Parkplatz kann man einige Meter Richtung Norden passieren
@@ -2593,8 +2591,8 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
-#: osm_watch: way id="183406331" version="2"
-#: last_checked: 2014-01-17
+#: osm_watch: way id="183406331" version="3"
+#: last_checked: 2014-03-12
 #: check_frequency: 120d
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
@@ -2696,15 +2694,13 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 174
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2014-02-06 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2014-02-06
+#: next_check: 2014-03-17
 #: XXX wird man nach den Bauarbeiten direkt zur Eldenaer Str. fahren können (Kfz/Rad)?
 #: XXX Qualität im östlichen Abschnitt?
-#: osm_watch: way id="137941886" version="4"
+#: osm_watch: way id="137941886" version="5"
 An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14509,12819 14560,12808
 # REMOVED (nicht mehr gesperrt) --- #: XXX dieser Abschnitt wird wahrscheinlich offiziell eine Einbahnstraße, offen Richtung Westen sein --- #: XXX mittlerweile manchmal (oder immer?) passierbar --- Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536,12916 14588,12901 14682,12874
-#: check_frequency ^^^
-#: last_checked ^^^
 #
 # REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235

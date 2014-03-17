@@ -126,7 +126,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="15"
 #: osm_watch: way id="42732291" version="7"
-#: last_checked: 2014-01-17
+#: last_checked: 2014-03-12
 #: check_frequency: 60d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
@@ -232,12 +232,13 @@ Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,133
 Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837 -6429,14879 -6405,14971
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20140312.0920.395294.html (Bauarbeiten)
 #: osm_watch: way id="30949821" version="19"
 #: osm_watch: way id="122121575" version="11"
 #: osm_watch: way id="30218983" version="19"
 #: last_checked: 2013-09-19
-#: check_frequency: 180d
-Gartenfelder Str.: Radspuren für 2013 geplant	?::projected; -532,15184 -569,15167 -707,15108 -834,15053 -945,14999 -1099,14925 -1271,14843 -1307,14801 -1336,14786
+#: next_check: 2015-04-01
+Gartenfelder Str.: Radspur wird gebaut, Realisierung bis April 2015	?::inwork; -532,15184 -569,15167 -707,15108 -834,15053 -945,14999 -1099,14925 -1271,14843 -1307,14801 -1336,14786
 #: by: ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
@@ -370,6 +371,7 @@ Konrad-Wolf-Str.: wahrscheinlich Bau eines Radwegs	?::inwork; 15066,14579 15174,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: XXX Privatstraße
+#: XXX PLZ=12621
 #: XXX fehlt in Berlin.coords.data
 #: XXX mit Abzweig zur Kaulsdorfer Str.
 #: next_check: 2014-07-01
@@ -667,10 +669,15 @@ Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 
 #: next_check: 2014-05-01 vvv
 Planstraße 1: Qualität? Name?	?::projected 19842,9895 19853,9774 19857,9682
 Planstraße 2 (evtl. Römerweg?): Qualität etc?	?::projected 19663,9757 19853,9774
+#: XXX PLZ=10318
 Planstraße 3 -> Viechtacher Str.: Qualität etc?	?::projected 19660,9681 19732,9678 19801,9680 19857,9682 19893,9683
+#: XXX PLZ=10318
 Planstraße 4 -> Eisensteiner Str.: Qualität etc?	?::projected 19732,9678 19727,9484
+#: XXX PLZ=10318
 Planstraße 5 -> Rinchnacher Weg: Qualität etc?	?::projected 19801,9680 19797,9480
+#: XXX PLZ=10318
 Planstraße 6 -> Teisnacher Str.: Qualität etc?	?::projected 19857,9682 19849,9477
+#: XXX PLZ=10318
 Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19651,9489 19727,9484 19797,9480 19849,9477 19878,9477
 #: XXX Planstraße 8+10 -> Regener Str.
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
@@ -897,7 +904,7 @@ Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,131
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110224.1350.332744.html
 #: by: https://www.spd-fraktion-mitte.de/system/files/dateien/anfrage/2011-11/2726/ka-0012-iv.pdf (Abschluss Ende 2013)
 #: note: Planstraße im Block 902
-#: osm_watch: way id="182859952" version="10"
+# REMOVED --- : osm_watch: way id="182859952" version="10"
 #: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014)
 #: last_checked: 2014-03-07
 Erna-Samuel-Straße: werden hier noch Radstreifen erstellt?	?::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
@@ -1121,6 +1128,7 @@ Beilsteiner Str.: wird es hier für das neue Wohngebiet eine Erschließungsstraße 
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
 #: XXX Privatstraße
+#: XXX PLZ=12247
 #: XXX fehlt in Berlin.coords.data
 #: next_check: 2014-04-15
 In den Leonorengärten: existiert die Straße schon? Genaue Lage? Qualität?	?::inwork 6315,3974 6527,4089
@@ -1783,36 +1791,37 @@ Hadburgpfad: genaue Lage? Qualität? PLZ=10365	? 17484,12405 17531,12398
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2013 (Amtsblatt)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2014 (Nummerierung)
-# 1. Liliensteinweg
-# 2. Lampertssteinweg
-# 3. Quirlweg
-# 4. Papststeinweg
-# 5. Rauensteinweg
-# 6. Pfaffensteinweg
-# 7. Hohler-Stein-Weg
-# 8. Zirkelsteinweg
-# 9. Friensteinweg
-# 10. Rittersteinweg
-# 11. Rauschensteinweg
-# 12. Cupetiussteinweg
-# 13. Zschirnsteinweg
-# 14. Schrammsteinweg
-# 15. Lasensteinweg
-# 16. Kohlbornsteinweg
-# 17. Arnsteinweg
-# 18. Katzsteinweg
-# 19. Bernhardsteinweg
-# 20. Benediktsteinweg
-# 21. Affensteinweg
-# 22. Basteiweg
-# 23. Lorenzsteinweg
-# 24. Müllersteinweg
-# 25. Rotsteinweg
-# 26. Kleinsteinweg
-# 27. Altarsteinweg
-# 28. Luchssteinweg
-# 29. Pöhligsteinweg
-# 30. Brausensteinweg
+#: XXX PLZ=13158, soweit nicht anders angegeben
+# 1. Liliensteinweg oldname=Rollbergweg
+# 2. Lampertssteinweg oldname=Alfredweg
+# 3. Quirlweg oldname=Heinrichweg
+# 4. Papststeinweg oldname=Schrapeweg
+# 5. Rauensteinweg oldname=Maxweg oldname=Ottoweg
+# 6. Pfaffensteinweg oldname=Paulweg
+# 7. Hohler-Stein-Weg olname=Erichweg
+# 8. Zirkelsteinweg oldname=Adolfweg
+# 9. Friensteinweg oldname=Gustavweg
+# 10. Rittersteinweg oldname=Rosenweg oldname=Williweg
+# 11. Rauschensteinweg oldname=Weidenweg KGA Am Rollberg
+# 12. Cupetiussteinweg oldname=Bergeshöhe Nord/Süd
+# 13. Zschirnsteinweg oldname=Weg 9 KGA Schönwald
+# 14. Schrammsteinweg oldname=Weg 6 KGA Schönwald
+# 15. Lasensteinweg oldname=Weg 1 KGA Schönwald
+# 16. Kohlbornsteinweg oldname=Weg 10 KGA Schönwald
+# 17. Arnsteinweg oldname=Weg 5 KGA Schönwald
+# 18. Katzsteinweg oldname=Weg 11 KGA Schönwald
+# 19. Bernhardsteinweg oldname=Weg 4 KGA Schönwald
+# 20. Benediktsteinweg oldname=Weg 3 KGA Schönwald
+# 21. Affensteinweg oldname=Weg 2 KGA Schönwald
+# 22. Basteiweg oldname=Drosselweg
+# 23. Lorenzsteinweg oldname=Weg 8 KGA Schönwald
+# 24. Müllersteinweg oldname=Parallelweg
+# 25. Rotsteinweg oldname=Weg 7 KGA Schönwald
+# 26. Kleinsteinweg oldname=Weg 13 KGA Schönwald
+# 27. Altarsteinweg oldname=Weg 14 KGA Schönwald
+# 28. Luchssteinweg oldname=Weg 15 KGA Schönwald
+# 29. Pöhligsteinweg oldname=Wieselweg KGA Schönwald
+# 30. Brausensteinweg oldname=Weg 16 KGA Schönwald (?)
 #: osm_watch: way id="225014551" version="1"
 #: osm_watch: way id="42779047" version="5"
 #: last_checked: 2013-08-27 (noch keine Umbenennung)
@@ -1904,6 +1913,11 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: XXX evtl. wird dann auch die Fuß/Radverbindung Richtung Westen auch interessant...
 #: last_checked: 2014-03-08
 Straße in Bau: Straßenname, genaue Lage, Qualität?	?::inwork 19206,17458 19798,17263
+# 
+#: by: http://www.berlin.de/ba-neukoelln/verwaltung/bebauungsplaene/8-9bab.html
+#: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/8_9bab_pl.pdf?start&ts=1393408069&file=8_9bab_pl.pdf
+#: next_check: 2015-03-17
+neue Straßen im Zuge des Bebauungsplanes 8-9bab: genaue Lage, Qualität, Straßennamen?	?::projected 11348,3757 11464,3662
 # 
 #: ignore ^^^
 #: section ^^^
@@ -3547,6 +3561,7 @@ Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qu
 #: last_checked: 2013-05-10 (in Bau, aber ist es tatsächlich diese Straße?)
 #: next_check: 2013-08-10
 #: XXX vom Radweg aus kann man hier nicht abbiegen, man müsste auf der Fahrbahn fahren
+#: XXX PLZ=14469
 Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 # 
 # REMOVED (-> strassen-orig etc.) --- #: last_checked: 2012-08-17 --- #: next_check: 2012-12-17 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4045&options=4 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4045&options=4&date=20121124 --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Wannseebahnquerung.6474.0.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20121214.1335.379363.html (Eröffnung) --- #: XXX genaue Koordinaten? --- Ebersstr. - Park GASAG Nordspitze, Übergang über die Wannseebahn: Qualität? Nachts beleuchtet? Hat der Übergang einen Namen?	? 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
@@ -3714,3 +3729,5 @@ Urselweg [Wohngebiet]: existiert hier eine Straßenanbindung? Genaue Lage? Qualit
 #: XXX Richtung Süden unbefestigt
 Poetensteig (Woltersdorf): nur für Radfahrer/Fußgänger oder auch für Autos? Geht die Straße auch Richtung Norden weiter?	? 32294,6277 32306,6216 32333,6114
 Ahornallee (Woltersdorf): Qualität im mittleren und südlichen Abschnitt?	? 32630,6179 32623,6134 32601,5936 32588,5816 32583,5779 32573,5705 32560,5574
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2014 (Widmung)
+Rudolf-Leonhard-Str. - Blumberger Damm: Qualität des Rad/Gehweg?	? 21455,16330 21574,16547
