@@ -1569,7 +1569,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15912,13153
 	X 15850,14308
 	X 16314,14361
-	X 15580,14880
+	F 15562,14869
 # REMOVED (Fußgängerampel ist jetzt etwas weiter südwestlich) ---	X 16331,15486
 	X 17254,14451
 	X 17488,15766
@@ -2363,6 +2363,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 2629,7771
 	F 2524,7900
 	X 16119,15302
+#: note: Anforderungsampel
 	F 16263,15427
 	F 20173,18306
 	F -8603,6973
@@ -2604,6 +2605,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check ^^^
 #: valid ^^^
 #: next_check_id ^^^
+# 
+#: note: Anforderungsampel
+	F 14346,16241
 # 
 ################################################################################
 #: note: Potsdam vvv

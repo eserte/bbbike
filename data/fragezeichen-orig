@@ -361,8 +361,9 @@ Hauptstr. (Wilhelmsruh): Radstreifen?	?::projected 7672,19869 7711,19956 7748,20
 #: next_check: 2014-05-08
 Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected 20667,15721 20733,15657
 # 
-#: last_checked: 2014-03-04
-Konrad-Wolf-Str.: wahrscheinlich Bau eines Radwegs	?::inwork; 15066,14579 15174,14638
+#: last_checked: 2014-03-18
+#: next_check: 2014-04-01
+Konrad-Wolf-Str.: Bau eines asphaltierten Radwegs	?::inwork; 15066,14579 15174,14638 15272,14691
 # 
 # REMOVED (in handicap_s-orig aufgenommen) --- Mühsamstr.: Baustelle abfahren, genaue Position sowie Penalty abschätzen	?::inwork 13559,12779 13506,12752
 # 
@@ -700,7 +701,7 @@ Planstraße (evtl. 10): Name vielleicht auch Regener Str.? Qualität?	?::projected
 #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
 #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
 #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014
-#: last_checked: 2014-02-23
+#: last_checked: 2014-03-18
 #: next_check: 2014-11-30
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16476,16216 16458,16104 16493,15983 16563,15900
 # 
@@ -718,7 +719,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
-#: last_checked: 2014-02-23
+#: last_checked: 2014-03-18
 #: check_frequency: 120d
 #: priority: #C
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
@@ -990,18 +991,10 @@ Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294
 Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4314 29754,4398 29728,4435 29714,4461
 # 
 # REMOVED (so gut wie fertig, am 2013-06-24 hat noch ein kleines Stück gefehlt) --- #: last_checked: 2013-06-05 vvv --- #: next_check: 2013-06-19 vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv --- #: source_id: INKO_117706 vvv --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15066,14579 --- #: XXX Richtung Süden wird es wohl ein Gehwegradweg fehlen (fehlt nur noch der Asphalt), Richtung Norden ist fertig --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15066,14579 15110,14486 15164,14392 --- #: source_id ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
-# 
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html
-#: XXX Baumaßnahme 11.46 (Realisierung in 2011)
-#: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012)
-#: osm_watch: way id="22044872" version="10"
-#: osm_watch: way id="22045147" version="18"
-#: last_checked: 2014-02-14
-Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 15866,16393 15843,16399 15771,16417 15432,16500
+# REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html --- #: XXX Baumaßnahme 11.46 (Realisierung in 2011) --- #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012) --- #: osm_watch: way id="22044872" version="10" --- #: osm_watch: way id="22045147" version="18" --- #: last_checked: 2014-02-14 --- Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 15866,16393 15843,16399 15771,16417 15432,16500
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
-#: last_checked: 2014-03-04
+#: last_checked: 2014-03-18
 #: check_frequency: 90d
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 

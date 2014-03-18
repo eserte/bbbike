@@ -1926,7 +1926,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 13512,15909 13623,15954 13737,15994 13826,16026 14014,16106 14045,16120 14248,16202 14371,16252
+userdel	q4; 13512,15909 13623,15954 13737,15994 13826,16026 14014,16106 14045,16120 14248,16202 14346,16241
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55
@@ -4519,7 +4519,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002776',
        data  => <<EOF,
-userdel	1 15388,16502 15142,16499 15134,16499 14809,16525 14619,16551
+userdel	1 15142,16499 15134,16499 14809,16525 14619,16551
 EOF
      },
      { from  => 1147721063, # 2006-05-15 21:24
@@ -5184,7 +5184,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84063',
        data  => <<EOF,
-userdel	1::inwork 14619,16551 14809,16525 15134,16499 15142,16499 15388,16502
+userdel	1::inwork 14619,16551 14809,16525 15134,16499 15142,16499
 EOF
      },
      { from  => 1152566231, # 2006-07-10 23:17
@@ -5633,7 +5633,7 @@ EOF
        text  => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 14619,16551 14809,16525 15134,16499 15142,16499 15388,16502 15432,16500
+userdel	1::inwork 14619,16551 14809,16525 15134,16499 15142,16499 15432,16500
 EOF
      },
      { from  => 1156478400, # 2006-08-25 06:00
@@ -19801,7 +19801,7 @@ EOF
        text  => 'Berliner Allee (Weißensee): Veranstaltung (Blumenfest Weißensee), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 9.8.2013 bis 11.8.2013',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp; 14499,16341 14371,16252 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
+userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
 EOF
      },
      { from  => 1313913600, # 2011-08-21 10:00
@@ -22551,11 +22551,11 @@ EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
        until => 1400860800, # 2014-05-23 18:00
-       text  => 'Eldenaer Str../Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Hermann-Blankenstein-Str. und Paul-Junlus-Str., gesperrt 17.03.2014 08:00 Uhr bis 23.05.2014 18:00 Uhr ',
+       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Eldenaer Brücke und Paul-Junius-Str., gesperrt 17.03.2014 08:00 Uhr bis 23.05.2014 18:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_021474',
        data  => <<EOF,
-userdel	q4::inwork; 14836,12826 14906,12837 14940,12843 15010,12855 15074,12850 15098,12849
+userdel	q4::inwork; 15010,12855 15074,12850 15098,12849
 EOF
      },
      { from  => 1394604000, # 2014-03-12 07:00
@@ -22569,11 +22569,13 @@ EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
        until => 1396627200, # 2014-04-04 18:00
-       text  => 'Suermondtstr.: Baustelle, Fahrbahn Richtung Hauptstr. zwischen Hedwigstr. und Konrad-Wolf-Str. gesperrt, 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
+       text  => 'Suermondtstr.: Baustelle, an der Kreuzung Degnerstr., Radfahrer dürfen über den Gehweg fahren, sowie Einbahnstraßenregelung in der Degnerstr. und Hedwigstr., 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_021477',
        data  => <<EOF,
-userdel	q4::inwork; 16520,16200 16656,16157 16882,16072
+userdel	q2::inwork; 16520,16200 16656,16157
+userdel	q2::inwork 16656,16157 16616,16046
+userdel	q4::inwork; 16537,15827 16563,15900 16616,16046 16505,16096 16520,16200
 EOF
      },
      { from  => undef, # 
@@ -22592,6 +22594,17 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork; 14211,11552 14305,11514
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Gudvanger Str.: Bauarbeiten zwischen Wichertstr. und Erich-Weinert-Str., Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX bis wann?
+#: last_checked: 2014-03-18
+#: next_check: 2014-04-01
+userdel	q4::inwork 11673,16003 11567,15842
 EOF
      },
     );

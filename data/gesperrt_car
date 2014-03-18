@@ -493,7 +493,7 @@ Trojanstr. -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16290,7160 16353,72
 Köpenicker Landstr. -> Trojanstr.: Mittelstreifen	3::igndisp 16428,7144 16353,7226 16290,7160
 Lakegrund -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16368,7425 16195,7398 16353,7226
 Köpenicker Landstr. -> Lakegrund: Mittelstreifen	3::igndisp 15920,7697 16195,7398 16368,7425
-Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15142,16499 15388,16502
+Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15142,16499
 Sulzfelder Str. -> Buschallee: Straßenbahntrasse	3::igndisp 15120,16349 15134,16499 14809,16525
 Buschallee -> Sulzfelder Str.: Straßenbahntrasse	3::igndisp 15142,16499 15134,16499 15120,16349
 Mittelstreifen	3nocross::ignrte 24824,11256 24893,11252 25138,11215
@@ -640,9 +640,9 @@ Neumannstr. -> Jenny-Lind-Str.: Mittelstreifen	3::igndisp 11508,17315 11522,1724
 Jenny-Lind-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11645,17271 11522,17248 11541,17153
 Neumannstr. -> Greta-Garbo-Str.: Mittelstreifen	3::igndisp 11522,17248 11508,17315 11353,17288
 Greta-Garbo-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11353,17288 11508,17315 11482,17459
-Straßenbahn	3nocross::ignrte 14045,16120 14248,16202 14371,16252
+Straßenbahn	3nocross::ignrte 14045,16120 14248,16202 14346,16241
 Lindenallee -> Berliner Allee: Straßenbahn	3::igndisp 14293,16073 14248,16202 14045,16120
-Berliner Allee -> Lindenallee: Straßenbahn	3::igndisp 14371,16252 14248,16202 14293,16073
+Berliner Allee -> Lindenallee: Straßenbahn	3::igndisp 14346,16241 14248,16202 14293,16073
 Straßenbahn	3nocross::ignrte 13401,15821 13432,15843 13487,15888 13512,15909
 Streustr. -> Berliner Allee: Straßenbahn	3::igndisp 13263,15930 13432,15843 13487,15888
 Berliner Allee -> Streustr.: Straßenbahn	3::igndisp 13401,15821 13432,15843 13263,15930
@@ -1152,7 +1152,7 @@ Theodorstr.: Poller	3 24916,10539 24921,10705 24928,10737
 Theodorstr.: Poller	3 24928,10737 24921,10705 24916,10539
 Anzengruberstr.	1 13042,8395 12865,8346
 Holtzendorffstr.	1 3049,11015 3082,11090
-Hansa -> Buschallee	3 15187,16185 15432,16500 15388,16502
+Hansa -> Buschallee	3 15187,16185 15432,16500 15142,16499
 Poller	3 8588,13673 8594,13637 8601,13580
 Poller	3 8601,13580 8594,13637 8588,13673
 Mittelstreifen	3nocross::ignrte 11888,9189 11803,9390 11785,9437

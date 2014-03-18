@@ -3676,10 +3676,10 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
        {
          'source_id' => 'IM_021474',
          'until' => 1400860800,
-         'text' => 'Eldenaer Str../Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Hermann-Blankenstein-Str. und Paul-Junlus-Str., gesperrt 17.03.2014 08:00 Uhr bis 23.05.2014 18:00 Uhr ',
+         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Eldenaer Brücke und Paul-Junius-Str., gesperrt 17.03.2014 08:00 Uhr bis 23.05.2014 18:00 Uhr ',
          'from' => 1394953200,
          'id' => 2549,
-         'data' => 'userdel	q4::inwork; 14836,12826 14906,12837 14940,12843 15010,12855 15074,12850 15098,12849
+         'data' => 'userdel	q4::inwork; 15010,12855 15074,12850 15098,12849
 ',
          'type' => 'handicap'
        },
@@ -3696,10 +3696,12 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
        {
          'source_id' => 'IM_021477',
          'until' => 1396627200,
-         'text' => 'Suermondtstr.: Baustelle, Fahrbahn Richtung Hauptstr. zwischen Hedwigstr. und Konrad-Wolf-Str. gesperrt, 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
+         'text' => 'Suermondtstr.: Baustelle, an der Kreuzung Degnerstr., Radfahrer dürfen über den Gehweg fahren, sowie Einbahnstraßenregelung in der Degnerstr. und Hedwigstr., 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
          'from' => 1394953200,
          'id' => 2551,
-         'data' => 'userdel	q4::inwork; 16520,16200 16656,16157 16882,16072
+         'data' => 'userdel	q2::inwork; 16520,16200 16656,16157
+userdel	q2::inwork 16656,16157 16616,16046
+userdel	q4::inwork; 16537,15827 16563,15900 16616,16046 16505,16096 16520,16200
 ',
          'type' => 'handicap'
        },
@@ -3720,6 +3722,18 @@ userdel	q4::inwork 5443,14028 5299,14049
          'from' => undef,
          'id' => 2553,
          'data' => 'userdel	q4::inwork; 14211,11552 14305,11514
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Gudvanger Str.: Bauarbeiten zwischen Wichertstr. und Erich-Weinert-Str., Fahrbahn gesperrt',
+         'from' => undef,
+         'id' => 2554,
+         'data' => '#: XXX bis wann?
+#: last_checked: 2014-03-18
+#: next_check: 2014-04-01
+userdel	q4::inwork 11673,16003 11567,15842
 ',
          'type' => 'handicap'
        }
