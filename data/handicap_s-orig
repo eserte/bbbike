@@ -12,7 +12,7 @@
 # 
 #: source_id: IM_021244 vvv
 #: valid: -20140320 vvv
-#: last_checked: 2014-03-18 vvv
+#: last_checked: 2014-03-19 vvv
 #: next_check: 2014-04-15 vvv
 Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651
 Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 13467,11778
@@ -145,7 +145,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-02-27
+#: last_checked: 2014-03-19
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -202,20 +202,19 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # REMOVED (eigentlich gut zu befahren) --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14513,11075 14442,11101
 # REMOVED --- #: last_checked: 2013-06-17 --- #: next_check: 2013-06-20 --- #: priority: #A --- Bernhard-Weiß-Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q3::inwork 11191,13080 11235,13143 11291,13218
 # 
-#: next_check_id: RATHAUSSTR-2014 vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-03-11
+#: last_checked: 2014-03-19
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
+#: next_check_id: SPANDAUERSTR-2014
 #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
 #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig
-#: last_checked: 2014-03-11
-#: check_frequency: 30d
+#: last_checked: 2014-03-19
+#: check_frequency: 7d
 #: priority: #A
 Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
-#: next_check_id ^^^
 # 
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
@@ -227,11 +226,9 @@ Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,1250
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html (Ende der Baumaßnahme im April 2014)
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 #: next_check_id: FRIEDRICHSBRUECKE-2014 vvv
-#: last_checked: 2014-03-11 vvv
-#: next_check: 2014-03-18 vvv
+#: last_checked: 2014-03-19 vvv
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
-#: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -855,8 +852,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
 #: osm_watch: way id="4610599" version="14"
-#: last_checked: 2014-03-11
-#: next_check: 2014-03-18
+#: last_checked: 2014-03-19
 Friedrichsbrücke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346

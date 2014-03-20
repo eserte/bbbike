@@ -3456,13 +3456,12 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html',
          'until' => undef,
-         'text' => 'Friedrichsbrücke: ab dem 8.1.2014 ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt, Ende unbekannt',
+         'text' => 'Friedrichsbrücke: ab dem 8.1.2014 ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt, Ende der Sperrung unbekannt',
          'from' => 1389135600,
          'id' => 2498,
          'data' => '#: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-03-11
-#: next_check: 2014-03-18
+#: last_checked: 2014-03-19
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'
@@ -3731,9 +3730,9 @@ userdel	q4::inwork 5443,14028 5299,14049
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
-#: last_checked: 2014-03-18
+#: last_checked: 2014-03-19
 #: next_check: 2014-04-01
-userdel	q4::inwork 11673,16003 11567,15842
+userdel	q3::inwork 11673,16003 11567,15842
 ',
          'type' => 'handicap'
        }

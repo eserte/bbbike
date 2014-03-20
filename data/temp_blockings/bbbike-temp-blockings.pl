@@ -22043,14 +22043,13 @@ EOF
      },
      { from  => $isodate2epoch->("2014-01-08 00:00:00"), # 1381651200, # 2013-10-13 10:00
        until => undef, # $isodate2epoch->("2014-02-28 23:59:59"), # 1382133600, # 2013-10-19 00:00
-       text  => 'Friedrichsbrücke: ab dem 8.1.2014 ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt, Ende unbekannt',
+       text  => 'Friedrichsbrücke: ab dem 8.1.2014 ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html',
        data  => <<EOF,
 #: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-03-11
-#: next_check: 2014-03-18
+#: last_checked: 2014-03-19
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
@@ -22602,9 +22601,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann?
-#: last_checked: 2014-03-18
+#: last_checked: 2014-03-19
 #: next_check: 2014-04-01
-userdel	q4::inwork 11673,16003 11567,15842
+userdel	q3::inwork 11673,16003 11567,15842
 EOF
      },
     );
