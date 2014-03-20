@@ -83,7 +83,7 @@ sub run {
 
     my $filename = param("gpxfile");
     if (defined $filename) {
-	(my $ext = $filename) =~ s{^.*\.}{.};
+	(my $exts = $filename) =~ s{^.*?\.}{.}; # preserve e.g. .gpx or .trk.gz
 	require Strassen::Core;
 	require File::Temp;
 	my $fh = upload("gpxfile");
@@ -91,7 +91,7 @@ sub run {
 	    $self->{errormessageupload} = "Upload-Datei fehlt!";
 	} else {
 	    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
-						       SUFFIX => $ext);
+						       SUFFIX => $exts);
 	    while (<$fh>) {
 		print $tmpfh $_;
 	    }
