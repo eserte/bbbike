@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2014 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storabl
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = '1.96';
+$VERSION = '1.97';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -88,7 +88,7 @@ sub new {
 	} elsif ($filename =~ /\.e00$/i) {
 	    require Strassen::E00;
 	    return Strassen::E00->new($filename, %args);
-	} elsif ($filename =~ /\.(wpt|trk|rte)$/) {
+	} elsif ($filename =~ /\.(wpt|trk|rte)(?:\.gz)?$/) {
 	    require Strassen::Gpsman;
 	    return Strassen::Gpsman->new($filename, %args);
 	} elsif ($filename =~ /waypoint\.txt$/) {

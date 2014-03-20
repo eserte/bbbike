@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2005,2007,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2005,2007,2010,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = 1.70;
+$VERSION = 1.71;
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -1111,9 +1111,25 @@ sub load {
     my $buf = <$F>;
     close $F;
 
+    if ($buf =~ m{^\x1f\x8b}) {
+	$self->_gunzip(\$buf);
+    }
+
     $self->parse($buf);
     $self->File($file);
     1;
+}
+
+sub _gunzip {
+    my($self, $bufref) = @_;
+    my $out;
+    require IO::Uncompress::Gunzip;
+    IO::Uncompress::Gunzip::gunzip($bufref => \$out)
+        or do {
+	    no warnings 'once';
+	    die "Cannot gunzip file: " . $IO::Uncompress::Gunzip::GunzipError;
+	};
+    $$bufref = $out;
 }
 
 sub reload {

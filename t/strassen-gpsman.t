@@ -39,7 +39,7 @@ sub load_from_string_and_check ($$);
 
 my $tests_with_data = 7; # in my private directory
 my $test_do_all = 1;
-my $tests = $tests_with_data + $test_do_all + 43;
+my $tests = $tests_with_data + $test_do_all + 7 + 4*12;
 plan tests => $tests + $have_nowarnings;
 
 my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
@@ -215,7 +215,7 @@ EOF
     is_deeply $s->get_directives(2), { time => [1119074619] };
 }
 
-# 9 tests
+# 12 tests
 sub load_from_string_and_check ($$) {
     my($data, $type) = @_;
 
@@ -241,6 +241,27 @@ sub load_from_string_and_check ($$) {
 	isa_ok $s_file, "Strassen::Gpsman";
 	is_deeply $s_file->data, $s->data, "Loading $type with magic check in factory method";
 	is "@{[ $s_file->dependent_files ]}", $tmpfile;
+    }
+
+ SKIP: {
+	skip "Compress not possible: $@", 3
+	    if !eval { require IO::Compress::Gzip; 1 };
+
+	my($gzfh,$gzfile) = tempfile(SUFFIX => '.'.$type.'.gz', UNLINK => 1)
+	    or die $!;
+	IO::Compress::Gzip::gzip($tmpfile => $gzfile)
+		or do {
+		    no warnings 'once';
+		    die "gzip failed: $IO::Compress::Gzip::GzipError";
+		};
+
+    {
+	my $gz_file = Strassen->new($gzfile);
+	isa_ok $gz_file, "Strassen::Gpsman";
+	is_deeply $gz_file->data, $s->data, "Loading $type (gzipped) with magic check in factory method";
+	is "@{[ $gz_file->dependent_files ]}", $gzfile;
+    }
+	
     }
 
     $s;
