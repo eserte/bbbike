@@ -1416,7 +1416,7 @@ EOF
     }
     $html .= <<EOF;
   <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
-  Upload einer GPX-Datei: <input type="file" name="gpxfile" /><button>Zeigen</button>
+  Upload einer GPX-Datei: <input type="file" name="gpxfile" onchange="this.form.submit()"/>
 </form>
 
 </div>
