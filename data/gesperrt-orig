@@ -1319,6 +1319,7 @@ Ritterstr.	1 -3360,14525 -3316,14504
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Yorckstr.: Geländer, Überqueren nicht möglich	3nocross 8595,9495 8358,9568 8192,9619
 Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2016,11034 2116,11288 2109,11441
 Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
 Cecilienstr.: Mittelstreifen	3nocross 21831,13801 21853,13784 21918,13720
@@ -2164,6 +2165,9 @@ Schranke (lichte Breite ca. 90cm)	BNP:4::trailer=15 11091,1529
 Tor	BNP:10::trailer=15 1707,1256
 #: by: MG
 Schranke	BNP:1::trailer=3 21514,11796
+Drängelgitter	BNP:3::trailer=10 8359,9537
+Drängelgitter	BNP:3::trailer=10 8354,9504
+Drängelgitter	BNP:3::trailer=10 8350,9461
 #: note: verschwenkbar
 Drängelgitter	BNP:3::trailer=10 8236,10623
 Drängelgitter	BNP:3::trailer=10 8199,10424
@@ -2696,8 +2700,8 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 174
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
-#: last_checked: 2014-02-06
-#: next_check: 2014-03-17
+#: last_checked: 2014-03-21
+#: check_frequency: 7d
 #: XXX wird man nach den Bauarbeiten direkt zur Eldenaer Str. fahren können (Kfz/Rad)?
 #: XXX Qualität im östlichen Abschnitt?
 #: osm_watch: way id="137941886" version="5"

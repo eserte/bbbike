@@ -3673,16 +3673,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_021449',
-         'until' => 1395421200,
-         'text' => 'Scharnweberstr. (Friedrichshain): Baustelle, Fahrbahn zwischen Müggelstr. und Jessnerstr. gesperrt, 13.03.2014 07:00 Uhr bis 21.03.2014 18:00 Uhr ',
-         'from' => 1394604000,
-         'id' => 2550,
-         'data' => 'userdel	q4::inwork 15080,11905 14965,11921
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_021477',
          'until' => 1396627200,
@@ -3706,22 +3697,14 @@ userdel	q4::inwork 5443,14028 5299,14049
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Wühlischstr.: Bauarbeiten zwischen Gärtnerstr. und Seumestr. Richtung Osten, Fahrbahn gesperrt',
-         'from' => undef,
-         'id' => 2553,
-         'data' => 'userdel	q4::inwork; 14211,11552 14305,11514
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Gudvanger Str.: Bauarbeiten zwischen Wichertstr. und Erich-Weinert-Str., Fahrbahn gesperrt',
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
-#: last_checked: 2014-03-19
+#: last_checked: 2014-03-21
 #: next_check: 2014-04-01
 userdel	q3::inwork 11673,16003 11567,15842
 ',

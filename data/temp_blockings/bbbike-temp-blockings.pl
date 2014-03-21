@@ -22588,7 +22588,7 @@ userdel	q4::inwork 5443,14028 5299,14049
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1395433768, # undef, # XXX
        text  => 'Wühlischstr.: Bauarbeiten zwischen Gärtnerstr. und Seumestr. Richtung Osten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
@@ -22601,7 +22601,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann?
-#: last_checked: 2014-03-19
+#: last_checked: 2014-03-21
 #: next_check: 2014-04-01
 userdel	q3::inwork 11673,16003 11567,15842
 EOF

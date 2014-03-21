@@ -316,8 +316,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11160,13492
 #: XXX Ampelanlange wird umgebaut (Richtung Kreuzung)
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20120514.1415.370100.html
-#: last_checked: 2014-03-11
-#: next_check: 2014-08-28
+#: last_checked: 2014-03-21
+#: check_frequency: 180d
 	F 10511,14418
 	X 10002,14092
 	X 9800,14722
@@ -1890,6 +1890,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	B0 8571,9896
 	B0 8497,9654
 	B0 8477,9562
+	B0 8353,9072
 	B0 13928,7106
 	F 6276,10401
 	F 8985,13034
@@ -2459,7 +2460,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2014-02-10 vvv
+#: last_checked: 2014-03-21 vvv
 #: next_check: 2014-12-31 vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886

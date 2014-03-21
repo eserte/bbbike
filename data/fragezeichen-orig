@@ -355,6 +355,8 @@ Hauptstr. (Wilhelmsruh): Radstreifen?	?::projected 7672,19869 7711,19956 7748,20
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
+Hermann-Blankenstein-Str.: gibt's hier eine abknickende Vorfahrt?	? 13869,13529 13945,13564 14052,13389
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2014
 #: XXX Fertigstellung des Radwegs?
 #: last_checked: 2014-03-08
@@ -548,14 +550,15 @@ Rad- und Gehwegverbindung geplant: Qualit‰t? Name des Weges? Beleuchtet?	? 24899
 #: by: ^^^
 #: by: ^^^
 # 
+#: next_check_id: AMLOKDEPOT-2014
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036234258287/234258287/00057951/51-Anlagen/03/Anlage1zumDV_130510_-DUD-VHB-001-LP.PDF
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4531
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 (Erˆffnungstermin)
 #: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen?
 #: XXX gehˆrt zu Tempelhof-Schˆneberg
-#: last_checked: 2014-02-05 (nur die ersten Meter existieren an der Monumentenstr.)
+#: last_checked: 2014-03-21
 #: priority: #A
-Am Lokdepot: Bau einer Erschlieﬂungsstraﬂe	?::inwork 8390,8879 8389,9087
+Am Lokdepot: werden die beiden Teilst¸cke miteinander verbunden?	?::inwork 8390,8879 8389,9017
 # 
 # REMOVED (keine interessante Radverbindung --- wassergebundene Decke, unbeleuchtet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4997.html (fertiggestellt) --- #: last_checked: 2013-05-29 --- #: next_check: 2013-06-26 --- Gr¸nanlage an der Teilestr.: Parkwege entstehen, evtl. eine lohnende Abk¸rzung, Qualit‰t, nachts beleuchtet?	?::inwork 11068,6006 11056,5861 11146,5851 11277,5988
 # 
@@ -705,7 +708,7 @@ Planstraﬂe (evtl. 10): Name vielleicht auch Regener Str.? Qualit‰t?	?::projected
 #: next_check: 2014-11-30
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16476,16216 16458,16104 16493,15983 16563,15900
 # 
-#: last_checked: 2014-03-07
+#: last_checked: 2014-03-21
 #: check_frequency: 120d
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verl‰ngert?	? 8632,11912 8783,11959
 # 
@@ -823,18 +826,24 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues 
 #: XXX ^^^
 #: by: ^^^
 # 
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html
-#: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Br¸cke)
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619&date=20130910 (Antwort)
-#: last_checked: 2014-03-07 (s¸dliche Rampe noch in Bau) vvv
-#: check_frequency: 30d vvv
-#: osm_watch: way id="187902666" version="2"
-Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert, asphaltiert	?::projected 8333,9583 8338,9443 8388,9242 8373,9022 8389,9087
-#: by: http://gleisdreieck-blog.de/wordpress/wp-content/uploads/eingang-yorck-collignon.jpg
-Eingang zum Flaschenhalspark: betoniert, wahrscheinlich auch mit Dr‰ngelgittern?	?::projected 8358,9568 8338,9443
-#: check_frequency ^^^
-#: last_checked ^^^
+#: XXX brunnels!
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5207.html ("nahe Zukunft")
+#: last_checked: 2014-03-21
+#: check_frequency: 60d
+Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr., Br¸cke ¸ber die Yorckstr.: wann wird hier realisiert?	?::projected 8338,9593 8339,9560
+# 
+#: XXX brunnels!
+#: last_checked: 2014-03-21
+#: check_frequency: 60d
+Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Br¸cke ¸ber die Yorckstr. realisiert?	?::projected 8426,9572 8423,9532
+# 
+#: XXX Bauarbeiten beginnen Ende April 2014
+#: XXX zumindest den "Platznamen" aufnehmen
+#: last_checked: 2014-03-21
+Monumentenplatz	?::projected 8353,9072 8332,9059
+# 
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html --- #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/ --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Br¸cke) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619&date=20130910 (Antwort) --- #: last_checked: 2014-03-07 (s¸dliche Rampe noch in Bau) vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="187902666" version="2" --- Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert, asphaltiert	?::projected 8339,9560 8339,9448 8374,9291 8381,9247 8334,9085 8353,9072 8367,9006 8374,9074 8389,9087
+# REMOVED (realisiert) --- #: by: http://gleisdreieck-blog.de/wordpress/wp-content/uploads/eingang-yorck-collignon.jpg --- Eingang zum Flaschenhalspark: betoniert, wahrscheinlich auch mit Dr‰ngelgittern?	?::projected 8358,9568 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Noerdl-Teilstueck-a.5712.0.html
 #: osm_watch: way id="251945928" version="1"
@@ -894,8 +903,8 @@ Weidenanger: Qualit‰t?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: XXX Privatstraﬂe
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
 #: osm_watch: way id="137340264" version="6"
-#: last_checked: 2014-02-06
-#: check_frequency: 90d
+#: last_checked: 2014-03-21
+#: check_frequency: 7d
 Edith-Stein-Str.: Qualit‰t nach den Bauarbeiten?	?::inwork 14089,13247 14035,13104
 # 
 # REMOVED (-> strassen-orig etc.) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: XXX siehe auch Eintrag f¸r "Am Langen Jammer" in gesperrt-orig --- #: last_checked: 2012-10-26 vvv --- #: next_check: 2012-12-01 vvv --- An den Eldenaer Hˆfen: wo genau wird die Straﬂe liegen? Qualit‰t?	?::inwork 14376,12849 14449,12833 14594,12800 --- An den Eldenaer Hˆfen: wo genau wird die Straﬂe liegen? Qualit‰t?	?::inwork 14449,12833 14480,12932 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -1307,7 +1316,8 @@ Am Gutspark: neue geplante Privatstraﬂe, Lage, Qualit‰t?	?::projected 15747,1288
 # REMOVED (abgelehnt, siehe Schlussbericht) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458 --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036560602837/560602837/00092292/92-Anlagen/04/B0359SB.pdf (Schlussbericht) --- #: last_checked: 2013-06-22 --- #: check_frequency: 90d --- Brandenburgplatz: wird hier eine Fuﬂg‰ngerampel eingerichtet?	? 23363,5714 23309,5704
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656
-#: next_check: 2014-03-15
+#: last_checked: 2014-04-21
+#: check_frequency: 180d
 Greifenhagener Str.: evtl. wird hier eine Fuﬂg‰ngerzone entstehen	? 11123,15851 11150,15908
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
@@ -1871,12 +1881,13 @@ Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Pla
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straﬂenname)
 #: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/4508103642561748/42561748/00111971/71-Anlagen/03/4_Version_vom_30_12_2013.pdf (weitere Vorschl‰ge)
 #: by: http://www.fatkoehl.com/index.php?article_id=31
-#: XXX gibt noch zwei weitere Alternativen: Kate-K¸hl-Straﬂe und Alisa-Fuss-Straﬂe
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2014
+#: XXX es gab noch zwei weitere Alternativen: Kate-K¸hl-Straﬂe und Alisa-Fuss-Straﬂe
 #: XXX fehlt in Berlin.coords.data
 #: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein
 #: last_checked: 2013-12-23 (zur Zeit nur eine Baustraﬂe)
 #: next_check: 2014-05-23
-neue Stichstraﬂe: neuer Name wird wahrscheinlich Wilhelmine-Gemberg-Straﬂe sein, Lage, Qualit‰t?	?::inwork 11707,11526 11769,11683
+Wilhelmine-Gemberg-Str.: genaue Lage, Qualit‰t?	?::inwork 11707,11526 11769,11683
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 #: XXX Straﬂenbenennungen in Potsdam-Fahrland

@@ -58,13 +58,10 @@ M¸hsamstr.: Bauarbeiten in Hˆhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # 
 #: XXX Ende der Bauarbeiten?
 #: XXX_prog: zu eng f¸r Anh‰nger
-#: last_checked: 2014-03-07
+#: last_checked: 2014-03-21
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
-#: XXX Ende der Bauarbeiten?
-#: last_checked: 2014-02-22
-Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
-# 
+# REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 # REMOVED --- #: last_checked: 2013-06-04 --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
 # 
@@ -1925,6 +1922,8 @@ Schwarzwurzel-Park: Bordstein, Fuﬂg‰nger, Spielplatz	q3 20698,18359 20814,18341 
 (Pasewalker Str. - Vesaliusstr.): Rampe, Straﬂenbahnquerung	q3 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
 (Pasewalker Str. - Vesaliusstr.): Fuﬂg‰nger	q2 11884,19169 11841,19188 11763,19191
 (Pasewalker Str. - Prenzlauer Promenade): Fuﬂg‰nger	q4 11913,19144 11928,19133 11947,19161 11958,19158
+(Flaschenhalspark, Weg entlang den Bahngleisen): einige Fuﬂg‰nger	q1 8423,9532 8414,9366 8393,9293 8374,9291
+(Flaschenhalspark, Zugang): Rampe	q2 8353,9072 8367,9006 8374,9074
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
