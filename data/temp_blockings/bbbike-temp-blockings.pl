@@ -22531,7 +22531,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
 EOF
      },
      { from  => 1394233200, # 2014-03-08 00:00
-       until => 1396303199, # 2014-03-31 23:59
+       until => 1395350761, # 1396303199, # 2014-03-31 23:59
        text  => 'Ehrlichstr. Richtung Treskowallee zwischen Eginhardstr. und Treskowallee: Baustelle, Fahrbahn gesperrt, ab 10.03.2014 bis Ende März 2014',
        type  => 'handicap',
        source_id => 'IM_021400',
@@ -22604,6 +22604,24 @@ EOF
 #: last_checked: 2014-03-19
 #: next_check: 2014-04-01
 userdel	q3::inwork 11673,16003 11567,15842
+EOF
+     },
+     { from  => 1395615600, # 2014-03-24 00:00
+       until => 1405720799, # 2014-07-18 23:59
+       text  => 'zwischen Eickstedt und Schmölln: Instandsetzung der Brücke über den Mühlenbach, Straße gesperrt, 24.03.2014 bis 18.07.2014',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/14/010	',
+       data  => <<EOF,
+userdel	2::inwork 53619,100127 54533,100204
+EOF
+     },
+     { from  => 1395183600, # 2014-03-19 00:00
+       until => 1395640800, # 2014-03-24 07:00
+       text  => 'Invalidenstr.: zwischen Gartenstr. und Bergstr. Baustelle, Fahrbahn gesperrt, ab: 21.03.2014 07 Uhr bis 24.03.2014 früh ',
+       type  => 'handicap',
+       source_id => 'IM_021515',
+       data  => <<EOF,
+userdel	q4::inwork 9383,13986 9676,14046
 EOF
      },
     );
