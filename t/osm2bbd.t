@@ -65,7 +65,7 @@ my $osm2bbd = "$FindBin::RealBin/../miscsrc/osm2bbd";
 EOF
     close $osmfh;
 
-    my @cmd = ($osm2bbd, "--debug=0", "-f", "-o", $destdir, $osmfile);
+    my @cmd = ($^X, $osm2bbd, "--debug=0", "-f", "-o", $destdir, $osmfile);
     system @cmd;
     is $?, 0, "<@cmd> works";
 
