@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2012 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2014 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -3796,6 +3796,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     [M('Senden der Route zu einem Garmin simulieren'), 'DirectGarmin_Test'],
 		     ($devel_host ? [M("Route mit gpsbabel senden"), "GpsbabelSend"] : ()),
 		     ($devel_host ? [M("Route mit MapSource senden"), "MapSourceSend"] : ()),
+		     ($devel_host ? [M("Route auf Gerät kopieren"), "MountedDevice"] : ()),
 		    ) {
 	if ($fmt eq '-') {
 	    $svm->separator;
@@ -3881,7 +3882,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		    (-label => $label,
 		     -command => sub { save_route_as_kml(-as => $as) },
 		    );
-	    } elsif ($module =~ m{^(GpsbabelSend|MapSourceSend)$}) {
+	    } elsif ($module =~ m{^(GpsbabelSend|MapSourceSend|MountedDevice)$}) {
 		$svm->command
 		    (-label => $label,
 		     -command => sub {
@@ -9924,6 +9925,11 @@ sub send_route_to_gps {
     if ($os eq 'win') {
 	# Assume that the windows distribution has gpsbabel bundled,
 	# so always prefer this one
+	#
+	# XXX Nowadays the file could be directly copied to a mounted
+	# garmin device. This should be the preferred code path. See
+	# also GPS::BBBikeGPS::MountedDevice, which needs a rewrite
+	# for Windows.
 	require GPS::Gpsbabel;
 	if (GPS::Gpsbabel->gpsbabel_available) {
 	    gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);

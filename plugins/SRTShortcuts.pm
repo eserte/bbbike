@@ -2784,6 +2784,126 @@ sub _get_tk_widgetdump {
     $WIDGETDUMP_W;
 }
 
+######################################################################
+{
+    package GPS::BBBikeGPS::MountedDevice;
+    require GPS;
+    push @GPS::BBBikeGPS::MountedDevice::ISA, 'GPS';
+    
+    sub has_gps_settings { 1 }
+
+    sub transfer_to_file { 0 }
+
+    sub ok_label { "Kopieren auf das Gerät" } # M/Mfmt XXX
+
+    sub tk_interface {
+	my($self, %args) = @_;
+	BBBikeGPS::tk_interface($self, %args, -uniquewpts => 0);
+    }
+
+    sub convert_from_route {
+	my($self, $route, %args) = @_;
+
+	# do not delete the following, needed also in simplify_for_gps
+	my $waypointlength = $args{-waypointlength};
+	my $waypointcharset = $args{-waypointcharset};
+
+	require File::Temp;
+	require Route::Simplify;
+	require Strassen::Core;
+	require Strassen::GPX;
+	my $simplified_route = $route->simplify_for_gps(%args, -uniquewpts => 0,
+							-leftrightpair  => ['<- ', ' ->'],
+							-leftrightpair2 => ['<\\ ',' />'],
+						       );
+	my $s = Strassen::GPX->new;
+	$s->set_global_directives({ map => ["polar"] });
+	for my $wpt (@{ $simplified_route->{wpt} }) {
+	    $s->push([$wpt->{ident}, [ join(",", $wpt->{lon}, $wpt->{lat}) ], "X" ]);
+	}
+	my($ofh,$ofile) = File::Temp::tempfile(SUFFIX => ".gpx",
+					       UNLINK => 1);
+	main::status_message("Could not create temporary file: $!", "die") if !$ofh;
+	print $ofh $s->bbd2gpx(-as => "route",
+			       -name => $simplified_route->{routename},
+			       -number => $args{-routenumber},
+			       #-withtripext => 1,
+			      );
+	close $ofh;
+
+	my $mount_point = '/mnt/garmin-internal'; # XXX configuration parameter!
+	# XXX unfortunately "camcontrol devlist" is restricted to root on FreeBSD; one could fine the information here! What about Linux?
+	my $mount_device = '/dev/da0'; # XXX configuration parameter
+	my @mount_opts = (-t => 'msdosfs'); # XXX configuration parameter, this is valid for FreeBSD
+	my $subdir = 'Garmin/GPX'; # XXX configuration parameter, default for Garmin
+
+	my $need_umount;
+	if (!_is_mounted($mount_point)) {
+	    my @mount_cmd = ('mount', @mount_opts, $mount_device, $mount_point);
+	    system @mount_cmd;
+	    if ($? != 0) {
+		die "Command <@mount_cmd> failed";
+	    }
+	    if (!_is_mounted($mount_point)) {
+		# This seems to be slow, so loop for a while
+		main::status_message("Mounting is slow, wait for a while...", "infoauto");
+		$main::top->update;
+		my $success;
+		eval {
+		    for (1..20) {
+			sleep 1;
+			if (_is_mounted($mount_point)) {
+			    $success = 1;
+			    last;
+			}
+		    }
+		};
+		warn $@ if $@;
+		main::info_auto_popdown();
+		if (!$success) {
+		    die "Mounting using <@mount_cmd> was not successful";
+		}
+	    }
+	    $need_umount = 1;
+	}
+
+	(my $safe_routename = $simplified_route->{routename}) =~ s{[^A-Za-z0-9_-]}{_}g;
+	require POSIX;
+	$safe_routename = POSIX::strftime("%Y%m%d_%H%M%S", localtime) . '_' . $safe_routename . '.gpx';
+
+	require File::Copy;
+	my $dest = "$mount_point/$subdir/$safe_routename";
+	File::Copy::cp($ofile, $dest)
+		or die "Failure while copying $ofile to $dest: $!";
+
+	unlink $ofile; # as soon as possible
+
+	if ($need_umount) {
+	    system("umount", $mount_point);
+	    if ($? != 0) {
+		die "Umounting $mount_point failed";
+	    }
+	    if (_is_mounted($mount_point)) {
+		die "$mount_point is still mounted, despite of umount call";
+	    }
+	}
+    }
+
+    sub transfer { } # NOP
+
+    sub _is_mounted { # XXX use a module?
+	my $directory = shift;
+	open my $fh, "-|", "mount" or die "Can't call mount: $!";
+	while(<$fh>) {
+	    if (m{ \Q$directory\E }) {
+		return 1;
+	    }
+	}
+	0;
+    }
+
+}
+
 1;
 
 __END__
