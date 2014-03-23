@@ -12294,13 +12294,28 @@ sub choose_ort {
 		    $lb->insert('end',
 				Sort::Naturally::nsort(keys %orte));
 		} else {
-		    # XXX use Sort::Naturally if $sorted eq 'natural'
-		    # "use locale" is not used here because:
-		    # - there's maybe no locale support at all
-		    # - the german locale may be missing
-		    # - with various perl versions and OSes I had in the
-		    #   past problems with "use locale"
-		    $lb->insert('end', BBBikeUtil::sort_german([ keys %orte ]));
+		    my $collator;
+		    if ($city_obj->is_osm_source) {
+			if (0 && eval { require Unicode::Collate::Locale; 1 }) {
+			    # XXX which locale to use here? The map's or the user's?
+			    # XXX the user's should be extracted from $ENV{LANG} or so
+			    # XXX the map's should be available from the meta file
+			    $collator = Unicode::Collate::Locale->new;
+			} elsif (eval { require Unicode::Collate; 1 }) {
+			    $collator = Unicode::Collate->new;
+			}
+		    }
+		    if ($collator) {
+			$lb->insert('end', $collator->sort(keys %orte));
+		    } else {
+			# XXX use Sort::Naturally if $sorted eq 'natural'
+			# "use locale" is not used here because:
+			# - there's maybe no locale support at all
+			# - the german locale may be missing
+			# - with various perl versions and OSes I had in the
+			#   past problems with "use locale"
+			$lb->insert('end', BBBikeUtil::sort_german([ keys %orte ]));
+		    }
 		}
 	    }
 
