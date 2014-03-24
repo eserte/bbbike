@@ -1,3 +1,36 @@
+Custom symbols for Garmin
+-------------------------
+
+The new set of custom symbols can be found in the directory bike2014.
+They are suitable for newer Garmin devices like the eTrex 30.
+
+It seems that the Garmin devices have problems with the images: some
+dark pixels are not drawn at all. So the icons are far from being
+pretty.
+
+Upload instructions:
+
+* Mount the internal flash card of the Garmin device
+
+* Copy the .bmp files found in the bike2014 subdirectory to the
+  following directory on the Garmin device:
+
+    .../Garmin/CustomSymbols
+
+* If you want to force a specific sort order of the Symbols, then use
+  a perl script like this:
+
+    cd .../Garmin/CustomSymbols
+    perl -e 'my $mt = time-86400*80; for (<*.bmp>) { $mt+=86400; utime $mt, $mt, $_; warn $_}'
+
+  Replace the "<*.bmp>" bit by a custom list of .bmp files. The above
+  one liner may or may not work.
+
+Old symbols for older Garmins
+-----------------------------
+
+"Older" means here eTrex Vista HCx and older.
+
 The images are (will be) used in BBBikeGPS.pm. The file naming is
 stupid: it depends on the localization of the device!
 
