@@ -2831,40 +2831,52 @@ sub _get_tk_widgetdump {
 			      );
 	close $ofh;
 
-	my $mount_point = '/mnt/garmin-internal'; # XXX configuration parameter!
-	# XXX unfortunately "camcontrol devlist" is restricted to root on FreeBSD; one could fine the information here! What about Linux?
-	my $mount_device = '/dev/da0'; # XXX configuration parameter
-	my @mount_opts = (-t => 'msdosfs'); # XXX configuration parameter, this is valid for FreeBSD
+	my($mount_point, $mount_device, @mount_opts);
+	# XXX configuration stuff vvv
+	if ($^O eq 'freebsd') {
+	    $mount_point = '/mnt/garmin-internal';
+	    # XXX unfortunately "camcontrol devlist" is restricted to root on FreeBSD; one could fine the information here! What about Linux?
+	    $mount_device = '/dev/da0';
+	    @mount_opts = (-t => 'msdosfs');
+	} else { # e.g. linux, assume device is already mounted
+	    $mount_point = '/media/GARMIN';
+	}
+	# XXX configuration stuff ^^^
 	my $subdir = 'Garmin/GPX'; # XXX configuration parameter, default for Garmin
 
 	my $need_umount;
 	if (!_is_mounted($mount_point)) {
-	    my @mount_cmd = ('mount', @mount_opts, $mount_device, $mount_point);
-	    system @mount_cmd;
-	    if ($? != 0) {
-		die "Command <@mount_cmd> failed";
-	    }
-	    if (!_is_mounted($mount_point)) {
-		# This seems to be slow, so loop for a while
-		main::status_message("Mounting is slow, wait for a while...", "infoauto");
-		$main::top->update;
-		my $success;
-		eval {
-		    for (1..20) {
-			sleep 1;
-			if (_is_mounted($mount_point)) {
-			    $success = 1;
-			    last;
-			}
-		    }
-		};
-		warn $@ if $@;
-		main::info_auto_popdown();
-		if (!$success) {
-		    die "Mounting using <@mount_cmd> was not successful";
+	    if ($mount_device) {
+		my @mount_cmd = ('mount', @mount_opts, $mount_device, $mount_point);
+		system @mount_cmd;
+		if ($? != 0) {
+		    die "Command <@mount_cmd> failed";
 		}
+		if (!_is_mounted($mount_point)) {
+		    # This seems to be slow, so loop for a while
+		    main::status_message("Mounting is slow, wait for a while...", "infoauto");
+		    $main::top->update;
+		    my $success;
+		    eval {
+			for (1..20) {
+			    sleep 1;
+			    if (_is_mounted($mount_point)) {
+				$success = 1;
+				last;
+			    }
+			}
+		    };
+		    warn $@ if $@;
+		    main::info_auto_popdown();
+		    if (!$success) {
+			die "Mounting using <@mount_cmd> was not successful";
+		    }
+		}
+		$need_umount = 1;
+	    } else {
+		main::status_message("Please mount the Garmin device on $mount_point manually", 'error');
+		return;
 	    }
-	    $need_umount = 1;
 	}
 
 	(my $safe_routename = $simplified_route->{routename}) =~ s{[^A-Za-z0-9_-]}{_}g;
