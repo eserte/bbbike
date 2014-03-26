@@ -934,10 +934,14 @@ Klinikumsgebäude	culdesac 17428,25235
 #: XXX evtl. entfernen, falls die beiden Abschnitte verbunden werden
 #: last_checked: 2014-03-21
 Ende des nördlichen Abschnitts	culdesac 8389,9017
+Sackgassenende, Ulmenhof	culdesac 32090,3599
+	culdesac_pseudo 32230,3766
+	culdesac_pseudo 32229,3892
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 32222,3680
 	culdesac_pseudo 16922,15977
 	culdesac_pseudo 16751,10403
 	culdesac_pseudo 3243,4469

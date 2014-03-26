@@ -21190,10 +21190,13 @@ EOF
 userdel	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2013-04-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-04-28 23:59:59"),
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2013 bis 28.4.2013 ',
+     { from  => $isodate2epoch->("2014-04-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-04-27 23:59:59"),
+       periodic => 1,
+       recurrences => [['yearly', days => 24, months => 4]],
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 25.4.2013 bis 27.4.2013 ',
        type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140324.1415.395686.html',
        data  => <<EOF,
 userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
@@ -21266,14 +21269,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Richardstr.: Baustelle zwischen Jan-Hus-Weg und Berthelsdorfer Str., Fahrtrichtung gesperrt',
+       text  => 'Richardstr. und Jan-Hus-Weg: Bauarbeiten, teilweise Einbahnstraßenregelungen, Fahrbahnsperrungen und andere Behinderungen',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: RICHARDSTR-2014
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-02-14 (Asphaltierungsarbeiten)
+#: last_checked: 2014-03-24
 #: check_frequency: 30d
-# REMOVED --- userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
-userdel	q4::inwork; 13085,7904 12870,8087
+# REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
+userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
+userdel	q4::inwork 13150,7845 13103,7889
+userdel	q4::inwork 13085,7904 13117,7939 13151,7914
 EOF
      },
      { from  => $isodate2epoch->("2013-12-13 06:00:00"), # 1385679600, # 2013-11-29 00:00 - 1 Tag Vorlauf
@@ -22049,7 +22055,7 @@ EOF
        data  => <<EOF,
 #: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-03-19
+#: last_checked: 2014-03-24
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },

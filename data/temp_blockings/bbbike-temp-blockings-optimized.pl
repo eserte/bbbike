@@ -3206,7 +3206,27 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140324.1415.395686.html',
+         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
+',
+         'periodic' => 1,
+         'until' => 1398635999,
+         'from' => 1398290400,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 25.4.2013 bis 27.4.2013 ',
+         'id' => 2419,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {
@@ -3225,14 +3245,17 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        {
          'until' => undef,
-         'text' => 'Richardstr.: Baustelle zwischen Jan-Hus-Weg und Berthelsdorfer Str., Fahrtrichtung gesperrt',
+         'text' => 'Richardstr. und Jan-Hus-Weg: Bauarbeiten, teilweise Einbahnstraßenregelungen, Fahrbahnsperrungen und andere Behinderungen',
          'from' => undef,
          'id' => 2425,
-         'data' => '#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-02-14 (Asphaltierungsarbeiten)
+         'data' => '#: next_check_id: RICHARDSTR-2014
+#: XXX bis wann ist die Baustelle fertig?
+#: last_checked: 2014-03-24
 #: check_frequency: 30d
-# REMOVED --- userdel	q4::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
-userdel	q4::inwork; 13085,7904 12870,8087
+# REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
+userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
+userdel	q4::inwork 13150,7845 13103,7889
+userdel	q4::inwork 13085,7904 13117,7939 13151,7914
 ',
          'type' => 'handicap'
        },
@@ -3461,7 +3484,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2498,
          'data' => '#: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-03-19
+#: last_checked: 2014-03-24
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'
@@ -3719,16 +3742,6 @@ userdel	q3::inwork 11673,16003 11567,15842
          'data' => 'userdel	2::inwork 53619,100127 54533,100204
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_021515',
-         'until' => 1395640800,
-         'text' => 'Invalidenstr.: zwischen Gartenstr. und Bergstr. Baustelle, Fahrbahn gesperrt, ab: 21.03.2014 07 Uhr bis 24.03.2014 früh ',
-         'from' => 1395183600,
-         'id' => 2556,
-         'data' => 'userdel	q4::inwork 9383,13986 9676,14046
-',
-         'type' => 'handicap'
        }
      
 );
