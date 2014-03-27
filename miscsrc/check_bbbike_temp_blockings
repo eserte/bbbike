@@ -134,7 +134,7 @@ sub run_checks {
 	}
 	if (defined $o->{from} && defined $o->{until} &&
 	    $o->{from} > $o->{until}) {
-	    die "Interval mismatch: " . Dumper($o);
+	    die "Interval mismatch, from date is before until date: " . Dumper($o);
 	}
 	if (exists $o->{data}) {
 	    if ($o->{data} =~ m{^\s*$}) {
