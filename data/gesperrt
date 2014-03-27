@@ -795,6 +795,7 @@ Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,1
 Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14270,9710
 Parkaue	1s 15406,12444 15408,12394 15370,12264
+Stahlheimer Str.	1 11727,16358 11698,16311
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1499,7 +1500,7 @@ Berliner Str. -> Thulestr.: U-Bahnrampe	3::igndisp 11008,16729 11021,16605 11278
 Berliner Str. -> Schonensche Str.: U-Bahnrampe	3::igndisp 11021,16605 11027,16553 11284,16527
 Schonensche Str. -> Schönhauser Allee: U-Bahnrampe	3::igndisp 11284,16527 11027,16553 11019,16465
 Straßenbahn	3nocross::ignrte 11673,16367 11727,16358 11750,16354
-Wisbyer Str. -> Stahlheimer Str.: Straßenbahn	3::igndisp 11750,16354 11727,16358 11618,16183
+Stahlheimer Str. -> Wisbyer Str.: Straßenbahn	3::igndisp 11698,16311 11727,16358 11673,16367
 Straßenbahn	3nocross::ignrte 11750,16354 11808,16343 11829,16339 11889,16328
 Wisbyer Str. -> Varnhagenstr.: Straßenbahn	3::igndisp 11829,16339 11808,16343 11680,16151
 Wisbyer Str. -> Max-Koska-Str.: Straßenbahn	3::igndisp 11808,16343 11829,16339 11846,16438

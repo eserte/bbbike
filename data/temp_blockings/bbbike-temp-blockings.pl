@@ -17338,7 +17338,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015288',
        data  => <<EOF,
-userdel	q4::inwork; 11727,16358 11618,16183 11554,16075 11550,16068 11500,15988 11455,15916 11393,15823 11373,15789 11301,15668 11183,15485 11119,15385 10881,15047
+userdel	q4::inwork; 11727,16358 11698,16311 11618,16183 11554,16075 11550,16068 11500,15988 11455,15916 11393,15823 11373,15789 11301,15668 11183,15485 11119,15385 10881,15047
 EOF
      },
      { from  => 1269113469, # 2010-03-20 20:31
@@ -19138,11 +19138,11 @@ EOF
 userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
-     { from  => $isodate2epoch->("2013-04-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-05-20 00:00:00"),
+     { from  => $isodate2epoch->("2014-04-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-05-19 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 4]],
-       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2013 bis 20.05.2013',
+       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 25.04.2014 bis 18.05.2014',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
