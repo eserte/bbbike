@@ -73,7 +73,8 @@ sub get_symbol_to_img {
     }
     # Now the user-defined symbols. Here's room for different "userdef
     # symbol sets", which may be per-vehicle, per-user, per-year etc.
-    my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
+    #my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
+    my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2014";
     if (!-d $userdef_symbol_dir) {
 	warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
     } else {

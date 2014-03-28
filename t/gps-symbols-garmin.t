@@ -27,6 +27,6 @@ SKIP: {
     like $mapping->{'bridge'}, qr{gmicons/bridge15x15\.gif$};
 }
 
-like $mapping->{'user:7681'}, qr{misc/garmin_userdef_symbols/bike2008/001\.bmp$}, 'private garmin icon';
+like $mapping->{'user:7681'}, qr{misc/garmin_userdef_symbols/(bike2014/BBBike01|bike2008/001)\.bmp$}, 'private garmin icon';
 
 __END__

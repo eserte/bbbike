@@ -39,6 +39,9 @@ is GPS::GpsmanData::GarminGPX::gpsman_symbol_to_garmin_symbol_name('bridge'), 'B
 is GPS::GpsmanData::GarminGPX::garmin_symbol_name_to_gpsman_symbol_name('City (Medium)'), 'medium_city';
 is GPS::GpsmanData::GarminGPX::gpsman_symbol_to_garmin_symbol_name('medium_city'), 'City (Medium)';
 
+is GPS::GpsmanData::GarminGPX::garmin_symbol_name_to_gpsman_symbol_name('BBBike04'), 'user:7684';
+is GPS::GpsmanData::GarminGPX::garmin_symbol_name_to_gpsman_symbol_name('BBBike43'), 'user:7723';
+
 if ($gpx_symbol_file) {
     my @missing_translations;
     my @successful_translations;

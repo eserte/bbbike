@@ -339,36 +339,48 @@ sub _setup_garmin_gpx_symbol_name_to_garmin_id {
 }
 
 # XXX The user defined symbols; currently hardcoded to the bike2008 set
-my $garmin_user_id_to_name;
+my %garmin_user_id_to_name;
+my $setup_garmin_user_id_to_name_done;
 sub _setup_garmin_user_id_to_name {
-    if (!$garmin_user_id_to_name) {
-	$garmin_user_id_to_name = {};
+    if (!$setup_garmin_user_id_to_name_done) {
 	require BBBikeUtil;
-	my $userdef_symbol_mapping = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008/mapping";
-	my $fh;
-	if (!open $fh, $userdef_symbol_mapping) {
-	    warn "Cannot open $userdef_symbol_mapping: $!";
-	    return;
-	}
-	while(<$fh>) {
-	    chomp;
-	    next if m{^$} || m{^#};
-	    my($iconname, $label) = split /\t/, $_, 2;
-	    if (my($id) = $iconname =~ m{^(\d+)\.bmp$}) {
-		$id += 7680;
-		$garmin_user_id_to_name->{$id} = $label;
+	for my $set ('bike2008', 'bike2014') {
+	    $garmin_user_id_to_name{$set} = {};
+	    my $userdef_symbol_mapping = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/$set/mapping";
+	    my $fh;
+	    if (!open $fh, $userdef_symbol_mapping) {
+		warn "Cannot open $userdef_symbol_mapping: $!";
 	    } else {
-		warn "Cannot parse line $_ in $userdef_symbol_mapping, ignoring...";
+		while(<$fh>) {
+		    chomp;
+		    next if m{^$} || m{^#};
+		    my($iconname, $label) = split /\t/, $_, 2;
+		    my $id;
+		    if ($set eq 'bike2014' and ($label, $id) = $iconname =~ m{^(BBBike(\d+))\.bmp$}) { # note: label from mapping not used here
+			$id += 7680;
+			$garmin_user_id_to_name{$set}->{$id} = $label;;
+		    } elsif ($set eq 'bike2008' and ($id) = $iconname =~ m{^(\d+)\.bmp$}) {
+			$id += 7680;
+			$garmin_user_id_to_name{$set}->{$id} = $label;
+		    } else {
+			warn "Cannot parse line $_ in $userdef_symbol_mapping, ignoring...";
+		    }
+		}
 	    }
 	}
+	$setup_garmin_user_id_to_name_done = 1;
     }
 }
 
-my $garmin_user_name_to_id;
+my %garmin_user_name_to_id;
+my $setup_garmin_user_name_to_id_done;
 sub _setup_garmin_user_name_to_id {
-    if (!$garmin_user_name_to_id) {
+    if (!$setup_garmin_user_name_to_id_done) {
 	_setup_garmin_user_id_to_name();
-	$garmin_user_name_to_id = { reverse %$garmin_user_id_to_name };
+	for my $set (qw(bike2008 bike2014)) {
+	    $garmin_user_name_to_id{$set} = { reverse %{ $garmin_user_id_to_name{$set} } };
+	}
+	$setup_garmin_user_name_to_id_done = 1;
     }
 }
 
@@ -377,7 +389,10 @@ sub gpsman_symbol_to_garmin_symbol_name {
     if ($gpsman_symbol =~ m{^user:(\d+)$}) {
 	my $user_id = $1;
 	_setup_garmin_user_id_to_name();
-	return $garmin_user_id_to_name->{$user_id};
+	return $garmin_user_id_to_name{'bike2008'}->{$user_id};
+    } elsif ($gpsman_symbol =~ m{^BBBike\d+$}) {
+	_setup_garmin_user_id_to_name();
+	return $garmin_user_id_to_name{'bike2014'}->{$gpsman_symbol};
     } else {
 	my $id = $gpsman_symbol_name_to_garmin_id{$gpsman_symbol};
 	return if !defined $id;
@@ -389,8 +404,10 @@ sub gpsman_symbol_to_garmin_symbol_name {
 sub garmin_symbol_name_to_gpsman_symbol_name {
     my($garmin_symbol) = @_;
     _setup_garmin_user_name_to_id();
-    if (exists $garmin_user_name_to_id->{$garmin_symbol}) {
-	return "user:" . $garmin_user_name_to_id->{$garmin_symbol};
+    if (exists $garmin_user_name_to_id{'bike2014'}->{$garmin_symbol}) {
+	return "user:" . $garmin_user_name_to_id{'bike2014'}->{$garmin_symbol};
+    } elsif (exists $garmin_user_name_to_id{'bike2008'}->{$garmin_symbol}) {
+	return "user:" . $garmin_user_name_to_id{'bike2008'}->{$garmin_symbol};
     } else {
 	_setup_garmin_gpx_symbol_name_to_garmin_id();
 	my $id = $garmin_gpx_symbol_name_to_garmin_id->{$garmin_symbol};
