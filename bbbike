@@ -21273,7 +21273,8 @@ sub find_font_by_height {
     for my $fontkey (keys %font) {
 	my %fa = $top->fontActual($font{$fontkey});
 	next if $fa{'-weight'} ne 'normal';
-	next if $fa{'-family'} eq $fixed_font_family;
+	next if $fa{'-slant'} ne 'roman';
+	next if lc $fa{'-family'} eq lc $fixed_font_family;
 	my $height_diff = $height - size2px($fa{'-size'});
 	if ($height_diff > 0 &&
 	    (
