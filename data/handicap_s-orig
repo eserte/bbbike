@@ -69,9 +69,12 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwo
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html (Abschluss der Arbeiten im März 2014)
 #: source_id: IM_020581 ("bis Ende 2014")
 #: last_checked: 2014-02-10 vvv
-#: next_check: 2014-12-01 vvv
+#: next_check: 2014-04-02 vvv
 #: priority: #A vvv
-Chausseestr.: direkte Zufahrt südlich der Invalidenstraße nicht möglich, umständliche Wegführung	q4::inwork 9042,13707 8935,13844
+#: valid: -20140402
+#: XXX Sperrung wird aufgehoben
+Chausseestr.: Bauarbeiten, Fahrbahn ist noch nicht offiziell freigegeben	q3::inwork 9042,13707 8935,13844
+#: XXX was ist mit diesem Abschnitt? Bleibt die Einbahnstraße?
 Chausseestr.: Einbahnstraße zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwork; 8879,13913 8935,13844
 #: priority ^^^
 #: next_check ^^^
@@ -80,11 +83,13 @@ Chausseestr.: Einbahnstraße zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwo
 #: osm_watch: way id="4412885" version="23" vvv
 #: priority: #A vvv
 #: last_checked: 2014-03-07 vvv
-#: check_frequency: 30d vvv
+#: next_check: 2014-03-31 vvv
 # REMOVED (keine Behinderung mehr) --- Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8588,13673 8594,13637
+#: XXX wie sieht es hier mit Änderung der Verkehrsführung aus? vvv
 Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8619,13689 8626,13641
 Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
-#: check_frequency ^^^
+#: XXX ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: osm_watch ^^^
@@ -142,21 +147,29 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-03-26
+#: last_checked: 2014-03-28
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2014-03-07 vvv
-#: next_check: 2014-06-30 vvv
+#: next_check: 2014-03-31 vvv
+#: priority: #A vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
 #: XXX siehe auch temporäre Ampel an der Chausseestr. sowie an der Luisenstr.
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1207/nachricht4724.html
-Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13986 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5212.html
+#: XXX ab 2014-03-31 wird dieser Abschnitt voll gesperrt --- werden Radfahrer irgendwie passieren können?
+#: XXX Eichendorffstr. wird von der Invalidenstr. evtl. nicht zugänglich sein
+Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13986 9274,13963 9203,13953 9151,13941
+Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844 8690,13723
 # REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8659,13708 8626,13692 8619,13689
+#: XXX ab 2014-03-31 wird die Einbahnstraßeregelung aufgehoben
 Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
+#: XXX ab 2014-03-31 wird die Zufahrt zur Invalidenstraße nicht mehr möglich sein (Sackgasse), zumindest für Autofahrer --- was ist mit Fußgängern/schiebenden Radfahrern?
 Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
 # REMOVED (wieder offen ab 2013-08-29) --- #: source_id: IM_019009 --- #: source_id: IM_018437 --- Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
+#: priority ^^^
 #: next_check ^^^
 #: last_checked: ^^^
 #: next_check_id ^^^
@@ -201,18 +214,11 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-03-24
+#: last_checked: 2014-03-28
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
-#: next_check_id: SPANDAUERSTR-2014
-#: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt)
-#: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig
-#: last_checked: 2014-03-24
-#: check_frequency: 7d
-#: priority: #A
-Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
-# 
+# REMOVED (wieder offen) --- #: next_check_id: SPANDAUERSTR-2014 --- #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt) --- #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- #: priority: #A --- Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10422,12395 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
@@ -223,7 +229,7 @@ Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,1250
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html (Ende der Baumaßnahme im April 2014)
 #: note: siehe auch Eintrag zur Friedrichsbrücke
 #: next_check_id: FRIEDRICHSBRUECKE-2014 vvv
-#: last_checked: 2014-03-24 vvv
+#: last_checked: 2014-03-28 vvv
 Burgstraße: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 10166,12777 10132,12941
 Anna-Louisa-Karsch-Str.: vor der Friedrichsbrücke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777
 #: last_checked ^^^
@@ -849,7 +855,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013
 #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg
 #: osm_watch: way id="4610599" version="14"
-#: last_checked: 2014-03-19
+#: last_checked: 2014-03-24
 Friedrichsbrücke: Engstellen wegen Bauarbeiten	q4::inwork 10054,12699 10086,12725 10166,12777
 (Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346

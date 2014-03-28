@@ -2486,7 +2486,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
 #: last_checked: 2014-03-07 vvv
-#: next_check: 2014-06-30 vvv
+#: next_check: 2014-03-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8879,13913
 # REMOVED (ausgeschaltet) --- X::inwork 8634,13588
@@ -2495,6 +2495,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork 8450,13599
 	X::inwork 8775,13606
 	X::inwork 9085,13919
+#: valid: 2014-03-31-
+	X::inwork 9070,14058
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^

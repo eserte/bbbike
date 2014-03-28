@@ -20269,11 +20269,11 @@ EOF
 userdel	q4::inwork 12817,2031 12911,1815
 EOF
      },
-     { from  => $isodate2epoch->("2013-04-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-04-28 23:59:59"),
+     { from  => $isodate2epoch->("2014-04-18 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-04-21 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 27, months => 4]],
-       text  => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt (Nisan Kinderfest, 27.4.2013 bis 28.4.2013)',
+       recurrences => [['yearly', days => 18, months => 4]],
+       text  => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 19.4.2014 bis 21.4.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
@@ -21970,7 +21970,7 @@ EOF
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
 #: last_checked: 2014-03-01
-#: check_frequency: 30d
+#: next_check: 2014-04-15
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 EOF
@@ -22055,7 +22055,7 @@ EOF
        data  => <<EOF,
 #: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-03-24
+#: last_checked: 2014-03-28
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
@@ -22628,6 +22628,17 @@ EOF
        source_id => 'IM_021515',
        data  => <<EOF,
 userdel	q4::inwork 9383,13986 9676,14046
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Gürtelstr. (Weißensee): Einbahnstraße zwischen Meyerbeerstr. und Gounodstr.',
+       type  => 'handicap',
+       source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
+       data  => <<EOF,
+#: XXX wann ist die Baustelle fertig?
+#: next_check: 2014-03-27
+userdel	q3::inwork; 13555,15596 13459,15653
 EOF
      },
     );

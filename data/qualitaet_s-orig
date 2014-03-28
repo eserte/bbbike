@@ -9263,14 +9263,13 @@ Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7607,5944
 Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 (Borussenstr. - Kronprinzessinnenweg): Verbundsteinpflaster	Q1+ -4134,1984 -4166,1941 -4180,1941
 (Rasthof Dreilinden): Asphalt	Q0 -4003,1234 -3994,1170 -3642,1199 -3577,1148
-#: next_check_id: SPANDAUERSTR-2014
-#: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
-#: last_checked: 2014-03-24
-#: check_frequency: 7d
-Spandauer Str.: mäßiger Asphalt im Bereich Kreuzung Rathaustr.	Q1 10431,12709 10601,12521 10644,12469
+# REMOVED (neu asphaltiert) --- #: next_check_id: SPANDAUERSTR-2014 --- #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- Spandauer Str.: mäßiger Asphalt im Bereich Kreuzung Rathaustr.	Q1 10431,12709 10601,12521 10644,12469
 #: next_check_id: INVALIDENSTRMOABIT-2014
 #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
+#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/invalidenstr/de/bau.shtml
+#: XXX ab April 2014 wird hier neu gebaut
 #: last_checked: 2014-03-07
+#: next_check: 2014-04-30
 Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7567,13143 7440,13073 7415,13060 7346,13022
 (Möllendorffstr. - Paul-Junius-Str.): Verbundsteinpflaster	Q1+ 15513,13539 15470,13509
 (Möllendorffstr. - Paul-Junius-Str.): Asphalt mit einigen Schäden	Q0- 15470,13509 15370,13508

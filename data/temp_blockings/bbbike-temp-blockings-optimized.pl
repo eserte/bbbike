@@ -3020,7 +3020,26 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+',
+         'periodic' => 1,
+         'until' => 1398117599,
+         'from' => 1397772000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 19.4.2014 bis 21.4.2014)',
+         'type' => 'gesperrt',
+         'id' => 2324
+       },
        undef,
        undef,
        undef,
@@ -3466,7 +3485,7 @@ userdel	2::night 17671,13132 17684,13133
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
 #: last_checked: 2014-03-01
-#: check_frequency: 30d
+#: next_check: 2014-04-15
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
@@ -3505,7 +3524,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2498,
          'data' => '#: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-03-24
+#: last_checked: 2014-03-28
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'
@@ -3763,6 +3782,19 @@ userdel	q3::inwork 11673,16003 11567,15842
          'data' => 'userdel	2::inwork 53619,100127 54533,100204
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
+         'until' => undef,
+         'text' => 'Gürtelstr. (Weißensee): Einbahnstraße zwischen Meyerbeerstr. und Gounodstr.',
+         'from' => undef,
+         'id' => 2557,
+         'data' => '#: XXX wann ist die Baustelle fertig?
+#: next_check: 2014-03-27
+userdel	q3::inwork; 13555,15596 13459,15653
+',
+         'type' => 'handicap'
        }
      
 );

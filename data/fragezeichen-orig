@@ -126,8 +126,8 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="15"
 #: osm_watch: way id="42732291" version="7"
-#: last_checked: 2014-03-12
-#: check_frequency: 60d
+#: last_checked: 2014-03-28
+#: check_frequency: 90d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
@@ -143,9 +143,9 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: osm_watch: way id="162964323" version="4"
 #: osm_watch: way id="4541085" version="13"
 #: osm_watch: way id="4638315" version="12"
-#: last_checked: 2014-01-17
-#: next_check: 2014-03-15 (evtl. passiert während der Bauarbeiten etwas?)
-#: source_id: IM_021408
+#: last_checked: 2014-03-28
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2014-03-15 (evtl. passiert während der Bauarbeiten etwas?) --- #: source_id: IM_021408
 Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 7687,16770 7717,16541 7754,16364 7800,16233 7824,16170 7885,16005 7948,15802 7962,15633 7966,15571
 # 
 # REMOVED (wahrscheinlich passiert hier nichts bevor das Pankower Tor realisiert wird) --- #: XXX Baumaßnahme 3.39 (Realisierung nach 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: XXX evtl. wird erst etwas mit Realisierung des Stadtquartiers "Pankower Tor" entstehen --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3701 --- #: osm_watch: way id="144945039" version="4" --- #: last_checked: 2013-10-25 (Richtung Nordosten fertig) --- #: next_check: 2014-01-25 --- Granitzstr.: wird auch etwas in der anderen Richtung gemacht?	? 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
@@ -354,6 +354,14 @@ Hauptstr. (Wilhelmsruh): Radstreifen?	?::projected 7672,19869 7711,19956 7748,20
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+#
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5213.html
+#: XXX bis Ende 2014
+Heidestr.: wie ist die Radverkehrsführung an der Kreuzung Sellerstr.?	? 7589,14359 7597,14417
+# 
+#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140326.1205.395773.html
+#: next_check: 2014-04-01
+Thusnelda-Allee: wann genau wird die Sperrung sein?	? 5956,13330 5975,13256
 # 
 Forstmeisterweg, Fortsetzung: Qualität? Beleuchtung? Straßenname?	? 32222,3680 32230,3766 32264,3854 32229,3892
 # 
@@ -626,7 +634,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: next_check ^^^
 #: last_checked: 2013-07-10
 Eichborndamm: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4580,19756
-#: last_checked: 2013-10-24
+#: last_checked: 2014-03-28
 Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8055,17179 8091,17194
 #: check_frequency: ^^^
 #: priority ^^^
@@ -748,7 +756,7 @@ Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2014-02-18
+#: last_checked: 2014-03-28
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -1172,10 +1180,10 @@ Hildburghauser Str.: Qualität des Asphalts?	? 4806,1360 4897,1346 5056,1321 5223
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
 #
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130925.1340.389712.html (Beginn: 30. September 2013, Ende offen)
-#: XXX zwischen Lütticher Str. und Antwerpener Str. (Richtung Osten) zurzeit Bauarbeiten (2014-01-17), Radweg gesperrt
+#: XXX zwischen Lütticher Str. und Antwerpener Str. (Richtung Osten) zurzeit Bauarbeiten (2014-01-17), Radweg gesperrt; 2014-03-28: noch immer gesperrt
 #: XXX zwischen Lüderitzstr. und Guineastr. (Richtung Westen) asphaltiert ohne die letzte Asphaltdecke
-#: last_checked: 2014-01-17
-Seestr.: Sanierung der Radwege - wie wird die Qualität danach sein (asphaltiert?)	? 6239,15553 6422,15708 6555,15827 6661,15921 6781,16026
+#: last_checked: 2014-03-28
+Seestr.: Sanierung der Radwege - werden die restlichen Abschnitte auch asphaltiert sein?	? 6239,15553 6422,15708 6555,15827 6661,15921 6781,16026
 # 
 # REMOVED (nein, keine Vorfahrt) --- Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1276,8659 1403,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
 # REMOVED (nein, keine Vorfahrt) --- Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2163,9244 2316,9400
@@ -1266,8 +1274,8 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 # 
 #: osm_watch: way id="129104626" version="2"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
-#: last_checked: 2013-06-07
-#: next_check: 2014-04-15
+#: last_checked: 2014-03-28
+#: check_frequency: 90d
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: wann wird die Fortsetzung gebaut? Qualität?	?::projected 8251,14337 8442,14456
 # 
 #: osm_watch: way id="186786509" version="3"
@@ -1494,7 +1502,7 @@ Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage
 #: check_frequency: 30d
 Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschränkungen.	? 13150,7845 13103,7889
 #: last_checked: 2014-03-24
-#: check_frequency: 60d
+#: check_frequency: 30d
 Richardstr.: wird sich hier noch etwas ändern?	? 13103,7889 13085,7904
 #: by: ^^^
 #: next_check_id ^^^
@@ -1857,7 +1865,7 @@ Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf
 #: last_checked: 2014-03-01
-#: check_frequency: 30d
+#: next_check: 2014-04-15
 Cheruskerpark: entsteht hier eine neue Wegverbindung?	?::projected 7391,8231 7369,8278
 # 
 #: XXX_osm: fehlt bei osm
@@ -3624,10 +3632,11 @@ Engelwurzweg: (früher Waldweg) Qualität? Geht es Richtung Westen noch weiter?	? 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3698 vvv
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036596039932/596039932/00059240/40-Anlagen/02/Benennungsabsichtfuer8PrivatwegeinderAnlageNor.pdf vvv
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3724 (Benennung) vvv
-#: XXX Benennungsabsicht für 8 Privatwege in der Anlage Nordend vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/13re.pdf/file?y=2014 vvv
+#: XXX neue Straßennamen für 8 Privatwege in der Anlage Nordend vvv
 #: XXX ebenso: Lehmweg, siehe strassen-orig vvv
 #: next_check_id: NORDEND-2014 vvv
-#: next_check: 2014-05-01 vvv
+#: next_check: 2014-05-26 (Wirksamkeit der Benennung) vvv
 Tonweg: Qualität, Umbenennung?	? 10177,21802 10211,21697
 Buntsteinweg: Qualität, Umbenennung?	? 10111,21667 10211,21697 10269,21718 10328,21737
 Marmorweg: Qualität, Umbenennung? Kann die Dietzgenstr. hier überquert werden?	? 10114,21592 10284,21653 10350,21676 10423,21701 10565,21748 10588,21759
@@ -3640,6 +3649,7 @@ Kieselweg: Qualität, Umbenennung?	? 10423,21701 10388,21801
 #: next_check_id ^^^
 #: XXX ^^^
 #: XXX ^^^
+#: by: ^^^
 #: by: ^^^
 #: by: ^^^
 #: by: ^^^
