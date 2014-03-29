@@ -609,6 +609,7 @@ test-with-protocol: permission
 	    export HARNESS_NOTTY=1;\
 	    export HARNESS_TIMER=1;\
 	    export BBBIKE_LONG_TESTS=1;\
+	    export AUTOMATED_TESTING=1;\
 	    (echo -n "git describe: "; git describe --match 'RELEASE_*';\
 	     echo "git status: "; git status;\
 	     echo ) >$(HOME)/log/bbbike-test-$$DATE 2>&1;\
