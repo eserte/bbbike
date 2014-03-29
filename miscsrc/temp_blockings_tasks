@@ -205,14 +205,12 @@ sub check_recurrences {
     }
 
     if (@candidates) {
+	require Text::Wrap;
 	binmode STDOUT, ':encoding(console_out)';
-	my $max_text_len = 50;
 	for my $candidate (sort { $a->{date} cmp $b->{date} } @candidates) {
 	    my $text = $candidate->{record}->{text};
-	    if (length $text > $max_text_len) {
-		$text = substr($text, 0, $max_text_len-3).'...';
-	    }
-	    printf "%6d: %s %-${max_text_len}s\n", $candidate->{id}, $candidate->{date}, $text;
+	    my $initial = sprintf("%6d: ", $candidate->{id});
+	    print Text::Wrap::wrap($initial, " " x length($initial), "$candidate->{date} $text\n");
 	}
 	exit 1;
     } else {
