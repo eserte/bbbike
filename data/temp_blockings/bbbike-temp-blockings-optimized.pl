@@ -862,6 +862,26 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
+       {
+         'data' => 'userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9282
+userdel	2::temp 6945,9142 7044,9163
+',
+         'periodic' => 1,
+         'until' => 1401055199,
+         'from' => 1400796000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (24.5.2014 und 25.5.2014)',
+         'type' => 'gesperrt',
+         'id' => 728
+       },
        undef,
        undef,
        undef,
@@ -1097,8 +1117,25 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+',
+         'periodic' => 1,
+         'until' => 1399845599,
+         'from' => 1399586400,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (10. und 11. Mai 2014)',
+         'type' => 'gesperrt',
+         'id' => 964
+       },
        undef,
        undef,
        undef,
@@ -1822,7 +1859,26 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.family-and-friends-ev.de/2.html
+userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+',
+         'periodic' => 1,
+         'until' => 1401055199,
+         'from' => 1400796000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (24. und 25. Mai 2014)',
+         'type' => 'gesperrt',
+         'id' => 1642
+       },
        undef,
        undef,
        undef,
@@ -1977,7 +2033,25 @@ userdel	2::temp 22133,4644 22074,4664
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 9134,15953 9059,16038 8993,16100 8928,16158 8862,16208 8788,16264
+',
+         'periodic' => 1,
+         'until' => 1402869599,
+         'from' => 1402610400,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6
+                            ]
+                          ],
+         'text' => 'Badstr. (Wedding) zwischen Pankstr. und Behmstr. Veranstaltung (Seifenkistenderby), Straße vollständig gesperrt (14. und 15. Juni 2014)',
+         'type' => 'gesperrt',
+         'id' => 1776
+       },
        undef,
        undef,
        undef,
@@ -2581,7 +2655,25 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 34443,1951 34250,2546
+',
+         'periodic' => 1,
+         'until' => 1400450399,
+         'from' => 1400104800,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Erkner: Heimatfest, 16.5.2014 bis 18.5.2014',
+         'type' => 'gesperrt',
+         'id' => 2078
+       },
        undef,
        undef,
        undef,
@@ -2752,7 +2844,25 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
+',
+         'periodic' => 1,
+         'until' => 1404683999,
+         'from' => 1404424800,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              5,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (5. und 6. Juli 2014)',
+         'type' => 'gesperrt',
+         'id' => 2126
+       },
        undef,
        undef,
        undef,
@@ -2919,7 +3029,34 @@ userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.breadandbutter.com/winter2014/de/home/',
+         'data' => 'userdel	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
+userdel	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
+',
+         'periodic' => 1,
+         'until' => 1405011600,
+         'from' => 1404709200,
+         'text' => 'Platz der Luftbrücke (Tempelhof): Straße vollständig zwischen Tempelhofer Damm und Columbiadamm wegen einer Veranstaltung (Bread & Butter) gesperrt (8. bis 10. Juli 2014)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              7
+                            ]
+                          ],
+         'id' => 2245,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3320,10 +3457,48 @@ userdel	q4::inwork 13085,7904 13117,7939 13151,7914
        },
        undef,
        undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130419.1210.383671.html',
+         'data' => 'userdel	2::temp 6244,8597 6339,8644 6454,8653
+',
+         'periodic' => 1,
+         'until' => 1399831200,
+         'from' => 1399626000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Schöneberger Mai- und Spargelfest am 10. und 11. Mai 2014 in der Freiherr-vom-Stein-Straße',
+         'id' => 2428,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2014
+userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
+',
+         'periodic' => 1,
+         'until' => 1400450399,
+         'from' => 1400191200,
+         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz), Straße rund um den Dorfteich vermutlich gesperrt (17. und 18. Mai 2014)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              5
+                            ]
+                          ],
+         'type' => 'handicap',
+         'id' => 2431
+       },
        undef,
        undef,
        undef,
@@ -3339,6 +3514,30 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
 ',
          'type' => 'handicap'
        },
+       {
+         'source_id' => 'http://www.kindertag-berlin.de/',
+         'data' => 'userdel	2::temp 20755,5750 20716,6029 20708,6089 20623,6136 20453,6211 20464,6237
+userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
+userdel	2::temp 20200,6321 20262,6493 20225,6631
+userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+userdel	2::temp 19976,6087 20064,6290 20106,6357
+',
+         'periodic' => 1,
+         'until' => 1401659999,
+         'from' => 1401487200,
+         'text' => 'Internationaler Kindertag im FEZ, Veranstaltung, einige Wege und Straßen sind gesperrt, 31. Mai und 1. Juni 2014',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              5
+                            ]
+                          ],
+         'id' => 2436,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3349,14 +3548,60 @@ userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 
        undef,
        undef,
        undef,
+       {
+         'source_id' => 'http://www.gruen-berlin.de/parks-gaerten/tempelhofer-freiheit/?date=20140118',
+         'data' => 'userdel	2::temp 9522,7624 9362,7616 9281,7651
+userdel	2::temp 9562,7796 9372,7798 9281,7795
+userdel	2::temp 9281,7795 9281,7651 9300,7312
+userdel	2::temp 10384,8628 10360,8521
+',
+         'periodic' => 1,
+         'until' => 1405029599,
+         'from' => 1404684000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Flughafen Tempelhof: die Nebeneingänge Columbiadamm und Peter-Strasser-Weg sind wegen einer Veranstaltung (Bread and Butter) geschlossen (8. bis 10. Juli 2014)',
+         'id' => 2447,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 12826,4777 12836,4649
+',
+         'periodic' => 1,
+         'until' => 1404683999,
+         'from' => 1404424800,
+         'text' => 'Britzer Rosenfest an der Britzer Dorfkirche, Backbergstr. ist gesperrt, 5. und 6. Juli 2014',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              22,
+                              'months',
+                              6
+                            ]
+                          ],
+         'type' => 'gesperrt',
+         'id' => 2453
+       },
        {
          'until' => undef,
          'recurring' => 1,
