@@ -2839,7 +2839,21 @@ sub _get_tk_widgetdump {
 	    $mount_device = '/dev/da0';
 	    @mount_opts = (-t => 'msdosfs');
 	} else { # e.g. linux, assume device is already mounted
-	    $mount_point = '/media/GARMIN';
+	    my @mount_point_candidates = (
+					  '/media/' . eval { scalar getpwuid $< } . '/GARMIN',     # e.g. Ubuntu 13.10
+					  '/media/GARMIN',                                         # e.g. Mint 13
+					  '/run/media/' . eval { scalar getpwuid $< } . '/GARMIN', # e.g. Fedora 20
+					 );
+	    for my $mount_point_candidate (@mount_point_candidates) {
+		if (_is_mounted($mount_point_candidate)) {
+		    $mount_point = $mount_point_candidate;
+		    last;
+		}
+	    }
+	    if (!$mount_point) {
+		main::status_message("The Garmin device is not mounted in the expected mount points (tried @mount_point_candidates)", 'error');
+		return;
+	    }
 	}
 	# XXX configuration stuff ^^^
 	my $subdir = 'Garmin/GPX'; # XXX configuration parameter, default for Garmin
