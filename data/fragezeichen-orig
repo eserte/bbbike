@@ -692,8 +692,8 @@ Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5092&options=4
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/4508103636166975/36166975/00104984/84-Anlagen/02/116-2013-1Blatt1ausB-PlanXVII-50aa-16012012.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2014
-#: last_checked: 2013-06-28 vvv
-#: next_check: 2014-05-01 vvv
+#: last_checked: 2014-03-29 vvv
+#: next_check: 2014-06-29 vvv
 Planstraße 1: Qualität? Name?	?::projected 19842,9895 19853,9774 19857,9682
 Planstraße 2 (evtl. Römerweg?): Qualität etc?	?::projected 19663,9757 19853,9774
 #: XXX PLZ=10318
@@ -741,7 +741,7 @@ Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,1191
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2014-02-08
+#: last_checked: 2014-03-29
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
@@ -885,20 +885,15 @@ Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,13
 # REMVOED --- mitten auf dem Weg wird gerade ein Haus gebaut; außerdem gab es in einem Amtsblatt eine "Entwidmung als Straßenland" --- #: last_checked: 2011-10-03 --- #: next_check: 2012-02-15 --- #: XXX zurzeit Bauarbeiten. Wahrscheinlich Gehwegplatten --- U Zwickauer Damm - U Wutzkyallee: für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 15622,2051 15622,2037 15312,2010
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110922.1205.359607.html vvv --- #: last_checked: 2012-09-16 --- #: next_check: 2013-06-01 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5098 (Verzögerung, März 2013) --- #: priority: #C --- Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,12824 23738,12799 --- #: by: ^^^
 # 
-#: last_checked: 2013-12-26 vvv
-#: check_frequency: 100d vvv
+#: last_checked: 2014-03-29
+#: check_frequency: 90d
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012 vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
-#: XXX fehlen in Berlin.coords.data, PLZ=10318 vvv
-#: XXX ggfs. als Sackgasse eintragen
-Alfred-Siggel-Weg: Qualität nach den Bauarbeiten? Genaue Lage der Straße?	?::inwork 19406,7886 19531,7794
-#: XXX ^^^
-#: by: ^^^
-#: check_frequency: ^^^
-#: last_checked ^^^
+#: XXX fehlt in Berlin.coords.data, PLZ=10318
+Alfred-Siggel-Weg: Qualität nach den Bauarbeiten?	?::inwork 19406,7886 19550,7780 19500,7719
 # 
 #: XXX diese Straßen existieren noch nicht
 #: XXX teilweise fehlen sie auch in Berlin.coords.data
@@ -1793,17 +1788,14 @@ Freesienweg: geplante Straße, wo wird sie genau liegen? Qualität?	?::projected 1
 #: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
-#: last_checked: 2014-02-08 vvv
-#: next_check: 2014-05-08 vvv
+#: last_checked: 2014-03-29 vvv
+#: check_frequency: 60d vvv
 Alzeyweg: genaue Lage? Qualität? PLZ=10365	? 17376,12422 17366,12357 17365,12301
-#: XXX Eintrag in str_cont_ausnahme fehlt
-Nibelungenring: genaue Lage? Qualität? PLZ=10365	? 17474,12344 17484,12405 17432,12413 17376,12422 17337,12428
+Nibelungenring: genaue Lage? Qualität? PLZ=10365	? 17484,12405 17432,12413 17376,12422 17337,12428
 #: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse
 Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17359,12451 17437,12443 17536,12425
 Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17432,12413 17437,12443
-#: XXX Sackgasse
-Hadburgpfad: genaue Lage? Qualität? PLZ=10365	? 17484,12405 17531,12398
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: note ^^^

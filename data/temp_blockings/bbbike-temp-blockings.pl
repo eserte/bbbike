@@ -898,7 +898,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16699,10611 16647,10632 16601,10650 16588,10655 16468,10695 16313,10747 16300,10753 16153,10818 16085,10844 16049,10844
+userdel	1 16699,10611 16647,10632 16601,10650 16597,10651 16468,10695 16313,10747 16300,10753 16153,10818 16085,10844 16049,10844
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -8966,11 +8966,11 @@ EOF
 userdel	2::temp 9642,15038 9718,14888
 EOF
      },
-     { from  => $isodate2epoch->("2013-05-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-05-26 23:59:59"),
+     { from  => $isodate2epoch->("2014-05-24 15:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-05-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 4]], # Kann allerdings auch erst im Mai oder Juni stattfinden
-       text  => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 26 Mai 2013), Fahrtrichtung gesperrt',
+       text  => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 26. Mai 2014), Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/seifenkistenrennen-mehringdamm.htm',
        data  => <<EOF,

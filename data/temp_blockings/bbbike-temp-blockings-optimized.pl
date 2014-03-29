@@ -1184,7 +1184,26 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.xhain.info/termine/seifenkistenrennen-mehringdamm.htm',
+         'data' => 'userdel	1::temp 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890 9229,8785
+',
+         'periodic' => 1,
+         'until' => 1401141599,
+         'from' => 1400936400,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              28,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 26. Mai 2014), Fahrtrichtung gesperrt',
+         'id' => 1050,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3492,15 +3511,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1396047599,
-         'text' => 'Görresstr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
-         'from' => 1379328680,
-         'id' => 2491,
-         'data' => 'userdel	q4::inwork; 5352,7428 5318,7424 5272,7458 5188,7536 5067,7652
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => '131100196',
