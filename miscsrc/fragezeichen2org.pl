@@ -512,6 +512,7 @@ sub _get_dist {
     my($min_dist, $min_p);
     for my $this_p (@$p2s) {
 	next if $inacc_hash->{$this_p};
+	next if $this_p eq '*'; # may happen in gesperrt-orig: entries with category="3" may have a "*" coordinate at the beginning or end
 	my $this_dist = Strassen::Util::strecke_s($p1, $this_p);
 	if (!$min_dist || $min_dist > $this_dist) {
 	    $min_dist = $this_dist;
