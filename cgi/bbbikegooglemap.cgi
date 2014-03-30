@@ -98,7 +98,7 @@ sub run {
 	    close $fh;
 	    close $tmpfh;
 
-	    my $gpx = eval { Strassen->new_by_magic_or_suffix($tmpfile, name => "Uploaded GPX file") };
+	    my $gpx = eval { Strassen->new_by_magic_or_suffix($tmpfile, fallbackname => "Uploaded GPX file") };
 	    if (!$gpx) {
 		if (param('debug')) {
 		    warn "ERROR: gpxfile upload of file '$filename' failed. Detailed error: $@";
