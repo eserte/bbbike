@@ -10777,12 +10777,27 @@ sub plot_sperre {
 	    } elsif ($cat =~ /^@{[ StrassenNetz::BLOCKED_ROUTE ]}(nocross)?/) {
 		my $is_nocross = defined $1;
 		$sub_cat = 'sperre3';
+
+		# Handling for "* x1,y1 x2,y2" or "x1,y1 x2,y2 *"
+		# Currently happens only in gesperrt-orig and gesperrt_car-orig.
+		my $line_shorten_sub;
+		if ($kreuzungen[0] eq '*') {
+		    $line_shorten_sub = \&line_shorten_end;
+		    shift @kreuzungen;
+		    # XXX missing: handling for $kreuzungen[-1] eq '*' (i.e. coordinate list "* x,y *")
+		} elsif ($kreuzungen[-1] eq '*') {
+		    $line_shorten_sub = \&line_shorten_begin;
+		    pop @kreuzungen;
+		} else {
+		    $line_shorten_sub = \&line_shorten;
+		}
+
 		my @c;
 		for(my $i = 0; $i <= $#kreuzungen; $i++) {
 		    push @c, map { transpose(@$_) } Strassen::to_koord1($kreuzungen[$i]);
 		}
 
-		line_shorten(\@c);
+		$line_shorten_sub->(\@c);
 
 		if (!$is_nocross) {
 		    # move to the right
