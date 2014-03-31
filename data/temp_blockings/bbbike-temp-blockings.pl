@@ -21529,11 +21529,11 @@ userdel	2::temp 9281,7795 9281,7651 9300,7312
 userdel	2::temp 10384,8628 10360,8521
 EOF
      },
-     { from  => $isodate2epoch->("2014-01-17 18:00:00"), # 1371189600, # 2013-06-14 08:00
-       until => $isodate2epoch->("2014-01-19 10:00:00"), # 1371419999, # 2013-06-16 23:59
-       text  => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße gesperrt, 18. Januar 2014 18 Uhr bis 19. Januar 2014 10 Uhr',
+     { from  => $isodate2epoch->("2014-04-04 18:00:00"), # 1 Tag Vorlauf --- 1371189600, # 2013-06-14 08:00
+       until => $isodate2epoch->("2014-04-06 10:00:00"), # 1371419999, # 2013-06-16 23:59
+       text  => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, 5. April 2014 18 Uhr bis 6. April 2014 10 Uhr',
        type  => 'gesperrt',
-       source_id => 'IM_021028',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5215.html',
        data  => <<EOF,
 userdel	2::inwork 16201,24354 16156,24284 16123,24232
 EOF
@@ -22638,6 +22638,24 @@ EOF
 #: XXX wann ist die Baustelle fertig?
 #: next_check: 2014-03-27
 userdel	q3::inwork; 13555,15596 13459,15653
+EOF
+     },
+     { from  => 1396047600, # 2014-03-29 00:00
+       until => $isodate2epoch->("2014-08-08 17:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
+       text  => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Masurenstr. und Dolomitenstr Baustelle, Fahrtrichtung gesperrt, 31.03.2014 07 bis Mitte August 2014 ',
+       type  => 'handicap',
+       source_id => 'IM_021583',
+       data  => <<EOF,
+userdel	q4::inwork; 10670,17458 10647,17501 10572,17573
+EOF
+     },
+     { from  => 1391682540, # 2014-02-06 11:29
+       until => 1405440000, # 2014-07-15 18:00
+       text  => 'Waßmannsdorfer Chaussee: zwischen Lockenhuhnweg und Rhodeländerweg Bauarbeiten, Fahrbahn gesperrt, eventuell Behinderungen für Radfahrer, bis Mitte Juli 2014',
+       type  => 'handicap',
+       source_id => 'IM_021231',
+       data  => <<EOF,
+userdel	q4::inwork 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393
 EOF
      },
     );

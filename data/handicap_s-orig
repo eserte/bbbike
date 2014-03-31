@@ -21,7 +21,7 @@ Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfah
 #: valid: ^^^
 #: source_id ^^^
 # 
-#: last_checked: 2014-03-29 vvv
+#: last_checked: 2014-03-30 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -82,14 +82,12 @@ Chausseestr.: Einbahnstraße zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwo
 # 
 #: osm_watch: way id="4412885" version="23" vvv
 #: priority: #A vvv
-#: last_checked: 2014-03-07 vvv
-#: next_check: 2014-03-31 vvv
+#: last_checked: 2014-03-31 vvv
+#: check_frequency: 30d vvv
 # REMOVED (keine Behinderung mehr) --- Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8588,13673 8594,13637
-#: XXX wie sieht es hier mit Änderung der Verkehrsführung aus? vvv
 Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8619,13689 8626,13641
 Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
-#: XXX ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: osm_watch ^^^
@@ -151,8 +149,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2014-03-07 vvv
-#: next_check: 2014-03-31 vvv
+#: last_checked: 2014-03-31 vvv
 #: priority: #A vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -161,16 +158,25 @@ Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg auswei
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5212.html
 #: XXX ab 2014-03-31 wird dieser Abschnitt voll gesperrt --- werden Radfahrer irgendwie passieren können?
 #: XXX Eichendorffstr. wird von der Invalidenstr. evtl. nicht zugänglich sein
-Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9383,13986 9274,13963 9203,13953 9151,13941
-Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844 8690,13723
+Caroline-Michaelis-Str.: Bauarbeiten	q4::inwork 9151,13941 9125,13973 9070,14058
+#: check_frequency: 3d
+Invalidestr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Caroline-Michaelis-Str. gesperrt	q4::inwork; 9383,13986 9274,13963 9203,13953 9151,13941
+# XXX #: source_id: IM_021586
+# XXX Invalidenstr. (Mitte): Baustelle, zwischen Eichendorffstr. und Gartenstr. in beiden Richtungen gesperrt	q4::inwork 9383,13986 9274,13963 9203,13953
+# XXX Invalidenstr. (Mitte): Baustelle, zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
+#: check_frequency: 30d
+#: source_id: IM_021585
+#: note: Ausweichen mittlerweile auf dem südlichen Bürgersteig
+Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844 8690,13723
 # REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8659,13708 8626,13692 8619,13689
-#: XXX ab 2014-03-31 wird die Einbahnstraßeregelung aufgehoben
+# XXX (demnächst wird die Einbahnstraßeregelung aufgehoben)
+#: check_frequency: 3d
 Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
-#: XXX ab 2014-03-31 wird die Zufahrt zur Invalidenstraße nicht mehr möglich sein (Sackgasse), zumindest für Autofahrer --- was ist mit Fußgängern/schiebenden Radfahrern?
+# XXX (demnächst wird die Zufahrt zur Invalidenstraße nicht mehr möglich sein (Sackgasse), zumindest für Autofahrer --- was ist mit Fußgängern/schiebenden Radfahrern?)
+#: check_frequency: 3d
 Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
 # REMOVED (wieder offen ab 2013-08-29) --- #: source_id: IM_019009 --- #: source_id: IM_018437 --- Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: priority ^^^
-#: next_check ^^^
 #: last_checked: ^^^
 #: next_check_id ^^^
 # 
@@ -214,7 +220,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-03-28
+#: last_checked: 2014-03-31
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -319,7 +325,6 @@ Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 #: XXX ^^^
 #: next_check_id ^^^
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
-Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13927,12370
 Otto-Ludwig-Str.: Fußgängerzone	q2 4862,10881 4954,10876

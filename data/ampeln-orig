@@ -1541,7 +1541,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7138,15437
 	X 6996,15319
 	X 7263,14873
-# temporär entfernt, siehe unten ---	F 8626,13692
+	F 8626,13692
 # REMOVED (gibt es nicht mehr) --- #: XXX temporäre Baustellenampel; bleibt diese erhalten oder gibt es nach den Bauarbeiten nur noch die Fußgängerampel (siehe oben) --- #: last_checked: 2013-05-27 --- #: next_check: 2013-12-31 (Invalidenstr.) ---	X 8619,13689
 	X 8456,15235
 	X 9443,15430
@@ -2455,12 +2455,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2014-02-28
+#: last_checked: 2014-03-31
 #: next_check: 2014-05-29
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2014-03-21 vvv
+#: last_checked: 2014-03-31 vvv
 #: next_check: 2014-12-31 vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2494,12 +2494,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork 8313,13839
 	X::inwork 8450,13599
 	X::inwork 8775,13606
-	X::inwork 9085,13919
-#: valid: 2014-03-31-
-	X::inwork 9070,14058
+# REMOVED (existiert nicht mehr) ---	X::inwork 9085,13919
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
+	X 9070,14058
 	F 17117,18761
 #: by: Stefan Klinkusch:
 	F -7762,14067

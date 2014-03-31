@@ -1085,6 +1085,7 @@ Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14270,9710
 Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
+Am Zirkus	1s:q4 9167,13046 9239,12923
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2462,7 +2463,24 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2014-02-28 vvv
+# XXX demnächst:
+# XXX #: next_check_id: INVALIDEN-2014 vvv
+# XXX #: next_check: 2014-03-30 vvv
+# XXX Schwarzer Weg: Abbiegen in die Invalidenstr. nicht möglich	3 8426,13909 8574,13666 *
+# XXX Schwarzer Weg: Abbiegen aus der Invalidenstr. nicht möglich	3 * 8574,13666 8426,13909
+# XXX #: next_check ^^^
+# XXX #: next_check_id ^^^
+# 
+#: next_check_id: INVALIDEN-2014 vvv
+#: last_checked: 2014-03-31 vvv
+#: check_frequency: 30d vvv
+Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9015,14014 9085,13919 *
+Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 * 9085,13919 9015,14014
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
+#: last_checked: 2014-03-31 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 10008,12274 9994,12368 9996,12401
 Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 9943,12364 9961,12273
@@ -2503,12 +2521,7 @@ Wilhelm-Hoff-Str.: Weg noch nicht fertig	2::inwork 19033,3397 19057,3422
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13299
 # 
 # REMOVED (anscheinend ist ein Viertel der Treppe zugänglich, siehe http://berlinerbaustellen.blogspot.de/2014/01/0246-gastbaustelle-potsdam-potsdamer.html) --- : last_checked: 2014-01-11 --- Alter Markt - Uferweg: Zugang höchstwahrscheinlich gesperrt	2::inwork -12608,-1715 -12625,-1703 -12643,-1694
-# 
-#: next_check_id: AMZIRKUS-2014
-#: XXX oder bleibt die Einbahnstraßenregelung permanent?
-#: XXX_prog 1s:q4:inwork geht als Kategorie nicht, falsche Übersetzung!
-#: last_checked: 2014-03-07
-Am Zirkus: Einbahnstraße	1s:q4 9118,13070 9137,13032 9167,13046 9239,12923
+# REMOVED (Einbahnstraße in "Am Zirkus" bleibt wohl permanent, Schild sieht nicht temporär aus) #: next_check_id: AMZIRKUS-2014 --- #: XXX oder bleibt die Einbahnstraßenregelung permanent? --- #: XXX_prog 1s:q4:inwork geht als Kategorie nicht, falsche Übersetzung! --- #: last_checked: 2014-03-07
 # 
 #: next_check_id: STADTGARTENMOABIT-2014
 #: last_checked: 2014-03-07 (Bauarbeiten)
@@ -2543,6 +2556,7 @@ tragen (2 Stufen)	0:5 8818,13365
 #: next_check_id: EMILSCHULZ-2014
 #: source_id: INKO_095722_COPY_1
 #: XXX siehe auch routing_helper addition
+#: XXX bei VMZ wurde der Eintrag entfernt (2014-03-31) --- was nun?
 #: priority: #A
 #: last_checked: 2013-09-04
 #: next_check: 2014-03-31
@@ -2643,8 +2657,8 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert?
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2014-01-04
-#: next_check: 2014-05-04
+#: last_checked: 2014-03-31
+#: next_check: 2014-09-30
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
 #: next_check_id: BER-20XX
@@ -2724,20 +2738,12 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: last_checked: ^^^
 #: next_check_id: ^^^
 # 
-#: last_checked: 2014-01-04
-#: next_check: 2014-07-01
+#: last_checked: 2014-03-31
+#: next_check: 2015-03-31
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 # REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5062,6295 4997,6331 4971,6345
-# 
-#: next_check_id: INVALIDEN-2014
-#: last_checked: 2014-02-10
-#: next_check: 2014-03-31
-#: XXX "die Ausfahrt über Invalidenstraße zur Caroline-Michaelis-Straße ist aber möglich" --- wenn das stimmt, dann entfernen, oder wird das hier eine Einbahnstraße werden?
-#: priority: #A
-#: valid: -20140331
-Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
-# 
+# REMOVED --- #: next_check_id: INVALIDEN-2014 --- #: last_checked: 2014-02-10 --- #: next_check: 2014-03-31 --- #: XXX "die Ausfahrt über Invalidenstraße zur Caroline-Michaelis-Straße ist aber möglich" --- wenn das stimmt, dann entfernen, oder wird das hier eine Einbahnstraße werden? --- #: priority: #A --- #: valid: -20140331 --- Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4106.html --- #: next_check: 2011-09-01 --- Ella-Trebe-Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 7937,13109 7941,13014 7948,12918
 # REMOVED --- #: last_checked: 2011-03-04 --- #: next_check: 2011-05-15 --- Brüderstr.: Bauarbeiten, gesperrt	2:inwork 10385,11985 10284,12113
 # REMOVED --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183

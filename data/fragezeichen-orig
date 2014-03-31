@@ -58,12 +58,12 @@ Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork; 3734,12715 3716,12
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 4.12 (Realisierung nach 2011) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn noch nicht 2012) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: osm_watch: way id="38523780" version="4" --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130517.0940.384950.html (bis Herbst 2013) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130802.1020.387484.html --- #: last_checked: 2013-06-12 --- #: next_check: 2013-09-23 --- Lise-Meitner-Str.: Radspuren werden hier 2013 markiert	?::inwork 3711,13202 3721,13274 3732,13346 3742,13416 3741,13495 3739,13563 3724,13702 3713,13787 3702,13865 3695,13902
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
-#: osm_watch: way id="4609212"  version="7"
+#: osm_watch: way id="4609212"  version="8"
 #: osm_watch: way id="25113713" version="11"
-#: osm_watch: way id="4752742"  version="7"
-#: osm_watch: way id="4752743"  version="8"
+#: osm_watch: way id="4752742"  version="8"
+#: osm_watch: way id="4752743"  version="9"
 #: osm_watch: way id="8049679"  version="9"
-#: osm_watch: way id="8049678"  version="6"
+#: osm_watch: way id="8049678"  version="7"
 #: last_checked: 2013-09-19
 #: check_frequency: 180d
 Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2706,13291 -2728,13269 -2974,13188 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
@@ -308,7 +308,7 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
-#: last_checked: 2014-03-23
+#: last_checked: 2014-03-30
 #: next_check: 2014-05-23
 Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
@@ -3751,3 +3751,7 @@ Poetensteig (Woltersdorf): nur für Radfahrer/Fußgänger oder auch für Autos? Geht
 Ahornallee (Woltersdorf): Qualität im mittleren und südlichen Abschnitt?	? 32630,6179 32623,6134 32601,5936 32588,5816 32583,5779 32573,5705 32560,5574
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2014 (Widmung)
 Rudolf-Leonhard-Str. - Blumberger Damm: Qualität des Rad/Gehweg?	? 21455,16330 21574,16547
+#: by: http://www.potsdam.de/sites/default/files/documents/endfassung_abl_pdmstadt_03_2014_2.pdf (Teileinziehung)
+#: XXX Straße wird demnächst teilweise für den Kfz-Verkehr gesperrt (die letzten 60 Meter im Süden)
+#: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14469
+Am Heineberg (Potsdam): Qualität?	? -17646,1636 -17599,1890 -17597,2000 -17624,2037 -17651,2197 -17555,2301 -17292,2539

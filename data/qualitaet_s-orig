@@ -272,7 +272,7 @@ Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14708,11820 14783,11949 14836,12045 
 Glatzer Str.: Kopfsteinpflaster	Q2 14577,11582 14645,11670
 Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15477,11338 15303,11412 15220,11440 15162,11458
 Wiesenweg (Lichtenberg): Asphalt	Q0 15162,11458 15055,11505
-Wartenbergstr. (Lichtenberg): Kopfsteinpflaster	Q2 15220,11440 15300,11584
+Wartenbergstr. (Lichtenberg): schlechtes Kopfsteinpflaster	Q3+ 15220,11440 15300,11584
 Wartenbergstr. (Lichtenberg): Asphalt	Q0 15300,11584 15328,11636
 Wartenbergstr. (Lichtenberg): Beton	Q0 15328,11636 15337,11639 15423,11667
 Tasdorfer Str.: Asphalt	Q0- 15303,11412 15355,11513
@@ -1551,7 +1551,7 @@ Paul-und-Paula-Ufer: Parkweg	Q1 15261,10167 15204,10201 15134,10243 15101,10263 
 Paul-und-Paula-Ufer: Beton	Q0 14892,10411 14864,10451 14868,10467 14884,10508
 Paul-und-Paula-Ufer: Asphalt	Q0 14884,10508 14911,10587 14937,10598 14990,10581 15056,10625 15101,10640
 #: XXX dieser Abschnitt wird gerade neu gemacht
-#: last_checked: 2014-03-22
+#: last_checked: 2014-03-30
 Paul-und-Paula-Ufer: Parkweg	Q1 15101,10640 15248,10562
 Uferweg: Parkweg	Q1 15314,10121 15260,10048 15295,10022 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15545,9818 15583,9779 15626,9710
@@ -2641,6 +2641,9 @@ Mauerweg: Asphalt	Q0 14433,1739 14641,1771 14676,1777 14784,1725 14876,1686 1520
 (Am Rudower Flieﬂ): Verbundsteinpflaster	Q1 15821,26 15843,4
 (Am Rudower Flieﬂ): wassergebundene Decke	Q1 15819,-24 15843,4 15891,53 15921,94
 (Am Rudower Flieﬂ): wassergebundene Decke	Q1 15891,53 15949,53
+#: XXX nach den Bauarbeiten vielleicht bessere Qualit‰t?
+#: source_id: IM_021231
+#: next_check: 2014-07-15
 Waﬂmannsdorfer Chaussee: asphaltiert mit Straﬂensch‰den	Q1 16536,26 16477,-160 16431,-311 16400,-409 16373,-496 16273,-824
 (Mauerweg): Asphalt	Q0 18127,-367 18218,-325 18256,-309
 (Landschaftspark Rudow): Gehwegplatten	Q0- 18385,-173 17973,428
@@ -12751,7 +12754,7 @@ Brunhildstr.: grobes Kopfsteinpflaster	Q3 7790,8913 7707,8915 7604,8927
 Am B‰kequell: gutes Kopfsteinpflaster	Q1 4593,5235 4656,5101
 # 
 #: by: holger (hd, sav):
-Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9125,13973
+Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9125,13973 9151,13941
 # 
 #: by: Bertil: vvv
 #: note: er war sich nicht sicher, Best‰tigung durch ˆffentliche Fotos
@@ -23158,7 +23161,7 @@ Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
 Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: next_check_id: AMZIRKUS-2014
 #: XXX danach wohl Q0
-#: last_checked: 2014-03-07
+#: last_checked: 2014-03-31
 Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938
