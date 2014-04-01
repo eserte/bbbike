@@ -73,24 +73,27 @@ var routelistPopup;
 
 var defaultLatLng = [52.516224, 13.377463]; // Brandenburger Tor, good for Berlin
 
-var base_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/mapnik-german' // will be mapnik-german-srt some day
-                             ,'devel1':'http://z.tile.bbbike.org/osm/mapnik-german'
-                             ,'devel2':'http://z.tile.bbbike.org/osm/mapnik-german-srt'
-                             ,'mapnik-bbbike':'http://z.tile.bbbike.org/osm/mapnik-german-srt' // will point to non-z some day
+var base_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike'
+                             ,'devel1':'http://z.tile.bbbike.org/osm/bbbike'
+                             ,'devel2':'http://z.tile.bbbike.org/osm/mapnik-german'
                              ,'mapnik-osm':'http://{s}.tile.bbbike.org/osm/mapnik'
-                             ,'mapnik-german':'http://tile.bbbike.org/osm/mapnik-german'
+                             ,'mapnik-german':'http://{s}.tile.bbbike.org/osm/mapnik-german'
                            };
 var smoothness_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-smoothness'
                                    ,'devel1':'http://z.tile.bbbike.org/osm/bbbike-smoothness'
-                                   ,'devel2':'http://z.tile.bbbike.org/osm/bbbike-smoothness'
-                                   ,'mapnik-bbbike':'http://z.tile.bbbike.org/osm/bbbike-smoothness' // will point to non-z some day
-                                   ,'mapnik-osm':'http://{s}.tile.bbbike.org/osm/bbbike-smoothness'
-                                   ,'mapnik-german':'http://{s}.tile.bbbike.org/osm/bbbike-smoothness'
                                  };
+var handicap_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-handicap'
+                                 ,'devel1':'http://z.tile.bbbike.org/osm/bbbike-handicap'
+                               };
+var cycleway_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-cycleway'
+                                 ,'devel1':'http://z.tile.bbbike.org/osm/bbbike-cycleway'
+                               };
 
 var mapset = q.get('mapset') || 'stable';
 var base_map_url = base_map_url_mapping[mapset] || base_map_url_mapping['stable'];
 var smoothness_map_url = smoothness_map_url_mapping[mapset] || smoothness_map_url_mapping['stable'];
+var handicap_map_url = handicap_map_url_mapping[mapset] || handicap_map_url_mapping['stable'];
+var cycleway_map_url = cycleway_map_url_mapping[mapset] || cycleway_map_url_mapping['stable'];
 var accel;
 
 /*
@@ -203,6 +206,12 @@ function doLeaflet() {
     var bbbikeOrgSmoothnessUrl = smoothness_map_url + '/{z}/{x}/{y}.png';
     var bbbikeSmoothnessTileLayer = new L.TileLayer(bbbikeOrgSmoothnessUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
+    var bbbikeOrgHandicapUrl = handicap_map_url + '/{z}/{x}/{y}.png';
+    var bbbikeHandicapTileLayer = new L.TileLayer(bbbikeOrgHandicapUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+
+    var bbbikeOrgCyclewayUrl = cycleway_map_url + '/{z}/{x}/{y}.png';
+    var bbbikeCyclewayTileLayer = new L.TileLayer(bbbikeOrgCyclewayUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+
     var osmMapnikUrl = use_osm_de_map ? 'http://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png' : 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
     var osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
@@ -218,6 +227,8 @@ function doLeaflet() {
     var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer };
     var overlayMaps = {};
     overlayMaps[M("Qualit\u00e4t")] = bbbikeSmoothnessTileLayer;
+    overlayMaps[M("Handicaps")] = bbbikeHandicapTileLayer;
+    overlayMaps[M("Radwege")] = bbbikeCyclewayTileLayer;
 
     var layersControl = new L.Control.Layers(baseMaps, overlayMaps);
     map.addControl(layersControl);
