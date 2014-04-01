@@ -12,7 +12,7 @@
 # 
 #: source_id: IM_021244 vvv
 #: valid: -20140320 vvv
-#: last_checked: 2014-03-19 vvv
+#: last_checked: 2014-04-01 vvv
 #: next_check: 2014-04-15 vvv
 Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651
 Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 13467,11778
@@ -68,7 +68,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwo
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html (Abschluss der Arbeiten im März 2014)
 #: source_id: IM_020581 ("bis Ende 2014")
-#: last_checked: 2014-02-10 vvv
+#: last_checked: 2014-04-01 vvv
 #: next_check: 2014-04-02 vvv
 #: priority: #A vvv
 #: valid: -20140402
@@ -82,7 +82,7 @@ Chausseestr.: Einbahnstraße zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwo
 # 
 #: osm_watch: way id="4412885" version="23" vvv
 #: priority: #A vvv
-#: last_checked: 2014-03-31 vvv
+#: last_checked: 2014-04-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED (keine Behinderung mehr) --- Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8588,13673 8594,13637
 Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8619,13689 8626,13641
@@ -149,7 +149,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2014-03-31 vvv
+#: last_checked: 2014-04-01 vvv
 #: priority: #A vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -160,37 +160,31 @@ Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg auswei
 #: XXX Eichendorffstr. wird von der Invalidenstr. evtl. nicht zugänglich sein
 Caroline-Michaelis-Str.: Bauarbeiten	q4::inwork 9151,13941 9125,13973 9070,14058
 #: check_frequency: 3d
-Invalidestr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Caroline-Michaelis-Str. gesperrt	q4::inwork; 9383,13986 9274,13963 9203,13953 9151,13941
+Invalidestr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Caroline-Michaelis-Str. gesperrt	q4::inwork; 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941
 # XXX #: source_id: IM_021586
-# XXX Invalidenstr. (Mitte): Baustelle, zwischen Eichendorffstr. und Gartenstr. in beiden Richtungen gesperrt	q4::inwork 9383,13986 9274,13963 9203,13953
+# XXX Invalidenstr. (Mitte): Baustelle, zwischen Eichendorffstr. und Gartenstr. in beiden Richtungen gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953
 # XXX Invalidenstr. (Mitte): Baustelle, zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
 #: check_frequency: 30d
 #: source_id: IM_021585
 #: note: Ausweichen mittlerweile auf dem südlichen Bürgersteig
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844 8690,13723
 # REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8659,13708 8626,13692 8619,13689
-# XXX (demnächst wird die Einbahnstraßeregelung aufgehoben)
-#: check_frequency: 3d
-Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
-# XXX (demnächst wird die Zufahrt zur Invalidenstraße nicht mehr möglich sein (Sackgasse), zumindest für Autofahrer --- was ist mit Fußgängern/schiebenden Radfahrern?)
-#: check_frequency: 3d
-Schwarzer Weg: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8426,13909 8574,13666
+# REMOVED (2014-03-01 wurde die Einbahnstraßeregelung aufgehoben) --- Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
+Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (wieder offen ab 2013-08-29) --- #: source_id: IM_019009 --- #: source_id: IM_018437 --- Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: priority ^^^
 #: last_checked: ^^^
 #: next_check_id ^^^
 # 
-#: last_checked: 2014-03-07 (Bauarbeiten wegen Neubau)
-#: check_frequency: 60d
-Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
-# 
+# REMOVED (seit 2014-04-01 wieder offen?) --- #: last_checked: 2014-03-07 (Bauarbeiten wegen Neubau) --- #: check_frequency: 60d --- Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2013-11-12 --- #: next_check: 2014-01-15 --- Siemensstr.: Bauarbeiten, Einbahnstraße, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
 # 
-#: last_checked: 2014-03-07 vvv
+#: last_checked: 2014-04-01 vvv
 #: check_frequency: 60d vvv
-Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7941,13014 7872,13022
+Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7939,13026 7872,13022
 # REMOVED (nicht mehr) --- Ella-Trebe-Str./Bertha-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7872,13022 7867,13106
 Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7867,13106 7937,13109
+Ella-Trebe-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7948,12918
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -383,7 +377,7 @@ Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 12987,10007 129
 Görlitzer Park: Fußgänger	q2 12509,10189 12502,10244
 Tiergartenufer: Fußgänger	q1 6186,11466 6079,11524 5940,11616 5903,11683 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg, Fußgänger	q1 6309,11443 6186,11466
-Tiergarten: Parkweg, Fußgänger	q2 5666,11362 5727,11573 5758,11630 5780,11622 5802,11672 5831,11697 5818,11722 5835,11768 5858,11863 5900,11913
+Tiergarten: Parkweg, Fußgänger	q2 5666,11362 5727,11573 5748,11610 5776,11625 5802,11677 5826,11682 5831,11697 5818,11722 5835,11768 5858,11863 5900,11913
 Fasanerieallee: Parkweg	q1 6435,11606 6459,11638 6540,11754 6685,11954
 Große Sternallee: Parkweg	q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	q1 7356,11517 7362,11561 7373,11594
@@ -1940,6 +1934,8 @@ Schwarzwurzel-Park: Bordstein, Fußgänger, Spielplatz	q3 20698,18359 20814,18341 
 (Pasewalker Str. - Prenzlauer Promenade): Fußgänger	q4 11913,19144 11928,19133 11947,19161 11958,19158
 (Flaschenhalspark, Weg entlang den Bahngleisen): einige Fußgänger	q1 8423,9532 8414,9366 8393,9293 8374,9291
 (Flaschenhalspark, Zugang): Rampe	q2 8353,9072 8367,9006 8374,9074
+#: XXX_prog BS, zumindest an der Borsigstr., ansonsten trotzdem q3
+(Invalidenstr. - Borsigstr.): Fußgänger, Spielplatz, Bordsteine	q3 9285,13965 9321,13882 9316,13870
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

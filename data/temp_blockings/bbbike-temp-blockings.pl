@@ -4315,7 +4315,7 @@ EOF
        text  => 'Invalidenstraße, Prenzlauer Berg Richtung Tiergarten Zwischen Kreuzung Gartenstraße und Kreuzung Chausseestraße Baustelle, gesperrt, Dauer: 19.04.2006 09:00 Uhr bis 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9383,13986 9274,13963 9203,13953
+userdel	2 9383,13986 9285,13965 9274,13963 9203,13953
 userdel	2 9151,13941 9203,13953
 userdel	2 9151,13941 9085,13919
 userdel	2 9085,13919 8935,13844
@@ -19289,7 +19289,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017330',
        data  => <<EOF,
-userdel	q4::inwork; 9383,13986 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
+userdel	q4::inwork; 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
 EOF
      },
      { from  => 1308261600, # 2011-06-17 00:00
@@ -22485,14 +22485,13 @@ userdel	2::inwork 13797,7267 13761,7328
 EOF
      },
      { from  => 1393624717, # 2014-02-28 22:58
-       until => 1397512800, # 2014-04-15 00:00
+       until => 1396375553, # 1397512800, # 2014-04-15 00:00
        text  => 'Großgörschenstr.: die Unterführung an der S-Bahn ist gesperrt, bis voraussichtlich April 2014',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.punkt3.de/cms/files/2014-02_punkt3.pdf
 #: by: http://www.lars-oberg.de/aus_dem_wahlkreis/6278820.html
-#: XXX prüfen, ob schon früher geöffnet wird?
-#: next_check: 2014-04-01
+# REMOVED (mittlerweile passierbar) --- #: XXX prüfen, ob schon früher geöffnet wird? --- #: next_check: 2014-04-01
 userdel	2::inwork 7882,9490 7960,9466
 EOF
      },
@@ -22554,8 +22553,8 @@ userdel	q4::inwork 7373,14566 7314,14599
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
-       until => 1400860800, # 2014-05-23 18:00
-       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Eldenaer Brücke und Paul-Junius-Str., gesperrt 17.03.2014 08:00 Uhr bis 23.05.2014 18:00 Uhr ',
+       until => $isodate2epoch->("2014-04-04 08:00:00"), # 1400860800, # 2014-05-23 18:00
+       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Eldenaer Brücke und Paul-Junius-Str., gesperrt 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_021474',
        data  => <<EOF,

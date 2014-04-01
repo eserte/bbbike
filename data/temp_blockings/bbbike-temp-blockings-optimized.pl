@@ -2612,7 +2612,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -3933,19 +3933,7 @@ userdel	2::inwork 2219,11304 2116,11288
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1397512800,
-         'text' => 'Großgörschenstr.: die Unterführung an der S-Bahn ist gesperrt, bis voraussichtlich April 2014',
-         'from' => 1393624717,
-         'id' => 2542,
-         'data' => '#: by: http://www.punkt3.de/cms/files/2014-02_punkt3.pdf
-#: by: http://www.lars-oberg.de/aus_dem_wahlkreis/6278820.html
-#: XXX prüfen, ob schon früher geöffnet wird?
-#: next_check: 2014-04-01
-userdel	2::inwork 7882,9490 7960,9466
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Uferweg wegen Bauarbeiten gesperrt',
@@ -3993,8 +3981,8 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
        undef,
        {
          'source_id' => 'IM_021474',
-         'until' => 1400860800,
-         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Eldenaer Brücke und Paul-Junius-Str., gesperrt 17.03.2014 08:00 Uhr bis 23.05.2014 18:00 Uhr ',
+         'until' => 1396591200,
+         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Eldenaer Brücke und Paul-Junius-Str., gesperrt 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
          'from' => 1394953200,
          'id' => 2549,
          'data' => 'userdel	q4::inwork; 15010,12855 15074,12850 15098,12849
