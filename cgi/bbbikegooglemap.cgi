@@ -1238,9 +1238,9 @@ EOF
 	var server = list [ parseInt( Math.random() * list.length ) ];
 
 	if (false) {
-	    return "http://" + server + ".tile.bbbike.org/osm/mapnik/"        + z + "/" + a.x + "/" + a.y + ".png";
+	    return "http://" + server + ".tile.bbbike.org/osm/mapnik/" + z + "/" + a.x + "/" + a.y + ".png";
 	} else {
-	    return "http://" + server + ".tile.bbbike.org/osm/mapnik-german/" + z + "/" + a.x + "/" + a.y + ".png";
+	    return "http://" + server + ".tile.bbbike.org/osm/bbbike/" + z + "/" + a.x + "/" + a.y + ".png";
 	}
     }
 
