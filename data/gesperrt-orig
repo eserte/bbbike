@@ -2463,20 +2463,12 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-# XXX demnächst:
-# XXX #: next_check_id: INVALIDEN-2014 vvv
-# XXX #: next_check: 2014-03-30 vvv
-# XXX Schwarzer Weg: Abbiegen in die Invalidenstr. nicht möglich	3 8426,13909 8574,13666 *
-# XXX Schwarzer Weg: Abbiegen aus der Invalidenstr. nicht möglich	3 * 8574,13666 8426,13909
-# XXX #: next_check ^^^
-# XXX #: next_check_id ^^^
-# 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2014-03-31 vvv
-#: check_frequency: 30d vvv
-Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9015,14014 9085,13919 *
-Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 * 9085,13919 9015,14014
-#: check_frequency ^^^
+#: next_check: 2014-09-01 vvv
+Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 *
+Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 * 9085,13919 9011,14019
+#: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -2570,7 +2562,7 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 #: XXX siehe auch Busspur in radwege-orig vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
-#: last_checked: 2014-02-28 vvv
+#: last_checked: 2014-04-02 vvv
 #: check_frequency: 90d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -2583,7 +2575,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: next_check_id ^^^
 # 
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2014-03-07
+#: last_checked: 2014-04-02
 #: next_check: 2015-08-30
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 # 
@@ -2664,8 +2656,8 @@ Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht mögl
 #: next_check_id: BER-20XX
 #: last_checked: 2012-05-06
 #: next_check: 2015-01-01
-#: osm_watch: way id="127091100" version="8" brb
-#: osm_watch: way id="54500456" version="10" brb
+#: osm_watch: way id="127091100" version="9" brb
+#: osm_watch: way id="54500456" version="11" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 # 
 # REMOVED (wahrscheinlich sind Sperrungen hier selten) --- #: last_checked: 2013-11-12 --- #: check_frequency: 90d --- Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8186,14150 8238,14181
@@ -2727,7 +2719,7 @@ An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2014-02-05 vvv
+#: last_checked: 2014-04-02 vvv
 #: next_check: 2014-06-01 vvv
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
@@ -2905,7 +2897,7 @@ Clayallee: Mittelstreifen	3nocross 1136,3878 1152,3918 1214,4075
 Argentinische Allee: Mittelstreifen	3nocross 623,4902 844,4916 922,4910
 # XXX --- zurzeit (2012-03-16) wegen Bauarbeiten Einbahnstraße in andere Richtung --- Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12760
-Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8548,13577
+# REMOVED (-> handicap) --- Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8548,13577
 tragen (ca. 20 Stufen)	0:45 8536,12758
 #: note: abgeschätzt, wie das nördliche Gegenstück
 tragen (35 Stufen)	0:45 8507,12873

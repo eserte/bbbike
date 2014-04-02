@@ -4553,7 +4553,7 @@ EOF
        text  => 'Straße am Nordbahnhof zwischen Invalidenstraße und Zinnowitzer Veranstaltung, Straße gesperrt. Dauer: 18.05.2006, 06:00 Uhr bis 21.05.2006 12:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9085,13919 9015,14014
+userdel	2 9085,13919 9011,14019
 EOF
      },
      { from  => 1148162400, # 2006-05-21 00:00
@@ -10649,7 +10649,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007211',
        data  => <<EOF,
-userdel	1::inwork 8935,13844 8879,13913
+userdel	1::inwork 8935,13844 8870,13926
 EOF
      },
      { from  => 1195513200, # 2007-11-20 00:00
@@ -21705,9 +21705,9 @@ EOF
 #: osm_watch: way id="83106248" version="15" brb
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 #: osm_watch: way id="60482011" version="25" brb
-#: osm_watch: way id="192153919" version="2" brb
-#: osm_watch: way id="192153925" version="5" brb
-#: osm_watch: way id="136089841" version="18" brb
+#: osm_watch: way id="192153919" version="3" brb
+#: osm_watch: way id="192153925" version="6" brb
+#: osm_watch: way id="136089841" version="19" brb
 	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
 	2 19131,-2145 19198,-2118
 	2 19909,-2863 19996,-2880
