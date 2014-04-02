@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2012,2013,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,15 +26,42 @@ my $do_distinguish_dir = 0;
 my @scale_widths = (0.25, 0.5, 0.75, 1, 1.5, 2);
 my $logarithmic = undef;
 my $is_coordssession_data;
+my $do_last_12_months;
 if (!GetOptions("logarithmic=f" => \$logarithmic,
 		"f" => \$force,
 		"o=s" => \$out,
 		"scalewidths!" => \$do_scale_widths,
 		"distinguish-dir!" => \$do_distinguish_dir,
 		"coordssession-data!" => \$is_coordssession_data,
+		"last12months" => \$do_last_12_months,
 	       )) {
     die "usage";
 }
+
+if ($do_last_12_months) {
+    if (!@ARGV) {
+	die "-last12months needs the last .bbd as input file\n";
+    }
+    if (@ARGV != 1) {
+	die "Please specify exactly one .bbd as input file for -last12months options\n";
+    }
+    if (my($before,$y,$sep,$m,$after) = $ARGV[0] =~ m{^(.*)(2\d{3})(\D*)(0\d|10|11|12)(.*)$}) {
+	for (1..12) {
+	    $m--;
+	    if ($m < 1) { $y--; $m = 12 }
+	    my $new_file = sprintf "%s%04d%s%02d%s", $before, $y, $sep, $m, $after;
+	    if (-s $new_file) {
+		unshift @ARGV, $new_file;
+	    } else {
+		warn "File $new_file not found, skipping...\n";
+	    }
+	}
+	warn "Files found:\n" . join("\n", map { "  $_" } @ARGV) . "\n";
+    } else {
+	die "Cannot parse year and month out of '$ARGV[0]'\n";
+    }
+}
+
 if (!defined $out) {
     die "Specify out file with -o option!";
 }
@@ -235,6 +262,11 @@ packed in a zip file):
     ~/src/bbbike/miscsrc/coordssession2bbd coordssession-$YYYYMM.zip > $WEIGHTEDTMP/$YYYYMM.bbd
     ~/src/bbbike/miscsrc/weight_bbd                  -logarithmic=2.5 -f $WEIGHTEDTMP/$YYYYMM.bbd -o $WEIGHTEDTMP/${YYYYMM}_weighted_25.bbd
     ~/src/bbbike/miscsrc/weight_bbd -distinguish-dir -logarithmic=2.5 -f $WEIGHTEDTMP/$YYYYMM.bbd -o $WEIGHTEDTMP/${YYYYMM}_weighted_dir_25.bbd
+
+Create a plot of last 12 months (also needs defined C<YYYYMM> and
+C<WEIGHTEDTMP>):
+
+    ~/src/bbbike/miscsrc/weight_bbd -distinguish-dir -logarithmic=2.5 -f $WEIGHTEDTMP/$YYYYMM.bbd -o $WEIGHTEDTMP/${YYYYMM}_last12months_weighted_dir_25.bbd -last12months
 
 Create a yearly plot (prerequisite: monthly bbd files from
 coordssession2bbd):
