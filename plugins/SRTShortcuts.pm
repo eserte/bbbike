@@ -488,12 +488,12 @@ EOF
 		    }
 		},
 		do {
-		    my $glob = "$bbbike_rootdir/tmp/weighted/????_weighted_dir_*.bbd";
+		    my $glob = "$bbbike_rootdir/tmp/weighted/????-??_last12months_weighted_dir_*.bbd";
 		    require File::Glob;
 		    my @candidates = File::Glob::bsd_glob($glob);
 		    if (!@candidates) {
 			warn <<EOF;
-No candidates for a yearly weighted bbd found
+No candidates for a weighted bbd for last 12 months found
 (tried the glob $glob).
 Please create a file using $bbbike_rootdir/miscsrc/weight_bbd
 (see documentation there)
@@ -502,10 +502,10 @@ EOF
 		    } else {
 			my($latest) = sort { $b cmp $a } @candidates;
 			my $date_desc;
-			if ($latest =~ m{/(\d{4})_}) {
-			    $date_desc = " (for year $1)";
+			if ($latest =~ m{/(\d{4}-\d{2})}) {
+			    $date_desc = " (last 12 months from $1)";
 			} else {
-			    $date_desc = " (unknown year)";
+			    $date_desc = " (unknown period)";
 			}
 			layer_checkbutton([$do_compound->("Weighted matches$date_desc")],
 					  'str', $latest,
