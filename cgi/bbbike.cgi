@@ -5779,7 +5779,7 @@ sub draw_route {
 		    $BBBikeDraw::BBBikeGoogleMaps::maptype = $BBBikeDraw::BBBikeGoogleMaps::maptype;
 		}
 		$BBBikeDraw::BBBikeGoogleMaps::bbbike_googlemaps_url = _bbbikegooglemap_url();
-		$BBBikeDraw::BBBikeGoogleMaps::maptype = "bbbikeorg";
+		$BBBikeDraw::BBBikeGoogleMaps::maptype = "BBBike";
 	    }
 	} elsif ($q->param('imagetype') eq 'googlemapsstatic') {
 	    $bbbikedraw_args{Module} = "GoogleMapsStatic";
