@@ -88,12 +88,20 @@ var handicap_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike
 var cycleway_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-cycleway'
                                  ,'devel1':'http://z.tile.bbbike.org/osm/bbbike-cycleway'
                                };
+var unlit_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-unlit'
+                              ,'devel1':'http://z.tile.bbbike.org/osm/bbbike-unlit'
+                            };
+var green_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-green'
+                              ,'devel1':'http://z.tile.bbbike.org/osm/bbbike-green'
+                            };
 
 var mapset = q.get('mapset') || 'stable';
 var base_map_url = base_map_url_mapping[mapset] || base_map_url_mapping['stable'];
 var smoothness_map_url = smoothness_map_url_mapping[mapset] || smoothness_map_url_mapping['stable'];
 var handicap_map_url = handicap_map_url_mapping[mapset] || handicap_map_url_mapping['stable'];
 var cycleway_map_url = cycleway_map_url_mapping[mapset] || cycleway_map_url_mapping['stable'];
+var unlit_map_url = unlit_map_url_mapping[mapset] || unlit_map_url_mapping['stable'];
+var green_map_url = green_map_url_mapping[mapset] || green_map_url_mapping['stable'];
 var accel;
 
 /*
@@ -212,6 +220,12 @@ function doLeaflet() {
     var bbbikeOrgCyclewayUrl = cycleway_map_url + '/{z}/{x}/{y}.png';
     var bbbikeCyclewayTileLayer = new L.TileLayer(bbbikeOrgCyclewayUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
+    var bbbikeOrgUnlitUrl = unlit_map_url + '/{z}/{x}/{y}.png';
+    var bbbikeUnlitTileLayer = new L.TileLayer(bbbikeOrgUnlitUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+
+    var bbbikeOrgGreenUrl = green_map_url + '/{z}/{x}/{y}.png';
+    var bbbikeGreenTileLayer = new L.TileLayer(bbbikeOrgGreenUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+
     var osmMapnikUrl = use_osm_de_map ? 'http://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png' : 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
     var osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
@@ -229,6 +243,8 @@ function doLeaflet() {
     overlayMaps[M("Qualit\u00e4t")] = bbbikeSmoothnessTileLayer;
     overlayMaps[M("Handicaps")] = bbbikeHandicapTileLayer;
     overlayMaps[M("Radwege")] = bbbikeCyclewayTileLayer;
+    overlayMaps[M("Unbeleuchtet")] = bbbikeUnlitTileLayer;
+    overlayMaps[M("Gr\u00fcne Wege")] = bbbikeGreenTileLayer;
 
     var layersControl = new L.Control.Layers(baseMaps, overlayMaps);
     map.addControl(layersControl);
