@@ -22552,13 +22552,14 @@ EOF
 userdel	q4::inwork 7373,14566 7314,14599
 EOF
      },
-     { from  => 1394953200, # 2014-03-16 08:00
-       until => $isodate2epoch->("2014-04-04 08:00:00"), # 1400860800, # 2014-05-23 18:00
-       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Eldenaer Brücke und Paul-Junius-Str., gesperrt 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
+     { from  => $isodate2epoch->("2014-04-03 12:00:00"),
+       until => $isodate2epoch->("2014-05-31 23:59:59"),
+       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junlus-Str. und Möllendorffstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
        type  => 'handicap',
-       source_id => 'IM_021474',
+       source_id => 'IM_021595',
        data  => <<EOF,
-userdel	q4::inwork; 15010,12855 15074,12850 15098,12849
+#: XXX vor Ort anschauen
+userdel	q4::inwork; 15233,12829 15357,12813
 EOF
      },
      { from  => 1394604000, # 2014-03-12 07:00
@@ -22655,6 +22656,15 @@ EOF
        source_id => 'IM_021231',
        data  => <<EOF,
 userdel	q4::inwork 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393
+EOF
+     },
+     { from  => $isodate2epoch->("2014-04-03 20:00:00"), # 1 Tag Vorlauf
+       until => 1396839600, # 2014-04-07 05:00
+       text  => 'Yorckstr.: zwischen Mansteinstr. und Katzlerstr. gesperrt, 04.04.2014 20 Uhr bis 07.04.14 05:00 ',
+       type  => 'gesperrt',
+       source_id => 'IM_021617',
+       data  => <<EOF,
+userdel	2::inwork 7938,9694 8097,9650
 EOF
      },
     );

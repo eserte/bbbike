@@ -3980,12 +3980,13 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
        undef,
        undef,
        {
-         'source_id' => 'IM_021474',
-         'until' => 1396591200,
-         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Eldenaer Brücke und Paul-Junius-Str., gesperrt 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
-         'from' => 1394953200,
+         'source_id' => 'IM_021595',
+         'until' => 1401573599,
+         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junlus-Str. und Möllendorffstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
+         'from' => 1396519200,
          'id' => 2549,
-         'data' => 'userdel	q4::inwork; 15010,12855 15074,12850 15098,12849
+         'data' => '#: XXX vor Ort anschauen
+userdel	q4::inwork; 15233,12829 15357,12813
 ',
          'type' => 'handicap'
        },
@@ -4068,6 +4069,16 @@ userdel	q3::inwork; 13555,15596 13459,15653
          'data' => 'userdel	q4::inwork 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_021617',
+         'until' => 1396839600,
+         'text' => 'Yorckstr.: zwischen Mansteinstr. und Katzlerstr. gesperrt, 04.04.2014 20 Uhr bis 07.04.14 05:00 ',
+         'from' => 1396548000,
+         'id' => 2560,
+         'data' => 'userdel	2::inwork 7938,9694 8097,9650
+',
+         'type' => 'gesperrt'
        }
      
 );
