@@ -26,7 +26,10 @@ if (q.get("lang") == "de") {
 
 // localization
 var msg = {"en":{"Kartendaten":"Map data",
-		 "Qualit\u00e4t":"Smoothness"
+		 "Qualit\u00e4t":"Smoothness",
+		 "Radwege":"Cycleways",
+		 "Unbeleuchtet":"Unlit",
+		 "Gr\u00fcne Wege":"Green ways"
 		}
 	  };
 function M(string) {
