@@ -911,6 +911,12 @@ sub zip_ok {
     eval {
 	for my $member ($zip->members) {
 	    my $buffer;
+
+	    # workaround for a bug in perl 5.8.x: a warning
+	    # "Use of uninitialized value in open at .../src/bbbike/t/BBBikeTest.pm line 914."
+	    # is emitted for all but the first iteration
+	    if ($] <= 5.010) { $buffer = '' }
+
 	    open my $fh, ">", \$buffer or die;
 	    my $status = $member->extractToFileHandle($fh);
 	    if ($status != Archive::Zip::AZ_OK()) {
