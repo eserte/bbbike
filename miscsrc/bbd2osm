@@ -33,7 +33,7 @@ use Strassen::Strasse;
 use VectorUtil qw(get_polygon_center);
 
 use vars qw($VERSION);
-$VERSION = '1.02';
+$VERSION = '1.03';
 
 # Monkeypatch for performance reasons
 # See http://rt.cpan.org/Ticket/Display.html?id=39619
@@ -178,6 +178,7 @@ my @remember_quality;
 my @remember_handicap;
 my %remember_steps; # node_id -> { steps => ... }
 my %unlit;
+my %green;
 
 my %cat_to_highway = ('B'  => 'primary', # See also $do_highway_primary_hack
 		      'HH' => 'primary',
@@ -260,6 +261,7 @@ if ($single_file) {
     do_file("$datadir/qualitaet_s", \&handle_handicap_like);
     do_file("$datadir/qualitaet_l", \&handle_handicap_like);
     do_file("$datadir/nolighting", \&handle_nolighting_like);
+    do_file("$datadir/green", \&handle_green_like);
 
     do_file("$datadir/flaechen", \&handle_area_like);
 
@@ -464,6 +466,17 @@ sub handle_nolighting_like {
     }
 }
 
+sub handle_green_like {
+    my($r) = @_;
+    (my $cat = $r->[Strassen::CAT]) =~ s{^green}{};
+    my @node_ids = get_node_ids($r);
+    for my $node_id_i (1 .. $#node_ids) {
+	my($n0,$n1) = @node_ids[$node_id_i-1,$node_id_i];
+	$green{"$n0 $n1"} = $cat;
+	$green{"$n1 $n0"} = $cat;
+    }
+}
+
 sub handle_berlin_highway_like   { _handle_highway_like('Berlin', @_) }
 sub handle_anywhere_highway_like { _handle_highway_like(undef, @_) }
 
@@ -553,6 +566,7 @@ sub _handle_highway_like {
 			 ($speed0{$backward_spec}||''),
 			 $in_steps,
 			 ($unlit{$forward_spec}||''),
+			 ($green{$forward_spec}||''),
 			);
 	my $this_tags = join(" ", @this_tags);
 	if (defined $last_tags) {
@@ -614,7 +628,7 @@ sub _handle_highway_like {
 
     for my $segment (@segments) {
 	my @node_ids = @{$segment->[0]};
-	my($oneway, $oneway_reversed, $no_access, $speed0, $speed0_reversed, $in_steps, $unlit) = @{$segment->[1]};
+	my($oneway, $oneway_reversed, $no_access, $speed0, $speed0_reversed, $in_steps, $unlit, $green) = @{$segment->[1]};
 
 	if ($oneway_reversed) {
 	    @node_ids = reverse @node_ids;
@@ -627,7 +641,7 @@ sub _handle_highway_like {
 	for my $node_id (@node_ids) {
 	    print $wayfh qq{  <nd ref="$node_id"/>\n};
 	}
-	if (defined $name) {
+	if (defined $name) { # $name is already xmlified
 	    print $wayfh qq{  <tag k="name" v="$name" />\n};
 	}
 	while(my($k,$v) = each %is_in) {
@@ -670,6 +684,9 @@ sub _handle_highway_like {
 	}
 	if ($unlit) {
 	    print $wayfh qq{  <tag k="lit" v="no" />\n};
+	}
+	if ($green) {
+	    print $wayfh qq{  <tag k="bbbike:green" v="$green" />\n};
 	}
 
 	if ($experiments{addr}) {
