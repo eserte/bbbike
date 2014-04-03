@@ -33,7 +33,7 @@ use Strassen::Strasse;
 use VectorUtil qw(get_polygon_center);
 
 use vars qw($VERSION);
-$VERSION = '1.01';
+$VERSION = '1.02';
 
 # Monkeypatch for performance reasons
 # See http://rt.cpan.org/Ticket/Display.html?id=39619
@@ -177,6 +177,7 @@ my %speed0;
 my @remember_quality;
 my @remember_handicap;
 my %remember_steps; # node_id -> { steps => ... }
+my %unlit;
 
 my %cat_to_highway = ('B'  => 'primary', # See also $do_highway_primary_hack
 		      'HH' => 'primary',
@@ -258,6 +259,7 @@ if ($single_file) {
     do_file("$datadir/handicap_l", \&handle_handicap_like);
     do_file("$datadir/qualitaet_s", \&handle_handicap_like);
     do_file("$datadir/qualitaet_l", \&handle_handicap_like);
+    do_file("$datadir/nolighting", \&handle_nolighting_like);
 
     do_file("$datadir/flaechen", \&handle_area_like);
 
@@ -452,6 +454,16 @@ sub handle_handicap_like {
     }
 }
 
+sub handle_nolighting_like {
+    my($r) = @_;
+    my @node_ids = get_node_ids($r);
+    for my $node_id_i (1 .. $#node_ids) {
+	my($n0,$n1) = @node_ids[$node_id_i-1,$node_id_i];
+	$unlit{"$n0 $n1"} = 1;
+	$unlit{"$n1 $n0"} = 1;
+    }
+}
+
 sub handle_berlin_highway_like   { _handle_highway_like('Berlin', @_) }
 sub handle_anywhere_highway_like { _handle_highway_like(undef, @_) }
 
@@ -540,6 +552,7 @@ sub _handle_highway_like {
 			 ($speed0{$forward_spec}||''),
 			 ($speed0{$backward_spec}||''),
 			 $in_steps,
+			 ($unlit{$forward_spec}||''),
 			);
 	my $this_tags = join(" ", @this_tags);
 	if (defined $last_tags) {
@@ -601,7 +614,7 @@ sub _handle_highway_like {
 
     for my $segment (@segments) {
 	my @node_ids = @{$segment->[0]};
-	my($oneway, $oneway_reversed, $no_access, $speed0, $speed0_reversed, $in_steps) = @{$segment->[1]};
+	my($oneway, $oneway_reversed, $no_access, $speed0, $speed0_reversed, $in_steps, $unlit) = @{$segment->[1]};
 
 	if ($oneway_reversed) {
 	    @node_ids = reverse @node_ids;
@@ -654,6 +667,9 @@ sub _handle_highway_like {
 	if ($ref) {
 	    my $xml_ref = $ref; _xmlify($xml_ref);
 	    print $wayfh qq{  <tag k="ref" v="$xml_ref" />\n};
+	}
+	if ($unlit) {
+	    print $wayfh qq{  <tag k="lit" v="no" />\n};
 	}
 
 	if ($experiments{addr}) {
