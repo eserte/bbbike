@@ -17,14 +17,11 @@ Upload instructions:
 
     .../Garmin/CustomSymbols
 
-* If you want to force a specific sort order of the Symbols, then use
-  a perl script like this:
+  If you want to force a specific sort order of the symbols, then use
+  the following commands:
 
     cd .../Garmin/CustomSymbols
-    perl -e 'my $mt = time-86400*80; for (<*.bmp>) { $mt+=86400; utime $mt, $mt, $_; warn $_}'
-
-  Replace the "<*.bmp>" bit by a custom list of .bmp files. The above
-  one liner may or may not work.
+    for i in .../bbbike/misc/garmin_userdef_symbols/bike2014/*.bmp; do cp -v $i .; sleep 2; done
 
 Old symbols for older Garmins
 -----------------------------
