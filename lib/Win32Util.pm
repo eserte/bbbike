@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2004,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2004,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -34,7 +34,7 @@ these modules are already bundled with the popular ActivePerl package.
 use strict;
 use vars qw($DEBUG $browser_ole_obj $VERSION);
 
-$VERSION = '1.39';
+$VERSION = '1.40';
 $DEBUG=0 unless defined $DEBUG;
 
 # XXX Win-Registry-Funktionen mit Hilfe von Win32::API und
@@ -68,6 +68,9 @@ use vars qw(%API_FUNC %API_DEF);
 	    "GetDriveType"         => {Lib => "kernel32",
 				       In  => ["P"],
 				       Out => "I"},
+	    "GetVolumeInformation" => {Lib => "kernel32",
+				       In  => ["P", "P", "I", "I", "I", "I", "P", "I"],
+				       Out => "I"},
 	    "GetSysColor"          => {Lib => "user32",
 				       In  => ['N'],
 				       Out => 'N'},
@@ -99,18 +102,21 @@ use vars qw(%API_FUNC %API_DEF);
 
 sub _get_api_function {
     my $name = shift;
-    eval {
-	require Win32::API;
-	if (!exists $API_FUNC{$name}) {
+    if (!exists $API_FUNC{$name}) {
+	eval {
+	    require Win32::API;
 	    my $def = $API_DEF{$name};
 	    if (!$def) {
 		die "No API definition for $name";
 	    }
 	    $API_FUNC{$name} = new Win32::API ($def->{Lib}, $name,
 					       $def->{In}, $def->{Out});
+	};
+	if ($@) {
+	    warn $@;
+	    $API_FUNC{$name} = undef;
 	}
-    };
-    warn $@ if $@;
+    }
     $API_FUNC{$name};
 }
 
@@ -718,14 +724,14 @@ sub get_user_name {
 	}
     }
 
-    _get_api_function("GetUserName");
-    if (!$API_FUNC{GetUserName}) {
+    my $GetUserName = _get_api_function("GetUserName");
+    if (!$GetUserName) {
 	return Win32::LoginName();
     }
     my $max = 256;
     my $maxb = pack("L", $max);
     my $login = "\0"x$max;
-    my $b = $API_FUNC{GetUserName}->Call($login, $maxb);
+    my $b = $GetUserName->Call($login, $maxb);
     if ($b) {
 	substr($login, 0, unpack("L", $maxb)-1);
     } else {
@@ -1412,6 +1418,33 @@ sub get_drives {
     @drives;
 }
 
+=head2 get_volume_name($path)
+
+Return the volume name for the given I<$path>. If the API function
+C<GetVolumeInformation> is not available, or if the drive does not
+exist, then C<undef> is returned.
+
+=cut
+
+sub get_volume_name {
+    my($path) = @_;
+
+    my $get_volume_information = _get_api_function("GetVolumeInformation");
+    if (!$get_volume_information) {
+	warn "Can't get volume name, GetVolumeInformation not available";
+	return undef;
+    }
+
+    my $buf = "\0"x256;
+    my $ret = $get_volume_information->Call($path, $buf, length($buf), 0, 0, 0, 0, 0);
+    if (!$ret) {
+	warn "Can't get volume name for path '$path'";
+	return undef;
+    }
+    $buf =~ s{\0.*}{};
+    $buf;
+}
+
 =head2 path2unc($path)
 
 Expand a normal absolute path to a UNC path.
@@ -1560,9 +1593,9 @@ sub get_sys_color {
     };
     my $number = $name2number->{$type};
     return unless defined $number;
-    _get_api_function("GetSysColor");
-    return unless $API_FUNC{GetSysColor};
-    my $i = $API_FUNC{GetSysColor}->Call($number);
+    my $GetSysColor = _get_api_function("GetSysColor");
+    return unless $GetSysColor;
+    my $i = $GetSysColor->Call($number);
     my($r,$g,$b);
     $b = $i >> 16;
     $g = ($i >> 8) & 0xff;
