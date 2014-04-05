@@ -2838,6 +2838,19 @@ sub _get_tk_widgetdump {
 	    # XXX unfortunately "camcontrol devlist" is restricted to root on FreeBSD; one could fine the information here! What about Linux?
 	    $mount_device = '/dev/da0';
 	    @mount_opts = (-t => 'msdosfs');
+	} elsif ($^O eq 'MSWin32') {
+	    require Win32Util;
+	    for my $drive (Win32Util::get_drives()) {
+		my $vol_name = Win32Util::get_volume_name("$drive\\");
+		if (defined $vol_name && $vol_name =~ m{garmin}i) {
+		    $mount_point = $drive;
+		    last;
+		}
+	    }
+	    if (!$mount_point) {
+		main::status_message("The Garmin device is not mounted --- is the device in USB mass storage mode?", 'error');
+		return;
+	    }
 	} else { # e.g. linux, assume device is already mounted
 	    my @mount_point_candidates = (
 					  '/media/' . eval { scalar getpwuid $< } . '/GARMIN',     # e.g. Ubuntu 13.10
@@ -2918,14 +2931,19 @@ sub _get_tk_widgetdump {
     sub transfer { } # NOP
 
     sub _is_mounted { # XXX use a module?
-	my $directory = shift;
-	open my $fh, "-|", "mount" or die "Can't call mount: $!";
-	while(<$fh>) {
-	    if (m{ \Q$directory\E }) {
-		return 1;
+	if ($^O eq 'MSWin32') {
+	    # at this point we assume that the device is already ready
+	    return 1;
+	} else {
+	    my $directory = shift;
+	    open my $fh, "-|", "mount" or die "Can't call mount: $!";
+	    while(<$fh>) {
+		if (m{ \Q$directory\E }) {
+		    return 1;
+		}
 	    }
+	    0;
 	}
-	0;
     }
 
 }
