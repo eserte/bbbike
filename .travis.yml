@@ -9,7 +9,8 @@ before_install:
 # - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
 # - xvfb + twm:             some optional tests require an X server
 # - rhino:                  javascript tests
- - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb twm rhino
+# - imagemagick:            typ2legend test
+ - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb twm rhino imagemagick
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
  - cpanm --quiet --notest Test::LectroTest Email::MIME HTML::TreeBuilder::XPath
 # DBD::XBase versions between 1.00..1.05 explicitely want Perl 5.10.0 as a minimum. See https://rt.cpan.org/Ticket/Display.html?id=88873
