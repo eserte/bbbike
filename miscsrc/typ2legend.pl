@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 # -*- mode:perl;coding:iso-8859-1; -*-
-
+ 
 use strict;
 use FindBin;
 use lib $FindBin::RealBin;
@@ -12,6 +12,13 @@ use Getopt::Long;
 use HTML::Entities ();
 
 use Typ2Legend::XPM;
+
+BEGIN {
+    system("which convert >/dev/null");
+    if ($?) {
+	die "Cannot find 'convert' tool, did you installed the 'imagemagick' package?\n";
+    }
+}
 
 sub usage (;$);
 
