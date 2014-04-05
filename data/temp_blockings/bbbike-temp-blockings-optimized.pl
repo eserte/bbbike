@@ -3956,16 +3956,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140305.1100.394979.html',
-         'until' => 1396648800,
-         'text' => 'Wassersportallee und Richterstr.: Sperrungen wegen Bauarbeiten an der Kreuzung Adlergestell, ggfs. auf Gehweg ausweichen, von 17.03.2014 bis 04.04.2014 ',
-         'from' => 1394924400,
-         'id' => 2545,
-         'data' => 'userdel	q4::inwork 22208,1103 22162,1067 22092,999
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_021395',
          'until' => 1406127600,
@@ -3981,7 +3972,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
        undef,
        {
          'source_id' => 'IM_021595',
-         'until' => 1401573599,
+         'until' => 1400860800,
          'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junlus-Str. und Möllendorffstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
          'from' => 1396519200,
          'id' => 2549,
@@ -3991,18 +3982,7 @@ userdel	q4::inwork; 15233,12829 15357,12813
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_021477',
-         'until' => 1396627200,
-         'text' => 'Suermondtstr.: Baustelle, an der Kreuzung Degnerstr., Radfahrer dürfen über den Gehweg fahren, sowie Einbahnstraßenregelung in der Degnerstr. und Hedwigstr., 17.03.2014 08:00 Uhr bis 04.04.2014 18:00 Uhr ',
-         'from' => 1394953200,
-         'id' => 2551,
-         'data' => 'userdel	q2::inwork; 16520,16200 16656,16157
-userdel	q2::inwork 16656,16157 16616,16046
-userdel	q4::inwork; 16537,15827 16563,15900 16616,16046 16505,16096 16520,16200
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Siemensstr.: Umbau der Kreuzung Erna-Samuel-Str., Fahrbahn gesperrt',
@@ -4021,8 +4001,8 @@ userdel	q4::inwork 5443,14028 5299,14049
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
-#: last_checked: 2014-03-21
-#: next_check: 2014-04-01
+#: last_checked: 2014-04-04
+#: check_frequency: 30d
 userdel	q3::inwork 11673,16003 11567,15842
 ',
          'type' => 'handicap'
@@ -4045,7 +4025,8 @@ userdel	q3::inwork 11673,16003 11567,15842
          'from' => undef,
          'id' => 2557,
          'data' => '#: XXX wann ist die Baustelle fertig?
-#: next_check: 2014-03-27
+#: last_checked: 2014-04-04
+#: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 ',
          'type' => 'handicap'

@@ -176,7 +176,7 @@ Wuhletalstr.: werden hier die Radspuren fortgef¸hrt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="3"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2014-03-26
+#: last_checked: 2014-04-04
 #: check_frequency: 60d
 Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -213,7 +213,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: Tagesspiegel vom 2013-03-01 vvv
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5901 (2014 passiert wahrscheinlich nichts)
-#: last_checked: 2014-04-01
+#: last_checked: 2014-04-05
 #: next_check: 2015-03-01
 Warschauer Str: Radspuren f¸r 2013 geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -389,8 +389,8 @@ Kynaststr./Hauptstr.: eine provisorische Ampel wird wieder aufgestellt	? 14906,1
 #: next_check: 2014-05-08
 Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected 20667,15721 20733,15657
 # 
-#: last_checked: 2014-03-26
-#: next_check: 2014-04-02
+#: last_checked: 2014-04-04
+#: check_frequency: 14d
 Konrad-Wolf-Str.: Bau eines asphaltierten Radwegs; in Richtung S¸dwesten passiert wohl auch was	?::inwork 15066,14579 15174,14638 15272,14691
 # 
 # REMOVED (in handicap_s-orig aufgenommen) --- M¸hsamstr.: Baustelle abfahren, genaue Position sowie Penalty absch‰tzen	?::inwork 13559,12779 13506,12752
@@ -928,22 +928,12 @@ Weidenanger: Qualit‰t?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: XXX Privatstraﬂe
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
 #: osm_watch: way id="137340264" version="6"
-#: last_checked: 2014-03-25
+#: last_checked: 2014-04-04
 #: check_frequency: 7d
 Edith-Stein-Str.: Qualit‰t nach den Bauarbeiten?	?::inwork 14089,13247 14035,13104
 # 
 # REMOVED (-> strassen-orig etc.) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: XXX siehe auch Eintrag f¸r "Am Langen Jammer" in gesperrt-orig --- #: last_checked: 2012-10-26 vvv --- #: next_check: 2012-12-01 vvv --- An den Eldenaer Hˆfen: wo genau wird die Straﬂe liegen? Qualit‰t?	?::inwork 14376,12849 14449,12833 14594,12800 --- An den Eldenaer Hˆfen: wo genau wird die Straﬂe liegen? Qualit‰t?	?::inwork 14449,12833 14480,12932 --- #: next_check ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: ERNASAMUEL-2014
-#: by: http://www.moabitonline.de/1637
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110224.1350.332744.html
-#: by: https://www.spd-fraktion-mitte.de/system/files/dateien/anfrage/2011-11/2726/ka-0012-iv.pdf (Abschluss Ende 2013)
-#: note: Planstraﬂe im Block 902
-# REMOVED --- : osm_watch: way id="182859952" version="10"
-#: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014)
-#: last_checked: 2014-03-07
-Erna-Samuel-Straﬂe: werden hier noch Radstreifen erstellt?	?::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
-# 
+# REMOVED (realisiert) --- #: next_check_id: ERNASAMUEL-2014 --- #: by: http://www.moabitonline.de/1637 --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110224.1350.332744.html --- #: by: https://www.spd-fraktion-mitte.de/system/files/dateien/anfrage/2011-11/2726/ka-0012-iv.pdf (Abschluss Ende 2013) --- #: note: Planstraﬂe im Block 902 --- # REMOVED --- : osm_watch: way id="182859952" version="10" --- #: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014) --- #: last_checked: 2014-03-07 --- Erna-Samuel-Straﬂe: werden hier noch Radstreifen erstellt?	?::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 # REMOVED (keine Anzeichen f¸r weitere Straﬂen hier) --- #: XXX neue Planstraﬂen nˆrdlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straﬂen werden benannt nach: --- #: XXX - Oda Schottm¸ller --- #: XXX - Hilde Radusch
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html (aktuelle Infos) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html (Bauende: 2014) --- #: last_checked: 2012-05-03 --- #: next_check: 2013-12-15 --- Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html (aktuelle Infos) --- #: XXX Richtung Norden existieren schon Radspuren --- #: last_checked: 2013-11-05 --- #: next_check: 2013-11-24 --- Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772
@@ -1815,6 +1805,7 @@ Giselhersteig: genaue Lage? Qualit‰t? PLZ=10365	? 17432,12413 17437,12443
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2013 (Amtsblatt)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2014 (Nummerierung)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2014 (Nummerierung)
 #: XXX PLZ=13158, soweit nicht anders angegeben
 # 1. Liliensteinweg oldname=Rollbergweg
 # 2. Lampertssteinweg oldname=Alfredweg
@@ -1936,7 +1927,9 @@ Planstraﬂen im Marienhain: Straﬂennamen? Qualit‰t?	? 22771,3151 22476,3118 22485
 #: XXX ^^^
 # 
 #: XXX evtl. wird dann auch die Fuﬂ/Radverbindung Richtung Westen auch interessant...
+#: XXX auﬂerdem wird die Hohenschˆnhausener Str. verbreitert, evtl. werden auch Radverkehrsanlagen gebaut
 #: last_checked: 2014-03-08
+#: check_frequency: 90d
 Straﬂe in Bau: Straﬂenname, genaue Lage, Qualit‰t?	?::inwork 19206,17458 19798,17263
 # 
 #: by: http://www.berlin.de/ba-neukoelln/verwaltung/bebauungsplaene/8-9bab.html

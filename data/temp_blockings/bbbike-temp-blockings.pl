@@ -22553,7 +22553,7 @@ userdel	q4::inwork 7373,14566 7314,14599
 EOF
      },
      { from  => $isodate2epoch->("2014-04-03 12:00:00"),
-       until => $isodate2epoch->("2014-05-31 23:59:59"),
+       until => $isodate2epoch->("2014-05-23 18:00:00"),
        text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junlus-Str. und Möllendorffstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
        type  => 'handicap',
        source_id => 'IM_021595',
@@ -22606,8 +22606,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann?
-#: last_checked: 2014-03-21
-#: next_check: 2014-04-01
+#: last_checked: 2014-04-04
+#: check_frequency: 30d
 userdel	q3::inwork 11673,16003 11567,15842
 EOF
      },
@@ -22636,7 +22636,8 @@ EOF
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
 #: XXX wann ist die Baustelle fertig?
-#: next_check: 2014-03-27
+#: last_checked: 2014-04-04
+#: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 EOF
      },
