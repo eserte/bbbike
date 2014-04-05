@@ -374,9 +374,6 @@ eval 'use BBBikeXS 0.09';
 
 # $VERSION is the version of the BBBike distribution
 $VERSION = $BBBike::VERSION;
-# Since the migration to git $PROG_REVISION is meaningless. Previously
-# it was constructed from the RCS version of this file.
-$PROG_REVISION = '3.500';
 
 # OS related
 $progname = basename($0);
