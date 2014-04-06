@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -48,7 +48,10 @@ $s->read_stream
 		 push @errors, "Cannot parse 'oldname' directive '$oldname_dir' in line $line";
 		 return;
 	     }
-	     my($newname, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME()]);
+	     my $newname = $r->[Strassen::NAME()];
+	     $newname =~ s{\s+\[.*\]$}{}; # XXX this stripping should be done in a function
+	     my @cityparts;
+	     ($newname, @cityparts) = Strasse::split_street_citypart($newname);
 	     my @res = $plz->look($newname, (@cityparts ? (Citypart => \@cityparts) : ()));
 	     if (!@res) {
 		 push @errors, "Cannot find new name '" . $r->[Strassen::NAME()] . "' in PLZ file $plz_file";
