@@ -41,7 +41,7 @@ Neue Bahnhofstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14752,11041 14811,
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # REMOVED (keine Absperrung mehr) --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d --- Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
 # 
-#: last_checked: 2014-04-05
+#: last_checked: 2014-04-06
 #: check_frequency: 60d
 Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
 # 
@@ -2663,9 +2663,7 @@ Straße 40 (Blankenburg): enge Straße	q0- 14893,20583 14945,20748 15035,21026
 #: corrected_by: srt (q1 -> q0-, Bodenschwellen -> Aufpflasterungen)
 Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0- 9024,16855 9245,16758
 # 
-#: by: anonymous
-#: corrected_by: srt (q1 -> q0-)
-Chamissostr. (Französisch Buchholz): enge Straße	q0- 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
+# REMOVED (nicht anders als andere Straßen hier) --- #: by: anonymous --- #: corrected_by: srt (q1 -> q0-) --- Chamissostr. (Französisch Buchholz): enge Straße	q0- 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
 # 
 #: by: misersky:
 #: confirmed_by: srt (insbesondere, weil es recht kurvig ist)

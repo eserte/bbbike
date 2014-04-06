@@ -906,7 +906,7 @@ EOF
        text  => 'Gleim-Tunnel: Baustelle, Straße vollständig gesperrt (bis 01.10.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9917,15613 9992,15625 10130,15647
+userdel	2 9907,15618 9991,15629 10130,15647
 EOF
      },
      { from  => 1094421600, # 2004-09-06 00:00
@@ -1215,7 +1215,7 @@ EOF
        text  => 'Gleimstr. (Mitte) in beiden Richtungen zwischen Gleimtunnel und Graunstr. Baustelle, Straße vollständig gesperrt (bis 29.11.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9917,15613 9992,15625 10130,15647
+userdel	2 9907,15618 9991,15629 10130,15647
 EOF
      },
      { from  => 1098828000, # 2004-10-27 00:00
@@ -21063,7 +21063,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20121128.1200.378696.html',
        data  => <<EOF,
-userdel	2::inwork 6378,20460 6428,20487 6487,20512 6601,20542 7083,20584 7289,20618
+userdel	2::inwork 6378,20460 6428,20480 6494,20520 6601,20542 7073,20577 7098,20582 7289,20618
 EOF
      },
      { from  => undef,
@@ -22554,7 +22554,7 @@ EOF
      },
      { from  => $isodate2epoch->("2014-04-03 12:00:00"),
        until => $isodate2epoch->("2014-05-23 18:00:00"),
-       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junlus-Str. und Möllendorffstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
+       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Möllendorffstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
        type  => 'handicap',
        source_id => 'IM_021595',
        data  => <<EOF,

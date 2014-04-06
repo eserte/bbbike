@@ -3578,16 +3578,7 @@ userdel	2::temp 10384,8628 10360,8521
          'id' => 2447,
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5215.html',
-         'until' => 1396771200,
-         'text' => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, 5. April 2014 18 Uhr bis 6. April 2014 10 Uhr',
-         'from' => 1396627200,
-         'id' => 2448,
-         'data' => 'userdel	2::inwork 16201,24354 16156,24284 16123,24232
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3973,7 +3964,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
        {
          'source_id' => 'IM_021595',
          'until' => 1400860800,
-         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junlus-Str. und Möllendorffstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
+         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Möllendorffstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
          'from' => 1396519200,
          'id' => 2549,
          'data' => '#: XXX vor Ort anschauen

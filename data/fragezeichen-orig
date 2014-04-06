@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-03-26
+#: last_checked: 2014-04-06
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -151,8 +151,8 @@ Reinickendorfer Str.: werden hier Radspuren markiert?	?::projected 7672,16878 76
 # REMOVED (wahrscheinlich passiert hier nichts bevor das Pankower Tor realisiert wird) --- #: XXX Baumaßnahme 3.39 (Realisierung nach 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: XXX evtl. wird erst etwas mit Realisierung des Stadtquartiers "Pankower Tor" entstehen --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3701 --- #: osm_watch: way id="144945039" version="4" --- #: last_checked: 2013-10-25 (Richtung Nordosten fertig) --- #: next_check: 2014-01-25 --- Granitzstr.: wird auch etwas in der anderen Richtung gemacht?	? 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
 # 
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
-#: last_checked: 2013-08-27
-#: next_check: 2014-06-01
+#: last_checked: 2014-04-06
+#: check_frequency: 100d
 #: osm_watch: way id="82449630" version="7"
 #: osm_watch: way id="32426064" version="6"
 Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,21563 7959,21573 7781,21812 7742,21867 7594,22068 7516,22178 7439,22306 7416,22349
@@ -251,7 +251,7 @@ Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,1
 # REMOVED (-> radwege-orig) --- #: XXX Markierungsarbeiten haben wohl angefangen, genauer anschauen --- #: last_checked: 2013-10-18 --- #: next_check: 2013-10-18 --- Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
 # REMOVED (realisiert) --- #: last_checked: 2013-10-25 --- #: next_check: 2013-11-25 --- Dietzgenstr.: wird auch in Richtung Süden markiert? wird auch zwischen Heinrich-Böll-Str. und Schillerstr. markiert?	? 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
 # 
-#: last_checked: 2013-12-17 vvv
+#: last_checked: 2014-04-06 vvv
 #: check_frequency: 100d vvv
 Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9881,18354 9821,18392 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9366,18669 9279,18724
 Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555
@@ -262,7 +262,7 @@ Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9457,18612 9454,1857
 Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11162,19844 11312,19920 11425,19978 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
 # 
 #: osm_watch: way id="33836252" version="11"
-#: last_checked: 2014-03-11
+#: last_checked: 2014-04-06
 #: check_frequency: 100d
 Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11915,19580 11927,19308 11937,19175
 # 
@@ -319,7 +319,9 @@ Manteuffelstr.: werden Radstreifen markiert?	?::projected 8606,5496 8610,5579 86
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
 #: XXX mittelfristig Realisierung von Radstreifen
-Hauptstr. (Wilhelmsruh): Radstreifen?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
+#: last_checked: 2014-04-06
+#: check_frequency: 120d
+Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
 #: section ^^^
 #: ignore ^^^
@@ -433,6 +435,7 @@ Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,
 #: XXX Privatstraßen V, VI, VII -> Grenobler Ring
 #: XXX Privatstraße X -> Bordeauxstraße
 #: XXX Privatstraße XIV -> Toulonstraße
+#: last_checked: 2014-04-06
 #: next_check: 2015-03-01
 Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::projected 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12168,21218 12337,20954
 # 
@@ -1091,6 +1094,8 @@ BAB100	?::inwork 14270,9710 14186,9546 14147,9383 14160,9132 14307,8805 14270,83
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Maximilianstr.: Vorfahrtsregelung?	? 10298,17299 10499,17286 10774,17277
+# 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5596
 #: next_check: 2014-05-10
 Tuchollaplatz: entstehen hier Aufpflasterungen und/oder ein verkehrsberuhigter Bereich?	? 15541,10892 15649,10922
@@ -1286,7 +1291,7 @@ Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7422,13012
 Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3404 (Verfahren wurde eingeleitet)
-#: last_checked: 2014-02-27
+#: last_checked: 2014-04-06
 #: check_frequency: 180d
 #: priority: #C
 Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10056,17781 10033,17763
@@ -1340,65 +1345,7 @@ Greifenhagener Str.: evtl. wird hier eine Fußgängerzone entstehen	? 11123,15851 
 #: next_check: 2014-08-01
 Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23475 15637,23251 15547,23024 15529,22981 15428,22736
 # 
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3501
-#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036924327063/924327063/00054997/97-Anlagen/02/Benennungvon20PrivatwegeninderAnlageGravenstei.pdf
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2013
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2013 (Grundstücksnummerierung)
-#: XXX 13127 Berlin, Ortsteil Französisch Buchholz, fehlen alle in Berlin.coords.data vvv
-#: XXX Benennung von 20 Privatwegen in der Anlage Gravenstein: genaue Lage der Wege? Qualität? Beleuchtet? vvv
-#: last_checked: 2013-08-27 vvv
-#: next_check: 2014-03-27 vvv
-#: XXX oldname: Asternweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren vvv
-Landapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 12826,21779 12940,21738
-Landapfelweg: unbefestigter Weg, Q2-, unbeleuchtet, für Autos nicht befahrbar (NN)	? 12940,21738 12994,21719
-#: XXX ^^^
-# Bananenapfelweg existiert schon als Geometrie
-#: XXX oldname: Am Graben (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Weinapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 12940,21738 12963,21835 12968,21848 12996,21953 13050,21994 13060,22043 13075,22130 13091,22220 13115,22311
-Weinapfelweg: wird dieser Abschnitt auch unbenannt?	? 13115,22311 13122,22336 13139,22401
-Weinapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13139,22401 13162,22480 13180,22539 13202,22605 13221,22667
-Weinapfelweg: Asphalt mit Schäden, Q1-, unbeleuchtet	? 13221,22667 13219,22689 13200,22766 13183,22817 13156,22889
-#: XXX oldname: Blumenweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Kornapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 12963,21835 12837,21876
-#: XXX oldname: Kirchweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Eiserapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 12968,21848 12863,21995
-#: XXX oldname: Dahlienweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Paradiesapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 12996,21953 12863,21995 12843,22010
-#: XXX oldname: Erdbeerweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Petersapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13060,22043 12846,22070
-#: XXX oldname: Fliederweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Pfaffenapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 13075,22130 12849,22161
-#: XXX oldname: Gladiolenweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Mönchsapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13091,22220 12852,22250
-#: XXX oldname: Jasminweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Nelkenapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13122,22336 12853,22368
-# Klarapfelweg: siehe strassen-orig
-Edelapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 13162,22480 12946,22509 12938,22513
-#: XXX oldname: Lilienweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Kantapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 13180,22539 13021,22589
-Kantapfelweg: unbefestigter Weg, Q2-, unbeleuchtet; Sackgasse?	? 13021,22589 12968,22620
-# Prinzenapfelweg: siehe strassen-orig
-#: XXX oldname: Nelkenweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren vvv
-Rosenapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen, Q2+, unbeleuchtet	? 13219,22689 13127,22716
-Rosenapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13127,22716 12917,22829
-#: XXX ^^^
-#: XXX oldname: Rosenweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren
-Silberapfelweg: unbefestigter Weg, Q2-, unbeleuchtet	? 13200,22766 13160,22776 13006,22858
-Glasapfelweg: Qualität?	? 12883,22615 12820,22518 12825,22486
-# Herrgottsapfelweg: siehe strassen-orig
-#: XXX oldname: Petunienweg (KGA Gravenstein), aber evtl. den alten Namen ignorieren vvv
-Jubiläumsapfelweg: unbefestigter Weg, Q2, unbeleuchtet, für Autos nicht befahrbar	? 13303,22732 13244,22753
-Jubiläumsapfelweg: unbefestigter Weg, Q2, unbeleuchtet	? 13244,22753 13273,22857
-#: XXX ^^^
-#: XXX Sackgasse am Ende
-Am Brendegraben: Schotterstraße, Q2+, unbeleuchtet	? 13283,22668 13303,22732 13312,22765 13292,22838 13273,22857 13231,22880
-Am Brendegraben: Asphalt, Q0, unbeleuchtet	? 13231,22880 13203,22892 13149,23024 13194,23100 13043,23212 13121,23311 13012,23424
-#: next_check: ^^^
-#: last_checked: ^^^
-#: XXX ^^^
-#: XXX ^^^
-# 
+# REMOVED ("Apfelwege" alle aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3501 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036924327063/924327063/00054997/97-Anlagen/02/Benennungvon20PrivatwegeninderAnlageGravenstei.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2013 (Grundstücksnummerierung) --- #: XXX 13127 Berlin, Ortsteil Französisch Buchholz, fehlen alle in Berlin.coords.data vvv --- #: XXX Benennung von 20 Privatwegen in der Anlage Gravenstein: genaue Lage der Wege? Qualität? Beleuchtet? vvv --- #: last_checked: 2013-08-27 --- #: next_check: 2014-03-27
 # REMOVED --- Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsblatt 3/2013), ist es für Radfahrer irgendwie relevant?	? -12727,-1416 -12703,-1410
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
@@ -1807,41 +1754,86 @@ Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17432,12413 17437,12443
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2014 (Nummerierung)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2014 (Nummerierung)
 #: XXX PLZ=13158, soweit nicht anders angegeben
-# 1. Liliensteinweg oldname=Rollbergweg
-# 2. Lampertssteinweg oldname=Alfredweg
-# 3. Quirlweg oldname=Heinrichweg
-# 4. Papststeinweg oldname=Schrapeweg
-# 5. Rauensteinweg oldname=Maxweg oldname=Ottoweg
-# 6. Pfaffensteinweg oldname=Paulweg
-# 7. Hohler-Stein-Weg olname=Erichweg
-# 8. Zirkelsteinweg oldname=Adolfweg
-# 9. Friensteinweg oldname=Gustavweg
-# 10. Rittersteinweg oldname=Rosenweg oldname=Williweg
-# 11. Rauschensteinweg oldname=Weidenweg KGA Am Rollberg
-# 12. Cupetiussteinweg oldname=Bergeshöhe Nord/Süd
-# 13. Zschirnsteinweg oldname=Weg 9 KGA Schönwald
-# 14. Schrammsteinweg oldname=Weg 6 KGA Schönwald
-# 15. Lasensteinweg oldname=Weg 1 KGA Schönwald
-# 16. Kohlbornsteinweg oldname=Weg 10 KGA Schönwald
-# 17. Arnsteinweg oldname=Weg 5 KGA Schönwald
-# 18. Katzsteinweg oldname=Weg 11 KGA Schönwald
-# 19. Bernhardsteinweg oldname=Weg 4 KGA Schönwald
-# 20. Benediktsteinweg oldname=Weg 3 KGA Schönwald
-# 21. Affensteinweg oldname=Weg 2 KGA Schönwald
-# 22. Basteiweg oldname=Drosselweg
-# 23. Lorenzsteinweg oldname=Weg 8 KGA Schönwald
-# 24. Müllersteinweg oldname=Parallelweg
-# 25. Rotsteinweg oldname=Weg 7 KGA Schönwald
-# 26. Kleinsteinweg oldname=Weg 13 KGA Schönwald
-# 27. Altarsteinweg oldname=Weg 14 KGA Schönwald
-# 28. Luchssteinweg oldname=Weg 15 KGA Schönwald
-# 29. Pöhligsteinweg oldname=Wieselweg KGA Schönwald
-# 30. Brausensteinweg oldname=Weg 16 KGA Schönwald (?)
 #: osm_watch: way id="225014551" version="1"
 #: osm_watch: way id="42779047" version="5"
-#: last_checked: 2013-08-27 (noch keine Umbenennung)
-#: next_check: 2014-01-01
-KGA Am Rollberg und Anlage Schönwald: Benennung von 30 Privatwegen	? 9356,21363 10035,21581 10073,21339 9401,21144 9357,21362
+#: last_checked: 2014-04-06 (noch nicht umbenannt, aber Pfosten stehen schon) vvv
+#: next_check: 2014-05-06 vvv
+# 1.  oldname=Rollbergweg
+Liliensteinweg: schlechtes Kopfsteinpflaster, Q3	? 10120,21464 10099,21461 10071,21453
+Liliensteinweg: unbefestigte Straße, Q2-	? 10071,21453 10054,21448 10012,21436 9971,21424 9960,21421 9932,21413 9907,21406 9870,21395 9830,21384 9752,21362 9684,21337 9645,21323 9629,21317 9590,21303 9574,21297 9532,21282 9519,21277
+# XXX oldname=Hauptweg KGA Schönwald
+Liliensteinweg: unbefestigte Straße, Q2-	? 9519,21277 9497,21259 9481,21241 9472,21230 9455,21211 9445,21199 9429,21181 9420,21170 9394,21140 9344,21084
+# XXX oldname=Weg 12 KGA Schönwald
+Liliensteinweg [Nebenstrang]: unbefestigte Straße, Q2-	? 9464,21307 9475,21281 9497,21259
+# 2.  oldname=Alfredweg
+Lampertssteinweg: Gras, Q3	? 10099,21461 10066,21652
+# 3.  oldname=Heinrichweg
+Quirlweg: unbefestigte Straße, Q2-	? 10054,21448 10024,21638
+# 4.  oldname=Schrapeweg
+Papststeinweg: unbefestigte Straße, Q2-	? 10071,21453 10080,21298
+# 5.  oldname=Maxweg oldname=Ottoweg
+Rauensteinweg: unbefestigte Straße, Q2- (letzte Meter im Süden sind Gras)	? 9985,21625 10012,21436 10036,21284
+# 6.  oldname=Paulweg
+Pfaffensteinweg: unbefestigte Straße, Q2-	? 9946,21612 9971,21424
+# 7.  olname=Erichweg
+Hohler-Stein-Weg: Gehwegplatten in der Mitte, ansonsten unbefestigt, Q2	? 9960,21421 9986,21267
+# 8.  oldname=Adolfweg
+Zirkelsteinweg: unbefestigte Straße, Q2-	? 9903,21598 9932,21413
+# 9.  oldname=Gustavweg
+Friensteinweg: loser Schotter, Q2-	? 10126,21314 10080,21298 10036,21284 9986,21267 9944,21254
+Friensteinweg: unbefestigte Straße, Q2-	? 9944,21254 9907,21406 9866,21586
+# 10.  oldname=Rosenweg oldname=Williweg
+Rittersteinweg: Gras, Q3	? 9831,21575 9870,21395 9881,21331
+# 11.  oldname=Weidenweg KGA Am Rollberg
+Rauschensteinweg: unbefestigte Straße, Q2-	? 9790,21563 9830,21384
+# 12.  oldname=Bergeshöhe Nord/Süd
+Cupetiussteinweg: unbefestigte Straße und Kopfsteinpflaster, Q3+	? 9689,21532 9752,21362
+Cupetiussteinweg: unbefestigte Straße, Q2-	? 9752,21362 9803,21224
+# 13.  oldname=Weg 9 KGA Schönwald
+Zschirnsteinweg: unbefestigte Straße, Q2-	? 9645,21323 9590,21464
+# 14.  oldname=Weg 6 KGA Schönwald
+Schrammsteinweg: Qualität? Neuer Name schon ausgeschildert? Beleuchtet?	? 9629,21317 9681,21192
+# 15.  oldname=Weg 1 KGA Schönwald
+Lasensteinweg: unbefestigte Straße, Q2-	? 9684,21337 9735,21208 9681,21192 9621,21172 9598,21164 9574,21156 9533,21143 9488,21128 9429,21181
+# 16.  oldname=Weg 10 KGA Schönwald
+Kohlbornsteinweg: unbefestigte Straße, Q2-	? 9534,21443 9590,21303
+# 17.  oldname=Weg 5 KGA Schönwald
+Arnsteinweg: unbefestigte Straße, Q2-	? 9574,21297 9621,21172
+# 18.  oldname=Weg 11 KGA Schönwald
+Katzsteinweg: unbefestigte Straße, Q2-	? 9532,21282 9515,21327 9501,21366 9480,21423
+# 19.  oldname=Weg 4 KGA Schönwald
+Bernhardsteinweg: unbefestigte Straße, Q2-	? 9519,21277 9598,21164
+# 20.  oldname=Weg 3 KGA Schönwald
+Benediktsteinweg: unbefestigte Straße, Q2-	? 9574,21156 9481,21241
+# 21.  oldname=Weg 2 KGA Schönwald
+Affensteinweg: unbefestigte Straße, Q2-	? 9455,21211 9533,21143
+# 22.  oldname=Drosselweg
+#: XXX str_cont_ausnahme-Eintrag!
+#: XXX Sackgassen-Einträge!
+Basteiweg: unbefestigte Straße, Q2-	? 9326,21365 9316,21396 9298,21455
+Basteiweg: unbefestigte Straße, Q2-	? 9326,21365 9341,21402 9442,21441
+Basteiweg: unbefestigte Straße, Q2-	? 9448,21411 9442,21441 9410,21535
+# 23.  oldname=Weg 8 KGA Schönwald
+Lorenzsteinweg: unbefestigte Straße, Q2-, einige Betonschwellen	? 9684,21337 9627,21477
+# 23.  oldname=Grabenweg KGA Schönwald
+Lorenzsteinweg: unbefestigte Straße, Q2-, einige Betonschwellen	? 9627,21477 9590,21464 9534,21443 9480,21423 9448,21411 9326,21365 9310,21321 9298,21288 9290,21284 9308,21247 9310,21213 9285,21113
+# 24.  oldname=Parallelweg
+Müllersteinweg: unbefestigte Straße, Q2-	? 9501,21366 9298,21288
+# 25.  oldname=Weg 7 KGA Schönwald
+Rotsteinweg: unbefestigte Straße, Q2-	? 9515,21327 9464,21307 9427,21293 9389,21278 9351,21263 9308,21247
+# 26.  oldname=Weg 13 KGA Schönwald
+Kleinsteinweg: unbefestigte Straße, Q2-	? 9472,21230 9442,21258 9427,21293
+# 27.  oldname=Weg 14 KGA Schönwald
+Altarsteinweg: unbefestigte Straße, Q2-	? 9445,21199 9408,21233 9389,21278
+# 28.  oldname=Weg 15 KGA Schönwald
+Luchssteinweg: unbefestigte Straße, Q2-	? 9420,21170 9375,21208 9351,21263
+# 29.  oldname=Igelweg KGA Schönwald
+#: XXX Sackgasse?
+Pöhligsteinweg: unbefestigte Straße, Q2-	? 9310,21321 9275,21441
+# 30.  oldname=Weg 16 KGA Schönwald (?)
+Brausensteinweg: unbefestigte Straße, Q2-	? 9394,21140 9310,21213
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 vvv --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130620.1355.386320.html (Fertigstellung der Erschließungsstraße) --- #: XXX neue private Straßen entstehen, fehlen in Berlin.coords.data vvv --- #: last_checked: 2012-09-10 vvv --- #: next_check: 2013-07-30 vvv --- #: osm_watch: way id="220390908" version="2" --- #: XXX ad osm_watch: id referenziert die construction area --- Lübarser Aue: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7313,22515 7292,22505 7235,22505 7082,22414 7049,22393 --- Am Rodelberg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7082,22414 7287,22403 7292,22505
 # 
@@ -3627,15 +3619,30 @@ Engelwurzweg: (früher Waldweg) Qualität? Geht es Richtung Westen noch weiter?	? 
 #: XXX neue Straßennamen für 8 Privatwege in der Anlage Nordend vvv
 #: XXX ebenso: Lehmweg, siehe strassen-orig vvv
 #: next_check_id: NORDEND-2014 vvv
+#: last_checked: 2014-04-06 vvv
 #: next_check: 2014-05-26 (Wirksamkeit der Benennung) vvv
-Tonweg: Qualität, Umbenennung?	? 10177,21802 10211,21697
-Buntsteinweg: Qualität, Umbenennung?	? 10111,21667 10211,21697 10269,21718 10328,21737
-Marmorweg: Qualität, Umbenennung? Kann die Dietzgenstr. hier überquert werden?	? 10114,21592 10284,21653 10350,21676 10423,21701 10565,21748 10588,21759
-Granitweg: Qualität, Umbenennung? Kann die Dietzgenstr. hier überquert werden?	? 10118,21510 10313,21574 10379,21597 10593,21676 10751,21725
-Granitweg: Qualität, Umbenennung?	? 10593,21676 10565,21748
-Schiefertonweg: Qualität, Umbenennung?	? 10313,21574 10284,21653 10269,21718 10248,21795
-Zechsteinweg: Qualität, Umbenennung?	? 10379,21597 10350,21676 10328,21737 10319,21774
-Kieselweg: Qualität, Umbenennung?	? 10423,21701 10388,21801
+#: XXX oldname: Tomatenweg; ignore_oldname_file: yes
+Tonweg: unbefestigter Weg, Q2-; Umbenennung?	? 10177,21802 10211,21697
+Buntsteinweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10111,21667 10211,21697 10269,21718
+Buntsteinweg: unbefestigter Weg, Q2-; Umbenennung?	? 10269,21718 10328,21737
+Marmorweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10114,21592 10284,21649 10290,21651 10350,21676 10423,21701 10563,21751
+#: XXX an Punkt 10588,21759 ist ein Drängelgitter, 80cm lichte Breite, evtl. schwierig für Anhänger
+Marmorweg: Gras, Q3; Umbenennung?	? 10563,21751 10585,21759 10596,21769
+Granitweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10118,21510 10313,21574 10379,21597 10593,21676 10735,21725
+#: XXX an Punkt 10752,21727 ist ein Drängelgitter, 70cm lichte Breite, nicht für Anhänger
+Granitweg: unbefestigter Weg, Q2-, NN; Umbenennung?	? 10735,21725 10752,21727 10754,21732
+#: XXX oldname: Schneeballweg; ignore_oldname_file: yes
+Granitweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N, unbeleuchtet; Umbenennung?	? 10593,21676 10563,21751
+#: XXX str_cont_ausnahme-Eintrag fehlt
+Schiefertonweg: Gras, Q3, unbeleuchtet; Umbenennung?	? 10313,21574 10284,21649
+#: XXX gibt es hier auch ein Drängelgitter Richtung Nordgraben?
+Schiefertonweg: unbefestigter Weg, Q2-; Umbenennung?	? 10290,21651 10269,21718 10248,21795
+Zechsteinweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10379,21597 10350,21676
+Zechsteinweg: unbefestigter Weg, Q2-; Umbenennung? Sackgasse?	? 10350,21676 10328,21737 10319,21774
+#: XXX gibt es hier auch ein Drängelgitter Richtung Nordgraben?
+Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10423,21701 10388,21801
+Überquerungsmöglichkeiten in der Dietzgenstr.?	? 10114,21592 10118,21510
+#: last_checked ^^^
 #: next_check ^^^
 #: next_check_id ^^^
 #: XXX ^^^
@@ -3680,9 +3687,6 @@ Route Lychen - Templin: Qualität?	? 3153,88773 3614,88158 3855,88004 3976,87729 
 Route Lychen - Templin: Qualität?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
 Route Lychen - Templin: Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
 Am Graben (Waldblick): Qualität?	? 9402,-3817 9354,-3949
-Sowjetisches Ehrenmal - Friesenstr.: Qualität des Weges? Nachts beleuchtet?	? 8356,19291 8722,19265
-Schönholzer Str. - Waldsteg: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8314,19288 8211,19294 7857,19628 7857,19693
-zum Sowjetischen Ehrenmal: Qualität des Weges? Nachts beleuchtet? Für Radfahrer befahrbar?	? 8319,19299 8255,19366
 # REMOVED (weitgehend aufgenommen) --- Campus Buch: Straßennamen? Qualität?	? 17156,24786 17114,24771 17115,24738 16999,24735 16921,24608 16963,24578 16872,24432 16791,24482 16883,24623 16921,24608
 # REMOVED (aufgenommen) --- Schwanebecker Chaussee [Stichstraße]: Straßenname? Qualität?	? 17591,25405 17428,25235
 Hauffstr. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 2809,28 2873,-60 2951,-185 3030,-312 3101,-427
@@ -3754,3 +3758,4 @@ Rudolf-Leonhard-Str. - Blumberger Damm: Qualität des Rad/Gehweg?	? 21455,16330 2
 #: XXX Straße wird demnächst teilweise für den Kfz-Verkehr gesperrt (die letzten 60 Meter im Süden)
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14469
 Am Heineberg (Potsdam): Qualität?	? -17646,1636 -17599,1890 -17597,2000 -17624,2037 -17651,2197 -17555,2301 -17292,2539
+Weinapfelweg - Pankeweg: existiert eine direkte Verbindung entlang der Autobahn? Qualität? Nachts beleuchtet?	? 13221,22667 13223,22558 13211,22499 13220,22387 13206,22290

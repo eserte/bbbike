@@ -277,7 +277,7 @@ Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1s:q4 12349,8464 12368,8356
 Zionskirchplatz	1 10304,14254 10277,14350 10311,14391 10365,14372 10391,14280
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12874,14608 12782,14676 12700,14726 12520,14833
+Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12782,14676 12700,14726 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 #: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
 Wöhlertstr.	1s:q4 8442,14456 8669,14550
@@ -1518,7 +1518,7 @@ Frankfurter Allee: Mittelstreifen mit Geländer	3nocross 16066,11960 16127,11950 
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9898,11679 9981,11689
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13330,13468
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12177,14335 12188,14350 12228,14404 12266,14460 12317,14535
-Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12422,14692 12473,14763 12520,14833 12584,14928
+Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12422,14692 12473,14763 12528,14845 12584,14928
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12584,14928 12620,14979 12709,15112
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12709,15112 12737,15154 12870,15342
 #: note: Fußgängerfurt existiert zwischen Chodowieckistr. und Jablonskistr.:
@@ -1682,6 +1682,7 @@ Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4206,6820 4237,6840
 Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
 Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
+Rosenthaler Weg: Straßenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -2466,8 +2467,10 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2014-03-31 vvv
 #: next_check: 2014-09-01 vvv
-Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 *
-Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 * 9085,13919 9011,14019
+Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 8935,13844
+Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941
+Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019
+Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019
 #: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -2837,7 +2840,7 @@ Grunewaldstr.: queren schlecht möglich	3nocross 6709,9234 6863,9254 6923,9266
 Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8686,7726 8796,7751 8895,7797 8940,7835
 Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
-Greifswalder Str.	3nocross 12422,14692 12473,14763 12520,14833
+Greifswalder Str.	3nocross 12422,14692 12473,14763 12528,14845
 Danziger Str.	3nocross 12621,14313 12425,14459 12317,14535
 #: note: Luftbild:
 Greifswalder Str.: Straßenbahntrasse	3nocross 13072,15590 13229,15692 13316,15758
