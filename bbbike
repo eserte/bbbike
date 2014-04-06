@@ -564,6 +564,7 @@ $gps_waypoints = 50;
 $gps_waypointlength = 10;
 $gps_waypointcharset = 'ascii';
 $gps_needuniqueroutenumber = 0;
+$gps_routenamelength = 13;
 
 ### Fonts
 $standard_height = 12;
@@ -5380,6 +5381,12 @@ dazu verwendet wird",
 	  label => M"GPS-Gerät benötigt eindeutige Routennummern",
 	  longhelp => M"Laut Garmin-Spezifikationen müssen übetragene Routen mit einer eindeutigen Routennummer versehen werden.\nExperimente haben aber gezeigt, dass die meisten (oder alle?) Garmin-Geräte dieses nicht benötigen.",
 	  var => \$gps_needuniqueroutenumber,
+	 ],
+	 ['gpsroutenamelength','=i',13,
+	  choices => [13,20,30,36],
+	  label => M"Maximale Länge von GPS-Route-Namen",
+	  longhelp => M"Typischerweise 13 bei älteren Garmin-Geräten, aber neuere Geräte können längere Namen verwenden (etrex 30 z.B. 36 Zeichen)",
+	  var => \$gps_routenamelength,
 	 ],
 	 ['gpsdevice','=s',($os eq 'win'   ? "USB" :
 			    $os_bsd        ? '/dev/cuaa0' :

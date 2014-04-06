@@ -212,7 +212,7 @@ use vars qw($hs_check $plzmcmd $ampelstatus_label_text
 	    %info_plugins);
 use vars qw($export_txt_mode $export_txt_min_angle $gps_waypoints
 	    $gps_waypointlength $gps_waypointsymbol $gps_waypointcharset
-	    $gps_needuniqueroutenumber
+	    $gps_needuniqueroutenumber $gps_routenamelength
 	   );
 use vars qw($do_www $really_no_www $no_map
 	    %save_route $multistrassen

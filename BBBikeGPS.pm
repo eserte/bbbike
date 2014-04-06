@@ -1530,8 +1530,6 @@ sub dbl_raise {
 use vars qw($old_route_info_name $old_route_info_number $old_route_info_wpt_suffix $old_route_info_wpt_suffix_existing);
 $old_route_info_wpt_suffix_existing=1;
 
-use constant MAX_ROUTE_NAME_LENGTH => 13; # this is OK for most garmin devices
-
 # $self is NOT a BBBikeGPS object here, but GPS::DirectGarmin or so...
 sub tk_interface {
     my($self, %args) = @_;
@@ -1553,8 +1551,8 @@ sub tk_interface {
 	    $gps_route_info->{Name} = $old_route_info_name;
 	}
     }
-    $gps_route_info->{Name} = substr($gps_route_info->{Name}, 0, MAX_ROUTE_NAME_LENGTH)
-	if length $gps_route_info->{Name} > MAX_ROUTE_NAME_LENGTH;
+    $gps_route_info->{Name} = substr($gps_route_info->{Name}, 0, $main::gps_routenamelength)
+	if length $gps_route_info->{Name} > $main::gps_routenamelength;
 
     $gps_route_info->{Number} ||= $old_route_info_number if defined $old_route_info_number;
     $gps_route_info->{WptSuffix} ||= $old_route_info_wpt_suffix if defined $old_route_info_wpt_suffix;
@@ -1564,7 +1562,7 @@ sub tk_interface {
     Tk::grid($t->Label(-text => M"Name der Route"),
 	     my $e = $t->Entry(-textvariable => \$gps_route_info->{Name},
 			       -validate => 'all',
-			       -vcmd => sub { length $_[0] <= MAX_ROUTE_NAME_LENGTH }),
+			       -vcmd => sub { length $_[0] <= $main::gps_routenamelength }),
 	     -sticky => "w");
     $e->focus;
     my $NumEntry = 'Entry';
