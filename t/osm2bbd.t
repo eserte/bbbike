@@ -39,6 +39,10 @@ my $osm2bbd = "$FindBin::RealBin/../miscsrc/osm2bbd";
   <node id="25663454" lat="52.5067076" lon="13.3905066" version="7" timestamp="2012-07-18T12:30:56Z" changeset="12281912" uid="722137" user="OSMF Redaction Account"/>
   <node id="1814134273" lat="52.5067128" lon="13.3905715" version="2" timestamp="2012-07-05T20:06:34Z" changeset="12124058" uid="125718" user="Fabi2"/>
 
+  <!-- nodes for Wismarplatz -->
+  <node id="27459716" lat="52.5114094" lon="13.4630646" version="6" timestamp="2012-09-03T18:56:16Z" changeset="12971697" uid="209498" user="nurinfo"/>
+  <node id="29785833" lat="52.5108136" lon="13.4627415" version="5" timestamp="2010-03-07T15:29:56Z" changeset="4061779" uid="115651" user="Konrad Aust"/>
+
   <!-- way with cycleway and oneway -->
   <way id="76865761" version="4" timestamp="2013-09-26T03:46:24Z" changeset="18038475" uid="1439784" user="der-martin">
     <nd ref="29271394"/>
@@ -60,6 +64,19 @@ my $osm2bbd = "$FindBin::RealBin/../miscsrc/osm2bbd";
     <tag k="name" v="Rudi-Dutschke-Straße"/>
     <tag k="postal_code" v="10969"/>
   </way>
+
+ <!-- way with oneway:bicycle -->
+ <way id="4685868" version="11" timestamp="2014-03-24T12:15:47Z" changeset="21283624" uid="884156" user="DieBuche">
+   <nd ref="27459716"/>
+   <nd ref="29785833"/>
+   <tag k="highway" v="residential"/>
+   <tag k="maxspeed" v="30"/>
+   <tag k="name" v="Wismarplatz"/>
+   <tag k="oneway" v="yes"/>
+   <tag k="oneway:bicycle" v="no"/>
+   <tag k="postal_code" v="10245"/>
+   <tag k="surface" v="cobblestone"/>
+ </way>
 
 </osm>
 EOF
@@ -99,6 +116,12 @@ EOF
 	my $gesperrt = Strassen->new("$destdir/gesperrt");
 	ok $gesperrt, 'gesperrt could be loaded';
 	is $gesperrt->data->[0], "Karl-Marx-Allee (B 1;B 5)\t1 13.4364709,52.5174916 13.4329187,52.5178395\n";
+    }
+
+    {
+	my $gesperrt = Strassen->new("$destdir/gesperrt_car");
+	ok $gesperrt, 'oneway:bicycle=no goes to gesperrt_car';
+	is $gesperrt->data->[0], "Wismarplatz\t1 13.4627415,52.5108136 13.4630646,52.5114094\n";
     }
 }
 
