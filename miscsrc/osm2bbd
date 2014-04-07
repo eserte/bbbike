@@ -1320,6 +1320,7 @@ for my $osm_file (@osm_files) {
 		    if ($oneway eq 'yes') {
 			$no_oneway_for_cyclists =
 			    (
+			     (exists $tag{'oneway:bicycle'} && $tag{'oneway:bicycle'} eq 'no') || # documented in http://wiki.openstreetmap.org/wiki/Key:oneway
 			     (exists $tag{'bicycle'} && $tag{'bicycle'} eq 'opposite') || # seen in Würzburg, Äußere Pleich, but no documentation/discussion for it
 			     (exists $tag{'cycleway'} && $tag{'cycleway'} =~ m{^opposite(?:$|_lane|_track)$}) # described in http://wiki.openstreetmap.org/wiki/DE:Germany_roads_tagging
 			    );
