@@ -93,11 +93,11 @@ EOF
     like "@{ $meta->{commandline} }", qr{osm2bbd};
 
     {
-	my $radwege = Strassen->new("$destdir/strassen");
-	ok $radwege, 'radwege could be loaded';
-	is $radwege->data->[0], "Karl-Marx-Allee (B 1;B 5)\tHH 13.4329187,52.5178395 13.4364709,52.5174916\n";
-	is $radwege->data->[1], "Rudi-Dutschke-Straße\tH 13.3905066,52.5067076 13.3905715,52.5067128\n";
-	is $radwege->data->[2], "Wismarplatz\tN 13.4630646,52.5114094 13.4627415,52.5108136\n";
+	my $strassen = Strassen->new("$destdir/strassen");
+	ok $strassen, 'strassen could be loaded';
+	is $strassen->data->[0], "Karl-Marx-Allee (B 1;B 5)\tHH 13.4329187,52.5178395 13.4364709,52.5174916\n";
+	is $strassen->data->[1], "Rudi-Dutschke-Straße\tH 13.3905066,52.5067076 13.3905715,52.5067128\n";
+	is $strassen->data->[2], "Wismarplatz\tN 13.4630646,52.5114094 13.4627415,52.5108136\n";
     }
 
     {
@@ -120,15 +120,15 @@ EOF
     }
 
     {
-	my $gesperrt = Strassen->new("$destdir/gesperrt_car");
-	ok $gesperrt, 'oneway:bicycle=no goes to gesperrt_car';
-	is $gesperrt->data->[0], "Wismarplatz\t1 13.4627415,52.5108136 13.4630646,52.5114094\n";
+	my $gesperrt_car = Strassen->new("$destdir/gesperrt_car");
+	ok $gesperrt_car, 'oneway:bicycle=no goes to gesperrt_car';
+	is $gesperrt_car->data->[0], "Wismarplatz\t1 13.4627415,52.5108136 13.4630646,52.5114094\n";
     }
 
     {
-	my $gesperrt = Strassen->new("$destdir/qualitaet_s");
-	ok $gesperrt, 'cobblestone to quality file';
-	is $gesperrt->data->[0], "Wismarplatz: Kopfsteinpflaster\tQ2 13.4630646,52.5114094 13.4627415,52.5108136\n";
+	my $qualitaet_s = Strassen->new("$destdir/qualitaet_s");
+	ok $qualitaet_s, 'cobblestone to quality file';
+	is $qualitaet_s->data->[0], "Wismarplatz: Kopfsteinpflaster\tQ2 13.4630646,52.5114094 13.4627415,52.5108136\n";
     }
 }
 
