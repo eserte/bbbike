@@ -22343,11 +22343,11 @@ EOF
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 EOF
      },
-     { from  => 1386257400, # 2013-12-05 16:30
-       until => 1386561600, # 2013-12-09 05:00
-       text  => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 06.12.2013 um 16:30 Uhr bis voraussichtlich 09.12.2013 05:00 Uhr',
+     { from  => $isodate2epoch->("2014-04-13 00:00:00"), # 1386257400, # 2013-12-05 16:30
+       until => $isodate2epoch->("2014-04-17 23:59:59"), # 1386561600, # 2013-12-09 05:00
+       text  => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 14. April 2014 Uhr bis voraussichtlich 17. April 2014',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131202.1025.392342.html',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140407.1430.396156.html',
        data  => <<EOF,
 userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
 EOF
@@ -22554,12 +22554,11 @@ EOF
      },
      { from  => $isodate2epoch->("2014-04-03 12:00:00"),
        until => $isodate2epoch->("2014-05-23 18:00:00"),
-       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Möllendorffstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
+       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Eberhardstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
        type  => 'handicap',
        source_id => 'IM_021595',
        data  => <<EOF,
-#: XXX vor Ort anschauen
-userdel	q4::inwork; 15233,12829 15357,12813
+userdel	q3::inwork; 15098,12849 15233,12829
 EOF
      },
      { from  => 1394604000, # 2014-03-12 07:00
