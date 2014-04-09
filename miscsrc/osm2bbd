@@ -195,6 +195,13 @@ my %place_to_population;
 my $handle_relations = $experiments{'handle_relations'};
 my %additional_data_per_file;
 
+# XXX see $splitlonglines
+# As fast_plot_str() is used only for layer types
+# 's' und 'l' (streets and country streets), 
+# the $splitlonglines hack may be used only for a limited
+# set of output files.
+my %file_needs_splitlonglines = map { ($_,1) } qw(strassen landstrassen landstrassen2);
+
 %global_directives =
     (
      "_building"     => ["layer_stack: above:i"],
@@ -2111,6 +2118,9 @@ EOF
 	}
     }
 
+    # XXX really split long lines?
+    my $do_splitlonglines = $splitlonglines && $file_needs_splitlonglines{$filename};
+
     my $p = basename($prog);
     print $ofh <<EOF;
 #:
@@ -2133,7 +2143,7 @@ EOF
 	}
 	my $namecat = "$name\t$cat";
 	my $coord_string = join(" ", grep { defined } @$coords);
-	if ($splitlonglines && length($namecat) + length($coord_string) + 2 >= MAXLINELENGTH) {
+	if ($do_splitlonglines && length($namecat) + length($coord_string) + 2 >= MAXLINELENGTH) {
 	    warn_once("Long line detected in $filename, splitting...\n");
 	    my $currlen = length($namecat);
 	    print $ofh $namecat;
