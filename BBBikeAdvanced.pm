@@ -368,7 +368,12 @@ sub custom_draw {
 	set_scrollregion(@BBBike::ExtFile::scrollregion);
     }
     if ($auto_enlarge_scrollregion) {
-	enlarge_scrollregion_for_layer($abk);
+	eval {
+	    enlarge_scrollregion_for_layer($abk);
+	};
+	if ($@) {
+	    warn "Cannot enlarge scrollregion for layer '$abk': $@";
+	}
     }
 
     if ($BBBike::ExtFile::p_attrib && $linetype eq 'p') {
