@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package VMZTool;
 
 use strict;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -42,7 +42,10 @@ use constant MELDUNGSLISTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_W
 use constant MELDUNGSKARTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true';
 
 # @TIMER@ is replaced here:
-use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://www.vmz-info.de/web/guest/home?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_url=http%3A%2F%2Fwms.viz.mobilitaetsdienste.de%2Fpoint_list%2F%3Flang%3Dde&timer=@TIMER@&category=trafficmessage&state=BB';
+#use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://www.vmz-info.de/web/guest/home?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_url=http%3A%2F%2Fwms.viz.mobilitaetsdienste.de%2Fpoint_list%2F%3Flang%3Dde&timer=@TIMER@&category=trafficmessage&state=BB';
+use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://vmz-info.de/web/guest/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiMapListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=1&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_locale=de_DE&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_url=https%3A%2F%2Fservices.mobilitaetsdienste.de%2Fviz%2Fproduction%2Fwms%2F2%2Fwms_list%2F%3Flang%3Dde&timer=@TIMER@&category=publictransportstationairport,trafficmessage&bbox=12.470944447998022,52.00192353741223,14.171078725341772,52.84438224389493';
+
+use constant VMZ_RSS_URL => 'http://vmz-info.de/rss/iv';
 
 sub _trim ($);
 
@@ -102,6 +105,15 @@ sub fetch_berlin_summary {
     my $resp = $ua->mirror($meldungsliste_berlin_url, $file);
     if (!$resp->is_success) {
 	die "Failed while fetching $meldungsliste_berlin_url: " . $resp->as_string;
+    }
+}
+
+sub fetch_vmz_rss {
+    my($self, $file) = @_;
+    my $ua = $self->{ua};
+    my $resp = $ua->mirror(VMZ_RSS_URL, $file);
+    if (!$resp->is_success) {
+	die "Failed while fetching " . VMZ_RSS_URL . ": " . $resp->as_string;
     }
 }
 
@@ -230,8 +242,30 @@ sub parse_mappage {
     }
 }
 
+sub parse_vmz_rss {
+    my($self, $vmz_rss_file) = @_;
+    my $root = $self->{xmlp}->parse_file($vmz_rss_file)->documentElement;
+    $root->setNamespaceDeclURI(undef, undef);
+    my %res;
+    for my $item_node ($root->findnodes('/rss/channel/item')) {
+	my $guid = $item_node->findvalue('guid');
+	if (!$guid) {
+	    warn "Cannot find guid for item '" . $item_node->serialize . "', skipping...";
+	    next;
+	}
+	(my $id = $guid) =~ s{http://www.viz-info.de/}{};
+	$res{$id} = {
+		     title => $item_node->findvalue('title'),
+		     pubdate => $item_node->findvalue('pubdate'),
+		     description_html => $item_node->findvalue('description'),
+		    };
+
+    }
+    %res;
+}
+
 sub parse_berlin_summary {
-    my($self, $summary_file) = @_;
+    my($self, $summary_file, $rss_data) = @_;
 
     my $json = do { open my $fh, '<:raw', $summary_file or die $!; local $/; <$fh> };
     my $summary_data = decode_json $json;
@@ -242,16 +276,19 @@ sub parse_berlin_summary {
     my %place2rec;
 
     for my $record (@{ $summary_data->{list} }) {
-	my $type = lc basename $record->{icon}; # something like "ROADWORKS" or "INDEFINITION"
+	my $type = lc basename $record->{iconId}; # something like "ROADWORKS" or "INDEFINITION"
+	next if $type eq 'airport';
 
 	(my $id = $record->{pointId}) =~ s{^News_id_}{};
 
 	my $htmltb = HTML::TreeBuilder->new;
-	my $tree = $htmltb->parse($record->{description});
+	my $tree = $htmltb->parse($rss_data->{$id}->{description_html});
+	my $strasse = $rss_data->{$id}->{title};
 	my $text = $self->{formatter}->format($htmltb);
+	my @text_lines = split /\n/, $text;
+	@text_lines = @text_lines[6..$#text_lines];
+	$text = join("\n", $strasse, @text_lines);
 	$text =~ s{^\n+}{}; $text =~ s{\n+$}{};
-	$text =~ s{^\s*Straße:\s+(.*)}{$1}m;
-	my $strasse = $1;
 	$text =~ s{^\s*Abschnitt:\s+}{}m;
 	$text =~ s{^\s*Stand:\s+\d+\.\d+\.\d+\s+\d+:\d+\s+}{}sm;
 
@@ -449,22 +486,27 @@ if ($existsid_current_file || $existsid_all_file) {
 my($tmpfh, $file);
 my($tmp2fh, $mapfile);
 my($tmp3fh, $berlinsummaryfile);
-my(undef,   $berlindetailfile);
+my($tmp4fh, $vmzrssfile);
 if ($do_test) {
     my $samples_dir = "$ENV{HOME}/src/bbbike-aux/samples";
-    $file       = "$samples_dir/Meldungsliste.jsp?back=true";
-    $mapfile    = "$samples_dir/Meldungskarte.jsp?back=true&map=true&x=52.1034702789087&y=14.270757485947728&zoom=13&meldungId=LS%2FO-SG33-F%2F10%2F027";
-    $berlinsummaryfile = "$samples_dir/vmz-2013.json";
+    if ($do_aspurls) {
+	$file       = "$samples_dir/Meldungsliste.jsp?back=true";
+	$mapfile    = "$samples_dir/Meldungskarte.jsp?back=true&map=true&x=52.1034702789087&y=14.270757485947728&zoom=13&meldungId=LS%2FO-SG33-F%2F10%2F027";
+    }
+    $berlinsummaryfile = "$samples_dir/vmz-2014.json";
+    $vmzrssfile        = "$samples_dir/vmz-2014.rss";
 } elsif ($do_fetch) {
     ($tmpfh,$file)     = tempfile(UNLINK => 1) or die $!;
     ($tmp2fh,$mapfile) = tempfile(UNLINK => 1) or die $!;
     ($tmp3fh,$berlinsummaryfile) = tempfile(UNLINK => 1) or die $!;
+    ($tmp4fh,$vmzrssfile) = tempfile(UNLINK => 1) or die $!;
     eval {
 	if ($do_aspurls) {
 	    $vmz->fetch($file);
 	    $vmz->fetch_mappage($mapfile);
 	}
 	$vmz->fetch_berlin_summary($berlinsummaryfile);
+	$vmz->fetch_vmz_rss($vmzrssfile);
     };
     if ($@) {
 	$File::Temp::KEEP_ALL = 1;
@@ -476,12 +518,13 @@ my %res;
 if ($file && $mapfile) {
     %res = $vmz->parse($file);
     $vmz->parse_mappage($mapfile, \%res);
-} else {
+} elsif (-r $new_store_file) {
     my $res = BBBikeYAML::LoadFile($new_store_file);
     %res = %$res;
 }
-if ($berlinsummaryfile) {
-    my %berlin_res = $vmz->parse_berlin_summary($berlinsummaryfile);
+if ($berlinsummaryfile && $vmzrssfile) {
+    my %berlin_rss_res = $vmz->parse_vmz_rss($vmzrssfile);
+    my %berlin_res = $vmz->parse_berlin_summary($berlinsummaryfile, \%berlin_rss_res);
     while(my($id,$rec) = each %{ $berlin_res{id2rec} }) {
 	if (!exists $res{id2rec}->{$id}) {
 	    $res{id2rec}->{$id} = $rec;
@@ -542,10 +585,8 @@ see the appropriate targets in data/Makefile):
 =head1 NOTES
 
 Two VMZ sources are used: the first (MELDUNGSLISTE_URL and
-MELDUNGSKARTE_URL) contains records in Berlin and Brandenburg. The 2nd
-(MELDUNGSLISTE_BERLIN_URL) contains additional records in Berlin. If
-records appear in both sources, then the first one is used. The 1st
-source has only one-point coordinates, while the 2nd may contain
-multiple coordinates.
+VMZ_RSS_URL) contains records in Berlin and Brandenburg. The 2nd
+(VMZ_RSS_URL) may contain additional records in Berlin. If
+records appear in both sources, then the first one is used.
 
 =cut
