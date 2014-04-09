@@ -105,7 +105,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2014-03-07
+#: last_checked: 2014-04-08
 #: check_frequency: 90d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -220,7 +220,7 @@ Warschauer Str: Radspuren für 2013 geplant	?::projected 13588,11490 13603,11538 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="4424794" version="12"
 #: osm_watch: way id="30195541" version="6"
-#: last_checked: 2014-03-07 (neu asphaltiert, Markierung fehlt teilweise komplett)
+#: last_checked: 2014-04-08 (neu asphaltiert, Markierung fehlt teilweise komplett)
 #: check_frequency: 60d
 Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321
 # 
@@ -357,13 +357,11 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 #
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5213.html
-#: XXX bis Ende 2014
-Heidestr.: wie ist die Radverkehrsführung an der Kreuzung Sellerstr.?	? 7589,14359 7597,14417
+#: last_checked: 2014-04-08
+Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Ampel?	?::inwork 5299,14049
 # 
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140326.1205.395773.html
-#: next_check: 2014-04-01
-Thusnelda-Allee: wann genau wird die Sperrung sein?	? 5956,13330 5975,13256
+# REMOVED (keine Besonderheiten) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5213.html --- #: XXX bis Ende 2014 --- Heidestr.: wie ist die Radverkehrsführung an der Kreuzung Sellerstr.?	? 7589,14359 7597,14417
+# REMOVED (Bauarbeiten laufen bereits, sind aber relativ unproblematisch für Radfahrer) --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140326.1205.395773.html --- #: next_check: 2014-04-01 --- Thusnelda-Allee: wann genau wird die Sperrung sein?	? 5956,13330 5975,13256
 # 
 Forstmeisterweg, Fortsetzung: Qualität? Beleuchtung? Straßenname?	? 32222,3680 32230,3766 32264,3854 32229,3892
 # 
@@ -861,18 +859,22 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues 
 # 
 #: XXX brunnels!
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5207.html ("nahe Zukunft")
+#: XXX laut Tagesspiegel vom 8. April 2014 soll die Realisierung noch im April passieren
+#: priority: #A
 #: last_checked: 2014-03-21
-#: check_frequency: 60d
+#: next_check: 2014-04-28
 Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr., Brücke über die Yorckstr.: wann wird hier realisiert?	?::projected 8338,9593 8339,9560
 # 
 #: XXX brunnels!
+#: XXX hier wird bestimmt nicht so schnell wie bei der B-L-Strecke realisiert...
 #: last_checked: 2014-03-21
-#: check_frequency: 60d
+#: check_frequency: 180d
 Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. realisiert?	?::projected 8426,9572 8423,9532
 # 
 #: XXX Bauarbeiten beginnen Ende April 2014
 #: XXX zumindest den "Platznamen" aufnehmen
 #: last_checked: 2014-03-21
+#: next_check: 2014-04-28
 Monumentenplatz	?::projected 8353,9072 8332,9059
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html --- #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/ --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Brücke) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619&date=20130910 (Antwort) --- #: last_checked: 2014-03-07 (südliche Rampe noch in Bau) vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="187902666" version="2" --- Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert, asphaltiert	?::projected 8339,9560 8339,9448 8374,9291 8381,9247 8334,9085 8353,9072 8367,9006 8374,9074 8389,9087
@@ -973,7 +975,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2014-02-28 vvv
+#: last_checked: 2014-04-08 vvv
 #: next_check: 2014-06-02 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1093,6 +1095,8 @@ BAB100	?::inwork 14270,9710 14186,9546 14147,9383 14160,9132 14307,8805 14270,83
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+Tiergarten: existiert dieser Weg noch oder ist es nur ein Trampelpfad?	? 8210,11775 8156,11863
 # 
 Maximilianstr.: Vorfahrtsregelung?	? 10298,17299 10499,17286 10774,17277
 # 
@@ -1268,12 +1272,6 @@ Heinrich-Mann-Allee: Nebenstraße?	? -11152,-3498 -11036,-3654 -10963,-3762 -1089
 Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer Str. überquert werden? Oder würde man auf der Nebenstraße bleiben?	? -11423,-3431 -11311,-3322
 # 
 (Alter Tornow - Fähre): Qualität (vielleicht Verbundsteinpflaster?)? Tatsächlich NN?	? -13980,-2690 -14045,-2595
-# 
-#: osm_watch: way id="129104626" version="2"
-#: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
-#: last_checked: 2014-03-28
-#: check_frequency: 90d
-Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: wann wird die Fortsetzung gebaut? Qualität?	?::projected 8251,14337 8442,14456
 # 
 #: osm_watch: way id="186786509" version="3"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
@@ -3759,3 +3757,6 @@ Rudolf-Leonhard-Str. - Blumberger Damm: Qualität des Rad/Gehweg?	? 21455,16330 2
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14469
 Am Heineberg (Potsdam): Qualität?	? -17646,1636 -17599,1890 -17597,2000 -17624,2037 -17651,2197 -17555,2301 -17292,2539
 Weinapfelweg - Pankeweg: existiert eine direkte Verbindung entlang der Autobahn? Qualität? Nachts beleuchtet?	? 13221,22667 13223,22558 13211,22499 13220,22387 13206,22290
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140408.1015.396178.html
+#: next_check: 2014-04-27
+Altlandsberge - Krummensee: existiert hier ein Radweg? Wegbeschaffenheit des Radwegs? Falls es ein Zweirichtungsradweg ist: auf welcher Seite befindet er sich?	? 32325,18434 31740,18675 31546,18803 31267,19338 30163,20992 29835,21516

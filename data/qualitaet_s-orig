@@ -7340,7 +7340,7 @@ Harry-Liedtke-Pfad: Gehwegplatten	Q0- 15806,1903 15834,2024
 Harry-Liedtke-Pfad: Gehwegplatten	Q0- 15834,2024 15843,2065 15836,2113
 Senefelderstr.: Kleinsteinpflaster	Q1 11595,15058 11582,15021
 Knackstr.: Kopfsteinpflaster	Q2 11101,14768 11038,14972 11056,15009
-Ida-von-Arnim-Str.: Asphalt	Q0 8077,14227 8251,14337
+Ida-von-Arnim-Str.: Asphalt	Q0 8077,14227 8251,14337 8442,14456
 Riedemannweg: Beton	Q0 4248,15647 4389,15336
 #: note: Ausweichen auf sehr schmalen unbefestigten Gehweg möglich
 Thaters Privatweg: schlechtes Kopfsteinpflaster	Q3 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
@@ -8507,7 +8507,7 @@ Schneeammerweg: unbefestigte Straße	Q2 13329,20299 13420,20236
 (Park am Nordbahnhof - Caroline-Michaelis-Str./Mount Mitte): Beton	Q0 9119,14255 9081,14232 8992,14176
 (an der Panke - Mauerweg): Asphalt	Q0 7878,14514 7889,14519 7943,14453 7989,14478 8050,14558 8103,14582 8232,14689
 Uferweg: Asphalt mit Schäden	Q2+ 7612,14449 7561,14458 7426,14539 7373,14566
-Uferweg: wassergebundene Decke	Q1 7746,14408 7661,14398 7597,14417
+Uferweg: wassergebundene Decke	Q1 7740,14409 7661,14398 7634,14406 7617,14420 7597,14417
 #: note: dieses kurze Stück hat auf der Fahrbahn Kopfsteinpflaster, Radwege weiterhin Verbundsteinpflaster
 Quitzowstr.: Kopfsteinpflaster	Q2 7080,14398 7104,14403
 (Goerdelersteg - Beusselstr.): Beton	Q0 3625,14230 3610,14219 3655,14237
@@ -9249,8 +9249,7 @@ Hadburgpfad: Verbundsteinpflaster	Q1+ 17484,12405 17531,12398
 #: next_check_id: STADTGARTENMOABIT-2014
 #: XXX entsteht hier Asphalt oder eine andere Pflasterung?
 #: XXX siehe auch Eintrag in gesperrt-orig
-#: last_checked: 2014-03-07 (Bauarbeiten)
-#: check_frequency: 60d
+#: last_checked: 2014-04-08 (Bauarbeiten)
 (Weg am Stadtgarten Moabit): unbefestigter Weg	Q2- 5708,14077 5685,14215
 Helsingforser Platz: Betonpflaster	Q0- 13473,11456 13427,11431
 (Bornholmer Str. - Kolonnenweg): Asphalt	Q0 10134,16534 10118,16561 10108,16576 9954,16590
@@ -23312,10 +23311,14 @@ Döberitzer Str.: asphaltiert	Q0 7979,13733 7872,13685
 Dreysestr: Kopfsteinpflaster mit Bodenschwellen	Q2 6976,13563 6897,13551 6783,13551 6687,13545
 Bandelstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 6692,13333 6687,13545 6686,13746
 Bugenhagenstr.: Asphalt mit Kopfsteinpflasterbodenschwellen	Q2 6229,13517 6104,13522 6008,13529
+#: confirmed_by: srt
 Bugenhagenstr.: Kopfsteinpflaster	Q2 6008,13529 5964,13535 5882,13548
 Waldenserstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 5882,13548 5725,13566 5580,13587 5390,13616
+#: confirmed_by: srt
 Jonasstr.: Asphalt	Q0 5956,13330 5956,13433
+#: confirmed_by: srt
 Jonasstr.: Kopfsteinpflaster	Q2 5956,13433 5964,13535
+#: confirmed_by: srt
 Arminusstr.: Asphalt	Q0 5956,13433 5868,13441
 Tile-Wardenberg-Str.: Kopfsteinpflaster	Q2 5740,12419 5616,12500 5585,12518 5556,12536 5486,12581 5376,12661
 Solinger Str.: Kopfsteinpflaster	Q2 5734,12673 5673,12581 5616,12500

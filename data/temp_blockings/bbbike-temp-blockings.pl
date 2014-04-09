@@ -22582,12 +22582,11 @@ userdel	q4::inwork; 16537,15827 16563,15900 16616,16046 16505,16096 16520,16200
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1396981091, # undef, # XXX
        text  => 'Siemensstr.: Umbau der Kreuzung Erna-Samuel-Str., Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wie sieht die Kreuzungssituation danach aus?
-#: last_checked: 2014-03-12
+# REMOVED (eigentlich relativ gut passierbar, zumindest in Richtung Osten) --- #: XXX wie sieht die Kreuzungssituation danach aus? --- #: last_checked: 2014-04-08
 userdel	q4::inwork 5443,14028 5299,14049
 EOF
      },

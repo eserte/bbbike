@@ -3982,17 +3982,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
        },
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Siemensstr.: Umbau der Kreuzung Erna-Samuel-Str., Fahrbahn gesperrt',
-         'from' => undef,
-         'id' => 2552,
-         'data' => '#: XXX wie sieht die Kreuzungssituation danach aus?
-#: last_checked: 2014-03-12
-userdel	q4::inwork 5443,14028 5299,14049
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,

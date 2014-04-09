@@ -2464,6 +2464,13 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: BND-2014
+#: osm_watch: way id="129104626" version="2"
+#: XXX culdesac-orig entfernen, sobald die Verl‰ngerung erfolgt ist
+#: last_checked: 2014-04-08
+#: check_frequency: 60d
+Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
+# 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2014-03-31 vvv
 #: next_check: 2014-09-01 vvv
@@ -2519,8 +2526,8 @@ Groﬂe Hamburger Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3 10077,13100 10018,13
 # REMOVED (Einbahnstraﬂe in "Am Zirkus" bleibt wohl permanent, Schild sieht nicht tempor‰r aus) #: next_check_id: AMZIRKUS-2014 --- #: XXX oder bleibt die Einbahnstraﬂenregelung permanent? --- #: XXX_prog 1s:q4:inwork geht als Kategorie nicht, falsche ‹bersetzung! --- #: last_checked: 2014-03-07
 # 
 #: next_check_id: STADTGARTENMOABIT-2014
-#: last_checked: 2014-03-07 (Bauarbeiten)
-#: check_frequency: 60d
+#: last_checked: 2014-04-08 (Bauarbeiten)
+#: check_frequency: 30d
 (Weg am Stadtgarten Moabit): Bauarbeiten	2::inwork 5708,14077 5685,14215
 # 
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2014-03-07 --- Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
@@ -2628,7 +2635,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
-#: last_checked: 2014-02-28
+#: last_checked: 2014-04-08
 #: next_check: 2014-06-02
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
@@ -2716,7 +2723,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2014-04-02 vvv
+#: last_checked: 2014-04-08 vvv
 #: next_check: 2014-06-01 vvv
 #: XXX siehe auch aufgehobene Einbahnstraﬂenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollst‰ndig gesperrt	2:inwork 9743,12239 9801,12245
