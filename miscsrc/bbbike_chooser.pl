@@ -86,6 +86,7 @@ GetOptions(
 	  );
 
 my $mw = tkinit;
+$mw->title('BBBike chooser');
 
 $mw->optionAdd('*advOpts*font', '{sans serif} 7');
 
@@ -125,7 +126,7 @@ $mw->Menubutton(Name => 'advOpts',
 
 my $bln = $mw->Balloon;
 $mw->Label(-text => M"Choose city/region:")->pack;
-my $p = $mw->Scrolled("Pane", -sticky => 'nw', -scrollbars => 'ose')->pack(qw(-fill both));
+my $p = $mw->Scrolled("Pane", -sticky => 'nw', -scrollbars => 'ose')->pack(qw(-fill both -expand 1));
 fill_chooser();
 
 $mw->WidgetDump if $debug;
@@ -289,9 +290,9 @@ sub download_more {
 	$mw->messageBox(-message => M('Problem: cannot find more data at bbbike.org.'));
 	return;
     }
-    my $t = $mw->Toplevel;
+    my $t = $mw->Toplevel(-title => M('More cities/regions @ bbbike.org'));
     $t->Label(-text => M"Choose city/region:")->pack;
-    my $p = $t->Scrolled("Pane", -sticky => 'nw', -scrollbars => 'ose')->pack(qw(-fill both));
+    my $p = $t->Scrolled("Pane", -sticky => 'nw', -scrollbars => 'ose')->pack(qw(-fill both -expand 1));
     my $last_b;
     for my $city (@cities) {
 	Tk::grid(my $b = $p->Button(-text => $city,
