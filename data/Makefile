@@ -1683,7 +1683,7 @@ ${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET}: temp_blockings/bbbike-temp-blockings.p
 	@touch $@
 
 # For adjusting the buffer in BBBikeXS.xs.
-# Please adjust the number according to MAXBUF and MAXPOINTS in BBBikeXS.xs.
+# Please adjust the number according to MAXBUF in BBBikeXS.xs.
 check-line-lengths:	.check_line_lengths
 
 .check_line_lengths:	$(TARGETS)
@@ -1691,10 +1691,6 @@ check-line-lengths:	.check_line_lengths
 	    $(PERL) -nle '$$max = length($$_) if length($$_) > $$max; END { print $$max }' < $$i; \
 	done | sort -nr | head -1`; \
 	[ $$MAXLEN -lt 12288 ] || ( echo $$MAXLEN; exit 1 )
-	MAXPOINTS=`for i in $(TARGETS); do \
-	    $(PERL) -nle '$$points = scalar split / /; $$max = $$points if $$points > $$max; END { print $$max }' < $$i; \
-	done | sort -nr | head -1`; \
-	[ $$MAXPOINTS -lt 1024 ] || ( echo $$MAXPOINTS; exit 1 )
 	@touch $@
 
 count-streets:
