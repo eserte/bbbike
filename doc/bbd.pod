@@ -79,10 +79,8 @@ grid of the coordinates should be handled by the software. It is
 recommended that x and y should denote the easting and northing in
 meters (as in GKK or UTM). A record may contain an unlimited number of
 coordinates, though there may be limitations in the interpreting
-software (currently the maximum number of points is hardcoded in
-L<BBBikeXS> and checked in the rule C<check-line-lengths> of
-F<data/Makefile>). See also below for the B<map> directive in
-L</Directive lines>.
+software. See also below for the B<map> directive in L</Directive
+lines>.
 
 =back
 
