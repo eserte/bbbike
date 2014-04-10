@@ -168,7 +168,6 @@ slow-checks:	check-categories \
 		check-names \
 		.check_targets \
 		inaccessible_strassen inaccessible_landstrassen ${PERSISTENTTMPDIR}/inaccessible_landstrassen+fragezeichen \
-		check-line-lengths \
 		check-coords.data \
 		persistent-tmp
 
@@ -1680,17 +1679,6 @@ ${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET}: temp_blockings/bbbike-temp-blockings.p
 
 .check_add_str:	strassen add_str Berlin.coords.data
 	false
-	@touch $@
-
-# For adjusting the buffer in BBBikeXS.xs.
-# Please adjust the number according to MAXBUF in BBBikeXS.xs.
-check-line-lengths:	.check_line_lengths
-
-.check_line_lengths:	$(TARGETS)
-	MAXLEN=`for i in $(TARGETS); do \
-	    $(PERL) -nle '$$max = length($$_) if length($$_) > $$max; END { print $$max }' < $$i; \
-	done | sort -nr | head -1`; \
-	[ $$MAXLEN -lt 12288 ] || ( echo $$MAXLEN; exit 1 )
 	@touch $@
 
 count-streets:
