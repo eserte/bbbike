@@ -48,7 +48,6 @@ extern "C" {
  * See rule "check-line-lengths" in data/Makefile
  */
 #define MAXBUF 12288
-#define MAXPOINTS 1024
 
 /* should be the same as in BBBikeTrans.pm */
 #define X_DELTA -200.0
@@ -649,9 +648,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 	char buf0[MAXBUF];
 	char *buf;
 	char abkcat[24];
-	struct {
-	  int x, y;
-	} point[MAXPOINTS];
+	AV *coords;
 	AV *tags, *outline_tags;
 	int count;
 	int file_count = 0;
@@ -816,7 +813,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 	  while((f && !feof(f)) ||
 		(data_array && data_pos <= av_len(data_array))) {
 	    char *p, *cat, *cat_attrib;
-	    int i, point_i;
+	    int i;
 
 	    /* get line from file or data array */
 	    if (f) {
@@ -896,15 +893,14 @@ fast_plot_str(canvas, abk, fileref, ...)
 		    }
 		  }
 
-		  point_i = 0;
+		  coords = newAV();
 		  while(*p) {
 		    char *new_p = strchr(p, ',');
 		    if (new_p) {
-		      point[point_i].x = atoi(p);
+		      av_push(coords, TRANSPOSE_X_SCALAR(atoi(p)));
 		      p = new_p + 1;
 		      new_p = strchr(p, ' ');
-		      point[point_i].y = atoi(p);
-		      point_i++;
+		      av_push(coords, TRANSPOSE_Y_SCALAR(atoi(p)));
 		      if (new_p)
 			p = new_p + 1;
 		      else
@@ -912,11 +908,10 @@ fast_plot_str(canvas, abk, fileref, ...)
 		    }
 		  }
 
-		  if (point_i > 1) {
+		  if (av_len(coords) != -1) {
 		    int width = 1;
 		    char *fill = "white";
 		    SV* name;
-		    AV *coords;
 
 		    if (category_width) {
 		      SV** sv_sv_category_width = hv_fetch(category_width,
@@ -960,12 +955,6 @@ fast_plot_str(canvas, abk, fileref, ...)
 			fill = "white";
 			width = 2;
 		      }
-		    }
-
-		    coords = newAV();
-		    for(i = 0; i < point_i; i++) {
-		      av_push(coords, TRANSPOSE_X_SCALAR(point[i].x));
-		      av_push(coords, TRANSPOSE_Y_SCALAR(point[i].y));
 		    }
 
 		    if (outline) {
@@ -1073,10 +1062,10 @@ fast_plot_str(canvas, abk, fileref, ...)
 			}
 		      }
 		    }
-
-		    av_undef(coords);
-		    SvREFCNT_dec(coords);
 		  }
+
+		  av_undef(coords);
+		  SvREFCNT_dec(coords);
 		  count++;
 		} else {
 		  warn("Line %d of file %s is incomplete (SPACE character after category expected)\n", count+1, file ? file : "<data>");

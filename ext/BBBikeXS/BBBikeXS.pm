@@ -14,7 +14,7 @@ use vars qw($VERSION @ISA);
 require DynaLoader;
 
 @ISA     = qw(DynaLoader);
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 eval {
     local $SIG{__DIE__};
