@@ -3154,7 +3154,17 @@ userdel	2::temp 12635,12629 12596,12472
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5227.html',
+         'until' => 1398722399,
+         'text' => 'Hessische Str.: Baustelle, Zufahrt zur Invalidenstraße gesperrt; Einbahnstraße in der Invalidenstraße, 14.04.2014 bis voraussichtlich 28.04.2014',
+         'from' => 1397340000,
+         'id' => 2313,
+         'data' => 'userdel	q4::inwork 8690,13723 8775,13606
+userdel	q4::inwork; 8690,13723 8659,13708 8626,13692 8619,13689
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,

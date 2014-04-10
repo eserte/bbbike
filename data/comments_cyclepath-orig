@@ -29,7 +29,7 @@ Verbundsteinpflasterradweg	RW2;RW8 22475,19310 22418,19268
 Verbundsteinpflasterradweg, keine hohen Geschwindigkeiten möglich	RW2;RW2 22418,19268 21975,19068 21821,19021 21558,18947 21442,18880 21434,18875
 gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2;RW2 21975,19068 21895,19198
 Verbundsteinpflasterradweg	RW2;RW2 21895,19198 21878,19226 21801,19325 21692,19455 21675,19477 21665,19490 21621,19540
-guter Zweirichtungsradweg	RW;RW8? 24381,-11212 24378,-10040 24278,-9878
+guter Zweirichtungsradweg	RW;RW8? 24361,-11236 24380,-11123 24343,-10276 24378,-10040 24278,-9878
 asphaltiert	RW;RW8? 12931,27643 12352,29576
 Verbundsteinpflasterradweg	RW2;RW2 33943,5568 33814,5618 33686,5660 33564,5702 33444,5744
 Verbundsteinpflasterradweg	RW1;RW2 33444,5744 33207,5820
@@ -715,6 +715,10 @@ Verbundsteinpflaster	RW1;RW1 18441,25967 18551,25938 18654,25911 18777,25879 188
 #: note: keine Ausschilderung Richtung Südosten, aber faktisch als Zweirichtungsradweg nutzbar
 asphaltiert	RW;RW9 19777,25080 19651,25131 18875,25796
 Verbundsteinpflaster	RW2;RW2 34110,6164 34475,6450
+	RW8?;RW2? 19835,-16307 19263,-16584 17784,-17188 17398,-17485
+	RW2?;RW8? 17398,-17485 17227,-17782
+#: by: http://www.ls.brandenburg.de/cms/detail.php/bb1.c.240527.de
+	RW2?;RW8? 18783,57202 18954,57655
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:

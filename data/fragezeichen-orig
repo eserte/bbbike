@@ -357,6 +357,11 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 #
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5225.html
+#: XXX für Fußgänger wird nur die südliche Fahrbahnseite zur Verfügung stehen?
+#: next_check: 2014-05-10
+Sonnenallee: Bauarbeiten, bleiben die Radwege erhalten? Außerdem Bau einer provisorischen Ampel an der Ziegrastr.	?::projected 14519,7301 14174,7505
+# 
 #: last_checked: 2014-04-08
 Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Ampel?	?::inwork 5299,14049
 # 
@@ -1069,9 +1074,6 @@ Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01
 #: last_checked: 2013-09-19
 #: next_check: 2014-09-19
 Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,16357
-# 
-#: next_check: 2010-10-30
-Mittenwalde - Telz: Radweg in Bau	?::inwork 19835,-16307 19263,-16584 17784,-17188 17398,-17485
 # 
 #: XXX -> strassen_bab-orig, wenn fertig
 #: XXX weitere Änderungen: Matthesstr. wird aufgehoben, Teile des Mergenthalerrings wahrscheinlich auch
@@ -2652,7 +2654,7 @@ Libnow - Lassan: Qualität (möglicherweise nur ein Feldweg)?	? 31996,167054 32020
 Freest - Peenemünde, Fähre (Telefon 038371-20829 oder 0170-1607371): Wann fährt hier die Fähre?	? 28887,192995 29771,193403 30250,193525 30746,192592 31301,192513 31355,192739 31413,192783
 Mückendorf/B96 - Richtung Teupitz: Qualität? Wie geht es in Richtung Teupitz weiter?	? 18001,-35985 18101,-35914 18479,-35645 18936,-35316 19344,-35036 19826,-34707 20021,-34512 20246,-34268 20338,-34165 20618,-33964 20661,-33854
 #: by: Emanuel Schlüßler
-Darwinbogen (Königs Wusterhausen): Qualität (betoniert?)? Mit Radweg oder Radspur? Wie weit Richtung Westen ist die Straßen schon gebaut?	? 24381,-11212 24289,-11236 24131,-11318 23982,-11328
+Darwinbogen (Königs Wusterhausen): Qualität (betoniert?)? Mit Radweg oder Radspur? Wie weit Richtung Westen ist die Straßen schon gebaut?	? 24361,-11236 24289,-11236 24131,-11318 23982,-11328
 Braumannweg (Groß Glienicke): Qualität?	? -9415,5322 -9491,5339 -9671,5382
 Zum Bahnübergang (Marquardt): Qualität?	? -18385,4346 -18620,4569
 Garz - Korswandt: Qualität? Sind Teile der Strecke für Autos gesperrt?	? 59381,165027 59305,165173 59262,165310 59177,165487 59174,165716 59208,165863
@@ -3760,3 +3762,7 @@ Weinapfelweg - Pankeweg: existiert eine direkte Verbindung entlang der Autobahn?
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140408.1015.396178.html
 #: next_check: 2014-04-27
 Altlandsberge - Krummensee: existiert hier ein Radweg? Wegbeschaffenheit des Radwegs? Falls es ein Zweirichtungsradweg ist: auf welcher Seite befindet er sich?	? 32325,18434 31740,18675 31546,18803 31267,19338 30163,20992 29835,21516
+Luckenwalder Str. - Nottekanal: Qualität des Radwegs?	? 25098,-13447 24549,-12629 24506,-12527
+Radweg entalng der B179n: Qualität?	? 24549,-12629 24531,-12634 24483,-12540 24474,-12453 24408,-12045 24344,-11733 24367,-11520 24371,-11283 24361,-11236
+#: by: http://www.ls.brandenburg.de/cms/detail.php/bb1.c.240276.de
+Telz - Zossen: wurde der geplante Radweg schon gebaut? Qualität? Auf welcher Seite führt der Zweirichtungsradweg entlang?	? 17227,-17782 17038,-18590 16856,-19255 16963,-19789 16836,-20130 16730,-20386 16071,-20727 15794,-20749 15178,-20983 15072,-21175

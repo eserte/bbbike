@@ -12960,7 +12960,7 @@ EOF
        text  => 'L 030 Mittenwalde - Königs Wusterhausen zw. Schenkendorf und Königs Wusterhausen Straßenbauarbeiten Vollsperrung 22.10.2008-23.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 24843,-13725 25148,-13393 25203,-13334
+userdel	2::inwork 24843,-13725 25098,-13447 25148,-13393 25203,-13334
 EOF
      },
      { from  => 1224367200, # 2008-10-19 00:00
@@ -20160,13 +20160,14 @@ EOF
 userdel	2::inwork 34913,13893 35382,13974
 EOF
      },
-     { from  => 1343067459, # 1329208920, # 2012-02-14 09:42 -> handicap_s-orig
-       until => 1343067463, # 1369989720, # 2013-05-31 10:42
-       text  => 'Hessische Str. (Mitte): Baustelle, Fahrtrichtung gesperrt (Umleitungsstrecke für die Arbeiten auf der Invalidenstr.) Richtung Oranienburger Tor, 15.02.2012 09:42 Uhr bis 31.05.2013 10:42 Uhr',
+     { from  => $isodate2epoch->("2014-04-13 00:00:00"), # 1343067459, # 1329208920, # 2012-02-14 09:42 -> handicap_s-orig
+       until => $isodate2epoch->("2014-04-28 23:59:59"), # 1343067463, # 1369989720, # 2013-05-31 10:42
+       text  => 'Hessische Str.: Baustelle, Zufahrt zur Invalidenstraße gesperrt; Einbahnstraße in der Invalidenstraße, 14.04.2014 bis voraussichtlich 28.04.2014',
        type  => 'handicap',
-       source_id => 'IM_018437',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5227.html',
        data  => <<EOF,
-userdel	q4::inwork; 8690,13723 8775,13606
+userdel	q4::inwork 8690,13723 8775,13606
+userdel	q4::inwork; 8690,13723 8659,13708 8626,13692 8619,13689
 EOF
      },
      { from  => 1330026300, # 2012-02-23 20:45
@@ -20578,7 +20579,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/S-SG33-W/11/268',
        data  => <<EOF,
-userdel	2::inwork 24843,-13725 25148,-13393
+userdel	2::inwork 24843,-13725 25098,-13447 25148,-13393
 EOF
      },
      { from  => 1341730800, # 2012-07-08 09:00
