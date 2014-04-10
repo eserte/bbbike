@@ -2835,8 +2835,23 @@ sub _get_tk_widgetdump {
 	# XXX configuration stuff vvv
 	if ($^O eq 'freebsd') {
 	    $mount_point = '/mnt/garmin-internal';
-	    # XXX unfortunately "camcontrol devlist" is restricted to root on FreeBSD; one could fine the information here! What about Linux?
-	    $mount_device = '/dev/da0';
+	    # XXX unfortunately "camcontrol devlist" is restricted to root on FreeBSD; one could fine the information here!
+	    # XXX as a workaround, look into /var/log/messages
+	    require Tie::File;
+	    require Fcntl;
+	    if (tie my @log, 'Tie::File', '/var/log/messages', mode => Fcntl::O_RDONLY()) {
+		for(my $log_i = $#log; $log_i>=0; $log_i--) {
+		    if ($log[$log_i] =~ m{kernel: ([^:]+): <Garmin GARMIN Flash}) {
+			$mount_device = "/dev/$1";
+			warn "Guess garmin internal card to be '$mount_device'...\n";
+			last;
+		    }
+		}
+	    }
+	    if (!defined $mount_device) {
+		$mount_device = '/dev/da0';
+		warn "Cannot find garmin internal card in /var/log/messages, use a '$mount_device' as fallback...\n";
+	    }
 	    @mount_opts = (-t => 'msdosfs');
 	} elsif ($^O eq 'MSWin32') {
 	    require Win32Util;
