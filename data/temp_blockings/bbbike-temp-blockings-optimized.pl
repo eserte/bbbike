@@ -3456,7 +3456,7 @@ userdel	q2::inwork 5258,11285 5236,10994
          'id' => 2425,
          'data' => '#: next_check_id: RICHARDSTR-2014
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-03-24
+#: last_checked: 2014-04-11
 #: check_frequency: 30d
 # REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
@@ -3758,8 +3758,8 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2489,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-03-01
-#: next_check: 2014-04-15
+#: last_checked: 2014-04-11
+#: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
@@ -3806,7 +3806,16 @@ userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20140411.1410.396295.html',
+         'until' => 1402696799,
+         'text' => 'Lengeder Str.: Bauarbeiten zwischen Montanstr. und Roedernallee, Einbahnstraße offen in Richtung Montanstr., 5. Mai 2014 bis 13. Juni 2014',
+         'from' => 1399154400,
+         'id' => 2501,
+         'data' => 'userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6247,19454
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,

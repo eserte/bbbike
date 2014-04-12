@@ -413,12 +413,12 @@ Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712 13378,7695
 Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12870,8087
 #: next_check_id: RICHARDSTR-2014
 #: XXX Asphalt wird gerade aufgetragen, danach Q0
-#: last_checked: 2014-03-24
+#: last_checked: 2014-04-11
 Richardstr.: Asphalt	Q0- 12870,8087 13085,7904
 Richardstr.: Kopfsteinpflaster, OK	Q1- 13085,7904 13103,7889
 #: next_check_id: RICHARDSTR-2014
 #: XXX bleibt das Kopfsteinpflaster so? Oder wird hier auch asphaltiert?
-#: last_checked: 2014-03-24
+#: last_checked: 2014-04-11
 Richardstr.: Kopfsteinpflaster, OK	Q1- 13103,7889 13150,7845
 Richardstr.: Kopfsteinpflaster	Q2 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
@@ -506,7 +506,7 @@ Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,1103
 Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
 Matkowskystr.: Asphalt	Q0 14531,11142 14513,11075
 #: next_check_id: NEUEBAHNHOF-2014
-#: last_checked: 2014-04-10
+#: last_checked: 2014-04-12
 #: XXX wird die andere Fahrtrichtung auch asphaltiert?
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2; 14752,11041 14811,11067 14879,11182
 Neue Bahnhofstr.: Asphalt	Q0; 14879,11182 14811,11067 14752,11041
@@ -2327,7 +2327,8 @@ Wassermannstr.: asphaltiert	Q0 20776,3753 20637,3919 20583,3983 20522,4056 20467
 #: confirmed_by: srt
 Wassermannstr.: asphaltiert	Q0 20924,3577 20776,3753
 Köbisstr.: glatte Gehwegplatten	Q0 7160,11225 7103,11247 6851,11346
-Hiroshimasteg: unebene Holzbohlen	Q1 7253,11208 7251,11181 7248,11143
+zum Hiroshimasteg: Kleinsteinpflaster	Q1- 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188
+Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11921,11185 11950,11157
 (Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
@@ -10477,8 +10478,10 @@ Rügenwalder Weg: Asphalt	Q0 22400,12171 22421,12181 22450,12170 22720,12163 2275
 Stockholmer Str.: schlechtes Kopfsteinpflaster	Q3 8759,16684 8783,16710 8847,16870
 # 
 #: by: Gerhard M. vvv
+#: confirmed_by: srt vvv
 Habsburgerstr.: Asphalt	Q0 6920,9838 6912,9956 6904,10052
 Kyffhäuserstr.: Asphalt	Q0 6860,9526 6891,9678 6920,9838
+#: confirmed_by ^^^
 #: by: ^^^
 # 
 #: by: Holger
@@ -10532,7 +10535,7 @@ Walzelstr.: Beton	Q1 -5559,13438 -5333,13515 -5254,13542
 #: by: Karina Morgenstern vvv
 #: corrected_by: srt (Q3 -> Q3+)
 Hortensienstr.: schlechtes (welliges) Kopfsteinpflaster	Q3+ 3597,4494 3629,4465 3665,4463 3839,4577 4031,4707 4156,4784 4274,4808
-Enzianstr.: mäßiges Kopfsteinpflaster	Q2 3926,4438 3898,4477 3859,4531 3839,4577 3806,4628 3815,4657
+Enzianstr.: mäßiges Kopfsteinpflaster	Q2 3859,4531 3839,4577 3806,4628 3815,4657
 Enzianstr.: mäßiges Kopfsteinpflaster	Q2 3775,4632 3806,4628
 #: by: ^^^
 # 
@@ -11632,7 +11635,7 @@ Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4307,3959 4234,4020
 #: corrected_by: Kay Leonhardt (eher schlechtes Kopfsteinpflaster, Q3 -> ...) ("kleinere Katzenköpfe")
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4234,4020 4092,4217 4012,4325
 #: corrected_by: srt (Q3 -> Q2)
-Moltkestr.: Kopfsteinpflaster	Q2 4012,4325 3926,4438
+Moltkestr.: Kopfsteinpflaster	Q2 4012,4325 3926,4438 3898,4477 3859,4531
 #: corrected_by: srt (Q1 -> Q2)
 Zionskirchstr.: Kopfsteinpflaster	Q2 10101,14455 10277,14350
 #: XXX Teil von Maikäferweg bis Radelandstr. laut "Berliner Umland" "witterungsabhängiger Weg"
@@ -22853,7 +22856,7 @@ Zehdenicker Str.: Kopfsteinpflaster	Q2 10599,13775 10480,13871
 #: confirmed_by: srt
 Bissingzeile: Kopfsteinpflaster	Q2 8119,10797 8070,10680
 Reichpietschufer: Kleinpflaster	Q2 7595,11086 7575,11076
-Herkulesufer: Kleinpflaster	Q2 7575,11076 7251,11181 7218,11181 7140,11156 7142,11145 6920,11064 6882,11061
+Herkulesufer: Kleinpflaster	Q2 7575,11076 7252,11188 7218,11181 7140,11156 7142,11145 6920,11064 6882,11061
 #: corrected_by: srt (Q0 -> Q1+)
 Berolinastr.: Beton	Q1+ 11560,13232 11476,13052 11440,12976 11419,12944 11541,12886 11585,12865
 #: corrected_by: srt (Beton, Q2 -> )
@@ -23197,7 +23200,7 @@ Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
 Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: next_check_id: AMZIRKUS-2014
 #: XXX danach wohl Q0
-#: last_checked: 2014-03-31
+#: last_checked: 2014-04-11
 Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938

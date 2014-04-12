@@ -21275,7 +21275,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: RICHARDSTR-2014
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-03-24
+#: last_checked: 2014-04-11
 #: check_frequency: 30d
 # REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
@@ -21969,8 +21969,8 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-03-01
-#: next_check: 2014-04-15
+#: last_checked: 2014-04-11
+#: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 EOF
@@ -22078,11 +22078,11 @@ EOF
 userdel	q4::inwork; 12510,18954 12522,18813 12541,18625 12548,18503
 EOF
      },
-     { from  => 1382220000, # 2013-10-20 00:00
-       until => 1387666799, # 2013-12-21 23:59
-       text  => 'Lengeder Str.: Bauarbeiten zwischen Montanstr. und Roedernallee, Einbahnstraße offen in Richtung Montanstr., ab dem 21. Oktober 2013 bis Ende Dezember 2013',
+     { from  => $isodate2epoch->("2014-05-04 00:00:00"), # 1382220000, # 2013-10-20 00:00
+       until => $isodate2epoch->("2014-06-13 23:59:59"), # 1387666799, # 2013-12-21 23:59
+       text  => 'Lengeder Str.: Bauarbeiten zwischen Montanstr. und Roedernallee, Einbahnstraße offen in Richtung Montanstr., 5. Mai 2014 bis 13. Juni 2014',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131017.1305.390466.html',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20140411.1410.396295.html',
        data  => <<EOF,
 userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6247,19454
 EOF

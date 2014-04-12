@@ -105,6 +105,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2014 (Widmung von Straßenland für einen Radfahrstreifen, Gitschiner/Alexandrinen)
 #: last_checked: 2014-04-08
 #: check_frequency: 90d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
@@ -388,7 +389,7 @@ Am Weingarten: die Fortsetzung des Syringenplatz soll hier benannt werden; Quali
 Weißenhöher Str.: wie ist hier die Vorfahrtsregelung? Evtl. implizit?	? 20623,11481 20641,11480 20828,11466
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5910
-#: last_checked: 2014-03-22
+#: last_checked: 2014-04-10 (Ampel steht, aber nicht eingeschaltet)
 #: check_frequency: 14d
 Kynaststr./Hauptstr.: eine provisorische Ampel wird wieder aufgestellt	? 14906,10820
 # 
@@ -698,7 +699,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3656&options=4
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4425
-#: last_checked: 2014-02-28
+#: last_checked: 2014-04-11
 #: check_frequency: 90d
 #: priority: #C
 Treptower/Harzer: hier wird ein Zebrastreifen entstehen	?::projected 13855,8636 13860,8599 13898,8613
@@ -844,7 +845,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: osm_watch: way id="155605306" version="1"
 #: osm_watch: way id="155605307" version="4"
 #: XXX laut osm ist der westliche Abschnitt bereits asphaltiert
-#: last_checked: 2014-02-24
+#: last_checked: 2014-04-11
 #: check_frequency: 60d
 # REMOVED (realisiert) --- Herrfurthstr.: Asphaltierungsarbeiten	?::inwork 11472,7899 11573,7924 11647,7940
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11833,7980 11979,8014
@@ -882,6 +883,7 @@ Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr., Brücke über die Yor
 #: check_frequency: 180d
 Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. realisiert?	?::projected 8426,9572 8423,9532
 # 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140411.1235.396289.html
 #: XXX Bauarbeiten beginnen Ende April 2014
 #: XXX zumindest den "Platznamen" aufnehmen
 #: last_checked: 2014-03-21
@@ -1103,6 +1105,11 @@ BAB100	?::inwork 14270,9710 14186,9546 14147,9383 14160,9132 14307,8805 14270,83
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2014
+#: XXX Eintrag in Berlin.coords.data fehlt
+#: next_check: 2014-08-07 (Benennung wird wirksam)
+Martha-Jacob-Platz: Benennung eines Platzes	? 480,11204 454,11159
 # 
 Tiergarten: existiert dieser Weg noch oder ist es nur ein Trampelpfad?	? 8210,11775 8156,11863
 # 
@@ -1400,7 +1407,7 @@ Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,985
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8645,6781 8655,6796
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4106&options=4 (Konzeptphase)
-#: last_checked: 2013-12-15
+#: last_checked: 2014-04-11
 #: check_frequency: 100d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
@@ -1443,10 +1450,10 @@ Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage
 # REMOVED (Bauarbeiten) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphaltierung) --- Emser Str.: Straßenbauarbeiten?	? 12872,7134 13058,7165
 #: by: http://www.aktion-kms.de/projekte/umbau-richardstrasse/
 # ("historisches Reihensteinpflaster" - noch schlechtere Qualität?)
-#: last_checked: 2014-03-24
+#: last_checked: 2014-04-11
 #: check_frequency: 30d
 Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschränkungen.	? 13150,7845 13103,7889
-#: last_checked: 2014-03-24
+#: last_checked: 2014-04-11
 #: check_frequency: 30d
 Richardstr.: wird sich hier noch etwas ändern?	? 13103,7889 13085,7904
 #: by: ^^^
@@ -1852,8 +1859,8 @@ Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf
-#: last_checked: 2014-03-01
-#: next_check: 2014-04-15
+#: last_checked: 2014-04-11
+#: check_frequency: 14d
 Cheruskerpark: entsteht hier eine neue Wegverbindung?	?::projected 7391,8231 7369,8278
 # 
 #: XXX_osm: fehlt bei osm

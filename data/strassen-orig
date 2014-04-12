@@ -112,7 +112,7 @@ Lilienthalstr.	N 10615,8558 10627,8706 10640,8832 10675,8940 10748,9054 10709,91
 #: XXX der westliche Eingang wird gesperrt ("Herbst dieses Jahres"), alternativ wird es einen Eingang ggü der Lilienthalstr. geben --- wie wird die genaue Wegführung aussehen?
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4187
 #: by: http://mobil.morgenpost.de/bezirke/neukoelln/article121808816/Mehr-Platz-fuer-muslimische-Graeber-am-Tempelhofer-Feld.html (Bauarbeiten Anfang 2014)
-#: last_checked: 2014-01-18
+#: last_checked: 2014-04-11
 #: check_frequency: 90d
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10691,8532 10644,8363
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10644,8363 10598,8270 10575,8218
@@ -486,8 +486,8 @@ Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,
 #: alias: Untere Kynaststr.
 Kynaststr.	N 14805,10518 14832,10512 14843,10621 14882,10732 14906,10820
 #: XXX wann erfolgt der Rückbau der Ersatzstraße?
-#: osm_watch: way id="58929537" version="28"
-#: last_checked: 2014-03-30
+#: osm_watch: way id="58929537" version="29"
+#: last_checked: 2014-04-12
 #: check_frequency: 60d
 Kynaststr. [Ersatzstraße]	NN 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
 (Alt-Stralau - Spreeufer)	NN 14652,10201 14569,10055
@@ -703,7 +703,7 @@ Karl-Heinrich-Ulrichs-Str.	H 7033,10396 7003,10513 6985,10597 6972,10665
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2013 (Verschiebung, kein neuer Termin)
 #: osm_watch: way id="150519560" version="4"
 #: last_checked: 2014-01-25
-#: next_check: 2014-04-14
+#: next_check: 2014-05-14
 #: priority: #A
 Einemstr.	H 6972,10665 6918,10854
 Nollendorfplatz	H 7033,10328 7033,10396
@@ -4250,8 +4250,8 @@ Breite Str. (Steglitz)	N 5048,4798 5087,4853 5169,4969 5216,5047 5259,5110 5318,
 Plantagenstr. (Steglitz)	N 5416,5289 5555,5508
 Südendstr.	N 5993,5422 5840,5456 5687,5486 5555,5508 5466,5523 5274,5557 5115,5551
 Robert-Lück-Str.	N 5076,5500 5115,5551 5223,5704
-Moltkestr.	N 4596,3738 4476,3820 4307,3959 4234,4020 4092,4217 4012,4325 3926,4438
-Enzianstr.	N 3926,4438 3898,4477 3859,4531 3839,4577 3806,4628 3815,4657
+Moltkestr.	N 4596,3738 4476,3820 4307,3959 4234,4020 4092,4217 4012,4325 3926,4438 3898,4477 3859,4531
+Enzianstr.	N 3859,4531 3839,4577 3806,4628 3815,4657
 Enzianstr.	N 3775,4632 3806,4628
 Asternplatz	N 3815,4657 3754,4755 3740,4766 3716,4764 3707,4752 3710,4728 3775,4632
 Limonenstr.	N 3716,4764 3597,4941 3418,5088 3357,5178 3321,5212
@@ -9193,7 +9193,7 @@ Treptower Str.	NH 13474,8060 13478,8095
 Teupitzer Str. (Neukölln)	N 13939,8228 13968,8270 13996,8590 14015,8798
 #: next_check_id: PLATZHOF-2014
 #: XXX wie wird die Ausschilderung in Zukunft sein?
-#: last_checked: 2014-03-24
+#: last_checked: 2014-04-11
 #: check_frequency: 15d
 Ganghoferstr. (Neukölln)	NN 12753,8187 12792,8190
 Ganghoferstr. (Neukölln)	N 12792,8190 12918,8232
@@ -14888,7 +14888,8 @@ Wachstr.	N 1326,20600 1299,20722
 Dacheroedenstr.	N 1407,20563 1387,20621 1377,20737
 Clara-Wieck-Str.	N 7103,11247 7171,11510
 Hiroshimastr.	N 7356,11517 7253,11208
-Hiroshimasteg	NN 7253,11208 7251,11181 7248,11143
+(zum Hiroshimasteg)	NN 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188
+Hiroshimasteg	NN 7252,11188 7248,11143
 Zeppelinstr. (Oberschöneweide)	N 18697,6605 18417,6775 18240,6845 18041,6924 17919,6968
 Triniusstr. (Oberschöneweide)	N 18273,6606 18339,6660 18417,6775 18492,6893
 Fontanestr. (Oberschöneweide)	N 18225,7004 18240,6845 18254,6679 18273,6606
@@ -15376,7 +15377,7 @@ Körnerstr. (Tiergarten)	N 7883,10483 7963,10716
 Matthäikirchplatz	N 7970,11441 7954,11399
 Matthäikirchplatz	N 7954,11399 7965,11380 7934,11275
 Matthäikirchplatz	N 7897,11287 7931,11391 7954,11399
-Herkulesufer	NN 7595,11086 7575,11076 7251,11181 7218,11181 7140,11156 7142,11145 6920,11064 6882,11061
+Herkulesufer	NN 7595,11086 7575,11076 7252,11188 7218,11181 7140,11156 7142,11145 6920,11064 6882,11061
 Ludwig-Beck-Str.	N 8301,11469 8309,11390 8318,11324
 Schellingstr.	N 8343,11133 8311,11030 8370,11010
 Voxstr.	N 8232,11414 8309,11390
