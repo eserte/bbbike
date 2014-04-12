@@ -1087,8 +1087,8 @@ fast_plot_str(canvas, abk, fileref, ...)
 	    }
 	  }
 
-	  if (f) 
-	    fclose(f);
+	  if (fp) 
+	    PerlIO_close(fp);
 
 	  file_count++;
 	  if (!fileref_array) break;
@@ -1301,7 +1301,7 @@ fast_plot_point(canvas, abk, fileref, progress)
 
 	    }
 	  }
-	  fclose(f);
+	  PerlIO_close(fp);
 
 	  file_count++;
 	  if (!fileref_array) break;
