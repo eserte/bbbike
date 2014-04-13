@@ -28,6 +28,8 @@ $stash->set('HTTPSNAPSHOT', $BBBike::BBBIKE_UPDATE_DIST_CGI);
 [% #  -%]
 [% #  .tpl source of README -%]
 [% #  -%]
+=encoding iso-8859-1
+
 =head1 README
 
 BBBike - 
@@ -869,3 +871,5 @@ AUTHOR
 
 
 Slaven Rezic, E-Mail: L<[% MAIL %]|mailto:[% MAIL %]>
+
+=cut
