@@ -24,6 +24,13 @@ if (q.get("lang") == "de") {
     lang = "en";
 }
 
+var initLayerAbbrevs = q.get('l');
+if (initLayerAbbrevs) {
+    initLayerAbbrevs = initLayerAbbrevs.split(",");
+} else {
+    initLayerAbbrevs = [];
+}
+
 // localization
 var msg = {"en":{"Kartendaten":"Map data",
 		 "Qualit\u00e4t":"Smoothness",
@@ -241,13 +248,36 @@ function doLeaflet() {
 		    }
 		   );
 
+    var overlayDefs = [
+	{label:M("Qualit\u00e4t"),   layer:bbbikeSmoothnessTileLayer, abbrev:'Q'},
+	{label:M("Handicaps"),       layer:bbbikeHandicapTileLayer,   abbrev:'H'},
+	{label:M("Radwege"),         layer:bbbikeCyclewayTileLayer,   abbrev:'RW'},
+	{label:M("Unbeleuchtet"),    layer:bbbikeUnlitTileLayer,      abbrev:'NL'},
+	{label:M("Gr\u00fcne Wege"), layer:bbbikeGreenTileLayer,      abbrev:'GR'}
+    ];
+
     var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer };
     var overlayMaps = {};
-    overlayMaps[M("Qualit\u00e4t")] = bbbikeSmoothnessTileLayer;
-    overlayMaps[M("Handicaps")] = bbbikeHandicapTileLayer;
-    overlayMaps[M("Radwege")] = bbbikeCyclewayTileLayer;
-    overlayMaps[M("Unbeleuchtet")] = bbbikeUnlitTileLayer;
-    overlayMaps[M("Gr\u00fcne Wege")] = bbbikeGreenTileLayer;
+    for(var i=0; i<overlayDefs.length; i++) {
+        overlayMaps[overlayDefs[i].label] = overlayDefs[i].layer;
+    }
+
+    if (initLayerAbbrevs.length) {
+	var abbrevToLayer = {};
+	for(var i=0; i<overlayDefs.length; i++) {
+	    abbrevToLayer[overlayDefs[i].abbrev] = overlayDefs[i].layer;
+	}
+	for(var i=0; i<initLayerAbbrevs.length; i++) {
+	    var l = abbrevToLayer[initLayerAbbrevs[i]];
+	    if (l) {
+		map.addLayer(l);
+	    } else {
+		if (console && console.debug) {
+		    console.debug("Layer abbrev '" + initLayerAbbrevs[i] + "' unhandled");
+		}
+	    }
+	}
+    }
 
     var layersControl = new L.Control.Layers(baseMaps, overlayMaps);
     map.addControl(layersControl);
