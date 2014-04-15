@@ -19289,7 +19289,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017330',
        data  => <<EOF,
-userdel	q4::inwork; 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8690,13723
+userdel	q4::inwork; 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8842,13798 8690,13723
 EOF
      },
      { from  => 1308261600, # 2011-06-17 00:00
@@ -20164,10 +20164,11 @@ EOF
        until => $isodate2epoch->("2014-04-28 23:59:59"), # 1343067463, # 1369989720, # 2013-05-31 10:42
        text  => 'Hessische Str.: Baustelle, Zufahrt zur Invalidenstraße gesperrt; Einbahnstraße in der Invalidenstraße, 14.04.2014 bis voraussichtlich 28.04.2014',
        type  => 'handicap',
-       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5227.html',
+       source_id => 'IM_021675',
        data  => <<EOF,
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5227.html
 userdel	q4::inwork 8690,13723 8775,13606
-userdel	q4::inwork; 8690,13723 8659,13708 8626,13692 8619,13689
+userdel	q4::inwork; 8690,13723 8659,13708 8619,13689
 EOF
      },
      { from  => 1330026300, # 2012-02-23 20:45
@@ -22665,6 +22666,15 @@ EOF
        source_id => 'IM_021617',
        data  => <<EOF,
 userdel	2::inwork 7938,9694 8097,9650
+EOF
+     },
+     { from  => 1398056400, # 2014-04-21 07:00
+       until => 1398434400, # 2014-04-25 16:00
+       text  => 'Königs Wusterhausen: Storkower Str. Bereich Bahntunnel Bauarbeiten mit Umleitung, 22.04.2014 07:00 Uhr bis 25.04.2014 16:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '146100350',
+       data  => <<EOF,
+userdel	2::inwork 26395,-11699 26302,-11712
 EOF
      },
     );

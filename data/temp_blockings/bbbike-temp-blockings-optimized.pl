@@ -78,24 +78,7 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1397412000,
-         'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 12.04.2013 und 13.04.2013',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              11,
-                              'months',
-                              4
-                            ]
-                          ],
-         'from' => 1397203200,
-         'id' => 10,
-         'data' => 'userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
-'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3155,13 +3138,14 @@ userdel	2::temp 12635,12629 12596,12472
        undef,
        undef,
        {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5227.html',
+         'source_id' => 'IM_021675',
          'until' => 1398722399,
          'text' => 'Hessische Str.: Baustelle, Zufahrt zur Invalidenstraße gesperrt; Einbahnstraße in der Invalidenstraße, 14.04.2014 bis voraussichtlich 28.04.2014',
          'from' => 1397340000,
          'id' => 2313,
-         'data' => 'userdel	q4::inwork 8690,13723 8775,13606
-userdel	q4::inwork; 8690,13723 8659,13708 8626,13692 8619,13689
+         'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5227.html
+userdel	q4::inwork 8690,13723 8775,13606
+userdel	q4::inwork; 8690,13723 8659,13708 8619,13689
 ',
          'type' => 'handicap'
        },
@@ -4058,6 +4042,17 @@ userdel	q3::inwork; 13555,15596 13459,15653
          'data' => 'userdel	q4::inwork 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'source_id' => '146100350',
+         'until' => 1398434400,
+         'text' => 'Königs Wusterhausen: Storkower Str. Bereich Bahntunnel Bauarbeiten mit Umleitung, 22.04.2014 07:00 Uhr bis 25.04.2014 16:00 Uhr ',
+         'from' => 1398056400,
+         'id' => 2561,
+         'data' => 'userdel	2::inwork 26395,-11699 26302,-11712
+',
+         'type' => 'gesperrt'
        }
      
 );

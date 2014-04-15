@@ -875,8 +875,10 @@ Autowaschcenter	culdesac_pseudo 17110,14187
 Fähranleger	culdesac_pseudo -1989,18378
 #: note: als Radfahrer kann man Richtung Panke oder Reinhardtstr. weiterfahren
 	culdesac_pseudo 9132,13187
+#: next_check_id: BND-2014
 #: XXX wird bei der Verlängerung der Ida-von-Arnim-Str. aufgehoben
-#: next_check: 2014-04-15
+#: last_checked: 2014-04-08
+#: check_frequency: 60d
 	culdesac 8251,14337
 #: XXX wird bei der Verlängerung des Südpankewegs aufgehoben
 #: next_check: 2014-04-15
