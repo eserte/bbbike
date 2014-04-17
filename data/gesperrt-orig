@@ -751,6 +751,13 @@ Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11841,13087 11913,13077 1195
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 Mollstr. (Straßenbahntrasse)	3nocross::ignrte 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 #: note ^^^
+#
+#: note: Absperrgitter vvv
+Yorckstr.	1::igndisp 8192,9619 8358,9568 8595,9495
+Yorckstr.	1::igndisp 8595,9495 8358,9567 8192,9619
+Yorckstr. (Geländer)	3nocross::ignrte 8595,9495 8358,9568 8192,9619
+#: note ^^^
+# 
 #: note: Straßenbahntrasse vvv
 Torstr. (Richtungsfahrbahn)	1::igndisp 11160,13492 11111,13518 10898,13632
 Torstr. (Richtungsfahrbahn)	1::igndisp 10898,13632 11117,13521 11160,13492
@@ -1321,7 +1328,6 @@ Ritterstr.	1 -3360,14525 -3316,14504
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
-Yorckstr.: Geländer, Überqueren nicht möglich	3nocross 8595,9495 8358,9568 8192,9619
 Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2016,11034 2116,11288 2109,11441
 Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
 Cecilienstr.: Mittelstreifen	3nocross 21831,13801 21853,13784 21918,13720
@@ -2464,6 +2470,10 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2014-04-17
+#: check_frequency: 14d
+Edith-Stein-Str.: Bauarbeiten könnten noch möglich sein	2::inwork 14089,13247 14035,13104
+# 
 #: next_check_id: BND-2014
 #: osm_watch: way id="129104626" version="2"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
@@ -2684,14 +2694,14 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # 
 #: XXX wo gibt es Informationen hierzu?
 #: by: Kai Wagner (permanente Sperrung)
-#: XXX laut osm seit 2014-04-12 ohne access=private, prüfen!
+#: XXX laut osm seit 2014-04-12 ohne access=private - falsch!
 #: confirmed_by: srt
 #: osm_watch: way id="4402045" version="10"
-#: last_checked: 2014-02-21
-#: next_check: 2014-04-15
+#: last_checked: 2014-04-17
+#: check_frequency: 180d
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
-#: last_checked: 2013-10-22
+#: last_checked: 2014-04-17
 #: check_frequency: 180d
 #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
@@ -2747,7 +2757,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
 #: osm_watch: way id="158025179" version="1"
-#: last_checked: 2014-04-11
+#: last_checked: 2014-04-17
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

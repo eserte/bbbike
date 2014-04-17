@@ -2696,9 +2696,9 @@ userdel auto	3 8522,12187 8538,12245 8522,12239
 userdel auto	3 8522,12187 8538,12245 8600,12165
 userdel auto	3 8522,12187 8538,12245 8546,12279
 userdel auto	3 6716,11439 6825,11486 6915,11492
-userdel auto	3 8048,12135 8055,12186 8119,12414
+userdel auto	3 8049,12140 8055,12186 8119,12414
 userdel auto	3 7115,11220 6880,11110 6841,11114
-userdel auto	3 8119,12414 8055,12186 8048,12135
+userdel auto	3 8119,12414 8055,12186 8049,12140
 userdel auto	3 6884,12006 6828,12031 6787,12099
 userdel auto	3 6742,11099 6873,11011 7002,11034
 userdel auto	3 7875,12363 7816,12150 7823,12120
@@ -3176,7 +3176,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
 ',
          'periodic' => 1,
          'until' => 1398117599,
-         'from' => 1397772000,
+         'from' => 1397685600,
          'recurrences' => [
                             [
                               'yearly',
@@ -3774,7 +3774,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2498,
          'data' => '#: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-03-28
+#: last_checked: 2014-04-16
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'

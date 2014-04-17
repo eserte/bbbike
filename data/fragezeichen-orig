@@ -94,7 +94,7 @@ Großziethener - Barnetstr.: werden hier die bestehenden Radwege verbessert oder 
 Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243,-1876 10301,-1891 10303,-1954
 # 
 #: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
-#: last_checked: 2014-01-18
+#: last_checked: 2014-04-17
 #: check_frequency: 100d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -177,7 +177,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="3"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2014-04-04
+#: last_checked: 2014-04-17
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -399,9 +399,9 @@ Kynaststr./Hauptstr.: eine provisorische Ampel wird wieder aufgestellt	? 14906,1
 #: next_check: 2014-05-08
 Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected 20667,15721 20733,15657
 # 
-#: last_checked: 2014-04-04
-#: check_frequency: 14d
-Konrad-Wolf-Str.: Bau eines asphaltierten Radwegs; in Richtung Südwesten passiert wohl auch was	?::inwork 15066,14579 15174,14638 15272,14691
+#: last_checked: 2014-04-17
+#: check_frequency: 30d
+Konrad-Wolf-Str.: wird in Richtung Südwesten auch etwas bzgl. einer Radwegführung passieren?	?::inwork; 15272,14691 15174,14638 15066,14579
 # 
 # REMOVED (in handicap_s-orig aufgenommen) --- Mühsamstr.: Baustelle abfahren, genaue Position sowie Penalty abschätzen	?::inwork 13559,12779 13506,12752
 # 
@@ -694,7 +694,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2014-03-03
+#: last_checked: 2014-04-17
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -775,7 +775,7 @@ Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2014-03-28
+#: last_checked: 2014-04-16
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -868,20 +868,12 @@ Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues 
 #: XXX ^^^
 #: by: ^^^
 # 
-#: XXX brunnels!
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5207.html ("nahe Zukunft")
-#: XXX laut Tagesspiegel vom 8. April 2014 soll die Realisierung noch im April passieren
-#: by: http://www.tagesspiegel.de/berlin/schnelle-reaktion-des-senats-auf-tagesspiegel-bericht-noch-im-april-soll-die-bruecke-ueber-die-yorckstrasse-fertig-sein/9724886.html
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5229.html
-#: priority: #A
-#: last_checked: 2014-03-21
-#: next_check: 2014-04-28
-Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr., Brücke über die Yorckstr.: wann wird hier realisiert?	?::projected 8338,9593 8339,9560
+# REMOVED (realisiert) --- #: XXX brunnels! --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5207.html ("nahe Zukunft") --- #: XXX laut Tagesspiegel vom 8. April 2014 soll die Realisierung noch im April passieren --- #: by: http://www.tagesspiegel.de/berlin/schnelle-reaktion-des-senats-auf-tagesspiegel-bericht-noch-im-april-soll-die-bruecke-ueber-die-yorckstrasse-fertig-sein/9724886.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5229.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5235.html (provisorische Eröffnung) --- #: priority: #A --- #: last_checked: 2014-03-21 --- #: next_check: 2014-04-28 --- Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr., Brücke über die Yorckstr.: wann wird hier realisiert?	?::projected 8338,9593 8339,9560
 # 
 #: XXX brunnels!
 #: XXX hier wird bestimmt nicht so schnell wie bei der B-L-Strecke realisiert...
 #: last_checked: 2014-03-21
-#: check_frequency: 180d
+#: check_frequency: 360d
 Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. realisiert?	?::projected 8426,9572 8423,9532
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140411.1235.396289.html
@@ -892,7 +884,7 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 Monumentenplatz	?::projected 8353,9072 8332,9059
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html --- #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/ --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Brücke) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619&date=20130910 (Antwort) --- #: last_checked: 2014-03-07 (südliche Rampe noch in Bau) vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="187902666" version="2" --- Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert, asphaltiert	?::projected 8339,9560 8339,9448 8374,9291 8381,9247 8334,9085 8353,9072 8367,9006 8374,9074 8389,9087
-# REMOVED (realisiert) --- #: by: http://gleisdreieck-blog.de/wordpress/wp-content/uploads/eingang-yorck-collignon.jpg --- Eingang zum Flaschenhalspark: betoniert, wahrscheinlich auch mit Drängelgittern?	?::projected 8358,9568 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
+# REMOVED (realisiert) --- #: by: http://gleisdreieck-blog.de/wordpress/wp-content/uploads/eingang-yorck-collignon.jpg --- Eingang zum Flaschenhalspark: betoniert, wahrscheinlich auch mit Drängelgittern?	?::projected 8358,9567 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Noerdl-Teilstueck-a.5712.0.html
 #: osm_watch: way id="251945928" version="1"
@@ -942,15 +934,8 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: last_checked ^^^
 # 
 # REMOVED (survey done) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110908.0920.357891.html --- #: next_check: 2011-11-30 --- Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3534,13098 3559,13177
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file
-#: XXX Privatstraße
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern)
-#: osm_watch: way id="137340264" version="6"
-#: last_checked: 2014-04-04
-#: check_frequency: 7d
+# REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern) --- #: osm_watch: way id="137340264" version="6" --- #: last_checked: 2014-04-04 --- #: check_frequency: 7d
 Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,13104
-# 
 # REMOVED (-> strassen-orig etc.) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: XXX siehe auch Eintrag für "Am Langen Jammer" in gesperrt-orig --- #: last_checked: 2012-10-26 vvv --- #: next_check: 2012-12-01 vvv --- An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14376,12849 14449,12833 14594,12800 --- An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14449,12833 14480,12932 --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (realisiert) --- #: next_check_id: ERNASAMUEL-2014 --- #: by: http://www.moabitonline.de/1637 --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110224.1350.332744.html --- #: by: https://www.spd-fraktion-mitte.de/system/files/dateien/anfrage/2011-11/2726/ka-0012-iv.pdf (Abschluss Ende 2013) --- #: note: Planstraße im Block 902 --- # REMOVED --- : osm_watch: way id="182859952" version="10" --- #: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014) --- #: last_checked: 2014-03-07 --- Erna-Samuel-Straße: werden hier noch Radstreifen erstellt?	?::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 # REMOVED (keine Anzeichen für weitere Straßen hier) --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
@@ -1112,7 +1097,7 @@ BAB100	?::inwork 14270,9710 14186,9546 14147,9383 14160,9132 14307,8805 14270,83
 #: next_check: 2014-08-07 (Benennung wird wirksam)
 Martha-Jacob-Platz: Benennung eines Platzes	? 480,11204 454,11159
 # 
-Tiergarten: existiert dieser Weg noch oder ist es nur ein Trampelpfad?	? 8210,11775 8156,11863
+# REMOVED (existiert nicht mehr) --- Tiergarten: existiert dieser Weg noch oder ist es nur ein Trampelpfad?	? 8210,11775 8140,11850
 # 
 Maximilianstr.: Vorfahrtsregelung?	? 10298,17299 10499,17286 10774,17277
 # 
@@ -1191,8 +1176,8 @@ Hildburghauser Str.: Qualität des Asphalts?	? 4806,1360 4897,1346 5056,1321 5223
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2014-02-28
-#: check_frequency: 60d
+#: last_checked: 2014-04-17
+#: check_frequency: 100d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
 #
@@ -1395,7 +1380,7 @@ Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9
 Alter Wiesenweg: Qualität? Ausgeschildert?	? 1739,15958 1581,15919
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5192&options=4 (BVV-Beschluss)
-#: last_checked: 2014-03-07
+#: last_checked: 2014-04-17
 #: check_frequency: 100d
 #: priority: #C
 Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,9856 9820,9718 9790,9528
@@ -3761,7 +3746,9 @@ Vierwaldstätter Str. (Schwanebeck): Qualität des südlichen Abschnitts?	? 18281,2
 Thuner Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18810,25948 18929,26214
 Wilhelm-Tell-Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18885,25916 19000,26147
 # 
-Urselweg [Wohngebiet]: existiert hier eine Straßenanbindung? Genaue Lage? Qualität? Ausschilderung?	? -687,2939 -887,3081
+#: XXX Benennung wahrscheinlich Cassinohof (tatsächlich mit Doppel-s?)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2014
+Urselweg [Wohngebiet]: existiert hier eine Straßenanbindung? Genaue Lage? Qualität? Ausschilderung?	? -812,2915 -779,2924 -713,2954 -818,3031 -824,3016 -779,2924
 #: XXX_osm bei osm falsch ("Poetensteg")
 #: XXX Richtung Süden unbefestigt
 Poetensteig (Woltersdorf): nur für Radfahrer/Fußgänger oder auch für Autos? Geht die Straße auch Richtung Norden weiter?	? 32294,6277 32306,6216 32333,6114

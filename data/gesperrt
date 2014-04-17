@@ -539,6 +539,9 @@ Karl-Liebknecht-Str. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11131,1345
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11841,13087 11913,13077 11958,13079 11984,13081
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 Mollstr. (Straßenbahntrasse)	3nocross::ignrte 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
+Yorckstr.	1::igndisp 8192,9619 8358,9568 8595,9495
+Yorckstr.	1::igndisp 8595,9495 8358,9567 8192,9619
+Yorckstr. (Geländer)	3nocross::ignrte 8595,9495 8358,9568 8192,9619
 Torstr. (Richtungsfahrbahn)	1::igndisp 11160,13492 11111,13518 10898,13632
 Torstr. (Richtungsfahrbahn)	1::igndisp 10898,13632 11117,13521 11160,13492
 Torstr. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11117,13521 10898,13632
@@ -985,12 +988,6 @@ Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
-Geländer, Überqueren nicht möglich	3nocross::ignrte 8595,9495 8358,9568 8192,9619
-Park am Gleisdreieck -> Flaschenhalspark: Geländer, Überqueren nicht möglich	3::igndisp 8357,9598 8358,9568 8359,9537
-Park am Gleisdreieck -> Yorckstr.: Geländer, Überqueren nicht möglich	3::igndisp 8357,9598 8358,9568 8595,9495
-Flaschenhalspark -> Park am Gleisdreieck: Geländer, Überqueren nicht möglich	3::igndisp 8359,9537 8358,9568 8357,9598
-Flaschenhalspark -> Yorckstr.: Geländer, Überqueren nicht möglich	3::igndisp 8359,9537 8358,9568 8192,9619
-Yorckstr. -> Flaschenhalspark: Geländer, Überqueren nicht möglich	3::igndisp 8595,9495 8358,9568 8359,9537
 Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2016,11034 2116,11288 2109,11441
 Messedamm -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2109,11441 2116,11288 2219,11304
 Bredtschneiderstr. -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2219,11304 2116,11288 1979,11277
@@ -2459,9 +2456,9 @@ Drängelgitter	BNP:3:8:trailer=10 8354,9504
 Drängelgitter	BNP:3:5:trailer=10 8350,9461
 Drängelgitter	BNP:3:-253:trailer=10 8236,10623
 Drängelgitter	BNP:3:-81:trailer=10 8199,10424
-Drängelgitter	BNP:3:-181:trailer=10 8357,9598
-Drängelgitter	BNP:3:-185:trailer=10 8353,9642
-Drängelgitter	BNP:3:-183:trailer=10 8350,9685
+Drängelgitter	BNP:3:-5:trailer=10 8357,9598
+Drängelgitter	BNP:3:-3:trailer=10 8353,9642
+Drängelgitter	BNP:3:-4:trailer=10 8350,9685
 Schranke	BNP:1:-38:trailer=3 17028,23968
 Schranke (lichte Breite ca. 85cm, weitere Umfahrung möglich)	BNP:2:-54:trailer=10 16339,22199
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-107:trailer=10 21578,10413
@@ -2659,6 +2656,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Edith-Stein-Str.: Bauarbeiten könnten noch möglich sein	2::inwork 14089,13247 14035,13104
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 8935,13844
 Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941

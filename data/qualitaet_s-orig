@@ -7,11 +7,7 @@
 # 
 #: temporary vvv
 # 
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898
-#: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten
-#: last_checked: 2014-03-21
-#: valid: -20140523
-Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
+# REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: temporary ^^^
 ######################################################################
@@ -647,17 +643,18 @@ Große Sternallee: Parkweg	Q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11
 (Hiroshimastr. - Große Sternallee): Parkweg	Q1 7356,11517 7362,11561 7373,11594
 Bellevueallee: Mosaikpflaster	Q1 7039,12314 7383,12095 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8032,11761 8172,11679
 Ahornsteig: Parkweg	Q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7696,11621 7735,11656 7796,11681 7901,11684 8014,11740
-Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8014,11740 8032,11761 8156,11863 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
-Tiergarten: wassergebundene Decke	Q1 8210,11775 8156,11863 8132,11910 8091,11992 8089,12041 8107,12145
+Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8014,11740 8032,11761 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+Tiergarten: wassergebundene Decke	Q1 8167,11865 8132,11910
+Tiergarten: wassergebundene Decke	Q1 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
 Tiergarten: Parkweg	Q1 8005,11627 8014,11740 8016,11770 8020,11937 8022,12016
-Tiergarten: Parkweg	Q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8048,12135 8055,12186
+Tiergarten: Parkweg	Q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8049,12140 8055,12186
 Tiergarten: Asphalt	Q0 8214,12205 8215,12156
 Tiergarten: Parkweg	Q1 8215,12156 8221,11885 8221,11876 8210,11775 8203,11686
 Tiergarten: Parkweg	Q1 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742 6540,11754
 Tiergarten: Parkweg	Q1 7775,12114 7772,12040
 Tiergarten: Asphalt	Q0 7772,12040 7717,11918 7706,11878 7701,11798 7649,11717 7623,11624 7612,11597
 Tiergarten: Parkweg	Q1 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
-Tiergarten: Parkweg	Q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8020,11937
+Tiergarten: Parkweg	Q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
 Parkweg: sehr gutes Kopfsteinpflaster	Q1 14318,9688 14361,9772 14404,9847 14448,9922
 Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 #: note: mittlerweile etwas wellig
@@ -1680,7 +1677,7 @@ Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Grünstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
 Parkaue: Asphalt	Q0 15535,12420 15457,12449 15406,12444
 #: XXX wird hier die Straße verbessert werden?
-#: last_checked: 2014-04-07
+#: last_checked: 2014-04-17
 #: check_frequency: 60d
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524 (Beginn der Bauarbeiten: Frühjahr 2014)
 Deutschmeisterstr.: mäßiger Asphalt	Q1 15443,12222 15370,12264 15353,12280 15320,12375
@@ -2567,7 +2564,7 @@ Wördenweg: unbefestigter, holpriger Weg	Q2 8513,21099 8482,21051 8251,20927 8107
 Friesenstr.: Beton	Q1 8765,19288 8644,19345 8467,19408 8396,19422 8331,19458 8311,19458
 Homeyerstr.: Asphalt mit Schäden	Q1- 9475,18862 9532,18819 9613,18758 9801,18686 9920,18636
 (Bremer Weg): Parkweg	Q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
-(Bremer Weg): Asphalt	Q0 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12131 8048,12135 8107,12145 8215,12156 8466,12197 8522,12239 8538,12245
+(Bremer Weg): Asphalt	Q0 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8466,12197 8522,12239 8538,12245
 (Bremer Weg - Fasanerieallee): Parkweg, mittelfeiner Schotter	Q1 6337,11887 6379,11843 6406,11784 6467,11780 6540,11754
 (zum Rosengarten): Kleinsteinpflaster	Q1 7026,12054 7031,12024
 (zum Rosengarten): Parkweg	Q1 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
@@ -9319,7 +9316,7 @@ Schwarzwurzel-Park: Gehwegplatten	Q0- 20698,18359 20814,18341 20823,18329
 (Pasewalker Str. - Vesaliusstr.): Gehwegplatten	Q0- 11884,19169 11841,19188 11763,19191
 (Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11912,19279 11927,19308
 (Flaschenhalspark, Weg entlang den Bahngleisen): Beton	Q0 8423,9532 8414,9366 8393,9293 8374,9291
-(Yorckstr. - Flaschenhalspark): Beton	Q0 8358,9568 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
+(Yorckstr. - Flaschenhalspark): Beton	Q0 8358,9567 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
 (Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8339,9560 8339,9448 8374,9291 8381,9247 8334,9085 8353,9072 8367,9006 8374,9074 8389,9087
 Am Lokdepot: Asphalt	Q0 8389,9017 8389,9087
 Sewanstr. [Wohngebiet]: Beton	Q1+ 18266,9853 18210,9989
@@ -9354,6 +9351,10 @@ Krugpfuhlweg: Schotterstraße	Q2 11812,22523 11178,22999 11025,23111
 (Schönholzer Heide, Sowjetisches Ehrenmal - Friesenstr.): Waldweg	Q1- 8682,19260 8700,19242 8721,19256 8791,19249
 (Schönholzer Str. - Waldsteg): Waldweg	Q1- 8314,19288 8211,19294 8177,19316 7851,19631
 (Waldsteg/Genossenschaftssteg - Schönholzer Heide): Waldweg	Q1- 8170,19308 8177,19316
+Edith-Stein-Str.: Verbundsteinpflaster	Q1+ 14089,13247 14035,13104
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5235.html
+#: XXX Belag prüfen!
+(Park am Gleisdreieck - Flaschenhalspark): Beton	Q0 8338,9593 8339,9560
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -23202,7 +23203,7 @@ Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
 Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: next_check_id: AMZIRKUS-2014
 #: XXX danach wohl Q0
-#: last_checked: 2014-04-11
+#: last_checked: 2014-04-17
 Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938
