@@ -9,7 +9,7 @@ use strict;
 use FindBin;
 
 BEGIN {
-    if (!eval {
+    if (!eval q{
 	use Test::More;
 	use Test::Pod;
 	1;
