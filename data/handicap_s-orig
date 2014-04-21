@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # 
-#: last_checked: 2014-04-12 vvv
+#: last_checked: 2014-04-21 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -57,7 +57,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwo
 # REMOVED --- #: last_checked: 2013-06-04 --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
 # REMOVED (Sperrung weitgehend aufgehoben) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html (Abschluss der Arbeiten im März 2014) --- #: source_id: IM_020581 ("bis Ende 2014") --- #: last_checked: 2014-04-01 vvv --- #: next_check: 2014-04-02 vvv --- #: priority: #A vvv --- #: valid: -20140402 --- #: XXX Sperrung wird aufgehoben --- Chausseestr.: Bauarbeiten, Fahrbahn ist noch nicht offiziell freigegeben	q3::inwork 9042,13707 8935,13844 --- #: XXX was ist mit diesem Abschnitt? Bleibt die Einbahnstraße? --- Chausseestr.: Einbahnstraße zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwork; 8870,13926 8935,13844 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
-#: osm_watch: way id="4412885" version="23" vvv
+# REMOVED --- : osm_watch: way id="4412885" version="23"
 #: last_checked: 2014-04-15 vvv
 #: check_frequency: 60d vvv
 # REMOVED (keine Behinderung mehr) --- Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8588,13673 8594,13637
@@ -65,7 +65,6 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwo
 Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
 #: check_frequency ^^^
 #: last_checked ^^^
-#: osm_watch ^^^
 # 
 # REMOVED (laut Tsp vom 15.12.2013) --- #: source_id: INKO_113388 --- #: last_checked: 2013-12-11 --- #: next_check: 2014-08-31 --- Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # REMOVED (laut Tsp vom 15.12.2013) --- #: source_id: INKO_091722 --- #: source_id: INKO_091722_COPY_1 --- #: XXX siehe auch temporäre Ampel an der Neustädtischen Kirchstr. --- #: XXX siehe auch Busspur UdL --- #: last_checked: 2013-12-11 --- #: next_check: 2013-12-31 --- Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197

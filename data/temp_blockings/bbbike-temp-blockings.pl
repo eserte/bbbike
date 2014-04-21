@@ -2091,7 +2091,7 @@ EOF
        text  => 'L 29; (Biesenthal-Wandlitz); Bahnübergang bei Wandlitz Gleisbauarbeiten Vollsperrung 31.05.2005-02.06.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15403,40364 14698,40345
+userdel	2 15403,40364 14701,40362
 EOF
      },
      { from  => 1117317600, # 2005-05-29 00:00
@@ -2341,7 +2341,7 @@ EOF
        text  => 'B 109; (Prenzlauer Str.); OD Basdorf, Kno. Dimitroff-/Waldheimstr. Straßen-,Geh- u.Radwegbau Vollsperrung 04.07.2005-08.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 12160,34668 12224,34508 12635,32221
+userdel	q4 12056,34918 12207,34503 12307,34017 12395,33537 12463,33159 12473,33109 12635,32221
 EOF
      },
      { from  => 1122415200, # 2005-07-27 00:00
@@ -7877,7 +7877,7 @@ EOF
        text  => 'B 109 zw. Stadtgrenze Berliin und Schönerlinde, Dorfstr. Deckeneinbau Vollsperrung 17.04.2007-20.04.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 13376,27572 13348,27204
+userdel	2::inwork 13356,27581 13389,27440 13378,27325 13345,27187
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -10162,7 +10162,7 @@ EOF
        text  => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 14941,42957 15632,43100 15783,43227 16258,43457
+userdel	q4::inwork 14934,42934 15632,43100 15783,43227 16258,43457
 EOF
      },
      { from  => 1194082880, # 2007-10-07 00:00 1191708000
@@ -10253,7 +10253,7 @@ EOF
        text  => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Eberswalder Str. grundhater Straßenbau Vollsperrung 16.10.2007-30.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 23113,30450 23368,30409 23631,30262
+userdel	2::inwork 23113,30450 23368,30409 23620,30267
 EOF
      },
      { from  => 1192312800, # 2007-10-14 00:00
@@ -10921,7 +10921,7 @@ EOF
        text  => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Schönfelder Weg Straßenbau Vollsperrung 20.12.2007-30.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 23113,30450 23368,30409 23631,30262
+userdel	q4::inwork 23113,30450 23368,30409 23620,30267
 EOF
      },
      { from  => 1216405512, # 2008-07-18 20:25
@@ -12048,7 +12048,7 @@ EOF
        text  => 'L 029 Lanke - Zehlendorf nördl. Wandlitz, ab B109 in Ri. Stolzenhagen Bau Kreisverkehr Vollsperrung 17.08.2008-31.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 15403,40364 14698,40345
+userdel	2::inwork 15403,40364 14701,40362
 EOF
      },
      { from  => 1216674352, # 2008-07-21 23:05
@@ -12787,7 +12787,7 @@ EOF
        text  => 'L 212 Groß Schönebeck - Hammer - B167 zw. Groß Schönebeck und Böhmerheide Deckenerneuerung Vollsperrung 22.09.2008-26.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 15301,53802 15886,54280 17031,55218 17658,55401 17733,55423
+userdel	2::inwork 15301,53802 15886,54280 17031,55218 17671,55404 17733,55423
 EOF
      },
      { from  => undef, # 
@@ -12976,7 +12976,7 @@ EOF
        text  => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-31.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 14941,42957 15632,43100
+userdel	q4::inwork 14934,42934 15632,43100
 EOF
      },
      { from  => 1224540000, # 2008-10-21 00:00
@@ -13169,7 +13169,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 05.12.2008-10.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41424,91331 41395,91313 41358,91294
+userdel	2::inwork 41421,91345 41388,91325 41367,91312
 EOF
      },
      { from  => 1231455600, # 2009-01-09 00:00
@@ -13177,7 +13177,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 10.01.2009-11.01.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41424,91331 41395,91313 41358,91294
+userdel	2::inwork 41421,91345 41388,91325 41367,91312
 EOF
      },
      { from  => 1227394800, # 2008-11-23 00:00
@@ -13185,7 +13185,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 24.11.2008-28.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 41424,91331 41395,91313 41358,91294
+userdel	2::inwork 41421,91345 41388,91325 41367,91312
 EOF
      },
      { from  => 1227135600, # 2008-11-20 00:00
@@ -14965,7 +14965,7 @@ EOF
        text  => 'L 212 Groß Schönebeck - Hammer - B167 zw. Böhmerheide und Hammer Deckensanierung Vollsperrung 14.07.2009-08.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 12431,52894 12615,52952 13967,53380 15301,53802 15886,54280 17031,55218 17658,55401
+userdel	2::inwork 12431,52894 12615,52952 13967,53380 15301,53802 15886,54280 17031,55218 17671,55404
 EOF
      },
      { from  => 1300313794, # 2011-03-16 23:16
@@ -16533,7 +16533,7 @@ EOF
        text  => 'B 166 zw. Heinersdorf und Abzw. Passow Deckenerneuerung Vollsperrung 12.10.2009-30.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 64624,77291 61819,80513 61420,80705 60923,80665 60511,80745 60070,81164 59018,81801 58771,82019
+userdel	2::inwork 64624,77291 61819,80513 61420,80705 60923,80665 60511,80745 60070,81164 59776,81358 59018,81801 58771,82019
 EOF
      },
      { from  => 1254607200, # 2009-10-04 00:00
@@ -16957,7 +16957,7 @@ EOF
        text  => 'B 109 Schönwalde - Wandlitz OD Schönwalde Durchlasssanierung Vollsperrung 09.11.2009-27.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 12635,32221 12466,30452
+userdel	2::inwork 12635,32221 12560,31435 12466,30452
 EOF
      },
      { from  => 1257462000, # 2009-11-06 00:00
@@ -17551,7 +17551,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LSO-SG33-E10027',
        data  => <<EOF,
-userdel	2::inwork 16050,46166 16134,45616
+userdel	2::inwork 16062,46174 16118,45654
 EOF
      },
      { from  => 1271281087, # 2010-04-14 23:38
@@ -17596,7 +17596,7 @@ EOF
        type  => 'handicap',
        source_id => 'LSO-SG33-E10026',
        data  => <<EOF,
-userdel	q4::inwork 18301,50512 18022,49766 17638,49090
+userdel	q4::inwork 18287,50512 18276,50482 18230,50330 18100,49906 18022,49766 17727,49297 17694,49235 17624,49096
 EOF
      },
      { from  => 1271281409, # 2010-04-14 23:43
@@ -18109,7 +18109,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/10/041',
        data  => <<EOF,
-userdel	2::inwork 19611,43150 19578,43131 19107,43180 18720,43107 17840,43420 17394,43597 17006,43801 16258,43457 15783,43227 15632,43100 14941,42957
+userdel	2::inwork 19611,43150 19578,43131 19107,43180 18720,43107 17840,43420 17394,43597 17006,43801 16258,43457 15783,43227 15632,43100 14934,42934
 EOF
      },
      { from  => 1279836000, # 2010-07-23 00:00

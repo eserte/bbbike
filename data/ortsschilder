@@ -23,26 +23,30 @@ Damme|(Uckermark)	OS 48244,99579
 Damme|(Uckermark)	OS 50486,101008
 Eickstedt	OS 52207,99132
 Eickstedt	OS 51862,100638
-Wallmow	OS 54813,105532
+Wallmow	OS 54800,105519
 Wallmow	OS 55375,105118
-Wallmow	OS 54761,104755
+Wallmow	OS 54729,104731
 Wallmow	OS 54624,105031
 Wendtshof|(Wallmow)	OS 53498,106811
 Wendtshof|(Wallmow)	OS 53774,106460
 Cremzow	OS 51202,106792
 Cremzow	OS 51318,106193
 Carmzow	OS 53201,109871
-Hedwigshof|(bei Carmzow)	OS 54144,109576
-Hedwigshof|(bei Carmzow)	OS 54565,109426
+Carmzow	OS 52629,110092
+Hedwigshof	OS 54144,109576
+Hedwigshof	OS 54565,109426
 Moor|(Brüssow)	OS 55318,109732
 Brüssow	OS 57297,110320
 Brüssow	OS 57044,110715
-Brüssow	OS 56256,111825
+Brüssow	OS 56419,111814
+Brüssow	OS 57602,110693
 Löcknitz|(Vorpommern)	OS 62398,117458
 Woddow	OS 61301,108826
 Bagemühl	OS 62028,106866
 Bagemühl	OS 61950,106669
 Schwaneberg	OS 57161,102074
+Schwaneberg	OS 56809,102741
+Schwaneberg	OS 57280,103371
 Schmölln	OS 56505,100978
 Schmölln	OS 55368,100124
 Schmölln	OS 56188,99924
@@ -50,14 +54,16 @@ Grünz	OS 58458,98537
 Grünz	OS 58109,98687
 Grünberg	OS 59525,107015
 Grünberg	OS 59120,106895
+Grünberg	OS 58430,106415
 Storkow|(bei Penkun)	OS 68196,101164
 Storkow|(bei Penkun)	OS 67711,101930
-Frauenhagen|(bei Brüssow)	OS 58529,109432
-Frauenhagen|(bei Brüssow)	OS 59055,109122
+Frauenhagen	OS 58529,109432
+Frauenhagen	OS 59055,109122
 Sommersdorf	OS 61004,98682
 Sommersdorf	OS 61380,98335
 Wartin	OS 60084,95438
 Wartin	OS 60118,94772
+Wartin	OS 59364,92905
 Casekow	OS 63500,89978
 Casekow	OS 63551,91426
 Casekow	OS 63109,90718
@@ -218,11 +224,19 @@ Lychen	OS 1090,89570
 Fürstenberg	OS -8242,87530
 Haßleben	OS 28340,90006
 Mittenwalde|b. Templin	OS 26577,87335
-Mittenwalde|b. Templin	OS 26358,86368
+Mittenwalde|b. Templin	OS 26359,86387
+Krohnhorst	OS 25925,83573
+Henkinshain	OHT 25786,82784
+Henkinshain	OHT 25695,82276
 Bietikow	OS 45515,97197
 Bietikow	OS 44607,96890
 Bietikow	OS 44778,96200
+Bietikow	OS 44769,96942
 Seelübbe	OS 42925,96685
+Seelübbe	OS 42843,96821
+Seelübbe	OS 43044,96539
+Seelübbe	OS 42088,95894
+Kietz Modderort	OHT 42089,95920
 Seehausen|am Oberuckersee	OS 41526,91376
 Seehausen|am Oberuckersee	OS 41368,91769
 Seehausen|am Oberuckersee	OS 41200,91922
@@ -290,6 +304,7 @@ Kerkow	OS 49089,70562
 Kerkow	OS 48672,70933
 Angermünde	OS 49747,67955
 Angermünde	OS 49913,70005
+Pinnow|(Uckermark)	OS 55649,74233
 Greiffenberg	OS 46820,76962
 Greiffenberg	OS 46704,75833
 Wolletz	OS 43680,69754
@@ -446,11 +461,24 @@ Arendsee	OS 24670,103515
 Milmersdorf	OS 24689,77347
 Milmersdorf	OS 25175,79308
 Ahlimbsmühle	OS 23929,74843
-Ahlimbsmühle	OS 24006,74469
-Gollin	OS 22692,71528
+Ahlimbsmühle	OS 24007,74458
+Gollin	OS 22731,71511
 Gollin	OS 23314,72229
-Groß Schönebeck	OS 18783,57202
-Groß Schönebeck	OS 17658,55401
+Döllner Heide	OHT 22040,65610
+Döllner Heide	OHT 21946,65367
+Groß Schönebeck	OS 18806,57260
+Groß Schönebeck	OS 17671,55404
+Groß Schönebeck	OS 18630,54584
+Sperlingsaue	OHT 19061,53959
+Sperlingsaue	OHT 19141,53539
+Zerpenschleuse	OS 18276,50482
+Zerpenschleuse	OS 17694,49235
+Klosterfelde	OS 15359,44362
+Klosterfelde	OS 14884,41606
+Wandlitz	OS 14664,40223
+Wandlitz	OS 12839,36428
+Basdorf	OS 12839,36428
+Basdorf	OS 12473,33109
 Böhmerheide	OS 15886,54280
 Böhmerheide	OS 13967,53380
 Hammer|b. Liebenwalde	OS 12615,52952
@@ -471,8 +499,10 @@ Schildow	OS 8122,27716
 Schildow	OS 8488,25390
 Schildow	OS 6172,24604
 Schildow	OS 9113,26979
-Schönerlinde	OS 13348,27204
+Schönerlinde	OS 13345,27187
+Schönerlinde	OS 12362,29651
 Schönwalde	OS 12362,29651
+Schönwalde	OS 12560,31435
 Großräschen	OS 52531,-90608
 Freienhufen	OS 51083,-90805
 Freienhufen	OS 51540,-90776
@@ -687,7 +717,7 @@ Buchholz|bei Gerswalde	OS 32377,89414
 Buchholz|bei Gerswalde	OS 31661,89289
 Sachsenhausen	OS -476,40852
 Mittenwalde Ortsteil Blankensee	OS 29344,87921
-Mittenwalde Ortsteil Blankensee	OS 27977,87375
+Mittenwalde Ortsteil Blankensee	OS 27967,87384
 Mittenwalde|b. Templin	OS 26799,86909
 Mittenwalde|b. Templin	OS 24969,87287
 Herzfelde|bei Klosterwalde	OS 22917,87978
@@ -696,6 +726,7 @@ Klosterwalde	OS 19681,85491
 Klosterwalde	OS 19533,85103
 Birkenstein	OS 26904,13065
 Birkenstein	OS 27566,13555
+Berlin	OS 13345,27187
 Berlin	OS 25632,11132
 Berlin	OS 25005,15636
 Berlin	OS 24708,7636
@@ -776,4 +807,18 @@ Kummerow	OS 62597,84046
 Kummerow	OS 63505,83927
 Hohenselchow	OS 68169,88963
 Groß Pinnow	OS 68287,88029
-Albrechtshof	OHT 57233,104685
+Albrechtshof	OHT 57250,104791
+Albrechtshof	OHT 57244,104460
+Landin	OS 57957,76869
+Landin	OS 57906,77201
+Herrenhof	OS 59280,80363
+Stendell	OS 60330,81769
+Stendell	OS 60675,83382
+Jamikow	OS 61346,85020
+Jamikow	OS 61090,85518
+Schönow|(Uckermark)	OS 60206,86603
+Schönow|(Uckermark)	OS 59766,87273
+Blumberg	OS 59744,89598
+Blumberg	OS 59503,90395
+Karlsberg	OS 58853,91488
+Karlsberg	OS 58910,91735

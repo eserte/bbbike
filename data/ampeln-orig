@@ -2310,6 +2310,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 4862,10881
 	F 30037,4176
 	F 23059,4635
+#: XXX Baustellenampel; bleibt sie permanent?
+#: last_checked: 2014-04-21
+#: check_frequency: 180d
 	X 13256,26863
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100805.1445.305319.html
 	X -7365,15306
@@ -2746,6 +2749,19 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	B 59826,87562
+	X 56231,75134
+	X 12913,27641
+	X 12207,34503
+	X 13894,37979
+#: note: Anforderungsampel
+	F 14517,39074
+#: note: Anforderungsampel
+	F 14367,38641
+#: note: Anforderungsampel
+	F 12307,34017
+	X 18287,50512
+	X 25146,78471
 #: note: Anforderungsampel
 	F 17956,25235
 #: note: zwei Drängelgitter, keine Schranke
@@ -2821,7 +2837,7 @@ geschlossen bei Bedarf (?)	Zbr 27657,-11741
 	B 16630,-30953
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?)	B 40248,14503
 Bahn kommt ca. halbstündlich	B 43081,77252
-Bahn kommt ca. halbstündlich	B 41395,91313
+Bahn kommt ca. halbstündlich	B 41388,91325
 Bahn kommt ca. halbstündlich oder öfter	B 27139,37340
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 42086,79436
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 41323,96820
@@ -2996,8 +3012,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 70188,-78014
 #: note: Luftbild
 	B 11382,35230
-#: note: Luftbild
-	B 12034,35012
+	B 12025,35002
 #: note: Luftbild
 	B 24718,22731
 	B 36087,-12087
@@ -3025,7 +3040,8 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 40249,186550
 	B -216,128147
 	B 5401,128721
-	B 24754,77507
+#: XXX_prog: Strecke ist außer Betrieb! B0 oder was?
+	B0 24754,77507
 	B -54891,-35326
 	B 24165,-103467
 #: note: Luftbild vvv
@@ -3099,7 +3115,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	X 39715,101866
 	X 39682,101543
 	X 39962,101085
-	F 39804,101160
+# REMOVED (nach der Laga abgebaut) --- F 39804,101160
 #: note: Ampel kann beim Rechtsabbiegen aus Richtung Schmölln umfahren werden
 	X 41193,100575
 	F 53182,-17704

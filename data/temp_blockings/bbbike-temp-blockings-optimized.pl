@@ -3857,16 +3857,7 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140407.1430.396156.html',
-         'until' => 1397771999,
-         'text' => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 14. April 2014 Uhr bis voraussichtlich 17. April 2014',
-         'from' => 1397340000,
-         'id' => 2528,
-         'data' => 'userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
