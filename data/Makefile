@@ -668,7 +668,8 @@ qualitaet_l:	qualitaet_l-orig
 
 handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps routing_helper-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -strip-tendencies handicap_s-orig > handicap_s~
+	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies handicap_s-orig |\
+	    ${GREPSTRASSEN_VALID} > handicap_s~
 	$(GREPSTRASSEN) -catrx ':q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
 	    $(GREPSTRASSEN) -inner berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \
@@ -682,7 +683,8 @@ handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps r
 
 handicap_l:	handicap_l-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -strip-tendencies handicap_l-orig > handicap_l~
+	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies handicap_l-orig |\
+	    ${GREPSTRASSEN_VALID} > handicap_l~
 	$(GREPSTRASSEN) -catrx ':q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
 	    $(GREPSTRASSEN) -outer berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \
