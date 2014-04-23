@@ -2,7 +2,8 @@ $#temp_blocking = 2;
 push @temp_blocking,
 (
        {
-         'data' => 'userdel	2::temp 9521,10010 9827,10051
+         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
+userdel	2::temp 9521,10010 9827,10051
 userdel	2::temp 9521,10010 9448,10014
 userdel	2::temp 9599,10175 9687,10180 9825,10206
 userdel	2::temp 9416,10196 9599,10175
@@ -170,7 +171,8 @@ userdel auto	3 11253,10778 11275,10723 11258,10682
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
+         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=834793
+userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
 userdel	2::temp 6729,10212 6971,10346
 userdel	2::temp 6628,10318 6626,10155
 userdel	2::temp 6502,10273 6628,10318 6719,10347
@@ -1281,7 +1283,8 @@ userdel	2::temp 6945,9142 7044,9163
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
+         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=811375
+userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
 ',
          'periodic' => 1,
          'until' => 1401652800,
@@ -1844,6 +1847,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        {
          'data' => '#: by: http://www.family-and-friends-ev.de/2.html
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=859853
 userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 ',
          'periodic' => 1,
@@ -1858,7 +1862,7 @@ userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
                               5
                             ]
                           ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (24. und 25. Mai 2014)',
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), beide Fahrbahnen der Straße gesperrt (24. und 25. Mai 2014)',
          'type' => 'gesperrt',
          'id' => 1642
        },
@@ -2663,9 +2667,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'http://www.csd-berlin.de/',
-         'data' => '#: XXX andere Route? von Alex aus?
+         'data' => '#: XXX andere Route: Alex -> Brandenburger Tor, wo genau?
 #: next_check: 2014-06-01
 #: priority: #A
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=803723
 userdel	2::temp 6171,10657 6216,10614
 userdel	2::temp 6216,10614 6268,10588 6353,10583 6468,10550 6532,10529 6636,10492 6753,10446 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6918,10854 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254
 userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808
@@ -3170,26 +3175,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-',
-         'periodic' => 1,
-         'until' => 1398117599,
-         'from' => 1397685600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 19.4.2014 bis 21.4.2014)',
-         'type' => 'gesperrt',
-         'id' => 2324
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3475,6 +3461,7 @@ userdel	q4::inwork 13085,7904 13117,7939 13151,7914
        undef,
        {
          'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2014
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
 userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 ',
          'periodic' => 1,
@@ -3726,7 +3713,16 @@ userdel	2::night 17671,13132 17684,13133
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20140422.1525.396516.html',
+         'until' => 1402351200,
+         'text' => 'Alt-Lübars zwischen Quickborner Straße und Zabel-Krüger-Damm: Bauarbeiten, Fahrbahn gesperrt, 28.04.2014 bis Mitte Juni',
+         'from' => 1398549600,
+         'id' => 2480,
+         'data' => 'userdel	q3::inwork 6805,23554 6801,23474 6764,23396
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,

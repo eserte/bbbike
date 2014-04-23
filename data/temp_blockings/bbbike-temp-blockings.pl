@@ -39,6 +39,7 @@ my $isodate2epoch = sub {
        text  => 'Straßenfest rund um den Blücherplatz, 6.6.2014 bis 9.6.2014',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
 userdel	2::temp 9521,10010 9827,10051
 userdel	2::temp 9521,10010 9448,10014
 userdel	2::temp 9599,10175 9687,10180 9825,10206
@@ -575,6 +576,7 @@ EOF
        text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (14.6.2014 bis 15.6.2014',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=834793
 userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
 userdel	2::temp 6729,10212 6971,10346
 userdel	2::temp 6628,10318 6626,10155
@@ -9456,6 +9458,7 @@ EOF
        text  => 'Open Air Gallery am 1. Juni 2014 auf der Oberbaumbrücke (10:00 - 22:00)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=811375
 userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
@@ -14028,10 +14031,11 @@ EOF
        until => $isodate2epoch->("2014-05-25 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 5]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (24. und 25. Mai 2014)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), beide Fahrbahnen der Straße gesperrt (24. und 25. Mai 2014)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.family-and-friends-ev.de/2.html
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=859853
 userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -17935,9 +17939,10 @@ EOF
        text  => 'CSD am 21.6.2014',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX andere Route? von Alex aus?
+#: XXX andere Route: Alex -> Brandenburger Tor, wo genau?
 #: next_check: 2014-06-01
 #: priority: #A
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=803723
 userdel	2::temp 6171,10657 6216,10614
 userdel	2::temp 6216,10614 6268,10588 6353,10583 6468,10550 6532,10529 6636,10492 6753,10446 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6918,10854 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245 8610,12254
 userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808
@@ -21358,6 +21363,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2014
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
 userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
      },
@@ -21872,13 +21878,13 @@ userdel	2::night 17490,13133 17489,13125
 userdel	2::night 17671,13132 17684,13133
 EOF
      },
-     { from  => 1377731580, # 2013-08-29 01:13
-       until => 1388530799, # 2013-12-31 23:59
-       text  => 'Alt-Lübars zwischen Quickborner Straße und Zabel-Krüger-Damm: Bauarbeiten, Fahrbahn gesperrt, bis Ende 2013',
+     { from  => $isodate2epoch->("2014-04-27 00:00:00"), # 1377731580, # 2013-08-29 01:13
+       until => $isodate2epoch->("2014-06-10 00:00:00"), # 1388530799, # 2013-12-31 23:59
+       text  => 'Alt-Lübars zwischen Quickborner Straße und Zabel-Krüger-Damm: Bauarbeiten, Fahrbahn gesperrt, 28.04.2014 bis Mitte Juni',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130828.1240.388504.html',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20140422.1525.396516.html',
        data  => <<EOF,
-userdel	q4::inwork 6805,23554 6801,23474 6764,23396
+userdel	q3::inwork 6805,23554 6801,23474 6764,23396
 EOF
      },
      { from  => 1377665400, # 2013-08-28 06:50

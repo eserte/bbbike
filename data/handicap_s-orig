@@ -31,7 +31,7 @@ Neue Bahnhofstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14752,11041 14811,
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # REMOVED (keine Absperrung mehr) --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d --- Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
 # 
-#: last_checked: 2014-04-06
+#: last_checked: 2014-04-21
 #: check_frequency: 60d
 Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
 # 
@@ -49,7 +49,7 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # 
 #: XXX Ende der Bauarbeiten?
 #: XXX_prog: zu eng für Anhänger
-#: last_checked: 2014-04-17
+#: last_checked: 2014-04-23
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
@@ -60,11 +60,15 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwo
 # REMOVED --- : osm_watch: way id="4412885" version="23"
 #: last_checked: 2014-04-15 vvv
 #: check_frequency: 60d vvv
-# REMOVED (keine Behinderung mehr) --- Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8588,13673 8594,13637
-# REMOVED (offen) --- #: next_check: 2014-04-12 (wegen Sperrung der Hessischen wahrscheinlich wieder befahrbar) --- Luisenstr./Invalidenstr./Neues Tor: Fahrbahn gesperrt	q4::inwork 8619,13689 8626,13641
 Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html
+#: valid: 20140428-20140512
+#: next_check: 2014-05-12
+#: priority: #A
+Luisenstr. am Platz vor dem Neuen Tor: Fahrbahn bis ca. 12. Mai 2014 gesperrt	q4::inwork 8626,13641 8619,13689
 # 
 # REMOVED (laut Tsp vom 15.12.2013) --- #: source_id: INKO_113388 --- #: last_checked: 2013-12-11 --- #: next_check: 2014-08-31 --- Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # REMOVED (laut Tsp vom 15.12.2013) --- #: source_id: INKO_091722 --- #: source_id: INKO_091722_COPY_1 --- #: XXX siehe auch temporäre Ampel an der Neustädtischen Kirchstr. --- #: XXX siehe auch Busspur UdL --- #: last_checked: 2013-12-11 --- #: next_check: 2013-12-31 --- Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
@@ -93,8 +97,9 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
-#: last_checked: 2014-02-10
-#: next_check: 2014-04-22
+#: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7
+#: last_checked: 2014-04-23
+#: check_frequency: 60d
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
 # REMOVED (by osm) --- #: last_checked: 2013-06-10 (wosch) vvv --- #: osm_watch: way id="25185423" version="15"--- Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13986 --- #: last_checked ^^^
@@ -106,11 +111,11 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html
 #: osm_watch: way id="197160274" version="1" vvv
-#: last_checked: 2014-04-17 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2014-04-23 vvv
+#: next_check: 2014-05-31 vvv
 Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676
 Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwork 8837,11676 9000,11727
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
 #: XXX ^^^
@@ -124,7 +129,7 @@ Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg auswei
 # 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2014-04-02 vvv
-#: next_check: 2014-09-01 vvv
+#: next_check: 2014-06-30 vvv
 #: priority: #A vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -136,19 +141,29 @@ Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umständlich	q4::
 #: XXX_prog: evtl. als q4+ eintragen (falls möglich), 9km/h sind eigentlich möglich
 Invalidestr. (Mitte): Baustelle, Fahrbahn zwischen Eichendorffstr. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953
 Invalidestr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
-#: check_frequency: 30d
-#: source_id: IM_021585
-#: note: Ausweichen mittlerweile auf dem südlichen Bürgersteig
-Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844 8842,13798 8690,13723
 # REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8659,13708 8619,13689
-# REMOVED (2014-03-01 wurde die Einbahnstraßeregelung aufgehoben) --- Scharnhorststr.: Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 8450,13599 8313,13839
-Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (wieder offen ab 2013-08-29) --- #: source_id: IM_019009 --- #: source_id: IM_018437 --- Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: priority ^^^
 #: next_check ^^^
 #: last_checked: ^^^
 #: next_check_id ^^^
 # 
+#: source_id: IM_021585
+#: note: Ausweichen mittlerweile auf dem südlichen Bürgersteig
+#: next_check: 2014-06-30 (Abschnitt bis Chausseestr. wird wieder in beiden Richtungen befahrbar sein)
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html
+Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844 8842,13798 8690,13723
+# 
+#: valid: -20140428
+#: next_check: 2014-04-28 (wird wieder befahrbar sein)
+#: priority: #A
+Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
+# 
+#: valid: 20140512-20140616
+#: next_check: 2014-06-16 (wird wieder befahrbar sein)
+#: priority: #A
+Scharnhorststr.: Sackgasse an der Invalidenstraße	q3::inwork 8450,13599 8313,13839
+#
 # REMOVED (seit 2014-04-01 wieder offen?) --- #: last_checked: 2014-03-07 (Bauarbeiten wegen Neubau) --- #: check_frequency: 60d --- Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2013-11-12 --- #: next_check: 2014-01-15 --- Siemensstr.: Bauarbeiten, Einbahnstraße, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
 # 
