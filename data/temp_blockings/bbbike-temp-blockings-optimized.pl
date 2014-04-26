@@ -3738,7 +3738,7 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2489,
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-04-11
+#: last_checked: 2014-04-26
 #: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
@@ -3980,7 +3980,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
-#: last_checked: 2014-04-04
+#: last_checked: 2014-04-26
 #: check_frequency: 30d
 userdel	q3::inwork 11673,16003 11567,15842
 ',
@@ -4031,15 +4031,30 @@ userdel	q3::inwork; 13555,15596 13459,15653
          'type' => 'handicap'
        },
        undef,
+       undef,
        {
-         'source_id' => '146100350',
-         'until' => 1398434400,
-         'text' => 'Königs Wusterhausen: Storkower Str. Bereich Bahntunnel Bauarbeiten mit Umleitung, 22.04.2014 07:00 Uhr bis 25.04.2014 16:00 Uhr ',
-         'from' => 1398056400,
-         'id' => 2561,
-         'data' => 'userdel	2::inwork 26395,-11699 26302,-11712
+         'source_id' => 'IM_021420',
+         'until' => 1409522399,
+         'text' => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende August 2014',
+         'from' => undef,
+         'id' => 2562,
+         'data' => 'userdel	q3::inwork; 10908,17142 10917,17088 10927,17022
+userdel	q4::inwork; 10927,17022 10862,17087
+userdel	q4::inwork 10862,17087 10891,17088 10917,17088
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt',
+         'from' => undef,
+         'id' => 2563,
+         'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2014-04-25
+#: check_frequency: 14d
+userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
+',
+         'type' => 'handicap'
        }
      
 );

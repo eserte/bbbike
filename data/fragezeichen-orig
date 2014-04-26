@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2014-03-26
+#: last_checked: 2014-04-26
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -99,14 +99,14 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2014-02-05
+#: last_checked: 2014-04-26
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
 #: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2014 (Widmung von Straßenland für einen Radfahrstreifen, Gitschiner/Alexandrinen)
-#: last_checked: 2014-04-23
+#: last_checked: 2014-04-26
 #: check_frequency: 90d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -298,7 +298,7 @@ Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,
 #: check_frequency: 90d
 Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,4376
 # 
-#: last_checked: 2013-11-22
+#: last_checked: 2014-04-26
 #: check_frequency: 90d
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8496,6919 8447,6964 8414,6995 8319,7084
 # 
@@ -597,7 +597,7 @@ XXIII-3-1VE: hier könnte eine/mehrere Straßen entstehen	?::projected 24624,11374
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 (Eröffnungstermin)
 #: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen?
 #: XXX gehört zu Tempelhof-Schöneberg
-#: last_checked: 2014-04-23
+#: last_checked: 2014-04-26
 #: check_frequency: 60d
 #: priority: #A
 Am Lokdepot: werden die beiden Teilstücke miteinander verbunden?	?::inwork 8390,8879 8389,9017
@@ -695,7 +695,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2014-04-17
+#: last_checked: 2014-04-26
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1100,8 +1100,6 @@ Martha-Jacob-Platz: Benennung eines Platzes	? 480,11204 454,11159
 # 
 # REMOVED (existiert nicht mehr) --- Tiergarten: existiert dieser Weg noch oder ist es nur ein Trampelpfad?	? 8210,11775 8140,11850
 # 
-Maximilianstr.: Vorfahrtsregelung?	? 10298,17299 10499,17286 10774,17277
-# 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5596
 #: next_check: 2014-05-10
 Tuchollaplatz: entstehen hier Aufpflasterungen und/oder ein verkehrsberuhigter Bereich?	? 15541,10892 15649,10922
@@ -1325,6 +1323,7 @@ Fußweg zur Gehrenseestr.: genaue Lage, Qualität?	?::projected 17607,16328 17631,
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5696 (Straßenname)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036439860180/439860180/00109962/62-Anlagen/02/LageplanDS1034.pdf (grober Lageplan)
 #: by: http://w6898n4pa.homepage.t-online.de/Lage.pdf (Lageplan)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
 #: XXX fehlt in Berlin.coords.data
 #: last_checked: 2013-12-20
@@ -1390,7 +1389,7 @@ Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,985
 # REMOVED (das sah nicht öffentlich aus...) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121129.1435.378795.html vvv --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21211,3474 21270,3407 20867,3018 --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21046,3188 20927,3292 --- #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=3934&options=4
-#: last_checked: 2013-11-22
+#: last_checked: 2014-04-26
 #: check_frequency: 90d
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8645,6781 8655,6796
 # 
@@ -1847,7 +1846,7 @@ Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf
-#: last_checked: 2014-04-11
+#: last_checked: 2014-04-26
 #: check_frequency: 14d
 Cheruskerpark: entsteht hier eine neue Wegverbindung?	?::projected 7391,8231 7369,8278
 # 
@@ -3454,7 +3453,7 @@ Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str. südli
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=2867
-#: osm_watch: way id="34822334" version="9"
+#: osm_watch: way id="34822334" version="10"
 #: osm_watch: way id="69126601" version="3"
 #: osm_watch: way id="150397570" version="3"
 #: last_checked: 2014-01-18

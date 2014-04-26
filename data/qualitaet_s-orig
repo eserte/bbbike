@@ -530,8 +530,9 @@ Holteistr.: Asphalt	Q0 14535,11327 14506,11275 14468,11203
 Holteistr.: Asphalt	Q0 14575,11407 14535,11327
 Brehmestr.: Kopfsteinpflaster	Q2 9904,17347 9975,17359 10085,17379 10214,17401
 Heynstr.: Kopfsteinpflaster	Q2 10214,17401 10207,17448 10203,17478
-Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10499,17286 10774,17277
-Dolomitenstr. Kopfsteinpflaster	Q2 10298,17299 10228,17231
+Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10502,17286
+Dolomitenstr.: Kopfsteinpflaster	Q2 10298,17299 10228,17231
+Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 Helmerdingstr.: Kopfsteinpflaster	Q2; 14442,11101 14468,11203
 Helmerdingstr.: Asphalt/Kopfsteinpflaster	Q2+; 14468,11203 14442,11101
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
@@ -15569,7 +15570,7 @@ T‰ubchenstr.: Asphalt	Q0 -862,4542 -947,4303
 # 
 #: by: Chris Stader:
 #: XXX wird die Qualit‰t nach den Bauarbeiten besser sein?
-#: last_checked: 2014-03-11
+#: last_checked: 2014-04-26
 Masurenstr.: m‰ﬂiger Asphalt	Q1 10880,17469 10670,17458
 # 
 #: by: Gudrun Feix: vvv
@@ -19730,7 +19731,8 @@ Am Hirschwechsel: gutes Verbundsteinpflaster	Q1 -1192,22576 -974,22517 -897,2249
 Kiesweg (Karlshorst): m‰ﬂiger fester Sandweg, Schlaglˆcher	Q2 20280,7749 20334,7753 20379,7848 20429,7977
 #: by: gregor (kijora):
 #: confirmed_by: anonymous ("Kopfsteinpflaster")
-÷tztaler Str.: schlechtes Kopfsteinpflaster	Q3 10690,17420 10630,17421
+#: corrected_by: srt (schlechtes -> m‰ﬂiges)
+÷tztaler Str.: m‰ﬂiges Kopfsteinpflaster	Q2 10690,17420 10630,17421
 #: by: Uwe Majewski:
 Schulstr. (Tegel): schlechtes Kopfsteinpflaster	Q3 1794,20110 1953,20149
 #: by: Frank Jahr:

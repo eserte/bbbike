@@ -21978,7 +21978,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-04-11
+#: last_checked: 2014-04-26
 #: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
@@ -22614,7 +22614,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann?
-#: last_checked: 2014-04-04
+#: last_checked: 2014-04-26
 #: check_frequency: 30d
 userdel	q3::inwork 11673,16003 11567,15842
 EOF
@@ -22683,6 +22683,28 @@ EOF
        source_id => '146100350',
        data  => <<EOF,
 userdel	2::inwork 26395,-11699 26302,-11712
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2014-08-31 23:59:59"),
+       text  => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende August 2014',
+       type  => 'handicap',
+       source_id => 'IM_021420',
+       data  => <<EOF,
+userdel	q3::inwork; 10908,17142 10917,17088 10927,17022
+userdel	q4::inwork; 10927,17022 10862,17087
+userdel	q4::inwork 10862,17087 10891,17088 10917,17088
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2014-04-25
+#: check_frequency: 14d
+userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 EOF
      },
     );
