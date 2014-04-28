@@ -133,7 +133,7 @@ Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.	1 5360,6642 5215,6643
 #: by: ^^^
 #: by: N. H. Sassi (Einbahnstraße nicht für Radfahrer)
-Kühlebornweg	1 5161,4664 5075,4600 5004,4709
+Kühlebornweg	1 5165,4667 5075,4600 5004,4709
 Gartenstr.	1 22467,3889 22281,4033 22263,4120 22279,4220
 Wichmannstr.	1 6462,11069 6552,11006 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6742,11099 6626,11178 6582,11202
@@ -346,7 +346,7 @@ Osloer Str.: Straßenbahntrasse	3nocross 9455,16609 9331,16624 9210,16638 8939,16
 Osloer Str.: Straßenbahntrasse	3nocross 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
 Seestr.: Straßenbahntrasse	3nocross 7606,16746 7456,16620 7417,16587 7403,16575 7295,16477 7231,16418
 Bismarckstr.: Mittelstreifen	3nocross 3690,11629 3844,11649 3898,11655
-Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6070,6570
+Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6071,6559
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9011,14019 8870,13926 8935,13844
 #: by: Wolfhard Schleese
@@ -982,3 +982,7 @@ Zum Langen Jammer: Einbahnstraße	1 14682,12874 14588,12901 14536,12916 14480,129
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]	1 12948,15771 12762,15882
 #: note: Radfahrer können irgendwie über die Kreuzung fahren
 Stahlheimer Str.	1 11698,16311 11673,16367
+Halskestr. - Albrechtstr.: Abbiegen verboten	3 6435,4590 6360,4504 6416,4452
+#: by: Guido (guidoh):
+#: corrected_by: srt (offen für Radfahrer, nach gesperrt_car verschoben)
+Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345

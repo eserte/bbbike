@@ -12,13 +12,13 @@
 # 
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # 
-#: last_checked: 2014-04-21 vvv
+#: last_checked: 2014-04-27 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
 # 
 #: next_check_id: NEUEBAHNHOF-2014
-#: last_checked: 2014-04-12
+#: last_checked: 2014-04-27
 Neue Bahnhofstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14752,11041 14811,11067 14879,11182 14918,11249
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 14442,11101 14468,11203
@@ -65,6 +65,7 @@ Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 865
 #: last_checked ^^^
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html
+#: source_id: IM_021790
 #: valid: 20140428-20140512
 #: next_check: 2014-05-12
 #: priority: #A
@@ -124,7 +125,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-04-17
+#: last_checked: 2014-04-28
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -154,10 +155,7 @@ Invalidestr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroli
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844 8842,13798 8690,13723
 # 
-#: valid: -20140428
-#: next_check: 2014-04-28 (wird wieder befahrbar sein)
-#: priority: #A
-Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
+# REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
 # 
 #: valid: 20140512-20140616
 #: next_check: 2014-06-16 (wird wieder befahrbar sein)
@@ -1899,8 +1897,10 @@ Parforceweg: einige umgestürzte Bäume	q4 -643,7252 -728,7310 -1020,7446 -1328,75
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fußgänger	q2 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 # REMOVED --- #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html --- #: XXX der handicap_s-Eintrag wird wohl bleiben, q2 oder q1? --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d
 Helsingforser Str.: einige Fußgänger	q1 13496,11384 13427,11431
-#: note: offiziell nur für Fußgänger, der Radweg ist auf der nördlichen Seite
-Karl-Lade-Str.: Fußgänger	q2 14821,13674 14987,13621 15040,13602
+#: note: mittlerweile ein gemeinsamer Rad- und Gehweg
+Karl-Lade-Str.: Fußgänger	q1 14821,13674 14987,13621
+#: note: offiziell nur für Fußgänger
+Karl-Lade-Str.: Fußgänger	q2 14987,13621 15040,13602
 #: XXX_prog BS zu beiden Seiten, ansonsten q1 oder q2 wegen Fußgänger
 Magdeburger Platz: Bordsteine	q3 7393,10809 7414,10804
 (Fanny-Zobel-Str. - Uferweg): Fußgänger, eng	q2 14049,10164 14116,10149
@@ -1928,6 +1928,10 @@ Schwarzwurzel-Park: Bordstein, Fußgänger, Spielplatz	q3 20698,18359 20814,18341 
 #: XXX_prog BS, zumindest an der Borsigstr., ansonsten trotzdem q3
 (Invalidenstr. - Borsigstr.): Fußgänger, Spielplatz, Bordsteine	q3 9285,13965 9321,13882 9316,13870
 Virchowstr.: schmale Toreinfahrt, Fußgänger	q3 8548,13577 8503,13553
+#: XXX_prog BS, Bordstein zum asphaltierten Nebenweg, ansonsten entfernen
+Calandrellistr. - Gärtnerstr.: Bordstein	q2 5547,3684 5362,3612
+#: XXX_prog BS (2x), ansonsten q1
+Schalloppstr.: Bordsteine, einige Fußgänger	q3 5132,4704 5190,4755
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -1990,7 +1994,7 @@ Eschershauser Weg: parkende Autos, unübersichtlich	q1 -190,4776 -146,4814 -97,48
 #: by: Zappel (Mrs Marple):
 Begasstr.: eng	q1 6275,7004 6408,7008
 #: by: Martina Urban: vvv
-Friedrichsruher Str.: sehr eng	q1 6637,5952 6508,5931 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
+Friedrichsruher Str.: sehr eng	q1 6629,5946 6508,5931 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 Schönhauser Str.: eng	q1 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
 Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
 #: by: ^^^
@@ -2068,7 +2072,7 @@ Holwedestr.: schmale Straße	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,
 Am Schloßpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
 # REMOVED (keine Behinderungen deswegen) --- #: by: anonymous --- (Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgelände	q1 4997,19849 5003,19833 5060,19699 5073,19656 5110,19665 5183,19454 5208,19378 5187,19368 5219,19285 5388,19186 5429,19165
 #: by: Daniel (dan.berlin):
-Poschingerstr.: enge Straße	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6261,6391
+Poschingerstr.: enge Straße	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
 #: by: Manfred Köhnen:
 #: corrected_by: srt (q2 -> q1)
 Höltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
@@ -2282,7 +2286,7 @@ An der Brauerei: Fußgänger	q2 13283,13311 13235,13414
 #: last_checked: 2014-02-05
 #: check_frequency: 90d
 Ritterstr.: Fußgänger	q3::inwork 9763,11148 9861,11103
-Elisenstr.: Fußgänger	q2 5808,5332 5810,5340 5822,5388
+Elisenstr.: Fußgänger	q2 5810,5340 5813,5354 5822,5388
 Mittelstr. (Steglitz): Fußgänger	q2 5111,5337 5203,5278
 Goebenstr.: Fußgänger	q1 5606,4726 5555,4743 5535,4756 5509,4773 5478,4792
 Johanna-Stegen-Str.: Fußgänger	q2 5557,4523 5479,4568 5397,4611 5371,4609 5316,4637
@@ -2290,7 +2294,7 @@ Vionvillestr.: Fußgänger	q2 5557,4523 5589,4617
 Rezonvillestr.: Fußgänger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fußgänger	q2 5656,4543 5751,4497 5817,4473
 (Stadtpark Steglitz): Fußgänger	q2 5806,4840 5772,4766 5734,4694 5724,4670 5676,4552 5656,4543
-Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5347,4841 5436,4983
+Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5334,4857 5356,4892 5377,4901 5436,4983
 (Volkspark Friedrichshain): Fußgänger	q2 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
 (Volkspark Friedrichshain): Skater, Fußgänger	q2 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
 (Volkspark Friedrichshain): Fußgänger	q2 12915,13785 12937,13803 12887,13877 12879,13889
@@ -2530,8 +2534,8 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 #: by: anonymous [AM]
 Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
 #: by: Kai Brueggemann [AM] vvv
-(Parkweg Bäkepark): Fußgänger	q1 5337,4192 5320,4217 5246,4240 5129,4262 5100,4285 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
-(Parkweg Bäkepark): Fußgänger	q1 5225,4095 5131,4207 5068,4259
+(Parkweg Bäkepark): Fußgänger	q1 5337,4192 5320,4217 5246,4240 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
+(Parkweg Bäkepark): Fußgänger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
 (Parkweg Bäkepark): Fußgänger	q1 5282,4145 5131,4207
 (Parkweg Schloßpark Lichterfelde): Fußgänger, Kinder	q2 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4910,3599
 (Oberlinstr. - Wolfensteindamm): Fußgänger	q1 4732,4939 4692,4997
@@ -3537,7 +3541,7 @@ Frommpromenade: enge Straße	q0- 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 # 
 #: by: Kay Leonhardt:
-Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4317,2638 4655,3060 4862,3363 4951,3516
+Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4317,2638 4659,3065 4862,3363 4951,3516
 # 
 #: by: Karsten Denkler vvv
 #: corrected_by: srt (q1 -> q0-)

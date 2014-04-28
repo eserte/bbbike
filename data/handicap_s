@@ -9,6 +9,7 @@ Neue Bahnhofstr.: Einbahnstraﬂe wegen Bauarbeiten	q3::inwork; 14752,11041 14811,
 M¸hsamstr.: Bauarbeiten in Hˆhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
+Luisenstr. am Platz vor dem Neuen Tor: Fahrbahn bis ca. 12. Mai 2014 gesperrt	q4::inwork 8626,13641 8619,13689
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9580,12581 9601,12380
@@ -20,7 +21,6 @@ Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umst‰ndlich	q4::
 Invalidestr. (Mitte): Baustelle, Fahrbahn zwischen Eichendorffstr. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953
 Invalidestr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844 8842,13798 8690,13723
-Schwarzer Weg: Sackgasse an der Invalidenstraﬂe, Zugang f¸r Fuﬂg‰nger und schiebende Radfahrer mˆglich	q3::inwork 8426,13909 8574,13666
 Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7939,13026 7872,13022
 Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7867,13106 7937,13109
 Ella-Trebe-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7948,12918
@@ -1311,7 +1311,8 @@ Parforceweg: einige umgest¸rzte B‰ume	q4 -643,7252 -728,7310 -1020,7446 -1328,75
 (Bornholmer Str. - Kolonnenweg): einige Fuﬂg‰nger	q1 10134,16534 10118,16561 10108,16576 9954,16590
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fuﬂg‰nger	q2 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 Helsingforser Str.: einige Fuﬂg‰nger	q1 13496,11384 13427,11431
-Karl-Lade-Str.: Fuﬂg‰nger	q2 14821,13674 14987,13621 15040,13602
+Karl-Lade-Str.: Fuﬂg‰nger	q1 14821,13674 14987,13621
+Karl-Lade-Str.: Fuﬂg‰nger	q2 14987,13621 15040,13602
 Magdeburger Platz: Bordsteine	q3 7393,10809 7414,10804
 (Fanny-Zobel-Str. - Uferweg): Fuﬂg‰nger, eng	q2 14049,10164 14116,10149
 (Gr¸nanlage): Bordsteinkante	q1 17183,17385 17006,17473
@@ -1334,6 +1335,8 @@ Schwarzwurzel-Park: Bordstein, Fuﬂg‰nger, Spielplatz	q3 20698,18359 20814,18341 
 (Flaschenhalspark, Zugang): Rampe	q2 8353,9072 8367,9006 8374,9074
 (Invalidenstr. - Borsigstr.): Fuﬂg‰nger, Spielplatz, Bordsteine	q3 9285,13965 9321,13882 9316,13870
 Virchowstr.: schmale Toreinfahrt, Fuﬂg‰nger	q3 8548,13577 8503,13553
+Calandrellistr. - G‰rtnerstr.: Bordstein	q2 5547,3684 5362,3612
+Schalloppstr.: Bordsteine, einige Fuﬂg‰nger	q3 5132,4704 5190,4755
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -1361,7 +1364,7 @@ Engadiner Weg: enge Straﬂe, evtl. Gegenverkehr	q1 3716,2063 3818,2070 3851,2148 
 Am Triftpark: Temposchwellen	q2 4450,20388 4407,20412 4386,20444 4407,20482 4436,20531 4498,20515
 Eschershauser Weg: parkende Autos, un¸bersichtlich	q1 -190,4776 -146,4814 -97,4849 -48,4888 10,4932 110,4950
 Begasstr.: eng	q1 6275,7004 6408,7008
-Friedrichsruher Str.: sehr eng	q1 6637,5952 6508,5931 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
+Friedrichsruher Str.: sehr eng	q1 6629,5946 6508,5931 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 Schˆnhauser Str.: eng	q1 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
 Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
 Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2712,3602
@@ -1398,7 +1401,7 @@ Jeanne-Mammen-Bogen: Fuﬂg‰ngerzone	q3 4954,10876 5090,10868
 Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger	q4 5367,2528 5413,2436
 Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
-Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6261,6391
+Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
 Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
 Georg-Lehnig-Str.: enge Straﬂe	q1 14551,13571 14527,13486 14447,13507
 Erich-Kuttner-Str.: enge Straﬂe	q1 14590,13560 14551,13571 14439,13600 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
@@ -1519,7 +1522,7 @@ An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13235,13414
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 Ritterstr.: Fuﬂg‰nger	q3::inwork 9763,11148 9861,11103
-Elisenstr.: Fuﬂg‰nger	q2 5808,5332 5810,5340 5822,5388
+Elisenstr.: Fuﬂg‰nger	q2 5810,5340 5813,5354 5822,5388
 Mittelstr. (Steglitz): Fuﬂg‰nger	q2 5111,5337 5203,5278
 Goebenstr.: Fuﬂg‰nger	q1 5606,4726 5555,4743 5535,4756 5509,4773 5478,4792
 Johanna-Stegen-Str.: Fuﬂg‰nger	q2 5557,4523 5479,4568 5397,4611 5371,4609 5316,4637
@@ -1527,7 +1530,7 @@ Vionvillestr.: Fuﬂg‰nger	q2 5557,4523 5589,4617
 Rezonvillestr.: Fuﬂg‰nger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fuﬂg‰nger	q2 5656,4543 5751,4497 5817,4473
 (Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5734,4694 5724,4670 5676,4552 5656,4543
-Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,4841 5436,4983
+Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,4857 5356,4892 5377,4901 5436,4983
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
 (Volkspark Friedrichshain): Skater, Fuﬂg‰nger	q2 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12915,13785 12937,13803 12887,13877 12879,13889
@@ -1708,8 +1711,8 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 13487,3862 13531,3768 13545,3692 13623,3523
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13778,2987 13766,3018 13730,3111 13740,3252 13738,3302 13728,3332 13623,3523
 Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
-(Parkweg B‰kepark): Fuﬂg‰nger	q1 5337,4192 5320,4217 5246,4240 5129,4262 5100,4285 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
-(Parkweg B‰kepark): Fuﬂg‰nger	q1 5225,4095 5131,4207 5068,4259
+(Parkweg B‰kepark): Fuﬂg‰nger	q1 5337,4192 5320,4217 5246,4240 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
+(Parkweg B‰kepark): Fuﬂg‰nger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5282,4145 5131,4207
 (Parkweg Schloﬂpark Lichterfelde): Fuﬂg‰nger, Kinder	q2 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4910,3599
 (Oberlinstr. - Wolfensteindamm): Fuﬂg‰nger	q1 4732,4939 4692,4997
@@ -2098,7 +2101,7 @@ Stadtg‰rten: kurvige Straﬂe	q2 11544,21897 11575,21888 11566,21829 11534,21831
 Jochen-Klepper-Weg: kombinierter Rad- und Fuﬂweg, Fuﬂg‰nger haben Vorrang	q1 -3030,2266 -2784,2358 -2690,2385 -2372,2477
 Frommpromenade: enge Straﬂe	q0 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straﬂe	q0 6033,19611 5885,19920 5804,20047
-Eduard-Spranger-Promenade: Verbot f¸r Radfahrer	q4 4317,2638 4655,3060 4862,3363 4951,3516
+Eduard-Spranger-Promenade: Verbot f¸r Radfahrer	q4 4317,2638 4659,3065 4862,3363 4951,3516
 Rosenpl¸terweg: enge Straﬂe	q0 3657,26240 3431,26192 3328,26193
 Bulgenbachweg: enge Straﬂe	q0 3431,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 Schmˆckwitzwerder S¸d: enge Straﬂe	q1 30343,-3454 30133,-3840

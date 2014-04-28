@@ -184,8 +184,8 @@ Grimmstr.	1 11089,9751 11136,9851 11164,9885
 Grimmstr.	1 11164,9885 11175,9882
 Grimmstr.	1 11175,9882 11186,9861 11141,9732 11110,9661 11075,9576
 Körtestr.	1 11004,9554 11023,9597
-Körtestr.	1 11060,9549 11004,9554
-Fichtestr.	1 11075,9576 11060,9549
+Körtestr.	1 11055,9539 11004,9554
+Fichtestr.	1 11075,9576 11055,9539
 Baerwaldstr.	1 10361,9755 10357,9813 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7865,3354 7852,3183
@@ -256,8 +256,8 @@ Lauterstr.	1s:q3 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5314,7217
 Stolbergstr.	1 8850,6421 8848,6642
 Richnowstr.	1 8953,6492 8850,6421
-Menzelstr.	1 6185,6469 6155,6722
-Cranachstr.	1 6303,6736 6324,6480 6338,6312
+Menzelstr.	1 6168,6467 6155,6722
+Cranachstr.	1 6303,6736 6324,6480 6343,6297
 Boddinstr.	1 12582,8408 12368,8356 12216,8323 12168,8313 12104,8299 11920,8252
 Schlangenbader Str.	1 3968,7906 3964,7742
 Tannenweg	1s:q3 -3023,17889 -3012,17940 -3028,18027
@@ -382,7 +382,7 @@ Spreepark	2 16023,8860 16161,8852
 #: by: Felix Schröder
 #: confirmed_by: srt
 Staakener Str.	1 -4112,14242 -4390,14257
-Langensteiner Weg	1 7282,4716 7335,4879 7437,4855
+Langensteiner Weg	1 7283,4719 7335,4879 7437,4855
 #: by: Susanne Kuby:
 #: confirmed_by: srt
 Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
@@ -422,8 +422,6 @@ Engelmannweg	1 4531,18217 4492,18013 4462,17892 4429,17763
 Waldowstr.	1 5536,18234 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5547,18665 5550,18775
 Kienhorststr.	1 5543,18555 5324,18560
 Halbauer Weg	1 7720,3148 7719,3219 7734,3290 7755,3376
-#: by: Guido (guidoh):
-Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345
 # REMOVED (offen für Radfahrer) --- #: by: Jürgen Jacobi:Onkel-Bräsig-Str.	1 13324,4784 13305,4504
 #: confirmed_by: srt
 Hüsung	1 13324,4784 13400,4788 13468,4766
@@ -1068,7 +1066,8 @@ Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
 Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
 #: XXX wird hier die Einbahnstraße für Radfahrer geöffnet (wegen der neuen Radwegführung)?
-#: last_checked: 2014-03-18
+#: last_checked: 2014-04-28
+#: check_frequency: 90d
 (Möllendorffstr. - Paul-Junius-Str.)	1s:q4 15370,13508 15470,13509
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Kornmandelweg	1 21311,13522 21345,13550
@@ -2469,6 +2468,11 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: note: allerdings könnte man sein Fahrrad über den Betonpfeiler rübertragen
+#: last_checked: 2014-04-27
+#: check_frequency: 90d
+am Osthafen: durch Barriere versperrt	2 14259,10309 14463,10212
+# 
 # REMOVED --- #: last_checked: 2014-04-17 --- #: check_frequency: 14d --- Edith-Stein-Str.: Bauarbeiten könnten noch möglich sein	2::inwork 14089,13247 14035,13104
 # 
 #: next_check_id: BND-2014
@@ -2565,10 +2569,10 @@ tragen (2 Stufen)	0:5 8818,13365
 #: next_check_id: EMILSCHULZ-2014
 #: source_id: INKO_095722_COPY_1
 #: XXX siehe auch routing_helper addition
-#: XXX bei VMZ wurde der Eintrag entfernt (2014-03-31) --- was nun?
+#: XXX bei VMZ wurde der Eintrag entfernt (2014-03-31) --- ist aber immer noch aktiv!
 #: priority: #A
-#: last_checked: 2013-09-04
-#: next_check: 2014-03-31
+#: last_checked: 2014-04-27
+#: check_frequency: 60d
 Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 # 
 # REMOVED (Bauarbeiten beendet) --- #: XXX siehe auch die Umleitungsstrecke --- #: XXX nach den Bauarbeiten asphaltiert --- #: by: http://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10317_Berlin_Strassenbauarbeiten__607379.html (Asphaltierung) --- #: by: http://www.rubu.de/verkehr-planungen.html (Dauer) --- #: by: http://www.rubu.de/mediapool/115/1150729/data/Paul_u_Paula_UL3-Uebersicht-BA.pdf (Übersichtsplan) --- #: last_checked: 2013-08-19 --- #: next_check: 2013-10-03 (geplantes Bauende ist Ende September) --- Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
@@ -2862,7 +2866,7 @@ tragen (3 Stufen) oder schmale Rampe benutzen	0:5 12982,14629
 tragen (8 Stufen)	0:15 5575,5801
 tragen (12 Stufen)	0:20 5581,5828
 Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
-Elisenstr.: tragen (3 Stufen)	0:15 5810,5340
+Elisenstr.: tragen (3 Stufen)	0:15 5813,5354
 tragen (9 Stufen)	0:30 5822,5388
 tragen (3 x 10 Stufen)	0:90 5535,4756
 tragen (8 Stufen)	0:30 5466,4765

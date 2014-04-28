@@ -148,7 +148,7 @@ Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12561,35 -12582,127 -12623,308
 Stellmacherweg	1 13129,2999 13453,2930
 Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.	1 5360,6642 5215,6643
-Kühlebornweg	1 5161,4664 5075,4600 5004,4709
+Kühlebornweg	1 5165,4667 5075,4600 5004,4709
 Gartenstr.	1 22467,3889 22281,4033 22263,4120 22279,4220
 Wichmannstr.	1 6462,11069 6552,11006 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6742,11099 6626,11178 6582,11202
@@ -621,7 +621,7 @@ Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3866,11473 38
 Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3837,11760 3844,11649 3866,11473
 Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3837,11760 3844,11649 3898,11655
 Bismarckstr. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3898,11655 3844,11649 3866,11473
-Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6070,6570
+Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6071,6559
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9011,14019 8870,13926 8935,13844
 (Kastanienallee - Friedrich-Engels-Str.)	1 8789,20763 8692,20698 8717,20584
@@ -1623,8 +1623,8 @@ Straßenbahntrasse	3nocross::ignrte 18742,9903 18769,9839 18807,9746
 Brascheweg -> Treskowallee: Straßenbahntrasse	3::igndisp 18810,9850 18769,9839 18807,9746
 Treskowallee -> Brascheweg: Straßenbahntrasse	3::igndisp 18742,9903 18769,9839 18810,9850
 Mittelstreifen	3nocross::ignrte 11136,9183 11108,9187 10713,9260
-Fichtestr. -> Hasenheide: Mittelstreifen	3::igndisp 11060,9549 11108,9187 11136,9183
-Hasenheide -> Fichtestr.: Mittelstreifen	3::igndisp 10713,9260 11108,9187 11060,9549
+Hasenheide -> Fichtestr.: Mittelstreifen	3::igndisp 10713,9260 11108,9187 11055,9539
+Fichtestr. -> Hasenheide: Mittelstreifen	3::igndisp 11055,9539 11108,9187 11136,9183
 Rüdesheimer Str.	1 4317,7069 4391,7258
 Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
 Mittelstreifen	3nocross::ignrte 4473,9154 4609,9027 4701,8941
@@ -1680,3 +1680,5 @@ Zum Langen Jammer: Poller	3 14480,12932 14411,12951 14419,12978
 Zum Langen Jammer: Einbahnstraße	1 14682,12874 14588,12901 14536,12916 14480,12932
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]	1 12948,15771 12762,15882
 Stahlheimer Str.	1 11698,16311 11673,16367
+Halskestr. - Albrechtstr.: Abbiegen verboten	3 6435,4590 6360,4504 6416,4452
+Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345

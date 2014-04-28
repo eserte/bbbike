@@ -5063,7 +5063,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003018',
        data  => <<EOF,
-userdel	2::inwork 4411,3180 4587,3097 4655,3060 4832,2975
+userdel	2::inwork 4411,3180 4587,3097 4659,3065 4832,2975
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
@@ -17653,7 +17653,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015553',
        data  => <<EOF,
-userdel	q4::inwork 5271,4547 5161,4664 5137,4691 5076,4762
+userdel	q4::inwork 5271,4547 5165,4667 5132,4704 5076,4762
 EOF
      },
      { from  => 1271855220, # 2010-04-21 15:07
@@ -20166,7 +20166,7 @@ userdel	2::inwork 34913,13893 35382,13974
 EOF
      },
      { from  => $isodate2epoch->("2014-04-13 00:00:00"), # 1343067459, # 1329208920, # 2012-02-14 09:42 -> handicap_s-orig
-       until => $isodate2epoch->("2014-04-28 23:59:59"), # 1343067463, # 1369989720, # 2013-05-31 10:42
+       until => $isodate2epoch->("2014-04-28 12:00:00"), # 1343067463, # 1369989720, # 2013-05-31 10:42
        text  => 'Hessische Str.: Baustelle, Zufahrt zur Invalidenstraße gesperrt; Einbahnstraße in der Invalidenstraße, 14.04.2014 bis voraussichtlich 28.04.2014',
        type  => 'handicap',
        source_id => 'IM_021675',
@@ -20424,7 +20424,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018838',
        data  => <<EOF,
-userdel	q4::inwork 4932,4152 5068,4259
+userdel	q4::inwork 4932,4152 5063,4266
 EOF
      },
      { from  => 1338750610, # 2012-06-03 21:10
@@ -22564,11 +22564,11 @@ EOF
      },
      { from  => $isodate2epoch->("2014-04-03 12:00:00"),
        until => $isodate2epoch->("2014-05-23 18:00:00"),
-       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Eberhardstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
+       text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Alfred-Jung-Str., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
        type  => 'handicap',
        source_id => 'IM_021595',
        data  => <<EOF,
-userdel	q3::inwork; 15098,12849 15233,12829
+userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
      { from  => 1394604000, # 2014-03-12 07:00

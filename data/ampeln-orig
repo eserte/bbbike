@@ -989,10 +989,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3346,7369
 	X 3389,7383
 	X 8061,5939
-	X 6185,6469
+	X 6168,6467
 	X 6083,6451
-	X 6070,6570
-	X 6709,5854
+	X 6071,6559
+	X 6696,5854
 	X 5966,6747
 	X 4793,8005
 	X 4787,7788
@@ -1363,7 +1363,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 5689,5109
 	X 5583,5179
 	X 5687,5486
-	X 5478,4957
+#: note: Anforderungsampel
+	F 5482,4965
 	F 6115,5302
 	X 6134,5800
 	X 8318,4558
@@ -2065,6 +2066,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 13884,9882
 	X 16485,12384
 	X 1945,2127
+#: note: Anforderungsampel
+#: note: am Wochenende ausgeschaltet (immer? gesehen 2014-04-27)
 	F 4927,3147
 	X -3913,13054
 	B -5242,17405
@@ -2616,6 +2619,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: note: Anforderungsampel
 	F 14346,16241
+#: note: Anforderungsampel
+	F 5155,3502
 # 
 ################################################################################
 #: note: Potsdam vvv

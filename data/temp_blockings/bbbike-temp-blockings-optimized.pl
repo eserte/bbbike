@@ -3142,18 +3142,7 @@ userdel	2::temp 12635,12629 12596,12472
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_021675',
-         'until' => 1398722399,
-         'text' => 'Hessische Str.: Baustelle, Zufahrt zur Invalidenstraße gesperrt; Einbahnstraße in der Invalidenstraße, 14.04.2014 bis voraussichtlich 28.04.2014',
-         'from' => 1397340000,
-         'id' => 2313,
-         'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5227.html
-userdel	q4::inwork 8690,13723 8775,13606
-userdel	q4::inwork; 8690,13723 8659,13708 8619,13689
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3382,27 +3371,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140324.1415.395686.html',
-         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
-',
-         'periodic' => 1,
-         'until' => 1398635999,
-         'from' => 1398290400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 25.4.2013 bis 27.4.2013 ',
-         'id' => 2419,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3963,10 +3932,10 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
        {
          'source_id' => 'IM_021595',
          'until' => 1400860800,
-         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Eberhardstr., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
+         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Alfred-Jung-Str., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
          'from' => 1396519200,
          'id' => 2549,
-         'data' => 'userdel	q3::inwork; 15098,12849 15233,12829
+         'data' => 'userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
 ',
          'type' => 'handicap'
        },
