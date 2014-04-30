@@ -3407,7 +3407,7 @@ userdel	q4::inwork 13085,7904 13117,7939 13151,7914
        undef,
        undef,
        {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130419.1210.383671.html',
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140429.1330.396763.html',
          'data' => 'userdel	2::temp 6244,8597 6339,8644 6454,8653
 ',
          'periodic' => 1,
@@ -4024,6 +4024,39 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => '137300309',
+         'until' => 1399759200,
+         'text' => 'Angermünde: K7305: Brückenneubau Brücke über die Welse zw. Welsow und Bruchhagen, 29.07.2013 bis 10.05.2014 ',
+         'from' => 1398798026,
+         'id' => 2564,
+         'data' => 'userdel	2::inwork 48229,74776 48296,74641
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_021803',
+         'data' => 'userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+userdel	2::inwork 8573,12325 8540,12420
+userdel	2::inwork 8303,12216 8538,12245 8610,12254
+userdel	2::inwork 8089,12190 8214,12205
+',
+         'periodic' => 1,
+         'until' => 1398988800,
+         'from' => 1398636000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2014',
+         'id' => 2565,
+         'type' => 'gesperrt'
        }
      
 );

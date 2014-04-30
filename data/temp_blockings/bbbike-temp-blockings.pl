@@ -21332,7 +21332,7 @@ EOF
        recurrences => [['yearly', days => 4, months => 5]],
        text  => 'Schöneberger Mai- und Spargelfest am 10. und 11. Mai 2014 in der Freiherr-vom-Stein-Straße',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130419.1210.383671.html',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140429.1330.396763.html',
        data  => <<EOF,
 userdel	2::temp 6244,8597 6339,8644 6454,8653
 EOF
@@ -22705,6 +22705,29 @@ EOF
 #: last_checked: 2014-04-25
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
+EOF
+     },
+     { from  => 1398798026, # 2014-04-29 21:00
+       until => 1399759200, # 2014-05-11 00:00
+       text  => 'Angermünde: K7305: Brückenneubau Brücke über die Welse zw. Welsow und Bruchhagen, 29.07.2013 bis 10.05.2014 ',
+       type  => 'gesperrt',
+       source_id => '137300309',
+       data  => <<EOF,
+userdel	2::inwork 48229,74776 48296,74641
+EOF
+     },
+     { from  => 1398636000, # 2014-04-28 00:00
+       until => 1398988800, # 2014-05-02 02:00
+       periodic => 1,
+       recurrences => [['yearly', days => 30, months => 4]],
+       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2014',
+       type  => 'gesperrt',
+       source_id => 'IM_021803',
+       data  => <<EOF,
+userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+userdel	2::inwork 8573,12325 8540,12420
+userdel	2::inwork 8303,12216 8538,12245 8610,12254
+userdel	2::inwork 8089,12190 8214,12205
 EOF
      },
     );

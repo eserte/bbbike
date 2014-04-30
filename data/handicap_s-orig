@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # 
-#: last_checked: 2014-04-27 vvv
+#: last_checked: 2014-04-29 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -125,7 +125,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-04-28
+#: last_checked: 2014-04-29
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -1932,6 +1932,9 @@ Virchowstr.: schmale Toreinfahrt, Fußgänger	q3 8548,13577 8503,13553
 Calandrellistr. - Gärtnerstr.: Bordstein	q2 5547,3684 5362,3612
 #: XXX_prog BS (2x), ansonsten q1
 Schalloppstr.: Bordsteine, einige Fußgänger	q3 5132,4704 5190,4755
+#: XXX_prog BS (an der Kniprodestr.), ansonsten trotzdem q4
+(KGA Neu Berlin): einige Fußgänger, eng und kurvig, Bordstein, ggfs. schieben	q4 13633,14904 13699,14801 13704,14780 13759,14723 13759,14706 13776,14675 13765,14665
+(Steengravenweg - KGA Neu Berlin): einige Fußgänger, eng, ggfs. schieben	q4 13733,14813 13704,14780
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
