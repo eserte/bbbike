@@ -31,8 +31,9 @@ Hauptstr.: mäßiges Kopfsteinpflaster, teilweise Betonplatten	Q2+; 14906,10820 15
 Hauptstr.: asphaltierter Radweg	Q0-; 15261,10738 14906,10820
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790
 Karlshorster Str.: mäßiges Kopfsteinpflaster	Q2 15272,10790 15261,10738
-Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1683,9847 1511,10051 1382,10124 1318,10031
-Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1634,9668
+Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
+Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
+Werkstättenweg: Asphalt	Q0 1843,9867 1724,9772 1615,9675
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-spandau/presse/archiv/20061108.1455.50011.html
 Schönwalder Allee: asphaltiert	Q0 -3782,17125 -3807,17226 -3820,17276 -3936,17516 -4134,17743
 Schönwalder Allee: gutes Kopfsteinpflaster, 2-Richtungs-Radweg mit mäßigen bis guten Asphalt	Q1 -4134,17743 -4490,18341 -4898,18801 -5249,19246 -5253,19424 -5209,19643 -5240,19826 -5651,20200 -6099,20718
@@ -501,12 +502,8 @@ Simplonstr.: bis zur Fahrbahnmitte asphaltiert	Q0; 14531,11142 14468,11203
 Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,11037 14752,11041
 Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
 Matkowskystr.: Asphalt	Q0 14531,11142 14513,11075
-#: next_check_id: NEUEBAHNHOF-2014
-#: last_checked: 2014-04-27
-#: XXX wird die andere Fahrtrichtung auch asphaltiert?
-Neue Bahnhofstr.: Kopfsteinpflaster	Q2; 14752,11041 14811,11067 14879,11182
-Neue Bahnhofstr.: Asphalt	Q0; 14879,11182 14811,11067 14752,11041
-Neue Bahnhofstr.: Asphalt	Q0 14879,11182 14918,11249
+# REMOVE (ja) --- #: next_check_id: NEUEBAHNHOF-2014 --- #: last_checked: 2014-04-27 --- #: XXX wird die andere Fahrtrichtung auch asphaltiert? --- Neue Bahnhofstr.: Kopfsteinpflaster	Q2; 14752,11041 14811,11067 14879,11182
+Neue Bahnhofstr.: Asphalt	Q0 14918,11249 14879,11182 14811,11067 14752,11041
 (Klein-Glienicke - Hahn-Meitner-Institut): Waldweg	Q2+ -9313,54 -8629,175
 (Klein-Glienicke - Hahn-Meitner-Institut): Kopfsteinpflaster	Q2 -8629,175 -8387,190
 Schildhornweg: Waldweg, OK	Q1 676,9104 197,9069 30,9105 -122,9213 -360,9193 -850,9181 -1047,9123 -1188,9090 -1279,9093 -1435,9168 -1484,9175 -1588,9194 -2043,9088 -2297,9103 -2672,9220 -2956,9307
@@ -9373,6 +9370,13 @@ Bäkepark: wassergebundene Decke	Q1 5131,4207 5282,4145
 (KGA Neu Berlin): Gehwegplatten	Q1 13633,14904 13699,14801 13704,14780 13759,14723 13759,14706 13776,14675 13765,14665
 (Steengravenweg - KGA Neu Berlin): Gehwegplatten	Q1 13733,14813 13704,14780
 (zum Weingarten): holpriger Asphalt mit Wurzelschäden	Q2 13765,14665 13867,14507
+(Vorfahrt S-Bhf. Messe Süd): Asphalt	Q0 1303,10130 1274,10063
+(zum Drachenberg): teilweise holpriges Verbundsteinpflaster	Q2 -141,10389 -104,10422 -66,10437 -39,10465 -14,10541 -9,10626 -18,10649 -45,10678 -85,10675 -114,10649 -129,10585
+(zum Teufelsberg): Asphalt	Q0 -1,10327 -98,10356 -141,10389 -172,10409 -230,10409 -276,10380 -295,10325 -287,10243 -297,10190
+(zum Teufelsberg): teilweise holpriges Verbundsteinpflaster	Q2+ -297,10190 -393,9972 -574,9832 -615,9831 -641,9882
+(zum Teufelsberg): unbefestigt	Q2 -641,9882 -720,9861
+(zum Teufelsberg): Asphalt	Q1 -720,9861 -769,9856
+(Kronprinzendamm - Halenseestr.): Verbundsteinpflaster/Gehwegplatten	Q0- 2248,10045 2218,10067
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -23468,7 +23472,8 @@ Teufelsseestr.: Kopfsteinpflaster	Q2 438,11236 454,11159
 #: corrected_by: srt (Q0 -> Q0-)
 Teufelsseechaussee: Asphalt mit einigen leichten Schäden	Q0- -977,9425 -938,9394 -886,9447 -817,9533 -697,9598 -471,9647 -324,9701 -232,9768 -153,9854 -103,9934 -75,10017 -57,10103 -1,10327 41,10501 96,10701 194,10846
 Teufelsseechaussee [Auffahrt zum ehem. Horchposten]: Asphalt	Q1 -817,9533 -883,9664 -910,9717 -923,9757 -943,9826 -935,9846 -865,9920 -850,9940 -839,9968 -826,9977 -817,9968 -818,9894 -809,9867 -791,9854 -769,9856
-(Teufelsseechaussee - Waldschulallee): fester Waldweg	Q2 194,10846 355,10740
+#: corrected_by: srt (Q2 -> Q2+)
+(Teufelsseechaussee - Waldschulallee): fester Waldweg	Q2+ 194,10846 355,10740
 (Teufelsseechaussee - Maikäferpfad): fester Waldweg	Q1 556,10122 460,10193 304,10305 41,10501
 Angerburger Allee: Beton	Q0 -1538,11126 -1608,11133 -1885,11392 -1931,11437 -1994,11496 -2109,11598 -2130,11761
 #: corrected_by: srt (Asphalt Q1 -> Beton Q1+)
@@ -23668,7 +23673,7 @@ Reinerzstr.: Kopfsteinpflaster	Q2 2678,8571 2361,8608
 Flinsberger Platz: Kopfsteinpflaster	Q2 2919,8582 2831,8590 2680,8608
 Rintelner Str.: Kopfsteinpflaster	Q2 2977,9220 3087,9219
 Orber Str.: Kopfsteinpflaster	Q2 3093,9306 3087,9219 3073,9020 3055,8769
-Kronprinzendamm: Asphalt	Q0 2259,10083 2255,10042 2296,10028 2353,10021 2445,10009 2551,9995
+Kronprinzendamm: Asphalt	Q0 2245,10092 2243,10058 2248,10045 2296,10028 2353,10021 2445,10009 2551,9995
 Bornimer Str.: Kopfsteinpflaster	Q2 2353,10021 2335,9897 2424,9884 2482,9870
 Nedlitzer Str.: Asphalt	Q0 2445,10009 2424,9884
 Wandalenallee: Asphalt	Q0 736,11206 801,11139 903,11091 1125,11000 1228,10955 1330,10910

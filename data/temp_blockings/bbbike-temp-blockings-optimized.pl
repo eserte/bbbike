@@ -114,34 +114,7 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.myfest36.de/
-userdel	2::temp 11763,10635 11722,10533 11949,10414
-userdel	2::temp 11556,10869 11770,10774 11760,10732 11781,10696 11763,10635 11505,10744 11556,10869 11589,10947 11640,11067
-userdel	2::temp 11958,11045 11897,10887 11841,10747 11824,10708 11781,10696
-userdel	2::temp 11805,10899 11803,10857
-userdel	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11722,10533
-userdel	2::temp 11841,10747 11770,10774 11799,10848
-userdel	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
-userdel auto	3 11258,10682 11275,10723 11253,10778
-userdel auto	3 11253,10778 11275,10723 11258,10682
-',
-         'periodic' => 1,
-         'until' => 1398981599,
-         'from' => 1398852000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'MyFest 2014: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2014',
-         'type' => 'gesperrt',
-         'id' => 45
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2599,7 +2572,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -3452,18 +3425,7 @@ userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 1112
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
-         'until' => 1398895200,
-         'text' => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
-         'from' => 1370210400,
-         'id' => 2435,
-         'data' => '#: source_id: INKO_117520
-#: source_id: IM_021030
-userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.kindertag-berlin.de/',
          'data' => 'userdel	2::temp 20755,5750 20716,6029 20708,6089 20623,6136 20453,6211 20464,6237
@@ -4035,27 +3997,26 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_021803',
-         'data' => 'userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
-userdel	2::inwork 8573,12325 8540,12420
-userdel	2::inwork 8303,12216 8538,12245 8610,12254
-userdel	2::inwork 8089,12190 8214,12205
+         'source_id' => '131100091',
+         'until' => 1401314400,
+         'text' => 'Spreenhagen: K6751 zwischen Kolpin und Markgrafpieske: Arbeiten an Autobahnbrücke, Fahrbahn gesperrt, 26.05.2014 bis 28.05.2014 ',
+         'from' => 1400968800,
+         'id' => 2566,
+         'data' => 'userdel	2::inwork 48940,-9547 49087,-9975
 ',
-         'periodic' => 1,
-         'until' => 1398988800,
-         'from' => 1398636000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2014',
-         'id' => 2565,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5249.html',
+         'until' => 1401246000,
+         'text' => 'AS Schulzendorfer Straße: wegen Bauarbeiten ist der Waldweg komplett gesperrt, vom 04.05.2014 (07.00 Uhr) bis 28.05.2014 (05.00 Uhr) ',
+         'from' => 1399093200,
+         'id' => 2567,
+         'data' => '#: XXX eigentlich falsch positioniert, aber temp_blockings auf fragezeichen-Strecken geht wohl nicht (ungetestet)
+userdel	2::inwork 554,23349 658,23395
+',
          'type' => 'gesperrt'
        }
      

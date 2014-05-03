@@ -647,6 +647,8 @@
 90	X 22375,16836
 53	X 22666,16412
 #: note ^^^
+#: note: Drachenberg
+99	X -129,10585
 # manuell aus hm96.dat ####################################################
 36.1	X 16615,7062
 #: note per Barometer, Referenz ist 16615,7062 vvv
@@ -1379,7 +1381,7 @@
 62.2	X 1286,11834
 # ca.:
 55.6	X 1318,10031
-49.2	X 1382,10124
+49.2	X 1395,10122
 # ca.:
 58.6	X 1049,10568
 # ca.:
@@ -1836,6 +1838,12 @@
 57.9	X 265,10935
 56.4	X 194,10846
 54.3	X 41,10501
+# note: per Barometer und Nachbarpunkt
+54.3	X -1,10327
+# note: per Barometer und Nachbarpunkt
+58	X -141,10389
+# note: per Barometer und Nachbarpunkt
+72	X -297,10190
 63.4	X -1501,10833
 61.4	X -652,11337
 55.5	X -605,11173

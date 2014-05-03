@@ -22730,4 +22730,23 @@ userdel	2::inwork 8303,12216 8538,12245 8610,12254
 userdel	2::inwork 8089,12190 8214,12205
 EOF
      },
+     { from  => 1400968800, # 2014-05-25 00:00
+       until => 1401314400, # 2014-05-29 00:00
+       text  => 'Spreenhagen: K6751 zwischen Kolpin und Markgrafpieske: Arbeiten an Autobahnbrücke, Fahrbahn gesperrt, 26.05.2014 bis 28.05.2014 ',
+       type  => 'gesperrt',
+       source_id => '131100091',
+       data  => <<EOF,
+userdel	2::inwork 48940,-9547 49087,-9975
+EOF
+     },
+     { from  => 1399093200, # 2014-05-03 07:00
+       until => 1401246000, # 2014-05-28 05:00
+       text  => 'AS Schulzendorfer Straße: wegen Bauarbeiten ist der Waldweg komplett gesperrt, vom 04.05.2014 (07.00 Uhr) bis 28.05.2014 (05.00 Uhr) ',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5249.html',
+       data  => <<EOF,
+#: XXX eigentlich falsch positioniert, aber temp_blockings auf fragezeichen-Strecken geht wohl nicht (ungetestet)
+userdel	2::inwork 554,23349 658,23395
+EOF
+     },
     );
