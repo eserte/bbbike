@@ -22064,7 +22064,7 @@ EOF
        data  => <<EOF,
 #: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-04-16
+#: last_checked: 2014-05-06
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
@@ -22702,7 +22702,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-04-25
+#: last_checked: 2014-05-06
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 EOF

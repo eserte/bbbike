@@ -363,8 +363,8 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 #
-#: last_checked: 2014-04-10
-#: next_check: 2014-04-17
+#: last_checked: 2014-05-06
+#: check_frequency: 14d
 Paul-und-Paula-Ufer: wird der Radweg am Ufer oder oberhalb entlang geführt?	?::inwork 15194,10591 15101,10640
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5225.html
@@ -707,7 +707,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2014-04-26
+#: last_checked: 2014-05-06
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1119,7 +1119,8 @@ Martha-Jacob-Platz: Benennung eines Platzes	? 480,11204 454,11159
 # REMOVED (existiert nicht mehr) --- Tiergarten: existiert dieser Weg noch oder ist es nur ein Trampelpfad?	? 8210,11775 8140,11850
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5596
-#: next_check: 2014-05-10
+#: last_checked: 2014-05-06 (Bauarbeiten)
+#: check_frequency: 30d
 Tuchollaplatz: entstehen hier Aufpflasterungen und/oder ein verkehrsberuhigter Bereich?	? 15541,10892 15649,10922
 # 
 zum Unfallkrankenhaus Berlin: Qualität wahrscheinlich Verbundsteinpflaster, q1 wegen Fußgängern, Beleuchtung?	? 21400,12135 21403,12230 21429,12393 21476,12590 21494,12617 21530,12778
@@ -1149,8 +1150,8 @@ Kastanienallee (Potsdam): teilweise Entwidmung für den Kfzverkehr (wo genau? wan
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/54re.pdf/file?y=2013
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4709
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036976863406/976863406/00098274/74-Anlagen/01/DRS0610VK.pdf
-#: last_checked: 2014-01-02
-#: check_frequency: 120d
+#: last_checked: 2014-05-06
+#: check_frequency: 180d
 Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 # REMOVED (realisiert) --- #: XXX wahrscheinlich nach den Bauarbeiten? --- #: osm_watch: way id="4687118" version="11" --- #: last_checked: 2013-12-20 --- Parkaue: wann wird hier die Einbahnstraße ausgeschildert, wird sie tatsächlich für Radfahrer nicht offen sein?	? 15406,12444 15408,12394 15370,12264
@@ -1485,8 +1486,11 @@ Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualitä
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2013 (Grundstücksnummerierungen)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4759
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/___tmp/tmp/45081036146019524/146019524/00061922/22-Anlagen/06/6Bebauungsplan6-22.pdf
+#: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=427621&postcount=91 (Fotos)
 #: XXX fehlt bei Berlin.coords.data: Fünf Morgen|Dahlem|14169
 #: osm_watch: way id="54781804" version="8"
+#: last_checked: 2014-05-02
+#: check_frequency: 120d
 Fünf Morgen: wo wird sich die Straße befinden? Qualität?	? 1338,4927 1437,5015 1483,5161
 # 
 #: XXX_indoor: Steigungsprobleme vvv
