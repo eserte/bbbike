@@ -4018,6 +4018,16 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 userdel	2::inwork 554,23349 658,23395
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_021842',
+         'until' => 1402696799,
+         'text' => 'Damerowstr. (Pankow): Baustelle, zwischen Mendelstr. und Breite Str. stadteinwärts gesperrt, ab 10.05.2014 13 Uhr bis vsl. 13.06.2014 ',
+         'from' => 1399586400,
+         'id' => 2568,
+         'data' => 'userdel	q4::inwork; 11357,18598 11168,18542 11001,18528
+',
+         'type' => 'handicap'
        }
      
 );
