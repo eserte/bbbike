@@ -296,7 +296,6 @@ Dickhardtstr.	1 5817,7223 5824,6974 5826,6871 5811,6833 5752,6751 5604,6709 5533
 Roennebergstr.	1 5533,6753 5357,6932
 Schmitzweg	1 5879,19352 5858,19437 5831,19547 5731,19824
 Barbarossaplatz	1 6731,9559 6748,9524 6727,9497 6694,9537 6692,9546 6731,9559
-Otto-von-Simson-Str.	1 2560,5044 2627,5095 2835,5410
 In den neuen Gärten	1 7111,3432 7318,3306 7359,3349 7409,3331 7472,3308
 Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
@@ -1114,7 +1113,7 @@ Görlitzer Park	1::igndisp 12464,10153 12504,10172
 Wollestr.	1s:q3 -10717,-1227 -10984,-1574
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12297,738
 Am Neuen Garten	1 -12332,585 -12582,127
-# REMOVED (geänderte Straßenführung, östliche Fahrbahn ist in beide Richtungen befahrbar) --- #: XXX: überprüfen! Können Radfahrer vielleicht die linke Straßenseite nutzen? --- Humboldtring/Hans-Marchwitza-Ring: Hochstraße	3nocross -11399,-1339 -11461,-1424 -11540,-1543
+# REMOVED (geänderte Straßenführung, östliche Fahrbahn ist in beide Richtungen befahrbar) --- #: XXX: überprüfen! Können Radfahrer vielleicht die linke Straßenseite nutzen? --- Humboldtring/Hans-Marchwitza-Ring: Hochstraße	3nocross -11395,-1331 -11461,-1424 -11540,-1543
 #: by: Christoph Ewert:
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
 Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14023,-564
@@ -1169,8 +1168,11 @@ Ulrich-von-Hutten-Str.	1 -13456,-3099 -13481,-2956
 Johannes-R.-Becher-Str.	1 -10134,-4981 -10288,-4749
 Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
+Ernst-von-Bergmann-Klinikum	1 -12365,-752 -12360,-772 -12351,-828
+Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -12418,-764
 ###################################################################### 
 # elsewhere in Brandenburg
+Bäckerstr. (Teltow)	1 1101,-553 1067,-699
 Wachtelweg (Ahrensfelde)	1 22212,19404 22239,19349
 Max-Sabersky-Allee (Teltow)	1 2457,-100 2399,-13 2545,92 2704,198 2902,329
 Hauffstr. (Teltow)	1 2763,103 2704,198
@@ -1999,6 +2001,12 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke (Umfahrung auf dem Gehweg)	BNP:5::trailer=15 -12413,-789
+Schranke	BNP:3::trailer=10 -12360,-772
+Schranke, leicht umfahrbar	BNP:2::trailer=4 -12303,-867
+Schranke (enge Umfahrung)	BNP:5:trailer=no -11267,-1832
+#: XXX Schranke nicht vor Ort geprüft
+Schranke	BNP:3::trailer=10 -11162,-1913
 #: note: oder man denkt daran und nimmt den parallel zum Netto-Parkplatz führenden Gehweg
 Schranke	BNP:3::trailer=10 11884,13145
 Drängelgitter	BNP:3::trailer=10 5715,4672
@@ -2613,11 +2621,7 @@ In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 # 
 # REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: priority: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^
 # REMOVED --- #: last_checked: 2013-09-11 --- #: check_frequency: 60d --- Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
-# 
-#: by: http://www.potsdam.de/cms/ziel/996205/DE/?date=20130419
-#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/a6add3f2/NeueRadfuehrungen.pdf
-#: next_check: 2014-06-01
-An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-1339 -11235,-1465 -11137,-1680 -11089,-1730 -10973,-1764
+# REMOVED (wieder passierbar, die Unterführung nur langsam) --- #: by: http://www.potsdam.de/cms/ziel/996205/DE/?date=20130419 --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/a6add3f2/NeueRadfuehrungen.pdf --- #: next_check: 2014-06-01 --- An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11395,-1331 -11235,-1465 -11137,-1680 -11094,-1748 -10973,-1764
 #: last_checked: 2014-03-01
 #: check_frequency: 100d
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
@@ -2664,7 +2668,8 @@ Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 
 #
 #: XXX möglicherweise wird es den Weg in Zukunft gar nicht mehr geben
 #: by: Xenia B.
-#: next_check: 2013-06-01
+#: last_checked: 2014-05-10
+#: check_frequency: 360d
 #: osm_watch: way id="159457523" version="2"
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 

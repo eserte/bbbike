@@ -36,15 +36,16 @@ Verbundsteinpflasterradweg	RW2;RW2 33943,5568 33814,5618 33686,5660 33564,5702 3
 Verbundsteinpflasterradweg	RW1;RW2 33444,5744 33207,5820
 Verbundsteinpflasterradweg	RW2;RW2 33207,5820 32823,5946 32728,5942 32601,5936 32479,5931 32376,5926 32252,5917
 Verbundsteinpflasterradweg	RW2;RW2 33943,5568 33966,5744 33992,5938 34028,6053 34110,6164
-	RW3;RW3 -10429,-1944 -10559,-1901 -10678,-1860 -10702,-1851 -10773,-1828
-	RW3;RW -10773,-1828 -10973,-1764
+	RW3;RW3 -10429,-1944 -10559,-1901 -10678,-1860 -10702,-1851 -10804,-1818
+	RW3;RW -10804,-1818 -10973,-1764
 #: by: Basil (kaffeetrinker)
 #: confirmed_by: srt (zumindest im westlichen Bereich)
 	RW3; -10429,-1944 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 	RW;RW8? 5394,-3053 5627,-2671 5836,-2309 5943,-2117
-enger Zweirichtungsradweg	RW8;RW2 -5736,-3629 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609
+enger Zweirichtungsradweg, asphaltiert, einige Schäden	RW8;RW2 -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087
+asphaltiert	RW8;RW2 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609
 Verbundsteinpflasterradweg, teilweise recht eng	RW2;RW2 3467,560 3417,524 3263,427 3187,380 2968,235 2763,103 2560,-25 2457,-100 2338,-210
-	RW;RW 2338,-210 2215,-328 1974,-440 1677,-582 1453,-746
+	RW;RW 2338,-210 2215,-328 1974,-440 1672,-577 1492,-697 1460,-714 1453,-746
 Heinrich-Mann-Allee	RW2;RW1 -12431,-2096 -12493,-1896
 #: XXX_indoor: es gibt sowohl einen Radweg auf der westlichen Seite als auch den Zweirichtungsradweg auf der Extrabrücke --- evtl. beide getrennt zeichnen?
 Lange Brücke: Radweg auf der westlichen Seite sowie Zweirichtungsradweg auf der östlichen Seite	RW2;RW2 -12493,-1896 -12567,-1817 -12655,-1714 -12730,-1681 -12758,-1654
@@ -117,24 +118,24 @@ asphaltiert	RW;RW -4642,25672 -4929,25719 -5890,25875 -6593,25703 -6943,25831
 #: add_fragezeichen: wie ist die Qualität des Radwegs?
 	RW8?;RW -7533,24138 -7599,23946 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 asphaltiert	RW8?;RW -10377,20973 -10576,19951 -10581,19871 -10000,18629
-#: XXX sind hier nur Suggestivstreifen?
-	RW4?;RW4? -11114,-2104 -10983,-2088 -10772,-2153 -10673,-2128
+#: XXX sind hier auch nur Suggestivstreifen?
+	RW4?;RW4? -11114,-2104 -10983,-2088
+	RW3;RW3 -10983,-2088 -10772,-2153 -10673,-2128
 Radweg auf Gehweg	RW2;RW2 -12213,-2131 -12093,-2156
 	RW4; -12213,-2131 -12431,-2096
 Radweg auf Gehweg	RW2;RW2 -12093,-2156 -11992,-2178 -11939,-2190 -11834,-2213 -11778,-2225 -11694,-2245
 Radweg auf Gehweg	RW;RW -11694,-2245 -11597,-2203 -11507,-2130 -11114,-2104
-#: add_fragezeichen: Gibt es in der Großbeerenstr. einen Radweg oder einen Radstreifen?
-Radstreifen	RW4?;RW4? -10673,-2128 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
-#: XXX: genauer spezifizieren (Radwege unterschiedlicher Form und Qualtität):
-	RW;RW -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8829,-2741 -8500,-2856 -8417,-2867
-#: XXX zumindest hier scheint es Radstreifen zu geben
-#: by: http://www.potsdam.de/cms/ziel/996205/DE/
-	RW;RW -8417,-2867 -8361,-2875 -8283,-2917 -8137,-2997 -8005,-3056 -7878,-3090 -7774,-3091 -7668,-3092 -7577,-3093 -7497,-3096
-#: XXX: genauer spezifizieren (Radwege unterschiedlicher Form und Qualtität):
-	RW;RW -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151
-Seitenstreifen, als Radstreifen benutzbar	RW3?;RW3? -6277,-3348 -6553,-3235 -6810,-3151
-#: by: osm
-	RW;RW -6277,-3348 -5736,-3629
+gemeinsamer Rad- und Gehweg	RW2; -10327,-2262 -10350,-2358
+	RW4;RW4 -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
+	RW3;RW3 -10327,-2262 -10090,-2334 -10078,-2339 -9982,-2371 -9840,-2413 -9788,-2430 -9759,-2438 -9723,-2451 -9692,-2462 -9534,-2515 -9462,-2540 -9254,-2605 -9118,-2649 -9110,-2651 -9075,-2664 -8862,-2729 -8829,-2741
+Verbundsteinpflaster	RW2; -8829,-2741 -8500,-2856
+	RW3; -8500,-2856 -8829,-2741
+	RW4?;RW2 -8500,-2856 -8429,-2860 -8412,-2863
+	RW4?;RW3 -8412,-2863 -8361,-2875 -8283,-2917 -8137,-2997 -8005,-3056 -7878,-3090
+	RW4?;RW4? -7878,-3090 -7774,-3091 -7668,-3092 -7577,-3093
+	RW4?;RW2 -7577,-3093 -7497,-3096
+	RW;RW2 -7497,-3096 -7487,-3097 -7060,-3124 -6810,-3151 -6748,-3159
+asphaltiert	RW8;RW2 -6748,-3159 -6696,-3174 -6553,-3235 -6277,-3348 -5788,-3583 -5662,-3583
 #: XXX Seite des Zweirichtungsradweges?
 Zweirichtungsradweg, Verbundsteinpflaster	RW;RW -3368,-4430 -2566,-4599
 #: note: von rjoop bestätigt:
@@ -202,7 +203,7 @@ Radweg auf Gehweg, Kleinsteinpflaster	RW2; -12872,-565 -12877,-655
 	RW3;RW3 -12571,-581 -12545,-698 -12531,-781 -12529,-789 -12515,-889 -12512,-911 -12575,-1031
 	RW1; -12877,-655 -13044,-709 -13064,-715 -13137,-737 -13231,-763 -13433,-831 -13468,-847 -13625,-902
 asphaltierter Geh- und Radweg auf Grünstreifen	RW1; -13625,-902 -13468,-847 -13433,-831 -13231,-763 -13137,-737 -13064,-715 -13044,-709 -12877,-655
-	RW1; -12529,-789 -12227,-724
+# REMOVED (mittlerweile aufgehoben) ---	RW1; -12529,-789 -12418,-764 -12365,-752 -12227,-724
 sehr schlechter Radweg	RW2; -12306,-496 -12266,-613
 sehr schlechter Radweg	RW1; -12266,-613 -12235,-713 -12227,-724
 gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW2 -12045,-757 -12227,-724
@@ -212,8 +213,8 @@ gemeinsamer Rad- und Gehweg, teilweise sehr eng	RW2;RW2 -13727,-1300 -13879,-144
 #: by: Lars Krüger:
 teilweise Radweg, teilweise Radspur	RW2;RW2 -14859,-2384 -15060,-2626 -15276,-2868 -15431,-3043 -15501,-3122 -15669,-3311
 Radweg	RW; -14115,-1678 -14143,-1662
-Radweg auf Gehweg	RW;RW 1460,-372 1473,-420 1457,-470 1378,-676 1346,-762
-Verbundsteinpflasterradweg, teilweise Zweirichtungsradweg, oft wechselnde Seite	RW;RW 595,-310 525,-347 240,-519 -395,-920 -882,-1220
+Verbundsteinpflasterradweg auf Gehweg	RW2;RW2 1464,-367 1473,-420 1464,-470 1388,-685
+Verbundsteinpflasterradweg, teilweise Zweirichtungsradweg, oft wechselnde Seite	RW;RW 818,-298 595,-310 525,-347 240,-519 -395,-920 -650,-1077 -882,-1220
 	RW;RW -1436,-887 -1378,-1022 -1348,-1098 -1503,-1328 -1573,-1477
 Radweg auf Gehweg	RW2;RW2 -14909,-1818 -14733,-1812 -14612,-1809
 Verbundsteinpflaster	RW;RW -840,-185 -775,-304 -543,-691 -513,-736
@@ -256,7 +257,7 @@ Gehweg für Radfahrer frei	RW1; -15044,-1807 -15275,-1791 -15757,-1758
 Radweg	RW2; -13039,-127 -13111,-136
 Radspur	RW4; -13111,-136 -13039,-127
 	RW1;RW1 -8417,-1975 -8415,-1928 -8429,-1805
-mäßig betonierte Radwege	RW2;RW1 -7878,-3090 -7971,-3373 -8030,-3538 -8032,-3710 -8034,-3922 -8038,-4093
+mäßig betonierte Radwege	RW2;RW1 -7878,-3090 -7923,-3228 -7971,-3373 -8030,-3538 -8032,-3710 -8034,-3922 -8038,-4093
 	RW4; -8038,-4093 -8040,-4148 -7976,-4476
 asphaltiert	RW2; -7976,-4476 -8040,-4148 -8038,-4093
 #: note: Dresden vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -430,16 +431,18 @@ asphaltiert	RW8;RW2 25488,54151 25401,53587
 asphaltiert	RW2;RW8 25401,53587 25395,53549 25347,53338
 Suggestivstreifen	RW3;RW3 22868,30412 22904,30359
 	RW;RW 2246,31162 2219,31171 2173,31187 2126,31207 2042,31236 1931,31275 1918,31279 1762,31318 1737,31303
-	RW4;RW2 1346,-762 1212,-706 925,-684 741,-584 586,-627 465,-662 348,-743
-	RW4;RW4 348,-743 -71,-1037
-gemeinsamer Rad- und Gehweg	RW2;RW2 -71,-1037 -248,-1160 -705,-1564 -1143,-1759 -1303,-1758 -1453,-1715 -1668,-1709 -2073,-1525 -2276,-1621 -2477,-1717 -2831,-1956 -2984,-2184 -3521,-2552 -3650,-2609
+	RW4?;RW 1329,-753 1235,-714
+	RW4;RW2 709,-582 590,-618 465,-662 351,-738
+	RW4;RW4 351,-738 212,-834 154,-876 -39,-1014 -71,-1037
+	RW2;RW2 -71,-1037 -93,-1052 -248,-1160 -556,-1402 -624,-1468
+	RW;RW -624,-1468 -671,-1507 -713,-1542 -866,-1615 -1196,-1771 -1307,-1764 -1453,-1715 -1661,-1714 -1781,-1676 -1952,-1565 -2035,-1540 -2117,-1545 -2184,-1575 -2267,-1612 -2492,-1736 -2831,-1956 -2984,-2184 -3105,-2267 -3252,-2368 -3521,-2552 -3650,-2609
 Gehweg für Radfahrer frei	RW1; 4958,24418 5019,24484 5168,24614
 Gehweg für Radfahrer frei	RW1;RW1 5212,24652 5265,24642 5443,24589 5608,24610
 	RW3;RW3 -13199,1691 -13133,1698
 asphaltiert	RW2;RW8 58357,111700 60639,112544 61502,112547 61648,112574
 asphaltiert	RW2;RW8 69990,78244 70010,78347
 asphaltiert	RW1;RW9 70010,78347 70001,78510
-	RW2;RW1 -11822,-1874 -12110,-1862 -12247,-1858 -12420,-1853 -12493,-1896
+	RW2;RW1 -11822,-1874 -12110,-1862 -12210,-1858 -12247,-1858 -12457,-1857 -12493,-1896
 mäßiger Asphalt	RW2; -13375,2950 -13929,2548
 	RW2;RW2 60053,36267 59990,36267 59937,36197 59876,36115 59806,35893
 	RW2;RW2 59462,34809 59474,34284
@@ -732,6 +735,7 @@ Verbundsteinpflaster	RW8;RW2 12395,33537 12463,33159
 asphaltiert	RW8;RW2 12463,33159 12473,33109 12635,32221 12560,31435
 Verbundsteinpflaster	RW8;RW2 12560,31435 12466,30452 12362,29651 12352,29576
 mäßiges Verbundsteinpflaster	RW2;RW8 13345,27187 13378,27325
+	RW2;RW 1464,-470 1338,-426 1134,-370 818,-298
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -800,7 +804,8 @@ gemeinsamer Rad- und Gehweg, Verbundsteinpflaster/Beton	RW2;RW8 26771,10496 2690
 #: by ^^^
 # 
 #: by: Janes Huff:
-freigegebener Gehweg	RW; -9723,-2451 -9963,-2253
+#: confirmed_by: srt
+Gehweg für Radfahrer frei	RW1; -9723,-2451 -9754,-2424 -9963,-2253
 # 
 #: by: Message-ID: <Xns98A0C49FD8D3E4usenet@krickstadt.de>
 straßenbegleitende Radwege	RW;RW -11253,13707 -11635,13818 -12145,13943 -13019,13861 -13330,13857 -14057,13830 -16015,13705 -16767,13639 -16982,13681 -17175,13749 -18726,14303 -18976,14381 -19527,14652
@@ -903,4 +908,4 @@ asphaltierter Gehweg	RW1;RW9 11338,-3945 11671,-3400
 #: by ^^^
 #: by: Jörg (sirisko)
 #: note: "in den Kreisverkehren allerdings recht weit von der Kreisfahrbahn abgesetzt (Aufpassen: Vorrang wird von Kraftfahrern oft nicht erkannt)"
-sehr gute Verbundsteinpflasterradwege	RW2;RW2 1684,-927 1722,-773 1713,-652 1677,-582 1612,-505 1457,-470
+sehr gute Verbundsteinpflasterradwege	RW2;RW2 1684,-927 1722,-773 1713,-652 1672,-577 1612,-505 1464,-470

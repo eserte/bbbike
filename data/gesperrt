@@ -247,7 +247,6 @@ Dickhardtstr.	1 5817,7223 5824,6974 5826,6871 5811,6833 5752,6751 5604,6709 5533
 Roennebergstr.	1 5533,6753 5357,6932
 Schmitzweg	1 5879,19352 5858,19437 5831,19547 5731,19824
 Barbarossaplatz	1 6731,9559 6748,9524 6727,9497 6694,9537 6692,9546 6731,9559
-Otto-von-Simson-Str.	1 2560,5044 2627,5095 2835,5410
 In den neuen Gärten	1 7111,3432 7318,3306 7359,3349 7409,3331 7472,3308
 Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
@@ -867,6 +866,9 @@ Ulrich-von-Hutten-Str.	1 -13456,-3099 -13481,-2956
 Johannes-R.-Becher-Str.	1 -10134,-4981 -10288,-4749
 Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
+Ernst-von-Bergmann-Klinikum	1 -12365,-752 -12360,-772 -12351,-828
+Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -12418,-764
+Bäckerstr. (Teltow)	1 1101,-553 1067,-699
 Wachtelweg (Ahrensfelde)	1 22212,19404 22239,19349
 Max-Sabersky-Allee (Teltow)	1 2457,-100 2399,-13 2545,92 2704,198 2902,329
 Hauffstr. (Teltow)	1 2763,103 2704,198
@@ -2311,6 +2313,11 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke (Umfahrung auf dem Gehweg)	BNP:5:-11:trailer=15 -12413,-789
+Schranke	BNP:3:-189:trailer=10 -12360,-772
+Schranke, leicht umfahrbar	BNP:2:-234:trailer=4 -12303,-867
+Schranke (enge Umfahrung)	BNP:5:-143 -11267,-1832
+Schranke	BNP:3:-1:trailer=10 -11162,-1913
 Schranke	BNP:3:-56:trailer=10 11884,13145
 Drängelgitter	BNP:3:-71:trailer=10 5715,4672
 Schranke	BNP:2:-170:trailer=4 16541,12071
@@ -2682,7 +2689,6 @@ Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das Überqueren nicht mö
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
-An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11399,-1339 -11235,-1465 -11137,-1680 -11089,-1730 -10973,-1764
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304

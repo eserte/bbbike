@@ -256,7 +256,7 @@ Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,
 # 
 ### Neukˆlln ###
 # 
-#: last_checked: 2014-04-26
+#: last_checked: 2014-05-10
 #: check_frequency: 30d
 Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen ¸ber Gehweg	q3::inwork 12088,9775 12250,9691
 # 
@@ -1379,7 +1379,7 @@ Melissenweg: Bordsteine	q2 16003,3652 16041,3718
 #: XXX_prog BS (im Norden, im S¸den kann es umfahren werden)
 Simsonweg: Fuﬂg‰nger, Bordsteine	q2 8354,12416 8546,12279
 Varian-Fry-Str.: Fuﬂg‰nger	q2 8374,11479 8389,11378
-Georg-Steger-Weg und Verl‰ngerung: Fuﬂg‰nger	q2 1509,2246 1603,2615 1631,2722 1647,2759 1634,2914
+Georg-Steger-Weg und Verl‰ngerung: Fuﬂg‰nger	q2 1509,2246 1603,2615 1635,2720 1652,2770 1641,2914
 #: XXX_prog BS (am Sackgassenhammer)
 Am Schweizerhof: Bordstein	q2 1177,1940 1191,1944
 Werner-Sylten-Weg: Fuﬂg‰nger	q1 1016,737 1022,738 1129,763 1267,789
@@ -1501,7 +1501,7 @@ Hegauer Weg: Rampe	q4 -19,2469 -22,2484
 Hoffbauerpfad: gemeinsamer Rad- und Gehweg, Bordsteine	q2 550,1358 464,1246 422,1191
 Hoffbauerpfad: gemeinsamer Rad- und Gehweg	q1 214,969 333,1104
 #: XXX_prog BS zumindest am Ramsteinweg
-(Ramsteinweg - AndrÈezeile): gemeinsamer Rad- und Gehweg, Bordsteine	q2 755,632 781,693
+(Ramsteinweg - AndrÈezeile): gemeinsamer Rad- und Gehweg, Bordsteine	q2 731,641 770,659 800,693
 (Feldspatweg - Parksiedlung Spruch): eng	q2 10907,1651 10895,1698 10904,1733 10968,1753
 (Bleichrˆderpark): Fuﬂg‰nger	q1 10545,18143 10487,18270
 Rampe	q2 10503,19371 10489,19406
@@ -1939,6 +1939,9 @@ Schalloppstr.: Bordsteine, einige Fuﬂg‰nger	q3 5132,4704 5190,4755
 (zum Teufelsberg): einige Fuﬂg‰nger, Gef‰lle	q1; -641,9882 -615,9831 -574,9832 -393,9972 -297,10190 -287,10243 -295,10325 -276,10380 -230,10409 -172,10409 -141,10389
 (zum Teufelsberg): einige Fuﬂg‰nger, eng	q1 -641,9882 -720,9861 -769,9856
 Alfred-Scholz-Platz: Fuﬂg‰nger	q2 12779,8188 12753,8187
+Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3554
+Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2249 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
+(Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 413,757 332,819 247,822
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -1975,7 +1978,7 @@ S¸ltstr.: enge Straﬂe, beidseitiges Parken	q1 12094,15598 12168,15731 12247,1586
 Junker-Jˆrg-Str.: eng, parkende Autos	q1 18451,8823 18471,8957 18511,9185 18545,9395
 #: by: Thomas (nawrot):
 #: confirmed_by: srt
-Windsteiner Weg: Bodenschwellen	q1 501,493 284,470
+Windsteiner Weg: Bodenschwellen	q1 517,491 284,470
 #: by: Fodor (sutyi):
 Liviusstr.: eng, parkende Autos	q1 10743,4515 10499,4542 10453,4518
 #: by: anonymous vvv
@@ -2172,7 +2175,7 @@ Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8887,5564
 (Livl‰ndische Str. - Schoelerpark): Fuﬂg‰nger, f¸r Radfahrer freigegeben	q1 5170,8449 5212,8602
 #: by: Katharina Hoffmann:
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 821,2714 1017,2823 1126,2885 1262,2975
-(Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2271,3571
+(Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2228,3554
 #: by: Carroll Haak:
 Uferpromenade: Restaurantbetrieb	q3 -1659,18104 -1659,18076
 #: by: Gabi Sieber:
@@ -2472,7 +2475,7 @@ Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16329,24865 16304,24825
 #: by: Karsten [AM]
 Scherenbergstr.: enge Straﬂe	q2 11307,15995 11358,16067 11404,16140 11467,16238 11542,16384
 #: by: Peter Friede [AM]
-Lupsteiner Weg: eng durch parkende KfZ	q1 264,227 489,296 521,332 521,360 501,493 489,587 428,656 393,704 400,765 460,812 739,885
+Lupsteiner Weg: eng durch parkende KfZ	q1 264,227 489,296 521,332 521,360 517,491 489,587 428,656 393,704 413,757 460,812 739,885
 #: by: Christine Ziegler [AM]
 Gertraudstr.: enge Straﬂe	q2 202,1688 173,1715 79,1992
 #: by: christel lehmann [AM] vvv

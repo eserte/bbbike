@@ -1985,7 +1985,7 @@ EOF
        text  => 'L 76; (Mahlower Str.); OL Teltow, zw. Ruhlsdorfer u. A.-Saefkow-Str. Kanal- und Straßenbau Vollsperrung 02.05.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 1453,-746 1550,-761 1684,-927
+userdel	q4 1453,-746 1495,-747 1550,-761 1684,-927
 userdel	q4 1916,-1090 1684,-927
 EOF
      },
@@ -3201,12 +3201,12 @@ EOF
        data  => <<EOF,
 userdel	2 -12306,-496 -12266,-613
 userdel	2 -12529,-789 -12515,-889 -12512,-911 -12575,-1031
-userdel	2 -12529,-789 -12227,-724
+userdel	2 -12529,-789 -12418,-764 -12365,-752 -12227,-724
 userdel	2 -12529,-789 -12677,-823
 userdel	2 -12045,-757 -12168,-965
 userdel	2 -12168,-965 -12248,-1107
 userdel	2 -12168,-965 -12100,-962
-userdel	2 -11910,-945 -12100,-962
+userdel	2 -11919,-943 -12100,-962
 userdel	2 -12285,-1174 -12248,-1107
 userdel	2 -12285,-1174 -12359,-1096 -12488,-999
 userdel	2 -12488,-999 -12553,-1025
@@ -3344,7 +3344,7 @@ EOF
        text  => 'Stahnsdorf, Lindenstraße, Baustelle bis 30.04.2006, Der Verkehr wird an der Baustelle durch eine Lichtzeichenanlage halbseitig vorbeigeführt. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 -1668,-1709 -1715,-1767 -1921,-1931 -2049,-2165
+userdel	1 -1661,-1714 -1715,-1767 -1921,-1931 -2049,-2165
 EOF
      },
      { from  => $isodate2epoch->("2013-11-24 00:00:00"), # 1353798000, # 2012-11-25 00:00 # 1321743600, # 2011-11-20 00:00 # PERIODISCH!
@@ -21683,7 +21683,7 @@ EOF
        source_id => 'INKO_119024',
        data  => <<EOF,
 #: by: http://www.teltow.de/nachricht/artikel/knesebeckbruecke-sperrung-wegen-bauarbeiten.html
-userdel	q4::inwork 1460,-372 1453,-306
+userdel	q4::inwork 1464,-367 1453,-306
 EOF
      },
      { from  => 1372914000, # 2013-07-04 07:00
@@ -21976,10 +21976,10 @@ EOF
        text  => 'Weg im Cheruskerpark: Bauarbeiten, Durchfahrt nicht möglich',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: CHERUSKERPARK-2014
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-04-26
-#: check_frequency: 14d
+#: last_checked: 2014-05-10
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 EOF
@@ -22511,8 +22511,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-03-01
-userdel	2::inwork -12335,-1725 -12420,-1853
+#: last_checked: 2014-05-11
+userdel	2::inwork -12363,-1742 -12457,-1857
 EOF
      },
      { from  => undef, # 
@@ -22521,7 +22521,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-03-01
+#: last_checked: 2014-05-11
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 EOF
      },
@@ -22756,6 +22756,14 @@ EOF
        source_id => 'IM_021842',
        data  => <<EOF,
 userdel	q4::inwork; 11357,18598 11168,18542 11001,18528
+EOF
+     },
+     { from  => $isodate2epoch->("2013-09-30 00:00:00"),
+       until => $isodate2epoch->("2015-03-01 00:00:00"),
+       text  => 'Potsdamer Str. in Teltow: Baustelle, Einbahnstraße offen in Richtung Osten, voraussichtlich bis März 2015',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 1329,-753 1235,-714 1212,-706 1067,-699 950,-680 791,-598 758,-582 723,-580 709,-582
 EOF
      },
     );

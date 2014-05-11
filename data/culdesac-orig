@@ -953,10 +953,14 @@ Sackgassenende, Ulmenhof	culdesac 32090,3599
 Eingang zum Sowjetischen Ehrenmal	culdesac_pseudo 8319,19299 8258,19353
 Sackgassenende, Zugang zum S-Bhf. Lankwitz	culdesac_pseudo 6303,3579
 	culdesac_pseudo 355,10740
+	culdesac 2031,3004
+	culdesac_pseudo -7178,-3027
+	culdesac -7731,-2808
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 581,670
 	culdesac_pseudo 7086,20597
 	culdesac_pseudo 32222,3680
 	culdesac_pseudo 16922,15977
@@ -991,7 +995,7 @@ Sackgassenende, Zugang zum S-Bhf. Lankwitz	culdesac_pseudo 6303,3579
 	culdesac_pseudo 5965,9131
 	culdesac_pseudo 7226,7622
 	culdesac_pseudo 6540,8421
-	culdesac_pseudo 6559,8027
+	culdesac_pseudo 6559,8033
 	culdesac_pseudo 6386,8085
 	culdesac_pseudo 5608,7684
 	culdesac_pseudo 5491,7836

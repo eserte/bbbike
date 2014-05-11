@@ -3379,26 +3379,7 @@ userdel	q4::inwork 13085,7904 13117,7939 13151,7914
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140429.1330.396763.html',
-         'data' => 'userdel	2::temp 6244,8597 6339,8644 6454,8653
-',
-         'periodic' => 1,
-         'until' => 1399831200,
-         'from' => 1399626000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Schöneberger Mai- und Spargelfest am 10. und 11. Mai 2014 in der Freiherr-vom-Stein-Straße',
-         'id' => 2428,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3667,10 +3648,10 @@ userdel	2::night 17671,13132 17684,13133
          'text' => 'Weg im Cheruskerpark: Bauarbeiten, Durchfahrt nicht möglich',
          'from' => undef,
          'id' => 2489,
-         'data' => '#: XXX bis wann gehen die Bauarbeiten?
+         'data' => '#: next_check_id: CHERUSKERPARK-2014
+#: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-04-26
-#: check_frequency: 14d
+#: last_checked: 2014-05-10
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
@@ -3809,26 +3790,7 @@ userdel	2::inwork 2219,11304 2116,11288
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/bezirk/festdernationen.html',
-         'data' => 'userdel	2::temp 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
-',
-         'periodic' => 1,
-         'until' => 1399838400,
-         'from' => 1399554000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 9.5.2014 15 Uhr bis 11.5.2014 22 Uhr',
-         'id' => 2533,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3861,8 +3823,8 @@ userdel	2::inwork 2219,11304 2116,11288
          'from' => undef,
          'id' => 2543,
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-03-01
-userdel	2::inwork -12335,-1725 -12420,-1853
+#: last_checked: 2014-05-11
+userdel	2::inwork -12363,-1742 -12457,-1857
 ',
          'type' => 'gesperrt'
        },
@@ -3872,7 +3834,7 @@ userdel	2::inwork -12335,-1725 -12420,-1853
          'from' => undef,
          'id' => 2544,
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-03-01
+#: last_checked: 2014-05-11
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 ',
          'type' => 'gesperrt'
@@ -3987,16 +3949,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => '137300309',
-         'until' => 1399759200,
-         'text' => 'Angermünde: K7305: Brückenneubau Brücke über die Welse zw. Welsow und Bruchhagen, 29.07.2013 bis 10.05.2014 ',
-         'from' => 1398798026,
-         'id' => 2564,
-         'data' => 'userdel	2::inwork 48229,74776 48296,74641
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => '131100091',
@@ -4026,6 +3979,15 @@ userdel	2::inwork 554,23349 658,23395
          'from' => 1399586400,
          'id' => 2568,
          'data' => 'userdel	q4::inwork; 11357,18598 11168,18542 11001,18528
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1425164400,
+         'text' => 'Potsdamer Str. in Teltow: Baustelle, Einbahnstraße offen in Richtung Osten, voraussichtlich bis März 2015',
+         'from' => 1380492000,
+         'id' => 2569,
+         'data' => '	q4::inwork; 1329,-753 1235,-714 1212,-706 1067,-699 950,-680 791,-598 758,-582 723,-580 709,-582
 ',
          'type' => 'handicap'
        }
