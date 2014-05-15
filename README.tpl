@@ -65,7 +65,12 @@ BBBike from source.
 [%- END -%]
 
 
-=head1 INSTALLATION
+=head1 
+[%- IF lang=="DE" -%]
+INSTALLATION AUS DEN QUELLDATEIEN
+[%- ELSE -%]
+INSTALLATION FROM SOURCE
+[%- END -%]
 
 
 =head2 
