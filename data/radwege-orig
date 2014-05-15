@@ -954,7 +954,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX später beide Richtungen wieder herstellen
 #: source_id: IM_018997
 #: osm_watch: way id="24913297" version="33"
-#: last_checked: 2014-01-04
+#: last_checked: 2014-05-14
 #: next_check: 2014-12-31
 Busspur ist immer gültig	RW5; 9141,12320 9358,12351 9475,12365
 # 
@@ -1547,8 +1547,9 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 	RW3; 7759,13246 7567,13143
 #: next_check_id: INVALIDENSTRMOABIT-2014
 #: XXX evtl. nur während der Bauarbeiten?
-#: last_checked: 2014-03-07
-#: next_check: 2014-04-30
+#: source_id: IM_021436
+#: last_checked: 2014-05-14
+#: next_check: 2014-05-31
 existierende Radspur ist aufgehoben	RW0; 7567,13143 7440,13073 7415,13060 7346,13022
 	RW3; 7346,13022 7415,13060
 # REMOVED (aufgehoben) --- #: XXX wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2013-12-27 --- provisorischer Radweg, benutzungspflichtige Radspur auf den letzten 10 Metern	RW1; 7415,13060 7440,13073 7567,13143 7759,13246
@@ -1556,11 +1557,13 @@ existierende Radspur ist aufgehoben	RW0; 7567,13143 7440,13073 7415,13060 7346,1
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html
 #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder
 #: XXX kommen die Radwegschilder noch?
-#: last_checked: 2014-04-01
+#: last_checked: 2014-05-14
 	RW3; 8098,13419 8293,13519
 	RW2; 8293,13519 8337,13541 8362,13554
 	RW3; 8362,13554 8450,13599
-	RW3; 8450,13599 8362,13554 8337,13541 8293,13519 8098,13419
+	RW3; 8450,13599 8362,13554 8337,13541
+	RW2; 8337,13541 8293,13519
+	RW3; 8293,13519 8098,13419
 	RW2; 8450,13599 8574,13666
 	RW2; 8842,13798 8935,13844
 # 
@@ -4439,3 +4442,4 @@ asphaltiert	RW1; 15066,14579 15174,14638
 Gehwegplatten und Asphalt im Wechsel	RW1; 15174,14638 15272,14691
 	RW6;RW6 12805,8194 12779,8188 12797,8168
 	RW3; 1368,-1 1345,184
+	RW6;RW6 13410,11447 13427,11431 13473,11456

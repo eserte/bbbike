@@ -22750,8 +22750,8 @@ userdel	2::inwork 554,23349 658,23395
 EOF
      },
      { from  => 1399586400, # 2014-05-09 00:00
-       until => 1402696799, # 2014-06-13 23:59
-       text  => 'Damerowstr. (Pankow): Baustelle, zwischen Mendelstr. und Breite Str. stadteinwärts gesperrt, ab 10.05.2014 13 Uhr bis vsl. 13.06.2014 ',
+       until => $isodate2epoch->("2014-06-13 17:00:00"), # 1402696799, # 2014-06-13 23:59
+       text  => 'Damerowstr. (Pankow): Baustelle, zwischen Mendelstr. und Breite Str. stadteinwärts gesperrt, ab 10.05.2014 13 Uhr bis 13.06.2014 17 Uhr',
        type  => 'handicap',
        source_id => 'IM_021842',
        data  => <<EOF,

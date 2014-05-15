@@ -2830,7 +2830,8 @@ Hildburghauser Str.: Kopfsteinpflaster	Q2 4514,1402 4453,1408
 #: note: von der S-Bahn aus gesehen:
 Fürstenstr.: Kopfsteinpflaster	Q2 4355,1043 4250,763
 (Aldi/Getränke-Hoffmann-Parkplatz): Verbundsteinpflaster	Q1+ 13208,11658 13186,11692 13173,11788
-Helsingforser Str.: Kopfsteinpflaster	Q2 13427,11431 13270,11581 13208,11658
+Helsingforser Str.: Betonpflaster	Q0- 13427,11431 13410,11447
+Helsingforser Str.: Kopfsteinpflaster	Q2 13410,11447 13324,11529 13270,11581 13208,11658
 Helsingforser Str.: Betonpflaster	Q0- 13427,11431 13496,11384
 Kleine Markusstr. - Krautstr.: Beton	Q1 11937,12127 11958,12112 12021,12066
 Kleine Markusstr. - Krautstr.: Beton	Q1 12002,12008 11962,12034 11958,12112
@@ -7274,10 +7275,11 @@ Neue Blumenstr.: Beton mit einigen Schden	Q1+ 11607,12412 11709,12601
 Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
 (Rampe Wriezener Park): Beton	Q0 13427,11431 13421,11423 13459,11388
 (Wriezener Park): Asphalt	Q0 13513,11351 13459,11388 13417,11416 13407,11416 13323,11497
-(Wriezener Park): Beton	Q0- 13323,11497 13261,11572
+(Wriezener Park): Beton	Q0- 13323,11497 13308,11515 13261,11572
 (Wriezener Park): Beton	Q1 13261,11572 13239,11567
 (Wriezener Park, Eingang Pillauer Str.): Beton	Q1 13261,11572 13270,11581
 (Wriezener Park): Asphalt	Q0 13239,11567 13175,11649
+(Helsingforser Str. - Wriezener Park): Beton	Q1 13324,11529 13308,11515
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 12986,11699 13002,11705 13042,11749
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q3+ 13042,11749 13175,11649
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 13175,11649 13208,11658
@@ -9270,9 +9272,10 @@ Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/invalidenstr/de/bau.shtml
 #: XXX ab April 2014 wird hier neu gebaut
-#: last_checked: 2014-03-07
-#: next_check: 2014-04-30
-Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7567,13143 7440,13073 7415,13060 7346,13022
+#: last_checked: 2014-05-14
+#: next_check: 2014-05-31
+# REMOVED (hier fährt man nur auf neuer Fahrbahn) Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7567,13143 7440,13073 7415,13060
+Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7415,13060 7346,13022
 (Möllendorffstr. - Paul-Junius-Str.): Verbundsteinpflaster	Q1+ 15513,13539 15470,13509
 (Möllendorffstr. - Paul-Junius-Str.): Asphalt mit einigen Schäden	Q0- 15470,13509 15370,13508
 (Fanny-Zobel-Str. - Uferweg): Verbundsteinpflaster	Q1 14049,10164 14116,10149
@@ -9380,6 +9383,7 @@ Bäkepark: wassergebundene Decke	Q1 5131,4207 5282,4145
 Fabeckstr.: teilweise nur mäßige Radwege, Fahrbahn mit einigen Aufpflasterungen	Q1+ 2746,5537 2785,5482 2835,5410 2913,5294 3072,5062 3187,4893
 (Ramsteinweg - Sachtlebenstr.): Gehwegplatten	Q0- 581,670 509,684 497,710 413,757 332,819 247,822
 Teltower Damm: Kopfsteinpflaster	Q2 1368,-1 1375,-27
+Anklamer Str.: Asphalt, einige Aufpflasterungen	Q0- 9938,14356 9800,14306 9627,14229
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 

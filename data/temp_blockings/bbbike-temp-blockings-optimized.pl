@@ -1075,25 +1075,7 @@ userdel	2::temp 6945,9142 7044,9163
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-',
-         'periodic' => 1,
-         'until' => 1399845599,
-         'from' => 1399586400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (10. und 11. Mai 2014)',
-         'type' => 'gesperrt',
-         'id' => 964
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3974,8 +3956,8 @@ userdel	2::inwork 554,23349 658,23395
        },
        {
          'source_id' => 'IM_021842',
-         'until' => 1402696799,
-         'text' => 'Damerowstr. (Pankow): Baustelle, zwischen Mendelstr. und Breite Str. stadteinwärts gesperrt, ab 10.05.2014 13 Uhr bis vsl. 13.06.2014 ',
+         'until' => 1402671600,
+         'text' => 'Damerowstr. (Pankow): Baustelle, zwischen Mendelstr. und Breite Str. stadteinwärts gesperrt, ab 10.05.2014 13 Uhr bis 13.06.2014 17 Uhr',
          'from' => 1399586400,
          'id' => 2568,
          'data' => 'userdel	q4::inwork; 11357,18598 11168,18542 11001,18528

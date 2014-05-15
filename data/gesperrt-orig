@@ -2504,12 +2504,14 @@ Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,1
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: last_checked: 2014-03-31 vvv
+#: next_check_id: SCHINKELPLATZ_2014 vvv
+#: last_checked: 2014-05-14 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 10008,12274 9994,12368 9996,12401
 Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 9943,12364 9961,12273
 #: check_frequency ^^^
 #: last_checked ^^^
+#: next_check_id ^^^
 # 
 #: next_check_id: STERNDAMM-2014
 #: source_id: IM_020145
@@ -2641,7 +2643,7 @@ Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
-#: last_checked: 2014-03-07
+#: last_checked: 2014-05-14
 #: next_check: 2015-01-01
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
@@ -2745,7 +2747,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2014-04-08 vvv
+#: last_checked: 2014-05-14 vvv
 #: next_check: 2014-06-01 vvv
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
@@ -2768,7 +2770,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
 #: osm_watch: way id="158025179" version="1"
-#: last_checked: 2014-04-17
+#: last_checked: 2014-05-14
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

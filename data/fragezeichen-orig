@@ -129,7 +129,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="15"
-#: osm_watch: way id="42732291" version="7"
+#: osm_watch: way id="42732291" version="8"
 #: last_checked: 2014-03-28
 #: check_frequency: 90d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
@@ -219,7 +219,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5901 (2014 passiert wahrscheinlich nichts)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: XXX: Baubeginn ab Juni 2014 bis August 2015
-#: last_checked: 2014-04-28
+#: last_checked: 2014-05-14
 #: next_check: 2015-05-01
 Warschauer Str: Radspuren geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -429,7 +429,7 @@ Am Wuhlebogen: wann wird die Straße fertiggestellt? Qualität?	?::projected 21671
 Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
 # 
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
-#: last_checked: 2014-01-19
+#: last_checked: 2014-05-14
 #: next_check: 2015-03-01
 #: priority: #A
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?::inwork; 13588,11490 13565,11492 13473,11456
@@ -1309,13 +1309,13 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 #: next_check: 2014-08-10
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337
 # 
-#: last_checked: 2014-02-10
-#: next_check: 2014-05-10
+#: last_checked: 2014-05-14
+#: next_check: 2014-10-10
 Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7422,13012
 # 
 #: by: http://www.tagesspiegel.de/berlin/anbindung-an-hauptbahnhof-eroeffnung-von-strassenbahnstrecke-verzoegert-sich-erneut/7375642.html (Eröffnung Mitte oder Herbst 2014)
-#: last_checked: 2014-02-10
-#: next_check: 2014-05-10
+#: last_checked: 2014-05-14
+#: next_check: 2014-10-10
 Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3404 (Verfahren wurde eingeleitet)
@@ -3798,3 +3798,7 @@ Kleiststr. (Stahnsdorf): Fahrbahnbeschaffenheit im südlichen Abschnitt?	? -569,-
 Schwarzer Weg (Kleinmachnow): Fahrbahnbeschaffenheit?	? -866,-1615 -872,-1602 -1036,-1315
 Bahnhofstr. (Stahnsdorf): Qualität des östlichen Endes?	? -2878,-3004 -2817,-2967 -2720,-2937 -2657,-2907
 Patrizierweg - Steinstr.: Durchfahrt für Radfahrer möglich? Qualität?	? -7178,-3027 -7114,-3030 -7060,-3124
+#: XXX genaue Lage?
+#: XXX fehlt in Potsdam.coords.data: OT Golm, PLZ=14476
+#: by: http://www.potsdam.de/sites/default/files/documents/endfassungab_nr._6l_pdmstadt2014.pdf
+Am Urnenfeld (Potsdam): Qualität?	? -18151,-1323 -18520,-1192 -18698,-1030 -18725,-827 -18682,-719

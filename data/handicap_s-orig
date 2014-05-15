@@ -12,7 +12,7 @@
 # 
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # 
-#: last_checked: 2014-05-06 vvv
+#: last_checked: 2014-05-14 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -54,7 +54,11 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwo
 # 
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
-# REMOVED --- #: last_checked: 2013-06-04 --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9984,12426 9996,12401 9994,12368 9943,12364
+#: next_check_id: SCHINKELPLATZ_2014
+#: last_checked: 2014-05-14
+#: check_frequency: 90d
+Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q3::inwork 9984,12426 9996,12401
+# REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
 # REMOVED (Sperrung weitgehend aufgehoben) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html (Abschluss der Arbeiten im M‰rz 2014) --- #: source_id: IM_020581 ("bis Ende 2014") --- #: last_checked: 2014-04-01 vvv --- #: next_check: 2014-04-02 vvv --- #: priority: #A vvv --- #: valid: -20140402 --- #: XXX Sperrung wird aufgehoben --- Chausseestr.: Bauarbeiten, Fahrbahn ist noch nicht offiziell freigegeben	q3::inwork 9042,13707 8935,13844 --- #: XXX was ist mit diesem Abschnitt? Bleibt die Einbahnstraﬂe? --- Chausseestr.: Einbahnstraﬂe zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwork; 8870,13926 8935,13844 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 # REMOVED --- : osm_watch: way id="4412885" version="23"
@@ -66,11 +70,11 @@ Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 865
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html
 #: source_id: IM_021790
-#: valid: 20140428-20140512 vvv
+#: valid: 20140428-20140516 vvv
 #: last_checked: 2014-05-05 vvv
-#: next_check: 2014-05-12 vvv
+#: next_check: 2014-05-16 vvv
 #: priority: #A vvv
-Luisenstr. am Platz vor dem Neuen Tor: Fahrbahn bis ca. 12. Mai 2014 gesperrt	q4::inwork 8626,13641 8619,13689
+Luisenstr. am Platz vor dem Neuen Tor: Fahrbahn bis 16. Mai 2014 gesperrt	q4::inwork 8626,13641 8619,13689
 Platz vor dem Neuen Tor: erschwerter Zugang von der Invalidenstr.	q4::inwork 8594,13637 8588,13673
 #: priority ^^^
 #: next_check ^^^
@@ -82,13 +86,13 @@ Platz vor dem Neuen Tor: erschwerter Zugang von der Invalidenstr.	q4::inwork 859
 # 
 #: next_check_id: UDLU5-2014
 #: source_id: IM_020322
-#: last_checked: 2013-12-11
+#: last_checked: 2014-05-14
 #: next_check: 2014-12-31
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # REMOVED --- Charlottenstr.: Bauarbeiten, Radfahrer kˆnnen passieren	q2::inwork; 9475,12365 9489,12263
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2014-02-22 vvv
+#: last_checked: 2014-05-14 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -105,7 +109,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
 #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7
-#: last_checked: 2014-04-23
+#: last_checked: 2014-05-14
 #: check_frequency: 60d
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
@@ -131,7 +135,7 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-05-06
+#: last_checked: 2014-05-14
 Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -163,25 +167,30 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaeli
 # 
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraﬂe, Zugang f¸r Fuﬂg‰nger und schiebende Radfahrer mˆglich	q3::inwork 8426,13909 8574,13666
 # 
-#: valid: 20140512-20140616
-#: next_check: 2014-06-16 (wird wieder befahrbar sein)
+#: valid: 20140512-20140603
+#: next_check: 2014-06-03 (wird wieder befahrbar sein)
+#: source_id: IM_021906
 #: priority: #A
 Scharnhorststr.: Sackgasse an der Invalidenstraﬂe	q3::inwork 8450,13599 8313,13839
 #
-# REMOVED (seit 2014-04-01 wieder offen?) --- #: last_checked: 2014-03-07 (Bauarbeiten wegen Neubau) --- #: check_frequency: 60d --- Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
+#: last_checked: 2014-05-14 (Bauarbeiten wegen Neubau)
+#: check_frequency: 30d
+Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
+# 
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2013-11-12 --- #: next_check: 2014-01-15 --- Siemensstr.: Bauarbeiten, Einbahnstraﬂe, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
 # 
-#: last_checked: 2014-04-01 vvv
+#: last_checked: 2014-05-14 vvv
 #: check_frequency: 60d vvv
-Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7939,13026 7872,13022
+# REMOVED (fertig?) --- Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7939,13026
+Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7872,13022
 # REMOVED (nicht mehr) --- Ella-Trebe-Str./Bertha-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7872,13022 7867,13106
-Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7867,13106 7937,13109
+# REMOVED (fertig?) --- Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7867,13106 7937,13109
 Ella-Trebe-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7948,12918
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: last_checked: 2014-03-07
-#: next_check: 2014-05-10
+#: next_check: 2014-06-10
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127 8525,12958
 # 
@@ -206,7 +215,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-05-06
+#: last_checked: 2014-05-14
 #: check_frequency: 30d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -1460,7 +1469,8 @@ M‰rkischer Platz: Fuﬂg‰nger	q2 11034,12038 11084,12070 11111,12027
 #: XXX_prog BS zur Helsingforser Str.
 (Rampe Wriezener Park): Fuﬂg‰nger, Bordstein	q3 13427,11431 13421,11423
 (Rampe Wriezener Park): Fuﬂg‰nger, enge Rampe, kein Gel‰nder	q3 13421,11423 13459,11388
-(Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13459,11388 13417,11416 13407,11416 13323,11497 13261,11572 13239,11567 13175,11649
+(Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13459,11388 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13175,11649
+(Wriezener Park): Fuﬂg‰nger	q2 13324,11529 13308,11515
 #: XXX_prog BS zur Helsingforser Str.
 Wriezener Park: Fuﬂg‰nger, Bordstein	q3 13261,11572 13270,11581
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13175,11649 13208,11658
