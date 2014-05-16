@@ -196,9 +196,10 @@ sub check_url {
 	ok($resp->is_success, "Successful request of $url$redir_text " . sprintf("%.3fs", $dt))
 	    or diag $resp->status_line . " " . $resp->content;
 	my $content_type = $resp->header('content-type');
-	if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
-	    $url eq $BBBike::BBBIKE_UPDATE_DIST_CGI ||
-	    $url =~ m{\.zip$}) {
+	if ($url eq $BBBike::BBBIKE_UPDATE_DIST_CGI) {
+	    like($content_type, qr{^application/(zip|octet-stream)$}, "Expected type (zip)") or diag("For URL $url$redir_text");
+	} elsif ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
+		 $url =~ m{\.zip$}) {
 	    is($content_type, "application/zip", "Expected type (zip)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{\.tar\.gz$}) {
 	    is($content_type, "application/x-gzip", "Expected type (gzip)") or diag("For URL $url$redir_text");

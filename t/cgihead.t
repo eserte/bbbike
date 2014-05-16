@@ -162,7 +162,9 @@ sub check_url {
 	is($resp->header('content-type'), "application/zip", "Expected mime-type for bbbike-data.cgi");
 	like($resp->header("content-disposition"), qr{^attachment;\s*filename=bbbike_data.*\.zip$}, "Expected attachment marker");
     } elsif ($url =~ /bbbike-snapshot.cgi/) {
-	is($resp->header('content-type'), "application/zip", "Expected mime-type for bbbike-shapshot.cgi");
+	like($resp->header('content-type'), qr{^( application/zip          # old bbbike-snapshot.cgi implementation and old github
+					       |  application/octet-stream # new github redirect to codeload
+					       )$}x, "Expected mime-type for bbbike-shapshot.cgi");
 	like($resp->header("content-disposition"), qr{^attachment;\s*filename=(
 							bbbike_snapshot_\d+\.zip # old bbbike-snapshot.cgi implementation in bbbike-data.cgi
 						      | bbbike-master\.zip       # redirect to github
