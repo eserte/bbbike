@@ -151,10 +151,10 @@ EOF
 sub teaser_velothon {
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today ge "20130610";
+    my $out_of_date = $today gt "20140618";
     if (!$out_of_date) {
-	my $velothon_map_url = "http://files.upsolut.de/velothon/maps/sperr.php";
-	my $date_spec = $today eq '20130609' ? 'Heute' : 'Am Sonntag, den 9. Juni 2013';
+	my $velothon_map_url = "http://events.lagardere-unlimited.de/velothon/maps/sperr.php";
+	my $date_spec = $today eq '20140618' ? 'Heute' : 'Am Sonntag, den 18. Juni 2014';
 	<<EOF
 <div class="teaser" style="font-weight:bold">$date_spec findet der Velothon statt.<br/>
 <a href="$velothon_map_url">Karte mit den Sperrungen</a></div>
