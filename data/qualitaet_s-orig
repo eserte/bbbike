@@ -237,7 +237,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2014-05-06
+#: last_checked: 2014-05-16
 #: check_frequency: 90d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -3252,11 +3252,7 @@ Werdauer Weg: Beton	Q0- 6691,7633 6693,7556 6654,7465 6580,7401 6505,7381
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): Beton	Q1 12923,12043 12893,12077 12883,12118 12908,12280
 Am Pankepark: betoniert	Q1 8184,14052 8207,14067
 Am Pankepark: Asphalt	Q0 8207,14067 8282,14116
-Am Pankepark: Verbundsteinpflaster	Q1 8282,14116 8238,14181 8186,14150
-#: XXX wird hier auch Verbundsteinpflaster verlegt?
-#: last_checked: 2014-02-10
-#: check_frequency: 90d
-Am Pankepark: noch unbefestigt, Schotter	Q2- 8186,14150 8152,14130
+Am Pankepark: Verbundsteinpflaster	Q1 8282,14116 8238,14181 8152,14130
 Stendaler Platz: überwiegend Asphalt	Q0 6394,14085 6489,14071
 Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: Gehwegplatten und Verbundsteinpflaster	Q0- 12869,12425 12950,12340 12985,12303
 Hinter dem Zeughaus: kleinteiliges Kopfsteinpflaster	Q1 9842,12506 9956,12523
@@ -4528,6 +4524,8 @@ Themarer Str.: Asphalt mit Schäden	Q1 18424,14791 18412,14712 18357,14631
 (Marchlewskistr. - Gubener Str.): Kopfsteinpflaster	Q2+ 13097,12166 13173,12202 13168,12219
 Gubener Str.: Kopfsteinpflaster	Q2+ 13168,12219 13151,12266
 Gubener Str.: Asphalt	Q0- 13151,12266 13198,12311
+#: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten?
+#: last_checked: 2014-05-16
 Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8594,13637 8601,13580
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
 Alter Schönefelder Weg: Asphalt	Q0 19743,1804 19669,1729 19655,1670 19632,1593 19595,1546
@@ -11000,11 +10998,12 @@ Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16354,15323 16208,1
 #: corrected_by: srt (geteert -> ...) vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5230 vvv
 #: XXX werden die restlichen Abschnitte auch neu asphaltiert? vvv
+#: source_id: IM_021923 (evtl. haben diese Bauarbeiten was damit zu tun)
 #: last_checked: 2014-03-18 (nur der Mittelteil ist neu asphaltiert) vvv
-#: check_frequency: 60d vvv
+#: next_check: 2014-06-30 vvv
 Roedernstr.: Asphalt mit Schäden	Q1- 16208,15379 16083,15434
 Roedernstr.: Asphalt mit Schäden	Q1- 15712,15594 15552,15660
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: by ^^^
@@ -12923,6 +12922,7 @@ Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
 (Park am Nordbahnhof): Beton	Q0 8913,14485 9119,14255 9175,14193 9181,14186
 #: confirmed_by: srt
 (Park am Nordbahnhof): betonierte Rampe	Q0 9181,14186 9147,14151 9224,14169
+(Park am Nordbahnhof): betonierte Rampe	Q0 9147,14151 9070,14058
 #: by: ^^^
 # 
 #: by: Birgit Graffunder
@@ -23242,6 +23242,7 @@ Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: next_check_id: AMZIRKUS-2014
 #: XXX danach wohl Q0
 #: last_checked: 2014-04-17
+#: next_check: 2014-06-17
 Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938

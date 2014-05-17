@@ -1546,6 +1546,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED (aufgehoben, siehe "richtige" Ampel daneben) ---	F 8626,13692
 #: note: zurzeit (2014-04) noch eine Baustellenampel, aber es sieht so aus, als ob hier eine permanente Ampel entstehen wird
 	X 8619,13689
+	X 8574,13666
 	X 8456,15235
 	X 9443,15430
 	X 9907,15618
@@ -2495,7 +2496,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2014-05-14 vvv
+#: last_checked: 2014-05-16 vvv
 #: next_check: 2014-06-30 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926
@@ -2507,8 +2508,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
-#: XXX ist diese Ampel permanent?
-	X::inwork 8450,13599
+# REMOVED (Antwort: wahrscheinlich ja) --- #: XXX ist diese Ampel permanent?
+	X 8450,13599
 	X 9070,14058
 	F 17117,18761
 #: by: Stefan Klinkusch:

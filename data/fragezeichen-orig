@@ -95,12 +95,12 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 # 
 #: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Realisierung anscheinend ungewiss)
-#: last_checked: 2014-04-27
+#: last_checked: 2014-05-16
 #: check_frequency: 180d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2014-04-26
+#: last_checked: 2014-05-16
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -130,13 +130,13 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="15"
 #: osm_watch: way id="42732291" version="8"
-#: last_checked: 2014-03-28
+#: last_checked: 2014-05-16
 #: check_frequency: 90d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: osm_watch: way id="4581787" version="6"
-#: last_checked: 2014-01-17
+#: last_checked: 2014-05-16
 #: check_frequency: 90d
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
@@ -362,8 +362,6 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
-# 
-Schwiebusser Str.: Sperrung/Sackgasse prüfen	? 9801,8889 9227,8890
 # 
 #: last_checked: 2014-05-06
 #: check_frequency: 14d
@@ -775,8 +773,8 @@ Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16476,16216 16
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
 #: XXX Baumaßnahme 1.16 (Realisierung nach 2011)
-#: last_checked: 2013-05-08 (keinerlei Anzeichen für Bauarbeiten zu erkennen)
-#: next_check: 2014-04-08
+#: last_checked: 2014-05-16 (keinerlei Anzeichen für Bauarbeiten zu erkennen)
+#: check_frequency: 360d
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
@@ -1204,17 +1202,12 @@ Hildburghauser Str.: Qualität des Asphalts?	? 4806,1360 4897,1346 5056,1321 5223
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2014-04-17
+#: last_checked: 2014-05-16
 #: check_frequency: 100d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
 #
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130925.1340.389712.html (Beginn: 30. September 2013, Ende offen)
-#: XXX zwischen Lütticher Str. und Antwerpener Str. (Richtung Osten) zurzeit Bauarbeiten (2014-01-17), Radweg gesperrt; 2014-03-28: noch immer gesperrt
-#: XXX zwischen Lüderitzstr. und Guineastr. (Richtung Westen) asphaltiert ohne die letzte Asphaltdecke
-#: last_checked: 2014-03-28
-Seestr.: Sanierung der Radwege - werden die restlichen Abschnitte auch asphaltiert sein?	? 6239,15553 6422,15708 6555,15827 6661,15921 6781,16026
-# 
+# REMOVED (im Bau befindliche Abschnitte genau markiert) ---  #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20130925.1340.389712.html (Beginn: 30. September 2013, Ende offen) --- #: XXX zwischen Lütticher Str. und Antwerpener Str. (Richtung Osten) zurzeit Bauarbeiten (2014-01-17), Radweg gesperrt; 2014-03-28: noch immer gesperrt --- #: XXX zwischen Lüderitzstr. und Guineastr. (Richtung Westen) asphaltiert ohne die letzte Asphaltdecke --- #: last_checked: 2014-03-28 --- Seestr.: Sanierung der Radwege - werden die restlichen Abschnitte auch asphaltiert sein?	? 6239,15553 6422,15708 6555,15827 6661,15921 6781,16026
 # REMOVED (nein, keine Vorfahrt) --- Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1276,8659 1403,8647 1533,8635 1554,8638 1577,8655 1632,8716 1659,8744
 # REMOVED (nein, keine Vorfahrt) --- Bismarckallee: ist die Bismarckallee durchgängig eine Vorfahrtsstraße?	? 1773,8859 1807,8893 1861,8946 1920,9009 2098,9173 2163,9244 2316,9400
 # REMOVED (aufgenommen) --- #: XXX vmz-Eintrag relevant? NEW	Charlottenstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Ende 09/13) in beiden Richtungen zwischen Unter den Linden und Rosmarinstr., 13.09.2013 07:00 Uhr bis 23.09.2013 16:00 Uhr	IM_020322	 --- Charlottenstr.: Vollsperrung?	? 9475,12365 9489,12263
@@ -3730,7 +3723,7 @@ Am Kienwerder (Kienwerder): Qualität?	? -4765,-3352 -4694,-3304 -4341,-3227 -420
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: XXX laut osm ist die Kongostraße mittlerweile asphaltiert - stimmt aber nicht (korrigiert)!
 #: osm_watch: way id="5117259" version="11"
-#: last_checked: 2014-01-17
+#: last_checked: 2014-05-16
 #: check_frequency: 90d
 Kongostr.: ist die Kongostr. mittlerweile asphaltiert?	? 6244,16096 6258,16111 6349,16213 6447,16321
 # 
