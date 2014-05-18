@@ -814,13 +814,11 @@ Altdöbern - Calau: Qualität?	? 55259,-83091 55388,-83077 55768,-82862 54521,-794
 Spitzmausweg: Qualität? Wo wird die Straße genau liegen?	?::projected 26160,12538 26231,12627 26285,12675
 Oder ist das der Spitzmausweg?	? 26096,12563 26183,12670
 Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362
-B96a - Schützenstr.: Wo genau liegt die Verbindungsstraße? Qualität?	? 19894,-835 19858,-843 19869,-816
 Kramnitzer Weg: Qualität der Verlängerung nach Westen hin? Existiert eine Ausschilderung	? -9353,5012 -9395,5025 -9537,5083 -9617,5086
 Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18091,1642 -18350,1540 -18688,1177 -18718,1243 -18673,1785 -18728,2153 -18989,2236 -19233,2251 -19422,2220 -19656,2362 -19721,2368
 Radweg zwischen Wublitzstr. und Laubenweg: Ist der Radweg bereits fertig? Qualität?	? -19721,2368 -19721,2424 -19891,2447
 Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11
 Radweg in der Bergstraße: wo genau?	? -17909,7321 -18152,6572
-Am Seegraben/Alexander-Meißner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835
 Hohen Neuendorfer Weg (Birkenwerder): Qualität?	? 645,30634 618,30687 575,30816 564,30845 550,30867 516,30899 342,31100
 Am Alten Mörtelwerk (Potsdam-Eiche): Qualität?	? -17127,-559 -17141,-496 -17186,-451 -17211,-356 -17254,-256
 Am Tempelberg (Potsdam-Eiche): Qualität?	? -17003,-544 -17019,-422
@@ -965,8 +963,6 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str. südlich des Kurfürstendamms?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116
 Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsberuhigt?	? 17610,-330 17651,-393
 Trollblumenweg: wird verlängert, Qualität der Verlängerung?	?::inwork 16020,3732 16039,3766 16104,3717
-Rita-Maiburg-Str.: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::projected 20342,-777 20782,-1199 20822,-1242 20833,-1298 20872,-1748
-Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?	?::projected 20274,-845 20342,-777
 Kohlisstr./Hultschiner Damm: gibt es hier mittlerweile eine Ampelanlage?	?::inwork 23810,7946
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 16377,90072 15782,90862 15728,90935 15398,92093 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 17912,95192 18005,95449
@@ -991,7 +987,6 @@ Spitzwegerichweg: (früher Wiesenweg) unbefestigt, teilweise etwas sandig, Q2, un
 Petersilienweg: (früher Feldweg) Qualität? Wo befindet sich der Weg?	? 24388,6098 24444,6165 24515,6201 24562,6221
 Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 Engelwurzweg: (früher Waldweg) Qualität? Geht es Richtung Westen noch weiter?	? 25153,6596 25100,6612
-Bruno-Taut-Str. - Am Gartenstadtweg: nachts beleuchtet?	? 21790,682 21783,660 21755,625 21714,601 21679,596
 Metzelthin - Jakobshagen: Qualität?	? 16156,85969 16221,86247 16293,86283 16299,86386 16405,86555 17060,86947 17760,87699 19179,88641 19396,88713
 Metzelthin - Warthe: Qualität (möglicherweise asphaltiert)?	? 16299,86386 16444,89761 16314,90051 16377,90072
 Hardenbeck - Rosenow: Qualität?	? 18327,95131 18158,95156 17912,95192 17181,95353 16882,95289 16624,95393 16038,95261
@@ -1078,6 +1073,7 @@ Patrizierweg - Steinstr.: Durchfahrt für Radfahrer möglich? Qualität?	? -7178,-3
 Am Urnenfeld (Potsdam): Qualität?	? -18151,-1323 -18520,-1192 -18698,-1030 -18725,-827 -18682,-719
 # added from ampeln-orig
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
+#: last_checked: 2014-05-17 (zurzeit Bauarbeiten, evtl. wird hier was gemacht?)
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from other ../tmp/.fragezeichen-other-source

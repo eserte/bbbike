@@ -98,7 +98,7 @@ Nöldnerplatz	1 15870,10938 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Richterstr.	1s 22092,999 22120,886
 Richterstr.	1s 22075,779 22007,711
-Grünau/B179	1 22007,711 21861,802 21894,881 21977,988 22092,999
+Grünau/B179	1 22007,711 21861,802 21894,881 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 Zufahrt zur B96a	2 20288,-511 20272,-501
@@ -602,7 +602,7 @@ Alter Schönefelder Weg	1 19595,1546 19632,1593 19655,1670 19669,1729 19743,1804
 Boppstr.	1s 11785,9437 11560,9524
 Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
-Pitschener Str.	1s 21774,-436 21719,-397 21637,-381
+Pitschener Str.	1s 21769,-432 21719,-397 21637,-381
 Herrfurthstr.	1s 11979,8014 11833,7980
 Dankratstr.	1s 21105,9538 20943,9543
 Helen-Ernst-Str., hinter der o2-Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
@@ -990,6 +990,8 @@ Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
+Mittelstreifen	3nocross::ignrte 19894,-835 19996,-740 20205,-548
+Schützenstr. -> Am Seegraben: Mittelstreifen	3::igndisp 19978,-712 19996,-740 20205,-548
 Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2016,11034 2116,11288 2109,11441
 Messedamm -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2109,11441 2116,11288 2219,11304
 Bredtschneiderstr. -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2219,11304 2116,11288 1979,11277
@@ -1972,7 +1974,7 @@ Mittelstreifen	3nocross::ignrte 18930,3703 18884,3752 18856,3783 18826,3816
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18884,3752 18856,3783
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18856,3783 18826,3816
 Mittelstreifen	3nocross::ignrte 18826,3816 18773,3873 18541,4125
-Mittelstreifen	3nocross::ignrte 18541,4125 18396,4282 18239,4453
+Mittelstreifen	3nocross::ignrte 18541,4125 18374,4307 18239,4453
 Mittelstreifen	3nocross::ignrte 18930,3703 19029,3595 19125,3491
 Konrad-Zuse-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18943,3508 19029,3595 18930,3703
 Groß-Berliner Damm -> Konrad-Zuse-Str.: Mittelstreifen	3::igndisp 19125,3491 19029,3595 18943,3508
@@ -2313,6 +2315,14 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:45:trailer=10 18613,2983
+Drängelgitter	BNP:3:48:trailer=10 18707,3074
+Drängelgitter	BNP:3:45:trailer=10 18724,3091
+Drängelgitter	BNP:0:36:trailer=0 18822,3188
+Drängelgitter	BNP:3:-232:trailer=10 19725,-51
+Drängelgitter	BNP:3:-198:trailer=10 19774,-187
+Drängelgitter	BNP:3:-194:trailer=10 19734,-45
+Schranke	BNP:3:-202:trailer=10 22041,-313
 Schranke (Umfahrung auf dem Gehweg)	BNP:5:-11:trailer=15 -12413,-789
 Schranke	BNP:3:-189:trailer=10 -12360,-772
 Schranke, leicht umfahrbar	BNP:2:-234:trailer=4 -12303,-867
@@ -2446,8 +2456,8 @@ Drängelgitter und Tor	BNP:7:74:trailer=15 20396,-1370
 Drängelgitter und Tor	BNP:7:82:trailer=15 20373,-1375
 Drängelgitter und Tor	BNP:7:77:trailer=15 20046,-1449
 Drängelgitter und Tor	BNP:7:70:trailer=15 20018,-1456
-Drängelgitter und Tor	BNP:7:78:trailer=15 19726,-1518
-Drängelgitter und Tor	BNP:7:90:trailer=15 19706,-1520
+Drängelgitter und Tor	BNP:7:82:trailer=15 19727,-1526
+Drängelgitter und Tor	BNP:7:-262:trailer=15 19706,-1528
 Schranke	BNP:1:-227:trailer=3 498,14934
 Schranke und Poller (lichte Breite 80 bis 100cm)	BNP:5:-197:trailer=no 54,15578
 Schranke	BNP:1:-153:trailer=3 14180,3334
@@ -2665,6 +2675,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 am Osthafen: durch Barriere versperrt	2 14259,10309 14463,10212
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 8935,13844
@@ -2676,7 +2687,7 @@ Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 99
 Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger)	2::inwork 17736,5441 17886,5587
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
-Wilhelm-Hoff-Str.: Weg noch nicht fertig	2::inwork 19033,3397 19057,3422
+Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,3422
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s 10077,13100 10018,13299
 (Weg am Stadtgarten Moabit): Bauarbeiten	2::inwork 5708,14077 5685,14215
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Zugang durch Bauzäune versperrt	2::inwork 8243,9766 8233,9863 8201,9869 8255,9938 8285,9956

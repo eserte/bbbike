@@ -1005,7 +1005,7 @@ Gormannstr.: Bordstein	q2 10350,13376 10353,13384
 Spreeufer: unter der Rohrdammbr¸cke sehr eng	q3 1124,13536 1184,13544
 (Uranusstr. - Siriusstr.): Schulgel‰nde, teilweise ist das Radfahren explizit verboten	q4 18827,-537 18906,-316
 (Widosteig - Bohnsdorfer Weg): Pfad	q2 19934,1102 19955,1158 19940,1265
-(Parkweg im Business Park Berlin): Fuﬂg‰nger	q1 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19726,-1518 19717,-1520 19706,-1520 19618,-1531
+(Parkweg im Business Park Berlin): Fuﬂg‰nger	q1 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
 Vergissmeinnichtweg: Bodenschwellen	q1 21582,185 21608,85
 (Bersarinplatz - Thaerstr.): Fuﬂg‰nger, Bordstein	q2 13747,12642 13761,12690
 (Thaerstr. - Bersarinplatz): Fuﬂg‰nger, Bordstein	q2 13761,12690 13695,12643
@@ -1194,7 +1194,7 @@ Dahlienweg: Fuﬂg‰nger	q2 15209,5713 15204,5752 15201,5807 15194,5934
 Kurzer Weg: Fuﬂg‰nger	q2 15154,5706 15151,5746 15204,5752
 Preuﬂensiedlung: einige Fuﬂg‰nger	q1 20971,1046 20957,1043 20850,963
 (Gr¸nzug am Falkenberg): Pfad	q2 21205,286 21230,309 21300,326
-(Bruno-Taut-Str. - Am Gartenstadtweg): Fuﬂg‰nger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21714,601 21679,596
+(Bruno-Taut-Str. - Am Gartenstadtweg): Fuﬂg‰nger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21723,605 21679,596
 Erieseering: Bordstein	q2 18141,10173 18132,10183
 (Erieseering - am Tr‰nkegraben): einige Fuﬂg‰nger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tr‰nkegraben): Fuﬂg‰nger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
@@ -1352,6 +1352,7 @@ Alfred-Scholz-Platz: Fuﬂg‰nger	q2 12779,8188 12753,8187
 Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3554
 Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2249 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
 (Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 413,757 332,819 247,822
+(Am Seegraben - Sch¸tzenstr.): einige Fuﬂg‰nger	q1 19996,-740 19978,-712
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -1842,7 +1843,7 @@ Knˆterichpfad: enge Straﬂe, Gartensiedlung	q1 -7842,14683 -7808,14939 -7784,1506
 Hartmannsweilerweg: enge Straﬂe	q1; 17,3471 41,3510 16,3744
 Hartmannsweilerweg: enge Straﬂe	q1 16,3744 -1,3857 -36,3924 -219,4149
 Zietenstr. (Lankwitz): enge Straﬂe	q1 6196,2204 6108,2326 6065,2443 5971,2691
-(Hˆhensteig - Buntzelstr.): Fuﬂg‰nger	q1 21844,238 21963,261 21979,274 21991,273 21996,268 22166,312
+(Hˆhensteig - Buntzelstr.): Fuﬂg‰nger	q1 21844,238 21963,261 21979,274 21991,273 22008,262 22166,312
 Jenny-Lind-Str.: enge Straﬂe	q1 11522,17248 11645,17271 11768,17296
 Sandhofweg: enge Straﬂe	q1 5848,272 5795,371 5757,434 5688,402
 Sandhofweg: Fuﬂg‰nger	q1 5688,402 5644,381
@@ -1851,7 +1852,7 @@ Melanchthonstr.: Bordsteinkante, Fuﬂg‰nger	q2 2889,22741 2857,22756
 Rabenhorststr.: enge Straﬂe	q0 -1726,19725 -1739,19803 -1681,19955 -1630,20086 -1596,20184 -1578,20228
 Sch‰ferstr. (Spandau): enge Straﬂe	q1 -2915,15994 -2798,16005 -2638,16026
 Feldspatweg: enge Straﬂe	q0 11407,1592 11369,1585 11180,1623 11025,1657 10981,1665 10943,1661 10907,1651 10860,1620 10831,1585 10810,1533 10807,1497 10816,1411 10868,1281
-Peenestr.: enge Straﬂe	q1 19328,1149 19434,1265 19575,1239 19737,1204
+Peenestr.: enge Straﬂe	q1 19333,1154 19434,1265 19575,1239 19737,1204
 Borkzeile: enge Straﬂe	q0 -4220,14311 -4207,14473 -4203,14515 -4188,14566 -4156,14677
 Kreutzerweg: enge Straﬂe	q1 4629,3916 4836,4041 4848,4069 4834,4102
 Am Forstacker: enge Straﬂe	q1 -3676,17131 -3671,17202 -3648,17250 -3612,17280 -3532,17333 -3491,17381 -3418,17525
@@ -1952,7 +1953,7 @@ Rudi-Dutschke-Weg: viele Fuﬂg‰nger	q2 2627,5095 2913,5294
 Dinkelsb¸hler Steig: enge Straﬂe	q0 2615,25225 2649,25170 2694,25132 2775,25092 2816,25037
 ÷tztaler Str.: enge Straﬂe	q1 10690,17420 10630,17421
 Schlierbacher Weg: enge Straﬂe	q1 10734,1178 10685,1159 10450,1202 10453,1242 10440,1283
-Fritz-K¸hn-Str.: enge Straﬂe	q1 21681,-589 21666,-657 21479,-925 21445,-963
+Fritz-K¸hn-Str.: enge Straﬂe	q1 21688,-589 21666,-657 21487,-912 21445,-963
 Mittelstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 15543,14491 15647,14693 15706,14752 15856,14915
 Nantesstr.: enge Straﬂe	q1 11200,21689 11251,22022 11231,22065 11077,22236
 Helgiweg: enge Straﬂe	q0 14459,18589 14517,18410
@@ -2194,7 +2195,7 @@ Cardinalstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 2190
 Fuchsbergeweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 20595,9558 20592,9298
 (Marchlewskistr. - Gubener Str.): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13168,12219 13173,12202 13097,12166
 Boppstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 11785,9437 11560,9524
-Pitschener Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21774,-436 21719,-397 21637,-381
+Pitschener Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21769,-432 21719,-397 21637,-381
 Herrfurthstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11979,8014 11833,7980
 Dankratstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21105,9538 20943,9543
 Havermannstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13803,4932 13892,4955

@@ -1484,7 +1484,7 @@ Gormannstr.: Bordstein	q2 10350,13376 10353,13384
 Spreeufer: unter der Rohrdammbrücke sehr eng	q3 1124,13536 1184,13544
 (Uranusstr. - Siriusstr.): Schulgelände, teilweise ist das Radfahren explizit verboten	q4 18827,-537 18906,-316
 (Widosteig - Bohnsdorfer Weg): Pfad	q2 19934,1102 19955,1158 19940,1265
-(Parkweg im Business Park Berlin): Fußgänger	q1 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19726,-1518 19717,-1520 19706,-1520 19618,-1531
+(Parkweg im Business Park Berlin): Fußgänger	q1 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
 Vergissmeinnichtweg: Bodenschwellen	q1 21582,185 21608,85
 #: XXX_prog BS zur Thaerstr.
 (Bersarinplatz - Thaerstr.): Fußgänger, Bordstein	q2 13747,12642 13761,12690
@@ -1737,7 +1737,7 @@ Dahlienweg: Fußgänger	q2+ 15209,5713 15204,5752 15201,5807 15194,5934
 Kurzer Weg: Fußgänger	q2+ 15154,5706 15151,5746 15204,5752
 Preußensiedlung: einige Fußgänger	q1 20971,1046 20957,1043 20850,963
 (Grünzug am Falkenberg): Pfad	q2 21205,286 21230,309 21300,326
-(Bruno-Taut-Str. - Am Gartenstadtweg): Fußgänger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21714,601 21679,596
+(Bruno-Taut-Str. - Am Gartenstadtweg): Fußgänger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21723,605 21679,596
 #: XXX_prog: BS südliches Ende
 Erieseering: Bordstein	q2 18141,10173 18132,10183
 (Erieseering - am Tränkegraben): einige Fußgänger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
@@ -1943,6 +1943,7 @@ Alfred-Scholz-Platz: Fußgänger	q2 12779,8188 12753,8187
 Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3554
 Georg-Steger-Weg: einige Fußgänger	q1 1493,2249 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
 (Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 413,757 332,819 247,822
+(Am Seegraben - Schützenstr.): einige Fußgänger	q1 19996,-740 19978,-712
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2859,7 +2860,7 @@ Hartmannsweilerweg: enge Straße	q1 16,3744 -1,3857 -36,3924 -219,4149
 # 
 #: by: Susanna (wells): vvv
 Zietenstr. (Lankwitz): enge Straße	q1 6196,2204 6108,2326 6065,2443 5971,2691
-(Höhensteig - Buntzelstr.): Fußgänger	q1 21844,238 21963,261 21979,274 21991,273 21996,268 22166,312
+(Höhensteig - Buntzelstr.): Fußgänger	q1 21844,238 21963,261 21979,274 21991,273 22008,262 22166,312
 #: by: ^^^
 # 
 #: by: Knappe:
@@ -2885,7 +2886,7 @@ Schäferstr. (Spandau): enge Straße	q1 -2915,15994 -2798,16005 -2638,16026
 #: corrected_by: srt/policy (q1 -> q0-)
 Feldspatweg: enge Straße	q0- 11407,1592 11369,1585 11180,1623 11025,1657 10981,1665 10943,1661 10907,1651 10860,1620 10831,1585 10810,1533 10807,1497 10816,1411 10868,1281
 #: by: anonymous
-Peenestr.: enge Straße	q1 19328,1149 19434,1265 19575,1239 19737,1204
+Peenestr.: enge Straße	q1 19333,1154 19434,1265 19575,1239 19737,1204
 #: by: Heidi (...mary):
 #: corrected_by: srt/policy (q1 -> q0-)
 Borkzeile: enge Straße	q0- -4220,14311 -4207,14473 -4203,14515 -4188,14566 -4156,14677
@@ -3147,7 +3148,7 @@ Dinkelsbühler Steig: enge Straße	q0- 2615,25225 2649,25170 2694,25132 2775,25092
 #: by: anonymous
 Schlierbacher Weg: enge Straße	q1 10734,1178 10685,1159 10450,1202 10453,1242 10440,1283
 #: by: Andreas Weiß:
-Fritz-Kühn-Str.: enge Straße	q1 21681,-589 21666,-657 21479,-925 21445,-963
+Fritz-Kühn-Str.: enge Straße	q1 21688,-589 21666,-657 21487,-912 21445,-963
 #: by: Michael (hinundweg):
 #: confirmed_by: srt
 Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15856,14915
