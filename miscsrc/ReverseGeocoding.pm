@@ -137,13 +137,13 @@ Using from command line:
 
 Different geocoding modules:
 
-    perl -module bbbike miscsrc/ReverseGeocoding.pm 13.5 52.5
+    perl miscsrc/ReverseGeocoding.pm -module bbbike 13.5 52.5
 
-    perl -module cloudmade miscsrc/ReverseGeocoding.pm 13.5 52.5
+    perl miscsrc/ReverseGeocoding.pm -module cloudmade 13.5 52.5
 
 Different types (road, api, area):
 
-    perl -module bbbike -type road miscsrc/ReverseGeocoding.pm 13.5 52.5
+    perl miscsrc/ReverseGeocoding.pm -module bbbike -type road 13.5 52.5
 
 C<-type area> is the default. Note that the bbbike module does not
 have general poi search yet.
