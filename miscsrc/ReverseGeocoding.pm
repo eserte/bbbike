@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -75,25 +75,15 @@ use strict;
 }
 	
 {
-    package ReverseGeocoding::Cloudmade;
+    package ReverseGeocoding::Google;
     use vars qw(@ISA);
     @ISA = 'ReverseGeocoding';
 
     sub new {
 	my $class = shift;
 	
-	require Geo::Cloudmade;
-
-	my $apikey = do {
-	    my $file = "$ENV{HOME}/.cloudmadeapikey";
-	    open my $fh, $file
-		or main::status_message("Cannot get key from $file: $!", "die");
-	    local $_ = <$fh>;
-	    chomp;
-	    $_;
-	};
-
-	my $geo = Geo::Cloudmade->new($apikey);
+	require Geo::Coder::Google;
+	my $geo = Geo::Coder::Google->new(apiver => 3);
 
 	bless { geo => $geo }, $class;
     }
@@ -103,8 +93,26 @@ use strict;
 	$type = 'area' if !$type;
 	my($px, $py) = split /,/, $pxy;
 
-	my($res) = $self->{geo}->find_closest($type, [$py, $px], {return_geometry=>'False'});
-	defined $res ? $res->name : undef;
+	my $res = $self->{geo}->reverse_geocode(latlng => "$py,$px");
+	if (defined $res) {
+	    if ($type eq 'area') {
+		for my $component (@{ $res->{address_components} }) {
+		    if (grep { $_ eq 'locality' } @{ $component->{types} }) {
+			return $component->{long_name};
+		    }
+		}
+	    } elsif ($type eq 'road') {
+		for my $component (@{ $res->{address_components} }) {
+		    if (grep { $_ eq 'route' } @{ $component->{types} }) {
+			return $component->{long_name};
+		    }
+		}
+	    } else {
+		die "Unsupported type '$type'";
+	    }
+	} else {
+	    undef;
+	}
     }
 }
 
@@ -139,7 +147,7 @@ Different geocoding modules:
 
     perl miscsrc/ReverseGeocoding.pm -module bbbike 13.5 52.5
 
-    perl miscsrc/ReverseGeocoding.pm -module cloudmade 13.5 52.5
+    perl miscsrc/ReverseGeocoding.pm -module google 13.5 52.5
 
 Different types (road, api, area):
 
@@ -150,6 +158,13 @@ have general poi search yet.
 
 Inject location names into track meta files (see L<GPS::GpsmanData::Stats>):
 
-    perl -Mstrict -MYAML::XS=LoadFile,DumpFile -Imiscsrc -Ilib -MReverseGeocoding -e 'my $rb=ReverseGeocoding->new("bbbike"); my $rc=ReverseGeocoding->new("cloudmade"); for my $file (@ARGV) { my @route_name; my $d = LoadFile $file; next if $d->{route_name}; warn $file; for my $loc (@{$d->{route}||[]}) { my $res = $rb->find_closest($loc, "road"); if (!$res) { warn "   use cloudmade...\n"; $res = $rc->find_closest($loc, "road") . ", " . $rc->find_closest($loc) } push @route_name, $res } $d->{route_name} = \@route_name; DumpFile($file, $d) }' /tmp/trkstats/*.yml
+    perl -Mstrict -MYAML::XS=LoadFile,DumpFile -Imiscsrc -Ilib -MReverseGeocoding -e 'my $rb=ReverseGeocoding->new("bbbike"); my $rc=ReverseGeocoding->new("google"); for my $file (@ARGV) { my @route_name; my $d = LoadFile $file; next if $d->{route_name}; warn $file; for my $loc (@{$d->{route}||[]}) { my $res = $rb->find_closest($loc, "road"); if (!$res) { warn "   use cloudmade...\n"; $res = $rc->find_closest($loc, "road") . ", " . $rc->find_closest($loc) } push @route_name, $res } $d->{route_name} = \@route_name; DumpFile($file, $d) }' /tmp/trkstats/*.yml
+
+=head1 HISTORY
+
+This module implemented B<ReverseGeocoding::Cloudmade> until 2014-05,
+but at this time the free accounts at Cloudmade were switched off, so
+the the reference 3rd party implementation was replaced with
+B<ReverseGeocoding::Google>.
 
 =cut
