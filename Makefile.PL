@@ -243,8 +243,6 @@ my @req_table =
    'Geocoding über Googlemaps (API v3)'],
   [qw/Geo::Coder::Bing	0.10	all	0	plugin/,
    'Geocoding über Bing'],
-  [qw/Geo::Cloudmade	0	all	0	plugin/,
-   'Geocoding über Cloudmade'],
   [qw/Geo::Coder::OSM	0	all	0	plugin/,
    'Geocoding mit OpenStreetMap-Daten'],
   [qw/Flickr::API	0	all	0	plugin/,
