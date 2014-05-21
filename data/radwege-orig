@@ -575,14 +575,16 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14193,
 	RW0;RW0 8092,13467 8048,13578 8019,13650
 	RW2;RW2 8019,13650 7979,13733
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv
+#: source_id: id: IM_020408 vvv
 #: last_checked: 2014-03-07 vvv
-#: next_check: 2014-05-26 vvv
+#: next_check: 2016-09-30 vvv
 #: XXX während der Bauarbeiten ein Radstreifen, wie wird die Situation danach aussehen?
 	RW3?; 7979,13733 7943,13794 7589,14359
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen?
 gemeinsamer Rad- und Gehweg	RW2; 7589,14359 7943,13794 7979,13733
 #: next_check ^^^
 #: last_checked ^^^
+#: source_id ^^^
 #: by: ^^^
 aufgemalter Radweg teilweise kaum erkennbar	RW1;RW1 7589,14359 7597,14417
 	RW1;RW2 7741,14560 7597,14417
@@ -2579,7 +2581,7 @@ breiter asphaltierter Gehweg für Radfahrer frei	RW1; 17973,17772 18017,17716 181
 	RW4?; 10927,17022 10917,17088 10908,17142
 #: XXX wird die Radspur wieder hergestellt? Evtl. mit dem Ende der Bauarbeiten ? -> dann RW3; oder RW4;
 #: source_id: IM_021420
-#: last_checked: 2014-04-26
+#: last_checked: 2014-05-21
 #: next_check: 2014-08-31
 Radspur ist hier aufgehoben	RW0; 10908,17142 10917,17088 10927,17022
 	RW3; 10908,17142 10897,17274
@@ -2957,8 +2959,8 @@ auf beiden Seiten asphaltierter Rad- und Gehweg, mittlerweile schon mit Wurzelsc
 	RW6;RW6 -426,9473 -249,9479 73,9438
 gemeinsamer Rad- und Gehweg	RW2;RW2 16843,6712 17216,6308 17290,6228
 	RW2;RW2 17290,6228 17477,6031 17728,5756
-	RW4;RW4 8891,18545 9214,18666 9279,18724 9475,18862
-	RW3; 9475,18862 9501,18902
+	RW4;RW4 8891,18545 9214,18666 9279,18724 9465,18855
+	RW3; 9465,18855 9501,18902
 #: by: http://farm5.static.flickr.com/4145/5188901332_9b95d785d2.jpg
 	RW2;RW4? 8791,18605 8891,18545
 	RW3;RW1 8182,18761 8260,18765
@@ -4447,3 +4449,7 @@ Gehwegplatten und Asphalt im Wechsel	RW1; 15174,14638 15272,14691
 	RW3; 1368,-1 1345,184
 	RW6;RW6 13410,11447 13427,11431 13473,11456
 Gehweg für Radfahrer frei	RW1; 22162,1067 22092,999 22044,1018
+	RW3; 9881,18354 9821,18392
+	RW3;RW3 9821,18392 9565,18555
+	RW3; 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555
+	RW3;RW3 9457,18612 9366,18669 9279,18724

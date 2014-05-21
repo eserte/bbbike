@@ -302,8 +302,8 @@ Arberstr.	1 19424,9502 19407,9232
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
 Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
 Ringbahnstr.	1 12934,6967 13072,7013
-Stiftsweg	1s 11001,18528 11268,18851
-Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
+Stiftsweg	1s 11001,18528 11239,18832 11263,18842
+Bleicheroder Str.	1 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Spreepark	2 16023,8860 16161,8852
 Staakener Str.	1 -4112,14242 -4390,14257
@@ -2091,6 +2091,7 @@ Uferweg am Tegeler Hafen -> Berliner Str.: Mittelstreifen	3::igndisp 1863,20478 
 Berliner Str. -> Uferweg am Tegeler Hafen: Mittelstreifen	3::igndisp 1955,20435 1929,20501 1863,20478
 Mittelstreifen	3nocross::ignrte 10083,21848 10097,21809 10106,21784
 Am Nordgraben -> Dietzgenstr.: Mittelstreifen	3::igndisp 10177,21802 10097,21809 10106,21784
+Mittelstreifen	3nocross::ignrte 10120,21464 10118,21510 10114,21592 10111,21667
 Straßenbahntrasse	3nocross::ignrte 11693,22482 11812,22523 11940,22587
 Krugpfuhlweg -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11178,22999 11812,22523 11940,22587
 Rosenthaler Weg -> Krugpfuhlweg: Straßenbahntrasse	3::igndisp 11693,22482 11812,22523 11178,22999
@@ -2684,7 +2685,7 @@ Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,1
 Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019
 Schinkelplatz: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 10008,12274 9994,12368 9996,12401
 Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 9943,12364 9961,12273
-Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger)	2::inwork 17736,5441 17886,5587
+Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17736,5441 17886,5587
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
 Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,3422

@@ -257,15 +257,10 @@ Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,1
 # 
 # REMOVED (-> radwege-orig) --- #: XXX Markierungsarbeiten haben wohl angefangen, genauer anschauen --- #: last_checked: 2013-10-18 --- #: next_check: 2013-10-18 --- Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
 # REMOVED (realisiert) --- #: last_checked: 2013-10-25 --- #: next_check: 2013-11-25 --- Dietzgenstr.: wird auch in Richtung Süden markiert? wird auch zwischen Heinrich-Böll-Str. und Schillerstr. markiert?	? 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
+# REMOVED (realisiert) --- #: last_checked: 2014-04-06 vvv --- #: check_frequency: 100d vvv --- Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9881,18354 9821,18392 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9366,18669 9279,18724 --- Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2014-04-06 vvv
-#: check_frequency: 100d vvv
-Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9881,18354 9821,18392 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9366,18669 9279,18724
-Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
-#: next_check: 2014-05-01
+#: last_checked: 2014-05-21
+#: check_frequency: 90d
 Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11162,19844 11312,19920 11425,19978 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
 # 
 #: osm_watch: way id="33836252" version="11"
@@ -1328,7 +1323,7 @@ Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7422,13012
 Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3404 (Verfahren wurde eingeleitet)
-#: last_checked: 2014-04-06
+#: last_checked: 2014-05-21
 #: check_frequency: 180d
 #: priority: #C
 Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10056,17781 10033,17763
@@ -1794,41 +1789,10 @@ Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17432,12413 17437,12443
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2014 (Nummerierung)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2014 (Nummerierung)
 #: XXX PLZ=13158, soweit nicht anders angegeben
-#: osm_watch: way id="225014551" version="1"
-#: osm_watch: way id="42779047" version="6" (Umbenennung auch bei osm erfolgt)
-#: last_checked: 2014-04-06 (noch nicht umbenannt, aber Pfosten stehen schon) vvv
-#: next_check: 2014-05-06 vvv
-# 1.  oldname=Rollbergweg
-Liliensteinweg: schlechtes Kopfsteinpflaster, Q3	? 10120,21464 10099,21461 10071,21453
-Liliensteinweg: unbefestigte Straße, Q2-	? 10071,21453 10054,21448 10012,21436 9971,21424 9960,21421 9932,21413 9907,21406 9870,21395 9830,21384 9752,21362 9684,21337 9645,21323 9629,21317 9590,21303 9574,21297 9532,21282 9519,21277
-# XXX oldname=Hauptweg KGA Schönwald
-Liliensteinweg: unbefestigte Straße, Q2-	? 9519,21277 9497,21259 9481,21241 9472,21230 9455,21211 9445,21199 9429,21181 9420,21170 9394,21140 9344,21084
+#: last_checked: 2014-05-21 (noch nicht umbenannt, aber Pfosten stehen schon) vvv
+#: next_check: 2014-06-21 vvv
 # XXX oldname=Weg 12 KGA Schönwald
 Liliensteinweg [Nebenstrang]: unbefestigte Straße, Q2-	? 9464,21307 9475,21281 9497,21259
-# 2.  oldname=Alfredweg
-Lampertssteinweg: Gras, Q3	? 10099,21461 10066,21652
-# 3.  oldname=Heinrichweg
-Quirlweg: unbefestigte Straße, Q2-	? 10054,21448 10024,21638
-# 4.  oldname=Schrapeweg
-Papststeinweg: unbefestigte Straße, Q2-	? 10071,21453 10080,21298
-# 5.  oldname=Maxweg oldname=Ottoweg
-Rauensteinweg: unbefestigte Straße, Q2- (letzte Meter im Süden sind Gras)	? 9985,21625 10012,21436 10036,21284
-# 6.  oldname=Paulweg
-Pfaffensteinweg: unbefestigte Straße, Q2-	? 9946,21612 9971,21424
-# 7.  olname=Erichweg
-Hohler-Stein-Weg: Gehwegplatten in der Mitte, ansonsten unbefestigt, Q2	? 9960,21421 9986,21267
-# 8.  oldname=Adolfweg
-Zirkelsteinweg: unbefestigte Straße, Q2-	? 9903,21598 9932,21413
-# 9.  oldname=Gustavweg
-Friensteinweg: loser Schotter, Q2-	? 10126,21314 10080,21298 10036,21284 9986,21267 9944,21254
-Friensteinweg: unbefestigte Straße, Q2-	? 9944,21254 9907,21406 9866,21586
-# 10.  oldname=Rosenweg oldname=Williweg
-Rittersteinweg: Gras, Q3	? 9831,21575 9870,21395 9881,21331
-# 11.  oldname=Weidenweg KGA Am Rollberg
-Rauschensteinweg: unbefestigte Straße, Q2-	? 9790,21563 9830,21384
-# 12.  oldname=Bergeshöhe Nord/Süd
-Cupetiussteinweg: unbefestigte Straße und Kopfsteinpflaster, Q3+	? 9689,21532 9752,21362
-Cupetiussteinweg: unbefestigte Straße, Q2-	? 9752,21362 9803,21224
 # 13.  oldname=Weg 9 KGA Schönwald
 Zschirnsteinweg: unbefestigte Straße, Q2-	? 9645,21323 9590,21464
 # 14.  oldname=Weg 6 KGA Schönwald
@@ -3636,8 +3600,8 @@ Engelwurzweg: (früher Waldweg) Qualität? Geht es Richtung Westen noch weiter?	? 
 #: XXX neue Straßennamen für 8 Privatwege in der Anlage Nordend vvv
 #: XXX ebenso: Lehmweg, siehe strassen-orig vvv
 #: next_check_id: NORDEND-2014 vvv
-#: last_checked: 2014-04-06 vvv
-#: next_check: 2014-05-26 (Wirksamkeit der Benennung) vvv
+#: last_checked: 2014-05-21 vvv
+#: next_check: 2014-06-21 vvv
 #: XXX oldname: Tomatenweg; ignore_oldname_file: yes
 Tonweg: unbefestigter Weg, Q2-; Umbenennung?	? 10177,21802 10211,21697
 Buntsteinweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10111,21667 10211,21697 10269,21718

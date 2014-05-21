@@ -1374,7 +1374,7 @@ Im Brachfeldwinkel: enge Straﬂe	q1 3024,21286 2944,21464
 Moosdorfstr.: enge Straﬂe	q1 14305,9213 14382,9299
 Horst-Caspar-Steig: Fuﬂg‰nger	q2 15923,2129 15912,2100 15836,2113 15767,2097 15705,2085 15467,2073 15466,2049 15313,2041
 Dusekestr.: sehr schmale Straﬂe	q1 10473,18113 10498,18014 10479,18007 10525,17862 10548,17817
-Idastr.: schmale Fahrbahn durch parkende Fahrzeuge	q2 10697,19952 10829,19676
+Idastr.: schmale Fahrbahn	q1 10697,19952 10829,19676
 Freiheitsweg: relativ eng	q1 6636,18934 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
 Engadiner Weg: enge Straﬂe, evtl. Gegenverkehr	q1 3716,2063 3818,2070 3851,2148 3805,2196
 Am Triftpark: Temposchwellen	q2 4450,20388 4407,20412 4386,20444 4407,20482 4436,20531 4498,20515
@@ -1428,7 +1428,7 @@ Borgsdorfer Str.: enge Straﬂe mit parkenden Autos	q0 6473,20858 6951,20898
 Germendorfer Str.: enge Straﬂe mit parkenden Autos	q0 6368,20956 6494,20944 6972,20993 7079,21008 7150,21018
 Wentowsteig: enge Straﬂe mit parkenden Autos	q0 6904,20692 6930,20808 6943,20862 6951,20898 6972,20993
 (Spreeuferweg): Fuﬂg‰nger	q1 4537,12531 4501,12544 4334,12551
-(Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8791,19249 8947,19166 9446,18855 9475,18862
+(Schˆnholzer Heide, parallel zur Friesenstr.): Fuﬂg‰nger	q1 8765,19288 8791,19249 8947,19166 9446,18855 9465,18855
 (Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1051,5525 825,5420 541,5306
 (Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1051,5525 1697,5938
@@ -1487,7 +1487,7 @@ Albestr.: enge Straﬂe	q1 5422,7461 5448,7436 5640,7435 5811,7433
 Leuthener Str.: enge Straﬂe	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 s¸dliches Spreeufer: besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 Berchtesgadener Str.: Fuﬂg‰nger, Bordsteine	q2 6361,9175 6359,9244
-Waldstr.: enge Straﬂe	q1 9717,20501 9724,20291 9723,20269
+Waldstr.: enge Straﬂe	q0 9717,20501 9724,20291 9723,20269
 Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3240,12966 3283,13132 3310,13253 3349,13406 3371,13501 3395,13605
 (Bad Kissingen): Fuﬂg‰nger	q2 3634,7601 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): Fuﬂg‰nger, teilweise eng	q3 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
@@ -2173,7 +2173,7 @@ Wˆhlertstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8442,
 Pflugstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8669,14550 8776,14364
 Schwartzkopffstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8776,14364 8607,14253
 Barbarastr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 6456,3038 6372,2959 6329,2916 6359,2875 6372,2856
-Stiftsweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11001,18528 11268,18851
+Stiftsweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11001,18528 11239,18832 11263,18842
 Steilpfad: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 3375,21230 3280,21477
 Erkelenzdamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261
 Privatstr. 14: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13159,17196 13103,17280

@@ -1994,7 +1994,8 @@ Dusekestr.: sehr schmale Straße	q1 10473,18113 10498,18014 10479,18007 10525,178
 #: by: ^^^
 #: by: Stephan Lohse:
 #: note: beim Eintrag wurde "13 km/h" angegeben:
-Idastr.: schmale Fahrbahn durch parkende Fahrzeuge	q2 10697,19952 10829,19676
+#: corrected_by: srt (q2 -> q1; "durch parkende Fahrzeuge" gestrichen, Enge eigentlich durch schmalen Asphaltstreifen)
+Idastr.: schmale Fahrbahn	q1 10697,19952 10829,19676
 #: by: Igor Smikalla:
 Freiheitsweg: relativ eng	q1 6636,18934 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
 #: by: taztaz: 
@@ -2118,7 +2119,7 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 #: by: Peter Held:
 (Spreeuferweg): Fußgänger	q1 4537,12531 4501,12544 4334,12551
 #: by: Johannes Nerger:
-(Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8765,19288 8791,19249 8947,19166 9446,18855 9475,18862
+(Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8765,19288 8791,19249 8947,19166 9446,18855 9465,18855
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jörn Busch:
 #: corrected_by: srt (q2 -> q1)
@@ -2232,7 +2233,8 @@ südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7
 #: by: Julia (jbrauch):
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6359,9244
 #: by: Uta Voigt:
-Waldstr.: enge Straße	q1 9717,20501 9724,20291 9723,20269
+#: corrected_by: srt/policy (q1 -> ...)
+Waldstr.: enge Straße	q0- 9717,20501 9724,20291 9723,20269
 #: by: Wolfram (...007...):
 Kamminer Str.: unübersichtliche Kreuzungen, parkende PKWs	q1 3240,12966 3283,13132 3310,13253 3349,13406 3371,13501 3395,13605
 (Bad Kissingen): Fußgänger	q2 3634,7601 3652,7795

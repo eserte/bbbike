@@ -372,9 +372,9 @@ Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 222
 Ringbahnstr.	1 12934,6967 13072,7013
 #: by: Robert J. vvv
 #: corrected_by: Michael Kiekebusch (Radfahren auf breiten Gehweg möglich)
-Stiftsweg	1s:q3 11001,18528 11268,18851
+Stiftsweg	1s:q3 11001,18528 11239,18832 11263,18842
 #: note: zur Not könnte man entgegengesetzt auf dem Gehweg fahren, oder sogar auf dem für die Straßenbahn reservierten Fahrbahnteil
-Bleicheroder Str.	1 11268,18851 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
+Bleicheroder Str.	1 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 #: by: ^^^
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Spreepark	2 16023,8860 16161,8852
@@ -1690,6 +1690,7 @@ Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4206,6820 4237,6840
 Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
 Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
+Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21592 10111,21667
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
@@ -2029,7 +2030,7 @@ Drängelgitter	BNP:3::trailer=10 10062,15927
 #: next_check_id: LORTZING-2014
 #: XXX eventuell temporär wegen der Baustraße
 #: XXX siehe auch in zebrastreifen-orig
-#: last_checked: 2014-02-26
+#: last_checked: 2014-05-21
 #: check_frequency: 120d
 zwei weite Drängelgitter	BNP:4::trailer=12 10038,15418
 Schranke	BNP:3 -7969,-1659
@@ -2530,10 +2531,10 @@ Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 99
 # 
 #: next_check_id: STERNDAMM-2014
 #: source_id: IM_020145
-#: valid: -20140614
+#: by: http://www.tagesspiegel.de/berlin/sperrung-am-bahnhof-schoeneweide-zwangsgeld-drohung-gegen-die-bahn/9923866.html
 #: last_checked: 2014-05-17
-#: next_check: 2014-06-14
-Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger)	2::inwork 17736,5441 17886,5587
+#: next_check: 2014-07-30 (Regelung wird überprüft)
+Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17736,5441 17886,5587
 # 
 #: next_check_id: GRENZALLEE-2014
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml
@@ -2632,7 +2633,7 @@ An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 #: next_check_id: FLORAGAERTEN-2014
 #: osm_watch: way id="201628184" version="3"
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2014-02-26
+#: last_checked: 2014-05-21
 #: check_frequency: 90d
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 # 

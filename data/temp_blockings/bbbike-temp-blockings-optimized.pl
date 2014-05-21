@@ -3332,7 +3332,20 @@ userdel	q4::inwork 13085,7904 13117,7939 13151,7914
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
+         'until' => 1401458400,
+         'text' => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
+         'from' => 1370210400,
+         'id' => 2435,
+         'data' => '#: source_id: INKO_117520
+#: source_id: IM_021030
+#: last_checked: 2014-05-21
+#: next_check: 2014-05-30
+userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'http://www.kindertag-berlin.de/',
          'data' => 'userdel	2::temp 20755,5750 20716,6029 20708,6089 20623,6136 20453,6211 20464,6237
@@ -3508,17 +3521,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020145',
-         'until' => 1402758000,
-         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), 12.8.2013 06:00 Uhr bis 14.6.2014 17:00 Uhr',
-         'from' => 1376193600,
-         'id' => 2469,
-         'data' => '#: next_check_id: STERNDAMM-2014
-userdel	2::inwork 17736,5441 17886,5587
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3799,7 +3802,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
-#: last_checked: 2014-04-26
+#: last_checked: 2014-05-21
 #: check_frequency: 30d
 userdel	q3::inwork 11673,16003 11567,15842
 ',
@@ -3934,6 +3937,28 @@ userdel	2::inwork 554,23349 658,23395
          'from' => 1402264800,
          'id' => 2571,
          'data' => 'userdel	q4::inwork 12794,8103 12753,8187 12714,8249
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_021961',
+         'until' => 1404165599,
+         'text' => 'Ellen-Epstein-Str. zwischen Erna-Samuel-Str. und Quitzowstr.: Baustelle, Straße gesperrt, ab: 22.05.2014 08 Uhr bis Ende Juni 2014 ',
+         'from' => 1400536800,
+         'id' => 2572,
+         'data' => '#: XXX wie sieht die Situation nach den Bauarbeiten aus? Rückbau?
+#: next_check: 2014-06-30
+userdel	2::inwork 6074,14194 6074,14215 6084,14251 6118,14289
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20140521.1005.397374.html',
+         'until' => 1405202399,
+         'text' => 'Steigerwaldstr.: Einbahnstraßenregelung, offen Richtung Norden, vom 26. Mai bis 12. Juli 2014',
+         'from' => 1401055200,
+         'id' => 2573,
+         'data' => 'userdel	q4::inwork; -4630,15978 -4653,15896 -4656,15839 -4655,15803 -4639,15726 -4701,15563 -4710,15530
 ',
          'type' => 'handicap'
        }
