@@ -796,9 +796,11 @@ Marie-Elisabeth-L¸ders-Str.	N 4507,11728 4476,11811 4503,11931
 Fasanenstr. (Charlottenburg, Wilmersdorf)	N 5223,9810 5209,9978 5195,10175 5198,10234 5196,10398 5215,10711 5230,10919 5236,10994 5258,11285
 Fasanenstr. (Charlottenburg, Wilmersdorf)	H 5258,11285 5352,11502 5356,11512 5456,11742
 Meinekestr.	N 5355,10322 5329,10422 5351,10760
+#: next_check_id: JOACHIMSTHALER-2014
 #: XXX_indoor Straﬂenname bekommt in Zukunft ein "h"
 #: XXX_indoor Berlin.coords.data anpassen, _sichtbarer_ oldnames-Eintrag nicht notwendig
-#: next_check: 2014-04-09
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140520.1410.397359.html (Umbenennung wurde beschlossen)
+#: next_check: 2014-07-20 (... Straﬂenschilder innerhalb der n‰chsten zwei bis drei Monate ausgetauscht werden)
 Joachimstaler Str.	HH 5542,11075 5488,10978 5475,10808 5471,10719 5458,10443
 Bundesallee	HH 5458,10443 5450,10338 5463,9961 5464,9914 5467,9866 5477,9621 5493,9367 5495,9263 5503,8982 5505,8832
 Bundesallee	HH 5505,8832 5510,8709 5502,8599 5465,8511 5427,8412 5399,8344
@@ -3921,6 +3923,7 @@ Kleine Homeyerstr.	N 9801,18686 9828,18742 9735,18798 9643,18808 9613,18758
 #: XXX wird diese Straﬂe umbenannt? Neuer Name "Beatrice-Zweig-Str."
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3722 ("Benennungsabsicht")
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036892092299/892092299/00059995/95-Anlagen/02/BenennungsabsichtfuerdieoeffentlicheStrasse201.pdf
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3790 ("Benennung")
 #: next_check: 2014-05-21
 Straﬂe 201	N 9532,18819 9366,18669
 Friesenstr. (Niederschˆnhausen)	N 8311,19458 8331,19458 8396,19422 8467,19408 8644,19345 8765,19288
@@ -12294,7 +12297,7 @@ Am Pankepark	N 8282,14116 8238,14181 8152,14130
 Ida-von-Arnim-Str.	N 8077,14227 8251,14337
 #: next_check_id: BND-2014
 #: XXX noch nicht ausgeschildert
-#: last_checked: 2014-04-08
+#: last_checked: 2014-05-16
 #: check_frequency: 60d
 (zuk¸nftige Ida-von-Arnim-Str.)	N 8251,14337 8442,14456
 Schwarzer Weg (Mitte)	N 8574,13666 8426,13909
@@ -14629,7 +14632,7 @@ Narzissenpfad	N -7387,14951 -7523,14969
 (Narzissenpfad - Hahnenfuﬂpfad)	NN -7523,14969 -7574,14977 -7609,15007
 (Hahnenfuﬂpfad - Isenburger Weg)	NN -7609,15007 -7694,15030 -7784,15065 -7795,15090 -7842,15119 -7882,15129
 Orangensteig	N -7523,14969 -7517,15052 -7511,15160
-Pilgramer Str.	NH 25138,11215 25139,11104 25145,10841 25149,10731 25149,10695 25150,10562 25150,10555 25148,10483 25135,10449 25112,10415 25048,10317
+Pilgramer Str.	NH 25138,11215 25139,11104 25141,11024 25145,10841 25149,10731 25149,10695 25150,10562 25150,10555 25148,10483 25135,10449 25112,10415 25048,10317
 Pilgramer Str.	N 25048,10317 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456 24519,9349 24471,9241 24412,9103 24358,8976 24294,8827 24239,8701 24217,8521 24195,8348 24167,8196 24137,8038 24112,7907 24087,7776 24074,7695
 Pilgramer Str. [286-294D]	N 25150,10562 25211,10559 25347,10543 25382,10539
 Straﬂe 48 (Mahlsdorf)	N 25149,10695 25089,10697

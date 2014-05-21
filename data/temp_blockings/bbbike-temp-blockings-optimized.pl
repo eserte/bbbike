@@ -2597,25 +2597,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 34443,1951 34250,2546
-',
-         'periodic' => 1,
-         'until' => 1400450399,
-         'from' => 1400104800,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Erkner: Heimatfest, 16.5.2014 bis 18.5.2014',
-         'type' => 'gesperrt',
-         'id' => 2078
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2913,28 +2895,7 @@ userdel	2::temp 18870,5833 18932,5926
          'type' => 'gesperrt',
          'id' => 2206
        },
-       {
-         'data' => 'userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-userdel	q4::temp 11275,8387 11230,8402
-userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-',
-         'periodic' => 1,
-         'until' => 1400536799,
-         'from' => 1398290400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 25.04.2014 bis 18.05.2014',
-         'type' => 'handicap',
-         'id' => 2207
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3052,6 +3013,9 @@ userdel	2::temp 12635,12629 12596,12472
          'from' => undef,
          'id' => 2271,
          'data' => '#: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2011/1122_MI.pdf
+#: XXX zieht im Oktober 2014 an den Spittelmarkt
+#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6083
+#: next_check: 2014-10-01
 	q4::temp:clock 9925,11947 9878,11857
 ',
          'type' => 'gesperrt'
@@ -3350,7 +3314,7 @@ userdel	q2::inwork 5258,11285 5236,10994
          'id' => 2425,
          'data' => '#: next_check_id: RICHARDSTR-2014
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-04-11
+#: last_checked: 2014-05-20
 #: check_frequency: 30d
 # REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
@@ -3364,27 +3328,7 @@ userdel	q4::inwork 13085,7904 13117,7939 13151,7914
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2014
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
-userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
-',
-         'periodic' => 1,
-         'until' => 1400450399,
-         'from' => 1400191200,
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz), Straße rund um den Dorfteich vermutlich gesperrt (17. und 18. Mai 2014)',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              5
-                            ]
-                          ],
-         'type' => 'handicap',
-         'id' => 2431
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3664,7 +3608,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2498,
          'data' => '#: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-05-06
+#: last_checked: 2014-05-20
 userdel	2::inwork 10086,12725 10166,12777
 ',
          'type' => 'gesperrt'
@@ -3925,7 +3869,7 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
          'from' => undef,
          'id' => 2563,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-05-06
+#: last_checked: 2014-05-20
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
@@ -3970,6 +3914,26 @@ userdel	2::inwork 554,23349 658,23395
          'from' => 1380492000,
          'id' => 2569,
          'data' => '	q4::inwork; 1329,-753 1235,-714 1212,-706 1067,-699 950,-680 791,-598 758,-582 723,-580 709,-582
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_021939',
+         'until' => 1401073200,
+         'text' => 'Seehofstr. (Zehlendorf):zwischen Dahlemer Weg und Hammerstr. Baustelle, Fahrbahn gesperrt, bis 26.05.2014 05:00 Uhr ',
+         'from' => 1400392980,
+         'id' => 2570,
+         'data' => 'userdel	q4::inwork 1945,2127 1812,2160
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140520.1040.397353.html',
+         'until' => 1402696799,
+         'text' => 'Karl-Marx-Str.: Bauarbeiten in Höhe Werbellinstr., Fahrbahn gesperrt, vom 10. Juni 2014 bis zum 13. Juni 2014 ',
+         'from' => 1402264800,
+         'id' => 2571,
+         'data' => 'userdel	q4::inwork 12794,8103 12753,8187 12714,8249
 ',
          'type' => 'handicap'
        }

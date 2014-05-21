@@ -2520,7 +2520,7 @@ Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,1
 #: next_check_id ^^^
 # 
 #: next_check_id: SCHINKELPLATZ_2014 vvv
-#: last_checked: 2014-05-14 vvv
+#: last_checked: 2014-05-20 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 10008,12274 9994,12368 9996,12401
 Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 9943,12364 9961,12273
@@ -2697,7 +2697,7 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert?
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2014-05-06
+#: last_checked: 2014-05-20
 #: next_check: 2014-09-30
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
@@ -2762,8 +2762,8 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2014-05-14 vvv
-#: next_check: 2014-06-01 vvv
+#: last_checked: 2014-05-20 vvv
+#: next_check: 2015-06-01 (voraussichtliche Eröffnung Oktober 2015) vvv
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
@@ -2773,8 +2773,8 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: last_checked: ^^^
 #: next_check_id: ^^^
 # 
-#: last_checked: 2014-03-31
-#: next_check: 2015-03-31
+#: last_checked: 2014-05-20
+#: next_check: 2015-05-31 (Eröffnung 2019 geplant)
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 # REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5062,6295 4997,6331 4971,6345

@@ -313,6 +313,7 @@ Charlottenburger Str.: Asphalt, ein bisschen wellig	Q0- 12568,16599 12357,16696 
 Engeldamm: Asphalt	Q0 12025,11346 11985,11261 11921,11185 11800,11118 11656,11106 11473,11180
 Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10511,10800 10397,10852 10103,10989
 Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11808,11482
+#: note: alter brüchiger Asphaltstreifen existiert auch hier, aber wegen diagonal parkender Autos nicht benutzbar
 Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2- 12066,9558 12047,9429 12074,9217 12078,9065
@@ -410,12 +411,12 @@ Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712 13378,7695
 Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168 12870,8087
 #: next_check_id: RICHARDSTR-2014
 #: XXX Asphalt wird gerade aufgetragen, danach Q0
-#: last_checked: 2014-04-11
+#: last_checked: 2014-05-20
 Richardstr.: Asphalt	Q0- 12870,8087 13085,7904
 Richardstr.: Kopfsteinpflaster, OK	Q1- 13085,7904 13103,7889
 #: next_check_id: RICHARDSTR-2014
 #: XXX bleibt das Kopfsteinpflaster so? Oder wird hier auch asphaltiert?
-#: last_checked: 2014-04-11
+#: last_checked: 2014-05-20
 Richardstr.: Kopfsteinpflaster, OK	Q1- 13103,7889 13150,7845
 Richardstr.: Kopfsteinpflaster	Q2 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
@@ -1647,9 +1648,15 @@ Bornsdorfer Str.: mäßiges bis gutes Kopfsteinpflaster	Q2+ 12698,7677 12775,7725 
 Saltykowstr.: gutes kleinteiliges Kopfsteinpflaster	Q1 12726,7887 12865,7923
 Uthmannstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 12914,7785 13150,7845
 Herrnhuter Weg: Kopfsteinpflaster	Q2 12898,7832 13103,7889
-Jan-Hus-Weg: Asphalt	Q0 13085,7904 13117,7939
+#: next_check_id: RICHARDSTR-2014
+#: XXX wie wird die Fahrbahnbeschaffenheit nach den Bauarbeiten aussehen? (früher Asphalt, Q0)
+#: last_checked: 2014-05-20
+Jan-Hus-Weg: unbefestigt	Q2 13085,7904 13117,7939
 Kirchgasse (Neukölln): gutes Kopfsteinpflaster	Q1 12992,8125 13046,8048
-Kirchgasse (Neukölln): asphaltiert	Q0 13117,7939 13151,7914
+#: next_check_id: RICHARDSTR-2014
+#: XXX wie wird die Fahrbahnbeschaffenheit nach den Bauarbeiten aussehen? (früher Asphalt, Q0)
+#: last_checked: 2014-05-20
+Kirchgasse (Neukölln): unbefestigt	Q2 13117,7939 13151,7914
 Kirchgasse (Neukölln): schlechtes Kopfsteinpflaster	Q3 13151,7914 13268,7801 13292,7779 13306,7765
 Kirchgasse (Neukölln): Kopfsteinpflaster	Q2 13292,7779 13245,7742
 Gerlachsheimer Weg: Gehwegplatten	Q0 13151,7914 13251,7972
@@ -4230,7 +4237,7 @@ Vierradener Weg: schlechtes Kopfsteinpflaster	Q3 24112,7907 24265,7879
 Donathstr.: Beton	Q0 24081,8048 24059,7918
 Pilgramer Str.: Beton	Q0 24137,8038 24112,7907
 Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 24112,7907 24087,7776 24074,7695
-Pilgramer Str.: Asphalt	Q0 25138,11215 25139,11104 25145,10841
+Pilgramer Str.: Asphalt	Q0 25138,11215 25139,11104 25141,11024 25145,10841
 Pilgramer Str.: Beton	Q0 25145,10841 25149,10731 25149,10695 25150,10562 25150,10555 25148,10483 25135,10449 25112,10415 25048,10317
 Pilgramer Str.: Asphalt	Q0 25048,10317 24984,10204
 Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456
@@ -8679,7 +8686,7 @@ Heidenelkenweg: Verbundsteinpflaster	Q0- 16112,12622 16111,12685 16073,12685 160
 #: next_check_id: RITTER-2014
 #: XXX nach den Bauarbeiten wird sich Qualität ändern
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2014-02-05
+#: last_checked: 2014-05-20
 #: check_frequency: 90d
 Ritterstr.: teilweise unbefestigt und holprig	Q1- 9763,11148 9861,11103
 #: note: berlinsis meint hierzu: "fester Waldweg, Q2" (falls er diesen Weg überhaupt meint)

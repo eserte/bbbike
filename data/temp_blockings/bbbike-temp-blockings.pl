@@ -19768,6 +19768,9 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2011/1122_MI.pdf
+#: XXX zieht im Oktober 2014 an den Spittelmarkt
+#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6083
+#: next_check: 2014-10-01
 	q4::temp:clock 9925,11947 9878,11857
 EOF
      },
@@ -21281,7 +21284,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: RICHARDSTR-2014
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-04-11
+#: last_checked: 2014-05-20
 #: check_frequency: 30d
 # REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
@@ -22064,7 +22067,7 @@ EOF
        data  => <<EOF,
 #: XXX wann wird die Brücke wiedereröffnet?
 #: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-05-06
+#: last_checked: 2014-05-20
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
@@ -22702,7 +22705,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-05-06
+#: last_checked: 2014-05-20
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 EOF
@@ -22764,6 +22767,24 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork; 1329,-753 1235,-714 1212,-706 1067,-699 950,-680 791,-598 758,-582 723,-580 709,-582
+EOF
+     },
+     { from  => 1400392980, # 2014-05-18 08:03
+       until => 1401073200, # 2014-05-26 05:00
+       text  => 'Seehofstr. (Zehlendorf):zwischen Dahlemer Weg und Hammerstr. Baustelle, Fahrbahn gesperrt, bis 26.05.2014 05:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_021939',
+       data  => <<EOF,
+userdel	q4::inwork 1945,2127 1812,2160
+EOF
+     },
+     { from  => 1402264800, # 2014-06-09 00:00
+       until => 1402696799, # 2014-06-13 23:59
+       text  => 'Karl-Marx-Str.: Bauarbeiten in Höhe Werbellinstr., Fahrbahn gesperrt, vom 10. Juni 2014 bis zum 13. Juni 2014 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140520.1040.397353.html',
+       data  => <<EOF,
+userdel	q4::inwork 12794,8103 12753,8187 12714,8249
 EOF
      },
     );
