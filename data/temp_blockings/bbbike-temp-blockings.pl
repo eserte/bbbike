@@ -22567,7 +22567,7 @@ userdel	q4::inwork 7373,14566 7314,14599
 EOF
      },
      { from  => $isodate2epoch->("2014-04-03 12:00:00"),
-       until => $isodate2epoch->("2014-05-23 18:00:00"),
+       until => 1400781920, # $isodate2epoch->("2014-05-23 18:00:00"),
        text  => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Alfred-Jung-Str., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
        type  => 'handicap',
        source_id => 'IM_021595',
@@ -22789,7 +22789,7 @@ userdel	q4::inwork 12794,8103 12753,8187 12714,8249
 EOF
      },
      { from  => 1400536800, # 2014-05-20 00:00
-       until => 1404165599, # 2014-06-30 23:59
+       until => $isodate2epoch->("2014-06-30 16:00:00"), # 1404165599, # 2014-06-30 23:59
        text  => 'Ellen-Epstein-Str. zwischen Erna-Samuel-Str. und Quitzowstr.: Baustelle, Straße gesperrt, ab: 22.05.2014 08 Uhr bis Ende Juni 2014 ',
        type  => 'gesperrt',
        source_id => 'IM_021961',

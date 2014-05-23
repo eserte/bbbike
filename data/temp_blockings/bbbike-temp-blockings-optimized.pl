@@ -3782,16 +3782,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_021595',
-         'until' => 1400860800,
-         'text' => 'Scheffelstr.: Baustelle, Fahrtrichtung Richtung Osten zwischen Paul-Junius-Str. und Alfred-Jung-Str., gesperrt 04.04.2014 08:00 Uhr bis Ende Mai 2014',
-         'from' => 1396519200,
-         'id' => 2549,
-         'data' => 'userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3942,7 +3933,7 @@ userdel	2::inwork 554,23349 658,23395
        },
        {
          'source_id' => 'IM_021961',
-         'until' => 1404165599,
+         'until' => 1404136800,
          'text' => 'Ellen-Epstein-Str. zwischen Erna-Samuel-Str. und Quitzowstr.: Baustelle, Straße gesperrt, ab: 22.05.2014 08 Uhr bis Ende Juni 2014 ',
          'from' => 1400536800,
          'id' => 2572,
