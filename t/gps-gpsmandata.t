@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string eq_or_diff);
 use File::Temp qw(tempfile);
 
-plan tests => 61;
+plan tests => 68;
 
 use_ok 'GPS::GpsmanData';
 
@@ -172,8 +172,10 @@ EOF
 
     is($gps->Chunks->[0]->TrackAttrs->{'srt:vehicle'}, 'pedes', 'Expected attribute');
     is($gps->Chunks->[0]->Name, 'ACTIVE LOG', 'Expected first track name');
+    is($gps->Chunks->[0]->IsTrackSegment, 0, 'real track');
     is($gps->Chunks->[1]->TrackAttrs->{'srt:vehicle'}, 'u-bahn', 'Expected attribute in 2nd chunk');
     is($gps->Chunks->[1]->Name, 'ACTIVE LOG 12', 'Expected track name in 2nd chunk');
+    is($gps->Chunks->[1]->IsTrackSegment, 0, 'real track');
 
     my @flat_wpt = $gps->flat_track;
     is(scalar(@flat_wpt), 4, 'Found four wpts in track');
@@ -261,6 +263,31 @@ EOF
 
 	eq_or_diff $trk_written, $normalized_trk_sample, 'Roundtrip';
     }
+}
+
+{
+    # track segments
+    my $trk_sample_file = <<'EOF';
+!Format: DDD 1 WGS 84
+!Creation: yes
+
+!T:	TRACK
+	31-Dec-1989 01:00:00	N53.0945536138593	E12.8748931621168	0
+	31-Dec-1989 01:00:00	N53.0943054383567	E12.8761002946735	0
+!TS:
+	31-Dec-1989 01:00:00	N53.0940612438672	E12.877531259314	0
+	31-Dec-1989 01:00:00	N53.0933655007711	E12.8813741665033	0
+EOF
+
+    my $gps = GPS::GpsmanMultiData->new;
+    $gps->parse($trk_sample_file);
+
+    is(scalar @{ $gps->Chunks }, 2, 'Expected number of chunks');
+
+    is($gps->Chunks->[0]->IsTrackSegment, 0, 'First chunk is real track');
+    is($gps->Chunks->[0]->Name, 'TRACK', 'Name of track');
+    is($gps->Chunks->[1]->IsTrackSegment, 1, 'Second chunk is track segment');
+    is($gps->Chunks->[1]->Name, undef, 'No name for track segment');
 }
 
 {
