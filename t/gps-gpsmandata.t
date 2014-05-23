@@ -25,10 +25,10 @@ use lib (
 	 $FindBin::RealBin,
 	);
 
-use BBBikeTest qw(gpxlint_string);
+use BBBikeTest qw(gpxlint_string eq_or_diff);
 use File::Temp qw(tempfile);
 
-plan tests => 47;
+plan tests => 60;
 
 use_ok 'GPS::GpsmanData';
 
@@ -199,6 +199,55 @@ EOF
 	my @route = GPS::GpsmanMultiData->convert_to_route($tmpfile);
 	is scalar(@route), 4, 'Found four points in track/route';
 	is join(",", @{ $route[0] }), '14379,14107', 'expected first coordinate';
+    }
+}
+
+{
+    # track sample with DDD
+    my $trk_sample_file = <<'EOF';
+% Written by /home/e/eserte/src/bbbike/bbbike Wed Dec 28 19:10:26 2005
+% Edit at your own risk!
+
+!Format: DDD 1 WGS 84
+!Creation: yes
+
+!T:	TRACK
+	31-Dec-1989 01:00:00	N53.0945536138593	E12.8748931621168	0
+	31-Dec-1989 01:00:00	N53.0943054383567	E12.8761002946735	0
+!T:	TRACK
+	31-Dec-1989 01:00:00	N53.0940612438672	E12.877531259314	0
+	31-Dec-1989 01:00:00	N53.0933655007711	E12.8813741665033	0
+EOF
+
+    my $gps = GPS::GpsmanMultiData->new;
+    $gps->parse($trk_sample_file);
+
+    is(scalar @{ $gps->Chunks }, 2, 'Expected number of chunks');
+
+    is($gps->Chunks->[0]->Points->[0]->Latitude, 53.0945536138593, 'Expected first latitude');
+    is($gps->Chunks->[0]->Points->[0]->Longitude, 12.8748931621168, 'Expected first longitude');
+
+    is($gps->Chunks->[-1]->Points->[-1]->Latitude, 53.0933655007711, 'Expected last latitude');
+    is($gps->Chunks->[-1]->Points->[-1]->Longitude, 12.8813741665033, 'Expected last longitude');
+
+    my $gpx = $gps->as_gpx(symtocmt => 1);
+    gpxlint_string($gpx);
+
+    {
+	my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
+	$root->setNamespaceDeclURI(undef, undef);
+	is($root->findvalue('/gpx/trk[1]/name'), q{TRACK}, 'Found 1st name');
+	is($root->findvalue('/gpx/trk[1]/trkseg/trkpt[1]/@lat'), 53.0945536138593, 'First latitude in gpx');
+	is($root->findvalue('/gpx/trk[1]/trkseg/trkpt[1]/@lon'), 12.8748931621168, 'First longitude in gpx');
+	is($root->findvalue('/gpx/trk[2]/name'), q{TRACK}, 'Found 2nd name');
+	is($root->findvalue('/gpx/trk[2]/trkseg/trkpt[2]/@lat'), 53.0933655007711, 'Last latitude in gpx');
+	is($root->findvalue('/gpx/trk[2]/trkseg/trkpt[2]/@lon'), 12.8813741665033, 'Last longitude in gpx');
+    }
+
+    {
+	local $TODO = "Should create a DDD file again";
+	my $trk_written = $gps->as_string;
+	eq_or_diff $trk_written, $trk_sample_file, 'Roundtrip';
     }
 }
 
