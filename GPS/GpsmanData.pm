@@ -1203,6 +1203,8 @@ sub convert_to_route {
     @res;
 }
 
+use constant GPXX_NS => 'http://www.garmin.com/xmlschemas/GpxExtensions/v3';
+
 # Options:
 #   symtocmt => $bool: hack to put symbol name into comment, for gpx
 #                      renderers not dealing the sym tag (e.g. merkaartor)
@@ -1215,6 +1217,7 @@ sub as_gpx {
     my $sym_to_cmt = delete $args{symtocmt};
     my $skip_cmt = $sym_to_cmt ? 1 : delete $args{skipcmt};
     my $auto_skip_cmt = exists $args{autoskipcmt} ? delete $args{autoskipcmt} : 1;
+    my $do_gpxx = exists $args{gpxx} ? delete $args{gpxx} : 1;
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     my @std_wpt_as_gpx_args = (symtocmt => $sym_to_cmt, skipcmt => $skip_cmt, autoskipcmt => $auto_skip_cmt);
@@ -1227,8 +1230,14 @@ sub as_gpx {
     $gpx->setAttribute("version", "1.1");
     $gpx->setAttribute("creator", "GPS::GpsmanData $GPS::GpsmanData::VERSION - http://www.bbbike.de");
     $gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
-    $gpx->setNamespace("http://www.topografix.com/GPX/1/1");
-    $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd");
+    if ($do_gpxx) {
+	$gpx->setNamespace(GPXX_NS,'gpxx');
+    }
+    $gpx->setNamespace("http://www.topografix.com/GPX/1/1"); # last namespace is the default one
+    $gpx->setAttribute("xsi:schemaLocation",
+		       "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" .
+		       ($do_gpxx ? ' ' . GPXX_NS . ' http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd' : '')
+		      );
 
     my $current_trk;
     for my $chunk (@{ $self->Chunks }) {
@@ -1256,6 +1265,16 @@ sub as_gpx {
 	    } else {
 		my $trkxml = $gpx->addNewChild(undef, "trk");
 		$add_name->($trkxml);
+		if ($do_gpxx) {
+		    my $trk_attrs = $chunk->TrackAttrs;
+		    if ($trk_attrs && $trk_attrs->{colour}) {
+			my $garmin_color = GPS::GpsmanData::GarminGPX::gpsman_to_garmin_color($trk_attrs->{colour});
+			my $extensionsxml = $trkxml->addNewChild(undef, 'extensions');
+			my $trackextensionxml = $extensionsxml->addNewChild(GPXX_NS, 'TrackExtension');
+			my $displaycolorxml = $trackextensionxml->addNewChild(GPXX_NS, 'DisplayColor');
+			$displaycolorxml->appendText($garmin_color);
+		    }
+		}
 		$current_trk = $trkxml;
 	    }
 	    my $trksegxml = $current_trk->addNewChild(undef, "trkseg");

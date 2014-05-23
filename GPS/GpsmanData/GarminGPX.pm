@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::GarminGPX;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 ######################################################################
 use vars qw(%gpsman_symbol_name_to_garmin_id);
@@ -323,6 +323,25 @@ use vars qw(%garmin_id_to_garmin_gpx_symbol_name);
 # until here
 );
 
+my %hex2garmin_color = (
+    '#000000' => 'Black',
+    '#600000' => 'DarkRed',
+    '#006000' => 'DarkGreen',
+    '#808000' => 'DarkYellow',
+    '#000060' => 'DarkBlue',
+    '#600060' => 'DarkMagenta',
+    '#008080' => 'DarkCyan',
+    '#C0C0C0' => 'LightGray',
+    '#606060' => 'DarkGray',
+    '#FF0000' => 'Red',
+    '#00FF00' => 'Green',
+    '#F0F000' => 'Yellow',
+    '#0000FF' => 'Blue',
+    '#FE00FE' => 'Magenta',
+    '#00FFFF' => 'Cyan',
+    '#FFFFFF' => 'White',
+);
+my %garmin2hex_color = reverse %hex2garmin_color;
 
 my $garmin_id_to_gpsman_symbol_name;
 sub _setup_garmin_id_to_gpsman_symbol_name {
@@ -417,6 +436,25 @@ sub garmin_symbol_name_to_gpsman_symbol_name {
 	$gpsman_symbol;
     };	
 }
+
+sub gpsman_to_garmin_color {
+    my $gpsman_color = shift;
+    if (exists $hex2garmin_color{$gpsman_color}) {
+	$hex2garmin_color{$gpsman_color};
+    } else {
+	$gpsman_color;
+    }
+}
+
+sub garmin_to_gpsman_color {
+    my $garmin_color = shift;
+    if (exists $garmin2hex_color{$garmin_color}) {
+	$garmin2hex_color{$garmin_color}
+    } else {
+	$garmin_color;
+    }
+}
+
 
 1;
 
