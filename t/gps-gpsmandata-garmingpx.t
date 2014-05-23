@@ -59,4 +59,12 @@ if ($gpx_symbol_file) {
     diag "Successful translations:\n" . join("\n", @successful_translations) . "\n" . "Missing translations:\n" . join("\n", @missing_translations);
 }
 
+is GPS::GpsmanData::GarminGPX::garmin_to_gpsman_color('Black'), '#000000';
+is GPS::GpsmanData::GarminGPX::garmin_to_gpsman_color('White'), '#FFFFFF';
+is GPS::GpsmanData::GarminGPX::garmin_to_gpsman_color('Unknown'), 'Unknown';
+
+is GPS::GpsmanData::GarminGPX::gpsman_to_garmin_color('#00FF00'), 'Green';
+is GPS::GpsmanData::GarminGPX::gpsman_to_garmin_color('#0000FF'), 'Blue';
+is GPS::GpsmanData::GarminGPX::gpsman_to_garmin_color('#123456'), '#123456';
+
 __END__

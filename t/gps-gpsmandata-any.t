@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 10;
+plan tests => 12;
 
 use_ok 'GPS::GpsmanData::Any';
 
@@ -91,18 +91,31 @@ EOF
     is $gps->Chunks->[0]->IsTrackSegment, 0, 'First chunk is real <trk>';
     is $gps->Chunks->[1]->IsTrackSegment, 1, 'Second chunk is <trkseg>';
 
-    # Roundtrip check
-    my $gpx2 = $gps->as_gpx;
-    xmllint_string($gpx2);
+    {
+	# Roundtrip check, without gpxx extensions
+	my $gpx2 = $gps->as_gpx(gpxx => 0);
+	xmllint_string($gpx2);
 
-    # Need to normalize
-    # - header is different (standlone="no", different order of xmlns declarations)
-    # - metadata element missing
-    # - extensions element missing
-    (my $normalized_expected = $sample_gpx) =~ s{^.*?<trk>}{<trk>}s;
-    $normalized_expected =~ s{<extensions>.*?</extensions>}{};
-    (my $normalized_got = $gpx2) =~ s{^.*?<trk>}{<trk>}s;
-    eq_or_diff $normalized_got, $normalized_expected;
+	# Need to normalize
+	# - header is different (standlone="no", different order of xmlns declarations)
+	# - metadata element missing
+	# - extensions element missing
+	(my $normalized_expected = $sample_gpx) =~ s{^.*?<trk>}{<trk>}s;
+	$normalized_expected =~ s{<extensions>.*?</extensions>}{};
+	(my $normalized_got = $gpx2) =~ s{^.*?<trk>}{<trk>}s;
+	eq_or_diff $normalized_got, $normalized_expected;
+    }
+
+    {
+	# Roundtrip check, with gpxx extensions
+	my $gpx2 = $gps->as_gpx; # default is gpxx => 1
+	xmllint_string($gpx2);
+
+	# Still need to normalize, but without <extensions> now
+	(my $normalized_expected = $sample_gpx) =~ s{^.*?<trk>}{<trk>}s;
+	(my $normalized_got = $gpx2) =~ s{^.*?<trk>}{<trk>}s;
+	eq_or_diff $normalized_got, $normalized_expected;
+    }
 }
 
 sub _create_temporary_gpx {
