@@ -29,7 +29,7 @@ BEGIN {
 	    Type Name
 	    Waypoints WaypointsHash
 	    Track CurrentConverter
-	    TimeOffset TrackAttrs
+	    TimeOffset TrackAttrs IsTrackSegment
 	    LineInfo
 	   )) {
 	my $acc = $_;
@@ -637,13 +637,13 @@ sub parse {
 		    if ($lineinfo) {
 			$lineinfo->add_chunk_lineinfo($self, $i);
 		    }
+		    $self->IsTrackSegment(0);
 		} else {
 		    if (defined $l[1] && $l[1] ne "") {
 			warn "Should not happen: TS with name";
-			$self->Name($l[1]);
-		    } elsif (defined $current_track_name) {
-			$self->Name($current_track_name);
 		    }
+		    $self->Name(undef);
+		    $self->IsTrackSegment(1);
 		}
 		if (@l > 2) {
 		    my %attr;
@@ -936,11 +936,15 @@ sub body_as_string {
 		. "\n";
 	}
     } elsif ($self->Type == TYPE_TRACK) {
-	$s .= "!T:";
-	if (defined $self->Name) {
-	    $s .= "\t" . $self->Name;
+	if ($self->IsTrackSegment) {
+	    $s .= "!TS:\n";
+	} else {
+	    $s .= "!T:";
+	    if (defined $self->Name) {
+		$s .= "\t" . $self->Name;
+	    }
+	    $s .= $self->_track_attrs_as_string . "\n";
 	}
-	$s .= $self->_track_attrs_as_string . "\n";
 	foreach my $wpt (@{ $self->Track }) {
 	    $s .= join("\t",
 		       (defined $wpt->Ident ? $wpt->Ident : ""),
@@ -1225,6 +1229,8 @@ sub as_gpx {
     $gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
     $gpx->setNamespace("http://www.topografix.com/GPX/1/1");
     $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd");
+
+    my $current_trk;
     for my $chunk (@{ $self->Chunks }) {
 
 	my $add_name = sub {
@@ -1243,9 +1249,16 @@ sub as_gpx {
 		$wpt->as_gpx($wptxml, $chunk, @std_wpt_as_gpx_args);
 	    }
 	} elsif ($chunk->Type eq $chunk->TYPE_TRACK) {
-	    my $trkxml = $gpx->addNewChild(undef, "trk");
-	    $add_name->($trkxml);
-	    my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
+	    if ($chunk->IsTrackSegment) {
+		if (!$current_trk) {
+		    die "Invalid: track segment without a track";
+		}
+	    } else {
+		my $trkxml = $gpx->addNewChild(undef, "trk");
+		$add_name->($trkxml);
+		$current_trk = $trkxml;
+	    }
+	    my $trksegxml = $current_trk->addNewChild(undef, "trkseg");
 	    for my $wpt (@{ $chunk->Track }) {
 		my $trkptxml = $trksegxml->addNewChild(undef, "trkpt");
 		$wpt->as_gpx($trkptxml, $chunk, @std_wpt_as_gpx_args);

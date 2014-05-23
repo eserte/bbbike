@@ -153,6 +153,7 @@ sub load_gpx {
 	    my $trk = $wpt_or_trk;
 	    my $name;
 	    my $trkseg;
+	    my $is_first_segment = 1;
 	    for my $trk_child ($trk->children) {
 		if ($trk_child->name eq 'name') {
 		    $name = $trk_child->children_text;
@@ -163,8 +164,14 @@ sub load_gpx {
 		    }
 		    $trkseg = GPS::GpsmanData->new;
 		    $trkseg->Type($trkseg->TYPE_TRACK);
-		    $trkseg->Name($name);
-		    $trkseg->TrackAttrs({});
+		    if ($is_first_segment) {
+			$trkseg->IsTrackSegment(0);
+			$trkseg->Name($name);
+			$trkseg->TrackAttrs({});
+			$is_first_segment = 0;
+		    } else {
+			$trkseg->IsTrackSegment(1);
+		    }
 		    my @data;
 		    for my $trkpt ($trk_child->children) {
 			my $trkpt_name = $trkpt->name;
