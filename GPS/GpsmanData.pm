@@ -52,10 +52,6 @@ use constant TYPE_TRACK    => 1;
 use constant TYPE_ROUTE    => 2;
 use constant TYPE_GROUP    => 3;
 
-# XXX currently hardcoded to DMS
-# XXX Note that some functions also assume hardcoded DMS (DMS_output, body_as_string)
-use constant _POSITION_FORMAT_FOR_WRITING => "DMS";
-
 use base qw(Exporter);
 @EXPORT_OK = qw(TYPE_WAYPOINT TYPE_TRACK TYPE_ROUTE TYPE_GROUP);
 
@@ -103,13 +99,27 @@ use GPS::Util; # for eliminate_umlauts
 	$epoch;
     }
 
-    sub DMS_output {
+    sub _coord_output {
 	my($wpt, $container) = @_;
-	$wpt->ParsedLatitude && $container->PositionFormat eq $container->_POSITION_FORMAT_FOR_WRITING
-	    ? ($wpt->ParsedLatitude, $wpt->ParsedLongitude)
-		: $wpt->Latitude
-		    ? GPS::GpsmanData::convert_lat_long_to_gpsman_DMS($wpt->Latitude, $wpt->Longitude)
-			: (undef, undef);
+	if ($container->PositionFormat eq 'DDD') {
+	    if (defined $wpt->Latitude) {
+		my $lat_prefix = $wpt->Latitude  < 0 ? 'S' : 'N';
+		my $lon_prefix = $wpt->Longitude < 0 ? 'W' : 'E';
+		($lat_prefix . $wpt->Latitude, $lon_prefix . $wpt->Longitude);
+	    } else {
+		(undef, undef);
+	    }
+	} else {
+	    if (defined $wpt->ParsedLatitude) { # XXX???
+		($wpt->ParsedLatitude, $wpt->ParsedLongitude);
+	    } else {
+		if (defined $wpt->Latitude) {
+		    GPS::GpsmanData::convert_lat_long_to_gpsman_DMS($wpt->Latitude, $wpt->Longitude)
+		} else {
+		    (undef, undef);
+		}
+	    }
+	}
     }
 
     sub DumpHiddenAttributes {
@@ -414,7 +424,7 @@ sub new {
 
     # some defaults:
     #$self->PositionFormat("DMS");
-    $self->change_position_format("DMS");
+    $self->change_position_format("DDD");
     $self->TimeOffset(0);
     $self->DatumFormat("WGS 84");
 
@@ -886,7 +896,7 @@ sub header_as_string {
     my $s = "% Written by $0 [" . __PACKAGE__ . "] $datetime\n\n";
     # XXX:
     $s .= "!Format: " . join(" ",
-			     $self->_POSITION_FORMAT_FOR_WRITING,
+			     ($self->PositionFormat || 'DDD'),
 			     $self->TimeOffset,
 			     $self->DatumFormat) . "
 !Creation: no
@@ -917,7 +927,7 @@ sub body_as_string {
 	    $s .= join("\t",
 		       $wpt->Ident,
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
-		       $wpt->DMS_output($self),
+		       $wpt->_coord_output($self),
 		       (defined $wpt->Altitude ? "alt=".$wpt->Altitude : ()),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
 		       (defined $wpt->DisplayOpt ? "dispopt=".$wpt->DisplayOpt : ()),
@@ -936,7 +946,7 @@ sub body_as_string {
 		       (defined $wpt->Ident ? $wpt->Ident : ""),
 		       (defined $wpt->DateTime ? $wpt->DateTime :
 			defined $wpt->Comment ? $wpt->Comment : ""),
-		       $wpt->DMS_output($self),
+		       $wpt->_coord_output($self),
 		       (defined $wpt->Altitude ? ($wpt->Accuracy ? '~'x$wpt->Accuracy : '') . $wpt->Altitude : ""),
 		       (defined $wpt->HiddenAttributes ? $wpt->DumpHiddenAttributes : ()),
 		      )
@@ -952,7 +962,7 @@ sub body_as_string {
 	    $s .= join("\t",
 		       $wpt->Ident,
 		       (defined $wpt->Comment ? $wpt->Comment : ""),
-		       $wpt->DMS_output($self),
+		       $wpt->_coord_output($self),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
 		       (defined $wpt->HiddenAttributes ? $wpt->DumpHiddenAttributes : ()),
 		      )
