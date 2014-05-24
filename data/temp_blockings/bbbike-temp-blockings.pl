@@ -16358,11 +16358,11 @@ EOF
 userdel	2::temp 8424,12853 8309,12758 8306,12609
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-20 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-09-22 20:00:00"),
+     { from  => $isodate2epoch->("2013-09-19 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2013-09-21 20:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (21. und 22. September 2013) ',
+       recurrences => [['yearly', days => 19, months => 9]],
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (20. und 21. September 2014) ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
@@ -22806,6 +22806,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20140521.1005.397374.html',
        data  => <<EOF,
 userdel	q4::inwork; -4630,15978 -4653,15896 -4656,15839 -4655,15803 -4639,15726 -4701,15563 -4710,15530
+EOF
+     },
+     { from  => 1400863142, # 2014-05-23 18:39
+       until => 1420066800, # 2015-01-01 00:00
+       text  => 'Kremmen: B273: Neubau Brücke über den Hörstegraben Ortsdurchfahrt Schwante, 26.05.2014 bis 31.12.2014 ',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/14/035',
+       data  => <<EOF,
+userdel	2::inwork -11775,36312 -12060,36572
 EOF
      },
     );

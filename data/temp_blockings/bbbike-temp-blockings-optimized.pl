@@ -3952,6 +3952,16 @@ userdel	2::inwork 6074,14194 6074,14215 6084,14251 6118,14289
          'data' => 'userdel	q4::inwork; -4630,15978 -4653,15896 -4656,15839 -4655,15803 -4639,15726 -4701,15563 -4710,15530
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/721-E/14/035',
+         'until' => 1420066800,
+         'text' => 'Kremmen: B273: Neubau Brücke über den Hörstegraben Ortsdurchfahrt Schwante, 26.05.2014 bis 31.12.2014 ',
+         'from' => 1400863142,
+         'id' => 2574,
+         'data' => 'userdel	2::inwork -11775,36312 -12060,36572
+',
+         'type' => 'gesperrt'
        }
      
 );
