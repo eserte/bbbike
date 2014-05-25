@@ -53,10 +53,9 @@ Knoten Märkische Allee	1 19918,11891 19979,11774
 Knoten Märkische Allee	1 20114,11719 20064,11687 20026,11663
 Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11727
 Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 18934,11796 19138,11815 19389,11761
-Altstadt Köpenick	1 22377,4836 22388,4737
 Altstadt Köpenick	1 22451,4749 22439,4838
 Landjägerstr.	1 22740,4415 22542,4485 22495,4523
-Alter Markt	1 22465,4690 22395,4678
+Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
@@ -284,7 +283,7 @@ Im Amseltal	1 1960,25229 1982,25108
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
 Alte Späthbrücke	2 14466,5087 14544,5123
-Katzengraben	1 22451,4749 22465,4690
+Katzengraben	1 22451,4749 22470,4691
 Schwiegersteig	1 1134,14721 1130,14823 1112,14918
 Moränenweg	1 3208,21425 3295,21202
 Graacher Str.	1 14672,17085 14533,17084
@@ -992,13 +991,13 @@ Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
 Mittelstreifen	3nocross::ignrte 19894,-835 19996,-740 20205,-548
 Schützenstr. -> Am Seegraben: Mittelstreifen	3::igndisp 19978,-712 19996,-740 20205,-548
-Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2016,11034 2116,11288 2109,11441
-Messedamm -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2109,11441 2116,11288 2219,11304
-Bredtschneiderstr. -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2219,11304 2116,11288 1979,11277
-Bredtschneiderstr. -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndisp 2219,11304 2116,11288 2016,11034
-Bredtschneiderstr. -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndisp 1979,11277 2116,11288 2109,11441
-Bredtschneiderstr. -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 1979,11277 2116,11288 2219,11304
-Messedamm -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2016,11034 2116,11288 1979,11277
+Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2016,11034 2102,11307 2109,11441
+an der BMW-Niederlassung -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2180,11318 2102,11307 1975,11291
+an der BMW-Niederlassung -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndisp 2180,11318 2102,11307 2016,11034
+Messedamm -> an der BMW-Niederlassung: Mittelstreifen, Autobahnausfahrt	3::igndisp 2109,11441 2102,11307 2180,11318
+Bredtschneiderstr. -> an der BMW-Niederlassung: Mittelstreifen, Autobahnausfahrt	3::igndisp 1975,11291 2102,11307 2180,11318
+Bredtschneiderstr. -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndisp 1975,11291 2102,11307 2109,11441
+Messedamm -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2016,11034 2102,11307 1975,11291
 Straßenbahnhaltestelle	3nocross::ignrte 10908,17142 10917,17088 10927,17022
 Berliner Str. -> Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]: Straßenbahnhaltestelle	3::igndisp 10927,17022 10917,17088 10891,17088
 Mittelstreifen	3nocross::ignrte 21831,13801 21853,13784 21918,13720
@@ -2105,6 +2104,7 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (ca. 21 Stufen)	0:30:-46 5246,12899
 tragen (21 Stufen)	0:30:0 1645,9855
 tragen (9 Stufen)	0:15:-43 1719,9776
 Aufzug	0:45:-145 11947,19161
@@ -2685,7 +2685,7 @@ Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,1
 Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019
 Schinkelplatz: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 10008,12274 9994,12368 9996,12401
 Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 9943,12364 9961,12273
-Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17736,5441 17886,5587
+Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
 Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,3422
@@ -2702,7 +2702,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
-Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
+Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
@@ -3002,8 +3002,8 @@ tragen (12 Stufen)	0:20:41 5683,12342
 Karolingerplatz	1 1278,11087 1181,11136
 Karolingerplatz	1 1209,11212 1315,11179
 Ubierstr.	1 1315,11179 1278,11087
-tragen (12 Stufen)	0:40:-90 2234,11304
-tragen (12 Stufen)	0:40:-86 2294,11300
+tragen (11 Stufen)	0:20:-52 2228,11317
+tragen (8 Stufen)	0:40:-70 2300,11292
 Thüringerallee: Privatstr.	2 1454,11164 1342,11020
 queren nicht möglich	3nocross::ignrte 1554,8638 1577,8655 1632,8716
 Bismarckallee -> Furtwänglerstr.: queren nicht möglich	3::igndisp 1632,8716 1577,8655 1631,8610

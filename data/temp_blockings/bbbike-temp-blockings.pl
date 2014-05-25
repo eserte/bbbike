@@ -21983,7 +21983,7 @@ EOF
 #: next_check_id: CHERUSKERPARK-2014
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-05-10
+#: last_checked: 2014-05-24
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 EOF
@@ -22395,14 +22395,12 @@ userdel	q4::inwork; 1229,18750 1328,18878 1447,18933 1528,18971
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1400937077, # undef, # XXX
        text  => 'Bredtschneiderstr.: wegen Bauarbeiten Durchfahrt gesperrt',
        type  => 'gesperrt',
        source_id => 'http://berlinerbaustellen.blogspot.de/2014/01/0214-bmw-haupstadtniederlassung-in.html',
        data  => <<EOF,
-#: XXX bleibt die Sperrung permanent oder wird sie irgendwann aufgehoben?
-#: last_checked: 2014-01-02
-userdel	2::inwork 2219,11304 2116,11288
+userdel	2::inwork 2219,11324 2180,11318 2102,11307
 EOF
      },
      { from  => 1399554000, # 2014-05-08 15:00 # 1 Tag Vorlauf
@@ -22790,13 +22788,14 @@ EOF
      },
      { from  => 1400536800, # 2014-05-20 00:00
        until => $isodate2epoch->("2014-06-30 16:00:00"), # 1404165599, # 2014-06-30 23:59
-       text  => 'Ellen-Epstein-Str. zwischen Erna-Samuel-Str. und Quitzowstr.: Baustelle, Straße gesperrt, ab: 22.05.2014 08 Uhr bis Ende Juni 2014 ',
-       type  => 'gesperrt',
+       text  => 'Ellen-Epstein-Str.: Baustelle zwischen Erna-Samuel-Str. und Quitzowstr., Fahrbahn gesperrt, ab: 22.05.2014 08 Uhr bis Ende Juni 2014 ',
+       type  => 'handicap',
        source_id => 'IM_021961',
        data  => <<EOF,
 #: XXX wie sieht die Situation nach den Bauarbeiten aus? Rückbau?
+#: last_checked: 2014-05-24
 #: next_check: 2014-06-30
-userdel	2::inwork 6074,14194 6074,14215 6084,14251 6118,14289
+userdel	q4::inwork 6074,14194 6074,14215 6084,14251 6118,14289
 EOF
      },
      { from  => 1401055200, # 2014-05-26 00:00

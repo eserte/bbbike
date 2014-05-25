@@ -3580,7 +3580,7 @@ userdel	2::night 17671,13132 17684,13133
          'data' => '#: next_check_id: CHERUSKERPARK-2014
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-05-10
+#: last_checked: 2014-05-24
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
@@ -3707,18 +3707,7 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://berlinerbaustellen.blogspot.de/2014/01/0214-bmw-haupstadtniederlassung-in.html',
-         'until' => undef,
-         'text' => 'Bredtschneiderstr.: wegen Bauarbeiten Durchfahrt gesperrt',
-         'from' => undef,
-         'id' => 2532,
-         'data' => '#: XXX bleibt die Sperrung permanent oder wird sie irgendwann aufgehoben?
-#: last_checked: 2014-01-02
-userdel	2::inwork 2219,11304 2116,11288
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3934,14 +3923,15 @@ userdel	2::inwork 554,23349 658,23395
        {
          'source_id' => 'IM_021961',
          'until' => 1404136800,
-         'text' => 'Ellen-Epstein-Str. zwischen Erna-Samuel-Str. und Quitzowstr.: Baustelle, Straße gesperrt, ab: 22.05.2014 08 Uhr bis Ende Juni 2014 ',
+         'text' => 'Ellen-Epstein-Str.: Baustelle zwischen Erna-Samuel-Str. und Quitzowstr., Fahrbahn gesperrt, ab: 22.05.2014 08 Uhr bis Ende Juni 2014 ',
          'from' => 1400536800,
          'id' => 2572,
          'data' => '#: XXX wie sieht die Situation nach den Bauarbeiten aus? Rückbau?
+#: last_checked: 2014-05-24
 #: next_check: 2014-06-30
-userdel	2::inwork 6074,14194 6074,14215 6084,14251 6118,14289
+userdel	q4::inwork 6074,14194 6074,14215 6084,14251 6118,14289
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        {
          'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20140521.1005.397374.html',

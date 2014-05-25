@@ -1789,9 +1789,9 @@ Scharnweberstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 19344,6119 19495,6
 Scharnweberstr.: Asphalt	Q0 19495,6029 19650,5920
 Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt	Q0 22196,4847 22175,4730 22138,4661 22133,4644 22111,4562
 Alt-Köpenick: Kopfsteinpflaster	Q2 22111,4562 22093,4499
-Katzengraben, Schüßlerplatz: Kopfsteinpflaster	Q2 22439,4838 22451,4749 22465,4690 22395,4678
-Katzengraben: Kopfsteinpflaster	Q2 22475,4658 22469,4677 22465,4690
-Spindlergasse: Kopfsteinpflaster	Q2 22469,4677 22497,4686 22522,4695
+Katzengraben, Schüßlerplatz: Kopfsteinpflaster	Q2 22439,4838 22451,4749 22470,4691 22395,4678
+Katzengraben: Kopfsteinpflaster	Q2 22478,4659 22472,4681 22470,4691
+Spindlergasse: Kopfsteinpflaster	Q2 22472,4681 22496,4689 22522,4695
 Futranplatz: Kopfsteinpflaster	Q2 22451,4749 22388,4737
 Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7996,-2293
 (zum Anhalter Steg): Kleinsteinpflaster	Q2+ 8677,10224 8662,10227 8711,10322
@@ -1811,7 +1811,7 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: XXX Umbau in Asphaltwege
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110922.0700.359578.html
 #: osm_watch: way id="152046369" version="4"
-#: last_checked: 2014-01-04
+#: last_checked: 2014-05-25
 #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21487,5425 21512,5404 21600,5221 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
@@ -9246,11 +9246,10 @@ Hadburgpfad: Verbundsteinpflaster	Q1+ 17484,12405 17531,12398
 (Uferweg - Puschkinallee): Asphalt	Q0- 14443,9731 14318,9688
 (Spreeuferweg - Wintersteinstr.): Asphalt mit Regenablaufrinnen	Q1- 3654,12672 3741,12607
 #: next_check_id: STADTGARTENMOABIT-2014
-#: XXX entsteht hier Asphalt oder eine andere Pflasterung?
+#: XXX genaue Wegoberfläche feststellen
 #: XXX siehe auch Eintrag in gesperrt-orig
-#: last_checked: 2014-04-08 (Bauarbeiten)
-#: next_check: 2014-05-08 (Einweihung der Erna-Samuel-Str.)
-(Weg am Stadtgarten Moabit): unbefestigter Weg	Q2- 5708,14077 5685,14215
+#: last_checked: 2014-05-24 (noch gesperrt)
+(Weg am Stadtgarten Moabit): feste Wegoberfläche (asphaltiert?)	Q0 5708,14077 5685,14215
 Helsingforser Platz: Betonpflaster	Q0- 13473,11456 13427,11431
 (Bornholmer Str. - Kolonnenweg): Asphalt	Q0 10134,16534 10118,16561 10108,16576 9954,16590
 Ritterlandweg [Wohngebiet]: schlechtes Kopfsteinpflaster	Q3 8315,17079 8346,17148
@@ -9411,6 +9410,8 @@ Rittersteinweg: Gras	Q3 9831,21575 9870,21395 9881,21331
 Rauschensteinweg: unbefestigte Straße	Q2- 9790,21563 9830,21384
 Cupetiussteinweg: unbefestigte Straße und Kopfsteinpflaster	Q3+ 9689,21532 9752,21362
 Cupetiussteinweg: unbefestigte Straße	Q2- 9752,21362 9803,21224
+(an der BMW-Niederlassung): Asphalt	Q0 2102,11307 2180,11318 2219,11324
+(Katzengraben - Kietzer Graben): Kopfsteinpflaster	Q2 22478,4659 22486,4661 22500,4623
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -11843,7 +11844,7 @@ Schlieperstr.: Kopfsteinpflaster	Q2 2224,20007 2435,20032
 Kulmbacher Str.: Asphalt, leicht schadhafte Stellen	Q0- 5799,9939 5817,10173
 # 
 #: by: Jannik (Pf.):
-#: confirmed_by: srt (westlicher Abschnitt)
+#: confirmed_by: srt
 Nordhauser Str.: Asphalt	Q0 3534,13098 3711,13098 3842,13097 3970,13097 4096,13095 4215,13098 4331,13103
 # 
 #: by: Kerstin Pantos: vvv
@@ -23428,6 +23429,7 @@ Rampe: glatt gepflastert	Q0 8044,12989 8110,13042
 nördliches Spreeufer: Verbundsteinpflaster	Q1+ 8277,13032 8315,13005 8401,12973 8464,12919 8498,12870
 #: confirmed_by: srt
 (südliches Spreeufer): wassergebundene Decke	Q1 5203,12850 5191,12917 5128,13012 4994,13092 4915,13114 4822,13109 4748,13092 4710,13069 4644,13003 4619,12975 4590,12800
+(südliches Spreeufer): wassergebundene Decke	Q1 5128,13012 5246,12899 5244,12864
 #: confirmed_by: srt
 (südliches Spreeufer): grobes Kopfsteinpflaster, Gehwegplatten	Q3 4590,12800 4749,12689
 (Heisenbergstr. - südliches Spreeufer): wassergebundene Decke	Q1 5120,12963 5191,12917
@@ -23571,6 +23573,7 @@ Treseburger Str. (Charlottenburg): Asphalt	Q0 3842,12947 3842,13097
 Ilsenburger Str. (Charlottenburg): Asphalt	Q0 3968,12947 3968,13024 3970,13097 3967,13211
 Ilsenburger Str. (Charlottenburg): Kopfsteinpflaster	Q2 3967,13211 3966,13333
 #: note: Rosi (cingoez) schreibt hier: Beton, Q0
+#: confirmed_by: srt (Asphalt)
 Wernigeroder Str.: Asphalt	Q0 4092,12947 4092,13021 4096,13095 4100,13223 4100,13269
 Klaustaler Str. (Charlottenburg): Asphalt	Q0 4209,12944 4215,13098 4214,13224
 Harlingeroder Weg: Asphalt	Q0 4092,13021 3968,13024
@@ -23605,9 +23608,12 @@ Wulfsheinstr.: Asphalt	Q0 3060,12311 3207,12325
 Stallstr.: Asphalt	Q0 3050,12394 3204,12416
 Saldernstr.: Asphalt	Q0 2391,11478 2405,11587 2422,11700
 Siemenssteg: Holzbohlen	Q2 4129,12619 4128,12637 4124,12706 4124,12721
-Eosanderstr.: Asphalt	Q0 3617,12352 3610,12480 3605,12552 3454,12607 3344,12611
+Eosanderstr.: Asphalt	Q0 3617,12352 3606,12484 3600,12552 3454,12607 3344,12611
 Eosanderstr.: Kopfsteinpflaster	Q1 3344,12611 3271,12609
-Brauhofstr.: Asphalt	Q0 3468,12423 3490,12463 3610,12480 3747,12495
+#: corrected_by: srt (Q0 -> Q1+)
+Brauhofstr.: Asphalt, einige Schäden	Q1+ 3468,12423 3486,12473 3606,12484
+#: confirmed_by: srt
+Brauhofstr.: Asphalt	Q0 3606,12484 3747,12495
 Behaimstr. (Charlottenburg): Asphalt	Q0 3496,12176 3635,12187 3770,12202
 Thrasoltstr.: Asphalt	Q0 3513,11998 3650,12013 3785,12028
 Lüdtgeweg: Asphalt	Q0 4137,12411 4136,12494
@@ -23615,10 +23621,13 @@ Lüdtgeweg: Gehwegplatten	Q1 4136,12494 4129,12619
 Kohlrauschstr.: Asphalt	Q0 4567,12124 4639,12292
 (Guerickestr. - Einsteinufer): Kopfsteinpflaster	Q3 4601,12310 4658,12450
 Wundtstr.: Asphalt	Q0 2272,11074 2243,11107
-Spiegelweg: Asphalt	Q0 2243,11107 2313,11298
-Riehlstr.: Asphalt	Q0 2365,11179 2340,11223 2362,11291 2393,11381 2391,11478
-Dresselstr.: Kopfsteinpflaster	Q2 2313,11298 2362,11291
-Dresselsteig: Asphalt	Q0 2219,11304 2234,11304 2294,11300 2313,11298
+Spiegelweg: Asphalt	Q0 2243,11107 2308,11288
+#: confirmed_by: srt
+Riehlstr.: Asphalt	Q0 2365,11179 2340,11223 2350,11269 2393,11381 2391,11478
+#: confirmed_by: srt
+Dresselstr.: Kopfsteinpflaster	Q2 2308,11288 2350,11269
+#: confirmed_by: srt
+Dresselsteig: Asphalt	Q0 2219,11324 2228,11317 2300,11292 2308,11288
 Amsterdamer Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6914,15908 7077,16078 7158,16167
 Turiner Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6965,16190 7077,16078 7177,15984 7354,15817
 Turiner Str.: Asphalt	Q0 7354,15817 7436,15746
@@ -23670,8 +23679,8 @@ Nußbaumallee: Asphalt	Q0 1206,12364 1412,12309 1608,12257 1620,12254 1638,12250 
 Nußbaumallee: Asphalt	Q0 1732,12224 1773,12173
 Lindenallee (Westend): Asphalt	Q1 1608,12257 1579,12161
 Gottfried-Keller-Str.: Kopfsteinpflaster	Q2 1697,11911 1792,11889
-Bredtschneiderstr.: Asphalt	Q0 1878,11268 1979,11277 2116,11288
-Meerscheidtstr.: Asphalt	Q0 1979,11277 1960,11426 1948,11537
+Bredtschneiderstr.: Asphalt	Q0 1789,11280 1861,11284 1975,11291 2102,11307
+Meerscheidtstr.: Asphalt	Q0 1975,11291 1960,11426 1948,11537
 #: corrected_by: srt (Q2 -> Q2+)
 Fredericiastr.: etwas besseres Kopfsteinpflaster	Q2+ 1799,11517 1948,11537 2097,11556 2190,11569 2314,11581
 Haeselerstr.: Kopfsteinpflaster	Q2 1779,11835 2056,11874

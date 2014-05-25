@@ -567,11 +567,11 @@ Nymphenburger Str. -> Heylstr.: Mittelstreifen	3::igndisp 6163,8398 6246,8222 63
 Heylstr. -> Nymphenburger Str.: Mittelstreifen	3::igndisp 6181,8181 6246,8222 6163,8398
 Mittelstreifen	3nocross::ignrte 2191,11451 2282,11463 2391,11478
 Kaiserdamm -> Rognitzstr.: Mittelstreifen	3::igndisp 2191,11451 2282,11463 2314,11581
-Rognitzstr. -> Rognitzstr.: Mittelstreifen	3::igndisp 2314,11581 2282,11463 2219,11304
+Rognitzstr. -> Rognitzstr.: Mittelstreifen	3::igndisp 2314,11581 2282,11463 2219,11324
 Rognitzstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2314,11581 2282,11463 2391,11478
-Rognitzstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2219,11304 2282,11463 2191,11451
-Rognitzstr. -> Rognitzstr.: Mittelstreifen	3::igndisp 2219,11304 2282,11463 2314,11581
-Kaiserdamm -> Rognitzstr.: Mittelstreifen	3::igndisp 2391,11478 2282,11463 2219,11304
+Rognitzstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2219,11324 2282,11463 2191,11451
+Rognitzstr. -> Rognitzstr.: Mittelstreifen	3::igndisp 2219,11324 2282,11463 2314,11581
+Kaiserdamm -> Rognitzstr.: Mittelstreifen	3::igndisp 2391,11478 2282,11463 2219,11324
 Mittelstreifen	3nocross::ignrte 15850,14308 15925,14316 16010,14326 16314,14361
 Landsberger Allee -> Große-Leege-Str.: Mittelstreifen	3::igndisp 15850,14308 15925,14316 15923,14334
 Große-Leege-Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15923,14334 15925,14316 16010,14326
@@ -1079,11 +1079,11 @@ Hauptstr. -> Wielandstr.: Mittelstreifen	3::igndisp 6144,7677 6082,7594 6081,721
 Wielandstr. -> Hauptstr.: Mittelstreifen	3::igndisp 6081,7215 6082,7594 5955,7420
 Fehmarner Str.	1 6709,14782 6528,15000
 Mittelstreifen	3nocross::ignrte 1960,11426 1834,11408 1625,11380
-Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1878,11268 1834,11408 1625,11380
-Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1878,11268 1834,11408 1799,11517
 Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1625,11380 1834,11408 1799,11517
-Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1960,11426 1834,11408 1878,11268
-Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1799,11517 1834,11408 1878,11268
+Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1861,11284 1834,11408 1625,11380
+Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1861,11284 1834,11408 1799,11517
+Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1960,11426 1834,11408 1861,11284
+Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1799,11517 1834,11408 1861,11284
 Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1799,11517 1834,11408 1960,11426
 Paplitzer Str.	1 11027,-2448 11073,-2037
 Steinträgerweg: Poller	3 12948,2484 12963,2365 12987,2220
@@ -1684,3 +1684,5 @@ Halskestr. - Albrechtstr.: Abbiegen verboten	3 6435,4590 6360,4504 6416,4452
 Amfortasweg	1 5214,4445 5173,4471 5144,4498 5067,4434 5150,4345
 Otto-von-Simson-Str.	1 2560,5044 2627,5095 2835,5410
 Bregenzer Str.	1 4279,10270 4228,10020
+BMW-Niederlassung: Poller	3 2180,11318 2219,11324 2282,11463
+BMW-Niederlassung: Poller	3 2282,11463 2219,11324 2180,11318

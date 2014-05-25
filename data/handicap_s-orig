@@ -12,13 +12,16 @@
 # 
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # 
+#: XXX nach den Bauarbeiten vielleicht auch diese Fahrtrichtung asphaltiert
+#: last_checked: 2014-05-24
+Simplonstr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14468,11203 14531,11142
+# 
 #: last_checked: 2014-05-23 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
 # 
-#: next_check_id: NEUEBAHNHOF-2014
-#: last_checked: 2014-05-03
+#: last_checked: 2014-05-24
 Neue Bahnhofstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14752,11041 14811,11067 14879,11182 14918,11249
 # 
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbrücke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 14442,11101 14468,11203
@@ -268,7 +271,7 @@ Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12
 # 
 ### Lichtenberg ###
 # 
-#: last_checked: 2014-05-23 (Absperrgitter existiert noch, war aber (temporär?) weggeschoben)
+#: last_checked: 2014-05-25 (Absperrgitter existiert noch, wird aber manchmal von Fußgängern weggeschoben)
 #: check_frequency: 60d
 (Rummelsburger Ufer - Hauptstr.): Bauarbeiten, Umweg über Norma-Parkplatz notwendig	q4::inwork 15249,10564 15307,10701
 # 
@@ -337,6 +340,7 @@ Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 #: XXX_prog BS (an der Dresdener Str.) (ansonsten könnte man die Kategorie auf q2 erhöhen)
 (Zufahrt am NKZ): Bordsteine, Fußgänger/Lieferverkehr	q3+ 11291,10438 11311,10505 11343,10528
 Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
+Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q2 11134,12793 11064,12910
 Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
@@ -1941,6 +1945,8 @@ Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3
 Georg-Steger-Weg: einige Fußgänger	q1 1493,2249 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
 (Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 413,757 332,819 247,822
 (Am Seegraben - Schützenstr.): einige Fußgänger	q1 19996,-740 19978,-712
+#: note: Schranke ist manchmal offen, kann umfahren werden
+(an der BMW-Niederlassung): Parkverkehr, Schranke	q1 2102,11307 2180,11318 2219,11324
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2361,6 +2367,7 @@ Swinemünder Str.: Fußgänger	q1 10085,14863 10029,14974 9988,15057 9929,15174 985
 Sesenheimer Str.: Fußgänger, Bordsteine	q2 3866,11473 3874,11380
 #: confirmed_by: srt
 (südliches Spreeufer): Fußgänger	q2 5203,12850 5191,12917 5128,13012 4994,13092 4915,13114 4822,13109 4748,13092 4710,13069 4644,13003 4619,12975 4590,12800 4749,12689
+(südliches Spreeufer): Fußgänger	q2 5128,13012 5246,12899 5244,12864
 (Heisenbergstr. - südliches Spreeufer): Fußgänger	q2 5120,12963 5191,12917
 (Kucharskistr. - südliches Spreeufer): Fußgänger	q2 4829,13089 4822,13109
 (Clara-von-Simson-Str. - südliches Spreeufer): Fußgänger	q2 4732,13030 4710,13069

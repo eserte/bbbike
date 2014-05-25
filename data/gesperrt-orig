@@ -72,10 +72,9 @@ Knoten Märkische Allee	1 19918,11891 19979,11774
 Knoten Märkische Allee	1 20114,11719 20064,11687 20026,11663
 Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11727
 Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 18934,11796 19138,11815 19389,11761
-Altstadt Köpenick	1 22377,4836 22388,4737
 Altstadt Köpenick	1 22451,4749 22439,4838
 Landjägerstr.	1 22740,4415 22542,4485 22495,4523
-Alter Markt	1 22465,4690 22395,4678
+Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15242,8263 15303,8343
@@ -194,7 +193,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
 #: osm_watch: way id="24869862" version="12"
 #: last_checked: 2014-01-04
-#: next_check: 2014-01-21
+#: check_frequency: 180d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 #: note: nur für "Linienverkehr" (Straßenbahnen) offiziell frei
@@ -345,7 +344,7 @@ Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
 Alte Späthbrücke	2 14466,5087 14544,5123
 # REMOVED (nach temp-blockings verschoben) --- Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19136,2673 19207,2592
-Katzengraben	1 22451,4749 22465,4690
+Katzengraben	1 22451,4749 22470,4691
 Schwiegersteig	1 1134,14721 1130,14823 1112,14918
 Moränenweg	1 3208,21425 3295,21202
 #: by: Marcel Länger:
@@ -1330,7 +1329,7 @@ Ritterstr.	1 -3360,14525 -3316,14504
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
 Am Seegraben: Mittelstreifen	3nocross 19894,-835 19996,-740 20205,-548
-Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2016,11034 2116,11288 2109,11441
+Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2016,11034 2102,11307 2109,11441
 Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
 Cecilienstr.: Mittelstreifen	3nocross 21831,13801 21853,13784 21918,13720
 Warnemünder Str.: Mittelstreifen	3nocross 2767,7592 2750,7444 2744,7397
@@ -1704,6 +1703,7 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (ca. 21 Stufen)	0:30 5246,12899
 tragen (21 Stufen)	0:30 1645,9855
 tragen (9 Stufen)	0:15 1719,9776
 #: XXX_prog Zeitverlust nicht durch tragen, sondern wegen der Wartezeit
@@ -2505,7 +2505,7 @@ am Osthafen: durch Barriere versperrt	2 14259,10309 14463,10212
 #: next_check_id: BND-2014
 #: osm_watch: way id="129104626" version="2"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
-#: last_checked: 2014-05-16
+#: last_checked: 2014-05-24
 #: check_frequency: 60d
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 
@@ -2534,7 +2534,7 @@ Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 99
 #: by: http://www.tagesspiegel.de/berlin/sperrung-am-bahnhof-schoeneweide-zwangsgeld-drohung-gegen-die-bahn/9923866.html
 #: last_checked: 2014-05-17
 #: next_check: 2014-07-30 (Regelung wird überprüft)
-Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17736,5441 17886,5587
+Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
 # 
 #: next_check_id: GRENZALLEE-2014
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml
@@ -2566,9 +2566,8 @@ Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13
 # REMOVED (Einbahnstraße in "Am Zirkus" bleibt wohl permanent, Schild sieht nicht temporär aus) #: next_check_id: AMZIRKUS-2014 --- #: XXX oder bleibt die Einbahnstraßenregelung permanent? --- #: XXX_prog 1s:q4:inwork geht als Kategorie nicht, falsche Übersetzung! --- #: last_checked: 2014-03-07
 # 
 #: next_check_id: STADTGARTENMOABIT-2014
-#: last_checked: 2014-04-08 (Bauarbeiten)
+#: last_checked: 2014-05-24 (noch gesperrt)
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140505.1005.396906.html
-#: next_check: 2014-05-08 (Einweihung der Erna-Samuel-Str.)
 (Weg am Stadtgarten Moabit): Bauarbeiten	2::inwork 5708,14077 5685,14215
 # 
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2014-03-07 --- Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
@@ -2653,9 +2652,9 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2014-05-16
+#: last_checked: 2014-05-24
 #: check_frequency: 120d
-Nordufer: wegen Bauarbeiten für die S21 gesperrt	2:inwork 7427,14648 7212,14738
+Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
@@ -2996,8 +2995,10 @@ tragen (12 Stufen)	0:20 5683,12342
 Karolingerplatz	1 1278,11087 1181,11136
 Karolingerplatz	1 1209,11212 1315,11179
 Ubierstr.	1 1315,11179 1278,11087
-tragen (12 Stufen)	0:40 2234,11304
-tragen (12 Stufen)	0:40 2294,11300
+#: corrected_by: srt (12 -> 11 Stufen, 0:40 -> 0:20)
+tragen (11 Stufen)	0:20 2228,11317
+#: corrected_by: srt (12 -> 8 Stufen, 0:40 -> 0:20)
+tragen (8 Stufen)	0:40 2300,11292
 Thüringerallee: Privatstr.	2 1454,11164 1342,11020
 Bismarckallee: queren nicht möglich	3nocross 1554,8638 1577,8655 1632,8716
 Drängelgitter	BNP:10 1459,8858

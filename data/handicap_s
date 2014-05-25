@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Simplonstr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14468,11203 14531,11142
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 Neue Bahnhofstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14752,11041 14811,11067 14879,11182 14918,11249
@@ -70,6 +71,7 @@ Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,264
 Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Bordsteine, Fußgänger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
 Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
+Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q2 11134,12793 11064,12910
 Rathausstr.: Fußgänger	q1 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
@@ -1352,6 +1354,7 @@ Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3
 Georg-Steger-Weg: einige Fußgänger	q1 1493,2249 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
 (Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 413,757 332,819 247,822
 (Am Seegraben - Schützenstr.): einige Fußgänger	q1 19996,-740 19978,-712
+(an der BMW-Niederlassung): Parkverkehr, Schranke	q1 2102,11307 2180,11318 2219,11324
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -1598,6 +1601,7 @@ Swinemünder Str.: Fußgänger	q1 10085,14863 10029,14974 9988,15057 9929,15174 985
 (Unterführung Schloßbrücke): Fußgänger, sehr eng	q3 3332,12742 3231,12749
 Sesenheimer Str.: Fußgänger, Bordsteine	q2 3866,11473 3874,11380
 (südliches Spreeufer): Fußgänger	q2 5203,12850 5191,12917 5128,13012 4994,13092 4915,13114 4822,13109 4748,13092 4710,13069 4644,13003 4619,12975 4590,12800 4749,12689
+(südliches Spreeufer): Fußgänger	q2 5128,13012 5246,12899 5244,12864
 (Heisenbergstr. - südliches Spreeufer): Fußgänger	q2 5120,12963 5191,12917
 (Kucharskistr. - südliches Spreeufer): Fußgänger	q2 4829,13089 4822,13109
 (Clara-von-Simson-Str. - südliches Spreeufer): Fußgänger	q2 4732,13030 4710,13069

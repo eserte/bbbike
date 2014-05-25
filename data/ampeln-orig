@@ -704,16 +704,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 18023,5623
 	X 17960,5511
 	X 17728,5756
-#: next_check_id: STERNDAMM-2014 vvv
-#: XXX wegen der Sperrung des Sterndamms zurzeit außer Betrieb vvv
-#: valid: 20140614- vvv
-#: next_check: 2014-06-14 vvv
+# REMOVED (wahrscheinlich wieder eingeschaltet) --- #: next_check_id: STERNDAMM-2014 vvv --- #: XXX wegen der Sperrung des Sterndamms zurzeit außer Betrieb vvv --- #: valid: 20140614- vvv --- #: next_check: 2014-06-14 vvv
 	X 17886,5587
 	X 17736,5441
-#: next_check ^^^
-#: valid ^^^
-#: XXX ^^^
-#: next_check_id ^^^
 	X 21332,4655
 	X 21789,4520
 	X 22093,4499
@@ -1908,6 +1901,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: note: Anforderungsampel
 #: note: am Wochenende ausgeschaltet (gesehen: 2014-05-03)
 	F 1205,10114
+#: XXX_prog Ampel westlich versetzt, beim Rechtsabbiegen aus der südlichen Rognitzstr. und östlichen Kaiserdamm nicht relevant
 	F 2282,11463
 	F -4648,11560
 	X 10815,11662
