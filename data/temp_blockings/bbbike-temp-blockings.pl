@@ -22783,6 +22783,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140520.1040.397353.html',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140527.0955.397503.html
 userdel	q4::inwork 12794,8103 12753,8187 12714,8249
 EOF
      },

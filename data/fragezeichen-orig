@@ -932,7 +932,7 @@ An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18
 Markus-Herz-Weg: Qualität?	?::projected 20701,18634 20906,18719 21123,18813
 David-Friedländer-Weg: Qualität?	?::projected 20727,18726 20901,18793 21038,18851 21024,18915 20995,18988
 Dohmweg: Qualität?	?::projected 20760,18812 20894,18861 21024,18915
-#: osm_watch: way id="163492498" version="4"
+#: osm_watch: way id="163492498" version="5"
 Georg-Förster-Allee: Qualität?	?::projected 20915,18601 20906,18719 20901,18793 20894,18861 20889,18943 20883,19045
 Löffleranger: Qualität?	?::projected 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
 Weidenröschenweg: Qualität?	?::projected 21123,18813 21310,18889
@@ -1007,7 +1007,7 @@ Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gespe
 # REMOVED (realisiert) --- #: osm_watch: way id="91218505" version="3"  --- #: XXX Radwege werden fortgeführt --- #: last_checked: 2013-08-19 --- #: next_check: 2013-11-15 --- Verlängerung der Wagner-Régeny-Str., Igo-Etrich-Str.: Qualität? Wo beginnt und verläuft die Igo-Etrich-Str.?	?::inwork 19363,3730 19162,3935
 # REMOVED (realisiert) --- #: osm_watch: way id="117951616" version="3" --- #: last_checked: 2013-10-31 --- #: check_frequency: 60d --- Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18930,3703 19162,3935
 # 
-#: osm_watch: way id="224731112" version="2"
+#: osm_watch: way id="224731112" version="3"
 #: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben
 #: last_checked: 2014-05-17 (Trassierungsarbeiten werden durchgeführt)
 #: check_frequency: 120d
@@ -1105,6 +1105,10 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: Albin Kessel
+#: XXX vor Ort anschauen?
+verlängerte Grolmanstr.: Qualität ("Kopfsteinpflaster")? Fußgängerfrequenz ("einige Fußgänger")? Nachts beleuchtet?	? 4651,11368 4648,11445 4574,11587
 # 
 #: last_checked: 2014-05-24
 Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5628,14063 5443,14028 5299,14049 5220,14043
@@ -1372,8 +1376,9 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
+#: source_id: INKO_114471
 #: last_checked: 2014-02-24
-#: check_frequency: 90d
+#: next_check: 2014-10-24 (wahrscheinlich nicht vor den U8-Bauarbeiten)
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8

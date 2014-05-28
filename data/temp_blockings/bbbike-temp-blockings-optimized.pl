@@ -820,26 +820,6 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9282
-userdel	2::temp 6945,9142 7044,9163
-',
-         'periodic' => 1,
-         'until' => 1401055199,
-         'from' => 1400796000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (24.5.2014 und 25.5.2014)',
-         'type' => 'gesperrt',
-         'id' => 728
-       },
        undef,
        undef,
        undef,
@@ -1161,26 +1141,8 @@ userdel	2::temp 6945,9142 7044,9163
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.xhain.info/termine/seifenkistenrennen-mehringdamm.htm',
-         'data' => 'userdel	1::temp 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890 9229,8785
-',
-         'periodic' => 1,
-         'until' => 1401141599,
-         'from' => 1400936400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              28,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 26. Mai 2014), Fahrtrichtung gesperrt',
-         'id' => 1050,
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1800,27 +1762,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.family-and-friends-ev.de/2.html
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=859853
-userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'periodic' => 1,
-         'until' => 1401055199,
-         'from' => 1400796000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), beide Fahrbahnen der Straße gesperrt (24. und 25. Mai 2014)',
-         'type' => 'gesperrt',
-         'id' => 1642
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3870,17 +3812,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5249.html',
-         'until' => 1401246000,
-         'text' => 'AS Schulzendorfer Straße: wegen Bauarbeiten ist der Waldweg komplett gesperrt, vom 04.05.2014 (07.00 Uhr) bis 28.05.2014 (05.00 Uhr) ',
-         'from' => 1399093200,
-         'id' => 2567,
-         'data' => '#: XXX eigentlich falsch positioniert, aber temp_blockings auf fragezeichen-Strecken geht wohl nicht (ungetestet)
-userdel	2::inwork 554,23349 658,23395
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_021842',
          'until' => 1402671600,
@@ -3900,23 +3832,15 @@ userdel	2::inwork 554,23349 658,23395
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_021939',
-         'until' => 1401073200,
-         'text' => 'Seehofstr. (Zehlendorf):zwischen Dahlemer Weg und Hammerstr. Baustelle, Fahrbahn gesperrt, bis 26.05.2014 05:00 Uhr ',
-         'from' => 1400392980,
-         'id' => 2570,
-         'data' => 'userdel	q4::inwork 1945,2127 1812,2160
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140520.1040.397353.html',
          'until' => 1402696799,
          'text' => 'Karl-Marx-Str.: Bauarbeiten in Höhe Werbellinstr., Fahrbahn gesperrt, vom 10. Juni 2014 bis zum 13. Juni 2014 ',
          'from' => 1402264800,
          'id' => 2571,
-         'data' => 'userdel	q4::inwork 12794,8103 12753,8187 12714,8249
+         'data' => '#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140527.0955.397503.html
+userdel	q4::inwork 12794,8103 12753,8187 12714,8249
 ',
          'type' => 'handicap'
        },
