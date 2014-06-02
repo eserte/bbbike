@@ -813,6 +813,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 21108,11628
 	X 24654,11265
 	X 19994,12484
+#: XXX_prog: zurzeit eine Fußgängerampel mit Anforderung, östlich versetzt, lange Wartezeiten
+#: source_id: INKO_117292
+#: last_checked: 2014-06-02
+#: next_check: 2014-11-07
 	X 4507,11728
 	X 3807,11859
 	X 3408,11849
@@ -2209,6 +2213,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -3018,16974
 	F 21150,11925
 	F -6053,1224
+#: note: Anforderungsampel
 	F 6522,12662
 #: note: Luftbild:
 	X 4775,21522
@@ -2421,12 +2426,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 8206,12757
 	F 13999,2727
 	B0 17953,15221
-#: next_check_id: VOSSSTR-2014
-#: note: provisorische Ampel
-#: XXX Siehe auch Baustelle in der Voßstr.
-#: last_checked: 2014-04-17
-#: next_check: 2014-05-31
-	X::inwork 9000,11727
+# REMOVED (Ampel bleibt permanent) --- #: next_check_id: VOSSSTR-2014 --- #: note: provisorische Ampel --- #: XXX Siehe auch Baustelle in der Voßstr. --- #: last_checked: 2014-04-17 --- #: next_check: 2014-05-31
+	X 9000,11727
 	X 25451,14018
 #: by: ossi vvv
 	X 19732,3340
@@ -2492,11 +2493,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2014-05-16 vvv
+#: last_checked: 2014-06-02 vvv
 #: next_check: 2014-06-30 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926
-	X::inwork 8634,13588
+# REMOVED (zurzeit ausgeschaltet) ---	X::inwork 8634,13588
 	X::inwork 8426,13909
 	X::inwork 8313,13839
 	X::inwork 8775,13606

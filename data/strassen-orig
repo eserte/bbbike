@@ -1698,7 +1698,7 @@ Schwäbische Str.	NN 6529,9738 6502,9782
 Schwäbische Str.	NN 6727,9497 6771,9458
 (Schwäbische Str. - Eisenacher Str.)	NN 6771,9458 6728,9457
 Speyerer Str.	N 6348,9535 6447,9661
-(Am Urban-Krankenhaus)	NN 10880,9859 10695,9922 10619,9914
+(Am Urban-Krankenhaus)	NN 10880,9859 10783,9892 10695,9922 10619,9914
 Boppstr.	N 11560,9524 11785,9437
 Carl-Herz-Ufer	N 10619,9914 10602,9957 10500,10081 10313,10084 10168,10085
 Carl-Herz-Ufer	NN 10168,10085 10066,10071
@@ -10939,6 +10939,8 @@ Wittelsbacherstr. (Wilmersdorf)	N 4568,9685 4398,9723 4245,9774 4099,9820 3949,9
 Ballenstedter Str.	N 3949,9842 3900,9832 3706,9737
 Grolmanstr.	N 5079,10701 5054,10706 4954,10876 4920,10933
 Grolmanstr.	N 4835,11092 4782,11192 4690,11369
+#: note: einige Straßenlaternen existieren
+(Grolmanstr./Goethestr. - Am Schillertheater)	NN 4651,11368 4648,11445 4616,11507 4574,11587
 Mommsenstr. (Charlottenburg)	N 4847,10677 4685,10689 4513,10702 4393,10712 4267,10724 3872,10749 3726,10757 3644,10759
 Mommsenstr. (Charlottenburg)	H 3644,10759 3603,10765
 Friedrichsruher Str. (Schmargendorf)	N 2730,9634 2998,9408 3093,9306 3196,9193 3333,9026
@@ -13458,6 +13460,8 @@ Andreas-Hermes-Siedlung	N 15834,-28 15881,-163
 Leghornweg	N 16192,24 16055,153
 #: XXX: Trasse wird verlegt, laut Bebauungsplan 8-23 (nicht im Internet zu finden)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013
+#: XXX der östliche "Stummel" wird Teil des Rhodeländerwegs
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014
 #: next_check: 2014-03-01
 Gockelweg	N 16297,-468 16284,-507 16114,-610 15846,-591
 Steinstr. (Mitte)	N 10286,13548 10311,13537 10390,13493 10603,13395

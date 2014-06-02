@@ -3224,6 +3224,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
+#: last_checked: 2014-06-02
 userdel	q2::inwork 5258,11285 5236,10994
 ',
          'type' => 'handicap'
@@ -3255,7 +3256,20 @@ userdel	q4::inwork 13085,7904 13117,7939 13151,7914
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
+         'until' => 1404136800,
+         'text' => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
+         'from' => 1370210400,
+         'id' => 2435,
+         'data' => '#: source_id: INKO_117520
+#: source_id: IM_021030
+#: last_checked: 2014-05-21
+#: next_check: 2014-06-30
+userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -3490,19 +3504,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html',
-         'until' => undef,
-         'text' => 'Friedrichsbrücke: ab dem 8.1.2014 ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt, Ende der Sperrung unbekannt',
-         'from' => 1389135600,
-         'id' => 2498,
-         'data' => '#: XXX wann wird die Brücke wiedereröffnet?
-#: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-05-20
-userdel	2::inwork 10086,12725 10166,12777
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_020491',
@@ -3812,6 +3814,16 @@ userdel	q4::inwork 6074,14194 6074,14215 6084,14251 6118,14289
          'data' => 'userdel	2::inwork -11775,36312 -12060,36572
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140528.1315.397553.html',
+         'until' => 1404165599,
+         'text' => 'Nördliche Zufahrt der Grumbkowstraße an der Blankenburger Straße gesperrt (im Juni für 4 Wochen)',
+         'from' => 1401573600,
+         'id' => 2575,
+         'data' => 'userdel	q2::inwork 11563,20048 11419,20327
+',
+         'type' => 'handicap'
        }
      
 );

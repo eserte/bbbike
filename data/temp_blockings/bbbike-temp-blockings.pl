@@ -21239,6 +21239,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
+#: last_checked: 2014-06-02
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
      },
@@ -21405,7 +21406,7 @@ userdel	2::temp 12048,10097 12229,10014
 EOF
      },
      { from  => 1370210400, # 2013-06-03 00:00
-       until => $isodate2epoch->("2014-05-30 16:00:00"), # 1398895200, # 2014-05-01 00:00
+       until => $isodate2epoch->("2014-06-30 16:00:00"), # 1398895200, # 2014-05-01 00:00
        text  => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
@@ -21413,7 +21414,7 @@ EOF
 #: source_id: INKO_117520
 #: source_id: IM_021030
 #: last_checked: 2014-05-21
-#: next_check: 2014-05-30
+#: next_check: 2014-06-30
 userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
 EOF
      },
@@ -22061,14 +22062,12 @@ userdel	q4::inwork 3171,25495 3141,25575 3141,25626 3154,25659
 EOF
      },
      { from  => $isodate2epoch->("2014-01-08 00:00:00"), # 1381651200, # 2013-10-13 10:00
-       until => undef, # $isodate2epoch->("2014-02-28 23:59:59"), # 1382133600, # 2013-10-19 00:00
+       until => 1401732810, # undef, # $isodate2epoch->("2014-02-28 23:59:59"), # 1382133600, # 2013-10-19 00:00
        text  => 'Friedrichsbrücke: ab dem 8.1.2014 ist die Brücke für den Fuß- und Radwegverkehr voll gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html',
        data  => <<EOF,
-#: XXX wann wird die Brücke wiedereröffnet?
-#: next_check_id: FRIEDRICHSBRUECKE-2014
-#: last_checked: 2014-05-20
+# REMOVED (Brücke wieder für Fußgänger passierbar) --- #: XXX wann wird die Brücke wiedereröffnet? --- #: next_check_id: FRIEDRICHSBRUECKE-2014 --- #: last_checked: 2014-05-20
 userdel	2::inwork 10086,12725 10166,12777
 EOF
      },
@@ -22815,6 +22814,15 @@ EOF
        source_id => 'LS/721-E/14/035',
        data  => <<EOF,
 userdel	2::inwork -11775,36312 -12060,36572
+EOF
+     },
+     { from  => 1401573600, # 2014-06-01 00:00
+       until => 1404165599, # 2014-06-30 23:59
+       text  => 'Nördliche Zufahrt der Grumbkowstraße an der Blankenburger Straße gesperrt (im Juni für 4 Wochen)',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140528.1315.397553.html',
+       data  => <<EOF,
+userdel	q2::inwork 11563,20048 11419,20327
 EOF
      },
     );

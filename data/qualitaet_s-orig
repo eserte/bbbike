@@ -237,7 +237,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2014-05-16
+#: last_checked: 2014-06-02
 #: check_frequency: 90d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -9273,8 +9273,8 @@ Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/invalidenstr/de/bau.shtml
 #: XXX ab April 2014 wird hier neu gebaut
-#: last_checked: 2014-05-14
-#: next_check: 2014-05-31
+#: last_checked: 2014-06-02
+#: check_frequency: 14d
 # REMOVED (hier fährt man nur auf neuer Fahrbahn) Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7567,13143 7440,13073 7415,13060
 Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7415,13060 7346,13022
 (Möllendorffstr. - Paul-Junius-Str.): Verbundsteinpflaster	Q1+ 15513,13539 15470,13509
@@ -9414,6 +9414,8 @@ Cupetiussteinweg: unbefestigte Straße und Kopfsteinpflaster	Q3+ 9689,21532 9752,
 Cupetiussteinweg: unbefestigte Straße	Q2- 9752,21362 9803,21224
 (an der BMW-Niederlassung): Asphalt	Q0 2102,11307 2180,11318 2219,11324
 (Katzengraben - Kietzer Graben): Kopfsteinpflaster	Q2 22478,4659 22486,4661 22500,4623
+(Grolmanstr./Goethestr. - Am Schillertheater): Verbundsteinpflaster	Q1 4651,11368 4648,11445 4616,11507
+(Grolmanstr./Goethestr. - Am Schillertheater): Kopfsteinpflaster	Q2 4616,11507 4574,11587
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -10550,6 +10552,7 @@ Kyffhäuserstr.: Asphalt	Q0 6860,9526 6891,9678 6920,9838
 Defreggerstr.: Asphalt	Q0 14786,8737 14676,8852 14567,8966
 # 
 #: by: Gertraud Stuhlmacher
+#: confirmed_by: srt
 Thomasiusstr.: Asphalt	Q0 6686,12768 6757,13112
 # 
 #: by: Jürgen Voigt

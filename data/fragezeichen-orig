@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="4"
 #: osm_watch: way id="153373877" version="4"
-#: last_checked: 2014-04-01
+#: last_checked: 2014-06-02
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -98,7 +98,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2014 (Widmung von Straßenland für einen Radfahrstreifen, Gitschiner/Alexandrinen)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2014-04-26
+#: last_checked: 2014-06-02
 #: next_check: 2014-11-01
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -208,7 +208,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5901 (2014 passiert wahrscheinlich nichts)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: XXX: Baubeginn ab Juni 2014 bis August 2015
-#: last_checked: 2014-05-14
+#: last_checked: 2014-06-02
 #: next_check: 2015-05-01
 Warschauer Str: Radspuren geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -803,12 +803,13 @@ Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,608
 # 
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_51%5B1%5D.pdf
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.0740.385616.html (Spatenstich)
+#: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20140528.1550.397569.html (Baustart)
 #: XXX liegt die Straße tatsächlich hier?
 #: XXX die Reinickendorfer Pressemeldungsschreiber sind fleißig, höchstwahrscheinlich wird es dort erscheinen, falls hier was passiert
 #: XXX fehlt in Berlin.coords.data, PLZ=13507
 #: osm_watch: way id="23099023" version="8"
 #: last_checked: 2013-10-24 (Bauarbeiten)
-#: next_check: 2014-06-30
+#: next_check: 2014-11-02
 Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431 1708,20459
 # 
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_06_21.pdf?start&ts=1340354416&file=stra__enbauliste_stand_2012_06_21.pdf
@@ -985,15 +986,15 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2014-04-08 vvv
-#: next_check: 2014-06-02 vvv
+#: last_checked: 2014-06-02 vvv
+#: check_frequency: 100d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Falkoniergasse: Genaue Lage? Qualität?	?::inwork 9945,12180 9915,12259
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -1106,9 +1107,7 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: by: Albin Kessel
-#: XXX vor Ort anschauen?
-verlängerte Grolmanstr.: Qualität ("Kopfsteinpflaster")? Fußgängerfrequenz ("einige Fußgänger")? Nachts beleuchtet?	? 4651,11368 4648,11445 4574,11587
+# REMOVED (aufgenommen) --- #: by: Albin Kessel --- #: XXX vor Ort anschauen? --- verlängerte Grolmanstr.: Qualität ("Kopfsteinpflaster")? Fußgängerfrequenz ("einige Fußgänger")? Nachts beleuchtet?	? 4651,11368 4648,11445 4616,11507 4574,11587
 # 
 #: last_checked: 2014-05-24
 Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5628,14063 5443,14028 5299,14049 5220,14043
@@ -1326,8 +1325,9 @@ Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshil
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5597
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036477239018/477239018/00108573/73-Anlagen/02/249-2013-1B-Plan11-35-ErschliessungAnlage1.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5697 (Empfehlung für Straßenbenennungen)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
 #: XXX fehlen alle in Berlin.coords.data vvv
-#: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt
+#: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel"
 #: last_checked: 2014-03-08 vvv
 #: next_check: 2014-09-08 vvv
 Planstraße 1: Helga-Haase-Straße: genaue Lage, Qualität?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
@@ -1335,8 +1335,8 @@ Planstraße 2: Jutta-Langenau-Straße: genaue Lage, Qualität?	?::projected 17607,1
 Planstraße 3: Gerhard-Schulz-Straße: genaue Lage, Qualität?	?::projected 17508,16356 17497,16385 17552,16461
 Fußweg zur Wartenberger Str.: genaue Lage, Qualität?	?::projected 17512,16495 17552,16461
 Planstraße 4: Harry-Glaß-Straße: genaue Lage, Qualität?	?::projected 17552,16461 17603,16415 17611,16396 17632,16336
-Planstraße 5: Joachim-Böhmer-Straße: genaue Lage, Qualität?	?::projected 17673,16420 17657,16464 17712,16549
-Planstraße 6: Erich-Hagen-Straße: genaue Lage, Qualität?	?::projected 17816,16401 17792,16465 17776,16504 17712,16549 17673,16577
+Planstraße 5: Joachim-Böhmer-Straße (oder ist das die Erich-Hagen-Straße?): genaue Lage, Qualität?	?::projected 17673,16420 17657,16464 17712,16549
+Planstraße 6: Erich-Hagen-Straße (oder ist das die Joachim-Böhmer-Straße?): genaue Lage, Qualität?	?::projected 17816,16401 17792,16465 17776,16504 17712,16549 17673,16577
 Fußweg zur Gehrenseestr.: genaue Lage, Qualität?	?::projected 17607,16328 17631,16258
 #: next_check ^^^
 #: last_checked ^^^
@@ -1346,6 +1346,7 @@ Fußweg zur Gehrenseestr.: genaue Lage, Qualität?	?::projected 17607,16328 17631,
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036439860180/439860180/00109962/62-Anlagen/02/LageplanDS1034.pdf (grober Lageplan)
 #: by: http://w6898n4pa.homepage.t-online.de/Lage.pdf (Lageplan)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2014 (Grundstücksnummerierungen)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
 #: XXX fehlt in Berlin.coords.data
 #: last_checked: 2013-12-20
@@ -1404,7 +1405,7 @@ Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9
 Alter Wiesenweg: Qualität? Ausgeschildert?	? 1739,15958 1581,15919
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5192&options=4 (BVV-Beschluss)
-#: last_checked: 2014-04-17
+#: last_checked: 2014-06-02
 #: check_frequency: 100d
 #: priority: #C
 Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,9856 9820,9718 9790,9528
@@ -3539,6 +3540,7 @@ Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,3410
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Benennung wird wirksam)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014 (weitere Grundstücksnummerierungen)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (weitere Grundstücksnummerierungen)
 #: XXX Benennung von 7 Privatwegen auf dem Grundstück der KGA "Erpetal" vvv
 #: last_checked: 2013-06-22 (Umbenennung nicht durchgeführt) vvv
 #: next_check: 2013-10-01 (Benennung wird wirksam) vvv
