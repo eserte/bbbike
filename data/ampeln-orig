@@ -2600,8 +2600,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 18878,9517
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: valid: 20140224-20170601 vvv
-#: next_check: 2017-06-01 vvv
+#: valid: 20140224-20180630 vvv
+#: next_check: 2018-06-30 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
 	F::inwork 14567,6810
 #: note: Extra-Umweg für Radfahrer in Richtung Südosten
@@ -3206,6 +3206,9 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 21013,-4308
 	X 69236,73732
 	B 52205,72352
+	B -13075,-51085
+	B -12441,-53091
+	B -7578,-70067
 # 
 #: note: ^^^
 ################################################################################

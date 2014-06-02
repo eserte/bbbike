@@ -880,7 +880,7 @@ Fähranleger	culdesac_pseudo -1989,18378
 	culdesac_pseudo 9132,13187
 #: next_check_id: BND-2014
 #: XXX wird bei der Verlängerung der Ida-von-Arnim-Str. aufgehoben
-#: last_checked: 2014-05-16
+#: last_checked: 2014-05-24
 #: check_frequency: 60d
 	culdesac 8251,14337
 #: next_check_id: SUEDPANKE-2014
@@ -967,6 +967,8 @@ südwestliches Sackgassenende	culdesac 21291,-1114
 	culdesac 19334,997
 	culdesac 19290,894
 	culdesac 1789,11280
+	culdesac 1640,-15863
+	culdesac 1608,-15900
 # 
 ######################################################################
 # culdesac entries which should remain invisible

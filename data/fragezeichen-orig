@@ -1629,7 +1629,6 @@ Ortsumfahrung Seelow (B1): möglicherweise eine Kraftfahrzeugstraße?	? 79547,1607
 Ortsumfahrung Seelow (B1/B167): möglicherweise eine Kraftfahrzeugstraße?	? 76378,16579 75959,16446 75486,16163 75096,15691 74874,15075
 Ortsumfahrung Seelow (B1): möglicherweise eine Kraftfahrzeugstraße?	? 74874,15075 74705,14029 74434,13638
 Ortsumfahrung Seelow (B167): möglicherweise eine Kraftfahrzeugstraße?	? 74874,15075 75139,14860 75139,14860 75310,14387 75361,13914 75522,13528 75762,13209 78240,11748
-Ortsumfahrung Jüterbog (B101, teilweise auch B102): möglicherweise eine Kraftfahrzeugstraße?	? -9332,-44530 -9321,-44621 -9226,-44859 -8970,-45175 -8786,-45479 -8734,-45651 -8707,-45860 -8592,-46235 -8481,-46772 -8306,-47209 -8299,-47368 -8342,-47533 -8408,-47665 -8497,-47768 -8632,-47880 -8716,-47998 -8768,-48129 -8777,-48229 -8768,-48324
 # 
 # REMOVED (mittlerweile gibt es eine offizielle Radwegführung in beide Richtungen; wahrscheinlich sind die Verlustzeiten nicht mehr so hoch) --- #: XXX_prog: Verlustzeiten für Wegführungen implementieren (ähnlich wie 3) --- Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der Überquerung der Schönhauser!	? 11119,15385 10881,15047 10838,14962
 # REMOVED (der Bahnhof ist immer noch da, Stand 2012-10) --- Raddusch: entfällt der Regionalbahnhof?	? 54769,-64897
@@ -2273,7 +2272,7 @@ Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2)	? -6
 (bei Altlüdersdorf): Qualität? westlich des Bahnübergangs anscheinend mäßiger Asphalt (Q1)	? -7200,71187 -6182,71661 -5335,72039
 Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,74445 -6794,74226 -6517,74079 -6100,73876 -6037,73865
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
-Thyrow - Kerzendorf (ehem. B101): laut "Berliner Umland" am Bahnübergang unterbrochen, B101n stattdessen benutzen!	? 1090,-16407 1773,-15712 1856,-15356
+# REMOVED (confirmed) --- Thyrow - Kerzendorf (ehem. B101): laut "Berliner Umland" am Bahnübergang unterbrochen, B101n stattdessen benutzen!	? 1114,-16369 1127,-16382 1149,-16386 1167,-16371 1206,-16293 1513,-16010 1608,-15900 1640,-15863 1773,-15712 1856,-15356
 #: XXX: laut "Berliner Umland" bis auf ein kurzes Stück in Weesow gut geeignet , laut "Aktiv Regional" besonders gut geeignet; bei osm gibt es diesen Weg nicht
 Börnicke - Wessow: Qualität?	? 26036,28777 26419,28677 26930,28875 31165,27230 31738,27620
 #: XXX: laut "Berliner Umland" ist der Abschnitt von Tempelfelde bis Abzweig Schönfeld mäßig geeignet (Autoverkehr?)
@@ -2582,7 +2581,7 @@ Dahme: Qualität?	? 13750,-59911 13663,-59806 13598,-59801
 Dahme: Qualität?	? 13491,-59794 13153,-59795 13484,-59914 13618,-59923
 Dahme: Qualität?	? 13491,-59794 13484,-59914
 Flaeming-Skate: genaue Wegführung? Qualität (sehr wahrscheinlich asphaltierte Radwege)?	? -9185,-54893 -9316,-54866 -9820,-54585 -9747,-53609 -9765,-52958
-Flaeming-Skate: genaue Wegführung? Qualität (sehr wahrscheinlich asphaltierte Radwege)?	? -5347,-38826 -5082,-38726 -2517,-38996
+Flaeming-Skate: genaue Wegführung? Qualität (sehr wahrscheinlich asphaltierte Radwege)?	? -5280,-38803 -5082,-38726 -2517,-38996
 # REMOVED (temporäre Ampel existiert bereits, Stand 2011) --- Bau einer Ampel, voraussichtlich im Frühjahr 2007	? 16669,25373
 # REMOVED (survey) --- #: XXX sollte bis Dezember 2006 mit einer neuen Asphaltdecke versehen worden sein... --- Semnonenweg: Qualität (noch Kopfsteinpflaster oder jetzt mit Asphaltdecke)?	? -4496,10920 -4550,10674
 # REMOVED (aber ich glaube, es war asphaltiert...) --- # note: laut Message-ID: <e3o6lb$grb$1@hahn.informatik.hu-berlin.de> noch immer nicht fertig --- Peetzig - Greiffenberg: westlich der Bahnstrecke mittlerweile asphaltiert?	? 44403,75026 44846,75320

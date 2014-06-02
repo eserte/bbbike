@@ -1199,26 +1199,7 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=811375
-userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'periodic' => 1,
-         'until' => 1401652800,
-         'from' => 1401523200,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Open Air Gallery am 1. Juni 2014 auf der Oberbaumbrücke (10:00 - 22:00)',
-         'type' => 'gesperrt',
-         'id' => 1107
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2496,7 +2477,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -3274,44 +3255,8 @@ userdel	q4::inwork 13085,7904 13117,7939 13151,7914
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
-         'until' => 1401458400,
-         'text' => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
-         'from' => 1370210400,
-         'id' => 2435,
-         'data' => '#: source_id: INKO_117520
-#: source_id: IM_021030
-#: last_checked: 2014-05-21
-#: next_check: 2014-05-30
-userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'http://www.kindertag-berlin.de/',
-         'data' => 'userdel	2::temp 20755,5750 20716,6029 20708,6089 20623,6136 20453,6211 20464,6237
-userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
-userdel	2::temp 20200,6321 20262,6493 20225,6631
-userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-userdel	2::temp 19976,6087 20064,6290 20106,6357
-',
-         'periodic' => 1,
-         'until' => 1401659999,
-         'from' => 1401487200,
-         'text' => 'Internationaler Kindertag im FEZ, Veranstaltung, einige Wege und Straßen sind gesperrt, 31. Mai und 1. Juni 2014',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              5
-                            ]
-                          ],
-         'id' => 2436,
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3667,8 +3612,8 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
        },
        undef,
        {
-         'until' => 1496354399,
-         'text' => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2017',
+         'until' => 1530395999,
+         'text' => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2018',
          'from' => 1393110000,
          'id' => 2540,
          'data' => 'userdel	2::inwork 14257,6895 14153,6795
@@ -3802,16 +3747,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
        },
        undef,
        undef,
-       {
-         'source_id' => '131100091',
-         'until' => 1401314400,
-         'text' => 'Spreenhagen: K6751 zwischen Kolpin und Markgrafpieske: Arbeiten an Autobahnbrücke, Fahrbahn gesperrt, 26.05.2014 bis 28.05.2014 ',
-         'from' => 1400968800,
-         'id' => 2566,
-         'data' => 'userdel	2::inwork 48940,-9547 49087,-9975
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_021842',

@@ -990,7 +990,7 @@ EOF
        text  => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk Vollsperrung 24.09.2004-31.05.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 2423,-6303 2715,-6365
+userdel	2 2423,-6303 2731,-6367
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -1176,7 +1176,7 @@ EOF
        text  => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 27.10.2004-31.03.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4 -1623,-21150 -1902,-21499
+userdel	q4 -1614,-21103 -1902,-21499
 EOF
      },
      { from  => 1097964000, # 2004-10-17 00:00
@@ -1854,7 +1854,7 @@ EOF
        text  => 'B 101; (Berliner Str.); OD Trebbin, zw. Bahnhofstr. u. Luckenwalder Str., Straßenbauarbeiten, Vollsperrung, 09.08.2005-29.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1902,-21499 -1623,-21150
+userdel	q4 -1902,-21499 -1614,-21103
 EOF
      },
      { from  => 1113688800, # 2005-04-17 00:00
@@ -4764,7 +4764,7 @@ EOF
        text  => 'B 101 OL Luckenwalde, Zinnaer Straße OL Luckenwalde, Zinnaer Str. zw. Mühlenweg u. Am Nuth: Vollsperrung 12.06.2006-23.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -4630,-36012 -4603,-35730
+userdel	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -10025,7 +10025,7 @@ EOF
        text  => 'L 073 Beelitzer Str. OL Luckenwalde, zw. Puschkinstr. u. Woltersdorfer Str. Straßenausbau Vollsperrung 24.09.2007-31.10.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -4725,-34957 -5019,-34814
+userdel	q4::inwork -4725,-34957 -4977,-34742
 EOF
      },
      { from  => 1190498400, # 2007-09-23 00:00
@@ -10708,7 +10708,7 @@ EOF
        text  => 'L 073 Neue Beelitzer Str. OL Luckenwalde, zw. Triftstr. und Kleiststr. Straßenausbau Vollsperrung 13.05.2008-19.09.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -4725,-34957 -5019,-34814
+userdel	q4::inwork -4725,-34957 -4977,-34742
 EOF
      },
      { from  => 1190498400, # 2007-09-23 00:00
@@ -12608,7 +12608,7 @@ EOF
        text  => 'L 073 Neue Beelitzer Str. OL Luckenwalde, zw. Bahnhofstr. und Beelitzer Tor Straßenausbau Vollsperrung 20.09.2008-15.11.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -4725,-34957 -5019,-34814
+userdel	q4::inwork -4725,-34957 -4977,-34742
 EOF
      },
      { from  => 1220392800, # 2008-09-03 00:00
@@ -16553,7 +16553,7 @@ EOF
        text  => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Kirchstr. und Am Nuthefließ Straßenbau Vollsperrung 12.10.2009-19.10.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -4630,-36012 -4603,-35730
+userdel	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
      { from  => 1254866400, # 2009-10-07 00:00
@@ -16585,7 +16585,7 @@ EOF
        text  => 'L 070 Baruther Str. OL Trebbin Straßenbauarbeiten Vollsperrung 09.10.2009-10.10.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -237,-21890 -749,-21486
+userdel	q4::inwork -237,-21890 -696,-21435
 EOF
      },
      { from  => 1255039200, # 2009-10-09 00:00
@@ -16811,7 +16811,7 @@ EOF
        text  => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Kirchstr. und Am Nuthefließ Straßenbau Vollsperrung 12.10.2009-25.11.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -4630,-36012 -4603,-35730
+userdel	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
      { from  => 1255816800, # 2009-10-18 00:00
@@ -17092,7 +17092,7 @@ EOF
        text  => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Heidestr. u. R.-Breitscheid-Str. Straßenbau Vollsperrung 26.11.2009-28.11.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -4630,-36012 -4603,-35730
+userdel	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
      { from  => $isodate2epoch->("2013-11-24 00:00:00"), # 1353279600, # 2012-11-19 00:00, # 1290380400, # PERIODISCH! # undef, # 
@@ -22480,8 +22480,8 @@ userdel	2::inwork 46132,49993 46390,50091
 EOF
      },
      { from  => 1393110000, # 2014-02-23 00:00
-       until => 1496354399, # 2017-06-01 23:59
-       text  => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2017',
+       until => $isodate2epoch->("2018-06-30 23:59:59"), # 1496354399, # 2017-06-01 23:59
+       text  => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2018',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 14257,6895 14153,6795
