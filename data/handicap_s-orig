@@ -112,12 +112,14 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # 
 #: next_check_id: VOSSSTR-2014 vvv
 #: source_id: INKO_113363 vvv
-#: XXX laut INKO_113363 bis Ende Mai 2014 gesperrt vvv
+#: XXX laut INKO_113363 bis Ende September 2014 gesperrt vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html
 #: osm_watch: way id="197160274" version="1" vvv
 #: last_checked: 2014-06-02 vvv
+#: next_check: 2014-09-30 vvv
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, eng	q4::inwork 8743,11663 8837,11676
 Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwork 8837,11676 9000,11727
+#: next_check ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
 #: XXX ^^^
@@ -130,7 +132,7 @@ Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg auswei
 # 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2014-04-02 vvv
-#: next_check: 2014-06-30 vvv
+#: next_check: 2015-05-31 vvv
 #: priority: #A vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -185,8 +187,7 @@ Ella-Trebe-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7939,13026
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127 8525,12958
 # 
-#: last_checked: 2013-10-24
-#: next_check: 2014-06-01
+#: last_checked: 2014-06-03
 Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 # 
 #: next_check_id: STAATSOPER-2014 vvv
@@ -1144,7 +1145,7 @@ Samoastr.: Fuﬂg‰nger	q1 6886,15156 6833,15215
 Nazarethkirchstr.: einige Bodenschwellen	q0- 7543,16016 7441,15909 7354,15817 7198,15656
 (Landsberger Allee - Treffurter Str.): Fuﬂg‰nger	q2 18057,14549 18119,14599
 #: XXX_prog BS auf der ˆstlichen Seite, auf der westlichen nur, wenn man von Norden aus der Storkower kommt
-(Storkower Str. - Schneeglˆckchenstr.): Fuﬂg‰nger, Bordsteine	q2 13964,13830 14032,13823 14049,13846
+(Storkower Str. - Schneeglˆckchenstr.): Fuﬂg‰nger, Bordsteine	q2 13971,13818 14032,13823 14049,13846
 (Antonplatz - Bizetstr.): Fuﬂg‰nger	q1 13487,15888 13525,15784
 (Antonplatz - Bizetstr.): Fuﬂg‰nger	q2 13512,15909 13539,15859 13519,15849 13541,15790
 (Othellostr. - Prenzlauer Promenade): Fuﬂg‰nger	q1 11990,18104 11894,18146
@@ -1949,6 +1950,7 @@ Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2249 1480,2199 1452,2095 1461,2073 14
 #: note: Schranke ist manchmal offen, kann umfahren werden
 (an der BMW-Niederlassung): Parkverkehr, Schranke	q1 2102,11307 2180,11318 2219,11324
 (Grolmanstr./Goethestr. - Am Schillertheater): gemeinsamer Rad- und Gehweg, Fuﬂg‰nger haben Vorrang	q1 4651,11368 4648,11445 4616,11507 4574,11587
+(Verl‰ngerung Hiddenseestr.): Fuﬂg‰nger	q2 10960,17674 10969,17587
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2962,7 +2964,8 @@ Rothariweg: enge Straﬂe	q1 8292,6331 8290,6191 8291,6048
 K¸selstr.: enge Straﬂe	q1 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621
 # REMOVED (gar nicht eng) --- #: by: anonymous --- Lutherstr. (Spandau): enge Straﬂe	q1 -3248,15543 -3234,15567 -3179,15574 -3134,15578 -3006,15534 -2908,15498
 #: by: Torsten (scholz):
-Zillertalstr.: enge Straﬂe	q1 10813,17193 10498,17192 10228,17191 10198,17196
+#: corrected_by: srt/policy (q1 -> q0-)
+Zillertalstr.: enge Straﬂe	q0- 10813,17193 10498,17192 10228,17191 10198,17196
 # REMOVED --- #: by: Frank Soukup: vvv --- Am Heideberg: enge Straﬂe	q1 -7114,14579 -7115,14663 -7121,14711 --- Am Heideberg: enge Straﬂe	q1 -7149,14768 -7156,14813 -7169,14849 -7209,14937 -7234,15003 -7292,15114 -7326,15145 -7373,15154 ---#: by: ^^^
 #: by: Maria (ferrusac):
 Reinhardtstr. (Tempelhof): enge Straﬂe	q1 9154,6638 9131,6553 9134,6467 9143,6415

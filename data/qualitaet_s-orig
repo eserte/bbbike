@@ -603,10 +603,10 @@ Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15738,5369 15382,568
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15778,8990
 Uferweg: asphaltiert, einige Wurzelschäden	Q0- 16673,7511 16655,7572 16624,7833 16692,8166 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
-#: add_fragezeichen: Ist die Berliner Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
-#: last_checked: 2014-02-26
+#: add_fragezeichen: Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
+#: last_checked: 2014-06-03
 #: check_frequency: 100d
-Berliner Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q1- 12736,17998 12467,17814
+Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q1- 12736,17998 12467,17814
 #: corrected_by: Hartmut Schröder (Q2 -> Q3)
 #: confirmed_by: srt
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 20683,3693 20546,3865
@@ -964,8 +964,9 @@ Hofzeichendamm: Asphalt	Q0 15726,23475 15853,23397 15943,23341 16042,23275 16122
 Hofzeichendamm: Asphalt	Q0 16229,23150 16243,23174 16141,23243 16122,23219
 Hofzeichendamm: Verbundsteine	Q0 16594,22903 16543,22942 16315,23094
 Krontaler Str.: Kopfsteinpflaster	Q2 13884,22879 13976,22813 14109,22714
-Grüntaler Str.: Kopfsteinpflaster	Q2 9795,16936 9738,16886 9604,16760 9455,16609 9293,16447 9170,16324 8993,16100
-Steegerstr.: Kopfsteinpflaster	Q2 9738,16886 9727,16902
+Grüntaler Str.: Kopfsteinpflaster	Q2 9778,16915 9744,16875 9611,16741 9516,16639 9514,16603
+Grüntaler Str.: Kopfsteinpflaster	Q2 9719,16904 9579,16770 9448,16638 9442,16610 9436,16572 9293,16447 9170,16324 8993,16100
+Steegerstr.: Kopfsteinpflaster	Q2 9744,16875 9719,16904
 Zur Hagelberger Str.: Kopfsteinpflaster	Q2 8774,9534 8679,9544
 Saubuchtweg: guter Waldweg	Q1 -3073,9061 -2983,8841 -2965,8705 -2962,8493 -2981,8350 -2975,8172 -2897,8008 -2859,7946 -2804,7915 -2677,7696 -2675,7622 -2639,7452 -2563,7353 -2546,7240 -2524,7141 -2547,7055 -2549,6948 -2634,6907 -2668,6862
 Schwarzer Weg: Waldweg, OK (teilweise sandig)	Q1 -2668,6862 -2632,6789 -2638,6641 -2686,6489 -2705,6355 -2986,5996 -3156,5926 -3226,5870 -3275,5847 -3603,5748 -3794,5604 -3845,5575 -3877,5570
@@ -1848,8 +1849,8 @@ Avenue Jean Mermoz: asphaltiert	Q0 3333,18034 3248,17921 3213,17858 3159,17780 3
 Am Friedhof: mäßiger Asphalt	Q1 6380,17836 6376,17687 6347,17381
 Soldiner Str.: Kopfsteinpflaster	Q2 8449,17196 8539,17197 8561,17198 8677,17154
 Soldiner Str.: Asphalt	Q0 8677,17154 8866,17075 8904,17059 9082,16982
-Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 9604,16760
-Grüntaler Str. - Esplanade: Asphalt	Q0 9795,16936 9846,16981 9880,16994 9980,16973 10013,16972
+Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 9579,16770 9611,16741
+Grüntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,16973 10013,16972
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 10997,16280 11295,16199 11404,16140 11550,16068
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
@@ -9416,6 +9417,7 @@ Cupetiussteinweg: unbefestigte Straße	Q2- 9752,21362 9803,21224
 (Katzengraben - Kietzer Graben): Kopfsteinpflaster	Q2 22478,4659 22486,4661 22500,4623
 (Grolmanstr./Goethestr. - Am Schillertheater): Verbundsteinpflaster	Q1 4651,11368 4648,11445 4616,11507
 (Grolmanstr./Goethestr. - Am Schillertheater): Kopfsteinpflaster	Q2 4616,11507 4574,11587
+(Verlängerung Hiddenseestr.): Verbundsteinpflaster	Q1 10960,17674 10969,17587
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -12369,7 +12371,7 @@ Nunsdorfer Ring: Asphalt	Q0 8853,172 8981,275 9171,166 9280,-127 9159,-171
 Albertinenstr.: gutes Kopfsteinpflaster	Q1 14045,16120 14049,16220
 Albertinenstr.: Asphalt	Q0 14049,16220 14124,16544
 #: confirmed_by: srt (westlicher Abschnitt)
-Amalienstr.: Asphalt	Q0 14124,16544 13972,16639 13855,16729 13789,16775
+Amalienstr.: Asphalt	Q0 14124,16544 13972,16639 13848,16721 13789,16775
 #: confirmed_by: srt
 Amalienstr.: mäßiger Asphalt	Q1 13789,16775 13722,16843 13653,16907 13589,16965
 Amalienstr.: Asphalt	Q0 13589,16965 13342,17180
@@ -12378,6 +12380,7 @@ Obersteiner Weg: Kopfsteinpflaster	Q2 13183,17580 13223,17530
 Obersteiner Weg: Kopfsteinpflaster, Straßenabsenkungen	Q2 13223,17530 13406,17382
 Obersteiner Weg: Beton	Q0 13406,17382 13511,17311
 #: note: laut ADFC-Karte im westlichen Teil gut, im östlichen Teil mäßig geeignet:
+#: confirmed_by: srt (westlicher Abschnitt)
 Thiesstr.: Asphalt	Q0 13006,17392 13085,17413 13161,17468 13223,17530 13271,17589
 #: note: auch laut ADFC-Karte gut geeignet, laut nic (kleene...) Beton, ein weiterer Eintrag meinte ebenfalls "Asphalt":
 Gäblerstr.: Asphalt	Q0 13129,17024 13057,17120 13029,17162
@@ -15437,7 +15440,7 @@ Teschendorfer Weg: guter Beton	Q0 7280,20895 7093,20874 6943,20862
 # 
 #: by: Lydia Moldenhauer:
 #: confirmed_by: srt
-Woelckpromenade: guter Asphalt	Q0 13632,16305 13726,16506 13710,16544 13756,16620 13855,16729
+Woelckpromenade: guter Asphalt	Q0 13632,16305 13726,16506 13710,16544 13756,16620 13848,16721
 # 
 #: by: Martina (flomo007...):
 #: corrected_by: srt (guter Asphalt -> ...)
@@ -15643,7 +15646,7 @@ Täubchenstr.: Asphalt	Q0 -862,4542 -947,4303
 # 
 #: by: Chris Stader:
 #: XXX wird die Qualität nach den Bauarbeiten besser sein?
-#: last_checked: 2014-05-21
+#: last_checked: 2014-06-03
 Masurenstr.: mäßiger Asphalt	Q1 10880,17469 10670,17458
 # 
 #: by: Gudrun Feix: vvv
@@ -16175,7 +16178,7 @@ Heimat: guter Beton	Q0- 1017,1320 1064,1119 1088,1031
 #: by: ^^^
 # 
 #: by: Gisela Hooke:
-#: note: laut ADFC-Karte gut geeignet
+#: confirmed_by: srt
 Günter-Litfin-Str.: guter Asphalt	Q0 13342,17180 13247,17262 13239,17269 13171,17335 13085,17413
 # 
 #: by: Katia Kobelt: vvv
@@ -18111,7 +18114,8 @@ Wacholderheide: unbefestigte Straße	Q2 26271,14049 26303,14084
 Ziegenorter Pfad: schlechtes Kopfsteinpflaster	Q3 -1434,24191 -1347,24096 -1297,24049 -1270,24019 -1303,23924 -1367,23853
 # 
 #: by: Torsten (scholz):
-Zillertalstr.: mäßiger Asphalt	Q1 10813,17193 10498,17192 10228,17191 10198,17196
+#: corrected_by: srt ("mäßiger" gestrichen, Q1 -> Q0-)
+Zillertalstr.: Asphalt	Q0- 10813,17193 10498,17192 10228,17191 10198,17196
 # 
 #: by: trixi (putsch):
 #: corrected_by: srt (Q1 -> Q0, Asphalt/Beton -> Asphalt)

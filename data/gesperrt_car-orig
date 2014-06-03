@@ -342,7 +342,7 @@ Zweibr¸cker Str.	1 -4254,15813 -4283,15639 -4294,15525 -4308,15411
 Potsdamer Str.: Mittelstreifen	3nocross 8226,11458 8301,11469 8358,11477 8374,11479 8479,11493 8542,11502
 J‰gerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 J‰gerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
-Osloer Str.: Straﬂenbahntrasse	3nocross 9455,16609 9331,16624 9210,16638 8939,16668
+Osloer Str.: Straﬂenbahntrasse	3nocross 9442,16610 9331,16624 9210,16638 8939,16668
 Osloer Str.: Straﬂenbahntrasse	3nocross 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
 Seestr.: Straﬂenbahntrasse	3nocross 7606,16746 7456,16620 7417,16587 7403,16575 7295,16477 7231,16418
 Bismarckstr.: Mittelstreifen	3nocross 3690,11629 3844,11649 3898,11655
@@ -990,3 +990,6 @@ Otto-von-Simson-Str.	1 2560,5044 2627,5095 2835,5410
 Bregenzer Str.	1 4279,10270 4228,10020
 BMW-Niederlassung: Poller	3 2180,11318 2219,11324 2282,11463
 BMW-Niederlassung: Poller	3 2282,11463 2219,11324 2180,11318
+#: by: jan (...matrix):
+#: corrected_by: srt ((mittlerweile?) offen f¸r Radfahrer, nach gesperrt_car verschoben)
+Straﬂe 206	1 13247,17262 13321,17318 13406,17382

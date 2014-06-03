@@ -593,9 +593,9 @@ Potsdamer Pl. -> Alte Potsdamer Str.: Mittelstreifen	3::igndisp 8542,11502 8479,
 Alte Potsdamer Str. -> Potsdamer Str.: Mittelstreifen	3::igndisp 8481,11447 8479,11493 8374,11479
 J‰gerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 J‰gerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
-Straﬂenbahntrasse	3nocross::ignrte 9455,16609 9331,16624 9210,16638 8939,16668
-Osloer Str. -> Stettiner Str.: Straﬂenbahntrasse	3::igndisp 9455,16609 9331,16624 9107,16389
-Freienwalder Str. -> Osloer Str.: Straﬂenbahntrasse	3::igndisp 9435,16832 9331,16624 9455,16609
+Straﬂenbahntrasse	3nocross::ignrte 9442,16610 9331,16624 9210,16638 8939,16668
+Osloer Str. -> Stettiner Str.: Straﬂenbahntrasse	3::igndisp 9442,16610 9331,16624 9107,16389
+Freienwalder Str. -> Osloer Str.: Straﬂenbahntrasse	3::igndisp 9435,16832 9331,16624 9442,16610
 Freienwalder Str. -> Stettiner Str.: Straﬂenbahntrasse	3::igndisp 9435,16832 9331,16624 9107,16389
 Stettiner Str. -> Freienwalder Str.: Straﬂenbahntrasse	3::igndisp 9107,16389 9331,16624 9435,16832
 Stettiner Str. -> Osloer Str.: Straﬂenbahntrasse	3::igndisp 9107,16389 9331,16624 9210,16638
@@ -1686,3 +1686,4 @@ Otto-von-Simson-Str.	1 2560,5044 2627,5095 2835,5410
 Bregenzer Str.	1 4279,10270 4228,10020
 BMW-Niederlassung: Poller	3 2180,11318 2219,11324 2282,11463
 BMW-Niederlassung: Poller	3 2282,11463 2219,11324 2180,11318
+Straﬂe 206	1 13247,17262 13321,17318 13406,17382

@@ -527,7 +527,6 @@ Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
 Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4872,17703 4816,17712
 Kemmannweg	1 -4207,14473 -4117,14458 -4049,14419 -3937,14340 -3911,14331 -3819,14302
-Straße 206	1s 13247,17262 13321,17318 13406,17382
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11160,13492 11135,13452 11107,13410 11081,13372 11070,13357
@@ -1994,8 +1993,8 @@ Neuköllner Str. -> Primelweg: Mittelstreifen	3::igndisp 15736,2593 15804,2512 15
 Mittelstreifen	3nocross::ignrte 3306,6453 3347,6460 3459,6484
 Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3347,6460 3459,6484
 Straßenbahntrasse	3nocross::ignrte 12396,17514 12436,17682 12467,17814
-Str. 56 -> Berliner Str.: Straßenbahntrasse	3::igndisp 12587,17603 12436,17682 12396,17514
-Berliner Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 12587,17603
+Str. 56 -> Tino-Schwierzina-Str.: Straßenbahntrasse	3::igndisp 12587,17603 12436,17682 12396,17514
+Tino-Schwierzina-Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 12587,17603
 Mittelstreifen	3nocross::ignrte -1821,16327 -1816,16111 -1815,15976
 Uferweg -> Daumstr.: Mittelstreifen	3::igndisp -1942,16105 -1816,16111 -1821,16327
 Daumstr. -> Uferweg: Mittelstreifen	3::igndisp -1815,15976 -1816,16111 -1942,16105

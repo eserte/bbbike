@@ -577,7 +577,8 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14193,
 	RW0;RW0 8092,13467 8048,13578 8019,13650
 	RW2;RW2 8019,13650 7979,13733
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv
-#: source_id: id: IM_020408 vvv
+#: source_id: IM_020408 vvv
+#: source_id: IM_021506 vvv
 #: last_checked: 2014-03-07 vvv
 #: next_check: 2016-09-30 vvv
 #: XXX während der Bauarbeiten ein Radstreifen, wie wird die Situation danach aussehen?
@@ -586,6 +587,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14193,
 gemeinsamer Rad- und Gehweg	RW2; 7589,14359 7943,13794 7979,13733
 #: next_check ^^^
 #: last_checked ^^^
+#: source_id ^^^
 #: source_id ^^^
 #: by: ^^^
 aufgemalter Radweg teilweise kaum erkennbar	RW1;RW1 7589,14359 7597,14417
@@ -803,7 +805,7 @@ Verbundsteinpflasterradweg, holprig	RW1; 13671,4490 13571,4493 13485,4496 13394,
 	RW1;RW 7113,3908 7144,3965 7159,4023 7160,4051
 	RW1;RW1 6214,13225 6228,13324
 Radweg auf der Fahrbahn hinter den parkenden Autos	RW1;RW1 6228,13324 6229,13517 6230,13596 6227,13938
-	RW1;RW1 9455,16609 9331,16624 9210,16638 8939,16668 8759,16684
+	RW1;RW1 9442,16610 9331,16624 9210,16638 8939,16668 8759,16684
 	RW2;RW1 8759,16684 8721,16689 8503,16716 8467,16718
 	RW2;RW2 21954,5229 22043,5346 22087,5404 22123,5452 22179,5539 22236,5633 22292,5774 22358,5918 22428,6063
 gemeinsamer Rad- und Gehweg	RW2; 22428,6063 22467,6135
@@ -997,6 +999,7 @@ asphaltierter Radweg	RW1;RW2 11134,12793 11226,12945
 Busspur gilt Mo-Fr 7-14 Uhr	RW5; 10876,12563 10803,12470
 # REMOVED (zu weit entfernt von der anderen Seite) --- : next_check_id: VOSSSTR-2014
 #: last_checked: 2014-06-02
+#: next_check: 2014-09-30
 #: XXX Wegen Bauarbeiten aufgehoben, danach vielleicht wieder RW3;RW0
 	RW0;RW0 8740,11524 9058,11564
 	RW3;RW0 9058,11564 9268,11590
@@ -1512,7 +1515,6 @@ Busspur gilt Mo-Sa 7-20 Uhr	RW5;RW0 8119,12414 8354,12416 8400,12417 8540,12420
 	RW7;RW7 10718,13625 10597,13647 10445,13675 10309,13700 10220,13694 10085,13684 9996,13678 9947,13674
 	RW7;RW7 10777,13614 10872,13570 11059,13480 11104,13456
 	RW7;RW7 9900,13653 9749,13582 9611,13517 9296,13397 9281,13374
-#: next_check_id: INVALIDEN-2014
 #: last_checked: 2014-04-02
 #: next_check: 2014-06-30
 #: XXX bleibt die Benutzungspflicht hier?
@@ -1585,8 +1587,8 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12784,13961 12856,14042
 	RW3;RW3 12571,13798 12402,13762 12372,13755 12204,13719 12161,13711
 	RW3; 11907,13655 12038,13685 12161,13711
 	RW1;RW1 13438,14675 13737,14204 13879,13967
-Busspur gilt Mo-Fr 6-19 Uhr; die letzten 50 Meter sind benutzungspflichtiger Radweg	RW1; 13879,13967 13964,13830 14006,13761
-	RW1; 14006,13761 13964,13830 13879,13967
+Busspur gilt Mo-Fr 6-19 Uhr; die letzten 50 Meter sind benutzungspflichtiger Radweg	RW1; 13879,13967 13971,13818 14006,13761
+	RW1; 14006,13761 13971,13818 13879,13967
 	RW2;RW2 7816,13276 7759,13246
 #: by: rjoop vvv
 komplette Fahrspur für Radfahrer reserviert	RW3;RW3 6661,13130 6757,13112 6860,13093 6966,13075
@@ -2703,7 +2705,7 @@ Gehweg für Radfahrer frei	RW1; 18109,19352 18544,19722
 	RW1;RW1 16873,14236 16881,14063 16875,13834
 	RW2;RW4 9883,16557 9816,16565 9781,16569
 	RW4;RW4 9781,16569 9617,16590
-	RW2;RW1 9617,16590 9514,16603 9455,16609
+	RW2;RW1 9617,16590 9514,16603 9442,16610
 	RW3;RW3 -224,16095 -203,16168 -196,16187 -168,16269
 	RW1;RW1 -344,15200 -286,15354
 	RW;RW1 -286,15354 -302,15546
