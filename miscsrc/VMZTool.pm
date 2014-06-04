@@ -280,6 +280,7 @@ sub parse_berlin_summary {
 	next if $type eq 'airport';
 
 	(my $id = $record->{pointId}) =~ s{^News_id_}{};
+	next if $id =~ m{^Airport_id_}; # e.g. Airport_id_SXF, Airport_id_TXL
 
 	my $htmltb = HTML::TreeBuilder->new;
 	my $tree = $htmltb->parse($rss_data->{$id}->{description_html});
