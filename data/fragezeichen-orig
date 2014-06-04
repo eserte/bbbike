@@ -174,7 +174,7 @@ Wuhletalstr.: werden hier die Radspuren fortgef¸hrt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaﬂnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2014-04-28
+#: last_checked: 2014-06-04
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -1130,7 +1130,7 @@ Martha-Jacob-Platz: Benennung eines Platzes	? 480,11204 454,11159
 # REMOVED (existiert nicht mehr) --- Tiergarten: existiert dieser Weg noch oder ist es nur ein Trampelpfad?	? 8210,11775 8140,11850
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5596
-#: last_checked: 2014-05-06 (Bauarbeiten)
+#: last_checked: 2014-06-04
 #: check_frequency: 30d
 Tuchollaplatz: entstehen hier Aufpflasterungen und/oder ein verkehrsberuhigter Bereich?	? 15541,10892 15649,10922
 # 
@@ -1749,7 +1749,7 @@ Im Nikolaiquartier: neue Straﬂe, wo befindet sie sich? Qualit‰t?	? -13094,-1158 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern)
 #: XXX Freesienweg (beide Amtsbl‰tter, DPAG-Mitteilungsblatt 12/2013) oder Fresienweg (BA)? Wikipedia meint "Freesien"
 #: XXX fehlt bei Berlin.coords.data, PLZ=10365
-#: last_checked: 2014-04-28 (Bauarbeiten in Gange, keine Straﬂe zu sehen)
+#: last_checked: 2014-06-04 (Bauarbeiten in Gange, keine Straﬂe zu sehen)
 #: check_frequency: 90d
 Freesienweg: geplante Straﬂe, wo wird sie genau liegen? Qualit‰t?	?::projected 16002,12640 16004,12750
 # 
@@ -1759,7 +1759,7 @@ Freesienweg: geplante Straﬂe, wo wird sie genau liegen? Qualit‰t?	?::projected 1
 #: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
-#: last_checked: 2014-03-29 vvv
+#: last_checked: 2014-06-04 vvv
 #: check_frequency: 60d vvv
 Alzeyweg: genaue Lage? Qualit‰t? PLZ=10365	? 17376,12422 17366,12357 17365,12301
 Nibelungenring: genaue Lage? Qualit‰t? PLZ=10365	? 17484,12405 17432,12413 17376,12422 17337,12428
@@ -1886,7 +1886,7 @@ Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Pla
 #: XXX es gab noch zwei weitere Alternativen: Kate-K¸hl-Straﬂe und Alisa-Fuss-Straﬂe
 #: XXX fehlt in Berlin.coords.data
 #: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein
-#: last_checked: 2014-05-20 (zur Zeit nur eine Baustraﬂe)
+#: last_checked: 2014-06-04 (zur Zeit nur eine Baustraﬂe)
 #: check_frequency: 60d
 Wilhelmine-Gemberg-Str.: genaue Lage, Qualit‰t?	?::inwork 11707,11526 11769,11683
 # 
@@ -1928,6 +1928,8 @@ Straﬂe in Bau: Straﬂenname, genaue Lage, Qualit‰t?	?::inwork 19206,17458 19798,1
 neue Straﬂen im Zuge des Bebauungsplanes 8-9bab: genaue Lage, Qualit‰t, Straﬂennamen?	?::projected 11348,3757 11464,3662
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140507.1055.396976.html
+#: XXX wird bis 2017 realisiert
+#: next_check: 2017-01-01
 Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualit‰t, Straﬂenname?	?::projected 18859,14048 18710,14212
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/endfassung_nr.7_abl_pdmstadt_07_2014_h.pdf

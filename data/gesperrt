@@ -988,6 +988,7 @@ Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
+Neue Bahnhofstr.	1s 14908,11231 14918,11249
 Mittelstreifen	3nocross::ignrte 19894,-835 19996,-740 20205,-548
 Schützenstr. -> Am Seegraben: Mittelstreifen	3::igndisp 19978,-712 19996,-740 20205,-548
 Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2016,11034 2102,11307 2109,11441
@@ -2315,6 +2316,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5:-14:trailer=15 17879,11378
+Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5:-15:trailer=15 17979,11358
 Drängelgitter	BNP:3:45:trailer=10 18613,2983
 Drängelgitter	BNP:3:48:trailer=10 18707,3074
 Drängelgitter	BNP:3:45:trailer=10 18724,3091

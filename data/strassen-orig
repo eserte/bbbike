@@ -1439,7 +1439,7 @@ Heidestr. (Moabit)	HH 8019,13650 7979,13733 7943,13794 7589,14359 7597,14417
 Heidestr. (Moabit)	H 7597,14417 7373,14566
 #: note: Privatstraße
 Jean-Monnet-Str.	N 7995,13537 8048,13578
-Luisenstr. (Mitte)	H 8619,13689 8626,13641 8634,13588 8648,13498 8665,13353 8701,13058 8715,12956 8726,12861 8732,12804 8737,12757 8752,12647 8754,12622 8756,12608 8760,12585
+Luisenstr. (Mitte)	H 8619,13689 8626,13641 8634,13588 8648,13498 8665,13353 8701,13058 8711,12986 8715,12956 8726,12861 8732,12804 8737,12757 8752,12647 8754,12622 8756,12608 8760,12585
 Hannoversche Str.	H 9212,13471 9047,13446 8892,13498 8824,13569 8775,13606
 Hannoversche Str.	N 8775,13606 8673,13597 8634,13588 8601,13580 8548,13577
 Chausseestr. (Mitte, Wedding, Gesundbrunnen)	H 9212,13471 9207,13493 9094,13641 9042,13707 8935,13844 8870,13926 8831,13973 8732,14098 8654,14194 8607,14253 8527,14352 8442,14456 8406,14507 8346,14576 8286,14635 8246,14675 8232,14689 8153,14769
@@ -1835,8 +1835,6 @@ Kaskelstr.	N 15245,11178 15090,11237 15058,11250
 Spittastr.	N 15447,10883 15509,11058 15578,11241
 Stadthausstr.	N 15649,10922 15674,10851 15681,10801
 Archibaldweg	N 15674,10851 15870,10938 15886,10947 15950,10987 16034,11053 16160,11154
-#: note: kein Straßenschild auf der östlichen Seite, in der Mitte steht "Nöldnerplatz", auf der westlichen Seite "Lückstraße"
-Nöldnerplatz	N 16049,10844 15903,10906 15870,10938
 Münsterlandstr.	N 16160,11154 16273,11113 16381,11080 16492,11042 16575,11013 16702,10972 16792,10945
 Münsterlandplatz	N 16719,11021 16590,11059
 Wönnichstr.	N 16597,10651 16702,10972 16719,11021 16785,11212 16856,11438 16887,11545 16915,11634 16977,11769
@@ -5230,15 +5228,17 @@ Eschenbachstr.	N 16290,7160 16375,7070
 Stormstr. (Baumschulenweg)	N 16323,6998 16234,7100
 Glanzstr.	N 16323,6998 16430,6880 16588,6724
 Neue Bahnhofstr.	H 15016,11431 14918,11249
-Neue Bahnhofstr.	N 14918,11249 14879,11182 14811,11067 14752,11041
+Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14811,11067 14752,11041
 Sonntagstr.	NN 14845,10954 14798,10985 14752,11041
 Sonntagstr.	N 14752,11041 14669,11152 14598,11245 14535,11327 14434,11465
+#: note: kein Straßenschild auf der östlichen Seite, in der Mitte steht "Nöldnerplatz", auf der westlichen Seite "Lückstraße"
+Lückstr.	N 15870,10938 15903,10906 16049,10844
 Lückstr.	H 16049,10844 16085,10844 16153,10818 16300,10753 16313,10747 16468,10695 16597,10651 16601,10650 16647,10632
 #: XXX wird dieser Abschnitt auch als "Rummelsburger Str." ausgeschildert?
 #: osm_watch: way id="198585468" version="5"
 # REMOVED (nein, Radweg wird hier definitiv nicht gebaut) ---- #: XXX außerdem: mit Bau des Aldi-Marktes auf der westlichen Seite wird vielleicht auch der Gehweg neu gebaut, dann mit Radweg?
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5490
-#: last_checked: 2014-03-29
+#: last_checked: 2014-06-04
 #: check_frequency: 60d
 (Zufahrt zum Kaufland)	N 16699,10611 16628,10442
 #: note: offiziell nur Lieferverkehr
@@ -14563,18 +14563,8 @@ Fontanestr. (Lichtenrade)	N 9699,-600 9779,-605
 Fontanestr. (Lichtenrade)	NN 9779,-605 9822,-603
 Fontanestr. (Lichtenrade)	N 10075,-624 10182,-601 10280,-578 10374,-552 10450,-528 10508,-519
 Massower Str.	N 17734,11408 17866,11430 18005,11451 18178,11515
-#: last_checked: 2013-12-26 vvv
-#: check_frequency: 100d vvv
-#: XXX wird dieser Straßenabschnitt aufgehoben?
-#: XXX str_cont_ausnahme-Eintrag kann dann wohl entfernt werden
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2012
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2013
-#: osm_watch: way id="4689178" version="6"
-Massower Str.	N 17866,11430 17879,11378 17970,11391 17979,11358
-#: XXX sollte dann wahrscheinlich zur "Kurze Str." umbenannt werden?
-Massower Str.	N 17979,11358 18013,11360
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (Privatstraßenschilder und Schranken stellen mittlerweile) --- #: last_checked: 2013-12-26 vvv --- #: check_frequency: 100d vvv --- #: XXX wird dieser Straßenabschnitt aufgehoben? --- #: XXX str_cont_ausnahme-Eintrag kann dann wohl entfernt werden --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2012 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2013 --- #: osm_watch: way id="4689178" version="6"
+Massower Str.	N 17866,11430 17879,11378 17970,11391 17979,11358 18013,11360
 Kurze Str. (Friedrichsfelde)	N 18027,11244 18013,11360 18005,11451
 Bredowstr.	N 6011,13330 6008,13529 6005,13734 6006,14024
 Heilbronner Str. (Schöneberg)	NN 6131,9241 6163,9337
@@ -15794,7 +15784,8 @@ Claire-Waldoff-Str.	N 9246,13235 9132,13187
 Am Zirkus	N 9118,13070 9137,13032
 Am Zirkus	N 9090,13009 9137,13032 9167,13046 9239,12923
 Bertolt-Brecht-Platz	N 9193,12875 9153,12925
-Charitéstr.	N 8693,12951 8632,13037
+Karlplatz	N 8711,12986 8676,12976
+Charitéstr.	N 8693,12951 8676,12976 8632,13037
 Margarete-Steffin-Str.	N 8315,13181 8406,13127 8525,12958 8559,12912 8631,12848 8700,12810 8732,12804
 (Willy-Brandt-Str. - Rahel-Hirsch-Str.)	NN 8120,12756 8124,12840 8116,12938
 (Parkweg Spreebogenpark)	NN 8301,12758 8304,12938
