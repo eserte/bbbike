@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 12;
+plan tests => 14;
 
 use_ok 'GPS::GpsmanData::Any';
 
@@ -91,6 +91,8 @@ EOF
     is $gps->Chunks->[0]->IsTrackSegment, 0, 'First chunk is real <trk>';
     is $gps->Chunks->[1]->IsTrackSegment, 1, 'Second chunk is <trkseg>';
 
+    is $gps->Chunks->[0]->TrackAttrs->{'srt:device'}, 'eTrex 30', 'preserve creator into srt:device';
+
     {
 	# Roundtrip check, without gpxx extensions
 	my $gpx2 = $gps->as_gpx(gpxx => 0);
@@ -110,6 +112,8 @@ EOF
 	# Roundtrip check, with gpxx extensions
 	my $gpx2 = $gps->as_gpx; # default is gpxx => 1
 	xmllint_string($gpx2);
+
+	like $gpx2, qr{creator="eTrex 30"}, 'creator re-created';
 
 	# Still need to normalize, but without <extensions> now
 	(my $normalized_expected = $sample_gpx) =~ s{^.*?<trk>}{<trk>}s;

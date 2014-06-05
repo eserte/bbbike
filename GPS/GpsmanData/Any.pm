@@ -122,7 +122,14 @@ sub load_gpx {
 
     my @wpts;
 
-    my($root) = $twig->children;
+    my $root = $twig->root;
+
+    my $creator = $twig->root->{att}->{'creator'};
+    my $gps_device;
+    if (defined $creator && $creator =~ m{^etrex}i) { # heuristics: looks like a GPS device
+	$gps_device = $creator;
+    }
+
     for my $wpt_or_trk ($root->children) {
 	if ($wpt_or_trk->name eq 'wpt') {
 	    my $wpt_in = $wpt_or_trk;
@@ -173,7 +180,10 @@ sub load_gpx {
 		    if ($is_first_segment) {
 			$trkseg->IsTrackSegment(0);
 			$trkseg->Name($name);
-			$trkseg->TrackAttrs({ (defined $track_display_color ? (colour => $track_display_color) : ()) });
+			$trkseg->TrackAttrs({
+					     (defined $track_display_color ? (colour => $track_display_color) : ()),
+					     (defined $gps_device ? ('srt:device' => $gps_device) : ()),
+					    });
 			$is_first_segment = 0;
 		    } else {
 			$trkseg->IsTrackSegment(1);

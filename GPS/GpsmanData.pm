@@ -1228,7 +1228,6 @@ sub as_gpx {
     my $gpx = $dom->createElement("gpx");
     $dom->setDocumentElement($gpx);
     $gpx->setAttribute("version", "1.1");
-    $gpx->setAttribute("creator", "GPS::GpsmanData $GPS::GpsmanData::VERSION - http://www.bbbike.de");
     $gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
     if ($do_gpxx) {
 	$gpx->setNamespace(GPXX_NS,'gpxx');
@@ -1239,6 +1238,7 @@ sub as_gpx {
 		       ($do_gpxx ? ' ' . GPXX_NS . ' http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd' : '')
 		      );
 
+    my $creator;
     my $current_trk;
     for my $chunk (@{ $self->Chunks }) {
 
@@ -1267,12 +1267,17 @@ sub as_gpx {
 		$add_name->($trkxml);
 		if ($do_gpxx) {
 		    my $trk_attrs = $chunk->TrackAttrs;
-		    if ($trk_attrs && $trk_attrs->{colour}) {
-			my $garmin_color = GPS::GpsmanData::GarminGPX::gpsman_to_garmin_color($trk_attrs->{colour});
-			my $extensionsxml = $trkxml->addNewChild(undef, 'extensions');
-			my $trackextensionxml = $extensionsxml->addNewChild(GPXX_NS, 'TrackExtension');
-			my $displaycolorxml = $trackextensionxml->addNewChild(GPXX_NS, 'DisplayColor');
-			$displaycolorxml->appendText($garmin_color);
+		    if ($trk_attrs) {
+			if ($trk_attrs->{colour}) {
+			    my $garmin_color = GPS::GpsmanData::GarminGPX::gpsman_to_garmin_color($trk_attrs->{colour});
+			    my $extensionsxml = $trkxml->addNewChild(undef, 'extensions');
+			    my $trackextensionxml = $extensionsxml->addNewChild(GPXX_NS, 'TrackExtension');
+			    my $displaycolorxml = $trackextensionxml->addNewChild(GPXX_NS, 'DisplayColor');
+			    $displaycolorxml->appendText($garmin_color);
+			}
+			if ($trk_attrs->{'srt:device'}) {
+			    $creator = $trk_attrs->{'srt:device'};
+			}
 		    }
 		}
 		$current_trk = $trkxml;
@@ -1291,6 +1296,12 @@ sub as_gpx {
 	    }
 	}
     }
+
+    if (!defined $creator) {
+	$creator = 'GPS::GpsmanData $GPS::GpsmanData::VERSION - http://www.bbbike.de';
+    }
+    $gpx->setAttribute("creator", $creator);
+
     require Encode;
     Encode::encode("utf-8", $dom->toString);
 }

@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string eq_or_diff);
 use File::Temp qw(tempfile);
 
-plan tests => 68;
+plan tests => 71;
 
 use_ok 'GPS::GpsmanData';
 
@@ -288,6 +288,32 @@ EOF
     is($gps->Chunks->[0]->Name, 'TRACK', 'Name of track');
     is($gps->Chunks->[1]->IsTrackSegment, 1, 'Second chunk is track segment');
     is($gps->Chunks->[1]->Name, undef, 'No name for track segment');
+}
+
+{
+    # srt:device
+    my $trk_sample_file = <<'EOF';
+!Format: DDD 1 WGS 84
+!Creation: yes
+
+!T:	TRACK	srt:device=etrex vista hcx
+	31-Dec-1989 01:00:00	N53.0945536138593	E12.8748931621168	0
+	31-Dec-1989 01:00:00	N53.0943054383567	E12.8761002946735	0
+EOF
+
+    my $gps = GPS::GpsmanMultiData->new;
+    $gps->parse($trk_sample_file);
+
+    is($gps->Chunks->[0]->TrackAttrs->{'srt:device'}, 'etrex vista hcx', 'srt:device parsed');
+
+    {
+	my $gpx = $gps->as_gpx;
+	gpxlint_string($gpx);
+
+	my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
+	$root->setNamespaceDeclURI(undef, undef);
+	is($root->findvalue('/gpx/@creator'), q{etrex vista hcx}, 'srt:device -> creator');
+    }
 }
 
 {
