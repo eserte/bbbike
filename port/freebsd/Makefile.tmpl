@@ -18,14 +18,11 @@ RUN_DEPENDS=	p5-Tk>=0:${PORTSDIR}/x11-toolkits/p5-Tk \
 USES=		perl5
 POD2MAN=	pod2man
 
-MAN1=		bbbike.1
-
-MYDESTDIR=	${PREFIX}/BBBike
+MYDESTDIR=	${STAGEDIR}${PREFIX}/BBBike
 
 LOCAL_PERL_ARCH=	${PERL_ARCH}
 PLIST_SUB=		LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
 
-NO_STAGE=	yes
 do-build:
 	cd ${WRKSRC}/ext && ${MAKE} PERL=${PERL5} all install
 	cd ${WRKSRC}/ext && ${MAKE} PERL=${PERL5} clean
@@ -36,7 +33,7 @@ do-build:
 	${RM} -f ${WRKSRC}/bbbike.tmp
 	${CHMOD} 0755 ${WRKSRC}/bbbike
 
-BBBIKEEXE=	bbbike cbbbike bbbikeclient cmdbbbike smsbbbike
+BBBIKEEXE=	@BBBIKEEXE@
 PLIST_IN=	${PKGDIR}/pkg-plist.in
 PLIST=		${WRKDIR}/pkg-plist
 
@@ -46,14 +43,14 @@ pre-install:
 
 do-install:
 	-${RM} -rf ${MYDESTDIR}
-	${INSTALL_MAN} ${WRKSRC}/bbbike.1 ${PREFIX}/man/man1
-	${CP} -r ${WRKSRC} ${MYDESTDIR}
+	${INSTALL_MAN} ${WRKSRC}/bbbike.1 ${STAGEDIR}${PREFIX}/man/man1
+	${FIND} ${WRKSRC} | ${XARGS} ${CHMOD} ugo+r
+	${FIND} ${WRKSRC} -perm -u=x | ${XARGS} ${CHMOD} go+x
+	${CP} -rp ${WRKSRC} ${MYDESTDIR}
 	${RM} -f ${MYDESTDIR}/bbbike.1
-	${FIND} ${MYDESTDIR} | ${XARGS} ${CHMOD} ugo+r
-	${FIND} ${MYDESTDIR} -perm -u=x | ${XARGS} ${CHMOD} go+x
 .for f in ${BBBIKEEXE}
-	-${RM} -f ${PREFIX}/bin/$f
-	${LN} -s  ${MYDESTDIR}/$f ${PREFIX}/bin/$f
+	-${RM} -f ${STAGEDIR}${PREFIX}/bin/$f
+	${LN} -s  ../BBBike/$f ${STAGEDIR}${PREFIX}/bin/$f
 .endfor
 
 .include <bsd.port.mk>

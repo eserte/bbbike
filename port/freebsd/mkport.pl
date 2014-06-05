@@ -27,6 +27,8 @@ use Getopt::Long;
 
 use BBBikeUtil qw(is_in_path);
 
+sub plist_line ($$);
+
 use vars qw($bbbike_version $tmpdir $bbbike_dir);
 use vars qw($bbbike_base $bbbike_archiv
 	    $bbbike_archiv_dir $bbbike_archiv_path);
@@ -73,7 +75,11 @@ if (!-f $bbbike_archiv_path) {
 	die "Can't find $bbbike_archiv in $bbbike_archiv_dir";
     }
 }
-my $old_ports_makefile = "$portsdir/german/BBBike/Makefile";
+my $bbbike_ports_dir = "$portsdir/german/BBBike";
+my $old_ports_makefile = "$bbbike_ports_dir/Makefile";
+my @bbbike_exe = qw(bbbike cbbbike bbbikeclient cmdbbbike smsbbbike);
+my $bbbike_exe = join ' ', @bbbike_exe;
+my %bbbike_exe = map {($_,1)} @bbbike_exe;
 
 my $freebsd_ident = <<'EOF';
 # $FreeBSD: ports/german/BBBike/Makefile,v 1.11 2002/07/15 10:55:17 ijliao Exp $
@@ -131,16 +137,26 @@ mkdir $portdir, 0755 or die $!;
 substitute("Makefile.tmpl", "$portdir/Makefile");
 
 my $plist = "$portdir/pkg-plist.in";
-open(PLIST, ">$plist") or die "Can't write to $plist: $!";
+open my $PLIST, ">", $plist
+    or die "Can't write to $plist: $!";
+
+#XXX requiredd?
+# print $PLIST <<'EOF';
+# @owner root
+# @group wheel
+# EOF
+
 foreach (sort @files) {
-    plist_line($_);
+    plist_line($_, $PLIST);
 }
+
+print $PLIST "man/man1/bbbike.1.gz\n";
 
 my %insert_after;
 my $in_insert_after;
 
-if (open(PLISTADD, "pkg-plist.add")) {
-    while(<PLISTADD>) {
+if (open my $PLISTADD, "<", "pkg-plist.add") {
+    while(<$PLISTADD>) {
 	chomp;
 	my $l = $_;
 	if ($l =~ /^#/) {
@@ -154,11 +170,11 @@ if (open(PLISTADD, "pkg-plist.add")) {
 		$insert_after{$in_insert_after} = $l;
 		undef $in_insert_after;
 	    } else {
-		plist_line($l);
+		plist_line($l, $PLIST);
 	    }
 	}
     }
-    close PLISTADD;
+    close $PLISTADD;
 }
 
 foreach my $dir (keys %dir) {
@@ -173,13 +189,13 @@ foreach my $dir (keys %dir) {
 }
 foreach (sort { dircmp($a, $b) } keys %dir) {
     my $line = "\@dirrm $_";
-    print PLIST "$line\n";
+    print $PLIST "$line\n";
     if (exists $insert_after{$line}) {
-	print PLIST $insert_after{$line}, "\n";
+	print $PLIST $insert_after{$line}, "\n";
 	delete $insert_after{$line};
     }
 }
-close PLIST;
+close $PLIST;
 
 if (keys %insert_after) {
     die "Following insert afters were unhandled: " . keys(%insert_after);
@@ -223,8 +239,10 @@ if ($do_fast) {
 } else {
     if (!is_in_path("port")) {
 	warn <<EOF;
-WARN: cannot find "port" utility. Please install
+WARN: cannot find "port" utility. Please install using
+      either one of the following commands
 
+    sudo pkg install porttools
     sudo pkg_add -r porttools
 
 and re-run the command.
@@ -248,7 +266,22 @@ EOF
 	}
     }
 }
-system("cd $tmpdir && tar cfvz $tmpdir/bbbike-fbsdport.tar.gz BBBike");
+#system("cd $tmpdir && tar cfvz $tmpdir/bbbike-fbsdport.tar.gz BBBike");
+
+warn <<EOF;
+Now:
+
+- Make sure that $bbbike_ports_dir is up-to-date using
+    sudo portsnap fetch && sudo portsnap extract
+  (Actually, you should do this before starting doing
+   changes)
+
+- Execute
+    cd $portdir && port diff -d /usr/ports >| $tmpdir/bbbike-fbsdport.patch
+
+- File a send-pr report, including the patch
+
+EOF
 
 sub dircmp {
     my($a, $b) = @_;
@@ -262,15 +295,14 @@ sub dircmp {
     }
 }
 
-sub plist_line {
+sub plist_line ($$) {
     my $in = shift;
-    my $out = shift || \*PLIST;
+    my $out = shift or die "out fh is missing";
     my $file = "BBBike/$in";
     print $out "$file\n";
     # executables in /usr/local/bin:
-    if (/^(c?bbbike|cmdbbbike|smsbbbike|bbbikeclient)$/) {
-	print $out "\@exec ln -fs %D/%F %D/bin/$in\n";
-	print $out "\@unexec rm -f %D/bin/$in\n";
+    if ($bbbike_exe{$in}) {
+	print $out "bin/$in\n";
     }
     my $dir = dirname $file;
     $dir{$dir}++;
@@ -300,6 +332,7 @@ sub substitute {
 	s/ \@BBBIKE_SF_WWW\@ 	  /$BBBike::BBBIKE_SF_WWW/gx;
 	s/ \@BBBIKE_WAP\@ 	  /$BBBike::BBBIKE_WAP/gx;
 	s/ \@FREEBSD_IDENT\@ 	  /$freebsd_ident/gx;
+	s/ \@BBBIKEEXE\@      	  /$bbbike_exe/gx;
 	print DEST $_;
     }
     close DEST;
