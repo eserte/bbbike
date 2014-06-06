@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 14;
+plan tests => 26;
 
 use_ok 'GPS::GpsmanData::Any';
 
@@ -120,6 +120,43 @@ EOF
 	(my $normalized_got = $gpx2) =~ s{^.*?<trk>}{<trk>}s;
 	eq_or_diff $normalized_got, $normalized_expected;
     }
+}
+
+{
+    my $sample_wpt_gpx = <<'EOF';
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="eTrex 30" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd"><metadata><link href="http://www.garmin.com"><text>Garmin International</text></link><time>2014-06-04T07:46:31Z</time></metadata><wpt lat="52.532055" lon="13.384399"><ele>47.636337</ele><time>2014-06-04T07:46:31Z</time><name>218</name><sym>Vorfahrt</sym></wpt></gpx>
+EOF
+
+    my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
+
+    my $gps = GPS::GpsmanData::Any->load($tmpfile);
+    isa_ok $gps, 'GPS::GpsmanMultiData';
+
+    my @chunks = @{ $gps->Chunks };
+    is scalar(@chunks), 1, 'got one chunk';
+    my @wpts = @{ $chunks[0]->Waypoints };
+    is scalar(@wpts), 1, 'got one waypoint';
+    my $wpt = $wpts[0];
+    isa_ok $wpt, 'GPS::Gpsman::Waypoint';
+
+    is $wpt->Longitude, 13.384399;
+    is $wpt->Latitude, 52.532055;
+    is $wpt->Ident, '218';
+    is $wpt->Comment, "04-Jun-2014 07:46:31";
+    is $wpt->Symbol, 'user:7687';
+    is $wpt->Altitude, 47.636337;
+
+    {
+	# Roundtrip check, with gpxx extensions
+	my $gpx2 = $gps->as_gpx; # default is gpxx => 1
+	xmllint_string($gpx2);
+
+	# Still need to normalize, but without <extensions> now
+	(my $normalized_expected = $sample_wpt_gpx) =~ s{^.*?<wpt}{<wpt}s;
+	(my $normalized_got = $gpx2) =~ s{^.*?<wpt}{<wpt}s;
+	eq_or_diff $normalized_got, $normalized_expected;
+    }
+
 }
 
 sub _create_temporary_gpx {

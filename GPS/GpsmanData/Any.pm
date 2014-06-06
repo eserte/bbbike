@@ -136,9 +136,12 @@ sub load_gpx {
 	    my $name;
 	    my $gpsman_time;
 	    my $gpsman_symbol;
+	    my $ele;
 	    for my $wpt_child ($wpt_in->children) {
 		if ($wpt_child->name eq 'name') {
 		    $name = $wpt_child->children_text;
+		} elsif ($wpt_child->name eq 'ele') {
+		    $ele = $wpt_child->children_text;
 		} elsif ($wpt_child->name eq 'time') {
 		    my $time = $wpt_child->children_text;
 		    $gpsman_time = $gpsman_time_to_time->($time);
@@ -153,6 +156,7 @@ sub load_gpx {
 	    $wpt->Accuracy(0);
 	    $wpt->Latitude($lat);
 	    $wpt->Longitude($lon);
+	    $wpt->Altitude($ele) if defined $ele;
 	    $wpt->Comment($gpsman_time) if $gpsman_time;
 	    $wpt->Symbol($gpsman_symbol) if defined $gpsman_symbol;
 	    push @wpts, $wpt;
