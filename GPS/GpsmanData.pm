@@ -1298,7 +1298,7 @@ sub as_gpx {
     }
 
     if (!defined $creator) {
-	$creator = 'GPS::GpsmanData $GPS::GpsmanData::VERSION - http://www.bbbike.de';
+	$creator = "GPS::GpsmanData $GPS::GpsmanData::VERSION - http://www.bbbike.de";
     }
     $gpx->setAttribute("creator", $creator);
 

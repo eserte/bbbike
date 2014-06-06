@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string eq_or_diff);
 use File::Temp qw(tempfile);
 
-plan tests => 71;
+plan tests => 73;
 
 use_ok 'GPS::GpsmanData';
 
@@ -288,6 +288,15 @@ EOF
     is($gps->Chunks->[0]->Name, 'TRACK', 'Name of track');
     is($gps->Chunks->[1]->IsTrackSegment, 1, 'Second chunk is track segment');
     is($gps->Chunks->[1]->Name, undef, 'No name for track segment');
+
+    {
+	my $gpx = $gps->as_gpx;
+	gpxlint_string($gpx);
+
+	my $root = XML::LibXML->new->parse_string($gpx)->documentElement;
+	$root->setNamespaceDeclURI(undef, undef);
+	like($root->findvalue('/gpx/@creator'), qr{^GPS::GpsmanData \d+\.\d+ - \Qhttp://www.bbbike.de\E$}, 'default creator');
+    }
 }
 
 {
