@@ -98,7 +98,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2014 (Widmung von Straßenland für einen Radfahrstreifen, Gitschiner/Alexandrinen)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2014-06-02
+#: last_checked: 2014-06-06
 #: next_check: 2014-11-01
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -109,7 +109,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2014-05-20
+#: last_checked: 2014-06-06
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -353,11 +353,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität? Anbindund zum Uferweg?	?::projected 21447,5414 21482,5388 21555,5214 21415,5157 21498,5023
 # 
 # REMOVED (oberhalb) --- #: last_checked: 2014-05-06 --- #: check_frequency: 14d --- Paul-und-Paula-Ufer: wird der Radweg am Ufer oder oberhalb entlang geführt?	?::inwork 15200,10600 15145,10636 15101,10640
-# 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5225.html
-#: XXX für Fußgänger wird nur die südliche Fahrbahnseite zur Verfügung stehen?
-#: next_check: 2014-05-10
-Sonnenallee: Bauarbeiten, bleiben die Radwege erhalten? Außerdem Bau einer provisorischen Ampel an der Ziegrastr.	?::projected 14519,7301 14174,7505
+# REMOVED (Änderungen aufgenommen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5225.html --- #: XXX für Fußgänger wird nur die südliche Fahrbahnseite zur Verfügung stehen? --- #: next_check: 2014-05-10 --- Sonnenallee: Bauarbeiten, bleiben die Radwege erhalten? Außerdem Bau einer provisorischen Ampel an der Ziegrastr.	?::projected 14519,7301 14174,7505
 # 
 #: last_checked: 2014-05-24
 Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Ampel?	?::inwork 5299,14049
@@ -428,6 +424,7 @@ Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3629
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2014
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: XXX Öffentliche Straßen:
 #: XXX Planstraße A -> Marseillestraße
 #: XXX Planstraße B -> Lyonstraße
@@ -464,11 +461,7 @@ Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663
 #: by: http://www.ls.brandenburg.de/sixcms/detail.php/bb1.c.278564.de?template=ls_artikel_special_nav_d&nav_level=2
 Mahlow - Teltow: Kraftfahrzeugstraße in Bau	?::inwork 10246,-4271 8550,-4251 7790,-3985
 # 
-#: priority: #C
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=6008
-#: next_check: 2014-06-20
-Manteuffelstr./Wrangelstr.: Zebrastreifen wird realisiert	?::projected 12148,10897 12180,10903 12218,10915
-# 
+# REMOVED (2014-06-06 in Realisierung) --- #: priority: #C --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=6008 --- #: next_check: 2014-06-20 --- Manteuffelstr./Wrangelstr.: Zebrastreifen wird realisiert	?::projected 12148,10897 12180,10903 12218,10915
 # REMOVED (Zebrastreifen realisiert, keine Aufpflasterung) --- #: next_check_id: GUDVANGER-2014 vvv --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gudvanger_strasse.html (aktuelle Infos) vvv--- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf?start&ts=1365760997&file=kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf vvv --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130910.1250.389055.html (Baubeginn 38. KW) vvv --- #: last_checked: 2013-12-17 vvv --- #: check_frequency: 30d vvv --- #: priority: #C --- Erich-Weinert-Str.: Zebrastreifen in Planung	?::projected 11676,15986 11688,16006 --- Gudvanger Str.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11567,15842 11673,16003 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: next_check_id ^^^
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3594 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036373765264/373765264/00056582/82-Anlagen/02/BenennungsabsichtfuerdenPlatzanderBornhomerBru.pdf (Lage) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2013 (Benennung am 11.11.2013 wirksam) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20131104.1110.391159.html --- #: XXX fehlt in Berlin.coords.data --- #: XXX außerdem: "barrierefreie Anbindung" zum Mauerweg --- #: next_check: 2013-11-09 --- Platz des 9. November 1989: geplante Benennung	?::projected 9998,16547 10134,16534 10197,16528
 # 
@@ -695,17 +688,17 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: last_checked: 2013-09-27 (Markierungsarbeiten haben begonnen) --- #: next_check: 2013-10-04 --- Werbellinstr.: Radstreifen werden erstellt	?::projected; 12698,8175 12650,8164 12541,8140 12426,8115
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
-#: last_checked: 2014-03-24
+#: last_checked: 2014-06-06
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12871,9356 12888,9338
-#: last_checked: 2014-05-10
+#: last_checked: 2014-06-06
 #: next_check: 2014-09-01
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2014-05-20
+#: last_checked: 2014-06-06
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1023,7 +1016,7 @@ Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18773,3873 187
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
-#: last_checked: 2014-04-27
+#: last_checked: 2014-06-06
 #: check_frequency: 120d
 Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337 13519,7345
 # 
@@ -1373,8 +1366,8 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 # REMOVED --- Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsblatt 3/2013), ist es für Radfahrer irgendwie relevant?	? -12727,-1416 -12703,-1410
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2014-02-28
-#: check_frequency: 90d
+#: last_checked: 2014-06-06 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
+#: next_check: 2014-12-31
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
@@ -1384,7 +1377,7 @@ Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
-#: last_checked: 2014-02-14
+#: last_checked: 2014-06-06
 #: check_frequency: 150d
 #: priority: #C
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614

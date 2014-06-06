@@ -3598,16 +3598,7 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_021322',
-         'until' => 1402063200,
-         'text' => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 06.06.2014 16:00 Uhr ',
-         'from' => 1392902100,
-         'id' => 2538,
-         'data' => 'userdel	q3::inwork; 12189,16578 12045,16574
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1530395999,

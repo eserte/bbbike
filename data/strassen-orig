@@ -800,6 +800,7 @@ Meinekestr.	N 5355,10322 5329,10422 5351,10760
 #: XXX_indoor Straßenname bekommt in Zukunft ein "h"
 #: XXX_indoor Berlin.coords.data anpassen, _sichtbarer_ oldnames-Eintrag nicht notwendig
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140520.1410.397359.html (Umbenennung wurde beschlossen)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2014
 #: next_check: 2014-07-20 (... Straßenschilder innerhalb der nächsten zwei bis drei Monate ausgetauscht werden)
 Joachimstaler Str.	HH 5542,11075 5488,10978 5475,10808 5471,10719 5458,10443
 Bundesallee	HH 5458,10443 5450,10338 5463,9961 5464,9914 5467,9866 5477,9621 5493,9367 5495,9263 5503,8982 5505,8832
@@ -3923,8 +3924,9 @@ Kleine Homeyerstr.	N 9801,18686 9828,18742 9735,18798 9643,18808 9613,18758
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3722 ("Benennungsabsicht")
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036892092299/892092299/00059995/95-Anlagen/02/BenennungsabsichtfuerdieoeffentlicheStrasse201.pdf
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3790 ("Benennung")
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2014 ("mit Wirkung vom 15. Oktober 2014")
 #: last_checked: 2014-05-21
-#: check_frequency: 30d
+#: next_check: 2014-10-15
 Straße 201	N 9529,18815 9511,18785 9366,18669
 Friesenstr. (Niederschönhausen)	N 8311,19458 8331,19458 8396,19422 8467,19408 8644,19345 8765,19288
 Friesenstr. (Niederschönhausen)	NN 8765,19288 8944,19197 9465,18855
@@ -11238,7 +11240,7 @@ Aronsstr. [Richtung Sonnenallee]	N 14571,7427 14579,7576 14593,7584
 (Sonnenallee - Aronsstr.)	NN 14519,7301 14571,7427
 Dieselstr.	N 14850,7855 14777,7921 14679,8006 14611,8029 14382,8058 14233,8072
 Nernstweg	NN 14652,7507 14658,7513 14782,7638 14798,7747 14796,7801 14766,7903 14777,7921
-Mergenthalerring	N 14382,8058 14389,8080 14563,8243 14422,8407 14469,8455
+Mergenthalerring	N 14382,8058 14389,8080 14425,8114 14563,8243 14422,8407 14469,8455
 (zum Mergenthalerring)	NN 14700,8368 14679,8349
 (zum Mergenthalerring)	N 14679,8349 14563,8243
 (zum Mergenthalerring)	NN 14469,8455 14560,8528
@@ -13969,6 +13971,9 @@ Werfelstr.	N 10126,-834 9907,-812
 Simpsonweg	N 10092,-669 9937,-693 9913,-705 9899,-732 9907,-812 9888,-853
 Rosenheimer Str.	N 6851,9365 6717,9339 6446,9328 6358,9335 6239,9344
 Rosenheimer Str.	NN 6239,9344 6163,9337
+#: XXX Einziehung von Straßenland --- gibt es hier Konsequenzen?
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2014
+#: next_check: 2014-07-06
 Rosenheimer Str.	N 6163,9337 6067,9329
 #: oldname: -20130426: Gabelsbergerstr.
 Silvio-Meier-Str.	N 14381,12205 14451,12396
