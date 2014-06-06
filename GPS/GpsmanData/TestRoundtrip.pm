@@ -60,7 +60,7 @@ sub gpx2gpsman2gpx {
 	print $after_fh  $after_string;
 	close $before_fh or die $!;
 	close $after_fh or die $!;
-	system('zsh', '-c', "diff -u =(xmllint -format $before_file) =(xmllint -format $after_file)");
+	system('zsh', '-c', "diff -u =(xmllint -format $before_file) =(xmllint -format $after_file) 1>&2");
 	my $st = $?;
 	unlink $before_file;
 	unlink $after_file;
