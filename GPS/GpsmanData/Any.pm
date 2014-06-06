@@ -130,6 +130,8 @@ sub load_gpx {
 	$gps_device = $creator;
     }
 
+    my $garmin_userdef_symbols_set;
+
     for my $wpt_or_trk ($root->children) {
 	if ($wpt_or_trk->name eq 'wpt') {
 	    my $wpt_in = $wpt_or_trk;
@@ -147,8 +149,15 @@ sub load_gpx {
 		    $gpsman_time = $gpsman_time_to_time->($time);
 		} elsif ($wpt_child->name eq 'sym') {
 		    my $sym = $wpt_child->children_text;
-		    $gpsman_symbol = GPS::GpsmanData::GarminGPX::garmin_symbol_name_to_gpsman_symbol_name($sym);
-		}		    
+		    ($gpsman_symbol, my($this_garmin_userdef_symbols_set)) = GPS::GpsmanData::GarminGPX::garmin_symbol_name_to_gpsman_symbol_name_set($sym);
+		    if ($this_garmin_userdef_symbols_set) {
+			if (!$garmin_userdef_symbols_set) {
+			    $garmin_userdef_symbols_set = $this_garmin_userdef_symbols_set;
+			} elsif ($garmin_userdef_symbols_set ne $this_garmin_userdef_symbols_set) {
+			    warn "WARNING: garmin userdef symbols from different sets used in one file, cannot deal with this situation ($garmin_userdef_symbols_set != $this_garmin_userdef_symbols_set)";
+			}
+		    }
+		}
 	    }
 	    my($lat, $lon) = $latlong2xy_twig->($wpt_in);
 	    my $wpt = GPS::Gpsman::Waypoint->new;
@@ -274,6 +283,10 @@ sub load_gpx {
 	$wpts->Type(GPS::GpsmanData::TYPE_WAYPOINT);
 	$wpts->Waypoints(\@wpts);
 	push @{ $gpsman->{Chunks} }, $wpts;
+	$wpts->TrackAttrs({
+			   (defined $garmin_userdef_symbols_set ? ('srt:garmin_userdef_symbols_set' => $garmin_userdef_symbols_set) : ()),
+			   (defined $gps_device ? ('srt:device' => $gps_device) : ()),
+			  });
     }
 
     $gpsman;

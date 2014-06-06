@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 26;
+plan tests => 28;
 
 use_ok 'GPS::GpsmanData::Any';
 
@@ -124,7 +124,7 @@ EOF
 
 {
     my $sample_wpt_gpx = <<'EOF';
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="eTrex 30" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd"><metadata><link href="http://www.garmin.com"><text>Garmin International</text></link><time>2014-06-04T07:46:31Z</time></metadata><wpt lat="52.532055" lon="13.384399"><ele>47.636337</ele><time>2014-06-04T07:46:31Z</time><name>218</name><sym>Vorfahrt</sym></wpt></gpx>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="eTrex 30" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd"><metadata><link href="http://www.garmin.com"><text>Garmin International</text></link><time>2014-06-04T07:46:31Z</time></metadata><wpt lat="52.532055" lon="13.384399"><ele>47.636337</ele><time>2014-06-04T07:46:31Z</time><name>218</name><sym>BBBike07</sym></wpt></gpx>
 EOF
 
     my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
@@ -139,6 +139,8 @@ EOF
     my $wpt = $wpts[0];
     isa_ok $wpt, 'GPS::Gpsman::Waypoint';
 
+    is $gps->Chunks->[0]->TrackAttrs->{'srt:device'}, 'eTrex 30', 'preserve creator into srt:device';
+
     is $wpt->Longitude, 13.384399;
     is $wpt->Latitude, 52.532055;
     is $wpt->Ident, '218';
@@ -150,6 +152,8 @@ EOF
 	# Roundtrip check, with gpxx extensions
 	my $gpx2 = $gps->as_gpx; # default is gpxx => 1
 	xmllint_string($gpx2);
+
+	like $gpx2, qr{creator="eTrex 30"}, 'creator re-created';
 
 	# Still need to normalize, but without <extensions> now
 	(my $normalized_expected = $sample_wpt_gpx) =~ s{^.*?<wpt}{<wpt}s;

@@ -142,6 +142,8 @@ use GPS::Util; # for eliminate_umlauts
 
     sub as_gpx {
 	my($wpt, $xmlnode, $chunk, %args) = @_;
+
+	my $garmin_userdef_symbols_set = delete $args{'garmin_userdef_symbols_set'};
 	
 	$xmlnode->setAttribute("lat", $wpt->Latitude);
 	$xmlnode->setAttribute("lon", $wpt->Longitude);
@@ -182,7 +184,7 @@ use GPS::Util; # for eliminate_umlauts
 
 	my $symbol = $wpt->Symbol;
 	if (defined $symbol && length $symbol) {
-	    $symbol = GPS::GpsmanData::GarminGPX::gpsman_symbol_to_garmin_symbol_name($symbol);
+	    $symbol = GPS::GpsmanData::GarminGPX::gpsman_symbol_to_garmin_symbol_name($symbol, $garmin_userdef_symbols_set);
 	    if (defined $symbol) {
 		if ($args{symtocmt}) {
 		    my $commentxml = $xmlnode->addNewChild(undef, 'cmt');
@@ -592,6 +594,11 @@ sub parse {
 
     while($i <= $#lines) {
 	local $_ = $lines[$i];
+	if (/^%!(.*?)=(.*)/) { # special directive in wpt files
+	    my($key, $val) = ($1, $2);
+	    if (!$self->TrackAttrs) { $self->TrackAttrs({}) }
+	    $self->TrackAttrs->{$1} = $2;
+	}
 	next if /^%/; # comment
 	next if /^\s*$/;
 	if (defined $parse_method && !/^!/) {
@@ -917,12 +924,28 @@ sub _track_attrs_as_string {
     $s;
 }
 
+sub _track_attrs_as_special_directives {
+    my($self) = @_;
+    my $s = "";
+    if ($self->TrackAttrs) {
+	my $ta = $self->TrackAttrs;
+	while(my($key, $val) = each %$ta) {
+	    $s .= "%!$key=$val\n";
+	}
+    }
+    $s;
+}
+
 # XXX not complete, only waypoints/tracks
 sub body_as_string {
     my $self = shift;
     my $s = "";
     if ($self->Type == TYPE_WAYPOINT) {
-	$s .= "!W:" . $self->_track_attrs_as_string . "\n";
+	my $track_attrs = $self->_track_attrs_as_special_directives;
+	if (length $track_attrs) {
+	    $s .= $track_attrs . "\n";
+	}
+	$s .= "!W:\n";
 	foreach my $wpt (@{ $self->Waypoints }) {
 	    $s .= join("\t",
 		       $wpt->Ident,
@@ -1251,6 +1274,14 @@ sub as_gpx {
 	    }
 	};
 
+	my $trk_attrs = $chunk->TrackAttrs;
+	if ($trk_attrs->{'srt:device'}) {
+	    $creator = $trk_attrs->{'srt:device'};
+	}
+	if ($trk_attrs->{'srt:garmin_userdef_symbols_set'}) {
+	    push @std_wpt_as_gpx_args, garmin_userdef_symbols_set => $trk_attrs->{'srt:garmin_userdef_symbols_set'};
+	}
+
 	if ($chunk->Type eq $chunk->TYPE_WAYPOINT) {
 	    # No name handling for waypoints, waypoints have their own idents
 	    for my $wpt (@{ $chunk->Waypoints }) {
@@ -1265,18 +1296,14 @@ sub as_gpx {
 	    } else {
 		my $trkxml = $gpx->addNewChild(undef, "trk");
 		$add_name->($trkxml);
-		if ($do_gpxx) {
-		    my $trk_attrs = $chunk->TrackAttrs;
-		    if ($trk_attrs) {
+		if ($trk_attrs) {
+		    if ($do_gpxx) {
 			if ($trk_attrs->{colour}) {
 			    my $garmin_color = GPS::GpsmanData::GarminGPX::gpsman_to_garmin_color($trk_attrs->{colour});
 			    my $extensionsxml = $trkxml->addNewChild(undef, 'extensions');
 			    my $trackextensionxml = $extensionsxml->addNewChild(GPXX_NS, 'TrackExtension');
 			    my $displaycolorxml = $trackextensionxml->addNewChild(GPXX_NS, 'DisplayColor');
 			    $displaycolorxml->appendText($garmin_color);
-			}
-			if ($trk_attrs->{'srt:device'}) {
-			    $creator = $trk_attrs->{'srt:device'};
 			}
 		    }
 		}

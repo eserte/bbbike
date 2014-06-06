@@ -404,14 +404,12 @@ sub _setup_garmin_user_name_to_id {
 }
 
 sub gpsman_symbol_to_garmin_symbol_name {
-    my($gpsman_symbol) = @_;
+    my($gpsman_symbol, $set) = @_;
+    $set = 'bike2008' if !$set;
     if ($gpsman_symbol =~ m{^user:(\d+)$}) {
 	my $user_id = $1;
 	_setup_garmin_user_id_to_name();
-	return $garmin_user_id_to_name{'bike2008'}->{$user_id};
-    } elsif ($gpsman_symbol =~ m{^BBBike\d+$}) {
-	_setup_garmin_user_id_to_name();
-	return $garmin_user_id_to_name{'bike2014'}->{$gpsman_symbol};
+	return $garmin_user_id_to_name{$set}->{$user_id};
     } else {
 	my $id = $gpsman_symbol_name_to_garmin_id{$gpsman_symbol};
 	return if !defined $id;
@@ -422,19 +420,25 @@ sub gpsman_symbol_to_garmin_symbol_name {
 
 sub garmin_symbol_name_to_gpsman_symbol_name {
     my($garmin_symbol) = @_;
+    my($gpsman_symbol, undef) = garmin_symbol_name_to_gpsman_symbol_name_set($garmin_symbol);
+    $gpsman_symbol;
+}
+
+sub garmin_symbol_name_to_gpsman_symbol_name_set {
+    my($garmin_symbol) = @_;
     _setup_garmin_user_name_to_id();
     if (exists $garmin_user_name_to_id{'bike2014'}->{$garmin_symbol}) {
-	return "user:" . $garmin_user_name_to_id{'bike2014'}->{$garmin_symbol};
+	return ("user:" . $garmin_user_name_to_id{'bike2014'}->{$garmin_symbol}, 'bike2014');
     } elsif (exists $garmin_user_name_to_id{'bike2008'}->{$garmin_symbol}) {
-	return "user:" . $garmin_user_name_to_id{'bike2008'}->{$garmin_symbol};
+	return ("user:" . $garmin_user_name_to_id{'bike2008'}->{$garmin_symbol}, 'bike2008');
     } else {
 	_setup_garmin_gpx_symbol_name_to_garmin_id();
 	my $id = $garmin_gpx_symbol_name_to_garmin_id->{$garmin_symbol};
 	return if !defined $id;
 	_setup_garmin_id_to_gpsman_symbol_name();
 	my $gpsman_symbol = $garmin_id_to_gpsman_symbol_name->{$id};
-	$gpsman_symbol;
-    };	
+	($gpsman_symbol, undef);
+    }
 }
 
 sub gpsman_to_garmin_color {
