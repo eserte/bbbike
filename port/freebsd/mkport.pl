@@ -77,9 +77,9 @@ if (!-f $bbbike_archiv_path) {
 }
 my $bbbike_ports_dir = "$portsdir/german/BBBike";
 my $old_ports_makefile = "$bbbike_ports_dir/Makefile";
-my @bbbike_exe = qw(bbbike cbbbike bbbikeclient cmdbbbike smsbbbike);
-my $bbbike_exe = join ' ', @bbbike_exe;
-my %bbbike_exe = map {($_,1)} @bbbike_exe;
+my @bbbike_perl_exe = qw(bbbike cbbbike bbbikeclient cmdbbbike smsbbbike);
+my $bbbike_perl_exe = join ' ', @bbbike_perl_exe;
+my %bbbike_perl_exe = map {($_,1)} @bbbike_perl_exe;
 
 my $freebsd_ident = <<'EOF';
 # $FreeBSD: ports/german/BBBike/Makefile,v 1.11 2002/07/15 10:55:17 ijliao Exp $
@@ -300,8 +300,8 @@ sub plist_line ($$) {
     my $out = shift or die "out fh is missing";
     my $file = "BBBike/$in";
     print $out "$file\n";
-    # executables in /usr/local/bin:
-    if ($bbbike_exe{$in}) {
+    # perl executables in /usr/local/bin:
+    if ($bbbike_perl_exe{$in}) {
 	print $out "bin/$in\n";
     }
     my $dir = dirname $file;
@@ -332,7 +332,7 @@ sub substitute {
 	s/ \@BBBIKE_SF_WWW\@ 	  /$BBBike::BBBIKE_SF_WWW/gx;
 	s/ \@BBBIKE_WAP\@ 	  /$BBBike::BBBIKE_WAP/gx;
 	s/ \@FREEBSD_IDENT\@ 	  /$freebsd_ident/gx;
-	s/ \@BBBIKEEXE\@      	  /$bbbike_exe/gx;
+	s/ \@BBBIKE_PERL_EXE\@    /$bbbike_perl_exe/gx;
 	print DEST $_;
     }
     close DEST;

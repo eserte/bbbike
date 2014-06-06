@@ -22,18 +22,23 @@ MYDESTDIR=	${STAGEDIR}${PREFIX}/BBBike
 
 LOCAL_PERL_ARCH=	${PERL_ARCH}
 PLIST_SUB=		LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
+BBBIKE_PERL_EXE=	@BBBIKE_PERL_EXE@
 
 do-build:
 	cd ${WRKSRC}/ext && ${MAKE} PERL=${PERL5} all install
 	cd ${WRKSRC}/ext && ${MAKE} PERL=${PERL5} clean
+	${FIND} ${WRKSRC}/lib -name "*.so" | ${XARGS} ${CHMOD} u+w
+	${FIND} ${WRKSRC}/lib -name "*.so" | ${XARGS} ${STRIP_CMD}
+	${FIND} ${WRKSRC}/lib -name "*.so" | ${XARGS} ${CHMOD} u-w
 	cd ${WRKSRC}; ${POD2MAN} --lax bbbike.pod > bbbike.1
-	${MV} ${WRKSRC}/bbbike ${WRKSRC}/bbbike.tmp
-	${ECHO_CMD} "#! ${PERL}" > ${WRKSRC}/bbbike
-	${CAT} ${WRKSRC}/bbbike.tmp >> ${WRKSRC}/bbbike
-	${RM} -f ${WRKSRC}/bbbike.tmp
-	${CHMOD} 0755 ${WRKSRC}/bbbike
+.for f in ${BBBIKE_PERL_EXE}
+	${MV} ${WRKSRC}/$f ${WRKSRC}/$f.tmp
+	${ECHO_CMD} "#! ${PERL}" > ${WRKSRC}/$f
+	${CAT} ${WRKSRC}/$f.tmp >> ${WRKSRC}/$f
+	${RM} -f ${WRKSRC}/$f.tmp
+	${CHMOD} 0755 ${WRKSRC}/$f
+.endfor
 
-BBBIKEEXE=	@BBBIKEEXE@
 PLIST_IN=	${PKGDIR}/pkg-plist.in
 PLIST=		${WRKDIR}/pkg-plist
 
@@ -48,7 +53,7 @@ do-install:
 	${FIND} ${WRKSRC} -perm -u=x | ${XARGS} ${CHMOD} go+x
 	${CP} -rp ${WRKSRC} ${MYDESTDIR}
 	${RM} -f ${MYDESTDIR}/bbbike.1
-.for f in ${BBBIKEEXE}
+.for f in ${BBBIKE_PERL_EXE}
 	-${RM} -f ${STAGEDIR}${PREFIX}/bin/$f
 	${LN} -s  ../BBBike/$f ${STAGEDIR}${PREFIX}/bin/$f
 .endfor
