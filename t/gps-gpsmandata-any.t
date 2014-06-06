@@ -28,9 +28,11 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 28;
+plan tests => 30;
 
 use_ok 'GPS::GpsmanData::Any';
+
+require GPS::GpsmanData::TestRoundtrip;
 
 {
     my $gpsman_gpx10_sample_file = <<'EOF';
@@ -75,6 +77,10 @@ EOF
 
     is scalar($gps->flat_track), 2, 'Found two waypoints in first track';
     is(($gps->flat_track)[0]->Latitude, '52.5086944444', 'First latitude as expected');
+
+    ## Roundtrip does not work here: 1.0 vs 1.1, and metadata is
+    ## handled differently in gpx 1.1
+    #ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx 1.0 file';
 }
 
 {
@@ -120,6 +126,8 @@ EOF
 	(my $normalized_got = $gpx2) =~ s{^.*?<trk>}{<trk>}s;
 	eq_or_diff $normalized_got, $normalized_expected;
     }
+
+    ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx 1.1 file';
 }
 
 {
@@ -161,6 +169,7 @@ EOF
 	eq_or_diff $normalized_got, $normalized_expected;
     }
 
+    ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file with waypoint';
 }
 
 sub _create_temporary_gpx {
