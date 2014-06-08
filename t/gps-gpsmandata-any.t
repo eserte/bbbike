@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 42;
+plan tests => 50;
 
 use_ok 'GPS::GpsmanData::Any';
 
@@ -155,6 +155,16 @@ EOF
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 2), 'Roundtrip check for trk file with timeoffset';
     }
+
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 'automatic');
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+
+	my $wpt = $gps->Chunks->[0]->Track->[0];
+	is $wpt->Comment, '22-May-2014 09:25:58', 'automatic timeoffset test with trk file';
+
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 'automatic'), 'Roundtrip check for trk file with automatic timeoffset selection';
+    }
 }
 
 {
@@ -209,6 +219,17 @@ EOF
 	is $wpt->Comment, "04-Jun-2014 09:46:31", 'timeoffset works';
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 2), 'Roundtrip check for wpt file with timeoffset';
+    }
+
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 'automatic');
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+	my $wpt = $gps->Chunks->[0]->Waypoints->[0];
+	isa_ok $wpt, 'GPS::Gpsman::Waypoint';
+	is $wpt->Ident, '218'; # just check if we're looking at the expected waypoint
+	is $wpt->Comment, "04-Jun-2014 09:46:31", 'timeoffset works with automatic selection';
+
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 'automatic'), 'Roundtrip check for wpt file with automatic timeoffset selection';
     }
 }
 

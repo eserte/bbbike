@@ -26,26 +26,33 @@ sub usage (;$) {
     my $msg = shift;
     print STDERR $msg, "\n" if $msg;
     die <<EOF;
-usage: $0 [--check-roundtrip] [-o ...] gpxfile
+usage: $0 [--check-roundtrip] [-o ...] [-timeoffset hours|automatic] gpxfile
 EOF
 }
 
 my $do_check_roundtrip;
 my $outfile;
+my $timeoffset;
 GetOptions(
 	   'check-roundtrip!' => \$do_check_roundtrip,
 	   'out-file|o=s' => \$outfile,
+	   'timeoffset=s' => \$timeoffset,
 	  )
     or die usage;
 my $file = shift
     or usage "Please specify gpx file";
 
+my @gps_gpsmandata_any_options;
+if (defined $timeoffset) {
+    push @gps_gpsmandata_any_options, timeoffset => $timeoffset;
+}
+
 if ($do_check_roundtrip) {
     require GPS::GpsmanData::TestRoundtrip;
-    my $success = GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($file);
+    my $success = GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($file, @gps_gpsmandata_any_options);
     exit($success ? 0 : 1);
 } else {
-    my $gpsman = GPS::GpsmanData::Any->load($file);
+    my $gpsman = GPS::GpsmanData::Any->load($file, @gps_gpsmandata_any_options);
     if ($outfile) {
 	my $outdir = File::Basename::dirname($outfile);
 	if (!$outdir) {

@@ -117,6 +117,34 @@ sub load_gpx {
 	Time::Local::timegm($s,$m,$h,$D,$M-1,$Y);
     };
 
+    # Setup a subroutine to be fired after parsing the first
+    # coordinate. This is needed for the timeoffset=>"automatic"
+    # feature. In this case we need to get longitude, latitude and
+    # epoch of a point; and this is used to determine the timeoffset
+    # with the help of Time::Zone::By4D and DateTime* modules. To be
+    # more complicated, the subroutine also takes an $addcode
+    # parameter. This is used for track and route gpx files to change
+    # the TimeOffset member afterwards. After the first call this
+    # subroutine deletes itself.
+    my $first_coordinate_event;
+    if ($timeoffset && $timeoffset eq 'automatic') {
+	my $delete_first_coordinate_event = sub {
+	    undef $first_coordinate_event;
+	};
+	$first_coordinate_event = sub {
+	    my($lon,$lat,$epoch,$addcode) = @_;
+	    require Time::Zone::By4D;
+	    require DateTime;
+	    require DateTime::TimeZone;
+	    my $timezone_name = Time::Zone::By4D::get_timezone($lon,$lat,$epoch);
+	    my $dt = DateTime->from_epoch(epoch => $epoch);
+	    my $timezone = DateTime::TimeZone->new(name => $timezone_name);
+	    $timeoffset = $timezone->offset_for_datetime($dt) / 3600;
+	    $addcode->() if $addcode;
+	    $delete_first_coordinate_event->();
+	};
+    }
+
     require GPS::GpsmanData::GarminGPX;
     require XML::Twig;
 
@@ -163,6 +191,7 @@ sub load_gpx {
 		}
 	    }
 	    my($lat, $lon) = $latlong2xy_twig->($wpt_in);
+	    $first_coordinate_event->($lon, $lat, $epoch) if $first_coordinate_event && $epoch;
 	    my $wpt = GPS::Gpsman::Waypoint->new;
 	    $wpt->Ident($name);
 	    $wpt->Accuracy(0);
@@ -221,6 +250,7 @@ sub load_gpx {
 				} elsif ($trkpt_child->name eq 'time') {
 				    my $time = $trkpt_child->children_text;
 				    my $epoch = $gpx_time_to_epoch->($time);
+				    $first_coordinate_event->($lon, $lat, $epoch, sub { $trkseg->TimeOffset($timeoffset) }) if $first_coordinate_event;
 				    $wpt->unixtime_to_Comment($epoch, $trkseg);
 				} elsif ($trkpt_child->name eq 'srt:accuracy') {
 				    $accuracy = $trkpt_child->children_text || 0;
@@ -265,6 +295,7 @@ sub load_gpx {
 			} elsif ($rtept_child->name eq 'time') {
 			    my $time = $rtept_child->children_text;
 			    my $epoch = $gpx_time_to_epoch->($time);
+			    $first_coordinate_event->($lon, $lat, $epoch, sub { $gpsman_rte->TimeOffset($timeoffset) }) if $first_coordinate_event;
 			    $wpt->unixtime_to_DateTime($epoch, $gpsman_rte);
 			}
 		    }
