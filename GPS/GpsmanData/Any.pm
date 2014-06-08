@@ -75,6 +75,8 @@ sub load_mps {
 sub load_gpx {
     my($class, $file, %args) = @_;
 
+    require Time::Local;
+
     my $gpsman = GPS::GpsmanMultiData->new;
 
     my %number_to_monthabbrev = do {
@@ -101,7 +103,7 @@ sub load_gpx {
 	($lat, $lon);
     };
 
-    my $gpsman_time_to_time = sub {
+    my $gpx_time_to_epoch = sub {
 	my $time = shift;
 	my($Y,$M,$D,$h,$m,$s,$ms,$tz) = $time =~ m{^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(\.\d+)?Z?$};
 	if (!defined $Y) {
@@ -110,8 +112,7 @@ sub load_gpx {
 	if (defined $ms) {
 	    $s += "0".$ms;
 	}
-	# XXX timezone?!
-	my $gpsman_time = sprintf "%02d-%s-%04d %02d:%02d:%02d", $D, $number_to_monthabbrev{$M+0}, $Y, $h, $m, $s;
+	Time::Local::timegm($s,$m,$h,$D,$M-1,$Y);
     };
 
     require GPS::GpsmanData::GarminGPX;
@@ -136,7 +137,7 @@ sub load_gpx {
 	if ($wpt_or_trk->name eq 'wpt') {
 	    my $wpt_in = $wpt_or_trk;
 	    my $name;
-	    my $gpsman_time;
+	    my $epoch;
 	    my $gpsman_symbol;
 	    my $ele;
 	    for my $wpt_child ($wpt_in->children) {
@@ -146,7 +147,7 @@ sub load_gpx {
 		    $ele = $wpt_child->children_text;
 		} elsif ($wpt_child->name eq 'time') {
 		    my $time = $wpt_child->children_text;
-		    $gpsman_time = $gpsman_time_to_time->($time);
+		    $epoch = $gpx_time_to_epoch->($time);
 		} elsif ($wpt_child->name eq 'sym') {
 		    my $sym = $wpt_child->children_text;
 		    ($gpsman_symbol, my($this_garmin_userdef_symbols_set)) = GPS::GpsmanData::GarminGPX::garmin_symbol_name_to_gpsman_symbol_name_set($sym);
@@ -166,7 +167,7 @@ sub load_gpx {
 	    $wpt->Latitude($lat);
 	    $wpt->Longitude($lon);
 	    $wpt->Altitude($ele) if defined $ele;
-	    $wpt->Comment($gpsman_time) if $gpsman_time;
+	    $wpt->unixtime_to_Comment($epoch, undef) if $epoch; # XXX timeoffset? container?
 	    $wpt->Symbol($gpsman_symbol) if defined $gpsman_symbol;
 	    push @wpts, $wpt;
 	} elsif ($wpt_or_trk->name eq 'trk') {
@@ -216,8 +217,8 @@ sub load_gpx {
 				    $wpt->Altitude($trkpt_child->children_text);
 				} elsif ($trkpt_child->name eq 'time') {
 				    my $time = $trkpt_child->children_text;
-				    my $gpsman_time = $gpsman_time_to_time->($time);
-				    $wpt->Comment($gpsman_time);
+				    my $epoch = $gpx_time_to_epoch->($time);
+				    $wpt->unixtime_to_Comment($epoch, $trkseg);
 				} elsif ($trkpt_child->name eq 'srt:accuracy') {
 				    $accuracy = $trkpt_child->children_text || 0;
 				}
@@ -259,8 +260,8 @@ sub load_gpx {
 			    $wpt->Altitude($rtept_child->children_text);
 			} elsif ($rtept_child->name eq 'time') {
 			    my $time = $rtept_child->children_text;
-			    my $gpsman_time = $gpsman_time_to_time->($time);
-			    $wpt->DateTime($gpsman_time);
+			    my $epoch = $gpx_time_to_epoch->($time);
+			    $wpt->unixtime_to_DateTime($epoch, $gpsman_rte);
 			}
 		    }
 		    $wpt->Ident($name);
