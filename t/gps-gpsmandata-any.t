@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 37;
+plan tests => 42;
 
 use_ok 'GPS::GpsmanData::Any';
 
@@ -102,44 +102,59 @@ EOF
 
     my $tmpfile = _create_temporary_gpx($sample_gpx);
 
-    my $gps = GPS::GpsmanData::Any->load($tmpfile);
-    isa_ok $gps, 'GPS::GpsmanMultiData';
-
-    is scalar(@{ $gps->Chunks }), 2, 'Found two chunks';
-    is $gps->Chunks->[0]->IsTrackSegment, 0, 'First chunk is real <trk>';
-    is $gps->Chunks->[1]->IsTrackSegment, 1, 'Second chunk is <trkseg>';
-
-    is $gps->Chunks->[0]->TrackAttrs->{'srt:device'}, 'eTrex 30', 'preserve creator into srt:device';
-
     {
-	# Roundtrip check, without gpxx extensions
-	my $gpx2 = $gps->as_gpx(gpxx => 0);
-	xmllint_string($gpx2);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
 
-	# Need to normalize
-	# - header is different (standlone="no", different order of xmlns declarations)
-	# - metadata element missing
-	# - extensions element missing
-	(my $normalized_expected = $sample_gpx) =~ s{^.*?<trk>}{<trk>}s;
-	$normalized_expected =~ s{<extensions>.*?</extensions>}{};
-	(my $normalized_got = $gpx2) =~ s{^.*?<trk>}{<trk>}s;
-	eq_or_diff $normalized_got, $normalized_expected;
+	is scalar(@{ $gps->Chunks }), 2, 'Found two chunks';
+	is $gps->Chunks->[0]->IsTrackSegment, 0, 'First chunk is real <trk>';
+	is $gps->Chunks->[1]->IsTrackSegment, 1, 'Second chunk is <trkseg>';
+
+	is $gps->Chunks->[0]->TrackAttrs->{'srt:device'}, 'eTrex 30', 'preserve creator into srt:device';
+
+	my $wpt = $gps->Chunks->[0]->Track->[0];
+	is $wpt->Comment, '22-May-2014 07:25:58';
+
+	{
+	    # Roundtrip check, without gpxx extensions
+	    my $gpx2 = $gps->as_gpx(gpxx => 0);
+	    xmllint_string($gpx2);
+
+	    # Need to normalize
+	    # - header is different (standlone="no", different order of xmlns declarations)
+	    # - metadata element missing
+	    # - extensions element missing
+	    (my $normalized_expected = $sample_gpx) =~ s{^.*?<trk>}{<trk>}s;
+	    $normalized_expected =~ s{<extensions>.*?</extensions>}{};
+	    (my $normalized_got = $gpx2) =~ s{^.*?<trk>}{<trk>}s;
+	    eq_or_diff $normalized_got, $normalized_expected;
+	}
+
+	{
+	    # Roundtrip check, with gpxx extensions
+	    my $gpx2 = $gps->as_gpx; # default is gpxx => 1
+	    xmllint_string($gpx2);
+
+	    like $gpx2, qr{creator="eTrex 30"}, 'creator re-created';
+
+	    # Still need to normalize, but without <extensions> now
+	    (my $normalized_expected = $sample_gpx) =~ s{^.*?<trk>}{<trk>}s;
+	    (my $normalized_got = $gpx2) =~ s{^.*?<trk>}{<trk>}s;
+	    eq_or_diff $normalized_got, $normalized_expected;
+	}
+
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx 1.1 file';
     }
 
     {
-	# Roundtrip check, with gpxx extensions
-	my $gpx2 = $gps->as_gpx; # default is gpxx => 1
-	xmllint_string($gpx2);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 2);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
 
-	like $gpx2, qr{creator="eTrex 30"}, 'creator re-created';
+	my $wpt = $gps->Chunks->[0]->Track->[0];
+	is $wpt->Comment, '22-May-2014 09:25:58', 'timeoffset test with trk file';
 
-	# Still need to normalize, but without <extensions> now
-	(my $normalized_expected = $sample_gpx) =~ s{^.*?<trk>}{<trk>}s;
-	(my $normalized_got = $gpx2) =~ s{^.*?<trk>}{<trk>}s;
-	eq_or_diff $normalized_got, $normalized_expected;
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 2), 'Roundtrip check for trk file with timeoffset';
     }
-
-    ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx 1.1 file';
 }
 
 {
@@ -192,6 +207,8 @@ EOF
 	isa_ok $wpt, 'GPS::Gpsman::Waypoint';
 	is $wpt->Ident, '218'; # just check if we're looking at the expected waypoint
 	is $wpt->Comment, "04-Jun-2014 09:46:31", 'timeoffset works';
+
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 2), 'Roundtrip check for wpt file with timeoffset';
     }
 }
 

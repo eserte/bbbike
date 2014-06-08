@@ -23,9 +23,11 @@ use XML::LibXML;
 use GPS::GpsmanData::Any;
 
 sub gpx2gpsman2gpx {
-    my($file) = @_;
+    my($file, %args) = @_;
+    my $timeoffset = delete $args{timeoffset};
+    die 'Unhandled arguments: ' . join(' ', %args) if %args;
 
-    my $gpsman = GPS::GpsmanData::Any->load($file);
+    my $gpsman = GPS::GpsmanData::Any->load($file, (defined $timeoffset ? (timeoffset => $timeoffset) : ()));
 
     my($tmpfh,$tmpfile) = tempfile(SUFFIX => '_gpx2gpsman.gpx', UNLINK => 1);
     print $tmpfh $gpsman->as_gpx;
