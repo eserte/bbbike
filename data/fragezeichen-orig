@@ -388,9 +388,9 @@ Kynaststr./Hauptstr.: eine provisorische Ampel wird wieder aufgestellt	? 14906,1
 Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected 20667,15721 20733,15657
 # 
 #: source_id: IM_022020	
-#: last_checked: 2014-04-17
+#: last_checked: 2014-06-07
 #: next_check: 2014-07-01
-Konrad-Wolf-Str.: wird in Richtung Südwesten auch etwas bzgl. einer Radwegführung passieren?	?::inwork; 15272,14691 15174,14638 15066,14579
+Konrad-Wolf-Str.: in Richtung Südwesten wird eine Radweganlage gebaut	?::inwork; 15272,14691 15174,14638 15066,14579
 # 
 # REMOVED (in handicap_s-orig aufgenommen) --- Mühsamstr.: Baustelle abfahren, genaue Position sowie Penalty abschätzen	?::inwork 13559,12779 13506,12752
 # 
@@ -1028,7 +1028,7 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 # REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html --- #: XXX Baumaßnahme 11.46 (Realisierung in 2011) --- #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012) --- #: osm_watch: way id="22044872" version="10" --- #: osm_watch: way id="22045147" version="18" --- #: last_checked: 2014-02-14 --- Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 15866,16393 15843,16399 15771,16417 15432,16500
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
-#: last_checked: 2014-03-18
+#: last_checked: 2014-06-07
 #: check_frequency: 90d
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 
@@ -2084,7 +2084,7 @@ Garzin - Hasenholz: Qualität (auf Garziner Seite nur Waldweg)?	? 49700,16565 500
 Am Bötzsee: Genaue Wegführung, besonders zum Fängersee hin? Alternative Strecke näher am See? Qualität: durchgehend Waldweg?	? 38480,17478 38485,17786 38515,17931 38576,18071 38836,18622 38774,18856 38820,19366 38779,19684 38908,19853
 Badstr. am Straussee: Qualität?	? 42753,20225 42818,20290 42778,20387 42825,20490 42943,20578 43040,20818 43268,20903 43387,20971 43446,21007 43498,21028
 Alternative Strecke zum Roten Hof: Qualität?	? 43498,21028 43601,21073 43681,21175 44037,21303 44246,21496 44312,21556 44290,21668 44158,21724
-Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29537,21850 30444,22044 31272,22232 33562,22062 33822,22066
+Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29536,21843 30444,22044 31272,22232 33562,22062 33822,22066
 Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42850,17643 42806,17462 42218,17200 42175,16962 41993,16706 41900,16100 41725,16000 41675,15906 41681,15915
 Liepe - Bralitz: Qualität (vermutlich gut?)?	? 47975,51325 48022,51225 48133,51178 48237,50875
 #: XXX laut osm: track
@@ -2275,7 +2275,7 @@ Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,7444
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
 # REMOVED (confirmed) --- Thyrow - Kerzendorf (ehem. B101): laut "Berliner Umland" am Bahnübergang unterbrochen, B101n stattdessen benutzen!	? 1114,-16369 1127,-16382 1149,-16386 1167,-16371 1206,-16293 1513,-16010 1608,-15900 1640,-15863 1773,-15712 1856,-15356
 #: XXX: laut "Berliner Umland" bis auf ein kurzes Stück in Weesow gut geeignet , laut "Aktiv Regional" besonders gut geeignet; bei osm gibt es diesen Weg nicht
-Börnicke - Wessow: Qualität?	? 26036,28777 26419,28677 26930,28875 31165,27230 31738,27620
+Börnicke - Wessow: Qualität?	? 26022,28779 26419,28677 26930,28875 31165,27230 31738,27620
 #: XXX: laut "Berliner Umland" ist der Abschnitt von Tempelfelde bis Abzweig Schönfeld mäßig geeignet (Autoverkehr?)
 #: XXX: laut osm: track
 Tempelfelde - Beiersdorf: Qualität?	? 31420,34133 31827,33780 33310,33365 35441,32759
@@ -3719,7 +3719,7 @@ Am Heineberg (Potsdam): Qualität?	? -17646,1636 -17599,1890 -17597,2000 -17624,2
 Weinapfelweg - Pankeweg: existiert eine direkte Verbindung entlang der Autobahn? Qualität? Nachts beleuchtet?	? 13221,22667 13223,22558 13211,22499 13220,22387 13206,22290
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140408.1015.396178.html
 #: next_check: 2014-04-27
-Altlandsberge - Krummensee: existiert hier ein Radweg? Wegbeschaffenheit des Radwegs? Falls es ein Zweirichtungsradweg ist: auf welcher Seite befindet er sich?	? 32325,18434 31740,18675 31546,18803 31267,19338 30163,20992 29835,21516
+Altlandsberge - Krummensee: existiert hier ein Radweg? Wegbeschaffenheit des Radwegs? Falls es ein Zweirichtungsradweg ist: auf welcher Seite befindet er sich?	? 32325,18434 31740,18675 31546,18803 31415,19073 31267,19338 30163,20992 30031,21271 29826,21526
 Luckenwalder Str. - Nottekanal: Qualität des Radwegs?	? 25098,-13447 24549,-12629 24506,-12527
 Radweg entalng der B179n: Qualität?	? 24549,-12629 24531,-12634 24483,-12540 24474,-12453 24408,-12045 24344,-11733 24367,-11520 24371,-11283 24361,-11236
 #: by: http://www.ls.brandenburg.de/cms/detail.php/bb1.c.240276.de
@@ -3750,3 +3750,4 @@ Patrizierweg - Steinstr.: Durchfahrt für Radfahrer möglich? Qualität?	? -7178,-3
 #: XXX fehlt in Potsdam.coords.data: OT Golm, PLZ=14476
 #: by: http://www.potsdam.de/sites/default/files/documents/endfassungab_nr._6l_pdmstadt2014.pdf
 Am Urnenfeld (Potsdam): Qualität?	? -18151,-1323 -18520,-1192 -18698,-1030 -18725,-827 -18682,-719
+ZR1: Qualität?	? 27750,19600 27953,19508 28467,19470 30460,19245 31169,18956 31415,19073

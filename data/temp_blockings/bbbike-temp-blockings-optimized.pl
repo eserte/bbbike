@@ -3489,7 +3489,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        {
          'source_id' => '131100196',
          'until' => 1411768800,
-         'text' => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist vorausichtlich auch für Radfahrer nicht passierbar, 01.10.2013 bis 26.09.2014 ',
+         'text' => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist auch für Radfahrer nicht passierbar, 01.10.2013 bis 26.09.2014 ',
          'from' => 1380520800,
          'id' => 2493,
          'data' => 'userdel	2::inwork 21169,27133 21320,27078
@@ -3598,7 +3598,16 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_021322',
+         'until' => 1402408800,
+         'text' => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 10.06.2014 16:00 Uhr ',
+         'from' => 1392902100,
+         'id' => 2538,
+         'data' => 'userdel	q3::inwork; 12189,16578 12045,16574
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'until' => 1530395999,

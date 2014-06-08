@@ -10181,7 +10181,7 @@ EOF
        text  => 'L 030 Altlandsberg-B158 Seefeld zw. Krummensee und Seefeld Neubau Radweg Vollsperrung 08.10.2007-02.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 29835,21516 29573,21750 29537,21850 28936,23307 28753,23756 28614,23943
+userdel	2::inwork 29826,21526 29573,21750 29536,21843 28936,23307 28921,23343 28886,23429 28777,23697 28753,23756 28581,24020
 EOF
      },
      { from  => 1191880800, # 2007-10-09 00:00
@@ -10256,7 +10256,7 @@ EOF
        text  => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Eberswalder Str. grundhater Straßenbau Vollsperrung 16.10.2007-30.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 23113,30450 23368,30409 23620,30267
+userdel	2::inwork 23113,30450 23179,30439 23368,30409 23392,30395 23620,30267
 EOF
      },
      { from  => 1192312800, # 2007-10-14 00:00
@@ -10924,7 +10924,7 @@ EOF
        text  => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Schönfelder Weg Straßenbau Vollsperrung 20.12.2007-30.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 23113,30450 23368,30409 23620,30267
+userdel	q4::inwork 23113,30450 23179,30439 23368,30409 23392,30395 23620,30267
 EOF
      },
      { from  => 1216405512, # 2008-07-18 20:25
@@ -22013,7 +22013,7 @@ EOF
      },
      { from  => 1380520800, # 2013-09-30 08:00
        until => 1411768800, # 2014-09-27 00:00
-       text  => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist vorausichtlich auch für Radfahrer nicht passierbar, 01.10.2013 bis 26.09.2014 ',
+       text  => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist auch für Radfahrer nicht passierbar, 01.10.2013 bis 26.09.2014 ',
        type  => 'gesperrt',
        source_id => '131100196',
        data  => <<EOF,
@@ -22457,8 +22457,8 @@ userdel	q3::inwork; 11946,13993 11820,13804
 EOF
      },
      { from  => 1392902100, # 2014-02-20 14:15
-       until => 1402063200, # 2014-06-06 16:00
-       text  => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 06.06.2014 16:00 Uhr ',
+       until => $isodate2epoch->("2014-06-10 16:00:00"), # 1402063200, # 2014-06-06 16:00
+       text  => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 10.06.2014 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_021322',
        data  => <<EOF,
