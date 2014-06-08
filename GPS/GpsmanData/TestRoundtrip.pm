@@ -20,6 +20,7 @@ $VERSION = '0.01';
 use File::Temp qw(tempfile);
 use XML::LibXML;
 
+use GPS::GpsmanData;
 use GPS::GpsmanData::Any;
 
 sub gpx2gpsman2gpx {
@@ -27,7 +28,13 @@ sub gpx2gpsman2gpx {
     my $timeoffset = delete $args{timeoffset};
     die 'Unhandled arguments: ' . join(' ', %args) if %args;
 
-    my $gpsman = GPS::GpsmanData::Any->load($file, (defined $timeoffset ? (timeoffset => $timeoffset) : ()));
+    my $gpsman_any = GPS::GpsmanData::Any->load($file, (defined $timeoffset ? (timeoffset => $timeoffset) : ()));
+
+    my($tmp0fh,$tmp0file) = tempfile(SUFFIX => '_gpx2gpsman.gpsman', UNLINK => 1);
+    $gpsman_any->write($tmp0file);
+
+    my $gpsman = GPS::GpsmanMultiData->new;
+    $gpsman->load($tmp0file);
 
     my($tmpfh,$tmpfile) = tempfile(SUFFIX => '_gpx2gpsman.gpx', UNLINK => 1);
     print $tmpfh $gpsman->as_gpx;
