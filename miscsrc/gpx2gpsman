@@ -26,12 +26,16 @@ sub usage (;$) {
     my $msg = shift;
     print STDERR $msg, "\n" if $msg;
     die <<EOF;
-usage: $0 [--check-roundtrip] gpxfile
+usage: $0 [--check-roundtrip] [-o ...] gpxfile
 EOF
 }
 
 my $do_check_roundtrip;
-GetOptions('check-roundtrip!' => \$do_check_roundtrip)
+my $outfile;
+GetOptions(
+	   'check-roundtrip!' => \$do_check_roundtrip,
+	   'out-file|o=s' => \$outfile,
+	  )
     or die usage;
 my $file = shift
     or usage "Please specify gpx file";
@@ -42,7 +46,24 @@ if ($do_check_roundtrip) {
     exit($success ? 0 : 1);
 } else {
     my $gpsman = GPS::GpsmanData::Any->load($file);
-    print $gpsman->as_string;
+    if ($outfile) {
+	my $outdir = File::Basename::dirname($outfile);
+	if (!$outdir) {
+	    die "Directory for $outfile does not exist";
+	}
+	require File::Temp;
+	require File::Basename;
+	my $tmp = File::Temp->new(UNLINK => 1, SUFFIX => '.gpsman', DIR => $outdir);
+	chmod 0644, $tmp;
+	print $tmp $gpsman->as_string;
+	close $tmp
+	    or die "Writing to temporary file $tmp failed: $!";
+	rename $tmp, $outfile
+	    or die "Rename $tmp -> $outfile failed: $!";
+	$tmp->unlink_on_destroy(0);
+    } else {
+	print $gpsman->as_string;
+    }
 }
 
 __END__
