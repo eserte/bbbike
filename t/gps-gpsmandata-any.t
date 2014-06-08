@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 50;
+plan tests => 51;
 
 use_ok 'GPS::GpsmanData::Any';
 
@@ -150,8 +150,11 @@ EOF
 	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 2);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
-	my $wpt = $gps->Chunks->[0]->Track->[0];
-	is $wpt->Comment, '22-May-2014 09:25:58', 'timeoffset test with trk file';
+	my $wpt1 = $gps->Chunks->[0]->Track->[0];
+	is $wpt1->Comment, '22-May-2014 09:25:58', 'timeoffset test with trk file';
+
+	my $wpt2 = $gps->Chunks->[1]->Track->[0];
+	is $wpt2->Comment, '22-May-2014 17:48:11', 'timeoffset test in 2nd chunk';
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 2), 'Roundtrip check for trk file with timeoffset';
     }

@@ -222,6 +222,7 @@ sub load_gpx {
 		    }
 		    $trkseg = GPS::GpsmanData->new;
 		    $trkseg->Type($trkseg->TYPE_TRACK);
+		    $trkseg->TimeOffset($timeoffset) if defined $timeoffset;
 		    if ($is_first_segment) {
 			$trkseg->IsTrackSegment(0);
 			$trkseg->Name($name);
@@ -229,7 +230,6 @@ sub load_gpx {
 					     (defined $track_display_color ? (colour => $track_display_color) : ()),
 					     (defined $gps_device ? ('srt:device' => $gps_device) : ()),
 					    });
-			$trkseg->TimeOffset($timeoffset) if defined $timeoffset;
 			$is_first_segment = 0;
 		    } else {
 			$trkseg->IsTrackSegment(1);
