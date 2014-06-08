@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 30;
+plan tests => 37;
 
 use_ok 'GPS::GpsmanData::Any';
 
@@ -72,15 +72,27 @@ EOF
 
     my $tmpfile = _create_temporary_gpx($gpsman_gpx10_sample_file);
 
-    my $gps = GPS::GpsmanData::Any->load($tmpfile);
-    isa_ok $gps, 'GPS::GpsmanMultiData';
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
 
-    is scalar($gps->flat_track), 2, 'Found two waypoints in first track';
-    is(($gps->flat_track)[0]->Latitude, '52.5086944444', 'First latitude as expected');
+	is scalar($gps->flat_track), 2, 'Found two waypoints in first track';
+	my $wpt = ($gps->flat_track)[0];
+	is($wpt->Latitude, '52.5086944444', 'First latitude as expected');
+	is($wpt->Comment, '13-Mar-2011 09:19:00', 'Time in Comment field as expected');
 
-    ## Roundtrip does not work here: 1.0 vs 1.1, and metadata is
-    ## handled differently in gpx 1.1
-    #ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx 1.0 file';
+	## Roundtrip does not work here: 1.0 vs 1.1, and metadata is
+	## handled differently in gpx 1.1
+	#ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx 1.0 file';
+    }
+
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => -2);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+
+	my $wpt = ($gps->flat_track)[0];
+	is($wpt->Comment, '13-Mar-2011 07:19:00', 'Time in Comment field with timeoffset');
+    }
 }
 
 {
@@ -137,39 +149,50 @@ EOF
 
     my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
 
-    my $gps = GPS::GpsmanData::Any->load($tmpfile);
-    isa_ok $gps, 'GPS::GpsmanMultiData';
-
-    my @chunks = @{ $gps->Chunks };
-    is scalar(@chunks), 1, 'got one chunk';
-    my @wpts = @{ $chunks[0]->Waypoints };
-    is scalar(@wpts), 1, 'got one waypoint';
-    my $wpt = $wpts[0];
-    isa_ok $wpt, 'GPS::Gpsman::Waypoint';
-
-    is $gps->Chunks->[0]->TrackAttrs->{'srt:device'}, 'eTrex 30', 'preserve creator into srt:device';
-
-    is $wpt->Longitude, 13.384399;
-    is $wpt->Latitude, 52.532055;
-    is $wpt->Ident, '218';
-    is $wpt->Comment, "04-Jun-2014 07:46:31";
-    is $wpt->Symbol, 'user:7687';
-    is $wpt->Altitude, 47.636337;
-
     {
-	# Roundtrip check, with gpxx extensions
-	my $gpx2 = $gps->as_gpx; # default is gpxx => 1
-	xmllint_string($gpx2);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
 
-	like $gpx2, qr{creator="eTrex 30"}, 'creator re-created';
+	my @chunks = @{ $gps->Chunks };
+	is scalar(@chunks), 1, 'got one chunk';
+	my @wpts = @{ $chunks[0]->Waypoints };
+	is scalar(@wpts), 1, 'got one waypoint';
+	my $wpt = $wpts[0];
+	isa_ok $wpt, 'GPS::Gpsman::Waypoint';
 
-	# Still need to normalize, but without <extensions> now
-	(my $normalized_expected = $sample_wpt_gpx) =~ s{^.*?<wpt}{<wpt}s;
-	(my $normalized_got = $gpx2) =~ s{^.*?<wpt}{<wpt}s;
-	eq_or_diff $normalized_got, $normalized_expected;
+	is $gps->Chunks->[0]->TrackAttrs->{'srt:device'}, 'eTrex 30', 'preserve creator into srt:device';
+
+	is $wpt->Longitude, 13.384399;
+	is $wpt->Latitude, 52.532055;
+	is $wpt->Ident, '218';
+	is $wpt->Comment, "04-Jun-2014 07:46:31";
+	is $wpt->Symbol, 'user:7687';
+	is $wpt->Altitude, 47.636337;
+
+	{
+	    # Roundtrip check, with gpxx extensions
+	    my $gpx2 = $gps->as_gpx; # default is gpxx => 1
+	    xmllint_string($gpx2);
+
+	    like $gpx2, qr{creator="eTrex 30"}, 'creator re-created';
+
+	    # Still need to normalize, but without <extensions> now
+	    (my $normalized_expected = $sample_wpt_gpx) =~ s{^.*?<wpt}{<wpt}s;
+	    (my $normalized_got = $gpx2) =~ s{^.*?<wpt}{<wpt}s;
+	    eq_or_diff $normalized_got, $normalized_expected;
+	}
+
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file with waypoint';
     }
 
-    ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file with waypoint';
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 2);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+	my $wpt = $gps->Chunks->[0]->Waypoints->[0];
+	isa_ok $wpt, 'GPS::Gpsman::Waypoint';
+	is $wpt->Ident, '218'; # just check if we're looking at the expected waypoint
+	is $wpt->Comment, "04-Jun-2014 09:46:31", 'timeoffset works';
+    }
 }
 
 sub _create_temporary_gpx {

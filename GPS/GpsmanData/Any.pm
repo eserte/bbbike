@@ -75,6 +75,8 @@ sub load_mps {
 sub load_gpx {
     my($class, $file, %args) = @_;
 
+    my $timeoffset = delete $args{timeoffset};
+
     require Time::Local;
 
     my $gpsman = GPS::GpsmanMultiData->new;
@@ -167,7 +169,7 @@ sub load_gpx {
 	    $wpt->Latitude($lat);
 	    $wpt->Longitude($lon);
 	    $wpt->Altitude($ele) if defined $ele;
-	    $wpt->unixtime_to_Comment($epoch, undef) if $epoch; # XXX timeoffset? container?
+	    $wpt->unixtime_to_Comment($epoch, $timeoffset) if $epoch;
 	    $wpt->Symbol($gpsman_symbol) if defined $gpsman_symbol;
 	    push @wpts, $wpt;
 	} elsif ($wpt_or_trk->name eq 'trk') {
@@ -198,6 +200,7 @@ sub load_gpx {
 					     (defined $track_display_color ? (colour => $track_display_color) : ()),
 					     (defined $gps_device ? ('srt:device' => $gps_device) : ()),
 					    });
+			$trkseg->TimeOffset($timeoffset) if defined $timeoffset;
 			$is_first_segment = 0;
 		    } else {
 			$trkseg->IsTrackSegment(1);
@@ -246,6 +249,7 @@ sub load_gpx {
 	    my $rte = $wpt_or_trk;
 	    my $gpsman_rte = GPS::GpsmanData->new;
 	    $gpsman_rte->Type($gpsman_rte->TYPE_ROUTE);
+	    $gpsman_rte->TimeOffset($timeoffset) if defined $timeoffset;
 	    # XXX Name? TrackAttrs?
 	    my @data;
 	    for my $rte_child ($rte->children) {
@@ -282,6 +286,7 @@ sub load_gpx {
     if (@wpts) {
 	my $wpts = GPS::GpsmanData->new;
 	$wpts->Type(GPS::GpsmanData::TYPE_WAYPOINT);
+	$wpts->TimeOffset($timeoffset) if defined $timeoffset;
 	$wpts->Waypoints(\@wpts);
 	push @{ $gpsman->{Chunks} }, $wpts;
 	$wpts->TrackAttrs({
