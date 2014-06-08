@@ -99,6 +99,24 @@ use GPS::Util; # for eliminate_umlauts
 	$epoch;
     }
 
+    sub unixtime_to_Comment  { shift->_unixtime_to_member('Comment', @_) }
+    sub unixtime_to_DateTime { shift->_unixtime_to_member('DateTime', @_) }
+
+    sub _unixtime_to_member {
+	my($wpt, $member, $epoch, $container_or_timeoffset) = @_;
+	my $timeoffset = ($container_or_timeoffset
+			  ? (UNIVERSAL::can($container_or_timeoffset, 'TimeOffset')
+			     ? $container_or_timeoffset->TimeOffset
+			     : ($container_or_timeoffset =~ m{^[-+]?\d+(?:\.\d+)?$}
+				? $container_or_timeoffset
+				: die "Invalid container or timeoffset specification '$container_or_timeoffset'"
+			       )
+			    )
+			  : undef
+			 );
+	$wpt->$member(GPS::GpsmanData::_unixtime_to_gpsmantime($epoch, $timeoffset));
+    }
+
     sub _coord_output {
 	my($wpt, $container) = @_;
 	if ($container->PositionFormat eq 'DDD') {
@@ -1018,6 +1036,35 @@ sub Points {
     } else {
 	warn "Can't determine type in Points method (neither waypoint nor track, type is <" . $self->Type . ">)";
 	[];
+    }
+}
+
+{
+    my %number_to_monthabbrev =
+	(
+	  1 => 'Jan',
+	  2 => 'Feb',
+	  3 => 'Mar',
+	  4 => 'Apr',
+	  5 => 'May',
+	  6 => 'Jun',
+	  7 => 'Jul',
+	  8 => 'Aug',
+	  9 => 'Sep',
+	 10 => 'Oct',
+	 11 => 'Nov',
+	 12 => 'Dec',
+	);
+
+    sub _unixtime_to_gpsmantime {
+	my($epoch, $timeoffset) = @_;
+	if (defined $timeoffset) {
+	    $epoch += $timeoffset*3600;
+	}
+	my($S,$M,$H,$d,$m,$y) = gmtime $epoch;
+	$m++;
+	$y+=1900;
+	sprintf "%02d-%s-%04d %02d:%02d:%02d", $d, $number_to_monthabbrev{$m}, $y, $H, $M, $S;
     }
 }
 
