@@ -183,7 +183,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: XXX Baumaßnahme 8.20 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-04-27 (Richtung Süden teilweise realisiert)
+#: last_checked: 2014-06-06 (Richtung Süden teilweise realisiert, Richtung Norden ein kleines Stück auch)
 Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
@@ -192,8 +192,8 @@ Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 1308
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
-#: last_checked: 2014-01-04
-#: check_frequency: 90d
+#: last_checked: 2014-06-09
+#: check_frequency: 120d
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
@@ -610,8 +610,8 @@ Am Lokdepot: werden die beiden Teilstücke miteinander verbunden?	?::inwork 8390,
 Schönwalder Allee: Radweg wird saniert, danach asphaltiert	?::inwork; -3807,17226 -3820,17276 -3936,17516
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4461
-#: last_checked: 2013-07-06
-#: next_check: 2013-10-15
+#: last_checked: 2014-06-09
+#: check_frequency: 180d
 Wassersportallee: wird hier eine Fußgängerampel eingerichtet?	? 22506,1379 22488,1282
 # 
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/B-XIII-102U.jpg
@@ -625,7 +625,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00079726/26-Anlagen/01/DRS0047VK.pdf (Bebauungsplan 9 - 47)
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegungxvi-65und9-47.html
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2013-09-07
+#: last_checked: 2014-06-09
 #: check_frequency: 180d
 Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
@@ -1003,8 +1003,9 @@ Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gespe
 # REMOVED (realisiert) --- #: osm_watch: way id="117951616" version="3" --- #: last_checked: 2013-10-31 --- #: check_frequency: 60d --- Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18930,3703 19162,3935
 # 
 #: osm_watch: way id="224731112" version="3"
-#: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben
-#: last_checked: 2014-05-17 (Trassierungsarbeiten werden durchgeführt)
+#: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben, in den restlichen Abschnitten wird es wohl keine Radwege geben
+#: XXX wird es Anbindungen an den Park geben?
+#: last_checked: 2014-06-09 (Trassierungsarbeiten werden durchgeführt)
 #: check_frequency: 120d
 Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18773,3873 18701,3806 18520,3812 18208,4151 18374,4307
 # REMOVED --- #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/ --- #: by: (URL existiert nicht mehr) http://www.potsdam.de/cms/beitrag/10058808/757395/ --- #: XXX wo wird die Verbindung genau entlanggeführt? --- Neuer Garten (Potsdam): neue Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12263,-403 -12262,-362 -12328,-212 -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
@@ -1510,15 +1511,15 @@ Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projecte
 #: last_checked: 2013-06-09
 #: check_frequency: 100d
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25691,4716 25724,4706 25802,4681
-#: last_checked: 2013-07-06
-#: next_check: 2014-06-15
+#: last_checked: 2014-06-09
+#: check_frequency: 300d
 Wassersportallee: Verbesserung der Befahrbarkeit	?::projected 22655,1450 22756,1524
 Regattastr.: Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23955,728 24019,711 24211,585 24571,514 24660,440
 Sportpromenade: Fahrradstraße soll eingerichtet werden	?::projected 25646,-209 25760,-427 25958,-731
 Rehfeldtstr./Rohrwallallee: Verbesserung der Befahrbarkeit	?::projected 25958,-731 26004,-705 26045,-718 26073,-745 26129,-807 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
 Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26846,-2176 27021,-2336 27161,-2474 27093,-2560
-#: last_checked: 2013-06-09
-#: next_check: 2014-06-15
+#: last_checked: 2014-06-09
+#: check_frequency: 300d
 Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 21053,4162 21146,4229
 #: by ^^^
 # 
@@ -1630,6 +1631,9 @@ Ortsumfahrung Seelow (B167): möglicherweise eine Kraftfahrzeugstraße?	? 74874,15
 # REMOVED (der Bahnhof ist immer noch da, Stand 2012-10) --- Raddusch: entfällt der Regionalbahnhof?	? 54769,-64897
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15505,6342 15516,6357
+# 
+#: XXX kann man trotzdem diesen Weg mit q4 aufnehmen? Gibt es eine Anbindung zur Britzer Str.?
+Uferweg an der Spree: Radfahren verboten, Beleuchtung, Qualität?	? 18695,5453 18617,5482 18552,5533 18487,5616 18426,5718 18402,5831 18361,5882 18326,5850
 # 
 #: ignore ^^^
 #
@@ -3439,8 +3443,8 @@ Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsber
 # 
 #: XXX str_cont_ausnahme-Eintrag wird notwendig sein
 #: XXX hier auch Privatstraße?
-#: last_checked: 2013-06-15
-#: next_check: 2014-05-15
+#: last_checked: 2014-06-09
+#: check_frequency: 300d
 Trollblumenweg: wird verlängert, Qualität der Verlängerung?	?::inwork 16020,3732 16039,3766 16104,3717
 # 
 # REMOVED (eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2011 --- #: last_checked: 2011-09-10 --- #: next_check: 2012-03-01 --- #: osm_watch: way id="180482046" version="1" --- Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	?::inwork 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706

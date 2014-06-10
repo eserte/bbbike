@@ -1089,6 +1089,9 @@ Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
 Am Zirkus	1s:q4 9167,13046 9239,12923
 DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615,9675 1724,9772
+#: note implizite Fahrtrichtung
+Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
+Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1103,6 +1106,8 @@ Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
 #: note: von der Fahrbahnseite von Westen aus gibt es keinen Zugang (Bordsteine, Pflanzungen)
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
+#: note: Benutzungspflicht des Radwegs um die Wendeschleife herum
+Müggelheimer Damm	2::igndisp 23476,3829 23368,3894
 ######################################################################
 #
 # Potsdam
@@ -1442,7 +1447,7 @@ Petersburger Str.: Straßenbahntrasse	3nocross 13622,12806 13579,12904 13530,1301
 Petersburger Str.: Straßenbahntrasse	3nocross 13530,13014 13487,13115 13434,13234
 Petersburger Str.: Straßenbahntrasse	3nocross 13330,13468 13381,13354 13393,13326 13434,13234
 #: note: ^^^
-Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16779,2993
+Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16786,2989
 Stubenrauchstr.: Bahntrasse	3nocross 16182,2200 16242,2279 16306,2364
 Stubenrauchstr.: Bahntrasse	3nocross 16306,2364 16382,2464 16460,2567
 Stubenrauchstr.: Bahntrasse	3nocross 16460,2567 16475,2586 16547,2680
@@ -2555,7 +2560,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: priority: #A
 Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
 # 
-#: last_checked: 2014-05-17
+#: last_checked: 2014-06-09
 Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,3422
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0186-neubau-eines-boardingwohn-und.html

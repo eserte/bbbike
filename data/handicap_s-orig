@@ -13,10 +13,10 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # 
 #: XXX nach den Bauarbeiten vielleicht auch diese Fahrtrichtung asphaltiert
-#: last_checked: 2014-06-04
-Simplonstr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14468,11203 14531,11142
+#: last_checked: 2014-06-08
+Simplonstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2014-06-07 vvv
+#: last_checked: 2014-06-08 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -269,9 +269,9 @@ Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12
 # 
 ### Lichtenberg ###
 # 
-#: last_checked: 2014-05-25 (Absperrgitter existiert noch, wird aber manchmal von Fußgängern weggeschoben)
+#: last_checked: 2014-06-09 (Absperrgitter existiert noch, wird aber manchmal von Fußgängern weggeschoben)
 #: check_frequency: 60d
-(Rummelsburger Ufer - Hauptstr.): Bauarbeiten, Umweg über Norma-Parkplatz notwendig	q4::inwork 15249,10564 15307,10701
+(Rummelsburger Ufer - Hauptstr.): Bauarbeiten, ggfs. Umweg über Norma-Parkplatz notwendig	q4::inwork 15249,10564 15307,10701
 # 
 # REMOVED (anscheinend schon beendet) --- #: last_checked: 2014-05-06 --- #: next_check: 2014-05-31 (Bauarbeiten bis Mai 2014) --- #: valid: -20140531 --- Archibaldweg: Bauarbeiten zwischen Leopoldstr. und Rupprechtstr. Richtung Nordosten	q3::inwork; 15950,10987 16034,11053
 # 
@@ -1376,8 +1376,8 @@ Erekweg: enger Pfad	q3 16186,24108 16139,24162
 (Kurze-Enden-Weg - Gewanneweg): eng, Bordstein	q2 15278,23934 15321,23979
 Faulhornweg: Fußgänger	q1 10383,2088 10322,2163
 Igelkolbensteig: eng	q2 15947,3572 16003,3652
-#: XXX_prog BS (2x)
-Melissenweg: Bordsteine	q2 16003,3652 16041,3718
+#: XXX_prog BS (2x) (auch ohne BS q2)
+Melissenweg: Bordsteine, eng	q2 16003,3652 16041,3718
 #: XXX_prog BS (im Norden, im Süden kann es umfahren werden)
 Simsonweg: Fußgänger, Bordsteine	q2 8354,12416 8546,12279
 Varian-Fry-Str.: Fußgänger	q2 8374,11479 8389,11378
@@ -1951,6 +1951,7 @@ Georg-Steger-Weg: einige Fußgänger	q1 1493,2249 1480,2199 1452,2095 1461,2073 14
 (an der BMW-Niederlassung): Parkverkehr, Schranke	q1 2102,11307 2180,11318 2219,11324
 (Grolmanstr./Goethestr. - Am Schillertheater): gemeinsamer Rad- und Gehweg, Fußgänger haben Vorrang	q1 4651,11368 4648,11445 4616,11507 4574,11587
 (Verlängerung Hiddenseestr.): Fußgänger	q2 10960,17674 10969,17587
+(entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

@@ -797,10 +797,13 @@ Parkaue	1s 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
 Am Zirkus	1s 9167,13046 9239,12923
 DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615,9675 1724,9772
+Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
+Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
+Müggelheimer Damm	2::igndisp 23476,3829 23368,3894
 (Wollestr. - Mühlenstr.)	1 -10790,-1178 -10787,-1162 -10730,-1103 -10691,-1097 -10648,-1130
 Wollestr.	1s -10717,-1227 -10984,-1574
 Am Neuen Garten	1 -12166,1384 -12212,1201 -12276,831 -12297,738
@@ -1288,8 +1291,8 @@ An der Brauerei -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13283,13311 1
 Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3::igndisp 13393,13326 13381,13354 13283,13311
 Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13433,13346 13393,13326 13434,13234
 Petersburger Str. -> Heidenfeldstr.: Straßenbahntrasse	3::igndisp 13381,13354 13393,13326 13433,13346
-Bahntrasse	3nocross::ignrte 16635,2796 16677,2856 16779,2993
-Stubenrauchstr. -> Krokusstr.: Bahntrasse	3::igndisp 16779,2993 16677,2856 16739,2736
+Bahntrasse	3nocross::ignrte 16635,2796 16677,2856 16786,2989
+Stubenrauchstr. -> Krokusstr.: Bahntrasse	3::igndisp 16786,2989 16677,2856 16739,2736
 Krokusstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16739,2736 16677,2856 16635,2796
 Bahntrasse	3nocross::ignrte 16182,2200 16242,2279 16306,2364
 Mohnweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16114,2377 16242,2279 16306,2364
