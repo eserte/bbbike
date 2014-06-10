@@ -3449,8 +3449,8 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
        undef,
        {
          'source_id' => 'IM_021322',
-         'until' => 1402408800,
-         'text' => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 10.06.2014 16:00 Uhr ',
+         'until' => 1402668000,
+         'text' => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 13.06.2014 16:00 Uhr ',
          'from' => 1392902100,
          'id' => 2538,
          'data' => 'userdel	q3::inwork; 12189,16578 12045,16574
@@ -3546,16 +3546,7 @@ userdel	q3::inwork; 13555,15596 13459,15653
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_021583',
-         'until' => 1407510000,
-         'text' => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Masurenstr. und Dolomitenstr Baustelle, Fahrtrichtung gesperrt, 31.03.2014 07 bis Mitte August 2014 ',
-         'from' => 1396047600,
-         'id' => 2558,
-         'data' => 'userdel	q4::inwork; 10670,17458 10647,17501 10572,17573
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_021231',
          'until' => 1405440000,
@@ -3670,19 +3661,25 @@ userdel	q4::inwork 6074,14194 6074,14215 6084,14251 6118,14289
 ',
          'type' => 'handicap'
        },
+       undef,
        {
-         'source_id' => 'http://www.berliner-zeitung.de/polizei/bombenentschaerfung-in-steglitz-5000-menschen-muessen-ihre-haeuser-verlassen,10809296,27383386.html',
-         'until' => 1402412400,
-         'text' => 'Bergstr. in Steglitz: Bombenentschärfung am 10.6.2014 zwischen 11:00 und 17:00, Sperrgebiet',
-         'from' => 1402304400,
-         'id' => 2576,
-         'data' => 'userdel	2::inwork 6134,5990 6134,5894 6134,5800 6007,5785 5942,5775
-userdel	2::inwork 6134,5800 6115,5302
-userdel	2::inwork 5699,5949 5847,5961 5845,6049 5748,6051 5699,5949 5674,5901 5677,5868 5679,5853 5681,5768 5681,5743 5683,5672 5687,5586 5840,5588 5840,5679 5683,5672
-userdel	2::inwork 5681,5743 5850,5765 5851,5863 5694,5845
-userdel	2::inwork 5845,6049 6008,6067 6001,5974 5847,5961 5851,5863 5935,5874 5942,5775 5850,5765 5840,5679
-userdel	2::inwork 5993,5422 6007,5785 6007,5882 6001,5974 6134,5990 6116,6130
-userdel	2::inwork 5935,5874 6007,5882 6134,5894
+         'source_id' => 'IM_022090',
+         'until' => 1405461600,
+         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-WM-Fanmeile, vom 11.06.2014 06 Uhr bis 15.07.14, 24:00',
+         'from' => 1402264800,
+         'id' => 2577,
+         'data' => 'userdel	2::temp 7429,12070 7383,12095 7816,12150 7823,12120 8018,12135 8049,12140
+userdel	2::temp 7816,12150 8055,12186 8049,12140 8122,12147 8215,12156 8466,12197 8522,12239
+userdel	2::temp 7383,12095 7026,12054 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120
+userdel	2::temp 8055,12186 8089,12190 8214,12205
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8303,12216 8214,12205 8215,12156
+userdel	2::temp 8610,12254 8538,12245 8522,12187
+userdel	2::temp 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8055,12186 8119,12414
+userdel auto	3 7026,12054 7031,12024 7059,11978
+userdel auto	3 6787,12099 6828,12031 6809,11979
+userdel auto	3 7059,11978 7031,12024 7026,12054
+userdel auto	3 6809,11979 6828,12031 6787,12099
 ',
          'type' => 'gesperrt'
        }

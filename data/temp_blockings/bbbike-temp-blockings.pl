@@ -22458,8 +22458,8 @@ userdel	q3::inwork; 11946,13993 11820,13804
 EOF
      },
      { from  => 1392902100, # 2014-02-20 14:15
-       until => $isodate2epoch->("2014-06-10 16:00:00"), # 1402063200, # 2014-06-06 16:00
-       text  => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 10.06.2014 16:00 Uhr ',
+       until => $isodate2epoch->("2014-06-13 16:00:00"), # 1402063200, # 2014-06-06 16:00
+       text  => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 13.06.2014 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_021322',
        data  => <<EOF,
@@ -22648,7 +22648,7 @@ userdel	q3::inwork; 13555,15596 13459,15653
 EOF
      },
      { from  => 1396047600, # 2014-03-29 00:00
-       until => $isodate2epoch->("2014-08-08 17:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
+       until => 1402425301, # $isodate2epoch->("2014-08-08 17:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
        text  => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Masurenstr. und Dolomitenstr Baustelle, Fahrtrichtung gesperrt, 31.03.2014 07 bis Mitte August 2014 ',
        type  => 'handicap',
        source_id => 'IM_021583',
@@ -22835,6 +22835,26 @@ userdel	2::inwork 5681,5743 5850,5765 5851,5863 5694,5845
 userdel	2::inwork 5845,6049 6008,6067 6001,5974 5847,5961 5851,5863 5935,5874 5942,5775 5850,5765 5840,5679
 userdel	2::inwork 5993,5422 6007,5785 6007,5882 6001,5974 6134,5990 6116,6130
 userdel	2::inwork 5935,5874 6007,5882 6134,5894
+EOF
+     },
+     { from  => 1402264800, # 2014-06-09 00:00
+       until => 1405461600, # 2014-07-16 00:00
+       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-WM-Fanmeile, vom 11.06.2014 06 Uhr bis 15.07.14, 24:00',
+       type  => 'gesperrt',
+       source_id => 'IM_022090',
+       data  => <<EOF,
+userdel	2::temp 7429,12070 7383,12095 7816,12150 7823,12120 8018,12135 8049,12140
+userdel	2::temp 7816,12150 8055,12186 8049,12140 8122,12147 8215,12156 8466,12197 8522,12239
+userdel	2::temp 7383,12095 7026,12054 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120
+userdel	2::temp 8055,12186 8089,12190 8214,12205
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8303,12216 8214,12205 8215,12156
+userdel	2::temp 8610,12254 8538,12245 8522,12187
+userdel	2::temp 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8055,12186 8119,12414
+userdel auto	3 7026,12054 7031,12024 7059,11978
+userdel auto	3 6787,12099 6828,12031 6809,11979
+userdel auto	3 7059,11978 7031,12024 7026,12054
+userdel auto	3 6809,11979 6828,12031 6787,12099
 EOF
      },
     );
