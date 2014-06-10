@@ -93,6 +93,7 @@ GPS/GpsmanData/GarminGPX.pm
 GPS/GpsmanData/SportsTracker.pm
 GPS/GpsmanData/Stats.pm
 GPS/GpsmanData/Strassen.pm
+GPS/GpsmanData/TestRoundtrip.pm
 GPS/GpsmanData/Tk.pm
 GPS/GpsmanData/TkViewer.pm
 GPS/GpsmanData/VehicleInfo.pm
@@ -1013,6 +1014,7 @@ lib/Msg.pm
 lib/MyFile.pm
 lib/PDF/Create/MyPage.pm
 lib/Text/ScriptTemplate.pm
+lib/Time/Zone/By4D.pm
 lib/Tk/Arrow.pm
 lib/Tk/Autoscroll.pm
 lib/Tk/BreakMenu.pm
