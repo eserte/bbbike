@@ -3669,6 +3669,22 @@ userdel	q4::inwork 6074,14194 6074,14215 6084,14251 6118,14289
          'data' => 'userdel	q2::inwork 11563,20048 11419,20327
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berliner-zeitung.de/polizei/bombenentschaerfung-in-steglitz-5000-menschen-muessen-ihre-haeuser-verlassen,10809296,27383386.html',
+         'until' => 1402412400,
+         'text' => 'Bergstr. in Steglitz: Bombenentschärfung am 10.6.2014 zwischen 11:00 und 17:00, Sperrgebiet',
+         'from' => 1402304400,
+         'id' => 2576,
+         'data' => 'userdel	2::inwork 6134,5990 6134,5894 6134,5800 6007,5785 5942,5775
+userdel	2::inwork 6134,5800 6115,5302
+userdel	2::inwork 5699,5949 5847,5961 5845,6049 5748,6051 5699,5949 5674,5901 5677,5868 5679,5853 5681,5768 5681,5743 5683,5672 5687,5586 5840,5588 5840,5679 5683,5672
+userdel	2::inwork 5681,5743 5850,5765 5851,5863 5694,5845
+userdel	2::inwork 5845,6049 6008,6067 6001,5974 5847,5961 5851,5863 5935,5874 5942,5775 5850,5765 5840,5679
+userdel	2::inwork 5993,5422 6007,5785 6007,5882 6001,5974 6134,5990 6116,6130
+userdel	2::inwork 5935,5874 6007,5882 6134,5894
+',
+         'type' => 'gesperrt'
        }
      
 );
