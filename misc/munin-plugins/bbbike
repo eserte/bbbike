@@ -48,7 +48,7 @@ my $config = {
     ],
     'maptype' => [
         qw/bing_birdview bing_hybrid bing_map cycle hike_bike hybrid mapnik mapnik_bw mapnik_de
-          public_transport roadmap satellite tah terrain yahoo_hybrid yahoo_map yahoo_satellite/
+          public_transport roadmap satellite tah terrain/
     ],
 };
 
