@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2012,2013,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -58,15 +58,6 @@ my $save_cmdline = "$0 @ARGV";
 
 if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		"email=s" => \$email,
-		"local!" => sub {
-		    $bbbike_url = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
-		},
-		"local-radzeit!" => sub {
-		    $bbbike_url = "http://radzeit/cgi-bin/bbbike.cgi";
-		},
-		"local-hosteurope!" => sub {
-		    $bbbike_url = "http://bbbike.hosteurope.herceg.de/cgi-bin/bbbike.cgi";
-		},
 		'layer=s@' => \@layers,
 		'initmapext=s' => sub {
 		    ($width, $height) = split /x/, $_[1];
@@ -488,7 +479,6 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
 =head1 SYNOPSIS
 
     bbd2mapservhtml [-bbbikeurl url] [-email email]
-		    [-[no]local | -local-radzeit]
                     [-layer layername [-layer ...]]
                     [-initmapext {width}x{height}] [-mapscale scale]
 		    [-center x,y] [-centernearest]
@@ -502,13 +492,9 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
 
 =over
 
-=item -local
+=item -bbbikeurl url
 
-Use a local mapserver URL instead of the official one from BBBikeVar
-
-=item -local-radzeit
-
-Use another local mapserver URL (similar to the official at "radzeit").
+Use the given URL for the bbbike cgi instead of the official one from L<BBBikeVar>
 
 =item -layer
 
