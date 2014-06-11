@@ -214,7 +214,7 @@ cmdbbbike - a very simple command line tool to BBBike
 
     cmdbbbike Startstr Zielstr
 
-  ./cmdbbbike startstr zielstr -dumpbbd | ./miscsrc/bbd2mapservhtml.pl -local > /tmp/mapserver_route.html
+  ./cmdbbbike startstr zielstr -dumpbbd | ./miscsrc/bbd2mapservhtml.pl -bbbikeurl http://localhost/bbbike/cgi/bbbike.cgi > /tmp/mapserver_route.html
 
 =head1 DESCRIPTION
 
