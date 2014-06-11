@@ -51,6 +51,8 @@ my $imagetype = "mapserver";
 my $title = "Mapserver/BBBike";
 my @custom_link_defs;
 my $do_routelist_button = 1;
+my $do_mapserver_button = 1;
+my $do_leaflet_button = 1;
 my $link_target;
 my $bad_browser_compat = 1; # e.g. IE7/8
 
@@ -83,6 +85,8 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'completeness!' => \$do_completeness,
 		'customlink=s@' => \@custom_link_defs,
 		'routelistbutton!' => \$do_routelist_button,
+		'mapserverbutton!' => \$do_mapserver_button,
+		'addleafletbutton' => \$do_leaflet_button,
 		'linktarget=s' => \$link_target,
 	       )) {
     require Pod::Usage;
@@ -97,6 +101,9 @@ for (@custom_link_defs) {
     my($url, $label) = split /\s+/, $_, 2;
     $_ = { url => $url, label => $label };
 }
+
+# XXX does not work if bbbike_url contains something else
+(my $leaflet_url = $bbbike_url) =~ s{\Qbbbike.cgi\E}{bbbikeleaflet.cgi};
 
 my $bbd_file = shift || "-";
 my $s;
@@ -187,7 +194,7 @@ if ($do_linklist) {
 	}
 
 	my @common_html_args = (
-				maplabel       => " Karte ",
+				map_button_options(),
 				$current_ignore_routelist || !$do_routelist_button ? () : (routelistlabel => " Routenliste "),
 			       );
 
@@ -309,7 +316,7 @@ if ($do_linklist) {
     $html = generate_single_html(coords => \@coords,
 				 (defined $center ? (center => find_nearest_to_center(\@lines, $center)) : ()),
 				 label => undef,
-				 maplabel       => " Karte ",
+				 map_button_options(),
 				 ($do_routelist_button ? (routelistlabel => " Routenliste ") : ()),
 				 single => 1,
 				);
@@ -367,6 +374,18 @@ sub lines_to_coords {
     @coords;
 }
 
+sub map_button_options {
+    my $has_both_map_buttons = $do_mapserver_button && $do_leaflet_button;
+    my @opts;
+    if ($do_leaflet_button) {
+	push @opts, leafletlabel => ' Karte ' . ($has_both_map_buttons ? '(Leaflet) ' : '');
+    }
+    if ($do_mapserver_button) {
+	push @opts, mapserverlabel => ' Karte ' . ($has_both_map_buttons ? '(Mapserver) ' : '');
+    }
+    @opts;
+}
+
 sub generate_single_html {
     my(%args) = @_;
 
@@ -375,7 +394,8 @@ sub generate_single_html {
     my $label = delete $args{label};
     my $label_addition = delete $args{label_addition};
     my $label_html = delete $args{label_html};
-    my $maplabel = delete $args{maplabel};
+    my $mapserverlabel = delete $args{mapserverlabel};
+    my $leafletlabel = delete $args{leafletlabel};
     my $routelistlabel = delete $args{routelistlabel};
     my $link = delete $args{link};
     my $is_single = delete $args{single} || 0;
@@ -418,19 +438,35 @@ EOF
     if (defined $label_addition) {
 	$html .= CGI::escapeHTML($label_addition);
     }
-    $html .= ' <input';
-    if ($is_single) {
-	$html .= ' id="submitbutton"';
+
+    # leaflet button
+    my $restore_action = '';
+    if ($leafletlabel) {
+	$html .= <<EOF;
+ <input type="submit" onclick='this.form.action="$leaflet_url?zoom=15";' value="@{[ CGI::escapeHTML($leafletlabel) ]}" />
+EOF
+	$restore_action = qq{this.form.action="$bbbike_url";};
     }
-    $html .= <<EOF;
- type="submit" onclick='this.form.showroutelist.value="0"; this.form.imagetype.value="$imagetype";' value="@{[ CGI::escapeHTML($maplabel) ]}" />
+
+    # mapserver button
+    if ($mapserverlabel) {
+	$html .= ' <input';
+	if ($is_single) {
+	    $html .= ' id="submitbutton"';
+	}
+	$html .= <<EOF;
+ type="submit" onclick='this.form.showroutelist.value="0"; this.form.imagetype.value="$imagetype"; $restore_action' value="@{[ CGI::escapeHTML($mapserverlabel) ]}" />
  <input type="hidden" name="showroutelist" value="0" />
 EOF
+    }
+
+    # route list button
     if ($routelistlabel) {
 	$html .= <<EOF;
- <input type="submit" onclick='this.form.showroutelist.value="1"; this.form.imagetype.value="";' value="@{[ CGI::escapeHTML($routelistlabel) ]}" />
+ <input type="submit" onclick='this.form.showroutelist.value="1"; this.form.imagetype.value=""; $restore_action' value="@{[ CGI::escapeHTML($routelistlabel) ]}" />
 EOF
     }
+
     for my $custom_link_def (@custom_link_defs) {
 	my $url = $custom_link_def->{url};
 	my $link_label = $custom_link_def->{label}; # XXX fallback?
@@ -474,7 +510,7 @@ __END__
 
 =head1 NAME
 
-bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
+bbd2mapservhtml.pl - create a mapserver or leaflet route from a bbd or bbr file
 
 =head1 SYNOPSIS
 
@@ -485,7 +521,8 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
 		    [-partialhtml] [-linklist] [-linktarget ...] [-preferalias]
 		    [-title title] [-imagetype ...]
 		    [-onlyonedirection] [-althandling] [-completeness]
-		    [-customlink "url label" ...] [-noroutelistbutton]
+		    [-customlink "url label" ...]
+		    [-noroutelistbutton] [-nomapserverbutton] [-addleafletbutton]
 		    [file]
 
 =head1 DESCRIPTION
@@ -617,6 +654,18 @@ middle coordinate
 =item -noroutelistbutton
 
 Don't create a button to the route list.
+
+=item -nomapserverbutton
+
+Don't create a button to mapserver.
+
+=item -addleafletbutton
+
+Create a button to the leaflet map.
+
+If both mapserver and leaflet buttons exist, then the button label
+changes to "Karte (Mapserver)" and "Karte (Leaflet)", and leaflet
+button is shown first.
 
 =back
 
