@@ -82,6 +82,7 @@
 				   '-mapscale', '1:6000',
 				   '-customlink', $fragezeichenformurl . '?supplied_coord=$CENTER_COORD;strname=$NAME;strname_html=$NAME_HTML Eintragen',
 				   '-noroutelistbutton',
+				   '-addleafletbutton',
 				   '-linktarget', 'int_frame',
 				  );
 			my $err;
