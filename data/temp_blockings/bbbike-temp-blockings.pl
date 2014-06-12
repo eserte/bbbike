@@ -22293,7 +22293,7 @@ userdel	2::temp 11317,14564 11255,14572 11163,14548
 EOF
      },
      { from  => 1384642800, # 2013-11-17 00:00
-       until => 1404136800, # 2014-06-30 16:00
+       until => 1402509700, # 1404136800, # 2014-06-30 16:00
        text  => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, in Richtung Friedrichstr. ca. 60 Meter gesperrt, vom 18.11.2013 bis Ende Juni 2014 ',
        type  => 'handicap',
        source_id => 'IM_020714',

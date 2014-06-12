@@ -3391,16 +3391,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020714',
-         'until' => 1404136800,
-         'text' => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, in Richtung Friedrichstr. ca. 60 Meter gesperrt, vom 18.11.2013 bis Ende Juni 2014 ',
-         'from' => 1384642800,
-         'id' => 2522,
-         'data' => 'userdel	q3::inwork; 9130,12433 9343,12464
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
