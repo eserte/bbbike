@@ -136,7 +136,7 @@ mkdir $portdir, 0755 or die $!;
 
 substitute("Makefile.tmpl", "$portdir/Makefile");
 
-my $plist = "$portdir/pkg-plist.in";
+my $plist = "$portdir/pkg-plist";
 open my $PLIST, ">", $plist
     or die "Can't write to $plist: $!";
 

@@ -20,7 +20,9 @@ POD2MAN=	pod2man
 
 MYDESTDIR=	${STAGEDIR}${PREFIX}/BBBike
 
-LOCAL_PERL_ARCH=	${PERL_ARCH}
+.include <bsd.port.pre.mk>
+
+LOCAL_PERL_ARCH!=	${PERL5} -MConfig -e '$$x = qq{$$Config{version}/$$Config{archname}}; $$x =~ s{/}{\\\\/}g; print $$x'
 PLIST_SUB=		LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
 BBBIKE_PERL_EXE=	@BBBIKE_PERL_EXE@
 
@@ -39,13 +41,6 @@ do-build:
 	${CHMOD} 0755 ${WRKSRC}/$f
 .endfor
 
-PLIST_IN=	${PKGDIR}/pkg-plist.in
-PLIST=		${WRKDIR}/pkg-plist
-
-pre-install:
-	LOCAL_PERL_ARCH=`${PERL5} -MConfig -e '$$x = qq{$$Config{version}/$$Config{archname}}; $$x =~ s{/}{\\\\/}g; print $$x'`; \
-	${SED} -e "s/%%LOCAL_PERL_ARCH%%/$$LOCAL_PERL_ARCH/g" < ${PLIST_IN} > ${PLIST}
-
 do-install:
 	-${RM} -rf ${MYDESTDIR}
 	${INSTALL_MAN} ${WRKSRC}/bbbike.1 ${STAGEDIR}${PREFIX}/man/man1
@@ -58,4 +53,4 @@ do-install:
 	${LN} -s  ../BBBike/$f ${STAGEDIR}${PREFIX}/bin/$f
 .endfor
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
