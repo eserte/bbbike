@@ -16,6 +16,7 @@
 	require lib;
 	lib->import($ABS_LOCAL_BBBIKE_DIR, "$ABS_LOCAL_BBBIKE_DIR/lib");
 	require Strassen::Core;
+	require Strassen::MultiStrassen;
 	require VectorUtil;
 	require BBBikeVar;
 	require BBBikeUtil;
@@ -30,7 +31,8 @@
 		mkdir $dir if !-d $dir;
 		chmod 0755, $dir;
 		my $tmpdir = tempdir(CLEANUP => 1) or die;
-		my $ot = Strassen->new("$BBBIKE_DATA_DIR/berlin_ortsteile");
+		my $ot = MultiStrassen->new(Strassen->new("$BBBIKE_DATA_DIR/berlin_ortsteile"),
+					    Strassen->new("$BBBIKE_DATA_DIR/potsdam"));
 		my %citypart2polygon;
 		my %citypart2bbox;
 		while (1) {
