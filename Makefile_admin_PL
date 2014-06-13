@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2013,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -606,21 +606,24 @@ git-backup:
 test-with-protocol: permission
 	[ -d $(HOME)/log ] || mkdir $(HOME)/log
 	DATE=`date +%Y%m%d`;\
+	    envinfo () { \
+		echo -n "git describe: "; git describe --match 'RELEASE_*'; \
+		echo "git status: "; git status; \
+		echo; \
+		echo -n "uname -a: "; uname -a; \
+		echo; \
+	    } ; \
 	    export HARNESS_NOTTY=1;\
 	    export HARNESS_TIMER=1;\
 	    export BBBIKE_LONG_TESTS=1;\
 	    export AUTOMATED_TESTING=1;\
-	    (echo -n "git describe: "; git describe --match 'RELEASE_*';\
-	     echo "git status: "; git status;\
-	     echo ) >$(HOME)/log/bbbike-test-$$DATE 2>&1;\
+	    envinfo >$(HOME)/log/bbbike-test-$$DATE 2>&1;\
 	    $(MAKE) ext  >>$(HOME)/log/bbbike-test-$$DATE 2>&1;\
 	    if ! $(MAKE) test >>$(HOME)/log/bbbike-test-$$DATE 2>&1; then \
 		echo "$(MAKE) test failed, please look at $(HOME)/log/bbbike-test-$$DATE for output";\
 		has_failure=yes;\
 	    fi; \
-	    (echo -n "git describe: "; git describe --match 'RELEASE_*';\
-	     echo "git status: "; git status;\
-	     echo ) >$(HOME)/log/bbbike-test-data-$$DATE 2>&1;\
+	    envinfo >$(HOME)/log/bbbike-test-data-$$DATE 2>&1;\
 	    if ! (cd data && $(MAKE) all slow-checks really-slow-checks >>$(HOME)/log/bbbike-test-data-$$DATE 2>&1); then \
 		echo "$(MAKE) all slow-checks really-slow-checks failed, please look at $(HOME)/log/bbbike-test-data-$$DATE for output";\
 		has_failure=yes;\
