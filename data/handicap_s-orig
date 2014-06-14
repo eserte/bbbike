@@ -16,7 +16,7 @@
 #: last_checked: 2014-06-11
 Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q3::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2014-06-11 vvv
+#: last_checked: 2014-06-12 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -133,7 +133,7 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-05-27
+#: last_checked: 2014-06-13
 Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q4::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -1257,6 +1257,8 @@ Zur Ringallee/Ringallee: enge Straﬂe	q0- 14214,17754 14172,17787 14177,17877 141
 Straﬂe 45 (Heinersdorf): enger Weg	q2- 12609,17405 12671,17528 12829,17626 12924,17676
 Straﬂe 46 (Heinersdorf): enger Weg	q2 12587,17603 12505,17469 12500,17460
 #: XXX_prog: Bordsteine (2x), wobei mit etwas Gl¸ck abgeflachte Bordsteine frei sind...
+#: XXX werden hier die Bordsteine abgeflacht?
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2014
 Dresdener Str.: Fuﬂg‰nger, Bordsteine	q3 11034,11249 11000,11327
 #: XXX_prog: Bordstein, relativ hoch
 Eingang Leinestr.: Bordstein	q3 11547,7432 11558,7438

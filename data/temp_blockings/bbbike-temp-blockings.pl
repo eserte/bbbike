@@ -22612,7 +22612,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann?
-#: last_checked: 2014-05-21
+#: last_checked: 2014-06-13
 #: check_frequency: 30d
 userdel	q3::inwork 11673,16003 11567,15842
 EOF
@@ -22855,6 +22855,41 @@ userdel auto	3 7026,12054 7031,12024 7059,11978
 userdel auto	3 6787,12099 6828,12031 6809,11979
 userdel auto	3 7059,11978 7031,12024 7026,12054
 userdel auto	3 6809,11979 6828,12031 6787,12099
+EOF
+     },
+     { from  => 1402524000, # 2014-06-12 00:00
+       until => 1402889400, # 2014-06-16 05:30
+       text  => 'Scharounstr./Herbert-von-Karajan-Str. zwischen Potsdamer Str. und Tiergartenstr.: Veranstaltung, Straße gesperrt, vom 14.06.2014 bis 16.06.2014 05:30 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_022145',
+       data  => <<EOF,
+userdel	2::temp 8005,11627 7965,11467 7970,11441 8083,11381
+EOF
+     },
+     { from  => 1402264800, # 2014-06-09 00:00
+       until => 1409522399, # 2014-08-31 23:59
+       text  => 'Vollsperrung zwischen Kolzenburg und Neuhof bis August 2014 wegen Reparaturarbeiten',
+       type  => 'gesperrt',
+       source_id => 'http://www.flaeming-skate.de/de/aktuelles/2014/05/bauarbeiten-auf-der-flaeming-skate-2014.php',
+       data  => <<EOF,
+userdel	2::inwork -5280,-38803 -5707,-39339 -6365,-40518 -6565,-41080
+EOF
+     },
+     { from  => 1402738058, # 2014-06-14 11:27
+       until => 1414796400, # 2014-11-01 00:00
+       text  => 'Charlottenburger Ufer: zwischen Winterstein- und Lohmeyerstraße Bauarbeiten, Sperrung der Fahrbahn, bis 31.10.2014',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 3741,12607 3597,12681 3454,12717
+EOF
+     },
+     { from  => 1402738904, # 2014-06-14 11:41
+       until => 1414537200, # 2014-10-29 00:00
+       text  => 'B198: Neubau Brücke über die Sernitz, OD Greiffenberg, Durchfahrt gesperrt, 14.10.2013 bis 28.10.2014\'',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/13/083',
+       data  => <<EOF,
+userdel	2::inwork 46564,76483 46704,75833
 EOF
      },
     );

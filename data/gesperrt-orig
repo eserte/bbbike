@@ -132,7 +132,8 @@ Wexstr.	1 5631,8011 5824,8035 5928,8052 6154,8070 6261,8058 6409,8026
 Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
-#: XXX_indoor: consider to move into temp blockings (but check first for exact times; maybe wait until temp blocking implementations are getting better)
+# --- currently XXX_outdoor --- : XXX_indoor: consider to move into temp blockings (but check first for exact times; maybe wait until temp blocking implementations are getting better)
+#: XXX aber zuerst handicap+qualitaet analysieren
 Gartenufer (in der Dunkelheit gesperrt)	2 6239,11399 5776,11625
 Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 13829,9905
@@ -2592,7 +2593,7 @@ Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13
 #: check_frequency: 60d
 Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17366,12357
 # 
-#: last_checked: 2014-06-03
+#: last_checked: 2014-06-13
 #: check_frequency: 60d
 (Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
 # 
@@ -2830,7 +2831,7 @@ Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,
 # Unsorted
 # 
 #: note: zwischen Eisenhart- und Friedrich-Ebert-Str. keine Einbahnstraße mehr (http://www.potsdam.de/cms/beitrag/10055182/757395/)
-Behlertstr.	1 -12370,-354 -12500,-339 -12621,-359 -12821,-417
+Behlertstr.	1 -12370,-354 -12514,-340 -12621,-359 -12821,-417
 tragen (Treppe)	0:30 2279,5112
 tragen (Treppe)	0:15 2211,5120
 tragen (Treppe)	0:30 17626,-1847

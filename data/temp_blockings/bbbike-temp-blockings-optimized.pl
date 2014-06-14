@@ -3351,26 +3351,8 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020491',
-         'until' => 1402758000,
-         'text' => 'Romain-Rolland-Str.: Baustelle zwischen Sleipnerstr. und Neukirchstr., Fahrbahn in Richtung Süden gesperrt, bis Mitte Juni 2014',
-         'from' => 1371198900,
-         'id' => 2500,
-         'data' => 'userdel	q4::inwork; 12510,18954 12522,18813 12541,18625 12548,18503
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20140411.1410.396295.html',
-         'until' => 1402696799,
-         'text' => 'Lengeder Str.: Bauarbeiten zwischen Montanstr. und Roedernallee, Einbahnstraße offen in Richtung Montanstr., 5. Mai 2014 bis 13. Juni 2014',
-         'from' => 1399154400,
-         'id' => 2501,
-         'data' => 'userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6247,19454
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3438,16 +3420,7 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_021322',
-         'until' => 1402668000,
-         'text' => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 13.06.2014 16:00 Uhr ',
-         'from' => 1392902100,
-         'id' => 2538,
-         'data' => 'userdel	q3::inwork; 12189,16578 12045,16574
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1530395999,
@@ -3507,7 +3480,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
-#: last_checked: 2014-05-21
+#: last_checked: 2014-06-13
 #: check_frequency: 30d
 userdel	q3::inwork 11673,16003 11567,15842
 ',
@@ -3578,16 +3551,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_021842',
-         'until' => 1402671600,
-         'text' => 'Damerowstr. (Pankow): Baustelle, zwischen Mendelstr. und Breite Str. stadteinwärts gesperrt, ab 10.05.2014 13 Uhr bis 13.06.2014 17 Uhr',
-         'from' => 1399586400,
-         'id' => 2568,
-         'data' => 'userdel	q4::inwork; 11357,18598 11168,18542 11001,18528
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1425164400,
          'text' => 'Potsdamer Str. in Teltow: Baustelle, Einbahnstraße offen in Richtung Osten, voraussichtlich bis März 2015',
@@ -3598,17 +3562,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140520.1040.397353.html',
-         'until' => 1402696799,
-         'text' => 'Karl-Marx-Str.: Bauarbeiten in Höhe Werbellinstr., Fahrbahn gesperrt, vom 10. Juni 2014 bis zum 13. Juni 2014 ',
-         'from' => 1402264800,
-         'id' => 2571,
-         'data' => '#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140527.0955.397503.html
-userdel	q4::inwork 12794,8103 12753,8187 12714,8249
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_021961',
          'until' => 1404136800,
@@ -3671,6 +3625,45 @@ userdel auto	3 7026,12054 7031,12024 7059,11978
 userdel auto	3 6787,12099 6828,12031 6809,11979
 userdel auto	3 7059,11978 7031,12024 7026,12054
 userdel auto	3 6809,11979 6828,12031 6787,12099
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_022145',
+         'until' => 1402889400,
+         'text' => 'Scharounstr./Herbert-von-Karajan-Str. zwischen Potsdamer Str. und Tiergartenstr.: Veranstaltung, Straße gesperrt, vom 14.06.2014 bis 16.06.2014 05:30 Uhr ',
+         'from' => 1402524000,
+         'id' => 2578,
+         'data' => 'userdel	2::temp 8005,11627 7965,11467 7970,11441 8083,11381
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.flaeming-skate.de/de/aktuelles/2014/05/bauarbeiten-auf-der-flaeming-skate-2014.php',
+         'until' => 1409522399,
+         'text' => 'Vollsperrung zwischen Kolzenburg und Neuhof bis August 2014 wegen Reparaturarbeiten',
+         'from' => 1402264800,
+         'id' => 2579,
+         'data' => 'userdel	2::inwork -5280,-38803 -5707,-39339 -6365,-40518 -6565,-41080
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1414796400,
+         'text' => 'Charlottenburger Ufer: zwischen Winterstein- und Lohmeyerstraße Bauarbeiten, Sperrung der Fahrbahn, bis 31.10.2014',
+         'from' => 1402738058,
+         'id' => 2580,
+         'data' => 'userdel	q4::inwork 3741,12607 3597,12681 3454,12717
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/721-E/13/083',
+         'until' => 1414537200,
+         'text' => 'B198: Neubau Brücke über die Sernitz, OD Greiffenberg, Durchfahrt gesperrt, 14.10.2013 bis 28.10.2014\'',
+         'from' => 1402738904,
+         'id' => 2581,
+         'data' => 'userdel	2::inwork 46564,76483 46704,75833
 ',
          'type' => 'gesperrt'
        }

@@ -169,7 +169,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="3"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2014-04-17
+#: last_checked: 2014-06-13
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -355,7 +355,9 @@ Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?
 # REMOVED (oberhalb) --- #: last_checked: 2014-05-06 --- #: check_frequency: 14d --- Paul-und-Paula-Ufer: wird der Radweg am Ufer oder oberhalb entlang geführt?	?::inwork 15200,10600 15145,10636 15101,10640
 # REMOVED (Änderungen aufgenommen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5225.html --- #: XXX für Fußgänger wird nur die südliche Fahrbahnseite zur Verfügung stehen? --- #: next_check: 2014-05-10 --- Sonnenallee: Bauarbeiten, bleiben die Radwege erhalten? Außerdem Bau einer provisorischen Ampel an der Ziegrastr.	?::projected 14519,7301 14174,7505
 # 
+#: source_id: IM_022146
 #: last_checked: 2014-05-24
+#: next_check: 2014-06-30
 Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Ampel?	?::inwork 5299,14049
 # 
 # REMOVED (keine Besonderheiten) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5213.html --- #: XXX bis Ende 2014 --- Heidestr.: wie ist die Radverkehrsführung an der Kreuzung Sellerstr.?	? 7589,14359 7597,14417
@@ -388,7 +390,7 @@ Kynaststr./Hauptstr.: eine provisorische Ampel wird wieder aufgestellt	? 14906,1
 Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected 20667,15721 20733,15657
 # 
 #: source_id: IM_022020	
-#: last_checked: 2014-06-07
+#: last_checked: 2014-06-13
 #: next_check: 2014-07-01
 Konrad-Wolf-Str.: in Richtung Südwesten wird eine Radweganlage gebaut	?::inwork; 15272,14691 15174,14638 15066,14579
 # 
@@ -488,27 +490,23 @@ Steg über den Packereigraben: wird er hier entstehen? Wie wird der Steg heißen?	
 #: by: http://www.potsdam.de/cms/dokumente/13300755_1771576/fcb5126b/Amtsblatt_09_13.pdf
 #: XXX Sackgasse, Privatstraße
 #: XXX fehlt in Potsdam.coords.data, PLZ=14469
-Am Palais Lichtenau: wo genau liegt die Straße? Qualität?	? -12436,-364 -12436,-447
+Am Palais Lichtenau: wo genau liegt die Straße? Qualität?	? -12514,-340 -12488,-451 -12445,-444
 # 
 #: note: Potsdam, nördliche Gartenstadt vvv
 #: by: http://www.potsdam.de/cms/dokumente/10036505_480745/c5f90e8e/B-Plan_66B_Planzeichnung-rechtskraeftig.pdf#Planzeichnung
 #: by: http://www.potsdam.de/cms/dokumente/13300755_1771576/fcb5126b/Amtsblatt_09_13.pdf
 # die früher geplante Straßennamen wurden im Amtsblatt 9/2013 wieder zurückgezogen ("ersatzlos gestrichen")
-#: XXX neu geplante Namen, fehlen in Potsdam.coords.data:
-#   Opolestr. (Planstr. 1+2)
-#   Luzernstr. (Planstr. 3) PLZ=14469 (in DPAG-Mitteilungsblatt 12/2013)
-#: XXX auch: Verkleinerung des Buga-Geländes
+# REMOVED (") --- früher geplant Hans-Kölle-Weg: Straßenname? Qualität?	? -13632,1388 -13654,1402 -13707,1434 -13766,1469
+# REMOVED (") --- früher geplant Rudolf-Kierski-Weg: Straßenname? Qualität?	? -13612,1425 -13633,1438 -13686,1470 -13745,1504
+# REMOVED (") --- früher geplant Georg-Potente-Weg: Straßenname? Qualität?	? -13586,1540 -13701,1579
+# REMOVED (") --- früher geplant Ferdinand-Jühlke-Weg: Straßenname? Qualität?	? -13590,1649 -13671,1665
 #: XXX auch prüfen: Verkehrsberuhigung
-früher geplant Hans-Kölle-Weg: Straßenname? Qualität?	? -13632,1388 -13766,1469
-früher geplant Rudolf-Kierski-Weg: Straßenname? Qualität?	? -13612,1425 -13745,1504
-früher geplant Georg-Potente-Weg: Straßenname? Qualität?	? -13586,1540 -13701,1579
-früher geplant Ferdinand-Jühlke-Weg: Straßenname? Qualität?	? -13590,1649 -13671,1665
-Fritz-Encke-Str.: wird die wassergebundene Decke durch Asphalt ersetzt werden?	? -13766,1402 -13655,1339
-Erich-Mendelsohn-Allee: Verlängerung?	? -13695,1276 -13655,1339 -13632,1388 -13612,1425 -13593,1469 -13586,1540 -13586,1594 -13590,1649 -13600,1777 -13645,1807 -13682,1830 -13739,1855 -13784,1874 -13867,1901
-Gustav-Meyer-Str.: Verlängerung?	? -13593,1469 -13731,1525 -13779,1544
+Fritz-Encke-Str.: wird die wassergebundene Decke durch Asphalt ersetzt werden?	? -13766,1402 -13738,1387 -13683,1356 -13655,1339
+#: XXX zweifelhaft, ob diese Verlängerung passiert; evtl. nur teilweise
+Erich-Mendelsohn-Allee: Verlängerung?	? -13695,1276 -13655,1339 -13632,1388 -13612,1425 -13593,1469 -13587,1520 -13586,1540 -13586,1594 -13590,1649 -13600,1777 -13645,1807 -13682,1830 -13739,1855 -13784,1874 -13867,1901
 Nietnerstr.: Verlängerung?	? -13586,1594 -13682,1614 -13748,1636
 Nietnerstr.: wird hier befestigt werden, evtl. Verbundsteinpflaster gelegt werden?	? -13843,1668 -13855,1673 -13962,1711
-Hermann-Mattern-Promenade: Verlängerung?	? -13795,1420 -13766,1469 -13745,1504 -13731,1525 -13701,1579 -13682,1614 -13671,1665 -13658,1730 -13645,1807
+#: osm_watch: way id="268094694" version="1" brb
 Orville-Wright-Str.: Verlängerung?	? -13843,1668 -13811,1785 -13784,1874
 Theodor-Echtermeyer-Str.: Verlängerung?	? -13760,1765 -13739,1855
 Fintelmannstr.: Verlängerung?	? -13714,1747 -13682,1830
@@ -818,13 +816,6 @@ Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431
 #: check_frequency: 180d
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
 # 
-#: last_checked: 2013-05-10 vvv
-#: next_check: 2013-09-10 vvv
-Hermann-Kasack-Str. (Potsdam): Verlängerung in Bau	?::inwork -13432,782 -13236,751
-Reinhold-Schneider-Str. (Potsdam): Verlängerung in Bau	?::inwork -13433,693 -13254,658
-#: next_check ^^^
-#: last_checked ^^^
-# 
 #: next_check_id: BER-20XX vvv
 #: next_check: 2015-01-01 vvv
 #: note: Straßen zum und am BER vvv
@@ -1032,7 +1023,7 @@ Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4
 # REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html --- #: XXX Baumaßnahme 11.46 (Realisierung in 2011) --- #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012) --- #: osm_watch: way id="22044872" version="10" --- #: osm_watch: way id="22045147" version="18" --- #: last_checked: 2014-02-14 --- Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 15866,16393 15843,16399 15771,16417 15432,16500
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
-#: last_checked: 2014-06-07
+#: last_checked: 2014-06-13
 #: check_frequency: 90d
 Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
 # 
@@ -1745,7 +1736,8 @@ Carpinusweg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich d
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10115978_1771576/bbb8d1f2/ENDFASSUNGAbl.%20PdmStadt%2004_13.pdf
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data
-Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -13094,-1158 -13162,-1263
+#: osm_watch: way id="226916964" version="1" brb
+Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12998,-1257 -13095,-1288
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013
@@ -1887,11 +1879,12 @@ Altstadtblick (Potsdam): neue Straße in Potsdam, Qualität? Genauer Verlauf? (Pla
 #: by: http://www.fatkoehl.com/index.php?article_id=31
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2014
 #: XXX es gab noch zwei weitere Alternativen: Kate-Kühl-Straße und Alisa-Fuss-Straße
-#: XXX fehlt in Berlin.coords.data
+#: XXX fehlt in Berlin.coords.data (laut DTAG-Liste PLZ=10179)
 #: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein
+#: XXX auch in der DTAG-Straßenliste vom 2014-06-04
 #: last_checked: 2014-06-04 (zur Zeit nur eine Baustraße)
 #: check_frequency: 60d
-Wilhelmine-Gemberg-Str.: genaue Lage, Qualität?	?::inwork 11707,11526 11769,11683
+Wilhelmine-Gemberg-Weg: genaue Lage, Qualität?	?::inwork 11707,11526 11769,11683
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 #: XXX Straßenbenennungen in Potsdam-Fahrland
@@ -1902,11 +1895,6 @@ Wilhelmine-Gemberg-Str.: genaue Lage, Qualität?	?::inwork 11707,11526 11769,1168
 #: XXX: Planstraße 6: Zum Storchennest
 #: XXX: Planstraße 7: Schmidtweg
 neue Planstraßen in Fahrland: Lage, Qualität?	? -16174,7006 -15929,6894
-# 
-#: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
-#: XXX fehlt in Potsdam.coords.data, 14469 Potsdam
-#: XXX Planstraßen G1, G2 und G3
-Konrad-Zuse-Ring: Lage, Qualität?	? -12953,2658 -13016,2326
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140131.0900.393992.html
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegung9-57ve.html
@@ -2061,7 +2049,8 @@ Marquardt, Hauptstr.: Laut mobil-potsdam.de: Asphaltiert	? -18811,4782
 # REMOVED (keine Einbahnstraßenregelung gesehen) --- Schornsteinfegergasse (Potsdam): Ist die Straße eine Einbahnstraße, und wenn ja, gilt das auch für Radfahrer?	? -10535,-1809 -10440,-1836 -10425,-1773
 Hermann-Maaß-Str.: Qualität?	? -9421,-1103 -9390,-1145 -9353,-1194 -9204,-1194 -9176,-1188
 Karl-Foerster-Str. (Potsdam): Qualität?	? -11438,-1610 -11358,-1491
-Bruno-Baum-Str. (Potsdam): Qualität?	? -11743,-1546 -11643,-1389 -11611,-1328 -11566,-1263
+#: XXX_osm: laut osm "Humboldtring"
+Bruno-Baum-Str. (Potsdam): Qualität? Heißt die Straße tatsächlich Bruno-Baum-Str.?	? -11743,-1546 -11643,-1389 -11611,-1328 -11566,-1263
 Uferweg - Bruno-Baum-Str.: Qualität?	? -11753,-1334 -11611,-1328
 Lotte-Pulewka-Str. - Uferweg: Qualität?	? -11715,-1564 -11722,-1573 -11885,-1596 -11952,-1596
 Neuendorfer Anger: Qualität?	? -10772,-2153 -10757,-2214 -10834,-2296 -10847,-2325 -10905,-2399 -10917,-2439
@@ -2991,12 +2980,12 @@ Baumgarten - Grünow: Qualität?	? 45393,105220 45647,104851 45619,104429 45554,10
 Julius-Rütgers-Str. (Erkner): Qualität?	? 34293,3076 34391,3099 34416,3127 34671,3421 34553,3539
 #: XXX wahrscheinlich asphaltiert, zumindest an der B2
 #: XXX fehlt in Potsdam.coords.data
-Am Kirchberg (Neu Fahrland): Qualität?	? -13783,3919 -13925,3928 -14055,3957 -14507,4057 -14632,4093 -14725,4141 -14777,4143
+Am Kirchberg (Neu Fahrland): Qualität?	? -13783,3919 -13925,3928 -14242,3997 -14507,4057 -14632,4093 -14725,4141 -14777,4143
 #: XXX fehlt in potsdam.coords.data, PLZ=14476
 #: XXX oldname: Drei Mohren
 Zu den drei Mohren (Neu Fahrland): Qualität?	? -14777,4143 -14811,4200 -14726,4634
 #: XXX fehlt in Potsdam.coords.data, PLZ=14476
-An der Birnenplantage (Neu Fahrland): Qualität? Genaue Lage?	? -14124,3528 -14055,3957
+An der Birnenplantage (Neu Fahrland): Qualität? Genaue Lage?	? -14193,3575 -14322,3618 -14242,3997
 Wendensteig (Groß Glienicke): Qualität?	? -10157,6397 -10154,6284 -10148,6021 -10140,5794 -10141,5704 -10161,5459 -10174,5357 -10102,5131 -10080,5069
 #: XXX laut osm "paved"
 Christophorusweg (Groß Glienicke): Qualität?	? -9962,6295 -9957,6028 -9945,5797
@@ -3526,8 +3515,9 @@ Georg-Sigismund-von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8632,86
 #: by: http://berlinerbaustellen.blogspot.de/2014/01/0249-gastbaustelle-potsdam-lange-brucke.html (Unterführung)
 #: last_checked: 2014-05-11 vvv
 #: check_frequency: 120d vvv
-Unterführung Lange Brücke: hier scheint etwas zu entstehen	?::inwork -12363,-1742 -12377,-1743 -12663,-2039 -12759,-2066
-Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg bereits (oder Teile davon)? Qualität?	?::inwork -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
+Unterführung Lange Brücke: neuer Weg entsteht hier, Qualität?	?::inwork -12363,-1742 -12377,-1743 -12663,-2039 -12759,-2066
+#: osm_watch: way id="287695106" version="1" brb
+Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
 #: last_checked ^^^
 #: check_frequency ^^^
 #: by ^^^
@@ -3763,3 +3753,40 @@ Patrizierweg - Steinstr.: Durchfahrt für Radfahrer möglich? Qualität?	? -7178,-3
 #: by: http://www.potsdam.de/sites/default/files/documents/endfassungab_nr._6l_pdmstadt2014.pdf
 Am Urnenfeld (Potsdam): Qualität?	? -18151,-1323 -18520,-1192 -18698,-1030 -18725,-827 -18682,-719
 ZR1: Qualität?	? 27750,19600 27953,19508 28467,19470 30460,19245 31169,18956 31415,19073
+Mies-van-der-Rohe-Str. (Potsdam): Qualität? Existiert die Straße schon? Existiert eine Verbindung zum Fußweg?	? -14216,372 -14086,337
+Peter-Behrens-Str. (Potsdam): Qualität? Existiert die Straße schon? Existiert eine Verbindung zum Fußweg?	? -14176,482 -14032,434
+#: XXX laut osm surface=asphalt
+#: XXX PLZ fehlt in Potsdam.coords.data
+Konrad-Wachsmann-Str. (Potsdam): Qualität? Existiert die Straße schon?	? -14114,580 -14254,659
+# 
+#: last_checked: 2013-05-10 vvv
+#: next_check: 2013-09-10 vvv
+#: XXX laut osm schon fertig vvv
+#: XXX PLZ fehlt in Potsdam.coords.data vvv
+Hermann-Kasack-Str. (Potsdam): Ist die Straße bereits fertig gestellt? Qualität?	? -13432,782 -13220,728
+Reinhold-Schneider-Str. (Potsdam): Ist die Straße bereits fertig gestellt? Qualität?	? -13433,693 -13243,645
+#: XXX ^^^
+#: XXX ^^^
+#: next_check ^^^
+#: last_checked ^^^
+# 
+#: XXX PLZ fehlt in Potsdam.coords.data
+Gertrud-Feiertag-Str. (Potsdam): Existiert hier schon eine Straße? Qualität?	? -13259,586 -13243,645 -13220,728
+# 
+#: XXX neu geplante Namen, fehlen in Potsdam.coords.data: vvv
+#: XXX (Planstr. 1+2) PLZ=14469 (in DPAG-Mitteilungsblatt 6/2014)
+Opolestr. (Potsdam): Qualität?	? -13683,1356 -13654,1402 -13633,1438 -13614,1467 -13610,1521
+#: XXX (Planstr. 3) PLZ=14469 (in DPAG-Mitteilungsblatt 12/2013)
+Luzernstr. (Potsdam): Qualität?	? -13738,1387 -13707,1434 -13686,1470 -13653,1522
+#: XXX ^^^
+# 
+#: XXX laut osm schon teilweise verlängert vvv
+Gustav-Meyer-Str.: wurde die Straße schon teilweise Richtung Osten verlängert? Qualität?	? -13587,1520 -13610,1521 -13653,1522 -13731,1525 -13779,1544
+Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verlängert? Qualität?	? -13795,1420 -13766,1469 -13745,1504 -13731,1525 -13701,1579 -13682,1614 -13671,1665 -13658,1730 -13645,1807
+#: XXX ^^^
+# 
+#: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
+#: XXX fehlt in Potsdam.coords.data, 14469 Potsdam
+#: XXX Planstraßen G1, G2 und G3
+#: XXX genaue Lage?
+Konrad-Zuse-Ring (Potsdam): Ist die Straße schon fertig gestellt? Qualität?	? -13330,2796 -13168,2836 -13105,2614 -13266,2571
