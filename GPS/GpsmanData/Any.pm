@@ -134,12 +134,7 @@ sub load_gpx {
 	$first_coordinate_event = sub {
 	    my($lon,$lat,$epoch,$addcode) = @_;
 	    require Time::Zone::By4D;
-	    require DateTime;
-	    require DateTime::TimeZone;
-	    my $timezone_name = Time::Zone::By4D::get_timezone($lon,$lat,$epoch);
-	    my $dt = DateTime->from_epoch(epoch => $epoch);
-	    my $timezone = DateTime::TimeZone->new(name => $timezone_name);
-	    $timeoffset = $timezone->offset_for_datetime($dt) / 3600;
+	    $timeoffset = Time::Zone::By4D::get_timeoffset($lon,$lat,$epoch) / 3600;
 	    $addcode->() if $addcode;
 	    $delete_first_coordinate_event->();
 	};
