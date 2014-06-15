@@ -13,11 +13,18 @@ use Test::More 'no_plan';
 
 use Time::Zone::By4D;
 
-is Time::Zone::By4D::get_timezone(13.5,52.5,time), 'Europe/Berlin', 'in Berlin';
-is Time::Zone::By4D::get_timezone(-3.702393,40.417678,time), 'Europe/Berlin', 'in Madrid';
-is Time::Zone::By4D::get_timezone(21.011353,52.227799,time), 'Europe/Berlin', 'in Warszawa';
-is Time::Zone::By4D::get_timezone(4.839478,45.769439,time), 'Europe/Berlin', 'in Lyon';
-is Time::Zone::By4D::get_timezone(16.438637,43.507974,time), 'Europe/Berlin', 'in Split';
+for my $def (
+	     [13.5,52.5,'Berlin'],
+	     [-3.702393,40.417678,'Madrid'],
+	     [21.011353,52.227799,'Warszawa'],
+	     [4.839478,45.769439,'Lyon'],
+	     [16.438637,43.507974,'Split'],
+	    ) {
+    my($lon,$lat,$place) = @$def;
+    is Time::Zone::By4D::get_timezone($lon,$lat,time), 'Europe/Berlin', "in $place";
+    is Time::Zone::By4D::get_timeoffset($lon,$lat,1402839390), 7200, "time offset in $place (with DST)";
+    is Time::Zone::By4D::get_timeoffset($lon,$lat,1387287410), 3600, "time offset in $place (without DST)";
+}
 
 {
     eval { Time::Zone::By4D::get_timezone(0,51.5,time) };

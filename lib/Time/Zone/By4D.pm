@@ -43,6 +43,17 @@ sub get_timezone {
     }
 }
 
+# Return time offset in seconds
+sub get_timeoffset {
+    my($longitude, $latitude, $epoch) = @_;
+    require DateTime;
+    require DateTime::TimeZone;
+    my $timezone_name = get_timezone($longitude, $latitude, $epoch);
+    my $dt = DateTime->from_epoch(epoch => $epoch);
+    my $timezone = DateTime::TimeZone->new(name => $timezone_name);
+    $timezone->offset_for_datetime($dt);
+}
+
 1;
 
 __END__
