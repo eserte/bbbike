@@ -13,8 +13,13 @@
 #
 
 use strict;
+use FindBin;
+use lib "$FindBin::RealBin/../lib";
+
 use JSON::XS qw(decode_json);
 use POSIX qw(strftime setlocale LC_TIME);
+
+use Time::Zone::By4D ();
 
 my $file = shift
     or die "File?";
@@ -31,14 +36,25 @@ my $track_segs = $data->{trackSegs}
     or die "No trackSegs found in file '$file'";
 my $ua = $data->{ua};
 
+# make sure months are English in waypoint names
 setlocale(LC_TIME, 'C');
 
-my $tzoffset = strftime('%z', localtime);
-if (my($sgn,$h,$m) = $tzoffset =~ m{^([+-])(\d{2})(\d{2})$}) {
-    $tzoffset = $h + $m/60;
-    $tzoffset *= -1 if $sgn eq '-';
-} else {
-    warn "Cannot parse tzoffset <$tzoffset>, undefined results follow...";
+my $tzoffset;
+{
+    my $first_wpt = $track_segs->[0]->[0];
+    if ($first_wpt) {
+	$tzoffset = Time::Zone::By4D::get_timeoffset($first_wpt->{lng}, $first_wpt->{lat}, $first_wpt->{time}/1000) / 3600;
+    }
+}
+if (!defined $tzoffset) {
+    # fallback with old inaccurate code, may happen if track is empty (which makes an useless track anyway...)
+    $tzoffset = strftime('%z', localtime);
+    if (my($sgn,$h,$m) = $tzoffset =~ m{^([+-])(\d{2})(\d{2})$}) {
+	$tzoffset = $h + $m/60;
+	$tzoffset *= -1 if $sgn eq '-';
+    } else {
+	warn "Cannot parse tzoffset <$tzoffset>, undefined results follow...";
+    }
 }
 
 print <<EOF;
