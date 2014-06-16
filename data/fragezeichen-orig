@@ -183,7 +183,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: XXX Baumaßnahme 8.20 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-06-06 (Richtung Süden teilweise realisiert, Richtung Norden ein kleines Stück auch)
+#: last_checked: 2014-06-15 (Richtung Süden teilweise realisiert, Richtung Norden ein kleines Stück auch)
 Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
@@ -197,7 +197,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
-#: last_checked: 2013-10-31
+#: last_checked: 2014-06-15
 #: check_frequency: 90d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13600,5240 13594,5240 13323,5222 13248,5221 13112,5253 13046,5267
 # 
@@ -454,7 +454,7 @@ Fußgängersteg über den Kietzer Graben: wann wird er errichtet, wird er auch für 
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20131004.1210.390027.html --- #: last_checked: 2013-11-01 --- #: next_check: 2014-01-01 --- Spreeuferweg: wie sieht dieser Abschnitt nach der Sanierung aus? Wird es eine Rampe neben der Treppe geben?	?::inwork 5128,13012 5243,12903
 # 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20130919.1410.389491.html
-#: next_check: 2014-08-31
+#: next_check: 2015-03-31
 Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663 16273,-824
 # 
 # REMOVED (nein) --- #: last_checked: 2013-11-22 --- Görlitzer Park: Asphaltierungsarbeiten?	?::inwork 12502,10244 12384,10368
@@ -515,12 +515,7 @@ Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13658,1730
 #: note ^^^
 # 
 # REMOVED (realisiert; Park existiert eigentlich noch nicht, nur ein Spielplatz) --- #: by: http://www.sanierung-osw.de/index.php?id=419 (Blockdurchquerung) --- #: XXX asphaltiert, wahrscheinlich für Radfahrer frei --- #: XXX evtl. auch Park einzeichnen, Name? --- #: last_checked: 2013-08-19 --- (Siemensstr./Deulstr. - Wilhelminenhofstr.): wann wird hier eröffnet? Nachts beleuchtet?	?::inwork 17842,6639 17852,6589 17826,6495
-# 
-#: osm_watch: way id="55948936" version="3"
-#: XXX laut osm auch "Seeadlerweg", stimmt das??? Nicht mehr construction=yes.
-#: XXX Sackgasse
-#: last_checked: 2013-07-06
-Neues Wohnviertel in Rudow: wie heißt die Straße parallel zum Seeadlerweg? Wie ist die Qualität (wahrscheinlich Verbundsteinpflaster?)?	?::inwork 16477,-160 16491,-160 16642,-543
+# REMOVED (weiterer Strang des Seeadlerwegs) --- #: osm_watch: way id="55948936" version="3" --- #: XXX laut osm auch "Seeadlerweg", stimmt das??? Nicht mehr construction=yes. --- #: XXX Sackgasse --- #: last_checked: 2013-07-06 --- Neues Wohnviertel in Rudow: wie heißt die Straße parallel zum Seeadlerweg? Wie ist die Qualität (wahrscheinlich Verbundsteinpflaster?)?	?::inwork 16477,-160 16486,-162 16657,-594 16680,-595 16709,-635
 # 
 #: XXX neue Straßen/Wege im Zuge des Bebauungsplans XV-29b, Ortsteil Altglienicke vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/beteiligungxv-29bve.html vvv
@@ -856,10 +851,10 @@ Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahns
 #: check_frequency: 90d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
-#: source_id: IM_020353	
-#: last_checked: 2013-10-21
-#: next_check: 2013-11-13
-Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?::inwork; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2514
+# REMOVED --- : source_id: IM_020353	
+#: last_checked: 2014-06-15
+#: check_frequency: 120d
+Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2514
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Planung, Stand 2012-04)
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20130429.1340.384123.html (Beginn: 2013-05-06)
 #: last_checked: 2013-08-26
@@ -1011,7 +1006,7 @@ Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18773,3873 187
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
-#: last_checked: 2014-06-06
+#: last_checked: 2014-06-15
 #: check_frequency: 120d
 Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337 13519,7345
 # 
@@ -1210,7 +1205,7 @@ Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geä
 # REMOVED (siehe Sperrung der Friedrichsbrücke) --- #: XXX vmz-Eintrag relevant? NEW	Burgstr. (Mitte): Straße vollständig gesperrt (bis 19.10.2013, 24:00 Uhr) in beiden Richtungen zwischen Neue Promenade und Spandauer Str., 10.10.2013 17:29 Uhr bis 19.10.2013 23:59 Uhr	IM_020483	--- #: priority: #A --- Burgstr. und Anna-Louisa-Karsch-Str.: volständig gesperrt?	?::inwork 10132,12941 10166,12777 10264,12826
 # REMOVED (Richtung Norden können Radfahrer explizit passieren; Richtung Süden entweder einen legalen Schlenker über die Scharnweberstr. machen (die ebenfalls gesperrt ist), oder abenteuerlicherweise die Fahrbahn benutzen) --- #: XXX vmz-Eintrag relevant? NEW	Gürtelstr. (Friedrichhain): Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Frankfurter Allee zwischen Oderstr. und Frankfurter Allee, 01.10.2013 09:22 Uhr bis 14.10.2013 16:00 Uhr	IM_020415	 --- Gürtelstr.: Fahrtrichtung gesperrt?	?::inwork; 15106,11598 15202,11789 15248,11880 15294,11964 15361,12071
 # REMOVED (aufgenommmen) --- #: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388 --- Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
-# REMOVED (lohnt sich wohl nicht mehr) --- #: XXX vmz-Eintrag relevant? CHANGED	Waßmannsdorfer Chaussee (Neukölln): Baustelle, Straße vollständig gesperrt (bis Mitte 12/13) in beiden Richtungen in Höhe Rhodeländerweg, 28.05.2013 13:06 Uhr bis 20.12.2013 15:00 Uhr	IM_019886 --- #: XXX ask rj? --- Waßmannsdorfer Chaussee: Bauarbeiten?	?::inwork 16400,-409 16373,-496 16273,-824
+# REMOVED (lohnt sich wohl nicht mehr) --- #: XXX vmz-Eintrag relevant? CHANGED	Waßmannsdorfer Chaussee (Neukölln): Baustelle, Straße vollständig gesperrt (bis Mitte 12/13) in beiden Richtungen in Höhe Rhodeländerweg, 28.05.2013 13:06 Uhr bis 20.12.2013 15:00 Uhr	IM_019886 --- #: XXX ask rj? --- Waßmannsdorfer Chaussee: Bauarbeiten?	?::inwork 16400,-409 16373,-496 16341,-614 16273,-824
 # REMOVED (aufgenommen) --- #: XXX relevant? --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131206.1025.392499.html --- #: next_check: 2013-12-09 --- Unter den Linden: Asphaltierungsarbeiten vor dem Zeughaus, Richtung Brandenburger Tor gesperrt, 09. Dezember 2013 bis 10. Dezember 2013	?::inwork 9984,12426 9934,12420 9852,12409
 # 
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
@@ -1233,9 +1228,6 @@ Am Ried - Marthastr.: frisch saniert, lohnt sich die Aufnahme des Weges?	? 4577,
 #: XXX_indoor: Indoor prüfen
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 # 
-#: XXX ggfs. auch Grünfläche in flaechen-orig aufnehmen
-Wutzkyallee - Rudower Fließ: Verbindung durch Grünanlage aufnehmen. Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474 15686,1501 15776,1456 15795,1428 15878,1378 15920,1392 16038,1303 16086,1262 16329,1128 16419,1048
-Grünanlage - Fleischerstr.: Genaue Wegführung? Qualität? Nachts beleuchtet?	? 15920,1392 15987,1430
 #: XXX_indoor: Verbindung aufnehmen?
 #: XXX_prog: wäre gut, wenn die Verlustzeit der versetzt arbeitenden Fußgängerampel hier einfließen könnte
 #: XXX von der Gubener Str. aus muss man ein kleines bisschen nach links fahren
@@ -1832,7 +1824,11 @@ Brausensteinweg: unbefestigte Straße, Q2-	? 9394,21140 9310,21213
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013 (Berichtigung der Lage -> westlich der Waßmannsdorfer Chaussee)
 #: note: Privatstraße
 #: XXX PLZ=12355, fehlt in Berlin.coords.data
-Schlotterkammsteig: genaue Lage? Qualität?	? 16191,-680 16319,-515
+#: XXX nördlicher Teil schon passierbar, aber die endgültige Fahrbahndecke fehlt; südlicher Abschnitt in Bau
+#: XXX culdesac?
+#: last_checked: 2014-06-15
+#: check_frequency: 120d
+Schlotterkammsteig: Qualität?	? 16223,-682 16251,-586 16276,-507
 # 
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
 # 
@@ -2679,7 +2675,6 @@ Tannenweg (Potsdam): Qualität?	? -9434,164 -9440,193 -9405,204 -9453,425 -9494,4
 Tremsdorf - Mietgendorf: Qualität?	? -7714,-15752 -6969,-16153 -6922,-16200 -6915,-16296 -6578,-16497 -5593,-16970
 # REMOVED (aufgeklärt) --- Großziethen: wie weit in Richtung Süden gehen die Radwege?	? 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 # REMOVED (alles aufgeklärt) --- #: XXX etwas widersprüchlich: Snoopsoul schreibt "schlechtes Kopfsteinpflaster", die ADFC-Karte vergibt für den nördlichen Abschnitt "gut befahrbar", außerdem werden Teilstücke vom Bus befahren --- #: note: Harry Marschke meint: "Guter Zustand, weitgehend neu asphaltiert. Tempo-30-Zone, teilweise keine ausgebauten Bürgersteige (Einfamilienhaus-Bebauung mit Siedlungscharakter). Lediglich der zur B1 gelegene Teil ist in etwas schlechterem Zustand (teilweise DDR-Beton, "Schleichverkehr"). " --- Pilgramer Str.: Asphalt/Beton. Welcher Abschnitt ist betoniert, welcher asphaltiert, welcher gepflastert?	? 25048,10317 24984,10204
-Am Rudower Fließ: Holzbohlen?	? 16268,604 16235,632 16230,655
 Turmschanzenstr. (Magdeburg): Qualität?	? -107171,-32374 -107351,-32648 -107527,-32781 -107588,-32906 -107695,-33032 -107729,-33168
 Straßen in Burg: Qualität? Straßennamen?	? -93908,-17453 -94037,-17167 -94087,-16909 -94238,-16923 -94539,-16859 -94732,-16773
 B1 - Ihleburg: Qualität? Straßennamen?	? -93421,-16587 -93643,-16580 -93694,-16272
@@ -2869,7 +2864,6 @@ Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes
 # REMOVED (siehe Kommentar bei Straße 4) --- Platz A (Heinersdorf)	? 12956,19218 12945,19239 12799,19242
 # REMOVED (Antwort: ja) --- Wermuthweg: Kann die Johannisthaler Chausse in Höhe Wermuthweg überquert werden?	? 13835,2354 13709,2551
 # REMOVED (nur ein sehr enger Weg vorhanden --- lohnt nicht) --- Waldpromenade: Qualität? Nachts beleuchtet? Für Autos offen?	? 23481,8119 23385,8217 22865,8588
-Existiert für Radfahrer eine Verbindung zwischen Straße 618 und Weg am Rudower Fließ? Qualität?	? 16297,592 16268,604
 # REMOVED (Straßenname existiert nicht; Weg ist für Radfahrer verboten) --- Saturnring: Qualität? Für Radfahrer befahrbar?	? 18827,-537 18906,-316
 # REMOVED (in der Realität kein Straßenname) --- #: XXX_osm bei osm ohne Namen --- Rosenweg (Bohnsdorf): Qualität?	? 20362,-511 20567,-313
 # REMOVED (existiert wohl nicht?) --- Straße B: Genaue Lage der Straße? Qualität?	? 1233,15889 1207,15868
@@ -3308,8 +3302,6 @@ Händelplatz (Eichwalde): Qualität?	? 25368,-3091 25347,-3077 25295,-3103 25254,-
 Vogelsang - Hammelspring: gibt es hier mittlerweile einen Radweg?	? 7983,69794 7906,70007 8656,71489 10148,73146 11005,74052
 # 
 # REMOVED (survey done) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2011 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/34re.pdf/file?y=2012 --- #: XXX laut osm nicht mehr "under construction" --- #: last_checked: 2013-04-20 (erste Häuser stehen, Straßen noch nicht) --- #: next_check: 2013-10-20 --- #: osm_watch: way id="203211083" version="5" --- Ückeritzer Ring: Ist die Straße schon fertig gestellt? Qualität der Straße?	? 17247,19212 17247,19229 17251,19264 17403,19313 17405,19252 17339,19231 17247,19229
-# 
-Groß-Ziethener Chaussee: Gehweg für Radfahrer zwischen Meißner Weg und Ascherslebener Weg in Richtung Westen freigegeben?	?; 15854,666 15757,610
 # REMOVED --- #: XXX laut osm Verbundsteinpflaster --- Schwarzer Weg (Großziethen): Qualität?	? 13215,-570 13022,-647 12804,-735
 # REMOVED (bei osm nicht aufzufinden, aber wahrscheinlich sowieso nur ein Weg in einer KGA) --- Frau-Holle-Weg|Britz|12349|11460,2191
 #: XXX: früher teilweise mäßiger, teilweise schlechter Belag (Q3)
@@ -3371,12 +3363,13 @@ Alter Fischerweg (Gosen): Qualität? Ausschilderung?	? 32778,-1044 33013,-790 331
 # REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576
 # REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13396,3512 13526,3519
 #: XXX Fahrbahn wird saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht? -> nein, nichts passiert
-#: source_id: INKO_119740
-#: last_checked: 2013-10-31
+# REMOVED --- : source_id: INKO_119740
+#: last_checked: 2014-06-15
 #: check_frequency: 120d
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
-#: source_id: IM_020569
-#: last_checked: 2013-10-31
+# REMOVED --- : source_id: IM_020569
+#: last_checked: 2014-06-15
+#: check_frequency: 120d
 Gutschmidtstr.: werden die Radwege asphaltiert oder saniert?	? 13775,3500 13710,3522 13623,3523 13526,3519
 #: XXX ^^^
 #: by: ^^^
@@ -3429,11 +3422,10 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 #: check_frequency: 100d
 Lauenburger Str.: wird die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5829,6397 5823,6413
 # REMOVED (Gewerbegelände, Befahren nicht erlaubt, auf der anderen Seite war das Tor zu) --- Windthorststr.: Qualität der Verlängerung? Ausschilderung?	? 22552,11029 22554,11049 22490,11133 22469,11138
-# REMOVED (eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2012 vvv --- #: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/xiv274aa_pl_ern_oeff.pdf?start&ts=1361439967&file=xiv274aa_pl_ern_oeff.pdf vvv --- #: XXX Privatstraßen vvv --- #: last_checked: 2012-04-14 (noch in Bau) vvv --- #: next_check: 2012-12-15 vvv --- #: XXX laut osm existieren die Straßen schon --- Seeadlerweg	? 16477,-160 16519,-265 16600,-475 16665,-641 --- Fischadlerweg	? 16519,-265 16478,-399 16513,-510 16572,-666 --- Eulenweg	? 16600,-475 16513,-510 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: by: ^^^
+# REMOVED (eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2012 vvv --- #: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/xiv274aa_pl_ern_oeff.pdf?start&ts=1361439967&file=xiv274aa_pl_ern_oeff.pdf vvv --- #: XXX Privatstraßen vvv --- #: last_checked: 2012-04-14 (noch in Bau) vvv --- #: next_check: 2012-12-15 vvv --- #: XXX laut osm existieren die Straßen schon --- Seeadlerweg	? 16477,-160 16519,-265 16600,-475 16648,-596 16665,-641 --- Fischadlerweg	? 16519,-265 16478,-399 16513,-510 16572,-666 --- Eulenweg	? 16600,-475 16513,-510 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: by: ^^^
 # 
-#: last_checked: 2012-04-14
-#: next_check: 2012-09-01
-#: XXX Wo genau befindet sich der Weg?
+#: last_checked: 2014-06-15 (Bauarbeiten, Straßenschild steht schon)
+#: check_frequency: 120d
 #: osm_watch: way id="151742436" version="5"
 #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg
 Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsberuhigt?	? 17610,-330 17651,-393
@@ -3790,3 +3782,5 @@ Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verl
 #: XXX Planstraßen G1, G2 und G3
 #: XXX genaue Lage?
 Konrad-Zuse-Ring (Potsdam): Ist die Straße schon fertig gestellt? Qualität?	? -13330,2796 -13168,2836 -13105,2614 -13266,2571
+# 
+Königsheideweg -> Südostallee: welche Gaststätte ist hier ausgeschildert?	? 15642,5468 15711,5756

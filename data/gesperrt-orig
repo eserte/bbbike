@@ -969,7 +969,7 @@ Bäumerplan	1 8512,7757 8466,7918
 Mierendorffstr.	1 3645,13201 3534,13098
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s:q3 11012,13278 11085,13239
-Zwerghuhnweg	1s 15615,410 15565,379
+Zwerghuhnweg	1s 15612,416 15561,386
 Grammestr.	1 1057,14389 1058,14459
 Halskesteig	1 1058,14459 1157,14459
 Hefnersteig	1 1364,14191 1392,14287 1420,14369
@@ -1450,8 +1450,8 @@ Petersburger Str.: Straßenbahntrasse	3nocross 13330,13468 13381,13354 13393,1332
 #: note: ^^^
 Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16786,2989
 Stubenrauchstr.: Bahntrasse	3nocross 16182,2200 16242,2279 16306,2364
-Stubenrauchstr.: Bahntrasse	3nocross 16306,2364 16382,2464 16460,2567
-Stubenrauchstr.: Bahntrasse	3nocross 16460,2567 16475,2586 16547,2680
+Stubenrauchstr.: Bahntrasse	3nocross 16306,2364 16382,2464 16461,2569
+Stubenrauchstr.: Bahntrasse	3nocross 16461,2569 16475,2586 16547,2680
 #: note: Luftbild:
 Stubenrauchstr.: Bahntrasse	3nocross 16547,2680 16573,2715 16635,2796
 #: note: Luftbild:
@@ -2009,6 +2009,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 15727,1525
+Drängelgitter	BNP:3::trailer=10 15977,1422
 Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5::trailer=15 17879,11378
 Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5::trailer=15 17979,11358
 Drängelgitter	BNP:3::trailer=10 18613,2983

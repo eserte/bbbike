@@ -8304,7 +8304,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005511',
        data  => <<EOF,
-userdel	2::inwork 16373,-496 16400,-409 16431,-311 16477,-160 16536,26
+userdel	2::inwork 16376,-496 16431,-311 16477,-160 16536,26
 EOF
      },
      { from  => 1179698400, # 2007-05-21 00:00
@@ -19401,7 +19401,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017504',
        data  => <<EOF,
-userdel	q4::temp 16049,6121 16122,6084 16510,5917 16868,5938
+userdel	q4::temp 16049,6121 16122,6084 16169,6064 16510,5917 16868,5938
 EOF
      },
      { from  => 1308988800, # 2011-06-25 10:00
@@ -21282,7 +21282,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: RICHARDSTR-2014
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-05-20
+#: last_checked: 2014-06-15
 #: check_frequency: 30d
 # REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
@@ -21703,7 +21703,7 @@ EOF
        text  => 'Waßmannsdorfer Straße: Bauarbeiten, Einbahnstraßenregelung, offen stadtauswärts, bis September 2013',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q2::inwork; 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
+userdel	q2::inwork; 16376,-496 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
 EOF
      },
      { from  => undef,
@@ -22657,12 +22657,12 @@ userdel	q4::inwork; 10670,17458 10647,17501 10572,17573
 EOF
      },
      { from  => 1391682540, # 2014-02-06 11:29
-       until => 1405440000, # 2014-07-15 18:00
+       until => 1402857838, # 1405440000, # 2014-07-15 18:00
        text  => 'Waßmannsdorfer Chaussee: zwischen Lockenhuhnweg und Rhodeländerweg Bauarbeiten, Fahrbahn gesperrt, eventuell Behinderungen für Radfahrer, bis Mitte Juli 2014',
        type  => 'handicap',
        source_id => 'IM_021231',
        data  => <<EOF,
-userdel	q4::inwork 16373,-496 16400,-409 16431,-311 16477,-160 16536,26 16590,216 16642,393
+userdel	q4::inwork 16376,-496 16431,-311 16477,-160 16536,26 16590,216 16642,393
 EOF
      },
      { from  => $isodate2epoch->("2014-04-03 20:00:00"), # 1 Tag Vorlauf

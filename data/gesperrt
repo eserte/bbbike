@@ -700,7 +700,7 @@ Bäumerplan	1 8512,7757 8466,7918
 Mierendorffstr.	1 3645,13201 3534,13098
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s 11012,13278 11085,13239
-Zwerghuhnweg	1s 15615,410 15565,379
+Zwerghuhnweg	1s 15612,416 15561,386
 Grammestr.	1 1057,14389 1058,14459
 Halskesteig	1 1058,14459 1157,14459
 Hefnersteig	1 1364,14191 1392,14287 1420,14369
@@ -1297,11 +1297,11 @@ Krokusstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16739,2736 16677,2856 16635
 Bahntrasse	3nocross::ignrte 16182,2200 16242,2279 16306,2364
 Mohnweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16114,2377 16242,2279 16306,2364
 Stubenrauchstr. -> Mohnweg: Bahntrasse	3::igndisp 16182,2200 16242,2279 16114,2377
-Bahntrasse	3nocross::ignrte 16306,2364 16382,2464 16460,2567
+Bahntrasse	3nocross::ignrte 16306,2364 16382,2464 16461,2569
 Stubenrauchstr. -> Goldrautenweg: Bahntrasse	3::igndisp 16306,2364 16382,2464 16183,2615
-Goldrautenweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16183,2615 16382,2464 16460,2567
-Bahntrasse	3nocross::ignrte 16460,2567 16475,2586 16547,2680
-Wegerichstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16538,2543 16475,2586 16460,2567
+Goldrautenweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16183,2615 16382,2464 16461,2569
+Bahntrasse	3nocross::ignrte 16461,2569 16475,2586 16547,2680
+Wegerichstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16538,2543 16475,2586 16461,2569
 Bahntrasse	3nocross::ignrte 16547,2680 16573,2715 16635,2796
 Stubenrauchstr. -> Fuchsienweg: Bahntrasse	3::igndisp 16547,2680 16573,2715 16376,2862
 Fuchsienweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16376,2862 16573,2715 16635,2796
@@ -2318,6 +2318,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-14:trailer=10 15727,1525
+Drängelgitter	BNP:3:-118:trailer=10 15977,1422
 Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5:-14:trailer=15 17879,11378
 Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5:-15:trailer=15 17979,11358
 Drängelgitter	BNP:3:45:trailer=10 18613,2983
@@ -2595,7 +2597,7 @@ Drängelgitter und Schranke	BNP:5:-154:trailer=15 14285,12190
 Drängelgitter	BNP:5:-58 14314,14841
 Drängelgitter	BNP:5:-210 20586,10935
 Drängelgitter, relativ breite Durchfahrt	BNP:3:66 12363,2367
-Drängelgitter	BNP:5:28 15516,6357
+Drängelgitter	BNP:5:23 15516,6357
 Drängelgitter	BNP:5:17 15496,6314
 Drängelgitter	BNP:5:22 15403,6145
 Drängelgitter	BNP:5:12 15393,6112
