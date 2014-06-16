@@ -2006,16 +2006,7 @@ userdel auto	3 6809,11979 6828,12031 6787,12099
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_022145',
-         'until' => 1402889400,
-         'text' => 'Scharounstr./Herbert-von-Karajan-Str. zwischen Potsdamer Str. und Tiergartenstr.: Veranstaltung, Straße gesperrt, vom 14.06.2014 bis 16.06.2014 05:30 Uhr ',
-         'from' => 1402524000,
-         'id' => 2578,
-         'data' => 'userdel	2::temp 8005,11627 7965,11467 7970,11441 8083,11381
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.flaeming-skate.de/de/aktuelles/2014/05/bauarbeiten-auf-der-flaeming-skate-2014.php',
          'until' => 1409522399,

@@ -1963,11 +1963,11 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings-recurring.bbd: $(PERSISTENTTMPDIR)/bbb
 	$(TEMP_BLOCKINGS_TASKS) yml_to_recurring_bbd $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/sourceid-all.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd handicap_s-orig gesperrt-orig fragezeichen-orig radwege-orig
+$(PERSISTENTTMPDIR)/sourceid-all.yml:		$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd ${SOURCE_TARGETS}
 	$(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/sourceid-current.yml: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd handicap_s-orig gesperrt-orig fragezeichen-orig radwege-orig
+$(PERSISTENTTMPDIR)/sourceid-current.yml:	$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd ${SOURCE_TARGETS}
 	$(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
