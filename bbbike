@@ -5791,7 +5791,7 @@ sub define_item_attribs {
 # diese Farbe nach Weiß umgewandelt.
 # white wird überall dort verwendet, wo eine andere Hintergrundfarbe an der
 # Stelle definiert ist, z.B. beim U-Bahn-Symbol oder in der Legende
-    my @area_cats = qw(P W I Ae ex-Ae Forest Cemetery Orchard Green Sport Industrial Mine);
+    my @area_cats = qw(P W I Ae ex-Ae Forest Cemetery Orchard Green Sport Industrial Mine Square);
     %category_color =
 	('NN' => '#bdffbd',
 	 'N'  => 'grey98',
@@ -5864,6 +5864,7 @@ sub define_item_attribs {
 	 'F'  => 'grey99',	# sonstige Flächen
 	 'SW' => 'red',		# Sehenswürdigkeit
 	 'Shop' => 'red',	# Einkaufszentrum, Markthalle
+	 'Square' => '#eaeaea', # Plätze
 	 'Q'  => 'grey99',	# Fähre
 	 'I'  => 'grey85',	# Inseln (wird später überschrieben)
 	 'Z'  => 'black',	# PLZ-Grenzen
@@ -6288,6 +6289,7 @@ sub define_item_attribs {
 	 'Mine' => [M"Tagebau", undef],
 	 'Ae' => [M"Flughafen", M"Flughäfen"],
 	 'ex-Ae' => [M"ehemaliger Flughafen", M"ehemalige Flughäfen"],
+	 'Square' => [M"Platz", M"Plätze"],
 
 	 'Q0' => [M"sehr guter Belag", undef, undef,
 		  M"sehr guter Belag (Asphalt)"],
