@@ -350,7 +350,8 @@ wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
 
 flaechen: flaechen-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) flaechen-orig > flaechen~
+	${GREPSTRASSEN} -preserveglobaldirectives -v -directive 'ignore=' flaechen-orig |\
+	    $(CONVERT_ORIG) > flaechen~
 	mv $@~ $@
 	-@$(READONLY) $@
 
