@@ -73,6 +73,7 @@ for my $use_indexer (0, 1) {
 		       ampeln-orig
 		       ampelschaltung-orig
 		       exits-orig
+		       flaechen-orig
 		       hoehe-orig
 		       housenumbers-orig
 		       radwege-orig
@@ -96,6 +97,7 @@ for my $use_indexer (0, 1) {
 		       ampeln
 		       ampelschaltung
 		       exits
+		       flaechen
 		       hoehe
 		       housenumbers
 		       radwege_exact
@@ -118,6 +120,7 @@ for my $use_indexer (0, 1) {
 		       ampeln-orig
 		       ampelschaltung-orig
 		       exits-orig
+		       flaechen-orig
 		       hoehe-orig
 		       housenumbers-orig
 		       radwege-orig
@@ -141,6 +144,7 @@ for my $use_indexer (0, 1) {
 		       ampeln
 		       ampelschaltung
 		       exits
+		       flaechen
 		       hoehe
 		       housenumbers
 		       radwege_exact
