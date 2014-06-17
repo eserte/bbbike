@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: opengeodborte2bbd,v 1.4 2008/11/07 23:46:07 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +13,8 @@
 #
 
 # Beispiel:
-# ./opengeodborte2bbd -restrictland BB -restrictcountry DE > /tmp/a.bbd
+# ./opengeodborte2bbd -restrictland BB > /tmp/a.bbd
+# ./opengeodborte2bbd -restrictland BE > /tmp/a.bbd
 
 use strict;
 use warnings;
@@ -23,8 +23,11 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
+use BBBikeUtil qw(bbbike_root);
 use Karte;
 Karte::preload(qw(Polar Standard));
+
+my $bbbike_root = bbbike_root;
 
 use Getopt::Long;
 
@@ -43,22 +46,70 @@ if ($version && $version eq 'old') {
     $infile ||= "/usr/ports/distfiles/opengeodb/opengeodb-0.2.4a-UTF8-text-orte.txt";
     parse_old();
 } else {
-    $infile ||= "/usr/ports/distfiles/opengeodb/D.tab";
+    $infile ||= "$bbbike_root/tmp/DE.tab";
+    my $restrict_ids;
     if ($restrictland) {
-	die "Cannot restrict by 'land' with new data format";
+	$restrict_ids = parse_for_restrict($restrictland);
     }
-    parse_new();
+    if (!-e $infile) {
+	die qq{Please fetch $infile by calling "make fetch-opengeodb" in $bbbike_root/data\n};
+    }
+    parse_new($restrict_ids);
+}
+
+sub parse_for_restrict {
+    my($restrictland) = @_;
+    my $search_root_id;
+    my %children;
+    open my $fh, $infile
+	or die "Can't open $infile: $!";
+    binmode $fh, ":encoding(utf-8)";
+    while(<$fh>) {
+	next if /^#/;
+	chomp;
+	my($locid, $ags, $ascii, $name, $lat, $lon, $amt, $plz, $vorwahl, $einwohner, $flaeche, $kz, $typ, $level, $of, $invalid)
+	    = split /\t/;
+	if ($kz eq $restrictland && $typ eq 'Bundesland') {
+	    $search_root_id = $locid;
+	}
+	if (length $of) {
+	    push @{$children{$of}}, $locid;
+	}
+    }
+
+    if (!defined $search_root_id) {
+	die "Cannot find '$restrictland'\n";
+    }
+
+    my %land_ids;
+    my $add_land_ids; $add_land_ids = sub {
+	my $id = shift;
+	for my $child_id (@{ $children{$id} || [] }) {
+	    $land_ids{$child_id} = 1;
+	    $add_land_ids->($child_id);
+	}
+    };
+    $add_land_ids->($search_root_id);
+
+    \%land_ids;
 }
 
 sub parse_new {
+    my($restrict_ids) = @_;
+
+    my $need_header = 1;
+    binmode STDOUT, ':utf8';
+
     open my $fh, $infile
 	or die "Can't open $infile: $!";
+    binmode $fh, ":encoding(utf-8)";
     while(<$fh>) {
 	next if /^#/;
 	chomp;
 	my($locid, $ags, $ascii, $name, $lat, $lon, $amt, $plz, $vorwahl, $einwohner, $flaeche, $kz, $typ, $level, $of, $invalid)
 	    = split /\t/;
 	next if $lon eq '' || $lat eq '';
+	next if ($restrict_ids && !$restrict_ids->{$locid});
 	my($x, $y) = map { int } $Karte::Polar::obj->map2standard($lon, $lat);
 	my $display_ort = $name;
 	my $cat = 0;
@@ -71,6 +122,10 @@ sub parse_new {
 		    $einwohner >=    500 ? 1 :
 		    0
 		   );
+	}
+	if ($need_header) {
+	    print "#: encoding: utf-8\n#:\n";
+	    $need_header = 0;
 	}
 	print "$display_ort\t$cat $x,$y\n";
     }
