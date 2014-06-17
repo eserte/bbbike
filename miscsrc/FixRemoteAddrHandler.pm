@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2009,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2009,2011,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,8 +21,11 @@ FixRemoteAddrHandler - fix remote IP addresses for behind-proxy operation
 
 Usage in httpd.conf:
 
-   PerlRequire /home/e/eserte/src/bbbike/miscsrc/FixRemoteAddrHandler.pm
-   PerlLogHandler FixRemoteAddrHandler::handler
+    <IfModule mod_perl.c>
+        PerlRequire .../path/to/bbbike/miscsrc/FixRemoteAddrHandler.pm
+        PerlTransHandler FixRemoteAddrHandler::handler
+        # alternatively use PerlLogHandler, but is not recommended
+    </IfModule>
 
 =cut
 
