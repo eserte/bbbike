@@ -1455,7 +1455,25 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
+',
+         'periodic' => 1,
+         'until' => 1405893599,
+         'from' => 1405548000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (17.07.2014 bis 20.07.2014)',
+         'type' => 'gesperrt',
+         'id' => 2420
+       },
        undef,
        {
          'source_id' => 'IM_019747',
@@ -2035,6 +2053,19 @@ userdel auto	3 6809,11979 6828,12031 6787,12099
          'data' => 'userdel	2::inwork 46564,76483 46704,75833
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Hanstedter Weg: Bauarbeiten, Fahrbahn gesperrt',
+         'from' => undef,
+         'id' => 2582,
+         'data' => '#: by: Angelika Weber
+#: XXX wann sind die Bauarbeiten beendet?
+#: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten?
+#: next_check: 2014-07-17
+userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
+',
+         'type' => 'handicap'
        }
      
 );

@@ -21209,11 +21209,11 @@ userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
 EOF
      },
-     { from  => $isodate2epoch->("2013-07-17 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-07-21 23:59:59"),
-       periodic => 1, # XXX wahrscheinlich
+     { from  => $isodate2epoch->("2014-07-17 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-07-20 23:59:59"),
+       periodic => 1,
        recurrences => [['yearly', days => 18, months => 7]],
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (18.07.2013 bis 21.07.2013)',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (17.07.2014 bis 20.07.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
@@ -22890,6 +22890,18 @@ EOF
        source_id => 'LS/721-E/13/083',
        data  => <<EOF,
 userdel	2::inwork 46564,76483 46704,75833
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hanstedter Weg: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: Angelika Weber
+#: XXX wann sind die Bauarbeiten beendet?
+#: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten?
+#: next_check: 2014-07-17
+userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 EOF
      },
     );
