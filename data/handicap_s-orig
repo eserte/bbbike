@@ -55,6 +55,9 @@ M¸hsamstr.: Bauarbeiten in Hˆhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # 
 ### Mitte ###
 # 
+#: last_checked: 2014-06-19
+zur Keibelstr.: Baustraﬂe, Einbahnstraﬂe	q4::inwork; 10976,13229 11045,13183
+# 
 #: last_checked: 2014-06-18
 Seydelstr.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 # 
@@ -284,6 +287,9 @@ Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen ¸ber Gehweg	q3:
 Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
+# 
+#: last_checked: 2014-06-19
+Dottistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 15685,12154 15879,12131
 # 
 #: last_checked: 2014-06-11 (Absperrgitter existiert noch, wird aber manchmal von Fuﬂg‰ngern weggeschoben) (deshalb nur q3)
 #: check_frequency: 60d
@@ -1034,7 +1040,7 @@ Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
 Orankeweg: einige Bodenschwellen, ohne Anh‰nger leicht umfahrbar	q0 14934,15860 15313,15858 15395,15852 15453,15848
 (Gounodstr. - Otto-Brahm-Str.): abschnittsweise eng und kurvig	q1 14435,15904 14451,15873 14383,15848 14349,15825 14365,15778
 Gounodstr.: Fuﬂg‰nger	q1 14239,15810 14251,15828 14366,15877
-Seidenberger Str.: Bordstein, Gel‰nder	q3 12379,16998 12373,17007
+Seidenberger Str.: Bordstein, Gel‰nder	q3 12391,16994 12382,17006
 Mulackstr.: enge Straﬂe	q1 10640,13471 10535,13509 10406,13543 10308,13575
 R¸ckerstr.: enge Straﬂe	q1 10597,13647 10535,13509
 Cheruskerpark: Fuﬂg‰nger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282,8264 7250,8223
@@ -1435,7 +1441,7 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fuﬂg‰nger): Fuﬂg‰nger, einige einzelne Stufen, per Rampe umfahrbar	q2 15256,14237 15204,14087
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15060,13735 15055,13768 15027,13801
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fuﬂg‰nger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
-(Darﬂer Str. - Malchower See): Fuﬂg‰nger	q1 15506,17973 15825,18385 15949,18555
+(Darﬂer Str. - Malchower See): Fuﬂg‰nger	q1 15505,17967 15825,18385 15949,18555
 Am Malchower See: Fuﬂg‰nger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687
 (Wartenberger Str. - Margaretenhˆhe): Gehweg, f¸r Radfahrer freigegeben	q0- 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
 (Siedlung Wartenberg - Tierheim): eng, mit Anh‰nger nur langsam passierbar	q2- 19381,19830 19691,19748 19819,19602
@@ -1485,7 +1491,7 @@ M‰rkischer Platz: Fuﬂg‰nger	q2 11034,12038 11084,12070 11111,12027
 (Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13459,11388 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13175,11649
 (Wriezener Park): Fuﬂg‰nger	q2 13324,11529 13308,11515
 #: XXX_prog BS zur Helsingforser Str.
-Wriezener Park: Fuﬂg‰nger, Bordstein	q3 13261,11572 13270,11581
+Wriezener Park: Fuﬂg‰nger, Bordstein	q3 13261,11572 13274,11585
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13175,11649 13208,11658
 Oranienplatz: einige Fuﬂg‰nger	q1 11264,10804 11227,10821
 Oranienplatz: einige Fuﬂg‰nger	q1 11275,10723 11253,10778 11227,10821
@@ -3413,7 +3419,7 @@ Grumbacher Weg: schmaler Weg, Fuﬂg‰nger, Bordsteine	q3 -531,4599 -591,4558
 #: by: jan (...matrix): vvv
 #: XXX_prog: Gegenrichtung ist durch 1s:q2 abgedeckt, sollte besser gelˆst sein...
 Straﬂe 206: enge Straﬂe	q1; 13406,17382 13321,17318 13247,17262
-Straﬂe 245 (Weiﬂensee): enge Straﬂe	q1 13590,17368 13271,17589
+Straﬂe 245 (Weiﬂensee): enge Straﬂe	q1 13590,17368 13271,17589 13243,17615
 #: by: ^^^
 #: by: Joachim Faust:
 #: XXX_prog: BS (an der S¸dwestseite, noch nicht in die Kategorie eingeflossen)

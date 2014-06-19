@@ -174,7 +174,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2014-06-04
+#: last_checked: 2014-06-19
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -531,10 +531,14 @@ Brunolfweg: Verknüpfung gefordert	?::projected 19290,894 19316,951 19334,997
 #: by: ^^^
 #: XXX ^^^
 # 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20130705.0855.386745.html
-#: XXX In beiden Richtungen werden asphaltierte Radwege entstehen
-#: last_checked: 2014-03-08
-Rhinstr.: wann werden die neuen Radwege freigegeben?	?::inwork 18226,13506 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20130705.0855.386745.html vvv
+#: XXX In beiden Richtungen werden asphaltierte Radwege entstehen vvv
+#: last_checked: 2014-03-08 vvv
+Rhinstr.: wann werden die neuen Radwege freigegeben?	?::inwork; 18226,13506 18206,13817
+Rhinstr.: wann werden die neuen Radwege freigegeben?	?::inwork 18206,13817 18187,14039 18184,14078 18181,14110 18166,14277
+#: last_checked ^^^
+#: XXX ^^^
+#: by ^^^
 # 
 # REMOVED (realisiert) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4987.html --- #: next_check: 2013-07-31 --- Kirchhainer Damm: Bau von drei neuen Ampeln	? 11663,-3266 11579,-3093 11360,-2648 11308,-2535 11232,-2377 11172,-2224 11130,-2120 11073,-2037
 # REMOVED (realisiert) --- #: last_checked: 2013-08-13 --- #: check_frequency: 45d --- Bauarbeiten im Landschaftspark Herzberge: werden im Bereich des "Zeltlagers" neue Wege entstehen?	? 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
@@ -676,7 +680,7 @@ Einmündung der Burgfrauenstraße in den Zeltinger Platz: Zebrastreifen ist geplan
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden)
 #: osm_watch: node id="29778885" version="4"
-#: last_checked: 2014-04-29
+#: last_checked: 2014-06-19
 #: check_frequency: 150d
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::projected 13708,17453
 # 
@@ -1736,7 +1740,7 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12998,-1257 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern)
 #: XXX Freesienweg (beide Amtsblätter, DPAG-Mitteilungsblatt 12/2013) oder Fresienweg (BA)? Wikipedia meint "Freesien"
 #: XXX fehlt bei Berlin.coords.data, PLZ=10365
-#: last_checked: 2014-06-04 (Bauarbeiten in Gange, keine Straße zu sehen)
+#: last_checked: 2014-06-19 (Bauarbeiten in Gange, keine Straße zu sehen)
 #: check_frequency: 90d
 Freesienweg: geplante Straße, wo wird sie genau liegen? Qualität?	?::projected 16002,12640 16004,12750
 # 
