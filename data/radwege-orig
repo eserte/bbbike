@@ -272,8 +272,8 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW1;RW1 10020,11262 10256,11160 10501,11056 10684,10975
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10684,10975 10779,10934
 #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen)
-#: last_checked: 2014-03-17
-#: next_check: 2014-06-17
+#: last_checked: 2014-06-18
+#: check_frequency: 60d
 #eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10832,10910
 	RW0; 10779,10934 10794,10927 10832,10910
 	RW1; 10832,10910 10794,10927 10779,10934 10684,10975
@@ -982,7 +982,7 @@ Busspur ist immer gültig	RW5; 9141,12320 9358,12351 9475,12365
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9601,12380 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2014-01-04
+#: last_checked: 2014-06-18
 #: next_check: 2015-06-01
 Busspur ist immer gültig	RW5; 9475,12365 9601,12380
 # 

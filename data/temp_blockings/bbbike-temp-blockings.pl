@@ -22353,11 +22353,11 @@ EOF
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 EOF
      },
-     { from  => $isodate2epoch->("2014-04-13 00:00:00"), # 1386257400, # 2013-12-05 16:30
-       until => $isodate2epoch->("2014-04-17 23:59:59"), # 1386561600, # 2013-12-09 05:00
-       text  => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 14. April 2014 Uhr bis voraussichtlich 17. April 2014',
+     { from  => $isodate2epoch->("2014-07-16 00:00:00"), # 1386257400, # 2013-12-05 16:30
+       until => $isodate2epoch->("2014-07-31 23:59:59"), # 1386561600, # 2013-12-09 05:00
+       text  => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 17. Juli 2014 Uhr bis voraussichtlich 31. Juli 2014',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140407.1430.396156.html',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140618.0830.397974.html',
        data  => <<EOF,
 userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
 EOF
@@ -22700,7 +22700,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-06-04
+#: last_checked: 2014-06-18
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 EOF

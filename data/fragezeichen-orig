@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2014-05-20
+#: last_checked: 2014-06-18
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -773,7 +773,7 @@ Degnerstr.: f¸r 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2014-04-16
+#: last_checked: 2014-06-18
 #: check_frequency: 180d
 Planstraﬂe C: Einfahrten existieren noch, aber statt einer Straﬂe ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -969,7 +969,7 @@ Wolzenseeweg: Qualit‰t? Straﬂe bereits fertiggestellt? Wird es eine ‹berquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straﬂe	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2014-06-02 vvv
+#: last_checked: 2014-06-18 vvv
 #: check_frequency: 100d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1446,10 +1446,10 @@ Insel-R¸gen-Str.: wird hier eine Straﬂe existieren? Qualit‰t? Genaue Lage (GPS-K
 # REMOVED (Bauarbeiten) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphaltierung) --- Emser Str.: Straﬂenbauarbeiten?	? 12872,7134 13058,7165
 #: by: http://www.aktion-kms.de/projekte/umbau-richardstrasse/
 # ("historisches Reihensteinpflaster" - noch schlechtere Qualit‰t?)
-#: last_checked: 2014-05-20
+#: last_checked: 2014-06-15
 #: check_frequency: 30d
 Richardstr.: was wird sich nach den Straﬂenbauarbeiten hier ‰ndern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschr‰nkungen.	? 13150,7845 13103,7889
-#: last_checked: 2014-05-20
+#: last_checked: 2014-06-15
 #: check_frequency: 30d
 Richardstr.: wird sich hier noch etwas ‰ndern?	? 13103,7889 13085,7904
 #: by: ^^^
@@ -1878,6 +1878,7 @@ Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Pla
 #: XXX fehlt in Berlin.coords.data (laut DTAG-Liste PLZ=10179)
 #: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein
 #: XXX auch in der DTAG-Straﬂenliste vom 2014-06-04
+#: osm_watch: way id="256968789" version="8"
 #: last_checked: 2014-06-04 (zur Zeit nur eine Baustraﬂe)
 #: check_frequency: 60d
 Wilhelmine-Gemberg-Weg: genaue Lage, Qualit‰t?	?::inwork 11707,11526 11769,11683
@@ -3100,7 +3101,6 @@ Am Seegraben/Alexander-Meiﬂner-Str.: Ampel in Vorbereitung	?::inwork 19894,-835
 # REMOVED (ja) --- #: by: http://www.potsdam.de/cms/beitrag/10071706/966975/ --- Templiner Str.: gibt es in der Templiner Straﬂe mittlerweile Radstreifen?	? -13062,-2901 -13155,-2913 -13381,-2943 -13481,-2956 -13718,-2991
 # REMOVED (rj meint, dass hier kein *ausgeschilderter* Platz ist) --- #: XXX fehlt in Berlin.coords.data --- Forum (Adlershof): Wo genau liegt die Straﬂe? Ist sie ausgeschildert? Qualit‰t?	? 19242,3052 19328,3072
 Hohen Neuendorfer Weg (Birkenwerder): Qualit‰t?	? 645,30634 618,30687 575,30816 564,30845 550,30867 516,30899 342,31100
-Am Alten Mˆrtelwerk (Potsdam-Eiche): Qualit‰t?	? -17127,-559 -17141,-496 -17186,-451 -17211,-356 -17254,-256
 Am Tempelberg (Potsdam-Eiche): Qualit‰t?	? -17003,-544 -17019,-422
 Am Gr¸nen Weg (Potsdam-Eiche): Qualit‰t? Wird "Gr¸nen" groﬂ oder klein geschrieben?	? -16905,-541 -16890,-605
 Am Sandberg (Potsdam-Eiche): Qualit‰t?	? -17211,-356 -17141,-349 -17132,-399

@@ -991,6 +991,10 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
+unbequemes Überqueren	3nocross::ignrte 10238,11741 10299,11786 10314,11804
+Kurstr. -> Spittelmarkt: unbequemes Überqueren	3::igndisp 10278,11802 10299,11786 10314,11804
+Spittelmarkt -> Kurstr.: unbequemes Überqueren	3::igndisp 10240,11740 10299,11786 10278,11802
+Spittelmarkt -> Spittelmarkt: unbequemes Überqueren	3::igndisp 10240,11740 10299,11786 10238,11741
 Mittelstreifen	3nocross::ignrte 19894,-835 19996,-740 20205,-548
 Schützenstr. -> Am Seegraben: Mittelstreifen	3::igndisp 19978,-712 19996,-740 20205,-548
 Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2016,11034 2102,11307 2109,11441
