@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package BBBikeCGI::API;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use JSON::XS qw();
 
@@ -26,7 +26,7 @@ require Karte::Standard;
 
 sub action {
     my($action, $q) = @_;
-    if ($action !~ m{^(revgeocode)$}) {
+    if ($action !~ m{^(revgeocode|config)$}) {
 	die "Invalid action $action";
     }
     my $func = "action_$action";
@@ -60,6 +60,49 @@ sub action_revgeocode {
 					 origlon => $lon,
 					 origlat => $lat,
 				       });
+}
+
+sub action_config {
+    my $q = shift;
+    print $q->header(-type => 'text/plain');
+    no warnings 'once';
+    my $json_bool = sub { $_[0] ? JSON::XS::true : JSON::XS::false };
+    print JSON::XS->new->ascii->encode
+	(
+	 {
+	  use_apache_session         => $json_bool->($main::use_apache_session),
+	  apache_session_module      => $main::apache_session_module,
+	  detailmap_module           => $main::detailmap_module,
+	  graphic_format             => $main::graphic_format,
+	  can_gif                    => $json_bool->($main::can_gif),
+	  can_jpeg                   => $json_bool->(!$main::cannot_jpeg),
+	  can_pdf                    => $json_bool->(!$main::cannot_pdf),
+	  bbbikedraw_pdf_module      => $main::bbbikedraw_pdf_module,
+	  can_svg                    => $json_bool->(!$main::cannot_svg),
+	  can_wbmp                   => $json_bool->($main::can_wbmp),
+	  can_palmdoc                => $json_bool->($main::can_palmdoc),
+	  can_gpx                    => $json_bool->($main::can_gpx),
+	  can_kml                    => $json_bool->($main::can_kml),
+	  can_mapserver              => $json_bool->($main::can_mapserver),
+	  can_gpsies_link            => $json_bool->($main::can_gpsies_link),
+	  show_start_ziel_url        => $json_bool->($main::show_start_ziel_url),
+	  show_weather               => $json_bool->($main::show_weather),
+	  use_select                 => $json_bool->($main::use_select),
+	  use_berlinmap              => $json_bool->(!$main::no_berlinmap),
+	  use_background_image       => $json_bool->($main::use_background_image),
+	  with_comments              => $json_bool->($main::with_comments),
+	  with_cat_display           => $json_bool->($main::with_cat_display),
+	  use_coord_link             => $json_bool->($main::use_coord_link),
+	  city                       => $main::city,
+	  use_fragezeichen           => $json_bool->($main::use_fragezeichen),
+	  use_fragezeichen_routelist => $json_bool->($main::use_fragezeichen_routelist),
+	  search_algorithm           => $main::search_algorithm,
+	  use_exact_streetchooser    => $json_bool->($main::use_exact_streetchooser),
+	  use_utf8                   => $json_bool->($main::use_utf8),
+	  data_is_wgs84              => $json_bool->($main::data_is_wgs84),
+	  osm_data                   => $json_bool->($main::osm_data),
+	 }
+	);
 }
 
 1;
