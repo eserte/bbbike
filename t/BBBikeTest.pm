@@ -724,20 +724,7 @@ if (!eval {
 
     SKIP: {
 	    Test::More::skip("simulate skips", 1) if $simulate_skips;
-	    $@ = "";
-	    eval {
-		no warnings 'numeric'; # cease Argument "2.121_08" isn't numeric in subroutine entry
-		require Data::Dumper;
-		Data::Dumper->VERSION(2.12); # Sortkeys
-	    };
-	    if ($@) {
-		Test::More::skip("Need recent Data::Dumper (2.12, Sortkeys)", 1);
-	    }
-
-	    local $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;
-	    Test::More::is(Data::Dumper->new([$a],[])->Useqq(1)->Dump,
-			   Data::Dumper->new([$b],[])->Useqq(1)->Dump,
-			   $info);
+	    Test::More::is_deeply($a, $b, $info);
 	}
     };
 }
