@@ -832,8 +832,8 @@ sub image_ok ($;$) {
     SKIP: {
 	    Test::More::skip("IPC::Run needed for better image testing", 2)
 		    if !eval { require IPC::Run; 1 };
-	    Test::More::skip("Image::Info needed for better image testing", 2)
-		    if !eval { require Image::Info; 1 };
+	    Test::More::skip("Image::Info 1.31 or better needed for better image testing", 2)
+		    if !eval { require Image::Info; Image::Info->VERSION(1.31) }; # support for .ico files and better .xbm detection
 	    my $ret = Image::Info::image_type($in);
 	    if ($ret->{error} && !ref $in && $in =~ m{\.wbmp$}) { # wbmp cannot be detected by Image::Info
 		$ret = {file_type => "WBMP" };
