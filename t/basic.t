@@ -177,7 +177,7 @@ for my $f (@files) {
 
 	*OLDERR = *OLDERR; # cease -w
 	open(OLDERR, ">&STDERR") or die;
-	my $diag_file = File::Spec->tmpdir . "/bbbike-basic.text";
+	my $diag_file = File::Spec->tmpdir . "/bbbike-basic-$$.text";
 	open(STDERR, ">$diag_file") or die "Can't write to $diag_file: $!";
 
 	my $can_w = 1;
