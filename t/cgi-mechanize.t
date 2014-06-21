@@ -135,7 +135,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBike-Test/1.0" } @browsers;
 
 my $outer_berlin_tests = 36;
-my $tests = 138 + $outer_berlin_tests;
+my $tests = 141 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -222,6 +222,10 @@ for my $browser (@browsers) {
 	} else {
 	    die "Check for '$type' NYI";
 	}
+    };
+
+    my $not_source_code = sub {
+	$unlike_long_data->(qr{/usr/(?:local/)?bin/(?:perl|env)}, 'This is not the source code');
     };
 
     # -xxx... handling
@@ -934,6 +938,7 @@ for my $browser (@browsers) {
 	    my_tidy_check($agent);
 
 	    $like_long_data->(qr{Danke, die Angaben.*gesendet}, "Sent comment");
+	    $not_source_code->();
 	}
 
 	{
@@ -954,6 +959,7 @@ for my $browser (@browsers) {
 	    my_tidy_check($agent);
 
 	    $like_long_data->(qr{Danke, die Angaben.*gesendet}, "Sent comment (fragezeichenform)");
+	    $not_source_code->();
 	}
 
 	{
@@ -974,6 +980,7 @@ for my $browser (@browsers) {
 	    my_tidy_check($agent);
 
 	    $like_long_data->(qr{Danke, die Angaben.*gesendet}, "Sent comment (shortfragezeichenform)");
+	    $not_source_code->();
 	}
     }
 
