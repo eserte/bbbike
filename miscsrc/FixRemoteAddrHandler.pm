@@ -27,6 +27,16 @@ Usage in httpd.conf:
         # alternatively use PerlLogHandler, but is not recommended
     </IfModule>
 
+=head1 NOTES
+
+This handler works only for apache until version 2.2. For 2.4 and
+later, use instead the include remoteip module:
+
+    RemoteIPHeader X-Forwarded-For
+    RemoteIPTrustedProxy $proxyipaddress
+
+and make sure that C<%h> in LogFormat is replaced by C<%a>.
+
 =cut
 
 use strict;
