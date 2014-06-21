@@ -41,7 +41,7 @@ ok -x $search_inaccessible_points, "$search_inaccessible_points is executable";
 }
 
 {
-    my($tempdir) = tempdir("data-test2-XXXXXXXX", CLEANUP => 1)
+    my($tempdir) = tempdir("data-test2-XXXXXXXX", TMPDIR => 1, CLEANUP => 1)
 	or die "Can't create temporary directory: $!";
     my $strassen_file = "$tempdir/strassen";
     my $gesperrt_file = "$tempdir/gesperrt";
