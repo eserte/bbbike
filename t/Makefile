@@ -31,6 +31,12 @@ test-cgi-lite:
 prove-cgi-lite:
 	(cd .. && LANG=C BBBIKE_TEST_SKIP_MAPSERVER=1 BBBIKE_TEST_SKIP_PALMDOC=1 $(PERL) -S prove -w -I -Ilib t/$(TEST_FILES))
 
+# Live layout (.../cgi-bin/bbbike.cgi, .../BBBike/html) and
+# http://localhost (no vhost)
+test-live-layout-localhost:
+	(cd .. && LANG=C BBBIKE_TEST_SKIP_MAPSERVER=1 BBBIKE_TEST_SKIP_PALMDOC=1 BBBIKE_TEST_CGIDIR=http://localhost/cgi-bin BBBIKE_TEST_HTMLDIR=http://localhost/BBBike BBBIKE_TEST_FOR_LIVE=1 \
+	    $(PERL) -S prove -w -I -Ilib t/$(TEST_FILES))
+
 # Assumes a running plackup server on standard port 5000
 #
 #    plackup cgi/bbbike.psgi
