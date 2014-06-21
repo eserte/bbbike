@@ -637,8 +637,8 @@ sub kmllint_string {
     }
 }
 
-sub failed_long_data {
-    my($got, $expected, $testname, $suffix) = @_;
+sub _failed_long_data {
+    my($got, $expected, $testname, $suffix, $is_negative) = @_;
     local $Test::Builder::Level = $Test::Builder::Level+1;
     require File::Temp;
     require Data::Dumper;
@@ -646,7 +646,7 @@ sub failed_long_data {
     my $dump;
     if ($suffix) {
 	$dump = $got;
-	Test::More::fail("Test <$testname> failed, <$expected> expected, see <$filename> for got contents");
+	Test::More::fail("Test <$testname> failed, <$expected> " . ($is_negative ? 'unexpected' : 'expected') . ", see <$filename> for got contents");
     } else {
 	$dump = Data::Dumper->new([$got, $expected],[qw(got expected)])->Indent(1)->Useqq(0)->Dump;
 	Test::More::fail("Test <$testname> failed, see <$filename> for more information");
@@ -666,7 +666,7 @@ sub is_long_data {
 	if ($eq) {
 	    Test::More::pass($testname);
 	} else {
-	    failed_long_data($got, $expected, $testname, $suffix);
+	    _failed_long_data($got, $expected, $testname, $suffix, 0);
 	}
     }
 }
@@ -681,7 +681,7 @@ sub like_long_data {
 	if ($matches) {
 	    Test::More::pass($testname);
 	} else {
-	    failed_long_data($got, $expected, $testname, $suffix);
+	    _failed_long_data($got, $expected, $testname, $suffix, 0);
 	}
     }
 }
@@ -696,7 +696,7 @@ sub unlike_long_data {
 	if ($matches) {
 	    Test::More::pass($testname);
 	} else {
-	    failed_long_data($got, $expected, $testname, $suffix);
+	    _failed_long_data($got, $expected, $testname, $suffix, 1);
 	}
     }
 }
