@@ -516,7 +516,25 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
+',
+         'periodic' => 1,
+         'until' => 1411322400,
+         'from' => 1411117200,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (20. und 21. September 2014) ',
+         'type' => 'gesperrt',
+         'id' => 1910
+       },
        undef,
        undef,
        undef,

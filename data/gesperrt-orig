@@ -193,7 +193,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2014-01-04
+#: last_checked: 2014-06-22
 #: check_frequency: 180d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -1269,9 +1269,12 @@ Gützkow	1 7607,170278 7539,170282 7521,170447 7592,170432 7607,170278
 #
 # Einbahnstraßen, die man als Radfahrer halbwegs ignorieren kann:
 # 
+#: note: relativ eng, Kurve, deshalb etwas unübersichtlich
+Am Krusenick	1s:q3 22751,4970 22652,4966 22667,4912 22705,4874
+# 
 #: note: Umweg über Scharnweberstr. ist vertretbar
 Josef-Nawrocki-Str.	1s:q4 25724,4706 25802,4681 25802,4823
-Josef-Nawrocki-Str.	1s:q4 25724,4706 25691,4716 25554,4758 25552,4829
+Josef-Nawrocki-Str.	1s:q4 25724,4706 25695,4714 25554,4758 25552,4829
 Askanischer Platz	1s:q2 8882,10905 8938,10872 8983,10846 9022,10857
 #: by: Ilona Lange (man fährt auf dem Gehweg, sowieso)
 Helbigstr.	1s:q3 20109,4087 20339,3779 20362,3750
@@ -1666,7 +1669,7 @@ Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
 Landsberger Chaussee: Straßenbahntrasse	3nocross 22771,16194 22974,16139 23162,16095
 Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
 # REMOVED (ja, unveränderte Situation) --- #: XXX Wie wird die Situation nach den Bauarbeiten aussehen: wird man hier die Straßenbahntrasse weiterhin nicht überqueren können? --- #: last_checked: 2011-08-14 --- #: next_check: 2013-07-01
-Fürstenwalder Damm: Straßenbahntrasse	3nocross 23660,5477 23728,5446 23822,5403 23851,5389
+Fürstenwalder Damm: Straßenbahntrasse	3nocross 23657,5467 23724,5437 23818,5394 23849,5380
 Tauernallee: Mittelstreifen	3nocross 10349,2188 10431,2258 10504,2321
 Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11449,9125 11136,9183
@@ -1987,7 +1990,7 @@ tragen (Treppe, 56 Stufen)	0:50 -6933,14317
 #: confirmed_by: srt (genaue Stufenzahl)
 tragen (Treppe, 56 Stufen)	0:50 -6934,14291
 #: note ^^^
-tragen (Treppe)	0:30 20673,7260
+tragen (Treppe, 32 Stufen)	0:30 20682,7262
 tragen (Treppe, ca. 6 Stufen)	0:15 15488,8508
 tragen (Treppe, 50 Stufen)	0:50 -12328,1941
 tragen (Treppe, 18 Stufen)	0:18 8709,12605

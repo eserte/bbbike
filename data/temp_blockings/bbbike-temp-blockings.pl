@@ -2202,7 +2202,7 @@ EOF
        text  => 'L 30; (Woltersdorfer Landstr.); OD Erkner Grundhafter Straßenbau Vollsperrung 08.07.2005-09.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 34271,3184 34486,4276
+userdel	q4 34261,3092 34258,3138 34268,3204 34291,3314 34315,3429 34359,3631 34403,3857 34486,4276
 EOF
      },
      { from  => 1118872800, # 2005-06-16 00:00
@@ -3938,7 +3938,7 @@ EOF
        type  => 'handicap',
        source_id => 'LMS_1142967727545',
        data  => <<EOF,
-userdel	q4 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23950,5342
+userdel	q4 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23942,5338
 userdel	q4 25012,5754 25018,5756 25121,5799
 userdel	q4 25579,5958 25179,5819 25121,5799
 EOF
@@ -7237,7 +7237,7 @@ EOF
        text  => 'Fürstenwalder Damm, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Baustelle bis 30.03.2007 (im Bereich Einmündung Mühlweg) ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23950,5342
+userdel	q4::inwork 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23942,5338
 EOF
      },
      { from  => 1172530621, # 2007-02-26 23:57
@@ -11748,7 +11748,7 @@ EOF
        text  => 'L 030 Bahnhofstr. Eisenbahnbrücke in der OD Erkner Brückenerneuerung Vollsperrung 09.06.2008-31.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 34326,2915 34142,2742
+userdel	2::inwork 34298,2910 34152,2749
 EOF
      },
      { from  => 1212962400, # 2008-06-09 00:00
@@ -16359,8 +16359,8 @@ EOF
 userdel	2::temp 8424,12853 8309,12758 8306,12609
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-19 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-09-21 20:00:00"),
+     { from  => $isodate2epoch->("2014-09-19 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-09-21 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 9]],
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (20. und 21. September 2014) ',
@@ -17134,7 +17134,7 @@ EOF
        text  => 'L 030 Bahnhofstraße OL Erkner, Erneuerung Eisenbahnbrücke Vollsperrung 09.06.2008-31.01.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 34326,2915 34142,2742
+userdel	2::inwork 34298,2910 34152,2749
 EOF
      },
      { from  => 1254952800, # 2009-10-08 00:00
@@ -17296,7 +17296,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015001',
        data  => <<EOF,
-userdel	2::inwork 34326,2915 34142,2742
+userdel	2::inwork 34298,2910 34152,2749
 EOF
      },
      { from  => 1270235299, # 2010-04-02 21:08
@@ -21185,7 +21185,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_019584',
        data  => <<EOF,
-userdel	q4::inwork; 23950,5342 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633
+userdel	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633
 EOF
      },
      { from  => 1364875200, # 2013-04-02 06:00

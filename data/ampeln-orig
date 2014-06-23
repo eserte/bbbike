@@ -2313,6 +2313,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -2671,1988
 	X 6480,7992
 	F 4862,10881
+#: note: Anforderungsampel
 	F 30037,4176
 	F 23059,4635
 #: XXX Baustellenampel; bleibt sie permanent?
@@ -2411,7 +2412,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: off: Sunday
 	F 24936,4838
 #: note: Anforderungsampel für Radfahrer aus Richtung Südosten
-	X 23950,5342
+	X 23942,5338
 	F 11033,13086
 #: note: Anforderungsampel
 	F 16370,24600
@@ -2578,7 +2579,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 11214,16043
 	X -3892,13960
 	X 3005,13728
-	X 23660,5477
+	X 23657,5467
 	F 18165,7371
 #: off: night (seen 2013-08-25 22:30)
 	F 11579,-3093
@@ -2757,6 +2758,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	F 34287,2967
 	X 23392,30395
 	X -4963,-3121
 	F -3252,-2368

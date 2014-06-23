@@ -948,8 +948,9 @@ Köthen	1 -85399,-74118 -85360,-74027 -85052,-74057 -85077,-74187 -85091,-74261 -
 Köthen	1 -85125,-74513 -85231,-74271
 Köthen	1 -85091,-74261 -85089,-74420 -85057,-74512
 Gützkow	1 7607,170278 7539,170282 7521,170447 7592,170432 7607,170278
+Am Krusenick	1s 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.	1s 25724,4706 25802,4681 25802,4823
-Josef-Nawrocki-Str.	1s 25724,4706 25691,4716 25554,4758 25552,4829
+Josef-Nawrocki-Str.	1s 25724,4706 25695,4714 25554,4758 25552,4829
 Askanischer Platz	1s 8882,10905 8938,10872 8983,10846 9022,10857
 Helbigstr.	1s 20109,4087 20339,3779 20362,3750
 Sophie-Taeuber-Arp-Weg	1s 3302,2471 3293,2218
@@ -2012,11 +2013,11 @@ Straßenbahntrasse	3nocross::ignrte 22771,16194 22974,16139 23162,16095
 Landsberger Chaussee -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 23162,16095 22974,16139 22961,16077
 Ludwigsfelder Str. -> Landsberger Chaussee: Straßenbahntrasse	3::igndisp 22961,16077 22974,16139 22771,16194
 Mittelstreifen	3nocross::ignrte 23404,5325 23403,5385 23402,5483
-Straßenbahntrasse	3nocross::ignrte 23660,5477 23728,5446 23822,5403 23851,5389
-Fürstenwalder Damm -> Ahornweg: Straßenbahntrasse	3::igndisp 23822,5403 23728,5446 23691,5368
-Ahornweg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23691,5368 23728,5446 23660,5477
-Hoher Weg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23766,5281 23822,5403 23728,5446
-Fürstenwalder Damm -> Hoher Weg: Straßenbahntrasse	3::igndisp 23851,5389 23822,5403 23766,5281
+Straßenbahntrasse	3nocross::ignrte 23657,5467 23724,5437 23818,5394 23849,5380
+Fürstenwalder Damm -> Ahornweg: Straßenbahntrasse	3::igndisp 23818,5394 23724,5437 23691,5368
+Ahornweg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23691,5368 23724,5437 23657,5467
+Fürstenwalder Damm -> Hoher Weg: Straßenbahntrasse	3::igndisp 23849,5380 23818,5394 23766,5281
+Hoher Weg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23766,5281 23818,5394 23724,5437
 Mittelstreifen	3nocross::ignrte 10349,2188 10431,2258 10504,2321
 Lienzer Pfad -> Tauernallee: Mittelstreifen	3::igndisp 10444,2234 10431,2258 10349,2188
 Tauernallee -> Lienzer Pfad: Mittelstreifen	3::igndisp 10504,2321 10431,2258 10444,2234
@@ -2255,7 +2256,7 @@ tragen (Elsensteg, 6 Stufen)	0:10:-137 13376,8705
 tragen (Elsensteg, 6 Stufen)	0:10:-144 13394,8730
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30:-128 6748,12669
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30:-126 6702,12633
-tragen (Spreetunnel, ca. 50 Stufen)	0:60:18 25658,4619
+tragen (Spreetunnel, ca. 50 Stufen)	0:60:21 25658,4619
 tragen (Spreetunnel, 50 Stufen)	0:60:52 25571,4553
 tragen (Brücke Tegeler Hafen, Fahrradschienen existieren)	0:30:-256 1227,20281
 tragen (Brücke Tegeler Hafen, 4+10 Stufen, Fahrradschienen existieren)	0:30:-231 1166,20330
@@ -2307,7 +2308,7 @@ tragen (Treppe)	0:30:-43 -633,12739
 tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe, 56 Stufen)	0:50:-64 -6933,14317
 tragen (Treppe, 56 Stufen)	0:50:2 -6934,14291
-tragen (Treppe)	0:30:-233 20673,7260
+tragen (Treppe, 32 Stufen)	0:30:-232 20682,7262
 tragen (Treppe, ca. 6 Stufen)	0:15:-222 15488,8508
 tragen (Treppe, 50 Stufen)	0:50:-151 -12328,1941
 tragen (Treppe, 18 Stufen)	0:18:-72 8709,12605

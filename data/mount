@@ -1,6 +1,10 @@
 Steigung 40.2% ((Zum Hubertussee))	St; 1809,8916 1807,8893
 Steigung 34.4% ((Zum Hubertussee))	St; 1834,8893 1807,8893
 Steigung 14.2% (Stritteweg)	St; -5236,11204 -5256,11142
+Steigung 12.3% ((Grünheider Weg - Fredersdorfer Weg))	St; 30867,3806 30862,3816
+Steigung 12.3% ((Grünheider Weg - Fredersdorfer Weg))	St; 30862,3816 30849,3843
+Steigung 12.3% ((Grünheider Weg - Fredersdorfer Weg))	St; 30849,3843 30823,3866
+Steigung 12.3% ((Grünheider Weg - Fredersdorfer Weg))	St; 30823,3866 30814,3875
 Steigung 12.1% ((Am Stadion Wilmersdorf))	St; 3295,8524 3358,8511
 Steigung 11.8% ((Bruno-Taut-Str. - Am Gartenstadtweg))	St; 21783,660 21755,625
 Steigung 11.7% ((Egidysteg - Mühlenfeldstr.))	St; 3094,22216 3094,22233
@@ -53,12 +57,13 @@ Steigung 8.1% ((zum Drachenberg))	St; -14,10541 -9,10626
 Steigung 8.1% ((zum Drachenberg))	St; -114,10649 -129,10585
 Steigung 8.1% ((zum Drachenberg))	St; -104,10422 -66,10437
 Steigung 8.0% (Grohsteig)	St; 21400,16117 21416,16027
-Steigung 7.9% (Straße zum Müggelturm)	St; 25716,1578 25716,1492
-Steigung 7.9% (Straße zum Müggelturm)	St; 25573,1609 25716,1578
-Steigung 7.9% (Straße zum Müggelturm)	St; 25438,1638 25573,1609
 Steigung 7.9% (Schmidt-Ott-Str.)	St; 4404,5613 4309,5675
 Steigung 7.8% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -935,9846 -865,9920
 Steigung 7.8% (Teufelsseechaussee [Auffahrt zum ehem. Horchposten])	St; -865,9920 -850,9940
+Steigung 7.8% (Straße zum Müggelturm)	St; 25725,1561 25716,1492
+Steigung 7.8% (Straße zum Müggelturm)	St; 25701,1587 25725,1561
+Steigung 7.8% (Straße zum Müggelturm)	St; 25573,1609 25701,1587
+Steigung 7.8% (Straße zum Müggelturm)	St; 25438,1638 25573,1609
 Steigung 7.8% (Angerburger Allee)	St; -1994,11496 -1931,11437
 Steigung 7.8% (Am Roten Stein)	St; -7172,4565 -7257,4581
 Steigung 7.8% (Am Roten Stein)	St; -7037,4540 -7172,4565
@@ -71,7 +76,6 @@ Steigung 7.4% (Mendelssohnstr. [Wohngebiet])	St; 11598,13598 11550,13642
 Steigung 7.4% (Mendelssohnstr. [Wohngebiet])	St; 11550,13642 11545,13690
 Steigung 7.3% (Steffenshagener Str.)	St; 22972,11066 22983,11098
 Steigung 7.3% (Rosenhagener Str.)	St; 23152,11065 23159,11097
-Steigung 7.3% (Grünheider Weg)	St; 30910,3824 30867,3806
 Steigung 7.2% (Am Lokdepot)	St; 8390,8879 8389,8775
 Steigung 7.1% (Jaczostr.)	St; -4751,11262 -4789,11225
 Steigung 7.1% (Hochjagdstr.)	St; 4098,21809 4034,21900
@@ -370,10 +374,6 @@ Steigung 3.5% ((Parkweg Reichsstr.))	St; -264,13009 -208,12938
 Steigung 3.5% ((Hasenheide, westlicher Weg))	St; 11141,9107 11115,9100
 Steigung 3.5% ((Hasenheide, westlicher Weg))	St; 11115,9100 11098,9046
 Steigung 3.5% ((Hasenheide, westlicher Weg))	St; 11098,9046 11100,8974
-Steigung 3.5% ((Grünheider Weg - Fredersdorfer Weg))	St; 30867,3806 30862,3816
-Steigung 3.5% ((Grünheider Weg - Fredersdorfer Weg))	St; 30862,3816 30849,3843
-Steigung 3.5% ((Grünheider Weg - Fredersdorfer Weg))	St; 30849,3843 30823,3866
-Steigung 3.5% ((Grünheider Weg - Fredersdorfer Weg))	St; 30823,3866 30814,3875
 Steigung 3.4% (Wissmannstr. (Neukölln))	St; 11767,9026 11768,8739
 Steigung 3.4% (Spandauer Damm)	St; 2152,12389 1971,12368
 Steigung 3.4% (Siebweg)	St; 21797,-602 21868,-611
@@ -957,6 +957,7 @@ Steigung 2.1% (Hochstr. (Gesundbrunnen))	St; 9059,16038 8923,15850
 Steigung 2.1% (Hermannstr. (Wannsee))	St; -6124,1884 -6122,1834
 Steigung 2.1% (Hermannstr. (Wannsee))	St; -6122,1834 -6104,1764
 Steigung 2.1% (Hermannstr. (Wannsee))	St; -6104,1764 -6084,1715
+Steigung 2.1% (Grünheider Weg)	St; 30867,3806 30910,3824
 Steigung 2.1% (Friedrichsbrunner Str.)	St; 12301,5783 12284,5929
 Steigung 2.1% (Friedrich-Hanisch-Str.)	St; -6449,5282 -6640,5408
 Steigung 2.1% (Frankfurter Allee)	St; 16737,11866 16803,11859

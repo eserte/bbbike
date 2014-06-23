@@ -298,7 +298,8 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
-#: last_checked: 2014-05-23
+#: last_checked: 2014-06-22
+#: check_frequency: 60d
 Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
@@ -362,11 +363,7 @@ Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Amp
 # 
 # REMOVED (keine Besonderheiten) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5213.html --- #: XXX bis Ende 2014 --- Heidestr.: wie ist die Radverkehrsführung an der Kreuzung Sellerstr.?	? 7589,14359 7597,14417
 # REMOVED (Bauarbeiten laufen bereits, sind aber relativ unproblematisch für Radfahrer) --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140326.1205.395773.html --- #: next_check: 2014-04-01 --- Thusnelda-Allee: wann genau wird die Sperrung sein?	? 5956,13330 5975,13256
-# 
-Forstmeisterweg, Fortsetzung: Qualität? Beleuchtung? Straßenname?	? 32222,3680 32230,3766 32264,3854 32229,3892
-# 
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4798
-Am S-Bhf. Wuhlheide: Treppenanlage mit Fahrradlauf? Außerdem die Qualität des Radwegs wieder evaluieren	? 20653,7289 20673,7260
+# REMOVED (kein Fahrradlauf erkennbar; neben der Treppe ist eine "Rampe" "ausgetreten" --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4798 --- #: last_checked: 2014-06-22 --- Am S-Bhf. Wuhlheide: Treppenanlage mit Fahrradlauf? Außerdem die Qualität des Radwegs wieder evaluieren	? 20653,7289 20682,7262
 # 
 #: next_check_id: AMWEINGARTEN-2014
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3759 ("Benennungsabsicht")
@@ -1014,10 +1011,6 @@ Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18773,3873 187
 #: check_frequency: 120d
 Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337 13519,7345
 # 
-#: last_checked: 2010-06-06
-#: next_check: 2010-09-01
-Fürstenwalder Allee: Bau von Radverkehrsanlagen	?::projected; 29850,4288 29813,4314 29754,4398 29728,4435 29714,4461
-# 
 # REMOVED (so gut wie fertig, am 2013-06-24 hat noch ein kleines Stück gefehlt) --- #: last_checked: 2013-06-05 vvv --- #: next_check: 2013-06-19 vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv --- #: source_id: INKO_117706 vvv --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15066,14579 --- #: XXX Richtung Süden wird es wohl ein Gehwegradweg fehlen (fehlt nur noch der Asphalt), Richtung Norden ist fertig --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15066,14579 15110,14486 15164,14392 --- #: source_id ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html --- #: XXX Baumaßnahme 11.46 (Realisierung in 2011) --- #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012) --- #: osm_watch: way id="22044872" version="10" --- #: osm_watch: way id="22045147" version="18" --- #: last_checked: 2014-02-14 --- Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 15866,16393 15843,16399 15771,16417 15432,16500
 # 
@@ -1489,7 +1482,6 @@ Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualitä
 Fünf Morgen: wo wird sich die Straße befinden? Qualität?	? 1338,4927 1437,5015 1483,5161
 # 
 #: XXX_indoor: Steigungsprobleme vvv
-Grünheider Weg: keine nennenswerte Steigung, zusätzliche Höhenpunkte ausrechnen	? 30910,3824 30867,3806 30692,3733 30665,3720 30650,3698
 Weg H: Steigung müsste in die andere Richtung verlaufen!	? 27961,699 28083,592
 #: XXX_indoor ^^^
 # 
@@ -1501,9 +1493,9 @@ Weg H: Steigung müsste in die andere Richtung verlaufen!	? 27961,699 28083,592
 #: last_checked: 2014-05-17
 #: check_frequency: 360d
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
-#: last_checked: 2013-06-09
+#: last_checked: 2014-06-22
 #: check_frequency: 100d
-Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25691,4716 25724,4706 25802,4681
+Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25695,4714 25724,4706 25802,4681
 #: last_checked: 2014-06-09
 #: check_frequency: 300d
 Wassersportallee: Verbesserung der Befahrbarkeit	?::projected 22655,1450 22756,1524
@@ -2976,7 +2968,6 @@ Radweg zwischen Groß Schulzendorf und Ludwigsfelde: existiert bereits der Radweg
 Radweg zwischen Linthe und Brück: Qualität?	? -30940,-28490 -31197,-28211 -32763,-26409
 # REMOVED (aufgenommen) --- #: XXX: laut http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2339 mit Radweg --- Zeppelinufer (Teltow): Qualität?	? 1464,-470 1338,-426 1134,-370 818,-298
 Baumgarten - Grünow: Qualität?	? 45393,105220 45647,104851 45619,104429 45554,104267 45590,103655 46020,102452 45794,102248 45805,102072
-Julius-Rütgers-Str. (Erkner): Qualität?	? 34293,3076 34391,3099 34416,3127 34671,3421 34553,3539
 #: XXX wahrscheinlich asphaltiert, zumindest an der B2
 #: XXX fehlt in Potsdam.coords.data
 Am Kirchberg (Neu Fahrland): Qualität?	? -13783,3919 -13925,3928 -14242,3997 -14507,4057 -14632,4093 -14725,4141 -14777,4143
@@ -3532,41 +3523,7 @@ Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 # REMOVED (hier existieren zwar Wege im Wohngebiet, aber nichts, was man mappen sollte) --- Wandsbeker Weg: verläuft zwischen Spandauer Str. und Barmbeker Weg auch ein Teil des Wandsbeker Wegs? Qualität? Für Autos befahrbar?	? -6643,14051 -6728,14038 -6757,14061 -6765,14120
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
 # 
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036283513953/283513953/00094009/09-Anlagen/01/DRS0430VK.pdf vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4529 vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2013 vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Benennung wird wirksam)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2014 (Grundstücksnummerierungen)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014 (weitere Grundstücksnummerierungen)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (weitere Grundstücksnummerierungen)
-#: XXX Benennung von 7 Privatwegen auf dem Grundstück der KGA "Erpetal" vvv
-#: last_checked: 2013-06-22 (Umbenennung nicht durchgeführt) vvv
-#: next_check: 2013-10-01 (Benennung wird wirksam) vvv
-#: XXX wahrscheinlich unbeleuchtet vvv
-Klatschmohnweg: (früher Birkenweg) unbefestigter Weg, Q2, NN	? 24596,6292 24580,6319
-Klatschmohnweg: (früher Birkenweg) Gras, Q3+, NN	? 24580,6319 24746,6391
-Klatschmohnweg: (früher Birkenweg) unbefestigter Weg, Q2, NN	? 24746,6391 24756,6364
-#: XXX ^^^
-Storchschnabelweg: (früher Kastanienweg) Qualität?	? 24300,6142 24341,6197 24402,6249 24480,6290
-Borretschweg: (früher Asternweg) Qualität?	? 24344,6117 24300,6142 24275,6156
-#: XXX wird diese Verbindung auch einen Straßennamen bekommen?
-zum Wiesenweg: unbefestigter Straße, etwas sandig	? 24508,6043 24470,6071 24460,6109
-#: XXX Wegführung nicht ganz klar vvv
-#: XXX teilweise früher auch Asternweg, laut DPAG-Mitteilungsblatt 12/2013, teilweise Wiesenweg vvv
-Spitzwegerichweg: (früher Wiesenweg) - unbefestigter Weg, Q2, unbeleuchtet	? 24344,6117 24388,6098 24417,6082
-Spitzwegerichweg: (früher Wiesenweg) - Gras, Q3+, für Autos nicht passierbar, unbeleuchtet	? 24417,6082 24442,6117 24460,6109
-Spitzwegerichweg: (früher Wiesenweg) unbefestigt, teilweise etwas sandig, Q2, unbeleuchtet	? 24460,6109 24528,6177 24623,6251 24773,6329 24910,6388 25113,6452 25187,6549
-#: XXX ^^^
-#: XXX ^^^
-Petersilienweg: (früher Feldweg) Qualität? Wo befindet sich der Weg?	? 24388,6098 24444,6165 24515,6201 24562,6221
-Engelwurzweg: (früher Waldweg) Qualität?	? 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
-Engelwurzweg: (früher Waldweg) Qualität? Geht es Richtung Westen noch weiter?	? 25153,6596 25100,6612
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: by: ^^^
-#: by: ^^^
-#: by: ^^^
+# REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036283513953/283513953/00094009/09-Anlagen/01/DRS0430VK.pdf vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4529 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2013 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Benennung wird wirksam) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2014 (Grundstücksnummerierungen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014 (weitere Grundstücksnummerierungen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (weitere Grundstücksnummerierungen) --- #: XXX Benennung von 7 Privatwegen auf dem Grundstück der KGA "Erpetal" vvv --- #: last_checked: 2013-06-22 (Umbenennung nicht durchgeführt) vvv ---  #: next_check: 2013-10-01 (Benennung wird wirksam) vvv --- #: XXX teilweise früher auch Asternweg, laut DPAG-Mitteilungsblatt 12/2013, teilweise Wiesenweg vvv
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3698 vvv
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036596039932/596039932/00059240/40-Anlagen/02/Benennungsabsichtfuer8PrivatwegeinderAnlageNor.pdf vvv
@@ -3792,3 +3749,4 @@ Königsheideweg -> Südostallee: welche Gaststätte ist hier ausgeschildert?	? 1564
 #: source_id: LS/721-E/14/051
 #: next_check: 2014-10-02
 Schenkenberg - Autobahn: Bau eines Radwegs	?::inwork 46581,105900 47587,106693
+Jahnpromenade (Erkner): Qualität?	? 34325,3183 34352,3189 34493,3339
