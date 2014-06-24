@@ -21170,13 +21170,16 @@ EOF
 	q3::inwork; -12881,-1092 -12961,-1105 -12973,-1106 -13187,-1150
 EOF
      },
-     { from  => 1360350803, # 2013-02-08 20:13
-       until => 1360551600, # 2013-02-11 04:00
-       text  => 'Karlshorster Str. (Rummelsburg) gesperrt (09.02.2013 00 Uhr bis 11.02.2013 04:00 Uhr)',
-       type  => 'gesperrt',
-       source_id => 'INKO_116993',
+     { from  => $isodate2epoch->("2014-06-29 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2014-09-30 23:59:59"),
+       text  => 'Karlshorster Str.: Fahrbahn gesperrt, Fußgänger können passieren, 30.06.2014 bis September 2014',
+       type  => 'handicap',
        data  => <<EOF,
-userdel	2::inwork 15261,10738 15272,10790 15279,10862
+#: next_check_id: KARLSHORSTER-2014
+#: next_check: 2014-09-01
+#: by: http://www.berlin-straba.de/
+#: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
+userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
      { from  => 1361168940, # 2013-02-18 07:29
@@ -22902,6 +22905,15 @@ EOF
 #: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten?
 #: next_check: 2014-07-17
 userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
+EOF
+     },
+     { from  => 1403992800, # 2014-06-29 00:00
+       until => 1418684400, # 2014-12-16 00:00
+       text  => 'Steinhöfel: L36: Ersatzneubau Durchlaß, geplante Vollsperrung ab 30.06.2014',
+       type  => 'gesperrt',
+       source_id => 'LS/721-F/14/087',
+       data  => <<EOF,
+userdel	2::inwork 60418,-397 58317,-1384
 EOF
      },
     );

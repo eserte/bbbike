@@ -1917,6 +1917,7 @@ Industriebahn	B0 -2410,13746
 	F 6937,10363
 	F 12532,11008
 	X 4828,10356
+#: note: Anforderungsampel
 	F 11285,14515
 # REMOVED (Baustellenampel, existiert nicht mehr, 2009-07) ---	X 10635,13207
 	F 11905,15462
@@ -2351,7 +2352,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 3995,12173
 	F 22031,9142
 	F 15356,3759
-# REMOVED --- #: note: provisorische Ampel ---	X::inwork 14906,10820
+#: next_check_id: KARLSHORSTER-2014
+#: next_check: 2014-09-01
+#: note: provisorische Ampel
+#: valid: 20140630-20140930
+	X::inwork 14906,10820
 	F 8667,5372
 	F 5807,12070
 	F 6833,15215

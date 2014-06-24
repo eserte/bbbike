@@ -1393,7 +1393,19 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        },
        undef,
        undef,
-       undef,
+       {
+         'until' => 1412114399,
+         'text' => 'Karlshorster Str.: Fahrbahn gesperrt, Fußgänger können passieren, 30.06.2014 bis September 2014',
+         'from' => 1403992800,
+         'id' => 2416,
+         'data' => '#: next_check_id: KARLSHORSTER-2014
+#: next_check: 2014-09-01
+#: by: http://www.berlin-straba.de/
+#: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
+userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -2017,6 +2029,16 @@ userdel auto	3 6809,11979 6828,12031 6787,12099
 userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/721-F/14/087',
+         'until' => 1418684400,
+         'text' => 'Steinhöfel: L36: Ersatzneubau Durchlaß, geplante Vollsperrung ab 30.06.2014',
+         'from' => 1403992800,
+         'id' => 2583,
+         'data' => 'userdel	2::inwork 60418,-397 58317,-1384
+',
+         'type' => 'gesperrt'
        }
      
 );
