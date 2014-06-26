@@ -28,8 +28,8 @@ Dennewitzplatz	1 7813,10112 7906,10098
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679
 #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen
-#: last_checked: 2014-05-16
-#: check_frequency: 60d
+#: last_checked: 2014-06-23 (Bauarbeiten)
+#: check_frequency: 21d
 Dennewitzplatz	1s:q3 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
 Winterfeldtplatz	1 7080,10098 7126,9825
@@ -1919,10 +1919,10 @@ tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40 14481,13143
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35 14383,10036
 #: note: die beiden Stufengruppen sind so weit entfernt, dass ein Aufsitzen nich lohnt
 tragen (1+3 Stufen)	0:30 13232,12628
-#: note: alternativ kann man Fahrtreppen oder Aufzüge am Ringbahnsteig benutzen vvv
 tragen (34 Stufen)	0:40 14787,10972
 tragen (33 Stufen)	0:40 14764,10877
-#: note ^^^
+tragen oder Aufzug benutzen	0:40 14839,10853
+tragen oder Aufzug benutzen	0:40 14845,10954
 tragen (Durchgang unter der U-Bahn zur Warschauer Str., 15 Stufen)	0:20 13437,10992
 tragen (Treppe, 12 Stufen)	0:20 7370,6451
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60 -19150,7320
@@ -2506,6 +2506,10 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.tagesspiegel.de/berlin/grossbaustelle-in-berlin-bauarbeiten-am-ostkreuz-verzoegern-sich-bis-2017/8210208.html (Termin Wiederaufbau)
+#: next_check: 2018-01-01
+Fußgängerbrücke S-Ostkreuz: Abriss und Neubau	2::inwork 14794,10844 14764,10877 14787,10972 14798,10985
+# 
 #: last_checked: 2014-05-17
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
@@ -2544,13 +2548,7 @@ Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 99
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: XXX t/cgi-mechanize.t anpassen!
-#: next_check_id: STERNDAMM-2014
-#: source_id: IM_020145
-#: by: http://www.tagesspiegel.de/berlin/sperrung-am-bahnhof-schoeneweide-zwangsgeld-drohung-gegen-die-bahn/9923866.html
-#: last_checked: 2014-06-10
-#: next_check: 2014-07-30 (Regelung wird überprüft)
-Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
+# REMOVED (temporary?) --- #: XXX t/cgi-mechanize.t anpassen! --- #: next_check_id: STERNDAMM-2014 --- #: source_id: IM_020145 --- #: by: http://www.tagesspiegel.de/berlin/sperrung-am-bahnhof-schoeneweide-zwangsgeld-drohung-gegen-die-bahn/9923866.html --- #: last_checked: 2014-06-10 --- #: next_check: 2014-07-30 (Regelung wird überprüft) --- Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
 # 
 #: next_check_id: GRENZALLEE-2014
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml
@@ -2615,9 +2613,11 @@ tragen (2 Stufen)	0:5 8818,13365
 #: source_id: INKO_095722_COPY_1
 #: XXX siehe auch routing_helper addition
 #: XXX bei VMZ wurde der Eintrag entfernt (2014-03-31) --- ist aber immer noch aktiv!
+#: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/36485-fertigstellung-der-emil-schulz-bruecke-verzoegert-sich/ (Verzögerung bis August 2014)
+#: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/45172-emil-schulz-bruecke-im-oktober-soll-auch-die-zweite-fahrbahn-fertig-sein/ (Verzögerung bis Oktober 2014)
 #: priority: #A
 #: last_checked: 2014-04-27
-#: check_frequency: 60d
+#: next_check: 2014-10-01
 Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 # 
 # REMOVED (Bauarbeiten beendet) --- #: XXX siehe auch die Umleitungsstrecke --- #: XXX nach den Bauarbeiten asphaltiert --- #: by: http://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10317_Berlin_Strassenbauarbeiten__607379.html (Asphaltierung) --- #: by: http://www.rubu.de/verkehr-planungen.html (Dauer) --- #: by: http://www.rubu.de/mediapool/115/1150729/data/Paul_u_Paula_UL3-Uebersicht-BA.pdf (Übersichtsplan) --- #: last_checked: 2013-08-19 --- #: next_check: 2013-10-03 (geplantes Bauende ist Ende September) --- Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
