@@ -80,6 +80,8 @@ SOURCE_TARGETS+=	gesperrt_$(i)
 SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
 SOURCE_TARGETS+=	culdesac
 
+SOURCE_TARGETS_SOURCES=	${SOURCE_TARGETS:S|$|-orig|}
+
 # These do not have a -orig file of their own, or another type of source file
 COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg berlin berlin_ortsteile
 COMPUTED_TARGETS+=	radwege_exact mount
@@ -925,12 +927,12 @@ ${XXX_TARGETS:C/^/${PERSISTENTTMPDIR}\/.XXX-/:C/$/-$(i)/}:	$(i)-orig
 ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd:	\
 		.check_daily \
 		Makefile \
-		${SOURCE_TARGETS:S|$|-orig|} \
+		${SOURCE_TARGETS_SOURCES} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble --${doormode}-mode \
 	    --fragezeichen-mode fragezeichen-orig \
 	    --no-fragezeichen-mode \
-	    ${SOURCE_TARGETS:S|fragezeichen||:S|$|-orig|} \
+	    ${SOURCE_TARGETS_SOURCES:S|fragezeichen-orig||} \
 	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
 		> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd
@@ -939,14 +941,14 @@ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd:	\
 ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd:	\
 		.check_daily \
 		Makefile \
-		${SOURCE_TARGETS:S|$|-orig|} \
+		${SOURCE_TARGETS_SOURCES} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble \
 	    --coloring '#6c0000 +1w #b05555 +1m #ec8888 +6m #f2a0a0 +1y #fcc8c8 +5y #fdd8d8 +100y #fde0e0'\
 	    --outdoor-mode \
 	    --fragezeichen-mode fragezeichen-orig \
 	    --no-fragezeichen-mode \
-	    ${SOURCE_TARGETS:S|fragezeichen||:S|$|-orig|} \
+	    ${SOURCE_TARGETS_SOURCES:S|fragezeichen-orig||} \
 	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
 		> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
@@ -1964,11 +1966,11 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings-recurring.bbd: $(PERSISTENTTMPDIR)/bbb
 	$(TEMP_BLOCKINGS_TASKS) yml_to_recurring_bbd $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/sourceid-all.yml:		$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd ${SOURCE_TARGETS}
+$(PERSISTENTTMPDIR)/sourceid-all.yml:		$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd ${SOURCE_TARGETS_SOURCES}
 	$(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/sourceid-current.yml:	$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd ${SOURCE_TARGETS}
+$(PERSISTENTTMPDIR)/sourceid-current.yml:	$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd ${SOURCE_TARGETS_SOURCES}
 	$(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
