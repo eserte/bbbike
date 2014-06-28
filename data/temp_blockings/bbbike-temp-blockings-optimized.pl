@@ -796,7 +796,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'http://www.xhain.info/termine/bergmannstrassenfest.htm',
-         'data' => 'userdel	q4::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
+         'data' => 'userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
 userdel auto	3 9487,9209 9505,9306 9524,9426
 userdel auto	3 9524,9426 9505,9306 9487,9209
 ',
@@ -814,7 +814,7 @@ userdel auto	3 9524,9426 9505,9306 9487,9209
                           ],
          'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (27. bis 29. Juni 2014)',
          'id' => 2089,
-         'type' => 'handicap'
+         'type' => 'gesperrt'
        },
        undef,
        undef,
@@ -1909,7 +1909,7 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
          'from' => undef,
          'id' => 2563,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-06-18
+#: last_checked: 2014-06-26
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
@@ -2048,6 +2048,46 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'data' => 'userdel	2::inwork 60418,-397 58317,-1384
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140626.1220.398183.html',
+         'until' => 1407189600,
+         'text' => 'Warnemünder Str.: Asphaltierungsarbeiten in Richtung Norden, Fahrbahn wird nur begrenz verfügbar sein, 30.6.2014 bis 4.8.2014 ',
+         'from' => 1403809173,
+         'id' => 2584,
+         'data' => 'userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140624.1400.398129.html',
+         'until' => 1404511199,
+         'text' => 'Sperrung der Fußgängerbrücke über den Teltowkanal, von Dienstag, dem 01.07.2014 bis Freitag, dem 04.07.2014',
+         'from' => 1404079200,
+         'id' => 2585,
+         'data' => 'userdel	2::inwork 7772,4306 7795,4242
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
+         'until' => 1406930400,
+         'text' => 'Dahmestraße zwischen Schulzendorfer Straße und Kablower Weg: Einbahnstraße Richtung Kablower Weg, Baumaßnahme Berliner Wasserbetriebe, 30.06.2014 bis 01.08.2014',
+         'from' => 1404079200,
+         'id' => 2586,
+         'data' => 'userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22436,-168
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
+         'until' => 1408744800,
+         'text' => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis ca. 22.08.2014',
+         'from' => 1406844000,
+         'id' => 2587,
+         'data' => 'userdel	q4::inwork; 17614,6571 17766,6616
+',
+         'type' => 'handicap'
        }
      
 );

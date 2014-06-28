@@ -18071,10 +18071,10 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6]],
        text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (27. bis 29. Juni 2014)',
-       type  => 'handicap',
+       type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/bergmannstrassenfest.htm',
        data  => <<EOF,
-userdel	q4::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
+userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
 userdel auto	3 9487,9209 9505,9306 9524,9426
 userdel auto	3 9524,9426 9505,9306 9487,9209
 EOF
@@ -22703,7 +22703,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-06-18
+#: last_checked: 2014-06-26
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 EOF
@@ -22914,6 +22914,42 @@ EOF
        source_id => 'LS/721-F/14/087',
        data  => <<EOF,
 userdel	2::inwork 60418,-397 58317,-1384
+EOF
+     },
+     { from  => 1403809173, # 2014-06-26 20:59
+       until => 1407189600, # 2014-08-05 00:00
+       text  => 'Warnemünder Str.: Asphaltierungsarbeiten in Richtung Norden, Fahrbahn wird nur begrenz verfügbar sein, 30.6.2014 bis 4.8.2014 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140626.1220.398183.html',
+       data  => <<EOF,
+userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
+EOF
+     },
+     { from  => 1404079200, # 2014-06-30 00:00
+       until => 1404511199, # 2014-07-04 23:59
+       text  => 'Sperrung der Fußgängerbrücke über den Teltowkanal, von Dienstag, dem 01.07.2014 bis Freitag, dem 04.07.2014',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140624.1400.398129.html',
+       data  => <<EOF,
+userdel	2::inwork 7772,4306 7795,4242
+EOF
+     },
+     { from  => 1404079200, # 2014-06-30 00:00
+       until => 1406930400, # 2014-08-02 00:00
+       text  => 'Dahmestraße zwischen Schulzendorfer Straße und Kablower Weg: Einbahnstraße Richtung Kablower Weg, Baumaßnahme Berliner Wasserbetriebe, 30.06.2014 bis 01.08.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
+       data  => <<EOF,
+userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22436,-168
+EOF
+     },
+     { from  => 1406844000, # 2014-08-01 00:00
+       until => 1408744800, # 2014-08-23 00:00
+       text  => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis ca. 22.08.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
+       data  => <<EOF,
+userdel	q4::inwork; 17614,6571 17766,6616
 EOF
      },
     );

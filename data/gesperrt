@@ -2325,6 +2325,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke	BNP:3:-115:trailer=10 8377,10503
 Drängelgitter	BNP:3:-14:trailer=10 15727,1525
 Drängelgitter	BNP:3:-118:trailer=10 15977,1422
 Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5:-14:trailer=15 17879,11378
@@ -2634,7 +2635,6 @@ Schranke	BNP:3:89:trailer=6 9698,10348
 Drängelgitter	BNP:3:-12:trailer=6 12682,7514
 Barriere	BNP:5:-2 17301,7645
 Drängelgitter	BNP:3:-70:trailer=10 24398,4842
-Drängelgitter (Schloßallee/Straßenbahn)	BNP:5:67 11883,19739
 Drängelgitter	BNP:5:-96 11995,19759
 Drängelgitter	BNP:3:-257:trailer=6 9884,10192
 Barriere	BNP:5:-247:trailer=10 12316,9477
@@ -2895,8 +2895,8 @@ Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu übe
 An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6230,14184 6234,14247 6209,14245
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6209,14245 6234,14247 6237,14309
 schwierig zu querender Mittelstreifen	3nocross::ignrte 7172,13051 7187,13126 7161,13190
-Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen	3::igndisp 7161,13190 7187,13126 7370,13204
-Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen	3::igndisp 7370,13204 7187,13126 7172,13051
+Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen	3::igndisp 7364,13215 7187,13126 7172,13051
+Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen	3::igndisp 7161,13190 7187,13126 7364,13215
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
 schieben - einzelne Stufen	0:20:-147 1372,8011

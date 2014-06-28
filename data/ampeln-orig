@@ -1891,7 +1891,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	B0 8571,9896
 	B0 8497,9654
 	B0 8477,9562
-	B0 8353,9072
+	B0 8344,9085
 	B0 13928,7106
 	F 6276,10401
 	F 8985,13034
@@ -2470,8 +2470,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2014-05-14
-#: next_check: 2014-07-01
+#: last_checked: 2014-06-27
+#: check_frequency: 90d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
@@ -2504,7 +2504,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check: 2015-05-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926
-# REMOVED (zurzeit ausgeschaltet) ---	X::inwork 8634,13588
+# REMOVED (existiert nicht mehr) ---	X::inwork 8634,13588
 	X::inwork 8426,13909
 	X::inwork 8313,13839
 	X::inwork 8775,13606
@@ -2629,6 +2629,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 14346,16241
 #: note: Anforderungsampel
 	F 5155,3502
+#: next_check_id: BLANKENBURGER-2014
+#: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html
+#: next_check: 2015-07-01
+#: valid: 20140701-20150701
+	X::inwork 11269,20667
 # 
 ################################################################################
 #: note: Potsdam vvv

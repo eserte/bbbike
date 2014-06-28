@@ -28,8 +28,8 @@ Dennewitzplatz	1 7813,10112 7906,10098
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679
 #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen
-#: last_checked: 2014-06-23 (Bauarbeiten)
-#: check_frequency: 21d
+#: last_checked: 2014-06-27 (Bauarbeiten)
+#: check_frequency: 14d
 Dennewitzplatz	1s:q3 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
 Winterfeldtplatz	1 7080,10098 7126,9825
@@ -2014,6 +2014,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 8377,10503
 Drängelgitter	BNP:3::trailer=10 15727,1525
 Drängelgitter	BNP:3::trailer=10 15977,1422
 Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5::trailer=15 17879,11378
@@ -2427,8 +2428,7 @@ Drängelgitter	BNP:3::trailer=6 12682,7514
 Barriere	BNP:5 17301,7645
 #: note: ca. 120cm zum versetzten Gitter
 Drängelgitter	BNP:3::trailer=10 24398,4842
-#: unverified_by: ADFC-Plan:
-Drängelgitter (Schloßallee/Straßenbahn)	BNP:5 11883,19739
+# REMOVED (permanent?) --- #: unverified_by: ADFC-Plan: --- Drängelgitter (Schloßallee/Straßenbahn)	BNP:5 11883,19739
 Drängelgitter	BNP:5 11995,19759
 #: note: Abstand zwischen den versetzten Gittern ca. 150cm 
 Drängelgitter	BNP:3::trailer=6 9884,10192
@@ -2540,7 +2540,7 @@ Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,1
 #: next_check_id ^^^
 # 
 #: next_check_id: SCHINKELPLATZ_2014 vvv
-#: last_checked: 2014-05-20 vvv
+#: last_checked: 2014-06-26 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 10008,12274 9994,12368 9996,12401
 Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 9943,12364 9961,12273
@@ -2589,7 +2589,7 @@ Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13
 #: next_check_id: HELLWEG-2014
 #: XXX: vom Hellweg-Parkplatz kann man einige Meter Richtung Norden passieren
 #: XXX: "inwork" ist ein Euphemismus --- es sind keinerlei Anzeichen von Bauarbeiten zu sehen
-#: last_checked: 2014-03-07
+#: last_checked: 2014-06-27
 #: check_frequency: 100d
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Zugang durch Bauzäune versperrt	2::inwork 8243,9766 8233,9863 8201,9869 8255,9938 8285,9956
 # 
@@ -2628,7 +2628,7 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 #: XXX siehe auch Busspur in radwege-orig vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
-#: last_checked: 2014-04-02 vvv
+#: last_checked: 2014-06-27 vvv
 #: check_frequency: 90d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -2674,7 +2674,7 @@ Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
-#: last_checked: 2014-05-14
+#: last_checked: 2014-06-26
 #: next_check: 2015-01-01
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
