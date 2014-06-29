@@ -622,9 +622,7 @@ bbbike - munin plugin for bbbike
 
     BBBIKE_ROOT_DIR=/path/to/bbbike
     cd /etc/munin/plugins
-    ln -s $BBBIKE_ROOT_DIR/misc/munin-plugins/bbbike
-    ln -s bbbike bbbike-output
-    ln -s bbbike bbbike-output
+    for subtype in ajax appid maptype output pref route; do ln -s $BBBIKE_ROOT_DIR/misc/munin-plugins/bbbike bbbike-$subtype; done
 
 Also create a configuration file /etc/munin/munin-bbbike.conf with
 additional commandline arguments, especially one for the logfile:
