@@ -1,7 +1,7 @@
 #!/usr/bin/perl
-# Copyright (c) Sep 2011 Wolfram Schneider, http://bbbike.org
+# Copyright (c) Sep 2011-2013 Wolfram Schneider, http://bbbike.org
 #
-# munin-routes - munin statistics for BBBike, searches per interval
+# munin-bbbike - munin statistics for BBBike, searches per interval
 
 use Getopt::Long;
 use Data::Dumper;
@@ -16,9 +16,10 @@ use warnings;
 # 0: quiet, 1: normal, 2: verbose
 my $debug = defined $ENV{MUNIN_BBBIKE_DEBUG} ? $ENV{MUNIN_BBBIKE_DEBUG} : 0;
 
-my $database = '/var/tmp/munin-bbbike';
-my $logfile  = '/var/log/lighttpd/bbbike.log';
-my $type     = 'route';
+my $database    = '/var/tmp/munin-bbbike';
+my $logfile     = '/var/log/lighttpd/bbbike.log';
+my $logfile_api = '/var/log/lighttpd/api.bbbike.log';
+my $type        = 'route';
 
 # ignore requests from localhost or 10.x.x.x
 my $ignore_localrequests = 1;
@@ -36,8 +37,14 @@ my $munin_config_file = "/etc/munin/munin-bbbike.conf";
 # should be 0 or 1
 my $min_value = 0;
 
+# ignore old offset files (> 60 minutes)
+my $ignore_old_offset = 1;
+
+# reset offset
+my $reset = 0;
+
 my $config = {
-    'ajax'   => [qw/api street-coord crossing maptype weather location/],
+    'ajax'   => [qw/api log street-coord crossing maptype weather location/],
     'output' => [
         qw/print gpx-track gpx-route kml-track pdf png palmdoc googlemaps mapserv xml gpsies/
     ],
@@ -50,6 +57,7 @@ my $config = {
         qw/bing_birdview bing_hybrid bing_map cycle hike_bike hybrid mapnik mapnik_bw mapnik_de
           public_transport roadmap satellite tah terrain/
     ],
+    'appid' => [qw/android-0 vmz ios1 android1 bbbikede other useragent/],
 };
 
 sub usage {
@@ -60,11 +68,13 @@ usage: $0 [ options ] config
 
 --debug=0..2    		default: $debug
 --logfile=/path/to/logfile	default: $logfile
+--logfile-api=/path/to/logfile	default: $logfile_api
 --database=/path/to/logfile	default: $database
 --type=<stat type>		$types, default: $type
 --interval=interval		interval in minutes, default: $interval;
 --frontend-proxy=[0,1]		run as frontend proxy, default: $frontend_proxy
 --ignore-localrequests=[0..1]	ignore localhost or 10.x.x.x requests, default: $ignore_localrequests
+--reset=[0,1]                   reset offset to zero
 
 Munin bbbike config file: $munin_config_file
 EOF
@@ -80,7 +90,7 @@ sub interval {
 }
 
 sub get_types {
-    my @types = qw/ajax route output pref maptype/;
+    my @types = qw/ajax route output pref maptype appid/;
     return sort @types;
 }
 
@@ -104,6 +114,26 @@ graph_scale no
 data.label Route Searches
 data.min $min_value
 EOF
+}
+
+# routes by appid
+sub config_appid () {
+    my $data = <<EOF;
+graph_title Route Searches by Apps
+graph_vlabel Searches
+graph_category BBBike
+graph_info Number of Route Searches by Apps
+graph_period minute
+graph_scale no
+EOF
+
+    foreach my $label ( sort @{ $config->{'appid'} } ) {
+        my $label_e = escape_label($label);
+        $data .= "$label_e.label $label\n";
+        $data .= "$label_e.min $min_value\n";
+    }
+
+    return $data;
 }
 
 sub config_pref () {
@@ -189,6 +219,7 @@ sub config {
     return
         $type eq 'ajax'    ? &config_ajax
       : $type eq 'route'   ? &config_routes
+      : $type eq 'appid'   ? &config_appid
       : $type eq 'output'  ? &config_output
       : $type eq 'pref'    ? &config_pref
       : $type eq 'maptype' ? &config_maptype
@@ -223,9 +254,26 @@ sub parse_log {
     my $st = stat($logfile) or die "stat $logfile: $!";
     my $offset = $st->size;
 
+    # check for stale databases which are too old
+    my $regnerate_database = 1;
+    if ( -e $database ) {
+        my $database_st = stat($database) or die "stat $database: $!";
+
+        # ok, fresh data
+        if ( $database_st->mtime >= time() - 60 * 60 ) {
+            $regnerate_database = 0;
+        }
+        $regnerate_database = 0 if $ignore_old_offset == 0;
+    }
+
     # first run, save file offset of logfile, do nothing
-    if ( !-e $database ) {
+    if ($regnerate_database) {
         write_offset( $database, $offset );
+
+        # run again to produce first results
+        if ( !$args{'first_run'} ) {
+            return parse_log( @_, 'first_run' => 1 );
+        }
         return;
     }
 
@@ -277,12 +325,22 @@ sub parse_log {
         );
         $data = display_results( $config->{'output'}, $count );
     }
+    elsif ( $type eq 'appid' ) {
+        my $count = count_appid(
+            'logfile' => $logfile_api,
+            'offset'  => $last_offset,
+            'type'    => $type,
+            'output'  => $config->{'appid'}
+        );
+        $data = display_results( $config->{'appid'}, $count );
+    }
     else {
         die "Unknown type: $type\n";
     }
 
     # store current log file size in database for next run
-    $st = stat($logfile) or die "stat $logfile: $!";
+    $st = stat( $type eq 'appid' ? $logfile_api : $logfile )
+      or die "stat $logfile: $!";
     write_offset( $database, $st->size );
 
     return $data;
@@ -291,10 +349,20 @@ sub parse_log {
 sub get_offset {
     my $file = shift;
 
+    if ($reset) {
+        warn "Reset offset to zero in $file\n" if $debug;
+        return 0;
+    }
+
     my $fh = IO::File->new( $file, "r" ) or die "open $file: $!\n";
     my $number = <$fh>;
 
-    chomp($number);
+    if ( defined $number ) {
+        chomp($number);
+    }
+    else {
+        $number = 0;
+    }
 
     warn "Got offset $number from $file\n" if $debug;
     return $number;
@@ -326,6 +394,7 @@ sub count_routes {
     my $offset = $args{'offset'};
 
     my $counter = 0;
+    warn "open $file\n" if $debug;
     my $fh = IO::File->new( $file, "r" ) or die "open $file: $!\n";
 
     if ( defined $offset ) {
@@ -334,16 +403,14 @@ sub count_routes {
     }
 
     while (<$fh>) {
+        next if !/" 200 /;    # successfull requests only
 
         # proxy request with hostname
         s,"GET http://.*?/,"GET /, if $frontend_proxy;
 
         next if $ignore_localrequests && localrequest($_);
 
-        if (   m,"GET /\S+pref_seen=1,
-            && /startc=[0-9\-\+]/
-            && /zielc=[0-9\-\+]/ )
-        {
+        if (m,"GET /\S+pref_seen=[12],) {
             $counter++;
         }
     }
@@ -359,6 +426,7 @@ sub count_pref {
     my $file   = $args{'logfile'};
     my $offset = $args{'offset'};
 
+    warn "open $file\n" if $debug;
     my $fh = IO::File->new( $file, "r" ) or die "open $file: $!\n";
 
     if ( defined $offset ) {
@@ -369,6 +437,7 @@ sub count_pref {
     my $counter = 0;
     my $res = { "speed" => 0 };
     while (<$fh>) {
+        next if !/" 200 /;    # successfull requests only
 
         # proxy request with hostname
         s,"GET http://.*?/,"GET /, if $frontend_proxy;
@@ -419,6 +488,7 @@ sub count_ajax {
     my $offset = $args{'offset'};
 
     my $counter = {};
+    warn "open $file\n" if $debug;
     my $fh = IO::File->new( $file, "r" ) or die "open $file: $!\n";
 
     if ( defined $offset ) {
@@ -427,6 +497,7 @@ sub count_ajax {
     }
 
     while (<$fh>) {
+        next if !/" 200 /;    # successfull requests only
 
         # proxy request with hostname
         s,"GET http://.*?/,"GET /, if $frontend_proxy;
@@ -450,6 +521,7 @@ sub count_maptype {
     my $offset = $args{'offset'};
 
     my $counter = {};
+    warn "open $file\n" if $debug;
     my $fh = IO::File->new( $file, "r" ) or die "open $file: $!\n";
 
     if ( defined $offset ) {
@@ -458,6 +530,7 @@ sub count_maptype {
     }
 
     while (<$fh>) {
+        next if !/" 200 /;    # successfull requests only
 
         # proxy request with hostname
         s,"GET http://.*?/,"GET /, if $frontend_proxy;
@@ -466,6 +539,50 @@ sub count_maptype {
 
         if (m,"GET /cgi/maptype.cgi.*?maptype=(\S+),) {
             $counter->{$1}++;
+        }
+    }
+
+    return $counter;
+}
+
+#
+# parse the bbbike access log file and count map type request
+#
+sub count_appid {
+    my %args   = @_;
+    my $file   = $args{'logfile'};
+    my $offset = $args{'offset'};
+
+    my $counter = {};
+    warn "open $file\n" if $debug;
+    my $fh = IO::File->new( $file, "r" ) or die "open $file: $!\n";
+
+    if ( defined $offset ) {
+        warn "Starting at offset: $offset\n" if $debug;
+        seek( $fh, $offset, 0 );
+    }
+
+    my %hash = map { $_ => 1 } @{ $config->{"appid"} };
+    my $id;
+
+    while (<$fh>) {
+
+        #next if !/" 200 /;    # successfull requests only
+
+        # proxy request with hostname
+        s,"GET http://.*?/,"GET /, if $frontend_proxy;
+
+        next if $ignore_localrequests && localrequest($_);
+
+        if (m,"GET /\S+pref_seen=[12],) {
+
+            if (/appid=(.*?)["\s&;]/) {
+                $id = exists $hash{$1} ? $1 : "other";
+                $counter->{$id}++;
+            }
+            elsif (m, "BBBike/\d+ CFNetwork,) {
+                $counter->{"useragent"}++;
+            }
         }
     }
 
@@ -482,6 +599,7 @@ sub count_output {
     my $offset = $args{'offset'};
 
     my $counter = {};
+    warn "open $file\n" if $debug;
     my $fh = IO::File->new( $file, "r" ) or die "open $file: $!\n";
 
     if ( defined $offset ) {
@@ -491,6 +609,7 @@ sub count_output {
 
 # "GET /Erlangen/?startc=10.95985%2C49.58876;zielc=11.02811%2C49.57724;pref_seen=1;pref_speed=20;pref_cat=;pref_quality=;pref_specialvehicle=;scope=;output_as=print
     while (<$fh>) {
+        next if !/" 200 /;    # successfull requests only
 
         # proxy request with hostname
         s,"GET http://.*?/,"GET /, if $frontend_proxy;
@@ -557,6 +676,7 @@ sub parse_config {
     warn "Open config file $file\n" if $debug;
 
     return if !-f $file;
+    warn "open $file\n" if $debug;
     my $fh = IO::File->new( $file, "r" ) or die "open $file: $!\n";
 
     my @param;
@@ -583,16 +703,18 @@ $type = &detect_type if &detect_type;
 
 # read parameters from munin-bbbike config file
 my @config = parse_config($munin_config_file);
-push( @ARGV, @config ) if @config;
+unshift( @ARGV, @config ) if @config;
 
 GetOptions(
     "debug=i"                => \$debug,
     "database=s"             => \$database,
     "logfile=s"              => \$logfile,
+    "logfile-api=s"          => \$logfile_api,
     "type=s"                 => \$type,
     "interval=i"             => \$interval,
-    "frontend-proxy"         => \$frontend_proxy,
+    "frontend-proxy=i"       => \$frontend_proxy,
     "ignore-localrequests=i" => \$ignore_localrequests,
+    "reset=i"                => \$reset,
     "help"                   => \$help,
 ) or die usage;
 
