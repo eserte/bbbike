@@ -993,10 +993,10 @@ Dominicusstr. -> Feurigstr.: Überqueren verboten	3::igndisp 6687,8385 6807,8309 
 Schranke	3 8992,14176 8825,14401 8776,14364
 Schranke	3 8776,14364 8825,14401 8992,14176
 Plonzstr.	1 16227,12280 16252,12411
-Seddiner -> Hohenschönhausener Weg: Poller	3 18296,12115 18408,12105 18420,11864
-Seddiner -> Hohenschönhausener Weg: Poller	3 18559,12105 18408,12105 18420,11864
-Hohenschönhausener Weg -> Seddiner: Poller	3 18420,11864 18408,12105 18296,12115
-Hohenschönhausener Weg -> Seddiner: Poller	3 18420,11864 18408,12105 18559,12105
+Seddiner -> Hohenschönhausener Weg: Poller	3 18296,12115 18411,12100 18420,11864
+Seddiner -> Hohenschönhausener Weg: Poller	3 18555,12101 18411,12100 18420,11864
+Hohenschönhausener Weg -> Seddiner: Poller	3 18420,11864 18411,12100 18296,12115
+Hohenschönhausener Weg -> Seddiner: Poller	3 18420,11864 18411,12100 18555,12101
 Gluckweg	1 6039,3275 5853,3050
 Rosenfelder Ring	3 17978,12084 18093,12093 18165,12091
 Rosenfelder Ring	3 18165,12091 18093,12093 17978,12084
@@ -1171,7 +1171,7 @@ Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4156,11522 4331,11554 4452,
 Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4156,11522 4331,11554 4345,11710
 Sybelstr.	1 4017,10585 4256,10583
 Hüttendorfer Weg	1 21409,-109 21463,-280
-Brückenstr.: Anlieger frei	1 17728,5756 17900,6072
+Brückenstr.: Anlieger frei	1:Anlieger 17728,5756 17900,6072
 Passauer -> Lietzenburger	3 6033,10403 6020,10351 6147,10383
 Am Hanffgraben	1 16805,1488 16698,1392
 Rütlistr.: Durchfahrt verboten	2 12565,9200 12490,9056
@@ -1253,7 +1253,7 @@ Teikeweg: Poller	3 9428,4419 9412,4537 9519,4537
 Medebacher Weg: Schranke	3 1886,19835 1896,19801 1945,19622
 Medebacher Weg: Schranke	3 1945,19622 1896,19801 1886,19835
 Dievenowstr.	1 3228,7401 3208,7328 3189,7249 3202,7121
-Abbestr.: nur für Anlieger, herausfahrbare Poller	2 4762,12229 4683,12072
+Abbestr.: nur für Anlieger, herausfahrbare Poller	2:Anlieger 4762,12229 4683,12072
 Knesebeckstr. - Hardenbergstr.	3 4897,11354 4919,11605 4900,11626
 Sakrower Kirchweg	1 -8162,4025 -8255,3946 -8308,3902 -8401,3894 -8449,3907
 Sibeliusweg	1 -6797,4991 -6789,5052 -6787,5076 -6762,5133 -6747,5169
@@ -1541,7 +1541,7 @@ Hedwigstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16505,16096 16520,1620
 Hedwigstr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16505,16096 16520,16200 16476,16216
 Suermondtstr. -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16656,16157 16520,16200 16505,16096
 Suermondtstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16476,16216 16520,16200 16551,16307
-Kohlfurter Str.: provisorisch, Anlieger frei	1 11464,10102 11274,10184 11094,10261
+Kohlfurter Str.: provisorisch, Anlieger frei	1:Anlieger 11464,10102 11274,10184 11094,10261
 Friedbergstr.:	3 2812,10753 2766,10750 2679,10931
 Friedbergstr.:	3 2812,10753 2766,10750 2697,10669
 Friedbergstr.:	3 2812,10753 2766,10750 2845,10840
@@ -1687,3 +1687,4 @@ BMW-Niederlassung: Poller	3 2282,11463 2219,11324 2180,11318
 Straße 206	1 13247,17262 13321,17318 13406,17382
 Poller	3 27568,1188 27775,1016 27810,987
 Poller	3 27810,987 27775,1016 27568,1188
+Marzahner Chaussee [Wohngebiet] nur für Anlieger	2:Anlieger 18417,11854 18500,11847 18580,11874

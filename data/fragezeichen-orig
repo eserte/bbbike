@@ -712,34 +712,35 @@ B¸rknerstr.: wird hier eine Fahrradstraﬂe eingerichtet?	?::projected 11673,9720 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/4508103636166975/36166975/00104984/84-Anlagen/02/116-2013-1Blatt1ausB-PlanXVII-50aa-16012012.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2014
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5889 (Festsetzung)
-#: last_checked: 2014-03-29 vvv
-#: next_check: 2014-06-29 vvv
+#: last_checked: 2014-06-29 vvv
+#: check_frequency: 90d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
 Planstraﬂe 1: Qualit‰t? Name vielleicht Kirchdorfer Str.?	?::projected 19842,9895 19853,9774 19857,9682
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
 Planstraﬂe 2 (Fortsetzung Rˆmerweg): Name vielleicht Frauenauer Str.? Qualit‰t etc?	?::projected 19663,9757 19853,9774
-#: XXX PLZ=10318
-Planstraﬂe 3 -> Viechtacher Str.: Qualit‰t etc?	?::projected 19660,9681 19732,9678 19801,9680 19857,9682 19893,9683
-#: XXX PLZ=10318
-Planstraﬂe 4 -> Eisensteiner Str.: Qualit‰t etc?	?::projected 19732,9678 19727,9484
+# REMOVED (in strassen) --- #: XXX PLZ=10318 --- Planstraﬂe 3 -> Viechtacher Str.: Qualit‰t etc?	?::projected 19657,9666 19732,9678 19801,9680 19857,9682 19893,9683
+Planstraﬂe 4 -> Eisensteiner Str.: Qualit‰t der Straﬂe?	?::inwork 19732,9678 19727,9484
 #: XXX PLZ=10318
 Planstraﬂe 5 -> Rinchnacher Weg: Qualit‰t etc?	?::projected 19801,9680 19797,9480
 #: XXX PLZ=10318
 Planstraﬂe 6 -> Teisnacher Str.: Qualit‰t etc?	?::projected 19857,9682 19849,9477
 #: XXX PLZ=10318
-Planstraﬂe 7 -> Regener Str.: Qualit‰t etc?	?::projected 19651,9489 19727,9484 19797,9480 19849,9477 19878,9477
+Planstraﬂe 7 -> Regener Str.: Qualit‰t etc?	?::projected 19646,9490 19727,9484 19797,9480 19849,9477 19890,9476
 #: XXX Planstraﬂe 8+10 -> Regener Str.
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/03/246-2013-2Anlage2UebersichtsplanErschliessung.pdf vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf vvv
-Planstraﬂe 8: Name vielleicht Regener Str.? Qualit‰t?	?::projected 19830,9087 19869,9403 19878,9477
+#: osm_watch: way id="287119368" version="2"
+Planstraﬂe 8: Name vielleicht Regener Str.? Qualit‰t?	?::projected 19869,9151 19885,9400 19890,9476
+#: osm_watch: way id="193373966" version="3"
+Straﬂe in Bau: genaue Lage, Name (hier auch die Regener Str.?), Qualit‰t?	?::inwork 19626,9166 19869,9151
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
-Planstraﬂe 9: Name vielleicht Patersdorfer Str.? Qualit‰t etc?	?::projected 19700,9040 19830,9087
-Planstraﬂe (evtl. 10): Name vielleicht auch Regener Str.? Qualit‰t?	?::projected 19869,9403 19795,9407
+Planstraﬂe 9: Name vielleicht Patersdorfer Str.? Qualit‰t etc?	?::projected 19700,9040 19759,9041 19869,9151
+Planstraﬂe (evtl. 10): Name vielleicht auch Regener Str.? Qualit‰t?	?::projected 19885,9400 19795,9407
 #: by: ^^^
 #: by: ^^^
 #: by: ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -764,7 +765,7 @@ Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verl‰ngert?	? 8632,1191
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 kˆnnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2014-03-29
+#: last_checked: 2014-06-29
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: f¸r 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
@@ -1097,6 +1098,7 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014
+#: last_checked: 2014-06-29
 #: next_check: 2014-07-11
 Sewanstr.: dieser Abschnitt wird zur L¸ckstr.	? 16647,10632 16699,10611
 # 
@@ -1129,11 +1131,7 @@ Kurt-Weill-Platz: neue (Geh-)wege	? 23778,14995 23698,15049
 Martha-Jacob-Platz: Benennung eines Platzes	? 480,11204 454,11159
 # 
 # REMOVED (existiert nicht mehr) --- Tiergarten: existiert dieser Weg noch oder ist es nur ein Trampelpfad?	? 8210,11775 8140,11850
-# 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5596
-#: last_checked: 2014-06-04
-#: check_frequency: 30d
-Tuchollaplatz: entstehen hier Aufpflasterungen und/oder ein verkehrsberuhigter Bereich?	? 15541,10892 15649,10922
+# REMOVED (es wurden provisorische Gehwegvorstreckungen erstellt; eventuell passiert hier nichts weiter) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5596 --- #: last_checked: 2014-06-04 --- #: check_frequency: 30d --- Tuchollaplatz: entstehen hier Aufpflasterungen und/oder ein verkehrsberuhigter Bereich?	? 15541,10892 15649,10922
 # 
 zum Unfallkrankenhaus Berlin: Qualit‰t wahrscheinlich Verbundsteinpflaster, q1 wegen Fuﬂg‰ngern, Beleuchtung?	? 21400,12135 21403,12230 21429,12393 21476,12590 21494,12617 21530,12778
 # 
@@ -1171,13 +1169,8 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 #: check_frequency: 180d
 Neubaugebiet am Dahlemer Weg: entstehen hier neue Straﬂen oder werden bestehende Straﬂen verl‰ngert?	? 1946,3142 2094,3231 2203,3213 2183,3101 2031,3004 1946,3142
 # 
-# REMOVED (realisiert) --- #: last_checked: 2013-10-29 (Kreidemarkierungen zu sehen) --- #: next_check: 2014-11-29 --- Seddiner Str.: anscheinend werden hier Radspuren markiert? Was passiert mit der vorhandenen Busspur?	? 18559,12105 18408,12105 18296,12115 18215,12123
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2014 (Nummerierungen, evtl. hier)
-#: XXX nˆrdlich hiervon werden weitere H‰user entstehen
-#: last_checked: 2014-02-08
-#: next_check: 2014-05-08
-Beilsteiner Str.: wird es hier f¸r das neue Wohngebiet eine Erschlieﬂungsstraﬂe geben?	? 18737,12753 18706,12488
+# REMOVED (realisiert) --- #: last_checked: 2013-10-29 (Kreidemarkierungen zu sehen) --- #: next_check: 2014-11-29 --- Seddiner Str.: anscheinend werden hier Radspuren markiert? Was passiert mit der vorhandenen Busspur?	? 18555,12101 18408,12105 18296,12115 18215,12123
+# REMOVED (nein, es gibt nur senkrechte Stichstraﬂen zu den einzelnen H‰usern in der zweiten Reihe) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2014 (Nummerierungen, evtl. hier) --- #: XXX nˆrdlich hiervon werden weitere H‰user entstehen --- #: last_checked: 2014-02-08 --- #: next_check: 2014-05-08 --- Beilsteiner Str.: wird es hier f¸r das neue Wohngebiet eine Erschlieﬂungsstraﬂe geben?	? 18737,12753 18706,12488
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
 #: XXX Privatstraﬂe
@@ -2782,7 +2775,7 @@ Kurze Str. (Potsdam): Qualit‰t?	? -11635,-2414 -11475,-2454
 Kolonie Daheim (Potsdam): Qualit‰t?	? -11487,-2373 -11472,-2406 -11475,-2454 -11481,-2525 -11487,-2618 -11466,-2698 -11437,-2748 -11203,-2868
 Kolonie Daheim (Potsdam): Qualit‰t?	? -11481,-2525 -11595,-2635
 Nuthewinkel: Qualit‰t?	? -11194,-2790 -11203,-2868 -11162,-3047
-# REMOVED (nicht ausgeschildert, sah privat aus --- aber evtl. entsteht hier ein neues Wohnviertel) --- Rheinpfalzallee: geht es jenseits der Zwieseler Str. noch weiter?	? 19651,9489 19775,9475
+# REMOVED (nicht ausgeschildert, sah privat aus --- aber evtl. entsteht hier ein neues Wohnviertel) --- Rheinpfalzallee: geht es jenseits der Zwieseler Str. noch weiter?	? 19646,9490 19775,9475
 #: by: Prenzlauer Zeitung, 2009-03-19
 Seel¸bber Weg: ab Kreisel 135 Meter Kopfsteinpflaster mit begleitendem Radweg; danach weitere 650 Meter asphaltiert. Ist das tats‰chlich die Straﬂe nach Prenzlau?	? 42938,96695 42843,96821 42474,97313
 Prenzlau - Klinkow: Qualit‰t?	? 37410,103257 37132,103352 36562,103694 36467,103672 36006,103805

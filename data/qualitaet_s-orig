@@ -212,7 +212,7 @@ Harzer Str.: Kopfsteinpflaster	Q2 12871,9356 12897,9365
 Kiefholzstr.: Kopfsteinpflaster	Q2 13606,9578 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2+ 15060,11006 15102,11120
-Marzahner Chaussee: Kopfsteinpflaster	Q2- 18559,12105 18420,11864 18417,11854 18380,11747
+Marzahner Chaussee: Kopfsteinpflaster	Q2- 18555,12101 18420,11864 18417,11854 18380,11747
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22857,6155 22777,6151 22603,6141 22467,6135
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, aber Radweg existiert	Q1; 22467,6135 22603,6141 22777,6151 22857,6155
 Stellingdamm: Asphalt	Q0 22857,6155 23011,6181 23131,6237 23222,6276
@@ -914,7 +914,7 @@ Weg am Müggelsee: Asphalt	Q0- 27081,2528 26989,2570 26859,2596 26627,2610 26457,
 Radweg am Müggelsee: asphaltiert	Q0 27218,2300 26805,2381 26459,2440 26026,2532 25948,2474
 Rheinsteinstr.: Asphalt, Parkstreifen gepflastert	Q0 18988,8791 19073,8828 19116,8846
 Rheinsteinstr.: Asphalt	Q0 19116,8846 19163,8867 19299,8946
-Rheinsteinstr.: Asphalt, Parkstreifen gepflastert	Q0 19299,8946 19500,9043 19629,9099
+Rheinsteinstr.: Asphalt, Parkstreifen gepflastert	Q0 19299,8946 19500,9043 19621,9097
 Köpenicker Allee: wechselnd: holpriger Fahrweg, mäßiger Asphalt	Q2 19819,8554 19898,8410 19990,8253 20096,8077 20226,7846 20280,7749
 Köpenicker Allee: Beton	Q0- 19500,9043 19587,8973 19699,8773 19819,8554
 Köpenicker Allee: mäßiger Asphalt	Q1 18939,9417 19020,9364
@@ -2425,7 +2425,8 @@ Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21619,9993 21611,
 Wuhlewanderweg: Parkweg	Q1 21686,9876 21678,9817 21633,9731 21587,9609 21524,9488 21471,9246 21385,9049
 Andernacher Str.: mäßiger Asphalt	Q1- 19249,8662 19159,8622 19075,8590 19030,8559 19000,8509 18949,8437
 Rheinsteinpark: Asphalt	Q0- 19073,8828 19145,8659
-Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322 19020,9364
+Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322
+Rolandseck: Asphalt mit Schäden	Q1 18977,9322 19020,9364
 # REMOVED (nicht (mehr?) mäßig) --- Waldowallee: mäßiger Asphalt	Q1 18977,9322 18939,9417 18916,9468
 Seifertweg: Asphalt	Q0 18870,9960 18843,10028
 Am Tierpark [Nebenfahrbahn]: Asphalt	Q1+ 18442,10467 18397,10608
@@ -2491,8 +2492,7 @@ Ludwig-Richter-Str.: Asphalt	Q0 15002,8651 14940,8583
 Am Oberhafen: Asphalt	Q0 13712,6656 13688,6739
 Salzmannstr.: Asphalt	Q0 16847,10092 16855,10127
 #: XXX wird hier auch neu asphaltiert?
-#: last_checked: 2014-03-29
-#: check_frequency: 90d
+#: last_checked: 2014-06-29 (zurzeit Bauarbeiten)
 Salzmannstr.: mäßiger Beton	Q2+ 16855,10127 16887,10271 16941,10487
 #: corrected_by: Heike (helabe...) (Verbundsteinpflaster -> Asphalt) (confirmed by srt)
 Kohlweißlingstr.: Asphalt	Q0 21535,11267 21598,11190 21640,11107 21677,11017 21723,10920
@@ -3291,10 +3291,10 @@ Hatzenporter Weg: Asphalt	Q0 19217,13054 19186,12795 19175,12690 19165,12594
 Hatzenporter Weg: Beton	Q0- 19165,12594 19138,12381
 Kröver Str.: Asphalt	Q0 19186,12795 19046,12814 18999,12824
 Kröver Str.: Kopfsteinpflaster	Q2 18999,12824 18956,12826 18896,12831 18800,12838
-Thurandtweg: Asphalt	Q0 18968,12589 18969,12624 19017,12708 19035,12748 19046,12814
-Thurandtweg: Asphalt	Q0 19017,12708 19060,12700 19175,12690
+Thurandtweg: Asphalt	Q0 18962,12589 18969,12624 19012,12706 19035,12748 19046,12814
+Thurandtweg: Asphalt	Q0 19012,12706 19060,12700 19175,12690
 Thurandtweg: Asphalt	Q0 19052,12591 19060,12700
-Reiler Str.: Beton	Q0- 18766,12442 18927,12384 19028,12383 19095,12383 19138,12381 19253,12376
+Reiler Str.: Beton mit einigen Schäden	Q1+ 18766,12442 18927,12384 19028,12383 19095,12383 19138,12381 19253,12376
 Valwiger Str.: Beton	Q0- 18917,12271 19079,12263 19095,12383
 Lütztalweg: Beton	Q0 18953,12589 18948,12548
 Lütztalweg: Asphalt	Q0 18948,12548 18927,12384
@@ -3303,7 +3303,7 @@ Loefer Weg: grober Asphalt	Q1 19052,12591 19028,12383
 Am Rosengarten: Beton	Q1 18654,12255 18707,12225 18749,12226
 (Am Rosengarten - Lütztalweg): unbefestigter Weg	Q2 18749,12226 18834,12228
 (Am Rosengarten - Lütztalweg): wassergebundene Decke	Q1 18834,12228 18867,12265 18917,12271
-Hohenschönhauser Weg: mäßiger Asphalt	Q1 18420,11864 18408,12105
+Hohenschönhauser Weg: mäßiger Asphalt	Q1 18420,11864 18411,12100
 Rosenfelder Ring: Kopfsteinpflaster	Q2+ 17466,11960 17384,11976
 Rosenfelder Ring: Beton	Q1+ 18014,11837 18004,12010 17978,12084 17917,12106 17846,12102 17487,12012 17466,11960
 Rosenfelder Ring: Beton	Q0- 17477,11893 17772,11862 18014,11837
@@ -3894,10 +3894,10 @@ Rudolf-Grosse-Str.: Verbundsteinpflaster	Q1 19141,9709 19142,9755
 Rudolf-Grosse-Str.: Beton	Q0 19142,9755 19144,9810
 Römerweg: Beton	Q0 19236,9710 19450,9728 19459,9842
 Römerweg: Asphalt	Q1 19599,9747 19663,9757
-Zwieseler Str.: sehr guter Asphalt	Q0+ 19669,9876 19663,9757 19660,9681 19651,9489 19634,9192 19629,9099
+Zwieseler Str.: sehr guter Asphalt	Q0+ 19669,9876 19663,9757 19657,9666 19646,9490 19628,9194 19626,9166 19621,9097
 Zwieseler Str.: Beton	Q0 19669,9876 19683,10031 19688,10094 19695,10196 19711,10426
-(Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19629,9099 19631,9072 19700,9040
-Bodenmaiser Weg: Asphalt	Q1+ 19407,9232 19488,9218 19634,9192
+(Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19621,9097 19638,9070 19700,9040
+Bodenmaiser Weg: Asphalt	Q1+ 19407,9232 19488,9218 19628,9194
 Robert-Siewert-Str.: Asphalt mit Schäden	Q1 19669,9876 19842,9895
 Beerfelder Str.: unbefestigte, holprige Straße	Q2 19842,9895 19819,10090 19810,10155
 Pirolstr. (Karlshorst): Beton	Q0 19688,10094 19789,10091
@@ -4542,8 +4542,7 @@ Themarer Str.: Asphalt mit Schäden	Q1 18424,14791 18412,14712 18357,14631
 (Marchlewskistr. - Gubener Str.): Kopfsteinpflaster	Q2+ 13097,12166 13173,12202 13168,12219
 Gubener Str.: Kopfsteinpflaster	Q2+ 13168,12219 13151,12266
 Gubener Str.: Asphalt	Q0- 13151,12266 13198,12311
-#: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten?
-#: last_checked: 2014-05-16
+# REMOVED (ja) --- #: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten? --- #: last_checked: 2014-05-16
 Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8592,13646 8601,13580
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
 Alter Schönefelder Weg: Asphalt	Q0 19743,1804 19669,1729 19655,1670 19632,1593 19595,1546
@@ -9474,6 +9473,10 @@ Volkspark Friedrichshain: wassergebundene Decke	Q1 12420,13370 12483,13418
 Volkspark Friedrichshain: wassergebundene Decke	Q1 12445,13320 12405,13300 12404,13266 12369,13209
 Volkspark Friedrichshain: kleinteiliges Kopfsteinpflaster	Q1- 12445,13320 12420,13370
 Volkspark Friedrichshain: Asphalt	Q0 12483,13418 12450,13542 12344,13627 12372,13755
+Viechtacher Str.: Asphalt	Q0 19657,9666 19732,9678 19801,9680 19857,9682 19893,9683
+Gensinger Str. [Wohngebiet]: Asphalt	Q0- 18927,12135 18913,11907 18910,11838
+Marzahner Chaussee [Wohngebiet]: Asphalt	Q0 18417,11854 18500,11847 18580,11874
+(Marzahner Chaussee - Gensinger Str.): Asphalt	Q0- 18580,11874 18698,11914 18913,11907
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -15774,7 +15777,7 @@ Geraer Ring: Asphalt und Beton	Q0- 20706,18269 20734,18219 20866,18174
 #: by ^^^
 # 
 #: by: Eckhard Gauterin:
-Eltzbachweg: guter Asphalt	Q0 18876,12622 18913,12599 18953,12589 18968,12589 19052,12591 19165,12594 19282,12597 19367,12600 19410,12601
+Eltzbachweg: guter Asphalt	Q0 18876,12622 18913,12599 18953,12589 18962,12589 19052,12591 19165,12594 19282,12597 19367,12600 19410,12601
 # 
 #: by: Pawel Kortschagin vvv
 Sägebockweg: guter Asphalt	Q0 15850,22905 15918,23065 15958,23142 16002,23208
@@ -24591,7 +24594,7 @@ Rheinpfalzallee: geflickter Asphalt	Q1 19030,9530 19128,9523
 #: corrected_by: srt (Asphalt Q2 -> Kopfsteinpflaster Q1)
 Rheinpfalzallee: Kopfsteinpflaster	Q2 19128,9523 19221,9517
 #: corrected_by: srt (Q1 -> Q0; wahrscheinlich wurde gegen 2007-10-15 der Asphaltbelag erneuert)
-Rheinpfalzallee: Asphalt	Q0 19221,9517 19424,9502 19510,9497 19651,9489
+Rheinpfalzallee: Asphalt	Q0 19221,9517 19424,9502 19510,9497 19646,9490
 #: by: ^^^
 # 
 #: by: Sandra Tabbert (Luzifera) [AM]

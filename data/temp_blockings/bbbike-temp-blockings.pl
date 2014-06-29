@@ -20854,7 +20854,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html',
        data  => <<EOF,
-userdel	q4::inwork 18988,8791 19073,8828 19116,8846 19163,8867 19299,8946 19500,9043 19629,9099
+userdel	q4::inwork 18988,8791 19073,8828 19116,8846 19163,8867 19299,8946 19500,9043 19621,9097
 EOF
      },
      { from  => 1348376400, # 2012-09-23 07:00
@@ -21171,14 +21171,15 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2014-06-29 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2014-09-30 23:59:59"),
-       text  => 'Karlshorster Str.: Fahrbahn gesperrt, Fußgänger können passieren, 30.06.2014 bis September 2014',
+       until => $isodate2epoch->("2014-07-14 04:00:00"),
+       text  => 'Karlshorster Str.: Fahrbahn gesperrt, Fußgänger können passieren, 30.06.2014 bis 14.07.2014',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2014
-#: next_check: 2014-09-01
+#: next_check: 2014-07-14
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
+#: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
@@ -22922,6 +22923,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140626.1220.398183.html',
        data  => <<EOF,
+#: source_id: IM_022270
 userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
 EOF
      },

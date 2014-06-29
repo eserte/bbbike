@@ -1394,14 +1394,15 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        {
-         'until' => 1412114399,
-         'text' => 'Karlshorster Str.: Fahrbahn gesperrt, Fußgänger können passieren, 30.06.2014 bis September 2014',
+         'until' => 1405303200,
+         'text' => 'Karlshorster Str.: Fahrbahn gesperrt, Fußgänger können passieren, 30.06.2014 bis 14.07.2014',
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014
-#: next_check: 2014-09-01
+#: next_check: 2014-07-14
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
+#: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 ',
          'type' => 'handicap'
@@ -2055,7 +2056,8 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'text' => 'Warnemünder Str.: Asphaltierungsarbeiten in Richtung Norden, Fahrbahn wird nur begrenz verfügbar sein, 30.6.2014 bis 4.8.2014 ',
          'from' => 1403809173,
          'id' => 2584,
-         'data' => 'userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
+         'data' => '#: source_id: IM_022270
+userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
 ',
          'type' => 'handicap'
        },

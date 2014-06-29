@@ -546,8 +546,8 @@ Dominicusstr.: Überqueren verboten	3nocross 6687,8385 6807,8309 6935,8208
 Schranke	3 8992,14176 8825,14401 8776,14364
 Schranke	3 8776,14364 8825,14401 8992,14176
 Plonzstr.	1 16227,12280 16252,12411
-Seddiner -> Hohenschönhausener Weg: Poller	3 * 18408,12105 18420,11864
-Hohenschönhausener Weg -> Seddiner: Poller	3 18420,11864 18408,12105 *
+Seddiner -> Hohenschönhausener Weg: Poller	3 * 18411,12100 18420,11864
+Hohenschönhausener Weg -> Seddiner: Poller	3 18420,11864 18411,12100 *
 #: by: Malte Wollitz:
 Gluckweg	1 6039,3275 5853,3050
 # REMOVED (Ampel existiert) --- Am Tierpark - Criegernweg	3 18408,10774 18417,10738 18509,10757
@@ -643,7 +643,7 @@ Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 *
 Mittelinsel	3nocross 4345,11710 4331,11554 4312,11354
 Sybelstr.	1 4017,10585 4256,10583
 Hüttendorfer Weg	1 21409,-109 21463,-280
-Brückenstr.: Anlieger frei	1 17728,5756 17900,6072
+Brückenstr.: Anlieger frei	1:Anlieger 17728,5756 17900,6072
 #: by: http://farm2.static.flickr.com/1149/5102146837_e49b2295c5.jpg
 Passauer -> Lietzenburger	3 6033,10403 6020,10351 6147,10383
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20080516.1245.100630.html (laut URL ist die Einbahnstraßenregelung bis Ende 2010 gedreht)
@@ -697,7 +697,7 @@ Teikeweg: Poller	3 9519,4537 9412,4537 *
 Teikeweg: Poller	3 * 9412,4537 9519,4537
 Medebacher Weg: Schranke	3 * 1896,19801 *
 Dievenowstr.	1 3228,7401 3208,7328 3189,7249 3202,7121
-Abbestr.: nur für Anlieger, herausfahrbare Poller	2 4762,12229 4683,12072
+Abbestr.: nur für Anlieger, herausfahrbare Poller	2:Anlieger 4762,12229 4683,12072
 Knesebeckstr. - Hardenbergstr.	3 4897,11354 4919,11605 4900,11626
 Sakrower Kirchweg	1 -8162,4025 -8255,3946 -8308,3902 -8401,3894 -8449,3907
 Sibeliusweg	1 -6797,4991 -6789,5052 -6787,5076 -6762,5133 -6747,5169
@@ -879,7 +879,7 @@ Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13614,15
 Pasedagplatz: nur für Straßenbahnen	2 14170,17249 14150,17255 14099,17195
 #: note: für Fußgänger existiert eine Überquerungsmöglichkeit einige Meter weiter östlich
 Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16476,16216 16520,16200 16656,16157
-Kohlfurter Str.: provisorisch, Anlieger frei	1 11464,10102 11274,10184 11094,10261
+Kohlfurter Str.: provisorisch, Anlieger frei	1:Anlieger 11464,10102 11274,10184 11094,10261
 #: by: http://www.flickr.com/photos/79200003@N05/8050610558/in/pool-gwb
 Friedbergstr.:	3 2812,10753 2766,10750 *
 # 
@@ -992,3 +992,4 @@ BMW-Niederlassung: Poller	3 2282,11463 2219,11324 2180,11318
 #: corrected_by: srt ((mittlerweile?) offen für Radfahrer, nach gesperrt_car verschoben)
 Straße 206	1 13247,17262 13321,17318 13406,17382
 Poller	3 * 27775,1016 *
+Marzahner Chaussee [Wohngebiet] nur für Anlieger	2:Anlieger 18417,11854 18500,11847 18580,11874
