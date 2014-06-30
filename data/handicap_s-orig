@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # 
 #: XXX nach den Bauarbeiten vielleicht auch diese Fahrtrichtung asphaltiert
-#: last_checked: 2014-06-29
+#: last_checked: 2014-06-30
 Simplonstr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14468,11203 14531,11142
 # 
 #: last_checked: 2014-06-29 vvv
@@ -90,9 +90,7 @@ Chausseestr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8935,13844 8870,13926
 #: check_frequency: 60d
 Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
 # 
-#: last_checked: 2014-06-26
-Platz vor dem Neuen Tor: erschwerter Zugang von der Invalidenstr.	q4::inwork 8588,13673 8592,13646 8601,13580
-# 
+# REMOVED --- #: last_checked: 2014-06-26 --- Platz vor dem Neuen Tor: erschwerter Zugang von der Invalidenstr.	q4::inwork 8588,13673 8590,13653 8601,13580
 # REMOVED (Ende) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html --- #: source_id: IM_021790 --- #: valid: 20140428-20140516 vvv --- #: last_checked: 2014-05-05 vvv --- #: next_check: 2014-05-16 vvv --- #: priority: #A vvv --- Luisenstr. am Platz vor dem Neuen Tor: Fahrbahn bis 16. Mai 2014 gesperrt	q4::inwork 8626,13641 8619,13689
 # REMOVED (laut Tsp vom 15.12.2013) --- #: source_id: INKO_113388 --- #: last_checked: 2013-12-11 --- #: next_check: 2014-08-31 --- Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # REMOVED (laut Tsp vom 15.12.2013) --- #: source_id: INKO_091722 --- #: source_id: INKO_091722_COPY_1 --- #: XXX siehe auch temporäre Ampel an der Neustädtischen Kirchstr. --- #: XXX siehe auch Busspur UdL --- #: last_checked: 2013-12-11 --- #: next_check: 2013-12-31 --- Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
@@ -173,24 +171,24 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaeli
 # 
 #: source_id: IM_021585
 #: note: Ausweichen mittlerweile auf dem südlichen Bürgersteig
-#: last_checked: 2014-06-26
-#: next_check: 2014-06-30 (Abschnitt bis Chausseestr. wird wieder in beiden Richtungen befahrbar sein)
+#: last_checked: 2014-06-30
+#: check_frequency: 7d
 #: priority: #A
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html (planmäßige Fertigstellung)
 #: XXX nach den Bauarbeiten wird es hier einen Radfahrstreifen geben, evtl. durchgängig bis zum Hauptbahnhof
-Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 8935,13844 8842,13798 8690,13723
+Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str.: Fahrbahn noch nicht freigegeben, aber schon befahrbar	q2::inwork; 8935,13844 8842,13798 8690,13723
 # 
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
 # 
 #: XXX: wann ist die Kreuzung wieder befahrbar?
-#: last_checked: 2014-06-26
-#: next_check: 2014-07-02
+#: last_checked: 2014-06-30
+#: next_check: 2014-07-08
 #: source_id: IM_021906
 #: priority: #A
-Scharnhorststr.: Sackgasse an der Invalidenstraße	q3::inwork 8450,13599 8313,13839
+Scharnhorststr.: Sackgasse an der Invalidenstraße	q2::inwork 8450,13599 8313,13839
 #
-#: last_checked: 2014-06-26 (Bauarbeiten wegen Neubau)
+#: last_checked: 2014-06-30 (Bauarbeiten wegen Neubau)
 #: check_frequency: 30d
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
@@ -232,7 +230,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-06-06
+#: last_checked: 2014-06-30
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -2000,6 +1998,8 @@ Georg-Steger-Weg: einige Fußgänger	q1 1493,2249 1480,2199 1452,2095 1461,2073 14
 Königsheideweg - Südostallee: Kleingartengelände	q1 15784,5865 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059
 Engelwurzweg: teilweise recht eng	q3 25059,6554 24738,6418
 (Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18580,11874 18698,11914 18913,11907
+#: XXX_prog BS auf beiden Seiten, ansonsten q2
+Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8588,13673 8590,13653
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

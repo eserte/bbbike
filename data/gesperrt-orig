@@ -2554,7 +2554,14 @@ Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 99
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-# REMOVED (temporary?) --- #: XXX t/cgi-mechanize.t anpassen! --- #: next_check_id: STERNDAMM-2014 --- #: source_id: IM_020145 --- #: by: http://www.tagesspiegel.de/berlin/sperrung-am-bahnhof-schoeneweide-zwangsgeld-drohung-gegen-die-bahn/9923866.html --- #: last_checked: 2014-06-10 --- #: next_check: 2014-07-30 (Regelung wird überprüft) --- Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
+#: XXX t/cgi-mechanize.t (ca. Zeile 673) anpassen!
+#: next_check_id: STERNDAMM-2014
+#: source_id: IM_020145
+#: by: http://www.tagesspiegel.de/berlin/sperrung-am-bahnhof-schoeneweide-zwangsgeld-drohung-gegen-die-bahn/9923866.html
+#: XXX laut VMZ bis 28.02.2017 17:00 Uhr
+#: last_checked: 2014-06-10
+#: next_check: 2014-07-30
+Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
 # 
 #: next_check_id: GRENZALLEE-2014
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml
@@ -2569,8 +2576,9 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 # 
 #: next_check_id: ZIMMERMANNSTRBR-2014
 #: last_checked: 2014-02-08
-#: next_check: 2015-12-31
+#: next_check: 2014-06-30
 #: priority: #A
+#: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
 Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
 # 
 #: last_checked: 2014-06-09
@@ -2680,7 +2688,7 @@ Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
-#: last_checked: 2014-06-26
+#: last_checked: 2014-06-30
 #: next_check: 2015-01-01
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
@@ -2774,7 +2782,7 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 174
 # REMOVED --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
 # 
 #: note: abgeschlossener Zaun
-#: last_checked: 2014-04-15
+#: last_checked: 2014-06-30
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 

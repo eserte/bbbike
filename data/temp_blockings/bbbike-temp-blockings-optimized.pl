@@ -794,28 +794,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.xhain.info/termine/bergmannstrassenfest.htm',
-         'data' => 'userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
-userdel auto	3 9487,9209 9505,9306 9524,9426
-userdel auto	3 9524,9426 9505,9306 9487,9209
-',
-         'periodic' => 1,
-         'until' => 1404079199,
-         'from' => 1403733600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              6
-                            ]
-                          ],
-         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (27. bis 29. Juni 2014)',
-         'id' => 2089,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1394,16 +1373,18 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        {
-         'until' => 1405303200,
-         'text' => 'Karlshorster Str.: Fahrbahn gesperrt, Fußgänger können passieren, 30.06.2014 bis 14.07.2014',
+         'source_id' => 'IM_022268',
+         'until' => 1411401600,
+         'text' => 'Karlshorster Str. und Marktstr. bis Schreiberhauer Str.: Fahrbahn gesperrt, langsame Umfahrung über Gehweg möglich, 30.06.2014 bis 22.09.2014',
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014
+#: last_checked: 2014-06-30
 #: next_check: 2014-07-14
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
-userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+userdel	q4::inwork 15261,10738 15272,10790 15279,10862 15144,10905
 ',
          'type' => 'handicap'
        },
@@ -1470,20 +1451,7 @@ userdel	q4::inwork 13085,7904 13117,7939 13151,7914
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20130531.1040.385488.html',
-         'until' => 1404136800,
-         'text' => 'Blankenburger Straße, Bauarbeiten von Lindenberger Straße bis Grumbkowstraße, Einbahnstraße offen Richtung Westen, ebenfalls Einbahnstraßenregelungen in der Lindenberger Straße, Karower Straße, Grumbkowstraße, ab 4. Juni 2013 bis Mitte 2014',
-         'from' => 1370210400,
-         'id' => 2435,
-         'data' => '#: source_id: INKO_117520
-#: source_id: IM_021030
-#: last_checked: 2014-05-21
-#: next_check: 2014-06-30
-userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1764,8 +1732,8 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
          'id' => 2527,
          'data' => '#: next_check_id: ZIMMERMANNSTRBR-2014
 #: last_checked: 2014-02-08
-#: next_check: 2015-12-31
-# REMOVED (ja) --- #: add_fragezeichen: Ist die Zimmermannstraßenbrücke trotz der Bauarbeiten trotzdem noch für Fußgänger und Radfahrer passierbar?
+#: next_check: 2014-06-30 (bei VMZ entfernt!)
+#: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 ',
          'type' => 'gesperrt'
@@ -1932,19 +1900,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_021961',
-         'until' => 1404136800,
-         'text' => 'Ellen-Epstein-Str.: Baustelle zwischen Erna-Samuel-Str. und Quitzowstr., Fahrbahn gesperrt, ab: 22.05.2014 08 Uhr bis Ende Juni 2014 ',
-         'from' => 1400536800,
-         'id' => 2572,
-         'data' => '#: XXX wie sieht die Situation nach den Bauarbeiten aus? Rückbau?
-#: last_checked: 2014-05-24
-#: next_check: 2014-06-30
-userdel	q4::inwork 6074,14194 6074,14215 6084,14251 6118,14289
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20140521.1005.397374.html',
          'until' => 1405202399,
@@ -2052,8 +2008,8 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        },
        {
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140626.1220.398183.html',
-         'until' => 1407189600,
-         'text' => 'Warnemünder Str.: Asphaltierungsarbeiten in Richtung Norden, Fahrbahn wird nur begrenz verfügbar sein, 30.6.2014 bis 4.8.2014 ',
+         'until' => 1407160800,
+         'text' => 'Warnemünder Str.: Asphaltierungsarbeiten in Richtung Norden, Fahrbahn wird nur begrenzt verfügbar sein, 30.6.2014 bis 4.8.2014 ',
          'from' => 1403809173,
          'id' => 2584,
          'data' => '#: source_id: IM_022270
@@ -2088,6 +2044,16 @@ userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
          'from' => 1406844000,
          'id' => 2587,
          'data' => 'userdel	q4::inwork; 17614,6571 17766,6616
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_022280',
+         'until' => 1405375199,
+         'text' => 'Boxhagener Str.: zwischen Neue Bahnhofstr. und Wühlischstr. Baustelle, Fahrbahn in Richtung Warschauer Str. gesperrt, voraussichtlich bin zum 14.07.2014',
+         'from' => undef,
+         'id' => 2588,
+         'data' => 'userdel	q4::inwork; 14918,11249 14799,11330 14771,11345 14752,11369
 ',
          'type' => 'handicap'
        }
