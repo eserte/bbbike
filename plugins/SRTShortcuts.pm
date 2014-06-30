@@ -2940,6 +2940,15 @@ sub _get_tk_widgetdump {
 	    if (_is_mounted($mount_point)) {
 		die "$mount_point is still mounted, despite of umount call";
 	    }
+	} else {
+	    # Make sure file is really written if possible
+	    if (eval { require File::Sync; 1 }) {
+		if (open my $fh, $dest) {
+		    File::Sync::fsync($fh);
+		}
+	    } elsif (eval { require BBBikeUtil; 1 } && BBBikeUtil::is_in_path('fsync')) {
+		system('fsync', $dest);
+	    }
 	}
     }
 
