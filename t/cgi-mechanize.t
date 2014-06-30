@@ -670,7 +670,7 @@ for my $browser (@browsers) {
 	} else {
 	    fail("Cannot get length from content");
 	}
-	if (strftime("%Y-%m-%d %H:%M:%S", localtime) lt "2014-07-30 23:59:59") {
+	if (strftime("%Y-%m-%d %H:%M:%S", localtime) lt "2017-02-28 17:00:00") {
 	    $like_long_data->(qr{Baumschulenweg}, "Expected street in Ausweichroute (while Sterndamm is blocked)");
 	} else {
 	    $like_long_data->(qr{Sterndamm}, "Expected street in Ausweichroute");
