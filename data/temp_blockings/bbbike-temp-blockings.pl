@@ -22965,4 +22965,14 @@ EOF
 userdel	q4::inwork; 14918,11249 14799,11330 14771,11345 14752,11369
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Reichenberger Str., Ohlauer Str.: Polizeiabsperrung, Durchfahrt nicht möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg
+#: next_check: 2014-07-07
+userdel	2::temp 12048,10097 12229,10014 12341,10218
+EOF
+     },
     );

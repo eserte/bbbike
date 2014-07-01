@@ -740,7 +740,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -1604,16 +1604,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020145',
-         'until' => 1404187200,
-         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), bis 1. Juli 2014',
-         'from' => 1403739104,
-         'id' => 2469,
-         'data' => 'userdel	2::inwork 17736,5441 17886,5587
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1921,16 +1912,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140528.1315.397553.html',
-         'until' => 1404165599,
-         'text' => 'Nördliche Zufahrt der Grumbkowstraße an der Blankenburger Straße gesperrt (im Juni für 4 Wochen)',
-         'from' => 1401573600,
-         'id' => 2575,
-         'data' => 'userdel	q2::inwork 11563,20048 11419,20327
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_022090',
@@ -2056,6 +2038,17 @@ userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
          'data' => 'userdel	q4::inwork; 14918,11249 14799,11330 14771,11345 14752,11369
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Reichenberger Str., Ohlauer Str.: Polizeiabsperrung, Durchfahrt nicht möglich',
+         'from' => undef,
+         'id' => 2589,
+         'data' => '#: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg
+#: next_check: 2014-07-07
+userdel	2::temp 12048,10097 12229,10014 12341,10218
+',
+         'type' => 'gesperrt'
        }
      
 );
