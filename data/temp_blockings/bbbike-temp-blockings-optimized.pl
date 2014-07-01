@@ -2049,6 +2049,18 @@ userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
 userdel	2::temp 12048,10097 12229,10014 12341,10218
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_022295',
+         'until' => 1405461599,
+         'text' => 'Rigaer Str. zwischen Zellestr. und Proskauer Str.: Bauarbeiten, Fahrbahn gesperrt, 02.07.2014 bis Mitte Juli 2014 ',
+         'from' => 1404079200,
+         'id' => 2590,
+         'data' => '#: XXX evtl. wird hier asphaltiert?
+#: next_check: 2014-07-14
+userdel	q4::inwork 14266,12446 14133,12482
+',
+         'type' => 'handicap'
        }
      
 );
