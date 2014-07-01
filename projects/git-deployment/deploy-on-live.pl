@@ -14,10 +14,13 @@
 
 use strict;
 
+use Cwd qw(cwd);
 use File::Basename qw(dirname basename);
 use File::Spec;
 use Getopt::Long;
 use IPC::Run 'run';
+use POSIX 'strftime';
+use Sys::Hostname 'hostname';
 use Term::ANSIColor 'colored';
 
 sub sudo (@);
@@ -157,12 +160,13 @@ if ($do_switch) {
 	    or warn "Symlink the staging directory failed, please check later!\n";
     }
 
-    chdir "$current_live_dir/BBBike"
+    chdir "$live_dir/BBBike"
 	or error "chdir failed: $!";
 
     if ($dry_run) {
 	warn "NOTE: would run quick live tests now...\n";
     } else {
+	print STDERR "Run short test suite on live system...\n";
 	local $ENV{LANG} = 'C';
 	local $ENV{BBBIKE_TEST_SKIP_MAPSERVER} = 1;
 	local $ENV{BBBIKE_TEST_SKIP_PALMDOC} = 1;
@@ -173,6 +177,59 @@ if ($do_switch) {
 	    error "cgihead.t test run on live system failed";
 	}
     }
+
+    {
+	my($live_color) = cwd =~ m{(red|blue)/BBBike$};
+	if (!$live_color) {
+	    error "Cannot get 'color' from " . cwd;
+	}
+	(my $tag_prefix = hostname) =~ s{[^A-Za-z0-9_-]+}{_}g;
+	$tag_prefix = 'deployment/' . $tag_prefix;
+	my $today = strftime '%Y%m%d', localtime;
+	my $today_tag;
+	for my $suffix ('', map { '_'.$_ } (1..9)) {
+	    $today_tag = $tag_prefix.'_'.$live_color.'/'.$today.$suffix;
+	    my $result;
+	    if (!run ['git', 'tag', '-l', $today_tag], ">", \$result) {
+		error "'git tag -l $today_tag' command failed";
+	    }
+	    if ($result eq '') {
+		# use this tag
+		last;
+	    }
+	}
+	my @git_tag_cmds =
+	    (
+	     ['git', 'tag', '-a', '-m', 'automatic deployment', $today_tag],
+	     ['git', 'tag', '-f', $tag_prefix.'/current'],
+	    );
+	if ($dry_run) {
+	    warn "NOTE: would run the following git tag commands\n";
+	    for (@git_tag_cmds) {
+		warn "     @$_\n";
+	    }
+	} else {
+	    for my $git_tag_cmd (@git_tag_cmds) {
+		print STDERR "+ @$git_tag_cmd\n";
+		if (!run $git_tag_cmd) {
+		    error "'@$git_tag_cmd' failed";
+		}
+	    }
+	}
+
+	chdir "$staging_dir/BBBike"
+	    or error "chdir failed: $!";
+
+	my @git_tag_delete_cmd = ('git', 'tag', '-d', $tag_prefix.'/current');
+	if ($dry_run) {
+	    warn "NOTE: would run the following git tag command on the staging directory\n";
+	    warn "      @git_tag_delete_cmd\n";
+	} else {
+	    print STDERR "+ @git_tag_delete_cmd\n";
+	    run \@git_tag_delete_cmd; # don't die on error, may happen on 1st time deployment
+	}
+    }
+
 } else {
     warn "NOTE: skip final switching step...\n";
 }
