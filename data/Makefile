@@ -29,7 +29,6 @@ CUT?=			${NO_LOCALE} cut
 
 VALID_DATE?=		today
 
-HAFAS2HAFAS=		${PERL} ${MISCSRCDIR}/hafas2hafas -strict
 CONVERT2HAFAS=		${PERL} ${MISCSRCDIR}/convert2hafas -strict
 CONVERT_ORIG_FILE=	${MISCSRCDIR}/convert_orig_to_bbd
 CONVERT_ORIG=		${PERL} ${CONVERT_ORIG_FILE}
