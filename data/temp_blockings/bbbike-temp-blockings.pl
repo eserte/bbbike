@@ -17487,13 +17487,14 @@ EOF
 userdel	2::inwork 39239,101950 39066,102017
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-27 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-09-29 23:59:59"),
+     { from  => $isodate2epoch->("2014-09-04 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-09-07 20:00:00"),
        periodic => 1, # manchmal/immer (?) zwei Termine im Jahr, zweiter Termin # 2013 war es am 12./13. Oktober, nicht im September!
        recurrences => [['yearly', days => 1, months => 8]], # kann aber auch erst im September oder sogar im Oktober sein
-       text  => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Leopoldplatz gesperrt, 28. und 29. September 2013',
+       text  => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Leopoldplatz gesperrt, 5. bis 7. September 2014',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.marktcom.de/veranstaltung/16203-Traditionelles-Muellerstra%C3%9Fenfest (Termin 2014)
 userdel	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
 EOF
      },
@@ -22511,7 +22512,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Uferweg wegen Bauarbeiten gesperrt',
+       text  => 'Uferweg an der Havel wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
@@ -22521,7 +22522,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Wege am Ufer wegen Bauarbeiten gesperrt',
+       text  => 'Wege am Havelufer wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
@@ -22948,11 +22949,12 @@ userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22436,-168
 EOF
      },
      { from  => 1406844000, # 2014-08-01 00:00
-       until => 1408744800, # 2014-08-23 00:00
-       text  => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis ca. 22.08.2014',
+       until => $isodate2epoch->("2014-08-23 23:59:59"),
+       text  => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 23.08.2014',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.140733.php
 userdel	q4::inwork; 17614,6571 17766,6616
 EOF
      },
@@ -22967,12 +22969,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Reichenberger Str., Ohlauer Str.: Polizeiabsperrung, Durchfahrt nicht möglich',
+       text  => 'Reichenberger Str., Ohlauer Str., Lausitzer Str.: Polizeiabsperrung, Durchfahrt nicht möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg
+#: last_checked: 2014-07-02
 #: next_check: 2014-07-07
-userdel	2::temp 12048,10097 12229,10014 12341,10218
+userdel	2::temp 12169,10310 12048,10097 12229,10014 12341,10218
+	q4::temp 12229,10014 12398,9938
 EOF
      },
      { from  => 1404079200, # 2014-06-30 00:00
@@ -22984,6 +22988,14 @@ EOF
 #: XXX evtl. wird hier asphaltiert?
 #: next_check: 2014-07-14
 userdel	q4::inwork 14266,12446 14133,12482
+EOF
+     },
+     { from  => $isodate2epoch->("2014-10-10 00:00:00"), # 1 Tag Vorlauf
+       until => 1413151200, # 2014-10-13 00:00
+       text  => 'Badstr.: Veranstaltung (Oktoberfest Badstraße) zwischen Pankstr. und Behmstr., von 11.10.2014 bis 12.10.2014',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
 EOF
      },
     );

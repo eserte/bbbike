@@ -700,7 +700,26 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.marktcom.de/veranstaltung/16203-Traditionelles-Muellerstra%C3%9Fenfest (Termin 2014)
+userdel	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
+',
+         'periodic' => 1,
+         'until' => 1410112800,
+         'from' => 1409817600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              8
+                            ]
+                          ],
+         'text' => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Leopoldplatz gesperrt, 5. bis 7. September 2014',
+         'type' => 'gesperrt',
+         'id' => 2039
+       },
        {
          'until' => undef,
          'text' => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
@@ -1772,7 +1791,7 @@ userdel	2::inwork 21385,9049 21365,9059 21351,9066
        undef,
        {
          'until' => undef,
-         'text' => 'Uferweg wegen Bauarbeiten gesperrt',
+         'text' => 'Uferweg an der Havel wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2543,
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
@@ -1783,7 +1802,7 @@ userdel	2::inwork -12363,-1742 -12457,-1857
        },
        {
          'until' => undef,
-         'text' => 'Wege am Ufer wegen Bauarbeiten gesperrt',
+         'text' => 'Wege am Havelufer wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2544,
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
@@ -2021,11 +2040,12 @@ userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
        },
        {
          'source_id' => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
-         'until' => 1408744800,
-         'text' => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis ca. 22.08.2014',
+         'until' => 1408831199,
+         'text' => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 23.08.2014',
          'from' => 1406844000,
          'id' => 2587,
-         'data' => 'userdel	q4::inwork; 17614,6571 17766,6616
+         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.140733.php
+userdel	q4::inwork; 17614,6571 17766,6616
 ',
          'type' => 'handicap'
        },
@@ -2041,12 +2061,14 @@ userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
        },
        {
          'until' => undef,
-         'text' => 'Reichenberger Str., Ohlauer Str.: Polizeiabsperrung, Durchfahrt nicht möglich',
+         'text' => 'Reichenberger Str., Ohlauer Str., Lausitzer Str.: Polizeiabsperrung, Durchfahrt nicht möglich',
          'from' => undef,
          'id' => 2589,
          'data' => '#: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg
+#: last_checked: 2014-07-02
 #: next_check: 2014-07-07
-userdel	2::temp 12048,10097 12229,10014 12341,10218
+userdel	2::temp 12169,10310 12048,10097 12229,10014 12341,10218
+	q4::temp 12229,10014 12398,9938
 ',
          'type' => 'gesperrt'
        },
@@ -2061,6 +2083,15 @@ userdel	2::temp 12048,10097 12229,10014 12341,10218
 userdel	q4::inwork 14266,12446 14133,12482
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1413151200,
+         'text' => 'Badstr.: Veranstaltung (Oktoberfest Badstraße) zwischen Pankstr. und Behmstr., von 11.10.2014 bis 12.10.2014',
+         'from' => 1412892000,
+         'id' => 2591,
+         'data' => 'userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
+',
+         'type' => 'gesperrt'
        }
      
 );
