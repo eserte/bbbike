@@ -18,6 +18,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../data");
+use Tie::IxHash;
 use Route;
 use Getopt::Long;
 use Karte;
@@ -837,7 +838,7 @@ sub get_surrounding_points {
     my $cr = get_crossings();
     my $ss = $cr->{$middle};
     return if !$ss;
-    my %res;
+    tie my %res, 'Tie::IxHash';
     for my $s_pos (@$ss) {
 	my $s_obj = $specsperre_str->get($s_pos);
 	my $c = $s_obj->[Strassen::COORDS()];
