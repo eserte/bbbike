@@ -22968,7 +22968,7 @@ userdel	q4::inwork; 14918,11249 14799,11330 14771,11345 14752,11369
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1404364637, # undef, # XXX
        text  => 'Reichenberger Str., Ohlauer Str., Lausitzer Str.: Polizeiabsperrung, Durchfahrt nicht möglich',
        type  => 'gesperrt',
        data  => <<EOF,

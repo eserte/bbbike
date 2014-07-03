@@ -2059,19 +2059,7 @@ userdel	q4::inwork; 17614,6571 17766,6616
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Reichenberger Str., Ohlauer Str., Lausitzer Str.: Polizeiabsperrung, Durchfahrt nicht möglich',
-         'from' => undef,
-         'id' => 2589,
-         'data' => '#: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg
-#: last_checked: 2014-07-02
-#: next_check: 2014-07-07
-userdel	2::temp 12169,10310 12048,10097 12229,10014 12341,10218
-	q4::temp 12229,10014 12398,9938
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_022295',
          'until' => 1405461599,
