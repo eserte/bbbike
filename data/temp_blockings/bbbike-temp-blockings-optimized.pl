@@ -2080,6 +2080,18 @@ userdel	q4::inwork 14266,12446 14133,12482
          'data' => 'userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1404511199,
+         'text' => 'Plönzeile (Oberschöneweide): Bombenentschärfung am Freitag (04.07.2014), genaue Uhrzeit und Sperrbereich noch unbekannt',
+         'from' => 1404403879,
+         'id' => 2592,
+         'data' => 'userdel	2::temp 18574,6197 18473,6265 18574,6401 18645,6511 18801,6471 19118,6248 19033,6167 18970,6110 18861,6000 18843,6013 18766,6067
+userdel	2::temp 18970,6110 18859,6198 18767,6268 18676,6333 18574,6197 18670,6132 18767,6268 18812,6330
+userdel	2::temp 18670,6132 18766,6067 18859,6198
+userdel	2::temp 18574,6401 18676,6333
+',
+         'type' => 'gesperrt'
        }
      
 );
