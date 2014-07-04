@@ -774,7 +774,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = "11.004";
+$VERSION = '11.005';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -1590,7 +1590,11 @@ sub choose_form {
 	    $nice_berlinmap = $nice_abcmap = 0;
 	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version("Safari", 419, 9999999)) {
-	    $nice_berlinmap = $nice_abcmap = 1;
+	    #$nice_berlinmap = $nice_abcmap = 1;
+	    $nice_berlinmap = $nice_abcmap = 0; # be defensive --- Chrome is currently also broken, and I cannot test Safari
+	    $prefer_png = 1;
+	} elsif ($bi->is_browser_version('Chrome', 0, 999999)) {
+	    $nice_berlinmap = $nice_abcmap = 0; # problems if the page is zoomed
 	    $prefer_png = 1;
 	}
     }
@@ -1948,8 +1952,8 @@ EOF
 
     # Hack for browsers which use the first button, regardless whether it's
     # image or button, for firing in a <Return> event
-    # XXX Does not work for Opera, Safari and MSIE are untested...
-    if ($bi->{user_agent_name} =~ /^(konqueror|safari|opera|msie)/i) {
+    # XXX Does not work for Opera; Safari, Chrome and MSIE are untested...
+    if ($bi->{user_agent_name} =~ /^(konqueror|safari|chrome|opera|msie)/i) {
 	print <<EOF;
 <input type="submit" value="@{[ M("Weiter") ]}" style="text-align:center;visibility:hidden"/>
 EOF
