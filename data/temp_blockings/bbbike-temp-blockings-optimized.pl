@@ -95,7 +95,27 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::temp 9668,11928 9656,12021
+	2::temp 9524,12010 9656,12021
+	2::temp 9536,11912 9668,11928
+',
+         'periodic' => 1,
+         'until' => 1404936000,
+         'from' => 1404252000,
+         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (3.7.2014 - 7.7.2014; Sperrungen fangen schon früher an und dauern länger)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              7
+                            ]
+                          ],
+         'type' => 'gesperrt',
+         'id' => 1710
+       },
        undef,
        undef,
        undef,
