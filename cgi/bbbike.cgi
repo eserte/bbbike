@@ -1590,11 +1590,10 @@ sub choose_form {
 	    $nice_berlinmap = $nice_abcmap = 0;
 	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version("Safari", 419, 9999999)) {
-	    #$nice_berlinmap = $nice_abcmap = 1;
-	    $nice_berlinmap = $nice_abcmap = 0; # be defensive --- Chrome is currently also broken, and I cannot test Safari
+	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version('Chrome', 0, 999999)) {
-	    $nice_berlinmap = $nice_abcmap = 0; # problems if the page is zoomed
+	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
 	}
     }

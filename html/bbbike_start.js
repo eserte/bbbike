@@ -204,6 +204,9 @@ function any_detail(type, Evt) {
     Evt = window.event;
     document.BBBikeForm[type + "img.x"].value = Evt.offsetX;
     document.BBBikeForm[type + "img.y"].value = Evt.offsetY;
+  } else if (navigator && /(Chrome\/|Safari)/.test(navigator.userAgent)) {
+    document.BBBikeForm[type + "img.x"].value = Evt.offsetX;
+    document.BBBikeForm[type + "img.y"].value = Evt.offsetY;
   } else if (document.body) {
     document.BBBikeForm[type + "img.x"].value = Evt.layerX;
     document.BBBikeForm[type + "img.y"].value = Evt.layerY;
