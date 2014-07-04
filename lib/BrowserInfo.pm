@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2005,2011,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2005,2011,2012,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.56;
+$VERSION = 1.57;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -337,7 +337,8 @@ sub set_info {
 			     $self->{'user_agent_version'} >= 2.0) ||
 			    ($self->{'user_agent_name'} eq 'Opera' &&
 			     $self->{'user_agent_version'} >= 7.0) ||
-			    ($self->{'user_agent_name'} eq 'Safari')
+			    ($self->{'user_agent_name'} eq 'Safari') ||
+			    ($self->{'user_agent_name'} eq 'Chrome')
 			   );
 
     my $can_table;
@@ -630,6 +631,8 @@ sub _get_browser_version {
     $sep = "/" unless defined $sep;
     no warnings 'uninitialized'; # $s may be undef (i.e. undefined User-Agent)
     if ($s =~ m|\b(Opera)\s+(\d+\.\d+)|) {
+	($1, $2);
+    } elsif ($s =~ m{(Chrome)/(\d+\.\d+).*Safari}) {
 	($1, $2);
     } elsif ($s =~ m{KHTML.*like Gecko.*(Safari)/(\d+\.\d+)}) {
 	($1, $2);

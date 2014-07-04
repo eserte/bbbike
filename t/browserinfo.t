@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 26 }
+BEGIN { plan tests => 28 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -128,5 +128,11 @@ SKIP: {
     is $bi->{user_agent_os}, 'Windows NT 6.3', 'MSIE 11 detection (os)';
 }
 
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Chrome', 'Chrome detection (name)';
+    is $bi->{user_agent_version}, '35.0', 'Chrome detection (version)';
+}
 
 __END__
