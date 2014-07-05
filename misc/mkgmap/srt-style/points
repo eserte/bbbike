@@ -369,7 +369,7 @@ barrier=block | barrier=stile | barrier=kissing_gate
 # SRT additions
 highway=traffic_signals [0x7001 resolution 22]
 highway=crossing & crossing=traffic_signals [0x7002 resolution 22]
-railway=level_crossing & abandoned=yes [0x7007 resolution 22]
+railway=level_crossing & ( abandoned=yes | disused=yes ) [0x7007 resolution 22]
 railway=level_crossing [0x7003 resolution 22]
 highway=crossing & crossing=uncontrolled & crossing_ref=zebra [0x7004 resolution 22]
 traffic_sign=city_limit [0x7401 resolution 22]
