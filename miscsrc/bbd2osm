@@ -220,9 +220,16 @@ my %bbbikequality_to_smoothness = (0 => 'excellent',    # Q0
 
 my $geo = Geography::Berlin_DE->new; # currently hardcoded for Berlin
 
-my $plz = PLZ->new;
-$plz->load;
-my $street_to_citypart = $plz->make_any_hash(PLZ::FILE_NAME, PLZ::FILE_CITYPART);
+my $street_to_citypart = do {
+    my $plz = eval { PLZ->new("$datadir/Berlin.coords.data") };
+    if (!$plz) {
+	warn "WARN: could not load PLZ file (Berlin.coords.data), continue with empty street-to-citypart mapping...\n";
+	+{};
+    } else {
+	$plz->load;
+	$plz->make_any_hash(PLZ::FILE_NAME, PLZ::FILE_CITYPART);
+    }
+};
 
 my($min_lat, $max_lat, $min_lon, $max_lon);
 
