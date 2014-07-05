@@ -771,6 +771,9 @@ sub handle_railway_like {
     my @node_ids = get_node_ids($r);
 
     my $name = $r->[Strassen::NAME];
+    if ($optimize_for == OPTIMIZE_FOR_GARMIN) {
+	$name =~ s{,(?! )}{, }g; # "S1,S2" -> "S1, S2"
+    }
     _xmlify($name);
 
     print $wayfh qq{<way id="$next_way_id" visible="true">\n};
@@ -1517,6 +1520,11 @@ also in level 24 (especially if the Garmin device is set to "most
 detail" rendering). To make it possible to use the same style file for
 OSM data and BBBike data, this optimization (or better, hack) makes
 the distinction by using a custom tag C<bbbike:landuse>.
+
+=item * add spaces in railway line number combinations
+
+Make "S1,S2,S3" into "S1, S2, S3" --- reason is that Garmin devices
+otherwise renders it as "S1,s2,s3".
 
 =back
 
