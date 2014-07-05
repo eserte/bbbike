@@ -306,7 +306,9 @@ if ($single_file) {
 
 sub do_file {
     my($file, $cb) = @_;
-    $file .= "-orig" if $use_orig;
+    if ($file !~ m{/zebrastreifen$}) { # XXX exceptions: these usually don't have a -orig counterpart
+	$file .= "-orig" if $use_orig;
+    }
     eval {
 	Strassen->new_stream($file)->read_stream($cb);
     };
