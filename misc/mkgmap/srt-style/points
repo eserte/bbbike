@@ -360,11 +360,13 @@ tourism=viewpoint {name '${name} - ${description}' | '${name}'} [0x7205 resoluti
 tourism=wine_cellar [0x2c0a resolution 24]
 tourism=zoo [0x2c07 resolution 24]
 
+# SRT change: 0x660f -> 0x700c
 barrier=bollard | barrier=bus_trap
-    {add access = no; add bicycle = yes; add foot = yes} [0x660f resolution 24]
+    {add access = no; add bicycle = yes; add foot = yes} [0x700c resolution 24]
 # SRT change: for cycle_barrier see below
+# SRT change: 0x660f -> 0x700c
 barrier=block | barrier=stile | barrier=kissing_gate
-    {add access = no; add foot = yes} [0x660f resolution 24]
+    {add access = no; add foot = yes} [0x700c resolution 24]
 
 # SRT additions
 highway=traffic_signals [0x7001 resolution 22]
@@ -375,8 +377,7 @@ highway=crossing & crossing=uncontrolled & crossing_ref=zebra [0x7004 resolution
 traffic_sign=city_limit [0x6f01 resolution 22]
 traffic_sign=locality_name [0x6f02 resolution 22]
 barrier=cycle_barrier [0x7008 resolution 24]
-# XXX unless I have a different symbol reuse the BNP symbol
-barrier=gate [0x7008 resolution 24]
+barrier=gate [0x700b resolution 24]
 highway=steps [0x7006 resolution 21]
 power=generator & power_source=wind [0x7202 resolution 21]
 amenity=bicycle_parking [0x2f1b resolution 23]

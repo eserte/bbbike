@@ -274,9 +274,11 @@ railway=abandoned [0x3e resolution 17]
 railway=light_rail [0x2d resolution 17]
 # SRT: change: private definition (0x14 -> 0x3f)
 railway=narrow_gauge [0x3f resolution 17]
+# XXX resolution seems to be ignored here
 railway=rail [0x14 resolution 17]
 railway=subway [0x2e resolution 17]
-railway=tram [0x14 resolution 18]
+# SRT: change: private definition (0x14 -> 0x115)
+railway=tram [0x115 resolution 18]
 railway=platform {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
 
 # note: using 0x1a instead of the default 0x1b (which seems to be wrong according to the typ file editor)
