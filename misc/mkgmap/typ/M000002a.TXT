@@ -1,7 +1,7 @@
 ; M000002a.TYP
-; Longueur: 30838 octets
-; Fichier TYP compilé     23/02/2014     12:53:29
-; Décompilé le 2/23/2014 à 12:56:30 PM
+; Longueur: 30518 octets
+; Fichier TYP compilé     07/05/2014     09:42:15
+; Décompilé le 7/5/2014 à 9:42:22 AM
 
 [_id]
 ProductCode=1
@@ -3613,26 +3613,6 @@ DayXpm="16 16 123 2"   Colormode=32
 
 [_point]
 Type=0x070
-SubType=0x05
-String1=0x00,cycle barrier
-String2=0x02,Drängelgitter
-ExtendedLabels=N
-DayXpm="10 5 4 1"   Colormode=32
-"!	c #000000"  alpha=15
-"#	c #FFFFFF"  alpha=9
-"%	c #FFFFFF"  alpha=0
-"?	c #000000"  alpha=0
-"!!!#%%%%%%"
-"!!!%?????%"
-"%%%%%%%%%%"
-"%?????%!!!"
-"%%%%%%%!!!"
-;1234567890
-[end]
-
-
-[_point]
-Type=0x070
 SubType=0x06
 String1=0x00,steps
 String2=0x02,Treppe
@@ -3673,6 +3653,26 @@ DayXpm="8 10 4 1"   Colormode=32
 "#%#!!#%#"
 "!#!!!!#!"
 ;12345678
+[end]
+
+
+[_point]
+Type=0x070
+SubType=0x08
+String1=0x00,cycle barrier
+String2=0x02,Drängelgitter
+ExtendedLabels=N
+DayXpm="10 5 4 1"   Colormode=32
+"!	c #000000"  alpha=15
+"#	c #FFFFFF"  alpha=9
+"%	c #FFFFFF"  alpha=0
+"?	c #000000"  alpha=0
+"!!!#%%%%%%"
+"!!!%?????%"
+"%%%%%%%%%%"
+"%?????%!!!"
+"%%%%%%%!!!"
+;1234567890
 [end]
 
 
