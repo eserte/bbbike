@@ -16,6 +16,8 @@ GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
 
 TARGETS=	ampelschaltung.txt abdeckung.bbd
 
+COPYRIGHT_MESSAGE=	Slaven Rezic - www.bbbike.de
+
 # XXX sp of writable/writeable?
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
@@ -281,28 +283,11 @@ MKGMAP?=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
 
 # on mosor: /usr/lib/jvm/java-6-sun/bin/java -jar /opt/mkgmap-r1247/mkgmap.jar
 
-bbbikemap-for-garmin:	${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img
-	@echo "Set the garmin device into USB mass storage mode."
-	@echo "Then execute:"
-	@echo "   mount /mnt/garmin && cp ${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img /mnt/garmin/garmin/gmapsupp.img && umount /mnt/garmin"
-
-.PHONY: ${BBBIKETMPDIR}/bbbike_routable.osm
-${BBBIKETMPDIR}/bbbike_routable.osm:
-# Do not use ${BBBIKETMPDIR} here, but a relative path against data,
-# so the remake rule really works
-	cd ../data && ${MAKE} ../tmp/bbbike_routable.osm
-
 BBBIKE_ROUTABLE_GMAPSUPP_SOURCES=	${BBBIKETMPDIR}/bbbike_routable.img
 
-BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES=	${BBBIKETMPDIR}/bbbike_routable.img
-.if exists(${BBBIKETMPDIR}/berlin_osm_routable.img)
-BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/berlin_osm_routable.img
-.endif
+BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES=	${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img
 .if exists(${BBBIKETMPDIR}/fragezeichen-outdoor-categorized.img)
 BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-categorized.img
-.endif
-.if exists(${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img)
-BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/fragezeichen-outdoor-nextcheck-categorized.img
 .endif
 .if exists(${BBBIKETMPDIR}/trafficlightmap20.img)
 BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap20.img
@@ -311,13 +296,20 @@ BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap20.img
 BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap25.img
 .endif
 
-${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img: ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
-	cd ${BBBIKETMPDIR} && \
-	    ${MKGMAP} --family-id=1211 --family-name="BBBike Berlin Fat" \
-	       --description="BBBike Berlin Fat" \
-	       --index \
-	       --gmapsupp ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
-	mv ${BBBIKETMPDIR}/gmapsupp.img ${BBBIKETMPDIR}/bbbike_fat_routable_gmapsupp.img
+bbbikemap-for-garmin:	${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES}
+	@echo "Set the garmin device into USB mass storage mode."
+	@echo -n "Type y to copy the files to /mnt/garmin: "
+	@read yn && [ "$$yn" = "y" ]
+	@echo "Waiting max. 30s for /dev/da1 to appear"
+	for i in `seq 30`; do test -e /dev/da1 && break; sleep 1; done
+	@echo "Ready to mount and sync"
+	mount /mnt/garmin && rsync -vP ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} /mnt/garmin/garmin/ && umount /mnt/garmin
+
+.PHONY: ${BBBIKETMPDIR}/bbbike_routable.osm
+${BBBIKETMPDIR}/bbbike_routable.osm:
+# Do not use ${BBBIKETMPDIR} here, but a relative path against data,
+# so the remake rule really works
+	cd ../data && ${MAKE} ../tmp/bbbike_routable.osm
 
 ${BBBIKETMPDIR}/bbbike_routable_gmapsupp.img: ${BBBIKE_ROUTABLE_GMAPSUPP_SOURCES} ${BBBIKEMKGMAPDIR}/typ/M000002a.TYP
 	cd ${BBBIKETMPDIR} && \
@@ -332,6 +324,7 @@ ${BBBIKETMPDIR}/bbbike_routable.img: ${BBBIKETMPDIR}/bbbike_routable.osm ${BBBIK
 	cd ${BBBIKETMPDIR} && \
 	    ${MKGMAP} --description="BBBike Routable" --mapname=12117006 \
 		--country-name=Germany --country-abbr=DE \
+	        --copyright-message="${COPYRIGHT_MESSAGE}" \
 	        --latin1 --net --route --draw-priority=15 --style-file=${BBBIKEMKGMAPDIR}/srt-style \
 	        --index \
 	        ${BBBIKETMPDIR}/bbbike_routable.osm  && \
