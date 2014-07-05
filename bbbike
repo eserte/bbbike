@@ -22249,7 +22249,7 @@ sub svg2photo {
     if (is_in_path_cached('rsvg-convert')) {
 	# rsvg-convert seems to be faster than convert, which is anyway just
 	# delegating to inkscape or rsvg-convert itself
-	@cmd = ('rsvg-convert', '--keep-aspect-ratio', '-w', $w, '-h', $h, '-o', $tmpfile, $file);
+	@cmd = ('rsvg-convert', '--keep-aspect-ratio', '-w', int_round($w), '-h', int_round($h), '-o', $tmpfile, $file);
     } else {
 	@cmd = ("convert", "-geometry", "${w}x${h}", $file, $tmpfile);
     }
