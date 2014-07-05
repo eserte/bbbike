@@ -341,8 +341,13 @@ sub handle_blocked_node_like {
     if ($cat eq 'BNP') {
 	if ($r->[Strassen::NAME] =~ m{drängelgitter}i) {
 	    %attribs = (barrier => 'cycle_barrier');
+	} elsif ($r->[Strassen::NAME] =~ m{(schranke|\btor\b|schwingtor)}i) {
+	    %attribs = (barrier => 'gate');
+	} elsif ($r->[Strassen::NAME] =~ m{(poller|pfosten)}i) {
+	    %attribs = (barrier => 'bollard');
 	} else {
-	    %attribs = (barrier => 'bollard'); #  (which is a quite bold assumption)
+	    # fallback, probably incorrect
+	    %attribs = (barrier => 'bollard');
 	}
     } elsif ($cat eq '0') {
 	if ($r->[Strassen::NAME] =~ m{(\d+)\s+Stufe}) { # XXX see steps_stats.pl for more possible regexps, should go into a module!
