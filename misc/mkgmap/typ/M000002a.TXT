@@ -1,7 +1,7 @@
 ; M000002a.TYP
 ; Longueur: 30518 octets
-; Fichier TYP compilé     07/05/2014     10:26:54
-; Décompilé le 7/5/2014 à 10:31:39 AM
+; Fichier TYP compilé     07/05/2014     14:37:15
+; Décompilé le 7/5/2014 à 2:37:19 PM
 
 [_id]
 ProductCode=1
@@ -1523,7 +1523,7 @@ ExtendedLabels=N
 
 [_line]
 Type=0x1c
-UseOrientation=N
+UseOrientation=Y
 Xpm="32 1 2  1"
 "! c #F9574B"
 "  c none"
@@ -1537,25 +1537,47 @@ ExtendedLabels=N
 
 [_line]
 Type=0x1d
-UseOrientation=N
-Xpm="32 1 2  1"
+UseOrientation=Y
+Xpm="32 11 2  1"
 "! c #F9574B"
 "  c none"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
 "!!!!!!!!!!   !!   !!!!!!!!!!   !"
+"!!!!!!!!!!   !!   !!!!!!!!!!   !"
+" !  !  !  !   !  !  !  !   !  ! "
+"!  !  !  !   !  !  !  !   !  !  "
+"  !  !  !   !  !  !  !   !  !  !"
+" !  !  !   !  !  !  !   !  !  ! "
 ;12345678901234567890123456789012
 String1=0x02,Landesgrenze
+String2=0x00,state border
 ExtendedLabels=N
 [end]
 
 
 [_line]
 Type=0x1e
-UseOrientation=N
-Xpm="32 2 2  1"
+UseOrientation=Y
+Xpm="32 13 2  1"
 "! c #F9574B"
 "  c none"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
 "!!!!!!!!!!   !!   !!!!!!!!!!   !"
 "!!!!!!!!!!   !!   !!!!!!!!!!   !"
+"!!!!!!!!!!   !!   !!!!!!!!!!   !"
+" !  !  !  !   !  !  !  !   !  ! "
+"!  !  !  !   !  !  !  !   !  !  "
+"  !  !  !   !  !  !  !   !  !  !"
+" !  !  !   !  !  !  !   !  !  ! "
+"!  !  !   !  !  !  !   !  !  !  "
 ;12345678901234567890123456789012
 String1=0x02,Staatsgrenze
 String2=0x00,international border
@@ -2045,6 +2067,72 @@ ExtendedLabels=N
 
 
 [_line]
+Type=0x41
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #888888"
+"  c none"
+"           !!                   "
+"                                "
+"             !!                 "
+"                                "
+"               !!               "
+"                                "
+"             !!                 "
+"                                "
+"           !!                   "
+;12345678901234567890123456789012
+String1=0x02,leichte Steigung
+String2=0x00,light mount
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x42
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #000000"
+"  c none"
+"           !!                   "
+"            !!                  "
+"             !!                 "
+"              !!                "
+"               !!               "
+"              !!                "
+"             !!                 "
+"            !!                  "
+"           !!                   "
+;12345678901234567890123456789012
+String1=0x02,mittlere Steigung
+String2=0x00,medium mount
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x43
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #000000"
+"  c none"
+"          !!  !!                "
+"           !!  !!               "
+"            !!  !!              "
+"             !!  !!             "
+"              !!  !!            "
+"             !!  !!             "
+"            !!  !!              "
+"           !!  !!               "
+"          !!  !!                "
+;12345678901234567890123456789012
+String1=0x02,starke Steigung
+String2=0x00,strong mount
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x10e02
 UseOrientation=N
 LineWidth=2
@@ -2055,6 +2143,41 @@ Xpm="0 0 2 0"
 String1=0x04,DAM
 String2=0x02,STAUMAUER
 String3=0x00,STAUMAUER
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x11400
+UseOrientation=N
+Xpm="32 4 2  1"
+"! c #626262"
+"# c #FFFFFF"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!#########!!!!!!!#########"
+"!!!!!!!#########!!!!!!!#########"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
+String1=0x02,Bahngleise
+String2=0x00,railroad
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x11500
+UseOrientation=N
+Xpm="32 5 2  1"
+"! c #000000"
+"  c none"
+"      !       !       !       ! "
+"      !       !       !       ! "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"      !       !       !       ! "
+"      !       !       !       ! "
+;12345678901234567890123456789012
+String1=0x02,Strassenbahn
+String2=0x00,tramway
 ExtendedLabels=N
 [end]
 
@@ -5476,6 +5599,194 @@ DayXpm="10 5 4 1"   Colormode=32
 "%?????%!!!"
 "%%%%%%%!!!"
 ;1234567890
+[end]
+
+
+[_point]
+Type=0x070
+SubType=0x09
+String1=0x02,Kreisverkehr
+String2=0x00,roundabout
+ExtendedLabels=N
+DayXpm="15 15 74 2"   Colormode=16
+"!!	c #003399"
+"!#	c #04369A"
+"!%	c #06379B"
+"!?	c #07389B"
+"!$	c #093A9C"
+"!*	c #0B3B9D"
+"!=	c #103F9F"
+"!1	c #11409F"
+"!2	c #1644A1"
+"!3	c #1C49A4"
+"!4	c #204CA5"
+"!5	c #234FA7"
+"!6	c #2C56AA"
+"!7	c #2D57AB"
+"!8	c #3961AF"
+"!9	c #3B62B0"
+"#!	c #3F65B2"
+"##	c #4368B3"
+"#%	c #456AB4"
+"#?	c #466CB4"
+"#$	c #486CB5"
+"#*	c #496DB6"
+"#=	c #4D70B7"
+"#1	c #4E71B8"
+"#2	c #5073B9"
+"#3	c #5476BA"
+"#4	c #5577BB"
+"#5	c #5C7CBD"
+"#6	c #5D7DBE"
+"#7	c #5F7FBF"
+"#8	c #7990BF"
+"#9	c #6785C2"
+"%!	c #6886C2"
+"%#	c #6B88C3"
+"%%	c #6D8AC4"
+"%?	c #748FC7"
+"%$	c #99A8C7"
+"%*	c #9AA9C8"
+"%=	c #7993C9"
+"%1	c #91A3C9"
+"%2	c #7D97CB"
+"%3	c #7E97CB"
+"%4	c #B5BCCC"
+"%5	c #859DCE"
+"%6	c #869ECE"
+"%7	c #879FCF"
+"%8	c #C2C8D2"
+"%9	c #92A7D3"
+"?!	c #C3C8D3"
+"?#	c #95AAD4"
+"?%	c #D5D5D5"
+"??	c #9AAED6"
+"?$	c #9BAFD7"
+"?*	c #A2B4D9"
+"?=	c #A3B5DA"
+"?1	c #A8B9DC"
+"?2	c #ABBBDD"
+"?3	c #ACBCDD"
+"?4	c #B3C2E0"
+"?5	c #E0E0E0"
+"?6	c #B5C3E1"
+"?7	c #C3CFE7"
+"?8	c #C7D2E8"
+"?9	c #D1DAEC"
+"$!	c #DAE1F0"
+"$#	c #DCE3F1"
+"$%	c #DEE4F1"
+"$?	c #E4E9F4"
+"$$	c #E5EAF4"
+"$*	c #E7EBF5"
+"$=	c #E8ECF5"
+"$1	c #F2F4F9"
+"$2	c #FFFFFF"
+"  	c none"
+"        ?%%8%$#8%*?!?%        "
+"    ?5%4!8!!!!!!!!!!!8%4?5    "
+"  ?5%1!$!!!#!6!!!5%??6#%%1?5  "
+"  %4!$!!#5$*%9!!%!$2%?!!!$%4  "
+"?%!8!!#7?9#!!!!!!4?8?8#6!!!8?%"
+"%8!!!*$#!3!!!!!!!!%%!2$?!1!!%8"
+"%$#4#$?=#3!!!!!!!!!!!!?3#=!!%$"
+"#8%2$%$=%=!!!!!!!!!!!!?1%#!!#8"
+"%$!!%7%5!!!!!!!!!!!!!!?*#*!!%$"
+"%8!!!!!!!!!!!!!!!!!!!!!#!?!!%8"
+"?%!8!!!=?4!9!!!%???7%6!#!!!8?%"
+"  %4!$!!#3$1?2%3?$$$$!!!!$%4  "
+"  ?5%1!$!!!*#2#9#1##?#!$%1?5  "
+"    ?5%4!8!!!!!!!!!7#?%4?5    "
+"        ?%%8%$#8%*?!?%        "
+;123456789012345
+[end]
+
+
+[_point]
+Type=0x070
+SubType=0x0a
+String1=0x02,Grenuebergang
+String2=0x00,border crossing
+ExtendedLabels=N
+DayXpm="16 16 22 2"   Colormode=16
+"!!	c #000000"
+"!#	c #CC0606"
+"!%	c #CD1010"
+"!?	c #CE2121"
+"!$	c #CD4141"
+"!*	c #D95656"
+"!=	c #D16161"
+"!1	c #E17D7D"
+"!2	c #D98888"
+"!3	c #9D9D9D"
+"!4	c #DAA1A1"
+"!5	c #DBA1A1"
+"!6	c #DCA8A8"
+"!7	c #ECAFAF"
+"!8	c #E4E4E4"
+"!9	c #E5E5E5"
+"#!	c #E8E6E6"
+"##	c #EAEAEA"
+"#%	c #EEEEEE"
+"#?	c #FBF3F3"
+"#$	c #FFFFFF"
+"  	c none"
+"        #!!5!=!$!$!=!5#!        "
+"    #%!6!?!%!*!1!1!*!%!?!6#%    "
+"  #%!2!#!1#?#$#$#$#$#?!1!#!2#%  "
+"  !6!#!7#$#$#$#$#$#$#$#$!7!#!6  "
+"#!!?!1#$#$#$#$#$#$#$#$#$#$!1!?#!"
+"!4!%#?#$#$#$#$#$#$#$#$#$#$#?!%!4"
+"!=!*#$##!9!8!9!9!9!9!9!9###$!*!="
+"!$!1!3!!!!!!!!!!!!!!!!!!!!!3!1!$"
+"!$!1!3!!!!!!!!!!!!!!!!!!!!!3!1!$"
+"!=!*#$##!9!9!9!9!9!9!9!9###$!*!="
+"!4!%#?#$#$#$#$#$#$#$#$#$#$#?!%!4"
+"#!!?!1#$#$#$#$#$#$#$#$#$#$!1!?#!"
+"  !6!#!7#$#$#$#$#$#$#$#$!7!#!6  "
+"  #%!2!#!1#?#$#$#$#$#?!1!#!2#%  "
+"    #%!6!?!%!*!1!1!*!%!?!6#%    "
+"        #!!5!=!$!$!=!5#!        "
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x070
+SubType=0x0b
+String1=0x02,Schranke
+String2=0x00,gate
+ExtendedLabels=N
+DayXpm="10 5 4 1"   Colormode=32
+"!	c #000000"  alpha=15
+"#	c #FFFFFF"  alpha=9
+"%	c #FFFFFF"  alpha=0
+"?	c #000000"  alpha=0
+"%%%#%%%%%%"
+"%????????%"
+"%??%%%%%%%"
+"%??%!!!!!!"
+"%%%%!!!!!!"
+;1234567890
+[end]
+
+
+[_point]
+Type=0x070
+SubType=0x0c
+String1=0x02,Poller
+String2=0x00,bollard
+ExtendedLabels=N
+DayXpm="5 5 3 1"   Colormode=32
+"!	c #000000"  alpha=0
+"#	c #FFFFFF"  alpha=0
+"%	c #FF30FF"  alpha=15
+"%%#%%"
+"%#!#%"
+"#!#!#"
+"%#!#%"
+"%%#%%"
+;12345
 [end]
 
 
