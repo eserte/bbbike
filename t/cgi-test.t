@@ -124,7 +124,7 @@ SKIP: {
 
 {
     my $resp = bbbike_cgi_geocode +{start => 'Kottbusser Damm/Maybachstr.',
-				    ziel => 'Maybachstr./Schinkelstr.',
+				    ziel => 'Maybachstr./Schinkestr.',
 				   }, 'Find streets with crossing notation';
     on_crossing_pref_page($resp);
 }
@@ -476,7 +476,7 @@ SKIP: {
 	ok($resp->is_success, 'Ausweichroute request was successful');
 	$content = $resp->decoded_content;
 	like_html($content, qr{Mögliche Ausweichroute}, 'Expected Ausweichroute text');
-	like_html($content, qr{links.*in die.*Schinkelstr}, 'Expected route');
+	like_html($content, qr{links.*in die.*Schinkestr}, 'Expected route');
     }
 
     {
