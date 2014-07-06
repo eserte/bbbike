@@ -149,7 +149,7 @@ Schranke zum Betriebsgelände	culdesac_pseudo 14306,6651
 	culdesac 14757,8655
 	culdesac 14989,8536
 #: note: Weiterfahrt auf der Abteiinsel möglich
-Insel der Jugend	culdesac_pseudo 15675,9090
+Insel der Jugend	culdesac_pseudo 15674,9095
 	culdesac 16337,9581
 Sackgassenende, Pablo-Neruda-Bibliothek	culdesac 14008,12181
 Sackgassenende, DB-Gelände	culdesac 16654,9748
@@ -685,8 +685,8 @@ Sackgassenende, zum Münsinger Park	culdesac_pseudo -3608,14398
 	culdesac -6332,14380
 Sackgassenende, zur KGA	culdesac_pseudo 17459,5634
 	culdesac 17592,5552
-	culdesac 18470,5600
-	culdesac 18695,5453
+	culdesac_pseudo 18470,5600
+	culdesac_pseudo 18695,5453
 	culdesac -3113,12549
 	culdesac_pseudo 9264,3874
 	culdesac_pseudo 18646,17345
@@ -984,10 +984,15 @@ südwestliches Sackgassenende	culdesac 21291,-1114
 	culdesac 13243,17615
 	culdesac 32335,2046
 	culdesac 32341,1996
+	culdesac 15988,7129
+Sackgassenende im westlichen Abschnitt	culdesac 24473,6304
+	culdesac 24480,6290
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 20630,11342
+	culdesac_pseudo 16673,7511
 	culdesac_pseudo 581,670
 	culdesac_pseudo 7086,20597
 	culdesac_pseudo 32222,3680

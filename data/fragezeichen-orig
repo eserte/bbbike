@@ -187,12 +187,12 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
-#: last_checked: 2014-05-17
+#: last_checked: 2014-07-06
 #: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
-#: last_checked: 2014-06-10
+#: last_checked: 2014-07-06
 #: check_frequency: 120d
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
@@ -375,8 +375,6 @@ Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Amp
 #: check_frequency: 60d
 Am Weingarten: die Fortsetzung des Syringenplatz soll hier benannt werden	? 13765,14665 13867,14507
 # 
-Weißenhöher Str.: wie ist hier die Vorfahrtsregelung? Evtl. implizit?	? 20623,11481 20641,11480 20828,11466
-# 
 # REMOVED (während der Bauarbeiten an der Karlshorster Str. wird die Ampel höchstwahrscheinlich eingeschaltet werden) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5910 --- #: last_checked: 2014-06-11 (Ampel steht, aber nicht eingeschaltet) --- Kynaststr./Hauptstr.: eine provisorische Ampel wird wieder aufgestellt	? 14906,10820
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2014
@@ -400,9 +398,12 @@ Konrad-Wolf-Str.: in Richtung Südwesten wird eine Radweganlage gebaut	?::inwork;
 #: XXX Privatstraße
 #: XXX PLZ=12621
 #: XXX fehlt in Berlin.coords.data
-#: XXX mit Abzweig zur Kaulsdorfer Str., fehlt noch in fragezeichen-orig
-#: next_check: 2014-07-01
-Am Wuhlebogen: wann wird die Straße fertiggestellt? Qualität?	?::projected 21671,7957 21627,8156 21420,8362
+#: last_checked: 2014-07-06 vvv
+#: check_frequency: 360d vvv
+Am Wuhlebogen: wann wird die Straße fertiggestellt? Qualität?	?::inwork 21678,7939 21639,8105 21627,8156 21420,8362
+(Am Wuhlebogen - Kaulsdorfer Str.): wann wird die Straße fertiggestellt, Straßenname, Qualität?	?::inwork 21639,8105 21686,8110
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: by: http://www.lindenufer-spandau.de/das-neue-lindenufer/havelradweg.html
 #: XXX der Uferweg zwischen Juliusturmbrücke und Dischingerbrücke soll "Sternbergpromenade" genannt werden
@@ -553,30 +554,33 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: XXX neue Straßennamen (fehlen alle in Berlin.coords.data)
-#: last_checked: 2013-08-29 (noch nichts zu sehen) vvv
-#: next_check: 2014-06-10 vvv
+#: last_checked: 2014-07-06 (erste Bauarbeiten) vvv
+#: check_frequency: 360d vvv
 Am Theodorpark: Straße in Planung, Qualität? Genaue Lage?	?::projected 24899,11017 24948,11018 25051,11020 25141,11024
 #: XXX Privatstraße
 Arturweg: Straße in Planung, Qualität? Genaue Lage?	?::projected 24948,11018 24960,10882 24996,10876 25051,10867 25048,10957 25051,11020
 #: XXX Privatstraße
-Reintrautweg: Straße in Planung, Qualität? Genaue Lage?	?::projected 24996,10876 24990,10954 25048,10957 25081,10957
-#: next_check ^^^
+Reintrautweg: Straße in Planung, Qualität? Genaue Lage?	?::projected 24996,10876 24990,10954 25048,10957 25143,10955
+#: check_frequency ^^^
 #: last_checked ^^^
 #
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5551&options=4 vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/4508103642254042/42254042/00069846/46-Anlagen/02/vzb_0594_IV_Aenderung_Pln-ziele_B-Plan_XXIII_9.pdf vvv
 #: XXX Bebauungsplanverfahren XXIII-9a; geplante Entlastungsstraße "Ortsumfahrung Mahlsdorf" vvv
-#: next_check: 2014-06-10 vvv
+#: last_checked: 2014-07-06 vvv
+#: check_frequency: 30d vvv
 Planstraße A: Straße in Planung, Qualität? Wird das die neue Hauptstraßenführung?	? 24740,10992 24824,11256
 Rad- und Gehwegverbindung geplant: Qualität? Name des Weges? Beleuchtet?	? 24899,11017 24740,10992
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 #: by: ^^^
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5709
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036775164584/775164584/00071625/25-Anlagen/02/vzb0716_IV-B-Plan_XXIII-3-1VE_Festsetzg_Planre.pdf
-#: next_check: 2014-06-10
+#: last_checked: 2014-07-06
+#: check_frequency: 360d
 XXIII-3-1VE: hier könnte eine/mehrere Straßen entstehen	?::projected 24624,11374 24776,11384
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5720
@@ -621,7 +625,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00079726/26-Anlagen/01/DRS0047VK.pdf (Bebauungsplan 9 - 47)
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegungxvi-65und9-47.html
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2014-06-09
+#: last_checked: 2014-07-06
 #: check_frequency: 180d
 Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
@@ -904,16 +908,7 @@ Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,13
 # 
 # REMVOED --- mitten auf dem Weg wird gerade ein Haus gebaut; außerdem gab es in einem Amtsblatt eine "Entwidmung als Straßenland" --- #: last_checked: 2011-10-03 --- #: next_check: 2012-02-15 --- #: XXX zurzeit Bauarbeiten. Wahrscheinlich Gehwegplatten --- U Zwickauer Damm - U Wutzkyallee: für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 15622,2051 15622,2037 15312,2010
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20110922.1205.359607.html vvv --- #: last_checked: 2012-09-16 --- #: next_check: 2013-06-01 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5098 (Verzögerung, März 2013) --- #: priority: #C --- Wernerstraße/Ohserring: neuer Zebrastreifen wird markiert	?::projected 23740,12824 23738,12799 --- #: by: ^^^
-# 
-#: last_checked: 2014-03-29
-#: check_frequency: 90d
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2012
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012
-#: XXX fehlt in Berlin.coords.data, PLZ=10318
-Alfred-Siggel-Weg: Qualität nach den Bauarbeiten?	?::inwork 19406,7886 19550,7780 19500,7719
+# REMOVED (teilweise realisiert) --- #: last_checked: 2014-03-29 --- #: check_frequency: 90d --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2012 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2012 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2012 (Hausnummern) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2012 --- #: XXX fehlt in Berlin.coords.data, PLZ=10318 --- Alfred-Siggel-Weg: Qualität nach den Bauarbeiten?	?::inwork 19406,7886 19550,7780 19500,7719
 # 
 #: XXX diese Straßen existieren noch nicht
 #: XXX teilweise fehlen sie auch in Berlin.coords.data
@@ -1098,7 +1093,7 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014
-#: last_checked: 2014-06-29
+#: last_checked: 2014-07-06
 #: next_check: 2014-07-11
 Sewanstr.: dieser Abschnitt wird zur Lückstr.	? 16647,10632 16699,10611
 # 
@@ -1643,9 +1638,6 @@ Ortsumfahrung Seelow (B167): möglicherweise eine Kraftfahrzeugstraße?	? 74874,15
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15505,6342 15516,6357
 # 
-#: XXX kann man trotzdem diesen Weg mit q4 aufnehmen? Gibt es eine Anbindung zur Britzer Str.?
-Uferweg an der Spree: Radfahren verboten, Beleuchtung, Qualität?	? 18695,5453 18617,5482 18552,5533 18487,5616 18426,5718 18402,5831 18361,5882 18326,5850
-# 
 #: ignore ^^^
 #
 ######################################################################
@@ -1919,10 +1911,12 @@ neue Planstraßen in Fahrland: Lage, Qualität?	? -16174,7006 -15929,6894
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegung9-57ve.html
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/9_57ve_v41_ve_a1_2014_01_14.pdf?start&ts=1390830629&file=9_57ve_v41_ve_a1_2014_01_14.pdf
 #: XXX wird zukünftig entstehen, evtl. entsteht noch ein Uferweg vvv
-#: next_check: 2015-03-15 vvv
+#: last_checked: 2014-07-06 vvv
+#: check_frequency: 360d vvv
 Marienhainallee: Qualität, nur für Radfahrer/Fußgänger?	? 22788,3061 22485,3036 22290,3019
 Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485,3036 22494,2949 22807,2962
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # 
 #: XXX evtl. wird dann auch die Fuß/Radverbindung Richtung Westen auch interessant...
@@ -3512,9 +3506,9 @@ Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?
 #: XXX: Ampelanlage in Planung, Realisierung 2011
 #: XXX: Vorfahrtsregelung kann dann entfernt werden
 #: osm_watch: node id="31532799" version="11"
-#: last_checked: 2013-06-22
-#: check_frequency: 180d
-Kohlisstr./Hultschiner Damm: gibt es hier mittlerweile eine Ampelanlage?	?::inwork 23810,7946
+#: last_checked: 2014-07-06
+#: check_frequency: 360d
+Kohlisstr./Hultschiner Damm: gibt es hier mittlerweile eine Ampelanlage?	?::projected 23810,7946
 # 
 #: by: Uckermark-Kurier vvv
 #: XXX 2.7km Radweg auf  (Radweg "Spur der Steine", Templin - Fürstenwerder), Baubeginn Anfang 2009, Asphalt ca. 3m breit
@@ -3661,7 +3655,7 @@ Ernst-Thälmann-Str. (Mahlow): Qualität?	? 11390,-5228 11439,-5233 11639,-5201 11
 Krügers Land (Mahlow): Qualität? Teilweise mit Radweg?	? 12085,-5114 12147,-5162 12241,-5186 12294,-5215 12583,-5521 12654,-5498 12769,-5423 12782,-5284
 Ibsenstr. (Mahlow): Qualität? Existiert ein Radweg?	? 12340,-4833 12307,-4851 12278,-4863 12208,-4975 12174,-5030 12085,-5114 11970,-5232 11922,-5279 11809,-5383 11691,-5503 11650,-5546 11608,-5585 11549,-5642 11512,-5679
 # 
-#: osm_watch: way id="117879323" version="3" vvv
+#: osm_watch: way id="117879323" version="4" vvv
 #: XXX auch culdesac-Einträge vornehmen vvv
 Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2636,23915 2760,23964 2787,23971
 Am Dominikusteich: Qualität? vielleicht verkehrsberuhigt?	? 2760,23964 2784,23929

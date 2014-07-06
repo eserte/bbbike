@@ -1093,6 +1093,8 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 #: note implizite Fahrtrichtung
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
+#: note implizit?
+Firlstr.	1 18643,6540 18645,6511
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2407,9 +2409,8 @@ Drängelgitter (lichte Breite ca. 80cm)	BNP:8::trailer=no 6526,21015
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8::trailer=no 6548,21041
 Drängelgitter/Schranke	BNP:5 10012,5210
 Schranke	BNP:5 12571,7899
-#: note: Abstand zwischen den versetzten Gittern ca. 135cm
-#: note: bei dichtem Verkehr kann die Wartezeit schon mal über 10 Sekunden betragen!
-Drängelgitter	BNP:5::trailer=10 14453,9929
+# REMOVED (mittlerweile (Sommer 2014) ist ein Flügel permanent offen) --- : note: Abstand zwischen den versetzten Gittern ca. 135cm --- #: note: bei dichtem Verkehr kann die Wartezeit schon mal über 10 Sekunden betragen! --- BNP:5::trailer=10
+halbes Drängelgitter	BNP:2::trailer=4 14453,9929
 #: note: Breite der Vorbeifahrmöglichkeit >90cm
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14597,10129
@@ -2573,13 +2574,7 @@ Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 # 
 # REMOVED (wahrscheinlich dauerhaft) --- #: last_checked: 2014-02-25 --- Wadzeckstr. - Mollstr.: Baustelle, möglicherweise wird es diese Verbindung in Zukunft nicht mehr geben	2::inwork 11326,13196 11379,13279 11409,13327
-# 
-#: next_check_id: ZIMMERMANNSTRBR-2014
-#: last_checked: 2014-02-08
-#: next_check: 2014-06-30
-#: priority: #A
-#: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
-Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
+# REMOVED (beendet) --- #: next_check_id: ZIMMERMANNSTRBR-2014 --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-30 --- #: priority: #A --- #: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet? --- Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
 # 
 #: last_checked: 2014-06-09
 Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,3422
@@ -2716,7 +2711,7 @@ Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 
 #: XXX möglicherweise wird es den Weg in Zukunft gar nicht mehr geben
 #: by: Xenia B.
 #: last_checked: 2014-05-10
-#: check_frequency: 360d
+#: next_check: 2014-10-15
 #: osm_watch: way id="159457523" version="2"
 Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 

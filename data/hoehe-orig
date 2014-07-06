@@ -324,6 +324,14 @@
 36.4	X 9753,9252
 46.7	X 8594,8777
 33.7	X 8595,9495
+#: note: Nachbarpunkte interpoliert vvv
+33.6	X 8358,9567
+33.6	X 8358,9568
+#: note ^^^
+#: note: Nachbarpunkt + Barometer vvv
+38.6	X 8349,9697
+38.6	X 8348,9449
+#: note ^^^
 35.2	X 8777,9601
 36.0	X 9334,9670
 33.5	X 8192,9619
@@ -656,6 +664,8 @@
 35.2	X 16843,6712
 #: note ^^^
 34.9	X 18312,5824
+#: note: Nachbarpunkt dupliziert
+34.9	X 18326,5850
 #: note per Barometer, Referenz ist 18312,5824 vvv
 38.3	X 18353,5897
 35.9	X 18420,6009
@@ -2516,6 +2526,8 @@
 40.0	X 8598,9264
 45.7	X 8598,9074
 44.9	X 8389,9087
+#: XXX_indoor nur geschätzt anhand des Nachbarpunkts
+38.9	X 8344,9085
 43.5	X 8480,9080
 36.2	X 11767,9026
 35.9	X 11500,9116

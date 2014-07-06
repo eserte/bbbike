@@ -1769,10 +1769,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13294,6386
 	X 8715,12956
 #: note: Anforderungsampel vvv
+#: note: kann ausgeschaltet sein, gesehen: 2014-07-06 (Sonntag) nachmittags vvv
 #: XXX_prog: nur auf der südlichen Fahrbahn relevant vvv
 	X 19985,11727
 	X 20114,11719
 #: XXX_prog ^^^
+#: note ^^^
 #: note ^^^
 	X 10849,17848
 	F 5618,14981
@@ -2326,8 +2328,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: off: weekend
 #: XXX Ampel wird vielleicht zur Roedernstr. verlegt
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4836&options=4
-#: last_checked: 2013-06-22
-#: check_frequency: 180d
+#: last_checked: 2014-07-06
+#: check_frequency: 360d
 	F 23933,8879
 #: off: weekend
 	F 24435,10065

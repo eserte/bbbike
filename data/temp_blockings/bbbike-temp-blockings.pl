@@ -22351,15 +22351,12 @@ userdel	1::temp -13556,-1182 -13643,-1220
 EOF
      },
      { from  => 1385766000, # 2013-11-30 00:00
-       until => $isodate2epoch->("2015-12-31 23:59:59"), # 1401458400, # 2014-05-30 16:00
+       until => 1404667175, # $isodate2epoch->("2015-12-31 23:59:59"), # 1401458400, # 2014-05-30 16:00
        text  => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Fahrbahn gesperrt, Fußgänger und Radfahrer können passieren, bis Ende 2015',
        type  => 'gesperrt',
        source_id => 'IM_020820',
        data  => <<EOF,
-#: next_check_id: ZIMMERMANNSTRBR-2014
-#: last_checked: 2014-02-08
-#: next_check: 2014-06-30 (bei VMZ entfernt!)
-#: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
+# REMOVED (keine Bauarbeiten mehr) --- #: next_check_id: ZIMMERMANNSTRBR-2014 --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-30 (bei VMZ entfernt!) --- #: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
 userdel	2::inwork 21385,9049 21365,9059 21351,9066
 EOF
      },
@@ -22964,11 +22961,13 @@ EOF
      },
      { from  => undef, # 
        until => 1405375199, # 2014-07-14 23:59
-       text  => 'Boxhagener Str.: zwischen Neue Bahnhofstr. und Wühlischstr. Baustelle, Fahrbahn in Richtung Warschauer Str. gesperrt, voraussichtlich bin zum 14.07.2014',
+       text  => 'Boxhagener Str.: zwischen Neue Bahnhofstr. und Wühlischstr. Baustelle, Fahrbahn in Richtung Warschauer Str. gesperrt, außerdem Einbahnstraßenregelung in der Weserstr., voraussichtlich bis zum 14.07.2014',
        type  => 'handicap',
        source_id => 'IM_022280',
        data  => <<EOF,
-userdel	q4::inwork; 14918,11249 14799,11330 14771,11345 14752,11369
+userdel	q3::inwork; 14918,11249 14799,11330 14771,11345 14752,11369
+	1::inwork 14771,11345 14759,11339 14737,11347
+	q2; 14710,11626 14764,11591 14849,11539 14949,11474 15016,11431
 EOF
      },
      { from  => undef, # 
