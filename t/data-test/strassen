@@ -3,6 +3,7 @@
 #: title.de: Straßen und Plätze in Berlin
 #: title.en: Streets and places in Berlin
 #:
+#: citypart: Kreuzberg vvv
 Dudenstr.	H 9229,8785 9076,8783 8982,8781 8763,8780 8594,8777 8472,8776 8425,8775 8291,8773 8209,8773
 Methfesselstr.	N 8982,8781 9063,8935 9111,9036 9115,9046 9150,9152 9170,9206 9211,9354
 #: alias_wide: Aliaswidestr.
@@ -16,6 +17,7 @@ Kleine Parkstr.	N 9133,9343 9104,9262
 Wilhelmshöhe	N 9225,9111 9186,9107 9155,9029 9149,8961
 #: alias Aliasstr.
 Yorckstr.	HH 9334,9670 9043,9745 9002,9731 8777,9601 8648,9526 8595,9495 8192,9619 8097,9650 7938,9694
+#: citypart: ^^^
 # Tests for "Poller"
 POLLERSTR.	N 10094,6428 10012,6179 10176,6050
 # Tests for special_vehicle, Zeitverlust ...
@@ -26,75 +28,114 @@ Umfahrung Ostkreuz	H 14794,10844 15263,10747
 Brücken Rummelsburg	H 15263,10747 15279,10862
 Umfahrung Ostkreuz	H 15279,10862 15113,10916 14918,11249 14811,11067 14752,11041
 # Tests for temp blockings
+#: citypart: Neukölln
 Maybachufer	N 11543,10015 11669,9987 11880,9874
+#: citypart: Neukölln
+Schinkestr.	N 11623,9841 11734,9856 11880,9874
+#: citypart: Kreuzberg
 Kottbusser Damm	HH 11543,10015 11623,9841
-Schinkelstr.	N 11623,9841 11734,9856 11880,9874
 # Tests for double temp blockings
+#: citypart: Mitte vvv
 Voltairestr.	N 11092,12375 11209,12430 11329,12497
 Stralauer Str.	HH 11139,12243 11221,12250 11300,12241 11351,12221
 Grunerstr.	HH 10954,12635 11057,12715 11105,12764 11134,12793
 Littenstr.	N 10954,12635 11059,12450 11084,12395 11092,12375 11139,12243
 Alexanderstr.	HH 11134,12793 11207,12706 11252,12644 11329,12497 11340,12443 11355,12331 11351,12221
+#: citypart ^^^
+# 
 # for revgeocode API
+#: citypart: Friedrichshain vvv
 Simplonstr.	N 14367,11276 14327,11308 14252,11368 14180,11428
 Seumestr.	N 14395,11753 14358,11656 14305,11514 14252,11368
 Niemannstr.	N 14252,11368 14211,11229
 Wühlischstr.	H 14771,11345 14759,11339 14674,11370 14575,11407 14434,11465 14362,11492 14305,11514 14211,11552 14065,11605 13996,11631 13954,11647
+#: citypart ^^^
 Gärtnerstr. (Friedrichshain)	N 14180,11428 14211,11552 14247,11681 14272,11775 14311,11884
+# 
 # for hoehe/steigung tests
+#: citypart: Bohnsdorf vvv
 Grottewitzstr.	N 21933,152 22145,208 22172,194
 Buntzelstr.	N 22145,208 22108,82 21968,-15
 Waltersdorfer Str.	N 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228
 Binswangersteig	N 21933,152 21968,-15 22022,-154 22029,-178 22060,-260
 Joachimstr.	N 22029,-178 22177,-137 22382,-87
 Dahmestr.	N 21947,-306 22060,-260 22190,-228 22418,-181
+#: citypart ^^^
+# 
 # for choose_street tests
 Ackerstr. (Mitte, Gesundbrunnen)	N 9929,13660 9918,13733 9810,14066 9750,14132 9627,14229 9439,14368 9400,14400
 #
 # for make_net_cyclepath tests
+#: citypart: Kreuzberg
 Kochstr. (Kreuzberg)	H 9199,11166 9341,11186 9486,11208
 #: oldname: -200805: Kochstr.
+#: citypart: Kreuzberg
 Rudi-Dutschke-Str.	H 9486,11208 9615,11225 9751,11243 9984,11270 10020,11262
 Zimmerstr. (Kreuzberg, Mitte)	N 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9162,11286
 Wilhelmstr. (Mitte, Kreuzberg)	H 9370,10615 9367,10641 9313,10789 9266,10936 9234,11056 9199,11166 9162,11286 9058,11564 9000,11727 8975,11802 8972,11810 8901,12008 8861,12125
 Axel-Springer-Str.	N 10020,11262 10072,11384 10116,11485 10136,11529 10166,11592 10197,11605
+#: citypart: Kreuzberg
+# 
 # for neighbor_by_direction
+#: citypart: Friedrichshain vvv
 Andreasstr.	NH 12279,12113 12295,12197 12345,12435
 Singerstr.	N 12525,12151 12295,12197 12084,12235
+#: citypart ^^^
+# 
 # for strassen-grid.t test
+#: citypart: Alt-Treptow vvv
 Puschkinallee	HH 14780,9480 14819,9462 15383,9191
 Alt-Treptow	HH 15383,9191 15561,8903 15591,8848
+#: citypart ^^^
 (Rosengarten)	NN 14819,9462 14910,9643
+#: citypart: Plänterwald
 Uferweg	NN 14697,9726 14910,9643 15140,9566 15321,9448 15432,9322 15513,9144 15527,9096
+#: citypart: Karlshorst
 Köpenicker Chaussee	H 17072,8714 16374,9760
 Hauptstr. (Rummelsburg)	H 16374,9760 16302,9865 16262,9925 16191,10035
 Uferweg (Plänterwald)	NN 15969,9102 16129,9189 16259,9182 16319,9149 16449,9011 16546,8852 16646,8561
+# 
 # for route-descr.t test
 Bülowstr. (Schöneberg)	HH 7866,9918 7906,10098 7813,10112 7702,10146 7698,10147 7579,10183 7413,10244 7245,10297 7131,10331
+#: citypart: Kreuzberg
 Dennewitzstr.	N 7906,10098 7947,10155
+# 
 # for route-descr.t test (halblinks)
+#: citypart: Alt-Treptow vvv
 Puschkinallee	H 13711,10022 13789,9949 13829,9905 13884,9882 13995,9834 14193,9746
 Am Treptower Park	H 13829,9905 13867,9864 14089,9610
+#: citypart ^^^
+# 
 # for umkehren/umdrehen test
+#: citypart: Schöneberg vvv
 Hohenstaufenstr.	H 6108,9772 6209,9772 6241,9772
 Hohenstaufenstr.	H 6241,9772 6209,9773 6108,9772
 Hohenstaufenstr.	H 6241,9772 6502,9782
+#: citypart ^^^
+# 
 # for comments_net and PI
+#: citypart: Fennpfuhl
 Möllendorffstr.	H 15443,12222 15420,12178 15361,12071
+#: citypart: Friedrichshain
 Frankfurter Allee	HH 15117,12106 15361,12071 15670,12022
 Gürtelstr. (Friedrichshain, Lichtenberg)	H 15361,12071 15294,11964 15248,11880 15202,11789
+#: citypart: Lichtenberg
 Wilhelm-Guddorf-Str.	N 15294,11964 15317,11953 15335,11943
 #
 # for multi citypart tests
 Gürtelstr. (Weißensee, Prenzlauer Berg)	N 13316,15758 13409,15687 13459,15653 13555,15596 13574,15585 13606,15571 13700,15501
 #
 # for route-simplify-gps (left/rightpair)
+#: citypart: Friedrichshain vvv
 Gubener Str.	N 13568,11560 13467,11778 13198,12311
 Hildegard-Jadamowitz-Str.	N 13520,12264 13198,12311 13068,12332 13019,12316 12985,12303
 Marchlewskistr.	N 13075,12207 13019,12316 12997,12361
-Kopernikusstr. (Friedrichshain)	N 13651,11731 13467,11778
 Torellstr.	N 13467,11778 13295,11792
+#: citypart ^^^
+Kopernikusstr. (Friedrichshain)	N 13651,11731 13467,11778
+# 
 # for culdesac over crossing name
+#: citypart: Kreuzberg
 Blücherplatz	N 9521,10010 9536,10064 9579,10122 9631,10142 9702,10129
 (Blücherplatz - Zossener Str.)	NN 9702,10129 9827,10051
 (Blücherplatz - Johanniterstr.)	NN 9702,10129 9816,10119 9837,10117
