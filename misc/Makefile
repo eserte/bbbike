@@ -296,7 +296,11 @@ BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap20.img
 BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap25.img
 .endif
 
-bbbikemap-for-garmin:	${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES}
+bbbikemap-for-garmin:	bbbikemap-for-garmin-create bbbikemap-for-garmin-transfer
+
+bbbikemap-for-garmin-create: ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES}
+
+bbbikemap-for-garmin-transfer:
 	@echo "Set the garmin device into USB mass storage mode."
 	@echo -n "Type y to copy the files to /mnt/garmin: "
 	@read yn && [ "$$yn" = "y" ]
