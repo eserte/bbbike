@@ -1173,6 +1173,7 @@ Neubaugebiet am Dahlemer Weg: entstehen hier neue Straßen oder werden bestehende
 # REMOVED (nein, es gibt nur senkrechte Stichstraßen zu den einzelnen Häusern in der zweiten Reihe) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2014 (Nummerierungen, evtl. hier) --- #: XXX nördlich hiervon werden weitere Häuser entstehen --- #: last_checked: 2014-02-08 --- #: next_check: 2014-05-08 --- Beilsteiner Str.: wird es hier für das neue Wohngebiet eine Erschließungsstraße geben?	? 18737,12753 18706,12488
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: XXX Privatstraße
 #: XXX PLZ=12247
 #: XXX fehlt in Berlin.coords.data
@@ -1250,6 +1251,8 @@ Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13198,12311 13173,12331 131
 # REMOVED (existiert zwar, ist aber nicht so wichtig, da Alternativen existieren. Parkplatz. Schranke im Süden, Poller im Norden) --- Am Lindenplatz - Schwarzmeerstr.: existiert hier eine Straßenverbindung? Straßenname? Qualität?	? 17856,10879 17821,10741
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf
+#: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf (Verlängerung?)
+#: XXX eventuell werden die beiden Abschnitte verbunden?
 Dieselstr. (Potsdam): diese Straße wird "neu gewidmet", existiert schon etwas? Qualität?	? -10350,-2358 -10258,-2380 -10273,-2445
 # 
 # REMOVED (aufgenommen) --- # by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7281 (Idee) --- Viktoriaufer/Jüdenstr. - Am Juliusturm: existiert eine Verbindung für Radfahrer? Kann man auch Richtung Falkenseer Platz fahren?	? -3239,14641 -3209,14662
@@ -1943,6 +1946,28 @@ Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualität, S
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/endfassung_nr.7_abl_pdmstadt_07_2014_h.pdf
 Verlängerung der Straße "In der Feldmark": Qualität, existiert dieser Abschnitt schon?	? -18428,189 -18625,129 -18630,101
+# 
+#: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
+Inselweg (Potsdam): genaue Lage, Qualität?	? -13799,-2574 -13745,-2474
+# 
+#: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf vvv
+Lotte-Laserstein-Str. (Potsdam): genaue Lage, Qualität?	? -10220,-2445 -10305,-2525
+Jacques-Russ-Str. (Potsdam): genaue Lage, Qualität?	? -10305,-2525 -10196,-2543
+#: by: ^^^
+# 
+#: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf vvv
+Birkengrund (Potsdam): genaue Lage, Qualität?	? -11013,-2957 -11119,-2963
+Alte Gärtnerei (Potsdam): genaue Lage, Qualität?	? -11119,-2963 -11099,-2859
+#: by: ^^^
+# 
+#: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
+#: XXX Straßennamen sind (alle fehlen in Potsdam.coords.data)
+#: XXX Planstaßen W1 und W2: Am Jungfernsee (bis Planstraße W4)
+#: XXX Planstraße W3: Emmy-Nöther-Straße
+#: XXX Planstraße W4: Hermann-Weyl-Straße
+#: XXX Planstraße W5: Carl-Gustav-Jacobi-Straße
+#: XXX Planstraße W6: Carl-Adam-Petri-Straße (von Planstraße W2/W4 bis Planstraße W1)
+Campus am Jungfernsee: neue Straßen, wo genau?	? -13116,2533 -12975,2508 -13008,2379
 # 
 #: ignore ^^^
 #: section ^^^
@@ -3247,6 +3272,8 @@ Am Denkmal (Groß Glienicke): Qualität?	? -9531,6901 -9424,6874
 Zum Teufelssee - Am Moosfenn (Potsdam): Qualität der Gehwegverbindung?	? -10397,-5379 -10503,-5165
 Am Pappeltor (Potsdam, Geltow): Qualität?	? -18894,-5272 -18885,-5173 -18908,-4810 -18928,-4677 -18928,-4595 -18910,-4561 -18771,-4330 -18604,-3755
 An den Kopfweiden (Potsdam): Qualität?	? -10859,-3249 -11015,-3091
+#: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
+An den Kopfweiden (Potsdam): Fortführung der Straße	?::projected -11015,-3091 -11088,-3014
 #: XXX fehlt in Potsdam.coords.data, PLZ=14471, oldname: Im Wildpark (bis ca. 2009)
 Elisenweg (Potsdam): Qualität?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-4389 -17810,-4254 -17847,-4179
 # REMOVED (Anlage wurde genaue abgefahren) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2011 --- Anlage Schildoweck: sieben neue Privatwege, wo genau, Qualität?	? 8656,24889 8592,24914 8513,24909 8404,24744 8443,24529 8656,24889
@@ -3683,8 +3710,9 @@ Vierwaldstätter Str. (Schwanebeck): Qualität des südlichen Abschnitts?	? 18281,2
 Thuner Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18810,25948 18929,26214
 Wilhelm-Tell-Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18885,25916 19000,26147
 # 
-#: XXX Benennung wahrscheinlich Cassinohof (tatsächlich mit Doppel-s?)
+#: XXX Benennung wahrscheinlich Cassinohof
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2014
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2014 (Grundstücksnummerierungen)
 Urselweg [Wohngebiet]: existiert hier eine Straßenanbindung? Genaue Lage? Qualität? Ausschilderung?	? -812,2915 -779,2924 -713,2954 -818,3031 -824,3016 -779,2924
 #: XXX_osm bei osm falsch ("Poetensteg")
 #: XXX Richtung Süden unbefestigt
@@ -3775,3 +3803,7 @@ Königsheideweg -> Südostallee: welche Gaststätte ist hier ausgeschildert?	? 1564
 #: next_check: 2014-10-02
 Schenkenberg - Autobahn: Bau eines Radwegs	?::inwork 46581,105900 47587,106693
 Jahnpromenade (Erkner): Qualität?	? 34325,3183 34352,3189 34493,3339
+# 
+#: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
+#: XXX Privatstraße
+Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13494,-2850

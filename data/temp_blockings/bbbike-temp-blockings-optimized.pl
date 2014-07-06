@@ -1423,6 +1423,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
+#: source_id: 2147338462
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862 15144,10905
 ',
          'type' => 'handicap'
@@ -1886,9 +1887,28 @@ userdel	q3::inwork; 13555,15596 13459,15653
 ',
          'type' => 'handicap'
        },
+       {
+         'source_id' => 'IM_021583',
+         'until' => 1407510000,
+         'text' => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Masurenstr. und Dolomitenstr Baustelle, Fahrtrichtung gesperrt, 31.03.2014 07 bis Anfang August 2014 ',
+         'from' => 1396047600,
+         'id' => 2558,
+         'data' => '#: source_id: 2147338481
+userdel	q4::inwork; 10670,17458 10647,17501 10572,17573
+',
+         'type' => 'handicap'
+       },
        undef,
-       undef,
-       undef,
+       {
+         'source_id' => '2147338485',
+         'until' => 1404702000,
+         'text' => 'Yorckstr.: Fahrbahn zwischen Mansteinstr. und Katzlerstr. gesperrt, bis zum 07.07.2014 05:00 Uhr',
+         'from' => 1404496800,
+         'id' => 2560,
+         'data' => 'userdel	2::inwork 7938,9694 8097,9650
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'IM_021420',
@@ -2038,16 +2058,7 @@ userdel	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140624.1400.398129.html',
-         'until' => 1404511199,
-         'text' => 'Sperrung der Fußgängerbrücke über den Teltowkanal, von Dienstag, dem 01.07.2014 bis Freitag, dem 04.07.2014',
-         'from' => 1404079200,
-         'id' => 2585,
-         'data' => 'userdel	2::inwork 7772,4306 7795,4242
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
          'until' => 1406930400,
@@ -2098,18 +2109,6 @@ userdel	q4::inwork 14266,12446 14133,12482
          'from' => 1412892000,
          'id' => 2591,
          'data' => 'userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1404511199,
-         'text' => 'Plönzeile (Oberschöneweide): Bombenentschärfung am Freitag (04.07.2014), genaue Uhrzeit und Sperrbereich noch unbekannt',
-         'from' => 1404403879,
-         'id' => 2592,
-         'data' => 'userdel	2::temp 18574,6197 18473,6265 18574,6401 18645,6511 18801,6471 19118,6248 19033,6167 18970,6110 18861,6000 18843,6013 18766,6067
-userdel	2::temp 18970,6110 18859,6198 18767,6268 18676,6333 18574,6197 18670,6132 18767,6268 18812,6330
-userdel	2::temp 18670,6132 18766,6067 18859,6198
-userdel	2::temp 18574,6401 18676,6333
 ',
          'type' => 'gesperrt'
        }

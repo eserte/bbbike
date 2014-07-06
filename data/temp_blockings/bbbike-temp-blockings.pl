@@ -21185,6 +21185,7 @@ EOF
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
+#: source_id: 2147338462
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862 15144,10905
 EOF
      },
@@ -22657,11 +22658,12 @@ userdel	q3::inwork; 13555,15596 13459,15653
 EOF
      },
      { from  => 1396047600, # 2014-03-29 00:00
-       until => 1402425301, # $isodate2epoch->("2014-08-08 17:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
-       text  => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Masurenstr. und Dolomitenstr Baustelle, Fahrtrichtung gesperrt, 31.03.2014 07 bis Mitte August 2014 ',
+       until => $isodate2epoch->("2014-08-08 17:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
+       text  => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Masurenstr. und Dolomitenstr Baustelle, Fahrtrichtung gesperrt, 31.03.2014 07 bis Anfang August 2014 ',
        type  => 'handicap',
        source_id => 'IM_021583',
        data  => <<EOF,
+#: source_id: 2147338481
 userdel	q4::inwork; 10670,17458 10647,17501 10572,17573
 EOF
      },
@@ -22674,11 +22676,11 @@ EOF
 userdel	q4::inwork 16376,-496 16431,-311 16477,-160 16536,26 16590,216 16642,393
 EOF
      },
-     { from  => $isodate2epoch->("2014-04-03 20:00:00"), # 1 Tag Vorlauf
-       until => 1396839600, # 2014-04-07 05:00
-       text  => 'Yorckstr.: zwischen Mansteinstr. und Katzlerstr. gesperrt, 04.04.2014 20 Uhr bis 07.04.14 05:00 ',
+     { from  => $isodate2epoch->("2014-07-04 20:00:00"),
+       until => $isodate2epoch->("2014-07-07 05:00:00"),
+       text  => 'Yorckstr.: Fahrbahn zwischen Mansteinstr. und Katzlerstr. gesperrt, bis zum 07.07.2014 05:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'IM_021617',
+       source_id => '2147338485',
        data  => <<EOF,
 userdel	2::inwork 7938,9694 8097,9650
 EOF
