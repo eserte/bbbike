@@ -11,11 +11,9 @@ Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3:
 Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
 zur Keibelstr.: Baustraße, Einbahnstraße	q4::inwork; 10976,13229 11045,13183
 Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
-Ohmstr.: Bauarbeiten, auf engen Gehweg ausweichen	q3::inwork 11378,11856 11324,11689
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q3::inwork 9984,12426 9996,12401
 Chausseestr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8935,13844 8870,13926
-Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
@@ -27,7 +25,7 @@ Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umständlich	q4::
 Invalidenstr. (Mitte): Baustelle, Fahrbahn zwischen Eichendorffstr. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953
 Invalidenstr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
 Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844
-Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str.: Fahrbahn noch nicht freigegeben, aber schon befahrbar	q2::inwork; 8935,13844 8842,13798 8690,13723
+Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessische Str.: teilweise noch Bauarbeiten auf der Fahrbahn, auf Gehweg umfahren	q3::inwork; 8935,13844 8842,13798
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7872,13022
 Ella-Trebe-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7948,12918
@@ -1371,6 +1369,7 @@ Königsheideweg - Südostallee: Kleingartengelände	q1 15784,5865 15793,5945 15863,
 Engelwurzweg: teilweise recht eng	q3 25059,6554 24738,6418
 (Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18580,11874 18698,11914 18913,11907
 Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8588,13673 8590,13653
+Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8659,13708 8662,13688
 Abteibrücke, Insel der Jugend: einige Fußgänger	q2 15630,8979 15658,9007 15674,9095 15683,9136 15693,9194 15604,9215 15580,9181 15631,9114 15668,9140 15683,9136
 Borretschweg: eng	q2 24300,6142 24275,6156
 Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304

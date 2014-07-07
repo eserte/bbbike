@@ -893,25 +893,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
-',
-         'periodic' => 1,
-         'until' => 1404683999,
-         'from' => 1404424800,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              5,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (5. und 6. Juli 2014)',
-         'type' => 'gesperrt',
-         'id' => 2126
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1209,7 +1191,17 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
+         'until' => 1407707999,
+         'text' => 'Oberspreestr., Sperrung des Bahnübergangs, Fußgänger können passieren, vom 14. Juli bis 10. August 2014',
+         'from' => 1405202400,
+         'id' => 2344,
+         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
+userdel	q4::inwork 19328,5304 19405,5284 19445,5271
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1520,25 +1512,7 @@ userdel	2::temp 10384,8628 10360,8521
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 12826,4777 12836,4649
-',
-         'periodic' => 1,
-         'until' => 1404683999,
-         'from' => 1404424800,
-         'text' => 'Britzer Rosenfest an der Britzer Dorfkirche, Backbergstr. ist gesperrt, 5. und 6. Juli 2014',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              22,
-                              'months',
-                              6
-                            ]
-                          ],
-         'type' => 'gesperrt',
-         'id' => 2453
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -1868,16 +1842,7 @@ userdel	q4::inwork; 10670,17458 10647,17501 10572,17573
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => '2147338485',
-         'until' => 1404702000,
-         'text' => 'Yorckstr.: Fahrbahn zwischen Mansteinstr. und Katzlerstr. gesperrt, bis zum 07.07.2014 05:00 Uhr',
-         'from' => 1404496800,
-         'id' => 2560,
-         'data' => 'userdel	2::inwork 7938,9694 8097,9650
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_021420',
@@ -1897,7 +1862,7 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
          'from' => undef,
          'id' => 2563,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-06-26
+#: last_checked: 2014-07-07
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
@@ -2082,6 +2047,31 @@ userdel	q4::inwork 14266,12446 14133,12482
          'data' => 'userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html',
+         'until' => undef,
+         'text' => 'Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Einbahnstraße offen Richtung Süden, ab 21. Juli 2014',
+         'from' => 1405807200,
+         'id' => 2593,
+         'data' => '#: XXX wie sehen die Einschränkungen tatsächlich aus?
+#: next_check: 2014-07-21
+	q4::inwork; 13015,7471 12992,7545 12991,7549 12969,7610 12914,7785
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php',
+         'until' => 1407103200,
+         'text' => 'Elsenstr.: Bauarbeiten zwischen Am Treptower Park und Karl-Kunger-Str., Fahrbahn Richtung Neukölln gesperrt, vom 14.07.2014 bis 03.08.2014',
+         'from' => 1405202400,
+         'id' => 2594,
+         'data' => '#: note: Gehweg ist hier relativ breit
+	q3::inwork; 14089,9610 13973,9465 13923,9405
+	q4::inwork; 13923,9405 13849,9310 13760,9188
+',
+         'type' => 'handicap'
        }
      
 );

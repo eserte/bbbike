@@ -20458,12 +20458,13 @@ EOF
 userdel	q4::inwork; 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644
 EOF
      },
-     { from  => 1339099200, # 2012-06-07 22:00
-       until => 1339437600, # 2012-06-11 20:00
-       text  => 'Oberspreestr., Sperrung des Bahnübergangs, Radfahrer können über Fußgängerumleitung langsam passieren bis 11.06.2012 20:00 Uhr ',
+     { from  => $isodate2epoch->("2014-07-13 00:00:00"), # 1339099200, # 2012-06-07 22:00
+       until => $isodate2epoch->("2014-08-10 23:59:59"), # 1339437600, # 2012-06-11 20:00
+       text  => 'Oberspreestr., Sperrung des Bahnübergangs, Fußgänger können passieren, vom 14. Juli bis 10. August 2014',
        type  => 'handicap',
-       source_id => 'INKO_113476',
+       source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
 userdel	q4::inwork 19328,5304 19405,5284 19445,5271
 EOF
      },
@@ -22708,7 +22709,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-06-26
+#: last_checked: 2014-07-07
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 EOF
@@ -23010,6 +23011,28 @@ userdel	2::temp 18574,6197 18473,6265 18574,6401 18645,6511 18801,6471 19118,624
 userdel	2::temp 18970,6110 18859,6198 18767,6268 18676,6333 18574,6197 18670,6132 18767,6268 18812,6330
 userdel	2::temp 18670,6132 18766,6067 18859,6198
 userdel	2::temp 18574,6401 18676,6333
+EOF
+     },
+     { from  => $isodate2epoch->("2014-07-20 00:00:00"),
+       until => undef,
+       text  => "Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Einbahnstraße offen Richtung Süden, ab 21. Juli 2014",
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html',
+       data  => <<EOF,
+#: XXX wie sehen die Einschränkungen tatsächlich aus?
+#: next_check: 2014-07-21
+	q4::inwork; 13015,7471 12992,7545 12991,7549 12969,7610 12914,7785
+EOF
+     },
+     { from  => 1405202400, # 2014-07-13 00:00
+       until => 1407103200, # 2014-08-04 00:00
+       text  => 'Elsenstr.: Bauarbeiten zwischen Am Treptower Park und Karl-Kunger-Str., Fahrbahn Richtung Neukölln gesperrt, vom 14.07.2014 bis 03.08.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php',
+       data  => <<EOF,
+#: note: Gehweg ist hier relativ breit
+	q3::inwork; 14089,9610 13973,9465 13923,9405
+	q4::inwork; 13923,9405 13849,9310 13760,9188
 EOF
      },
     );

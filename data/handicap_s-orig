@@ -61,8 +61,7 @@ zur Keibelstr.: Baustraße, Einbahnstraße	q4::inwork; 10976,13229 11045,13183
 #: last_checked: 2014-06-18
 Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 # 
-#: last_checked: 2014-06-06
-Ohmstr.: Bauarbeiten, auf engen Gehweg ausweichen	q3::inwork 11378,11856 11324,11689
+# REMOVED (keine Einschränkungen mehr) --- #: last_checked: 2014-06-06 --- Ohmstr.: Bauarbeiten, auf engen Gehweg ausweichen	q3::inwork 11378,11856 11324,11689
 # 
 #: XXX Ende der Bauarbeiten?
 #: XXX_prog: zu eng für Anhänger
@@ -82,15 +81,12 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q3:
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html
 #: source_id: IM_022304
 #: valid: 20140701-20150101
+#: last_checked: 2014-07-07
 #: next_check: 2015-01-01
 #: priority: #A
 Chausseestr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8935,13844 8870,13926
 # 
-# REMOVED --- : osm_watch: way id="4412885" version="23"
-#: last_checked: 2014-06-26
-#: check_frequency: 60d
-Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8668,13645
-# 
+# REMOVED --- : osm_watch: way id="4412885" version="23" --- #: last_checked: 2014-06-26 --- #: check_frequency: 60d --- Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8662,13688 8668,13645
 # REMOVED --- #: last_checked: 2014-06-26 --- Platz vor dem Neuen Tor: erschwerter Zugang von der Invalidenstr.	q4::inwork 8588,13673 8590,13653 8601,13580
 # REMOVED (Ende) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html --- #: source_id: IM_021790 --- #: valid: 20140428-20140516 vvv --- #: last_checked: 2014-05-05 vvv --- #: next_check: 2014-05-16 vvv --- #: priority: #A vvv --- Luisenstr. am Platz vor dem Neuen Tor: Fahrbahn bis 16. Mai 2014 gesperrt	q4::inwork 8626,13641 8619,13689
 # REMOVED (laut Tsp vom 15.12.2013) --- #: source_id: INKO_113388 --- #: last_checked: 2013-12-11 --- #: next_check: 2014-08-31 --- Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
@@ -171,14 +167,12 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaeli
 #: next_check_id ^^^
 # 
 #: source_id: IM_021585
-#: note: Ausweichen mittlerweile auf dem südlichen Bürgersteig
-#: last_checked: 2014-06-30
-#: check_frequency: 7d
+#: last_checked: 2014-07-07
 #: priority: #A
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html (planmäßige Fertigstellung)
-#: XXX nach den Bauarbeiten wird es hier einen Radfahrstreifen geben, evtl. durchgängig bis zum Hauptbahnhof
-Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str.: Fahrbahn noch nicht freigegeben, aber schon befahrbar	q2::inwork; 8935,13844 8842,13798 8690,13723
+#: XXX nach den Bauarbeiten wird es hier einen Radfahrstreifen geben
+Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessische Str.: teilweise noch Bauarbeiten auf der Fahrbahn, auf Gehweg umfahren	q3::inwork; 8935,13844 8842,13798
 # 
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (bei vmz) --- #: XXX: wann ist die Kreuzung wieder befahrbar? --- #: last_checked: 2014-06-30 --- #: next_check: 2014-07-08 --- #: source_id: IM_021906 --- #: priority: #A --- Scharnhorststr.: Sackgasse an der Invalidenstraße	q2::inwork 8450,13599 8313,13839
@@ -1985,8 +1979,10 @@ Georg-Steger-Weg: einige Fußgänger	q1 1493,2249 1480,2199 1452,2095 1461,2073 14
 Königsheideweg - Südostallee: Kleingartengelände	q1 15784,5865 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059
 Engelwurzweg: teilweise recht eng	q3 25059,6554 24738,6418
 (Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18580,11874 18698,11914 18913,11907
-#: XXX_prog BS auf beiden Seiten, ansonsten q2
+#: XXX_prog BS auf beiden Seiten, ansonsten q3 (zu kurze Strecke für q2) vvv
 Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8588,13673 8590,13653
+Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8659,13708 8662,13688
+#: XXX_prog ^^^
 Abteibrücke, Insel der Jugend: einige Fußgänger	q2 15630,8979 15658,9007 15674,9095 15683,9136 15693,9194 15604,9215 15580,9181 15631,9114 15668,9140 15683,9136
 Borretschweg: eng	q2 24300,6142 24275,6156
 Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
