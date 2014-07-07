@@ -1595,6 +1595,9 @@ sub choose_form {
 	} elsif ($bi->is_browser_version('Chrome', 0, 999999)) {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
+	} elsif ($bi->is_browser_version('AppleWebKit', 0, 999999)) {
+	    $nice_berlinmap = $nice_abcmap = 1;
+	    $prefer_png = 1;
 	}
     }
 
