@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2005,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2012,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 28 }
+BEGIN { plan tests => 30 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -135,4 +135,10 @@ SKIP: {
     is $bi->{user_agent_version}, '35.0', 'Chrome detection (version)';
 }
 
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (iPod touch; CPU iPhone OS 7_0_6 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B651";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'AppleWebKit', 'AppleWebKit detection (name)';
+    is $bi->{user_agent_version}, '537.51', 'AppleWebKit detection (version)';
+}
 __END__
