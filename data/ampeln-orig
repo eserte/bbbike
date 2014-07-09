@@ -164,6 +164,7 @@
 #: XXX_prog keine Ampel in N-S-Richtung. Beim (Fußgänger-)Abbiegen von N->E gibt es eine Ampel nur an einer Fahrbahn.
 	X 13745,12118
 	X 13785,12292
+#: note: keine Anforderungsampel
 	F 13448,12340
 Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängerampel	X 12869,12425
 	X 12497,11459
@@ -257,8 +258,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5381,11847
 	X 5478,11860
 	X 5900,11913
-#: XXX_prog gilt nicht für rechtsabbiegende Radfahrer
-	X 6642,12010
 	X 4981,12252
 	X 5018,12322
 	X 4598,12501
@@ -272,10 +271,15 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6178,12387
 	X 5244,12864
 	X 5316,12928
+#: XXX_prog gilt nicht für rechtsabbiegende Radfahrer vvv
+#: note: Anforderungsampel vvv
 	X 6744,11936
 	X 6828,12031
-#: XXX_prog gilt nicht für rechtsabbiegende Radfahrer
 	X 6787,12099
+	X 6642,12010
+	X 6653,12067
+#: note ^^^
+#: XXX_prog ^^^
 	X 6825,11486
 	X 8055,12186
 	X 7039,12314
@@ -503,8 +507,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9176,5803
 	X 10527,13257
 	X 8119,12414
-#: XXX_prog gilt nicht für rechtsabbiegende Radfahrer
-	X 6653,12067
 	F 10155,12494
 	F 10689,10491
 	F 7631,9770
@@ -2452,6 +2454,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 12348,6923
 	X 13648,13334
 #: XXX_prog: Ampel gilt nicht auf dem Radweg
+#: note: keine Anforderungsampel
 	F 13163,12382
 	X -284,14738
 	F 609,14429

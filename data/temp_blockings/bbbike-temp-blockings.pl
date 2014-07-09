@@ -22363,10 +22363,11 @@ EOF
      },
      { from  => $isodate2epoch->("2014-07-16 00:00:00"), # 1386257400, # 2013-12-05 16:30
        until => $isodate2epoch->("2014-07-31 23:59:59"), # 1386561600, # 2013-12-09 05:00
-       text  => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 17. Juli 2014 Uhr bis voraussichtlich 31. Juli 2014',
+       text  => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 17. Juli 2014 Uhr bis 31. Juli 2014',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140618.0830.397974.html',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.145619.php
 userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
 EOF
      },
@@ -22861,9 +22862,7 @@ userdel	2::temp 8610,12254 8538,12245 8522,12187
 userdel	2::temp 8538,12245 8600,12165 8595,12066
 userdel	2::temp 8055,12186 8119,12414
 userdel auto	3 7026,12054 7031,12024 7059,11978
-userdel auto	3 6787,12099 6828,12031 6809,11979
 userdel auto	3 7059,11978 7031,12024 7026,12054
-userdel auto	3 6809,11979 6828,12031 6787,12099
 EOF
      },
      { from  => 1402524000, # 2014-06-12 00:00
@@ -23024,15 +23023,24 @@ EOF
 	q4::inwork; 13015,7471 12992,7545 12991,7549 12969,7610 12914,7785
 EOF
      },
-     { from  => 1405202400, # 2014-07-13 00:00
-       until => 1407103200, # 2014-08-04 00:00
-       text  => 'Elsenstr.: Bauarbeiten zwischen Am Treptower Park und Karl-Kunger-Str., Fahrbahn Richtung Neukölln gesperrt, vom 14.07.2014 bis 03.08.2014',
+     { from  => $isodate2epoch->("2014-07-20 00:00:00"),
+       until => $isodate2epoch->("2014-08-10 23:59:59"),
+       text  => 'Elsenstr.: Bauarbeiten zwischen Am Treptower Park und Karl-Kunger-Str., Fahrbahn in beiden Richtungen gesperrt, vom 21.07.2014 bis zum 10.08.2013',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144937.php',
        data  => <<EOF,
 #: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
-	q4::inwork; 13923,9405 13849,9310 13760,9188
+	q4::inwork; 13923,9405 13973,9465 14089,9610
+	q4::inwork 13923,9405 13849,9310 13760,9188
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Gartenufer: nachts ab Sonnenuntergang, spätestens ab 21.00 Uhr gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+Gartenufer	2::night 6226,11405 6067,11479 5845,11615 5790,11643
 EOF
      },
     );

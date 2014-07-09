@@ -1715,10 +1715,11 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140618.0830.397974.html',
          'until' => 1406843999,
-         'text' => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 17. Juli 2014 Uhr bis voraussichtlich 31. Juli 2014',
+         'text' => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 17. Juli 2014 Uhr bis 31. Juli 2014',
          'from' => 1405461600,
          'id' => 2528,
-         'data' => 'userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
+         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.145619.php
+userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
 ',
          'type' => 'gesperrt'
        },
@@ -1922,9 +1923,7 @@ userdel	2::temp 8610,12254 8538,12245 8522,12187
 userdel	2::temp 8538,12245 8600,12165 8595,12066
 userdel	2::temp 8055,12186 8119,12414
 userdel auto	3 7026,12054 7031,12024 7059,11978
-userdel auto	3 6787,12099 6828,12031 6809,11979
 userdel auto	3 7059,11978 7031,12024 7026,12054
-userdel auto	3 6809,11979 6828,12031 6787,12099
 ',
          'type' => 'gesperrt'
        },
@@ -2062,16 +2061,26 @@ userdel	q4::inwork 14266,12446 14133,12482
          'type' => 'handicap'
        },
        {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php',
-         'until' => 1407103200,
-         'text' => 'Elsenstr.: Bauarbeiten zwischen Am Treptower Park und Karl-Kunger-Str., Fahrbahn Richtung Neukölln gesperrt, vom 14.07.2014 bis 03.08.2014',
-         'from' => 1405202400,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144937.php',
+         'until' => 1407707999,
+         'text' => 'Elsenstr.: Bauarbeiten zwischen Am Treptower Park und Karl-Kunger-Str., Fahrbahn in beiden Richtungen gesperrt, vom 21.07.2014 bis zum 10.08.2013',
+         'from' => 1405807200,
          'id' => 2594,
          'data' => '#: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
-	q4::inwork; 13923,9405 13849,9310 13760,9188
+	q4::inwork; 13923,9405 13973,9465 14089,9610
+	q4::inwork 13923,9405 13849,9310 13760,9188
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Gartenufer: nachts ab Sonnenuntergang, spätestens ab 21.00 Uhr gesperrt',
+         'from' => undef,
+         'id' => 2595,
+         'data' => 'Gartenufer	2::night 6226,11405 6067,11479 5845,11615 5790,11643
+'
        }
      
 );
