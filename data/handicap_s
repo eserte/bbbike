@@ -41,6 +41,7 @@ Dottistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 15685,12154 15879,12131
 (Rummelsburger Ufer - Hauptstr.): Bauarbeiten, ggfs. Umweg ¸ber Norma-Parkplatz notwendig	q3::inwork 15249,10564 15307,10701
 Stadthausstr.: Bauarbeiten, Einbahnstraﬂe, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
 Blankenburger Str.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
+Hans-J¸rgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -219,7 +220,7 @@ Ernststr.: Fuﬂg‰nger	q2 2497,19503 2700,19527
 (S-Bahnunterf¸hrung Wartenberg): Fuﬂg‰nger	q2 17008,18701 17068,18736
 (S-Bahnunterf¸hrung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
 (S-Bahnunterf¸hrung Wartenberg): Fuﬂg‰nger	q1 17077,18744 17109,18772
-(Weg zwischen S-Hohenschˆnhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17159,18375 17111,18479 17040,18571 17002,18578 16936,18658
+(Weg zwischen S-Hohenschˆnhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16936,18658
 Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
 (Buckower Ring - Cecilienstr.): Fuﬂg‰nger, eng, einige Regenablaufrinnen	q2 21879,13515 21894,13514 21920,13680
@@ -1377,6 +1378,8 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Britzer Str. - Uferweg): Radfahren verboten	q4 18470,5600 18473,5645
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
+Insel-R¸gen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
+(Weg im Wustrower Park): einige Fuﬂg‰nger, eng	q2 17235,18352 17159,18309 17087,18434 17102,18490 17021,18663
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -1412,7 +1415,7 @@ Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2712,3602
 (Schloﬂpark Charlottenburg, westlicher Weg): Fuﬂg‰nger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2717,12463
 (Uferweg): teilweise relativ schmal, Fuﬂg‰nger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
 Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293
-(Max-Lingner-Str. - Maximilianstr.): schmaler Fuﬂweg und Parkplatz	q2 11107,17340 10892,17330
+(Max-Lingner-Str. - Maximilianstr.): schmaler Fuﬂweg und Parkplatz	q2 11094,17339 10892,17330
 (Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3886,13120
 Gralsburgsteig: enge Straﬂe	q1 2164,25190 2206,25260 2038,25531 1950,25763 1921,26019
 Bahnhofstr. (Friedenau): enge Straﬂe	q1 6082,7066 6151,7078 6157,7117

@@ -247,13 +247,18 @@ Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,1
 # REMOVED (realisiert) --- #: last_checked: 2013-10-25 --- #: next_check: 2013-11-25 --- Dietzgenstr.: wird auch in Richtung Süden markiert? wird auch zwischen Heinrich-Böll-Str. und Schillerstr. markiert?	? 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
 # REMOVED (realisiert) --- #: last_checked: 2014-04-06 vvv --- #: check_frequency: 100d vvv --- Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9881,18354 9821,18392 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9366,18669 9279,18724 --- Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
+#: last_checked: 2014-07-10
+#: check_frequency: 14d
+Blankenburger Str.: hier müssen noch die Radspuren Richtung Westen markiert werden	?::projected; 11563,20048 11425,19978 11312,19920 11162,19844
+# 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140627.1145.398202.html (Bauarbeiten, letzter Abschnitt)
-#: last_checked: 2014-05-21
-#: check_frequency: 90d
-Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11162,19844 11312,19920 11425,19978 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
+#: next_check_id: BLANKENBURGER-2014
+#: last_checked: 2015-07-10
+#: next_check: 2015-07-01
+Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
 # 
 #: osm_watch: way id="33836252" version="11"
-#: last_checked: 2014-04-21
+#: last_checked: 2014-07-10
 #: check_frequency: 100d
 Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11915,19580 11927,19308 11937,19175
 # 
@@ -384,8 +389,8 @@ Am Weingarten: die Fortsetzung des Syringenplatz soll hier benannt werden	? 1376
 Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected 20667,15721 20733,15657
 # 
 #: source_id: IM_022020	
-#: last_checked: 2014-06-13
-#: next_check: 2014-07-01
+#: last_checked: 2014-07-10
+#: next_check: 2014-07-28
 Konrad-Wolf-Str.: in Richtung Südwesten wird eine Radweganlage gebaut	?::inwork; 15272,14691 15174,14638 15066,14579
 # 
 # REMOVED (in handicap_s-orig aufgenommen) --- Mühsamstr.: Baustelle abfahren, genaue Position sowie Penalty abschätzen	?::inwork 13559,12779 13506,12752
@@ -750,15 +755,6 @@ Planstraße (evtl. 10): Name vielleicht auch Regener Str.? Qualität?	?::projected
 # 
 # REMOVED (weitgehend realisiert) --- #: by: http://www.moz.de/artikel-ansicht/dg/0/1/288137 --- #: by: http://de.wikipedia.org/wiki/Autobahndreieck_Schwanebeck --- #: by: http://upload.wikimedia.org/wikipedia/commons/4/4c/Map_Comparision_AD_Schwanebeck_AK_Barnim.svg --- #: by: http://www.ls.brandenburg.de/sixcms/detail.php/bb1.c.257283.de?template=ls_artikel_special_nav_d&nav_level=3 --- #: next_check: 2013-09-01 --- Umbau zum Kreuz Barnim: damit auch Verschenkung der B2 direkt zur Autobahn; die jetzige B2 durch Schwanebeck wird wahrscheinlich zur Landesstraße	?::inwork 20788,23350 20281,23156 19363,23247 19043,23084
 # 
-#: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf
-#: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf
-#: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
-#: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
-#: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014
-#: last_checked: 2014-03-18
-#: next_check: 2014-11-30
-Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	?::projected 16476,16216 16458,16104 16493,15983 16563,15900
-# 
 #: last_checked: 2014-04-23
 #: check_frequency: 120d
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
@@ -773,7 +769,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
-#: last_checked: 2014-03-18
+#: last_checked: 2014-07-10
 #: check_frequency: 120d
 #: priority: #C
 Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
@@ -1447,16 +1443,7 @@ Sömmeringstraße/Quedlinburger Straße: Planung eines Zebrastreifens für 2013	?::p
 Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::projected 3711,13098
 #: by: ^^^
 # 
-#: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf?start&ts=1352885627&file=benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2013
-#: XXX Privatweg
-#: XXX fehlt in Berlin.coords.data: Insel-Rügen-Weg|Pankow|13189
-#: XXX unklar, ob dieser Abschnitt jemals existieren wird...
-#: note: Weg in der Anlage "Insel Rügen" eG
-#: osm_watch: way id="28997509" version="11"
-#: last_checked: 2014-06-03
-# REMOVED (in strassen-orig) aufgenommen --- Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage (GPS-Koordinaten!)	?::inwork 10960,17674 10969,17587
-Insel-Rügen-Str.: wird hier eine Straße existieren? Qualität? Genaue Lage (GPS-Koordinaten!)	?::inwork 10969,17587 11064,17599 11354,17642
+# REMOVED (aufgenommen) --- #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf?start&ts=1352885627&file=benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2013 --- #: XXX Privatweg --- #: XXX fehlt in Berlin.coords.data: Insel-Rügen-Weg|Pankow|13189 --- #: XXX unklar, ob dieser Abschnitt jemals existieren wird... --- #: note: Weg in der Anlage "Insel Rügen" eG --- #: osm_watch: way id="28997509" version="11" --- #: last_checked: 2014-06-03 --- # REMOVED (in strassen-orig) aufgenommen --- Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage (GPS-Koordinaten!)	?::inwork 10960,17674 10969,17587 --- Insel-Rügen-Str.: wird hier eine Straße existieren? Qualität? Genaue Lage (GPS-Koordinaten!)	?::inwork 10967,17671 10978,17589 11064,17599 11228,17624 11354,17645 --- Insel-Rügen-Str.	? 11069,17562 11064,17599 11062,17646 11218,17671 11228,17624
 # 
 #: next_check_id: RICHARDSTR-2014 vvv
 #: by: http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf vvv
@@ -1774,64 +1761,7 @@ Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17432,12413 17437,12443
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5292 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066433/33-Anlagen/02/vzbbvv0509_IV-Benennung_Privatstrasse_Lindensc.pdf --- #: XXX fehlt bei Berlin.coords.data --- #: XXX Privatstraße --- Lindenschwärmerweg: genaue Lage? Qualität? Existiert die Straße schon?	? 21308,11075 21292,11093 21189,11137
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5291 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066429/29-Anlagen/02/vzb0507_IV-Benennung_Grimmener_Strasse.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013 --- #: XXX fehlt bei Berlin.coords.data --- Grimmener Str.: genaue Lage? Qualität? Existiert die Straße schon?	? 21298,13154 21395,13135 21443,13125
-# 
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587
-#: by; http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3697
-#: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2013 (Amtsblatt)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2014 (Nummerierung)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2014 (Nummerierung)
-#: XXX PLZ=13158, soweit nicht anders angegeben
-#: last_checked: 2014-05-21 (noch nicht umbenannt, aber Pfosten stehen schon) vvv
-#: next_check: 2014-06-21 vvv
-# XXX oldname=Weg 12 KGA Schönwald
-Liliensteinweg [Nebenstrang]: unbefestigte Straße, Q2-	? 9464,21307 9475,21281 9497,21259
-# 13.  oldname=Weg 9 KGA Schönwald
-Zschirnsteinweg: unbefestigte Straße, Q2-	? 9645,21323 9590,21464
-# 14.  oldname=Weg 6 KGA Schönwald
-Schrammsteinweg: Qualität? Neuer Name schon ausgeschildert? Beleuchtet?	? 9629,21317 9681,21192
-# 15.  oldname=Weg 1 KGA Schönwald
-Lasensteinweg: unbefestigte Straße, Q2-	? 9684,21337 9735,21208 9681,21192 9621,21172 9598,21164 9574,21156 9533,21143 9488,21128 9429,21181
-# 16.  oldname=Weg 10 KGA Schönwald
-Kohlbornsteinweg: unbefestigte Straße, Q2-	? 9534,21443 9590,21303
-# 17.  oldname=Weg 5 KGA Schönwald
-Arnsteinweg: unbefestigte Straße, Q2-	? 9574,21297 9621,21172
-# 18.  oldname=Weg 11 KGA Schönwald
-Katzsteinweg: unbefestigte Straße, Q2-	? 9532,21282 9515,21327 9501,21366 9480,21423
-# 19.  oldname=Weg 4 KGA Schönwald
-Bernhardsteinweg: unbefestigte Straße, Q2-	? 9519,21277 9598,21164
-# 20.  oldname=Weg 3 KGA Schönwald
-Benediktsteinweg: unbefestigte Straße, Q2-	? 9574,21156 9481,21241
-# 21.  oldname=Weg 2 KGA Schönwald
-Affensteinweg: unbefestigte Straße, Q2-	? 9455,21211 9533,21143
-# 22.  oldname=Drosselweg
-#: XXX str_cont_ausnahme-Eintrag!
-#: XXX Sackgassen-Einträge!
-Basteiweg: unbefestigte Straße, Q2-	? 9326,21365 9316,21396 9298,21455
-Basteiweg: unbefestigte Straße, Q2-	? 9326,21365 9341,21402 9442,21441
-Basteiweg: unbefestigte Straße, Q2-	? 9448,21411 9442,21441 9410,21535
-# 23.  oldname=Weg 8 KGA Schönwald
-Lorenzsteinweg: unbefestigte Straße, Q2-, einige Betonschwellen	? 9684,21337 9627,21477
-# 23.  oldname=Grabenweg KGA Schönwald
-Lorenzsteinweg: unbefestigte Straße, Q2-, einige Betonschwellen	? 9627,21477 9590,21464 9534,21443 9480,21423 9448,21411 9326,21365 9310,21321 9298,21288 9290,21284 9308,21247 9310,21213 9285,21113
-# 24.  oldname=Parallelweg
-Müllersteinweg: unbefestigte Straße, Q2-	? 9501,21366 9298,21288
-# 25.  oldname=Weg 7 KGA Schönwald
-Rotsteinweg: unbefestigte Straße, Q2-	? 9515,21327 9464,21307 9427,21293 9389,21278 9351,21263 9308,21247
-# 26.  oldname=Weg 13 KGA Schönwald
-Kleinsteinweg: unbefestigte Straße, Q2-	? 9472,21230 9442,21258 9427,21293
-# 27.  oldname=Weg 14 KGA Schönwald
-Altarsteinweg: unbefestigte Straße, Q2-	? 9445,21199 9408,21233 9389,21278
-# 28.  oldname=Weg 15 KGA Schönwald
-Luchssteinweg: unbefestigte Straße, Q2-	? 9420,21170 9375,21208 9351,21263
-# 29.  oldname=Igelweg KGA Schönwald
-#: XXX Sackgasse?
-Pöhligsteinweg: unbefestigte Straße, Q2-	? 9310,21321 9275,21441
-# 30.  oldname=Weg 16 KGA Schönwald (?)
-Brausensteinweg: unbefestigte Straße, Q2-	? 9394,21140 9310,21213
-#: next_check ^^^
-#: last_checked ^^^
-# 
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587 --- #: by; http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3697 --- #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2013 (Amtsblatt) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2014 (Nummerierung) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2014 (Nummerierung) --- #: XXX PLZ=13158, soweit nicht anders angegeben --- #: last_checked: 2014-05-21 (noch nicht umbenannt, aber Pfosten stehen schon) vvv --- #: next_check: 2014-06-21 vvv
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 vvv --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130620.1355.386320.html (Fertigstellung der Erschließungsstraße) --- #: XXX neue private Straßen entstehen, fehlen in Berlin.coords.data vvv --- #: last_checked: 2012-09-10 vvv --- #: next_check: 2013-07-30 vvv --- #: osm_watch: way id="220390908" version="2" --- #: XXX ad osm_watch: id referenziert die construction area --- Lübarser Aue: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7313,22515 7292,22505 7235,22505 7082,22414 7049,22393 --- Am Rodelberg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7082,22414 7287,22403 7292,22505
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2013
@@ -3568,49 +3498,7 @@ Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036283513953/283513953/00094009/09-Anlagen/01/DRS0430VK.pdf vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4529 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2013 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Benennung wird wirksam) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2014 (Grundstücksnummerierungen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014 (weitere Grundstücksnummerierungen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (weitere Grundstücksnummerierungen) --- #: XXX Benennung von 7 Privatwegen auf dem Grundstück der KGA "Erpetal" vvv --- #: last_checked: 2013-06-22 (Umbenennung nicht durchgeführt) vvv ---  #: next_check: 2013-10-01 (Benennung wird wirksam) vvv --- #: XXX teilweise früher auch Asternweg, laut DPAG-Mitteilungsblatt 12/2013, teilweise Wiesenweg vvv
-# 
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3698 vvv
-#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036596039932/596039932/00059240/40-Anlagen/02/Benennungsabsichtfuer8PrivatwegeinderAnlageNor.pdf vvv
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3724 (Benennung) vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/13re.pdf/file?y=2014 vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 (Grundstücksnummerierungen) vvv
-#: XXX neue Straßennamen für 8 Privatwege in der Anlage Nordend vvv
-#: XXX ebenso: Lehmweg, siehe strassen-orig vvv
-#: next_check_id: NORDEND-2014 vvv
-#: last_checked: 2014-05-21 vvv
-#: next_check: 2014-06-21 vvv
-#: XXX oldname: Tomatenweg; ignore_oldname_file: yes
-Tonweg: unbefestigter Weg, Q2-; Umbenennung?	? 10177,21802 10211,21697
-Buntsteinweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10111,21667 10211,21697 10269,21718
-Buntsteinweg: unbefestigter Weg, Q2-; Umbenennung?	? 10269,21718 10328,21737
-Marmorweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10114,21592 10284,21649 10290,21651 10350,21676 10423,21701 10563,21751
-#: XXX an Punkt 10588,21759 ist ein Drängelgitter, 80cm lichte Breite, evtl. schwierig für Anhänger
-Marmorweg: Gras, Q3; Umbenennung?	? 10563,21751 10585,21759 10596,21769
-Granitweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10118,21510 10313,21574 10379,21597 10593,21676 10735,21725
-#: XXX an Punkt 10752,21727 ist ein Drängelgitter, 70cm lichte Breite, nicht für Anhänger
-Granitweg: unbefestigter Weg, Q2-, NN; Umbenennung?	? 10735,21725 10752,21727 10754,21732
-#: XXX oldname: Schneeballweg; ignore_oldname_file: yes
-Granitweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N, unbeleuchtet; Umbenennung?	? 10593,21676 10563,21751
-#: XXX str_cont_ausnahme-Eintrag fehlt
-Schiefertonweg: Gras, Q3, unbeleuchtet; Umbenennung?	? 10313,21574 10284,21649
-#: XXX gibt es hier auch ein Drängelgitter Richtung Nordgraben?
-Schiefertonweg: unbefestigter Weg, Q2-; Umbenennung?	? 10290,21651 10269,21718 10248,21795
-Zechsteinweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10379,21597 10350,21676
-Zechsteinweg: unbefestigter Weg, Q2-; Umbenennung? Sackgasse?	? 10350,21676 10328,21737 10319,21774
-#: XXX gibt es hier auch ein Drängelgitter Richtung Nordgraben?
-Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt, Q2, N; Umbenennung?	? 10423,21701 10388,21801
-Überquerungsmöglichkeiten in der Dietzgenstr.?	? 10114,21592 10118,21510
-#: last_checked ^^^
-#: next_check ^^^
-#: next_check_id ^^^
-#: XXX ^^^
-#: XXX ^^^
-#: by: ^^^
-#: by: ^^^
-#: by: ^^^
-#: by: ^^^
-#: by: ^^^
-# 
+# REMOVED --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3698 vvv --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036596039932/596039932/00059240/40-Anlagen/02/Benennungsabsichtfuer8PrivatwegeinderAnlageNor.pdf vvv --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3724 (Benennung) vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/13re.pdf/file?y=2014 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 (Grundstücksnummerierungen) vvv --- #: XXX neue Straßennamen für 8 Privatwege in der Anlage Nordend vvv --- #: XXX ebenso: Lehmweg, siehe strassen-orig vvv --- #: next_check_id: NORDEND-2014 vvv
 # REMOVED (eingetragen) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130606.1000.385732.html --- #: XXX fehlt in Berlin.coords.data --- Litta-von-Stauffenberg-Weg: befindet sich der Weg hier? Qualität? Nachts beleuchtet?	? -7009,5211 -7174,5307
 # REMOVED (Beleuchtung existiert) --- Bruno-Taut-Str. - Am Gartenstadtweg: nachts beleuchtet?	? 21790,682 21783,660 21755,625 21723,605 21679,596
 # REMOVED (bearbeitet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1307/nachricht5017.html --- (Lortzingstr. - Mauerpark): existiert der neue Weg schon? Qualität des Weges? Nachts beleuchtet?	? 10038,15418 10185,15487
@@ -3801,3 +3689,7 @@ Jahnpromenade (Erkner): Qualität?	? 34325,3183 34352,3189 34493,3339
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
 #: XXX Privatstraße
 Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13494,-2850
+#
+Schiefertonweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10269,21718 10248,21795
+Zechsteinweg: ist der Zechsteinweg eine Sackgasse?	? 10328,21737 10319,21774
+Kieselweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10423,21701 10388,21801

@@ -799,6 +799,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 Firlstr.	1 18643,6540 18645,6511
+Malchower Str.	1 12838,18155 12785,18128
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1344,8 +1345,8 @@ Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierba
 Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2944,15880
 Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2880,15908
 Straßenbahntrasse	3nocross::ignrte 10897,17274 10892,17330 10886,17396
-Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3::igndisp 10886,17396 10892,17330 11107,17340
-Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 11107,17340 10892,17330 10897,17274
+Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3::igndisp 10886,17396 10892,17330 11094,17339
+Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 11094,17339 10892,17330 10897,17274
 Straßenbahntrasse	3nocross::ignrte 10886,17396 10880,17469 10878,17490
 Straßenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14014,16106
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
@@ -2096,8 +2097,12 @@ Mittelstreifen	3nocross::ignrte 1910,20548 1929,20501 1955,20435
 Berliner Str. -> Uferweg am Tegeler Hafen: Mittelstreifen	3::igndisp 1955,20435 1929,20501 1863,20478
 Uferweg am Tegeler Hafen -> Berliner Str.: Mittelstreifen	3::igndisp 1863,20478 1929,20501 1910,20548
 Mittelstreifen	3nocross::ignrte 10083,21848 10097,21809 10106,21784
-Am Nordgraben -> Dietzgenstr.: Mittelstreifen	3::igndisp 10177,21802 10097,21809 10106,21784
-Mittelstreifen	3nocross::ignrte 10120,21464 10118,21510 10114,21592 10111,21667
+Lehmweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10177,21802 10097,21809 10106,21784
+Mittelstreifen	3nocross::ignrte 10120,21464 10118,21510 10114,21592 10111,21661
+Dietzgenstr. -> Granitweg: Mittelstreifen	3::igndisp 10114,21592 10118,21510 10313,21574
+Granitweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10313,21574 10118,21510 10120,21464
+Dietzgenstr. -> Marmorweg: Mittelstreifen	3::igndisp 10111,21661 10114,21592 10284,21649
+Marmorweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10284,21649 10114,21592 10118,21510
 Straßenbahntrasse	3nocross::ignrte 11693,22482 11812,22523 11940,22587
 Rosenthaler Weg -> Krugpfuhlweg: Straßenbahntrasse	3::igndisp 11693,22482 11812,22523 11178,22999
 Krugpfuhlweg -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11178,22999 11812,22523 11940,22587
@@ -2325,6 +2330,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter (lichte Breite 80cm)	BNP:5:-109:trailer=no 10585,21759
+Drängelgitter (lichte Breite 70cm)	BNP:7:-96:trailer=no 10752,21727
 Schranke	BNP:3:-115:trailer=10 8377,10503
 Drängelgitter	BNP:3:-14:trailer=10 15727,1525
 Drängelgitter	BNP:3:-118:trailer=10 15977,1422
@@ -2689,6 +2696,8 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
+Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 Viechtacher Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19657,9666 19732,9678 19801,9680 19857,9682 19893,9683
 Eisensteiner Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19732,9678 19727,9484
 Fußgängerbrücke S-Ostkreuz: Abriss und Neubau	2::inwork 14794,10844 14764,10877 14787,10972 14798,10985

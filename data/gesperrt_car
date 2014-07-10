@@ -838,8 +838,8 @@ Winterfeldtstr. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7369,10018 7539,99
 Alvenslebenstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7648,9944 7539,9970 7526,9791
 Alvenslebenstr. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7648,9944 7539,9970 7369,10018
 Mittelstreifen	3nocross::ignrte 10779,13793 10836,13883 10895,13961
-Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10697,13956 10836,13883 10895,13961
-Schönhauser Allee -> Fehrbelliner Str.: Mittelstreifen	3::igndisp 10779,13793 10836,13883 10697,13956
+Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10688,13963 10836,13883 10895,13961
+Schönhauser Allee -> Fehrbelliner Str.: Mittelstreifen	3::igndisp 10779,13793 10836,13883 10688,13963
 Schönhauser Allee: Abbiegen verboten	3 10703,13832 10779,13793 10836,13883
 Straßenbahntrasse	3nocross::ignrte 21789,4520 21775,4470 21773,4440
 Grünauer Str. -> Rudower Str.: Straßenbahntrasse	3::igndisp 21773,4440 21775,4470 21585,4459
@@ -1535,6 +1535,8 @@ Buggenhagenstr.	1 14425,13780 14371,13619
 Tassostr.	1 13679,16286 13645,16192 13659,16151 13642,16118 13625,16054 13614,15984 13623,15954
 Pasedagplatz: nur für Straßenbahnen	2 14170,17249 14150,17255 14099,17195
 Straßenbahntrasse	3nocross::ignrte 16416,16236 16476,16216 16520,16200 16656,16157
+Suermondtstr. -> Degnerstr.: Straßenbahntrasse	3::igndisp 16520,16200 16476,16216 16458,16104
+Degnerstr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16458,16104 16476,16216 16416,16236
 Suermondtstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16476,16216 16520,16200 16551,16307
 Suermondtstr. -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16656,16157 16520,16200 16505,16096
 Hedwigstr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16505,16096 16520,16200 16476,16216

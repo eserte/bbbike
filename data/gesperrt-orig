@@ -1062,7 +1062,7 @@ Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
 Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
 #: XXX wird hier die Einbahnstraße für Radfahrer geöffnet (wegen der neuen Radwegführung)?
-#: last_checked: 2014-04-28
+#: last_checked: 2014-07-10
 #: check_frequency: 90d
 (Möllendorffstr. - Paul-Junius-Str.)	1s:q4 15370,13508 15470,13509
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
@@ -1093,6 +1093,7 @@ Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 189
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
 Firlstr.	1 18643,6540 18645,6511
+Malchower Str.	1 12838,18155 12785,18128
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1700,7 +1701,7 @@ Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4206,6820 4237,6840
 Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
 Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
-Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21592 10111,21667
+Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21592 10111,21661
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
@@ -2014,6 +2015,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter (lichte Breite 80cm)	BNP:5::trailer=no 10585,21759
+Drängelgitter (lichte Breite 70cm)	BNP:7::trailer=no 10752,21727
 Schranke	BNP:3::trailer=10 8377,10503
 Drängelgitter	BNP:3::trailer=10 15727,1525
 Drängelgitter	BNP:3::trailer=10 15977,1422
@@ -2504,6 +2507,18 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf
+#: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf
+#: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
+#: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
+#: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014
+#: last_checked: 2014-07-10
+#: next_check: 2014-09-10
+Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
+# 
+#: last_checked: 2014-07-10
+Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 #: last_checked: 2014-06-29 vvv
 #: osm_watch: way id="24845189" version="8"

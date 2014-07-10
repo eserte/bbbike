@@ -8620,10 +8620,11 @@ EOF
      { from  => $isodate2epoch->("2013-08-08 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2013-08-11 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 9, months => 8]],
+       # recurrences => [['yearly', days => 9, months => 8]], # XXX vielleicht 2015 wieder?
        text  => 'Treptower Hafenfest 9.8.2013 - 11.8.2013',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.berliner-zeitung.de/berlin/volksfest--treptow-in-flammen--organisiertes-besaeufnis-im-treptower-park-faellt-aus,10809148,26239080.html (fällt 2014 aus)
 userdel	2::temp 14464,9927 14465,9900 14500,9856 14674,9764 14697,9726 14910,9643
 userdel	2::temp 14500,9856 14483,9843
 EOF
@@ -19801,12 +19802,13 @@ EOF
 userdel	q4::inwork 10881,15047 10838,14962 10723,14772
 EOF
      },
-     { from  => $isodate2epoch->("2013-08-08 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-08-11 23:59:59"),
+     { from  => $isodate2epoch->("2014-08-28 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-08-31 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 8]],
-       text  => 'Berliner Allee (Weißensee): Veranstaltung (Blumenfest Weißensee), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 9.8.2013 bis 11.8.2013',
+       text  => 'Berliner Allee (Weißensee): Veranstaltung (Blumenfest Weißensee), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 29.8.2014 bis 31.8.2014',
        type  => 'handicap',
+       source_id => 'http://www.weissenseer-blumenfest.de/1_1_Aktuell_Presse-und-Highlights.html',
        data  => <<EOF,
 userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
 EOF
@@ -21036,7 +21038,7 @@ userdel	q4::inwork 10561,14181 10426,14262
 EOF
      },
      { from  => undef, # 
-       until => 1412114400, # 2014-10-01 00:00
+       until => 1405026320, # 1412114400, # 2014-10-01 00:00
        text  => 'Neubau der Schulstraße, Bauabschnitt zwischen Grunowstraße und Berliner Straße',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/verwaltung/tiefbau/nb_schulstr.html?date=20130814',
@@ -22595,7 +22597,7 @@ EOF
        data  => <<EOF,
 userdel	q2::inwork; 16520,16200 16656,16157
 userdel	q2::inwork 16656,16157 16616,16046
-userdel	q4::inwork; 16537,15827 16563,15900 16616,16046 16505,16096 16520,16200
+userdel	q4::inwork; 16537,15827 16559,15896 16616,16046 16505,16096 16520,16200
 EOF
      },
      { from  => undef, # 
@@ -22960,8 +22962,8 @@ userdel	q4::inwork; 17614,6571 17766,6616
 EOF
      },
      { from  => undef, # 
-       until => 1405375199, # 2014-07-14 23:59
-       text  => 'Boxhagener Str.: zwischen Neue Bahnhofstr. und Wühlischstr. Baustelle, Fahrbahn in Richtung Warschauer Str. gesperrt, außerdem Einbahnstraßenregelung in der Weserstr., voraussichtlich bis zum 14.07.2014',
+       until => $isodate2epoch->("2014-07-13 22:00:00"), # 1405375199, # 2014-07-14 23:59
+       text  => 'Boxhagener Str.: zwischen Neue Bahnhofstr. und Wühlischstr. Baustelle, Fahrbahn in Richtung Warschauer Str. gesperrt, außerdem Einbahnstraßenregelung in der Weserstr., voraussichtlich bis zum 13.07.2014 22 Uhr',
        type  => 'handicap',
        source_id => 'IM_022280',
        data  => <<EOF,
@@ -22983,7 +22985,7 @@ userdel	2::temp 12169,10310 12048,10097 12229,10014 12341,10218
 EOF
      },
      { from  => 1404079200, # 2014-06-30 00:00
-       until => 1405461599, # 2014-07-15 23:59
+       until => $isodate2epoch->("2014-07-18 17:00:00"), # 1405461599, # 2014-07-15 23:59
        text  => 'Rigaer Str. zwischen Zellestr. und Proskauer Str.: Bauarbeiten, Fahrbahn gesperrt, 02.07.2014 bis Mitte Juli 2014 ',
        type  => 'handicap',
        source_id => 'IM_022295',
@@ -23041,6 +23043,28 @@ EOF
        recurring => 1,
        data  => <<EOF,
 Gartenufer	2::night 6226,11405 6067,11479 5845,11615 5790,11643
+EOF
+     },
+     { from  => 1405025033, # 2014-07-10 22:43
+       until => 1408312800, # 2014-08-18 00:00
+       text  => 'Konrad-Wolf-Str.: Bauarbeiten zwischen Reichenberger Str. und Oberseestr., Richtung Nordosten gesperrt, bis 17.08.2014 18:00 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_021923',
+       data  => <<EOF,
+userdel	q4::inwork; 15937,15134 16028,15218 16119,15302 16208,15379 16263,15427 16331,15486 16412,15559 16448,15593 16497,15636 16615,15737
+userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
+	3 16475,15659 16497,15636 16615,15737
+	3 16615,15737 16497,15636 16475,15659
+	3 16475,15659 16497,15636 16448,15593
+	3 16448,15593 16497,15636 16475,15659
+	3 16475,15659 16448,15593 16497,15636
+	3 16497,15636 16448,15593 16475,15659
+	3 16475,15659 16448,15593 16412,15559
+	3 16412,15559 16448,15593 16475,15659
+	3 16251,15629 16412,15559 16550,15503
+	3 16550,15503 16412,15559 16251,15629
+	3 15996,15620 16331,15486 16406,15452
+	3 16406,15452 16331,15486 15996,15620
 EOF
      },
     );
