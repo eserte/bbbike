@@ -11713,7 +11713,7 @@ sub config_symbol {
   	    $c->itemconfigure($tag_fg,
   			      -capstyle => $capstyle_round,
 			     );
-  	}; warn $@ if $@;
+  	}; # don't warn: some item types like images don't have -capstyle available
     } elsif ($abk eq 'pl') {
 	$c->itemconfigure($tag_fg, -fill => 'red', -capstyle => 'projecting',
 			  -width => 8);
