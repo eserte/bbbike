@@ -33,6 +33,7 @@ use Msg qw(frommain);
     }
 }
 
+use BBBikeUtil qw(bbbike_root);
 use BBBikeTkUtil qw(pack_buttonframe);
 
 require Karte::Standard;
@@ -237,6 +238,26 @@ sub geocoder_dialog {
 
 		 'require' => sub { require Geo::Coder::OSM },
 		 'new' => sub { Geo::Coder::OSM->new },
+		 'extract_addr' => sub {
+		     my $loc = shift;
+		     $loc->{display_name};
+		 },
+		 'extract_loc' => sub {
+		     my $loc = shift;
+		     ($loc->{lon}, $loc->{lat});
+		 },
+		},
+
+		'LocalOSM' =>
+		{
+		 'include_multi' => 1,
+
+		 'require' => sub {
+		     local @INC = (@INC, bbbike_root."/miscsrc");
+		     require GeocoderAddr;
+		     GeocoderAddr->new_berlin_addr->check_availability or die "local _addr is not available";
+		 },
+		 'new' => sub { GeocoderAddr->new_berlin_addr },
 		 'extract_addr' => sub {
 		     my $loc = shift;
 		     $loc->{display_name};
