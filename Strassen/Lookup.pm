@@ -52,13 +52,11 @@ sub look {
     require Search::Dict;
     require Symbol;
     my $fh = Symbol::gensym();
-    tie *$fh, 'Tie::Handle::Offset', "<", $self->{File}, { offset => $self->{Offset} }
+    my $layer_string = $self->{GlobalDirectives}->{encoding} ? ":encoding($self->{GlobalDirectives}->{encoding}->[0])" : '';
+    tie *$fh, 'Tie::Handle::Offset', "<$layer_string", $self->{File}, { offset => $self->{Offset} }
 	or die "Can't tie: $!";
     $self->{CurrentSearchString} = $search_string;
     $self->{Fh} = $fh;
-    if ($self->{GlobalDirectives}->{encoding}) {
-	Strassen::switch_encoding($fh, $self->{GlobalDirectives}->{encoding}->[0]);
-    }
     Search::Dict::look($fh, $search_string);
 }
 

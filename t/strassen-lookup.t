@@ -79,8 +79,6 @@ isa_ok $s, 'Strassen::Lookup';
 
 {
     # an utf8 example
-    local $TODO = "utf8 does not work yet...";
-
     my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => ".bbd");
     binmode $tmpfh, ':utf8';
     print $tmpfh <<'EOF';
@@ -88,14 +86,23 @@ isa_ok $s, 'Strassen::Lookup';
 #:
 # Note: this file is sorted and suitable for Strassen::Lookup
 Auguststraﬂe	X 3,4
+Auguststraﬂe	X 5,6
 Dudenstraﬂe	X 1,2
 Franklinallee	X 5,6
 EOF
     close $tmpfh;
 
     my $s = Strassen::Lookup->new($tmpfile);
-    my $rec = $s->search_first("Dudenstraﬂe");
-    ok $rec, 'utf8 example';
+    my $rec;
+
+    $rec = $s->search_first("Dudenstraﬂe");
+    is $rec->[Strassen::NAME], 'Dudenstraﬂe', 'utf8 example';
+
+    $rec = $s->search_first("Auguststraﬂe");
+    is $rec->[Strassen::NAME], 'Auguststraﬂe', 'another utf8 example';
+    $rec = $s->search_next;
+    is $rec->[Strassen::NAME], 'Auguststraﬂe', 'search_next with utf8 works';
+    ok !$s->search_next, 'no more Auguststraﬂe';
 }
 
 sub check_lookup ($$$) {
