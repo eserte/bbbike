@@ -42,7 +42,7 @@ GetOptions(get_std_opts("xxx"),
 my $basic_tests = 39;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
-my $zebrastreifen_tests = 3;
+my $zebrastreifen_tests = 4;
 my $zebrastreifen2_tests = 2;
 my $encoding_tests = 10;
 my $multistrassen_tests = 11;
@@ -311,7 +311,9 @@ SKIP: {
 
     my $s = Strassen->new($f, NoRead => 1);
     $s->read_data(ReadOnlyGlobalDirectives => 1);
-    my $glob_dir = Strassen->get_global_directives($f);
+    my $glob_dir = $s->get_global_directives;
+    my $glob_dir2 = Strassen->get_global_directives($f);
+    is_deeply($glob_dir2, $glob_dir, 'static and object usage of get_global_directives');
     like($glob_dir->{"category_image.Zs"}->[0], qr{\Qverkehrszeichen/Zeichen_350.svg:\E\d+x\d+});
     is($glob_dir->{"title"}->[0], "Zebrastreifen in Berlin");
     is($glob_dir->{"emacs-mode"}->[0], "-*- bbbike -*-", "Test the emacs-mode hack");
