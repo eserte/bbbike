@@ -13,6 +13,8 @@ DATADIR?=		${BBBIKEDIR}/data
 CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas
 CHECK_POINTS=		${PERL} ${MISCSRCDIR}/check_points
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
+OSM2BBD=		${PERL} ${MISCSRCDIR}/osm2bbd
+OSM2BBD_POSTPROCESS=	${PERL} ${MISCSRCDIR}/osm2bbd-postprocess
 
 TARGETS=	ampelschaltung.txt abdeckung.bbd
 
@@ -159,17 +161,17 @@ split-berlin-brandenburg-from-germany:	${OSM_DOWNLOAD_DIR}/germany.osm.bz2
 
 # This target takes about 25 minutes on a 1.7MHz machine (2009-04-20)
 convert-splitted-berlin-brandenburg:
-	${MISCSRCDIR}/osm2bbd -country de -lang de -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike ${OSM_DOWNLOAD_DIR}/berlin-brandenburg-splitted.osm
-	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_brandenburg_osm_bbbike
+	${OSM2BBD} -country de -lang de -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike ${OSM_DOWNLOAD_DIR}/berlin-brandenburg-splitted.osm
+	${OSM2BBD_POSTPROCESS} ../data_berlin_brandenburg_osm_bbbike
 
 convert-data_berlin_brandenburg_osm_bbbike:
-	${MISCSRCDIR}/osm2bbd -country de -lang de -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/berlin.osm.bz2 download/osm/brandenburg.osm.bz2
-	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_brandenburg_osm_bbbike
+	${OSM2BBD} -country de -lang de -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/berlin.osm.bz2 download/osm/brandenburg.osm.bz2
+	${OSM2BBD_POSTPROCESS} ../data_berlin_brandenburg_osm_bbbike
 
 # Currently brandenburg.osm.bz2 contains also berlin
 data_berlin_brandenburg_osm_bbbike_untiled:
-	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/brandenburg.osm.bz2
-	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_brandenburg_osm_bbbike
+	${OSM2BBD} -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/brandenburg.osm.bz2
+	${OSM2BBD_POSTPROCESS} ../data_berlin_brandenburg_osm_bbbike
 
 ######################################################################
 # Berlin (only)
@@ -183,19 +185,19 @@ download-tiled-berlin:
 	    ${MISCSRCDIR}/downloadosm 13.08 52.41 13.77 52.45 -o .
 
 data_berlin_osm_bbbike_tiled:
-	${MISCSRCDIR}/osm2bbd -map bbbike -v -f -o ../data_berlin_osm_bbbike download/osm/berlin
-	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
+	${OSM2BBD} -map bbbike -v -f -o ../data_berlin_osm_bbbike download/osm/berlin
+	${OSM2BBD_POSTPROCESS} ../data_berlin_osm_bbbike
 
 data_berlin_osm_bbbike: data_berlin_osm_bbbike_untiled
 
 data_berlin_osm_bbbike_untiled:
-	${MISCSRCDIR}/osm2bbd -map bbbike -experiment handle_relations -v -f -o ../data_berlin_osm_bbbike download/osm/berlin.osm.bz2
-	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm_bbbike
+	${OSM2BBD} -map bbbike -experiment handle_relations -v -f -o ../data_berlin_osm_bbbike download/osm/berlin.osm.bz2
+	${OSM2BBD_POSTPROCESS} ../data_berlin_osm_bbbike
 
 # WGS84 version - note that still bbbike and bbbike.cgi cannot handle this correctly
 data_berlin_osm_untiled:
-	${MISCSRCDIR}/osm2bbd -experiment add_postal_code -v -f -o ../data_berlin_osm download/osm/berlin.osm.bz2
-	${MISCSRCDIR}/osm2bbd-postprocess ../data_berlin_osm
+	${OSM2BBD} -experiment add_postal_code -v -f -o ../data_berlin_osm download/osm/berlin.osm.bz2
+	${OSM2BBD_POSTPROCESS} ../data_berlin_osm
 
 ######################################################################
 # Various downloads
@@ -229,15 +231,15 @@ download-tiled-dalmatia:
 	    ${MISCSRCDIR}/downloadosm -step 0.1 14.8 42.5 18.2 44.4 -o .
 
 dalmatia-test-osm2bbd:
-	${MISCSRCDIR}/osm2bbd -map bbbike -country hr -o /tmp/data_dalmatia download/osm/dalmatia -f \
+	${OSM2BBD} -map bbbike -country hr -o /tmp/data_dalmatia download/osm/dalmatia -f \
 	    -nosplitlonglines -experiment coastline_hack \
 	    -experiment polar_coord_hack
 
 dalmatia-test-osm2bbd-postprocess1:
-	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatia -only-coastline-hack -coastline-hack-anchor sw
+	${OSM2BBD_POSTPROCESS} /tmp/data_dalmatia -only-coastline-hack -coastline-hack-anchor sw
 
 dalmatia-test-osm2bbd-postprocess2:
-	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_dalmatia -dataset-title Dalmatia
+	${OSM2BBD_POSTPROCESS} /tmp/data_dalmatia -dataset-title Dalmatia
 
 ######################################################################
 # Testing for saechsische schweiz
@@ -249,11 +251,11 @@ download-tiled-saechsische-schweiz:
 	    ${MISCSRCDIR}/downloadosm -step 0.1 13.8 51 14.5 50.7 -o .
 
 saechsische-schweiz-test-osm2bbd:
-	${MISCSRCDIR}/osm2bbd -map bbbike -country de -o /tmp/data_saechsische-schweiz download/osm/saechsische-schweiz -f \
+	${OSM2BBD} -map bbbike -country de -o /tmp/data_saechsische-schweiz download/osm/saechsische-schweiz -f \
 	    -experiment polar_coord_hack
 
 saechsische-schweiz-test-osm2bbd-postprocess:
-	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_saechsische-schweiz -dataset-title "Sächsische Schweiz"
+	${OSM2BBD_POSTPROCESS} /tmp/data_saechsische-schweiz -dataset-title "Sächsische Schweiz"
 
 ######################################################################
 # Testing for berlin
@@ -261,11 +263,11 @@ berlin-test:	berlin-test-osm2bbd \
 		berlin-test-osm2bbd-postprocess2
 
 berlin-test-osm2bbd:
-	${MISCSRCDIR}/osm2bbd -map bbbike -country de -o /tmp/data_berlin download/osm/berlin -f \
+	${OSM2BBD} -map bbbike -country de -o /tmp/data_berlin download/osm/berlin -f \
 	    -experiment polar_coord_hack
 
 berlin-test-osm2bbd-postprocess2:
-	${MISCSRCDIR}/osm2bbd-postprocess /tmp/data_berlin
+	${OSM2BBD_POSTPROCESS} /tmp/data_berlin
 
 ######################################################################
 # Building for garmin with custom .typ file
