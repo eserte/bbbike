@@ -21,6 +21,32 @@ use Hash::Util qw(lock_keys);
 
 use Strassen::Core ();
 
+=head1 NAME
+
+Strassen::Lookup - fast lookups in sorted bbd files
+
+=head1 SYNOPSIS
+
+    use Strassen::Lookup;
+    my $s = Strassen::Lookup->new($bbdfile);
+    my $rec = $s->search_first("First Avenue");
+    $rec = $s->search_next
+
+=head1 DESCRIPTION
+
+B<Strassen::Lookup> provides fast lookups in sorted bbd files.
+Currently this is implemented using the core perl module
+L<Search::Dict>, which is doing binary searches in files.
+
+=head2 CONSTRUCTOR
+
+The C<new()> constructor takes the name of a sorted bbd file as
+parameter. The bbd file may contain global directives (e.g. to specify
+an encoding or coordinate system), but should not contain local
+directives or comments.
+
+=cut
+
 sub new {
     my($class, $file) = @_;
     my $self = {
@@ -46,6 +72,17 @@ sub _scan {
     $self->{GlobalDirectives} = $s->get_global_directives;
 }
 
+=head2 LOW-LEVEL METHODS
+
+=head3 look($search_string)
+
+Calls L<Search::Dict/look> on the bbd file used in the constructor.
+Returns the same as C<look>, that is, -1 on errors. The internal
+filehandle is seeked to the nearest position to the search string.
+Note that the search string does not have to be in the file at all.
+
+=cut
+
 sub look {
     my($self, $search_string) = @_;
     require Tie::Handle::Offset;
@@ -60,6 +97,13 @@ sub look {
     Search::Dict::look($fh, $search_string);
 }
 
+=head3 get_next()
+
+Return the bbd record where the current seek position points to. See
+L<Strassen::Core> for the elements of the returned array reference.
+
+=cut
+
 sub get_next {
     my($self) = @_;
     my $fh = $self->{Fh};
@@ -67,6 +111,15 @@ sub get_next {
     my $rec = Strassen::parse($line);
     $rec;
 }
+
+=head2 HIGH-LEVEL METHODS
+
+=head3 search_first($search_string)
+
+Search the given string and return a bbd record (see L<Strassen::Core>
+for the format), or undef if the searched string could not be found.
+
+=cut
 
 sub search_first {
     my($self, $search_string) = @_;
@@ -77,6 +130,13 @@ sub search_first {
     }
 }
 
+=head3 search_next()
+
+Return the next bbd record with the previously given search string in
+L</search_first>, or undef.
+
+=cut
+
 sub search_next {
     my($self) = @_;
     my $rec = $self->get_next;
@@ -86,6 +146,16 @@ sub search_next {
 	undef;
     }
 }
+
+=head2 CREATION METHODS
+
+=head3 convert_to_lookup($destpath)
+
+For the bbd file as given in C<new()> create a bbd file which is
+sorted and has no local directives or comments anymore. This file is
+written to C<$destpath> and is suitable for use with this module.
+
+=cut
 
 sub convert_for_lookup {
     my($self, $dest) = @_;
@@ -98,3 +168,13 @@ sub convert_for_lookup {
 1;
 
 __END__
+
+=head1 AUTHOR
+
+Slaven Rezic <srezic@cpan.org>
+
+=head1 SEE ALSO
+
+L<Search::Dict>, L<Strassen::Core>.
+
+=cut
