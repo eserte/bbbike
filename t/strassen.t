@@ -43,12 +43,13 @@ my $basic_tests = 39;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 3;
+my $zebrastreifen2_tests = 2;
 my $encoding_tests = 10;
 my $multistrassen_tests = 11;
 my $initless_tests = 3;
 my $global_directive_tests = 3;
 
-plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests;
+plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests;
 
 goto XXX if $do_xxx;
 
@@ -314,6 +315,22 @@ SKIP: {
     like($glob_dir->{"category_image.Zs"}->[0], qr{\Qverkehrszeichen/Zeichen_350.svg:\E\d+x\d+});
     is($glob_dir->{"title"}->[0], "Zebrastreifen in Berlin");
     is($glob_dir->{"emacs-mode"}->[0], "-*- bbbike -*-", "Test the emacs-mode hack");
+}
+
+SKIP: {
+    my $f = "$datadir/zebrastreifen";
+    skip("$f not available", $zebrastreifen2_tests)
+	if !-r $f;
+
+    my $s = Strassen->new($f, NoRead => 1);
+    my $seek_pos;
+    $s->read_data(ReadOnlyGlobalDirectives => 1, ReturnSeekPosition => \$seek_pos);
+    ok $seek_pos, 'seek position was returned';
+    open my $fh, $f or die "Can't open $f: $!";
+    seek $fh, $seek_pos, 0 or die "Can't seek: $!";
+    chomp(my($first_non_global_directive_line) = <$fh>);
+    is $first_non_global_directive_line, '# Die Sammlung hier ist bei weiten nicht vollständig und wird',
+	"expected seek position, first line in $f after global directives";
 }
 
 SKIP: {

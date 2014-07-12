@@ -262,6 +262,7 @@ sub read_from_fh {
     my $read_only_global_directives = $args{ReadOnlyGlobalDirectives};
     my $use_local_directives = $args{UseLocalDirectives};
     my $callback = $args{Callback};
+    my $return_seek_position = $args{ReturnSeekPosition};
     my $has_tie_ixhash = eval {
 	require Tie::IxHash;
 	# See http://rt.cpan.org/Ticket/Display.html?id=39619
@@ -402,6 +403,9 @@ sub read_from_fh {
 	warn_or_die("ERROR: found following errors:\n" . join("\n", @errors) . "\n");
     }
     warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
+    if ($return_seek_position) {
+	$$return_seek_position = tell $fh;
+    }
     close $fh;
 
     $self->{Data} = \@data;
