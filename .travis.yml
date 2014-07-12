@@ -19,6 +19,8 @@ before_install:
  - '[ "$PERLBREW_PERL" = "5.8" -o "$PERLBREW_PERL" = "5.10" ] && cpanm --quiet --notest Imager~"!=0.99" || true'
 # Perl 5.8.9's File::Path has a version with underscores, and this is causing warnings and failures in the test suite
  - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest File::Path || true'
+# problems with newest Inline::C
+ - cpanm --quiet --notest Inline~"<0.56" Inline::C~"<0.56"
 # Additional psgi dependencies
  - cpanm --quiet --notest Plack CGI::Emulate::PSGI CGI::Compile Starman Plack::Middleware::Rewrite
 before_script:
