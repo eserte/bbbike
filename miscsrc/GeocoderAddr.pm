@@ -42,7 +42,45 @@ sub check_availability {
     -s $self->{File};
 }
 
-sub geocode {
+sub geocode { shift->geocode_linear_scan(@_) }
+#sub geocode { shift->geocode_fast_lookup(@_) }
+
+sub geocode_fast_lookup {
+    my($self, %opts) = @_;
+    my $location = delete $opts{location} || die "location is missing";
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
+    my $search_def = $self->parse_search_string($location);
+    my @fields = qw(str hnr zip city);
+    my $search_string;
+    my $search_string_delimited;
+    for my $i (0 .. $#fields) {
+	my $val = $search_def->{$fields[$i]};
+	if (defined $val && length $val) {
+	    $search_string .= $val;
+	    if ($i != $#fields) {
+		$search_string .= '|';
+	    } else {
+		$search_string_delimited = 1;
+	    }
+	} else {
+	    last;
+	}
+    }
+    if (!defined $search_string || !length $search_string) {
+	die "Empty search string";
+    }
+
+    require Strassen::Lookup;
+    my $s = Strassen::Lookup->new($self->{File});
+    my $rec = $s->search_first($search_string, $search_string_delimited);
+    if ($rec) {
+	my $glob_dir = Strassen->get_global_directives($self->{File});
+	return $self->_prepare_result($rec, $glob_dir);
+    }
+}
+
+sub geocode_linear_scan {
     my($self, %opts) = @_;
     my $location = delete $opts{location} || die "location is missing";
     die "Unhandled options: " . join(" ", %opts) if %opts;
@@ -58,27 +96,33 @@ sub geocode {
 	next if m{^#};
 	if ($_ =~ $search_regexp) {
 	    my $rec = Strassen::parse($_);
-	    my($str,$hnr,$zip,$city) = split /\|/, $rec->[Strassen::NAME];
-	    my $coord = $rec->[Strassen::COORDS]->[0];
-	    my($lon,$lat);
-	    if ($glob_dir->{map} && $glob_dir->{map}[0] eq 'polar') {
-		($lon,$lat) = split /,/, $coord;
-	    } else {
-		($lon,$lat) = $Karte::Polar::obj->standard2map(split /,/, $coord);
-	    }
-	    return {
-		    details => {
-				street => $str,
-				hnr    => $hnr,
-				zip    => $zip,
-				city   => $city,
-			       },
-		    display_name => "$str $hnr, $zip $city",
-		    lon => $lon,
-		    lat => $lat,
-		   };
+	    return $self->_prepare_result($rec, $glob_dir);
 	}
     }
+}
+
+sub _prepare_result {
+    my(undef, $rec, $glob_dir) = @_;
+    my($str,$hnr,$zip,$city) = split /\|/, $rec->[Strassen::NAME];
+    my $coord = $rec->[Strassen::COORDS]->[0];
+    my($lon,$lat);
+    my $coordsystem = $glob_dir->{map} && $glob_dir->{map}[0] ? $glob_dir->{map}[0] : 'standard';
+    if ($coordsystem eq 'polar') {
+	($lon,$lat) = split /,/, $coord;
+    } else {
+	($lon,$lat) = $Karte::Polar::obj->standard2map(split /,/, $coord);
+    }
+    return {
+	    details => {
+			street => $str,
+			hnr    => $hnr,
+			zip    => $zip,
+			city   => $city,
+		       },
+	    display_name => "$str $hnr, $zip $city",
+	    lon => $lon,
+	    lat => $lat,
+	   };
 }
 
 sub parse_search_string {
