@@ -16,6 +16,7 @@ use lib (
 use Test::More 'no_plan';
 
 sub check_geocoding ($$$);
+sub check_parse_string ($$);
 
 use_ok 'GeocoderAddr';
 
@@ -45,6 +46,12 @@ SKIP: {
     }
 }
 
+check_parse_string "Dudenstraße 24", { str => "Dudenstraße", hnr => "24" };
+check_parse_string "Dudenstr. 24", { str => "Dudenstraße", hnr => "24" };
+check_parse_string "Dudenstraße 24, Berlin", { str => "Dudenstraße", hnr => "24", city => "Berlin" };
+check_parse_string "Dudenstraße 24, Berlin, 10965", { str => "Dudenstraße", hnr => "24", city => "Berlin", zip => "10965" };
+check_parse_string "Dudenstraße 24, 10965 Berlin", { str => "Dudenstraße", hnr => "24", city => "Berlin", zip => "10965" };
+
 sub check_geocoding ($$$) {
     my($in_street, $expected_street, $bbox) = @_;
     my $res = $geocoder->geocode(location => $in_street);
@@ -60,6 +67,17 @@ sub check_geocoding ($$$) {
     my($lon, $lat) = @{$res}{qw(lon lat)};
     ok $lon >= $x1 && $lon <= $x2 && $lat >= $y1 && $lat <= $y2, 'lon/lat within bounding box'
 	or diag "Got lon=$lon lat=$lat, not within $bbox";
+}
+
+sub check_parse_string ($$) {
+    my($location, $expected_result) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
+    my $res = $geocoder->parse_search_string($location);
+    for my $key (keys %$res) {
+	delete $res->{$key} if !defined $res->{$key};
+    }
+    is delete($res->{location}), $location, "location check for '$location'";
+    is_deeply $res, $expected_result, "parse_search_string check for '$location'";
 }
 
 __END__

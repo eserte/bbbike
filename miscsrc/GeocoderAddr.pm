@@ -15,7 +15,7 @@ package GeocoderAddr;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 # experimental geocoder for "_addr" as created by osm2bbd
 
@@ -81,7 +81,7 @@ sub geocode {
     }
 }
 
-sub build_search_regexp {
+sub parse_search_string {
     my($self, $location) = @_;
 
     my(@parts) = split /\s*,\s*/, $location;
@@ -104,6 +104,21 @@ sub build_search_regexp {
 	$str = $1;
 	$hnr = $2;
     }
+    return {
+	    location => $location,
+	    str      => $str,
+	    hnr      => $hnr,
+	    zip      => $zip,
+	    city     => $city,
+	   };
+}
+
+sub build_search_regexp {
+    my($self, $location) = @_;
+
+    my $search_def = $self->parse_search_string($location);
+    my($str, $hnr, $zip, $city) = @{$search_def}{qw(str hnr zip city)};
+
     my $search_regexp;
     for my $val ($str, $hnr, $zip, $city) {
 	if (!defined $search_regexp) {
