@@ -162,6 +162,7 @@ sub convert_for_lookup {
     my @data;
     my $s = Strassen->new($self->{File}, UseLocalDirectives => 0);
     @{ $s->{Data} } = sort @{ $s->{Data} };
+    $s->set_global_directive(strassen_lookup_suitable => 'yes');
     $s->write($dest);
 }
 

@@ -21,6 +21,7 @@ BEGIN {
     }
 }
 
+use Strassen::Core;
 use Strassen::Lookup;
 
 sub check_lookup ($$$);
@@ -37,6 +38,10 @@ my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => "_sorted.bbd");
 
 my $s = Strassen::Lookup->new($tmpfile);
 isa_ok $s, 'Strassen::Lookup';
+
+my $bbd = Strassen->new($tmpfile);
+isa_ok $bbd, 'Strassen', 'converted file still parsable as bbd';
+is $bbd->get_global_directive('strassen_lookup_suitable'), 'yes', 'marked as suitable for Strassen::Lookup';
 
 {
     check_lookup $s, 'Bergmannstr.',
@@ -93,6 +98,11 @@ EOF
     close $tmpfh;
 
     my $s = Strassen::Lookup->new($tmpfile);
+
+    my $bbd = Strassen->new($tmpfile);
+    isa_ok $bbd, 'Strassen';
+    is $bbd->get_global_directive('encoding'), 'utf-8', 'encoding directive was preserved in bbd';
+
     my $rec;
 
     $rec = $s->search_first("Dudenstraße");
