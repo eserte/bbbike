@@ -1820,16 +1820,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20140521.1005.397374.html',
-         'until' => 1405202399,
-         'text' => 'Steigerwaldstr.: Einbahnstraßenregelung, offen Richtung Norden, vom 26. Mai bis 12. Juli 2014',
-         'from' => 1401055200,
-         'id' => 2573,
-         'data' => 'userdel	q4::inwork; -4630,15978 -4653,15896 -4656,15839 -4655,15803 -4639,15726 -4701,15563 -4710,15530
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'LS/721-E/14/035',
          'until' => 1420066800,

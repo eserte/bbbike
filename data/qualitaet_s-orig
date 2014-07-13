@@ -1693,7 +1693,7 @@ Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Gr¸nstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
 Parkaue: Asphalt	Q0 15535,12420 15457,12449 15406,12444
 #: XXX wird hier die Straﬂe verbessert werden?
-#: last_checked: 2014-07-10
+#: last_checked: 2014-07-12
 #: check_frequency: 60d
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524 (Beginn der Bauarbeiten: Fr¸hjahr 2014)
 Deutschmeisterstr.: m‰ﬂiger Asphalt	Q1 15443,12222 15370,12264 15353,12280 15320,12375
@@ -17379,10 +17379,17 @@ Gilgenburger Str.: Beton mit Hebungen	Q1+ 24549,5685 24666,5726
 #: by: Karin (schopp):
 Terrassenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -1392,3915 -1554,3889 -1734,3905 -1754,3907 -1856,3877 -1909,3854 -1900,3700
 # 
-#: by: Ehrmann (anja):
-#: note: anonym meint hierzu: "schlecht", nichts weiter
-#: confirmed_by: srt (zumindest den Asphalt)
-Spechtstr.: m‰ﬂiger Asphalt, teilweise schlechter Straﬂenbelag	Q1- -1681,19955 -1572,19899 -1419,19815 -1284,19742
+#: by: Ehrmann (anja): vvv
+#: note: anonym meint hierzu: "schlecht", nichts weiter vvv
+#: confirmed_by: srt (zumindest den Asphalt) vvv
+Spechtstr.: m‰ﬂiger Asphalt, teilweise schlechter Straﬂenbelag	Q1- -1681,19955 -1572,19899 -1419,19815
+#: XXX Bauarbeiten, danach vielleicht bessere Qualit‰t (Q0)?
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.146574.php
+#: next_check: 2014-08-28
+Spechtstr.: m‰ﬂiger Asphalt, teilweise schlechter Straﬂenbelag	Q1- -1419,19815 -1284,19742
+#: confirmed_by ^^^
+#: note ^^^
+#: by ^^^
 # 
 #: by: Robert (no mail):
 Stockholmer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 8866,17075 8950,17219 8973,17301 8985,17335
