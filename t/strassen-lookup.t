@@ -97,22 +97,32 @@ Franklinallee	X 5,6
 EOF
     close $tmpfh;
 
-    my $s = Strassen::Lookup->new($tmpfile);
+    {
+	my $s = Strassen::Lookup->new($tmpfile);
 
-    my $bbd = Strassen->new($tmpfile);
-    isa_ok $bbd, 'Strassen';
-    is $bbd->get_global_directive('encoding'), 'utf-8', 'encoding directive was preserved in bbd';
+	my $bbd = Strassen->new($tmpfile);
+	isa_ok $bbd, 'Strassen';
+	is $bbd->get_global_directive('encoding'), 'utf-8', 'encoding directive was preserved in bbd';
 
-    my $rec;
+	my $rec;
 
-    $rec = $s->search_first("Dudenstraße");
-    is $rec->[Strassen::NAME], 'Dudenstraße', 'utf8 example';
+	$rec = $s->search_first("Dudenstraße");
+	is $rec->[Strassen::NAME], 'Dudenstraße', 'utf8 example';
 
-    $rec = $s->search_first("Auguststraße");
-    is $rec->[Strassen::NAME], 'Auguststraße', 'another utf8 example';
-    $rec = $s->search_next;
-    is $rec->[Strassen::NAME], 'Auguststraße', 'search_next with utf8 works';
-    ok !$s->search_next, 'no more Auguststraße';
+	$rec = $s->search_first("Auguststraße");
+	is $rec->[Strassen::NAME], 'Auguststraße', 'another utf8 example';
+	$rec = $s->search_next;
+	is $rec->[Strassen::NAME], 'Auguststraße', 'search_next with utf8 works';
+	ok !$s->search_next, 'no more Auguststraße';
+
+	# Tests with delimited
+	$rec = $s->search_first("Dudenstraße", 1);
+	is $rec->[Strassen::NAME], 'Dudenstraße', 'delimited';
+	$rec = $s->search_first("Dudenstr", 0);
+	is $rec->[Strassen::NAME], 'Dudenstraße', 'not delimited';
+	$rec = $s->search_first("Dudenstr", 1);
+	ok !$rec, 'delimited and not found';
+    }
 }
 
 sub check_lookup ($$$) {

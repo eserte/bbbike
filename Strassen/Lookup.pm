@@ -48,13 +48,16 @@ directives or comments.
 =cut
 
 sub new {
-    my($class, $file) = @_;
+    my($class, $file, %opts) = @_;
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
     my $self = {
 		File => $file,
 		Fh => undef,
 		GlobalDirectives => undef,
 		Offset => undef,
 		CurrentSearchString => undef,
+		CurrentIsDelimited => undef,
 	       };
     bless $self, $class;
     lock_keys %$self;
@@ -84,7 +87,7 @@ Note that the search string does not have to be in the file at all.
 =cut
 
 sub look {
-    my($self, $search_string) = @_;
+    my($self, $search_string, $delimited) = @_;
     require Tie::Handle::Offset;
     require Search::Dict;
     require Symbol;
@@ -94,7 +97,17 @@ sub look {
 	or die "Can't tie: $!";
     $self->{CurrentSearchString} = $search_string;
     $self->{Fh} = $fh;
-    Search::Dict::look($fh, $search_string);
+
+    my @warnings;
+    my $res = do {
+	# cease possible warnings, see https://rt.cpan.org/Ticket/Display.html?id=97188
+	local $SIG{__WARN__} = sub { push @warnings, grep { !/utf8 .* does not map to Unicode/ } @_ };
+	Search::Dict::look($fh, $search_string . ($delimited ? "\t" : ''));
+    };
+    if (@warnings) {
+	warn $_ for @warnings;
+    }
+    $res;
 }
 
 =head3 get_next()
@@ -114,17 +127,21 @@ sub get_next {
 
 =head2 HIGH-LEVEL METHODS
 
-=head3 search_first($search_string)
+=head3 search_first($search_string, $delimited)
 
 Search the given string and return a bbd record (see L<Strassen::Core>
 for the format), or undef if the searched string could not be found.
 
+If C<$delimited> is set to a true value, then the search string is
+expected to be complete (i.e. not right truncated).
+
 =cut
 
 sub search_first {
-    my($self, $search_string) = @_;
+    my($self, $search_string, $delimited) = @_;
     if ($self->look($search_string) != -1) {
-	$self->search_next;
+	$self->{CurrentIsDelimited} = $delimited;
+	$self->search_next($delimited);
     } else {
 	undef;
     }
@@ -140,7 +157,15 @@ L</search_first>, or undef.
 sub search_next {
     my($self) = @_;
     my $rec = $self->get_next;
-    if (index($rec->[Strassen::NAME], $self->{CurrentSearchString}) == 0) {
+    my $delimited = $self->{CurrentIsDelimited};
+    my $check;
+    if ($delimited) {
+	$check = $rec->[Strassen::NAME] eq $self->{CurrentSearchString};
+    } else {
+	$check = index($rec->[Strassen::NAME], $self->{CurrentSearchString}) == 0;
+    }
+
+    if ($check) {
 	$rec;
     } else {
 	undef;
