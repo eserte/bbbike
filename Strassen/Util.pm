@@ -18,7 +18,7 @@ use strict;
 use Config;
 use BBBikeUtil qw(rad2deg STAT_MODTIME);
 #use AutoLoader 'AUTOLOAD';
-use vars qw($VERBOSE $tmpdir
+use vars qw($VERBOSE $TRACE_CACHE_WRITES $tmpdir
 	    $cachedir $cacheprefix
 	    $cacheable @cacheable $cacheable_array_set %cache_symbol
 	    $datadumper_var $use_virt_array
@@ -485,6 +485,7 @@ sub write_cache {
 	return undef;
     }
     warn "Using $cache_func_found for writing.\n" if $VERBOSE;
+    warn "DEBUG: Write cachefile=$cachefile, cache_func=$cache_func_found to cachepath=$cachepath\n" if $TRACE_CACHE_WRITES;
 
     if ($cache_func_found eq 'Storable') {
 	eval {
