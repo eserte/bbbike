@@ -180,11 +180,15 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 # 
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 11.45 (Realisierung nach 2011) --- #: last_checked: 2013-06-01 --- #: next_check: 2013-07-01 --- Weg 1 im KGA Hochspannung: die Qualität des Wegs wird verbessert, evtl. asphaltiert	?::inwork 18266,9853 18278,9818 18224,9795 18184,9631 18181,9619
 # 
-#: XXX Baumaßnahme 8.20 (Realisierung nach 2011)
+#: XXX Baumaßnahme 8.20 (Realisierung nach 2011) vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-06-15 (Richtung Süden teilweise realisiert, Richtung Norden ein kleines Stück auch)
-Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13085,6925 13122,6717 13126,6687 13141,6651 13195,6560
+#: last_checked: 2014-07-13 (Richtung Süden teilweise realisiert, Richtung Norden ein kleines Stück auch) vvv
+Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13085,6925 13122,6717
+Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13141,6651 13195,6560
+Walterstr./Karl-Marx-Str.: bleibt die Fahrbahn hier?	?::inwork 13126,6687 13099,6712
+#: last_checked ^^^
+#: XXX ^^^
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
 #: last_checked: 2014-07-06
@@ -848,7 +852,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: osm_watch: way id="155605306" version="1"
 #: osm_watch: way id="155605307" version="4"
 #: XXX laut osm ist der westliche Abschnitt bereits asphaltiert
-#: last_checked: 2014-05-20
+#: last_checked: 2014-07-13
 #: check_frequency: 60d
 # REMOVED (realisiert) --- Herrfurthstr.: Asphaltierungsarbeiten	?::inwork 11472,7899 11573,7924 11647,7940
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11833,7980 11979,8014
@@ -1349,8 +1353,8 @@ Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::projected 15747,1288
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/helmholtzplatz.php
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/pr__sentation_sanierungsgebiet_helmholtzplatz.pdf?start&ts=1399614747&file=pr__sentation_sanierungsgebiet_helmholtzplatz.pdf
-#: last_checked: 2014-04-21
-#: next_check: 2014-07-15 (Einschränkungen während Bauarbeiten? Beenindung hier voraussichtlich Dezember 2014)
+#: last_checked: 2014-07-14
+#: next_check: 2014-08-15 (Einschränkungen während Bauarbeiten? Beendigung hier voraussichtlich Dezember 2014)
 Greifenhagener Str.: hier wird eine Fußgängerzone entstehen sowie asphaltiert werden	? 11123,15851 11150,15908
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
@@ -1451,10 +1455,10 @@ Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::proj
 # REMOVED (Bauarbeiten) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphaltierung) --- Emser Str.: Straßenbauarbeiten?	? 12872,7134 13058,7165
 #: by: http://www.aktion-kms.de/projekte/umbau-richardstrasse/
 # ("historisches Reihensteinpflaster" - noch schlechtere Qualität?)
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-13
 #: check_frequency: 30d
 Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschränkungen.	? 13150,7845 13103,7889
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-13
 #: check_frequency: 30d
 Richardstr.: wird sich hier noch etwas ändern?	? 13103,7889 13085,7904
 #: by: ^^^

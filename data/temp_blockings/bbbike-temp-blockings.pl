@@ -20467,6 +20467,7 @@ EOF
        source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
+#: source_id: IM_022364
 userdel	q4::inwork 19328,5304 19405,5284 19445,5271
 EOF
      },
@@ -21183,13 +21184,14 @@ EOF
        source_id => 'IM_022268',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-06-30
-#: next_check: 2014-07-14
+#: last_checked: 2014-07-14 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
 #: source_id: 2147338462
-userdel	q4::inwork 15261,10738 15272,10790 15279,10862 15144,10905
+userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+userdel	q3::inwork 15279,10862 15144,10905
+#: last_checked ^^^
 EOF
      },
      { from  => 1361168940, # 2013-02-18 07:29
@@ -21295,7 +21297,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: RICHARDSTR-2014
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-13
 #: check_frequency: 30d
 # REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
@@ -22623,7 +22625,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann?
-#: last_checked: 2014-06-13
+#: last_checked: 2014-07-14
 #: check_frequency: 30d
 userdel	q3::inwork 11673,16003 11567,15842
 EOF
@@ -22850,8 +22852,8 @@ userdel	2::inwork 5935,5874 6007,5882 6134,5894
 EOF
      },
      { from  => 1402264800, # 2014-06-09 00:00
-       until => 1405461600, # 2014-07-16 00:00
-       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-WM-Fanmeile, vom 11.06.2014 06 Uhr bis 15.07.14, 24:00',
+       until => $isodate2epoch->("2014-07-18 00:00:00"), # 1405461600, # 2014-07-16 00:00
+       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-WM-Fanmeile, vom 11.06.2014 06 Uhr bis zum 18.07.14',
        type  => 'gesperrt',
        source_id => 'IM_022090',
        data  => <<EOF,
@@ -22986,13 +22988,12 @@ EOF
      },
      { from  => 1404079200, # 2014-06-30 00:00
        until => $isodate2epoch->("2014-07-18 17:00:00"), # 1405461599, # 2014-07-15 23:59
-       text  => 'Rigaer Str. zwischen Zellestr. und Proskauer Str.: Bauarbeiten, Fahrbahn gesperrt, 02.07.2014 bis Mitte Juli 2014 ',
+       text  => 'Rigaer Str.: Bauarbeiten, kurzes Stück der Fahrbahn an der Proskauer Str. gesperrt, 02.07.2014 bis Mitte Juli 2014 ',
        type  => 'handicap',
        source_id => 'IM_022295',
        data  => <<EOF,
-#: XXX evtl. wird hier asphaltiert?
-#: next_check: 2014-07-14
-userdel	q4::inwork 14266,12446 14133,12482
+# REMOVED (nein) --- : XXX evtl. wird hier asphaltiert? --- #: next_check: 2014-07-14
+userdel	q3::inwork 14266,12446 14133,12482
 EOF
      },
      { from  => $isodate2epoch->("2014-10-10 00:00:00"), # 1 Tag Vorlauf

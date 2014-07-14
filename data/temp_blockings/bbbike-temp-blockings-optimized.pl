@@ -1170,6 +1170,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => 1405202400,
          'id' => 2344,
          'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
+#: source_id: IM_022364
 userdel	q4::inwork 19328,5304 19405,5284 19445,5271
 ',
          'type' => 'handicap'
@@ -1355,13 +1356,14 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-06-30
-#: next_check: 2014-07-14
+#: last_checked: 2014-07-14 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
 #: source_id: 2147338462
-userdel	q4::inwork 15261,10738 15272,10790 15279,10862 15144,10905
+userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+userdel	q3::inwork 15279,10862 15144,10905
+#: last_checked ^^^
 ',
          'type' => 'handicap'
        },
@@ -1410,7 +1412,7 @@ userdel	q2::inwork 5258,11285 5236,10994
          'id' => 2425,
          'data' => '#: next_check_id: RICHARDSTR-2014
 #: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-13
 #: check_frequency: 30d
 # REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
@@ -1735,7 +1737,7 @@ userdel	q4::inwork; 11073,-2037 10983,-2116
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
-#: last_checked: 2014-06-13
+#: last_checked: 2014-07-14
 #: check_frequency: 30d
 userdel	q3::inwork 11673,16003 11567,15842
 ',
@@ -1835,8 +1837,8 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
        undef,
        {
          'source_id' => 'IM_022090',
-         'until' => 1405461600,
-         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-WM-Fanmeile, vom 11.06.2014 06 Uhr bis 15.07.14, 24:00',
+         'until' => 1405634400,
+         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-WM-Fanmeile, vom 11.06.2014 06 Uhr bis zum 18.07.14',
          'from' => 1402264800,
          'id' => 2577,
          'data' => 'userdel	2::temp 7429,12070 7383,12095 7816,12150 7823,12120 8018,12135 8049,12140
@@ -1938,28 +1940,16 @@ userdel	q4::inwork; 17614,6571 17766,6616
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_022280',
-         'until' => 1405281600,
-         'text' => 'Boxhagener Str.: zwischen Neue Bahnhofstr. und Wühlischstr. Baustelle, Fahrbahn in Richtung Warschauer Str. gesperrt, außerdem Einbahnstraßenregelung in der Weserstr., voraussichtlich bis zum 13.07.2014 22 Uhr',
-         'from' => undef,
-         'id' => 2588,
-         'data' => 'userdel	q3::inwork; 14918,11249 14799,11330 14771,11345 14752,11369
-	1::inwork 14771,11345 14759,11339 14737,11347
-	q2; 14710,11626 14764,11591 14849,11539 14949,11474 15016,11431
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_022295',
          'until' => 1405695600,
-         'text' => 'Rigaer Str. zwischen Zellestr. und Proskauer Str.: Bauarbeiten, Fahrbahn gesperrt, 02.07.2014 bis Mitte Juli 2014 ',
+         'text' => 'Rigaer Str.: Bauarbeiten, kurzes Stück der Fahrbahn an der Proskauer Str. gesperrt, 02.07.2014 bis Mitte Juli 2014 ',
          'from' => 1404079200,
          'id' => 2590,
-         'data' => '#: XXX evtl. wird hier asphaltiert?
-#: next_check: 2014-07-14
-userdel	q4::inwork 14266,12446 14133,12482
+         'data' => '# REMOVED (nein) --- : XXX evtl. wird hier asphaltiert? --- #: next_check: 2014-07-14
+userdel	q3::inwork 14266,12446 14133,12482
 ',
          'type' => 'handicap'
        },

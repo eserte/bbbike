@@ -417,12 +417,12 @@ Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712 13378,7695
 Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168 12870,8087
 #: next_check_id: RICHARDSTR-2014
 #: XXX Asphalt wird gerade aufgetragen, danach Q0
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-13
 Richardstr.: Asphalt	Q0- 12870,8087 13085,7904
 Richardstr.: Kopfsteinpflaster, OK	Q1- 13085,7904 13103,7889
 #: next_check_id: RICHARDSTR-2014
 #: XXX bleibt das Kopfsteinpflaster so? Oder wird hier auch asphaltiert?
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-13
 Richardstr.: Kopfsteinpflaster, OK	Q1- 13103,7889 13150,7845
 Richardstr.: Kopfsteinpflaster	Q2 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
@@ -1351,7 +1351,7 @@ Am Bürgerpark: Kopfsteinpflaster	Q2 9343,18080 9365,18062 9410,18021
 Wilhelm-Kuhr-Str.: Kopfsteinpflaster	Q3+ 9460,18053 9410,18021
 Wilhelm-Kuhr-Str.: Asphalt	Q0- 9460,18053 9590,18082
 (Am Bürgerpark - Wilhelm-Kuhr-Str.): Kopfsteinpflaster	Q2 9365,18062 9366,17997
-Cantianstr.: mäßiges Kopfsteinpflaster	Q2 10713,15746 10733,15638 10768,15534 10886,15251
+Cantianstr.: mäßiges Kopfsteinpflaster	Q2 10713,15746 10733,15638 10768,15534 10804,15447 10886,15251
 Rosenthaler Str.: teilweise mäßiger Asphalt	Q1 12168,21218 12074,21243 11982,21392 11889,21543 11870,21574
 Lise-Meitner-Str.: Beton	Q0 3721,13274 3732,13346 3742,13416 3741,13495 3739,13563
 Lise-Meitner-Str.: Verbundsteine	Q1 3739,13563 3724,13702
@@ -1663,12 +1663,12 @@ Uthmannstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 12914,7785 13150,7845
 Herrnhuter Weg: Kopfsteinpflaster	Q2 12898,7832 13103,7889
 #: next_check_id: RICHARDSTR-2014
 #: XXX wie wird die Fahrbahnbeschaffenheit nach den Bauarbeiten aussehen? (früher Asphalt, Q0)
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-13
 Jan-Hus-Weg: unbefestigt	Q2 13085,7904 13117,7939
 Kirchgasse (Neukölln): gutes Kopfsteinpflaster	Q1 12992,8125 13046,8048
 #: next_check_id: RICHARDSTR-2014
 #: XXX wie wird die Fahrbahnbeschaffenheit nach den Bauarbeiten aussehen? (früher Asphalt, Q0)
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-13
 Kirchgasse (Neukölln): unbefestigt	Q2 13117,7939 13151,7914
 Kirchgasse (Neukölln): schlechtes Kopfsteinpflaster	Q3 13151,7914 13268,7801 13292,7779 13306,7765
 Kirchgasse (Neukölln): Kopfsteinpflaster	Q2 13292,7779 13245,7742
@@ -9534,6 +9534,10 @@ Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10423,21701 10388,2
 (Weg im Wustrower Park): wassergebundene Decke	Q1 17235,18352 17159,18309 17087,18434 17102,18490 17021,18663
 (Weg im Wustrower Park): Gehwegplatten	Q0- 17021,18663 16936,18658
 (Suermondtstr. - Degnerstr.): Verbundsteinpflaster	Q1 16476,16216 16458,16104 16493,15983 16559,15896
+(an den Schönhauser Allee Arcaden): Kleinsteinpflaster	Q1 11150,15908 11070,15944 11086,15984 10975,16010
+(Friedrich-Ludwig-Jahn-Sportpark - Cantianstr.): Asphalt	Q0 10530,15356 10781,15438 10804,15447
+(Friedrich-Ludwig-Jahn-Sportpark): Verbundsteinpflaster	Q0- 10456,15561 10512,15406
+(Friedrich-Ludwig-Jahn-Sportpark): Asphalt	Q0 10512,15406 10530,15356 10583,15208
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
