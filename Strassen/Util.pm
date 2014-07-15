@@ -1,9 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.25 2008/08/28 21:04:31 eserte Exp eserte $
-#
-# Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2014 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -12,7 +10,7 @@
 
 package Strassen::Util;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.26';
 
 use strict;
 use Config;
@@ -542,3 +540,75 @@ sub write_cache {
 }
 
 1;
+
+__END__
+
+=head1 NAME
+
+Strassen::Util - misc utility functionality
+
+=head1 DESCRIPTION
+
+The following configuration variables are available in this module:
+
+=over
+
+=item C<$VERBOSE>
+
+If set to a true value, then caching functions are more verbose.
+
+=item C<$TRACE_CACHE_WRITES>
+
+If set to a true value, then log the creation of cache files, showing
+also the non-md5 cleartext file name.
+
+=item C<$cachedir>
+
+May be changed to a different cache directory; by default it's the
+F<cache> subdirectory in the F<bbbike> directory (if available).
+
+=item C<$cacheprefix>
+
+A cache prefix to differentiate cache files for different data
+directories. Default is C<b_de>. By convention, the cache prefix
+should consist of the abbreviated city and country names (in the
+default case this is C<b> for Berlin and C<de> for Germany).
+
+Either C<$cachedir> or C<$cacheprefix> should be set if using multiple
+data directories on one system.
+
+=back
+
+The following functions are available in this module:
+
+=over
+
+=item C<strecke([I<$x1>,I<$y1>],[I<$x2>,I<$y2>])>
+
+Return distance in meters between the given coordinates. Valid for
+"standard" bbbike coordinates.
+
+=item C<strecke_s("x1,y1", "x2,y2")>
+
+Like L</strecke>, but takes two comma-separated strings as parameters.
+
+=item C<strecke_polar([I<$lon1>,I<$lat1>],[I<$lon2>,I<$lat2>])>
+
+Return distance in meteres between the given coordinates. Valid for
+WGS84 coordinates.
+
+=item C<strecke_s_polar("$lon1,$lat1", "$lon2,$lat2")>
+
+Like L</strecke_polar>, but takes two comma-separated strings as parameters.
+
+=back
+
+=head1 TODO
+
+Document the rest.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
