@@ -2325,6 +2325,9 @@ sub set_info_handler {
 	my $msg = "File $osm_file";
 	if ($reader) {
 	    no warnings 'uninitialized';
+	    # Unfortunately, for compressed files byteConsumed is the
+	    # position in the uncompressed stream, so it's not
+	    # possible to determine the relative file position.
 	    $msg .= sprintf ", bytes consumed %d, line %d, current node name '%s', id=%s", $reader->byteConsumed, $reader->lineNumber, $reader->name, $reader->getAttribute('id');
 	}
 	print STDERR $msg, "\n";
