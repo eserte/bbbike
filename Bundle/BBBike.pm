@@ -115,6 +115,8 @@ Template	- für BBBikeDraw::MapServer
 
 Inline::C	- für den schnelleren Suchalgorithmus, siehe ext/Strassen-Inline
 
+Array::Heap	- macht A* noch etwas schneller
+
 Pod::Usage	- für das Ausgeben der 'Usage' in einigen Entwicklungs-Tools
 
 Palm::PalmDoc	- für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung

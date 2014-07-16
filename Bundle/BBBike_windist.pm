@@ -67,6 +67,8 @@ Win32::Shortcut
 
 Class::Accessor	- für die ESRI-Module etc.
 
+Array::Heap	- macht A* noch etwas schneller
+
 IPC::Run	- hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)
 
 Object::Iterate	- Notwendig für die bbd2-esri-Konvertierung
