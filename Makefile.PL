@@ -161,6 +161,8 @@ my @req_table =
    'für BBBikeDraw::MapServer'],
   [qw/Inline::C		0	all	0	base/,
    'für den schnelleren Suchalgorithmus, siehe ext/Strassen-Inline'],
+  [qw/Array::Heap	0	all	2|4	base/,
+   'macht A* noch etwas schneller'],
   [qw/Pod::Usage	0	all	0	devel/,
    { de => 'für das Ausgeben der \'Usage\' in einigen Entwicklungs-Tools',
      en => 'for printing the usage in some development tools'

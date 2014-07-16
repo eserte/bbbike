@@ -53,6 +53,8 @@ Class::Accessor	- für die ESRI-Module etc.
 
 Template	- für BBBikeDraw::MapServer
 
+Array::Heap	- macht A* noch etwas schneller
+
 Palm::PalmDoc	- für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung
 
 XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien
