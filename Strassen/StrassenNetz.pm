@@ -1,9 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.60 2008/12/31 12:26:33 eserte Exp $
-#
-# Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2014 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -29,7 +27,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.60 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.61';
 
 package StrassenNetz;
 use strict;
@@ -917,11 +915,23 @@ sub build_search_code {
     #      $g:    Streckenlänge (oder Penalty) bis Node (DIST),
     #      $f:    abgeschätzte Länge bis Ziel über Node (HEURISTIC_DIST),
     #      weitere Array-Elemente sind optional ...]
+
+    # Use Array::Heap if it's installed and it's not explicitly disabled using $use_heap=0.
+    # If $use_heap=1 is set and it's not installed, then a warning is issued.
+    # For performance reasons it's highly recommended to use Array::Heap.
     use vars qw($use_heap);
-    $use_heap = 0 if !defined $use_heap; # XXX the heap version seems to be faster, but first do some tests and enable it after 3.13 RELEASE.
-    if ($use_heap && !eval q{ require Array::Heap; Array::Heap->VERSION(2); import Array::Heap; 1 }) {
-	$use_heap = 0;
+    my $maybe_use_heap = !defined $use_heap;
+    if (($use_heap || $maybe_use_heap)) {
+	if (!eval q{ require Array::Heap; Array::Heap->VERSION(2); import Array::Heap; 1 }) {
+	    if ($use_heap) {
+		warn "Array::Heap is not available: $@, continue without Array::Heap support";
+	    }
+	    $use_heap = 0;
+	} elsif ($maybe_use_heap) {
+	    $use_heap = 1;
+	}
     }
+
     $code .= '
 
 '; if ($use_heap) { $code .= '
