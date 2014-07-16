@@ -1299,7 +1299,7 @@ Damaschkestr.: Kopfsteinpflaster	Q2 3132,10499 3013,10553
 Mierendorffstr.: Asphalt	Q0 3337,12855 3435,12954 3517,13067 3523,13076 3534,13098 3556,13200
 Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3604,9961 3605,9929
 (Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q2+ 9210,10614 9368,10641
-(Stresemannstr. - Wilhelmstr.): Parkweg	Q1 9250,10563 9375,10616
+(Stresemannstr. - Wilhelmstr.): Parkweg	Q1- 9250,10563 9375,10616
 #: by Olaf Schulz vvv
 Frˆbelstr.: guter Asphalt	Q0 11776,15060 11870,15004 11964,14962 12089,14891
 #: confirmed_by: srt
@@ -2215,7 +2215,7 @@ nˆrdliches Spreeufer: wassergebundene Decke	Q1 6064,12950 6102,12960
 nˆrdliches Spreeufer: Asphalt	Q0 6102,12960 6180,12972
 B‰umerplan: Asphalt	Q0 8553,7795 8527,7939
 Jungfernheideweg: Kopfsteinpflaster	Q2- 1238,15705 1280,15591
-(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Parkweg	Q1 2934,14852 2900,14891 2685,15167 2707,15205 2695,15258 2632,15295
+(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Parkweg	Q1 2934,14852 2900,14891 2835,14975 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Parkweg	Q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1372,15313
 (Jungfernheide): Verbundsteinpflaster	Q1 1415,15190 1459,15196 1498,15196
 (Jungfernheide): Parkweg	Q1 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
@@ -5594,7 +5594,7 @@ Ahrensdorfer Str.: Beton	Q0- 7458,283 7408,257 7344,261 7286,284
 Zernickstr.: Verbundsteinpflaster	Q1 7408,257 7391,347
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Kopfsteinpflaster	Q2 7776,-283 7717,-285
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Verbundsteinpflaster	Q1 7717,-285 7722,-180 7668,-138 7659,-112 7559,14 7540,18 7520,76 7501,83
-Diedersdorfer Weg: Asphalt	Q0 7781,-182 7776,-283 7765,-525 7749,-857 7752,-949
+Diedersdorfer Weg: Asphalt	Q0 7781,-182 7776,-283 7773,-344 7765,-525 7749,-857 7752,-949
 Reinstedter Weg: Asphalt	Q0 7300,-335 7384,-387 7475,-443 7565,-494 7603,-511 7657,-522 7706,-527
 Reinstedter Weg: unbefestigter Weg	Q2 7706,-527 7765,-525
 Hermeroder Weg: Asphalt mit einigen leichten Sch‰den	Q1+ 7616,-790 7657,-522 7665,-458 7630,-445
@@ -11112,7 +11112,7 @@ Schieferweg: Verbundsteinpflaster	Q0- 10612,1925 10593,1875 10578,1840
 #: corrected_by: srt (Asphalt -> Beton)
 Nordlichtstr.: guter Beton	Q0 4335,17642 4396,17622 4466,17600 4538,17573 4617,17542 4694,17511 4762,17484 4826,17456 4893,17431 4914,17399 4901,17341 4891,17289 4879,17246
 Meteorstr.: gutes Verbundsteinpflaster	Q1 4271,17508 4359,17485 4430,17466 4506,17446 4587,17425 4666,17404 4737,17385 4805,17367 4901,17341
-Uranusweg	Q0 4392,17777 4335,17642 4264,17526 4271,17508
+Uranusweg	Q0 4392,17777 4335,17642 4287,17564 4264,17526 4271,17508
 Straﬂe 442	Q0 4891,17289 4997,17241
 Straﬂe 462	Q0 5068,17384 4914,17399
 #: by: ^^^

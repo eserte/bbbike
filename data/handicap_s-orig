@@ -18,7 +18,7 @@ Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,1
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
 # 
-#: last_checked: 2014-07-05 vvv
+#: last_checked: 2014-07-15 vvv
 #: next_check: 2014-11-30 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -55,15 +55,14 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 #: last_checked: 2014-06-19
 zur Keibelstr.: Baustraße, Einbahnstraße	q4::inwork; 10976,13229 11045,13183
 # 
-#: last_checked: 2014-06-18
+#: last_checked: 2014-07-15
 Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 # 
 # REMOVED (keine Einschränkungen mehr) --- #: last_checked: 2014-06-06 --- Ohmstr.: Bauarbeiten, auf engen Gehweg ausweichen	q3::inwork 11378,11856 11324,11689
 # 
 #: XXX Ende der Bauarbeiten?
 #: XXX_prog: zu eng für Anhänger
-#: last_checked: 2014-07-09
-#: check_frequency: 7d
+#: last_checked: 2014-07-15
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
@@ -138,7 +137,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-07-14
+#: last_checked: 2014-07-15
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -828,7 +827,7 @@ Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe
 Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4954,5888
 #: note: bei Veranstaltungen (Max-Schmelling-Halle) möglicherweise gesperrt oder größere Behinderungen:
 (Gaudystr. - Mauerpark): Fußgänger, bei Veranstaltungen in der Max-Schmelling-Halle größere Behinderungen möglich	q3 10456,15561 10256,15482 10192,15465
-(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fußgänger	q1 2934,14852 2900,14891 2685,15167 2707,15205 2695,15258 2632,15295
+(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fußgänger	q1 2934,14852 2900,14891 2835,14975 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fußgänger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1372,15313
 (Jungfernheide): Fußgänger	q1 1415,15190 1459,15196 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
 (Teltowkanalpromenade am Nordufer): Fußgänger, Radfahren offiziell nicht erlaubt	q2 3696,1445 3601,1296 3476,1169 3348,1078 3092,875
@@ -1731,7 +1730,7 @@ Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
 # 
 #: XXX_prog BS (ansonsten entfernen)
 #: XXX wird der Bordstein noch abgesenkt?
-#: last_checked: 2014-06-27
+#: last_checked: 2014-07-15
 #: check_frequency: 100d
 Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
 # 

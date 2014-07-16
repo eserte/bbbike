@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2014-06-18
+#: last_checked: 2014-07-15
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -89,7 +89,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10243
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2014-05-16
+#: last_checked: 2014-07-15
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -196,8 +196,10 @@ Walterstr./Karl-Marx-Str.: bleibt die Fahrbahn hier?	?::inwork 13126,6687 13099,
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
+#: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt?
+#: source_id: IM_022377
 #: last_checked: 2014-07-06
-#: check_frequency: 120d
+#: next_check: 2014-08-12
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
@@ -3693,7 +3695,16 @@ Jahnpromenade (Erkner): Qualität?	? 34325,3183 34352,3189 34493,3339
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
 #: XXX Privatstraße
 Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13494,-2850
-#
+# 
 Schiefertonweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10269,21718 10248,21795
 Zechsteinweg: ist der Zechsteinweg eine Sackgasse?	? 10328,21737 10319,21774
 Kieselweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10423,21701 10388,21801
+Weg in der Jungfernheide: Qualität des Wegs? Nachts beleuchtet? Existiert eine Ausschilderung?	? 2683,14878 2768,14923 2835,14975 2889,15033 2929,15138 2933,15270 2922,15379 3095,15495
+Uranusweg - Eichborndamm: Weg entlang Sportanlage und Autobahn, Qualität des Wegs? Nachts beleuchtet? Existiert eine Ausschilderung?	? 4287,17564 3961,17710 4015,17912
+Maienwerderweg - Sendener Weg: Qualität des Wegs? Nachts beleuchtet?	? 2210,18262 2097,18183 1928,18136 1663,18166 1375,18209 1178,18223
+Wollankstr. - Pankeweg: Qualität des Wegs? Nachts beleuchtet?	? 9240,17268 9073,17361
+#: XXX culdesac eintragen
+Wuhlewanderweg bis zur Spreemündung: Qualität des Wegs? Nachts beleuchtet?	? 21602,5685 21507,5620
+Weg am ehem. Güteraußenring: Qualität des Wegs? Nachts beleuchtet?	? 9562,-619 9522,-530 9484,-543 9424,-614 9171,-661 8501,-759 7978,-839
+Anbindung zum Weg am Königsgraben: Qualität des Wegs? Nachts beleuchtet?	? 8501,-759 8574,-698 8626,-677
+Weg im Freizeitpark Marienfelde: Qualität des Wegs? Nachts beleuchtet?	? 7978,-839 8010,-805 8018,-489 7801,-467 7803,-387 7785,-345 7773,-344
