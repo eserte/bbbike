@@ -993,6 +993,9 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
+Mittelstreifen mit Zaun	3nocross::ignrte 7966,15571 7975,15500 8049,15470
+Reinickendorfer Str. -> Nettelbeckpl.: Mittelstreifen mit Zaun	3::igndisp 8049,15470 7975,15500 7975,15484
+Nettelbeckpl. -> Reinickendorfer Str.: Mittelstreifen mit Zaun	3::igndisp 7975,15484 7975,15500 7966,15571
 unbequemes Überqueren	3nocross::ignrte 10238,11741 10299,11786 10314,11804
 Spittelmarkt -> Spittelmarkt: unbequemes Überqueren	3::igndisp 10240,11740 10299,11786 10238,11741
 Spittelmarkt -> Kurstr.: unbequemes Überqueren	3::igndisp 10240,11740 10299,11786 10278,11802
@@ -3311,3 +3314,4 @@ Königsberger Str., linker Gehweg	1::igndisp 4164,2717 4220,2664
 Königsberger Str., linker Gehweg	1::igndisp 4236,2678 4164,2717
 Bornholmer Str., linker Gehweg	1::igndisp 10197,16528 10118,16561
 Platz der Vereinten Nationen, linker Gehweg	1::igndisp 11984,13081 11962,13089 11952,13095
+Reinickendorfer Str., linker Gehweg	1::igndisp 7966,15571 7962,15533 7975,15484

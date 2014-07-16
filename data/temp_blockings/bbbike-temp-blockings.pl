@@ -22926,8 +22926,8 @@ userdel	2::inwork 60418,-397 58317,-1384
 EOF
      },
      { from  => 1403809173, # 2014-06-26 20:59
-       until => $isodate2epoch->("2014-08-04 16:00:00"),
-       text  => 'Warnemünder Str.: Asphaltierungsarbeiten in Richtung Norden, Fahrbahn wird nur begrenzt verfügbar sein, 30.6.2014 bis 4.8.2014 ',
+       until => $isodate2epoch->("2014-07-07 05:00:00"),
+       text  => 'Warnemünder Str.: Asphaltierungsarbeiten in Richtung Norden, Fahrbahn wird nur begrenzt verfügbar sein, 30.6.2014 bis zum 17.7.2014 ',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140626.1220.398183.html',
        data  => <<EOF,
