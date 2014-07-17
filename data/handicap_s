@@ -8,6 +8,7 @@ Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,1
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
+Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 zur Keibelstr.: Baustraße, Einbahnstraße	q4::inwork; 10976,13229 11045,13183
 Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
@@ -274,7 +275,7 @@ St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
 Spreegasse: Fußgänger, Cafés	q3 10249,12658 10309,12700 10387,12760
 Heiligegeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10352,12627
 Am Zeughaus: Fußgänger	q2 9919,12613 9956,12523 9984,12426
-Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7648,9944 7698,10147
+Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7657,9942 7698,10147
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fußgänger	q1 4199,11819 4195,11692
 (Blücherplatz - Zossener Str.): Fußgänger, Bordsteine	q2 9702,10129 9827,10051
@@ -300,14 +301,14 @@ Helgoländer Ufer - Stromstr.: Fußgänger, Café	q3 6551,12901 6535,12934 6271,1298
 Helgoländer Ufer - Stromstr.: Fußgänger	q2 6271,12985 6289,13081 6183,13083
 Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6129,12976 6106,12981
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
-(Stadtpark Steglitz): Fußgänger	q1 5817,4473 5890,4674 5957,4803 6006,4852
+(Stadtpark Steglitz): Fußgänger	q1 5787,4400 5833,4462 5838,4540 5890,4674 5947,4791 6000,4846 6006,4852
 Barsekowstr.: Fußgänger	q1 5336,4676 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5656,4621 5709,4674
 (Stadtpark Steglitz): Fußgänger, Bordstein	q3 5709,4674 5715,4672 5724,4670
-(Stadtpark Steglitz): Fußgänger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6032,4745 6092,4717 6107,4718
+(Stadtpark Steglitz): Fußgänger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6026,4744 6030,4743 6092,4717 6107,4718
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5582,4675 5555,4743
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
-(Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5945,4828 6006,4852
+(Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
 Dieffenbachstr.: Bodenschwellen	q0 11141,9732 11346,9655
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14077,10016
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
@@ -1366,7 +1367,8 @@ Georg-Steger-Weg: einige Fußgänger	q1 1493,2249 1480,2199 1452,2095 1461,2073 14
 (Zwickauer Damm - Rudower Fließ): einige Fußgänger	q1 15719,1557 15727,1525 15776,1456 15795,1428 15886,1382 15928,1395 16005,1350 16043,1311 16051,1293 16076,1272 16329,1128 16419,1048
 (Grünanlage - Fleischerstr.): einige Fußgänger, Bordstein	q2 15928,1395 15977,1422 15987,1430
 (Straße 618 - Rudower Fließ): einige Fußgänger	q1 16297,592 16271,609
-Königsheideweg - Südostallee: Kleingartengelände	q1 15784,5865 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059
+Königsheideweg - Südostallee: Kleingartengelände	q1 15784,5865 15788,5898 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059
+Königsheideweg - Südostallee: Kleingartengelände	q1 15788,5898 15881,5901 15967,5924 15964,5940
 Engelwurzweg: teilweise recht eng	q3 25059,6554 24738,6418
 (Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18580,11874 18698,11914 18913,11907
 Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8588,13673 8590,13653
@@ -1382,6 +1384,9 @@ Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (Weg im Wustrower Park): einige Fußgänger, eng	q2 17235,18352 17159,18309 17087,18434 17102,18490 17021,18663
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
+Neue Steinmetzstr.: Bordstein	q2 7625,9376 7628,9365
+Münchener Str.: Bordstein	q2 6264,9156 6255,9194
+(Promenade - Borstellstr.): einige Fußgänger	q2 6392,4312 6390,4335
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -1478,7 +1483,7 @@ Mühlenbecker Weg: Fußgänger	q1 20150,15678 20334,16043
 (Nordmannzeile - Vorarlberger Damm): Fußgänger, Kleingartenweg	q1 6841,7283 6846,7306 7062,7376 7108,7416 7220,7442
 Herschelstr.: enge Wohnstraße	q1 3200,13277 3239,13461 3262,13547 3280,13625
 Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
-Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8887,5564
+Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8872,5484 8887,5564
 (Livländische Str. - Schoelerpark): Fußgänger, für Radfahrer freigegeben	q1 5170,8449 5212,8602
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fußgänger	q1 821,2714 1017,2823 1126,2885 1262,2975
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fußgänger	q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2228,3554
@@ -2329,3 +2334,4 @@ Königsberger Str., linker Gehweg	q2::igndisp; 4164,2717 4236,2678
 Bornholmer Str., linker Gehweg	q3::igndisp; 10118,16561 10197,16528
 Platz der Vereinten Nationen, linker Gehweg	q3::igndisp; 11952,13095 11962,13089 11984,13081
 Reinickendorfer Str., linker Gehweg	q3::igndisp; 7975,15484 7962,15533 7966,15571
+Bismarckstr., linke Seite	q0::igndisp; 6000,4846 6027,4896 6055,4950

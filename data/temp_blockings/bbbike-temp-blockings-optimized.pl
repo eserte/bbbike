@@ -1586,7 +1586,7 @@ userdel	2::night 17671,13132 17684,13133
          'data' => '#: next_check_id: CHERUSKERPARK-2014
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-05-24
+#: last_checked: 2014-07-17
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
@@ -1892,7 +1892,7 @@ userdel auto	3 7059,11978 7031,12024 7026,12054
          'data' => '#: by: Angelika Weber
 #: XXX wann sind die Bauarbeiten beendet?
 #: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten?
-#: next_check: 2014-07-17
+#: last_checked: 2014-07-17
 userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 ',
          'type' => 'handicap'

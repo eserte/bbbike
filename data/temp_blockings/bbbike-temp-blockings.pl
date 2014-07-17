@@ -11894,7 +11894,7 @@ userdel auto	3 7444,10479 7633,10394 7744,10372
 userdel auto	3 9028,12307 9141,12320 9130,12433
 userdel auto	3 7744,10372 7633,10394 7444,10479
 userdel auto	3 7293,11519 7171,11510 6987,11487 6915,11492 6825,11486 6716,11439
-userdel auto	3 9876,12298 9858,12410 9842,12506
+userdel auto	3 9876,12298 9858,12410 9845,12506
 userdel auto	3 7849,10488 7689,10514 7478,10612
 userdel auto	3 7160,11225 7103,11247 6851,11346 6692,11365
 userdel auto	3 8102,11099 8000,11137 7828,11133
@@ -11913,7 +11913,7 @@ userdel auto	3 7384,10127 7413,10244 7429,10366
 userdel auto	3 7003,10513 7033,10396 7245,10499 7291,10506
 userdel auto	3 8232,11414 8226,11458 8172,11679
 userdel auto	3 9369,12253 9358,12351 9343,12464
-userdel auto	3 9842,12506 9858,12410 9876,12298
+userdel auto	3 9845,12506 9858,12410 9876,12298
 userdel auto	3 8205,10979 8104,11037 7980,11070 7747,11075
 userdel auto	3 6494,10440 6532,10529 6468,10550
 userdel auto	3 9343,12464 9358,12351 9369,12253
@@ -20870,7 +20870,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_115461',
        data  => <<EOF,
-userdel	q4::inwork; 9277,4664 9405,4667 9494,4658 9695,4638 10010,4606
+userdel	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
      { from  => $isodate2epoch->("2013-09-24 06:00:00"), # 1 Tag Vorlauf
@@ -21628,7 +21628,7 @@ EOF
        recurrences => [['yearly', days => 22, months => 6]],
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 12826,4777 12836,4649
+userdel	2::temp 12819,4780 12836,4649
 EOF
      },
      { from  => undef,
@@ -21996,7 +21996,7 @@ EOF
 #: next_check_id: CHERUSKERPARK-2014
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: last_checked: 2014-05-24
+#: last_checked: 2014-07-17
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 EOF
@@ -22912,7 +22912,7 @@ EOF
 #: by: Angelika Weber
 #: XXX wann sind die Bauarbeiten beendet?
 #: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten?
-#: next_check: 2014-07-17
+#: last_checked: 2014-07-17
 userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 EOF
      },

@@ -28,7 +28,7 @@ Dennewitzplatz	1 7813,10112 7906,10098
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679
 #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen
-#: last_checked: 2014-07-15 (Bauarbeiten)
+#: last_checked: 2014-07-17 (Bauarbeiten)
 #: check_frequency: 7d
 Dennewitzplatz	1s:q3 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
@@ -1507,7 +1507,7 @@ Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
-Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9207,5185 9196,5272 9188,5333 9179,5398 9161,5535
+Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9207,5185 9196,5272 9188,5333 9176,5413 9161,5535
 Schönhauser Allee: U-Bahnviadukt	3nocross 10969,15944 10964,15896 10953,15787
 Schönhauser Allee: U-Bahnviadukt	3 10941,15697 10917,15525 11055,15504
 Berliner Str.: U-Bahnrampe	3nocross 10975,16896 10992,16829 11008,16729 11021,16605 11027,16553 11019,16465
@@ -2016,6 +2016,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:5::trailer=10 6030,4743
+Drängelgitter	BNP:5::trailer=10 6022,4746
 Drängelgitter (lichte Breite 80cm)	BNP:5::trailer=no 10585,21759
 Drängelgitter (lichte Breite 70cm)	BNP:7::trailer=no 10752,21727
 Schranke (lichte Breite ca. 100cm)	BNP:3::trailer=10 8377,10503
@@ -2256,6 +2258,7 @@ Drängelgitter (lichte Breite ca. 80cm)	BNP:4::trailer=no -5236,11204
 Schranke (lichte Breite ca. 100cm)	BNP:2::trailer=5 20904,19284
 Schranke	BNP:4::trailer=10 11432,4054
 Schranke	BNP:4::trailer=10 11408,4190
+Schranke	BNP:4::trailer=10 11486,4321
 Schranke	BNP:4::trailer=10 15200,2754
 Pfosten (lichte Breite ca. 120cm)	BNP:0::trailer=5 18727,1040
 Pfosten (lichte Breite ca. 100cm)	BNP:0::trailer=5 21356,8267
@@ -2447,7 +2450,9 @@ Schranke (Krankenhaus Herzberge)	BNP:2 17780,13468
 Drängelgitter (S-Bhf. Grunewald)	BNP:10 731,9103
 Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5 29103,4765
 Schranke	BNP:5 32192,5915
+#: note: kann auf parallelen Gehweg umfahren werden
 Schranke, schwer passierbar	BNP:10 7625,9376
+#: note: kann auf parallelen Gehweg umfahren werden
 Schranke	BNP:5 7612,9446
 Barriere	BNP:0::trailer=3 3268,11847
 Drängelgitter	BNP:5 -5890,25875
@@ -2901,7 +2906,7 @@ Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3nocross 6494,10440 64
 tragen (2 x 10 Stufen)	0:40 1666,4637
 tragen (2 x 10 Stufen)	0:40 1689,4630
 Sterzinger Str.	1 6096,8600 6123,8546
-Bozener Str.	1 5904,8928 5971,8926 6049,8916
+Bozener Str.	1 5900,8930 5971,8926 6049,8916
 Bozener Str.	1 5971,8926 5975,9094
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492 6753,10446
 # REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Queren nicht möglich	3nocross 5354,8236 5363,8170 5376,8104 5357,8013

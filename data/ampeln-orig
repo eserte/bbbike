@@ -366,7 +366,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9207,5185
 	X 8018,4823
 	X 9021,3878
-	X 9277,4664
+	X 9275,4672
 	X 9310,4407
 	X 5644,6936
 	X 5817,7223
@@ -466,7 +466,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13474,8060
 	X 13107,8343
 	X 15765,6212
-	X 16143,6750
+	X 16146,6755
 	X 16428,7144
 	X 17290,6228
 	X 17614,6571
@@ -734,7 +734,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10446,6414
 	X 10505,6417
 	X 11142,6535
-	X 6195,8793
+	X 6190,8800
 	X 5655,8828
 	X 4473,9154
 	X 3698,9624
@@ -748,7 +748,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -6442,1150
 	X 10010,4606
 	X 10412,4552
-	X 10293,4361
+	X 10288,4354
 	X 10800,5203
 	X 11266,5097
 	X 11386,5107
@@ -772,6 +772,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Radfahrer werden beim Rechtsabbiegen aus Alt-Rudow an der Ampel vorbei geführt
 	X 16315,1904
 	X 15301,3038
+#: note: Anforderungsampel
 	F 13594,5240
 	X 12025,7852
 	F 11931,8206
@@ -782,7 +783,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 1074,8470
 	X 2114,7742
 	X 2767,7592
-	X 6023,8799
+	X 6020,8809
 	X 161,3062
 	X -2280,2177
 	X -4003,1234
@@ -1360,6 +1361,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7203,4737
 #: note: Anforderungsampel
 	F 6184,4924
+#: note: Anforderungsampel
 	F 5689,5109
 	X 5583,5179
 	X 5687,5486
@@ -1688,7 +1690,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3276,3977
 	X 3643,4232
 	X 4671,5697
-	X 4854,6413
+#: note: Anforderungsampel
+	F 4848,6401
 	X 4010,5888
 	X 3187,4893
 	X 4423,6477
@@ -2360,11 +2363,15 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 3995,12173
 	F 22031,9142
 	F 15356,3759
-#: next_check_id: KARLSHORSTER-2014
-#: next_check: 2014-07-14
+#: next_check_id: KARLSHORSTER-2014 vvv
+#: last_checked: 2014-07-17 vvv
 #: note: provisorische Ampel
-#: valid: 20140630-20140714
+#: valid: 20140630-20140714 vvv
 	X::inwork 14906,10820
+	X::inwork 14805,10518
+#: valid ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
 	F 8667,5372
 	F 5807,12070
 	F 6833,15215
@@ -2504,7 +2511,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
-#: last_checked: 2014-06-18
+#: last_checked: 2014-07-15
 	F::inwork 9812,12145
 # 
 #: next_check_id: INVALIDEN-2014
@@ -2644,6 +2651,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check: 2015-07-01
 #: valid: 20140701-20150701
 	X::inwork 11269,20667
+#: note: Anforderungsampel
+	F 5357,6943
 # 
 ################################################################################
 #: note: Potsdam vvv

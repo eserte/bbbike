@@ -178,10 +178,10 @@ Heylstr.	1 6459,8281 6385,8274 6325,8259
 Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
 Gutzkowstr.	1 6785,8194 6636,8157
 Gleditschstr.	1 7137,9216 7130,9305
-Hohenfriedbergstr.	3 7791,8882 7790,8913 7782,9115
-Hohenfriedbergstr.	3 7782,9115 7790,8913 7791,8882
-Hohenfriedbergstr. - Brunhildstr.	3 7782,9115 7790,8913 7707,8915
-Hohenfriedbergstr. - Brunhildstr.	3 7707,8915 7790,8913 7782,9115
+Hohenfriedbergstr.	3 7791,8882 7790,8913 7790,9126
+Hohenfriedbergstr.	3 7790,9126 7790,8913 7791,8882
+Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8913 7707,8915
+Hohenfriedbergstr. - Brunhildstr.	3 7707,8915 7790,8913 7790,9126
 Olga-Benario-Prestes-Str.	1 12628,14650 12473,14763
 Filandastr.	3nocross::ignrte 5687,5486 5687,5586 5683,5672 5681,5743
 Filandastr. -> Kantstr.: Filandastr.	3::igndisp 5683,5672 5687,5586 5840,5588
@@ -473,8 +473,8 @@ Kettinger Str. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10228,1194 10329,
 Kettinger Str. -> Sandsteinweg: Mittelstreifen	3::igndisp 10228,1194 10329,1231 10440,1283
 Sandsteinweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 10440,1283 10329,1231 10379,1097
 Sandsteinweg -> Kettinger Str.: Mittelstreifen	3::igndisp 10440,1283 10329,1231 10228,1194
-Mittelstreifen	3nocross::ignrte 9277,4664 9294,4536 9310,4407
-Königstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9172,4521 9294,4536 9277,4664
+Mittelstreifen	3nocross::ignrte 9275,4672 9294,4536 9310,4407
+Königstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9172,4521 9294,4536 9275,4672
 Mariendorfer Damm -> Königstr.: Mittelstreifen	3::igndisp 9310,4407 9294,4536 9172,4521
 Lilienthalstr.: Barriere für Autos	3 10615,8558 10627,8706 10640,8832
 Lilienthalstr.: Barriere für Autos	3 10640,8832 10627,8706 10615,8558
@@ -832,11 +832,11 @@ Hermannstr. -> Rollbergstr.: Hermannstr./Rollbergstr.	3::igndisp 11933,8198 1196
 Rollbergstr. -> Hermannstr.: Hermannstr./Rollbergstr.	3::igndisp 12147,8117 11963,8074 11979,8014
 Mittelstreifen	3nocross::ignrte 7579,10183 7539,9970 7526,9791
 Potsdamer Str. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7526,9791 7539,9970 7369,10018
-Potsdamer Str. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7579,10183 7539,9970 7648,9944
+Potsdamer Str. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7579,10183 7539,9970 7657,9942
 Winterfeldtstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7579,10183
-Winterfeldtstr. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7648,9944
-Alvenslebenstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7648,9944 7539,9970 7526,9791
-Alvenslebenstr. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7648,9944 7539,9970 7369,10018
+Winterfeldtstr. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7657,9942
+Alvenslebenstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7657,9942 7539,9970 7526,9791
+Alvenslebenstr. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7657,9942 7539,9970 7369,10018
 Mittelstreifen	3nocross::ignrte 10779,13793 10836,13883 10895,13961
 Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10688,13963 10836,13883 10895,13961
 Schönhauser Allee -> Fehrbelliner Str.: Mittelstreifen	3::igndisp 10779,13793 10836,13883 10688,13963
@@ -959,12 +959,12 @@ Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12697,-2235 -12708,-2257 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
 Mittelstreifen	3nocross::ignrte 6161,9128 6264,9156 6361,9175
-Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6361,9175 6264,9156 6279,9034
+Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6361,9175 6264,9156 6276,9042
 Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6161,9128 6264,9156 6255,9194
 Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6361,9175
-Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6279,9034
-Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6279,9034 6264,9156 6161,9128
-Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6279,9034 6264,9156 6255,9194
+Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6276,9042
+Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6161,9128
+Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6255,9194
 Viktoria-Luise-Platz: Poller	3 6270,9910 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
 Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7291,10506
@@ -1087,7 +1087,7 @@ Paplitzer Str.	1 11027,-2448 11073,-2037
 Steinträgerweg: Poller	3 12948,2484 12963,2365 12987,2220
 Steinträgerweg: Poller	3 12987,2220 12963,2365 12948,2484
 Im Rosengrund: Anliegerstraße	2:Anlieger 11576,4339 11601,4242 11619,4146 11633,4117 11684,3919
-Haselsteig: Anliegerstraße, nördliche Einfahrt per Schranke gesperrt	2:Anlieger 11480,4335 11547,4127 11563,4099 11567,4085 11610,3891
+Haselsteig: Anliegerstraße, nördliche Einfahrt per Schranke gesperrt	2:Anlieger 11484,4336 11486,4321 11500,4218 11547,4127 11563,4099 11567,4085 11610,3891
 Teterower Str.	1 13717,5175 13824,5204
 Hanns-Braun-Str.: bewachte Schranke	2 -515,12407 -671,12311 -1015,12106
 Weg 7: Sackgasse	3 17042,7685 16902,7652 16873,7733

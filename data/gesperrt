@@ -1492,12 +1492,12 @@ Knesebeckstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 3033,4113 2944,
 Knesebeckstr. -> Goßlerstr.: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2858,4372
 Goßlerstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3048,4305
 Goßlerstr. -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3033,4113
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 9207,5185 9196,5272 9188,5333 9179,5398 9161,5535
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 9207,5185 9196,5272 9188,5333 9176,5413 9161,5535
 Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9196,5272 9188,5333
 Mariendorfer Damm -> Wulfila-Ufer: unbequem passierbarer Mittelstreifen	3::igndisp 9196,5272 9188,5333 9145,5323
-Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9188,5333 9179,5398
-Tempelhofer Damm -> Viktoriastr.: unbequem passierbarer Mittelstreifen	3::igndisp 9188,5333 9179,5398 8943,5428
-Viktoriastr. -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 8943,5428 9179,5398 9161,5535
+Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9188,5333 9176,5413
+Tempelhofer Damm -> Viktoriastr.: unbequem passierbarer Mittelstreifen	3::igndisp 9188,5333 9176,5413 8947,5434
+Viktoriastr. -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 8947,5434 9176,5413 9161,5535
 U-Bahnviadukt	3nocross::ignrte 10969,15944 10964,15896 10953,15787
 Schönhauser Allee -> Kopenhagener Str.: U-Bahnviadukt	3::igndisp 10953,15787 10964,15896 10722,15921
 Kopenhagener Str. -> Schönhauser Allee: U-Bahnviadukt	3::igndisp 10722,15921 10964,15896 10969,15944
@@ -2081,14 +2081,10 @@ Bansiner Str. -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22896,12827 22924
 Mittelstreifen	3nocross::ignrte 12564,4308 12637,4014 12655,3882
 Mittelstreifen	3nocross::ignrte 6102,4726 6006,4852 6034,4893
 Albrechtstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6102,4726 6006,4852 5920,4976
-Albrechtstr. -> Stadtpark Steglitz, Brückenstr.: Mittelstreifen	3::igndisp 6102,4726 6006,4852 5957,4803
-Albrechtstr. -> Stadtpark Steglitz: Mittelstreifen	3::igndisp 6102,4726 6006,4852 5945,4828
+Albrechtstr. -> Stadtpark Steglitz, Brückenstr.: Mittelstreifen	3::igndisp 6102,4726 6006,4852 6000,4846
 zur Albrechtstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5920,4976 6006,4852 6034,4893
-Stadtpark Steglitz, Brückenstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5957,4803 6006,4852 6034,4893
-Stadtpark Steglitz, Brückenstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 5957,4803 6006,4852 5920,4976
-Stadtpark Steglitz, Brückenstr. -> Stadtpark Steglitz: Mittelstreifen	3::igndisp 5957,4803 6006,4852 5945,4828
-Stadtpark Steglitz -> Bismarckstr.: Mittelstreifen	3::igndisp 5945,4828 6006,4852 6034,4893
-Stadtpark Steglitz -> zur Albrechtstr.: Mittelstreifen	3::igndisp 5945,4828 6006,4852 5920,4976
+Stadtpark Steglitz, Brückenstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 6000,4846 6006,4852 6034,4893
+Stadtpark Steglitz, Brückenstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6000,4846 6006,4852 5920,4976
 Mittelstreifen, parkende Autos	3nocross::ignrte 4909,7436 4874,7382 4836,7327
 Südwestkorso -> Liane-Berkowitz-Pl.: Mittelstreifen, parkende Autos	3::igndisp 4909,7436 4874,7382 4874,7326
 Rheingaustr. -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4874,7326 4874,7382 4836,7327
@@ -2333,6 +2329,8 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:5:-75:trailer=10 6030,4743
+Drängelgitter	BNP:5:-59:trailer=10 6022,4746
 Drängelgitter (lichte Breite 80cm)	BNP:5:-109:trailer=no 10585,21759
 Drängelgitter (lichte Breite 70cm)	BNP:7:-96:trailer=no 10752,21727
 Schranke (lichte Breite ca. 100cm)	BNP:3:-115:trailer=10 8377,10503
@@ -2533,6 +2531,7 @@ Drängelgitter (lichte Breite ca. 80cm)	BNP:4:15:trailer=no -5236,11204
 Schranke (lichte Breite ca. 100cm)	BNP:2:-72:trailer=5 20904,19284
 Schranke	BNP:4:-102:trailer=10 11432,4054
 Schranke	BNP:4:-41:trailer=10 11408,4190
+Schranke	BNP:4:-187:trailer=10 11486,4321
 Schranke	BNP:4:-220:trailer=10 15200,2754
 Pfosten (lichte Breite ca. 120cm)	BNP:0:-69:trailer=5 18727,1040
 Pfosten (lichte Breite ca. 100cm)	BNP:0:-147:trailer=5 21356,8267
@@ -2793,7 +2792,7 @@ Wormser Str. -> Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3::ign
 tragen (2 x 10 Stufen)	0:40:18 1666,4637
 tragen (2 x 10 Stufen)	0:40:21 1689,4630
 Sterzinger Str.	1 6096,8600 6123,8546
-Bozener Str.	1 5904,8928 5971,8926 6049,8916
+Bozener Str.	1 5900,8930 5971,8926 6049,8916
 Bozener Str.	1 5971,8926 5975,9094
 schwierig zu querender Mittelstreifen	3nocross::ignrte 6532,10529 6636,10492 6753,10446
 Kleiststr. -> Kalckreuthstr.: schwierig zu querender Mittelstreifen	3::igndisp 6753,10446 6636,10492 6628,10318
@@ -3315,3 +3314,4 @@ Königsberger Str., linker Gehweg	1::igndisp 4236,2678 4164,2717
 Bornholmer Str., linker Gehweg	1::igndisp 10197,16528 10118,16561
 Platz der Vereinten Nationen, linker Gehweg	1::igndisp 11984,13081 11962,13089 11952,13095
 Reinickendorfer Str., linker Gehweg	1::igndisp 7966,15571 7962,15533 7975,15484
+Bismarckstr., linke Seite	1::igndisp 6055,4950 6027,4896 6000,4846

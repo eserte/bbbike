@@ -117,7 +117,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 # 
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
-#: osm_watch: way id="4543585" version="16"
+#: osm_watch: way id="4543585" version="17"
 #: osm_watch: way id="42732291" version="8"
 #: last_checked: 2014-05-16
 #: check_frequency: 90d
@@ -192,9 +192,9 @@ Walterstr./Karl-Marx-Str.: bleibt die Fahrbahn hier?	?::inwork 13126,6687 13099,
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
-#: last_checked: 2014-07-06
+#: last_checked: 2014-07-17
 #: check_frequency: 100d
-Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15921,6994 15971,6936 16049,6852 16143,6750 16273,6609 16280,6601 16333,6544 16425,6445
+Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
 #: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt?
@@ -204,7 +204,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-17
 #: check_frequency: 90d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13600,5240 13594,5240 13323,5222 13248,5221 13112,5253 13046,5267
 # 
@@ -304,7 +304,7 @@ Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,437
 #: check_frequency: 90d
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8496,6919 8447,6964 8414,6995 8319,7084
 # 
-#: last_checked: 2014-02-22
+#: last_checked: 2014-07-17
 #: check_frequency: 120d
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
@@ -317,7 +317,7 @@ Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
 #: XXX Realisierung von Radstreifen bis 2015
-#: next_check: 2014-07-22
+#: next_check: 2014-09-22
 Manteuffelstr.: werden Radstreifen markiert?	?::projected 8606,5496 8610,5579 8617,5745 8622,5867 8641,5998 8661,6169 8680,6322 8697,6455 8707,6537 8722,6656 8735,6695
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
@@ -866,7 +866,7 @@ Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahns
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
 # REMOVED --- : source_id: IM_020353	
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-17
 #: check_frequency: 120d
 Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2514
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Planung, Stand 2012-04)
@@ -1101,7 +1101,8 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 Sewanstr.: dieser Abschnitt wird zur Lückstr.	? 16647,10632 16699,10611
 # 
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf
-#: next_check: 2014-07-31
+#: last_checked: 2014-07-17
+#: check_frequency: 60d
 Friedrich-Wilhelm-Platz: Umbau der Radverkehrsanlagen	?::inwork 5314,7217 5333,7201 5352,7184 5397,7205 5364,7330 5352,7428
 # 
 #: XXX hat das irgendwelche Konsequenzen (e.g. Radwegführung?)
@@ -1140,8 +1141,6 @@ Ausgeschildert "Unfallkrankenhaus Berlin"	? 21930,12185 21608,12320
 Alt-Friedrichsfelde/Am Tierpark - Wohngebiet: Gehweg/flache breite Rampe, abgesenkte Bordsteine	? 18158,11631 18216,11656
 # 
 # REMOVED (nein, hier ändert sich nichts) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3657 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3657&date=20140325 --- #: last_checked: 2014-03-04 --- #: next_check: 2014-08-04 --- Sültstr.: Wird hier eine Einbahnstraße eingerichtet? Auch für Radfahrer?	? 12295,15953 12347,16039
-# 
-Stadtpark Steglitz: möglicherweise interessante Verbindung zwischen Albrechtstr. und Beymestr., Qualität, Beleuchtung, Fußgängerfrequenz?	? 6032,4745 5909,4798
 # 
 # REMOVED (unter der Autobahnbrücke gibt es keine Straßenschilder, aber die Kreuzungen sind hier eindeutig) --- #: XXX wo genau hört die Bucher Chaussee auf und die Karower Chaussee an? --- Bucher Chaussee/Karower Chaussee	? 16123,24232 16156,24284 16201,24354
 # 
@@ -1390,6 +1389,8 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/zebrastreifen_lepsiusstrasse.pdf
 #: priority: #C
+#: last_checked: 2014-07-17
+#: check_frequency: 120d
 Lepsiusstr./Ahornstr.: Zebrastreifen in Planung	?::projected 4725,6168 4739,6193
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
@@ -1422,7 +1423,7 @@ Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,985
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8645,6781 8655,6796
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4106&options=4 (Konzeptphase)
-#: last_checked: 2014-04-11
+#: last_checked: 2014-07-17
 #: check_frequency: 100d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
@@ -1786,7 +1787,7 @@ Schlotterkammsteig: Qualität?	? 16223,-682 16251,-586 16276,-507
 #: next_check_id: CHERUSKERPARK-2014
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf
 #: osm_watch: way id="50536166" version="3" (Cheruskerpark)
-#: last_checked: 2014-05-24
+#: last_checked: 2014-07-17
 Cheruskerpark: hier entsteht eine neue Wegverbindung (wassergebundene Decke), interessant zur Aufnahme in die Datenbasis?	?::inwork 7391,8231 7369,8278
 # 
 #: XXX_osm: fehlt bei osm
@@ -3685,8 +3686,6 @@ Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verl
 #: XXX Planstraßen G1, G2 und G3
 #: XXX genaue Lage?
 Konrad-Zuse-Ring (Potsdam): Ist die Straße schon fertig gestellt? Qualität?	? -13330,2796 -13168,2836 -13105,2614 -13266,2571
-# 
-Königsheideweg -> Südostallee: welche Gaststätte ist hier ausgeschildert?	? 15642,5468 15711,5756
 # 
 #: source_id: LS/721-E/14/051
 #: next_check: 2014-10-02

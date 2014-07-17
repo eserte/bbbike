@@ -52,6 +52,9 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # 
 ### Mitte ###
 # 
+#: last_checked: 2014-07-17
+Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
+# 
 #: last_checked: 2014-06-19
 zur Keibelstr.: Baustraße, Einbahnstraße	q4::inwork; 10976,13229 11045,13183
 # 
@@ -137,7 +140,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-07-16
+#: last_checked: 2014-07-17
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -596,7 +599,7 @@ Heiligegeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10352,1
 # REMOVED --- #: XXX_prog: sollte BS werden (1x an der Gormannstr.) --- zur Gormannstr.: Bordstein	q3 10350,13376 10372,13436
 #: note: Flohmarkt ist in temp_blockings erwähnt:
 Am Zeughaus: Fußgänger	q2 9919,12613 9956,12523 9984,12426
-Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7648,9944 7698,10147
+Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7657,9942 7698,10147
 #: note: nicht "ggfs.", also kein Kandidat für die Datei gesperrt-orig als 1s:q3
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fußgänger	q1 4199,11819 4195,11692
@@ -632,16 +635,16 @@ Helgoländer Ufer - Stromstr.: Fußgänger	q2 6271,12985 6289,13081 6183,13083
 Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6129,12976 6106,12981
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 #: note: dieser Abschnitt ist legal befahrbar
-(Stadtpark Steglitz): Fußgänger	q1 5817,4473 5890,4674 5957,4803 6006,4852
+(Stadtpark Steglitz): Fußgänger	q1 5787,4400 5833,4462 5838,4540 5890,4674 5947,4791 6000,4846 6006,4852
 Barsekowstr.: Fußgänger	q1 5336,4676 5417,4647 5476,4626 5589,4617
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5656,4621 5709,4674
 #: XXX_prog Bordstein zur Sedanstr., ansonsten q2
 (Stadtpark Steglitz): Fußgänger, Bordstein	q3 5709,4674 5715,4672 5724,4670
 #: note: offiziell wohl nicht legal befahrbar
-(Stadtpark Steglitz): Fußgänger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6032,4745 6092,4717 6107,4718
+(Stadtpark Steglitz): Fußgänger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6026,4744 6030,4743 6092,4717 6107,4718
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5582,4675 5555,4743
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
-(Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5945,4828 6006,4852
+(Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
 #: XXX_prog: für Anhänger q1
 #: note: nur drei Schwellen sind übrig geblieben, können mit Normalrad umfahren werden
 Dieffenbachstr.: Bodenschwellen	q0- 11141,9732 11346,9655
@@ -1982,7 +1985,8 @@ Georg-Steger-Weg: einige Fußgänger	q1 1493,2249 1480,2199 1452,2095 1461,2073 14
 #: XXX_prog BS an der Fleischerstr, ansonsten q1
 (Grünanlage - Fleischerstr.): einige Fußgänger, Bordstein	q2 15928,1395 15977,1422 15987,1430
 (Straße 618 - Rudower Fließ): einige Fußgänger	q1 16297,592 16271,609
-Königsheideweg - Südostallee: Kleingartengelände	q1 15784,5865 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059
+Königsheideweg - Südostallee: Kleingartengelände	q1 15784,5865 15788,5898 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059
+Königsheideweg - Südostallee: Kleingartengelände	q1 15788,5898 15881,5901 15967,5924 15964,5940
 Engelwurzweg: teilweise recht eng	q3 25059,6554 24738,6418
 (Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18580,11874 18698,11914 18913,11907
 #: XXX_prog BS auf beiden Seiten, ansonsten q3 (zu kurze Strecke für q2) vvv
@@ -2000,6 +2004,11 @@ Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17235,18352 17159,18309 17087,18434 17102,18490 17021,18663
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
+#: XXX_prog falls man die Umfahrung auf dem Gehweg wählt, auf der südlichen Seite, ansonsten wegfallen lassen
+Neue Steinmetzstr.: Bordstein	q2 7625,9376 7628,9365
+#: XXX_prog Bordstein am Wendehammer, könnte mit Umweg auf der östlichen Seite über einen abgesenkten Bordstein umfahren werden, ansonsten q1
+Münchener Str.: Bordstein	q2 6264,9156 6255,9194
+(Promenade - Borstellstr.): einige Fußgänger	q2 6392,4312 6390,4335
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2228,7 +2237,7 @@ Herschelstr.: enge Wohnstraße	q1 3200,13277 3239,13461 3262,13547 3280,13625
 #: corrected_by: srt (Radweg zwischen Fußweg und Spielplatz -> ...)
 Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
 #: by: vanfisch@...:
-Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8887,5564
+Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8872,5484 8887,5564
 #: by: Stefan Wietstock:
 #: note: "für Radfahrer freigegeben" von Holger Gaul:
 (Livländische Str. - Schoelerpark): Fußgänger, für Radfahrer freigegeben	q1 5170,8449 5212,8602
