@@ -1835,25 +1835,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_022090',
-         'until' => 1405634400,
-         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-WM-Fanmeile, vom 11.06.2014 06 Uhr bis zum 18.07.14',
-         'from' => 1402264800,
-         'id' => 2577,
-         'data' => 'userdel	2::temp 7429,12070 7383,12095 7816,12150 7823,12120 8018,12135 8049,12140
-userdel	2::temp 7816,12150 8055,12186 8049,12140 8122,12147 8215,12156 8466,12197 8522,12239
-userdel	2::temp 7383,12095 7026,12054 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120
-userdel	2::temp 8055,12186 8089,12190 8214,12205
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8303,12216 8214,12205 8215,12156
-userdel	2::temp 8610,12254 8538,12245 8522,12187
-userdel	2::temp 8538,12245 8600,12165 8595,12066
-userdel	2::temp 8055,12186 8119,12414
-userdel auto	3 7026,12054 7031,12024 7059,11978
-userdel auto	3 7059,11978 7031,12024 7026,12054
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.flaeming-skate.de/de/aktuelles/2014/05/bauarbeiten-auf-der-flaeming-skate-2014.php',
@@ -1932,17 +1914,7 @@ userdel	q4::inwork; 17614,6571 17766,6616
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_022295',
-         'until' => 1405695600,
-         'text' => 'Rigaer Str.: Bauarbeiten, kurzes Stück der Fahrbahn an der Proskauer Str. gesperrt, 02.07.2014 bis Mitte Juli 2014 ',
-         'from' => 1404079200,
-         'id' => 2590,
-         'data' => '# REMOVED (nein) --- : XXX evtl. wird hier asphaltiert? --- #: next_check: 2014-07-14
-userdel	q3::inwork 14266,12446 14133,12482
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1413151200,
          'text' => 'Badstr.: Veranstaltung (Oktoberfest Badstraße) zwischen Pankstr. und Behmstr., von 11.10.2014 bis 12.10.2014',
@@ -1966,15 +1938,15 @@ userdel	q3::inwork 14266,12446 14133,12482
          'type' => 'handicap'
        },
        {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144937.php',
-         'until' => 1407707999,
-         'text' => 'Elsenstr.: Bauarbeiten zwischen Am Treptower Park und Karl-Kunger-Str., Fahrbahn in beiden Richtungen gesperrt, vom 21.07.2014 bis zum 10.08.2013',
-         'from' => 1405807200,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148335.php',
+         'until' => 1407686400,
+         'text' => 'Elsenstr. und Bouchéstr.: Einbahnstraßenregelung zwischen Am Treptower Park und Karl-Kunger-Str., vom 21.07.2014 bis zum 10.08.2013',
+         'from' => 1405830600,
          'id' => 2594,
          'data' => '#: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
-	q4::inwork; 13923,9405 13973,9465 14089,9610
-	q4::inwork 13923,9405 13849,9310 13760,9188
+	q4::inwork; 13923,9405 13849,9310 13760,9188
+	q4::inwork; 13489,9456 13606,9578 13645,9621 13867,9864
 ',
          'type' => 'handicap'
        },

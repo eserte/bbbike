@@ -23026,16 +23026,16 @@ EOF
 	q4::inwork; 13015,7471 12992,7545 12991,7549 12969,7610 12914,7785
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-20 00:00:00"),
-       until => $isodate2epoch->("2014-08-10 23:59:59"),
-       text  => 'Elsenstr.: Bauarbeiten zwischen Am Treptower Park und Karl-Kunger-Str., Fahrbahn in beiden Richtungen gesperrt, vom 21.07.2014 bis zum 10.08.2013',
+     { from  => $isodate2epoch->("2014-07-20 06:30:00"),
+       until => $isodate2epoch->("2014-08-10 18:00:00"),
+       text  => 'Elsenstr. und Bouchéstr.: Einbahnstraßenregelung zwischen Am Treptower Park und Karl-Kunger-Str., vom 21.07.2014 bis zum 10.08.2013',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144937.php',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148335.php',
        data  => <<EOF,
 #: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
-	q4::inwork; 13923,9405 13973,9465 14089,9610
-	q4::inwork 13923,9405 13849,9310 13760,9188
+	q4::inwork; 13923,9405 13849,9310 13760,9188
+	q4::inwork; 13489,9456 13606,9578 13645,9621 13867,9864
 EOF
      },
      { from  => undef,
