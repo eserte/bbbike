@@ -1757,7 +1757,7 @@ EOF
        text  => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-03.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 32966,64019 33080,63939 33206,63582 33254,63446
+userdel	q4 32966,64019 33080,63939 33118,63832 33206,63582 33254,63446
 EOF
      },
      { from  => 1111532400, # 2005-03-23 00:00
@@ -3517,7 +3517,7 @@ EOF
        text  => 'L 23 Töpferstr. OD Joachimsthal, Kno. Angermünder Str. Ausbau Kreisverkehrsplatz Vollsperrung 01.11.2005-15.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 33080,63939 33206,63582 33254,63446
+userdel	q4 33080,63939 33118,63832 33206,63582 33254,63446
 EOF
      },
      { from  => 1133823600, # 2005-12-06 00:00
@@ -10217,7 +10217,7 @@ EOF
        text  => 'L 238 AS Werbellin-Joachimsthal OD Altenhof Kanal- und Straßenbau Vollsperrung 08.10.2007-14.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 30762,56847 30488,56704 30396,56665 30158,56695 30049,56674 30146,56367
+userdel	q4::inwork 30720,56827 30488,56704 30396,56665 30158,56695 30049,56674 30146,56367
 EOF
      },
      { from  => 1192140000, # 2007-10-12 00:00
@@ -12618,7 +12618,7 @@ EOF
        text  => 'L 220 AS Finowfurt - Joachimsthal zw. der B167 und der OL Eichhorst Deckenerneuerung Vollsperrung 04.09.2008-11.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25488,54151 25401,53587 25395,53549 25347,53338 25368,53125 25393,52762 25556,52375 26351,50634
+userdel	2::inwork 25488,54151 25401,53587 25381,53484 25347,53338 25368,53125 25393,52762 25556,52375 26351,50634
 EOF
      },
      { from  => 1221084000, # 2008-09-11 00:00
@@ -18349,7 +18349,7 @@ EOF
        type  => 'handicap',
        source_id => '106000506',
        data  => <<EOF,
-userdel	q4::inwork; 20537,29285 20704,29485 21085,29942
+userdel	q4::inwork; 20537,29285 20704,29485 21037,29913
 EOF
      },
      { from  => 1283457600, # 2010-09-02 22:00

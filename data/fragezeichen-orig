@@ -175,7 +175,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2014-06-19
+#: last_checked: 2014-07-20
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -1992,16 +1992,14 @@ Karlshof - Brusendorf: laut "Berliner Umland" geeigneter Radweg (möglicherweise 
 #: XXX von der Bahn aus gesehen: asphaltiert (zumindest im mittleren Abschnitt):
 Eichwalde - Zeuthen: laut "Berliner Umland" witterungsabhängige Strecke	? 25212,-4025 25550,-5174
 Friesenstr. - Bahnstr. - Rheinstr. - Birkenstr. (Eichwalde, Zeuthen, Wildau): laut "Berliner Umland" geeignete Strecke auf Straßen	? 25550,-5174 25595,-5527 25835,-5983 25907,-6063 26001,-6257 26089,-6584 26048,-6587 26328,-7191 26359,-7450 26563,-8522
-Günterberg - Biesenbrow: laut "Regio-Cart" gut geeignet	? 47091,77570 47269,77634 47713,78664 48006,79147 48305,79400 49117,79726 49521,79799 49932,79760 50324,80128 50457,80143 50593,80084
-#: note: zumindest das nördliche Ende ist asphaltiert:
-Biesenbrow - Polßen: laut "Regio-Cart" gut geeignet	? 50457,80143 50475,80632 50569,80798 50668,81405 50228,82646 48833,84010 48745,84514 48176,84999
+Günterberg - Biesenbrow: laut "Regio-Cart" gut geeignet	? 47091,77570 47269,77634 47713,78664 48006,79147 48305,79400 49117,79726 49521,79799 49932,79760 50324,80128
+# REMOVED --- #: note: zumindest das nördliche Ende ist asphaltiert: --- Biesenbrow - Leopoldsthal: laut "Regio-Cart" gut geeignet	? 50457,80143 50463,80400 50486,80628 50581,80794 50598,80849 50620,80949 50634,81073 50676,81406 50228,82634 --- Leopoldsthal - Polßen: laut "Regio-Cart" gut geeignet	? 50228,82634 50012,82872 49524,83375 49333,83559 48928,83932 48833,84010 48810,84369 48745,84514 48303,84828 48176,84999
 Biesenbrow - Passow: Qualität (vom Westen her wahrscheinlich auch nur der mäßige Betonweg, vom Norden her mäßig asphaltiert)? Privatstr., Durchfahrt trotzdem möglich?	? 52771,81718 54508,82572 54307,83141
 Biesenbrow - Briest: Qualität (vom Osten her Plattenweg)?	? 52512,82471 53263,82995 53611,83132 53570,83230 53668,83324
 Mürow - Henriettenhof: Qualität? südlich des Dorfes sah es wie ein Feldweg oder Kopfsteinpflaster aus (Q2 oder schlechter)	? 52361,72080 53566,69842 54031,69280
-Frauenhagen - Schönermark: Qualität? laut "Regio-Cart" gut geeignet, der Anfang im Süden sah gut aus (asphaltiert)	? 52490,75434 53312,76587 53555,77037 53868,77304 54146,77628 54332,77932
-Biesenbrow - Schönermark: Qualität (höchstwahrscheinlich asphaltiert)?	? 51812,78462 52611,79156 52663,79186 53647,78765 53692,78714 53765,78628 53872,78613 53982,78634 54113,78631 54146,78628 54283,78677 54366,78714 54542,78720
+Frauenhagen - Schönermark: Qualität? laut "Regio-Cart" gut geeignet	? 53312,76587 53555,77037 53868,77304 54146,77628 54332,77932
+Schönermark - Biesenbrow: Qualität (höchstwahrscheinlich asphaltiert)?	? 54542,78720 54366,78714 54283,78677 54146,78628 54113,78631 53982,78634 53872,78613 53765,78628 53692,78714 53647,78765 52663,79186 52611,79156 52032,78610
 Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52720,79323 52830,79396 53973,80374 54000,80457 54061,80499 54119,80499
-Pinnow - Frauenhagen: laut "Regio-Cart" gut geeignet, das westliche Ende sah gut aus (asphaltiert)	? 54952,74078 54562,74365 53687,74900 52490,75434
 Passow, Mittelstr.: Qualität?	? 56975,82627 57185,82724 57426,82901
 Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,68012 40775,68125 40750,69175 40999,69391
 Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet (zumindest in Wolletz Verbundsteinpflaster)	? 43101,69564 43250,71500 42941,72180
@@ -2213,7 +2211,9 @@ Liepe - Grüssow: Qualität?	? 43381,174089 43570,174347 44258,174855 44494,175213
 Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbundsteinpflaster, westlich von Stolpe wahrscheinlich Asphalt?	? 47621,163737 47381,163832 46987,163775 46487,163834 46004,164036 45010,164147 43749,164520 43623,164608 43370,164591
 #: last_checked: 2007-03-25
 Melzow - Gramzow, Autobahnbrücke: wegen Bauarbeiten gesperrt, Qualität könnte mäßiger Asphalt sein	? 45082,88685 46529,89125
-Melzow - Meichow: Qualität (zumindest am westlichen Ende asphaltiert)?	? 43567,87443 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137 48310,87199
+Melzow - Meichow: Qualität? Ist die Straße durchgängig asphaltiert?	? 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137
+Neumeichow: Qualität?	? 46617,88457 46886,88320 47675,88141 47917,88155
+Zehnebeck - Lützlow: Qualität? Ist die gesamte Straße asphaltiert?	? 52355,90667 52219,91211 52158,91403 52052,91596 51971,91708 51945,91781 51968,91966 51997,92045 52054,92099 52063,92172 51930,92418
 #: note: zumindest am östlichen und westlichen Ende Feldweg
 Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
 #: XXX laut osm unterschiedliche Qualität: sand, cobblestone, unpaved
@@ -2298,7 +2298,7 @@ Hangelsberg - A10: Qualität? Für Radfahrer überhaupt benutzbar?	? 37527,-1102 37
 August-Bebel-Allee (Eichwalde): Qualität? Existieren in beide Richtungen Radwege?	? 24999,-3312 25085,-3477 25320,-4049 25368,-4182
 # REMOVED (am nördlichen Ende habe ich hier keinen Weg gesehen) --- (Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377
 Brückenstr.: Qualität?	? 17385,26962 17417,26948
-# REMOVED (der Pankeweg führt definitiv nicht hier entlang) ---  Pankeweg entlang der S-Bahn: Qualität?	? 17417,26948 17687,27129 17784,27209 18225,27638 18410,27890
+# REMOVED (der Pankeweg führt definitiv nicht hier entlang) --- Pankeweg entlang der S-Bahn: Qualität?	? 17417,26948 17687,27129 17784,27209 18225,27638 18410,27890
 #: note laut http://www.radzeit.de/gallery2/v/Radtouren/Berlin-Usedom/dscf0042.jpg.html sieht das wie ein Schotterweg aus
 Schmarsow - Rollwitz: Feldwege, genaue Wegführung? ist Berlin-Usedom hier schon ausgeschildert?	? 44142,117823 44284,118067 43949,118402 44173,119093 44630,119143 45392,120382 46387,119529 47187,119302
 Schmarsow - B109: Qualität (wahrscheinlich Asphalt)?	? 44142,117823 45383,117391
@@ -2771,8 +2771,6 @@ Schubertstr. (Potsdam): Qualität?	? -8219,-2795 -8138,-2804 -8108,-2809 -7965,-2
 Mozartstr. (Potsdam): Qualität im nördlichen Abschnitt?	? -8108,-2809 -8127,-2925
 Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,28125 1453,28175 1448,28276 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808
 Richard-Wagner-Str. (Groß Glienicke): Qualität im westlichen Abschnitt?	? -10234,5804 -10347,5874 -10467,5948
-Wollin: Qualität?	? 53952,97760 54300,97955 54395,97957 54710,98149 54851,98181
-Wollin: Qualität?	? 53747,97620 53467,97569
 Grünz - Radewitz: Qualität?	? 59477,99336 59588,99540 59496,99728
 Grünz - Radewitz: Qualität?	? 58791,99029 58824,99187 59496,99728 59670,99855
 Hohenreinkendorf: Qualität?	? 71648,92361 71767,92617 71794,92835 71812,93044 71834,93124 71805,93237
@@ -3229,8 +3227,8 @@ Klein Bünzow - B109: Qualität?	? 22283,169408 23239,169494
 # REMOVED (aufgehoben, gesehen 2012) --- #: XXX so sah es am 2011-05-01 aus, war aber vielleicht eine temporäre Regelung --- Idunastr.: ist der westliche Abschnitt eine Einbahnstraße?	? 12190,19009 12522,18813
 Bettina-von-Arnim-Str. (Potsdam): Qualität?	? -7689,-5039 -7628,-5142
 Romanusplatz (Eichwalde): Qualität?	? 25651,-3855 25636,-3813 25622,-3761 25635,-3723 25668,-3739 25712,-3836
-#: XXX zumindest der westliche Abschnitt ist asphaltiert
-Hohenwalde: Qualität?	? 30919,74838 31267,74825 32398,74953 32778,75006 33102,75735 33729,75869 33897,76255
+Hohenwalde: Qualität?	? 31267,74825 32398,74953 32778,75006 33102,75735 33729,75869 33897,76255
+Altenhofer Waldstr. (Altenhof): Qualität?	? 30725,57076 30623,57197
 Vogelsang: Qualität?	? 7569,69899 7798,69839 7983,69794 8194,69753
 Burgwall - Neuhof: Qualität?	? 2037,71025 2314,71167 2396,71244 2817,71074 3184,71083 3599,70845
 #: XXX anonymous meint: Asphalt ohne weitere Kategorisierung, q1 (enge Straße)
@@ -3593,10 +3591,8 @@ Friedlander Promenade - Hundsteinweg: Qualität? Existieren Schranken (Einschränk
 #: XXX laut osm "grade 2"
 Alter Radelander Weg - Schappachstr.: Qualität? Ausgeschildert?	? 25007,-2620 25731,-1524
 # 
-Neue Schwanebecker Str. (Zepernick): Qualität?	? 19512,27392 19457,27268
-Schwanebecker Str. (Zepernick): Qualität?	? 19426,27374 19457,27268 19525,27100 19577,26970 19627,26852 19669,26755
-Zepernicker Str. (Schwanebeck): Qualität?	? 19669,26755 19717,26638 19722,26581 19737,26323 19768,25905 19805,25232 19793,25153 19809,25130
-Hochstr. (Schwanebeck): Qualität?	? 18942,26470 19340,26610 19669,26755 19715,26770 20051,26756 20225,26711
+Hochstr. (Schwanebeck): Qualität?	? 18942,26470 19340,26610
+Hochstr. (Schwanebeck): Qualität?	? 19715,26770 19948,26760 20051,26756 20225,26711
 Kiesstr. (Schwanebeck): Qualität?	? 20192,26621 20225,26711 20304,26861
 Humboldtstr. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 17990,24572 18122,24440 18492,24049
 Stefan-Heym-Str. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18057,24641 18200,24498
@@ -3712,3 +3708,5 @@ Wollankstr. - Pankeweg: Qualität des Wegs? Nachts beleuchtet?	? 9240,17268 9073,
 Weg am ehem. Güteraußenring: Qualität des Wegs? Nachts beleuchtet?	? 9562,-619 9522,-530 9484,-543 9424,-614 9171,-661 8501,-759 7978,-839
 Anbindung zum Weg am Königsgraben: Qualität des Wegs? Nachts beleuchtet?	? 8501,-759 8574,-698 8626,-677
 Weg im Freizeitpark Marienfelde: Qualität des Wegs? Nachts beleuchtet?	? 7978,-839 8010,-805 8018,-489 7801,-467 7803,-387 7785,-345 7773,-344
+Mühlenstr. (Zepernick): Qualität?	? 19737,27037 19698,27205 19730,27276
+Waldstr. (Schwanebeck): Qualität?	? 19882,26592 19935,26699 19948,26760

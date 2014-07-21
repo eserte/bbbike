@@ -268,6 +268,7 @@ Blankenburg|(Uckermark)	OS 44650,90587
 Blankenburg|(Uckermark)	OS 45213,90527
 Neumeichow/Ausbau	OS 46453,89194
 Neumeichow/Ausbau	OS 46772,88975
+Neumeichow	OS 49093,87752
 Warnitz	OS 41256,86908
 Warnitz	OS 41223,88013
 Warnitz	OS 40709,85959
@@ -284,6 +285,7 @@ Meichow	OS 48772,87442
 Gramzow	OS 48850,90656
 Gramzow	OS 49270,89896
 Gramzow	OS 49935,89343
+Gramzow	OS 50578,90756
 Hohengüstow	OS 49543,92938
 Hohengüstow	OS 48794,91837
 Hohengüstow	OS 48059,93344
@@ -292,16 +294,24 @@ Weselitz	OS 46976,95231
 Weselitz	OS 47688,95778
 Bertikow	OS 45607,94223
 Bertikow	OS 44380,94544
+Bertikow	OS 45015,93685
 Bertikow Ausbau	OHT 43556,94641
 Bertikow Ausbau	OHT 43355,94490
 Lützlow	OS 51937,93115
 Lützlow	OS 51949,94442
 Lützlow	OS 52515,94250
-Wollin|(Eickstedt)	OS 53763,97535
-Wollin|(Eickstedt)	OS 53320,98110
+#: linked: Wollin|(Eickstedt) vvv
+Wollin	OS 53763,97535
+Wollin	OS 53912,97812
+#: note: früher OS
+Wollin	OHT 53320,98110
+Wollin	OHT 53631,97972
+#: linked ^^^
 Kleinow|(Falkenwalde)	OS 50138,96960
-Falkenwalde|(Uckermark)	OS 49927,96921
-Falkenwalde|(Uckermark)	OS 49355,96296
+#: linked: Falkenwalde|(Uckermark) vvv
+Falkenwalde	OS 49927,96921
+Falkenwalde	OS 49355,96296
+#: linked ^^^
 Neu-Kleinow	OS 49701,95102
 Zichow	OS 52049,88323
 Zichow	OS 52174,87130
@@ -342,10 +352,12 @@ Friedrichswalde	OS 29834,70069
 Ringenwalde|(Uckermark)	OS 30264,72584
 Ringenwalde|(Uckermark)	OS 30369,73359
 Wildau|b. Eichhorst	OS 26028,56303
-Eichhorst	OS 25395,53549
+Eichhorst	OS 25381,53484
 Eichhorst	OS 25734,54179
-Altenhof|bei Eberswalde	OS 29564,56074
-Altenhof|bei Eberswalde	OS 31247,57341
+#: linked: Altenhof|bei Eberswalde vvv
+Altenhof	OS 29564,56074
+Altenhof	OS 31247,57341
+#: linked ^^^
 Rosenbeck	OHT 24635,52222
 Rosenbeck	OHT 24124,52310
 Marienwerder	OS 23660,49619
@@ -367,32 +379,38 @@ Bernau|b. Berlin	OS 23954,31612
 Bernau|b. Berlin	OS 24877,29941
 Börnicke|b. Bernau	OS 26169,28620
 Börnicke|b. Bernau	OS 25780,29211
-Schwanebeck|b. Berlin	OS 19931,25260
-Schwanebeck|b. Berlin	OS 19539,23981
+#: linked: Schwanebeck|b. Berlin vvv
+Schwanebeck	OS 19931,25260
+Schwanebeck	OS 19539,23981
 #: XXX: existiert das Ortsschild hier noch?
-Schwanebeck|b. Berlin	OS 18061,23456
-Schwanebeck|b. Berlin	OS 19790,24572
-Schwanebeck|b. Berlin	OS 19395,24634
+Schwanebeck	OS 18061,23456
+Schwanebeck	OS 19790,24572
+Schwanebeck	OS 19395,24634
 #: note: eigentlich auch Schwanebeck-West vvv
-Schwanebeck|b. Berlin	OS 17895,25260
-Schwanebeck|b. Berlin	OS 17193,24683
+Schwanebeck	OS 17895,25260
+Schwanebeck	OS 17193,24683
 #: note ^^^
+Schwanebeck	OS 19648,26794
+#: linked ^^^
 Schwanebeck-West	OS 17622,24160
 Schwanebeck-West	OS 18015,25653
 Schwanebeck-West	OS 18583,24966
+#: linked: Lindenberg|b. Berlin vvv
 #: note: südlicher Teil von Lindenberg vvv
-Lindenberg|b. Berlin	OS 18597,20898
-Lindenberg|b. Berlin	OS 17752,21797
-Lindenberg|b. Berlin	OS 18349,22132
-Lindenberg|b. Berlin	OS 17837,21917
+Lindenberg	OS 18597,20898
+Lindenberg	OS 17752,21797
+Lindenberg	OS 18349,22132
+Lindenberg	OS 17837,21917
 #: note ^^^
 #: note nördlicher Teil von Lindenberg vvv
-Lindenberg|b. Berlin	OS 18339,22271
-Lindenberg|b. Berlin	OS 18061,23456
-Lindenberg|b. Berlin	OS 17802,21950
+Lindenberg	OS 18339,22271
+Lindenberg	OS 18061,23456
+Lindenberg	OS 17802,21950
 #: note ^^^
+#: linked ^^^
 Zepernick	OS 18178,26668
 Zepernick	OS 20482,28536
+Zepernick	OS 19648,26794
 Leest	OS -20616,2567
 Grube	OS -19656,2362
 #: linked: Dahlwitz vvv
@@ -649,7 +667,11 @@ Chorin	OS 42451,55679
 Serwest	OS 44488,58827
 Serwest	OS 45582,59998
 Frauenhagen	OS 52018,74907
-Biesenbrow	OS 50637,79674
+Frauenhagen	OS 52644,75295
+Biesenbrow	OS 50632,79683
+Biesenbrow	OS 50620,80949
+Leopoldsthal	OS 50228,82634
+Leopoldsthal	OS 48928,83932
 Hirschfelde	OS 37353,25904
 Wesendahl	OS 38520,22567
 Wesendahl	OS 38547,22511
@@ -756,7 +778,8 @@ Prenden	OS 19662,43583
 Berghausen|bei Seehausen	OHT 41984,92683
 Temmen	OS 32853,77078
 Temmen	OS 33491,77322
-Ausbau (Afrika)|bei Stegelitz	OHT 37572,79308
+#: linked: Ausbau (Afrika)|bei Stegelitz
+Afrika	OHT 37572,79308
 Stegelitz	OS 38872,80620
 Stegelitz	OS 39704,81752
 Kleinow|(Falkenwalde)	OS 51170,97266
@@ -791,6 +814,7 @@ Berlin	OS 23965,15894
 Berlin	OS 11663,-3266
 Berlin	OS 26745,8455
 Berlin	OS 1464,-367
+Berlin	OS 18597,20898
 Mehrow	OS 25327,19421
 Mehrow	OS 24484,18569
 Mehrow	OS 28467,19470
@@ -908,3 +932,5 @@ Karlsberg	OS 58910,91735
 #: linked ^^^
 #: linked: Seefeld|(Mark)
 Seefeld-Löhme	OS 28921,23343
+#: linked: Schönermark|(Uckermark)
+Bahnhof Schönermark	OHT 51668,78605

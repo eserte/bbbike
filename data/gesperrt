@@ -973,7 +973,7 @@ Ibsenstr.	1s 10295,16667 10209,16674
 Eichhornstr.	1s 8232,11414 8253,11306 8280,11296
 Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11523 1403,11428
-Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
+Gramzow (Dorfstr.?)	1s 49779,90206 49810,90444
 Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 May-Ayim-Ufer	1s 13206,10651 13077,10747
@@ -2329,6 +2329,9 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-99:trailer=10 23582,49940
+Drängelgitter	BNP:3:-100:trailer=10 23659,49954
+Schranke	BNP:15:-105:trailer=30 27066,55455
 Drängelgitter	BNP:5:-75:trailer=10 6030,4743
 Drängelgitter	BNP:5:-59:trailer=10 6022,4746
 Drängelgitter (lichte Breite 80cm)	BNP:5:-109:trailer=no 10585,21759

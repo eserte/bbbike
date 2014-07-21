@@ -2546,7 +2546,7 @@ Gehweg für Radfahrer frei, die letzten Meter sind benutzungspflichtig	RW1; 15432
 	RW4;RW2 17843,18078 17744,18016 17721,18001 17675,17971 17601,17922
 #: XXX Radspur wird hier irgendwann fortgeführt (am S-Bhf Hohenschönhausen)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4785
-#: last_checked: 2014-07-10
+#: last_checked: 2014-07-20
 #: check_frequency: 60d
 	RW0;RW2 17601,17922 17482,17844
 	RW2;RW2 17482,17844 17400,17790
@@ -3334,7 +3334,9 @@ Gehweg für Radfahrer frei	RW1; 20958,7289 21016,7325 21025,7349 21027,7432 21029
 Betonplatten	RW1; 22631,16215 22696,16208 22739,16203 22771,16194
 Gehweg für Radfahrer frei, Betonplatten	RW1; 22771,16194 22739,16203 22696,16208 22631,16215
 #: by: Hollie (freak...)
+#: confirmed_by: srt
 	RW6;RW6 17730,18747 17813,18726 17819,18738 17839,18782 17938,18749 17929,18709 17819,18738
+	RW6;RW6 17845,18837 17839,18782
 #: by: Alexander Unertl:
 #: confirmed_by: srt (allerdings nur südl. des Hochspannungswegs)
 #: note: Alexander meinte, dass es "demnächst auch mit Betonschwellen" gibt, aber davon ist 2011-03 noch nichts zu sehen

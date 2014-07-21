@@ -1370,25 +1370,7 @@ userdel	q3::inwork 15279,10862 15144,10905
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
-',
-         'periodic' => 1,
-         'until' => 1405893599,
-         'from' => 1405548000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (17.07.2014 bis 20.07.2014)',
-         'type' => 'gesperrt',
-         'id' => 2420
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_019747',
@@ -1743,16 +1725,7 @@ userdel	q3::inwork 11673,16003 11567,15842
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/721-E/14/010	',
-         'until' => 1405720799,
-         'text' => 'zwischen Eickstedt und Schmölln: Instandsetzung der Brücke über den Mühlenbach, Straße gesperrt, 24.03.2014 bis 18.07.2014',
-         'from' => 1395615600,
-         'id' => 2555,
-         'data' => 'userdel	2::inwork 53619,100127 54533,100204
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',

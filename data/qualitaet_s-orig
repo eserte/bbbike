@@ -9626,8 +9626,8 @@ Wermuthweg: Asphalt	Q0 13661,2207 13672,2221 13816,2258 13827,2280 13838,2310 13
 Haeselerstr. (Lichtenrade): guter Asphalt	Q0 10404,-2398 10513,-2397 10563,-2432
 Pappritzstr.: guter Asphalt	Q0 7562,1796 7675,1885 7736,1969 7741,2096
 Lindenblütenstr.: guter Asphalt	Q0 21703,388 21671,509 21657,580
-#: note: laut ADFC-Karte/neu gut geeignet
-Crivitzer Str.: guter Asphalt	Q0 17807,18267 17670,18435 17580,18548
+#: corrected_by: srt (guter Asphalt -> ...)
+Crivitzer Str.: Beton	Q0 17804,18272 17670,18435 17580,18548
 Johann-Landefeldt-Str.: Asphalt	Q0 -8619,7012 -8598,7018 -8532,7041 -8466,7064 -8404,7087 -8341,7108 -8275,7131 -8207,7156 -8138,7182 -8074,7204 -8011,7229 -7948,7252 -8032,7437 -8055,7489
 #: note: Wohngebiet, q0
 #: confirmed_by: srt
@@ -10414,7 +10414,8 @@ Sperenberger Str.: Asphalt	Q0 9177,-569 8814,-543 8828,-273
 Achtermannstr.: Kopfsteinpflaster	Q3+ 11220,18992 11384,19067
 #: confirmed_by: srt
 Achtermannstr.: Kopfsteinpflaster	Q2 11384,19067 11468,19106 11561,19149 11599,19171 11634,19187 11671,19204 11748,19235
-Grevesmühlener Str.: Asphalt	Q0 18180,18431 18040,18448 18024,18450 17887,18334 17807,18267 17709,18201 17702,18168
+#: corrected_by: srt (Asphalt -> )
+Grevesmühlener Str.: Beton	Q0 18180,18431 18040,18448 18024,18450 17887,18334 17804,18272 17709,18201 17702,18168
 Husumer Str.: Asphalt	Q0 20713,10293 20945,10286 21015,10284 21276,10271
 Gottschedstr.: Kopfsteinpflaster	Q2 7885,16005 8014,16089 8077,16178 8306,16428
 Maisweg: Asphalt	Q0 20680,12632 20773,12621 20816,12618 20851,12669 20961,12858 21003,13152
@@ -15364,7 +15365,7 @@ Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25121,5799 25123,5
 # 
 #: by: Hollie (freak...): vvv
 #: note: laut ADFC-Karte/neu gut geeigntet:
-#: confirmed_by: srt (Beton an der Egon-Erwin-Kisch-Str.)
+#: confirmed_by: srt
 Demminer Str.: guter Beton	Q0 17502,18286 17670,18435 17772,18523 17797,18673
 #: note: laut ADFC-Karte/neu schlechter als mäßig geeignet:
 Dorfstr.: Kopfsteinpflaster	Q2 17600,18994 17697,18989 17799,19000 17890,18973 17900,18972 18009,18946
@@ -15418,6 +15419,7 @@ Pausiner Str.: guter Asphalt	Q0 -4318,16979 -4319,16879 -4322,16776 -4325,16675 
 Duchrother Str.: guter Asphalt	Q0 29344,1577 29288,1618 29166,1715 28978,1864 28703,2104
 # 
 #: by: Anja (_soci_):
+#: confirmed_by: srt (Höhe Demminer Str.)
 Neubrandenburger Str.: guter Beton	Q0 17586,18695 17678,18695 17797,18673 17822,18663 17900,18654 17993,18644 18010,18648 18040,18657 18185,18641
 # 
 #: by: Michael Reimann:
