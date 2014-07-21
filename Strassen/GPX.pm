@@ -417,6 +417,8 @@ sub _bbd2gpx_twig {
     my($self, %args) = @_;
     my $xy2longlat = delete $args{xy2longlat};
     my $meta = delete $args{-meta} || {};
+    my $as = delete $args{-as} || 'track';
+    my $name = delete $args{-name};
     my $with_trip_extensions = delete $args{-withtripext};
 
     $self->init;
@@ -454,10 +456,13 @@ sub _bbd2gpx_twig {
 				 );
     $twig->set_root($gpx);
 
-    if ($args{-as} && $args{-as} eq 'route') {
+    if ($as eq 'route') {
 	my $rtexml = XML::Twig::Elt->new("rte");
 	$rtexml->paste(last_child => $gpx);
 	_add_meta_attrs_twig($rtexml, $meta);
+	if (defined $name && $name ne '') {
+	    XML::Twig::Elt->new('name', {}, $name)->paste(last_child => $rtexml);
+	}
 	for my $wpt_i (0 .. $#wpt) {
 	    my $wpt = $wpt[$wpt_i];
 	    my $rteptxml = XML::Twig::Elt->new("rtept", {lat => $wpt->{coords}[1],

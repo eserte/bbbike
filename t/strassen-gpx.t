@@ -38,7 +38,7 @@ sub xpath_checks ($$&);
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 114 + $new_strassen_gpx_tests;
+my $tests_per_variant = 118 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -474,6 +474,25 @@ EOF
 		}
 		keep_file("as_${as}_with_${use_xml_module}.xml", $xml_res);
 	    }
+	}
+
+	# Generate route with given -name
+	{
+	    my $route_data = <<EOF;
+Start	X 100,100
+Goal	X 300,300
+EOF
+	    my $s0 = Strassen->new_from_data_string($route_data);
+	    my $s = Strassen::GPX->new($s0);
+	    my $xml_res = $s->Strassen::GPX::bbd2gpx(-as => 'route', -name => 'This is the route name');
+	    gpxlint_string($xml_res, 'xmllint for bbd2gpx with -name option');
+	    xpath_checks $xml_res, 2,
+		sub {
+		    my $doc = shift;
+		    my @nodes = $doc->findnodes('//*[local-name(.)="rte"]/*[local-name(.)="name"]');
+		    is scalar(@nodes), 1, 'exactly one rte/name node';
+		    is $nodes[0]->textContent, 'This is the route name', 'expected route name';
+		};
 	}
     }
 }
