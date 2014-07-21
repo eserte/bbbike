@@ -287,6 +287,13 @@ sub bbd2gpx {
     }
     $args{xy2longlat} = $xy2longlat;
 
+    if (!exists $args{-name}) {
+	my $title = $self->get_global_directive('title');
+	if (defined $title) {
+	    $args{-name} = $title;
+	}
+    }
+
     if ($use_xml_module eq 'XML::LibXML') {
 	_require_XML_LibXML;
 	$self->_bbd2gpx_libxml(%args);
