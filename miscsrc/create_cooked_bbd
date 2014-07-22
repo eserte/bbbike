@@ -26,8 +26,10 @@ my $outfile;
 sub create_strassen_cooked ($$;$) {
     my($file, $inaccessible_file, $outfile) = @_;
     require Strassen::Core;
+    local @Strassen::datadirs; @Strassen::datadirs = (); # so relative paths work as expected
     my $s = Strassen->new($file, UseLocalDirectives => 1);
     my $ina = Strassen->new($inaccessible_file);
+    $ina->set_global_directives($s->get_global_directives);
     $outfile = '-' if !defined $outfile;
     $s->new_with_removed_points($ina)->write($outfile);
 }
