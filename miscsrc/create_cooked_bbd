@@ -1,0 +1,97 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2014 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib (
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use Getopt::Long;
+
+my $variant = 'strassen';
+my $outfile;
+
+sub create_strassen_cooked ($$;$) {
+    my($file, $inaccessible_file, $outfile) = @_;
+    require Strassen::Core;
+    my $s = Strassen->new($file, UseLocalDirectives => 1);
+    my $ina = Strassen->new($inaccessible_file);
+    $outfile = '-' if !defined $outfile;
+    $s->new_with_removed_points($ina)->write($outfile);
+}
+
+sub create_fragezeichen_cooked ($$;$) {
+    my($file, $against_files_ref, $outfile) = @_;
+    my @against_files = @$against_files_ref;
+
+    my $reduce_streets = "$FindBin::RealBin/reduce_streets";
+    my @cmd = ($^X, $reduce_streets, '-delsinglepoint', '-reducelines', $file, @against_files);
+    open my $ifh, "-|", @cmd
+	or die "Running '@cmd' failed: $!";
+    my $ofh;
+    if (defined $outfile) {
+	open $ofh, ">", "$outfile~"
+	    or die "Error while writing to $outfile~: $!";
+    } else {
+	$ofh = \*STDOUT;
+    }
+    local $/ = \4096;
+    while(<$ifh>) {
+	print $ofh $_;
+    }
+    close $ofh
+	or die "Error while closing file handle: $!";
+    close $ifh
+	or die "Error while running '@cmd': $!";
+    if (defined $outfile) {
+	rename "$outfile~", $outfile
+	    or die "Error while renaming $outfile~ to $outfile: $!";
+    }
+}
+
+return 1 if caller;
+
+sub usage () {
+    die <<EOF;
+usage: $0 [-o out.bbd] in.bbd inaccessible.bbd
+       $0 [-o out.bbd] -variant fragezeichen in.bbd against.bbd ...
+EOF
+}
+
+GetOptions(
+	   'variant=s' => \$variant,
+	   'o=s' => \$outfile,
+	  )
+    or usage;
+
+if ($variant eq 'strassen') {
+    my $file = shift
+	or die "Please provide bbd file.\n";
+    my $inaccessible_file = shift
+	or die "Please provide bbd file with inaccessible points.\n";
+    @ARGV
+	and usage;
+    create_strassen_cooked($file, $inaccessible_file, $outfile);
+} elsif ($variant eq 'fragezeichen') {
+    my $file = shift
+	or die "Please provide bbd file to reduce.\n";
+    my @against_files = @ARGV
+	or die "Please provide one or more bbd files to check against.\n";
+    create_fragezeichen_cooked($file, \@against_files, $outfile);
+} else {
+    die "Invalid variant '$variant'";
+}
+
+__END__
