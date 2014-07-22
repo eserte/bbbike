@@ -54,6 +54,7 @@ GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${PERL} ${MISCSRCDIR}/combine_streets.pl
 COMBINE_OSM=		${PERL} ${MISCSRCDIR}/combineosm
 TEMP_BLOCKINGS_TASKS=	${PERL} ${MISCSRCDIR}/temp_blockings_tasks
+CREATE_COOKED_BBD=	${PERL} ${MISCSRCDIR}/create_cooked_bbd
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
@@ -249,11 +250,7 @@ XXX-strassen-tmp-without-NH:
 _f_raw_${f}:=${f:S/-cooked$//}
 $f:	${_f_raw_${f}} inaccessible_landstrassen
 	-@${WRITEABLE} $@
-	$(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen -e \
-	    '$$s = Strassen->new($$ARGV[0], UseLocalDirectives => 1); $$ina = Strassen->new($$ARGV[1]); $$s->new_with_removed_points($$ina)->write("-")' \
-	    ${_f_raw_${f}} inaccessible_landstrassen \
-	    > $@~
-	mv $@~ $@
+	${CREATE_COOKED_BBD} -o $@ ${_f_raw_${f}} inaccessible_landstrassen
 	-@${READONLY} $@
 .endfor
 
@@ -862,9 +859,8 @@ fragezeichen:	.create_fragezeichen
 
 fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	-@${WRITEABLE} $@
-	${PERL} ${MISCSRCDIR}/reduce_streets -delsinglepoint -reducelines fragezeichen \
-	    strassen landstrassen landstrassen2 > $@~
-	mv $@~ $@
+	${CREATE_COOKED_BBD} -variant fragezeichen -o $@ fragezeichen \
+	    strassen landstrassen landstrassen2
 	-@${READONLY} $@
 
 # ::inwork => will maybe change to :inwork
