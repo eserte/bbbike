@@ -17,7 +17,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use vars qw($VERSION);
-$VERSION = 0.13;
+$VERSION = 0.14;
 
 use Cwd            qw(realpath);
 use File::Basename qw(dirname);
@@ -133,10 +133,8 @@ sub target_addr_sort {
 }
 
 sub target_wasserstrassen_lowres {
-    if (!$force && -e "wasserstrassen-lowres" && -M "wasserstrassen-lowres" <= -M "wasserstrassen") {
-	print STDERR "up-to-date";
-	return;
-    }
+    return if _is_up_to_date("wasserstrassen-lowres", ["wasserstrassen"]);
+
     my(undef, $tmp1) = tempfile(UNLINK => 1, SUFFIX => "-wlores.bbd") or die $!;
     my(undef, $tmp2) = tempfile(UNLINK => 1, SUFFIX => "-wlores.bbd") or die $!;
     my $cmd = <<EOF;
@@ -202,13 +200,7 @@ sub target_title_for_dataset {
 }
 
 sub target_inaccessible_streets {
-    if (!$force &&
-	-e "inaccessible_strassen" &&
-	-M "inaccessible_strassen" <= -M "strassen" &&
-	-M "inaccessible_strassen" <= -M "gesperrt") {
-	print STDERR "up-to-date";
-	return;
-    }
+    return if _is_up_to_date("inaccessible_strassen", ["strassen", "gesperrt"]);
 
     # XXX This is a bug somewhere, maybe integer operation is used
     # somewhere?
@@ -238,14 +230,8 @@ EOF
 }
 
 sub target_mount {
-    if (!$force &&
-	-e "mount" && (-M "mount" <= -M "hoehe" &&
-		       -M "mount" <= -M "gesperrt" &&
-		       -M "mount" <= -M "strassen")
-       ) {
-	print STDERR "up-to-date";
-	return;
-    }
+    return if _is_up_to_date("mount", ["hoehe", "gesperrt", "strassen"]);
+
     my @cmd = ("$FindBin::RealBin/steigung_stat",
 	       '-minmount', '1.0',
 	       '-commentscompatible',
@@ -389,13 +375,7 @@ EOF
 }
 
 sub target_check_crossings {
-    if (!$force && -e "crossings.bbd" &&
-	-M "crossings.bbd" <= -M "strassen" &&
-	-M "crossings.bbd" <= -M "strassen_bab"
-       ) {
-	print STDERR "up-to-date";
-	return;
-    }
+    return if _is_up_to_date("crossings.bbd", ["strassen", "strassen_bab"]);
 
     my @cmd = ($^X, "$FindBin::RealBin/check_crossings",
 	       "-encoding", "utf-8",
@@ -412,15 +392,7 @@ sub target_check_crossings {
 }
 
 sub target_check_nearest {
-    if (!$force && -e "check_nearest.bbd" &&
-	-M "check_nearest.bbd" <= -M "strassen" &&
-	-M "check_nearest.bbd" <= -M "strassen_bab" &&
-	-M "check_nearest.bbd" <= -M "fragezeichen" &&
-	-M "check_nearest.bbd" <= -M "faehren"
-       ) {
-	print STDERR "up-to-date";
-	return;
-    }
+    return if _is_up_to_date("check_nearest.bbd", ["strassen", "strassen_bab", "fragezeichen", "faehren"]);
 
     my @cmd = ($^X, "$FindBin::RealBin/check_nearest",
 	       "-asbbd",
@@ -447,12 +419,7 @@ sub target_check_nearest {
 }
 
 sub target_icao_metar {
-    if (!$force &&
-	-e "icao_metar" && (-M "icao_metar" <= -M "icao")
-       ) {
-	print STDERR "up-to-date";
-	return;
-    }
+    return if _is_up_to_date("icao_metar", ["icao"]);
 
     # Check prerequisite data
     if (!-e "icao" || -z "icao") {
@@ -556,6 +523,17 @@ sub _get_largest_city {
 			}
 		    }, UseLocalDirectives => 0);
     $max;
+}
+
+sub _is_up_to_date {
+    my($file, $deps) = @_;
+    return 0 if $force;
+    return 0 if !-e $file;
+    for my $dep (@$deps) {
+	return 0 if -M $file > -M $dep;
+    }
+    print STDERR "up-to-date";
+    return 1;
 }
 
 __END__
