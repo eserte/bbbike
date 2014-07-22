@@ -99,12 +99,12 @@ sub teaser_kreisfahrt_adfc {
     my $year = (localtime)[5]+1900;
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today lt "20130910" || $today gt "20130921";
+    my $out_of_date = $today lt "20140906" || $today gt "20140920";
     if (!$out_of_date) {
-	my $adfc_url    = "http://www.adfc-berlin.de/aktionenprojekte/kreisfahrt/kreisfahrt-2013/1376-kreisfahrt-2013.html";
+	my $adfc_url    = "http://www.adfc-berlin.de/aktionenprojekte/kreisfahrt/kreisfahrt-2014";
 	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
 	<<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0"" /></a> am 21. September $year</div>
+<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0"" /></a> am 20. September $year</div>
 EOF
     } else {
 	();
@@ -114,11 +114,11 @@ EOF
 sub teaser_marathon {
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today gt "20130929";
+    my $out_of_date = $today lt "20140925" || $today gt "20140929";
     if (!$out_of_date) {
 	my $marathon_map_url = 'http://www.bmw-berlin-marathon.com/event/streckensperrungen.html';
 	<<EOF
-<div class="teaser" style="font-weight:bold">Am 28. und 29. September findet der Marathon statt.<br/>
+<div class="teaser" style="font-weight:bold">Am 28. und 29. September 2014 findet der Marathon statt.<br/>
 <a href="$marathon_map_url">Karte mit den Sperrungen</a></div>
 EOF
     } else {

@@ -248,16 +248,15 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2013-09-06 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-09-08 21:00:00"),
+     { from  => $isodate2epoch->("2014-09-12 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-09-14 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9]],
-       text  => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Wein- und Winzerfest, vom 7.9.2013 11:00 bis 8.9.2013 21:00',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 13.9.2014 11:00 bis 14.9.2014 21:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.family-and-friends-ev.de/3.html
-#: by: http://www.ag-bahnhofstrasse.de/weinfest.html
-userdel	2::temp 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=994455
+userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
      { from  => 1096596000, # 2004-10-01 04:00
@@ -19683,9 +19682,13 @@ EOF
        text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (1.8.2014 bis 3.8.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.bierfestival-berlin.de/landkarte.html
 userdel	2::temp 12360,12505 12362,12540 12364,12589
 userdel	2::temp 12891,12549 12869,12425
 userdel	2::temp 12635,12629 12596,12472
+userdel	2::temp 13448,12340 13484,12436
+userdel	2::temp 13552,12435 13543,12326
+#zukünftig, wenn dieser Weg eingetragen ist: userdel	2::temp 13163,12382 13176,12500
 EOF
      },
      { from  => 1312520400, # 2011-08-05 07:00
@@ -20873,19 +20876,21 @@ EOF
 userdel	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-24 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-09-27 00:00:00"), #
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon und Deutschlandfest gesperrt',
+     { from  => $isodate2epoch->("2014-09-25 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-09-27 00:00:00"), #
+       periodic => 1,
+       recurrences => [['yearly', days => 21, months => 9]],
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 25.9.2014',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-09-30 06:00:00"),
+     { from  => $isodate2epoch->("2014-09-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-09-30 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Sperrungen wegen Veranstaltungen (Marathon, Deutschlandfest): Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 30.09.2013 06:00 Uhr',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 30.09.2014 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8573,12325 8540,12420
@@ -20902,6 +20907,9 @@ userdel	3 7039,12314 7383,12095 7429,12070
 userdel	3 7823,12120 7816,12150 7875,12363
 userdel	3 7875,12363 7816,12150 7823,12120
 userdel	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
+userdel	2::temp 8207,12606 8206,12757
+userdel	3 7945,12592 8122,12603 8120,12756
+userdel	3 8120,12756 8122,12603 7945,12592
 EOF
      },
      { from  => 1348981200, # 2012-09-30 07:00
