@@ -118,6 +118,25 @@ if ($dry_run) {
     }
 }
 
+if ($dry_run) {
+    warn "NOTE: would create some files in data/ directory...\n";
+} else {
+    push @INC, "$current_staging_dir/BBBike";
+    require BBBikeBuildUtil;
+    my $pwd = save_pwd2();
+    chdir "data"
+	or die "Can't change to data subdirectory: $!";
+    my $pmake = BBBikeBuildUtil::get_pmake();
+    my @cmd = ($pmake, ($test_jobs ? "-j$test_jobs" : ()), "strassen-cooked", "fragezeichen-cooked");
+    system @cmd;
+    if ($? != 0) {
+	die "Command '@cmd' failed";
+    }
+
+    # if we have changed files because of the build, then remove them
+    system('git', 'checkout', '--', '.');
+}
+
 print STDERR colored("Now tests are running...", "white on_green"), "\n";
 
 if ($dry_run) {
@@ -271,6 +290,24 @@ sub sudo (@) {
 	return ($? == 0);
     }
 }
+
+# REPO BEGIN
+# REPO NAME save_pwd2 /home/e/eserte/src/srezic-repository 
+# REPO MD5 7434e238c5a4a72f68f97f5fe29ba9a6
+BEGIN {
+    sub save_pwd2 {
+	require Cwd;
+	bless {cwd => Cwd::cwd()}, __PACKAGE__ . '::SavePwd2';
+    }
+    my $DESTROY = sub {
+	my $self = shift;
+	chdir $self->{cwd}
+	    or die "Can't chdir to $self->{cwd}: $!";
+    };
+    no strict 'refs';
+    *{__PACKAGE__.'::SavePwd2::DESTROY'} = $DESTROY;
+}
+# REPO END
 
 __END__
 
