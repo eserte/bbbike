@@ -308,8 +308,8 @@ sub _bbd2gpx_libxml {
     my $xy2longlat = delete $args{xy2longlat};
     my $meta = delete $args{-meta} || {};
     my $as = delete $args{-as} || 'track';
-    my $name = delete $args{-name};
-    my $number = delete $args{-number};
+    $meta->{name} = delete $args{-name} if exists $args{-name};
+    $meta->{number} = delete $args{-number} if exists $args{-number};
     my $with_trip_extensions = delete $args{-withtripext};
 
     my $has_encode = eval { require Encode; 1 };
@@ -374,8 +374,6 @@ sub _bbd2gpx_libxml {
     if ($as eq 'route') {
 	my $rtexml = $gpx->addNewChild(undef, "rte");
 	_add_meta_attrs_libxml($rtexml, $meta);
-	$rtexml->appendTextChild('name', $name) if defined $name && $name ne '';
-	$rtexml->appendTextChild('number', $number) if defined $number && $number ne '';
 	for my $wpt_i (0 .. $#wpt) {
 	    my $wpt = $wpt[$wpt_i];
 	    my $rteptxml = $rtexml->addNewChild(undef, "rtept");
@@ -401,8 +399,6 @@ sub _bbd2gpx_libxml {
 	if (@trkseg) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
 	    _add_meta_attrs_libxml($trkxml, $meta);
-	    $trkxml->appendTextChild('name', $name) if defined $name && $name ne '';
-	    $trkxml->appendTextChild('number', $number) if defined $number && $number ne '';
 	    for my $trkseg (@trkseg) {
 		my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
 		for my $wpt (@{ $trkseg->{coords} }) {
@@ -425,7 +421,8 @@ sub _bbd2gpx_twig {
     my $xy2longlat = delete $args{xy2longlat};
     my $meta = delete $args{-meta} || {};
     my $as = delete $args{-as} || 'track';
-    my $name = delete $args{-name};
+    $meta->{name} = delete $args{-name} if exists $args{-name};
+    $meta->{number} = delete $args{-number} if exists $args{-number};
     my $with_trip_extensions = delete $args{-withtripext};
 
     $self->init;
@@ -467,9 +464,6 @@ sub _bbd2gpx_twig {
 	my $rtexml = XML::Twig::Elt->new("rte");
 	$rtexml->paste(last_child => $gpx);
 	_add_meta_attrs_twig($rtexml, $meta);
-	if (defined $name && $name ne '') {
-	    XML::Twig::Elt->new('name', {}, $name)->paste(last_child => $rtexml);
-	}
 	for my $wpt_i (0 .. $#wpt) {
 	    my $wpt = $wpt[$wpt_i];
 	    my $rteptxml = XML::Twig::Elt->new("rtept", {lat => $wpt->{coords}[1],
