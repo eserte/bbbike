@@ -1916,7 +1916,8 @@ userdel	q4::inwork; 17614,6571 17766,6616
          'text' => 'Elsenstr. und Bouchéstr.: Einbahnstraßenregelung zwischen Am Treptower Park und Karl-Kunger-Str., vom 21.07.2014 bis zum 10.08.2013',
          'from' => 1405830600,
          'id' => 2594,
-         'data' => '#: note: Gehweg ist hier relativ breit
+         'data' => '#: source_id: IM_022405
+#: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
 	q4::inwork; 13923,9405 13849,9310 13760,9188
 	q4::inwork; 13489,9456 13606,9578 13645,9621 13867,9864
@@ -1952,6 +1953,16 @@ userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
 	3 16550,15503 16412,15559 16251,15629
 	3 15996,15620 16331,15486 16406,15452
 	3 16406,15452 16331,15486 15996,15620
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148904.php',
+         'until' => 1414796400,
+         'text' => 'Thomas-Müntzer-Straße: Fahrbahn wird instandgesetzt und ist vom 28.07.2014 bis zum 31.10.2014 voll gesperrt',
+         'from' => 1406412000,
+         'id' => 2597,
+         'data' => 'userdel	q4::inwork 20149,3617 20301,3432
 ',
          'type' => 'handicap'
        }

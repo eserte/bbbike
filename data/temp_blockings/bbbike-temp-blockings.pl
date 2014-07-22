@@ -23032,6 +23032,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148335.php',
        data  => <<EOF,
+#: source_id: IM_022405
 #: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
 	q4::inwork; 13923,9405 13849,9310 13760,9188
@@ -23066,6 +23067,15 @@ userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
 	3 16550,15503 16412,15559 16251,15629
 	3 15996,15620 16331,15486 16406,15452
 	3 16406,15452 16331,15486 15996,15620
+EOF
+     },
+     { from  => 1406412000, # 2014-07-27 00:00
+       until => 1414796400, # 2014-11-01 00:00
+       text  => 'Thomas-Müntzer-Straße: Fahrbahn wird instandgesetzt und ist vom 28.07.2014 bis zum 31.10.2014 voll gesperrt',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148904.php',
+       data  => <<EOF,
+userdel	q4::inwork 20149,3617 20301,3432
 EOF
      },
     );
