@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2014-07-09 vvv
+#: last_checked: 2014-07-22 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -55,7 +55,8 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 #: last_checked: 2014-07-17
 Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
-#: last_checked: 2014-06-19
+#: last_checked: 2014-07-22
+#: check_frequency: 60d
 zur Keibelstr.: Baustraße, Einbahnstraße	q4::inwork; 10976,13229 11045,13183
 # 
 #: last_checked: 2014-07-15
@@ -236,6 +237,10 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 ### Kreuzberg ###
 # 
+#: last_checked: 2014-07-22
+#: next_check: 2015-03-01 (Bauzeit 2014-2015)
+Alfred-Döblin-Platz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11162,10919 11150,11030
+# 
 #: next_check_id: MONUMENTENPLATZ-2014
 #: XXX während der Bauarbeiten
 #: last_checked: 2014-06-27
@@ -256,7 +261,7 @@ Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 # 
 ### Neukölln ###
 # 
-#: last_checked: 2014-06-15
+#: last_checked: 2014-07-22
 #: next_check: 2014-09-15
 Richardplatz: Bauarbeiten auf der südlichen Fahrbahn	q4::inwork 13188,7590 13303,7622 13400,7642
 # 
@@ -1272,7 +1277,8 @@ Straße 46 (Heinersdorf): enger Weg	q2 12587,17603 12505,17469 12500,17460
 #: XXX_prog: Bordsteine (2x), wobei mit etwas Glück abgeflachte Bordsteine frei sind...
 #: XXX werden hier die Bordsteine abgeflacht?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2014
-#: last_checked: 2014-06-18
+#: last_checked: 2014-07-22
+#: check_frequency: 60d
 Dresdener Str.: Fußgänger, Bordsteine	q3 11034,11249 11000,11327
 #: XXX_prog: Bordstein, relativ hoch
 Eingang Leinestr.: Bordstein	q3 11547,7432 11558,7438

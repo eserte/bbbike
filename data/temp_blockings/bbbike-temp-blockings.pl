@@ -22487,11 +22487,11 @@ EOF
 userdel	q3::inwork; 12189,16578 12045,16574
 EOF
      },
-     { from  => 1393534800, # 2014-02-27 22:00
-       until => 1393722000, # 2014-03-02 02:00
-       text  => 'Niederfinow: L29: Neubau Schiffshebewerk - Rückbau Turmdrehkran OD Niederfinow, Straße evtl. komplett gesperrt, 28.02.2014 22:00 Uhr bis 02.03.2014 02:00 Uhr ',
+     { from  => $isodate2epoch->("2014-07-20 00:00:00"), # 1393534800, # 2014-02-27 22:00
+       until => $isodate2epoch->("2014-07-28 23:59:59"), # 1393722000, # 2014-03-02 02:00
+       text  => 'Niederfinow: Kabelarbeiten im Fahrbahnbereich OD Niederfinow, Hebewerkstraße Vollsperrung, 21.07.2014 bis 28.07.2014',
        type  => 'gesperrt',
-       source_id => '146000021',
+       source_id => '146000678',
        data  => <<EOF,
 userdel	2::inwork 46132,49993 46390,50091
 EOF
@@ -23023,14 +23023,15 @@ userdel	2::temp 18670,6132 18766,6067 18859,6198
 userdel	2::temp 18574,6401 18676,6333
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-20 00:00:00"),
-       until => undef,
+     { from  => 1406051254, # $isodate2epoch->("2014-07-20 00:00:00"),
+       until => 1406051254, # undef,
        text  => "Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Einbahnstraße offen Richtung Süden, ab 21. Juli 2014",
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html',
        data  => <<EOF,
 #: XXX wie sehen die Einschränkungen tatsächlich aus?
-#: next_check: 2014-07-21
+#: next_check: 2014-08-21
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzögerung)
 	q4::inwork; 13015,7471 12992,7545 12991,7549 12969,7610 12914,7785
 EOF
      },
@@ -23084,6 +23085,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148904.php',
        data  => <<EOF,
 userdel	q4::inwork 20149,3617 20301,3432
+EOF
+     },
+     { from  => 1407189600, # 2014-08-05 00:00
+       until => $isodate2epoch->("2014-08-23 23:59:59"),
+       text  => 'Radenzer Straße und Heidemühler Weg: Fahrbahninstandsetzung, Fahrbahn in Abschnitten gesperrt, vom 06.08.2014 bis zum 23.08.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.149073.php',
+       data  => <<EOF,
+userdel	q4::inwork 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,6503
 EOF
      },
     );

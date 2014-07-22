@@ -3329,7 +3329,16 @@ userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => '146000678',
+         'until' => 1406584799,
+         'text' => 'Niederfinow: Kabelarbeiten im Fahrbahnbereich OD Niederfinow, Hebewerkstraße Vollsperrung, 21.07.2014 bis 28.07.2014',
+         'from' => 1405807200,
+         'id' => 2539,
+         'data' => 'userdel	2::inwork 46132,49993 46390,50091
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1530395999,
          'text' => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2018',
@@ -3567,18 +3576,7 @@ userdel	q4::inwork; 17614,6571 17766,6616
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html',
-         'until' => undef,
-         'text' => 'Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Einbahnstraße offen Richtung Süden, ab 21. Juli 2014',
-         'from' => 1405807200,
-         'id' => 2593,
-         'data' => '#: XXX wie sehen die Einschränkungen tatsächlich aus?
-#: next_check: 2014-07-21
-	q4::inwork; 13015,7471 12992,7545 12991,7549 12969,7610 12914,7785
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148335.php',
          'until' => 1407686400,
@@ -3632,6 +3630,16 @@ userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
          'from' => 1406412000,
          'id' => 2597,
          'data' => 'userdel	q4::inwork 20149,3617 20301,3432
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.149073.php',
+         'until' => 1408831199,
+         'text' => 'Radenzer Straße und Heidemühler Weg: Fahrbahninstandsetzung, Fahrbahn in Abschnitten gesperrt, vom 06.08.2014 bis zum 23.08.2014',
+         'from' => 1407189600,
+         'id' => 2598,
+         'data' => 'userdel	q4::inwork 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,6503
 ',
          'type' => 'handicap'
        }
