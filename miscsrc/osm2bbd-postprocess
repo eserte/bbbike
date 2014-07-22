@@ -17,7 +17,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use vars qw($VERSION);
-$VERSION = 0.14;
+$VERSION = 0.15;
 
 use Cwd            qw(realpath);
 use File::Basename qw(dirname);
@@ -28,6 +28,8 @@ my @targets = ('wasserstrassen_lowres',
 	       'largest_city_is_center',
 	       'title_for_dataset',
 	       'inaccessible_streets',
+	       'strassen_cooked', # dependency: inaccessible_streets
+	       'fragezeichen_cooked',
 	       #'make_long_streets',
 	       'mount',
 	       'coastline_hack',
@@ -220,6 +222,44 @@ chmod ugo-wx,ugo+r inaccessible_strassen
 EOF
     system $cmd;
     die "The command $cmd failed: $?" if $? != 0;
+}
+
+sub target_strassen_cooked {
+    return if _is_up_to_date("strassen-cooked", ["strassen", "inaccessible_strassen"]);
+    die "Fatal: inaccessible_strassen not existent or empty, please make sure to run same-named postprocessing target.\n"
+	if !-s "inaccessible_strassen";
+
+    my @cmd = (
+	       $^X, "$FindBin::RealBin/create_cooked_bbd",
+	       "-o", "strassen-cooked",
+	       "strassen", "inaccessible_strassen",
+	      );
+    if ($debug >= 2) {
+	print STDERR "Running '@cmd'...\n";
+    }
+    system @cmd;
+    if ($? != 0) {
+	die "The command '@cmd' failed: $?";
+    }
+}
+
+sub target_fragezeichen_cooked {
+    return if _is_up_to_date("fragezeichen-cooked", ["strassen", "fragezeichen"]);
+
+    my @cmd = (
+	       $^X, "$FindBin::RealBin/create_cooked_bbd",
+	       "-variant", "fragezeichen",
+	       "-o", "fragezeichen-cooked",
+	       "fragezeichen",
+	       "strassen",
+	      );
+    if ($debug >= 2) {
+	print STDERR "Running '@cmd'...\n";
+    }
+    system @cmd;
+    if ($? != 0) {
+	die "The command '@cmd' failed: $?";
+    }
 }
 
 sub target_make_long_streets {
