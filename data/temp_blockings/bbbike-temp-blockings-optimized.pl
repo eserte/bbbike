@@ -3231,13 +3231,15 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        {
          'until' => undef,
-         'text' => 'Weg im Cheruskerpark: Bauarbeiten, Durchfahrt nicht möglich',
+         'text' => 'Weg im Cheruskerpark: die Bauarbeiten sind möglicherweise beendet',
          'from' => undef,
          'id' => 2489,
          'data' => '#: next_check_id: CHERUSKERPARK-2014
 #: XXX bis wann gehen die Bauarbeiten?
 #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140723.1150.398518.html (fertig?)
 #: last_checked: 2014-07-17
+#: next_check: 2014-07-23
 #: priority: #A
 userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
 ',
@@ -3375,8 +3377,8 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        {
          'source_id' => 'IM_021395',
-         'until' => 1406127600,
-         'text' => 'Golzstr.: Baustelle, Fahrbahn zwischen Lichtenrader Damm und Bahnhofstr. in Richtung S-Bhf. gesperrt, 03.03.2014 08:00 Uhr bis 23.07.2014 17:00 Uhr ',
+         'until' => 1408114800,
+         'text' => 'Golzstr.: Baustelle, Fahrbahn zwischen Lichtenrader Damm und Bahnhofstr. in Richtung S-Bhf. gesperrt, 03.03.2014 08:00 Uhr bis 15.08.2014 17:00 Uhr ',
          'from' => 1393743600,
          'id' => 2546,
          'data' => '#: note: laut BVG navi 03.2014 sogar bis September 2014

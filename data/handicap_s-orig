@@ -63,11 +63,7 @@ zur Keibelstr.: Baustraße, Einbahnstraße	q4::inwork; 10976,13229 11045,13183
 Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 # 
 # REMOVED (keine Einschränkungen mehr) --- #: last_checked: 2014-06-06 --- Ohmstr.: Bauarbeiten, auf engen Gehweg ausweichen	q3::inwork 11378,11856 11324,11689
-# 
-#: XXX Ende der Bauarbeiten?
-#: XXX_prog: zu eng für Anhänger
-#: last_checked: 2014-07-15
-Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
+# REMOVED (Sperrung aufgehoben) --- #: XXX Ende der Bauarbeiten? --- #: XXX_prog: zu eng für Anhänger --- #: last_checked: 2014-07-15 --- Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualität -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
@@ -265,14 +261,14 @@ Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 #: next_check: 2014-09-15
 Richardplatz: Bauarbeiten auf der südlichen Fahrbahn	q4::inwork 13188,7590 13303,7622 13400,7642
 # 
-#: last_checked: 2014-07-02
+#: last_checked: 2014-07-23
 #: check_frequency: 30d
 Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen über Gehweg	q3::inwork 12088,9775 12250,9691
 # 
 # REMOVED --- #: next_check_id: PLATZHOF-2014 --- #: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof --- #: by: http://www.aktion-kms.de/files/p23.v_l01_120809.pdf --- #: by: http://www.aktion-kms.de/files/pl_d_std_hof_flyer_5.pdf --- #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden --- #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf --- #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/ --- #: last_checked: 2014-04-11 vvv --- #: check_frequency: 15d vvv --- Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12797,8168 12779,8188 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2014-04-26
+#: last_checked: 2014-07-23
 #: next_check: 2014-09-01
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
@@ -522,7 +518,7 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848 7563,88
 Nettelbeckplatz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7929,15355 7974,15418
 Nettelbeckplatz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
-Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5919,8417 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
+Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,8562
@@ -2015,6 +2011,8 @@ Neue Steinmetzstr.: Bordstein	q2 7625,9376 7628,9365
 #: XXX_prog Bordstein am Wendehammer, könnte mit Umweg auf der östlichen Seite über einen abgesenkten Bordstein umfahren werden, ansonsten q1
 Münchener Str.: Bordstein	q2 6264,9156 6255,9194
 (Promenade - Borstellstr.): einige Fußgänger	q2 6392,4312 6390,4335
+#: XXX_prog Bordstein am Wendehammer; sowie Bordsteine (3x) beim Überqueren der Hohenstaufenstr., hier ist auch der Mittelstreifen relativ schmal; ansonsten q2
+Heilbronner Str.: Bordsteine, einige Fußgänger	q4 6101,9720 6096,9772
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

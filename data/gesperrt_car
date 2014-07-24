@@ -799,10 +799,10 @@ Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8053,15598 7962,1
 Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7948,15802 7962,15633 8053,15598
 Zeisigweg	1 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
 Nollendorfplatz	1 7033,10328 6971,10346
-Mittelstreifen	3nocross::ignrte 5902,9083 5975,9094 6063,9106
+Mittelstreifen	3nocross::ignrte 5895,9083 5975,9094 6063,9106
 Grunewaldstr. -> Bozener Str.: Mittelstreifen	3::igndisp 6063,9106 5975,9094 5971,8926
-Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5902,9083 5975,9094 5965,9131
-Bozener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5971,8926 5975,9094 5902,9083
+Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5895,9083 5975,9094 5965,9131
+Bozener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5971,8926 5975,9094 5895,9083
 Bozener Str. -> Stübbenstr.: Mittelstreifen	3::igndisp 5971,8926 5975,9094 5965,9131
 Stübbenstr. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5965,9131 5975,9094 6063,9106
 Stübbenstr. -> Bozener Str.: Mittelstreifen	3::igndisp 5965,9131 5975,9094 5971,8926
@@ -967,8 +967,8 @@ Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6255,9194
 Viktoria-Luise-Platz: Poller	3 6270,9910 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
-Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7291,10506
-Else-Lasker-Schüler-Str.: Poller	3 7291,10506 7245,10499 7033,10396
+Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7281,10510
+Else-Lasker-Schüler-Str.: Poller	3 7281,10510 7245,10499 7033,10396
 (Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
 Steinbachstr.	1 19759,4160 19703,3979 19673,3888 19587,3801
 Mittelstreifen	3nocross::ignrte 5091,7676 5067,7652 5051,7631

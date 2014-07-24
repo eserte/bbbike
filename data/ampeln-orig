@@ -726,6 +726,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 8065,11349
 #: XXX_prog gilt nicht für Radfahrer in Richtung West->Ost
 	X 5758,11895
+#: note: Fußgängerampel ist nur für die Hauptfahrbahn gültig, die explizit für Radfahrer gesperrt ist
+#: note: Anforderungsampel
+	F0 5141,11816
 	X 14211,11552
 	X 15863,11992
 	X 12549,8616
@@ -2027,8 +2030,11 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 11722,10533
 	X 5219,6215
 	X 5269,6305
+#: note: Anforderungsampel
 	F 5091,5979
+#: note: Anforderungsampel
 	F 4982,5789
+#: note: keine Anforderungsampel, wahrscheinlich gleichgeschaltet mit der Ampel an der Grunewaldstr.
 	F 4900,5648
 	F 6333,7708
 #: note: am Wochenende nicht eingeschaltet

@@ -777,9 +777,9 @@ Spittelmarkt (Richtungsfahrbahn)	1::igndisp 10299,11786 10240,11740 10213,11728
 Spittelmarkt (Mittelstreifen)	3nocross::ignrte 10213,11728 10240,11740 10299,11786
 #: note ^^^
 #: note: Mittelstreifen mit Gitter vvv
-Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6108,9772 6209,9773 6241,9772
-Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6241,9772 6209,9772 6108,9772
-Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6108,9772 6209,9773 6241,9772
+Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6096,9772 6209,9773 6241,9772
+Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6241,9772 6209,9772 6096,9772
+Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6096,9772 6209,9773 6241,9772
 #: note ^^^
 #: note: Mittelstreifen vvv
 Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7052,5883
@@ -2773,11 +2773,11 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: XXX laut osm seit 2014-04-12 ohne access=private - falsch!
 #: confirmed_by: srt
 #: osm_watch: way id="4402045" version="10"
-#: last_checked: 2014-07-09
+#: last_checked: 2014-07-23
 #: check_frequency: 180d
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
-#: last_checked: 2014-04-17
+#: last_checked: 2014-07-23
 #: check_frequency: 180d
 #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
