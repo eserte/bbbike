@@ -547,6 +547,7 @@ asphaltiert	RW1; 12655,3882 12711,3881 12726,3870 12791,3814
 asphaltiert, gemeinsamer Rad- und Gehweg	RW1; 12791,3814 12910,3739 13030,3664 13162,3576 13396,3512
 #: XXX Ist der Radweg in Richtung Nordwesten aufgehoben worden?
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4483
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4613 (Kennzeichnung eines Fahrradwegs)
 #: last_checked: 2014-06-15 (nein)
 #: check_frequency: 120d
 	RW1;RW2 16908,1217 17002,1167
@@ -1643,6 +1644,8 @@ Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1;RW1 6631,968 6515,1010 64
 	RW1; 4240,19019 4162,18891
 	RW1; 4162,18891 4098,18762 4070,18695 4009,18322 3970,18126 3930,17920
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121105.0940.377528.html (Benutzungspflicht in Richtung Berliner Str.; andere Richtung war bereits eingetragen)
+#: XXX Qualität der Radwege?
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3233 (Ausbau)
 	RW2;RW2 3165,19136 3079,19045 2993,18962 2821,18831
 	RW1;RW 2579,19345 2773,19359 3095,19203 3165,19136
 	RW;RW 3165,19136 3312,19028
@@ -1684,7 +1687,8 @@ Gehweg für Radfahrer frei	RW9; 1282,21118 886,21221 598,21257 469,21303 415,2133
 Busspur ist immer gültig	RW5;RW5 2020,20327 1955,20435
 #: XXX wird die Benutzungspflicht aufgehoben?
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3657
-#: next_check: 2014-04-01
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3657 (Abordnung wird erfolgen)
+#: next_check: 2014-09-01
 	RW2;RW1 1955,20435 1929,20501 1910,20548 1883,20639 1876,20667 1872,20683 1858,20740
 	RW1;RW0 3744,21854 3726,21838
 	RW1;RW1 3726,21838 3674,21792 3545,21677 3356,21534 3280,21477

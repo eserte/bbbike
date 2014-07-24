@@ -117,8 +117,8 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 # 
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
-#: osm_watch: way id="4543585" version="17"
-#: osm_watch: way id="42732291" version="8"
+#: osm_watch: way id="4543585" version="18"
+#: osm_watch: way id="42732291" version="9"
 #: last_checked: 2014-05-16
 #: check_frequency: 90d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
@@ -325,6 +325,19 @@ Manteuffelstr.: werden Radstreifen markiert?	?::projected 8606,5496 8610,5579 86
 #: last_checked: 2014-04-06
 #: check_frequency: 120d
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
+# 
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3233 vvv
+#: next_check: 2015-06-01 (Durchführung der Maßnahme in 2015)
+Eichborndamm: Ersetzung der vorhandenen Radwege durch Radstreifen?	?::projected 4780,20116 4766,20084 4728,20003 4611,19769 4497,19539 4357,19261 4284,19106 4240,19019
+#: next_check: 2015-09-01 (noch keine konkrete Planung)
+Tornower Weg - Wilhelmsruher Damm: "Lückenschluss" der Radwegführung, in welcher Form?	?::projected 6519,21002 6565,21004 6560,21055 6596,21062 6594,21134
+#: next_check: 2015-09-01 (noch keine konkrete Planung)
+Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflasters?	?::projected 2497,19503 2700,19527
+#: next_check: 2014-12-31 (noch 2014)
+Borsigdamm: Erneuerung des Wanderwegs für den Radverkehr	?::projected 1606,19775 1557,19765 1509,19693 1463,19417
+#: next_check: 2015-12-31
+Borsigdamm: Verbesserung für den Radverkehr	?::projected 1463,19417 1450,19336 1472,19165 1528,18971
+#: by ^^^
 # 
 #: section ^^^
 #: ignore ^^^
@@ -609,8 +622,9 @@ XXIII-3-1VE: hier könnte eine/mehrere Straßen entstehen	?::projected 24624,11374
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5720
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00072000/00-Anlagen/02/vzb0688_IV_Auswertung_B-Plan_XXIII_4a.pdf
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5836 (Benennung nach Ingeborg Meyer-Rey?)
 #: next_check: 2014-10-01
-XXIII-4a: hier könnte eine Straße entstehen	?::projected 24782,11526 25140,11446
+XXIII-4a: hier wird eine Straße entstehen, Straßenname, Qualität?	?::projected 24782,11526 25140,11446
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf
@@ -1106,6 +1120,13 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7315
+#: by: http://www.berlin.de/ba-spandau/bvv-online/___tmp/tmp/45081036188291447/188291447/00093246/46-Anlagen/04/Drs-Nr0711-XIX_sb_Anlage.pdf
+Nennhauser Damm/Finkenkruger Weg: neue Vorfahrtsregelung?	?::projected -7484,13770 -7464,13904 -7457,13957 -7456,14073 -7455,14144 -7457,14317 -7445,14392 -7420,14520 -7413,14561 -7391,14857 -7390,14881 -7387,14951 -7373,15154 -7371,15201 -7365,15306
+# 
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4612
+Stubenrauchstr.: gibt es hier neue Fahrbahnmarkierungen z.B. Radspuren?	? 16182,2200 16135,2135
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014
 #: last_checked: 2014-07-06
@@ -3724,3 +3745,5 @@ Anbindung zum Weg am Königsgraben: Qualität des Wegs? Nachts beleuchtet?	? 8501,
 Weg im Freizeitpark Marienfelde: Qualität des Wegs? Nachts beleuchtet?	? 7978,-839 8010,-805 8018,-489 7801,-467 7803,-387 7785,-345 7773,-344
 Mühlenstr. (Zepernick): Qualität?	? 19737,27037 19698,27205 19730,27276
 Waldstr. (Schwanebeck): Qualität?	? 19882,26592 19935,26699 19948,26760
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3913 (geplante Beleuchtung bis 2014-11)
+(Senftenberger Ring - Mittelfeldbecken): Qualität des Wegs? Nachts beleuchtet? Existiert eine Ausschilderung?	? 6977,22118 6989,21975 6999,21908
