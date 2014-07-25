@@ -4114,22 +4114,21 @@ sub display_route {
 			push @comment_files, "handicap_l";
 		    }
 		}
-		if ($q->param('pref_ferry') && $q->param('pref_ferry') eq 'use') {
-		    push @comment_files, 'comments_ferry';
-		}
 
 		for my $s (@comment_files) {
 		    eval {
 			if ($s eq 'comments') {
-			    my @ms;
 			    for my $comment_file (map { "comments_$_" } grep { $_ ne "kfzverkehr" } @Strassen::Dataset::comments_types) {
-				if ($comment_file eq 'comments_route' || $comment_file eq 'comments_ferry') {
-				    push @ms, Strassen->new($comment_file, UseLocalDirectives => 1);
+				if ($comment_file eq 'comments_ferry') {
+				    if ($q->param('pref_ferry') && $q->param('pref_ferry') eq 'use') {
+					push @s, Strassen->new($comment_file, UseLocalDirectives => 1);
+				    }
+				} elsif ($comment_file eq 'comments_route') {
+				    push @s, Strassen->new($comment_file, UseLocalDirectives => 1);
 				} else {
-				    push @ms, Strassen->new($comment_file);
+				    push @s, Strassen->new($comment_file);
 				}
 			    }
-			    push @s, MultiStrassen->new(@ms);
 			} elsif ($s =~ /^(qualitaet|handicap)/) {
 			    my $old_s = Strassen->new($s);
 			    my $new_s = $old_s->grepstreets
