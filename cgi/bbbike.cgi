@@ -4123,7 +4123,7 @@ sub display_route {
 			if ($s eq 'comments') {
 			    my @ms;
 			    for my $comment_file (map { "comments_$_" } grep { $_ ne "kfzverkehr" } @Strassen::Dataset::comments_types) {
-				if ($comment_file eq 'comments_route') {
+				if ($comment_file eq 'comments_route' || $comment_file eq 'comments_ferry') {
 				    push @ms, Strassen->new($comment_file, UseLocalDirectives => 1);
 				} else {
 				    push @ms, Strassen->new($comment_file);
