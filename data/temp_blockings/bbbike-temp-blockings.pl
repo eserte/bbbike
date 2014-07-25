@@ -21395,7 +21395,7 @@ EOF
        until => 1377381599, # 2013-08-24 23:59
        text  => 'SUPPE&MUCKE 2013 am 24. August am Rudolfplatz',
        periodic => 1, # allerdings wechselnde Orte
-       recurrences => [['yearly', days => 24, months => 8]],
+       # recurrences => [['yearly', days => 24, months => 8]], # 2014 fällt aus
        type  => 'gesperrt',
        source_id => 'http://www.suppeundmucke.de/',
        data  => <<EOF,
