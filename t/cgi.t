@@ -702,7 +702,7 @@ for my $cgiurl (@urls) {
 			 })->query_string,
 		testname => 'Request with ferry=use';
 	    like_html $content, qr{F11.*Baumschulenstr.*Wilhelmstrand}, 'Found use of ferry F11';
-	    like_html $content, qr{Überfahrt.*kostet}, 'Found tariff information for ferry';
+	    like_html $content, qr{(BVG-Tarif|Überfahrt.*kostet)}, 'Found tariff information for ferry';
 	}
 
 	{
@@ -712,7 +712,7 @@ for my $cgiurl (@urls) {
 			 })->query_string,
 		testname => 'Request without ferry=use';
 	    unlike_html $content, qr{F11.*Baumschulenstr.*Wilhelmstrand}, 'No use of ferry F11';
-	    unlike_html $content, qr{Überfahrt.*kostet}, 'No tariff information for ferry';
+	    unlike_html $content, qr{(BVG-Tarif|Überfahrt.*kostet)}, 'No tariff information for ferry';
 	}
     }
 
