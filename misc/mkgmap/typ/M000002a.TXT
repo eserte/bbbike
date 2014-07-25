@@ -1,7 +1,7 @@
 ; M000002a.TYP
-; Longueur: 30518 octets
-; Fichier TYP compilé     07/05/2014     14:37:15
-; Décompilé le 7/5/2014 à 2:37:19 PM
+; Longueur: 32331 octets
+; Fichier TYP compilé     25/07/2014     12:51:45
+; Décompilé le 7/25/2014 à 12:51:48 PM
 
 [_id]
 ProductCode=1
@@ -2067,72 +2067,6 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x41
-UseOrientation=Y
-Xpm="32 9 2  1"
-"! c #888888"
-"  c none"
-"           !!                   "
-"                                "
-"             !!                 "
-"                                "
-"               !!               "
-"                                "
-"             !!                 "
-"                                "
-"           !!                   "
-;12345678901234567890123456789012
-String1=0x02,leichte Steigung
-String2=0x00,light mount
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x42
-UseOrientation=Y
-Xpm="32 9 2  1"
-"! c #000000"
-"  c none"
-"           !!                   "
-"            !!                  "
-"             !!                 "
-"              !!                "
-"               !!               "
-"              !!                "
-"             !!                 "
-"            !!                  "
-"           !!                   "
-;12345678901234567890123456789012
-String1=0x02,mittlere Steigung
-String2=0x00,medium mount
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x43
-UseOrientation=Y
-Xpm="32 9 2  1"
-"! c #000000"
-"  c none"
-"          !!  !!                "
-"           !!  !!               "
-"            !!  !!              "
-"             !!  !!             "
-"              !!  !!            "
-"             !!  !!             "
-"            !!  !!              "
-"           !!  !!               "
-"          !!  !!                "
-;12345678901234567890123456789012
-String1=0x02,starke Steigung
-String2=0x00,strong mount
-ExtendedLabels=N
-[end]
-
-
-[_line]
 Type=0x10e02
 UseOrientation=N
 LineWidth=2
@@ -2178,6 +2112,182 @@ Xpm="32 5 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Strassenbahn
 String2=0x00,tramway
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x14101
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #888888"
+"  c none"
+"           !!                   "
+"                                "
+"             !!                 "
+"                                "
+"               !!               "
+"                                "
+"             !!                 "
+"                                "
+"           !!                   "
+;12345678901234567890123456789012
+String1=0x02,leichte Steigung
+String2=0x00,light mount
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x14201
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #000000"
+"  c none"
+"           !!                   "
+"            !!                  "
+"             !!                 "
+"              !!                "
+"               !!               "
+"              !!                "
+"             !!                 "
+"            !!                  "
+"           !!                   "
+;12345678901234567890123456789012
+String1=0x02,mittlere Steigung
+String2=0x00,medium mount
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x14301
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #000000"
+"  c none"
+"          !!  !!                "
+"           !!  !!               "
+"            !!  !!              "
+"             !!  !!             "
+"              !!  !!            "
+"             !!  !!             "
+"            !!  !!              "
+"           !!  !!               "
+"          !!  !!                "
+;12345678901234567890123456789012
+String1=0x02,starke Steigung
+String2=0x00,strong mount
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x14401
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #000000"
+"  c none"
+"           !!                   "
+"            !!    !!!!          "
+"             !!  !!  !!         "
+"              !!     !!         "
+"               !!    !!         "
+"              !!    !!          "
+"             !!    !!           "
+"            !!                  "
+"           !!      !!           "
+;12345678901234567890123456789012
+String1=0x02,Steigung (unspezifiziert)
+String2=0x00,mount (unspecified)
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x14501
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #888888"
+"  c none"
+"                   !!           "
+"                                "
+"                 !!             "
+"                                "
+"               !!               "
+"                                "
+"                 !!             "
+"                                "
+"                   !!           "
+;12345678901234567890123456789012
+String1=0x02,leichtes Gefaelle
+String2=0x00,light slope
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x14601
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #000000"
+"  c none"
+"                   !!           "
+"                  !!            "
+"                 !!             "
+"                !!              "
+"               !!               "
+"                !!              "
+"                 !!             "
+"                  !!            "
+"                   !!           "
+;12345678901234567890123456789012
+String1=0x02,mittleres Gefaelle
+String2=0x00,medium slope
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x14701
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #000000"
+"  c none"
+"                !!  !!          "
+"               !!  !!           "
+"              !!  !!            "
+"             !!  !!             "
+"            !!  !!              "
+"             !!  !!             "
+"              !!  !!            "
+"               !!  !!           "
+"                !!  !!          "
+;12345678901234567890123456789012
+String1=0x02,starkes Gefaelle
+String2=0x00,strong slope
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x14801
+UseOrientation=Y
+Xpm="32 9 2  1"
+"! c #000000"
+"  c none"
+"                   !!           "
+"         !!!!     !!            "
+"        !!  !!   !!             "
+"            !!  !!              "
+"            !! !!               "
+"           !!   !!              "
+"          !!     !!             "
+"                  !!            "
+"          !!       !!           "
+;12345678901234567890123456789012
+String1=0x02,Gefaelle (unspezifiziert)
+String2=0x00,slope (unspecified)
 ExtendedLabels=N
 [end]
 
