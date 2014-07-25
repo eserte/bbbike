@@ -53,7 +53,7 @@ file.
 EOF
 }
 
-my %known_experiments = map {($_,1)} qw(cycle-route addr);
+my %known_experiments = map {($_,1)} qw(cycle-route addr mount);
 
 my $single_file;
 my $single_file_type;
@@ -290,6 +290,11 @@ if ($single_file) {
 
     dump_quality();
     dump_handicap();
+
+    # XXX not enabled by default
+    if ($experiments{'mount'}) {
+	do_file("$datadir/mount", \&handle_mount_like);
+    }
 	
     if (!$fragezeichen_file) {
 	$fragezeichen_file = -r "$datadir/../tmp/fragezeichen-nextcheck.bbd" ? "$datadir/../tmp/fragezeichen-nextcheck.bbd" : "$datadir/fragezeichen";
@@ -488,6 +493,27 @@ sub handle_green_like {
 	my($n0,$n1) = @node_ids[$node_id_i-1,$node_id_i];
 	$green{"$n0 $n1"} = $cat;
 	$green{"$n1 $n0"} = $cat;
+    }
+}
+
+sub handle_mount_like {
+    my($r) = @_;
+    if (my($mount) = $r->[Strassen::NAME] =~ m{^Steigung ([\d\.]+)%}) {
+	my $class = ($mount >= 6.0 ? 'strong' :
+		     $mount >= 4.0 ? 'medium' :
+		     $mount >= 2.0 ? 'light' : undef);
+	if (defined $class) {
+	    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+	    for my $node_id (get_node_ids($r)) {
+		print $wayfh qq{  <nd ref="$node_id"/>\n};
+	    }
+	    print $wayfh qq{  <tag k="bbbike:mountclass" v="${class}_mount" />\n};
+	    # not needed: print $wayfh qq{  <tag k="bbbike:mount" v="$mount" />\n};
+	    print $wayfh qq{</way>\n};
+	    $next_way_id++;
+	}
+    } else {
+	warn "Ignore unparsable mount text '$r->[Strassen::NAME]'...\n";
     }
 }
 
