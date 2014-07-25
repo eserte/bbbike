@@ -31,6 +31,7 @@ before_script:
  - Xvfb :123 &
  - (sleep 10; env DISPLAY=:123 twm) &
  - (sleep 5; lwp-request -m GET "http://localhost/bbbike/cgi/bbbike.cgi?init_environment=1")
+ - (cd data && freebsd-make -j4 live-deployment-targets)
 env:
  - DISPLAY=:123 BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1
 language: perl

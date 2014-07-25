@@ -221,6 +221,8 @@ plz-test:
 unimportant-slow-checks:	really-slow-checks \
 				check-crossings-less-important
 
+live-deployment-targets:	strassen-cooked landstrassen-cooked landstrassen2-cooked fragezeichen-cooked
+
 ######################################################################
 # DATA FILE TARGETS
 

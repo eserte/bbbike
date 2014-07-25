@@ -127,7 +127,7 @@ if ($dry_run) {
     chdir "data"
 	or die "Can't change to data subdirectory: $!";
     my $pmake = BBBikeBuildUtil::get_pmake();
-    my @cmd = ($pmake, ($test_jobs ? "-j$test_jobs" : ()), "strassen-cooked", "fragezeichen-cooked");
+    my @cmd = ($pmake, ($test_jobs ? "-j$test_jobs" : ()), "live-deployment-targets");
     system @cmd;
     if ($? != 0) {
 	die "Command '@cmd' failed";
