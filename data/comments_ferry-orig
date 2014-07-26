@@ -5,6 +5,10 @@
 # - as_of: Stand der Information in der Form YYYY-MM, wird auf der Routenliste als "Stand ..." angezeigt
 # - url: eine auch auf der Routenliste von BBBike sichtbare URL, sollte auf die Fährzeiten verlinken
 # - optional: by: weitere URLs, z.B. für die Preise, nicht verlinkt
+#
+# NOTE: wenn hier Texte geändert werden, dann müssen ggfs. auch in temp_blockings/bbbike-temp-blockings.pl
+# ebenfalls einige gleichlautende Einträge angepasst werden. Diese Einträge sind mit
+# "temporäre Lösung für saisonale Fähren" markiert.
 # 
 #: url: http://www.caputher-touristencenter.de/seite16.htm
 #: by: http://caputh.de/_site/fahre/

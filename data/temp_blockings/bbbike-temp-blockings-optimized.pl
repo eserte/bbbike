@@ -2960,7 +2960,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
 ',
          'until' => undef,
          'from' => undef,
-         'text' => 'Potsdamer Wassertaxi: fährt nur im Sommer an Wochenenden und Feiertagen',
+         'text' => 'Potsdamer Wassertaxi: fährt nur im Sommer, 3x bis 6x täglich',
          'type' => 'gesperrt',
          'id' => 2407
        },
@@ -2981,7 +2981,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        },
        {
          'until' => undef,
-         'text' => 'Karniner Fähre: fährt nur von Mai bis Oktober',
+         'text' => 'Karniner Fähre: fährt nur von Anfang Mai bis Ende September',
          'recurring' => 1,
          'from' => undef,
          'id' => 2409,
@@ -3202,7 +3202,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 ',
          'until' => undef,
          'from' => undef,
-         'text' => 'Fähre Liepnitzsee: fährt nur ab Ende März bis Ende Oktober',
+         'text' => 'Fähre Liepnitzsee: fährt nur ab Anfang April bis Anfang November',
          'type' => 'gesperrt',
          'id' => 2475
        },
