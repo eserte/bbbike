@@ -10,10 +10,12 @@ use Getopt::Long;
 use Strassen::GPX;
 
 my $use_module = "";
+my $wgs84;
 GetOptions("xmlmod=s" => \$Strassen::GPX::use_xml_module, # compat with bbd2gpx
 	   "module=s" => \$use_module, # older style
+	   'wgs84!' => \$wgs84,
 	  )
-    or die "usage: $0 [-xmlmod module] [file]";
+    or die "usage: $0 [-wgs84] [-xmlmod module] [file]";
 
 if ($use_module) {
     if ($use_module =~ m{twig}i) {
@@ -34,5 +36,9 @@ if ($Strassen::GPX::use_xml_module) {
 }
 
 my $file = shift || die 'Please specify file (or "-" for stdin)';
-Strassen::GPX->new($file)->write("-");
-
+my $s = Strassen::GPX->new;
+if ($wgs84) {
+    $s->set_global_directive(map => 'polar');
+}
+$s->gpx2bbd($file);
+$s->write("-");
