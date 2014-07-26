@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: kdeutil.t,v 1.5 2007/12/17 20:22:52 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -71,6 +70,7 @@ SKIP: {
     }
 
     {
+	local $SIG{__WARN__} = sub {}; # expected warnings here
 	my($p) = $k->get_kde_path("non-existing-path-type");
 	ok(!$p, "Tried to get non existing path type")
 	    or diag("Got <$p>");
