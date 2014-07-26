@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2001,2010 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2001,2010,2014 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -1046,6 +1046,92 @@ sub shallow_compare {
 
     return 1;    
 }
+
+# Warning: after changing a bbd file some data structures have to be
+# invalidated like the internal grid, crossing structures etc. Also
+# data structures built upon this Strassen object (i.e. StrassenNetz
+# objects) need to be re-constructed. Nothing of it is done by this
+# method.
+#
+# If there's a number of split_line() operations to be
+# done, then use multiple_split_line() instead.
+sub split_line {
+    my($self, $n, $coord_index, %opts) = @_;
+    my $cb = delete $opts{cb};
+    my $insert_point = delete $opts{insert_point};
+    die "Unhandled options: " . join(' ', %opts) if %opts;
+
+    if ($insert_point) {
+	if ($cb) {
+	    die "Cannot define cb and insert_point";
+	}
+	$cb = sub {
+	    my($side, $r) = @_;
+	    if ($side eq 'left') {
+		CORE::push @{ $r->[Strassen::COORDS] }, $insert_point;
+	    } else {
+		CORE::unshift @{ $r->[Strassen::COORDS] }, $insert_point;
+	    }
+	};
+    }
+
+    my $data = $self->data;
+    if (!defined $data->[$n]) {
+	die "No record at index $n";
+    }
+    my $r = Strassen::parse($data->[$n]);
+    my $coords = $r->[Strassen::COORDS];
+
+    if ($coord_index == 0 || $coord_index == $#$coords) {
+	if ($cb) {
+	    if ($coord_index == 0) {
+		$cb->('right', $r);
+	    } else {
+		$cb->('left', $r) if $cb;
+	    }
+	    $self->set2($n, $r);
+	}
+	return;
+    }
+
+    if ($coord_index > $#$coords) {
+	die "Cannot split record with " . scalar(@$coords) . " coordinate(s) at index $coord_index";
+    }
+
+    my @new_coords = @{$coords}[$coord_index .. $#$coords];
+    splice @{$r->[Strassen::COORDS]}, $coord_index+1;
+    $cb->('left', $r) if $cb;
+    $self->set2($n, $r);
+
+    my $new_r = [];
+    $new_r->[Strassen::NAME] = $r->[Strassen::NAME];
+    $new_r->[Strassen::CAT] = $r->[Strassen::CAT];
+    $new_r->[Strassen::COORDS] = \@new_coords;
+    $cb->('right', $new_r) if $cb;
+    splice @$data, $n+1, 0, Strassen::arr2line2($new_r) . "\n";
+
+    if ($#{ $self->{Directives} } >= $n) {
+	my $new_directives;
+	if ($self->{Directives}->[$n]) {
+	    require Storable;
+	    $new_directives = Storable::dclone($self->{Directives}->[$n]);
+	}
+	splice @{ $self->{Directives} }, $n+1, 0, $new_directives;
+    }
+}
+
+sub multiple_split_line {
+    my($self, $pairs, %opts) = @_;
+    my @sorted_pairs = sort {
+	my $ret = $b->[0] <=> $a->[0];
+	return $ret || ($b->[1] <=> $a->[1]);
+    } @$pairs;
+    for my $sorted_pair (@sorted_pairs) {
+	my($n, $coord_index) = @$sorted_pair;
+	$self->split_line($n, $coord_index, %opts);
+    }
+}
+
 
 1;
 
