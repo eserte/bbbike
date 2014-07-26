@@ -12,7 +12,7 @@ use Strassen::GPX;
 
 sub usage {
     die <<EOF;
-usage: $0 [-as route] [-xmlmod module] bbdfile
+usage: $0 [-as route|multi-tracks] [-xmlmod module] bbdfile
 EOF
 }
 
