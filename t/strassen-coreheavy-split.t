@@ -119,4 +119,18 @@ Zobtener Str.	NN 200,200 300,300
 EOF
 }
 
+{
+    my $test_longline_bbd = <<'EOF';
+A track	X 10,10 20,20 30,30 40,40 50,50 60,60
+EOF
+    my $s = Strassen->new_from_data_string($test_longline_bbd);
+    $s->multiple_split_line([[0,1], [0,3], [0,2]]);
+    eq_or_diff $s->as_string, <<'EOF', 'multiple_split_line on one record';
+A track	X 10,10 20,20
+A track	X 20,20 30,30
+A track	X 30,30 40,40
+A track	X 40,40 50,50 60,60
+EOF
+}
+
 __END__
