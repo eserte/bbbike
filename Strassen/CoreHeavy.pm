@@ -1058,7 +1058,22 @@ sub shallow_compare {
 sub split_line {
     my($self, $n, $coord_index, %opts) = @_;
     my $cb = delete $opts{cb};
+    my $insert_point = delete $opts{insert_point};
     die "Unhandled options: " . join(' ', %opts) if %opts;
+
+    if ($insert_point) {
+	if ($cb) {
+	    die "Cannot define cb and insert_point";
+	}
+	$cb = sub {
+	    my($side, $r) = @_;
+	    if ($side eq 'left') {
+		CORE::push @{ $r->[Strassen::COORDS] }, $insert_point;
+	    } else {
+		CORE::unshift @{ $r->[Strassen::COORDS] }, $insert_point;
+	    }
+	};
+    }
 
     my $data = $self->data;
     if (!defined $data->[$n]) {

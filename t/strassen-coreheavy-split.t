@@ -132,7 +132,7 @@ EOF
 # split_line and callbacks
 
 {
-    my $s = Strassen->new_from_data_string($test_longline_bbd, UseLocalDirectives => 1);
+    my $s = Strassen->new_from_data_string($test_longline_bbd);
     $s->split_line(0, 0, cb => $test_cb);
     eq_or_diff $s->as_string, <<'EOF', 'callback action at beginning of record';
 A track	X 2,718 10,10 20,20 30,30 40,40 50,50 60,60
@@ -140,7 +140,7 @@ EOF
 }
 
 {
-    my $s = Strassen->new_from_data_string($test_longline_bbd, UseLocalDirectives => 1);
+    my $s = Strassen->new_from_data_string($test_longline_bbd);
     $s->split_line(0, 2, cb => $test_cb);
     eq_or_diff $s->as_string, <<'EOF', 'callback action in the middle of record';
 A track	X 10,10 20,20 30,30 3,141
@@ -149,10 +149,19 @@ EOF
 }
 
 {
-    my $s = Strassen->new_from_data_string($test_longline_bbd, UseLocalDirectives => 1);
+    my $s = Strassen->new_from_data_string($test_longline_bbd);
     $s->split_line(0, 5, cb => $test_cb);
     eq_or_diff $s->as_string, <<'EOF', 'callback action at end of record';
 A track	X 10,10 20,20 30,30 40,40 50,50 60,60 3,141
+EOF
+}
+
+{
+    my $s = Strassen->new_from_data_string($test_longline_bbd);
+    $s->split_line(0, 2, insert_point => '30,35');
+    eq_or_diff $s->as_string, <<'EOF', 'insert_point shortcut';
+A track	X 10,10 20,20 30,30 30,35
+A track	X 30,35 30,30 40,40 50,50 60,60
 EOF
 }
 
