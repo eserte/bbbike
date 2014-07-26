@@ -230,6 +230,12 @@ Karte::Polar - convert between BBBike and WGS84 coordinates
 
 See L<Karte>.
 
+=head1 EXAMPLES
+
+Convert DDD to DMM coordinates from commandline:
+
+    perl -MKarte::Polar -e 'print Karte::Polar::dmm_human_readable("lat", Karte::Polar::ddd2dmm(shift)), " ", Karte::Polar::dmm_human_readable("long", Karte::Polar::ddd2dmm(shift)), "\n"' 8.259865 50.002045
+
 =head1 AUTHOR
 
 Slaven Rezic.
