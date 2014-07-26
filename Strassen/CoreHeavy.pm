@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2001,2010 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2001,2010,2014 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -1057,23 +1057,42 @@ sub shallow_compare {
 # done, then use multiple_split_line() instead.
 sub split_line {
     my($self, $n, $coord_index, %opts) = @_;
+    my $cb = delete $opts{cb};
+    die "Unhandled options: " . join(' ', %opts) if %opts;
+
     my $data = $self->data;
     if (!defined $data->[$n]) {
 	die "No record at index $n";
     }
     my $r = Strassen::parse($data->[$n]);
     my $coords = $r->[Strassen::COORDS];
-    if ($coord_index == 0 || $coord_index >= $#$coords) {
+
+    if ($coord_index == 0 || $coord_index == $#$coords) {
+	if ($cb) {
+	    if ($coord_index == 0) {
+		$cb->('right', $r);
+	    } else {
+		$cb->('left', $r) if $cb;
+	    }
+	    $self->set2($n, $r);
+	}
+	return;
+    }
+
+    if ($coord_index > $#$coords) {
 	die "Cannot split record with " . scalar(@$coords) . " coordinate(s) at index $coord_index";
     }
+
     my @new_coords = @{$coords}[$coord_index .. $#$coords];
     splice @{$r->[Strassen::COORDS]}, $coord_index+1;
+    $cb->('left', $r) if $cb;
     $self->set2($n, $r);
 
     my $new_r = [];
     $new_r->[Strassen::NAME] = $r->[Strassen::NAME];
     $new_r->[Strassen::CAT] = $r->[Strassen::CAT];
     $new_r->[Strassen::COORDS] = \@new_coords;
+    $cb->('right', $new_r) if $cb;
     splice @$data, $n+1, 0, Strassen::arr2line2($new_r) . "\n";
 
     if ($#{ $self->{Directives} } >= $n) {

@@ -37,14 +37,44 @@ Bleibtreustr.	N 50,50 60,60 70,70 80,80
 Zobtener Str.	NN 100,100 200,200 300,300
 EOF
 
+my $test_longline_bbd = <<'EOF';
+A track	X 10,10 20,20 30,30 40,40 50,50 60,60
+EOF
+
+my $test_cb = sub {
+    my($side, $r) = @_;
+    if ($side eq 'left') {
+	push @{ $r->[Strassen::COORDS] }, '3,141';
+    } elsif ($side eq 'right') {
+	unshift @{ $r->[Strassen::COORDS] }, '2,718';
+    } else {
+	die "Should never happen: side='$side'";
+    }
+};
+
+######################################################################
+# split_line
+
 {
     my $s = Strassen->new_from_data_string($test_bbd, UseLocalDirectives => 1);
-    eval { $s->split_line(0, 0) };
-    like $@, qr{Cannot split record .* at index 0};
-    eval { $s->split_line(0, 2) };
-    like $@, qr{Cannot split record .* at index 2};
+    eval { $s->split_line(0, 3) };
+    like $@, qr{Cannot split record .* at index 3};
     eval { $s->split_line(3, 1) };
     like $@, qr{No record at index 3};
+    eval { $s->split_line(0, 0, unhandled_argument => 1) };
+    like $@, qr{Unhandled options: unhandled_argument 1};
+}
+
+{
+    my $s = Strassen->new_from_data_string($test_bbd, UseLocalDirectives => 1);
+    $s->split_line(0, 0);
+    eq_or_diff $s->as_string, $test_bbd, 'No-op: splitting on first coordinate in record';
+}
+
+{
+    my $s = Strassen->new_from_data_string($test_bbd, UseLocalDirectives => 1);
+    $s->split_line(0, 2);
+    eq_or_diff $s->as_string, $test_bbd, 'No-op: splitting on last coordinate in record';
 }
 
 {
@@ -98,6 +128,37 @@ Zobtener Str.	NN 200,200 300,300
 EOF
 }
 
+######################################################################
+# split_line and callbacks
+
+{
+    my $s = Strassen->new_from_data_string($test_longline_bbd, UseLocalDirectives => 1);
+    $s->split_line(0, 0, cb => $test_cb);
+    eq_or_diff $s->as_string, <<'EOF', 'callback action at beginning of record';
+A track	X 2,718 10,10 20,20 30,30 40,40 50,50 60,60
+EOF
+}
+
+{
+    my $s = Strassen->new_from_data_string($test_longline_bbd, UseLocalDirectives => 1);
+    $s->split_line(0, 2, cb => $test_cb);
+    eq_or_diff $s->as_string, <<'EOF', 'callback action in the middle of record';
+A track	X 10,10 20,20 30,30 3,141
+A track	X 2,718 30,30 40,40 50,50 60,60
+EOF
+}
+
+{
+    my $s = Strassen->new_from_data_string($test_longline_bbd, UseLocalDirectives => 1);
+    $s->split_line(0, 5, cb => $test_cb);
+    eq_or_diff $s->as_string, <<'EOF', 'callback action at end of record';
+A track	X 10,10 20,20 30,30 40,40 50,50 60,60 3,141
+EOF
+}
+
+######################################################################
+# multiple_split_line
+
 {
     my $s = Strassen->new_from_data_string($test_bbd, UseLocalDirectives => 1);
     $s->multiple_split_line([[0,1], [2,1], [1,2]]);
@@ -120,9 +181,6 @@ EOF
 }
 
 {
-    my $test_longline_bbd = <<'EOF';
-A track	X 10,10 20,20 30,30 40,40 50,50 60,60
-EOF
     my $s = Strassen->new_from_data_string($test_longline_bbd);
     $s->multiple_split_line([[0,1], [0,3], [0,2]]);
     eq_or_diff $s->as_string, <<'EOF', 'multiple_split_line on one record';
