@@ -1076,12 +1076,14 @@ sub split_line {
     $new_r->[Strassen::COORDS] = \@new_coords;
     splice @$data, $n+1, 0, Strassen::arr2line2($new_r) . "\n";
 
-    my $new_directives;
-    if ($self->{Directives}->[$n]) {
-	require Storable;
-	$new_directives = Storable::dclone($self->{Directives}->[$n]);
+    if ($#{ $self->{Directives} } >= $n) {
+	my $new_directives;
+	if ($self->{Directives}->[$n]) {
+	    require Storable;
+	    $new_directives = Storable::dclone($self->{Directives}->[$n]);
+	}
+	splice @{ $self->{Directives} }, $n+1, 0, $new_directives;
     }
-    splice @{ $self->{Directives} }, $n+1, 0, $new_directives;
 }
 
 sub multiple_split_line {
