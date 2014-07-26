@@ -1,0 +1,108 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2014 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+
+use Getopt::Long;
+
+use Strassen::Core qw();
+
+sub usage () {
+    die <<EOF;
+usage: $0 [-stats] [-o output.bbd] -lines lines.bbd -points points.bbd
+EOF
+}
+
+my $lines_file;
+my $points_file;
+my $output_file;
+my $show_stats;
+GetOptions(
+	   "lines=s" => \$lines_file,
+	   "points=s" => \$points_file,
+	   "o=s" => \$output_file,
+	   "stats!" => \$show_stats,
+	  )
+    or usage;
+
+my $lines = Strassen->new($lines_file);
+my $points = Strassen->new_stream($points_file);
+
+my @split_points;
+my @stats;
+
+$points->read_stream
+    (sub {
+	 my $r = shift;
+	 my $point = $r->[Strassen::COORDS]->[0];
+	 my $nearest = $lines->nearest_point($point, FullReturn => 1);
+	 if ($nearest) {
+	     push @split_points, { r => $r, point => $point, filepos => [$nearest->{N}, $nearest->{CoordIndex}] };
+	     push @stats, { point => $point, dist => $nearest->{Dist} };
+	 } else {
+	     push @stats, { point => $point, warning => "nothing found" };
+	 }
+     });
+
+@split_points = sort {
+    ($b->{filepos}->[0] <=> $a->{filepos}->[0]) || ($b->{filepos}->[1] <=> $a->{filepos}->[1]);
+} @split_points;
+
+for my $split_point (@split_points) {
+    my($n, $coord_index) = @{ $split_point->{filepos} };
+    $lines->split_line($n, $coord_index, insert_point => $split_point->{point});
+}
+
+if ($output_file) {
+    $lines->write($output_file);
+} else {
+    print $lines->as_string;
+}
+
+if ($show_stats) {
+    if (@stats) {
+	require Data::Dumper;
+	print STDERR Data::Dumper->new([@stats],[qw()])->Indent(1)->Useqq(1)->Dump;
+    }
+}
+
+__END__
+
+=head1 NAME
+
+bbd_splitlines_by_points - split a line-like bbd file using a waypoint-like bbd file
+
+=head1 SYNOPSIS
+
+    bbd_splitlines_by_points [-stats] [-o output.bbd] -lines lines.bbd -points points.bbd
+
+For GPX files:
+
+    gpx2bbd -wgs84 track.gpx > track.bbd
+    gpx2bbd -wgs84 wpts.gpx > wpts.bbd
+    bbd_splitlines_by_points -o splitted_tracks.bbd -lines track.bbd -points wpts.bbd
+    bbd2gpx splitted_tracks.bbd > splitted_tracks.gpx
+    # actually the last command creates a track with multiple trkseg elements
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<Strassen::Core>, L<Strassen::CoreHeavy>.
+
+=cut
