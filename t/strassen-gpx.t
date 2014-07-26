@@ -27,7 +27,7 @@ BEGIN {
     }
 }
 
-use BBBikeTest qw(gpxlint_string);
+use BBBikeTest qw(gpxlint_string eq_or_diff);
 
 use Route;
 
@@ -38,7 +38,7 @@ sub xpath_checks ($$&);
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 126 + $new_strassen_gpx_tests;
+my $tests_per_variant = 128 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -526,6 +526,36 @@ EOF
 			is scalar(@nodes), 1, 'exactly one rte/name node';
 			is $nodes[0]->textContent, 'overriding title', 'option has precedence over global directive';
 		    };
+	    }
+	}
+
+	{
+	    # preserve WGS84 coordinates
+	    my $gpx_string = <<'EOF';
+<gpx><trk><name>Testtrk</name><trkseg><trkpt lat="52.525729" lon="13.370012" /><trkpt lat="52.525748" lon="13.370018" /><trkpt lat="52.525770" lon="13.370019" /></trkseg></trk></gpx>
+EOF
+	    my $expected_bbd_string = <<'EOF';
+#: map: polar
+#:
+Testtrk	X 13.370012,52.525729 13.370018,52.525748 13.370019,52.525770
+EOF
+
+	    {
+		my $s = Strassen::GPX->new;
+		$s->set_global_directive(map => 'polar');
+		$s->gpxdata2bbd($gpx_string);
+		eq_or_diff $s->as_string, $expected_bbd_string, 'preserve WGS84 coordinates in gpxdata2bbd';
+	    }
+
+	    {
+		my($tmpfh,$tmpfile) = tempfile(SUFFIX => '_strassen.gpx', UNLINK => 1);
+		print $tmpfh $gpx_string;
+		close $tmpfh or die $!;
+
+		my $s = Strassen::GPX->new;
+		$s->set_global_directive(map => 'polar');
+		$s->gpx2bbd($tmpfile);
+		eq_or_diff $s->as_string, $expected_bbd_string, 'preserve WGS84 coordinates in gpx2bbd';
 	    }
 	}
     }

@@ -90,35 +90,61 @@ sub new {
 sub gpx2bbd {
     my($self, $file, %args) = @_;
 
+    my $latlong2xy = $self->_get_gpx2bbd_converter;
+
     $self->{File} = $file;
 
     if ($use_xml_module eq 'XML::LibXML') {
 	_require_XML_LibXML;
 	my $p = XML::LibXML->new;
 	my $doc = $p->parse_file($file);
-	$self->_gpx2bbd_libxml($doc, %args);
+	$self->_gpx2bbd_libxml($doc, latlong2xy => $latlong2xy, %args);
     } else {
 	_require_XML_Twig;
 	my $twig = XML::Twig->new;
 	$twig->parsefile($file);
-	$self->_gpx2bbd_twig($twig, %args);
+	$self->_gpx2bbd_twig($twig, latlong2xy => $latlong2xy, %args);
     }
 }
 
 sub gpxdata2bbd {
     my($self, $data, %args) = @_;
 
+    my $latlong2xy = $self->_get_gpx2bbd_converter;
+
     if ($use_xml_module eq 'XML::LibXML') {
 	_require_XML_LibXML;
 	my $p = XML::LibXML->new;
 	my $doc = $p->parse_string($data);
-	$self->_gpx2bbd_libxml($doc, %args);
+	$self->_gpx2bbd_libxml($doc, latlong2xy => $latlong2xy, %args);
     } else {
 	_require_XML_Twig;
 	my $twig = XML::Twig->new;
 	$twig->parse($data);
-	$self->_gpx2bbd_twig($twig, %args);
+	$self->_gpx2bbd_twig($twig, latlong2xy => $latlong2xy, %args);
     }
+}
+
+sub _get_gpx2bbd_converter {
+    my($self) = @_;
+
+    my $latlong2xy;
+    my $map = $self->get_global_directive("map");
+    if ($map && $map eq 'polar') {
+	if ($use_xml_module eq 'XML::LibXML') {
+	    $latlong2xy = \&latlong2longlat;
+	} else {
+	    $latlong2xy = \&latlong2longlat_twig;
+	}
+    } else {
+	if ($use_xml_module eq 'XML::LibXML') {
+	    $latlong2xy = \&latlong2xy;
+	} else {
+	    $latlong2xy = \&latlong2xy_twig;
+	}
+    }
+
+    $latlong2xy;
 }
 
 sub _gpx2bbd_libxml {
@@ -130,6 +156,7 @@ sub _gpx2bbd_libxml {
 	$def_cat = "X";
     }
     my $fallback_name = delete $args{fallbackname};
+    my $latlong2xy = delete $args{latlong2xy};
 
     my $get_name = sub {
 	my($node) = @_;
@@ -149,7 +176,7 @@ sub _gpx2bbd_libxml {
 
     for my $wpt ($root->childNodes) {
 	next if $wpt->nodeName ne "wpt";
-	my($x, $y) = latlong2xy($wpt);
+	my($x, $y) = $latlong2xy->($wpt);
 	my $name = $get_name->($wpt);
 	$self->push([$name, ["$x,$y"], $def_cat]);
     }
@@ -161,7 +188,7 @@ sub _gpx2bbd_libxml {
 		my @c;
 		for my $trkpt ($trk_child->childNodes) {
 		    next if $trkpt->nodeName ne 'trkpt';
-		    my($x, $y) = latlong2xy($trkpt);
+		    my($x, $y) = $latlong2xy->($trkpt);
 		    #my $ele = $wpt->findvalue(q{./ele});
 		    #my $time = $wpt->findvalue(q{./time});
 		    push @c, "$x,$y";
@@ -180,7 +207,7 @@ sub _gpx2bbd_libxml {
 	my @c;
 	for my $rte_child ($rte->childNodes) {
 	    if ($rte_child->nodeName eq 'rtept') {
-		my($x, $y) = latlong2xy($rte_child);
+		my($x, $y) = $latlong2xy->($rte_child);
 		push @c, "$x,$y";
 	    }
 	}
@@ -201,6 +228,7 @@ sub _gpx2bbd_twig {
 	$def_cat = "X";
     }
     my $fallback_name = delete $args{fallbackname};
+    my $latlong2xy = delete $args{latlong2xy};
 
     my $seen_name; # used to remember the <name> element while parsing
 
@@ -225,7 +253,7 @@ sub _gpx2bbd_twig {
 	if ($wpt_or_trk->name eq 'wpt') {
 	    my $wpt = $wpt_or_trk;
 	    undef $seen_name;
-	    my($x, $y) = latlong2xy_twig($wpt);
+	    my($x, $y) = $latlong2xy->($wpt);
 	    if (!defined $def_name) {
 		for my $name_node ($wpt->children) {
 		    next if $name_node->name ne "name";
@@ -245,7 +273,7 @@ sub _gpx2bbd_twig {
 		    my @c;
 		    for my $trkpt ($trk_child->children) {
 			next if $trkpt->name ne 'trkpt';
-			my($x, $y) = latlong2xy_twig($trkpt);
+			my($x, $y) = $latlong2xy->($trkpt);
 			push @c, "$x,$y";
 		    }
 		    if (@c) {
@@ -262,7 +290,7 @@ sub _gpx2bbd_twig {
 		if ($rte_child->name eq 'name' && !defined $def_name) {
 		    $seen_name = $rte_child->children_text;
 		} elsif ($rte_child->name eq 'rtept') {
-		    my($x, $y) = latlong2xy_twig($rte_child);
+		    my($x, $y) = $latlong2xy->($rte_child);
 		    push @c, "$x,$y";
 		}
 	    }
@@ -526,12 +554,26 @@ sub latlong2xy {
     ($x, $y);
 }
 
+sub latlong2longlat {
+    my($node) = @_;
+    my $lat = $node->getAttribute('lat');
+    my $lon = $node->getAttribute('lon');
+    ($lon, $lat);
+}
+
 sub latlong2xy_twig {
     my($node) = @_;
     my $lat = $node->att("lat");
     my $lon = $node->att("lon");
     my($x, $y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat));
     ($x, $y);
+}
+
+sub latlong2longlat_twig {
+    my($node) = @_;
+    my $lat = $node->att("lat");
+    my $lon = $node->att("lon");
+    ($lon, $lat);
 }
 
 sub xy2longlat {
