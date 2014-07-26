@@ -94,8 +94,7 @@ For GPX files:
     gpx2bbd -wgs84 track.gpx > track.bbd
     gpx2bbd -wgs84 wpts.gpx > wpts.bbd
     bbd_splitlines_by_points -o splitted_tracks.bbd -lines track.bbd -points wpts.bbd
-    bbd2gpx splitted_tracks.bbd > splitted_tracks.gpx
-    # actually the last command creates a track with multiple trkseg elements
+    bbd2gpx -as multi-tracks splitted_tracks.bbd > splitted_tracks.gpx
 
 =head1 AUTHOR
 
