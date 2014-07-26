@@ -381,10 +381,6 @@ sub _bbd2gpx_libxml {
 	}
     }
 
-    if (!defined $meta->{name} && @trkseg) {
-	$meta->{name} = make_name_from_trkseg(\@trkseg);
-    }
-
     my $dom = XML::LibXML::Document->new('1.0', 'utf-8');
     my $gpx = $dom->createElement("gpx");
     $dom->setDocumentElement($gpx);
@@ -424,16 +420,20 @@ sub _bbd2gpx_libxml {
 	    $wptxml->setAttribute("lon", $wpt->{coords}[0]);
 	    $wptxml->appendTextChild("name", $wpt->{name});
 	}
-	if (@trkseg) {
+	my $trkseg_counter = 1;
+	while (@trkseg) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
-	    _add_meta_attrs_libxml($trkxml, $meta);
-	    for my $trkseg (@trkseg) {
+	    my $name = _get_name_for_trk(\@trkseg, $trkseg_counter, $meta, $as);
+	    _add_meta_attrs_libxml($trkxml, {%$meta, name => $name});
+	    while (@trkseg) {
+		my $trkseg = shift @trkseg; $trkseg_counter++;
 		my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
 		for my $wpt (@{ $trkseg->{coords} }) {
 		    my $trkptxml = $trksegxml->addNewChild(undef, "trkpt");
 		    $trkptxml->setAttribute("lat", $wpt->[1]);
 		    $trkptxml->setAttribute("lon", $wpt->[0]);
 		}
+		last if $as eq 'multi-tracks';
 	    }
 	}
     }
@@ -473,7 +473,7 @@ sub _bbd2gpx_twig {
 	}
     }
 
-    if (!defined $meta->{name} && @trkseg) {
+    if (!defined $meta->{name} && @trkseg && $as ne 'multi-tracks') {
 	$meta->{name} = make_name_from_trkseg(\@trkseg);
     }
 
@@ -523,11 +523,14 @@ sub _bbd2gpx_twig {
 	    my $namexml = XML::Twig::Elt->new("name", {}, $wpt->{name});
 	    $namexml->paste(last_child => $wptxml);
 	}
-	if (@trkseg) {
+	my $trkseg_counter = 1;
+	while (@trkseg) {
 	    my $trkxml = XML::Twig::Elt->new("trk");
+	    my $name = _get_name_for_trk(\@trkseg, $trkseg_counter, $meta, $as);
+	    _add_meta_attrs_twig($trkxml, {%$meta, name => $name});
 	    $trkxml->paste(last_child => $gpx);
-	    _add_meta_attrs_twig($trkxml, $meta);
-	    for my $trkseg (@trkseg) {
+	    while (@trkseg) {
+		my $trkseg = shift @trkseg; $trkseg_counter++;
 		my $trksegxml = XML::Twig::Elt->new("trkseg");
 		$trksegxml->paste(last_child => $trkxml);
 		for my $wpt (@{ $trkseg->{coords} }) {
@@ -536,6 +539,7 @@ sub _bbd2gpx_twig {
 								});
 		    $trkptxml->paste(last_child => $trksegxml);
 		}
+		last if $as eq 'multi-tracks';
 	    }
 	}
     }
@@ -598,6 +602,22 @@ sub make_name_from_trkseg {
 	$name .= " - $name_to";
     }
     $name;
+}
+
+sub _get_name_for_trk {
+    my($trksegs, $trkseg_counter, $meta, $as) = @_;
+    return $meta->{name} if defined $meta->{name};
+    if ($as eq 'track') {
+	make_name_from_trkseg($trksegs);
+    } elsif ($as eq 'multi-tracks') {
+	my $name = $trksegs->[0]->{name};
+	if (!$name) {
+	    $name = "Track $trkseg_counter";
+	}
+	$name;
+    } else {
+	warn "Should not happen: as=$as";
+    }
 }
 
 sub _add_meta_attrs_libxml {
@@ -701,19 +721,42 @@ the C<-number> and C<-name> options, too.
 Set the value for the C<< <name> >> element in tracks and routes. This
 takes precedence over the definition in C<-meta>.
 
-If the name is not given, then the module uses the value of the global
-directive C<title>. If this is also not defined, then (at least for
-track files) a name will be constructed from names of the first and
-last bbd records, creating something like "Start - Goal".
+If the name is not given, then the module tries a number of fallbacks:
+
+=over
+
+=item * the value of the global directive C<title>
+
+=item * for track only: the name will be constructed from names of the
+first and last bbd records, creating something like "Start - Goal"
+
+=item * for multi-tracks only: the name will be constructed from 
+"Track " and a counter starting at 1
+
+=back
 
 =item C<< -number => ... >>
 
 Set the C<< <number> >> element; takes precedence over the C<-meta>
 definition.
 
-=item C<< -as => "route" >>
+=item C<< -as => 'track' >>
+
+If creating tracks, then create a single C<< <trk> >> element with
+possibly multiple C<< <trkseg> >> elements. This is the default.
+
+One-point records are not affected by this option and are created as
+C<< <wpt> >> elements.
+
+=item C<< -as => 'route' >>
 
 Instead of creating tracks, create routes.
+
+=item C<< -as => 'multi-tracks' >>
+
+Instead of creating one C<< <trk> >> with multiple C<< <trkseg> >>
+elements, create multiple C<< <trk> >> elements with one
+C<< <trkseg> >> element each.
 
 =item C<< -withtripext => $bool >>
 
