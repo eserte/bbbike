@@ -852,7 +852,7 @@ storable:
 
 .PHONY:	fragezeichen
 
-.PRECIOUS:	fragezeichen mount
+.PRECIOUS:	fragezeichen mount inaccessible_landstrassen inaccessible_strassen
 
 fragezeichen:	.create_fragezeichen
 	-@$(WRITEABLE) $@
