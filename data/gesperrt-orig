@@ -149,7 +149,7 @@ Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
-Scheelestr.	1 5740,1227 5697,1098 5556,984 5493,935 5424,882 5342,845
+Scheelestr.	1 5741,1231 5697,1098 5556,984 5488,943 5421,902 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
 An der Schillingbrücke	1 12025,11346 12061,11406
@@ -326,7 +326,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 (Drorystr. - Braunschweiger Str., Schulhof)	2 13518,7477 13601,7366
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
-#: last_checked: 2013-09-04
+#: last_checked: 2014-08-07
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875 6372,2856
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
@@ -1094,6 +1094,7 @@ Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
 Firlstr.	1 18643,6540 18645,6511
 Malchower Str.	1 12838,18155 12785,18128
+Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1645,7 +1646,8 @@ Michael-Brückner-Str.: Mittelstreifen	3nocross 17728,5756 17782,5698 17829,5648
 #: by: Thomas Pörs & srt:
 Rhinstr.: Straßenbahngleise	3nocross 17488,15766 17532,15645 17569,15561 17626,15433 17829,15015
 Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870,2737
-Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -756,2787 -726,2799 -567,2869 -512,2883 -391,2914
+#: note: in Höhe Niklasstr. kann man den Mittelstreifen zur Not überqueren (Bordsteine & Trampelpfad)
+Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -739,2793 -726,2799 -563,2862 -512,2883 -391,2914
 Potsdamer Chaussee: Mittelstreifen	3nocross -391,2914 -267,2945 -151,2975
 Potsdamer Chaussee: Mittelstreifen	3nocross -2280,2177 -2074,2258 -2023,2279
 Potsdamer Chaussee: Mittelstreifen	3nocross -2023,2279 -1959,2305 -1646,2434
@@ -1801,8 +1803,8 @@ tragen (2 Stufen)	0:5 -1550,3883
 tragen (4 Stufen)	0:10 -215,3787
 tragen (insgesamt 11 Stufen in zwei Absätzen)	0:20 -18,5083
 #: XXX_prog: Label verbessern, die doppelte Verwendung von "Stufen" vermeiden
-tragen, langgezogene Stufen (4 Stufen)	0:10 -1460,3487
-tragen, relativ steile Treppe (13 Stufen)	0:20 -1495,3509
+tragen, langgezogene Stufen (4 Stufen)	0:10 -1471,3495
+tragen, relativ steile Treppe (13 Stufen)	0:20 -1503,3514
 #: by: ^^^
 tragen (14 Stufen)	0:30 15133,5869
 #: by: Klaus Didrich:
@@ -1835,7 +1837,8 @@ tragen (43 Stufen)	0:35 16998,11861
 tragen (8 Stufen)	0:14 10286,11869
 tragen (14 Stufen)	0:25 -6972,1029
 # REMOVED (Rampe existiert mittlerweile) --- tragen (Treppe)	0:30 22057,4531
-tragen (ca. 40 Stufen)	0:30 -2396,3652
+#: note: oder "inoffizielle" Rampe zum Schieben benutzen
+tragen (ca. 30 Stufen)	0:30 -2397,3647
 tragen (36 Stufen)	0:30 -3189,3147
 tragen (6 Stufen)	0:15 -3176,3081
 tragen (drei Stufen)	0:10 -3368,2942
@@ -1912,7 +1915,7 @@ tragen (Spreetunnel, 50 Stufen)	0:60 25571,4553
 tragen (Brücke Tegeler Hafen, Fahrradschienen existieren)	0:30 1227,20281
 tragen (Brücke Tegeler Hafen, 4+10 Stufen, Fahrradschienen existieren)	0:30 1166,20330
 # REMOVED (hier ist keine Treppe) --- tragen? (Fußgängerbrücke)	0:120 19762,-160
-tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
+# REMOVED (Rampe existiert) --- tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
 tragen (23 Stufen)	0:25 13138,9897
 unter der S-Bahn-Brücke tragen (6 Stufen)	0:10 3726,18982
 unter der S-Bahn-Brücke tragen (5 Stufen)	0:10 3733,18997
@@ -2259,9 +2262,11 @@ Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 -5202,11342
 Drängelgitter (lichte Breite ca. 80cm)	BNP:4::trailer=no -5236,11204
 2x Drängelgitter	BNP:6::trailer=25 13189,2736
 Schranke (lichte Breite ca. 100cm)	BNP:2::trailer=5 20904,19284
+#: note: ausweichen über Gehweg (Bordsteine!)
 Schranke	BNP:4::trailer=10 11432,4054
 Schranke	BNP:4::trailer=10 11408,4190
 Schranke	BNP:4::trailer=10 11486,4321
+Schranke	BNP:4::trailer=10 11185,3985
 Schranke	BNP:4::trailer=10 15200,2754
 Pfosten (lichte Breite ca. 120cm)	BNP:0::trailer=5 18727,1040
 Pfosten (lichte Breite ca. 100cm)	BNP:0::trailer=5 21356,8267
@@ -2326,8 +2331,10 @@ Drängelgitter	BNP:5 4258,2693
 Drängelgitter	BNP:5 4202,2622
 #: by: ^^^
 #: by: Kerstin Klemann: vvv
-Drängelgitter, für Anhänger nicht passierbar	BNP:5::trailer=no 2009,3362
-Drängelgitter, für Anhänger nicht passierbar	BNP:5::trailer=no 1980,3409
+#: confirmed_by: srt (noch immer enge Drängelgitter)
+Drängelgitter (2x), für Anhänger nicht passierbar	BNP:10::trailer=no 2009,3362
+#: corrected_by: srt (Abstand der Drängelgitter etwas vergrößert)
+Drängelgitter (2x)	BNP:10::trailer=20 1980,3409
 #: by: ^^^
 Schwingtor	BNP:5::trailer=10 15054,10168
 Schwingtor	BNP:5::trailer=10 15097,10255
@@ -2678,7 +2685,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 # 
 #: next_check_id: FLORAGAERTEN-2014
-#: osm_watch: way id="201628184" version="3"
+#: osm_watch: way id="294423898" version="3"
 #: XXX siehe auch Eintrag in qualitaet_s-orig
 #: last_checked: 2014-05-21
 #: check_frequency: 90d
@@ -2740,8 +2747,8 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 # 
 # REMOVED (Straße ist nicht (mehr?) gesperrt) --- #: last_checked: 2012-06-08 --- #: next_check: 2013-03-01 --- Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8390,8879 8409,8904 8405,8994
 # 
-#: last_checked: 2013-09-04
-#: next_check: 2014-07-01
+#: last_checked: 2014-08-07
+#: check_frequency: 120d
 #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert?
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
@@ -2833,7 +2840,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
 # 
 #: osm_watch: way id="158025179" version="1"
-#: last_checked: 2014-07-09
+#: last_checked: 2014-08-06
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3138,7 +3145,7 @@ Drängelgitter	BNP:5 5975,821
 Drängelgitter	BNP:5 5954,819
 Drängelgitter	BNP:5 5875,807
 Drängelgitter	BNP:5 5860,805
-Drängelgitter	BNP:5 5682,767
+Drängelgitter	BNP:5 5684,773
 #: note ^^^
 Straßenbahn	3nocross 16837,17440 16947,17506 17159,17631
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650

@@ -30,6 +30,7 @@ Fußgängerampel auf der rechten Seite zum Überqueren der Torstr. benutzen	CP; 987
 Fußgängerampel auf der rechten Seite benutzen	CP; 9873,13872 9917,13741 10177,13766
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Warschauer Str. benutzen	CP; 13467,11778 13651,11731 13895,11663
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite benutzen	CP; 13467,11778 13651,11731 13696,11920
+Boxhagener Str. - Warschauer Str.: Fußgängerampel auf der linken Seite zum Überquerung der Warschauer Str. benutzen	CP; 14045,11965 13745,12118 13696,11920
 Neue Bahnhofstr./Boxhagener Str.: Fußgängerampel auf der linken Seite benutzen	CP; 14908,11231 14918,11249 14799,11330
 Neue Bahnhofstr./Boxhagener Str.: Fußgängerampel auf der linken Seite benutzen	CP; 14908,11231 14918,11249 15016,11431
 Rennbahnstr./Bernkasteler Str.: Fußgängerampel auf der linken Seite zum Überqueren der Berliner Allee benutzen	CP; 14528,16910 14558,16907 14673,16895
@@ -56,7 +57,7 @@ Wuhlewanderweg - Lindenstr.: zunächst linken Gehweg benutzen, an der Cardinalstr
 Mariendorfer Damm - Am Teltowkanal: bereits an der Ullsteinstr. auf den linken Gehweg wechseln	PI; 9207,5185 9196,5272 9171,5263
 hinter dem "Alten Zollhaus" halbrechts abbiegen	CP; 10313,10084 10168,10085 10158,10117 10069,10151
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14291,12220 14285,12190
-Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,11686 8225,11692 8335,11718 8438,11753 8489,11782 8571,11846
+Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,11686 8335,11718 8438,11753 8489,11782 8571,11846
 dem Schotterweg folgen	CP; 24210,37562 24193,37725 24208,37830
 Hauptstr.: bereits an der Gustav-Holzmann-Str. die Gehwegseite wechseln	PI; 16302,9865 16261,9925 16049,9749
 Hauptstr.: wegen Straßenbahntrasse zunächst auf der linken Gehwegseite weiterfahren und an der nächsten Ampel die Gehwegseite wechseln	CP; 16049,9749 16261,9925 16187,10033
@@ -292,7 +293,7 @@ Am Britzer Garten: Gehweg links der Fahrbahn benutzen	CP2; 11153,3728 11130,3838
 An der südlichen Landebahn den oberen Weg benutzen	CP2; 11593,7314 11554,7382
 An der südlichen Landebahn den unteren Weg benutzen	CP2; 11593,7314 11543,7369
 Columbiadamm - Flughafen Tempelhof: unter Umständen schon an der Fußgängerampel die Straßenseite wechseln	PI; 10796,8498 10691,8532 10644,8363
-Potsdamer Chaussee - Hohentwielsteig: bereits an der Fürstenstr. die Straßenseite wechseln	PI; -391,2914 -512,2883 -567,2869 -479,2715
+Potsdamer Chaussee - Hohentwielsteig: bereits an der Fürstenstr. die Straßenseite wechseln	PI; -391,2914 -512,2883 -563,2862 -479,2715
 Ausgeschildert als Waldenburger Str.	CP2; 22905,10488 22783,10548
 Ausgeschildert als Striegauer Str.	CP2; 22783,10548 22905,10488
 Pudagla: Empfohlene Verkehrsführung für Radfahrer	CS 52129,174507 52064,174635 52263,174673 52407,174744

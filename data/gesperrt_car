@@ -51,7 +51,7 @@ Holtei von N - Boxhagener	3 14710,11626 14639,11512 14752,11369
 Boxhagener von E - Holtei	3 14752,11369 14639,11512 14575,11407
 Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5900,11913
 Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11512 5352,11502 5587,11397
-Fasanenstr.	1 5198,10234 5196,10398
+Fasanenstr.	1 5192,10234 5196,10398
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
 Naumannstr. N - H	3 7707,8915 7709,8777 7713,8600
 zum Mariannenplatz	2 11950,11157 11921,11185
@@ -1183,9 +1183,9 @@ Mittelstreifen	3nocross::ignrte 2346,7684 2460,7658 2576,7634
 Hundekehlestr. -> Sulzaer Str.: Mittelstreifen	3::igndisp 2346,7684 2460,7658 2499,7930
 Sulzaer Str. -> Hundekehlestr.: Mittelstreifen	3::igndisp 2499,7930 2460,7658 2576,7634
 Lietzenburger Str.	3nocross::ignrte 5047,10381 5196,10398 5329,10422
-Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5329,10422 5196,10398 5198,10234
+Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5329,10422 5196,10398 5192,10234
 Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5329,10422
-Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5198,10234
+Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5192,10234
 Straßenbahntrasse	3nocross::ignrte 12228,14404 12188,14350 12177,14335 12077,14186
 Greifswalder Str. -> Pasteurstr.: Straßenbahntrasse	3::igndisp 12228,14404 12188,14350 12335,14246
 Pasteurstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12335,14246 12188,14350 12177,14335
@@ -1692,3 +1692,4 @@ Poller	3 27810,987 27775,1016 27568,1188
 Marzahner Chaussee [Wohngebiet] nur für Anlieger	2:Anlieger 18417,11854 18500,11847 18580,11874
 Alberichstr.: Barriere	3 20932,8956 20936,9156 20937,9229
 Alberichstr.: Barriere	3 20937,9229 20936,9156 20932,8956
+Koppelweg - Britzer Damm	3 12288,4378 12547,4391 12731,4841

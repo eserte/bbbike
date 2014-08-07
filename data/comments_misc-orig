@@ -135,7 +135,7 @@ Bordstein	CP 12054,12903 11983,12949 11921,12990
 Bordstein	CP2; 12483,12682 12594,12866
 #: XXX_prog ^^^
 Wilhelmstr.: Fahrbahn vor der britischen Botschaft für Autos gesperrt, passierbar für Radfahrer	CS 8861,12125 8804,12280
-Am Petersberg: Privatstraße	CS 990,5581 825,5420
+# REMOVED --- Am Petersberg: Privatstraße	CS 948,5597 820,5455
 (Weg in Kolonie Bodenreform): entlang des Teltowkanals	CS 20939,2413 20810,2398
 (Weg in Kolonie Bodenreform): entlang des Teltowkanals	CS 20810,2398 20510,2321 20490,2276 20234,2254 20128,2271
 #: note: (URL existiert nicht mehr) http://www.stadtentwicklung.berlin.de/verkehr/radverkehr/infrastruktur/de/seperater_weg01.shtml
@@ -163,12 +163,12 @@ Seefelder Str.: Schranken, für Radler gut passierbar	CS 17341,16136 17344,16081
 (Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6762,1226 6702,1197 6700,1184
 (Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6409,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6578,1595 6554,1564 6539,1476 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
-(Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5514,580 5571,614 5671,637 5615,735 5576,800 5584,808 5571,864 5540,919
+(Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5514,580 5571,614 5671,637 5632,755 5587,816 5571,864 5540,919
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5578,936 5540,919 5358,822
-(Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5533,663 5485,751 5499,771 5539,773 5590,719 5593,679 5575,660 5533,663
+(Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5533,663 5485,751 5503,783 5531,779 5590,719 5593,679 5575,660 5533,663
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5571,614 5533,663
-(Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5539,773 5576,800
-(Hildburghauser Str. - Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5682,767 5675,764 5615,735 5590,719
+(Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5531,779 5587,816
+(Hildburghauser Str. - Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5632,755 5590,719
 #: by: ^^^
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html
 (Parkweg Schloßpark Lichterfelde): Radfahren erlaubt	CS 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4910,3599
@@ -401,7 +401,7 @@ Bus 118	busroute_N 971,3534 923,3585 891,3828 892,3907 861,3996 806,4130 754,422
 Bus 285	busroute_N 922,4910 928,4996 938,5088 966,5151 1004,5194 1090,5268 1114,5290 1139,5308 1212,5353
 Bus M19, Bus 186	busroute_N 1074,8470 1043,8550 972,8626 941,8680 930,8746 912,8895 936,8933 901,8969 884,8954 870,8939 912,8895
 Bus 349	busroute_N 676,9104 693,9129 890,9399 1019,9573 1117,9706 1238,9869 1344,10012 1457,10168
-Bus 284, Bus 380	busroute_N 5317,2345 5406,2110 5376,2097 5431,1956 5452,1940 5396,1774 5338,1612 5304,1523 5275,1446 5223,1318 5201,1227 5178,1123 5162,1110 5162,1110 5162,1098 5187,1059 5204,1057 5204,1057
+Bus 284, Bus 380	busroute_N 5317,2345 5406,2110 5376,2097 5431,1956 5452,1940 5396,1774 5335,1616 5299,1524 5273,1456 5223,1318 5201,1227 5178,1123 5162,1110 5162,1110 5162,1098 5187,1059 5204,1057 5204,1057
 Bus 284, Bus 380	busroute_N 5204,1057 5204,1057 5212,1074 5190,1114 5178,1123
 Bus 284, Bus 380	busroute_N 5452,1940 5474,1940 5491,1955 5489,1981 5434,2122 5406,2110
 Bus 284	busroute_N 5204,1057 5342,845 5358,822 5514,580 5584,475 5486,461 5448,455 5061,409 4948,562
@@ -693,7 +693,7 @@ Killisch-von-Horn-Weg: Privatstraße	CS 9590,18082 9707,17941 9730,17927
 ausgeschildert als "Zum Finkenweg"	CP2; 9239,4980 9360,4996
 (Privatstraße am Karl-Fischer-Weg): Privatstraße	CS 7202,5016 7180,4913
 Carl-Ludwig-Schleich-Promenade: nicht ausgeschildert	CP2; 2315,8431 2316,8469
-Carl-Ludwig-Schleich-Promenade: nicht ausgeschildert	CP2; 2279,8638 2317,8616
+Carl-Ludwig-Schleich-Promenade: nicht ausgeschildert	CP2; 2273,8640 2317,8616
 Carl-Ludwig-Schleich-Promenade: nicht ausgeschildert	CP2; 2361,8608 2317,8616
 ausgeschildert als "Heinz-Graffunder-Park"	CP2; 20068,13036 19868,13131
 #: XXX_prog -> BS
@@ -1055,3 +1055,5 @@ Hundsfelder Str.: östliche Fahrbahn	CS 21688,-589 21700,-537 21792,-428 21898,-3
 Massower Str.: Privatstraße	CS 17879,11378 17970,11391 17979,11358
 Lückstr.: am Nöldnerplatz entlang	CS 16049,10844 15903,10906 15870,10938
 ausgeschildert Gaststätte Waldesgrund	CP2; 15642,5468 15711,5756
+ausgeschildert Richtung Britzer Garten	CP2; 10846,3147 10840,3048
+links am Eingang des Britzer Gartens vorbei	CP2; 10775,2765 10799,2839

@@ -1252,7 +1252,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8489,11782 8438,11753 8335,11718
-userdel	2 8335,11718 8225,11692
+userdel	2 8335,11718
 EOF
      },
      { from  => 1092520800, # 2004-08-15 00:00
@@ -7245,7 +7245,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004793',
        data  => <<EOF,
-userdel	q4::inwork 5414,1304 5585,1275 5740,1227
+userdel	q4::inwork 5414,1304 5585,1275 5741,1231
 EOF
      },
      { from  => 1172646005, # 2007-02-28 08:00
@@ -8859,7 +8859,7 @@ EOF
        source_id => 'IM_005827',
        data  => <<EOF,
 userdel	2::inwork 297,6541 441,6435
-userdel	2::inwork 1514,5163 1443,5193 1385,5214 1333,5246 1212,5353 1086,5491 1051,5525 990,5581 910,5654 894,5829 884,5974 869,6085 736,6217
+userdel	2::inwork 1514,5163 1443,5193 1385,5214 1333,5246 1212,5353 1067,5486 1022,5525 948,5597 910,5654 894,5829 884,5974 869,6085 736,6217
 userdel	2::inwork 486,6404 605,6345
 userdel	2::inwork -130,6694 218,6571
 EOF
@@ -17160,7 +17160,7 @@ EOF
        text  => 'Baumaßnahmen in der Parkanlage am Schlachtensee, teilweise ist der Uferweg gesperrt (bis zum Frühjahr 2010)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -2521,3637 -2396,3666 -2174,3718 -2014,3826 -1980,3872 -1974,3933 -1996,4063 -1944,4140 -1706,3971 -1624,3956 -1558,3965 -1468,3995 -1380,4108
+userdel	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
      { from  => $isodate2epoch->("2013-12-12 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
@@ -20070,7 +20070,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20111030.0735.361648.html',
        data  => <<EOF,
-userdel	2::inwork -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228
+userdel	2::inwork -1239,4436 -1197,4454 -1163,4532 -1162,4656 -1147,4705 -1146,4741 -1048,4893 -1017,4966 -753,5074 -666,5152 -618,5235 -578,5245
 EOF
      },
      { from  => 1321138800, # 2011-11-13 00:00
@@ -21259,7 +21259,8 @@ EOF
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2014-06-02
+#: last_checked: 2014-08-07
+#: check_frequency: 100d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
      },
@@ -21405,11 +21406,11 @@ userdel	2::temp 14011,10812 13896,10851
 userdel	2::temp 13886,10939 13856,10864
 EOF
      },
-     { from  => 1377864000, # 2013-08-30 14:00
-       until => 1377986399, # 2013-08-31 23:59
+     { from  => $isodate2epoch->("2014-07-04 13:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-07-05 23:59:59"), 
        text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am Samstag, 31. August 2013, ab 14:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 31, months => 8]],
+       recurrences => [['yearly', days => 1, months => 7]], # kann Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
@@ -21595,7 +21596,7 @@ userdel	2::temp 8132,11910 8167,11865
 userdel	2::temp 8595,12066 8577,11896 8632,11912 8783,11959 8901,12008 9063,12051
 userdel	2::temp 8210,11775 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245 8600,12165 8595,12066 8737,12098 8783,11959 8813,11825
 userdel	2::temp 8122,12147 8215,12156 8221,11885 8221,11876 8167,11865 8140,11850
-userdel	2::temp 8210,11775 8203,11686 8225,11692 8335,11718 8387,11637 8442,11555 8542,11502 8596,11508 8740,11524 9058,11564 9000,11727 8969,11814 8825,11773 8813,11825 8567,11799
+userdel	2::temp 8210,11775 8203,11686 8335,11718 8387,11637 8442,11555 8542,11502 8596,11508 8740,11524 9058,11564 9000,11727 8969,11814 8825,11773 8813,11825 8567,11799
 userdel	2::temp 8538,12245 8546,12279
 userdel	2::temp 9016,12416 9007,12499
 userdel	2::temp 8825,11773 8837,11676 8743,11663 8553,11638
@@ -21626,7 +21627,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork 13301,8606 13314,8624 13366,8694
-	q4::inwork 13314,8624 13218,8693
+	q4::inwork 13314,8624 13227,8692
 EOF
      },
      { from  => $isodate2epoch->("2014-07-04 00:00:00"), # 1 Tag Vorlauf
@@ -21800,11 +21801,11 @@ EOF
 userdel	2::temp 5047,10381 5076,10658
 EOF
      },
-     { from  => 1403739104, # 1376193600, # 2013-08-11 06:00
-       until => $isodate2epoch->("2014-07-01 06:00:00"), # 1387555200, # 2013-12-20 17:00
-       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt (auch für Radfahrer und Fußgänger), bis 1. Juli 2014',
+     { from  => 1407357333, # 1403739104, # 1376193600, # 2013-08-11 06:00
+       until => $isodate2epoch->("2014-08-22 04:00:00"), # 1387555200, # 2013-12-20 17:00
+       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, bis 22. August 2014',
        type  => 'gesperrt',
-       source_id => 'IM_020145',
+       source_id => 'IM_022504',
        data  => <<EOF,
 userdel	2::inwork 17736,5441 17886,5587
 EOF
@@ -22671,13 +22672,12 @@ userdel	q3::inwork; 13555,15596 13459,15653
 EOF
      },
      { from  => 1396047600, # 2014-03-29 00:00
-       until => $isodate2epoch->("2014-08-08 17:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
-       text  => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Masurenstr. und Dolomitenstr Baustelle, Fahrtrichtung gesperrt, 31.03.2014 07 bis Anfang August 2014 ',
+       until => $isodate2epoch->("2014-09-19 16:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
+       text  => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Maximilianstr. und Florastr. Baustelle, Fahrtrichtung gesperrt, bis Mitte September 2014',
        type  => 'handicap',
-       source_id => 'IM_021583',
+       source_id => 'IM_022477',
        data  => <<EOF,
-#: source_id: 2147338481
-userdel	q4::inwork; 10670,17458 10647,17501 10572,17573
+userdel	q4::inwork; 10774,17277 10706,17391 10690,17420 10670,17458 10647,17501 10572,17573 10510,17649 10459,17754
 EOF
      },
      { from  => 1391682540, # 2014-02-06 11:29
@@ -22724,7 +22724,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-07-15
+#: last_checked: 2014-08-07
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 EOF
@@ -22906,8 +22906,8 @@ userdel	q4::inwork 3741,12607 3597,12681 3454,12717
 EOF
      },
      { from  => 1402738904, # 2014-06-14 11:41
-       until => 1414537200, # 2014-10-29 00:00
-       text  => 'B198: Neubau Brücke über die Sernitz, OD Greiffenberg, Durchfahrt gesperrt, 14.10.2013 bis 28.10.2014\'',
+       until => 1407439132, # 1414537200, # 2014-10-29 00:00
+       text  => 'B198: Neubau Brücke über die Sernitz, OD Greiffenberg, Durchfahrt gesperrt, 14.10.2013 bis 28.10.2014',
        type  => 'gesperrt',
        source_id => 'LS/721-E/13/083',
        data  => <<EOF,
@@ -22964,12 +22964,13 @@ userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22436,-168
 EOF
      },
      { from  => 1406844000, # 2014-08-01 00:00
-       until => $isodate2epoch->("2014-08-23 23:59:59"),
-       text  => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 23.08.2014',
+       until => $isodate2epoch->("2014-08-15 08:00:00"), # was $isodate2epoch->("2014-08-23 23:59:59"),
+       text  => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 15.08.2014',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.140733.php
+#: source_id: IM_022482
 userdel	q4::inwork; 17614,6571 17766,6616
 EOF
      },
@@ -23025,16 +23026,19 @@ userdel	2::temp 18670,6132 18766,6067 18859,6198
 userdel	2::temp 18574,6401 18676,6333
 EOF
      },
-     { from  => 1406051254, # $isodate2epoch->("2014-07-20 00:00:00"),
-       until => 1406051254, # undef,
-       text  => "Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Einbahnstraße offen Richtung Süden, ab 21. Juli 2014",
+     { from  => $isodate2epoch->("2014-08-05 00:00:00"),
+       until => $isodate2epoch->("2015-12-31 23:59:59"), # 1406051254, # undef,
+       text  => "Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Einbahnstraße offen Richtung Norden, ab 5. August 2014",
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html',
        data  => <<EOF,
-#: XXX wie sehen die Einschränkungen tatsächlich aus?
-#: next_check: 2014-08-21
+#: XXX Richtung Süden kann man noch die Karl-Marx-Str. benutzen, aber die Markierungen zum Aufbrechen der Fahrbahn existieren schon
+#: XXX sollte sich die Lage stabilisieren -> in handicap_s übertragen!
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzögerung)
-	q4::inwork; 13015,7471 12992,7545 12991,7549 12969,7610 12914,7785
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html
+#: source_id: IM_022515
+#: last_checked: 2014-08-07
+	q4::inwork; 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471
 EOF
      },
      { from  => $isodate2epoch->("2014-07-20 06:30:00"),
@@ -23096,6 +23100,78 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.149073.php',
        data  => <<EOF,
 userdel	q4::inwork 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,6503
+EOF
+     },
+     { from  => 1407354971, # 2014-08-06 21:56
+       until => 1414796400, # 2014-11-01 00:00
+       text  => 'Heiligengrabe: B189: Ausbau der Ortsdurchfahrt OD Heiligengrabe, Vollsperrung, 08.07.2013 bis 31.10.2014 ',
+       type  => 'gesperrt',
+       source_id => 'LS/723-K/13/046',
+       data  => <<EOF,
+userdel	2::inwork -62215,80737 -61590,80895
+EOF
+     },
+     { from  => 1408996606, # 2014-08-25 21:56
+       until => 1420066800, # 2015-01-01 00:00
+       text  => 'Lauchhammer: L60: Sanierungsarbeiten Schipkau - Lauchhammer ab 25.08.2014 Vollsperrung, Gesamtbaumaßnahme 03.07.2014 bis 31.12.2014 ',
+       type  => 'gesperrt',
+       source_id => '146600440',
+       data  => <<EOF,
+userdel	2::inwork 45536,-99326 45006,-99332
+EOF
+     },
+     { from  => 1407355179, # 2014-08-06 21:59
+       until => 1414796400, # 2014-11-01 00:00
+       text  => 'Sonnewalde: L703: Instandsetzung von 2 Bauwerken mit Deckenerneuerung zw. Peterhof - Brenitz Brückeniinstandsetzung, Vollsperrung, 07.04.2014 bis 31.10.2014 ',
+       type  => 'gesperrt',
+       source_id => 'LS/722-C/14/092',
+       data  => <<EOF,
+userdel	2::inwork 27137,-78816 27037,-78176
+EOF
+     },
+     { from  => 1407967200, # 2014-08-14 00:00
+       until => 1408312800, # 2014-08-18 00:00
+       text  => 'Uebigau-Wahrenbrück: L60: Brückenneubau Brücke über die Schwarze Elster bei München: Vollsperrung 15.08.2014 - 17.08.2014 ',
+       type  => 'gesperrt',
+       source_id => 'LS/722-C/14/091',
+       data  => <<EOF,
+userdel	2::inwork 6199,-89072 6681,-88922
+EOF
+     },
+     { from  => 1407214800, # 2014-08-05 07:00
+       until => 1407439156, # 1407589200, # 2014-08-09 15:00
+       text  => 'Baumschulenstr. (Treptow): Baustelle auf der Baumschulenbrücke, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, eine Baustellenampel regelt den Verkehr, 06.08.2014 07:00 Uhr bis 09.08.2014 15:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_022526',
+       data  => <<EOF,
+userdel	q4::inwork 15628,6009 15584,5946
+EOF
+     },
+     { from  => 1407155580, # 2014-08-04 14:33
+       until => 1408111200, # 2014-08-15 16:00
+       text  => 'Nikolskoer Weg (Wannsee): Vollsperrung, 05.08.2014 14:33 Uhr bis 15.08.2014 16:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_022529',
+       data  => <<EOF,
+userdel	2::inwork -9085,1347 -9252,1244 -9333,1124 -9443,1035 -9500,827 -9412,546
+EOF
+     },
+     { from  => 1407357280, # 2014-08-06 22:34
+       until => 1425682800, # 2015-03-07 00:00
+       text  => 'Spremberg: B156: Brücke über die kleine Spree - Ersatzneubau OD Spremberg, Muskauer Straße, Brücke über kleiner Spree Vollsperrung, 04.08.2014 bis 06.03.2015 ',
+       type  => 'gesperrt',
+       source_id => 'LS/722-C/14/213',
+       data  => <<EOF,
+userdel	2::inwork 79043,-91754 79397,-92080
+EOF
+     },
+     { from  => 1407438000, # 2014-08-07 21:00
+       until => 1407650400, # 2014-08-10 08:00
+       text  => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung, Straße gesperrt, ab 08.08.2014 21 Uhr bis 10.08.2014 morgens ',
+       type  => 'gesperrt',
+       source_id => 'IM_022534',
+       data  => <<EOF,
+userdel	2::temp 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
 EOF
      },
     );

@@ -993,10 +993,18 @@ Tor an der Hiddenseestr.	culdesac 10967,17671
 	culdesac 9410,21535
 	culdesac 9298,21455
 	culdesac 9275,21441
+	culdesac -797,3039
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo -802,2914
+	culdesac_pseudo 1882,1376
+	culdesac_pseudo 1975,1413
+	culdesac_pseudo 2065,3286
+	culdesac_pseudo -2103,3536
+	culdesac_pseudo 541,5306
+	culdesac_pseudo 5725,11644
 	culdesac 21507,5620
 	culdesac_pseudo 10421,20313
 	culdesac_pseudo 11069,17562

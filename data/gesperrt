@@ -124,7 +124,7 @@ Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
-Scheelestr.	1 5740,1227 5697,1098 5556,984 5493,935 5424,882 5342,845
+Scheelestr.	1 5741,1231 5697,1098 5556,984 5488,943 5421,902 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
 An der Schillingbrücke	1 12025,11346 12061,11406
@@ -800,6 +800,7 @@ Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 189
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 Firlstr.	1 18643,6540 18645,6511
 Malchower Str.	1 12838,18155 12785,18128
+Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1954,12 +1955,12 @@ Potsdamer Chaussee -> Gilgestr.: Mittelstreifen	3::igndisp -1249,2590 -1085,2653
 Gilgestr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -1100,2697 -1085,2653 -984,2692
 Potsdamer Chaussee -> Kaunstr.: Mittelstreifen	3::igndisp -1085,2653 -984,2692 -999,2726
 Kaunstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -999,2726 -984,2692 -870,2737
-Mittelstreifen	3nocross::ignrte -870,2737 -756,2787 -726,2799 -567,2869 -512,2883 -391,2914
-Potsdamer Chaussee -> Niklasstr.: Mittelstreifen	3::igndisp -870,2737 -756,2787 -791,2819
-Niklasstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -791,2819 -756,2787 -726,2799
-Potsdamer Chaussee -> Zum Oertzenweg: Mittelstreifen	3::igndisp -567,2869 -726,2799 -692,2705
-Zum Oertzenweg -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -692,2705 -726,2799 -756,2787
-Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -567,2869 -726,2799
+Mittelstreifen	3nocross::ignrte -870,2737 -739,2793 -726,2799 -563,2862 -512,2883 -391,2914
+Potsdamer Chaussee -> Niklasstr.: Mittelstreifen	3::igndisp -870,2737 -739,2793 -783,2837
+Niklasstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -783,2837 -739,2793 -726,2799
+Potsdamer Chaussee -> Zum Oertzenweg: Mittelstreifen	3::igndisp -563,2862 -726,2799 -692,2705
+Zum Oertzenweg -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -692,2705 -726,2799 -739,2793
+Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -563,2862 -726,2799
 Mittelstreifen	3nocross::ignrte -391,2914 -267,2945 -151,2975
 Potsdamer Str. -> Werderstr.: Mittelstreifen	3::igndisp -391,2914 -267,2945 -309,3016
 Werderstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp -309,3016 -267,2945 -151,2975
@@ -2179,8 +2180,8 @@ tragen (64 Stufen)	0:100:-158 -1720,3940
 tragen (2 Stufen)	0:5:-204 -1550,3883
 tragen (4 Stufen)	0:10:49 -215,3787
 tragen (insgesamt 11 Stufen in zwei Absätzen)	0:20:-183 -18,5083
-tragen, langgezogene Stufen (4 Stufen)	0:10:-58 -1460,3487
-tragen, relativ steile Treppe (13 Stufen)	0:20:-58 -1495,3509
+tragen, langgezogene Stufen (4 Stufen)	0:10:-57 -1471,3495
+tragen, relativ steile Treppe (13 Stufen)	0:20:-58 -1503,3514
 tragen (14 Stufen)	0:30:82 15133,5869
 tragen (2 x 14 Stufen) oder Aufzug	0:30:-249 4158,461
 tragen (19 Stufen)	0:25:78 11479,7746
@@ -2205,7 +2206,7 @@ tragen (ca. 30 Stufen)	0:35:-221 19932,61
 tragen (43 Stufen)	0:35:-231 16998,11861
 tragen (8 Stufen)	0:14:-35 10286,11869
 tragen (14 Stufen)	0:25:-197 -6972,1029
-tragen (ca. 40 Stufen)	0:30:-147 -2396,3652
+tragen (ca. 30 Stufen)	0:30:-175 -2397,3647
 tragen (36 Stufen)	0:30:-2 -3189,3147
 tragen (6 Stufen)	0:15:-18 -3176,3081
 tragen (drei Stufen)	0:10:57 -3368,2942
@@ -2264,7 +2265,6 @@ tragen (Spreetunnel, ca. 50 Stufen)	0:60:21 25658,4619
 tragen (Spreetunnel, 50 Stufen)	0:60:52 25571,4553
 tragen (Brücke Tegeler Hafen, Fahrradschienen existieren)	0:30:-256 1227,20281
 tragen (Brücke Tegeler Hafen, 4+10 Stufen, Fahrradschienen existieren)	0:30:-231 1166,20330
-tragen (Stufen), mit MTB befahrbar	0:30:-69 5725,11644
 tragen (23 Stufen)	0:25:16 13138,9897
 unter der S-Bahn-Brücke tragen (6 Stufen)	0:10:-180 3726,18982
 unter der S-Bahn-Brücke tragen (5 Stufen)	0:10:-154 3733,18997
@@ -2535,6 +2535,7 @@ Schranke (lichte Breite ca. 100cm)	BNP:2:-72:trailer=5 20904,19284
 Schranke	BNP:4:-102:trailer=10 11432,4054
 Schranke	BNP:4:-41:trailer=10 11408,4190
 Schranke	BNP:4:-187:trailer=10 11486,4321
+Schranke	BNP:4:-102:trailer=10 11185,3985
 Schranke	BNP:4:-220:trailer=10 15200,2754
 Pfosten (lichte Breite ca. 120cm)	BNP:0:-69:trailer=5 18727,1040
 Pfosten (lichte Breite ca. 100cm)	BNP:0:-147:trailer=5 21356,8267
@@ -2581,8 +2582,8 @@ Tor	BNP:3:-133:trailer=5 14425,8114
 Schranke	BNP:0:-63:trailer=3 9920,11074
 Drängelgitter	BNP:5:-164 4258,2693
 Drängelgitter	BNP:5:-123 4202,2622
-Drängelgitter, für Anhänger nicht passierbar	BNP:5:-206:trailer=no 2009,3362
-Drängelgitter, für Anhänger nicht passierbar	BNP:5:-211:trailer=no 1980,3409
+Drängelgitter (2x), für Anhänger nicht passierbar	BNP:10:-206:trailer=no 2009,3362
+Drängelgitter (2x)	BNP:10:-211:trailer=20 1980,3409
 Schwingtor	BNP:5:-153:trailer=10 15054,10168
 Schwingtor	BNP:5:-153:trailer=10 15097,10255
 Schwingtor	BNP:5:0:trailer=10 7352,8390
@@ -3118,7 +3119,7 @@ Drängelgitter	BNP:5:90 5975,821
 Drängelgitter	BNP:5:78 5954,819
 Drängelgitter	BNP:5:81 5875,807
 Drängelgitter	BNP:5:74 5860,805
-Drängelgitter	BNP:5:62 5682,767
+Drängelgitter	BNP:5:66 5684,773
 Straßenbahn	3nocross::ignrte 16837,17440 16947,17506 17159,17631
 Falkenberger Chaussee -> Rüdickenstr.: Straßenbahn	3::igndisp 17159,17631 16947,17506 16992,17472
 Rüdickenstr. -> Falkenberger Chaussee: Straßenbahn	3::igndisp 16992,17472 16947,17506 16837,17440

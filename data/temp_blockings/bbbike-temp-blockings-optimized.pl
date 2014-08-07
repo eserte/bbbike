@@ -2372,7 +2372,7 @@ userdel	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,1565
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2631,31 +2631,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.bierfestival-berlin.de/landkarte.html
-userdel	2::temp 12360,12505 12362,12540 12364,12589
-userdel	2::temp 12891,12549 12869,12425
-userdel	2::temp 12635,12629 12596,12472
-userdel	2::temp 13448,12340 13484,12436
-userdel	2::temp 13552,12435 13543,12326
-#zukünftig, wenn dieser Weg eingetragen ist: userdel	2::temp 13163,12382 13176,12500
-',
-         'periodic' => 1,
-         'until' => 1407110400,
-         'from' => 1406793600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (1.8.2014 bis 3.8.2014)',
-         'type' => 'gesperrt',
-         'id' => 2262
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3049,7 +3025,8 @@ userdel	q3::inwork 15279,10862 15144,10905
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2014-06-02
+#: last_checked: 2014-08-07
+#: check_frequency: 100d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
          'type' => 'handicap'
@@ -3187,7 +3164,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_022504',
+         'until' => 1408672800,
+         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, bis 22. August 2014',
+         'from' => 1407357333,
+         'id' => 2469,
+         'data' => 'userdel	2::inwork 17736,5441 17886,5587
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3301,17 +3287,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140618.0830.397974.html',
-         'until' => 1406843999,
-         'text' => 'Rudolf-Rühl-Allee: Fahrbahninstandsetzung zwischen Köpenicker Straße und An der Wuhlheide, Vollsperrung, vom 17. Juli 2014 Uhr bis 31. Juli 2014',
-         'from' => 1405461600,
-         'id' => 2528,
-         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.145619.php
-userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3331,16 +3307,7 @@ userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5
        undef,
        undef,
        undef,
-       {
-         'source_id' => '146000678',
-         'until' => 1406584799,
-         'text' => 'Niederfinow: Kabelarbeiten im Fahrbahnbereich OD Niederfinow, Hebewerkstraße Vollsperrung, 21.07.2014 bis 28.07.2014',
-         'from' => 1405807200,
-         'id' => 2539,
-         'data' => 'userdel	2::inwork 46132,49993 46390,50091
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1530395999,
          'text' => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2018',
@@ -3421,13 +3388,12 @@ userdel	q3::inwork; 13555,15596 13459,15653
          'type' => 'handicap'
        },
        {
-         'source_id' => 'IM_021583',
-         'until' => 1407510000,
-         'text' => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Masurenstr. und Dolomitenstr Baustelle, Fahrtrichtung gesperrt, 31.03.2014 07 bis Anfang August 2014 ',
+         'source_id' => 'IM_022477',
+         'until' => 1411135200,
+         'text' => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Maximilianstr. und Florastr. Baustelle, Fahrtrichtung gesperrt, bis Mitte September 2014',
          'from' => 1396047600,
          'id' => 2558,
-         'data' => '#: source_id: 2147338481
-userdel	q4::inwork; 10670,17458 10647,17501 10572,17573
+         'data' => 'userdel	q4::inwork; 10774,17277 10706,17391 10690,17420 10670,17458 10647,17501 10572,17573 10510,17649 10459,17754
 ',
          'type' => 'handicap'
        },
@@ -3452,7 +3418,7 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
          'from' => undef,
          'id' => 2563,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-07-15
+#: last_checked: 2014-08-07
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
@@ -3509,16 +3475,7 @@ userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/721-E/13/083',
-         'until' => 1414537200,
-         'text' => 'B198: Neubau Brücke über die Sernitz, OD Greiffenberg, Durchfahrt gesperrt, 14.10.2013 bis 28.10.2014\'',
-         'from' => 1402738904,
-         'id' => 2581,
-         'data' => 'userdel	2::inwork 46564,76483 46704,75833
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Hanstedter Weg: Bauarbeiten, Fahrbahn gesperrt',
@@ -3544,23 +3501,15 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        },
        undef,
        undef,
+       undef,
        {
          'source_id' => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
-         'until' => 1406930400,
-         'text' => 'Dahmestraße zwischen Schulzendorfer Straße und Kablower Weg: Einbahnstraße Richtung Kablower Weg, Baumaßnahme Berliner Wasserbetriebe, 30.06.2014 bis 01.08.2014',
-         'from' => 1404079200,
-         'id' => 2586,
-         'data' => 'userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22436,-168
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
-         'until' => 1408831199,
-         'text' => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 23.08.2014',
+         'until' => 1408082400,
+         'text' => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 15.08.2014',
          'from' => 1406844000,
          'id' => 2587,
          'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.140733.php
+#: source_id: IM_022482
 userdel	q4::inwork; 17614,6571 17766,6616
 ',
          'type' => 'handicap'
@@ -3578,7 +3527,22 @@ userdel	q4::inwork; 17614,6571 17766,6616
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html',
+         'until' => 1451602799,
+         'text' => 'Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Einbahnstraße offen Richtung Norden, ab 5. August 2014',
+         'from' => 1407189600,
+         'id' => 2593,
+         'data' => '#: XXX Richtung Süden kann man noch die Karl-Marx-Str. benutzen, aber die Markierungen zum Aufbrechen der Fahrbahn existieren schon
+#: XXX sollte sich die Lage stabilisieren -> in handicap_s übertragen!
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzögerung)
+#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html
+#: source_id: IM_022515
+#: last_checked: 2014-08-07
+	q4::inwork; 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148335.php',
          'until' => 1407686400,
@@ -3644,6 +3608,77 @@ userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
          'data' => 'userdel	q4::inwork 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,6503
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/723-K/13/046',
+         'until' => 1414796400,
+         'text' => 'Heiligengrabe: B189: Ausbau der Ortsdurchfahrt OD Heiligengrabe, Vollsperrung, 08.07.2013 bis 31.10.2014 ',
+         'from' => 1407354971,
+         'id' => 2599,
+         'data' => 'userdel	2::inwork -62215,80737 -61590,80895
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '146600440',
+         'until' => 1420066800,
+         'text' => 'Lauchhammer: L60: Sanierungsarbeiten Schipkau - Lauchhammer ab 25.08.2014 Vollsperrung, Gesamtbaumaßnahme 03.07.2014 bis 31.12.2014 ',
+         'from' => 1408996606,
+         'id' => 2600,
+         'data' => 'userdel	2::inwork 45536,-99326 45006,-99332
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/722-C/14/092',
+         'until' => 1414796400,
+         'text' => 'Sonnewalde: L703: Instandsetzung von 2 Bauwerken mit Deckenerneuerung zw. Peterhof - Brenitz Brückeniinstandsetzung, Vollsperrung, 07.04.2014 bis 31.10.2014 ',
+         'from' => 1407355179,
+         'id' => 2601,
+         'data' => 'userdel	2::inwork 27137,-78816 27037,-78176
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/722-C/14/091',
+         'until' => 1408312800,
+         'text' => 'Uebigau-Wahrenbrück: L60: Brückenneubau Brücke über die Schwarze Elster bei München: Vollsperrung 15.08.2014 - 17.08.2014 ',
+         'from' => 1407967200,
+         'id' => 2602,
+         'data' => 'userdel	2::inwork 6199,-89072 6681,-88922
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_022529',
+         'until' => 1408111200,
+         'text' => 'Nikolskoer Weg (Wannsee): Vollsperrung, 05.08.2014 14:33 Uhr bis 15.08.2014 16:00 Uhr ',
+         'from' => 1407155580,
+         'id' => 2604,
+         'data' => 'userdel	2::inwork -9085,1347 -9252,1244 -9333,1124 -9443,1035 -9500,827 -9412,546
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/722-C/14/213',
+         'until' => 1425682800,
+         'text' => 'Spremberg: B156: Brücke über die kleine Spree - Ersatzneubau OD Spremberg, Muskauer Straße, Brücke über kleiner Spree Vollsperrung, 04.08.2014 bis 06.03.2015 ',
+         'from' => 1407357280,
+         'id' => 2605,
+         'data' => 'userdel	2::inwork 79043,-91754 79397,-92080
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_022534',
+         'until' => 1407650400,
+         'text' => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung, Straße gesperrt, ab 08.08.2014 21 Uhr bis 10.08.2014 morgens ',
+         'from' => 1407438000,
+         'id' => 2606,
+         'data' => 'userdel	2::temp 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
+',
+         'type' => 'gesperrt'
        }
      
 );
