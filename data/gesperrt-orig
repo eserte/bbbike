@@ -1401,6 +1401,8 @@ Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,1673
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16568,7009
 Schnellerstr.: Mittelstreifen	3nocross 17290,6228 17216,6308 16843,6712
 Stendaler Str.: Straﬂenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 23952,15086
+#: note: einige Meter nˆrdlich der Henny-Porten-Str. existiert eine Fuﬂg‰ngerfurt
+Stendaler Str.: Straﬂenbahntrasse	3nocross 23933,15209 23952,15086 23960,15021
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20944,14840 20980,14914 21163,15289
 Attilastr.: Mittelstreifen	3nocross 7410,4373 7450,4397 7482,4416
@@ -1706,6 +1708,7 @@ Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
 Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
 Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21592 10111,21661
 Rosenthaler Weg: Straﬂenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
+Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -2019,6 +2022,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+Dr‰ngelgitter	BNP:3::trailer=10 22848,14460
 Dr‰ngelgitter	BNP:3::trailer=10 23582,49940
 Dr‰ngelgitter	BNP:3::trailer=10 23659,49954
 Schranke	BNP:15::trailer=30 27066,55455
@@ -2137,7 +2141,7 @@ Schranke	BNP:5::trailer=10 10919,9804
 Dr‰ngelgitter, kann umfahren werden	BNP:3::trailer=10 14969,10138
 #: note: ˆfters mal offen? (mindestens einmal im Herbst 2012 geschlossen, am 2012-12-18 offen, am 2013-05-08 geschlossen, am 2013-06-07 offen)
 Schwingtor	BNP:3::trailer=10 14146,12921
-#: note: am 2013-08-15 war das Tor offen, am 2013-08-21 gegen 10 Uhr ebenso, am 2013-09-14 mittags geschlossen
+#: note: am 2013-08-15 war das Tor offen, am 2013-08-21 gegen 10 Uhr ebenso, am 2013-09-14 mittags geschlossen, am 2014-08-08 mittags offen
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schwingtor	BNP:5::trailer=10 17684,13133
 Schranke	BNP:3::trailer=10 8623,13049
@@ -2634,7 +2638,7 @@ Groﬂe Hamburger Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3 10077,13100 10018,13
 # 
 # REMOVED (realisiert) --- #: next_check_id: GLEISDREIECKBUELOW-2014 --- #: last_checked: 2014-02-28 --- #: next_check: 2014-03-14 --- Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,10098 7928,10094 8011,10085 8013,10055
 # 
-#: last_checked: 2014-06-04
+#: last_checked: 2014-08-08
 #: check_frequency: 60d
 Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17366,12357
 # 

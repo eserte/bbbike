@@ -2179,7 +2179,7 @@ Bergerstr. (Eberswalde): Asphalt	Q0 37731,48228 37525,48270 37418,48290 37128,48
 (Glumestr. - Marmorpalais): Parkweg	Q1 -12332,585 -12276,554
 (Glumestr. - Marmorpalais): Asphalt	Q1 -12276,554 -12115,409
 Kopfsteinpflaster mit asphaltierten Randstreifen	Q0 29436,69960 29092,69954 28795,69970 28214,70120 27727,70536
-Mühlenstr.: Asphalt	Q0 25507,7428 25770,7325
+Mühlenstr.: Asphalt	Q0 25507,7428 25766,7319
 Waldstr.: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 29192,7368 29261,7346 29324,7326 29457,7137 29675,7021
 Waldstr.: Radweg mit Verbundsteinpflaster, Fahrbahn schlechtes Kopfsteinpflaster	Q1; 29675,7021 29812,6996 29938,6993 30180,6942 30324,6911
 Waldstr.: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3; 30324,6911 30180,6942 29938,6993 29812,6996 29675,7021
@@ -2425,7 +2425,7 @@ Rüsternallee (Waldesruh): Kopfsteinpflaster	Q2 24813,8594 24857,8567 24905,8533
 Schoppenhauerstr.: Kopfsteinpflaster	Q2 24905,8533 24974,8486 25048,8432 25119,8379 25212,8313
 Schoppenhauerstr.: Waldweg	Q2 25212,8313 25293,8256
 Schoppenhauerstr.: Verbundsteinpflaster	Q1 25293,8256 25336,8226 25350,8216
-Karl-Marx-Str. (Waldesruh): Kopfsteinpflaster	Q2 24836,8145 24849,8242 24870,8342 24905,8533
+Karl-Marx-Str. (Waldesruh): Kopfsteinpflaster	Q2 24836,8145 24848,8237 24870,8342 24905,8533
 Karl-Marx-Str. (Waldesruh): Asphalt	Q0 24905,8533 24958,8641 25064,8793 25114,8870 25169,8935 25214,8986 25280,9031
 Fichtestr.: Kopfsteinpflaster	Q2 24870,8342 24974,8486
 Fichtestr.: Asphalt	Q0 24974,8486 25147,8731
@@ -2846,8 +2846,8 @@ Blumberger Weg (Seeberg): Kopfsteinpflaster	Q2 29537,16344 29528,16384 29485,164
 Erpestr. (Ravenstein): unbefestigte Straße	Q2 25493,7434 25499,7616
 Robinienweg (Waldesruh): Asphalt	Q0 25235,9068 25276,9120 25366,9156 25727,9175 25822,9163
 Stichstr. (Waldesruh): Kopfsteinpflaster	Q2 25014,8038 25069,7996
-Waldstr. (Waldesruh): Asphalt	Q0 24736,8093 24768,8087 24797,8248
-Waldstr. (Waldesruh): unbefestigte, holprige Straße	Q2 24797,8248 24857,8567 25065,8899 25211,9085
+Waldstr. (Waldesruh): Asphalt	Q0 24736,8093 24768,8087 24796,8245
+Waldstr. (Waldesruh): unbefestigte, holprige Straße	Q2 24796,8245 24857,8567 25065,8899 25211,9085
 Eichenstr. (Waldesruh): unbefestigte, holprige Straße	Q2 25211,9085 25327,9252 25385,9334 25450,9434 25521,9526
 Ahornstr. (Waldesruh): Asphalt	Q0 25327,9252 25534,9237 25656,9249 25828,9259
 Buchenstr. (Waldesruh): unbefestigte Straße	Q2 25344,9364 25385,9334 25515,9253
@@ -3144,6 +3144,7 @@ Dorfstr. (Polßen): Kopfsteinpflaster	Q2 48116,85298 48019,85286 47506,85086 4712
 Melzow - Meichow: Asphalt	Q0 43567,87443 44323,87544
 Melzow - Meichow: Asphalt	Q0 48195,87137 48310,87199
 Frauenhagen Siedlung: Plattenweg	Q2 53607,74880 53411,74673 53289,74769 53216,74961 53227,75035
+Roedernstr. (Waldesruh): Asphalt	Q0 25084,8136 25159,8083
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144
@@ -4032,9 +4033,9 @@ Hubertushöhe - Schafbrücke	Q3 50967,-19437 50960,-19456 50985,-19506 51092,-1954
 Hubertushöhe - Schafbrücke	Q2 51092,-19548 51221,-19873
 Hubertushöhe - Storkow	Q0 49223,-18292 49090,-18279 48968,-18131 48887,-18098 48923,-17976 48825,-17821 48935,-17573 48501,-17248
 Am Vogelherd (Waldesruh, Dahlwitz-Hoppegarten): sandiger Waldweg	Q3 25228,7462 25192,7631
-Am Vogelherd (Waldesruh, Dahlwitz-Hoppegarten): Waldweg	Q2 25192,7631 25175,7953
+Am Vogelherd (Waldesruh, Dahlwitz-Hoppegarten): Waldweg	Q2 25192,7631 25171,7827 25175,7953
 Heinrich-Heine-Promenade (Waldesruh): Beton	Q0 25175,7953 25115,8033 25047,8086
-Heinrich-Heine-Promenade (Waldesruh): glatt asphaltiert	Q0 25047,8086 24953,8152 24885,8208 24849,8242 24797,8248 24753,8251
+Heinrich-Heine-Promenade (Waldesruh): glatt asphaltiert	Q0 25047,8086 24953,8152 24885,8208 24848,8237 24796,8245 24753,8251
 Mühlenstr.: Kopfsteinpflaster	Q2 25507,7428 25493,7434 25437,7460 25417,7457
 Mühlenstr.: Asphalt	Q0 25417,7457 25262,7433
 Stadtheide: guter Asphalt	Q0 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122

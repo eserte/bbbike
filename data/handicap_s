@@ -150,7 +150,7 @@ Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 1545
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
 Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10240,15318 10192,15465 10185,15487 10130,15647
-(Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21429,12393 21346,12427 21265,12468 21221,12484
+(Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
 (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14798,10985 14787,10972 14764,10877 14794,10844
 (Ringbahnsteig Ostkreuz): Fuﬂg‰nger	q4 14794,10844 14839,10853 14862,10942 14845,10954
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9892,9286 9880,9233
@@ -442,8 +442,9 @@ S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20116,16303
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Dˆblin-Str.): Fuﬂg‰nger, Bordsteine	q2 20116,16303 20198,16322
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fuﬂg‰nger	q1 20286,16494 20547,16485 20865,16440 21102,16415
 (Kinderbad Platsch - Max-Herrmann-Str.): Fuﬂg‰nger	q1 21102,16415 21177,16499 21238,16627
+(oberer Wuhlewanderweg - Alte Hellersdorfer Str.): einige Fuﬂg‰nger	q1 22851,14603 22876,14594 23057,14582
 Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
-Wuhlewanderweg: Fuﬂg‰nger	q1 22441,15118 22573,15043 22741,14761 22806,14631 22836,14520 22843,14452 22827,14356 22839,14149 22825,14109 22607,13890 22516,13799 22359,13599 22295,13530
+Wuhlewanderweg: Fuﬂg‰nger	q1 22441,15118 22573,15043 22741,14761 22806,14631 22836,14520 22843,14452 22827,14356 22839,14149 22825,14109 22607,13890 22562,13855 22462,13726 22447,13690 22359,13599 22295,13530
 Wuhlewanderweg: enge Unterf¸hrung	q3 22359,13599 22259,13508
 Wuhlewanderweg: Fuﬂg‰nger	q1 22295,13530 22259,13508 22191,13414 22221,13027 22196,12961 22036,12367 21998,12204
 Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
@@ -1295,7 +1296,7 @@ Am Schwanenberg: einige Fuﬂg‰nger	q1 15752,9385 15793,9334
 (Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fuﬂg‰nger	q1 17842,6639 17852,6589 17826,6495
 Straﬂe 77: Bordstein	q1 15320,12375 15408,12394
 Wuhlebr¸cken: Fuﬂg‰nger	q2 22843,14452 22839,14453 22819,14457 22788,14468 22743,14488 22670,14520
-(oberer Wuhlewanderweg - unterer Wuhlewanderweg): Fuﬂg‰nger	q2 22873,14502 22843,14452
+(oberer Wuhlewanderweg - unterer Wuhlewanderweg): Fuﬂg‰nger	q2 22873,14502 22848,14460 22843,14452
 Bootshausweg: einige Fuﬂg‰nger	q1 -1017,16184 -960,16396 -972,16553 -1016,16585 -1033,16621 -1067,16635
 Bootshausweg: einige Fuﬂg‰nger	q1 -1016,16585 -1058,16611 -1096,16597
 (Rauchstr. - Sigmund-Bergmann-Str.): einige Fuﬂg‰nger	q1 -2414,16975 -2371,16776
@@ -1393,6 +1394,8 @@ zur M¸ller-Breslau-Str.: flache Rampe	q2 5756,11618 5725,11644
 Urselweg: flache Bordsteinkante	q1 -802,2914 -775,2854 -783,2837
 (Hampstedtstr. - Schneckenbr¸cke): einige Fuﬂg‰nger	q1 1641,2914 1642,2937 1575,3054 1557,3086 1682,3168 1689,3189 1755,3229 1802,3235
 Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
+(Warener Str. - Unfallkrankenhaus Berlin): Krankenhausgel‰nde, Fuﬂg‰nger	q4 21388,12785 21401,12773 21520,12741
+(Altentreptower Str. - Unfallkrankenhaus Berlin): Fuﬂg‰nger	q1 21400,12135 21401,12155 21403,12230 21435,12390 21477,12584 21489,12608 21520,12741
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -2342,3 +2345,5 @@ Bornholmer Str., linker Gehweg	q3::igndisp; 10118,16561 10197,16528
 Platz der Vereinten Nationen, linker Gehweg	q3::igndisp; 11952,13095 11962,13089 11984,13081
 Reinickendorfer Str., linker Gehweg	q3::igndisp; 7975,15484 7962,15533 7966,15571
 Bismarckstr., linke Seite	q0::igndisp; 6000,4846 6027,4896 6055,4950
+Altentreptower Str., linker Gehweg	q3::igndisp; 21199,12258 21276,12241 21294,12167 21310,12150 21401,12155
+Altentreptower Str., linker Gehweg	q2::igndisp; 21401,12155 21573,12140

@@ -1143,6 +1143,13 @@ Stendaler Str. -> Jerichower Str.: Straßenbahntrasse	3::igndisp 23895,15450 2391
 Jerichower Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23960,15340 23913,15333 23933,15209
 Stendaler Str. -> Arneburger Str.: Straßenbahntrasse	3::igndisp 23913,15333 23933,15209 23978,15215
 Arneburger Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23978,15215 23933,15209 23952,15086
+Straßenbahntrasse	3nocross::ignrte 23933,15209 23952,15086 23960,15021
+Stendaler Str. -> Henny-Porten-Str.: Straßenbahntrasse	3::igndisp 23960,15021 23952,15086 23833,15066
+Stendaler Str. -> Quedlinburger Str.: Straßenbahntrasse	3::igndisp 23933,15209 23952,15086 24009,15094
+Quedlinburger Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 24009,15094 23952,15086 23960,15021
+Quedlinburger Str. -> Henny-Porten-Str.: Straßenbahntrasse	3::igndisp 24009,15094 23952,15086 23833,15066
+Henny-Porten-Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23833,15066 23952,15086 23933,15209
+Henny-Porten-Str. -> Quedlinburger Str.: Straßenbahntrasse	3::igndisp 23833,15066 23952,15086 24009,15094
 Straßenbahntrasse	3nocross::ignrte 20474,14442 20611,14445 20657,14446 20727,14467
 Allee der Kosmonauten -> Fichtelbergstr.: Straßenbahntrasse	3::igndisp 20474,14442 20611,14445 20609,14480
 Fichtelbergstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20609,14480 20611,14445 20657,14446
@@ -2087,7 +2094,7 @@ zur Albrechtstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5920,4976 6006,4852 
 Stadtpark Steglitz, Brückenstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 6000,4846 6006,4852 6034,4893
 Stadtpark Steglitz, Brückenstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6000,4846 6006,4852 5920,4976
 Mittelstreifen, parkende Autos	3nocross::ignrte 4909,7436 4874,7382 4836,7327
-Südwestkorso -> Liane-Berkowitz-Pl.: Mittelstreifen, parkende Autos	3::igndisp 4909,7436 4874,7382 4874,7326
+Südwestkorso -> Rheingaustr.: Mittelstreifen, parkende Autos	3::igndisp 4909,7436 4874,7382 4874,7326
 Rheingaustr. -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4874,7326 4874,7382 4836,7327
 Mittelstreifen, parkende Autos	3nocross::ignrte 4125,6763 4206,6820 4237,6840
 Südwestkorso -> Gustav-Rickelt-Weg: Mittelstreifen, parkende Autos	3::igndisp 4237,6840 4206,6820 4223,6796
@@ -2106,6 +2113,9 @@ Marmorweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10284,21649 10114,21592 101
 Straßenbahntrasse	3nocross::ignrte 11693,22482 11812,22523 11940,22587
 Rosenthaler Weg -> Krugpfuhlweg: Straßenbahntrasse	3::igndisp 11693,22482 11812,22523 11178,22999
 Krugpfuhlweg -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11178,22999 11812,22523 11940,22587
+Mittelstreifen	3nocross::ignrte 21307,12132 21400,12135 21573,12140
+Altentreptower Str. -> Unfallkrankenhaus Berlin: Mittelstreifen	3::igndisp 21307,12132 21400,12135 21401,12155
+Unfallkrankenhaus Berlin -> Altentreptower Str.: Mittelstreifen	3::igndisp 21401,12155 21400,12135 21573,12140
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2329,6 +2339,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:30:trailer=10 22848,14460
 Drängelgitter	BNP:3:-99:trailer=10 23582,49940
 Drängelgitter	BNP:3:-100:trailer=10 23659,49954
 Schranke	BNP:15:-105:trailer=30 27066,55455
@@ -3319,3 +3330,5 @@ Bornholmer Str., linker Gehweg	1::igndisp 10197,16528 10118,16561
 Platz der Vereinten Nationen, linker Gehweg	1::igndisp 11984,13081 11962,13089 11952,13095
 Reinickendorfer Str., linker Gehweg	1::igndisp 7966,15571 7962,15533 7975,15484
 Bismarckstr., linke Seite	1::igndisp 6055,4950 6027,4896 6000,4846
+Altentreptower Str., linker Gehweg	1::igndisp 21401,12155 21310,12150 21294,12167 21276,12241 21199,12258
+Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155

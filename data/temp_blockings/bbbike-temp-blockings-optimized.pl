@@ -2759,12 +2759,13 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        {
          'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
          'until' => 1407707999,
-         'text' => 'Oberspreestr., Sperrung des Bahnübergangs, Fußgänger können passieren, vom 14. Juli bis 10. August 2014',
+         'text' => 'Oberspreestr., Sperrung des Bahnübergangs, Fußgänger können passieren, Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, vom 14. Juli bis 10. August 2014',
          'from' => 1405202400,
          'id' => 2344,
          'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
 #: source_id: IM_022364
-userdel	q4::inwork 19328,5304 19405,5284 19445,5271
+userdel	q3::inwork 19328,5304 19405,5284 19445,5271
+userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20437,5463 20781,5242
 ',
          'type' => 'handicap'
        },
@@ -2997,17 +2998,18 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        {
          'source_id' => 'IM_022268',
          'until' => 1411401600,
-         'text' => 'Karlshorster Str. und Marktstr. bis Schreiberhauer Str.: Fahrbahn gesperrt, langsame Umfahrung über Gehweg möglich, 30.06.2014 bis 22.09.2014',
+         'text' => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis 22.09.2014',
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-07-14 vvv
+#: last_checked: 2014-08-08 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
 #: source_id: 2147338462
-userdel	q4::inwork 15261,10738 15272,10790 15279,10862
-userdel	q3::inwork 15279,10862 15144,10905
+userdel	q4::inwork 15261,10738 15272,10790
+# REMOVED --- userdel	q4::inwork 15272,10790 15279,10862
+# REMOVED --- userdel	q3::inwork 15279,10862 15144,10905
 #: last_checked ^^^
 ',
          'type' => 'handicap'
@@ -3211,7 +3213,27 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_020277',
+         'data' => 'userdel	2::temp 8606,16973 8677,17154
+userdel	2::temp 8503,16716 8583,16914
+',
+         'periodic' => 1,
+         'until' => 1410019200,
+         'from' => 1409918400,
+         'text' => 'Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 06.09.2014 von 14 bis 18 Uhr',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              5,
+                              'months',
+                              9
+                            ]
+                          ],
+         'id' => 2485,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3545,8 +3567,8 @@ userdel	q4::inwork; 17614,6571 17766,6616
        },
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148335.php',
-         'until' => 1407686400,
-         'text' => 'Elsenstr. und Bouchéstr.: Einbahnstraßenregelung zwischen Am Treptower Park und Karl-Kunger-Str., vom 21.07.2014 bis zum 10.08.2013',
+         'until' => 1407772800,
+         'text' => 'Elsenstr. und Bouchéstr.: Einbahnstraßenregelung zwischen Am Treptower Park und Karl-Kunger-Str., vom 21.07.2014 bis zum 11.08.2013',
          'from' => 1405830600,
          'id' => 2594,
          'data' => '#: source_id: IM_022405
@@ -3672,11 +3694,31 @@ userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
        },
        {
          'source_id' => 'IM_022534',
-         'until' => 1407650400,
-         'text' => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung, Straße gesperrt, ab 08.08.2014 21 Uhr bis 10.08.2014 morgens ',
-         'from' => 1407438000,
-         'id' => 2606,
          'data' => 'userdel	2::temp 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
+',
+         'periodic' => 1,
+         'until' => 1407650400,
+         'from' => 1407438000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              8
+                            ]
+                          ],
+         'text' => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung (Hanfparade), Straße gesperrt, ab 08.08.2014 21 Uhr bis 10.08.2014 morgens ',
+         'id' => 2606,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LS/721-E/14/067',
+         'until' => 1409695200,
+         'text' => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 02.09.2014 ',
+         'from' => 1407650400,
+         'id' => 2607,
+         'data' => 'userdel	2::inwork 33953,23796 34266,22939
 ',
          'type' => 'gesperrt'
        }

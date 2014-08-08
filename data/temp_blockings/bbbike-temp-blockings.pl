@@ -2468,7 +2468,7 @@ EOF
        text  => 'Hönower Str. (Mahlsdorf) in Richtung Alt-Mahlsdorf zwischen Wilhelmsmühlenweg und Alt-Mahlsdorf Baustelle, Fahrtrichtung gesperrt (bis 12.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 24623,11684 24591,11587 24603,11450 24624,11374 24654,11265
+userdel	q4; 24623,11684 24591,11587 24583,11537 24624,11374 24654,11265
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
@@ -20465,13 +20465,14 @@ EOF
      },
      { from  => $isodate2epoch->("2014-07-13 00:00:00"), # 1339099200, # 2012-06-07 22:00
        until => $isodate2epoch->("2014-08-10 23:59:59"), # 1339437600, # 2012-06-11 20:00
-       text  => 'Oberspreestr., Sperrung des Bahnübergangs, Fußgänger können passieren, vom 14. Juli bis 10. August 2014',
+       text  => 'Oberspreestr., Sperrung des Bahnübergangs, Fußgänger können passieren, Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, vom 14. Juli bis 10. August 2014',
        type  => 'handicap',
        source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
 #: source_id: IM_022364
-userdel	q4::inwork 19328,5304 19405,5284 19445,5271
+userdel	q3::inwork 19328,5304 19405,5284 19445,5271
+userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20437,5463 20781,5242
 EOF
      },
      { from  => 1351726607, # undef
@@ -21187,18 +21188,19 @@ EOF
      },
      { from  => $isodate2epoch->("2014-06-29 00:00:00"), # ein Tag Vorlauf
        until => $isodate2epoch->("2014-09-22 18:00:00"),
-       text  => 'Karlshorster Str. und Marktstr. bis Schreiberhauer Str.: Fahrbahn gesperrt, langsame Umfahrung über Gehweg möglich, 30.06.2014 bis 22.09.2014',
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis 22.09.2014',
        type  => 'handicap',
        source_id => 'IM_022268',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-07-14 vvv
+#: last_checked: 2014-08-08 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
 #: source_id: 2147338462
-userdel	q4::inwork 15261,10738 15272,10790 15279,10862
-userdel	q3::inwork 15279,10862 15144,10905
+userdel	q4::inwork 15261,10738 15272,10790
+# REMOVED --- userdel	q4::inwork 15272,10790 15279,10862
+# REMOVED --- userdel	q3::inwork 15279,10862 15144,10905
 #: last_checked ^^^
 EOF
      },
@@ -21368,7 +21370,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_114312',
        data  => <<EOF,
-userdel	q4::inwork; 25552,4829 25720,4832 25802,4823 25948,4823 26086,4861 26237,4922 26340,4942 26500,4936
+userdel	q4::inwork; 25552,4829 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936
 EOF
      },
      { from  => undef, # 
@@ -21954,12 +21956,12 @@ EOF
 userdel	q4::inwork; 14235,17103 14341,17030 14528,16910
 EOF
      },
-     { from  => 1378454400, # 2013-09-06 10:00
-       until => 1378576800, # 2013-09-07 20:00
-       text  => 'Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 07.09.2013 von 14 bis 18 Uhr',
+     { from  => $isodate2epoch->("2014-09-05 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-09-06 18:00:00"),
+       text  => 'Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 06.09.2014 von 14 bis 18 Uhr',
        type  => 'gesperrt',
        periodic => 1,
-       recurrences => [['yearly', days => 7, months => 9]],
+       recurrences => [['yearly', days => 5, months => 9]],
        source_id => 'IM_020277',
        data  => <<EOF,
 userdel	2::temp 8606,16973 8677,17154
@@ -23042,8 +23044,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2014-07-20 06:30:00"),
-       until => $isodate2epoch->("2014-08-10 18:00:00"),
-       text  => 'Elsenstr. und Bouchéstr.: Einbahnstraßenregelung zwischen Am Treptower Park und Karl-Kunger-Str., vom 21.07.2014 bis zum 10.08.2013',
+       until => $isodate2epoch->("2014-08-11 18:00:00"),
+       text  => 'Elsenstr. und Bouchéstr.: Einbahnstraßenregelung zwischen Am Treptower Park und Karl-Kunger-Str., vom 21.07.2014 bis zum 11.08.2013',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148335.php',
        data  => <<EOF,
@@ -23167,11 +23169,22 @@ EOF
      },
      { from  => 1407438000, # 2014-08-07 21:00
        until => 1407650400, # 2014-08-10 08:00
-       text  => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung, Straße gesperrt, ab 08.08.2014 21 Uhr bis 10.08.2014 morgens ',
+       periodic => 1,
+       recurrences => [["yearly", days => 1, months => 8]], # Termin meist Anfang August, wechselnde Orte
+       text  => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung (Hanfparade), Straße gesperrt, ab 08.08.2014 21 Uhr bis 10.08.2014 morgens ',
        type  => 'gesperrt',
        source_id => 'IM_022534',
        data  => <<EOF,
 userdel	2::temp 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
+EOF
+     },
+     { from  => 1407650400, # 2014-08-10 08:00
+       until => 1409695200, # 2014-09-03 00:00
+       text  => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 02.09.2014 ',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/14/067',
+       data  => <<EOF,
+userdel	2::inwork 33953,23796 34266,22939
 EOF
      },
     );
