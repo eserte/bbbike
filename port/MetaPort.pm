@@ -1,15 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: MetaPort.pm,v 1.8 2005/12/17 00:33:53 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2000,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: srezic@cpan.org
+# WWW:  http://bbbike.sourceforge.net
 #
 
 use strict;
@@ -26,9 +25,9 @@ use vars qw($bbbike_base $bbbike_archiv
 	    $bbbike_archiv_dir $bbbike_archiv_path);
 use vars qw($bbbike_comment $bbbike_descr);
 
-Getopt::Long::Configure('pass_through');
+Getopt::Long::Configure('pass_through', 'no_auto_abbrev');
 GetOptions('version=s' => \$bbbike_version);
-Getopt::Long::Configure('no_pass_through');
+Getopt::Long::Configure('no_pass_through', 'auto_abbrev');
 
 $tmpdir          = $ENV{TMPDIR} || "/tmp";
 $bbbike_dir      = "$FindBin::RealBin/../..";
