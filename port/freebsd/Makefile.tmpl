@@ -8,12 +8,13 @@ CATEGORIES=	german
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	@EMAIL@
-COMMENT=	A route-finder for cyclists in Berlin and Brandenburg
+COMMENT=	Route-finder for cyclists in Berlin and Brandenburg
 
 BUILD_DEPENDS=	p5-Inline>=0:${PORTSDIR}/devel/p5-Inline \
 		p5-CDB_File>=0:${PORTSDIR}/databases/p5-CDB_File
 RUN_DEPENDS=	p5-Tk>=0:${PORTSDIR}/x11-toolkits/p5-Tk \
-		${BUILD_DEPENDS}
+		p5-Inline>=0:${PORTSDIR}/devel/p5-Inline \
+		p5-CDB_File>=0:${PORTSDIR}/databases/p5-CDB_File
 
 USES=		perl5
 POD2MAN=	pod2man
