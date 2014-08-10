@@ -1379,7 +1379,7 @@ check-disabled:
 	@touch $@
 
 .check_plaetze1: plaetze .strassen.tmp landstrassen
-	$(CHECK_POINTS) plaetze .strassen.tmp landstrassen
+	$(CHECK_POINTS) -assert-single-coordinate plaetze .strassen.tmp landstrassen
 	@touch $@
 
 .check_plaetze2: ${PERSISTENTTMPDIR}/non-faked-plaetze add_plaetze
@@ -1403,7 +1403,7 @@ check-disabled:
 	@touch $@
 
 .check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) -namerx '^\d+(\.\d+)?$$' hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -assert-single-coordinate -namerx '^\d+(\.\d+)?$$' hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_hoehe2:	hoehe
@@ -1411,7 +1411,7 @@ check-disabled:
 	@touch $@
 
 .check_ampeln:	ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -assert-single-coordinate ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_ampeln2:	ampeln
@@ -1421,7 +1421,7 @@ check-disabled:
 # XXX not executed by default
 .check_bahnuebergaenge: ampeln ubahn sbahn rbahn
 	${GREPSTRASSEN} --catrx '^B' ampeln > /tmp/bahnuebergaenge
-	${CHECK_POINTS} /tmp/bahnuebergaenge ubahn sbahn rbahn
+	${CHECK_POINTS} -assert-single-coordinate /tmp/bahnuebergaenge ubahn sbahn rbahn
 	@touch $@
 
 .check_ampelschaltung:	ampelschaltung-orig ampeln-orig
@@ -1429,7 +1429,7 @@ check-disabled:
 	@touch $@
 
 .check_ortsschilder:	ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -assert-single-coordinate ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_ortsschilder2:	orte orte2 ortsschilder-orig
@@ -1655,7 +1655,7 @@ ${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET}: temp_blockings/bbbike-temp-blockings.p
 	@touch $@
 
 .check_grenzuebergaenge:	grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen deutschland
-	$(CHECK_POINTS) grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -assert-single-coordinate grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen
 	$(CHECK_POINTS) grenzuebergaenge deutschland
 	@touch $@
 
@@ -1666,7 +1666,7 @@ ${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET}: temp_blockings/bbbike-temp-blockings.p
 # Check also the orig variant, because currently too much is
 # ignored...
 .check_culdesac_2:	culdesac-orig .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) culdesac-orig .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) -assert-single-coordinate culdesac-orig .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_culdesac_3:	culdesac-orig

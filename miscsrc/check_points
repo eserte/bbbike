@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: check_points,v 1.16 2006/08/16 22:30:06 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2004,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -40,6 +39,7 @@ sub doit {
     my $usememcache = 1;
     my $q;
     my $do_report = 0;
+    my $assert_single_coordinate;
     my @namerx;
     my @catrx;
 
@@ -50,11 +50,12 @@ sub doit {
 	       "memcache!" => \$usememcache,
 	       "q|quiet!" => \$q,
 	       "report!" => \$do_report,
+	       "assert-single-coordinate!" => \$assert_single_coordinate,
 	       "namerx=s\@" => \@namerx,
 	       "catrx=s\@" => \@catrx,
 	      ) or die <<EOF;
 usage: $0 [-ampelschaltung] [-ampelschaltung2] [-[no]warn] [-[no]cache]
-          [-[no]keepnet] [-[no]quiet | -q] [-report]
+          [-[no]keepnet] [-[no]quiet | -q] [-report] [-assert-single-coordinate]
 	  [-namerx regexp [-namerx ...]] [-catrx regexp [-catrx ...]]
           checkfile againstfile ...
 EOF
@@ -146,11 +147,12 @@ EOF
     $s1->init;
     while(1) {
 	my $ret = $s1->next;
-	last if !@{$ret->[1]};
+	last if !@{$ret->[Strassen::COORDS()]};
 	my $name = $ret->[Strassen::NAME()];
 	my $cat = $ret->[Strassen::CAT()];
+
 	my @this_error_points;
-	foreach (@{$ret->[1]}) {
+	foreach (@{$ret->[Strassen::COORDS()]}) {
 	    if (!exists $s2->{$_} && $_ ne '*') {
 		push(@this_error_points, $_);
 	    }
@@ -159,6 +161,13 @@ EOF
 	    print STDERR "Error in $name: coordinate(s) " . join(" ", @this_error_points) . " are not in net\n" unless $q;
 	    $fail++ unless $warn;
 	    push @error_points, @this_error_points if $do_report;
+	}
+
+	if ($assert_single_coordinate) {
+	    if (@{ $ret->[Strassen::COORDS()] } != 1) {
+		print STDERR "Error in $name: single coordinate assertion violated, coords=@{ $ret->[Strassen::COORDS()] }\n" unless $q;
+		$fail++ unless $warn;
+	    }
 	}
 
 	if (@namerx) {
