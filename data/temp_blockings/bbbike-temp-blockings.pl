@@ -19861,13 +19861,14 @@ EOF
 userdel	2::inwork -13687,-4949 -13723,-6401
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-13 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-09-15 23:59:59"),
+     { from  => $isodate2epoch->("2014-09-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-09-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (14.09.2013 und 15.09.2013)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (13.09.2014 und 14.09.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.laubinger.de/termine/44-fest-an-der-panke/
 userdel	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
 EOF
      },

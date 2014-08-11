@@ -2682,7 +2682,26 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.laubinger.de/termine/44-fest-an-der-panke/
+userdel	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
+',
+         'periodic' => 1,
+         'until' => 1410731999,
+         'from' => 1410472800,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (13.09.2014 und 14.09.2014)',
+         'type' => 'gesperrt',
+         'id' => 2281
+       },
        undef,
        undef,
        undef,
