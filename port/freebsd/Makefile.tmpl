@@ -28,7 +28,12 @@ MYDESTDIR=	${STAGEDIR}${PREFIX}/BBBike
 # replacements ${PERL_VER}/${PERL_ARCH} do not work here:
 # the value of PERL_ARCH is always "mach" on FreeBSD systems,
 # but $Config{archname} here is something like "amd64-freebsd"
+#
+# perl might not be installed, so check first for existence.
+.if exists(${PERL5})
 LOCAL_PERL_ARCH!=	${PERL5} -MConfig -e '$$x = qq{$$Config{version}/$$Config{archname}}; $$x =~ s{/}{\\\\/}g; print $$x'
+.endif
+
 PLIST_SUB=		LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
 BBBIKE_PERL_EXE=	@BBBIKE_PERL_EXE@
 
