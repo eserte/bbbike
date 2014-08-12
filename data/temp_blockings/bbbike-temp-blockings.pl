@@ -22493,11 +22493,11 @@ EOF
 userdel	q3::inwork; 12189,16578 12045,16574
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-20 00:00:00"), # 1393534800, # 2014-02-27 22:00
-       until => $isodate2epoch->("2014-07-28 23:59:59"), # 1393722000, # 2014-03-02 02:00
-       text  => 'Niederfinow: Kabelarbeiten im Fahrbahnbereich OD Niederfinow, Hebewerkstraße Vollsperrung, 21.07.2014 bis 28.07.2014',
+     { from  => $isodate2epoch->("2014-08-17 00:00:00"),
+       until => 1408917600, # 2014-08-25 00:00
+       text  => 'Niederfinow: L29: Rückbau der alten Fahrbahn und Asphalteinbau auf der neuen Trasse der L29, OD Niederfinow, Hebewerkstraße, Vollsperrung, 18.08.2014 bis 24.08.2014 ',
        type  => 'gesperrt',
-       source_id => '146000678',
+       source_id => '146000827',
        data  => <<EOF,
 userdel	2::inwork 46132,49993 46390,50091
 EOF
@@ -23186,6 +23186,15 @@ EOF
        source_id => 'LS/721-E/14/067',
        data  => <<EOF,
 userdel	2::inwork 33953,23796 34266,22939
+EOF
+     },
+     { from  => 1408226400, # 2014-08-17 00:00
+       until => 1409954399, # 2014-09-05 23:59
+       text  => 'Geierpfad: Instandsetzung der Fahrbahn unter Vollsperrung, vom 18. August 2014 bis 5. September 2014 ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.155597.php',
+       data  => <<EOF,
+userdel	2::inwork 3257,26907 3358,26706 3422,26540
 EOF
      },
     );

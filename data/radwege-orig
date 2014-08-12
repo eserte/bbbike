@@ -748,9 +748,8 @@ der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW
 der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW0;RW0 8119,12414 8055,12186
 	RW1;RW3 7346,13022 7422,13012
 #: by: RW2 by Robert:
-#: confirmed_by: srt
-#: XXX ist die Benutzungspflicht mittlerweile aufgehoben worden?
-	RW1;RW2 7422,13012 7595,12980
+#: corrected_by: srt (die Benutzungspflicht ist aufgehoben worden, gesehen 2014-08-12)
+	RW1;RW1 7422,13012 7595,12980
 	RW4;RW4 7595,12980 7776,12945 7822,12937 7873,12927 7936,12906
 	RW1;RW2 6239,15553 6127,15688
 	RW2; 6562,15177 6626,15104
@@ -1584,7 +1583,7 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html
 #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder
 #: XXX kommen die Radwegschilder noch?
-#: last_checked: 2014-07-07
+#: last_checked: 2014-08-12
 	RW3; 8098,13419 8293,13519
 	RW2; 8293,13519 8337,13541 8362,13554
 	RW3; 8362,13554 8450,13599
@@ -4462,6 +4461,7 @@ asphaltiert	RW1; 25010,4807 24936,4838 24798,4895 24681,4943 24070,5272 23942,53
 	RW6;RW6 14993,10188 15044,10297
 asphaltiert	RW1; 15066,14579 15174,14638
 Gehwegplatten und Asphalt im Wechsel	RW1; 15174,14638 15272,14691
+asphaltiert	RW1; 15272,14691 15174,14638 15066,14579
 	RW6;RW6 12805,8194 12779,8188 12797,8168
 	RW3; 1368,-1 1345,184
 	RW6;RW6 13410,11447 13427,11431 13473,11456

@@ -3348,7 +3348,16 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => '146000827',
+         'until' => 1408917600,
+         'text' => 'Niederfinow: L29: Rückbau der alten Fahrbahn und Asphalteinbau auf der neuen Trasse der L29, OD Niederfinow, Hebewerkstraße, Vollsperrung, 18.08.2014 bis 24.08.2014 ',
+         'from' => 1408226400,
+         'id' => 2539,
+         'data' => 'userdel	2::inwork 46132,49993 46390,50091
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1530395999,
          'text' => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2018',
@@ -3584,20 +3593,7 @@ userdel	q4::inwork; 17614,6571 17766,6616
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148335.php',
-         'until' => 1407772800,
-         'text' => 'Elsenstr. und Bouchéstr.: Einbahnstraßenregelung zwischen Am Treptower Park und Karl-Kunger-Str., vom 21.07.2014 bis zum 11.08.2013',
-         'from' => 1405830600,
-         'id' => 2594,
-         'data' => '#: source_id: IM_022405
-#: note: Gehweg ist hier relativ breit
-	q3::inwork; 14089,9610 13973,9465 13923,9405
-	q4::inwork; 13923,9405 13849,9310 13760,9188
-	q4::inwork; 13489,9456 13606,9578 13645,9621 13867,9864
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -3719,6 +3715,16 @@ userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
          'from' => 1407650400,
          'id' => 2607,
          'data' => 'userdel	2::inwork 33953,23796 34266,22939
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.155597.php',
+         'until' => 1409954399,
+         'text' => 'Geierpfad: Instandsetzung der Fahrbahn unter Vollsperrung, vom 18. August 2014 bis 5. September 2014 ',
+         'from' => 1408226400,
+         'id' => 2608,
+         'data' => 'userdel	2::inwork 3257,26907 3358,26706 3422,26540
 ',
          'type' => 'gesperrt'
        }
