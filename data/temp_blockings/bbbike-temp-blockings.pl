@@ -23197,4 +23197,13 @@ EOF
 userdel	2::inwork 3257,26907 3358,26706 3422,26540
 EOF
      },
+     { from  => 1408226400, # 2014-08-17 00:00
+       until => 1410645599, # 2014-09-13 23:59
+       text  => 'Werneuchener Straße: zwischen Goeckestraße und Große-Leege-Straße in Richtung Konrad-Wolf-Straße wegen Bauarbeiten gesperrt, ab 18. August 2014 bis Mitte Oktober',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20140813.1350.398688.html',
+       data  => <<EOF,
+userdel	q4::inwork; 16514,15092 16430,15168
+EOF
+     },
     );

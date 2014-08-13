@@ -454,7 +454,7 @@ Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggefü
 #: last_checked: 2014-08-07
 #: next_check: 2015-03-01
 #: priority: #A
-Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?::inwork; 13588,11490 13565,11492 13473,11456
+Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # 
 # REMOVED (neu asphaltiert) --- #: last_checked: 2013-11-11 --- Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
 # 
@@ -866,7 +866,7 @@ Ampel in Vorbereitung	?::inwork 19131,-2145
 #: next_check_id ^^^
 # 
 #: XXX culdesac-Eintrag ändern, sobald der Weg existiert
-#: osm_watch: way id="162366693" version="1"
+#: osm_watch: way id="162366693" version="2"
 #: last_checked: 2014-05-17
 #: check_frequency: 360d
 Gebrüder-Hirth-Str.: Verlängerung in Brandenburg geplant, wann wird die Straße fertiggestellt? Qualität?	?::projected 19725,-1704 19731,-1903
@@ -1052,7 +1052,7 @@ Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,
 #: XXX Baumaßnahme 7.13 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: osm_watch: way id="4677913" version="14"
-#: osm_watch: way id="38198022" version="8"
+#: osm_watch: way id="38198022" version="9"
 #: last_checked: 2014-04-27
 #: check_frequency: 120d
 Ringstr.: Radverkehrsanlagen	?::projected 8394,4261 8161,4360 8105,4384 7994,4430 7928,4458 7697,4558
@@ -1947,6 +1947,10 @@ Lindenallee: wo befindet sich die Straße genau?	? -784,16574 -945,16725 -781,167
 #: XXX_prog "AEG-Str." sieht nicht schön aus. Ausnahmsweise "AEG-Straße" verwenden? Würde aber programmtechnisch nicht funktionieren...
 AEG-Str.: Wo befindet sich die Straße genau?	? 5947,22825 6141,22784 6142,22911 6073,23004
 # 
+#: by: http://www.openstreetmap.org/note/209950
+#: XXX "an dieser Stelle entsteht gerade eine Radweg-Brücke über die Bahn (Stahlkonstruktion)." (Anfang August 2014)
+#: next_check: 2014-10-31
+Brücke wird gebaut: angrenzende Wege, Qualität, Beleuchtung, Ausschilderung etc.	?::inwork 24009,-1292 24147,-1165
 #: ignore ^^^
 #: section ^^^
 #
