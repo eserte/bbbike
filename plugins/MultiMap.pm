@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -686,15 +686,17 @@ sub showmap_livecom {
 
 sub showmap_url_deinplan {
     my(%args) = @_;
-    if (0) {
+    if (1) {
 	require Karte::Deinplan;
 	my($sx,$sy) = split /,/, $args{coords};
+	$Karte::Deinplan::obj = $Karte::Deinplan::obj if 0; # cease -w
 	my($x, $y) = map { int } $Karte::Deinplan::obj->standard2map($sx,$sy);
-	my $urlfmt = "http://www.dein-plan.de/?location=|berlin|%d|%d";
+	#my $urlfmt = "http://www.dein-plan.de/?location=|berlin|%d|%d";
+	my $urlfmt = "http://www.berliner-stadtplan.com/adresse/karte/berlin/pos/%d,%d.html";
 	sprintf($urlfmt, $x, $y);
     } else {
-	# The old-styled links still work. Prefer this over the
-	# approximate pixel method above.
+	# The x_wgs/y_wgs styled links do not work anymore (since Summer 2014),
+	# but would be preferred over the approximate pixel method above.
 	require Karte::Polar;
 	require URI::Escape;
 	my($px, $py) = ($args{px}, $args{py});
