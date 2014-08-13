@@ -100,3 +100,19 @@ for my $feature (@{ $data->{features} || [] }) {
 print $s->write($o);
 
 __END__
+
+=head1 NAME
+
+osmnotes2bbd.pl - fetch and convert OSM notes to bbd files
+
+=head1 EXAMPLES
+
+Fetch all OSM notes for Berlin and convert to berlin_notes.bbd:
+
+    osmnotes2bbd.pl -o /tmp/berlin_notes.bbd -bbox 13.088443,52.338064,13.760931,52.675279
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
