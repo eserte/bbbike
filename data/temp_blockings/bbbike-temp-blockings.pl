@@ -1111,11 +1111,11 @@ userdel	q4 21646,30961 21001,30933 20794,30899
 userdel	q4 21646,30961 21955,30976
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-13 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-09-15 20:00:00"),
+     { from  => $isodate2epoch->("2014-09-12 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-09-14 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 9]],
-       text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Herbstfest auf der Hauptstraße), Straße gesperrt (14.9.2013 10:00 - 15.9.2013 20:00)',
+       text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Herbstfest auf der Hauptstraße), Straße gesperrt (13.9.2014 10:00 - 14.9.2014 20:00)',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 6687,8385 6765,8480 6912,8617 6989,8687 7009,8705 7105,8788 7201,8870 7268,8960
@@ -19901,11 +19901,11 @@ EOF
 userdel	2::inwork 872,24330 873,24112 825,24068 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-18 00:00:00"), # 1347508800, # 2012-09-13 06:00 PERIODISCH, ca. 2. Wochenende im September
-       until => $isodate2epoch->("2013-09-21 23:59:59"), # 1347832740, # 2012-09-16 23:59
+     { from  => $isodate2epoch->("2014-09-18 00:00:00"), # 1347508800, # 2012-09-13 06:00 PERIODISCH, ca. 2. Wochenende im September
+       until => $isodate2epoch->("2014-09-21 23:59:59"), # 1347832740, # 2012-09-16 23:59
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9]],
-       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 19.09.2013 bis 21.09.2013',
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 19.09.2014 bis 21.09.2014',
        type  => 'handicap',
        source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/',
        data  => <<EOF,
@@ -22967,8 +22967,8 @@ userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22436,-168
 EOF
      },
      { from  => 1406844000, # 2014-08-01 00:00
-       until => $isodate2epoch->("2014-08-15 08:00:00"), # was $isodate2epoch->("2014-08-23 23:59:59"),
-       text  => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 15.08.2014',
+       until => $isodate2epoch->("2014-08-18 18:00:00"), # was $isodate2epoch->("2014-08-23 23:59:59"),
+       text  => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 18.08.2014',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
        data  => <<EOF,
@@ -23204,6 +23204,18 @@ EOF
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20140813.1350.398688.html',
        data  => <<EOF,
 userdel	q4::inwork; 16514,15092 16430,15168
+EOF
+     },
+     { from  => $isodate2epoch->("2014-08-21 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-08-24 23:59:59"),
+       periodic => 1,
+       recurrences => [['yearly', days => 21, months => 8]],
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.8.2014 bis 24.8.2014',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157630.php',
+       data  => <<EOF,
+userdel	2::temp 22133,4644 22111,4562 22093,4499
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
 EOF
      },
     );
