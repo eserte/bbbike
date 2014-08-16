@@ -754,6 +754,9 @@ EOF
 	      ],
 	      [Cascade => $do_compound->("Development"), -menuitems =>
 	       [
+		[Button => "Render Mapnik map",
+		 -command => sub { render_mapnik_map() },
+		],
 		[Button => "Show Karte canvas items",
 		 -command => sub {
 		     my $wd = _get_tk_widgetdump();
@@ -2782,6 +2785,21 @@ sub _get_tk_widgetdump {
     $WIDGETDUMP_W = $main::top->WidgetDump;
     $WIDGETDUMP_W->iconify;
     $WIDGETDUMP_W;
+}
+
+######################################################################
+# -> mapnik
+sub render_mapnik_map {
+    my($px0,$py0,$px1,$py1) = main::get_current_bbox_as_wgs84();
+
+    my $renderer = "$bbbike_rootdir/../mapnik-bbbike/tools/renderer.py";
+    if (!-x $renderer) {
+	main::status_message("Mapnik renderer $renderer not available --- please run 'git clone git://github.com/eserte/mapnik-bbbike.git' in the parent directory of the BBBike source code", 'error');
+	return;
+    }
+
+    my @cmd = ($renderer, '--view', "--bbox=$px0,$py0,$px1,$py1");
+    BBBikeProcUtil::double_forked_exec(@cmd);
 }
 
 ######################################################################
