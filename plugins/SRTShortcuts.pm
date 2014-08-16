@@ -2794,7 +2794,8 @@ sub render_mapnik_map {
 
     my $renderer = "$bbbike_rootdir/../mapnik-bbbike/tools/renderer.py";
     if (!-x $renderer) {
-	main::status_message("Mapnik renderer $renderer not available --- please run 'git clone git://github.com/eserte/mapnik-bbbike.git' in the parent directory of the BBBike source code", 'error');
+	require File::Basename;
+	main::status_message("Mapnik renderer $renderer not available --- please run 'git clone git://github.com/eserte/mapnik-bbbike.git' in " . File::Basename::dirname($bbbike_rootdir) . " and follow the instructions in mapnik-bbbike/tools/Makefile", 'error');
 	return;
     }
 
