@@ -3429,17 +3429,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_021395',
-         'until' => 1408114800,
-         'text' => 'Golzstr.: Baustelle, Fahrbahn zwischen Lichtenrader Damm und Bahnhofstr. in Richtung S-Bhf. gesperrt, 03.03.2014 08:00 Uhr bis 15.08.2014 17:00 Uhr ',
-         'from' => 1393743600,
-         'id' => 2546,
-         'data' => '#: note: laut BVG navi 03.2014 sogar bis September 2014
-userdel	q4::inwork; 11073,-2037 10983,-2116
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3640,29 +3630,7 @@ userdel	q4::inwork; 17614,6571 17766,6616
          'data' => 'Gartenufer	2::night 6226,11405 6067,11479 5845,11615 5790,11643
 '
        },
-       {
-         'source_id' => 'IM_021923',
-         'until' => 1408312800,
-         'text' => 'Konrad-Wolf-Str.: Bauarbeiten zwischen Reichenberger Str. und Oberseestr., Richtung Nordosten gesperrt, bis 17.08.2014 18:00 Uhr',
-         'from' => 1405025033,
-         'id' => 2596,
-         'data' => 'userdel	q4::inwork; 15937,15134 16028,15218 16119,15302 16208,15379 16263,15427 16331,15486 16412,15559 16448,15593 16497,15636 16615,15737
-userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
-	3 16475,15659 16497,15636 16615,15737
-	3 16615,15737 16497,15636 16475,15659
-	3 16475,15659 16497,15636 16448,15593
-	3 16448,15593 16497,15636 16475,15659
-	3 16475,15659 16448,15593 16497,15636
-	3 16497,15636 16448,15593 16475,15659
-	3 16475,15659 16448,15593 16412,15559
-	3 16412,15559 16448,15593 16475,15659
-	3 16251,15629 16412,15559 16550,15503
-	3 16550,15503 16412,15559 16251,15629
-	3 15996,15620 16331,15486 16406,15452
-	3 16406,15452 16331,15486 15996,15620
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148904.php',
          'until' => 1414796400,
@@ -3724,16 +3692,7 @@ userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_022529',
-         'until' => 1408111200,
-         'text' => 'Nikolskoer Weg (Wannsee): Vollsperrung, 05.08.2014 14:33 Uhr bis 15.08.2014 16:00 Uhr ',
-         'from' => 1407155580,
-         'id' => 2604,
-         'data' => 'userdel	2::inwork -9085,1347 -9252,1244 -9333,1124 -9443,1035 -9500,827 -9412,546
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'LS/722-C/14/213',
          'until' => 1425682800,
@@ -3771,7 +3730,8 @@ userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
          'text' => 'Werneuchener Straße: zwischen Goeckestraße und Große-Leege-Straße in Richtung Konrad-Wolf-Straße wegen Bauarbeiten gesperrt, ab 18. August 2014 bis Mitte Oktober',
          'from' => 1408226400,
          'id' => 2609,
-         'data' => 'userdel	q4::inwork; 16514,15092 16430,15168
+         'data' => '#: source_id: IM_022620
+userdel	q4::inwork; 16514,15092 16430,15168
 ',
          'type' => 'handicap'
        },
@@ -3795,6 +3755,29 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
          'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.8.2014 bis 24.8.2014',
          'id' => 2610,
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157925.php',
+         'until' => 1411768800,
+         'text' => 'Fahlenbergstraße und Hubertusstraße von Wolfgang-Steinitz-Straße bis Waldstraße: Fahrbahninstandsetzung, Einbahnstraßenregelung, offen Richtung Fürstenwalder Allee, vom 01.09.2014 bis 26.09.2014',
+         'from' => 1409436000,
+         'id' => 2611,
+         'data' => '#: XXX vom 29.09.2014 bis 02.10.2014: Vollsperrung
+#: next_check: 2014-09-27
+#: priority: #A
+userdel	q4::inwork; 31967,2966 31999,2812 32031,2723 32115,2581 32162,2542
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157922.php',
+         'until' => 1410040800,
+         'text' => 'Stillerzeile von Kurzer Steig bis Jastrower Weg: Fahrbahninstandsetzung, Vollsperrung vom 02.09.2014 bis 06.09.2014',
+         'from' => 1409522400,
+         'id' => 2612,
+         'data' => 'userdel	q4::inwork 24126,5521 24003,5501 23877,5503
+',
+         'type' => 'handicap'
        }
      
 );

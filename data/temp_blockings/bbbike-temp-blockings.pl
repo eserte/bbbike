@@ -4144,7 +4144,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82299',
        data  => <<EOF,
-userdel	2 6281,20369 6275,20412 6267,20476
+userdel	2 6281,20369 6264,20408 6260,20472
 EOF
      },
      { from  => 1144438729, # 2006-04-07 21:38
@@ -19654,7 +19654,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110727.1340.352586.html',
        data  => <<EOF,
-userdel	q4::inwork; 4718,22384 4800,22418 4898,22459 5006,22507 4919,22658
+userdel	q4::inwork; 4718,22384 4800,22418 4898,22459 5006,22507 4917,22662
 EOF
      },
      { from  => 1313272800, # 2011-08-14 00:00
@@ -22084,7 +22084,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131010.1450.390218.html',
        data  => <<EOF,
-userdel	q4::inwork 3171,25495 3141,25575 3141,25626 3154,25659
+userdel	q4::inwork 3166,25496 3145,25548 3141,25626 3154,25659
 EOF
      },
      { from  => $isodate2epoch->("2014-01-08 00:00:00"), # 1381651200, # 2013-10-13 10:00
@@ -23066,7 +23066,7 @@ Gartenufer	2::night 6226,11405 6067,11479 5845,11615 5790,11643
 EOF
      },
      { from  => 1405025033, # 2014-07-10 22:43
-       until => 1408312800, # 2014-08-18 00:00
+       until => 1408139790, # 1408312800, # 2014-08-18 00:00
        text  => 'Konrad-Wolf-Str.: Bauarbeiten zwischen Reichenberger Str. und Oberseestr., Richtung Nordosten gesperrt, bis 17.08.2014 18:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_021923',
@@ -23203,6 +23203,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20140813.1350.398688.html',
        data  => <<EOF,
+#: source_id: IM_022620
 userdel	q4::inwork; 16514,15092 16430,15168
 EOF
      },
@@ -23216,6 +23217,27 @@ EOF
        data  => <<EOF,
 userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
+EOF
+     },
+     { from  => 1409436000, # 2014-08-31 00:00
+       until => 1411768800, # 2014-09-27 00:00
+       text  => 'Fahlenbergstraße und Hubertusstraße von Wolfgang-Steinitz-Straße bis Waldstraße: Fahrbahninstandsetzung, Einbahnstraßenregelung, offen Richtung Fürstenwalder Allee, vom 01.09.2014 bis 26.09.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157925.php',
+       data  => <<EOF,
+#: XXX vom 29.09.2014 bis 02.10.2014: Vollsperrung
+#: next_check: 2014-09-27
+#: priority: #A
+userdel	q4::inwork; 31967,2966 31999,2812 32031,2723 32115,2581 32162,2542
+EOF
+     },
+     { from  => 1409522400, # 2014-09-01 00:00
+       until => 1410040800, # 2014-09-07 00:00
+       text  => 'Stillerzeile von Kurzer Steig bis Jastrower Weg: Fahrbahninstandsetzung, Vollsperrung vom 02.09.2014 bis 06.09.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157922.php',
+       data  => <<EOF,
+userdel	q4::inwork 24126,5521 24003,5501 23877,5503
 EOF
      },
     );

@@ -106,7 +106,7 @@ Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,183
 Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
-Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3171,25495
+Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
 Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4098,18762 4162,18891 4240,19019
 Eichborndamm	1s:q3 4240,19019 4232,18981
 Eichborndamm	1 4232,18981 4210,18878 4163,18676 4102,18298 4059,18107 4015,17912
@@ -1095,6 +1095,7 @@ Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 Firlstr.	1 18643,6540 18645,6511
 Malchower Str.	1 12838,18155 12785,18128
 Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
+Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1580,6 +1581,7 @@ Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5351,10760 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7024,15810
+Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3nocross 5525,21022 5598,21032 5819,21057
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14653,15738
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14552,16171 14522,16260 14499,16341
 # REMOVED (das Überqueren ist möglich!) --- Weißenseer Weg: Straßenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
@@ -1721,6 +1723,9 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (4+3+4 Stufen) bzw. Naturrampe benutzen	0:15 4689,22058
+tragen (15 Stufen)	0:20 4620,22079
+tragen (2 x 4 Stufen)	0:15 2800,23966
 tragen (ca. 21 Stufen)	0:30 5246,12899
 tragen (21 Stufen)	0:30 1645,9855
 tragen (9 Stufen)	0:15 1719,9776
@@ -2022,6 +2027,13 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 3664,23313
+Drängelgitter	BNP:3::trailer=10 3737,23369
+Tor	BNP:5::trailer=10 2818,23931
+#: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
+sehr steil	BNP:0::trailer=no 3492,24667
+Drängelgitter, kann umfahren werden	BNP:1::trailer=5 3557,24572
+Schranke	BNP:3::trailer=10 4588,23362
 Drängelgitter	BNP:3::trailer=10 22848,14460
 Drängelgitter	BNP:3::trailer=10 23582,49940
 Drängelgitter	BNP:3::trailer=10 23659,49954
@@ -2191,7 +2203,7 @@ Drängelgitter	BNP:3::trailer=10 -4760,13980
 Schranke	BNP:3::trailer=10 8262,17361
 Schranke, enge Umfahrung	BNP:5::trailer=15 8352,17285
 Schranke	BNP:3::trailer=10 4347,21531
-enge Stelle durch zwei Baumstämme	BNP:5::trailer=no 3803,24652
+enge Stelle durch zwei Baumstämme	BNP:1::trailer=5 3803,24652
 Drängelgitter und Stufe	BNP:5::trailer=15 6143,20464
 #: note: Stufe nicht gesehen, aber wahrscheinlich vvv
 Drängelgitter und Stufe	BNP:5::trailer=15 6090,20414
@@ -2529,6 +2541,11 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX laut Schild bis Dezember 2014 gesperrt
+#: last_checked: 2014-08-15
+#: next_check: 2014-12-15
+Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
+# 
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf
 #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
@@ -2565,7 +2582,7 @@ am Osthafen: durch Barriere versperrt	2 14259,10309 14463,10212
 #: next_check_id: BND-2014
 #: osm_watch: way id="129104626" version="3"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
-#: last_checked: 2014-05-24
+#: last_checked: 2014-08-17
 #: check_frequency: 60d
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 

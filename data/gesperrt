@@ -86,7 +86,7 @@ Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,183
 Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
-Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3171,25495
+Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
 Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4098,18762 4162,18891 4240,19019
 Eichborndamm	1s 4240,19019 4232,18981
 Eichborndamm	1 4232,18981 4210,18878 4163,18676 4102,18298 4059,18107 4015,17912
@@ -801,6 +801,7 @@ Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 Firlstr.	1 18643,6540 18645,6511
 Malchower Str.	1 12838,18155 12785,18128
 Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
+Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1790,6 +1791,9 @@ Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 
 Brüsseler Str. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 7077,16078
 Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6936,15888
 Amsterdamer Str. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6802,15790
+Zaun auf dem Mittelstreifen	3nocross::ignrte 5525,21022 5598,21032 5819,21057
+Wilhelmsruher Damm -> Amboßweg: Zaun auf dem Mittelstreifen	3::igndisp 5819,21057 5598,21032 5599,21025
+Amboßweg -> Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3::igndisp 5599,21025 5598,21032 5525,21022
 Straßenbahntrasse	3nocross::ignrte 14597,15970 14609,15921 14653,15738
 Orankeweg -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14720,15905 14609,15921 14653,15738
 Straßenbahntrasse	3nocross::ignrte 14552,16171 14522,16260 14499,16341
@@ -2126,6 +2130,9 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (4+3+4 Stufen) bzw. Naturrampe benutzen	0:15:-38 4689,22058
+tragen (15 Stufen)	0:20:-120 4620,22079
+tragen (2 x 4 Stufen)	0:15:-37 2800,23966
 tragen (ca. 21 Stufen)	0:30:-46 5246,12899
 tragen (21 Stufen)	0:30:0 1645,9855
 tragen (9 Stufen)	0:15:-43 1719,9776
@@ -2339,6 +2346,12 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-126:trailer=10 3664,23313
+Drängelgitter	BNP:3:-127:trailer=10 3737,23369
+Tor	BNP:5:-215:trailer=10 2818,23931
+sehr steil	BNP:0:-30:trailer=no 3492,24667
+Drängelgitter, kann umfahren werden	BNP:1:-194:trailer=5 3557,24572
+Schranke	BNP:3:-215:trailer=10 4588,23362
 Drängelgitter	BNP:3:30:trailer=10 22848,14460
 Drängelgitter	BNP:3:-99:trailer=10 23582,49940
 Drängelgitter	BNP:3:-100:trailer=10 23659,49954
@@ -2480,9 +2493,9 @@ Drängelgitter	BNP:3:4:trailer=10 -4760,13980
 Schranke	BNP:3:-96:trailer=10 8262,17361
 Schranke, enge Umfahrung	BNP:5:-6:trailer=15 8352,17285
 Schranke	BNP:3:-55:trailer=10 4347,21531
-enge Stelle durch zwei Baumstämme	BNP:5:83:trailer=no 3803,24652
+enge Stelle durch zwei Baumstämme	BNP:1:83:trailer=5 3803,24652
 Drängelgitter und Stufe	BNP:5:-26:trailer=15 6143,20464
-Drängelgitter und Stufe	BNP:5:-27:trailer=15 6090,20414
+Drängelgitter und Stufe	BNP:5:-26:trailer=15 6090,20414
 Drängelgitter und Stufe	BNP:5:-27:trailer=15 6030,20385
 Drängelgitter und Stufe	BNP:5:-26:trailer=15 5904,20327
 Drängelgitter	BNP:3:2:trailer=10 -7598,12953
@@ -2714,6 +2727,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 Viechtacher Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19657,9666 19732,9678 19801,9680 19857,9682 19893,9683
@@ -3332,3 +3346,4 @@ Reinickendorfer Str., linker Gehweg	1::igndisp 7966,15571 7962,15533 7975,15484
 Bismarckstr., linke Seite	1::igndisp 6055,4950 6027,4896 6000,4846
 Altentreptower Str., linker Gehweg	1::igndisp 21401,12155 21310,12150 21294,12167 21276,12241 21199,12258
 Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
+Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	1::igndisp 5525,21022 5599,21025

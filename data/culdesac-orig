@@ -554,8 +554,8 @@ nordwestliches Sackgassenende	culdesac_pseudo -7283,808
 	culdesac 2009,26688
 	culdesac_pseudo 2005,26495
 	culdesac 2158,26408
-	culdesac 4382,21493
-	culdesac 4366,21482
+Sackgassenende, östlicher Strang	culdesac_pseudo 4382,21493
+Sackgassenende, westlicher Strang	culdesac 4366,21482
 	culdesac_pseudo 7159,17997
 	culdesac 8240,17304
 Sackgassenende, Spreeufer	culdesac 19697,5835
@@ -585,7 +585,7 @@ Sackgassenende, zur Egidystr.	culdesac_pseudo 3077,22234
 	culdesac 2203,22749
 Sackgassenende, zum Tegeler Fließ	culdesac_pseudo 3381,22273
 	culdesac_pseudo 5046,24000
-	culdesac_pseudo 4546,23930
+	culdesac_pseudo 4534,23938
 	culdesac_pseudo 4436,23714
 	culdesac_pseudo 4613,23060
 	culdesac_pseudo 6519,21002
@@ -881,12 +881,12 @@ Fähranleger	culdesac_pseudo -1989,18378
 	culdesac_pseudo 9132,13187
 #: next_check_id: BND-2014
 #: XXX wird bei der Verlängerung der Ida-von-Arnim-Str. aufgehoben
-#: last_checked: 2014-05-24
+#: last_checked: 2014-08-17
 #: check_frequency: 60d
 	culdesac 8251,14337
 #: next_check_id: SUEDPANKE-2014
 #: XXX wird bei der Verlängerung des Südpankewegs aufgehoben
-#: next_check: 2014-08-10
+#: next_check: 2014-10-17
 	culdesac 8294,14194
 Tor	culdesac 8388,13993
 #: note: es gibt hier noch weiterführende Straßen
@@ -996,10 +996,36 @@ Tor an der Hiddenseestr.	culdesac 10967,17671
 	culdesac -797,3039
 	culdesac 26183,12670
 	culdesac 26247,12643
+Strandbad Plötzensee	culdesac 5252,15182
+	culdesac_pseudo 4376,21170
+	culdesac 4768,23045
+	culdesac 4852,23184
+östliches Sackgassenende	culdesac 4829,23477
+Sackgassenende der Stichstraße	culdesac 4561,23455
+	culdesac 3314,24544
+	culdesac 3651,24788
+	culdesac 2640,24608
+Sackgassenende	culdesac_pseudo 2790,23979
+Sackgassenende der Stichstraße	culdesac 2784,23929
+	culdesac_pseudo 2818,23931
+Sackgassenende, S-Bhf. Hermsdorf	culdesac_pseudo 3653,23305
+	culdesac 8578,18629
+	culdesac 8583,18668
+	culdesac_pseudo 4803,20529
+	culdesac 4492,20214
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 3481,24686
+	culdesac_pseudo 3765,24644
+	culdesac_pseudo 3559,24564
+	culdesac_pseudo 3557,24572
+	culdesac_pseudo 4713,23254
+	culdesac_pseudo 4208,21159
+	culdesac_pseudo 6564,19064
+	culdesac_pseudo 6636,18934
+	culdesac_pseudo 5130,15692
 	culdesac_pseudo -802,2914
 	culdesac_pseudo 1882,1376
 	culdesac_pseudo 1975,1413
@@ -1178,7 +1204,7 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2387,10131
 	culdesac_pseudo 6030,20385
 	culdesac_pseudo 5970,20353
 	culdesac_pseudo 5904,20327
-	culdesac_pseudo 6184,20550
+	culdesac_pseudo 6176,20545
 	culdesac_pseudo 3205,24839
 	culdesac_pseudo 3978,23301
 	culdesac_pseudo 5715,19888
