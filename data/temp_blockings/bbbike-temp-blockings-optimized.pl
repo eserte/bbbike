@@ -3423,7 +3423,7 @@ userdel	2::inwork -12363,-1742 -12457,-1857
          'from' => undef,
          'id' => 2544,
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-05-11
+#: last_checked: 2014-08-09 (by http://www.deutsches-architektur-forum.de/forum/showthread.php?t=10252&page=15)
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 ',
          'type' => 'gesperrt'
@@ -3458,7 +3458,7 @@ userdel	q3::inwork 11673,16003 11567,15842
          'from' => undef,
          'id' => 2557,
          'data' => '#: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-06-03
+#: last_checked: 2014-07-22 (by photo)
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 ',
@@ -3579,18 +3579,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
-         'until' => 1408377600,
-         'text' => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 18.08.2014',
-         'from' => 1406844000,
-         'id' => 2587,
-         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.140733.php
-#: source_id: IM_022482
-userdel	q4::inwork; 17614,6571 17766,6616
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3681,16 +3670,7 @@ userdel	q4::inwork; 17614,6571 17766,6616
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LS/722-C/14/091',
-         'until' => 1408312800,
-         'text' => 'Uebigau-Wahrenbrück: L60: Brückenneubau Brücke über die Schwarze Elster bei München: Vollsperrung 15.08.2014 - 17.08.2014 ',
-         'from' => 1407967200,
-         'id' => 2602,
-         'data' => 'userdel	2::inwork 6199,-89072 6681,-88922
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3726,7 +3706,7 @@ userdel	q4::inwork; 17614,6571 17766,6616
        },
        {
          'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20140813.1350.398688.html',
-         'until' => 1410645599,
+         'until' => 1412956800,
          'text' => 'Werneuchener Straße: zwischen Goeckestraße und Große-Leege-Straße in Richtung Konrad-Wolf-Straße wegen Bauarbeiten gesperrt, ab 18. August 2014 bis Mitte Oktober',
          'from' => 1408226400,
          'id' => 2609,
@@ -3778,6 +3758,28 @@ userdel	q4::inwork; 31967,2966 31999,2812 32031,2723 32115,2581 32162,2542
          'data' => 'userdel	q4::inwork 24126,5521 24003,5501 23877,5503
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245&page=7',
+         'until' => undef,
+         'text' => 'Köbisstr.: wegen Bauarbeiten unter Umständen gesperrt',
+         'from' => undef,
+         'id' => 2613,
+         'data' => '#: XXX vor Ort anschauen, ist die Straße tatsächlich gesperrt? Wie lange?
+userdel	2::inwork 7103,11247 6851,11346
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_022629',
+         'until' => 1411017000,
+         'text' => 'Unter den Linden: Straße zwischen Schadowstr. und Wilhelmstr. Richtung Brandenburger Tor gesperrt, 17.08.2014 bis 18.09.2014',
+         'from' => 1408173960,
+         'id' => 2614,
+         'data' => '#: by: http://www.morgenpost.de/berlin/article131305310/Panne-beim-U-Bahnbau-Unter-den-Linden-gesperrt.html
+userdel	1::inwork 9028,12307 8804,12280
+',
+         'type' => 'gesperrt'
        }
      
 );

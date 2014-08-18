@@ -22546,7 +22546,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-05-11
+#: last_checked: 2014-08-09 (by http://www.deutsches-architektur-forum.de/forum/showthread.php?t=10252&page=15)
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 EOF
      },
@@ -22669,7 +22669,7 @@ EOF
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
 #: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-06-03
+#: last_checked: 2014-07-22 (by photo)
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 EOF
@@ -23198,7 +23198,7 @@ userdel	2::inwork 3257,26907 3358,26706 3422,26540
 EOF
      },
      { from  => 1408226400, # 2014-08-17 00:00
-       until => 1410645599, # 2014-09-13 23:59
+       until => $isodate2epoch->("2014-10-10 18:00:00"), # 1410645599, # 2014-09-13 23:59
        text  => 'Werneuchener Straße: zwischen Goeckestraße und Große-Leege-Straße in Richtung Konrad-Wolf-Straße wegen Bauarbeiten gesperrt, ab 18. August 2014 bis Mitte Oktober',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20140813.1350.398688.html',
@@ -23238,6 +23238,26 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157922.php',
        data  => <<EOF,
 userdel	q4::inwork 24126,5521 24003,5501 23877,5503
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Köbisstr.: wegen Bauarbeiten unter Umständen gesperrt',
+       type  => 'gesperrt',
+       source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245&page=7',
+       data  => <<EOF,
+#: XXX vor Ort anschauen, ist die Straße tatsächlich gesperrt? Wie lange?
+userdel	2::inwork 7103,11247 6851,11346
+EOF
+     },
+     { from  => 1408173960, # 2014-08-16 09:26
+       until => 1411017000, # 2014-09-18 07:10
+       text  => 'Unter den Linden: Straße zwischen Schadowstr. und Wilhelmstr. Richtung Brandenburger Tor gesperrt, 17.08.2014 bis 18.09.2014',
+       type  => 'gesperrt',
+       source_id => 'IM_022629',
+       data  => <<EOF,
+#: by: http://www.morgenpost.de/berlin/article131305310/Panne-beim-U-Bahnbau-Unter-den-Linden-gesperrt.html
+userdel	1::inwork 9028,12307 8804,12280
 EOF
      },
     );
