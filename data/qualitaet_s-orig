@@ -2570,6 +2570,9 @@ Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 4038,-362 4406,-910
 Alexanderufer: Asphalt	Q0 8321,13033 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8362,13466 8354,13523 8337,13541
 Koppenstr.: Asphalt	Q0 12525,12151 12575,12223
+#: XXX nach den Bauarbeiten im Südteil vielleicht bessere Qualität?
+#: last_checked: 2014-08-19
+#: check_frequency: 14d
 Koppenstr.: Asphalt mit einigen Schäden	Q1+ 12575,12223 12596,12472 12635,12629
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/de/bild_tvo_april_2007_2.shtml
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21089,4731 21124,4420 21146,4229 21170,4111 21260,3848 21310,3762 21325,3715 21324,3691
@@ -7837,6 +7840,9 @@ Bornepfad: Beton	Q0 4332,23059 4312,23157
 Elkesteig: Beton	Q0 4236,23608 4355,23554
 Schildower Str.: Asphalt	Q0 4169,23451 4236,23608 4250,23642 4303,23767 4397,24033 4425,24067 4510,24170 4614,24233 4683,24275 4705,24284 4779,24321
 Arnheidstr.: Kleinsteinpflaster	Q1- 4250,23642 4185,23679 4098,23761
+#: XXX Neubau der Straße von voraussichtlich Mitte 2015 bis voraussichtlich Ende 2016, die Fahrbahn wird dann asphaltiert sein
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129483.php
+#: next_check: 2016-12-31
 Hermsdorfer Str.: Kleinsteinpflaster	Q1- 3957,23981 4073,23980 4240,23985 4256,23985 4305,23987 4397,24033
 Cecilienallee: Kleinsteinpflaster	Q1- 3922,24161 4034,24181
 Cecilienplatz: Gehwegplatten	Q0- 3915,24200 4031,24218
@@ -13433,6 +13439,7 @@ Tile-Brügge-Weg: Asphalt/Beton mit Schäden	Q2+ 2380,20465 2473,20486 2595,20514
 #: XXX wird hier die Fahrbahndecke nach den Bauarbeiten besser sein?
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121218.0805.379437.html (Bauarbeiten bis Mitte 2015)
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/baumassnahmen.html?date=20130816 (Bauarbeiten bis Ende 2015)
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129969.php
 #: next_check: 2015-12-01
 Tile-Brügge-Weg: Asphalt/Beton mit Schäden	Q2+ 2595,20514 2793,20550 2968,20584 2982,20587 3119,20612 3196,20627 3214,20629 3287,20739 3306,20773
 #: confirmed_by ^^^
@@ -14082,8 +14089,10 @@ Arnold-Knoblauch-Ring: asphaltiert	Q0 -7639,312 -7632,204 -7621,108 -7588,86 -75
 Hempstücken: asphaltiert	Q0 -7506,126 -7542,201 -7632,204
 #: XXX Erneuerung der Straße (Asphalt, Verbundsteinpflaster); Ausweisung einer 10km/h-Zone vvv
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.88140.php vvv
+#: next_check: 2014-10-15 (kein offizielles Endedatum angegeben) vvv
 Stölpchenweg: ehemals asphaltiert, mit extrem vielen Schlaglöchern	Q3 -7319,304 -7386,200 -7419,47 -7476,-65
 Stölpchenweg: teils sehr welliger Sandbelag, bei Regen extreme Pfützen	Q3 -7266,-450 -7298,-322 -7447,-138 -7476,-65
+#: next_check ^^^
 #: by ^^^
 #: XXX ^^^
 Stölpchenweg: Kopfsteinpflaster	Q2 -7071,-377 -7184,-396 -7242,-420 -7266,-450
@@ -16692,10 +16701,16 @@ Erieseering: guter Asphalt	Q0 18184,10065 18220,10051 18287,10045 18296,10027
 #: by ^^^
 # 
 #: by: Kerstin Post: vvv
+#: XXX Neugestaltung der Mittelbruchzeile (mit Radweg und Mischverkehrsfläche, evtl. bessere Qualität) bis voraussichtlich Ende 2015 vvv
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129488.php vvv
+#: next_check: 2015-12-31 vvv
 #: confirmed_by: srt
 Mittelbruchzeile: Kopfsteinpflaster	Q2 7491,17793 7557,17809
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Mittelbruchzeile: Asphalt mit Schäden	Q1 7557,17809 7659,17826 7789,17853
+#: next_check ^^^
+#: by: ^^^
+#: XXX ^^^
 #: corrected_by: srt (extrem schlechter Asphalt -> Asphalt, nach den Bauarbeiten)
 Mittelbruchzeile: Asphalt	Q0 7789,17853 7948,17895 8152,17936
 Mittelbruchzeile: schlechtes Kopfsteinpflaster	Q3 8152,17936 8362,17992 8391,17996 8580,18038
@@ -20891,9 +20906,15 @@ Steinmetzstr. (Lichtenrade): schlechte Fahrbahnqualität (Feldstein-Belag)	Q3 105
 Falckensteinstr. (Lichtenrade): schlechte Fahrbahnqualität (Feldstein-Belag)	Q3 10638,-2638 10638,-2735 10679,-2842 10751,-3030 10767,-3064
 #: confirmed_by: srt
 Paplitzer Str.: schlechte Fahrbahnqualität (Feldstein-Belag)	Q3 10735,-3142 10767,-3064 10783,-3033 10831,-2919 10884,-2795 10900,-2756 10927,-2687 10949,-2635
-#: confirmed_by: rainer anders, srt
-#: note: allerdings ist die oberste Deckschicht teilweise schon abgeblättert
-Paplitzer Str.: asphaltiert	Q0- 10949,-2635 10989,-2543 11021,-2464 11027,-2448 11073,-2037
+#: confirmed_by: rainer anders, srt vvv
+#: note: allerdings ist die oberste Deckschicht teilweise schon abgeblättert vvv
+Paplitzer Str.: asphaltiert	Q0- 10949,-2635 10989,-2543 11021,-2464 11027,-2448
+#: XXX wird die Asphaltierung nach den Bauarbeiten besser sein?
+#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf
+#: next_check: 2014-08-22
+Paplitzer Str.: asphaltiert	Q0- 11027,-2448 11073,-2037
+#: note ^^^
+#: confirmed_by ^^^
 #: by: ^^^
 # 
 #: by: Thomas Stolle
@@ -22182,6 +22203,8 @@ Borkener Weg: Beton	Q0 1375,18209 1390,18256 1448,18436 1507,18629
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121024.1305.377018.html
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/strasse494.html
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130531.1320.385519.html
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.131379.php
+#: add_fragezeichen: hat die Straße 494 einen neuen Belag (Verbundsteinpflaster? Asphalt?)?
 #: next_check: 2014-07-01
 Straße 494: fester Sandweg	Q2 7923,23225 8119,22798
 #: confirmed_by: srt
@@ -24227,6 +24250,9 @@ Elsenbruchstr.: Beton	Q0 3140,23008 3167,22970 3198,22720 3214,22578 3232,22416 
 #: by: Andreas Wenzel vvv
 #: corrected_by: srt (schlechter Asphalt -> Beton)
 Bekassinenweg: Beton	Q0 -1452,21978 -1368,22091 -1359,22126 -1340,22219
+#: XXX Neubau entsteht von voraussichtlich Mitte 2015 bis Ende 2016, die Qualität wird dann wahrscheinlich besser sein
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129468.php
+#: next_check: 2016-12-31
 Bekassinenweg: schlechter Asphalt	Q2 -1340,22219 -1301,22347 -1267,22480
 #: by: ^^^
 # 

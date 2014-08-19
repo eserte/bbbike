@@ -3770,16 +3770,34 @@ userdel	2::inwork 7103,11247 6851,11346
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_022629',
-         'until' => 1411017000,
-         'text' => 'Unter den Linden: Straße zwischen Schadowstr. und Wilhelmstr. Richtung Brandenburger Tor gesperrt, 17.08.2014 bis 18.09.2014',
-         'from' => 1408173960,
-         'id' => 2614,
-         'data' => '#: by: http://www.morgenpost.de/berlin/article131305310/Panne-beim-U-Bahnbau-Unter-den-Linden-gesperrt.html
-userdel	1::inwork 9028,12307 8804,12280
+         'until' => undef,
+         'text' => 'Koppenstr.: zwischen Rüdersdorfer Str. und Karl-Marx-Allee Bauarbeiten, Fahrbahn Richtung Norden gesperrt',
+         'from' => undef,
+         'id' => 2615,
+         'data' => 'userdel	q3::inwork; 12575,12223 12596,12472
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1408744800,
+         'text' => 'Horstwalder Straße: Fahrbahnsanierung zwischen Kirchhainer Damm und Horstwalder Str. 24, Sperrung der Fahrbahn, 30.07.2014 bis 22.08.2014',
+         'from' => 1408476026,
+         'id' => 2616,
+         'data' => 'userdel	q4::inwork 11063,-2615 11308,-2535
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf',
+         'until' => 1408744800,
+         'text' => 'Paplitzer Straße: Fahrbahnsanierung zwischen Kirchhainer Damm und Kirchbachstraße, Sperrung der Fahrbahn, 30.07.2014 bis 22.08.2014 ',
+         'from' => 1408476129,
+         'id' => 2617,
+         'data' => 'userdel	q4::inwork 11027,-2448 11073,-2037
+',
+         'type' => 'handicap'
        }
      
 );
