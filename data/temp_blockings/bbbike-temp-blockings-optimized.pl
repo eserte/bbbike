@@ -3058,7 +3058,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-08-08 vvv
+#: last_checked: 2014-08-20 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
@@ -3221,7 +3221,26 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140820.1250.398770.html',
+         'data' => 'userdel	2::temp 5047,10381 5076,10658
+',
+         'periodic' => 1,
+         'until' => 1408910400,
+         'from' => 1408694400,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              8
+                            ]
+                          ],
+         'text' => 'Uhlandstr.: Veranstaltung (Uhlandstraßenfest) zwischen Kurfürstendamm und Lietzenburger Str., Straße gesperrt, 23. und 24. August 2014, jeweils ab 10 Uhr',
+         'id' => 2468,
+         'type' => 'gesperrt'
+       },
        {
          'source_id' => 'IM_022504',
          'until' => 1408672800,
@@ -3796,6 +3815,16 @@ userdel	2::inwork 7103,11247 6851,11346
          'from' => 1408476129,
          'id' => 2617,
          'data' => 'userdel	q4::inwork 11027,-2448 11073,-2037
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.159608.php',
+         'until' => 1408899600,
+         'text' => 'Regattastr.: Einbahnstraßenregelung wegen des 21. Internationalen Motorbootrennens in Grünau, offen Richtung Karolinenhof, 23. und 24. August 2014',
+         'from' => 1408694400,
+         'id' => 2618,
+         'data' => 'userdel	q4::temp; 23252,792 23085,898 22854,1023 22821,1086 22766,1226 22655,1450
 ',
          'type' => 'handicap'
        }

@@ -21194,7 +21194,7 @@ EOF
        source_id => 'IM_022268',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-08-08 vvv
+#: last_checked: 2014-08-20 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
@@ -21795,11 +21795,13 @@ EOF
 userdel	q4::inwork 19398,9833 19459,9842 19536,9853 19669,9876
 EOF
      },
-     { from  => 1376604000, # 2013-08-16 00:00
-       until => 1376863199, # 2013-08-18 23:59
-       text  => 'Uhlandstr.: Veranstaltung (Uhlandstraßenfest) zwischen Kurfürstendamm und Lietzenburger Str., Straße gesperrt, 17. und 18. August 2013',
+     { from  => $isodate2epoch->("2014-08-22 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-08-24 22:00:00"),
+       periodic => 1,
+       recurrences => [['yearly', days => 17, months => 8]],
+       text  => 'Uhlandstr.: Veranstaltung (Uhlandstraßenfest) zwischen Kurfürstendamm und Lietzenburger Str., Straße gesperrt, 23. und 24. August 2014, jeweils ab 10 Uhr',
        type  => 'gesperrt',
-       source_id => 'http://www.kudamm-int.de/strassenfest.html', # und http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130812.1235.387804.html
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140820.1250.398770.html',
        data  => <<EOF,
 userdel	2::temp 5047,10381 5076,10658
 EOF
@@ -23283,6 +23285,15 @@ EOF
        source_id => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf',
        data  => <<EOF,
 userdel	q4::inwork 11027,-2448 11073,-2037
+EOF
+     },
+     { from  => 1408694400, # 2014-08-22 10:00
+       until => 1408899600, # 2014-08-24 19:00
+       text  => 'Regattastr.: Einbahnstraßenregelung wegen des 21. Internationalen Motorbootrennens in Grünau, offen Richtung Karolinenhof, 23. und 24. August 2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.159608.php',
+       data  => <<EOF,
+userdel	q4::temp; 23252,792 23085,898 22854,1023 22821,1086 22766,1226 22655,1450
 EOF
      },
     );
