@@ -3243,8 +3243,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        },
        {
          'source_id' => 'IM_022504',
-         'until' => 1408672800,
-         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, bis 22. August 2014',
+         'until' => 1409925600,
+         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, bis 5. September 2014',
          'from' => 1407357333,
          'id' => 2469,
          'data' => 'userdel	2::inwork 17736,5441 17886,5587
@@ -3462,8 +3462,8 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
-#: last_checked: 2014-07-14
-#: check_frequency: 30d
+#: last_checked: 2014-08-21
+#: check_frequency: 7d
 userdel	q3::inwork 11673,16003 11567,15842
 ',
          'type' => 'handicap'

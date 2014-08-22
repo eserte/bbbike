@@ -21807,8 +21807,8 @@ userdel	2::temp 5047,10381 5076,10658
 EOF
      },
      { from  => 1407357333, # 1403739104, # 1376193600, # 2013-08-11 06:00
-       until => $isodate2epoch->("2014-08-22 04:00:00"), # 1387555200, # 2013-12-20 17:00
-       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, bis 22. August 2014',
+       until => $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
+       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, bis 5. September 2014',
        type  => 'gesperrt',
        source_id => 'IM_022504',
        data  => <<EOF,
@@ -22641,8 +22641,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann?
-#: last_checked: 2014-07-14
-#: check_frequency: 30d
+#: last_checked: 2014-08-21
+#: check_frequency: 7d
 userdel	q3::inwork 11673,16003 11567,15842
 EOF
      },
