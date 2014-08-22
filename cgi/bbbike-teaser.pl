@@ -36,6 +36,7 @@ sub teaser {
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_ios1(),
 				teaser_android0(),
+				teaser_wp0(),
 				(0 ? teaser_perltk_newrelease() : teaser_perltk()),
 				#teaser_other_cities(),
 				teaser_other_cities_tagcloud(),
@@ -55,6 +56,7 @@ sub teaser {
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_ios1(),
 				teaser_android0(),
+				teaser_wp0(),
 				(0 ? teaser_perltk_newrelease() : teaser_perltk()),
 				#teaser_other_cities(),
 				teaser_other_cities_tagcloud(),
@@ -402,6 +404,26 @@ EOF
 	<<EOF;
 <div class="teaser">
   <a href="$url"><b>bbybike auf iPhone</b></a> @{[ _teaser_new_html $new_until ]} &#x2014; verwendet die BBBike-Routensuche
+</div>
+EOF
+    }
+}
+
+sub teaser_wp0 {
+    my $baseurl = "http://www.windowsphone.com/s?appid=6cc2f571-7c0e-414c-9e71-806162601d7a";
+    my $new_until = "2014-11-22";
+    if ($lang eq 'en') {
+	my $url = "$baseurl&amp;l=en";
+	<<EOF;
+<div class="teaser">
+  <a href="$url"><b>bbbike for Windows Phone</b></a> @{[ _teaser_new_html $new_until ]}
+</div>
+EOF
+    } else {
+	my $url = "$baseurl&amp;l=de";
+	<<EOF;
+<div class="teaser">
+  <a href="$url"><b>bbbike für Windows Phone</b></a> @{[ _teaser_new_html $new_until ]}
 </div>
 EOF
     }
