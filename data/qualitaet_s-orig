@@ -2570,10 +2570,11 @@ Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 4038,-362 4406,-910
 Alexanderufer: Asphalt	Q0 8321,13033 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8362,13466 8354,13523 8337,13541
 Koppenstr.: Asphalt	Q0 12525,12151 12575,12223
-#: XXX nach den Bauarbeiten im Südteil vielleicht bessere Qualität?
-#: last_checked: 2014-08-19
-#: check_frequency: 14d
-Koppenstr.: Asphalt mit einigen Schäden	Q1+ 12575,12223 12596,12472 12635,12629
+#: XXX nach den Bauarbeiten vielleicht bessere Qualität?
+#: last_checked: 2014-08-22
+#: next_check: 2014-08-25
+Koppenstr.: Asphalt mit einigen Schäden	Q1+ 12575,12223 12596,12472
+Koppenstr.: Asphalt mit einigen Schäden	Q1+ 12596,12472 12635,12629
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/de/bild_tvo_april_2007_2.shtml
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21089,4731 21124,4420 21146,4229 21170,4111 21260,3848 21310,3762 21325,3715 21324,3691
 #: by: http://www.reinickendorf.de/index_7745_de.html
@@ -23592,7 +23593,7 @@ Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
 Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: next_check_id: AMZIRKUS-2014
 #: XXX danach wohl Q0
-#: last_checked: 2014-08-12
+#: last_checked: 2014-08-22
 Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938

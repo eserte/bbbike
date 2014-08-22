@@ -17098,14 +17098,17 @@ EOF
 userdel	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
-     { from  => $isodate2epoch->("2013-11-24 00:00:00"), # 1353279600, # 2012-11-19 00:00, # 1290380400, # PERIODISCH! # undef, # 
-       until => $isodate2epoch->("2013-12-26 23:59:59"), # 1356562799, # 2012-12-26 23:59, # 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+     { from  => $isodate2epoch->("2014-11-23 00:00:00"), # 1 Tag Vorlauf # 1353279600, # 2012-11-19 00:00, # 1290380400, # PERIODISCH! # undef, # 
+       until => $isodate2epoch->("2014-12-26 23:59:59"), # 1356562799, # 2012-12-26 23:59, # 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 11]],
-       text  => 'Winterwelt am Potsdamer Platz vom 25. November 2013 bis 26. Dezember 2013',
+       text  => 'Winterwelt am Potsdamer Platz vom 24. November 2014 bis 26. Dezember 2014',
        type  => 'gesperrt',
        source_id => 'http://www.winterwelt-berlin.de/',
        data  => <<EOF,
+#: XXX Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), aber auch schon hier Einschränkungen? Weihnachtsmarkt erst ab dem 24.11.2014
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=962671
+#: next_check: 2014-11-01
 userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296 8278,11257
 #: XXX_prog "3::temp" geht nicht?
 userdel	3 8427,11365 8389,11378 8374,11479
@@ -22044,8 +22047,8 @@ userdel	q4::temp 8892,12576 8766,12541
 EOF
      },
      { from  => 1380520800, # 2013-09-30 08:00
-       until => 1411768800, # 2014-09-27 00:00
-       text  => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist auch für Radfahrer nicht passierbar, 01.10.2013 bis 26.09.2014 ',
+       until => $isodate2epoch->("2014-09-30 23:59:59"), # 1411768800, # 2014-09-27 00:00
+       text  => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist auch für Radfahrer nicht passierbar, 01.10.2013 bis 30.09.2014 ',
        type  => 'gesperrt',
        source_id => '131100196',
        data  => <<EOF,
@@ -22729,7 +22732,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-08-07
+#: last_checked: 2014-08-22
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 EOF

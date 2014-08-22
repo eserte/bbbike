@@ -2289,7 +2289,32 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.winterwelt-berlin.de/',
+         'data' => '#: XXX Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), aber auch schon hier Einschränkungen? Weihnachtsmarkt erst ab dem 24.11.2014
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=962671
+#: next_check: 2014-11-01
+userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296 8278,11257
+#: XXX_prog "3::temp" geht nicht?
+userdel	3 8427,11365 8389,11378 8374,11479
+userdel	3 8374,11479 8389,11378 8427,11365
+',
+         'periodic' => 1,
+         'until' => 1419634799,
+         'from' => 1416697200,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Winterwelt am Potsdamer Platz vom 24. November 2014 bis 26. Dezember 2014',
+         'id' => 1997,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3333,8 +3358,8 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        undef,
        {
          'source_id' => '131100196',
-         'until' => 1411768800,
-         'text' => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist auch für Radfahrer nicht passierbar, 01.10.2013 bis 26.09.2014 ',
+         'until' => 1412114399,
+         'text' => 'Zwischen Birkholz und Zepernick: Neubau der Autobahnbrücke, Straße ist auch für Radfahrer nicht passierbar, 01.10.2013 bis 30.09.2014 ',
          'from' => 1380520800,
          'id' => 2493,
          'data' => 'userdel	2::inwork 21169,27133 21320,27078
@@ -3514,7 +3539,7 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
          'from' => undef,
          'id' => 2563,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-08-07
+#: last_checked: 2014-08-22
 #: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 ',

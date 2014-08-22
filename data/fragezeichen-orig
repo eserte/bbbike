@@ -29,7 +29,7 @@ St¸lerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaﬂnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-08-21
+#: last_checked: 2014-08-22
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12425,14459 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -216,7 +216,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2014-08-07
+#: last_checked: 2014-08-22
 #: next_check: 2015-09-30
 Warschauer Str: Radspuren geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -755,12 +755,13 @@ B¸rknerstr.: wird hier eine Fahrradstraﬂe eingerichtet?	?::projected 11673,9720 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/4508103636166975/36166975/00104984/84-Anlagen/02/116-2013-1Blatt1ausB-PlanXVII-50aa-16012012.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2014
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5889 (Festsetzung)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2014
 #: last_checked: 2014-06-29 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
-Planstraﬂe 1: Qualit‰t? Name vielleicht Kirchdorfer Str.?	?::projected 19842,9895 19853,9774 19857,9682
+Planstraﬂe 1: Qualit‰t? Name wahrscheinlich Kirchdorfer Str.?	?::projected 19842,9895 19853,9774 19857,9682
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
-Planstraﬂe 2 (Fortsetzung Rˆmerweg): Name vielleicht Frauenauer Str.? Qualit‰t etc?	?::projected 19663,9757 19853,9774
+Planstraﬂe 2 (Fortsetzung Rˆmerweg): Name wahrscheinlich Frauenauer Str.? Qualit‰t etc?	?::projected 19663,9757 19853,9774
 # REMOVED (in strassen) --- #: XXX PLZ=10318 --- Planstraﬂe 3 -> Viechtacher Str.: Qualit‰t etc?	?::projected 19657,9666 19732,9678 19801,9680 19857,9682 19893,9683
 Planstraﬂe 4 -> Eisensteiner Str.: Qualit‰t der Straﬂe?	?::inwork 19732,9678 19727,9484
 #: XXX Rinchnacher Weg|Karlshorst|10318
@@ -778,7 +779,7 @@ Planstraﬂe 8: Name vielleicht Regener Str.? Qualit‰t?	?::projected 19869,9151 19
 #: osm_watch: way id="193373966" version="3"
 Straﬂe in Bau: genaue Lage, Name (hier auch die Regener Str.?), Qualit‰t?	?::inwork 19626,9166 19869,9151
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
-Planstraﬂe 9: Name vielleicht Patersdorfer Str.? Qualit‰t etc?	?::projected 19700,9040 19759,9041 19869,9151
+Planstraﬂe 9: Name wahrscheinlich Patersdorfer Str.? Qualit‰t etc?	?::projected 19700,9040 19759,9041 19869,9151
 Planstraﬂe (evtl. 10): Name vielleicht auch Regener Str.? Qualit‰t?	?::projected 19885,9400 19795,9407
 #: by: ^^^
 #: by: ^^^
@@ -789,7 +790,7 @@ Planstraﬂe (evtl. 10): Name vielleicht auch Regener Str.? Qualit‰t?	?::projected
 # 
 # REMOVED (weitgehend realisiert) --- #: by: http://www.moz.de/artikel-ansicht/dg/0/1/288137 --- #: by: http://de.wikipedia.org/wiki/Autobahndreieck_Schwanebeck --- #: by: http://upload.wikimedia.org/wikipedia/commons/4/4c/Map_Comparision_AD_Schwanebeck_AK_Barnim.svg --- #: by: http://www.ls.brandenburg.de/sixcms/detail.php/bb1.c.257283.de?template=ls_artikel_special_nav_d&nav_level=3 --- #: next_check: 2013-09-01 --- Umbau zum Kreuz Barnim: damit auch Verschenkung der B2 direkt zur Autobahn; die jetzige B2 durch Schwanebeck wird wahrscheinlich zur Landesstraﬂe	?::inwork 20788,23350 20281,23156 19363,23247 19043,23084
 # 
-#: last_checked: 2014-04-23
+#: last_checked: 2014-08-22
 #: check_frequency: 120d
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verl‰ngert?	? 8632,11912 8783,11959
 # 
@@ -1001,7 +1002,7 @@ Wolzenseeweg: Qualit‰t? Straﬂe bereits fertiggestellt? Wird es eine ‹berquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straﬂe	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2014-06-18 vvv
+#: last_checked: 2014-08-22 vvv
 #: check_frequency: 100d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
