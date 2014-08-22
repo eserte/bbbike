@@ -413,14 +413,14 @@ sub teaser_wp0 {
     my $baseurl = "http://www.windowsphone.com/s?appid=6cc2f571-7c0e-414c-9e71-806162601d7a";
     my $new_until = "2014-11-22";
     if ($lang eq 'en') {
-	my $url = "$baseurl&amp;l=en";
+	my $url = $baseurl;
 	<<EOF;
 <div class="teaser">
   <a href="$url"><b>bbbike for Windows Phone</b></a> @{[ _teaser_new_html $new_until ]}
 </div>
 EOF
     } else {
-	my $url = "$baseurl&amp;l=de";
+	my $url = $baseurl;
 	<<EOF;
 <div class="teaser">
   <a href="$url"><b>bbbike für Windows Phone</b></a> @{[ _teaser_new_html $new_until ]}
