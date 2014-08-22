@@ -37,6 +37,7 @@ my $plzfield = PLZ::FILE_ZIP();
 my $plzdata;
 my $addstr;
 my $do_check_coords;
+my $check_coords_limit;
 my $do_reverse_check;
 my $ignore_plz_warnings;
 
@@ -48,11 +49,12 @@ GetOptions("plzdata=s"  => \$plzdata,
 	   "ignorebracketpart!" => \$ignore_bracket_part, # ignore [...]
 	   "ignoreplzwarnings!" => \$ignore_plz_warnings,
 	   "checkcoords!" => \$do_check_coords,
+	   "checkcoordslimit=i" => \$check_coords_limit,
 	   "reversecheck" => \$do_reverse_check,
 	  ) or die <<EOF;
 usage: $0 [-plzdata plzdatafile] [-plzfield fieldindex]
 	  [-addstr bbdfile]
-	  [-[no]checkcoords] [-reversecheck]
+	  [-[no]checkcoords [-checkcoordslimit ...]] [-reversecheck]
 	  [-[no]ignoreparens] [-[no]ignorebracketpart] [-ignoreplzwarnings]
 	  -data bbdfile
 EOF
@@ -159,9 +161,11 @@ my $check_coords = sub {
 		}
 	    }
 	}
-	warn "Can't find coordinate $check_against for $lastname @lastbezirk" .
-	    (defined $min_dist ? ", distance is " . int($min_dist) . "m" : '') .
-		"\n";
+	if (!$check_coords_limit || (defined $min_dist && $min_dist > $check_coords_limit)) {
+	    warn "Can't find coordinate $check_against for $lastname @lastbezirk" .
+		(defined $min_dist ? ", distance is " . int($min_dist) . "m" : '') .
+		    "\n";
+	}
     }
 };
 
