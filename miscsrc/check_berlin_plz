@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,6 +17,8 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
+
+use Getopt::Long;
 
 use Geography::Berlin_DE;
 use PLZ;
@@ -77,26 +79,41 @@ for my $bezirk_def (@raw_data) {
     $bezirk_to_plz{$bezirk} = { map { ($_,1) } @$bezirk_def };
 }
 
-my $plz = PLZ->new;
-$plz->load;
+my $single_check;
+GetOptions("single-check=s" => \$single_check)
+    or die "usage: $0 [--single-check 'Street|Citypart|Zip']\n";
 
 my @errors;
 my @warnings;
-for my $rec (@{ $plz->{Data} }) {
-    my $citypart = $rec->[PLZ::FILE_CITYPART]
-	or do { push @warnings, "No citypart for $rec->[PLZ::FILE_NAME]"; next };
-    my $plz = $rec->[PLZ::FILE_ZIP]
-	or do { push @warnings, "No plz for $rec->[PLZ::FILE_NAME]"; next };
-    my $super_citypart = Geography::Berlin_DE->get_supercitypart_for_any($citypart)
-	or do { push @warnings, "Cannot find super citypart for $citypart"; next };
-    if (!exists $bezirk_to_plz{$super_citypart}->{$plz}) {
-	push @errors, "Unexpected plz <$plz> for super citypart <$super_citypart>, street <$rec->[PLZ::FILE_NAME]>";
+
+if ($single_check) {
+    my $rec = [ split /\|/, $single_check ];
+    do_check($rec);
+} else {
+    my $plz = PLZ->new;
+    $plz->load;
+    for my $rec (@{ $plz->{Data} }) {
+	do_check($rec);
     }
 }
 
 require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@warnings, \@errors],[qw(warnings errors)])->Indent(1)->Useqq(1)->Dump; # XXX
 
 exit(@errors == 0 ? 0 : 1);
+
+sub do_check {
+    my $rec = shift;
+
+    my $citypart = $rec->[PLZ::FILE_CITYPART]
+	or do { push @warnings, "No citypart for $rec->[PLZ::FILE_NAME]"; return };
+    my $plz = $rec->[PLZ::FILE_ZIP]
+	or do { push @warnings, "No plz for $rec->[PLZ::FILE_NAME]"; return };
+    my $super_citypart = Geography::Berlin_DE->get_supercitypart_for_any($citypart)
+	or do { push @warnings, "Cannot find super citypart for $citypart"; return };
+    if (!exists $bezirk_to_plz{$super_citypart}->{$plz}) {
+	push @errors, "Unexpected plz <$plz> for super citypart <$super_citypart>, street <$rec->[PLZ::FILE_NAME]>";
+    }
+}
 
 __END__
 
@@ -108,5 +125,10 @@ check_berlin_plz - checks ZIPs against citypart list
 
 Anhand einer Tabelle von statistik-berlin.de wird geprüft, ob alle
 Bezirk-PLZ-Kombinationen in Berlin.coords.data korrekt sind.
+
+Mit der Option --single-check kann die Überprüfung für eine einzelne
+Zeile gemacht werden:
+
+    check_berlin_plz --single-check='Priesterweg|Schöneberg|12157'
 
 =cut
