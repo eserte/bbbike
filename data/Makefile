@@ -1300,7 +1300,7 @@ report-checks:
 	@echo Now doing checks...
 
 do-checks:	.check_empty_lines \
-	.check_strassen1 .check_strassen2 .check_strassen_potsdam .check_strassen_cont .check_strassen_consecutive \
+	.check_strassen1 .check_strassen2 .check_strassen3 .check_strassen_potsdam .check_strassen_cont .check_strassen_consecutive \
 	.check_plaetze1 .check_plaetze2 .check_strassen_plaetze_unique \
 	.check_missing_streets \
 	.check_hoehe .check_hoehe2 \
@@ -1348,6 +1348,12 @@ check-disabled:
 
 .check_strassen2:	strassen landstrassen landstrassen2
 	$(CHECK_DOUBLE) -special strassen -linesegs strassen landstrassen landstrassen2
+	@touch $@
+
+# Check that coordinates in strassen and Berlin.coords.data are
+# approximately the same (allowing being off by -checkcoordslimit)
+.check_strassen3:	.strassen.tmp add_str Berlin.coords.data
+	$(CHECK_STR_PLZ) -checkcoords -checkcoordslimit 270 -data .strassen.tmp
 	@touch $@
 
 .check_strassen_potsdam:	landstrassen add_str_potsdam Potsdam.coords.data
