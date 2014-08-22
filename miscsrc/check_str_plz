@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2004,2005,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2004,2005,2010,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -317,7 +317,12 @@ between Berlin.coords.data and strassen data by sorting by distance.
 For this, my C<psort> script (sort with a custom perl sub) may be
 used:
 
-    ./check_str_plz -checkcoords |& psort -r -n -e 'm{distance is (\d+)m} ? $1 : 0' | less
+    ./check_str_plz -checkcoords -data .strassen.tmp |& psort -r -n -e 'm{distance is (\d+)m} ? $1 : 0' | less
+
+(Note: F<.strassen.tmp> is used here instead of the default
+F<strassen>, because the latter also contains entries from
+F<routing_helper-orig>, which are typically not mentioned in
+F<Berlin.coords.data>)
 
 =head1 SEE ALSO
 
