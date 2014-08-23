@@ -42,7 +42,7 @@ use BBBikeUtil qw(bbbike_root);
 use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
 
 use vars qw($UNINTERESTING_TAGS);
-$UNINTERESTING_TAGS = qr{^(name|created_by|source|url)$};
+$UNINTERESTING_TAGS = qr{^(name|created_by|source|url|seamark:.*)$};
 
 my $ltlnqr = qr{([-+]?\d+(?:\.\d+)?)};
 my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.osm(?:\.gz|\.bz2)?$};
@@ -458,6 +458,7 @@ sub plot_osm_files {
 	    # following some stuff which is not that interesting for BBBike editing
 	    if ((exists $tag{'railway'} && ($tag{'railway'} =~ ABANDONED_RX || $tag{'railway'} =~ PLANNED_RX)) ||
 		(exists $tag{'highway'} && ($tag{'highway'} =~ ABANDONED_RX || $tag{'highway'} =~ PLANNED_RX)) ||
+		(exists $tag{'disused'} && $tag{'disused'} eq 'yes') ||
 		(exists $tag{'man_made'} && $tag{'man_made'} eq 'pipeline') ||
 		exists $tag{'barrier'} ||
 		exists $tag{'mj10777:admin_levels'}
@@ -484,6 +485,7 @@ sub plot_osm_files {
 		     (exists $tag{'railway'} && $tag{'railway'} =~ CONSTRUCTION_RX)) {
 		$item_args{'-dash'} = '.'; 
 	    } elsif (exists $tag{'boundary'}) {
+		next if $tag{'boundary'} =~ m{^aerial_view}; # aerial_view and aerial_views
 		$item_args{'-dash'} = '.-'; # looks like a boundary, n'est-ce pas?
 	    } elsif (exists $tag{'obsolete_boundary'}) {
 		next;
@@ -517,7 +519,7 @@ sub plot_osm_files {
 	    } else {
 		my $is_area = (exists $tag{'area'} ? $tag{'area'} eq 'yes' :
 			       exists $tag{'landuse'} ? 1 :
-			       $nodes[0] eq $nodes[-1] && ($tag{'junction'}||'') ne 'roundabout' && ($tag{'highway'}||'') eq ''
+			       $nodes[0] eq $nodes[-1] && ($tag{'junction'}||'') ne 'roundabout' && ($tag{'highway'}||'') eq '' && !exists $tag{'boundary'}
 			      );
 
 		my $tags = join(" ", map { "$_=$tag{$_}" } grep { $_ !~ $UNINTERESTING_TAGS } keys %tag);
