@@ -2823,7 +2823,7 @@ EOF
        text  => 'B 188; westl. Rathenow, zw. Kreisel u. Abzw. Großwudicke Straßenanbindung B188n Vollsperrung 19.09.2005-07.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -67681,19301 -67871,19214
+userdel	2 -67603,19286 -67835,19238 -68086,19042 -68073,18984
 EOF
      },
      { from  => 1126648800, # 2005-09-14 00:00
@@ -4272,7 +4272,7 @@ EOF
        text  => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 20.04.2006-31.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -89568,59293 -89549,58784
+userdel	q4 -89559,59310 -89598,59195
 EOF
      },
      { from  => 1145224800, # 2006-04-17 00:00
@@ -4917,7 +4917,7 @@ EOF
        text  => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-31.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -89549,58784 -89568,59293
+userdel	q4::inwork -89598,59195 -89559,59310
 EOF
      },
      { from  => 1150754400, # 2006-06-20 00:00
@@ -4925,7 +4925,7 @@ EOF
        text  => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-31.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -89568,59293
+userdel	q4::inwork -89559,59310
 EOF
      },
      { from  => 1151013248, # 2006-06-22 23:54
@@ -5850,7 +5850,7 @@ EOF
        text  => 'L 010 Havelberger Str. OD Bad Wilsnack Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 04.09.2006-29.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork -89549,58784 -89568,59293
+userdel	1::inwork -89598,59195 -89559,59310
 EOF
      },
      { from  => 1157234400, # 2006-09-03 00:00
@@ -6324,7 +6324,7 @@ EOF
        text  => 'L 011 Wittenberger Str. OD Bad Wilsnack, zw. Karthanebrücke u. Wedenstr. Kanal- und Straßenbau Vollsperrung 11.10.2006-22.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -91452,59580 -89568,59293
+userdel	q4::inwork -91460,59609 -90506,59512 -89559,59310
 EOF
      },
      { from  => 1160517600, # 2006-10-11 00:00
@@ -12834,7 +12834,7 @@ EOF
        text  => 'B 107 Glöwen - B 5 Gumtow Durchlass vor Brücke über die Karthane bei Glöwen Durchlassneubau Vollsperrung 25.10.2008-26.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -80266,56143 -80074,58321
+userdel	2::inwork -80128,58278
 EOF
      },
      { from  => 1222725600, # 2008-09-30 00:00
@@ -13991,8 +13991,8 @@ EOF
        text  => 'K 6315 Nennhausen - Rhinsmühlen zw. Nennhausen und Kotzen Straßenbau Vollsperrung 04.05.2009-26.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -50010,23562 -50201,23411 -50255,22794 -51061,21342
-userdel	2::inwork -50149,24689 -50048,24475 -49883,24097
+userdel	2::inwork -50123,23630 -50271,23531 -50389,22734 -51061,21342
+userdel	2::inwork -50149,24689 -50048,24475 -49945,24243
 EOF
      },
      { from  => 1241647200, # 2009-05-07 00:00
@@ -16621,7 +16621,7 @@ EOF
        text  => 'B 107 Glöwen - B 5 Gumtow Durchlass zw. Glöwen und Abzw. Klein Leppin Durchlassneubau Vollsperrung 17.10.2009-31.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -80266,56143 -80074,58321
+userdel	2::inwork -80128,58278
 EOF
      },
      { from  => 1255212000, # 2009-10-11 00:00
@@ -19015,7 +19015,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/W-SG33-K/11/033',
        data  => <<EOF,
-userdel	2::inwork -89568,59293 -91452,59580
+userdel	2::inwork -89559,59310 -90506,59512 -91460,59609
 EOF
      },
      { from  => 1301342447, # 2011-03-28 22:00
@@ -23111,7 +23111,7 @@ userdel	q4::inwork 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,
 EOF
      },
      { from  => 1407354971, # 2014-08-06 21:56
-       until => 1414796400, # 2014-11-01 00:00
+       until => 1408819563, # 1414796400, # 2014-11-01 00:00
        text  => 'Heiligengrabe: B189: Ausbau der Ortsdurchfahrt OD Heiligengrabe, Vollsperrung, 08.07.2013 bis 31.10.2014 ',
        type  => 'gesperrt',
        source_id => 'LS/723-K/13/046',

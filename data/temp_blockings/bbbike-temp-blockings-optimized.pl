@@ -3684,16 +3684,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/723-K/13/046',
-         'until' => 1414796400,
-         'text' => 'Heiligengrabe: B189: Ausbau der Ortsdurchfahrt OD Heiligengrabe, Vollsperrung, 08.07.2013 bis 31.10.2014 ',
-         'from' => 1407354971,
-         'id' => 2599,
-         'data' => 'userdel	2::inwork -62215,80737 -61590,80895
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '146600440',
          'until' => 1420066800,
@@ -3824,25 +3815,8 @@ userdel	2::inwork 7103,11247 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1408744800,
-         'text' => 'Horstwalder Straße: Fahrbahnsanierung zwischen Kirchhainer Damm und Horstwalder Str. 24, Sperrung der Fahrbahn, 30.07.2014 bis 22.08.2014',
-         'from' => 1408476026,
-         'id' => 2616,
-         'data' => 'userdel	q4::inwork 11063,-2615 11308,-2535
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf',
-         'until' => 1408744800,
-         'text' => 'Paplitzer Straße: Fahrbahnsanierung zwischen Kirchhainer Damm und Kirchbachstraße, Sperrung der Fahrbahn, 30.07.2014 bis 22.08.2014 ',
-         'from' => 1408476129,
-         'id' => 2617,
-         'data' => 'userdel	q4::inwork 11027,-2448 11073,-2037
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.159608.php',
          'until' => 1408899600,

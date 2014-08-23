@@ -2845,9 +2845,9 @@ Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
 Greifswalder Str.	3nocross::ignrte 12422,14692 12473,14763 12528,14845
 Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 12528,14845 12473,14763 12628,14650
 Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12628,14650 12473,14763 12422,14692
-Danziger Str.	3nocross::ignrte 12621,14313 12425,14459 12317,14535
-Danziger Str. -> Eugen-Schönhaar-Str.: Danziger Str.	3::igndisp 12317,14535 12425,14459 12496,14515
-Eugen-Schönhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12496,14515 12425,14459 12621,14313
+Danziger Str.	3nocross::ignrte 12621,14313 12407,14470 12317,14535
+Danziger Str. -> Eugen-Schönhaar-Str.: Danziger Str.	3::igndisp 12317,14535 12407,14470 12494,14532
+Eugen-Schönhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12494,14532 12407,14470 12621,14313
 Straßenbahntrasse	3nocross::ignrte 13072,15590 13229,15692 13316,15758
 Greifswalder Str. -> Cohnstr.: Straßenbahntrasse	3::igndisp 13072,15590 13229,15692 13197,15734
 Cohnstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 13197,15734 13229,15692 13316,15758
