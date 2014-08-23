@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.22;
+$VERSION = 1.23;
 
 use vars qw(%images);
 
@@ -70,7 +70,7 @@ sub register {
     }
     $main::info_plugins{__PACKAGE__ . '_OpenStreetMap'} =
 	{ name => 'OpenStreetMap',
-	  callback => sub { showmap_openstreetmap_de(@_) },
+	  callback => sub { showmap_openstreetmap(osmmarker => 0, @_) },
 	  callback_3 => sub { show_openstreetmap_menu(@_) },
 	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
 	};
@@ -558,8 +558,8 @@ sub show_openstreetmap_menu {
 	 -command => sub { showmap_openstreetmap(osmmarker => 1, %args) },
 	);
     $link_menu->command
-	(-label => 'OpenStreetMap.org ' . ($lang eq 'de' ? '(ohne Marker)' : '(without marker)'),
-	 -command => sub { showmap_openstreetmap(osmmarker => 0, %args) },
+	(-label => 'OpenStreetMap.de',
+	 -command => sub { showmap_openstreetmap_de(%args) },
 	);
     if (USE_SAUTTER_MAP) {
 	$link_menu->command
