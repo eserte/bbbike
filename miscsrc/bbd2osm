@@ -938,6 +938,9 @@ sub handle_area_like {
     push @node_ids, $node_ids[0] unless $node_ids[0] == $node_ids[$#node_ids];
 
     my $name = $r->[Strassen::NAME];
+    if ($optimize_for == OPTIMIZE_FOR_MAPNIK && defined $name && $name =~ m{^\(}) { # e.g. "(Kolonien in Schmargendorf)"
+	undef $name;
+    }
     _xmlify($name);
 
     print $wayfh qq{<way id="$next_way_id" visible="true">\n};
@@ -1491,6 +1494,9 @@ sub format_waterway_label {
     if ($optimize_for == OPTIMIZE_FOR_MAPNIK) {
 	if (defined $s) {
 	    $s =~ s{\|.*}{};
+	    if ($s =~ m{^\(}) { # e.g. "(See im Tiergarten)"
+		undef $s;
+	    }
 	}
     }
     $s;
