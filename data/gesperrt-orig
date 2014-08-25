@@ -1933,8 +1933,8 @@ tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40 14481,13143
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35 14383,10036
 #: note: die beiden Stufengruppen sind so weit entfernt, dass ein Aufsitzen nich lohnt
 tragen (1+3 Stufen)	0:30 13232,12628
-tragen (34 Stufen)	0:40 14787,10972
-tragen (33 Stufen)	0:40 14764,10877
+# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- tragen (34 Stufen)	0:40 14787,10972
+# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- tragen (33 Stufen)	0:40 14764,10877
 tragen oder Aufzug benutzen	0:40 14839,10853
 tragen oder Aufzug benutzen	0:40 14845,10954
 tragen (Durchgang unter der U-Bahn zur Warschauer Str., 15 Stufen)	0:20 13437,10992
@@ -2570,9 +2570,7 @@ Viechtacher Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19657,9666 19732,9
 Eisensteiner Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19732,9678 19727,9484
 #: last_checked ^^^
 # 
-#: by: http://www.tagesspiegel.de/berlin/grossbaustelle-in-berlin-bauarbeiten-am-ostkreuz-verzoegern-sich-bis-2017/8210208.html (Termin Wiederaufbau)
-#: next_check: 2018-01-01
-Fußgängerbrücke S-Ostkreuz: Abriss und Neubau	2::inwork 14794,10844 14764,10877 14787,10972 14798,10985
+# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- #: by: http://www.tagesspiegel.de/berlin/grossbaustelle-in-berlin-bauarbeiten-am-ostkreuz-verzoegern-sich-bis-2017/8210208.html (Termin Wiederaufbau) --- #: next_check: 2018-01-01 --- Fußgängerbrücke S-Ostkreuz: Abriss und Neubau	2::inwork 14794,10844 14764,10877 14787,10972 14798,10985
 # 
 #: last_checked: 2014-05-17
 #: check_frequency: 360d

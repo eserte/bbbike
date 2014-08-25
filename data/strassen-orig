@@ -487,7 +487,7 @@ Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,
 Kynaststr.	N 14805,10518 14832,10512 14843,10621 14882,10732 14906,10820
 #: XXX wann erfolgt der Rückbau der Ersatzstraße?
 #: osm_watch: way id="58929537" version="30"
-#: last_checked: 2014-08-20
+#: last_checked: 2014-08-24
 #: check_frequency: 60d
 Kynaststr. [Ersatzstraße]	NN 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
 (Alt-Stralau - Spreeufer)	NN 14652,10201 14569,10055
@@ -5265,7 +5265,7 @@ Sonntagstr.	N 14752,11041 14669,11152 14598,11245 14535,11327 14434,11465
 Lückstr.	N 15870,10938 15903,10906 16049,10844
 Lückstr.	H 16049,10844 16085,10844 16153,10818 16300,10753 16313,10747 16468,10695 16597,10651 16601,10650 16647,10632
 #: XXX wird dieser Abschnitt auch als "Rummelsburger Str." ausgeschildert?
-#: osm_watch: way id="198585468" version="5"
+#: osm_watch: way id="198585468" version="6"
 # REMOVED (nein, Radweg wird hier definitiv nicht gebaut) ---- #: XXX außerdem: mit Bau des Aldi-Marktes auf der westlichen Seite wird vielleicht auch der Gehweg neu gebaut, dann mit Radweg?
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5490
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014
@@ -12460,7 +12460,7 @@ Griechische Allee	N 17962,6674 18008,6672 18079,6678 18159,6642 18273,6606 18429
 Griechische Allee	N 18494,6588 18339,6660 18254,6679 18125,6694 18076,6693 18002,6695 17962,6674
 Großstr.	N 18574,6401 18483,6460 18457,6490 18429,6582
 Schillerpromenade (Oberschöneweide)	N 18191,6363 18219,6447 18244,6518 18273,6606
-(Fußgängerbrücke Ostkreuz)	NN 14798,10985 14787,10972 14764,10877 14794,10844
+# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fußgängerbrücke Ostkreuz)	NN 14798,10985 14787,10972 14764,10877 14794,10844
 (Ringbahnsteig Ostkreuz)	NN 14794,10844 14839,10853 14862,10942 14845,10954
 Bernkastler Str.	N 6460,3643 6660,3739 6760,3835
 Dürkheimer Str.	N 6704,3662 6794,3755

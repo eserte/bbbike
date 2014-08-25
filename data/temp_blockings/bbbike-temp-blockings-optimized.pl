@@ -3246,26 +3246,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140820.1250.398770.html',
-         'data' => 'userdel	2::temp 5047,10381 5076,10658
-',
-         'periodic' => 1,
-         'until' => 1408910400,
-         'from' => 1408694400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Uhlandstr.: Veranstaltung (Uhlandstraßenfest) zwischen Kurfürstendamm und Lietzenburger Str., Straße gesperrt, 23. und 24. August 2014, jeweils ab 10 Uhr',
-         'id' => 2468,
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_022504',
          'until' => 1409925600,
@@ -3429,16 +3410,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        undef,
        undef,
        undef,
-       {
-         'source_id' => '146000827',
-         'until' => 1408917600,
-         'text' => 'Niederfinow: L29: Rückbau der alten Fahrbahn und Asphalteinbau auf der neuen Trasse der L29, OD Niederfinow, Hebewerkstraße, Vollsperrung, 18.08.2014 bis 24.08.2014 ',
-         'from' => 1408226400,
-         'id' => 2539,
-         'data' => 'userdel	2::inwork 46132,49993 46390,50091
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1530395999,
          'text' => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2018',
@@ -3674,16 +3646,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.149073.php',
-         'until' => 1408831199,
-         'text' => 'Radenzer Straße und Heidemühler Weg: Fahrbahninstandsetzung, Fahrbahn in Abschnitten gesperrt, vom 06.08.2014 bis zum 23.08.2014',
-         'from' => 1407189600,
-         'id' => 2598,
-         'data' => 'userdel	q4::inwork 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,6503
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => '146600440',
@@ -3750,27 +3713,7 @@ userdel	q4::inwork; 16514,15092 16430,15168
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157630.php',
-         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
-',
-         'periodic' => 1,
-         'until' => 1408917599,
-         'from' => 1408622400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              21,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.8.2014 bis 24.8.2014',
-         'id' => 2610,
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157925.php',
          'until' => 1411768800,
@@ -3812,18 +3755,6 @@ userdel	2::inwork 7103,11247 6851,11346
          'from' => undef,
          'id' => 2615,
          'data' => 'userdel	q3::inwork; 12575,12223 12596,12472
-',
-         'type' => 'handicap'
-       },
-       undef,
-       undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.159608.php',
-         'until' => 1408899600,
-         'text' => 'Regattastr.: Einbahnstraßenregelung wegen des 21. Internationalen Motorbootrennens in Grünau, offen Richtung Karolinenhof, 23. und 24. August 2014',
-         'from' => 1408694400,
-         'id' => 2618,
-         'data' => 'userdel	q4::temp; 23252,792 23085,898 22854,1023 22821,1086 22766,1226 22655,1450
 ',
          'type' => 'handicap'
        }
