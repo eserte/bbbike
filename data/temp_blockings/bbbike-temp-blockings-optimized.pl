@@ -1921,7 +1921,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'text' => 'Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, sowie Sa 11.00-17.00 "Neuköllner Stoff", Behinderungen möglich',
          'from' => undef,
          'id' => 1815,
-         'data' => '	q4::temp:clock 11543,10015 11669,9987 11880,9874
+         'data' => '#: note: der Abbau dürfte mindestens eine weitere Stunde dauern...
+	q4::temp:clock 11543,10015 11669,9987 11880,9874
 ',
          'type' => 'gesperrt'
        },
@@ -3116,22 +3117,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        },
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Richardstr. und Jan-Hus-Weg: Bauarbeiten, teilweise Einbahnstraßenregelungen, Fahrbahnsperrungen und andere Behinderungen',
-         'from' => undef,
-         'id' => 2425,
-         'data' => '#: next_check_id: RICHARDSTR-2014
-#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-07-13
-#: check_frequency: 30d
-# REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
-userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
-userdel	q4::inwork 13150,7845 13103,7889
-userdel	q4::inwork 13085,7904 13117,7939 13151,7914
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3474,7 +3460,7 @@ userdel	q3::inwork 11673,16003 11567,15842
          'from' => undef,
          'id' => 2557,
          'data' => '#: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-07-22 (by photo)
+#: last_checked: 2014-08-25
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 ',
@@ -3505,18 +3491,7 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt',
-         'from' => undef,
-         'id' => 2563,
-         'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-08-22
-#: check_frequency: 14d
-userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3609,22 +3584,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html',
-         'until' => 1451602799,
-         'text' => 'Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Einbahnstraße offen Richtung Norden, ab 5. August 2014',
-         'from' => 1407189600,
-         'id' => 2593,
-         'data' => '#: XXX Richtung Süden kann man noch die Karl-Marx-Str. benutzen, aber die Markierungen zum Aufbrechen der Fahrbahn existieren schon
-#: XXX sollte sich die Lage stabilisieren -> in handicap_s übertragen!
-#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzögerung)
-#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html
-#: source_id: IM_022515
-#: last_checked: 2014-08-07
-	q4::inwork; 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -3757,6 +3717,19 @@ userdel	2::inwork 7103,11247 6851,11346
          'data' => 'userdel	q3::inwork; 12575,12223 12596,12472
 ',
          'type' => 'handicap'
+       },
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => '145600083',
+         'until' => 1414710000,
+         'text' => 'Brücke über den Oder-Havel-Kanal: Bauarbeiten, gesperrt, 01.09.2014 bis 30.10.2014 ',
+         'from' => 1409436000,
+         'id' => 2619,
+         'data' => 'userdel	2::inwork 38845,51258 38476,50514
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -8840,7 +8840,7 @@ EOF
 userdel	2::inwork 1971,12368 1929,12741 1892,13058
 userdel	2::inwork 1858,13231 1610,13380 1545,13418
 userdel	2::inwork 931,14268 984,14086 1053,13790 1124,13599
-userdel	2::inwork 1159,13541 1175,13513 1193,13485 1488,13454
+userdel	2::inwork 1159,13541 1170,13521 1193,13485 1488,13454
 EOF
      },
      { from  => undef, # 
@@ -15534,6 +15534,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: note: der Abbau dürfte mindestens eine weitere Stunde dauern...
 	q4::temp:clock 11543,10015 11669,9987 11880,9874
 EOF
      },
@@ -21306,14 +21307,10 @@ userdel auto	3 8522,12239 8538,12245 8522,12187
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1409078784, # -> handicap_s-orig # undef, # XXX
        text  => 'Richardstr. und Jan-Hus-Weg: Bauarbeiten, teilweise Einbahnstraßenregelungen, Fahrbahnsperrungen und andere Behinderungen',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: RICHARDSTR-2014
-#: XXX bis wann ist die Baustelle fertig?
-#: last_checked: 2014-07-13
-#: check_frequency: 30d
 # REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
 userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
 userdel	q4::inwork 13150,7845 13103,7889
@@ -22674,7 +22671,7 @@ EOF
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
 #: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-07-22 (by photo)
+#: last_checked: 2014-08-25
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 EOF
@@ -22727,13 +22724,10 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1409079031, # -> handicap_s-orig # undef, # XXX
        text  => 'Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-08-22
-#: check_frequency: 14d
 userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 EOF
      },
@@ -23035,17 +23029,11 @@ userdel	2::temp 18574,6401 18676,6333
 EOF
      },
      { from  => $isodate2epoch->("2014-08-05 00:00:00"),
-       until => $isodate2epoch->("2015-12-31 23:59:59"), # 1406051254, # undef,
+       until => 1409077995, # -> handicap_s-orig # $isodate2epoch->("2015-12-31 23:59:59"), # 1406051254, # undef,
        text  => "Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Einbahnstraße offen Richtung Norden, ab 5. August 2014",
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html',
        data  => <<EOF,
-#: XXX Richtung Süden kann man noch die Karl-Marx-Str. benutzen, aber die Markierungen zum Aufbrechen der Fahrbahn existieren schon
-#: XXX sollte sich die Lage stabilisieren -> in handicap_s übertragen!
-#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzögerung)
-#: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html
-#: source_id: IM_022515
-#: last_checked: 2014-08-07
 	q4::inwork; 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471
 EOF
      },
@@ -23297,6 +23285,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.159608.php',
        data  => <<EOF,
 userdel	q4::temp; 23252,792 23085,898 22854,1023 22821,1086 22766,1226 22655,1450
+EOF
+     },
+     { from  => 1409436000, # 2014-08-31 00:00
+       until => 1414710000, # 2014-10-31 00:00
+       text  => 'Brücke über den Oder-Havel-Kanal: Bauarbeiten, gesperrt, 01.09.2014 bis 30.10.2014 ',
+       type  => 'gesperrt',
+       source_id => '145600083',
+       data  => <<EOF,
+userdel	2::inwork 38845,51258 38476,50514
 EOF
      },
     );

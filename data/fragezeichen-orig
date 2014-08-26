@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-08-22
+#: last_checked: 2014-08-25
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -170,7 +170,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="3"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2014-08-12
+#: last_checked: 2014-08-25
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -184,10 +184,10 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: XXX Baumaßnahme 8.20 (Realisierung nach 2011) vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Radverkehrsstreifen)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-07-13 (Richtung Süden teilweise realisiert, Richtung Norden ein kleines Stück auch) vvv
+#: last_checked: 2014-08-26 (Richtung Süden teilweise realisiert, Richtung Norden ein kleines Stück auch) vvv
 Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13085,6925 13122,6717
 Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 13141,6651 13195,6560
-Walterstr./Karl-Marx-Str.: bleibt die Fahrbahn hier?	?::inwork 13126,6687 13099,6712
+# REMOVED (-> handicap_s-orig) --- Walterstr./Karl-Marx-Str.: bleibt die Fahrbahn hier?	?::inwork 13126,6687 13099,6712
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -420,7 +420,7 @@ Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Amp
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036623646371/623646371/00060995/95-Anlagen/02/Benennungsabsichtfuerdiebisherunbenannteoeffen.pdf
 #: XXX siehe auch strassen-orig
 #: XXX Eintrag in Berlin.coords.data fehlt
-#: last_checked: 2014-08-12
+#: last_checked: 2014-08-25
 #: check_frequency: 60d
 Am Weingarten: die Fortsetzung des Syringenplatz soll hier benannt werden	? 13765,14665 13867,14507
 # 
@@ -735,9 +735,10 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12871,9356 12888,9338
+#: next_check_id: FRIEDEL-2014
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
-#: last_checked: 2014-06-06
-#: next_check: 2014-09-01
+#: last_checked: 2014-08-26
+#: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
@@ -848,7 +849,7 @@ Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf
-#: osm_watch: way id="4663347" version="15"
+#: osm_watch: way id="4663347" version="16"
 #: last_checked: 2014-04-27 (Bauarbeiten sind schon lange beendet, aber es wurde nicht markiert?)
 #: check_frequency: 180d
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
@@ -1036,7 +1037,7 @@ Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18773,3873 187
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
-#: last_checked: 2014-07-22
+#: last_checked: 2014-08-26
 #: check_frequency: 120d
 Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337 13519,7345
 # 
@@ -1502,10 +1503,10 @@ Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::proj
 # REMOVED (Bauarbeiten) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphaltierung) --- Emser Str.: Straßenbauarbeiten?	? 12872,7134 13058,7165
 #: by: http://www.aktion-kms.de/projekte/umbau-richardstrasse/
 # ("historisches Reihensteinpflaster" - noch schlechtere Qualität?)
-#: last_checked: 2014-07-13
+#: last_checked: 2014-08-26
 #: check_frequency: 30d
 Richardstr.: was wird sich nach den Straßenbauarbeiten hier ändern? Voraussichtlich ist die Fertigestellung im November 2013, vielleicht gibt es vorher schon Einschränkungen.	? 13150,7845 13103,7889
-#: last_checked: 2014-07-13
+#: last_checked: 2014-08-26
 #: check_frequency: 30d
 Richardstr.: wird sich hier noch etwas ändern?	? 13103,7889 13085,7904
 #: by: ^^^

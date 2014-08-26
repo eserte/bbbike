@@ -8,11 +8,13 @@ Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,1
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 M¸hsamstr.: Bauarbeiten in Hˆhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
+Gipsstr.: Bauarbeiten an der Rosenthaler Str., einige Meter Gehweg benutzen	q3::inwork 10199,13446 10350,13376
+Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 Linienstr.: einige Fuﬂg‰nger, Baustelle	q2::inwork 10718,13625 10740,13621
 zur Keibelstr.: Baustraﬂe, Einbahnstraﬂe	q4::inwork; 10976,13229 11045,13183
 Seydelstr.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
-Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q3::inwork 9984,12426 9996,12401
+Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 Chausseestr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8935,13844 8870,13926
 Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
@@ -35,8 +37,14 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Alfred-Dˆblin-Platz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11162,10919 11150,11030
 Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
+Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
+Delbr¸ckstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,6717 13099,6712 13126,6687
 Wildenbruchplatz: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13135,8766 13227,8692 13314,8624
 Richardplatz: Bauarbeiten auf der s¸dlichen Fahrbahn	q4::inwork 13188,7590 13303,7622 13400,7642
+Richardplatz/Richardstr.: Bauarbeiten, Umwege notwendig	q4::inwork 13288,7653 13303,7622
+Richardstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 13103,7889 13085,7904 12870,8087
+Richardstr.: Bauarbeiten, ggfs. auf Gehweg ausweichen	q4::inwork 13150,7845 13103,7889
+Jan-Hus-Weg/Kirchgasse: Bauarbeiten	q4::inwork 13085,7904 13117,7939 13151,7914
 Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen ¸ber Gehweg	q3::inwork 12088,9775 12250,9691
 Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12074,9689 12088,9775
 Dottistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 15685,12154 15879,12131
@@ -362,8 +370,8 @@ Heinrich-Lassen-Park: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q3 6664,8787 
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7527,14644 7486,14652
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
-Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13251,7972
-Wanzlikpfad: eng und kurvig, Fuﬂg‰nger	q3 13268,7801 13311,7915
+Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13240,7966
+Wanzlikpfad: eng und kurvig, Fuﬂg‰nger	q3 13268,7801 13309,7911
 (Tunnelstr. - Uferweg): Fuﬂg‰nger	q1 15662,9501 15749,9558
 (Fischzug - Uferweg): Spielplatz, zwei Schwinggitter	q4 15219,10079 15260,10048
 (Alt-Stralau - Spreeufer): Fuﬂg‰nger, Radfahren erlaubt	q1 14652,10201 14569,10055
@@ -1008,7 +1016,7 @@ Gormannstr.: Bordstein	q2 10350,13376 10353,13384
 (Popitzweg - Halemweg): Fuﬂg‰nger	q2 1884,14412 2126,14392 2254,14387 2380,14392
 (Haeftenzeile - Weg ¸ber der U-Bahn): Fuﬂg‰nger	q1 2135,14475 2126,14392
 (Wohlrabedamm - Reisstr.): Bordstein	q2 1311,14191 1314,14207
-Spreeufer: unter der Rohrdammbr¸cke sehr eng	q3 1124,13536 1184,13544
+Spreeufer: unter der Rohrdammbr¸cke sehr eng	q3 1123,13523 1186,13529
 (Uranusstr. - Siriusstr.): Schulgel‰nde, teilweise ist das Radfahren explizit verboten	q4 18827,-537 18906,-316
 (Widosteig - Bohnsdorfer Weg): Pfad	q2 19934,1102 19955,1158 19940,1265
 (Parkweg im Business Park Berlin): Fuﬂg‰nger	q1 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
@@ -1413,6 +1421,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Unterf¸hrung S-Bhf. Waidmannslust): Fuﬂg‰nger	q3 4620,22079 4655,22100 4689,22058 4712,22068 4740,22075
 (Wollankstr. - Pankeweg): Fuﬂg‰nger, Bordstein	q2 9228,17274 9073,17361
 (am Kaiser's): Fuﬂg‰nger	q2 15714,11941 15710,11857
+Groﬂe Pr‰sidentenstr.: wartende Straﬂenbahnen	q2 10220,13098 10105,13004
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -2289,7 +2298,6 @@ Aristotelessteig: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 
 Ella-Trebe-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 7938,13302 7938,13150
 Rosenfelder Ring: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 18140,11932 18139,11833
 (Mˆllendorffstr. - Paul-Junius-Str.): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15370,13508 15470,13509
-Walterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13126,6687 13099,6712
 Parkaue: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15406,12444 15408,12394 15370,12264
 Am Zirkus: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 9167,13046 9239,12923
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874

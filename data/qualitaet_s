@@ -1394,7 +1394,7 @@ Heidelberger Str.: asphaltiert	Q0 13661,9069 13489,9199
 Lexisstr.: Beton	Q1 12983,9475 13059,9417 13130,9366
 Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
 Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12668,8077 12794,8103
-Geygerstr.: Asphalt	Q0 13066,8153 13194,8276
+Geygerstr.: Asphalt	Q0 13063,8151 13194,8276
 Bellevue-Ufer: Kleinsteinpflaster	Q1 6694,12627 7039,12314
 Bettina-von-Arnim-Ufer: Asphalt	Q0 7437,12368 7561,12527 7670,12576
 Große Querallee: Asphalt mit einigen Schäden	Q1 7875,12363 7816,12150
@@ -1419,15 +1419,15 @@ Bornsdorfer Str.: mäßiges bis gutes Kopfsteinpflaster	Q2 12698,7677 12775,7725 1
 Saltykowstr.: gutes kleinteiliges Kopfsteinpflaster	Q1 12726,7887 12865,7923
 Uthmannstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 12914,7785 13150,7845
 Herrnhuter Weg: Kopfsteinpflaster	Q2 12898,7832 13103,7889
-Jan-Hus-Weg: unbefestigt	Q2 13085,7904 13117,7939
+Jan-Hus-Weg: unbefestigt/Gehwegplatten	Q1 13085,7904 13117,7939
 Kirchgasse (Neukölln): gutes Kopfsteinpflaster	Q1 12992,8125 13046,8048
-Kirchgasse (Neukölln): unbefestigt	Q2 13117,7939 13151,7914
+Kirchgasse (Neukölln): unbefestigt/Gehwegplatten	Q1 13117,7939 13151,7914
 Kirchgasse (Neukölln): schlechtes Kopfsteinpflaster	Q3 13151,7914 13268,7801 13292,7779 13306,7765
 Kirchgasse (Neukölln): Kopfsteinpflaster	Q2 13292,7779 13245,7742
-Gerlachsheimer Weg: Gehwegplatten	Q0 13151,7914 13251,7972
-Wanzlikpfad: asphaltiert	Q0 13268,7801 13311,7915
+Gerlachsheimer Weg: Gehwegplatten	Q0 13151,7914 13240,7966
+Wanzlikpfad: asphaltiert	Q0 13268,7801 13309,7911
 Wilhelm-Busch-Str.: asphaltiert	Q0 13376,7970 13312,8026 13205,8126
-Wörnitzweg: asphaltiert	Q0 13251,7972 13312,8026
+Wörnitzweg: asphaltiert	Q0 13240,7966 13312,8026
 Neue Weberstr: gepflastert, wellig	Q2 12364,12589 12329,12594 12317,12584 12242,12594 12148,12609 12146,12628 12064,12673
 Fürstenwalder Str.: Kopfsteinpflaster, OK	Q1 12242,12594 12243,12604
 Löwestr.: mäßiges Kopfsteinpflaster	Q2 13202,12790 13273,12649
@@ -6783,7 +6783,7 @@ Quellweg: Asphalt	Q0 1085,14250 1133,14387 1157,14459 1184,14515 1235,14609 1282
 Wohlrabedamm: Asphalt	Q0 984,14086 1058,14060 1216,13978 1381,13939 1559,13938 1674,13948 1697,13989 1676,14082 1709,14243
 (Wohlrabedamm - Reisstr.): Asphalt	Q0 1216,13978 1259,14028 1272,14066
 (Wohlrabedamm - Reisstr.): Fahrbahn Kopfsteinpflaster, Gehweg Verbundsteinpflaster	Q1 1272,14066 1311,14191
-Ruhwaldweg: Kopfsteinpflaster	Q2 1175,13513 1110,13462 1018,13446
+Ruhwaldweg: Kopfsteinpflaster	Q2 1170,13521 1132,13504 1110,13462 1018,13446
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5627,12105 5585,12009 5620,11997 5684,11997 5712,12033
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (Radweg am Müggelsee - Strandschloßweg): Waldweg	Q1 25232,3757 25224,3789 25193,3844
@@ -8284,7 +8284,7 @@ Weg an der Havel: Verbundsteinpflaster	Q1 -3529,13452 -3546,13503 -3556,13582 -3
 Weg an der Havel: wassergebundene Decke	Q1 -3543,13691 -3503,13773 -3385,13937
 (Weg an der Havel - Stabholzgarten): Verbundsteinpflaster	Q1 -3385,13937 -3494,13980
 (Weg an der Havel - Stabholzgarten): Asphalt	Q0 -3494,13980 -3462,14041
-Sophienwerderweg: Asphalt mit Schäden	Q1 -795,13437 -684,13707 -944,13886 -1132,13972
+Sophienwerderweg: Asphalt mit Schäden	Q1 -795,13437 -684,13707 -951,13890 -1132,13972
 (Heinrich-Zille-Weg): welliges Verbundsteinpflaster	Q1 797,12659 969,13290
 (Allee der Kosmonauten - Biesdorfer Promenade): schadhafter Asphalt	Q2 19837,13531 19826,13444
 Allee der Kosmonauten [Wohngebiet]: Asphalt	Q0 20036,13593 19848,13587 19827,13607 19842,13765
@@ -10010,8 +10010,8 @@ Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Beton	Q1 2910,13607 2902,13665
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Holzbohlen	Q1 2402,13602 2321,13572
-(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2321,13572 2225,13562 2057,13634 1951,13647 1826,13587 1753,13587 1512,13511 1198,13526 1184,13544 1124,13536 1111,13514
-(Spreeufer): wassergebundene Decke	Q1 -307,13279 -278,13322 76,13296 438,13324 848,13497 1111,13514
+(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2321,13572 2225,13562 2057,13634 1951,13647 1826,13587 1753,13587 1512,13511 1198,13526 1186,13529 1123,13523 1111,13514
+(Spreeufer): wassergebundene Decke	Q1 -307,13279 -278,13322 76,13296 512,13335 778,13455 971,13498 1111,13514
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4596,3738 4476,3820
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4476,3820 4307,3959
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4307,3959 4234,4020
