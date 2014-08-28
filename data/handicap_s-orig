@@ -60,7 +60,8 @@ Gipsstr.: Bauarbeiten an der Rosenthaler Str., einige Meter Gehweg benutzen	q3::
 #: check_frequency: 14d
 Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
 # 
-#: last_checked: 2014-08-13
+#: XXX nach den Bauarbeiten bleiben wohl "einige Fußgänger" übrig, dann nur mit q1
+#: last_checked: 2014-08-28
 Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2014-07-22
@@ -151,8 +152,11 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-08-20
-Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
+#: last_checked: 2014-08-28
+Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
+# 
+#: last_checked: 2014-08-28
+Christinenstr.: Einbahnstraßeregelung wegen Baustelle	q4::inwork; 10830,14183 10755,14067
 # 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2014-08-12 vvv

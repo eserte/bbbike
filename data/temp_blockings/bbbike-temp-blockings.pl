@@ -20837,11 +20837,11 @@ EOF
 userdel	q4::temp 5464,5731 5280,5714
 EOF
      },
-     { from  => 1347429180, # 2012-09-12 07:53
-       until => 1347832740, # 2012-09-16 23:59
-       text  => 'Spanische Allee (Zehlendorf): Baustelle, Straße unter den Bahnbrücken vollständig gesperrt (bis 16.09.12 nachts)',
+     { from  => $isodate2epoch->("2014-08-28 06:00:00"), # 1 Tag Vorlauf # 1347429180, # 2012-09-12 07:53
+       until => $isodate2epoch->("2014-08-29 20:00:00"), # 1347832740, # 2012-09-16 23:59
+       text  => 'Spanische Allee: unter den Bahnbrücken gesperrt, evtl. können auch Fußgänger/Radfahrer nicht passieren, 29.08.2014 06 Uhr bis abends',
        type  => 'gesperrt',
-       source_id => 'IM_019192',
+       source_id => 'IM_022717',
        data  => <<EOF,
 userdel	2::inwork -3736,2849 -3648,2881
 EOF
@@ -21807,7 +21807,7 @@ userdel	2::temp 5047,10381 5076,10658
 EOF
      },
      { from  => 1407357333, # 1403739104, # 1376193600, # 2013-08-11 06:00
-       until => $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
+       until => 1409243320, # $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
        text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, bis 5. September 2014',
        type  => 'gesperrt',
        source_id => 'IM_022504',
@@ -23254,7 +23254,7 @@ userdel	1::inwork 9028,12307 8804,12280
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1409241807, # undef, # XXX
        text  => 'Koppenstr.: zwischen Rüdersdorfer Str. und Karl-Marx-Allee Bauarbeiten, Fahrbahn Richtung Norden gesperrt',
        type  => 'handicap',
        data  => <<EOF,
@@ -23294,6 +23294,34 @@ EOF
        source_id => '145600083',
        data  => <<EOF,
 userdel	2::inwork 38845,51258 38476,50514
+EOF
+     },
+     { from  => 1409436000, # 2014-08-31 00:00
+       until => 1410559200, # 2014-09-13 00:00
+       text  => 'Rudolstädter Straße: zwischen Bechstedter Weg und Hohenzollerndamm Straßenbauarbeiten, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, vom Montag, dem 01.09.2014 bis ca. 12.09.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140827.1305.398908.html',
+       data  => <<EOF,
+userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 3848,8689 3775,8771 3701,8849
+EOF
+     },
+     { from  => 1409202000, # 2014-08-28 07:00
+       until => 1409349599, # 2014-08-29 23:59
+       text  => 'Birkenstr.: Straßenfest zwischen Bandelstr. und Perleberger Str., am 29.08.2014 ',
+       type  => 'handicap',
+       source_id => 'IM_022701',
+       data  => <<EOF,
+#: by: http://moabit.net/8150
+userdel	q4::temp 6686,13746 6493,13822
+EOF
+     },
+     { from  => 1409202000, # 2014-08-28 07:00
+       until => 1409569200, # 2014-09-01 13:00
+       text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 29. August 2014 bis 1. September 2014 mittags ',
+       type  => 'handicap',
+       source_id => 'IM_022700',
+       data  => <<EOF,
+userdel	q4::temp 8426,13909 8574,13666
 EOF
      },
     );

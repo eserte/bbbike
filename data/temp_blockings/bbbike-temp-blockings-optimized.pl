@@ -2909,7 +2909,16 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_022717',
+         'until' => 1409335200,
+         'text' => 'Spanische Allee: unter den Bahnbrücken gesperrt, evtl. können auch Fußgänger/Radfahrer nicht passieren, 29.08.2014 06 Uhr bis abends',
+         'from' => 1409198400,
+         'id' => 2382,
+         'data' => 'userdel	2::inwork -3736,2849 -3648,2881
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3233,16 +3242,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_022504',
-         'until' => 1409925600,
-         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, bis 5. September 2014',
-         'from' => 1407357333,
-         'id' => 2469,
-         'data' => 'userdel	2::inwork 17736,5441 17886,5587
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3709,15 +3709,7 @@ userdel	2::inwork 7103,11247 6851,11346
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'Koppenstr.: zwischen Rüdersdorfer Str. und Karl-Marx-Allee Bauarbeiten, Fahrbahn Richtung Norden gesperrt',
-         'from' => undef,
-         'id' => 2615,
-         'data' => 'userdel	q3::inwork; 12575,12223 12596,12472
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3730,6 +3722,37 @@ userdel	2::inwork 7103,11247 6851,11346
          'data' => 'userdel	2::inwork 38845,51258 38476,50514
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140827.1305.398908.html',
+         'until' => 1410559200,
+         'text' => 'Rudolstädter Straße: zwischen Bechstedter Weg und Hohenzollerndamm Straßenbauarbeiten, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, vom Montag, dem 01.09.2014 bis ca. 12.09.2014',
+         'from' => 1409436000,
+         'id' => 2620,
+         'data' => 'userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 3848,8689 3775,8771 3701,8849
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_022701',
+         'until' => 1409349599,
+         'text' => 'Birkenstr.: Straßenfest zwischen Bandelstr. und Perleberger Str., am 29.08.2014 ',
+         'from' => 1409202000,
+         'id' => 2621,
+         'data' => '#: by: http://moabit.net/8150
+userdel	q4::temp 6686,13746 6493,13822
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_022700',
+         'until' => 1409569200,
+         'text' => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 29. August 2014 bis 1. September 2014 mittags ',
+         'from' => 1409202000,
+         'id' => 2622,
+         'data' => 'userdel	q4::temp 8426,13909 8574,13666
+',
+         'type' => 'handicap'
        }
      
 );
