@@ -152,7 +152,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: next_check_id ^^^
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-08-28
+#: last_checked: 2014-08-29
 Saarbrücker Str.: Einbahnstraßeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
 #: last_checked: 2014-08-28
@@ -326,7 +326,7 @@ Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12
 # 
 ### Lichtenberg ###
 # 
-#: last_checked: 2014-08-20
+#: last_checked: 2014-08-29
 Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
 # 
 #: next_check_id: HAUPTBUCHT-2014
@@ -758,8 +758,7 @@ Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11560,8488 11508,8491 11333,8582 11255,8591
 #: note: Radfahren erlaubt
 (Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11255,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
-#: XXX die Bordsteine sind hier wahrscheinlich mittlerweile abgesenkt
-Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11111,13518
+# REMOVED (ja, abgesenkt) --- #: XXX die Bordsteine sind hier wahrscheinlich mittlerweile abgesenkt --- Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11111,13518
 #: note: möglicherweise ist im Herbst/Winter weniger los, dann vielleicht q2?
 Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q3 8116,12938 8110,13042
 Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554

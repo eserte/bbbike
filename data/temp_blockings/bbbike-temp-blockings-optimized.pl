@@ -2909,16 +2909,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_022717',
-         'until' => 1409335200,
-         'text' => 'Spanische Allee: unter den Bahnbrücken gesperrt, evtl. können auch Fußgänger/Radfahrer nicht passieren, 29.08.2014 06 Uhr bis abends',
-         'from' => 1409198400,
-         'id' => 2382,
-         'data' => 'userdel	2::inwork -3736,2849 -3648,2881
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3379,16 +3370,7 @@ userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020924',
-         'until' => 1409320800,
-         'text' => 'Neheimer Str.: Baustelle, Fahrbahn Richtung Borsigdamm gesperrt, bis Ende August 2014',
-         'from' => 1386667020,
-         'id' => 2531,
-         'data' => 'userdel	q4::inwork; 1229,18750 1328,18878 1447,18933 1528,18971
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3481,11 +3463,12 @@ userdel	q3::inwork; 13555,15596 13459,15653
        undef,
        {
          'source_id' => 'IM_021420',
-         'until' => 1409522399,
-         'text' => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende August 2014',
+         'until' => 1420066799,
+         'text' => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende Dezember 2014',
          'from' => undef,
          'id' => 2562,
-         'data' => 'userdel	q3::inwork; 10908,17142 10917,17088 10927,17022
+         'data' => '# source_id: IM_022480	
+userdel	q3::inwork; 10908,17142 10917,17088 10927,17022
 userdel	q4::inwork; 10927,17022 10862,17087
 userdel	q4::inwork 10862,17087 10891,17088 10917,17088
 ',
@@ -3746,13 +3729,24 @@ userdel	q4::temp 6686,13746 6493,13822
        },
        {
          'source_id' => 'IM_022700',
-         'until' => 1409569200,
-         'text' => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 29. August 2014 bis 1. September 2014 mittags ',
+         'until' => 1409565600,
+         'text' => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 29. August 2014 bis 1. September 2014 12 Uhr ',
          'from' => 1409202000,
          'id' => 2622,
          'data' => 'userdel	q4::temp 8426,13909 8574,13666
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_022704',
+         'until' => 1409839200,
+         'text' => 'Gürtelstr. und Dossestr.: Straßen zwischen Oderstr. und Scharnweberstr. vollständig gesperrt, auch für Fußgänger und Radfahrer, bis 04.09.2014 16:00 Uhr',
+         'from' => 1409025600,
+         'id' => 2623,
+         'data' => 'userdel	2::temp 15248,11880 15202,11789 15106,11598
+userdel	2::temp 15202,11789 15140,11811 15043,11637
+',
+         'type' => 'gesperrt'
        }
      
 );

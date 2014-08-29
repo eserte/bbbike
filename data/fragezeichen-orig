@@ -175,7 +175,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2014-07-20
+#: last_checked: 2014-08-29
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -216,7 +216,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2014-08-22
+#: last_checked: 2014-08-29
 #: next_check: 2015-09-30
 Warschauer Str: Radspuren geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -775,7 +775,8 @@ Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19646,9490 19727,9484 1
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/03/246-2013-2Anlage2UebersichtsplanErschliessung.pdf vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf vvv
-#: osm_watch: way id="287119368" version="3"
+#: osm_watch: way id="287119368" version="4"
+#: XXX laut osm surface=asphalt (aber noch under construction)
 Planstraße 8: Name vielleicht Regener Str.? Qualität?	?::projected 19869,9151 19885,9400 19890,9476
 #: osm_watch: way id="193373966" version="3"
 Straße in Bau: genaue Lage, Name (hier auch die Regener Str.?), Qualität?	?::inwork 19626,9166 19869,9151
@@ -1379,9 +1380,9 @@ Fußweg zur Gehrenseestr.: genaue Lage, Qualität?	?::projected 17607,16328 17631,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
 #: XXX fehlt in Berlin.coords.data
-#: last_checked: 2013-12-20
-#: next_check: 2014-09-01
-Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::projected 15747,12880 15747,12985 15808,12989
+#: last_checked: 2014-08-29
+#: check_frequency: 180d
+Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::inwork 15747,12880 15747,12985 15808,12989
 # 
 # REMOVED (abgelehnt, siehe Schlussbericht) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458 --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036560602837/560602837/00092292/92-Anlagen/04/B0359SB.pdf (Schlussbericht) --- #: last_checked: 2013-06-22 --- #: check_frequency: 90d --- Brandenburgplatz: wird hier eine Fußgängerampel eingerichtet?	? 23363,5714 23309,5704
 # 
@@ -1534,7 +1535,7 @@ Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualitä
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/___tmp/tmp/45081036146019524/146019524/00061922/22-Anlagen/06/6Bebauungsplan6-22.pdf
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=427621&postcount=91 (Fotos)
 #: XXX fehlt bei Berlin.coords.data: Fünf Morgen|Dahlem|14169
-#: osm_watch: way id="54781804" version="8"
+#: osm_watch: way id="54781804" version="9"
 #: last_checked: 2014-08-07
 #: check_frequency: 120d
 Fünf Morgen: wo wird sich die Straße befinden? Qualität?	? 1338,4927 1437,5015 1483,5161
@@ -1760,7 +1761,14 @@ Am Stichkanal: Qualität? Genaue Lage?	? -19450,4599 -19375,4360
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
 #: XXX laut anonymen Eintrag Radweg; keine Verbindung zum restlichen Netz:
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
-Prinz-Friedrich-Karl-Weg: Qualität?	? -1100,12210 -1172,12336 -824,12557 -646,12658
+Prinz-Friedrich-Karl-Weg: Qualität?	? -1100,12210 -1132,12268 -1172,12336 -824,12557 -646,12658
+#: XXX Name seit 2014-08-30
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140829.1125.398951.html
+#: by: http://www.tagesspiegel.de/sport/olympiapark-berlin-ehrung-fuer-gretel-bergmann/10611386.html
+#: XXX fehlt in Berlin.coords.data
+Gretel-Bergmann-Weg: Qualität? Genaue Lage?	? -1132,12268 -1288,12178 -1253,12117
+Friedrich-Friesen-Allee: Weiterführung der Straße, Qualität? Tor? Ausschilderung?	? -1298,12095 -1253,12117 -1100,12210 -746,12432 -587,12529
+Gutsmuthsweg: Qualität? Lage? Ausschilderung?	? -824,12557 -746,12432 -671,12311 -583,12151 -565,12030
 #: XXX kommt man überhaupt auf die Insel rauf?
 Straße 31 (Rahnsdorf): Qualität? Genaue Lage?	? 29616,3070 29338,3219
 #: XXX fehlt in Potsdam.coords.data

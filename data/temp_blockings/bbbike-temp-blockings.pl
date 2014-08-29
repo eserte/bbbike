@@ -22713,11 +22713,12 @@ userdel	2::inwork 26395,-11699 26302,-11712
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2014-08-31 23:59:59"),
-       text  => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende August 2014',
+       until => $isodate2epoch->("2014-12-31 23:59:59"),
+       text  => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende Dezember 2014',
        type  => 'handicap',
        source_id => 'IM_021420',
        data  => <<EOF,
+# source_id: IM_022480	
 userdel	q3::inwork; 10908,17142 10917,17088 10927,17022
 userdel	q4::inwork; 10927,17022 10862,17087
 userdel	q4::inwork 10862,17087 10891,17088 10917,17088
@@ -23316,12 +23317,22 @@ userdel	q4::temp 6686,13746 6493,13822
 EOF
      },
      { from  => 1409202000, # 2014-08-28 07:00
-       until => 1409569200, # 2014-09-01 13:00
-       text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 29. August 2014 bis 1. September 2014 mittags ',
+       until => $isodate2epoch->("2014-09-01 12:00:00"), #  1409569200, # 2014-09-01 13:00
+       text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 29. August 2014 bis 1. September 2014 12 Uhr ',
        type  => 'handicap',
        source_id => 'IM_022700',
        data  => <<EOF,
 userdel	q4::temp 8426,13909 8574,13666
+EOF
+     },
+     { from  => 1409025600, # 2014-08-26 06:00
+       until => 1409839200, # 2014-09-04 16:00
+       text  => 'Gürtelstr. und Dossestr.: Straßen zwischen Oderstr. und Scharnweberstr. vollständig gesperrt, auch für Fußgänger und Radfahrer, bis 04.09.2014 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_022704',
+       data  => <<EOF,
+userdel	2::temp 15248,11880 15202,11789 15106,11598
+userdel	2::temp 15202,11789 15140,11811 15043,11637
 EOF
      },
     );
