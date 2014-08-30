@@ -19052,7 +19052,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3347,6460 3449,6863
+Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6863
 EOF
      },
      { from  => 1280051220, # 2010-07-25 11:47
@@ -22003,18 +22003,12 @@ userdel	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1409419983, # undef, # XXX
        text  => 'Weg im Cheruskerpark: die Bauarbeiten sind möglicherweise beendet',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: CHERUSKERPARK-2014
-#: XXX bis wann gehen die Bauarbeiten?
-#: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140723.1150.398518.html (fertig?)
-#: last_checked: 2014-07-17
-#: next_check: 2014-07-23
-#: priority: #A
-userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
+# REMOVED (Bauarbeiten beendet) --- #: next_check_id: CHERUSKERPARK-2014 --- #: XXX bis wann gehen die Bauarbeiten? --- #: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140723.1150.398518.html (fertig?) --- #: last_checked: 2014-07-17 --- #: next_check: 2014-07-23 --- #: priority: #A
+userdel	2::inwork 7375,8294 7353,8293 7332,8292 7289,8259 7282,8264
 EOF
      },
      { from  => undef, # 

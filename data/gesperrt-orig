@@ -29,8 +29,8 @@ Dennewitzplatz	1 7813,10112 7906,10098
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Ende der Bauarbeiten)
 #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen -> gesperrt_car
-#: last_checked: 2014-07-17 (Bauarbeiten)
-#: next_check: 2014-08-28
+#: last_checked: 2014-08-30 (asphaltierte Radwege existieren bis auf die Verknüpfung zur Dennewitzstr.)
+#: check_frequency: 7d
 Dennewitzplatz	1s:q3 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
 Winterfeldtplatz	1 7080,10098 7126,9825
@@ -1672,7 +1672,7 @@ Warschauer Brücke: unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocros
 Waltersdorfer Chaussee: Mittelstreifen	3nocross 18009,-193 17946,-100 17879,-3
 Neuköllner Str.: Mittelstreifen	3nocross 16698,1392 16643,1460 16459,1680 16450,1691
 Neuköllner Str.: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
-Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3347,6460 3459,6484
+Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3350,6467 3452,6491
 Berliner Str.: Straßenbahntrasse	3nocross 12396,17514 12436,17682 12467,17814
 Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
 Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
@@ -2363,6 +2363,7 @@ Schwingtor	BNP:5::trailer=10 7283,8265
 Schwingtor	BNP:5::trailer=10 7366,8390
 Schwingtor	BNP:5::trailer=10 7400,8273
 Schwingtor	BNP:5::trailer=10 7289,8259
+Schwingtor	BNP:5::trailer=10 7372,8222
 #: note: ^^^
 # 
 #: note: Fahrräder mit Anhänger könnten auf den parallelen Gehweg geführt werden

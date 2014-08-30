@@ -158,8 +158,8 @@ Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0 15634,11656 15482,11729 15413,11690
 Buchberger Str.: teilweise kleinere Sch‰den an den Betonplatten	Q1; 16242,11533 16368,11912
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
-Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster, 17 km/h mˆglich (weil bergab)	Q3; 7402,8208 7250,8223 7001,8161
-Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7250,8223 7402,8208
+Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster, 17 km/h mˆglich (weil bergab)	Q3; 7402,8208 7374,8211 7250,8223 7001,8161
+Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7250,8223 7374,8211 7402,8208
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122
 Ebersstr.: Asphalt	Q0 6792,8122 6657,8070 6559,8033
 Reichenberger Str.: Kopfsteinpflaster	Q2 11443,10394 11476,10357 11616,10288 11829,10192 12048,10097 12229,10014 12398,9938 12556,9862 12714,9792 12834,9738 12935,9689
@@ -3089,7 +3089,8 @@ Kyllmannstr. (Wannsee): Asphalt	Q0 -6246,1617 -6179,1570 -6147,1467 -6111,1396 -
 Cheruskerpark: wassergebundene Decke	Q1 7439,8716 7405,8698 7382,8658 7368,8595
 Cheruskerpark: Asphalt	Q0 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282,8264 7250,8223
 (Cheruskerpark - Cheruskerstr.): Asphalt	Q0 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
-(Torgauer Str. - Cheruskerstr.): wassergebundene Decke	Q1 7282,8264 7289,8259 7332,8292 7375,8294
+(Torgauer Str. - Cheruskerstr.): fester Belag	Q0 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
+(Torgauer Str. - Cheruskerpark): fester Belag	Q0 7374,8211 7372,8222 7351,8258 7353,8293
 Rhinstr. [Wohngebiet]: Beton	Q0 18008,13507 17995,13675 17994,13750 18024,13843 18043,13838 18134,13811 18206,13817
 Arendsweg: Beton	Q0 17254,14451 17262,14384 17274,14280
 (Zufahrt IKEA): Asphalt	Q0 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17335,14167 17289,14195 17274,14280
@@ -9446,7 +9447,7 @@ Richnowstr.: m‰ﬂiger Asphalt	Q1 8850,6421 8953,6492
 Bosepark: kleinteiliges Kopfsteinpflaster	Q1 8850,6421 8697,6455
 Bosestr.: kleinteiliges Kopfsteinpflaster	Q1 8191,6339 8292,6331
 Bosestr.: Kopfsteinpflaster	Q2 8292,6331 8388,6322 8546,6307
-Bosestr.: Asphalt mit Asphaltflicken	Q1 8546,6329 8680,6322
+Bosestr.: Asphalt mit leichten Sch‰den	Q0 8546,6329 8680,6322
 Bosestr.: schlechtes Kopfsteinpflaster	Q3 8680,6322 8846,6303 8930,6295 8944,6293
 Borussiastr.: Asphalt	Q0 8645,6781 8750,6779 8846,6781 9046,6784 9245,6791 9511,6797 9706,6802
 Renate-Privatstr.: m‰ﬂiger Asphalt mit Schlaglˆchern	Q1 8687,5554 8709,5732
@@ -9542,7 +9543,7 @@ Holsteiner Ufer: Kopfsteinpflaster, OK	Q1 6182,12900 6347,12901 6449,12865 6580,
 Holsteiner Ufer: m‰ﬂiges Kopfsteinpflaster	Q2 6580,12775 6694,12627
 Rathenower Str.: Asphalt	Q0 6730,14021 6719,14047
 Rathenower Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6677,14219 6656,14311
-Albrecht-Thaer-Weg: Asphalt	Q0 3347,6460 3449,6863
+Albrecht-Thaer-Weg: Asphalt	Q0 3350,6467 3449,6863
 Lottumstr.: m‰ﬂiges Kopfsteinpflaster	Q2 10487,13928 10639,13864 10703,13832 10779,13793
 Stieglitzweg: Beton	Q0 14335,3231 14493,3143 14546,3051 14637,2868 14768,2763
 Waldschluchtpfad: m‰ﬂiges Kopfsteinpflaster	Q2 -5123,6701 -5064,6853 -5034,6933 -4806,6901
@@ -9958,7 +9959,7 @@ Gregor-Mendel-Str.: Kopfsteinpflaster	Q2 3664,6523 3650,6665 3655,6811
 Milowstr.: Kopfsteinpflaster	Q2 3826,6656 3650,6665
 Schwalbacher Str.: Kopfsteinpflaster	Q2 4812,7059 4886,7061
 Steinr¸ckweg: Kopfsteinpflaster	Q1 4309,6716 4281,6862
-Rohlfsstr.: Kopfsteinpflaster	Q2 3459,6484 3521,6400 3696,6165 3751,6092
+Rohlfsstr.: Kopfsteinpflaster	Q2 3452,6491 3521,6400 3696,6165 3751,6092
 Am Erlenbusch: grobes Kopfsteinpflaster, am Rand besser	Q3 3384,6356 3440,6387 3521,6400
 Drygalskistr.: Kopfsteinpflaster	Q2 3696,6165 3596,6087 3506,6012 3407,5938
 Schweinfurthstr.: grobes Kopfsteinpflaster	Q3 2884,7016 3040,6800 3306,6453

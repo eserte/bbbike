@@ -2606,7 +2606,7 @@ userdel	2::temp 18870,5833 18932,5926
          'text' => 'Albrecht-Thaer-Weg: Privatstraße, eventuell zeitweise gesperrt (nachts?)',
          'from' => undef,
          'id' => 2196,
-         'data' => 'Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3347,6460 3449,6863
+         'data' => 'Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6863
 ',
          'type' => 'gesperrt'
        },
@@ -3295,22 +3295,7 @@ userdel	2::temp 8503,16716 8583,16914
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Weg im Cheruskerpark: die Bauarbeiten sind möglicherweise beendet',
-         'from' => undef,
-         'id' => 2489,
-         'data' => '#: next_check_id: CHERUSKERPARK-2014
-#: XXX bis wann gehen die Bauarbeiten?
-#: by: http://de.wikipedia.org/wiki/Rote_Insel#Um-_und_Ausbau_2013_.28Sch.C3.B6neberger_Schleife.29 (Umbauarbeiten)
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140723.1150.398518.html (fertig?)
-#: last_checked: 2014-07-17
-#: next_check: 2014-07-23
-#: priority: #A
-userdel	2::inwork 7375,8294 7332,8292 7289,8259 7282,8264
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3716,17 +3701,7 @@ userdel	2::inwork 7103,11247 6851,11346
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_022701',
-         'until' => 1409349599,
-         'text' => 'Birkenstr.: Straßenfest zwischen Bandelstr. und Perleberger Str., am 29.08.2014 ',
-         'from' => 1409202000,
-         'id' => 2621,
-         'data' => '#: by: http://moabit.net/8150
-userdel	q4::temp 6686,13746 6493,13822
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_022700',
          'until' => 1409565600,

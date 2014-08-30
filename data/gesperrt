@@ -2016,8 +2016,8 @@ Seilerweg -> Neukˆllner Str.: Mittelstreifen	3::igndisp 16605,1424 16643,1460 16
 Mittelstreifen	3nocross::ignrte 15980,2318 15804,2512 15736,2593
 Neukˆllner Str. -> Primelweg: Mittelstreifen	3::igndisp 15736,2593 15804,2512 15862,2588
 Primelweg -> Neukˆllner Str.: Mittelstreifen	3::igndisp 15862,2588 15804,2512 15980,2318
-Mittelstreifen	3nocross::ignrte 3306,6453 3347,6460 3459,6484
-Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3347,6460 3459,6484
+Mittelstreifen	3nocross::ignrte 3306,6453 3350,6467 3452,6491
+Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3350,6467 3452,6491
 Straﬂenbahntrasse	3nocross::ignrte 12396,17514 12436,17682 12467,17814
 Str. 56 -> Tino-Schwierzina-Str.: Straﬂenbahntrasse	3::igndisp 12587,17603 12436,17682 12396,17514
 Tino-Schwierzina-Str. -> Str. 56: Straﬂenbahntrasse	3::igndisp 12467,17814 12436,17682 12587,17603
@@ -2615,6 +2615,7 @@ Schwingtor	BNP:5:35:trailer=10 7283,8265
 Schwingtor	BNP:5:-85:trailer=10 7366,8390
 Schwingtor	BNP:5:-49:trailer=10 7400,8273
 Schwingtor	BNP:5:-54:trailer=10 7289,8259
+Schwingtor	BNP:5:-190:trailer=10 7372,8222
 Schranke, sehr enge Durchfahrt, nicht anh‰ngertauglich	BNP:5:-135:trailer=no 14658,7513
 Dr‰ngelgitter an der Straﬂenbahntrasse	BNP:6:-167 14989,13630
 Schranke	BNP:3:-90 -3646,15717

@@ -13,12 +13,12 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2014-08-26 vvv
+#: last_checked: 2014-08-30 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
 # 
-#: last_checked: 2014-08-20 vvv
+#: last_checked: 2014-08-30 vvv
 #: next_check: 2014-11-30 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -289,7 +289,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden a
 Delbrückstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,6717 13099,6712 13126,6687
 # 
 #: XXX laut Schild Bauarbeiten bis September 2014
-#: last_checked: 2014-08-07
+#: last_checked: 2014-08-30
 #: next_check: 2014-09-15
 Wildenbruchplatz: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13135,8766 13227,8692 13314,8624
 # 
@@ -1119,7 +1119,8 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 (Ebersstr. - Park GASAG Nordspitze): Fußgänger	q1 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
 (Ebersstr. - Cheruskerstr.): Fußgänger	q1 7353,8633 7371,8660 7382,8658
 (Cheruskerpark - Cheruskerstr.): Fußgänger	q1 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
-(Torgauer Str. - Cheruskerstr.): Fußgänger	q1 7282,8264 7289,8259 7332,8292 7375,8294
+(Torgauer Str. - Cheruskerstr.): Fußgänger	q1 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
+(Torgauer Str. - Cheruskerpark): Fußgänger	q1 7374,8211 7372,8222 7351,8258 7353,8293
 (Bernhardstr. - Varziner Platz): S-Bahnunterführung, Fußgänger	q4 5471,7915 5475,7906 5492,7868
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): eng und kurvig	q3 17319,14159 17230,14206
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
@@ -1802,13 +1803,13 @@ Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 # 
 #: XXX_prog BS (ansonsten entfernen)
 #: XXX wird der Bordstein noch abgesenkt?
-#: last_checked: 2014-05-16 (nein, zusätzlich noch Engstelle durch Bauarbeiten)
+#: last_checked: 2014-08-30 (nein, zusätzlich noch Engstelle durch Bauarbeiten)
 #: check_frequency: 100d
 Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
 # 
 #: XXX_prog BS (ansonsten entfernen)
 #: XXX wird der Bordstein noch abgesenkt?
-#: last_checked: 2014-07-15
+#: last_checked: 2014-08-30
 #: check_frequency: 100d
 Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
 # 
@@ -3133,7 +3134,8 @@ Muschelkalkweg: enge Straße	q0- 10718,1220 10795,1251 10868,1281 10950,1315 1104
 #: corrected_by: srt (q3 -> q0-)
 Großstr.: enge Straße	q0- 18574,6401 18483,6460 18457,6490 18429,6582
 #: by: Freioun:
-Rothariweg: enge Straße	q1 8292,6331 8290,6191 8291,6048
+#: corrected_by: srt (q1 -> q0-)
+Rothariweg: enge Straße	q0- 8292,6331 8290,6191 8291,6048
 #: by: alex (undstasi):
 #: corrected_by: srt/policy (q3 -> q1)
 Küselstr.: enge Straße	q1 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621

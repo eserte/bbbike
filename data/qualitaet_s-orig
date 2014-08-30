@@ -85,7 +85,7 @@ Wilhelmshöhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
 Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,6436 7217,6065
 #: XXX wird dieses Teilstück asphaltiert?
 #: XXX Baumaßnahme GL7.6, GL7.7 (Realisierung nach 2011)
-#: last_checked: 2014-04-27
+#: last_checked: 2014-08-30
 #: check_frequency: 90d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7217,6065 7216,5888
 Priesterweg: Asphalt	Q0 7216,5888 7167,5831
@@ -197,8 +197,8 @@ Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 # REMOVED (nach den Bauarbeiten Richtung Süden besser) --- #: XXX Bauarbeiten in Gange, danach vielleicht Q0? --- #: last_checked: 2013-07-14 --- #: next_check: 2013-08-05
 Buchberger Str.: teilweise kleinere Schäden an den Betonplatten	Q1+; 16242,11533 16368,11912
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7402,8208 7250,8223 7001,8161
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7250,8223 7402,8208
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7402,8208 7374,8211 7250,8223 7001,8161
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7250,8223 7374,8211 7402,8208
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122
 Ebersstr.: Asphalt	Q0 6792,8122 6657,8070 6559,8033
 Reichenberger Str.: Kopfsteinpflaster	Q2 11443,10394 11476,10357 11616,10288 11829,10192 12048,10097 12229,10014 12398,9938 12556,9862 12714,9792 12834,9738 12935,9689
@@ -3582,7 +3582,8 @@ Kyllmannstr. (Wannsee): Asphalt	Q0 -6246,1617 -6179,1570 -6147,1467 -6111,1396 -
 Cheruskerpark: wassergebundene Decke	Q1 7439,8716 7405,8698 7382,8658 7368,8595
 Cheruskerpark: Asphalt	Q0 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282,8264 7250,8223
 (Cheruskerpark - Cheruskerstr.): Asphalt	Q0 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
-(Torgauer Str. - Cheruskerstr.): wassergebundene Decke	Q1 7282,8264 7289,8259 7332,8292 7375,8294
+(Torgauer Str. - Cheruskerstr.): fester Belag	Q0 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
+(Torgauer Str. - Cheruskerpark): fester Belag	Q0 7374,8211 7372,8222 7351,8258 7353,8293
 Rhinstr. [Wohngebiet]: Beton	Q0- 18008,13507 17995,13675 17994,13750 18024,13843 18043,13838 18134,13811 18206,13817
 Arendsweg: Beton	Q0- 17254,14451 17262,14384 17274,14280
 (Zufahrt IKEA): Asphalt	Q0 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17335,14167 17289,14195 17274,14280
@@ -10618,7 +10619,8 @@ Bosepark: kleinteiliges Kopfsteinpflaster	Q1 8850,6421 8697,6455
 Bosestr.: kleinteiliges Kopfsteinpflaster	Q1- 8191,6339 8292,6331
 #: corrected_by: srt (Asphalt mit Asphaltflicken -> ...)
 Bosestr.: Kopfsteinpflaster	Q2 8292,6331 8388,6322 8546,6307
-Bosestr.: Asphalt mit Asphaltflicken	Q1 8546,6329 8680,6322
+#: corrected_by: srt (Asphalt mit Asphaltflicken, Q1 -> ...)
+Bosestr.: Asphalt mit leichten Schäden	Q0- 8546,6329 8680,6322
 #: confirmed_by: srt
 Bosestr.: schlechtes Kopfsteinpflaster	Q3 8680,6322 8846,6303 8930,6295 8944,6293
 #: corrected_by: Kowaliczek Larissa (Kopfsteinpflaster Q2 -> Asphalt), auch hatte ich den Eindruck, dass sie asphaltiert ist
@@ -10863,7 +10865,7 @@ Rathenower Str.: Asphalt	Q0 6730,14021 6719,14047
 #: confirmed_by: srt
 Rathenower Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6677,14219 6656,14311
 #: note: gleiche Kategorisierung von Andreas Mühlhausen:
-Albrecht-Thaer-Weg: Asphalt	Q0 3347,6460 3449,6863
+Albrecht-Thaer-Weg: Asphalt	Q0 3350,6467 3449,6863
 #: by: ^^^
 # 
 #: by: Susanne Jäger:
@@ -11858,7 +11860,7 @@ Milowstr.: Kopfsteinpflaster	Q2 3826,6656 3650,6665
 #: corrected_by: srt (Q2 -> Q1; Q1 war es wahrscheinlich nur, weil ein Teil am Platz asphaltiert ist)
 Schwalbacher Str.: Kopfsteinpflaster	Q2 4812,7059 4886,7061
 Steinrückweg: Kopfsteinpflaster	Q1 4309,6716 4281,6862
-Rohlfsstr.: Kopfsteinpflaster	Q2 3459,6484 3521,6400 3696,6165 3751,6092
+Rohlfsstr.: Kopfsteinpflaster	Q2 3452,6491 3521,6400 3696,6165 3751,6092
 Am Erlenbusch: grobes Kopfsteinpflaster, am Rand besser	Q3 3384,6356 3440,6387 3521,6400
 Drygalskistr.: Kopfsteinpflaster	Q2 3696,6165 3596,6087 3506,6012 3407,5938
 Schweinfurthstr.: grobes Kopfsteinpflaster	Q3 2884,7016 3040,6800 3306,6453
@@ -18364,7 +18366,8 @@ Bogenstr. (Hessenwinkel): Asphalt	Q0 32334,2224 32268,2229 32203,2254 32142,2304
 Lindenstr. (Schmöckwitz): Asphalt	Q0 26990,-2781 26931,-2871
 # 
 #: by: Freioun:
-Rothariweg: guter Asphalt	Q0 8292,6331 8290,6191 8291,6048
+#: confirmed_by: srt
+Rothariweg: guter Asphalt	Q0- 8292,6331 8290,6191 8291,6048
 # 
 #: by: Peter Heurich:
 #: confirmed_by: srt

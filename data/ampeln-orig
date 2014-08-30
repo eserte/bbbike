@@ -373,6 +373,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9310,4407
 	X 5644,6936
 	X 5817,7223
+#: note: Anforderung für Radfahrer aus Richtung Schmiljanstr./Schmargendorfer Str. über die Straße Richtung Bundesallee/Wiesbadener Str.
 	X 5397,7205
 #: XXX_prog: zusammenhängende Ampelanlage vvv
 	X 5357,8013
@@ -1867,7 +1868,9 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 9418,11804
 	F 14619,16672
 	F 18179,16534
-	X 5314,7217
+#: corrected_by: srt (X -> F)
+	F 5294,7216
+#: XXX_prog gilt nicht für Radfahrer in Richtung Westen
 	X 5352,7184
 #: by: ^^^
 #: by: davidbest:

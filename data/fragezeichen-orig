@@ -289,7 +289,7 @@ Zeppelinstr.: Radspuren bis 2015 geplant	?::projected -4724,14482 -4704,14571 -4
 Wilhelmstr.: Radspuren bis 2015 geplant	?::projected; -5501,11251 -5455,11321 -5392,11421
 # 
 #: osm_watch: way id="4472041" version="11"
-#: last_checked: 2014-04-27
+#: last_checked: 2014-08-30
 #: check_frequency: 90d
 Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,6404 5823,6413
 # 
@@ -301,7 +301,7 @@ Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,
 #: check_frequency: 90d
 Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,4376
 # 
-#: last_checked: 2014-04-26
+#: last_checked: 2014-08-30
 #: check_frequency: 90d
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8496,6919 8447,6964 8414,6995 8319,7084
 # 
@@ -318,7 +318,8 @@ Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
 #: XXX Realisierung von Radstreifen bis 2015
-#: next_check: 2014-09-22
+#: last_checked: 2014-08-30
+#: check_frequency: 120d
 Manteuffelstr.: werden Radstreifen markiert?	?::projected 8606,5496 8610,5579 8617,5745 8622,5867 8641,5998 8661,6169 8680,6322 8697,6455 8707,6537 8722,6656 8735,6695
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
@@ -389,8 +390,8 @@ Goldfasanenweg: existiert die Straße bereits? Genaue Lage (GPS-Track!)? Qualität
 #: XXX Arbeiten beginnen im September 2014 und enden im Dezember 2014
 #: XXX wird es Einschränkungen für Radfahrer während der Bauarbeiten geben?
 #: XXX RW6 entfernen
-#: next_check: 2014-09-06
-Torgauer Str.: Straße wird zurückgebaut, nur ein Rad/Gehweg bleibt erhalten, wahrscheinlich mit besserer Qualität	?::projected 7250,8223 7402,8208
+#: last_checked: 2014-08-30
+Torgauer Str.: Straße wird zurückgebaut, nur ein Rad/Gehweg bleibt erhalten, wahrscheinlich mit besserer Qualität	?::projected 7250,8223 7374,8211 7402,8208
 # 
 #: XXX zurzeit betoniert, Q0 bleibt aber
 #: next_check: 2014-08-23
@@ -1123,6 +1124,8 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+zum Debis-Parkhaus: genauer anschauen, genaue Lage	? 8430,10710 8421,10693 8373,10732 8350,10587 8328,10585
+# 
 # REMOVED (ja -> radwege-orig) --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=4314&page=28 --- Wilhelmstr.: sind die Radspuren temporär aufgehoben?	?::inwork 8775,12457 8804,12280
 # 
 #: XXX sind die beiden Stränge hier unterscheidbar? vvv
@@ -1462,7 +1465,7 @@ Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,985
 # REMOVED (das sah nicht öffentlich aus...) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121129.1435.378795.html vvv --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21211,3474 21270,3407 20867,3018 --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21046,3188 20927,3292 --- #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=3934&options=4
-#: last_checked: 2014-04-26
+#: last_checked: 2014-08-30
 #: check_frequency: 90d
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8645,6781 8655,6796
 # 
@@ -1473,7 +1476,7 @@ Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,87
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4744
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140610.1005.397765.html
-#: last_checked: 2014-07-23
+#: last_checked: 2014-08-30
 #: next_check: 2014-11-01
 Lauterstr.: wird die Straße am Breslauer Platz komplett für Autofahrer/Radfahrer gesperrt?	?::projected 5810,7337 5817,7223
 # 
@@ -1828,14 +1831,7 @@ Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17432,12413 17437,12443
 Schlotterkammsteig: Qualität?	? 16223,-682 16251,-586 16276,-507
 # 
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
-# 
-#: next_check_id: CHERUSKERPARK-2014
-#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140723.1150.398518.html (fertig?)
-#: osm_watch: way id="50536166" version="3" (Cheruskerpark)
-#: last_checked: 2014-07-17
-#: next_check: 2014-07-23
-Cheruskerpark: hier entsteht eine neue Wegverbindung (wassergebundene Decke), interessant zur Aufnahme in die Datenbasis?	?::inwork 7391,8231 7369,8278
+# REMOVED (realisiert) --- #: next_check_id: CHERUSKERPARK-2014 --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140723.1150.398518.html (fertig?) --- #: osm_watch: way id="50536166" version="3" (Cheruskerpark) --- #: last_checked: 2014-07-17 --- #: next_check: 2014-07-23 --- Cheruskerpark: hier entsteht eine neue Wegverbindung (wassergebundene Decke), interessant zur Aufnahme in die Datenbasis?	?::inwork 7374,8211 7372,8222 7351,8258 7353,8293
 # 
 #: XXX_osm: fehlt bei osm
 #: last_checked: 2013-05-10 (keine Anzeichen für Bautätigkeiten zu sehen)
@@ -3440,7 +3436,7 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 #: osm_watch: way id="34822334" version="11"
 #: osm_watch: way id="69126601" version="3"
 #: osm_watch: way id="150397570" version="3"
-#: last_checked: 2014-07-23
+#: last_checked: 2014-08-30
 #: check_frequency: 100d
 Lauenburger Str.: wird die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5829,6397 5823,6413
 # REMOVED (Gewerbegelände, Befahren nicht erlaubt, auf der anderen Seite war das Tor zu) --- Windthorststr.: Qualität der Verlängerung? Ausschilderung?	? 22552,11029 22554,11049 22490,11133 22469,11138
