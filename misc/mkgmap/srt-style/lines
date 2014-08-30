@@ -287,7 +287,8 @@ railway=narrow_gauge [0x3f resolution 17]
 railway=rail [0x14 resolution 17]
 railway=subway [0x2e resolution 17]
 # SRT: change: private definition (0x14 -> 0x115)
-railway=tram [0x115 resolution 18]
+# SRT: changed back from 0x115 -> 0x14, mkgmap-r3333 does not work with this id
+railway=tram [0x14 resolution 18]
 railway=platform {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
 
 # note: using 0x1a instead of the default 0x1b (which seems to be wrong according to the typ file editor)
