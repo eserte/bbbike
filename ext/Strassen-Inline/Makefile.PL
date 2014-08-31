@@ -37,7 +37,7 @@ if (! -e $inlinedistpm) {
     utime 0,0, $inlinedistpm;
 }
 
-WriteInlineMakefile
+WriteMakefile
   (
 # ***FILTER=1***
    'NAME'	   => 'Strassen::Inline',

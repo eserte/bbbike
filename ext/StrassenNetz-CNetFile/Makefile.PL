@@ -32,7 +32,7 @@ if (! -e $inlinedistpm) {
     utime 0,0, $inlinedistpm;
 }
 
-WriteInlineMakefile
+WriteMakefile
   (
    'NAME'	   => 'StrassenNetz::CNetFile',
    'VERSION_FROM'  => 'CNetFile.pm',
