@@ -341,6 +341,10 @@ Borsigdamm: Erneuerung des Wanderwegs f¸r den Radverkehr	?::projected 1606,19775
 Borsigdamm: Verbesserung f¸r den Radverkehr	?::projected 1463,19417 1450,19336 1472,19165 1528,18971
 #: by ^^^
 # 
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.168550.php
+#: next_check: 2014-12-01
+Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 22668,3884 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031 23185,1649
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -776,8 +780,8 @@ Planstraﬂe 7 -> Regener Str.: Qualit‰t etc?	?::projected 19646,9490 19727,9484 1
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/03/246-2013-2Anlage2UebersichtsplanErschliessung.pdf vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf vvv
-#: osm_watch: way id="287119368" version="4"
-#: XXX laut osm surface=asphalt (aber noch under construction)
+#: osm_watch: way id="287119368" version="5"
+#: XXX laut osm surface=asphalt und access=private
 Planstraﬂe 8: Name vielleicht Regener Str.? Qualit‰t?	?::projected 19869,9151 19885,9400 19890,9476
 #: osm_watch: way id="193373966" version="3"
 Straﬂe in Bau: genaue Lage, Name (hier auch die Regener Str.?), Qualit‰t?	?::inwork 19626,9166 19869,9151
@@ -1865,18 +1869,7 @@ Altstadtblick (Potsdam): neue Straﬂe in Potsdam, Qualit‰t? Genauer Verlauf? (Pla
 #: check_frequency: ^^^
 #: last_checked ^^^
 # 
-#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straﬂenname)
-#: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/4508103642561748/42561748/00111971/71-Anlagen/03/4_Version_vom_30_12_2013.pdf (weitere Vorschl‰ge)
-#: by: http://www.fatkoehl.com/index.php?article_id=31
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2014
-#: XXX es gab noch zwei weitere Alternativen: Kate-K¸hl-Straﬂe und Alisa-Fuss-Straﬂe
-#: XXX fehlt in Berlin.coords.data (laut DTAG-Liste und osm und LOR PLZ=10179) -> Wilhelmine-Gemberg-Weg|Mitte|10179
-#: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein
-#: XXX auch in der DTAG-Straﬂenliste vom 2014-06-04
-#: osm_watch: way id="256968789" version="9"
-#: last_checked: 2014-07-07 (zur Zeit nur eine Baustraﬂe)
-#: check_frequency: 60d
-Wilhelmine-Gemberg-Weg: genaue Lage, Qualit‰t?	?::inwork 11707,11526 11769,11683
+# REMOVE (Straﬂenschilder h‰ngen) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straﬂenname) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/4508103642561748/42561748/00111971/71-Anlagen/03/4_Version_vom_30_12_2013.pdf (weitere Vorschl‰ge) --- #: by: http://www.fatkoehl.com/index.php?article_id=31 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2014 --- #: XXX es gab noch zwei weitere Alternativen: Kate-K¸hl-Straﬂe und Alisa-Fuss-Straﬂe --- #: XXX fehlt in Berlin.coords.data (laut DTAG-Liste und osm und LOR PLZ=10179) -> Wilhelmine-Gemberg-Weg|Mitte|10179 --- #: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein --- #: XXX auch in der DTAG-Straﬂenliste vom 2014-06-04 --- #: osm_watch: way id="256968789" version="9" --- #: last_checked: 2014-07-07 (zur Zeit nur eine Baustraﬂe) --- #: check_frequency: 60d --- Wilhelmine-Gemberg-Weg: genaue Lage, Qualit‰t?	?::inwork 11715,11522 11762,11665 11829,11727
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 #: XXX Straﬂenbenennungen in Potsdam-Fahrland

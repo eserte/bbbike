@@ -2416,7 +2416,7 @@ userdel	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,1565
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2701,26 +2701,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weissenseer-blumenfest.de/1_1_Aktuell_Presse-und-Highlights.html',
-         'data' => 'userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
-',
-         'periodic' => 1,
-         'until' => 1409522399,
-         'from' => 1409176800,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Berliner Allee (Weißensee): Veranstaltung (Blumenfest Weißensee), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 29.8.2014 bis 31.8.2014',
-         'id' => 2275,
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3492,16 +3473,7 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.flaeming-skate.de/de/aktuelles/2014/05/bauarbeiten-auf-der-flaeming-skate-2014.php',
-         'until' => 1409522399,
-         'text' => 'Vollsperrung zwischen Kolzenburg und Neuhof bis August 2014 wegen Reparaturarbeiten',
-         'from' => 1402264800,
-         'id' => 2579,
-         'data' => 'userdel	2::inwork -5280,-38803 -5707,-39339 -6365,-40518 -6565,-41080
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1414796400,
          'text' => 'Charlottenburger Ufer: zwischen Winterstein- und Lohmeyerstraße Bauarbeiten, Sperrung der Fahrbahn, bis 31.10.2014',
@@ -3612,8 +3584,8 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        {
          'source_id' => 'LS/721-E/14/067',
-         'until' => 1409695200,
-         'text' => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 02.09.2014 ',
+         'until' => 1409954399,
+         'text' => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 05.09.2014 ',
          'from' => 1407650400,
          'id' => 2607,
          'data' => 'userdel	2::inwork 33953,23796 34266,22939
@@ -3697,21 +3669,13 @@ userdel	2::inwork 7103,11247 6851,11346
          'text' => 'Rudolstädter Straße: zwischen Bechstedter Weg und Hohenzollerndamm Straßenbauarbeiten, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, vom Montag, dem 01.09.2014 bis ca. 12.09.2014',
          'from' => 1409436000,
          'id' => 2620,
-         'data' => 'userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 3848,8689 3775,8771 3701,8849
+         'data' => '#: source_id: IM_022741
+userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 3848,8689 3775,8771 3701,8849
 ',
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_022700',
-         'until' => 1409565600,
-         'text' => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 29. August 2014 bis 1. September 2014 12 Uhr ',
-         'from' => 1409202000,
-         'id' => 2622,
-         'data' => 'userdel	q4::temp 8426,13909 8574,13666
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_022704',
          'until' => 1409839200,

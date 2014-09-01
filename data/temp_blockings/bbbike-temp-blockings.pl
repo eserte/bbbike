@@ -22723,7 +22723,7 @@ EOF
        text  => 'Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 11498,11417 11542,11342 11415,11392 11498,11417
+userdel	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 EOF
      },
      { from  => 1398798026, # 2014-04-29 21:00
@@ -23168,8 +23168,8 @@ userdel	2::temp 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
 EOF
      },
      { from  => 1407650400, # 2014-08-10 08:00
-       until => 1409695200, # 2014-09-03 00:00
-       text  => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 02.09.2014 ',
+       until => $isodate2epoch->("2014-09-05 23:59:59"), # 1409695200, # 2014-09-03 00:00
+       text  => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 05.09.2014 ',
        type  => 'gesperrt',
        source_id => 'LS/721-E/14/067',
        data  => <<EOF,
@@ -23297,6 +23297,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140827.1305.398908.html',
        data  => <<EOF,
+#: source_id: IM_022741
 userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 3848,8689 3775,8771 3701,8849
 EOF
      },

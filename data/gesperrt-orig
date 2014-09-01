@@ -718,7 +718,7 @@ Harzburger Str. (Pankow), Klaustaler Str...	1s:q4 11442,18736 11419,18801 11463,
 #: XXX_indoor bei osm falsch herum
 Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
 Römerweg	1s:q2 19236,9710 19450,9728 19459,9842
-Michaelkirchplatz	1 11415,11392 11498,11417 11542,11342
+Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
 #: by: Ulrike Orlowski vvv
 #: XXX_osm Einbahnstraßen fehlen bei osm vvv
 Berenhorststr.	1 4816,17712 4862,17934
@@ -2550,7 +2550,7 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045
 # 
 #: XXX laut Schild bis Dezember 2014 gesperrt
-#: last_checked: 2014-08-29
+#: last_checked: 2014-09-01
 #: next_check: 2014-12-15
 Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
 # 
@@ -2567,8 +2567,8 @@ Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 #: last_checked: 2014-06-29 vvv
-#: osm_watch: way id="24845189" version="9"
-#: XXX laut osm nicht mehr gesperrt?
+#: osm_watch: way id="24845189" version="10"
+#: XXX laut osm access=private
 Viechtacher Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19657,9666 19732,9678 19801,9680 19857,9682 19893,9683
 Eisensteiner Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19732,9678 19727,9484
 #: last_checked ^^^
