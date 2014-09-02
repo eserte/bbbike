@@ -36,7 +36,8 @@ var msg = {"en":{"Kartendaten":"Map data",
 		 "Qualit\u00e4t":"Smoothness",
 		 "Radwege":"Cycleways",
 		 "Unbeleuchtet":"Unlit",
-		 "Gr\u00fcne Wege":"Green ways"
+		 "Gr\u00fcne Wege":"Green ways",
+		 "Fragezeichen":"Unknown"
 		}
 	  };
 function M(string) {
@@ -106,6 +107,9 @@ var unlit_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-un
 var green_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-green'
                               ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-green'
                             };
+var unknown_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-unknown'
+                                ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-unknown'
+                              };
 
 var mapset = q.get('mapset') || 'stable';
 var base_map_url = base_map_url_mapping[mapset] || base_map_url_mapping['stable'];
@@ -114,6 +118,7 @@ var handicap_map_url = handicap_map_url_mapping[mapset] || handicap_map_url_mapp
 var cycleway_map_url = cycleway_map_url_mapping[mapset] || cycleway_map_url_mapping['stable'];
 var unlit_map_url = unlit_map_url_mapping[mapset] || unlit_map_url_mapping['stable'];
 var green_map_url = green_map_url_mapping[mapset] || green_map_url_mapping['stable'];
+var unknown_map_url = unknown_map_url_mapping[mapset] || unknown_map_url_mapping['stable'];
 var accel;
 
 /*
@@ -238,6 +243,9 @@ function doLeaflet() {
     var bbbikeOrgGreenUrl = green_map_url + '/{z}/{x}/{y}.png';
     var bbbikeGreenTileLayer = new L.TileLayer(bbbikeOrgGreenUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
+    var bbbikeOrgUnknownUrl = unknown_map_url + '/{z}/{x}/{y}.png';
+    var bbbikeUnknownTileLayer = new L.TileLayer(bbbikeOrgUnknownUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+
     var osmMapnikUrl = use_osm_de_map ? 'http://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png' : 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="http://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
     var osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
@@ -255,8 +263,12 @@ function doLeaflet() {
 	{label:M("Handicaps"),       layer:bbbikeHandicapTileLayer,   abbrev:'H'},
 	{label:M("Radwege"),         layer:bbbikeCyclewayTileLayer,   abbrev:'RW'},
 	{label:M("Unbeleuchtet"),    layer:bbbikeUnlitTileLayer,      abbrev:'NL'},
-	{label:M("Gr\u00fcne Wege"), layer:bbbikeGreenTileLayer,      abbrev:'GR'}
+	{label:M("Gr\u00fcne Wege"), layer:bbbikeGreenTileLayer,      abbrev:'GR'},
     ];
+    // XXX enable_upload is misused here --- definition should go directly to overlayDefs if the layer is availabl at bbbike.org
+    if (enable_upload) {
+	overlayDefs.push({label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'});
+    }
 
     var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer };
     var overlayMaps = {};
