@@ -84,7 +84,7 @@ var routelistPopup;
 
 var defaultLatLng = [52.516224, 13.377463]; // Brandenburger Tor, good for Berlin
 
-var devel_tile_letter = 'y'; // or 'z'
+var devel_tile_letter = 'a'; // or 'z' or 'y'
 
 var base_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike'
                              ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike'
@@ -264,11 +264,8 @@ function doLeaflet() {
 	{label:M("Radwege"),         layer:bbbikeCyclewayTileLayer,   abbrev:'RW'},
 	{label:M("Unbeleuchtet"),    layer:bbbikeUnlitTileLayer,      abbrev:'NL'},
 	{label:M("Gr\u00fcne Wege"), layer:bbbikeGreenTileLayer,      abbrev:'GR'},
+	{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'}
     ];
-    // XXX enable_upload is misused here --- definition should go directly to overlayDefs if the layer is availabl at bbbike.org
-    if (enable_upload) {
-	overlayDefs.push({label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'});
-    }
 
     var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer };
     var overlayMaps = {};
