@@ -32,7 +32,7 @@ Hauptstr.: asphaltierter Radweg	Q0-; 15261,10738 14906,10820
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790
 #: next_check_id: KARLSHORSTER-2014
 #: XXX nach den Bauarbeiten wahrscheinlich asphaltiert?
-#: last_checked: 2014-08-08
+#: last_checked: 2014-08-30
 Karlshorster Str.: m‰ﬂiges Kopfsteinpflaster	Q2 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkst‰ttenweg: m‰ﬂiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
@@ -240,7 +240,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaﬂnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2014-07-22
+#: last_checked: 2014-09-02
 #: check_frequency: 90d
 Mariannenstr: m‰ﬂiges bis gutes Kopfsteinpflaster, 25 km/h mˆglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
@@ -3900,7 +3900,7 @@ Willst‰tterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): m‰ﬂiger Asphalt	Q1- 9562,7796 9372,7798
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): unbefestigter Weg	Q2 9372,7798 9281,7795
 (Alter Hafen): Asphalt	Q0 10204,7680 10134,7797 10076,8040 10328,8102 10444,8086 10486,7972 10405,7898 10134,7797
-# REMOVED --- (Alter Hafen): Asphalt	Q0 10076,8040 10037,8269
+(Alter Hafen): Asphalt	Q0 10076,8040 10037,8269
 Ederstr.: Fahrbahn asphaltiert, gemeinsamer Rad- und Gehweg mit Verbundsteinpflaster	Q0 13946,7918 13958,8106
 Ederstr.: Verbundsteinpflaster	Q0- 13958,8106 13967,8195 13939,8228
 (Zur Eisackstr.): Kleinkopfsteinpflaster	Q1 6409,8026 6418,7958 6429,7876
@@ -9385,7 +9385,8 @@ Schwarzwurzel-Park: Gehwegplatten	Q0- 20698,18359 20814,18341 20823,18329
 (Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8339,9560 8339,9448 8374,9291 8381,9247 8338,9099
 #: next_check_id: MONUMENTENPLATZ-2014
 #: XXX w‰hrend der Bauarbeiten
-#: last_checked: 2014-06-27
+#: XXX sp‰ter wahrscheinlich groﬂe Pflastersteine
+#: last_checked: 2014-09-02
 #: check_frequency: 60d
 (Flaschenhalspark, Berlin-Leipzig): unbefestigt	Q2 8338,9099 8344,9085 8358,9068
 (Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8358,9068 8367,9006 8374,9074 8389,9087
@@ -9629,6 +9630,8 @@ Wilhelmine-Gemberg-Weg: unbefestigte Straﬂe	Q2 11715,11522 11762,11665
 Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11762,11665 11829,11727
 Alexanderplatz: Pflasterung mit Sch‰den	Q1- 11055,12717 11030,12741 11007,12773 10970,12822
 Alexanderplatz: Pflasterung mit Sch‰den	Q1- 11030,12741 11087,12780
+(Zufahrt Debis-Parkhaus): Asphalt	Q0 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
+(Debis-Parkhaus - Gleisdreieckpark): Kleinsteinpflaster	Q1 8348,10636 8332,10637
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -23601,7 +23604,7 @@ Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: next_check_id: AMZIRKUS-2014
 #: XXX danach wohl Q0
 #: last_checked: 2014-08-22
-Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9239,12923
+Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9212,12969 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938
 (s¸dliches Spreeufer - Gustav-Heinemann-Br¸cke): wassergebundene Decke	Q1 8032,12889 8053,12871 8116,12938

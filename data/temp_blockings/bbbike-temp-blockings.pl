@@ -13050,7 +13050,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010401',
        data  => <<EOF,
-userdel	2::inwork 8483,10900 8536,11063
+userdel	2::inwork 8476,10884 8536,11063
 EOF
      },
      { from  => 1226267628, # 2008-11-09 22:53
@@ -13441,7 +13441,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_011637',
        data  => <<EOF,
-userdel	q4::inwork; 8483,10900 8443,10777
+userdel	q4::inwork; 8476,10884 8443,10777
 EOF
      },
      { from  => 1244065177, # 2009-06-03 23:39
@@ -17807,7 +17807,7 @@ EOF
 (Flughafen Tempelhof - Eingang Oderstr.)	2::night 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9461,7190
 (Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040 10328,8102 10444,8086 10486,7972 10405,7898 10134,7797
-# REMOVED --- (Alter Hafen)	2::night 10076,8040 10037,8269
+(Alter Hafen)	2::night 10076,8040 10037,8269
 (Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
 (zur nördlichen Landebahn)	2::night 11470,7744 11430,7781
 EOF

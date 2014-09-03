@@ -146,7 +146,8 @@ Lilienthalstr.	N 10615,8558 10627,8706 10640,8832 10675,8940 10748,9054 10709,91
 (Flughafen Tempelhof - Eingang Oderstr.)	NN 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn)	NN 9302,7294 9351,7241 9461,7190
 (Alter Hafen)	NN 10204,7680 10134,7797 10076,8040 10328,8102 10444,8086 10486,7972 10405,7898 10134,7797
-# REMOVED (für den Bau eines Wasserbeckens) --- #: XXX wahrscheinlich wird dieser Weg für den Bau des Wasserbeckens entfernt --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5081.html --- #: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles_neu/Downloads/2013-08_Flyer_Parklandschaft.pdf --- #: last_checked: 2013-11-19 --- #: next_check: 2014-01-01 --- (Alter Hafen)	NN 10076,8040 10037,8269
+# REMOVED (für den Bau eines Wasserbeckens --- Weg ist seit dem Volksentscheid wieder befahrbar) --- #: XXX wahrscheinlich wird dieser Weg für den Bau des Wasserbeckens entfernt --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5081.html --- #: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles_neu/Downloads/2013-08_Flyer_Parklandschaft.pdf --- #: last_checked: 2013-11-19 --- #: next_check: 2014-01-01 --- 
+(Alter Hafen)	NN 10076,8040 10037,8269
 #: note: ^^^
 Südstern	N 10564,9292 10547,9233 10705,9234
 Südstern	HH 10564,9292 10625,9259 10713,9260
@@ -246,9 +247,11 @@ Jägerstr. (Mitte)	N 9656,12021 9913,12068 9961,12094 10003,12113
 Kronenstr.	N 9892,11752 9692,11732 9559,11715 9432,11702 9234,11683
 (Privatstr.)	NN 10128,11813 10112,11796 10098,11766 9907,11752 9892,11752
 Stresemannstr.	H 9388,10393 9250,10563 9210,10614 9131,10716 9022,10857 8947,10956 8901,11011 8747,11194 8720,11226 8631,11334 8602,11369 8573,11404 8542,11502
-Köthener Str. (Kreuzberg, Tiergarten)	N 8631,11334 8536,11063 8483,10900 8443,10777 8430,10710
+(Zufahrt Debis-Parkhaus)	N 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
+(Debis-Parkhaus - Gleisdreieckpark)	NN 8348,10636 8332,10637
+Köthener Str. (Kreuzberg, Tiergarten)	N 8631,11334 8536,11063 8476,10884 8443,10777 8430,10710
 Dessauer Str. (Kreuzberg)	N 8747,11194 8695,11015 8659,10910 8622,10801
-Hafenplatz	N 8678,10749 8622,10801 8483,10900
+Hafenplatz	N 8678,10749 8622,10801 8476,10884
 Niederkirchnerstr.	N 8720,11226 9155,11283
 Anhalter Str.	H 8947,10956 9234,11056
 (Straße unter dem U-Bahnhof Gleisdreieck)	N 8333,10167 8384,10507
@@ -4715,7 +4718,7 @@ Havelstr.	NN -3150,14631 -3122,14557 -3107,14535 -3054,14498
 Viktoria-Ufer	N -3249,14621 -3259,14625 -3285,14615 -3360,14525 -3393,14470
 Viktoria-Ufer	N -3410,14479 -3446,14386 -3444,14310
 #: alias: ^^^
-#: XXX_osm: bei osm wurde die Schreibweise "Augustaufer" gewählt (added note)
+#: alias: Augustaufer
 Augusta-Ufer	N -3501,14365 -3440,14498 -3331,14628 -3255,14685
 Jüdenstr. (Spandau)	N -3506,14306 -3481,14308 -3444,14310 -3422,14322 -3397,14370 -3350,14446 -3316,14504 -3249,14621 -3239,14641
 (Viktoriaufer/Jüdenstr. - Am Juliusturm)	NN -3239,14641 -3209,14662
@@ -11896,7 +11899,7 @@ Brüder-Grimm-Gasse	N 8410,11143 8351,11163
 Brüder-Grimm-Gasse	NN 8351,11163 8343,11133
 Varian-Fry-Str.	NN 8374,11479 8389,11378
 Gabriele-Tergit-Promenade	N 8380,10865 8399,10923 8454,11086 8467,11125 8554,11386
-(Durchgang U-Bhf. Bernburger Str.)	NN 8483,10900 8399,10923
+(Durchgang U-Bhf. Bernburger Str.)	NN 8476,10884 8399,10923
 Erna-Berger-Str.	N 8602,11369 8796,11393
 (Tilla-Durieux-Park)	NN 8467,11125 8410,11143
 Nymphenufer	N -4164,1993 -4134,1984 -4113,1974 -4079,1882 -4048,1851
@@ -15987,7 +15990,7 @@ Novalisstr.	N 9340,13510 9275,13720
 Philippstr.	N 8892,13498 8833,13440
 Claire-Waldoff-Str.	N 9246,13235 9132,13187
 Am Zirkus	N 9118,13070 9137,13032
-Am Zirkus	N 9090,13009 9137,13032 9167,13046 9239,12923
+Am Zirkus	N 9090,13009 9137,13032 9167,13046 9212,12969 9239,12923
 Bertolt-Brecht-Platz	N 9193,12875 9153,12925
 Karlplatz	N 8711,12986 8676,12976
 Charitéstr.	N 8693,12951 8676,12976 8632,13037

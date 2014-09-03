@@ -18,7 +18,7 @@ Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,1
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
 # 
-#: last_checked: 2014-08-30 vvv
+#: last_checked: 2014-09-02 vvv
 #: next_check: 2014-11-30 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -124,8 +124,8 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
 #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7
-#: last_checked: 2014-06-04
-#: check_frequency: 90d
+#: last_checked: 2014-09-02
+#: check_frequency: 60d
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
 # REMOVED (by osm) --- #: last_checked: 2013-06-10 (wosch) vvv --- #: osm_watch: way id="25185423" version="15"--- Gartenstr.: Einbahnstraﬂe zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13986 --- #: last_checked ^^^
@@ -152,7 +152,7 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwor
 #: last_checked: 2014-09-01
 Saarbr¸cker Str.: Einbahnstraﬂeregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
-#: last_checked: 2014-09-01
+#: last_checked: 2014-09-02
 Christinenstr.: Einbahnstraﬂeregelung wegen Baustelle	q4::inwork; 10830,14183 10755,14067
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -242,7 +242,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
 # REMOVED (Anlieger frei, eigentlich kaum noch Behinderungen) --- #: last_checked: 2013-11-25 (Fahrbahn inoffiziell befahrbar) --- Neue Gr¸nstr.: Bauarbeiten, Fahrbahn kˆnnte gesperrt sein	q3::inwork 10389,11390 10446,11470
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1401/nachricht5147.html (Ende der Baumaﬂnahme im April 2014) --- #: note: siehe auch Eintrag zur Friedrichsbr¸cke --- #: next_check_id: FRIEDRICHSBRUECKE-2014 vvv --- #: last_checked: 2014-06-06 vvv --- Burgstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 10166,12777 10132,12941 --- Anna-Louisa-Karsch-Str.: vor der Friedrichsbr¸cke auf den linken Gehweg fahren	q3::inwork; 10264,12826 10166,12777 --- #: last_checked ^^^ --- #: next_check_id ^^^
-# REMOVED (Fahrbahn befahrbar, Autos parken schon) --- #: osm_watch: way id="131505633" version="4" --- #: last_checked: 2013-11-13 --- #: check_frequency: 30d --- Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9167,13046 9137,13032
+# REMOVED (Fahrbahn befahrbar, Autos parken schon) --- #: osm_watch: way id="131505633" version="4" --- #: last_checked: 2013-11-13 --- #: check_frequency: 30d --- Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9212,12969 9167,13046 9137,13032
 # REMOVED (aufgehoben) --- #: last_checked: 2013-12-11 --- Ziegelstr.: Baustelle, Einbahnstraﬂe	q3::inwork; 9269,13060 9413,13071
 # REMOVED (reported by wosch) --- #: last_checked: 2013-04-11 --- Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9870,12657 9900,12643 9919,12613
 # 
@@ -254,7 +254,7 @@ Alfred-Dˆblin-Platz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11162,10919 11150
 # 
 #: next_check_id: MONUMENTENPLATZ-2014
 #: XXX w‰hrend der Bauarbeiten
-#: last_checked: 2014-06-27
+#: last_checked: 2014-09-02
 #: check_frequency: 60d
 Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 # 
@@ -327,7 +327,7 @@ Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12
 Dottistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 15685,12154 15879,12131
 # 
 #: next_check_id: HAUPTBUCHT-2014
-#: last_checked: 2014-07-18 (Absperrgitter existieren noch, werden aber oft von Fuﬂg‰ngern weggeschoben) (deshalb nur q3)
+#: last_checked: 2014-08-30 (Absperrgitter existieren noch, werden aber oft von Fuﬂg‰ngern weggeschoben) (deshalb nur q3)
 #: check_frequency: 60d
 (Rummelsburger Ufer - Hauptstr.): Bauarbeiten, ggfs. Umweg ¸ber Norma-Parkplatz notwendig	q3::inwork 15249,10564 15307,10701
 # 
@@ -382,7 +382,7 @@ Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fuﬂg‰nger	q2 13885,12279 13927,12370
 Otto-Ludwig-Str.: Fuﬂg‰ngerzone	q2 4862,10881 4954,10876
-#: XXX wo genau sind die Bordsteine, auf beiden Seiten? Und wie w‰re das Handicap ansonsten (wahrscheinlich auch nicht besser als q3, vielleicht trotzdem q4)
+#: XXX_prog: Bordstein zur Friedrichstr., ansonsten q3 oder trotzdem q4 (wegen der vielen Touristen)
 Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9474,11360
 Georgenstr.: Fuﬂg‰ngerzone	q3 9434,12669 9313,12662
 #: note: besonders in der Touristenhochsaison sehr eng vvv
@@ -1784,7 +1784,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
 (entlang der Stadtbahn): Fuﬂg‰nger	q1 10117,12973 10004,12966 9930,12947
-(Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8483,10900 8399,10923
+(Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8476,10884 8399,10923
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7097,16915 7064,16943
@@ -2114,6 +2114,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (am Kaiser's): Fuﬂg‰nger	q2 15714,11941 15710,11857
 Groﬂe Pr‰sidentenstr.: wartende Straﬂenbahnen	q2 10220,13098 10105,13004
 Wilhelmine-Gemberg-Weg: einige Fuﬂg‰nger	q1 11762,11665 11829,11727
+(Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
