@@ -223,7 +223,7 @@ Warschauer Str: Radspuren geplant	?::projected 13588,11490 13603,11538 13651,117
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="4424794" version="12"
 #: osm_watch: way id="30195541" version="6"
-#: last_checked: 2014-05-24 (im westlichen Abschnitt geprüft)
+#: last_checked: 2014-09-03
 #: check_frequency: 60d
 Turmstr.: Radspuren für 2013 geplant	?::projected 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321
 # 
@@ -247,7 +247,7 @@ Gartenfelder Str.: Radspur wird gebaut, Realisierung bis April 2015	?::inwork; -
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
 #: osm_watch: way id="25219757" version="8"
 #: osm_watch: way id="4600236" version="11"
-#: last_checked: 2014-03-07
+#: last_checked: 2014-09-03
 #: check_frequency: 120d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
@@ -312,7 +312,7 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
-#: last_checked: 2014-06-22
+#: last_checked: 2014-08-30
 #: check_frequency: 60d
 Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
@@ -410,12 +410,7 @@ Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?
 # 
 # REMOVED (oberhalb) --- #: last_checked: 2014-05-06 --- #: check_frequency: 14d --- Paul-und-Paula-Ufer: wird der Radweg am Ufer oder oberhalb entlang geführt?	?::inwork 15200,10600 15145,10636 15101,10640
 # REMOVED (Änderungen aufgenommen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5225.html --- #: XXX für Fußgänger wird nur die südliche Fahrbahnseite zur Verfügung stehen? --- #: next_check: 2014-05-10 --- Sonnenallee: Bauarbeiten, bleiben die Radwege erhalten? Außerdem Bau einer provisorischen Ampel an der Ziegrastr.	?::projected 14519,7301 14174,7505
-# 
-#: source_id: IM_022146
-#: last_checked: 2014-05-24
-#: next_check: 2014-06-30
-Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Ampel?	?::inwork 5299,14049
-# 
+# REMOVED (nur verschwenkt) --- #: source_id: IM_022146 --- #: last_checked: 2014-05-24 --- #: next_check: 2014-06-30 --- Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Ampel?	?::inwork 5306,14061
 # REMOVED (keine Besonderheiten) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5213.html --- #: XXX bis Ende 2014 --- Heidestr.: wie ist die Radverkehrsführung an der Kreuzung Sellerstr.?	? 7589,14359 7597,14417
 # REMOVED (Bauarbeiten laufen bereits, sind aber relativ unproblematisch für Radfahrer) --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140326.1205.395773.html --- #: next_check: 2014-04-01 --- Thusnelda-Allee: wann genau wird die Sperrung sein?	? 5956,13330 5975,13256
 # REMOVED (kein Fahrradlauf erkennbar; neben der Treppe ist eine "Rampe" "ausgetreten" --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4798 --- #: last_checked: 2014-06-22 --- Am S-Bhf. Wuhlheide: Treppenanlage mit Fahrradlauf? Außerdem die Qualität des Radwegs wieder evaluieren	? 20653,7289 20682,7262
@@ -822,7 +817,7 @@ Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2014-06-30
+#: last_checked: 2014-09-03
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -972,7 +967,7 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 # REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 (neue Hausnummern) --- #: osm_watch: way id="137340264" version="6" --- #: last_checked: 2014-04-04 --- #: check_frequency: 7d
 # REMOVED (aufgenommen) --- Edith-Stein-Str.: Qualität nach den Bauarbeiten?	?::inwork 14089,13247 14035,13104
 # REMOVED (-> strassen-orig etc.) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: XXX siehe auch Eintrag für "Am Langen Jammer" in gesperrt-orig --- #: last_checked: 2012-10-26 vvv --- #: next_check: 2012-12-01 vvv --- An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14376,12849 14449,12833 14594,12800 --- An den Eldenaer Höfen: wo genau wird die Straße liegen? Qualität?	?::inwork 14449,12833 14480,12932 --- #: next_check ^^^ --- #: last_checked ^^^
-# REMOVED (realisiert) --- #: next_check_id: ERNASAMUEL-2014 --- #: by: http://www.moabitonline.de/1637 --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110224.1350.332744.html --- #: by: https://www.spd-fraktion-mitte.de/system/files/dateien/anfrage/2011-11/2726/ka-0012-iv.pdf (Abschluss Ende 2013) --- #: note: Planstraße im Block 902 --- # REMOVED --- : osm_watch: way id="182859952" version="10" --- #: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014) --- #: last_checked: 2014-03-07 --- Erna-Samuel-Straße: werden hier noch Radstreifen erstellt?	?::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
+# REMOVED (realisiert) --- #: next_check_id: ERNASAMUEL-2014 --- #: by: http://www.moabitonline.de/1637 --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110224.1350.332744.html --- #: by: https://www.spd-fraktion-mitte.de/system/files/dateien/anfrage/2011-11/2726/ka-0012-iv.pdf (Abschluss Ende 2013) --- #: note: Planstraße im Block 902 --- # REMOVED --- : osm_watch: way id="182859952" version="10" --- #: source_id: INKO_120135 (Bauarbeiten an der Kreuzung Siemensstr./Beusselstr., bis 15.1.2014) --- #: last_checked: 2014-03-07 --- Erna-Samuel-Straße: werden hier noch Radstreifen erstellt?	?::inwork 5306,14061 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
 # REMOVED (keine Anzeichen für weitere Straßen hier) --- #: XXX neue Planstraßen nördlich des Alexanderplatzes vvv --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110208.1420.330238.html --- #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/bplan/bplan_b4ca/index.shtml --- #: by: http://ww.ak-berlin.de/publicity/ak/internet.nsf/0/002CE81791D5796BC125784D0033BC47/$FILE/Auslobung_Alexander%20Parkside_18%2001%202010.pdf --- #: XXX Straßen werden benannt nach: --- #: XXX - Oda Schottmüller --- #: XXX - Hilde Radusch
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html (aktuelle Infos) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html (Bauende: 2014) --- #: last_checked: 2012-05-03 --- #: next_check: 2013-12-15 --- Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html (aktuelle Infos) --- #: XXX Richtung Norden existieren schon Radspuren --- #: last_checked: 2013-11-05 --- #: next_check: 2013-11-24 --- Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772
@@ -1128,11 +1123,6 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX Qualität: Betonpflaster
-#: XXX culdesac-Eintrag am Bertolt-Brecht-Platz prüfen
-#: next_check: 2014-09-30
-Vorfahrt Am Zirkus: Verbindung aufnehmen? Ausschilderung?	? 9212,12969 9153,12925
-# 
 # REMOVED (ja -> radwege-orig) --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=4314&page=28 --- Wilhelmstr.: sind die Radspuren temporär aufgehoben?	?::inwork 8775,12457 8804,12280
 # 
 #: XXX sind die beiden Stränge hier unterscheidbar? vvv
@@ -1168,8 +1158,9 @@ Ottomar-Geschke-Str.: Neubau einer Nebenfahrbahn	?::inwork 21289,4563 21206,4387
 # 
 # REMOVED (aufgenommen) --- #: by: Albin Kessel --- #: XXX vor Ort anschauen? --- verlängerte Grolmanstr.: Qualität ("Kopfsteinpflaster")? Fußgängerfrequenz ("einige Fußgänger")? Nachts beleuchtet?	? 4651,11368 4648,11445 4616,11507 4574,11587
 # 
-#: last_checked: 2014-05-24
-Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5628,14063 5443,14028 5299,14049 5220,14043
+#: last_checked: 2014-09-03
+#: check_frequency: 60d
+Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5628,14063 5443,14028 5336,14044 5306,14061
 # 
 #: XXX_prog sollte mit einer Punkt-Richtungs-Penalty versehen werden, oder eine andere Lösung
 Alexander-Meißner-Str.: Überqueren nicht möglich, Schlenker nach Norden notwendig	? 20770,-1315 20394,-1397 20038,-1474

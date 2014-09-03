@@ -1520,7 +1520,7 @@ Liebigstr.: Kopfsteinpflaster	Q2 13905,12374 14000,12519 14058,12709
 Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12701,13873 12542,13984 12423,14066 12281,14164
 Esmarchstr.: Kopfsteinpflaster	Q2 12335,14246 12281,14164 12228,14083 12148,13961
 Chodowieckistr.: Kopfsteinpflaster	Q2 12266,14460 11977,14607 11681,14759
-Christinenstr.: Kopfsteinpflaster	Q2+ 10569,13719 10599,13775 10639,13864 10688,13963 10755,14067 10830,14183
+Christinenstr.: Kopfsteinpflaster	Q2+ 10569,13719 10599,13775 10639,13864 10688,13963 10755,14067 10822,14179
 Angermünder Str.: Kopfsteinpflaster	Q2 10640,13700 10703,13832
 Schinkelplatz: Asphalt	Q0 9984,12426 9996,12401 9994,12368 10008,12274 10010,12259 10029,12208
 Schinkelplatz: mäßiges Kopfsteinpflaster	Q2 10058,12290 10008,12274
@@ -9299,11 +9299,7 @@ Hadburgpfad: Verbundsteinpflaster	Q1+ 17484,12405 17531,12398
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0- 14791,9537 14823,9523 14844,9513
 (Uferweg - Puschkinallee): Asphalt	Q0- 14443,9731 14318,9688
 (Spreeuferweg - Wintersteinstr.): Asphalt mit Regenablaufrinnen	Q1- 3654,12672 3741,12607
-#: next_check_id: STADTGARTENMOABIT-2014
-#: XXX genaue Wegoberfläche feststellen
-#: XXX siehe auch Eintrag in gesperrt-orig
-#: last_checked: 2014-05-24 (noch gesperrt)
-(Weg am Stadtgarten Moabit): feste Wegoberfläche (asphaltiert?)	Q0 5708,14077 5685,14215
+(Weg am Stadtgarten Moabit): asphaltiert	Q0 5708,14077 5685,14215
 Helsingforser Platz: Betonpflaster	Q0- 13473,11456 13427,11431
 (Bornholmer Str. - Kolonnenweg): Asphalt	Q0 10134,16534 10118,16561 10108,16576 9954,16590
 Ritterlandweg [Wohngebiet]: schlechtes Kopfsteinpflaster	Q3 8315,17079 8346,17148
@@ -9632,6 +9628,7 @@ Alexanderplatz: Pflasterung mit Schäden	Q1- 11055,12717 11030,12741 11007,12773 
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11030,12741 11087,12780
 (Zufahrt Debis-Parkhaus): Asphalt	Q0 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 (Debis-Parkhaus - Gleisdreieckpark): Kleinsteinpflaster	Q1 8348,10636 8332,10637
+(Am Zirkus - Bertolt-Brecht-Platz): Betonpflaster	Q0- 9212,12969 9153,12925
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -23603,7 +23600,7 @@ Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
 Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: next_check_id: AMZIRKUS-2014
 #: XXX danach wohl Q0
-#: last_checked: 2014-08-22
+#: last_checked: 2014-09-03
 Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9212,12969 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938

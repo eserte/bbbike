@@ -22618,7 +22618,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (eigentlich relativ gut passierbar, zumindest in Richtung Osten) --- #: XXX wie sieht die Kreuzungssituation danach aus? --- #: last_checked: 2014-04-08
-userdel	q4::inwork 5443,14028 5299,14049
+userdel	q4::inwork 5443,14028 5336,14044 5306,14061
 EOF
      },
      { from  => undef, # 
