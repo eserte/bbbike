@@ -754,8 +754,11 @@ EOF
 	      ],
 	      [Cascade => $do_compound->("Development"), -menuitems =>
 	       [
-		[Button => "Render Mapnik map",
+		[Button => "Render Mapnik map (streets only)",
 		 -command => sub { render_mapnik_map() },
+		],
+		[Button => "Render Mapnik map (all current layers)",
+		 -command => sub { render_mapnik_map(-special => "current-layers") },
 		],
 		[Button => "Show Karte canvas items",
 		 -command => sub {
@@ -2790,6 +2793,11 @@ sub _get_tk_widgetdump {
 ######################################################################
 # -> mapnik
 sub render_mapnik_map {
+    my(%args) = @_;
+    my $mapfile = delete $args{-mapfile};
+    my $special = delete $args{-special};
+    die "Unhandled parameters: " . join(" ", %args) if %args;
+
     my($px0,$py0,$px1,$py1) = main::get_current_bbox_as_wgs84();
 
     my $renderer = "$bbbike_rootdir/../mapnik-bbbike/tools/renderer.py";
@@ -2799,8 +2807,70 @@ sub render_mapnik_map {
 	return;
     }
 
-    my @cmd = ($renderer, '--view', "--bbox=$px0,$py0,$px1,$py1");
-    BBBikeProcUtil::double_forked_exec(@cmd);
+    my $bbox_arg = "--bbox=$px0,$py0,$px1,$py1";
+
+    if ($special) {
+	require File::Temp;
+	require BBBikeUtil;
+	for my $utility (qw(convert display)) {
+	    if (!BBBikeUtil::is_in_path($utility)) {
+		main::status_message("ImageMagick utility '$utility' not available", 'error');
+		return;
+	    }
+	}
+
+	if ($special eq 'current-layers') {
+	    my @available_layers = (
+				    # mapfile                 checkbutton variable
+				    ['bbbike'              => \$main::str_draw{'s'}],
+				    ['bbbike-smoothness'   => \$main::str_draw{'qs'}],
+				    ['bbbike-handicap'     => \$main::str_draw{'hs'}],
+				    ['bbbike-green'        => \$main::str_draw{'gr'}],
+				    ['bbbike-unlit'        => \$main::str_draw{'nl'}],
+				    ['bbbike-unknown'      => \$main::str_draw{'fz'}],
+				    ['bbbike-cycleway'     => \$main::str_draw{'rw'}],
+				    ['bbbike-cycle-routes' => \$main::str_draw{'comm-route'}],
+				   );
+	    my @active_layers;
+	    for my $layer_def (@available_layers) {
+		my($mapfile, $varref) = @$layer_def;
+		if ($$varref) {
+		    my($tmpfh,$tmpfile) = File::Temp::tempfile(SUFFIX => '_' . $mapfile . '_mapnik.png', UNLINK => 1);
+		    push @active_layers, [$mapfile, $tmpfile];
+		}
+	    }
+	    if (!@active_layers) {
+		main::status_message('No layers available for drawing', 'warn');
+		return;
+	    }
+
+	    my($combinefh,$combinefile) = File::Temp::tempfile(SUFFIX => '_combine_mapnik.png', UNLINK => 1);
+
+	    my @outfiles;
+	    for my $layer_def (@active_layers) {
+		my($mapfile, $outfile) = @$layer_def;
+		my @cmd = ($renderer, "--mapfile=$mapfile", "--outfile=$outfile", $bbox_arg);
+		warn "@cmd ...\n" if $main::verbose;
+		system @cmd;
+		main::status_message("Command '@cmd' failed", 'die') if $? != 0;
+		push @outfiles, $outfile;
+	    }
+
+	    my @montagecmd = ('convert', @outfiles, '-flatten', $combinefile);
+	    warn "@montagecmd ...\n" if $main::verbose;
+	    system @montagecmd;
+	    main::status_message("Command '@montagecmd' failed", 'die') if $? != 0;
+
+	    my @displaycmd = ('display', $combinefile);
+	    BBBikeProcUtil::double_forked_exec(@displaycmd);
+	    unlink $_ for @outfiles; # cannot delete $combinefile yet
+	} else {
+	    die "Invalid value for -special '$special'";
+	}
+    } else {
+	my @cmd = ($renderer, ($mapfile ? "--mapfile=$mapfile" : ()), '--view', $bbox_arg);
+	BBBikeProcUtil::double_forked_exec(@cmd);
+    }
 }
 
 ######################################################################
