@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009,2012,2013 Slaven Rezic.
+# Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009,2012,2013,2014 Slaven Rezic.
 # All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
@@ -22,7 +22,9 @@ use vars qw(@unix_browsers @available_browsers
 	    $VERSION $VERBOSE $initialized $os $fork
 	    $ignore_config);
 
-$VERSION = 2.51;
+my $no_process_checker_warned;
+
+$VERSION = 2.52;
 
 @available_browsers = qw(_debian_browser _internal_htmlview
 			 _default_gnome _default_kde
@@ -482,21 +484,7 @@ sub htmlview {
 
     my(@X11BROWSERS, @TERMS);
 
-    my $gnome_is_running;
-    if (eval { require Proc::ProcessTable }) {
-	require File::Basename;
-	for my $p (@{ Proc::ProcessTable->new->table }) {
-	    if (File::Basename::basename($p->fname) eq 'gnome-session') {
-		$gnome_is_running++;
-		last;
-	    }
-	}
-    } elsif (-x "/sbin/pidof") {
-	my($out) = `/sbin/pidof gnome-session`;
-	$gnome_is_running = $out ? 1 : 0;
-    } else {
-	warn "Cannot determine whether GNOME is running: neither Proc::ProcessTable nor pidof are available\n";
-    }
+    my $gnome_is_running = _process_is_running('gnome-session');
 
     if ($gnome_is_running) {
 	@X11BROWSERS = (@X11BROWSERS_GENERIC, @X11BROWSERS_GNOME, @X11BROWSERS_KDE);
@@ -592,6 +580,34 @@ sub _openurl_cmd {
     $url =~ s{,}{%2c}g; # collides with openURL argument separator
     $url =~ s{\)}{%29}g; # collides with openURL function end token
     "openURL($url" . (@args ? "," . join(",", @args) : "") . ")";
+}
+
+sub _process_is_running {
+    my $processname = shift;
+
+    if (eval { require Proc::ProcessTable }) {
+	require File::Basename;
+	for my $p (@{ Proc::ProcessTable->new->table }) {
+	    if (File::Basename::basename($p->fname) eq $processname) {
+		return 1;
+	    }
+	}
+	return 0;
+    }
+
+    for my $check_prog (qw(/bin/pidof /sbin/pidof /usr/bin/pgrep)) {
+	if (-x $check_prog) {
+	    my($out) = `$check_prog $processname`;
+	    return $out ? 1 : 0;
+	}
+    }
+
+    if (!$no_process_checker_warned) {
+	warn "Cannot determine whether $processname is running: neither Proc::ProcessTable nor pidof nor pgrep are available\n";
+	$no_process_checker_warned = 1;
+    }
+
+    undef;
 }
 
 # REPO BEGIN
@@ -743,7 +759,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009,2012,2013 Slaven Rezic.
+Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009,2012,2013,2014 Slaven Rezic.
 All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
