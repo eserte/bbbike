@@ -522,18 +522,20 @@ if ($center) {
 }
 
 my $tp;
-eval {
-    die "No terminal" if !is_interactive();
-    require Time::Progress;
-    $tp = Time::Progress->new;
-    $tp->attr(min => 0, max => 2 * $#osm_files + 1);
-    $tp->restart;
-    if ($handle_relations) {
-	print STDERR "Three passes are following: nodes, ways, and relations\n";
-    } else {
-	print STDERR "Two passes are following: nodes and ways\n";
-    }
-};
+if (@osm_files > 1) {
+    eval {
+	die "No terminal" if !is_interactive();
+	require Time::Progress;
+	$tp = Time::Progress->new;
+	$tp->attr(min => 0, max => 2 * $#osm_files + 1);
+	$tp->restart;
+	if ($handle_relations) {
+	    print STDERR "Three passes are following: nodes, ways, and relations\n";
+	} else {
+	    print STDERR "Two passes are following: nodes and ways\n";
+	}
+    };
+}
 
 sub padding {
     my $lat = shift;
