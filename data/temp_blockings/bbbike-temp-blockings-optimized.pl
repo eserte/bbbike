@@ -3678,8 +3678,8 @@ userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 
        undef,
        {
          'source_id' => 'IM_022704',
-         'until' => 1409839200,
-         'text' => 'Gürtelstr. und Dossestr.: Straßen zwischen Oderstr. und Scharnweberstr. vollständig gesperrt, auch für Fußgänger und Radfahrer, bis 04.09.2014 16:00 Uhr',
+         'until' => 1409925600,
+         'text' => 'Gürtelstr. und Dossestr.: Straßen zwischen Oderstr. und Scharnweberstr. vollständig gesperrt, auch für Fußgänger und Radfahrer',
          'from' => 1409025600,
          'id' => 2623,
          'data' => 'userdel	2::temp 15248,11880 15202,11789 15106,11598
