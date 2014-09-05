@@ -23321,13 +23321,22 @@ userdel	q4::temp 8426,13909 8574,13666
 EOF
      },
      { from  => 1409025600, # 2014-08-26 06:00
-       until => $isodate2epoch->("2014-09-05 16:00:00"), # 1409839200, # 2014-09-04 16:00
+       until => undef, # $isodate2epoch->("2014-09-05 16:00:00"), # 1409839200, # 2014-09-04 16:00
        text  => 'Gürtelstr. und Dossestr.: Straßen zwischen Oderstr. und Scharnweberstr. vollständig gesperrt, auch für Fußgänger und Radfahrer',
        type  => 'gesperrt',
        source_id => 'IM_022704',
        data  => <<EOF,
 userdel	2::temp 15248,11880 15202,11789 15106,11598
 userdel	2::temp 15202,11789 15140,11811 15043,11637
+EOF
+     },
+     { from  => 1410040800, # 2014-09-07 00:00
+       until => 1418598000, # 2014-12-15 00:00
+       text  => 'Englische Str. und Gutenbergstr.: Bauarbeiten, Einbahnstraßenregelung, ab Montag den 8.9.2014 bis Dezember 2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140904.1220.399072.html',
+       data  => <<EOF,
+userdel	q4::inwork; 5325,12234 5518,12159 5424,11944
 EOF
      },
     );

@@ -3678,7 +3678,7 @@ userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 
        undef,
        {
          'source_id' => 'IM_022704',
-         'until' => 1409925600,
+         'until' => undef,
          'text' => 'Gürtelstr. und Dossestr.: Straßen zwischen Oderstr. und Scharnweberstr. vollständig gesperrt, auch für Fußgänger und Radfahrer',
          'from' => 1409025600,
          'id' => 2623,
@@ -3686,6 +3686,16 @@ userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 
 userdel	2::temp 15202,11789 15140,11811 15043,11637
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140904.1220.399072.html',
+         'until' => 1418598000,
+         'text' => 'Englische Str. und Gutenbergstr.: Bauarbeiten, Einbahnstraßenregelung, ab Montag den 8.9.2014 bis Dezember 2014',
+         'from' => 1410040800,
+         'id' => 2624,
+         'data' => 'userdel	q4::inwork; 5325,12234 5518,12159 5424,11944
+',
+         'type' => 'handicap'
        }
      
 );
