@@ -7384,7 +7384,7 @@ sub upload_button_html {
 	  "<p>\n",
 	  $q->submit(-name => 'routefile_submit',
 		     -value => 'Anzeigen'),
-	  $q->endform;
+	  $q->end_form;
 }
 
 sub tie_session {
