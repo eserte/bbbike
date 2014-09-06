@@ -133,10 +133,7 @@ grid of the coordinates should be handled by the software. It is
 recommended that x and y should denote the easting and northing in
 meters (as in GKK or UTM). A record may contain an unlimited number of
 coordinates, though there may be limitations in the interpreting
-software (currently the maximum number of points is hardcoded in
-<a class="POD_LINK" href="http://search.cpan.org/perldoc?BBBikeXS">BBBikeXS</a> and checked in the rule <code>check-line-lengths</code> of
-<code>data/Makefile</code>). See also below for the <b>map</b> directive in
-<a class="POD_LINK" href="#Directive_lines">Directive lines</a>.
+software. See also below for the <b>map</b> directive in <a class="POD_LINK" href="#Directive_lines">Directive lines</a>.
 </dl>
 <h3 class="POD_HEAD2"><a name="Directive_lines">Directive lines</a></h3>
 <p class="POD_TEXT">
@@ -427,6 +424,24 @@ by <i>source</i>.
 Same as &quot;by:&quot; for unverified data.
 &quot;Unverified&quot; means that there&#39;s no communication channel
 back to the information provider.
+<dt class="POD_ITEM"><a name="valid_YYYYMMDD_YYYYM"><code>valid: YYYYMMDD-YYYYMMDD</code></a>
+<dt><a name="valid_YYYYMMDD_"><code>valid: YYYYMMDD-</code></a>
+<dt><a name="valid_YYYYMMDD"><code>valid: -YYYYMMDD</code></a>
+<dd>
+Define the validity period of records. Other tools (e.g.
+<a class="POD_LINK" href="http://search.cpan.org/perldoc?grepstrassen">grepstrassen</a>) may remove non-valid records automatically.
+<p class="POD_TEXT">
+If the value is preceded by a <code>!</code>, then the validation period is
+inverted.
+</p>
+<p class="POD_TEXT">
+Note: in future <a class="POD_LINK" href="http://search.cpan.org/perldoc?Strassen%3A%3ACore">Strassen::Core</a> may deal automatically (or optional)
+with removal of non-valid records.
+</p>
+<p class="POD_TEXT">
+NOTE: Makefile rules don&#39;t cope well with the ability that source
+files are processed differently depending on time.
+</p>
 <dt class="POD_ITEM"><a name="temporary_"><code>temporary:</code></a>
 <dd>
 The next block or line is just a temporary feature. Typically this
@@ -1025,8 +1040,14 @@ The category will not be used in this case.
 <dd>
 File with point records for traffic lights (Ampeln). The category is
 set to <b>B</b> for railroad crossings, <b>B0</b> for railroad crossing
-without frequent traffic, <b>F</b> for pedestrian-only traffic lights and
-<b>Zbr</b> for drawbridges, otherwise not used.
+without frequent traffic, <b>F</b> for pedestrian-only traffic lights,
+<b>F0</b> for inactive pedestrian-only traffic lights, <b>Zbr</b> for
+drawbridges, <b>X0</b> for inactive traffic lights, and otherwise (normal
+traffic lights), <b>X</b> is used.
+<p class="POD_TEXT">
+Inactive traffic lights are currently only available in the
+<code>ampeln-orig</code> file and not processed into the final <code>ampeln</code> file.
+</p>
 <dt class="POD_ITEM"><a name="hoehe">hoehe</a>
 <dd>
 File with elevation points. The <code>Name</code> fields denotes the elevation
