@@ -6261,13 +6261,14 @@ EOF
 userdel	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2013-10-04 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-10-06 23:59:59"),
+     { from  => $isodate2epoch->("2014-10-04 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-10-05 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 5, months => 10]],
-       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 5. und 6.10.2013',
+       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 4. und 5.10.2014',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.ms-event-agentur.com/seite22.html
 userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
 EOF
      },
@@ -22671,8 +22672,8 @@ userdel	q3::inwork; 13555,15596 13459,15653
 EOF
      },
      { from  => 1396047600, # 2014-03-29 00:00
-       until => $isodate2epoch->("2014-09-19 16:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
-       text  => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Maximilianstr. und Florastr. Baustelle, Fahrtrichtung gesperrt, bis Mitte September 2014',
+       until => $isodate2epoch->("2014-10-02 16:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
+       text  => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Maximilianstr. und Florastr. Baustelle, Fahrtrichtung gesperrt, bis Anfang Oktober 2014',
        type  => 'handicap',
        source_id => 'IM_022477',
        data  => <<EOF,
@@ -23286,7 +23287,7 @@ EOF
        until => 1414710000, # 2014-10-31 00:00
        text  => 'Brücke über den Oder-Havel-Kanal: Bauarbeiten, gesperrt, 01.09.2014 bis 30.10.2014 ',
        type  => 'gesperrt',
-       source_id => '145600083',
+       source_id => '145600136',
        data  => <<EOF,
 userdel	2::inwork 38845,51258 38476,50514
 EOF
@@ -23321,7 +23322,7 @@ userdel	q4::temp 8426,13909 8574,13666
 EOF
      },
      { from  => 1409025600, # 2014-08-26 06:00
-       until => undef, # $isodate2epoch->("2014-09-05 16:00:00"), # 1409839200, # 2014-09-04 16:00
+       until => $isodate2epoch->("2014-09-08 16:00:00"), # 1409839200, # 2014-09-04 16:00
        text  => 'Gürtelstr. und Dossestr.: Straßen zwischen Oderstr. und Scharnweberstr. vollständig gesperrt, auch für Fußgänger und Radfahrer',
        type  => 'gesperrt',
        source_id => 'IM_022704',
@@ -23337,6 +23338,16 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140904.1220.399072.html',
        data  => <<EOF,
 userdel	q4::inwork; 5325,12234 5518,12159 5424,11944
+EOF
+     },
+     { from  => 1410519600, # 2014-09-12 13:00
+       until => 1410624000, # 2014-09-13 18:00
+       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 13. September 2014, 13 bis 18 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'http://www.turmstrasse.de/aktuelles/veranstaltungen.html',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140905.1415.399114.html
+userdel	2::temp 5857,13342 5868,13441 5882,13548
 EOF
      },
     );
