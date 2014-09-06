@@ -38,31 +38,35 @@ EOF
 # which fails nearly everywhere, and the Pod-ProjectsDocs tarball is
 # broken because of some additional dot files from MacOSX.
 # 0.38 has no progress on the Syntax::Highlight::Universal issue.
+# 0.40 has fixed the Syntax::Highlight::Universal problem, but there's
+# another one: =encoding directives are not handled
 
 my $bbbike_html_rule;
 my $pod2html;
-if (-e "$Config{sitebin}/mpod2html") {
-    $pod2html = "$Config{sitebin}/mpod2html";
+my $patched_marek_pod_html = "$ENV{HOME}/work2/MarekPodHtml";
+if (-d $patched_marek_pod_html) {
+    # Currently the html documentation is built using a patched
+    # Marek::Pod::Html. To use it, do the following:
+    #
+    #    mkdir -p ~/work2
+    #    cd ~/work2
+    #    git clone https://github.com/eserte/MarekPodHtml.git
+    #    cd MarekPodHtml
+    #    perl Makefile.PL && make all test
+    #
+    $pod2html = "$^X -I$patched_marek_pod_html/blib/lib $patched_marek_pod_html/blib/script/mpod2html";
 } else {
-    $pod2html = is_in_path("mpod2html");
+    warn <<EOF;
+NOTE: no patched MarekPodHtml available, which is required for
+      generating the html documentation. Please look into
+      Makefile_admin_PL for instrcutions
+EOF
+    if (-e "$Config{sitebin}/mpod2html") {
+	$pod2html = "$Config{sitebin}/mpod2html";
+    } else {
+	$pod2html = is_in_path("mpod2html");
+    }
 }
-## perldoc.com seems to be dead.
-#my $htmlroot = "--htmlroot http://www.perldoc.com/cpan";
-## This unfortunately has only the core documentation
-#my $htmlroot = "--htmlroot http://perldoc.perl.org/";
-my $htmlroot = "--htmlroot http://search.cpan.org/perldoc?";
-
-## Best to use the distropref MarekPodHtml.yml from
-## git@github.com:eserte/srezic-cpan-distroprefs.git
-## to get the additional functionality...
-#if ($pod2html) {
-#    my $patched_marek_pod_html = "/usr/local/src/CPAN/new.build/MarekPodHtml-0.49";
-#    if (-d $patched_marek_pod_html) {
-#	$pod2html = "$^X -I$patched_marek_pod_html $patched_marek_pod_html/blib/script/mpod2html";
-#    } else {
-#	warn "With the patched Marek::Pod::HTML one would get links to search.cpan.org/perldoc";
-#    }
-#}
 
 use constant POD_POD   => 0;
 use constant POD_HTML  => 1;
@@ -81,7 +85,6 @@ my $all_pods = join " ", map { $_->[POD_POD] } @pods;
 my $all_html = join " ", map { $_->[POD_HTML] } @pods;
 my $really_all_html = "$all_html doc/podindex.html";
 if (defined $pod2html) {
-    # XXX here no $htmlroot
     $bbbike_html_rule = <<EOF;
 $all_html:	$all_pods Makefile
 	$pod2html -stylesheet html/bbbikepod.css -tocname http://bbbike.sourceforge.net/index -notoc -nowarnings $all_pods
