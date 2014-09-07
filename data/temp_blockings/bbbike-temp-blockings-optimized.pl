@@ -3271,27 +3271,7 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020277',
-         'data' => 'userdel	2::temp 8606,16973 8677,17154
-userdel	2::temp 8503,16716 8583,16914
-',
-         'periodic' => 1,
-         'until' => 1410019200,
-         'from' => 1409918400,
-         'text' => 'Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 06.09.2014 von 14 bis 18 Uhr',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              5,
-                              'months',
-                              9
-                            ]
-                          ],
-         'id' => 2485,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3628,16 +3608,7 @@ userdel	q4::inwork; 31967,2966 31999,2812 32031,2723 32115,2581 32162,2542
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157922.php',
-         'until' => 1410040800,
-         'text' => 'Stillerzeile von Kurzer Steig bis Jastrower Weg: Fahrbahninstandsetzung, Vollsperrung vom 02.09.2014 bis 06.09.2014',
-         'from' => 1409522400,
-         'id' => 2612,
-         'data' => 'userdel	q4::inwork 24126,5521 24003,5501 23877,5503
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245&page=7',
          'until' => undef,
