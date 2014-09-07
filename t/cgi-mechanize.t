@@ -1057,7 +1057,14 @@ for my $browser (@browsers) {
 	    simulate_abc_click($agent, 'start', 'F');
 
 	    my_tidy_check($agent);
-	    $like_long_data->(qr/Falkenstr. \(Sachsenhausen\)/, 'Found a place in Oranienburg');
+	    $like_long_data->(qr/Falkenstr. \(Sachsenhausen\)/, 'Found a place in Oranienburg')
+		or diag <<'EOF';
+Make sure that bbbike2.cgi (the beta bbbike URL) is configured with
+
+    $include_outer_region = 1;
+
+in cgi/bbbike2.cgi.config.
+EOF
 	    $form = $agent->current_form;
 	    $form->value('startname', 'Falkenstr. (Sachsenhausen)');
 	    $agent->submit;

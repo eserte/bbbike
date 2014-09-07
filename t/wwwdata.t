@@ -174,7 +174,13 @@ EOF
 	    $count_NH++ if $ret->[Strassen::CAT] eq 'NH';
 	}
 	is $count_NH, 0, 'No cat=NH found for old client';
-	is $resp->header('X-BBBike-Hacks'), 'NH', 'NH hack in HTTP header';
+	is $resp->header('X-BBBike-Hacks'), 'NH', 'NH hack in HTTP header'
+	    or diag <<EOF;
+Make sure that the mod_perl handler BBBikeDataDownloadCompat is activated
+in the bbbike-specific httpd.conf. If you cannot run mod_perl or even
+do not run Apache at all, then define the environment variable TRAVIS
+to skip this test (this is just a temporary hack)
+EOF
     }
 }
 
