@@ -17,6 +17,8 @@ before_install:
  - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05" || true'
 # Perl 5.8.9's File::Path has a version with underscores, and this is causing warnings and failures in the test suite
  - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest File::Path || true'
+# https://rt.cpan.org/Ticket/Display.html?id=98664 (fails with 5.8.x)
+ - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest MIME::Types~"!=2.07, !=2.08" || true'
 # problems with newest Inline::C
  - cpanm --quiet --notest Inline~"<0.56" Inline::C~"<0.56"
 # Additional psgi dependencies
