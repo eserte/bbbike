@@ -2376,26 +2376,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.marktcom.de/veranstaltung/16203-Traditionelles-Muellerstra%C3%9Fenfest (Termin 2014)
-userdel	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
-',
-         'periodic' => 1,
-         'until' => 1410112800,
-         'from' => 1409817600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Leopoldplatz gesperrt, 5. bis 7. September 2014',
-         'type' => 'gesperrt',
-         'id' => 2039
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
@@ -3648,17 +3629,7 @@ userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_022704',
-         'until' => 1410184800,
-         'text' => 'Gürtelstr. und Dossestr.: Straßen zwischen Oderstr. und Scharnweberstr. vollständig gesperrt, auch für Fußgänger und Radfahrer',
-         'from' => 1409025600,
-         'id' => 2623,
-         'data' => 'userdel	2::temp 15248,11880 15202,11789 15106,11598
-userdel	2::temp 15202,11789 15140,11811 15043,11637
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140904.1220.399072.html',
          'until' => 1418598000,
@@ -3679,6 +3650,16 @@ userdel	2::temp 15202,11789 15140,11811 15043,11637
 userdel	2::temp 5857,13342 5868,13441 5882,13548
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_022799',
+         'until' => 1413410399,
+         'text' => 'Wilhelminenhofstr.: in Höhe Schillerpromenade Baustelle, Fahrbahn gesperrt, ab 08.09.2014 04 Uhr bis Mitte Oktober 2014 ',
+         'from' => 1409954400,
+         'id' => 2626,
+         'data' => 'userdel	q4::inwork; 18343,6318 18191,6363 17992,6436
+',
+         'type' => 'handicap'
        }
      
 );

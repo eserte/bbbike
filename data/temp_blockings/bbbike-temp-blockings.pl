@@ -23322,7 +23322,7 @@ userdel	q4::temp 8426,13909 8574,13666
 EOF
      },
      { from  => 1409025600, # 2014-08-26 06:00
-       until => $isodate2epoch->("2014-09-08 16:00:00"), # 1409839200, # 2014-09-04 16:00
+       until => 1410154184, # $isodate2epoch->("2014-09-08 16:00:00"), # 1409839200, # 2014-09-04 16:00
        text  => 'Gürtelstr. und Dossestr.: Straßen zwischen Oderstr. und Scharnweberstr. vollständig gesperrt, auch für Fußgänger und Radfahrer',
        type  => 'gesperrt',
        source_id => 'IM_022704',
@@ -23348,6 +23348,15 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140905.1415.399114.html
 userdel	2::temp 5857,13342 5868,13441 5882,13548
+EOF
+     },
+     { from  => 1409954400, # 2014-09-06 00:00
+       until => 1413410399, # 2014-10-15 23:59
+       text  => 'Wilhelminenhofstr.: in Höhe Schillerpromenade Baustelle, Fahrbahn gesperrt, ab 08.09.2014 04 Uhr bis Mitte Oktober 2014 ',
+       type  => 'handicap',
+       source_id => 'IM_022799',
+       data  => <<EOF,
+userdel	q4::inwork; 18343,6318 18191,6363 17992,6436
 EOF
      },
     );
