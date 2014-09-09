@@ -294,7 +294,7 @@ Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 92
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
-# REMOVED (nicht mehr) --- Liesenstr.: Kopfsteinpflaster, OK	Q1 8671,14919 8653,14899 8562,14798
+# REMOVED (nicht mehr) --- Liesenstr.: Kopfsteinpflaster, OK	Q1 8671,14919 8653,14899
 Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9533,12925 9618,12907 9654,12882
 Am Kupfergraben: Asphalt	Q0 9654,12882 9754,12775 9815,12705 9870,12657
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9533,12925 9550,12760
@@ -11499,9 +11499,15 @@ Borkumstr.: Asphalt	Q0 11412,17823 11296,17799
 Borkumstr.: mäßiges Kopfsteinpflaster	Q2 11296,17799 11259,17792 11217,17783 11136,17768 11049,17752 10956,17735 10858,17721
 #: by: ^^^
 # 
-#: by: Claudia (99):
-#: confirmed_by: srt
-Schmitzweg: mäßiger Asphalt, Schlaglöcher	Q2+ 5996,19980 5885,19920 5803,19874 5742,19840 5731,19824 5831,19547 5858,19437 5879,19352
+#: by: Claudia (99): vvv
+#: confirmed_by: srt vvv
+Schmitzweg: mäßiger Asphalt, Schlaglöcher	Q2+ 5996,19980 5885,19920 5803,19874 5742,19840 5731,19824 5831,19547
+#: XXX hier wird instand gesetzt, danach wahrscheinlich besserer Asphalt (Q0?)
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.177937.php
+#: next_check: 2014-10-17
+Schmitzweg: mäßiger Asphalt, Schlaglöcher	Q2+ 5831,19547 5858,19437 5879,19352
+#: confirmed_by ^^^
+#: by ^^^
 # 
 #: by: Christoph Kasprowiak:
 Karl-Schrader-Str.: Asphalt	Q0 6851,9365 6860,9526
@@ -11645,7 +11651,13 @@ Staakener Str.: Kopfsteinpflaster	Q2 -4707,14178 -4733,14230 -4748,14237
 #: by: stefan (b...q, yeti): vvv
 #: corrected_by: srt (mäßiger Asphalt, Q1 -> Asphalt, Q0-)
 Jacobsohnstr.: Asphalt	Q0- 12189,16578 12357,16696 12472,16783 12521,16817 12699,16945
-Iranische Str.: Kopfsteinpflaster	Q2 8092,16485 7875,16509 7717,16541 7707,16543 7456,16620
+#: confirmed_by: srt
+Iranische Str.: Kopfsteinpflaster	Q2 8092,16485 7843,16524
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Iranische Str.: Verbundsteinpflaster und Gehwegplatten	Q1 7843,16524 7717,16541
+#: XXX hier auch Verbundsteinpflaster und Gehwegplatten?
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> "")
+	Q1 7717,16541 7707,16543 7456,16620
 #: by: ^^^
 # 
 #: by: Gabi Sieber: vvv

@@ -3368,13 +3368,14 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        {
-         'until' => undef,
-         'text' => 'Gudvanger Str.: Bauarbeiten zwischen Wichertstr. und Erich-Weinert-Str., Fahrbahn gesperrt',
+         'until' => 1410966000,
+         'text' => 'Gudvanger Str.: Bauarbeiten zwischen Wichertstr. und Erich-Weinert-Str., Fahrbahn gesperrt, bis zum 17. September 2014',
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
 #: last_checked: 2014-08-21
-#: check_frequency: 7d
+#: next_check: 2014-09-17
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20140908.1230.399120.html ("Fest nach Umbau")
 userdel	q3::inwork 11673,16003 11567,15842
 ',
          'type' => 'handicap'
@@ -3653,8 +3654,8 @@ userdel	2::temp 5857,13342 5868,13441 5882,13548
        },
        {
          'source_id' => 'IM_022799',
-         'until' => 1413410399,
-         'text' => 'Wilhelminenhofstr.: in Höhe Schillerpromenade Baustelle, Fahrbahn gesperrt, ab 08.09.2014 04 Uhr bis Mitte Oktober 2014 ',
+         'until' => 1412953200,
+         'text' => 'Wilhelminenhofstr.: in Höhe Schillerpromenade Baustelle, Fahrbahn gesperrt, ab 08.09.2014 04 Uhr bis 10.10.2014 17 Uhr',
          'from' => 1409954400,
          'id' => 2626,
          'data' => 'userdel	q4::inwork; 18343,6318 18191,6363 17992,6436

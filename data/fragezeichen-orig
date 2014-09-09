@@ -119,13 +119,13 @@ Markgrafenstr.: wird hier eine Radwegf¸hrung erstellt?	?::projected 9711,11543 9
 #: XXX im Tagesspiegel vom 2013-01-03 erw‰hnt
 #: osm_watch: way id="4543585" version="18"
 #: osm_watch: way id="42732291" version="9"
-#: last_checked: 2014-05-16
+#: last_checked: 2014-09-09
 #: check_frequency: 90d
 M¸llerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaﬂnahme 1.23 (Realisierung nach 2011)
 #: osm_watch: way id="4581787" version="6"
-#: last_checked: 2014-05-16
+#: last_checked: 2014-09-09
 #: check_frequency: 90d
 T¸rkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
@@ -136,7 +136,7 @@ T¸rkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: osm_watch: way id="162964323" version="5"
 #: osm_watch: way id="4541085" version="14"
 #: osm_watch: way id="4638315" version="14"
-#: last_checked: 2014-08-17 vvv
+#: last_checked: 2014-09-09 vvv
 # REMOVED --- #: next_check: 2014-03-15 (evtl. passiert w‰hrend der Bauarbeiten etwas?) --- #: source_id: IM_021408
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected 7672,16878 7687,16770
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected; 7717,16541 7687,16770
@@ -211,14 +211,15 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 # REMOVED (realisiert, im Wald) --- #: XXX Baumaﬂnahme 9.10 (Realisierung nach 2011), 9.2 (Realisierung bis 2010) --- #: last_checked: 2013-08-03 (keine Anzeichen) --- #: check_frequency: 100d --- M¸ggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
 # 
 #: by: Tagesspiegel vom 2013-03-01 vvv
+#: next_check_id: WARSCHAUER-2014
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5901 (2014 passiert wahrscheinlich nichts)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2014-08-29
+#: last_checked: 2014-09-09
 #: next_check: 2015-09-30
-Warschauer Str: Radspuren geplant	?::projected 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
+Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="4424794" version="12"
@@ -380,7 +381,7 @@ Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
 #: source_id: IM_022801
-#: XXX bis Ende 2014
+#: XXX bis 2014-12-19
 John-Foster-Dulles-Allee: wechselseitige Ampelregelung, genauer anschauen	? 7627,12380 7821,12367
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129680.php
@@ -459,10 +460,10 @@ Am Wuhlebogen: wann wird die Straﬂe fertiggestellt? Qualit‰t?	?::inwork 21678,79
 #: next_check: 2014-09-01
 Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggef¸hrt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
 # 
+#: next_check_id: WARSCHAUER-2014
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
 #: last_checked: 2014-08-07
-#: next_check: 2015-03-01
-#: priority: #A
+#: next_check: 2015-09-30
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraﬂenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # 
 # REMOVED (neu asphaltiert) --- #: last_checked: 2013-11-11 --- Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
@@ -934,7 +935,7 @@ Monumentenplatz	?::inwork 8344,9085 8332,9059
 #: XXX evtl. wird Richtung Norden bis zur Yorckstr. verl‰ngert, siehe folgende Drucksache:
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4411
 #: XXX culdesac-Eintr‰ge entfernen, wenn die Verl‰ngerung erfolgt ist
-#: last_checked: 2014-02-28
+#: last_checked: 2014-09-08
 #: next_check: 2015-02-28
 Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8204,9001 8200,8920 7998,8317
 # 
@@ -3602,7 +3603,7 @@ Am Kienwerder (Kienwerder): Qualit‰t?	? -4765,-3352 -4694,-3304 -4341,-3227 -420
 #: XXX Baumaﬂnahme 1.23 (Realisierung nach 2011)
 #: XXX laut osm ist die Kongostraﬂe mittlerweile asphaltiert - stimmt aber nicht (korrigiert)!
 #: osm_watch: way id="5117259" version="11"
-#: last_checked: 2014-05-16
+#: last_checked: 2014-09-09
 #: check_frequency: 90d
 Kongostr.: ist die Kongostr. mittlerweile asphaltiert?	? 6244,16096 6258,16111 6349,16213 6447,16321
 # 

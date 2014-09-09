@@ -22631,13 +22631,14 @@ userdel	q4::inwork; 14211,11552 14305,11514
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Gudvanger Str.: Bauarbeiten zwischen Wichertstr. und Erich-Weinert-Str., Fahrbahn gesperrt',
+       until => $isodate2epoch->("2014-09-17 17:00:00"), # undef, # XXX
+       text  => 'Gudvanger Str.: Bauarbeiten zwischen Wichertstr. und Erich-Weinert-Str., Fahrbahn gesperrt, bis zum 17. September 2014',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann?
 #: last_checked: 2014-08-21
-#: check_frequency: 7d
+#: next_check: 2014-09-17
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20140908.1230.399120.html ("Fest nach Umbau")
 userdel	q3::inwork 11673,16003 11567,15842
 EOF
      },
@@ -23351,8 +23352,8 @@ userdel	2::temp 5857,13342 5868,13441 5882,13548
 EOF
      },
      { from  => 1409954400, # 2014-09-06 00:00
-       until => 1413410399, # 2014-10-15 23:59
-       text  => 'Wilhelminenhofstr.: in Höhe Schillerpromenade Baustelle, Fahrbahn gesperrt, ab 08.09.2014 04 Uhr bis Mitte Oktober 2014 ',
+       until => $isodate2epoch->("2014-10-10 17:00:00"), # 1413410399, # 2014-10-15 23:59
+       text  => 'Wilhelminenhofstr.: in Höhe Schillerpromenade Baustelle, Fahrbahn gesperrt, ab 08.09.2014 04 Uhr bis 10.10.2014 17 Uhr',
        type  => 'handicap',
        source_id => 'IM_022799',
        data  => <<EOF,

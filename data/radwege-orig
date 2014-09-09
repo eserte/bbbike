@@ -762,16 +762,10 @@ der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW
 	RW;RW 5827,16118 5748,16235
 	RW;RW1 5748,16235 5596,16662
 	RW1;RW1 5596,16662 5581,16708 5561,16767 5526,16916 5479,17108 5473,17148 5490,17173
-#: XXX Asphaltierung entsteht gerade
-#: last_checked: 2014-05-16
-Verbundsteinpflaster/Gehwegpflasterung	RW2; 6781,16026 6661,15921
-neu asphaltiert	RW2; 6661,15921 6555,15827 6422,15708 6239,15553
+neu asphaltiert	RW2; 6781,16026 6661,15921 6555,15827 6422,15708 6239,15553
 Gehwegpflasterung	RW2; 6239,15553 6422,15708
-neu asphaltiert	RW2; 6422,15708 6555,15827
-#: XXX Asphaltierung entsteht gerade
-#: last_checked: 2014-05-16
-Gehwegpflasterung	RW2; 6555,15827 6661,15921
-neu asphaltiert	RW2; 6661,15921 6781,16026
+#: note: wobei der Asphalt nicht besonders gut ist, etwas wellig schon nach der Fertigstellung
+neu asphaltiert	RW2; 6422,15708 6555,15827 6661,15921 6781,16026
 	RW2;RW2 6239,15553 5753,15096 5700,15043 5618,14981 5440,14840
 	RW2; 5440,14840 5233,14753 5049,14675
 	RW2; 5057,14607 5264,14671 5440,14840
@@ -1426,7 +1420,10 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12869,12425 12891,12549
 die letzten 40 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 12112,12861 12126,13088
 die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW4; 12126,13088 12112,12861
 	RW4;RW4 12126,13088 12163,13295
-	RW2;RW1 13541,11355 13588,11490
+#: next_check_id: WARSCHAUER-2014
+#: XXX Radweg ist wegen Bauarbeiten aufgehoben, danach wahrscheinlich Radspur
+#: next_check: 2015-09-30
+	RW0;RW1 13541,11355 13588,11490
 	RW0;RW2 13588,11490 13603,11538
 	RW4;RW4 14026,10869 14024,10861 14011,10812
 	RW1;RW1 14134,11272 14096,11134 14076,11057 14043,10928 14026,10869
@@ -2308,7 +2305,8 @@ Gehweg für Radfahrer frei	RW1; 19782,18211 19685,18259 19409,18397 19291,18456 1
 	RW1; 6843,16346 7056,16587 7106,16646 7177,16715 7267,16784 7394,16836 7585,16865 7672,16878
 asphaltiert, aber mäßige Qualität	RW1; 7672,16878 7585,16865 7394,16836 7267,16784 7177,16715
 Verbundsteinpflaster, mäßige Qualität	RW1; 7177,16715 7106,16646 7056,16587 6843,16346
-	RW1;RW3 6843,16346 6629,16538 6497,16652
+Radweg nur aufgemalt	RW1; 6843,16346 6629,16538 6497,16652
+	RW3; 6497,16652 6629,16538 6843,16346
 	RW1;RW4? 6497,16652 6386,16749
 	RW;RW4? 6386,16749 6281,16841
 	RW;RW3 6281,16841 6191,16921
