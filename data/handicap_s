@@ -11,6 +11,7 @@ M¸hsamstr.: Bauarbeiten in Hˆhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 Gipsstr.: Bauarbeiten an der Rosenthaler Str., einige Meter Gehweg benutzen	q3::inwork 10199,13446 10350,13376
 Linienstr.: einige Fuﬂg‰nger, Baustelle	q2::inwork 10718,13625 10740,13621
 zur Keibelstr.: Baustraﬂe, Einbahnstraﬂe	q4::inwork; 10976,13229 11045,13183
+Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork; 11146,13328 11201,13289
 Seydelstr.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
@@ -251,8 +252,7 @@ Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fuﬂg‰nger	q2 8467,11125 8410,11143
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3358,12718 3396,12741
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3358,12718 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 Spreeufer: Fuﬂg‰nger	q2 9707,12974 9557,12992 9538,12993 9508,12991 9279,12953
 Henriette-Herz-Platz: Straﬂenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
@@ -323,7 +323,7 @@ Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
 (Gr¸nanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fuﬂg‰nger, Bordstein	q3 17686,18172 17721,18001
 Erich-Steinfurth-Str.: Fuﬂg‰nger	q2 12645,11673 12596,11696
-Elbingeroder Weg: hohe Bordsteine	q3 13178,9062 13146,9085
+Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
 (An der Apostelkirche - Kurf¸rstenstr.): Fuﬂg‰nger, Bordsteine	q3 7312,10505 7315,10537
 Marie-Elisabeth-L¸ders-Steg: eng, Fuﬂg‰nger	q2 8415,12749 8593,12742 8596,12760
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
@@ -568,7 +568,7 @@ Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13233
 Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14845,10954 14798,10985 14752,11041
-BouchÈstr.: Bodenschwellen	q0 13489,9456 13352,9308
+BouchÈstr.: Bodenschwellen	q0 13489,9456 13357,9313
 BouchÈstr.: Bodenschwellen	q0 13645,9621 13867,9864
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 Dornbrunner Str.: zwei Bodenschwellen	q1 16144,6542 16043,6414

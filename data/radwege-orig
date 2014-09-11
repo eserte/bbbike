@@ -84,7 +84,8 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7286 9242,7325 9242,
 	RW1;RW1 8715,7384 8716,7323 8718,7095 8717,6965 8750,6779 8735,6695 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8641,5998 8622,5867 8617,5745 8610,5579 8606,5496
 	RW1;RW 8606,5496 8642,5422
 	RW1; 8642,5422 8667,5372 8674,5357
-	RW1;RW 8606,5496 8484,5347
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4720 (Radwegbenutzungspflicht)
+	RW1;RW2 8606,5496 8484,5347
 	RW;RW1 8484,5347 8409,5256 8356,5195
 	RW1;RW 8356,5195 8348,5184 8219,5010 8121,4919
 	RW;RW 8121,4919 8018,4823
@@ -172,7 +173,11 @@ das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14222,10430 14103,1
 	RW1; 14558,10264 14405,10340 14222,10430
 	RW1;RW2 13332,10832 13409,11004 13454,11119
 	RW1;RW1 13454,11119 13476,11174
-	RW4;RW1 13476,11174 13493,11217 13541,11355
+	RW4;RW1 13476,11174 13493,11217
+#: next_check_id: WARSCHAUER-2014
+#: XXX während der Bauarbeiten ist die Radspur teilweise entfernt; Radfahrern wird suggeriert, den Gehweg zu benutzen (später wieder RW4 eintragen)
+#: next_check: 2015-09-30
+	RW0;RW1 13493,11217 13541,11355
 am Anfang gibt es einen Radweg von 10 Metern Länge	RW0; 11949,10414 12169,10310
 die letzten Meter sind benutzungspflichtig	RW1; 12169,10310 11949,10414
 	RW1;RW1 12169,10310 12243,10274 12341,10218
@@ -1421,7 +1426,7 @@ die letzten 40 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW4; 12126,13088 12112,12861
 	RW4;RW4 12126,13088 12163,13295
 #: next_check_id: WARSCHAUER-2014
-#: XXX Radweg ist wegen Bauarbeiten aufgehoben, danach wahrscheinlich Radspur
+#: XXX Radweg ist wegen Bauarbeiten aufgehoben, danach wahrscheinlich Radspur, offiziell besteht teilweise ein gemeinsamer Rad- und Gehweg (wie soll das gehen?)
 #: next_check: 2015-09-30
 	RW0;RW1 13541,11355 13588,11490
 	RW0;RW2 13588,11490 13603,11538
@@ -2558,6 +2563,7 @@ Gehweg für Radfahrer frei, die letzten Meter sind benutzungspflichtig	RW1; 15432
 	RW4;RW2 17843,18078 17744,18016 17721,18001 17675,17971 17601,17922
 #: XXX Radspur wird hier irgendwann fortgeführt (am S-Bhf Hohenschönhausen)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4785
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5948
 #: last_checked: 2014-07-20
 #: check_frequency: 60d
 	RW0;RW2 17601,17922 17482,17844

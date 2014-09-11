@@ -21193,8 +21193,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2014-06-29 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2014-09-22 18:00:00"),
-       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis 22.09.2014',
+       until => $isodate2epoch->("2014-10-22 18:00:00"),
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis 22.10.2014',
        type  => 'handicap',
        source_id => 'IM_022268',
        data  => <<EOF,

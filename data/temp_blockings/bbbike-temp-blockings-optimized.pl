@@ -3060,8 +3060,8 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        {
          'source_id' => 'IM_022268',
-         'until' => 1411401600,
-         'text' => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis 22.09.2014',
+         'until' => 1413993600,
+         'text' => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis 22.10.2014',
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014

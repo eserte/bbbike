@@ -423,6 +423,7 @@ Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?
 #: next_check_id: AMWEINGARTEN-2014
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3759 ("Benennungsabsicht")
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036623646371/623646371/00060995/95-Anlagen/02/Benennungsabsichtfuerdiebisherunbenannteoeffen.pdf
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3877
 #: XXX siehe auch strassen-orig
 #: XXX Eintrag in Berlin.coords.data fehlt
 #: last_checked: 2014-08-25
@@ -604,6 +605,7 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036494123909/494123909/00072116/16-Anlagen/02/vzb0745_IV-Benennung_Strassen.pdf (Benennung + Lage)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 (Grundstücksnummerierungen)
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5900 (Verzögerung)
 #: XXX neue Straßennamen (fehlen alle in Berlin.coords.data)
 #: last_checked: 2014-07-06 (erste Bauarbeiten) vvv
 #: check_frequency: 360d vvv
@@ -736,7 +738,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: last_checked: 2013-09-27 (Markierungsarbeiten haben begonnen) --- #: next_check: 2013-10-04 --- Werbellinstr.: Radstreifen werden erstellt	?::projected; 12698,8175 12650,8164 12541,8140 12426,8115
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
-#: last_checked: 2014-08-09
+#: last_checked: 2014-09-11
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12871,9356 12888,9338
@@ -1137,7 +1139,8 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.153649.php
 #: XXX falls es soweit ist -> gesperrt-orig
-#: next_check: 2014-09-01 (Baubeginn September 2014, Bauende: voraussichtlich Mai 2015)
+#: last_checked: 2014-09-11
+#: next_check: 2014-09-20 (Baubeginn September 2014, Bauende: voraussichtlich Mai 2015)
 Lohmühlenplatz: Umgestaltung des Platzes, teilweise werden die Wege gesperrt	?::projected 12900,9465 12897,9365
 # 
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7315
@@ -1771,6 +1774,7 @@ Prinz-Friedrich-Karl-Weg: Qualität?	? -1100,12210 -1132,12268 -1172,12336 -824,1
 #: XXX Name seit 2014-08-30
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140829.1125.398951.html
 #: by: http://www.tagesspiegel.de/sport/olympiapark-berlin-ehrung-fuer-gretel-bergmann/10611386.html
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=5280 (Rechtschreibfehler)
 #: XXX fehlt in Berlin.coords.data
 Gretel-Bergmann-Weg: Qualität? Genaue Lage?	? -1132,12268 -1288,12178 -1253,12117
 Friedrich-Friesen-Allee: Weiterführung der Straße, Qualität? Tor? Ausschilderung?	? -1298,12095 -1253,12117 -1100,12210 -746,12432 -587,12529
