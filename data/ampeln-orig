@@ -1343,7 +1343,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 17400,17790
 	X 16837,17440
 	X 15662,16656
-	X 15432,16500
+	X 15437,16491
 	X 14045,16120
 	X 13788,16240
 	X 13104,16522
@@ -1867,6 +1867,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 # REMOVED (abgeschafft, seit Verschwenkung der Autobahnausfahrt) --- #: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02 ---	F 14153,6795
 #: by: Andreas Mühlhausen: vvv
 	X 9418,11804
+#: note: Anforderungsampel
 	F 14619,16672
 	F 18179,16534
 #: corrected_by: srt (X -> F)
@@ -2311,7 +2312,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 7857,5519
 #: note: Anforderungsampel
-	F 15187,16185
+	F 15194,16186
 	F 15142,16499
 	F 11750,16354
 	X 8901,12008

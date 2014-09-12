@@ -813,10 +813,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
-#: last_checked: 2014-07-10
-#: check_frequency: 120d
-#: priority: #C
-Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
+# REMOVED (am 2014-09-12 noch in Bau) --- #: last_checked: 2014-07-10 --- #: check_frequency: 120d --- #: priority: #C --- Degnerstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16535,15766 16537,15827 16561,15956 16616,16046 16693,16202 16770,16465 16806,16496 16936,16606
 # REMOVED (hier wurde nur eine "Rettungsinsel" realisiert) --- #: last_checked: 2012-08-25 --- #: check_frequency: 90d --- #: priority: #C --- Dorfstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 19285,18489 19429,18368 
 #: by: ^^^
 # 
@@ -1051,11 +1048,7 @@ Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294
 # 
 # REMOVED (so gut wie fertig, am 2013-06-24 hat noch ein kleines Stück gefehlt) --- #: last_checked: 2013-06-05 vvv --- #: next_check: 2013-06-19 vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv --- #: source_id: INKO_117706 vvv --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15066,14579 --- #: XXX Richtung Süden wird es wohl ein Gehwegradweg fehlen (fehlt nur noch der Asphalt), Richtung Norden ist fertig --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15066,14579 15110,14486 15164,14392 --- #: source_id ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html --- #: XXX Baumaßnahme 11.46 (Realisierung in 2011) --- #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012) --- #: osm_watch: way id="22044872" version="10" --- #: osm_watch: way id="22045147" version="18" --- #: last_checked: 2014-02-14 --- Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 15866,16393 15843,16399 15771,16417 15432,16500
-# 
-#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html
-#: last_checked: 2014-06-13
-#: check_frequency: 90d
-Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14934,15860 15124,16104 15187,16185 15432,16500
+# REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html --- #: last_checked: 2014-06-13 --- #: check_frequency: 90d --- Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14936,15857 14967,15885 15124,16104 15187,16185 15294,16323 15432,16500
 # 
 #: XXX wahrscheinlich nur im nördlichen Teil bis Kaiserstr.
 #: XXX Baumaßnahme 7.13 (Realisierung in 2011)
@@ -1129,6 +1122,12 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2014
+#: next_check: 2014-10-12
+Brebacher Str./Dillinger Weg: hat die "Einziehung" von Straßenflächen hier Konsequenzen?	? 21550,12038 21562,12088
+# 
+Suermondtstr./neue Wohnstraße: kann man die Suermondtstr. an dieser Stelle überqueren?	? 16416,16236 16476,16216 16520,16200
 # 
 # REMOVED (ja -> radwege-orig) --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=4314&page=28 --- Wilhelmstr.: sind die Radspuren temporär aufgehoben?	?::inwork 8775,12457 8804,12280
 # 

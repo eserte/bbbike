@@ -157,7 +157,7 @@ Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwor
 #: last_checked: 2014-09-09
 Saarbr¸cker Str.: Einbahnstraﬂenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
-#: last_checked: 2014-09-11
+#: last_checked: 2014-09-12
 Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -327,6 +327,12 @@ Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen ¸ber Gehweg	q3:
 Friedelstr.: Bauarbeiten, Einbahnstraﬂe Richtung S¸den	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
+# 
+#: next_check_id: SANDINO-2014
+#: XXX Ende der Bauarbeiten?
+#: last_checked: 2014-09-12
+#: check_frequency: 45d
+Sandinostr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15799,14674 15706,14752
 # 
 #: last_checked: 2014-08-29
 Dottistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 15685,12154 15879,12131
@@ -1113,7 +1119,7 @@ Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q1 6878,5946 6895,5873
 Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
 (Plauener Str. - K¸llstedter Str.): Fuﬂg‰nger	q2 17352,14827 17363,14760
 #: XXX_prog: f¸r Anh‰nger q2
-Orankeweg: einige Bodenschwellen, ohne Anh‰nger leicht umfahrbar	q0 14934,15860 15313,15858 15395,15852 15453,15848
+Orankeweg: einige Bodenschwellen, ohne Anh‰nger leicht umfahrbar	q0 14967,15885 14994,15861 15313,15858 15395,15852 15453,15848
 (Gounodstr. - Otto-Brahm-Str.): abschnittsweise eng und kurvig	q1 14435,15904 14451,15873 14383,15848 14349,15825 14365,15778
 Gounodstr.: Fuﬂg‰nger	q1 14239,15810 14251,15828 14366,15877
 Seidenberger Str.: Bordstein, Gel‰nder	q3 12391,16994 12382,17006
@@ -1821,7 +1827,7 @@ Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
 Gleisdreieck: flache Bordsteine	q1 8296,10438 8237,10418
 #: XXX_prog BS zu beiden Seiten (aber flach!) (ansonsten entfernen)
 Gleisdreieck: flache Bordsteine	q1 8145,10090 8211,10083
-(Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 15187,16185 15102,16212 14810,16282 14665,16294
+(Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 15194,16186 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): Fuﬂg‰nger	q1 14810,16282 14721,16360
 (Dohnagestell - Tangastr.): Fuﬂg‰nger	q2 5802,15399 5889,15457 5961,15562
 Arnimplatz: Fuﬂg‰nger	q2 10606,16319 10739,16146
@@ -1871,7 +1877,7 @@ Fromet-und-Moses-Mendelssohn-Platz: einige Fuﬂg‰nger	q1 9797,10771 9733,10827 96
 (Otisstr. - Wackerweg): eng	q2 3753,18889 3803,18855
 Breitkopfstr.: einige Fuﬂg‰nger	q1 7789,17853 7809,17708 7828,17550
 #: XXX_prog BS (allerdings nicht, wenn man auf dem Bordsteinradweg f‰hrt)
-Orankeweg: Bordstein	q2 14934,15860 14802,15857
+Orankeweg: Bordstein	q2 14936,15857 14769,15867
 #: XXX_prog BS am Wendehammer, ansonsten w‰re es q2
 Jenneweg: einige Fuﬂg‰nger, eng, Bordstein	q3 -3978,14766 -4015,14744
 #: XXX_prog BS an der J¸denstr., ansonsten w‰re es q1

@@ -2691,7 +2691,7 @@ EOF
        text  => 'Buschallee (Weißensee) in Richtung Berliner Allee zwischen Elsastr. und Hansastr. Baustelle, Fahrtrichtung gesperrt (bis 23.09.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 15918,16383 15866,16393 15843,16399 15771,16417 15432,16500
+userdel	q4; 15918,16383 15866,16393 15843,16400 15771,16421 15437,16491
 EOF
      },
      { from  => 1124575200, # 2005-08-21 00:00
@@ -5635,7 +5635,7 @@ EOF
        text  => 'Berlin Weißensee, Buschallee, Weißensee Richtung Ahrensfelde Zwischen Einmündung Berliner Allee und Kreuzung Hansastraße Baustelle, gesperrt bis 15.09.2006 18:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 14619,16551 14809,16525 15134,16499 15142,16499 15432,16500
+userdel	1::inwork 14619,16551 14809,16525 15134,16499 15142,16499 15437,16491
 EOF
      },
      { from  => 1156478400, # 2006-08-25 06:00
@@ -16095,11 +16095,11 @@ EOF
 userdel	q4::temp 10602,18382 10562,18506 10532,18601
 EOF
      },
-     { from  => 1252651497, # 2009-09-11 08:44
-       until => 1252886400, # 2009-09-14 02:00
-       text  => 'Bahnhofstr. (Lichtenrade) in beiden Richtungen zwischen Goltzstr. und Steinstr. Veranstaltung, Straße vollständig gesperrt bis Mo 02:30 ',
+     { from  => $isodate2epoch->("2014-09-12 06:00:00"), # 1 Tag Vorlauf # 1252651497, # 2009-09-11 08:44
+       until => $isodate2epoch->("2014-09-14 23:59:59"), # 1252886400, # 2009-09-14 02:00
+       text  => 'Bahnhofstr. (Lichtenrade) zwischen Goltzstr. und Steinstr. Veranstaltung, Straße gesperrt bis Sonntag Nacht',
        type  => 'handicap',
-       source_id => 'IM_014144',
+       source_id => 'IM_022852',
        data  => <<EOF,
 userdel	q4::temp 10983,-2116 10747,-2129 10631,-2130 10509,-2131 10453,-2133 10310,-2136
 EOF
@@ -22636,7 +22636,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann?
-#: last_checked: 2014-08-21
+#: last_checked: 2014-09-12
 #: next_check: 2014-09-17
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140908.1230.399120.html ("Fest nach Umbau")
 userdel	q3::inwork 11673,16003 11567,15842

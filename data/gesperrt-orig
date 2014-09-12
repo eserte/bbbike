@@ -1061,11 +1061,6 @@ Köttgenstr.	1 473,15169 556,15175 613,15195
 Rosenfelder Ring	1s:q3 18140,11932 18139,11833
 Neue Promenade	1::igndisp 10263,13047 10264,13097
 Hahns Mühle	1 24667,4900 24778,4821
-Möllendorffstr. [Wohngebiet]	1 15470,13509 15477,13268
-#: XXX wird hier die Einbahnstraße für Radfahrer geöffnet (wegen der neuen Radwegführung)?
-#: last_checked: 2014-08-12
-#: check_frequency: 90d
-(Möllendorffstr. - Paul-Junius-Str.)	1s:q4 15370,13508 15470,13509
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Kornmandelweg	1 21311,13522 21345,13550
 Immortellenweg: Schulhof	2 24282,10015 24314,10096
@@ -2565,8 +2560,8 @@ Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auc
 #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
 #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
 #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014
-#: last_checked: 2014-07-10
-#: next_check: 2014-09-10
+#: last_checked: 2014-09-12 (Durchfahrt möglich, man muss an Bauzäunen vorbei)
+#: check_frequency: 21d
 Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
 # 
 #: last_checked: 2014-07-10

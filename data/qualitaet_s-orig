@@ -935,10 +935,15 @@ Köpenicker Allee: mäßiger Asphalt	Q1 18939,9417 19020,9364
 #: confirmed_by: srt
 Vulkanstr.: Asphalt	Q0 15912,13153 15912,13301 15896,13387 15896,13512 15896,13547 15896,13594 15896,13760 15897,13942 15871,14106 15860,14208 15850,14308
 Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15879,12131 15863,11992
-Sandinostr.: Kopfsteinpflaster	Q2 15899,14598 15830,14647 15799,14674 15706,14752
+Sandinostr.: Kopfsteinpflaster	Q2 15899,14598 15830,14647 15799,14674
+#: next_check_id: SANDINO-2014
+#: XXX nach den Bauarbeiten bessere Qualität?
+#: last_checked: 2014-09-12
+#: check_frequency: 45d
+Sandinostr.: Kopfsteinpflaster	Q2 15799,14674 15706,14752
 #: corrected_by: Ralf Bressel (früher holpriger Feldweg -> mittlerweile asphaltiert, seit ca. 2007)
 #: confirmed_by: srt
-Orankeweg: asphaltiert	Q0 14934,15860 15313,15858 15395,15852 15453,15848
+Orankeweg: asphaltiert	Q0 14967,15885 14994,15861 15313,15858 15395,15852 15453,15848
 #: corrected_by: srt (Q3 -> Q3+)
 Orankestr.: schlechtes Kopfsteinpflaster	Q3+ 16331,15486 15996,15620 15877,15673 15801,15706 15665,15765
 #: note: teilweise guckt etwas Schotter hervor
@@ -1717,7 +1722,7 @@ Neue Grünstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
 Parkaue: Asphalt	Q0 15535,12420 15457,12449 15406,12444
 #: XXX wird hier die Straße verbessert werden?
 #: last_checked: 2014-07-12
-#: check_frequency: 60d
+#: next_check: 2014-10-12
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524 (Beginn der Bauarbeiten: Frühjahr 2014)
 Deutschmeisterstr.: mäßiger Asphalt	Q1 15443,12222 15370,12264 15353,12280 15320,12375
 Parkaue: Asphalt	Q0 15406,12444 15408,12394 15370,12264
@@ -3552,7 +3557,7 @@ Augustastr. (Alt-Hohenschönhausen): Asphalt	Q0; 15929,16342 15894,16189 15894,16
 Augustastr. (Alt-Hohenschönhausen): Asphalt	Q0 15929,16342 15918,16383
 Bertastr. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2+ 15894,16189 15840,16246 15782,16277
 Orankestr.: sehr guter Asphalt	Q0 15665,15765 15598,15793 15453,15848
-Hansastr. [Wohngebiet]: Beton	Q0- 15381,15873 15341,15912 15220,16019 15124,16104
+Hansastr. [Wohngebiet]: Beton	Q0- 15381,15873 15341,15912 15220,16019 15130,16098
 Else-Jahn-Str.: Beton	Q0- 15120,16349 14807,16396 14769,16414
 Otto-Brahm-Str.: Asphalt	Q0- 14321,15636 14282,15746 14365,15778 14400,15787 14440,15682
 (Gounodstr. - Otto-Brahm-Str.): Asphalt	Q0 14435,15904 14451,15873 14383,15848 14349,15825 14365,15778
@@ -4521,7 +4526,7 @@ Moriz-Seeler-Str.: Asphalt	Q0 19767,3307 19669,3200
 Steffenstr.: Beton	Q1 15580,14880 15568,14901 15536,14956 15425,15080
 Hohenschönhauser Str.: Asphalt	Q0 14754,14406 14682,14572
 Hohenschönhauser Str.: Beton	Q1 14682,14572 14580,14636
-Piesporter Str.: Beton/wassergebundene Decke	Q1- 15432,16500 15381,16548
+Piesporter Str.: Beton/wassergebundene Decke	Q1- 15437,16491 15381,16548
 Piesporter Str.: Beton	Q0- 15381,16548 15333,16776
 Wittlicher Str.: welliger Asphalt	Q1 15178,17134 15188,17055 15208,16939 15235,16761
 Neumagener Str.: Asphalt	Q0 14910,17010 15188,17055
@@ -8450,7 +8455,7 @@ Am Vorwerk: Beton	Q0 12694,25696 12604,25745 12488,25752 12126,26016
 Mühlenweg (Karow): Verbundsteinpflaster	Q1 15347,22275 15411,22369 15445,22352
 (Hechtgraben - Wartenberger Weg): Verbundsteinpflaster	Q1 16325,18796 16216,19183
 (entlang des Hechtgrabens): Asphalt	Q0 16163,18780 16325,18796
-Alfred-Jung-Str.: Asphalt	Q0 15224,13269 15343,13263 15477,13268
+Alfred-Jung-Str.: Asphalt	Q0 15224,13269 15347,13268 15479,13273
 (Hafersteig - Wuhlgartenweg): Beton	Q1 20835,12200 20824,12177 20823,12139
 Kieler Str. (Mahlsdorf) [Wohngebiet]: Verbundsteinpflaster	Q1+ 25850,13400 25766,13289
 (Marderweg - Kieler Str. [Wohngebiet]): unbefestigter Pfad	Q2 25789,13263 25766,13289
@@ -8822,7 +8827,7 @@ In den Floragärten: unbefestigte Straße	Q2 9903,17711 9996,17707 9997,17646 1001
 (Landsberger Allee - Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16590,14386 16544,14593
 Blockdammweg: Asphalt	Q0 17904,8924 17975,8971
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15027,13801
-(Hansastr. - Gartenstr.): welliger Asphalt	Q1 15187,16185 15102,16212
+(Hansastr. - Gartenstr.): welliger Asphalt	Q1 15194,16186 15102,16212
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 14810,16282 14721,16360
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinsteinpflaster	Q2+ 12948,15771 12762,15882
@@ -9565,7 +9570,7 @@ Zechsteinweg: unbefestigter Weg	Q2- 10350,21676 10328,21737 10319,21774
 Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10423,21701 10388,21801
 (Weg im Wustrower Park): wassergebundene Decke	Q1 17235,18352 17159,18309 17087,18434 17102,18490 17021,18663
 (Weg im Wustrower Park): Gehwegplatten	Q0- 17021,18663 16936,18658
-(Suermondtstr. - Degnerstr.): Verbundsteinpflaster	Q1 16476,16216 16458,16104 16493,15983 16559,15896
+(Suermondtstr. - Degnerstr.): Verbundsteinpflaster	Q1+ 16476,16216 16458,16104 16493,15983 16559,15896
 (an den Schönhauser Allee Arcaden): Kleinsteinpflaster	Q1 11150,15908 11070,15944 11086,15984 10975,16010
 (Friedrich-Ludwig-Jahn-Sportpark - Cantianstr.): Asphalt	Q0 10530,15356 10781,15438 10804,15447
 (Friedrich-Ludwig-Jahn-Sportpark): Verbundsteinpflaster	Q0- 10456,15561 10512,15406
@@ -11262,7 +11267,7 @@ Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16354,15323 16208,1
 #: corrected_by: srt (geteert -> ...) vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5230 vvv
 #: XXX werden die restlichen Abschnitte auch neu asphaltiert? vvv
-#: last_checked: 2014-07-10 (nur der Mittelteil ist neu asphaltiert) vvv
+#: last_checked: 2014-09-12 (nur der Mittelteil ist neu asphaltiert) vvv
 #: check_frequency: 60d vvv
 Roedernstr.: Asphalt mit Schäden	Q1- 16208,15379 16083,15434
 Roedernstr.: Asphalt mit Schäden	Q1- 15712,15594 15552,15660
@@ -12079,7 +12084,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: osm_watch: way id="42689070" version="5"
 #: last_checked: 2014-06-13
 #: check_frequency: 100d
-Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14934,15860 14802,15857 14720,15905 14609,15921
+Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
 Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15598,15793
 #: by: ^^^

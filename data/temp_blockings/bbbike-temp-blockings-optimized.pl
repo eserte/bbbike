@@ -2108,7 +2108,16 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_022852',
+         'until' => 1410731999,
+         'text' => 'Bahnhofstr. (Lichtenrade) zwischen Goltzstr. und Steinstr. Veranstaltung, Straße gesperrt bis Sonntag Nacht',
+         'from' => 1410494400,
+         'id' => 1880,
+         'data' => 'userdel	q4::temp 10983,-2116 10747,-2129 10631,-2130 10509,-2131 10453,-2133 10310,-2136
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -3373,7 +3382,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'from' => undef,
          'id' => 2554,
          'data' => '#: XXX bis wann?
-#: last_checked: 2014-08-21
+#: last_checked: 2014-09-12
 #: next_check: 2014-09-17
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140908.1230.399120.html ("Fest nach Umbau")
 userdel	q3::inwork 11673,16003 11567,15842
