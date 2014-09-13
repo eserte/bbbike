@@ -4262,8 +4262,8 @@ EOF
        data  => <<EOF,
 userdel	2 -4167,12554 -4239,12626
 userdel	2 -4167,12554 -4084,12557
-userdel	2 -3635,12572 -3753,12563
-userdel	2 -3753,12563 -3892,12560
+userdel	2 -3635,12572 -3752,12566
+userdel	2 -3752,12566 -3892,12560
 userdel	2 -3892,12560 -3942,12559 -4084,12557
 EOF
      },
@@ -7855,7 +7855,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005170',
        data  => <<EOF,
-userdel	q4::inwork -7413,14561 -7391,14857 -7390,14881 -7387,14951 -7373,15154 -7371,15201 -7365,15306
+userdel	q4::inwork -7418,14564 -7391,14857 -7390,14881 -7387,14951 -7373,15154 -7371,15201 -7365,15306
 EOF
      },
      { from  => 1172617200, # 2007-02-28 00:00
@@ -20664,7 +20664,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_113869',
        data  => <<EOF,
-userdel	q4::inwork; -2706,13291 -2699,13359 -2669,13488
+userdel	q4::inwork; -2725,13287 -2699,13359 -2669,13488
 EOF
      },
      { from  => 1369937976, # undef, # 
@@ -20934,7 +20934,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_113279',
        data  => <<EOF,
-userdel	q4::inwork; -2974,13188 -2728,13269 -2706,13291
+userdel	q4::inwork; -2974,13188 -2940,13221 -2798,13257 -2725,13287
 EOF
      },
      { from  => 1353366000, # 2012-11-20 00:00
@@ -21267,7 +21267,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2014-08-07
+#: last_checked: 2014-09-13
 #: check_frequency: 100d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
@@ -23231,12 +23231,11 @@ userdel	q4::inwork 24126,5521 24003,5501 23877,5503
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1410623157, # undef, # XXX --- nein, nicht hier
        text  => 'Köbisstr.: wegen Bauarbeiten unter Umständen gesperrt',
        type  => 'gesperrt',
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245&page=7',
        data  => <<EOF,
-#: XXX vor Ort anschauen, ist die Straße tatsächlich gesperrt? Wie lange?
 userdel	2::inwork 7103,11247 6851,11346
 EOF
      },

@@ -655,8 +655,9 @@ Pankower Windrad	culdesac 11878,25627
 	culdesac 2988,14539
 	culdesac 3092,15000
 	culdesac -1629,16640
-	culdesac -1647,16573
-	culdesac -1661,16509
+	culdesac_pseudo -1647,16573
+	culdesac_pseudo -1661,16506
+	culdesac_pseudo -1705,16515
 	culdesac -1402,15592
 	culdesac -504,15092
 	culdesac -2205,17655
@@ -799,9 +800,9 @@ Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2361,2156
 	culdesac -1857,16766
 #: note: Fußwegverbindungen sind in Bau vvv
 	culdesac -1671,16653
-	culdesac -1689,16584
 	culdesac -1680,16441
 #: note ^^^
+	culdesac_pseudo -1689,16584
 	culdesac -1897,16562
 	culdesac -1902,16493
 	culdesac_pseudo -4156,14677
@@ -1016,10 +1017,18 @@ Sackgassenende, S-Bhf. Hermsdorf	culdesac_pseudo 3653,23305
 	culdesac 4492,20214
 #: note: wobei man wahrscheinlich als Radfahrer über den Gehweg fahren kann...
 	culdesac -1297,2846
+	culdesac -5793,6764
+Sackgassenende, Tor	culdesac -6053,6686
+	culdesac -6077,6627
+	culdesac -5947,6395
+	culdesac -8064,13534
+	culdesac -8150,14064
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo -3243,17763
+	culdesac_pseudo -4751,11262
 	culdesac_pseudo 13403,9236
 	culdesac_pseudo 13178,9062
 	culdesac_pseudo 7771,5723

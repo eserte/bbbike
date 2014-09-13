@@ -25,13 +25,7 @@ am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 9932,13109
 am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9918 7813,10112
 Dennewitzplatz	1 7813,10112 7906,10098
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679
-#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Ende der Bauarbeiten)
-#: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen -> gesperrt_car
-#: last_checked: 2014-08-30 (asphaltierte Radwege existieren bis auf die Verknüpfung zur Dennewitzstr.)
-#: check_frequency: 7d
-Dennewitzplatz	1s:q3 7906,10098 7866,9918
+# REMOVED (weitgehend realisiert, nur die Verknüpfung an der Dennewitzstr. fehlt noch) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679 --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Ende der Bauarbeiten) --- #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen -> gesperrt_car ---#: last_checked: 2014-08-30 (asphaltierte Radwege existieren bis auf die Verknüpfung zur Dennewitzstr.) --- #: check_frequency: 7d --- Dennewitzplatz	1s:q3 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
 Winterfeldtplatz	1 7080,10098 7126,9825
 Moritzplatz	1 10854,10854 10832,10910 10885,10928 10906,10874 10854,10854
@@ -379,7 +373,7 @@ Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,72
 Spreepark	2 16023,8860 16161,8852
 #: by: Felix Schröder
 #: confirmed_by: srt
-Staakener Str.	1 -4112,14242 -4390,14257
+Staakener Str.	1 -4149,14266 -4165,14245 -4390,14257
 Langensteiner Weg	1 7283,4719 7335,4879 7437,4855
 #: by: Susanne Kuby:
 #: confirmed_by: srt
@@ -1377,6 +1371,7 @@ Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105 16187,
 Kniprodestr.: Grünstreifen	3nocross 13644,14915 13744,15018 13823,15111
 An der Wuhlheide: Mittelstreifen	3nocross 19578,6165 19405,6276 19276,6359
 Heerstr.: nicht überquerbar	3nocross 504,11243 571,11255 704,11273
+Heerstr.: Mittelstreifen	3nocross -4076,11810 -4031,11796 -3707,11693
 #: by: Sabine (schaeffler)
 Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -3506,14306
 #: by: Juliane (alberts...)
@@ -1588,7 +1583,7 @@ Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, star
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11526,13252 11560,13232 11681,13161
 #: by: Andreas Mühlhausen: vvv
-Heerstr.: schlecht passierbar	3nocross -4063,11805 -4009,11789 -3707,11693
+Heerstr.: schlecht passierbar	3nocross -4076,11810 -4031,11796 -3707,11693
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
 Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11409,13327 11308,13389 11276,13408
 Otto-Braun-Str.: Straßenbahntrasse	3nocross 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11451,13301
@@ -2025,6 +2020,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke (lichte Breite ca. 100cm)	BNP:3::trailer=10 -4277,14981
 Drängelgitter	BNP:3::trailer=10 3664,23313
 Drängelgitter	BNP:3::trailer=10 3737,23369
 Tor	BNP:5::trailer=10 2818,23931
@@ -2193,8 +2189,8 @@ Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5::trailer=no 10
 #: by: Stefan Klinkusch: vvv
 Metallstange	BNP:3::trailer=10 -5070,11199
 Metallstange	BNP:3::trailer=10 -5082,11155
-#: XXX was genau von beiden?
-Drängelgitter/Schranke	BNP:3::trailer=10 -8113,13467
+#: confirmed_by: srt
+Schranke, kann umfahren werden	BNP:2::trailer=5 -8113,13467
 Schranke	BNP:3::trailer=10 -3451,13300
 Drängelgitter	BNP:3::trailer=10 -4760,13980
 #: by: ^^^
@@ -2541,6 +2537,15 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: last_checked: 2014-09-13
+#: next_check: 2015-03-01 (Bauzeit 2014-2015)
+Alfred-Döblin-Platz: Bauarbeiten, Fahrbahn gesperrt	2::inwork 11162,10919 11150,11030
+# 
+#: XXX werden hier die Bordsteine abgeflacht?
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2014
+#: last_checked: 2014-09-13
+Dresdener Str.: Bauarbeiten, komplett gesperrt	2::inwork 11034,11249 11000,11327
 # 
 #: last_checked: 2014-09-03
 Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12576,11375 12638,11433
@@ -3030,7 +3035,7 @@ Roedeliusweg	1 -4413,11628 -4431,11779
 Bollmannweg	1 -4431,11779 -4310,11770
 Weinmeisterhornweg	1s -4789,11225 -4564,11180
 Heerstr.	3nocross -4500,11937 -4437,11919 -4310,11882
-Heerstr.	3nocross -4310,11882 -4278,11873 -4063,11805
+Heerstr.	3nocross -4310,11882 -4278,11873 -4076,11810
 #: XXX_prog: Treppe with two points: -4768,11016 -4836,11028
 tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016
 #: confirmed_by: srt

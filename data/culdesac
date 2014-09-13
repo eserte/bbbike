@@ -632,8 +632,9 @@ Pankower Windrad	culdesac 11878,25627
 	culdesac 2988,14539
 	culdesac 3092,15000
 	culdesac -1629,16640
-	culdesac -1647,16573
-	culdesac -1661,16509
+	culdesac_pseudo -1647,16573
+	culdesac_pseudo -1661,16506
+	culdesac_pseudo -1705,16515
 	culdesac -1402,15592
 	culdesac -504,15092
 	culdesac -2205,17655
@@ -768,8 +769,8 @@ Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2271,2285
 Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2361,2156
 	culdesac -1857,16766
 	culdesac -1671,16653
-	culdesac -1689,16584
 	culdesac -1680,16441
+	culdesac_pseudo -1689,16584
 	culdesac -1897,16562
 	culdesac -1902,16493
 	culdesac_pseudo -4156,14677
@@ -956,3 +957,9 @@ Sackgassenende, S-Bhf. Hermsdorf	culdesac_pseudo 3653,23305
 	culdesac_pseudo 4803,20529
 	culdesac 4492,20214
 	culdesac -1297,2846
+	culdesac -5793,6764
+Sackgassenende, Tor	culdesac -6053,6686
+	culdesac -6077,6627
+	culdesac -5947,6395
+	culdesac -8064,13534
+	culdesac -8150,14064

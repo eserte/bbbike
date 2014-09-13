@@ -658,7 +658,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3355,14764
 	X -1994,11496
 	X -2419,13237
-	X -2706,13291
+	X -2725,13287
 	X -3189,13588
 	X -3227,14260
 	X -3009,17090
@@ -990,7 +990,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 20575,11698
 	X 20549,11659
 	X 22771,16194
-	X -4063,11805
+	X -4076,11810
 	X -4789,11225
 	X -5392,11421
 	X -6660,9953
@@ -1714,6 +1714,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -7170,4962
 	X -7120,5076
 	X -7389,5294
+#: note: Anforderungsampel
 	X -7556,5515
 	X -8116,6167
 	X 21977,9023
@@ -2110,7 +2111,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 17675,17971
 	F 17973,17772
 #: note: Luftbild
-	X -4663,14820
+	X -4671,14818
 	X 18809,9133
 	X 21337,13470
 	X 23021,13982
@@ -2169,6 +2170,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 #: by: Message-ID: <f7gpgb$22l$1@mobile.in-berlin.de>
 	F 1442,12480
+	F 1669,12413
 #: note: Luftbild:
 	X -4290,14025
 	X 4821,5345
@@ -2334,8 +2336,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 5238,13714
 #: note: Luftbild
 	F -6911,13817
-#: note: Luftbild
 	F -4793,9970
+	F -4825,10560
 	F 20788,4008
 #: XXX_prog: gilt nicht in Fahrtrichtung Nordwest
 	F 14842,8809
@@ -2557,7 +2559,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -7762,14067
 	F -4924,14535
 #: XXX Baustellenampel
-#: last_checked: 2013-08-19 (indirekt via http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7375)
+#: last_checked: 2014-09-13
 #: check_frequency: 180d
 	X::inwork -6861,15129
 	F 20614,18481
@@ -2681,6 +2683,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 6153,18592
 	F 5525,21022
+#: note: Anforderungsampel
+	F -7025,16195
+	B0 -3469,18005
+	B0 -3233,17767
 # 
 ################################################################################
 #: note: Potsdam vvv

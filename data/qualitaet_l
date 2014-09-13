@@ -2533,8 +2533,8 @@ Vierradener Chaussee - Oder-Center: Verbundsteinpflaster	Q1 68658,74376 68629,74
 Choriner Bahnhofstr.: Asphalt	Q0 41337,55907 41198,55961 41180,55981
 (Stadtgrenze Berlin - Landstraße Seeburg/Falkensee): Asphalt	Q0 -8971,13610 -8996,13584 -9214,13522 -9577,13577
 Döberitzer Weg: unbefestigte Straße	Q2 -9524,12215 -9692,12123
-Dorfstr.: Asphalt	Q0 -8906,11139 -8607,11262
-Gatower Weg (Seeburg): Asphalt	Q0 -8607,11262 -8596,11184 -8451,11071 -8327,10979 -8274,10938
+Dorfstr.: Asphalt	Q0 -8906,11139 -8655,11249 -8624,11246
+Gatower Weg (Seeburg): Asphalt	Q0 -8624,11246 -8596,11184 -8451,11071 -8327,10979 -8274,10938
 Freiheitsstr. (Groß Glienicke): Asphalt	Q0 -9869,7199 -9964,7203
 Ulrich-Steinhauer-Str.: Asphalt	Q0 -9983,7100 -9880,7094
 Rotdornweg (Groß Glienicke): Asphalt	Q0 -10091,6716 -10095,6664
@@ -3149,6 +3149,8 @@ Roedernstr. (Waldesruh): Asphalt	Q0 25084,8136 25159,8083
 Falkenweg (Glienicke): Waldweg	Q2 3765,24644 3803,24652 3820,24654
 Falkenweg (Glienicke): Asphalt	Q0 3765,24644 3694,24630 3683,24666
 Silvesterweg: Verbundsteinpflaster	Q1 3559,24564 3557,24572 3544,24628
+Zwinglistr. (Falkenweg): Asphalt	Q0 -7208,16669 -7279,16431
+Oberjägerweg: Asphalt	Q0 -4485,20420 -4053,20594
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144
@@ -3554,8 +3556,8 @@ Schwarzer Weg (Großziethen): Asphalt	Q0 13022,-647 12804,-735
 (Bucher Teiche - Hobrechtsfelde): Feldweg	Q2 15777,28037 16058,28106 16107,28379 16066,28510
 Am Park: Asphalt	Q0 -9118,7286 -8968,7328
 Mauerweg am Groß-Glienicker See: Asphalt, einige Fugen	Q0 -9118,7286 -9168,7172 -9154,7073 -9175,7037 -9424,6874 -9455,6843 -9490,6650 -9616,6309 -9668,6171 -9622,5804 -9640,5723 -9727,5573 -9763,5555
-Seeburger Chaussee: Asphalt	Q0 -8634,9626 -8595,9582 -8564,9423 -8632,8641 -8719,8161 -8878,8089 -9077,7923 -9150,7720
-Seeburger Chaussee: mäßiger Asphalt	Q1 -9150,7720 -9097,7649 -9088,7599
+Seeburger Chaussee: Asphalt	Q0 -8634,9626 -8595,9582 -8564,9423 -8632,8641 -8666,8449 -8719,8161
+Seeburger Chaussee: mäßiger Asphalt	Q1 -8719,8161 -8878,8089 -9077,7923 -9150,7720 -9097,7649 -9088,7599
 Edisonstr.: Sand	Q3 -10696,15970 -10722,16134
 Edisonstr.: Asphalt	Q0 -10722,16134 -10744,16241
 Staakener Heuweg: Asphalt	Q0 -7414,16351 -7455,16243 -7497,16120
@@ -3571,10 +3573,10 @@ Barkhausenstr.: Asphalt	Q0 -10744,16241 -10853,16230
 Eichendorffstr.: asphaltiert	Q0 -12794,15105 -12503,15181 -12236,15133 -12173,15109
 Eichendorffstr.: wassergebundene Decke	Q1 -12173,15109 -12069,15110 -11134,14862 -11108,14873 -11093,14902 -11081,15001 -11073,15002
 (Am Bahndamm): unattraktive Strecke, wassergebundene Decke bzw. Kies	Q2 -8682,14489 -8926,14526 -8982,14564 -9225,14647 -9264,14641 -9300,14593 -9314,14589 -9356,14597 -9385,14572 -9410,14568 -10011,14622 -10616,14680 -10639,14690 -11039,14732 -11054,14724 -11125,14728 -11145,14738 -12291,14864 -12542,14878 -12734,14907 -12885,14915 -13175,14960 -13662,14975 -13890,14999 -13925,14992 -13967,14996
-Niederneuendorfer Weg: Sand	Q3 -9919,18612 -8816,18828 -8394,18741 -8190,18776
-Lortzingallee: Sand	Q3 -8394,18741 -8420,18532 -8546,18331
-Brahmsallee: Sand	Q3 -8780,18633 -8420,18532 -7890,18273
-(Kuhlake): Waldweg	Q2 -7769,18068 -7457,18414 -7346,18260 -7044,18133 -6931,17864
+Niederneuendorfer Weg: Sand	Q3 -9768,18667 -8816,18828 -8394,18741 -8190,18776
+Lortzingallee: Sand	Q3 -8394,18741 -8445,18503 -8546,18331
+Brahmsallee: Sand	Q3 -8749,18648 -8445,18503 -7920,18308
+(Kuhlake): Waldweg	Q2 -7777,18082 -7457,18414 -7346,18260 -7061,18086 -6931,17818
 Schleuse Schönwalde - Schönwalde: Waldweg	Q2 -11476,22085 -11448,22017 -11450,21930 -11467,21846 -11400,21710 -11173,21524 -10842,21398 -10313,21144
 nördlich des Havellandkanals: Schotter	Q2 -12182,22042 -11476,22085 -11456,22120 -11380,22120 -11351,22090 -10425,22139
 Am Havelkanal: Asphalt	Q0 -3395,23278 -3491,23179 -3479,23141 -3996,22969 -4635,22801 -7161,22297 -8730,22254
@@ -4224,7 +4226,7 @@ Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, Gehweg für Radfahrer freig
 Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, schmale Verbundsteinpflastergehwege	Q2 25295,-3103 25320,-3153 25400,-3285 25456,-3375 25506,-3465 25556,-3547 25610,-3647 25635,-3723
 Friedhofsgasse (Potsdam): Beton	Q0 -11778,-2225 -11799,-2283 -11995,-2500
 Döberitzer Weg: Asphalt	Q0 -9524,12215 -9503,12227 -9467,12248 -9049,12498
-Staakener Weg (Seeburg): Asphalt	Q0 -8447,12079 -8607,11262
+Staakener Weg (Seeburg): Asphalt	Q0 -8445,12092 -8599,11272 -8623,11264 -8624,11246
 (Gatower Weg - Maximilian-Kolbe-Str./Potsdamer Chaussee): fester Sandweg, unebene Fahrbahn	Q1 -6660,9953 -6681,9964 -7414,10335 -8274,10938
 Hamburger Str. (Falkensee): Asphalt	Q0 -8080,16150 -8010,16486 -7970,16592
 Dallgow Ausbau: Beton, rissig, mit einigen Bodenwellen	Q1 -9467,12248 -9210,13338

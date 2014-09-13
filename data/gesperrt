@@ -18,7 +18,6 @@ am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 9932,13109
 am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9918 7813,10112
 Dennewitzplatz	1 7813,10112 7906,10098
-Dennewitzplatz	1s 7906,10098 7866,9918
 Winterfeldtplatz	1 7049,9833 7038,10087
 Winterfeldtplatz	1 7080,10098 7126,9825
 Moritzplatz	1 10854,10854 10832,10910 10885,10928 10906,10874 10854,10854
@@ -304,7 +303,7 @@ Stiftsweg	1s 11001,18528 11239,18832 11263,18842
 Bleicheroder Str.	1 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Spreepark	2 16023,8860 16161,8852
-Staakener Str.	1 -4112,14242 -4390,14257
+Staakener Str.	1 -4149,14266 -4165,14245 -4390,14257
 Langensteiner Weg	1 7283,4719 7335,4879 7437,4855
 Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
 Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
@@ -1094,6 +1093,8 @@ Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
 nicht überquerbar	3nocross::ignrte 504,11243 571,11255 704,11273
+Mittelstreifen	3nocross::ignrte -4076,11810 -4031,11796 -3707,11693
+Südpark -> Heerstr.: Mittelstreifen	3::igndisp -4027,11818 -4031,11796 -3707,11693
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3501,14365 -3506,14306
 Münsingerstr./Martin-Albertz-Weg -> Altstädter Ring: Mittelstreifen	3::igndisp -3535,14408 -3498,14413 -3481,14523
 Altstädter Ring -> Münsingerstr./Martin-Albertz-Weg: Mittelstreifen	3::igndisp -3501,14365 -3498,14413 -3535,14408
@@ -1814,9 +1815,8 @@ Mollstr. -> Pauline-Staegemann-Str.: Straßenbahntrasse	3::igndisp 11451,13301 11
 Pauline-Staegemann-Str. -> Mollstr.: Straßenbahntrasse	3::igndisp 11589,13305 11526,13252 11560,13232
 Mollstr. -> Berolinastr.: Straßenbahntrasse	3::igndisp 11681,13161 11560,13232 11476,13052
 Berolinastr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11476,13052 11560,13232 11526,13252
-schlecht passierbar	3nocross::ignrte -4063,11805 -4009,11789 -3707,11693
-Heerstr. -> Südpark: schlecht passierbar	3::igndisp -4063,11805 -4009,11789 -4004,11814
-Südpark -> Heerstr.: schlecht passierbar	3::igndisp -4004,11814 -4009,11789 -3707,11693
+schlecht passierbar	3nocross::ignrte -4076,11810 -4031,11796 -3707,11693
+Südpark -> Heerstr.: schlecht passierbar	3::igndisp -4027,11818 -4031,11796 -3707,11693
 nicht passierbarer Mittelstreifens	3nocross::ignrte 2560,5044 2587,4965 2615,4885
 Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2615,4885 2587,4965 2516,4936
 Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3::igndisp 2516,4936 2587,4965 2560,5044
@@ -2343,6 +2343,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke (lichte Breite ca. 100cm)	BNP:3:49:trailer=10 -4277,14981
 Drängelgitter	BNP:3:-126:trailer=10 3664,23313
 Drängelgitter	BNP:3:-127:trailer=10 3737,23369
 Tor	BNP:5:-215:trailer=10 2818,23931
@@ -2485,7 +2486,7 @@ enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30:-19:trailer=no 10583,15
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5:-108:trailer=no 10781,15438
 Metallstange	BNP:3:-72:trailer=10 -5070,11199
 Metallstange	BNP:3:-72:trailer=10 -5082,11155
-Drängelgitter/Schranke	BNP:3:-194:trailer=10 -8113,13467
+Schranke, kann umfahren werden	BNP:2:-192:trailer=5 -8113,13467
 Schranke	BNP:3:-27:trailer=10 -3451,13300
 Drängelgitter	BNP:3:4:trailer=10 -4760,13980
 Schranke	BNP:3:-96:trailer=10 8262,17361
@@ -2726,6 +2727,8 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Alfred-Döblin-Platz: Bauarbeiten, Fahrbahn gesperrt	2::inwork 11162,10919 11150,11030
+Dresdener Str.: Bauarbeiten, komplett gesperrt	2::inwork 11034,11249 11000,11327
 Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12576,11375 12638,11433
 Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045
 Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
@@ -2971,8 +2974,8 @@ Roedeliusweg	1 -4413,11628 -4431,11779
 Bollmannweg	1 -4431,11779 -4310,11770
 Weinmeisterhornweg	1s -4789,11225 -4564,11180
 Heerstr.	3nocross::ignrte -4500,11937 -4437,11919 -4310,11882
-Heerstr.	3nocross::ignrte -4310,11882 -4278,11873 -4063,11805
-Heerstr. -> Enger St.: Heerstr.	3::igndisp -4063,11805 -4278,11873 -4310,11770
+Heerstr.	3nocross::ignrte -4310,11882 -4278,11873 -4076,11810
+Heerstr. -> Enger St.: Heerstr.	3::igndisp -4076,11810 -4278,11873 -4310,11770
 Enger St. -> Heerstr.: Heerstr.	3::igndisp -4310,11770 -4278,11873 -4310,11882
 tragen/schieben (40 Stufen, Rampe)	0:120:-259 -4768,11016
 Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363

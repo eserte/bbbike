@@ -3099,7 +3099,7 @@ userdel	q4::inwork 15261,10738 15272,10790
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2014-08-07
+#: last_checked: 2014-09-13
 #: check_frequency: 100d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -3600,17 +3600,7 @@ userdel	q4::inwork; 31967,2966 31999,2812 32031,2723 32115,2581 32162,2542
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245&page=7',
-         'until' => undef,
-         'text' => 'Köbisstr.: wegen Bauarbeiten unter Umständen gesperrt',
-         'from' => undef,
-         'id' => 2613,
-         'data' => '#: XXX vor Ort anschauen, ist die Straße tatsächlich gesperrt? Wie lange?
-userdel	2::inwork 7103,11247 6851,11346
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3626,17 +3616,7 @@ userdel	2::inwork 7103,11247 6851,11346
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140827.1305.398908.html',
-         'until' => 1410559200,
-         'text' => 'Rudolstädter Straße: zwischen Bechstedter Weg und Hohenzollerndamm Straßenbauarbeiten, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, vom Montag, dem 01.09.2014 bis ca. 12.09.2014',
-         'from' => 1409436000,
-         'id' => 2620,
-         'data' => '#: source_id: IM_022741
-userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 3848,8689 3775,8771 3701,8849
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3650,17 +3630,7 @@ userdel	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.turmstrasse.de/aktuelles/veranstaltungen.html',
-         'until' => 1410624000,
-         'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 13. September 2014, 13 bis 18 Uhr ',
-         'from' => 1410519600,
-         'id' => 2625,
-         'data' => '#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140905.1415.399114.html
-userdel	2::temp 5857,13342 5868,13441 5882,13548
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_022799',
          'until' => 1412953200,
