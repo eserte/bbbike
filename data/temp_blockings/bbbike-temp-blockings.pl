@@ -23360,7 +23360,7 @@ userdel	q4::inwork; 18343,6318 18191,6363 17992,6436
 EOF
      },
      { from  => 1410559200, # 2014-09-13 00:00
-       until => 1420066799, # 2014-12-31 23:59
+       until => $isodate2epoch->("2014-12-23 17:00:00"), # 1420066799, # 2014-12-31 23:59
        text  => 'Fürstenwalder Damm: zwischen Bölschestr. und Am Goldmannpark Baustelle, Straße vollständig gesperrt, ab 15.09.2014 07 Uhr bis Ende Dezember 2014 ',
        type  => 'handicap',
        source_id => 'IM_022856',
