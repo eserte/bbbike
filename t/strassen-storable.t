@@ -8,13 +8,18 @@
 use strict;
 
 use FindBin;
-use lib ("$FindBin::RealBin/..",
+use lib (
+	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
-	 "$FindBin::RealBin/../data",
-	 $FindBin::RealBin);
-use Strassen;
+	 $FindBin::RealBin,
+	);
+
 use Benchmark;
 use Getopt::Long;
+
+use Strassen::Core;
+use Strassen::Storable;
+use Strassen::MultiStrassen;
 
 BEGIN {
     if (!eval q{
@@ -31,35 +36,39 @@ BEGIN {
 
 use BBBikeTest qw(get_pmake);
 
-## results with 5.8.0:
-# normal: 0.078125
-# Storable: 0.4375
+# results with perl 5.20.1, Debian/wheezy, Xen VM:
+# Strassen::Storable: 0.07
+# Strassen: 0.08
 
-plan tests => 8;
+plan tests => 10;
 
-use vars qw($fast $bench $v);
-
-if (!GetOptions("fast" => \$fast,
+my $skip_build;
+my $bench;
+if (!GetOptions(
+		"skip-build" => \$skip_build,
 		"bench" => \$bench,
-		"v" => \$v)) {
+	       )) {
     die "usage!";
 }
 
-use vars qw($token %times $ext);
-
-unless ($fast) {
+if (!$skip_build) {
     my $make = get_pmake;
     diag "Regenerating storable files in data, please be patient...\n";
     local $ENV{MAKEFLAGS}; # protect from gnu make brain damage (MAKEFLAGS is set to "w" in recursive calls)
     system("cd $FindBin::RealBin/../data && $make storable >/dev/null 2>&1");
 }
 
-for $ext ("", ".st") {
+my %times;
+for my $def (
+	     ['Strassen', ''],
+	     ['Strassen::Storable', '.st']
+	    ) {
+    my($class, $ext) = @$def;
     if ($bench) {
-	my $t = timeit(1, 'do_tests()');
-	$times{$token} += $t->[$_] for (1..4);
+	my $t = timeit(1, sub { do_tests($class, $ext) });
+	$times{$class} += $t->[$_] for (1..4);
     } else {
-	do_tests();
+	do_tests($class, $ext);
     }
 }
 
@@ -71,14 +80,28 @@ if ($bench) {
 }
 
 sub do_tests {
-    $token = ($ext ? "Storable" : "normal");
-    my $ss = new Strassen "strassen$ext";
-    isa_ok $ss, "Strassen";
-    my $sl = new Strassen "landstrassen$ext";
-    isa_ok $sl, "Strassen";
-    my $sm = new MultiStrassen($ss, $sl);
-    isa_ok $sm, "MultiStrassen";
-    isa_ok $sm, "Strassen";
+    my($class, $ext) = @_;
+    my $ss = $class->new("strassen$ext");
+    isa_ok $ss, $class;
+    my $sl = $class->new("landstrassen$ext");
+    isa_ok $sl, $class;
+
+ TODO: {
+	todo_skip "MultiStrassen support not possible yet with Strassen::Storable files", 2;
+	my $sm = MultiStrassen->new($ss, $sl);
+	isa_ok $sm, "MultiStrassen";
+	isa_ok $sm, "Strassen";
+    }
+
+    {
+	my $c = 0;
+	while() {
+	    my $r = $ss->next;
+	    last if !@{ $r->[Strassen::COORDS] };
+	    $c++;
+	}
+	cmp_ok $c, ">", 1000, "More than thousand streets (-> $c) found";
+    }
 }
 
 __END__
