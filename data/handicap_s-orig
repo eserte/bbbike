@@ -13,13 +13,13 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2014-09-11 vvv
+#: last_checked: 2014-09-16 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015
-#: last_checked: 2014-09-13 vvv
+#: last_checked: 2014-09-16 vvv
 #: next_check: 2015-10-01 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -59,7 +59,7 @@ Gipsstr.: Bauarbeiten an der Rosenthaler Str., einige Meter Gehweg benutzen	q3::
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX nach den Bauarbeiten bleiben wohl "einige Fußgänger" übrig, dann nur mit q1
-#: last_checked: 2014-09-11
+#: last_checked: 2014-09-16
 Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2014-07-22
@@ -158,7 +158,7 @@ Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwor
 #: last_checked: 2014-09-15
 Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
-#: last_checked: 2014-09-15
+#: last_checked: 2014-09-16
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -236,7 +236,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-09-03
+#: last_checked: 2014-09-16
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -294,8 +294,8 @@ Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden a
 Delbrückstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,6717 13099,6712 13126,6687
 # 
 #: XXX laut Schild Bauarbeiten bis September 2014
-#: last_checked: 2014-08-30
-#: next_check: 2014-09-15
+#: last_checked: 2014-09-16
+#: next_check: 2014-09-30
 Wildenbruchplatz: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13135,8766 13227,8692 13314,8624
 # 
 #: last_checked: 2014-08-26 vvv
@@ -307,11 +307,11 @@ Richardplatz/Richardstr.: Bauarbeiten, Umwege notwendig	q4::inwork 13288,7653 13
 # 
 #: next_check_id: RICHARDSTR-2014 vvv
 #: XXX bis wann ist die Baustelle fertig? vvv
-#: last_checked: 2014-08-26 vvv
+#: last_checked: 2014-09-16 vvv
 #: check_frequency: 30d vvv
-Richardstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 13103,7889 13085,7904 12870,8087
-Richardstr.: Bauarbeiten, ggfs. auf Gehweg ausweichen	q4::inwork 13150,7845 13103,7889
-Jan-Hus-Weg/Kirchgasse: Bauarbeiten	q4::inwork 13085,7904 13117,7939 13151,7914
+Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 13103,7889 13085,7904 12870,8087
+#: note: nur teilweise
+Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 13150,7845 13103,7889
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -706,7 +706,7 @@ Am Rummelsburger See: Fußgänger an schönen Tagen	q1 16268,9670 16347,9594
 # REMOVED (ist jetzt breiter) --- Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20939,2413 20810,2398
 # REMOVED (nun komplett gesperrt) --- Vorfahrt Reichstagsgebäude: Fußgänger	q4 8400,12417 8399,12616
 Am Teltowkanal: kurverreich und recht eng	q1 3764,1385 3695,1308 3619,1207 3419,1061 3375,1026 3366,1007
-#: XXX wo genau sind die Bordsteine?
+#: XXX_prog BS (es gibt an beiden Seiten Bordsteine sowie eine zusätzliche Stufe im südlichen Bereich, ansonsten wäre es wohl q2)
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 Fregestr. zur Feuerbachstr.: Gehweg, Fußgänger	q2 5629,6407 5582,6360
 #: XXX_prog BS (wahrscheinlich nur am Wendehammer der Weisestr. und falls man die Fahrbahn der Flughafenstr. benutzen möchte, ansonsten q2 oder schlechter)
@@ -798,6 +798,7 @@ Heinrich-Lassen-Park: Fußgänger, Radfahren offiziell nicht erlaubt	q3 6664,8787 
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
 Gerlachsheimer Weg: Fußgänger	q2 13151,7914 13240,7966
+Jan-Hus-Weg/Kirchgasse: Fußgänger	q2 13085,7904 13117,7939 13151,7914
 Wanzlikpfad: eng und kurvig, Fußgänger	q3 13268,7801 13309,7911
 (Tunnelstr. - Uferweg): Fußgänger	q1 15662,9501 15749,9558
 (Fischzug - Uferweg): Spielplatz, zwei Schwinggitter	q4 15219,10079 15260,10048

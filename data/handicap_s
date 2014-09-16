@@ -42,9 +42,8 @@ Delbrückstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,
 Wildenbruchplatz: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13135,8766 13227,8692 13314,8624
 Richardplatz: Bauarbeiten auf der südlichen Fahrbahn	q4::inwork 13188,7590 13303,7622 13400,7642
 Richardplatz/Richardstr.: Bauarbeiten, Umwege notwendig	q4::inwork 13288,7653 13303,7622
-Richardstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 13103,7889 13085,7904 12870,8087
-Richardstr.: Bauarbeiten, ggfs. auf Gehweg ausweichen	q4::inwork 13150,7845 13103,7889
-Jan-Hus-Weg/Kirchgasse: Bauarbeiten	q4::inwork 13085,7904 13117,7939 13151,7914
+Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 13103,7889 13085,7904 12870,8087
+Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 13150,7845 13103,7889
 Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen über Gehweg	q3::inwork 12088,9775 12250,9691
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 Sandinostr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15799,14674 15706,14752
@@ -371,6 +370,7 @@ Heinrich-Lassen-Park: Fußgänger, Radfahren offiziell nicht erlaubt	q3 6664,8787 
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
 Gerlachsheimer Weg: Fußgänger	q2 13151,7914 13240,7966
+Jan-Hus-Weg/Kirchgasse: Fußgänger	q2 13085,7904 13117,7939 13151,7914
 Wanzlikpfad: eng und kurvig, Fußgänger	q3 13268,7801 13309,7911
 (Tunnelstr. - Uferweg): Fußgänger	q1 15662,9501 15749,9558
 (Fischzug - Uferweg): Spielplatz, zwei Schwinggitter	q4 15219,10079 15260,10048
