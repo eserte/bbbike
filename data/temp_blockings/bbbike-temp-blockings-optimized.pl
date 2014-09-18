@@ -2309,7 +2309,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-08-20 vvv
+#: last_checked: 2014-09-17 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
@@ -2585,8 +2585,8 @@ userdel	2::night 17671,13132 17684,13133
          'text' => 'Uferweg an der Havel wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2543,
-         'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-05-11
+         'data' => '#: last_checked: 2014-05-11
+#: add_fragezeichen: Sind die Bauarbeiten am Uferweg beendet? Wurde der Uferweg asphaltiert?
 userdel	2::inwork -12363,-1742 -12457,-1857
 ',
          'type' => 'gesperrt'
@@ -2611,19 +2611,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       {
-         'until' => 1410966000,
-         'text' => 'Gudvanger Str.: Bauarbeiten zwischen Wichertstr. und Erich-Weinert-Str., Fahrbahn gesperrt, bis zum 17. September 2014',
-         'from' => undef,
-         'id' => 2554,
-         'data' => '#: XXX bis wann?
-#: last_checked: 2014-09-12
-#: next_check: 2014-09-17
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20140908.1230.399120.html ("Fest nach Umbau")
-userdel	q3::inwork 11673,16003 11567,15842
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -2883,6 +2871,16 @@ userdel	q4::inwork; 31967,2966 31999,2812 32031,2723 32115,2581 32162,2542
          'from' => 1410559200,
          'id' => 2627,
          'data' => 'userdel	q4::inwork 26302,5932 26080,5946 25579,5958
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
+         'until' => 1420066799,
+         'text' => 'Gounodstr.: Bauarbeiten zwischen von Herbert-Baum-Str. bis Borodinstr., ab Ende September 2014 bis Ende Dezember 2014',
+         'from' => 1411941600,
+         'id' => 2628,
+         'data' => 'userdel	q4::inwork 13645,15609 13739,15643 13939,15723
 ',
          'type' => 'handicap'
        }

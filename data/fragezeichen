@@ -948,8 +948,6 @@ ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg rea
 Via Tilia: Qualität? Wo liegt die Straße genau (GPS-Track?)?	? -7518,-1175 -7548,-1097 -7487,-1056 -7271,-1102
 Neubrücker Str.: Ist die Neubrücker Str. eine Vorfahrtsstraße?	? 1364,25882 1213,25813 1135,25765 1057,25695 975,25627 885,25578 727,25504 639,25478
 Ahlimbsmühle - Templin: Qualität (Asphalt oder etwas anderes)? Ist die gesamte Straße eine Fahrradstraße?	? 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
-Unterführung Lange Brücke: neuer Weg entsteht hier, Qualität?	?::inwork -12363,-1742 -12377,-1743 -12663,-2039 -12759,-2066
-Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
 Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9766,5437 -9677,5430 -9478,5549 -9372,5532
 Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
@@ -1063,6 +1061,11 @@ Waldstr. (Schwanebeck): Qualität?	? 19882,26592 19935,26699 19948,26760
 Reinickendorfer Route 3: genauer Streckenverlauf? Qualität?	? 2566,23584 2272,23574 2137,23626 2114,23720 2056,23749 1980,23711 1848,23679 1702,23692 1622,23726 1607,23777 1576,23785 1433,23738 1363,23746 1304,23736 1157,23752
 Straßen in Döberitz: genaue Straßennamen, Qualität?	? -11635,13818 -11709,13476 -12032,13708 -12089,13741 -12596,13763 -12956,13814 -13017,13815 -13375,13807 -13371,13691 -13400,13622
 Fichtenstr.: existiert ein Verbindungsweg zur Heerstr.? Qualität? Nachts beleuchtet? Existiert eine Ausschilderung?	? 22212,9508 22237,9632 22274,9622
+An der Kornmühle (Potsdam): Qualität der Straße?	? -12712,-2172 -12728,-2227
+Am Speicher (Potsdam): Qualität der Straße?	? -12783,-2269 -12771,-2220 -12754,-2154
+Altstadtblick (Potsdam): Qualität der Straße?	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
+Unterführung Lange Brücke: existiert der neue Weg schon, wie ist die Qualität?	? -12363,-1742 -12377,-1743 -12625,-1956 -12721,-2082
+Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg schon, wie ist die Qualität?	? -12721,-2082 -12754,-2154
 # added from ampeln-orig
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6163 (Stand der Planung?)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
@@ -1217,3 +1220,4 @@ F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 # added from bbbike-temp-blockings-optimized
+Uferweg an der Havel wegen Bauarbeiten gesperrt userdel (Sind die Bauarbeiten am Uferweg beendet? Wurde der Uferweg asphaltiert?)	? -12363,-1742 -12457,-1857

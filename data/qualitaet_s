@@ -1319,7 +1319,6 @@ Paul-und-Paula-Ufer: Beton	Q0 14892,10411 14864,10451 14868,10467 14884,10508
 Paul-und-Paula-Ufer: Asphalt	Q0 14884,10508 14911,10587 14937,10598 14990,10581 15056,10625 15101,10640 15145,10636 15200,10600
 Uferweg: Parkweg	Q1 15314,10121 15260,10048 15295,10022 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15545,9818 15583,9779 15626,9710
-Kynaststr. [Ersatzstraﬂe]: asphaltiert	Q0 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
 Untere Kynaststr.: asphaltiert	Q0 14805,10518 14832,10512 14843,10621 14882,10732 14906,10820
 (Rummelsburger Ufer - Hauptstr.): glattes Pflaster	Q0 15249,10564 15307,10701
 (Alt-Stralau - Spreeufer): asphaltiert, einige Wurzelsch‰den	Q1 14652,10201 14569,10055
@@ -14097,8 +14096,9 @@ Weydemeyerstr.: m‰ﬂiger Beton, Fugen	Q2 11721,12801 11805,12760 11933,12701 1196
 (Karl-Marx-Allee - Berolinastr.): unebene Gehwegplatten	Q1 11601,12858 11589,12768
 (Berolinastr.): Gehwegplatten	Q1 11844,12926 11885,12905
 (Berolinastr.): Verbundsteine	Q1 11885,12905 11952,12871
-(Berlolinastr.): Gehwegplatten	Q0 11885,12905 11906,12947 11921,12990 11983,12949
-(Berolinastr.): Gehwegplatten	Q0 11921,12990 11865,13027 11815,13045 11719,13088
+(Berolinastr.): Gehwegplatten	Q0 11885,12905 11906,12947 11921,12990
+(Berolinastr.): unebener Asphalt	Q1 11983,12949 11921,12990 11865,13027
+(Berolinastr.): Gehwegplatten	Q0 11865,13027 11815,13045 11719,13088
 (Berolinastr. - Mollstr.): Gehwegplatten	Q0 11865,13027 11874,13048 11896,13075
 (Berolinastr. - Mollstr.): Beton/Verbundsteine/gepflastert	Q1 11608,12985 11656,13100 11681,13161
 (Lichtenberger Str.): Verbundsteine	Q1 12054,12903 12039,12675

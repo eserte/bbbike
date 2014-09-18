@@ -10475,7 +10475,7 @@ EOF
        text  => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14843,10621 14882,10732
+# REMOVED --- userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14843,10621 14882,10732
 EOF
      },
      { from  => undef, # 
@@ -11614,7 +11614,7 @@ EOF
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14843,10621 14882,10732 14906,10820
+# REMOVED --- userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14843,10621 14882,10732 14906,10820
 EOF
      },
      { from  => undef, # 
@@ -21199,7 +21199,7 @@ EOF
        source_id => 'IM_022268',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-08-20 vvv
+#: last_checked: 2014-09-17 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
@@ -22532,8 +22532,8 @@ EOF
        text  => 'Uferweg an der Havel wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
 #: last_checked: 2014-05-11
+#: add_fragezeichen: Sind die Bauarbeiten am Uferweg beendet? Wurde der Uferweg asphaltiert?
 userdel	2::inwork -12363,-1742 -12457,-1857
 EOF
      },
@@ -23366,6 +23366,15 @@ EOF
        source_id => 'IM_022856',
        data  => <<EOF,
 userdel	q4::inwork 26302,5932 26080,5946 25579,5958
+EOF
+     },
+     { from  => 1411941600, # 2014-09-29 00:00
+       until => 1420066799, # 2014-12-31 23:59
+       text  => 'Gounodstr.: Bauarbeiten zwischen von Herbert-Baum-Str. bis Borodinstr., ab Ende September 2014 bis Ende Dezember 2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
+       data  => <<EOF,
+userdel	q4::inwork 13645,15609 13739,15643 13939,15723
 EOF
      },
     );

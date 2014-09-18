@@ -383,6 +383,10 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html
+#: next_check: 2014-12-31
+Gounodstr.: nach den Bauarbeiten asphaltiert	?::inwork 13645,15609 13739,15643 13939,15723
+# 
 #: source_id: IM_022856
 #: next_check: 2014-12-31
 Fürstenwalder Damm: existieren nach den Bauarbeiten vielleicht Radwege?	? 26302,5932 26080,5946 25579,5958
@@ -1848,25 +1852,6 @@ Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -15999,1387 -16
 # REMVOED (ist doch nicht passiert) --- S8: wird in der Hauptverkehrszeit bis KW verlängert	? 26029,-6170 26057,-6241
 # REMOVED --- #: priority ^^^ --- #: next_check ^^^ --- #: XXX ^^^
 # REMOVED (sieht nicht so aus) --- #: XXX wird es einen Ersatz für die Ruderfähre F24 geben? --- #: by: http://www.berliner-zeitung.de/berlin/mueggelheim-aus-fuer-ruderfaehre,10809148,24637330.html (sagt nein: kein Platz für einen Anleger) --- #: by: http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/rahnsdorf/artikel/8416-im-herbst-2013-stellt-die-faehre-f-24-den-betrieb-ein/ (sagt ja, durch die F23) --- #: by: http://www.tagesspiegel.de/berlin/berlin-koepenick-aus-fuer-berlins-letzte-ruderfaehre/8937114.html (nein, kein Hinweis darauf) --- #: next_check: 2014-03-01 --- Ersatz für die F24?	? 29959,3031 29968,2986
-# 
-#: last_checked: 2013-12-22 vvv
-#: check_frequency: 180d vvv
-#: XXX neue Straßen in Potsdam: Qualität? Genauer Verlauf? vvv
-#: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
-#: XXX fehlt in Potsdam.coords.data, PLZ=14473 vvv
-#: osm_watch: way id="174465897" version="1" brb
-An der Kornmühle (Potsdam)	?::inwork -12712,-2172 -12728,-2227
-#: osm_watch: way id="174465898" version="1" brb
-Am Speicher (Potsdam)	?::inwork -12783,-2269 -12771,-2220 -12754,-2154
-#: XXX ^^^
-#: by: ^^^
-#: XXX ^^^
-#: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
-#: XXX fehlt in Potsdam.coords.data, PLZ=14473
-#: osm_watch: way id="174465895" version="1" brb
-Altstadtblick (Potsdam): neue Straße in Potsdam, Qualität? Genauer Verlauf? (Planstraße D)	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
-#: check_frequency: ^^^
-#: last_checked ^^^
 # 
 # REMOVE (Straßenschilder hängen) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straßenname) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/4508103642561748/42561748/00111971/71-Anlagen/03/4_Version_vom_30_12_2013.pdf (weitere Vorschläge) --- #: by: http://www.fatkoehl.com/index.php?article_id=31 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2014 --- #: XXX es gab noch zwei weitere Alternativen: Kate-Kühl-Straße und Alisa-Fuss-Straße --- #: XXX fehlt in Berlin.coords.data (laut DTAG-Liste und osm und LOR PLZ=10179) -> Wilhelmine-Gemberg-Weg|Mitte|10179 --- #: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein --- #: XXX auch in der DTAG-Straßenliste vom 2014-06-04 --- #: osm_watch: way id="256968789" version="9" --- #: last_checked: 2014-07-07 (zur Zeit nur eine Baustraße) --- #: check_frequency: 60d --- Wilhelmine-Gemberg-Weg: genaue Lage, Qualität?	?::inwork 11715,11522 11762,11665 11829,11727
 # 
@@ -3492,18 +3477,11 @@ Heinz-Sielmann-Ring (Potsdam-Groß-Glienicke): Qualität? Bereits ausgeschildert?	
 #: check_frequency: 180d
 Georg-Sigismund-von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8666,8449 -8214,8387
 # 
-#: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf vvv
-#: XXX wahrscheinlich wird zumindest in der Speicherstadt kein direkter Weg am Wasser sein
-#: by: http://www.grothgruppe.de/site/179/Speicherstadt_Potsdam.html (-> Galerie)
-#: by: http://berlinerbaustellen.blogspot.de/2014/01/0249-gastbaustelle-potsdam-lange-brucke.html (Unterführung)
-#: last_checked: 2014-05-11 vvv
-#: check_frequency: 120d vvv
-Unterführung Lange Brücke: neuer Weg entsteht hier, Qualität?	?::inwork -12363,-1742 -12377,-1743 -12663,-2039 -12759,-2066
-#: osm_watch: way id="287695106" version="1" brb
-Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12759,-2066 -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
-#: last_checked ^^^
-#: check_frequency ^^^
-#: by ^^^
+#: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
+#: osm_watch: way id="199807300" version="1" brb
+#: last_checked: 2014-05-11
+#: next_check: 2015-01-01
+Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
 Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9766,5437 -9677,5430 -9478,5549 -9372,5532
@@ -3726,3 +3704,33 @@ Reinickendorfer Route 3: genauer Streckenverlauf? Qualität?	? 2566,23584 2272,23
 Straßen in Döberitz: genaue Straßennamen, Qualität?	? -11635,13818 -11709,13476 -12032,13708 -12089,13741 -12596,13763 -12956,13814 -13017,13815 -13375,13807 -13371,13691 -13400,13622
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2014 (Ausbau zum Rad- und Gehweg)
 Fichtenstr.: existiert ein Verbindungsweg zur Heerstr.? Qualität? Nachts beleuchtet? Existiert eine Ausschilderung?	? 22212,9508 22237,9632 22274,9622
+# 
+#: last_checked: 2013-12-22 vvv
+#: next_check: 2014-09-16 vvv
+#: XXX neue Straßen in Potsdam: Genauer Verlauf? Laut osm bereits realisiert vvv
+#: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
+#: osm_watch: way id="174465897" version="3" brb
+An der Kornmühle (Potsdam): Qualität der Straße?	? -12712,-2172 -12728,-2227
+#: osm_watch: way id="174465898" version="4" brb
+Am Speicher (Potsdam): Qualität der Straße?	? -12783,-2269 -12771,-2220 -12754,-2154
+#: by: ^^^
+#: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
+#: osm_watch: way id="174465895" version="2" brb
+Altstadtblick (Potsdam): Qualität der Straße?	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
+#: XXX ^^^
+#: next_check ^^^
+#: last_checked ^^^
+# 
+#: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf vvv
+#: XXX wahrscheinlich wird zumindest in der Speicherstadt kein direkter Weg am Wasser sein; laut osm schon realisiert vvv
+#: by: http://www.grothgruppe.de/site/179/Speicherstadt_Potsdam.html (-> Galerie)
+#: by: http://berlinerbaustellen.blogspot.de/2014/01/0249-gastbaustelle-potsdam-lange-brucke.html (Unterführung)
+#: last_checked: 2014-05-11 vvv
+#: next_check: 2014-09-16 vvv
+Unterführung Lange Brücke: existiert der neue Weg schon, wie ist die Qualität?	? -12363,-1742 -12377,-1743 -12625,-1956 -12721,-2082
+Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg schon, wie ist die Qualität?	? -12721,-2082 -12754,-2154
+#: XXX ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: by ^^^
+#
