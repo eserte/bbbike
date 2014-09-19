@@ -22673,7 +22673,7 @@ userdel	q3::inwork; 13555,15596 13459,15653
 EOF
      },
      { from  => 1396047600, # 2014-03-29 00:00
-       until => $isodate2epoch->("2014-10-02 16:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
+       until => 1411161933, # $isodate2epoch->("2014-10-02 16:00:00"), # XXX was 1408139999, # 2014-08-15 23:59
        text  => 'Mühlenstr. (Pankow) Richtung Breite Straße zwischen Maximilianstr. und Florastr. Baustelle, Fahrtrichtung gesperrt, bis Anfang Oktober 2014',
        type  => 'handicap',
        source_id => 'IM_022477',
@@ -23375,6 +23375,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
        data  => <<EOF,
 userdel	q4::inwork 13645,15609 13739,15643 13939,15723
+EOF
+     },
+     { from  => 1411250400, # 2014-09-21 00:00
+       until => 1411855199, # 2014-09-27 23:59
+       text  => 'Quellweg (zwischen Goebelstraße und Schuckertdamm) und Schuckertdamm (zwischen Quellweg und Natalissteig): Bauarbeiten, Sperrung der Fahrbahn, vom 22. bis 27. September 2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20140919.1320.399338.html',
+       data  => <<EOF,
+userdel	q4::inwork 1200,14943 1343,14972 1334,14862 1282,14710
 EOF
      },
     );
