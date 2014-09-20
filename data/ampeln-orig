@@ -1827,6 +1827,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: XXX_prog: eigentlich zwei Ampeln (die Kreuzung mit der Mühlenstr. ist etwas versetzt), aber wahrscheinlich gleich geschaltet
 	X 11940,22587
 	X 2394,9714
+#: XXX_prog muss beim Überqueren der Kurfürstenstr. benutzt werden
+#: note: Anforderungsampel
 	F 6277,10924
 #: by: Olaf Schulz vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 	F 11310,14953
@@ -2508,7 +2510,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2014-09-02
+#: last_checked: 2014-09-20
 #: check_frequency: 90d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
@@ -2523,7 +2525,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (südlicher Bereich) vvv
-#: last_checked: 2014-09-02 vvv
+#: last_checked: 2014-09-20 vvv
 #: next_check: 2014-12-31 vvv
 	F::inwork 9063,12051
 	F::inwork 9270,12086
@@ -2534,7 +2536,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
-#: last_checked: 2014-08-22
+#: last_checked: 2014-09-20
+#: check_frequency: 60d
 	F::inwork 9812,12145
 # 
 #: next_check_id: INVALIDEN-2014

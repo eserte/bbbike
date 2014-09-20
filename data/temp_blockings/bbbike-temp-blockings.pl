@@ -23386,4 +23386,15 @@ EOF
 userdel	q4::inwork 1200,14943 1343,14972 1334,14862 1282,14710
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schlüterstr.: zwischen Kurfürstendamm und Lietzenburger Str. Bauarbeiten, Fahrbahn teilweise gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2014-09-20
+#: check_frequency: 90d
+userdel	q3::inwork 4503,10497 4485,10307
+EOF
+     },
     );

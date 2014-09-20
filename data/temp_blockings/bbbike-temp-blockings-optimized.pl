@@ -2884,6 +2884,18 @@ userdel	q4::inwork; 31967,2966 31999,2812 32031,2723 32115,2581 32162,2542
          'data' => 'userdel	q4::inwork 1200,14943 1343,14972 1334,14862 1282,14710
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Schlüterstr.: zwischen Kurfürstendamm und Lietzenburger Str. Bauarbeiten, Fahrbahn teilweise gesperrt',
+         'from' => undef,
+         'id' => 2630,
+         'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2014-09-20
+#: check_frequency: 90d
+userdel	q3::inwork 4503,10497 4485,10307
+',
+         'type' => 'handicap'
        }
      
 );

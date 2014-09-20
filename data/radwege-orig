@@ -991,7 +991,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494 10063,12438
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 #: XXX siehe auch 3nocross in gesperrt-orig
 #: source_id: INKO_113041
-#: last_checked: 2014-09-02
+#: last_checked: 2014-09-20
 #: check_frequency: 90d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1001,7 +1001,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX später beide Richtungen wieder herstellen
 #: source_id: IM_018997
 #: osm_watch: way id="24913297" version="34"
-#: last_checked: 2014-05-14
+#: last_checked: 2014-09-20
 #: next_check: 2014-12-31
 Busspur ist immer gültig	RW5; 9141,12320 9358,12351 9475,12365
 # 
@@ -1364,7 +1364,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2014-08-22
+#: last_checked: 2014-09-20
 #: check_frequency: 90d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -4403,7 +4403,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4;RW3 14096,12827 14066,12836
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: last_checked: 2014-08-07
+#: last_checked: 2014-09-20
 #: next_check: 2016-05-01
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
