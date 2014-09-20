@@ -986,9 +986,12 @@ sub set_scope {
 	}
     }
     my $dimfile = $use_tiles ? "$moduledir/images/${imgname}_tiles/$imgname.dim" : "$moduledir/images/$imgname.dim";
+    if (!-e $dimfile) {
+	die "$dimfile does not exist. Maybe you have to run 'make update' in the babybike directory?\n";
+    }
     warn "Get dimensions from $dimfile...\n" if $DEBUG;
     $draw = do $dimfile;
-    if (!ref $draw eq 'HASH') {
+    if (!UNIVERSAL::isa($draw, 'HASH')) {
 	die "Can't get dimensions from $dimfile";
     }
     $transpose      = eval $draw->{TransposeCode};     die $@ if $@;
