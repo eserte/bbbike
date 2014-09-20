@@ -57,7 +57,9 @@ my $config = {
         qw/bing_birdview bing_hybrid bing_map cycle hike_bike hybrid mapnik mapnik_bw mapnik_de
           public_transport roadmap satellite tah terrain/
     ],
-    'appid' => [qw/android-0 vmz ios1 android1 bbbikede other useragent/],
+    'appid' => [
+        qw/android-0 vmz ios1 ios2 android1 android2 wp0 last0 bbbikede guest other useragent/
+    ],
 };
 
 sub usage {
