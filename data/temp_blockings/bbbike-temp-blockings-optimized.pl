@@ -1430,25 +1430,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
-',
-         'periodic' => 1,
-         'until' => 1411322400,
-         'from' => 1411117200,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (20. und 21. September 2014) ',
-         'type' => 'gesperrt',
-         'id' => 1910
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2309,7 +2291,8 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-09-17 vvv
+#: last_checked: 2014-09-21 vvv
+#: next_check: 2014-10-22 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
@@ -2317,6 +2300,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
 userdel	q4::inwork 15261,10738 15272,10790
 # REMOVED --- userdel	q4::inwork 15272,10790 15279,10862
 # REMOVED --- userdel	q3::inwork 15279,10862 15144,10905
+#: next_check ^^^
 #: last_checked ^^^
 ',
          'type' => 'handicap'
@@ -2894,6 +2878,28 @@ userdel	q4::inwork; 31967,2966 31999,2812 32031,2723 32115,2581 32162,2542
 #: last_checked: 2014-09-20
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1451602800,
+         'text' => 'Unterführung Rummelsburg: südlicher Zugang gesperrt, 17.09.2014 bis ca. 08.10.2014, weitere Sperrungen bis 2016 möglich',
+         'from' => 1411312807,
+         'id' => 2631,
+         'data' => '#: XXX_prog: confirmed bis zum 8.10., danach unconfirmed
+#: last_checked: 2014-09-21
+#: next_check: 2014-10-08
+userdel	2::inwork 15419,10706 15379,10651
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_022945',
+         'until' => 1414796399,
+         'text' => 'Fennstr.: zwischen Schnellerstr. und Michael-Brückner-Str. Baustelle, Fahrbahn Richtung Michael-Brückner-Str. gesperrt, ab 22.09.2014 bis Ende Oktober 2014',
+         'from' => 1411279200,
+         'id' => 2632,
+         'data' => 'userdel	q4::inwork; 18245,5551 18080,5376
 ',
          'type' => 'handicap'
        }

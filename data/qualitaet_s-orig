@@ -191,9 +191,9 @@ Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12851,9309 12844,9351
 Treptower Str.: Asphalt	Q0 13860,8599 14015,8798 14151,8967
 Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
 Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
-Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15655,11697 15634,11656 15572,11533 15515,11416 15498,11380
+Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15660,11695 15639,11653 15572,11533 15515,11416 15498,11380
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
-(Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0- 15634,11656 15482,11729 15413,11690
+(Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0- 15639,11653 15482,11729 15413,11690
 # REMOVED (nach den Bauarbeiten Richtung Süden besser) --- #: XXX Bauarbeiten in Gange, danach vielleicht Q0? --- #: last_checked: 2013-07-14 --- #: next_check: 2013-08-05
 Buchberger Str.: teilweise kleinere Schäden an den Betonplatten	Q1+; 16242,11533 16368,11912
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
@@ -2459,7 +2459,8 @@ Am Tierpark [Nebenfahrbahn]: Asphalt	Q1+ 18442,10467 18397,10608
 Heinrich-Dathe-Platz: große Gehwegplatten	Q1 18512,10337 18484,10411 18471,10430
 Heinrich-Dathe-Platz: Asphalt	Q1 18471,10430 18442,10467
 Heinrich-Dathe-Platz: große Gehwegplatten	Q1 18484,10411 18394,10348
-Dathepromenade: große Gehwegplatten	Q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18048,10169
+Dathepromenade: große Gehwegplatten	Q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18058,10166
+(Sewanstr. - Dathepromenade): Verbundsteinpflaster	Q1 18025,10152 18058,10166
 (Erieseering - Dathepromenade): große Gehwegplatten	Q1 18319,10249 18314,10260
 #: XXX_osm: in osm ist fälschlicherweise surface=cobblestone eingetragen
 Rhododendronweg: Verbundsteinpflaster	Q1+ 16146,12881 16148,12772 16200,12771 16197,12880
@@ -2518,7 +2519,7 @@ Ludwig-Richter-Str.: Asphalt	Q0 15002,8651 14940,8583
 Am Oberhafen: Asphalt	Q0 13712,6656 13688,6739
 Salzmannstr.: Asphalt	Q0 16847,10092 16855,10127
 #: XXX wird hier auch neu asphaltiert?
-#: last_checked: 2014-08-08 (zurzeit Bauarbeiten)
+#: last_checked: 2014-09-21 (zurzeit Bauarbeiten)
 #: next_check: 2015-02-28 (Bauarbeiten der Wasserbetriebe bis Februar 2015)
 Salzmannstr.: mäßiger Beton	Q2+ 16855,10127 16887,10271 16941,10487
 #: corrected_by: Heike (helabe...) (Verbundsteinpflaster -> Asphalt) (confirmed by srt)
@@ -2793,6 +2794,9 @@ Wildensteiner Str.: gutes Kopfsteinpflaster	Q1- 18416,8163 18365,8094 18333,8059
 Am Carlsgarten: Asphalt	Q0 18709,8423 18799,8413 18875,8365 18914,8341 18956,8323 19119,8209 19208,8142 19334,8046 19456,7956
 Am Carlsgarten: Beton	Q0- 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999
+#: XXX Bauarbeiten am angrenzenden Grundstück, evtl. danach bessere Qualität?
+#: last_checked: 2014-09-21
+#: check_frequency: 180d
 (Am Carlsgarten - Waldowallee): mäßiger Asphalt, teilweise unbefestigter Weg	Q2+ 19509,7999 19558,8064
 Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19133,8038
 Krähenwinkel: Verbundsteinpflaster	Q1+ 19195,8125 19105,8188 19044,8103
@@ -7307,8 +7311,7 @@ Hüttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 
 Hermann-Stöhr-Platz: wassergebundene Decke, holprig	Q2+ 12453,11790 12409,11902
 (Zur Alten Flussbadeanstalt - Bolleufer): Asphalt	Q0 16347,9594 16268,9670
 (Zur Alten Flussbadeanstalt - Bolleufer): Beton, teilweise Verbundsteinpflaster	Q0- 16268,9670 16182,9591 16120,9653 16123,9692
-(Normannenstr. - Jobcenter Lichtenberg): Verbundsteinpflaster	Q1 16056,12317 16068,12376
-(Normannenstr. - Jobcenter Lichtenberg): Asphalt	Q1 16068,12376 16079,12432 16089,12522
+(Normannenstr. - Jobcenter Lichtenberg): Verbundsteinpflaster, Asphalt	Q1 16056,12317 16068,12376 16079,12432 16089,12522
 (Normannenstr. - Jobcenter Lichtenberg): Beton	Q1 16089,12522 16122,12524 16132,12621
 Kaskelstr.: Asphalt	Q0 15245,11178 15090,11237 15058,11250
 (Zobtener Str. - Fischerstr.): unbefestigter Weg, etwas Schotter	Q2+ 16353,10207 16404,10286
@@ -8362,7 +8365,7 @@ Drebkauer Str.: Beton	Q0 6317,20751 6117,20738
 (Weg in der Schönholzer Heide): Asphalt	Q0 8304,19475 8237,19501 8193,19555 8117,19605 8042,19629 7988,19680 7968,19704 7871,19698
 (Schönholzer Heide - Wilhelmsruher See): Asphalt	Q0 7968,19704 7974,19739
 (Oskar-Ziethen-Krankenhaus): Asphalt	Q0 16541,12071 16556,12180
-John-Sieg-Str.: Beton	Q0- 15434,11846 15504,11809 15532,11753 15655,11697
+John-Sieg-Str.: Beton	Q0- 15434,11846 15504,11809 15532,11753 15660,11695
 (am Kaiser's): Verbundsteinpflaster	Q1+ 15714,11941 15710,11857
 Frankfurter Allee [Wohngebiet]: Asphalt	Q0 15714,11941 15717,12010 15717,12015
 Frankfurter Allee [Wohngebiet]: Beton	Q0- 15335,11943 15400,11976 15504,11967 15597,11957 15714,11941
@@ -8736,7 +8739,9 @@ Rhinstr. [Nebenstraße]: Beton	Q1+ 18258,11827 18340,11830 18381,11857 18417,1185
 #: note: interpoliert
 Am Kleinen Platz: Asphalt	Q0 -7292,14811 -7248,14826
 Jean-Monnet-Str.: Verbundsteinpflaster	Q0- 7995,13537 8048,13578
-Heidenelkenweg: Verbundsteinpflaster	Q0- 16112,12622 16111,12685 16073,12685 16071,12623
+Heidenelkenweg: Verbundsteinpflaster	Q0- 16112,12622 16111,12685 16095,12685 16073,12685 16071,12623
+Heidenelkenweg: Verbundsteinpflaster	Q0- 16095,12685 16098,12743
+Freesienweg: Verbundsteinpflaster	Q0- 16000,12625 15997,12743
 #: next_check_id: RITTER-2014
 #: XXX nach den Bauarbeiten wird sich Qualität ändern
 #: XXX siehe auch Eintrag in handicap_s-orig
@@ -9320,7 +9325,8 @@ Ritterlandweg [Wohngebiet]: schlechtes Kopfsteinpflaster	Q3 8315,17079 8346,1714
 Ritterlandweg [Wohngebiet]: Verbundsteinpflaster	Q1 8346,17148 8363,17192
 Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780
 #: XXX Qualität nach den Bauarbeiten?
-#: last_checked: 2014-07-06
+#: last_checked: 2014-09-21
+#: check_frequency: 21d
 Alfred-Siggel-Weg: unbefestigte Straße, Bauarbeiten	Q3+ 19550,7780 19500,7719
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1- 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7607,5944
@@ -9539,7 +9545,7 @@ Volkspark Friedrichshain: wassergebundene Decke	Q1 12420,13370 12483,13418
 Volkspark Friedrichshain: wassergebundene Decke	Q1 12445,13320 12405,13300 12404,13266 12369,13209
 Volkspark Friedrichshain: kleinteiliges Kopfsteinpflaster	Q1- 12445,13320 12420,13370
 Volkspark Friedrichshain: Asphalt	Q0 12483,13418 12450,13542 12344,13627 12372,13755
-Viechtacher Str.: Asphalt	Q0 19657,9666 19732,9678 19801,9680 19857,9682 19893,9683
+Viechtacher Str.: Asphalt	Q0 19657,9666 19727,9672 19801,9680
 Gensinger Str. [Wohngebiet]: Asphalt	Q0- 18927,12135 18913,11907 18910,11838
 Marzahner Chaussee [Wohngebiet]: Asphalt	Q0 18417,11854 18500,11847 18580,11874
 (Marzahner Chaussee - Gensinger Str.): Asphalt	Q0- 18580,11874 18698,11914 18913,11907
@@ -9668,6 +9674,11 @@ Helen-Keller-Weg: Asphalt	Q0 -3243,17763 -3270,17728 -3276,17669 -3325,17629 -33
 #: add_fragezeichen: liegt hier tatsächlich Verbundsteinpflaster?
 (Beetzseeweg - Zeuthener-See-Weg): Verbundsteinpflaster	Q1 -1689,16584 -1685,16583 -1647,16573
 (Röddelinseeweg - Kindelseeweg): Verbundsteinpflaster	Q1 -1705,16515 -1699,16513 -1661,16506
+Regener Str.: Asphalt	Q0 19646,9490 19722,9483 19790,9478
+#: note: mit Aufpflasterungen an den beiden Einfahrten
+Eisensteiner Str.: Asphalt	Q0 19727,9672 19722,9483
+#: note: mit Aufpflasterungen an den beiden Einfahrten
+Rinchnacher Weg: Asphalt	Q0 19801,9680 19790,9478
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -25133,7 +25144,7 @@ Stuckstr.: Asphalt	Q0 14439,8987 14525,8894 14619,8794
 #: confirmed_by: srt
 Gotlindestr.: Asphalt	Q0 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566
 #: confirmed_by: srt
-Gotlindestr.: Beton mit Ausbesserungen	Q1 15947,12626 16071,12623 16112,12622 16132,12621 16284,12616 16409,12612 16576,12612 16720,12614 16859,12613
+Gotlindestr.: Beton mit Ausbesserungen	Q1 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616 16409,12612 16576,12612 16720,12614 16859,12613
 #: confirmed_by: srt
 Dietlindestr.: Asphalt	Q0 17056,12304 17087,12501
 #: corrected_by: srt (Q0 -> )

@@ -21199,7 +21199,8 @@ EOF
        source_id => 'IM_022268',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-09-17 vvv
+#: last_checked: 2014-09-21 vvv
+#: next_check: 2014-10-22 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
@@ -21207,6 +21208,7 @@ EOF
 userdel	q4::inwork 15261,10738 15272,10790
 # REMOVED --- userdel	q4::inwork 15272,10790 15279,10862
 # REMOVED --- userdel	q3::inwork 15279,10862 15144,10905
+#: next_check ^^^
 #: last_checked ^^^
 EOF
      },
@@ -23395,6 +23397,26 @@ EOF
 #: last_checked: 2014-09-20
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
+EOF
+     },
+     { from  => 1411312807, # 2014-09-21 17:20
+       until => $isodate2epoch->("2016-01-01 00:00:00"), # 1412805600, # 2014-10-09 00:00
+       text  => 'Unterführung Rummelsburg: südlicher Zugang gesperrt, 17.09.2014 bis ca. 08.10.2014, weitere Sperrungen bis 2016 möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX_prog: confirmed bis zum 8.10., danach unconfirmed
+#: last_checked: 2014-09-21
+#: next_check: 2014-10-08
+userdel	2::inwork 15419,10706 15379,10651
+EOF
+     },
+     { from  => 1411279200, # 2014-09-21 08:00
+       until => 1414796399, # 2014-10-31 23:59
+       text  => 'Fennstr.: zwischen Schnellerstr. und Michael-Brückner-Str. Baustelle, Fahrbahn Richtung Michael-Brückner-Str. gesperrt, ab 22.09.2014 bis Ende Oktober 2014',
+       type  => 'handicap',
+       source_id => 'IM_022945',
+       data  => <<EOF,
+userdel	q4::inwork; 18245,5551 18080,5376
 EOF
      },
     );

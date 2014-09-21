@@ -175,7 +175,7 @@ Wuhletalstr.: werden hier die Radspuren fortgef¸hrt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaﬂnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2014-08-29
+#: last_checked: 2014-09-21
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -774,30 +774,31 @@ B¸rknerstr.: wird hier eine Fahrradstraﬂe eingerichtet?	?::projected 11673,9720 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2014
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5889 (Festsetzung)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2014
-#: last_checked: 2014-06-29 vvv
+#: last_checked: 2014-09-21 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
+#: osm_watch: way id="290255259" version="1"
 Planstraﬂe 1: Qualit‰t? Name wahrscheinlich Kirchdorfer Str.?	?::projected 19842,9895 19853,9774 19857,9682
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
+#: osm_watch: way id="193373934" version="2"
 Planstraﬂe 2 (Fortsetzung Rˆmerweg): Name wahrscheinlich Frauenauer Str.? Qualit‰t etc?	?::projected 19663,9757 19853,9774
-# REMOVED (in strassen) --- #: XXX PLZ=10318 --- Planstraﬂe 3 -> Viechtacher Str.: Qualit‰t etc?	?::projected 19657,9666 19732,9678 19801,9680 19857,9682 19893,9683
-Planstraﬂe 4 -> Eisensteiner Str.: Qualit‰t der Straﬂe?	?::inwork 19732,9678 19727,9484
-#: XXX Rinchnacher Weg|Karlshorst|10318
-Planstraﬂe 5 -> Rinchnacher Weg: Qualit‰t etc?	?::projected 19801,9680 19797,9480
+# REMOVED (in strassen) --- #: XXX PLZ=10318 --- Planstraﬂe 3 -> Viechtacher Str.: Qualit‰t etc?	?::projected 19657,9666 19727,9672 19801,9680 19857,9682 19893,9683
+# REMOVED --- Planstraﬂe 4 -> Eisensteiner Str.: Qualit‰t der Straﬂe?	?::inwork 19727,9672 19722,9483
+# REMOVED --- #: XXX Rinchnacher Weg|Karlshorst|10318 --- Planstraﬂe 5 -> Rinchnacher Weg: Qualit‰t etc?	?::projected 19801,9680 19790,9478
+#: osm_watch: way id="193373957" version="3"
 #: XXX Teisnacher Str.|Karlshorst|10318
 Planstraﬂe 6 -> Teisnacher Str.: Qualit‰t etc?	?::projected 19857,9682 19849,9477
-#: XXX PLZ=10318
-Planstraﬂe 7 -> Regener Str.: Qualit‰t etc?	?::projected 19646,9490 19727,9484 19797,9480 19849,9477 19890,9476
+# REMOVED (teilweise realisiert) --- #: XXX PLZ=10318 --- Planstraﬂe 7 -> Regener Str.: Qualit‰t etc?	?::projected 19646,9490 19722,9483 19790,9478 19849,9477 19890,9476
 #: XXX Planstraﬂe 8+10 -> Regener Str.
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/03/246-2013-2Anlage2UebersichtsplanErschliessung.pdf vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf vvv
-#: osm_watch: way id="287119368" version="6"
-#: XXX laut osm surface=asphalt und access=private
+#: osm_watch: way id="290220612" version="1"
 Planstraﬂe 8: Name vielleicht Regener Str.? Qualit‰t?	?::projected 19869,9151 19885,9400 19890,9476
 #: osm_watch: way id="193373966" version="3"
 Straﬂe in Bau: genaue Lage, Name (hier auch die Regener Str.?), Qualit‰t?	?::inwork 19626,9166 19869,9151
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
+#: osm_watch: way id="287122102" version="2"
 Planstraﬂe 9: Name wahrscheinlich Patersdorfer Str.? Qualit‰t etc?	?::projected 19700,9040 19759,9041 19869,9151
 Planstraﬂe (evtl. 10): Name vielleicht auch Regener Str.? Qualit‰t?	?::projected 19885,9400 19795,9407
 #: by: ^^^
@@ -819,7 +820,7 @@ Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verl‰ngert?	? 8632,1191
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 kˆnnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2014-08-08
+#: last_checked: 2014-09-21
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: f¸r 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
@@ -1157,7 +1158,7 @@ Nennhauser Damm/Finkenkruger Weg: neue Vorfahrtsregelung?	?::projected -7484,137
 Stubenrauchstr.: gibt es hier neue Fahrbahnmarkierungen z.B. Radspuren?	? 16182,2200 16135,2135
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014
-#: last_checked: 2014-08-08
+#: last_checked: 2014-09-21
 Sewanstr.: dieser Abschnitt wird zur L¸ckstr.	? 16647,10632 16699,10611
 # 
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf
@@ -1793,14 +1794,7 @@ Aalsteig (Potsdam): Qualit‰t?	? -19584,4326
 #: osm_watch: way id="226916964" version="1" brb
 Im Nikolaiquartier: neue Straﬂe, wo befindet sie sich? Qualit‰t?	? -12998,-1257 -13095,-1288
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern)
-#: XXX Freesienweg (beide Amtsbl‰tter, DPAG-Mitteilungsblatt 12/2013) oder Fresienweg (BA)? Wikipedia meint "Freesien"
-#: XXX fehlt bei Berlin.coords.data, PLZ=10365
-#: last_checked: 2014-06-19 (Bauarbeiten in Gange, keine Straﬂe zu sehen)
-#: check_frequency: 90d
-Freesienweg: geplante Straﬂe, wo wird sie genau liegen? Qualit‰t?	?::projected 16002,12640 16004,12750
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern) --- #: XXX Freesienweg (beide Amtsbl‰tter, DPAG-Mitteilungsblatt 12/2013) oder Fresienweg (BA)? Wikipedia meint "Freesien" --- #: XXX fehlt bei Berlin.coords.data, PLZ=10365 --- #: last_checked: 2014-06-19 (Bauarbeiten in Gange, keine Straﬂe zu sehen) --- #: check_frequency: 90d --- Freesienweg: geplante Straﬂe, wo wird sie genau liegen? Qualit‰t?	?::projected 16000,12625 15997,12743
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5489
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
