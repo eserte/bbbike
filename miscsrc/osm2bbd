@@ -1392,7 +1392,7 @@ for my $osm_file (@osm_files) {
 		if ($bicycle_road && $bicycle_road eq 'yes') {
 		    push @or, ["radwege_exact", "RW7;RW7"];
 		} else {
-		    my $cycleway       = $tag{'cycleway'} || '';
+		    my $cycleway       = $tag{'cycleway'} || $tag{'cycleway:both'} || '';
 		    my $cycleway_right = $tag{'cycleway:right'};
 		    my $cycleway_left  = $tag{'cycleway:left'};
 		    if ($cycleway || $cycleway_right || $cycleway_left) {
@@ -1400,6 +1400,7 @@ for my $osm_file (@osm_files) {
 			# left -> 1
 			my @cat = ('', '');
 			my @cycleway;
+			my @cycleway_bicycle; # for cycleway:$side:bicycle tag
 			if ($cycleway && !$cycleway_right && !$cycleway_left) {
 			    # oneway handling for legacy stuff (without cycleway:{right,left})
 			    if ($oneway && $oneway eq 'yes' && !$no_oneway_for_cyclists) {
@@ -1410,6 +1411,8 @@ for my $osm_file (@osm_files) {
 			} else {
 			    $cycleway[0] = $cycleway_right || $cycleway;
 			    $cycleway[1] = $cycleway_left  || $cycleway;
+			    $cycleway_bicycle[0] = $tag{'cycleway:right:bicycle'};
+			    $cycleway_bicycle[1] = $tag{'cycleway:left:bicycle'};
 			}
 			for my $inx (0, 1) {
 			    my $cycleway = $cycleway[$inx];
@@ -1418,7 +1421,12 @@ for my $osm_file (@osm_files) {
 			    if      ($cycleway eq 'lane') {
 				$cat[$inx] = 'RW4';
 			    } elsif ($cycleway eq 'track') {
-				$cat[$inx] = 'RW1';
+				my $cycleway_bicycle = $cycleway_bicycle[$inx];
+				if ($cycleway_bicycle && $cycleway_bicycle eq 'designated') {
+				    $cat[$inx] = 'RW2';
+				} else { # z.B. 'yes'
+				    $cat[$inx] = 'RW1';
+				}
 			    } elsif ($cycleway eq 'opposite_track' ||
 				     $cycleway eq 'opposite_lane' # sollte in Berlin nicht vorkommen
 				    ) {
