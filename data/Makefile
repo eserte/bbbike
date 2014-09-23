@@ -1200,6 +1200,7 @@ temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-bl
 							strassen faehren landstrassen landstrassen2
 	-@$(WRITEABLE) $@
 	${PERL} $(MISCSRCDIR)/check_bbbike_temp_blockings \
+	    -tz Europe/Berlin \
 	    -action output_future_nonrecurring \
 	    -action dump_future_as_perl > $@~
 	mv $@~ $@

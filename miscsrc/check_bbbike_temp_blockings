@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: check_bbbike_temp_blockings,v 1.32 2008/03/04 20:39:08 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003, 2004, 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003, 2004, 2007, 2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +19,7 @@ use vars qw(@temp_blocking);
 use FindBin;
 use Data::Dumper qw(Dumper);
 use Getopt::Long;
-use POSIX qw(strftime);
+use POSIX qw(strftime tzset);
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
@@ -28,6 +27,7 @@ use Strassen::Core;
 
 use vars qw($temp_blockings_dir $temp_blockings_pl $temp_blockings_yml);
 
+my $tz = "Europe/Berlin";
 my $do_output_files;
 my $check_net = 1;
 my $v;
@@ -67,8 +67,14 @@ sub process {
 		    'action=s@' => \@action,
 		    "checks!" => \$do_checks,
 		    "datadir=s" => \$data_dir,
+		    "tz=s" => \$tz,
 		   )) {
 	die "usage";
+    }
+
+    if ($tz) {
+	$ENV{TZ} = $tz;
+	tzset;
     }
 
     if (!@action) {
