@@ -20886,21 +20886,21 @@ EOF
 userdel	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-25 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-09-27 00:00:00"), #
+     { from  => $isodate2epoch->("2014-09-23 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-09-26 00:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 25.9.2014',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 24.09.2014',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-09-30 06:00:00"),
+     { from  => $isodate2epoch->("2014-09-26 00:00:00"),
+       until => $isodate2epoch->("2014-09-29 18:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 30.09.2014',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 29.09.2014',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8573,12325 8540,12420
@@ -23175,8 +23175,8 @@ userdel	2::temp 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
 EOF
      },
      { from  => 1407650400, # 2014-08-10 08:00
-       until => $isodate2epoch->("2014-09-05 23:59:59"), # 1409695200, # 2014-09-03 00:00
-       text  => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 05.09.2014 ',
+       until => $isodate2epoch->("2014-10-03 23:59:59"), # 1409695200, # 2014-09-03 00:00
+       text  => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 03.10.2014 ',
        type  => 'gesperrt',
        source_id => 'LS/721-E/14/067',
        data  => <<EOF,
@@ -23430,6 +23430,22 @@ EOF
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140919.1335.399343.html',
        data  => <<EOF,
 userdel	2::inwork 8765,19288 8791,19249 8947,19166 9009,19045 9191,18785 9279,18724
+EOF
+     },
+     { from  => 1411499642, # 2014-09-23 21:14
+       until => 1419030000, # 2014-12-20 00:00
+       text  => 'Genter Straße: zwischen Seestraße und Brüsseler Straße in Richtung Seestraße gesperrt, bis 19.12.2014 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 6802,15790 6661,15921
+EOF
+     },
+     { from  => 1411499720, # 2014-09-23 21:15
+       until => 1414796400, # 2014-11-01 00:00
+       text  => 'Sächsische Straße: in Höhe Darmstädter Straße Fahrbahn gesperrt, bis 31.10.2014 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q3::inwork 4638,10162 4623,10066 4609,9949
 EOF
      },
     );

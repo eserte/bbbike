@@ -2893,8 +2893,8 @@ userdel	2::night 14838,11410 14792,11391
          'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
 ',
          'periodic' => 1,
-         'until' => 1411768800,
-         'from' => 1411617600,
+         'until' => 1411682400,
+         'from' => 1411444800,
          'recurrences' => [
                             [
                               'yearly',
@@ -2904,7 +2904,7 @@ userdel	2::night 14838,11410 14792,11391
                               9
                             ]
                           ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 25.9.2014',
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 24.09.2014',
          'type' => 'gesperrt',
          'id' => 2387
        },
@@ -2928,8 +2928,8 @@ userdel	3 7945,12592 8122,12603 8120,12756
 userdel	3 8120,12756 8122,12603 7945,12592
 ',
          'periodic' => 1,
-         'until' => 1412049600,
-         'from' => 1411768800,
+         'until' => 1412006400,
+         'from' => 1411682400,
          'recurrences' => [
                             [
                               'yearly',
@@ -2939,7 +2939,7 @@ userdel	3 8120,12756 8122,12603 7945,12592
                               9
                             ]
                           ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 30.09.2014',
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 29.09.2014',
          'type' => 'gesperrt',
          'id' => 2388
        },
@@ -3538,7 +3538,16 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'LS/721-E/14/067',
+         'until' => 1412373599,
+         'text' => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 03.10.2014 ',
+         'from' => 1407650400,
+         'id' => 2607,
+         'data' => 'userdel	2::inwork 33953,23796 34266,22939
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20140813.1350.398688.html',
@@ -3681,6 +3690,24 @@ userdel	2::inwork 15419,10706 15379,10651
          'data' => 'userdel	2::inwork 8765,19288 8791,19249 8947,19166 9009,19045 9191,18785 9279,18724
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1419030000,
+         'text' => 'Genter Straße: zwischen Seestraße und Brüsseler Straße in Richtung Seestraße gesperrt, bis 19.12.2014 ',
+         'from' => 1411499642,
+         'id' => 2634,
+         'data' => 'userdel	q4::inwork; 6802,15790 6661,15921
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1414796400,
+         'text' => 'Sächsische Straße: in Höhe Darmstädter Straße Fahrbahn gesperrt, bis 31.10.2014 ',
+         'from' => 1411499720,
+         'id' => 2635,
+         'data' => 'userdel	q3::inwork 4638,10162 4623,10066 4609,9949
+',
+         'type' => 'handicap'
        }
      
 );
