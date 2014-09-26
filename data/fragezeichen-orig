@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2014-09-13
+#: last_checked: 2014-09-26
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -748,19 +748,19 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: last_checked: 2013-09-27 (Markierungsarbeiten haben begonnen) --- #: next_check: 2013-10-04 --- Werbellinstr.: Radstreifen werden erstellt	?::projected; 12698,8175 12650,8164 12541,8140 12426,8115
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
-#: last_checked: 2014-09-11
+#: last_checked: 2014-09-26
 #: check_frequency: 60d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12871,9356 12888,9338
 #: next_check_id: FRIEDEL-2014
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
-#: last_checked: 2014-08-26
+#: last_checked: 2014-09-26
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2014-09-16
+#: last_checked: 2014-09-26
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -900,7 +900,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: osm_watch: way id="155605306" version="1"
 #: osm_watch: way id="155605307" version="4"
 #: XXX laut osm ist der westliche Abschnitt bereits asphaltiert
-#: last_checked: 2014-09-16 (Bauarbeiten am Herrfurthplatz)
+#: last_checked: 2014-09-26 (Bauarbeiten am Herrfurthplatz)
 #: check_frequency: 14d
 # REMOVED (realisiert) --- Herrfurthstr.: Asphaltierungsarbeiten	?::inwork 11472,7899 11573,7924 11647,7940
 Herrfurthstr.: eventuell wird hier asphaltiert, und vielleicht wird die Einbahnstraßenregelung aufgehoben?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11833,7980 11979,8014
@@ -1144,8 +1144,8 @@ Suermondtstr./neue Wohnstraße: kann man die Suermondtstr. an dieser Stelle überq
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.153649.php
 #: XXX falls es soweit ist -> gesperrt-orig
-#: last_checked: 2014-09-11
-#: next_check: 2014-09-20 (Baubeginn September 2014, Bauende: voraussichtlich Mai 2015)
+#: last_checked: 2014-09-26
+#: next_check: 2014-10-10 (Baubeginn September 2014, Bauende: voraussichtlich Mai 2015)
 Lohmühlenplatz: Umgestaltung des Platzes, teilweise werden die Wege gesperrt	?::projected 12900,9465 12897,9365
 # 
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7315

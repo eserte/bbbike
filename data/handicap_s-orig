@@ -62,7 +62,7 @@ Gipsstr.: Bauarbeiten an der Rosenthaler Str., einige Meter Gehweg benutzen	q3::
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX nach den Bauarbeiten bleiben wohl "einige Fußgänger" übrig, dann nur mit q1
-#: last_checked: 2014-09-22
+#: last_checked: 2014-09-26
 Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2014-09-19
@@ -139,23 +139,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # 
 # REMOVED (by osm) --- #: last_checked: 2013-06-10 (wosch) vvv --- #: osm_watch: way id="25185423" version="15"--- Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13986 --- #: last_checked ^^^
 # REMOVED (by wosch) --- #: osm_watch: way id="4597205" version="6" --- Tieckstr.: Einbahnstraße zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
-# 
-#: next_check_id: VOSSSTR-2014 vvv
-#: source_id: INKO_113363 vvv
-#: XXX laut INKO_113363 bis Ende September 2014 gesperrt vvv
-#: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html
-#: by: http://www.tagesspiegel.de/berlin/einkaufszentrum-am-leipziger-platz-in-berlin-mitte-mall-of-berlin-eroeffnet-am-25-september/10340428.html
-#: osm_watch: way id="197160274" version="1" vvv
-#: last_checked: 2014-09-13 vvv
-#: next_check: 2014-09-25 vvv
-Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676
-Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwork 8837,11676 9000,11727
-#: next_check ^^^
-#: last_checked ^^^
-#: osm_watch ^^^
-#: XXX ^^^
-#: source_id ^^^
-#: next_check_id ^^^
+# REMOVED (Fahrbahn wieder befahrbar) --- #: next_check_id: VOSSSTR-2014 vvv --- #: source_id: INKO_113363 vvv --- #: XXX laut INKO_113363 bis Ende September 2014 gesperrt vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html --- #: by: http://www.tagesspiegel.de/berlin/einkaufszentrum-am-leipziger-platz-in-berlin-mitte-mall-of-berlin-eroeffnet-am-25-september/10340428.html --- #: osm_watch: way id="197160274" version="1" vvv --- #: last_checked: 2014-09-13 vvv --- #: next_check: 2014-09-25 vvv --- Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676 --- Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwork 8837,11676 9000,11727
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
 #: last_checked: 2014-09-25
@@ -239,7 +223,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-09-25
+#: last_checked: 2014-09-26
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -254,6 +238,11 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED (Fahrbahn befahrbar, Autos parken schon) --- #: osm_watch: way id="131505633" version="4" --- #: last_checked: 2013-11-13 --- #: check_frequency: 30d --- Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9212,12969 9167,13046 9137,13032
 # REMOVED (aufgehoben) --- #: last_checked: 2013-12-11 --- Ziegelstr.: Baustelle, Einbahnstraße	q3::inwork; 9269,13060 9413,13071
 # REMOVED (reported by wosch) --- #: last_checked: 2013-04-11 --- Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
+# 
+#: last_checked: 2014-09-26 vvv
+Michaelkirchplatz: Bauarbeiten, Einbahnstraße	q4::inwork; 11349,11227 11415,11392
+Leuschnerdamm: Bauarbeiten am Engelbecken, Einbahnstraße	q4::inwork; 11458,11136 11421,11073
+#: last_checked ^^^
 # 
 ### Kreuzberg ###
 # 
@@ -296,9 +285,13 @@ Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden a
 #: next_check: 2014-10-15
 Delbrückstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,6717 13099,6712 13126,6687
 # 
+#: XXX danach asphaltiert?
+#: last_checked: 2014-09-26
+Herrfurthstr: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 11833,7980 11754,7964
+# 
 #: XXX laut Schild Bauarbeiten bis September 2014
-#: last_checked: 2014-09-16
-#: next_check: 2014-09-30
+#: last_checked: 2014-09-26 (fast fertig, nur die Absperrung steht noch)
+#: next_check: 2014-09-29
 Wildenbruchplatz: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13135,8766 13227,8692 13314,8624
 # 
 #: last_checked: 2014-08-26 vvv
@@ -320,7 +313,7 @@ Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 13150,7845 13103,7889
 #: XXX ^^^
 #: next_check_id ^^^
 # 
-#: last_checked: 2014-08-26
+#: last_checked: 2014-09-26
 #: check_frequency: 30d
 Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen über Gehweg	q3::inwork 12088,9775 12250,9691
 # 
@@ -328,7 +321,7 @@ Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen über Gehweg	q3:
 # 
 #: next_check_id: FRIEDEL-2014
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2014-08-26
+#: last_checked: 2014-09-26
 #: check_frequency: 60d
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
@@ -2141,6 +2134,7 @@ Iranische Str.: einige Fußgänger	q1 7843,16524 7717,16541 7707,16543 7456,16620
 (Nennhauser Damm - Am alten Gaswerk): einige Fußgänger	q1 -8043,13464 -8136,13542
 (Mauerweg Forst Spandau): sehr eng	q4+ -7032,19431 -7069,19436 -7397,19289
 (Glindowseestr. - Plauer-See-Str.): einige Fußgänger	q1 -1652,16721 -1666,16652 -1685,16583 -1699,16513 -1715,16444 -1734,16375
+(Mall of Berlin): Einkaufszentrum, Fußgänger	q4 8837,11676 8834,11536
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

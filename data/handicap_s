@@ -21,8 +21,6 @@ Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
-Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676
-Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwork 8837,11676 9000,11727
 Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umständlich	q4::inwork; 9151,13941 9125,13973
@@ -36,10 +34,13 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten, Ausweichen auf Gehweg	q3::in
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
+Michaelkirchplatz: Bauarbeiten, Einbahnstraße	q4::inwork; 11349,11227 11415,11392
+Leuschnerdamm: Bauarbeiten am Engelbecken, Einbahnstraße	q4::inwork; 11458,11136 11421,11073
 Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
 Delbrückstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,6717 13099,6712 13126,6687
+Herrfurthstr: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 11833,7980 11754,7964
 Wildenbruchplatz: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13135,8766 13227,8692 13314,8624
 Richardplatz: Bauarbeiten auf der südlichen Fahrbahn	q4::inwork 13188,7590 13303,7622 13400,7642
 Richardplatz/Richardstr.: Bauarbeiten, Umwege notwendig	q4::inwork 13288,7653 13303,7622
@@ -1430,6 +1431,7 @@ Iranische Str.: einige Fußgänger	q1 7843,16524 7717,16541 7707,16543 7456,16620
 (Nennhauser Damm - Am alten Gaswerk): einige Fußgänger	q1 -8043,13464 -8136,13542
 (Mauerweg Forst Spandau): sehr eng	q4 -7032,19431 -7069,19436 -7397,19289
 (Glindowseestr. - Plauer-See-Str.): einige Fußgänger	q1 -1652,16721 -1666,16652 -1685,16583 -1699,16513 -1715,16444 -1734,16375
+(Mall of Berlin): Einkaufszentrum, Fußgänger	q4 8837,11676 8834,11536
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
