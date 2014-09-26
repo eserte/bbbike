@@ -118,7 +118,7 @@ sub teaser_marathon {
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
     my $out_of_date = $today lt "20140925" || $today gt "20140929";
     if (!$out_of_date) {
-	my $marathon_map_url = 'http://www.bmw-berlin-marathon.com/event/streckensperrungen.html';
+	my $marathon_map_url = 'http://www.bmw-berlin-marathon.com/veranstaltungswoche/interaktive-karte.html';
 	<<EOF
 <div class="teaser" style="font-weight:bold">Am 28. und 29. September 2014 findet der Marathon statt.<br/>
 <a href="$marathon_map_url">Karte mit den Sperrungen</a></div>
