@@ -874,7 +874,7 @@ Olympische Str./Steubenplatz	1 610,12100 620,12144 668,12190
 Steubenplatz	1 689,12152 653,12109 610,12100
 Steubenplatz	1s:q4 668,12190 689,12152
 #: note: keine Gehwege, enge Straße
-Radieschenpfad	1 20582,18468 20635,18381
+Radieschenpfad	1 20582,18475 20635,18381
 #: note: keine Gehwege, enge Straße
 Lattichweg	1 20452,18273 20453,18321 20523,18329 20635,18381
 Enger Steig	1 -4310,11770 -4312,11720 -4302,11669
@@ -1423,6 +1423,7 @@ Siemensdamm: Mittelstreifen	3nocross 1133,14387 1057,14389 999,14390 937,14391 8
 Siemensdamm: Mittelstreifen	3nocross 1133,14387 1182,14384 1246,14384 1305,14384 1361,14384
 Siemensdamm: Mittelstreifen	3nocross 1361,14384 1420,14369 1479,14343
 Suermondtstr: Straßenbahntrasse	3nocross 16099,16339 16263,16288 16416,16236
+Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16476,16216 16520,16200
 #: by: Vicky (senchi):
 #: confirmed_by: srt
 Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
@@ -1478,7 +1479,7 @@ Riesaer Str.: Straßenbahntrasse	3nocross 24721,14293 24870,14244 24930,14225 249
 Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17681,7589 17839,7365 18010,7133
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,8005
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12123 18216,12239 18216,12262 18220,12450
-Rhinstr.: Straßenbahntrasse	3nocross 18181,14110 18184,14078 18187,14039 18206,13817
+Rhinstr.: Straßenbahntrasse	3nocross 18181,14110 18184,14078 18187,14039 18198,13816
 Rhinstr.: Straßenbahntrasse	3nocross 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19726,13524 19807,13529 19837,13531 19899,13534
 Bornhomer Str.: Straßenbahntrasse	3nocross 10778,16485 10699,16492 10620,16497
@@ -1965,7 +1966,8 @@ tragen (Treppe)	0:30 8445,12755
 #: note: wahrscheinlich ebenso 40-45 Stufen wie das Pendant auf der Gegenseite
 tragen (Treppe)	0:35 17026,11810
 #: by: peer.weyrauch, bestätigt durch die neue ADFC-Karte:
-tragen (Treppe S-Bhf. Raoul-Wallenberg-Str.)	0:30 20050,16292
+#: confirmed_by: srt
+tragen (Treppe S-Bhf. Raoul-Wallenberg-Str., 2 x 13 Stufen)	0:30 20050,16292
 #: by: Katharina Hoffmann: vvv
 #: confirmed_by: srt
 tragen (ca. 40 Stufen)	0:59 1659,3226
@@ -2563,16 +2565,10 @@ Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständ
 #: next_check: 2014-12-15
 Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
 # 
-#: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf
-#: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf
-#: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt?
-#: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben?
-#: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014
-#: last_checked: 2014-09-12 (Durchfahrt möglich, man muss an Bauzäunen vorbei)
-#: check_frequency: 21d
-Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
+# REMOVED (keine Bauzäune mehr) --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf --- #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt? --- #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben? --- #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014 --- #: last_checked: 2014-09-12 (Durchfahrt möglich, man muss an Bauzäunen vorbei) --- #: check_frequency: 21d --- Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
 # 
-#: last_checked: 2014-07-10
+#: last_checked: 2014-09-27
+#: next_check: 2015-02-15
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 #: XXX hier steht noch ein Bauzaun

@@ -1501,7 +1501,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 16961,16042
 	X 16656,16157
 	X 18601,18342
-	X 17515,16215
+	X 17516,16208
 	X 17425,16165
 	X 21251,18508
 #: XXX_prog: nur eine Ampel: vvv
@@ -2320,8 +2320,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 15142,16499
 	F 11750,16354
 	X 8901,12008
-	X 18206,13817
-#: note: Abends meist (immer?) ausgeschaltet, und auch am Wochenende (z.B. So 2014-09-21 nachmittags)
+	X 18198,13816
+#: note: Abends meist (immer?) ausgeschaltet, und auch sonntags (z.B. So 2014-09-21 nachmittags) (Sa 2014-09-27 15:30 eingeschaltet)
 #: note: Anforderungsampel
 #: off: night
 	F 14802,11784
@@ -2565,7 +2565,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked: 2014-09-13
 #: check_frequency: 180d
 	X::inwork -6861,15129
-	F 20614,18481
+	F 20612,18487
 	X 5628,17631
 	X 7676,18492
 #: by: wosch

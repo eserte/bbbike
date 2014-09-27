@@ -228,12 +228,12 @@ Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,8562
 (zur Thomas-Dehler-Str.): Fußgänger, Bordsteine	q4 6654,11460 6716,11439
 Ernststr.: Fußgänger	q2 2497,19503 2700,19527
-(S-Bahnunterführung Wartenberg): Fußgänger	q1 16936,18658 16998,18695
+(S-Bahnunterführung Wartenberg): Fußgänger	q1 16939,18652 16998,18695
 (S-Bahnunterführung Wartenberg): Rampe	q3 16998,18695 17024,18674 17008,18701
 (S-Bahnunterführung Wartenberg): Fußgänger	q2 17008,18701 17068,18736
 (S-Bahnunterführung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17109,18772
-(Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16936,18658
+(Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
 Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
 (Buckower Ring - Cecilienstr.): Fußgänger, eng, einige Regenablaufrinnen	q2 21879,13515 21894,13514 21920,13680
@@ -773,7 +773,7 @@ Kelchstr.: enge Straße	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fußgänger	q2 7424,4821 7487,4802
 Kottesteig: Bordsteine, Fußgänger	q1 6868,5262 6820,5237 6806,5230
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fußgänger	q1 18646,17345 18704,17565
-(Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18986,17786 19102,17879 19110,18015 19127,18091 19212,18205 19251,18252 19249,18351 19265,18400 19291,18456
+(Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18986,17786 19102,17879 19110,18015 19127,18091 19212,18205 19251,18252 19249,18351 19265,18400 19291,18456
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19212,18205 18969,18448
 Stritteweg: vereinzelte Stufen und schmale Rampen	q3 -5236,11204 -5256,11142
 Künstlerweg: enge Straße	q1 -7418,7842 -7334,7703 -7258,7735 -7340,7873
@@ -1394,7 +1394,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
-(Weg im Wustrower Park): einige Fußgänger, eng	q2 17235,18352 17159,18309 17087,18434 17102,18490 17021,18663
+(Weg im Wustrower Park): einige Fußgänger, eng	q2 17235,18352 17162,18304 17087,18434 17102,18490 17021,18663
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
 Neue Steinmetzstr.: Bordstein	q2 7625,9376 7628,9365
@@ -1432,6 +1432,9 @@ Iranische Str.: einige Fußgänger	q1 7843,16524 7717,16541 7707,16543 7456,16620
 (Mauerweg Forst Spandau): sehr eng	q4 -7032,19431 -7069,19436 -7397,19289
 (Glindowseestr. - Plauer-See-Str.): einige Fußgänger	q1 -1652,16721 -1666,16652 -1685,16583 -1699,16513 -1715,16444 -1734,16375
 (Mall of Berlin): Einkaufszentrum, Fußgänger	q4 8837,11676 8834,11536
+(Hohenschönhauser Str. - Falkenberger Krugwiesen): einige Fußgänger, eng	q1 19183,17444 19074,17533 19017,17609 18993,17630 18965,17675 18937,17738
+Premnitzer Str.: Bordstein	q4 20363,16976 20376,16970
+(Wustrower Str. - Wustrower Park): Bordstein	q3 17128,18281 17162,18304
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635

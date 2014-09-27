@@ -621,7 +621,7 @@ Pasewalker Str. (Wedding)	1 7891,15417 7877,15581
 Olympische Str./Steubenplatz	1 610,12100 620,12144 668,12190
 Steubenplatz	1 689,12152 653,12109 610,12100
 Steubenplatz	1s 668,12190 689,12152
-Radieschenpfad	1 20582,18468 20635,18381
+Radieschenpfad	1 20582,18475 20635,18381
 Lattichweg	1 20452,18273 20453,18321 20523,18329 20635,18381
 Enger Steig	1 -4310,11770 -4312,11720 -4302,11669
 Künstlerweg	1 -7340,7873 -7258,7735 -7334,7703 -7418,7842
@@ -1238,6 +1238,9 @@ Siemensdamm -> Hefnerst.: Mittelstreifen	3::igndisp 1479,14343 1420,14369 1392,1
 Straßenbahntrasse	3nocross::ignrte 16099,16339 16263,16288 16416,16236
 Suermondtstr. -> Klarastr.: Straßenbahntrasse	3::igndisp 16416,16236 16263,16288 16234,16203
 Klarastr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16234,16203 16263,16288 16099,16339
+Straßenbahntrasse	3nocross::ignrte 16416,16236 16476,16216 16520,16200
+Suermondtstr. -> Degnerstr.: Straßenbahntrasse	3::igndisp 16520,16200 16476,16216 16458,16104
+Degnerstr. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16458,16104 16476,16216 16416,16236
 Straßenbahntrasse	3nocross::ignrte 14499,16341 14556,16391 14610,16522
 Berliner Allee -> Wegenerstr.: Straßenbahntrasse	3::igndisp 14610,16522 14556,16391 14692,16328
 Wegenerstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14692,16328 14556,16391 14499,16341
@@ -1391,9 +1394,9 @@ Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609
 Straßenbahntrasse	3nocross::ignrte 18215,12123 18216,12239 18216,12262 18220,12450
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3::igndisp 18180,12262 18216,12262 18220,12450
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18216,12239 18216,12262 18180,12262
-Straßenbahntrasse	3nocross::ignrte 18181,14110 18184,14078 18187,14039 18206,13817
+Straßenbahntrasse	3nocross::ignrte 18181,14110 18184,14078 18187,14039 18198,13816
 Rhinstr. -> Rhinstr. [134-130]: Straßenbahntrasse	3::igndisp 18184,14078 18187,14039 18477,14042
-Rhinstr. [134-130] -> Rhinstr.: Straßenbahntrasse	3::igndisp 18477,14042 18187,14039 18206,13817
+Rhinstr. [134-130] -> Rhinstr.: Straßenbahntrasse	3::igndisp 18477,14042 18187,14039 18198,13816
 Straßenbahntrasse	3nocross::ignrte 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
 Rhinstr. -> Worbiser Str.: Straßenbahntrasse	3::igndisp 17937,14795 17886,14899 17693,14840
 Worbiser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17693,14840 17886,14899 17829,15015
@@ -2315,7 +2318,7 @@ tragen (Treppe, 34 Stufen)	0:35:-250 8025,12859
 tragen (Treppe)	0:30:-4 8428,12859
 tragen (Treppe)	0:30:-265 8445,12755
 tragen (Treppe)	0:35:47 17026,11810
-tragen (Treppe S-Bhf. Raoul-Wallenberg-Str.)	0:30:-244 20050,16292
+tragen (Treppe S-Bhf. Raoul-Wallenberg-Str., 2 x 13 Stufen)	0:30:-244 20050,16292
 tragen (ca. 40 Stufen)	0:59:-124 1659,3226
 tragen (Treppe)	0:30:-114 1715,3257
 tragen (Treppe)	0:30:-97 6172,12878
@@ -2732,7 +2735,6 @@ Dresdener Str.: Bauarbeiten, komplett gesperrt	2::inwork 11034,11249 11000,11327
 Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12576,11375 12638,11433
 Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045
 Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
-Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 Viechtacher Str.: Bauarbeiten, Zufahrt zur Zwieseler Str. noch gesperrt	2::inwork 19657,9666 19727,9672
 Viechtacher Str.: Bauarbeiten, Straße muss noch fertig gestellt werden	2::inwork 19801,9680 19857,9682 19893,9683

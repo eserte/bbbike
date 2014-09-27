@@ -3543,19 +3543,7 @@ userdel	q4::inwork; 16514,15092 16430,15168
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157925.php',
-         'until' => 1411768800,
-         'text' => 'Fahlenbergstraße und Hubertusstraße von Wolfgang-Steinitz-Straße bis Waldstraße: Fahrbahninstandsetzung, Einbahnstraßenregelung, offen Richtung Fürstenwalder Allee, vom 01.09.2014 bis 26.09.2014',
-         'from' => 1409436000,
-         'id' => 2611,
-         'data' => '#: XXX vom 29.09.2014 bis 02.10.2014: Vollsperrung
-#: next_check: 2014-09-27
-#: priority: #A
-userdel	q4::inwork; 31967,2966 31999,2812 32031,2723 32115,2581 32162,2542
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
