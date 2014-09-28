@@ -3606,16 +3606,7 @@ userdel	q4::inwork; 16514,15092 16430,15168
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20140919.1320.399338.html',
-         'until' => 1411855199,
-         'text' => 'Quellweg (zwischen Goebelstraße und Schuckertdamm) und Schuckertdamm (zwischen Quellweg und Natalissteig): Bauarbeiten, Sperrung der Fahrbahn, vom 22. bis 27. September 2014',
-         'from' => 1411250400,
-         'id' => 2629,
-         'data' => 'userdel	q4::inwork 1200,14943 1343,14972 1334,14862 1282,14710
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Schlüterstr.: zwischen Kurfürstendamm und Lietzenburger Str. Bauarbeiten, Fahrbahn teilweise gesperrt',

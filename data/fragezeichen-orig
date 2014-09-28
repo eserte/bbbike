@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2014-09-20
+#: last_checked: 2014-09-28
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -152,7 +152,7 @@ Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::pro
 Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,21563 7959,21573 7781,21812 7742,21867 7594,22068 7516,22178 7439,22306 7416,22349
 # 
 #: XXX Baumaßnahme B3.4 (Realisierung nach 2011)
-#: last_checked: 2014-04-21
+#: last_checked: 2014-09-28
 #: check_frequency: 180d
 Schönerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 11929,23946 11959,24220 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570 12694,25696 12944,26163 13192,26628 13256,26863 13345,27187
 #
@@ -328,7 +328,7 @@ Manteuffelstr.: werden Radstreifen markiert?	?::projected 8606,5496 8610,5579 86
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
 #: XXX mittelfristig Realisierung von Radstreifen
-#: last_checked: 2014-04-06
+#: last_checked: 2014-09-28
 #: check_frequency: 120d
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
@@ -1348,7 +1348,7 @@ Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 Fußgängerampel in Bau	?::inwork 7563,13143
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3404 (Verfahren wurde eingeleitet)
-#: last_checked: 2014-08-21
+#: last_checked: 2014-09-28
 #: check_frequency: 180d
 #: priority: #C
 Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10056,17781 10033,17763
@@ -1395,16 +1395,16 @@ Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::inwork 15747,12880 1
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/helmholtzplatz.php
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/pr__sentation_sanierungsgebiet_helmholtzplatz.pdf?start&ts=1399614747&file=pr__sentation_sanierungsgebiet_helmholtzplatz.pdf
-#: last_checked: 2014-08-21
-#: next_check: 2014-09-21 (Einschränkungen während Bauarbeiten? Beendigung hier voraussichtlich Dezember 2014)
+#: last_checked: 2014-09-28
+#: next_check: 2014-10-13 (Einschränkungen während Bauarbeiten? Beendigung hier voraussichtlich Dezember 2014)
 Greifenhagener Str.: hier wird eine Fußgängerzone entstehen sowie asphaltiert werden	? 11123,15851 11150,15908
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385&date=20140201 (noch nichts passiert)
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385&date=20140221 (Maßnahme beschlossen, kein Realisierungszeitraum genannt)
 #: osm_watch: way id="145485550" version="2"
-#: last_checked: 2014-02-23
-#: next_check: 2014-08-01
+#: last_checked: 2014-09-28
+#: check_frequency: 120d
 Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23475 15637,23251 15547,23024 15529,22981 15428,22736
 # 
 # REMOVED ("Apfelwege" alle aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3501 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036924327063/924327063/00054997/97-Anlagen/02/Benennungvon20PrivatwegeninderAnlageGravenstei.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2013 (Grundstücksnummerierung) --- #: XXX 13127 Berlin, Ortsteil Französisch Buchholz, fehlen alle in Berlin.coords.data vvv --- #: XXX Benennung von 20 Privatwegen in der Anlage Gravenstein: genaue Lage der Wege? Qualität? Beleuchtet? vvv --- #: last_checked: 2013-08-27 --- #: next_check: 2014-03-27
@@ -3568,13 +3568,9 @@ Alter Radelander Weg - Schappachstr.: Qualität? Ausgeschildert?	? 25007,-2620 25
 Hochstr. (Schwanebeck): Qualität?	? 18942,26470 19340,26610
 Hochstr. (Schwanebeck): Qualität?	? 19715,26770 19948,26760 20051,26756 20225,26711
 Kiesstr. (Schwanebeck): Qualität?	? 20192,26621 20225,26711 20304,26861
-Humboldtstr. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 17990,24572 18122,24440 18492,24049
-Stefan-Heym-Str. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18057,24641 18200,24498
-Einsteinstr. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18124,24709 18280,24557
-Wolfgang-Amadeus-Mozart-Str. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18039,24940 18122,24858 18198,24789 18355,24639
-Vierwaldstätter Str. (Schwanebeck): Qualität des südlichen Abschnitts?	? 18281,26008 18226,25889 18171,25619 18131,25316 18106,25171
 Thuner Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18810,25948 18929,26214
 Wilhelm-Tell-Str. (Schwanebeck): Qualität des nördlichen Abschnitts?	? 18885,25916 19000,26147
+Humboldtstr. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18190,24368 18492,24049
 # 
 #: next_check_id: CASSINOHOF-2014
 #: XXX Benennung wahrscheinlich Cassinohof
@@ -3674,9 +3670,9 @@ Jahnpromenade (Erkner): Qualität?	? 34325,3183 34352,3189 34493,3339
 #: XXX Privatstraße
 Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13494,-2850
 # 
-Schiefertonweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10269,21718 10248,21795
-Zechsteinweg: ist der Zechsteinweg eine Sackgasse?	? 10328,21737 10319,21774
-Kieselweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10423,21701 10388,21801
+# REMOVED (nein) --- Schiefertonweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10269,21718 10248,21795
+# REMOVED (ja) --- Zechsteinweg: ist der Zechsteinweg eine Sackgasse?	? 10328,21737 10319,21774
+# REMOVED (nein) --- Kieselweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10423,21701 10388,21801
 Weg in der Jungfernheide: Qualität des Wegs? Nachts beleuchtet? Existiert eine Ausschilderung?	? 2683,14878 2768,14923 2835,14975 2889,15033 2929,15138 2933,15270 2922,15379 3095,15495
 Uranusweg - Eichborndamm: Weg entlang Sportanlage und Autobahn, Qualität des Wegs? Nachts beleuchtet? Existiert eine Ausschilderung?	? 4287,17564 3961,17710 4015,17912
 Maienwerderweg - Sendener Weg: Qualität des Wegs? Nachts beleuchtet?	? 2210,18262 2097,18183 1928,18136 1663,18166 1375,18209 1178,18223
@@ -3725,4 +3721,21 @@ Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg schon, wie ist
 #: next_check ^^^
 #: last_checked ^^^
 #: by ^^^
-#
+# 
+Rathenaustr. (Schwanebeck-West): Qualität?	? 17228,24640 17088,24538 17110,23990
+Eichenring (Schwanebeck-West): Qualität?	? 17412,24315 17358,24354 17289,24483 17229,24490 17201,24441 17266,24312 17281,24208 17351,24170 17415,24199 17434,24254 17412,24315
+Eichendorffstr. (Schwanebeck-West): Qualität?	? 17638,24756 17584,24703
+Voltastr. (Schwanebeck-West): Qualität? Ist der Straßenname Voltaweg oder Voltastr.?	? 18312,24956 18198,25001
+Linzer Str. (Schwanebeck-West): Qualität?	? 18567,24998 18432,25052 18429,25074 18549,25106
+Grazer Str. (Schwanebeck-West): Qualität?	? 18531,25161 18453,25139 18432,25260 18507,25272
+Parkstr. (Schwanebeck-West): Qualität?	? 18503,25468 18419,25468 18387,25469
+Kitzbühler Str. (Schwanebeck-West): Qualität?	? 18419,25468 18421,25371
+Kärtner Str. (Schwanebeck-West): Qualität?	? 18507,25596 18503,25468 18501,25331
+Neue Kärtner Str. (Schwanebeck-West): Qualität? Ist die Straße im südlichen Abschnitt eine Einbahnstraße?	? 18501,25331 18507,25272 18510,25252 18531,25161 18549,25106 18601,25062
+Alemannenstr. (Schwanebeck): Qualität?	? 18308,26001 18324,26017 18389,26038 18506,26079 18679,26138 18736,26158 18922,26223 18958,26234 19014,26253
+Burgunderstr. (Schwanebeck): Qualität?	? 18470,26189 18700,26264 18875,26324
+Donaustr. (Schwanebeck): Qualität?	? 18885,25916 18810,25948 18736,26158 18700,26264 18662,26377
+Andreas-Hofer-Str. (Schwanebeck): Qualität?	? 18972,25713 19144,26066
+Schwarzwälder Str. (Schwanebeck): Qualität?	? 19144,26066 19000,26147 18960,26173 18929,26214 18922,26223 18875,26324 18822,26430
+Steiermärker Str. (Schwanebeck): Qualität?	? 18958,26234 18942,26470
+Genfer Platz (Schwanebeck): Qualität? Gibt es eine Verbindung zur Zillertaler Str.?	? 18389,26038 18395,26020

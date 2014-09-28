@@ -1137,11 +1137,11 @@ Saarstr. (Eiche): Asphalt	Q0 23111,18784 23252,18529 23371,18325
 Rheinstr. (Eiche): Asphalt	Q0 23015,18687 23102,18552 23160,18461 23263,18275
 Ruhrstr. (Eiche): Asphalt	Q0 22999,18493 23048,18380 23126,18227
 Verbundsteinpflaster	Q1+ 23036,17919 22914,17893
-Bucher Weg/Lindenberger Weg: asphaltiert	Q0 18356,22225 18339,22271 18224,22531 18193,22656 18162,22831 18061,23456 18033,23657 17995,23719 17836,23873 17622,24160 17615,24168 17464,24358 17228,24640 17193,24683
+Bucher Weg/Lindenberger Weg: asphaltiert	Q0 18356,22225 18339,22271 18224,22531 18193,22656 18162,22831 18061,23456 18033,23657 17995,23719 17836,23873 17622,24160 17610,24174 17464,24358 17228,24640 17193,24683
 Karower Str.: unbefestigte Straße	Q2+ 17052,23958 17110,23990 17264,24021
-Karower Str.: asphaltiert	Q0 17264,24021 17615,24168 17874,24300 18010,24370 18062,24396 18122,24440 18200,24498 18280,24557 18325,24590
-Kirschenallee: asphaltiert	Q0 18325,24590 18355,24639 18562,24975
-Neue Kärtner Str.: asphaltiert	Q0 18562,24975 18584,25031 18601,25062
+Karower Str.: asphaltiert	Q0 17264,24021 17610,24174 17871,24303 18006,24372 18059,24398 18122,24440 18200,24498 18280,24557 18323,24595
+Kirschenallee: asphaltiert	Q0 18323,24595 18351,24641 18562,24975
+Neue Kärtner Str.: asphaltiert	Q0 18562,24975 18567,24998 18579,25033 18601,25062
 Weidenweg (Neu-Buch): Asphalt	Q0 17464,24358 17412,24315
 Kleiststr. (Neu-Buch): sehr guter Asphalt	Q0 17464,24358 17565,24441 17671,24528 17766,24624 17831,24725 17870,24821 17901,24919 17913,25005
 Lindenberger Str. (Neu-Buch): Asphalt	Q0 17913,25005 17967,25231
@@ -1386,19 +1386,19 @@ zum Bahnhof Seehausen, Bahnsteig Richtung Angermünde: schlechtes Kopfsteinpflast
 Bernau: Kopfsteinpflaster, OK	Q1 22541,30476 22434,30685 22352,30734 22283,30775
 Lobetal - Biesenthal: Waldweg, OK	Q1 24193,37725 24208,37830 24179,38069 24200,38287 24468,38650 25150,39231 25181,39562
 Bernau, Berliner Str.: asphaltiert	Q0 22649,30519 22541,30476 22178,30343
-Rigistr.: Asphalt	Q0 18171,25619 18074,25640 18015,25653
-Genfer Str.: unbefestigte Straße	Q2 18441,25967 18432,25881
+Rigistr.: Asphalt	Q0 18507,25596 18171,25619 18074,25640 18015,25653
+Genfer Str.: unbefestigte Straße	Q2 18441,25967 18432,25881 18342,25882
 Appenzeller Str.: unbefestigte Straße	Q2 18654,25911 18679,26138
 Thuner Str.: unbefestigte Straße	Q2 18777,25879 18810,25948
 Wilhelm-Tell-Str.: unbefestigte Straße	Q2 18844,25823 18885,25916
 Rudolf-Breitscheid-Str. (Schwanebeck): Asphalt	Q0 17967,25231 18003,25349 18074,25640 18142,25909 18174,26035 18220,26225
 Ernst-Thälmann-Str. (Schwanebeck): Asphalt	Q0 18220,26225 18433,26301
-Ernst-Thälmann-Str. (Schwanebeck): Kleinsteinpflaster	Q2+ 18433,26301 18942,26470
+Ernst-Thälmann-Str. (Schwanebeck): Kleinsteinpflaster	Q2+ 18433,26301 18662,26377 18822,26430 18942,26470
 Rheinstr.: Asphalt	Q0 18142,25909 18226,25889
 Gletscherstr. (Schwanebeck): schadhafter Asphalt	Q1 18433,26301 18415,26368
 Gletscherstr.: Asphalt	Q0 18433,26301 18439,26277
 Gletscherstr.: unbefestigte Straße	Q2 18439,26277 18470,26189 18506,26079 18550,25958 18551,25938
-Vierwaldstätter Str.: Asphalt	Q0 18439,26277 18281,26008
+Vierwaldstätter Str. (Schwanebeck): Asphalt	Q0 18439,26277 18281,26008 18226,25889 18171,25619 18133,25321 18111,25169
 Bahnhofstr. (Röntgental): Kopfsteinpflaster	Q2 18415,26368 18400,26554 18292,26726
 Bahnhofstr. (Röntgental): schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 17939,27084 17784,27209 17415,27506
 Buchenallee (Röntgental): Feldweg	Q2 17099,27097 17415,27506 17689,27853
@@ -3298,22 +3298,30 @@ Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 172
 #: XXX ... und teilweise wohl betoniert
 (Hans-Grade-Allee - Umgehungsstraße): teilweise wassergebundene Decke	Q1 17746,-1288 17766,-1316 17825,-1318 17911,-1427
 Verbindungsweg (Schwanebeck): unbefestigte Straße	Q2 17565,24441 17350,24699
-Rosa-Luxemburg-Str. (Schwanebeck): Asphalt	Q0 17671,24528 17874,24300
+Rosa-Luxemburg-Str. (Schwanebeck): Asphalt	Q0 17671,24528 17871,24303
 #: add_fragezeichen: ist der nordwestliche Abschnitt tatsächlich unbefestigt?
 Ernst-Toller-Str.: unbefestigte Straße	Q2 17581,24815 17638,24756
 Ernst-Toller-Str.: unbefestigte Straße	Q2 17638,24756 17766,24624
-Ernst-Toller-Str.: Asphalt	Q0 17766,24624 17900,24483
-#: add_fragezeichen: ist der südöstliche Abschnitt tatsächlich asphaltiert?
-Ernst-Toller-Str.: Asphalt	Q0 17900,24483 18010,24370
+Ernst-Toller-Str.: Asphalt	Q0 17766,24624 17900,24483 18006,24372
+#: add_fragezeichen: ist der südwestliche Abschnitt tatsächlich unbefestigt?
+Fritz-Reuter-Str.: unbefestigte Straße	Q2 17900,24483 17990,24572 18057,24641 18124,24709
+Fritz-Reuter-Str.: unbefestigte Straße	Q2 18124,24709 18198,24789 18275,24866 18312,24956
 #: add_fragezeichen: ist der nordwestliche Abschnitt tatsächlich unbefestigt?
 Humboldtstr.: unbefestigte Straße	Q2 17699,24874 17728,24824
 Humboldtstr.: unbefestigte Straße	Q2 17728,24824 17831,24725
-Humboldtstr.: Asphalt	Q0 17831,24725 17990,24572
+Humboldtstr.: Asphalt	Q0 17831,24725 17990,24572 18122,24440
+Humboldtstr.: Verbundsteinpflaster	Q1+ 18122,24440 18190,24368
 Stefan-Heym-Str.: unbefestigte Straße	Q2 17776,24912 17870,24821 18057,24641
+Stefan-Heym-Str.: Asphalt	Q0 18057,24641 18200,24498
 Einsteinstr.: unbefestigte Straße	Q2 17864,24956 17901,24919
-Einsteinstr.: Asphalt	Q0 17901,24919 18124,24709
-Wolfgang-Amadeus-Mozart-Str.: Kopfsteinpflaster	Q2 17913,25005 17987,24982 18039,24940
-Bodenseestr.: Asphalt	Q0 18003,25349 18131,25316
+Einsteinstr.: Asphalt	Q0 17901,24919 18124,24709 18280,24557
+Einsteinstr.: unbefestigte Straße	Q2 18280,24557 18305,24535
+Wolfgang-Amadeus-Mozart-Str.: unebenes Kleinsteinpflaster	Q2 17913,25005 18004,24971 18039,24940 18122,24858 18198,24789 18351,24641
+Uhlandstr.: unbefestigte Straße	Q2 18122,24858 18149,24884 18198,25001
+#: add_fragezeichen: ist der nordöstliche Abchnitt tatsächlich unbefestigt?
+Uhlandstr.: unbefestigte Straße	Q2 18198,25001 18236,25113
+Ohmstr.: unbefestigte Straße	Q2 18039,24940 18127,25162
+Bodenseestr.: Asphalt	Q0 18003,25349 18133,25321
 An der Alten Fahrt - Joliot-Curie-Str.: Parkweg	Q1 -12485,-1482 -12489,-1465
 An der Alten Fahrt - Joliot-Curie-Str.: Asphalt	Q1 -12489,-1465 -12500,-1437
 Fontanestr.: Asphalt	Q0 32080,6100 32178,5997 32252,5917 32365,5789
@@ -3846,7 +3854,7 @@ Stubenrauchstr.: Asphalt	Q0 -7518,-1175 -7895,-1464
 Rudolf-Breitscheid-Str. [Bahnhofsvorfahrt]: Asphalt	Q0 -8112,-1512 -8100,-1575 -8023,-1565 -8038,-1495
 Baumgartenbrück (Geltow): rauer Asphalt mit Löchern	Q2 -18025,-6370 -18410,-6286 -18918,-5951
 Kolonieweg: unbefestiger holpriger Weg	Q2- -12603,1443 -12633,1484 -12928,1646
-Buch - Schwanebeck: sehr guter Asphalt	Q0 17895,25260 17956,25235 17967,25231 18106,25171 18236,25113 18562,24975 18583,24966 19395,24634 19658,24589
+Buch - Schwanebeck: sehr guter Asphalt	Q0 17895,25260 17956,25235 17967,25231 18111,25169 18127,25162 18236,25113 18562,24975 18583,24966 19395,24634 19658,24589
 Pinnow: asphaltiert	Q0 56231,75134 55703,74309 55649,74233 55594,74156 55501,73991
 Bahnhofstr.: Betonstraße	Q0 69402,74134 69378,74082 69376,73996 69369,73845 69236,73732 69085,73607
 Bahnhofstr.: gutes Kopfsteinpflaster	Q1 69085,73607 69061,73583

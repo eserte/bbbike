@@ -84,7 +84,7 @@ Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,187
 Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,18338 10567,18366 10602,18382
 Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
-Edelweiﬂstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
+Edelweiﬂstr.	1 8234,19936 7993,19949 7935,19954 7885,19975 7748,20040
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
 Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4098,18762 4162,18891 4240,19019
 Eichborndamm	1s 4240,19019 4232,18981
@@ -927,6 +927,7 @@ J¸rgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4
 Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
 Mehrow - Trappenfelde	1 24743,18606 24709,18578
 Mehrow - Trappenfelde	1 24696,18606 24743,18606
+Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
 Mittelstreifen nicht ¸berquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht ¸berquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht ¸berquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -1666,11 +1667,11 @@ Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 11642,14625 11662,14695 11681,14
 Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 11681,14759 11662,14695 11949,14557
 Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3::igndisp 11949,14557 11662,14695 11642,14625
 Mittelstreifen mit Straﬂenbahn, aber Furt in der N‰he	3nocross::ignrte 11801,15132 11828,15210 11852,15281
-Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straﬂenbahn, aber Furt in der N‰he	3::igndisp 11801,15132 11828,15210 11657,15271
-Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Furt in der N‰he	3::igndisp 11657,15271 11828,15210 11852,15281
+Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straﬂenbahn, aber Furt in der N‰he	3::igndisp 11801,15132 11828,15210 11651,15273
+Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Furt in der N‰he	3::igndisp 11651,15273 11828,15210 11852,15281
 Mittelstreifen mit Straﬂenbahn, aber Ampel in der N‰he	3nocross::ignrte 11776,15060 11801,15132 11828,15210
-Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straﬂenbahn, aber Ampel in der N‰he	3::igndisp 11776,15060 11801,15132 11636,15191
-Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Ampel in der N‰he	3::igndisp 11636,15191 11801,15132 11828,15210
+Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straﬂenbahn, aber Ampel in der N‰he	3::igndisp 11776,15060 11801,15132 11631,15192
+Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Ampel in der N‰he	3::igndisp 11631,15192 11801,15132 11828,15210
 Mittelstreifen mit Straﬂenbahn, hier aber Fuﬂg‰ngerfurt vorhanden	3nocross::ignrte 11709,14856 11681,14759 11662,14695
 Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straﬂenbahn, hier aber Fuﬂg‰ngerfurt vorhanden	3::igndisp 11709,14856 11681,14759 11977,14607
 Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, hier aber Fuﬂg‰ngerfurt vorhanden	3::igndisp 11977,14607 11681,14759 11662,14695

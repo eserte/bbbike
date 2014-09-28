@@ -100,7 +100,7 @@ Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,187
 Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,18338 10567,18366 10602,18382
 Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,18197 10240,18193
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
-Edelweißstr.	1 8234,19936 7993,19953 7885,19975 7748,20040
+Edelweißstr.	1 8234,19936 7993,19949 7935,19954 7885,19975 7748,20040
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
 Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4098,18762 4162,18891 4240,19019
 Eichborndamm	1s:q3 4240,19019 4232,18981
@@ -1238,6 +1238,7 @@ Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4
 Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
 Mehrow - Trappenfelde	1 24743,18606 24709,18578
 Mehrow - Trappenfelde	1 24696,18606 24743,18606
+Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -2726,8 +2727,8 @@ An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 #: next_check_id: FLORAGAERTEN-2014
 #: osm_watch: way id="294423898" version="3"
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2014-08-21
-#: check_frequency: 90d
+#: last_checked: 2014-09-28
+#: check_frequency: 30d
 In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
 # 
 # REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: priority: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^

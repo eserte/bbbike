@@ -3308,7 +3308,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002329',
        data  => <<EOF,
-userdel	q4 13300,17726 13245,17737 13125,17758 13031,17775 12908,17807 12856,17825
+userdel	q4 13300,17726 13245,17737 13125,17758 13031,17775 12955,17795 12908,17807 12856,17825
 userdel	q4 12856,17825 12825,17870 12736,17998
 EOF
      },
@@ -7839,7 +7839,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005169',
        data  => <<EOF,
-userdel	q4::inwork 16045,25907 16114,25827 16166,25767
+userdel	q4::inwork 16045,25907 16121,25818 16166,25767
 EOF
      },
      { from  => 1176243783, # 2007-04-11 00:23
@@ -14933,7 +14933,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_113068',
        data  => <<EOF,
-userdel	2::inwork 14314,25193 14219,25013 14029,24753
+userdel	2::inwork 14308,25196 14217,24999 14182,24940 14112,24843 14023,24756
 EOF
      },
      { from  => 1247723876, # 2009-07-16 07:57
@@ -17867,7 +17867,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015731',
        data  => <<EOF,
-userdel	q3::inwork 16414,25575 16294,25683 16220,25716 16166,25767 16114,25827 16045,25907
+userdel	q3::inwork 16414,25575 16294,25683 16220,25716 16166,25767 16121,25818 16045,25907
 EOF
      },
      { from  => 1274820117, # 2010-05-25 22:41
@@ -18547,7 +18547,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4072.html',
        data  => <<EOF,
-	2:inwork 15347,24614 15490,24848
+	2:inwork 15347,24614 15469,24813 15490,24848
 EOF
      },
      { from  => 1286661600, # 2010-10-10 00:00
@@ -19002,7 +19002,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017000',
        data  => <<EOF,
-userdel	q4::inwork 11595,15460 11688,15398
+userdel	q4::inwork 11595,15460 11682,15397
 EOF
      },
      { from  => 1299413700, # 2011-03-06 13:15
@@ -20781,7 +20781,7 @@ EOF
        text  => 'Senefelderstr.: Fahrbahn vor der Raumerstr. gesperrt, Ausweichen auf Gehweg erforderlich',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 11615,15114 11595,15058
+userdel	q4::inwork 11609,15114 11595,15058
 EOF
      },
      { from  => $isodate2epoch->("2013-07-31 00:00:00"), # 1 Tag Vorlauf # der zugehörige periodische Eintrag ist weiter oben

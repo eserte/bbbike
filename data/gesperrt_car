@@ -106,7 +106,7 @@ Prenzlauer Allee - Belforter Str.	3 11389,13887 11435,14023 11299,14112
 Prenzlauer Allee - Heinrich-Roller-Str.	3 11506,14230 11476,14142 11468,14121 11435,14023 11607,13928
 Heinrich-Roller-Str. - Prenzlauer Allee	3 11607,13928 11435,14023 11389,13887
 Allerstr.	1 11879,7720 12055,7751
-Hiddenseer Str.	1 11657,15271 11828,15210
+Hiddenseer Str.	1 11651,15273 11828,15210
 Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
 Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5045,7623
 Wassergasse	1 11034,11895 11024,11789
@@ -135,13 +135,13 @@ Matternstr.	1 13798,13003 13579,12904
 Ebelingstr.	1 13707,13206 13610,13169 13487,13115
 John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12422,14692 12403,14663 12371,14615 12317,14535
 Prenzlauer Allee	3nocross::ignrte 11828,15210 11801,15132 11776,15060 11709,14856
-Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11801,15132 11636,15191
-Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11709,14856 11776,15060 11615,15114
-Prenzlauer Allee -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11801,15132 11776,15060 11870,15004
-Raumerstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11615,15114 11776,15060 11801,15132
-Raumerstr. -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11615,15114 11776,15060 11870,15004
-Fröbelstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11870,15004 11776,15060 11709,14856
-Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3::igndisp 11870,15004 11776,15060 11615,15114
+Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11801,15132 11631,15192
+Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11709,14856 11776,15060 11609,15114
+Prenzlauer Allee -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11801,15132 11776,15060 11873,15010
+Raumerstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11609,15114 11776,15060 11801,15132
+Raumerstr. -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11609,15114 11776,15060 11873,15010
+Fröbelstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11873,15010 11776,15060 11709,14856
+Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3::igndisp 11873,15010 11776,15060 11609,15114
 Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12561,35 -12582,127 -12623,308
 Stellmacherweg	1 13129,2999 13453,2930
 Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
@@ -172,7 +172,7 @@ Leuthener Str.	1 7716,8356 7640,8359
 Lüdenscheider Weg	1 -1389,15285 -1037,15482
 Büsingstr.	1 5215,6643 5210,6522
 Schrammstr.	1 4960,8440 4958,8355
-Stubbenkammerstr.	1 11636,15191 11801,15132
+Stubbenkammerstr.	1 11631,15192 11801,15132
 Templiner Str.	1 10716,14195 10739,14228
 Heylstr.	1 6459,8281 6385,8274 6325,8259
 Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
@@ -1220,9 +1220,9 @@ Pasewalker Str.	3nocross::ignrte 11984,20246 11963,20136 11931,19965
 Hans-Jürgen-Str. -> Pasewalker Str.: Pasewalker Str.	3::igndisp 11939,20140 11963,20136 11984,20246
 Pasewalker Str. -> Hans-Jürgen-Str.: Pasewalker Str.	3::igndisp 11931,19965 11963,20136 11939,20140
 Neuer Steg	3 8170,19308 8277,19210 8209,19107
-Neuer Steg	3 8334,19157 8277,19210 8209,19107
+Neuer Steg	3 8337,19160 8277,19210 8209,19107
 Neuer Steg	3 8209,19107 8277,19210 8170,19308
-Neuer Steg	3 8209,19107 8277,19210 8334,19157
+Neuer Steg	3 8209,19107 8277,19210 8337,19160
 Straße 201	1 9366,18669 9511,18785 9529,18815
 Majakowskiring	1 10373,18889 10354,18814 10203,18762 10041,18697 9985,18735 10003,18798 10055,18831 10162,18867 10184,18875 10307,18915 10373,18889
 Killisch-von-Horn-Weg: Poller	3 9590,18082 9707,17941 9730,17927
