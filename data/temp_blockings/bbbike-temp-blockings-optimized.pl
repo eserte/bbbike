@@ -130,7 +130,7 @@ userdel	2 8546,12279 8570,12302 8573,12325 8540,12420
 ',
          'periodic' => 1,
          'until' => 1412395200,
-         'from' => 1411963200,
+         'from' => 1412222400,
          'recurrences' => [
                             [
                               'yearly',
@@ -2890,41 +2890,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 8573,12325 8540,12420
-userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-userdel	2::temp 8119,12414 8055,12186
-userdel	2::temp 8538,12245 8522,12239 8466,12197
-userdel	2::temp 8538,12245 8522,12187
-userdel	2::temp 8546,12279 8354,12416
-userdel	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
-userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-userdel	3 7429,12070 7383,12095 7039,12314
-userdel	3 7039,12314 7383,12095 7429,12070
-userdel	3 7823,12120 7816,12150 7875,12363
-userdel	3 7875,12363 7816,12150 7823,12120
-userdel	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
-userdel	2::temp 8207,12606 8206,12757
-userdel	3 7945,12592 8122,12603 8120,12756
-userdel	3 8120,12756 8122,12603 7945,12592
-',
-         'periodic' => 1,
-         'until' => 1412006400,
-         'from' => 1411682400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              21,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 29.09.2014',
-         'type' => 'gesperrt',
-         'id' => 2388
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3192,7 +3158,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_023012',
+         'until' => 1412568000,
+         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, 29.09.2014 06:00 Uhr bis 06.10.2014 06:00 Uhr',
+         'from' => 1411963200,
+         'id' => 2469,
+         'data' => 'userdel	2::inwork 17736,5441 17886,5587
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3669,6 +3644,17 @@ userdel	2::inwork 15419,10706 15379,10651
          'data' => 'userdel	q3::inwork 4638,10162 4623,10066 4609,9949
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1424473200,
+         'text' => 'Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
+         'from' => 1412021931,
+         'id' => 2636,
+         'data' => '#: by: Birgit Schroeer
+#: XXX vor Ort anschauen --- vielleicht wird hier asphaltiert?
+userdel	2::inwork 8101,13901 8248,13659 8337,13541
+',
+         'type' => 'gesperrt'
        }
      
 );

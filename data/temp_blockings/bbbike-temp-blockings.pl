@@ -1019,7 +1019,7 @@ userdel	q4 49039,44131 48924,44216 48724,44248 48523,44467
 userdel	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-29 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
+     { from  => $isodate2epoch->("2014-10-02 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
        until => $isodate2epoch->("2014-10-04 06:00:00"), # 1096862400, # 2004-10-04 06:00
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
@@ -21812,11 +21812,11 @@ EOF
 userdel	2::temp 5047,10381 5076,10658
 EOF
      },
-     { from  => 1407357333, # 1403739104, # 1376193600, # 2013-08-11 06:00
-       until => 1409243320, # $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
-       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, bis 5. September 2014',
+     { from  => $isodate2epoch->("2014-09-29 06:00:00"), # 1407357333, # 1403739104, # 1376193600, # 2013-08-11 06:00
+       until => $isodate2epoch->("2014-10-06 06:00:00"), # 1409243320, # $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
+       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, 29.09.2014 06:00 Uhr bis 06.10.2014 06:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'IM_022504',
+       source_id => 'IM_023012',
        data  => <<EOF,
 userdel	2::inwork 17736,5441 17886,5587
 EOF
@@ -23446,6 +23446,16 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q3::inwork 4638,10162 4623,10066 4609,9949
+EOF
+     },
+     { from  => 1412021931, # 2014-09-29 22:18
+       until => 1424473200, # 2015-02-21 00:00
+       text  => 'Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: Birgit Schroeer
+#: XXX vor Ort anschauen --- vielleicht wird hier asphaltiert?
+userdel	2::inwork 8101,13901 8248,13659 8337,13541
 EOF
      },
     );
