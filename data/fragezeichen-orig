@@ -198,9 +198,10 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
 #: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt?
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php
 #: source_id: IM_022377
 #: last_checked: 2014-08-08
-#: next_check: 2014-11-05
+#: next_check: 2014-12-31
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
@@ -382,6 +383,15 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: XXX fehlen in Berlin.coords.data, PLZ wahrscheinlich 12527; beides sind Privatstraßen vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4906 vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036406312569/406312569/00102749/49-Anlagen/01/DRS0806VK.pdf vvv
+Waldkiefernring: genaue Lage, Qualität?	?::inwork 21839,2419 21848,2405 21748,2355 21786,2279 21896,2326
+Fähenweg: genaue Lage, Qualität?	?::inwork 21875,2363 21803,2324
+#: by: ^^^
+#: by: ^^^
+#: XXX ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html
 #: next_check: 2014-12-31
@@ -772,9 +782,11 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: check_frequency: 90d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: osm_watch: way id="290255259" version="1"
+#: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
 Planstraße 1: Qualität? Name wahrscheinlich Kirchdorfer Str.?	?::projected 19842,9895 19853,9774 19857,9682
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: osm_watch: way id="193373934" version="2"
+#: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
 Planstraße 2 (Fortsetzung Römerweg): Name wahrscheinlich Frauenauer Str.? Qualität etc?	?::projected 19663,9757 19853,9774
 # REMOVED (in strassen) --- #: XXX PLZ=10318 --- Planstraße 3 -> Viechtacher Str.: Qualität etc?	?::projected 19657,9666 19727,9672 19801,9680 19857,9682 19893,9683
 # REMOVED --- Planstraße 4 -> Eisensteiner Str.: Qualität der Straße?	?::inwork 19727,9672 19722,9483
@@ -793,8 +805,11 @@ Planstraße 8: Name vielleicht Regener Str.? Qualität?	?::projected 19869,9151 19
 Straße in Bau: genaue Lage, Name (hier auch die Regener Str.?), Qualität?	?::inwork 19626,9166 19869,9151
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: osm_watch: way id="287122102" version="2"
+#: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
 Planstraße 9: Name wahrscheinlich Patersdorfer Str.? Qualität etc?	?::projected 19700,9040 19759,9041 19869,9151
-Planstraße (evtl. 10): Name vielleicht auch Regener Str.? Qualität?	?::projected 19885,9400 19795,9407
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5991 (Straßenname)
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036397475695/397475695/00115094/94-Anlagen/02/Anlage1329.pdf
+Planstraße 11: Name wahrscheinlich Zachenberger Str.? Qualität?	?::projected 19885,9400 19795,9407
 #: by: ^^^
 #: by: ^^^
 #: by: ^^^
@@ -1059,10 +1074,11 @@ Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294
 #: XXX Baumaßnahme 7.13 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Fahrbahnmarkierungen -> vielleicht auch Radspuren?)
+#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf (Fahrbahnmarkierungen -> vielleicht auch Radspuren?)
 #: osm_watch: way id="4677913" version="14"
 #: osm_watch: way id="38198022" version="11"
 #: last_checked: 2014-04-27
-#: next_check: 2014-09-19
+#: next_check: 2014-10-30 (Ende der Markierungsarbeiten)
 Ringstr.: Radverkehrsanlagen	?::projected 8394,4261 8161,4360 8105,4384 7994,4430 7928,4458 7697,4558
 #: by: ^^^
 # 
@@ -1201,8 +1217,10 @@ Kastanienallee (Potsdam): teilweise Entwidmung für den Kfzverkehr (wo genau? wan
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/54re.pdf/file?y=2013
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4709
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036976863406/976863406/00098274/74-Anlagen/01/DRS0610VK.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4892 (Neueinleitung des Planaufstellungsverfahrens)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036406312569/406312569/00102389/89-Anlagen/01/DRS0792VK.pdf
 #: last_checked: 2014-05-06
-#: check_frequency: 180d
+#: next_check: 2015-05-06
 Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 # REMOVED (realisiert) --- #: XXX wahrscheinlich nach den Bauarbeiten? --- #: osm_watch: way id="4687118" version="11" --- #: last_checked: 2013-12-20 --- Parkaue: wann wird hier die Einbahnstraße ausgeschildert, wird sie tatsächlich für Radfahrer nicht offen sein?	? 15406,12444 15408,12394 15370,12264
@@ -1385,7 +1403,7 @@ Fußweg zur Gehrenseestr.: genaue Lage, Qualität?	?::projected 17607,16328 17636,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
-#: XXX fehlt in Berlin.coords.data
+#: XXX fehlt in Berlin.coords.data, PLZ=10367
 #: last_checked: 2014-09-27
 #: next_check: 2015-02-15
 Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::inwork 15747,12880 15747,12985 15808,12989
@@ -1396,8 +1414,8 @@ Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::inwork 15747,12880 1
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/helmholtzplatz.php
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/pr__sentation_sanierungsgebiet_helmholtzplatz.pdf?start&ts=1399614747&file=pr__sentation_sanierungsgebiet_helmholtzplatz.pdf
 #: last_checked: 2014-09-28
-#: next_check: 2014-10-13 (Einschränkungen während Bauarbeiten? Beendigung hier voraussichtlich Dezember 2014)
-Greifenhagener Str.: hier wird eine Fußgängerzone entstehen sowie asphaltiert werden	? 11123,15851 11150,15908
+#: next_check: 2014-12-31
+Greifenhagener Str.: hier wird eine Fußgängerzone entstehen sowie asphaltiert werden; außerdem wird es eine Einbahnstraßenregelung für Autofahrer geben	? 11123,15851 11150,15908
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385&date=20140201 (noch nichts passiert)
@@ -1537,7 +1555,7 @@ Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualitä
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/___tmp/tmp/45081036146019524/146019524/00061922/22-Anlagen/06/6Bebauungsplan6-22.pdf
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=427621&postcount=91 (Fotos)
 #: XXX fehlt bei Berlin.coords.data: Fünf Morgen|Dahlem|14169
-#: osm_watch: way id="54781804" version="9"
+#: osm_watch: way id="54781804" version="10"
 #: last_checked: 2014-08-07
 #: check_frequency: 120d
 Fünf Morgen: wo wird sich die Straße befinden? Qualität?	? 1338,4927 1437,5015 1483,5161

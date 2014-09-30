@@ -8174,18 +8174,25 @@ Picardieweg	N 10964,21969 10892,22165
 # 
 #: note: Privatwege in der Anlage Nordend vvv
 #: ignore_oldname_file: yes vvv
+#: oldname: -201406: Grenzweg (KGA Daheim II)
 Lehmweg	N 10097,21809 10177,21802 10248,21795 10275,21793 10286,21807 10388,21801 10596,21769 10754,21732 10925,21689
-#: oldname: -201406: Tomatenweg
+#: oldname: -201406: Tomatenweg (KGA Wohnen im Grünen)
 Tonweg	N 10177,21802 10211,21697
+#: oldname: -201406: Apfelweg (KGA Wohnen im Grünen)
 Buntsteinweg	N 10111,21661 10211,21697 10269,21718 10328,21737
+#: oldname: -201406: Männertreuweg (KGA Wohnen im Grünen)
 Marmorweg	N 10114,21592 10284,21649 10290,21651 10350,21676 10423,21701 10563,21751 10585,21759 10596,21769
 Granitweg	N 10118,21510 10313,21574 10379,21597 10593,21676 10735,21725
 Granitweg	NN 10735,21725 10752,21727 10754,21732
 #: oldname: -201406: Schneeballweg
 Granitweg	N 10593,21676 10563,21751
+#: oldname: -201406: Maiblumenweg vvv
 Schiefertonweg	N 10313,21574 10284,21649
 Schiefertonweg	N 10290,21651 10269,21718 10248,21795
+#: oldname ^^^
+#: oldname: -201406: Birnenweg (KGA Wohnen im Grünen)
 Zechsteinweg	N 10379,21597 10350,21676 10328,21737 10319,21774
+#: note: davor ohne Namen (laut DPAG-Mitteilungsblatt)
 Kieselweg	N 10423,21701 10388,21801
 #: ignore_oldname_file ^^^
 #: note ^^^

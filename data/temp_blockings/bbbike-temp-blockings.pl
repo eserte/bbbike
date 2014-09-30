@@ -1019,11 +1019,11 @@ userdel	q4 49039,44131 48924,44216 48724,44248 48523,44467
 userdel	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2014-10-02 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
-       until => $isodate2epoch->("2014-10-04 06:00:00"), # 1096862400, # 2004-10-04 06:00
+     { from  => $isodate2epoch->("2014-09-30 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
+       until => $isodate2epoch->("2014-10-06 23:59:59"), # 1096862400, # 2004-10-04 06:00
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
-       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straße vollständig gesperrt (bis voraussichtlich zum 04.10.2014)',
+       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straße vollständig gesperrt (01.10.2014 bis 06.10.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8055,12186 8089,12190 8214,12205
@@ -23379,6 +23379,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
 userdel	q4::inwork 13645,15609 13739,15643 13939,15723
 EOF
      },
@@ -23456,6 +23457,24 @@ EOF
 #: by: Birgit Schroeer
 #: XXX vor Ort anschauen --- vielleicht wird hier asphaltiert?
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
+EOF
+     },
+     { from  => 1410732000, # 2014-09-15 00:00
+       until => 1413410400, # 2014-10-16 00:00
+       text  => 'Albrechtstraße: Fahrbahnsanierung zwischen Friedensplatz und Tempelhofer Damm, Sperrung der Fahrbahn, 15.09.2014 bis 15.10.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf',
+       data  => <<EOF,
+userdel	q4::inwork 9003,6121 9212,6096
+EOF
+     },
+     { from  => 1413237600, # 2014-10-14 00:00
+       until => 1414710000, # 2014-10-31 00:00
+       text  => 'Albrechtstraße: Fahrbahnsanierung zwischen Friedensplatz und Manteuffelstraße, Sperrung der Fahrbahn, 15.10.2014 bis 30.10.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf',
+       data  => <<EOF,
+userdel	q4::inwork 8661,6169 8830,6145 8944,6127
 EOF
      },
     );
