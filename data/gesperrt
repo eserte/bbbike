@@ -1128,9 +1128,9 @@ Streustr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13263,15930 13432,1584
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
 Mittelstreifen	3nocross::ignrte 5343,21250 5349,21198 5356,21146 5382,21001
 Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5349,21198 5343,21250
-Straßenbahnhaltestelle	3nocross::ignrte 9225,13389 9281,13374 9415,13315
-Oranienburger Str. -> Linienstr.: Straßenbahnhaltestelle	3::igndisp 9225,13389 9281,13374 9296,13397
-Linienstr. -> Oranienburger Str.: Straßenbahnhaltestelle	3::igndisp 9296,13397 9281,13374 9415,13315
+Straßenbahnhaltestelle	3nocross::ignrte 9225,13389 9293,13366 9415,13315
+Oranienburger Str. -> Linienstr.: Straßenbahnhaltestelle	3::igndisp 9225,13389 9293,13366 9312,13388
+Linienstr. -> Oranienburger Str.: Straßenbahnhaltestelle	3::igndisp 9312,13388 9293,13366 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
 Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16568,7009
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16720,6845 16677,6892 16630,6800
@@ -1874,6 +1874,8 @@ Am Tierpark -> Am Tierpark [Nebenfahrbahn]: Straßenbahntrasse	3::igndisp 18216,1
 Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12497,11459 12539,11416 12576,11375 12641,11288
 Mühlenstr. -> Am Postbahnhof: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12497,11459 12539,11416 12594,11467
 Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12594,11467 12539,11416 12576,11375
+Mühlenstr. -> Am Postbahnhof: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12539,11416 12576,11375 12638,11433
+Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12638,11433 12576,11375 12641,11288
 Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12990,11006 13080,10956 13144,10921
 Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12990,11006 13080,10956 13150,11101
 Hedwig-Wachenheim-Str. -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 13150,11101 13080,10956 13144,10921
@@ -2730,10 +2732,11 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, evtl. dauerhaft	2 12807,11287 12713,11372
 Alfred-Döblin-Platz: Bauarbeiten, Fahrbahn gesperrt	2::inwork 11162,10919 11150,11030
 Dresdener Str.: Bauarbeiten, komplett gesperrt	2::inwork 11034,11249 11000,11327
-Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12576,11375 12638,11433
+Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12641,11288 12664,11310 12713,11372
 Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045
 Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352

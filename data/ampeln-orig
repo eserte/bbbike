@@ -2543,7 +2543,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2014-06-30 vvv
+#: last_checked: 2014-10-01 (an der Hessischen Str.) vvv
 #: next_check: 2015-05-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926
@@ -2691,6 +2691,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -7025,16195
 	B0 -3469,18005
 	B0 -3233,17767
+#: note: Anforderungsampel
+	F 7563,13143
+# 
 # 
 ################################################################################
 #: note: Potsdam vvv

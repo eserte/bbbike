@@ -1001,7 +1001,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX später beide Richtungen wieder herstellen
 #: source_id: IM_018997
 #: osm_watch: way id="24913297" version="34"
-#: last_checked: 2014-09-20
+#: last_checked: 2014-10-01
 #: next_check: 2014-12-31
 Busspur ist immer gültig	RW5; 9141,12320 9358,12351 9475,12365
 # 
@@ -1036,7 +1036,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280
 asphaltierter Radweg	RW1;RW2 11134,12793 11226,12945
 Busspur gilt Mo-Fr 7-14 Uhr	RW5; 10876,12563 10803,12470
 # REMOVED (zu weit entfernt von der anderen Seite) --- : next_check_id: VOSSSTR-2014
-#: last_checked: 2014-09-26
+#: last_checked: 2014-10-01
 #: check_frequency: 7d
 #: XXX Wegen Bauarbeiten aufgehoben, danach vielleicht wieder RW3;RW0
 	RW0;RW0 8740,11524 8834,11536 9058,11564
@@ -1571,7 +1571,7 @@ Busspur gilt Mo-Sa 7-20 Uhr	RW5;RW0 8119,12414 8354,12416 8400,12417 8540,12420
 	RW7;RW7 10718,13625 10597,13647 10445,13675 10301,13701 10220,13694 10085,13684 9996,13678 9947,13674
 #: note: hier ist die Fahrradstraße unterbrochen
 	RW0;RW0 9947,13674 9927,13666 9900,13653
-	RW7;RW7 9900,13653 9749,13582 9611,13517 9296,13397 9281,13374
+	RW7;RW7 9900,13653 9749,13582 9611,13517 9312,13388 9293,13366
 	RW7;RW7 10777,13614 10872,13570 11059,13480 11104,13456
 #: next_check_id: INVALIDEN-2014
 #: last_checked: 2014-06-26
@@ -1623,7 +1623,7 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html
 #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder
 #: XXX kommen die Radwegschilder noch?
-#: last_checked: 2014-08-12
+#: last_checked: 2014-10-01
 	RW3; 8098,13419 8293,13519
 	RW2; 8293,13519 8337,13541 8362,13554
 	RW3; 8362,13554 8450,13599
@@ -2040,7 +2040,7 @@ am Anfang gibt es einen Radweg von 20 Metern Länge	RW0; 8900,15146 9141,15272
 Verbundsteinpflaster	RW1; 9443,15430 9363,15388
 Schotterweg	RW1; 9363,15388 9141,15272 8900,15146
 #: by: daniel.geraskov
-	RW4?;RW0 9281,13374 9225,13389
+	RW4?;RW0 9293,13366 9225,13389
 	RW2;RW2 14744,5211 14694,5230 14546,5495 14507,5499 14421,5465 14392,5453 14327,5427 14236,5393 14121,5356 14028,5325
 	RW;RW1 14028,5325 13809,5257
 Busspur gilt Mo-Fr 6-19 Uhr	RW5;RW0 17542,4772 17601,5090 17648,5338

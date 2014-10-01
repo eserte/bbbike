@@ -1389,7 +1389,7 @@ Berliner Allee: Straßenbahntrasse	3nocross 13401,15821 13432,15843 13487,15888
 #: note: Luftbild
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
 Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 5356,21146 5382,21001
-Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9225,13389 9281,13374 9415,13315
+Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9225,13389 9293,13366 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16568,7009
 Schnellerstr.: Mittelstreifen	3nocross 17290,6228 17216,6308 16843,6712
@@ -2540,6 +2540,15 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: INVALIDENFRIEDHOF-2014
+#: by: Birgit Schroeer
+#: confirmed_by: srt
+#: last_checked: 2014-10-01
+#: next_check: 2015-02-14
+#: valid: 20140925-20150214
+#: XXX danach gilt für eine Woche noch der temp_blockings-Eintrag
+Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
+# 
 #: last_checked: 2014-09-20
 #: check_frequency: 90d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, evtl. dauerhaft	2 12807,11287 12713,11372
@@ -2553,8 +2562,8 @@ Alfred-Döblin-Platz: Bauarbeiten, Fahrbahn gesperrt	2::inwork 11162,10919 11150,
 #: last_checked: 2014-09-16
 Dresdener Str.: Bauarbeiten, komplett gesperrt	2::inwork 11034,11249 11000,11327
 # 
-#: last_checked: 2014-09-03
-Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12576,11375 12638,11433
+#: last_checked: 2014-10-01
+Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12641,11288 12664,11310 12713,11372
 # 
 #: XXX theoretisch ist ein Trampelpfad vorbei vorhanden
 #: last_checked: 2014-09-23
@@ -2562,7 +2571,7 @@ Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12576,11375 12638,11433
 Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045
 # 
 #: XXX laut Schild bis Dezember 2014 gesperrt
-#: last_checked: 2014-09-25
+#: last_checked: 2014-10-01
 #: next_check: 2014-12-15
 Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
 # 

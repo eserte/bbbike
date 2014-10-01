@@ -4532,7 +4532,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002765',
        data  => <<EOF,
-userdel	q4; 9611,13517 9296,13397 9281,13374
+userdel	q4; 9611,13517 9312,13388 9293,13366
 EOF
      },
      { from  => 1147989600, # 2006-05-19 00:00
@@ -10972,7 +10972,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_007850',
        data  => <<EOF,
-userdel	q4::inwork; 9281,13374 9225,13389
+userdel	q4::inwork; 9293,13366 9225,13389
 EOF
      },
      { from  => 1203202800, # 2008-02-17 00:00
@@ -23454,8 +23454,11 @@ EOF
        text  => 'Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
-#: XXX vor Ort anschauen --- vielleicht wird hier asphaltiert?
+#: XXX vielleicht wird hier asphaltiert?
+#: last_checked: 2014-10-01
+#: next_check: 2015-02-14
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 EOF
      },

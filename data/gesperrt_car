@@ -436,9 +436,9 @@ Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9385,13174
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9262,13111 9269,13060 9279,12953
 Friedrichstr. -> Ziegelstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9262,13111 9269,13060 9413,13071
 Ziegelstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9413,13071 9269,13060 9279,12953
-Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9225,13389 9281,13374 9415,13315
-Oranienburger Str. -> Linienstr.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9225,13389 9281,13374 9296,13397
-Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9296,13397 9281,13374 9415,13315
+Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9225,13389 9293,13366 9415,13315
+Oranienburger Str. -> Linienstr.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9225,13389 9293,13366 9312,13388
+Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9312,13388 9293,13366 9415,13315
 Durchfahrt für Autofahrer per Poller gesperrt	3nocross::ignrte 5966,6747 5896,6785 5811,6833
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5811,6833 5896,6785 5957,6889
 Saarstr. -> Fregestr.: Durchfahrt für Autofahrer per Poller gesperrt	3::igndisp 5966,6747 5896,6785 5777,6628

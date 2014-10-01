@@ -3642,8 +3642,11 @@ userdel	2::inwork 15419,10706 15379,10651
          'text' => 'Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
          'from' => 1412021931,
          'id' => 2636,
-         'data' => '#: by: Birgit Schroeer
-#: XXX vor Ort anschauen --- vielleicht wird hier asphaltiert?
+         'data' => '#: next_check_id: INVALIDENFRIEDHOF-2014
+#: by: Birgit Schroeer
+#: XXX vielleicht wird hier asphaltiert?
+#: last_checked: 2014-10-01
+#: next_check: 2015-02-14
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 ',
          'type' => 'gesperrt'
