@@ -201,7 +201,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php
 #: source_id: IM_022377
 #: last_checked: 2014-08-08
-#: next_check: 2014-12-31
+#: next_check: 2014-11-14
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaﬂnahme 8.14 (Realisierung nach 2011)
@@ -384,11 +384,13 @@ Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: XXX fehlen in Berlin.coords.data, PLZ wahrscheinlich 12527; beides sind Privatstraﬂen vvv
+#: XXX fehlen in Berlin.coords.data, PLZ 12527; beides sind Privatstraﬂen vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4906 vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036406312569/406312569/00102749/49-Anlagen/01/DRS0806VK.pdf vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2014 vvv
 Waldkiefernring: genaue Lage, Qualit‰t?	?::inwork 21839,2419 21848,2405 21748,2355 21786,2279 21896,2326
 F‰henweg: genaue Lage, Qualit‰t?	?::inwork 21875,2363 21803,2324
+#: by: ^^^
 #: by: ^^^
 #: by: ^^^
 #: XXX ^^^
@@ -3677,7 +3679,7 @@ Konrad-Zuse-Ring (Potsdam): Ist die Straﬂe schon fertig gestellt? Qualit‰t?	? -1
 # 
 #: source_id: LS/721-E/14/051
 #: next_check: 2014-10-02
-Schenkenberg - Autobahn: Bau eines Radwegs	?::inwork 46581,105900 47587,106693
+Schenkenberg - Autobahn: Existiert hier ein Radweg? Qualit‰t (asphaltiert?)? Auf welcher Seite der Straﬂe befindet sich der Radweg?	? 46581,105900 47587,106693
 Jahnpromenade (Erkner): Qualit‰t?	? 34325,3183 34352,3189 34493,3339
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf

@@ -2815,14 +2815,13 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        {
          'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
-         'until' => 1412442000,
-         'text' => 'Oberspreestr., Sperrung des Bahnübergangs in Richtung Westen, Fußgänger können passieren, Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis Anfang Oktober 2014',
+         'until' => 1414778400,
+         'text' => 'Oberspreestr., Sperrung des Bahnübergangs in Richtung Westen, Fußgänger können passieren, bis 31.10.2014',
          'from' => 1407706402,
          'id' => 2344,
          'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
 #: source_id: IM_022567
 userdel	q4::inwork; 19445,5271 19405,5284 19328,5304
-userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20437,5463 20781,5242
 ',
          'type' => 'handicap'
        },
@@ -3668,6 +3667,17 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
          'from' => 1413237600,
          'id' => 2638,
          'data' => 'userdel	q4::inwork 8661,6169 8830,6145 8944,6127
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
+         'until' => 1415980800,
+         'text' => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 14.11.2014',
+         'from' => 1407706402,
+         'id' => 2639,
+         'data' => '#: source_id: IM_022377
+userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20437,5463 20781,5242
 ',
          'type' => 'handicap'
        }

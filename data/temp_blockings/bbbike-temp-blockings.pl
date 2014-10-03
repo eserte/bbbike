@@ -20473,15 +20473,14 @@ userdel	q4::inwork; 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,
 EOF
      },
      { from  => 1407706402,
-       until => $isodate2epoch->("2014-10-04 19:00:00"),
-       text  => 'Oberspreestr., Sperrung des Bahnübergangs in Richtung Westen, Fußgänger können passieren, Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis Anfang Oktober 2014',
+       until => $isodate2epoch->("2014-10-31 19:00:00"),
+       text  => 'Oberspreestr., Sperrung des Bahnübergangs in Richtung Westen, Fußgänger können passieren, bis 31.10.2014',
        type  => 'handicap',
        source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
 #: source_id: IM_022567
 userdel	q4::inwork; 19445,5271 19405,5284 19328,5304
-userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20437,5463 20781,5242
 EOF
      },
      { from  => 1351726607, # undef
@@ -23478,6 +23477,16 @@ EOF
        source_id => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf',
        data  => <<EOF,
 userdel	q4::inwork 8661,6169 8830,6145 8944,6127
+EOF
+     },
+     { from  => 1407706402,
+       until => $isodate2epoch->("2014-11-14 17:00:00"),
+       text  => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 14.11.2014',
+       type  => 'handicap',
+       source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
+       data  => <<EOF,
+#: source_id: IM_022377
+userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20437,5463 20781,5242
 EOF
      },
     );
