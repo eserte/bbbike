@@ -1057,7 +1057,7 @@ Hahns Mühle	1 24667,4900 24778,4821
 Oberspreestr. [Wohngebiet]	1 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Kornmandelweg	1 21311,13522 21345,13550
 Immortellenweg: Schulhof	2 24282,10015 24314,10096
-# REMOVED (Situation nach den Bauarbeiten evaluieren) --- Walterstr.	1s:q3 13126,6687 13099,6712
+# REMOVED (Situation nach den Bauarbeiten evaluieren) --- Walterstr.	1s:q3 13121,6689 13099,6712
 Karl-Bonhoeffer-Nervenklinik	1 5187,19368 5219,19285
 Karl-Bonhoeffer-Nervenklinik	1 5219,19285 5172,19298 5150,19350
 Koppenplatz	1 9947,13674 9980,13559 9946,13550
@@ -1086,6 +1086,7 @@ Malchower Str.	1 12838,18155 12785,18128
 Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
 Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
 (Zufahrt Debis-Parkhaus)	1 8384,10507 8350,10499 8335,10518 8348,10636 8350,10662 8367,10745 8424,10703 8430,10710
+Walterstr.	1 13121,6689 13099,6712
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1432,7 +1433,7 @@ Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
 Streitstr.: Mittelstreifen	3nocross -3029,16823 -3023,16925 -3018,16974
 #: note: Luftbild
-Marienfelder Chaussee: Mittelstreifen	3nocross 10761,1108 10829,1135 11012,1210
+Marienfelder Chaussee: Mittelstreifen	3nocross 10769,1111 10829,1135 11012,1210
 Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5545,19909 5533,19811
 #: by: rjoop/srt
 Bahntrasse	3nocross 15875,1796 15835,1747 15799,1690 15729,1573
@@ -2273,7 +2274,8 @@ Poller (lichte Breite ca. 60cm)	BNP:5::trailer=no -8061,5386
 Steinpoller (lichte Breite ca. 110cm)	BNP:1::trailer=5 -9027,4521
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 -5202,11342
 Drängelgitter (lichte Breite ca. 80cm)	BNP:4::trailer=no -5236,11204
-2x Drängelgitter	BNP:6::trailer=25 13189,2736
+Drängelgitter	BNP:3::trailer=12 13194,2732
+Drängelgitter	BNP:3::trailer=12 13187,2729
 Schranke (lichte Breite ca. 100cm)	BNP:2::trailer=5 20904,19284
 #: note: ausweichen über Gehweg (Bordsteine!)
 Schranke	BNP:4::trailer=10 11432,4054
@@ -2415,7 +2417,10 @@ Drängelgitter	BNP:5 -7182,15524
 Drängelgitter und Schranke	BNP:5::trailer=15 14285,12190
 Drängelgitter	BNP:5 14314,14841
 Drängelgitter	BNP:5 20586,10935
-Drängelgitter, relativ breite Durchfahrt	BNP:3 12363,2367
+Drängelgitter	BNP:3::trailer=10 12373,2375
+Drängelgitter	BNP:3::trailer=10 12280,2330
+Drängelgitter	BNP:3::trailer=10 12391,2382
+Drängelgitter	BNP:3::trailer=10 12593,2472
 Drängelgitter	BNP:5 15516,6357
 Drängelgitter	BNP:5 15496,6314
 Drängelgitter	BNP:5 15403,6145

@@ -74,7 +74,7 @@ Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9227,8890
 Mangerstr. (Potsdam)	1 -12054,-274 -12123,-294 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10429,-1944 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 Bendastr.	1 12689,6905 12702,6846
-Bendastr.	1 12793,6407 12781,6470 12759,6563 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
+Bendastr.	1 12793,6407 12782,6462 12759,6563 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
 Puschkin/Bulgarische	1 14193,9746 14270,9710 14318,9688 14780,9480 14819,9462 14883,9431 15383,9191 15442,9095 15452,9079 15561,8903 15591,8848 15378,8668 15166,8489
 Karl-Marx-Str./Schönstedt	3nocross::ignrte 12500,8504 12540,8458 12562,8432 12582,8408
 Karl-Marx-Str. -> Schönstedtstr.: Karl-Marx-Str./Schönstedt	3::igndisp 12500,8504 12540,8458 12649,8535
@@ -481,7 +481,7 @@ Lilienthalstr.: Barriere für Autos	3 10640,8832 10627,8706 10615,8558
 Mittelstreifen	3nocross::ignrte 23021,13982 22975,13814 22970,13798 22929,13661
 Hellersdorfer Str. -> Feldberger Ring: Mittelstreifen	3::igndisp 22970,13798 22975,13814 22943,13822
 Feldberger Ring -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22943,13822 22975,13814 23021,13982
-Onkel-Bräsig-Str.	1 13323,5222 13359,5086 13324,4784 13305,4504
+Onkel-Bräsig-Str.	1 13327,5234 13359,5086 13324,4784 13305,4504
 Krokusstr.	1 16738,2717 16739,2736 16677,2856
 Gregor-Mendel-Str. (Potsdam)	1 -13596,-508 -13415,-506 -13257,-512 -13182,-515
 Donaustr.	1 12150,8891 12202,8895
@@ -1230,10 +1230,10 @@ Killisch-von-Horn-Weg: Poller	3 9730,17927 9707,17941 9590,18082
 Frauenfelder Weg - Markstr.	3 7441,17009 7647,17037 7644,17054
 Kongostr.	1 6349,16213 6447,16321
 Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13483,3064
-Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13563,2909
+Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13561,2898
 Polierweg: Schranke vor dem Malersteig	3 13650,3025 13596,3039 13606,3085
 Polierweg: Schranke vor dem Malersteig	3 13483,3064 13596,3039 13650,3025
-Polierweg: Schranke vor dem Malersteig	3 13563,2909 13596,3039 13650,3025
+Polierweg: Schranke vor dem Malersteig	3 13561,2898 13596,3039 13650,3025
 Polierweg: Schranke vor dem Malersteig	3 13606,3085 13596,3039 13650,3025
 Polierweg	1 13483,3064 13100,3159 13048,3134
 Zantochweg: Poller	3 12328,3831 12266,3863 12250,3839
@@ -1342,9 +1342,9 @@ Straße 12 (Neukölln): gesperrt für Fahrzeuge aller Art (außer BAB-Versorgung)	2 
 Schranke	3 10549,2257 10559,2252 10617,2226
 Schranke	3 10617,2226 10559,2252 10549,2257
 Einfahrt verboten	3 9520,-641 9561,-748 9340,-829
-Einfahrt verboten	3 9600,-850 9561,-748 9340,-829
-Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11712,-289 11231,-349
-Tordurchfahrt nur für Radfahrer/Fußgänger	3 11231,-349 11712,-289 11721,-351
+Einfahrt verboten	3 9598,-846 9561,-748 9340,-829
+Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11712,-289 11242,-332
+Tordurchfahrt nur für Radfahrer/Fußgänger	3 11242,-332 11712,-289 11721,-351
 Sächsische Str.	1 4550,9539 4533,9400
 Legiendamm	1 11159,10769 11189,10831
 Mittelstreifen	3nocross::ignrte 10067,1939 10127,1778 10172,1657 10226,1515

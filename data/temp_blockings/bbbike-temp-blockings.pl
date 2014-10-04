@@ -21077,7 +21077,7 @@ EOF
        text  => 'Nuthestraße zwischen Steinstraße und Bodmerstraße: Vollsperrung vom 05.11.2012 bis 30.11.2012 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 10301,-1891 10243,-1876 10099,-1482
+userdel	q4::inwork 10301,-1891 10270,-1890 10251,-1877 10239,-1849 10095,-1482
 EOF
      },
      { from  => undef, # 

@@ -798,6 +798,7 @@ Malchower Str.	1 12838,18155 12785,18128
 Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
 Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
 (Zufahrt Debis-Parkhaus)	1 8384,10507 8350,10499 8335,10518 8348,10636 8350,10662 8367,10745 8424,10703 8430,10710
+Walterstr.	1 13121,6689 13099,6712
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1249,9 +1250,9 @@ Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross::ignrt
 Streitstr. -> Wegscheider Str.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3050,16429 -3046,16548 -3214,16561
 Wegscheider Str. -> Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3214,16561 -3046,16548 -3043,16601
 Mittelstreifen	3nocross::ignrte -3029,16823 -3023,16925 -3018,16974
-Mittelstreifen	3nocross::ignrte 10761,1108 10829,1135 11012,1210
+Mittelstreifen	3nocross::ignrte 10769,1111 10829,1135 11012,1210
 Marienfelder Chaussee -> Wingerter Str.: Mittelstreifen	3::igndisp 11012,1210 10829,1135 10845,1026
-Wingerter Str. -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 10845,1026 10829,1135 10761,1108
+Wingerter Str. -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 10845,1026 10829,1135 10769,1111
 Mittelstreifen	3nocross::ignrte 5517,20120 5545,19909 5533,19811
 Oranienburger Str. -> Wilhelm-Gericke-Str.: Mittelstreifen	3::igndisp 5517,20120 5545,19909 5598,19912
 Bahntrasse	3nocross::ignrte 15875,1796 15835,1747 15799,1690 15729,1573
@@ -2558,7 +2559,8 @@ Poller (lichte Breite ca. 60cm)	BNP:5:-152:trailer=no -8061,5386
 Steinpoller (lichte Breite ca. 110cm)	BNP:1:-54:trailer=5 -9027,4521
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:0:trailer=10 -5202,11342
 Drängelgitter (lichte Breite ca. 80cm)	BNP:4:15:trailer=no -5236,11204
-2x Drängelgitter	BNP:6:65:trailer=25 13189,2736
+Drängelgitter	BNP:3:66:trailer=12 13194,2732
+Drängelgitter	BNP:3:71:trailer=12 13187,2729
 Schranke (lichte Breite ca. 100cm)	BNP:2:-72:trailer=5 20904,19284
 Schranke	BNP:4:-102:trailer=10 11432,4054
 Schranke	BNP:4:-41:trailer=10 11408,4190
@@ -2647,7 +2649,10 @@ Drängelgitter	BNP:5:-249 -7182,15524
 Drängelgitter und Schranke	BNP:5:-154:trailer=15 14285,12190
 Drängelgitter	BNP:5:-58 14314,14841
 Drängelgitter	BNP:5:-210 20586,10935
-Drängelgitter, relativ breite Durchfahrt	BNP:3:66 12363,2367
+Drängelgitter	BNP:3:70:trailer=10 12373,2375
+Drängelgitter	BNP:3:64:trailer=10 12280,2330
+Drängelgitter	BNP:3:65:trailer=10 12391,2382
+Drängelgitter	BNP:3:65:trailer=10 12593,2472
 Drängelgitter	BNP:5:23 15516,6357
 Drängelgitter	BNP:5:17 15496,6314
 Drängelgitter	BNP:5:22 15403,6145

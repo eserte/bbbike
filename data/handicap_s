@@ -39,11 +39,8 @@ Leuschnerdamm: Bauarbeiten am Engelbecken, Einbahnstraﬂe	q4::inwork; 11458,11136
 Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 Kˆbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
-Delbr¸ckstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,6717 13099,6712 13126,6687
 Herrfurthstr: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 11833,7980 11754,7964
-Wildenbruchplatz: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13135,8766 13227,8692 13314,8624
-Richardplatz: Bauarbeiten auf der s¸dlichen Fahrbahn	q4::inwork 13188,7590 13303,7622 13400,7642
-Richardplatz/Richardstr.: Bauarbeiten, Umwege notwendig	q4::inwork 13288,7653 13303,7622
+Richardplatz: Bauarbeiten auf der s¸dlichen Fahrbahn	q4::inwork 13188,7590 13303,7622
 Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 13103,7889 13085,7904 12870,8087
 Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 13150,7845 13103,7889
 Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen ¸ber Gehweg	q3::inwork 12088,9775 12250,9691
@@ -293,7 +290,7 @@ Zauritzweg: Fuﬂg‰nger	q1 4199,11819 4195,11692
 Hebbelstr.: Fuﬂg‰nger	q2 3117,11852 3251,12025 3258,12035 3295,12068
 Spreewaldplatz: Fuﬂg‰nger	q1 12341,10218 12292,10374
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8756,8453 8711,8371
-(Fritz-Br‰uning-Promenade): Bordsteine, Fuﬂg‰nger	q3 8731,8020 8623,8018
+(Fritz-Br‰uning-Promenade): Bordstein, Fuﬂg‰nger	q3 8731,8020 8623,8018
 (Teltowkanal, Nordufer): Fuﬂg‰nger (eigentlich f¸r Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9188,5333
 (Kynaststr. - Uferwanderweg): Fuﬂg‰nger	q1 14843,10621 14911,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Fuﬂg‰nger	q1 14797,10476 14820,10473 14868,10467
@@ -423,7 +420,7 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3094,22216 3134,22153
 Altvaterstr.: Fuﬂg‰nger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
 Im Gestell: Fuﬂg‰nger	q1 371,4453 267,4375
 Heinitzweg: Fuﬂg‰nger	q2 10329,1077 10379,1097
-Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
+Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
 (Weichselstr. - Sasarsteig): Spielplatz	q3 12330,8636 12303,8605 12170,8548
 Kaiser-Wilhelm-Platz: einige Fuﬂg‰nger	q2 7201,8870 7307,8945
 Kernhofer Str.: Fuﬂg‰nger, Supermarkt	q2 15369,10921 15355,10875
@@ -838,8 +835,11 @@ Eingang Okerstr.: Bordstein	q2 11528,7528 11540,7534
 Eingang Allerstr.: Bordstein	q3 11507,7647 11516,7654
 Tullaweg - An der Heilandsweide: Fuﬂg‰nger	q1 8464,990 8492,1050
 (Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
-(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7501,83 7520,76 7540,18 7559,14 7659,-112 7668,-138 7722,-180
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7501,83 7520,76 7535,20 7559,14 7659,-112 7668,-138 7722,-180
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7668,-138 7552,-67 7535,20
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): enger Weg	q3 7722,-180 7717,-285 7776,-283
+(KGA Birkholz): einige Fuﬂg‰nger	q1 7751,-920 7766,-920 7765,-898 7977,-864 8026,-859 8059,-1077 8063,-1107 8085,-1120
+(KGA Birkholz): einige Fuﬂg‰nger	q1 7766,-920 8059,-1077
 Sch‰ﬂburger Weg: enge Straﬂe	q1 6963,-82 6983,-123 7040,-188 7090,-225 7127,-248
 (Lichterfelder Ring - Mauerweg): teilweise enger Weg	q2 6582,600 6598,536 6600,150
 (Malteserstr. - Kamenzer Damm): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 7437,1859 7592,1892 7612,1918 7646,2019 7645,2110
@@ -1293,7 +1293,7 @@ Unterbaumstr.: Bordsteine	q2 8486,12918 8502,12935
 (M‰rkische Zeile): Einkaufszentrum, Fuﬂg‰nger	q4 6847,21509 6856,21396
 (Mittelheide): teilweise recht eng	q1 23585,6523 23954,6721 24185,6880
 Hohenseeweg: nur f¸r Fuﬂg‰nger erlaubt, Bordstein	q4 23152,11065 22972,11066
-Totilastr.: Bordsteine, Fuﬂg‰nger	q4 8574,5580 8610,5579
+Totilastr.: Bordsteine, Fuﬂg‰nger	q4 8574,5580 8600,5580
 Gersdorfstr. - Wulfila-Ufer: Bordstein, einige Fuﬂg‰nger	q2 8255,4791 8184,4716
 (Brentanostr. - Breitenbachplatz): einige Fuﬂg‰nger	q1 4058,6602 4034,6642
 (Rewe-Parkplatz): Supermarkt-Parkplatz	q2 3746,2108 3723,2118 3726,2209
@@ -1435,6 +1435,18 @@ Iranische Str.: einige Fuﬂg‰nger	q1 7843,16524 7717,16541 7707,16543 7456,16620
 (Hohenschˆnhauser Str. - Falkenberger Krugwiesen): einige Fuﬂg‰nger, eng	q1 19183,17444 19074,17533 19017,17609 18993,17630 18965,17675 18937,17738
 Premnitzer Str.: Bordstein	q4 20363,16976 20376,16970
 (Wustrower Str. - Wustrower Park): Bordstein	q3 17128,18281 17162,18304
+Weg im Freizeitpark Marienfelde: Steigung, Regenablaufrinnen, Fuﬂg‰nger	q3; 7773,-344 7786,-348 7803,-387 7801,-467 8008,-486 8025,-508
+Weg im Freizeitpark Marienfelde: Gef‰lle, Regenablaufrinnen, Fuﬂg‰nger	q3; 8025,-508 8008,-486 7801,-467 7803,-387 7786,-348 7773,-344
+Weg im Freizeitpark Marienfelde: Steigung, Regenablaufrinnen, Fuﬂg‰nger	q3; 7978,-846 7980,-823 8021,-805 8013,-773 8024,-710 8023,-662
+Weg im Freizeitpark Marienfelde: Gef‰lle, Regenablaufrinnen, Fuﬂg‰nger	q3; 8023,-662 8024,-710 8013,-773 8021,-805 7980,-823 7978,-846
+Weg im Freizeitpark Marienfelde: Fuﬂg‰nger	q2 8025,-508 8023,-662
+Weg im Freizeitpark Marienfelde: Fuﬂg‰nger	q2 7977,-864 7978,-846
+Weg am ehem. G¸terauﬂenring: Steigung, Regenablaufrinnen	q3; 8162,-810 8078,-823 8055,-834 7978,-846
+Weg am ehem. G¸terauﬂenring: Gef‰lle, Regenablaufrinnen	q3; 7978,-846 8055,-834 8078,-823 8162,-810
+(Parkweg am Kˆnigsgraben): Steigung, Regenablaufrinnen	q3; 8679,-848 8680,-831 8690,-805 8692,-777 8687,-766
+(Parkweg am Kˆnigsgraben): Gef‰lle, Regenablaufrinnen	q3; 8687,-766 8692,-777 8690,-805 8680,-831 8679,-848
+Nuthestr.: Bordstein, Fuﬂg‰nger	q3 9815,-805 9813,-822
+Hochspannungsweg (Britz): einige Fuﬂg‰nger	q1 13769,2991 13631,2938 13561,2898 13430,2837 13264,2763 13194,2732 13190,2730 13187,2729 13136,2705 13029,2661 12924,2617 12825,2573 12694,2517 12593,2472 12391,2382 12384,2379 12373,2375 12280,2330 11747,2091 11626,2037 11373,1925 11343,1937
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -1537,7 +1549,7 @@ Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8872,5484 8887,5564
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 821,2714 1017,2823 1126,2885 1262,2975
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fuﬂg‰nger	q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2228,3554
 Uferpromenade: Restaurantbetrieb	q3 -1659,18104 -1659,18076
-Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12893,6527 12902,6495 12921,6424
+Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12893,6527 12904,6488 12921,6424
 Hessenallee: enge Straﬂe	q1 640,11676 640,11706 769,11770 881,11893
 Pech¸ler Pfad: eng, Fuﬂg‰nger	q3 2793,6593 2875,6648
 Pech¸ler Pfad: Fuﬂg‰nger	q3 2854,6675 2953,6743
@@ -1806,10 +1818,10 @@ Altenburger Str.: Fuﬂg‰nger, Bordsteine	q2 6651,1063 6631,968
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 (Gielower Str - Buschkrugallee): Fuﬂg‰nger	q1 14012,4184 14053,4173 14119,4153
 (Parkweg Buschkrugallee - Bruno-Taut-Ring): Fuﬂg‰nger	q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13626,3867
-(Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fuﬂg‰nger	q1 13463,3854 13487,3862 13601,3895
+(Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fuﬂg‰nger	q1 13463,3854 13489,3857 13601,3895
 (Parkweg Fritz-Reuter-Allee - Britzer-Park):Fuﬂg‰nger	q1 13463,3854 13302,3837
-(Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 13487,3862 13531,3768 13545,3692 13623,3523
-(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13778,2987 13766,3018 13730,3111 13740,3252 13738,3302 13728,3332 13623,3523
+(Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 13489,3857 13531,3768 13562,3688 13623,3523
+(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13769,2991 13763,3018 13730,3111 13740,3252 13738,3302 13728,3332 13682,3411 13651,3449 13623,3523
 Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5337,4192 5320,4217 5246,4240 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
@@ -1956,7 +1968,7 @@ Welsestr.: enge Straﬂe	q1 18601,18342 18620,18283 18660,18226 18709,18159 18746,
 Bleichertstr.: enge Straﬂe	q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,1457 8661,1649
 Redwitzgang: enge Straﬂe	q1 17266,4720 17225,4568
 Hellersdorfer Promenade: Fuﬂg‰ngerzone	q1 24131,15109 24112,15236 24094,15360 24076,15481
-Muschelkalkweg: enge Straﬂe	q0 10718,1220 10795,1251 10868,1281 10950,1315 11042,1352 11120,1384 11157,1269
+Muschelkalkweg: enge Straﬂe	q0 10722,1222 10795,1251 10868,1281 10950,1315 11042,1352 11120,1384 11157,1269
 Groﬂstr.: enge Straﬂe	q0 18574,6401 18483,6460 18457,6490 18429,6582
 Rothariweg: enge Straﬂe	q0 8292,6331 8290,6191 8291,6048
 K¸selstr.: enge Straﬂe	q1 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621
@@ -2036,7 +2048,7 @@ Jenbacher Weg: enge Straﬂe	q1 6398,590 6411,533 6233,412 6180,376 5987,256 5800,
 Rudi-Dutschke-Weg: viele Fuﬂg‰nger	q2 2627,5095 2913,5294
 Dinkelsb¸hler Steig: enge Straﬂe	q0 2615,25225 2649,25170 2694,25132 2775,25092 2816,25037
 ÷tztaler Str.: enge Straﬂe	q1 10690,17420 10630,17421
-Schlierbacher Weg: enge Straﬂe	q1 10734,1178 10685,1159 10450,1202 10453,1242 10440,1283
+Schlierbacher Weg: enge Straﬂe	q1 10740,1180 10685,1159 10450,1202 10453,1242 10440,1283
 Fritz-K¸hn-Str.: enge Straﬂe	q1 21688,-589 21666,-657 21487,-912 21445,-963
 Mittelstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 15543,14491 15647,14693 15706,14752 15856,14915
 Nantesstr.: enge Straﬂe	q1 11200,21689 11251,22022 11231,22065 11077,22236

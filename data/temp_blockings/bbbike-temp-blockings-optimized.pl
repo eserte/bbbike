@@ -3485,16 +3485,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'LS/721-E/14/067',
-         'until' => 1412373599,
-         'text' => 'Altlandsberg: L235: Deckenerneuerung Werneuchen bis Wegendorf, Vollsperrung, 11.08.2014 08:00 Uhr bis 03.10.2014 ',
-         'from' => 1407650400,
-         'id' => 2607,
-         'data' => 'userdel	2::inwork 33953,23796 34266,22939
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20140813.1350.398688.html',
