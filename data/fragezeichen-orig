@@ -192,9 +192,9 @@ Karl-Marx-Str.: wann werden die restlichen Radspuren markiert?	?::projected 1314
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
-#: last_checked: 2014-07-17
+#: last_checked: 2014-10-05
 #: check_frequency: 100d
-Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15557,7404 15564,7395 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
+Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 #: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
 #: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt?
@@ -426,9 +426,7 @@ Goldfasanenweg: dieser Abschnitt fehlt noch	?::inwork 20861,15352 20906,15352
 #: last_checked: 2014-08-30
 Torgauer Str.: Straße wird zurückgebaut, nur ein Rad/Gehweg bleibt erhalten, wahrscheinlich mit besserer Qualität	?::projected 7250,8223 7374,8211 7402,8208
 # 
-#: XXX zurzeit betoniert, Q0 bleibt aber
-#: next_check: 2014-08-23
-Radenzer Straße und Heidemühler Weg: nach den Bauarbeiten asphaltiert	? 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,6503
+# REMOVED (scheint aber weiterhin betoniert zu sein) --- #: XXX zurzeit betoniert, Q0 bleibt aber --- #: next_check: 2014-08-23 --- Radenzer Straße und Heidemühler Weg: nach den Bauarbeiten asphaltiert	? 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,6503
 # 
 #: by: http://www.wasserstadt-spindlersfeld.de/media/rokgallery/3/3d5d905a-4cc9-4db5-b900-98d710dc3203/39a732b0-0220-4970-e1c5-cdc4bb0dec0c.jpg
 #: by: http://www.wasserstadt-spindlersfeld.de/projekt/wasserstadt-spindlersfeld
@@ -704,7 +702,7 @@ Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4693
 #: priority: #C
-#: last_checked: 2014-06-10
+#: last_checked: 2014-10-05
 #: check_frequency: 120d
 Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen angelegt?	?::projected 16395,7401 16406,7430 16412,7463
 # 
@@ -831,7 +829,7 @@ Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,1191
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2014-09-21
+#: last_checked: 2014-10-05
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
@@ -1812,7 +1810,7 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12998,-1257 
 #: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
-#: last_checked: 2014-08-08 vvv
+#: last_checked: 2014-10-05 vvv
 #: check_frequency: 60d vvv
 #: XXX Berlin.coords.data -> Alzeyweg|Lichtenberg|10365
 Alzeyweg: genaue Lage? Qualität? PLZ=10365	? 17376,12422 17366,12357 17365,12301
@@ -2744,11 +2742,13 @@ Am Hirtengraben (Potsdam): Qualität? Für Autos befahrbar?	? -7944,-5153 -7934,-5
 #: note: laut osm "unbefestigt" und für Autos offen
 Am Hirtengraben (Potsdam): Qualität? Für Autos befahrbar?	? -7934,-5175 -8001,-5199 -8116,-5221
 Mildred-Harnack-Str. (Potsdam): Qualität?	? -7384,-5346 -7411,-5348 -7489,-5351
-Lise-Meitner-Str. (Potsdam): Qualität?	? -7319,-5445 -7378,-5448 -7405,-5449 -7484,-5452 -7533,-5454 -7582,-5438 -7602,-5430 -7624,-5411 -7633,-5396 -7646,-5361 -7678,-5326 -7724,-5283 -7739,-5246 -7745,-5192
+Lise-Meitner-Str. (Potsdam): Qualität?	? -7319,-5445 -7378,-5448 -7405,-5449 -7484,-5452 -7533,-5454 -7549,-5447 -7582,-5438 -7602,-5430 -7624,-5411 -7633,-5396 -7646,-5361 -7678,-5326 -7724,-5283 -7739,-5246 -7745,-5192
 Kamblystr. (Potsdam): Qualität?	? -7672,-5189 -7672,-5238 -7633,-5279
 Clara-Schumann-Str. (Potsdam): Qualität?	? -7492,-5242 -7491,-5264 -7489,-5321 -7489,-5351 -7488,-5379 -7484,-5452 -7482,-5550 -7537,-5620 -7561,-5659 -7634,-5733 -7661,-5767 -7661,-5767
 Gertrud-Kolmar-Str. (Potsdam): Qualität?	? -7313,-5545 -7373,-5548 -7403,-5549 -7482,-5550
+#: XXX zweifelhafter Eintrag von anonymous: Asphalt, Q0, aber NN (osm meint Anlieger frei) und "viele Fußgänger"?
 Schinkelstr. (Potsdam): Qualität?	? -7655,-5517 -7582,-5438
+Stülerstr. (Potsdam): Qualität?	? -7549,-5447 -7564,-5531 -7592,-5565
 Schadowstr. (Potsdam): Qualität?	? -7713,-5470 -7658,-5407 -7633,-5396
 Clara-Schumann-Str. - Dorothea-Schneider-Str.: Qualität? Hat diese Verbindung einen Straßennamen?	? -7488,-5379 -7558,-5383 -7580,-5366
 Maimi-von-Mirbach-Str. (Potsdam): Qualität?	? -7395,-5032 -7381,-5036 -7364,-5052 -7322,-5087 -7272,-5050 -7211,-5047
@@ -2799,8 +2799,8 @@ Nieden - Göritz: Qualität?	? 43753,115606 43904,115305 43730,115229 42427,113348
 Göritz - Tornow: Qualität?	? 43007,111999 43070,112007 43476,111826 43822,111442 44872,110944 45766,110618
 Karlshorst - Klockow: Qualität?	? 47399,110869 48560,110342 48678,110373 49007,110760 49176,110846 49375,110881
 Klockow - Carmzow: Qualität (am Carmzower Ende asphaltiert)?	? 49504,110961 49632,111046 49784,110602 49946,110487 50378,110259 50590,110075 50764,110031 50955,110066 51082,110034 51139,109983 51948,109454
-Am Gehölz (Potsdam): Qualität?	? -7756,-2459 -8024,-2468 -8140,-2475
-Hubertusdamm (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7808,-2689 -7484,-2745 -7369,-2751 -7266,-2736
+Am Gehölz (Potsdam): Qualität?	? -7758,-2457 -8024,-2468 -8140,-2475
+Hubertusdamm (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7803,-2689 -7484,-2745 -7369,-2751 -7266,-2736
 Brahmsweg (Potsdam): Qualität?	? -8136,-2699 -8132,-2754 -8138,-2804
 Schubertstr. (Potsdam): Qualität?	? -8219,-2795 -8138,-2804 -8108,-2809 -7965,-2825
 Mozartstr. (Potsdam): Qualität im nördlichen Abschnitt?	? -8108,-2809 -8127,-2925

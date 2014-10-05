@@ -19,7 +19,7 @@ Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,1
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2014-10-04 vvv
+#: last_checked: 2014-10-05 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -145,8 +145,10 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: last_checked: 2014-10-01
 Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
-#: last_checked: 2014-10-01
+#: last_checked: 2014-10-03 vvv
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
+Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864
+#: last_checked ^^^
 # 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2014-08-12 vvv
@@ -331,13 +333,13 @@ Sandinostr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15799,14674 15706,14752
 Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
 # 
 #: next_check_id: HAUPTBUCHT-2014
-#: last_checked: 2014-09-21 (Absperrgitter existieren noch, werden aber oft von Fußgängern weggeschoben) (deshalb nur q3)
+#: last_checked: 2014-10-05 (Absperrgitter existieren noch, werden aber oft von Fußgängern weggeschoben) (deshalb nur q3)
 #: check_frequency: 60d
 (Rummelsburger Ufer - Hauptstr.): Bauarbeiten, ggfs. Umweg über Norma-Parkplatz notwendig	q3::inwork 15249,10564 15307,10701
 # 
 # REMOVED (anscheinend schon beendet) --- #: last_checked: 2014-05-06 --- #: next_check: 2014-05-31 (Bauarbeiten bis Mai 2014) --- #: valid: -20140531 --- Archibaldweg: Bauarbeiten zwischen Leopoldstr. und Rupprechtstr. Richtung Nordosten	q3::inwork; 15950,10987 16034,11053
 # 
-#: last_checked: 2014-09-17
+#: last_checked: 2014-10-05
 #: check_frequency: 30d
 Stadthausstr.: Bauarbeiten, Einbahnstraße, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
 # 
@@ -812,8 +814,8 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
-#: last_checked: 2014-07-06 (Bauarbeiten in Gang)
-#: next_check: 2014-11-08
+#: last_checked: 2014-10-05
+#: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12699,5909 13064,5953
@@ -995,7 +997,7 @@ Perleberger - Kieler: unterhalb der Brücke sehr eng	q3 7636,14414 7612,14449
 Ida-Wolff-Platz: Fußgänger	q2 9210,10614 9192,10528
 Falkstr.: Fußgänger	q1 12179,7979 12220,7822
 (Falkstr. - Mittelweg): gemeinsamer Fuß- und Radweg	q1 12220,7822 12224,7799
-(Platanenweg - Willi-Sänger-Str.): Fußgänger	q1 15787,8073 15843,8125
+(Platanenweg - Willi-Sänger-Str.): Fußgänger	q1 15787,8073 15808,8099 15843,8125
 Carl-Herz-Ufer: gemeinsamer Fuß- und Radweg	q0- 10066,10071 10168,10085
 Münsterberger Weg: gemeinsamer Fuß- und Radweg	q1 23225,11649 23032,11729
 # REMOVED --- Münsterberger Weg: gemeinsamer Fuß- und Radweg	q1 23032,11729 22999,11725 22886,11776
@@ -1563,8 +1565,8 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 #: XXX_prog BS Bordstein an der Fischerstr.
 (Zobtener Str. - Fischerstr.): Fußgänger, Rampe, Bordstein	q2 16353,10207 16404,10286
 (Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
-#: XXX_prog BS Bordstein am Monimbóplatz
-(Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz)	q2 17023,11908 17026,11888
+#: XXX_prog BS Bordstein am Monimbóplatz, ansonsten entfernen
+(Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Bordstein	q2 17023,11908 17026,11888
 #: note: abgesenkter Bordstein zur Wallstr.
 Märkischer Platz: Fußgänger	q2 11034,12038 11084,12070 11111,12027
 #: XXX_prog BS zur Grünstraßenbrücke
@@ -2154,6 +2156,7 @@ Weg am ehem. Güteraußenring: Gefälle, Regenablaufrinnen	q3; 7978,-846 8055,-834 
 Nuthestr.: Bordstein, Fußgänger	q3 9815,-805 9813,-822
 #: note: besonders an schönen Tagen
 Hochspannungsweg (Britz): einige Fußgänger	q1 13769,2991 13631,2938 13561,2898 13430,2837 13264,2763 13194,2732 13190,2730 13187,2729 13136,2705 13029,2661 12924,2617 12825,2573 12694,2517 12593,2472 12391,2382 12384,2379 12373,2375 12280,2330 11747,2091 11626,2037 11373,1925 11343,1937
+(Dammweg - Willi-Sänger-Str.): einige Fußgänger	q1 15751,8163 15808,8099 15883,8020
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

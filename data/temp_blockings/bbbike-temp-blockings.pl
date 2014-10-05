@@ -18662,7 +18662,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.potsdam.de/cms/beitrag/10070344/966975/',
        data  => <<EOF,
-userdel	q4::inwork -7750,-2431 -7909,-2375 -7996,-2293
+userdel	q4::inwork -7751,-2420 -7870,-2400 -7909,-2375 -7996,-2293
 EOF
      },
      { from  => 1289125260, # 2010-11-07 11:21
@@ -19457,7 +19457,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_108107',
        data  => <<EOF,
-userdel	q4::inwork 15557,7404 15221,7778
+userdel	q4::inwork 15553,7408 15221,7778
 EOF
      },
      { from  => 1309644000, # 2011-07-03 00:00
@@ -20549,7 +20549,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018917',
        data  => <<EOF,
-userdel	q4::inwork 15751,8250 15692,8198 15557,8077
+userdel	q4::inwork 15751,8250 15708,8212 15692,8198 15557,8077
 EOF
      },
      { from  => 1340082000, # 2012-06-19 07:00
@@ -21708,7 +21708,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_119430',
        data  => <<EOF,
-userdel	q4::inwork 15920,7697 15765,7567 15696,7507
+userdel	q4::inwork 15920,7697 15763,7569 15693,7512
 EOF
      },
      { from  => 1372834800, # 2013-07-03 09:00
