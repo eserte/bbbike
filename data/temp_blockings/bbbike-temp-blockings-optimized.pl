@@ -768,26 +768,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html
-userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
-',
-         'periodic' => 1,
-         'until' => 1412546399,
-         'from' => 1412373600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              5,
-                              'months',
-                              10
-                            ]
-                          ],
-         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 4. und 5.10.2014',
-         'type' => 'gesperrt',
-         'id' => 731
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2716,20 +2697,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'recurring' => 1,
-         'text' => 'Hausvogteiplatz: Wochenmarkt Mittwoch und Freitag 9-16 Uhr, Behinderungen möglich',
-         'from' => undef,
-         'id' => 2271,
-         'data' => '#: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2011/1122_MI.pdf
-#: XXX zieht im Oktober 2014 an den Spittelmarkt
-#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6083
-#: next_check: 2014-10-01
-	q4::temp:clock 9925,11947 9878,11857
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3157,16 +3125,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_023012',
-         'until' => 1412568000,
-         'text' => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, 29.09.2014 06:00 Uhr bis 06.10.2014 06:00 Uhr',
-         'from' => 1411963200,
-         'id' => 2469,
-         'data' => 'userdel	2::inwork 17736,5441 17886,5587
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

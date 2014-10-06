@@ -19774,15 +19774,12 @@ userdel	2::temp 4262,20025 4319,20182
 EOF
      },
      { from  => undef, #
-       until => undef, #
+       until => $isodate2epoch->("2014-09-24 23:59:59"), # undef, #
        text  => 'Hausvogteiplatz: Wochenmarkt Mittwoch und Freitag 9-16 Uhr, Behinderungen möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2011/1122_MI.pdf
-#: XXX zieht im Oktober 2014 an den Spittelmarkt
-#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6083
-#: next_check: 2014-10-01
+# REMOVED --- #: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2011/1122_MI.pdf --- #: XXX zieht im Oktober 2014 an den Spittelmarkt --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6083 --- #: next_check: 2014-10-01
 	q4::temp:clock 9925,11947 9878,11857
 EOF
      },

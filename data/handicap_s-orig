@@ -19,7 +19,7 @@ Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,1
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2014-10-05 vvv
+#: last_checked: 2014-10-06 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -40,7 +40,7 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # REMOVED (keine Absperrung mehr) --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d --- Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
 # 
-#: last_checked: 2014-09-17
+#: last_checked: 2014-10-06
 #: check_frequency: 30d
 Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwork 13371,12694 13506,12752
 # 
@@ -110,13 +110,13 @@ Chausseestr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8935,13844 8870,13926
 # 
 #: next_check_id: UDLU5-2014
 #: source_id: IM_020322
-#: last_checked: 2014-10-01
+#: last_checked: 2014-10-06
 #: next_check: 2014-12-31
 Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # REMOVED --- Charlottenstr.: Bauarbeiten, Radfahrer können passieren	q2::inwork; 9475,12365 9489,12263
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2014-10-01 vvv
+#: last_checked: 2014-10-06 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -353,10 +353,7 @@ Stadthausstr.: Bauarbeiten, Einbahnstraße, Richtung Tuchollaplatz gesperrt	q3::i
 # 
 ### Schöneberg ###
 # 
-#: XXX laut http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf gehen die Bauarbeiten bis 2014-10-20
-#: last_checked: 2014-09-13
-#: check_frequency: 21d
-Dennewitzstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 7906,10098 7947,10155
+# REMOVED (kaum noch Beeinträchtigungen) --- #: XXX laut http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf gehen die Bauarbeiten bis 2014-10-20 --- #: last_checked: 2014-09-13 --- #: check_frequency: 21d --- Dennewitzstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 7906,10098 7947,10155
 # 
 ### Steglitz ###
 # 
@@ -408,6 +405,7 @@ Am Zwirngraben: Tische auf der Straße, Fußgänger	q4 10339,13052 10185,12982
 Neue Promenade: Fußgängerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
 Pariser Platz/Brandenburger Tor: Fußgänger	q2 8804,12280 8731,12270 8610,12254 8538,12245
 Potsdamer Platz: Fußgänger	q3 8542,11502 8442,11555
+#: XXX_prog BS (Bordstein zum Blücherplatz hin, aber ansonsten wohl q3 beibehalten)
 Blücherplatz: reger Fußgängerverkehr	q3 9579,10122 9599,10175
 Blücherplatz: Fußgängerverkehr	q3 9599,10175 9631,10142
 #: note: in Südrichtung Bushaltestelle benutzen:
@@ -1821,7 +1819,7 @@ Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
 # 
 #: XXX_prog BS (ansonsten entfernen)
 #: XXX wird der Bordstein noch abgesenkt?
-#: last_checked: 2014-09-13
+#: last_checked: 2014-10-06
 #: check_frequency: 100d
 Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
 # 
@@ -2135,6 +2133,8 @@ Iranische Str.: einige Fußgänger	q1 7843,16524 7717,16541 7707,16543 7456,16620
 (Nennhauser Damm - Am alten Gaswerk): einige Fußgänger	q1 -8043,13464 -8136,13542
 (Mauerweg Forst Spandau): sehr eng	q4+ -7032,19431 -7069,19436 -7397,19289
 (Glindowseestr. - Plauer-See-Str.): einige Fußgänger	q1 -1652,16721 -1666,16652 -1685,16583 -1699,16513 -1715,16444 -1734,16375
+(Röddelinseeweg - Kindelseeweg): einige Fußgänger	q1 -1705,16515 -1699,16513 -1661,16506
+(Beetzseeweg - Zeuthener-See-Weg): einige Fußgänger	q1 -1689,16584 -1685,16583 -1647,16573
 (Mall of Berlin): Einkaufszentrum, Fußgänger	q4 8837,11676 8834,11536
 (Hohenschönhauser Str. - Falkenberger Krugwiesen): einige Fußgänger, eng	q1 19183,17444 19074,17533 19017,17609 18993,17630 18965,17675 18937,17738
 #: XXX_prog BS an der Fahrbahn der Premnitzer, ansonsten entfernen
