@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: lectrotest.t,v 1.2 2006/04/05 22:52:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -10,40 +9,51 @@ use strict;
 
 BEGIN {
     if (!eval q{
-	use Test::LectroTest;
+	use Test::More;
 	1;
     }) {
-	print "1..0 # skip no Test::LectroTest module\n";
+	print "1..0 # skip no Test::More module\n";
 	exit;
     }
 }
 
-use Test::LectroTest trials => 5;
-use Test::LectroTest::Generator qw( :common Gen );
 use FindBin;
-use lib ("$FindBin::RealBin/../lib",
+use lib (
+	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/..",
         );
 use Strassen::Core;
 use Strassen::StrassenNetz;
 
+my $tests = 5;
+plan tests => $tests;
+
 use Getopt::Long;
 my $debug;
 GetOptions("debug" => \$debug) or die "usage?";
 
-my $s = Strassen->new("strassen");
+my $s0 = Strassen->new("strassen");
+my $inaccessible_strassen = Strassen->new('inaccessible_strassen');
+my $s = $s0->new_with_removed_points($inaccessible_strassen);
 my $net = StrassenNetz->new($s);
 $net->make_net;
 
-my $str_gen = Gen {
-    Elements(map { Strassen::parse($_)->[1][0] } @{ $s->{Data} } )->generate(@_);
-};
+{
+    my @points;
+    sub gen {
+	if (!@points) {
+	    @points = map { Strassen::parse($_)->[1][0] } @{ $s->{Data} };
+	}
+	$points[rand(@points)];
+    }
+}
 
-Property {
-    ##[ x <- $str_gen, y <- $str_gen ]##
-    ref search( $x, $y ) eq 'ARRAY'
-}, name => "search does not fail" ;
-
+for (1..$tests) {
+    my $start = gen();
+    my $goal  = gen();
+    is eval { ref search($start, $goal) }, 'ARRAY'
+	or diag "Search between $start and $goal failed" . ($@ ? " ($@)" : '');
+}
 
 sub search {
     my($from,$to) = @_;
