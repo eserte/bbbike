@@ -971,11 +971,7 @@ Eingang Eschenstr.	CP2; 22473,9530 22482,9550
 unter der S-Bahnbrücke	CP2; 24650,6034 24647,5981
 (Siegfriedstr. - Am Wasserwerk): entlang der Kolonie Weiße Taube	CS 16873,14236 16762,14237 16641,14329
 ausgeschildert als Weydemeyerstr. 3-18	CP2; 11805,12760 11818,12785
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2013
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140827.1410.398914.html (feierliche Benennung)
-#: last_checked: 2014-09-05
-#: next_check: 2014-09-11
-Fromet-und-Moses-Mendelssohn-Platz: nicht ausgeschildert	CS 9797,10771 9733,10827 9682,10836 9666,10848
+# REMOVED (mittlerweile ausgeschildert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2013 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140827.1410.398914.html (feierliche Benennung) --- #: last_checked: 2014-09-05 --- #: next_check: 2014-09-11 --- Fromet-und-Moses-Mendelssohn-Platz: nicht ausgeschildert	CS 9797,10771 9733,10827 9682,10836 9666,10848
 Hauptstr., linker Gehweg: an der Ampel Hauptstr./Hildegard-Marcusson-Str. auf die linke Seite wechseln	CP2; 16004,10204 16018,10212
 (Otisstr. - Wackerweg): Privatgelände	CP2; 3680,18913 3753,18889
 #: ignore
@@ -1064,3 +1060,7 @@ ausgeschildert Zur Wiltbergstr. 29, 29A, 29G	CP2; 16121,25818 16094,25776
 (S-Bahndamm - Hobrechtsfelder Chaussee): für THW frei	CS 15469,24813 15339,24861 14434,25388
 #: XXX_prog: sollte eine Art handicap sein
 Tauernallee - Hochspannungsweg: Bordstein	CP; 11323,1986 11343,1937 11373,1925
+#: next_check_id: WARSCHAUER-2014
+#: last_checked: 2014-10-07
+#: next_check: 2015-09-30
+Warschauer Str.: während der Bauarbeiten darf der Mittelstreifen zwischen Gubener Str. und Frankfurter Tor von Radfahrern benutzt werden	CS 13603,11538 13651,11731 13696,11920 13745,12118 13785,12292

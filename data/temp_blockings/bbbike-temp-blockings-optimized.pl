@@ -120,30 +120,7 @@ userdel	2::temp -3231,14383 -3293,14304
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2 8055,12186 8089,12190 8214,12205
-userdel	2 8214,12205 8303,12216 8538,12245
-userdel	2 8546,12279 8538,12245
-userdel	2 8600,12165 8538,12245
-userdel	2 8538,12245 8610,12254
-userdel	2 8546,12279 8570,12302 8573,12325 8540,12420 
-',
-         'periodic' => 1,
-         'until' => 1412632799,
-         'from' => 1412049600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straße vollständig gesperrt (01.10.2014 bis 06.10.2014)',
-         'type' => 'gesperrt',
-         'id' => 127
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3032,7 +3009,16 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1410/nachricht5376.html',
+         'until' => 1413151200,
+         'text' => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, von 11.10.2014, 8:00 Uhr bis 12.10.2014, 24:00 Uhr',
+         'from' => 1412920800,
+         'id' => 2448,
+         'data' => 'userdel	2::inwork 16201,24354 16156,24284 16123,24232
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
