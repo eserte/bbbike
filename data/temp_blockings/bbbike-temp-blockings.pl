@@ -23189,7 +23189,7 @@ userdel	2::inwork 3257,26907 3358,26706 3422,26540
 EOF
      },
      { from  => 1408226400, # 2014-08-17 00:00
-       until => $isodate2epoch->("2014-10-10 18:00:00"), # 1410645599, # 2014-09-13 23:59
+       until => 1412875661, # $isodate2epoch->("2014-10-10 18:00:00"), # 1410645599, # 2014-09-13 23:59
        text  => 'Werneuchener Straße: zwischen Goeckestraße und Große-Leege-Straße in Richtung Konrad-Wolf-Straße wegen Bauarbeiten gesperrt, ab 18. August 2014 bis Mitte Oktober',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20140813.1350.398688.html',
@@ -23285,8 +23285,8 @@ userdel	q4::temp; 23252,792 23085,898 22854,1023 22821,1086 22766,1226 22655,145
 EOF
      },
      { from  => 1409436000, # 2014-08-31 00:00
-       until => 1414710000, # 2014-10-31 00:00
-       text  => 'Brücke über den Oder-Havel-Kanal: Bauarbeiten, gesperrt, 01.09.2014 bis 30.10.2014 ',
+       until => $isodate2epoch->("2014-11-06 23:59:59"), # 1414710000, # 2014-10-31 00:00
+       text  => 'Brücke über den Oder-Havel-Kanal: Bauarbeiten, gesperrt, 01.09.2014 bis 06.11.2014 ',
        type  => 'gesperrt',
        source_id => '145600136',
        data  => <<EOF,
@@ -23484,6 +23484,26 @@ EOF
        data  => <<EOF,
 #: source_id: IM_022377
 userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20437,5463 20781,5242
+EOF
+     },
+     { from  => 1412481600, # 2014-10-05 06:00
+       until => 1427896800, # 2015-04-01 16:00
+       text  => 'Gartenstr.: Baustelle zwischen Tieckstr. und Torstr., Fahrbahn Richtung Torstr. gesperrt,, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_023111',
+       data  => <<EOF,
+#: XXX Impact untersuchen
+userdel	q4::inwork; 9535,13801 9670,13637
+EOF
+     },
+     { from  => undef, # 
+       until => 1433109599, # 2015-05-31 23:59
+       text  => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke wahrscheinlich nicht benutzbar, bis 2015',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/freybruecke/de/bau.shtml',
+       data  => <<EOF,
+userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
+userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 EOF
      },
     );

@@ -3432,17 +3432,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20140813.1350.398688.html',
-         'until' => 1412956800,
-         'text' => 'Werneuchener Straße: zwischen Goeckestraße und Große-Leege-Straße in Richtung Konrad-Wolf-Straße wegen Bauarbeiten gesperrt, ab 18. August 2014 bis Mitte Oktober',
-         'from' => 1408226400,
-         'id' => 2609,
-         'data' => '#: source_id: IM_022620
-userdel	q4::inwork; 16514,15092 16430,15168
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3454,8 +3444,8 @@ userdel	q4::inwork; 16514,15092 16430,15168
        undef,
        {
          'source_id' => '145600136',
-         'until' => 1414710000,
-         'text' => 'Brücke über den Oder-Havel-Kanal: Bauarbeiten, gesperrt, 01.09.2014 bis 30.10.2014 ',
+         'until' => 1415314799,
+         'text' => 'Brücke über den Oder-Havel-Kanal: Bauarbeiten, gesperrt, 01.09.2014 bis 06.11.2014 ',
          'from' => 1409436000,
          'id' => 2619,
          'data' => 'userdel	2::inwork 38845,51258 38476,50514
@@ -3616,6 +3606,28 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
 userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20437,5463 20781,5242
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_023111',
+         'until' => 1427896800,
+         'text' => 'Gartenstr.: Baustelle zwischen Tieckstr. und Torstr., Fahrbahn Richtung Torstr. gesperrt,, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
+         'from' => 1412481600,
+         'id' => 2640,
+         'data' => '#: XXX Impact untersuchen
+userdel	q4::inwork; 9535,13801 9670,13637
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/freybruecke/de/bau.shtml',
+         'until' => 1433109599,
+         'text' => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke wahrscheinlich nicht benutzbar, bis 2015',
+         'from' => undef,
+         'id' => 2641,
+         'data' => 'userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
+userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
+',
+         'type' => 'gesperrt'
        }
      
 );
