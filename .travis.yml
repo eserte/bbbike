@@ -19,6 +19,9 @@ before_install:
  - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest File::Path || true'
 # problems with newest Inline::C
  - cpanm --quiet --notest Inline~"<0.56" Inline::C~"<0.56"
+# new warnings and possible incompatibilities with CGI 4.05
+# https://github.com/leejo/CGI.pm/issues/148
+ - cpanm --quiet --notest CGI~"!=4.05"
 # Additional psgi dependencies
  - cpanm --quiet --notest Plack CGI::Emulate::PSGI CGI::Compile Starman Plack::Middleware::Rewrite
 before_script:
