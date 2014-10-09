@@ -143,8 +143,8 @@ sub new_from_cgi {
       if defined $q->param('zielname');
     if (defined $q->param('windrichtung') &&
 	defined $q->param('windstaerke')) {
-	$args{Wind} = {Windrichtung => $q->param('windrichtung'),
-		       Windstaerke  => $q->param('windstaerke')};
+	$args{Wind} = {Windrichtung => scalar $q->param('windrichtung'),
+		       Windstaerke  => scalar $q->param('windstaerke')};
     }
     if (defined $q->param('outputtarget') and
 	$q->param('outputtarget') eq 'print') {

@@ -73,7 +73,7 @@ sub run {
     my @wpt    = map { $convert_wpt->($_) } param('wpt');
 
     if (param("wpt_or_trk")) {
-	my $wpt_or_trk = trim(param("wpt_or_trk"));
+	my $wpt_or_trk = trim(scalar param("wpt_or_trk"));
 	if ($wpt_or_trk =~ / /) {
 	    push @coords, [map { $convert_xy->($_) } split / /, $wpt_or_trk];
 	} else {

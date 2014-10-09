@@ -84,7 +84,7 @@ eval {
     }
     if ($encoding && eval { require Encode; 1 }) {
 	for my $key (param) {
-	    param($key, Encode::decode($encoding, param($key)));
+	    param($key, Encode::decode($encoding, scalar param($key)));
 	}
     }
 
@@ -349,7 +349,7 @@ eval {
 	if (param("supplied_coord")) {
 	    $bbbikegooglemapsurl = "$BBBike::BBBIKE_GOOGLEMAP_URL?" .
 		CGI->new({
-		    wpt         => param("supplied_coord"),
+		    wpt         => scalar param("supplied_coord"),
 		    coordsystem => "bbbike",
 		    maptype     => "hybrid",
 		    mapmode     => "addroute",

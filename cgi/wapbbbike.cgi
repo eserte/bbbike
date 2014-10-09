@@ -787,7 +787,7 @@ for my $type (qw(start ziel)) {
     }
 }
 
-$sess = tie_session($q->param("sess"));
+$sess = tie_session(scalar $q->param("sess"));
 $routing->{Session} = $sess;
 
 if ($q->param("info")) {
@@ -807,10 +807,10 @@ if ($q->param("info")) {
 	 defined $q->param("zielname")  &&
 	 $q->param("zielname") ne ""
 	) {
-    $routing->Start->Street  ($q->param("startname"));
-    $routing->Goal->Street   ($q->param("zielname"));
-    $routing->Start->Citypart($q->param("startbezirk"));
-    $routing->Goal->Citypart ($q->param("zielbezirk"));
+    $routing->Start->Street  (scalar $q->param("startname"));
+    $routing->Goal->Street   (scalar $q->param("zielname"));
+    $routing->Start->Citypart(scalar $q->param("startbezirk"));
+    $routing->Goal->Citypart (scalar $q->param("zielbezirk"));
 
     if ($q->param("form") && $q->param("form") eq 'advanced') {
 	$routing->Context->ChooseExactCrossing(1);
@@ -819,13 +819,13 @@ if ($q->param("info")) {
 
     my($has_start, $has_goal);
     if (defined $q->param("startcoord") && $q->param("startcoord") ne "") {
-	$routing->Start->Coord($q->param("startcoord"));
+	$routing->Start->Coord(scalar $q->param("startcoord"));
 	$has_start = 1;
     } else {
 	$has_start = $routing->get_start_position;
     }
     if (defined $q->param("zielcoord") && $q->param("zielcoord") ne "") {
-	$routing->Goal->Coord($q->param("zielcoord"));
+	$routing->Goal->Coord(scalar $q->param("zielcoord"));
 	$has_goal = 1;
     } else {
 	$has_goal = $routing->get_goal_position;

@@ -36,9 +36,9 @@ sub action {
 
 sub action_revgeocode {
     my $q = shift;
-    my($lon) = $q->param('lon');
+    my $lon = $q->param('lon');
     $lon eq '' and die "lon is missing";
-    my($lat) = $q->param('lat');
+    my $lat = $q->param('lat');
     $lat eq '' and die "lat is missing";
 
     no warnings 'once';
