@@ -21198,7 +21198,7 @@ EOF
        source_id => 'IM_022268',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-09-21 vvv
+#: last_checked: 2014-10-10 vvv
 #: next_check: 2014-10-22 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
@@ -23401,13 +23401,11 @@ EOF
      },
      { from  => 1411312807, # 2014-09-21 17:20
        until => $isodate2epoch->("2016-01-01 00:00:00"), # 1412805600, # 2014-10-09 00:00
-       text  => 'Unterführung Rummelsburg: südlicher Zugang gesperrt, 17.09.2014 bis ca. 08.10.2014, weitere Sperrungen bis 2016 möglich',
+       text  => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugang bis 2016 möglich',
        type  => 'gesperrt',
        dont_check_date => 1,
        data  => <<EOF,
-#: XXX_prog: confirmed bis zum 8.10., danach unconfirmed
-#: last_checked: 2014-09-21
-#: next_check: 2014-10-08
+#: last_checked: 2014-10-10
 userdel	2::inwork 15419,10706 15379,10651
 EOF
      },
@@ -23504,6 +23502,15 @@ EOF
        data  => <<EOF,
 userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
 userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
+EOF
+     },
+     { from  => 1412913600, # 2014-10-10 06:00
+       until => 1413136800, # 2014-10-12 20:00
+       text  => 'Wilhelmstr.: zwischen Unter den Linden und Dorotheenstr. Kraneinsatz, Straße vollständig gesperrt, ab 11.10.2014 06 Uhr bis 12.10.2014 20 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_023087',
+       data  => <<EOF,
+userdel	2::inwork 8804,12280 8775,12457
 EOF
      },
     );

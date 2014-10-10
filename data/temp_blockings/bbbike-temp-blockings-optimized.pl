@@ -2951,7 +2951,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-09-21 vvv
+#: last_checked: 2014-10-10 vvv
 #: next_check: 2014-10-22 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
@@ -3467,16 +3467,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_022799',
-         'until' => 1412953200,
-         'text' => 'Wilhelminenhofstr.: in Höhe Schillerpromenade Baustelle, Fahrbahn gesperrt, ab 08.09.2014 04 Uhr bis 10.10.2014 17 Uhr',
-         'from' => 1410141600,
-         'id' => 2626,
-         'data' => 'userdel	q4::inwork; 18343,6318 18191,6363 17992,6436
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_022856',
          'until' => 1419350400,
@@ -3513,12 +3504,10 @@ userdel	q3::inwork 4503,10497 4485,10307
        },
        {
          'until' => 1451602800,
-         'text' => 'Unterführung Rummelsburg: südlicher Zugang gesperrt, 17.09.2014 bis ca. 08.10.2014, weitere Sperrungen bis 2016 möglich',
+         'text' => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugang bis 2016 möglich',
          'from' => 1411312807,
          'id' => 2631,
-         'data' => '#: XXX_prog: confirmed bis zum 8.10., danach unconfirmed
-#: last_checked: 2014-09-21
-#: next_check: 2014-10-08
+         'data' => '#: last_checked: 2014-10-10
 userdel	2::inwork 15419,10706 15379,10651
 ',
          'dont_check_date' => 1,
@@ -3626,6 +3615,16 @@ userdel	q4::inwork; 9535,13801 9670,13637
          'id' => 2641,
          'data' => 'userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
 userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_023087',
+         'until' => 1413136800,
+         'text' => 'Wilhelmstr.: zwischen Unter den Linden und Dorotheenstr. Kraneinsatz, Straße vollständig gesperrt, ab 11.10.2014 06 Uhr bis 12.10.2014 20 Uhr',
+         'from' => 1412913600,
+         'id' => 2642,
+         'data' => 'userdel	2::inwork 8804,12280 8775,12457
 ',
          'type' => 'gesperrt'
        }
