@@ -13,6 +13,7 @@ use lib (
 	 "$FindBin::RealBin/../miscsrc", 
 	);
 
+use Getopt::Long;
 use Test::More 'no_plan';
 
 sub check_geocoding ($$$;$);
@@ -20,6 +21,14 @@ sub check_parse_string ($$);
 sub utf8 ($);
 
 use_ok 'GeocoderAddr';
+
+my $do_complete_file;
+my $start_with;
+GetOptions(
+	   "complete-file" => \$do_complete_file,
+	   "start-with=s" => \$start_with,
+	  )
+    or die "usage: $0 [--complete-file [--start-with=...]]\n";
 
 my $geocoder = GeocoderAddr->new_berlin_addr;
 isa_ok $geocoder, 'GeocoderAddr';
@@ -30,6 +39,10 @@ SKIP: {
 
     if ($geocoder->{GeocodeMethod} eq 'geocode_linear_scan') {
 	diag 'geocode_linear_scan used, except slow test run';
+    }
+
+    if ($do_complete_file) {
+	do_complete_file();
     }
 
     {
@@ -119,6 +132,49 @@ sub utf8 ($) {
     my $s = shift;
     utf8::upgrade($s);
     $s;
+}
+
+sub do_complete_file {
+    require Strassen::Core;
+    my $s = Strassen->new($geocoder->{File});
+    $s->init;
+    my $logfile = '/tmp/geocoder-addr-errors.log';
+    open my $ofh, ">", $logfile
+	or die "Can't write to $logfile: $!";
+    $ofh->autoflush(1);
+    binmode $ofh, ':encoding(utf-8)';
+    my $mismatches = 0;
+    my $checks = 0;
+    while() {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS()] };
+	my $strname = $r->[Strassen::NAME()];
+	if (defined $start_with) {
+	    if ($start_with eq $strname) {
+		undef $start_with;
+	    } else {
+		next;
+	    }
+	}
+	my($str, $hnr, $plz, $city) = split /\|/, $strname;
+	for my $location (
+			  "$str $hnr, $plz $city",
+			 ) {
+	    my $res = $geocoder->geocode(location => $location);
+	    my $res_string = join('|', @{$res->{details}}{qw(street hnr zip city)});
+	    if ($res_string ne $strname) {
+		print $ofh "Mismatch: '$res_string' - '$strname'\n";
+		$mismatches++;
+	    }
+	    $checks++;
+	    print STDERR "\rchecked: $checks; failed: $mismatches";
+	}
+    }
+    if (defined $start_with) {
+	fail "--start-with value '$start_with' not found in file";
+    }
+    is $mismatches, 0, 'no mismatches found'
+	or diag "Please look into $logfile for errors";
 }
 
 __END__
