@@ -13,6 +13,7 @@ use lib (
 	);
 
 use File::Temp qw(tempfile);
+use Getopt::Long;
 use Test::More;
 
 BEGIN {
@@ -28,7 +29,11 @@ sub check_lookup ($$$);
 
 plan 'no_plan';
 
-my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => "_sorted.bbd");
+my $keep_sorted_file;
+GetOptions("keep-sorted-file!" => \$keep_sorted_file)
+    or die "usage: $0 [--keep-sorted-file]\n";
+
+my($tmpfh,$tmpfile) = tempfile(UNLINK => !$keep_sorted_file, SUFFIX => "_sorted.bbd");
 
 {
     my $s = Strassen::Lookup->new("$FindBin::RealBin/../data/strassen");
@@ -66,6 +71,24 @@ is $bbd->get_global_directive('strassen_lookup_suitable'), 'yes', 'marked as sui
 	{
 	 'saw_Kurfürstendamm' => sub {
 	     $_[0]->[Strassen::NAME] =~ 'Kurfürstendamm';
+	 },
+	};
+}
+
+{
+    check_lookup $s, 'Ährenweg',
+	{
+	 'saw_Aehrenweg' => sub {
+	     $_[0]->[Strassen::NAME] =~ 'Ährenweg';
+	 },
+	};
+}
+
+{
+    check_lookup $s, 'Öschelbronner Weg',
+	{
+	 'saw_Oeschelbronner_Weg' => sub {
+	     $_[0]->[Strassen::NAME] =~ 'Öschelbronner Weg';
 	 },
 	};
 }

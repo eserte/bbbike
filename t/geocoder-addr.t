@@ -17,6 +17,7 @@ use Test::More 'no_plan';
 
 sub check_geocoding ($$$);
 sub check_parse_string ($$);
+sub utf8 ($);
 
 use_ok 'GeocoderAddr';
 
@@ -43,6 +44,31 @@ SKIP: {
 	check_geocoding "Dudenstraße 24, Berlin", "Dudenstraße 24, 10965 Berlin", $dudenstr24_bbox;
 	check_geocoding "Dudenstraße 24, Berlin, 10965", "Dudenstraße 24, 10965 Berlin", $dudenstr24_bbox;
 	check_geocoding "Dudenstraße 24, 10965 Berlin", "Dudenstraße 24, 10965 Berlin", $dudenstr24_bbox;
+    }
+
+    {
+	# Beginning with umlaut
+	my $uederseestr1_bbox = '13.520082,52.482163 13.519437,52.482601';
+	check_geocoding 'Üderseestraße 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+	check_geocoding 'Üderseestr. 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+	check_geocoding 'üderseestraße 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+	check_geocoding 'üderseestr. 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+    }
+
+    {
+	# internal utf8 should also work
+	my $uederseestr1_bbox = '13.520082,52.482163 13.519437,52.482601';
+	check_geocoding utf8('Üderseestraße 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+	check_geocoding utf8('Üderseestr. 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+	check_geocoding utf8('üderseestraße 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+	check_geocoding utf8('üderseestr. 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+    }
+
+    {
+	# Another umlaut street
+	my $aehrenweg10_bbox = '13.561505,52.514429 13.562112,52.514098';
+	check_geocoding 'Ährenweg 10', 'Ährenweg 10, 12683 Berlin', $aehrenweg10_bbox;
+	check_geocoding 'ährenweg 10', 'Ährenweg 10, 12683 Berlin', $aehrenweg10_bbox;
     }
 }
 
@@ -78,6 +104,12 @@ sub check_parse_string ($$) {
     }
     is delete($res->{location}), $location, "location check for '$location'";
     is_deeply $res, $expected_result, "parse_search_string check for '$location'";
+}
+
+sub utf8 ($) {
+    my $s = shift;
+    utf8::upgrade($s);
+    $s;
 }
 
 __END__
