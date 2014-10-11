@@ -15,9 +15,10 @@ package Strassen::Lookup;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use Hash::Util qw(lock_keys);
+use Unicode::Collate ();
 
 use Strassen::Core ();
 
@@ -49,7 +50,15 @@ directives or comments.
 
 sub new {
     my($class, $file, %opts) = @_;
+    my $sub_separator = delete $opts{SubSeparator};
     die "Unhandled options: " . join(" ", %opts) if %opts;
+
+    my $collator = Unicode::Collate->new
+	(
+	 normalization => undef, # we need the index() method below, so normalization cannot be used
+	 level         => 1,     # be case insensitive
+	 ($sub_separator ? (entry => sprintf "%04x ; [.%04x]\n", (ord $sub_separator)x2) : ()),
+	);
 
     my $self = {
 		File => $file,
@@ -58,6 +67,7 @@ sub new {
 		Offset => undef,
 		CurrentSearchString => undef,
 		CurrentIsDelimited => undef,
+		Collator => $collator,
 	       };
     bless $self, $class;
     lock_keys %$self;
@@ -102,7 +112,8 @@ sub look {
     my $res = do {
 	# cease possible warnings, see https://rt.cpan.org/Ticket/Display.html?id=97188
 	local $SIG{__WARN__} = sub { push @warnings, grep { !/utf8 .* does not map to Unicode/ } @_ };
-	Search::Dict::look($fh, $search_string . ($delimited ? "\t" : ''));
+	my $collator = $self->{Collator};
+	Search::Dict::look($fh, $collator->getSortKey($search_string) . ($delimited ? "\t" : ''), { xfrm => sub { $collator->getSortKey($_[0]) } });
     };
     if (@warnings) {
 	warn $_ for @warnings;
@@ -158,11 +169,12 @@ sub search_next {
     my($self) = @_;
     my $rec = $self->get_next;
     my $delimited = $self->{CurrentIsDelimited};
+    my $collator = $self->{Collator};
     my $check;
     if ($delimited) {
-	$check = $rec->[Strassen::NAME] eq $self->{CurrentSearchString};
+	$check = $collator->eq($rec->[Strassen::NAME], $self->{CurrentSearchString});
     } else {
-	$check = index($rec->[Strassen::NAME], $self->{CurrentSearchString}) == 0;
+	$check = $collator->index($rec->[Strassen::NAME], $self->{CurrentSearchString}) == 0;
     }
 
     if ($check) {
@@ -186,8 +198,9 @@ sub convert_for_lookup {
     my($self, $dest) = @_;
     my @data;
     my $s = Strassen->new($self->{File}, UseLocalDirectives => 0);
-    @{ $s->{Data} } = sort @{ $s->{Data} };
+    @{ $s->{Data} } = $self->{Collator}->sort(@{ $s->{Data} });
     $s->set_global_directive(strassen_lookup_suitable => 'yes');
+    $s->set_global_directive(encoding => 'utf-8');
     $s->write($dest);
 }
 

@@ -29,7 +29,18 @@ sub new {
     if (!$file) {
 	die "Missing file parameter";
     }
-    bless { File => $file }, $class;
+    my $geocode_method = eval {
+	require Tie::Handle::Offset;
+	require Search::Dict;
+	Search::Dict->VERSION(1.07); # because of stat() problems together with tied fhs
+	require Unicode::Collate;
+	Unicode::Collate->VERSION(0.60); # 0.52 and 0.52_01 have problems with some lookup tests --- at least 0.72 seems to be OK
+	1;
+    } ? 'geocode_fast_lookup' : 'geocode_linear_scan';
+    bless {
+	   File          => $file,
+	   GeocodeMethod => $geocode_method,
+	  }, $class;
 }
 
 sub new_berlin_addr {
@@ -42,8 +53,11 @@ sub check_availability {
     -s $self->{File};
 }
 
-sub geocode { shift->geocode_linear_scan(@_) }
-#sub geocode { shift->geocode_fast_lookup(@_) }
+sub geocode {
+    my $self = shift;
+    my $geocode_method = $self->{GeocodeMethod};
+    $self->$geocode_method(@_);
+}
 
 sub geocode_fast_lookup {
     my($self, %opts) = @_;
@@ -71,8 +85,7 @@ sub geocode_fast_lookup {
 	die "Empty search string";
     }
 
-    require Strassen::Lookup;
-    my $s = Strassen::Lookup->new($self->{File});
+    my $s = $self->get_lookup_object;
     my $rec = $s->search_first($search_string, $search_string_delimited);
     if ($rec) {
 	my $glob_dir = Strassen->get_global_directives($self->{File});
@@ -178,6 +191,18 @@ sub build_search_regexp {
     }
     $search_regexp .= "\t)";
     $search_regexp;
+}
+
+sub convert_for_lookup {
+    my($self, $dest) = @_;
+    my $lookup = $self->get_lookup_object;
+    $lookup->convert_for_lookup($dest);
+}
+
+sub get_lookup_object {
+    my($self) = @_;
+    require Strassen::Lookup;
+    Strassen::Lookup->new($self->{File}, SubSeparator => '|');
 }
 
 1;

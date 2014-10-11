@@ -28,6 +28,10 @@ SKIP: {
     skip "_addr file is not available", 1
 	if !$geocoder->check_availability;
 
+    if ($geocoder->{GeocodeMethod} eq 'geocode_linear_scan') {
+	diag 'geocode_linear_scan used, except slow test run';
+    }
+
     {
 	my $regexp = $geocoder->build_search_regexp("Dudenstraße");
 	ok $regexp;

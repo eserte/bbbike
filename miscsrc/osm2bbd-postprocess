@@ -14,7 +14,11 @@
 
 use strict;
 use FindBin;
-use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use lib (
+	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../miscsrc",
+	);
 
 use vars qw($VERSION);
 $VERSION = 0.15;
@@ -127,9 +131,9 @@ sub target_addr_sort {
 	print STDERR "up-to-date";
 	return;
     }
-    require Strassen::Lookup;
-    my $s = Strassen::Lookup->new('_addr');
-    $s->convert_for_lookup('_addr_sorted');
+    require GeocoderAddr;
+    my $geocoderaddr = GeocoderAddr->new('_addr');
+    $geocoderaddr->convert_for_lookup('_addr_sorted');
     rename '_addr_sorted', '_addr'
 	or die "Renaming _addr_sorted to _addr failed: $!";
 }

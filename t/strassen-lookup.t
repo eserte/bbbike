@@ -34,6 +34,9 @@ GetOptions("keep-sorted-file!" => \$keep_sorted_file)
     or die "usage: $0 [--keep-sorted-file]\n";
 
 my($tmpfh,$tmpfile) = tempfile(UNLINK => !$keep_sorted_file, SUFFIX => "_sorted.bbd");
+if ($keep_sorted_file) {
+    diag "Temporary file '$tmpfile' will be kept";
+}
 
 {
     my $s = Strassen::Lookup->new("$FindBin::RealBin/../data/strassen");
@@ -47,6 +50,14 @@ isa_ok $s, 'Strassen::Lookup';
 my $bbd = Strassen->new($tmpfile);
 isa_ok $bbd, 'Strassen', 'converted file still parsable as bbd';
 is $bbd->get_global_directive('strassen_lookup_suitable'), 'yes', 'marked as suitable for Strassen::Lookup';
+is $bbd->get_global_directive('encoding'), 'utf-8', 'utf-8 is forced on files for Strassen::Lookup';
+
+{
+    my $last_street_name = $bbd->data->[-1];
+    my($first_char) = $last_street_name =~ m{^[^A-Za-z]*(.)};
+    is lc($first_char), 'z', 'last street in sorted file begins with z'
+	or diag join("Last entry is: $bbd->data->[-1]");
+}
 
 {
     check_lookup $s, 'Bergmannstr.',
@@ -111,12 +122,13 @@ is $bbd->get_global_directive('strassen_lookup_suitable'), 'yes', 'marked as sui
     binmode $tmpfh, ':utf8';
     print $tmpfh <<'EOF';
 #: encoding: utf-8
+#: note: this file is sorted and suitable for Strassen::Lookup
 #:
-# Note: this file is sorted and suitable for Strassen::Lookup
 Auguststraﬂe	X 3,4
 Auguststraﬂe	X 5,6
 Dudenstraﬂe	X 1,2
 Franklinallee	X 5,6
+Zingster Straﬂe	X 8,9
 EOF
     close $tmpfh;
 
@@ -131,6 +143,9 @@ EOF
 
 	$rec = $s->search_first("Dudenstraﬂe");
 	is $rec->[Strassen::NAME], 'Dudenstraﬂe', 'utf8 example';
+
+	$rec = $s->search_first("dudenstraﬂe");
+	is $rec->[Strassen::NAME], 'Dudenstraﬂe', 'utf8 example, lowercase';
 
 	$rec = $s->search_first("Auguststraﬂe");
 	is $rec->[Strassen::NAME], 'Auguststraﬂe', 'another utf8 example';
