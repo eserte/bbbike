@@ -15,7 +15,7 @@ use lib (
 
 use Test::More 'no_plan';
 
-sub check_geocoding ($$$);
+sub check_geocoding ($$$;$);
 sub check_parse_string ($$);
 sub utf8 ($);
 
@@ -49,19 +49,19 @@ SKIP: {
     {
 	# Beginning with umlaut
 	my $uederseestr1_bbox = '13.520082,52.482163 13.519437,52.482601';
-	check_geocoding 'Üderseestraße 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
-	check_geocoding 'Üderseestr. 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
-	check_geocoding 'üderseestraße 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
-	check_geocoding 'üderseestr. 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+	check_geocoding 'Üderseestraße 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox, 'full name, without utf8 flag';
+	check_geocoding 'Üderseestr. 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox, 'short name, without utf8 flag';
+	check_geocoding 'üderseestraße 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox, 'full name, lowercase, without utf8 flag';
+	check_geocoding 'üderseestr. 1', 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox, 'short name, lowercase, without utf8 flag';
     }
 
     {
 	# internal utf8 should also work
 	my $uederseestr1_bbox = '13.520082,52.482163 13.519437,52.482601';
-	check_geocoding utf8('Üderseestraße 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
-	check_geocoding utf8('Üderseestr. 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
-	check_geocoding utf8('üderseestraße 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
-	check_geocoding utf8('üderseestr. 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox;
+	check_geocoding utf8('Üderseestraße 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox, 'full name, with utf8 flag';
+	check_geocoding utf8('Üderseestr. 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox, 'short name, without utf8 flag';
+	check_geocoding utf8('üderseestraße 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox, 'full name, lowercase, without utf8 flag';
+	check_geocoding utf8('üderseestr. 1'), 'Üderseestraße 1, 10318 Berlin', $uederseestr1_bbox, 'short name, lowercase, without utf8 flag';
     }
 
     {
@@ -78,21 +78,26 @@ check_parse_string "Dudenstraße 24, Berlin", { str => "Dudenstraße", hnr => "24"
 check_parse_string "Dudenstraße 24, Berlin, 10965", { str => "Dudenstraße", hnr => "24", city => "Berlin", zip => "10965" };
 check_parse_string "Dudenstraße 24, 10965 Berlin", { str => "Dudenstraße", hnr => "24", city => "Berlin", zip => "10965" };
 
-sub check_geocoding ($$$) {
-    my($in_street, $expected_street, $bbox) = @_;
+sub check_geocoding ($$$;$) {
+    my($in_street, $expected_street, $bbox, $testname) = @_;
+    $testname = defined $testname ? " ($testname)" : '';
     my $res = $geocoder->geocode(location => $in_street);
-    ok $res, "got a result for <$in_street>";
-    if (ref $expected_street eq 'Regexp') {
-	like $res->{display_name}, $expected_street;
+    ok $res, "got a result for <$in_street>" . $testname;
+    if ($res) {
+	if (ref $expected_street eq 'Regexp') {
+	    like $res->{display_name}, $expected_street, "regexp check" . $testname;
+	} else {
+	    is $res->{display_name}, $expected_street, "equality check" . $testname;
+	}
+	my($x1,$y1,$x2,$y2) = split /[, ]/, $bbox;
+	($x1,$x2) = ($x2,$y1) if $x1 > $x2;
+	($y1,$y2) = ($y2,$y1) if $y1 > $y2;
+	my($lon, $lat) = @{$res}{qw(lon lat)};
+	ok $lon >= $x1 && $lon <= $x2 && $lat >= $y1 && $lat <= $y2, 'lon/lat within bounding box' . $testname
+	    or diag "Got lon=$lon lat=$lat, not within $bbox" . $testname;
     } else {
-	is $res->{display_name}, $expected_street;
+	fail "No result - no further checks" . $testname for (1..2);
     }
-    my($x1,$y1,$x2,$y2) = split /[, ]/, $bbox;
-    ($x1,$x2) = ($x2,$y1) if $x1 > $x2;
-    ($y1,$y2) = ($y2,$y1) if $y1 > $y2;
-    my($lon, $lat) = @{$res}{qw(lon lat)};
-    ok $lon >= $x1 && $lon <= $x2 && $lat >= $y1 && $lat <= $y2, 'lon/lat within bounding box'
-	or diag "Got lon=$lon lat=$lat, not within $bbox";
 }
 
 sub check_parse_string ($$) {
