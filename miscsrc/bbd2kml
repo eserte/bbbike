@@ -12,13 +12,22 @@ use Strassen::KML;
 
 sub usage {
     die <<EOF;
-usage: $0  bbdfile
+usage: $0 [-documentname|-title ...] [-documentdescription|-description ...] bbdfile
 EOF
 }
 
-GetOptions() or usage();
+my $documentname;
+my $documentdescription;
+GetOptions(
+	   "documentname|title=s"                   => \$documentname,
+	   "documentdescription|description|desc=s" => \$documentdescription,
+	  ) or usage();
 
 my $file = shift || usage();
 my $s = Strassen->new($file);
 my $s_kml = Strassen::KML->new($s);
-print $s_kml->bbd2kml;
+print $s_kml->bbd2kml
+    (
+     (defined $documentname        ? (documentname        => $documentname)        : ()),
+     (defined $documentdescription ? (documentdescription => $documentdescription) : ()),
+    );
