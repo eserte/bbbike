@@ -23513,4 +23513,13 @@ EOF
 userdel	2::inwork 8804,12280 8775,12457
 EOF
      },
+     { from  => undef,
+       until => undef,
+       text  => 'Mergenthalerring: Tor kann nachts versperrt sein',
+       recurring => 1,
+       data  => <<EOF,
+	3::night 14563,8243 14419,8112 14439,8050
+	3::night 14439,8050 14419,8112 14563,8243
+EOF
+     },
     );
