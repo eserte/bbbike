@@ -97,7 +97,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q3:
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html
 #: source_id: IM_022304
 #: valid: 20140701-20150105
-#: last_checked: 2014-08-12
+#: last_checked: 2014-10-12
 #: next_check: 2015-01-05
 #: priority: #A
 Chausseestr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8935,13844 8870,13926
@@ -133,7 +133,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
 #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7
-#: last_checked: 2014-10-01
+#: last_checked: 2014-10-12
 #: check_frequency: 60d
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
@@ -151,7 +151,7 @@ Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 1
 #: last_checked ^^^
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2014-08-12 vvv
+#: last_checked: 2014-10-12 vvv
 #: next_check: 2015-05-31 vvv
 #: priority: #A vvv
 #: source_id: IM_017330
@@ -173,12 +173,12 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaeli
 #: next_check_id ^^^
 # 
 #: source_id: IM_021585
-#: last_checked: 2014-08-12
-#: next_check: 2014-10-12
-#: priority: #A
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html (planm‰ﬂige Fertigstellung)
 #: XXX nach den Bauarbeiten wird es hier einen Radfahrstreifen geben
+#: last_checked: 2014-10-12
+#: check_frequency: 30d
+#: priority: #A
 Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessische Str.: teilweise noch Bauarbeiten auf der Fahrbahn, auf Gehweg umfahren	q4::inwork; 8935,13844 8842,13798
 # 
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraﬂe, Zugang f¸r Fuﬂg‰nger und schiebende Radfahrer mˆglich	q3::inwork 8426,13909 8574,13666
@@ -225,7 +225,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-10-08
+#: last_checked: 2014-10-12
 #: check_frequency: 30d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -475,7 +475,7 @@ Tiergarten: Parkweg	q1 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353
 #: XXX_prog BS zur Allee
 Tiergarten: Parkweg, Bordstein	q3 7603,12353 7627,12380
 Tiergarten: einige Fuﬂg‰nger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-(Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6467,11780 6540,11754
+(Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): einige Fuﬂg‰nger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 # REMOVED (nun ein offizieller markierter Radweg) --- Spittelmarkt: Gehweg	q1 10369,11728 10274,11737 10240,11740
@@ -585,8 +585,8 @@ Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5913,8415 5831,8358 5806,
 zum Volksparksteg: kombinierter Rad- und Fuﬂweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fuﬂweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5465,8511 5417,8519 5347,8562
-#: XXX wo genau sind die Bordsteine?
-(zur Thomas-Dehler-Str.): Fuﬂg‰nger, Bordsteine	q4 6654,11460 6716,11439
+#: XXX_prog BS (Bordstein an der St¸lerstr.; ansonsten muss man wohl auch ¸ber Gras schieben, deshalb kann man trotzdem die q4 beibehalten)
+(zur Thomas-Dehler-Str.): Fuﬂg‰nger, Bordstein	q4 6657,11467 6716,11439
 #: by: ADFC-Karte
 Ernststr.: Fuﬂg‰nger	q2 2497,19503 2700,19527
 (S-Bahnunterf¸hrung Wartenberg): Fuﬂg‰nger	q1 16939,18652 16998,18695
@@ -657,8 +657,7 @@ Gˆrlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
 #: XXX_prog BS zum Tempelhofer Ufer hin, zur Ruhlsdorfer existiert eine Absenkung
 Ruhlsdorfer Str.: Bordstein	q3 9350,10176 9368,10211
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Fuﬂg‰nger	q2 4360,10320 4352,10260
-#: XXX wo genau sind die Bordsteine?
-(Parkplatz, G¸ntzelstr. - Pommersche Str.): Bordsteine, f¸r Radfahrer verboten, ggfs. schieben	q3 4708,9498 4550,9539
+(G¸ntzelstr. - Pommersche Str.): Fuﬂg‰nger	q3 4708,9498 4550,9539
 Naunynstr.: Fuﬂg‰nger	q1 11365,10791 11329,10785
 Hermannplatz: oft Fuﬂg‰nger auf dem Radweg	q1 11831,8989 11909,9155
 #: XXX_prog: im Sommer an schˆnen Tagen q4
@@ -914,9 +913,11 @@ Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe
 Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4954,5888
 #: note: bei Veranstaltungen (Max-Schmelling-Halle) mˆglicherweise gesperrt oder grˆﬂere Behinderungen:
 (Gaudystr. - Mauerpark): Fuﬂg‰nger, bei Veranstaltungen in der Max-Schmelling-Halle grˆﬂere Behinderungen mˆglich	q3 10456,15561 10256,15482 10192,15465
-(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fuﬂg‰nger	q1 2934,14852 2900,14891 2835,14975 2685,15167 2707,15205 2695,15258 2632,15295
+(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fuﬂg‰nger	q1 2934,14852 2900,14891 2840,14982 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fuﬂg‰nger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1372,15313
 (Jungfernheide): Fuﬂg‰nger	q1 1415,15190 1459,15196 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
+(Jungfernheide, ˆstlicher Weg): einige Fuﬂg‰nger	q1 2683,14878 2768,14923 2840,14982 2889,15033 2929,15138 2933,15270 2926,15381 2902,15444 2861,15506
+(Jungfernheide - Kurt-Schumacher-Damm): einige Fuﬂg‰nger	q1 2926,15381 3105,15487
 (Teltowkanalpromenade am Nordufer): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 3696,1445 3601,1296 3476,1169 3348,1078 3092,875
 Teltowkanalpromenade: eng, nicht anh‰ngertauglich	q2 2079,-12 1924,-188 1593,-317 1471,-311
 # ----------------- Bordstein-Check bis hier ----------------------------------
@@ -1071,7 +1072,7 @@ Oleanderstr.: Fuﬂg‰nger, Bordsteine	q2 14271,14024 14298,14015
 Pankgrafenstr. (Pankow): Fuﬂg‰nger, ggfs. schieben	q2 10470,18402 10502,18338
 #: by: Susanne Grittner (sort-of) vvv
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3162,15314 3045,15044 2963,14752
-Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852 3000,15048 3106,15384 3095,15495 3160,15519 3165,15590 3257,15666 3314,15782 3398,16000 3564,16294
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852 3000,15048 3106,15384 3105,15487 3140,15503 3160,15603 3183,15599 3249,15654 3310,15790 3398,16000 3564,16294
 #: by: ^^^
 H¸lsenplatz: Fuﬂg‰nger, Bordsteine	q3 18512,10744 18545,10752 18542,10762 18538,10774 18506,10769
 H¸lsenplatz: Fuﬂg‰nger, Bordsteine	q3 18542,10762 18570,10768
@@ -1151,7 +1152,7 @@ KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4957,15267 4624,15671 4444,15906 4390,15923
 KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4957,15267 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4390,15913
 Hauptweg - Uferweg: einige Fuﬂg‰nger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 4754,15388 4664,15491 4459,15723 4273,15740 4224,15779 4216,15799 4390,15913 4390,15923 4383,15939 4369,15950 4131,16017 4089,15978
-(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 4084,15859 4055,15795 3982,15793 3924,15768 3775,15768 3371,15777 3308,15773 3255,15785 3005,15780 1737,15797
+(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 4084,15859 4055,15795 3982,15793 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15797
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 1348,15802 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fuﬂg‰nger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
@@ -1590,7 +1591,7 @@ Straﬂe 618: schmale Straﬂe	q1 16346,481 16320,538 16297,592
 Harry-Liedtke-Pfad: einige Fuﬂg‰nger	q1 15788,1747 15783,1820 15806,1903 15834,2024 15843,2065 15836,2113
 #: XXX_prog BS auf Nordseite (nicht allzu hoch), vielleicht auch auf der S¸dseite?
 Gormannstr.: Bordstein	q2 10350,13376 10353,13384
-(Popitzweg - Halemweg): Fuﬂg‰nger	q2 1884,14412 2126,14392 2254,14387 2380,14392
+(Popitzweg - Halemweg): Fuﬂg‰nger	q2 1884,14412 2126,14392 2254,14387 2376,14392
 (Haeftenzeile - Weg ¸ber der U-Bahn): Fuﬂg‰nger	q1 2135,14475 2126,14392
 #: XXX_prog BS auf Nordseite
 (Wohlrabedamm - Reisstr.): Bordstein	q2 1311,14191 1314,14207
@@ -2105,8 +2106,8 @@ Urselweg: flache Bordsteinkante	q1 -802,2914 -775,2854 -783,2837
 Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Warener Str. - Unfallkrankenhaus Berlin): Krankenhausgel‰nde, Fuﬂg‰nger	q4 21388,12785 21401,12773 21520,12741
 (Altentreptower Str. - Unfallkrankenhaus Berlin): Fuﬂg‰nger	q1 21400,12135 21401,12155 21403,12230 21435,12390 21477,12584 21489,12608 21520,12741
-#: XXX geraten:
-(zum Freibad Plˆtzensee): Fuﬂg‰nger	q3 5321,14978 5310,15089 5252,15182
+#: note: wahrscheinlich nur an schˆnen Sommertagen
+(zum Freibad Plˆtzensee): Fuﬂg‰nger	q3 5321,14978 5323,15030 5310,15089 5252,15182
 (Freiheitsweg - S-Bhf. Alt-Reinickendorf): einige Fuﬂg‰nger	q1- 6558,18947 6564,19064
 (Roedernallee - S-Bhf. Alt-Reinickendorf): einige Fuﬂg‰nger	q1- 6415,19083 6513,19053
 (Triftpark): einige Fuﬂg‰nger	q1 4538,20621 4486,20638 4433,20715 4341,20765 4225,20775 4203,20792
@@ -2157,6 +2158,21 @@ Nuthestr.: Bordstein, Fuﬂg‰nger	q3 9815,-805 9813,-822
 #: note: besonders an schˆnen Tagen
 Hochspannungsweg (Britz): einige Fuﬂg‰nger	q1 13769,2991 13631,2938 13561,2898 13430,2837 13264,2763 13194,2732 13190,2730 13187,2729 13136,2705 13029,2661 12924,2617 12825,2573 12694,2517 12593,2472 12391,2382 12384,2379 12373,2375 12280,2330 11747,2091 11626,2037 11373,1925 11343,1937
 (Dammweg - Willi-S‰nger-Str.): einige Fuﬂg‰nger	q1 15751,8163 15808,8099 15883,8020
+#: XXX_prog BS (ansonsten q1+, wie der Rest)
+(Alter Postweg): wenige Fuﬂg‰nger, Bordstein	q3 -1824,11656 -1833,11665
+(Alter Postweg): wenige Fuﬂg‰nger	q1+ -1833,11665 -1944,11758 -2013,11841 -2027,11884 -2062,11925 -2088,12007 -2088,12071 -2080,12091 -2122,12680 -2024,12969 -2076,13060
+(Murellenberge, Kammweg): wenige Fuﬂg‰nger	q1+ -1664,12057 -1730,12067 -1966,11999 -2006,12006
+(Murellenberge, Kammweg): wenige Fuﬂg‰nger, starkes Gef‰lle	q4; -2006,12006 -2046,12036 -2080,12091
+(Murellenberge, Kammweg): wenige Fuﬂg‰nger, starke Steigung	q4; -2080,12091 -2046,12036 -2006,12006
+(Murellenberge, Denkzeichenweg): wenige Fuﬂg‰nger	q1+ -1372,12412 -1396,12347
+(Murellenberge, Denkzeichenweg): wenige Fuﬂg‰nger, starke Steigung	q4; -1396,12347 -1431,12284
+(Murellenberge, Denkzeichenweg): wenige Fuﬂg‰nger, starkes Gef‰lle	q4; -1431,12284 -1396,12347
+(Murellenberge, Denkzeichenweg): wenige Fuﬂg‰nger	q1+ -1431,12284 -1523,12138 -1608,12068 -1664,12057
+(Murellenberge - Zufahrt zur Waldb¸hne): wenige Fuﬂg‰nger	q1+ -1396,12347 -1391,12304 -1409,12216 -1387,12201
+Biedermannweg: eng, einige Fuﬂg‰nger	q1- -742,12924 -744,12911 -717,12823
+Biedermannweg: einige Fuﬂg‰nger	q1 -717,12823 -686,12735
+#: XXX_prog BS (ansonsten entfernen)
+Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2631,7 +2647,9 @@ Machandelweg: Fuﬂg‰nger, schmal	q2 -248,12718 -217,12778 -187,12830
 Merowingerweg: Fuﬂg‰nger, schmal	q2 1041,11169 1065,11216
 Wandalenallee: Fuﬂg‰nger	q1 736,11206 711,11199
 Flinsberger Platz: Fuﬂg‰nger	q1 2919,8582 2966,8586
-(Wacholderweg - Rominterallee): Fuﬂg‰nger	q1 -365,12788 -396,12749
+#: corrected_by: srt (added "Bordsteine", q1 -> q3, moved from qualitaet entry)
+#: XXX_prog: BS (wahrscheinlich auf beiden Seiten, da Plural, ansonsten q1)
+(Wacholderweg - Rominterallee): Fuﬂg‰nger, Bordsteine	q3 -365,12788 -408,12766
 (Machandelweg - Rossitter Weg): Fuﬂg‰nger	q2 -45,12243 -76,12236 -107,12220
 Frauenburger Pfad: Fuﬂg‰nger, schmal	q2 475,10882 572,10876 677,10870 775,10864
 Willenberger Pfad: Fuﬂg‰nger, schmal	q2 569,10738 673,10727

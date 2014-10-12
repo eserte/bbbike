@@ -2270,7 +2270,27 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 11329,12497 11209,12430
+userdel	q4::temp 11209,12430 11273,12301
+userdel	2::temp 11273,12301 11355,12331
+',
+         'periodic' => 1,
+         'until' => 1420066799,
+         'from' => 1416438000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              11,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr.) bzw. nur schiebend auf dem Gehweg möglich (Dircksenstr.), bis Ende Dezember 2014',
+         'type' => 'gesperrt',
+         'id' => 1988
+       },
        {
          'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=962691',
          'data' => 'userdel	2::temp 9536,11912 9668,11928
@@ -3496,7 +3516,7 @@ userdel	q4::inwork 13645,15609 13739,15643 13939,15723
          'from' => undef,
          'id' => 2630,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-09-20
+#: last_checked: 2014-10-12
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 ',
@@ -3615,16 +3635,6 @@ userdel	q4::inwork; 9535,13801 9670,13637
          'id' => 2641,
          'data' => 'userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
 userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_023087',
-         'until' => 1413136800,
-         'text' => 'Wilhelmstr.: zwischen Unter den Linden und Dorotheenstr. Kraneinsatz, Straße vollständig gesperrt, ab 11.10.2014 06 Uhr bis 12.10.2014 20 Uhr',
-         'from' => 1412913600,
-         'id' => 2642,
-         'data' => 'userdel	2::inwork 8804,12280 8775,12457
 ',
          'type' => 'gesperrt'
        }

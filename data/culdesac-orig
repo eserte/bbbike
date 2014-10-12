@@ -1032,10 +1032,18 @@ Sackgassenende, Sportzentrum des SC Siemensstadt	culdesac 283,15237
 	culdesac 8909,-918
 	culdesac_pseudo 15751,8163
 	culdesac 15665,6388
+#: note: Tor zur Waldbühne
+	culdesac -1396,12181
+	culdesac -1015,12106
+	culdesac -565,12030
+	culdesac -587,12529
+	culdesac -646,12658
+	culdesac_pseudo 6657,11467
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo -742,12924
 	culdesac_pseudo 12097,1243
 	culdesac_pseudo 20363,16976
 	culdesac_pseudo -3243,17763

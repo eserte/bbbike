@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="4"
 #: osm_watch: way id="153373877" version="4"
-#: last_checked: 2014-09-20
+#: last_checked: 2014-10-12
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -403,9 +403,7 @@ Gounodstr.: nach den Bauarbeiten asphaltiert	?::inwork 13645,15609 13739,15643 1
 #: next_check: 2014-12-31
 Fürstenwalder Damm: existieren nach den Bauarbeiten vielleicht Radwege?	? 26302,5932 26080,5946 25579,5958
 # 
-#: source_id: IM_022801
-#: XXX bis 2014-12-19
-John-Foster-Dulles-Allee: wechselseitige Ampelregelung, genauer anschauen	? 7627,12380 7821,12367
+# REMOVED (keine Bauarbeiten hier) --- #: source_id: IM_022801 --- #: XXX bis 2014-12-19 --- John-Foster-Dulles-Allee: wechselseitige Ampelregelung, genauer anschauen	? 7627,12380 7821,12367
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129680.php
 #: XXX voraussichtlicher Baubeginn ist der Sommer 2014, kein Ende geplant
@@ -1025,7 +1023,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2014-09-20 vvv
+#: last_checked: 2014-10-12 vvv
 #: check_frequency: 100d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1780,15 +1778,7 @@ Am Stichkanal: Qualität? Genaue Lage?	? -19450,4599 -19375,4360
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
 #: XXX laut anonymen Eintrag Radweg; keine Verbindung zum restlichen Netz:
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
-Prinz-Friedrich-Karl-Weg: Qualität?	? -1100,12210 -1132,12268 -1172,12336 -824,12557 -646,12658
-#: XXX Name seit 2014-08-30
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140829.1125.398951.html
-#: by: http://www.tagesspiegel.de/sport/olympiapark-berlin-ehrung-fuer-gretel-bergmann/10611386.html
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=5280 (Rechtschreibfehler)
-#: XXX fehlt in Berlin.coords.data
-Gretel-Bergmann-Weg: Qualität? Genaue Lage?	? -1132,12268 -1288,12178 -1253,12117
-Friedrich-Friesen-Allee: Weiterführung der Straße, Qualität? Tor? Ausschilderung?	? -1298,12095 -1253,12117 -1100,12210 -746,12432 -587,12529
-Gutsmuthsweg: Qualität? Lage? Ausschilderung?	? -824,12557 -746,12432 -671,12311 -583,12151 -565,12030
+# REMOVED (aufgenommen) --- #: XXX Name seit 2014-08-30 --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140829.1125.398951.html --- #: by: http://www.tagesspiegel.de/sport/olympiapark-berlin-ehrung-fuer-gretel-bergmann/10611386.html --- #: XXX fehlt in Berlin.coords.data --- Gretel-Bergmann-Weg: Qualität? Genaue Lage?	? -1132,12268 -1288,12178 -1253,12117
 #: XXX kommt man überhaupt auf die Insel rauf?
 Straße 31 (Rahnsdorf): Qualität? Genaue Lage?	? 29616,3070 29338,3219
 #: XXX fehlt in Potsdam.coords.data
@@ -1990,7 +1980,6 @@ Unterspreewald, Schlepzig - Lübben: genaue Wegführung? Qualität?	? 44543,-41337 
 Zachow - Trebelsee: Qualität (Betonplatten?)?	? -31583,7939 -31087,7275
 Gutenpaaren - Trebelsee: Qualität?	? -32804,7332 -32587,6112 -32200,5825
 Am Trebelsee: Deich, Qualität?	? -32200,5825 -31812,6387 -31525,6962 -31087,7275
-Waldbühne - Havelchaussee: Qualität (wahrscheinlich Waldwege, Q2 bis Q3)? noch immer durchgängig befahrbar?	? -1399,12326 -1608,12068 -1730,12067 -1991,12002 -2080,12091 -2122,12680 -2024,12969 -2076,13060
 #: XXX zumindest in Ringenwalde schlechtes Kopfsteinpflaster
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35097,73563 33687,73037 33018,72768 32782,72789 32556,73083 31981,73174 30883,72827 30731,72711 30287,72823
 Lindenallee: Qualität? laut "Berliner Umland" witterungsabhängige Strecke; laut "mobil-potsdam.de" teils eine "Promenade", teils betoniert	? -15169,1741 -15132,1992 -15182,2309 -15290,2665 -15459,2946
@@ -3686,7 +3675,6 @@ Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13494,-
 # REMOVED (nein) --- Schiefertonweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10269,21718 10248,21795
 # REMOVED (ja) --- Zechsteinweg: ist der Zechsteinweg eine Sackgasse?	? 10328,21737 10319,21774
 # REMOVED (nein) --- Kieselweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10423,21701 10388,21801
-Weg in der Jungfernheide: Qualität des Wegs? Nachts beleuchtet? Existiert eine Ausschilderung?	? 2683,14878 2768,14923 2835,14975 2889,15033 2929,15138 2933,15270 2922,15379 3095,15495
 Uranusweg - Eichborndamm: Weg entlang Sportanlage und Autobahn, Qualität des Wegs? Nachts beleuchtet? Existiert eine Ausschilderung?	? 4287,17564 3961,17710 4015,17912
 Maienwerderweg - Sendener Weg: Qualität des Wegs? Nachts beleuchtet?	? 2210,18262 2097,18183 1928,18136 1663,18166 1375,18209 1178,18223
 Mühlenstr. (Zepernick): Qualität?	? 19737,27037 19698,27205 19730,27276

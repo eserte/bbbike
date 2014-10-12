@@ -1087,6 +1087,7 @@ Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
 Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
 (Zufahrt Debis-Parkhaus)	1 8384,10507 8350,10499 8335,10518 8348,10636 8350,10662 8367,10745 8424,10703 8430,10710
 Walterstr.	1 13121,6689 13099,6712
+Gretel-Bergmann-Weg	1s:q1 -1132,12268 -1288,12178
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1706,6 +1707,7 @@ Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
 Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21592 10111,21661
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
 Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
+Stülerstr.: Mittelstreifen	3nocross 6692,11365 6716,11439 6825,11486
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -1873,7 +1875,8 @@ tragen (21 Stufen)	0:30 15091,21172
 tragen (Treppe)	0:30 1471,-311
 #: by: rjoop vvv
 tragen (ca. 20 Stufen)	0:30 730,13286
-tragen (Treppe)	0:30 3281,15792
+#: confirmed_by: srt
+tragen (11+13 Stufen)	0:30 3302,15796
 tragen (ca. 35 Stufen)	0:30 3361,15784
 #: by: ^^^
 #: by: Alwin (...schock):
@@ -2024,6 +2027,11 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke, eventuell auf Gehweg umfahren	BNP:3::trailer=5 -1291,12098
+Schranke, eventuell auf Gehweg umfahren	BNP:3::trailer=5 -1390,11880
+Schranke, eventuell auf Gehweg umfahren	BNP:3::trailer=5 -480,12428
+#: note: aus Holz
+Drängelgitter	BNP:3::trailer=10 -1833,11665
 Schranke (lichte Breite ca. 100cm)	BNP:3::trailer=10 -4277,14981
 Drängelgitter	BNP:3::trailer=10 3664,23313
 Drängelgitter	BNP:3::trailer=10 3737,23369
@@ -2546,6 +2554,11 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: source_id: INKO_104519
+#: last_checked: 2014-10-12
+#: check_frequency: 90d
+Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 3690,11629 3844,11649 3898,11655
+# 
 #: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
 #: confirmed_by: srt
@@ -2622,7 +2635,7 @@ am Osthafen: durch Barriere versperrt	2 14259,10309 14463,10212
 #: osm_watch: way id="129104626" version="3"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
-#: last_checked: 2014-09-03
+#: last_checked: 2014-10-12
 #: check_frequency: 90d
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 
@@ -2672,7 +2685,7 @@ Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0186-neubau-eines-boardingwohn-und.html
 #: XXX_prog 1s:q3:inwork geht als Kategorie nicht, falsche Übersetzung!
-#: last_checked: 2014-07-15
+#: last_checked: 2014-10-12
 #: check_frequency: 180d
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13299
 # 
@@ -2756,7 +2769,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2014-09-03
+#: last_checked: 2014-10-12
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # 
@@ -2776,7 +2789,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
-#: last_checked: 2014-09-20
+#: last_checked: 2014-10-12
 #: check_frequency: 100d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
@@ -2801,8 +2814,8 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert?
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2014-05-20
-#: next_check: 2014-11-30
+#: last_checked: 2014-10-12
+#: check_frequency: 90d
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
 #: next_check_id: BER-20XX
@@ -2861,7 +2874,7 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 174
 # REMOVED --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
 # 
 #: note: abgeschlossener Zaun
-#: last_checked: 2014-09-03
+#: last_checked: 2014-10-12
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
 # 
@@ -2909,9 +2922,9 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 # 
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: osm_watch: way id="22792488" version="5"
-#: last_checked: 2013-07-09
-#: next_check: 2014-09-01
-Löwenbrücke: gesperrt	2:inwork 6406,11784 6467,11780
+#: last_checked: 2014-10-12
+#: check_frequency: 720d
+Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 # 
 #: last_checked: 2013-10-22
 #: next_check: 2015-03-01
@@ -3058,6 +3071,8 @@ Bocksfeldstr.	1 -4312,11720 -4101,11708
 Roedeliusweg	1 -4413,11628 -4431,11779
 Bollmannweg	1 -4431,11779 -4310,11770
 Weinmeisterhornweg	1s -4789,11225 -4564,11180
+#: note: keine Verbindung zur südlichen Nebenfahrbahn
+Heerstr.	3nocross -1523,11012 -1288,11037 -1050,11061
 Heerstr.	3nocross -4500,11937 -4437,11919 -4310,11882
 Heerstr.	3nocross -4310,11882 -4278,11873 -4076,11810
 #: XXX_prog: Treppe with two points: -4768,11016 -4836,11028

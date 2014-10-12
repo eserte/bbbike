@@ -105,7 +105,7 @@ Fußgängerampel links benutzen	CP; 14723,16691 14619,16682 14619,16672
 # REMOVED (gelöst durch split der Hohenstaufenstr) --- #: XXX_prog: RL:ja, GPS:ja (da es doch immerhin 30 Meter bis zur Ampel sind und Radfahrer evtl. nach links fahren würden) --- Münchener Str. zur Nachodstr.: Fußgängerampel auf der rechten Seite benutzen	CP; 6224,9544 6210,9753 6209,9772 6108,9772
 Fußgängerampel östlich der Münchener Str. zum Überqueren benutzen	CP; 6209,9772 6241,9772 6209,9773
 an der Fußgängerampel vor der Münchener Str. auf den linken Gehweg wechseln	CP; 6502,9782 6241,9772 6209,9771
-Thomas-Dehler-Str. - Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6654,11460 6716,11439 6825,11486
+Thomas-Dehler-Str. - Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6657,11467 6716,11439 6825,11486
 Gervinusstr./Lewishamstr.: linken Gehweg bis zur Ampel an der Mommsenstr. benutzen	CP; 3835,10915 3623,10800 3644,10759
 #: XXX_prog: RL:ja, GPS:nein
 Tiergarten: rechts des Neuen Sees halten	CP2; 5900,11913 5858,11863
@@ -115,7 +115,7 @@ Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4783,8557 4784,8508 4960,8440
 # REMOVED (Richtungsfahrbahnen!) --- #: XXX_prog Bei den beiden nächsten Einträgen (Am Volkspark) stand hier "PI:35;". --- #: XXX_prog Diese Schreibweise (verlorene Zeit in Sekunden) wird noch nirgendwo unterstützt, --- #: XXX_prog deshalb wieder zu "PI;" geändert. --- #: XXX_prog Die verlorene Zeit entspricht etwa 150m bei 15 km/h --- #: XXX_prog evtl. lohnt hier der Einsatz von routing_helper? Auf einer Straßenseite in beiden Richtungen würde reichen. Allerdings bräuchte man eine Routinganweisung "U-Turn", die es noch nicht gibt. --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	CP; 5320,8456 5433,8407 5598,8267 --- Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	CP; 5598,8267 5438,8402 5433,8407 5320,8456 --- Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5399,8344 5433,8407 5320,8456 --- #: XXX_prog: falls obiges implementiert mit routing_helper wird, braucht man hier vielleicht nichts zu machen --- oder doch, je nach Labelling? --- Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	CP; 5598,8267 5433,8407 5399,8344
 Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5458,10443 5529,10453 5578,10529 5636,10626
-weiter links auf Uferweg	CP; 6334,14756 5972,14820 5873,14847
+Nordufer: bereits an der Ampel Föhrer Str. auf den linken Zweirichtungsradweg wechseln	PI; 6334,14756 5972,14820 5873,14847
 #: note: unbequemes Überqueren, aber (mittlerweile?) möglich; 
 An der Wuhlheide - Wuhlewanderweg: ggfs. bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (insbesondere mit Anhänger oder mit Lastenrad wenig Platz auf dem Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21569,5730 21596,5693 21602,5685 21744,5804
 #: XXX_prog: RL:ja, GPS:nein
@@ -165,7 +165,7 @@ Waldweg ist schwierig zu finden	CP2; 44290,165418 44268,165790
 Falkenwalde - Eickstedt: nicht den Eickstädter Weg nehmen, sondern erst den nächsten (nicht ausgeschilderten) Weg nach links	CP; 51170,97266 51610,97382 52346,97533 52507,97631 52471,98189
 #: by: Andreas M.: vvv
 #: XXX_prog: RL:ja, GPS:nein
-Spreeufer: durch das Tor der Kleingartenkolonie	CP2; -307,13279 -278,13322
+Spreeufer: durch das Tor der Kleingartenkolonie	CP2; -309,13268 -285,13276
 #: XXX_prog: RL:ja, GPS:nein
 Lefèvrestr. - Bundesallee: Fußgängerfurt benutzen	CP; 5215,6643 5360,6642 5358,6725
 # REMOVED (Versatz ist (mittlerweile?) weniger als 20m) --- #: XXX_indoor: sollte in eine 3nocross+routing_helper-Kombination umgeschrieben werden, außerdem auch die Verbindung Zolastr. - Straßburger sollte beachtet werden --- Straßburger Str. - Torstr.: Fußgängerfurt (Drängelgitter) ca. 50m westlich der Kreuzung benutzen	CP; 11052,13870 10898,13632 11111,13518

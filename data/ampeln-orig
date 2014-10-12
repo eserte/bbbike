@@ -633,6 +633,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2109,11441
 	X 1574,11379
 	X 1403,11428
+#: XXX_prog nicht relevant beim Fahren von der Heerstr. auf den Platz
 	X 1381,11335
 	X 704,11273
 	X 1457,10168
@@ -678,7 +679,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3283,11097
 	X 3975,11087
 	X 3546,10962
-	X 4540,11041
+	X 4532,11042
 	X 4722,11030
 	X 4503,10497
 	X 4847,10589
@@ -829,8 +830,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 19994,12484
 #: XXX_prog: zurzeit eine Fußgängerampel mit Anforderung, östlich versetzt, lange Wartezeiten
 #: source_id: INKO_117292
-#: last_checked: 2014-06-02
-#: next_check: 2014-09-26
+#: source_id: INKO_104519
+#: last_checked: 2014-10-12
+#: check_frequency: 90d
 	X 4507,11728
 	X 3807,11859
 	X 3408,11849
@@ -839,7 +841,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2330,11762
 #: off: except_event
 #: note: Ampel wahrscheinlich nur bei Waldbühnen-Veranstaltungen eingeschaltet
-	X -1288,11037
+#: note: ansonsten sowieso irrelevant, da nur die Hauptfahrbahn betreffend
+	X0 -1288,11037
 	X -1523,11012
 	X -593,11119
 	X 504,11243
@@ -1850,7 +1853,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: note: Anforderungsampel
 	F 10427,15699
 # REMOVED (aufgehoben, by: Kaja Kruse) --- X 10713,15746
-#: off: weekend
+#: off: weekend (gesehen z.B. am So, 2014-10-12)
+#: note: Anforderungsampel
 	X 1053,13790
 #: XXX_prog Ampel ist nach Osten versetzt, aber hier eingetragen, damit auch das Nord-Süd-Routing diese Ampel erfährt
 #: XXX_prog in Nord->Süd-Richtung gilt eigentlich nur die Ampel über die Straßenbahntrasse
@@ -1898,7 +1902,10 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 5907,10821
 	F 8358,11477
 	F 6459,8272
+#: XXX_prog nicht relevant für Nebenfahrbahn, nur für querende Radfahrer
 	F 1028,11309
+#: note: nicht relevant für den (benutzungsplichtigen) Radweg
+	F0 1450,11309
 	F 13164,13374
 #: section Parkeisenbahn Wuhlheide vvv
 #: note: Fährt nur am Wochenende tagsüber während des Sommers im 15-30-Minutentakt: vvv
@@ -1926,6 +1933,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F -6512,12581
 	F -6275,12498
 # REMOVED (existiert wohl nicht mehr) --- F 7938,13791
+#: XXX_prog eventuell nur die Hauptfahrbahn betreffend, also nur für querende Radfahrer interessant
 	F -1050,11061
 	X -82,11178
 	F 3381,12087
@@ -2540,13 +2548,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
-#: last_checked: 2014-09-20
+#: last_checked: 2014-10-12
 #: check_frequency: 60d
 	F::inwork 9812,12145
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2014-10-01 (an der Hessischen Str.) vvv
+#: last_checked: 2014-10-12 vvv
 #: next_check: 2015-05-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926

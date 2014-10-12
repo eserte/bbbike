@@ -799,6 +799,7 @@ Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
 Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
 (Zufahrt Debis-Parkhaus)	1 8384,10507 8350,10499 8335,10518 8348,10636 8350,10662 8367,10745 8424,10703 8430,10710
 Walterstr.	1 13121,6689 13099,6712
+Gretel-Bergmann-Weg	1s -1132,12268 -1288,12178
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2125,6 +2126,8 @@ Krugpfuhlweg -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11178,22999 11812,
 Mittelstreifen	3nocross::ignrte 21307,12132 21400,12135 21573,12140
 Altentreptower Str. -> Unfallkrankenhaus Berlin: Mittelstreifen	3::igndisp 21307,12132 21400,12135 21401,12155
 Unfallkrankenhaus Berlin -> Altentreptower Str.: Mittelstreifen	3::igndisp 21401,12155 21400,12135 21573,12140
+Mittelstreifen	3nocross::ignrte 6692,11365 6716,11439 6825,11486
+Stülerstr. -> zur Thomas-Dehler-Str.: Mittelstreifen	3::igndisp 6692,11365 6716,11439 6657,11467
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2250,7 +2253,7 @@ tragen (ca. 30 Stufen)	0:30:-90 -13733,-1856
 tragen (21 Stufen)	0:30:-127 15091,21172
 tragen (Treppe)	0:30:-267 1471,-311
 tragen (ca. 20 Stufen)	0:30:-221 730,13286
-tragen (Treppe)	0:30:-105 3281,15792
+tragen (11+13 Stufen)	0:30:-104 3302,15796
 tragen (ca. 35 Stufen)	0:30:-235 3361,15784
 tragen (4 x 8 Stufen)	0:30:56 1761,3208
 tragen (36 Stufen)	0:35:78 17759,11768
@@ -2330,7 +2333,7 @@ tragen (Treppe)	0:40:-184 2921,13606
 tragen (Treppe)	0:40:-262 3016,13615
 tragen (Treppe, 32 Stufen)	0:40:-7 3054,13638
 tragen (Treppe, 19 Stufen)	0:25:41 20939,2389
-tragen (Treppe)	0:30:-43 -633,12739
+tragen (Treppe)	0:30:-45 -633,12739
 tragen (Treppe)	0:30:-118 -7418,181
 tragen (Treppe, 56 Stufen)	0:50:-64 -6933,14317
 tragen (Treppe, 56 Stufen)	0:50:2 -6934,14291
@@ -2349,6 +2352,10 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Schranke, eventuell auf Gehweg umfahren	BNP:3:-131:trailer=5 -1291,12098
+Schranke, eventuell auf Gehweg umfahren	BNP:3:-169:trailer=5 -1390,11880
+Schranke, eventuell auf Gehweg umfahren	BNP:3:56:trailer=5 -480,12428
+Drängelgitter	BNP:3:-225:trailer=10 -1833,11665
 Schranke (lichte Breite ca. 100cm)	BNP:3:49:trailer=10 -4277,14981
 Drängelgitter	BNP:3:-126:trailer=10 3664,23313
 Drängelgitter	BNP:3:-127:trailer=10 3737,23369
@@ -2737,6 +2744,13 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross::ignrte 3690,11629 3844,11649 3898,11655
+Bismarckstr. -> Richard-Wagner-Str.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3690,11629 3844,11649 3837,11760
+Bismarckstr. -> Sesenheimer Str.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3898,11655 3844,11649 3866,11473
+Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3837,11760 3844,11649 3898,11655
+Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3837,11760 3844,11649 3866,11473
+Sesenheimer Str. -> Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3866,11473 3844,11649 3690,11629
+Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3866,11473 3844,11649 3837,11760
 Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, evtl. dauerhaft	2 12807,11287 12713,11372
 Alfred-Döblin-Platz: Bauarbeiten, Fahrbahn gesperrt	2::inwork 11162,10919 11150,11030
@@ -2792,7 +2806,7 @@ Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,
 Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12395
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
-Löwenbrücke: gesperrt	2:inwork 6406,11784 6467,11780
+Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 Behlertstr.	1 -12370,-354 -12514,-340 -12621,-359 -12821,-417
 tragen (Treppe)	0:30:-82 2279,5112
@@ -2984,6 +2998,9 @@ Bocksfeldstr.	1 -4312,11720 -4101,11708
 Roedeliusweg	1 -4413,11628 -4431,11779
 Bollmannweg	1 -4431,11779 -4310,11770
 Weinmeisterhornweg	1s -4789,11225 -4564,11180
+Heerstr.	3nocross::ignrte -1523,11012 -1288,11037 -1050,11061
+Heerstr. -> Passenheimer Str.: Heerstr.	3::igndisp -1523,11012 -1288,11037 -1304,11183
+Passenheimer Str. -> Heerstr.: Heerstr.	3::igndisp -1304,11183 -1288,11037 -1050,11061
 Heerstr.	3nocross::ignrte -4500,11937 -4437,11919 -4310,11882
 Heerstr.	3nocross::ignrte -4310,11882 -4278,11873 -4076,11810
 Heerstr. -> Enger St.: Heerstr.	3::igndisp -4076,11810 -4278,11873 -4310,11770

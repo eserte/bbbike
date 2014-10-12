@@ -15845,7 +15845,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013995',
        data  => <<EOF,
-userdel	q4::inwork; -1258,13552 -990,13502 -795,13437 -729,13415 -346,13349 -307,13279 -264,13009
+userdel	q4::inwork; -1258,13552 -990,13502 -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
 EOF
      },
      { from  => 1251530387, # 2009-08-29 09:19
@@ -16660,7 +16660,7 @@ EOF
        source_id => 'Message-ID: <001e01ca4b11$15559d20$4000d760$@grittner@adfc-berlin.de>', # außerdem: http://www.berlin.de/ba-reinickendorf/presse/archiv/20091006.1420.141477.html
        data  => <<EOF,
 #: last_checked: 2009-10-10 by Susanne Grittner
-userdel	2::inwork 3314,15782 3398,16000 3564,16294
+userdel	2::inwork 3310,15790 3398,16000 3564,16294
 EOF
      },
      { from  => 1270235189, # 2010-04-02 21:06
@@ -17020,11 +17020,11 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => 1384350862, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
-       until => $isodate2epoch->("2013-12-31 23:59:59"), # 1384350812, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
+     { from  => $isodate2epoch->("2014-11-20 00:00:00"), # Beginn am 24.11. (voraussichtlich), Aufbauzeit... # 1384350862, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
+       until => $isodate2epoch->("2014-12-31 23:59:59"), # Ende am 28.12. (voraussichtlich), Abbauzeit... # 1384350812, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
        periodic => 1,
        recurrences => [['yearly', days => 11, months => 11]],
-       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr.) bzw. nur schiebend auf dem Gehweg möglich (Dircksenstr.), bis Ende Dezember 2013',
+       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr.) bzw. nur schiebend auf dem Gehweg möglich (Dircksenstr.), bis Ende Dezember 2014',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11329,12497 11209,12430
@@ -18186,7 +18186,7 @@ EOF
        text  => 'Fahrbahnsanierung in der Pestalozzistraße zwischen Wielandstraße und Schlüterstraße, ab Montag, 12.07.2010 bis Ende August 2010, nur einspurig in Fahrtrichtung Wielandstraße befahrbar.',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 4434,11227 4555,11216
+userdel	q4::inwork; 4434,11227 4546,11217
 EOF
      },
      { from  => undef, # 
@@ -23394,7 +23394,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-09-20
+#: last_checked: 2014-10-12
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 EOF
