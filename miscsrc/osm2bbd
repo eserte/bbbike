@@ -2146,6 +2146,7 @@ EOF
 EOF
     for my $rec (@$data) {
 	my($name, $coords, $cat) = @$rec;
+	$name =~ s{[\t\n]}{ }g;
 	if (!defined $coords) {
 	    # a directive
 	    print $ofh $name, "\n";
