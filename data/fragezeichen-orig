@@ -97,9 +97,10 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2014 (Widmung von Straßenland für einen Radfahrstreifen, Gitschiner/Alexandrinen)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
 #: last_checked: 2014-10-08
-#: check_frequency: 60d
+#: next_check: 2015-03-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
 # REMOVED --- #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
@@ -383,6 +384,29 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3901 vvv
+#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036414341928/414341928/00063878/78-Anlagen/02/Benennungsabsichtfuer9PrivatwegeinderAnlageIde.pdf vvv
+#: XXX Benennungsabsicht für 9 Privatwege in der Anlage Idehorst im Ortsteil Blankenfelde vvv
+#: XXX fehlen alle in Berlin.coords.data, 13159 Berlin, alles Privatwege vvv
+#: next_check: 2015-03-01 vvv
+Ideallee: Qualität, Beleuchtung, Straßenbenennung?	? 11069,23647 10971,23838 10824,24105
+Kirschlorbeerweg: Qualität, Beleuchtung, Straßenbenennung?	? 11069,23647 11028,23624 10927,23816
+Feuerdornweg: Qualität, Beleuchtung, Straßenbenennung?	? 11008,23572 10887,23796
+Heckenrosenweg: Qualität, Beleuchtung, Straßenbenennung?	? 10842,23773 10974,23534
+Fingerstrauchweg: Qualität, Beleuchtung, Straßenbenennung?	? 10785,23740 10839,23640
+Mispelweg: Qualität, Beleuchtung, Straßenbenennung	? 10747,23718 10797,23620
+Lebensbaumweg: Qualität, Beleuchtung, Straßenbenennung	? 10708,23696 10759,23597
+#: oldname: Fasanenplan
+Bambusweg: Qualität, Beleuchtung, Straßenbenennung	? 10667,23684 10687,23684 10708,23696 10747,23718 10785,23740 10842,23773 10887,23796 10927,23816 10971,23838
+Zypressenweg: Qualität, Beleuchtung, Straßenbenennung	? 10685,23707 10603,23870
+#: next_check ^^^
+#: XXX ^^^
+#: XXX ^^^
+#: by: ^^^
+#: by: ^^^
+#: XXX laut osm track=grade2, aber auch Kapellenweg
+Verlängerung des Kapellenwegs: Qualität? Ausschilderung?	? 10667,23684 10685,23707 10724,23744 10885,23830
 # 
 #: XXX fehlen in Berlin.coords.data, PLZ 12527; beides sind Privatstraßen vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4906 vvv
@@ -677,11 +701,7 @@ Am Lokdepot: werden die beiden Teilstücke miteinander verbunden?	?::inwork 8390,
 # 
 # REMOVED (keine interessante Radverbindung --- wassergebundene Decke, unbeleuchtet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4997.html (fertiggestellt) --- #: last_checked: 2013-05-29 --- #: next_check: 2013-06-26 --- Grünanlage an der Teilestr.: Parkwege entstehen, evtl. eine lohnende Abkürzung, Qualität, nachts beleuchtet?	?::inwork 11068,6006 11056,5861 11146,5851 11277,5988
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130410.1200.383317.html --- Schönwalder Allee: Radweg wird saniert, danach asphaltiert	?::inwork; -3811,17218 -3842,17280 -3980,17486
-# 
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4461
-#: last_checked: 2014-06-09
-#: check_frequency: 180d
-Wassersportallee: wird hier eine Fußgängerampel eingerichtet?	? 22506,1379 22488,1282
+# REMOVED (nein) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4461 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036564034713/564034713/00092298/98-Anlagen/05/B0362SB.pdf --- #: last_checked: 2014-06-09 --- #: check_frequency: 180d --- Wassersportallee: wird hier eine Fußgängerampel eingerichtet?	? 22506,1379 22488,1282
 # 
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/B-XIII-102U.jpg
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/UeberXIII-102.htm
@@ -1110,7 +1130,7 @@ Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01
 #: by: http://www.berlin.de/ba-spandau/bvv-online/___tmp/tmp/45081036991983647/991983647/00097770/70-Anlagen/01/1_Version_vom_31_03_2014.pdf
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7653 (Antrag)
 #: last_checked: 2014-09-13
-#: next_check: 2015-09-13
+#: next_check: 2016-09-13
 Fußgängerbrücke über den Nordhafen in Planung	?::projected -2506,16315 -2510,16357
 # 
 #: XXX -> strassen_bab-orig, wenn fertig
@@ -3739,3 +3759,8 @@ Steiermärker Str. (Schwanebeck): Qualität?	? 18958,26234 18942,26470
 Genfer Platz (Schwanebeck): Qualität? Gibt es eine Verbindung zur Zillertaler Str.?	? 18389,26038 18395,26020
 #: source_id: 146400332	
 Hohenstein - Strausberg: gibt es zwischen Hohenstein und Strausberg mittlerweile einen Radweg? Ist es ein Zweirichtungsradweg? Asphaltiert?	? 48635,18552 47672,18859 46386,18523 44085,19049 43857,19113 43686,19241
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20141013.1250.399643.html
+#: XXX ggfs. in Berlin.coords.data aufnehmen
+#: XXX außerdem: ist der südliche Teil bis zur Schulenburgbrücke mittlerweile gepflastert/asphaltiert?
+#: next_check: 2014-10-21
+Hermann-Oxfort-Promenade: Ist die Hermann-Oxfort-Promenade ausgeschildert?	? -3503,13773 -3543,13691 -3556,13582 -3546,13503 -3529,13452 -3451,13300 -3441,13270 -3352,13135 -3339,13106 -3203,12895 -3202,12891

@@ -7581,7 +7581,7 @@ Picardieweg: unbefestigte Straße	Q2 10964,21969 10892,22165
 Favierweg: alter rauer Asphalt	Q2 10876,22613 10979,22769
 Straße 124: unbefestigte Straße	Q2+ 11013,22745 10979,22769 10758,22952
 Straße 123: unbefestigte Straße	Q2+ 10758,22952 10700,23251
-Schillingweg: Asphalt	Q0 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11051,23620 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
+Schillingweg: Asphalt	Q0 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11069,23647 11051,23620 11008,23572 10974,23534 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 Schillingweg: unbefestigte Straße	Q2 10396,23128 10237,23051
 Dr.-Dorsch-Allee: Asphalt	Q0 11285,23079 11253,23103 11088,23227
 Dr.-Dorsch-Allee: unbefestigte Straße	Q2 11088,23227 10855,23403
@@ -8200,7 +8200,7 @@ Feldsteinweg: unbefestigte Straße	Q2 8669,24813 8649,24826
 Feldsteinweg: unbefestigte Straße	Q2+ 8717,24682 8736,24667 8746,24636 8731,24594
 Reppfuhlring: unbefestigte Straße	Q2 8604,24747 8659,24682 8724,24656 8700,24605 8668,24546 8534,24625
 Röhrichtweg: unbefestigte Straße	Q2 8565,24679 8700,24605 8731,24594 8798,24575
-Kapellenweg (Blankenfelde): Asphalt	Q0 10279,23278 10373,23353 10418,23396 10456,23441 10497,23491 10549,23550 10667,23684 10971,23838
+Kapellenweg (Blankenfelde): Asphalt	Q0 10279,23278 10373,23353 10418,23396 10456,23441 10497,23491 10549,23550 10667,23684
 Weg B (Blankenfelde): unbefestigter Weg	Q2+ 10497,23491 10629,23222
 Straße 145: unbefestigte Straße	Q2 11079,21860 11170,21876
 Henrionweg: unbefestigte Straße	Q2 11095,21768 11154,21760
@@ -19682,6 +19682,10 @@ Keilerstr.: guter Asphalt	Q0 -412,22468 -597,22627
 #: corrected_by: srt (mäßiger Asphalt -> ...) (möglicherweise nach Asphaltreparatur)
 Olafstr.: Asphalt	Q0 3947,23547 3698,23657 3605,23724 3561,23817
 #: corrected_by: srt (mäßiger Asphalt -> ...)
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.210019.php
+#: add_fragezeichen: Ist die Fahrbahn nach den Bauarbeiten besser geworden? Liegt nun Asphalt?
+#: next_check: 2014-11-21
+#: priority: #A
 Olafstr.: schadhafter Beton	Q2 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
 #: by: ^^^
 # 
@@ -23781,6 +23785,8 @@ Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046
 (südliches Spreeufer - Gustav-Heinemann-Brücke): wassergebundene Decke	Q1 8032,12889 8053,12871 8116,12938
 (südliches Spreeufer - Spreebogenpark): wassergebundene Decke	Q1 8427,12871 8385,12881 8304,12938
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
+#: XXX Qualität der wassergebundenen Decke prüfen
+#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285
 (Willy-Brandt-Str. - Rahel-Hirsch-Str.): wassergebundene Decke	Q1 8120,12756 8124,12840 8116,12938
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen?
 #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013)

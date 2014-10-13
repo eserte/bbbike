@@ -2807,7 +2807,16 @@ userdel	q4::inwork; 19445,5271 19405,5284 19328,5304
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_023149',
+         'until' => 1419091200,
+         'text' => 'Siemensstr.: Baustelle, zwischen Wattstr. und Edisonstr. in Richtung Edisonstr. gesperrt, 13.10.2014 06:15 Uhr bis 20.12.2014 17:00 Uhr ',
+         'from' => 1413087300,
+         'id' => 2353,
+         'data' => 'userdel	q4::inwork; 17766,6616 17842,6639 17860,6644 17962,6674
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3029,16 +3038,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1410/nachricht5376.html',
-         'until' => 1413151200,
-         'text' => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, von 11.10.2014, 8:00 Uhr bis 12.10.2014, 24:00 Uhr',
-         'from' => 1412920800,
-         'id' => 2448,
-         'data' => 'userdel	2::inwork 16201,24354 16156,24284 16123,24232
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3382,15 +3382,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       {
-         'until' => 1413151200,
-         'text' => 'Badstr.: Veranstaltung (Oktoberfest Badstraße) zwischen Pankstr. und Behmstr., von 11.10.2014 bis 12.10.2014',
-         'from' => 1412892000,
-         'id' => 2591,
-         'data' => 'userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3619,18 +3611,18 @@ userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065
        {
          'source_id' => 'IM_023111',
          'until' => 1427896800,
-         'text' => 'Gartenstr.: Baustelle zwischen Tieckstr. und Torstr., Fahrbahn Richtung Torstr. gesperrt,, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
+         'text' => 'Gartenstr.: Baustelle zwischen Invalidenstr. und Tieckstr., Fahrbahn Richtung Torstr. gesperrt, außerdem Einbahnstraßenregelung in der Tieckstr., 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
          'from' => 1412481600,
          'id' => 2640,
-         'data' => '#: XXX Impact untersuchen
-userdel	q4::inwork; 9535,13801 9670,13637
+         'data' => '	q3::inwork; 9514,13826 9383,13986
+	q3::inwork; 9514,13826 9376,13765
 ',
          'type' => 'handicap'
        },
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/freybruecke/de/bau.shtml',
-         'until' => 1433109599,
-         'text' => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke wahrscheinlich nicht benutzbar, bis 2015',
+         'until' => 1448636400,
+         'text' => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke wahrscheinlich nicht benutzbar, bis November 2015',
          'from' => undef,
          'id' => 2641,
          'data' => 'userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
@@ -3648,6 +3640,16 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
          'data' => '	3::night 14563,8243 14419,8112 14439,8050
 	3::night 14439,8050 14419,8112 14563,8243
 '
+       },
+       {
+         'source_id' => 'IM_023135',
+         'until' => 1413817200,
+         'text' => 'Mäckeritzbrücke: Vollsperrung, eventuell sogar für Fußgänger und Radfahrer, 13.10.2014 08:00 Uhr bis 20.10.2014 17:00 Uhr ',
+         'from' => 1413093600,
+         'id' => 2644,
+         'data' => 'userdel	2::inwork 1232,15804 1238,15705
+',
+         'type' => 'gesperrt'
        }
      
 );

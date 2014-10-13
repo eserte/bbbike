@@ -20558,11 +20558,11 @@ EOF
 userdel	q4::inwork 13161,7173 13051,7157
 EOF
      },
-     { from  => 1341133200, # 2012-07-01 11:00
-       until => 1354633200, # 2012-12-04 16:00
-       text  => 'Siemensstr. (Oberschöneweide): Baustelle, Fahrtrichtung gesperrt (bis Anfang 12/12) Richtung Edisonstr. zwischen Wattstr. und Edisonstr',
-       type  => 'handicap',
-       source_id => 'INKO_111688',
+     { from  => 1413087300, # 2014-10-12 06:15
+       until => 1419091200, # 2014-12-20 17:00
+       text  => 'Siemensstr.: Baustelle, zwischen Wattstr. und Edisonstr. in Richtung Edisonstr. gesperrt, 13.10.2014 06:15 Uhr bis 20.12.2014 17:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_023149',
        data  => <<EOF,
 userdel	q4::inwork; 17766,6616 17842,6639 17860,6644 17962,6674
 EOF
@@ -23486,17 +23486,17 @@ EOF
      },
      { from  => 1412481600, # 2014-10-05 06:00
        until => 1427896800, # 2015-04-01 16:00
-       text  => 'Gartenstr.: Baustelle zwischen Tieckstr. und Torstr., Fahrbahn Richtung Torstr. gesperrt,, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
+       text  => 'Gartenstr.: Baustelle zwischen Invalidenstr. und Tieckstr., Fahrbahn Richtung Torstr. gesperrt, außerdem Einbahnstraßenregelung in der Tieckstr., 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_023111',
        data  => <<EOF,
-#: XXX Impact untersuchen
-userdel	q4::inwork; 9535,13801 9670,13637
+	q3::inwork; 9514,13826 9383,13986
+	q3::inwork; 9514,13826 9376,13765
 EOF
      },
      { from  => undef, # 
-       until => 1433109599, # 2015-05-31 23:59
-       text  => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke wahrscheinlich nicht benutzbar, bis 2015',
+       until => $isodate2epoch->("2015-11-27 16:00:00"), # 1433109599, # 2015-05-31 23:59
+       text  => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke wahrscheinlich nicht benutzbar, bis November 2015',
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/freybruecke/de/bau.shtml',
        data  => <<EOF,
@@ -23520,6 +23520,15 @@ EOF
        data  => <<EOF,
 	3::night 14563,8243 14419,8112 14439,8050
 	3::night 14439,8050 14419,8112 14563,8243
+EOF
+     },
+     { from  => 1413093600, # 2014-10-12 08:00
+       until => 1413817200, # 2014-10-20 17:00
+       text  => 'Mäckeritzbrücke: Vollsperrung, eventuell sogar für Fußgänger und Radfahrer, 13.10.2014 08:00 Uhr bis 20.10.2014 17:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_023135',
+       data  => <<EOF,
+userdel	2::inwork 1232,15804 1238,15705
 EOF
      },
     );
