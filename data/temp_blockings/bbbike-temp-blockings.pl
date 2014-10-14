@@ -23490,8 +23490,10 @@ EOF
        type  => 'handicap',
        source_id => 'IM_023111',
        data  => <<EOF,
+#: XXX nochmal prüfen, VMZ meint noch immer "Richtung Torstr." vvv
 	q3::inwork; 9514,13826 9383,13986
 	q3::inwork; 9514,13826 9376,13765
+#: XXX ^^^
 EOF
      },
      { from  => undef, # 
@@ -23529,6 +23531,15 @@ EOF
        source_id => 'IM_023135',
        data  => <<EOF,
 userdel	2::inwork 1232,15804 1238,15705
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Torgauer Str.: in Höhe Cheruskerpark wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: wosch
+userdel	2::inwork 7374,8211 7250,8223
 EOF
      },
     );

@@ -3614,8 +3614,10 @@ userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065
          'text' => 'Gartenstr.: Baustelle zwischen Invalidenstr. und Tieckstr., Fahrbahn Richtung Torstr. gesperrt, außerdem Einbahnstraßenregelung in der Tieckstr., 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
          'from' => 1412481600,
          'id' => 2640,
-         'data' => '	q3::inwork; 9514,13826 9383,13986
+         'data' => '#: XXX nochmal prüfen, VMZ meint noch immer "Richtung Torstr." vvv
+	q3::inwork; 9514,13826 9383,13986
 	q3::inwork; 9514,13826 9376,13765
+#: XXX ^^^
 ',
          'type' => 'handicap'
        },
@@ -3648,6 +3650,16 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
          'from' => 1413093600,
          'id' => 2644,
          'data' => 'userdel	2::inwork 1232,15804 1238,15705
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Torgauer Str.: in Höhe Cheruskerpark wegen Bauarbeiten gesperrt',
+         'from' => undef,
+         'id' => 2645,
+         'data' => '#: by: wosch
+userdel	2::inwork 7374,8211 7250,8223
 ',
          'type' => 'gesperrt'
        }

@@ -19682,10 +19682,6 @@ Keilerstr.: guter Asphalt	Q0 -412,22468 -597,22627
 #: corrected_by: srt (mäßiger Asphalt -> ...) (möglicherweise nach Asphaltreparatur)
 Olafstr.: Asphalt	Q0 3947,23547 3698,23657 3605,23724 3561,23817
 #: corrected_by: srt (mäßiger Asphalt -> ...)
-#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.210019.php
-#: add_fragezeichen: Ist die Fahrbahn nach den Bauarbeiten besser geworden? Liegt nun Asphalt?
-#: next_check: 2014-11-21
-#: priority: #A
 Olafstr.: schadhafter Beton	Q2 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
 #: by: ^^^
 # 
@@ -23785,9 +23781,8 @@ Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046
 (südliches Spreeufer - Gustav-Heinemann-Brücke): wassergebundene Decke	Q1 8032,12889 8053,12871 8116,12938
 (südliches Spreeufer - Spreebogenpark): wassergebundene Decke	Q1 8427,12871 8385,12881 8304,12938
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
-#: XXX Qualität der wassergebundenen Decke prüfen
-#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285
-(Willy-Brandt-Str. - Rahel-Hirsch-Str.): wassergebundene Decke	Q1 8120,12756 8124,12840 8116,12938
+# REMOVED (hier asphaltiert) --- #: XXX Qualität der wassergebundenen Decke prüfen --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285
+(Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8124,12840 8116,12938
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen?
 #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013)
 #: by: http://infocenter.charite.de/
