@@ -159,15 +159,17 @@ sub do_complete_file {
 	my($str, $hnr, $plz, $city) = split /\|/, $strname;
 	for my $location (
 			  "$str $hnr, $plz $city",
+			  lc("$str $hnr, $plz $city"),
+			  lc("$str $hnr, $plz"),
 			 ) {
 	    my $res = $geocoder->geocode(location => $location);
 	    if (!$res) {
-		print $ofh "No result for '$strname'\n";
+		print $ofh "No result for '$location'\n";
 		$mismatches++;
 	    } else {
 		my $res_string = join('|', @{$res->{details}}{qw(street hnr zip city)});
 		if ($res_string ne $strname) {
-		    print $ofh "Mismatch: '$res_string' - '$strname'\n";
+		    print $ofh "Mismatch: '$res_string' - '$strname' (for '$location')\n";
 		    $mismatches++;
 		}
 	    }
