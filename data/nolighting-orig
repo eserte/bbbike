@@ -1249,12 +1249,13 @@ Berolinastr.	NL 11719,13088 11815,13045 11865,13027
 (Park am Gleisdreieck, Eingang Bülowstr.)	NL 7928,10094 8011,10085 8013,10055 8027,10074 8042,10084 8145,10090 8211,10083 8276,10079
 (Park am Gleisdreieck)	NL 8258,10338 8249,10313 8253,10265 8263,10187 8211,10083
 (Park am Gleisdreieck)	NL 8180,10282 8253,10265
+(Park am Gleisdreieck)	NL 8540,9644 8497,9654 8446,9670 8349,9697 8335,9702
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.):	NL 8276,10079 8289,9988 8206,9867 8208,9856 8233,9863 8243,9766
 Stresemannstr. - Wilhelmstr.	NL 9210,10614 9368,10641
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.)	NL 8263,10187 8276,10079
 #: XXX Beleuchtung existiert, funktioniert aber nicht
-#: last_checked: 2013-12-02
-#: next_check: 2014-09-23
+#: last_checked: 2014-10-15
+#: check_frequency: 180d
 Stresemannstr. - Wilhelmstr.	NL 9250,10563 9375,10616
 (Weg an der Südpanke)	NL 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3495
@@ -1511,3 +1512,7 @@ zum Pappelweg	NL -2827,18639 -2870,18553 -2965,18488 -3058,18358 -3091,18328
 (Murellenberge, Denkzeichenweg)	NL -1372,12412 -1396,12347 -1431,12284 -1523,12138 -1608,12068 -1664,12057
 (Murellenberge - Zufahrt zur Waldbühne)	NL -1396,12347 -1391,12304 -1409,12216 -1387,12201
 Brombeerweg	NL -612,12809 -630,12757
+#: XXX vielleicht nur während der Bauarbeiten ohne Licht?
+#: last_checked: 2014-10-15
+#: check_frequency: 180d
+(Geßlerstr. - Monumentenstr.)	NL 7970,8886 7964,9060

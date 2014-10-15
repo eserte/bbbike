@@ -87,7 +87,8 @@ Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
 Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13760,9188
-Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11833,7980 11754,7964
+Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11833,7980
+Herrfurthstr.: Asphalt	Q0 11833,7980 11754,7964
 Herrfurthstr.: Asphalt	Q0 11647,7940 11573,7924 11472,7899
 Herrfurthplatz: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 Feurigstr.: m‰ﬂiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7389,8837
@@ -8650,8 +8651,8 @@ Schwarzwurzel-Park: Gehwegplatten	Q0 20698,18359 20814,18341 20823,18329
 (Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11912,19279 11927,19308
 (Flaschenhalspark, Weg entlang den Bahngleisen): Beton	Q0 8423,9532 8414,9366 8393,9293 8374,9291
 (Yorckstr. - Flaschenhalspark): Beton	Q0 8358,9567 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
-(Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8339,9560 8339,9448 8374,9291 8381,9247 8338,9099
-(Flaschenhalspark, Berlin-Leipzig): unbefestigt	Q2 8338,9099 8344,9085 8358,9068
+(Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8339,9560 8339,9448 8374,9291 8381,9247 8338,9099 8344,9085
+(Flaschenhalspark, Berlin-Leipzig): gepflastert	Q2 8344,9085 8358,9068
 (Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8358,9068 8367,9006 8374,9074 8389,9087
 Am Lokdepot: Asphalt	Q0 8389,9017 8389,9087
 Sewanstr. [Wohngebiet]: Beton	Q1 18266,9853 18210,9989
@@ -9468,7 +9469,7 @@ Achtermannstr.: Kopfsteinpflaster	Q3 11220,18992 11384,19067
 Achtermannstr.: Kopfsteinpflaster	Q2 11384,19067 11468,19106 11561,19149 11599,19171 11634,19187 11671,19204 11748,19235
 Grevesm¸hlener Str.: Beton	Q0 18180,18431 18040,18448 18024,18450 17887,18334 17804,18272 17709,18201 17702,18168
 Husumer Str.: Asphalt	Q0 20713,10293 20945,10286 21015,10284 21276,10271
-Gottschedstr.: Kopfsteinpflaster	Q2 7885,16005 8014,16089 8077,16178 8306,16428
+Gottschedstr.: Kopfsteinpflaster	Q2 7885,16005 8014,16089 8077,16178 8307,16434
 Maisweg: Asphalt	Q0 20680,12632 20773,12621 20816,12618 20851,12669 20961,12858 21003,13152
 Ingw‰onenweg: Asphalt	Q0 16442,22505 16499,22789 16517,22868 16543,22942 16566,23007 16587,23067 16627,23187
 Ingw‰onenweg: Verbundsteinpflaster	Q0 16627,23187 16683,23354
@@ -9915,8 +9916,8 @@ Staakener Str.: schlechtes Kopfsteinpflaster	Q3 -4491,14207 -4707,14178
 Staakener Str.: Kopfsteinpflaster	Q2 -4707,14178 -4733,14230 -4748,14237
 Jacobsohnstr.: Asphalt	Q0 12189,16578 12357,16696 12472,16783 12521,16817 12699,16945
 Iranische Str.: Kopfsteinpflaster	Q2 8092,16485 7843,16524
-Iranische Str.: Verbundsteinpflaster und Gehwegplatten	Q1 7843,16524 7717,16541
-	Q1 7717,16541 7707,16543 7456,16620
+Iranische Str.: Verbundsteinpflaster und Gehwegplatten	Q1 7843,16524 7713,16557
+Iranische Str.: Gehwegplatten, etwas uneben	Q2 7713,16557 7447,16613
 Reinholdstr.: m‰ﬂiges Kopfsteinpflaster	Q2 12833,6796 12953,6820 13014,6833
 Bruno-Bauer-Str.: Kopfsteinpflaster	Q2 12816,6870 12833,6796 12843,6750 12860,6667 12876,6589 12893,6527
 Juliusstr.: Asphalt	Q0 13200,6550 13129,6535 12904,6488 12782,6462
@@ -10105,7 +10106,7 @@ Moltkestr.: m‰ﬂiges Kopfsteinpflaster	Q2 4476,3820 4307,3959
 Moltkestr.: m‰ﬂiges Kopfsteinpflaster	Q2 4307,3959 4234,4020
 Moltkestr.: m‰ﬂiges Kopfsteinpflaster	Q2 4234,4020 4092,4217 4012,4325
 Moltkestr.: Kopfsteinpflaster	Q2 4012,4325 3926,4438 3898,4477 3859,4531
-Zionskirchstr.: Kopfsteinpflaster	Q2 10101,14455 10277,14350
+Zionskirchstr.: Kopfsteinpflaster	Q2 10090,14458 10277,14350
 (Mauerweg Forst Spandau): Asphalt, einige Wurzelhebungen	Q0 -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6977,17655 -6962,17713 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
 (Mauerweg Forst Spandau): unbefestiger Pfad	Q2 -7032,19431 -7069,19436 -7397,19289
 (Mauerweg Forst Spandau): unbefestiger Weg	Q2 -7397,19289 -7703,19147 -7759,19104 -7862,19113 -8011,19059

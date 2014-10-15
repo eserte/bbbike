@@ -114,8 +114,10 @@ Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0- 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
 Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2- 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13760,9188
-Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11979,8014 11833,7980 11754,7964
-#: note: außer Parkstreifen
+Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11979,8014 11833,7980
+#: note: gepflasterter Parkstreifen
+Herrfurthstr.: Asphalt	Q0 11833,7980 11754,7964
+#: note: gepflasterter Parkstreifen
 Herrfurthstr.: Asphalt	Q0 11647,7940 11573,7924 11472,7899
 Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7389,8837
@@ -1637,6 +1639,7 @@ Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12490,9056 12565,9200 12620,9293
 (Am Flutgraben): Gehwegpflasterung	Q1+ 13333,9929 13371,9974 13535,10184
 Schleusenufer: Kopfsteinpflaster	Q2 13487,10227 13628,10396
 Schmollerplatz: Beton	Q1 13271,9516 13293,9468
+#: XXX vielleicht ist die Pflasterung nach den Bauarbeiten besser geworden?
 Wildenbruchplatz: schlechtes bis mäßiges Kopfsteinpflaster	Q3+ 13135,8766 13227,8692 13314,8624
 Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13227,8692 13171,8621 13124,8562
 Finowstr. (Neukölln): Asphalt	Q0 13124,8562 13010,8422
@@ -8745,7 +8748,7 @@ Freesienweg: Verbundsteinpflaster	Q0- 16000,12625 15997,12743
 #: next_check_id: RITTER-2014
 #: XXX nach den Bauarbeiten wird sich Qualität ändern
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2014-09-05
+#: last_checked: 2014-10-15
 #: check_frequency: 90d
 Ritterstr.: teilweise unbefestigt und holprig	Q1- 9763,11148 9861,11103
 #: note: berlinsis meint hierzu: "fester Waldweg, Q2" (falls er diesen Weg überhaupt meint)
@@ -8821,8 +8824,8 @@ In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9903,17711 99
 #: next_check_id: FLORAGAERTEN-2014
 #: XXX Qualität nach den Bauarbeiten? Wird dieser Teil der Straße überhaupt noch existieren?
 #: XXX siehe auch Eintrag in gesperrt-orig
-#: last_checked: 2014-08-21
-#: check_frequency: 90d
+#: last_checked: 2014-09-28
+#: check_frequency: 30d
 In den Floragärten: unbefestigte Straße	Q2 9903,17711 9996,17707 9997,17646 10014,17646
 #: note: und ein paar Meter Verbundsteinpflaster an der Neustrelitzer Str.
 (Neustrelitzer Str. - Werneuchener Str.): welliger Asphalt, Beton	Q1 16443,14825 16610,15000
@@ -9398,13 +9401,9 @@ Schwarzwurzel-Park: Gehwegplatten	Q0- 20698,18359 20814,18341 20823,18329
 (Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11912,19279 11927,19308
 (Flaschenhalspark, Weg entlang den Bahngleisen): Beton	Q0 8423,9532 8414,9366 8393,9293 8374,9291
 (Yorckstr. - Flaschenhalspark): Beton	Q0 8358,9567 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
-(Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8339,9560 8339,9448 8374,9291 8381,9247 8338,9099
-#: next_check_id: MONUMENTENPLATZ-2014
-#: XXX während der Bauarbeiten
-#: XXX später wahrscheinlich große Pflastersteine
-#: last_checked: 2014-09-02
-#: check_frequency: 60d
-(Flaschenhalspark, Berlin-Leipzig): unbefestigt	Q2 8338,9099 8344,9085 8358,9068
+(Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8339,9560 8339,9448 8374,9291 8381,9247 8338,9099 8344,9085
+# REMOVED --- #: next_check_id: MONUMENTENPLATZ-2014 --- #: XXX während der Bauarbeiten --- #: XXX später wahrscheinlich große Pflastersteine --- #: last_checked: 2014-09-02 --- #: check_frequency: 60d
+(Flaschenhalspark, Berlin-Leipzig): gepflastert	Q2+ 8344,9085 8358,9068
 (Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8358,9068 8367,9006 8374,9074 8389,9087
 Am Lokdepot: Asphalt	Q0 8389,9017 8389,9087
 Sewanstr. [Wohngebiet]: Beton	Q1+ 18266,9853 18210,9989
@@ -10598,7 +10597,7 @@ Achtermannstr.: Kopfsteinpflaster	Q2 11384,19067 11468,19106 11561,19149 11599,1
 #: corrected_by: srt (Asphalt -> )
 Grevesmühlener Str.: Beton	Q0 18180,18431 18040,18448 18024,18450 17887,18334 17804,18272 17709,18201 17702,18168
 Husumer Str.: Asphalt	Q0 20713,10293 20945,10286 21015,10284 21276,10271
-Gottschedstr.: Kopfsteinpflaster	Q2 7885,16005 8014,16089 8077,16178 8306,16428
+Gottschedstr.: Kopfsteinpflaster	Q2 7885,16005 8014,16089 8077,16178 8307,16434
 Maisweg: Asphalt	Q0 20680,12632 20773,12621 20816,12618 20851,12669 20961,12858 21003,13152
 #: confirmed_by: srt
 Ingwäonenweg: Asphalt	Q0 16442,22505 16499,22789 16517,22868 16543,22942 16566,23007 16587,23067 16627,23187
@@ -11749,10 +11748,10 @@ Jacobsohnstr.: Asphalt	Q0- 12189,16578 12357,16696 12472,16783 12521,16817 12699
 #: confirmed_by: srt
 Iranische Str.: Kopfsteinpflaster	Q2 8092,16485 7843,16524
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
-Iranische Str.: Verbundsteinpflaster und Gehwegplatten	Q1 7843,16524 7717,16541
-#: XXX hier auch Verbundsteinpflaster und Gehwegplatten?
+Iranische Str.: Verbundsteinpflaster und Gehwegplatten	Q1 7843,16524 7713,16557
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> "")
-	Q1 7717,16541 7707,16543 7456,16620
+#: note: "Charlottenburger Platten"
+Iranische Str.: Gehwegplatten, etwas uneben	Q2+ 7713,16557 7447,16613
 #: by: ^^^
 # 
 #: by: Gabi Sieber: vvv
@@ -12045,7 +12044,7 @@ Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4234,4020 4092,4217 4012,4325
 #: corrected_by: srt (Q3 -> Q2)
 Moltkestr.: Kopfsteinpflaster	Q2 4012,4325 3926,4438 3898,4477 3859,4531
 #: corrected_by: srt (Q1 -> Q2)
-Zionskirchstr.: Kopfsteinpflaster	Q2 10101,14455 10277,14350
+Zionskirchstr.: Kopfsteinpflaster	Q2 10090,14458 10277,14350
 #: confirmed_by: srt (added "einige Wurzelhebungen")
 (Mauerweg Forst Spandau): Asphalt, einige Wurzelhebungen	Q0- -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6977,17655 -6962,17713 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
 #: corrected_by: srt (Asphalt -> )

@@ -2975,13 +2975,13 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        {
          'source_id' => 'IM_022268',
-         'until' => 1413993600,
-         'text' => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis 22.10.2014',
+         'until' => 1413820800,
+         'text' => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis voraussichtlich 20.10.2014',
          'from' => 1403992800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2014
 #: last_checked: 2014-10-10 vvv
-#: next_check: 2014-10-22 vvv
+#: next_check: 2014-10-20 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
@@ -3047,7 +3047,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'from' => undef,
          'id' => 2454,
          'data' => 'Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
@@ -3658,8 +3658,33 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
          'text' => 'Torgauer Str.: in Höhe Cheruskerpark wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2645,
-         'data' => '#: by: wosch
-userdel	2::inwork 7374,8211 7250,8223
+         'data' => '#: next_check_id: TORGAUER-2014
+#: by: wosch
+#: confirmed_by: srt
+#: last_checked: 2014-10-15
+#: check_frequency: 90d
+	2::inwork 7374,8211 7250,8223
+	q3::inwork 7374,8211 7402,8208 7446,8200
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_023177',
+         'until' => 1413583199,
+         'text' => 'Karlshorster Str.: zwischen Hauptstr. und Türrschmidtstr. Vollsperrung, auch Radfahrer und Fußgänger können nicht passieren, ab: 16.10.2014 04 Uhr bis 17.10.2014 nachts ',
+         'from' => 1413338400,
+         'id' => 2646,
+         'data' => 'userdel	2::inwork 15272,10790 15279,10862
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1413755999,
+         'text' => 'Schönerlinder Straße: komplette Sperrung wegen Abriss der alten Autobahnbrücke, von Samstag, 18.10.2014, 8 Uhr bis Sonntagnacht ',
+         'from' => 1413525600,
+         'id' => 2647,
+         'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1410/nachricht5389.html
+userdel	2::inwork 12624,25570 12694,25696
 ',
          'type' => 'gesperrt'
        }

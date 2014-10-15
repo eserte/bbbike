@@ -21192,14 +21192,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2014-06-29 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2014-10-22 18:00:00"),
-       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis 22.10.2014',
+       until => $isodate2epoch->("2014-10-20 18:00:00"),
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis voraussichtlich 20.10.2014',
        type  => 'handicap',
        source_id => 'IM_022268',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2014
 #: last_checked: 2014-10-10 vvv
-#: next_check: 2014-10-22 vvv
+#: next_check: 2014-10-20 vvv
 #: by: http://www.berlin-straba.de/
 #: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
 #: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
@@ -23538,8 +23538,31 @@ EOF
        text  => 'Torgauer Str.: in Höhe Cheruskerpark wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: TORGAUER-2014
 #: by: wosch
-userdel	2::inwork 7374,8211 7250,8223
+#: confirmed_by: srt
+#: last_checked: 2014-10-15
+#: check_frequency: 90d
+	2::inwork 7374,8211 7250,8223
+	q3::inwork 7374,8211 7402,8208 7446,8200
+EOF
+     },
+     { from  => $isodate2epoch->("2014-10-15 04:00:00"),
+       until => 1413583199, # 2014-10-17 23:59
+       text  => 'Karlshorster Str.: zwischen Hauptstr. und Türrschmidtstr. Vollsperrung, auch Radfahrer und Fußgänger können nicht passieren, ab: 16.10.2014 04 Uhr bis 17.10.2014 nachts ',
+       type  => 'gesperrt',
+       source_id => 'IM_023177',
+       data  => <<EOF,
+userdel	2::inwork 15272,10790 15279,10862
+EOF
+     },
+     { from  => 1413525600, # 2014-10-17 08:00
+       until => 1413755999, # 2014-10-19 23:59
+       text  => 'Schönerlinder Straße: komplette Sperrung wegen Abriss der alten Autobahnbrücke, von Samstag, 18.10.2014, 8 Uhr bis Sonntagnacht ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1410/nachricht5389.html
+userdel	2::inwork 12624,25570 12694,25696
 EOF
      },
     );

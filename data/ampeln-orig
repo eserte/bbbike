@@ -2249,8 +2249,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 13520,6583
 	F 6315,3974
 	F 6489,3578
-#: XXX_prog: Ampel eigentlich 20m nach Norden versetzt (die Ampelzählung müsste für die Querstraße korrigiert werden...)
-	F 7717,16541
+#: note: Anforderungsampel
+#: XXX_prog: beide Ampeln sind getrennt geschaltet, man muss auf dem Mittelstreifen neu anfordern
+	F 7713,16557
 	X 5004,12771
 	F 5754,13170
 	X 20150,13562
@@ -2399,7 +2400,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 15356,3759
 #: next_check_id: KARLSHORSTER-2014 vvv
 #: last_checked: 2014-10-10 vvv
-#: next_check: 2014-10-22 vvv
+#: next_check: 2014-10-20 vvv
 #: note: provisorische Ampel
 #: valid: 20140630-20141022 vvv
 	X::inwork 14906,10820

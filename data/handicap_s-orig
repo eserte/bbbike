@@ -56,7 +56,7 @@ M¸hsamstr.: Bauarbeiten in Hˆhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # 
 ### Mitte ###
 # 
-#: last_checked: 2014-10-13
+#: last_checked: 2014-10-15
 #: check_frequency: 7d
 Gipsstr.: Bauarbeiten an der Rosenthaler Str., Einbahnstraﬂe, einige Meter Gehweg benutzen	q3::inwork; 10350,13376 10199,13446
 # 
@@ -249,12 +249,7 @@ Leuschnerdamm: Bauarbeiten am Engelbecken, Einbahnstraﬂe	q4::inwork; 11458,11136
 # 
 ### Kreuzberg ###
 # 
-#: next_check_id: MONUMENTENPLATZ-2014
-#: XXX w‰hrend der Bauarbeiten
-#: last_checked: 2014-09-02
-#: check_frequency: 60d
-Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
-# 
+# REMOVED --- #: next_check_id: MONUMENTENPLATZ-2014 --- #: XXX w‰hrend der Bauarbeiten --- #: last_checked: 2014-09-02 --- #: check_frequency: 60d --- Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 # REMOVED (aufgehoben) --- #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¶INKO_114376¶http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376 --- #: osm_watch: way id="34390483" version="8" --- #: source_id: INKO_114376 --- #: source_id: IM_019321 --- #: last_checked: 2013-11-24 --- #: next_check: 2013-12-15 (laut VMZ bis 15.03.2014) --- #: priority: #A --- Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # REMOVED --- #: XXX siehe auch aufgehobene Einbahnstraﬂenregelung in der Gegenrichtung, sowie fragezeichen-orig-Eintrag --- #: last_checked: 2013-06-11 --- #: next_check: 2013-06-14 --- #: priority: #A --- Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732
 # 
@@ -284,9 +279,9 @@ Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den a
 # 
 # REMOVED (fertig) --- #: XXX laut Schild bis Herbst 2014 --- #: XXX wird sich nach den Bauarbeiten hier etwas ‰ndern? Zus‰tzliche Asphaltierung der Delbr¸ckstr.? Sperrung der Walterstr. f¸r den Kfz-Verkehr? Bleibt die Einbahnstraﬂe in der Walterstr. (ggfs. den Eintrag in gesperrt-orig wieder aktivieren) --- #: last_checked: 2014-08-26 --- #: next_check: 2014-10-15 --- Delbr¸ckstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,6717 13099,6712 13126,6687
 # 
-#: XXX danach asphaltiert?
-#: last_checked: 2014-09-26
-Herrfurthstr: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 11833,7980 11754,7964
+#: XXX danach asphaltiert? Und die Einbahnstraﬂe aufgehoben?
+#: last_checked: 2014-10-15
+Herrfurthstr: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 11833,7980 11979,8014
 # 
 # REMOVED (man kann durch, obwohl noch die Verbotsschilder stehen) --- #: XXX laut Schild Bauarbeiten bis September 2014 --- #: last_checked: 2014-09-26 (fast fertig, nur die Absperrung steht noch) --- #: next_check: 2014-09-29 --- Wildenbruchplatz: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13135,8766 13227,8692 13314,8624
 # 
@@ -2129,10 +2124,11 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 #: XXX_prog BS an der Wollankstr., nur wenn man hier von S¸den kommt und abbiegt (ansonsten q1)
 (Wollankstr. - Pankeweg): Fuﬂg‰nger, Bordstein	q2 9228,17274 9073,17361
 (am Kaiser's): Fuﬂg‰nger	q2 15714,11941 15710,11857
+#: note: q2, falls alle vier Gleise mit Straﬂenbahnen belegt sind, aber manchmal sind es nur zwei oder so, und man kommt viel besser durch
 Groﬂe Pr‰sidentenstr.: wartende Straﬂenbahnen	q2 10220,13098 10105,13004
 Wilhelmine-Gemberg-Weg: einige Fuﬂg‰nger	q1 11762,11665 11829,11727
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
-Iranische Str.: einige Fuﬂg‰nger	q1 7843,16524 7717,16541 7707,16543 7456,16620
+Iranische Str.: einige Fuﬂg‰nger	q1 7843,16524 7713,16557 7447,16613
 (Nennhauser Damm - Am alten Gaswerk): einige Fuﬂg‰nger	q1 -8043,13464 -8136,13542
 (Mauerweg Forst Spandau): sehr eng	q4+ -7032,19431 -7069,19436 -7397,19289
 (Glindowseestr. - Plauer-See-Str.): einige Fuﬂg‰nger	q1 -1652,16721 -1666,16652 -1685,16583 -1699,16513 -1715,16444 -1734,16375
@@ -2540,7 +2536,7 @@ An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13235,13414
 #: next_check_id: RITTER-2014
 #: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2014-10-08
+#: last_checked: 2014-10-15
 #: check_frequency: 90d
 Ritterstr.: Fuﬂg‰nger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fuﬂg‰nger	q2 5810,5340 5813,5354 5822,5388

@@ -846,7 +846,7 @@ Boppstr.	1s:q2 11785,9437 11560,9524
 Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s:q3 21769,-432 21719,-397 21637,-381
-Herrfurthstr.	1s:q3 11979,8014 11833,7980
+# REMOVED (wird wahrscheinlich nach den Bauarbeiten aufgehobe) --- Herrfurthstr.	1s:q3 11979,8014 11833,7980
 Dankratstr.	1s:q3 21105,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
 Helen-Ernst-Str., hinter der o2-Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
@@ -1529,7 +1529,7 @@ Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,1
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9781,16569 9816,16565
 Osloer Str.: Straßenbahntrasse	3nocross 7687,16770 7763,16779 7852,16790
-Seestr.: Straßenbahntrasse	3nocross 7417,16587 7456,16620 7606,16746
+Seestr.: Straßenbahntrasse	3nocross 7417,16587 7447,16613 7606,16746
 Seestr.: Straßenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
 Seestr.: Straßenbahntrasse	3nocross 7231,16418 7295,16477 7403,16575
 Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6626,15104
@@ -2506,7 +2506,7 @@ Drängelgitter	BNP:5 -5890,25875
 # REMOVED (eine Hälfte der Schranke nicht mehr vorhanden) --- #: note: Anhänger sollten vielleicht den Gehweg benutzen --- Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12565,9200
 #: note: ansonsten kann man ein paar Meter östlich die Bordsteinabsenkung benutzen
 Schranke, meistens offen	BNP:3::trailer=6 7843,16524
-Schranke, meistens offen	BNP:3::trailer=6 7707,16543
+# REMOVED (hmmm, hier keine Schranke?) --- Schranke, meistens offen	BNP:3::trailer=6 7707,16543
 Barriere	BNP:10 12178,7985
 #: note: Durchfahrt ist 120cm breit
 Drängelgitter	BNP:0::trailer=3 10535,13006
@@ -2632,10 +2632,9 @@ Regener Str.: Bauarbeiten, noch nicht fertig gestellt	2::inwork 19790,9478 19849
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
-#: note: allerdings könnte man sein Fahrrad über den Betonpfeiler rübertragen
-#: last_checked: 2014-10-05
-#: check_frequency: 90d
-am Osthafen: durch Barriere versperrt	2 14259,10309 14463,10212
+#: last_checked: 2014-10-11
+#: check_frequency: 120d
+am Osthafen: Bauzaun	2::inwork 14259,10309 14463,10212
 # 
 # REMOVED --- #: last_checked: 2014-04-17 --- #: check_frequency: 14d --- Edith-Stein-Str.: Bauarbeiten könnten noch möglich sein	2::inwork 14089,13247 14035,13104
 # 

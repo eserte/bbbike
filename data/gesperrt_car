@@ -607,11 +607,11 @@ Wriezener Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9245,16758 9210,1663
 Straßenbahntrasse	3nocross::ignrte 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
 Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8249,16741 8161,16752 8092,16485
 Heinz-Galinski-Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 8092,16485 8161,16752 8144,16754
-Straßenbahntrasse	3nocross::ignrte 7606,16746 7456,16620 7417,16587 7403,16575 7295,16477 7231,16418
-Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7456,16620 7707,16543
-Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7707,16543 7456,16620 7417,16587
+Straßenbahntrasse	3nocross::ignrte 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418
+Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7447,16613 7713,16557
+Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7713,16557 7447,16613 7417,16587
 Seestr. -> Verbindungsweg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
-Verbindungsweg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7456,16620
+Verbindungsweg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7447,16613
 Seestr. -> Groninger Str.: Straßenbahntrasse	3::igndisp 7417,16587 7403,16575 7439,16350
 Groninger Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7439,16350 7403,16575 7295,16477
 Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
@@ -1097,8 +1097,8 @@ Hanns-Braun-Str.: bewachte Schranke	2 -515,12407 -671,12311 -1015,12106
 Weg 7: Sackgasse	3 17042,7685 16902,7652 16873,7733
 Weg 7: Sackgasse	3 17042,7685 16902,7652 16934,7570
 Elbeweg: nur für Anlieger	2:Anlieger 16934,7570 16949,7484 17061,7323 17135,7223 17211,7265
-Südkreuz Vorplatz: Durchfahrt nicht möglich	3 7774,7724 7757,7682 7716,7625
-Südkreuz Vorplatz: Durchfahrt nicht möglich	3 7716,7625 7757,7682 7774,7724
+Südkreuz Vorplatz: Durchfahrt nicht möglich	3 7774,7724 7766,7702 7750,7658 7724,7643
+Südkreuz Vorplatz: Durchfahrt nicht möglich	3 7724,7643 7750,7658 7766,7702 7774,7724
 Liningstr.	1 13574,4862 13534,5111
 Alt-Britz:	3 12594,4324 12564,4308 12363,4175
 Alt-Britz:	3 12594,4324 12564,4308 12547,4391
@@ -1449,9 +1449,9 @@ Rorschacher Zeile -> Residenzstr.: Mittelstreifen	3::igndisp 7203,18360 7291,183
 Pfirsichweg	1 -4696,9263 -4755,9120
 Leipziger: Mittelstreifen	3 9987,11690 9981,11689 9982,11681
 Leipziger: Mittelstreifen	3 9982,11681 9981,11689 9898,11679
-Straßenbahntrasse	3nocross::ignrte 7403,16575 7417,16587 7456,16620
+Straßenbahntrasse	3nocross::ignrte 7403,16575 7417,16587 7447,16613
 Seestr. -> Verbindungsweg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
-Verbindungsweg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7456,16620
+Verbindungsweg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7447,16613
 Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 7295,16477
 Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 7417,16587
 Florastr.: Poller	3 1929,28119 1938,28171 1961,28239

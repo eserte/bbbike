@@ -36,10 +36,9 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Michaelkirchplatz: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11349,11227 11415,11392
 Leuschnerdamm: Bauarbeiten am Engelbecken, Einbahnstraﬂe	q4::inwork; 11458,11136 11421,11073
-Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 Kˆbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
-Herrfurthstr: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 11833,7980 11754,7964
+Herrfurthstr: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 11833,7980 11979,8014
 Richardplatz: Bauarbeiten auf der s¸dlichen Fahrbahn	q4::inwork 13188,7590 13303,7622
 Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 13103,7889 13085,7904 12870,8087
 Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 13150,7845 13103,7889
@@ -1429,7 +1428,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 Groﬂe Pr‰sidentenstr.: wartende Straﬂenbahnen	q2 10220,13098 10105,13004
 Wilhelmine-Gemberg-Weg: einige Fuﬂg‰nger	q1 11762,11665 11829,11727
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
-Iranische Str.: einige Fuﬂg‰nger	q1 7843,16524 7717,16541 7707,16543 7456,16620
+Iranische Str.: einige Fuﬂg‰nger	q1 7843,16524 7713,16557 7447,16613
 (Nennhauser Damm - Am alten Gaswerk): einige Fuﬂg‰nger	q1 -8043,13464 -8136,13542
 (Mauerweg Forst Spandau): sehr eng	q4 -7032,19431 -7069,19436 -7397,19289
 (Glindowseestr. - Plauer-See-Str.): einige Fuﬂg‰nger	q1 -1652,16721 -1666,16652 -1685,16583 -1699,16513 -1715,16444 -1734,16375
@@ -2308,7 +2307,6 @@ Fuchsbergeweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 205
 (Marchlewskistr. - Gubener Str.): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13168,12219 13173,12202 13097,12166
 Boppstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 11785,9437 11560,9524
 Pitschener Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21769,-432 21719,-397 21637,-381
-Herrfurthstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11979,8014 11833,7980
 Dankratstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 21105,9538 20943,9543
 Havermannstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13803,4932 13892,4955
 Rambowstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13853,4759 13825,4850 13803,4932

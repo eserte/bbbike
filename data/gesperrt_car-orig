@@ -342,7 +342,7 @@ Jägerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
 Osloer Str.: Straßenbahntrasse	3nocross 9442,16610 9331,16624 9210,16638 8939,16668
 Osloer Str.: Straßenbahntrasse	3nocross 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
-Seestr.: Straßenbahntrasse	3nocross 7606,16746 7456,16620 7417,16587 7403,16575 7295,16477 7231,16418
+Seestr.: Straßenbahntrasse	3nocross 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418
 Bismarckstr.: Mittelstreifen	3nocross 3690,11629 3844,11649 3898,11655
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6071,6559
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
@@ -595,8 +595,8 @@ Teterower Str.	1 13717,5175 13824,5204
 Hanns-Braun-Str.: bewachte Schranke	2 -515,12407 -671,12311 -1015,12106
 Weg 7: Sackgasse	3 17042,7685 16902,7652 *
 Elbeweg: nur für Anlieger	2:Anlieger 16934,7570 16949,7484 17061,7323 17135,7223 17211,7265
-Südkreuz Vorplatz: Durchfahrt nicht möglich	3 7774,7724 7757,7682 7716,7625
-Südkreuz Vorplatz: Durchfahrt nicht möglich	3 7716,7625 7757,7682 7774,7724
+Südkreuz Vorplatz: Durchfahrt nicht möglich	3 7774,7724 7766,7702 7750,7658 7724,7643
+Südkreuz Vorplatz: Durchfahrt nicht möglich	3 7724,7643 7750,7658 7766,7702 7774,7724
 Liningstr.	1 13574,4862 13534,5111
 Alt-Britz:	3 12594,4324 12564,4308 *
 Leistikowstr.	1 -12512,810 -12297,738
@@ -830,7 +830,7 @@ Pfirsichweg	1 -4696,9263 -4755,9120
 Leipziger: Mittelstreifen	3 9987,11690 9981,11689 9982,11681
 Leipziger: Mittelstreifen	3 9982,11681 9981,11689 9898,11679
 #: XXX_prog ^^^
-Seestr.: Straßenbahntrasse	3nocross 7403,16575 7417,16587 7456,16620
+Seestr.: Straßenbahntrasse	3nocross 7403,16575 7417,16587 7447,16613
 Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 *
 Florastr.: Poller	3 * 1938,28171 *
 Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
