@@ -1,7 +1,43 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Stau
+#: title: Traffic Jam
+#: category_image.Jam: ../misc/verkehrszeichen/Zeichen_124.svg:24x24=1:12000,xxx
+#: line_color.Jam: #800000
+#: line_dash.Jam: 4,4
+#: line_do_offset.Jam: 1
 #: 
 # Wo gibt es Stau auf der Fahrbahn, der auch Radfahrer betrifft?
 # 
 #: note: gesehen: 2014-10-15 19:00 (Werktag, S/DB-Bahnstreik)
-Möckernstr.	CS; 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
+Möckernstr.	Jam; 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
+# 
+Leipziger Str. Richtung Westen	Jam; 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8740,11524
+# 
+Leipziger Str. Richtung Osten	Jam; 8740,11524 8834,11536 9058,11564
+# 
+Friedrichstr.	Jam; 9313,12662 9314,12652 9330,12529 9343,12464 9358,12351 9369,12253 9373,12197 9385,12098 9394,11996 9406,11899 9418,11804 9432,11702 9444,11616
+Friedrichstr.	Jam; 9444,11616 9432,11702 9418,11804 9406,11899 9394,11996 9385,12098 9373,12197 9369,12253 9358,12351 9343,12464 9330,12529 9314,12652 9313,12662
+# 
+#: next_check_id: WARSCHAUER-2014 vvv
+Warschauer Str. Richtung Norden	Jam; 13493,11217 13541,11355 13588,11490 13603,11538
+# 
+Warschauer Str. Richtung Norden, Ausweichen auf Mittelstreifen möglich	Jam; 13603,11538 13651,11731
+# 
+Warschauer Str. Richtung Süden, Ausweichen auf Mittelstreifen möglich	Jam; 13785,12292 13745,12118 13696,11920
+# 
+Warschauer Str. Richtung Süden, Ausweichen auf Mittelstreifen möglich	Jam; 13651,11731 13603,11538
+#: next_check_id ^^^
+# 
+Modersohnstr. Richtung Süden	Jam; 14011,10812 13919,10583
+# 
+Torstr. vor Schönhauser Tor	Jam; 10898,13632 10746,13673
+# 
+Skalitzer Str. vor Kottbusser Tor	Jam; 11117,10326 11130,10326 11316,10372 11335,10375
+# 
+Gitschiner Str. vor Lindenstr.	Jam; 10122,10294 9948,10280 9873,10285
+# 
+Dorotheenstr.	Jam; 8540,12420 8775,12457
+Dorotheenstr.	Jam; 8775,12457 8540,12420
+# 
+#: next_check_id: STABIUDL-2014
+Unter den Linden	Jam; 9601,12380 9475,12365
