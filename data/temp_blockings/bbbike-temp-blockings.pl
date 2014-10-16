@@ -23486,14 +23486,12 @@ EOF
      },
      { from  => 1412481600, # 2014-10-05 06:00
        until => 1427896800, # 2015-04-01 16:00
-       text  => 'Gartenstr.: Baustelle zwischen Invalidenstr. und Tieckstr., Fahrbahn Richtung Torstr. gesperrt, außerdem Einbahnstraßenregelung in der Tieckstr., 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
+       text  => 'Gartenstr.: Baustelle zwischen Invalidenstr. und Tieckstr., Fahrbahn Richtung Torstr. gesperrt (kurzer Abschnitt), außerdem Einbahnstraßenregelung in der Tieckstr., 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_023111',
        data  => <<EOF,
-#: XXX nochmal prüfen, VMZ meint noch immer "Richtung Torstr." vvv
-	q3::inwork; 9514,13826 9383,13986
+	q2::inwork; 9514,13826 9383,13986
 	q3::inwork; 9514,13826 9376,13765
-#: XXX ^^^
 EOF
      },
      { from  => undef, # 
@@ -23553,7 +23551,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_023177',
        data  => <<EOF,
-userdel	2::inwork 15272,10790 15279,10862
+userdel	2::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
      { from  => 1413525600, # 2014-10-17 08:00
@@ -23563,6 +23561,15 @@ EOF
        data  => <<EOF,
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1410/nachricht5389.html
 userdel	2::inwork 12624,25570 12694,25696
+EOF
+     },
+     { from  => 1412481600, # 2014-10-05 06:00
+       until => 1427896800, # 2015-04-01 16:00
+       text  => 'Gartenstr.: Baustelle vor der Invalidenstr., kurzer Abschnitt der Fahrbahn in Richtung Süden gesperrt, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_023111',
+       data  => <<EOF,
+userdel	q2::inwork; 9224,14169 9383,13986
 EOF
      },
     );

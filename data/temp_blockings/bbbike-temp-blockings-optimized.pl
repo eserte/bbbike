@@ -3577,16 +3577,7 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf',
-         'until' => 1413410400,
-         'text' => 'Albrechtstraße: Fahrbahnsanierung zwischen Friedensplatz und Tempelhofer Damm, Sperrung der Fahrbahn, 15.09.2014 bis 15.10.2014',
-         'from' => 1410732000,
-         'id' => 2637,
-         'data' => 'userdel	q4::inwork 9003,6121 9212,6096
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf',
          'until' => 1414710000,
@@ -3611,13 +3602,11 @@ userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065
        {
          'source_id' => 'IM_023111',
          'until' => 1427896800,
-         'text' => 'Gartenstr.: Baustelle zwischen Invalidenstr. und Tieckstr., Fahrbahn Richtung Torstr. gesperrt, außerdem Einbahnstraßenregelung in der Tieckstr., 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
+         'text' => 'Gartenstr.: Baustelle zwischen Invalidenstr. und Tieckstr., Fahrbahn Richtung Torstr. gesperrt (kurzer Abschnitt), außerdem Einbahnstraßenregelung in der Tieckstr., 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
          'from' => 1412481600,
          'id' => 2640,
-         'data' => '#: XXX nochmal prüfen, VMZ meint noch immer "Richtung Torstr." vvv
-	q3::inwork; 9514,13826 9383,13986
+         'data' => '	q2::inwork; 9514,13826 9383,13986
 	q3::inwork; 9514,13826 9376,13765
-#: XXX ^^^
 ',
          'type' => 'handicap'
        },
@@ -3674,7 +3663,7 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
          'text' => 'Karlshorster Str.: zwischen Hauptstr. und Türrschmidtstr. Vollsperrung, auch Radfahrer und Fußgänger können nicht passieren, ab: 16.10.2014 04 Uhr bis 17.10.2014 nachts ',
          'from' => 1413338400,
          'id' => 2646,
-         'data' => 'userdel	2::inwork 15272,10790 15279,10862
+         'data' => 'userdel	2::inwork 15261,10738 15272,10790 15279,10862
 ',
          'type' => 'gesperrt'
        },
@@ -3687,6 +3676,16 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 userdel	2::inwork 12624,25570 12694,25696
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_023111',
+         'until' => 1427896800,
+         'text' => 'Gartenstr.: Baustelle vor der Invalidenstr., kurzer Abschnitt der Fahrbahn in Richtung Süden gesperrt, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr',
+         'from' => 1412481600,
+         'id' => 2648,
+         'data' => 'userdel	q2::inwork; 9224,14169 9383,13986
+',
+         'type' => 'handicap'
        }
      
 );
