@@ -74,21 +74,26 @@ update-from-andreasm:
 	@echo "Are there any .rej files?"
 	cd $(HOME)/src/bbbike/data && make check all
 
-#upload-personal: $(HOME)/.bbbike/personal.wpt
-#	gpsman readput GPSMan WP $(HOME)/.bbbike/personal.wpt
-#
-#$(HOME)/.bbbike/personal.wpt:	$(HOME)/.bbbike/personal.bbd
-#	${GREPSTRASSEN} -catrx ':GPS' $(HOME)/.bbbike/personal.bbd | ${MISCSRCDIR}/bbd2gpsman.pl -symbol danger > $(HOME)/.bbbike/personal.wpt
+######################################################################
+# Upload personal.bbd
 
-$(HOME)/.bbbike/personal.gpi:	$(HOME)/.bbbike/personal.bbd
-	${GREPSTRASSEN} -v -namerx '^OLD' $> | ${MISCSRCDIR}/bbd2gpx - | gpsbabel -i gpx -o garmin_gpi,alerts=0,category="Personal" /dev/stdin $@~
-	mv $@~ $@
+upload-personal: upload-personal-gpi
 
-upload-personal: $(HOME)/.bbbike/personal.gpi
+upload-personal-gpi: $(HOME)/.bbbike/personal.gpi
 	@echo "Please execute the following as as root:"
 	@echo ""
 	@echo "    mount /mnt/garmin && cp $(HOME)/.bbbike/personal.gpi /mnt/garmin/garmin/poi/ && umount /mnt/garmin"
 	@echo ""
+
+$(HOME)/.bbbike/personal.gpi:	$(HOME)/.bbbike/personal.bbd
+	${GREPSTRASSEN} -catrx ':GPS' $> | ${MISCSRCDIR}/bbd2gpx - | gpsbabel -i gpx -o garmin_gpi,alerts=0,category="Personal" /dev/stdin $@~
+	mv $@~ $@
+
+upload-personal-gpsman: $(HOME)/.bbbike/personal.wpt
+	gpsman readput GPSMan WP $(HOME)/.bbbike/personal.wpt
+
+$(HOME)/.bbbike/personal.wpt:	$(HOME)/.bbbike/personal.bbd
+	${GREPSTRASSEN} -catrx ':GPS' $> | ${MISCSRCDIR}/bbd2gpsman.pl -symbol danger > $(HOME)/.bbbike/personal.wpt
 
 ######################################################################
 # OSM downloads
