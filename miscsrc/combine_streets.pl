@@ -77,7 +77,7 @@ sub make_long_streets {
     }
 
     my $s = Strassen->new($strfile, UseLocalDirectives => 1);
-    my $out = $s->make_long_streets;
+    my $out = $s->make_long_streets(-closedpolygon => $make_closed_polygon);
     $out->set_global_directives($s->get_global_directives);
     $out->write("-");
 }
