@@ -3686,6 +3686,48 @@ userdel	2::inwork 12624,25570 12694,25696
          'data' => 'userdel	q2::inwork; 9224,14169 9383,13986
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Ehrenpreisweg: zwischen Kornblumenring und Stubenrauchstraße Sperrung wegen Bauarbeiten, Einschränkungen für Radfahrer unbekannt ',
+         'from' => undef,
+         'id' => 2649,
+         'data' => '#: by: fritz
+#: XXX bis wann gehen die Bauarbeiten?
+#: add_fragezeichen: existieren Einschränkungen für Radfahrer?
+userdel	q4::inwork 16502,2314 16473,2560 16461,2569
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_023211',
+         'until' => 1414882799,
+         'text' => 'Schwanebecker Chaussee: zwischen Helios-Klinikum und Alt-Buch Baustelle, gesperrt in Richtung Buch, ab 18.10.2014 07 Uhr bis Anfang 11/2014',
+         'from' => 1413496800,
+         'id' => 2650,
+         'data' => 'userdel	q4::inwork; 17591,25405 17410,25484 17087,25730 17011,25830
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => '146901438',
+         'until' => 1430431200,
+         'text' => 'Stahnsdorf: K6902: Straßenbauarbeiten Schenkenhorst - KVK Güterfelde, 10.11.2014 bis 30.04.2015',
+         'from' => 1415487600,
+         'id' => 2651,
+         'data' => 'userdel	2::inwork -3068,-7423 -3462,-6437 -3616,-6170 -3851,-5870 -3877,-5370
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.216465.php',
+         'until' => 1414882799,
+         'text' => 'Donnersmarckplatz: Bauarbeiten, Sperrung der Fahrbahn, 20. Oktober bis 1. November 2014',
+         'from' => 1413669600,
+         'id' => 2652,
+         'data' => 'userdel	q4::inwork 1735,24738 1617,24741 1621,24798
+',
+         'type' => 'handicap'
        }
      
 );
