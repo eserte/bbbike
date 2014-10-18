@@ -3929,7 +3929,7 @@ sub display_route {
 	require Strassen::GPX;
 	my $filename = filename_from_route($startname, $zielname, "track") . ".gpx";
 	my @headers =
-	    (-type => "application/xml",
+	    (-type => "application/gpx+xml",
 	     -Content_Disposition => "attachment; filename=$filename",
 	    );
 	http_header(@headers);
@@ -4584,7 +4584,7 @@ sub display_route {
 	    require Strassen::GPX;
 	    my $filename = filename_from_route($startname, $zielname) . ".gpx";
 	    my @headers =
-		(-type => "application/xml",
+		(-type => "application/gpx+xml",
 		 -Content_Disposition => "attachment; filename=$filename",
 		);
 	    http_header(@headers);

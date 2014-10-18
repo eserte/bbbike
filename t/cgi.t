@@ -155,7 +155,7 @@ my @imagetype_defs =
 my $file_cache_tests_per_format = 3;
 my $file_cache_tests_formats = scalar grep { $_->{can_file_cache} } (@output_as_defs, @imagetype_defs);
 
-plan tests => (257 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
+plan tests => (259 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -259,6 +259,7 @@ for my $cgiurl (@urls) {
 				     |  gpx-route
 				     )$}x) {
 		like $resp->header('Content-Disposition'), qr{attachment; filename=.*\.gpx$}, 'gpx filename';
+		is $resp->header("content-type"), 'application/gpx+xml', "The GPX mime type";
 		gpxlint_string($content, "xmllint check with gpx schema for $output_as");
 	    } elsif ($output_as eq 'kml-track') {
 		is $resp->header("content-type"), 'application/vnd.google-earth.kml+xml', "The KML mime type";
