@@ -2666,14 +2666,15 @@ Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 99
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: XXX t/cgi-mechanize.t (ca. Zeile 673) anpassen!
-#: next_check_id: STERNDAMM-2014
-#: source_id: IM_020145
-#: by: http://www.tagesspiegel.de/berlin/sperrung-am-bahnhof-schoeneweide-zwangsgeld-drohung-gegen-die-bahn/9923866.html
-#: last_checked: 2014-06-10
-#: next_check: 2017-02-28
-#: priority: #A
-Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
+# REMOVED --- #: XXX t/cgi-mechanize.t (ca. Zeile 673) anpassen!
+# REMOVED --- #: next_check_id: STERNDAMM-2014
+# REMOVED --- #: source_id: IM_020145
+# REMOVED --- #: by: http://www.tagesspiegel.de/berlin/sperrung-am-bahnhof-schoeneweide-zwangsgeld-drohung-gegen-die-bahn/9923866.html
+# REMOVED --- #: last_checked: 2014-06-10
+# REMOVED --- #: next_check: 2017-02-28
+# REMOVED --- #: XXX VMZ-Eintrag wurde entfernt, laut Fritz bis 2014-12-08 aktiv in beiden Richtungen
+# REMOVED --- #: priority: #A
+# REMOVED --- Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
 # 
 #: next_check_id: GRENZALLEE-2014
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml

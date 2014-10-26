@@ -318,8 +318,10 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
+#: source_id: IM_023242
+#: XXX hat die derzeitige Baustelle (bis 2014-12-16) Auswirkungen auf den Radverkehr? Werden evtl. Radspuren gemalt?
 #: last_checked: 2014-08-30
-#: check_frequency: 60d
+# REMOVED ---: check_frequency: 60d
 Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
@@ -1143,6 +1145,23 @@ BAB100	?::inwork 14270,9710 14186,9546 14147,9383 14160,9132 14307,8805 14270,83
 #: last_checked: 2014-05-10
 #: check_frequency: 100d
 Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
+# 
+#: source_id: LS/722-W/14/146	
+#: next_check: 2015-08-28
+L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht mehr gepflastert	?::inwork 11054,-5341 11106,-5538 10782,-6409 10636,-6703 10483,-7211 10448,-7582
+# 
+#: source_id: IM_023224
+#: next_check: 2014-10-31
+Buntzelstr.: Bauarbeiten --- gibt es danach Änderunden bzgl. der Radwege?	?::inwork 22075,779 22120,659 22171,459 22166,312 22145,208
+# 
+#: source_id: LS/721-E/14/031
+#: next_check: 2014-12-15
+Gartz: Bauarbeiten --- ist die B2 danach asphaltiert?	?::inwork 74369,90701 74463,90856 74717,90814 75329,90359
+# 
+#: source_id: IM_023200
+#: next_check: 2014-11-07
+Köpenicker Str.: Bauarbeiten --- gibt es danach Änderungen wegen neuer Radwege/Radspuren?	?::inwork 19679,1571 19728,1660 19771,1793
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -1449,6 +1468,7 @@ Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
 #: source_id: INKO_114471
+#: XXX INKO_114471 gilt bis 2015-02-27
 #: last_checked: 2014-09-16
 #: check_frequency: 90d
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
@@ -3437,7 +3457,7 @@ Trollblumenweg: wird verlängert, Qualität der Verlängerung?	?::inwork 16020,3732
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
 #: last_checked: 2013-10-25
 #: check_frequency: 360d
-Am Orangeriepark: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 10293,19390 10419,19423
+Am Orangeriepark: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 10228,19480 10293,19390 10419,19423
 # 
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2012 ("geplanter Straßenname") --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2012 (Lage) --- #: XXX fehlt auch in Berlin.coords.data PLZ=12683 --- #: last_checked: 2012-09-16 --- #: next_check: 2013-08-01 --- #: osm_watch: way id="189453405" version="1" --- Fechinger Weg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 21409,11941 21411,11863 21456,11825
 # 

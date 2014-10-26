@@ -2973,27 +2973,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_022268',
-         'until' => 1413820800,
-         'text' => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis voraussichtlich 20.10.2014',
-         'from' => 1403992800,
-         'id' => 2416,
-         'data' => '#: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-10-10 vvv
-#: next_check: 2014-10-20 vvv
-#: by: http://www.berlin-straba.de/
-#: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
-#: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
-#: source_id: 2147338462
-userdel	q4::inwork 15261,10738 15272,10790
-# REMOVED --- userdel	q4::inwork 15272,10790 15279,10862
-# REMOVED --- userdel	q3::inwork 15279,10862 15144,10905
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3131,7 +3111,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => undef,
+         'text' => 'Sterndamm: Brückenarbeiten, Straße ist eventuell gesperrt',
+         'from' => undef,
+         'id' => 2469,
+         'data' => '#: XXX check!
+userdel	2::inwork 17736,5441 17886,5587
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3525,16 +3514,7 @@ userdel	2::inwork 15419,10706 15379,10651
          'dont_check_date' => 1,
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_022945',
-         'until' => 1414159200,
-         'text' => 'Fennstr.: zwischen Schnellerstr. und Michael-Brückner-Str. Baustelle, Fahrbahn Richtung Michael-Brückner-Str. gesperrt, ab 22.09.2014 bis 24.10.2014',
-         'from' => 1411279200,
-         'id' => 2632,
-         'data' => 'userdel	q4::inwork; 18245,5551 18080,5376
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140919.1335.399343.html',
          'until' => 1420066800,
@@ -3634,8 +3614,8 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
        },
        {
          'source_id' => 'IM_023135',
-         'until' => 1413817200,
-         'text' => 'Mäckeritzbrücke: Vollsperrung, eventuell sogar für Fußgänger und Radfahrer, 13.10.2014 08:00 Uhr bis 20.10.2014 17:00 Uhr ',
+         'until' => 1414573200,
+         'text' => 'Mäckeritzbrücke: Vollsperrung, eventuell sogar für Fußgänger und Radfahrer, 13.10.2014 08:00 Uhr bis 29.10.2014',
          'from' => 1413093600,
          'id' => 2644,
          'data' => 'userdel	2::inwork 1232,15804 1238,15705
@@ -3657,26 +3637,8 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_023177',
-         'until' => 1413583199,
-         'text' => 'Karlshorster Str.: zwischen Hauptstr. und Türrschmidtstr. Vollsperrung, auch Radfahrer und Fußgänger können nicht passieren, ab: 16.10.2014 04 Uhr bis 17.10.2014 nachts ',
-         'from' => 1413338400,
-         'id' => 2646,
-         'data' => 'userdel	2::inwork 15261,10738 15272,10790 15279,10862
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1413755999,
-         'text' => 'Schönerlinder Straße: komplette Sperrung wegen Abriss der alten Autobahnbrücke, von Samstag, 18.10.2014, 8 Uhr bis Sonntagnacht ',
-         'from' => 1413525600,
-         'id' => 2647,
-         'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1410/nachricht5389.html
-userdel	2::inwork 12624,25570 12694,25696
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'IM_023111',
          'until' => 1427896800,
@@ -3701,7 +3663,7 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
        },
        {
          'source_id' => 'IM_023211',
-         'until' => 1414882799,
+         'until' => 1414857600,
          'text' => 'Schwanebecker Chaussee: zwischen Helios-Klinikum und Alt-Buch Baustelle, gesperrt in Richtung Buch, ab 18.10.2014 07 Uhr bis Anfang 11/2014',
          'from' => 1413496800,
          'id' => 2650,
@@ -3726,6 +3688,16 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
          'from' => 1413669600,
          'id' => 2652,
          'data' => 'userdel	q4::inwork 1735,24738 1617,24741 1621,24798
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_023200',
+         'until' => 1415376000,
+         'text' => 'Köpenicker Str.: Baustelle, Fahrbahn zwischen Grünauer Str. und Bohnsdorfer Weg in beiden Richtungen gesperrt, 20.10.2014 08:00 Uhr bis 07.11.2014 17:00 Uhr',
+         'from' => 1413698400,
+         'id' => 2653,
+         'data' => 'userdel	q4::inwork 19679,1571 19728,1660 19771,1793
 ',
          'type' => 'handicap'
        }

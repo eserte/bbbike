@@ -6754,8 +6754,8 @@ EOF
      },
      { from  => $isodate2epoch->("2013-11-19 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
        until => $isodate2epoch->("2013-12-26 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
-       periodic => 1,
-       recurrences => [['yearly', days => 18, months => 11]], 
+       # periodic => 1,
+       # recurrences => [['yearly', days => 18, months => 11]], --- zurzeit wahrscheinlich an der Neuen Wache, wahrscheinlich ohne Behinderungen
        text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, teilweise reger Fußgängerverkehr, vom 25.11. bis 26.12.2013',
        type  => 'gesperrt',
        source_id => 'http://www.berliner-weihnacht.de/?y=2013',
@@ -21808,12 +21808,13 @@ EOF
 userdel	2::temp 5047,10381 5076,10658
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-29 06:00:00"), # 1407357333, # 1403739104, # 1376193600, # 2013-08-11 06:00
-       until => $isodate2epoch->("2014-10-06 06:00:00"), # 1409243320, # $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
-       text  => 'Sterndamm: Brückenarbeiten, Straße vollständig gesperrt, 29.09.2014 06:00 Uhr bis 06.10.2014 06:00 Uhr',
+     { from  => undef, # $isodate2epoch->("2014-09-29 06:00:00"), # 1407357333, # 1403739104, # 1376193600, # 2013-08-11 06:00
+       until => undef, # $isodate2epoch->("2014-10-06 06:00:00"), # 1409243320, # $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
+       text  => 'Sterndamm: Brückenarbeiten, Straße ist eventuell gesperrt',
        type  => 'gesperrt',
-       source_id => 'IM_023012',
+       # source_id => 'IM_023012',
        data  => <<EOF,
+#: XXX check!
 userdel	2::inwork 17736,5441 17886,5587
 EOF
      },
@@ -23523,8 +23524,8 @@ EOF
 EOF
      },
      { from  => 1413093600, # 2014-10-12 08:00
-       until => 1413817200, # 2014-10-20 17:00
-       text  => 'Mäckeritzbrücke: Vollsperrung, eventuell sogar für Fußgänger und Radfahrer, 13.10.2014 08:00 Uhr bis 20.10.2014 17:00 Uhr ',
+       until => $isodate2epoch->("2014-10-29 10:00:00"), # 1413817200, # 2014-10-20 17:00
+       text  => 'Mäckeritzbrücke: Vollsperrung, eventuell sogar für Fußgänger und Radfahrer, 13.10.2014 08:00 Uhr bis 29.10.2014',
        type  => 'gesperrt',
        source_id => 'IM_023135',
        data  => <<EOF,
@@ -23584,7 +23585,7 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
 EOF
      },
      { from  => 1413496800, # 2014-10-17 00:00
-       until => 1414882799, # 2014-11-01 23:59
+       until => $isodate2epoch->("2014-11-01 17:00:00"), # 1414882799, # 2014-11-01 23:59
        text  => 'Schwanebecker Chaussee: zwischen Helios-Klinikum und Alt-Buch Baustelle, gesperrt in Richtung Buch, ab 18.10.2014 07 Uhr bis Anfang 11/2014',
        type  => 'handicap',
        source_id => 'IM_023211',
@@ -23608,6 +23609,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.216465.php',
        data  => <<EOF,
 userdel	q4::inwork 1735,24738 1617,24741 1621,24798
+EOF
+     },
+     { from  => 1413698400, # 2014-10-19 08:00
+       until => 1415376000, # 2014-11-07 17:00
+       text  => 'Köpenicker Str.: Baustelle, Fahrbahn zwischen Grünauer Str. und Bohnsdorfer Weg in beiden Richtungen gesperrt, 20.10.2014 08:00 Uhr bis 07.11.2014 17:00 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_023200',
+       data  => <<EOF,
+userdel	q4::inwork 19679,1571 19728,1660 19771,1793
 EOF
      },
     );
