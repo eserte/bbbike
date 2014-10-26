@@ -1354,9 +1354,9 @@ EOF
 userdel	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2013-11-29 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2013-12-01 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.+1.12.)',
+     { from  => $isodate2epoch->("2014-11-28 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2014-11-30 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (29.11.2014 - 30.11.2014)',
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 11]],
        type  => 'gesperrt',
@@ -17120,12 +17120,12 @@ userdel	3 8427,11365 8389,11378 8374,11479
 userdel	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-05 00:00:00"), # 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
-       until => $isodate2epoch->("2013-12-08 23:59:59"), # 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
+     { from  => $isodate2epoch->("2014-12-04 00:00:00"), # 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
+       until => $isodate2epoch->("2014-12-07 23:59:59"), # 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
        periodic => 1,
-       recurrences => [['yearly', days => 6, months => 12]],
+       recurrences => [['yearly', days => 5, months => 12]],
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
-       text  => 'Richardplatz (Neukölln) und die Durchfahrt aller angrenzenden Straßen Rixdorfer Weihnachtsmarkt, Straße vollständig gesperrt (vom 6. Dezember 2013 bis 8. Dezember 2013)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (05.12.2014 - 07.12.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 13416,7712 13426,7674
@@ -17233,8 +17233,8 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-25 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-01-02 00:00:00"),
+     { from  => $isodate2epoch->("2014-12-25 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-01-02 00:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr.',
@@ -22243,33 +22243,33 @@ EOF
 userdel	2::inwork 12624,25570 12694,25696
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-06 00:00:00"),
-       until => $isodate2epoch->("2013-12-08 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (7.12.+8.12)',
+     { from  => $isodate2epoch->("2014-12-05 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2014-12-07 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (6.12.2014 - 7.12.2014)',
        periodic => 1,
-       recurrences => [['yearly', days =>  7, months => 12]],
+       recurrences => [['yearly', days => 6, months => 12]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
 userdel	2::temp 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-13 00:00:00"),
-       until => $isodate2epoch->("2013-12-15 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (14.12.+15.12.)',
+     { from  => $isodate2epoch->("2014-12-12 00:00:00"),
+       until => $isodate2epoch->("2014-12-14 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (13.12.2014 - 14.12.2014)',
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 12]],
+       recurrences => [['yearly', days => 13, months => 12]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
 userdel	2::temp 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-20 00:00:00"),
-       until => $isodate2epoch->("2013-12-22 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.+22.12.)',
+     { from  => $isodate2epoch->("2014-12-19 00:00:00"),
+       until => $isodate2epoch->("2014-12-21 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (20.12.2014 - 21.12.2014)',
        periodic => 1,
-       recurrences => [['yearly', days => 21, months => 12]],
+       recurrences => [['yearly', days => 20, months => 12]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
@@ -22356,15 +22356,16 @@ EOF
 	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
 EOF
      },
-     { from  => 1385334000, # 2013-11-25 00:00
-       until => 1388357999, # 2013-12-29 23:59
+     { from  => $isodate2epoch->("2014-11-23 00:00:00"), # 1385334000, # 2013-11-25 00:00
+       until => $isodate2epoch->("2014-12-28 23:59:59"), # 1388357999, # 2013-12-29 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 11]],
-       text  => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 25. November - 29. Dezember 2013',
+       recurrences => [['yearly', days => 24, months => 11]],
+       text  => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 24.11.2014 - 28.12.2014',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.potsdam.de/cms/beitrag/10046424/302934/
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/91842041/Radverkehrsfuehrung_Gro%C3%9Fveranstaltungen.pdf
+#: by: http://www.potsdam.de/cms/ziel/302934/DE
 userdel	1::temp -13556,-1182 -13643,-1220
 EOF
      },

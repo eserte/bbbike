@@ -1151,6 +1151,7 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht mehr gepflastert	?::inwork 11054,-5341 11106,-5538 10782,-6409 10636,-6703 10483,-7211 10448,-7582
 # 
 #: source_id: IM_023224
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.218616.php (Arbeiten des Straßenamtes)
 #: next_check: 2014-10-31
 Buntzelstr.: Bauarbeiten --- gibt es danach Änderunden bzgl. der Radwege?	?::inwork 22075,779 22120,659 22171,459 22166,312 22145,208
 # 
@@ -1161,6 +1162,10 @@ Gartz: Bauarbeiten --- ist die B2 danach asphaltiert?	?::inwork 74369,90701 7446
 #: source_id: IM_023200
 #: next_check: 2014-11-07
 Köpenicker Str.: Bauarbeiten --- gibt es danach Änderungen wegen neuer Radwege/Radspuren?	?::inwork 19679,1571 19728,1660 19771,1793
+# 
+#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141022.1620.399800.html ("in den nächsten Jahren")
+#: next_check: 2016-01-01
+Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster dabei	?::projected 8449,17196 8539,17197 8561,17198 8677,17154 8866,17075 8904,17059 9082,16982
 # 
 #: section ^^^
 #: ignore ^^^
@@ -1833,8 +1838,9 @@ Aalsteig (Potsdam): Qualität?	? -19584,4326
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10115978_1771576/bbb8d1f2/ENDFASSUNGAbl.%20PdmStadt%2004_13.pdf
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data
-#: osm_watch: way id="226916964" version="1" brb
-Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12998,-1257 -13095,-1288
+#: XXX: laut osm fertiggestellt, highway=service
+#: osm_watch: way id="226916964" version="2" brb
+Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12988,-1265 -13078,-1250 -13089,-1313
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern) --- #: XXX Freesienweg (beide Amtsblätter, DPAG-Mitteilungsblatt 12/2013) oder Fresienweg (BA)? Wikipedia meint "Freesien" --- #: XXX fehlt bei Berlin.coords.data, PLZ=10365 --- #: last_checked: 2014-06-19 (Bauarbeiten in Gange, keine Straße zu sehen) --- #: check_frequency: 90d --- Freesienweg: geplante Straße, wo wird sie genau liegen? Qualität?	?::projected 16000,12625 15997,12743
 # 
@@ -1974,6 +1980,12 @@ AEG-Str.: Wo befindet sich die Straße genau?	? 5947,22825 6141,22784 6142,22911 
 #: XXX "an dieser Stelle entsteht gerade eine Radweg-Brücke über die Bahn (Stahlkonstruktion)." (Anfang August 2014)
 #: next_check: 2014-10-31
 Brücke wird gebaut: angrenzende Wege, Qualität, Beleuchtung, Ausschilderung etc.	?::inwork 24009,-1292 24147,-1165
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/b-plan-9-34-152996.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/entwurf_des_bebauungsplans_9-34__.pdf
+#: next_check: 2016-03-01
+Bebauungsplan 9-34: Planstraßen, Uferweg und Brücke werden entstehen	?::projected 22290,2172 22509,2330 22377,2489 22226,2633 22133,2666 22074,2656 22290,2172
+# 
 #: ignore ^^^
 #: section ^^^
 #
@@ -3740,11 +3752,11 @@ Fichtenstr.: existiert ein Verbindungsweg zur Heerstr.? Qualität? Nachts beleuch
 #: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
 #: osm_watch: way id="174465897" version="3" brb
 An der Kornmühle (Potsdam): Qualität der Straße?	? -12712,-2172 -12728,-2227
-#: osm_watch: way id="174465898" version="4" brb
+#: osm_watch: way id="174465898" version="5" brb
 Am Speicher (Potsdam): Qualität der Straße?	? -12783,-2269 -12771,-2220 -12754,-2154
 #: by: ^^^
 #: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
-#: osm_watch: way id="174465895" version="2" brb
+#: osm_watch: way id="174465895" version="3" brb
 Altstadtblick (Potsdam): Qualität der Straße?	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
 #: XXX ^^^
 #: next_check ^^^

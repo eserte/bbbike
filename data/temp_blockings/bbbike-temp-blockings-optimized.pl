@@ -159,7 +159,26 @@ userdel	2::temp -3231,14383 -3293,14304
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'periodic' => 1,
+         'until' => 1417388399,
+         'from' => 1417129200,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (29.11.2014 - 30.11.2014)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              11
+                            ]
+                          ],
+         'id' => 166,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2345,6 +2364,34 @@ userdel	3 8374,11479 8389,11378 8427,11365
          'id' => 1997,
          'type' => 'gesperrt'
        },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
+         'data' => 'userdel	2::temp 13416,7712 13426,7674
+userdel	2::temp 13416,7712 13378,7695 13288,7653
+userdel	2::temp 13426,7674 13400,7642 13303,7622
+userdel	2::temp 12969,7610 13100,7626 13177,7644
+userdel	2::temp 13188,7590 13177,7644
+userdel	2::temp 13188,7590 13303,7622
+userdel	2::temp 13288,7653 13303,7622
+userdel	2::temp 13288,7653 13177,7644
+userdel	2::temp 13288,7653 13278,7673 13245,7742
+',
+         'periodic' => 1,
+         'until' => 1417993199,
+         'from' => 1417647600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              5,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (05.12.2014 - 07.12.2014)',
+         'id' => 1998,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2356,8 +2403,28 @@ userdel	3 8374,11479 8389,11378 8427,11365
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+userdel	2::temp 8055,12186 8119,12414
+userdel	2::temp 8522,12239 8466,12197
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+',
+         'periodic' => 1,
+         'until' => 1420153200,
+         'from' => 1419483600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr.',
+         'type' => 'gesperrt',
+         'id' => 2010
+       },
        undef,
        undef,
        undef,
@@ -3188,9 +3255,66 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'periodic' => 1,
+         'until' => 1417993199,
+         'from' => 1417734000,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (6.12.2014 - 7.12.2014)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2515,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'periodic' => 1,
+         'until' => 1418597999,
+         'from' => 1418338800,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (13.12.2014 - 14.12.2014)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2516,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'periodic' => 1,
+         'until' => 1419202799,
+         'from' => 1418943600,
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (20.12.2014 - 21.12.2014)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2517,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3208,7 +3332,28 @@ userdel	2::night 17671,13132 17684,13133
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'data' => '#: by: http://www.potsdam.de/cms/beitrag/10046424/302934/
+#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/91842041/Radverkehrsfuehrung_Gro%C3%9Fveranstaltungen.pdf
+#: by: http://www.potsdam.de/cms/ziel/302934/DE
+userdel	1::temp -13556,-1182 -13643,-1220
+',
+         'periodic' => 1,
+         'until' => 1419807599,
+         'from' => 1416697200,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 24.11.2014 - 28.12.2014',
+         'type' => 'gesperrt',
+         'id' => 2526
+       },
        undef,
        undef,
        undef,
