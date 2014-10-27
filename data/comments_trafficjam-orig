@@ -8,6 +8,9 @@
 #: 
 # Wo gibt es Stau auf der Fahrbahn, der auch Radfahrer betrifft?
 # 
+# Beachte: hier werden next_check_id-Einträge ohne
+# next_check/last_checked-Einträgen gemacht.
+# 
 #: note: gesehen: 2014-10-15 19:00 (Werktag, S/DB-Bahnstreik)
 Möckernstr.	Jam; 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
