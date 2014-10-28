@@ -387,6 +387,10 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: source_id: IM_023275
+#: XXX falls ja -> 27.10.2014 11:00 Uhr bis 02.11.2014 16:00 Uhr	
+An der Spandauer Brücke: Sperrung für Radfahrer relevant?	? 10286,13084 10339,13052 10371,13006 10418,12922
+# 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3901 vvv
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036414341928/414341928/00063878/78-Anlagen/02/Benennungsabsichtfuer9PrivatwegeinderAnlageIde.pdf vvv
 #: XXX Benennungsabsicht für 9 Privatwege in der Anlage Idehorst im Ortsteil Blankenfelde vvv
@@ -429,7 +433,9 @@ Gounodstr.: nach den Bauarbeiten asphaltiert	?::inwork 13645,15609 13739,15643 1
 #: next_check: 2014-12-31
 Fürstenwalder Damm: existieren nach den Bauarbeiten vielleicht Radwege?	? 26302,5932 26080,5946 25579,5958
 # 
-# REMOVED (keine Bauarbeiten hier) --- #: source_id: IM_022801 --- #: XXX bis 2014-12-19 --- John-Foster-Dulles-Allee: wechselseitige Ampelregelung, genauer anschauen	? 7627,12380 7821,12367
+#: source_id: IM_022801
+#: XXX bis 2014-12-19
+John-Foster-Dulles-Allee: nun angeblich vollständig gesperrt, genauer anschauen	? 7627,12380 7821,12367
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129680.php
 #: XXX voraussichtlicher Baubeginn ist der Sommer 2014, kein Ende geplant
@@ -903,7 +909,7 @@ Humboldtinsel: Qualität? Straße bereits fertig gestellt?	?::projected 1612,20431
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
 # 
 #: next_check_id: BER-20XX vvv
-#: next_check: 2015-01-01 vvv
+#: next_check: 2016-01-01 vvv
 #: note: Straßen zum und am BER vvv
 #: osm_watch: way id="188865976" version="3" brb
 Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 18386,-4109 18386,-4109 18296,-4078 17832,-4267 18001,-4685 18517,-4502
@@ -3485,6 +3491,7 @@ Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5476 ("kann mit dem Bau in diesem Jahr noch gerechnet werden?" (2013))
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141027.1440.399848.html (offensichtlich noch nicht realisiert)
 #: XXX: Ampelanlage in Planung, Realisierung 2011
 #: XXX: Vorfahrtsregelung kann dann entfernt werden
 #: osm_watch: node id="31532799" version="11"
