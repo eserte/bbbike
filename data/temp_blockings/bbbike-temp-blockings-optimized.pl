@@ -3845,6 +3845,15 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
          'data' => 'userdel	q4::inwork 19679,1571 19728,1660 19771,1793
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1419001200,
+         'text' => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Große Querallee, Fahrbahn gesperrt, Ausweichen auf Gehweg, 08.09.2014 08:00 Uhr bis 19.12.2014 16:00 Uhr ',
+         'from' => 1410069600,
+         'id' => 2654,
+         'data' => 'userdel	q4::inwork 7627,12380 7821,12367 7875,12363 8017,12359
+',
+         'type' => 'handicap'
        }
      
 );

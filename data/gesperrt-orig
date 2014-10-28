@@ -2570,7 +2570,7 @@ Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 
 #: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
 #: confirmed_by: srt
-#: last_checked: 2014-10-01
+#: last_checked: 2014-10-25
 #: next_check: 2015-02-14
 #: valid: 20140925-20150214
 #: XXX danach gilt für eine Woche noch der temp_blockings-Eintrag
@@ -2586,11 +2586,10 @@ Alfred-Döblin-Platz: Bauarbeiten, Fahrbahn gesperrt	2::inwork 11162,10919 11150,
 # 
 #: XXX werden hier die Bordsteine abgeflacht?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2014
-#: last_checked: 2014-10-17
+#: last_checked: 2014-10-28
 Dresdener Str.: Bauarbeiten, komplett gesperrt	2::inwork 11034,11249 11000,11327
 # 
-#: last_checked: 2014-10-01
-Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12641,11288 12664,11310 12713,11372
+# REMOVED --- #: last_checked: 2014-10-01 --- Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12641,11288 12664,11310 12713,11372
 # 
 #: XXX theoretisch ist ein Trampelpfad vorbei vorhanden
 #: last_checked: 2014-10-10
@@ -2693,7 +2692,7 @@ Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0186-neubau-eines-boardingwohn-und.html
 #: XXX_prog 1s:q3:inwork geht als Kategorie nicht, falsche Übersetzung!
-#: last_checked: 2014-10-12
+#: last_checked: 2014-10-28
 #: check_frequency: 180d
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13299
 # 
@@ -2902,7 +2901,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="1"
-#: last_checked: 2014-09-03
+#: last_checked: 2014-10-28
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
