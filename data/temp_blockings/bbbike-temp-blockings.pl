@@ -16650,7 +16650,7 @@ EOF
        text  => 'B 115 Baruth - Petkus OD Merzdorf Deckenerneuerung Vollsperrung 17.10.2009-24.10.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 12648,-45054 12332,-44991 12078,-45032 11929,-45268
+userdel	q4::inwork 12649,-45132 12356,-45082 12159,-45109 11934,-45405
 EOF
      },
      { from  => undef, # 
@@ -23099,8 +23099,8 @@ userdel	q4::inwork 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,
 EOF
      },
      { from  => 1407354971, # 2014-08-06 21:56
-       until => 1408819563, # 1414796400, # 2014-11-01 00:00
-       text  => 'Heiligengrabe: B189: Ausbau der Ortsdurchfahrt OD Heiligengrabe, Vollsperrung, 08.07.2013 bis 31.10.2014 ',
+       until => $isodate2epoch->("2014-11-30 23:59:59"), # 1408819563, # 1414796400, # 2014-11-01 00:00
+       text  => 'Heiligengrabe: B189: Ausbau der Ortsdurchfahrt OD Heiligengrabe, Vollsperrung, 06.08.2014 bis 30.11.2014 ',
        type  => 'gesperrt',
        source_id => 'LS/723-K/13/046',
        data  => <<EOF,
@@ -23407,7 +23407,7 @@ EOF
        type  => 'gesperrt',
        dont_check_date => 1,
        data  => <<EOF,
-#: last_checked: 2014-10-10
+#: last_checked: 2014-10-29 (gerade nicht gesperrt)
 userdel	2::inwork 15419,10706 15379,10651
 EOF
      },
@@ -23628,6 +23628,24 @@ EOF
        source_id => 'IM_022801',
        data  => <<EOF,
 userdel	q4::inwork 7627,12380 7821,12367 7875,12363 8017,12359
+EOF
+     },
+     { from  => 1414624392, # 2014-10-30 00:13
+       until => 1418770799, # 2014-12-16 23:59
+       text  => 'Schlichtallee: Bauarbeiten zwischen Zobtener Str. und Max-Taut-Schule, Einbahnstraße offen Richtung Hauptstr., Ausweichen auf Gehweg, bis zum 16.12.2014',
+       type  => 'handicap',
+       source_id => 'IM_023242',
+       data  => <<EOF,
+userdel	q3::inwork; 15758,10578 15880,10680
+EOF
+     },
+     { from  => 1414882800, # 2014-11-02 00:00
+       until => 1419029999, # 2014-12-19 23:59
+       text  => 'Karmeliterweg zwischen Ludolfinger Platz und An der Buche: Fahrbahnreparaturarbeiten, Fahrbahn gesperrt, vom 3. November 2014 bis 19. Dezember 2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php',
+       data  => <<EOF,
+userdel	q4::inwork 2174,24783 2222,24884 2245,25016
 EOF
      },
     );

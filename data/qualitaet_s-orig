@@ -28,7 +28,7 @@ Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14672
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14794,10844 14906,10820
 Hauptstr.: mäßiges Kopfsteinpflaster, teilweise Betonplatten	Q2+; 14906,10820 15261,10738
 #: note: Asphaltierung während der Bauarbeiten, vielleicht auch permanent; einige kurze Kopfsteinpflasterabschnitte
-Hauptstr.: asphaltierter Radweg	Q0-; 15261,10738 14906,10820
+Hauptstr.: überwiegend asphaltierter Radweg	Q1+; 15261,10738 14906,10820
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
@@ -2577,8 +2577,7 @@ Mauerweg Lichterfelde: sehr guter Asphalt	Q0 4038,-362 4046,-299 4034,-255 3982,
 Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 4038,-362 4406,-910
 Alexanderufer: Asphalt	Q0 8321,13033 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8362,13466 8354,13523 8337,13541
-Koppenstr.: Asphalt	Q0 12525,12151 12575,12223 12596,12472
-Koppenstr.: Asphalt mit einigen Schäden	Q1+ 12596,12472 12635,12629
+Koppenstr.: Asphalt	Q0 12525,12151 12575,12223 12596,12472 12635,12629
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/de/bild_tvo_april_2007_2.shtml
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21089,4731 21124,4420 21146,4229 21170,4111 21260,3848 21310,3762 21325,3715 21324,3691
 #: by: http://www.reinickendorf.de/index_7745_de.html
@@ -15870,7 +15869,11 @@ Alemannenstr. (Frohnau): Asphalt	Q0 1453,25923 1501,25675 1558,25505 1568,25477 
 #: corrected_by: srt (Kleinpflastersteine -> Asphalt)
 Alemannenstr. (Frohnau): Asphalt	Q0 1627,25386 1714,25289 1738,25243
 Karmeliterweg: Kleinpflastersteine	Q2 1458,24561 1634,24527 1742,24526
-Karmeliterweg: Kleinpflastersteine	Q2 1868,24633 1924,24672 2003,24702 2120,24740 2174,24783 2222,24884 2245,25016
+Karmeliterweg: Kleinpflastersteine	Q2 1868,24633 1924,24672 2003,24702 2120,24740 2174,24783
+#: XXX nach der Sanierung bessere Qualität?
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php
+#: next_check: 2014-12-19
+Karmeliterweg: Kleinpflastersteine	Q2 2174,24783 2222,24884 2245,25016
 #: corrected_by: ^^^
 #: corrected_by: Wolfhard Schleese (guter Asphalt Q0 -> schlechter Asphalt, policy: Q2)
 Karmeliterweg: schlecht befahrbarer Asphalt	Q2 1747,24549 1797,24562 1852,24593 1878,24619
@@ -23783,7 +23786,7 @@ Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
 Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: next_check_id: AMZIRKUS-2014
 #: XXX danach wohl Q0
-#: next_check: 2014-10-28
+#: last_checked: 2014-10-28
 Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9212,12969 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938

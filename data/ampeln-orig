@@ -1782,7 +1782,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 	X 4572,7936
 	X 15080,11905
 	X 6454,8653
-#: off: night (seend 2013-08-25 23:30)
+#: off: night (seen 2013-08-25 23:30)
 	X 14652,10201
 # REMOVED --- #: note: tempor‰re Baustellenampel, ist immer bei einer Sperrung der Karlshorster Str. eingeschaltet --- #: last_checked: 2012-11-02 --- #: next_check: 2012-11-05 --- X::inwork 14832,10512
 	F 13030,7346
@@ -1821,6 +1821,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 # REMOVED (wieder komplette Ampel) --- #: XXX zurzeit nur eine Fuﬂg‰ngerampel, nach den Bauarbeiten evtl. wieder eine volle Autoampel (X) --- #: last_checked: 2013-05-24 --- #: next_check: 2013-12-31 (Invalidenstr.)
 	X 8690,13723
 	X 11629,9086
+#: off: night (seen 2014-10-29 23:30)
 	X 15681,10801
 # REMOVED (seit 1.7.2004 gesperrt) ---	B 801,13323
 	X 21089,4731
@@ -2398,17 +2399,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 3995,12173
 	F 22031,9142
 	F 15356,3759
-#: next_check_id: KARLSHORSTER-2014 vvv
-#: last_checked: 2014-10-10 vvv
-#: next_check: 2014-10-20 vvv
-#: note: provisorische Ampel
-#: valid: 20140630-20141022 vvv
-	X::inwork 14906,10820
-	X::inwork 14805,10518
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
+# REMOVED --- #: next_check_id: KARLSHORSTER-2014 vvv --- #: last_checked: 2014-10-10 vvv --- #: next_check: 2014-10-20 vvv --- #: note: provisorische Ampel --- #: valid: 20140630-20141022 vvv ---	X::inwork 14906,10820 ---	X::inwork 14805,10518
 	F 8667,5372
 	F 5807,12070
 	F 6833,15215

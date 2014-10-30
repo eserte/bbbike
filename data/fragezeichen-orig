@@ -319,9 +319,9 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
 #: source_id: IM_023242
-#: XXX hat die derzeitige Baustelle (bis 2014-12-16) Auswirkungen auf den Radverkehr? Werden evtl. Radspuren gemalt?
-#: last_checked: 2014-08-30
-# REMOVED ---: check_frequency: 60d
+#: XXX Bauarbeiten für neue Radverkehrsanlagen
+#: last_checked: 2014-10-29
+#: next_check: 2014-12-16
 Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
@@ -1162,7 +1162,7 @@ L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht me
 # 
 #: source_id: IM_023224
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.218616.php (Arbeiten des Straßenamtes)
-#: next_check: 2014-10-31
+#: next_check: 2014-11-10
 Buntzelstr.: Bauarbeiten --- gibt es danach Änderunden bzgl. der Radwege?	?::inwork 22075,779 22120,659 22171,459 22166,312 22145,208
 # 
 #: source_id: LS/721-E/14/031
@@ -1176,6 +1176,10 @@ Köpenicker Str.: Bauarbeiten --- gibt es danach Änderungen wegen neuer Radwege/R
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141022.1620.399800.html ("in den nächsten Jahren")
 #: next_check: 2016-01-01
 Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster dabei	?::projected 8449,17196 8539,17197 8561,17198 8677,17154 8866,17075 8904,17059 9082,16982
+# 
+#: source_id: IM_023298
+#: XXX: Buschallee (Weißensee) In Richtung Suermondtstr. zwischen Berliner Allee und Hansastr. (Berlin)  Gültig ab: 29.10.2014 07:00  Geplant ab: 30.10.2014 07 Uhr, Baustelle, Fahrtrichtung gesperrt, eine Umleitung über Hansastr. ist eingerichtet (bis Ende 12/14, danach weitere Arbeiten)
+Buschallee: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 14619,16551 14809,16525 15134,16499 15142,16499 15437,16491
 # 
 #: section ^^^
 #: ignore ^^^

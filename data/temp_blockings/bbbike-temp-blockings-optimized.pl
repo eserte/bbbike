@@ -3541,7 +3541,16 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'LS/723-K/13/046',
+         'until' => 1417388399,
+         'text' => 'Heiligengrabe: B189: Ausbau der Ortsdurchfahrt OD Heiligengrabe, Vollsperrung, 06.08.2014 bis 30.11.2014 ',
+         'from' => 1407354971,
+         'id' => 2599,
+         'data' => 'userdel	2::inwork -62215,80737 -61590,80895
+',
+         'type' => 'gesperrt'
+       },
        {
          'source_id' => '146600440',
          'until' => 1420066800,
@@ -3653,7 +3662,7 @@ userdel	q3::inwork 4503,10497 4485,10307
          'text' => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugang bis 2016 möglich',
          'from' => 1411312807,
          'id' => 2631,
-         'data' => '#: last_checked: 2014-10-10
+         'data' => '#: last_checked: 2014-10-29 (gerade nicht gesperrt)
 userdel	2::inwork 15419,10706 15379,10651
 ',
          'dont_check_date' => 1,
@@ -3757,16 +3766,7 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 	3::night 14439,8050 14419,8112 14563,8243
 '
        },
-       {
-         'source_id' => 'IM_023135',
-         'until' => 1414573200,
-         'text' => 'Mäckeritzbrücke: Vollsperrung, eventuell sogar für Fußgänger und Radfahrer, 13.10.2014 08:00 Uhr bis 29.10.2014',
-         'from' => 1413093600,
-         'id' => 2644,
-         'data' => 'userdel	2::inwork 1232,15804 1238,15705
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Torgauer Str.: in Höhe Cheruskerpark wegen Bauarbeiten gesperrt',
@@ -3847,11 +3847,32 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
          'type' => 'handicap'
        },
        {
+         'source_id' => 'IM_022801',
          'until' => 1419001200,
          'text' => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Große Querallee, Fahrbahn gesperrt, Ausweichen auf Gehweg, 08.09.2014 08:00 Uhr bis 19.12.2014 16:00 Uhr ',
          'from' => 1410069600,
          'id' => 2654,
          'data' => 'userdel	q4::inwork 7627,12380 7821,12367 7875,12363 8017,12359
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_023242',
+         'until' => 1418770799,
+         'text' => 'Schlichtallee: Bauarbeiten zwischen Zobtener Str. und Max-Taut-Schule, Einbahnstraße offen Richtung Hauptstr., Ausweichen auf Gehweg, bis zum 16.12.2014',
+         'from' => 1414624392,
+         'id' => 2655,
+         'data' => 'userdel	q3::inwork; 15758,10578 15880,10680
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php',
+         'until' => 1419029999,
+         'text' => 'Karmeliterweg zwischen Ludolfinger Platz und An der Buche: Fahrbahnreparaturarbeiten, Fahrbahn gesperrt, vom 3. November 2014 bis 19. Dezember 2014',
+         'from' => 1414882800,
+         'id' => 2656,
+         'data' => 'userdel	q4::inwork 2174,24783 2222,24884 2245,25016
 ',
          'type' => 'handicap'
        }
