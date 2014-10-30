@@ -21776,7 +21776,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_020034',
        data  => <<EOF,
-userdel	q4::inwork 11635,16616 11621,16749
+userdel	q4::inwork 11630,16623 11621,16749
 EOF
      },
      { from  => 1374381000, # 2013-07-21 06:30
@@ -21824,7 +21824,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_020168',
        data  => <<EOF,
-userdel	q4::inwork; 11635,16616 11621,16749
+userdel	q4::inwork; 11630,16623 11621,16749
 EOF
      },
      { from  => 1376816220, # 2013-08-18 10:57
@@ -21833,7 +21833,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_020183',
        data  => <<EOF,
-userdel	q4::inwork 11825,16666 11767,16631 11725,16626 11635,16616
+userdel	q4::inwork 11825,16666 11766,16633 11725,16630 11630,16623
 EOF
      },
      { from  => 1377324347, # 2013-08-24 08:05
@@ -22670,7 +22670,7 @@ EOF
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
 #: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-08-25
+#: last_checked: 2014-10-30
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 EOF
@@ -23378,6 +23378,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
+#: last_checked: 2014-10-30
 userdel	q4::inwork 13645,15609 13739,15643 13939,15723
 EOF
      },

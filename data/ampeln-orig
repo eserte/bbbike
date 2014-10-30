@@ -1158,7 +1158,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13057,14267
 	X 13292,13931
 	X 13100,13803
-#: note: sonntags ausgeschaltet (gesehen 2013-11-17 gegen 15:30 Uhr)
+#: off: Sunday (seen 2013-11-17 15:30)
 	F 15080,13117
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
@@ -1492,10 +1492,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9082,16982
 	X 8677,17154
 	X 9727,17804
-	X 11635,16616
+	X 11630,16623
 	F 11554,16075
 # REMOVED (keine Ampel (mehr?)) ---	X 12097,16263
-	X 12409,16475
+	X 12399,16479
 	X 12721,15807
 	X 12943,16214
 	X 13512,15909
@@ -1792,12 +1792,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13294,6386
 	X 8715,12956
 #: note: Anforderungsampel vvv
-#: note: kann ausgeschaltet sein, gesehen: 2014-07-06 (Sonntag) nachmittags vvv
+#: off: Sunday (seen 2014-07-06 afternoon) vvv
 #: XXX_prog: nur auf der südlichen Fahrbahn relevant vvv
 	X 19985,11727
 	X 20114,11719
 #: XXX_prog ^^^
-#: note ^^^
+#: off ^^^
 #: note ^^^
 	X 10849,17848
 	F 5618,14981
@@ -1855,7 +1855,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: note: Anforderungsampel
 	F 10427,15699
 # REMOVED (aufgehoben, by: Kaja Kruse) --- X 10713,15746
-#: off: weekend (gesehen z.B. am So, 2014-10-12)
+#: off: weekend (seen 2014-10-12)
 #: note: Anforderungsampel
 	X 1053,13790
 #: XXX_prog Ampel ist nach Osten versetzt, aber hier eingetragen, damit auch das Nord-Süd-Routing diese Ampel erfährt
@@ -1941,7 +1941,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 3381,12087
 	F 6936,15888
 #: note: Anforderungsampel
-#: note: am Wochenende ausgeschaltet (gesehen: 2014-05-03)
+#: off: weekend (seen 2014-05-03)
 	F 1205,10114
 #: XXX_prog Ampel westlich versetzt, beim Rechtsabbiegen aus der südlichen Rognitzstr. und östlichen Kaiserdamm nicht relevant
 	F 2282,11463
@@ -2110,7 +2110,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 16485,12384
 	X 1945,2127
 #: note: Anforderungsampel
-#: note: am Wochenende ausgeschaltet (immer? gesehen 2014-04-27)
+#: off: weekend (seen 2014-04-27)
 	F 4927,3147
 	X -3913,13054
 	B -5242,17405
@@ -2289,6 +2289,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 #: XXX_prog für Radfahrer auf der Invalidenstr. in Richtung Osten keine Haltelinie, also nur bzgl. StVO §1 relevant
 	F 8337,13541
+#: note: Anforderungsampel für die Überquerung der Gürtelstr. als Fußgänger (oder als Radfahrer aus Richtung Wilhelm-Guddorf-Str.)
 	X 15248,11880
 #: by: osm
 	X 11001,18528
@@ -2335,9 +2336,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 11750,16354
 	X 8901,12008
 	X 18198,13816
-#: note: Abends meist (immer?) ausgeschaltet, und auch sonntags (z.B. So 2014-09-21 nachmittags) (Sa 2014-09-27 15:30 eingeschaltet)
+#: note: Abends meist (immer?) ausgeschaltet, und auch sonntags (Sa 2014-09-27 15:30 eingeschaltet)
 #: note: Anforderungsampel
 #: off: night
+#: off: Sunday (seen 2014-09-21 afternoon)
 	F 14802,11784
 	X -1810,16391
 	X -1675,16813

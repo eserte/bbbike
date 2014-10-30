@@ -212,7 +212,7 @@ Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 
 Grazer Platz	1 6430,6787 6529,6798 6668,6810 6791,6821
 Grazer Platz	1 6798,6755 6675,6740 6546,6724 6517,6722 6439,6716
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
-Langhansstr. (außer Tram)	1 12045,16574 12189,16578 12409,16475
+Langhansstr. (außer Tram)	1 12045,16574 12189,16578 12399,16479
 Triftstr. (Buchholz)	1 12023,23039 12185,23021
 Joachimstr.	1s:q3 10085,13684 10142,13556 10199,13446
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
@@ -971,7 +971,7 @@ Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
 Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10953,12638
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/umleitung_2.ba_1_teilabschnitt.pdf?start&ts=1316168438&file=umleitung_2.ba_1_teilabschnitt.pdf
 Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
-Hardangerstr.	1 11725,16626 11720,16752
+Hardangerstr.	1 11725,16630 11720,16752
 #: note: Radfahren explizit verboten
 (Weg)	2 14429,20192 14463,20160
 Caseler Str.	1s:q3 14732,16770 14700,16790 14608,16772
@@ -2657,7 +2657,7 @@ Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,1
 #: next_check_id ^^^
 # 
 #: next_check_id: SCHINKELPLATZ_2014 vvv
-#: last_checked: 2014-08-26 vvv
+#: last_checked: 2014-10-30 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 10008,12274 9994,12368 9996,12401
 Niederlagstr.: Bauarbeiten, Straßen vollständig gesperrt	2::inwork 9994,12368 9943,12364 9961,12273
@@ -2753,13 +2753,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: next_check: 2015-08-30
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
 # 
-#: next_check_id: FLORAGAERTEN-2014
-#: osm_watch: way id="294423898" version="4"
-#: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2014-09-28
-#: check_frequency: 30d
-In den Floragärten: Baustelle	2:inwork 9895,17649 9997,17646
-# 
+# REMOVED --- #: next_check_id: FLORAGAERTEN-2014 --- #: osm_watch: way id="294423898" version="4" --- #: XXX siehe auch Eintrag in qualitaet_s-orig --- #: last_checked: 2014-09-28 --- #: check_frequency: 30d --- In den Floragärten: Baustelle	2:inwork 9895,17649 9995,17642
 # REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: priority: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^
 # REMOVED --- #: last_checked: 2013-09-11 --- #: check_frequency: 60d --- Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
 # REMOVED (wieder passierbar, die Unterführung nur langsam) --- #: by: http://www.potsdam.de/cms/ziel/996205/DE/?date=20130419 --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/a6add3f2/NeueRadfuehrungen.pdf --- #: next_check: 2014-06-01 --- An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11395,-1331 -11235,-1465 -11137,-1680 -11094,-1748 -10973,-1764

@@ -21,7 +21,7 @@
 #: XXX Baumaßnahme 1.48 (Realisierung nach 2011)
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: osm_watch: way id="153373879" version="4"
+#: osm_watch: way id="153373879" version="5"
 #: osm_watch: way id="153373877" version="4"
 #: last_checked: 2014-10-12
 #: check_frequency: 60d
@@ -176,7 +176,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2014-09-21
+#: last_checked: 2014-10-30
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -392,12 +392,7 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #: next_check: 2014-12-31
 Wege im Springpfuhlpark: gibt es danach relevante Änderungen?	?::inwork 19565,13893 19529,14019 19523,14190 19545,14290 19534,14459 19524,14474
 # 
-#: source_id: IM_023275
-#: XXX falls ja -> 27.10.2014 11:00 Uhr bis 02.11.2014 16:00 Uhr
-#: XXX -> zurzeit offiziell nur für BVG frei, aber unproblematisch für Radfahrer
-#: last_checked: 2014-10-28
-#: check_frequency: 14d
-An der Spandauer Brücke: Sperrung für Radfahrer relevant?	? 10286,13084 10339,13052 10371,13006
+# REMOVED (läuft eh' bald aus) --- #: source_id: IM_023275 --- #: XXX falls ja -> 27.10.2014 11:00 Uhr bis 02.11.2014 16:00 Uhr --- #: XXX -> zurzeit offiziell nur für BVG frei, aber unproblematisch für Radfahrer --- #: last_checked: 2014-10-30 --- #: check_frequency: 14d --- An der Spandauer Brücke: Sperrung für Radfahrer relevant?	? 10286,13084 10339,13052 10371,13006
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3901 vvv
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036414341928/414341928/00063878/78-Anlagen/02/Benennungsabsichtfuer9PrivatwegeinderAnlageIde.pdf vvv
@@ -434,6 +429,7 @@ Fähenweg: genaue Lage, Qualität?	?::inwork 21875,2363 21803,2324
 #: XXX ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html
+#: last_checked: 2014-10-30
 #: next_check: 2014-12-31
 Gounodstr.: nach den Bauarbeiten asphaltiert	?::inwork 13645,15609 13739,15643 13939,15723
 # 
@@ -529,8 +525,9 @@ Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert
 # REMOVED (neu asphaltiert) --- #: last_checked: 2013-11-11 --- Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20131108.1050.391371.html (bis September 2014)
+#: source_id: IM_020636
 #: last_checked: 2014-09-27
-#: check_frequency: 30d
+#: next_check: 2014-11-28
 Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,16203 22696,16208 22631,16215 22495,16165 22131,16000 21951,15918 21709,15808
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3629
@@ -1166,7 +1163,7 @@ L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht me
 Buntzelstr.: Bauarbeiten --- gibt es danach Änderunden bzgl. der Radwege?	?::inwork 22075,779 22120,659 22171,459 22166,312 22145,208
 # 
 #: source_id: LS/721-E/14/031
-#: next_check: 2014-12-15
+#: next_check: 2014-12-19
 Gartz: Bauarbeiten --- ist die B2 danach asphaltiert?	?::inwork 74369,90701 74463,90856 74717,90814 75329,90359
 # 
 #: source_id: IM_023200
@@ -1198,6 +1195,9 @@ Buschallee: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 14619,16551 148
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+Esplanade/Grüntaler: unbeleuchtet?	? 10013,16972 9980,16973 9880,16994 9846,16981 9778,16915
+Bornholmer/Kolonnenweg: unbeleuchtet?	? 10134,16534 10118,16561 10108,16576 9954,16590
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2014
 #: next_check: 2014-10-12
@@ -1418,10 +1418,10 @@ Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7422,13012
 Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3404 (Verfahren wurde eingeleitet)
-#: last_checked: 2014-09-28
+#: last_checked: 2014-10-30
 #: check_frequency: 180d
 #: priority: #C
-Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10056,17781 10033,17763
+Florastr./Görschstr.: entsteht hier ein Zebrastreifen? Oder nur eine Querungshilfe?	? 10073,17801 10053,17777 10033,17763
 # 
 # REMOVED --- #: XXX siehe auch: gesperrt-orig, handicap_s-orig --- #: last_checked: 2013-06-06 --- #: next_check: 2013-06-14 --- #: priority: #A --- Grimmstr.: Einbahnstraße wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
 # REMOVED (zumindest an der Rathausstr. nichts gesehen) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4429 --- Am Teltowkanal: gibt es durch die Bauarbeiten hier Einschränkungen? Wird die Qualität danach besser werden?	? 8784,5095 8881,5143 9171,5263 9192,5272

@@ -3419,7 +3419,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'from' => undef,
          'id' => 2557,
          'data' => '#: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-08-25
+#: last_checked: 2014-10-30
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 ',
@@ -3640,6 +3640,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'from' => 1411941600,
          'id' => 2628,
          'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
+#: last_checked: 2014-10-30
 userdel	q4::inwork 13645,15609 13739,15643 13939,15723
 ',
          'type' => 'handicap'
