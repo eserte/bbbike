@@ -56,7 +56,7 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # 
 ### Mitte ###
 # 
-#: last_checked: 2014-10-30
+#: last_checked: 2014-10-31
 Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
 # 
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
@@ -145,7 +145,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: last_checked: 2014-10-27
 Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
-#: last_checked: 2014-10-29 vvv
+#: last_checked: 2014-10-31 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
@@ -225,7 +225,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-10-12
+#: last_checked: 2014-10-31
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -241,7 +241,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED (aufgehoben) --- #: last_checked: 2013-12-11 --- Ziegelstr.: Baustelle, Einbahnstraße	q3::inwork; 9269,13060 9413,13071
 # REMOVED (reported by wosch) --- #: last_checked: 2013-04-11 --- Am Kupfergraben: Baustelle, Einbahnstraße	q3::inwork; 9870,12657 9900,12643 9919,12613
 # 
-#: last_checked: 2014-10-28 vvv
+#: last_checked: 2014-10-31 vvv
 Michaelkirchplatz: Bauarbeiten, Einbahnstraße	q4::inwork; 11349,11227 11415,11392
 # REMOVED (offiziell für Fahrzeuge aller Art gesperrt, beide Richtung, praktisch kommt man wahrscheinlich durch) --- Leuschnerdamm: Bauarbeiten am Engelbecken, Einbahnstraße	q4::inwork; 11458,11136 11421,11073
 #: last_checked ^^^
@@ -279,40 +279,31 @@ Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden a
 # REMOVED (fertig) --- #: XXX laut Schild bis Herbst 2014 --- #: XXX wird sich nach den Bauarbeiten hier etwas ändern? Zusätzliche Asphaltierung der Delbrückstr.? Sperrung der Walterstr. für den Kfz-Verkehr? Bleibt die Einbahnstraße in der Walterstr. (ggfs. den Eintrag in gesperrt-orig wieder aktivieren) --- #: last_checked: 2014-08-26 --- #: next_check: 2014-10-15 --- Delbrückstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,6717 13099,6712 13126,6687
 # 
 #: XXX danach asphaltiert? Und die Einbahnstraße aufgehoben?
-#: last_checked: 2014-10-15
+#: last_checked: 2014-10-31
 Herrfurthstr: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 11833,7980 11979,8014
 # 
 # REMOVED (man kann durch, obwohl noch die Verbotsschilder stehen) --- #: XXX laut Schild Bauarbeiten bis September 2014 --- #: last_checked: 2014-09-26 (fast fertig, nur die Absperrung steht noch) --- #: next_check: 2014-09-29 --- Wildenbruchplatz: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13135,8766 13227,8692 13314,8624
-# 
-#: last_checked: 2014-10-04 vvv
-#: check_frequency: 14d vvv
-Richardplatz: Bauarbeiten auf der südlichen Fahrbahn	q4::inwork 13188,7590 13303,7622
+# REMOVED --- #: last_checked: 2014-10-04 vvv --- #: check_frequency: 14d vvv --- Richardplatz: Bauarbeiten auf der südlichen Fahrbahn	q4::inwork 13188,7590 13303,7622
 # REMOVED (fertig) --- Richardplatz: Bauarbeiten auf der südlichen Fahrbahn	q4::inwork 13303,7622 13400,7642
 # REMOVED (fertig) --- Richardplatz/Richardstr.: Bauarbeiten, Umwege notwendig	q4::inwork 13288,7653 13303,7622
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: next_check_id: RICHARDSTR-2014 vvv
 #: XXX bis wann ist die Baustelle fertig? vvv
-#: last_checked: 2014-09-16 vvv
-#: check_frequency: 30d vvv
-Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 13103,7889 13085,7904 12870,8087
-#: note: nur teilweise
-Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 13150,7845 13103,7889
+#: last_checked: 2014-10-31 vvv
+#: check_frequency: 14d vvv
+Richardstr.: Bauarbeiten, schmale Gasse für Fußgänger	q4::inwork 13085,7904 13045,7938
+# REMOVED --- #: note: nur teilweise --- Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 13150,7845 13103,7889
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: next_check_id ^^^
 # 
-#: last_checked: 2014-09-26
-#: check_frequency: 30d
-Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen über Gehweg	q3::inwork 12088,9775 12250,9691
-# 
+# REMOVED (mittlerweile existiert eine Fahrgasse) --- #: last_checked: 2014-09-26 --- #: check_frequency: 30d --- Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen über Gehweg	q3::inwork 12088,9775 12250,9691
 # REMOVED --- #: next_check_id: PLATZHOF-2014 --- #: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof --- #: by: http://www.aktion-kms.de/files/p23.v_l01_120809.pdf --- #: by: http://www.aktion-kms.de/files/pl_d_std_hof_flyer_5.pdf --- #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden --- #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf --- #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/ --- #: last_checked: 2014-04-11 vvv --- #: check_frequency: 15d vvv --- Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12797,8168 12779,8188 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: FRIEDEL-2014
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2014-09-26
+#: last_checked: 2014-10-31
 #: check_frequency: 60d
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 

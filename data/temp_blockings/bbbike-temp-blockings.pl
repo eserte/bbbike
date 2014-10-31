@@ -20318,9 +20318,9 @@ EOF
 userdel	q4::inwork; 8527,14352 8442,14456 8406,14507 8346,14576
 EOF
      },
-     { from  => 1335854115, # 
-       until => 1335909540, # 2012-05-01 23:59
-       text  => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt (Veranstaltung zum 1. Mai)',
+     { from  => $isodate2epoch->("2014-10-31 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-11-12 20:30:00"),
+       text  => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt, Veranstaltung "25 Jahre Mauerfall", vom 01.11.2014 bis 12.11.2014',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
@@ -20470,8 +20470,8 @@ userdel	q4::inwork; 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,
 EOF
      },
      { from  => 1407706402,
-       until => $isodate2epoch->("2014-10-31 19:00:00"),
-       text  => 'Oberspreestr., Sperrung des Bahnübergangs in Richtung Westen, Fußgänger können passieren, bis 31.10.2014',
+       until => $isodate2epoch->("2014-11-01 12:00:00"),
+       text  => 'Oberspreestr., Sperrung des Bahnübergangs in Richtung Westen, Fußgänger können passieren, bis 1.11.2014',
        type  => 'handicap',
        source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
        data  => <<EOF,
@@ -21314,7 +21314,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- userdel	q3::inwork; 13245,7742 13226,7775 13150,7845 13103,7889 13085,7904
-userdel	q4::inwork; 13103,7889 13085,7904 12870,8087
+userdel	q4::inwork; 13103,7889 13085,7904 13045,7938 12870,8087
 userdel	q4::inwork 13150,7845 13103,7889
 userdel	q4::inwork 13085,7904 13117,7939 13151,7914
 EOF
@@ -23478,8 +23478,8 @@ userdel	q4::inwork 8661,6169 8830,6145 8944,6127
 EOF
      },
      { from  => 1407706402,
-       until => $isodate2epoch->("2014-11-14 17:00:00"),
-       text  => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 14.11.2014',
+       until => $isodate2epoch->("2014-11-14 12:00:00"),
+       text  => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 14. November 2014',
        type  => 'handicap',
        source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
        data  => <<EOF,

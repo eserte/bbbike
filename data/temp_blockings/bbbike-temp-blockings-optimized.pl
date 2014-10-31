@@ -2828,7 +2828,16 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1415820600,
+         'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt, Veranstaltung "25 Jahre Mauerfall", vom 01.11.2014 bis 12.11.2014',
+         'from' => 1414731600,
+         'id' => 2327,
+         'data' => 'userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2847,8 +2856,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        {
          'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
-         'until' => 1414778400,
-         'text' => 'Oberspreestr., Sperrung des Bahnübergangs in Richtung Westen, Fußgänger können passieren, bis 31.10.2014',
+         'until' => 1414839600,
+         'text' => 'Oberspreestr., Sperrung des Bahnübergangs in Richtung Westen, Fußgänger können passieren, bis 1.11.2014',
          'from' => 1407706402,
          'id' => 2344,
          'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
@@ -3713,20 +3722,11 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf',
-         'until' => 1414710000,
-         'text' => 'Albrechtstraße: Fahrbahnsanierung zwischen Friedensplatz und Manteuffelstraße, Sperrung der Fahrbahn, 15.10.2014 bis 30.10.2014',
-         'from' => 1413237600,
-         'id' => 2638,
-         'data' => 'userdel	q4::inwork 8661,6169 8830,6145 8944,6127
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
-         'until' => 1415980800,
-         'text' => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 14.11.2014',
+         'until' => 1415962800,
+         'text' => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 14. November 2014',
          'from' => 1407706402,
          'id' => 2639,
          'data' => '#: source_id: IM_022377

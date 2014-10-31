@@ -208,7 +208,7 @@ Harzer Str.: Kopfsteinpflaster	Q2 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="18"
-#: last_checked: 2014-10-04
+#: last_checked: 2014-10-31
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13606,9578 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -424,14 +424,10 @@ Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712 13378,7695
 Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168 12870,8087
 #: next_check_id: RICHARDSTR-2014
-#: XXX Asphalt wird gerade aufgetragen, danach Q0; aber wahrscheinlich wird ein Stückchen noch gepflastert
-#: last_checked: 2014-09-16
-Richardstr.: Asphalt	Q0- 12870,8087 13085,7904
-#: next_check_id: RICHARDSTR-2014
-#: XXX wahrscheinlich kommt hier auch Kopfsteinpflaster, Q2
-#: last_checked: 2014-10-04
-Richardstr.: Kopfsteinpflaster, OK	Q1- 13085,7904 13103,7889
-Richardstr.: Kopfsteinpflaster	Q2 13103,7889 13150,7845 13226,7775 13245,7742
+#: XXX Asphalt wird gerade aufgetragen, danach Q0
+#: last_checked: 2014-10-31
+Richardstr.: Asphalt	Q0- 12870,8087 13045,7938
+Richardstr.: Kopfsteinpflaster	Q2 13045,7938 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
 Richardstr.: Kopfsteinpflaster	Q2 13278,7673 13288,7653 13303,7622
 Richardstr.: Asphalt	Q0 13303,7622 13339,7452
@@ -1637,8 +1633,7 @@ Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12490,9056 12565,9200 12620,9293
 (Am Flutgraben): Gehwegpflasterung	Q1+ 13333,9929 13371,9974 13535,10184
 Schleusenufer: Kopfsteinpflaster	Q2 13487,10227 13628,10396
 Schmollerplatz: Beton	Q1 13271,9516 13293,9468
-#: XXX vielleicht ist die Pflasterung nach den Bauarbeiten besser geworden?
-Wildenbruchplatz: schlechtes bis mäßiges Kopfsteinpflaster	Q3+ 13135,8766 13227,8692 13314,8624
+Wildenbruchplatz: mäßiges Kopfsteinpflaster	Q2- 13135,8766 13227,8692 13314,8624
 Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13227,8692 13171,8621 13124,8562
 Finowstr. (Neukölln): Asphalt	Q0 13124,8562 13010,8422
 Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
