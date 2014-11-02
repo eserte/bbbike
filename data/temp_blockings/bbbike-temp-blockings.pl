@@ -3554,11 +3554,11 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => $isodate2epoch->("2013-11-30 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-12-01 23:59:59"), #
+     { from  => $isodate2epoch->("2014-11-29 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-11-30 23:59:59"), #
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 12]],
-       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 1. Dezember 2013)',
+       recurrences => [['yearly', days => 30, months => 11]],
+       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 30. November 2013)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
@@ -16544,7 +16544,7 @@ EOF
        text  => 'B 166 zw. Heinersdorf und Abzw. Passow Deckenerneuerung Vollsperrung 12.10.2009-30.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 64624,77291 61819,80513 61420,80705 60923,80665 60511,80745 60070,81164 59776,81358 59018,81801 58771,82019
+userdel	2::inwork 64611,77283 64465,77438 64031,77926 63701,78311 63634,78433 63559,78397 63464,78555 63418,78608 62952,79144 62465,79695 61847,80407 61748,80578 61512,80671 61325,80709 60922,80653 60487,80748 60070,81164 59776,81358 59018,81801 58771,82019
 EOF
      },
      { from  => 1254607200, # 2009-10-04 00:00
@@ -19092,7 +19092,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/10/124.5',
        data  => <<EOF,
-userdel	2::inwork 52733,87022 52642,86984
+userdel	2::inwork 52733,87022 52628,86978
 EOF
      },
      { from  => 1304110785, # 2011-04-29 22:59
@@ -20322,6 +20322,7 @@ EOF
        until => $isodate2epoch->("2014-11-12 20:30:00"),
        text  => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt, Veranstaltung "25 Jahre Mauerfall", vom 01.11.2014 bis 12.11.2014',
        type  => 'gesperrt',
+       source_id => 'IM_023303',
        data  => <<EOF,
 userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
@@ -21322,11 +21323,12 @@ EOF
      { from  => $isodate2epoch->("2013-12-13 06:00:00"), # 1385679600, # 2013-11-29 00:00 - 1 Tag Vorlauf
        until => $isodate2epoch->("2013-12-15 23:59:59"), # 1385938799, # 2013-12-01 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 12]], # zwei Termine, 1. und 3. Advent
+       recurrences => [['yearly', days => 8, months => 12]], # zwei Termine, 1. und 3. Advent
        text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 14.12.2013 und 15.12.2013',
        type  => 'gesperrt',
        source_id => 'IM_020815',
        data  => <<EOF,
+#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-30weihnachtsmarktinderbahnhofstra%C3%9Felich.html ("genauer Termin steht noch nicht fest")
 userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
@@ -22276,44 +22278,44 @@ EOF
 userdel	2::temp 9986,13412 10317,13248
 EOF
      },
-     { from  => 1385809200, # 2013-11-30 12:00
-       until => 1385920800, # 2013-12-01 19:00
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2013, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2014-11-29 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-11-30 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 30. November 2014, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 12]],
+       recurrences => [['yearly', days => 30, months => 11]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
        data  => <<EOF,
 userdel	2::temp 11317,14564 11255,14572 11163,14548
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-07 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-12-08 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 8. Dezember 2013, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2014-12-06 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-12-07 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 7. Dezember 2014, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 8, months => 12]],
+       recurrences => [['yearly', days => 7, months => 12]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
        data  => <<EOF,
 userdel	2::temp 11317,14564 11255,14572 11163,14548
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-14 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-12-15 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 15. Dezember 2013, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2014-12-13 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-12-14 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 14. Dezember 2014, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 15, months => 12]],
+       recurrences => [['yearly', days => 14, months => 12]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
        data  => <<EOF,
 userdel	2::temp 11317,14564 11255,14572 11163,14548
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-21 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-12-22 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2013, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2014-12-20 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-12-21 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 21. Dezember 2014, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 22, months => 12]],
+       recurrences => [['yearly', days => 21, months => 12]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
        data  => <<EOF,

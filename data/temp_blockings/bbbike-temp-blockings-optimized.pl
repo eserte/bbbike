@@ -450,7 +450,25 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'periodic' => 1,
+         'until' => 1417388399,
+         'from' => 1417215600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 30. November 2013)',
+         'type' => 'gesperrt',
+         'id' => 417
+       },
        undef,
        undef,
        undef,
@@ -2493,7 +2511,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2829,6 +2847,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        {
+         'source_id' => 'IM_023303',
          'until' => 1415820600,
          'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt, Veranstaltung "25 Jahre Mauerfall", vom 01.11.2014 bis 12.11.2014',
          'from' => 1414731600,
@@ -2854,18 +2873,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
-         'until' => 1414839600,
-         'text' => 'Oberspreestr., Sperrung des Bahnübergangs in Richtung Westen, Fußgänger können passieren, bis 1.11.2014',
-         'from' => 1407706402,
-         'id' => 2344,
-         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.144501.php
-#: source_id: IM_022567
-userdel	q4::inwork; 19445,5271 19405,5284 19328,5304
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3324,10 +3332,86 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2517,
          'type' => 'gesperrt'
        },
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
+',
+         'periodic' => 1,
+         'until' => 1417370400,
+         'from' => 1417258800,
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 30. November 2014, 12:00 bis 19:00 Uhr',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              11
+                            ]
+                          ],
+         'id' => 2518,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
+',
+         'periodic' => 1,
+         'until' => 1417975200,
+         'from' => 1417863600,
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 7. Dezember 2014, 12:00 bis 19:00 Uhr',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2519,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
+',
+         'periodic' => 1,
+         'until' => 1418580000,
+         'from' => 1418468400,
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 14. Dezember 2014, 12:00 bis 19:00 Uhr',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2520,
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
+',
+         'periodic' => 1,
+         'until' => 1419184800,
+         'from' => 1419073200,
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 21. Dezember 2014, 12:00 bis 19:00 Uhr',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              12
+                            ]
+                          ],
+         'id' => 2521,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3485,15 +3569,7 @@ userdel	q4::inwork 10862,17087 10891,17088 10917,17088
        undef,
        undef,
        undef,
-       {
-         'until' => 1414796400,
-         'text' => 'Charlottenburger Ufer: zwischen Winterstein- und Lohmeyerstraße Bauarbeiten, Sperrung der Fahrbahn, bis 31.10.2014',
-         'from' => 1402738058,
-         'id' => 2580,
-         'data' => 'userdel	q4::inwork 3741,12607 3597,12681 3454,12717
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -3539,16 +3615,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 '
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148904.php',
-         'until' => 1414796400,
-         'text' => 'Thomas-Müntzer-Straße: Fahrbahn wird instandgesetzt und ist vom 28.07.2014 bis zum 31.10.2014 voll gesperrt',
-         'from' => 1406412000,
-         'id' => 2597,
-         'data' => 'userdel	q4::inwork 20149,3617 20301,3432
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'LS/723-K/13/046',
@@ -3570,16 +3637,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'LS/722-C/14/092',
-         'until' => 1414796400,
-         'text' => 'Sonnewalde: L703: Instandsetzung von 2 Bauwerken mit Deckenerneuerung zw. Peterhof - Brenitz Brückeniinstandsetzung, Vollsperrung, 06.08.2014 bis 31.10.2014 ',
-         'from' => 1407355179,
-         'id' => 2601,
-         'data' => 'userdel	2::inwork 27137,-78816 27037,-78176
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3698,15 +3756,7 @@ userdel	2::inwork 15419,10706 15379,10651
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1414796400,
-         'text' => 'Sächsische Straße: in Höhe Darmstädter Straße Fahrbahn gesperrt, bis 31.10.2014 ',
-         'from' => 1411499720,
-         'id' => 2635,
-         'data' => 'userdel	q3::inwork 4638,10162 4623,10066 4609,9949
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1424473200,
          'text' => 'Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
@@ -3807,16 +3857,7 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_023211',
-         'until' => 1414857600,
-         'text' => 'Schwanebecker Chaussee: zwischen Helios-Klinikum und Alt-Buch Baustelle, gesperrt in Richtung Buch, ab 18.10.2014 07 Uhr bis Anfang 11/2014',
-         'from' => 1413496800,
-         'id' => 2650,
-         'data' => 'userdel	q4::inwork; 17591,25405 17410,25484 17087,25730 17011,25830
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => '146901438',
          'until' => 1430431200,
@@ -3827,16 +3868,7 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.216465.php',
-         'until' => 1414882799,
-         'text' => 'Donnersmarckplatz: Bauarbeiten, Sperrung der Fahrbahn, 20. Oktober bis 1. November 2014',
-         'from' => 1413669600,
-         'id' => 2652,
-         'data' => 'userdel	q4::inwork 1735,24738 1617,24741 1621,24798
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_023200',
          'until' => 1415376000,

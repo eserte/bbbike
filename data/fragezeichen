@@ -74,7 +74,7 @@ Mürow - Henriettenhof: Qualität? südlich des Dorfes sah es wie ein Feldweg oder 
 Frauenhagen - Schönermark: Qualität? laut "Regio-Cart" gut geeignet	? 53312,76587 53555,77037 53868,77304 54146,77628 54332,77932
 Schönermark - Biesenbrow: Qualität (höchstwahrscheinlich asphaltiert)?	? 54542,78720 54366,78714 54283,78677 54146,78628 54113,78631 53982,78634 53872,78613 53765,78628 53692,78714 53647,78765 52663,79186 52611,79156 52032,78610
 Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52720,79323 52830,79396 53973,80374 54000,80457 54061,80499 54119,80499
-Passow, Mittelstr.: Qualität?	? 56975,82627 57185,82724 57426,82901
+Passow, Mittelstr.: Qualität im westlichen Abschnitt? Hier auch Beton?	? 56975,82627 57185,82724
 Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,68012 40775,68125 40750,69175 40999,69391
 Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet (zumindest in Wolletz Verbundsteinpflaster)	? 43101,69564 43250,71500 42941,72180
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51034,165181 50994,165390 50715,166093 50464,166650 50472,166804 50661,166901 50993,167239 51565,167859
@@ -240,7 +240,6 @@ Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbund
 Melzow - Gramzow, Autobahnbrücke: wegen Bauarbeiten gesperrt, Qualität könnte mäßiger Asphalt sein	? 45082,88685 46529,89125
 Melzow - Meichow: Qualität? Ist die Straße durchgängig asphaltiert?	? 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137
 Neumeichow: Qualität?	? 46617,88457 46886,88320 47675,88141 47917,88155
-Zehnebeck - Lützlow: Qualität? Ist die gesamte Straße asphaltiert?	? 52355,90667 52219,91211 52158,91403 52052,91596 51971,91708 51945,91781 51968,91966 51997,92045 52054,92099 52063,92172 51930,92418
 Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
 Britz - Chorin: Qualität?	? 37225,54056 38412,55353 38528,55402 38516,55481 38774,55675 38987,55637 39726,55645 40450,55770
 Liepe - Chorin: Qualität?	? 46938,50961 46757,50998 46391,51303
@@ -402,13 +401,11 @@ Fürstenwalder Str. (Zernsdorf): Qualität?	? 27906,-11638 28150,-11380 28235,-112
 Am Möllenberg (Zernsdorf): Qualität?	? 27934,-10286 28016,-10429 28241,-10904 28388,-11093
 Mürow - Pinnow: Qualität?	? 52072,72613 52455,72591 52492,72539
 Mürow - Pinnow: Qualität?	? 53374,72966 54305,73196 54677,73196 55225,73549 55450,73574
-Hohenlandin - Heinersdorf: Qualität?	? 58614,76616 59256,76805 61331,77132 62781,76706 63287,76613
-Heinersdorf - B166: Qualität?	? 63287,76613 63488,76645 64624,77291
-Heinersdorf - Berkholz: Qualität (am Bahnübergang asphaltiert)?	? 63287,76613 63230,76070 63239,76046 63732,73976 63805,73769 63945,73688
+Hohenlandin - Heinersdorf: Qualität? Ist hier asphaltiert?	? 58614,76616 59256,76805 61339,77148 61595,77118 62816,76674 62876,76669 63021,76637 63144,76624 63211,76623
+Heinersdorf - Berkholz: Qualität des südlichen Abschnitts? Hier auch asphaltiert?	? 63283,75793 63732,73976 63805,73769 63945,73688
 Berkholz - Meyenburg: Qualität?	? 63945,73688 64048,73386 64272,73434 64491,73284 64797,73259 64976,73094 65440,72548 65658,72501 65817,72245
 Meyenburg - Schwedt: Qualität?	? 65817,72245 65801,72127 67117,71540
-Weg entlang der Bahn: asphaltiert; genaue Lage?	? 63239,76046 63957,75986 64832,75778 65412,75648
-B166 - Meyenburg: Qualität (im Bereich des Bahnübergangs asphaltiert)?	? 65632,76166 65603,76110 65429,75766 65411,75684 65412,75648 65417,75421 65388,75202 65022,74147 64983,73522 64976,73094
+B166 - Meyenburg: Qualität des südlichen Abschnitts? Hier auch asphaltiert?	? 65417,75421 65388,75202 65022,74147 64983,73522 64976,73094
 B166 - Berkholz: Qualität?	? 65022,74147 64076,73706 63945,73688
 Melzow: Qualität?	? 41459,85131 41621,85290 41910,85359
 Altranft - Sonnenburg: Qualität?	? 55627,41154 55542,41087 54597,39850 53976,39070 54043,38820 53890,38424 53397,38297
@@ -1010,7 +1007,7 @@ Radweg entalng der B179n: Qualität?	? 24549,-12629 24531,-12634 24483,-12540 244
 Telz - Zossen: wurde der geplante Radweg schon gebaut? Qualität? Auf welcher Seite führt der Zweirichtungsradweg entlang?	? 17227,-17782 17038,-18590 16856,-19255 16963,-19789 16836,-20130 16730,-20386 16071,-20727 15794,-20749 15178,-20983 15072,-21175
 Klandorf: Qualität im östlichen Abschnitt?	? 19854,52797 19870,52656 20344,52595 20411,52518 20503,52217
 Waldheimstr. (Basdorf): Qualität im östlichen Abschnitt? Auch asphaltiert?	? 12676,34638 12979,34718 13468,34885 13568,34935
-Herrenhof: Qualität?	? 59259,80538 59325,80664 59305,80701 59481,80950 59776,81358
+Herrenhof: Qualität?	? 59259,80538 59325,80664 59305,80701 59481,80950
 Jamikow - Woltersdorf: Qualität?	? 61398,85335 61465,85414 61678,85560 62757,86072 63202,86383 63391,86474 63574,86547 63805,86748 64018,86876 64137,87068
 Neue Straße (Teltow): Fahrbahnbeschaffenheit?	? 978,-521 1101,-553
 Badstr. (Teltow): Fahrbahnbeschaffenheit?	? 1106,-491 1134,-370
@@ -1079,6 +1076,7 @@ Genfer Platz (Schwanebeck): Qualität? Gibt es eine Verbindung zur Zillertaler St
 Hohenstein - Strausberg: gibt es zwischen Hohenstein und Strausberg mittlerweile einen Radweg? Ist es ein Zweirichtungsradweg? Asphaltiert?	? 48635,18552 47672,18859 46386,18523 44085,19049 43857,19113 43686,19241
 Hermann-Oxfort-Promenade: Ist die Hermann-Oxfort-Promenade ausgeschildert?	? -3503,13773 -3543,13691 -3556,13582 -3546,13503 -3529,13452 -3451,13300 -3441,13270 -3352,13135 -3339,13106 -3203,12895 -3202,12891
 Am Klötzebecken, nördlicher Weg: für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 5851,22538 5920,22603 6023,22667 6207,22737 6226,22712
+Heinersdorf: Qualität? Liegt hier auch Verbundsteinpflaster?	? 63261,76791 63225,76949 63279,77202 63342,77286 63390,77441 63293,77739
 # added from ampeln-orig
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6163 (Stand der Planung?)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4

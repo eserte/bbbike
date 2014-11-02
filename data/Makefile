@@ -765,10 +765,10 @@ housenumbers:	housenumbers-orig
 	mv housenumbers~ housenumbers
 	-@$(READONLY) $@
 
-mount:	strassen fragezeichen hoehe gesperrt
+mount:	strassen landstrassen landstrassen2 fragezeichen hoehe gesperrt
 	-@$(WRITEABLE) $@
 	$(STEIGUNG_STAT) -die-on-fatal -minmount 1.0 -commentscompatible -sperre gesperrt \
-		-str strassen -str fragezeichen -i hoehe -o $@~
+		-str strassen -str landstrassen -str landstrassen2 -str fragezeichen -i hoehe -o $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
