@@ -65,6 +65,7 @@ use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
 	 "/home/e/eserte/src/bbbike/data",
 	 "/home/e/eserte/src/bbbike/miscsrc",
 	); # XXX do not hardcode
+use BBBikeCGI::Util ();
 
 pathinfo_to_param();
 
@@ -133,9 +134,9 @@ EOF
 
 sub _form {
     print start_form(-action => url(-relative=>1)); # url -relative is safe, no my_url necessary
-    print hidden("layer", param("layer")) if param("layer");
-    print hidden("mapext", param("mapext")) if param("mapext");
-    print hidden("usemap", param("usemap"));
+    print hidden("layer", BBBikeCGI::Util::my_multi_param("layer")) if param("layer");
+    print hidden("mapext", BBBikeCGI::Util::my_multi_param("mapext")) if param("mapext");
+    print hidden("usemap", BBBikeCGI::Util::my_multi_param("usemap"));
 }
 
 sub show_form {
@@ -225,8 +226,8 @@ sub resolve_street {
     ## on radzeit for example
     #$br->Context->UseTelbuchDBApprox(1); # XXX experimental!!!
     my $start = $br->Start;
-    $start->Street(param("street"));
-    $start->Citypart(param("citypart") || undef);
+    $start->Street(scalar param("street"));
+    $start->Citypart(scalar(param("citypart")) || undef);
     my $coord = $br->get_start_position(fixposition => 0);
 
     if (!defined $coord) {
@@ -295,7 +296,7 @@ sub resolve_city {
 	lc $s;
     };
 
-    my $city = $norm->(param("city"));
+    my $city = $norm->(scalar param("city"));
     require Strassen::Core;
     require Strassen::MultiStrassen;
     my $s = MultiStrassen->new("orte", "orte2");
@@ -375,7 +376,7 @@ sub resolve_fulltext {
                 grep { !/(relation_gps|coords\.data|ampelschaltung|-orig|-info|~|\.st|\.desc|RCS|CVS|\.svn|\.git)$/ }
 		glob("$dir/*");
     die "No files in directory $dir" if !@files; # should not happen
-    my @cmd = ("fgrep", "-i", "--", param("searchterm"), @files);
+    my @cmd = ("fgrep", "-i", "--", scalar(param("searchterm")), @files);
     #warn "Cmd: @cmd\n";
     open(GREP, "-|") or do {
 	require File::Spec;
@@ -529,7 +530,7 @@ sub redirect_to_ms {
     }
 
     if (param("layer")) {
-	$args{-layers} = [param("layer")];
+	$args{-layers} = [BBBikeCGI::Util::my_multi_param("layer")];
     } else {
 	$args{-layers} = [qw(bahn flaechen gewaesser
 			     faehren route grenzen orte)] if !$args{-layers};
@@ -537,7 +538,7 @@ sub redirect_to_ms {
     require File::Basename;
     $args{-bbbikeurl} = File::Basename::dirname(url) . "/bbbike.cgi";
     if (param("msmap")) {
-	$args{-mapname} = File::Basename::basename(param("msmap"));
+	$args{-mapname} = File::Basename::basename(scalar param("msmap"));
     }
 
     require BBBikeMapserver;
@@ -663,7 +664,7 @@ sub pathinfo_to_param {
     if (path_info() ne "") {
 	for my $pathcomp (split '/', substr(path_info(), 1)) {
 	    my($key,$val) = split /=/, $pathcomp, 2;
-	    param($key, param($key), $val); # couldn't get CGI::append in functional mode working
+	    param($key, BBBikeCGI::Util::my_multi_param($key), $val); # couldn't get CGI::append in functional mode working
 	}
     }
 }

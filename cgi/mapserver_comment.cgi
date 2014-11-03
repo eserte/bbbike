@@ -153,7 +153,7 @@ eval {
 	print BACKUP "\n";
 	my $data = {};
 	for my $param (param) {
-	    my @val = param($param);
+	    my @val = BBBikeCGI::Util::my_multi_param($param);
 	    if (@val == 1) {
 		$data->{$param} = $val[0];
 	    } else {

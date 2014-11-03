@@ -18,6 +18,7 @@ package BBBikeMapserver;
 use strict;
 use File::Basename;
 use CGI;
+use BBBikeCGI::Util ();
 
 sub new {
     my($class, %args) = @_;
@@ -40,7 +41,7 @@ sub new_from_cgi {
     my $self = $class->new(%args);
     my @c;
     if (defined $q->param("coords")) {
-	for my $coords ($q->param("coords")) {
+	for my $coords (BBBikeCGI::Util::my_multi_param($q, 'coords')) {
 	    push @c, [ split /[!; ]/, $coords ];
 	}
     }
@@ -243,7 +244,7 @@ sub start_mapserver {
 
     if (!exists $args{-scope}) {
 	if ($pass && defined $q->param("map")) {
-	    $args{-scope} = scope_by_map($q->param("map"));
+	    $args{-scope} = scope_by_map(scalar $q->param("map"));
 	}
 	if (!exists $args{-scope}) {
 	    $args{-scope} = 'city';
@@ -261,11 +262,11 @@ sub start_mapserver {
     my $q2 = CGI->new({});
     if ($pass) {
 	for my $param (qw(zoomsize program bbbikeurl bbbikemail)) {
-	    $q2->param($param, $q->param($param))
+	    $q2->param($param, BBBikeCGI::Util::my_multi_param($q, $param))
 		if defined $q->param($param);
 	}
 	if (defined $q->param("imgext")) {
-	    $q2->param(mapext => $q->param("imgext"));
+	    $q2->param(mapext => scalar $q->param("imgext"));
 	}
     }
 
@@ -273,7 +274,7 @@ sub start_mapserver {
     if ($args{-layers}) {
 	@layers = @{ $args{-layers} };
     } elsif ($pass && $q->param("layer")) {
-	@layers = $q->param("layer");
+	@layers = BBBikeCGI::Util::my_multi_param($q, 'layer');
     } else {
 	@layers = grep { $_ ne 'route' || $do_route } all_layers();
     }

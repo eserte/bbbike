@@ -25,7 +25,7 @@ sub decode_possible_utf8_params {
 	for my $key ($q->param) {
 	    next if $q->upload($key);
 	    my @vals;
-	    for my $val ($q->param($key)) {
+	    for my $val (my_multi_param($q, $key)) {
 		eval {
 		    my $test_val = $val;
 		    Encode::decode("utf-8", $test_val, Encode::FB_CROAK());
@@ -79,6 +79,13 @@ sub my_server_name {
     } else {
 	$q->server_name;
     }
+}
+
+require CGI;
+if (defined &CGI::multi_param) {
+    *my_multi_param = \&CGI::multi_param;
+} else {
+    *my_multi_param = \&CGI::param;
 }
 
 # CGI::escapeHTML does not escape anything above 0x80. Do it to avoid

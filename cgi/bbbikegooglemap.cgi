@@ -69,8 +69,8 @@ sub run {
 	[$coord, $name];
     };
 
-    my @coords = map { [$convert_all->($_)] } param('coords');
-    my @wpt    = map { $convert_wpt->($_) } param('wpt');
+    my @coords = map { [$convert_all->($_)] } BBBikeCGI::Util::my_multi_param('coords');
+    my @wpt    = map { $convert_wpt->($_) } BBBikeCGI::Util::my_multi_param('wpt');
 
     if (param("wpt_or_trk")) {
 	my $wpt_or_trk = trim(scalar param("wpt_or_trk"));
@@ -131,7 +131,7 @@ sub run {
     }
 
     my @polylines_polar = @coords;
-    my @polylines_polar_feeble = map { [$convert_all->($_)] } param('oldcoords');
+    my @polylines_polar_feeble = map { [$convert_all->($_)] } BBBikeCGI::Util::my_multi_param('oldcoords');
 
     my $zoom = param("zoom");
     $zoom = 17-3 if !defined $zoom;
