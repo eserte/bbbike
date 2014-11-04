@@ -965,7 +965,7 @@ $header_written = 0;
 if ($q->path_info ne "") {
     my $q2 = CGI->new(substr($q->path_info, 1));
     foreach my $k ($q2->param) {
-	$q->param($k, $q2->param($k));
+	$q->param($k, BBBikeCGI::Util::my_multi_param($q2, $k));
     }
 }
 
@@ -1044,7 +1044,7 @@ foreach my $type (qw(start via ziel)) {
     } elsif (defined $q->param($type . 'c_wgs84') and
 	     $q->param($type . 'c_wgs84') ne '') {
 	my @new_params;
-	for my $old_param ($q->param($type . 'c_wgs84')) {
+	for my $old_param (BBBikeCGI::Util::my_multi_param($q, $type . 'c_wgs84')) {
 	    my($lon,$lat) = split /,/, $old_param;
 	    if ($lon == 0 && $lat == 0) {
 		send_error(reason => "Highly probably wrong coordinate $lon/$lat in '$type', refusing to continue work.");
@@ -1220,7 +1220,7 @@ if (defined $q->param('begin')) {
     start_mapserver();
 } elsif (defined $q->param('routefile') and
 	 $q->param('routefile') ne "") {
-    draw_route_from_fh($q->param('routefile'));
+    draw_route_from_fh($q->upload('routefile'));
 } elsif (defined $q->param('localroutefile') &&
 	 defined $local_route_dir) {
     (my $local_route_file = $q->param('localroutefile')) =~ s/[^A-Za-z0-9._-]//g;
@@ -1285,11 +1285,11 @@ if (defined $q->param('begin')) {
     print CGI->redirect(-uri => $res{imgurl});
     exit 0;
 } elsif (defined $q->param('startchar')) {
-    choose_ch_form($q->param('startchar'), 'start', $q->param('startort'));
+    choose_ch_form(scalar $q->param('startchar'), 'start', scalar $q->param('startort'));
 } elsif (defined $q->param('viachar')) {
-    choose_ch_form($q->param('viachar'), 'via', $q->param('viaort'));
+    choose_ch_form(scalar $q->param('viachar'), 'via', scalar $q->param('viaort'));
 } elsif (defined $q->param('zielchar')) {
-    choose_ch_form($q->param('zielchar'), 'ziel', $q->param('zielort'));
+    choose_ch_form(scalar $q->param('zielchar'), 'ziel', scalar $q->param('zielort'));
 } elsif (defined $q->param('startc') and
 	 defined $q->param('zielc')) {
     if (!$q->param('pref_seen')) {
@@ -3407,8 +3407,8 @@ sub make_netz {
 sub search_coord {
     my $startcoord  = $q->param('startc');
     my $zielcoord   = $q->param('zielc');
-    my($viacoord, @more_viacoords) = $q->param('viac');
-    my(@custom)     = $q->param('custom');
+    my($viacoord, @more_viacoords) = BBBikeCGI::Util::my_multi_param($q, 'viac');
+    my(@custom)     = BBBikeCGI::Util::my_multi_param($q, 'custom');
     my %custom      = map { ($_ => 1) } @custom;
 
     my $via_array = (defined $viacoord && $viacoord ne ''
@@ -3725,7 +3725,7 @@ sub search_coord {
 	$extra_args{Algorithm} = $search_algorithm;
     }
 
-    my $is_test_mode = (defined $q->param("test") && grep { /^(?:custom|temp)[-_]blocking/ } $q->param("test"));
+    my $is_test_mode = (defined $q->param("test") && grep { /^(?:custom|temp)[-_]blocking/ } BBBikeCGI::Util::my_multi_param($q, 'test'));
     my $fake_time    = $q->param('fake_time');
     load_temp_blockings(-test => $is_test_mode || $fake_time);
 
@@ -4688,7 +4688,7 @@ sub display_route {
 	    my $hidden = "";
 	    foreach my $key ($q->param) {
 		$hidden .= $q->hidden(-name => $key,
-				      -default => [$q->param($key)]);
+				      -default => [BBBikeCGI::Util::my_multi_param($q, $key)]);
 	    }
 	    print qq{<form class="altroutebox" name="Ausweichroute" action="} .
 		BBBikeCGI::Util::my_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
@@ -5281,7 +5281,7 @@ EOF
 		untie %$sess;
 		if (defined $q->param('oldcs')) {
 		    print $q->hidden(-name    => 'oldcs',
-				     -default => $q->param('oldcs'));
+				     -default => scalar $q->param('oldcs'));
 		}
  	    } else {
 		print "<input type=hidden name=coords value=\"$string_rep\">";
@@ -5410,7 +5410,7 @@ EOF
 	    foreach my $key ($q->param) {
 		next if $key =~ /^(pref_.*)$/;
 		print $q->hidden(-name=>$key,
-				 -default=>[$q->param($key)])
+				 -default=>[BBBikeCGI::Util::my_multi_param($q, $key)])
 	    }
 	    print "<b>" . M("Einstellungen") . ":</b>";
 	    #reset_html();
@@ -5486,7 +5486,7 @@ EOF
 
 		$qqq = new CGI $qq->query_string;
 		foreach (qw(c name plz)) {
-		    $qqq->param("start$_", $qqq->param("ziel$_"));
+		    $qqq->param("start$_", BBBikeCGI::Util::my_multi_param($qqq, "ziel$_"));
 		    $qqq->delete("ziel$_");
 		}
 		$button->(M("Ziel als Start"), $qqq->query_string);
@@ -5704,8 +5704,8 @@ sub draw_route {
 	$ms->read_config("$config_master.config");
 	my $layers;
 	if (defined $q->param("layer")) { # Mapserver styled parameters
-	    $layers = [ "route", $q->param("layer") ];
-	} elsif (grep { $_ eq 'all' } $q->param("draw")) {
+	    $layers = [ "route", BBBikeCGI::Util::my_multi_param($q, 'layer') ];
+	} elsif (grep { $_ eq 'all' } BBBikeCGI::Util::my_multi_param($q, 'draw')) {
 	    $layers = [ $ms->all_layers ];
 	} else {
 	    $layers = [ "route",
@@ -5728,7 +5728,7 @@ sub draw_route {
 			    } else {
 				$out;
 			    }
-			} $q->param('draw')
+			} BBBikeCGI::Util::my_multi_param($q, 'draw')
 		      ];
 	}
 	$layers = [ grep { $_ ne "route" } @$layers ]
@@ -5739,7 +5739,7 @@ sub draw_route {
 	if ($has_center) {
 	    my $width  = $q->param("width");
 	    my $height = $q->param("height");
-	    if (!outside_berlin_and_potsdam($q->param("center"))) {
+	    if (!outside_berlin_and_potsdam(scalar $q->param("center"))) {
 		$q->param("width",  1000) if !defined $width  || $width eq '';
 		$q->param("height", 1000) if !defined $height || $height eq '';
 	    } else {
@@ -5755,19 +5755,19 @@ sub draw_route {
 	     -layers => $layers,
 	     -cookie => $cookie,
 	     (defined $q->param("mapext")
-	      ? (-mapext => $q->param("mapext"))
+	      ? (-mapext => scalar $q->param("mapext"))
 	      : ()
 	     ),
 	     ($has_center
-	      ? (-center => $q->param("center"),
-		 -markerpoint => $q->param("center"),
+	      ? (-center => scalar $q->param("center"),
+		 -markerpoint => scalar $q->param("center"),
 		)
 	      : ()
 	     ),
-	     defined $q->param("width") ? (-width => $q->param("width")) : (),
-	     defined $q->param("height") ? (-height => $q->param("height")) : (),
-	     defined $q->param("padx") ? (-padx => $q->param("padx")) : (),
-	     defined $q->param("pady") ? (-pady => $q->param("pady")) : (),
+	     defined $q->param("width")  ? (-width  => scalar $q->param("width")) : (),
+	     defined $q->param("height") ? (-height => scalar $q->param("height")) : (),
+	     defined $q->param("padx")   ? (-padx   => scalar $q->param("padx")) : (),
+	     defined $q->param("pady")   ? (-pady   => scalar $q->param("pady")) : (),
 	    );
 	return;
     }
@@ -6469,7 +6469,7 @@ sub name_from_cgi {
 	$q->param($type . "name") ne '') {
 	$q->param($type . "name");
     } elsif (defined $q->param($type . "c")) {
-	crossing_text($q->param($type . "c"));
+	crossing_text(scalar $q->param($type . "c"));
     } else {
 	undef;
     }

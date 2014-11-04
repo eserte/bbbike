@@ -121,19 +121,20 @@ sub new {
 
 sub new_from_cgi {
     my($pkg, $q, %args) = @_;
+    require BBBikeCGI::Util;
     $args{Geometry}  = $q->param('geometry')
       if defined $q->param('geometry');
-    my @coords = $q->param('coords');
+    my @coords = BBBikeCGI::Util::my_multi_param($q, 'coords');
     if (@coords == 1) {
 	$args{Coords} = [ split(/[!; ]/, $coords[0]) ];
     } elsif (@coords > 1) {
 	$args{MultiCoords} = [ map { [ split(/[!; ]/, $_) ] } @coords ];
     }
-    my @oldcoords = $q->param('oldcoords');
+    my @oldcoords = BBBikeCGI::Util::my_multi_param($q, 'oldcoords');
     $args{OldCoords} = [ split(/[!; ]/, $oldcoords[0]) ] if @oldcoords;
     $args{MarkerPoint} = $q->param('markerpoint')
       if defined $q->param('markerpoint');
-    $args{Draw}      = [ $q->param('draw') ]
+    $args{Draw}      = [ BBBikeCGI::Util::my_multi_param($q, 'draw') ]
       if defined $q->param('draw');
     $args{Scope}     = $q->param('scope')
       if defined $q->param('scope');
@@ -157,7 +158,7 @@ sub new_from_cgi {
 #     # ca. 3.5 auf 4 Sekunden.
 #     $args{Width}    = $q->param('drawwidth')
 # 	if defined $q->param('drawwidth');
-    $args{StrLabel} = [ $q->param('strlabel') ]
+    $args{StrLabel} = [ BBBikeCGI::Util::my_multi_param($q, 'strlabel') ]
 	if defined $q->param('strlabel');
     $args{ImageType} = $q->param('imagetype')
 	if defined $q->param('imagetype');

@@ -814,7 +814,7 @@ if ($q->param("info")) {
 
     if ($q->param("form") && $q->param("form") eq 'advanced') {
 	$routing->Context->ChooseExactCrossing(1);
-	$routing->Ext({ Form => $q->param("form") });
+	$routing->Ext({ Form => scalar $q->param("form") });
     }
 
     my($has_start, $has_goal);
