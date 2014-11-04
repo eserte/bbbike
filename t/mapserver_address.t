@@ -161,6 +161,13 @@ test_psgi app => $app, client => sub {
     }
 
     {
+	my $res = $cb->(GET "/?searchterm=.");
+	is $res->code, '200', 'search term input - search everything';
+	tidy_check $res->content, 'mapserver_address - multiple searchterm results page';
+	like_html $res->content, qr{Mehrere Treffer};
+    }
+
+    {
 	my $res = $cb->(GET "/?latD=52&latM=30&latS=58.5&longD=13&longM=22&longS=43.7");
 	is $res->code, '302', 'DMS coordinates';
 	like $res->header('location'), qr{mapserv};

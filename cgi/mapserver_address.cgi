@@ -371,9 +371,12 @@ sub resolve_fulltext {
     }
 
     my @res;
-    my @files = grep { -f $_ }
-                grep { !/(relation_gps|coords\.data|ampelschaltung|-orig|-info|~|\.st|\.desc|RCS|CVS|\.svn|\.git)$/ }
-		glob("$dir/*");
+    my @files = grep { -f $_ } map { "$dir/$_" }
+	qw(
+	      brunnels faehren flaechen fragezeichen landstrassen landstrassen2 orte orte2 plaetze
+	      rbahn rbahnhof sbahn sbahnhof ubahn ubahnhof
+	      sehenswuerdigkeit strassen wasserstrassen wasserumland wasserumland2
+	 );
     die "No files in directory $dir" if !@files; # should not happen
     my @cmd = ("fgrep", "-i", "--", scalar(param("searchterm")), @files);
     #warn "Cmd: @cmd\n";
