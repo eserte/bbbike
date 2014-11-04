@@ -23651,4 +23651,13 @@ EOF
 userdel	q4::inwork 2174,24783 2222,24884 2245,25016
 EOF
      },
+     { from  => 1414920600, # 2014-11-02 10:30
+       until => 1416578400, # 2014-11-21 15:00
+       text  => 'Hobrechtsfelder Chaussee: Baustelle zwischen Wiltbergstr. und Pölnitzweg, Fahrbahn stadtauswärts gesperrt, 03.11.2014 10:30 Uhr bis 21.11.2014 15:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_023339',
+       data  => <<EOF,
+userdel	1::inwork 15230,26560 15589,27116
+EOF
+     },
     );
