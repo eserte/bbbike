@@ -14,7 +14,13 @@
 #
 
 use strict;
-BEGIN { delete $INC{"FindBin.pm"} }
+BEGIN {
+    $BBBike::PLACK_TESTING = $BBBike::PLACK_TESTING if 0; # cease -w
+    if (!$BBBike::PLACK_TESTING) {
+	delete $INC{"FindBin.pm"}
+    }
+}
+
 use FindBin;
 use vars qw($BBBIKE_ROOT $BBBIKE_URL);
 BEGIN { # XXX do not hardcode
