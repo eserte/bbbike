@@ -51,7 +51,7 @@ for my $method (qw(GET POST)) {
 	my(@cgi_params) = @_;
 	push @cgi_params, mailout => 1;
 	my $content;
-	local %ENV;
+	local @ENV{qw(REQUEST_METHOD QUERY_STRING CONTENT_LENGTH CONTENT_TYPE SERVER_NAME)};
 	if ($method eq 'GET') {
 	    $ENV{REQUEST_METHOD} = 'GET';
 	    my %cgi_params;
