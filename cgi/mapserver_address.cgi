@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.34 2009/04/04 11:16:27 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -77,7 +76,7 @@ if (defined param("mapserver")) {
 } elsif (defined param("street") && param("street") !~ /^\s*$/) {
     resolve_street();
 } elsif (defined param("coords") && param("coords") !~ /^\s*$/) {
-    redirect_to_map(param("coords"));
+    redirect_to_map(scalar param("coords"));
 } elsif (defined param("city") && param("city") !~ /^\s*$/) {
     resolve_city();
 } elsif (defined param("searchterm") && param("searchterm") !~ /^\s*$/) {
@@ -91,10 +90,10 @@ if (defined param("mapserver")) {
     my $longS = param("longS")||0;
     require Scalar::Util;
     if (
-	!Scalar::Util::looks_like_number(param("latD")) ||
-	!Scalar::Util::looks_like_number(param("latM")) ||
-	!Scalar::Util::looks_like_number(param("longD")) ||
-	!Scalar::Util::looks_like_number(param("longM"))
+	!Scalar::Util::looks_like_number(scalar param("latD")) ||
+	!Scalar::Util::looks_like_number(scalar param("latM")) ||
+	!Scalar::Util::looks_like_number(scalar param("longD")) ||
+	!Scalar::Util::looks_like_number(scalar param("longM"))
        ) {
 	show_html(error_dms => 1);
     } else {
@@ -106,12 +105,12 @@ if (defined param("mapserver")) {
 	 param("lat") !~ /^\s*$/ && param("long") !~ /^\s*$/) {
     require Scalar::Util;
     if (
-	!Scalar::Util::looks_like_number(param("lat")) ||
-	!Scalar::Util::looks_like_number(param("long"))
+	!Scalar::Util::looks_like_number(scalar param("lat")) ||
+	!Scalar::Util::looks_like_number(scalar param("long"))
        ) {
 	show_html(error_ddd => 1);
     } else {
-	resolve_latlong(param("lat"), param("long"));
+	resolve_latlong(scalar param("lat"), scalar param("long"));
     }
 } else {
     show_html();
