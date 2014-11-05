@@ -44,24 +44,32 @@ ok $app, 'can convert into psgi application';
 test_psgi app => $app, client => sub {
     my $cb = shift;
 
+    my $expect_mapserver_redirect = sub ($$$) {
+	my($url, $location_rx, $testname) = @_;
+
+	$location_rx = qr{mapserv} if !defined $location_rx;
+
+    SKIP: {
+	    skip "Mapserver skipped by env variable", 2
+		if $ENV{BBBIKE_TEST_SKIP_MAPSERVER};
+
+	    my $res = $cb->(GET $url);
+	    is $res->code, '302', "$testname - expect redirect"
+		or diag $res->as_string;
+	    like $res->header('location'), $location_rx, "$testname - expected location";
+	}
+    };
+
     {
 	my $res = $cb->(GET "/");
-	ok $res->is_success;
+	ok $res->is_success
+	    or diag $res->as_string;
 	tidy_check $res->content, 'mapserver_address start';
 	like_html $res->content, qr{Auswahl nach Stra.*en und Orten};
     }
 
-    {
-	my $res = $cb->(GET "/?street=Dudenstr");
-	is $res->code, '302', 'street input';
-	like $res->header('location'), qr{mapserv};
-    }
-
-    {
-	my $res = $cb->(GET "/street=Dudenstr");
-	is $res->code, '302', 'street input via pathinfo';
-	like $res->header('location'), qr{mapserv};
-    }
+    $expect_mapserver_redirect->('/?street=Dudenstr', undef, 'street input');
+    $expect_mapserver_redirect->('/street=Dudenstr', undef, 'street input via pathinfo');
 
     {
 	my $res = $cb->(GET "/?street=Dudenstr&usemap=googlemaps");
@@ -69,24 +77,9 @@ test_psgi app => $app, client => sub {
 	like $res->header('location'), qr{bbbikegooglemap}, 'redirect to googlemap';
     }
 
-    
-    {
-	my $res = $cb->(GET "/?street=Dudenstr&width=640&height=400");
-	is $res->code, '302', 'street input';
-	like $res->header('location'), qr{mapserv}, 'redirect to mapserver, with width/height param';
-    }
-
-    {
-	my $res = $cb->(GET "/?street=Dudenstr&mapext=0,0,10000,10000");
-	is $res->code, '302', 'street input';
-	like $res->header('location'), qr{mapserv}, 'redirect to mapserver, with mapext param';
-    }
-
-    {
-	my $res = $cb->(GET "/?street=Dudenstr&layer=flaechen");
-	is $res->code, '302', 'street input';
-	like $res->header('location'), qr{mapserv\?layer=flaechen&}, 'redirect to mapserver, with layer param';
-    }
+    $expect_mapserver_redirect->('/?street=Dudenstr&width=640&height=400', undef, 'with width/height param');
+    $expect_mapserver_redirect->('/?street=Dudenstr&mapext=0,0,10000,10000', undef, 'with mapext param');
+    $expect_mapserver_redirect->('/?street=Dudenstr&layer=flaechen', qr{mapserv\?layer=flaechen&}, 'with layer param');
 
     {
 	my $res = $cb->(GET "/?street=Bahnhofstr");
@@ -96,17 +89,8 @@ test_psgi app => $app, client => sub {
 	like_html $res->content, qr{Lichtenrade};
     }
 
-    {
-	my $res = $cb->(GET "/?street=Bahnhofstr&citypart=Lichtenrade");
-	is $res->code, '302', 'street and citypart input';
-	like $res->header('location'), qr{mapserv}, 'redirect to mapserver';
-    }
-
-    {
-	my $res = $cb->(GET "/?street=Altstaedter+Ring");
-	is $res->code, '302', 'street input (with Spandau street)';
-	like $res->header('location'), qr{mapserv}, "redirect to mapserver, with city scope";
-    }
+    $expect_mapserver_redirect->('/?street=Bahnhofstr&citypart=Lichtenrade', undef, 'street and citypart input');
+    $expect_mapserver_redirect->('/?street=Altstaedter+Ring', undef, 'street input (with Spandau street)');
 
     {
 	my $res = $cb->(GET "/?street=ThisStreetDoesNotExist");
@@ -115,29 +99,11 @@ test_psgi app => $app, client => sub {
 	like_html $res->content, qr{Nichts gefunden};
     }
 
-    {
-	my $res = $cb->(GET "/?coords=8581,12243");
-	is $res->code, '302', 'bbbike coords input';
-	like $res->header('location'), qr{mapserv};
-    }
+    $expect_mapserver_redirect->('/?coords=8581,12243', undef, 'bbbike coords input');
 
-    {
-	my $res = $cb->(GET "/?city=Bernau");
-	is $res->code, '302', 'city input in orte';
-	like $res->header('location'), qr{mapserv};
-    }
-
-    {
-	my $res = $cb->(GET "/?city=Potsdam");
-	is $res->code, '302', 'city input (Potsdam)';
-	like $res->header('location'), qr{mapserv}, "redirect to mapserver, with potsdam scope (theoretically)";
-    }
-
-    {
-	my $res = $cb->(GET "/?city=Prenzlau");
-	is $res->code, '302', 'city input in orte2';
-	like $res->header('location'), qr{mapserv};
-    }
+    $expect_mapserver_redirect->('/?city=Bernau', undef, 'city input (orte)');
+    $expect_mapserver_redirect->('/?city=Potsdam', undef, 'city input (Potsdam, theoretically with potsdam scope)');
+    $expect_mapserver_redirect->('/?city=Prenzlau', undef, 'city input (orte2)');
 
     {
 	my $res = $cb->(GET "/?city=Wilmersdorf");
@@ -167,18 +133,8 @@ test_psgi app => $app, client => sub {
 	like_html $res->content, qr{Mehrere Treffer};
     }
 
-    {
-	my $res = $cb->(GET "/?latD=52&latM=30&latS=58.5&longD=13&longM=22&longS=43.7");
-	is $res->code, '302', 'DMS coordinates';
-	like $res->header('location'), qr{mapserv};
-    }
-
-    {
-	my $res = $cb->(GET "/?lat=13.378817&long=52.516263");
-	is $res->code, '302', 'DDD coordinates';
-	like $res->header('location'), qr{mapserv};
-    }
-
+    $expect_mapserver_redirect->('/?latD=52&latM=30&latS=58.5&longD=13&longM=22&longS=43.7', undef, 'DMS coordinates');
+    $expect_mapserver_redirect->('/?lat=13.378817&long=52.516263', undef, 'DDD coordinates');
 };
 
 __END__
