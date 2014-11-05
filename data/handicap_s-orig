@@ -62,7 +62,7 @@ Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraﬂe	q
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX nach den Bauarbeiten bleiben wohl "einige Fuﬂg‰nger" ¸brig, dann nur mit q1
-#: last_checked: 2014-10-17
+#: last_checked: 2014-11-04
 Linienstr.: einige Fuﬂg‰nger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2014-10-27
@@ -189,22 +189,17 @@ Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessisch
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2013-11-12 --- #: next_check: 2014-01-15 --- Siemensstr.: Bauarbeiten, Einbahnstraﬂe, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
-# 
-#: last_checked: 2014-10-01 vvv
-#: check_frequency: 60d vvv
+# REMOVED --- #: last_checked: 2014-10-01 --- #: check_frequency: 60d vvv
 # REMOVED (fertig?) --- Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7939,13026
 # REMOVED (fertig) --- Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7872,13022
 # REMOVED (nicht mehr) --- Ella-Trebe-Str./Bertha-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7872,13022 7867,13106
 # REMOVED (fertig?) --- Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7867,13106 7937,13109
-Ella-Trebe-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7948,12918
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (fertig?) --- Ella-Trebe-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7948,12918
 # 
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 #: osm_watch: way id="4592727" version="11"
-#: last_checked: 2014-10-14
-#: check_frequency: 21d
-Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127 8525,12958
+#: last_checked: 2014-11-04
+Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127 8525,12958
 # 
 # REMOVED (so gut wie fertig, man kommt als Radfahrer schon durch) --- #: last_checked: 2014-07-16 --- Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 # 

@@ -17113,7 +17113,9 @@ EOF
        data  => <<EOF,
 #: XXX Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), aber auch schon hier Einschränkungen? Weihnachtsmarkt erst ab dem 24.11.2014
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=962671
-#: next_check: 2014-11-01
+#: last_checked: 2014-11-04
+#: next_check: 2014-11-24
+#: priority: #A
 userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296 8278,11257
 #: XXX_prog "3::temp" geht nicht?
 userdel	3 8427,11365 8389,11378 8374,11479
@@ -23630,7 +23632,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_022801',
        data  => <<EOF,
-userdel	q4::inwork 7627,12380 7821,12367 7875,12363 8017,12359
+userdel	q3::inwork 7627,12380 7821,12367 7875,12363 8017,12359
 EOF
      },
      { from  => 1414624392, # 2014-10-30 00:13
@@ -23658,6 +23660,15 @@ EOF
        source_id => 'IM_023339',
        data  => <<EOF,
 userdel	1::inwork 15230,26560 15589,27116
+EOF
+     },
+     { from  => $isodate2epoch->("2014-11-05 00:00:00"),
+       until => 1417388400, # 2014-12-01 00:00
+       text  => 'Wandlitz: Vollsperrung der Straße nach Bogensee, 06.11.2014 bis 30.11.2014 ',
+       type  => 'gesperrt',
+       source_id => '146001411',
+       data  => <<EOF,
+userdel	2::inwork 17288,40557 17544,40499 17757,40658
 EOF
      },
     );

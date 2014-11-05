@@ -2360,7 +2360,9 @@ userdel	2::temp 9524,12010 9656,12021
          'source_id' => 'http://www.winterwelt-berlin.de/',
          'data' => '#: XXX Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), aber auch schon hier Einschränkungen? Weihnachtsmarkt erst ab dem 24.11.2014
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=962671
-#: next_check: 2014-11-01
+#: last_checked: 2014-11-04
+#: next_check: 2014-11-24
+#: priority: #A
 userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296 8278,11257
 #: XXX_prog "3::temp" geht nicht?
 userdel	3 8427,11365 8389,11378 8374,11479
@@ -3885,7 +3887,7 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
          'text' => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Große Querallee, Fahrbahn gesperrt, Ausweichen auf Gehweg, 08.09.2014 08:00 Uhr bis 19.12.2014 16:00 Uhr ',
          'from' => 1410069600,
          'id' => 2654,
-         'data' => 'userdel	q4::inwork 7627,12380 7821,12367 7875,12363 8017,12359
+         'data' => 'userdel	q3::inwork 7627,12380 7821,12367 7875,12363 8017,12359
 ',
          'type' => 'handicap'
        },
@@ -3916,6 +3918,16 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
          'from' => 1414920600,
          'id' => 2657,
          'data' => 'userdel	1::inwork 15230,26560 15589,27116
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '146001411',
+         'until' => 1417388400,
+         'text' => 'Wandlitz: Vollsperrung der Straße nach Bogensee, 06.11.2014 bis 30.11.2014 ',
+         'from' => 1415142000,
+         'id' => 2658,
+         'data' => 'userdel	2::inwork 17288,40557 17544,40499 17757,40658
 ',
          'type' => 'gesperrt'
        }

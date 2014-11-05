@@ -3220,7 +3220,8 @@ Mäckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,1
 Ritterstr.: Verbundsteinpflaster	Q0- 9935,11067 9920,11074 9861,11103
 Wörther Str.: aufgepflasterte Abschnitte	Q1 11255,14572 11317,14564
 Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
-Singerstr.: Asphalt mit Schäden	Q1+ 11920,12266 12084,12235
+#: note: neu gemacht (Herbst 2014)
+Singerstr.: Asphalt	Q0 11920,12266 12084,12235
 Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
 Upstallweg (Lichtenberg): Beton	Q0 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 Hönower Str.: Kopfsteinpflaster	Q3+ 18660,9410 18735,9421 18765,9426 18875,9570
@@ -9706,6 +9707,7 @@ Halemweg: Asphalt mit einigen Schäden	Q0- 2382,14800 2366,14582
 Biedermannweg: Asphalt	Q0 -742,12924 -744,12911 -717,12823 -686,12735
 Brombeerweg: Kleinsteinpflaster	Q1- -629,12862 -612,12809
 Gutsmuthsweg: Asphalt	Q0 -824,12557 -746,12432 -671,12311 -583,12151 -565,12030
+Putlitzstr. (Nebenstraße): Verbundsteinpflaster	Q1+ 6212,13944 6204,14220
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13323,6 +13325,7 @@ Ernst-Bloch-Str.: Beton	Q0 23038,12706 22985,12807 23009,12959 23068,12955 23078
 Breitensteinweg: Asphalt	Q0 521,360 726,379 808,388 882,396 924,405 967,446 1020,496
 # 
 #: by: tobias (poeste): vvv
+#: confirmed_by: srt
 Lübecker Str.: Asphalt	Q0 6365,13879 6366,13716 6377,13321
 #: corrected_by: srt (Kopfsteinpflaster Q2 -> ...)
 Walporzheimer Str.: Kleinsteinpflaster	Q1- 2904,24993 2910,24953 2938,24894 2980,24868 3030,24857 3099,24850 3186,24812 3234,24774
@@ -23886,6 +23889,7 @@ Ravenéstr.: Kopfsteinpflaster	Q2 8232,15220 8001,15205
 (Schulzendorfer - Schönwalder Str.): Verbundsteine	Q1 8264,14902 8245,15004 8266,15134
 #: note: früher schlechtes Kopfsteinpflaster, aber mittlerweile wegen Benutzung als Baustraße asphaltiert
 Döberitzer Str.: asphaltiert	Q0 7979,13733 7872,13685
+#: confirmed_by: srt
 Dreysestr: Kopfsteinpflaster mit Bodenschwellen	Q2 6976,13563 6897,13551 6783,13551 6687,13545
 Bandelstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 6692,13333 6687,13545 6686,13746
 Bugenhagenstr.: Asphalt mit Kopfsteinpflasterbodenschwellen	Q2 6229,13517 6104,13522 6008,13529

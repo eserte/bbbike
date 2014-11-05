@@ -110,7 +110,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2014-10-15
+#: last_checked: 2014-11-04
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -386,6 +386,10 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: XXX Zimmerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 01/15) Richtung Friedrichstr. zwischen Wilhelmstr. und Friedrichstr., 04.11.2014 14:58 Uhr bis 31.01.2015 16:00 Uhr
+#: source_id: IM_023356
+Zimmerstr.: Bauarbeiten für Radfahrer relevant?	?::inwork 9155,11283 9478,11317
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5602 (Baubeginn "in Kürze")
 #: next_check: 2014-12-01
@@ -1200,6 +1204,8 @@ Buschallee: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 14619,16551 148
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Bremer Weg: im östlichen Abschnitt beleuchtet?	? 8215,12156 8466,12197 8522,12239 8538,12245
+# 
 Esplanade/Grüntaler: unbeleuchtet?	? 10013,16972 9980,16973 9880,16994 9846,16981 9778,16915
 Bornholmer/Kolonnenweg: unbeleuchtet?	? 10134,16534 10118,16561 10108,16576 9954,16590
 # 
@@ -1236,7 +1242,7 @@ Ottomar-Geschke-Str.: Neubau einer Nebenfahrbahn	?::inwork 21289,4563 21206,4387
 # 
 # REMOVED (aufgenommen) --- #: by: Albin Kessel --- #: XXX vor Ort anschauen? --- verlängerte Grolmanstr.: Qualität ("Kopfsteinpflaster")? Fußgängerfrequenz ("einige Fußgänger")? Nachts beleuchtet?	? 4651,11368 4648,11445 4616,11507 4574,11587
 # 
-#: last_checked: 2014-09-03
+#: last_checked: 2014-11-04
 #: check_frequency: 60d
 Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5628,14063 5443,14028 5336,14044 5306,14061
 # 
@@ -1407,12 +1413,12 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 #: next_check: 2015-01-17
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337
 # 
-#: last_checked: 2014-10-01
+#: last_checked: 2014-11-04
 #: check_frequency: 60d
 Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7422,13012
 # 
 #: by: http://www.tagesspiegel.de/berlin/anbindung-an-hauptbahnhof-eroeffnung-von-strassenbahnstrecke-verzoegert-sich-erneut/7375642.html (Eröffnung Mitte oder Herbst 2014)
-#: last_checked: 2014-10-01
+#: last_checked: 2014-11-04
 #: check_frequency: 60d
 Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 # 
