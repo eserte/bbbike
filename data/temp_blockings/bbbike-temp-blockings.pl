@@ -23482,8 +23482,8 @@ userdel	q4::inwork 8661,6169 8830,6145 8944,6127
 EOF
      },
      { from  => 1407706402,
-       until => $isodate2epoch->("2014-11-14 12:00:00"),
-       text  => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 14. November 2014',
+       until => $isodate2epoch->("2014-12-01 17:00:00"),
+       text  => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 01.12.2014',
        type  => 'handicap',
        source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
        data  => <<EOF,
@@ -23669,6 +23669,24 @@ EOF
        source_id => '146001411',
        data  => <<EOF,
 userdel	2::inwork 17288,40557 17544,40499 17757,40658
+EOF
+     },
+     { from  => 1416351600, # 2014-11-19 00:00
+       until => 1417215599, # 2014-11-28 23:59
+       text  => 'Jungfernheideweg: Straßenbauarbeiten zwischen Popitzweg und Bahnbrücke, vom 20.11. bis zum 28.11.2014 (nur tagsüber)',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20141107.1350.400054.html',
+       data  => <<EOF,
+userdel	q4::inwork 1361,14431 1423,14679
+EOF
+     },
+     { from  => 1415055600, # 2014-11-04 00:00
+       until => 1416697199, # 2014-11-22 23:59
+       text  => 'Veltheimstraße: Bauarbeiten zwischen Berliner Straße und Solquellstraße, Fahrbahn gesperrt, vom 5. November 2014 bis voraussichtlich 22. November 2014',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.221430.php',
+       data  => <<EOF,
+userdel	q4::inwork 4111,24488 3963,24559 3842,24556
 EOF
      },
     );

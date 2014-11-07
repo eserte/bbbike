@@ -3666,16 +3666,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       {
-         'source_id' => '145600136',
-         'until' => 1415314799,
-         'text' => 'Brücke über den Oder-Havel-Kanal: Bauarbeiten, gesperrt, 01.09.2014 bis 06.11.2014 ',
-         'from' => 1409436000,
-         'id' => 2619,
-         'data' => 'userdel	2::inwork 38845,51258 38476,50514
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3777,8 +3768,8 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
        undef,
        {
          'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
-         'until' => 1415962800,
-         'text' => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 14. November 2014',
+         'until' => 1417449600,
+         'text' => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 01.12.2014',
          'from' => 1407706402,
          'id' => 2639,
          'data' => '#: source_id: IM_022377
@@ -3871,16 +3862,7 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_023200',
-         'until' => 1415376000,
-         'text' => 'Köpenicker Str.: Baustelle, Fahrbahn zwischen Grünauer Str. und Bohnsdorfer Weg in beiden Richtungen gesperrt, 20.10.2014 08:00 Uhr bis 07.11.2014 17:00 Uhr',
-         'from' => 1413698400,
-         'id' => 2653,
-         'data' => 'userdel	q4::inwork 19679,1571 19728,1660 19771,1793
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_022801',
          'until' => 1419001200,
@@ -3930,6 +3912,26 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
          'data' => 'userdel	2::inwork 17288,40557 17544,40499 17757,40658
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20141107.1350.400054.html',
+         'until' => 1417215599,
+         'text' => 'Jungfernheideweg: Straßenbauarbeiten zwischen Popitzweg und Bahnbrücke, vom 20.11. bis zum 28.11.2014 (nur tagsüber)',
+         'from' => 1416351600,
+         'id' => 2659,
+         'data' => 'userdel	q4::inwork 1361,14431 1423,14679
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.221430.php',
+         'until' => 1416697199,
+         'text' => 'Veltheimstraße: Bauarbeiten zwischen Berliner Straße und Solquellstraße, Fahrbahn gesperrt, vom 5. November 2014 bis voraussichtlich 22. November 2014',
+         'from' => 1415055600,
+         'id' => 2660,
+         'data' => 'userdel	q4::inwork 4111,24488 3963,24559 3842,24556
+',
+         'type' => 'handicap'
        }
      
 );

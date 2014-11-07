@@ -202,7 +202,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php
 #: source_id: IM_022377
 #: last_checked: 2014-08-08
-#: next_check: 2014-11-14
+#: next_check: 2014-12-01
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
@@ -388,7 +388,9 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
 #: XXX Zimmerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 01/15) Richtung Friedrichstr. zwischen Wilhelmstr. und Friedrichstr., 04.11.2014 14:58 Uhr bis 31.01.2015 16:00 Uhr
+#: XXX wahrscheinlich für Radfahrer offen
 #: source_id: IM_023356
+#: next_check: 2014-11-10
 Zimmerstr.: Bauarbeiten für Radfahrer relevant?	?::inwork 9155,11283 9478,11317
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5602 (Baubeginn "in Kürze")
@@ -523,6 +525,10 @@ Am Wuhlebogen: wann wird die Straße fertiggestellt? Qualität?	?::inwork 21678,79
 #: last_checked: 2014-09-13
 #: next_check: 2015-03-01
 Lindenufer (Spandau): Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
+# 
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20141105.1045.399992.html
+#: next_check: 2014-11-10
+Sternbergpromenade: Ist die Sternbergpromenade ausgeschildert?	? -3503,13773 -3385,13937 -3345,13994 -3306,14035 -3300,14039 -3146,14145
 # 
 #: next_check_id: WARSCHAUER-2014
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
@@ -984,7 +990,7 @@ Monumentenplatz	?::inwork 8344,9085 8332,9059
 # REMOVED (realisiert) --- #: by: http://gleisdreieck-blog.de/wordpress/wp-content/uploads/eingang-yorck-collignon.jpg --- Eingang zum Flaschenhalspark: betoniert, wahrscheinlich auch mit Drängelgittern?	?::projected 8358,9567 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
 # 
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Schoeneberger-Schleife-Noerdl-Teilstueck-a.5712.0.html
-#: osm_watch: way id="251945928" version="1"
+#: osm_watch: way id="251945928" version="2"
 #: XXX evtl. wird Richtung Norden bis zur Yorckstr. verlängert, siehe folgende Drucksache:
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4411
 #: XXX culdesac-Einträge entfernen, wenn die Verlängerung erfolgt ist
@@ -1081,7 +1087,7 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 # REMOVED (realisiert) --- #: osm_watch: way id="91218505" version="3"  --- #: XXX Radwege werden fortgeführt --- #: last_checked: 2013-08-19 --- #: next_check: 2013-11-15 --- Verlängerung der Wagner-Régeny-Str., Igo-Etrich-Str.: Qualität? Wo beginnt und verläuft die Igo-Etrich-Str.?	?::inwork 19363,3730 19162,3935
 # REMOVED (realisiert) --- #: osm_watch: way id="117951616" version="3" --- #: last_checked: 2013-10-31 --- #: check_frequency: 60d --- Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18930,3703 19162,3935
 # 
-#: osm_watch: way id="224731112" version="4"
+#: osm_watch: way id="224731112" version="5"
 #: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben, in den restlichen Abschnitten wird es wohl keine Radwege geben
 #: XXX wird es Anbindungen an den Park geben?
 #: last_checked: 2014-06-09 (Trassierungsarbeiten werden durchgeführt)
@@ -1109,11 +1115,12 @@ Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Fahrbahnmarkierungen -> vielleicht auch Radspuren?)
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf (Fahrbahnmarkierungen -> vielleicht auch Radspuren?)
-#: osm_watch: way id="4677913" version="14"
-#: osm_watch: way id="38198022" version="11"
+#: osm_watch: way id="4677913" version="15"
+#: osm_watch: way id="38198022" version="12"
 #: last_checked: 2014-04-27
-#: next_check: 2014-10-30 (Ende der Markierungsarbeiten)
-Ringstr.: Radverkehrsanlagen	?::projected 8394,4261 8161,4360 8105,4384 7994,4430 7928,4458 7697,4558
+#: XXX laut osm cycleway=lane
+#: priority: #A
+Ringstr.: Radverkehrsanlagen	? 8394,4261 8161,4360 8105,4384 7994,4430 7928,4458 7697,4558
 #: by: ^^^
 # 
 # REMOVED (eröffnet) --- #: last_checked: 2012-10-16 --- #: next_check: 2012-11-08 --- #: XXX_indoor Brückennamen evtl. in Berlin.coords.data erwähnen --- #: XXX_indoor sowohl in brunnels-orig --- Alfred-Lion-Steg: Fertigstellung?	?::inwork 7893,8327 8090,8291 8088,8254
@@ -1203,6 +1210,15 @@ Buschallee: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 14619,16551 148
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX gibt es während der Bauarbeiten Einschränkungen bzgl. der Radwege? vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
+#: next_check: 2014-11-15 vvv
+Rummelsburger Str.	? 17527,7812 17681,7589 17839,7365
+Köpenicker Landstr.	? 16843,6712 16720,6845 16677,6892
+#: next_check ^^^
+#: by ^^^
+#: XXX ^^^
 # 
 Bremer Weg: im östlichen Abschnitt beleuchtet?	? 8215,12156 8466,12197 8522,12239 8538,12245
 # 
@@ -3829,3 +3845,7 @@ Olafstr.: Ist die Fahrbahn nach den Bauarbeiten besser geworden? Liegt nun Aspha
 Am Klötzebecken, nördlicher Weg: für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 5851,22538 5920,22603 6023,22667 6207,22737 6226,22712
 # 
 Heinersdorf: Qualität? Liegt hier auch Verbundsteinpflaster?	? 63261,76791 63225,76949 63279,77202 63342,77286 63390,77441 63293,77739
+Umfahrung B5 bei Karstädt: ist das eine Kraftfahrzeugstraße?	? -102187,80033 -102492,80202 -102824,80211 -103579,80166 -104020,80374 -104246,80597 -104370,80854 -104406,81222 -104370,81603 -104546,81975
+# 
+#: XXX fehlt in Berlin.coords.data
+Schwarzer Weg (Siemensstadt): Qualität des Wegs? Ist der Weg ausgeschildert und beleuchtet?	? 1423,14679 1384,14598 1235,14609
