@@ -63,7 +63,7 @@ use vars qw(%file %net %crossings %obj @comments_types);
      },
     );
 
-@comments_types = qw(cyclepath ferry misc mount path route tram kfzverkehr scenic);
+@comments_types = qw(cyclepath ferry misc mount path route trafficjam tram kfzverkehr scenic);
 
 my %scope2inx = (city   => 0,
 		 region => 1,

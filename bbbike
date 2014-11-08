@@ -761,9 +761,11 @@ if ($devel_host && !$public && !grep { "danger" eq $_ } @Strassen::Dataset::comm
 my @used_comments_types;
 foreach my $type (@comments_types) {
     next if $type =~ /^(cyclepath|mount|route|ferry)$/; # handled elsewhere
+    next if $type eq 'trafficjam'; # currently handled only in SRTShortcuts plugin
     if (!$advanced) {
 	# kfzverkehr: poor presentation
 	# scenic: almost no data
+	# trafficjam: data collection yet in progress
 	next if $type =~ /^(kfzverkehr|scenic)$/;
     }
     push @used_comments_types, $type;
@@ -6452,6 +6454,7 @@ sub define_item_attribs {
 	 kfzverkehr => M"Kommentare zum Kfz-Verkehr",
 	 scenic => M"Schöne Strecken",
 	 danger => M"Gefährliche Stellen",
+	 trafficjam => M"Staugefahr",
 	);
 }
 

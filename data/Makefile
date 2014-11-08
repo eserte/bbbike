@@ -58,7 +58,7 @@ CREATE_COOKED_BBD=	${PERL} ${MISCSRCDIR}/create_cooked_bbd
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
-			comments_tram comments_kfzverkehr comments_scenic
+			comments_trafficjam comments_tram comments_kfzverkehr comments_scenic
 
 SOURCE_TARGETS=		strassen plaetze landstrassen landstrassen2 strassen_bab
 SOURCE_TARGETS+=	flaechen
@@ -1587,7 +1587,7 @@ check-disabled:
 	    -data comments_route
 	@touch $@
 
-.for i in cyclepath danger ferry mount tram kfzverkehr scenic
+.for i in cyclepath danger ferry mount trafficjam tram kfzverkehr scenic
 .check_comments_$(i)_2:	comments_$(i)
 	$(CHECK_DOUBLE) -linesegs comments_$(i)
 	@touch $@
