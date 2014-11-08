@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.49 2009/01/11 23:34:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2003,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2003,2006,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -923,23 +922,21 @@ sub BBBikePrint::print_text_windows {
     my $header = $args{-header};
     my $text   = $args{-text};
     my $base   = $args{-basename};
-    my $temp;
-    if (eval { require File::Temp; 1 }) {
+    my $temp = do {
+	require File::Temp;
+	require File::Spec;
 	my $tempdir = File::Temp::tempdir(CLEANUP => 1);
-	$temp = $tempdir . "\\" . $base;
-    } else {
-	require POSIX;
-	my $temp = POSIX::tmpnam(); # XXX it never gets deleted
-	$temp =~ tr{/}{\\};
-	$temp =~ s/\.$//;
-    }
+	File::Spec->catfile($tempdir, $base);
+    };
     $verbose and warn "Using $temp as the temp file for hardcopying\n";
-    open(TMP, ">$temp") or status_message("Can't write to $temp: $!", "die");
+    open my $TMP, ">", $temp
+	or status_message("Can't write to $temp: $!", "die");
     if (defined $header) {
-	print TMP $header, "\n";
+	print $TMP $header, "\n";
     }
-    print TMP $text;
-    close TMP;
+    print $TMP $text;
+    close $TMP
+	or status_message("Error while writing to $temp: $!", 'die');
     Win32Util::start_txt_print($temp);
     $tmpfiles{$temp}++;
 }
