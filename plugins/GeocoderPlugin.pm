@@ -251,6 +251,7 @@ sub geocoder_dialog {
 		'LocalOSM' =>
 		{
 		 'include_multi' => 1,
+		 'devel_only' => 1,
 
 		 'require' => sub {
 		     local @INC = (@INC, bbbike_root."/miscsrc");
