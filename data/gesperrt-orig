@@ -2617,21 +2617,19 @@ Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auc
 #: next_check: 2015-02-15
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
-#: XXX hier steht noch ein Bauzaun
-#: last_checked: 2014-09-21
-Viechtacher Str.: Bauarbeiten, Zufahrt zur Zwieseler Str. noch gesperrt	2::inwork 19657,9666 19727,9672
+# REMOVED --- #: XXX hier steht noch ein Bauzaun --- #: last_checked: 2014-09-21 --- Viechtacher Str.: Bauarbeiten, Zufahrt zur Zwieseler Str. noch gesperrt	2::inwork 19657,9666 19727,9672
 # 
 #: XXX Qualität nach den Bauarbeiten?
 #: osm_watch: way id="24845189" version="11"
-#: last_checked: 2014-09-21
-#: check_frequency: 60d
+#: last_checked: 2014-11-08
+#: check_frequency: 90d
 Viechtacher Str.: Bauarbeiten, Straße muss noch fertig gestellt werden	2::inwork 19801,9680 19857,9682 19893,9683
 # REMOVED (offen) --- Eisensteiner Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19727,9672 19722,9483
 # 
 #: XXX Qualität nach den Bauarbeiten?
 #: osm_watch: way id="287119368" version="7"
-#: last_checked: 2014-09-21
-#: check_frequency: 60d
+#: last_checked: 2014-11-08
+#: check_frequency: 90d
 Regener Str.: Bauarbeiten, noch nicht fertig gestellt	2::inwork 19790,9478 19849,9477 19890,9476
 # 
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- #: by: http://www.tagesspiegel.de/berlin/grossbaustelle-in-berlin-bauarbeiten-am-ostkreuz-verzoegern-sich-bis-2017/8210208.html (Termin Wiederaufbau) --- #: next_check: 2018-01-01 --- Fußgängerbrücke S-Ostkreuz: Abriss und Neubau	2::inwork 14794,10844 14764,10877 14787,10972 14798,10985

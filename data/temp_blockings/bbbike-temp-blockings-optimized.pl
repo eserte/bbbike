@@ -3723,7 +3723,7 @@ userdel	q3::inwork 4503,10497 4485,10307
          'text' => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugang bis 2016 möglich',
          'from' => 1411312807,
          'id' => 2631,
-         'data' => '#: last_checked: 2014-10-29 (gerade nicht gesperrt)
+         'data' => '#: last_checked: 2014-11-08 (gerade nicht gesperrt)
 userdel	2::inwork 15419,10706 15379,10651
 ',
          'dont_check_date' => 1,
@@ -3879,7 +3879,8 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
          'text' => 'Schlichtallee: Bauarbeiten zwischen Zobtener Str. und Max-Taut-Schule, Einbahnstraße offen Richtung Hauptstr., Ausweichen auf Gehweg, bis zum 16.12.2014',
          'from' => 1414624392,
          'id' => 2655,
-         'data' => 'userdel	q3::inwork; 15758,10578 15880,10680
+         'data' => '#: note: am Wochenende wahrscheinlich immer offen
+userdel	q3::inwork; 15758,10578 15880,10680
 ',
          'type' => 'handicap'
        },

@@ -320,7 +320,7 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
 #: source_id: IM_023242
 #: XXX Bauarbeiten für neue Radverkehrsanlagen
-#: last_checked: 2014-10-29
+#: last_checked: 2014-11-08
 #: next_check: 2014-12-16
 Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
@@ -822,8 +822,8 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5889 (Festsetzung)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2014
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20141007.1540.399597.html
-#: last_checked: 2014-09-21 vvv
-#: next_check: 2014-10-12 (Einweihung) vvv
+#: last_checked: 2014-11-08 vvv
+#: check_frequency: 90d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: osm_watch: way id="290255259" version="1"
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
@@ -857,7 +857,7 @@ Planstraße 11: Name wahrscheinlich Zachenberger Str.? Qualität?	?::projected 198
 #: by: ^^^
 #: by: ^^^
 #: by: ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -1242,9 +1242,7 @@ Nennhauser Damm/Finkenkruger Weg: neue Vorfahrtsregelung?	?::projected -7484,137
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4612
 Stubenrauchstr.: gibt es hier neue Fahrbahnmarkierungen z.B. Radspuren?	? 16182,2200 16135,2135
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014
-#: last_checked: 2014-09-21
-Sewanstr.: dieser Abschnitt wird zur Lückstr.	? 16647,10632 16699,10611
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 --- #: last_checked: 2014-09-21 --- Sewanstr.: dieser Abschnitt wird zur Lückstr.	? 16647,10632 16699,10611
 # 
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf
 #: last_checked: 2014-07-17

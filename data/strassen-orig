@@ -5275,13 +5275,8 @@ Sonntagstr.	N 14752,11041 14669,11152 14598,11245 14535,11327 14434,11465
 #: note: kein Straßenschild auf der östlichen Seite, in der Mitte steht "Nöldnerplatz", auf der westlichen Seite "Lückstraße"
 Lückstr.	N 15870,10938 15903,10906 16049,10844
 Lückstr.	H 16049,10844 16085,10844 16153,10818 16300,10753 16313,10747 16468,10695 16597,10651 16601,10650 16647,10632
-#: XXX wird dieser Abschnitt auch als "Rummelsburger Str." ausgeschildert?
-#: osm_watch: way id="198585468" version="6"
-# REMOVED (nein, Radweg wird hier definitiv nicht gebaut) ---- #: XXX außerdem: mit Bau des Aldi-Marktes auf der westlichen Seite wird vielleicht auch der Gehweg neu gebaut, dann mit Radweg?
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5490
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014
-#: last_checked: 2014-09-21
-(Zufahrt zum Kaufland)	N 16699,10611 16628,10442
+#: oldname: -201411: Sewanstr.
+Lückstr.	H 16647,10632 16699,10611
 #: note: offiziell nur Lieferverkehr
 (Zufahrt zum Kaufland)	N 16628,10442 16751,10403
 (Zufahrt zum Kaufland)	NN 16751,10403 16767,10398
@@ -5290,10 +5285,14 @@ Delbrückstr. (Friedrichsfelde, Rummelsburg)	N 16792,10945 16861,10923 16961,1089
 Giselastr.	N 16153,10818 16196,10911 16227,10991 16273,11113 16311,11226 16338,11308 16367,11341
 Rupprechtstr.	N 16537,10895 16452,10922 16374,10946 16334,10958 16227,10991 16034,11053
 Emanuelstr.	N 16313,10747 16349,10860 16374,10946
+# REMOVED --- #: XXX wird dieser Abschnitt auch als "Rummelsburger Str." ausgeschildert? --- #: osm_watch: way id="198585468" version="6" --- # REMOVED (nein, Radweg wird hier definitiv nicht gebaut) ---- #: XXX außerdem: mit Bau des Aldi-Marktes auf der westlichen Seite wird vielleicht auch der Gehweg neu gebaut, dann mit Radweg? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5490 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 --- #: last_checked: 2014-09-21
+#: oldname: -201411: <namenslos>
+#: ignore_oldname_file: yes
+Rummelsburger Str. (Friedrichsfelde, Rummelsburg)	N 16628,10442 16699,10611
 Rummelsburger Str. (Friedrichsfelde, Rummelsburg)	NH 16699,10611 16725,10662 16751,10674 16892,10731 17081,10806 17152,10835 17228,10860 17258,10870 17466,10941 17560,10973 17621,10994
 Rummelsburger Str. (Friedrichsfelde, Rummelsburg)	H 17621,10994 17645,11028 17676,11055 17719,11092 17834,11192 17848,11204 17876,11217
 Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]	N 17676,10976 17689,11025 17676,11055
-Sewanstr.	H 16647,10632 16699,10611 16808,10554 16941,10487 17081,10415 17160,10376 17202,10355 17210,10350 17427,10259 17605,10199 17905,10122 17958,10012 17997,9929 18045,9917 18210,9989 18296,10027 18339,10048 18387,10070 18552,10135 18631,10167
+Sewanstr.	H 16699,10611 16808,10554 16941,10487 17081,10415 17160,10376 17202,10355 17210,10350 17427,10259 17605,10199 17905,10122 17958,10012 17997,9929 18045,9917 18210,9989 18296,10027 18339,10048 18387,10070 18552,10135 18631,10167
 Sewanstr. [Wohngebiet]	N 18266,9853 18210,9989
 Sewanstr. [Wohngebiet]	N 18066,9770 17997,9929
 Otto-Schmirgal-Str.	N 18554,10354 18512,10337 18484,10326 18404,10294 18340,10269 18319,10249

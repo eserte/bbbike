@@ -2512,7 +2512,7 @@ Ludwig-Richter-Str.: Asphalt	Q0 15002,8651 14940,8583
 Am Oberhafen: Asphalt	Q0 13712,6656 13688,6739
 Salzmannstr.: Asphalt	Q0 16847,10092 16855,10127
 #: XXX wird hier auch neu asphaltiert?
-#: last_checked: 2014-09-21 (zurzeit Bauarbeiten)
+#: last_checked: 2014-11-08 (zurzeit Bauarbeiten)
 #: next_check: 2015-02-28 (Bauarbeiten der Wasserbetriebe bis Februar 2015)
 Salzmannstr.: mäßiger Beton	Q2+ 16855,10127 16887,10271 16941,10487
 #: corrected_by: Heike (helabe...) (Verbundsteinpflaster -> Asphalt) (confirmed by srt)
@@ -2789,9 +2789,9 @@ Am Carlsgarten: Asphalt	Q0 18709,8423 18799,8413 18875,8365 18914,8341 18956,832
 Am Carlsgarten: Beton	Q0- 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999
 #: XXX Bauarbeiten am angrenzenden Grundstück, evtl. danach bessere Qualität?
-#: last_checked: 2014-09-21
+#: last_checked: 2014-11-08
 #: check_frequency: 180d
-(Am Carlsgarten - Waldowallee): mäßiger Asphalt, teilweise unbefestigter Weg	Q2+ 19509,7999 19558,8064
+(Am Carlsgarten - Waldowallee): mäßiger Asphalt	Q2+ 19509,7999 19558,8064
 Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19133,8038
 Krähenwinkel: Verbundsteinpflaster	Q1+ 19195,8125 19105,8188 19044,8103
 Weideplan: Verbundsteinpflaster	Q1+ 19176,8098 19128,8131
@@ -9319,11 +9319,7 @@ Helsingforser Platz: Betonpflaster	Q0- 13473,11456 13427,11431
 (Bornholmer Str. - Kolonnenweg): Asphalt	Q0 10134,16534 10118,16561 10108,16576 9954,16590
 Ritterlandweg [Wohngebiet]: schlechtes Kopfsteinpflaster	Q3 8315,17079 8346,17148
 Ritterlandweg [Wohngebiet]: Verbundsteinpflaster	Q1 8346,17148 8363,17192
-Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780
-#: XXX Qualität nach den Bauarbeiten?
-#: last_checked: 2014-09-21
-#: check_frequency: 21d
-Alfred-Siggel-Weg: unbefestigte Straße, Bauarbeiten	Q3+ 19550,7780 19500,7719
+Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780 19500,7719
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1- 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7607,5944
 (Alboinstr. - Paul-Schmidt-Str.): Gehwegplatten	Q0- 8200,5510 8242,5427

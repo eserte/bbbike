@@ -21325,7 +21325,7 @@ EOF
      { from  => $isodate2epoch->("2013-12-13 06:00:00"), # 1385679600, # 2013-11-29 00:00 - 1 Tag Vorlauf
        until => $isodate2epoch->("2013-12-15 23:59:59"), # 1385938799, # 2013-12-01 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 8, months => 12]], # zwei Termine, 1. und 3. Advent
+       recurrences => [['yearly', days => 15, months => 12]], # zwei Termine, 1. und 3. Advent
        text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 14.12.2013 und 15.12.2013',
        type  => 'gesperrt',
        source_id => 'IM_020815',
@@ -23412,7 +23412,7 @@ EOF
        type  => 'gesperrt',
        dont_check_date => 1,
        data  => <<EOF,
-#: last_checked: 2014-10-29 (gerade nicht gesperrt)
+#: last_checked: 2014-11-08 (gerade nicht gesperrt)
 userdel	2::inwork 15419,10706 15379,10651
 EOF
      },
@@ -23641,6 +23641,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_023242',
        data  => <<EOF,
+#: note: am Wochenende wahrscheinlich immer offen
 userdel	q3::inwork; 15758,10578 15880,10680
 EOF
      },
