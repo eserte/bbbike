@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -2220,6 +2220,46 @@ sub penalty_menu {
 	}
     }
     $pen_m->separator;
+
+    ######################################################################
+
+    {
+	my $penalty_trafficjam = 0;
+	my $penalty_trafficjam_koeff = 2;
+	$pen_m->checkbutton
+	    (-label => M"Penalty für staugefährdete Straßen",
+	     -variable => \$penalty_trafficjam,
+	     -command => sub {
+		 if ($penalty_trafficjam) {
+
+		     my $s = new Strassen "comments_trafficjam";
+		     die "Can't get comments_trafficjam" if !$s;
+		     my $net = new StrassenNetz $s;
+		     $net->make_net_cat(-obeydir => 1);
+
+		     $penalty_subs{'trafficjampenalty'} = sub {
+			 my($p, $next_node, $last_node) = @_;
+			 if ($net->{Net}{$last_node}{$next_node}) {
+			     $p *= $penalty_trafficjam_koeff;
+			 }
+			 $p;
+		     };
+		 } else {
+		     delete $penalty_subs{'trafficjampenalty'};
+		 }
+	     });
+	$pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+	{
+	    my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
+	    $pen_m->entryconfigure("last", -menu => $c_bpcm);
+	    foreach my $koeff (@koeffs) {
+		$c_bpcm->radiobutton(-label => $koeff,
+				     -variable => \$penalty_trafficjam_koeff,
+				     -value => $koeff);
+	    }
+	}
+	$pen_m->separator;
+    }
 
     ######################################################################
 
