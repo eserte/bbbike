@@ -2145,81 +2145,85 @@ sub penalty_menu {
 
     ######################################################################
 
-    my $penalty_nolighting = 0;
-    my $penalty_nolighting_koeff = 2;
-    $pen_m->checkbutton
-      (-label => M"Penalty für unbeleuchtete Straßen",
-       -variable => \$penalty_nolighting,
-       -command => sub {
-	   if ($penalty_nolighting) {
-
-	       my $s = new Strassen "nolighting";
-	       die "Can't get nolighting" if !$s;
-	       my $net = new StrassenNetz $s;
-	       $net->make_net;
-
-	       $penalty_subs{'nolightingpenalty'} = sub {
-		   my($p, $next_node, $last_node) = @_;
-		   if ($net->{Net}{$next_node}{$last_node} ||
-		       $net->{Net}{$last_node}{$next_node}) {
-		       $p *= $penalty_nolighting_koeff;
-		   }
-		   $p;
-	       };
-	   } else {
-	       delete $penalty_subs{'nolightingpenalty'};
-	   }
-       });
-    $pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
     {
-	my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
-	$pen_m->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $koeff (@koeffs) {
-	    $c_bpcm->radiobutton(-label => $koeff,
-				 -variable => \$penalty_nolighting_koeff,
-				 -value => $koeff);
+	my $penalty_nolighting = 0;
+	my $penalty_nolighting_koeff = 2;
+	$pen_m->checkbutton
+	    (-label => M"Penalty für unbeleuchtete Straßen",
+	     -variable => \$penalty_nolighting,
+	     -command => sub {
+		 if ($penalty_nolighting) {
+
+		     my $s = new Strassen "nolighting";
+		     die "Can't get nolighting" if !$s;
+		     my $net = new StrassenNetz $s;
+		     $net->make_net;
+
+		     $penalty_subs{'nolightingpenalty'} = sub {
+			 my($p, $next_node, $last_node) = @_;
+			 if ($net->{Net}{$next_node}{$last_node} ||
+			     $net->{Net}{$last_node}{$next_node}) {
+			     $p *= $penalty_nolighting_koeff;
+			 }
+			 $p;
+		     };
+		 } else {
+		     delete $penalty_subs{'nolightingpenalty'};
+		 }
+	     });
+	$pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+	{
+	    my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
+	    $pen_m->entryconfigure("last", -menu => $c_bpcm);
+	    foreach my $koeff (@koeffs) {
+		$c_bpcm->radiobutton(-label => $koeff,
+				     -variable => \$penalty_nolighting_koeff,
+				     -value => $koeff);
+	    }
 	}
+	$pen_m->separator;
     }
-    $pen_m->separator;
 
     ######################################################################
 
-    my $penalty_tram = 0;
-    my $penalty_tram_koeff = 2;
-    $pen_m->checkbutton
-      (-label => M"Penalty für Straßenbahn auf Fahrbahn",
-       -variable => \$penalty_tram,
-       -command => sub {
-	   if ($penalty_tram) {
-
-	       my $s = new Strassen "comments_tram";
-	       die "Can't get comments_tram" if !$s;
-	       my $net = new StrassenNetz $s;
-	       $net->make_net;
-
-	       $penalty_subs{'trampenalty'} = sub {
-		   my($p, $next_node, $last_node) = @_;
-		   if ($net->{Net}{$next_node}{$last_node} ||
-		       $net->{Net}{$last_node}{$next_node}) {
-		       $p *= $penalty_tram_koeff;
-		   }
-		   $p;
-	       };
-	   } else {
-	       delete $penalty_subs{'trampenalty'};
-	   }
-       });
-    $pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
     {
-	my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
-	$pen_m->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $koeff (@koeffs) {
-	    $c_bpcm->radiobutton(-label => $koeff,
-				 -variable => \$penalty_tram_koeff,
-				 -value => $koeff);
+	my $penalty_tram = 0;
+	my $penalty_tram_koeff = 2;
+	$pen_m->checkbutton
+	    (-label => M"Penalty für Straßenbahn auf Fahrbahn",
+	     -variable => \$penalty_tram,
+	     -command => sub {
+		 if ($penalty_tram) {
+
+		     my $s = new Strassen "comments_tram";
+		     die "Can't get comments_tram" if !$s;
+		     my $net = new StrassenNetz $s;
+		     $net->make_net;
+
+		     $penalty_subs{'trampenalty'} = sub {
+			 my($p, $next_node, $last_node) = @_;
+			 if ($net->{Net}{$next_node}{$last_node} ||
+			     $net->{Net}{$last_node}{$next_node}) {
+			     $p *= $penalty_tram_koeff;
+			 }
+			 $p;
+		     };
+		 } else {
+		     delete $penalty_subs{'trampenalty'};
+		 }
+	     });
+	$pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+	{
+	    my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
+	    $pen_m->entryconfigure("last", -menu => $c_bpcm);
+	    foreach my $koeff (@koeffs) {
+		$c_bpcm->radiobutton(-label => $koeff,
+				     -variable => \$penalty_tram_koeff,
+				     -value => $koeff);
+	    }
 	}
+	$pen_m->separator;
     }
-    $pen_m->separator;
 
     ######################################################################
 
@@ -2263,198 +2267,206 @@ sub penalty_menu {
 
     ######################################################################
 
-    my $penalty_on_current_route = 0;
-    my $penalty_on_current_route_koeff = 2;
-    $pen_m->checkbutton
-      (-label => M"Penalty für aktuelle Route",
-       -variable => \$penalty_on_current_route,
-       -command => sub {
-	   if ($penalty_on_current_route) {
-	       my %realcoords_hash;
-	       foreach (@realcoords) {
-		   $realcoords_hash{join(",",@$_)}++;
-	       }
-
-	       $penalty_subs{'currentroutepenalty'} = sub {
-		   my($p, $next_node) = @_;
-		   if ($realcoords_hash{$next_node}) {
-		       $p *= $penalty_on_current_route_koeff;
-		   }
-		   $p;
-	       };
-	   } else {
-	       delete $penalty_subs{'currentroutepenalty'};
-	   }
-       });
-    $pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
     {
-	my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
-	$pen_m->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $koeff (@koeffs) {
-	    $c_bpcm->radiobutton(-label => $koeff,
-				 -variable => \$penalty_on_current_route_koeff,
-				 -value => $koeff);
+	my $penalty_on_current_route = 0;
+	my $penalty_on_current_route_koeff = 2;
+	$pen_m->checkbutton
+	    (-label => M"Penalty für aktuelle Route",
+	     -variable => \$penalty_on_current_route,
+	     -command => sub {
+		 if ($penalty_on_current_route) {
+		     my %realcoords_hash;
+		     foreach (@realcoords) {
+			 $realcoords_hash{join(",",@$_)}++;
+		     }
+
+		     $penalty_subs{'currentroutepenalty'} = sub {
+			 my($p, $next_node) = @_;
+			 if ($realcoords_hash{$next_node}) {
+			     $p *= $penalty_on_current_route_koeff;
+			 }
+			 $p;
+		     };
+		 } else {
+		     delete $penalty_subs{'currentroutepenalty'};
+		 }
+	     });
+	$pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+	{
+	    my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
+	    $pen_m->entryconfigure("last", -menu => $c_bpcm);
+	    foreach my $koeff (@koeffs) {
+		$c_bpcm->radiobutton(-label => $koeff,
+				     -variable => \$penalty_on_current_route_koeff,
+				     -value => $koeff);
+	    }
 	}
+	$pen_m->separator;
     }
-    $pen_m->separator;
 
     ######################################################################
 
-    use vars qw($bbd_penalty);
-    $bbd_penalty = 0;
-    $pen_m->checkbutton
-      (-label => M"Penalty für BBD-Datei",
-       -variable => \$bbd_penalty,
-       -command => sub {
-	   if ($bbd_penalty) {
-	       require BBBikeEdit;
-	       BBBikeEdit::build_bbd_penalty_for_search();
-	   } else {
-	       delete $penalty_subs{'bbdpenalty'};
-	   }
-       });
-    $pen_m->command
-      (-label => M"BBD-Datei auswählen",
-       -command => sub {
-	   require BBBikeEdit;
-	   BBBikeEdit::choose_bbd_file_for_penalty();
-       });
-#    $pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
-    $BBBikeEdit::bbd_penalty_koeff = 2
-	if !defined $BBBikeEdit::bbd_penalty_koeff;
-    $pen_m->command
-	(-label => M("Penalty-Koeffizient")." ...",
-	 -command => sub
-	 {
-	     my $t = redisplay_top($top, "bbd-koeff", -title => M"Penalty-Koeffizient für BBD-Datei");
-	     return if !defined $t;
-	     require Tk::LogScale;
-	     Tk::grid($t->Label(-text => M"Koeffizient"),
-		      $t->Entry(-textvariable => \$BBBikeEdit::bbd_penalty_koeff)
-		     );
-	     Tk::grid($t->LogScale(-from => 0.25, -to => 20,
-				   -resolution => 0.01,
-				   -showvalue => 0,
-				   -orient => 'horiz',
-				   -variable => \$BBBikeEdit::bbd_penalty_koeff,
-				   -command => sub {
-				       $BBBikeEdit::bbd_penalty_koeff =
-					   sprintf "%.2f", $BBBikeEdit::bbd_penalty_koeff,;
-				   }
-				  ),
-		      -columnspan => 2, -sticky => "we"
-		     );
-	     Tk::grid($t->Checkbutton(-text => M"Multiplizieren",
-				      -variable => \$BBBikeEdit::bbd_penalty_multiply,
-				     ),
-		      -columnspan => 2, -sticky => "w"
-		     );
-	     Tk::grid($t->Checkbutton(-text => M"Daten invertieren",
-				      -variable => \$BBBikeEdit::bbd_penalty_invert,
-				      -command => sub {
-					  BBBikeEdit::build_bbd_penalty_for_search();
-				      },
-				     ),
-		      -columnspan => 2, -sticky => "w"
-		     );
-	     Tk::grid($t->Button(Name => "close",
-				 -command => sub { $t->withdraw }),
-		      -columnspan => 2, -sticky => "we"
-		     );
-	     $t->protocol("WM_DELETE_WINDOW" => sub { $t->withdraw });
-	 }
-	);
-    $pen_m->separator;
-
-    ######################################################################
-
-    use vars qw($st_net_penalty);
-    $st_net_penalty = 0;
-    $pen_m->checkbutton
-      (-label => M"Penalty für Net/Storable-Datei",
-       -variable => \$st_net_penalty,
-       -command => sub {
-	   if ($st_net_penalty) {
-	       require BBBikeEdit;
-	       BBBikeEdit::build_st_net_penalty_for_search();
-	   } else {
-	       delete $penalty_subs{'stnetpenalty'};
-	   }
-       });
-    $pen_m->command
-      (-label => M"Net/Storable-Datei auswählen",
-       -command => sub {
-	   require BBBikeEdit;
-	   BBBikeEdit::choose_st_net_file_for_penalty();
-       });
-    $BBBikeEdit::st_net_koeff = 1
- 	if !defined $BBBikeEdit::st_net_koeff;
-     $pen_m->command
- 	(-label => M("Penalty-Koeffizient")." ...",
-	 -command => sub
-	 {
-	     my $t = redisplay_top($top, "bbd-koeff", -title => M"Penalty-Koeffizient für Net/Storable-Datei");
-	     return if !defined $t;
-	     Tk::grid($t->Label(-text => M"Koeffizient"),
-		      $t->Entry(-textvariable => \$BBBikeEdit::st_net_koeff)
-		     );
+    {
+	use vars qw($bbd_penalty);
+	$bbd_penalty = 0;
+	$pen_m->checkbutton
+	    (-label => M"Penalty für BBD-Datei",
+	     -variable => \$bbd_penalty,
+	     -command => sub {
+		 if ($bbd_penalty) {
+		     require BBBikeEdit;
+		     BBBikeEdit::build_bbd_penalty_for_search();
+		 } else {
+		     delete $penalty_subs{'bbdpenalty'};
+		 }
+	     });
+	$pen_m->command
+	    (-label => M"BBD-Datei auswählen",
+	     -command => sub {
+		 require BBBikeEdit;
+		 BBBikeEdit::choose_bbd_file_for_penalty();
+	     });
+	#    $pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+	$BBBikeEdit::bbd_penalty_koeff = 2
+	    if !defined $BBBikeEdit::bbd_penalty_koeff;
+	$pen_m->command
+	    (-label => M("Penalty-Koeffizient")." ...",
+	     -command => sub
 	     {
-		 my $f = $t->Frame;
-		 Tk::grid($f, -columnspan => 2, -sticky => "we");
-
-		 Tk::grid($f->Label(-text => M"Schwächen"),
-			  $f->LogScale(-from => 0.25, -to => 4,
-				       -resolution => 0.1,
+		 my $t = redisplay_top($top, "bbd-koeff", -title => M"Penalty-Koeffizient für BBD-Datei");
+		 return if !defined $t;
+		 require Tk::LogScale;
+		 Tk::grid($t->Label(-text => M"Koeffizient"),
+			  $t->Entry(-textvariable => \$BBBikeEdit::bbd_penalty_koeff)
+			 );
+		 Tk::grid($t->LogScale(-from => 0.25, -to => 20,
+				       -resolution => 0.01,
 				       -showvalue => 0,
 				       -orient => 'horiz',
-				       -variable => \$BBBikeEdit::st_net_koeff,
+				       -variable => \$BBBikeEdit::bbd_penalty_koeff,
 				       -command => sub {
-					   $BBBikeEdit::st_net_koeff =
-					       sprintf "%.2f", $BBBikeEdit::st_net_koeff,;
+					   $BBBikeEdit::bbd_penalty_koeff =
+					       sprintf "%.2f", $BBBikeEdit::bbd_penalty_koeff,;
 				       }
 				      ),
-			  $f->Label(-text => M"Verstärken"),
-			  -sticky => "we",
+			  -columnspan => 2, -sticky => "we"
 			 );
+		 Tk::grid($t->Checkbutton(-text => M"Multiplizieren",
+					  -variable => \$BBBikeEdit::bbd_penalty_multiply,
+					 ),
+			  -columnspan => 2, -sticky => "w"
+			 );
+		 Tk::grid($t->Checkbutton(-text => M"Daten invertieren",
+					  -variable => \$BBBikeEdit::bbd_penalty_invert,
+					  -command => sub {
+					      BBBikeEdit::build_bbd_penalty_for_search();
+					  },
+					 ),
+			  -columnspan => 2, -sticky => "w"
+			 );
+		 Tk::grid($t->Button(Name => "close",
+				     -command => sub { $t->withdraw }),
+			  -columnspan => 2, -sticky => "we"
+			 );
+		 $t->protocol("WM_DELETE_WINDOW" => sub { $t->withdraw });
 	     }
-	     Tk::grid($t->Button(Name => "close",
-				 -command => sub { $t->withdraw }),
-		      -columnspan => 2, -sticky => "we"
-		     );
-	     $t->protocol("WM_DELETE_WINDOW" => sub { $t->withdraw });
-	 }
-	);
-    $pen_m->separator;
+	    );
+	$pen_m->separator;
+    }
 
     ######################################################################
 
-    my $gps_search_penalty = 0;
-    $pen_m->checkbutton
-      (-label => M"Penalty für besuchte GPS-Punkte",
-       -variable => \$gps_search_penalty,
-       -command => sub {
-	   if ($gps_search_penalty) {
-	       require BBBikeEdit;
-	       BBBikeEdit::build_gps_penalty_for_search();
-	   } else {
-	       delete $penalty_subs{'gpspenalty'};
-	   }
-       });
-    $pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
     {
-	$BBBikeEdit::gps_penalty_koeff = 2
-	    if !defined $BBBikeEdit::gps_penalty_koeff;
-	my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
-	$pen_m->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $koeff (@koeffs) {
-	    $c_bpcm->radiobutton(-label => $koeff,
-				 -variable => \$BBBikeEdit::gps_penalty_koeff,
-				 -value => $koeff);
+	use vars qw($st_net_penalty);
+	$st_net_penalty = 0;
+	$pen_m->checkbutton
+	    (-label => M"Penalty für Net/Storable-Datei",
+	     -variable => \$st_net_penalty,
+	     -command => sub {
+		 if ($st_net_penalty) {
+		     require BBBikeEdit;
+		     BBBikeEdit::build_st_net_penalty_for_search();
+		 } else {
+		     delete $penalty_subs{'stnetpenalty'};
+		 }
+	     });
+	$pen_m->command
+	    (-label => M"Net/Storable-Datei auswählen",
+	     -command => sub {
+		 require BBBikeEdit;
+		 BBBikeEdit::choose_st_net_file_for_penalty();
+	     });
+	$BBBikeEdit::st_net_koeff = 1
+	    if !defined $BBBikeEdit::st_net_koeff;
+	$pen_m->command
+	    (-label => M("Penalty-Koeffizient")." ...",
+	     -command => sub
+	     {
+		 my $t = redisplay_top($top, "bbd-koeff", -title => M"Penalty-Koeffizient für Net/Storable-Datei");
+		 return if !defined $t;
+		 Tk::grid($t->Label(-text => M"Koeffizient"),
+			  $t->Entry(-textvariable => \$BBBikeEdit::st_net_koeff)
+			 );
+		 {
+		     my $f = $t->Frame;
+		     Tk::grid($f, -columnspan => 2, -sticky => "we");
+		     
+		     Tk::grid($f->Label(-text => M"Schwächen"),
+			      $f->LogScale(-from => 0.25, -to => 4,
+					   -resolution => 0.1,
+					   -showvalue => 0,
+					   -orient => 'horiz',
+					   -variable => \$BBBikeEdit::st_net_koeff,
+					   -command => sub {
+					       $BBBikeEdit::st_net_koeff =
+						   sprintf "%.2f", $BBBikeEdit::st_net_koeff,;
+					   }
+					  ),
+			      $f->Label(-text => M"Verstärken"),
+			      -sticky => "we",
+			     );
+		 }
+		 Tk::grid($t->Button(Name => "close",
+				     -command => sub { $t->withdraw }),
+			  -columnspan => 2, -sticky => "we"
+			 );
+		 $t->protocol("WM_DELETE_WINDOW" => sub { $t->withdraw });
+	     }
+	    );
+	$pen_m->separator;
+    }
+
+    ######################################################################
+
+    {
+	my $gps_search_penalty = 0;
+	$pen_m->checkbutton
+	    (-label => M"Penalty für besuchte GPS-Punkte",
+	     -variable => \$gps_search_penalty,
+	     -command => sub {
+		 if ($gps_search_penalty) {
+		     require BBBikeEdit;
+		     BBBikeEdit::build_gps_penalty_for_search();
+		 } else {
+		     delete $penalty_subs{'gpspenalty'};
+		 }
+	     });
+	$pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+	{
+	    $BBBikeEdit::gps_penalty_koeff = 2
+		if !defined $BBBikeEdit::gps_penalty_koeff;
+	    my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
+	    $pen_m->entryconfigure("last", -menu => $c_bpcm);
+	    foreach my $koeff (@koeffs) {
+		$c_bpcm->radiobutton(-label => $koeff,
+				     -variable => \$BBBikeEdit::gps_penalty_koeff,
+				     -value => $koeff);
+	    }
+	    $c_bpcm->separator;
+	    $c_bpcm->checkbutton(-label => M"Multiplizieren",
+				 -variable => \$BBBikeEdit::gps_penalty_multiply,
+				);
 	}
-	$c_bpcm->separator;
-	$c_bpcm->checkbutton(-label => M"Multiplizieren",
-			     -variable => \$BBBikeEdit::gps_penalty_multiply,
-			    );
     }
 
 }
