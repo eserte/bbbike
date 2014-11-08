@@ -2198,12 +2198,11 @@ sub penalty_menu {
 		     my $s = new Strassen "comments_tram";
 		     die "Can't get comments_tram" if !$s;
 		     my $net = new StrassenNetz $s;
-		     $net->make_net;
+		     $net->make_net_cat(-obeydir => 1);
 
 		     $penalty_subs{'trampenalty'} = sub {
 			 my($p, $next_node, $last_node) = @_;
-			 if ($net->{Net}{$next_node}{$last_node} ||
-			     $net->{Net}{$last_node}{$next_node}) {
+			 if ($net->{Net}{$last_node}{$next_node}) {
 			     $p *= $penalty_tram_koeff;
 			 }
 			 $p;
