@@ -1,15 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: FURadar.pm,v 1.8 2006/09/15 06:24:14 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999, 2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999, 2000, 2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
 #
 
 package FURadar;
@@ -63,58 +62,6 @@ sub fetch {
 	undef;
     } else {
 	$tmp;
-    }
-}
-
-# XXX nicht mehr relevant, da Änderung des Bildnamens
-# Return the hour string for the latest radar image
-#  sub latest {
-#      require POSIX;
-#      my $last_gmtime = int(POSIX::strftime("%H", gmtime) / 3) * 3;
-#      sprintf("%02d00", $last_gmtime);
-#  }
-
-#  sub latest_in_dir {
-#      my $dir = shift;
-#      my $maxtime = 0;
-#      my $maxfile;
-#      my $prefix = ($use_map eq 'FURadar2' ? 'r' : 'R');
-#      foreach my $f (glob("$dir/$prefix????.gif")) {
-#  	my(@s) = stat($f);
-#  	if ($s[9] > $maxtime) {
-#  	    $maxfile = $f;
-#  	    $maxtime = $s[9];
-#  	}
-#      }
-#      # XXX maxtime genauer ausrechnen
-#      ($maxfile, $maxtime);
-#  }
-
-sub latest_dwd {
-    require Date::Calc;
-    require LWP::UserAgent;
-    require File::Temp;
-    my $ua = LWP::UserAgent->new;
-    my $url = "http://www.wetteronline.de/daten/radar/dber";
-    my @l = gmtime;
-    $l[1] = int($l[1]/15)*15;
-    my @date = ($l[5]+1900, $l[4]+1, @l[3,2,1,0]);
-    my $try = 15;
-    while(1) {
-	my $date_url = sprintf "$url/%04d/%02d/%02d%02d%02d.gif",
-	    @date[0, 1, 2, 3, 4];
-	my $resp = $ua->get($date_url);
-	if ($resp->is_success && $resp->header('Content-Type') =~ m{^image/}) {
-	    $use_map = "custom:dwd";
-	    my($tmpfh,$tmpfile) = File::Temp::tempfile(#UNLINK => 1,
-						       SUFFIX => ".gif");
-	    print $tmpfh $resp->content;
-	    close $tmpfh;
-	    return $tmpfile;
-	} else {
-	    @date = Date::Calc::Add_Delta_DHMS(@date, 0, 0, -15, 0);
-	    last if (--$try < 0);
-	}
     }
 }
 
@@ -278,16 +225,11 @@ sub interesting_parts {
 
 sub make_temp {
     my $name = shift;
-    my $tmp;
-    eval 'use POSIX;
-          $tmp = POSIX::tmpnam();
-         ';
-    if (!defined $tmp and -w $main::tmpdir) {
-	$tmp = "$main::tmpdir/furadar-$name-$$.tmp";
-    }
-    if (defined $tmp) {
-	push @tmpfiles, $tmp;
-    }
+    require File::Temp;
+    my($fh,$tmp) = File::Temp::tempfile(UNLINK => 0, SUFFIX => "_furadar_$name.tmp");
+    close $fh;
+    utime 0, 0, $tmp; # so a subsequent mirror() works
+    push @tmpfiles, $tmp;
     $tmp;
 }
 
@@ -318,7 +260,7 @@ if ($from_www) {
     $file = FURadar::fetch();
 }
 
-system("xv " . FURadar::interesting_parts($file));
+system('xv', FURadar::interesting_parts($file));
 
 sub get_user_agent {
     return $ua if defined $ua;
