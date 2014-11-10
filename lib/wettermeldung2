@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: wettermeldung2,v 1.68 2008/03/14 22:59:08 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1997, 1998, 1999, 2000, 2002, 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1997, 1998, 1999, 2000, 2002, 2007, 2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -872,8 +871,10 @@ sub get_arg {
 }
 
 sub make_temp {
-    eval 'use POSIX;
-          $tmp = POSIX::tmpnam();
+    eval 'require File::Temp;
+	  my($fh,$tmp) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_wettermeldung2.tmp");
+          close $fh;
+          utime 0, 0, $tmp;
           push(@tmpfiles, $tmp);
           $tmp;
          ';
