@@ -20324,7 +20324,7 @@ EOF
        until => $isodate2epoch->("2014-11-12 20:30:00"),
        text  => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt, Veranstaltung "25 Jahre Mauerfall", vom 01.11.2014 bis 12.11.2014',
        type  => 'gesperrt',
-       source_id => 'IM_023303',
+       source_id => 'IM_023302',
        data  => <<EOF,
 userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
@@ -23580,13 +23580,11 @@ userdel	q2::inwork; 9224,14169 9383,13986
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1415648223, # undef, # XXX
        text  => 'Ehrenpreisweg: zwischen Kornblumenring und Stubenrauchstraße Sperrung wegen Bauarbeiten, Einschränkungen für Radfahrer unbekannt ',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
-#: XXX bis wann gehen die Bauarbeiten?
-#: add_fragezeichen: existieren Einschränkungen für Radfahrer?
 userdel	q4::inwork 16502,2314 16473,2560 16461,2569
 EOF
      },
@@ -23636,12 +23634,11 @@ userdel	q3::inwork 7627,12380 7821,12367 7875,12363 8017,12359
 EOF
      },
      { from  => 1414624392, # 2014-10-30 00:13
-       until => 1418770799, # 2014-12-16 23:59
+       until => 1415648027, # 1418770799, # 2014-12-16 23:59
        text  => 'Schlichtallee: Bauarbeiten zwischen Zobtener Str. und Max-Taut-Schule, Einbahnstraße offen Richtung Hauptstr., Ausweichen auf Gehweg, bis zum 16.12.2014',
        type  => 'handicap',
        source_id => 'IM_023242',
        data  => <<EOF,
-#: note: am Wochenende wahrscheinlich immer offen
 userdel	q3::inwork; 15758,10578 15880,10680
 EOF
      },
@@ -23688,6 +23685,24 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.221430.php',
        data  => <<EOF,
 userdel	q4::inwork 4111,24488 3963,24559 3842,24556
+EOF
+     },
+     { from  => $isodate2epoch->("2014-11-09 00:00:00"), # 1415401200, # 2014-11-08 00:00
+       until => $isodate2epoch->("2015-09-12 16:00:00"), # 1442354399, # 2015-09-15 23:59
+       text  => 'Pichelswerderstr.: Baustelle, Fahrbahn Richtung Ruhlebener Str. zwischen Freiheit und Gewerbehof gesperrt, vom 10.11.2014 bis 12.09.2015',
+       type  => 'handicap',
+       source_id => 'IM_023373',
+       data  => <<EOF,
+userdel	q4::inwork; -2576,13777 -2669,13488
+EOF
+     },
+     { from  => $isodate2epoch->("2014-11-16 00:00:00"),
+       until => 1417215600, # 2014-11-29 00:00
+       text  => 'Neuenhagen: Bauarbeiten, 17.11.2014 bis 28.11.2014',
+       type  => 'gesperrt',
+       source_id => 'LS/721-F/14/161',
+       data  => <<EOF,
+userdel	2::inwork 30910,13101 30982,12947
 EOF
      },
     );

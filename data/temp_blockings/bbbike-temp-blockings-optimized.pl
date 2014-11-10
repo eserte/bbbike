@@ -2849,7 +2849,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        {
-         'source_id' => 'IM_023303',
+         'source_id' => 'IM_023302',
          'until' => 1415820600,
          'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt, Veranstaltung "25 Jahre Mauerfall", vom 01.11.2014 bis 12.11.2014',
          'from' => 1414731600,
@@ -3838,18 +3838,7 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => undef,
-         'text' => 'Ehrenpreisweg: zwischen Kornblumenring und Stubenrauchstraße Sperrung wegen Bauarbeiten, Einschränkungen für Radfahrer unbekannt ',
-         'from' => undef,
-         'id' => 2649,
-         'data' => '#: by: fritz
-#: XXX bis wann gehen die Bauarbeiten?
-#: add_fragezeichen: existieren Einschränkungen für Radfahrer?
-userdel	q4::inwork 16502,2314 16473,2560 16461,2569
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => '146901438',
@@ -3873,17 +3862,7 @@ userdel	q4::inwork 16502,2314 16473,2560 16461,2569
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_023242',
-         'until' => 1418770799,
-         'text' => 'Schlichtallee: Bauarbeiten zwischen Zobtener Str. und Max-Taut-Schule, Einbahnstraße offen Richtung Hauptstr., Ausweichen auf Gehweg, bis zum 16.12.2014',
-         'from' => 1414624392,
-         'id' => 2655,
-         'data' => '#: note: am Wochenende wahrscheinlich immer offen
-userdel	q3::inwork; 15758,10578 15880,10680
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php',
          'until' => 1419029999,
@@ -3933,6 +3912,26 @@ userdel	q3::inwork; 15758,10578 15880,10680
          'data' => 'userdel	q4::inwork 4111,24488 3963,24559 3842,24556
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_023373',
+         'until' => 1442066400,
+         'text' => 'Pichelswerderstr.: Baustelle, Fahrbahn Richtung Ruhlebener Str. zwischen Freiheit und Gewerbehof gesperrt, vom 10.11.2014 bis 12.09.2015',
+         'from' => 1415487600,
+         'id' => 2661,
+         'data' => 'userdel	q4::inwork; -2576,13777 -2669,13488
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/721-F/14/161',
+         'until' => 1417215600,
+         'text' => 'Neuenhagen: Bauarbeiten, 17.11.2014 bis 28.11.2014',
+         'from' => 1416092400,
+         'id' => 2662,
+         'data' => 'userdel	2::inwork 30910,13101 30982,12947
+',
+         'type' => 'gesperrt'
        }
      
 );
