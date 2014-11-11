@@ -3932,6 +3932,16 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
          'data' => 'userdel	2::inwork 30910,13101 30982,12947
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Handjerystraße: zwischen Schnackenburgstraße und Sarrazinstraße Sperrung der Fahrbahn, Ende der Sperrung unbekannt ',
+         'from' => undef,
+         'id' => 2663,
+         'data' => '#: by: fritz
+userdel	q4::inwork 5635,7660 5636,7540
+',
+         'type' => 'handicap'
        }
      
 );

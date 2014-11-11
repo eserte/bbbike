@@ -23705,4 +23705,13 @@ EOF
 userdel	2::inwork 30910,13101 30982,12947
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Handjerystraße: zwischen Schnackenburgstraße und Sarrazinstraße Sperrung der Fahrbahn, Ende der Sperrung unbekannt ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: fritz
+userdel	q4::inwork 5635,7660 5636,7540
+EOF
+     },
     );
