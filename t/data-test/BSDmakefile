@@ -2,7 +2,7 @@ EMPTY_FILES=	Potsdam.coords.data gesperrt \
 		handicap_s handicap_l qualitaet_s qualitaet_l \
 		landstrassen2 \
 		comments_cyclepath comments_danger comments_ferry comments_misc comments_mount \
-		comments_route comments_tram comments_scenic plaetze \
+		comments_route comments_trafficjam comments_tram comments_scenic plaetze \
 		upgrade_scope_hint faehren green wasserstrassen wasserumland wasserumland2 \
 		orte orte2 orte_city
 NON_EMPTY_FILES=	strassen gesperrt
