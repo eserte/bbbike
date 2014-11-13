@@ -2314,12 +2314,12 @@ userdel	2::temp 11273,12301 11355,12331
 ',
          'periodic' => 1,
          'until' => 1420066799,
-         'from' => 1416438000,
+         'from' => 1415660400,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              11,
+                              10,
                               'months',
                               11
                             ]
@@ -2848,17 +2848,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_023302',
-         'until' => 1415820600,
-         'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt, Veranstaltung "25 Jahre Mauerfall", vom 01.11.2014 bis 12.11.2014',
-         'from' => 1414731600,
-         'id' => 2327,
-         'data' => 'userdel	2::temp 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
