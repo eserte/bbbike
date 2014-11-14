@@ -451,10 +451,11 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        {
-         'data' => 'userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+         'data' => '#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20141113.1440.400168.html
+userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 ',
          'periodic' => 1,
-         'until' => 1417388399,
+         'until' => 1417374000,
          'from' => 1417215600,
          'recurrences' => [
                             [
@@ -465,7 +466,7 @@ userdel	2::temp 5656,10876 5652,11004
                               11
                             ]
                           ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 30. November 2013)',
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 30. November 2013 von 13 bis 19 Uhr)',
          'type' => 'gesperrt',
          'id' => 417
        },
@@ -3852,7 +3853,16 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'IM_023242',
+         'until' => 1418770799,
+         'text' => 'Schlichtallee: Bauarbeiten zwischen Zobtener Str. und Max-Taut-Schule, Einbahnstraße offen Richtung Hauptstr., Ausweichen auf Gehweg, bis zum 16.12.2014',
+         'from' => 1414624392,
+         'id' => 2655,
+         'data' => 'userdel	q3::inwork; 15758,10578 15880,10680
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php',
          'until' => 1419029999,

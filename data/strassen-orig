@@ -703,7 +703,7 @@ Karl-Heinrich-Ulrichs-Str.	H 7033,10396 7003,10513 6985,10597 6972,10665
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2013 (Verschiebung, kein neuer Termin)
 #: osm_watch: way id="150519560" version="4"
 #: last_checked: 2014-01-25
-#: next_check: 2014-11-14
+#: next_check: 2015-01-14
 #: priority: #A
 Einemstr.	H 6972,10665 6918,10854
 Nollendorfplatz	H 7033,10328 7033,10396
@@ -1391,7 +1391,8 @@ Torstr.	H 11160,13492 11117,13521 10898,13632
 Torstr.	H 10898,13632 10746,13673 10640,13700 10569,13719 10463,13747 10287,13783 10177,13766 9917,13741 9796,13694 9670,13637 9580,13600 9508,13578 9394,13528 9340,13510 9212,13471
 Oranienburger Str. (Mitte)	H 10264,13097 10220,13098 10077,13100 9932,13109 9786,13178 9771,13182 9611,13245 9415,13315 9293,13366 9225,13389
 Große Präsidentenstr.	N 10220,13098 10105,13004
-Tucholskystr.	N 9534,12953 9538,12993 9559,13087 9588,13174 9611,13245 9651,13406 9611,13517 9580,13600
+Ebertsbrücke	N 9533,12925 9538,12993
+Tucholskystr.	N 9538,12993 9559,13087 9588,13174 9611,13245 9651,13406 9611,13517 9580,13600
 Gormannstr.	NN 10350,13376 10353,13384
 Gormannstr.	N 10353,13384 10390,13493 10406,13543 10445,13675 10463,13747 10480,13871
 Weinbergsweg	NN 10177,13766 10193,13816
@@ -1831,11 +1832,11 @@ Geusenstr.	N 15541,10892 15560,10946 15586,11030
 #: note: ein abgeschlossenes Tor am Ende der Straße
 (an den Gebäuden der Deutschen Rentenversicherung)	NN 15322,11335 15273,11350 15168,11327 15058,11250 15010,11170
 Kaskelstr.	N 15805,10949 15756,10966 15586,11030 15509,11058 15434,11086 15359,11115 15239,11165
-#: XXX dieser Straßenabschnitt bekommt einen neuen Namen: Am Bremsenwerk
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5900
-#: last_checked: 2014-11-07
-#: check_frequency: 30d
-Kaskelstr.	N 15245,11178 15090,11237 15058,11250
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2014
+#: oldname: -20141106: Kaskelstr.
+#: ignore_oldname_file: yes
+Am Bremsenwerk	N 15245,11178 15090,11237 15058,11250
 Spittastr.	N 15447,10883 15509,11058 15578,11241
 Stadthausstr.	N 15649,10922 15674,10851 15681,10801
 Archibaldweg	N 15674,10851 15870,10938 15886,10947 15950,10987 16034,11053 16160,11154
@@ -5926,6 +5927,7 @@ Spindlergasse	NN 22496,4689 22522,4695
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4753 (Vorschlag)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2014
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.228677.php
 #: last_checked: 2014-05-25
 #: next_check: 2014-11-27 (Wirksamkeit)
 #: priority: #A
@@ -9446,7 +9448,7 @@ Rückertstr. (Charlottenburg)	N 3571,11451 3555,11612
 Schillerstr. (Charlottenburg)	N 4900,11626 4574,11587 4452,11570 4331,11554 4156,11522 3990,11490 3866,11473 3717,11462 3571,11451 3460,11441 3339,11433 3207,11428
 Düsseldorfer Str.	N 3902,10043 4152,10033 4228,10020 4297,10008 4439,9983 4609,9949 4732,9925 4880,9879 4993,9843 5155,9786
 Duisburger Str.	N 3874,10153 4183,10144
-Geschwister-Scholl-Str.	N 9534,12953 9533,12925 9553,12768 9568,12688
+Geschwister-Scholl-Str.	N 9533,12925 9553,12768 9568,12688
 Universitätsstr.	N 9568,12688 9580,12581 9601,12380
 Oberwallstr.	N 9858,12410 9876,12298 9882,12259 9898,12161 9913,12068 9925,11947
 Niederwallstr.	N 9925,11947 9991,11903 10079,11845 10128,11813 10189,11773 10205,11758 10238,11741

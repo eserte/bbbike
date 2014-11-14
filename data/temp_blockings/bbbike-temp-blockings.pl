@@ -3555,12 +3555,13 @@ userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
      { from  => $isodate2epoch->("2014-11-29 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-11-30 23:59:59"), #
+       until => $isodate2epoch->("2014-11-30 20:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 11]],
-       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 30. November 2013)',
+       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 30. November 2013 von 13 bis 19 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20141113.1440.400168.html
 userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -19550,7 +19551,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_096636',
        data  => <<EOF,
-userdel	2::inwork 9534,12953 9533,12925
+userdel	2::inwork 9533,12925
 EOF
      },
      { from  => 1310335200, # 2011-07-11 00:00
@@ -23634,7 +23635,7 @@ userdel	q3::inwork 7627,12380 7821,12367 7875,12363 8017,12359
 EOF
      },
      { from  => 1414624392, # 2014-10-30 00:13
-       until => 1415648027, # 1418770799, # 2014-12-16 23:59
+       until => 1418770799, # 2014-12-16 23:59
        text  => 'Schlichtallee: Bauarbeiten zwischen Zobtener Str. und Max-Taut-Schule, Einbahnstraße offen Richtung Hauptstr., Ausweichen auf Gehweg, bis zum 16.12.2014',
        type  => 'handicap',
        source_id => 'IM_023242',
