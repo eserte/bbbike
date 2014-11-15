@@ -2357,7 +2357,7 @@ Drängelgitter	BNP:2::trailer=5 17621,4063
 Drängelgitter	BNP:2::trailer=5 18833,3781
 Drängelgitter	BNP:2::trailer=5 18018,3276
 #: note: lichte Breite beträgt 90cm
-Schranke	BNP:2::trailer=6 16368,7425
+Schranke, ggfs. auf Gehweg ausweichen	BNP:2::trailer=6 16368,7425
 Drängelgitter	BNP:3::trailer=10 23012,3598
 Tor	BNP:3::trailer=5 14419,8112
 Schranke	BNP:0::trailer=3 9920,11074
@@ -2638,8 +2638,8 @@ Regener Str.: Bauarbeiten, noch nicht fertig gestellt	2::inwork 19790,9478 19849
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
+#: XXX noch immer?
 #: last_checked: 2014-10-11
-#: check_frequency: 120d
 am Osthafen: Bauzaun	2::inwork 14259,10309 14463,10212
 # 
 # REMOVED --- #: last_checked: 2014-04-17 --- #: check_frequency: 14d --- Edith-Stein-Str.: Bauarbeiten könnten noch möglich sein	2::inwork 14089,13247 14035,13104
@@ -2744,10 +2744,10 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
 #: last_checked: 2014-09-20 vvv
-#: check_frequency: 90d vvv
+#: next_check: 2015-06-30 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: XXX ^^^

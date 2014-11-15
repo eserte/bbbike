@@ -1579,7 +1579,7 @@ Paul-und-Paula-Ufer: Asphalt	Q0 14884,10508 14911,10587 14937,10598 14990,10581 
 Uferweg: Parkweg	Q1 15314,10121 15260,10048 15295,10022 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15545,9818 15583,9779 15626,9710
 # REMOVED --- Kynaststr. [Ersatzstraﬂe]: asphaltiert	Q0 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
-Untere Kynaststr.: asphaltiert	Q0 14805,10518 14832,10512 14843,10621 14882,10732 14906,10820
+Untere Kynaststr.: asphaltiert	Q0 14805,10518 14832,10512 14828,10561 14843,10621 14882,10732 14906,10820
 (Rummelsburger Ufer - Hauptstr.): glattes Pflaster	Q0 15249,10564 15307,10701
 (Alt-Stralau - Spreeufer): asphaltiert, einige Wurzelsch‰den	Q1+ 14652,10201 14569,10055
 (Spreeufer): Parkweg	Q1 14569,10055 14599,10039 14776,9949 15000,9820
@@ -2368,7 +2368,7 @@ Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11921,11185 11950,11157
 #: XXX Baumaﬂnahme GR9.24 (Realisierung nach 2011) vvv
 #: XXX wird hier asphaltiert werden? Was ist mit dem Schlenker am Spreepark? vvv
 #: osm_watch: way id="207761374" version="2"
-#: last_checked: 2014-05-17 vvv
+#: last_checked: 2014-11-15 vvv
 #: check_frequency: 180d vvv
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
 Wasserweg: fester Sandweg	Q2 15873,8884 16023,8860 16161,8852 16201,8860
@@ -2814,7 +2814,8 @@ Am Weihenhorst: Asphalt	Q0 17627,8167 17658,8216
 Spatzensteig: Asphalt	Q0 17691,8135 17733,8202
 Kalkscheunenstr.: Beton	Q0- 9385,13174 9413,13071
 Unter der Kranbahn: Beton	Q0 18423,6285 18381,6134 18367,6086
-Platz am Kaisersteg: Gehwegpflasterung	Q0- 18381,6134 18428,6123 18417,6068
+Platz am Kaisersteg: Gehwegpflasterung	Q0- 18381,6134 18428,6123
+Platz am Kaisersteg: Kleinsteinpflaster	Q1 18428,6123 18417,6068
 Platz am Kaisersteg: Gehwegpflasterung	Q0- 18417,6068 18420,6009
 Kaisersteg: Asphalt, leicht uneben	Q0- 18420,6009 18393,5964 18353,5897 18326,5850
 Britzer Str.: Asphalt	Q0 18470,5600 18370,5511 18307,5440 18214,5354 18080,5376

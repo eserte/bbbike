@@ -2417,7 +2417,26 @@ userdel	2::temp 13288,7653 13278,7673 13245,7742
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
+         'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
+',
+         'periodic' => 1,
+         'until' => 1418597999,
+         'from' => 1418252400,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              11,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 12.12.2014 bis zum 14.12.2014',
+         'id' => 2003,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3188,16 +3207,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Sterndamm: Brückenarbeiten, Straße ist eventuell gesperrt',
-         'from' => undef,
-         'id' => 2469,
-         'data' => '#: XXX check!
-userdel	2::inwork 17736,5441 17886,5587
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3714,7 +3724,7 @@ userdel	q3::inwork 4503,10497 4485,10307
          'text' => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugang bis 2016 möglich',
          'from' => 1411312807,
          'id' => 2631,
-         'data' => '#: last_checked: 2014-11-08 (gerade nicht gesperrt)
+         'data' => '#: last_checked: 2014-11-15 (gerade nicht gesperrt)
 userdel	2::inwork 15419,10706 15379,10651
 ',
          'dont_check_date' => 1,
@@ -3942,6 +3952,15 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 userdel	q4::inwork 5635,7660 5636,7540
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1416574800,
+         'text' => 'Swinemünder Brücke: bis zum 21.11.2014 gesperrt, evtl. auch für Radfahrer und Fußgänger',
+         'from' => 1416086295,
+         'id' => 2664,
+         'data' => 'userdel	2::temp 9494,15998 9623,15777
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -712,10 +712,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 16058,6629
 	X 18245,5551
-	X 18023,5623
+	X 18017,5625
 	X 17960,5511
 	X 17728,5756
-# REMOVED (wahrscheinlich wieder eingeschaltet) --- #: next_check_id: STERNDAMM-2014 vvv --- #: XXX wegen der Sperrung des Sterndamms zurzeit außer Betrieb vvv --- #: valid: 20140614- vvv --- #: next_check: 2014-06-14 vvv
 	X 17886,5587
 	X 17736,5441
 	X 21332,4655
@@ -814,7 +813,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX eventuell wird diese Einschränkung aufgehoben:
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190429651/190429651/00081409/09-Anlagen/04/B0138SB.pdf (nach Komplettumbau)
-#: last_checked: 2014-06-10
+#: last_checked: 2014-11-15
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -2402,7 +2401,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 3995,12173
 	F 22031,9142
 	F 15356,3759
-# REMOVED --- #: next_check_id: KARLSHORSTER-2014 vvv --- #: last_checked: 2014-10-10 vvv --- #: next_check: 2014-10-20 vvv --- #: note: provisorische Ampel --- #: valid: 20140630-20141022 vvv ---	X::inwork 14906,10820 ---	X::inwork 14805,10518
+# REMOVED --- #: next_check_id: KARLSHORSTER-2014 vvv --- #: last_checked: 2014-10-10 vvv --- #: next_check: 2014-10-20 vvv --- #: note: provisorische Ampel --- #: valid: 20140630-20141022 vvv --- ---	X::inwork 14805,10518
+#: XXX bleibt die Ampel permanent?
+#: last_checked: 2014-11-15
+#: check_frequency: 30d
+	X::inwork 14906,10820
 	F 8667,5372
 	F 5807,12070
 	F 6833,15215
@@ -2519,7 +2522,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: last_checked: 2014-09-20
-#: check_frequency: 90d
+#: next_check: 2015-06-30
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv

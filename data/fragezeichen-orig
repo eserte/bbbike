@@ -311,9 +311,10 @@ Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,437
 #: check_frequency: 90d
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8496,6919 8447,6964 8414,6995 8319,7084
 # 
-#: last_checked: 2014-07-17
-#: check_frequency: 120d
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
+#: osm_watch: way id="28961260" version="11"
+#: last_checked: 2014-11-15
+#: check_frequency: 120d
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
 # 
@@ -736,13 +737,13 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00079726/26-Anlagen/01/DRS0047VK.pdf (Bebauungsplan 9 - 47)
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegungxvi-65und9-47.html
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2014-09-06
+#: last_checked: 2014-11-15
 #: check_frequency: 180d
 Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4693
 #: priority: #C
-#: last_checked: 2014-10-05
+#: last_checked: 2014-11-15
 #: check_frequency: 120d
 Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen angelegt?	?::projected 16395,7401 16406,7430 16412,7463
 # 
@@ -892,7 +893,7 @@ Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur e
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140214.0600.394386.html vvv
 #: osm_watch: way id="185792044" version="1"
-#: last_checked: 2014-09-06 (Trasse schon sichtbar) vvv
+#: last_checked: 2014-11-15 (Trasse schon sichtbar) vvv
 #: check_frequency: 120d vvv
 Wasserstr.: geplante Straße in Niederschöneweide	?::projected 17477,6031 17639,6227
 Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,6083 17900,6072
@@ -1137,7 +1138,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
 #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straßenbenennung, Vorschlag)
-#: last_checked: 2014-09-06
+#: last_checked: 2014-11-15
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
@@ -1212,10 +1213,12 @@ Buschallee: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 14619,16551 148
 # 
 #: XXX gibt es während der Bauarbeiten Einschränkungen bzgl. der Radwege? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
-#: next_check: 2014-11-15 vvv
+#: last_checked: 2014-11-15 vvv
+#: check_frequency: 7d vvv
 Rummelsburger Str.	? 17527,7812 17681,7589 17839,7365
 Köpenicker Landstr.	? 16843,6712 16720,6845 16677,6892
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: by ^^^
 #: XXX ^^^
 # 
@@ -1507,13 +1510,13 @@ Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 #: source_id: INKO_114471
 #: XXX INKO_114471 gilt bis 2015-02-27
 #: last_checked: 2014-10-31
-#: check_frequency: 90d
+#: next_check: 2015-02-15
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
 #: XXX wird eine andere Ampel dafür ausgeschaltet?
 #: by: http://www.berliner-zeitung.de/verkehr/bvg-sanierung--die-u-8-faehrt-wieder-bis-zur-hermannstrasse,10809298,28209860.html (Fertigstellung im Dezember)
 #: last_checked: 2014-10-31
-#: next_check: 2014-12-01
+#: next_check: 2015-02-15
 Hermannstr.: Fußgängerampel in Bau	?::inwork 12122,7553 12137,7506
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
@@ -1629,8 +1632,7 @@ Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualitä
 #: XXX fehlt bei Berlin.coords.data: Fünf Morgen|Dahlem|14169
 #: osm_watch: way id="54781804" version="10"
 #: last_checked: 2014-08-07
-#: check_frequency: 120d
-Fünf Morgen: wo wird sich die Straße befinden? Qualität?	? 1338,4927 1437,5015 1483,5161
+Fünf Morgen: wo befindet sich die Straße? Wird es eine Anbindung an den Hüttenweg geben? Qualität?	? 1311,4951 1395,4965 1437,5015 1483,5161
 # 
 #: XXX_indoor: Steigungsprobleme vvv
 Weg H: Steigung müsste in die andere Richtung verlaufen!	? 27961,699 28083,592
@@ -1712,11 +1714,6 @@ Heißt dieser Abschnitt "Chaussee nach Bornim"?	? -19100,407 -18964,793 -18688,11
 # REMOVED (hier ändert sich bestimmt nichts) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file --- Fichtenweg: Teilstück als Straßenland eingezogen?	? -2949,17946 -2961,17875
 # REMOVED (now in handicap_s-orig) --- #: XXX_prog --- Bordsteinkante Richtung Westen	? 17183,17385
 # REMOVED (now in flaechen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file --- #: XXX_indoor --- Landschaftspark Herzberge: ebenfalls zum Landschaftspark gehörig, ggfs. in flaechen aufnehmen	? 17097,14140 17846,14179 17867,13868 17076,13861
-# 
-#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130701.1255.386582.html
-#: last_checked: 2014-01-04
-#: next_check: 2014-10-01
-"Bürgerwiese" Slabystr./Wilhelminenhofstr.: in flaechen-orig eintragen, wenn fertig	?::projected 18978,5944 18954,5973 18968,6009 19076,6117 19116,6080 18978,5944
 # 
 #: by: MichaelM
 #: XXX_prog:
@@ -2020,6 +2017,8 @@ Brücke wird gebaut: angrenzende Wege, Qualität, Beleuchtung, Ausschilderung etc.
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/entwurf_des_bebauungsplans_9-34__.pdf
 #: next_check: 2016-03-01
 Bebauungsplan 9-34: Planstraßen, Uferweg und Brücke werden entstehen	?::projected 22290,2172 22509,2330 22377,2489 22226,2633 22133,2666 22074,2656 22290,2172
+# 
+EUREF-Campus: existieren hier schon Straßen? Genaue Lage, Ausschilderung, Qualität?	? 7178,8226 7263,8483
 # 
 #: ignore ^^^
 #: section ^^^

@@ -10478,7 +10478,7 @@ EOF
        text  => 'Bauarbeiten am Ostkreuz, Verbindungsstraße könnte für die Durchfahrt gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED --- userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14843,10621 14882,10732
+# REMOVED --- userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14828,10561 14843,10621 14882,10732
 EOF
      },
      { from  => undef, # 
@@ -11617,7 +11617,7 @@ EOF
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED --- userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14843,10621 14882,10732 14906,10820
+# REMOVED --- userdel	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14828,10561 14843,10621 14882,10732 14906,10820
 EOF
      },
      { from  => undef, # 
@@ -17174,11 +17174,11 @@ EOF
 userdel	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-12 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
-       until => $isodate2epoch->("2013-12-15 23:59:59"), # 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
+     { from  => $isodate2epoch->("2014-12-11 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
+       until => $isodate2epoch->("2014-12-14 23:59:59"), # 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 15, months => 12]],
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2013 bis zum 15.12.2013',
+       recurrences => [['yearly', days => 11, months => 12]],
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 12.12.2014 bis zum 14.12.2014',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
        data  => <<EOF,
@@ -21326,7 +21326,7 @@ EOF
      { from  => $isodate2epoch->("2013-12-13 06:00:00"), # 1385679600, # 2013-11-29 00:00 - 1 Tag Vorlauf
        until => $isodate2epoch->("2013-12-15 23:59:59"), # 1385938799, # 2013-12-01 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 15, months => 12]], # zwei Termine, 1. und 3. Advent
+#XXX       recurrences => [['yearly', days => 12, months => 12]], # zwei Termine, 1. und 3. Advent # XXX Achtung, wieder zurücksetzen! XXX
        text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 14.12.2013 und 15.12.2013',
        type  => 'gesperrt',
        source_id => 'IM_020815',
@@ -21814,12 +21814,11 @@ userdel	2::temp 5047,10381 5076,10658
 EOF
      },
      { from  => undef, # $isodate2epoch->("2014-09-29 06:00:00"), # 1407357333, # 1403739104, # 1376193600, # 2013-08-11 06:00
-       until => undef, # $isodate2epoch->("2014-10-06 06:00:00"), # 1409243320, # $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
+       until => 1416065742, # $isodate2epoch->("2014-10-06 06:00:00"), # 1409243320, # $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
        text  => 'Sterndamm: Brückenarbeiten, Straße ist eventuell gesperrt',
        type  => 'gesperrt',
        # source_id => 'IM_023012',
        data  => <<EOF,
-#: XXX check!
 userdel	2::inwork 17736,5441 17886,5587
 EOF
      },
@@ -23413,7 +23412,7 @@ EOF
        type  => 'gesperrt',
        dont_check_date => 1,
        data  => <<EOF,
-#: last_checked: 2014-11-08 (gerade nicht gesperrt)
+#: last_checked: 2014-11-15 (gerade nicht gesperrt)
 userdel	2::inwork 15419,10706 15379,10651
 EOF
      },
@@ -23713,6 +23712,14 @@ EOF
        data  => <<EOF,
 #: by: fritz
 userdel	q4::inwork 5635,7660 5636,7540
+EOF
+     },
+     { from  => 1416086295, # 2014-11-15 22:18
+       until => 1416574800, # 2014-11-21 14:00
+       text  => 'Swinemünder Brücke: bis zum 21.11.2014 gesperrt, evtl. auch für Radfahrer und Fußgänger',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 9494,15998 9623,15777
 EOF
      },
     );
