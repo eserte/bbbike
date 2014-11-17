@@ -3726,9 +3726,9 @@ Weinbrennerweg	N 6003,19461 6106,19510
 Weinbrennerweg	NN 6106,19510 6200,19554
 Wilhelm-Gericke-Str.	N 5700,19510 5592,19888 5598,19912 5627,19940 5651,19953 5804,20047 5925,20118
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219978.php
-#: XXX Platz wird benannt --- aber welcher Name?
-#: next_check: 2014-11-10
-(Oranienburger Str. - Wilhelm-Gericke-Str.)	NN 5545,19909 5598,19912
+#: by: https://de-de.facebook.com/CDU.Fraktion.Reinickendorf/photos/a.263311293724238.70002.263296777059023/740072742714755/?type=1
+#: oldname: -20141110: <namenslos>
+Kirschblütenplatz	NN 5545,19909 5598,19912
 Heiligental	N 5929,19574 5897,19668 5858,19761 5803,19874
 Blunckstr.	N 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
 Alt-Wittenau	H 5816,20336 5475,20381 5307,20437 5219,20467 5117,20517
@@ -6343,6 +6343,10 @@ Grünspechtweg	N 7171,22942 7059,23127 6988,23244 6967,23278
 Feldlerchenweg	N 7109,22919 7000,23095 6956,23166 6908,23244
 (zur Andreas-Rabe-Siedlung)	N 6873,23224 6908,23244 6967,23278 7076,23343 7027,23459
 Höpfertsteig	N 6830,23293 6931,23352
+#: XXX wird die Straße zu "Bürgersruh" umbenannt? (In diesem Fall den existierenden Kolonie-Eintrag in Berlin.coords.data ersetzen)
+#: by: http://www.berliner-woche.de/nachrichten/bezirk-reinickendorf/luebars/artikel/54289-zu-schnell-auf-neuer-strasse/
+#: by: Tagesspiegel vom 2014-11-16
+#: next_check: 2015-02-15
 Straße 494	N 7923,23225 8119,22798
 (Straße 494 - Freizeitpark Lübars)	NN 8119,22798 8131,22769 8081,22698 8060,22699
 Oraniendamm	HH 4859,22142 4837,22180 4718,22384 4616,22478 4526,22567 4437,22655 4337,22753 4222,22854 4193,22873
