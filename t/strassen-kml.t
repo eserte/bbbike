@@ -33,7 +33,7 @@ use BBBikeTest;
 
 sub load_from_file_and_check ($);
 
-plan tests => 67;
+plan tests => 69;
 
 use_ok("Strassen::KML")
     or exit 1; # avoid recursive calls to Strassen::new
@@ -80,6 +80,11 @@ isa_ok($s, "Strassen");
     ok(!@errors, "Coordinates within tolerance after roundtrip");
 
     load_from_file_and_check $file;
+
+    my $s3 = Strassen::KML->new();
+    $s3->kmldata2bbd(get_sample_kml_1(), map => 'bbbike');
+    my @data3 = @{ $s3->data };
+    is_deeply \@data3, \@data, 'kmldata2bbd gives same result';
 }
 
 {
@@ -112,6 +117,11 @@ isa_ok($s, "Strassen");
     is_deeply \@data, \@sample_data;
 
     load_from_file_and_check $tmpfile;
+
+    my $s2 = Strassen::KML->new;
+    $s2->kmldata2bbd(get_sample_kml_polygons(), map => 'bbbike');
+    my @data2 = @{ $s2->data };
+    is_deeply \@data2, \@data, 'kmldata2bbd gives same result';
 }
 
 for my $kml_filename ('doc.kml',

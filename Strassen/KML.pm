@@ -52,6 +52,13 @@ sub kml2bbd {
     $self->_kmldoc2bbd($doc, %args);
 }
 
+sub kmldata2bbd {
+    my($self, $data, %args) = @_;
+    my $p = XML::LibXML->new;
+    my $doc = $p->parse_string($data);
+    $self->_kmldoc2bbd($doc, %args);
+}
+
 sub _kmldoc2bbd {
     my($self, $doc, %args) = @_;
     my $converter;
