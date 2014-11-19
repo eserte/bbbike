@@ -89,13 +89,16 @@ sub _kmldoc2bbd {
 	    if (!$coords) {
 		$coords = $placemark_node->findvalue('./MultiGeometry/LineString/coordinates');
 		if (!$coords) {
-		    if ($missing_coordinates_warnings++ < 3) {
-			warn "kml2bbd: Cannot find coordinates in Placemark";
-		    } elsif (!$too_many_warnings_emitted) {
-			warn "kml2bbd: Too many warnings, won't warn anymore...";
-			$too_many_warnings_emitted = 1;
-		    } 
-		    next;
+		    $coords = $placemark_node->findvalue('./Point/coordinates');
+		    if (!$coords) {
+			if ($missing_coordinates_warnings++ < 3) {
+			    warn "kml2bbd: Cannot find coordinates in Placemark";
+			} elsif (!$too_many_warnings_emitted) {
+			    warn "kml2bbd: Too many warnings, won't warn anymore...";
+			    $too_many_warnings_emitted = 1;
+			} 
+			next;
+		    }
 		}
 	    }
 	    ## XXX yes? no?
