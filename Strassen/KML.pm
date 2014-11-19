@@ -71,6 +71,8 @@ sub _kmldoc2bbd {
 	$doc = $p->parse_string($xml);
 	$root = $doc->documentElement;
     }
+    my $missing_coordinates_warnings = 0;
+    my $too_many_warnings_emitted;
     for my $placemark_node ($root->findnodes('/kml//Placemark')) {
 	my $name = $placemark_node->findvalue('./name') || $args{name} || 'Route';
 	my $cat  = $args{cat}  || 'X';
@@ -80,7 +82,12 @@ sub _kmldoc2bbd {
 	    if (!$coords) {
 		$coords = $placemark_node->findvalue('./MultiGeometry/LineString/coordinates');
 		if (!$coords) {
-		    warn "kml2bbd: Cannot find coordinates in Placemark";
+		    if ($missing_coordinates_warnings++ < 3) {
+			warn "kml2bbd: Cannot find coordinates in Placemark";
+		    } elsif (!$too_many_warnings_emitted) {
+			warn "kml2bbd: Too many warnings, won't warn anymore...";
+			$too_many_warnings_emitted = 1;
+		    } 
 		    next;
 		}
 	    }
