@@ -23723,8 +23723,8 @@ userdel	2::temp 9494,15998 9623,15777
 EOF
      },
      { from  => 1416214740, # 2014-11-17 09:59
-       until => 1420041600, # 2014-12-31 17:00
-       text  => 'Pekrunstr.: Baustelle, Straße zwischen Fichtelbergstr. und Manksweg gesperrt, 18.11.2014 09:59 Uhr bis 31.12.2014 17:00 Uhr',
+       until => $isodate2epoch->("2015-01-16 17:00:00"), # 1420041600, # 2014-12-31 17:00
+       text  => 'Pekrunstr.: Baustelle, Straße zwischen Fichtelbergstr. und Manksweg gesperrt, 18.11.2014 09:59 Uhr bis 16.01.2015 17:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_023467',
        data  => <<EOF,

@@ -33,7 +33,7 @@ use BBBikeTest;
 
 sub load_from_file_and_check ($);
 
-plan tests => 71;
+plan tests => 74;
 
 use_ok("Strassen::KML")
     or exit 1; # avoid recursive calls to Strassen::new
@@ -229,6 +229,18 @@ for my $kml_filename ('doc.kml',
     is $s->as_string, get_exepted_bbd_points(), 'kml with Point features';
 }
 
+{
+    my @warnings;
+    local $SIG{__WARN__} = sub { push @warnings, @_ };
+
+    my $kml_string = get_sample_kml_unknown_placemarks();
+    my $s = Strassen::KML->new;
+    $s->kmldata2bbd($kml_string);
+    is scalar(@warnings), 4, 'three warnings and one "too many" message"';
+    like $warnings[0], qr{Cannot find coordinates in Placemark}, 'expected warning';
+    like $warnings[-1], qr{Too many warnings}, 'expected "too many" message';
+}
+
 ######################################################################
 # Sample KMLs
 sub get_sample_kml_1 {
@@ -372,6 +384,22 @@ sub get_exepted_bbd_points {
 #: map: polar
 #:
 amenity:post_box; collection_times:Mo-Fr 15:00; Sa 12:15; operator:Deutsche Post	X 13.282268,52.436952
+EOF
+}
+
+sub get_sample_kml_unknown_placemarks {
+    <<'EOF';
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <name>BBBike-Route</name>
+    <description></description>
+    <Placemark><unknown /></Placemark>
+    <Placemark><unknown /></Placemark>
+    <Placemark><unknown /></Placemark>
+    <Placemark><unknown /></Placemark>
+  </Document>
+</kml>
 EOF
 }
 
