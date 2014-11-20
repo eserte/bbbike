@@ -2310,7 +2310,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'data' => 'userdel	2::temp 11329,12497 11209,12430
-userdel	q4::temp 11209,12430 11273,12301
+userdel	2::temp 11209,12430 11273,12301
 userdel	2::temp 11273,12301 11355,12331
 ',
          'periodic' => 1,
@@ -2325,7 +2325,7 @@ userdel	2::temp 11273,12301 11355,12331
                               11
                             ]
                           ],
-         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr.) bzw. nur schiebend auf dem Gehweg möglich (Dircksenstr.), bis Ende Dezember 2014',
+         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), bis Ende Dezember 2014',
          'type' => 'gesperrt',
          'id' => 1988
        },
@@ -3964,8 +3964,8 @@ userdel	q4::inwork 5635,7660 5636,7540
        },
        {
          'source_id' => 'IM_023467',
-         'until' => 1420041600,
-         'text' => 'Pekrunstr.: Baustelle, Straße zwischen Fichtelbergstr. und Manksweg gesperrt, 18.11.2014 09:59 Uhr bis 31.12.2014 17:00 Uhr',
+         'until' => 1421424000,
+         'text' => 'Pekrunstr.: Baustelle, Straße zwischen Fichtelbergstr. und Manksweg gesperrt, 18.11.2014 09:59 Uhr bis 16.01.2015 17:00 Uhr',
          'from' => 1416214740,
          'id' => 2665,
          'data' => 'userdel	q4::inwork 20559,14847 20480,14874
