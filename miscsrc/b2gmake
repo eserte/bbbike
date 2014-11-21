@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: b2gmake,v 1.5 2008/01/21 22:15:54 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2003,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -33,8 +32,8 @@ while(<STDIN>) {
     s/\$\{\.?MAKEFLAGS\}/-\${MAKEFLAGS}/g;
     s/\$\(\.?MAKEFLAGS\)/-\${MAKEFLAGS}/g;
     s/\$>/\$^/g;
-    s[\${(.*):M/(.*)/(.*)/}][\$($1:$2=$3)]g;
-    s[\${(.*):C/(.*)(?<!\\)/(.*)(?<!\\)/(g)?}][]g;
+    s[\$\{(.*):M/(.*)/(.*)/}][\$($1:$2=$3)]g;
+    s[\$\{(.*):C/(.*)(?<!\\)/(.*)(?<!\\)/(g)?}][]g;
     s[\!=(\s*)(.*)][=$1\$(shell $2)]g;
     if (/^\.for\s+(\S+)\s+in\s+(\S+)/) { # XXX not implementable in GNU make?
 	my($loopvar, $subst) = @_;
