@@ -4088,7 +4088,7 @@ EOF
        text  => 'L 019 Schloßdamm, Ruppiner Str. OD Kremmen grundhafter Straßenbau Vollsperrung 27.03.2006-14.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -15961,38892 -16160,38503
+userdel	2 -15982,38992 -16160,38503
 EOF
      },
      { from  => 1163800186, # 2006-11-17 22:49
@@ -5131,7 +5131,7 @@ EOF
        text  => 'L 019 Ruppiner Chaussee OD Kremmen grundhafter Straßenbau Vollsperrung 10.07.2006-15.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -15770,39361 -15556,39597 -15198,39722 -15063,39954 -14975,40027 -14856,40112
+userdel	q4::inwork -15828,39372 -15751,39505 -15629,39598 -15198,39722 -15063,39954 -14975,40027 -14856,40112
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
@@ -18515,7 +18515,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/10/086',
        data  => <<EOF,
-userdel	2::inwork -17964,36290 -17262,37425
+userdel	2::inwork -17964,36290 -17279,37449
 EOF
      },
      { from  => 1285020000, # 2010-09-21 00:00
@@ -18621,7 +18621,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/10/086',
        data  => <<EOF,
-userdel	2::inwork -17114,37670 -17262,37425
+userdel	2::inwork -17102,37691 -17279,37449
 EOF
      },
      { from  => 1288134000, # 2010-10-27 01:00
@@ -18820,7 +18820,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/10/086',
        data  => <<EOF,
-userdel	2::inwork -17114,37670 -17262,37425
+userdel	2::inwork -17102,37691 -17279,37449
 EOF
      },
      { from  => 1292831040, # 2010-12-20 08:44

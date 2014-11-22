@@ -3883,16 +3883,7 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_023339',
-         'until' => 1416578400,
-         'text' => 'Hobrechtsfelder Chaussee: Baustelle zwischen Wiltbergstr. und Pölnitzweg, Fahrbahn stadtauswärts gesperrt, 03.11.2014 10:30 Uhr bis 21.11.2014 15:00 Uhr',
-         'from' => 1414920600,
-         'id' => 2657,
-         'data' => 'userdel	1::inwork 15230,26560 15589,27116
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '146001411',
          'until' => 1417388400,
@@ -3953,15 +3944,7 @@ userdel	q4::inwork 5635,7660 5636,7540
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1416574800,
-         'text' => 'Swinemünder Brücke: bis zum 21.11.2014 gesperrt, evtl. auch für Radfahrer und Fußgänger',
-         'from' => 1416086295,
-         'id' => 2664,
-         'data' => 'userdel	2::temp 9494,15998 9623,15777
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_023467',
          'until' => 1421424000,

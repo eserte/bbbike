@@ -114,9 +114,8 @@ Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0- 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
 Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2- 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13760,9188
-Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11833,7980
 #: note: gepflasterter Parkstreifen
-Herrfurthstr.: Asphalt	Q0 11833,7980 11754,7964
+Herrfurthstr.: Asphalt	Q0 11979,8014 11833,7980 11754,7964
 #: note: gepflasterter Parkstreifen
 Herrfurthstr.: Asphalt	Q0 11647,7940 11573,7924 11472,7899
 Herrfurthplatz: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
@@ -424,8 +423,8 @@ Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712 13378,7695
 Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168 12870,8087
 #: next_check_id: RICHARDSTR-2014
-#: XXX Asphalt wird gerade aufgetragen, danach Q0
-#: last_checked: 2014-10-31
+#: XXX letzte Deckschicht fehlt noch, danach Q0
+#: last_checked: 2014-11-22
 Richardstr.: Asphalt	Q0- 12870,8087 13045,7938
 Richardstr.: Kopfsteinpflaster	Q2 13045,7938 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
@@ -5586,7 +5585,8 @@ Straﬂe 54: Verbundsteinpflaster	Q0- 12918,17736 12908,17807
 Straﬂe 46 (Heinersdorf): unbefestigter Weg	Q2 12630,17636 12587,17603
 Straﬂe 46 (Heinersdorf): unbefestigter Weg	Q2 12587,17603 12505,17469 12500,17460
 Straﬂe 56 (Heinersdorf): Asphalt	Q0 12436,17682 12587,17603
-Dresdener Str.: Asphalt	Q0 11034,11249 11000,11327
+Dresdener Str.: Asphalt	Q0 11034,11249 11021,11287
+Dresdener Str.: Verbundsteinpflaster	Q1+ 11021,11287 11000,11327
 Dresdener Str.: Asphalt	Q1+ 11000,11327 11039,11425
 Marconistr.: guter Beton	Q1 9125,3435 9032,3447
 Forddamm: Beton	Q0 8996,3150 8969,3074 8906,2822
@@ -9708,6 +9708,7 @@ Biedermannweg: Asphalt	Q0 -742,12924 -744,12911 -717,12823 -686,12735
 Brombeerweg: Kleinsteinpflaster	Q1- -629,12862 -612,12809
 Gutsmuthsweg: Asphalt	Q0 -824,12557 -746,12432 -671,12311 -583,12151 -565,12030
 Putlitzstr. (Nebenstraﬂe): Verbundsteinpflaster	Q1+ 6212,13944 6204,14220
+(Sebastianstr./Alexandrinenstr. - Dresdener Str.): Verbundsteinpflaster	Q1+ 10824,11256 10906,11295 10956,11297 11000,11327
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
