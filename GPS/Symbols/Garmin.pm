@@ -15,7 +15,7 @@ package GPS::Symbols::Garmin;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use File::Glob qw();
 use File::Temp qw();
@@ -53,7 +53,8 @@ sub get_symbol_to_img {
     {
 	my @gmicons;
 	for my $candidate ("/usr/share/gpsman/gmicons", # Debian default
-			   "/usr/local/share/gpsman/gmsrc/gmicons", # the FreeBSD location
+			   "/usr/local/lib/gpsman/gmsrc/gmicons", # new FreeBSD location (since 2014)
+			   "/usr/local/share/gpsman/gmsrc/gmicons", # old FreeBSD location (until 2014)
 			  ) {
 	    if (-d $candidate) {
 		@gmicons = File::Glob::bsd_glob("$candidate/*15x15.gif");
