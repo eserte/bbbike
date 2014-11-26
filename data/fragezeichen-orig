@@ -99,7 +99,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2014-10-08
+#: last_checked: 2014-11-23
 #: next_check: 2015-03-15
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -1118,7 +1118,7 @@ Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Fahrbahnmarkierungen -> vielleicht auch Radspuren?)
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf (Fahrbahnmarkierungen -> vielleicht auch Radspuren?)
 #: osm_watch: way id="4677913" version="16"
-#: osm_watch: way id="38198022" version="13"
+#: osm_watch: way id="38198022" version="14"
 #: last_checked: 2014-04-27
 #: XXX laut osm cycleway=lane
 #: priority: #A
@@ -1213,10 +1213,14 @@ Buschallee: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 14619,16551 148
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX Friedrichstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Mitte 12/14) in beiden Richtungen zwischen Behrenstr. und Unter den Linden, 25.11.2014 08:17 Uhr bis 15.12.2014 16:00 Uhr	IM_023529
+Friedrichstr.: ist die Sperrung auch für Radfahrer relevant?	?::inwork 9373,12197 9369,12253 9358,12351
+# 
 Krautstr.: gibt es hier relevante Bauarbeiten mit Sperrung?	?::inwork 12002,12008 11993,11978
 # 
 #: XXX gibt es während der Bauarbeiten Einschränkungen bzgl. der Radwege? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
+#: XXX -> Köpenicker Landstr. (Baumschulenweg): Baustelle, linker Fahrstreifen in jeder Richtung gesperrt (bis Anfang 12/14, Gesamtmaßnahme bis 2016) in beiden Richtungen zwischen Neue Krugallee und Schnellerstr., 25.11.2014 13:08 Uhr bis 03.12.2014 16:00 Uhr	IM_023532
 #: last_checked: 2014-11-15 vvv
 #: check_frequency: 7d vvv
 Rummelsburger Str.	? 17527,7812 17681,7589 17839,7365
@@ -3830,8 +3834,7 @@ Hermann-Oxfort-Promenade: Ist die Hermann-Oxfort-Promenade ausgeschildert?	? -35
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.210019.php
 #: next_check: 2014-11-21
-#: priority: #A
-Olafstr.: Ist die Fahrbahn nach den Bauarbeiten besser geworden? Liegt nun Asphalt?	?::inwork 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
+Olafstr.: Ist die Fahrbahn nach den Bauarbeiten besser geworden? Liegt nun Asphalt?	? 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
 # 
 #: osm_watch: way id="51823469" version="2"
 Am Klötzebecken, nördlicher Weg: für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 5851,22538 5920,22603 6023,22667 6207,22737 6226,22712

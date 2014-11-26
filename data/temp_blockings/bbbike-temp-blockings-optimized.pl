@@ -2359,12 +2359,10 @@ userdel	2::temp 9524,12010 9656,12021
        undef,
        {
          'source_id' => 'http://www.winterwelt-berlin.de/',
-         'data' => '#: XXX Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), aber auch schon hier Einschränkungen? Weihnachtsmarkt erst ab dem 24.11.2014
+         'data' => '#: note: Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), Weihnachtsmarkt erst ab dem 24.11.2014
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=962671
-#: last_checked: 2014-11-04
-#: next_check: 2014-11-24
-#: priority: #A
-userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296 8278,11257
+userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
+#userdel	2::temp 8318,11324 8280,11296 8278,11257
 #: XXX_prog "3::temp" geht nicht?
 userdel	3 8427,11365 8389,11378 8374,11479
 userdel	3 8374,11479 8389,11378 8427,11365
@@ -2381,7 +2379,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
                               11
                             ]
                           ],
-         'text' => 'Winterwelt am Potsdamer Platz vom 24. November 2014 bis 26. Dezember 2014',
+         'text' => 'Winterwelt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, bis 26. Dezember 2014',
          'id' => 1997,
          'type' => 'gesperrt'
        },
@@ -3904,16 +3902,7 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.221430.php',
-         'until' => 1416697199,
-         'text' => 'Veltheimstraße: Bauarbeiten zwischen Berliner Straße und Solquellstraße, Fahrbahn gesperrt, vom 5. November 2014 bis voraussichtlich 22. November 2014',
-         'from' => 1415055600,
-         'id' => 2660,
-         'data' => 'userdel	q4::inwork 4111,24488 3963,24559 3842,24556
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_023373',
          'until' => 1442066400,
