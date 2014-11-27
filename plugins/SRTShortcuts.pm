@@ -1260,7 +1260,8 @@ sub _vmz_lbvs_splitter {
 }
 
 sub _vmz_lbvs_columnwidths {
-    (200, 1200, 200, 100);
+    # the minimum width for the '*' column is hardcoded in show_any_diff
+    (200, '*', 200, 100);
 }
 
 sub select_vmz_lbvs_diff {
@@ -1322,12 +1323,13 @@ sub show_any_diff {
     my $abk = main::plot_additional_layer("str", $file);
     my $token = "chooseort-" . File::Basename::basename($file) . "-str";
     my $t = main::redisplay_top($main::top, $token, -title => $file);
+    my $max_window_width = $main::top->screenwidth-20;
     if (!$t) {
 	# XXX delete_layer does not happen here. $abk is never recorded.
 	$t = $main::toplevel{$token};
 	$_->destroy for ($t->children);
     } else {
-	$t->geometry($t->screenwidth-20 . "x" . 260 . "+0-20");
+	$t->geometry($max_window_width . "x" . 260 . "+0-20");
     }
     $t->OnDestroy(sub { main::delete_layer($abk) });
     {
@@ -1394,9 +1396,29 @@ sub show_any_diff {
 		    })->pack(-anchor => 'e', -side => 'right');
     }
     $f = $t->Frame->pack(-fill => "both", -expand => 1);
+
+    my(@columnwidths) = _vmz_lbvs_columnwidths();
+    {
+	my $sum_columnwidths = 0;
+	my $joker_index;
+	for my $index (0 .. $#columnwidths) {
+	    my $this_columnwidth = $columnwidths[$index];
+	    if ($this_columnwidth ne '*') {
+		$sum_columnwidths += $this_columnwidth;
+	    } else {
+		$joker_index = $index;
+	    }
+	}
+	if (defined $joker_index) {
+	    my $new_width = $max_window_width - 10 - $sum_columnwidths;
+	    if ($new_width < 200) { $new_width = 200 } # minimum width
+	    $columnwidths[$joker_index] = $new_width;
+	}
+    }
+
     main::choose_ort("str", $abk,
 		     -splitter => \&_vmz_lbvs_splitter,
-		     -columnwidths => [ _vmz_lbvs_columnwidths() ],
+		     -columnwidths => \@columnwidths,
 		     # XXX Maybe implement -infocallback (an info
 		     # button in the choose_ort window) some time, but
 		     # not that urgent
