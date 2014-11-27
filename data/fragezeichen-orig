@@ -137,7 +137,7 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: osm_watch: way id="162964323" version="5"
 #: osm_watch: way id="4541085" version="14"
 #: osm_watch: way id="4638315" version="14"
-#: last_checked: 2014-10-15 vvv
+#: last_checked: 2014-11-26 vvv
 # REMOVED --- #: next_check: 2014-03-15 (evtl. passiert während der Bauarbeiten etwas?) --- #: source_id: IM_021408
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected 7672,16878 7687,16770
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected; 7713,16557 7687,16770
@@ -224,11 +224,11 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
+#: XXX wird auch das letzte Stück im Westen realisiert?
 #: osm_watch: way id="4424794" version="13"
 #: osm_watch: way id="30195541" version="8"
-#: XXX laut osm nun mit cycleway=lane
-#: last_checked: 2014-09-20
-Turmstr.: Radspuren für 2013 geplant	? 5248,13434 5368,13406 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321
+#: last_checked: 2014-11-26
+Turmstr.: Radspuren für 2013 geplant	? 5248,13434 5368,13406 5434,13398
 # 
 # REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: osm_watch: way id="4884674" version="8" --- #: osm_watch: way id="8023415" version="6" --- #: last_checked: 2013-07-13 --- #: check_frequency: 180d --- Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837 -6429,14879 -6405,14971
 # 
@@ -1070,7 +1070,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2014-10-12 vvv
+#: last_checked: 2014-11-26 vvv
 #: check_frequency: 100d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1213,11 +1213,6 @@ Buschallee: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 14619,16551 148
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX Friedrichstr. (Mitte): Baustelle, Straße vollständig gesperrt (bis Mitte 12/14) in beiden Richtungen zwischen Behrenstr. und Unter den Linden, 25.11.2014 08:17 Uhr bis 15.12.2014 16:00 Uhr	IM_023529
-Friedrichstr.: ist die Sperrung auch für Radfahrer relevant?	?::inwork 9373,12197 9369,12253 9358,12351
-# 
-Krautstr.: gibt es hier relevante Bauarbeiten mit Sperrung?	?::inwork 12002,12008 11993,11978
-# 
 #: XXX gibt es während der Bauarbeiten Einschränkungen bzgl. der Radwege? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: XXX -> Köpenicker Landstr. (Baumschulenweg): Baustelle, linker Fahrstreifen in jeder Richtung gesperrt (bis Anfang 12/14, Gesamtmaßnahme bis 2016) in beiden Richtungen zwischen Neue Krugallee und Schnellerstr., 25.11.2014 13:08 Uhr bis 03.12.2014 16:00 Uhr	IM_023532
@@ -1232,8 +1227,8 @@ Köpenicker Landstr.	? 16843,6712 16720,6845 16677,6892
 # 
 Bremer Weg: im östlichen Abschnitt beleuchtet?	? 8215,12156 8466,12197 8522,12239 8538,12245
 # 
-Esplanade/Grüntaler: unbeleuchtet?	? 10013,16972 9980,16973 9880,16994 9846,16981 9778,16915
-Bornholmer/Kolonnenweg: unbeleuchtet?	? 10134,16534 10118,16561 10108,16576 9954,16590
+# REMOVED (nein) --- Esplanade/Grüntaler: unbeleuchtet?	? 10013,16972 9980,16973 9880,16994 9846,16981 9778,16915
+# REMOVED (nein) --- Bornholmer/Kolonnenweg: unbeleuchtet?	? 10134,16534 10118,16561 10108,16576 9954,16590
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2014
@@ -1437,12 +1432,12 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 #: next_check: 2015-01-17
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337
 # 
-#: last_checked: 2014-11-04
+#: last_checked: 2014-11-26
 #: check_frequency: 60d
 Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7422,13012
 # 
 #: by: http://www.tagesspiegel.de/berlin/anbindung-an-hauptbahnhof-eroeffnung-von-strassenbahnstrecke-verzoegert-sich-erneut/7375642.html (Eröffnung Mitte oder Herbst 2014)
-#: last_checked: 2014-11-04
+#: last_checked: 2014-11-26
 #: check_frequency: 60d
 Ampel (Fußgänger? Auto?) in Bau	?::inwork 7595,12980
 # 

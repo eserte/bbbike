@@ -322,13 +322,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10923,13156
 	X 10755,13152
 	X 11160,13492
+#: next_check_id: SCHWEDTER-2014
 #: XXX Ampelanlange wird umgebaut (Richtung Kreuzung)
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20120514.1415.370100.html
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6163 (Stand der Planung?)
 #: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/45081036147184117/147184117/00116327/27-Anlagen/02/MA_1534_IV.pdf
 #: note: Anforderungsampel
-#: last_checked: 2014-04-04
-#: next_check: 2015-02-01
+#: last_checked: 2014-11-26
 	F 10511,14418
 	X 10002,14092
 	X 9800,14722
@@ -2547,13 +2547,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
-#: last_checked: 2014-10-12
+#: last_checked: 2014-11-26
 #: check_frequency: 60d
 	F::inwork 9812,12145
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2014-11-04 vvv
+#: last_checked: 2014-11-26 vvv
 #: next_check: 2015-05-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926

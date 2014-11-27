@@ -57,6 +57,7 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # 
 ### Mitte ###
 # 
+#: XXX nochmal genauer anschauen...
 #: last_checked: 2014-11-10
 Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
 # 
@@ -86,7 +87,7 @@ Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::in
 #: last_checked: 2014-11-14
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
-#: last_checked: 2014-11-14
+#: last_checked: 2014-11-26
 Schadowstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 9007,12499 9016,12416
 # 
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
@@ -154,6 +155,10 @@ Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg auswe
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
 # 
+#: next_check_id: SCHWEDTER-2014
+#: last_checked: 2014-11-26
+Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10567,14337 10530,14452
+# 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2014-10-12 vvv
 #: next_check: 2015-05-31 vvv
@@ -188,7 +193,7 @@ Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessisch
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (bei vmz) --- #: XXX: wann ist die Kreuzung wieder befahrbar? --- #: last_checked: 2014-06-30 --- #: next_check: 2014-07-08 --- #: source_id: IM_021906 --- #: priority: #A --- Scharnhorststr.: Sackgasse an der Invalidenstraße	q2::inwork 8450,13599 8313,13839
 #
-#: last_checked: 2014-11-25 (Bauarbeiten wegen Neubau)
+#: last_checked: 2014-11-26 (Bauarbeiten wegen Neubau)
 #: check_frequency: 30d
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
@@ -224,7 +229,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-11-21
+#: last_checked: 2014-11-26
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 

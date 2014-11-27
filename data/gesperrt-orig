@@ -2203,7 +2203,7 @@ Poller, lichte Breite 100cm	BNP:1::trailer=5 -7109,15286
 Schranke	BNP:1::trailer=5 -3300,14039
 weites Drängelgitter	BNP:1::trailer=5 -3437,14029
 Drängelgitter	BNP:3::trailer=10 7928,10094
-enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30::trailer=no 10583,15208
+# REMOVED (Einschränkung existiert nicht mehr) --- enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30::trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5::trailer=no 10781,15438
 #: by: Stefan Klinkusch: vvv
 Metallstange	BNP:3::trailer=10 -5070,11199
@@ -2580,7 +2580,7 @@ Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 
 #: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
 #: confirmed_by: srt
-#: last_checked: 2014-11-25
+#: last_checked: 2014-11-26
 #: next_check: 2015-02-14
 #: valid: 20140925-20150214
 #: XXX danach gilt für eine Woche noch der temp_blockings-Eintrag
@@ -2789,7 +2789,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
-#: last_checked: 2014-10-12
+#: last_checked: 2014-11-26
 #: check_frequency: 100d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
@@ -2814,7 +2814,7 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert?
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2014-10-12
+#: last_checked: 2014-11-26
 #: check_frequency: 90d
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
