@@ -406,8 +406,6 @@ ext/Makefile
 ext/Strassen-Inline/Inline.pm
 ext/Strassen-Inline/InlineDist.pm
 ext/Strassen-Inline/Makefile.PL
-ext/Strassen-Inline/heap.c
-ext/Strassen-Inline/heap.h
 ext/Strassen-Inline/ppport.h
 ext/Strassen-Inline/t/common.pl
 ext/Strassen-Inline/t/db_impl.t
