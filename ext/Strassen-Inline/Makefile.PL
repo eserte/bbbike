@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.PL,v 1.9 2004/12/12 20:33:01 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -41,7 +40,7 @@ WriteMakefile
   (
 # ***FILTER=1***
    'NAME'	   => 'Strassen::Inline',
-   'OBJECT'        => 'heap$(OBJ_EXT)',
+   #'OBJECT'        => 'heap$(OBJ_EXT)',
 # ***FILTER=2***
 #   'NAME'	   => 'Strassen::Inline2',
 #   #'OBJECT'        => '../Strassen-Inline/heap$(OBJ_EXT)',
@@ -49,7 +48,8 @@ WriteMakefile
    'VERSION_FROM'  => $inlinepm,
    'AUTHOR'        => 'Slaven Rezic (slaven@rezic.de)',
 
-   'CCFLAGS'       => "$Config{ccflags} -ffast-math -fomit-frame-pointer",
+   ## XXX was used with the heap implementation
+   #'CCFLAGS'       => "$Config{ccflags} -ffast-math -fomit-frame-pointer",
   );
 
 sub MY::install {
