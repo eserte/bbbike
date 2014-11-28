@@ -3436,7 +3436,9 @@ sub search_coord {
 
     # Tragen vermeiden
     $extra_args{Tragen} = 1;
-    my $velocity_kmh = $q->param("pref_speed") || $speed_default;
+    my $velocity_kmh = $q->param("pref_speed");
+    ($velocity_kmh) = $velocity_kmh =~ m{(\d+(?:\.\d+)?)}; # input validation
+    $velocity_kmh ||= $speed_default;
     $extra_args{Velocity} = $velocity_kmh/3.6; # convert to m/s
     # XXX Anzahl der Tragestellen zählen...
 
