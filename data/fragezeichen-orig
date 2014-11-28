@@ -202,7 +202,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php
 #: source_id: IM_022377
 #: last_checked: 2014-08-08
-#: next_check: 2014-12-01
+#: next_check: 2014-12-15
 Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
@@ -404,6 +404,8 @@ Wege im Springpfuhlpark: gibt es danach relevante Änderungen?	?::inwork 19565,13
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3901 vvv
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036414341928/414341928/00063878/78-Anlagen/02/Benennungsabsichtfuer9PrivatwegeinderAnlageIde.pdf vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2014
+#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3924
 #: XXX Benennungsabsicht für 9 Privatwege in der Anlage Idehorst im Ortsteil Blankenfelde vvv
 #: XXX fehlen alle in Berlin.coords.data, 13159 Berlin, alles Privatwege vvv
 #: next_check: 2015-03-01 vvv
@@ -894,9 +896,10 @@ Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur e
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140214.0600.394386.html vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.232673.php (Startschuss)
 #: osm_watch: way id="185792044" version="1"
 #: last_checked: 2014-11-15 (Trasse schon sichtbar) vvv
-#: check_frequency: 120d vvv
+#: check_frequency: 90d vvv
 Wasserstr.: geplante Straße in Niederschöneweide	?::projected 17477,6031 17639,6227
 Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,6083 17900,6072
 #: check_frequency ^^^
@@ -960,6 +963,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 # REMOVED (realisiert) --- Herrfurthstr.: Asphaltierungsarbeiten	?::inwork 11472,7899 11573,7924 11647,7940
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4757 (Vorschlag: Führungsschienen für den Elsensteg)
 #: osm_watch: way id="182693863" version="1"
 #: last_checked: 2014-10-31
 #: check_frequency: 180d
@@ -983,9 +987,10 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 # 
 #: next_check_id: MONUMENTENPLATZ-2014
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140411.1235.396289.html
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20141126.1150.400360.html
 #: XXX zumindest den "Platznamen" aufnehmen --- wird es hier ein Schild geben?
 #: last_checked: 2014-10-15
-#: check_frequency: 60d
+#: next_check: 2014-12-04
 Monumentenplatz	?::inwork 8344,9085 8332,9059
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120201.1215.365686.html --- #: by: http://gleisdreieck-blog.de/2011/08/15/letzte-debatte-vor-beginn-der-neuen-baumfaellsaison/ --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619 (Frage nach Realisierung der Brücke) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5619&date=20130910 (Antwort) --- #: last_checked: 2014-03-07 (südliche Rampe noch in Bau) vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="187902666" version="2" --- Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr.: wird bis Ende 2013 realisiert, asphaltiert	?::projected 8339,9560 8339,9448 8374,9291 8381,9247 8334,9085 8344,9085 8367,9006 8374,9074 8389,9087
@@ -1212,6 +1217,15 @@ Buschallee: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 14619,16551 148
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6056 (Vorschlag)
+#: XXX fehlt in Berlin.coords.data
+Darguner Str.: wird das die Darguner Str. werden? Qualität?	? 17566,18680 17635,18591
+# 
+Neubrandenburger Str.: Qualität?	? 17401,18409 17580,18548 17635,18591 17667,18617 17678,18695
+# 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141127.1230.400389.html
+Am Kienberg: sind die Wege bereits gesperrt?	? 22670,14520 22679,14450 22639,14384 22462,14172 22414,14144 22172,14287 22061,14471 22026,14501 21985,14513
 # 
 #: XXX gibt es während der Bauarbeiten Einschränkungen bzgl. der Radwege? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
@@ -2003,11 +2017,6 @@ Lindenallee: wo befindet sich die Straße genau?	? -784,16574 -945,16725 -781,167
 #: XXX fehlt in Berlin.coords.data
 #: XXX_prog "AEG-Str." sieht nicht schön aus. Ausnahmsweise "AEG-Straße" verwenden? Würde aber programmtechnisch nicht funktionieren...
 AEG-Straße: wo genau liegt die Straße? Ist sie ausgeschildert? Qualität?	? 5860,22676 5944,22755 6023,22667
-# 
-#: by: http://www.openstreetmap.org/note/209950
-#: XXX "an dieser Stelle entsteht gerade eine Radweg-Brücke über die Bahn (Stahlkonstruktion)." (Anfang August 2014)
-#: next_check: 2014-10-31
-Brücke wird gebaut: angrenzende Wege, Qualität, Beleuchtung, Ausschilderung etc.	?::inwork 24009,-1292 24147,-1165
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/b-plan-9-34-152996.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/entwurf_des_bebauungsplans_9-34__.pdf
@@ -3841,3 +3850,10 @@ Umfahrung B5 bei Karstädt: ist das eine Kraftfahrzeugstraße?	? -102187,80033 -10
 Schwarzer Weg (Siemensstadt): Qualität des Wegs? Ist der Weg ausgeschildert und beleuchtet?	? 1423,14679 1384,14598 1235,14609
 # 
 Treseburger Ufer, Verlängerung: ist der Weg beleuchtet?	? 12301,5783 12699,5909 13064,5953
+# 
+#: by: http://www.openstreetmap.org/note/209950
+#: XXX "an dieser Stelle entsteht gerade eine Radweg-Brücke über die Bahn (Stahlkonstruktion)." (Anfang August 2014)
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.233428.php (Fertigstellung)
+Brücke über die Göröitzer Bahn: Qualität, Beleuchtung, Ausschilderung?	? 24056,-1295 24153,-1140
+Verlängerter Sandbacher Weg: Qualität (Waldweg?)	? 23504,-938 24056,-1295
+Alter Radelander Weg/Brücke - Bammelecke: Qualität (Waldweg?)	? 24153,-1140 24474,-661 24750,-256 25190,333 25297,434 25484,442

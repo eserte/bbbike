@@ -21322,11 +21322,11 @@ userdel	q4::inwork 13150,7845 13103,7889
 userdel	q4::inwork 13085,7904 13117,7939 13151,7914
 EOF
      },
-     { from  => $isodate2epoch->("2013-12-13 06:00:00"), # 1385679600, # 2013-11-29 00:00 - 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-12-15 23:59:59"), # 1385938799, # 2013-12-01 23:59
+     { from  => $isodate2epoch->("2014-11-28 06:00:00"), # 1385679600, # 2013-11-29 00:00 - 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-11-30 23:59:59"), # 1385938799, # 2013-12-01 23:59
        periodic => 1,
-#XXX       recurrences => [['yearly', days => 12, months => 12]], # zwei Termine, 1. und 3. Advent # XXX Achtung, wieder zurücksetzen! XXX
-       text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 14.12.2013 und 15.12.2013',
+       recurrences => [['yearly', days => 28, months => 11]], # zwei Termine, 1. und 3. Advent
+       text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 29.11.2014 und 30.11.2014',
        type  => 'gesperrt',
        source_id => 'IM_020815',
        data  => <<EOF,
@@ -22720,7 +22720,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021420',
        data  => <<EOF,
-# source_id: IM_022480	
+#: source_id: IM_022480
+#: source_id: IM_023568
 userdel	q3::inwork; 10908,17142 10917,17088 10927,17022
 userdel	q4::inwork; 10927,17022 10862,17087
 userdel	q4::inwork 10862,17087 10891,17088 10917,17088
@@ -23481,8 +23482,8 @@ userdel	q4::inwork 8661,6169 8830,6145 8944,6127
 EOF
      },
      { from  => 1407706402,
-       until => $isodate2epoch->("2014-12-01 17:00:00"),
-       text  => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 01.12.2014',
+       until => $isodate2epoch->("2014-12-15 17:00:00"),
+       text  => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 15.12.2014',
        type  => 'handicap',
        source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
        data  => <<EOF,
@@ -23737,6 +23738,15 @@ EOF
        source_id => 'IM_023529',
        data  => <<EOF,
 userdel	q4::inwork 9373,12197 9369,12253 9358,12351
+EOF
+     },
+     { from  => 1417024800, # 2014-11-26 19:00
+       until => 1417438800, # 2014-12-01 14:00
+       text  => 'Glienicker Brücke: Filmarbeiten, Vollsperrung, Sperrung gilt auch für Fußgänger und Radfahrer, 27.11.2014 19:00 Uhr bis 01.12.2014 14:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_023523',
+       data  => <<EOF,
+userdel	2::temp -10593,476 -10715,472 -10826,469
 EOF
      },
     );
