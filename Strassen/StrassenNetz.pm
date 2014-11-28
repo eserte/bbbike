@@ -1189,7 +1189,7 @@ sub search {
     $sc->Statistics($args{Stat} || 0);
 
     $sc->Velocity($args{Velocity});
-    if ($sc->Velocity <= 0) {
+    if (defined $sc->Velocity && $sc->Velocity <= 0) {
 	die "Velocity must be positive, but is " . $sc->Velocity;
     }
 
