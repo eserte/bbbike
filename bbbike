@@ -386,7 +386,7 @@ $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : 						   'unix';
 $os_bsd = $^O =~ /bsd/i;
 
-$^W = $devel_host; # $advanced also sets $^W, see below
+$^W = $devel_host ? 1 : 0; # $advanced also sets $^W, see below
 
 if (!defined $is_handheld) {
     $is_handheld = $Config{"archname"} =~ /^arm-linux$/i;
