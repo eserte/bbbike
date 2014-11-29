@@ -3792,11 +3792,11 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 
 		     '-',
 		     'GPS direkt',
-		     [M('Route zu einem Garmin senden'), 'DirectGarmin'],
+		     [M('Route auf GPS-Gerät kopieren (Massenspeicher)'), 'BBBikeGPS::MountedDevice'],
+		     [M('Route zu einem Garmin senden (seriell/USB)'), 'DirectGarmin'],
 		     [M('Senden der Route zu einem Garmin simulieren'), 'DirectGarmin_Test'],
 		     ($devel_host ? [M("Route mit gpsbabel senden"), "GpsbabelSend"] : ()),
 		     ($devel_host ? [M("Route mit MapSource senden"), "MapSourceSend"] : ()),
-		     ($devel_host ? [M("Route auf Gerät kopieren"), "MountedDevice"] : ()),
 		    ) {
 	if ($fmt eq '-') {
 	    $svm->separator;
@@ -3882,7 +3882,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		    (-label => $label,
 		     -command => sub { save_route_as_kml(-as => $as) },
 		    );
-	    } elsif ($module =~ m{^(GpsbabelSend|MapSourceSend|MountedDevice)$}) {
+	    } elsif ($module =~ m{^(GpsbabelSend|MapSourceSend)$}) {
 		$svm->command
 		    (-label => $label,
 		     -command => sub {
