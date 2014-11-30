@@ -126,7 +126,6 @@
 		if (!_is_mounted($mount_point)) {
 		    # This seems to be slow, so loop for a while
 		    main::status_message("Mounting is slow, wait for a while...", "infoauto");
-		    $main::top->update;
 		    my $success;
 		    eval {
 			for (1..20) {

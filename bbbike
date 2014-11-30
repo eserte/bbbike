@@ -19813,6 +19813,7 @@ sub status_message {
 						    )->pack(qw(-fill both -expand 1));
 	}
 	$l->configure(-text => $msg);
+	$l->update;
     } else {
 	# warn or error
 	if (!$top) {
