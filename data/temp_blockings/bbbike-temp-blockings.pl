@@ -23749,4 +23749,13 @@ EOF
 userdel	2::temp -10593,476 -10715,472 -10826,469
 EOF
      },
+     { from  => 1417327200, # 2014-11-30 07:00
+       until => 1418684399, # 2014-12-15 23:59
+       text  => 'Pistoriusstr. Richtung Berliner Allee: zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt, (bis Mitte Dezember 2014 ',
+       type  => 'handicap',
+       source_id => 'IM_023572',
+       data  => <<EOF,
+userdel	q4::inwork; 13400,16395 13485,16362 13544,16339 13632,16305 13679,16286 13788,16240
+EOF
+     },
     );

@@ -450,26 +450,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20141113.1440.400168.html
-userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'periodic' => 1,
-         'until' => 1417374000,
-         'from' => 1417215600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 30. November 2013 von 13 bis 19 Uhr)',
-         'type' => 'gesperrt',
-         'id' => 417
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3353,26 +3334,7 @@ userdel	2::night 17671,13132 17684,13133
          'id' => 2517,
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
-         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
-',
-         'periodic' => 1,
-         'until' => 1417370400,
-         'from' => 1417258800,
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 30. November 2014, 12:00 bis 19:00 Uhr',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              11
-                            ]
-                          ],
-         'id' => 2518,
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
          'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
@@ -3966,6 +3928,16 @@ userdel	q4::inwork 5635,7660 5636,7540
          'data' => 'userdel	2::temp -10593,476 -10715,472 -10826,469
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_023572',
+         'until' => 1418684399,
+         'text' => 'Pistoriusstr. Richtung Berliner Allee: zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt, (bis Mitte Dezember 2014 ',
+         'from' => 1417327200,
+         'id' => 2668,
+         'data' => 'userdel	q4::inwork; 13400,16395 13485,16362 13544,16339 13632,16305 13679,16286 13788,16240
+',
+         'type' => 'handicap'
        }
      
 );
