@@ -6200,7 +6200,7 @@ EOF
        text  => 'B 096 Rüdingsdorf - Abzweig Jetsch 1km nördl. Rüdingsdorf - Einmdg. Jetsch Fahrbahnsanierung Vollsperrung 04.10.2006-20.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 29918,-54610 29514,-52871
+userdel	2::inwork 29918,-54610 29518,-52897
 EOF
      },
      { from  => 1153605600, # 2006-07-23 00:00
@@ -9426,7 +9426,7 @@ EOF
        text  => 'L 071 B 96 (Luckau-Baruth) - Dahme zw. Jetsch und Krossen Durchlassneubau Vollsperrung 06.08.2007-25.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 24639,-53978 25777,-53225 26126,-53177
+userdel	2::inwork 24653,-54070 24791,-53869 25162,-53634 25835,-53279 26138,-53236
 EOF
      },
      { from  => 1186167826, # 2007-08-03 21:03
@@ -14817,7 +14817,7 @@ EOF
        text  => 'K 6145 Drahnsdorf - Golßen OD Landwehr Straßenbau Vollsperrung 13.07.2009-31.10.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 24326,-50111 24264,-49146
+userdel	q4::inwork 24428,-50165 24244,-49367
 EOF
      },
      { from  => 1246917600, # 2009-07-07 00:00

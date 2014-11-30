@@ -3913,16 +3913,7 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-spandau/presse/archiv/20141107.1350.400054.html',
-         'until' => 1417215599,
-         'text' => 'Jungfernheideweg: Straßenbauarbeiten zwischen Popitzweg und Bahnbrücke, vom 20.11. bis zum 28.11.2014 (nur tagsüber)',
-         'from' => 1416351600,
-         'id' => 2659,
-         'data' => 'userdel	q4::inwork 1361,14431 1423,14679
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_023373',
@@ -3934,16 +3925,7 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/721-F/14/161',
-         'until' => 1417215600,
-         'text' => 'Neuenhagen: Bauarbeiten, 17.11.2014 bis 28.11.2014',
-         'from' => 1416092400,
-         'id' => 2662,
-         'data' => 'userdel	2::inwork 30910,13101 30982,12947
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Handjerystraße: zwischen Schnackenburgstraße und Sarrazinstraße Sperrung der Fahrbahn, Ende der Sperrung unbekannt ',
