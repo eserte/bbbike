@@ -159,26 +159,7 @@ userdel	2::temp -3231,14383 -3293,14304
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'data' => 'userdel	2::temp 9986,13412 10317,13248
-',
-         'periodic' => 1,
-         'until' => 1417388399,
-         'from' => 1417129200,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (29.11.2014 - 30.11.2014)',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              11
-                            ]
-                          ],
-         'id' => 166,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2512,7 +2493,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -3071,27 +3052,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_020815',
-         'data' => '#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-30weihnachtsmarktinderbahnhofstra%C3%9Felich.html ("genauer Termin steht noch nicht fest")
-userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
-',
-         'periodic' => 1,
-         'until' => 1417388399,
-         'from' => 1417150800,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              28,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 29.11.2014 und 30.11.2014',
-         'id' => 2426,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3601,16 +3562,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/723-K/13/046',
-         'until' => 1417388399,
-         'text' => 'Heiligengrabe: B189: Ausbau der Ortsdurchfahrt OD Heiligengrabe, Vollsperrung, 06.08.2014 bis 30.11.2014 ',
-         'from' => 1407354971,
-         'id' => 2599,
-         'data' => 'userdel	2::inwork -62215,80737 -61590,80895
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => '146600440',
          'until' => 1420066800,
@@ -3865,16 +3817,7 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => '146001411',
-         'until' => 1417388400,
-         'text' => 'Wandlitz: Vollsperrung der Straße nach Bogensee, 06.11.2014 bis 30.11.2014 ',
-         'from' => 1415142000,
-         'id' => 2658,
-         'data' => 'userdel	2::inwork 17288,40557 17544,40499 17757,40658
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3919,25 +3862,26 @@ userdel	q4::inwork 5635,7660 5636,7540
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_023523',
-         'until' => 1417438800,
-         'text' => 'Glienicker Brücke: Filmarbeiten, Vollsperrung, Sperrung gilt auch für Fußgänger und Radfahrer, 27.11.2014 19:00 Uhr bis 01.12.2014 14:00 Uhr ',
-         'from' => 1417024800,
-         'id' => 2667,
-         'data' => 'userdel	2::temp -10593,476 -10715,472 -10826,469
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_023572',
-         'until' => 1418684399,
-         'text' => 'Pistoriusstr. Richtung Berliner Allee: zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt, (bis Mitte Dezember 2014 ',
+         'until' => 1419001200,
+         'text' => 'Pistoriusstr. Richtung Berliner Allee: zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt, bis 19.12.2014',
          'from' => 1417327200,
          'id' => 2668,
          'data' => 'userdel	q4::inwork; 13400,16395 13485,16362 13544,16339 13632,16305 13679,16286 13788,16240
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt, Ende der Bauarbeiten unbekannt',
+         'from' => undef,
+         'id' => 2669,
+         'data' => '#: last_checked: 2014-12-01
+userdel	2::inwork 10308,11833 10374,11734
+',
+         'type' => 'gesperrt'
        }
      
 );
