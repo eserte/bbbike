@@ -7,7 +7,7 @@ BBBike - a route-finder for cyclists in Berlin and Brandenburg
 =head1 PREBUILT PACKAGES
 
 You can check on L<http://bbbike.sourceforge.net/downloads.en.html> for prebuilt BBBike
-packages (Windows, einige Linux-Distributionen, MacOSX, FreeBSD).
+packages (Windows, some Linux distributions, MacOSX, FreeBSD).
 
 The following installation steps are necessary only for installing
 BBBike from source.
@@ -259,7 +259,7 @@ this can be done with
 	env LC_ALL=en_US.UTF-8 perl bbbike
 
 
-Some versions of BBBike are tested with: Linux (Debian wheezy, Debian squeeze, Debian etch, Ubuntu 12.04, CentOS, Suse 7.0 und 6.4, Red Hat 8.0), FreeBSD (Version 9.1, 9.0, 8.0, 6.1, 4.9, 4.6, 3.5), Windows (Windows 8, Windows 7, Vista, XP, 2000, NT 4.0, 98, 95), MacOSX (10.4, 10.5 ...), Solaris (Version 8 und 2.5). The
+Some versions of BBBike are tested with: Linux (Debian jessie, Debian wheezy, Debian squeeze, Debian etch, Ubuntu 12.04, CentOS, Suse 7.0 und 6.4, Red Hat 8.0), FreeBSD (Version 10.0, 9.2, 9.1, 9.0, 8.0, 6.1, 4.9, 4.6, 3.5), Windows (Windows 8, Windows 7, Vista, XP, 2000, NT 4.0, 98, 95), MacOSX (10.4, 10.5 ...), Solaris (Version 8 und 2.5). The
 development machine runs with FreeBSD.
 
 =head2 WWW version
