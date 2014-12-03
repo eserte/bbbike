@@ -173,7 +173,7 @@ EOF
 </gpx>
 EOF
     ok($resp->is_success, "Success with post");
-    like($resp->decoded_content, qr{Ung(ü|&#xfc;)ltiges Datenformat.}, 'Found error message');
+    like($resp->decoded_content, qr{Ung(ü|&#xfc;|&uuml;)ltiges Datenformat.}, 'Found error message');
 }
 
 sub check_polyline {
