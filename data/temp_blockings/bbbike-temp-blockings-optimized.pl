@@ -3873,6 +3873,17 @@ userdel	q4::inwork 5635,7660 5636,7540
 userdel	2::inwork 10308,11833 10374,11734
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_023614',
+         'until' => 1427814000,
+         'text' => 'Schiffbauerdamm: zwischen Luisenstr. und Albrechtstr. Bauarbeiten, Vollsperrung, bis 31.03.2015 17:00 Uhr ',
+         'from' => 1417548290,
+         'id' => 2670,
+         'data' => '#: add_fragezeichen: Können Radfahrer trotzdem passieren?
+userdel	q4::inwork 8870,12647 9056,12743
+',
+         'type' => 'handicap'
        }
      
 );

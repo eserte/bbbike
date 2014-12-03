@@ -23767,4 +23767,14 @@ EOF
 userdel	2::inwork 10308,11833 10374,11734
 EOF
      },
+     { from  => 1417548290, # 2014-12-02 20:24
+       until => 1427814000, # 2015-03-31 17:00
+       text  => 'Schiffbauerdamm: zwischen Luisenstr. und Albrechtstr. Bauarbeiten, Vollsperrung, bis 31.03.2015 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_023614',
+       data  => <<EOF,
+#: add_fragezeichen: Können Radfahrer trotzdem passieren?
+userdel	q4::inwork 8870,12647 9056,12743
+EOF
+     },
     );
