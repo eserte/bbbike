@@ -3529,16 +3529,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'LS/721-F/14/087',
-         'until' => 1418684400,
-         'text' => 'Steinhöfel: L36: Ersatzneubau Durchlaß, geplante Vollsperrung ab 30.06.2014',
-         'from' => 1403992800,
-         'id' => 2583,
-         'data' => 'userdel	2::inwork 60418,-397 58317,-1384
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

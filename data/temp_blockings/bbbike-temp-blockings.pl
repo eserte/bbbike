@@ -21156,11 +21156,11 @@ EOF
 userdel	q3::inwork; 13474,8060 13444,7879
 EOF
      },
-     { from  => $isodate2epoch->("2014-01-01 00:00:00"), # 1 Tag Vorlauf --- 1357040979, # 2013-01-01 12:49
+     { from  => $isodate2epoch->("2014-01-18 00:00:00"), # 1 Tag Vorlauf --- 1357040979, # 2013-01-01 12:49
        until => $isodate2epoch->("2014-01-23 12:00:00"), # 1358981999, # 2013-01-23 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 1]],
-       text  => 'Straße des 17. Juni: wegen der Fashion Week bis zum 23. Januar 2014 gesperrt',
+       recurrences => [['yearly', days => 3, months => 1]],
+       text  => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 19.01.2014 bis 21.01.2014',
        type  => 'gesperrt',
        source_id => 'IM_019489',
        data  => <<EOF,
@@ -22933,7 +22933,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 EOF
      },
      { from  => 1403992800, # 2014-06-29 00:00
-       until => 1418684400, # 2014-12-16 00:00
+       until => 1417558838, # 1418684400, # 2014-12-16 00:00
        text  => 'Steinhöfel: L36: Ersatzneubau Durchlaß, geplante Vollsperrung ab 30.06.2014',
        type  => 'gesperrt',
        source_id => 'LS/721-F/14/087',
