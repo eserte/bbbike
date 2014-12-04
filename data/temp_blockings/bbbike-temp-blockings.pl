@@ -21156,11 +21156,11 @@ EOF
 userdel	q3::inwork; 13474,8060 13444,7879
 EOF
      },
-     { from  => $isodate2epoch->("2014-01-18 00:00:00"), # 1 Tag Vorlauf --- 1357040979, # 2013-01-01 12:49
-       until => $isodate2epoch->("2014-01-23 12:00:00"), # 1358981999, # 2013-01-23 23:59
+     { from  => $isodate2epoch->("2015-01-18 00:00:00"), # 1 Tag Vorlauf --- 1357040979, # 2013-01-01 12:49
+       until => $isodate2epoch->("2015-01-21 23:59:59"), # 1358981999, # 2013-01-23 23:59
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 1]],
-       text  => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 19.01.2014 bis 21.01.2014',
+       text  => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 19.01.2015 bis 21.01.2015',
        type  => 'gesperrt',
        source_id => 'IM_019489',
        data  => <<EOF,
@@ -21812,9 +21812,9 @@ EOF
 userdel	2::temp 5047,10381 5076,10658
 EOF
      },
-     { from  => undef, # $isodate2epoch->("2014-09-29 06:00:00"), # 1407357333, # 1403739104, # 1376193600, # 2013-08-11 06:00
-       until => 1416065742, # $isodate2epoch->("2014-10-06 06:00:00"), # 1409243320, # $isodate2epoch->("2014-09-05 16:00:00"), # 1387555200, # 2013-12-20 17:00
-       text  => 'Sterndamm: Brückenarbeiten, Straße ist eventuell gesperrt',
+     { from  => $isodate2epoch->("2014-12-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2014-12-15 23:59:59"),
+       text  => 'Sterndamm: Eisenbahnunterführung vom 07.12.2014 bis 15.12.2014 gesperrt, auch für Radfahrer',
        type  => 'gesperrt',
        # source_id => 'IM_023012',
        data  => <<EOF,
@@ -23367,7 +23367,7 @@ userdel	q4::inwork; 18343,6318 18191,6363 17992,6436
 EOF
      },
      { from  => 1410559200, # 2014-09-13 00:00
-       until => $isodate2epoch->("2014-12-23 17:00:00"), # 1420066799, # 2014-12-31 23:59
+       until => 1417721247, # $isodate2epoch->("2014-12-23 17:00:00"), # 1420066799, # 2014-12-31 23:59
        text  => 'Fürstenwalder Damm: zwischen Bölschestr. und Am Goldmannpark Baustelle, Straße vollständig gesperrt, ab 15.09.2014 07 Uhr bis Ende Dezember 2014 ',
        type  => 'handicap',
        source_id => 'IM_022856',
@@ -23768,7 +23768,7 @@ userdel	2::inwork 10308,11833 10374,11734
 EOF
      },
      { from  => 1417548290, # 2014-12-02 20:24
-       until => 1427814000, # 2015-03-31 17:00
+       until => 1417722883, # -> handicap_s-orig # 1427814000, # 2015-03-31 17:00
        text  => 'Schiffbauerdamm: zwischen Luisenstr. und Albrechtstr. Bauarbeiten, Vollsperrung, bis 31.03.2015 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_023614',

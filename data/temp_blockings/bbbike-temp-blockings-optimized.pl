@@ -3016,7 +3016,26 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'id' => 2410
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_019489',
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+',
+         'periodic' => 1,
+         'until' => 1421881199,
+         'from' => 1421535600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              1
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 19.01.2015 bis 21.01.2015',
+         'id' => 2412,
+         'type' => 'gesperrt'
+       },
        {
          'until' => undef,
          'recurring' => 1,
@@ -3167,7 +3186,15 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1418684399,
+         'text' => 'Sterndamm: Eisenbahnunterführung vom 07.12.2014 bis 15.12.2014 gesperrt, auch für Radfahrer',
+         'from' => 1417820400,
+         'id' => 2469,
+         'data' => 'userdel	2::inwork 17736,5441 17886,5587
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3608,16 +3635,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_022856',
-         'until' => 1419350400,
-         'text' => 'Fürstenwalder Damm: zwischen Bölschestr. und Am Goldmannpark Baustelle, Straße vollständig gesperrt, ab 15.09.2014 07 Uhr bis Ende Dezember 2014 ',
-         'from' => 1410559200,
-         'id' => 2627,
-         'data' => 'userdel	q4::inwork 26302,5932 26080,5946 25579,5958
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
          'until' => 1420066799,
@@ -3873,17 +3891,6 @@ userdel	q4::inwork 5635,7660 5636,7540
 userdel	2::inwork 10308,11833 10374,11734
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_023614',
-         'until' => 1427814000,
-         'text' => 'Schiffbauerdamm: zwischen Luisenstr. und Albrechtstr. Bauarbeiten, Vollsperrung, bis 31.03.2015 17:00 Uhr ',
-         'from' => 1417548290,
-         'id' => 2670,
-         'data' => '#: add_fragezeichen: Können Radfahrer trotzdem passieren?
-userdel	q4::inwork 8870,12647 9056,12743
-',
-         'type' => 'handicap'
        }
      
 );
