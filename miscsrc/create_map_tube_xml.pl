@@ -19,6 +19,7 @@ use lib (
 	 "$FindBin::RealBin/../lib",
 	);
 
+use File::Basename qw(basename);
 use XML::LibXML;
 
 use Strassen::Core;
@@ -105,6 +106,7 @@ while() {
 my $fmtid = sub { sprintf 'S%03d', $_[0] };
 
 my $doc = XML::LibXML::Document->new('1.0', 'utf-8');
+$doc->addChild($doc->createComment('Created by ' . basename(__FILE__) . ' (part of BBBike)'));
 my $tube = $doc->createElement('tube');
 $doc->setDocumentElement($tube);
 my $stations = $tube->addNewChild(undef, 'stations');
