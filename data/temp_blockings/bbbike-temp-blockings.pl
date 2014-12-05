@@ -869,14 +869,14 @@ EOF
        text  => 'Hermannstraßenfest zwischen Flughafenstraße und Thomasstraße, Straße gesperrt, Dauer: 04.09.2004 04:00 Uhr bis 05.09.2004 23:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 12180,7387 12158,7449 12122,7553
+userdel	2 12180,7387 12158,7449 12123,7549
 userdel	2 11920,8252 11931,8206 11933,8198
 userdel	2 11920,8252 11915,8279 11898,8362
 userdel	2 12041,7788 12055,7751 12075,7696
 userdel	2 11979,8014 11963,8074
 userdel	2 11979,8014 12001,7937 12025,7852
 userdel	2 11933,8198 11963,8074
-userdel	2 12075,7696 12081,7679 12090,7651 12122,7553
+userdel	2 12075,7696 12081,7679 12090,7651 12121,7555 12123,7549
 EOF
      },
      { from  => 1094187600, # 2004-09-03 07:00
@@ -3075,8 +3075,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 12090,7651 12081,7679 12075,7696
-userdel	2 12090,7651 12122,7553
-userdel	2 12180,7387 12158,7449 12122,7553
+userdel	2 12090,7651 12121,7555 12123,7549
+userdel	2 12180,7387 12158,7449 12123,7549
 userdel	2 11920,8252 11931,8206 11933,8198
 userdel	2 11920,8252 11915,8279 11898,8362
 userdel	2 12041,7788 12055,7751
@@ -4591,7 +4591,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005438',
        data  => <<EOF,
-userdel	2 11979,8014 12001,7937 12025,7852 12041,7788 12055,7751 12075,7696 12081,7679 12090,7651 12122,7553 12158,7449 12180,7387
+userdel	2 11979,8014 12001,7937 12025,7852 12041,7788 12055,7751 12075,7696 12081,7679 12090,7651 12121,7555 12123,7549 12158,7449 12180,7387
 EOF
      },
      { from  => 1148565600, # 2006-05-25 16:00
@@ -6253,7 +6253,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003771',
        data  => <<EOF,
-userdel	2::temp 11979,8014 12001,7937 12025,7852 12041,7788 12055,7751 12075,7696 12081,7679 12090,7651 12122,7553 12158,7449 12180,7387
+userdel	2::temp 11979,8014 12001,7937 12025,7852 12041,7788 12055,7751 12075,7696 12081,7679 12090,7651 12121,7555 12123,7549 12158,7449 12180,7387
 EOF
      },
      { from  => 1160107200, # 2006-10-06 06:00
@@ -21744,23 +21744,23 @@ EOF
        text  => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: BER-20XX vvv
-#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht vvv
+#: add_fragezeichen: Ist das Befahren der Jürgen-Schumann-Allee für Radfahrer mittlerweile erlaubt? vvv
+#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes vvv
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 #: osm_watch: way id="83106248" version="15" brb
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 #: osm_watch: way id="60482011" version="25" brb
-#: osm_watch: way id="192153919" version="3" brb
-#: osm_watch: way id="192153925" version="6" brb
-#: osm_watch: way id="136089841" version="19" brb
+#: osm_watch: way id="192153919" version="4" brb
+#: osm_watch: way id="192153925" version="7" brb
+#: osm_watch: way id="136089841" version="20" brb
 	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
 	2 19131,-2145 19198,-2118
 	2 19909,-2863 19996,-2880
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
 #: XXX_osm ^^^
-#: next_check_id ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef,
