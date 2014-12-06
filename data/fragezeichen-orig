@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="5"
 #: osm_watch: way id="153373877" version="4"
-#: last_checked: 2014-10-12
+#: last_checked: 2014-12-06
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -60,12 +60,12 @@ Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected 
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
 #: osm_watch: way id="47266663" version="3"
 #: osm_watch: way id="47267054" version="1"
-#: last_checked: 2014-08-07
+#: last_checked: 2014-12-06
 #: check_frequency: 120d
 Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2320,8722 2295,8678 2273,8640 2190,8528 2126,8426 2120,8335 2106,8075 2087,7811 2114,7742
 # 
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
-#: last_checked: 2013-12-22
+#: last_checked: 2014-12-06
 #: check_frequency: 90d
 #: osm_watch: way id="4323788" version="14"
 #: osm_watch: way id="23109081" version="6"
@@ -600,10 +600,7 @@ Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected
 #: next_check: 2014-07-01
 Steg über den Packereigraben: wird er hier entstehen? Wie wird der Steg heißen?	?::inwork 6826,21587
 # 
-#: by: http://www.potsdam.de/cms/dokumente/13300755_1771576/fcb5126b/Amtsblatt_09_13.pdf
-#: XXX Sackgasse, Privatstraße
-#: XXX fehlt in Potsdam.coords.data, PLZ=14469
-Am Palais Lichtenau: wo genau liegt die Straße? Qualität?	? -12514,-340 -12488,-451 -12445,-444
+# REMOVED (eingetragen) --- #: by: http://www.potsdam.de/cms/dokumente/13300755_1771576/fcb5126b/Amtsblatt_09_13.pdf --- #: XXX Sackgasse, Privatstraße --- #: XXX fehlt in Potsdam.coords.data, PLZ=14469 --- Am Palais Lichtenau: wo genau liegt die Straße? Qualität?	? -12514,-340 -12488,-451
 # 
 #: note: Potsdam, nördliche Gartenstadt vvv
 #: by: http://www.potsdam.de/cms/dokumente/10036505_480745/c5f90e8e/B-Plan_66B_Planzeichnung-rechtskraeftig.pdf#Planzeichnung
@@ -998,8 +995,7 @@ Monumentenplatz	?::inwork 8344,9085 8332,9059
 Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis 2015	?::projected 8204,9001 8200,8920 7998,8317
 # 
 #: XXX_osm: fehlt bei osm komplett
-#: last_checked: 2013-12-22 (Bautätigkeit)
-#: check_frequency: 180d
+#: last_checked: 2014-12-06 (Straße existiert, asphaltiert, aber eventuell nur provisorisch)
 Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,133 -11388,270
 # 
 # REMVOED --- mitten auf dem Weg wird gerade ein Haus gebaut; außerdem gab es in einem Amtsblatt eine "Entwidmung als Straßenland" --- #: last_checked: 2011-10-03 --- #: next_check: 2012-02-15 --- #: XXX zurzeit Bauarbeiten. Wahrscheinlich Gehwegplatten --- U Zwickauer Damm - U Wutzkyallee: für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 15622,2051 15622,2037 15312,2010
@@ -1060,8 +1056,8 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-# REMOVED (nicht passiert) --- #: last_checked: 2011-12-25 (südöstlicher Abschnitt) --- #: next_check: 2012-03-01 --- #: by: http://www.potsdam.de/cms/beitrag/10061626/966975/ --- Mangerstr. (Potsdam): Bauarbeiten bis September 2011, danach asphaltiert	?::inwork -11669,-138 -11751,-58 -11831,-70 -11903,-71 -11947,-108 -12054,-274
-# REMOVED (passiert) --- #: next_check: 2011-11-15 --- #: by: http://www.potsdam.de/cms/beitrag/10079162/1191938/ --- Mangerstr. (Potsdam): Bauarbeiten bis November 2011, danach vielleicht etwas besseres Kleinsteinpflaster?	?::inwork -12054,-274 -11947,-108 -11903,-71 -11831,-70 -11751,-58
+# REMOVED (nicht passiert) --- #: last_checked: 2011-12-25 (südöstlicher Abschnitt) --- #: next_check: 2012-03-01 --- #: by: http://www.potsdam.de/cms/beitrag/10061626/966975/ --- Mangerstr. (Potsdam): Bauarbeiten bis September 2011, danach asphaltiert	?::inwork -11669,-138 -11751,-58 -11825,-61 -11903,-71 -11947,-108 -12054,-274
+# REMOVED (passiert) --- #: next_check: 2011-11-15 --- #: by: http://www.potsdam.de/cms/beitrag/10079162/1191938/ --- Mangerstr. (Potsdam): Bauarbeiten bis November 2011, danach vielleicht etwas besseres Kleinsteinpflaster?	?::inwork -12054,-274 -11947,-108 -11903,-71 -11825,-61 -11751,-58
 # 
 #: by: http://www.potsdam.de/cms/beitrag/10056300/757395/
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
@@ -1295,7 +1291,7 @@ Alt-Friedrichsfelde/Am Tierpark - Wohngebiet: Gehweg/flache breite Rampe, abgese
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 #: XXX wahrscheinlich nur ein Eintrag in comments_cyclepath notwendig, genaue Abschnitte der Nebenfahrbahn müssen erfasst werden
-Berliner Str. (Potsdam): Nebenfahrbahn (soweit vorhanden) wird zur Fahrradstraße deklariert werden	?; -12045,-757 -11935,-574 -11886,-493 -11877,-478 -11723,-220 -11669,-138 -11584,-66 -11494,-4 -11390,72 -11307,133 -11133,262 -11122,271 -11018,348 -10826,469
+Berliner Str. (Potsdam): Nebenfahrbahn (soweit vorhanden) wird zur Fahrradstraße deklariert werden	?; -12045,-757 -11935,-574 -11886,-493 -11877,-478
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 Kastanienallee (Potsdam): teilweise Entwidmung für den Kfzverkehr (wo genau? wann?)	? -14758,-2460 -14859,-2384
@@ -1583,10 +1579,7 @@ Lauterstr.: wird die Straße am Breslauer Platz komplett für Autofahrer/Radfahrer
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361057749620/1057749620/00056359/59-Anlagen/04/vzbbvv01814_-_Fussgaengerueberweg_Alte_Hellers.pdf --- #: priority: #C --- Alte Hellersdorfer Str.: wird hier ein Zebrastreifen entstehen	? 23079,15855 23134,15883
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4550&options=4 vvv
-#: last_checked: 2014-08-07 (keine Bauarbeiten zu erkennen)
-#: check_frequency: 180d
-#: priority: #C
-Uhlandstr./Ludwigkirchstr.: Planung eines Zebrastreifens für 2012	?::projected 5024,10153 5023,10140
+# REMOVED (realisiert) --- #: last_checked: 2014-08-07 (keine Bauarbeiten zu erkennen) --- #: check_frequency: 180d --- #: priority: #C --- Uhlandstr./Ludwigkirchstr.: Planung eines Zebrastreifens für 2012	?::projected 5026,10166 5023,10140
 # 
 #: last_checked: 2014-05-24
 #: check_frequency: 180d
@@ -3791,7 +3784,7 @@ Altstadtblick (Potsdam): Qualität der Straße?	? -12697,-2235 -12728,-2227 -12771
 #: by: http://berlinerbaustellen.blogspot.de/2014/01/0249-gastbaustelle-potsdam-lange-brucke.html (Unterführung)
 #: last_checked: 2014-05-11 vvv
 #: next_check: 2014-09-16 vvv
-Unterführung Lange Brücke: existiert der neue Weg schon, wie ist die Qualität?	? -12363,-1742 -12377,-1743 -12625,-1956 -12721,-2082
+Unterführung Lange Brücke: existiert der neue Weg schon, wie ist die Qualität?	? -12625,-1956 -12721,-2082
 Uferweg von der Neuen Fahrt zum Hermannswerder: existiert der Weg schon, wie ist die Qualität?	? -12721,-2082 -12754,-2154
 #: XXX ^^^
 #: next_check ^^^

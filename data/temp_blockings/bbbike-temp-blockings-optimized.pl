@@ -3187,6 +3187,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        {
+         'source_id' => 'IM_020145',
          'until' => 1418684399,
          'text' => 'Sterndamm: Eisenbahnunterführung vom 07.12.2014 bis 15.12.2014 gesperrt, auch für Radfahrer',
          'from' => 1417820400,
@@ -3442,24 +3443,15 @@ userdel	1::temp -13556,-1182 -13643,-1220
        },
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Uferweg an der Havel wegen Bauarbeiten gesperrt',
-         'from' => undef,
-         'id' => 2543,
-         'data' => '#: last_checked: 2014-05-11
-#: add_fragezeichen: Sind die Bauarbeiten am Uferweg beendet? Wurde der Uferweg asphaltiert?
-userdel	2::inwork -12363,-1742 -12457,-1857
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Wege am Havelufer wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2544,
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-08-09 (by http://www.deutsches-architektur-forum.de/forum/showthread.php?t=10252&page=15)
+#: last_checked: 2014-12-06
+#: check_frequency: 90d
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 ',
          'type' => 'gesperrt'
@@ -3655,7 +3647,7 @@ userdel	q4::inwork 13645,15609 13739,15643 13939,15723
          'from' => undef,
          'id' => 2630,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-10-12
+#: last_checked: 2014-12-06
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 ',
@@ -3887,10 +3879,31 @@ userdel	q4::inwork 5635,7660 5636,7540
          'text' => 'Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt, Ende der Bauarbeiten unbekannt',
          'from' => undef,
          'id' => 2669,
-         'data' => '#: last_checked: 2014-12-01
+         'data' => '#: last_checked: 2014-12-06
 userdel	2::inwork 10308,11833 10374,11734
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => undef,
+         'text' => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
+         'from' => undef,
+         'id' => 2671,
+         'data' => '#: last_checked: 2014-12-06
+userdel	q4::inwork; 9559,11715 9692,11732
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Augsburger Str.: Bauarbeiten, Einbahnstraßenregelung',
+         'from' => undef,
+         'id' => 2672,
+         'data' => '#: last_checked: 2014-12-06
+userdel	q4::inwork; 5866,10492 5780,10542 5636,10626
+',
+         'type' => 'handicap'
        }
      
 );

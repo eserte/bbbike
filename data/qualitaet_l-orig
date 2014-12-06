@@ -512,8 +512,8 @@ zur Heilig-Geist-Str. (Potsdam): Asphalt	Q0 -12100,-962 -12078,-1068
 Heilig-Geist-Str. (Potsdam): Kopfsteinpflaster	Q2 -12070,-1153 -12070,-1269 -12062,-1378
 Türkstr.: Kopfsteinpflaster	Q2 -12248,-1107 -12078,-1068 -11960,-1041
 Holzmarktstr. (Potsdam): Asphalt	Q0 -12168,-965 -12100,-962 -11919,-943
-Mangerstr. (Potsdam): Kopfsteinpflaster	Q2+ -11669,-138 -11751,-58
-Mangerstr. (Potsdam): glattes Kleinsteinpflaster	Q1 -11751,-58 -11831,-70 -11903,-71 -11947,-108 -12054,-274
+Mangerstr. (Potsdam): Kopfsteinpflaster	Q2+ -11669,-138 -11755,-51
+Mangerstr. (Potsdam): glattes Kleinsteinpflaster	Q1 -11755,-51 -11825,-61 -11900,-63 -11947,-108 -12054,-274
 Mangerstr. (Potsdam): Asphalt	Q0 -12054,-274 -12123,-294 -12265,-418
 Wilhelm-Leuschner-Str.: schlechtes Kopfsteinpflaster (Potsdam)	Q3 -10059,374 -10097,200
 Gutenbergstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -12886,-869 -13025,-901 -13158,-930 -13264,-952 -13433,-991
@@ -550,7 +550,7 @@ Ferch: Weg am Wasser: teils etwas sandig	Q2 -20816,-10818 -21029,-10817 -21537,-
 Lindstedter Chaussee: Waldweg	Q2 -15813,-154 -16006,-80 -16156,135 -16176,330 -16232,431 -16446,1006 -16694,1310
 Lindstedter Chaussee: Asphalt	Q0 -16694,1310 -16742,1387
 Otto-Nagel-Str. (Potsdam): Kopfsteinpflaster	Q2 -11877,-478 -11978,-348 -12054,-274
-Helmholtzstr. (Potsdam): Kopfsteinpflaster	Q2 -11831,-70 -11978,-348
+Helmholtzstr. (Potsdam): Kopfsteinpflaster	Q2 -11825,-61 -11978,-348
 Griebnitzstr. (Potsdam): asphaltiert	Q0 -9698,-19 -9627,-27
 Griebnitzstr. (Potsdam): Kopfsteinpflaster	Q2 -9627,-27 -9432,-57
 Griebnitzstr. (Potsdam): Waldweg	Q1 -9432,-57 -9399,-139
@@ -1286,12 +1286,12 @@ Cremzow - Klockow: Feldweg in der Qualität eines Trampelpfads	Q3 51030,106885 50
 Rollberg: Feldweg, teilweise etwas sandig	Q2 53527,102597 53396,102754
 Neuer Garten: Parkweg	Q1 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12133,1323
 Neuer Garten: glatter Parkweg	Q1+ -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12135,1358
-Seestr.: Kopfsteinpflaster	Q2 -11903,-71 -11866,103 -11796,240 -11707,315
+Seestr.: Kopfsteinpflaster	Q2 -11900,-63 -11866,103 -11796,240 -11707,315
 Seestr.: schlechtes Kopfsteinpflaster, bessere Banketten	Q3;Q2 -11707,315 -11609,400 -11584,452 -11581,559
 Seestr.: Kopfsteinpflaster	Q2 -11581,559 -11650,590
 Rubensstr.: Kopfsteinpflaster, OK	Q1 -11584,-66 -11716,133 -11796,240
 Dürerstr.: Kopfsteinpflaster, OK	Q1 -11716,133 -11626,191
-Mühlenweg: Asphalt mit Löchern und Schotter	Q2+ -11751,-58 -11866,103
+Mühlenweg: Asphalt mit Löchern und Schotter	Q2+ -11755,-51 -11866,103
 Mühlenweg: schlechtes Kopfsteinpflaster	Q3 -11866,103 -11913,144
 Kleine Gasse: schlechtes Kopfsteinpflaster	Q3 -13272,-1168 -13287,-1231
 (Heiliger See, Ostufer): Parkweg	Q1 -11650,590 -11603,721 -11615,853
@@ -1713,7 +1713,10 @@ Mövenstr. (Potsdam): asphaltiert	Q0 -10252,414 -10185,280 -10120,234 -10097,200
 Uferpromenade im Babelsberger Park: Parkweg, teilweise etwas uneben	Q1 -9965,-105 -10041,-74 -10293,-96 -10321,-37 -10619,51 -10709,-62 -10832,-75 -10895,-246
 Uferpromenade und Hauptweg im Babelsberger Park: asphaltiert	Q1+ -10895,-246 -11055,-461 -11136,-687 -11127,-812 -11040,-887 -11081,-1303 -11084,-1396
 Uferpromenade im Babelsberger Park: Parkweg, kurzes Stück Kopfsteinpflaster	Q1 -11136,-687 -11189,-805 -11284,-909 -11425,-1001 -11452,-974 -11494,-1014 -11531,-1021 -11597,-989 -11657,-1018
-Uferpromenade: überwiegend guter Parkweg	Q1 -11657,-1018 -11702,-1078 -11719,-1189 -11767,-1265 -11753,-1334 -11729,-1382 -11899,-1544 -11952,-1596 -12059,-1617 -12102,-1582 -12363,-1742 -12457,-1857
+Uferpromenade: überwiegend guter Parkweg	Q1 -11657,-1018 -11702,-1078 -11719,-1189 -11767,-1265 -11753,-1334 -11729,-1382 -11899,-1544 -11952,-1596 -12059,-1617 -12102,-1582 -12363,-1742
+#: XXX hier mittlerweile asphaltiert?
+Uferpromenade - S-Bhf. Potsdam Hauptbahnhof: überwiegend guter Parkweg	Q1 -12363,-1742 -12457,-1857
+(Unterführung Lange Brücke): asphaltiert	Q0 -12363,-1742 -12377,-1743 -12625,-1956
 Breite Str. - Auf dem Kiewitt: gute Parkwege oder Gehwegplatten	Q1 -13764,-1460 -13865,-1618 -14009,-1678 -13979,-1842
 Auf dem Kiewitt: asphaltiert	Q0 -14069,-2227 -14060,-2187 -14019,-2122 -13975,-2098 -13981,-1915 -13977,-1870 -13979,-1842 -14115,-1678
 Auf dem Kiewitt - Zeppelinstr.: Asphalt	Q0 -14069,-2227 -14202,-2232 -14265,-2221 -14359,-2142
@@ -2070,8 +2073,8 @@ Am Hinzenberg: gute Pflasterung	Q0 -12708,-1928 -12678,-1812 -12669,-1768
 Alter Markt: gepflastert	Q2+ -12614,-1471 -12619,-1549 -12624,-1598
 Alter Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12728,-1539
 #: XXX bleibt es hier asphaltiert?
-#: last_checked: 2013-12-22
-#: next_check: 2014-05-22
+#: last_checked: 2014-12-06
+#: check_frequency: 180d
 Alter Markt: provisorischer Asphalt	Q0- -12728,-1539 -12786,-1556
 Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12808,-1488 -12870,-1493
 Am Neuen Markt: mäßiges bis schlechtes Kopfsteinpflaster	Q2- -12882,-1565 -12870,-1493
@@ -3496,6 +3499,10 @@ B166 - Meyenburg: Asphalt	Q0 65632,76166 65608,76120 65592,76043 65535,75912 654
 Dr.-Theodor-Neubauer-Str.: Asphalt	Q0 68933,74089 68794,73965 68960,73751 68932,73669 68694,73474
 Hanns-Eisler-Weg: Asphalt	Q0 68694,73474 68608,73622 68594,73737 68643,73843 68794,73965
 Platz der Befreiung: Betonplatten	Q0- 68960,73751 69121,73868
+#: XXX wie wird die Qualität nach den Bauarbeiten sein?
+#: last_checked: 2014-12-06
+#: check_frequency: 120d
+Am Palais Lichtenau: noch unbefestigt, teilweise ist die Fahrbahn wegen Bauarbeiten gesperrt	Q2 -12514,-340 -12488,-451
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:

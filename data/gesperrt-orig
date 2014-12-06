@@ -2943,8 +2943,6 @@ Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,
 ######################################################################
 # Unsorted
 # 
-#: note: zwischen Eisenhart- und Friedrich-Ebert-Str. keine Einbahnstraße mehr (http://www.potsdam.de/cms/beitrag/10055182/757395/)
-Behlertstr.	1 -12370,-354 -12514,-340 -12621,-359 -12821,-417
 tragen (Treppe)	0:30 2279,5112
 tragen (Treppe)	0:15 2211,5120
 tragen (Treppe)	0:30 17626,-1847
@@ -3124,10 +3122,12 @@ tragen (11 Stufen)	0:20 2228,11317
 tragen (8 Stufen)	0:40 2300,11292
 Thüringerallee: Privatstr.	2 1454,11164 1342,11020
 Bismarckallee: queren nicht möglich	3nocross 1554,8638 1577,8655 1632,8716
-Drängelgitter	BNP:10 1459,8858
-Drängelgitter	BNP:10 1407,8931
-Drängelgitter	BNP:10 1366,8986
-Drängelgitter	BNP:10 1330,9038
+#: corrected_by: srt (BNP:10 -> ...) vvv
+Drängelgitter	BNP:3::trailer=10 1474,8859
+Drängelgitter	BNP:3::trailer=10 1440,8903
+Drängelgitter	BNP:3::trailer=10 1360,9012
+Drängelgitter	BNP:3::trailer=10 1324,9057
+#: corrected_by ^^^
 Tor	BNP:15 1834,8893
 #: corrected_by: srt/new_policy (0:180 -> 0:60; even at 5 km/h lost time would be about 80s)
 tragen (10 x 3 Stufen)	0:60 2170,8841

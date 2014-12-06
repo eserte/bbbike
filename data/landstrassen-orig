@@ -1377,6 +1377,8 @@ Karl-Marx-Str.	N -9956,-242 -9655,-298 -9468,-450 -9426,-551 -9377,-625 -9318,-7
 Rosa-Luxemburg-Str.	N -9090,-1293 -9176,-1188 -9207,-1144 -9306,-1000 -9410,-815 -9473,-762 -9581,-602 -9648,-524
 Behlertstr.	B -12045,-757 -12106,-699 -12194,-463 -12265,-418 -12370,-354
 Behlertstr.	N -12370,-354 -12514,-340 -12621,-359 -12821,-417 -12865,-425
+#: note: Privatstraße
+Am Palais Lichtenau	N -12514,-340 -12488,-451
 Am Neuen Garten	B -12370,-354 -12396,-298 -12432,-226 -12438,-214 -12449,-186 -12505,-60 -12528,-11 -12557,11
 Am Neuen Garten	N -12582,127 -12332,585 -12323,635 -12297,738 -12276,831 -12212,1201 -12166,1384
 Alleestr.	B -12557,11 -12637,-8 -12661,-14 -12840,-69
@@ -1622,7 +1624,7 @@ Friedrich-Ebert-Str.	N -12776,-1575 -12786,-1556 -12808,-1488 -12833,-1365
 Friedrich-Ebert-Str.	N -12833,-1365 -12839,-1342
 Friedrich-Ebert-Str.	N -12839,-1342 -12854,-1243 -12870,-1149 -12881,-1092 -12883,-976 -12886,-869 -12884,-769 -12879,-691
 Friedrich-Ebert-Str.	NN -12879,-691 -12877,-655
-Friedrich-Ebert-Str.	NH -12877,-655 -12872,-565 -12865,-425 -12861,-330 -12846,-164 -12840,-69
+Friedrich-Ebert-Str.	NH -12877,-655 -12872,-565 -12868,-502 -12865,-425 -12861,-330 -12846,-164 -12840,-69
 Helene-Lange-Str.	N -12861,-330 -13132,-256
 #: note: I believe that Googlemaps and Pharus are wrong here ("Kiepenheuerallee")
 Am Schragen	N -13157,394 -13094,347 -13036,342
@@ -1810,7 +1812,9 @@ Schwanenallee	NN -11615,853 -11510,810 -11412,784 -11392,762
 Schwanenallee	N -11392,762 -11231,696 -11106,644 -10857,487
 Schwanenallee	NN -10857,487 -10826,469
 Lindstedter Chaussee	NN -15813,-154 -16006,-80 -16156,135 -16176,330 -16232,431 -16446,1006 -16694,1310 -16742,1387
-(Uferweg, Orte am Fluss)	NN -12457,-1857 -12363,-1742 -12102,-1582 -12059,-1617 -11952,-1596
+(Unterführung Lange Brücke)	NN -12363,-1742 -12377,-1743 -12625,-1956
+(S-Bhf. Potsdam Hauptbahnhof - Uferweg, Orte am Fluss)	NN -12457,-1857 -12363,-1742
+(Uferweg, Orte am Fluss)	NN -12363,-1742 -12102,-1582 -12059,-1617 -11952,-1596
 Havelstr.	NN -11952,-1596 -11899,-1544 -11729,-1382 -11753,-1334 -11767,-1265 -11719,-1189 -11702,-1078
 (Park Babelbsberg, Uferweg)	NN -9965,-105 -10041,-74 -10293,-96 -10321,-37 -10619,51 -10709,-62 -10832,-75 -10895,-246 -11055,-461 -11136,-687 -11189,-805 -11284,-909 -11425,-1001 -11452,-974 -11494,-1014 -11531,-1021 -11597,-989 -11657,-1018 -11702,-1078
 (Park Babelbsberg, Hauptweg)	NN -11136,-687 -11127,-812 -11040,-887 -11081,-1303 -11084,-1396
@@ -1820,18 +1824,18 @@ Fährstr.	N -10363,2151 -10311,1996 -10080,1963 -10086,1886
 Französische Str.	NH -12553,-1025 -12552,-1096 -12552,-1233 -12549,-1277
 (Im Französischen Quartier)	N -12552,-1096 -12601,-1108
 (Im Französischen Quartier)	NN -12601,-1108 -12670,-1120 -12657,-1183 -12741,-1197
-Mangerstr.	N -12265,-418 -12123,-294 -12054,-274 -11947,-108 -11903,-71 -11831,-70 -11751,-58 -11669,-138
-Seestr.	N -11903,-71 -11866,103 -11796,240 -11707,315 -11609,400 -11584,452 -11581,559
+Mangerstr.	N -12265,-418 -12123,-294 -12054,-274 -11947,-108 -11900,-63 -11825,-61 -11755,-51 -11669,-138
+Seestr.	N -11900,-63 -11866,103 -11796,240 -11707,315 -11609,400 -11584,452 -11581,559
 Tizianstr.	N -11581,559 -11480,621 -11424,542 -11363,447
 Rembrandtstr.	N -11337,609 -11122,271
 Böcklinstr.	N -11231,696 -11246,665 -11337,609 -11424,542 -11509,479 -11584,452
 Ludwig-Richter-Str.	N -11494,-4 -11626,191 -11707,315 -11751,390
 Rubensstr.	N -11584,-66 -11716,133 -11796,240
 Dürerstr.	N -11716,133 -11626,191
-Mühlenweg	N -11751,-58 -11866,103 -11913,144
+Mühlenweg	N -11755,-51 -11866,103 -11913,144
 (Heiliger See, Ostufer)	NN -11581,559 -11650,590 -11603,721 -11615,853
 Otto-Nagel-Str.	N -11877,-478 -11978,-348 -12054,-274
-Helmholtzstr.	N -11831,-70 -11978,-348
+Helmholtzstr.	N -11825,-61 -11978,-348
 Horstweg	H -11152,-3498 -10893,-3289 -10859,-3249 -10674,-3027 -10624,-2957 -10553,-2859 -10495,-2787 -10446,-2693 -10418,-2624 -10350,-2358 -10327,-2262
 An der Alten Zauche	H -10752,-3979 -10676,-3954
 An der Alten Zauche	NH -10676,-3954 -10573,-3824 -10559,-3782 -10560,-3749 -10585,-3671 -10584,-3535 -10585,-3440 -10586,-3316 -10641,-3232 -10643,-3155 -10643,-3062 -10674,-3027
@@ -1865,9 +1869,9 @@ Joliot-Curie-Str.	N -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 (Wohngebiet Joliot-Curie-Str.)	N -12500,-1437 -12537,-1447 -12562,-1367 -12606,-1379 -12582,-1460 -12537,-1447
 Am Alten Markt	N -12666,-1311 -12657,-1338 -12628,-1423 -12614,-1471 -12583,-1552
 # REMOVED --- #: XXX Straße bekommt den Namen "Humboldtstraße" --- #: by: http://www.potsdam.de/cms/dokumente/10052349_761024/efcbaeab/abl11_2009.pdf --- #: by: http://www.potsdam-wiki.de/index.php/Humboldtstra%C3%9Fe --- #: XXX Siehe auch Eintrag in fragezeichen-orig zur "Humboldtstr. (Potsdam)"
-#: XXX zurzeit nur für Baufahrzeuge, aber Radfahrer können eigentlich passieren, evtl. wird die Straße nur für Anlieger frei sein, nach der Beendigung aller Bauarbeiten wieder prüfen
-#: last_checked: 2014-05-11
-#: next_check: 2014-06-22
+#: XXX Situation nach der Beendigung aller Bauarbeiten wieder prüfen
+#: last_checked: 2014-12-06
+#: check_frequency: 180d
 Humboldtstr.	N -12655,-1714 -12643,-1694 -12624,-1598 -12583,-1552
 # REMOVED --- #: XXX Straße bekommt den Namen "Alter Markt" (ohne "Am") (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend, PLZ=14467, Eintrag in Potsdam.coords.data fehlt --- #: by: http://www.potsdam.de/cms/dokumente/10052349_761024/efcbaeab/abl11_2009.pdf --- #: last_checked: 2013-11-22 (keine Straßenschilder)
 Alter Markt	NN -12624,-1598 -12619,-1549 -12614,-1471
@@ -1876,6 +1880,7 @@ Alter Markt	NN -12583,-1552 -12619,-1549 -12677,-1536 -12728,-1539 -12786,-1556
 #: XXX PLZ=14467
 #: by: http://www.potsdam.de/cms/dokumente/29389519_2027173/10818367/Amtsb_01_14.pdf
 #: by: http://www.potsdam.de/cms/dokumente/10100646_480745/b8156544/Anl_2-BP-San-P13.pdf
+#: next_check: 2015-02-06
 (Alter Markt - Uferweg)	NN -12583,-1552 -12485,-1482
 #: note: frühere Adresse "Im Staudenhof" (laut DPAG-Mitteilungsblatt 3/2013)
 Am Alten Markt [Wohngebiet]	NN -12747,-1336 -12727,-1416 -12694,-1408 -12685,-1449 -12677,-1536
