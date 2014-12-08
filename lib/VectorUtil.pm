@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2004,2008,2010,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2004,2008,2010,2011,2014 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = 1.22;
+$VERSION = 1.23;
 
 require Exporter;
 @ISA = 'Exporter';
@@ -25,6 +25,7 @@ require Exporter;
 		point_in_grid point_in_polygon move_point_orthogonal
 		intersect_rectangles enclosed_rectangle normalize_rectangle
 		azimuth offset_line bbox_of_polygon combine_bboxes
+		triangle_area
 	       );
 
 sub pi () { 4 * atan2(1, 1) } # 3.141592653
@@ -522,6 +523,14 @@ sub combine_bboxes {
 	}
     }
     [$minx,$miny,$maxx,$maxy];
+}
+
+# from http://en.wikipedia.org/wiki/Triangle#Computing_the_area_of_a_triangle
+# (shoelace formula)
+# see also Strassen::Stat:area_for_coords for a general polygon area function
+sub triangle_area {
+    my(@p) = @_;
+    0.5 * abs(($p[0][0]-$p[2][0])*($p[1][1]-$p[0][1]) - ($p[0][0]-$p[1][0])*($p[2][1]-$p[0][1]));
 }
 
 # Protect from floating point inaccuracies

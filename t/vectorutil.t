@@ -24,7 +24,7 @@ use Getopt::Long;
 use BBBikeTest qw(is_float);
 use Strassen::Util qw();
 
-plan tests => 20;
+plan tests => 24;
 
 my $do_bench;
 my $do_xxx;
@@ -38,7 +38,7 @@ GetOptions(
 use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
        'enclosed_rectangle', 'bbox_of_polygon', 'combine_bboxes',
        'distance_point_line', 'project_point_on_line',
-       'offset_line',
+       'offset_line', 'triangle_area'
       );
 
 goto XXX if $do_xxx;
@@ -171,6 +171,11 @@ XXX: {
     my @expected_coordlist_rueck = (0,3, -100,3, -103,0, -100,-3, 0,-3);
     test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 180° polyline');
 }
+
+is triangle_area([0,0],[2,0],[2,1]), 1;
+is triangle_area([0,0],[-2,0],[-2,-1]), 1;
+is triangle_area([0,0],[2,0],[0,0]), 0;
+is triangle_area([0,0],[2,0],[1,1]), 1;
 
 # One test.
 sub test_offset_line {
