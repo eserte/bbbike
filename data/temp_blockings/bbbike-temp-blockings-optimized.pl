@@ -3510,8 +3510,8 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        {
          'source_id' => '146600440',
-         'until' => 1420066800,
-         'text' => 'Lauchhammer: L60: Sanierungsarbeiten Schipkau - Lauchhammer ab 25.08.2014 Vollsperrung, bis 31.12.2014 ',
+         'until' => 1422745199,
+         'text' => 'Lauchhammer: L60: Sanierungsarbeiten Schipkau - Lauchhammer ab 25.08.2014 Vollsperrung, bis 31.01.2015',
          'from' => 1408996606,
          'id' => 2600,
          'data' => 'userdel	2::inwork 45536,-99326 45006,-99332
@@ -3841,8 +3841,8 @@ userdel	q4::inwork; 5866,10492 5780,10542 5636,10626
          'type' => 'handicap'
        },
        {
-         'until' => 1418598000,
-         'text' => 'Perleberger Brücke: Sperrung am 13.12.2014 und 14.12.2014',
+         'until' => 1418599800,
+         'text' => 'Perleberger Brücke: Sperrung vom 13.12.2014 00:30 Uhr bis 15.12.2014 00:30 Uhr',
          'from' => 1418338800,
          'id' => 2673,
          'data' => 'userdel	2::inwork 7373,14566 7180,14419

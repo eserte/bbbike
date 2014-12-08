@@ -23111,8 +23111,8 @@ userdel	2::inwork -62215,80737 -61590,80895
 EOF
      },
      { from  => 1408996606, # 2014-08-25 21:56
-       until => 1420066800, # 2015-01-01 00:00
-       text  => 'Lauchhammer: L60: Sanierungsarbeiten Schipkau - Lauchhammer ab 25.08.2014 Vollsperrung, bis 31.12.2014 ',
+       until => $isodate2epoch->("2015-01-31 23:59:59"), # 1420066800, # 2015-01-01 00:00
+       text  => 'Lauchhammer: L60: Sanierungsarbeiten Schipkau - Lauchhammer ab 25.08.2014 Vollsperrung, bis 31.01.2015',
        type  => 'gesperrt',
        source_id => '146600440',
        data  => <<EOF,
@@ -23795,8 +23795,8 @@ userdel	q4::inwork; 5866,10492 5780,10542 5636,10626
 EOF
      },
      { from  => $isodate2epoch->("2014-12-12 00:00:00"), # 1 Tag Vorlauf
-       until => 1418598000, # 2014-12-15 00:00
-       text  => 'Perleberger Brücke: Sperrung am 13.12.2014 und 14.12.2014',
+       until => $isodate2epoch->("2014-12-15 00:30:00"),
+       text  => 'Perleberger Brücke: Sperrung vom 13.12.2014 00:30 Uhr bis 15.12.2014 00:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 7373,14566 7180,14419
