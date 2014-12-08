@@ -23794,4 +23794,12 @@ EOF
 userdel	q4::inwork; 5866,10492 5780,10542 5636,10626
 EOF
      },
+     { from  => $isodate2epoch->("2014-12-12 00:00:00"), # 1 Tag Vorlauf
+       until => 1418598000, # 2014-12-15 00:00
+       text  => 'Perleberger Brücke: Sperrung am 13.12.2014 und 14.12.2014',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 7373,14566 7180,14419
+EOF
+     },
     );
