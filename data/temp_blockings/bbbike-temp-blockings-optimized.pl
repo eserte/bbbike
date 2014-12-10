@@ -2377,7 +2377,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 userdel	2::temp 8055,12186 8119,12414
 userdel	2::temp 8522,12239 8466,12197
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
@@ -2991,7 +2991,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        {
          'source_id' => 'IM_019489',
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8538,12245
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 ',
          'periodic' => 1,
          'until' => 1421881199,
@@ -3336,6 +3336,7 @@ userdel	2::night 17671,13132 17684,13133
          'data' => '#: by: http://www.potsdam.de/cms/beitrag/10046424/302934/
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/91842041/Radverkehrsfuehrung_Gro%C3%9Fveranstaltungen.pdf
 #: by: http://www.potsdam.de/cms/ziel/302934/DE
+#: by: http://www.mobil-potsdam.de/fileadmin/user_upload/Pdf/Radverkehrsfuehrung_Grossveranstaltungen.pdf
 userdel	1::temp -13556,-1182 -13643,-1220
 ',
          'periodic' => 1,
@@ -3350,7 +3351,7 @@ userdel	1::temp -13556,-1182 -13643,-1220
                               11
                             ]
                           ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 24.11.2014 - 28.12.2014',
+         'text' => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 24.11.2014 - 28.12.2014',
          'type' => 'gesperrt',
          'id' => 2526
        },
@@ -3638,8 +3639,8 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
        undef,
        {
          'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
-         'until' => 1418659200,
-         'text' => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 15.12.2014',
+         'until' => 1418832000,
+         'text' => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 17.12.2014',
          'from' => 1407706402,
          'id' => 2639,
          'data' => '#: source_id: IM_022377
@@ -3814,7 +3815,7 @@ userdel	q4::inwork 5635,7660 5636,7540
          'text' => 'Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt, Ende der Bauarbeiten unbekannt',
          'from' => undef,
          'id' => 2669,
-         'data' => '#: last_checked: 2014-12-06
+         'data' => '#: last_checked: 2014-12-10
 userdel	2::inwork 10308,11833 10374,11734
 ',
          'type' => 'gesperrt'
@@ -3848,6 +3849,16 @@ userdel	q4::inwork; 5866,10492 5780,10542 5636,10626
          'data' => 'userdel	2::inwork 7373,14566 7180,14419
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_023660',
+         'until' => 1418565600,
+         'text' => 'Schönstr.: Wasserrohrbruch, Fahrbahn zwischen Rennbahnstr. und Große Seestr. gesperrt, 10.12.2014 11:00 Uhr bis 14.12.2014 15:00 Uhr ',
+         'from' => 1418119200,
+         'id' => 2674,
+         'data' => 'userdel	q4::inwork 14136,17170 14006,16961
+',
+         'type' => 'handicap'
        }
      
 );

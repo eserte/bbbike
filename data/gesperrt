@@ -789,7 +789,7 @@ Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14270,9710
 Parkaue	1s 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
-Am Zirkus	1s 9212,12969 9167,13046
+Am Zirkus	1s 9239,12923 9212,12969 9167,13046
 DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615,9675 1724,9772
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
@@ -872,6 +872,7 @@ Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
 Ernst-von-Bergmann-Klinikum	1 -12365,-752 -12360,-772 -12351,-828
 Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -12418,-764
+B1/B5	2 30678,10923 29752,10895 29194,10899 27817,10875
 Hanns-Eisler-Weg	1 68794,73965 68643,73843 68594,73737 68608,73622 68694,73474
 B166	1 63418,78608 63579,78548 63634,78433
 B166	1 63559,78397 63464,78555
@@ -1948,7 +1949,6 @@ Altheider Str. -> Adlergestell: Mittelstreifen	3::igndisp 19871,3600 19812,3561 
 Adlergestell -> Seidenbaustr.: Mittelstreifen	3::igndisp 19812,3561 19857,3514 19966,3596
 Seidenbaustr. -> Adlergestell: Mittelstreifen	3::igndisp 19966,3596 19857,3514 19904,3464
 Mittelstreifen	3nocross::ignrte 19735,3643 19676,3705 19633,3751 19587,3801
-Adlergestell -> Am Adlergestell: Mittelstreifen	3::igndisp 19633,3751 19676,3705 19755,3780
 Am Adlergestell -> Adlergestell: Mittelstreifen	3::igndisp 19755,3780 19676,3705 19735,3643
 Adlergestell -> Husstr.: Mittelstreifen	3::igndisp 19587,3801 19633,3751 19736,3858
 Husstr. -> Adlergestell: Mittelstreifen	3::igndisp 19736,3858 19633,3751 19676,3705
@@ -2133,6 +2133,9 @@ Altentreptower Str. -> Unfallkrankenhaus Berlin: Mittelstreifen	3::igndisp 21307
 Unfallkrankenhaus Berlin -> Altentreptower Str.: Mittelstreifen	3::igndisp 21401,12155 21400,12135 21573,12140
 Mittelstreifen	3nocross::ignrte 6692,11365 6716,11439 6825,11486
 Stülerstr. -> zur Thomas-Dehler-Str.: Mittelstreifen	3::igndisp 6692,11365 6716,11439 6657,11467
+Mittelstreifen	3nocross::ignrte 8303,12216 8344,12221 8538,12245
+Str. des 17. Juni -> Lennéstr./Kemperpl.: Mittelstreifen	3::igndisp 8538,12245 8344,12221 8327,12174
+Lennéstr./Kemperpl. -> Str. des 17. Juni: Mittelstreifen	3::igndisp 8327,12174 8344,12221 8303,12216
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
