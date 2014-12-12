@@ -84,7 +84,7 @@ Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::in
 #: last_checked: 2014-12-04
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
-#: last_checked: 2014-11-26
+#: last_checked: 2014-12-12
 Schadowstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 9007,12499 9016,12416
 # 
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
@@ -151,10 +151,10 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (Fahrbahn wieder befahrbar) --- #: next_check_id: VOSSSTR-2014 vvv --- #: source_id: INKO_113363 vvv --- #: XXX laut INKO_113363 bis Ende September 2014 gesperrt vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html --- #: by: http://www.tagesspiegel.de/berlin/einkaufszentrum-am-leipziger-platz-in-berlin-mitte-mall-of-berlin-eroeffnet-am-25-september/10340428.html --- #: osm_watch: way id="197160274" version="1" vvv --- #: last_checked: 2014-09-13 vvv --- #: next_check: 2014-09-25 vvv --- Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676 --- Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwork 8837,11676 9000,11727
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2014-12-10
+#: last_checked: 2014-12-12
 Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
-#: last_checked: 2014-12-10 vvv
+#: last_checked: 2014-12-12 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
@@ -272,7 +272,7 @@ Leuschnerdamm: Bauarbeiten am Engelbecken, auf Gehweg ausweichen	q4::inwork 1136
 ### Tiergarten ###
 # 
 #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245
-#: last_checked: 2014-09-13
+#: last_checked: 2014-12-13
 #: check_frequency: 180d
 Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 # 
@@ -303,7 +303,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden a
 # 
 #: next_check_id: FRIEDEL-2014
 #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht?
-#: last_checked: 2014-10-31
+#: last_checked: 2014-12-12
 #: check_frequency: 60d
 Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
@@ -453,7 +453,7 @@ Tiergarten: Parkweg	q1 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353
 #: XXX_prog BS zur Allee
 Tiergarten: Parkweg, Bordstein	q3 7603,12353 7627,12380
 Tiergarten: einige Fußgänger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-Tiergarten: einige Fußgänger	q1 8210,11775 8244,11878 8327,12174 8344,12221
+Tiergarten: einige Fußgänger	q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): einige Fußgänger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
 Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
@@ -615,7 +615,7 @@ Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10312,12982 10371,1
 Monbijoupark - Henriette-Herz-Platz: Fußgänger	q1 9977,12912 10132,12941
 Monbijoubrücke: Fußgänger	q1 9707,12974 9683,12913 9654,12882
 Garnisonkirchplatz: Straßenbahn	q2 10309,12854 10255,12959
-Fürther Str.: Gehweg	q2 5773,10318 5808,10284
+Fürther Str.: Gehweg	q2 5764,10322 5808,10284
 (Zossener Brücke - Mehringplatz): Gehweg	q1 9873,10285 9668,10306
 #: note: nach Einwand von britta tr. (Message-ID: <43BA64D8.5030001@charite.de>) von q2 auf q3 heruntergestuft
 (Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3763,12279 3701,12279
@@ -712,8 +712,8 @@ Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
 Erich-Steinfurth-Str.: Fußgänger	q2 12645,11673 12596,11696
 #: XXX_prog BS auf beiden Seiten Bordsteine, außerdem noch zwei Bordsteine beim Überqueren der Bouchéstr.; ansonsten Fußgänger, q3
 Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
-#: XXX wo genau sind die Bordsteine, auf beiden Seiten?
-(An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordsteine	q3 7312,10505 7315,10537
+#: XXX_prog BS niedriger Bordstein auf der südlichen Seite, keiner an der Kurfüstenstr. (ansonsten q2)
+(An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordstein	q3 7312,10505 7315,10537
 Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8593,12742 8596,12760
 #: XXX_prog BS Bordstein höchstens auf der Westseite, auf der Ostseite abgesenkt, aber Gehweg ist ziemlich kurvig
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
@@ -1469,7 +1469,7 @@ Igelkolbensteig: eng	q2 15947,3572 16003,3652
 #: XXX_prog BS (2x) (auch ohne BS q2)
 Melissenweg: Bordsteine, eng	q2 16003,3652 16041,3718
 #: XXX_prog BS (im Norden, im Süden kann es umfahren werden)
-Simsonweg: Fußgänger, Bordsteine	q2 8354,12416 8546,12279
+Simsonweg: Fußgänger, Bordsteine	q2 8354,12416 8391,12389 8546,12279
 Varian-Fry-Str.: Fußgänger	q2 8374,11479 8389,11378
 Georg-Steger-Weg und Verlängerung: Fußgänger	q2 1509,2246 1603,2615 1635,2720 1652,2770 1641,2914
 #: XXX_prog BS (am Sackgassenhammer)
@@ -1800,7 +1800,7 @@ Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
 # 
 #: XXX_prog BS (ansonsten entfernen)
 #: XXX wird der Bordstein noch abgesenkt?
-#: last_checked: 2014-10-06
+#: last_checked: 2014-12-12
 #: check_frequency: 100d
 Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
 # 

@@ -148,7 +148,7 @@ Hittorfstr	1 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.	1 5360,6642 5215,6643
 Kühlebornweg	1 5165,4667 5075,4600 5004,4709
 Gartenstr.	1 22467,3889 22281,4033 22263,4120 22279,4220
-Wichmannstr.	1 6462,11069 6552,11006 6681,10959 6824,10904
+Wichmannstr.	1 6477,11045 6555,11012 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6742,11099 6626,11178 6582,11202
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
 Kirchhofstr.	1 13188,7590 13117,7471 13029,7353
@@ -289,11 +289,11 @@ Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
 Lohmeyerstr.	1 3348,12314 3409,12451
 Martin-Luther-Str.	3nocross::ignrte 6514,10088 6512,9962 6512,9866
 Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6514,10088 6512,9962 6630,9990
-Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6512,9866 6512,9962 6270,9910
-Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6270,9910 6512,9962 6514,10088
-Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6270,9910 6512,9962 6630,9990
+Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6512,9866 6512,9962 6366,9926
+Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6366,9926 6512,9962 6514,10088
+Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6366,9926 6512,9962 6630,9990
 Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6630,9990 6512,9962 6512,9866
-Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6630,9990 6512,9962 6270,9910
+Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6630,9990 6512,9962 6366,9926
 Straßenbahntrasse	3nocross::ignrte 12621,14313 12729,14227 12901,14093
 Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12901,14093 12729,14227 12608,14070
 Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12621,14313 12729,14227 12782,14300
@@ -969,8 +969,8 @@ Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6276,9042
 Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6161,9128
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6255,9194
-Viktoria-Luise-Platz: Poller	3 6270,9910 6275,9962 6224,9980
-Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6270,9910
+Viktoria-Luise-Platz: Poller	3 6272,9922 6275,9962 6224,9980
+Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6272,9922
 Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7281,10510
 Else-Lasker-Schüler-Str.: Poller	3 7281,10510 7245,10499 7033,10396
 (Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253

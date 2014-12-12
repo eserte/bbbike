@@ -2133,9 +2133,6 @@ Altentreptower Str. -> Unfallkrankenhaus Berlin: Mittelstreifen	3::igndisp 21307
 Unfallkrankenhaus Berlin -> Altentreptower Str.: Mittelstreifen	3::igndisp 21401,12155 21400,12135 21573,12140
 Mittelstreifen	3nocross::ignrte 6692,11365 6716,11439 6825,11486
 Stülerstr. -> zur Thomas-Dehler-Str.: Mittelstreifen	3::igndisp 6692,11365 6716,11439 6657,11467
-Mittelstreifen	3nocross::ignrte 8303,12216 8344,12221 8538,12245
-Str. des 17. Juni -> Lennéstr./Kemperpl.: Mittelstreifen	3::igndisp 8538,12245 8344,12221 8327,12174
-Lennéstr./Kemperpl. -> Str. des 17. Juni: Mittelstreifen	3::igndisp 8327,12174 8344,12221 8303,12216
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2851,7 +2848,7 @@ Bozener Str.	1 5971,8926 5975,9094
 schwierig zu querender Mittelstreifen	3nocross::ignrte 6532,10529 6636,10492 6753,10446
 Kleiststr. -> Kalckreuthstr.: schwierig zu querender Mittelstreifen	3::igndisp 6753,10446 6636,10492 6628,10318
 Kalckreuthstr. -> Kleiststr.: schwierig zu querender Mittelstreifen	3::igndisp 6628,10318 6636,10492 6532,10529
-(Los-Angeles-Platz)	1s 5681,10696 5822,10609
+(Los-Angeles-Platz)	1s 5669,10704 5822,10609
 Schwingtor zum Spielplatz	BNP:10:-236 11865,13027
 Schwingtor zum Spielplatz	BNP:10:-156 11874,13048
 Schwingtor zum Spielplatz	BNP:10:-250 11815,13045

@@ -666,7 +666,8 @@ Tiergarten: Parkweg	Q1 7775,12114 7772,12040
 Tiergarten: Asphalt	Q0 7772,12040 7717,11918 7706,11878 7701,11798 7649,11717 7623,11624 7612,11597
 Tiergarten: Parkweg	Q1 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
 Tiergarten: Parkweg	Q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-Tiergarten: Parkweg und Mosaikpflaster	Q1 8210,11775 8244,11878 8327,12174 8344,12221
+Tiergarten: Parkweg und Mosaikpflaster	Q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221
+Tiergarten: Mosaikpflaster	Q1 8344,12221 8391,12389 8400,12417
 Parkweg: sehr gutes Kopfsteinpflaster	Q1 14318,9688 14361,9772 14404,9847 14448,9922
 Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 #: note: mittlerweile etwas wellig
@@ -1167,7 +1168,7 @@ Miraustr.: guter Asphalt	Q0 3820,19688 4006,19443
 #: confirmed_by: srt
 Miraustr.: Asphalt	Q0 4006,19443 4170,19079 4195,19043
 #: by: ^^^
-Schaperstr.: Asphalt	Q0 5706,10216 5597,10299 5450,10338
+Schaperstr.: Asphalt	Q0 5700,10226 5597,10299 5450,10338
 Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5510,8709
 Werderstr.: unebenes Kleinsteinpflaster	Q2- 8968,5554 8981,5692
@@ -6972,7 +6973,7 @@ Nuthestr.: Beton	Q0 10239,-1849 10095,-1482 10048,-1379 9989,-1278 9925,-1106 98
 Möckernstr. - Park am Gleisdreieck: Kopfsteinpflaster	Q2 8802,10290 8775,10289 8707,10285
 Möckernstr. - Park am Gleisdreieck: Asphalt	Q0 8707,10285 8677,10224 8614,10095 8579,10030
 Pfalzburger Str.: Kleinsteinpflaster	Q1 4842,9458 4827,9304
-Simsonweg: Kleinsteinpflaster und wassergebundene Decke	Q1 8354,12416 8546,12279
+Simsonweg: Kleinsteinpflaster und wassergebundene Decke	Q1 8354,12416 8391,12389 8546,12279
 Fischzug [7B-17B]: Betonpflaster mit breiten Fugen	Q2+ 14920,10225 14977,10348
 Weg an der S-Bahn: unebener Asphalt	Q1 1802,3235 1875,3278 1961,3338
 Weg an der S-Bahn: Verbundsteinpflaster	Q1 1961,3338 2012,3356
@@ -12190,7 +12191,7 @@ Schlieperstr.: Kopfsteinpflaster	Q2 2224,20007 2435,20032
 #: by: ^^^
 # 
 #: by: Ulfert (030):
-Kulmbacher Str.: Asphalt, leicht schadhafte Stellen	Q0- 5799,9939 5817,10173
+Kulmbacher Str.: Asphalt, leicht schadhafte Stellen	Q0- 5799,9948 5817,10173
 # 
 #: by: Jannik (Pf.):
 #: confirmed_by: srt
@@ -23417,8 +23418,8 @@ Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8927 5343,8858
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4715,8977
 Schrammstr.: grobes Kopfsteinpflaster	Q3 4960,8440 4958,8355
-Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5686,10468 5578,10529
-Los-Angeles-Platz: Kopfsteinpflaster	Q1 5681,10696 5822,10609
+Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5686,10468 5568,10535
+Los-Angeles-Platz: Kopfsteinpflaster	Q1 5669,10704 5822,10609
 #: corrected_by: srt ("neues Kopfsteinpflaster" -> )
 Elisabethkirchstr.: Kleinsteinpflaster	Q1- 9936,14085 9901,14197 9856,14204 9769,14175 9750,14132
 #: corrected_by: srt (Q1 -> Q2+)

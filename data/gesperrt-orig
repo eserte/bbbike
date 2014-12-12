@@ -1725,8 +1725,7 @@ Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21592 10111,
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
 Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
 Stülerstr.: Mittelstreifen	3nocross 6692,11365 6716,11439 6825,11486
-#: XXX Mittelstreifen vielleicht leicht überquerbar, prüfen!
-Straße des 17. Juni: Mittelstreifen	3nocross 8303,12216 8344,12221 8538,12245
+# REMOVED (leicht überquerbar) --- #: XXX Mittelstreifen vielleicht leicht überquerbar, prüfen! --- Straße des 17. Juni: Mittelstreifen	3nocross 8303,12216 8344,12221 8538,12245
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
 abgeschlossenes Tor	3 * 3796,16202 *
@@ -2988,7 +2987,7 @@ Bozener Str.	1 5900,8930 5971,8926 6049,8916
 Bozener Str.	1 5971,8926 5975,9094
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492 6753,10446
 # REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Queren nicht möglich	3nocross 5354,8236 5363,8170 5376,8104 5357,8013
-(Los-Angeles-Platz)	1s:q3 5681,10696 5822,10609
+(Los-Angeles-Platz)	1s:q3 5669,10704 5822,10609
 Schwingtor zum Spielplatz	BNP:10 11865,13027
 Schwingtor zum Spielplatz	BNP:10 11874,13048
 Schwingtor zum Spielplatz	BNP:10 11815,13045

@@ -3832,12 +3832,12 @@ userdel	q4::inwork; 9559,11715 9692,11732
          'type' => 'handicap'
        },
        {
-         'until' => undef,
+         'until' => 1448924400,
          'text' => 'Augsburger Str.: Bauarbeiten, Einbahnstraßenregelung',
          'from' => undef,
          'id' => 2672,
-         'data' => '#: last_checked: 2014-12-06
-userdel	q4::inwork; 5866,10492 5780,10542 5636,10626
+         'data' => '#: last_checked: 2014-12-12
+userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
 ',
          'type' => 'handicap'
        },

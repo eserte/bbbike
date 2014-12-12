@@ -85,12 +85,16 @@
 	F 10796,8498
 	F 11266,8336
 #: related vvv
+#: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:30) vvv
 	X 11023,9597
 	X 11075,9576
+#: note ^^^
 #: related ^^^
 #: related antidromic vvv
+#: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:30) vvv
 	X 11089,9751
 	X 11141,9732
+#: note ^^^
 #: related ^^^
 	X 11274,9492
 	X 11136,9183
@@ -243,7 +247,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 5656,10876
 	X 5782,10884
 	X 5458,10443
-	X 5773,10318
+	X 5764,10322
 	X 5467,9866
 	X 5463,9961
 	X 5725,9846
@@ -1111,8 +1115,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3380,10373
 	X 5477,9621
 	X 9701,11656
+#: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:50) vvv
 	X 14011,10812
 	F 14024,10861
+#: note ^^^
 	X 6445,9538
 	X 6514,10088
 	X 5329,10422
@@ -1127,7 +1133,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -1284,13340
 	X -1337,13354
 	X -1560,13418
-	X 5636,10626
+	X 5627,10637
 	X 5866,10492
 	X 7717,11540
 	X 12830,8031
@@ -1161,6 +1167,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 15080,13117
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
+#: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:50)
 	X 14134,11272
 	X 11785,13625
 	X 10897,17274
@@ -2528,7 +2535,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2014-11-14 vvv
+#: last_checked: 2014-12-12 vvv
 #: next_check: 2014-12-31 vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
