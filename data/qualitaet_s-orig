@@ -612,9 +612,7 @@ Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,920
 Uferweg: asphaltiert, einige Wurzelschäden	Q0- 16673,7511 16655,7572 16624,7833 16692,8166 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: add_fragezeichen: Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
-#: source_id: IM_023226
-#: last_checked: 2014-06-03
-#: next_check: 2014-11-04
+#: last_checked: 2014-12-13
 #: check_frequency: 100d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q1- 12736,17998 12467,17814
 #: corrected_by: Hartmut Schröder (Q2 -> Q3)
@@ -5542,8 +5540,8 @@ Fasoltstr.: Kopfsteinpflaster	Q2- 12681,18431 12749,18564 12755,18573 12794,1865
 Fasoltstr.: mäßiger Asphalt	Q1- 12794,18656 12838,18734
 Aidastr.: unbefestigte Straße	Q2 12467,17814 12517,18034
 Straße 16: Beton	Q0- 13031,17775 13034,17895
-(Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13760,15187 13792,15238 13792,15259
-(Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Beton	Q0- 13792,15259 13724,15309 13710,15352
+(Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13760,15187 13801,15256
+(Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Beton	Q0- 13801,15256 13724,15309 13710,15352
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13710,15352 13688,15393 13713,15440
 Syringenplatz/Syringenweg: Asphalt mit Schäden	Q1+ 14025,14519 14042,14249 14038,14099 13965,14018
 Straße 18: unbefestigte Straße	Q2 12942,18154 12939,18081 12902,18033
@@ -9712,6 +9710,14 @@ Gutsmuthsweg: Asphalt	Q0 -824,12557 -746,12432 -671,12311 -583,12151 -565,12030
 Putlitzstr. (Nebenstraße): Verbundsteinpflaster	Q1+ 6212,13944 6204,14220
 (Sebastianstr./Alexandrinenstr. - Dresdener Str.): Verbundsteinpflaster	Q1+ 10824,11256 10906,11295 10956,11297 11000,11327
 Olivaer Platz: einige Aufpflasterungen mit Kleinsteinpflaster	Q0- 4279,10270 4352,10260 4478,10218
+Nizzastr.: Asphalt	Q0 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12322,21378
+Brester Ring: Verbundsteinpflaster	Q1 12384,21256 12326,21226 12302,21275 12360,21303
+Grenobler Ring: Verbundsteinpflaster	Q1 12404,21217 12483,21255
+Grenobler Ring: Verbundsteinpflaster	Q1 12493,21212 12483,21255 12441,21341 12360,21303
+#: next_check_id: NIZZASTR-2014
+#: XXX wie wird es nach den Bauarbeiten aussehen?
+#: last_checked: 2014-12-13
+Lyonstr.: teilweise unbefestigt/Betonplattenstraße	Q2 12189,21337 12214,21332 12322,21378 12407,21415
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11344,19 +11350,8 @@ Goeckestr.: mäßiges Kleinsteinpflaster, wellig	Q2 16128,14685 16256,14828 16361,
 Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15941,14834 16035,14748 16128,14685 16284,14601
 Freienwalder Str.: Kopfsteinpflaster (einigermaßen gut)	Q2 16849,15263 16651,15345 16618,15356 16406,15452 16331,15486
 Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16354,15323 16218,15386
-#: corrected_by: srt (geteert -> ...) vvv
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5230 vvv
-#: XXX werden die restlichen Abschnitte auch neu asphaltiert? vvv
-#: last_checked: 2014-10-30 vvv
-#: check_frequency: 30d vvv
-Roedernstr.: Asphalt mit Schäden	Q1- 15678,15607 15552,15660
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: by ^^^
-#: corrected_by ^^^
 #: corrected_by: srt (Asphalt mit Schäden -> ..., neu asphaltiert)
-Roedernstr.: Asphalt	Q0 16218,15386 15825,15547 15678,15607
+Roedernstr.: Asphalt	Q0 16218,15386 15825,15547 15552,15660
 Prießnitzstr.: Asphalt	Q0 11351,19169 11407,19186 11549,19258
 #: by: ^^^
 # 
@@ -12170,7 +12165,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2014-10-30
+#: last_checked: 2014-12-13
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -12739,7 +12734,7 @@ Neukirchstr.: loser Sandweg	Q2 12885,18329 12751,18401
 #: corrected_by: srt (Q2 -> Q3)
 #: XXX Asphaltierung ist geplant
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3249 (kein Termin für Asphaltierung)
-#: last_checked: 2014-09-28
+#: last_checked: 2014-12-13
 #: check_frequency: 100d
 Neukirchstr.: schlechtes Kopfsteinpflaster	Q3 12751,18401 12681,18431 12609,18470 12548,18503
 #: note: ^^^
@@ -14136,7 +14131,7 @@ Lütticher Str.: Asphalt	Q0 6640,15421 6727,15319
 # 
 #: by: Helge Martinlöwitz:
 #: confirmed_by: srt
-Börnestr.: guter Asphalt	Q0 13214,15830 13263,15930 13309,16022 13410,16214
+Börnestr.: guter Asphalt	Q0 13214,15830 13263,15930 13312,16027 13410,16214
 # 
 #: by: Jan (Groscurth):
 Am Sandwerder: guter Asphalt	Q0 -4644,1514 -4638,1579 -4469,1921 -4326,2141
@@ -18005,7 +18000,7 @@ Arnouxstr.: Asphalt	Q0 11785,22290 11583,22442 11386,22591 11188,22742
 #: corrected_by: srt (Q0 -> Q1)
 Behaimstr.: Asphalt mit Schäden	Q1 13094,15896 13140,16000
 #: confirmed_by: srt
-Behaimstr.: guter Asphalt	Q0 13140,16000 13192,16096 13286,16267 13348,16387
+Behaimstr.: guter Asphalt	Q0 13140,16000 13189,16089 13286,16267 13348,16387
 #: confirmed_by ^^^
 #: by: ^^^
 # 
@@ -19881,7 +19876,7 @@ Frauenlobstr.: guter Asphalt, einige leichte Schäden	Q0- 16043,6414 16220,6277
 # 
 #: by: Robert (klemm): vvv
 #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2014-10-30 (im südlichen Abschnitt geprüft) vvv
+#: last_checked: 2014-12-13 (im mittleren Abschnitt geprüft) vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: confirmed_by: srt

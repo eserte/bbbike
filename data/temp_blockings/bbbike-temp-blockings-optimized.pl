@@ -3411,7 +3411,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'from' => undef,
          'id' => 2557,
          'data' => '#: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-10-30
+#: last_checked: 2014-12-13
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 ',
@@ -3553,8 +3553,8 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        {
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140904.1220.399072.html',
-         'until' => 1418598000,
-         'text' => 'Englische Str. und Gutenbergstr.: Bauarbeiten, Einbahnstraßenregelung, ab Montag den 8.9.2014 bis Dezember 2014',
+         'until' => 1418857199,
+         'text' => 'Englische Str. und Gutenbergstr.: Bauarbeiten, Einbahnstraßenregelung, von 08.09.2014 bis 17.12.2014',
          'from' => 1410040800,
          'id' => 2624,
          'data' => 'userdel	q4::inwork; 5325,12234 5518,12159 5424,11944
@@ -3571,7 +3571,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'from' => 1411941600,
          'id' => 2628,
          'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
-#: last_checked: 2014-10-30
+#: last_checked: 2014-12-13
 userdel	q4::inwork 13645,15609 13739,15643 13939,15723
 ',
          'type' => 'handicap'
@@ -3591,10 +3591,11 @@ userdel	q3::inwork 4503,10497 4485,10307
        },
        {
          'until' => 1451602800,
-         'text' => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugang bis 2016 möglich',
+         'text' => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugangs bis 2016 möglich',
          'from' => 1411312807,
          'id' => 2631,
          'data' => '#: last_checked: 2014-11-15 (gerade nicht gesperrt)
+#: next_check: 2015-12-01
 userdel	2::inwork 15419,10706 15379,10651
 ',
          'dont_check_date' => 1,

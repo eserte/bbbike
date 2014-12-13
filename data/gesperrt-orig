@@ -186,7 +186,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: XXX Nalepastr. wird in Zukunft wieder geˆffnet
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pl‰ne)
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2014-06-22
+#: last_checked: 2014-11-08
 #: check_frequency: 180d
 Nalepastr. am Rundfunkgeb‰ude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -1491,6 +1491,7 @@ Berliner Str.: Straﬂenbahntrasse	3nocross 10897,17274 10892,17330 10886,17396
 Berliner Str.: Straﬂenbahntrasse	3nocross 10886,17396 10880,17469 10878,17490
 #: note: Luftbild:
 Berliner Str.: Straﬂenbahntrasse	3nocross 13737,15994 13826,16026 14014,16106
+Berliner Str.: Straﬂenbahntrasse	3nocross 12168,21218 12189,21337 12209,21448
 Karl-Liebknecht-Str.: Straﬂenbahntrasse	3nocross 10923,13156 10976,13229 11012,13278
 Riesaer Str.: Straﬂenbahntrasse	3nocross 24120,14526 24097,14575 24030,14717
 #: note: Luftbild:
@@ -2576,6 +2577,13 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: NIZZASTR-2014 vvv
+#: last_checked: 2014-12-13 vvv
+Grenobler Ring: teilweise noch nicht fertiggestellt	2::inwork 12360,21303 12441,21341
+Lyonstr.: noch nicht fertiggestellt, zurzeit nur Baustraﬂe	2::inwork 12189,21337 12214,21332 12322,21378 12407,21415
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
 #: XXX vmz-Eintrag: Luisenstr. (Mitte) in beiden Richtungen Hˆhe Charite (Berlin)  G¸ltig ab: 30.11.2014 12:00  Geplant ab: 01.12.2014 07 Uhr, Baustelle, Straﬂe vollst‰ndig gesperrt (bis Ende 09/15)
 #: source_id: IM_023570
 #: source_id: IM_023615
@@ -2721,8 +2729,8 @@ Groﬂe Hamburger Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3 10077,13100 10018,13
 #: check_frequency: 60d
 Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17366,12357
 # 
-#: last_checked: 2014-08-25
-#: check_frequency: 60d
+#: last_checked: 2014-12-13
+#: check_frequency: 30d
 (Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
 # 
 #: last_checked: 2013-10-15

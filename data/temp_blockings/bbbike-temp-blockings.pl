@@ -22673,7 +22673,7 @@ EOF
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
 #: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-10-30
+#: last_checked: 2014-12-13
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 EOF
@@ -23339,8 +23339,8 @@ userdel	2::temp 15202,11789 15140,11811 15043,11637
 EOF
      },
      { from  => 1410040800, # 2014-09-07 00:00
-       until => 1418598000, # 2014-12-15 00:00
-       text  => 'Englische Str. und Gutenbergstr.: Bauarbeiten, Einbahnstraßenregelung, ab Montag den 8.9.2014 bis Dezember 2014',
+       until => $isodate2epoch->("2014-12-17 23:59:59"), # 1418598000, # 2014-12-15 00:00
+       text  => 'Englische Str. und Gutenbergstr.: Bauarbeiten, Einbahnstraßenregelung, von 08.09.2014 bis 17.12.2014',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140904.1220.399072.html',
        data  => <<EOF,
@@ -23382,7 +23382,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
-#: last_checked: 2014-10-30
+#: last_checked: 2014-12-13
 userdel	q4::inwork 13645,15609 13739,15643 13939,15723
 EOF
      },
@@ -23408,11 +23408,12 @@ EOF
      },
      { from  => 1411312807, # 2014-09-21 17:20
        until => $isodate2epoch->("2016-01-01 00:00:00"), # 1412805600, # 2014-10-09 00:00
-       text  => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugang bis 2016 möglich',
+       text  => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugangs bis 2016 möglich',
        type  => 'gesperrt',
        dont_check_date => 1,
        data  => <<EOF,
 #: last_checked: 2014-11-15 (gerade nicht gesperrt)
+#: next_check: 2015-12-01
 userdel	2::inwork 15419,10706 15379,10651
 EOF
      },
