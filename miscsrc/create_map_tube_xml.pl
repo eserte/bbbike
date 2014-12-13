@@ -92,12 +92,7 @@ my %segment2lines;
 
 sub add_segment {
     my($firststation, $nextstation, $line) = @_;
-    if (exists $segment2lines{$nextstation} &&
-	exists $segment2lines{$nextstation}{$firststation}) {
-	push @{ $segment2lines{$nextstation}{$firststation} }, $line;
-    } else {
-	push @{ $segment2lines{$firststation}{$nextstation} }, $line;
-    }
+    push @{ $segment2lines{$firststation}{$nextstation} }, $line;
 }
 
 $new_s->init;
@@ -135,7 +130,16 @@ while() {
 		}
 	    } elsif ($output_format eq 'Map::Metro') {
 		if (!exists $line2id{$line}) {
-		    (my $id = $line) =~ s{[^A-Za-z0-9]}{}g;
+		    #(my $id = $line) =~ s{[^A-Za-z0-9]}{}g;
+		    ## XXX a hack because of https://rt.cpan.org/Ticket/Display.html?id=100895
+		    my $id;
+		    if ($line =~ m{^U(\d+)}) {
+			$id = $1;
+		    } elsif ($line =~ m{^S(\d+)}) {
+			$id = 1000 + $1;
+		    } else {
+			die "Cannot create line id for '$line'";
+		    }
 		    $line2id{$line} = $id;
 		}
 		push @{ $line2stations{$line} }, $station;
@@ -231,5 +235,11 @@ create_map_tube_xml.pl - create data file for Map::Tube::Berlin
 
 B<create_map_tube_xml.pl> creates a L<Map::Tube>-compatible XML file
 containing the Berlin U/S-Bahn network.
+
+With the yet experimental option C<--output-format=Map::Metro> it's
+possible to create map files for L<Map::Metro> plugins.
+
+With C<--no-sbahn> and C<--no-ubahn> it's possible to exclude the
+S-Bahn resp. U-Bahn net from the result.
 
 =cut
