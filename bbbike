@@ -14603,9 +14603,10 @@ sub show_info {
 	    my(@y) = Karte::Polar::ddd2dms($py);
 	    push @x, $x[0] < 0 ? do { $x[0] *= -1; "W" } : "E";
 	    push @y, $y[0] < 0 ? do { $y[0] *= -1; "S" } : "N";
-	    #my $url = "http://stable.toolserver.org/geohack/geohack.php?params=" . join("_", @y, @x) . "_type:landmark_region:DE-BE";
-	    my $url = "http://toolserver.org/~geohack/geohack.php?params=" . join("_", @y, @x) .
-		($city_obj->cityname eq 'Berlin' ? "_type:landmark_region:DE-BE" : '');
+	    my $url = 'http://tools.wmflabs.org/geohack/geohack.php';
+	    $url .= '?language=' . ($Msg::lang eq 'en' ? 'en' : 'de');
+	    $url .= '&params=' . join("_", @y, @x) .
+		($city_obj->cityname eq 'Berlin' ? '_region:DE-BE_type:city&pagename=Berlin' : '');
 
 	    my $need_indentation;
 	    if ($wikipedia_photo) {
