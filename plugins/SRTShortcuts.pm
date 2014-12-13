@@ -1581,6 +1581,11 @@ sub add_coords_data {
 
 sub choose_Berlin_by_data {
     my($directory) = @_;
+    if (!-d $directory) {
+	require File::Basename;
+	main::status_message("The directory '$directory' does not exist. You can create it by running 'make " . File::Basename::basename($directory) . "' in $main::datadir.", 'error');
+	return;
+    }
     require Encode;
     require File::Basename;
     require File::Glob;
