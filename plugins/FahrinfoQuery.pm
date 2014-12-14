@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.09';
+$VERSION = '0.10';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -203,6 +203,9 @@ sub add_button {
 	       -onvalue => 1,
 	       -offvalue => 0,
 	      ],
+	      [Button => 'Info',
+	       -command => sub { fahrinfoquery_info() },
+	      ],
 	      "-",
 	      [Button => "Dieses Menü löschen",
 	       -command => sub {
@@ -365,6 +368,16 @@ sub start_browser {
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
+}
+
+sub fahrinfoquery_info {
+    main::status_message(<<EOF, 'infodlg');
+Die VBB-Haltestellendaten werden vom
+VBB Verkehrsverbund Berlin-Brandenburg GmbH
+bereitgestellt und werden von www.vbb.de heruntergeladen.
+
+Siehe auch: http://daten.berlin.de/kategorie/verkehr
+EOF
 }
 
 # Partially taken from Strassen::Core::nearest_point, but with
