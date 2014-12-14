@@ -15,7 +15,7 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = 1.23;
+$VERSION = 1.24;
 
 require Exporter;
 @ISA = 'Exporter';
@@ -25,7 +25,7 @@ require Exporter;
 		point_in_grid point_in_polygon move_point_orthogonal
 		intersect_rectangles enclosed_rectangle normalize_rectangle
 		azimuth offset_line bbox_of_polygon combine_bboxes
-		triangle_area
+		triangle_area triangle_area_by_lengths
 	       );
 
 sub pi () { 4 * atan2(1, 1) } # 3.141592653
@@ -531,6 +531,17 @@ sub combine_bboxes {
 sub triangle_area {
     my(@p) = @_;
     0.5 * abs(($p[0][0]-$p[2][0])*($p[1][1]-$p[0][1]) - ($p[0][0]-$p[1][0])*($p[2][1]-$p[0][1]));
+}
+
+# from http://en.wikipedia.org/wiki/Triangle#Using_Heron.27s_formula
+# (Heron's formula)
+# note: for invalid lengths this function will fail --- and maybe may
+# fail if supplied lengths are slightly inaccurate and would evaluate
+# to a very small area
+sub triangle_area_by_lengths {
+    my($a, $b, $c) = @_;
+    my $s = ($a + $b + $c) / 2;
+    sqrt($s * ($s-$a) * ($s-$b) * ($s-$c));
 }
 
 # Protect from floating point inaccuracies

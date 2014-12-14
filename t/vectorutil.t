@@ -24,7 +24,7 @@ use Getopt::Long;
 use BBBikeTest qw(is_float);
 use Strassen::Util qw();
 
-plan tests => 24;
+plan tests => 28;
 
 my $do_bench;
 my $do_xxx;
@@ -38,7 +38,7 @@ GetOptions(
 use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
        'enclosed_rectangle', 'bbox_of_polygon', 'combine_bboxes',
        'distance_point_line', 'project_point_on_line',
-       'offset_line', 'triangle_area'
+       'offset_line', 'triangle_area', 'triangle_area_by_lengths',
       );
 
 goto XXX if $do_xxx;
@@ -176,6 +176,12 @@ is triangle_area([0,0],[2,0],[2,1]), 1;
 is triangle_area([0,0],[-2,0],[-2,-1]), 1;
 is triangle_area([0,0],[2,0],[0,0]), 0;
 is triangle_area([0,0],[2,0],[1,1]), 1;
+
+is_float triangle_area_by_lengths(2,sqrt(2),sqrt(2)), 1, 'triangle_area_by_lengths sample';
+is_float triangle_area_by_lengths(1,1,sqrt(2)), 0.5;
+is_float triangle_area_by_lengths(1,1,2), 0;
+eval { triangle_area_by_lengths(0.9,0.9,2) };
+ok $@, 'invalid triangle lengths'; # usually something like "Can't take sqrt of ..."
 
 # One test.
 sub test_offset_line {
