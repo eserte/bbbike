@@ -51,7 +51,7 @@ if (!-d $fromdir) {
 }
 
 if (!File::Spec->file_name_is_absolute($todir)) {
-    $todir = File::Spec->catdir(cwd(), $todir);
+    $todir = File::Spec->catdir(getcwd(), $todir);
 }
 if (-e $todir && !$force) {
     die "$todir must NOT exist (or use -force)";

@@ -1461,7 +1461,7 @@ sub load_Makefile_PL {
 
     package main;
 
-    my $origcwd = cwd();
+    my $origcwd = getcwd();
     chdir $FindBin::Bin || warn "Can't chdir to $FindBin::Bin: $!";
     do $file;
     chdir $origcwd || warn "Can't change back to $origcwd: $!";
@@ -1529,7 +1529,7 @@ sub perl_install {
 	Print join(" ", @perl_makefile_pl_args), "\n";
 	Print "make\nmake install\n";
     } else {
-	my $origdir = cwd();
+	my $origdir = getcwd();
 	eval {
 	    chdir $FindBin::Bin || die "Can't chdir to $FindBin::Bin: $!";
 	    system @perl_makefile_pl_args;

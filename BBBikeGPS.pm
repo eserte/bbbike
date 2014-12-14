@@ -265,7 +265,7 @@ sub BBBikeGPS::draw_gpsman_data {
     $do_center_begin = 0    if !defined $do_center_begin;
     $draw_point_names = 0   if !defined $draw_point_names;
 
-    my $file = $gpsman_last_dir || Cwd::cwd();
+    my $file = $gpsman_last_dir || Cwd::getcwd();
     my $weiter = 0;
 
     $cfc_top->Label(-text => M("Gpsman-Datei").":")->pack(-anchor => "w");

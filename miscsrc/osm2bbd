@@ -19,7 +19,7 @@ use lib "$FindBin::RealBin/..";
 use vars qw($VERSION);
 $VERSION = 0.17;
 
-use Cwd qw(cwd realpath);
+use Cwd qw(getcwd realpath);
 use Data::Dumper;
 use File::Basename qw(basename);
 use File::Spec qw();
@@ -102,7 +102,7 @@ EOF
 
 my $prog = realpath $0;
 my @commandline = ($^X, $0, @ARGV);
-my $cwd = cwd;
+my $cwd = getcwd;
 
 GetOptions("o=s" => \$o,
 	   "f" => \$f,

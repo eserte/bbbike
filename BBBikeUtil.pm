@@ -245,7 +245,7 @@ sub rcs_co {
     my $file = shift;
     require File::Basename;
     require Cwd;
-    my $cwd = Cwd::cwd();
+    my $cwd = Cwd::getcwd();
     my($f, $dir) = File::Basename::fileparse($file);
     chdir $dir or die "Kann kein chdir zum Verzeichnis $dir durchführen: $!";
     # Avoid interactive questions à la "writable ... exists; remove
@@ -406,7 +406,7 @@ BEGIN {
 sub save_pwd (&) {
     my $code = shift;
     require Cwd;
-    my $pwd = Cwd::cwd();
+    my $pwd = Cwd::getcwd();
     eval {
 	$code->();
     };
@@ -420,7 +420,7 @@ sub save_pwd (&) {
     package BBBikeUtil::SavePwd2;
     sub new {
 	require Cwd;
-	bless { cwd => Cwd::cwd() }, shift;
+	bless { cwd => Cwd::getcwd() }, shift;
     }
     sub DESTROY {
 	my $self = shift;

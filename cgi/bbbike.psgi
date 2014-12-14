@@ -10,7 +10,7 @@ use Plack::Middleware::Static;
 use Plack::App::WrapCGI;
 
 use Config qw(%Config);
-use Cwd 'cwd', 'realpath';
+use Cwd 'realpath';
 use File::Basename 'dirname';
 use File::Spec::Functions 'catfile', 'catpath';
 

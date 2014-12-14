@@ -12,13 +12,13 @@ use Socket qw();
 if ($^O eq 'MSWin32') {
     require File::Basename;
     $logfile = "nul:";
-    # cwd() geht nicht mit UNC-Pfaden
+    # cwd() geht nicht mit UNC-Pfaden XXX what about getcwd?
     $path = File::Spec->catdir(File::Basename::dirname($0),
 			       File::Spec->updir,
 			       File::Spec->updir);
 } else {
     $logfile = "/dev/null";
-    $path = File::Spec->catdir(cwd(),
+    $path = File::Spec->catdir(getcwd(),
 			       File::Spec->updir,
 			       File::Spec->updir);
 }

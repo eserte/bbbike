@@ -31,8 +31,8 @@ BEGIN {
 #	$add_libs = '-lisc';  # could be used on FreeBSD
 	$add_libs = '';
 
-	$add_myextlib = catfile(cwd(), updir(), "Strassen-Inline", "heap.o");
-	$add_inc = "-I".catfile(cwd(), updir(), "Strassen-Inline");
+	$add_myextlib = catfile(getcwd(), updir(), "Strassen-Inline", "heap.o");
+	$add_inc = "-I".catfile(getcwd(), updir(), "Strassen-Inline");
 
     } else {
 	$add_ccflags = '';

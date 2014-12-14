@@ -38,7 +38,7 @@ sub plugin_lister {
 
     if (!$topdir) {
 	require Cwd;
-	$topdir = Cwd::cwd();
+	$topdir = Cwd::getcwd();
     }
 
     my $top = $w->MainWindow;

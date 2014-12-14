@@ -14,7 +14,7 @@
 
 use strict;
 
-use Cwd qw(cwd);
+use Cwd qw(getcwd);
 use File::Basename qw(dirname basename);
 use File::Spec;
 use Getopt::Long;
@@ -198,9 +198,9 @@ if ($do_switch) {
     }
 
     {
-	my($live_color) = cwd =~ m{(red|blue)/BBBike$};
+	my($live_color) = getcwd =~ m{(red|blue)/BBBike$};
 	if (!$live_color) {
-	    error "Cannot get 'color' from " . cwd;
+	    error "Cannot get 'color' from " . getcwd;
 	}
 	(my $tag_prefix = hostname) =~ s{[^A-Za-z0-9_-]+}{_}g;
 	$tag_prefix = 'deployment/' . $tag_prefix;
@@ -297,7 +297,7 @@ sub sudo (@) {
 BEGIN {
     sub save_pwd2 {
 	require Cwd;
-	bless {cwd => Cwd::cwd()}, __PACKAGE__ . '::SavePwd2';
+	bless {cwd => Cwd::getcwd()}, __PACKAGE__ . '::SavePwd2';
     }
     my $DESTROY = sub {
 	my $self = shift;

@@ -197,7 +197,7 @@ directory will still be valid.
 sub save_pwd (&) {
     my $code = shift;
     require Cwd;
-    my $pwd = Cwd::cwd();
+    my $pwd = Cwd::getcwd();
     eval {
 	$code->();
     };

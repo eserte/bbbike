@@ -141,7 +141,7 @@ if (!$fc) {
     warn "$@\nTry using fallback.";
 }
 
-my $cwd = cwd;
+my $cwd = getcwd;
 # try as complete path first
 foreach my $src (@src) {
     chdir $cwd || die "Can't chdir to $cwd: $!";

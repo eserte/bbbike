@@ -157,7 +157,7 @@ for my $f (sort @lib_files) {
 
     my $abssrc = "$lib_perl/$f";
     my $dir = ($f !~ m|/| ? "" : "/" . dirname($f));
-    my $src = File::Spec->abs2rel($abssrc, cwd.$dir);
+    my $src = File::Spec->abs2rel($abssrc, getcwd.$dir);
     print STDERR "$f " if $verbose;
     if ($verbose >= 2 && $do_exec) {
 	print STDERR "<- $src\n";
@@ -168,7 +168,7 @@ for my $f (sort @lib_files) {
     {
 	my $do_next;
 	save_pwd {
-	    my $destdir = cwd . $dir;
+	    my $destdir = getcwd . $dir;
 	    if (!chdir $destdir) {
 		if ($do_exec) {
 		    die "Can't chdir to $destdir: $!";

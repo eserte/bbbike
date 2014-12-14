@@ -17,7 +17,7 @@ use strict;
 use vars qw($VERSION);
 $VERSION = 1.00;
 
-use Cwd qw(cwd realpath);
+use Cwd qw(getcwd realpath);
 use File::Basename qw(dirname);
 use File::Path qw(mkpath);
 use Tk qw(Ev);
@@ -36,7 +36,7 @@ if (!-e $bbbikedraw_pl) {
 sub new {
     my($class, $parent, %args) = @_;
     my $self = bless {}, $class;
-    my $directory = delete $args{-directory} || cwd;
+    my $directory = delete $args{-directory} || getcwd;
     $self->{directory} = $directory;
     my $browse = delete $args{-browse};
     $self->{browse} = $browse;
@@ -144,7 +144,7 @@ sub update_directory {
 	$lb->insert('end', $file);
     }
 
-    $self->{directory} = cwd;
+    $self->{directory} = getcwd;
     $self->{raw_files} = \@raw_files;
 }
 
