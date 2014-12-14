@@ -848,17 +848,6 @@ sub _process {
 
 #warn "from=$map_from, middle=@map_middle, to=$map_to, new_from=$map_new_from, new_to=$map_new_to\n";
 
-		# auschecken, falls notwendig...
-		if (!$n) {
-		    my $rcsfile = "RCS/$file,v";
-		    if (!-w $file && -f $rcsfile) {
-			my $ok = BBBikeUtil::rcs_co($file);
-			if (!$ok) {
-			    die "Problems while check-out $file";
-			}
-		    }
-		}
-
 		if (!$n) {
 		    chmod 0644, "$file~";
 		    rename $file, "$file~" or die "rename $file to $file~: $!";

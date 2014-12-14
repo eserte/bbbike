@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.35;
+$VERSION = 1.36;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -236,27 +236,6 @@ sub float_prec {
     my($float, $prec) = @_;
     no locale;
     sprintf "%.${prec}f", $float;
-}
-
-# Führt ein co auf die angegebene Datei $file aus.
-# Rückgabewert: 1: OK, 0: bei "co" ist ein Fehler aufgetreten
-# Exceptions: bei chdir
-sub rcs_co {
-    my $file = shift;
-    require File::Basename;
-    require Cwd;
-    my $cwd = Cwd::getcwd();
-    my($f, $dir) = File::Basename::fileparse($file);
-    chdir $dir or die "Kann kein chdir zum Verzeichnis $dir durchführen: $!";
-    # Avoid interactive questions à la "writable ... exists; remove
-    # it" by using /dev/null
-    system("co -l $f < /dev/null");
-    my $ok = 1;
-    if ($? != 0) {
-	$ok = 0;
-    }
-    chdir $cwd;
-    $ok;
 }
 
 # Zeichensatz-Konvertierungen

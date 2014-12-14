@@ -1869,7 +1869,9 @@ $auto_reload = 1 if !defined $auto_reload;
 
 use vars qw($crosshairs_activated);
 
-# Return true if the file is writable (eventually after checking out).
+# Return true if the file is writable
+# XXX This function originally tried to do a RCS checkout,
+#     hence the strange name "ask_for_co".
 sub ask_for_co {
     my($top, $file) = @_;
     if (!-e $file) {
@@ -1886,33 +1888,10 @@ sub ask_for_co {
 	return 0;
     }
     if (!-w $file) {
-	if (!(-e dirname($file)."/RCS/".basename($file.",v") ||
-	      -e $file.",v")) {
-	    $top->messageBox(-title => "Warnung",
-			     -message => "Die Datei $file kann nicht geschrieben werden. Bitte Berechtigungen überprüfen",
-			    );
-	    return 0;
-	}
-	require Tk::Dialog;
-	my $ans = $top->Dialog
-	    (-title => 'Warnung',
-	     -text => "Achtung: auf die Datei $file kann nicht geschrieben werden.\nSoll ein \"co -l\" ausgeführt werden?",
-	     -buttons => ['Ja', 'Nein'])->Show;
-	if ($ans eq 'Ja') {
-	    require BBBikeUtil;
-	    my $ok = BBBikeUtil::rcs_co($file);
-	    if (!$ok) {
-		$top->Dialog
-		    (-title => 'Warnung',
-		     -text =>
-		     "\"co -l $file\" hat einen Fehler gemeldet. " .
-		     "Bitte stderr überprüfen.",
-		     -buttons => ['OK'])->Show;
-		return 0;
-	    }
-	} else {
-	    return 0;
-	}
+	$top->messageBox(-title => "Warnung",
+			 -message => "Die Datei $file kann nicht geschrieben werden. Bitte Berechtigungen überprüfen",
+			);
+	return 0;
     }
     1;
 }
