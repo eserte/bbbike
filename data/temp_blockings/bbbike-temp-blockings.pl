@@ -19527,7 +19527,7 @@ EOF
        until => $isodate2epoch->("2014-07-10 19:00:00"),
        text  => 'Platz der Luftbrücke (Tempelhof): Straße vollständig zwischen Tempelhofer Damm und Columbiadamm wegen einer Veranstaltung (Bread & Butter) gesperrt (8. bis 10. Juli 2014)',
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 1],
+       recurrences => [#['yearly', days => 14, months => 1], # XXX January 2015 is cancelled
                        ['yearly', days => 1, months => 7]],
        type  => 'gesperrt',
        source_id => 'http://www.breadandbutter.com/winter2014/de/home/',
@@ -21813,12 +21813,12 @@ userdel	2::temp 5047,10381 5076,10658
 EOF
      },
      { from  => $isodate2epoch->("2014-12-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-12-15 23:59:59"),
-       text  => 'Sterndamm: Eisenbahnunterführung vom 07.12.2014 bis 15.12.2014 gesperrt, auch für Radfahrer',
+       until => $isodate2epoch->("2015-01-16 23:59:59"),
+       text  => 'Sterndamm: Eisenbahnunterführung bis zum 16.01.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_020145',
        data  => <<EOF,
-userdel	2::inwork 17736,5441 17886,5587
+userdel	1::inwork 17886,5587 17736,5441
 EOF
      },
      { from  => 1376816220, # 2013-08-18 10:57
@@ -22835,8 +22835,8 @@ userdel	q4::inwork; -4630,15978 -4653,15896 -4656,15839 -4655,15803 -4639,15726 
 EOF
      },
      { from  => $isodate2epoch->("2014-05-26 00:00:00"), # 1400863142, # 2014-05-23 18:39
-       until => 1420066800, # 2015-01-01 00:00
-       text  => 'Kremmen: B273: Neubau Brücke über den Hörstegraben Ortsdurchfahrt Schwante, 26.05.2014 bis 31.12.2014 ',
+       until => $isodate2epoch->("2015-04-30 23:59:59"), # 1420066800, # 2015-01-01 00:00
+       text  => 'Kremmen: B273: Neubau Brücke über den Hörstegraben Ortsdurchfahrt Schwante, 26.05.2014 bis 30.04.2015',
        type  => 'gesperrt',
        source_id => 'LS/721-E/14/035',
        data  => <<EOF,
@@ -23732,8 +23732,8 @@ userdel	q4::inwork 20559,14847 20480,14874
 EOF
      },
      { from  => 1416813420, # 2014-11-24 08:17
-       until => 1418655600, # 2014-12-15 16:00
-       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 15.12.2014 16:00 Uhr',
+       until => $isodate2epoch->("2014-12-22 16:00:00"), # 1418655600, # 2014-12-15 16:00
+       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 22.12.2014 16:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_023529',
        data  => <<EOF,
@@ -23763,7 +23763,9 @@ EOF
        text  => 'Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
 #: last_checked: 2014-12-10
+#: next_check: 2014-12-19 (Beantwortung der Anfrage?)
 userdel	2::inwork 10308,11833 10374,11734
 EOF
      },
