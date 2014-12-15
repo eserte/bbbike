@@ -23547,10 +23547,9 @@ EOF
 #: next_check_id: TORGAUER-2014
 #: by: wosch
 #: confirmed_by: srt
-#: last_checked: 2014-10-15
-#: check_frequency: 90d
-	2::inwork 7374,8211 7250,8223
-	q3::inwork 7374,8211 7402,8208 7446,8200
+#: last_checked: 2014-12-14
+	2::inwork 7402,8208 7374,8211 7250,8223
+	q3::inwork 7402,8208 7446,8200
 EOF
      },
      { from  => $isodate2epoch->("2014-10-15 04:00:00"),

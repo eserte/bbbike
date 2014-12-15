@@ -2350,26 +2350,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
-         'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
-',
-         'periodic' => 1,
-         'until' => 1418597999,
-         'from' => 1418252400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              11,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 12.12.2014 bis zum 14.12.2014',
-         'id' => 2003,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3237,26 +3218,7 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'data' => 'userdel	2::temp 9986,13412 10317,13248
-',
-         'periodic' => 1,
-         'until' => 1418597999,
-         'from' => 1418338800,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (13.12.2014 - 14.12.2014)',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              12
-                            ]
-                          ],
-         'id' => 2516,
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
          'data' => 'userdel	2::temp 9986,13412 10317,13248
@@ -3279,26 +3241,7 @@ userdel	2::night 17671,13132 17684,13133
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
-         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
-',
-         'periodic' => 1,
-         'until' => 1418580000,
-         'from' => 1418468400,
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 14. Dezember 2014, 12:00 bis 19:00 Uhr',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              12
-                            ]
-                          ],
-         'id' => 2520,
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
          'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
@@ -3691,10 +3634,9 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
          'data' => '#: next_check_id: TORGAUER-2014
 #: by: wosch
 #: confirmed_by: srt
-#: last_checked: 2014-10-15
-#: check_frequency: 90d
-	2::inwork 7374,8211 7250,8223
-	q3::inwork 7374,8211 7402,8208 7446,8200
+#: last_checked: 2014-12-14
+	2::inwork 7402,8208 7374,8211 7250,8223
+	q3::inwork 7402,8208 7446,8200
 ',
          'type' => 'gesperrt'
        },
@@ -3839,25 +3781,6 @@ userdel	q4::inwork; 9559,11715 9692,11732
          'id' => 2672,
          'data' => '#: last_checked: 2014-12-12
 userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1418599800,
-         'text' => 'Perleberger Brücke: Sperrung vom 13.12.2014 00:30 Uhr bis 15.12.2014 00:30 Uhr',
-         'from' => 1418338800,
-         'id' => 2673,
-         'data' => 'userdel	2::inwork 7373,14566 7180,14419
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_023660',
-         'until' => 1418565600,
-         'text' => 'Schönstr.: Wasserrohrbruch, Fahrbahn zwischen Rennbahnstr. und Große Seestr. gesperrt, 10.12.2014 11:00 Uhr bis 14.12.2014 15:00 Uhr ',
-         'from' => 1418119200,
-         'id' => 2674,
-         'data' => 'userdel	q4::inwork 14136,17170 14006,16961
 ',
          'type' => 'handicap'
        }

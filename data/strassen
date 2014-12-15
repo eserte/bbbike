@@ -637,7 +637,9 @@ Hildegard-Knef-Platz	N 7696,7771 7774,7724
 (Hildegard-Knef-Platz - Lotte-Laserstein-Str.)	NN 7774,7724 7766,7702
 Lotte-Laserstein-Str.	N 7766,7702 7750,7658 7724,7643 7696,7562
 Hedwig-Dohm-Str.	H 7696,7771 7600,7605
-Torgauer Str. (Schöneberg)	N 7001,8161 7250,8223 7374,8211 7402,8208 7446,8200 7497,8168
+Torgauer Str. (Schöneberg)	N 7001,8161 7250,8223
+Torgauer Str. (Schöneberg)	NN 7250,8223 7374,8211 7402,8208
+Torgauer Str. (Schöneberg)	N 7402,8208 7446,8200 7497,8168
 Torgauer Str. (Schöneberg)	NH 7497,8168 7582,8123
 Torgauer Str. (Schöneberg)	N 7582,8123 7639,8091 7710,8051 7733,8023
 Leberstr.	NH 7582,8123 7578,8358 7574,8596 7563,8871
@@ -16313,6 +16315,7 @@ Johannes-Fest-Platz	Pl 18778,8663
 Brandenburgplatz	Pl 23346,5723
 Nöldnerplatz	Pl 15870,10938
 Martha-Jacob-Platz	Pl 480,11204
+Monumentenplatz	Pl 8344,9085
 Kottbusser Tor	Pl 11393,10390
 Anhalter Bahnhof	Pl 8947,10956
 Flughafen Tempelhof	Pl 9884,8265
