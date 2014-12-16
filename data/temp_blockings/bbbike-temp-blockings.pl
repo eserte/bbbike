@@ -21818,6 +21818,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_020145',
        data  => <<EOF,
+#: XXX bleibt der Sterndamm auch über dem 16. Januar hinaus gesperrt?
+#: next_check: 2015-01-13
 userdel	1::inwork 17886,5587 17736,5441
 EOF
      },

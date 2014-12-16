@@ -61,7 +61,7 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX nach den Bauarbeiten bleiben wohl "einige Fußgänger" übrig, dann nur mit q1
-#: last_checked: 2014-12-05
+#: last_checked: 2014-12-15
 Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2014-11-20
@@ -154,7 +154,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: last_checked: 2014-12-12
 Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
-#: last_checked: 2014-12-12 vvv
+#: last_checked: 2014-12-15 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
@@ -164,7 +164,7 @@ Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 1
 Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10567,14337 10530,14452
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2014-10-12 vvv
+#: last_checked: 2014-12-15 vvv
 #: next_check: 2015-05-31 vvv
 #: priority: #A vvv
 #: source_id: IM_017330
@@ -189,15 +189,15 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaeli
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html (planmäßige Fertigstellung)
 #: XXX nach den Bauarbeiten wird es hier einen Radfahrstreifen geben
-#: last_checked: 2014-11-25
-#: next_check: 2014-12-13 (evtl. zur Eröffnung der Straßenbahnlinie zum Hauptbahnhof am 14. beendet)
+#: last_checked: 2014-12-15
+#: next_check: 2015-01-05
 #: priority: #A
 Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessische Str.: teilweise noch Bauarbeiten auf der Fahrbahn, auf Gehweg umfahren	q4::inwork; 8935,13844 8842,13798
 # 
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (bei vmz) --- #: XXX: wann ist die Kreuzung wieder befahrbar? --- #: last_checked: 2014-06-30 --- #: next_check: 2014-07-08 --- #: source_id: IM_021906 --- #: priority: #A --- Scharnhorststr.: Sackgasse an der Invalidenstraße	q2::inwork 8450,13599 8313,13839
 #
-#: last_checked: 2014-11-26 (Bauarbeiten wegen Neubau)
+#: last_checked: 2014-12-15 (Bauarbeiten wegen Neubau)
 #: check_frequency: 30d
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 

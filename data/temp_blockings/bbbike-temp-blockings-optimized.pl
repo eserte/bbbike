@@ -3146,7 +3146,9 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'text' => 'Sterndamm: Eisenbahnunterführung bis zum 16.01.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
          'from' => 1417820400,
          'id' => 2469,
-         'data' => 'userdel	1::inwork 17886,5587 17736,5441
+         'data' => '#: XXX bleibt der Sterndamm auch über dem 16. Januar hinaus gesperrt?
+#: next_check: 2015-01-13
+userdel	1::inwork 17886,5587 17736,5441
 ',
          'type' => 'gesperrt'
        },

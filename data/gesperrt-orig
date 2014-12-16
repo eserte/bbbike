@@ -1080,7 +1080,7 @@ Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
 #: next_check_id: AMZIRKUS-2014
 #: XXX bleibt die Einbahnstraßenrichtung permanent? Oder nur während der Arbeiten am Schiffbauerdamm?
-#: last_checked: 2014-12-10
+#: last_checked: 2014-12-15
 Am Zirkus	1s:q4 9239,12923 9212,12969 9167,13046
 DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615,9675 1724,9772
 #: note implizite Fahrtrichtung
@@ -2607,7 +2607,7 @@ Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 
 #: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
 #: confirmed_by: srt
-#: last_checked: 2014-11-26
+#: last_checked: 2014-12-15
 #: next_check: 2015-02-14
 #: valid: 20140925-20150214
 #: XXX danach gilt für eine Woche noch der temp_blockings-Eintrag
@@ -2629,7 +2629,7 @@ Alfred-Döblin-Platz: Bauarbeiten, Fahrbahn gesperrt	2::inwork 11162,10919 11150,
 # REMOVED --- #: last_checked: 2014-10-01 --- Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12641,11288 12664,11310 12713,11372
 # 
 #: XXX theoretisch ist ein Trampelpfad vorbei vorhanden
-#: last_checked: 2014-11-24
+#: last_checked: 2014-12-15
 Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045
 # 
 # REMOVED (vorzeitig fertig) --- #: XXX laut Schild bis Dezember 2014 gesperrt --- #: last_checked: 2014-11-20 --- #: next_check: 2014-12-15 --- Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
@@ -2714,7 +2714,7 @@ Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0186-neubau-eines-boardingwohn-und.html
 #: XXX_prog 1s:q3:inwork geht als Kategorie nicht, falsche Übersetzung!
-#: last_checked: 2014-10-28
+#: last_checked: 2014-12-15
 #: check_frequency: 180d
 Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13299
 # 
@@ -2798,8 +2798,8 @@ Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # 
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
-#: last_checked: 2014-09-03
-#: next_check: 2015-01-01
+#: last_checked: 2014-12-15
+#: next_check: 2015-04-01
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also bis ca. 2015-04)
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
@@ -2883,9 +2883,9 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 174
 # REMOVED --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
 # 
 #: note: abgeschlossener Zaun
-#: last_checked: 2014-11-10
+#: last_checked: 2014-12-15
 #: check_frequency: 180d
-Helga-Hahnemann-Str.: gesperrt	2:inwork 9415,13315 9408,13282
+Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 # REMOVED (offen) --- #: last_checked: 2014-04-04 --- #: check_frequency: 7d --- #: XXX wird man nach den Bauarbeiten direkt zur Eldenaer Str. fahren können (Kfz/Rad)? --- #: XXX Qualität im östlichen Abschnitt? --- #: osm_watch: way id="137941886" version="5" --- An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14509,12819 14560,12808
 # REMOVED (nicht mehr gesperrt) --- #: XXX dieser Abschnitt wird wahrscheinlich offiziell eine Einbahnstraße, offen Richtung Westen sein --- #: XXX mittlerweile manchmal (oder immer?) passierbar --- Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536,12916 14588,12901 14682,12874
