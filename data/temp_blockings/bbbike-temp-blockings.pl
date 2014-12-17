@@ -3677,7 +3677,7 @@ EOF
        text  => 'B 096 a Brücke über DB AG zw. Glasower Str. u. Waßmannsdorfer Ch. Brückenneubau Vollsperrung * 29.01.2006-29.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13237,-4511 13513,-4708 13677,-4801
+# REMOVED (in strassen_bab-orig) ---	2 13237,-4511 13513,-4708 13677,-4801
 EOF
      },
      { from  => 1141340400, # 2006-03-03 00:00
@@ -5546,7 +5546,7 @@ EOF
        text  => 'K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-28.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 7547,-5739 7399,-7001
+userdel	q4::inwork 7513,-5721 7399,-7001
 EOF
      },
      { from  => 1156024800, # 2006-08-20 00:00
@@ -14400,7 +14400,7 @@ EOF
        text  => 'L 076 Mahlow - Teltow zw. Abzw. Birkholz und Abzw. Großbeeren Straßenbau Vollsperrung 02.06.2009-31.01.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 7955,-4250 7790,-3985 6012,-3393 5394,-3053
+userdel	2::inwork 7927,-4232 7710,-3956 6972,-3721 6929,-3827 6371,-3887 6000,-3711 5810,-3604 5731,-3508 5838,-3339 5399,-3049
 EOF
      },
      { from  => 1243807200, # 2009-06-01 00:00

@@ -573,13 +573,7 @@ Kietzgrabensteg: wann wird er errichtet, wird er auch für Radfahrer befahrbar se
 Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663 16273,-824
 # 
 # REMOVED (nein) --- #: last_checked: 2013-11-22 --- Görlitzer Park: Asphaltierungsarbeiten?	?::inwork 12502,10244 12384,10368
-# 
-#: last_checked: 2013-08-25
-#: next_check: 2014-12-15
-#: XXX wahrscheinlich ohne Radwege, Eröffnung Ende 2014
-#: by: http://www.ls.brandenburg.de/sixcms/detail.php/bb1.c.278564.de?template=ls_artikel_special_nav_d&nav_level=2
-Mahlow - Teltow: Kraftfahrzeugstraße in Bau	?::inwork 10246,-4271 8550,-4251 7790,-3985
-# 
+# REMOVED (realisiert) --- #: last_checked: 2013-08-25 --- #: next_check: 2014-12-15 --- #: XXX wahrscheinlich ohne Radwege, Eröffnung Ende 2014 --- #: by: http://www.ls.brandenburg.de/sixcms/detail.php/bb1.c.278564.de?template=ls_artikel_special_nav_d&nav_level=2 --- Mahlow - Teltow: Kraftfahrzeugstraße in Bau	?::inwork 10246,-4271 8550,-4251 8345,-4206 7978,-4011 6955,-3684 6709,-3637 5995,-3401 5407,-3031 5201,-2895 5123,-2765 5026,-2725 4930,-2730 4839,-2846 4838,-2882
 # REMOVED (2014-06-06 in Realisierung) --- #: priority: #C --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=6008 --- #: next_check: 2014-06-20 --- Manteuffelstr./Wrangelstr.: Zebrastreifen wird realisiert	?::projected 12148,10897 12180,10903 12218,10915
 # REMOVED (Zebrastreifen realisiert, keine Aufpflasterung) --- #: next_check_id: GUDVANGER-2014 vvv --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gudvanger_strasse.html (aktuelle Infos) vvv--- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf?start&ts=1365760997&file=kreuzung_gudvanger_kr__ger_e._weinert_stra__e.pdf vvv --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20130910.1250.389055.html (Baubeginn 38. KW) vvv --- #: last_checked: 2013-12-17 vvv --- #: check_frequency: 30d vvv --- #: priority: #C --- Erich-Weinert-Str.: Zebrastreifen in Planung	?::projected 11676,15986 11688,16006 --- Gudvanger Str.: im Bereich der Schule ist eine Aufpflasterung geplant	?::projected 11567,15842 11673,16003 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: next_check_id ^^^
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3594 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036373765264/373765264/00056582/82-Anlagen/02/BenennungsabsichtfuerdenPlatzanderBornhomerBru.pdf (Lage) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2013 (Benennung am 11.11.2013 wirksam) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20131104.1110.391159.html --- #: XXX fehlt in Berlin.coords.data --- #: XXX außerdem: "barrierefreie Anbindung" zum Mauerweg --- #: next_check: 2013-11-09 --- Platz des 9. November 1989: geplante Benennung	?::projected 9998,16547 10134,16534 10197,16528
@@ -1753,7 +1747,7 @@ B87 (Umfahrung Müllrose): Ist die Straße eine Kfz-Straße?	? 78295,-17575 78445,-
 # REMOVED (aufgenommen) --- #: next_check: 2006-06-01 --- #: XXX oder vielleicht dieser Weg hier? --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20101109.1255.318039.html --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20120314.1050.367483.html --- (am Burgwallgraben): neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006. Qualität? Nachts beleuchtet?	? -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3339,13106
 # 
 #: XXX laut Detlef Hoge:
-auf der östlichen Seite der B101n: wo genau ist der Radweg hier?	? 6173,-2344 5957,-2575 5627,-2671
+auf der östlichen Seite der B101n: wo genau ist der Radweg hier?	? 6173,-2344 6062,-2292 5883,-2508 5540,-2771
 # 
 Ortsumfahrung Seelow (B1): möglicherweise eine Kraftfahrzeugstraße?	? 79547,16079 79117,16131 78709,16342 78294,16686 77831,16850 77477,16855 76714,16676 76378,16579
 Ortsumfahrung Seelow (B1/B167): möglicherweise eine Kraftfahrzeugstraße?	? 76378,16579 75959,16446 75486,16163 75096,15691 74874,15075
@@ -3454,7 +3448,7 @@ Alter Torfweg (Potsdam): Qualität? Existieren Straßenschilder?	? -10836,-5477 -1
 Niederstr. (Glienicke): Qualität östlich der Ottostr.?	? 3949,24718 4052,24731 4233,24772 4276,24781 4354,24803 4389,24783
 # REMOVED --- #: XXX östlicher Abschnitt: Gehwegplatten. Unsicherer Eintrag von Clemens Bley (meint er diesen Weg?): wassergebundene Decke --- Weg in der Cité Foch - Place Molière: Qualität? Gibt es tatsächlich eine Verbindung zur Place Molière (welcher Strang?)	? 4510,21506 4455,21482 4414,21476 4382,21493
 Egestorffstr. - Mauerweg: Qualität? Nachts beleuchtet?	? 9093,-1670 9083,-1991 9081,-2073
-Mauerweg - Birkholz/Diedersdorf: Qualität?	? 8412,-1979 8310,-2037 8100,-2471 8071,-3225
+Mauerweg - Birkholz/Diedersdorf: Qualität?	? 8412,-1979 8310,-2037 8100,-2471 8111,-3356
 Innerer Mauerweg: Qualität? Nachts beleuchtet?	? 9083,-1991 8412,-1979 8492,-1376
 Ahlimbswalde: ist die gesamte Straße asphaltiert?	? 30962,71971 31251,71954 31669,72016 31857,72102 32370,71986 32613,71643
 Vogelsangsruh: ist die gesamte Straße asphaltiert?	? 66431,84540 66638,84513

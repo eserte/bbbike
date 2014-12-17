@@ -836,18 +836,10 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2; 20880,5736 21002,5755
 	RW2;RW2 14193,9746 14270,9710 14318,9688 14780,9480 14819,9462 14883,9431 15383,9191 15442,9095 15452,9079 15561,8903 15591,8848
 	RW1; 13919,7707 14015,7631 14095,7568 14174,7505 14519,7301
-#: next_check_id: SONNENALLEE-2014 vvv
-#: next_check: 2014-12-31 vvv
-#: last_checked: 2014-07-02 vvv
-#: XXX laut Tafel bis Dezember 2014
-#: source_id: IM_021662
-#: valid: -20141231
-	RW0; 14519,7301 14174,7505
-#: valid: !-20141231
+#: next_check_id: SONNENALLEE-2014
+#: XXX wie sieht die Situation zurzeit aus? Müssen Radfahrer in einer Richtung die Sonnenallee 2x überqueren?
+#: next_check: 2014-12-17 
 	RW1; 14519,7301 14174,7505
-#: last_checked ^^^
-#: next_check ^^^
-#: next_check_id ^^^
 	RW1; 14174,7505 14095,7568 14015,7631 13919,7707
 	RW2;RW1 14519,7301 14617,7243
 	RW1;RW2 14617,7243 14344,7003

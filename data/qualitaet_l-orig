@@ -160,9 +160,9 @@ Hennigsdorf: Kopfsteinpflaster OK	Q1 -3450,26512 -3306,25887 -3018,25556
 Berliner Str. (Erkner): Fahrbahn und Radweg Richtung Berlin Asphalt, Radweg Richtung Osten Verbundsteinpflaster	Q0 33525,2901 33545,2896 33913,2821 34014,2791 34152,2749
 # REMOVED --- Erkner Richtung Tasdorf: Kopfsteinpflaster	Q2; 34152,2749 34326,2915 34293,3076 34261,3092
 # REMOVED --- Erkner Richtung Tasdorf: Kopfsteinpflaster/schlechter Radweg	Q2; 34261,3092 34258,3138 34268,3204 34291,3314 34315,3429 34359,3631 34403,3857 34486,4276 34549,4551
-Heinersdorf: Kopfsteinpflaster	Q2 5943,-2117 5773,-2075
-Heinersdorf: rauher Asphalt	Q1 5773,-2075 5559,-2032
-Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5559,-2032 4985,-2373 4283,-2370
+Heinersdorf: Kopfsteinpflaster	Q2 5941,-2072 5767,-2048
+Heinersdorf: rauher Asphalt	Q1 5767,-2048 5656,-2008
+Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5656,-2008 4985,-2373 4283,-2370
 Iserstr.: Kopfsteinpflaster	Q2 -248,-1160 -173,-1397
 #: add_fragezeichen: Stimmt das oder ist das Stück in Sputendorf auch asphaltiert?
 Sputendorf: teilweise Kopfsteinpflaster, OK	Q1 -1316,-7721 -1734,-7716 -2500,-7557
@@ -1341,7 +1341,7 @@ Fahrbahn asphaltiert, Radwege auf Gehweg	Q1 26639,-17861 26439,-17829
 	Q0 19116,-11575 18330,-11054 17687,-10765 17554,-10669 17474,-10614 17053,-10621 16500,-10734 16059,-10500 15053,-10171 13878,-9818 13576,-9738
 	Q0 13902,-10591 13772,-10251 13576,-9738 13503,-9528 13151,-9139
 	Q0 13151,-9139 12805,-9035 12198,-8833 11875,-8728 11791,-8700 11555,-8625 11247,-8513 11115,-8466 10115,-8276 9828,-8106 9170,-7708 7981,-7165 7558,-7093 7399,-7001 6432,-6715 5654,-6424 4546,-5868 4206,-5913
-	Q0 7399,-7001 7547,-5739 7955,-4250
+	Q0 7399,-7001 7513,-5721 7927,-4232
 	Q0 4213,-5957 3653,-6050
 	Q0 -11312,13478 -11253,13707 -11244,13735 -11168,13840 -11237,13995 -11257,14070 -11117,14670 -11100,14753 -11075,14934 -11073,15002 -11131,15418 -11205,15994 -11160,16162 -11136,16247 -11027,16625 -10993,16705 -10956,16796 -10706,17065 -10246,17425 -10163,17584 -10088,17984 -10023,18343 -10000,18629 -10581,19871 -10576,19951 -10377,20973 -10313,21144 -9868,21594 -9589,21658 -9085,22059 -9053,22180 -9049,22288 -9046,22376 -8988,22668 -8777,22961 -7734,23796 -7599,23946 -7533,24138 -7603,24696 -7421,24956 -7260,25515 -7230,25622 -7243,25847 -7309,26146 -7640,26928 -7681,27096 -7250,28021 -6631,28966
 	Q0 -6943,25831 -7187,25859 -7225,25509 -7260,25515
@@ -4021,8 +4021,8 @@ Olympisches Dorf - Döberitzer Heide: asphaltiert	Q0 -16956,14506 -16803,14549 -1
 Olympisches Dorf - Döberitzer Heide: asphaltiert	Q0 -16956,14506 -16949,14368 -17027,14043 -17045,14005 -17114,13964 -17175,13749 -17292,13343 -17282,13275
 #: by: ^^^
 # 
-Kleinbeeren: mäßiger Asphalt am Rand, Mitte OK	Q0; 6012,-3393 6015,-5015
-Kleinbeeren: Asphalt	Q0; 6015,-5015 6012,-3393
+Kleinbeeren: mäßiger Asphalt am Rand, Mitte OK	Q0; 6000,-3711 6015,-5015
+Kleinbeeren: Asphalt	Q0; 6015,-5015 6000,-3711
 Kleinbeeren: Asphalt	Q0 6015,-5015 5654,-6424
 Jühnsdorf - Groß Schulzendorf: Asphalt	Q0 9792,-12090 9538,-12450 9296,-12574 8930,-13631 8421,-13979 8123,-14360 7638,-14868
 Groß Schulzendorf - Nächst Neuendorf: gute Qualität	Q0 7647,-14960 9245,-16892 9394,-17191 9560,-17681 10603,-19430 11075,-20009
@@ -4788,8 +4788,8 @@ Lessingstr. (Potsdam): Asphalt mit einigen Schäden	Q1 -9355,-1586 -9319,-1587 -9
 Kantstr. (Teltow): guter Asphalt	Q0 3721,195 3689,182 3490,102 3404,64 3149,-50 2951,-185 2757,-311 2532,-457
 #: by: hans noe: vvv
 Wolziger Zeile - B101: in die Jahre gekommener Asphalt	Q1 9608,-2642 9529,-2628 9159,-2590 8100,-2471 7090,-1651
-Wolziger Zeile - B101: holpriger Plattenweg	Q2- 7090,-1651 6684,-1325
-Wolziger Zeile - B101: sehr guter, neuer Asphalt	Q0 6684,-1325 6606,-1598 6427,-1856
+Wolziger Zeile - B101: holpriger Plattenweg	Q2- 7090,-1651 6742,-1368
+Wolziger Zeile - B101: sehr guter, neuer Asphalt	Q0 6742,-1368 6481,-1667 6427,-1856
 #: by: ^^^
 #: by: anonymous:
 Helene-Lange-Str. (Potsdam): Kopfsteinpflaster	Q2 -12861,-330 -13132,-256

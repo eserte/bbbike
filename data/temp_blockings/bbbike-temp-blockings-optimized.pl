@@ -3496,16 +3496,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140904.1220.399072.html',
-         'until' => 1418857199,
-         'text' => 'Englische Str. und Gutenbergstr.: Bauarbeiten, Einbahnstraßenregelung, von 08.09.2014 bis 17.12.2014',
-         'from' => 1410040800,
-         'id' => 2624,
-         'data' => 'userdel	q4::inwork; 5325,12234 5518,12159 5424,11944
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3583,17 +3574,7 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
        },
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
-         'until' => 1418832000,
-         'text' => 'Bruno-Bürgel-Weg ist Einbahnstraße offen Richtung Westen, bis 17.12.2014',
-         'from' => 1407706402,
-         'id' => 2639,
-         'data' => '#: source_id: IM_022377
-userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20437,5463 20781,5242
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_023111',
          'until' => 1427896800,
@@ -3678,16 +3659,7 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_023242',
-         'until' => 1418770799,
-         'text' => 'Schlichtallee: Bauarbeiten zwischen Zobtener Str. und Max-Taut-Schule, Einbahnstraße offen Richtung Hauptstr., Ausweichen auf Gehweg, bis zum 16.12.2014',
-         'from' => 1414624392,
-         'id' => 2655,
-         'data' => 'userdel	q3::inwork; 15758,10578 15880,10680
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php',
          'until' => 1419029999,
