@@ -3717,16 +3717,7 @@ userdel	q4::inwork 5635,7660 5636,7540
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_023572',
-         'until' => 1419001200,
-         'text' => 'Pistoriusstr. Richtung Berliner Allee: zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt, bis 19.12.2014',
-         'from' => 1417327200,
-         'id' => 2668,
-         'data' => 'userdel	q4::inwork; 13400,16395 13485,16362 13544,16339 13632,16305 13679,16286 13788,16240
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt, Ende der Bauarbeiten unbekannt',
