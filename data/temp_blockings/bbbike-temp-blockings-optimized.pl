@@ -2817,16 +2817,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_023149',
-         'until' => 1419091200,
-         'text' => 'Siemensstr.: Baustelle, zwischen Wattstr. und Edisonstr. in Richtung Edisonstr. gesperrt, 13.10.2014 06:15 Uhr bis 20.12.2014 17:00 Uhr ',
-         'from' => 1413087300,
-         'id' => 2353,
-         'data' => 'userdel	q4::inwork; 17766,6616 17842,6639 17860,6644 17962,6674
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3221,49 +3212,11 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'data' => 'userdel	2::temp 9986,13412 10317,13248
-',
-         'periodic' => 1,
-         'until' => 1419202799,
-         'from' => 1418943600,
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (20.12.2014 - 21.12.2014)',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              12
-                            ]
-                          ],
-         'id' => 2517,
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
-         'data' => 'userdel	2::temp 11317,14564 11255,14572 11163,14548
-',
-         'periodic' => 1,
-         'until' => 1419184800,
-         'from' => 1419073200,
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 21. Dezember 2014, 12:00 bis 19:00 Uhr',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              21,
-                              'months',
-                              12
-                            ]
-                          ],
-         'id' => 2521,
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3368,8 +3321,8 @@ userdel	q3::inwork; 13555,15596 13459,15653
        undef,
        {
          'source_id' => 'IM_021420',
-         'until' => 1420066799,
-         'text' => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende Dezember 2014',
+         'until' => 1425056400,
+         'text' => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende Februar 2015',
          'from' => undef,
          'id' => 2562,
          'data' => '#: source_id: IM_022480
@@ -3548,15 +3501,7 @@ userdel	2::inwork 15419,10706 15379,10651
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1419030000,
-         'text' => 'Genter Straße: zwischen Seestraße und Brüsseler Straße in Richtung Seestraße gesperrt, bis 19.12.2014 ',
-         'from' => 1411499642,
-         'id' => 2634,
-         'data' => 'userdel	q4::inwork; 6802,15790 6661,15921
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1424473200,
@@ -3649,27 +3594,9 @@ userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_022801',
-         'until' => 1419001200,
-         'text' => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Große Querallee, Fahrbahn gesperrt, Ausweichen auf Gehweg, 08.09.2014 08:00 Uhr bis 19.12.2014 16:00 Uhr ',
-         'from' => 1410069600,
-         'id' => 2654,
-         'data' => 'userdel	q3::inwork 7627,12380 7821,12367 7875,12363 8017,12359
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php',
-         'until' => 1419029999,
-         'text' => 'Karmeliterweg zwischen Ludolfinger Platz und An der Buche: Fahrbahnreparaturarbeiten, Fahrbahn gesperrt, vom 3. November 2014 bis 19. Dezember 2014',
-         'from' => 1414882800,
-         'id' => 2656,
-         'data' => 'userdel	q4::inwork 2174,24783 2222,24884 2245,25016
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3708,8 +3635,8 @@ userdel	q4::inwork 5635,7660 5636,7540
        },
        {
          'source_id' => 'IM_023529',
-         'until' => 1419260400,
-         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 22.12.2014 16:00 Uhr',
+         'until' => 1420470000,
+         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 05.01.2015 16:00 Uhr',
          'from' => 1416813420,
          'id' => 2666,
          'data' => 'userdel	q4::inwork 9373,12197 9369,12253 9358,12351

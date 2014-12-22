@@ -1074,13 +1074,6 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 # REMOVED (realisiert) --- #: osm_watch: way id="142575677" version="3" --- #: last_checked: 2013-10-31 --- #: next_check: 2013-12-15 --- Verlängerung der Hans-Schmidt-Str.: Qualität?	?::inwork 19581,3495 19667,3581
 # REMOVED (realisiert) --- #: osm_watch: way id="91218505" version="3"  --- #: XXX Radwege werden fortgeführt --- #: last_checked: 2013-08-19 --- #: next_check: 2013-11-15 --- Verlängerung der Wagner-Régeny-Str., Igo-Etrich-Str.: Qualität? Wo beginnt und verläuft die Igo-Etrich-Str.?	?::inwork 19363,3730 19162,3935
 # REMOVED (realisiert) --- #: osm_watch: way id="117951616" version="3" --- #: last_checked: 2013-10-31 --- #: check_frequency: 60d --- Verlängerung der Hermann-Dorner-Allee: Qualität? Straßenname?	?::inwork 18930,3703 19162,3935
-# 
-#: osm_watch: way id="224731112" version="6"
-#: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben, in den restlichen Abschnitten wird es wohl keine Radwege geben
-#: XXX wird es Anbindungen an den Park geben?
-#: last_checked: 2014-06-09 (Trassierungsarbeiten werden durchgeführt)
-#: next_check: 2014-12-07
-Gerhard-Sedlmayer-Str: Qualität? Genauer Straßenverlauf	?::inwork 18773,3873 18701,3806 18520,3812 18208,4151 18374,4307
 # REMOVED --- #: by: http://www.potsdam.de/cms/beitrag/10050631/757395/ --- #: by: (URL existiert nicht mehr) http://www.potsdam.de/cms/beitrag/10058808/757395/ --- #: XXX wo wird die Verbindung genau entlanggeführt? --- Neuer Garten (Potsdam): neue Radwegverbindung zwischen Gotischer Bibliothek und Alleestr.	?::inwork -12265,-418 -12263,-403 -12262,-362 -12328,-212 -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
 # REMOVED --- #: XXX Zugleich Benennung von "Alter Markt" (im Gegensatz zum auch vorhandenen "Am Alten Markt") in der Gegend, PLZ=14467, Eintrag in Potsdam.coords.data fehlt --- #: XXX siehe auch Eintrag in landstrassen-orig, eventuell wird sich die Humboldtstr. auf der anderen Seite des Schlosses befinden? --- Humboldtstr. (Potsdam): alte Straße wird hier wieder benannt	?::inwork -12771,-1633 -12766,-1598
 # REMOVED (hier wird wohl nichts weiter passieren - Radwege existieren, und die Qualität ist wohl egal?) --- #: by: MoPo 2009-08-01, soll 2009 realisiert werden vvv --- #: last_checked: 2011-06-25 --- Alt-Biesdorf (nördliche Seite): Bau von Radwegen	?::inwork; 22242,11269 21960,11269 21860,11278 21750,11319 21624,11379 21398,11482 21311,11528 --- #: last_checked: 2011-06-25 --- Alt-Biesdorf/Alt-Kaulsdorf (südliche Seite): Bau von asphaltierten Radwegen	?::inwork; 22242,11269 22326,11266 22484,11270 --- #: by ^^^
@@ -3860,3 +3853,11 @@ Alter Radelander Weg/Brücke - Bammelecke: Qualität (Waldweg?)	? 24153,-1140 2447
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2014
 #: XXX fehlt in Berlin.coords.data
 Darguner Str.: Qualität?	? 17566,18680 17635,18591
+# 
+#: osm_watch: way id="224731112" version="7"
+#: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben, in den restlichen Abschnitten wird es wohl keine Radwege geben
+#: XXX wird es Anbindungen an den Park geben?
+#: XXX laut osm bereits fertig und asphaltiert
+#: last_checked: 2014-06-09 (Trassierungsarbeiten werden durchgeführt)
+#: next_check: 2014-12-07
+Gerhard-Sedlmayer-Str: Qualität? Existiert ein Radweg? Gibt es Verbindungswege zum Park?	? 18773,3873 18701,3806 18520,3812 18208,4151 18374,4307

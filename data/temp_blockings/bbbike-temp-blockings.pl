@@ -22717,8 +22717,8 @@ userdel	2::inwork 26395,-11699 26302,-11712
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2014-12-31 23:59:59"),
-       text  => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende Dezember 2014',
+       until => $isodate2epoch->("2015-02-27 18:00:00"),
+       text  => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende Februar 2015',
        type  => 'handicap',
        source_id => 'IM_021420',
        data  => <<EOF,
@@ -23734,8 +23734,8 @@ userdel	q4::inwork 20559,14847 20480,14874
 EOF
      },
      { from  => 1416813420, # 2014-11-24 08:17
-       until => $isodate2epoch->("2014-12-22 16:00:00"), # 1418655600, # 2014-12-15 16:00
-       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 22.12.2014 16:00 Uhr',
+       until => $isodate2epoch->("2015-01-05 16:00:00"), # 1418655600, # 2014-12-15 16:00
+       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 05.01.2015 16:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_023529',
        data  => <<EOF,
