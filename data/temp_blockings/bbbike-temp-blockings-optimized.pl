@@ -3651,8 +3651,7 @@ userdel	q4::inwork 5635,7660 5636,7540
          'from' => undef,
          'id' => 2669,
          'data' => '#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
-#: last_checked: 2014-12-10
-#: next_check: 2014-12-19 (Beantwortung der Anfrage?)
+#: last_checked: 2014-12-23
 userdel	2::inwork 10308,11833 10374,11734
 ',
          'type' => 'gesperrt'

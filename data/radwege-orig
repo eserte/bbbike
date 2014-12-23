@@ -175,10 +175,6 @@ das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14222,10430 14103,1
 	RW1;RW2 13332,10832 13409,11004 13454,11119
 	RW1;RW1 13454,11119 13476,11174
 	RW4;RW1 13476,11174 13493,11217
-#: next_check_id: WARSCHAUER-2014
-#: XXX während der Bauarbeiten ist die Radspur teilweise entfernt; Radfahrern wird suggeriert, den Gehweg zu benutzen (später wieder RW4 eintragen)
-#: next_check: 2015-09-30
-	RW0;RW1 13493,11217 13541,11355
 am Anfang gibt es einen Radweg von 10 Metern Länge	RW0; 11949,10414 12169,10310
 die letzten Meter sind benutzungspflichtig	RW1; 12169,10310 11949,10414
 	RW1;RW1 12169,10310 12243,10274 12341,10218
@@ -1435,9 +1431,13 @@ die letzten 40 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW4; 12126,13088 12112,12861
 	RW4;RW4 12126,13088 12163,13295
 #: next_check_id: WARSCHAUER-2014
-#: XXX Radweg ist wegen Bauarbeiten aufgehoben, danach wahrscheinlich Radspur, offiziell besteht teilweise ein gemeinsamer Rad- und Gehweg (wie soll das gehen?)
+#: XXX während der Bauarbeiten ist die Radspur teilweise entfernt; Radfahrern wird suggeriert, den Gehweg zu benutzen (später wieder RW4 eintragen)
+#: last_checked: 2014-12-23 (dieser Abschnitt könnte bald fertig sein)
+	RW0;RW1 13493,11217 13541,11355 13588,11490
+#: next_check_id: WARSCHAUER-2014
+#: XXX Radfahrern wird suggeriert, den Gehweg zu benutzen (später RW4 eintragen)
+#: last_checked: 2014-12-23
 #: next_check: 2015-09-30
-	RW0;RW1 13541,11355 13588,11490
 	RW0;RW2 13588,11490 13603,11538
 	RW4;RW4 14026,10869 14024,10861 14011,10812
 	RW1;RW1 14134,11272 14096,11134 14076,11057 14043,10928 14026,10869

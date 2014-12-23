@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2014-12-14 vvv
+#: last_checked: 2014-12-23 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 #: last_checked ^^^
@@ -61,7 +61,7 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., 50 Meter Fahrbahn gesperrt	q3::inwor
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX nach den Bauarbeiten bleiben wohl "einige Fußgänger" übrig, dann nur mit q1
-#: last_checked: 2014-12-22
+#: last_checked: 2014-12-23
 Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2014-11-20
@@ -73,7 +73,7 @@ zur Keibelstr.: Baustraße, Durchfahrt für Radfahrer nicht erlaubt	q4::inwork 109
 #: check_frequency: 60d
 Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,13328 11201,13289
 # 
-#: last_checked: 2014-12-04
+#: last_checked: 2014-12-23
 #: check_frequency: 60d
 Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 # 
@@ -154,7 +154,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 #: last_checked: 2014-12-19
 Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
-#: last_checked: 2014-12-22 vvv
+#: last_checked: 2014-12-23 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
@@ -233,7 +233,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2014-12-19
+#: last_checked: 2014-12-23
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -255,11 +255,13 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10256,11160 10437,11352
 #: last_checked: 2014-12-04
 Michaelkirchplatz: Bauarbeiten, Einbahnstraße	q4::inwork; 11349,11227 11415,11392
 # 
-#: XXX bleibt das Kopfsteinpflaster? - wahrscheinlich ja
-#: last_checked: 2014-12-04
-Leuschnerdamm: Bauarbeiten am Engelbecken, auf Gehweg ausweichen	q4::inwork 11365,11047 11421,11073
+# REMOVED (nur eine Engstelle ist entstanden, kaum relevant für Radfahrer) --- #: XXX bleibt das Kopfsteinpflaster? - wahrscheinlich ja --- #: last_checked: 2014-12-04 --- Leuschnerdamm: Bauarbeiten am Engelbecken, auf Gehweg ausweichen	q4::inwork 11365,11047 11421,11073
 # 
 ### Kreuzberg ###
+# 
+#: last_checked: 2014-12-23 (offen für Radfahrer, evtl. nur temporär über die Feiertage?)
+# REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015)
+Alfred-Döblin-Platz: Bauarbeiten	q2::inwork 11162,10919 11150,11030
 # 
 # REMOVED --- #: next_check_id: MONUMENTENPLATZ-2014 --- #: XXX während der Bauarbeiten --- #: last_checked: 2014-09-02 --- #: check_frequency: 60d --- Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 # REMOVED (aufgehoben) --- #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376 --- #: osm_watch: way id="34390483" version="8" --- #: source_id: INKO_114376 --- #: source_id: IM_019321 --- #: last_checked: 2013-11-24 --- #: next_check: 2013-12-15 (laut VMZ bis 15.03.2014) --- #: priority: #A --- Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
