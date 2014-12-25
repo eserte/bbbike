@@ -17236,10 +17236,10 @@ userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-879
 EOF
      },
      { from  => $isodate2epoch->("2014-12-25 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-01-02 00:00:00"),
+       until => $isodate2epoch->("2015-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr.',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 26.12.2014 06:00 Uhr bis 02.01.2015 24:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
