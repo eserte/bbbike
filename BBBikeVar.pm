@@ -105,6 +105,8 @@ $BBBIKE_CVS_HTTP = 'http://bbbike.cvs.sourceforge.net/viewvc/bbbike/bbbike/';
 
 $BBBIKE_GOOGLEMAP_URL = 'http://bbbike.de/cgi-bin/bbbikegooglemap.cgi';
 
+# preferably $BBBIKE_LEAFLET_CGI_URL should be used, as some URLs
+# (shortcut icon) are not corrected in the .html variant:
 $BBBIKE_LEAFLET_URL = 'http://bbbike.de/BBBike/html/bbbikeleaflet.html';
 $BBBIKE_LEAFLET_CGI_URL = 'http://bbbike.de/cgi-bin/bbbikeleaflet.cgi';
 

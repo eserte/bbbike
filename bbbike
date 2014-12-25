@@ -14577,7 +14577,7 @@ sub show_info {
 		}
 		$info_text->insert("end", "BBBike Leaflet (local)",
 				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-		$show_leaflet_url->("http://localhost/bbbike/html/bbbikeleaflet.html", $linkcount);
+		$show_leaflet_url->("http://localhost/bbbike/cgi/bbbikeleaflet.cgi", $linkcount);
 		$info_text->insert("end", "\n");
 		$linkcount++;
 	    }
@@ -14588,7 +14588,7 @@ sub show_info {
 	    }
 	    $info_text->insert("end", "BBBike Leaflet",
 			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_leaflet_url->($BBBike::BBBIKE_LEAFLET_URL, $linkcount);
+	    $show_leaflet_url->($BBBike::BBBIKE_LEAFLET_CGI_URL, $linkcount);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 	}
