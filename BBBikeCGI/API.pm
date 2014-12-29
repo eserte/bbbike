@@ -17,7 +17,7 @@ package BBBikeCGI::API;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use JSON::XS qw();
 
@@ -67,6 +67,16 @@ sub action_config {
     print $q->header(-type => 'text/plain');
     no warnings 'once';
     my $json_bool = sub { $_[0] ? JSON::XS::true : JSON::XS::false };
+
+    my %modules_info;
+    for my $module_name (
+			 'Geo::Distance::XS',
+			 'Geo::SpaceManager',
+			 'YAML::XS', # for BBBikeYAML
+			) {
+	$modules_info{$module_name} = _module_info($module_name);
+    }
+
     print JSON::XS->new->ascii->encode
 	(
 	 {
@@ -101,8 +111,34 @@ sub action_config {
 	  use_utf8                   => $json_bool->($main::use_utf8),
 	  data_is_wgs84              => $json_bool->($main::data_is_wgs84),
 	  osm_data                   => $json_bool->($main::osm_data),
+	  modules_info               => \%modules_info,
 	 }
 	);
+}
+
+# Module info can contain:
+#  warning   => "...":  a warning, e.g. if Module::Metadata is not available
+#  installed => bool:   module is installed or not installed
+#  version   => string: module's stringified version
+#  version   => false:  module's version is not available
+sub _module_info {
+    my $module_name = shift;
+    if (eval { require Module::Metadata; 1 }) {
+	my $mod = Module::Metadata->new_from_module($module_name, collect_pod => 0);
+	if ($mod) {
+	    my $ver = $mod->version;
+	    if ($ver->can('stringify'))  {
+		return { installed => JSON::XS::true, version => $ver->stringify }; # stringify for json
+	    } else {
+		warn "Unexpected: cannot get version for '$module_name' via Module::Metadata";
+		return { installed => JSON::XS::true, version => JSON::XS::false };
+	    }
+	} else {
+	    return { installed => JSON::XS::false }
+	}
+    } else {
+	return { warning => 'Module::Metadata unavailable' };
+    }
 }
 
 1;

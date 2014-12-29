@@ -49,6 +49,22 @@ my $cgitesturl = "$cgidir/bbbike-test.cgi";
 	like $apache_session_module, qr{^Apache::Session(|::Counted)$};
     }
 
+    # and modules_info is dynamically determined from system's
+    # installed modules
+    my $modules_info = delete $data->{modules_info};
+    my @diag;
+    for my $mod (keys %$modules_info) {
+	my $module_info = $modules_info->{$mod};
+	if ($module_info->{warning}) {
+	    push @diag, "NOTE: warning returned while retrieving info for '$mod': $module_info->{warning}";
+	} elsif ($module_info->{installed} eq JSON::XS::false) {
+	    push @diag, "NOTE: Module '$mod' not installed";
+	} else {
+	    like $module_info->{version} , qr{^\d+\.}, "Version for '$mod' looks like a version";
+	}
+    }
+    diag $_ for @diag;
+
     eq_or_diff $data,
 	{
 	 bbbikedraw_pdf_module	    => undef,
