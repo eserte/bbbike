@@ -1933,32 +1933,7 @@ userdel	2::temp 9524,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.winterwelt-berlin.de/',
-         'data' => '#: note: Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), Weihnachtsmarkt erst ab dem 24.11.2014
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=962671
-userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
-#userdel	2::temp 8318,11324 8280,11296 8278,11257
-#: XXX_prog "3::temp" geht nicht?
-userdel	3 8427,11365 8389,11378 8374,11479
-userdel	3 8374,11479 8389,11378 8427,11365
-',
-         'periodic' => 1,
-         'until' => 1419634799,
-         'from' => 1416697200,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Winterwelt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, bis 26. Dezember 2014',
-         'id' => 1997,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2844,29 +2819,7 @@ userdel	2::night 17671,13132 17684,13133
 ',
          'type' => 'gesperrt'
        },
-       {
-         'data' => '#: by: http://www.potsdam.de/cms/beitrag/10046424/302934/
-#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/91842041/Radverkehrsfuehrung_Gro%C3%9Fveranstaltungen.pdf
-#: by: http://www.potsdam.de/cms/ziel/302934/DE
-#: by: http://www.mobil-potsdam.de/fileadmin/user_upload/Pdf/Radverkehrsfuehrung_Grossveranstaltungen.pdf
-userdel	1::temp -13556,-1182 -13643,-1220
-',
-         'periodic' => 1,
-         'until' => 1419807599,
-         'from' => 1416697200,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 24.11.2014 - 28.12.2014',
-         'type' => 'gesperrt',
-         'id' => 2526
-       },
+       undef,
        undef,
        undef,
        undef,
