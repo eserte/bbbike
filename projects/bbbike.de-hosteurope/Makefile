@@ -71,7 +71,10 @@ CGI_FILES=		bbbike.cgi \
 TESTS_ON_REMOTE?=	basic.t \
 			strassen-gpx.t \
 			bbbikedraw.t
-TESTS_FROM_LOCAL=	cgihead.t \
+TESTS_FROM_LOCAL=	\
+			bbbikecgiapi.t \
+			bbbikecgiapi-config.t \
+			cgihead.t \
 			cgi-mechanize.t \
 			cgi.t \
 			cgi-test.t \
@@ -81,7 +84,7 @@ TESTS_FROM_LOCAL=	cgihead.t \
 			wwwdata.t
 TESTS_SERVER_ON_REMOTE=	
 TESTS=			$(TESTS_ON_REMOTE) $(TESTS_SERVER_ON_REMOTE) $(TESTS_FROM_LOCAL)
-TESTS_ADD=		BBBikeTest.pm bbbikedraw.t
+TESTS_ADD=		BBBikeTest.pm
 HTDOCS=			public
 
 # XXX maybe use test-on-remote-and-send-mail (after tests)
