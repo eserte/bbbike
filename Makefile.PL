@@ -276,6 +276,8 @@ my @req_table =
   (!eval { require CGI; $CGI::VERSION < 3.43 || $CGI::VERSION >= 3.46 } ?
    [qw/CGI		3.46	all	2	cgi/,
     'CGI-Handling'] : ()),
+  [qw/Module::Metadata	0	all	2	cgi/,
+   'Information zu installierten Modulen für API-Aufrufe'],
 
   [qw/Plack		0	all	8	cgi/,
    'Basis für die PSGI-Anwendung'],

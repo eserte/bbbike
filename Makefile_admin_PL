@@ -352,7 +352,7 @@ DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libtext-unidecode-perl libdata-compare-perl agrep
 DEB_MISC=	libdate-calc-perl
 DEB_CGI=	libapache-session-perl libfile-counterfile-perl \
-		libdigest-md5-perl
+		libdigest-md5-perl libmodule-metadata-perl
 # If apache-perl is installed, then do not install apache2!
 DEB_APACHE=	apache2
 DEB_MAPSERVER=	mapserver-bin cgi-mapserver
@@ -405,7 +405,7 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libyaml-perl libyaml-syck-perl perl perl-modules perl-tk perlmagick \
 		libhtml-format-perl libmath-round-perl libgdal-perl ttf-dejavu \
 		libcairo-perl libpango-perl pdftk mapserver-bin cgi-mapserver \
-		libdigest-md5-perl
+		libdigest-md5-perl libmodule-metadata-perl
 
 # XXX Does not work, see below
 install-debian-for-cgi:	install-debian-packages-for-cgi \

@@ -71,6 +71,8 @@ WWW::Mechanize	- Für Testen des CGI-Interfaces
 
 WWW::Mechanize::FormFiller	- Für Testen des CGI-Interfaces
 
+Module::Metadata	- Information zu installierten Modulen für API-Aufrufe
+
 
 =head1 DESCRIPTION
 
