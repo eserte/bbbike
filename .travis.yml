@@ -21,13 +21,20 @@ before_install:
  - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest DB_File~"!=1.833" || true'
 # Tk + EUMM 7.00 problems, use the current development version (https://rt.cpan.org/Ticket/Display.html?id=100044)
  - cpanm --quiet --notest SREZIC/Tk-804.032_500.tar.gz
-# Additional psgi dependencies
- - cpanm --quiet --notest Plack CGI::Emulate::PSGI CGI::Compile Starman Plack::Middleware::Rewrite
+# Additional psgi dependencies --- XXX actually these are already listed in Makefile.PL's PREREQ_PM
+ - '[ "$USE_MODPERL" = "" ] && cpanm --quiet --notest Plack CGI::Emulate::PSGI CGI::Compile Starman Plack::Middleware::Rewrite || true'
+# Alternatively: install mod_perl
+ - '[ "$USE_MODPERL" = "1" ] && sudo apt-get install apache2-mpm-prefork apache2-prefork-dev || true'
+ - '[ "$USE_MODPERL" = "1" ] && cpanm --quiet --notest mod_perl2 --configure-args="MP_APXS=/usr/bin/apxs2 MP_AP_DESTDIR=$PERLBREW_ROOT/perls/$PERLBREW_PERL/" || true'
+ - '[ "$USE_MODPERL" = "1" ] && sudo sh -c "echo LoadModule perl_module $PERLBREW_ROOT/perls/$PERLBREW_PERL/usr/lib/apache2/modules/mod_perl.so > /etc/apache2/mods-enabled/perl.load" || true'
 before_script:
  - (cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
  - (cd cgi && ln -snf bbbike2-travis.cgi.config bbbike2.cgi.config)
  - (cd cgi && make symlinks fix-permissions fixin-shebangs)
- - sudo -E `which plackup` --server=Starman --env=test --port=80 cgi/bbbike.psgi &
+ - '[ "$USE_MODPERL" = "" ] && (sudo -E `which plackup` --server=Starman --env=test --port=80 cgi/bbbike.psgi &) || true'
+ - '[ "$USE_MODPERL" = "1" ] && (cd cgi && make httpd.conf) || true'
+ - '[ "$USE_MODPERL" = "1" ] && sudo ln -s $HOME/build/eserte/bbbike/cgi/httpd.conf /etc/apache2/sites-enabled/bbbike.conf || true'
+ - '[ "$USE_MODPERL" = "1" ] && sudo service apache2 restart || true'
  - Xvfb :123 &
  - (sleep 10; env DISPLAY=:123 twm) &
  - (sleep 5; lwp-request -m GET "http://localhost/bbbike/cgi/bbbike.cgi?init_environment=1")
@@ -41,3 +48,7 @@ perl:
   - "5.14"
   - "5.10"
   - "5.8"
+matrix:
+  include:
+    - perl: 5.20-shrplib
+      env: USE_MODPERL=1 DISPLAY=:123 BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1
