@@ -40,7 +40,7 @@ before_script:
  - (sleep 5; lwp-request -m GET "http://localhost/bbbike/cgi/bbbike.cgi?init_environment=1")
  - (cd data && $(perl -I.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake') -j4 live-deployment-targets)
 env:
- - DISPLAY=:123 BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1
+ - DISPLAY=:123 BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1 BBBIKE_TEST_SKIP_MODPERL=1
 language: perl
 perl:
   - "5.20"

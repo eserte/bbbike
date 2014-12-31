@@ -149,7 +149,7 @@ for my $f (@files) {
 	    myskip "$f needs mod_perl2", $tests_per_file
 	        if $f =~ m{^( BBBikeApacheSessionCountedHandler\.pm
 		          )$}x && !eval { require Apache2::Const; 1 };
-	} elsif (($ENV{TRAVIS}||'') eq 'true' &&
+	} elsif ($ENV{BBBIKE_TEST_SKIP_MODPERL} &&
 		 $f eq 'BBBikeApacheSessionCountedHandler.pm' &&
 		 !eval { require Apache2::Const; 1 }
 		) {
