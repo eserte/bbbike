@@ -18,6 +18,10 @@ wrapper() {
 ######################################################################
 # Functions for the before-install phase:
 
+init_env_vars() {
+    export BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1
+}
+
 init_perl() {
     echo "not yet implemented"
 }
@@ -120,6 +124,7 @@ init_webserver_environment() {
 }
 
 start_xserver() {
+    export DISPLAY=:123
     Xvfb $DISPLAY &
     (sleep 10; twm) &
 }

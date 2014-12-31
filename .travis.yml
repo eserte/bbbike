@@ -1,6 +1,7 @@
 before_install:
  - . port/travis-ci/travis-functions.sh
  - init_travis
+ - wrapper init_env_vars
  - wrapper init_perl
  - wrapper init_apt
  - wrapper install_non_perl_dependencies
@@ -16,7 +17,7 @@ before_script:
  - wrapper start_xserver
  - wrapper init_data
 env:
- - DISPLAY=:123 BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1 BBBIKE_TEST_SKIP_MODPERL=1
+ - BBBIKE_TEST_SKIP_MODPERL=1
 language: perl
 perl:
   - "5.20"
@@ -27,4 +28,4 @@ perl:
 matrix:
   include:
     - perl: 5.20-shrplib
-      env: USE_MODPERL=1 DISPLAY=:123 BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1
+      env: USE_MODPERL=1
