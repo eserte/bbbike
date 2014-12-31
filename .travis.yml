@@ -1,44 +1,20 @@
 before_install:
- - sudo apt-get update -qq
-# Reasons for the following dependencies
-# - freebsd-buildutils:     provides freebsd-make resp. fmake
-# - libproj-dev + proj-bin: prerequisites for Geo::Proj4
-# - libdb-dev:              prerequisite for DB_File
-# - agrep:                  needed as String::Approx alternative
-# - libgd2-xpm-dev:         prerequisite for GD
-# - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
-# - xvfb + twm:             some optional tests require an X server
-# - rhino:                  javascript tests
-# - imagemagick:            typ2legend test
- - sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb twm rhino imagemagick
-# Some CPAN modules not mentioned in Makefile.PL, usually for testing only
- - cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath
-# DBD::XBase versions between 1.00..1.05 explicitely want Perl 5.10.0 as a minimum. See https://rt.cpan.org/Ticket/Display.html?id=88873
- - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05" || true'
-# Perl 5.8.9's File::Path has a version with underscores, and this is causing warnings and failures in the test suite
- - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest File::Path || true'
-# Wrong version specification in DB_File's Makefile.PL, see https://rt.cpan.org/Ticket/Display.html?id=100844
- - '[ "$PERLBREW_PERL" = "5.8" ] && cpanm --quiet --notest DB_File~"!=1.833" || true'
-# Tk + EUMM 7.00 problems, use the current development version (https://rt.cpan.org/Ticket/Display.html?id=100044)
- - cpanm --quiet --notest SREZIC/Tk-804.032_500.tar.gz
-# Additional psgi dependencies --- XXX actually these are already listed in Makefile.PL's PREREQ_PM
- - '[ "$USE_MODPERL" = "" ] && cpanm --quiet --notest Plack CGI::Emulate::PSGI CGI::Compile Starman Plack::Middleware::Rewrite || true'
-# Alternatively: install mod_perl
- - '[ "$USE_MODPERL" = "1" ] && sudo apt-get install apache2-mpm-prefork apache2-prefork-dev || true'
- - '[ "$USE_MODPERL" = "1" ] && cpanm --quiet --notest mod_perl2 --configure-args="MP_APXS=/usr/bin/apxs2 MP_AP_DESTDIR=$PERLBREW_ROOT/perls/$PERLBREW_PERL/" || true'
- - '[ "$USE_MODPERL" = "1" ] && sudo sh -c "echo LoadModule perl_module $PERLBREW_ROOT/perls/$PERLBREW_PERL/usr/lib/apache2/modules/mod_perl.so > /etc/apache2/mods-enabled/perl.load" || true'
+ - . port/travis-ci/travis-functions.sh
+ - init_travis
+ - wrapper init_perl
+ - wrapper init_apt
+ - wrapper install_non_perl_dependencies
+ - wrapper install_perl_testonly_dependencies
+ - wrapper install_perl_58_dependencies
+ - wrapper install_cpan_hacks
+ - wrapper install_webserver_dependencies
 before_script:
- - (cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
- - (cd cgi && ln -snf bbbike2-travis.cgi.config bbbike2.cgi.config)
- - (cd cgi && make symlinks fix-permissions fixin-shebangs)
- - '[ "$USE_MODPERL" = "" ] && (sudo -E `which plackup` --server=Starman --env=test --port=80 cgi/bbbike.psgi &) || true'
- - '[ "$USE_MODPERL" = "1" ] && (cd cgi && make httpd.conf) || true'
- - '[ "$USE_MODPERL" = "1" ] && sudo ln -s $HOME/build/eserte/bbbike/cgi/httpd.conf /etc/apache2/sites-enabled/bbbike.conf || true'
- - '[ "$USE_MODPERL" = "1" ] && sudo service apache2 restart || true'
- - Xvfb :123 &
- - (sleep 10; env DISPLAY=:123 twm) &
- - (sleep 5; lwp-request -m GET "http://localhost/bbbike/cgi/bbbike.cgi?init_environment=1")
- - (cd data && $(perl -I.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake') -j4 live-deployment-targets)
+ - wrapper init_cgi_config
+ - wrapper fix_cgis
+ - wrapper init_webserver_config
+ - wrapper start_webserver
+ - wrapper start_xserver
+ - wrapper init_data
 env:
  - DISPLAY=:123 BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1 BBBIKE_TEST_SKIP_MODPERL=1
 language: perl
