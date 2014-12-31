@@ -68,16 +68,14 @@ install_cpan_hacks() {
 }
 
 install_webserver_dependencies() {
-    if [ "$USE_MODPERL" = "" ]
+    if [ "$USE_MODPERL" = "1" ]
     then
-	# Additional psgi dependencies --- XXX actually these are already listed in Makefile.PL's PREREQ_PM
-        cpanm --quiet --notest Plack CGI::Emulate::PSGI CGI::Compile Starman Plack::Middleware::Rewrite
-    else
-	# Alternatively: install mod_perl
+	# install mod_perl
 	sudo apt-get install -qq apache2-mpm-prefork apache2-prefork-dev
 	cpanm --quiet --notest mod_perl2 --configure-args="MP_APXS=/usr/bin/apxs2 MP_AP_DESTDIR=$PERLBREW_ROOT/perls/$PERLBREW_PERL/"
 	sudo sh -c "echo LoadModule perl_module $PERLBREW_ROOT/perls/$PERLBREW_PERL/usr/lib/apache2/modules/mod_perl.so > /etc/apache2/mods-enabled/perl.load"
     fi
+    # plack dependencies are already handled in Makefile.PL's PREREQ_PM
 }
 
 ######################################################################

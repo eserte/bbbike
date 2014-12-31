@@ -410,6 +410,10 @@ sub build_prereq {
 						    |   Geo::GDAL     # dito
 						    )$}x;
 	    }
+	    if (($ENV{TRAVIS}||'') eq 'true' && $ENV{USE_MODPERL}) {
+		# Don't install exclusive Plack dependencies for a modperl testing environment
+		next if $_->[REQTABLE_REQ] == REQ_BBBIKE_PSGI;
+	    }
 	    $prereq{$_->[REQTABLE_MODNAME]} = $_->[REQTABLE_VERSION];
 	    push @prereq, $_;
 	}
