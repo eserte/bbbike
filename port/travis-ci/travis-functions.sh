@@ -27,6 +27,16 @@ init_perl() {
 }
 
 init_apt() {
+    if [ "$USE_SYSTEM_PERL" = "1" ]
+    then
+	if [ ! -e /etc/apt/sources.list.d/mydebs.bbbike.list ]
+	then
+	    CODENAME=$(lsb_release -c -s)
+	    wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | sudo apt-key add -
+	    sudo sh -c "echo deb http://mydebs.bbbike.de ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
+	    sudo mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
+	fi
+    fi
     sudo apt-get update -qq
 }
 
