@@ -39,7 +39,7 @@ __C__
 #include <fcntl.h>
 #include <unistd.h>
 
-long mmap_net_file(SV* self, char* filename) {
+unsigned long mmap_net_file(SV* self, char* filename) {
     char *buf = NULL;
     int length;
     int version;
@@ -73,14 +73,14 @@ long mmap_net_file(SV* self, char* filename) {
 
     hv_store(self_hash, "CNetMagic", strlen("CNetMagic"), newSVpv(magic,0), 0);
     hv_store(self_hash, "CNetFileVersion", strlen("CNetFileVersion"), newSViv(version), 0);
-    hv_store(self_hash, "CNetMmap", strlen("CNetMmap"), newSViv((long)buf), 0);
+    hv_store(self_hash, "CNetMmap", strlen("CNetMmap"), newSViv((unsigned long)buf), 0);
 
-    return (long)buf;
+    return (unsigned long)buf;
 }
 
 void* translate_pointer(SV* self, int ptr) {
     HV* self_hash = (HV*)SvRV(self);
-    long buf;
+    unsigned long buf;
 
     {
 	SV** tmp = hv_fetch(self_hash, "CNetMmap", strlen("CNetMmap"), 0);
