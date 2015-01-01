@@ -249,8 +249,13 @@ sub STORE {
 sub EXISTS {
     my($self, $key2) = @_;
     my $str_net = $self->{StrassenNetz};
-    my(undef,undef,undef,@neighbors) = $str_net->get_coord_struct($str_net->translate_pointer($str_net->{CNetCoord2Ptr}->{$self->{Key1}}));
-    my $n_ptr = $str_net->translate_pointer($str_net->{CNetCoord2Ptr}->{$key2}) - $str_net->{CNetMmap};
+    my $cnet_coord_2_ptr = $str_net->{CNetCoord2Ptr};
+    my(undef,undef,undef,@neighbors) = $str_net->get_coord_struct($str_net->translate_pointer($cnet_coord_2_ptr->{$self->{Key1}}));
+    my $v2 = $cnet_coord_2_ptr->{$key2};
+    if (!defined $v2) {
+	return 0;
+    }
+    my $n_ptr = $str_net->translate_pointer($v2) - $str_net->{CNetMmap};
     for(my $n_i = 0; $n_i < $#neighbors; $n_i += 2) {
 	if ($neighbors[$n_i] eq $n_ptr) {
 	    return 1;
