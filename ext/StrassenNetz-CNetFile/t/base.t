@@ -5,15 +5,16 @@
 # Author: Slaven Rezic
 #
 
-use Cwd;
+use strict;
+
+my $root;
 BEGIN { $root = "../.." }
-use lib ($root, "$root/lib", "$root/data");
+use lib ($root, "$root/lib");
 use lib @lib::ORIG_INC;
 
 use Strassen::Core;
 use StrassenNetz::CNetFileDist;
 
-use strict;
 use Getopt::Long;
 
 BEGIN {
@@ -26,7 +27,7 @@ BEGIN {
     }
 }
 
-plan tests => 11;
+plan tests => 20;
 
 GetOptions("v" => sub {
 	       no warnings 'once';
@@ -35,7 +36,10 @@ GetOptions("v" => sub {
 	   })
     or die "usage: $0 [-v]";
 
-my $s = Strassen->new("strassen");
+$Strassen::Util::cacheprefix = "test_b_de";
+
+my $strfile = "$root/t/data-test/strassen";
+my $s = Strassen->new($strfile);
 my $net = StrassenNetz->new($s);
 isa_ok $net, 'StrassenNetz';
 $net->use_data_format($StrassenNetz::FMT_MMAP);
@@ -71,5 +75,33 @@ pass "No failure while running make_net";
 
 }
 
+
+{
+    my $c1 = '9229,8785';
+    my $c2 = '9227,8890';
+    my $non_exists_c1 = '987654321,123456789';
+
+    my $common_diag = sub { diag "Test may fail if test data $strfile changes around Dudenstr." };
+
+    ok exists $net->{Net}->{$c1}, 'existence check, 1st level'
+	or $common_diag->();
+    my $v = $net->{Net}->{$c1};
+    isa_ok $v, 'HASH';
+    ok exists $net->{Net}->{$c1}->{$c2}, 'existence check, 2nd level'
+	or $common_diag->();
+    ok exists $v->{$c2}, 'existence check through intermediate variable'
+	or $common_diag->();
+    my $dist = $v->{$c2};
+    cmp_ok $dist, '>=', 100, 'expexted dist'
+	or $common_diag->();
+    cmp_ok $dist, '<=', 110
+	or $common_diag->();
+
+    is $net->{Net}->{$c2}->{$c1}, $dist, 'same distance for other way around'
+	or $common_diag->();
+
+    ok !exists $net->{Net}->{$non_exists_c1}, 'non-existence check, 1st level';
+    ok !exists $net->{Net}->{$c1}->{$non_exists_c1}, 'non-existence check, 2nd level';
+}
 
 __END__
