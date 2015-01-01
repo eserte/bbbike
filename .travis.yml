@@ -31,3 +31,5 @@ matrix:
   include:
     - perl: 5.20-shrplib
       env: USE_MODPERL=1
+    - perl: 5.14
+      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
