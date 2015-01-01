@@ -104,7 +104,12 @@ init_webserver_config() {
     if [ "$USE_MODPERL" = "1" ]
     then
 	(cd cgi && make httpd.conf)
-	sudo ln -s $TRAVIS_BUILD_DIR/cgi/httpd.conf /etc/apache2/sites-enabled/bbbike.conf
+	if [ ! -e /etc/apache2/sites-available/bbbike.conf -a ! -h /etc/apache2/sites-available/bbbike.conf ]
+	then
+	    sudo ln -s $TRAVIS_BUILD_DIR/cgi/httpd.conf /etc/apache2/sites-available/bbbike.conf
+	fi
+	sudo a2ensite bbbike.conf
+	sudo a2enmod headers
     fi
 }
 
