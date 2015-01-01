@@ -95,7 +95,14 @@ if ($common) {
 } else {
     # run twice to get the cache effect!
     my @cachetypes;
-    for (qw(CDB_File VirtArray Storable Data::Dumper)) {
+
+    # check for valid cache types
+    if (eval 'require CDB_File; require MLDBM; 1') {
+	push @cachetypes, 'CDB_File';
+    } else {
+	warn "CDB_File and/or MLDBM not available, not using CDB_File as cache type\n";
+    }
+    for (qw(VirtArray Storable Data::Dumper)) {
 	if (eval "require $_; 1") {
 	    push @cachetypes, $_;
 	} else {
