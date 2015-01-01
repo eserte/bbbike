@@ -1884,48 +1884,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 11329,12497 11209,12430
-userdel	2::temp 11209,12430 11273,12301
-userdel	2::temp 11273,12301 11355,12331
-',
-         'periodic' => 1,
-         'until' => 1420066799,
-         'from' => 1415660400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), bis Ende Dezember 2014',
-         'type' => 'gesperrt',
-         'id' => 1988
-       },
-       {
-         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=962691',
-         'data' => 'userdel	2::temp 9536,11912 9668,11928
-userdel	2::temp 9524,12010 9656,12021
-',
-         'periodic' => 1,
-         'until' => 1420066799,
-         'from' => 1416697200,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 24.11.2014 bis 31.12.2014, Durchfahrt nicht möglich (Eintritt!)',
-         'id' => 1989,
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2036,7 +1996,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -3020,18 +2980,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
-         'until' => 1420066799,
-         'text' => 'Gounodstr.: Bauarbeiten zwischen von Herbert-Baum-Str. bis Borodinstr., ab Ende September 2014 bis Ende Dezember 2014',
-         'from' => 1411941600,
-         'id' => 2628,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
-#: last_checked: 2014-12-13
-userdel	q4::inwork 13645,15609 13739,15643 13939,15723
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -3058,16 +3007,7 @@ userdel	2::inwork 15419,10706 15379,10651
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140919.1335.399343.html',
-         'until' => 1420066800,
-         'text' => 'Schönholzer Heide: Bauarbeiten am Weg zwischen Heinrich-Mann-Str. und Friesenstr., Benutzung des Wegs ist nicht möglich, 24.09.2014 bis Dezember 2014',
-         'from' => 1411423200,
-         'id' => 2633,
-         'data' => 'userdel	2::inwork 8765,19288 8791,19249 8947,19166 9009,19045 9191,18785 9279,18724
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
