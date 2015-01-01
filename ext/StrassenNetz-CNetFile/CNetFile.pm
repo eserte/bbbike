@@ -1,10 +1,9 @@
 # -*- c -*-
 
 #
-# $Id: CNetFile.pm,v 1.12 2007/04/22 19:54:33 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002, 2003, 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2003, 2007, 2015 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -15,7 +14,7 @@
 package StrassenNetz::CNetFile;
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = '1.13';
 }
 
 use Inline 0.40; # because of API changes

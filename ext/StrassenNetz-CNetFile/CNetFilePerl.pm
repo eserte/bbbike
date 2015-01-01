@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: CNetFilePerl.pm,v 1.18 2007/05/09 20:36:52 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002, 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2007, 2015 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
