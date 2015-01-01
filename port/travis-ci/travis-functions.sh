@@ -23,7 +23,10 @@ init_env_vars() {
 }
 
 init_perl() {
-    echo "not yet implemented"
+    if [ "$USE_SYSTEM_PERL" = "1" ]
+    then
+        perlbrew off
+    fi
 }
 
 init_apt() {
@@ -56,12 +59,17 @@ install_non_perl_dependencies() {
 
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
 install_perl_testonly_dependencies() {
-    cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath
+    if [ "$USE_SYSTEM_PERL" = "1" ]
+    then
+	sudo apt-get install -qq libemail-mime-perl libhtml-treebuilder-xpath-perl
+    else
+	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath
+    fi
 }
 
 # perl 5.8 specialities
 install_perl_58_dependencies() {
-    if [ "$PERLBREW_PERL" = "5.8" ]
+    if [ "$PERLBREW_PERL" = "5.8" -a ! "$USE_SYSTEM_PERL" = "1" ]
     then
 	# DBD::XBase versions between 1.00..1.05 explicitely want Perl 5.10.0 as a minimum. See https://rt.cpan.org/Ticket/Display.html?id=88873
 	cpanm --quiet --notest DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05"
@@ -73,17 +81,26 @@ install_perl_58_dependencies() {
 }
 
 install_cpan_hacks() {
-    # Tk + EUMM 7.00 problems, use the current development version (https://rt.cpan.org/Ticket/Display.html?id=100044)
-    cpanm --quiet --notest SREZIC/Tk-804.032_500.tar.gz
+    if [ ! "$USE_SYSTEM_PERL" = "1" ]
+    then
+	# Tk + EUMM 7.00 problems, use the current development version (https://rt.cpan.org/Ticket/Display.html?id=100044)
+	cpanm --quiet --notest SREZIC/Tk-804.032_500.tar.gz
+    fi
 }
 
 install_webserver_dependencies() {
     if [ "$USE_MODPERL" = "1" ]
     then
 	# install mod_perl
-	sudo apt-get install -qq apache2-mpm-prefork apache2-prefork-dev
-	cpanm --quiet --notest mod_perl2 --configure-args="MP_APXS=/usr/bin/apxs2 MP_AP_DESTDIR=$PERLBREW_ROOT/perls/$PERLBREW_PERL/"
-	sudo sh -c "echo LoadModule perl_module $PERLBREW_ROOT/perls/$PERLBREW_PERL/usr/lib/apache2/modules/mod_perl.so > /etc/apache2/mods-enabled/perl.load"
+	sudo apt-get install -qq apache2-mpm-prefork
+	if [ "$USE_SYSTEM_PERL" = "1" ]
+	then
+	    sudo apt-get install -qq libapache2-mod-perl2
+	else
+	    sudo apt-get install -qq apache2-prefork-dev
+	    cpanm --quiet --notest mod_perl2 --configure-args="MP_APXS=/usr/bin/apxs2 MP_AP_DESTDIR=$PERLBREW_ROOT/perls/$PERLBREW_PERL/"
+	    sudo sh -c "echo LoadModule perl_module $PERLBREW_ROOT/perls/$PERLBREW_PERL/usr/lib/apache2/modules/mod_perl.so > /etc/apache2/mods-enabled/perl.load"
+	fi
     fi
     # plack dependencies are already handled in Makefile.PL's PREREQ_PM
 }
@@ -91,7 +108,12 @@ install_webserver_dependencies() {
 ######################################################################
 # Functions for the install phase:
 install_perl_dependencies() {
-    echo "not yet implemented"
+    if [ "$USE_SYSTEM_PERL" = "1" ]
+    then
+	sudo apt-get install -qq libapache-session-counted-perl libarchive-zip-perl libgd-gd2-perl libsvg-perl libobject-realize-later-perl libdb-file-lock-perl libpdf-create-perl libtext-csv-xs-perl libdbi-perl libdate-calc-perl libobject-iterate-perl libgeo-metar-perl libimage-exiftool-perl libdbd-xbase-perl libxml-libxml-perl libxml-twig-perl libgeo-distance-xs-perl libimage-info-perl libinline-perl libtemplate-perl libyaml-libyaml-perl libclass-accessor-perl libdatetime-perl libstring-approx-perl libtext-unidecode-perl libipc-run-perl libjson-xs-perl libcairo-perl libpango-perl libmime-lite-perl libpalm-palmdoc-perl libcdb-file-perl libmldbm-perl
+    else
+	cpanm --quiet --installdeps --notest .
+    fi
 }
 
 ######################################################################

@@ -9,6 +9,8 @@ before_install:
  - wrapper install_perl_58_dependencies
  - wrapper install_cpan_hacks
  - wrapper install_webserver_dependencies
+install:
+ - wrapper install_perl_dependencies
 before_script:
  - wrapper init_cgi_config
  - wrapper fix_cgis
