@@ -4690,14 +4690,12 @@ Charlottenstr. (Spandau)	NN -3227,14260 -3293,14304 -3338,14333 -3397,14370
 Schulenburgstr. (Spandau, Wilhelmstadt)	H -2725,13287 -2798,13257 -2940,13221 -2974,13188 -3159,12962 -3210,12913 -3301,12864
 Götelstr.	N -3301,12864 -3275,12769 -3252,12580 -3253,12511 -3257,12407 -3281,12297 -3349,12213 -3425,12157
 (Götelstr. - Tharsanderweg)	NN -3425,12157 -3511,11979
-#: XXX wie wird die Situation nach Beendingung der Bauarbeiten (November 2015) sein?
-#: add_fragezeichen: Ist die Baustraße während der Bauarbeiten an der Freybrücke noch befahrbar?
+#: by: Stefan Klinkusch: "gesperrt"
 #: source_id: INKO_118000
 #: osm_watch: way id="25115001" version="8"
-#: last_checked: 2013-09-19
-#: next_check: 2014-03-19
 (Baustraße an der Freybrücke)	N -3069,11487 -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	NN -3181,11496 -3177,11507 -3173,11520
+(Heerstr. - Tiefwerder)	NN -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3087,11728 -3179,11763
 #: note: es existiert nur ein Straßenschild, im südlichen Abschnitt
 Hans-Werner-Klünner-Weg	NN -2914,12223 -2935,12165 -2945,12138 -2976,12057 -3027,12055 -3088,12040 -3109,12021 -3116,12012
 Tharsanderweg	N -3511,11979 -3631,11774 -3669,11766
@@ -14298,7 +14296,7 @@ Alfred-Balen-Weg	NN -4169,12368 -4365,12358
 #: note: Weg geht noch Richtung Osten weiter
 (Tiefwerder-Wiesen)	NN -2976,12057 -2888,12049
 (Heerstr. - Dorfstr./Tiefwerder)	N -3181,11496 -3212,11507 -3197,11554 -3217,11570
-(Heerstr. - Dorfstr./Tiefwerder)	NN -3217,11570 -3116,12012 -3102,12061 -3024,12342 -2929,12452 -2912,12459 -2825,12427
+(Heerstr. - Dorfstr./Tiefwerder)	NN -3217,11570 -3179,11763 -3116,12012 -3102,12061 -3024,12342 -2929,12452 -2912,12459 -2825,12427
 Brandensteinweg	N -2851,11417 -2835,11467 -2768,11599 -2643,11701 -2480,11712 -2464,11596
 Siemenswerderweg	N -2851,11417 -2938,11244 -3078,11157 -2934,11078 -2894,11025 -2970,10748
 (Mühlenweg)	NN -1978,20928 -1843,20925 -1700,20971 -1559,20931 -1040,20962 -843,20940 -750,20878 -329,20685 -64,20583 65,20594 462,20694 601,20709

@@ -23414,7 +23414,7 @@ EOF
        type  => 'gesperrt',
        dont_check_date => 1,
        data  => <<EOF,
-#: last_checked: 2014-11-15 (gerade nicht gesperrt)
+#: last_checked: 2015-01-03 (gerade nicht gesperrt)
 #: next_check: 2015-12-01
 userdel	2::inwork 15419,10706 15379,10651
 EOF
@@ -23506,12 +23506,13 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2015-11-27 16:00:00"), # 1433109599, # 2015-05-31 23:59
-       text  => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke wahrscheinlich nicht benutzbar, bis November 2015',
+       text  => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke nicht benutzbar, bis November 2015',
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/freybruecke/de/bau.shtml',
        data  => <<EOF,
+#: XXX siehe auch gesperrt-orig-Eintrag
 userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
-userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
+userdel	2::inwork -3197,11554 -3075,11510
 EOF
      },
      { from  => 1412913600, # 2014-10-10 06:00

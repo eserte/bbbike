@@ -1906,28 +1906,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-userdel	2::temp 8055,12186 8119,12414
-userdel	2::temp 8522,12239 8466,12197
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-',
-         'periodic' => 1,
-         'until' => 1420239599,
-         'from' => 1419483600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 26.12.2014 06:00 Uhr bis 02.01.2015 24:00 Uhr',
-         'type' => 'gesperrt',
-         'id' => 2010
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2999,7 +2978,7 @@ userdel	q3::inwork 4503,10497 4485,10307
          'text' => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugangs bis 2016 möglich',
          'from' => 1411312807,
          'id' => 2631,
-         'data' => '#: last_checked: 2014-11-15 (gerade nicht gesperrt)
+         'data' => '#: last_checked: 2015-01-03 (gerade nicht gesperrt)
 #: next_check: 2015-12-01
 userdel	2::inwork 15419,10706 15379,10651
 ',
@@ -3041,11 +3020,12 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/freybruecke/de/bau.shtml',
          'until' => 1448636400,
-         'text' => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke wahrscheinlich nicht benutzbar, bis November 2015',
+         'text' => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke nicht benutzbar, bis November 2015',
          'from' => undef,
          'id' => 2641,
-         'data' => 'userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
-userdel	2::inwork -3197,11554 -3075,11510 -3069,11487
+         'data' => '#: XXX siehe auch gesperrt-orig-Eintrag
+userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
+userdel	2::inwork -3197,11554 -3075,11510
 ',
          'type' => 'gesperrt'
        },

@@ -1101,7 +1101,6 @@ S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from other ../tmp/.fragezeichen-other-source
 # added from other sources: (strassen plaetze landstrassen landstrassen2 strassen_bab flaechen wasserstrassen wasserumland wasserumland2 sbahn sbahnhof rbahn rbahnhof ubahn ubahnhof faehren hoehe orte orte2 orte_city ortsschilder ampeln ampelschaltung plz potsdam deutschland grenzuebergaenge sehenswuerdigkeit obst radwege qualitaet_s qualitaet_l handicap_s handicap_l vorfahrt nolighting housenumbers green brunnels gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r comments_cyclepath comments_danger comments_ferry comments_misc  comments_mount comments_path comments_route  comments_trafficjam comments_tram comments_kfzverkehr comments_scenic fragezeichen exits culdesac)
 (Lennéstr./Kemperplatz - Straße des 17. Juni) (heißt der Weg hier auch "Kleine Querallee"?)	? 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221
-(Baustraße an der Freybrücke) (Ist die Baustraße während der Bauarbeiten an der Freybrücke noch befahrbar?)	? -3069,11487 -3075,11510 -3197,11554
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 Kerzendorf - B101 (ist diese Strecke asphaltiert?)	? 2406,-15008 2327,-14968 2188,-14926 2073,-14964 1915,-14960 1811,-14965 1704,-14954 1640,-14947 1541,-14947 1529,-15164 1566,-15226 1577,-15749 1448,-15955 1513,-16010
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
@@ -1161,6 +1160,7 @@ Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert (I
 (Wanderweg an den Eichwerder Moorwiesen): unbefestigter Weg (wie ist die Qualität des Wegs?)	? 4535,23922 4754,23998 4807,24011 5023,23954 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
 (Wichernstr. - Johannesstift): Kleinsteinpflaster (im nordwestlichen Abschnitt auch gepflastert?)	? -3568,18093 -3655,18177 -3699,18222 -3835,18357
 (Beetzseeweg - Zeuthener-See-Weg): Verbundsteinpflaster (liegt hier tatsächlich Verbundsteinpflaster?)	? -1689,16584 -1685,16583 -1647,16573
+(Heerstr. - Tiefwerder): vermutlich Waldweg (Qualität des Waldwegs?)	? -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3087,11728 -3179,11763
 Stephanstr.: Kopfsteinpflaster (ist das Kopfsteinpflaster im westlichen Abschnitt der Stephanstr. eher mäßig oder eher schlecht?)	? 6360,4504 6523,4491
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 Jühnsdorf: Asphalt (existiert durch Jühnsdorf ein Radweg?)	? 9792,-12090 9345,-11425 9472,-11297 9578,-10891
@@ -1226,6 +1226,7 @@ Schmalkaldener Str.: Sandweg (zumindest ein Teil ist asphaltiert!)	? -1773,36707
 Asphalt (gut oder mäßig?)	? 36994,147794 36978,147650 36831,147400
 In der Aue: Kopfsteinpflaster (Sind Teilabschnitte der Straße "In der Aue" asphaltiert?)	? -8189,-2569 -8107,-2600 -8099,-2590 -8018,-2585 -7999,-2585 -7782,-2572 -7373,-2539
 Bahnhofstr. (Altdöbern): Asphalt (Wo genau sind die Radstreifen?)	? 53571,-83335 54112,-83500 54378,-83571 54973,-83435 55102,-83320 55116,-83084 55259,-83091
+Tiefwerder - Heerstr. (der Waldweg ist sehr wahrscheinlich unbeleuchtet, stimmt das?)	? -3179,11763 -3087,11728 -3037,11680 -3054,11621 -3042,11550 -3075,11510
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 enger Zweirichtungsradweg, asphaltiert, einige Schäden (Ist die Qualität des Radwegs zwischen Güterfelder Eck und Kienwerder besser geworden?)	? -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087

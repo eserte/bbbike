@@ -7,7 +7,7 @@
 # permanente Sperrungen (Einbahnstraßen etc.)
 #
 # die Richtung gibt bei Einbahnstraßen die Sperrung an
-#
+# 
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687,10180 9599,10175 9416,10196
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
@@ -1747,9 +1747,6 @@ tragen (9 Stufen)	0:15 1719,9776
 Aufzug	0:45 11947,19161
 tragen (2 Stufen)	0:5 14823,9523
 tragen (10+11 Stufen)	0:30 -1584,11499
-#: XXX wird die Treppe während der Bauarbeiten an der Freybrücke benutzbar sein?
-#: last_checked: 2013-09-19
-#: next_check: 2014-03-19
 tragen (ca. 45 Stufen)	0:45 -3177,11507
 tragen (4 Stufen)	0:10 21326,11122
 tragen (8+8 Stufen)	0:25 19534,14459
@@ -2574,6 +2571,19 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: XXX siehe auch temp_blockings-Eintrag vvv
+#: by: Stefan Klinkusch: "gesperrt" vvv
+#: source_id: INKO_118000 vvv
+#: osm_watch: way id="25115001" version="8" vvv
+#: next_check: 2015-11-20 vvv
+(Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
+(Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
+#: next_check ^^^
+#: osm_watch ^^^
+#: source_id ^^^
+#: by ^^^
+#: XXX ^^^
 # 
 #: next_check_id: NIZZASTR-2014 vvv
 #: last_checked: 2014-12-13 vvv
