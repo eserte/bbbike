@@ -309,9 +309,8 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
 #: source_id: IM_023242
-#: XXX Bauarbeiten für neue Radverkehrsanlagen
-#: last_checked: 2014-11-08
-#: next_check: 2014-12-16
+#: XXX Bauarbeiten sind fertig, die Markierung ist allerdings noch nicht erfolgt
+#: last_checked: 2015-01-04
 Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
@@ -869,7 +868,7 @@ Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,1191
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-#: last_checked: 2014-10-05
+#: last_checked: 2015-01-04
 #: check_frequency: 90d
 #: priority: #C
 Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,11526 16730,11480 16734,11416
@@ -1120,7 +1119,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
 #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straßenbenennung, Vorschlag)
-#: last_checked: 2014-11-15
+#: last_checked: 2015-01-04
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
@@ -1202,7 +1201,7 @@ Am Kienberg: sind die Wege bereits gesperrt?	? 22670,14520 22679,14450 22639,143
 #: XXX -> Köpenicker Landstr. (Baumschulenweg): Baustelle, linker Fahrstreifen in jeder Richtung gesperrt (bis Anfang 12/14, Gesamtmaßnahme bis 2016) in beiden Richtungen zwischen Neue Krugallee und Schnellerstr., 25.11.2014 13:08 Uhr bis 03.12.2014 16:00 Uhr	IM_023532
 #: last_checked: 2014-11-15 vvv
 #: check_frequency: 7d vvv
-Rummelsburger Str.	? 17527,7812 17681,7589 17839,7365
+# REMOVED (-> ampeln-orig) --- Rummelsburger Str.	? 17527,7812 17568,7753 17681,7589 17769,7465 17839,7365
 Köpenicker Landstr.	? 16843,6712 16720,6845 16677,6892
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1867,11 +1866,10 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12988,-1265 
 #: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
 #: note: Nibelungenpark vvv
 #: XXX fehlen alle bei Berlin.coords.data vvv
-#: last_checked: 2014-10-05 vvv
+#: last_checked: 2015-01-04 vvv
 #: check_frequency: 60d vvv
 #: XXX Berlin.coords.data -> Alzeyweg|Lichtenberg|10365
-Alzeyweg: genaue Lage? Qualität? PLZ=10365	? 17376,12422 17366,12357 17365,12301
-Nibelungenring: genaue Lage? Qualität? PLZ=10365	? 17484,12405 17432,12413 17376,12422 17337,12428
+Alzeyweg: genaue Lage? Qualität? PLZ=10365	? 17376,12422 17368,12365 17359,12302
 #: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse
 #: XXX Berlin.coords.data -> Giselhersteig|Lichtenberg|10365
 Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17359,12451 17437,12443 17536,12425

@@ -859,11 +859,13 @@ Welserstr.: Kopfsteinpflaster	Q2 6217,10099 6256,10309 6265,10359
 Kieler Str. (Mitte): Kopfsteinpflaster	Q2 8054,14257 7973,14195
 (Uferweg Plötzensee): Parkweg	Q1 5618,14981 5518,15236 5291,15424 5073,15619 5036,15615 5008,15592 5051,15508 5084,15415 5005,15213
 Kruppstr.: Kopfsteinpflaster	Q2 7327,14130 6917,13917 6890,13900 6817,13862 6746,13826
-Fritz-König-Weg: Asphalt	Q0 17042,7685 17297,7752 17527,7812
-Weg 7: unbefestigter Weg	Q2- 17042,7685 16902,7652
+Fritz-König-Weg: Asphalt	Q0 17050,7687 17297,7752 17527,7812
+Weg 7: unbefestigter Weg	Q2- 17050,7687 16902,7652
 Elbeweg: Asphalt	Q0 16873,7733 16902,7652 16934,7570
-Elbeweg: unbefestigter Weg, holprig	Q2- 16934,7570 16949,7484 17061,7323 17135,7223 17211,7265
-Spreeschlossstr.: Asphalt	Q0 17042,7740 16873,7733 16796,7715
+Elbeweg: unbefestigter Weg, holprig	Q2- 16934,7570 16949,7484 17061,7323 17116,7241
+# REMOVED --- Elbeweg: unbefestigter Weg, holprig	Q2- 17135,7223 17211,7265
+Lahnweg: unbefestigter Weg, holprig	Q2- 17135,7377 17061,7323
+Spreeschlossstr.: Asphalt	Q0 17052,7738 16901,7739 16873,7733 16796,7715
 Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12843,7290 12908,7305 13003,7316
 Schierker Str.: Kopfsteinpflaster	Q2+ 13003,7316 13034,7319
@@ -903,9 +905,9 @@ Uferweg am Schlachtensee: Waldweg OK, manchmal etwas sandig	Q1 -3348,3055 -3384,
 Uferweg am Schlachtensee: rauer Asphalt	Q1+ -1353,4205 -1282,4244
 südlicher Uferweg am Schlachtensee: Feinschotter	Q1 -3384,3212 -3341,3122 -3273,3096 -3200,3145 -3190,3167 -3136,3294 -3081,3377 -2947,3486 -2802,3570 -2761,3576 -2729,3593 -2599,3637 -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009 -1390,4116 -1382,4132
 Weg am Teufelssee: Waldweg	Q1 -886,9447 -942,9251 -1047,9123
-Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17299,8140 17299,8108 17297,7752
-Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0- 17297,7752 17301,7645 17295,7336
-Schwarzer Weg (Oberschöneweide): unbefestiger Weg, teilweise recht schmal	Q2 17295,7336 17296,7156
+Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2- 17299,8140 17299,8108 17297,7752
+Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0- 17297,7752 17301,7645 17295,7330
+Schwarzer Weg (Oberschöneweide): unbefestiger Weg, teilweise recht schmal	Q2 17295,7330 17296,7156
 (Wilhelmstrand, Weg 1): unbefestigter Weg	Q2 17059,8097 17299,8108
 Möllhausenufer: Kopfsteinpflaster	Q2 23295,1145 23408,1170 23520,1194 23608,1210
 Möllhausenufer: asphaltiert	Q0 23608,1210 23747,1243
@@ -1706,8 +1708,8 @@ Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Grünstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
 Parkaue: Asphalt	Q0 15535,12420 15457,12449 15406,12444
 #: XXX wird hier die Straße verbessert werden?
-#: last_checked: 2014-09-27
-#: check_frequency: 100d
+#: last_checked: 2015-01-04
+#: check_frequency: 60d
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524 (Beginn der Bauarbeiten: Frühjahr 2014)
 Deutschmeisterstr.: mäßiger Asphalt	Q1 15443,12222 15370,12264 15353,12280 15320,12375
 Parkaue: Asphalt	Q0 15406,12444 15408,12394 15370,12264
@@ -1738,11 +1740,11 @@ Neue Promenade: unebenes Pflaster	Q2 10264,13097 10263,13047
 Griebnitzseepromenade: Waldweg	Q1 -7266,-450 -7318,-515 -7358,-605 -7495,-716 -7585,-736 -7759,-850 -7908,-989 -8071,-1144 -8119,-1211 -8207,-1240 -8253,-1241 -8294,-1163 -8404,-1074 -8495,-1054 -8605,-995 -8628,-959 -8652,-865 -8733,-751 -8770,-720 -8886,-708 -8927,-642 -9009,-582 -9138,-521 -9182,-515 -9183,-381 -9208,-357 -9261,-272 -9399,-139
 (Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1- 16865,11931 16837,11920 16764,11919 16702,11920
 (Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11920 16535,11920
-Nalepastr.: Kopfsteinpflaster	Q2 17042,7740 17059,8097
-Nalepastr.: Asphalt	Q0 17042,7685 17042,7740
-Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17042,7685 17043,7617
+Nalepastr.: Kopfsteinpflaster	Q2 17052,7738 17059,8097
+Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
+Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17050,7687 17043,7617
 Nalepastr.: fester enger Sandweg	Q2 17043,7512 17043,7617
-Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17043,7512 17211,7265
+Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17043,7512 17135,7377 17211,7265
 Nalepastr.: sehr guter Asphalt	Q0 17211,7265 17296,7156 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336
 Ernst-Grube-Str.: Asphalt mit Schäden	Q1 21363,5336 21362,5289 21345,5157 21343,5140 21324,4986
@@ -3170,8 +3172,8 @@ Treskowstr. (Oberschöneweide): kleinteiliges, unebenes Kopfsteinpflaster	Q2 1933
 Verl. Rathenaustr.: Asphalt	Q0 19276,6359 19372,6579 19407,6660
 Fuststr.: kleinteiliges Kopfsteinpflaster	Q2 17934,7029 17823,7203
 Fuststr.: Kopfsteinpflaster	Q2 17823,7203 17743,7328
-Grenzweg: Kopfsteinpflaster	Q2- 17681,7589 17295,7336
-Grenzweg: Asphalt	Q0- 17295,7336 17211,7265
+Grenzweg: Kopfsteinpflaster	Q2- 17681,7589 17575,7519 17445,7434
+Grenzweg: Asphalt	Q0- 17445,7434 17295,7330 17211,7265
 Asternplatz: Kopfsteinpflaster	Q2 3710,4728 3775,4632
 Asternplatz: Kopfsteinpflaster	Q2 3815,4657 3754,4755
 Asternplatz: Asphalt	Q0 3754,4755 3740,4766
@@ -3592,7 +3594,7 @@ Cheruskerpark: Asphalt	Q0 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282
 (Torgauer Str. - Cheruskerpark): fester Belag	Q0 7374,8211 7372,8222 7351,8258 7353,8293
 Rhinstr. [Wohngebiet]: Beton	Q0- 18008,13507 17995,13675 17994,13750 18024,13843 18043,13838 18134,13811 18198,13816
 Arendsweg: Beton	Q0- 17254,14451 17262,14384 17274,14280
-(Zufahrt IKEA): Asphalt	Q0 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17335,14167 17289,14195 17274,14280
+(Zufahrt IKEA): Asphalt	Q0 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17330,14163 17289,14195 17274,14280
 (Zufahrt ehem. Einkaufszentrum): Asphalt	Q0 16965,14235 17010,14269 17060,14255 17221,14268 17274,14280
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): unbefestiger Weg	Q2+ 18024,13843 17266,14144
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): ehem. Eisenbahngleise	Q3- 17266,14144 17319,14159
@@ -8780,7 +8782,7 @@ Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6
 (Wedellstr. - Sonderschule): Beton	Q0 7463,3182 7365,3199 7346,3204 7314,3199
 Alt-Lankwitz: Kopfsteinpflaster	Q2 7407,3473 7419,3500
 Alt-Lankwitz: Asphalt	Q0 7419,3500 7249,3598 7012,3743
-(Landschaftspark Herzberge - Arendsweg): unbefestigt	Q3 17266,14144 17289,14195
+(Landschaftspark Herzberge - Arendsweg): unbefestigt	Q3 17266,14144 17316,14151 17330,14163
 Genslerstr.: Asphalt mit einigen Schäden	Q1+; 16669,14438 16715,14609 16738,14695
 Genslerstr: Beton	Q0 16738,14695 16752,14745 16768,14849
 Genslerstr.: Asphalt	Q0 16544,14593 16715,14609
@@ -9306,9 +9308,12 @@ An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1- 8725,21910 8615,21955 
 (Brockenweg - Blankenburger Pflasterweg): unbefestigter Weg	Q2 15102,20723 15119,20655 15226,20587
 (Brockenweg - Blankenburger Pflasterweg): wassergebundene Decke	Q1- 15226,20587 15269,20508 15276,20231 15310,20176 15354,19879
 Große-Leege-Str.: Beton mit einigen Hebungen	Q0- 16035,14748 15972,14681 15899,14598
-Nibelungenring: Verbundsteinpflaster	Q1+ 17320,12308 17365,12301 17442,12292 17454,12348
-Nibelungenring: Verbundsteinpflaster	Q1+ 17474,12344 17484,12405
-Rumoldstr.: Verbundsteinpflaster	Q1+ 17366,12357 17454,12348 17474,12344 17526,12336
+Nibelungenring: Verbundsteinpflaster	Q1+ 17320,12308 17359,12302 17442,12292 17454,12348
+Nibelungenring: Verbundsteinpflaster	Q1+ 17474,12344 17484,12405 17432,12413 17376,12422
+#: XXX danach wahrscheinlich auch Verbundsteinpflaster
+#: last_checked: 2015-01-04
+Nibelungenring: unbefestigte Straße, Bauarbeiten	Q3 17376,12422 17337,12428
+Rumoldstr.: Verbundsteinpflaster	Q1+ 17368,12365 17454,12348 17474,12344 17526,12336
 Hadburgpfad: Verbundsteinpflaster	Q1+ 17484,12405 17531,12398
 (Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt	Q0 17110,14187 17224,14151 17236,14140
 (S-Bahnhof Treptower Park - Rosengarten): Asphalt	Q0 14575,9648 14627,9609 14705,9578
@@ -13414,7 +13419,7 @@ Kamminer Str.: Asphalt	Q0 3240,12966 3283,13132 3310,13253 3349,13406 3371,13501
 # 
 #: by: Marko (...hilse...):
 #: corrected_by: srt ("mäßiger" -> "guter")
-Wattstr. (Oberschöneweide): guter Asphalt	Q0 17681,7589 17647,7280
+Wattstr. (Oberschöneweide): guter Asphalt	Q0 17681,7589 17670,7512 17647,7280
 # 
 #: by: Saskia (sengewitz...):
 Ottokarstr.: schlechtes Kopfsteinpflaster	Q3 8642,5422 8744,5483 8767,5571

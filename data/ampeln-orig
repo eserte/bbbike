@@ -1766,6 +1766,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 23100,12269
 	X 23017,12177
 	X 20375,11694
+#: off: Sunday (seen 2014-01-04 afternoon)
+#: note: Anforderungsampel
 	F 16650,11243
 	X 16786,11668
 	X 16958,11778
@@ -2718,7 +2720,20 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B0 -3233,17767
 #: note: Anforderungsampel
 	F 7563,13143
-# 
+#: note: Anforderungsampel vvv
+#: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
+#: source_id: IM_023548 (bis Ende Juni 2016) vvv
+#: last_checked: 2015-01-04 vvv
+#: check_frequency: 90d vvv
+	F 17568,7753
+	F 17769,7465
+#: check_frequency ^^^
+#: last_checked ^^^
+#: source_id ^^^
+#: by: ^^^
+#: XXX_prog ^^^
+#: note ^^^
 # 
 ################################################################################
 #: note: Potsdam vvv
