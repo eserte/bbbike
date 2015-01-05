@@ -23726,7 +23726,7 @@ userdel	2::temp 9494,15998 9623,15777
 EOF
      },
      { from  => 1416214740, # 2014-11-17 09:59
-       until => $isodate2epoch->("2015-01-16 17:00:00"), # 1420041600, # 2014-12-31 17:00
+       until => 1420488915, # $isodate2epoch->("2015-01-16 17:00:00"), # 1420041600, # 2014-12-31 17:00
        text  => 'Pekrunstr.: Baustelle, Straße zwischen Fichtelbergstr. und Manksweg gesperrt, 18.11.2014 09:59 Uhr bis 16.01.2015 17:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_023467',
@@ -23735,8 +23735,8 @@ userdel	q4::inwork 20559,14847 20480,14874
 EOF
      },
      { from  => 1416813420, # 2014-11-24 08:17
-       until => $isodate2epoch->("2015-01-05 16:00:00"), # 1418655600, # 2014-12-15 16:00
-       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 05.01.2015 16:00 Uhr',
+       until => $isodate2epoch->("2015-01-12 16:00:00"), # 1418655600, # 2014-12-15 16:00
+       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 12.01.2015 16:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_023529',
        data  => <<EOF,
