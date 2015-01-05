@@ -23,7 +23,11 @@ use IPC::Run qw(run);
     require encoding;
     my $locale_encoding = encoding::_get_locale_encoding(); # yes, unfortunately using the private function
     if ($locale_encoding) {
-	for my $fh (\*STDOUT, \*STDERR) { # STDIN not needed here
+	for my $fh (
+		    \*STDOUT,
+		    # \*STDERR, # disabled because of https://rt.perl.org/Ticket/Display.html?id=123489
+		    # STDIN not needed here
+		   ) {
 	    binmode $fh, ":encoding($locale_encoding)";
 	}
     }
