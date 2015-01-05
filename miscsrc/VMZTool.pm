@@ -492,10 +492,10 @@ if ($do_test) {
     my $samples_dir = "$ENV{HOME}/src/bbbike-aux/samples";
     if ($do_aspurls) {
 	$file       = "$samples_dir/Meldungsliste.jsp?back=true";
-	$mapfile    = "$samples_dir/Meldungskarte.jsp?back=true&map=true&x=52.1034702789087&y=14.270757485947728&zoom=13&meldungId=LS%2FO-SG33-F%2F10%2F027";
+	$mapfile    = "$samples_dir/Meldungskarte.jsp?back=true&map=true";
     }
-    $berlinsummaryfile = "$samples_dir/vmz-2014.json";
-    $vmzrssfile        = "$samples_dir/vmz-2014.rss";
+    $berlinsummaryfile = "$samples_dir/vmz-2015.json";
+    $vmzrssfile        = "$samples_dir/vmz-2015.rss";
 } elsif ($do_fetch) {
     ($tmpfh,$file)     = tempfile(UNLINK => 1) or die $!;
     ($tmp2fh,$mapfile) = tempfile(UNLINK => 1) or die $!;
