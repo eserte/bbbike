@@ -112,6 +112,10 @@ sub new {
 	    if (eval { require Strassen::KML; 1 }) {
 		return Strassen::KML->new($filename, %args);
 	    }
+	} elsif ($filename =~ /\.geojson$/i) {
+	    if (eval { require Strassen::GeoJSON; 1 }) {
+		return Strassen::GeoJSON->new($filename, %args);
+	    }
 	} elsif ($filename =~ /\.xml$/ && eval { require Strassen::Touratech; 1 }) {
 	    # XXX Maybe really check for touratech files
 	    return Strassen::Touratech->new($filename, %args);

@@ -231,6 +231,7 @@ sub run_gpsbabel {
 		   | \.kmz$
 		   | \.ovl$
 		   | \.gpx$
+		   | \.geojson$
 		   )
 	          }xi) {
 	my $s = eval { Strassen->new($file, name => $title, cat => $cat) };
