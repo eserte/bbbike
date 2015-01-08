@@ -81,7 +81,7 @@ Seydelstr.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Spittelmarkt	q3::in
 # 
 #: XXX Ende der Bauarbeiten?
 #: XXX_prog: zu eng f¸r Anh‰nger
-#: last_checked: 2014-12-04
+#: last_checked: 2015-01-08
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
 #: last_checked: 2014-12-12
@@ -150,10 +150,10 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (Fahrbahn wieder befahrbar) --- #: next_check_id: VOSSSTR-2014 vvv --- #: source_id: INKO_113363 vvv --- #: XXX laut INKO_113363 bis Ende September 2014 gesperrt vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html --- #: by: http://www.tagesspiegel.de/berlin/einkaufszentrum-am-leipziger-platz-in-berlin-mitte-mall-of-berlin-eroeffnet-am-25-september/10340428.html --- #: osm_watch: way id="197160274" version="1" vvv --- #: last_checked: 2014-09-13 vvv --- #: next_check: 2014-09-25 vvv --- Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, eng	q4::inwork 8743,11663 8837,11676 --- Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwork 8837,11676 9000,11727
 # 
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-#: last_checked: 2015-01-05
+#: last_checked: 2015-01-08
 Saarbr¸cker Str.: Einbahnstraﬂenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11052,13870 11134,13820 11250,13655
 # 
-#: last_checked: 2015-01-05 vvv
+#: last_checked: 2015-01-08 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
@@ -218,7 +218,7 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2014-05-20 vvv
+#: last_checked: 2015-01-08 vvv
 #: next_check: 2015-06-01 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -241,7 +241,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2014-12-04
+#: last_checked: 2015-01-08
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -250,10 +250,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
 # REMOVED (Fahrbahn befahrbar, Autos parken schon) --- #: osm_watch: way id="131505633" version="4" --- #: last_checked: 2013-11-13 --- #: check_frequency: 30d --- Am Zirkus: Baustelle, Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 9239,12923 9212,12969 9167,13046 9137,13032
 # REMOVED (aufgehoben) --- #: last_checked: 2013-12-11 --- Ziegelstr.: Baustelle, Einbahnstraﬂe	q3::inwork; 9269,13060 9413,13071
 # REMOVED (reported by wosch) --- #: last_checked: 2013-04-11 --- Am Kupfergraben: Baustelle, Einbahnstraﬂe	q3::inwork; 9870,12657 9900,12643 9919,12613
-# 
-#: last_checked: 2014-12-04
-Michaelkirchplatz: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11349,11227 11415,11392
-# 
+# REMOVED (aufgehoben) --- #: last_checked: 2014-12-04 --- Michaelkirchplatz: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11349,11227 11415,11392
 # REMOVED (nur eine Engstelle ist entstanden, kaum relevant f¸r Radfahrer) --- #: XXX bleibt das Kopfsteinpflaster? - wahrscheinlich ja --- #: last_checked: 2014-12-04 --- Leuschnerdamm: Bauarbeiten am Engelbecken, auf Gehweg ausweichen	q4::inwork 11365,11047 11421,11073
 # 
 ### Kreuzberg ###

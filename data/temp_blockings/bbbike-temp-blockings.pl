@@ -21167,7 +21167,7 @@ userdel	q3::inwork; 13474,8060 13444,7879
 EOF
      },
      { from  => $isodate2epoch->("2015-01-06 10:00:00"), # 1 Tag Vorlauf --- 1357040979, # 2013-01-01 12:49
-       until => $isodate2epoch->("2015-01-28 23:59:59"), # 1358981999, # 2013-01-23 23:59
+       until => $isodate2epoch->("2015-01-28 22:00:00"), # 1358981999, # 2013-01-23 23:59
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 1]],
        text  => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 07.01.2015 bis 28.01.2015',
