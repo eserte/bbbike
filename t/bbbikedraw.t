@@ -102,6 +102,44 @@ my %mod2def = map {($_->{mod} => $_)} @module_defs;
 # ImageMagick: N/A, no usable ImageMagick
 # PDF: 25.03s (wall clock) 14.98s (cpu)
 
+# Later (2015-01) on a xen vm running Debian/wheezy, with perl 5.20.1 (self-compiled)
+# Command is:
+#   perl5.20.1 bbbikedraw.t -only GD/png -only Imager/png -only ImageMagick/png -fullmap -v         
+# Results:
+# Module GD/png...
+# ... drawing time: 3.33s (wall clock) 2.88s (cpu)
+# Module Imager/png...
+# ... drawing time: 11.71s (wall clock) 11.63s (cpu)
+# Module ImageMagick/png...
+# ... drawing time: 19.20s (wall clock) 20.13s (cpu)
+#
+# And now with -usexs option:
+# Module GD/png...
+# ... drawing time: 2.29s (wall clock) 2.29s (cpu)
+# Module Imager/png...
+# ... drawing time: 10.89s (wall clock) 10.88s (cpu)
+# Module ImageMagick/png...
+# ... drawing time: 16.45s (wall clock) 17.39s (cpu)
+#
+# On a i5-2500T @ 2.3GHz, FreeBSD 9.2, perl 5.20.1 (self-compiled)
+# Module GD/png...
+# ... drawing time: 12.23s (wall clock) 10.38s (cpu)
+# Module Imager/png...
+# ... drawing time: 42.75s (wall clock) 41.48s (cpu)
+# Module ImageMagick/png...
+# ... drawing time: 63.34s (wall clock) 62.44s (cpu)
+#
+# And now with the -usexs option (times vary, so two samples given here)
+# Module GD/png...
+# ... drawing time: 5.25s (wall clock) 5.22s (cpu)
+# ... drawing time: 6.83s (wall clock) 6.76s (cpu)
+# Module Imager/png...
+# ... drawing time: 36.18s (wall clock) 34.91s (cpu)
+# ... drawing time: 31.81s (wall clock) 31.52s (cpu)
+# Module ImageMagick/png...
+# ... drawing time: 55.77s (wall clock) 55.19s (cpu)
+# ... drawing time: 56.70s (wall clock) 56.06s (cpu)
+
 my @drawtypes = qw(all);
 my $geometry = "640x480";
 my $verbose = 0;
