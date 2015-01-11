@@ -3717,7 +3717,7 @@ Ravensteiner Promenade: Asphalt	Q0 25260,7224 25262,7433
 (Rahnsdorfer Str. - Karl-Marx-Str./Schöneiche): unbefestigte Straße, sehr holprig	Q3+ 30309,6841 30381,6711
 (Schöneiche - Woltersdorf): Waldweg	Q2+ 31027,6076 32065,5919 32053,5870
 (Woltersdorf - Rahnsdorf): Waldweg	Q2+ 32053,5870 31478,5635 31060,5489 30853,5453 30686,5428 30505,5474
-Hegemeisterweg (Rahnsdorf): Kleinsteinpflaster	Q1- 30074,5402 30081,5231 30081,5220 30099,4732
+Hegemeisterweg (Rahnsdorf): Kleinsteinpflaster	Q1- 30074,5402 30077,5331 30081,5231 30081,5220 30099,4732
 Hegemeisterweg (Rahnsdorf): unbefestigter Weg	Q1- 30099,4732 30092,4666
 Hegemeisterweg (Rahnsdorf): unbefestigter Weg	Q1- 30099,4732 30124,4664
 Steinfurther Weg: schlechtes Kopfsteinpflaster	Q3 30082,4506 30192,4487
@@ -9726,6 +9726,8 @@ Grenobler Ring: Verbundsteinpflaster	Q1 12493,21212 12483,21255 12441,21341 1236
 Lyonstr.: teilweise unbefestigt/Betonplattenstraße	Q2 12189,21337 12214,21332 12322,21378 12407,21415
 #: add_fragezeichen: Qualität des Waldwegs?
 (Heerstr. - Tiefwerder): vermutlich Waldweg	Q2 -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3087,11728 -3179,11763
+Alter Fischerweg: unbefestigte Straße	Q2 29960,5467 30001,5460
+Alter Fischerweg: Kopfsteinpflaster	Q2- 30001,5460 30090,5446
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12871,7 +12873,7 @@ Rue Diderot: Asphalt	Q0 4525,21714 4596,21629
 # 
 #: by: Ute (karoline):
 #: note: auch laut ADFC-Karte gut befahrbar
-(Weg parallel zur S-Bahn): Asphalt	Q0 26890,5858 27096,5828 28517,5605 29159,5517 29450,5435 30038,5338
+(Weg parallel zur S-Bahn): Asphalt	Q0 26890,5858 27096,5828 28517,5605 29159,5517 29450,5435 30038,5338 30077,5331
 # 
 #: by: David wolff:
 #: corrected_by: srt (Kopfsteinpflaster -> ...)

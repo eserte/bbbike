@@ -9152,7 +9152,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006066',
        data  => <<EOF,
-userdel	2::inwork 30090,5436 30074,5402 30038,5338
+userdel	2::inwork 30090,5446 30074,5402 30038,5338
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -23751,8 +23751,8 @@ userdel	q4::inwork 20559,14847 20480,14874
 EOF
      },
      { from  => 1416813420, # 2014-11-24 08:17
-       until => $isodate2epoch->("2015-01-12 16:00:00"), # 1418655600, # 2014-12-15 16:00
-       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 12.01.2015 16:00 Uhr',
+       until => $isodate2epoch->("2015-01-14 16:00:00"), # 1418655600, # 2014-12-15 16:00
+       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 14.01.2015 16:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_023529',
        data  => <<EOF,
