@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2014 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2015 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -9167,30 +9167,73 @@ sub enter_opt_preferences {
 	# Die Verwendung von $name2inx ist nur ein Workaround...
 	# Eigentlich würde ich die [Name => Wert]-Notation von Optionmenu
 	# verwenden wollen, aber das geht nicht :-(
-	my $name2inx =
-	    {M"Nur Hauptstraßen" => 0,
+	my %name2inx =
+	    (
+	     M"Nur Hauptstraßen" => 0,
 	     M"Hauptstraßen bevorzugen" => 1,
 	     M"Alle Straßen berücksichtigen" => 2,
 	     M"Nebenstraßen bevorzugen" => 3,
 	     M"Nur Nebenstraßen" => 4,
-	    };
+	    );
+	# XXX taken from bbbike.cgi, should not be duplicated
+	my %prefcat2penalty =
+	    (
+	     'N2' => {
+		      "B"  => 4,
+		      "HH" => 4,
+		      "H"  => 4,
+		      "NH" => 2,
+		      "N"  => 1,
+		      "NN" => 1,
+		     },
+	     'N1' => {
+		      "B"  => 1.5,
+		      "HH" => 1.5,
+		      "H"  => 1.5,
+		      "NH" => 1,
+		      "N"  => 1,
+		      "NN" => 1,
+		     },
+	     'H1' => {
+		      "B"  => 1,
+		      "HH" => 1,
+		      "H"  => 1,
+		      "NH" => 1,
+		      "N"  => 1.5,
+		      "NN" => 1.5,
+		     },
+	     'H2' => {
+		      "B"  => 1,
+		      "HH" => 1,
+		      "H"  => 1,
+		      "NH" => 2,
+		      "N"  => 4,
+		      "NN" => 4,
+		     },
+	     '' => {
+		      "B"  => 1,
+		      "HH" => 1,
+		      "H"  => 1,
+		      "NH" => 1,
+		      "N"  => 1,
+		      "NN" => 1,
+		   }
+	    );
+	my %inx2prefcat = (0 => 'H2', 1 => 'H1', 2 => '', 3 => 'N1', 4 => 'N2');
 	my $default = M"Alle Straßen berücksichtigen";
 	my $o = $act_page[1]->Optionmenu
-	  (-options => [sort { $name2inx->{$a} <=> $name2inx->{$b} } keys %$name2inx],
+	  (-options => [sort { $name2inx{$a} <=> $name2inx{$b} } keys %name2inx],
 	   -variable => \$default,
 	   -command => sub {
-	       my $i = 0;
-	       # XXX BAB
-	       # XXX should be relative to current speed, like in cgi!
-	       # XXX rethink penalty for NH, maybe like in cgi!
-	       for (qw(HH H NH N NN)) {
-		   $var2{$_} = [[100,100,100,1,1],
-				[100,100,100,12,12],
-				[100,100,100,100,100],
-				[12,12,100,100,100],
-				[1,1,100,100,100],
-			       ]->[$name2inx->{$default}][$i];
-		   $i++;
+	       my $speed = get_active_speed();
+	       my $prefcat = $inx2prefcat{$name2inx{$default}};
+	       my $penalty = $prefcat2penalty{$prefcat};
+	       while(my($k,$v) = each %$penalty) {
+		   if ($v == 1) {
+		       $var2{$k} = 100; # no restriction
+		   } else {
+		       $var2{$k} = $speed / $v;
+		   }
 	       }
 	   })->grid(-row => $gridy,
 		    -column => 0,
