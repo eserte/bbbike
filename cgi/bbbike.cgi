@@ -3506,7 +3506,7 @@ sub search_coord {
 	    $unlit_streets_net = new StrassenNetz(Strassen->new("nolighting"));
 	    $unlit_streets_net->make_net_cat;
 	}
-	my $penalty = { "NL" => 4,
+	my $penalty = { "NL" => 8,
 		      };
 	$extra_args{UnlitStreets} =
 	    {Net => $unlit_streets_net,
