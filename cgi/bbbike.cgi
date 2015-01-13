@@ -5048,6 +5048,12 @@ EOF
 	    print "</center>\n" unless $printmode;
 	}
 
+	my $bbbikeleaflet_url;
+	if (!$printmode && $apache_session_module eq 'Apache::Session::Counted') {
+	    my $href = _bbbikeleaflet_url();
+	    $bbbikeleaflet_url = $href . '?' . CGI->new({coordssession => $sess->{_session_id}})->query_string;
+	}
+
 	if (!$printmode) {
 	    my $col_i = 0;
 	    my $maybe_do_table_br = sub {
@@ -5137,10 +5143,9 @@ EOF
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
-	    if ($apache_session_module eq 'Apache::Session::Counted') {
+	    if ($bbbikeleaflet_url) {
 		print "<td>";
-		my $href = _bbbikeleaflet_url();
-	        print qq{<a href="$href?} . CGI->new({coordssession => $sess->{_session_id}})->query_string . qq{">Leaflet<img style="vertical-align:bottom;" src="$bbbike_images/bbbike_leaflet_16.png" border="0" alt=""></a>};
+	        print qq{<a href="$bbbikeleaflet_url">Leaflet<img style="vertical-align:bottom;" src="$bbbike_images/bbbike_leaflet_16.png" border="0" alt=""></a>};
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
@@ -5220,19 +5225,8 @@ EOF
 		print " target=\"_blank\"";
 	    }
 	    print " action=\"$bbbike_script\"";
-	    # show_map scheint bei OS/2 nicht zu funktionieren
-	    # ... und bei weiteren Browsern (MSIE), deshalb erst einmal
-	    # pauschal herausgenommen.
-	    # Uns das bleibt auch so, es sei denn ich habe Zugang zu den
-	    # meisten Browsern...
-  	    if (0
-#                 $bi->{'user_agent_name'} =~ m;(Mozilla|MSIE);i &&
-# 		$bi->{'user_agent_version'} =~ m;^[4-9]; &&
-# 		$bi->{'user_agent_os'} !~ m|OS/2|
-#                 $bi->{'user_agent_name'} =~ m{(Mozilla)}i &&
-# 		$bi->{'user_agent_version'} =~ m{^[5-9]}
-               ) {
-  		print " onsubmit='return show_map(\"$bbbike_html\");'";
+	    if ($bbbikeleaflet_url) {
+  		print " onsubmit='return show_map({leaflet_url:\"$bbbikeleaflet_url\"});'";
   	    }
 	    print ">\n";
 	    print "<input type=hidden name=center value=''>\n";
@@ -5246,6 +5240,7 @@ EOF
 	    }
 #XXX not yet	    print " <input type=checkbox name='cb_attachment'> als Download";
 	    print "&nbsp;&nbsp; <span class=nobr>" . M("Ausgabe als") . ": <select name=imagetype " . ($bi->{'can_javascript'} ? "onchange='enable_size_details_buttons()'" : "") . ">\n";
+	    print " <optgroup label=\"" . M("Statische Karte") . ":\">\n";
 	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png';
 	    print " <option " . $imagetype_checked->("gif") . ">GIF\n" if ($graphic_format eq 'gif' || $can_gif) && !$is_m;
 	    print " <option " . $imagetype_checked->("jpeg") . ">JPEG\n" if !$cannot_jpeg && !$is_m;
@@ -5254,9 +5249,13 @@ EOF
 	    print " <option " . $imagetype_checked->("pdf") . ">PDF (" . M("Längsformat") . ")\n" unless $cannot_pdf;
 	    print " <option " . $imagetype_checked->("pdf-landscape") . ">PDF (" . M("Querformat") . ")\n" unless $cannot_pdf;
 	    print " <option " . $imagetype_checked->("svg") . ">SVG\n" if !$cannot_svg && !$is_m;
+	    #XXX print " <option " . $imagetype_checked->("googlemapsstatic") . ">Google Maps (static)\n" if 1;#XXXXXXXXXXXXXXXXXX
+	    print " </optgroup>\n";
+	    print " <optgroup label=\"" . M("Interaktive Karte") . ":\">\n";
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
 	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps\n" if $can_google_maps;
-	    #XXX print " <option " . $imagetype_checked->("googlemapsstatic") . ">Google Maps (static)\n" if 1;#XXXXXXXXXXXXXXXXXX
+	    print " <option " . $imagetype_checked->('leaflet') . ">Leaflet\n" if $bbbikeleaflet_url;
+	    print " </optgroup>\n";
 	    print " </select></span>\n";
 	    print "<br>\n";
 
@@ -6704,7 +6703,7 @@ sub gather_weather_proc {
     @res;
 }
 
-sub bbbike_result_js { $bbbike_html . "/bbbike_result.js?v=1.14" }
+sub bbbike_result_js { $bbbike_html . "/bbbike_result.js?v=1.15" }
 
 # Write a HTTP header (always with Vary) and maybe enabled compression
 sub http_header {
