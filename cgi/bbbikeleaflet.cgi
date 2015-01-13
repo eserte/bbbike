@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -100,7 +100,7 @@ while(<$fh>) {
 	    if (my $sess = BBBikeApacheSessionCounted::tie_session($q->param('coordssession'))) {
 		$q->param(coords => $sess->{routestringrep});
 	    } else {
-		print qq{alert("Die Session ist abgelaufen.");\n};
+		print qq{alert("Die Session ist abgelaufen, es wird die Karte ohne Route angezeigt.");\n};
 	    }
 	}
 	if ($q->param('coords')) {
