@@ -5137,10 +5137,10 @@ EOF
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
-	    if (($is_beta || $is_m) && $apache_session_module eq 'Apache::Session::Counted') {
+	    if ($apache_session_module eq 'Apache::Session::Counted') {
 		print "<td>";
 		my $href = _bbbikeleaflet_url();
-	        print qq{<a href="$href?} . CGI->new({coordssession => $sess->{_session_id}})->query_string . qq{">Leaflet</a>};
+	        print qq{<a href="$href?} . CGI->new({coordssession => $sess->{_session_id}})->query_string . qq{">Leaflet<img style="vertical-align:bottom;" src="$bbbike_images/bbbike_leaflet_16.png" border="0" alt=""></a>};
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
