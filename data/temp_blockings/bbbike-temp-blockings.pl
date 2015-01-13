@@ -23783,7 +23783,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
-#: last_checked: 2014-12-23
+#: last_checked: 2015-01-13
 userdel	2::inwork 10308,11833 10374,11734
 EOF
      },
@@ -23802,7 +23802,7 @@ EOF
        text  => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2014-12-06
+#: last_checked: 2015-01-13
 userdel	q4::inwork; 9559,11715 9692,11732
 EOF
      },
@@ -23830,6 +23830,16 @@ EOF
        source_id => 'IM_023660',
        data  => <<EOF,
 userdel	q4::inwork 14136,17170 14006,16961
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Lankwitzer Damm: Weg am Bahndamm und Brücke über dem Teltowkanal gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: user per phone
+#: XXX vor Ort anschauen! Gibt es ein Endedatum?
+userdel	2::inwork 7772,4306 7795,4242 8106,3410
 EOF
      },
     );

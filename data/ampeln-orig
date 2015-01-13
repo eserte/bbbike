@@ -1570,8 +1570,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7138,15437
 	X 6996,15319
 	X 7263,14873
-# REMOVED (aufgehoben, siehe "richtige" Ampel daneben) ---	F 8626,13692
-#: note: zurzeit (2014-04) noch eine Baustellenampel, aber es sieht so aus, als ob hier eine permanente Ampel entstehen wird
+#: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
 	X 8619,13689
 	X 8574,13666
 	X 8456,15235
@@ -2541,7 +2540,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2014-12-12 vvv
+#: last_checked: 2015-01-13 vvv
 #: next_check: 2015-12-31 vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2551,7 +2550,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (südlicher Bereich) vvv
-#: last_checked: 2014-09-20 vvv
+#: last_checked: 2015-01-13 vvv
 #: next_check: 2015-12-31 vvv
 	F::inwork 9063,12051
 	F::inwork 9270,12086
