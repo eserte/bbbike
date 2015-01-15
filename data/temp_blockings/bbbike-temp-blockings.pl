@@ -23751,8 +23751,8 @@ userdel	q4::inwork 20559,14847 20480,14874
 EOF
      },
      { from  => 1416813420, # 2014-11-24 08:17
-       until => $isodate2epoch->("2015-01-14 16:00:00"), # 1418655600, # 2014-12-15 16:00
-       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 14.01.2015 16:00 Uhr',
+       until => $isodate2epoch->("2015-01-26 16:00:00"), # 1418655600, # 2014-12-15 16:00
+       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 26.01.2015 16:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_023529',
        data  => <<EOF,
@@ -23834,7 +23834,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Lankwitzer Damm: Weg am Bahndamm und Brücke über dem Teltowkanal gesperrt',
+       text  => 'Lankwitzer Damm: Weg am Bahndamm und Teltowkanal-Brücke gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: user per phone

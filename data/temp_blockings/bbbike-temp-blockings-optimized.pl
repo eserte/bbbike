@@ -1863,8 +1863,8 @@ userdel	q4::inwork 5635,7660 5636,7540
        undef,
        {
          'source_id' => 'IM_023529',
-         'until' => 1421247600,
-         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 14.01.2015 16:00 Uhr',
+         'until' => 1422284400,
+         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 26.01.2015 16:00 Uhr',
          'from' => 1416813420,
          'id' => 2666,
          'data' => 'userdel	q4::inwork 9373,12197 9369,12253 9358,12351
@@ -1909,7 +1909,7 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
        undef,
        {
          'until' => undef,
-         'text' => 'Lankwitzer Damm: Weg am Bahndamm und Brücke über dem Teltowkanal gesperrt',
+         'text' => 'Lankwitzer Damm: Weg am Bahndamm und Teltowkanal-Brücke gesperrt',
          'from' => undef,
          'id' => 2675,
          'data' => '#: by: user per phone
