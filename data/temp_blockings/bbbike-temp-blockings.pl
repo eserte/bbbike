@@ -21825,13 +21825,13 @@ userdel	2::temp 5047,10381 5076,10658
 EOF
      },
      { from  => $isodate2epoch->("2014-12-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-01-16 23:59:59"),
-       text  => 'Sterndamm: Eisenbahnunterführung bis zum 16.01.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
+       until => $isodate2epoch->("2015-01-30 23:59:59"),
+       text  => 'Sterndamm: Eisenbahnunterführung bis zum 30.01.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_020145',
        data  => <<EOF,
-#: XXX bleibt der Sterndamm auch über dem 16. Januar hinaus gesperrt?
-#: next_check: 2015-01-13
+#: XXX bleibt der Sterndamm auch über dem 30. Januar hinaus gesperrt?
+#: next_check: 2015-01-30
 userdel	1::inwork 17886,5587 17736,5441
 EOF
      },
@@ -22687,7 +22687,7 @@ EOF
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
 #: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-12-13
+#: last_checked: 2015-01-16
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 EOF
@@ -23394,13 +23394,14 @@ userdel	q4::inwork 26302,5932 26080,5946 25579,5958
 EOF
      },
      { from  => 1411941600, # 2014-09-29 00:00
-       until => 1420066799, # 2014-12-31 23:59
-       text  => 'Gounodstr.: Bauarbeiten zwischen von Herbert-Baum-Str. bis Borodinstr., ab Ende September 2014 bis Ende Dezember 2014',
+       until => $isodate2epoch->("2015-01-31 00:00:00"), # 1420066799, # 2014-12-31 23:59
+       text  => 'Gounodstr.: Bauarbeiten zwischen von Herbert-Baum-Str. bis Borodinstr., ab Ende September 2014',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
-#: last_checked: 2014-12-13
+#: last_checked: 2015-01-16
+#: check_frequency: 7d
 userdel	q4::inwork 13645,15609 13739,15643 13939,15723
 EOF
      },
@@ -23840,6 +23841,20 @@ EOF
 #: by: user per phone
 #: XXX vor Ort anschauen! Gibt es ein Endedatum?
 userdel	2::inwork 7772,4306 7795,4242 8106,3410
+EOF
+     },
+     { from  => 1421344800, # 2015-01-15 19:00
+       until => 1421510400, # 2015-01-17 17:00
+       text  => 'Moltkebrücke, Willi-Brandt-Str. und Otto.-v.-Bismarck-Allee: Veranstaltung (Traktoren-Sternfahrt), Straßen gesperrt, am Samstag auch Behinderungen rund um den Potsdamer Platz möglich, 16.01.2015 19:00 Uhr bis 17.01.2015 17:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_023887',
+       data  => <<EOF,
+userdel	2::temp 8301,12758 8206,12757 8120,12756 8030,12824
+userdel	2::temp 7936,12906 8021,12832
+userdel auto	3 8124,12840 8120,12756 8122,12603
+userdel auto	3 8207,12606 8206,12757 8204,12816
+userdel auto	3 8204,12816 8206,12757 8207,12606
+userdel auto	3 8122,12603 8120,12756 8124,12840
 EOF
      },
     );

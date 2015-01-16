@@ -1411,12 +1411,12 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'source_id' => 'IM_020145',
-         'until' => 1421449199,
-         'text' => 'Sterndamm: Eisenbahnunterführung bis zum 16.01.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
+         'until' => 1422658799,
+         'text' => 'Sterndamm: Eisenbahnunterführung bis zum 30.01.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
          'from' => 1417820400,
          'id' => 2469,
-         'data' => '#: XXX bleibt der Sterndamm auch über dem 16. Januar hinaus gesperrt?
-#: next_check: 2015-01-13
+         'data' => '#: XXX bleibt der Sterndamm auch über dem 30. Januar hinaus gesperrt?
+#: next_check: 2015-01-30
 userdel	1::inwork 17886,5587 17736,5441
 ',
          'type' => 'gesperrt'
@@ -1565,7 +1565,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'from' => undef,
          'id' => 2557,
          'data' => '#: XXX wann ist die Baustelle fertig?
-#: last_checked: 2014-12-13
+#: last_checked: 2015-01-16
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 ',
@@ -1709,7 +1709,19 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
+         'until' => 1422658800,
+         'text' => 'Gounodstr.: Bauarbeiten zwischen von Herbert-Baum-Str. bis Borodinstr., ab Ende September 2014',
+         'from' => 1411941600,
+         'id' => 2628,
+         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
+#: last_checked: 2015-01-16
+#: check_frequency: 7d
+userdel	q4::inwork 13645,15609 13739,15643 13939,15723
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'until' => undef,
@@ -1915,6 +1927,21 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
          'data' => '#: by: user per phone
 #: XXX vor Ort anschauen! Gibt es ein Endedatum?
 userdel	2::inwork 7772,4306 7795,4242 8106,3410
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_023887',
+         'until' => 1421510400,
+         'text' => 'Moltkebrücke, Willi-Brandt-Str. und Otto.-v.-Bismarck-Allee: Veranstaltung (Traktoren-Sternfahrt), Straßen gesperrt, am Samstag auch Behinderungen rund um den Potsdamer Platz möglich, 16.01.2015 19:00 Uhr bis 17.01.2015 17:00 Uhr ',
+         'from' => 1421344800,
+         'id' => 2676,
+         'data' => 'userdel	2::temp 8301,12758 8206,12757 8120,12756 8030,12824
+userdel	2::temp 7936,12906 8021,12832
+userdel auto	3 8124,12840 8120,12756 8122,12603
+userdel auto	3 8207,12606 8206,12757 8204,12816
+userdel auto	3 8204,12816 8206,12757 8207,12606
+userdel auto	3 8122,12603 8120,12756 8124,12840
 ',
          'type' => 'gesperrt'
        }
