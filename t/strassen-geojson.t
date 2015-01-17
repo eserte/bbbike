@@ -13,7 +13,7 @@ use lib ("$FindBin::RealBin/../lib",
 	 $FindBin::RealBin,
 	);
 
-#use File::Temp qw(tempfile);
+use File::Temp qw(tempfile);
 use Test::More;
 
 use Strassen;
@@ -75,9 +75,8 @@ plan 'no_plan';
 ]
 }
 EOF
-    my $s_geojson = Strassen::GeoJSON->new();
-    $s_geojson->geojsonstring2bbd($example_geojson);
-    is_deeply $s_geojson->data,
+
+    my $expected_data = 
 	[
 	 "Point\tX 100,0\n",
 	 "LineString\tX 100,0 101,1\n",
@@ -92,4 +91,17 @@ EOF
 	 "GeometryCollection\tX 100,0\n",
 	 "GeometryCollection\tX 101,0 102,1\n",
 	];
+    my $s_geojson = Strassen::GeoJSON->new();
+    $s_geojson->geojsonstring2bbd($example_geojson);
+    is_deeply $s_geojson->data, $expected_data, 'all geojson types from string';
+
+    my($tmpfh,$tmpfile) = tempfile(SUFFIX => '.geojson', UNLINK => 1);
+    print $tmpfh $example_geojson;
+    close $tmpfh or die "Error while writing to $tmpfile: $!";
+
+    my $s_file = Strassen->new($tmpfile);
+    is_deeply $s_file->data, $expected_data, 'geojson via Strassen->new';
+
+    my $s_file2 = Strassen::GeoJSON->new($tmpfile);
+    is_deeply $s_file2->data, $expected_data, 'geojson via Strassen::GeoJSON->new';
 }
