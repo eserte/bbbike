@@ -12,14 +12,18 @@ use Strassen::GeoJSON;
 
 sub usage {
     die <<EOF;
-usage: $0 [-compact] bbdfile
+usage: $0 [-compact] [-bbbgeojsonp] bbdfile
 EOF
 }
 
 my $compact;
-GetOptions("compact!" => \$compact) or usage();
+my $bbbgeojsonp;
+GetOptions(
+	   "compact!"     => \$compact,
+	   "bbbgeojsonp!" => \$bbbgeojsonp,
+	  ) or usage();
 
 my $file = shift || usage();
 my $s = Strassen->new($file);
 my $s_geojson = Strassen::GeoJSON->new($s);
-print $s_geojson->bbd2geojson(pretty => !$compact, utf8 => $compact);
+print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => !$compact, utf8 => $compact);

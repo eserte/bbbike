@@ -149,6 +149,7 @@ sub bbd2geojson {
 
     my $pretty = exists $args{pretty} ? $args{pretty} : 1;
     my $utf8   = exists $args{utf8}   ? $args{utf8}   : 1;
+    my $bbbgeojsonp = $args{bbbgeojsonp};
 
     my $xy2longlat = \&xy2longlat;
     my $map = $self->get_global_directive("map");
@@ -198,7 +199,11 @@ sub bbd2geojson {
     } else {
 	$json_xs->ascii(1);
     }
-    $json_xs->encode($to_serialize);
+    if ($bbbgeojsonp) {
+	'geoJsonResponse(' . $json_xs->encode($to_serialize) . ');';
+    } else {
+	$json_xs->encode($to_serialize);
+    }
 }
 
 sub longlat2xy {
@@ -222,3 +227,14 @@ sub xy2longlat {
 1;
 
 __END__
+
+=head2 JSONP support
+
+The GeoJSON result of the C<bbd2geojson()> call can be made into a
+JSONP-like result by specifying C<< bbbgeojsonp => 1 >>. This creates
+a resulting json string which is wrapped in a C<geoJsonResponse()>
+function call. To use this, create a javascript function like
+
+    function geoJsonResponse(geoJson) { initialGeoJSON = geoJson; }
+
+=cut
