@@ -27,7 +27,7 @@ my $htmlfile = "$htmldir/bbbikeleaflet.html";
 my $q = CGI->new;
 print $q->header('text/html; charset=utf-8');
 
-my $leaflet_dist = $q->param('leafletdist') || '';
+my $leaflet_ver = $q->param('leafletver');
 my $enable_upload = $q->param('upl') || 0;
 my $enable_accel = $q->param('accel') || 0;
 my $use_osm_de_map = $q->param('osmdemap') || 0;
@@ -89,8 +89,8 @@ while(<$fh>) {
 	next;
     }
 
-    if ($leaflet_dist eq 'biokovo') {
-	s{\Qhttp://bbbike.de/leaflet/dist\E}{http://192.168.1.5/~eserte/leaflet/dist};
+    if ($leaflet_ver && m{<(?:link|script ).*(?:/leaflet-\d+\.\d+\.\d+/)}) {
+	s{/leaflet-\d+\.\d+\.\d+/}{/leaflet-$leaflet_ver/};
     }
 
     print $_;
