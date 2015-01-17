@@ -15,7 +15,7 @@ package Strassen::GeoJSON;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use base qw(Strassen);
 
@@ -74,6 +74,50 @@ sub geojsonstring2bbd {
 
     my $data = JSON::XS->new->decode($string);
 
+    my $handle_geometry; $handle_geometry = sub {
+	my($geometry, $name, $cat) = @_;
+	my $type = $geometry->{type};
+	if ($type eq 'GeometryCollection') {
+	    for my $inner_geometry (@{ $geometry->{geometries} }) {
+		$handle_geometry->($inner_geometry, $name, $cat);
+	    }
+	} else {
+	    my $coordinates = $geometry->{coordinates};
+	    if ($type eq 'Point') {
+		if ($converter) { @$coordinates = $converter->(@$coordinates) }
+		$self->push([$name, [join ',', @$coordinates], $cat]);
+	    } elsif ($type eq 'LineString') {
+		if ($converter) { for (@$coordinates) { @$_ = $converter->(@$_) } }
+		$self->push([$name, [map { join ',',  @$_ } @$coordinates], $cat]);
+	    } elsif ($type eq 'Polygon') {
+		# XXX bbd has no support for interior rings/holes
+		for my $inner_coordinates (@$coordinates) {
+		    if ($converter) { for (@$inner_coordinates) { @$_ = $converter->(@$_) } }
+		    $self->push([$name, [map { join ',',  @$_ } @$inner_coordinates], 'F:'.$cat]);
+		}
+	    } elsif ($type eq 'MultiPoint') {
+		for my $inner_coordinates (@$coordinates) {
+		    if ($converter) { for (@$inner_coordinates) { @$_ = $converter->(@$_) } }
+		    $self->push([$name, [join ',', @$inner_coordinates], $cat]);
+		}
+	    } elsif ($type eq 'MultiLineString') {
+		for my $inner_coordinates (@$coordinates) {
+		    if ($converter) { for (@$inner_coordinates) { @$_ = $converter->(@$_) } }
+		    $self->push([$name, [map { join ',',  @$_ } @$inner_coordinates], $cat]);
+		}
+	    } elsif ($type eq 'MultiPolygon') {
+		for my $inner_coordinates (@$coordinates) {
+		    # XXX bbd has no support for interior rings/holes
+		    for my $inner_coordinates2 (@$inner_coordinates) {
+			if ($converter) { for (@$inner_coordinates2) { @$_ = $converter->(@$_) } }
+			$self->push([$name, [map { join ',',  @$_ } @$inner_coordinates2], 'F:'.$cat]);
+		    }
+		}
+	    } else {
+		warn "GeoJSON geometry type '$type' not supported, skipping feature...\n";
+	    }
+	}
+    };
     my $handle_feature = sub {
 	my $feature = shift;
 	my $geometry = $feature->{geometry};
@@ -82,17 +126,7 @@ sub geojsonstring2bbd {
 	}
 	my $name = $namecb->($feature);
 	my $cat = $catcb->($feature);
-	my $type = $geometry->{type};
-	my $coordinates = $geometry->{coordinates};
-	if ($type eq 'Point') {
-	    if ($converter) { @$coordinates = $converter->(@$coordinates) }
-	    $self->push([$name, [join ',', @$coordinates], $cat]);
-	} elsif ($type eq 'LineString') {
-	    if ($converter) { for (@$coordinates) { @$_ = $converter->(@$_) } }
-	    $self->push([$name, [map { join ',',  @$_ } @$coordinates], $cat]);
-	} else {
-	    warn "GeoJSON geometry type '$type' not supported, skipping feature...\n";
-	}
+	$handle_geometry->($geometry, $name, $cat);
     };
 
     if ($data->{type} eq 'FeatureCollection') {
