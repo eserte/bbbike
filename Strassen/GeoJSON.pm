@@ -169,7 +169,10 @@ sub bbd2geojson {
 	my $cat = $r->[Strassen::CAT];
 
 	my $geometry = (@c > 1
-			? { type => 'LineString', coordinates => [map { [$xy2longlat->($_)] } @c ] }
+			? ($cat =~ m{^F:}
+			   ? { type => 'Polygon', coordinates => [[map { [$xy2longlat->($_)] } (@c, $c[0] ne $c[-1] ? $c[-1] : ()) ]] }
+			   : { type => 'LineString', coordinates => [map { [$xy2longlat->($_)] } @c ] }
+			  )
 			: { type => 'Point',      coordinates => [$xy2longlat->($c[0])] }
 		       );
 

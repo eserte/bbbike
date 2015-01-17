@@ -46,6 +46,23 @@ plan 'no_plan';
 }
 
 {
+    my $test_flaechen_data = <<"EOF";
+#: map: polar
+#:
+Non-Closed Forest\tF:Forest 13.4,52.5 13.5,52.6 13.4,52.6
+Closed Forest\tF:Forest 13.4,52.5 13.5,52.6 13.4,52.6 13.4,52.5
+EOF
+    my $s = Strassen->new_from_data_string($test_flaechen_data);
+    my $s_geojson = Strassen::GeoJSON->new($s);
+    my $geojson = $s->bbd2geojson();
+
+    my $s2_geojson = Strassen::GeoJSON->new;
+    $s2_geojson->geojsonstring2bbd($geojson);
+
+    is_deeply $s2_geojson->{data}, $s->{data}, 'roundtrip check with area data';
+}
+
+{
     my $example_geojson = <<'EOF';
 { "type": "FeatureCollection",
   "features": [
