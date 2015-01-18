@@ -428,10 +428,7 @@ Fähenweg: genaue Lage, Qualität?	?::inwork 21875,2363 21803,2324
 #: by: ^^^
 #: XXX ^^^
 # 
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html
-#: last_checked: 2014-12-13
-#: next_check: 2014-12-31
-Gounodstr.: nach den Bauarbeiten asphaltiert	?::inwork 13645,15609 13739,15643 13939,15723
+# REMOVED --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html --- #: last_checked: 2014-12-13 --- #: next_check: 2014-12-31 --- Gounodstr.: nach den Bauarbeiten asphaltiert	?::inwork 13645,15609 13739,15643 13939,15723
 # 
 #: source_id: IM_022856
 Fürstenwalder Damm: existieren nach den Bauarbeiten vielleicht Radwege?	? 26302,5932 26080,5946 25579,5958
@@ -838,10 +835,9 @@ Planstraße 6 -> Teisnacher Str.: Qualität etc?	?::projected 19857,9682 19849,947
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf vvv
 #: osm_watch: way id="290220612" version="1"
 Planstraße 8: Name vielleicht Regener Str.? Qualität?	?::projected 19869,9151 19885,9400 19890,9476
-#: osm_watch: way id="193373966" version="3"
+#: osm_watch: way id="193373966" version="4"
 Straße in Bau: genaue Lage, Name (hier auch die Regener Str.?), Qualität?	?::inwork 19626,9166 19869,9151
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
-#: osm_watch: way id="287122102" version="2"
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
 Planstraße 9: Name wahrscheinlich Patersdorfer Str.? Qualität etc?	?::projected 19700,9040 19759,9041 19869,9151
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5991 (Straßenname)
@@ -1506,9 +1502,9 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 # REMOVED ("Apfelwege" alle aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3453 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3501 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036924327063/924327063/00054997/97-Anlagen/02/Benennungvon20PrivatwegeninderAnlageGravenstei.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2013 (Grundstücksnummerierung) --- #: XXX 13127 Berlin, Ortsteil Französisch Buchholz, fehlen alle in Berlin.coords.data vvv --- #: XXX Benennung von 20 Privatwegen in der Anlage Gravenstein: genaue Lage der Wege? Qualität? Beleuchtet? vvv --- #: last_checked: 2013-08-27 --- #: next_check: 2014-03-27
 # REMOVED --- Im Staudenhof: frühere Adresse, heute "Am alten Markt" (laut DPAG-Mitteilungsblatt 3/2013), ist es für Radfahrer irgendwie relevant?	? -12727,-1416 -12703,-1410
 # 
+#: next_check_id: SONNENALLEE-2014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2014-06-06 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
-#: next_check: 2014-12-31
+#: last_checked: 2015-01-17 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
