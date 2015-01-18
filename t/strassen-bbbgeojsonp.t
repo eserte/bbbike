@@ -28,9 +28,9 @@ BEGIN {
 use JSTest;
 use Strassen::GeoJSON;
 
-plan 'no_plan';
-
 check_js_interpreter_or_exit;
+
+plan 'no_plan';
 
 my $s = Strassen->new_from_data_string(<<"EOF");
 #: map: polar
