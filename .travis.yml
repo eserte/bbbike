@@ -17,6 +17,7 @@ before_script:
  - wrapper init_webserver_config
  - wrapper start_webserver
  - wrapper start_xserver
+ - wrapper init_webserver_environment
  - wrapper init_data
 language: perl
 matrix:
