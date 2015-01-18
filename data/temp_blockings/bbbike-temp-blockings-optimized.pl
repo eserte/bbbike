@@ -1929,21 +1929,6 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
 userdel	2::inwork 7772,4306 7795,4242 8106,3410
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_023887',
-         'until' => 1421510400,
-         'text' => 'Moltkebrücke, Willi-Brandt-Str. und Otto.-v.-Bismarck-Allee: Veranstaltung (Traktoren-Sternfahrt), Straßen gesperrt, am Samstag auch Behinderungen rund um den Potsdamer Platz möglich, 16.01.2015 19:00 Uhr bis 17.01.2015 17:00 Uhr ',
-         'from' => 1421344800,
-         'id' => 2676,
-         'data' => 'userdel	2::temp 8301,12758 8206,12757 8120,12756 8030,12824
-userdel	2::temp 7936,12906 8021,12832
-userdel auto	3 8124,12840 8120,12756 8122,12603
-userdel auto	3 8207,12606 8206,12757 8204,12816
-userdel auto	3 8204,12816 8206,12757 8207,12606
-userdel auto	3 8122,12603 8120,12756 8124,12840
-',
-         'type' => 'gesperrt'
        }
      
 );
