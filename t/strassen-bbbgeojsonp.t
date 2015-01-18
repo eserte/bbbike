@@ -53,7 +53,7 @@ EOF
 my $got = run_js_f $js_code;
 
 is $got, <<'EOF';
-{"geometry":{"coordinates":[["13.5","52.5"],["13.6","52.5"]],"type":"LineString"},"type":"Feature","properties":{"cat":"X","name":"Test"}}
+{"geometry":{"coordinates":[["13.5","52.5"],["13.6","52.5"]],"type":"LineString"},"properties":{"cat":"X","name":"Test"},"type":"Feature"}
 EOF
 
 __END__

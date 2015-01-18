@@ -196,7 +196,7 @@ sub bbd2geojson {
 			 features => \@features,
 			};
     }
-    my $json_xs = JSON::XS->new->pretty($pretty);
+    my $json_xs = JSON::XS->new->pretty($pretty)->canonical(1);
     if ($utf8) {
 	$json_xs->utf8(1);
     } else {
