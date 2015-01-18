@@ -19,6 +19,7 @@ MISCDIR=		$(BBBIKEDIR)/misc
 MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
 DATADIR=		.
 PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
+BBBGEOJSONPDIR=		$(PERSISTENTTMPDIR)/bbbgeojsonp
 
 PERL?=			perl
 # assume we have a modern perl (> 5.8.0, which has utf8 bugs) installed...
@@ -55,6 +56,7 @@ COMBINE_STREETS=	${PERL} ${MISCSRCDIR}/combine_streets.pl
 COMBINE_OSM=		${PERL} ${MISCSRCDIR}/combineosm
 TEMP_BLOCKINGS_TASKS=	${PERL} ${MISCSRCDIR}/temp_blockings_tasks
 CREATE_COOKED_BBD=	${PERL} ${MISCSRCDIR}/create_cooked_bbd
+BBD_TO_BBBGEOJSONP=	${PERL} ${MISCSRCDIR}/bbd2geojson -bbbgeojsonp -compact
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
@@ -104,6 +106,8 @@ INTERMEDIATE_TARGETS=	.strassen.tmp \
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
+BBBGEOJSONP_TARGETS=	${BBBGEOJSONPDIR}/bbbike-temp-blockings-optimized.bbbgeojsonp \
+			${BBD_TARGETS:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}
 
 XXX_NON_OUTDOOR=	indoor prog checklater
 XXX_TARGETS=		outdoor ${XXX_NON_OUTDOOR}
@@ -193,7 +197,8 @@ rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
-		${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd
+		${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
+		data-bbbgeojsonp
 
 # popular targets
 fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
@@ -1247,6 +1252,37 @@ ${PERSISTENTTMPDIR}/osm_watch_list_brandenburg:	*-orig ${PERSISTENTTMPDIR}/bbbik
 	${MISCSRCDIR}/bbd_to_osm_watch_list -filter-region brb *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
+
+######################################################################
+# BBBGEOJSONP TARGETS
+
+data-bbbgeojsonp:	${BBBGEOJSONP_TARGETS} \
+			${BBBGEOJSONPDIR}/index.html
+
+${BBBGEOJSONPDIR}/bbbike-temp-blockings-optimized.bbbgeojsonp:	${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+	@mkdir -p ${BBBGEOJSONPDIR}
+	${BBD_TO_BBBGEOJSONP} $> > $@~
+	mv $@~ $@
+
+.for i in ${BBD_TARGETS}
+${i:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: $i
+	@mkdir -p ${BBBGEOJSONPDIR}
+	${BBD_TO_BBBGEOJSONP} $> > $@~
+	mv $@~ $@
+.endfor
+
+# Works only for cgi-bin layout (like on bbbike.de)
+${BBBGEOJSONPDIR}/index.html:	${BBBGEOJSONP_TARGETS}
+	@mkdir -p ${BBBGEOJSONPDIR}
+	echo '<ul>' > $@~
+	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?local_geojsonp=bbbike-temp-blockings-optimized.bbbgeojsonp">bbbike-temp-blockings-optimized</a>' >> $@~
+.for i in ${BBD_TARGETS}
+	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?local_geojsonp=${i:S/$/.bbbgeojsonp/}">${i}</a>' >> $@~
+.endfor
+	echo '</ul>' >> $@~
+	echo 'Last update: ' $$(date '+%F %T') >> $@~
+	chmod 644 $@~
+	mv $@~ $@
 
 ######################################################################
 # CHECKS
