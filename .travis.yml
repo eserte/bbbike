@@ -22,17 +22,17 @@ before_script:
 language: perl
 matrix:
   include:
-    - perl: 5.14
+    - perl: "5.14"
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
-    - perl: 5.20
+    - perl: "5.20"
       env: BBBIKE_TEST_SKIP_MODPERL=1
-    - perl: 5.18
+    - perl: "5.18"
       env: BBBIKE_TEST_SKIP_MODPERL=1
-    - perl: 5.14
+    - perl: "5.14"
       env: BBBIKE_TEST_SKIP_MODPERL=1
-    - perl: 5.10
+    - perl: "5.10"
       env: BBBIKE_TEST_SKIP_MODPERL=1
-    - perl: 5.8
+    - perl: "5.8"
       env: BBBIKE_TEST_SKIP_MODPERL=1
-    - perl: 5.20-shrplib
+    - perl: "5.20-shrplib"
       env: USE_MODPERL=1
