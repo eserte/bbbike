@@ -150,7 +150,7 @@ start_webserver() {
     then
 	sudo service apache2 restart
     else
-	sudo -E `which plackup` --server=Starman --env=test --port=80 cgi/bbbike.psgi &
+	sudo -E $(which plackup) --server=Starman --user=$(id -u) --group=$(id -g) --env=test --port=80 cgi/bbbike.psgi &
     fi
 }
 
