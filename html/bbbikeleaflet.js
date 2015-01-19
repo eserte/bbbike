@@ -73,6 +73,30 @@ var loadingIcon = L.icon({
     iconAnchor: new L.Point(0,0)
 });
 
+var nightIcon = L.icon({
+    iconUrl: bbbikeImagesRoot + "/night.png",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(12,14),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(6,7)
+});
+
+var clockIcon = L.icon({
+    iconUrl: bbbikeImagesRoot + "/clock.png",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(13,13),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(6,6)
+});
+
+var inworkIcon = L.icon({
+    iconUrl: bbbikeImagesRoot + "/inwork_12.png",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(12,11),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(6,6)
+});
+
 var startMarker, goalMarker, loadingMarker;
 
 // globals
@@ -472,6 +496,33 @@ function doLeaflet() {
     if (initialRouteGeojson) {
 	showRoute(initialRouteGeojson);
 	map.setView(L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]), zoom);
+    } else if (initialGeojson) {
+       var l = L.geoJson(initialGeojson, {
+           style: function (feature) {
+               if (feature.properties.cat.match(/^(1|2|3|q\d)::(night|temp|inwork);?/)) {
+                   var attrib = RegExp.$2;
+                   var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
+                   var centerLatLng = getLineStringCenter(latLngs);
+                   var l;
+                   if (attrib == 'night') {
+                       l = L.marker(centerLatLng, { icon: nightIcon });
+                   } else if (attrib == 'temp') {
+                       l = L.marker(centerLatLng, { icon: clockIcon });
+                   } else if (attrib == 'inwork') {
+                       l = L.marker(centerLatLng, { icon: inworkIcon });
+                   }
+                   l.addTo(map);
+                   l.bindPopup(feature.properties.name);
+                   return { //dashArray: [2,2],
+                       color: "#f00", weight: 5, lineCap: "butt" }
+               }
+           },
+           onEachFeature: function (feature, layer) {
+               layer.bindPopup(feature.properties.name);
+           }
+       });
+       l.addTo(map);
+       map.fitBounds(l.getBounds());
     } else {
 	var lat = q.get("lat");
 	var lon = q.get("lon");
@@ -616,6 +667,27 @@ function escapeHtml(str) {
     var div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
+}
+
+function getLineStringCenter(latLngArray) {
+    if (latLngArray.length == 1) {
+       return latLngArray[0];
+    }
+    var len = 0;
+    for(var i=1; i<latLngArray.length; i++) {
+       len += latLngArray[i].distanceTo(latLngArray[i-1]);
+    }
+    var len0 = 0;
+    for(var i=1; i<latLngArray.length; i++) {
+       len0 += latLngArray[i].distanceTo(latLngArray[i-1]);
+       if (len0 > len/2) {
+           // XXX ungenau, besser machen!
+           var newLat = (latLngArray[i].lat - latLngArray[i-1].lat)/2 + latLngArray[i-1].lat;
+           var newLng = (latLngArray[i].lng - latLngArray[i-1].lng)/2 + latLngArray[i-1].lng;
+           return L.latLng(newLat, newLng);
+       }
+    }
+    // should never be reached
 }
 
 ////////////////////////////////////////////////////////////////////////

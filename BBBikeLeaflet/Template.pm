@@ -31,6 +31,9 @@ sub new {
     my $use_osm_de_map           = delete $args{use_osm_de_map};
     my $coords                   = delete $args{coords};
     my $show_expired_session_msg = delete $args{show_expired_session_msg};
+    my $geojson_file             = delete $args{geojson_file};
+    my $geojsonp_url             = delete $args{geojsonp_url};
+    my $root_url                 = delete $args{root_url};
 
     die 'Unhandled arguments: ' . join(', ', keys %args) if %args;
 
@@ -47,6 +50,9 @@ sub new {
 	   use_osm_de_map           => $use_osm_de_map,
 	   coords                   => $coords,
 	   show_expired_session_msg => $show_expired_session_msg,
+	   geojson_file             => $geojson_file,
+	   geojsonp_url             => $geojsonp_url,
+	   root_url                 => $root_url,
 	  }, $class;
 }
 
@@ -60,6 +66,9 @@ sub process {
     my $use_osm_de_map           = $self->{use_osm_de_map};
     my $coords                   = $self->{coords};
     my $show_expired_session_msg = $self->{show_expired_session_msg};
+    my $geojson_file             = $self->{geojson_file};
+    my $geojsonp_url             = $self->{geojsonp_url};
+    my $root_url                 = $self->{root_url};
 
     my $use_old_url_layout = $self->{use_old_url_layout};
     my($bbbike_htmlurl, $bbbike_imagesurl);
@@ -69,6 +78,11 @@ sub process {
     } else {
 	$bbbike_htmlurl   = "/BBBike/html";
 	$bbbike_imagesurl = "/BBBike/images";
+    }
+    if (defined $root_url) {
+	for ($bbbike_htmlurl, $bbbike_imagesurl) {
+	    $_ = "$root_url$_";
+	}
     }
 
     open my $fh, '<:utf8', $htmlfile
@@ -118,6 +132,14 @@ sub process {
 	    s{/leaflet-\d+\.\d+\.\d+/}{/leaflet-$leaflet_ver/};
 	}
 
+	if (m{\Q<!-- INSERT JSONP HERE -->}) {
+	    if ($geojsonp_url) {
+		print qq{<script>function geoJsonResponse(geoJson) { initialGeojson = geoJson }</script>\n};
+		print qq{<script type="application/javascript" src="$geojsonp_url"></script>\n};
+	    }
+	    next;
+	}
+
 	print $ofh $_;
 
 	if (m{\Q//--- INSERT GEOJSON HERE ---}) {
@@ -130,6 +152,16 @@ sub process {
 	    } elsif ($show_expired_session_msg) {
 		# XXX English message?
 		print $ofh qq{alert("Die Session ist abgelaufen, es wird die Karte ohne Route angezeigt.");\n};
+	    } elsif ($geojson_file) {
+		print $ofh "initialGeojson =\n";
+		open my $geojson_fh, '<', $geojson_file
+		    or die "Can't open $geojson_file: $!";
+		local $/ = \4096;
+		local $_;
+		while(<$geojson_fh>) {
+		    print $ofh $_;
+		}
+		print $ofh ";\n";
 	    }
 	}
 
