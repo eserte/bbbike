@@ -26,10 +26,14 @@ use BBBikeLeaflet::Template;
 my $root_url = 'http://bbbike.de';
 my $geojson_file;
 my $geojsonp_url;
+my $show_feature_list = 1;
+my $leaflet_ver;
 GetOptions(
 	   'rooturl=s'              => \$root_url,
 	   'geojson|geojson-file=s' => \$geojson_file,
 	   'geojsonp-url=s'         => \$geojsonp_url,
+	   'show-feature-list!'     => \$show_feature_list,
+	   'leafletver=s'           => \$leaflet_ver,
 	  )
     or die "usage: $0 [-rooturl ...] [-geojson ... | -geojsonp-url ...]\n";
 
@@ -40,6 +44,8 @@ my $tpl = BBBikeLeaflet::Template->new(
 				       root_url     => $root_url,
 				       geojson_file => $geojson_file,
 				       geojsonp_url  => $geojsonp_url,
+				       show_feature_list => $show_feature_list,
+				       leaflet_ver => $leaflet_ver,
 				      );
 $tpl->process(\*STDOUT);
 

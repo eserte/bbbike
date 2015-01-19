@@ -33,6 +33,7 @@ my $leaflet_ver        = $q->param('leafletver');
 my $enable_upload      = $q->param('upl') || 0;
 my $enable_accel       = $q->param('accel') || 0;
 my $use_osm_de_map     = $q->param('osmdemap') || 0;
+my $devel              = $q->param('devel') || 0;
 my $use_old_url_layout = $q->url(-absolute => 1) =~ m{/cgi/bbbikeleaflet};
 my $show_expired_session_msg;
 my $coords;
@@ -44,6 +45,12 @@ if ($q->param('coordssession')) {
 	$show_expired_session_msg = 1;
     }
 }
+my $show_feature_list;
+if ($devel) {
+    $enable_upload = $show_feature_list = 1;
+    # $enable_accel = 1; # XXX not yet
+    $leaflet_ver = '0.7.3' if !defined $leaflet_ver;
+}
 
 my $tpl = BBBikeLeaflet::Template->new
     (
@@ -53,6 +60,7 @@ my $tpl = BBBikeLeaflet::Template->new
      use_osm_de_map           => $use_osm_de_map,
      use_old_url_layout       => $use_old_url_layout,
      show_expired_session_msg => $show_expired_session_msg,
+     show_feature_list        => $show_feature_list,
      coords                   => $coords,
     );
 $tpl->process(\*STDOUT);

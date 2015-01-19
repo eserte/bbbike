@@ -34,14 +34,15 @@
   var enable_upload = false;
   var enable_accel = false;
   var use_osm_de_map = false;
+  var show_feature_list = false;
   //--- INSERT DEVEL CODE HERE ---
-  var enable_routelist = enable_upload; // XXX hack!
  //--></script>
  <script src="bbbikeleaflet.js?v=1.6" type="text/javascript"></script><!-- FIX URL LAYOUT -->
 
  <!-- INSERT JSONP HERE -->
 </head>
 <body onload="doLeaflet();">
+ <div id="list" style="float:left; overflow:hidden; visibility:hidden;"></div>
  <div id="map"></div>
 </body>
 </html>

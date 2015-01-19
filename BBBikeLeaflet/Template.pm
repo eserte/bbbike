@@ -33,6 +33,7 @@ sub new {
     my $show_expired_session_msg = delete $args{show_expired_session_msg};
     my $geojson_file             = delete $args{geojson_file};
     my $geojsonp_url             = delete $args{geojsonp_url};
+    my $show_feature_list        = delete $args{show_feature_list};
     my $root_url                 = delete $args{root_url};
 
     die 'Unhandled arguments: ' . join(', ', keys %args) if %args;
@@ -52,6 +53,7 @@ sub new {
 	   show_expired_session_msg => $show_expired_session_msg,
 	   geojson_file             => $geojson_file,
 	   geojsonp_url             => $geojsonp_url,
+	   show_feature_list        => $show_feature_list,
 	   root_url                 => $root_url,
 	  }, $class;
 }
@@ -68,6 +70,7 @@ sub process {
     my $show_expired_session_msg = $self->{show_expired_session_msg};
     my $geojson_file             = $self->{geojson_file};
     my $geojsonp_url             = $self->{geojsonp_url};
+    my $show_feature_list        = $self->{show_feature_list};
     my $root_url                 = $self->{root_url};
 
     my $use_old_url_layout = $self->{use_old_url_layout};
@@ -169,6 +172,7 @@ sub process {
 	    print $ofh "enable_upload  = " . ($enable_upload  ? 'true' : 'false') . ";\n";
 	    print $ofh "enable_accel   = " . ($enable_accel   ? 'true' : 'false') . ";\n";
 	    print $ofh "use_osm_de_map = " . ($use_osm_de_map ? 'true' : 'false') . ";\n";
+	    print $ofh "show_feature_list = " . ($show_feature_list ? 'true' : 'false') . ";\n";
 	}
     }
 }

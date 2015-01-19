@@ -99,6 +99,8 @@ var inworkIcon = L.icon({
 
 var startMarker, goalMarker, loadingMarker;
 
+var id2marker;
+
 // globals
 var routeLayer;
 var searchState = "start";
@@ -496,10 +498,19 @@ function doLeaflet() {
     var setViewZoom;
     var setViewLayer;
 
+    id2marker = {};
+
     if (initialRouteGeojson) {
 	showRoute(initialRouteGeojson);
 	setViewLatLng = L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]);
     } else if (initialGeojson) {
+	if (show_feature_list) { // auto-id numbering
+	    var features = initialGeojson.features;
+	    var id = 0;
+	    for(var i = 0; i < features.length; i++) {
+		features[i].properties.id = ++id;
+	    }
+	}
 	var l = L.geoJson(initialGeojson, {
             style: function (feature) {
 		if (feature.properties.cat.match(/^(1|2|3|q\d)::(night|temp|inwork);?/)) {
@@ -522,6 +533,7 @@ function doLeaflet() {
             },
             onEachFeature: function (feature, layer) {
 		layer.bindPopup(feature.properties.name);
+		id2marker[feature.properties.id] = layer;
             }
 	});
 	l.addTo(map);
@@ -554,6 +566,38 @@ function doLeaflet() {
 	}
 	map.setView(setViewLatLng, setViewZoom);
     }
+
+    if (show_feature_list && initialGeojson) {
+	var listHtml = '';
+	var features = initialGeojson.features;
+	for(var i = 0; i < features.length; i++) {
+	    var featureProperties = features[i].properties
+	    if (featureProperties) {
+		listHtml += "\n" + '<a href="javascript:showMarker(' + featureProperties.id + ')">' + featureProperties.name + '</a><br><hr>';
+	    }
+	}
+
+	setFeatureListContent(listHtml);
+    }
+}
+
+function setFeatureListContent(listHtml) {
+    var listDiv = document.getElementById('list');
+    listDiv.innerHTML = listHtml;
+    listDiv.style.visibility = 'visible';
+    listDiv.style.overflowY = 'scroll';
+    listDiv.style.width = '20%';
+    listDiv.style.height = '100%';
+    listDiv.style.padding = '3px';
+}
+
+function showMarker(id) {
+    var marker = id2marker[id];
+    if (marker) {
+	marker.openPopup();
+    } else {
+	alert('Sorry, no marker with id ' + id);
+    }
 }
 
 function getSearchCoordParams(startPoint, goalPoint) {
@@ -585,7 +629,7 @@ function showRouteResult(request) {
 	    var json = "geojson = " + request.responseText;
 	    eval(json);
 	    showRoute(geojson);
-	    if (enable_routelist) {
+	    if (show_feature_list) {
 		populateRouteList(geojson);
 	    }
 	}
@@ -632,12 +676,10 @@ function setLoadingMarker(latLng) {
 }
 
 function populateRouteList(geojson) {
-    var routelist = document.getElementById('routelist');
     var result = geojson.properties.result;
     var route = result.Route;
 
-    var html = '<div id="routelist">'
-    html += "<div>Länge: " + sprintf("%.2f", result.Len / 1000) + " km</div>\n";
+    var html = "<div>Länge: " + sprintf("%.2f", result.Len / 1000) + " km</div>\n";
 
     var pref_speed;
     var pref_time;
@@ -654,25 +696,32 @@ function populateRouteList(geojson) {
 	html += "<div>Fahrzeit (" + pref_speed + " km/h): " + h + "h" + m + "min</div>\n";
     }
 
+    // XXX duplicated in cgi
+    var rawDirectionToArrow = {'l':  '&#x21d0;',
+			       'hl': '&#x21d6;',
+			       'hr': '&#x21d7;',
+			       'r':  '&#x21d2;',
+			       'u':  '&#x21b6;',
+			      };
     html += "<table>\n";
-    html += "<tr><th>Etappe</th><th>Richtung</th><th>Straße</th></tr>\n";
+    html += "<tr><th>Etappe</th><th></th><th>Straße</th></tr>\n";
     for(var i=0; i<route.length; i++) {
 	var elem = route[i];
 	html += "<tr>";
-	html += "<td>" + sprintf("%.2f", elem.Dist/1000) + " km</td>";
-	html += "<td>" + elem.DirectionHtml + "</td>";
+	html += "<td style='text-align:right;'>" + sprintf("%.2f", elem.Dist/1000) + " km</td>";
+	html += "<td>" + (rawDirectionToArrow[elem.Direction] || '') + "</td>";
 	var coord = L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[elem.PathIndex]);
-	html += '<td onclick="routelistPopup.setLatLng(new L.LatLng('+coord.lat+','+coord.lng+'))">' + escapeHtml(elem.Strname) + "</a></td>";
+	html += '<td onclick="showStreet(' + "'" + escapeHtml(elem.Strname) + "'" + ', '+coord.lat+','+coord.lng+')">' + escapeHtml(elem.Strname) + "</a></td>";
 	html += "</tr>\n";
     }
     html += "</table>\n";
     html += "</div>\n";
-    routelistPopup = L.popup({maxWidth: window.innerWidth<1024 ? window.innerWidth/2 : 512,
-			      maxHeight: window.innerHeight*0.8,
-			      offset: new L.Point(0, -6)})
-	.setLatLng(L.GeoJSON.coordsToLatLng(geojson.geometry.coordinates[0]))
-	.setContent(html)
-	.openOn(map);
+
+    setFeatureListContent(html);
+}
+
+function showStreet(strname, lat, lng) {
+    map.openPopup(strname, new L.LatLng(lat,lng));
 }
 
 // from https://gist.github.com/BMintern/1795519

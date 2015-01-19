@@ -17,6 +17,13 @@ html, body, #map {
 /* looks better for tiny screens, everything is right-aligned */
 .leaflet-control-attribution { text-align: right; }
 
-#routelist, #routelist tr, #routelist td {
+#list, #list tr, #list td {
     font-size:small;
+}
+#list a {
+    text-decoration: none;
+    color: #00000;
+}
+#list a:hover, #list a:visited, #list a:link {
+    color: #00000;
 }
