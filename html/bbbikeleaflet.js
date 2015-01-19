@@ -107,6 +107,7 @@ var map;
 var routelistPopup;
 
 var defaultLatLng = [52.516224, 13.377463]; // Brandenburger Tor, good for Berlin
+var defaultZoom = 13;
 
 var devel_tile_letter = 'a'; // or 'z' or 'y'
 
@@ -491,54 +492,67 @@ function doLeaflet() {
 	    }
 	});
 
-    var zoom = q.get("zoom");
-    if (!zoom) { zoom = 13 }
+    var setViewLatLng;
+    var setViewZoom;
+    var setViewLayer;
+
     if (initialRouteGeojson) {
 	showRoute(initialRouteGeojson);
-	map.setView(L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]), zoom);
+	setViewLatLng = L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]);
     } else if (initialGeojson) {
-       var l = L.geoJson(initialGeojson, {
-           style: function (feature) {
-               if (feature.properties.cat.match(/^(1|2|3|q\d)::(night|temp|inwork);?/)) {
-                   var attrib = RegExp.$2;
-                   var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
-                   var centerLatLng = getLineStringCenter(latLngs);
-                   var l;
-                   if (attrib == 'night') {
-                       l = L.marker(centerLatLng, { icon: nightIcon });
-                   } else if (attrib == 'temp') {
-                       l = L.marker(centerLatLng, { icon: clockIcon });
-                   } else if (attrib == 'inwork') {
-                       l = L.marker(centerLatLng, { icon: inworkIcon });
-                   }
-                   l.addTo(map);
-                   l.bindPopup(feature.properties.name);
-                   return { //dashArray: [2,2],
-                       color: "#f00", weight: 5, lineCap: "butt" }
-               }
-           },
-           onEachFeature: function (feature, layer) {
-               layer.bindPopup(feature.properties.name);
-           }
-       });
-       l.addTo(map);
-       map.fitBounds(l.getBounds());
+	var l = L.geoJson(initialGeojson, {
+            style: function (feature) {
+		if (feature.properties.cat.match(/^(1|2|3|q\d)::(night|temp|inwork);?/)) {
+                    var attrib = RegExp.$2;
+                    var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
+                    var centerLatLng = getLineStringCenter(latLngs);
+                    var l;
+                    if (attrib == 'night') {
+			l = L.marker(centerLatLng, { icon: nightIcon });
+                    } else if (attrib == 'temp') {
+			l = L.marker(centerLatLng, { icon: clockIcon });
+                    } else if (attrib == 'inwork') {
+			l = L.marker(centerLatLng, { icon: inworkIcon });
+                    }
+                    l.addTo(map);
+                    l.bindPopup(feature.properties.name);
+                    return { //dashArray: [2,2],
+			color: "#f00", weight: 5, lineCap: "butt" }
+		}
+            },
+            onEachFeature: function (feature, layer) {
+		layer.bindPopup(feature.properties.name);
+            }
+	});
+	l.addTo(map);
+	setViewLayer = l;
     } else {
+	var lat = q.get("mlat");
+	var lon = q.get("mlon");
+	if (lat && lon) {
+	    var center = new L.LatLng(lat, lon);
+	    setViewLatLng = center;
+	    setStartMarker(center);
+	}
+    }
+
+    if (!setViewLatLng) {
 	var lat = q.get("lat");
 	var lon = q.get("lon");
 	if (lat && lon) {
-	    map.setView(new L.LatLng(lat, lon), zoom);
-	} else {
-	    lat = q.get("mlat");
-	    lon = q.get("mlon");
-	    if (lat && lon) {
-		var center = new L.LatLng(lat, lon);
-		map.setView(center, zoom);
-		setStartMarker(center);
-	    } else {
-		map.setView(defaultLatLng, zoom); // Brandenburger Tor
-	    }
+	    setViewLatLng = new L.LatLng(lat, lon);
 	}
+    }
+    if (setViewLayer && !setViewLatLng) {
+	map.fitBounds(setViewLayer.getBounds());
+    } else {
+	if (!setViewLatLng) {
+	    setViewLatLng = defaultLatLng;
+	}    
+	if (!setViewZoom) {
+	    setViewZoom = q.get("zoom") || defaultZoom;
+	}
+	map.setView(setViewLatLng, setViewZoom);
     }
 }
 
