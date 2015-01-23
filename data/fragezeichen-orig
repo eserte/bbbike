@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-01-08
+#: last_checked: 2015-01-21
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -120,7 +120,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="18"
 #: osm_watch: way id="42732291" version="9"
-#: last_checked: 2014-09-20
+#: last_checked: 2015-01-23
 #: check_frequency: 90d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
@@ -217,8 +217,8 @@ Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 1
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: XXX wird auch das letzte Stück im Westen realisiert?
-#: osm_watch: way id="4424794" version="13"
-#: osm_watch: way id="30195541" version="8"
+#: osm_watch: way id="4424794" version="14"
+#: osm_watch: way id="30195541" version="9"
 #: last_checked: 2014-11-26
 Turmstr.: Radspuren für 2013 geplant	? 5248,13434 5368,13406 5434,13398
 # 
@@ -308,6 +308,7 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5463
 #: source_id: IM_023242
 #: XXX Bauarbeiten sind fertig, die Markierung ist allerdings noch nicht erfolgt
 #: last_checked: 2015-01-04
@@ -376,6 +377,16 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: XXX fehlt in Berlin.coords.data
+#: note: Privatstraße, südlicher (jetzt schon bestehender) Abschnitt bleibt öffentlich
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015
+Zur alten Börse: Qualität, schon fertig?	? 18766,13257 18654,12255
+# 
+#: XXX fehlt in Berlin.coords.data
+#: note: "Mahlsdorfer Grünzug"
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015
+Pfarrhufenanger: Qualität, schon befahrbar? Verkehrsberuhigt?	? 25599,13069 25427,12847 25250,12632
 # 
 # REMOVED (teilweise offiziell für Radfahrer offen) --- #: XXX Zimmerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 01/15) Richtung Friedrichstr. zwischen Wilhelmstr. und Friedrichstr., 04.11.2014 14:58 Uhr bis 31.01.2015 16:00 Uhr --- #: XXX wahrscheinlich für Radfahrer offen --- #: source_id: IM_023356 --- #: next_check: 2014-11-10 --- Zimmerstr.: Bauarbeiten für Radfahrer relevant?	?::inwork 9155,11283 9478,11317
 # 
@@ -1189,6 +1200,8 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Am Bullengraben: Qualität? Unbeleuchtet?	? -6269,13472 -6197,13504 -6086,13578 -6020,13598 -5949,13600
+# 
 Neubrandenburger Str.: Qualität?	? 17401,18409 17580,18548 17635,18591 17667,18617 17678,18695
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141127.1230.400389.html
@@ -1410,7 +1423,7 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 #: osm_watch: way id="186786509" version="3"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: last_checked: 2014-02-10
-#: next_check: 2015-01-17
+#: next_check: 2015-04-23
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337
 # 
 # REMOVED (realisiert) --- #: last_checked: 2014-11-26 --- #: next_check: 2014-12-14 --- Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7422,13012

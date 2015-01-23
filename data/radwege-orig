@@ -424,7 +424,13 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1;RW1 3038,13612 3033,1
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -168,16269 127,17176 255,17528 560,18494 847,18738
 	RW4?;RW3 847,18738 1229,18750
 Verbundsteinpflaster	RW; 847,18738 560,18494 255,17528 127,17176 -168,16269
-	RW1;RW1 8057,14876 7929,15006 7819,15103
+	RW1; 8057,14876 7929,15006
+#: note: Radweg befindet sich in "Auflösung", hinterer Teil besteht nur noch aus Kleinsteinpflaster
+	RW1; 7929,15006 8057,14876
+#: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert
+	RW1; 7929,15006 7819,15103
+#: note: frühere Markierung scheint verschwunden zu sein
+	RW0; 7819,15103 7929,15006
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr	RW1; 7929,15006 7527,14684
 	RW1; 7527,14684 7929,15006
 	RW1;RW1 7527,14684 7486,14652 7464,14636 7443,14620 7373,14566 7180,14419
@@ -1794,10 +1800,12 @@ Gehweg für Radfahrer frei	RW1; 1465,14963 1468,15044 1415,15190 1372,15313 1280,
 	RW1;RW1 1465,14963 1887,14888 1988,14870 2099,14852 2224,14825
 	RW2;RW1 2224,14825 2382,14800
 	RW1;RW1 2382,14800 2673,14756 2905,14754
-für Radfahrer freigegebene Busspur gilt Mo-Fr 7-18 Uhr	RW1; 3585,16252 3711,16481 3788,16621 3940,16861 4406,17029 4704,17101 4931,17174 4997,17241
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW1; 3940,16861 3853,16825 3753,16638
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3836 (Verlängerung der Geltungsdauer) vvv
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 3585,16252 3711,16481 3788,16621 3940,16861 4406,17029 4704,17101 4931,17174 4997,17241
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 3940,16861 3853,16825 3753,16638
 #: note: ehemaliger Radweg ist explizit abgesperrt; Radfahrer werden über Rue Dominique Larrey umgeleitet
-Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW5; 3753,16638 3676,16497 3643,16437
+Busspur gilt Mo-Fr 6-18 Uhr	RW5; 3753,16638 3676,16497 3643,16437
+#: by ^^^
 asphaltiert	RW2; 3643,16437 3564,16294
 	RW;RW2 5034,17322 4997,17241
 	RW2; 4997,17241 4931,17174 4704,17101 4406,17029 3940,16861
@@ -2823,7 +2831,7 @@ Verbundsteinpflastergehweg für Radfahrer frei	RW1; -6316,17363 -5918,17180 -5494
 #: by: Stefan Klinkusch
 Verbundsteinpflaster	RW1;RW1 -6369,13858 -6610,13840 -6911,13817 -7050,13807 -7322,13784 -7484,13770 -7612,13752 -7699,13796 -7730,13857 -7716,14031 -7762,14067 -8007,14238 -8184,14196 -8243,14183 -8509,14109 -8822,14023
 #: note: Radspur by public imagery
-	RW4?;RW0 -6151,13001 -6191,13177 -6220,13289 -6242,13371 -6250,13396 -6268,13465 -6272,13482 -6325,13668 -6369,13858
+	RW4?;RW0 -6151,13001 -6191,13177 -6220,13289 -6242,13371 -6250,13396 -6268,13465 -6269,13472 -6325,13668 -6369,13858
 # REMOVED ---	RW;RW -6369,13858 -6413,14010 -6438,14094 -6459,14160
 	RW2;RW2 -6459,14160 -6470,14247 -6465,14291 -6461,14323 -6454,14392 -6451,14413 -6442,14535
 	RW4;RW1 -5030,13017 -5118,13053 -5245,13138

@@ -2567,7 +2567,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2014-12-01 vvv
+#: last_checked: 2015-01-23 vvv
 #: next_check: 2015-05-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926
@@ -2874,8 +2874,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -9942,21
 	X -12655,-1714
 #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust?
-#: last_checked: 2015-01-18
-#: check_frequency: 90d
+#: source_id: IM_023940
+#: last_checked: 2015-01-21
+#: next_check: 2015-06-30 (Ende laut VMZ)
 	X::inwork 14018,9118
 ################################################################################
 #: note: Ampeln elsewhere vvv

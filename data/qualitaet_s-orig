@@ -422,11 +422,8 @@ Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12991,7549 13100,7626
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622
 Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712 13378,7695
-Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168 12870,8087
-#: next_check_id: RICHARDSTR-2014
-#: XXX letzte Deckschicht fehlt noch, danach Q0
-#: last_checked: 2014-11-22
-Richardstr.: Asphalt	Q0- 12870,8087 13045,7938
+Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168
+Richardstr.: Asphalt	Q0 12797,8168 12870,8087 13045,7938
 Richardstr.: Kopfsteinpflaster	Q2 13045,7938 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
 Richardstr.: Kopfsteinpflaster	Q2 13278,7673 13288,7653 13303,7622
@@ -2282,7 +2279,7 @@ Hauptstr.: Asphalt	Q0 -7360,13409 -7273,13354
 #: confirmed_by: peter kopp:
 (Am Bullengraben): sehr guter Asphalt	Q0 -5621,13613 -5785,13606 -5949,13600 -6010,13586
 #: confirmed_by: peter kopp
-(Am Bullengraben): sehr guter Asphalt	Q0 -6272,13482 -6349,13444 -6429,13426 -6563,13403 -6718,13383 -6724,13359 -6890,13351 -6911,13372 -7010,13382 -7237,13461 -7443,13616
+(Am Bullengraben): sehr guter Asphalt	Q0 -6269,13472 -6276,13469 -6349,13444 -6429,13426 -6563,13403 -6718,13383 -6724,13359 -6890,13351 -6911,13372 -7010,13382 -7237,13461 -7443,13616
 (Am Bullengraben): Gitterbrücke	Q1+ -7443,13616 -7522,13651
 (Am Bullengraben): wassergebundene Decke	Q1 -7522,13651 -7529,13657 -7503,13742 -7592,13713 -7656,13723 -7717,13720 -7801,13697
 Philipp-Gerlach-Weg: wassergebundene Decke	Q1 -7801,13697 -7843,13663 -7851,13606
@@ -6154,7 +6151,7 @@ Florastr.: schlechtes Kopfsteinpflaster	Q3 25376,12981 25332,12922 25233,12828 2
 Florastr.: Beton	Q0 24878,12385 24862,12362 24847,12306 24861,12226 24851,12204
 Lübzer Str.: schlechtes Kopfsteinpflaster	Q3 24775,13218 24968,13121 25118,13041 25332,12922
 Lenbachstr.: schlechtes Kopfsteinpflaster	Q3 25332,12922 25372,12890
-Lenbachstr.: Asphalt	Q0 25372,12890 25475,12809
+Lenbachstr.: Asphalt	Q0 25372,12890 25427,12847 25475,12809
 Lenbachstr.: schlechtes Kopfsteinpflaster	Q3 25475,12809 25534,12763
 Lenbachstr.: Asphalt	Q0 25534,12763 25629,12688 25774,12572
 Karlshafener Str.: Asphalt	Q0 25233,12828 25054,12926 24905,13004
@@ -22635,7 +22632,7 @@ Sudermannstr.: sehr guter Asphalt	Q0 24978,12793 25126,12710 25189,12661
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5649
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45-181-1361000447875/1000447875/00070908/08-Anlagen/02/vzb0704_IV-B-Plan_10-51_Festsetzung.pdf
 #: next_check: 2015-06-01
-Sudermannstr.: fester Sandweg	Q2+ 25189,12661 25218,12653 25305,12597
+Sudermannstr.: fester Sandweg	Q2+ 25189,12661 25218,12653 25250,12632 25305,12597
 #: note: "frisch asphaltiert"
 #: confirmed_by: srt
 Sudermannstr.: Asphalt	Q0 25305,12597 25361,12551 25462,12473 25602,12363
