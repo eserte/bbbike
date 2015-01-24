@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2014 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2014,2015 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storabl
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = '1.97';
+$VERSION = '1.98';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -223,9 +223,15 @@ sub new_stream {
     $class->new($filename, %args);
 }
 
+sub new_data_string_stream {
+    my($class, $data_string, %args) = @_;
+    $args{NoRead} = 1;
+    $class->new_from_data_string($data_string, %args);
+}
+
 sub read_stream {
     my($self, $callback, %args) = @_;
-    my $fh = $self->open_file(%args);
+    my $fh = $self->{Fh} || $self->open_file(%args);
     $args{Callback} = $callback;
     $args{UseLocalDirectives} = 1 if !exists $args{UseLocalDirectives};
     $self->read_from_fh($fh, %args);
@@ -459,7 +465,11 @@ sub new_from_data_string {
 	require IO::String; # XXX add as prereq_pm for <5.008
 	$fh = IO::String->new($string);
     }
-    $self->read_from_fh($fh, %args);
+    if ($args{NoRead}) {
+	$self->{Fh} = $fh;
+    } else {
+	$self->read_from_fh($fh, %args);
+    }
     $self;
 }
 
