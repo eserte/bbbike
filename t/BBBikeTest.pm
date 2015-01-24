@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -47,7 +47,7 @@ use BBBikeUtil qw(is_in_path);
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing on_author_system
-	      get_pmake image_ok zip_ok
+	      get_pmake image_ok zip_ok create_temporary_content
 	    ),
 	   @opt_vars);
 
@@ -930,6 +930,20 @@ sub zip_ok {
 
     Test::More::pass("Zip file $zip_name looks OK");
     1;
+}
+
+sub create_temporary_content ($;%) {
+    my($content, %file_temp_args) = @_;
+    my $encoding = delete $file_temp_args{encoding};
+    require File::Temp;
+    my($tmpfh, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_bbbike_test.tmp", %file_temp_args);
+    if ($encoding) {
+	binmode $tmpfh, ":encoding($encoding)";
+    }
+    print $tmpfh $content;
+    close $tmpfh
+	or die "Failed to create temporary file: $!";
+    ($tmpfh, $tmpfile);
 }
 
 1;
