@@ -290,6 +290,9 @@ my @req_table =
   [qw/Starman	0	all	8	cgi/,
    'Ein performanterer PSGI-Server als der Standard-Server bei Plack'],
 
+  [qw/HTTP::Date	0	all	2	cgi/,
+   'Für If-Modified-Since-Handling in BBBikeDataDownloadCompat (mod_perl)'],
+
   ## Maybe in future:
   # DBD::Pg - Strassen::Pg
   # Text::LevenshteinXS - PLZ::Levenshtein

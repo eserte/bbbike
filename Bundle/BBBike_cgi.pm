@@ -73,6 +73,8 @@ WWW::Mechanize::FormFiller	- Für Testen des CGI-Interfaces
 
 Module::Metadata	- Information zu installierten Modulen für API-Aufrufe
 
+HTTP::Date	- Für If-Modified-Since-Handling in BBBikeDataDownloadCompat (mod_perl)
+
 
 =head1 DESCRIPTION
 

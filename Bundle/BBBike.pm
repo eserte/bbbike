@@ -229,6 +229,8 @@ Plack::Middleware::Rewrite	- Für das Plack/PSGI-Routing benötigt
 
 Starman	- Ein performanterer PSGI-Server als der Standard-Server bei Plack
 
+HTTP::Date	- Für If-Modified-Since-Handling in BBBikeDataDownloadCompat (mod_perl)
+
 
 =head1 DESCRIPTION
 
