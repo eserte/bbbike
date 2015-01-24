@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Http.pm,v 4.2 2014/04/05 18:05:53 eserte Exp $
+# $Id: Http.pm,v 4.4 2015/01/24 19:52:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1995,1996,1998,2000,2001,2003,2005,2008,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1995,1996,1998,2000,2001,2003,2005,2008,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ use vars qw(@ISA @EXPORT_OK $VERSION $tk_widget $user_agent $http_defaultheader
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(get $user_agent $http_defaultheader
 		rfc850_date uuencode);
-$VERSION = sprintf("%d.%02d", q$Revision: 4.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 4.4 $ =~ /(\d+)\.(\d+)/);
 
 $tk_widget = 0 unless defined $tk_widget;
 $timeout = 10  unless defined $timeout;
@@ -35,7 +35,7 @@ Accept: */*;
 EOF
 
 if (is_in_path("zcat")) {
-    $http_defaultheader .= "Accept-encoding: x-compress; x-gzip\015\012";
+    $http_defaultheader .= "Accept-encoding: deflate, gzip\015\012";
 }
 
 # Holt das durch urlstring spezifizierte WWW-Dokument. Falls rfc850 oder ctime
@@ -381,7 +381,7 @@ sub get_plain {
     close($sock);
 
     if (defined $header{'content-encoding'} and
-	$header{'content-encoding'} =~ /^(?:x-)?(?:gzip|compress)/) {
+	$header{'content-encoding'} =~ /^(?:gzip|deflate)$/) {
 	# gzip und compress dekomprimieren --- Holzhammermethode
 	my($tmpfh,$tmpfile);
 	if (eval { require File::Temp; 1 }) {
@@ -402,9 +402,12 @@ sub get_plain {
 		or croak "While closing temporary file $tmpfile: $!";
 	}
 
-	local($/) = undef;
-	open(IN, "zcat $tmpfile |") || croak "Can't uncompress";
-	$content = <IN>;
+	open(IN, "zcat $tmpfile |") || croak "Can't uncompress: $!";
+	$content = '';
+	local($/) = \4096;
+	while(<IN>) {
+	    $content .= $_;
+	}
 	close(IN);
 
 	unlink $tmpfile;
@@ -666,7 +669,7 @@ Slaven Rezic <srezic@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1995,1996,1998,2000,2001,2003,2005,2008 Slaven Rezic. All rights reserved.
+Copyright (c) 1995,1996,1998,2000,2001,2003,2005,2008,2015 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
