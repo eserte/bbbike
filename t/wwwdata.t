@@ -106,6 +106,10 @@ for my $do_accept_gzip (0, 1) {
 	push @ua_defs, {ua => $ua_http, ua_label => 'Http',        content_compare => 1};
 	push @ua_defs, {ua => $ua_http, ua_label => 'Http (3.16)', bbbike_version => 3.16};
     }
+    if (!$do_accept_gzip && eval { require HTTP::Tiny; 1 }) {
+	my $ua_tiny = HTTP::Tiny->new(agent => "bbbike/3.18 (HTTP::Tiny/$HTTP::Tiny::VERSION) ($^O) BBBike-Test/1.0");
+	push @ua_defs, {ua => $ua_tiny, ua_label => 'HTTP::Tiny', content_compare => 1};
+    }
     for my $ua_def (@ua_defs) {
 	run_test_suite(accept_gzip => $do_accept_gzip, %$ua_def);
     }
@@ -204,6 +208,9 @@ sub run_test_suite {
 	    my %ret = Http::get(url => $url, time => $last_modified);
 	    delete $ret{headers}->{'content-encoding'}; # decompression already done
 	    $resp = HTTP::Response->new($ret{error}, undef, HTTP::Headers->new(%{ $ret{headers} || {} }), $ret{content});
+	} elsif ($ua->isa('HTTP::Tiny')) {
+	    my $ret = $ua->get($url, { headers => \%lwp_headers });
+	    $resp = HTTP::Response->new($ret->{status}, $ret->{reason}, HTTP::Headers->new(%{ $ret->{headers} || {} }), $ret->{content});
 	} else {
 	    $resp = $ua->get($url, ($do_accept_gzip ? ('Accept-Encoding' => 'gzip') : ()), %lwp_headers);
 	}
