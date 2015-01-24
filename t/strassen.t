@@ -31,6 +31,8 @@ BEGIN {
     }
 }
 
+sub non_streaming_loop ($);
+
 my $datadir = "$FindBin::RealBin/../data";
 my $doit; # Note that the -doit tests currently fail, because the
           # roundtrip produces correct data which is not exact like
@@ -48,8 +50,9 @@ my $encoding_tests = 10;
 my $multistrassen_tests = 11;
 my $initless_tests = 3;
 my $global_directive_tests = 3;
+my $strict_tests = 12;
 
-plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests;
+plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests + $strict_tests;
 
 goto XXX if $do_xxx;
 
@@ -536,6 +539,85 @@ EOF
     $s->set_global_directive('some' => 'thing', 'else');
     is $s->get_global_directive('some'), 'thing', 'after setting multiple values';
     is_deeply $s->get_global_directives, { some => [qw(thing else)] }, 'get_global_directives';
+}
+
+{ # Strict
+    my $gooddata = <<"EOF";
+Street\tX1,2 3,4
+EOF
+    my $baddata = <<"EOF";
+Street\tX1,2 3,4
+Bad line
+EOF
+    my(undef, $goodfile) = create_temporary_content($gooddata, SUFFIX => '.bbd');
+    my(undef, $badfile) = create_temporary_content($baddata, SUFFIX => '.bbd');
+
+    {
+	my $s = Strassen->new($goodfile, Strict => 1);
+	non_streaming_loop $s;
+	pass 'no errors for good file in strict mode';
+    }
+
+    {
+	my $s = Strassen->new_from_data_string($gooddata, Strict => 1);
+	non_streaming_loop $s;
+	pass 'no errors for good data string in strict mode';
+    }
+
+    Strassen->new_stream($goodfile, Strict => 1)->read_stream(sub {});
+    pass 'no errors for good file in strict mode, using streaming';
+
+    Strassen->new_data_string_stream($gooddata, Strict => 1)->read_stream(sub {});
+    pass 'no errors for good data string in strict mode, using streaming';
+
+    {
+	local $Strassen::STRICT = 1;
+
+	my $s;
+
+	$s = Strassen->new($badfile);
+	eval { non_streaming_loop $s };
+	like $@, qr{ERROR: Probably tab character is missing}, 'strict check with global var (file)';
+
+	eval { Strassen->new_stream($badfile)->read_stream(sub {}) };
+	like $@, qr{ERROR: Probably tab character is missing}, 'strict check with global var (file, streaming)';
+
+	$s = Strassen->new_from_data_string($baddata);
+	eval { non_streaming_loop $s };
+	like $@, qr{ERROR: Probably tab character is missing}, 'strict check with global var (data string)';
+
+	eval { Strassen->new_data_string_stream($baddata)->read_stream(sub {}) };
+	like $@, qr{ERROR: Probably tab character is missing}, 'strict check with global var (data string, streaming)';
+    }
+
+    {
+	local $TODO = 'Strict option is not implemented';
+
+	my $s;
+
+	$s = Strassen->new($badfile, Strict => 1);
+	eval { non_streaming_loop $s };
+	like $@, qr{ERROR: Probably tab character is missing}, 'strict check with option (file)';
+
+	eval { Strassen->new_stream($badfile, Strict => 1)->read_stream(sub {}) };
+	like $@, qr{ERROR: Probably tab character is missing}, 'strict check with option (file, streaming)';
+
+	$s = Strassen->new_from_data_string($baddata, Strict => 1);
+	eval { non_streaming_loop $s };
+	like $@, qr{ERROR: Probably tab character is missing}, 'strict check with option (data string)';
+
+	eval { Strassen->new_data_string_stream($baddata, Strict => 1)->read_stream(sub {}) };
+	like $@, qr{ERROR: Probably tab character is missing}, 'strict check with option (data string, streaming)';
+    }
+}
+
+sub non_streaming_loop ($) {
+    my $s = shift;
+    $s->init;
+    while() {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS] };
+    }
 }
 
 __END__
