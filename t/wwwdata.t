@@ -297,10 +297,6 @@ sub run_test_suite {
 	my $runtime = 0;
 	for my $data_def (@data_defs) {
 	    my $file = $data_def->{file};
-	    local $TODO;
-	    if ($bbbike_version eq '3.16' && $file =~ m{^data/(strassen|landstrassen|landstrassen2)$}) {
-		$TODO = "No correct If-modified-since handling in 3.16 mode for $file";
-	    }
 	    my($resp, undef, $dt) = $basic_tests->("$htmldir/$file", simulate_unmodified => 1);
 	    $runtime += $dt;
 	}
