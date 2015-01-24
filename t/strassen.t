@@ -18,7 +18,7 @@ use Getopt::Long;
 
 use Strassen;
 use BBBikeUtil qw(is_in_path);
-use BBBikeTest qw(get_std_opts $do_xxx eq_or_diff);
+use BBBikeTest qw(get_std_opts $do_xxx eq_or_diff create_temporary_content);
 
 BEGIN {
     if (!eval q{
@@ -357,11 +357,7 @@ EOF
     my $rec = $s->next;
     is($rec->[Strassen::NAME], "\x{20ac}", "Got unicode character");
 
-    my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".bbd",
-				   UNLINK => 1);
-    binmode $tmpfh, ":utf8";
-    print $tmpfh $data or die $!;
-    close $tmpfh or die $!;
+    my($tmpfh,$tmpfile) = create_temporary_content($data, SUFFIX => ".bbd");
 
     my $s2 = Strassen->new($tmpfile);
     my $global_dirs2 = $s2->get_global_directives;
@@ -460,9 +456,7 @@ EOF
     }
 
     {
-	my($tmpfh,$tmpfile) = tempfile(UNLINK => 1);
-	print $tmpfh $data;
-	close $tmpfh or die $!;
+	my($tmpfh,$tmpfile) = create_temporary_content($data);
 	my $s = Strassen->new($tmpfile);
 	my $r = $s->next;
 	is $r->[Strassen::NAME], 'Heinrich-Heine';
