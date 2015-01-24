@@ -44,6 +44,7 @@ BEGIN {
 use Getopt::Long;
 use Image::Info qw(image_info);
 
+use Http;
 use Strassen::Core;
 
 use BBBikeTest qw(check_cgi_testing);
@@ -83,18 +84,29 @@ $ua_lwp->env_proxy;
 
 my $ua_lwp_316 = LWP::UserAgent->new(conn_cache => $conn_cache);
 $ua_lwp_316->parse_head(0);
-$ua_lwp_316->agent('bbbike/3.16 (Http/4.01) BBBike-Test/1.0');
+$ua_lwp_316->agent("bbbike/3.16 (LWP::UserAgent/$LWP::VERSION) ($^O) BBBike-Test/1.0");
 $ua_lwp_316->env_proxy;
+
+my $ua_http = bless {}, 'Http'; # dummy object
+my $ua_http_agent_fmt = "bbbike/%s (Http/$Http::VERSION) ($^O) BBBike-Test/1.0";
 
 my %contents;         # url => [{md5 => ..., ua_label => ..., accept_gzip => ...}, ...]
 my %compress_results; # $accept_gzip => { $content_type => { $got_gzipped => $count } }
 my @bench_results;
 
 for my $do_accept_gzip (0, 1) {
-    for my $ua_def (
-		    {ua => $ua_lwp,     ua_label => 'LWP',        content_compare => 1},
-		    {ua => $ua_lwp_316, ua_label => 'LWP (3.16)', bbbike_version => 3.16},
-		   ) {
+    my @ua_defs = (
+		   {ua => $ua_lwp,     ua_label => 'LWP',        content_compare => 1},
+		   {ua => $ua_lwp_316, ua_label => 'LWP (3.16)', bbbike_version => 3.16},
+		  );
+    if (
+	($Http::http_defaultheader =~ /gzip/ &&  $do_accept_gzip) ||
+	($Http::http_defaultheader !~ /gzip/ && !$do_accept_gzip)
+       ) {
+	push @ua_defs, {ua => $ua_http, ua_label => 'Http',        content_compare => 1};
+	push @ua_defs, {ua => $ua_http, ua_label => 'Http (3.16)', bbbike_version => 3.16};
+    }
+    for my $ua_def (@ua_defs) {
 	run_test_suite(accept_gzip => $do_accept_gzip, %$ua_def);
     }
 }
@@ -158,7 +170,7 @@ sub run_test_suite {
     my $do_accept_gzip  = delete $args{accept_gzip};
     my $ua              = delete $args{ua};
     my $ua_label        = delete $args{ua_label};
-    my $bbbike_version  = delete $args{bbbike_version} || '';
+    my $bbbike_version  = delete $args{bbbike_version} || '3.18';
     my $content_compare = delete $args{content_compare};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
@@ -169,29 +181,38 @@ sub run_test_suite {
 	my $is_historical       = delete $args{is_historical};
 	if (%args) { die "Unhandled arguments: " . join(" ", %args) }
 
-	my @headers;
+	my %lwp_headers;
+	my $last_modified; # seconds since epoch
 	my @expect_status;
 	if ($simulate_unmodified) {
-	    my $resp = $ua->head($url);
-	    my $last_modified = $resp->last_modified;
+	    my $resp = $ua_lwp->head($url);
+	    $last_modified = $resp->last_modified;
 	    if (!$last_modified) {
 		diag "Cannot get last-modified for $url, expect failures...";
 	    }
-	    push @headers, 'If-Modified-Since' => time2str($last_modified);
 	    @expect_status = (304);
 	} else {
-	    push @headers, 'If-Modified-Since' => time2str(0);
+	    $last_modified = 0;
 	    @expect_status = $is_historical ? (200, 304) : (200);
 	}
+	$lwp_headers{'If-Modified-Since'} = time2str($last_modified);
 
 	my $t0 = Time::HiRes::time;
-	my $resp = $ua->get($url, ($do_accept_gzip ? ('Accept-Encoding' => 'gzip') : ()), @headers);
+	my $resp;
+	if ($ua->isa('Http')) {
+	    local $Http::user_agent = sprintf $ua_http_agent_fmt, $bbbike_version;
+	    my %ret = Http::get(url => $url, time => $last_modified);
+	    delete $ret{headers}->{'content-encoding'}; # decompression already done
+	    $resp = HTTP::Response->new($ret{error}, undef, HTTP::Headers->new(%{ $ret{headers} || {} }), $ret{content});
+	} else {
+	    $resp = $ua->get($url, ($do_accept_gzip ? ('Accept-Encoding' => 'gzip') : ()), %lwp_headers);
+	}
 	my $dt = Time::HiRes::time - $t0;
 
 	my $got_gzipped = ($resp->header('content-encoding')||'') =~ m{\bgzip\b} ? 1 : 0;
 
 	ok((grep { $resp->code == $_ } @expect_status),
-	   "Expected status code for GET $url with simulated ua $ua_label " .
+	   "Expected status code (@expect_status) for GET $url with simulated ua $ua_label " .
 	   ($do_accept_gzip ? "(accept gzipped)" : "(accept uncompressed)") . " " .
 	   ($got_gzipped    ? "(got gzipped)"    : "(got uncompressed)")
 	  )
