@@ -44,6 +44,7 @@ BEGIN {
 use Getopt::Long;
 use Image::Info qw(image_info);
 
+use BBBikeUtil qw(bbbike_root);
 use Http;
 use Strassen::Core;
 
@@ -74,6 +75,8 @@ GetOptions("htmldir=s" => \$htmldir,
 
 my $datadir = "$htmldir/data";
 
+my $is_local_server = $htmldir =~ m{^https?://localhost[:/]};
+
 # Setup user agents
 my $conn_cache = LWP::ConnCache->new(total_capacity => 10);
 
@@ -93,6 +96,7 @@ my $ua_http_agent_fmt = "bbbike/%s (Http/$Http::VERSION) ($^O) BBBike-Test/1.0";
 my %contents;         # url => [{md5 => ..., ua_label => ..., accept_gzip => ...}, ...]
 my %compress_results; # $accept_gzip => { $content_type => { $got_gzipped => $count } }
 my @bench_results;
+my %done_filesystem_comparison;
 
 for my $do_accept_gzip (0, 1) {
     my @ua_defs = (
@@ -233,8 +237,24 @@ sub run_test_suite {
 	    if (!$allow_empty_content) {
 		ok(length $content, "Non-empty content");
 	    }
+
+	    # Store digest for later comparisons
 	    if ($content_compare) {
 		push @{ $contents{$url} }, {accept_gzip => $do_accept_gzip, ua_label => $ua_label, md5 => Digest::MD5::md5_hex($content) }; # remember for later checks
+	    }
+
+	    # Compare with local file
+	    if ($is_local_server && $content_compare && !$done_filesystem_comparison{$url}) {
+		my $bbbike_root = bbbike_root();
+		(my $local_file = $url) =~ s{.*/(data|html)/}{$bbbike_root/$1/};
+	    SKIP: {
+		    open my $fh, $local_file
+			or skip "Cannot get local file '$local_file': $!";
+		    local $/;
+		    my $local_contents = <$fh>;
+		    ok $content eq $local_contents, "Contents in local filesystem and from remote match for $url";
+		}
+		$done_filesystem_comparison{$url} = 1;
 	    }
 	}
 
