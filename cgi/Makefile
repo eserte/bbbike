@@ -8,6 +8,7 @@ ROOT_URL?=		/bbbike
 # NOTE: currently everything else than "cgi" is not recommended and
 #       unlikely to run stable.
 CGI_TYPE?=		cgi
+LOCATION_STYLE?=	bbbike
 REALPATH_CMD=		perl -MCwd=realpath -le 'print realpath shift'
 .ifndef ROOT_DIR
 ROOT_DIR!=		$(REALPATH_CMD) ..
@@ -39,6 +40,9 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	      --define CGI_SCRIPTS="$(CGI_SCRIPTS)" \
 	      --define DEVEL_CGI_SCRIPTS="$(DEVEL_CGI_SCRIPTS)" \
 	      --define CGI_TYPE="$(CGI_TYPE)" \
+	      --define LOCATION_STYLE="$(LOCATION_STYLE)" \
+	      --define OS_STYLE="$(OS_STYLE)" \
+	      --define FS_STYLE="$(FS_STYLE)" \
 	      httpd.conf.tpl > $(HTTPD_CONF)~
 	chmod 644 $(HTTPD_CONF)~
 	mv $(HTTPD_CONF)~ $(HTTPD_CONF)
@@ -68,6 +72,18 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	    echo "to your Apache\'s httpd.conf and restart the Apache."; \
 	fi
 	@echo
+
+# Create a stub suitable for VirtualHost operation --- missing are the
+# VirtualHost element itself, the ServerName/ServerAlias/ServerAdmin
+# definitions. Need to be called with OS_STYLE,
+# or maybe also with FS_STYLE and ROOT_DIR:
+#
+#    make vhost-httpd.conf OS_STYLE=freebsd
+#    make vhost-httpd.conf OS_STYLE=debian ROOT_DIR=/root/work/bbbike-webserver FS_STYLE=live
+#
+.PHONY: vhost-httpd.conf
+vhost-httpd.conf:
+	${MAKE} /tmp/bbbike-like-live.conf HTTPD_CONF=/tmp/bbbike-like-live.conf LOCATION_STYLE=vhost
 
 alt-httpd.conf:	httpd.conf.st
 	@perl -I../lib -MText::ScriptTemplate -MCwd -MFile::Spec -e '$$st=Text::ScriptTemplate->new;$$st->load("httpd.conf.st"); chdir ".." or die; $$st->setq(rootdir=>File::Spec->rel2abs(getcwd));print $$st->fill'
