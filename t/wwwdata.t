@@ -297,7 +297,12 @@ sub run_test_suite {
 	my $runtime = 0;
 	for my $data_def (@data_defs) {
 	    my $file = $data_def->{file};
-	    my($resp, undef, $dt) = $basic_tests->("$htmldir/$file", simulate_unmodified => 1);
+	    my($resp, undef, $dt);
+	    {
+		# XXX Temporary - after first reload these tests should pass
+		local $TODO = "Needs a newer and reloaded BBBikeDataDownloadCompat" if $bbbike_version eq '3.16' && $file =~ m{/(strassen|landstrassen|landstrassen2)$};
+		($resp, undef, $dt) = $basic_tests->("$htmldir/$file", simulate_unmodified => 1);
+	    }
 	    $runtime += $dt;
 	}
 	push @bench_results, "Check all data files (ua=$ua_label, gzip=$do_accept_gzip): " . sprintf '%.6fs', $runtime;
