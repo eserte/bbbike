@@ -51,7 +51,8 @@ EXTRA_MISCSRC_FILES=	bbd2esri \
 			winter_optimization.pl \
 			FixRemoteAddrHandler.pm \
 			bbbike_cgi_clean_expired_cache.pl \
-			cron-wrapper
+			cron-wrapper \
+			update-modperl-reload-touchfile.pl
 EXTRA_MISC_FILES=	gpx.xsd kml21.xsd bbbikecgires.kwalify bbbikecgires.rnc
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/bbbike-opensearch.tpl.src \
@@ -334,6 +335,8 @@ post-rsync-bbbike:
 # rsync'ed by .rsync_exclude file
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
 	   "touch ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/.keep_me"
+	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
+	   "${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/miscsrc/update-modperl-reload-touchfile.pl --touch"
 
 post-rsync-bbbike-data:
 .ifdef TARGET

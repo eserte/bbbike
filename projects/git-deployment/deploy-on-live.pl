@@ -247,6 +247,9 @@ if ($do_switch) {
 	    print STDERR "+ @git_tag_delete_cmd\n";
 	    run \@git_tag_delete_cmd; # don't die on error, may happen on 1st time deployment
 	}
+
+	# only report, don't run with --touch option
+	system "$live_dir/BBBike/miscsrc/update-modperl-reload-touchfile.pl";
     }
 
 } else {
