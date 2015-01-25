@@ -174,7 +174,7 @@
         PerlSetVar ReloadTouchFile "[% BBBIKE_ROOT_DIR %]/tmp/reload_modules"
 
         PerlModule BBBikeDataDownloadCompat
-        <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2)$">
+        <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2|label)$">
             SetHandler perl-script
             PerlResponseHandler BBBikeDataDownloadCompat->handler
         </LocationMatch>
