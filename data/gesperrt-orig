@@ -324,7 +324,10 @@ Saltykowstr.	1 12726,7887 12865,7923
 #: last_checked: 2014-08-07
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875 6372,2856
-Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
+Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
+#: XXX Einbahnstraßenrichtung umgedreht, bleibt das permanent?
+#: last_checked: 2015-01-25
+Leipziger Platz	1 8596,11508 8592,11541 8623,11580 8698,11589 8736,11557 8740,11524
 Crusemarkstr.	1 10825,18634 10712,18975
 Kavalierstr.	1 10625,18831 10721,18575
 # REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
@@ -853,6 +856,8 @@ Pitschener Str.	1s:q3 21769,-432 21719,-397 21637,-381
 Herrfurthstr.	1s:q3 11979,8014 11833,7980
 Dankratstr.	1s:q3 21105,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
+#: XXX demnächst Mercedes-Benz Arena
+#: next_check: 2015-07-01
 Helen-Ernst-Str., hinter der o2-Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
 Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13909,3845
 Havermannstr.	1s:q3 13803,4932 13892,4955

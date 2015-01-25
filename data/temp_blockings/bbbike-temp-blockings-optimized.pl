@@ -1803,20 +1803,7 @@ userdel	2::inwork -3197,11554 -3075,11510
 '
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'Torgauer Str.: in Höhe Cheruskerpark wegen Bauarbeiten gesperrt',
-         'from' => undef,
-         'id' => 2645,
-         'data' => '#: next_check_id: TORGAUER-2014
-#: by: wosch
-#: confirmed_by: srt
-#: last_checked: 2014-12-14
-	2::inwork 7402,8208 7374,8211 7250,8223
-	q3::inwork 7402,8208 7446,8200
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

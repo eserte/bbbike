@@ -23560,14 +23560,11 @@ userdel	2::inwork 1232,15804 1238,15705
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1422208778, # undef, # XXX
        text  => 'Torgauer Str.: in Höhe Cheruskerpark wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: TORGAUER-2014
-#: by: wosch
-#: confirmed_by: srt
-#: last_checked: 2014-12-14
+# REMOVED --- #: next_check_id: TORGAUER-2014 --- #: by: wosch --- #: confirmed_by: srt --- #: last_checked: 2014-12-14
 	2::inwork 7402,8208 7374,8211 7250,8223
 	q3::inwork 7402,8208 7446,8200
 EOF
