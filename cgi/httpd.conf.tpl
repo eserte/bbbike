@@ -107,6 +107,17 @@ RedirectMatch ^[% ROOT_URL %]/?$ [% ROOT_URL %]/cgi/bbbike.cgi
         use lib "[% ROOT_DIR %]";
     </Perl>
 
+    PerlModule Apache2::Reload
+    PerlInitHandler Apache2::Reload
+    PerlSetVar ReloadDirectories "[% ROOT_DIR %]"
+    ## Apache2::Reload's module_to_package translation is suboptimal
+    ## and leads to strange prototype errors, so it's best to turn
+    ## the following switch on
+    PerlSetVar ReloadByModuleName On
+    ## very verbose, reports on every mtime check of the touch file
+    #PerlSetVar ReloadDebug On
+    PerlSetVar ReloadTouchFile "[% ROOT_DIR %]/tmp/reload_modules"
+
     PerlModule BBBikeDataDownloadCompat
     <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2)$">
         SetHandler perl-script
