@@ -74,7 +74,12 @@ if ($need_touch) {
 	    or my_die "ERROR: Can't change mtime of '$reload_touchfile': $!";
 	print colored ['yellow on_black'], 'reload touchfile touched, modperl will reload modules.', "\n";
     } else {
-	print colored ['red on_black'], 'modperl modules need a reload --- please re-run with --touch option.', "\n";
+	print colored ['red on_black'], 'modperl modules need a reload --- please re-run with --touch option:', "\n";
+	print <<EOF;
+
+    $^X $0 --touch
+
+EOF
     }
 } else {
     print colored ['green on_black'], 'modperl modules are up-to-date.', "\n";
