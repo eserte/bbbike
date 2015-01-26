@@ -1862,8 +1862,8 @@ userdel	q4::inwork 5635,7660 5636,7540
        undef,
        {
          'source_id' => 'IM_023529',
-         'until' => 1422284400,
-         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 26.01.2015 16:00 Uhr',
+         'until' => 1422370800,
+         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 27.01.2015 16:00 Uhr',
          'from' => 1416813420,
          'id' => 2666,
          'data' => 'userdel	q4::inwork 9373,12197 9369,12253 9358,12351
