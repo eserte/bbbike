@@ -1416,6 +1416,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'from' => 1417820400,
          'id' => 2469,
          'data' => '#: XXX bleibt der Sterndamm auch über dem 30. Januar hinaus gesperrt?
+#: XXX am 27. Januar wieder bei Fritz neu erwähnt
 #: next_check: 2015-01-30
 userdel	1::inwork 17886,5587 17736,5441
 ',
@@ -1565,7 +1566,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'from' => undef,
          'id' => 2557,
          'data' => '#: XXX wann ist die Baustelle fertig?
-#: last_checked: 2015-01-16
+#: last_checked: 2015-01-27
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 ',
@@ -1712,13 +1713,14 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        {
          'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
          'until' => 1422658800,
-         'text' => 'Gounodstr.: Bauarbeiten zwischen von Herbert-Baum-Str. bis Borodinstr., ab Ende September 2014',
+         'text' => 'Gounodstr./Mahlerstr.: Bauarbeiten, auf Gehweg ausweichen',
          'from' => 1411941600,
          'id' => 2628,
          'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
-#: last_checked: 2015-01-16
-#: check_frequency: 7d
-userdel	q4::inwork 13645,15609 13739,15643 13939,15723
+#: last_checked: 2015-01-27
+#: check_frequency: 10d
+userdel	q4::inwork 13645,15609 13739,15643
+userdel	q3::inwork 13739,15643 13776,15546
 ',
          'type' => 'handicap'
        },
@@ -1862,8 +1864,8 @@ userdel	q4::inwork 5635,7660 5636,7540
        undef,
        {
          'source_id' => 'IM_023529',
-         'until' => 1422370800,
-         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 27.01.2015 16:00 Uhr',
+         'until' => 1422975600,
+         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 03.02.2015 16:00 Uhr',
          'from' => 1416813420,
          'id' => 2666,
          'data' => 'userdel	q4::inwork 9373,12197 9369,12253 9358,12351

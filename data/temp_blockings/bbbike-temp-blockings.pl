@@ -21831,6 +21831,7 @@ EOF
        source_id => 'IM_020145',
        data  => <<EOF,
 #: XXX bleibt der Sterndamm auch über dem 30. Januar hinaus gesperrt?
+#: XXX am 27. Januar wieder bei Fritz neu erwähnt
 #: next_check: 2015-01-30
 userdel	1::inwork 17886,5587 17736,5441
 EOF
@@ -22687,7 +22688,7 @@ EOF
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
 #: XXX wann ist die Baustelle fertig?
-#: last_checked: 2015-01-16
+#: last_checked: 2015-01-27
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 EOF
@@ -23395,14 +23396,15 @@ EOF
      },
      { from  => 1411941600, # 2014-09-29 00:00
        until => $isodate2epoch->("2015-01-31 00:00:00"), # 1420066799, # 2014-12-31 23:59
-       text  => 'Gounodstr.: Bauarbeiten zwischen von Herbert-Baum-Str. bis Borodinstr., ab Ende September 2014',
+       text  => 'Gounodstr./Mahlerstr.: Bauarbeiten, auf Gehweg ausweichen',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
-#: last_checked: 2015-01-16
-#: check_frequency: 7d
-userdel	q4::inwork 13645,15609 13739,15643 13939,15723
+#: last_checked: 2015-01-27
+#: check_frequency: 10d
+userdel	q4::inwork 13645,15609 13739,15643
+userdel	q3::inwork 13739,15643 13776,15546
 EOF
      },
      { from  => 1411250400, # 2014-09-21 00:00
@@ -23749,8 +23751,8 @@ userdel	q4::inwork 20559,14847 20480,14874
 EOF
      },
      { from  => 1416813420, # 2014-11-24 08:17
-       until => $isodate2epoch->("2015-01-27 16:00:00"), # 1418655600, # 2014-12-15 16:00
-       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 27.01.2015 16:00 Uhr',
+       until => $isodate2epoch->("2015-02-03 16:00:00"), # 1418655600, # 2014-12-15 16:00
+       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 03.02.2015 16:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_023529',
        data  => <<EOF,

@@ -2747,10 +2747,7 @@ Groﬂe Hamburger Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3 10077,13100 10018,13
 # REMOVED (Weg ist offen) --- #: next_check_id: HELLWEG-2014 --- #: XXX: vom Hellweg-Parkplatz kann man einige Meter Richtung Norden passieren --- #: XXX: "inwork" ist ein Euphemismus --- es sind keinerlei Anzeichen von Bauarbeiten zu sehen --- #: last_checked: 2014-06-27 --- #: check_frequency: 100d --- (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Zugang durch Bauz‰une versperrt	2::inwork 8243,9766 8233,9863 8208,9856 8206,9867 8289,9988
 # REMOVED (realisiert) --- #: next_check_id: GLEISDREIECKBUELOW-2014 --- #: last_checked: 2014-02-28 --- #: next_check: 2014-03-14 --- Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,10098 7928,10094 8011,10085 8013,10055
 # REMOVED (offen) --- #: last_checked: 2014-10-05 --- #: check_frequency: 60d --- Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17368,12365
-# 
-#: last_checked: 2014-12-13
-#: check_frequency: 30d
-(Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
+# REMOVED (offen) --- #: last_checked: 2014-12-13 --- #: check_frequency: 30d --- (Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
 # 
 #: last_checked: 2013-10-15
 #: next_check: 2015-08-30
