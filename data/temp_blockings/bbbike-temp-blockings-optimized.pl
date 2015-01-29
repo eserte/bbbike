@@ -1237,28 +1237,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'id' => 2410
        },
        undef,
-       {
-         'source_id' => 'IM_019489',
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'periodic' => 1,
-         'until' => 1422478800,
-         'from' => 1420534800,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              1
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 07.01.2015 bis 28.01.2015',
-         'id' => 2412,
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
