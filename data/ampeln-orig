@@ -697,6 +697,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9580,12581
 	X 10946,12241
 	X 12295,12197
+#: off: night (seen 2015-01-29 00:45)
 	X 12822,12067
 	X 12180,11657
 	X 14639,11512
@@ -1171,7 +1172,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 15080,13117
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
-#: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:50)
+#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55)
 	X 14134,11272
 	X 11785,13625
 	X 10897,17274
@@ -2567,7 +2568,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2015-01-23 vvv
+#: last_checked: 2015-01-29 vvv
 #: next_check: 2015-05-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926

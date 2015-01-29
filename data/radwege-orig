@@ -602,13 +602,14 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14193,
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv
 #: source_id: IM_020408 vvv
 #: source_id: IM_021506 vvv
-#: last_checked: 2014-03-07 vvv
-#: next_check: 2016-09-30 vvv
+#: last_checked: 2015-01-28 vvv
+#: check_frequency: 14d vvv
+#: XXX die neue östliche Fahrbahn ist fast fertig, wahrscheinlich wird bald verschwenkt, dann wird die Radwegsituation anders aussehen (wahrscheinlich Radspur Richtung Süden, gemeinsamer Rad/Gehweg Richtung Norden)
 #: XXX während der Bauarbeiten ein Radstreifen, wie wird die Situation danach aussehen?
 	RW3?; 7979,13733 7943,13794 7589,14359
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen?
 gemeinsamer Rad- und Gehweg	RW2; 7589,14359 7943,13794 7979,13733
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^
@@ -1178,9 +1179,9 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW2;RW 6523,8567 6575,8469
 	RW2;RW2 6020,12492 6086,12446 6178,12387
 asphaltiert	RW1; 6020,12492 6141,12682
-	RW; 6141,12682 6020,12492
-	RW;RW1 6141,12682 6150,12875 6157,12933 6164,12980 6183,13083
-	RW1;RW1 6183,13083 6214,13225
+asphaltiert	RW1; 6164,12980 6157,12933 6150,12875 6141,12682 6020,12492
+	RW1; 6141,12682 6150,12875 6157,12933 6164,12980
+	RW1;RW1 6164,12980 6183,13083 6214,13225
 	RW2;RW1 5902,12568 5940,12542 6020,12492
 	RW1;RW2 5316,12928 5350,12906
 	RW1;RW1 5350,12906 5442,12852 5601,12756 5734,12673 5869,12591
@@ -1373,7 +1374,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2014-12-10
+#: last_checked: 2015-01-29
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1624,7 +1625,7 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html
 #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder
 #: XXX kommen die Radwegschilder noch?
-#: last_checked: 2014-12-25
+#: last_checked: 2015-01-28
 	RW3; 8098,13419 8293,13519
 	RW2; 8293,13519 8337,13541 8362,13554
 	RW3; 8362,13554 8450,13599
@@ -4570,6 +4571,8 @@ Gehweg für Radfahrer frei	RW1; 22162,1067 22092,999 22044,1018
 Gehweg für Radfahrer frei	RW1; 16855,25792 16635,26118 16580,26154
 	RW6;RW6 19406,7886 19550,7780 19500,7719
 #: XXX zurzeit nur Markierungen, noch keine Schilder
-#: last_checked: 2014-11-26
+#: last_checked: 2015-01-28
 	RW5;RW5 6105,13328 6115,13328 6228,13324
-	RW3;RW3 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328
+	RW3;RW3 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330
+Busspur ist immer gültig	RW5; 5956,13330 6011,13330 6105,13328
+	RW3; 6105,13328 6011,13330 5956,13330
