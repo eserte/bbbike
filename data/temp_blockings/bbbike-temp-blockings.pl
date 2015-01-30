@@ -21830,9 +21830,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_020145',
        data  => <<EOF,
-#: XXX bleibt der Sterndamm auch über dem 30. Januar hinaus gesperrt?
-#: XXX am 27. Januar wieder bei Fritz neu erwähnt
-#: next_check: 2015-01-30
+#: XXX bleibt der Sterndamm auch über dem 28. Februar hinaus gesperrt?
+#: XXX laut rbbtext und fritz bis 28.2.
+#: next_check: 2015-02-28
 userdel	1::inwork 17886,5587 17736,5441
 EOF
      },

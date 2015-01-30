@@ -227,12 +227,16 @@ Turmstr.: Radspuren für 2013 geplant	? 5248,13434 5368,13406 5434,13398
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20140312.0920.395294.html (Bauarbeiten)
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20150130.1250.401028.html (erster Abschnitt fertigestellt)
 #: osm_watch: way id="30949821" version="19"
 #: osm_watch: way id="122121575" version="11"
 #: osm_watch: way id="30218983" version="19"
 #: last_checked: 2013-09-19
-#: next_check: 2015-04-01
-Gartenfelder Str.: Radspur wird gebaut, Realisierung bis April 2015	?::inwork; -532,15184 -569,15167 -707,15108 -834,15053 -945,14999 -1099,14925 -1271,14843 -1307,14801 -1336,14786
+#: XXX ist dieser Abschnitt schon fertig?
+Gartenfelder Str.: Radspur wird gebaut	?::inwork; -532,15184 -569,15167 -707,15108 -834,15053
+#: last_checked: 2013-09-19
+#: next_check: 2015-04-15
+Gartenfelder Str.: Radspur wird gebaut, Realisierung bis April 2015	?::inwork; -834,15053 -945,14999 -1099,14925 -1271,14843 -1307,14801 -1336,14786
 #: by: ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
@@ -1192,6 +1196,10 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: source_id: IM_023816
+#: XXX Bauarbeiten bis 06.03.2016 (laut anderen Quellen nur bis 6.3.2015)
+Baerwaldstr.: gibt es für Radfahrer Veränderungen?	? 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
 #: XXX Sperrung bis Oktober 2015
