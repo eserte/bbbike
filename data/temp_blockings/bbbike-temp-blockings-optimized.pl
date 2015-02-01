@@ -1888,6 +1888,18 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
 userdel	2::inwork 7772,4306 7795,4242 8106,3410
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php',
+         'until' => 1443650400,
+         'text' => 'Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Februar 2015 bis voraussichtlich Oktober 2015',
+         'from' => 1422745200,
+         'id' => 2677,
+         'data' => '#: XXX vor Ort anschauen! ggfs. nach gesperrt-orig übetragen
+	2::inwork 7753,14528 7695,14545 7527,14644 7486,14652
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -23856,4 +23856,14 @@ userdel auto	3 8204,12816 8206,12757 8207,12606
 userdel auto	3 8122,12603 8120,12756 8124,12840
 EOF
      },
+     { from  => $isodate2epoch->("2015-02-01 00:00:00"),
+       until => $isodate2epoch->("2015-10-01 00:00:00"),
+       text  => 'Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Februar 2015 bis voraussichtlich Oktober 2015',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php',
+       data  => <<EOF,
+#: XXX vor Ort anschauen! ggfs. nach gesperrt-orig übetragen
+	2::inwork 7753,14528 7695,14545 7527,14644 7486,14652
+EOF
+     },
     );
