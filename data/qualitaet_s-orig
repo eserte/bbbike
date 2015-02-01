@@ -904,7 +904,7 @@ südlicher Uferweg am Schlachtensee: Feinschotter	Q1 -3384,3212 -3341,3122 -3273,
 Weg am Teufelssee: Waldweg	Q1 -886,9447 -942,9251 -1047,9123
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2- 17299,8140 17299,8108 17297,7752
 Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0- 17297,7752 17301,7645 17295,7330
-Schwarzer Weg (Oberschöneweide): unbefestiger Weg, teilweise recht schmal	Q2 17295,7330 17296,7156
+Schwarzer Weg (Oberschöneweide): unbefestiger Weg, teilweise recht schmal	Q2 17295,7330 17295,7323 17297,7196 17286,7173
 (Wilhelmstrand, Weg 1): unbefestigter Weg	Q2 17059,8097 17299,8108
 Möllhausenufer: Kopfsteinpflaster	Q2 23295,1145 23408,1170 23520,1194 23608,1210
 Möllhausenufer: asphaltiert	Q0 23608,1210 23747,1243
@@ -1742,7 +1742,7 @@ Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
 Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17050,7687 17043,7617
 Nalepastr.: fester enger Sandweg	Q2 17043,7512 17043,7617
 Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17043,7512 17135,7377 17211,7265
-Nalepastr.: sehr guter Asphalt	Q0 17211,7265 17296,7156 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
+Nalepastr.: sehr guter Asphalt	Q0 17211,7265 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336
 Ernst-Grube-Str.: Asphalt mit Schäden	Q1 21363,5336 21362,5289 21345,5157 21343,5140 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21300,4837 21264,4809 21332,4655
@@ -1847,8 +1847,8 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 Färberstr.: Beton	Q0- 21607,4850 21649,4946
 Färberstr. - Uferweg: wassergebundener Belag	Q1- 21662,4974 21665,5035 21696,5053
 Färberstr. - Uferweg: wassergebundener Belag	Q1 21649,4946 21662,4974 21740,5004
-Glanzstr.: Asphalt	Q0 16323,6998 16430,6880 16588,6724
-Rodelbergweg: Asphalt	Q0 16430,6880 16498,6944 16568,7009 16615,7062
+Glanzstr.: Asphalt	Q0 16328,7005 16433,6892 16588,6724
+Rodelbergweg: Asphalt	Q0 16433,6892 16494,6948 16563,7012 16615,7062
 Heinrich-Lassen-Park: glatte Pflasterung	Q0 6664,8787 6705,8730
 Heinrich-Lassen-Park: wassergebundener Belag	Q1- 6705,8730 6740,8682 6815,8691 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
@@ -3424,7 +3424,7 @@ Mandelstr.: Beton	Q1 12979,15822 12911,15865
 (Eichbuschallee - Plänterwald): Waldweg/Schotter	Q2+ 16136,7886 16534,8182
 Lakegrund: Beton	Q0- 16406,7430 16368,7425 16195,7398
 Eschenbachstr.: Kopfsteinpflaster	Q2 16290,7160 16375,7070
-Stormstr. (Baumschulenweg): Kopfsteinpflaster	Q2 16323,6998 16234,7100
+Stormstr. (Baumschulenweg): Kopfsteinpflaster	Q2 16328,7005 16234,7100
 Schöntaler Weg: Asphalt	Q0 16089,7041 15988,7129
 Marientaler Str.: schlechtes Kopfsteinpflaster	Q3 16273,6609 16351,6678 16416,6741
 Hohenbirker Weg: Beton	Q0 16192,6503 16280,6601
@@ -15149,9 +15149,9 @@ Am Seeschloß: Asphalt	Q0 4757,23184 4750,23211 4713,23254
 # 
 #: by: coco (taschkent): vvv
 #: confirmed_by: srt
-Scheiblerstr.: mäßiges Kopfsteinpflaster	Q2 16375,7070 16498,6944
+Scheiblerstr.: mäßiges Kopfsteinpflaster	Q2 16375,7070 16494,6948
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
-Scheiblerstr.: asphaltiert	Q0 16498,6944 16630,6800
+Scheiblerstr.: asphaltiert	Q0 16494,6948 16630,6800
 #: by ^^^
 # 
 #: by: Igor Smikalla: vvv

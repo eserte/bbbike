@@ -717,6 +717,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 15553,7408
 	X 15724,6229
 	X 15058,6784
+#: XXX_prog für Radfahrer auf dem Radweg in Richtung Südwesten eigentlich nicht relevant (keine Haltelinie, keine Extra-Ampel)
 	F 16274,6929
 #: note: Anforderungsampel
 	F 16058,6629
@@ -2731,10 +2732,25 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023548 (bis Ende Juni 2016) vvv
-#: last_checked: 2015-01-04 vvv
+#: last_checked: 2015-02-01 vvv
 #: check_frequency: 90d vvv
 	F 17568,7753
 	F 17769,7465
+#: check_frequency ^^^
+#: last_checked ^^^
+#: source_id ^^^
+#: by: ^^^
+#: XXX_prog ^^^
+#: note ^^^
+# 
+#: note: Anforderungsampel vvv
+#: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
+#: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
+#: last_checked: 2015-02-01 vvv
+#: check_frequency: 90d vvv
+	F 16886,6665
+	F 16646,6925
 #: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -2876,7 +2892,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust?
 #: source_id: IM_023940
-#: last_checked: 2015-01-21
+#: last_checked: 2015-02-01
 #: next_check: 2015-06-30 (Ende laut VMZ)
 	X::inwork 14018,9118
 ################################################################################

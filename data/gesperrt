@@ -1139,11 +1139,11 @@ Straßenbahnhaltestelle	3nocross::ignrte 9225,13389 9293,13366 9415,13315
 Oranienburger Str. -> Linienstr.: Straßenbahnhaltestelle	3::igndisp 9225,13389 9293,13366 9312,13388
 Linienstr. -> Oranienburger Str.: Straßenbahnhaltestelle	3::igndisp 9312,13388 9293,13366 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
-Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16568,7009
+Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16646,6925 16563,7012
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16720,6845 16677,6892 16630,6800
-Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16677,6892 16568,7009
-Mittelstreifen	3nocross::ignrte 17290,6228 17216,6308 16843,6712
-Rixdorfer Str. -> Schnellerstr.: Mittelstreifen	3::igndisp 17160,6239 17216,6308 16843,6712
+Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16677,6892 16646,6925
+Mittelstreifen	3nocross::ignrte 17290,6228 17216,6308 16886,6665 16843,6712
+Rixdorfer Str. -> Schnellerstr.: Mittelstreifen	3::igndisp 17160,6239 17216,6308 16886,6665
 Schnellerstr. -> Rixdorfer Str.: Mittelstreifen	3::igndisp 17290,6228 17216,6308 17160,6239
 Straßenbahntrasse	3nocross::ignrte 23895,15450 23913,15333 23933,15209 23952,15086
 Stendaler Str. -> Jerichower Str.: Straßenbahntrasse	3::igndisp 23895,15450 23913,15333 23960,15340
@@ -2354,6 +2354,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+enges Drängelgitter	BNP:5:0:trailer=no 17295,7323
 Drängelgitter	BNP:3:66:trailer=no -6276,13469
 Schranke, eventuell auf Gehweg umfahren	BNP:3:-131:trailer=5 -1291,12098
 Schranke, eventuell auf Gehweg umfahren	BNP:3:-169:trailer=5 -1390,11880
