@@ -1829,16 +1829,7 @@ userdel	q4::inwork 5635,7660 5636,7540
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_023529',
-         'until' => 1422975600,
-         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn gesperrt, 25.11.2014 08:17 Uhr bis 03.02.2015 16:00 Uhr',
-         'from' => 1416813420,
-         'id' => 2666,
-         'data' => 'userdel	q4::inwork 9373,12197 9369,12253 9358,12351
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -1847,7 +1838,7 @@ userdel	q4::inwork 5635,7660 5636,7540
          'from' => undef,
          'id' => 2669,
          'data' => '#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
-#: last_checked: 2015-01-13
+#: last_checked: 2015-02-03
 userdel	2::inwork 10308,11833 10374,11734
 ',
          'type' => 'gesperrt'

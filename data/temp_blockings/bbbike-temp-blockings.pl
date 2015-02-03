@@ -23780,7 +23780,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
-#: last_checked: 2015-01-13
+#: last_checked: 2015-02-03
 userdel	2::inwork 10308,11833 10374,11734
 EOF
      },
