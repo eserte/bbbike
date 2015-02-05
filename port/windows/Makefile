@@ -55,6 +55,6 @@ make-gpsbabel-dist:
 	[ -d ../../../../bbbikewindist ]
 	[ -d ${GPSBABEL_SRC} ]
 	mkdir -p ${GPSBABEL_DEST}
-	cp -pn ${GPSBABEL_SRC}/gpsbabel.exe ${GPSBABEL_DEST}
-	cp -pn ${GPSBABEL_SRC}/libexpat.dll ${GPSBABEL_DEST}
-	cp -pn ${GPSBABEL_SRC}/COPYING ${GPSBABEL_DEST}
+	cp --preserve=mode,timestamps -n ${GPSBABEL_SRC}/gpsbabel.exe ${GPSBABEL_DEST}
+	cp --preserve=mode,timestamps -n ${GPSBABEL_SRC}/libexpat.dll ${GPSBABEL_DEST}
+	cp --preserve=mode,timestamps -n ${GPSBABEL_SRC}/COPYING ${GPSBABEL_DEST}
