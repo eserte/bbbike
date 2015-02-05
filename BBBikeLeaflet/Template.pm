@@ -35,6 +35,7 @@ sub new {
     my $geojsonp_url             = delete $args{geojsonp_url};
     my $show_feature_list        = delete $args{show_feature_list};
     my $root_url                 = delete $args{root_url};
+    my $title_html               = delete $args{title_html};
 
     die 'Unhandled arguments: ' . join(', ', keys %args) if %args;
 
@@ -55,6 +56,7 @@ sub new {
 	   geojsonp_url             => $geojsonp_url,
 	   show_feature_list        => $show_feature_list,
 	   root_url                 => $root_url,
+	   title_html               => $title_html,
 	  }, $class;
 }
 
@@ -72,6 +74,7 @@ sub process {
     my $geojsonp_url             = $self->{geojsonp_url};
     my $show_feature_list        = $self->{show_feature_list};
     my $root_url                 = $self->{root_url};
+    my $title_html               = $self->{title_html};
 
     my $use_old_url_layout = $self->{use_old_url_layout};
     my($bbbike_htmlurl, $bbbike_imagesurl);
@@ -133,6 +136,10 @@ sub process {
 
 	if ($leaflet_ver && m{<(?:link|script ).*(?:/leaflet-\d+\.\d+\.\d+/)}) {
 	    s{/leaflet-\d+\.\d+\.\d+/}{/leaflet-$leaflet_ver/};
+	}
+
+	if (defined $title_html && m{<title>.*?</title>}) {
+	    s{(<title>).*?(</title>)}{$1$title_html$2};
 	}
 
 	if (m{\Q<!-- INSERT JSONP HERE -->}) {

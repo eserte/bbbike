@@ -28,17 +28,25 @@ my $geojson_file;
 my $geojsonp_url;
 my $show_feature_list = 1;
 my $leaflet_ver;
+my $title;
 GetOptions(
 	   'rooturl=s'              => \$root_url,
 	   'geojson|geojson-file=s' => \$geojson_file,
 	   'geojsonp-url=s'         => \$geojsonp_url,
 	   'show-feature-list!'     => \$show_feature_list,
 	   'leafletver=s'           => \$leaflet_ver,
+	   'title=s'                => \$title,
 	  )
-    or die "usage: $0 [-rooturl ...] [-geojson ... | -geojsonp-url ...]\n";
+    or die "usage: $0 [-rooturl ...] [-geojson ... | -geojsonp-url ...] [-title ...]\n";
 
 ($geojson_file && $geojsonp_url)
     and die "Can't use -geojson and -geojsonp-url together.\n";
+
+my $title_html;
+if (defined $title) {
+    require HTML::Entities;
+    $title_html = HTML::Entities::encode_entities_numeric($title);
+}
 
 my $tpl = BBBikeLeaflet::Template->new(
 				       root_url     => $root_url,
@@ -46,6 +54,7 @@ my $tpl = BBBikeLeaflet::Template->new(
 				       geojsonp_url  => $geojsonp_url,
 				       show_feature_list => $show_feature_list,
 				       leaflet_ver => $leaflet_ver,
+				       title_html => $title_html,
 				      );
 $tpl->process(\*STDOUT);
 
