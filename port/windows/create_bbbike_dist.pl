@@ -30,12 +30,26 @@ GetOptions(
 
 my $strawberry_ver = 'strawberry-perl-5.14.2.1';
 my $strawberry_zip_file = $strawberry_ver . '-32bit-portable.zip';
-my $downloads_path = "c:\\Dokumente und Einstellungen\\eserte\\Eigene Dateien\\Downloads";
+my @downloads_paths =
+    (
+     "c:\\Dokumente und Einstellungen\\eserte\\Eigene Dateien\\Downloads",
+     "c:\\Users\\eserte\\Downloads",
+    );
 my $eserte_dos_path = "c:\\cygwin\\home\\eserte";
 my $bbbike_cygwin_path = '~/work/bbbike';
 my $bbbike_git_remote = 'cvrsnica';
 my $bbbike_git_branch = 'master';
 
+my $downloads_path;
+for my $candidate (@downloads_paths) {
+    if (-d $candidate) {
+	$downloads_path = $candidate;
+	last;
+    }
+}
+if (!$downloads_path) {
+    die "Strange: cannot find downloads directory, tried @downloads_paths";
+}
 my $strawberry_zip_path = $downloads_path . "\\" . $strawberry_zip_file;
 if (!-s $strawberry_zip_path) {
     die "$strawberry_zip_path does not exist or is empty. Please download the file from www.strawberryperl.com.\n";
