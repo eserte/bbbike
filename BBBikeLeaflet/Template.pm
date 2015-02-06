@@ -28,6 +28,7 @@ sub new {
     my $leaflet_ver              = delete $args{leaflet_ver};
     my $enable_upload            = delete $args{enable_upload};
     my $enable_accel             = delete $args{enable_accel};
+    my $disable_routing          = delete $args{disable_routing};
     my $use_osm_de_map           = delete $args{use_osm_de_map};
     my $coords                   = delete $args{coords};
     my $show_expired_session_msg = delete $args{show_expired_session_msg};
@@ -49,6 +50,7 @@ sub new {
 	   leaflet_ver              => $leaflet_ver,
 	   enable_upload            => $enable_upload,
 	   enable_accel             => $enable_accel,
+	   disable_routing          => $disable_routing,
 	   use_osm_de_map           => $use_osm_de_map,
 	   coords                   => $coords,
 	   show_expired_session_msg => $show_expired_session_msg,
@@ -66,6 +68,7 @@ sub process {
     my $htmlfile                 = $self->{htmldir} . '/bbbikeleaflet.html';
     my $enable_upload            = $self->{enable_upload};
     my $enable_accel             = $self->{enable_accel};
+    my $disable_routing          = $self->{disable_routing};
     my $leaflet_ver              = $self->{leaflet_ver};
     my $use_osm_de_map           = $self->{use_osm_de_map};
     my $coords                   = $self->{coords};
@@ -180,6 +183,7 @@ sub process {
 	    print $ofh "enable_accel   = " . ($enable_accel   ? 'true' : 'false') . ";\n";
 	    print $ofh "use_osm_de_map = " . ($use_osm_de_map ? 'true' : 'false') . ";\n";
 	    print $ofh "show_feature_list = " . ($show_feature_list ? 'true' : 'false') . ";\n";
+	    print $ofh "disable_routing = " . ($disable_routing ? 'true' : 'false') . ";\n";
 	}
     }
 }

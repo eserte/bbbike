@@ -280,7 +280,7 @@ function doLeaflet() {
     map = new L.Map('map',
 		    {
 			zoomAnimation:false, fadeAnimation:false, // animations may be super-slow, seen on mosor/firefox9
-			doubleClickZoom:false, // used for setting start/goal, see below for click/dblclick event
+			doubleClickZoom:disable_routing, // used for setting start/goal, see below for click/dblclick event
 			layers: [bbbikeTileLayer]
 		    }
 		   );
@@ -474,25 +474,27 @@ function doLeaflet() {
 	}
     }
 
-    map.on(//'click', //XXX has bugs, may fire on simple zooming
-        'dblclick', function(e) {
-	    if (searchState == "start") {
-		startLatLng = e.latlng;
+    if (!disable_routing) {
+	map.on(
+            'dblclick', function(e) {
+		if (searchState == "start") {
+		    startLatLng = e.latlng;
 
-		if (goalMarker) {
-		    map.removeLayer(goalMarker);
+		    if (goalMarker) {
+			map.removeLayer(goalMarker);
+		    }
+		    setStartMarker(startLatLng);
+
+		    searchState = 'goal';
+		} else if (searchState == "goal") {
+		    setGoalMarker(e.latlng);
+
+		    searchRoute(startLatLng, e.latlng);
+		} else if (searchState == "searching") {
+		    // nop
 		}
-		setStartMarker(startLatLng);
-
-		searchState = 'goal';
-	    } else if (searchState == "goal") {
-		setGoalMarker(e.latlng);
-
-		searchRoute(startLatLng, e.latlng);
-	    } else if (searchState == "searching") {
-		// nop
-	    }
-	});
+	    });
+    }
 
     var setViewLatLng;
     var setViewZoom;

@@ -29,6 +29,7 @@ my $geojsonp_url;
 my $show_feature_list = 1;
 my $leaflet_ver;
 my $title;
+my $disable_routing;
 GetOptions(
 	   'rooturl=s'              => \$root_url,
 	   'geojson|geojson-file=s' => \$geojson_file,
@@ -36,8 +37,9 @@ GetOptions(
 	   'show-feature-list!'     => \$show_feature_list,
 	   'leafletver=s'           => \$leaflet_ver,
 	   'title=s'                => \$title,
+	   'disable-routing'        => \$disable_routing,
 	  )
-    or die "usage: $0 [-rooturl ...] [-geojson ... | -geojsonp-url ...] [-title ...]\n";
+    or die "usage: $0 [-rooturl ...] [-geojson ... | -geojsonp-url ...] [-title ...] [-disable-routing]\n";
 
 ($geojson_file && $geojsonp_url)
     and die "Can't use -geojson and -geojsonp-url together.\n";
@@ -55,6 +57,7 @@ my $tpl = BBBikeLeaflet::Template->new(
 				       show_feature_list => $show_feature_list,
 				       leaflet_ver => $leaflet_ver,
 				       title_html => $title_html,
+				       disable_routing => $disable_routing,
 				      );
 $tpl->process(\*STDOUT);
 
