@@ -84,8 +84,8 @@ sub update_http {
 	    $res = $ua->request(new HTTP::Request('GET', $src_file, $h),
 				$dest_file);
 	    $code = $res->code;
-	    $success = $res->is_success;
-	    if ($code == 200) {
+	    $success = $res->is_success && !$res->header('X-Died'); # see also https://rt.cpan.org/Ticket/Display.html?id=101990
+	    if ($code == 200 && $success) {
 		$modified = 1;
 	    }
 	} else {
@@ -124,7 +124,7 @@ sub update_http {
 	    }
 	} else {
 	    if ($ua) {
-		if ($res->is_error) {
+		if ($res->is_error || $res->header('X-Died')) {
 		    print STDERR "\n", $res->as_string;
 		    my $text = $res->error_as_HTML;
 		    eval {
