@@ -149,7 +149,7 @@ print STDERR "Add modules from Bundle::BBBike_windist...\n";
     save_pwd {
 	chdir $bbbikesrc_dir
 	    or die "Can't chdir to $bbbikesrc_dir: $!";
-	system("$strawberry_dir/perl/bin/cpan.bat", "Bundle::BBBike_windist");
+	system("$strawberry_dir/perl/bin/perl.exe", "-MCPAN", "-e", 'CPAN::HandleConfig->load; $CPAN::Config->{prefs_dir} = q{' . $strawberry_dir . '\\cpan\\prefs}; install shift', 'Bundle::BBBike_windist');
     };
 }
 
