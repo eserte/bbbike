@@ -1,22 +1,27 @@
 ######################################################################
 # Rules for Strawberry dist
 #
-# HOWTO use this rules (work in progress!!!)
+# HOWTO
 #
 # Prerequistites:
 # - cygwin
-# - cygwin packages: perl, make (GNU make), maybe others?
-# - Template-Toolkit for cygwin perl, maybe manually installed using CPAN.pm
+# - cygwin packages: perl, make (GNU make), gcc-core, gcc-g++, patch
+# - Template for cygwin perl, maybe manually installed using CPAN.pm
+# - a strawberry perl installation (which is just used for the
+#   build process, not for packaging)
 # - a suitable strawberry portable zipfile,
 #   e.g. strawberry-perl-5.14.2.1-32bit-portable.zip, 
-#   downloaded to c:\Dokumente und Einstellungen\eserte\Eigene Dateien\Downloads
+#   downloaded to c:\Users\$USERNAME\Downloads
 #   (if another version is chosen, then create_bbbike_dist.pl must be changed)
+# - an installed gpsbabel installation (currently 1.4.2)
+# - Inno Setup (e.g. version 5.5.5)
+# - a git-clone of bbbike in the user's cygwin directory as ~/work/bbbike
 #
 # Creating the dist:
 # - run in a windows shell:
-#     cd C:\cygwin\home\eserte\work\bbbike && perl port\windows\create_bbbike_dist.pl
+#     cd C:\cygwin\home\$USERNAME\work\bbbike && perl port\windows\create_bbbike_dist.pl
 #   or for a snapshot version:
-#     cd C:\cygwin\home\eserte\work\bbbike && perl port\windows\create_bbbike_dist.pl -snapshot
+#     cd C:\cygwin\home\$USERNAME\work\bbbike && perl port\windows\create_bbbike_dist.pl -snapshot
 
 # This makefile works only with GNU make
 
@@ -50,7 +55,8 @@ GPSBABEL_SRC=$(shell cygpath "$$PROGRAMFILES")/GPSBabel
 GPSBABEL_DEST=../../../../bbbikewindist/gpsbabel
 
 # Assumes that gpsbabel (e.g. 1.4.2) is normally installed
-# XXX hardcoded for german installations (C:\Programme)
+# Does not work for later gpsbabel versions,
+# as libexpat.dll is gone and other .dlls are used instead.
 make-gpsbabel-dist:
 	[ -d ../../../../bbbikewindist ]
 	[ -d "${GPSBABEL_SRC}" ]
