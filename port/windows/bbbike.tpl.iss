@@ -29,10 +29,14 @@ OutputDir=c:\cygwin\tmp
 OutputBaseFilename=BBBike-[% VERSION %]-Windows
 OutputManifestFile=SETUP-MANIFEST
 
+[Dirs]
+Name: "{app}\bbbike\data"; Permissions: users-modify
+
 [Files]
 ;;;
 ;;; This contains a MANIFEST copy of bbbike after running "make make-bbbike-dist"
-Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\bbbike\*"; DestDir: "{app}\bbbike"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\bbbike\*"; DestDir: "{app}\bbbike"; Excludes: "\data,\data\*,\data\*\*"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\bbbike\data\*"; DestDir: "{app}\bbbike\data"; Permissions: users-modify; Flags: ignoreversion recursesubdirs createallsubdirs
 ;;;
 ;;; XXX should contain an additional a notice where to get the complete distro and sources
 ;;; Note: in previous Strawberry versions there was a libexpat.dll in perl\bin (part of XML::Parser),
