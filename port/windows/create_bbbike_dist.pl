@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,22 +20,26 @@ use POSIX qw(strftime);
 die "Sorry, this script must be run under CMD.EXE, not cygwin"
     if $^O eq 'cygwin';
 
+my $username = $ENV{USERNAME};
 my $do_snapshot;
 my $do_continue;
+my $do_bbbike_update = 1;
 GetOptions(
 	   "snapshot" => \$do_snapshot,
 	   "c|cont|continue" => \$do_continue,
+	   "bbbike-update!" => \$do_bbbike_update,
 	  )
-    or die "usage: $0 [-snapshot] [-c|-continue]";
+    or die "usage: $0 [-snapshot] [-c|-continue] [-no-bbbike-update]";
 
 my $strawberry_ver = 'strawberry-perl-5.14.2.1';
 my $strawberry_zip_file = $strawberry_ver . '-32bit-portable.zip';
 my @downloads_paths =
     (
+     "$ENV{USERPROFILE}\\Downloads",
      "c:\\Dokumente und Einstellungen\\eserte\\Eigene Dateien\\Downloads",
      "c:\\Users\\eserte\\Downloads",
     );
-my $eserte_dos_path = "c:\\cygwin\\home\\eserte";
+my $eserte_dos_path = "c:\\cygwin\\home\\$username";
 my $bbbike_cygwin_path = '~/work/bbbike';
 my $bbbike_git_remote = 'cvrsnica';
 my $bbbike_git_branch = 'master';
@@ -79,7 +83,7 @@ if (-e $bbbikewindist_dir) {
     }
 }
 
-{
+if ($do_bbbike_update) {
     # - make sure that the bbbike sources are up-to-date,
     #   e.g. in a cygwin shell:
     #     cd ~/work/bbbike
@@ -135,7 +139,6 @@ sub exec_cygwin_cmd {
     my $cmd = shift;
     my @cygwin_cmd = ('c:/cygwin/bin/sh', '-l', '-c', $cmd);
     system @cygwin_cmd;
-    die "Command '@cygwin_cmd' failed" if $? != 0;
 }
 
 __END__
