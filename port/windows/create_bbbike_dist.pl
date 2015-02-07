@@ -119,7 +119,7 @@ exec_cygwin_cmd('cd ' . $bbbike_cygwin_path . '/port/windows && make ' . $bbbike
 
 {
     # Run ISS to create the installer:
-    my $iss_file = $do_snapshot ? "bbbike-" . strawberry("Y%m%d", localtime) . ".iss" : "bbbike.iss";
+    my $iss_file = $do_snapshot ? "bbbike-snapshot-" . strftime("%Y%m%d", localtime) . ".iss" : "bbbike.iss";
     my $cmd = "cd $eserte_dos_path\\work\\bbbike\\port\\windows && $iss_file";
     print STDERR "Start ISS ($cmd)... please press the green 'play' button!\n";
     system $cmd;
