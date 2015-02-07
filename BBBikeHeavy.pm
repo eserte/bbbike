@@ -1506,7 +1506,7 @@ sub BBBikeHeavy::reload_all {
 	read_hoehe(-force => 1);
     }
     # and for ampel layers
-    if ($change{"p"}->{"ampeln"}) {
+    if ($change{"p"}->{"lsa"}) {
 	read_ampeln("force");
     }
 
