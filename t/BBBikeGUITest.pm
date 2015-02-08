@@ -20,19 +20,22 @@
 
 package BBBikeGUITest;
 
+use strict;
+use vars qw($VERSION);
+$VERSION = 2.00;
+
+use Time::HiRes ();
 use Test::More qw(no_plan);
 
 use Strassen::Util;
 use VectorUtil;
 
-use strict;
-use vars qw($VERSION);
-$VERSION = 2.00;
-
 my($top, $c);
+my $start_time = $ENV{BBBIKE_TEST_STARTTIME};
 
 sub start_guitest {
-    warn "Starting GUI test...\n";
+    my $end_time = Time::HiRes::time();
+    diag "Starting GUI test, start duration was " . sprintf("%.3f", $end_time-$start_time) . " seconds...\n";
 
     $top = $main::top;
     $c   = $main::c;
