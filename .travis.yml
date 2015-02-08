@@ -27,7 +27,7 @@ matrix:
     - perl: "5.20"
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.18"
-      env: BBBIKE_TEST_SKIP_MODPERL=1
+      env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
     - perl: "5.14"
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.10"
