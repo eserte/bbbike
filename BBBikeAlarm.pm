@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000, 2006, 2008, 2009, 2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006,2008,2009,2012,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -40,7 +40,7 @@ my $install_datebook_additions = 1;
 use File::Basename qw(basename);
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.44';
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -58,9 +58,24 @@ sub my_die ($) {
 
 sub enter_alarm {
     my($top, $time_ref, %args) = @_;
-    my $time = $$time_ref;
-    if ($time =~ /(\d+):(\d+)/) {
-	my($h,$m) = ($1,$2);
+    my $ride_time = do {
+	my $time = $$time_ref;
+	if ($time =~ /(\d+):(\d+)/) {
+	    my($h,$m) = ($1,$2);
+	    $h*3600 + $m*60;
+	} elsif ($time =~ /(\d+)\s+sec/) {
+	    $1;
+	} else {
+	    undef;
+	}
+    };
+    if (!defined $ride_time) {
+	$top->messageBox(
+			 -message => M"Keine Fahrzeit übergeben",
+			 -icon => 'error',
+			 -type => 'OK',
+			);
+    } else {
 	my $t = $top->Toplevel(-title => "Alarm");
 	$t->transient($top) if $main::transient;
 	my $do_close = 0;
@@ -159,9 +174,8 @@ sub enter_alarm {
 		$ankunft_epoch+=86400; # XXX Sommerzeit
 	    }
 
-	    my $fahrzeit = $h*60*60 + $m*60;
-	    $pre_alarm_seconds = $fahrzeit + $vorbereitung_s;
-	    $abfahrt_epoch = $ankunft_epoch - $fahrzeit;
+	    $pre_alarm_seconds = $ride_time + $vorbereitung_s;
+	    $abfahrt_epoch = $ankunft_epoch - $ride_time;
 	    $end_zeit_epoch = $ankunft_epoch - $pre_alarm_seconds;
 	    # XXX Abzug vorbereitung?
 	    @l = localtime $end_zeit_epoch;
