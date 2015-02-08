@@ -1390,8 +1390,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'source_id' => 'IM_020145',
-         'until' => 1425164399,
-         'text' => 'Sterndamm: Eisenbahnunterführung voraussichtlich bis zum 28.02.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
+         'until' => 1423461600,
+         'text' => 'Sterndamm: Eisenbahnunterführung voraussichtlich bis zum 09.02.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
          'from' => 1417820400,
          'id' => 2469,
          'data' => 'userdel	1::inwork 17886,5587 17736,5441
@@ -1677,20 +1677,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
-         'until' => 1423263600,
-         'text' => 'Gounodstr./Mahlerstr.: Bauarbeiten, auf Gehweg ausweichen',
-         'from' => 1411941600,
-         'id' => 2628,
-         'data' => '#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
-#: last_checked: 2015-01-27
-#: check_frequency: 10d
-userdel	q4::inwork 13645,15609 13739,15643
-userdel	q3::inwork 13739,15643 13776,15546
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,

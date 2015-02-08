@@ -21825,8 +21825,8 @@ userdel	2::temp 5047,10381 5076,10658
 EOF
      },
      { from  => $isodate2epoch->("2014-12-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-02-28 23:59:59"),
-       text  => 'Sterndamm: Eisenbahnunterführung voraussichtlich bis zum 28.02.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
+       until => $isodate2epoch->("2015-02-09 07:00:00"),
+       text  => 'Sterndamm: Eisenbahnunterführung voraussichtlich bis zum 09.02.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_020145',
        data  => <<EOF,
