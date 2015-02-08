@@ -45,4 +45,10 @@ eq_or_diff $html2, $html, 'Result from static_leaflethtml.pl is the same';
 my $html3 = $blt->as_string;
 eq_or_diff $html3, $html, 'as_string output is the same';
 
+{
+    my $blt2 = BBBikeLeaflet::Template->new(shortcut_icon => "images/my_favicon.png");
+    my $html = $blt2->as_string;
+    like_html $html, qr{shortcut icon.*href="images/my_favicon.png"}, 'shortcut icon ref found';
+}
+
 __END__

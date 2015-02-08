@@ -24,6 +24,7 @@ use Getopt::Long;
 use BBBikeLeaflet::Template;
 
 my $root_url = 'http://bbbike.de';
+my $shortcut_icon;
 my $geojson_file;
 my $geojsonp_url;
 my $show_feature_list = 1;
@@ -38,8 +39,9 @@ GetOptions(
 	   'leafletver=s'           => \$leaflet_ver,
 	   'title=s'                => \$title,
 	   'disable-routing'        => \$disable_routing,
+	   'shortcuticon=s'         => \$shortcut_icon,
 	  )
-    or die "usage: $0 [-rooturl ...] [-geojson ... | -geojsonp-url ...] [-title ...] [-disable-routing]\n";
+    or die "usage: $0 [-rooturl ...] [-geojson ... | -geojsonp-url ...] [-title ...] [-disable-routing] [-shortcut-icon url]\n";
 
 ($geojson_file && $geojsonp_url)
     and die "Can't use -geojson and -geojsonp-url together.\n";
@@ -58,6 +60,7 @@ my $tpl = BBBikeLeaflet::Template->new(
 				       leaflet_ver => $leaflet_ver,
 				       title_html => $title_html,
 				       disable_routing => $disable_routing,
+				       shortcut_icon => $shortcut_icon,
 				      );
 $tpl->process(\*STDOUT);
 

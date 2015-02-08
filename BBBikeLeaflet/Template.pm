@@ -36,6 +36,7 @@ sub new {
     my $geojsonp_url             = delete $args{geojsonp_url};
     my $show_feature_list        = delete $args{show_feature_list};
     my $root_url                 = delete $args{root_url};
+    my $shortcut_icon            = delete $args{shortcut_icon};
     my $title_html               = delete $args{title_html};
 
     die 'Unhandled arguments: ' . join(', ', keys %args) if %args;
@@ -58,6 +59,7 @@ sub new {
 	   geojsonp_url             => $geojsonp_url,
 	   show_feature_list        => $show_feature_list,
 	   root_url                 => $root_url,
+	   shortcut_icon            => $shortcut_icon,
 	   title_html               => $title_html,
 	  }, $class;
 }
@@ -77,6 +79,7 @@ sub process {
     my $geojsonp_url             = $self->{geojsonp_url};
     my $show_feature_list        = $self->{show_feature_list};
     my $root_url                 = $self->{root_url};
+    my $shortcut_icon            = $self->{shortcut_icon};
     my $title_html               = $self->{title_html};
 
     my $use_old_url_layout = $self->{use_old_url_layout};
@@ -125,6 +128,14 @@ sub process {
 		$line =~ s{(href=")}{$1$bbbike_htmlurl/};
 	    }
 	    print $ofh $line, "\n";
+	    next;
+	}
+
+	# has to be checked before FIX IMAGES URL LAYOUT
+	if (defined $shortcut_icon && m{<link rel="shortcut icon" href="([^"]+)"}) {
+	    # note: type is hardcoded here, and there's no protection
+	    # from strange URLs
+	    print $ofh qq{ <link rel="shortcut icon" href="$shortcut_icon" type="image/png" />\n};
 	    next;
 	}
 
