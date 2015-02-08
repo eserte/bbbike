@@ -92,7 +92,7 @@ sub wait_for_chooser_window {
 	    fail "Cannot find chooser window after $iteration iterations...";
 	    exit_app();
 	}
-	wait_for_chooser_window($iteration);
+	$top->after(500, sub { wait_for_chooser_window($iteration) });
     }
 }
 
