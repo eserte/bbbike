@@ -1422,6 +1422,7 @@ package main;
 
 my $use_tk;
 my $time;
+my $ride_time;
 my $text;
 my $interactive;
 my $interactive_small;
@@ -1432,6 +1433,7 @@ my $encoding;
 require Getopt::Long;
 if (!Getopt::Long::GetOptions("-tk!" => \$use_tk,
 			      "-time=s" => \$time,
+			      "-ridetime=s" => \$ride_time,
 			      "-text=s" => \$text,
 			      "-interactive!" => \$interactive,
 			      "-interactive-small!" => \$interactive_small,
@@ -1440,7 +1442,7 @@ if (!Getopt::Long::GetOptions("-tk!" => \$use_tk,
 			      "showall|list" => \$show_all,
 			      "restart" => \$restart,
 			     )) {
-    die "Usage $0 [-tk [-ask]] [-time hh:mm] [-text message]
+    die "Usage $0 [-tk [-ask]] [-time hh:mm] [-ridetime hh:mm] [-text message]
 		  [-interactive | -interactive-small]
                   [-showall|-list] [-restart] [-encoding ...]
 ";
@@ -1459,8 +1461,10 @@ if ($interactive || $interactive_small) {
     if ($interactive_small) {
 	BBBikeAlarm::enter_alarm_small_dialog($mw, -withtext => 1);
     } else {
-	$time = do { @_ = localtime; sprintf "%02d:%02d", $_[3], $_[2] };
-	BBBikeAlarm::enter_alarm($mw, \$time, -dialog => 1);
+	if (!$ride_time) {
+	    die "Please specify -ridetime HH:MM parameter";
+	}
+	BBBikeAlarm::enter_alarm($mw, \$ride_time, -dialog => 1);
     }
 } elsif ($use_tk) {
     if ($show_all) {
