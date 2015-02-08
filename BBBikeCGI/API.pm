@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package BBBikeCGI::API;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use JSON::XS qw();
 
@@ -117,29 +117,71 @@ sub action_config {
 }
 
 # Module info can contain:
-#  warning   => "...":  a warning, e.g. if Module::Metadata is not available
 #  installed => bool:   module is installed or not installed
 #  version   => string: module's stringified version
 #  version   => false:  module's version is not available
 sub _module_info {
     my $module_name = shift;
     if (eval { require Module::Metadata; 1 }) {
-	my $mod = Module::Metadata->new_from_module($module_name, collect_pod => 0);
-	if ($mod) {
-	    my $ver = $mod->version;
-	    if ($ver->can('stringify'))  {
-		return { installed => JSON::XS::true, version => $ver->stringify }; # stringify for json
-	    } else {
-		warn "Unexpected: cannot get version for '$module_name' via Module::Metadata";
-		return { installed => JSON::XS::true, version => JSON::XS::false };
-	    }
-	} else {
-	    return { installed => JSON::XS::false }
-	}
+	_module_info_via_module_metadata($module_name);
     } else {
-	return { warning => 'Module::Metadata unavailable' };
+	_module_info_via_eumm($module_name);
     }
 }
+
+sub _module_info_via_module_metadata {
+    my $module_name = shift;
+    my $mod = Module::Metadata->new_from_module($module_name, collect_pod => 0);
+    if ($mod) {
+	my $ret = { installed => JSON::XS::true };
+	my $ver = $mod->version;
+	if ($ver->can('stringify'))  {
+	    $ret->{version} = $ver->stringify; # stringify for json
+	} else {
+	    warn "Unexpected: cannot get version for '$module_name' via Module::Metadata";
+	    $ret->{version} = JSON::XS::false;
+	}
+	$ret;
+    } else {
+	+{ installed => JSON::XS::false }
+    }
+}
+
+sub _module_info_via_eumm {
+    my $module_name = shift;
+    my $file = _module_path($module_name);
+    if (defined $file) {
+	my $ret = { installed => JSON::XS::true };
+	require ExtUtils::MakeMaker;
+	my $ver = eval { MM->parse_version($file) };
+	if (defined $ver) {
+	    $ret->{version} = "$ver";
+	} else {
+	    warn "Unexpected: cannot get version for '$module_name' via EUMM, error: $@";
+	    $ret->{version} = JSON::XS::false;
+	}
+	$ret;
+    } else {
+	+{ installed => JSON::XS::false }
+    }
+}
+
+# Derived from module_exists from srezic-repository
+sub _module_path {
+    my($filename) = @_;
+    $filename =~ s{::}{/}g;
+    $filename .= ".pm";
+    return $INC{$filename} if $INC{$filename};
+    foreach my $prefix (@INC) {
+	my $realfilename = "$prefix/$filename";
+	if (-r $realfilename) {
+	    return $realfilename;
+	}
+    }
+    undef;
+}
+# REPO END
+
 
 1;
 

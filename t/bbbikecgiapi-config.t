@@ -99,6 +99,19 @@ my $cgitesturl = "$cgidir/bbbike-test.cgi";
 	};
 }
 
+{
+    require BBBikeCGI::API;
+    my $test_mod = 'JSON::XS';
+    my $res_factory = BBBikeCGI::API::_module_info($test_mod);
+    my $res_mm      = BBBikeCGI::API::_module_info_via_module_metadata($test_mod);
+    my $res_eumm    = BBBikeCGI::API::_module_info_via_eumm($test_mod);
+    is_deeply $res_mm,   $res_factory, 'same result for _module_info and direct Module::Metadata call';
+    is_deeply $res_eumm, $res_factory, 'same result for _module_info and direct EUMM call';
+    ok $res_factory->{installed};
+    is $res_factory->{installed}, JSON::XS::true;
+    like $res_factory->{version}, qr{^\d+\.\d+$}, 'looks like a version';
+}
+
 sub do_config_api_call {
     my $cgiurl = shift;
     my $url = $cgiurl . "?api=config";
