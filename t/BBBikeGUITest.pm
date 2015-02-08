@@ -79,7 +79,7 @@ sub wait_for_chooser_window {
     my $chooser_window;
     $top->Walk(sub {
     		   my $w = shift;
-    		   if ($w->isa('Tk::Toplevel') && $w->title =~ m{^Stra.*en$}) { # XXX damn unicode!
+    		   if ($w->isa('Tk::Toplevel') && $w->title =~ m{^(Streets|Stra.*en)$}) { # XXX damn unicode!
     		       $chooser_window = $w;
     		   }
     	       });
@@ -109,7 +109,7 @@ sub continue_guitest_with_chooser_window {
 			      } elsif ($w->isa('Tk::Button')) {
 				  if ($w->cget('-text') eq 'Start') {
 				      $chooser_start = $w;
-				  } elsif ($w->cget('-text') eq 'Ziel') {
+				  } elsif ($w->cget('-text') =~ m{^(Ziel|Destination)$}) {
 				      $chooser_goal = $w;
 				  }
 			      }
