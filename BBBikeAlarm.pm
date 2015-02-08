@@ -170,15 +170,15 @@ sub enter_alarm {
 	    $l[1] = $m_a;
 	    $l[2] = $h_a;
 	    $ankunft_epoch = timelocal(@l);
-	    if ($ankunft_epoch <= time) {
-		# adjust to next day
-		$ankunft_epoch+=86400; # XXX Sommerzeit
-	    }
 
 	    $pre_alarm_seconds = $ride_time + $vorbereitung_s;
+	    if (time > $ankunft_epoch - $pre_alarm_seconds) { # too late, try next day
+		$ankunft_epoch += 86400; # XXX Sommerzeit XXX what if pre_alarm_seconds is larger?
+	    }
+	    
 	    $abfahrt_epoch = $ankunft_epoch - $ride_time;
 	    $end_zeit_epoch = $ankunft_epoch - $pre_alarm_seconds;
-	    # XXX Abzug vorbereitung?
+
 	    @l = localtime $end_zeit_epoch;
 	    my $end_zeit = sprintf("%02d%02d", $l[2], $l[1]);
 
