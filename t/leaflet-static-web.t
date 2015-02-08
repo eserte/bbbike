@@ -33,9 +33,7 @@ my $ua = LWP::UserAgent->new;
 my $blt = BBBikeLeaflet::Template->new(use_old_url_layout => 1);
 isa_ok $blt, 'BBBikeLeaflet::Template';
 
-my $html;
-open my $ofh, ">", \$html or die $!;
-$blt->process($ofh);
+my $html = $blt->as_string;
 
 SKIP: {
     my $html_doc = libxml_parse_html_or_skip(1, $html); # as we run under no_plan we don't care about exact number of skips

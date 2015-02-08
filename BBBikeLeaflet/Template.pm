@@ -188,6 +188,15 @@ sub process {
     }
 }
 
+sub as_string {
+    my($self) = @_;
+    my $out;
+    open my $ofh, ">", \$out
+	or die "Can't output to scalar fh: $!";
+    $self->process($ofh);
+    $out;
+}
+
 1;
 
 __END__
