@@ -37,23 +37,6 @@ plan 'no_plan';
 
 use Update;
 
-sub load_modfile { # XXX move to Update.pm
-    my $rootdir = shift;
-    my $modfile = "$rootdir/data/.modified";
-    my(@files, %modified, %md5);
-    if (open(MOD, $modfile)) {
-	while(<MOD>) {
-	    chomp;
-	    my($f, $t, $md5) = split(/\t/);
-	    push @files, $f;
-	    $modified{$f} = $t;
-	    $md5{$f} = $t;
-	}
-	close MOD;
-    }
-    (\@files, \%modified, \%md5);
-}
-
 {
     package MockProgress;
     use vars qw(@calls);
@@ -70,7 +53,7 @@ my $rootdir = tempdir("BBBike-Update-Test-XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
     die "Command '@cmd' failed" if $? != 0;
 }
 
-my($files, $modified, $md5) = load_modfile($rootdir);
+my($files, $modified, $md5) = Update::load_modified($rootdir);
 
 ok $modified->{'data/comments_scenic'}, 'expected data file'
     or die "FATAL ERROR: unexpected missing file data/comments_scenic";
@@ -115,7 +98,7 @@ my $run_update_http = sub {
 
     $run_update_http->();
 
-    (undef, $modified, undef) = load_modfile($rootdir);
+    (undef, $modified, undef) = Update::load_modified($rootdir);
     cmp_ok $modified->{'data/comments_scenic'}, '>=', $original_modified, 'file was updated';
 }
 
