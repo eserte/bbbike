@@ -4790,10 +4790,10 @@ if ($splash_screen) {
 
 choose_streets()                            if $init_choose_street;
 
-if ($ENV{BBBIKE_GUI_TEST}) {
+if ($ENV{BBBIKE_GUI_TEST_MODULE}) {
     eval qq{
-      require $ENV{BBBIKE_GUI_TEST};
-      \$top->afterIdle(\\&$ENV{BBBIKE_GUI_TEST}::start_guitest);
+      require $ENV{BBBIKE_GUI_TEST_MODULE};
+      \$top->afterIdle(\\&$ENV{BBBIKE_GUI_TEST_MODULE}::start_guitest);
     };
     warn $@ if $@;
 }

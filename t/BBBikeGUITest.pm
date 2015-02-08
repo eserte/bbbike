@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2006,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2006,2012,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,8 +14,9 @@
 #
 # Usage:
 #   cd .../bbbike
-#   env BBBIKE_GUI_TEST=BBBikeGUITest perl -It ./bbbike -public
-#
+#   env BBBIKE_GUI_TEST_MODULE=BBBikeGUITest perl -It ./bbbike -public
+# or
+#   env BBBIKE_TEST_GUI=1 prove t/bbbikeguitest.t
 
 package BBBikeGUITest;
 
