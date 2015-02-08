@@ -357,10 +357,9 @@ sub enter_alarm_small_dialog {
     $t->Label(-text => "Time (HH:MM)")->grid(-column => 0, -row => $row,
 					     -sticky => "w");
     my @e;
-    push @e, $t->Entry(-textvariable => \$time,
-		       -width => 6,
-		      )->grid(-row => $row, -column => 1,
-			      -sticky => "we");
+    push @e, $t->BBBikeAlarmTimeEntry
+	(-textvariable => \$time,
+	)->grid(-row => $row, -column => 1, -sticky => "we");
     $e[0]->focus;
     $row++;
 
