@@ -5,25 +5,22 @@
 # Author: Slaven Rezic
 #
 
-if (!$ENV{BBBIKE_TEST_GUI}) {
-    require Test::More;
-    Test::More::plan(skip_all => 'Set BBBIKE_TEST_GUI to run test');
-}
-
 use FindBin;
 use lib (
 	 "$FindBin::RealBin/..",
 	 $FindBin::RealBin,
 	);
+
+use BBBikeTest qw(check_cgi_testing check_gui_testing $htmldir);
+check_gui_testing;
+check_cgi_testing;
+
 use ExtUtils::Manifest qw(manicopy maniread);
 use File::Copy qw(cp);
 use File::Temp qw(tempdir);
 use Tie::File ();
 
 use BBBikeUtil qw(bbbike_root);
-
-use BBBikeTest qw(check_cgi_testing $htmldir);
-check_cgi_testing;
 
 my $tmpdir = tempdir("bbbikeguiupdate-XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
 

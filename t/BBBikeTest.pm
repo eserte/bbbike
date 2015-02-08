@@ -46,7 +46,7 @@ use BBBikeUtil qw(is_in_path);
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
-	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing on_author_system
+	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing check_gui_testing on_author_system
 	      get_pmake image_ok zip_ok create_temporary_content
 	    ),
 	   @opt_vars);
@@ -786,6 +786,13 @@ sub using_bbbike_test_cgi () {
 sub check_cgi_testing () {
     if ($ENV{BBBIKE_TEST_NO_CGI_TESTS}) {
 	print "1..0 # skip Requested to not test cgi functionality.\n";
+	exit 0;
+    }
+}
+
+sub check_gui_testing () {
+    unless ($ENV{BBBIKE_TEST_GUI}) {
+	print "1..0 # skip Please set BBBIKE_TEST_GUI to test gui functionality.\n";
 	exit 0;
     }
 }
