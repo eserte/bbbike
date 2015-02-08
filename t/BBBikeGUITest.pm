@@ -22,6 +22,7 @@ package BBBikeGUITest;
 use Test::More qw(no_plan);
 
 use Strassen::Util;
+use VectorUtil;
 
 use strict;
 use vars qw($VERSION);
@@ -120,7 +121,7 @@ sub continue_guitest_with_chooser_window {
     $chooser_goal->invoke;
 
     cmp_ok scalar(@main::realcoords), ">=", 10, 'More than 10 points in route';
-    cmp_ok Strassen::Util::strecke($main::realcoords[0], [8763,8780]), "<", 100, "Start is near Dudenstr.";
+    ok VectorUtil::point_in_polygon($main::realcoords[0], [[8168,8821], [8171,8752], [9262,8745], [9256,8831]]), "Start is near Dudenstr.";
     cmp_ok Strassen::Util::strecke($main::realcoords[-1], [10970,12822]), "<", 100, "Goal is near Alexanderplatz";
     #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@main::realcoords],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
