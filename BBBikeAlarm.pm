@@ -117,8 +117,8 @@ sub enter_alarm {
 	    $om = $t->Optionmenu
 		(-variable => \$sunset_choice,
 		 -options => [["" => ""],
-			      ["Sonnenuntergang" => $sunset_real],
-			      ["Ende der bürgerl. Dämmerung" => $sunset_civil],
+			      [M("Sonnenuntergang") => $sunset_real],
+			      [M("Ende der bürgerl. Dämmerung") => $sunset_civil],
 			     ],
 		 -command => sub {
 		     $ankunft = $sunset_choice
