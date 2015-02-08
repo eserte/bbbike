@@ -1038,7 +1038,7 @@ if (!defined $top) {
     for (qw(Browse Entry NumEntry Date*NumEntryPlain PathEntry
 	    Listbox KListbox K2Listbox
 	    TixHList HList Text ROText BrowseEntry.LabEntry SimpleHistEntry
-	    ListboxSearchAnything
+	    ListboxSearchAnything BBBikeAlarmTimeEntry
 	   )) {
 	if ($os eq 'win') {
 	    $top->optionAdd("*$_.background", "SystemWindow", "startupFile");

@@ -40,7 +40,7 @@ my $install_datebook_additions = 1;
 use File::Basename qw(basename);
 use Time::Local;
 
-$VERSION = '1.44';
+$VERSION = '1.45';
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -96,11 +96,13 @@ sub enter_alarm {
 					     -sticky => "e");
 	my $sunset_choice;
 	my $om;
-	my $e = $t->Entry(-textvariable => \$ankunft,
-			  -width => 6,
-			 )->grid(-row => 0, -column => 1,
-				 -sticky => "w");
+
+	my $e = $t->BBBikeAlarmTimeEntry
+	    (
+	     -textvariable => \$ankunft,
+	    )->grid(-row => 0, -column => 1, -sticky => "w");
 	$e->focus;
+
 	if (defined $args{-location} && eval { require Astro::Sunrise; Astro::Sunrise->VERSION(0.85); 1 }) {
 	    my($px,$py) = (ref $args{-location} eq 'ARRAY'
 			   ? @{ $args{-location} }
@@ -132,10 +134,9 @@ sub enter_alarm {
 
 	$t->Label(-text => M("Vorbereitung").":")->grid(-row => 2, -column => 0,
 						  -sticky => "e");
-	my $vb_e = $t->Entry(-textvariable => \$vorbereitung,
-			     -width => 6,
-			    )->grid(-row => 2, -column => 1,
-				    -sticky => "w");
+	my $vb_e = $t->BBBikeAlarmTimeEntry
+	    (-textvariable => \$vorbereitung,
+	    )->grid(-row => 2, -column => 1, -sticky => "w");
 
 	$t->Label(-text => M("Alarmtext").":")->grid(-row => 3, -column => 0,
 					       -sticky => "e");
@@ -1414,7 +1415,87 @@ sub bg_system {
 }
 # REPO END
 
-return 1 if caller;
+{
+    package BBBikeAlarmTimeEntry;
+    use vars qw(@ISA);
+    @ISA = ('Tk::Derived', 'Tk::Entry');
+
+    # hack: needed because the modulino should be called
+    # without Tk at all
+    sub _do_construct {
+	require Tk::Entry;
+	Tk::Widget->Construct('BBBikeAlarmTimeEntry');
+    }
+
+    sub Populate {
+	my($w, $args) = @_;
+	$w->SUPER::Populate($args);
+	$w->bind('<Up>'    => ['_inc_dec_time', +1]);
+	$w->bind('<Down>'  => ['_inc_dec_time', -1]);
+	$w->bind('<Prior>' => ['_inc_dec_time', +10]);
+	$w->bind('<Next>'  => ['_inc_dec_time', -10]);
+	$w->ConfigSpecs(-width => ['SELF', 'width', 'Width', 6]);
+	$w;
+    }
+
+    sub _inc_dec_time {
+	my($w, $inc_dec) = @_;
+
+	my $val = $w->get;
+
+	my($h, $m);
+	if ($val =~ m{^(\d+):?$}) { # only hour
+	    $h = $1;
+	    $h = 0 if $h < 0;
+	    $h = 23 if $h > 23;
+	    $m = 0;
+	} elsif ($val =~ m{^(\d+):(\d+)$}) {
+	    ($h, $m) = ($1,$2);
+	    $h = 0 if $h < 0;
+	    $h = 23 if $h > 23;
+	    $m = 0 if $m < 0;
+	    $m = 59 if $m > 59;
+
+	} else { # empty or invalid
+	    (undef, $m, $h) = localtime;
+	}
+
+	# Note: works only for $inc_dec < 60 min
+	if ($inc_dec > 0) {
+	    $m += $inc_dec;
+	    if ($m > 59) {
+		$m %= 60;
+		$h++;
+		if ($h > 23) {
+		    $h = 0;
+		}
+	    }
+	} elsif ($inc_dec < 0) {
+	    $m += $inc_dec;
+	    if ($m < 0) {
+		$m %= 60;
+		$h--;
+		if ($h < 0) {
+		    $h = 23;
+		}
+	    }
+	}
+
+	$val = sprintf "%02d:%02d", $h, $m;
+
+	$w->delete(0, 'end');
+	$w->insert('end', $val);
+    }
+
+}
+
+if (caller) {
+    # Hack for having the widget definition inline
+    BBBikeAlarmTimeEntry::_do_construct();
+
+    # the modulino magic
+    return 1;
+}
 
 ######################################################################
 
@@ -1456,6 +1537,8 @@ if (defined $text && defined $encoding) {
 
 if ($interactive || $interactive_small) {
     require Tk;
+    BBBikeAlarmTimeEntry::_do_construct();
+
     my $mw = MainWindow->new;
     $mw->withdraw;
     if ($interactive_small) {
@@ -1467,6 +1550,9 @@ if ($interactive || $interactive_small) {
 	BBBikeAlarm::enter_alarm($mw, \$ride_time, -dialog => 1);
     }
 } elsif ($use_tk) {
+    require Tk;
+    BBBikeAlarmTimeEntry::_do_construct();
+
     if ($show_all) {
 	BBBikeAlarm::tk_show_all();
     } else {
