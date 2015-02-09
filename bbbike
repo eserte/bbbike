@@ -2934,13 +2934,11 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 		};
 	    load_last_loaded($last_loaded_layers_obj);
 	}
-	if ($Tk::platform ne 'MSWin32') {
-	    $cusm->command(-label => M"Umordnen",
-			   -accelerator => 'Shift-X',
-			   -command => sub {
-			       require BBBikeAdvanced;
-			       layer_editor() });
-	}
+	$cusm->command(-label => M"Umordnen",
+		       -accelerator => 'Shift-X',
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   layer_editor() });
 	$cusm->command(-label => M"Layer löschen",
 		       -command => sub {
 			   require BBBikeAdvanced;
@@ -7823,9 +7821,7 @@ sub set_bindings {
 		   $map_mode = MM_USEREDIT;
 		   set_cursor('delnet', 'X_cursor');
 	       });
-    if ($Tk::platform ne 'MSWin32') { # XXX aber auf der Win98-Maschine von Monika laeuft es gut?!
-	bind_nomod($top, "<X>" => \&layer_editor);
-    }
+    bind_nomod($top, "<X>" => \&layer_editor);
     bind_nomod($top, "<i>" => sub { show_info() });
 
     if (!$no_map) {
