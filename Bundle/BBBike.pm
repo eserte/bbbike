@@ -165,7 +165,7 @@ DBD::mysql	- Für den Zugriff auf die Hausnummerdatenbank
 
 Tie::IxHash	- Damit Direktiven in Straßen-Daten geordnet bleiben
 
-CDB_File	- Für die alternative A*-Optimierung in XS/C
+CDB_File	- Für die alternative A*-Optimierung in XS/C und Cache-Dateien (grid/lazy)
 
 DB_File::Lock	- Same DB_File operations, used in Strassen::Index
 
