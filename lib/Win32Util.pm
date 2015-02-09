@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2004,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2004,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -34,7 +34,7 @@ these modules are already bundled with the popular ActivePerl package.
 use strict;
 use vars qw($DEBUG $browser_ole_obj $VERSION);
 
-$VERSION = '1.40';
+$VERSION = '1.41';
 $DEBUG=0 unless defined $DEBUG;
 
 # XXX Win-Registry-Funktionen mit Hilfe von Win32::API und
@@ -411,6 +411,104 @@ sub start_cmd {
     }
     $r;
 }
+
+######################################################################
+# system() and exec() quoted correctly for Windows
+#
+# Taken from http://blogs.perl.org/users/graham_knop/2011/12/using-system-or-exec-safely-on-windows.html
+#
+sub win32_system {
+    my(@cmd) = @_;
+    system win32_quote_list(@cmd);
+}
+
+sub win32_exec {
+    my(@cmd) = @_;
+    exec win32_quote_list(@cmd);
+}
+
+sub win32_quote_list {
+    my (@args) = @_;
+
+    my $args = join ' ', map { _quote_literal($_) } @args;
+
+    if (_has_shell_metachars($args)) {
+        # cmd.exe treats quotes differently from standard
+        # argument parsing. just escape everything using ^.
+        $args =~ s/([()%!^"<>&|])/^$1/g;
+    }
+    return $args;
+}
+
+sub _quote_literal {
+    my ($text) = @_;
+
+    # basic argument quoting.  uses backslashes and quotes to escape
+    # everything.
+    if ($text ne '' && $text !~ /[ \t\n\v"]/) {
+        # no quoting needed
+    }
+    else {
+        my @text = split '', $text;
+        $text = q{"};
+        for (my $i = 0; ; $i++) {
+            my $bs_count = 0;
+            while ( $i < @text && $text[$i] eq "\\" ) {
+                $i++;
+                $bs_count++;
+            }
+            if ($i > $#text) {
+                $text .= "\\" x ($bs_count * 2);
+                last;
+            }
+            elsif ($text[$i] eq q{"}) {
+                $text .= "\\" x ($bs_count * 2 + 1);
+            }
+            else {
+                $text .= "\\" x $bs_count;
+            }
+            $text .= $text[$i];
+        }
+        $text .= q{"};
+    }
+
+    return $text;
+}
+
+# direct port of code from win32.c
+sub _has_shell_metachars {
+    my $string = shift;
+    my $inquote = 0;
+    my $quote = '';
+
+    my @string = split '', $string;
+    for my $char (@string) {
+        if ($char eq q{%}) {
+            return 1;
+        }
+        elsif ($char eq q{'} || $char eq q{"}) {
+            if ($inquote) {
+                if ($char eq $quote) {
+                    $inquote = 0;
+                    $quote = '';
+                }
+            }
+            else {
+                $quote = $char;
+                $inquote++;
+            }
+        }
+        elsif ($char eq q{<} || $char eq q{>} || $char eq q{|}) {
+            if ( ! $inquote) {
+                return 1;
+            }
+        }
+    }
+    return;
+}
+
+#
+######################################################################
 
 =head2 normalize_env
 
