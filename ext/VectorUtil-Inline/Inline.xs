@@ -1,7 +1,7 @@
 
 /* Author: Slaven Rezic */
 
-/* Copyright (C) 2001,2003,2004,2011 Slaven Rezic. All rights reserved. */
+/* Copyright (C) 2001,2003,2004,2011,2015 Slaven Rezic. All rights reserved. */
 /* This is free software; you can redistribute it and/or modify it under the */
 /* terms of the GNU General Public License, see the file COPYING. */
 
@@ -13,7 +13,7 @@
 #include "perl.h"
 #include "XSUB.h"
 
-typedef struct { int x; int y; } POINT;
+typedef struct { int x; int y; } VUI_POINT;
 
 #undef MIN
 #undef MAX
@@ -174,7 +174,7 @@ double distance_point_line(double px, double py,
 }
 
 int sizeof_POINT() {
-  return sizeof(POINT);
+  return sizeof(VUI_POINT);
 }
 
 /* http://www.exaflop.org/docs/naifgfx/naifpip.html */
@@ -182,8 +182,8 @@ int sizeof_POINT() {
 int point_in_poly( char *poly_verts_c, int num_verts, char *test_point_c ) {
   int nx, ny, loop;
   int x, y;
-  POINT *poly_verts = (POINT*)poly_verts_c;
-  POINT *test_point = (POINT*)test_point_c;
+  VUI_POINT *poly_verts = (VUI_POINT*)poly_verts_c;
+  VUI_POINT *test_point = (VUI_POINT*)test_point_c;
 
   /* Clockwise order. */
 
@@ -209,9 +209,9 @@ int InsidePolygon(char *polygon_c,int N,char *p_c)
   int counter = 0;
   int i;
   double xinters;
-  POINT p1,p2;
-  POINT* polygon = (POINT*)polygon_c;
-  POINT* p = (POINT*)p_c;
+  VUI_POINT p1,p2;
+  VUI_POINT* polygon = (VUI_POINT*)polygon_c;
+  VUI_POINT* p = (VUI_POINT*)p_c;
 
   p1 = polygon[0];
   for (i=1;i<=N;i++) {
@@ -238,8 +238,8 @@ int InsidePolygon(char *polygon_c,int N,char *p_c)
 
 int pnpoly(char *polygon_c,int npol,char *p_c) {
   int i, j, c = 0;
-  POINT* pg = (POINT*)polygon_c;
-  POINT* p = (POINT*)p_c;
+  VUI_POINT* pg = (VUI_POINT*)polygon_c;
+  VUI_POINT* p = (VUI_POINT*)p_c;
   int x = p->x;
   int y = p->y;
   for (i = 0, j = npol-1; i < npol; j = i++) {
@@ -278,9 +278,9 @@ int InsidePolygon2(char *polygon_c,int n,char *p_c)
 {
    int i;
    double angle=0;
-   POINT p1,p2;
-   POINT* polygon = (POINT*)polygon_c;
-   POINT* p = (POINT*)p_c;
+   VUI_POINT p1,p2;
+   VUI_POINT* polygon = (VUI_POINT*)polygon_c;
+   VUI_POINT* p = (VUI_POINT*)p_c;
 
    for (i=0;i<n;i++) {
       p1.x = polygon[i].x - p->x;

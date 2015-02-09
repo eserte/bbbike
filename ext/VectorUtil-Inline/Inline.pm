@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Inline.pm,v 1.15 2004/01/17 23:26:10 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2004,2015 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -17,7 +16,7 @@ package VectorUtil::Inline;
 use vars qw($VERSION @ISA);
 use strict;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.16';
 
 require DynaLoader;
 unshift @ISA, 'DynaLoader';
