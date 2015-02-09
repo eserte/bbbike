@@ -147,10 +147,10 @@ sub fill_chooser {
 						   (grep { $opt{$_} } keys %opt),
 						  );
 					if ($^O eq 'MSWin32') {
-					    # Sigh. Windows braindamage
-					    @cmd = ($cmd[0], (map { qq{"$_"} } @cmd[1..$#cmd]));
+					    # Sigh. Windows braindamage.
+					    require Win32Util;
 					    # no forking here
-					    { exec @cmd }
+					    Win32Util::win32_exec(@cmd);
 					    $mw->messageBox(-message => "Can't execute @cmd: $!",
 							    -icon => 'error');
 					} else {
