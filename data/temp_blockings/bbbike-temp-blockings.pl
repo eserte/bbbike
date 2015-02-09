@@ -21825,10 +21825,10 @@ userdel	2::temp 5047,10381 5076,10658
 EOF
      },
      { from  => $isodate2epoch->("2014-12-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-02-09 07:00:00"),
-       text  => 'Sterndamm: Eisenbahnunterführung voraussichtlich bis zum 09.02.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
+       until => $isodate2epoch->("2015-02-10 12:00:00"),
+       text  => 'Sterndamm: Eisenbahnunterführung voraussichtlich bis zum 10.02.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
        type  => 'gesperrt',
-       source_id => 'IM_020145',
+       source_id => 'IM_024071',
        data  => <<EOF,
 userdel	1::inwork 17886,5587 17736,5441
 EOF
@@ -23775,12 +23775,12 @@ userdel	q4::inwork; 13400,16395 13485,16362 13544,16339 13632,16305 13679,16286 
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1423509994, # -> gesperrt-orig
        text  => 'Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
-#: last_checked: 2015-02-03
+#: last_checked: 2015-02-09
 userdel	2::inwork 10308,11833 10374,11734
 EOF
      },

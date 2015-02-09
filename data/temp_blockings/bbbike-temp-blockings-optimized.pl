@@ -1389,9 +1389,9 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        {
-         'source_id' => 'IM_020145',
-         'until' => 1423461600,
-         'text' => 'Sterndamm: Eisenbahnunterführung voraussichtlich bis zum 09.02.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
+         'source_id' => 'IM_024071',
+         'until' => 1423566000,
+         'text' => 'Sterndamm: Eisenbahnunterführung voraussichtlich bis zum 10.02.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
          'from' => 1417820400,
          'id' => 2469,
          'data' => 'userdel	1::inwork 17886,5587 17736,5441
@@ -1819,17 +1819,7 @@ userdel	q4::inwork 5635,7660 5636,7540
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt, Ende der Bauarbeiten unbekannt',
-         'from' => undef,
-         'id' => 2669,
-         'data' => '#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
-#: last_checked: 2015-02-03
-userdel	2::inwork 10308,11833 10374,11734
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => undef,
