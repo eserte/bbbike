@@ -47,7 +47,7 @@ use BBBikeUtil qw(is_in_path);
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing check_gui_testing on_author_system
-	      get_pmake image_ok zip_ok create_temporary_content
+	      get_pmake image_ok zip_ok create_temporary_content static_url
 	    ),
 	   @opt_vars);
 
@@ -144,6 +144,9 @@ sub set_user_agent {
     $ua->agent("BBBike-Test/1.0");
     $ua->env_proxy;
 }
+
+# $htmldir is actually a mis-namer
+sub static_url () { $htmldir }
 
 # $filename_or_scalar: may be a filename or a scalar ref to the image contents
 # $imagetype: the image type like "svg" or "pdf". May be omitted if supplying a filename
