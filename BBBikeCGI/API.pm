@@ -112,6 +112,8 @@ sub action_config {
 	  data_is_wgs84              => $json_bool->($main::data_is_wgs84),
 	  osm_data                   => $json_bool->($main::osm_data),
 	  modules_info               => \%modules_info,
+	  bbbike_images              => $main::bbbike_images,
+	  bbbike_html                => $main::bbbike_html,
 	 }
 	);
 }
