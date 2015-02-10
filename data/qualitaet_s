@@ -297,7 +297,7 @@ Kiehlufer: Asphalt	Q0 13311,8813 13225,8880
 Kiehlufer: Kopfsteinpflaster	Q2 13225,8880 13078,8992 12950,9132 12897,9365
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12243,10274 12292,10374 12274,10436
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12341,10218 12292,10374
-Am Nordhafen: Kopfsteinpflaster	Q2 7741,14560 7527,14684
+Am Nordhafen: Kopfsteinpflaster	Q2 7741,14560 7703,14582 7527,14684
 Schubertstr.: Asphalt	Q0 21807,6535 21833,6418 21984,6317
 Pablo-Neruda-Str: asphaltiert	Q0 22965,4124 23435,4179
 Flemingstr.: Fahrbahn mit Kopfsteinpflaster, Radweg mit Gehwegplatten	Q1 7317,12751 7111,12743
@@ -1581,7 +1581,7 @@ Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
 Am Berlin-Spandauer Schiffahrtskanal: wassergebundene Decke	Q1 8248,13659 8101,13901 8119,13912
 Uferweg: Verbundsteinpflaster	Q1 8011,14096 7994,14102 7967,14161 7973,14195
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 7973,14195 7807,14441
-(Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7527,14644 7486,14652
+(Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7653,14570 7527,14644 7486,14652
 Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731
 Gabrielenstr.: guter Asphalt	Q0 1630,20731 1518,20615 1407,20563
 Gabrielenstr.: mäßiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 989,20366
@@ -7895,7 +7895,7 @@ Schneeammerweg: unbefestigte Straße	Q2 13329,20299 13420,20236
 (Park am Nordbahnhof): Asphalt	Q0 8868,14442 9081,14232 9144,14169
 (Park am Nordbahnhof): wassergebundene Decke	Q1 9144,14169 9175,14193
 (Park am Nordbahnhof - Caroline-Michaelis-Str./Mount Mitte): Beton	Q0 9119,14255 9081,14232 8992,14176
-(an der Panke - Mauerweg): Asphalt	Q0 7878,14514 7889,14519 7943,14453 7989,14478 8050,14558 8103,14582 8232,14689
+(an der Panke - Mauerweg): Asphalt	Q0 7878,14514 7889,14519 7939,14447 7989,14478 8050,14558 8103,14582 8232,14689
 Uferweg: Asphalt mit Schäden	Q2 7612,14449 7561,14458 7426,14539 7373,14566
 Uferweg: wassergebundene Decke	Q1 7740,14409 7661,14398 7634,14406 7617,14420 7597,14417
 Quitzowstr.: Kopfsteinpflaster	Q2 7080,14398 7104,14403
@@ -8963,6 +8963,9 @@ Lyonstr.: teilweise unbefestigt/Betonplattenstraße	Q2 12189,21337 12214,21332 12
 (Heerstr. - Tiefwerder): vermutlich Waldweg	Q2 -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3087,11728 -3179,11763
 Alter Fischerweg: unbefestigte Straße	Q2 29960,5467 30001,5460
 Alter Fischerweg: Kopfsteinpflaster	Q2 30001,5460 30090,5446
+(Am Nordhafen - Uferweg am Nordhafen): Asphalt	Q1 7703,14582 7696,14577 7662,14579 7653,14570
+Bergstr.: Kleinsteinpflaster	Q1 9118,14306 9135,14317
+Bergstr.: Asphalt	Q0 9135,14317 9182,14281 9272,14208
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
