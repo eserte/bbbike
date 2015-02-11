@@ -176,7 +176,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2014-12-13
+#: last_checked: 2015-02-11
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -383,9 +383,7 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: XXX laut fritz, "für mehrere Monate"
-#: next_check: 2015-02-11
-Rathausstr. (Lichtenberg): gibt es Änderungen während der Bauarbeiten Frankfurter Allee/Gürtelstr., z.B. wird die Einbahnstraßenrichtung umgedreht?	? 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
+# REMOVED (Umleitung geht anders herum) --- #: XXX laut fritz, "für mehrere Monate" --- #: next_check: 2015-02-11 --- Rathausstr. (Lichtenberg): gibt es Änderungen während der Bauarbeiten Frankfurter Allee/Gürtelstr., z.B. wird die Einbahnstraßenrichtung umgedreht?	? 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
 # 
 #: XXX fehlt in Berlin.coords.data
 #: note: Privatstraße, südlicher (jetzt schon bestehender) Abschnitt bleibt öffentlich
@@ -1503,8 +1501,8 @@ Fußweg zur Gehrenseestr.: genaue Lage, Qualität?	?::projected 17607,16328 17636,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
 #: XXX fehlt in Berlin.coords.data, PLZ=10367
-#: last_checked: 2014-12-13
-#: next_check: 2015-02-15
+#: last_checked: 2015-02-11
+#: check_frequency: 60d
 Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::inwork 15747,12880 15747,12985 15808,12989
 # 
 # REMOVED (abgelehnt, siehe Schlussbericht) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458 --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036560602837/560602837/00092292/92-Anlagen/04/B0359SB.pdf (Schlussbericht) --- #: last_checked: 2013-06-22 --- #: check_frequency: 90d --- Brandenburgplatz: wird hier eine Fußgängerampel eingerichtet?	? 23363,5714 23309,5704
