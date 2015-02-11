@@ -74,23 +74,22 @@ sub load_config {
     require Cwd;
     my $file_digest = Digest::MD5::md5_hex(Cwd::realpath($file));
     my $ns = 'BBBikeCGI::Config::config_' . $file_digest;
-    $class->set_defaults($ns);
+    $class->pre_defaults($ns);
     our $global_file = $file;
     my $code = '{package ' . $ns . '; if (!do $global_file) { die "Failed to load $global_file" }}';
     eval $code;
     die "CODE <$code> failed: $@" if $@;
+    $class->post_defaults($ns);
     $class->the_config($output_for, $ns);
 }
 
 # Set current defaults as found in bbbike.cgi
-sub set_defaults {
+sub pre_defaults {
     my($class, $ns) = @_;
     my $var_set = sub {
 	no strict 'refs';
 	${$ns.'::'.$_[0]} = $_[1];
     };
-    $var_set->('bbbike_html'                , '/bbbike/html');
-    $var_set->('bbbike_images'              , '/bbbike/images');
     $var_set->('cannot_jpeg'                , 1);
     $var_set->('cannot_svg'                 , 1);
     $var_set->('graphic_format'             , 'png');
@@ -104,6 +103,25 @@ sub set_defaults {
     $var_set->('use_fragezeichen_routelist' , 1);
     $var_set->('with_comments'              , 1);
     $var_set->('use_select'                 , 1);
+}
+
+sub post_defaults {
+    my($class, $ns) = @_;
+    my $var_set = sub {
+	no strict 'refs';
+	${$ns.'::'.$_[0]} = $_[1];
+    };
+    my $var_get = sub {
+	no strict 'refs';
+	${$ns.'::'.$_[0]};
+    };
+    my $use_cgi_bin_layout = $var_get->('use_cgi_bin_layout');
+    if (!defined $var_get->('bbbike_html')) {
+	$var_set->('bbbike_html', ($use_cgi_bin_layout ? '/BBBike' : '/bbbike') . '/html');
+    }
+    if (!defined $var_get->('bbbike_images')) {
+	$var_set->('bbbike_images', ($use_cgi_bin_layout ? '/BBBike' : '/bbbike') . '/images');
+    }
 }
 
 1;
