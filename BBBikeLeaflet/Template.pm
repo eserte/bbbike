@@ -25,6 +25,7 @@ sub new {
 	BBBikeUtil::bbbike_root() . '/html';
     };
     my $use_old_url_layout       = delete $args{use_old_url_layout};
+    my $cgi_config               = delete $args{cgi_config};
     my $leaflet_ver              = delete $args{leaflet_ver};
     my $enable_upload            = delete $args{enable_upload};
     my $enable_accel             = delete $args{enable_accel};
@@ -48,6 +49,7 @@ sub new {
     bless {
 	   htmldir                  => $htmldir,
 	   use_old_url_layout       => $use_old_url_layout,
+	   cgi_config               => $cgi_config,
 	   leaflet_ver              => $leaflet_ver,
 	   enable_upload            => $enable_upload,
 	   enable_accel             => $enable_accel,
@@ -73,6 +75,7 @@ sub process {
     my $disable_routing          = $self->{disable_routing};
     my $leaflet_ver              = $self->{leaflet_ver};
     my $use_osm_de_map           = $self->{use_osm_de_map};
+    my $cgi_config               = $self->{cgi_config};
     my $coords                   = $self->{coords};
     my $show_expired_session_msg = $self->{show_expired_session_msg};
     my $geojson_file             = $self->{geojson_file};
@@ -82,14 +85,19 @@ sub process {
     my $shortcut_icon            = $self->{shortcut_icon};
     my $title_html               = $self->{title_html};
 
-    my $use_old_url_layout = $self->{use_old_url_layout};
     my($bbbike_htmlurl, $bbbike_imagesurl);
-    if ($use_old_url_layout) {
-	$bbbike_htmlurl   = "/bbbike/html";
-	$bbbike_imagesurl = "/bbbike/images";
+    if ($cgi_config) {
+	$bbbike_htmlurl   = $cgi_config->{bbbike_html};
+	$bbbike_imagesurl = $cgi_config->{bbbike_images};
     } else {
-	$bbbike_htmlurl   = "/BBBike/html";
-	$bbbike_imagesurl = "/BBBike/images";
+	my $use_old_url_layout = $self->{use_old_url_layout};
+	if ($use_old_url_layout) {
+	    $bbbike_htmlurl   = "/bbbike/html";
+	    $bbbike_imagesurl = "/bbbike/images";
+	} else {
+	    $bbbike_htmlurl   = "/BBBike/html";
+	    $bbbike_imagesurl = "/BBBike/images";
+	}
     }
     if (defined $root_url) {
 	for ($bbbike_htmlurl, $bbbike_imagesurl) {

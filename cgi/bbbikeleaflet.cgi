@@ -22,9 +22,12 @@ use lib (
 use CGI ();
 
 use BBBikeLeaflet::Template ();
+use BBBikeCGI::Config ();
 
 my $htmldir = "$FindBin::RealBin/../html";
 my $htmlfile = "$htmldir/bbbikeleaflet.html";
+
+my $cgi_config = BBBikeCGI::Config->load_config("$FindBin::RealBin/bbbike.cgi.config", 'perl');
 
 my $q = CGI->new;
 print $q->header('text/html; charset=utf-8');
@@ -34,7 +37,6 @@ my $enable_upload      = $q->param('upl') || 0;
 my $enable_accel       = $q->param('accel') || 0;
 my $use_osm_de_map     = $q->param('osmdemap') || 0;
 my $devel              = $q->param('devel') || 0;
-my $use_old_url_layout = $q->url(-absolute => 1) =~ m{/cgi/bbbikeleaflet};
 my $show_expired_session_msg;
 my $coords;
 if ($q->param('coordssession')) {
@@ -58,7 +60,7 @@ my $tpl = BBBikeLeaflet::Template->new
      enable_upload            => $enable_upload,
      enable_accel             => $enable_accel,
      use_osm_de_map           => $use_osm_de_map,
-     use_old_url_layout       => $use_old_url_layout,
+     cgi_config               => $cgi_config,
      show_expired_session_msg => $show_expired_session_msg,
      show_feature_list        => $show_feature_list,
      coords                   => $coords,
