@@ -65,8 +65,9 @@ sub action_revgeocode {
 sub action_config {
     my $q = shift;
     print $q->header(-type => 'text/plain');
-    no warnings 'once';
-    my $json_bool = sub { $_[0] ? JSON::XS::true : JSON::XS::false };
+
+    require BBBikeCGI::Config;
+    my $r = BBBikeCGI::Config->the_config('json');
 
     my %modules_info;
     for my $module_name (
@@ -77,45 +78,8 @@ sub action_config {
 	$modules_info{$module_name} = _module_info($module_name);
     }
 
-    print JSON::XS->new->ascii->encode
-	(
-	 {
-	  use_apache_session         => $json_bool->($main::use_apache_session),
-	  apache_session_module      => $main::apache_session_module,
-	  detailmap_module           => $main::detailmap_module,
-	  graphic_format             => $main::graphic_format,
-	  can_gif                    => $json_bool->($main::can_gif),
-	  can_jpeg                   => $json_bool->(!$main::cannot_jpeg),
-	  can_pdf                    => $json_bool->(!$main::cannot_pdf),
-	  bbbikedraw_pdf_module      => $main::bbbikedraw_pdf_module,
-	  can_svg                    => $json_bool->(!$main::cannot_svg),
-	  can_wbmp                   => $json_bool->($main::can_wbmp),
-	  can_palmdoc                => $json_bool->($main::can_palmdoc),
-	  can_gpx                    => $json_bool->($main::can_gpx),
-	  can_kml                    => $json_bool->($main::can_kml),
-	  can_mapserver              => $json_bool->($main::can_mapserver),
-	  can_gpsies_link            => $json_bool->($main::can_gpsies_link),
-	  show_start_ziel_url        => $json_bool->($main::show_start_ziel_url),
-	  show_weather               => $json_bool->($main::show_weather),
-	  use_select                 => $json_bool->($main::use_select),
-	  use_berlinmap              => $json_bool->(!$main::no_berlinmap),
-	  use_background_image       => $json_bool->($main::use_background_image),
-	  with_comments              => $json_bool->($main::with_comments),
-	  with_cat_display           => $json_bool->($main::with_cat_display),
-	  use_coord_link             => $json_bool->($main::use_coord_link),
-	  city                       => $main::city,
-	  use_fragezeichen           => $json_bool->($main::use_fragezeichen),
-	  use_fragezeichen_routelist => $json_bool->($main::use_fragezeichen_routelist),
-	  search_algorithm           => $main::search_algorithm,
-	  use_exact_streetchooser    => $json_bool->($main::use_exact_streetchooser),
-	  use_utf8                   => $json_bool->($main::use_utf8),
-	  data_is_wgs84              => $json_bool->($main::data_is_wgs84),
-	  osm_data                   => $json_bool->($main::osm_data),
-	  modules_info               => \%modules_info,
-	  bbbike_images              => $main::bbbike_images,
-	  bbbike_html                => $main::bbbike_html,
-	 }
-	);
+    $r->{modules_info} = \%modules_info;
+    print JSON::XS->new->ascii->encode($r);
 }
 
 # Module info can contain:
