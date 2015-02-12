@@ -23871,4 +23871,16 @@ EOF
 userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 EOF
      },
+     { from  => undef,
+       until => undef,
+       text  => "Gürtelstr. - Möllendorffstr.: das Linksabbiegen von der Frankfurter Allee in die Möllendorffstr. und die Querung der Frankfurter Allee von der Gürtelstr. kommend ist nicht mehr direkt möglich, ggfs. Fußgängerampeln auf der westlichen Seite benutzen",
+       data  => <<EOF,
+#: XXX "für mehrere Monate"
+#: last_checked: 2015-02-11 vvv
+	3 15294,11964 15361,12071 15420,12178
+	3 15117,12106 15361,12071 15420,12178
+#: last_checked ^^^
+#: XXX ^^^
+EOF
+     }
     );

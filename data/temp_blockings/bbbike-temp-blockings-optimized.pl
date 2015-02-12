@@ -1865,6 +1865,19 @@ userdel	2::inwork 7772,4306 7795,4242 8106,3410
          'data' => 'userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Gürtelstr. - Möllendorffstr.: das Linksabbiegen von der Frankfurter Allee in die Möllendorffstr. und die Querung der Frankfurter Allee von der Gürtelstr. kommend ist nicht mehr direkt möglich, ggfs. Fußgängerampeln auf der westlichen Seite benutzen',
+         'from' => undef,
+         'id' => 2679,
+         'data' => '#: XXX "für mehrere Monate"
+#: last_checked: 2015-02-11 vvv
+	3 15294,11964 15361,12071 15420,12178
+	3 15117,12106 15361,12071 15420,12178
+#: last_checked ^^^
+#: XXX ^^^
+'
        }
      
 );
