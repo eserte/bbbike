@@ -21,7 +21,7 @@ BEGIN {
     }
 }
 
-use BBBikeTest qw(check_cgi_testing $cgidir eq_or_diff static_url);
+use BBBikeTest qw(check_cgi_testing $cgidir eq_or_diff);
 
 check_cgi_testing;
 
@@ -33,9 +33,6 @@ $ua->env_proxy;
 
 my $cgiurl = "$cgidir/bbbike.cgi";
 my $cgitesturl = "$cgidir/bbbike-test.cgi";
-my $static_url = static_url;
-my $htmldir = "$static_url/html";
-my $imagesdir = "$static_url/images";
 
 {
     my $data = do_config_api_call($cgiurl);
@@ -51,6 +48,17 @@ my $imagesdir = "$static_url/images";
 	my $apache_session_module = delete $data->{apache_session_module};
 	like $apache_session_module, qr{^Apache::Session(|::Counted)$};
     }
+
+    # following two are semi-dynamically; host name depends on $cgidir
+    my $bbbike_html = delete $data->{bbbike_html};
+    my $bbbike_images = delete $data->{bbbike_images};
+    (my $expected_bbbike_root = $cgitesturl) =~ s{/cgi(-bin)?/bbbike-test\.cgi$}{};
+    # Yes, $expected_bbbike_root is "http://$HOSTNAME" on setups with
+    # use_cgi_bin_layout, which yields to "http://$HOSTNAME/html",
+    # which does not exist. But that's the state of bbbike-test.cgi on
+    # such systems.
+    is $bbbike_html, "$expected_bbbike_root/html";
+    is $bbbike_images, "$expected_bbbike_root/images";
 
     # and modules_info is dynamically determined from system's
     # installed modules
@@ -70,8 +78,6 @@ my $imagesdir = "$static_url/images";
 
     eq_or_diff $data,
 	{
-	 bbbike_html                => $htmldir,
-	 bbbike_images              => $imagesdir,
 	 bbbikedraw_pdf_module	    => undef,
 	 can_gif		    => JSON::XS::false,
 	 can_gpsies_link	    => JSON::XS::false,
