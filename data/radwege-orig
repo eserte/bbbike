@@ -275,11 +275,8 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 	RW1;RW1 10020,11262 10256,11160 10501,11056 10684,10975
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10684,10975 10779,10934
-#: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen)
-#: last_checked: 2014-11-21
-#: check_frequency: 60d
-#eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10832,10910
-	RW0; 10779,10934 10794,10927 10832,10910
+# REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
+eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10832,10910
 	RW1; 10832,10910 10794,10927 10779,10934 10684,10975
 	RW1;RW2 10605,10312 10633,10369
 	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682 10854,10854
@@ -1006,7 +1003,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_023987
 #: osm_watch: way id="24913297" version="35"
 #: last_checked: 2014-11-26
-#: next_check: 2015-12-31
+#: next_check: 2015-02-28
 Busspur ist immer gültig	RW5; 9141,12320 9358,12351 9475,12365
 # 
 #: next_check_id: STABIUDL-2014

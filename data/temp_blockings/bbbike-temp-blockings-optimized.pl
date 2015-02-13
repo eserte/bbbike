@@ -1533,7 +1533,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'from' => undef,
          'id' => 2557,
          'data' => '#: XXX wann ist die Baustelle fertig?
-#: last_checked: 2015-01-27
+#: last_checked: 2015-02-13
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 ',
@@ -1700,14 +1700,14 @@ userdel	2::inwork 15419,10706 15379,10651
        undef,
        {
          'until' => 1424473200,
-         'text' => 'Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
+         'text' => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
          'from' => 1412021931,
          'id' => 2636,
          'data' => '#: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
 #: XXX vielleicht wird hier asphaltiert?
 #: last_checked: 2014-10-01
-#: next_check: 2015-02-14
+#: next_check: 2015-02-18
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 ',
          'type' => 'gesperrt'
@@ -1871,7 +1871,7 @@ userdel	2::inwork 7772,4306 7795,4242 8106,3410
          'text' => 'Gürtelstr. - Möllendorffstr.: das Linksabbiegen von der Frankfurter Allee in die Möllendorffstr. und die Querung der Frankfurter Allee von der Gürtelstr. kommend ist nicht mehr direkt möglich, ggfs. Fußgängerampeln auf der westlichen Seite benutzen',
          'from' => undef,
          'id' => 2679,
-         'data' => '#: XXX "für mehrere Monate"
+         'data' => '#: XXX "für mehrere Monate" vvv
 #: last_checked: 2015-02-11 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178

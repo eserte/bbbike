@@ -154,8 +154,8 @@ Grimmstr.	1 11175,9882 11186,9861 11141,9732 11110,9661 11075,9576
 Körtestr.	1 11004,9554 11023,9597
 Körtestr.	1 11055,9539 11004,9554
 Fichtestr.	1 11075,9576 11055,9539
-Baerwaldstr.	1 10361,9755 10357,9813 10424,9958 10467,10051 10500,10081
-Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
+Baerwaldstr.	1 10361,9755 10357,9813 10424,9958
+Baerwaldstr.	1 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7865,3354 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
@@ -2004,7 +2004,11 @@ Mittelstreifen	3nocross::ignrte 18930,3703 18884,3752 18856,3783 18826,3816
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18884,3752 18856,3783
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18856,3783 18826,3816
 Mittelstreifen	3nocross::ignrte 18826,3816 18773,3873 18541,4125
+Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18701,3806 18773,3873 18541,4125
+Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18826,3816 18773,3873 18701,3806
 Mittelstreifen	3nocross::ignrte 18541,4125 18374,4307 18239,4453
+Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18208,4151 18374,4307 18239,4453
+Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18541,4125 18374,4307 18208,4151
 Mittelstreifen	3nocross::ignrte 18930,3703 19029,3595 19125,3491
 Groß-Berliner Damm -> Konrad-Zuse-Str.: Mittelstreifen	3::igndisp 19125,3491 19029,3595 18943,3508
 Konrad-Zuse-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18943,3508 19029,3595 18930,3703
@@ -2748,6 +2752,8 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
+Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Februar 2015 bis voraussichtlich Oktober 2015	2::inwork 7653,14570 7527,14644 7486,14652
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 Grenzweg: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17445,7434 17575,7519
@@ -2765,7 +2771,7 @@ Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen während der Bauarbeiten nich
 Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3837,11760 3844,11649 3866,11473
 Sesenheimer Str. -> Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3866,11473 3844,11649 3690,11629
 Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3866,11473 3844,11649 3837,11760
-Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
+Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045

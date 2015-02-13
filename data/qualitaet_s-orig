@@ -671,7 +671,7 @@ Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1+ 14373,10046 14202,10152 
 Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11141,9107
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10619,9914 10602,9957 10500,10081
-Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10500,10081
+Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10469,10081 10500,10081
 Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4745&options=4 --- #: XXX Ist eine Verbesserung in Zukunft in Sicht? --- #: last_checked: 2013-06-27 --- #: next_check: 2013-08-01
 Zillestr.: Asphalt	Q0 3268,11847 3117,11852
@@ -9731,6 +9731,13 @@ Alter Fischerweg: Kopfsteinpflaster	Q2- 30001,5460 30090,5446
 (Am Nordhafen - Uferweg am Nordhafen): Asphalt	Q1 7703,14582 7696,14577 7662,14579 7653,14570
 Bergstr.: Kleinsteinpflaster	Q1 9118,14306 9135,14317
 Bergstr.: Asphalt	Q0 9135,14317 9182,14281 9272,14208
+#: note: "Mahlsdorfer Grünzug"
+#: XXX wie wird die Qualität später sein? Wird die Straße verkehrsberuhigt sein?
+#: next_check: 2015-07-01
+Pfarrhufenanger: Baustraße, unbefestigt	Q2- 25599,13069 25427,12847 25250,12632
+#: by: https://www.flickr.com/photos/39170999@N02/16453711661/in/pool-39413187@N00
+#: by: osm
+Gerhard-Sedlmayr-Str.: Asphalt	Q0 18773,3873 18701,3806 18520,3812 18208,4151 18374,4307
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12178,7 +12185,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2014-12-13
+#: last_checked: 2015-02-13
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -22637,7 +22644,7 @@ Sudermannstr.: sehr guter Asphalt	Q0 24978,12793 25126,12710 25189,12661
 #: XXX es wird auch noch ein "verkehrsberuhigter Bereich" bis zum Pfarrhufenweg gebaut
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5649
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45-181-1361000447875/1000447875/00070908/08-Anlagen/02/vzb0704_IV-B-Plan_10-51_Festsetzung.pdf
-#: next_check: 2015-06-01
+#: next_check: 2015-07-01
 Sudermannstr.: fester Sandweg	Q2+ 25189,12661 25218,12653 25250,12632 25305,12597
 #: note: "frisch asphaltiert"
 #: confirmed_by: srt

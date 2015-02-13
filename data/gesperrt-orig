@@ -179,8 +179,10 @@ Grimmstr.	1 11175,9882 11186,9861 11141,9732 11110,9661 11075,9576
 Körtestr.	1 11004,9554 11023,9597
 Körtestr.	1 11055,9539 11004,9554
 Fichtestr.	1 11075,9576 11055,9539
-Baerwaldstr.	1 10361,9755 10357,9813 10424,9958 10467,10051 10500,10081
-Baerwaldstr.	1 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
+Baerwaldstr.	1 10361,9755 10357,9813 10424,9958
+# XXX vorrübergehend keine Einbahnstraße (wg. Sackgasse) --- Baerwaldstr.	1 10424,9958 10467,10051 10500,10081
+# XXX vorrübergehend keine Einbahnstraße (wg. Umleitung) --- Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
+Baerwaldstr.	1 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7865,3354 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet
@@ -2582,6 +2584,17 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
+#: source_id: IM_023816 vvv
+#: last_checked: 2015-02-13 vvv
+#: next_check: 2015-03-06 (evtl. auch bis März 2016 andauernd) vvv
+Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
+Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
+#: next_check ^^^
+#: last_checked ^^^
+#: source_id ^^^
+#: XXX ^^^
+# 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
 #: last_checked: 2015-02-10
 #: next_check: 2015-10-01
@@ -2634,7 +2647,7 @@ Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 30.09.2015 ge
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.153649.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.214040.php
 #: XXX falls es soweit ist -> gesperrt-orig
-#: last_checked: 2014-12-23
+#: last_checked: 2015-02-13
 #: next_check: 2015-05-01
 Lohmühlenplatz: Umgestaltung des Platzes, Wege ist gesperrt	2::inwork 12900,9465 12897,9365
 # 
@@ -2650,7 +2663,7 @@ Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 
 #: next_check: 2015-02-18
 #: valid: 20140925-20150218
 #: XXX danach gilt noch einige Tage lang der temp_blockings-Eintrag
-Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
+Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
 # 
 #: last_checked: 2014-11-20
 #: check_frequency: 90d
@@ -2788,7 +2801,7 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
 #: last_checked: 2015-02-03 vvv
-#: next_check: 2015-06-30 vvv
+#: next_check: 2015-02-13 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 #: next_check ^^^
@@ -2866,7 +2879,7 @@ Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
 #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert?
 Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2015-02-10
+#: last_checked: 2015-02-13
 #: check_frequency: 90d
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 

@@ -22685,7 +22685,7 @@ EOF
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
 #: XXX wann ist die Baustelle fertig?
-#: last_checked: 2015-01-27
+#: last_checked: 2015-02-13
 #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 EOF
@@ -23397,9 +23397,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html',
        data  => <<EOF,
-#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php
-#: last_checked: 2015-01-27
-#: check_frequency: 10d
+# REMOVED (weitgehend fertig, bis aud die Kreuzung) --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/gounodstrasse.php --- #: last_checked: 2015-01-27 --- #: check_frequency: 10d
 userdel	q4::inwork 13645,15609 13739,15643
 userdel	q3::inwork 13739,15643 13776,15546
 EOF
@@ -23471,14 +23469,14 @@ EOF
      },
      { from  => 1412021931, # 2014-09-29 22:18
        until => 1424473200, # 2015-02-21 00:00
-       text  => 'Invalidenfriedhof - Invalidestr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
+       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
 #: XXX vielleicht wird hier asphaltiert?
 #: last_checked: 2014-10-01
-#: next_check: 2015-02-14
+#: next_check: 2015-02-18
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 EOF
      },
@@ -23875,7 +23873,7 @@ EOF
        until => undef,
        text  => "Gürtelstr. - Möllendorffstr.: das Linksabbiegen von der Frankfurter Allee in die Möllendorffstr. und die Querung der Frankfurter Allee von der Gürtelstr. kommend ist nicht mehr direkt möglich, ggfs. Fußgängerampeln auf der westlichen Seite benutzen",
        data  => <<EOF,
-#: XXX "für mehrere Monate"
+#: XXX "für mehrere Monate" vvv
 #: last_checked: 2015-02-11 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
