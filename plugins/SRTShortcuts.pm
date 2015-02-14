@@ -765,6 +765,10 @@ EOF
 		[Button => "Render Mapnik map (all current layers)",
 		 -command => sub { render_mapnik_map(-special => "current-layers") },
 		],
+		[Button => "Update Mapnik map data",
+		 -command => sub { update_mapnik_map_data() },
+		],
+		'-',
 		[Button => "Show Karte canvas items",
 		 -command => sub {
 		     my $wd = _get_tk_widgetdump();
@@ -2832,12 +2836,9 @@ sub render_mapnik_map {
 
     my($px0,$py0,$px1,$py1) = main::get_current_bbox_as_wgs84();
 
-    my $renderer = "$bbbike_rootdir/../mapnik-bbbike/tools/renderer.py";
-    if (!-x $renderer) {
-	require File::Basename;
-	main::status_message("Mapnik renderer $renderer not available --- please run 'git clone git://github.com/eserte/mapnik-bbbike.git' in " . File::Basename::dirname($bbbike_rootdir) . " and follow the instructions in mapnik-bbbike/tools/Makefile", 'error');
-	return;
-    }
+    my $mapnik_bbbike_dir = get_mapnik_map_directory();
+    return if !$mapnik_bbbike_dir;
+    my $renderer = "$mapnik_bbbike_dir/tools/renderer.py";
 
     my $bbox_arg = "--bbox=$px0,$py0,$px1,$py1";
 
@@ -2903,6 +2904,36 @@ sub render_mapnik_map {
 	my @cmd = ($renderer, ($mapfile ? "--mapfile=$mapfile" : ()), '--view', $bbox_arg);
 	BBBikeProcUtil::double_forked_exec(@cmd);
     }
+}
+
+sub update_mapnik_map_data {
+    my $mapnik_bbbike_dir = get_mapnik_map_directory();
+    return if !$mapnik_bbbike_dir;
+    my $tools_dir = "$mapnik_bbbike_dir/tools";
+    require BBBikeUtil;
+    my $save_pwd = BBBikeUtil::save_pwd2();
+    chdir $tools_dir
+	or main::status_message("Can't chdir to $tools_dir: $!", 'die');
+    my @cmd = ('make', 'bbbike2wgs84-mapnik', 'import-postgres');
+    main::IncBusy($main::top);
+    system @cmd;
+    my $exit_code = $?;
+    main::DecBusy($main::top);
+    if ($exit_code != 0) {
+	main::status_message("Error running '@cmd'", 'die');
+    } else {
+	main::status_message('Update done', 'info');
+    }
+}
+
+sub get_mapnik_map_directory {
+    my $dir = "$bbbike_rootdir/../mapnik-bbbike";
+    if (!-x $dir) {
+	require File::Basename;
+	main::status_message("Mapnik project '$dir' not available --- please run 'git clone git://github.com/eserte/mapnik-bbbike.git' in " . File::Basename::dirname($bbbike_rootdir) . " and follow the instructions in mapnik-bbbike/tools/Makefile", 'error');
+	return;
+    }
+    return $dir;
 }
 
 ######################################################################
