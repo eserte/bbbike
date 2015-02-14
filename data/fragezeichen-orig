@@ -316,7 +316,7 @@ Kˆpenicker Landstraﬂe: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5463
 #: source_id: IM_023242
 #: XXX Bauarbeiten sind fertig, die Markierung ist allerdings noch nicht erfolgt
-#: last_checked: 2015-02-01
+#: last_checked: 2015-02-14
 Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
@@ -384,17 +384,13 @@ Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
 # REMOVED (Umleitung geht anders herum) --- #: XXX laut fritz, "f¸r mehrere Monate" --- #: next_check: 2015-02-11 --- Rathausstr. (Lichtenberg): gibt es ƒnderungen w‰hrend der Bauarbeiten Frankfurter Allee/G¸rtelstr., z.B. wird die Einbahnstraﬂenrichtung umgedreht?	? 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
-# 
-#: XXX fehlt in Berlin.coords.data
-#: note: Privatstraﬂe, s¸dlicher (jetzt schon bestehender) Abschnitt bleibt ˆffentlich
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015
-Zur alten Bˆrse: Qualit‰t, schon fertig?	? 18766,13257 18654,12255
-# 
+# REMOVED (-> aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- #: note: Privatstraﬂe, s¸dlicher (jetzt schon bestehender) Abschnitt bleibt ˆffentlich --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- Zur alten Bˆrse: Qualit‰t, schon fertig?	? 18736,13080 18712,12853 18682,12599 18649,12371 --- Marzahner Chaussee [Zur alten Bˆrse]: Qualit‰t, schon fertig?	? 18649,12371 18639,12272 18654,12255
 # REMOVED --- #: XXX fehlt in Berlin.coords.data --- #: note: "Mahlsdorfer Gr¸nzug" --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- Pfarrhufenanger: Qualit‰t, schon befahrbar? Verkehrsberuhigt?	? 25599,13069 25427,12847 25250,12632
 # REMOVED (teilweise offiziell f¸r Radfahrer offen) --- #: XXX Zimmerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 01/15) Richtung Friedrichstr. zwischen Wilhelmstr. und Friedrichstr., 04.11.2014 14:58 Uhr bis 31.01.2015 16:00 Uhr --- #: XXX wahrscheinlich f¸r Radfahrer offen --- #: source_id: IM_023356 --- #: next_check: 2014-11-10 --- Zimmerstr.: Bauarbeiten f¸r Radfahrer relevant?	?::inwork 9155,11283 9478,11317
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5602 (Baubeginn "in K¸rze")
-#: next_check: 2014-12-01
+#: last_checked: 2015-02-14
+#: check_frequency: 60d
 Rummelsburger/Zacherstr.: Ampel wird verlegt (auf die Ostseite)	?::projected 17834,11192 17848,11204
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141028.1510.399863.html
@@ -822,8 +818,8 @@ B¸rknerstr.: wird hier eine Fahrradstraﬂe eingerichtet?	?::projected 11673,9720 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2014
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20141007.1540.399597.html
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
-#: last_checked: 2014-11-08 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2015-02-14 vvv
+#: check_frequency: 60d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
 #: osm_watch: way id="290255259" version="1"
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
@@ -837,25 +833,21 @@ Planstraﬂe 2 (Fortsetzung Rˆmerweg): Name wahrscheinlich Frauenauer Str.? Qualit
 # REMOVED --- #: XXX Rinchnacher Weg|Karlshorst|10318 --- Planstraﬂe 5 -> Rinchnacher Weg: Qualit‰t etc?	?::projected 19801,9680 19790,9478
 #: osm_watch: way id="193373957" version="3"
 #: XXX Teisnacher Str.|Karlshorst|10318
-Planstraﬂe 6 -> Teisnacher Str.: Qualit‰t etc?	?::projected 19857,9682 19849,9477
-# REMOVED (teilweise realisiert) --- #: XXX PLZ=10318 --- Planstraﬂe 7 -> Regener Str.: Qualit‰t etc?	?::projected 19646,9490 19722,9483 19790,9478 19849,9477 19890,9476
+Planstraﬂe 6 -> Teisnacher Str.: Qualit‰t etc?	?::projected 19857,9682 19849,9474
+# REMOVED (teilweise realisiert) --- #: XXX PLZ=10318 --- Planstraﬂe 7 -> Regener Str.: Qualit‰t etc?	?::projected 19646,9490 19722,9483 19790,9478 19849,9474 19890,9471
 #: XXX Planstraﬂe 8+10 -> Regener Str.
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/03/246-2013-2Anlage2UebersichtsplanErschliessung.pdf vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf vvv
-#: osm_watch: way id="290220612" version="1"
-Planstraﬂe 8: Name vielleicht Regener Str.? Qualit‰t?	?::projected 19869,9151 19885,9400 19890,9476
-#: osm_watch: way id="193373966" version="4"
-Straﬂe in Bau: genaue Lage, Name (hier auch die Regener Str.?), Qualit‰t?	?::inwork 19626,9166 19869,9151
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straﬂenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-Planstraﬂe 9: Name wahrscheinlich Patersdorfer Str.? Qualit‰t etc?	?::projected 19700,9040 19759,9041 19869,9151
+Planstraﬂe 9: evtl. Fortsetzung der Regener Str.? Qualit‰t etc?	?::projected 19700,9040 19759,9041 19869,9151
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5991 (Straﬂenname)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036397475695/397475695/00115094/94-Anlagen/02/Anlage1329.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2014
 #: note: Privatstraﬂe
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-Planstraﬂe 11 -> Zachenberger Str.: Qualit‰t?	?::projected 19885,9400 19795,9407
+Planstraﬂe 11 -> Zachenberger Str.: Qualit‰t?	?::projected 19885,9400 19780,9409
 #: by: ^^^
 #: by: ^^^
 #: by: ^^^
@@ -1420,7 +1412,7 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Hˆhe Kunersdorfer S
 (Alter Tornow - F‰hre): Qualit‰t (vielleicht Verbundsteinpflaster?)? Tats‰chlich NN?	? -13980,-2690 -14045,-2595
 # 
 #: next_check_id: SUEDPANKE-2014
-#: osm_watch: way id="186786509" version="3"
+#: osm_watch: way id="327596403" version="1"
 #: XXX culdesac-orig entfernen, sobald die Verl‰ngerung erfolgt ist
 #: last_checked: 2014-02-10
 #: next_check: 2015-04-23
@@ -1471,8 +1463,8 @@ Pfirsichbl¸tenweg: dieser Abschnitt des Wegs am Nordgraben wird umbenannt	? 1125
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 ("Anna-Maria-M¸ller-Str.")
 #: XXX fehlen alle in Berlin.coords.data vvv
 #: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel"
-#: last_checked: 2014-09-27 vvv
-#: next_check: 2015-02-15 vvv
+#: last_checked: 2015-02-14 (nur einige unbefestigte Baustraﬂen) vvv
+#: check_frequency: 100d vvv
 Planstraﬂe 1: Helga-Haase-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
 Planstraﬂe 2: Jutta-Langenau-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17607,16328 17632,16336 17816,16401 17877,16423
 Planstraﬂe 3: Gerhard-Schulz-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17508,16356 17497,16385 17552,16461
@@ -1481,8 +1473,8 @@ Planstraﬂe 4: Harry-Glaﬂ-Straﬂe: genaue Lage, Qualit‰t?	?::projected 17552,16461
 Planstraﬂe 5: Joachim-Bˆhmer-Straﬂe (oder ist das die Erich-Hagen-Straﬂe?): genaue Lage, Qualit‰t?	?::projected 17673,16420 17657,16464 17712,16549
 Planstraﬂe 6: Erich-Hagen-Straﬂe (oder ist das die Joachim-Bˆhmer-Straﬂe?): genaue Lage, Qualit‰t?	?::projected 17816,16401 17792,16465 17776,16504 17712,16549 17673,16577
 Planstraﬂe 7: Anna-Maria-M¸ller-Str.: genaue Lage, Qualit‰t?	?::projected 17712,16549 17751,16603
-Fuﬂweg zur Gehrenseestr.: genaue Lage, Qualit‰t?	?::projected 17607,16328 17636,16256
-#: next_check ^^^
+Fuﬂweg zur Gehrenseestr.: genaue Lage, Qualit‰t?	?::projected 17607,16328 17640,16259
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 

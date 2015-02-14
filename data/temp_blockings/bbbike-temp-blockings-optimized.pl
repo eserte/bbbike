@@ -1687,7 +1687,7 @@ userdel	q3::inwork 4503,10497 4485,10307
          'text' => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugangs bis 2016 möglich',
          'from' => 1411312807,
          'id' => 2631,
-         'data' => '#: last_checked: 2015-01-03 (gerade nicht gesperrt)
+         'data' => '#: last_checked: 2015-02-14 (gerade nicht gesperrt)
 #: next_check: 2015-12-01
 userdel	2::inwork 15419,10706 15379,10651
 ',

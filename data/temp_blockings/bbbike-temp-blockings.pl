@@ -23428,7 +23428,7 @@ EOF
        type  => 'gesperrt',
        dont_check_date => 1,
        data  => <<EOF,
-#: last_checked: 2015-01-03 (gerade nicht gesperrt)
+#: last_checked: 2015-02-14 (gerade nicht gesperrt)
 #: next_check: 2015-12-01
 userdel	2::inwork 15419,10706 15379,10651
 EOF
