@@ -5,6 +5,7 @@
 #:
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
+Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
@@ -690,9 +691,9 @@ Osterpfad: enge Straße	q1 23668,10823 23639,10743
 Kurzer Weg (Karlshorst): kurvig und eng	q2 20334,7753 20451,7744 20503,7848
 Emrichstr. [Wohngebiet]: enge Straße	q1 25353,4939 25443,4936 25453,5091 25467,5115 25470,5241
 (Schulstr. - Waldbacher Str., Bahnüberführung): kurvig, Fußgänger	q2 20368,11937 20338,11973 20338,11991 20387,12021 20382,12052 20388,12060 20404,12055
-Büxensteinallee: enger Weg	q1 22521,1134 22368,1081 22228,1071
+Büxensteinallee: enger Weg	q1 22525,1139 22368,1081 22228,1071
 Büxensteinallee: Marktstände, Fußgänger	q3 22228,1071 22162,1067
-(Sportallee): Fußgänger	q1 22577,1002 22368,1081
+(Sportallee): Fußgänger	q1 22583,1004 22368,1081
 Don-Ugoletti-Platz - Regattastr.: Fußgänger, Bordsteine	q1 22449,1569 22478,1602 22549,1644
 Ede-und-Unku-Weg: Fußgänger, Radfahren erlaubt	q1 15140,11811 15122,11834 15121,11899
 Chiemseestr.: enge Straße	q1 22204,1496 22334,1553
@@ -2066,7 +2067,7 @@ Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,
 Nantesstr.: enge Straße	q1 11200,21689 11251,22022 11231,22065 11077,22236
 Helgiweg: enge Straße	q0 14459,18589 14517,18410
 Helgiweg: enge Straße	q0 14533,18413 14565,18226 14576,18163 14595,18050
-Lummenweg: eng durch parkende Autos	q1 21879,2592 21919,2510 21936,2388
+Lummenweg: eng durch parkende Autos	q0 21879,2592 21919,2510 21939,2388
 Hermannstr. (Zehlendorf): enge Straße	q1 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
 Großkopfstr.: enge Straße (parkende Autos)	q0 5167,17725 5363,17667
 Privatstr. 7: enge Straße	q1 16978,16915 17051,16923 17129,16922 17199,16907 17264,16892

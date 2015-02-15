@@ -2736,7 +2736,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21823,4210 21679,4059 21496,3849 21489,3841 21411,3760 21357,3705 21324,3691 21308,3644 21275,3607 21244,3571 21198,3522 21153,3484 21055,3415 20967,3343 20927,3292 20832,3170
+userdel	q4; 21829,4212 21679,4059 21496,3849 21489,3841 21411,3760 21357,3705 21324,3691 21308,3644 21275,3607 21244,3571 21198,3522 21153,3484 21055,3415 20967,3343 20927,3292 20832,3170
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -22980,7 +22980,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
        data  => <<EOF,
-userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22436,-168
+userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22440,-175
 EOF
      },
      { from  => 1406844000, # 2014-08-01 00:00

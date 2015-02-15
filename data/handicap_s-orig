@@ -13,9 +13,10 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-02-14 vvv
+#: last_checked: 2015-02-15 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
+Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
@@ -1161,9 +1162,9 @@ Kurzer Weg (Karlshorst): kurvig und eng	q2 20334,7753 20451,7744 20503,7848
 Emrichstr. [Wohngebiet]: enge Straße	q1 25353,4939 25443,4936 25453,5091 25467,5115 25470,5241
 #: note: offiziell nur für Fußgänger
 (Schulstr. - Waldbacher Str., Bahnüberführung): kurvig, Fußgänger	q2 20368,11937 20338,11973 20338,11991 20387,12021 20382,12052 20388,12060 20404,12055
-Büxensteinallee: enger Weg	q1 22521,1134 22368,1081 22228,1071
+Büxensteinallee: enger Weg	q1 22525,1139 22368,1081 22228,1071
 Büxensteinallee: Marktstände, Fußgänger	q3 22228,1071 22162,1067
-(Sportallee): Fußgänger	q1 22577,1002 22368,1081
+(Sportallee): Fußgänger	q1 22583,1004 22368,1081
 #: XXX_prog: Bordstein am Don-Ugoletti-Platz und an der Regattastr., falls man links abbiegt
 Don-Ugoletti-Platz - Regattastr.: Fußgänger, Bordsteine	q1 22449,1569 22478,1602 22549,1644
 Ede-und-Unku-Weg: Fußgänger, Radfahren erlaubt	q1 15140,11811 15122,11834 15121,11899
@@ -3391,7 +3392,8 @@ Helgiweg: enge Straße	q0- 14533,18413 14565,18226 14576,18163 14595,18050
 #: by: ^^^
 # 
 #: by: yossi:
-Lummenweg: eng durch parkende Autos	q1 21879,2592 21919,2510 21936,2388
+#: corrected_by: srt/policy (q1 -> q0-)
+Lummenweg: eng durch parkende Autos	q0- 21879,2592 21919,2510 21939,2388
 #: by: Isabel (easybelli):
 Hermannstr. (Zehlendorf): enge Straße	q1 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
 #: by: Christian Schmidt-Gütter:

@@ -189,13 +189,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
 # 
-#: XXX Baumaßnahme 9.19 (Realisierung nach 2011)
-#: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt?
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php
-#: source_id: IM_022377
-#: last_checked: 2014-08-08
-#: next_check: 2014-12-17
-Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
+# REMOVED (teilweise realisiert) --- #: XXX Baumaßnahme 9.19 (Realisierung nach 2011) --- #: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php --- #: source_id: IM_022377 --- #: last_checked: 2014-08-08 --- #: next_check: 2014-12-17 --- Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 20383,4963 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
 #: last_checked: 2014-10-04
@@ -425,19 +419,7 @@ Zypressenweg: Qualität, Beleuchtung, Straßenbenennung	? 10685,23707 10603,23870
 #: XXX laut osm track=grade2, aber auch Kapellenweg
 Verlängerung des Kapellenwegs: Qualität? Ausschilderung?	? 10667,23684 10685,23707 10724,23744 10885,23830
 # 
-#: XXX fehlen in Berlin.coords.data, PLZ 12527; beides sind Privatstraßen vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4906 vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036406312569/406312569/00102749/49-Anlagen/01/DRS0806VK.pdf vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2014 vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2014 (Hausnummern) vvv
-Waldkiefernring: genaue Lage, Qualität?	?::inwork 21839,2419 21848,2405 21748,2355 21786,2279 21896,2326
-Fähenweg: genaue Lage, Qualität?	?::inwork 21875,2363 21803,2324
-#: by: ^^^
-#: by: ^^^
-#: by: ^^^
-#: by: ^^^
-#: XXX ^^^
-# 
+# REMOVED (aufgenommen) --- #: XXX fehlen in Berlin.coords.data, PLZ 12527; beides sind Privatstraßen vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4906 vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036406312569/406312569/00102749/49-Anlagen/01/DRS0806VK.pdf vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2014 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2014 (Hausnummern) vvv --- Waldkiefernring: genaue Lage, Qualität?	?::inwork 21855,2392 21754,2329 21782,2283 21885,2343 --- Fähenweg: genaue Lage, Qualität?	?::inwork 21869,2367 21791,2323
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140917.1035.399288.html --- #: last_checked: 2014-12-13 --- #: next_check: 2014-12-31 --- Gounodstr.: nach den Bauarbeiten asphaltiert	?::inwork 13645,15609 13739,15643 13939,15723
 # 
 #: source_id: IM_022856
@@ -461,8 +443,8 @@ Goldfasanenweg: dieser Abschnitt fehlt noch	?::inwork 20861,15352 20906,15352
 #: by: http://www.wasserstadt-spindlersfeld.de/media/rokgallery/3/3d5d905a-4cc9-4db5-b900-98d710dc3203/39a732b0-0220-4970-e1c5-cdc4bb0dec0c.jpg
 #: by: http://www.wasserstadt-spindlersfeld.de/projekt/wasserstadt-spindlersfeld
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=428838&postcount=124
-#: last_checked: 2014-07-18
-#: check_frequency: 90d
+#: last_checked: 2015-02-15
+#: check_frequency: 360d
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität? Anbindund zum Uferweg?	?::projected 21447,5414 21482,5388 21555,5214 21415,5157 21498,5023
 # 
 # REMOVED (oberhalb) --- #: last_checked: 2014-05-06 --- #: check_frequency: 14d --- Paul-und-Paula-Ufer: wird der Radweg am Ufer oder oberhalb entlang geführt?	?::inwork 15200,10600 15145,10636 15101,10640
@@ -883,21 +865,7 @@ Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,115
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140214.0600.394386.html vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.232673.php (Startschuss)
-#: XXX fehlen in Berlin.coords.data, PLZ=12439
-#: osm_watch: way id="185792044" version="3"
-#: last_checked: 2014-11-15 (Trasse schon sichtbar) vvv
-#: check_frequency: 90d vvv
-Wasserstr.: geplante Straße in Niederschöneweide	?::projected 17477,6031 17639,6227
-Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,6083 17900,6072
-#: check_frequency ^^^
-#: last_checked ^^^
-#: by: ^^^
-#: by: ^^^
-#: by: ^^^
+# REMOVED (-> strassen-orig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140214.0600.394386.html vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.232673.php (Startschuss) --- #: XXX fehlen in Berlin.coords.data, PLZ=12439 --- #: osm_watch: way id="185792044" version="3" --- #: last_checked: 2014-11-15 (Trasse schon sichtbar) vvv --- #: check_frequency: 90d vvv --- Wasserstr.: geplante Straße in Niederschöneweide	?::projected 17477,6031 17639,6227 --- Uferstr.: geplante Straße in Niederschöneweide	?::projected 17639,6227 17843,6083
 # 
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_51%5B1%5D.pdf
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.0740.385616.html (Spatenstich)
@@ -1025,7 +993,7 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101116.0930.319072.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/friedrich_engels_strasse.html (aktuelle Infos) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20121115.1100.378059.html (Bauende: 2014) --- #: last_checked: 2012-05-03 --- #: next_check: 2013-12-15 --- Fr.-Engels-Str.: Fahrradstreifen werden angelegt, Kopfsteinpflaster verschwindet	?::projected 9355,19789 9333,19853 9300,19949 9266,20048 9235,20125 9149,20336
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20101117.1135.319249.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/kastanienallee_pb.html (aktuelle Infos) --- #: XXX Richtung Norden existieren schon Radspuren --- #: last_checked: 2013-11-05 --- #: next_check: 2013-11-24 --- Kastanienallee: Fahrradstreifen werden angelegt	?::inwork 10530,14452 10723,14772
 # 
-#: last_checked: 2014-05-17 vvv
+#: last_checked: 2015-02-15 vvv
 #: check_frequency: 360d vvv
 Wilhelmine-Duncker-Str.	?::projected 21487,173 21457,289
 Weidenkätzchenweg	?::projected 21421,158 21447,47
@@ -1154,10 +1122,7 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 #: next_check: 2015-08-28
 L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht mehr gepflastert	?::inwork 11054,-5341 11106,-5538 10782,-6409 10636,-6703 10483,-7211 10448,-7582
 # 
-#: source_id: IM_023224
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.218616.php (Arbeiten des Straßenamtes)
-#: next_check: 2014-11-10
-Buntzelstr.: Bauarbeiten --- gibt es danach Änderunden bzgl. der Radwege?	?::inwork 22075,779 22120,659 22171,459 22166,312 22145,208
+# REMOVED (no changes) --- #: source_id: IM_023224 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.218616.php (Arbeiten des Straßenamtes) --- #: next_check: 2014-11-10 --- Buntzelstr.: Bauarbeiten --- gibt es danach Änderunden bzgl. der Radwege?	?::inwork 22075,779 22120,659 22171,459 22166,312 22145,208
 # 
 #: source_id: LS/721-E/14/031
 #: next_check: 2014-12-19
@@ -1644,7 +1609,9 @@ Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,48
 #: last_checked: 2014-06-09
 #: check_frequency: 300d
 Wassersportallee: Verbesserung der Befahrbarkeit	?::projected 22655,1450 22756,1524
-Regattastr.: Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23955,728 24019,711 24211,585 24571,514 24660,440
+#: last_checked: 2015-02-15
+#: check_frequency: 180d
+Regattastr.: Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23953,731 24011,710 24197,585 24571,514 24666,436
 Sportpromenade: Fahrradstraße soll eingerichtet werden	?::projected 25646,-209 25760,-427 25958,-731
 Rehfeldtstr./Rohrwallallee: Verbesserung der Befahrbarkeit	?::projected 25958,-731 26004,-705 26045,-718 26073,-745 26129,-807 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
 Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26846,-2176 27021,-2336 27161,-2474 27093,-2560
@@ -3866,12 +3833,7 @@ Schwarzer Weg (Siemensstadt): Qualität des Wegs? Ist der Weg ausgeschildert und 
 # 
 Treseburger Ufer, Verlängerung: ist der Weg beleuchtet?	? 12301,5783 12699,5909 13064,5953
 # 
-#: by: http://www.openstreetmap.org/note/209950
-#: XXX "an dieser Stelle entsteht gerade eine Radweg-Brücke über die Bahn (Stahlkonstruktion)." (Anfang August 2014)
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.233428.php (Fertigstellung)
-Brücke über die Göröitzer Bahn: Qualität, Beleuchtung, Ausschilderung?	? 24056,-1295 24153,-1140
-Verlängerter Sandbacher Weg: Qualität (Waldweg?)	? 23504,-938 24056,-1295
-Alter Radelander Weg/Brücke - Bammelecke: Qualität (Waldweg?)	? 24153,-1140 24474,-661 24750,-256 25190,333 25297,434 25484,442
+# REMOVED (realisiert) --- #: by: http://www.openstreetmap.org/note/209950 --- #: XXX "an dieser Stelle entsteht gerade eine Radweg-Brücke über die Bahn (Stahlkonstruktion)." (Anfang August 2014) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.233428.php (Fertigstellung)
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6056 (Vorschlag)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2014

@@ -89,7 +89,7 @@ Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 
 Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4098,18762 4162,18891 4240,19019
 Eichborndamm	1s 4240,19019 4232,18981
 Eichborndamm	1 4232,18981 4210,18878 4163,18676 4102,18298 4059,18107 4015,17912
-Spreestr.	1 17900,6072 17939,5968 17877,5860 17816,5733 17812,5726 17782,5698
+Spreestr.	1 17900,6072 17939,5968 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15674,10851 15870,10938
 Nöldnerplatz	1 15870,10938 15903,10906 16049,10844
@@ -1954,10 +1954,10 @@ Mittelstreifen	3nocross::ignrte 18457,5000 18425,5032 18080,5376
 Michael-Brückner-Str. -> Hartriegelstr.: Mittelstreifen	3::igndisp 18080,5376 18425,5032 18514,5028
 Hartriegelstr. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 18514,5028 18425,5032 18457,5000
 Mittelstreifen	3nocross::ignrte 17728,5756 17782,5698 17829,5648
-Michael-Brückner-Str. -> Spreestr.: Mittelstreifen	3::igndisp 17728,5756 17782,5698 17812,5726
+Michael-Brückner-Str. -> Spreestr.: Mittelstreifen	3::igndisp 17728,5756 17782,5698 17807,5730
 Michael-Brückner-Str. -> Cajamarcapl.: Mittelstreifen	3::igndisp 17829,5648 17782,5698 17710,5668
 Cajamarcapl. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 17710,5668 17782,5698 17728,5756
-Cajamarcapl. -> Spreestr.: Mittelstreifen	3::igndisp 17710,5668 17782,5698 17812,5726
+Cajamarcapl. -> Spreestr.: Mittelstreifen	3::igndisp 17710,5668 17782,5698 17807,5730
 Straßenbahngleise	3nocross::ignrte 17488,15766 17532,15645 17569,15561 17626,15433 17829,15015
 Rhinstr. -> Str. 156: Straßenbahngleise	3::igndisp 17488,15766 17532,15645 17570,15658
 Str. 156 -> Rhinstr.: Straßenbahngleise	3::igndisp 17570,15658 17532,15645 17569,15561
@@ -2752,6 +2752,8 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Wasserstr. (Niederschöneweide): abgesperrt	2::inwork 17477,6031 17639,6227
+Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Februar 2015 bis voraussichtlich Oktober 2015	2::inwork 7653,14570 7527,14644 7486,14652
