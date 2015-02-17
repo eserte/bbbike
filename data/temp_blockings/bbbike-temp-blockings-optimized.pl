@@ -1878,6 +1878,16 @@ userdel	2::inwork 7772,4306 7795,4242 8106,3410
 #: last_checked ^^^
 #: XXX ^^^
 '
+       },
+       {
+         'source_id' => 'IM_024065',
+         'until' => 1432998000,
+         'text' => 'Anhalter Str.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Stresemannstr. in Richtung Westen gesperrt, bis 30.05.2015',
+         'from' => 1423980000,
+         'id' => 2680,
+         'data' => 'userdel	q4::inwork; 9234,11056 8947,10956
+',
+         'type' => 'handicap'
        }
      
 );

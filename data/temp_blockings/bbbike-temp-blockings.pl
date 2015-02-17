@@ -23880,5 +23880,14 @@ EOF
 #: last_checked ^^^
 #: XXX ^^^
 EOF
-     }
+     },
+     { from  => 1423980000, # 2015-02-15 07:00
+       until => 1432998000, # 2015-05-30 17:00
+       text  => 'Anhalter Str.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Stresemannstr. in Richtung Westen gesperrt, bis 30.05.2015',
+       type  => 'handicap',
+       source_id => 'IM_024065',
+       data  => <<EOF,
+userdel	q4::inwork; 9234,11056 8947,10956
+EOF
+     },
     );
