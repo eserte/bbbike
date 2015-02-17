@@ -1699,15 +1699,16 @@ userdel	2::inwork 15419,10706 15379,10651
        undef,
        undef,
        {
-         'until' => 1424473200,
-         'text' => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
+         'until' => 1425164399,
+         'text' => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.02.2015',
          'from' => 1412021931,
          'id' => 2636,
          'data' => '#: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
+#: confirmed_by: srt
 #: XXX vielleicht wird hier asphaltiert?
 #: last_checked: 2014-10-01
-#: next_check: 2015-02-18
+#: next_check: 2015-02-26
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 ',
          'type' => 'gesperrt'
@@ -1817,7 +1818,7 @@ userdel	q4::inwork 5635,7660 5636,7540
          'text' => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
          'from' => undef,
          'id' => 2671,
-         'data' => '#: last_checked: 2015-01-13
+         'data' => '#: last_checked: 2015-02-17
 userdel	q4::inwork; 9559,11715 9692,11732
 ',
          'type' => 'handicap'
@@ -1862,7 +1863,8 @@ userdel	2::inwork 7772,4306 7795,4242 8106,3410
          'text' => 'Veitstr.: Baustelle, zwischen Berliner Str. und Medebacher Weg Fahrbahn Richtung Borsigdamm gesperrt, 10.02.2015 08:11 Uhr bis 29.05.2015 15:00 Uhr ',
          'from' => 1423465860,
          'id' => 2678,
-         'data' => 'userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
+         'data' => '#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.265751.php
+userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 ',
          'type' => 'handicap'
        },

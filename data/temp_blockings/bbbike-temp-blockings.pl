@@ -23468,15 +23468,16 @@ userdel	q3::inwork 4638,10162 4623,10066 4609,9949
 EOF
      },
      { from  => 1412021931, # 2014-09-29 22:18
-       until => 1424473200, # 2015-02-21 00:00
-       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015',
+       until => $isodate2epoch->("2015-02-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
+       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.02.2015',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
+#: confirmed_by: srt
 #: XXX vielleicht wird hier asphaltiert?
 #: last_checked: 2014-10-01
-#: next_check: 2015-02-18
+#: next_check: 2015-02-26
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 EOF
      },
@@ -23797,7 +23798,7 @@ EOF
        text  => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-01-13
+#: last_checked: 2015-02-17
 userdel	q4::inwork; 9559,11715 9692,11732
 EOF
      },
@@ -23866,6 +23867,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_024084',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.265751.php
 userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 EOF
      },

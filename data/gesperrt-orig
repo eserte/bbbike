@@ -2609,7 +2609,7 @@ Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Feb
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136136549415/136549415/00119959/59-Anlagen/02/GA_1805_IV.pdf (mindestens bis Ende 2016)
-#: last_checked: 2015-02-09
+#: last_checked: 2015-02-17
 #: check_frequency: 180d
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 # 
@@ -2666,11 +2666,11 @@ Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 
 #: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
 #: confirmed_by: srt
-#: last_checked: 2015-01-29
-#: next_check: 2015-02-18
-#: valid: 20140925-20150218
+#: last_checked: 2015-02-17
+#: next_check: 2015-02-26
+#: valid: 20140925-20150226
 #: XXX danach gilt noch einige Tage lang der temp_blockings-Eintrag
-Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 20.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
+Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
 # 
 #: last_checked: 2014-11-20
 #: check_frequency: 90d
@@ -2698,7 +2698,7 @@ Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::
 # REMOVED --- #: XXX hier steht noch ein Bauzaun --- #: last_checked: 2014-09-21 --- Viechtacher Str.: Bauarbeiten, Zufahrt zur Zwieseler Str. noch gesperrt	2::inwork 19657,9666 19727,9672
 # 
 #: XXX Qualität nach den Bauarbeiten?
-#: osm_watch: way id="24845189" version="11"
+#: osm_watch: way id="24845189" version="12"
 #: last_checked: 2015-02-14
 #: check_frequency: 60d
 Viechtacher Str.: Bauarbeiten, Straße muss noch fertig gestellt werden	2::inwork 19801,9680 19857,9682 19893,9683
@@ -2709,7 +2709,7 @@ Viechtacher Str.: Bauarbeiten, Straße muss noch fertig gestellt werden	2::inwork
 #: osm_watch: way id="287119368" version="7"
 #: osm_watch: way id="290220612" version="1"
 Regener Str.: fertiggestellt, aber noch gesperrt	2::inwork 19790,9478 19849,9474 19890,9471 19885,9400 19869,9151
-#: osm_watch: way id="193373966" version="4"
+#: osm_watch: way id="193373966" version="5"
 Patersdorfer Str.: fertiggestellt, aber noch gesperrt	2::inwork 19626,9171 19764,9160 19869,9151
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2971,7 +2971,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2015-01-29
+#: last_checked: 2015-02-17
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

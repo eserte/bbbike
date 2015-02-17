@@ -600,14 +600,14 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14193,
 #: source_id: IM_020408 vvv
 #: source_id: IM_021506 vvv
 #: last_checked: 2015-02-10 vvv
-#: check_frequency: 14d vvv
-#: XXX die neue östliche Fahrbahn ist fast fertig, wahrscheinlich wird bald verschwenkt, dann wird die Radwegsituation anders aussehen (wahrscheinlich Radspur Richtung Süden, gemeinsamer Rad/Gehweg Richtung Norden)
+#: next_check: 2015-02-17 vvv
+#: XXX die neue östliche Fahrbahn ist fast fertig, wahrscheinlich wird bald verschwenkt, dann wird die Radwegsituation anders aussehen (wahrscheinlich Radspur Richtung Süden, gemeinsamer Rad/Gehweg Richtung Norden) --- laut fritz wurde bereits umgeschwenkt (2015-02-17)
 #: XXX eventuell werden die neuen Ampeln auch eingeschaltet
-#: XXX während der Bauarbeiten ein Radstreifen, wie wird die Situation danach aussehen?
-	RW3?; 7979,13733 7943,13794 7589,14359
-#: XXX wie wird die Situation nach den Bauarbeiten aussehen?
-gemeinsamer Rad- und Gehweg	RW2; 7589,14359 7943,13794 7979,13733
-#: check_frequency ^^^
+#: XXX vermutlich nach der Umstellung RW2:
+	RW2; 7979,13733 7943,13794 7589,14359
+#: XXX vermutlich nach der Umstellung RW3:
+	RW3?; 7589,14359 7943,13794 7979,13733
+#: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^
@@ -1002,7 +1002,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: osm_watch: way id="24913297" version="35"
-#: last_checked: 2014-11-26
+#: last_checked: 2015-02-17
 #: next_check: 2015-02-28
 Busspur ist immer gültig	RW5; 9141,12320 9358,12351 9475,12365
 # 
@@ -1373,7 +1373,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2015-01-29
+#: last_checked: 2015-02-17
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
