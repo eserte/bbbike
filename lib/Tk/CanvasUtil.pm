@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: CanvasUtil.pm,v 1.17 2007/04/23 21:03:23 eserte Exp $
+# $Id: CanvasUtil.pm,v 1.18 2015/02/17 20:25:07 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2007,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@
 package Tk::CanvasUtil;
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 use Tk::Canvas;
 
@@ -128,16 +128,23 @@ sub center_view {
     my @scrollregion = ($Tk::VERSION == 800.017
 			? $c->cget(-scrollregion)
 			: @{$c->cget(-scrollregion)});
+    my $scrollregion_width  = $scrollregion[2]-$scrollregion[0];
+    my $scrollregion_height = $scrollregion[3]-$scrollregion[1];
+    if (!$xwidth && !$ywidth) {
+	# It seems that the canvas widget is not yet mapped. So make a
+	# guess using the reqwidth/reqheight values and translate
+	# them into view fractions...
+	$xwidth = $c->reqwidth  / $scrollregion_width;
+	$ywidth = $c->reqheight / $scrollregion_height
+    }
     my $see_view = ($c->{Configure}{-seeview} ? $c->{Configure}{-seeview} : 'see_view');
     if (!defined $x || !defined $y) {
 	$c->$see_view(0.5, 0.5, %args);
     } else {
 	$c->$see_view
 	    (
-	     ($x-$scrollregion[0])/($scrollregion[2]-$scrollregion[0])
-	     - $xwidth/2,
-	     ($y-$scrollregion[1])/($scrollregion[3]-$scrollregion[1])
-	     - $ywidth/2,
+	     ($x-$scrollregion[0])/$scrollregion_width  - $xwidth/2,
+	     ($y-$scrollregion[1])/$scrollregion_height - $ywidth/2,
 	     %args
 	    );
     }
