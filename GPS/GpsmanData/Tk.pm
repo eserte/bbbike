@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2013,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.21';
+$VERSION = '1.22';
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -40,8 +40,32 @@ my %wpt_col_label = map {
 
 {
     package GPS::GpsmanData::Tk::HList;
-    use base 'Tk::HList';
+    use base qw(Tk::Derived Tk::HList);
     Construct Tk::Widget 'GpsmanDataHList';
+
+    sub ClassInit {
+	my($class, $mw) = @_;
+	$class->SUPER::ClassInit($mw);
+	my $scroll_cb = sub {
+	    my($w, $howmany) = @_;
+	    $w->yview('scroll', $howmany, 'pages');
+	    my $y = ($w->header('size', 0))[1] + 10;
+	    my $entry = $w->nearest($y); # anchor top element
+	    $w->anchorSet($entry);
+	    $w->KeyboardActivate;
+	    $w->cget('-selectentry')->Call($entry);
+	};
+	$mw->bind($class, '<Next>',  sub { $scroll_cb->(shift,  1) });
+	$mw->bind($class, '<Prior>', sub { $scroll_cb->(shift, -1) });
+    }
+
+    sub Populate {
+	my($w, $args) = @_;
+	$w->SUPER::Populate($args);
+	$w->ConfigSpecs(
+			-selectentry => ['CALLBACK', undef, undef, \&Tk::NoOp],
+		       );
+    }
 
     sub BalloonInfo
     {
@@ -77,6 +101,15 @@ sub Populate {
 				-scrollbars => "se", # XXX no "ose" for easier handling of overview canvas
 				-header => 1,
 				-columns => scalar(@wpt_cols),
+				-selectentry => sub {
+				    my($entry) = @_;
+				    my $cmd = $w->cget('-command');
+				    return if !$cmd;
+
+				    my $wpt = $w->wpt_by_item($entry);
+				    my $chunk = $w->chunk_by_item($entry);
+				    $cmd->Call(-entry => $entry, -wpt => $wpt, -chunk => $chunk);
+				},
 			       )->pack(qw(-side left -fill both -expand 1));
 	{
 	    my $col = 0;
@@ -89,16 +122,13 @@ sub Populate {
 	$w->Advertise(data => $real_dv);
 	$real_dv->bind("<1>" => sub {
 			   my $cmd = $w->cget('-command');
-			   return if !$cmd;
-			   
+			   return if !$cmd; # shortcut
+
 			   my $cw = shift;
 			   my $e = $cw->XEvent;
 			   my $entry = $real_dv->nearest($e->y);
 			   if (defined $entry) {
-			       my $wpt = $w->wpt_by_item($entry);
-			       my $chunk = $w->chunk_by_item($entry);
-			       $cmd->Call(-entry => $entry, -wpt => $wpt, -chunk => $chunk);
-			       
+			       $real_dv->cget('-selectentry')->Call($entry);
 			   }
 		       });
 
