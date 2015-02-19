@@ -296,7 +296,7 @@ rsync-mapserver:	check-rsync-ok check-rsync-mapserver /tmp/mapserver.rsync.exclu
 	${RSYNC_PROG} ${RSYNC_ARGS_MS} ${CURDIR}/public/mapserver/ ${BBBIKE_HOSTEUROPE_USER}@${BBBIKE_HOSTEUROPE_SSH_HOST}:${BBBIKE_HOSTEUROPE_APACHE_DIR}/${HTDOCS}/mapserver/
 
 rsync-tests:
-	${RSYNC_PROG} ${RSYNC_ARGS} --exclude tmp/ ${BBBIKE_ROOT_DIR}/t/ ${RSYNC_DEST}/BBBike/t/
+	${RSYNC_PROG} ${RSYNC_ARGS} --exclude cover_db/ --exclude tmp/ ${BBBIKE_ROOT_DIR}/t/ ${RSYNC_DEST}/BBBike/t/
 
 /tmp/mapserver.rsync.exclude: .rsync.exclude
 	perl -pe 's{^public/mapserver/}{}' $> > $@
