@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2004,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2004,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -136,24 +136,11 @@ mkdir $portdir, 0755 or die $!;
 
 substitute("Makefile.tmpl", "$portdir/Makefile");
 
-my $plist = "$portdir/pkg-plist";
-open my $PLIST, ">", $plist
-    or die "Can't write to $plist: $!";
-
-#XXX requiredd?
-# print $PLIST <<'EOF';
-# @owner root
-# @group wheel
-# EOF
-
-foreach (sort @files) {
-    plist_line($_, $PLIST);
-}
-
-print $PLIST "man/man1/bbbike.1.gz\n";
-
 my %insert_after;
 my $in_insert_after;
+my %remove;
+my $in_remove;
+my @add_later;
 
 if (open my $PLISTADD, "<", "pkg-plist.add") {
     while(<$PLISTADD>) {
@@ -162,6 +149,8 @@ if (open my $PLISTADD, "<", "pkg-plist.add") {
 	if ($l =~ /^#/) {
 	    if ($l =~ /^# after:\s*(.*)/) {
 		$in_insert_after = $1;
+	    } elsif ($l =~ /^# remove:$/) {
+		$in_remove = 1;
 	    } else {
 		die "Unknown # directive $l";
 	    }
@@ -169,12 +158,34 @@ if (open my $PLISTADD, "<", "pkg-plist.add") {
 	    if (defined $in_insert_after) {
 		$insert_after{$in_insert_after} = $l;
 		undef $in_insert_after;
+	    } elsif ($in_remove) {
+		$remove{$l} = 1;
+		undef $in_remove;
 	    } else {
-		plist_line($l, $PLIST);
+		push @add_later, $l;
 	    }
 	}
     }
     close $PLISTADD;
+}
+
+my $plist = "$portdir/pkg-plist";
+open my $PLIST, ">", $plist
+    or die "Can't write to $plist: $!";
+
+foreach (sort @files) {
+    if ($remove{$_}) {
+	# remove from plist
+    } else {
+	plist_line($_, $PLIST);
+    }
+}
+
+# special: without BBBike prefix
+print $PLIST "man/man1/bbbike.1.gz\n";
+
+for my $l (@add_later) {
+    plist_line($l, $PLIST);
 }
 
 foreach my $dir (keys %dir) {
@@ -187,12 +198,14 @@ foreach my $dir (keys %dir) {
 	$dir = $dirdir;
     }
 }
-foreach (sort { dircmp($a, $b) } keys %dir) {
-    my $line = "\@dirrm $_";
-    print $PLIST "$line\n";
-    if (exists $insert_after{$line}) {
-	print $PLIST $insert_after{$line}, "\n";
-	delete $insert_after{$line};
+if (0) { # @dirrm not needed anymore (since 2015)
+    foreach (sort { dircmp($a, $b) } keys %dir) {
+	my $line = "\@dirrm $_";
+	print $PLIST "$line\n";
+	if (exists $insert_after{$line}) {
+	    print $PLIST $insert_after{$line}, "\n";
+	    delete $insert_after{$line};
+	}
     }
 }
 close $PLIST;
@@ -298,7 +311,7 @@ sub dircmp {
 sub plist_line ($$) {
     my $in = shift;
     my $out = shift or die "out fh is missing";
-    my $file = "BBBike/$in";
+    my $file = $in =~ /^\@/ ? $in : "BBBike/$in";
     print $out "$file\n";
     # perl executables in /usr/local/bin:
     if ($bbbike_perl_exe{$in}) {

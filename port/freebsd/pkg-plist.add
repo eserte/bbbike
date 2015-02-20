@@ -15,5 +15,6 @@ lib/%%LOCAL_PERL_ARCH%%/auto/Strassen/Inline2/Inline2.so
 lib/%%LOCAL_PERL_ARCH%%/auto/StrassenNetz/CNetFile/CNetFile.so
 lib/%%LOCAL_PERL_ARCH%%/auto/VectorUtil/Inline/Inline.so
 lib/%%LOCAL_PERL_ARCH%%/auto/VirtArray/VirtArray.so
-# after: @dirrm BBBike/lib/%%LOCAL_PERL_ARCH%%
-@dirrmtry BBBike/lib/%%PERL_VERSION%%
+@dir BBBike/tmp/
+# remove:
+tmp/.keep_me
