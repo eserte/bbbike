@@ -2673,21 +2673,17 @@ Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 
 #: XXX danach gilt noch einige Tage lang der temp_blockings-Eintrag
 Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
 # 
-#: last_checked: 2014-11-20
-#: check_frequency: 90d
+#: last_checked: 2015-02-20
+#: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
-#: last_checked: 2014-12-10
-#: next_check: 2015-03-09
+#: last_checked: 2015-02-20
+#: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
 # REMOVED (weitgehend fertig) --- #: XXX werden hier die Bordsteine abgeflacht? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2014 --- #: last_checked: 2014-10-28 --- Dresdener Str.: Bauarbeiten, komplett gesperrt	2::inwork 11034,11249 11021,11287 11000,11327
 # REMOVED --- #: last_checked: 2014-10-01 --- Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12641,11288 12664,11310 12713,11372
-# 
-#: XXX theoretisch ist ein Trampelpfad vorbei vorhanden
-#: last_checked: 2015-01-19 (von der Mollstr. aus)
-Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045
-# 
+# REMOVED --- #: XXX theoretisch ist ein Trampelpfad vorbei vorhanden --- #: last_checked: 2015-01-19 (von der Mollstr. aus) --- Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045
 # REMOVED (vorzeitig fertig) --- #: XXX laut Schild bis Dezember 2014 gesperrt --- #: last_checked: 2014-11-20 --- #: next_check: 2014-12-15 --- Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
 # REMOVED (keine Bauzäune mehr) --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf --- #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt? --- #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben? --- #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014 --- #: last_checked: 2014-09-12 (Durchfahrt möglich, man muss an Bauzäunen vorbei) --- #: check_frequency: 21d --- Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
 # 
@@ -2722,7 +2718,7 @@ Patersdorfer Str.: fertiggestellt, aber noch gesperrt	2::inwork 19626,9171 19764
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: note: allerdings könnte man sein Fahrrad über den Betonpfeiler rübertragen
-#: last_checked: 2014-11-20
+#: last_checked: 2015-02-20
 #: check_frequency: 90d
 am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 # 

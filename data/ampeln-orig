@@ -1199,6 +1199,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11308,-2535
 	F 10617,452
 	X 10226,1515
+#: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel, auch Richtung Osthafengelände
 	X 14222,10430
 	X 13596,10722
 	X 9796,5790
@@ -2056,8 +2057,11 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 21392,11486
 	X 21860,11278
 	X 17829,15015
+#: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel
 	X 12736,11186
+#: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel
 	X 12908,11058
+#: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel
 	X 13144,10921
 #: note: laut Luftbild
 	F 4717,21223
@@ -2229,6 +2233,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 4650,18817
 	X 16004,10204
 #: note: seit 2008-05-27 eingeschaltet:
+#: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel
 	X 13919,10583
 	X 21115,271
 	X 17477,6031
@@ -2696,6 +2701,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
+#: osm_watch: way id="260062339" version="2"
 #: last_checked: 2015-01-17 vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
