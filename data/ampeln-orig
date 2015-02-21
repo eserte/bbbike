@@ -2421,6 +2421,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 20010,3340
 	F 3995,12173
 	F 22031,9142
+#: note: Anforderungsampel
 	F 15356,3759
 # REMOVED --- #: next_check_id: KARLSHORSTER-2014 vvv --- #: last_checked: 2014-10-10 vvv --- #: next_check: 2014-10-20 vvv --- #: note: provisorische Ampel --- #: valid: 20140630-20141022 vvv --- ---	X::inwork 14805,10518
 #: XXX bleibt die Ampel permanent?
@@ -2702,7 +2703,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="2"
-#: last_checked: 2015-01-17 vvv
+#: last_checked: 2015-02-21 vvv
+#: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
 #: note: Baustellenstraße kreuzt
@@ -2710,6 +2712,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, wahrscheinlich keine Einschränkung für Radfahrer Richtung Nordwesten
 #: note: Anforderungsampel
 	F::inwork 14451,7340
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 

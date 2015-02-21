@@ -20,7 +20,7 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-02-20 vvv
+#: last_checked: 2015-02-21 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -455,8 +455,8 @@ Hasenheide: Fußgänger	q1 11182,8983 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Fußgänger	q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
 Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11141,9107
 (Hasenheide, Eingang Wissmannstr.): Fußgänger	q1 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
-(Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8488 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
-(Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8488
+(Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
+(Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
 (Flughafenstr. - Rundweg in der Hasenheide): Fußgänger	q1 11632,8302 11577,8315 11559,8357
 Am Flutgraben: Fußgänger	q1 13333,9929 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fußgänger	q1 13418,9944 13669,9994 13711,10022
@@ -734,7 +734,7 @@ Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16837,11920 16833,11897 16803,11859
 Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22324,4586
 Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
-(Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11560,8488 11508,8491 11333,8582 11255,8591
+(Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11560,8480 11508,8491 11333,8582 11255,8591
 #: note: Radfahren erlaubt
 (Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11255,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
 # REMOVED (ja, abgesenkt) --- #: XXX die Bordsteine sind hier wahrscheinlich mittlerweile abgesenkt --- Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11111,13518
@@ -786,7 +786,9 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
-(Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12699,5909 13064,5953
+#: XXX_prog BS (an der Rungiusstr., ansonsten weiterhin q4)
+(Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt, Bordstein	q4 12736,5913 13064,5953
+Treseburger Ufer: einige Fußgänger	q1 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909
 (Bellevuepark): einige Fußgänger	q1 22798,5731 22796,5640 22796,5631 22787,5582 22855,5554 22835,5452 22851,5321
 (Bellevuepark): nur für Fußgänger erlaubt	q4 22787,5582 22733,5569 22701,5428 22628,5340
 Walter-Nicklitz-Promenade: eng und kurvenreich, Fußgänger	q2 8290,15304 8329,15397 8308,15409 8312,15470
@@ -1456,7 +1458,7 @@ Erekweg: enger Pfad	q3 16186,24108 16139,24162
 #: XXX_prog BS (am Gewanneweg)
 (Kurze-Enden-Weg - Gewanneweg): eng, Bordstein	q2 15278,23934 15321,23979
 Faulhornweg: Fußgänger	q1 10383,2088 10322,2163
-Igelkolbensteig: eng	q2 15947,3572 16003,3652
+Igelkolbensteig: eng	q2 15949,3575 16003,3652
 #: XXX_prog BS (2x) (auch ohne BS q2)
 Melissenweg: Bordsteine, eng	q2 16003,3652 16041,3718
 #: XXX_prog BS (im Norden, im Süden kann es umfahren werden)
@@ -3240,7 +3242,7 @@ Battenheimer Weg: enge Straße	q1 11762,1040 11681,1031 11393,1243
 Birnbaumring: enge Straße	q0- 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8501,25358
 #: by: ^^^
 #: by: Florian (olf-kcots):
-Stavenhagener Str.: enge Straße	q1 13634,5126 13534,5111 13444,5097 13359,5086
+Stavenhagener Str.: enge Straße	q1 13632,5126 13534,5111 13444,5097 13359,5086
 #: by: Jörg Krieger:
 Glambecker Weg: enge Straße	q1 2577,24048 2482,23985 2430,24155 2385,24298 2362,24370
 #: by: Sven Schmidt:

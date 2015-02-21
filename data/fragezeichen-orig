@@ -84,7 +84,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 # 
 #: XXX Baumaﬂnahme 2.29 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Realisierung anscheinend ungewiss)
-#: last_checked: 2014-12-23
+#: last_checked: 2015-02-21
 #: check_frequency: 180d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -192,9 +192,9 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408
 # REMOVED (teilweise realisiert) --- #: XXX Baumaﬂnahme 9.19 (Realisierung nach 2011) --- #: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php --- #: source_id: IM_022377 --- #: last_checked: 2014-08-08 --- #: next_check: 2014-12-17 --- Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 20383,4963 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaﬂnahme 8.14 (Realisierung nach 2011)
-#: last_checked: 2014-10-04
+#: last_checked: 2015-02-21
 #: check_frequency: 120d
-Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13600,5240 13594,5240 13327,5234 13250,5234 13112,5253 13046,5267
+Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13607,5241 13594,5240 13327,5234 13250,5234 13112,5253 13046,5267
 # 
 # REMOVED (realisiert, im Wald) --- #: XXX Baumaﬂnahme 9.10 (Realisierung nach 2011), 9.2 (Realisierung bis 2010) --- #: last_checked: 2013-08-03 (keine Anzeichen) --- #: check_frequency: 100d --- M¸ggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
 # 
@@ -914,8 +914,8 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: XXX Radwegesanierung in Neukˆlln, geplant f¸r 2013 und sp‰ter vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
 #: osm_watch: way id="155605301" version="3"
-#: last_checked: 2014-12-14
-#: check_frequency: 60d
+#: last_checked: 2015-02-21
+#: check_frequency: 90d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4757 (Vorschlag: F¸hrungsschienen f¸r den Elsensteg)
@@ -925,7 +925,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
 # REMOVED --- : source_id: IM_020353	
-#: last_checked: 2014-07-17
+#: last_checked: 2015-02-21
 #: check_frequency: 120d
 Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Planung, Stand 2012-04) --- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20130429.1340.384123.html (Beginn: 2013-05-06) --- #: last_checked: 2013-08-26 --- #: next_check: 2013-11-01 --- Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?::projected; 12207,1704 11865,1564 11765,1522 11476,1398 11216,1293 11157,1269 11012,1210 10829,1135 10769,1111 10664,1068 10425,971
@@ -1052,7 +1052,7 @@ Prinzengasse: Genaue Lage? Qualit‰t?	?::inwork 9973,12292 9997,12295
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv
 #: XXX Baumaﬂnahmen 8.12 (Realisierung in 2011)
-#: last_checked: 2014-10-04
+#: last_checked: 2015-02-21
 #: check_frequency: 120d
 Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337 13519,7345
 # 
@@ -1482,18 +1482,19 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung S¸den angelegt	? 15726,23
 # 
 #: next_check_id: SONNENALLEE-2014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2015-01-17 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
+#: last_checked: 2015-02-21 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
+#: check_frequency: 90d
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
-#: last_checked: 2014-12-05
+#: last_checked: 2015-02-21
 #: check_frequency: 60d
 Thomasstr./Hermannstr.: sichere Querung, wie wird/kˆnnte die Lˆsung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
 # REMOVED (realisiert) --- #: XXX wird eine andere Ampel daf¸r ausgeschaltet? --- #: by: http://www.berliner-zeitung.de/verkehr/bvg-sanierung--die-u-8-faehrt-wieder-bis-zur-hermannstrasse,10809298,28209860.html (Fertigstellung im Dezember) --- #: last_checked: 2014-11-22 --- #: next_check: 2015-02-15 --- Hermannstr.: Fuﬂg‰ngerampel in Bau	?::inwork 12123,7549 12137,7506
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
-#: last_checked: 2015-01-18
+#: last_checked: 2015-02-21
 #: check_frequency: 150d
 #: priority: #C
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
@@ -1737,6 +1738,11 @@ Dr‰ngelgitter	? 15496,6314 15505,6342 15516,6357
 Rudolf-Leonhard-Str. - Blumberger Damm: Qualit‰t des Rad/Gehweg?	? 21483,16325 21497,16384 21574,16547
 # 
 #: ignore ^^^
+# 
+#: XXX_prog BS (gerichtet) vvv
+Buschkrugallee -> Delfter Ufer: Bordstein, falls man sich auf dem Radweg befindet	? 13430,6086 13483,5973 13532,5987
+Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5893
+#: XXX_prog ^^^
 #
 ######################################################################
 #
@@ -3410,14 +3416,14 @@ Alter Fischerweg (Gosen): Qualit‰t? Ausschilderung?	? 32778,-1044 33013,-790 331
 # REMOVED (realisiert) --- #: XXX Baumaﬂnahme 8.18 (Realisierung bis 2010) --- #: XXX_osm laut osm existieren bereits Radwege (track), aber stimmt das? --- Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege oder Radspuren?	? 12938,1348 12941,1256 12984,1011
 # REMOVED (realisiert) --- Gutschmidtstraﬂe: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576
 # REMOVED (realisiert) --- Gutschmidtstraﬂe: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13396,3512 13526,3519
-#: XXX Fahrbahn wird saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht? -> nein, nichts passiert
-# REMOVED --- : source_id: INKO_119740
-#: last_checked: 2014-06-15
-#: check_frequency: 120d
+#: XXX Fahrbahn wird ab Kormoranweg saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht?
+#: source_id: IM_023411
+#: last_checked: 2015-02-21
+#: next_check: 2015-03-31
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
 # REMOVED --- : source_id: IM_020569
-#: last_checked: 2014-06-15
-#: check_frequency: 120d
+#: last_checked: 2015-02-21
+#: next_check: 2015-03-31
 Gutschmidtstr.: werden die Radwege asphaltiert oder saniert?	? 13775,3500 13710,3522 13623,3523 13526,3519
 #: XXX ^^^
 #: by: ^^^
@@ -3469,12 +3475,7 @@ Lauenburger Str.: wird die gesamte Lauenburger Str. (oder Teile davon) als Fahrr
 #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" f¸r den neu zu bauenden Weg
 Mathilde-Vaerting-Weg: Qualit‰t nach den Bauarbeiten? Ist die Straﬂe verkehrsberuhigt?	? 17610,-330 17651,-393
 # 
-#: XXX str_cont_ausnahme-Eintrag wird notwendig sein
-#: XXX hier auch Privatstraﬂe?
-#: last_checked: 2014-06-09
-#: check_frequency: 300d
-Trollblumenweg: wird verl‰ngert, Qualit‰t der Verl‰ngerung?	?::inwork 16020,3732 16039,3766 16104,3717
-# 
+# REMOVED (eingetragen) --- #: XXX str_cont_ausnahme-Eintrag wird notwendig sein --- #: XXX hier auch Privatstraﬂe? --- #: last_checked: 2014-06-09 --- #: check_frequency: 300d --- Trollblumenweg: wird verl‰ngert, Qualit‰t der Verl‰ngerung?	?::inwork 16020,3732 16039,3766 16101,3727
 # REMOVED (eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2011 --- #: last_checked: 2011-09-10 --- #: next_check: 2012-03-01 --- #: osm_watch: way id="180482046" version="1" --- Am Rˆmersgr¸n: Straﬂe und Wohnanlage in Bau. Genaue Lage? Qualit‰t?	?::inwork 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706
 # REMOVED (eingetragen) --- #: last_checked: 2012-09-05 (Kay Leonhardt) vvv --- #: next_check: 2013-04-01 vvv --- #: by: http://farm9.staticflickr.com/8020/7599711312_1407440291_c.jpg (noch in Bau) --- #: XXX bei osm bereits eingetragen --- Ellen-Widmann-Pfad: Existiert die Straﬂe schon? Qualit‰t? Wo liegt die Straﬂe genau?	? 3812,2303 3813,2368 3814,2408
 # REMOVED --- #: XXX bei osm mit Straﬂennamen eingetragen (2013-03) (living street) --- # REMOVED --- : osm_watch: way id="169558830" version="2" --- Ines-Bolla-Pfad: Existiert die Straﬂe schon? Qualit‰t? Wo liegt die Straﬂe genau?	? 3730,2368 3767,2367 --- Ines-Bolla-Pfad: Existiert die Straﬂe schon? Qualit‰t? Wo liegt die Straﬂe genau?	? 3767,2367 3813,2368 3894,2368
@@ -3837,8 +3838,7 @@ Umfahrung B5 bei Karst‰dt: ist das eine Kraftfahrzeugstraﬂe?	? -102187,80033 -10
 #: XXX fehlt in Berlin.coords.data
 Schwarzer Weg (Siemensstadt): Qualit‰t des Wegs? Ist der Weg ausgeschildert und beleuchtet?	? 1423,14679 1384,14598 1235,14609
 # 
-Treseburger Ufer, Verl‰ngerung: ist der Weg beleuchtet?	? 12301,5783 12699,5909 13064,5953
-# 
+# REMOVED --- Treseburger Ufer, Verl‰ngerung: ist der Weg beleuchtet?	? 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909 12736,5913 13064,5953
 # REMOVED (realisiert) --- #: by: http://www.openstreetmap.org/note/209950 --- #: XXX "an dieser Stelle entsteht gerade eine Radweg-Br¸cke ¸ber die Bahn (Stahlkonstruktion)." (Anfang August 2014) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.233428.php (Fertigstellung)
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6056 (Vorschlag)
