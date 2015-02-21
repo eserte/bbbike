@@ -83,8 +83,9 @@ install_perl_58_dependencies() {
 install_cpan_hacks() {
     if [ ! "$USE_SYSTEM_PERL" = "1" ]
     then
-	# Tk + EUMM 7.00 problems, use the current development version (https://rt.cpan.org/Ticket/Display.html?id=100044)
-	cpanm --quiet --notest SREZIC/Tk-804.032_501.tar.gz
+	# -> Currently empty, no hacks required. Was:
+	## Tk + EUMM 7.00 problems, use the current development version (https://rt.cpan.org/Ticket/Display.html?id=100044)
+	#cpanm --quiet --notest SREZIC/Tk-804.032_501.tar.gz
     fi
 }
 
