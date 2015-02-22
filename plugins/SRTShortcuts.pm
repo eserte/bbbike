@@ -1835,8 +1835,12 @@ sub street_name_experiment_preinit {
     require Strassen::Util;
     use BBBikeUtil qw(pi schnittwinkel sum);
     use VectorUtil qw(move_point_orthogonal);
+    if ($^O eq 'MSWin32') {
+	die 'Not supported for MSWin32'; # no GUI dialog here, may be called within BBBikeLazy.pm
+    }
     if ($Tk::Config::xlib !~ /-lXft\b/) {
 	if (!$street_name_experiment_preinit_already_warned) {
+	    # Nowadays XFT=1 is default on Unix platforms, so we can be loud here:
 	    main::status_message("Sorry, this experiment needs Tk with freetype support! Consider to recompile Tk with XFT=1", "die");
 	    $street_name_experiment_preinit_already_warned = 1;
 	} else {
