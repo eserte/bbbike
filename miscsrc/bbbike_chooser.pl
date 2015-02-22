@@ -153,6 +153,7 @@ sub fill_chooser {
 					my @cmd = ($^X, File::Spec->catfile($this_rootdir, 'bbbike'), '-datadir', $datadir,
 						   (grep { $opt{$_} } keys %opt),
 						  );
+					print STDERR "INFO: Starting '@cmd'...\n";
 					if ($^O eq 'MSWin32') {
 					    # Sigh. Windows braindamage.
 					    require Win32Util;
