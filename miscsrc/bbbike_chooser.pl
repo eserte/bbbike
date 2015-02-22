@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,6 +20,13 @@ use lib (
 	 "$FindBin::RealBin/../lib",
 	 $FindBin::RealBin,
 	);
+
+if ($^O eq 'MSWin32') {
+    require BBBikeWinUtil;
+    # call early, as required .dll libraries may
+    # be in the PATH
+    BBBikeWinUtil::adjust_path();
+}
 
 use Cwd qw(realpath);
 use File::Basename qw(basename);

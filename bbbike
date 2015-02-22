@@ -178,18 +178,11 @@ BEGIN {
     }
 }
 
-# Add ...\c\bin directory for Strawberry Perl on Windows.
-# This directory contains shared libraries e.g. libxml2.
-# Also the ...\perl\bin may be missing.
-if ($^O eq 'MSWin32' && $^X =~ m{(.*)(\\perl\\bin)\\}) {
-    my $c_bin_dir = "$1\\c\\bin";
-    my $perl_bin_dir = "$1$2";
-    if (-d $c_bin_dir) {
-	$ENV{PATH} .= ";$c_bin_dir";
-    }
-    if (-d $perl_bin_dir) {
-	$ENV{PATH} .= ";$perl_bin_dir";
-    }
+if ($^O eq 'MSWin32') {
+    require BBBikeWinUtil;
+    # call early, as required .dll libraries may
+    # be in the PATH
+    BBBikeWinUtil::adjust_path();
 }
 
 #XXX for now disabled ... still too many bugs floating around -> what bugs?
