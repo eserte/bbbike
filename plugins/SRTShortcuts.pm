@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -175,6 +175,18 @@ bGo2aLG2bm1rD+7o7OruYQA5xsbTsze7r0S3f8LESQxA2yZPmTpt+oyZs2bPmTtvPlhggfjC
 RYuXOC5dtnzFSpDAqtVr1q5b77Bh46bNW7YCAKJlS6V7R7bEAAAAJXRFWHRkYXRlOmNyZWF0
 ZQAyMDEzLTAyLTE5VDIxOjQyOjUxKzAxOjAws5ftwQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAx
 Mi0wOC0xNFQxNjoyODo1MCswMjowMOv6tcMAAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{git}) {
+	# Converted with:
+	# cat ~/images/icons/git-favicon.png | perl -MMIME::Base64 -e 'print encode_base64(join("",<>))'
+	$images{git} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<'EOF');
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEXAAAAAgAD////////GbSb/
+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPklEQVR4AQXBsRFAQBQFwPXmy+lIoFDxdaEDkRqEF4gY
+M3aHhkAgEKhzu57A0BCot/Ze/bi/QKZ1rhotAoEfzicL4tjT/h8AAAAASUVORK5CYII=
 EOF
     }
 }
@@ -660,6 +672,9 @@ EOF
 	      ],
 	      [Button => $do_compound->("Show recent VMZ diff"),
 	       -command => sub { show_new_vmz_diff() },
+	      ],
+	      [Button => $do_compound->('Diff since last deployment', $images{git}),
+	       -command => sub { show_diffs_since_last_deployment() },
 	      ],
 	      [Button => $do_compound->("Mark Layer"),
 	       -command => sub { mark_layer_dialog() },
@@ -2938,6 +2953,36 @@ sub get_mapnik_map_directory {
 	return;
     }
     return $dir;
+}
+
+######################################################################
+
+my $old_last_deployment_diff_file;
+sub show_diffs_since_last_deployment {
+    require File::Temp;
+    require IPC::Run;
+    require BBBikeUtil;
+    my $save_pwd = BBBikeUtil::save_pwd2();
+    chdir $bbbike_rootdir
+	or die "Can't chdir to $bbbike_rootdir: $!";
+    open my $modfh, "data/.modified"
+	or die "Can't open data/.modified: $!";
+    my @files;
+    while(<$modfh>) {
+	chomp;
+	my($file) = split /\s+/;
+	next if $file =~ m{^data/sehenswuerdigkeit_img/};
+	next if $file =~ m{^data/*.\.coords\.data$};
+	push @files, $file;
+    }
+    my($tmpfh,$tmpfile) = File::Temp::tempfile('bbbike_since_deployment_XXXXXXXX', SUFFIX => '.bbd', TMPDIR => 1, UNLINK => 1);
+    IPC::Run::run(['git', 'diff', 'deployment/bbbikede/current', '--', @files], '|', [$^X, 'miscsrc/cvsdiffbbd', '--add-file-label', '--diff-file=-'], '>', $tmpfile)
+	    or main::status_message('Creation of diff bbd file failed', 'die');
+    add_new_layer('str', $tmpfile);
+    if (defined $old_last_deployment_diff_file && -e $old_last_deployment_diff_file) {
+	unlink $old_last_deployment_diff_file;
+    }
+    $old_last_deployment_diff_file = $tmpfile;
 }
 
 ######################################################################
