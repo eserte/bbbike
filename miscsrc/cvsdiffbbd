@@ -21,8 +21,10 @@ Getopt::Long::Configure('pass_through');
 my $include_orig;
 my $diff_file;
 my $add_file_label;
+my $add_fixed_label;
 GetOptions(
 	   "add-file-label!" => \$add_file_label,
+	   "add-fixed-label=s" => \$add_fixed_label,
 	   "include-orig!" => \$include_orig,
 	   "diff-file=s"   => \$diff_file,
 	   "help|?" => sub { show_usage() },
@@ -95,7 +97,12 @@ for my $line (`@cmd`) {
 	    } else {
 		my $cat    = "#000080";
 		my $coords = $3;
-		print(($add_file_label ? "$current_base: " : '') . "$name\t$cat $coords\n");
+		if ($add_file_label) {
+		    print "$current_base: ";
+		} elsif ($add_fixed_label) {
+		    print $add_fixed_label;
+		}
+		print "$name\t$cat $coords\n";
 	    }
 	}
     }
@@ -141,7 +148,7 @@ started with -server mode):
     ./bbbikeclient /tmp/osm.diff.bbd
 
 Create bbd file with differences since last deployment (does not
-include temp_blockings changes):
+include temp_blockings changes, but see below):
 
     cd .../src/bbbike
     git diff deployment/bbbikede/current -- `awk '{print $1}' data/.modified` | ./miscsrc/cvsdiffbbd --diff-file=- >| /tmp/diff.bbd
@@ -150,6 +157,10 @@ include temp_blockings changes):
 Same as above, but prepend the bbd basename to every record:
 
     git diff deployment/bbbikede/current -- `awk '{print $1}' data/.modified` | ./miscsrc/cvsdiffbbd --add-file-label --diff-file=- >| /tmp/diff.bbd
+
+Create bbd file with difference for temp_blockings changes:
+
+    git show deployment/bbbikede/current:data/temp_blockings/bbbike-temp-blockings.pl | ./miscsrc/temp_blockings_tasks pl_to_yml /dev/stdin /dev/stdout | ./miscsrc/temp_blockings_tasks yml_to_bbd /dev/stdin | diff -u - tmp/bbbike-temp-blockings.bbd | ./miscsrc/cvsdiffbbd --add-fixed-label="bbbike-temp-blockings: " --diff-file=- >| /tmp/diff-temp-blockings.bbd
 
 Old outdated example with CVS repository:
 
