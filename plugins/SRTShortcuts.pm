@@ -2957,32 +2957,66 @@ sub get_mapnik_map_directory {
 
 ######################################################################
 
-my $old_last_deployment_diff_file;
 sub show_diffs_since_last_deployment {
     require File::Temp;
     require IPC::Run;
     require BBBikeUtil;
+
+    my $tag = 'deployment/bbbikede/current';
+
+    my @cvsdiffbbd_cmd = ($^X, 'miscsrc/cvsdiffbbd');
+    my @temp_blockings_tasks_cmd = ($^X, 'miscsrc/temp_blockings_tasks');
+    my $bbbike_temp_blockings_bbd = 'tmp/bbbike-temp-blockings.bbd';
+
     my $save_pwd = BBBikeUtil::save_pwd2();
     chdir $bbbike_rootdir
-	or die "Can't chdir to $bbbike_rootdir: $!";
-    open my $modfh, "data/.modified"
-	or die "Can't open data/.modified: $!";
-    my @files;
-    while(<$modfh>) {
-	chomp;
-	my($file) = split /\s+/;
-	next if $file =~ m{^data/sehenswuerdigkeit_img/};
-	next if $file =~ m{^data/*.\.coords\.data$};
-	push @files, $file;
+	or main::status_message("Can't chdir to $bbbike_rootdir: $!", 'die');
+
+    # read relevant bbd files from data/.modified (further filtering
+    # may happen in cvsdiffbbd itself)
+    my @files = do {
+	my @files;
+	open my $modfh, "data/.modified"
+	    or main::status_message("Can't open data/.modified: $!", 'die');
+	while(<$modfh>) {
+	    chomp;
+	    my($file) = split /\s+/;
+	    next if $file =~ m{^data/sehenswuerdigkeit_img/};
+	    next if $file =~ m{^data/*.\.coords\.data$};
+	    push @files, $file;
+	}
+	@files;
+    };
+
+    my($tmpfh,$tmpfile) = File::Temp::tempfile('bbbike_since_tag_XXXXXXXX', SUFFIX => '.bbd', TMPDIR => 1, UNLINK => 1);
+
+    IPC::Run::run(['git', 'diff', $tag, '--', @files], '|', [@cvsdiffbbd_cmd, '--add-file-label', '--diff-file=-'], '>', $tmpfile)
+	    or main::status_message("Creation of diff bbd file '$tmpfile' using 'git diff' and '@cvsdiffbbd_cmd' failed", 'die');
+
+    # Create only if missing. XXX Creating is somewhat dangerous, as
+    # there could already a "make" job be running in the background,
+    # and currently it's not possible to run multiple makes in
+    # parallel without the possibility of damaging files.
+    if (! -e $bbbike_temp_blockings_bbd) {
+	my $save_pwd2 = BBBikeUtil::save_pwd2();
+	chdir 'data'
+	    or main::status_message("Can't chdir to data: $!", 'die');
+	system('make', '../' . $bbbike_temp_blockings_bbd);
+	if (! -e $bbbike_temp_blockings_bbd) {
+	    main::status_message("Could not create '$bbbike_temp_blockings_bbd' (make failed?)", 'die');
+	}
     }
-    my($tmpfh,$tmpfile) = File::Temp::tempfile('bbbike_since_deployment_XXXXXXXX', SUFFIX => '.bbd', TMPDIR => 1, UNLINK => 1);
-    IPC::Run::run(['git', 'diff', 'deployment/bbbikede/current', '--', @files], '|', [$^X, 'miscsrc/cvsdiffbbd', '--add-file-label', '--diff-file=-'], '>', $tmpfile)
-	    or main::status_message('Creation of diff bbd file failed', 'die');
+    IPC::Run::run(
+		  ['git', 'show', "$tag:data/temp_blockings/bbbike-temp-blockings.pl"], '|',
+		  [@temp_blockings_tasks_cmd, 'pl_to_yml', '/dev/stdin', '/dev/stdout'], '|',
+		  [@temp_blockings_tasks_cmd, 'yml_to_bbd', '/dev/stdin'], '|',
+		  ['sh', '-c', "diff -u - $bbbike_temp_blockings_bbd || true"], '|', # XXX ugly hack, because diff would exit with a non-zero status, making the whole IPC::Run::run looking like a failure
+		  [@cvsdiffbbd_cmd, '--add-fixed-label=bbbike-temp-blockings: ', '--diff-file=-'],
+		  '>>', $tmpfile
+		 )
+	    or main::status_message("Adding bbbike-temp-blockings diffs to '$tmpfile' using git, '@temp_blockings_tasks_cmd', '@cvsdiffbbd_cmd' failed", 'die');
+
     add_new_layer('str', $tmpfile);
-    if (defined $old_last_deployment_diff_file && -e $old_last_deployment_diff_file) {
-	unlink $old_last_deployment_diff_file;
-    }
-    $old_last_deployment_diff_file = $tmpfile;
 }
 
 ######################################################################
