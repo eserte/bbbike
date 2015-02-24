@@ -722,7 +722,7 @@ Alter Markt: Asphalt	Q0 22495,4523 22458,4565
 Alter Markt: Kopfsteinpflaster	Q2 22458,4565 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Kopfsteinpflaster	Q2 22390,4702 22388,4737 22377,4836
 Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
-Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10240,15318 10192,15465 10185,15487 10130,15647
+Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10240,15318 10188,15474 10185,15487 10130,15647
 Norwegerstr.: mäßiger Asphalt	Q1- 9959,16510 9975,16425
 Kolonnenweg: mäßiger Asphalt	Q1- 9959,16510 9955,16578
 Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
@@ -2468,7 +2468,7 @@ Kulmseestr.: Asphalt	Q0 20303,12230 20364,12216 20490,12209 20629,12177
 Rotraudstr.: Asphalt, leicht uneben	Q0- 21118,14477 21099,14300 21087,14183 21074,14058 21061,13940
 (Pfingstrosenweg - Wuhlewanderweg): glatte Pflasterung	Q0 22085,10855 22103,10814 22110,10796
 (Begasstr. - Riemenschneiderweg): teils Verbundsteinpflaster, teils Asphalt	Q1 6513,7005 6650,7017 6770,7027
-(Gaudystr. - Mauerpark): glattes Pflaster	Q0 10456,15561 10256,15482 10192,15465
+(Gaudystr. - Mauerpark): Beton	Q0 10456,15561 10234,15490
 #: note: laut joern (js) "schlechtere Qualität", ist aber ganz normales Kopfsteinpflaster
 Gaudystr.: Kopfsteinpflaster	Q2 10941,15697 10733,15638 10456,15561
 Zur Rinderauktionshalle: Asphalt	Q0 14211,13150 14355,13109 14448,13081
@@ -8757,7 +8757,7 @@ Freesienweg: Verbundsteinpflaster	Q0- 16000,12625 15997,12743
 #: next_check_id: RITTER-2014
 #: XXX nach den Bauarbeiten wird sich Qualität ändern
 #: XXX siehe auch Eintrag in handicap_s-orig
-#: last_checked: 2014-10-15
+#: last_checked: 2015-02-23
 #: check_frequency: 90d
 Ritterstr.: teilweise unbefestigt und holprig	Q1- 9763,11148 9861,11103
 #: note: berlinsis meint hierzu: "fester Waldweg, Q2" (falls er diesen Weg überhaupt meint)
@@ -9776,6 +9776,7 @@ Uferstr. (Niederschöneweide): Asphalt	Q0 17639,6227 17843,6083
 Waldkiefernring: Asphalt	Q0 21855,2392 21754,2329 21782,2283 21885,2343
 Fähenweg: Asphalt	Q0 21869,2367 21791,2323
 Sportpromenade: Asphalt mit einigen Schäden und Wurzelhebungen	Q0- 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436
+Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10234,15490
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

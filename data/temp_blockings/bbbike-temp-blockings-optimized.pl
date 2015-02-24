@@ -1890,6 +1890,18 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
          'data' => 'userdel	q4::inwork; 9234,11056 8947,10956
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Max-Schmelling-Halle: bei Veranstaltungen größere Behinderungen möglich',
+         'from' => undef,
+         'id' => 2681,
+         'data' => '#: note: bei Veranstaltungen möglicherweise auch gesperrt?
+#: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
+	q4::temp 10456,15561 10234,15490 10188,15474
+',
+         'type' => 'handicap'
        }
      
 );

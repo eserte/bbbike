@@ -23892,4 +23892,15 @@ EOF
 userdel	q4::inwork; 9234,11056 8947,10956
 EOF
      },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Max-Schmelling-Halle: bei Veranstaltungen größere Behinderungen möglich',
+       type  => 'handicap',
+       recurring => 1,
+       data  => <<EOF,
+#: note: bei Veranstaltungen möglicherweise auch gesperrt?
+#: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
+	q4::temp 10456,15561 10234,15490 10188,15474
+EOF
+     },
     );

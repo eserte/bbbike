@@ -20,7 +20,7 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-02-21 vvv
+#: last_checked: 2015-02-23 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -42,7 +42,7 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # REMOVED (keine Absperrung mehr) --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d --- Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
 # 
-#: last_checked: 2015-02-10
+#: last_checked: 2015-02-24
 #: check_frequency: 60d
 Mühsamstr.: Bauarbeiten in Höhe Eckertstr., Engstelle	q2::inwork 13371,12694 13506,12752
 # 
@@ -62,7 +62,7 @@ Mühsamstr.: Bauarbeiten in Höhe Eckertstr., Engstelle	q2::inwork 13371,12694 135
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX nach den Bauarbeiten bleiben wohl "einige Fußgänger" übrig, dann nur mit q1
-#: last_checked: 2015-02-16
+#: last_checked: 2015-02-23
 Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2015-01-19
@@ -137,7 +137,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
 #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7
-#: last_checked: 2015-02-19
+#: last_checked: 2015-02-23
 #: check_frequency: 60d
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
@@ -147,14 +147,14 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
 # REMOVED (fertig) --- #: last_checked: 2015-01-30 --- Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
-#: last_checked: 2015-02-20 vvv
+#: last_checked: 2015-02-24 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
 # 
 #: XXX wobei manchmal (nachts, am Wochenende?) die Barrieren weggeschoben sind und man noch relativ gut durchkommt
 #: next_check_id: SCHWEDTER-2014
-#: last_checked: 2015-02-05
+#: last_checked: 2015-02-24
 Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10567,14337 10530,14452
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -238,8 +238,8 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-02-13
-Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10256,11160 10437,11352
+#: last_checked: 2015-02-23
+Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
 # REMOVED (Anlieger frei, eigentlich kaum noch Behinderungen) --- #: last_checked: 2013-11-25 (Fahrbahn inoffiziell befahrbar) --- Neue Grünstr.: Bauarbeiten, Fahrbahn könnte gesperrt sein	q3::inwork 10389,11390 10446,11470
@@ -252,7 +252,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10256,11160 10437,11352
 # 
 ### Kreuzberg ###
 # 
-#: last_checked: 2015-01-21 (offen für Radfahrer)
+#: last_checked: 2015-02-23 (offen für Radfahrer)
 # REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015)
 Alfred-Döblin-Platz: Bauarbeiten	q1::inwork 11162,10919 11150,11030
 # 
@@ -478,7 +478,7 @@ vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fußgänger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fußgänger	q1 22759,4430 22797,4518
-Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10240,15318 10192,15465 10185,15487 10130,15647
+Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10240,15318 10188,15474 10185,15487 10130,15647
 (Fußweg am Griesinger-Krankenhaus): Fußgänger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fußgängerbrücke Ostkreuz): Fußgänger	q3 14798,10985 14787,10972 14764,10877 14794,10844
 (Ringbahnsteig Ostkreuz): Fußgänger	q4 14794,10844 14839,10853 14862,10942 14845,10954
@@ -696,8 +696,9 @@ Dieffenbachstr.: Bodenschwellen	q0- 11141,9732 11346,9655
 # REMOVED (hier ist nur eine einzige Bodenschwelle übrig geblieben) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624 --- #: XXX_prog: für Anhänger evtl. q1 --- Dieffenbachstr.: Bodenschwellen, können gut umfahren werden	q0- 11346,9655 11541,9576
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14077,10016
-Lausitzer Platz: zahlreiche Bodenschwellen	q2 12197,10494 12172,10585
-Lausitzer Platz: zahlreiche Bodenschwellen	q2 12328,10442 12274,10612
+Lausitzer Platz: einige Bodenschwellen	q2 12197,10494 12172,10585
+Lausitzer Platz: einige Bodenschwellen	q2 12274,10612 12172,10585
+Lausitzer Platz: einige Bodenschwellen	q2 12328,10442 12274,10612
 #: XXX_prog BS Bordstein an der Falkenberger Chausse, ansonsten q2
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fußgänger, Bordstein	q3 17686,18172 17721,18001
 Erich-Steinfurth-Str.: Fußgänger	q2 12645,11673 12596,11696
@@ -884,8 +885,7 @@ Braunschweiger Ufer: Fußgänger	q1 12718,5845 13077,5893 13483,5973
 Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen	q2 6513,7005 6650,7017
 Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe	q2 6650,7017 6770,7027
 Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4954,5888
-#: note: bei Veranstaltungen (Max-Schmelling-Halle) möglicherweise gesperrt oder größere Behinderungen:
-(Gaudystr. - Mauerpark): Fußgänger, bei Veranstaltungen in der Max-Schmelling-Halle größere Behinderungen möglich	q3 10456,15561 10256,15482 10192,15465
+(Gaudystr. - Mauerpark): Fußgänger	q1 10456,15561 10234,15490 10188,15474
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fußgänger	q1 2934,14852 2900,14891 2840,14982 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fußgänger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1372,15313
 (Jungfernheide): Fußgänger	q1 1415,15190 1459,15196 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
@@ -2514,7 +2514,7 @@ An der Brauerei: Fußgänger	q2 13283,13311 13235,13414
 #: next_check_id: RITTER-2014
 #: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
 #: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2014-10-15
+#: last_checked: 2015-02-23
 #: check_frequency: 90d
 Ritterstr.: Fußgänger	q3::inwork 9763,11148 9861,11103
 Elisenstr.: Fußgänger	q2 5810,5340 5813,5354 5822,5388
