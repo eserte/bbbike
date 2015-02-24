@@ -59,7 +59,7 @@ for my $line (`@cmd`) {
     if ($line =~ /^Index:\s+(.*)/) { # old CVS diff style
 	$current_file = $1;
 	$new_file_started = 1;
-    } elsif ($line =~ m{^diff.*? a/(\S+) b/\S+}) { # new git diff style
+    } elsif ($line =~ m{^diff.*? [aci]/(\S+) [bw]/\S+}) { # new git diff style (a vs. b, or with mnemonics: c vs. w resp. i vs. w)
 	$current_file = $1;
 	$new_file_started = 1;
     } elsif ($line =~ m{^diff.* (\S+) (\S+)$}) { # traditional diff
