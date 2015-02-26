@@ -3016,7 +3016,9 @@ sub show_diffs_since_last_deployment {
 		 )
 	    or main::status_message("Adding bbbike-temp-blockings diffs to '$tmpfile' using git, '@temp_blockings_tasks_cmd', '@cvsdiffbbd_cmd' failed", 'die');
 
-    add_new_layer('str', $tmpfile);
+    my $layer = add_new_layer('str', $tmpfile);
+
+    main::choose_ort("str", $layer);
 }
 
 ######################################################################
