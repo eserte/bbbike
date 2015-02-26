@@ -1902,6 +1902,27 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 	q4::temp 10456,15561 10234,15490 10188,15474
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1428703200,
+         'text' => 'Salzufer: zwischen Franklin- und Margarete-Kühn-Str. in Richtung Straße des 17. Juni gesperrt, bis 10.04.2015',
+         'from' => 1424975817,
+         'id' => 2682,
+         'data' => '#: by: fritz
+userdel	q4::inwork; 5018,12322 5133,12240
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20150224.1645.401231.html',
+         'until' => 1426892399,
+         'text' => 'Waldowstr./Oberseestr.: Kreuzung gesperrt, Durchfahrt ggfs. nicht möglich, vom 16. bis 20. März 2015',
+         'from' => 1426374000,
+         'id' => 2683,
+         'data' => 'userdel	2::inwork 15761,15840 15856,15924 15703,15953
+userdel	2::inwork 15891,16041 15856,15924 16080,15830
+',
+         'type' => 'gesperrt'
        }
      
 );
