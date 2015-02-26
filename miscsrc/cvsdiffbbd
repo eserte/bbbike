@@ -13,8 +13,10 @@
 #
 
 use strict;
+use 5.010; # named capture groups
 use File::Basename qw(basename);
 use Getopt::Long;
+use Tie::IxHash;
 
 Getopt::Long::Configure('pass_through');
 
@@ -49,11 +51,61 @@ my $current_file;
 my $current_base;
 
 my $bbdrx = qr{^
-	       (?:>[ ]|\+)     # context or unified diff marker
-	       ([^\t]*)        # name
-	       \t(\S+)         # cat
-	       \s([ 0-9,.+-]+) # coords
+	       (?:>[ ]|(?<diffdir>[-+])) # context or unified diff marker (latter with both - and +)
+	       (?<name>[^\t]*)           # name
+	       \t(?<cat>\S+)             # cat
+	       \s(?<coords>[ 0-9,.+-]+)  # coords
 	       $}x;
+
+my %diffdir_records; # +/- -> {name -> [[cat, coords], [cat, coords]]}
+my $flush = sub {
+    for my $name (keys %{ $diffdir_records{'+'} }) {
+	for my $record (@{ $diffdir_records{'+'}->{$name} }) {
+	    my($cat, $coords) = @$record;
+
+	    # Maybe shorten coordinate list
+	    my @minus_records = @{ $diffdir_records{'-'}->{$name} || [] };
+	    for my $minus_record (@minus_records) {
+		my($minus_cat, $minus_coords) = @$minus_record;
+		if ($cat eq $minus_cat) {
+		    my @plus_coords = split /\s+/, $coords;
+		    my @minus_coords = split /\s+/, $minus_coords;
+
+		    my $begin_i;
+		    for($begin_i = 0; $begin_i <= $#plus_coords; $begin_i++) {
+			no warnings 'uninitialized';
+			last if $plus_coords[$begin_i] ne $minus_coords[$begin_i];
+		    }
+		    if ($begin_i > 0) { $begin_i-- }
+
+		    my($end_plus_i, $end_minus_i);
+		    for($end_plus_i = $#plus_coords, $end_minus_i = $#minus_coords;
+			$end_plus_i >= 0 && $end_minus_i >= 0;
+			$end_plus_i--, $end_minus_i--) {
+			no warnings 'uninitialized';
+			last if $plus_coords[$end_plus_i] ne $minus_coords[$end_minus_i];
+		    }
+		    if ($end_plus_i < $#plus_coords) { $end_plus_i++ }
+
+		    $coords = join(' ', @plus_coords[$begin_i..$end_plus_i]);
+		    last;
+		}
+	    }
+
+	    if ($name =~ m{^#}) {
+		print $name, "\n";
+	    } else {
+		if ($add_file_label) {
+		    print "$current_base: ";
+		} elsif ($add_fixed_label) {
+		    print $add_fixed_label;
+		}
+		print "$name\t$cat $coords\n";
+	    }
+	}
+    }
+    %diffdir_records = ();
+};
 
 for my $line (`@cmd`) {
     chomp $line;
@@ -67,6 +119,8 @@ for my $line (`@cmd`) {
     } elsif ($line =~ m{^diff.* (\S+) (\S+)$}) { # traditional diff
 	$current_file = $1;
 	$new_file_started = 1;
+    } elsif ($line =~ m{^\@\@}) {
+	$flush->();
     }
 
     if ($new_file_started) {
@@ -86,27 +140,23 @@ for my $line (`@cmd`) {
     }
     if ($stage == STAGE_SHOW) {
 	if ($new_file_started) {
+	    $flush->();
 	    print "# File: $current_file\n";
 	    if ($add_file_label) {
 		$current_base = basename($current_file);
 	    }
 	} elsif ($line =~ m{$bbdrx}o) {
-	    my $name   = $1;
-	    if ($name =~ m{^#}) {
-		print $name, "\n";
-	    } else {
-		my $cat    = "#000080";
-		my $coords = $3;
-		if ($add_file_label) {
-		    print "$current_base: ";
-		} elsif ($add_fixed_label) {
-		    print $add_fixed_label;
-		}
-		print "$name\t$cat $coords\n";
+	    my $diffdir = $+{diffdir};
+	    $diffdir = '+' if !defined $diffdir;
+	    my $name = $+{name};
+	    if (!exists $diffdir_records{$diffdir}) {
+		tie %{ $diffdir_records{$diffdir} }, 'Tie::IxHash';
 	    }
+	    push @{ $diffdir_records{$diffdir}->{$name} }, ['#000080', $+{coords}];
 	}
     }
 }
+$flush->();
 
 sub show_usage {
     print STDERR <<'EOF';
