@@ -119,7 +119,7 @@ EOF
 
     {
 	my $out;
-	ok run([$cvsdiffbbd, "--diff-file=-"], "<", \$test_diff, ">", \$out);
+	ok run([$^X, $cvsdiffbbd, "--diff-file=-"], "<", \$test_diff, ">", \$out);
 	eq_or_diff $out, <<'EOF';
 # File: data/comments_path
 Warschauer Str. - Boxhagener Str.: bereits am Frankfurter Tor auf den Mittelstreifen wechseln	#000080 13785,12292 13745,12118 14045,11965
@@ -136,7 +136,7 @@ EOF
 
     {
 	my $out;
-	ok run([$cvsdiffbbd, "--add-file-label", "--diff-file=-"], "<", \$test_diff, ">", \$out);
+	ok run([$^X, $cvsdiffbbd, "--add-file-label", "--diff-file=-"], "<", \$test_diff, ">", \$out);
 	eq_or_diff $out, <<'EOF';
 # File: data/comments_path
 comments_path: Warschauer Str. - Boxhagener Str.: bereits am Frankfurter Tor auf den Mittelstreifen wechseln	#000080 13785,12292 13745,12118 14045,11965
@@ -153,7 +153,7 @@ EOF
 
     {
 	my $out;
-	ok run([$cvsdiffbbd, "--add-fixed-label=foobar: ", "--diff-file=-"], "<", \$test_diff, ">", \$out);
+	ok run([$^X, $cvsdiffbbd, "--add-fixed-label=foobar: ", "--diff-file=-"], "<", \$test_diff, ">", \$out);
 	eq_or_diff $out, <<'EOF';
 # File: data/comments_path
 foobar: Warschauer Str. - Boxhagener Str.: bereits am Frankfurter Tor auf den Mittelstreifen wechseln	#000080 13785,12292 13745,12118 14045,11965
