@@ -21824,12 +21824,12 @@ EOF
 userdel	2::temp 5047,10381 5076,10658
 EOF
      },
-     { from  => $isodate2epoch->("2014-12-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-02-10 12:00:00"),
-       text  => 'Sterndamm: Eisenbahnunterführung voraussichtlich bis zum 10.02.2015 in Richtung Groß-Berliner Damm/Südostallee gesperrt',
+     { from  => undef, # $isodate2epoch->("2014-12-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-03-02 04:00:00"),
+       text  => 'Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt',
        type  => 'gesperrt',
-       source_id => 'IM_024071',
        data  => <<EOF,
+#: by: fritz
 userdel	1::inwork 17886,5587 17736,5441
 EOF
      },
@@ -23587,7 +23587,7 @@ EOF
      },
      { from  => 1412481600, # 2014-10-05 06:00
        until => 1427896800, # 2015-04-01 16:00
-       text  => 'Gartenstr.: Baustelle vor der Invalidenstr., kurzer Abschnitt der Fahrbahn in Richtung Süden gesperrt, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr',
+       text  => 'Gartenstr.: Baustelle vor der Invalidenstr., Fahrbahn in Richtung Süden gesperrt, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr',
        type  => 'handicap',
        source_id => 'IM_023111',
        data  => <<EOF,
@@ -23920,6 +23920,15 @@ EOF
        data  => <<EOF,
 userdel	2::inwork 15761,15840 15856,15924 15703,15953
 userdel	2::inwork 15891,16041 15856,15924 16080,15830
+EOF
+     },
+     { from  => $isodate2epoch->("2015-03-01 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2015-03-09 04:00:00"),
+       text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 02.03.2015 bis voraussichtlich 09.03.2015',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: fritz
+userdel	2::inwork 17886,5587 17736,5441
 EOF
      },
     );

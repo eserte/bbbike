@@ -91,15 +91,14 @@ Schadowstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9007,12499 9016,12416
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2015-01-29
+#: last_checked: 2015-02-23
 #: check_frequency: 90d
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
-# REMOVED (Sperrung weitgehend aufgehoben) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5047.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html (Abschluss der Arbeiten im M‰rz 2014) --- #: source_id: IM_020581 ("bis Ende 2014") --- #: last_checked: 2014-04-01 vvv --- #: next_check: 2014-04-02 vvv --- #: priority: #A vvv --- #: valid: -20140402 --- #: XXX Sperrung wird aufgehoben --- Chausseestr.: Bauarbeiten, Fahrbahn ist noch nicht offiziell freigegeben	q3::inwork 9042,13707 8935,13844 --- #: XXX was ist mit diesem Abschnitt? Bleibt die Einbahnstraﬂe? --- Chausseestr.: Einbahnstraﬂe zwischen Zinnowitzer Str. und Invalidenstr.	q4::inwork; 8870,13926 8935,13844 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html
 #: source_id: IM_022304
-#: last_checked: 2015-01-23
+#: last_checked: 2015-02-27
 #: next_check: 2015-04-01
 #: priority: #A
 Chausseestr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8935,13844 8870,13926
@@ -147,7 +146,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
 # REMOVED (fertig) --- #: last_checked: 2015-01-30 --- Saarbr¸cker Str.: Einbahnstraﬂenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
-#: last_checked: 2015-02-26 vvv
+#: last_checked: 2015-02-27 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
@@ -158,7 +157,7 @@ Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 1
 Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10567,14337 10530,14452
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2015-01-23 vvv
+#: last_checked: 2015-02-27 vvv
 #: next_check: 2015-05-31 vvv
 #: priority: #A vvv
 #: source_id: IM_017330
@@ -206,7 +205,7 @@ Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 #: osm_watch: way id="4592727" version="12"
-#: last_checked: 2015-02-17
+#: last_checked: 2015-02-27
 #: check_frequency: 60d
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # 

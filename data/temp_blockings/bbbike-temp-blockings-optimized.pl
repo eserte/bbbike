@@ -1388,7 +1388,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1425265200,
+         'text' => 'Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt',
+         'from' => undef,
+         'id' => 2469,
+         'data' => '#: by: fritz
+userdel	1::inwork 17886,5587 17736,5441
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1543,20 +1552,7 @@ userdel	q3::inwork; 13555,15596 13459,15653
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_021420',
-         'until' => 1425056400,
-         'text' => 'Berliner Str./Mühlenstr. in Bereich U-Bhf. Vinetastr.: Bauarbeiten, Fahrbahnen gesperrt, bis Ende Februar 2015',
-         'from' => undef,
-         'id' => 2562,
-         'data' => '#: source_id: IM_022480
-#: source_id: IM_023568
-userdel	q3::inwork; 10908,17142 10917,17088 10927,17022
-userdel	q4::inwork; 10927,17022 10862,17087
-userdel	q4::inwork 10862,17087 10891,17088 10917,17088
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1757,7 +1753,7 @@ userdel	2::inwork -3197,11554 -3075,11510
        {
          'source_id' => 'IM_023111',
          'until' => 1427896800,
-         'text' => 'Gartenstr.: Baustelle vor der Invalidenstr., kurzer Abschnitt der Fahrbahn in Richtung Süden gesperrt, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr',
+         'text' => 'Gartenstr.: Baustelle vor der Invalidenstr., Fahrbahn in Richtung Süden gesperrt, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr',
          'from' => 1412481600,
          'id' => 2648,
          'data' => 'userdel	q2::inwork; 9224,14169 9383,13986
@@ -1921,6 +1917,16 @@ userdel	q4::inwork; 5018,12322 5133,12240
          'id' => 2683,
          'data' => 'userdel	2::inwork 15761,15840 15856,15924 15703,15953
 userdel	2::inwork 15891,16041 15856,15924 16080,15830
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1425870000,
+         'text' => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 02.03.2015 bis voraussichtlich 09.03.2015',
+         'from' => 1425178800,
+         'id' => 2684,
+         'data' => '#: by: fritz
+userdel	2::inwork 17886,5587 17736,5441
 ',
          'type' => 'gesperrt'
        }

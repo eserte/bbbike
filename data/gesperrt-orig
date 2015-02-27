@@ -2611,7 +2611,7 @@ Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Feb
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136136549415/136549415/00119959/59-Anlagen/02/GA_1805_IV.pdf (mindestens bis Ende 2016)
-#: last_checked: 2015-02-19
+#: last_checked: 2015-02-27
 #: check_frequency: 180d
 Unterf¸hrung Gertraudenbr¸cke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 # 
@@ -2668,10 +2668,9 @@ Bismarckstr.: Mittelstreifen w‰hrend der Bauarbeiten nicht ¸berquerbar	3nocross 
 #: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
 #: confirmed_by: srt
-#: last_checked: 2015-02-18
-#: next_check: 2015-02-26
-#: valid: 20140925-20150226
-#: XXX danach gilt noch einige Tage lang der temp_blockings-Eintrag
+#: last_checked: 2015-02-27
+#: check_frequency: 7d
+#: XXX siehe auch temp_blockings-Eintrag
 Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.02.2015	2::inwork 8101,13901 8248,13659 8337,13541
 # 
 #: last_checked: 2015-02-20
@@ -2864,7 +2863,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
-#: last_checked: 2015-02-09
+#: last_checked: 2015-02-16
 #: check_frequency: 100d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
@@ -2969,7 +2968,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2015-02-17
+#: last_checked: 2015-02-27
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

@@ -2548,17 +2548,17 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2015-02-19 vvv
-#: next_check: 2015-03-09 vvv
+#: last_checked: 2015-02-27 vvv
+#: check_frequency: 14d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
 	X::inwork 9343,12464
 	X::inwork 9475,12365
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (südlicher Bereich) vvv
-#: last_checked: 2015-02-23 vvv
+#: last_checked: 2015-02-27 vvv
 #: check_frequency: 14d vvv
 	F::inwork 9063,12051
 	F::inwork 9270,12086
@@ -2569,7 +2569,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
-#: last_checked: 2015-02-17
+#: last_checked: 2015-02-27
 #: check_frequency: 60d
 	F::inwork 9812,12145
 # 
@@ -2768,7 +2768,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note ^^^
 # 
 #: source_id: IM_024012 vvv
-#: last_checked: 2015-02-19 vvv
+#: last_checked: 2015-02-27 vvv
 #: next_check: 2015-12-20 vvv
 	F 10703,11837
 	F 10656,11887
