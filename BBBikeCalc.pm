@@ -37,8 +37,6 @@ use vars qw(@INC @EXPORT_OK
 #        Variable wahr ist XXX del
 #
 
-#perl2exe_include constant.pm
-
 use constant CAKE => atan2(1,1)/2;
 
 %opposite =

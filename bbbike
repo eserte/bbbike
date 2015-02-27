@@ -14,10 +14,6 @@
 
 package main;
 
-## Additional files for perl2exe.
-## NOTE: This list is not maintained anymore.
-#perl2exe_include Tk/Checkbutton.pm
-
 ## This works theoretically with 5.8.x, but there's a possible
 ## endless loop which is solved in 5.10.0, see rt perl #41442
 ## XXX Nope: still an endless loop with debian's perl 5.10.0
@@ -1423,7 +1419,6 @@ if (!defined $balloon) {
 #BEGIN{mymstat("after balloon BEGIN");} mymstat("after balloon");
 ## DEBUG_END
 
-# XXX if !perl2exe
 if (!$lowmem) {
     if (eval { require Tk::CanvasBalloon; 1 }) {
 	$c_balloon = $top->CanvasBalloon(-initwait => $c_balloon_wait,
