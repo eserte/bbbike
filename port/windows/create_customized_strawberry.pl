@@ -161,14 +161,29 @@ print STDERR "Add modules from Bundle::BBBike_windist...\n";
 			    "$ENV{PATH}"
 			   );
     save_pwd {
+	my @common_cpan_cmd = (
+			       "$strawberry_dir/perl/bin/perl.exe",
+			       "-MCPAN",
+			       "-e",
+			       'CPAN::HandleConfig->load; ' .
+			       # Use srezic's CPAN distroprefs:
+			       '$CPAN::Config->{prefs_dir} = q{' . $strawberry_dir . '\\cpan\\prefs}; ' .
+			       # Keep the BBBike distribution as small as possible:
+			       '$CPAN::Config->{build_requires_install_policy} = q{no}; ' .
+			       # Too slow especially for large Bundles or Tasks, and
+			       # I don't worry about memory currently (difference is
+			       # 160MB vs. 32MB):
+			       '$CPAN::Config->{use_sqlite} => q[0]; ' . 
+			       'install shift',
+			      );
 	chdir $bbbikesrc_dir
 	    or die "Can't chdir to $bbbikesrc_dir: $!";
 	if ($use_bundle) {
-	    system("$strawberry_dir/perl/bin/perl.exe", "-MCPAN", "-e", 'CPAN::HandleConfig->load; $CPAN::Config->{prefs_dir} = q{' . $strawberry_dir . '\\cpan\\prefs}; install shift', 'Bundle::BBBike_windist');
+	    system(@common_cpan_cmd, 'Bundle::BBBike_windist');
 	} else {
 	    chdir "Task/BBBike/windist"
 		or die "Can't chdir to task directory: $!";
-	    system("$strawberry_dir/perl/bin/perl.exe", "-MCPAN", "-e", 'CPAN::HandleConfig->load; $CPAN::Config->{prefs_dir} = q{' . $strawberry_dir . '\\cpan\\prefs}; install shift', '.');
+	    system(@common_cpan_cmd, '.');
 	}
     };
 }
