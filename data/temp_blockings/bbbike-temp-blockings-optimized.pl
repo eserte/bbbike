@@ -723,7 +723,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -1559,15 +1559,7 @@ userdel	q3::inwork; 13555,15596 13459,15653
        undef,
        undef,
        undef,
-       {
-         'until' => 1425164400,
-         'text' => 'Potsdamer Str. in Teltow: Baustelle, Einbahnstraße offen in Richtung Osten, voraussichtlich bis März 2015',
-         'from' => 1380492000,
-         'id' => 2569,
-         'data' => '	q4::inwork; 1329,-753 1235,-714 1212,-706 1067,-699 950,-680 791,-598 758,-582 723,-580 709,-582
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1694,21 +1686,7 @@ userdel	2::inwork 15419,10706 15379,10651
        undef,
        undef,
        undef,
-       {
-         'until' => 1425164399,
-         'text' => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.02.2015',
-         'from' => 1412021931,
-         'id' => 2636,
-         'data' => '#: next_check_id: INVALIDENFRIEDHOF-2014
-#: by: Birgit Schroeer
-#: confirmed_by: srt
-#: XXX vielleicht wird hier asphaltiert?
-#: last_checked: 2014-10-01
-#: next_check: 2015-02-26
-userdel	2::inwork 8101,13901 8248,13659 8337,13541
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1927,6 +1905,18 @@ userdel	2::inwork 15891,16041 15856,15924 16080,15830
          'id' => 2684,
          'data' => '#: by: fritz
 userdel	2::inwork 17886,5587 17736,5441
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_024223',
+         'until' => 1426460399,
+         'text' => 'Hohenschönhauser Str.: zwischen Dorfstr./Ahrensfelder Chaussee und Hellersdorfer Weg Baustelle, Straße gesperrt, ab 02.03.2015 08 Uhr bis Mitte März 2015',
+         'from' => 1425164400,
+         'id' => 2685,
+         'data' => '#: XXX gilt die Sperrung auch für Radfahrer?
+#: XXX gibt es danach Änderungen für Radfahrer? einen neuen Radweg?
+userdel	2::inwork 19875,18182 19845,18120 19820,18091
 ',
          'type' => 'gesperrt'
        }
