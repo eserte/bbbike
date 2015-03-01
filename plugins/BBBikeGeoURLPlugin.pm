@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGeoURLPlugin.pm,v 1.3 2007/03/31 20:08:16 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +20,10 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.04';
+
+# XXX geourl.org looks dead (checked 2015-03, returns 503)
+use constant DISPLAY_GEOURL_LINK => 0;
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -45,12 +47,16 @@ sub geourl_tags {
 	$txt = $t->Scrolled("ROText", -width => 80, -height => 20)->pack(qw(-fill both -expand 1));
 	$t->Advertise(Text => $txt);
 
-	$b = $t->Button()->pack;
-	$t->Advertise(Link => $b);
+	if (DISPLAY_GEOURL_LINK) {
+	    $b = $t->Button()->pack;
+	    $t->Advertise(Link => $b);
+	}
     } else {
 	$t = $main::toplevel{ __PACKAGE__ . "" };
 	$txt = $t->Subwidget("Text");
-	$b = $t->Subwidget("Link");
+	if (DISPLAY_GEOURL_LINK) {
+	    $b = $t->Subwidget("Link");
+	}
     }
 
     my $geourl = <<EOF;
@@ -69,10 +75,12 @@ EOF
     $txt->delete("1.0", "end");
     $txt->insert("end", $geourl);
 
-    $b->configure(-text => "Sites near $py/$px",
-		  -command => sub {
-		      start_browser("http://geourl.org/near?lat=$py&long=$px");
-		  });
+    if (Tk::Exists($b)) {
+	$b->configure(-text => "Sites near $py/$px",
+		      -command => sub {
+			  start_browser("http://geourl.org/near?lat=$py&long=$px");
+		      });
+    }
 }
 
 sub start_browser {
