@@ -158,9 +158,8 @@ sub fill_chooser {
 					    # Sigh. Windows braindamage.
 					    require Win32Util;
 					    # no forking here
-					    Win32Util::win32_exec(@cmd);
-					    $mw->messageBox(-message => "Can't execute @cmd: $!",
-							    -icon => 'error');
+					    system 1, Win32Util::win32_quote_list(@cmd);
+					    exit 0;
 					} else {
 					    if (fork == 0) {
 						exec @cmd;
