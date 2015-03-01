@@ -34,10 +34,12 @@ my $patch_exe;
 my $strawberry_dir;
 my $strawberry_ver;
 my $bbbikedist_dir;
+my $use_bundle; # by default, use task
 GetOptions(
 	   "strawberrydir=s" => \$strawberry_dir,
 	   "strawberryver=s" => \$strawberry_ver,
 	   "bbbikedistdir=s" => \$bbbikedist_dir,
+	   "bundle!" => \$use_bundle,
 	  )
     or usage();
 $strawberry_dir or usage();
@@ -161,7 +163,13 @@ print STDERR "Add modules from Bundle::BBBike_windist...\n";
     save_pwd {
 	chdir $bbbikesrc_dir
 	    or die "Can't chdir to $bbbikesrc_dir: $!";
-	system("$strawberry_dir/perl/bin/perl.exe", "-MCPAN", "-e", 'CPAN::HandleConfig->load; $CPAN::Config->{prefs_dir} = q{' . $strawberry_dir . '\\cpan\\prefs}; install shift', 'Bundle::BBBike_windist');
+	if ($use_bundle) {
+	    system("$strawberry_dir/perl/bin/perl.exe", "-MCPAN", "-e", 'CPAN::HandleConfig->load; $CPAN::Config->{prefs_dir} = q{' . $strawberry_dir . '\\cpan\\prefs}; install shift', 'Bundle::BBBike_windist');
+	} else {
+	    chdir "Task/BBBike/windist"
+		or die "Can't chdir to task directory: $!";
+	    system("$strawberry_dir/perl/bin/perl.exe", "-MCPAN", "-e", 'CPAN::HandleConfig->load; $CPAN::Config->{prefs_dir} = q{' . $strawberry_dir . '\\cpan\\prefs}; install shift', '.');
+	}
     };
 }
 
@@ -180,6 +188,8 @@ usage: $0 --strawberrydir dir --bbbikedistdir dir strawberrydist.zip
 
 Both --strawberrydir and --bbbikedistdir directories should
 not exist yet, only the parent directories.
+
+Optional: --bundle may be specified to use Bundle instead of Task.
 EOF
 }
 
