@@ -115,6 +115,10 @@ install_perl_dependencies() {
     then
 	sudo apt-get install -qq libapache-session-counted-perl libarchive-zip-perl libgd-gd2-perl libsvg-perl libobject-realize-later-perl libdb-file-lock-perl libpdf-create-perl libtext-csv-xs-perl libdbi-perl libdate-calc-perl libobject-iterate-perl libgeo-metar-perl libimage-exiftool-perl libdbd-xbase-perl libxml-libxml-perl libxml-twig-perl libgeo-distance-xs-perl libimage-info-perl libinline-perl libtemplate-perl libyaml-libyaml-perl libclass-accessor-perl libdatetime-perl libstring-approx-perl libtext-unidecode-perl libipc-run-perl libjson-xs-perl libcairo-perl libpango-perl libmime-lite-perl libpalm-palmdoc-perl libcdb-file-perl libmldbm-perl
     else
+	# XXX Tk::ExecuteCommand does not specify Tk as a prereq,
+	# so make sure to install Tk early. See
+	# https://rt.cpan.org/Ticket/Display.html?id=102434
+	cpanm --quiet --notest Tk
 	cpanm --quiet --installdeps --notest .
     fi
 }
