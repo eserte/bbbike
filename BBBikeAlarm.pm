@@ -40,7 +40,7 @@ my $install_datebook_additions = 1;
 use File::Basename qw(basename);
 use Time::Local;
 
-$VERSION = '1.45';
+$VERSION = '1.46';
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -931,11 +931,24 @@ sub tk_interface {
     $top->optionAdd("*activeForeground", "white");
 
     if ($args{-ask}) {
-	if ($top->messageBox
-	    (-title => M"Alarm setzen?",
-	     -icon => "question",
-	     -message => Mfmt("Alarm auf %s setzen?", scalar localtime $end_time),
-	     -type => "YesNo") =~ /no/i) {
+	require Tk::DialogBox;
+	require POSIX;
+	my $d = $top->DialogBox(
+				-title => M"Alarm setzen?",
+				-buttons => ['Yes', 'No'],
+				-default_button => 'Yes',
+				-cancel_button => 'No',
+			       );
+	my $fmtted_time;
+	if (POSIX::strftime('%Y-%m-%d', localtime time) eq POSIX::strftime('%Y-%m-%d', localtime $end_time)) {
+	    $fmtted_time = POSIX::strftime("%H:%M:%S", localtime $end_time); # same day, keep it short
+	} else {
+	    $fmtted_time = POSIX::strftime("%Y-%m-%d %H:%M:%S", localtime $end_time);
+	}
+	$d->add('Message', -width => 640, -text => Mfmt("Alarm auf %s setzen?", $fmtted_time))->pack(-side => 'top', -fill => 'x');
+	$d->add('Entry', -textvariable => \$text)->pack(-side => 'top', -fill => 'x');
+	my $answer = $d->Show;
+	if ($answer =~ /no/i) {
 	    return;
 	}
     }
