@@ -901,7 +901,7 @@ sub emacs_org_mode_date {
 # called from outer world
 sub tk_interface {
     my($end_time, $text, %args) = @_;
-    $text = "Leave" if $text eq "";
+    $text = M("Verlassen") if $text eq "";
     require Tk;
 ##XXX balloon geht nicht...
 #    require Tk::Balloon;
@@ -941,7 +941,8 @@ sub tk_interface {
     }
 
     my $cb =
-	$top->Button(-text => M("Verlassen"),
+	$top->Button(
+		     -text    => $text, # forces initial size of toplevel
 		     -command => sub { $top->destroy },
 		    )->pack;
 #    $balloon->attach($cb, -msg => $text);
@@ -956,11 +957,23 @@ sub tk_interface {
 
     {
 	my $ack_t = $top->Toplevel(-title => M"Alarm gesetzt");
-	my $wait = int($wait/60);
-	$ack_t->Button(-text => Mfmt("Alarm in %s %s gesetzt", $wait, $wait==1 ? M"Minute" : M"Minuten"),
+	my @alarm_args;
+	if ($wait == 1) {
+	    @alarm_args = ($wait, M"Sekunde");
+	} elsif ($wait < 60) {
+	    @alarm_args = ($wait, M"Sekunden");
+	} else {
+	    my $wait_minutes = int($wait/60);
+	    if ($wait_minutes == 1) {
+		@alarm_args = ($wait_minutes, M"Minute");
+	    } else {
+		@alarm_args = ($wait_minutes, M"Minutes");
+	    }
+	}
+	$ack_t->Button(-text => Mfmt("Alarm in %s %s gesetzt", @alarm_args),
 		       -command => sub { $ack_t->destroy },
 		      )->pack;
-	$ack_t->after(10*1000, sub { $ack_t->destroy });
+	$ack_t->after(5*1000, sub { $ack_t->destroy });
 	$ack_t->Popup;
     }
 
