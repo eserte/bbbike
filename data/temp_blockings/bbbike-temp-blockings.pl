@@ -23171,8 +23171,8 @@ userdel	2::inwork -9085,1347 -9252,1244 -9333,1124 -9443,1035 -9500,827 -9412,54
 EOF
      },
      { from  => 1407357280, # 2014-08-06 22:34
-       until => 1425682800, # 2015-03-07 00:00
-       text  => 'Spremberg: B156: Brücke über die kleine Spree - Ersatzneubau OD Spremberg, Muskauer Straße, Brücke über kleiner Spree Vollsperrung, 06.08.2014 bis 06.03.2015 ',
+       until => $isodate2epoch->("2015-04-30 23:59:59"), # 1425682800, # 2015-03-07 00:00
+       text  => 'Spremberg: B156: Brücke über die kleine Spree - Ersatzneubau OD Spremberg, Muskauer Straße, Brücke über kleiner Spree Vollsperrung, 06.08.2014 bis 30.04.2015 ',
        type  => 'gesperrt',
        source_id => 'LS/722-C/14/213',
        data  => <<EOF,
@@ -23923,17 +23923,18 @@ userdel	2::inwork 15891,16041 15856,15924 16080,15830
 EOF
      },
      { from  => $isodate2epoch->("2015-03-01 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2015-03-09 04:00:00"),
-       text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 02.03.2015 bis voraussichtlich 09.03.2015',
+       until => $isodate2epoch->("2015-03-09 12:00:00"), # laut fritz bis 12h bzw. 4h, laut vmz bis 4h
+       text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 02.03.2015 bis 09.03.2015',
        type  => 'gesperrt',
+       source_id => 'IM_024218',
        data  => <<EOF,
 #: by: fritz
 userdel	2::inwork 17886,5587 17736,5441
 EOF
      },
      { from  => 1425164400, # 2015-03-01 00:00
-       until => 1426460399, # 2015-03-15 23:59
-       text  => 'Hohenschönhauser Str.: zwischen Dorfstr./Ahrensfelder Chaussee und Hellersdorfer Weg Baustelle, Straße gesperrt, ab 02.03.2015 08 Uhr bis Mitte März 2015',
+       until => $isodate2epoch->("2015-03-08 06:00:00"), # 1426460399, # 2015-03-15 23:59
+       text  => 'Hohenschönhauser Str.: zwischen Dorfstr./Ahrensfelder Chaussee und Hellersdorfer Weg Baustelle, Straße gesperrt, ab 02.03.2015 08 Uhr bis 08.03.2015',
        type  => 'gesperrt',
        source_id => 'IM_024223',
        data  => <<EOF,

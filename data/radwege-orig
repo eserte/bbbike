@@ -1594,7 +1594,9 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 	RW3; 11368,13170 11320,13095 11267,13012
 	RW4; 11368,13170 11451,13301
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
-Busspur ist immer gültig	RW5; 11451,13301 11368,13170
+#: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5; 
+#: last_checked: 2015-03-02
+	RW3; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
 Busspur ist immer gültig	RW5; 11486,13350 11539,13425 11561,13451 11652,13564
 	RW1; 11486,13350 11451,13301
