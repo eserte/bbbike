@@ -704,8 +704,9 @@ Karl-Heinrich-Ulrichs-Str.	H 7033,10396 7003,10513 6985,10597 6972,10665
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131018.0910.390488.html (Verschiebung?)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2013 (Verschiebung, kein neuer Termin)
 #: osm_watch: way id="150519560" version="5"
-#: last_checked: 2014-01-25
-#: next_check: 2015-02-14 (bei osm schon umbenannt, aber zweifelhaft)
+#: XXX bei osm falsch, siehe http://www.openstreetmap.org/note/326108
+#: last_checked: 2015-03-03
+#: check_frequency: 100d
 #: priority: #A
 Einemstr.	H 6972,10665 6918,10854
 Nollendorfplatz	H 7033,10328 7033,10396
@@ -719,7 +720,7 @@ Wittenbergplatz	HH 6353,10583 6268,10588 6216,10614
 An der Urania	HH 6532,10529 6685,10690 6740,10755
 Kurfürstenstr. (Tiergarten, Schöneberg)	N 8058,10306 7850,10351 7744,10372 7633,10394
 #: carriageway_width: 37m (10m+medial strip=13m+14m) (Höhe An der Urania; östlich der Einemstr. deutlich schmaler)
-Kurfürstenstr. (Tiergarten, Schöneberg)	H 7633,10394 7444,10479 7315,10537 7117,10611 7115,10612 6972,10665 6818,10725 6740,10755 6607,10801 6484,10847 6378,10887 6277,10924 6272,10926 6145,10975
+Kurfürstenstr. (Tiergarten, Schöneberg)	H 7633,10394 7444,10479 7315,10537 7117,10611 7110,10613 6972,10665 6818,10725 6740,10755 6607,10801 6484,10847 6378,10887 6277,10924 6272,10926 6145,10975
 Derfflingerstr. (Tiergarten)	N 7117,10611 7236,10936
 #: carriageway_width: 29m (12m+medial strip=5m+12m, Höhe Motzstr.)
 Martin-Luther-Str. (Schöneberg)	HH 6532,10529 6494,10440 6502,10273 6514,10088 6512,9962 6512,9866 6502,9782 6447,9661 6445,9538 6445,9432 6446,9328 6440,9192 6442,9068 6445,8949 6445,8934 6449,8845 6449,8807 6460,8688 6454,8653 6461,8463 6459,8281 6459,8272 6460,8186 6460,8093

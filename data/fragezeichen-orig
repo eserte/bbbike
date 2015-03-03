@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="5"
 #: osm_watch: way id="153373877" version="4"
-#: last_checked: 2014-12-06
+#: last_checked: 2015-03-03
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -1144,6 +1144,22 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: next_check: 2016-06-01
 Verlängerte Hertzallee	?::projected 5352,11502 4917,11696 4905,11785
 # 
+#: XXX Europacity, neue Straßen und Wege vvv
+#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-62b/download/1-62b-BPL_BLATT_1-Offenl.pdf
+#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-62b/download/1-62b-BPL_BLATT_2-Offenl.pdf
+#: next_check: 2016-12-31 vvv
+Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
+geplanter Uferweg	?::projected 8293,13519 8128,13767 8044,13929 7989,14035 7912,14160 7854,14256 7824,14305 7740,14409
+#: XXX wird es auch eine Brücke zur Kieler Str. geben?
+Fußgängerbereich zur Heidestraße	?::projected 7912,14160 7783,14085
+Planstraßen 1.1, 1.2, 1.3	?::projected 7670,14267 7762,14319 7813,14232 7721,14176
+Planstraßen 2.1, 2.2, 2.3	?::projected 7833,14000 7917,14051 7962,13977 7878,13931
+Planstraße 1.3 - Uferweg: Fußgängerbereich	?::projected 7813,14232 7854,14256
+#: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
+Uferweg - Heidestraße: Fußgänger- und Radfahrerbereich	?::projected 8044,13929 7924,13861
+#: next_check ^^^
+#: XXX ^^^
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -1165,8 +1181,6 @@ Verlängerte Hertzallee	?::projected 5352,11502 4917,11696 4905,11785
 # REMOVED (keine Einschränkungen) --- #: XXX laut fritz bis  01.08.2015, 12:00 Uhr --- Holzmarktstr.: Bauarbeiten, auch Auswirkungen auf Radfahrer?	? 11764,12001 11619,12084 11513,12138 11388,12202 11351,12221
 # REMOVED (-> gesperrt-orig) --- #: source_id: IM_023816 --- #: XXX Bauarbeiten bis 06.03.2016 (laut anderen Quellen nur bis 6.3.2015) --- Baerwaldstr.: gibt es für Radfahrer Veränderungen?	? 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
 # REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php --- #: XXX Sperrung bis Oktober 2015 --- #: XXX Umleitung über die Straße "Am Nordhafen", dazu wird sie für Autos gesperrt --- evtl. wird auch asphaltiert? --- #: XXX nach den Bauarbeiten wird die Straße "Am Nordhafen" zurückgebaut --- bleibt der Straßenname erhalten, bleibt ein Weg für Radfahrer übrig? --- #: next_check: 2015-02-01 --- #: priority: #A --- Am Nordhafen: geplante Sperrung	? 7753,14528 7695,14545 7527,14644 7486,14652
-# 
-Potsdamer Str.: ist die Busspur mittlerweile für Radfahrer frei und der Radweg nicht mehr benutzungspflichtig?	? 7633,10394 7689,10514 7820,10768 7912,10945 7968,11048 7980,11070
 # 
 Am Bullengraben: Qualität? Unbeleuchtet?	? -6269,13472 -6197,13504 -6086,13578 -6020,13598 -5949,13600
 # 

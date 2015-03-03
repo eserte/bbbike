@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-02-28 vvv
+#: last_checked: 2015-03-03 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -82,7 +82,7 @@ Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::in
 # 
 #: XXX Ende der Bauarbeiten?
 #: XXX_prog: zu eng für Anhänger
-#: last_checked: 2015-02-19
+#: last_checked: 2015-03-03
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
 #: last_checked: 2015-02-17
@@ -105,7 +105,7 @@ Chausseestr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8935,13844 8870,13926
 # 
 #: source_id: IM_023614
 #: valid: 20141202-20150331
-#: last_checked: 2015-02-17
+#: last_checked: 2015-03-03
 #: next_check: 2015-03-21
 #: priority: #A
 Schiffbauerdamm: zwischen Luisenstr. und Albrechtstr. Bauarbeiten, Sperrung der Fahrbahn, bis 31.03.2015 17:00 Uhr	q3::inwork 8870,12647 9056,12743
@@ -146,7 +146,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
 # REMOVED (fertig) --- #: last_checked: 2015-01-30 --- Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
-#: last_checked: 2015-03-02 vvv
+#: last_checked: 2015-03-03 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
@@ -1784,17 +1784,8 @@ Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 (Landsberger Allee - Zechliner Str.): Fußgänger, Bordstein	q2 16590,14386 16544,14593
 (Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q2 12125,12490 12134,12540
 # 
-#: XXX_prog BS (ansonsten entfernen)
-#: XXX wird der Bordstein noch abgesenkt?
-#: last_checked: 2014-09-13 (nein, zusätzlich noch Engstelle durch Bauarbeiten)
-#: next_check: 2015-03-01
-Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
-# 
-#: XXX_prog BS (ansonsten entfernen)
-#: XXX wird der Bordstein noch abgesenkt?
-#: last_checked: 2014-12-12
-#: next_check: 2015-03-01
-Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
+# REMOVED (provisorische Absenkung existiert) --- #: XXX_prog BS (ansonsten entfernen) --- #: XXX wird der Bordstein noch abgesenkt? --- #: last_checked: 2014-09-13 (nein, zusätzlich noch Engstelle durch Bauarbeiten) --- #: next_check: 2015-03-01 --- Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
+# REMOVED (provisorische Absenkung existiert) --- #: XXX_prog BS (ansonsten entfernen) --- #: XXX wird der Bordstein noch abgesenkt? --- #: last_checked: 2014-12-12 --- #: next_check: 2015-03-01 --- Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
 # 
 #: XXX_prog BS zu beiden Seiten (aber flach!) (ansonsten entfernen)
 Gleisdreieck: flache Bordsteine	q1 8296,10438 8237,10418
