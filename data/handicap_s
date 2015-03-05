@@ -204,7 +204,7 @@ Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11912 9668,11928
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9524,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5925,8219
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
-Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12409,11902 12522,11837
+Lange Str. [vor Kaufhof]: Fuﬂg‰nger, Bordstein	q2 12409,11902 12522,11837
 Hermann-Stˆhr-Platz: Fuﬂg‰nger	q2 12453,11790 12409,11902
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7485,8777 7531,8848 7563,8871
 Nettelbeckplatz: Fuﬂg‰nger	q2 8024,15401 7974,15418 7891,15417
@@ -1368,7 +1368,7 @@ Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2249 1480,2199 1452,2095 1461,2073 14
 (Grolmanstr./Goethestr. - Am Schillertheater): gemeinsamer Rad- und Gehweg, Fuﬂg‰nger haben Vorrang	q1 4651,11368 4648,11445 4616,11507 4574,11587
 (Verl‰ngerung Hiddenseestr.): Fuﬂg‰nger	q2 10960,17674 10969,17587
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
-(Schillingstr. - Neue Blumenstr.): Bordstein, einige Fuﬂg‰nger	q2 11594,12662 11709,12601
+(Schillingstr. - Neue Blumenstr.): Bordstein, einige Fuﬂg‰nger	q2 11596,12668 11709,12601
 (Wutzkyallee - Zwickauer Damm): einige Fuﬂg‰nger	q1 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474
 (Zwickauer Damm - Rudower Flieﬂ): einige Fuﬂg‰nger, Bordstein	q2 15688,1506 15776,1456
 (Zwickauer Damm - Rudower Flieﬂ): einige Fuﬂg‰nger	q1 15719,1557 15727,1525 15776,1456 15795,1428 15886,1382 15928,1395 16005,1350 16043,1311 16051,1293 16076,1272 16329,1128 16419,1048
@@ -2414,3 +2414,4 @@ Altentreptower Str., linker Gehweg	q3::igndisp; 21199,12258 21276,12241 21294,12
 Altentreptower Str., linker Gehweg	q2::igndisp; 21401,12155 21573,12140
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fuﬂg‰ngerampel	q3::igndisp; 5599,21025 5525,21022
 Frankfurter Allee, linker Gehweg bis zur Ampel	q3::igndisp; 15717,12010 15670,12022
+Otto-Braun-Str., linker Gehweg	q3::igndisp; 11352,13180 11451,13301

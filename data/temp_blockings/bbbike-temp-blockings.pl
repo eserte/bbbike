@@ -19156,11 +19156,11 @@ EOF
 userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
-     { from  => $isodate2epoch->("2014-04-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-05-19 23:59:59"), # 1 Tag Nachlauf
+     { from  => $isodate2epoch->("2015-04-28 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-26 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 4]],
-       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 25.04.2014 bis 18.05.2014',
+       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2015 bis 25.05.2015',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336

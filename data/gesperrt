@@ -1840,7 +1840,8 @@ Mendelssohnstr. -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11490,13463 115
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straﬂenbahntrasse	3::igndisp 11451,13301 11486,13350 11433,13389
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11433,13389 11486,13350 11539,13425
 Straﬂenbahntrasse	3nocross::ignrte 11451,13301 11368,13170 11320,13095
-Otto-Braun-Str. -> Wadzeckstr.: Straﬂenbahntrasse	3::igndisp 11320,13095 11368,13170 11326,13196
+Wadzeckstr. -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11352,13180 11368,13170 11451,13301
+Otto-Braun-Str. -> Wadzeckstr.: Straﬂenbahntrasse	3::igndisp 11320,13095 11368,13170 11352,13180
 Mittelstreifen	3nocross::ignrte 11368,13170 11320,13095 11267,13012 11226,12945
 Theanolte-B‰hnisch-Str. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11235,13143 11320,13095 11368,13170
 Otto-Braun-Str. -> Theanolte-B‰hnisch-Str.: Mittelstreifen	3::igndisp 11267,13012 11320,13095 11235,13143
@@ -3385,3 +3386,4 @@ Altentreptower Str., linker Gehweg	1::igndisp 21401,12155 21310,12150 21294,1216
 Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fuﬂg‰ngerampel	1::igndisp 5525,21022 5599,21025
 Frankfurter Allee, linker Gehweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
+Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11352,13180

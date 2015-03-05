@@ -927,7 +927,28 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
+userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
+userdel	q4::temp 11275,8387 11230,8402
+userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
+',
+         'periodic' => 1,
+         'until' => 1432677599,
+         'from' => 1430172000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2015 bis 25.05.2015',
+         'type' => 'handicap',
+         'id' => 2207
+       },
        undef,
        undef,
        undef,
