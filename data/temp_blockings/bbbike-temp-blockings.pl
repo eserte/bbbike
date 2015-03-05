@@ -23933,7 +23933,7 @@ userdel	2::inwork 17886,5587 17736,5441
 EOF
      },
      { from  => 1425164400, # 2015-03-01 00:00
-       until => $isodate2epoch->("2015-03-08 06:00:00"), # 1426460399, # 2015-03-15 23:59
+       until => 1425498147, # was: $isodate2epoch->("2015-03-08 06:00:00"), # 1426460399, # 2015-03-15 23:59
        text  => 'Hohenschönhauser Str.: zwischen Dorfstr./Ahrensfelder Chaussee und Hellersdorfer Weg Baustelle, Straße gesperrt, ab 02.03.2015 08 Uhr bis 08.03.2015',
        type  => 'gesperrt',
        source_id => 'IM_024223',

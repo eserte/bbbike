@@ -1899,18 +1899,6 @@ userdel	2::inwork 15891,16041 15856,15924 16080,15830
 userdel	2::inwork 17886,5587 17736,5441
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_024223',
-         'until' => 1425790800,
-         'text' => 'Hohenschönhauser Str.: zwischen Dorfstr./Ahrensfelder Chaussee und Hellersdorfer Weg Baustelle, Straße gesperrt, ab 02.03.2015 08 Uhr bis 08.03.2015',
-         'from' => 1425164400,
-         'id' => 2685,
-         'data' => '#: XXX gilt die Sperrung auch für Radfahrer?
-#: XXX gibt es danach Änderungen für Radfahrer? einen neuen Radweg?
-userdel	2::inwork 19875,18182 19845,18120 19820,18091
-',
-         'type' => 'gesperrt'
        }
      
 );
