@@ -23468,16 +23468,16 @@ userdel	q3::inwork 4638,10162 4623,10066 4609,9949
 EOF
      },
      { from  => 1412021931, # 2014-09-29 22:18
-       until => $isodate2epoch->("2015-02-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
-       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.02.2015',
+       until => $isodate2epoch->("2015-03-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
+       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: INVALIDENFRIEDHOF-2014
 #: by: Birgit Schroeer
 #: confirmed_by: srt
 #: XXX vielleicht wird hier asphaltiert?
-#: last_checked: 2014-10-01
-#: next_check: 2015-02-26
+#: last_checked: 2015-03-06
+#: next_check: 2015-03-28
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 EOF
      },
@@ -23923,7 +23923,7 @@ userdel	2::inwork 15891,16041 15856,15924 16080,15830
 EOF
      },
      { from  => $isodate2epoch->("2015-03-01 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2015-03-09 12:00:00"), # laut fritz bis 12h bzw. 4h, laut vmz bis 4h
+       until => $isodate2epoch->("2015-03-09 12:00:00"), # laut fritz bis 12h bzw. 4h, laut vmz bis 5h
        text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 02.03.2015 bis 09.03.2015',
        type  => 'gesperrt',
        source_id => 'IM_024218',
