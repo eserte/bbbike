@@ -20753,13 +20753,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, #
-       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und sonntags gesperrt',
+       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und manchmal auch sonntags gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
 #: note: und am 2012-11-15 (gegen 21:00 - offen)
 #: note: und am Sonntag, den 2012-06-02 (vormittags - geschlossen)
+#: note: und am Sonntag, den 2015-03-08 (vormittags - offen)
 userdel	2::night 14838,11410 14792,11391
 EOF
      },
@@ -23876,7 +23877,7 @@ EOF
        text  => "Gürtelstr. - Möllendorffstr.: das Linksabbiegen von der Frankfurter Allee in die Möllendorffstr. und die Querung der Frankfurter Allee von der Gürtelstr. kommend ist nicht mehr direkt möglich, ggfs. Fußgängerampeln auf der westlichen Seite benutzen",
        data  => <<EOF,
 #: XXX "für mehrere Monate" vvv
-#: last_checked: 2015-02-11 vvv
+#: last_checked: 2015-03-08 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
 #: last_checked ^^^
