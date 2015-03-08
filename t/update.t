@@ -30,8 +30,14 @@ GetOptions("doit!" => \$doit)
 if (!$doit) {
     plan skip_all => 'Please specify -doit to run this test';
 }
-if (!is_in_path('rsync')) {
-    plan skip_all => 'No rsync available';
+my $rsync_method;
+if (is_in_path('rsync')) {
+    $rsync_method = 'rsync';
+} elsif (eval { require File::Copy::Recursive; 1}
+   ) {
+    $rsync_method = 'File::Copy::Recursive';
+} else {
+    plan skip_all => 'No rsync or File::Copy::Recursive available';
 }
 plan 'no_plan';
 
@@ -47,10 +53,13 @@ use Update;
 }
 
 my $rootdir = tempdir("BBBike-Update-Test-XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
-{
+if ($rsync_method eq 'rsync') {
     my @cmd = ('rsync', '-a', bbbike_root . '/data/', $rootdir . '/data/');
     system @cmd;
     die "Command '@cmd' failed" if $? != 0;
+} else {
+    File::Copy::Recursive::dircopy(bbbike_root . '/data/', $rootdir . '/data/')
+	    or die 'Copying files from ' . bbbike_root . '/data to ' . $rootdir . '/data using File::Copy::Recursive failed';
 }
 
 my($files, $modified, $md5) = Update::load_modified($rootdir);
