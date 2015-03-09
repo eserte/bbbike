@@ -23877,7 +23877,7 @@ EOF
        text  => "Gürtelstr. - Möllendorffstr.: das Linksabbiegen von der Frankfurter Allee in die Möllendorffstr. und die Querung der Frankfurter Allee von der Gürtelstr. kommend ist nicht mehr direkt möglich, ggfs. Fußgängerampeln auf der westlichen Seite benutzen",
        data  => <<EOF,
 #: XXX "für mehrere Monate" vvv
-#: last_checked: 2015-03-08 vvv
+#: last_checked: 2015-03-09 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
 #: last_checked ^^^

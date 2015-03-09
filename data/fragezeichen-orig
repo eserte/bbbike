@@ -1453,7 +1453,7 @@ Pfirsichblütenweg: dieser Abschnitt des Wegs am Nordgraben wird umbenannt	? 1125
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036880042216/880042216/00116551/51-Anlagen/02/Anlage1.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 ("Anna-Maria-Müller-Str.")
-#: XXX fehlen alle in Berlin.coords.data vvv
+#: XXX fehlen alle in Berlin.coords.data, PLZ=13053 vvv
 #: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel"
 #: last_checked: 2015-02-14 (nur einige unbefestigte Baustraßen) vvv
 #: check_frequency: 100d vvv
@@ -1967,7 +1967,12 @@ Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualität, S
 Verlängerung der Straße "In der Feldmark": Qualität, existiert dieser Abschnitt schon?	? -18428,189 -18625,129 -18630,101
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
-Inselweg (Potsdam): genaue Lage, Qualität?	? -13799,-2574 -13745,-2474
+#: XXX PLZ=14473 (by Leitdaten)
+Inselweg (Potsdam): genaue Lage, Qualität?	? -13829,-2596 -13769,-2508
+# 
+Leiterstr. (Potsdam): existiert eine direkte Verbindung zur Templiner Str.? Qualität?	? -13495,-3094 -13524,-3083 -13566,-2971 -13718,-2991
+# 
+Templiner Str. - Uferweg: existiert eine Verbindung für Radfahrer? Qualität? Ausgeschildert? Nachts beleuchtet? Gibt es hier eine Steigung?	? -13481,-2956 -13519,-2779 -13460,-2757
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf vvv
 Lotte-Laserstein-Str. (Potsdam): genaue Lage, Qualität?	? -10220,-2445 -10305,-2525
@@ -1998,8 +2003,9 @@ Lindenallee: wo befindet sich die Straße genau?	? -784,16574 -945,16725 -781,167
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2014
 #: osm_watch: way id="51823452" version="1"
 #: XXX Privatstraße
-#: XXX fehlt in Berlin.coords.data
-#: XXX_prog "AEG-Str." sieht nicht schön aus. Ausnahmsweise "AEG-Straße" verwenden? Würde aber programmtechnisch nicht funktionieren...
+#: XXX fehlt in Berlin.coords.data, PLZ=13469
+# REMOVED --- : XXX_prog "AEG-Str." sieht nicht schön aus. Ausnahmsweise "AEG-Straße" verwenden? Würde aber programmtechnisch nicht funktionieren... und in den Leitdaten steht auch AEG-Str.
+#: XXX old_name: AEG-Siedlung (bis ca. Anfang 2015)
 AEG-Straße: wo genau liegt die Straße? Ist sie ausgeschildert? Qualität?	? 5860,22676 5944,22755 6023,22667
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/b-plan-9-34-152996.php
@@ -2011,6 +2017,7 @@ Bebauungsplan 9-34: Planstraßen, Uferweg und Brücke werden entstehen	?::projecte
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_15_2014.pdf vvv
 #: XXX fehlen alle in Potsdam.coords.data (PLZ=14476); Planstraßen A bis D vvv
+#: XXX old_name (bis ca. Anfang 2015): Ulrich-Steinhauer-Str. (aber vermutlich existiert eine solche Straße weiterhin, so dass man hier wohl auch ignore_oldname_file:yes eintragen sollte)
 Am Glienicker Mühlenberg (Groß Glienicke): genaue Lage, Qualität?	? -9967,7075 -9983,7012 -9942,6988
 Güntherweg (Groß Glienicke): genaue Lage, Qualität?	? -9909,6987 -9860,7056
 Schulzenlandweg (Groß Glienicke): genaue Lage, Qualität?	? -9842,7068 -9831,6977
@@ -3483,11 +3490,12 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 # REMOVED (teilweise realisiert, siehe radwege-orig für den Rest) --- Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3111,10116 3132,10499 3114,10550 3093,10594
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=2867
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=2867 (neue URL)
 #: osm_watch: way id="34822334" version="11"
 #: osm_watch: way id="69126601" version="3"
 #: osm_watch: way id="150397570" version="3"
-#: last_checked: 2014-08-30
-#: check_frequency: 100d
+#: last_checked: 2015-03-09
+#: check_frequency: 120d
 Lauenburger Str.: wird die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5829,6397 5823,6413
 # REMOVED (Gewerbegelände, Befahren nicht erlaubt, auf der anderen Seite war das Tor zu) --- Windthorststr.: Qualität der Verlängerung? Ausschilderung?	? 22552,11029 22554,11049 22490,11133 22469,11138
 # REMOVED (eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2012 vvv --- #: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/xiv274aa_pl_ern_oeff.pdf?start&ts=1361439967&file=xiv274aa_pl_ern_oeff.pdf vvv --- #: XXX Privatstraßen vvv --- #: last_checked: 2012-04-14 (noch in Bau) vvv --- #: next_check: 2012-12-15 vvv --- #: XXX laut osm existieren die Straßen schon --- Seeadlerweg	? 16477,-160 16519,-265 16600,-475 16648,-596 16665,-641 --- Fischadlerweg	? 16519,-265 16478,-399 16513,-510 16572,-666 --- Eulenweg	? 16600,-475 16513,-510 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: by: ^^^

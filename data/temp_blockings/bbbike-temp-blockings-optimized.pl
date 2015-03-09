@@ -1875,7 +1875,7 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
          'from' => undef,
          'id' => 2679,
          'data' => '#: XXX "für mehrere Monate" vvv
-#: last_checked: 2015-03-08 vvv
+#: last_checked: 2015-03-09 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
 #: last_checked ^^^
@@ -1922,17 +1922,6 @@ userdel	q4::inwork; 5018,12322 5133,12240
          'id' => 2683,
          'data' => 'userdel	2::inwork 15761,15840 15856,15924 15703,15953
 userdel	2::inwork 15891,16041 15856,15924 16080,15830
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_024218',
-         'until' => 1425898800,
-         'text' => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 02.03.2015 bis 09.03.2015',
-         'from' => 1425178800,
-         'id' => 2684,
-         'data' => '#: by: fritz
-userdel	2::inwork 17886,5587 17736,5441
 ',
          'type' => 'gesperrt'
        }
