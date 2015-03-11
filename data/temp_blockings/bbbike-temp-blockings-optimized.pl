@@ -1317,7 +1317,16 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5512.html',
+         'until' => 1426410000,
+         'text' => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, von 14.03.2015, 18:00 Uhr bis 15.03.2015, 10:00 Uhr',
+         'from' => 1426266000,
+         'id' => 2448,
+         'data' => 'userdel	2::inwork 16201,24354 16156,24284 16123,24232
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -1611,7 +1620,17 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_024332',
+         'until' => 1434405599,
+         'text' => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis Mitte Juni 2015',
+         'from' => 1426057200,
+         'id' => 2587,
+         'data' => '#: XXX eventuell für Radfahrer nur an der Wilhelminenhofstraße gesperrt, ab Wattstr. vielleicht schon offen
+userdel	q4::inwork; 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -1875,6 +1894,7 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
          'from' => undef,
          'id' => 2679,
          'data' => '#: XXX "für mehrere Monate" vvv
+#: XXX evtl. bis 30. April 2015
 #: last_checked: 2015-03-09 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178

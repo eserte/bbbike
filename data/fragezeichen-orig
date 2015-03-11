@@ -282,10 +282,13 @@ Zeppelinstr.: Radspuren bis 2015 geplant	?::projected -4670,14637 -4667,14712 -4
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385411.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?)
 Wilhelmstr.: Radspuren bis 2015 geplant	?::projected; -5501,11251 -5455,11321 -5392,11421
 # 
+#: XXX zurzeit Bauarbeiten bis Mitte Dezember 2015 (laut vmz) bzw. Mitte Juni 2016 (laut Stadtentwicklungsseite), danach existieren Radspuren
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5508.html
+#: source_id: IM_024325
 #: osm_watch: way id="4472041" version="11"
 #: last_checked: 2014-08-30
-#: check_frequency: 90d
-Feuerbachstr.: Radspuren bis 2015 geplant	?::projected 5582,6360 5702,6381 5781,6404 5823,6413
+#: next_check: 2015-12-01
+Feuerbachstr.: Radspuren bis 2015 geplant	?::inwork 5582,6360 5702,6381 5781,6404 5823,6413
 # 
 # REMOVED (realisiert) --- #: last_checked: 2013-05-10 --- #: check_frequency: 90d --- Königstr.: Radspuren bis 2015 geplant	?::projected -9412,546 -9730,514 -9969,519 -10052,521 -10269,445 -10593,476
 # REMOVED (realisiert) --- #: last_checked: 2013-07-06 --- #: next_check: 2013-10-13 --- Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
@@ -376,6 +379,11 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: XXX Realisierung bis September 2015
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
+#: next_check: 2015-08-01
+Maaßenstr.: welche Auswirkungen wird die neue "Begegnungszone" für Radfahrer haben? Wird der Radweg verschwinden?	?::inwork 7080,10098 7060,10221 7033,10328
 # 
 # REMOVED (Umleitung geht anders herum) --- #: XXX laut fritz, "für mehrere Monate" --- #: next_check: 2015-02-11 --- Rathausstr. (Lichtenberg): gibt es Änderungen während der Bauarbeiten Frankfurter Allee/Gürtelstr., z.B. wird die Einbahnstraßenrichtung umgedreht?	? 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
 # REMOVED (-> aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- #: note: Privatstraße, südlicher (jetzt schon bestehender) Abschnitt bleibt öffentlich --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- Zur alten Börse: Qualität, schon fertig?	? 18736,13080 18712,12853 18682,12599 18649,12371 --- Marzahner Chaussee [Zur alten Börse]: Qualität, schon fertig?	? 18649,12371 18639,12272 18654,12255

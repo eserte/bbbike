@@ -21586,11 +21586,11 @@ userdel	2::temp 9281,7795 9281,7651 9300,7312
 userdel	2::temp 10384,8628 10360,8521
 EOF
      },
-     { from  => $isodate2epoch->("2014-10-10 08:00:00"), # 1 Tag Vorlauf --- 1371189600, # 2013-06-14 08:00
-       until => $isodate2epoch->("2014-10-13 00:00:00"), # 1371419999, # 2013-06-16 23:59
-       text  => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, von 11.10.2014, 8:00 Uhr bis 12.10.2014, 24:00 Uhr',
+     { from  => $isodate2epoch->("2015-03-13 18:00:00"), # 1 Tag Vorlauf --- 1371189600, # 2013-06-14 08:00
+       until => $isodate2epoch->("2015-03-15 10:00:00"), # 1371419999, # 2013-06-16 23:59
+       text  => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, von 14.03.2015, 18:00 Uhr bis 15.03.2015, 10:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1410/nachricht5376.html',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5512.html',
        data  => <<EOF,
 userdel	2::inwork 16201,24354 16156,24284 16123,24232
 EOF
@@ -22984,15 +22984,14 @@ EOF
 userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22440,-175
 EOF
      },
-     { from  => 1406844000, # 2014-08-01 00:00
-       until => $isodate2epoch->("2014-08-18 18:00:00"), # was $isodate2epoch->("2014-08-23 23:59:59"),
-       text  => 'Siemensstraße zwischen Nalepastraße und Wattstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 02.08.2014 bis 18.08.2014',
+     { from  => $isodate2epoch->("2015-03-11 08:00:00"),
+       until => $isodate2epoch->("2015-06-15 23:59:59"),
+       text  => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis Mitte Juni 2015',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/unterhaltungsma__nahmen_2014_1.xls?download.html',
+       source_id => 'IM_024332',
        data  => <<EOF,
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.140733.php
-#: source_id: IM_022482
-userdel	q4::inwork; 17614,6571 17766,6616
+#: XXX eventuell für Radfahrer nur an der Wilhelminenhofstraße gesperrt, ab Wattstr. vielleicht schon offen
+userdel	q4::inwork; 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 EOF
      },
      { from  => undef, # 
@@ -23877,6 +23876,7 @@ EOF
        text  => "Gürtelstr. - Möllendorffstr.: das Linksabbiegen von der Frankfurter Allee in die Möllendorffstr. und die Querung der Frankfurter Allee von der Gürtelstr. kommend ist nicht mehr direkt möglich, ggfs. Fußgängerampeln auf der westlichen Seite benutzen",
        data  => <<EOF,
 #: XXX "für mehrere Monate" vvv
+#: XXX evtl. bis 30. April 2015
 #: last_checked: 2015-03-09 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
