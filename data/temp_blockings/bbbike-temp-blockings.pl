@@ -125,11 +125,11 @@ userdel	2 8993,16100 9059,16038
 userdel	2 9134,15953 9059,16038
 EOF
      },
-     { from  => $isodate2epoch->("2014-04-11 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-04-13 20:00:00"),
+     { from  => $isodate2epoch->("2015-05-08 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-10 20:00:00"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 11, months => 4]],
-       text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 12.04.2013 und 13.04.2013",
+       text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 09.05.2015 und 10.05.2015",
        data  => <<EOF,
 userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
 EOF
@@ -22985,8 +22985,8 @@ userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22440,-175
 EOF
      },
      { from  => $isodate2epoch->("2015-03-11 08:00:00"),
-       until => $isodate2epoch->("2015-06-15 23:59:59"),
-       text  => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis Mitte Juni 2015',
+       until => $isodate2epoch->("2015-06-16 17:00:00"),
+       text  => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis 16.06.2015',
        type  => 'handicap',
        source_id => 'IM_024332',
        data  => <<EOF,
@@ -23942,6 +23942,25 @@ EOF
 #: XXX gilt die Sperrung auch für Radfahrer?
 #: XXX gibt es danach Änderungen für Radfahrer? einen neuen Radweg?
 userdel	2::inwork 19875,18182 19845,18120 19820,18091
+EOF
+     },
+     { from  => undef, # 
+       until => undef, #
+       text  => 'Wörther Str.: Wochenmarkt Donnerstag 10-20.30 Uhr',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+	q4::temp::clock 11163,14548 11255,14572 11317,14564
+EOF
+     },
+     { from  => $isodate2epoch->("2015-04-03 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-04-06 23:59:59"),
+       periodic => 1,
+       recurrences => [['easter', -2]], # Karfreitag
+       text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 6687,8385 6765,8480 6912,8617 6989,8687 7009,8705 7105,8788 7201,8870 7268,8960
 EOF
      },
     );
