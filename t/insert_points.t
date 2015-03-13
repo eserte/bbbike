@@ -60,11 +60,9 @@ for my $use_indexer (0, 1) {
 	    if $] == 5.008 && defined $ENV{LANG} && $ENV{LANG} =~ /utf/i;
 
 	{
-	    my @res = IO::Pipe->new->reader(@insert_points,
-					    "-operation", "grep",
-					    @common_args,
-					    $dudenstr_orig)->getlines;
-	    chomp @res;
+	    my @res = run_insert_points("-operation", "grep",
+					@common_args,
+					$dudenstr_orig);
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung-orig.txt),
@@ -83,12 +81,10 @@ for my $use_indexer (0, 1) {
 	}
 
 	{
-	    my @res = IO::Pipe->new->reader(@insert_points,
-					    "-operation", "grep",
-					    @common_args,
-					    "-noorig", "-coordsys", "H",
-					    $dudenstr)->getlines;
-	    chomp @res;
+	    my @res = run_insert_points("-operation", "grep",
+					@common_args,
+					"-noorig", "-coordsys", "H",
+					$dudenstr);
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung.txt),
@@ -107,11 +103,9 @@ for my $use_indexer (0, 1) {
 	}
 
 	{
-	    my @res = IO::Pipe->new->reader(@insert_points,
-					    "-operation", "change",
-					    @common_args,
-					    $dudenstr_orig, "0,0")->getlines;
-	    chomp @res;
+	    my @res = run_insert_points("-operation", "change",
+					@common_args,
+					$dudenstr_orig, "0,0");
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung-orig.txt),
@@ -130,12 +124,10 @@ for my $use_indexer (0, 1) {
 	}
 
 	{
-	    my @res = IO::Pipe->new->reader(@insert_points,
-					    "-operation", "change",
-					    @common_args,
-					    "-noorig", "-coordsys", "H",
-					    $dudenstr, "0,0")->getlines;
-	    chomp @res;
+	    my @res = run_insert_points("-operation", "change",
+					@common_args,
+					"-noorig", "-coordsys", "H",
+					$dudenstr, "0,0");
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung.txt),
@@ -154,17 +146,25 @@ for my $use_indexer (0, 1) {
 	}
 
 	{
-	    my @res = IO::Pipe->new->reader(@insert_points,
-					    "-operation", "changeline",
-					    @common_args,
-					    @methfesselstr, "0,0")->getlines;
-	    chomp @res;
+	    my @res = run_insert_points("-operation", "changeline",
+					@common_args,
+					@methfesselstr, "0,0");
 	    is(join(" ", sort @res),
 	       join(" ", qw(qualitaet_s-orig strassen-orig)),
 	       "orig and changeline $indexer_label");
 	}
     }
 
+}
+
+sub run_insert_points {
+    my(@args) = @_;
+    my @res = IO::Pipe->new->reader(@insert_points, @args)->getlines;
+    chomp @res;
+    if ($^O eq 'MSWin32') {
+	for (@res) { s/\r// }
+    }
+    @res;
 }
 
 __END__
