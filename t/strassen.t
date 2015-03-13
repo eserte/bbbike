@@ -41,7 +41,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 39;
+my $basic_tests = 45;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -111,6 +111,24 @@ Mehringdamm	HH 9222,8787 9227,8890 9235,9051 9248,9350 9280,9476 9334,9670 9387,
 EOF
     my $s = Strassen->new_from_data_string($data);
     is(scalar @{$s->data}, 3, "Constructing from string data");
+}
+
+{
+    my $data =<<EOF;
+#:
+#: local_directive: yes!
+Straße A	? 6353,22515
+EOF
+    my $s = Strassen->new_from_data_string($data, UseLocalDirectives => 1);
+    isa_ok $s, 'Strassen';
+    $s->init;
+    my $r = $s->next;
+    is $r->[Strassen::NAME], 'Straße A', 'Got street name';
+    is $r->[Strassen::CAT], '?', 'Got category';
+    is_deeply $r->[Strassen::COORDS], ['6353,22515'], 'Got coordinates';
+    my $dir = $s->get_directives;
+    is_deeply $dir->{local_directive}, ['yes!'], 'Got local directive';
+    is scalar(keys %$dir), 1, 'Only one local directive';
 }
 
 {
