@@ -333,12 +333,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6163 (Stand der Planung?)
 #: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/45081036147184117/147184117/00116327/27-Anlagen/02/MA_1534_IV.pdf
 #: note: Anforderungsampel
-#: last_checked: 2015-02-24
+#: last_checked: 2015-03-13
 	F 10511,14418
 	X 10002,14092
 	X 9800,14722
 	X 10881,15047
 #: XXX_prog: Radfahrer Richtung Norden haben möglicherweise Dauergrün oder bevorzugt lange Grün
+#: note: Anforderungsampel für Radfahrer aus der Kastanienallee
 	X 10884,14952
 	X 10953,15787
 	X 11019,16465
@@ -2247,6 +2248,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 14421,5465
 	X 3983,2454
 #: note: keine Anforderungsampel
+#: XXX_prog versetzt geschaltet (gesehen: Fr 2015-03-13 nachmittags)
 #: XXX_prog eigentlich sollen Radfahrer aus der Türken- in die Kongostr. diese Ampel benutzen, aber man könnte theoretisch auch die andere Radfahrerfurt nehmen
 	F 6429,16337
 #: note: Luftbild:
@@ -2298,6 +2300,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: rjoop
 	F 5356,11512
 	F 13800,7801
+#: note: Anforderungsampel
 	F 7182,14998
 #: XXX_prog: nicht relevant für Radwege
 	F 18626,11742
@@ -2537,7 +2540,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 12095,20832
 	X 12030,20490
 	X 13879,13967
-	X 8522,17634
+	X 8514,17634
+#: note: Anforderungsampel
 	F 8631,18441
 	X 10127,19992
 	F 5628,14063
@@ -2550,7 +2554,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2015-02-27 vvv
+#: last_checked: 2015-03-13 vvv
 #: check_frequency: 14d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2571,13 +2575,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
-#: last_checked: 2015-02-27
+#: last_checked: 2015-03-13
 #: check_frequency: 60d
 	F::inwork 9812,12145
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2015-03-06 vvv
+#: last_checked: 2015-03-13 vvv
 #: next_check: 2015-05-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926
@@ -2779,7 +2783,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id ^^^
 # 
 #: next_check_id: AMNORDHAFEN-2015
-#: last_checked: 2015-02-18
+#: last_checked: 2015-03-13
 #: next_check: 2015-10-01
 	F::inwork 7741,14560
 # 

@@ -200,7 +200,7 @@ Sybel-/Waitzstr.	1 3883,10585 3764,10580 3731,10640 3726,10757
 Aßmannstr.	1 25012,5729 25048,5727 25039,5304 25039,5295
 Schönblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724,3592 31670,3604
 Knorrpromenade	1 14424,11639 14369,11489
-Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8627,18402
+Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8622,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18737 7003,18715
 Lauterstr.	1s 5817,7223 5810,7337
@@ -2753,12 +2753,14 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+(Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7818,13993 7917,14051 7962,13977 7866,13916
 Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	2::inwork 15300,11584 15220,11440
 Wasserstr. (Niederschöneweide): abgesperrt	2::inwork 17477,6031 17639,6227
 Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
-Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Februar 2015 bis voraussichtlich Oktober 2015	2::inwork 7653,14570 7527,14644 7486,14652
+Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Februar 2015 bis voraussichtlich Oktober 2015	2::inwork 7753,14528 7695,14545 7653,14570 7527,14644 7486,14652
+Zufahrt zum Uferweg: gesperrt	2::inwork 7703,14582 7696,14577 7662,14579 7653,14570
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 Grenzweg: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17445,7434 17575,7519
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
@@ -2775,7 +2777,7 @@ Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen während der Bauarbeiten nich
 Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3837,11760 3844,11649 3866,11473
 Sesenheimer Str. -> Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3866,11473 3844,11649 3690,11629
 Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3::igndisp 3866,11473 3844,11649 3837,11760
-Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015	2::inwork 8101,13901 8248,13659 8337,13541
+Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015	2::inwork 8119,13912 8101,13901 8248,13659 8337,13541
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352

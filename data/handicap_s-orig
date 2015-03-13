@@ -27,7 +27,7 @@ Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3:
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2015-02-18
+#: last_checked: 2015-03-13
 #: check_frequency: 60d
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
@@ -41,11 +41,7 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 # REMOVED (Asphalt ist da) --- #: last_checked: 2013-03-24 --- #: next_check: 2013-04-01 --- Holteistr.: Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt	q4::inwork; 14639,11512 14710,11626
 # REMOVED (keine Behinderungen mehr) --- #: last_checked: 2013-03-16 --- Helmerdingstr.: Bauarbeiten	q2::inwork 14465,11195 14442,11101
 # REMOVED (keine Absperrung mehr) --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d --- Helsingforser Platz: Bauarbeiten	q3::inwork 13473,11456 13427,11431
-# 
-#: last_checked: 2015-02-24
-#: check_frequency: 60d
-Mühsamstr.: Bauarbeiten in Höhe Eckertstr., Engstelle	q2::inwork 13371,12694 13506,12752
-# 
+# REMOVED (Vorfahrt dem Gegenverkehr gewähren, aber offen) --- #: last_checked: 2015-02-24 --- #: check_frequency: 60d --- Mühsamstr.: Bauarbeiten in Höhe Eckertstr., Engstelle	q2::inwork 113371,12694 13506,12752
 # REMOVED (Bauarbeiten beendet) --- #: last_checked: 2013-12-09 vvv --- #: check_frequency: 7d vvv --- Marchlewskistr.: Bauarbeiten, Fahrbahn möglicherweise gesperrt	q2::inwork; 13473,11456 13366,11651 --- # REMOVED (man wird über die asphaltierte Seite geleitet) --- Marchlewskistr.: Bauarbeiten, Asphaltdecke wurde entfernt	q2::inwork; 13366,11651 13473,11456 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (fast keine Einschränkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775
 # REMOVED (Bauarbeiten beendet) --- Mainzer Str., Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14311,11884 14357,12011
@@ -85,7 +81,7 @@ Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::in
 #: last_checked: 2015-03-03
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
-#: last_checked: 2015-02-17
+#: last_checked: 2015-03-13
 Schadowstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 9007,12499 9016,12416
 # 
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
@@ -105,8 +101,8 @@ Chausseestr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8935,13844 8870,13926
 # 
 #: source_id: IM_023614
 #: valid: 20141202-20150331
-#: last_checked: 2015-03-03
-#: next_check: 2015-03-21
+#: last_checked: 2015-03-13
+#: next_check: 2015-03-30
 #: priority: #A
 Schiffbauerdamm: zwischen Luisenstr. und Albrechtstr. Bauarbeiten, Sperrung der Fahrbahn, bis 31.03.2015 17:00 Uhr	q3::inwork 8870,12647 9056,12743
 # 
@@ -136,7 +132,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
 #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7
-#: last_checked: 2015-02-23
+#: last_checked: 2015-03-13
 #: check_frequency: 60d
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
@@ -146,14 +142,14 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
 # REMOVED (fertig) --- #: last_checked: 2015-01-30 --- Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
-#: last_checked: 2015-03-12 vvv
+#: last_checked: 2015-03-13 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775
 #: last_checked ^^^
 # 
 #: XXX wobei manchmal (nachts, am Wochenende?) die Barrieren weggeschoben sind und man noch relativ gut durchkommt
 #: next_check_id: SCHWEDTER-2014
-#: last_checked: 2015-03-02
+#: last_checked: 2015-03-13
 Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10567,14337 10530,14452
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -191,7 +187,7 @@ Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessisch
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (bei vmz) --- #: XXX: wann ist die Kreuzung wieder befahrbar? --- #: last_checked: 2014-06-30 --- #: next_check: 2014-07-08 --- #: source_id: IM_021906 --- #: priority: #A --- Scharnhorststr.: Sackgasse an der Invalidenstraße	q2::inwork 8450,13599 8313,13839
 # 
-#: last_checked: 2015-02-18 (Bauarbeiten wegen Neubau)
+#: last_checked: 2015-03-13 (Bauarbeiten wegen Neubau)
 #: check_frequency: 30d
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
@@ -205,7 +201,7 @@ Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 #: osm_watch: way id="4592727" version="12"
-#: last_checked: 2015-02-27
+#: last_checked: 2015-03-13
 #: check_frequency: 60d
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # 
@@ -2319,8 +2315,13 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 # 
 #: by: Peter Held:
 (Spreeuferweg): Fußgänger	q1 4537,12531 4501,12544 4334,12551
-#: by: Johannes Nerger:
-(Schönholzer Heide, parallel zur Friesenstr.): Fußgänger	q1 8765,19288 8791,19249 8947,19166 9446,18855 9465,18855
+#: by: Johannes Nerger: vvv
+#: corrected_by: srt (verlegt, neu gemacht)
+(Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger, Kurven	q1 8834,19253 8830,19239
+#: corrected_by: srt (neu gemacht, relativ breit)
+(Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q0- 8830,19239 8933,19179
+(Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q1 8933,19179 9446,18855 9465,18855
+#: by ^^^
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jörn Busch:
 #: corrected_by: srt (q2 -> q1)

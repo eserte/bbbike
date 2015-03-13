@@ -126,7 +126,7 @@ Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 69
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: osm_watch: way id="4581787" version="7"
-#: last_checked: 2014-09-09
+#: last_checked: 2015-03-13
 #: check_frequency: 90d
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
@@ -137,10 +137,12 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: osm_watch: way id="162964323" version="8"
 #: osm_watch: way id="4541085" version="18"
 #: osm_watch: way id="4638315" version="15"
-#: last_checked: 2014-11-26 vvv
+#: last_checked: 2015-03-13 vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2014-03-15 (evtl. passiert während der Bauarbeiten etwas?) --- #: source_id: IM_021408
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected 7672,16878 7687,16770
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected; 7713,16557 7687,16770
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED (wahrscheinlich passiert hier nichts bevor das Pankower Tor realisiert wird) --- #: XXX Baumaßnahme 3.39 (Realisierung nach 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: XXX evtl. wird erst etwas mit Realisierung des Stadtquartiers "Pankower Tor" entstehen --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3701 --- #: osm_watch: way id="144945039" version="4" --- #: last_checked: 2013-10-25 (Richtung Nordosten fertig) --- #: next_check: 2014-01-25 --- Granitzstr.: wird auch etwas in der anderen Richtung gemacht?	? 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
@@ -510,7 +512,7 @@ Sternbergpromenade: Ist die Sternbergpromenade ausgeschildert?	? -3503,13773 -33
 # 
 #: next_check_id: WARSCHAUER-2014
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
-#: last_checked: 2014-08-07
+#: last_checked: 2015-03-13
 #: next_check: 2015-09-30
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # 
@@ -581,10 +583,7 @@ Bahnhofstr./Blankenburger Weg/Pankstr.: Ampel geplant	?::projected 12442,20805
 #: priority: #C
 Jean-Jaurés-Straße / Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected 4575,22089 4581,22106 4582,22122
 # 
-#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.263369.php
-#: next_check: 2015-02-12
-Hadlichstraße: gibt es hier einen Zebrastreifen?	? 11087,18344 11123,18343 11147,18333
-# 
+# REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.263369.php --- #: next_check: 2015-02-12 --- Hadlichstraße: gibt es hier einen Zebrastreifen?	? 11087,18344 11123,18343 11147,18333
 # REMOVED (aufgenommen, Radweg) --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130730.0800.387345.html --- #: source_id: INKO_120069 (hier aber nur bis Ende September) --- #: next_check: 2013-10-05 --- Ruppiner Chaussee: Fahrradstreifen nach den Bauarbeiten?	?::inwork -1872,24336 -1953,24435 -1982,24514
 # REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0645.387322.html --- #: XXX Mitte Oktober sind die Sanierungsarbeiten fertig, dann diesen Eintrag entfernen --- Robert-Siewert-Str.: Bauarbeiten, gibt es Einschränkungen für Radfahrer, insbesondere im Abschnitt des "antiken" Radwegs?	?::inwork 19242,9815 19398,9833 19459,9842 19536,9853 19669,9876
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130729.0830.387317.html ("Durchführungszeit zwei Wochen, allerdings wurde der Termin (16.9.) nicht realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5676 (Vorschlag: "Behelfsampel") --- #: XXX für Radfahrer evtl. relevant, da Überquerungsmöglichkeit zur Magdalenenstr. --- #: XXX evtl. auch ubahnhof_bg anpassen? --- #: source_id: IM_020837	(vielleicht) --- #: last_checked: 2013-11-17 (aus der Ferne nichts gesehen) --- #: next_check: 2013-12-20 --- U Magdalenenstr.: Bau einer Fußgängerampel geplant	?::projected 16057,11988 16093,11927
@@ -762,9 +761,10 @@ Alt-Wittenau: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5219
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3627,23246 3655,23244
 #: last_checked: 2013-07-10
 Eichborndamm: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4580,19756
-#: last_checked: 2014-07-16
-Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8055,17179 8091,17194
 #: check_frequency: ^^^
+#: last_checked: 2015-03-13
+#: check_frequency: 120d
+Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8055,17179 8091,17194
 #: priority ^^^
 #: by: ^^^
 #: by: ^^^
@@ -921,7 +921,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
-#: osm_watch: way id="155605301" version="3"
+#: osm_watch: way id="155605301" version="4"
 #: last_checked: 2015-02-21
 #: check_frequency: 90d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
@@ -1152,21 +1152,24 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: next_check: 2016-06-01
 Verlängerte Hertzallee	?::projected 5352,11502 4917,11696 4905,11785
 # 
+#: next_check_id: EUROPACITY-2015 vvv
 #: XXX Europacity, neue Straßen und Wege vvv
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-62b/download/1-62b-BPL_BLATT_1-Offenl.pdf
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-62b/download/1-62b-BPL_BLATT_2-Offenl.pdf
+#: last_checked: 2015-03-13 vvv
 #: next_check: 2016-12-31 vvv
 Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
 geplanter Uferweg	?::projected 8293,13519 8128,13767 8044,13929 7989,14035 7912,14160 7854,14256 7824,14305 7740,14409
 #: XXX wird es auch eine Brücke zur Kieler Str. geben?
 Fußgängerbereich zur Heidestraße	?::projected 7912,14160 7783,14085
 Planstraßen 1.1, 1.2, 1.3	?::projected 7670,14267 7762,14319 7813,14232 7721,14176
-Planstraßen 2.1, 2.2, 2.3	?::projected 7833,14000 7917,14051 7962,13977 7878,13931
 Planstraße 1.3 - Uferweg: Fußgängerbereich	?::projected 7813,14232 7854,14256
 #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
 Uferweg - Heidestraße: Fußgänger- und Radfahrerbereich	?::projected 8044,13929 7924,13861
 #: next_check ^^^
+#: last_checked ^^^
 #: XXX ^^^
+#: next_check_id ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/1-64a_ve_bebauungsplanentwurf_3-2-bl_1.pdf
 #: XXX Grünflächen teilweise entfernen, culdesac hinzufügen
@@ -1538,7 +1541,7 @@ Lepsiusstr./Ahornstr.: Zebrastreifen in Planung	?::projected 4725,6168 4739,6193
 Vorarlberger Damm/Riemenschneiderweg: Zebrastreifen in Bau?	? 6787,7137 6762,7109 6738,7086
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
-#: osm_watch: way id="47155976" version="9"
+#: osm_watch: way id="47155976" version="10"
 #: last_checked: 2015-02-13
 #: check_frequency: 90d
 Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9190
@@ -1938,8 +1941,6 @@ neue Planstraßen in Fahrland: Lage, Qualität?	? -16174,7006 -15929,6894
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegung9-57ve.html
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/9_57ve_v41_ve_a1_2014_01_14.pdf?start&ts=1390830629&file=9_57ve_v41_ve_a1_2014_01_14.pdf
 #: XXX wird zukünftig entstehen, evtl. entsteht noch ein Uferweg vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5051
-#: XXX evtl. "Sommerwiesenweg" und "Am Stadtforst"
 #: last_checked: 2014-07-18 vvv
 #: check_frequency: 360d vvv
 Marienhainallee: Qualität, nur für Radfahrer/Fußgänger?	? 22788,3061 22485,3036 22290,3019
@@ -1947,6 +1948,10 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2015
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5051
+"Sommerwiesenweg" und "Am Stadtforst": hier entstehen neue Straße	? 23659,2393 23485,2271 23645,2244
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140922.1345.399356.html (Erschließung bis Anfang 2015)
 #: last_checked: 2014-09-27
@@ -3523,8 +3528,8 @@ Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsber
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
-#: last_checked: 2013-10-25
-#: check_frequency: 360d
+#: last_checked: 2015-03-13
+#: check_frequency: 180d
 Am Orangeriepark: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 10228,19480 10293,19390 10419,19423
 # 
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2012 ("geplanter Straßenname") --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2012 (Lage) --- #: XXX fehlt auch in Berlin.coords.data PLZ=12683 --- #: last_checked: 2012-09-16 --- #: next_check: 2013-08-01 --- #: osm_watch: way id="189453405" version="1" --- Fechinger Weg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 21409,11941 21411,11863 21456,11825
@@ -3670,7 +3675,7 @@ Am Kienwerder (Kienwerder): Qualität?	? -4765,-3352 -4694,-3304 -4341,-3227 -420
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: XXX laut osm ist die Kongostraße mittlerweile asphaltiert - stimmt aber nicht (korrigiert)!
 #: osm_watch: way id="5117259" version="11"
-#: last_checked: 2014-09-09
+#: last_checked: 2015-03-13
 #: check_frequency: 90d
 Kongostr.: ist die Kongostr. mittlerweile asphaltiert?	? 6244,16096 6258,16111 6349,16213 6447,16321
 # 

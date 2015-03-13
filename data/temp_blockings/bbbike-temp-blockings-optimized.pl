@@ -3470,7 +3470,7 @@ userdel	q4::inwork 5635,7660 5636,7540
          'text' => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
          'from' => undef,
          'id' => 2671,
-         'data' => '#: last_checked: 2015-02-17
+         'data' => '#: last_checked: 2015-03-13
 userdel	q4::inwork; 9559,11715 9692,11732
 ',
          'type' => 'handicap'
@@ -3604,6 +3604,28 @@ userdel	2::inwork 15891,16041 15856,15924 16080,15830
          'text' => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
          'type' => 'handicap',
          'id' => 2687
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.277824.php',
+         'until' => 1427151600,
+         'text' => 'Mollstraße: zwischen Karl-Liebknecht-Str. und Otto-Braun-Str. Sperrung Richtung Osten wegen Bauarbeiten, ggfs. Einschränkungen auch für Radfahrer, vom 20.03.2015 bis 23.03.2015',
+         'from' => 1426719600,
+         'id' => 2688,
+         'data' => '#: XXX ändert sich nach den Bauarbeiten etwas an der Wegführung für Radfahrer?
+#: next_check: 2015-03-24
+userdel	q4::inwork; 11160,13492 11216,13451 11270,13412 11276,13408 11308,13389 11409,13327 11451,13301
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'LS/721-F/15/031',
+         'until' => 1472594400,
+         'text' => 'Ortsdurchfahrt Fredersdorf, L30: Bauarbeiten, 16.03.2015 bis 30.08.2016',
+         'from' => 1426374000,
+         'id' => 2689,
+         'data' => 'userdel	2::inwork 34707,13880 34383,14138 34276,14308 33589,15778 33016,17059
+',
+         'type' => 'handicap'
        }
      
 );

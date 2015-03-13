@@ -22200,7 +22200,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
        data  => <<EOF,
-userdel	q4::inwork 8482,18284 8465,18365 8627,18402
+userdel	q4::inwork 8482,18284 8465,18365 8622,18402
 userdel	q4::inwork 8465,18365 8286,18331
 EOF
      },
@@ -23448,7 +23448,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140919.1335.399343.html',
        data  => <<EOF,
-userdel	2::inwork 8765,19288 8791,19249 8947,19166 9009,19045 9191,18785 9279,18724
+userdel	2::inwork 8834,19253 8830,19239 8933,19179 8958,19149 9017,19036 9201,18777 9279,18724
 EOF
      },
      { from  => 1411499642, # 2014-09-23 21:14
@@ -23798,7 +23798,7 @@ EOF
        text  => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-02-17
+#: last_checked: 2015-03-13
 userdel	q4::inwork; 9559,11715 9692,11732
 EOF
      },
@@ -23961,6 +23961,26 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 6687,8385 6765,8480 6912,8617 6989,8687 7009,8705 7105,8788 7201,8870 7268,8960
+EOF
+     },
+     { from  => 1426719600, # 2015-03-19 00:00
+       until => 1427151600, # 2015-03-24 00:00
+       text  => 'Mollstraße: zwischen Karl-Liebknecht-Str. und Otto-Braun-Str. Sperrung Richtung Osten wegen Bauarbeiten, ggfs. Einschränkungen auch für Radfahrer, vom 20.03.2015 bis 23.03.2015',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.277824.php',
+       data  => <<EOF,
+#: XXX ändert sich nach den Bauarbeiten etwas an der Wegführung für Radfahrer?
+#: next_check: 2015-03-24
+userdel	q4::inwork; 11160,13492 11216,13451 11270,13412 11276,13408 11308,13389 11409,13327 11451,13301
+EOF
+     },
+     { from  => 1426374000, # 2015-03-15 00:00
+       until => 1472594400, # 2016-08-31 00:00
+       text  => 'Ortsdurchfahrt Fredersdorf, L30: Bauarbeiten, 16.03.2015 bis 30.08.2016',
+       type  => 'handicap',
+       source_id => 'LS/721-F/15/031',
+       data  => <<EOF,
+userdel	2::inwork 34707,13880 34383,14138 34276,14308 33589,15778 33016,17059
 EOF
      },
     );

@@ -600,9 +600,9 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14193,
 #: last_checked: 2015-02-18 vvv
 #: next_check: 2016-12-31 vvv
 #: XXX nach dem Ende der Bauarbeiten vermutlich Radspuren:
-gemeinsamer Rad- und Gehweg, relativ breit	RW2; 8019,13650 7979,13733 7943,13794 7589,14359 7597,14417
+gemeinsamer Rad- und Gehweg, relativ breit	RW2; 8019,13650 7979,13733 7943,13794 7866,13916 7818,13993 7589,14359 7597,14417
 #: XXX nach dem Ende der Bauarbeiten vermutlich weiterhin Radspuren, RW3 oder RW4?
-	RW3; 7597,14417 7589,14359 7943,13794 7979,13733 8019,13650
+	RW3; 7597,14417 7589,14359 7818,13993 7866,13916 7943,13794 7979,13733 8019,13650
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -997,9 +997,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX Markierungen fehlen noch in Richtung Osten
 #: source_id: IM_018997
 #: source_id: IM_023987
-#: osm_watch: way id="24913297" version="36"
-#: last_checked: 2015-02-27
-#: check_frequency: 14d
+#: last_checked: 2015-03-13
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1359,7 +1357,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2015-02-27
+#: last_checked: 2015-03-13
 #: check_frequency: 90d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1369,7 +1367,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2015-03-03
+#: last_checked: 2015-03-13
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1624,7 +1622,7 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html
 #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder
 #: XXX kommen die Radwegschilder noch?
-#: last_checked: 2015-02-18
+#: last_checked: 2015-03-13
 	RW3; 8098,13419 8293,13519
 	RW2; 8293,13519 8337,13541 8362,13554
 	RW3; 8362,13554 8450,13599
@@ -4378,7 +4376,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1239
 	RW6;RW6 16165,23168 16102,23046
 	RW6;RW6 15347,22275 15411,22369 15445,22352
 	RW6;RW6 7109,22919 7000,23095 6956,23166 6908,23244
-	RW4?; 10838,14962 10884,14952
+	RW3; 10838,14962 10884,14952
 	RW3;RW4 13015,7471 13018,7441 13029,7353
 	RW4;RW4 13029,7353 13030,7346 13034,7319
 	RW4;RW3 13034,7319 13043,7234
