@@ -159,7 +159,9 @@ is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for b
     is $post_cwd, $pre_cwd, "cwd restored (save_pwd2 operation)";
 }
 
-for my $exec (qw(perl sh)) {
+for my $exec ('perl',
+	      ('sh') x!! ($^O ne 'MSWin32'), # usually not available on Windows
+	     ) {
     my $path = BBBikeUtil::is_in_path($exec);
     if (!$path) {
 	diag "Strange: $exec is not found on this system";
