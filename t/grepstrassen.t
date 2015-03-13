@@ -12,7 +12,7 @@ use Cwd qw(realpath);
 
 BEGIN {
     if (!eval q{
-	use IPC::Run qw(run);
+	use IPC::Run qw(run binary);
 	use Test::More;
 	1;
     }) {
@@ -284,7 +284,8 @@ EOF
 sub run_grepstrassen ($$) {
     my($in_data, $args) = @_;
     my($out_data, $err);
-    my $res = run [$^X, $grepstrassen, @$args], "<", \$in_data, ">", \$out_data, "2>", \$err;
+    # "binary" is for Windows
+    my $res = run [$^X, $grepstrassen, @$args], "<", binary, \$in_data, ">", binary, \$out_data, "2>", \$err;
     ok $res, "No error running grepstrassen @$args";
     is $err, '', 'Nothing is stderr';
     $out_data;

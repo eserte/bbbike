@@ -296,6 +296,7 @@ while(my($k,$v) = each %special_end) {
     $v->();
 }
 
+binmode STDOUT; # for Windows
 if ($preserveglobaldirectives) {
     $new_s->set_global_directives(dclone $s->get_global_directives);
 #XXX del:
