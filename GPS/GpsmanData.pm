@@ -917,7 +917,19 @@ sub header_as_string {
     # deliberately not following the exact date/time format used in gpsman:
     # - use month number instead of abbreviated name
     # - use timezone offset instead of name
-    my $datetime = POSIX::strftime("%Y-%m-%d %H:%M:%S %z", localtime);
+    # Windows is doing %z wrong (it's a localized timezone name, not offset),
+    # so try DateTime's strftime here, if it's available (otherwise
+    # GPS::GpsmanData-related tests may fail).
+    my $fmt = '%Y-%m-%d %H:%M:%S %z';
+    my $datetime;
+    if ($^O eq 'MSWin32') {
+	if (eval { require DateTime; 1 }) {
+	    $datetime = DateTime->now->strftime($fmt);
+	}
+    }
+    if (!defined $datetime) {
+	$datetime = POSIX::strftime($fmt, localtime);
+    }
     my $s = "% Written by $0 [" . __PACKAGE__ . "] $datetime\n\n";
     # XXX:
     $s .= "!Format: " . join(" ",
