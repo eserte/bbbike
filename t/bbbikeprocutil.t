@@ -35,7 +35,7 @@ pass 'done double_fork call with simple subroutine';
 	    if (-s $tmpfile) {
 		open my $ifh, $tmpfile or die $!;
 		my $line = <$ifh>;
-		like $line, qr{^This is the forked process \d+}, 'Found trace from forked process';
+		like $line, qr{^This is the forked process -?\d+}, 'Found trace from forked process'; # note: pseudo process ids (Windows) are negative
 		last WAIT_FOR_TMPFILE;
 	    }
 	    select undef,undef,undef,0.05;

@@ -64,7 +64,7 @@ sub _hard_die {
 
 sub _hard_exit {
     my $code = shift;
-    if (eval { require POSIX; 1 }) {
+    if ($^O ne 'MSWin32' && eval { require POSIX; 1 }) {
 	POSIX::_exit($code);
     } else {
 	CORE::exit($code);
