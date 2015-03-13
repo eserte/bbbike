@@ -1092,7 +1092,7 @@ sub get_indexer {
 	    if ($uptodatecheck) {
 		require POSIX;
 		double_fork {
-		    POSIX::nice(+20);
+		    POSIX::nice(+20) if $^O ne 'MSWin32'; # not implemented under Windows
 		    eval {
 			warn "Create index for $file/$type in background...\n"
 			    if $verbose;
@@ -1102,7 +1102,7 @@ sub get_indexer {
 			$indexer->close_index; # for flushing
 		    };
 		    warn $@ if $@;
-		    POSIX::_exit(0); # use this instead of CORE::exit to prevent from swapping everything in
+		    POSIX::_exit(0) if $^O ne 'MSWin32'; # use this instead of CORE::exit to prevent from swapping everything in --- except on Windows, where POSIX::_exit does not work
 		};
 		return undef;
 	    } else {
