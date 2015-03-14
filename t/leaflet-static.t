@@ -12,6 +12,7 @@ use lib (
 	 "$FindBin::RealBin/../lib",
 	 $FindBin::RealBin,
 	);
+use IO::Pipe ();
 use Test::More 'no_plan';
 
 use BBBikeTest qw(tidy_check like_html libxml_parse_html eq_or_diff);
@@ -34,10 +35,13 @@ pass 'no error while trying to parse with XML::LibXML';
 
 my $html2;
 my $script = "$FindBin::RealBin/../miscsrc/static_leaflethtml.pl";
-open my $ofh2, "-|", $^X, $script, '-rooturl', '', '--no-show-feature-list'
+my $ofh2 = IO::Pipe->new->reader($^X, $script, '-rooturl', '', '--no-show-feature-list')
     or die $!;
 while(<$ofh2>) {
     $html2 .= $_;
+}
+if ($^O eq 'MSWin32') {
+    $html2 =~ s{\r}{}g;
 }
 
 eq_or_diff $html2, $html, 'Result from static_leaflethtml.pl is the same';
