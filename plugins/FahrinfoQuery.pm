@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -99,11 +99,17 @@ my $openvbb_2012_bbd_file = "$bbbike_root/tmp/vbb_2012.bbd";
 #my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
 #my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_2014_4.bbd";
 
-my $openvbb_2013_download_size = '64MB';
-my $openvbb_2013_data_url = 'http://www.vbb.de/de/datei/GTF_VBB_Dez2014_Dez2015.zip';
+#my $openvbb_2013_download_size = '64MB';
+#my $openvbb_2013_data_url = 'http://www.vbb.de/de/datei/GTF_VBB_Dez2014_Dez2015.zip';
+#my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
+#my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
+#my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_2014_5.bbd";
+
+my $openvbb_2013_download_size = '42MB';
+my $openvbb_2013_data_url = 'http://www.vbb.de/de/datei/GTFS_VBB_Jan2015_Dez2015.zip';
 my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
 my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
-my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_2014_5.bbd";
+my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_2015_1.bbd";
 
 my $search_net;
 
