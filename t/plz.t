@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -623,8 +623,8 @@ sub testplz {
 		    $str = $str[$def->[MATCHINX]];
 		}
 	    }
-	    my $plz_re = $plz->make_plz_re($str->[2]);
-	    my @res1 = $plz->look($plz_re, Noextern => 0, Noquote => 1);
+	    my $plz_re = $plz->make_plz_pcre($str->[2]);
+	    my @res1 = $plz->look($plz_re, Noextern => 1, Noquote => 1);
 	    $str = new Strassen "strassen";
 
 	    my @s = ();

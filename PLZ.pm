@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004, 2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004, 2010, 2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,7 +23,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = 1.76;
+$VERSION = 1.77;
 
 # agrep says that 32 is the max length, but experiments show something else:
 use constant AGREP_LONGEST_RX => 29;
@@ -118,9 +118,16 @@ sub load {
     }
 }
 
+# for use with standard grep (not egrep)
 sub make_plz_re {
     my($self, $plz) = @_;
     '^[^|]*|[^|]*|' . $plz;
+}
+
+# for use with perl's regexp engine (e.g. together with Noextern => 1)
+sub make_plz_pcre {
+    my($self, $plz) = @_;
+    '^[^|]*\|[^|]*\|' . $plz;
 }
 
 # indexes of return values - identical like the FILE_... counterparts
