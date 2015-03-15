@@ -2191,7 +2191,7 @@ sub output_meta {
     my %meta;
 
     $meta{created} = epoch2isodatez;
-    $meta{created_by} = $ENV{EMAIL} || $ENV{REPLYTO} || $ENV{REPLY_TO} || (getpwuid($<))[0];
+    $meta{created_by} = $ENV{EMAIL} || $ENV{REPLYTO} || $ENV{REPLY_TO} || eval { (getpwuid($<))[0] } || $ENV{USER} || '<unknown>';
     $meta{commandline} = \@commandline;
     $meta{creation_cwd} = $cwd;
     if (@bbox_wgs84) {
