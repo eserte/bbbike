@@ -28,14 +28,18 @@ plan 'no_plan';
 use File::Temp qw(tempdir);
 use Strassen::Core;
 
-my $search_inaccessible_points = "$FindBin::RealBin/../miscsrc/search_inaccessible_points";
+my @search_inaccessible_points = "$FindBin::RealBin/../miscsrc/search_inaccessible_points";
 
-ok -x $search_inaccessible_points, "$search_inaccessible_points is executable";
+if ($^O eq 'MSWin32') {
+    unshift @search_inaccessible_points, $^X;
+} else {
+    ok -x $search_inaccessible_points[0], "$search_inaccessible_points[0] is executable";
+}
 
 {
     my $test_datadir = "$FindBin::RealBin/data-test";
     my $inaccessible;
-    ok run([$search_inaccessible_points, '-street', "$test_datadir/strassen", '-blocked', "$test_datadir/gesperrt"], ">", \$inaccessible), 'Run search_inaccessible_points with test data';
+    ok run([@search_inaccessible_points, '-street', "$test_datadir/strassen", '-blocked', "$test_datadir/gesperrt"], ">", \$inaccessible), 'Run search_inaccessible_points with test data';
     my $s = Strassen->new_from_data_string($inaccessible);
     isa_ok $s, 'Strassen';
 }
@@ -73,7 +77,8 @@ EOF
     }
 
     my $inaccessible;
-    ok run([$search_inaccessible_points, '-refpoint', '0,0', '-street', $strassen_file, '-blocked', $gesperrt_file], ">", \$inaccessible), 'Run search_inaccessible_points with controlled test data';
+    ok run([@search_inaccessible_points, '-refpoint', '0,0', '-street', $strassen_file, '-blocked', $gesperrt_file], ">", \$inaccessible), 'Run search_inaccessible_points with controlled test data';
+    if ($^O eq 'MSWin32') { $inaccessible =~ s{\r}{}g }
     my $s = Strassen->new_from_data_string($inaccessible);
     isa_ok $s, 'Strassen';
     is $s->get_global_directive('encoding'), 'utf-8', 'preserved encoding';
