@@ -3,7 +3,10 @@
  
 use strict;
 use FindBin;
-use lib $FindBin::RealBin;
+use lib (
+	 $FindBin::RealBin,
+	 "$FindBin::RealBin/..",
+	);
 use utf8;
 
 use File::Basename qw(basename);
@@ -13,10 +16,11 @@ use HTML::Entities ();
 
 use Typ2Legend::XPM;
 
+use BBBikeUtil qw(is_in_path);
+
 BEGIN {
-    system("which convert >/dev/null");
-    if ($?) {
-	die "Cannot find 'convert' tool, did you installed the 'imagemagick' package?\n";
+    if (!is_in_path('convert')) {
+	die "Cannot find 'convert' tool, did you install the 'imagemagick' package?\n";
     }
 }
 
