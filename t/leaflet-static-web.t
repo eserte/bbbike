@@ -14,12 +14,14 @@ use lib (
 	);
 use Getopt::Long;
 use LWP::UserAgent ();
-use Test::More 'no_plan';
+use Test::More;
 use URI ();
 
 use BBBikeTest qw(libxml_parse_html_or_skip check_cgi_testing static_url get_std_opts);
 
 check_cgi_testing;
+
+plan 'no_plan';
 
 use BBBikeLeaflet::Template;
 
