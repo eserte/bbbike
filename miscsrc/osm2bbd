@@ -1901,7 +1901,10 @@ if ($parsefor) {
     # reasons still uses different files.
     if (!-e "radwege" && -e "radwege_exact") {
 	if (!eval { symlink("",""); 1 }) {
-	    warn "No support for symlinks on $^O";
+	    warn "No support for symlinks on $^O, fallback to copy...\n";
+	    require File::Copy;
+	    File::Copy::cp("radwege_exact", "radwege")
+		or warn "Cannot copy radwege_exact to radwege: $!";
 	} else {
 	    symlink "radwege_exact", "radwege"
 		or warn "Cannot create symlink radwege -> radwege_exact: $!";
