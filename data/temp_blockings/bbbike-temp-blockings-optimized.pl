@@ -2949,16 +2949,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5512.html',
-         'until' => 1426410000,
-         'text' => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, von 14.03.2015, 18:00 Uhr bis 15.03.2015, 10:00 Uhr',
-         'from' => 1426266000,
-         'id' => 2448,
-         'data' => 'userdel	2::inwork 16201,24354 16156,24284 16123,24232
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3334,18 +3325,7 @@ userdel	q3::inwork 4503,10497 4485,10307
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1451602800,
-         'text' => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugangs bis 2016 möglich',
-         'from' => 1411312807,
-         'id' => 2631,
-         'data' => '#: last_checked: 2015-02-14 (gerade nicht gesperrt)
-#: next_check: 2015-12-01
-userdel	2::inwork 15419,10706 15379,10651
-',
-         'dont_check_date' => 1,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3527,7 +3507,7 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
          'id' => 2679,
          'data' => '#: XXX "für mehrere Monate" vvv
 #: XXX evtl. bis 30. April 2015
-#: last_checked: 2015-03-09 vvv
+#: last_checked: 2015-03-15 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
 #: last_checked ^^^

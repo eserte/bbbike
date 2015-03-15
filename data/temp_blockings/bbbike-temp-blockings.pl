@@ -23423,13 +23423,12 @@ userdel	q3::inwork 4503,10497 4485,10307
 EOF
      },
      { from  => 1411312807, # 2014-09-21 17:20
-       until => $isodate2epoch->("2016-01-01 00:00:00"), # 1412805600, # 2014-10-09 00:00
+       until => 1426433023, # $isodate2epoch->("2016-01-01 00:00:00"), # 1412805600, # 2014-10-09 00:00
        text  => 'Unterführung Rummelsburg: vereinzelte Sperrungen des südlichen Zugangs bis 2016 möglich',
        type  => 'gesperrt',
        dont_check_date => 1,
        data  => <<EOF,
-#: last_checked: 2015-02-14 (gerade nicht gesperrt)
-#: next_check: 2015-12-01
+# REMOVED (kein Schild mehr) --- #: last_checked: 2015-02-14 (gerade nicht gesperrt) --- #: next_check: 2015-12-01
 userdel	2::inwork 15419,10706 15379,10651
 EOF
      },
@@ -23877,7 +23876,7 @@ EOF
        data  => <<EOF,
 #: XXX "für mehrere Monate" vvv
 #: XXX evtl. bis 30. April 2015
-#: last_checked: 2015-03-09 vvv
+#: last_checked: 2015-03-15 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
 #: last_checked ^^^
