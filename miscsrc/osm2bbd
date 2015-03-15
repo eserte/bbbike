@@ -1900,8 +1900,12 @@ if ($parsefor) {
     # New bbbike can use the same file for both, but for hysterical
     # reasons still uses different files.
     if (!-e "radwege" && -e "radwege_exact") {
-	symlink "radwege_exact", "radwege"
-	    or warn "Cannot create symlink radwege -> radwege_exact: $!";
+	if (!eval { symlink("",""); 1 }) {
+	    warn "No support for symlinks on $^O";
+	} else {
+	    symlink "radwege_exact", "radwege"
+		or warn "Cannot create symlink radwege -> radwege_exact: $!";
+	}
     }
     if (!-d "temp_blockings") {
 	mkdir "temp_blockings";
