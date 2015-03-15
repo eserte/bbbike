@@ -414,7 +414,7 @@ sbahn: sbahn-orig Makefile $(CONVERT_ORIG_FILE)
 
 sbahnhof:	sbahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) sbahnhof-orig > sbahnhof~
+	$(CONVERT_ORIG) -keep-directive map_tube_other_link sbahnhof-orig > sbahnhof~
 	mv sbahnhof~ sbahnhof
 	-@$(READONLY) $@
 
@@ -453,7 +453,7 @@ ubahn: ubahn-orig $(CONVERT_ORIG_FILE)
 
 ubahnhof:	ubahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) ubahnhof-orig > ubahnhof~
+	$(CONVERT_ORIG) -keep-directive map_tube_other_link ubahnhof-orig > ubahnhof~
 	mv ubahnhof~ ubahnhof
 	-@$(READONLY) $@
 
