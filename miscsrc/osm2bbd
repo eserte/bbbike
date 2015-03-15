@@ -1868,7 +1868,7 @@ if ($parsefor) {
 	or die "Cannot chdir to $o: $!";
     while(my($filename,$data) = each %out) {
 	print STDERR "$filename... " if $debug;
-	open my $ofh, ">:encoding($encoding)", "$filename~"
+	open my $ofh, ">:raw:encoding($encoding)", "$filename~"
 	    or die "Can't write to file <$filename~> in directory <$o>: $!";
 	output_data($ofh, $data, $filename);
 	close $ofh
