@@ -75,10 +75,6 @@ asphaltiert, leicht uneben	RW1; 9238,8253 9239,8099
 asphaltiert, leicht uneben	RW1; 9240,7991 9240,7811
 asphaltiert, leicht uneben	RW1; 9240,7811 9242,7658 9242,7325
 	RW4?; 9242,7325 9242,7286
-#: XXX laut Tsp vom 2010-03-26 wird der Radweg gerade erneuert (Richtung Norden)
-#: last_checked: 2014-10-04
-#: check_frequency: 120d
-#: priority: #C
 asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7286 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8806,7382 8879,7378 8971,7359 9051,7340 9107,7297 9242,7286
 	RW1;RW1 8715,7384 8716,7323 8718,7095 8717,6965 8750,6779 8735,6695 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8641,5998 8622,5867 8613,5745 8600,5580 8593,5491
@@ -1439,11 +1435,11 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW4;RW4 12126,13088 12163,13295
 #: next_check_id: WARSCHAUER-2014
 #: XXX provisorische separate Radspur existiert schon
-#: last_checked: 2015-02-21
+#: last_checked: 2015-03-17
 #: next_check: 2015-09-30
 	RW3;RW1 13493,11217 13541,11355 13588,11490
 #: next_check_id: WARSCHAUER-2014
-#: last_checked: 2015-02-21
+#: last_checked: 2015-03-17
 #: next_check: 2015-09-30
 	RW0;RW2 13588,11490 13603,11538
 	RW4;RW4 14026,10869 14024,10861 14011,10812
