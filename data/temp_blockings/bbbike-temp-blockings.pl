@@ -20295,11 +20295,12 @@ EOF
 userdel	q4::inwork 12817,2031 12911,1815
 EOF
      },
-     { from  => $isodate2epoch->("2014-04-17 00:00:00"), # 2 Tage Vorlauf, Aufbauten dauern länger
-       until => $isodate2epoch->("2014-04-21 23:59:59"),
+     { from  => $isodate2epoch->("2015-04-23 00:00:00"), # 2 Tage Vorlauf, Aufbauten dauern länger
+       until => $isodate2epoch->("2015-04-26 23:59:59"),
+       prewarn_days => 2, # siehe oben
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 4]],
-       text  => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 19.4.2014 bis 21.4.2014)',
+       text  => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 25.4.2015 bis 26.4.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186

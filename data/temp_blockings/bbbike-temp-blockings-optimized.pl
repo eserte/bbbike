@@ -2708,7 +2708,29 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'periodic' => 1,
+         'until' => 1430085599,
+         'from' => 1429740000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 25.4.2015 bis 26.4.2015)',
+         'id' => 2324,
+         'type' => 'gesperrt',
+         'prewarn_days' => 2
+       },
        undef,
        undef,
        undef,

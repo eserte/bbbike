@@ -110,7 +110,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2014-12-10
+#: last_checked: 2015-03-18
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -133,17 +133,16 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: osm_watch: way id="120633717" version="10"
-#: osm_watch: way id="162964323" version="8"
-#: osm_watch: way id="4541085" version="18"
-#: osm_watch: way id="4638315" version="15"
-#: last_checked: 2015-03-13 vvv
-#: check_frequency: 60d vvv
+#: osm_watch: way id="120633717" version="11"
+#: osm_watch: way id="162964323" version="9"
+#: osm_watch: way id="4541085" version="19"
+#: osm_watch: way id="4638315" version="16"
+#: last_checked: 2015-03-13
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2014-03-15 (evtl. passiert während der Bauarbeiten etwas?) --- #: source_id: IM_021408
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected 7672,16878 7687,16770
+#: next_check: 2015-03-19
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected; 7713,16557 7687,16770
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 # REMOVED (wahrscheinlich passiert hier nichts bevor das Pankower Tor realisiert wird) --- #: XXX Baumaßnahme 3.39 (Realisierung nach 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: XXX evtl. wird erst etwas mit Realisierung des Stadtquartiers "Pankower Tor" entstehen --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3701 --- #: osm_watch: way id="144945039" version="4" --- #: last_checked: 2013-10-25 (Richtung Nordosten fertig) --- #: next_check: 2014-01-25 --- Granitzstr.: wird auch etwas in der anderen Richtung gemacht?	? 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
 # 
@@ -306,7 +305,7 @@ Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
 #: osm_watch: way id="28961260" version="11"
-#: last_checked: 2014-11-15
+#: last_checked: 2015-03-18
 #: check_frequency: 120d
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
@@ -3831,11 +3830,13 @@ Fichtenstr.: existiert ein Verbindungsweg zur Heerstr.? Qualität? Nachts beleuch
 #: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
 #: osm_watch: way id="174465897" version="3" brb
 An der Kornmühle (Potsdam): Qualität der Straße?	? -12712,-2172 -12728,-2227
-#: osm_watch: way id="174465898" version="5" brb
+#: osm_watch: way id="174465898" version="6" brb
+#: XXX laut osm living_street
 Am Speicher (Potsdam): Qualität der Straße?	? -12783,-2269 -12771,-2220 -12754,-2154
 #: by: ^^^
 #: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
-#: osm_watch: way id="174465895" version="3" brb
+#: osm_watch: way id="174465895" version="4" brb
+#: XXX laut osm living_street
 Altstadtblick (Potsdam): Qualität der Straße?	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
 #: XXX ^^^
 #: next_check ^^^
