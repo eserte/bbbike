@@ -7075,8 +7075,8 @@ sub bikepwr_get_v { # Resultat in m/s
 sub choose_street_html {
     my($strasse, $plz_number, $type) = @_;
     my $plz_obj = init_plz(scope => "all");
-    my $plz_re = $plz_obj->make_plz_re($plz_number);
-    my @res = $plz_obj->look($plz_re, Noquote => 1);
+    my $plz_pcre = $plz_obj->make_plz_pcre($plz_number);
+    my @res = $plz_obj->look($plz_pcre, Noextern => 1, Noquote => 1);
     my $str = get_streets();
     my @strres = $str->union(\@res);
     if (!@strres) {
