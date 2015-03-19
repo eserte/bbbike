@@ -12934,7 +12934,7 @@ sub choose_from_plz {
 	    die "Str ($s)/PLZ ($z)-Objekt?" if !$s || !$z;
 	    my($street, $bezirk, $plz_nr, $xy) = @$street_obj;
 
-	    if (defined $xy) {
+	    if (defined $xy && length $xy) {
 		mark_point(-coords => [[[ transpose(split /,/, $xy) ]]],
 			   -clever_center => $args{-interactive});
 	    } else {
