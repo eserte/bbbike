@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.19 2008/04/21 21:28:51 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,15 +15,16 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.20';
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
     if (!eval q{ use File::Temp qw(tempfile); 1; }) {
 	*tempfile = sub {
 	    my $f = "/tmp/plzmulti.$$";
-	    open(TEMP, ">$f") or die $!;
-	    (\*TEMP, $f);
+	    open my $TEMP, '>', $f
+		or die "Can't write to temporary file: $!";
+	    ($TEMP, $f);
         };
     }
 }
@@ -71,7 +71,7 @@ sub new {
     }
 
     my $combined;
-    my $cachetoken = "multiplz_" .
+    my $cachetoken = "multiplz_v1_20_" .
 	             join("_", map { basename $_ } @files);
     my $cachefile = Strassen::Util::get_cachefile($cachetoken);
     if ($args{cache}) {
@@ -156,8 +156,10 @@ sub merge_and_sort {
 	my $in_file_i = -1;
 	for my $in_file (@in_files) {
 	    $in_file_i++;
-	    open(IN, $in_file) or die "Can't open $in_file: $!";
-	    while (<IN>) {
+	    open my $IN, '<', $in_file
+		or die "Can't open $in_file: $!";
+	    binmode $IN;
+	    while (<$IN>) {
 		if ($addindex) {
 		    if ($usefmtext) {
 			my $seps = tr/|/|/;
@@ -169,18 +171,20 @@ sub merge_and_sort {
 		}
 		push @lines, $_;
 	    }
-	    close IN;
 	}
     }
     my %seen;
     for my $line (@lines) {
 	$seen{$line} = 1;
     }
-    open(OUT, "> $out_file") or die "Can't write to $out_file: $!";
+    open my $OUT, '>', $out_file
+	or die "Can't write to $out_file: $!";
+    binmode $OUT;
     for my $line (sort keys %seen) {
-	print OUT $line;
+	print $OUT $line;
     }
-    close OUT;
+    close $OUT
+	or die "Error while writing to $out_file: $!";
 }
 
 1;
