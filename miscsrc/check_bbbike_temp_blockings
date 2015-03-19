@@ -180,10 +180,11 @@ sub run_checks {
 	
 	# timestamp plausibility
 	if (!$o->{dont_check_date} && $o->{text} =~ m{(\d+)\.(\d+)\.(20\d+).*?(\d+)\.(\d+)\.(20\d+)}) {
+	    my $prewarn_days = defined $o->{prewarn_days} ? $o->{prewarn_days} : 1;
 	    my $from_text  = sprintf "%04d-%02d-%02d", $3,$2,$1;
 	    my $until_text = sprintf "%04d-%02d-%02d", $6,$5,$4;
 	    my $from_field  = strftime "%F", localtime $o->{from};
-	    my $from_and_one_day_field = strftime "%F", localtime $o->{from} + 86400; # accept an additional day
+	    my $from_and_one_day_field = strftime "%F", localtime $o->{from} + 86400 * $prewarn_days; # accept an additional day
 	    my $until_field = strftime "%F", localtime $o->{until};
 	    my $until_and_one_day_field = strftime "%F", localtime $o->{until} - 86400; # day before
 	    if ($from_text ne $from_field && $from_text ne $from_and_one_day_field) {
