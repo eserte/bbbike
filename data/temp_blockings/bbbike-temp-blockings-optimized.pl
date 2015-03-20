@@ -3628,6 +3628,15 @@ userdel	q4::inwork; 11160,13492 11216,13451 11270,13412 11276,13408 11308,13389 
          'data' => 'userdel	2::inwork 34707,13880 34383,14138 34276,14308 33589,15778 33016,17059
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1427014800,
+         'text' => 'Schönerlinder Str.: zwischen Am Posseberg und Am Vorwerk komplett gesperrt, von Samstag 18 Uhr bis Sonntagmorgen ca. 10 Uhr',
+         'from' => 1426870800,
+         'id' => 2690,
+         'data' => 'userdel	2::inwork 12694,25696 12624,25570
+',
+         'type' => 'gesperrt'
        }
      
 );

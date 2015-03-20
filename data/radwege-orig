@@ -266,7 +266,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW1 4741,5309 4677,5274 4593,5235 4512,5199
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 	RW1;RW1 10020,11262 10256,11160 10501,11056 10684,10975
-eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10684,10975 10779,10934
+für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
 # REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10832,10910
 	RW1; 10832,10910 10794,10927 10779,10934 10684,10975
@@ -3516,6 +3516,7 @@ Verbundsteinpflaster, OK	RW1; 13531,4152 13595,4232 13632,4304 13666,4410 13671,
 asphaltiert	RW2;RW8 15639,10469 15758,10578
 	RW4;RW4 15983,10836 16049,10844
 	RW4;RW4 16049,10844 16038,10818 15982,10765 15880,10680
+	RW3;RW4 15758,10578 15880,10680
 	RW4;RW4 16153,10818 16085,10844 16049,10844
 	RW6;RW6 10086,12725 10054,12699 10017,12675 9948,12631 9919,12613
 	RW6;RW6 19303,8005 19176,8098

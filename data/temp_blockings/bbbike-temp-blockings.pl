@@ -23983,4 +23983,12 @@ EOF
 userdel	2::inwork 34707,13880 34383,14138 34276,14308 33589,15778 33016,17059
 EOF
      },
+     { from  => 1426870800, # 2015-03-20 18:00
+       until => 1427014800, # 2015-03-22 10:00
+       text  => 'Schönerlinder Str.: zwischen Am Posseberg und Am Vorwerk komplett gesperrt, von Samstag 18 Uhr bis Sonntagmorgen ca. 10 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 12694,25696 12624,25570
+EOF
+     },
     );

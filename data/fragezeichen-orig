@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-03-16
+#: last_checked: 2015-03-20
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -310,13 +310,7 @@ Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5463
-#: source_id: IM_023242
-#: XXX Bauarbeiten sind fertig, die Markierung ist allerdings noch nicht erfolgt
-#: last_checked: 2015-03-15
-#: next_check: 2015-03-17 (Markierungsarbeiten ab 16. März)
-Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245 --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5463 --- #: source_id: IM_023242 --- #: XXX Bauarbeiten sind fertig, die Markierung ist allerdings noch nicht erfolgt --- #: last_checked: 2015-03-15 --- #: next_check: 2015-03-17 (Markierungsarbeiten ab 16. März) --- Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
 #: XXX Realisierung von Radstreifen bis 2015
@@ -1781,7 +1775,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2015-03-16
+#: last_checked: 2015-03-20
 #: check_frequency: 60d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
