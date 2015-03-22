@@ -430,7 +430,8 @@ EOF
     $add_net2->make_net_cat(-onewayhack => 1);
 
     $s_net->push_stack($add_net1);
-    is $s_net->{Net}{$k1}{$k2}, 'XYZ', 'Stacked value (overwriting old)';
+    is $s_net->{Net}{$k1}{$k2}, 'XYZ', 'Stacked value (overwriting old)'
+	or diag "Random line is $k1 - $k2, original value '$v2'";
 
     $s_net->push_stack($add_net2);
     is $s_net->{Net}{$new_k1}{$new_k2}, $new_cat, 'Stacked value (newly added)';
