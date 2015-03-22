@@ -23991,4 +23991,13 @@ EOF
 userdel	2::inwork 12694,25696 12624,25570
 EOF
      },
+     { from  => 1426822200, # 2015-03-20 04:30
+       until => 1428199200, # 2015-04-05 04:00
+       text  => 'Ehrlichstr.: zwischen Lehndorffstr. und Eginhardstr. Bauarbeiten, Fahrbahn gesperrt, 21.03.2015 04:30 Uhr bis 05.04.2015 04:00 Uhr',
+       type  => 'handicap',
+       source_id => 'IM_024429',
+       data  => <<EOF,
+userdel	q4::inwork 18615,8269 18528,8331 18461,8377 18391,8425 18322,8470
+EOF
+     },
     );
