@@ -23969,8 +23969,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.277824.php',
        data  => <<EOF,
-#: XXX ändert sich nach den Bauarbeiten etwas an der Wegführung für Radfahrer?
-#: next_check: 2015-03-24
+# REMOVED (nein) - ändert sich nach den Bauarbeiten etwas an der Wegführung für Radfahrer?
 userdel	q4::inwork; 11160,13492 11216,13451 11270,13412 11276,13408 11308,13389 11409,13327 11451,13301
 EOF
      },
@@ -23998,6 +23997,14 @@ EOF
        source_id => 'IM_024429',
        data  => <<EOF,
 userdel	q4::inwork 18615,8269 18528,8331 18461,8377 18391,8425 18322,8470
+EOF
+     },
+     { from  => 1427147207, # 2015-03-23 22:46
+       until => 1427752800, # 2015-03-31 00:00
+       text  => 'Pichelswerder Str.: Brücke beschädigt, Straße gesperrt, evtl. vollständig, bis 30.03.2015',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork -2576,13777 -2669,13488
 EOF
      },
     );
