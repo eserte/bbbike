@@ -30,11 +30,12 @@ use Strassen::MultiStrassen;
 
 my $do_berlin_specialities = 1;
 my $output_format = 'Map::Tube';
+my $include_lines_file;
 
 sub usage (;$) {
     my $msg = shift;
     warn $msg if $msg;
-    die "usage: $0 [--output-format=Map::Tube|Map::Metro] [--no-ubahn] [--no-sbahn]\n";
+    die "usage: $0 [--output-format=Map::Tube|Map::Metro] [--include-lines=...] [--no-ubahn] [--no-sbahn]\n";
 }
 
 my $do_ubahn = 1;
@@ -43,6 +44,7 @@ GetOptions(
 	   "output-format=s" => \$output_format,
 	   "ubahn!" => \$do_ubahn,
 	   "sbahn!" => \$do_sbahn,
+	   'include-lines=s' => \$include_lines_file,
 	  )
     or usage;
 
@@ -211,6 +213,14 @@ if ($output_format eq 'Map::Tube') {
     $doc->addChild($doc->createComment('Created by ' . basename(__FILE__) . ' (part of BBBike)'));
     my $tube = $doc->createElement('tube');
     $doc->setDocumentElement($tube);
+    if ($include_lines_file) {
+ 	my $include_lines_contents = do { local $/; open my $fh, $include_lines_file or die $!; <$fh> };
+ 	my $fragment = XML::LibXML->new->parse_balanced_chunk($include_lines_contents);
+	my $lines = $tube->addNewChild(undef, 'lines');
+	for my $line ($fragment->findnodes('//line')) {
+	    $lines->appendChild($line);
+	}
+    }
     my $stations = $tube->addNewChild(undef, 'stations');
     for my $station (sort keys %station2id) {
 	my $id = $station2id{$station};
