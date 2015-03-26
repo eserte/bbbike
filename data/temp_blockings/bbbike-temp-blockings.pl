@@ -21246,13 +21246,13 @@ EOF
 userdel	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2014-04-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-04-27 23:59:59"),
+     { from  => $isodate2epoch->("2015-04-23 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-04-26 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 25.4.2013 bis 27.4.2013 ',
+       recurrences => [['yearly', days => 23, months => 4]],
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 24.4.2015 bis 26.4.2015 ',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140324.1415.395686.html',
+       source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
 userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
@@ -23221,13 +23221,13 @@ EOF
 userdel	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2014-08-21 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-08-24 23:59:59"),
+     { from  => $isodate2epoch->("2015-08-20 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-08-23 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 21, months => 8]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.8.2014 bis 24.8.2014',
+       recurrences => [['yearly', days => 20, months => 8]],
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.8.2015 bis 23.8.2015',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.157630.php',
+       source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
 userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664

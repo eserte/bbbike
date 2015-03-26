@@ -2929,7 +2929,27 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.winzerfest-köpenick.de/',
+         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
+',
+         'periodic' => 1,
+         'until' => 1430085599,
+         'from' => 1429740000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              23,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 24.4.2015 bis 26.4.2015 ',
+         'id' => 2419,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {
@@ -3315,7 +3335,27 @@ userdel	q4::inwork; 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.winzerfest-köpenick.de/',
+         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
+',
+         'periodic' => 1,
+         'until' => 1440367199,
+         'from' => 1440072000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              8
+                            ]
+                          ],
+         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.8.2015 bis 23.8.2015',
+         'id' => 2610,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,

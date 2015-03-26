@@ -4772,7 +4772,8 @@ Kleine Mittelstr.	N -3536,15450 -3414,15460
 Stabholzgarten	H -3370,14115 -3445,14033 -3462,14041 -3552,14082
 (Stabholzgarten - Uferweg)	NN -3445,14033 -3345,13994
 (Weg am Mühlengraben)	NN -3306,14035 -3370,14115
-(Weg an der Havel)	NN -3385,13937 -3345,13994 -3306,14035 -3300,14039 -3146,14145 -3135,14183
+Sternbergpromenade	NN -3503,13773 -3385,13937 -3345,13994 -3306,14035 -3300,14039 -3146,14145
+(Uferweg - Charlottenstr.)	NN -3146,14145 -3135,14183
 Am Bahnhof Spandau	H -3892,13960 -3851,14174
 Galenstr.	N -3851,14174 -3819,14302 -3777,14405 -3769,14429 -3721,14495 -3637,14628 -3499,14806
 Galenstr.	NN -3499,14806 -3470,14836
@@ -5444,7 +5445,8 @@ Marzahner Chaussee [Wohngebiet]	N 18417,11854 18500,11847 18580,11874
 Marzahner Chaussee [Zur alten Börse]	N 18649,12371 18639,12272 18654,12255
 #: note: Privatstraße
 #: XXX "Zur alten Börse" (Amtsblatt) oder "Zur Alten Börse" (Leitdaten)?
-#: next_check: 2015-04-20
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20150325.1600.401546.html ("Alten")
+#: next_check: 2015-03-26
 Zur alten Börse	N 18736,13080 18712,12853 18682,12599 18649,12371
 (Zur alten Börse - Kröver Str.)	NN 18712,12853 18800,12838
 (Marzahner Chaussee - Gensinger Str.)	NN 18580,11874 18698,11914 18913,11907
@@ -16555,7 +16557,7 @@ Spandauer Burgwall	N -3786,13267 -3730,13281 -3654,13293 -3600,13267 -3526,13196
 (Burgwallgraben - Krowelstr.)	NN -3457,13028 -3458,13006 -3461,12962
 (Ziegelhof - Burgwallgraben)	NN -3651,13476 -3654,13293
 #: note: bei gmaps: "Schiffahrtsufer"
-(Weg an der Havel)	NN -3385,13937 -3503,13773 -3543,13691 -3556,13582 -3546,13503 -3529,13452
+(Weg an der Havel)	NN -3503,13773 -3543,13691 -3556,13582 -3546,13503 -3529,13452
 Schiffahrtsufer	NN -3529,13452 -3451,13300 -3441,13270
 #: note: Zufahrt zur Bootstankstelle am Schiffahrtsufer
 (Schiffahrtsufer - Spandauer Burgwall)	N -3441,13270 -3462,13256 -3467,13240 -3526,13196
