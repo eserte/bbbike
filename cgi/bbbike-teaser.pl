@@ -131,17 +131,17 @@ EOF
 sub teaser_halbmarathon {
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today gt "20140330";
+    my $out_of_date = $today gt "20150329";
     if (!$out_of_date) {
 	my $halbmarathon_map_url = 'http://www.berliner-halbmarathon.de/event/streckesperrungen.html';
 	if ($lang eq 'en') {
 	    <<EOF
-<div class="teaser" style="font-weight:bold">BERLIN HALF MARATHON on 30 March 2014<br/>
+<div class="teaser" style="font-weight:bold">BERLIN HALF MARATHON on 29 March 2015<br/>
 <a href="$halbmarathon_map_url">Map with blockings</a></div>
 EOF
 	} else {
 	    <<EOF
-<div class="teaser" style="font-weight:bold">Am 30. März findet der Berliner Halbmarathon statt.<br/>
+<div class="teaser" style="font-weight:bold">Am 29. März 2015 findet der Berliner Halbmarathon statt.<br/>
 <a href="$halbmarathon_map_url">Karte mit den Sperrungen</a></div>
 EOF
 	}
