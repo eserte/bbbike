@@ -66,6 +66,8 @@ install_perl_testonly_dependencies() {
     then
 	sudo apt-get install -qq libemail-mime-perl libhtml-treebuilder-xpath-perl
     else
+	# 2.204 causes deep recursion error. See https://github.com/rjbs/Email-Simple/issues/8
+	cpanm --quiet --notest Email::Simple~"!=2.204"
 	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath
     fi
 }
