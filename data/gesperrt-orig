@@ -2680,14 +2680,7 @@ Lohmühlenplatz: Umgestaltung des Platzes, Wege ist gesperrt	2::inwork 12900,9465
 #: check_frequency: 90d
 Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 3690,11629 3844,11649 3898,11655
 # 
-#: next_check_id: INVALIDENFRIEDHOF-2014
-#: by: Birgit Schroeer
-#: confirmed_by: srt
-#: last_checked: 2015-03-13
-#: next_check: 2015-03-28
-#: XXX siehe auch temp_blockings-Eintrag
-#: osm_watch: way id="76212442" version="7"
-Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015	2::inwork 8119,13912 8101,13901 8248,13659 8337,13541
+# REMOVED --- #: next_check_id: INVALIDENFRIEDHOF-2014 --- #: by: Birgit Schroeer --- #: confirmed_by: srt --- #: last_checked: 2015-03-13 --- #: next_check: 2015-03-28 --- #: XXX siehe auch temp_blockings-Eintrag --- #: osm_watch: way id="76212442" version="7" --- Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015	2::inwork 8119,13912 8101,13901 8248,13659 8337,13541
 # 
 #: last_checked: 2015-02-20
 #: check_frequency: 120d
@@ -2984,7 +2977,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2015-03-21
+#: last_checked: 2015-03-27
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

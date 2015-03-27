@@ -21252,7 +21252,7 @@ EOF
        recurrences => [['yearly', days => 23, months => 4]],
        text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 24.4.2015 bis 26.4.2015 ',
        type  => 'gesperrt',
-       source_id => 'http://www.winzerfest-köpenick.de/',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.287680.php',
        data  => <<EOF,
 userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
@@ -23227,7 +23227,6 @@ EOF
        recurrences => [['yearly', days => 20, months => 8]],
        text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.8.2015 bis 23.8.2015',
        type  => 'gesperrt',
-       source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
 userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
@@ -23468,16 +23467,11 @@ userdel	q3::inwork 4638,10162 4623,10066 4609,9949
 EOF
      },
      { from  => 1412021931, # 2014-09-29 22:18
-       until => $isodate2epoch->("2015-03-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
+       until => 1427482278, # $isodate2epoch->("2015-03-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
        text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: INVALIDENFRIEDHOF-2014
-#: by: Birgit Schroeer
-#: confirmed_by: srt
-#: XXX vielleicht wird hier asphaltiert?
-#: last_checked: 2015-03-06
-#: next_check: 2015-03-28
+# REMOVED --- #: next_check_id: INVALIDENFRIEDHOF-2014 --- #: by: Birgit Schroeer --- #: confirmed_by: srt --- #: XXX vielleicht wird hier asphaltiert? --- #: last_checked: 2015-03-06 --- #: next_check: 2015-03-28
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 EOF
      },
@@ -23510,7 +23504,7 @@ userdel	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065
 EOF
      },
      { from  => 1412481600, # 2014-10-05 06:00
-       until => 1427896800, # 2015-04-01 16:00
+       until => 1427482432, # 1427896800, # 2015-04-01 16:00
        text  => 'Gartenstr.: Baustelle zwischen Invalidenstr. und Tieckstr., Fahrbahn Richtung Torstr. gesperrt (kurzer Abschnitt), außerdem Einbahnstraßenregelung in der Tieckstr., 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_023111',
@@ -24005,6 +23999,26 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork -2576,13777 -2669,13488
+EOF
+     },
+     { from  => 1427484862, # 2015-03-27 20:34
+       until => 1427925600, # 2015-04-02 00:00
+       text  => 'Chausseestr. und Invalidenstr.: Sperrung der Fahrbahn wegen Bauarbeiten bis zum 01.04.2015',
+       type  => 'handicap',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html',
+       data  => <<EOF,
+userdel	q3::inwork 8870,13926 8935,13844
+userdel	q2::inwork; 8935,13844 8842,13798
+EOF
+     },
+     { from  => 1427752800, # 2015-03-31 00:00
+       until => 1438380000, # 2015-08-01 00:00
+       text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, gesperrt Richtung Osten, ab 01.04.2015',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wann wird die Einbahnstraßenregelung aufgehoben?
+#: next_check: 2015-07-23
+userdel	q4::inwork; 8870,13926 9011,14019
 EOF
      },
     );

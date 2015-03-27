@@ -294,7 +294,7 @@ Feuerbachstr.: Radspuren bis 2015 geplant	?::inwork 5582,6360 5702,6381 5781,640
 # REMOVED (realisiert) --- #: last_checked: 2013-05-10 --- #: check_frequency: 90d --- Königstr.: Radspuren bis 2015 geplant	?::projected -9412,546 -9730,514 -9969,519 -10052,521 -10269,445 -10593,476
 # REMOVED (realisiert) --- #: last_checked: 2013-07-06 --- #: next_check: 2013-10-13 --- Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
 # 
-#: osm_watch: way id="151617776" version="8"
+#: osm_watch: way id="151617776" version="9"
 #: last_checked: 2014-10-04
 #: check_frequency: 90d
 Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,4376
@@ -374,6 +374,13 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: next_check: 2015-04-01 vvv
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html
+#: XXX Dauer etwa vier Monate
+Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9224,14169 9383,13986 9514,13826
+Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13986 9676,14046
+#: next_check ^^^
 # 
 #: XXX Realisierung bis September 2015
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
@@ -918,7 +925,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich Schotterweg,
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
-#: osm_watch: way id="155605301" version="4"
+#: osm_watch: way id="155605301" version="5"
 #: last_checked: 2015-03-25
 #: check_frequency: 90d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
@@ -1070,7 +1077,7 @@ Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Fahrbahnmarkierungen -> vielleicht auch Radspuren?)
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf (Fahrbahnmarkierungen -> vielleicht auch Radspuren?)
-#: osm_watch: way id="4677913" version="17"
+#: osm_watch: way id="4677913" version="18"
 #: osm_watch: way id="38198022" version="14"
 #: last_checked: 2014-04-27
 #: XXX laut osm cycleway=lane
@@ -1433,7 +1440,8 @@ Berliner Str: existiert hier ein Zebrastreifen?	? 3901,24137 3922,24161 3948,241
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036832083234/832083234/00064924/24-Anlagen/02/Benennungsabsichtfuer7PrivatwegeinderAnlageBuc.pdf
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4003
 #: XXX Benennungsabsicht für 7 Privatwege in der Anlage Buchholz, PLZ=13127, Ortsteil Französisch Buchholz (fehlen alle in Berlin.coords.data)
-#: next_check: 2015-05-01 vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2015 (Straßenbenennung)
+#: next_check: 2015-04-10 vvv
 Fliederblütenweg: dieser Abschnitt des Wegs am Nordgraben wird umbenannt	? 11714,21130 11534,21229 11437,21283 11389,21310 11370,21320 11254,21457 11175,21571 11073,21680
 #: XXX Eintrag in str_cont_ausnahme
 Mirabellenblütenweg: Qualität, bereits umbenannt, beleuchtet?	? 11308,21550 11296,21454

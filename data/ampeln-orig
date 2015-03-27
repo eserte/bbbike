@@ -2554,8 +2554,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2015-03-21 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2015-03-27 vvv
+#: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
 	X::inwork 9343,12464
@@ -2564,8 +2564,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (südlicher Bereich) vvv
-#: last_checked: 2015-02-27 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2015-03-27 vvv
+#: check_frequency: 30d vvv
 	F::inwork 9063,12051
 	F::inwork 9270,12086
 #: check_frequency ^^^
@@ -2581,18 +2581,21 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: INVALIDEN-2014
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: last_checked: 2015-03-13 vvv
+#: last_checked: 2015-03-27 vvv
 #: next_check: 2015-05-31 vvv
 	X::inwork 8732,14098
 	X::inwork 8870,13926
 # REMOVED (existiert nicht mehr) ---	X::inwork 8634,13588
 	X::inwork 8426,13909
 	X::inwork 8313,13839
-	X::inwork 8775,13606
 # REMOVED (existiert nicht mehr) ---	X::inwork 9085,13919
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
+# 
+#: XXX wird die Ampel hier nach Öffnung der Chausseestr. aufgehoben?
+#: next_check: 2015-04-01
+	X::inwork 8775,13606
 # REMOVED (Antwort: wahrscheinlich ja) --- #: XXX ist diese Ampel permanent?
 	X 8450,13599
 	X 9070,14058
@@ -2708,7 +2711,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
-#: osm_watch: way id="260062339" version="3"
+#: osm_watch: way id="260062339" version="4"
 #: last_checked: 2015-03-08 (Ampel an der Ziegrastr.) vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
