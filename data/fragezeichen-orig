@@ -84,7 +84,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 # 
 #: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Realisierung anscheinend ungewiss)
-#: last_checked: 2015-03-25
+#: last_checked: 2015-03-28
 #: check_frequency: 180d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -214,9 +214,9 @@ Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 1
 #: XXX wird auch das letzte Stück im Westen realisiert?
 #: osm_watch: way id="4424794" version="14"
 #: osm_watch: way id="30195541" version="9"
-#: last_checked: 2015-01-28
-#: check_frequency: 45d
-Turmstr.: Radspuren für 2013 geplant	? 5248,13434 5368,13406 5434,13398
+#: last_checked: 2015-03-28
+#: check_frequency: 60d
+Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
 # 
 # REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: osm_watch: way id="4884674" version="8" --- #: osm_watch: way id="8023415" version="6" --- #: last_checked: 2013-07-13 --- #: check_frequency: 180d --- Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837 -6429,14879 -6405,14971
 # 
@@ -237,7 +237,7 @@ Gartenfelder Str.: Radspur wird gebaut, Realisierung bis April 2015	?::inwork; -
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
 #: osm_watch: way id="25219757" version="9"
 #: osm_watch: way id="4600236" version="11"
-#: last_checked: 2015-01-28
+#: last_checked: 2015-03-28
 #: check_frequency: 120d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
@@ -784,18 +784,18 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12871,9356 12888,9338
 #: next_check_id: FRIEDEL-2014
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
-#: last_checked: 2015-03-17
+#: last_checked: 2015-03-28
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2015-03-17
+#: last_checked: 2015-03-28
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: XXX laut Tsp vom 2010-03-26 wird der Radweg gerade erneuert (Richtung Norden)
-#: last_checked: 2015-03-17
+#: last_checked: 2015-03-28
 #: check_frequency: 120d
 #: priority: #C
 Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7286 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410 9233,8597 9229,8718
@@ -1236,11 +1236,7 @@ Nennhauser Damm/Finkenkruger Weg: neue Vorfahrtsregelung?	?::projected -7484,137
 Stubenrauchstr.: gibt es hier neue Fahrbahnmarkierungen z.B. Radspuren?	? 16182,2200 16135,2135
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 --- #: last_checked: 2014-09-21 --- Sewanstr.: dieser Abschnitt wird zur Lückstr.	? 16647,10632 16699,10611
-# 
-#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf
-#: last_checked: 2014-07-17
-#: check_frequency: 60d
-Friedrich-Wilhelm-Platz: Umbau der Radverkehrsanlagen	?::inwork 5314,7217 5333,7201 5352,7184 5397,7205 5364,7330 5352,7428
+# REMOVED (fast nichts passiert) --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf --- #: last_checked: 2014-07-17 --- #: check_frequency: 60d --- Friedrich-Wilhelm-Platz: Umbau der Radverkehrsanlagen	?::inwork 5314,7217 5333,7201 5352,7184 5397,7205 5364,7330 5352,7428
 # 
 #: XXX hat das irgendwelche Konsequenzen (e.g. Radwegführung?)
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/__bersicht_stra__enbaustellen_neubau_14_06_17.xls?download.html
@@ -1248,10 +1244,7 @@ Friedrich-Wilhelm-Platz: Umbau der Radverkehrsanlagen	?::inwork 5314,7217 5333,7
 Ottomar-Geschke-Str.: Neubau einer Nebenfahrbahn	?::inwork 21289,4563 21206,4387
 # 
 # REMOVED (aufgenommen) --- #: by: Albin Kessel --- #: XXX vor Ort anschauen? --- verlängerte Grolmanstr.: Qualität ("Kopfsteinpflaster")? Fußgängerfrequenz ("einige Fußgänger")? Nachts beleuchtet?	? 4651,11368 4648,11445 4616,11507 4574,11587
-# 
-#: last_checked: 2015-01-28
-#: check_frequency: 60d
-Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5628,14063 5443,14028 5336,14044 5306,14061
+# REMOVED (siehe handicap-s-Eintrag) --- #: last_checked: 2015-01-28 --- #: check_frequency: 60d --- Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5628,14063 5443,14028 5336,14044 5306,14061
 # 
 #: XXX_prog sollte mit einer Punkt-Richtungs-Penalty versehen werden, oder eine andere Lösung
 Alexander-Meißner-Str.: Überqueren nicht möglich, Schlenker nach Norden notwendig	? 20770,-1315 20394,-1397 20038,-1474
@@ -1541,10 +1534,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: check_frequency: 120d
 Lepsiusstr./Ahornstr.: Zebrastreifen in Planung	?::projected 4725,6168 4739,6193
 # 
-#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf
-#: XXX meint "Fußgängerüberweg" hier Zebrastreifen?
-#: priority: #C
-Vorarlberger Damm/Riemenschneiderweg: Zebrastreifen in Bau?	? 6787,7137 6762,7109 6738,7086
+# REMOVED --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf --- #: XXX meint "Fußgängerüberweg" hier Zebrastreifen? --- #: priority: #C --- Vorarlberger Damm/Riemenschneiderweg: Zebrastreifen in Bau?	? 6787,7137 6762,7109 6738,7086
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
 #: osm_watch: way id="47155976" version="10"
@@ -1582,7 +1572,7 @@ Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,87
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4744
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140610.1005.397765.html
-#: last_checked: 2015-01-25
+#: last_checked: 2015-03-28
 #: check_frequency: 100d
 Lauterstr.: wird die Straße am Breslauer Platz komplett für Autofahrer/Radfahrer gesperrt?	?::projected 5810,7337 5817,7223
 # 
@@ -1591,15 +1581,12 @@ Lauterstr.: wird die Straße am Breslauer Platz komplett für Autofahrer/Radfahrer
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4550&options=4 vvv
 # REMOVED (realisiert) --- #: last_checked: 2014-08-07 (keine Bauarbeiten zu erkennen) --- #: check_frequency: 180d --- #: priority: #C --- Uhlandstr./Ludwigkirchstr.: Planung eines Zebrastreifens für 2012	?::projected 5026,10166 5023,10140
 # 
-#: last_checked: 2014-05-24
-#: check_frequency: 180d
+#: last_checked: 2015-03-28
+#: check_frequency: 90d
 #: priority: #C
 Sömmeringstraße/Quedlinburger Straße: Planung eines Zebrastreifens für 2013	?::projected 3714,12949
 # 
-#: last_checked: 2014-05-24
-#: check_frequency: 180d
-#: priority: #C
-Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::projected 3711,13098
+# REMOVED (so gut wie realisiert) --- #: last_checked: 2014-05-24 --- #: check_frequency: 180d --- #: priority: #C --- Sömmeringstraße/Nordhauser Straße: Planung eines Zebrastreifens für 2013	?::projected 3711,13098
 #: by: ^^^
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf?start&ts=1352885627&file=benennungsabsicht_fuer_einen_privatweg_in_der_anlage_der_siedlungs__und_gartengemeinschaft_insel_ruegen_eg_ber.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2013 --- #: XXX Privatweg --- #: XXX fehlt in Berlin.coords.data: Insel-Rügen-Weg|Pankow|13189 --- #: XXX unklar, ob dieser Abschnitt jemals existieren wird... --- #: note: Weg in der Anlage "Insel Rügen" eG --- #: osm_watch: way id="28997509" version="11" --- #: last_checked: 2014-06-03 --- # REMOVED (in strassen-orig) aufgenommen --- Weg wird in Insel-Rügen-Str. benannt: Qualität nach den Bauarbeiten? Genaue Lage (GPS-Koordinaten!)	?::inwork 10960,17674 10969,17587 --- Insel-Rügen-Str.: wird hier eine Straße existieren? Qualität? Genaue Lage (GPS-Koordinaten!)	?::inwork 10967,17671 10978,17589 11064,17599 11228,17624 11354,17645 --- Insel-Rügen-Str.	? 11069,17562 11064,17599 11062,17646 11218,17671 11228,17624

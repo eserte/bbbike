@@ -33,6 +33,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
 Alfred-Döblin-Platz: Bauarbeiten	q1::inwork 11162,10919 11150,11030
+Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q1 5708,14077 5787,14102 5956,14168
 Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
 Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
@@ -334,7 +335,7 @@ Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9606,1389 -964
 am Wirtshaus zur Pfaueninsel: Fußgänger, besonders an schönen Tagen	q2 -8591,2144 -8540,2209 -8468,2152
 Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
-(südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7744,7538 7710,7547 7750,7528
+(südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16837,11920 16833,11897 16803,11859
 Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22324,4586
@@ -626,7 +627,7 @@ Drosselbartstr.: enge Straße	q1 15188,6908 15024,7083 14951,7163
 Zimmermannstr.: Fußgänger	q3 4992,5868 5018,5854
 Deitmerstr.: Fußgänger	q3 5078,5889 5048,5904
 Friedrichsruher Platz: Fußgänger, eng	q2 5942,5775 5935,5874
-Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q1 6878,5946 6895,5873
+Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q3 6878,5946 6895,5873
 Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
 (Plauener Str. - Küllstedter Str.): Fußgänger	q2 17352,14827 17363,14760
 Orankeweg: einige Bodenschwellen, ohne Anhänger leicht umfahrbar	q0 14967,15885 14994,15861 15313,15858 15395,15852 15453,15848
@@ -1456,6 +1457,8 @@ Biedermannweg: einige Fußgänger	q1 -717,12823 -686,12735
 Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
 (Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Gefälle	q1; 7703,14582 7696,14577 7662,14579 7653,14570
 (Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Steigung	q2; 7653,14570 7662,14579 7696,14577 7703,14582
+Kelheimer Str.: einige Fußgänger	q2 5894,10287 5898,10318
+Würzburger Str.: einige Fußgänger, Bordstein	q3 5898,10318 5907,10347
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -1589,7 +1592,7 @@ Hackerstr.: schmale Straße, schlecht einzusehen	q1 4994,6387 4999,6397 5020,6434
 Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 (Wuhlewanderweg - Teterower Ring): Fußgänger	q1 22196,12961 22279,12938 22308,12940 22357,12956 22419,12975 22443,12998
 Retzdorffpromenade: Fußgänger	q2 4893,6812 4993,6812
-Albestr.: enge Straße	q1 5422,7461 5448,7436 5640,7435 5811,7433
+Albestr.: enge Straße	q1 5419,7464 5448,7436 5640,7435 5811,7433
 Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6359,9244
@@ -2372,7 +2375,6 @@ Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::ig
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9996,12401 9994,12368 9943,12364 9961,12273
-Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10077,13100 10018,13299
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
 Westendallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 461,11455 425,11455 395,11486 329,11696 323,11801
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590

@@ -397,7 +397,7 @@ Roonstr. -> Flotowstr.: Hindenburgdamm	3::igndisp 4265,4484 4515,4581 4651,4638
 Mariannenplatz - Bethaniendamm	1 11984,11130 12012,11235
 Ballonfahrerweg - Werner-Voß-Damm	3 7979,7525 7949,7607 8263,7611
 General-Pape-Str. - Werner-Voß-Damm	3 7943,7708 7949,7607 8263,7611
-Rubensstr. - Baumeisterstr.	3 6389,7196 6367,7356 6283,7231
+Rubensstr. - Baumeisterstr.	3 6389,7196 6367,7356 6282,7240
 Mittelstreifen	3nocross::ignrte 13010,8422 13042,8395 13107,8343
 Anzengruberstr. -> Sonnenallee: Mittelstreifen	3::igndisp 12865,8346 13042,8395 13010,8422
 Mittelstreifen	3nocross::ignrte 13107,8343 13194,8276 13277,8211
@@ -1077,8 +1077,8 @@ Indira-Gandhi-Str. -> Meyerbeerstr.: Straßenbahntrasse	3::igndisp 14595,15980 14
 Meyerbeerstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14484,16035 14576,16069 14552,16171
 Lenther Steig	1 1022,14898 1037,14814 1042,14721
 Mittelstreifen	3nocross::ignrte 6144,7677 6082,7594 5955,7420
-Hauptstr. -> Wielandstr.: Mittelstreifen	3::igndisp 6144,7677 6082,7594 6081,7215
-Wielandstr. -> Hauptstr.: Mittelstreifen	3::igndisp 6081,7215 6082,7594 5955,7420
+Hauptstr. -> Wielandstr.: Mittelstreifen	3::igndisp 6144,7677 6082,7594 6081,7227
+Wielandstr. -> Hauptstr.: Mittelstreifen	3::igndisp 6081,7227 6082,7594 5955,7420
 Fehmarner Str.	1 6709,14782 6528,15000
 Mittelstreifen	3nocross::ignrte 1960,11426 1834,11408 1625,11380
 Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1960,11426 1834,11408 1861,11284
@@ -1712,3 +1712,4 @@ Bergstr.	3 9272,14208 9182,14281 9135,14317
 Mangerstr. (Potsdam)	1 -12054,-274 -12123,-294 -12265,-418
 Bizetstr. - Indira-Gandhi-Str.	3 14293,16073 14552,16171 14522,16260
 Hermann-Hesse-Str. -> Schützenstr.	3 9214,18666 8891,18545 8839,18504
+Friedrichstr. -> Am Weidendamm	3 9279,12953 9286,12886 9323,12895

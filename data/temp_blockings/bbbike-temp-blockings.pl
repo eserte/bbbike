@@ -1635,7 +1635,7 @@ EOF
        text  => 'Augsburger Str. (Charlottenburg) in beiden Richtungen zwischen Joachimstaler Str. und Rankestr. Baustelle, Straße vollständig gesperrt (Kranarbeiten) (bis 17.03.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 5627,10637 5471,10719
+userdel	2 5627,10637 5497,10719 5471,10719
 EOF
      },
      { from  => 1110063600, # 2005-03-06 00:00
@@ -8805,7 +8805,7 @@ EOF
        text  => 'Sarrazinstr.: zurzeit Einbahnstraße (Elsastr. bis Bundesallee; Durchfahrt in dieser Richtung) wegen Baustelle',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 5352,7428 5387,7433 5422,7461 5452,7493 5492,7543
+userdel	1::inwork 5352,7428 5387,7433 5419,7464 5450,7494 5492,7543
 EOF
      },
      { from  => 1181999685, # 2007-06-16 15:14
@@ -21285,7 +21285,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2014-09-13
+#: last_checked: 2015-03-28
 #: check_frequency: 100d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
@@ -22639,7 +22639,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (eigentlich relativ gut passierbar, zumindest in Richtung Osten) --- #: XXX wie sieht die Kreuzungssituation danach aus? --- #: last_checked: 2014-04-08
-userdel	q4::inwork 5443,14028 5336,14044 5306,14061
+userdel	q4::inwork 5443,14028 5322,14044 5306,14061
 EOF
      },
      { from  => undef, # 
@@ -23417,7 +23417,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-12-06
+#: last_checked: 2015-03-28
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 EOF
@@ -23715,7 +23715,7 @@ userdel	2::inwork 30910,13101 30982,12947
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1427555693, # XXX
        text  => 'Handjerystraße: zwischen Schnackenburgstraße und Sarrazinstraße Sperrung der Fahrbahn, Ende der Sperrung unbekannt ',
        type  => 'handicap',
        data  => <<EOF,
@@ -23801,7 +23801,8 @@ EOF
        text  => 'Augsburger Str.: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2014-12-12
+#: last_checked: 2015-03-28
+#: next_check: 2015-06-28
 userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
 EOF
      },
@@ -24019,6 +24020,24 @@ EOF
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: next_check: 2015-07-23
 userdel	q4::inwork; 8870,13926 9011,14019
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2015-03-28
+#: check_frequency: 90d
+userdel	q4::inwork; 3807,11859 3666,11855
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2015-12-01 00:00:00"), # undef, # XXX
+       text  => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, Ende der Bauarbeiten im Dezember 2015',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q3::inwork 5824,6974 5817,7223
 EOF
      },
     );

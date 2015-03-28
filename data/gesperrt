@@ -2790,7 +2790,6 @@ Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s 9996,12401 9994,12368 9943,12364 9961,12273
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,3422
-Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s 10077,13100 10018,13299
 tragen (2 Stufen)	0:5:57 8818,13365
 Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9858,12410
@@ -2975,8 +2974,8 @@ Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu übe
 An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6230,14184 6234,14247 6209,14245
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6209,14245 6234,14247 6237,14309
 schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3nocross::ignrte 7172,13051 7187,13126 7161,13190
-Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3::igndisp 7161,13190 7187,13126 7364,13215
-Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3::igndisp 7364,13215 7187,13126 7172,13051
+Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3::igndisp 7161,13190 7187,13126 7356,13213
+Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3::igndisp 7356,13213 7187,13126 7172,13051
 Eichkatzweg	1 1137,9921 1026,9772 925,9644
 Lärchenweg	1 1046,9989 1093,9952 1137,9921 1157,9907 1238,9869
 schieben - einzelne Stufen	0:20:-147 1372,8011

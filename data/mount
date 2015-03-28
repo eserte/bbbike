@@ -551,7 +551,6 @@ Steigung 2.9% (Eickstedt - Wallmow)	St; 53742,102795 53777,102984
 Steigung 2.9% (Eickstedt - Wallmow)	St; 52704,101925 53220,102343
 Steigung 2.9% (Düsterhauptstr.)	St; 4533,22399 4603,22334
 Steigung 2.9% (Bautzener Str.)	St; 8183,9260 8182,9240
-Steigung 2.9% (Baumeisterstr.)	St; 6283,7231 6191,7122
 Steigung 2.9% (Atzpodienstr.)	St; 16413,11906 16456,12191
 Steigung 2.9% (Arndtstr. (Kreuzberg))	St; 9487,9209 9546,9198
 Steigung 2.9% (Amselweg (Bohnsdorf))	St; 22303,67 22169,14
@@ -595,6 +594,7 @@ Steigung 2.8% (Christinenstr.)	St; 10688,13963 10755,14067
 Steigung 2.8% (Blumberger Damm)	St; 21108,11628 21135,11799
 Steigung 2.8% (Binswangersteig)	St; 22029,-178 21977,-8
 Steigung 2.8% (Bautzener Platz)	St; 8183,9260 8102,9262
+Steigung 2.8% (Baumeisterstr.)	St; 6282,7240 6191,7122
 Steigung 2.8% (Badstr.)	St; 8993,16100 9059,16038
 Steigung 2.7% (Wendenstr.)	St; 20539,1285 20513,1210
 Steigung 2.7% (Sembritzkistr.)	St; 7245,5568 7199,5479
@@ -1127,8 +1127,8 @@ Steigung 1.9% (Thüringerallee)	St; 1518,11250 1541,11271
 Steigung 1.9% (Teutonenstr. (Altglienicke))	St; 20369,1476 20405,1460
 Steigung 1.9% (Steglitzer Damm)	St; 7283,4719 7203,4737
 Steigung 1.9% (Silvio-Meier-Str.)	St; 14381,12205 14451,12396
-Steigung 1.9% (Siemensstr. (Moabit))	St; 5443,14028 5336,14044
-Steigung 1.9% (Siemensstr. (Moabit))	St; 5336,14044 5306,14061
+Steigung 1.9% (Siemensstr. (Moabit))	St; 5443,14028 5322,14044
+Steigung 1.9% (Siemensstr. (Moabit))	St; 5322,14044 5306,14061
 Steigung 1.9% (Siegfriedstr. (Lichtenberg))	St; 16764,11919 16794,12144
 Steigung 1.9% (Seebadstr. (Kladow))	St; -8392,6373 -8523,6323
 Steigung 1.9% (Seebadstr. (Kladow))	St; -8337,6398 -8392,6373
@@ -1165,7 +1165,7 @@ Steigung 1.9% (Grünspechtweg)	St; 7171,22942 7059,23127
 Steigung 1.9% (Gotha-Allee)	St; 630,12567 770,12566
 Steigung 1.9% (Gormannstr.)	St; 10463,13747 10480,13871
 Steigung 1.9% (Glasower Str.)	St; 12876,6589 12759,6563
-Steigung 1.9% (Fregestr.)	St; 5958,7220 5957,6970
+Steigung 1.9% (Fregestr.)	St; 5961,7229 5957,6970
 Steigung 1.9% (Fidicinstr.)	St; 9295,9047 9459,9019
 Steigung 1.9% (Feurigstr.)	St; 7467,8863 7497,8916
 Steigung 1.9% (Eickstedt - Wallmow)	St; 52704,101925 52403,101676
@@ -1193,7 +1193,6 @@ Steigung 1.9% ((Mauerweg Spandau))	St; -6397,11664 -6174,11571
 Steigung 1.8% (Zur Gartenstadt)	St; 21769,-30 21742,115
 Steigung 1.8% (Zabel-Krüger-Damm)	St; 6805,23554 6601,23412
 Steigung 1.8% (Willmanndamm)	St; 7836,9413 7771,9389
-Steigung 1.8% (Wielandstr. (Schöneberg))	St; 6081,7215 6082,7066
 Steigung 1.8% (Werbellinstr. (Neukölln))	St; 12308,8088 12162,8055
 Steigung 1.8% (Weidenweg (Friedrichshain))	St; 13548,12535 13598,12554
 Steigung 1.8% (Warnemünder Str. (Schmargendorf))	St; 2750,7444 2744,7397
@@ -1374,6 +1373,7 @@ Steigung 1.7% ((Machandelweg - Reichsstr.))	St; -85,12852 -103,12841
 Steigung 1.7% ((Am Niederfeld/Kressenweg - Berliner Balkon))	St; 23788,11042 23928,11038
 Steigung 1.7% ((Am Niederfeld/Kressenweg - Berliner Balkon))	St; 23640,11025 23788,11042
 Steigung 1.7% ((Am Niederfeld/Kressenweg - Berliner Balkon))	St; 23575,10972 23640,11025
+Steigung 1.6% (Wielandstr. (Schöneberg))	St; 6081,7227 6082,7066
 Steigung 1.6% (Weidenweg (Friedrichshain))	St; 13911,12692 14058,12709
 Steigung 1.6% (Waldstr. (Bohnsdorf))	St; 21868,-1674 21758,-1714
 Steigung 1.6% (Vorbergstr.)	St; 7137,9216 7308,9163
@@ -1545,8 +1545,6 @@ Steigung 1.5% (Bersarinplatz)	St; 13730,12535 13698,12544
 Steigung 1.5% (Bersarinplatz)	St; 13698,12544 13675,12581
 Steigung 1.5% (Bersarinplatz)	St; 13681,12624 13695,12643
 Steigung 1.5% (Bersarinplatz)	St; 13675,12581 13681,12624
-Steigung 1.5% (Bahnhofstr. (Schöneberg))	St; 6157,7117 6151,7078
-Steigung 1.5% (Bahnhofstr. (Schöneberg))	St; 6151,7078 6082,7066
 Steigung 1.5% (Am Rupenhorn)	St; -2478,10774 -2473,10662
 Steigung 1.5% (Am Klötzgraben)	St; 6817,23167 6882,23209
 Steigung 1.5% (Am Beelitzhof)	St; -3882,2441 -3907,2438
@@ -1655,6 +1653,8 @@ Steigung 1.4% (Boelckestr.)	St; 8594,8777 8601,8724
 Steigung 1.4% (Blumberger Damm)	St; 21782,16253 21724,15955
 Steigung 1.4% (Blumberger Damm)	St; 21724,15955 21709,15808
 Steigung 1.4% (Bernau - Ruhlsdorf (- Marienwerder))	St; 22532,31955 22517,31745
+Steigung 1.4% (Bahnhofstr. (Schöneberg))	St; 6157,7117 6151,7078
+Steigung 1.4% (Bahnhofstr. (Schöneberg))	St; 6151,7078 6082,7066
 Steigung 1.4% (Auf dem Mühlenberg)	St; 6950,23023 6930,23015
 Steigung 1.4% (Attilastr.)	St; 7263,4281 7310,4308
 Steigung 1.4% (Arno-Holz-Str.)	St; 3978,5600 4115,5804

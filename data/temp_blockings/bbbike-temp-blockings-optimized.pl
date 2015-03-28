@@ -2960,7 +2960,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2014-09-13
+#: last_checked: 2015-03-28
 #: check_frequency: 100d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -3380,7 +3380,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
          'from' => undef,
          'id' => 2630,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2014-12-06
+#: last_checked: 2015-03-28
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 ',
@@ -3465,16 +3465,7 @@ userdel	2::inwork -3197,11554 -3075,11510
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => undef,
-         'text' => 'Handjerystraße: zwischen Schnackenburgstraße und Sarrazinstraße Sperrung der Fahrbahn, Ende der Sperrung unbekannt ',
-         'from' => undef,
-         'id' => 2663,
-         'data' => '#: by: fritz
-userdel	q4::inwork 5635,7660 5636,7540
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3497,7 +3488,8 @@ userdel	q4::inwork; 9559,11715 9692,11732
          'text' => 'Augsburger Str.: Bauarbeiten, Einbahnstraßenregelung',
          'from' => undef,
          'id' => 2672,
-         'data' => '#: last_checked: 2014-12-12
+         'data' => '#: last_checked: 2015-03-28
+#: next_check: 2015-06-28
 userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
 ',
          'type' => 'handicap'
@@ -3662,6 +3654,26 @@ userdel	q2::inwork; 8935,13844 8842,13798
          'data' => '#: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: next_check: 2015-07-23
 userdel	q4::inwork; 8870,13926 9011,14019
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
+         'from' => undef,
+         'id' => 2695,
+         'data' => '#: last_checked: 2015-03-28
+#: check_frequency: 90d
+userdel	q4::inwork; 3807,11859 3666,11855
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1448924400,
+         'text' => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, Ende der Bauarbeiten im Dezember 2015',
+         'from' => undef,
+         'id' => 2696,
+         'data' => 'userdel	q3::inwork 5824,6974 5817,7223
 ',
          'type' => 'handicap'
        }

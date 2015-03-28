@@ -13,21 +13,21 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-03-26 vvv
+#: last_checked: 2015-03-28 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-03-27 vvv
+#: last_checked: 2015-03-28 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2015-03-16
+#: last_checked: 2015-03-28
 #: check_frequency: 60d
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
@@ -82,7 +82,7 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 # 
 #: XXX Ende der Bauarbeiten?
 #: XXX_prog: zu eng f¸r Anh‰nger
-#: last_checked: 2015-03-03
+#: last_checked: 2015-03-28
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
 #: last_checked: 2015-03-27
@@ -206,7 +206,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2015-02-28
+#: last_checked: 2015-03-28
 #: check_frequency: 30d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -240,6 +240,13 @@ Alfred-Dˆblin-Platz: Bauarbeiten	q1::inwork 11162,10919 11150,11030
 ### Kˆpenick ###
 # 
 # REMOVED --- #: last_checked: 2012-10-21 --- #: next_check: 2012-11-01 --- Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22478,6041 22544,6037 22539,5956
+# 
+### Moabit ###
+#
+#: XXX was ‰ndert sich nach den Bauarbeiten? Radstreifen?
+#: last_checked: 2015-03-28
+#: next_check: 2015-05-28
+Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q1 5708,14077 5787,14102 5956,14168
 # 
 ### Tiergarten ###
 # 
@@ -706,7 +713,7 @@ Moorlake - Pfaueninsel: Fuﬂg‰nger, besonders an schˆnen Tagen	q1 -9606,1389 -964
 am Wirtshaus zur Pfaueninsel: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 -8591,2144 -8540,2209 -8468,2152
 Karl-Marx-Allee - Kadiner Str.: Fuﬂg‰nger	q1 13543,12326 13556,12302 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
-(s¸dliche Fahrbahn des Sachsendamms - Naturpark Schˆneberg): Rampe	q2 7696,7562 7744,7538 7710,7547 7750,7528
+(s¸dliche Fahrbahn des Sachsendamms - Naturpark Schˆneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 #: XXX_prog BS an der Lichtenberger Br¸cke, Absenkung auf der anderen Seite, ansonsten q1
 (Gudrunstr. - Lichtenberger Br¸cke): Gehweg, Bordsteine	q2 16837,11920 16833,11897 16803,11859
@@ -1066,7 +1073,8 @@ Zimmermannstr.: Fuﬂg‰nger	q3 4992,5868 5018,5854
 #: note: Bordstein am Wendehammer ist an zwei Stellen abgesenkt (aber nicht direkt am Scheitel)
 Deitmerstr.: Fuﬂg‰nger	q3 5078,5889 5048,5904
 Friedrichsruher Platz: Fuﬂg‰nger, eng	q2 5942,5775 5935,5874
-Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q1 6878,5946 6895,5873
+#: note: Bordstein am Wendehammer, ansonsten q1 oder q2
+Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q3 6878,5946 6895,5873
 #: XXX_prog: f¸r Anh‰nger q2 oder q3
 Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
 (Plauener Str. - K¸llstedter Str.): Fuﬂg‰nger	q2 17352,14827 17363,14760
@@ -2117,6 +2125,9 @@ Biedermannweg: einige Fuﬂg‰nger	q1 -717,12823 -686,12735
 Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
 (Am Nordhafen - Uferweg am Nordhafen): Fuﬂg‰nger, Gef‰lle	q1; 7703,14582 7696,14577 7662,14579 7653,14570
 (Am Nordhafen - Uferweg am Nordhafen): Fuﬂg‰nger, Steigung	q2; 7653,14570 7662,14579 7696,14577 7703,14582
+Kelheimer Str.: einige Fuﬂg‰nger	q2 5894,10287 5898,10318
+#: XXX_prog BS am Wendehammer, ansonsten q2
+W¸rzburger Str.: einige Fuﬂg‰nger, Bordstein	q3 5898,10318 5907,10347
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2415,7 +2426,7 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 Retzdorffpromenade: Fuﬂg‰nger	q2 4893,6812 4993,6812
 #: by: Julie:
 #: corrected_by: srt (q4 -> q1)
-Albestr.: enge Straﬂe	q1 5422,7461 5448,7436 5640,7435 5811,7433
+Albestr.: enge Straﬂe	q1 5419,7464 5448,7436 5640,7435 5811,7433
 #: by: Michael Dinter:
 Leuthener Str.: enge Straﬂe	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 #: by: Wilfried Flade:
