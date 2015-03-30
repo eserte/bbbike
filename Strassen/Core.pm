@@ -668,9 +668,19 @@ sub as_string {
 ### AutoLoad Sub
 sub global_directives_as_string {
     my($self) = @_;
-    return "" if (!$self->{GlobalDirectives} || !keys %{$self->{GlobalDirectives}});
+    my $glob_dir;
+    if (ref $self && UNIVERSAL::isa($self, 'Strassen')) {
+	if ($self->{GlobalDirectives}) {
+	    $glob_dir = $self->{GlobalDirectives};
+	}
+    } elsif (ref $self eq 'HASH') {
+	$glob_dir = $self;
+    } else {
+	die "Unexpected argument to global_directives_as_string, object or hash expected";
+    }
+    return "" if (!$glob_dir || !keys %$glob_dir);
     my $s = "";
-    while(my($k,$v) = each %{ $self->{GlobalDirectives} }) {
+    while(my($k,$v) = each %$glob_dir) {
 	$s .= join("\n", map { "#: $k: $_" } @$v) . "\n";
     }
     $s .= "#:\n"; # end global directives

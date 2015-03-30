@@ -49,7 +49,7 @@ my $zebrastreifen2_tests = 2;
 my $encoding_tests = 10;
 my $multistrassen_tests = 11;
 my $initless_tests = 3;
-my $global_directive_tests = 3;
+my $global_directive_tests = 7;
 my $strict_and_syntax_tests = 12;
 
 plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests + $strict_and_syntax_tests;
@@ -557,6 +557,16 @@ EOF
     $s->set_global_directive('some' => 'thing', 'else');
     is $s->get_global_directive('some'), 'thing', 'after setting multiple values';
     is_deeply $s->get_global_directives, { some => [qw(thing else)] }, 'get_global_directives';
+    my $expected_string = <<'EOF';
+#: some: thing
+#: some: else
+#:
+EOF
+    is $s->global_directives_as_string, $expected_string, 'global_directives_as_string on object';
+    my $glob_dir = $s->get_global_directives;
+    is Strassen::global_directives_as_string($glob_dir), $expected_string, 'global_directives_as_string on hash';
+    ok !eval { Strassen::global_directives_as_string([]); 0 }, 'global_directives_as_string on non-hash is an error';
+    like $@, qr/Unexpected argument to global_directives_as_string/, 'error message';
 }
 
 { # Strict
