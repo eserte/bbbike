@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2011,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2011,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,7 @@ use lib (
 	);
 
 use vars qw($VERSION);
-$VERSION = 0.15;
+$VERSION = 0.16;
 
 use Cwd            qw(realpath);
 use File::Basename qw(dirname);
@@ -41,6 +41,7 @@ my @targets = ('wasserstrassen_lowres',
 	       'check_nearest',
 	       'icao_metar',
 	       'addr_sort',
+	       'zip_points', # dependency: addr_sort
 	      );
 # Targets run by default (exclude obscure ones here)
 my @run_targets =
@@ -50,6 +51,7 @@ my @run_targets =
 	      |   check_crossings	# slow
 	      |   check_nearest		# slow
 	      |   icao_metar		# XXX needs unpublished scripts/modules/data, but this will change hopefully
+	      |   zip_points            # experimental
 	      )$}x
 	  }
     @targets;
@@ -136,6 +138,56 @@ sub target_addr_sort {
     $geocoderaddr->convert_for_lookup('_addr_sorted');
     rename '_addr_sorted', '_addr'
 	or die "Renaming _addr_sorted to _addr failed: $!";
+}
+
+sub target_zip_points {
+    return if _is_up_to_date("_zip_points", ["addr"]);
+    if (!-e "_addr") {
+	print STDERR "_addr does not exist, skipping";
+	return;
+    }
+
+    my @colors = ('#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff');
+    my $color_i = -1;
+    my %zip_to_color;
+    my $allocate_new_color = sub {
+	$color_i++;
+	if ($color_i > $#colors) {
+	    $color_i = 0;
+	}
+	$colors[$color_i];
+    };
+    my $get_zip_color = sub {
+	my($zip) = @_;
+	my $color = $zip_to_color{$zip};
+	return $color if $color;
+	$color = $allocate_new_color->();
+	$zip_to_color{$zip} = $color;
+    };
+
+    require Strassen::Core;
+
+    my $s = Strassen->new_stream('_addr');
+    open my $ofh, ">", "_zip_points~"
+	or die "Can't write to _zip_points~: $!";
+
+    # XXX hack: streaming interface cannot deal with global directives
+    my $glob_dir = Strassen->get_global_directives('_addr');
+    print $ofh Strassen::global_directives_as_string($glob_dir);
+    my $encoding = $glob_dir->{encoding}->[0];
+    Strassen::switch_encoding($ofh, $encoding) if $encoding;
+
+    $s->read_stream
+	(sub {
+	     my($r) = @_;
+	     my($str, $hnr, $zip, $place) = split /\|/, $r->[Strassen::NAME()];
+	     my $color = $get_zip_color->($zip);
+	     print $ofh join(" ", $str, $hnr, $zip, $place) . "\t$color " . $r->[Strassen::COORDS()]->[0] . "\n";
+	 });
+    close $ofh
+	or die "Error while writing to _zip_points~: $!";
+    rename "_zip_points~", "_zip_points"
+	or die "Error while renaming _zip_points~ to _zip_points: $!";
 }
 
 sub target_wasserstrassen_lowres {
