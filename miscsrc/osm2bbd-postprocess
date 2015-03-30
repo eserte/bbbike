@@ -147,7 +147,10 @@ sub target_zip_points {
 	return;
     }
 
-    my @colors = ('#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff');
+    my @colors = (
+		  '#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff',
+		  '#800000', '#008000', '#000080', '#808000', '#800080', '#008080',
+		 );
     my $color_i = -1;
     my %zip_to_color;
     my $allocate_new_color = sub {
