@@ -1935,7 +1935,7 @@ do-check-nearest:	.check-do-check-nearest
 	$(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
 	    -MStrassen -MObject::Iterate=iterate -e \
 	    '$$s = Strassen->new($$ARGV[0]);\
-	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; if ( $$dist < 20 ) { system "head", "${PERSISTENTTMPDIR}/check_nearest.bbd"; die "Distance $$dist m found. Please check and add to ${.CWD}/check_nearest_ignore, if necessary."; }; } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
+	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; if ( $$dist < 20 ) { system "head", "${PERSISTENTTMPDIR}/check_nearest.bbd"; die "Distance $$dist m found. Please check and add to ${.CURDIR}/check_nearest_ignore, if necessary."; }; } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
 
 .if 0
 GNUmakefile: Makefile $(MISCRSRCDIR)/b2gmake
