@@ -8339,7 +8339,7 @@ Heinersdorfer Str. (Blankenburg) [Anlage Blankenburg]	N 13271,20131 13366,20074
 Heinersdorfer Str. (Blankenburg) [Anlage Blankenburg]	N 13205,20091 13322,20023
 Eweststr.	N 12298,21015 12227,20966 12189,20959 12121,20969
 Nizzastr.	N 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12322,21378
-Lyonstr.	N 12189,21337 12214,21332 12322,21378 12407,21415
+Lyonstr.	N 12189,21337 12214,21332 12322,21378 12448,21433
 #: note: Privatstraﬂe
 Brester Ring	NN 12384,21256 12326,21226 12302,21275 12360,21303
 #: note: Privatstraﬂe
@@ -9060,6 +9060,11 @@ Am Bauernw‰ldchen	N 28577,889 28852,1208
 Gersweileraue	N 28925,1117 29060,1179 28914,1157 28925,1117
 Gersweilerstr.	N 28748,885 28751,923 28925,1117
 Pelzlakeweg	N 29163,1333 29074,1410
+#: add_fragezeichen: heiﬂt die Straﬂe "Abtweilerstraﬂe" oder "Abtweiler Str."?
+#: XXX luise berlin meint zusammengeschrieben, siehe http://berlin.kauperts.de/Strassen/Abtweilerstrasse-12559-Berlin#Geschichte
+#: XXX in LOR ist es auch zusammengeschrieben
+#: XXX alle anderen Kartenwerke (OSM, Google, Here) meinen auseinander
+#: XXX bei Pharus widerspr¸chlich: auf der Karte auseinandergeschrieben gezeichnet, in der Straﬂenliste zusammengeschrieben
 Abtweiler Str.	N 29188,1086 29098,1148 29060,1179
 Geinsheimer Weg	N 29065,892 29042,891 28968,891 28931,889 28882,888 28748,885 28689,886 28577,889 28419,896 28331,877
 Weg T	N 28892,844 28931,889
@@ -10175,6 +10180,10 @@ Rue du Capitaine Jean Maridor	N 3213,17858 3235,17830 3392,17841 3459,17829 3503
 Rue Doret	N 3248,17921 3153,17975
 #: note: http://www.flickr.com/photos/photos-de-danyel/3528960498/ zeigt ein Straﬂenschild ohne Akzent in MeslÈe
 Rue Marin la MeslÈe	N 3213,17858 3123,17923
+#: add_fragezeichen: wird der Straﬂenname "Toulasne" oder "Tulasne" geschrieben?
+#: XXX mit "ou": OSM, Here
+#: XXX mit "u": Google, LOR
+#: XXX widerspr¸chlich: Pharus, Kauperts/Luise
 Rue du Commandant Jean Toulasne	N 3257,17621 3213,17858
 (Nordufer des Flughafensees)	NN 3108,18083 2801,18126 2775,18160 2226,18228
 Mescheder Weg	N 2267,18378 2444,18487 2553,18555 2582,18577 2600,18606 2604,18660 2602,18737

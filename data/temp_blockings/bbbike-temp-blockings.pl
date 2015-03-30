@@ -8978,7 +8978,7 @@ EOF
      { from  => $isodate2epoch->("2014-05-24 15:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2014-05-26 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 28, months => 4]], # Kann allerdings auch erst im Mai oder Juni stattfinden
+       # recurrences => [['yearly', days => 28, months => 4]], # Kann allerdings auch erst im Mai oder Juni stattfinden --- fraglich, ob es 2015 überhaupt stattfindet
        text  => 'Mehringdamm (Kreuzberg) in Richtung Tempelhof, zwischen Kreuzbergstr. und Dudenstr. Veranstaltung (Seifenkistenrennen am 26. Mai 2014), Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/seifenkistenrennen-mehringdamm.htm',

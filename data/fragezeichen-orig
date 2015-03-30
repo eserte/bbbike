@@ -491,7 +491,6 @@ Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036494123909/494123909/00072341/41-Anlagen/02/vzb0612_IV-Auswertung_TOeB_B-Plan_10-70.pdf
 #: XXX Privatstraße
-#: XXX fehlt in Berlin.coords.data -> Am Wuhlebogen|Kaulsdorf|12621
 #: last_checked: 2014-07-06 vvv
 #: check_frequency: 360d vvv
 Am Wuhlebogen: wann wird die Straße fertiggestellt? Qualität?	?::inwork 21678,7939 21639,8105 21627,8156 21420,8362
@@ -527,22 +526,26 @@ Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file?y=2014 (Widmung von Straßenland -> Nizzastr.)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2014/mdb-bapankow-pressestelle-ba-beschluesse-2014-13.05.14_genehmigung_von_20_bauvorhaben_gem________33_abs_1_baugb_im_geltungsbereich_des_bebauungsplanentwurfs_xix_48b_f__r_das_gel__nde_zwischen_dr_markus_stra__e__pankgaben_...pdf
 #: XXX Öffentliche Straßen:
-#: XXX Planstraße A -> Marseillestraße -> Marseillestr.|Französisch Buchholz|13127
+#: next_check_id: NIZZASTR-2014 vvv
+#: last_checked: 2014-12-13 vvv
+#: XXX Planstraße A -> Marseillestraße
+Marseillestr.: genaue Lage? Qualität? wann ist die Fertigstellung?	?::inwork 12364,21623 12397,21549 12407,21526 12448,21433 12547,21372
 # REMOVED --- : XXX Planstraße B -> Lyonstraße -> Lyonstr.|Französisch Buchholz|13127
 # REMOVED --- : XXX Planstraße C und D -> Nizzastraße -> Nizzastr.|Französisch Buchholz|13127
 #: XXX Privatstraßen:
 # REMOVED --- : XXX Privatstraße III und IV -> Brester Ring -> Brester Ring|Französisch Buchholz|13127
 # REMOVED --- : XXX Privatstraßen V, VI, VII -> Grenobler Ring -> Grenobler Ring|Französisch Buchholz|13127
-#: XXX Privatstraße X -> Bordeauxstraße -> Bordeauxstr.|Französisch Buchholz|13127
-#: XXX Privatstraße XIV -> Toulonstraße -> Toulonstr.|Französisch Buchholz|13127
-#: next_check_id: NIZZASTR-2014 vvv
-#: last_checked: 2014-12-13 vvv
-Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::inwork 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12189,21337 12168,21218 12255,21083 12337,20954
+#: XXX Privatstraße X -> Bordeauxstraße
+Bordeauxstr.: genaue Lage? Qualität? Verkehrsberuhigt? Sackgasse? wann ist die Fertigstellung?	?::inwork 12319,21487 12407,21526
+#: XXX Privatstraße XIV -> Toulonstraße
+Toulonstr.: genaue Lage? Qualität? Verkehrsberuhigt? Sackgasse? wann ist die Fertigstellung?	?::inwork 12397,21549 12472,21579
+# REMOVED (einzelne Straßen aufgeführt) --- Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::inwork 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12189,21337 12168,21218 12255,21083 12337,20954
 # REMOVED (realisiert) --- Nizzastr.: bereits fertiggestellt? Qualität? Genaue Lage?	?::inwork 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12322,21378
 # REMOVED (realisiert) --- Brester Ring: bereits fertiggestellt? Qualität? Genaue Lage?	?::inwork 12384,21256 12326,21226 12302,21275 12360,21303
 # REMOVED (teilweise realisiert) --- Grenobler Ring: bereits fertiggestellt? Qualität? Genaue Lage?	?::inwork 12404,21217 12483,21255 12441,21341 12360,21303
-# REMOVED (Trassenführung schon in strassen-orig) --- Lyonstr.: bereits fertiggestellt? Qualität? Genaue Lage?	?::inwork 12189,21337 12214,21332 12322,21378 12407,21415
+# REMOVED (Trassenführung schon in strassen-orig) --- Lyonstr.: bereits fertiggestellt? Qualität? Genaue Lage?	?::inwork 12189,21337 12214,21332 12322,21378 12448,21433
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -651,16 +654,13 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5900 (Verzögerung)
-#: XXX neue Straßennamen (fehlen alle in Berlin.coords.data)
+#: XXX neue Straßennamen
 #: last_checked: 2014-07-06 (erste Bauarbeiten) vvv
 #: check_frequency: 360d vvv
-#: XXX -> Am Theodorpark|Mahlsdorf|12623
 Am Theodorpark: Straße in Planung, Qualität? Genaue Lage?	?::projected 24899,11017 24948,11018 25051,11020 25141,11024
 #: XXX Privatstraße
-#: XXX -> Arturweg|Mahlsdorf|12623
 Arturweg: Straße in Planung, Qualität? Genaue Lage?	?::projected 24948,11018 24960,10882 24996,10876 25051,10867 25048,10957 25051,11020
 #: XXX Privatstraße
-#: XXX -> Reintrautweg|Mahlsdorf|12623
 Reintrautweg: Straße in Planung, Qualität? Genaue Lage?	?::projected 24996,10876 24990,10954 25048,10957 25143,10955
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -826,8 +826,7 @@ Planstraße 2 (Fortsetzung Römerweg): Name wahrscheinlich Frauenauer Str.? Qualit
 # REMOVED --- Planstraße 4 -> Eisensteiner Str.: Qualität der Straße?	?::inwork 19727,9672 19722,9483
 # REMOVED --- #: XXX Rinchnacher Weg|Karlshorst|10318 --- Planstraße 5 -> Rinchnacher Weg: Qualität etc?	?::projected 19801,9680 19790,9478
 #: osm_watch: way id="193373957" version="3"
-#: XXX Teisnacher Str.|Karlshorst|10318
-Planstraße 6 -> Teisnacher Str.: Qualität etc?	?::projected 19857,9682 19849,9474
+Teisnacher Str.: (Planstraße 6) Qualität, genaue Lage?	?::projected 19857,9682 19849,9474
 # REMOVED (teilweise realisiert) --- #: XXX PLZ=10318 --- Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19646,9490 19722,9483 19790,9478 19849,9474 19890,9471
 #: XXX Planstraße 8+10 -> Regener Str.
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
@@ -840,8 +839,8 @@ Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 197
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036397475695/397475695/00115094/94-Anlagen/02/Anlage1329.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2014
 #: note: Privatstraße
-#: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-Planstraße 11 -> Zachenberger Str.: Qualität?	?::projected 19885,9400 19780,9409
+#: XXX PLZ=10318 laut DPAG-Mitteilungsblatt und LOR, bereits eingetragen
+Zachenberger Str.: (Planstraße 11) Qualität?	?::projected 19885,9400 19780,9409
 #: by: ^^^
 #: by: ^^^
 #: by: ^^^
@@ -1198,6 +1197,9 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX bei osm ist der Übergang etwas weiter nördlich, am Kokosfinkweg, und nicht an der Fafnerstr.
+Heinersdorfer Str./Blankenburger Str.: wo genau hören/fangen die Straßen auf/an?	? 13031,19576 13040,19596 13066,19650
+# 
 # REMOVED (confirmed) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6187 --- Degnerstr.: Vorfahrtregelung prüfen	? 16537,15827 16559,15896 16616,16046 16656,16157 16692,16253 16806,16496
 # REMOVED (keine Einschränkungen) --- #: XXX laut fritz bis  01.08.2015, 12:00 Uhr --- Holzmarktstr.: Bauarbeiten, auch Auswirkungen auf Radfahrer?	? 11764,12001 11619,12084 11513,12138 11388,12202 11351,12221
 # REMOVED (-> gesperrt-orig) --- #: source_id: IM_023816 --- #: XXX Bauarbeiten bis 06.03.2016 (laut anderen Quellen nur bis 6.3.2015) --- Baerwaldstr.: gibt es für Radfahrer Veränderungen?	? 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
@@ -1293,9 +1295,8 @@ Neubaugebiet am Dahlemer Weg: entstehen hier neue Straßen oder werden bestehende
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: XXX Privatstraße
-#: XXX fehlt in Berlin.coords.data -> In den Leonorengärten|Lankwitz|12247
 #: last_checked: 2014-04-27
-#: check_frequency: 360d
+#: next_check: 2015-03-15
 In den Leonorengärten: existiert die Straße schon? Genaue Lage? Qualität?	?::inwork 6315,3974 6527,4089
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131024.1605.390772.html --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013 --- #: XXX fehlt in Berlin.coords.data --- #: next_check: 2014-01-08 (Wirksamkeit der Benennung laut Amtsblatt) --- Schindler-Platz: ist irgendwo hier der Schindler-Platz ausgeschildert?	? 8766,4038 8780,3983
@@ -1461,19 +1462,19 @@ Pfirsichblütenweg: dieser Abschnitt des Wegs am Nordgraben wird umbenannt	? 1125
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036880042216/880042216/00116551/51-Anlagen/02/Anlage1.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 ("Anna-Maria-Müller-Str.")
-#: XXX fehlen alle in Berlin.coords.data, PLZ=13053 vvv
-#: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel"
+#: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel" vvv
 #: last_checked: 2015-02-14 (nur einige unbefestigte Baustraßen) vvv
 #: check_frequency: 100d vvv
-Planstraße 1: Helga-Haase-Straße: genaue Lage, Qualität?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
-Planstraße 2: Jutta-Langenau-Straße: genaue Lage, Qualität?	?::projected 17607,16328 17632,16336 17816,16401 17877,16423
-Planstraße 3: Gerhard-Schulz-Straße: genaue Lage, Qualität?	?::projected 17508,16356 17497,16385 17552,16461
-Fußweg zur Wartenberger Str.: genaue Lage, Qualität?	?::projected 17512,16495 17552,16461
-Planstraße 4: Harry-Glaß-Straße: genaue Lage, Qualität?	?::projected 17552,16461 17603,16415 17611,16396 17632,16336
-Planstraße 5: Joachim-Böhmer-Straße (oder ist das die Erich-Hagen-Straße?): genaue Lage, Qualität?	?::projected 17673,16420 17657,16464 17712,16549
-Planstraße 6: Erich-Hagen-Straße (oder ist das die Joachim-Böhmer-Straße?): genaue Lage, Qualität?	?::projected 17816,16401 17792,16465 17776,16504 17712,16549 17673,16577
-Planstraße 7: Anna-Maria-Müller-Str.: genaue Lage, Qualität?	?::projected 17712,16549 17751,16603
-Fußweg zur Gehrenseestr.: genaue Lage, Qualität?	?::projected 17607,16328 17640,16259
+Helga-Haase-Str.: Planstraße 1, genaue Lage, Qualität?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
+Jutta-Langenau-Str.: Planstraße 2, genaue Lage, Qualität?	?::projected 17607,16328 17632,16336 17816,16401 17877,16423
+Gerhard-Schulz-Str.: Planstraße 3, genaue Lage, Qualität?	?::projected 17508,16356 17497,16385 17552,16461
+(Fußweg zur Wartenberger Str.): genaue Lage, Qualität?	?::projected 17512,16495 17552,16461
+Harry-Glaß-Str.: Planstraße 4, genaue Lage, Qualität?	?::projected 17552,16461 17603,16415 17611,16396 17632,16336
+Joachim-Böhmer-Str.: Planstraße 5 (oder ist das die Erich-Hagen-Str.?), genaue Lage, Qualität?	?::projected 17673,16420 17657,16464 17712,16549
+Erich-Hagen-Str.: Planstraße 6 (oder ist das die Joachim-Böhmer-Str.?), genaue Lage, Qualität?	?::projected 17816,16401 17792,16465 17776,16504 17712,16549 17673,16577
+#: XXX fehlt in Berlin.coords.data, PLZ=13053
+Anna-Maria-Müller-Str.: Planstraße 7, genaue Lage, Qualität?	?::projected 17712,16549 17751,16603
+(Fußweg zur Gehrenseestr.): genaue Lage, Qualität?	?::projected 17607,16328 17640,16259
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1484,7 +1485,6 @@ Fußweg zur Gehrenseestr.: genaue Lage, Qualität?	?::projected 17607,16328 17640,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
-#: XXX fehlt in Berlin.coords.data, PLZ=10367
 #: last_checked: 2015-02-11
 #: check_frequency: 60d
 Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::inwork 15747,12880 15747,12985 15808,12989
@@ -1616,7 +1616,6 @@ Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualitä
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4759
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/___tmp/tmp/45081036146019524/146019524/00061922/22-Anlagen/06/6Bebauungsplan6-22.pdf
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=427621&postcount=91 (Fotos)
-#: XXX fehlt bei Berlin.coords.data: Fünf Morgen|Dahlem|14169
 #: osm_watch: way id="54781804" version="10"
 #: last_checked: 2014-08-07
 Fünf Morgen: wo befindet sich die Straße? Wird es eine Anbindung an den Hüttenweg geben? Qualität?	? 1311,4951 1395,4965 1437,5015 1483,5161
@@ -1878,18 +1877,14 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12988,-1265 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Hausnummern)
 #: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
 #: note: Nibelungenpark vvv
-#: XXX fehlen alle bei Berlin.coords.data vvv
 #: last_checked: 2015-03-15 vvv
 #: check_frequency: 60d vvv
-#: XXX Berlin.coords.data -> Alzeyweg|Lichtenberg|10365
-Alzeyweg: genaue Lage? Qualität? PLZ=10365	? 17376,12422 17368,12365 17359,12302
+Alzeyweg: genaue Lage? Qualität?	? 17376,12422 17368,12365 17359,12302
 #: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse
-#: XXX Berlin.coords.data -> Giselhersteig|Lichtenberg|10365
-Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17359,12451 17437,12443 17536,12425
-Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17432,12413 17437,12443
+Giselhersteig: genaue Lage? Qualität?	? 17359,12451 17437,12443 17536,12425
+Giselhersteig: genaue Lage? Qualität?	? 17432,12413 17437,12443
 #: check_frequency ^^^
 #: last_checked ^^^
-#: XXX ^^^
 #: note ^^^
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5292 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066433/33-Anlagen/02/vzbbvv0509_IV-Benennung_Privatstrasse_Lindensc.pdf --- #: XXX fehlt bei Berlin.coords.data --- #: XXX Privatstraße --- Lindenschwärmerweg: genaue Lage? Qualität? Existiert die Straße schon?	? 21308,11075 21292,11093 21189,11137
@@ -1900,7 +1895,6 @@ Giselhersteig: genaue Lage? Qualität? PLZ=10365	? 17432,12413 17437,12443
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013 (Berichtigung der Lage -> westlich der Waßmannsdorfer Chaussee)
 #: note: Privatstraße
-#: XXX PLZ=12355, fehlt in Berlin.coords.data
 #: XXX nördlicher Teil schon passierbar, aber die endgültige Fahrbahndecke fehlt; südlicher Abschnitt in Bau
 #: XXX culdesac?
 #: last_checked: 2014-06-15
@@ -2012,10 +2006,9 @@ Lindenallee: wo befindet sich die Straße genau?	? -784,16574 -945,16725 -781,167
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2014
 #: osm_watch: way id="51823452" version="1"
 #: XXX Privatstraße
-#: XXX fehlt in Berlin.coords.data, PLZ=13469
 # REMOVED --- : XXX_prog "AEG-Str." sieht nicht schön aus. Ausnahmsweise "AEG-Straße" verwenden? Würde aber programmtechnisch nicht funktionieren... und in den Leitdaten steht auch AEG-Str.
 #: XXX old_name: AEG-Siedlung (bis ca. Anfang 2015)
-AEG-Straße: wo genau liegt die Straße? Ist sie ausgeschildert? Qualität?	? 5860,22676 5944,22755 6023,22667
+AEG-Str.: wo genau liegt die Straße? Ist sie ausgeschildert? Qualität?	? 5860,22676 5944,22755 6023,22667
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/b-plan-9-34-152996.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/entwurf_des_bebauungsplans_9-34__.pdf
@@ -2046,6 +2039,22 @@ Privatstraßen in Lübars	? 6178,22456 6144,22651 5956,22714 5953,22865
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.262920.php
 #: next_check: 2016-03-01 (Fertigstellung im Frühjahr 2016)
 Karower Damm, Treseburger Straße: neues Wohngebiet und Grünanlage entsteht, und neue Wegverbindungen	? 14181,21374 14321,21165
+# 
+#: XXX fehlen in Berlin.coords.data (PLZ vermutlich 12487) vvv
+#: by: http://www.stadtentwicklung.berlin.de/umwelt/umweltatlas/karten/pdf/e07_01_2009_mit_strname.pdf (teilweise)
+#: next_check: 2016-03-01 vvv
+Abramowitschallee: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18169,4159 17898,4434
+Gorissenstr.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 17952,3975 17636,4082
+Henry-Farman-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18734,4077 18670,4013
+Hubert-Latham-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18602,4220 18734,4077 19000,3798
+Pierre-de-Caters-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18455,3958 18548,3964
+#: XXX bei osm eingetragen
+Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18602,4220 18532,4162
+#: next_check ^^^
+#: XXX bei osm schon eingetragen, ist die Straße schon offiziell?
+#: next_check: 2015-03-30
+Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18369,4337 18501,4457
+#: XXX ^^^
 # 
 #: ignore ^^^
 #: section ^^^
@@ -3692,13 +3701,12 @@ Humboldtstr. (Schwanebeck): Qualität des südöstlichen Abschnitts?	? 18190,24368 
 # 
 #: next_check_id: CASSINOHOF-2014
 #: XXX Benennung wahrscheinlich Cassinohof
-#: XXX Berlin.coords.data-Eintrag fehlt: Cassinohof|Zehlendorf|14163
 #: XXX culdesac_pseudo-Eintrag am Urselweg entfernen
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: last_checked: 2014-08-07
 #: check_frequency: 120d
-Cassinohof (?): existiert hier eine Straßenanbindung? Genaue Lage? Qualität? Ausschilderung?	? -802,2914 -779,2924 -713,2954 -818,3031 -824,3016 -779,2924
+Cassinohof: existiert hier eine Straßenanbindung? Genaue Lage? Qualität? Ausschilderung?	? -802,2914 -779,2924 -713,2954 -818,3031 -824,3016 -779,2924
 #: XXX_osm bei osm falsch ("Poetensteg")
 #: XXX Richtung Süden unbefestigt
 Poetensteig (Woltersdorf): nur für Radfahrer/Fußgänger oder auch für Autos? Geht die Straße auch Richtung Norden weiter?	? 32294,6277 32306,6216 32333,6114
