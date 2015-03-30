@@ -2954,14 +2954,13 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
        undef,
        {
          'source_id' => 'IM_019747',
-         'until' => 1427727600,
+         'until' => 1427814000,
          'text' => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende März 2015) ',
          'from' => 1366740818,
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: last_checked: 2015-03-28
-#: check_frequency: 100d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
          'type' => 'handicap'
@@ -3454,16 +3453,7 @@ userdel	2::inwork -3197,11554 -3075,11510
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_023373',
-         'until' => 1442066400,
-         'text' => 'Pichelswerderstr.: Baustelle, Fahrbahn Richtung Ruhlebener Str. zwischen Freiheit und Gewerbehof gesperrt, vom 10.11.2014 bis 12.09.2015',
-         'from' => 1415487600,
-         'id' => 2661,
-         'data' => 'userdel	q4::inwork; -2576,13777 -2669,13488
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3627,8 +3617,9 @@ userdel	q4::inwork; 5018,12322 5133,12240
          'type' => 'handicap'
        },
        {
-         'until' => 1427752800,
-         'text' => 'Pichelswerder Str.: Brücke beschädigt, Straße gesperrt, evtl. vollständig, bis 30.03.2015',
+         'source_id' => 'IM_024458',
+         'until' => 1442066400,
+         'text' => 'Pichelswerder Str.: Brücke beschädigt, Straße gesperrt, evtl. vollständig, bis Mitte September 2015',
          'from' => 1427147207,
          'id' => 2692,
          'data' => 'userdel	2::inwork -2576,13777 -2669,13488

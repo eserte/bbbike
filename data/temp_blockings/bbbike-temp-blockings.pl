@@ -21278,7 +21278,7 @@ userdel	1::inwork -12655,-1714 -12730,-1681 -12758,-1654
 EOF
      },
      { from  => 1366740818, # 2013-04-23 20:13
-       until => 1427727600, # 2015-03-30 17:00
+       until => $isodate2epoch->("2015-03-31 17:00:00"), # 1427727600, # 2015-03-30 17:00
        text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende März 2015) ',
        type  => 'handicap',
        source_id => 'IM_019747',
@@ -21286,7 +21286,6 @@ EOF
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: last_checked: 2015-03-28
-#: check_frequency: 100d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
      },
@@ -23697,7 +23696,7 @@ userdel	q4::inwork 4111,24488 3963,24559 3842,24556
 EOF
      },
      { from  => $isodate2epoch->("2014-11-09 00:00:00"), # 1415401200, # 2014-11-08 00:00
-       until => $isodate2epoch->("2015-09-12 16:00:00"), # 1442354399, # 2015-09-15 23:59
+       until => 1427741681, # -> anderer Eintrag # $isodate2epoch->("2015-09-12 16:00:00"), # 1442354399, # 2015-09-15 23:59
        text  => 'Pichelswerderstr.: Baustelle, Fahrbahn Richtung Ruhlebener Str. zwischen Freiheit und Gewerbehof gesperrt, vom 10.11.2014 bis 12.09.2015',
        type  => 'handicap',
        source_id => 'IM_023373',
@@ -23995,9 +23994,10 @@ userdel	q4::inwork 18615,8269 18528,8331 18461,8377 18391,8425 18322,8470
 EOF
      },
      { from  => 1427147207, # 2015-03-23 22:46
-       until => 1427752800, # 2015-03-31 00:00
-       text  => 'Pichelswerder Str.: Brücke beschädigt, Straße gesperrt, evtl. vollständig, bis 30.03.2015',
+       until => $isodate2epoch->("2015-09-12 16:00:00"), # 1427752800, # 2015-03-31 00:00
+       text  => 'Pichelswerder Str.: Brücke beschädigt, Straße gesperrt, evtl. vollständig, bis Mitte September 2015',
        type  => 'gesperrt',
+       source_id => 'IM_024458',
        data  => <<EOF,
 userdel	2::inwork -2576,13777 -2669,13488
 EOF

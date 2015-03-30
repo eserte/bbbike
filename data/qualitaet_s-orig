@@ -12411,6 +12411,9 @@ Paradiesstr.: sehr guter Asphalt	Q0 21168,212 21250,118 21319,-178 21355,-309
 #: corrected_by: srt (sehr guter Asphalt -> Verbundsteinpflaster) (zumindest am östl. Ende)
 (Am Gartenstadtweg - Paradiesstr.): Verbundsteinpflaster	Q0- 21262,375 21199,309 21168,212
 #: confirmed_by: srt
+#: XXX wird hier die Fahrbahn irgendwann verbessert?
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20150330
+#: next_check: 2015-08-01
 Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21355,-309 21371,-374 21367,-420 21360,-455 21350,-549 21291,-767
 #: by: ^^^
 # 
@@ -12800,8 +12803,9 @@ Neukirchstr.: loser Sandweg	Q2 12885,18329 12751,18401
 #: corrected_by: srt (Q2 -> Q3)
 #: XXX Asphaltierung ist geplant
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3249 (kein Termin für Asphaltierung)
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.288001.php (Bauarbeiten ab April bis Ende Juli 2015)
 #: last_checked: 2014-12-13
-#: check_frequency: 100d
+#: next_check: 2015-07-31
 Neukirchstr.: schlechtes Kopfsteinpflaster	Q3 12751,18401 12681,18431 12609,18470 12548,18503
 #: note: ^^^
 #: by: ^^^
@@ -15939,7 +15943,8 @@ Karmeliterweg: Kleinpflastersteine	Q2 1458,24561 1634,24527 1742,24526
 Karmeliterweg: Kleinpflastersteine	Q2 1868,24633 1924,24672 2003,24702 2120,24740 2174,24783
 #: XXX nach der Sanierung bessere Qualität?
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php
-#: next_check: 2014-12-19
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330 (Bauende: 30. April 2015)
+#: next_check: 2015-04-30
 Karmeliterweg: Kleinpflastersteine	Q2 2174,24783 2222,24884 2245,25016
 #: corrected_by: ^^^
 #: corrected_by: Wolfhard Schleese (guter Asphalt Q0 -> schlechter Asphalt, policy: Q2)
