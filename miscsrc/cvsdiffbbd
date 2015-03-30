@@ -95,12 +95,16 @@ my $flush = sub {
 	    if ($name =~ m{^#}) {
 		print $name, "\n";
 	    } else {
-		if ($add_file_label) {
-		    print "$current_base: ";
-		} elsif ($add_fixed_label) {
-		    print $add_fixed_label;
+		if ($coords eq '') {
+		    # may happen if e.g. just a directive changed, but not the line itself
+		} else {
+		    if ($add_file_label) {
+			print "$current_base: ";
+		    } elsif ($add_fixed_label) {
+			print $add_fixed_label;
+		    }
+		    print "$name\t$cat $coords\n";
 		}
-		print "$name\t$cat $coords\n";
 	    }
 	}
     }

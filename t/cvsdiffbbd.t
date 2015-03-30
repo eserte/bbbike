@@ -169,4 +169,26 @@ EOF
     }
 }
 
+{
+    my $test_diff = <<'EOF';
+diff --git a/data/handicap_s b/data/handicap_s
+index 5beeb6b..d56078f 100644
+--- a/data/handicap_s-orig
++++ b/data/handicap_s-orig
+@@ -1066,7 +1073,8 @@ Zimmermannstr.: Fu
+ #: note: Bordstein am Wendehammer ist an zwei Stellen abgesenkt (aber nicht direkt am Scheitel)
+ Deitmerstr.: Fußgänger	q3 5078,5889 5048,5904
+ Friedrichsruher Platz: Fußgänger, eng	q2 5942,5775 5935,5874
+-Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q1 6878,5946 6895,5873
++#: note: Bordstein am Wendehammer, ansonsten q1 oder q2
++Riemenschneiderweg: gemeinsamer Rad- und Gehweg, eng	q3 6878,5946 6895,5873
+ #: XXX_prog: für Anhänger q2 oder q3
+ Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
+ (Plauener Str. - Küllstedter Str.): Fußgänger	q2 17352,14827 17363,14760
+EOF
+    my $out;
+    ok run([$^X, $cvsdiffbbd, '--diff-file=-'], '<', \$test_diff, '>', \$out);
+    eq_or_diff $out, "# File: data/handicap_s\n", 'empty diff';
+}
+
 __END__
