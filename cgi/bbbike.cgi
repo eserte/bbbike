@@ -2148,7 +2148,7 @@ EOF
 		    print qq{<i>$strasse</i><br>\n};
 		}
 		print M("Die nächste") . " " . ($report_nearest ? M("bekannte") . " " : "") . M("Kreuzung ist") . qq{:<br>\n};
-		print "<i>$cr</i>";
+		print '<i>' . coord_or_stadtplan_link($cr, defined $best ? $best : $xy, $plz) . '</i>';
 		if ($report_nearest) {
 		    print qq{<br>\n} . M("und wird für die Suche verwendet") . ".";
 		}
