@@ -1900,8 +1900,8 @@ Pätz (Groß Köriser Str.): Asphalt	Q0 28540,-19744 28615,-19431
 Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12271
 # REMOVED (by rjoop: "Grundstück wurde abgetrennt") --- Postenweg Schönefeld: guter Beton	Q0 17234,-685 17013,-745
 Postenweg Schönefeld: guter Beton	Q0 17013,-745 16205,-969 15796,-1112 15801,-1168
-Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15933,-1592 15289,-2873
-Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0-; 15289,-2873 15933,-1592 16074,-1240 16205,-969
+Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15819,-1886 15782,-1953 15289,-2873
+Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0-; 15289,-2873 15782,-1953 15819,-1886 16074,-1240 16205,-969
 Rudower Str.: Asphalt	Q0 15289,-2873 14977,-3505 14878,-3602
 # REMOVED (del wegen BBI) --- Selchow - Kiekebusch: zweispuriger Plattenweg, teilweise mit kleinen tiefen Löchern	Q1 15493,-4693 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18693,-5516
 # REMOVED (del wegen BBI) --- Diepensee - Rotberg: Asphalt	Q0 18618,-4248 18411,-5428 18365,-5657
@@ -3301,7 +3301,7 @@ Dorfstr. (Schönefeld): Kopfsteinpflaster	Q1- 17402,-1649 17549,-1722 17574,-1753
 #: by: osm + rj
 Umgehungsstraße: Asphalt, etwas löchrig	Q1+ 17549,-1722 17890,-1445 17911,-1427 18281,-1132 18444,-996
 #: by: osm + rj
-Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 17222,-2099 17234,-2052 17100,-1852 17079,-1691 17102,-1553 17215,-1403 17344,-1351 17746,-1288 17872,-1270 18189,-1023 18423,-843
+Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 17222,-2099 17234,-2052 17167,-1981 17096,-1850 17094,-1840 17079,-1691 17102,-1553 17215,-1403 17344,-1351 17746,-1288 17872,-1270 18189,-1023 18423,-843
 #: by: osm + rj
 #: XXX ... und teilweise wohl betoniert
 (Hans-Grade-Allee - Umgehungsstraße): teilweise wassergebundene Decke	Q1 17746,-1288 17766,-1316 17825,-1318 17911,-1427
@@ -4135,6 +4135,8 @@ Pestalozzistr.: Asphalt	Q0 -9653,-2100 -9720,-2317 -9754,-2424 -9759,-2438
 #: by: ^^^
 # 
 #: by: rjoop: vvv
+(Hans-Grade-Allee - Dorfstr.): wassergebundene Decke	Q1 17094,-1840 17207,-1793 17297,-1772 17446,-1730 17484,-1709 17537,-1728 17549,-1722
+(Rudower Str. - Hans-Grade-Allee): Asphalt	Q0 15782,-1953 15894,-1981 16014,-1978 16120,-1986 16271,-2027 16354,-2018 16455,-1966 16517,-1954 16563,-1943 16668,-1956 16810,-1927 16840,-1897 16891,-1905 16977,-1870 17094,-1840
 Am Finowkanal: Asphalt	Q0 24618,48656 24202,48591
 Am Finowkanal: Waldweg	Q1 24202,48591 23668,48638
 Marienwerder, am Finowkanal: Asphalt	Q0 22566,48180 22276,48270 22047,48243 21685,48291 21428,48276 20965,48351

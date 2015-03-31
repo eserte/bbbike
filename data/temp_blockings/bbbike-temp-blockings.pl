@@ -21278,8 +21278,8 @@ userdel	1::inwork -12655,-1714 -12730,-1681 -12758,-1654
 EOF
      },
      { from  => 1366740818, # 2013-04-23 20:13
-       until => $isodate2epoch->("2015-03-31 17:00:00"), # 1427727600, # 2015-03-30 17:00
-       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende März 2015) ',
+       until => $isodate2epoch->("2015-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
+       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende April 2015) ',
        type  => 'handicap',
        source_id => 'IM_019747',
        data  => <<EOF,
@@ -23999,6 +23999,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_024458',
        data  => <<EOF,
+#: note: laut fritz nur bis Anfang Juli 2015 gesperrt
 userdel	2::inwork -2576,13777 -2669,13488
 EOF
      },

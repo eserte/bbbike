@@ -2954,8 +2954,8 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
        undef,
        {
          'source_id' => 'IM_019747',
-         'until' => 1427814000,
-         'text' => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende März 2015) ',
+         'until' => 1429714800,
+         'text' => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende April 2015) ',
          'from' => 1366740818,
          'id' => 2422,
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
@@ -3646,7 +3646,8 @@ userdel	q4::inwork; 5018,12322 5133,12240
          'text' => 'Pichelswerder Str.: Brücke beschädigt, Straße gesperrt, evtl. vollständig, bis Mitte September 2015',
          'from' => 1427147207,
          'id' => 2692,
-         'data' => 'userdel	2::inwork -2576,13777 -2669,13488
+         'data' => '#: note: laut fritz nur bis Anfang Juli 2015 gesperrt
+userdel	2::inwork -2576,13777 -2669,13488
 ',
          'type' => 'gesperrt'
        },

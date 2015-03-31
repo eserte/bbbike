@@ -1705,8 +1705,8 @@ Pätz (Groß Köriser Str.): Verbundsteinpflaster	Q1 28540,-19744 28514,-20071 2850
 Pätz (Groß Köriser Str.): Asphalt	Q0 28540,-19744 28615,-19431
 Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12271
 Postenweg Schönefeld: guter Beton	Q0 17013,-745 16205,-969 15796,-1112 15801,-1168
-Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15933,-1592 15289,-2873
-Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0; 15289,-2873 15933,-1592 16074,-1240 16205,-969
+Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15819,-1886 15782,-1953 15289,-2873
+Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0; 15289,-2873 15782,-1953 15819,-1886 16074,-1240 16205,-969
 Rudower Str.: Asphalt	Q0 15289,-2873 14977,-3505 14878,-3602
 BBI - Rotberg: Asphalt	Q0 18365,-5657 18301,-6019 18037,-6627 18005,-6959
 Rotberg: Kopfsteinpflaster, einzelne Asphaltflicken	Q2 17910,-6981 18005,-6959 18537,-6829
@@ -3000,7 +3000,7 @@ Am Alten Markt: Gehwegplatten	Q1 -12747,-1336 -12727,-1416 -12694,-1408 -12685,-
 Dorfstr. (Schönefeld): Kopfsteinpflaster	Q2 17388,-1633 17402,-1649
 Dorfstr. (Schönefeld): Kopfsteinpflaster	Q1 17402,-1649 17549,-1722 17574,-1753 17602,-1803
 Umgehungsstraße: Asphalt, etwas löchrig	Q1 17549,-1722 17890,-1445 17911,-1427 18281,-1132 18444,-996
-Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 17222,-2099 17234,-2052 17100,-1852 17079,-1691 17102,-1553 17215,-1403 17344,-1351 17746,-1288 17872,-1270 18189,-1023 18423,-843
+Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 17222,-2099 17234,-2052 17167,-1981 17096,-1850 17094,-1840 17079,-1691 17102,-1553 17215,-1403 17344,-1351 17746,-1288 17872,-1270 18189,-1023 18423,-843
 (Hans-Grade-Allee - Umgehungsstraße): teilweise wassergebundene Decke	Q1 17746,-1288 17766,-1316 17825,-1318 17911,-1427
 Verbindungsweg (Schwanebeck): unbefestigte Straße	Q2 17565,24441 17350,24699
 Rosa-Luxemburg-Str. (Schwanebeck): Asphalt	Q0 17671,24528 17871,24303
@@ -3574,6 +3574,8 @@ Benzstr.: Asphalt	Q0 -9734,-1896 -9976,-1935 -10350,-1997
 Benzstr.: Asphalt	Q1 -10350,-1997 -10467,-2018
 Schulstr.: Asphalt	Q1 -10467,-2018 -10633,-2086
 Pestalozzistr.: Asphalt	Q0 -9653,-2100 -9720,-2317 -9754,-2424 -9759,-2438
+(Hans-Grade-Allee - Dorfstr.): wassergebundene Decke	Q1 17094,-1840 17207,-1793 17297,-1772 17446,-1730 17484,-1709 17537,-1728 17549,-1722
+(Rudower Str. - Hans-Grade-Allee): Asphalt	Q0 15782,-1953 15894,-1981 16014,-1978 16120,-1986 16271,-2027 16354,-2018 16455,-1966 16517,-1954 16563,-1943 16668,-1956 16810,-1927 16840,-1897 16891,-1905 16977,-1870 17094,-1840
 Am Finowkanal: Asphalt	Q0 24618,48656 24202,48591
 Am Finowkanal: Waldweg	Q1 24202,48591 23668,48638
 Marienwerder, am Finowkanal: Asphalt	Q0 22566,48180 22276,48270 22047,48243 21685,48291 21428,48276 20965,48351
