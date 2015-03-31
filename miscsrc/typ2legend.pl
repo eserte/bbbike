@@ -18,12 +18,6 @@ use Typ2Legend::XPM;
 
 use BBBikeUtil qw(is_in_path);
 
-BEGIN {
-    if (!is_in_path('convert')) {
-	die "Cannot find 'convert' tool, did you install the 'imagemagick' package?\n";
-    }
-}
-
 sub usage (;$);
 
 my $output_dir;
@@ -33,6 +27,7 @@ my @keep;
 my $title;
 my $encoding = 'utf-8';
 my $debug_parser;
+my $xpm2png_converter;
 GetOptions("o=s"       => \$output_dir,
 	   "f"         => \$force,
 	   'ignore=s@' => sub { push @ignore, split /,/, $_[1] },
@@ -40,9 +35,46 @@ GetOptions("o=s"       => \$output_dir,
 	   'encoding=s' => \$encoding,
 	   'title=s'   => \$title,
 	   'debug-parser' => \$debug_parser,
+	   'xpm2png-converter=s' => \$xpm2png_converter,
 	  )
     or usage;
 $output_dir or usage "-o is mandatory";
+
+my $in_file = shift;
+@ARGV and usage;
+
+if (defined $xpm2png_converter) {
+    if ($xpm2png_converter eq 'Imager::Image::Xpm') {
+	require Imager::Image::Xpm;
+    } elsif ($xpm2png_converter eq 'convert') {
+	is_in_path('convert')
+	    or die "'convert' is not available";
+    } else {
+	die "Unknown --xpm2png-converter, please use either 'Imager::Image::Xpm' or 'convert'";
+    }
+} else {
+    if ($^O ne 'MSWin32' # there's an unrelated tool named "convert" under Windows
+	&& is_in_path('convert')
+       ) {
+	$xpm2png_converter = 'convert';
+    } elsif (eval { require Imager::Image::Xpm; 1 }) {
+	$xpm2png_converter = 'Imager::Image::Xpm';
+    } else {
+	die <<EOF;
+Cannot find either the 'convert' tool from the 'imagemagick' package,
+mode:perl;coding:iso-8859-1or the CPAN module Imager::Image::Xpm,
+cannot proceed...
+EOF
+    }
+}
+
+my $ifh;
+if (defined $in_file) {
+    open $ifh, '<', $in_file
+	or die "Can't open $in_file: $!";
+} else {
+    $ifh = \*STDIN;
+}
 
 my %ignore;
 my %keep;
@@ -71,14 +103,14 @@ my @items;
     my $finalize_xpm_object = sub {
 	if ($item->{ItemType} eq 'point') {
 	    Typ2Legend::XPM::_perform_alpha_hack(\@parse_xpm_lines);
-	    $item->{$current_xpm_key} = join("\n", @parse_xpm_lines);
+	    $item->{$current_xpm_key} = join("\n", '/* XPM */', 'static char *image[] = {', @parse_xpm_lines);
 	} else {
 	    $item->{$current_xpm_key . "_object"} = Typ2Legend::XPM->new(\@parse_xpm_lines);
 	}
 	$do_parse_xpm = 0;
 	@parse_xpm_lines = ();
     };
-    while(<>) {
+    while(<$ifh>) {
 	s{\r}{};
 	if ($debug_parser) {
 	    if ($item && $item ne $debug_last_item) {
@@ -226,8 +258,8 @@ EOF
 		my $xpm_data = $item->{$xpm_type};
 		print $tmpfh $xpm_data;
 		close $tmpfh or die $!;
-		system("convert", "-gamma", "2.2", $tmpfile, $out_image); # XXX why is setting the gamma value necessary? (seen with ImageMagick 6.8.0-7 on freebsd 9.2) --- and still 2.2 is not correct
-		$? == 0 or die "Failure while converting $tmpfile to $out_image using ImageMagick, item " . _item_name($item) . ', xpm: ' . $item->{$xpm_type};
+		xpm2png($tmpfile, $out_image)
+		    or die "Failure while converting $tmpfile to $out_image, item " . _item_name($item) . ', xpm: ' . $item->{$xpm_type};
 		unlink $tmpfile;
 		(my $png_type = $xpm_type) =~ s{XPM}{PNG};
 		$item->{$png_type} = basename $out_image;
@@ -275,6 +307,21 @@ sub _item_name {
 sub _item_id {
     my $item = shift;
     $item->{ItemType} . "/" . $item->{Type} . ($item->{SubType} ? "/" . $item->{SubType} : "");
+}
+
+sub xpm2png {
+    my($xpm_file, $png_file) = @_;
+    if ($xpm2png_converter eq 'convert') {
+	system("convert", "-gamma", "2.2", $xpm_file, $png_file); # XXX why is setting the gamma value necessary? (seen with ImageMagick 6.8.0-7 on freebsd 9.2) --- and still 2.2 is not correct
+	return($? == 0 ? 1 : 0);
+    } else {
+	if (!eval { Imager::Image::Xpm->new(file => $xpm_file)->write(file => $png_file, type => 'png'); 1 }) {
+	    warn "Conversion failed: $@";
+	    0;
+	} else {
+	    1;
+	}
+    }
 }
 
 sub usage (;$) {
