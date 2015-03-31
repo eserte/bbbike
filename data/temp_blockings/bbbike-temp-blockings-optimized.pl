@@ -3241,7 +3241,31 @@ userdel	q3::inwork; 13555,15596 13459,15653
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
+         'data' => 'userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+userdel	2::inwork 8573,12325 8540,12420
+userdel	2::inwork 8303,12216 8344,12221 8538,12245 8610,12254
+userdel	2::inwork 8089,12190 8214,12205
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'periodic' => 1,
+         'until' => 1430524800,
+         'from' => 1430172000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2015',
+         'id' => 2565,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,

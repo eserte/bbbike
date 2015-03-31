@@ -22757,13 +22757,13 @@ EOF
 userdel	2::inwork 48229,74776 48296,74641
 EOF
      },
-     { from  => 1398636000, # 2014-04-28 00:00
-       until => 1398988800, # 2014-05-02 02:00
+     { from  => $isodate2epoch->("2015-04-28 00:00:00"), # 1398636000, # 2014-04-28 00:00
+       until => $isodate2epoch->("2015-05-02 02:00:00"), # 1398988800, # 2014-05-02 02:00
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4]],
-       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2014',
+       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2015',
        type  => 'gesperrt',
-       source_id => 'IM_021803',
+       source_id => 'http://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
        data  => <<EOF,
 userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 userdel	2::inwork 8573,12325 8540,12420
