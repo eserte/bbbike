@@ -20,7 +20,7 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-03-28 vvv
+#: last_checked: 2015-04-01 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -65,7 +65,7 @@ Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 119
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX nach den Bauarbeiten bleiben wohl "einige Fuﬂg‰nger" ¸brig, dann nur mit q1
-#: last_checked: 2015-03-27
+#: last_checked: 2015-04-01
 Linienstr.: einige Fuﬂg‰nger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2015-03-24
@@ -106,7 +106,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED --- Charlottenstr.: Bauarbeiten, Radfahrer kˆnnen passieren	q2::inwork; 9475,12365 9489,12263
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2015-03-21 vvv
+#: last_checked: 2015-04-01 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -144,7 +144,7 @@ Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 1
 Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10567,14337 10530,14452
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2015-03-27 vvv
+#: last_checked: 2015-04-01 vvv
 #: next_check: 2015-05-31 vvv
 #: priority: #A vvv
 #: source_id: IM_017330
@@ -164,6 +164,13 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaeli
 #: next_check ^^^
 #: last_checked: ^^^
 #: next_check_id ^^^
+# 
+#: XXX Einbahnstraﬂenregelung danach wieder aufheben!
+#: source_id: IM_024549
+#: last_checked: 2015-04-01
+#: next_check: 2015-08-15
+#: priority: #A
+Zinnowitzer Str.: Einbahnstraﬂenregelung zwischen Chausseestr. und Am Nordbahnhof, gesperrt Richtung Osten, bis 15. August 2015	q4::inwork; 8870,13926 9011,14019
 # 
 # REMOVED (-> temp_blockings) --- #: source_id: IM_021585 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html (planm‰ﬂige Fertigstellung) --- #: XXX nach den Bauarbeiten wird es hier einen Radfahrstreifen geben --- #: note: man kann auch auf den Tramgleisen fahren, deshalb nur noch q2 --- #: last_checked: 2015-03-27 --- #: next_check: 2015-04-01 --- #: priority: #A --- Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessische Str.: teilweise noch Bauarbeiten auf der Fahrbahn, auf Gehweg umfahren	q2::inwork; 8935,13844 8842,13798
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraﬂe, Zugang f¸r Fuﬂg‰nger und schiebende Radfahrer mˆglich	q3::inwork 8426,13909 8574,13666
@@ -215,7 +222,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-03-27
+#: last_checked: 2015-04-01
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -2053,7 +2060,7 @@ zur M¸ller-Breslau-Str.: flache Rampe	q2 5756,11618 5725,11644
 Urselweg: flache Bordsteinkante	q1 -802,2914 -775,2854 -783,2837
 (Hampstedtstr. - Schneckenbr¸cke): einige Fuﬂg‰nger	q1 1641,2914 1642,2937 1575,3054 1557,3086 1682,3168 1689,3189 1755,3229 1802,3235
 Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
-(Warener Str. - Unfallkrankenhaus Berlin): Krankenhausgel‰nde, Fuﬂg‰nger	q4 21388,12785 21401,12773 21520,12741
+(Warener Str. - Unfallkrankenhaus Berlin): Krankenhausgel‰nde, Fuﬂg‰nger	q3- 21388,12785 21401,12773 21520,12741
 (Altentreptower Str. - Unfallkrankenhaus Berlin): Fuﬂg‰nger	q1 21400,12135 21401,12155 21403,12230 21435,12390 21477,12584 21489,12608 21520,12741
 #: note: wahrscheinlich nur an schˆnen Sommertagen
 (zum Freibad Plˆtzensee): Fuﬂg‰nger	q3 5321,14978 5323,15030 5310,15089 5252,15182

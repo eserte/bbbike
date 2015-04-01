@@ -2554,7 +2554,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2015-03-27 vvv
+#: last_checked: 2015-04-01 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2594,7 +2594,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX ^^^
 # 
 #: XXX wird die Ampel hier nach Öffnung der Chausseestr. aufgehoben?
-#: next_check: 2015-04-01
+#: last_checked: 2015-04-01
+#: check_frequency: 14d
 	X::inwork 8775,13606
 # REMOVED (Antwort: wahrscheinlich ja) --- #: XXX ist diese Ampel permanent?
 	X 8450,13599

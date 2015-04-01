@@ -53,7 +53,34 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.myfest36.de/
+userdel	2::temp 11763,10635 11722,10533 11949,10414
+userdel	2::temp 11556,10869 11770,10774 11760,10732 11781,10696 11763,10635 11505,10744 11556,10869 11589,10947 11640,11067
+userdel	2::temp 11958,11045 11897,10887 11841,10747 11824,10708 11781,10696
+userdel	2::temp 11805,10899 11803,10857
+userdel	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11722,10533
+userdel	2::temp 11841,10747 11770,10774 11799,10848
+userdel	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
+userdel auto	3 11258,10682 11275,10723 11253,10778
+userdel auto	3 11253,10778 11275,10723 11258,10682
+',
+         'periodic' => 1,
+         'until' => 1430517599,
+         'from' => 1430388000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'MyFest: Oranienstraﬂe, Mariannenplatz und umliegende Straﬂen kˆnnen schwer passierbar sein, 1. Mai 2015',
+         'type' => 'gesperrt',
+         'id' => 45
+       },
        undef,
        undef,
        undef,
@@ -2355,7 +2382,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geˆffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tags¸ber mˆglich (im M‰rz von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Gel‰ndes nach Sonnenuntergang ist f¸r Tandems und Anh‰nger schwierig oder gar nicht mˆglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tags¸ber mˆglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Gel‰ndes nach Sonnenuntergang ist f¸r Tandems und Anh‰nger schwierig oder gar nicht mˆglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -3446,16 +3473,7 @@ userdel	2::inwork -3197,11554 -3075,11510
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_023111',
-         'until' => 1427896800,
-         'text' => 'Gartenstr.: Baustelle vor der Invalidenstr., Fahrbahn in Richtung S¸den gesperrt, 06.10.2014 06:00 Uhr bis 01.04.2015 16:00 Uhr',
-         'from' => 1412481600,
-         'id' => 2648,
-         'data' => 'userdel	q2::inwork; 9224,14169 9383,13986
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3492,7 +3510,7 @@ userdel	2::inwork -3197,11554 -3075,11510
          'text' => 'Kronenstr.: Einbahnstraﬂenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
          'from' => undef,
          'id' => 2671,
-         'data' => '#: last_checked: 2015-03-13
+         'data' => '#: last_checked: 2015-04-01
 userdel	q4::inwork; 9559,11715 9692,11732
 ',
          'type' => 'handicap'
@@ -3651,28 +3669,8 @@ userdel	2::inwork -2576,13777 -2669,13488
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html',
-         'until' => 1427925600,
-         'text' => 'Chausseestr. und Invalidenstr.: Sperrung der Fahrbahn wegen Bauarbeiten bis zum 01.04.2015',
-         'from' => 1427484862,
-         'id' => 2693,
-         'data' => 'userdel	q3::inwork 8870,13926 8935,13844
-userdel	q2::inwork; 8935,13844 8842,13798
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1438380000,
-         'text' => 'Zinnowitzer Str.: Einbahnstraﬂenregelung zwischen Chausseestr. und Am Nordbahnhof, gesperrt Richtung Osten, ab 01.04.2015',
-         'from' => 1427752800,
-         'id' => 2694,
-         'data' => '#: XXX wann wird die Einbahnstraﬂenregelung aufgehoben?
-#: next_check: 2015-07-23
-userdel	q4::inwork; 8870,13926 9011,14019
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => undef,
          'text' => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraﬂenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
