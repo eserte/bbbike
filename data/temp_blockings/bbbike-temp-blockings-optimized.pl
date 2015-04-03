@@ -3650,8 +3650,8 @@ userdel	q4::inwork; 5018,12322 5133,12240
        undef,
        {
          'source_id' => 'IM_024429',
-         'until' => 1428199200,
-         'text' => 'Ehrlichstr.: zwischen Lehndorffstr. und Eginhardstr. Bauarbeiten, Fahrbahn gesperrt, 21.03.2015 04:30 Uhr bis 05.04.2015 04:00 Uhr',
+         'until' => 1428890400,
+         'text' => 'Ehrlichstr.: zwischen Lehndorffstr. und Eginhardstr. Bauarbeiten, Fahrbahn gesperrt, 21.03.2015 04:30 Uhr bis 13.04.2015 04:00 Uhr',
          'from' => 1426822200,
          'id' => 2691,
          'data' => 'userdel	q4::inwork 18615,8269 18528,8331 18461,8377 18391,8425 18322,8470
