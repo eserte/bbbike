@@ -763,10 +763,49 @@ userdel auto	3 11253,10778 11275,10723 11258,10682
        undef,
        undef,
        undef,
+       {
+         'source_id' => 'http://www.ms-event-agentur.com/primavera%202013.html',
+         'data' => 'userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9282
+userdel	2::temp 6945,9142 7044,9163
+',
+         'periodic' => 1,
+         'until' => 1430690399,
+         'from' => 1430431200,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              1
+                            ]
+                          ],
+         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (2.5.2015 und 3.5.2015)',
+         'id' => 728,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20150404
+userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
+',
+         'periodic' => 1,
+         'until' => 1443995999,
+         'from' => 1443823200,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              5,
+                              'months',
+                              10
+                            ]
+                          ],
+         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 3. und 4.10.2015',
+         'type' => 'gesperrt',
+         'id' => 731
+       },
        undef,
        undef,
        undef,
@@ -2997,7 +3036,26 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.ms-event-agentur.com/seite18.html',
+         'data' => 'userdel	2::temp 6244,8597 6339,8644 6454,8653
+',
+         'periodic' => 1,
+         'until' => 1431280800,
+         'from' => 1431075600,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Schöneberger Mai- und Spargelfest am 9. und 10. Mai 2015 in der Freiherr-vom-Stein-Straße',
+         'id' => 2428,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3341,8 +3399,7 @@ userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
          'text' => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis 16.06.2015',
          'from' => 1426057200,
          'id' => 2587,
-         'data' => '#: XXX eventuell für Radfahrer nur an der Wilhelminenhofstraße gesperrt, ab Wattstr. vielleicht schon offen
-userdel	q4::inwork; 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
+         'data' => 'userdel	q4::inwork; 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 ',
          'type' => 'handicap'
        },

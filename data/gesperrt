@@ -803,6 +803,7 @@ Gretel-Bergmann-Weg	1s -1132,12268 -1288,12178
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
 Kriemhildstr.	1s 17300,12173 17314,12265
+Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1478,7 +1479,10 @@ Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,90
 Straßenbahntrasse	3nocross::ignrte 18010,7133 18086,7243 18165,7371
 Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18165,7371 18086,7243 18186,7200
 Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18010,7133
-Straßenbahntrasse	3nocross::ignrte 18406,7760 18570,8025 18657,8163
+Straßenbahntrasse	3nocross::ignrte 18406,7760 18577,8033 18633,8126 18657,8163
+Traberweg -> Treskowallee: Straßenbahntrasse	3::igndisp 18567,8041 18577,8033 18633,8126
+Treskowallee -> Weg an der Trabrennbahn: Straßenbahntrasse	3::igndisp 18657,8163 18633,8126 18650,8111
+Weg an der Trabrennbahn -> Treskowallee: Straßenbahntrasse	3::igndisp 18650,8111 18633,8126 18577,8033
 Straßenbahntrasse	3nocross::ignrte 18878,9517 18867,9464 18834,9256 18809,9133
 Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18878,9517 18867,9464 18916,9468
 Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
@@ -2002,12 +2006,12 @@ Neuzeller Weg -> Hansastr.: Straßenbahntrasse	3::igndisp 16658,17142 16578,17285
 Mittelstreifen	3nocross::ignrte 18930,3703 18884,3752 18856,3783 18826,3816
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18884,3752 18856,3783
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18856,3783 18826,3816
-Mittelstreifen	3nocross::ignrte 18826,3816 18773,3873 18541,4125
-Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18701,3806 18773,3873 18541,4125
-Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18826,3816 18773,3873 18701,3806
+Mittelstreifen	3nocross::ignrte 18826,3816 18779,3866 18541,4125
+Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18702,3790 18779,3866 18541,4125
+Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18826,3816 18779,3866 18702,3790
 Mittelstreifen	3nocross::ignrte 18541,4125 18374,4307 18239,4453
-Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18208,4151 18374,4307 18239,4453
-Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18541,4125 18374,4307 18208,4151
+Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18228,4168 18374,4307 18239,4453
+Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18541,4125 18374,4307 18228,4168
 Mittelstreifen	3nocross::ignrte 18930,3703 19029,3595 19125,3491
 Groß-Berliner Damm -> Konrad-Zuse-Str.: Mittelstreifen	3::igndisp 19125,3491 19029,3595 18943,3508
 Konrad-Zuse-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18943,3508 19029,3595 18930,3703
@@ -2688,7 +2692,7 @@ Drängelgitter (lichte Breite ca. 80cm)	BNP:8:-151:trailer=no 6526,21015
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8:-139:trailer=no 6548,21041
 Drängelgitter/Schranke	BNP:5:-180 10012,5210
 Schranke	BNP:5:-102 12571,7899
-halbes Drängelgitter	BNP:2:34:trailer=4 14453,9929
+Drängelgitter	BNP:5:34:trailer=10 14453,9929
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:39:trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:41:trailer=4 14597,10129
 Drängelgitter	BNP:3:-153:trailer=15 12901,10134
@@ -2789,7 +2793,6 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s 9996,12401 9994,12368 9943,12364 9961,12273
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
-Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,3422
 tragen (2 Stufen)	0:5:57 8818,13365
 Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9858,12410
@@ -3354,6 +3357,8 @@ An den Kanalwiesen (Wendisch Rietz)	1 51857,-20420 51900,-20326 51916,-20240
 Kreuzung Sewanstr./Am Tierpark	1::igndisp 18647,10172 18631,10167
 Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
 Treskowallee, linker Gehweg	1::igndisp 18748,9922 18715,10003
+Treskowallee, linker Gehweg	1::igndisp 18676,8236 18642,8169 18567,8041
+Treskowallee, linker Gehweg	1::igndisp 18406,7760 18650,8111
 Kreuzung Gregoroviusweg/Treskowallee	1::igndisp 18742,9903 18748,9922
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18216,11656 18520,11685 18624,11712 18778,11742 19005,11767 19735,11721
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18624,11712 18626,11742

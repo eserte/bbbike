@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-03-28 vvv
+#: last_checked: 2015-04-04 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -299,7 +299,8 @@ Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
 # REMOVED (keine Behinderungen mehr) --- #: next_check_id: HAUPTBUCHT-2014 --- #: last_checked: 2014-10-05 (Absperrgitter existieren noch, werden aber oft von Fußgängern weggeschoben) (deshalb nur q3) --- #: check_frequency: 60d --- (Rummelsburger Ufer - Hauptstr.): Bauarbeiten, ggfs. Umweg über Norma-Parkplatz notwendig	q3::inwork 15249,10564 15307,10701
 # REMOVED (anscheinend schon beendet) --- #: last_checked: 2014-05-06 --- #: next_check: 2014-05-31 (Bauarbeiten bis Mai 2014) --- #: valid: -20140531 --- Archibaldweg: Bauarbeiten zwischen Leopoldstr. und Rupprechtstr. Richtung Nordosten	q3::inwork; 15950,10987 16034,11053
 # 
-#: last_checked: 2015-03-09
+#: osm_watch: way id="198589919" version="2"
+#: last_checked: 2015-04-04
 #: check_frequency: 30d
 Stadthausstr.: Bauarbeiten, Einbahnstraße, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
 # 
@@ -1070,7 +1071,7 @@ Lemgoer Str.: Fußgänger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
 (Allmersweg - Groß-Berliner Damm): Fußgänger, Bordsteine	q3 17789,5189 17726,5166
 #: XXX_prog: für Anhänger q3
-Sportfliegerstr.: drei Bodenschwellen, nicht umfahrbar	q2 18157,4742 18343,4545
+Sportfliegerstr.: vier Bodenschwellen, nicht umfahrbar	q2 18157,4742 18341,4543
 Karl-Otto-Reinsch-Str.: Fußgänger	q1 19603,3207 19524,3286
 Brook-Taylor-Str.: Fußgängerzone	q1 19146,2975 19101,3028 19015,3129
 Alexander-von-Humboldt-Weg: Fußgängerzone	q1 19015,3129 18892,3256
@@ -2135,6 +2136,7 @@ Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
 Kelheimer Str.: einige Fußgänger	q2 5894,10287 5898,10318
 #: XXX_prog BS am Wendehammer, ansonsten q2
 Würzburger Str.: einige Fußgänger, Bordstein	q3 5898,10318 5907,10347
+Wilhelm-Hoff-Str.: einige Fußgänger, kurvig	q1 19057,3422 19033,3397
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

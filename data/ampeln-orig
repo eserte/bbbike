@@ -1841,7 +1841,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: off: night (seen 2014-10-29 23:30)
 	X 15681,10801
 # REMOVED (seit 1.7.2004 gesperrt) ---	B 801,13323
-	X 21089,4731
+	X 21108,4725
 	X 21002,5755
 #: by: bln.verkehr <aslaen$q7k$07$1@news.t-online.com>
 	F 5413,2436
@@ -2421,6 +2421,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 20451,2869
 	X 20289,3033
 #: note: provisorische Ampel
+#: osm_watch: node id="3366620137" version="2"
 #: last_checked: 2014-06-09
 #: check_frequency: 120d
 	F::inwork 20010,3340
@@ -2430,7 +2431,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 15356,3759
 # REMOVED --- #: next_check_id: KARLSHORSTER-2014 vvv --- #: last_checked: 2014-10-10 vvv --- #: next_check: 2014-10-20 vvv --- #: note: provisorische Ampel --- #: valid: 20140630-20141022 vvv --- ---	X::inwork 14805,10518
 #: XXX bleibt die Ampel permanent?
-#: last_checked: 2015-03-08
+#: last_checked: 2015-04-04
 #: check_frequency: 30d
 	X::inwork 14906,10820
 	F 8667,5372
@@ -2762,11 +2763,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog ^^^
 #: note ^^^
 # 
+#: next_check_id: KOEPENICKERLANDSTR-2015
 #: note: Anforderungsampel vvv
 #: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
-#: last_checked: 2015-02-01 vvv
+#: last_checked: 2015-04-04 vvv
 #: check_frequency: 90d vvv
 	F 16886,6665
 	F 16646,6925

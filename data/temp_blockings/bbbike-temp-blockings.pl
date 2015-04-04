@@ -6238,12 +6238,13 @@ EOF
 userdel	1::inwork 4367,11996 4345,11710
 EOF
      },
-     { from  => $isodate2epoch->("2014-05-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-05-25 23:59:59"),
+     { from  => $isodate2epoch->("2015-05-01 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-03 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 24, months => 5]],
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (24.5.2014 und 25.5.2014)',
+       recurrences => [['yearly', days => 24, months => 1]],
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (2.5.2015 und 3.5.2015)',
        type  => 'gesperrt',
+       source_id => 'http://www.ms-event-agentur.com/primavera%202013.html', # 2013 in der URL verwirrt nur, die Seite nennt das Jahr 2015
        data  => <<EOF,
 userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9282
 userdel	2::temp 6945,9142 7044,9163
@@ -6266,14 +6267,14 @@ EOF
 userdel	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2014-10-04 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-10-05 23:59:59"),
+     { from  => $isodate2epoch->("2015-10-03 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-10-04 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 5, months => 10]],
-       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 4. und 5.10.2014',
+       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 3. und 4.10.2015',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.ms-event-agentur.com/seite22.html
+#: by: http://www.ms-event-agentur.com/seite22.html?date=20150404
 userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
 EOF
      },
@@ -6611,7 +6612,7 @@ EOF
        text  => 'Vollsperrung der Oberspreestraße zwischen Freystadter Weg und Ottomar-Geschke-Straße und Spindlersfelder Straße vom Sonnabend, den 04.11.2006, 5:00 Uhr bis Montag, den 06.11.2006, 5:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 20949,4775 20994,4761 21089,4731 21170,4706 21332,4655
+userdel	2::inwork 20949,4775 20994,4761 21108,4725 21170,4706 21332,4655
 EOF
      },
      { from  => 1163800165, # 2006-11-17 22:49
@@ -21373,13 +21374,13 @@ userdel auto	3 7039,12314 7383,12095 7429,12070
 userdel auto	3 7823,12120 7816,12150 7875,12363
 EOF
      },
-     { from  => $isodate2epoch->("2014-05-09 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-05-11 20:00:00"),
+     { from  => $isodate2epoch->("2015-05-08 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-10 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5]],
-       text  => 'Schöneberger Mai- und Spargelfest am 10. und 11. Mai 2014 in der Freiherr-vom-Stein-Straße',
+       text  => 'Schöneberger Mai- und Spargelfest am 9. und 10. Mai 2015 in der Freiherr-vom-Stein-Straße',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140429.1330.396763.html',
+       source_id => 'http://www.ms-event-agentur.com/seite18.html',
        data  => <<EOF,
 userdel	2::temp 6244,8597 6339,8644 6454,8653
 EOF
@@ -22990,7 +22991,6 @@ EOF
        type  => 'handicap',
        source_id => 'IM_024332',
        data  => <<EOF,
-#: XXX eventuell für Radfahrer nur an der Wilhelminenhofstraße gesperrt, ab Wattstr. vielleicht schon offen
 userdel	q4::inwork; 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 EOF
      },

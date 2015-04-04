@@ -731,7 +731,7 @@ Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4693
 #: priority: #C
-#: last_checked: 2014-11-15
+#: last_checked: 2015-04-04
 #: check_frequency: 120d
 Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen angelegt?	?::projected 16395,7401 16406,7430 16412,7463
 # 
@@ -1103,7 +1103,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
 #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straßenbenennung, Vorschlag)
-#: last_checked: 2015-01-04
+#: last_checked: 2015-04-04
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
@@ -1250,12 +1250,7 @@ Stubenrauchstr.: gibt es hier neue Fahrbahnmarkierungen z.B. Radspuren?	? 16182,
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 --- #: last_checked: 2014-09-21 --- Sewanstr.: dieser Abschnitt wird zur Lückstr.	? 16647,10632 16699,10611
 # REMOVED (fast nichts passiert) --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf --- #: last_checked: 2014-07-17 --- #: check_frequency: 60d --- Friedrich-Wilhelm-Platz: Umbau der Radverkehrsanlagen	?::inwork 5314,7217 5333,7201 5352,7184 5397,7205 5364,7330 5352,7428
-# 
-#: XXX hat das irgendwelche Konsequenzen (e.g. Radwegführung?)
-#: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/__bersicht_stra__enbaustellen_neubau_14_06_17.xls?download.html
-#: next_check: 2014-09-30
-Ottomar-Geschke-Str.: Neubau einer Nebenfahrbahn	?::inwork 21289,4563 21206,4387
-# 
+# REMOVED --- #: XXX hat das irgendwelche Konsequenzen (e.g. Radwegführung?) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/__bersicht_stra__enbaustellen_neubau_14_06_17.xls?download.html --- #: next_check: 2014-09-30 --- Ottomar-Geschke-Str.: Neubau einer Nebenfahrbahn	?::inwork 21289,4563 21206,4387
 # REMOVED (aufgenommen) --- #: by: Albin Kessel --- #: XXX vor Ort anschauen? --- verlängerte Grolmanstr.: Qualität ("Kopfsteinpflaster")? Fußgängerfrequenz ("einige Fußgänger")? Nachts beleuchtet?	? 4651,11368 4648,11445 4616,11507 4574,11587
 # REMOVED (siehe handicap-s-Eintrag) --- #: last_checked: 2015-01-28 --- #: check_frequency: 60d --- Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5628,14063 5443,14028 5336,14044 5306,14061
 # 
@@ -1655,7 +1650,8 @@ Regattastr.: Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501
 Sportpromenade: Fahrradstraße soll eingerichtet werden	?::projected 25646,-209 25760,-427 25958,-731
 Rehfeldtstr./Rohrwallallee: Verbesserung der Befahrbarkeit	?::projected 25958,-731 26004,-705 26045,-718 26073,-745 26129,-807 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
 Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1916 26728,-2030 26846,-2176 27021,-2336 27161,-2474 27093,-2560
-#: last_checked: 2014-06-09
+#: osm_watch: way id="11389403" version="35"
+#: last_checked: 2015-04-04
 #: check_frequency: 300d
 Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 21053,4162 21146,4229
 #: by ^^^
@@ -2058,12 +2054,15 @@ Abramowitschallee: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::pr
 Gorissenstr.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 17952,3975 17636,4082
 Henry-Farman-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18734,4077 18670,4013
 Hubert-Latham-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18602,4220 18734,4077 19000,3798
+#: note: an der Gerhard-Sedlmayr-Str. sind keine Straßeneinfahrten vorbereitet
 Pierre-de-Caters-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18455,3958 18548,3964
 #: XXX bei osm eingetragen
 Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18602,4220 18532,4162
 #: next_check ^^^
 #: XXX bei osm schon eingetragen, ist die Straße schon offiziell?
-#: next_check: 2015-03-30
+#: osm_watch: way id="206889091" version="2"
+#: last_checked: 2015-04-04
+#: check_frequency: 180d
 Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18369,4337 18501,4457
 #: XXX ^^^
 # 
@@ -3909,13 +3908,7 @@ Schwarzer Weg (Siemensstadt): Qualität des Wegs? Ist der Weg ausgeschildert und 
 #: XXX fehlt in Berlin.coords.data
 Darguner Str.: Qualität?	? 17566,18680 17635,18591
 # 
-#: last_checked: 2014-06-09 (Trassierungsarbeiten werden durchgeführt) vvv
-#: next_check: 2014-12-07 vvv
-Gerhard-Sedlmayr-Str.: Gibt es Verbindungswege zum Park?	? 18701,3806 18520,3812 18208,4151
-#: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben, in den restlichen Abschnitten wird es wohl keine Radwege geben
-Gerhard-Sedlmayr-Str.: Existiert ein Radweg?	? 18208,4151 18374,4307
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: last_checked: 2014-06-09 (Trassierungsarbeiten werden durchgeführt) vvv --- #: next_check: 2014-12-07 vvv --- Gerhard-Sedlmayr-Str.: Gibt es Verbindungswege zum Park?	? 18702,3790 18584,3794 18228,4168 --- #: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben, in den restlichen Abschnitten wird es wohl keine Radwege geben --- Gerhard-Sedlmayr-Str.: Existiert ein Radweg?	? 18228,4168 18374,4307 --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4073 (Asphaltierung gewünscht)
 Im Brachfeldwinkel: existiert eine für Radfahrer befahrbare Verbindung zum Erholungsweg? Qualität? Beleuchtung? Ausschilderung?	? 3024,21286 3068,21150 3032,21143
