@@ -1317,7 +1317,9 @@ Seelbuschring	1s:q3 8485,4619 8432,4712 8242,4648
 #: note: die Straßenbahn fährt hier auch lang
 Zionskirchstr.	1s:q1 10391,14280 10426,14262
 Walsroder Str.	1s:q3 6395,5154 6295,5158 6202,5163 6094,5171
-Hünensteig	1s:q3 6419,5048 6387,5057 6395,5154
+#: note: hier q4 wegen unübersichtlicher Kurve
+Hünensteig	1s:q4 6419,5048 6387,5057
+Hünensteig	1s:q3 6387,5057 6395,5154
 #: note: Radfahren auf dem Uferweg ist wohl Sitte
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12119,9823 11946,9913 11735,10022 11512,10105
 # REMOVED (wahrscheinlich alles nur ein Versehen) --- #: XXX Wie ist der Status der Einbahnstraße? Zurzeit ist das Einbahnstraßenschild überklebt, aber das Einfahrt-verboten-Schild nicht --- #: last_checked: 2014-12-04
@@ -2485,7 +2487,7 @@ Drängelgitter	BNP:5 24759,11666
 Drängelgitter	BNP:5 24815,11329
 #: by: ^^^
 #: by: Christian (chrispan):
-Drängelgitter	BNP:5 7935,4466
+Drängelgitter	BNP:5 7925,4477
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8::trailer=no 6526,21015
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8::trailer=no 6548,21041
 Drängelgitter/Schranke	BNP:5 10012,5210
@@ -2593,6 +2595,12 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX kein Endedatum
+#: osm_watch: way id="150301191" version="11"
+#: last_checked: 2015-04-07
+#: check_frequency: 120d
+Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
+# 
 #: next_check_id: EUROPACITY-2015
 #: last_checked: 2015-03-13
 #: next_check: 2016-12-31
@@ -2614,7 +2622,7 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
 #: source_id: IM_023816 vvv
 #: XXX vermutlich bis März 2016 andauernd
-#: last_checked: 2015-03-25 vvv
+#: last_checked: 2015-04-07 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 #: last_checked ^^^

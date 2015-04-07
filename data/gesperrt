@@ -965,7 +965,8 @@ Johanna-Spyri-Weg	1s 3211,2221 3221,2473
 Seelbuschring	1s 8485,4619 8432,4712 8242,4648
 Zionskirchstr.	1s 10391,14280 10426,14262
 Walsroder Str.	1s 6395,5154 6295,5158 6202,5163 6094,5171
-Hünensteig	1s 6419,5048 6387,5057 6395,5154
+Hünensteig	1s 6419,5048 6387,5057
+Hünensteig	1s 6387,5057 6395,5154
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12119,9823 11946,9913 11735,10022 11512,10105
 Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s 11500,9116 11509,9392
@@ -2687,7 +2688,7 @@ Schranke	BNP:3:-132 6749,15339
 Schranke	BNP:3:-130 6869,15441
 Drängelgitter	BNP:5:3 24759,11666
 Drängelgitter	BNP:5:-17 24815,11329
-Drängelgitter	BNP:5:-138 7935,4466
+Drängelgitter	BNP:5:-130 7925,4477
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8:-151:trailer=no 6526,21015
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8:-139:trailer=no 6548,21041
 Drängelgitter/Schranke	BNP:5:-180 10012,5210
@@ -2757,6 +2758,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork 7769,4315 7795,4242
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7818,13993 7917,14051 7962,13977 7866,13916
 Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	2::inwork 15300,11584 15220,11440
 Wasserstr. (Niederschöneweide): abgesperrt	2::inwork 17477,6031 17639,6227
@@ -2901,7 +2903,7 @@ Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
 Elisenstr.: tragen (3 Stufen)	0:15:-167 5813,5354
 tragen (9 Stufen)	0:30:-165 5822,5388
 tragen (3 x 10 Stufen)	0:90:-236 5535,4756
-tragen (8 Stufen)	0:30:-157 5466,4765
+tragen (8 Stufen)	0:30:-155 5466,4765
 tragen (Treppe)	0:20:-63 5371,4609
 tragen (16 Stufen)	0:45:-158 5469,4543
 tragen (ca. 5 x 9 Stufen)	0:120:35 13853,13712

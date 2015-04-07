@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-04-04 vvv
+#: last_checked: 2015-04-07 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -673,14 +673,14 @@ Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6129,12976 6106,12981
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 #: note: dieser Abschnitt ist legal befahrbar
 (Stadtpark Steglitz): Fußgänger	q1 5787,4400 5833,4462 5838,4540 5890,4674 5947,4791 6000,4846 6006,4852
-Barsekowstr.: Fußgänger	q1 5336,4676 5417,4647 5476,4626 5589,4617
-(Stadtpark Steglitz): Fußgänger	q1 5589,4617 5656,4621 5709,4674
+Barsekowstr.: Fußgänger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
+(Stadtpark Steglitz): Fußgänger	q1 5588,4629 5643,4626 5691,4636
 #: XXX_prog Bordstein zur Sedanstr., ansonsten q2
 (Stadtpark Steglitz): Fußgänger, Bordstein	q3 5709,4674 5715,4672 5724,4670
 #: note: offiziell wohl nicht legal befahrbar
 (Stadtpark Steglitz): Fußgänger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6026,4744 6030,4743 6092,4717 6107,4718
-(Stadtpark Steglitz): Fußgänger	q1 5589,4617 5582,4675 5555,4743
-(Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
+(Stadtpark Steglitz): Fußgänger	q1 5589,4617 5588,4629 5582,4675 5555,4743
+(Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5406,4631
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
 #: XXX_prog: für Anhänger q1
 #: note: nur drei Schwellen sind übrig geblieben, können mit Normalrad umfahren werden
@@ -828,8 +828,8 @@ Ceciliengärten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
 (Weg am Humboldthain): Radfahren erlaubt, Fußgänger haben Vorrang	q1 9255,15816 9092,15789 8934,15740
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
 (Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1 15349,11911 15301,11876 15327,11724 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
-Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7662,4529 7772,4306
-Am Bahndamm: Fußgänger	q1 7772,4306 7795,4242 8106,3410
+Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7662,4529 7769,4315
+Am Bahndamm: Fußgänger	q1 7769,4315 7795,4242 8106,3410
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 Teltowkanalpromenade: enge und kurvige Unterführung	q2 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
@@ -1750,7 +1750,7 @@ Müggelstr., Hausdurchfahrt: einige Fußgänger	q1 14837,11706 14856,11740
 #: XXX_prog: BS (2x)
 (Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8953,6492 8930,6295
 #: note: allerdings ist der Radweganteil sehr schmal
-(Prühßstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fußgänger	q1 9854,4266 9965,4299 10051,4295 10140,4280 10221,4245
+(Prühßstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fußgänger	q1 9869,4271 9965,4299 10051,4295 10140,4280 10221,4245
 #: note: von Norden her existiert ein "Radfahren verboten"-Hinweis, von Süden her aber nicht
 (Westphalweg/Dirschelweg - Schwimmbad): Fußgänger	q2 10059,4396 10051,4295
 (Richterstr. - Rathausstr.): Fußgänger	q1- 9277,3993 9294,3921 9217,3906 9117,3898 9021,3878
@@ -2137,6 +2137,8 @@ Kelheimer Str.: einige Fußgänger	q2 5894,10287 5898,10318
 #: XXX_prog BS am Wendehammer, ansonsten q2
 Würzburger Str.: einige Fußgänger, Bordstein	q3 5898,10318 5907,10347
 Wilhelm-Hoff-Str.: einige Fußgänger, kurvig	q1 19057,3422 19033,3397
+Bürgerstr. - Bendastr.: einige Fußgänger	q1 12830,6254 12813,6334 12812,6343
+Bürgerstr. - Bendastr.: einige Fußgänger, Umfahrung Treppe	q2 12812,6343 12804,6377
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2364,7 +2366,7 @@ Hünensteig: Fußgänger	q2 6395,5154 6405,5238 6108,5253
 (Götzstr. - Albrechtstr.): Fußgänger	q2 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 #: note: ähnliche Angaben von Christian (chrispan), nach Mailverkehr mit ihm (Message-Id: <E1EtpOe-0001ZH-IJ@www.radzeit.de>) von q2 auf q4 degradiert:
 #: XXX_prog BS an der Gersdorfstr., ansonsten bleibt es aber bei q4
-(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg, Bordstein	q4 7928,4458 7935,4466 8027,4571 8184,4716
+(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg, Bordstein	q4 7911,4465 7925,4477 8027,4571 8184,4716
 #: by: ^^^
 #: by: Philipp Kaufmann
 Mühlenbecker Weg: Fußgänger	q1 20150,15678 20334,16043

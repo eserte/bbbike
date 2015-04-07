@@ -300,12 +300,12 @@ Helgoländer Ufer - Stromstr.: Fußgänger	q2 6271,12985 6289,13081 6183,13083
 Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6129,12976 6106,12981
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 (Stadtpark Steglitz): Fußgänger	q1 5787,4400 5833,4462 5838,4540 5890,4674 5947,4791 6000,4846 6006,4852
-Barsekowstr.: Fußgänger	q1 5336,4676 5417,4647 5476,4626 5589,4617
-(Stadtpark Steglitz): Fußgänger	q1 5589,4617 5656,4621 5709,4674
+Barsekowstr.: Fußgänger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
+(Stadtpark Steglitz): Fußgänger	q1 5588,4629 5643,4626 5691,4636
 (Stadtpark Steglitz): Fußgänger, Bordstein	q3 5709,4674 5715,4672 5724,4670
 (Stadtpark Steglitz): Fußgänger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6026,4744 6030,4743 6092,4717 6107,4718
-(Stadtpark Steglitz): Fußgänger	q1 5589,4617 5582,4675 5555,4743
-(Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5417,4647
+(Stadtpark Steglitz): Fußgänger	q1 5589,4617 5588,4629 5582,4675 5555,4743
+(Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5406,4631
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
 Dieffenbachstr.: Bodenschwellen	q0 11141,9732 11346,9655
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14077,10016
@@ -421,8 +421,8 @@ Ceciliengärten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
 (Weg am Humboldthain): Radfahren erlaubt, Fußgänger haben Vorrang	q1 9255,15816 9092,15789 8934,15740
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
 (Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1 15349,11911 15301,11876 15327,11724 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
-Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7662,4529 7772,4306
-Am Bahndamm: Fußgänger	q1 7772,4306 7795,4242 8106,3410
+Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7662,4529 7769,4315
+Am Bahndamm: Fußgänger	q1 7769,4315 7795,4242 8106,3410
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 Teltowkanalpromenade: enge und kurvige Unterführung	q2 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
@@ -1162,7 +1162,7 @@ Müggelstr., Hausdurchfahrt: einige Fußgänger	q1 14837,11706 14856,11740
 (Bushaltestelle und Straßenbahnwendestelle Schöneweide): ggfs. Gehwege benutzen	q4 17675,5521 17588,5573 17578,5566
 (Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 (Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8953,6492 8930,6295
-(Prühßstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fußgänger	q1 9854,4266 9965,4299 10051,4295 10140,4280 10221,4245
+(Prühßstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fußgänger	q1 9869,4271 9965,4299 10051,4295 10140,4280 10221,4245
 (Westphalweg/Dirschelweg - Schwimmbad): Fußgänger	q2 10059,4396 10051,4295
 (Richterstr. - Rathausstr.): Fußgänger	q1 9277,3993 9294,3921 9217,3906 9117,3898 9021,3878
 (Upstallweg - Richterstr.): Fußgänger	q1 9264,3874 9244,3872 9226,3870 9217,3906
@@ -1461,6 +1461,8 @@ Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
 Kelheimer Str.: einige Fußgänger	q2 5894,10287 5898,10318
 Würzburger Str.: einige Fußgänger, Bordstein	q3 5898,10318 5907,10347
 Wilhelm-Hoff-Str.: einige Fußgänger, kurvig	q1 19057,3422 19033,3397
+Bürgerstr. - Bendastr.: einige Fußgänger	q1 12830,6254 12813,6334 12812,6343
+Bürgerstr. - Bendastr.: einige Fußgänger, Umfahrung Treppe	q2 12812,6343 12804,6377
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -1555,7 +1557,7 @@ Hünensteig: Fußgänger	q2 6395,5154 6405,5238 6108,5253
 (Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9404,6392 9389,6348 9381,6277 9374,6189
 (Götzstr. - Albrechtstr.): Fußgänger, Rampe	q4 9374,6189 9373,6179
 (Götzstr. - Albrechtstr.): Fußgänger	q2 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
-(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg, Bordstein	q4 7928,4458 7935,4466 8027,4571 8184,4716
+(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg, Bordstein	q4 7911,4465 7925,4477 8027,4571 8184,4716
 Mühlenbecker Weg: Fußgänger	q1 20150,15678 20334,16043
 (Nordmannzeile - Vorarlberger Damm): Fußgänger, Kleingartenweg	q1 6841,7283 6846,7306 7062,7376 7108,7416 7220,7442
 Herschelstr.: enge Wohnstraße	q1 3200,13277 3239,13461 3262,13547 3280,13625
@@ -2353,7 +2355,8 @@ Johanna-Spyri-Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp;
 Seelbuschring: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8485,4619 8432,4712 8242,4648
 Zionskirchstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10391,14280 10426,14262
 Walsroder Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6395,5154 6295,5158 6202,5163 6094,5171
-Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6419,5048 6387,5057 6395,5154
+Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 6419,5048 6387,5057
+Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6387,5057 6395,5154
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 12119,9823 11946,9913 11735,10022 11512,10105
 Stallschreiberstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10489,11405 10620,11244 10678,11172
 Jahnstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11500,9116 11509,9392

@@ -8225,12 +8225,13 @@ EOF
 userdel	q4::temp 6178,12387 6276,12506 6314,12518 6444,12536
 EOF
      },
-     { from  => $isodate2epoch->("2014-05-09 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-05-11 23:59:59"),
+     { from  => $isodate2epoch->("2015-05-08 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-10 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5]],
-       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (10. und 11. Mai 2014)',
+       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (9. und 10. Mai 2015)',
        type  => 'gesperrt',
+       source_id => 'http://www.laubinger.de/termine/22-boelschefest-friedrichshagen/',
        data  => <<EOF,
 userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
@@ -14035,11 +14036,11 @@ EOF
 userdel	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => $isodate2epoch->("2014-05-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-05-25 23:59:59"),
+     { from  => $isodate2epoch->("2015-05-08 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-10 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 19, months => 5]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in der Preußenallee), beide Fahrbahnen der Straße gesperrt (24. und 25. Mai 2014)',
+       recurrences => [['yearly', days => 9, months => 5]],
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (09. und 10. Mai 2015)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.family-and-friends-ev.de/2.html
@@ -21403,11 +21404,11 @@ EOF
 userdel	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2014-05-16 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-05-18 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz), Straße rund um den Dorfteich vermutlich gesperrt (17. und 18. Mai 2014)',
+     { from  => $isodate2epoch->("2015-04-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-03 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2015 bis 03.05.2015)',
        periodic => 1,
-       recurrences => [['yearly', days => 17, months => 5]],
+       recurrences => [['yearly', days => 1, months => 5]],
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2014
@@ -22937,14 +22938,11 @@ userdel	2::inwork 46564,76483 46704,75833
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1428434351, # undef, # XXX
        text  => 'Hanstedter Weg: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: by: Angelika Weber
-#: XXX wann sind die Bauarbeiten beendet?
-#: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten?
-#: last_checked: 2014-07-17
+# REMOVED (keine Bauarbeiten mehr, weiterhin KS) --- #: by: Angelika Weber --- #: XXX wann sind die Bauarbeiten beendet? --- #: XXX bleibt das Kopfsteinpflaster nach den Bauarbeiten? --- #: last_checked: 2014-07-17
 userdel	q4::inwork 6747,5010 6783,5011 6908,5053 6923,5057
 EOF
      },
@@ -22973,7 +22971,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140624.1400.398129.html',
        data  => <<EOF,
-userdel	2::inwork 7772,4306 7795,4242
+userdel	2::inwork 7769,4315 7795,4242
 EOF
      },
      { from  => 1404079200, # 2014-06-30 00:00
@@ -23823,13 +23821,12 @@ userdel	q4::inwork 14136,17170 14006,16961
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1428435671, # undef, # XXX
        text  => 'Lankwitzer Damm: Weg am Bahndamm und Teltowkanal-Brücke gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: user per phone
-#: XXX vor Ort anschauen! Gibt es ein Endedatum?
-userdel	2::inwork 7772,4306 7795,4242 8106,3410
+# REMOVED (-> gesperrt-orig) --- #: by: user per phone --- #: XXX vor Ort anschauen! Gibt es ein Endedatum?
+userdel	2::inwork 7769,4315 7795,4242 8106,3410
 EOF
      },
      { from  => 1421344800, # 2015-01-15 19:00
@@ -23871,9 +23868,11 @@ EOF
        data  => <<EOF,
 #: XXX "für mehrere Monate" vvv
 #: XXX evtl. bis 30. April 2015
-#: last_checked: 2015-03-15 vvv
+#: last_checked: 2015-04-06 vvv
+#: next_check: 2015-04-30 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 EOF
