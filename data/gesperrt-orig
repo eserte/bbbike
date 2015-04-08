@@ -107,12 +107,7 @@ Eichborndamm	1s:q3 4240,19019 4232,18981
 Eichborndamm	1 4232,18981 4210,18878 4163,18676 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
-#: XXX evtl. wird die Einbahnstraßenregelung aufgehoben
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025
-#: last_checked: 2015-04-04
-#: XXX ab 7. April wird hier wegen Bauarbeiten komplett gesperrt, evtl. auch für Radfahrer
-#: next_check: 2015-04-07
-Archibaldweg	1 15674,10851 15870,10938
+# REMOVED (während der Bauarbeiten ist die Einbahnstraßenregelung aufgehoben (Sackgasse)) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-04-04 --- #: XXX ab 7. April wird hier wegen Bauarbeiten komplett gesperrt, evtl. auch für Radfahrer --- #: next_check: 2015-04-07 --- Archibaldweg	1 15674,10851 15870,10938
 Nöldnerplatz	1 15870,10938 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Richterstr.	1s:q3 22092,999 22120,886
@@ -1094,7 +1089,7 @@ Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
 #: next_check_id: AMZIRKUS-2014
 #: XXX bleibt die Einbahnstraßenrichtung permanent? Oder nur während der Arbeiten am Schiffbauerdamm?
-#: last_checked: 2015-03-28
+#: last_checked: 2015-04-08
 Am Zirkus	1s:q4 9239,12923 9212,12969 9167,13046 9137,13032
 DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615,9675 1724,9772
 #: note implizite Fahrtrichtung
@@ -2607,7 +2602,7 @@ Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7818,13993 7917,14051 7962,13977 7866,13916
 # 
 #: XXX es gibt schon permanente Sackgassenschilder
-#: osm_watch: way id="334605047" version="1"
+#: osm_watch: way id="334605047" version="2"
 #: last_checked: 2015-03-08
 #: check_frequency: 60d
 Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	2::inwork 15300,11584 15220,11440
@@ -2640,7 +2635,7 @@ Zufahrt zum Uferweg: gesperrt	2::inwork 7703,14582 7696,14577 7662,14579 7653,14
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136136549415/136549415/00119959/59-Anlagen/02/GA_1805_IV.pdf (mindestens bis Ende 2016)
-#: last_checked: 2015-03-18
+#: last_checked: 2015-04-08
 #: check_frequency: 180d
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 # 
@@ -2759,7 +2754,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # REMOVED (die Baustelle ist mittlerweile auf der anderen Straßenseite) --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2014-04-02 vvv --- #: next_check: 2015-05-31 vvv --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 8935,13844 --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
-#: last_checked: 2015-02-23 vvv
+#: last_checked: 2015-04-08 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364 9961,12273
@@ -2824,7 +2819,7 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 #: XXX siehe auch Busspur in radwege-orig vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
-#: last_checked: 2015-02-23 vvv
+#: last_checked: 2015-04-08 vvv
 #: next_check: 2015-06-30 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 # REMOVED (nach der Fahrbahn wieder erreichbar) --- Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -2878,7 +2873,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
-#: last_checked: 2015-02-16
+#: last_checked: 2015-04-08
 #: check_frequency: 100d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
@@ -2970,8 +2965,8 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: last_checked: ^^^
 #: next_check_id: ^^^
 # 
-#: last_checked: 2015-02-23
-#: next_check: 2015-05-31 (Eröffnung 2019 geplant)
+#: last_checked: 2015-04-08
+#: next_check: 2016-05-31 (Eröffnung 2019 geplant)
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 # REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5062,6295 4997,6331 4971,6345

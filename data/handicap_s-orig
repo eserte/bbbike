@@ -91,7 +91,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9007,12499 9016,12416
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2015-02-23
+#: last_checked: 2015-04-08
 #: check_frequency: 90d
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
@@ -106,7 +106,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED --- Charlottenstr.: Bauarbeiten, Radfahrer kˆnnen passieren	q2::inwork; 9475,12365 9489,12263
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2015-04-01 vvv
+#: last_checked: 2015-04-08 vvv
 #: next_check: 2015-06-01 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -213,7 +213,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2015-03-28
+#: last_checked: 2015-04-08
 #: check_frequency: 30d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -222,7 +222,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-04-01
+#: last_checked: 2015-04-08
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -299,8 +299,12 @@ Dottistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 15685,12154 15879,12131
 # REMOVED (keine Behinderungen mehr) --- #: next_check_id: HAUPTBUCHT-2014 --- #: last_checked: 2014-10-05 (Absperrgitter existieren noch, werden aber oft von Fuﬂg‰ngern weggeschoben) (deshalb nur q3) --- #: check_frequency: 60d --- (Rummelsburger Ufer - Hauptstr.): Bauarbeiten, ggfs. Umweg ¸ber Norma-Parkplatz notwendig	q3::inwork 15249,10564 15307,10701
 # REMOVED (anscheinend schon beendet) --- #: last_checked: 2014-05-06 --- #: next_check: 2014-05-31 (Bauarbeiten bis Mai 2014) --- #: valid: -20140531 --- Archibaldweg: Bauarbeiten zwischen Leopoldstr. und Rupprechtstr. Richtung Nordosten	q3::inwork; 15950,10987 16034,11053
 # 
+#: last_checked: 2015-04-08
+#: check_frequency: 30d
+Archibaldweg: Bauarbeiten, teilweise ¸ber Gehweg ausweichen	q2::inwork 15674,10851 15870,10938
+# 
 #: osm_watch: way id="198589919" version="2"
-#: last_checked: 2015-04-04
+#: last_checked: 2015-04-08
 #: check_frequency: 30d
 Stadthausstr.: Bauarbeiten, Einbahnstraﬂe, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
 # 
@@ -629,7 +633,12 @@ Spreegasse: Fuﬂg‰nger, CafÈs	q3 10249,12658 10309,12700 10387,12760
 Heiligegeistgasse: Fuﬂg‰nger, CafÈs, sehr eng	q4 10285,12744 10309,12700 10352,12627
 # REMOVED --- #: XXX_prog: sollte BS werden (1x an der Gormannstr.) --- zur Gormannstr.: Bordstein	q3 10350,13376 10372,13436
 #: note: Flohmarkt ist in temp_blockings erw‰hnt:
-Am Zeughaus: Fuﬂg‰nger	q2 9919,12613 9956,12523 9984,12426
+Am Zeughaus: Fuﬂg‰nger	q2 9919,12613 9956,12523
+#XXX sp‰ter wieder aktivieren: Am Zeughaus: Fuﬂg‰nger	q2 9956,12523 9984,12426
+#: XXX nach den Bauarbeiten wieder den alten q2-Eintrag aktivieren
+#: last_checked: 2015-04-08
+Am Zeughaus: Fuﬂg‰nger, Bauarbeiten, Engstelle	q4::inwork 9956,12523 9984,12426
+# 
 Steinmetzstr.: Fuﬂg‰ngerzone, Radfahren erlaubt	q1 7625,9771 7657,9942 7698,10147
 #: note: nicht "ggfs.", also kein Kandidat f¸r die Datei gesperrt-orig als 1s:q3
 L¸tzowplatz: Einbahnstraﬂe, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011

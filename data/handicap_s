@@ -38,6 +38,7 @@ Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q1 5708,1
 Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
 Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
+Archibaldweg: Bauarbeiten, teilweise über Gehweg ausweichen	q2::inwork 15674,10851 15870,10938
 Stadthausstr.: Bauarbeiten, Einbahnstraße, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
 Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
 Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
@@ -272,7 +273,8 @@ Spreepromenade am DomAquarée: Fußgänger, Cafés	q3 10300,12587 10249,12658 10219,
 St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
 Spreegasse: Fußgänger, Cafés	q3 10249,12658 10309,12700 10387,12760
 Heiligegeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10352,12627
-Am Zeughaus: Fußgänger	q2 9919,12613 9956,12523 9984,12426
+Am Zeughaus: Fußgänger	q2 9919,12613 9956,12523
+Am Zeughaus: Fußgänger, Bauarbeiten, Engstelle	q4::inwork 9956,12523 9984,12426
 Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7657,9942 7698,10147
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fußgänger	q1 4199,11819 4195,11692
