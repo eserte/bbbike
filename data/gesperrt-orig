@@ -289,7 +289,7 @@ Worpsweder Str.	1 6191,4923 6202,5163
 Wilseder Str.	1 6295,5158 6288,4906
 Dickhardtstr.	1 5817,7223 5824,6974 5826,6871 5811,6833 5752,6751 5604,6709 5533,6753
 Roennebergstr.	1 5533,6753 5357,6932
-Schmitzweg	1 5879,19352 5858,19437 5831,19547 5731,19824
+Schmitzweg	1 5879,19352 5851,19440 5823,19544 5731,19824
 Barbarossaplatz	1 6731,9559 6748,9524 6727,9497 6694,9537 6692,9546 6731,9559
 In den neuen G‰rten	1 7111,3432 7318,3306 7359,3349 7409,3331 7472,3308
 Braillestr.	1 4430,5324 4477,5250 4512,5199
@@ -1015,7 +1015,7 @@ Eckertstr.	1s:q3 13598,12554 13585,12584
 Leistikowstr.	1 1188,11861 1133,11664
 Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
-Henricistr.	1 5993,19477 5858,19437
+Henricistr.	1 5993,19477 5851,19440
 # REMOVED (hier wird gebaut, evtl. gibt es danach keine Straﬂe mehr) --- Breslauer Platz	1s:q3 5810,7337 5897,7337
 Desideriusweg	1 2830,21378 2728,21336
 Am Ansitz	1 3913,21977 3855,22055
@@ -2052,6 +2052,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+Dr‰ngelgitter	BNP:3::trailer=10 5029,19945
 Dr‰ngelgitter	BNP:3::trailer=10 -12262,-393
 Dr‰ngelgitter	BNP:3::trailer=10 -4139,1976
 enges Dr‰ngelgitter	BNP:5::trailer=no 17295,7323
@@ -2111,7 +2112,7 @@ Dr‰ngelgitter	BNP:3::trailer=10 10062,15927
 #: next_check_id: LORTZING-2014
 #: XXX eventuell tempor‰r wegen der Baustraﬂe
 #: XXX siehe auch in zebrastreifen-orig
-#: last_checked: 2015-02-24
+#: last_checked: 2015-04-09
 #: check_frequency: 120d
 zwei weite Dr‰ngelgitter	BNP:4::trailer=12 10038,15418
 Schranke	BNP:3 -7969,-1659
@@ -2853,7 +2854,7 @@ Babelsberger Park - Humboldtbr¸cke: Bauarbeiten, tempor‰r (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraﬂe) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2015-03-13
+#: last_checked: 2015-04-09
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # 

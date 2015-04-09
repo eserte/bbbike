@@ -3322,7 +3322,26 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/',
+         'data' => 'userdel	2::temp 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
+',
+         'periodic' => 1,
+         'until' => 1433102400,
+         'from' => 1432818000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 29.5.2015 15 Uhr bis 31.5.2015 22 Uhr',
+         'id' => 2533,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3769,6 +3788,25 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'from' => undef,
          'id' => 2696,
          'data' => 'userdel	q3::inwork 5824,6974 5817,7223
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'Uranusweg - U-Bhf. Scharnweberstr.: Weg ist unter Umständen zeitweise gesperrt, zum Beispiel nachts',
+         'from' => undef,
+         'id' => 2697,
+         'data' => '	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
+'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php',
+         'until' => 1428962399,
+         'text' => 'Teplitzer Straße: Fahrbahnsanierung, Vollsperrung, von Freitag, dem 10.04.2015, bis Montag, dem 13.04.2015',
+         'from' => 1428530400,
+         'id' => 2698,
+         'data' => 'userdel	q4::inwork 2087,7811 2106,8075 2120,8335 2126,8426
 ',
          'type' => 'handicap'
        }

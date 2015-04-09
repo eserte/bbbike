@@ -241,7 +241,7 @@ Worpsweder Str.	1 6191,4923 6202,5163
 Wilseder Str.	1 6295,5158 6288,4906
 Dickhardtstr.	1 5817,7223 5824,6974 5826,6871 5811,6833 5752,6751 5604,6709 5533,6753
 Roennebergstr.	1 5533,6753 5357,6932
-Schmitzweg	1 5879,19352 5858,19437 5831,19547 5731,19824
+Schmitzweg	1 5879,19352 5851,19440 5823,19544 5731,19824
 Barbarossaplatz	1 6731,9559 6748,9524 6727,9497 6694,9537 6692,9546 6731,9559
 In den neuen Gärten	1 7111,3432 7318,3306 7359,3349 7409,3331 7472,3308
 Braillestr.	1 4430,5324 4477,5250 4512,5199
@@ -731,7 +731,7 @@ Eckertstr.	1s 13598,12554 13585,12584
 Leistikowstr.	1 1188,11861 1133,11664
 Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
-Henricistr.	1 5993,19477 5858,19437
+Henricistr.	1 5993,19477 5851,19440
 Desideriusweg	1 2830,21378 2728,21336
 Am Ansitz	1 3913,21977 3855,22055
 Am Vierrutenberg etc.	1 5712,23785 5676,23971 5780,23997 5792,23943 5787,23840 5712,23785
@@ -2361,6 +2361,7 @@ tragen (Treppe, ca. 20 Stufen)	0:25:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
+Drängelgitter	BNP:3:-145:trailer=10 5029,19945
 Drängelgitter	BNP:3:-174:trailer=10 -12262,-393
 Drängelgitter	BNP:3:32:trailer=10 -4139,1976
 enges Drängelgitter	BNP:5:0:trailer=no 17295,7323
@@ -2719,7 +2720,7 @@ Schranke, schwer passierbar	BNP:10:-195 7625,9376
 Schranke	BNP:5:-190 7612,9446
 Barriere	BNP:0:-88:trailer=3 3268,11847
 Drängelgitter	BNP:5:-260 -5890,25875
-Schranke, meistens offen	BNP:3:-261:trailer=6 7843,16524
+Schranke, meistens offen	BNP:3:-260:trailer=6 7843,16524
 Barriere	BNP:10:-12 12178,7985
 Drängelgitter	BNP:0:52:trailer=3 10535,13006
 Drängelgitter	BNP:10:-84 7158,9509

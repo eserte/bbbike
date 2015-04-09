@@ -21,7 +21,8 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9580,12581 9601,12380
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719
-Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10567,14337 10530,14452
+Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10567,14337 10530,14452
+Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10530,14452 10506,14521
 Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umst‰ndlich	q4::inwork; 9151,13941 9125,13973
 Invalidenstr. (Mitte): Baustelle, Fahrbahn zwischen Eichendorffstr. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953
 Invalidenstr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
@@ -200,7 +201,7 @@ Wuhlheide/FEZ: einige Fuﬂg‰nger	q1 20225,6631 20169,6636 20118,6617 20060,6575 1
 (am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q1 10339,19179 10249,19148
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, Radfahren erlaubt	q2 17975,8971 17996,8966 18070,9022
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
-Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11912 9668,11928
+Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9524,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5925,8219
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
@@ -1465,13 +1466,19 @@ W¸rzburger Str.: einige Fuﬂg‰nger, Bordstein	q3 5898,10318 5907,10347
 Wilhelm-Hoff-Str.: einige Fuﬂg‰nger, kurvig	q1 19057,3422 19033,3397
 B¸rgerstr. - Bendastr.: einige Fuﬂg‰nger	q1 12830,6254 12813,6334 12812,6343
 B¸rgerstr. - Bendastr.: einige Fuﬂg‰nger, Umfahrung Treppe	q2 12812,6343 12804,6377
+(Uranusweg - U-Bhf. Scharnweberstr.): Fuﬂg‰nger	q2 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
+(U-Bhf. Scharnweberstr. - Scharnweberstr.): U-Bahnhof, T¸ren	q4 3987,17808 3997,17840
+(U-Bhf. Scharnweberstr. - Scharnweberstr.): Fuﬂg‰nger	q2 3997,17840 4015,17912
+(Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): Fuﬂg‰nger, kurvig	q2 4997,19849 4992,19891 5029,19945 5151,19960 5220,19982
+Brienzer Str.: einige Fuﬂg‰nger, Bordstein	q2 7282,17318 7289,17277
+Torfstraﬂensteg: einige Fuﬂg‰nger	q1 6847,14735 6824,14821
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
 An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
 Friedrich-Wilhelm-Str.: eng	q1 8266,5911 8385,5907
-Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
+Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5572,19478
 (Hochkalterweg - Floningweg): Fuﬂg‰nger	q1 10304,2743 10196,2771
 Erdmann-Graeser-Weg: Fuﬂg‰nger	q1 -833,3619 -935,3706 -961,3737
 Erdmann-Graeser-Weg: Bordsteinkante, Fuﬂg‰nger	q2 -961,3737 -1013,3804
@@ -2002,7 +2009,9 @@ Diethelmweg: enge Straﬂe	q1 21649,13995 21677,14241 21696,14430
 Bat-Yam-Platz: Fuﬂg‰nger	q1 14515,2212 14545,2206 14633,2145
 Saalmannsteig: Fuﬂg‰nger	q2 5410,19050 5284,19043 5181,19037
 J‰gerstr. (Kˆpenick): enge Straﬂe	q1 22395,4678 22365,4676 22355,4660 22314,4604
-(Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger	q2 5223,16783 5141,16799 5091,16810 5035,16819 5000,16826
+(Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger, Bordstein	q3 5223,16783 5141,16799
+(Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger	q2 5141,16799 5091,16810 5035,16819 5012,16824
+(Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger, Engstelle	q4 5012,16824 5005,16824
 Kolonie Dreieck - Klemkepark: Hunde	q1 8188,18819 8101,18846 7988,18861 7846,18884 7802,18883 7781,18897 7710,18902 7609,18891 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: Hunde	q1 7574,18874 7576,18837 7480,18828 7332,18818 7313,18781 7248,18793
 Bosporusstr.: enge Straﬂe	q1 10363,4183 10455,4189 10505,4194 10601,4185 10724,4168

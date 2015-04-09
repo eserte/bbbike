@@ -20,7 +20,7 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-04-01 vvv
+#: last_checked: 2015-04-09 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -85,7 +85,7 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 #: last_checked: 2015-03-28
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
-#: last_checked: 2015-03-27
+#: last_checked: 2015-04-09
 Schadowstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9007,12499 9016,12416
 # 
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
@@ -123,7 +123,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
 #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7
-#: last_checked: 2015-03-27
+#: last_checked: 2015-04-09
 #: check_frequency: 60d
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
@@ -133,15 +133,17 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
 # REMOVED (fertig) --- #: last_checked: 2015-01-30 --- Saarbr¸cker Str.: Einbahnstraﬂenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # 
-#: last_checked: 2015-03-27 vvv
+#: last_checked: 2015-04-09 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719
 #: last_checked ^^^
 # 
-#: XXX wobei manchmal (nachts, am Wochenende?) die Barrieren weggeschoben sind und man noch relativ gut durchkommt
-#: next_check_id: SCHWEDTER-2014
-#: last_checked: 2015-03-13
-Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10567,14337 10530,14452
+#: next_check_id: SCHWEDTER-2014 vvv
+#: last_checked: 2015-04-09 vvv
+Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10567,14337 10530,14452
+Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10530,14452 10506,14521
+#: last_checked ^^^
+#: next_check_id ^^^
 # 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2015-04-01 vvv
@@ -176,7 +178,7 @@ Zinnowitzer Str.: Einbahnstraﬂenregelung zwischen Chausseestr. und Am Nordbahnho
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraﬂe, Zugang f¸r Fuﬂg‰nger und schiebende Radfahrer mˆglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (bei vmz) --- #: XXX: wann ist die Kreuzung wieder befahrbar? --- #: last_checked: 2014-06-30 --- #: next_check: 2014-07-08 --- #: source_id: IM_021906 --- #: priority: #A --- Scharnhorststr.: Sackgasse an der Invalidenstraﬂe	q2::inwork 8450,13599 8313,13839
 # 
-#: last_checked: 2015-03-13 (Bauarbeiten wegen Neubau)
+#: last_checked: 2015-04-09 (Bauarbeiten wegen Neubau)
 #: check_frequency: 30d
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
@@ -190,7 +192,7 @@ Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 #: osm_watch: way id="4592727" version="12"
-#: last_checked: 2015-03-13
+#: last_checked: 2015-04-09
 #: check_frequency: 60d
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # 
@@ -222,7 +224,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-04-08
+#: last_checked: 2015-04-09
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -536,7 +538,7 @@ Wuhlheide/FEZ: einige Fuﬂg‰nger	q1 20225,6631 20169,6636 20118,6617 20060,6575 1
 # REMOVED (done) --- #: XXX mittlerweile darf die Br¸cke offiziell befahren werden - evtl. das "ggfs. schieben" entfernen? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4830
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, Radfahren erlaubt	q2 17975,8971 17996,8966 18070,9022
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
-Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11912 9668,11928
+Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9524,12010 9656,12021
 Am Volkspark: Parkweg	q1 5745,8194 5925,8219
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
@@ -2148,6 +2150,13 @@ W¸rzburger Str.: einige Fuﬂg‰nger, Bordstein	q3 5898,10318 5907,10347
 Wilhelm-Hoff-Str.: einige Fuﬂg‰nger, kurvig	q1 19057,3422 19033,3397
 B¸rgerstr. - Bendastr.: einige Fuﬂg‰nger	q1 12830,6254 12813,6334 12812,6343
 B¸rgerstr. - Bendastr.: einige Fuﬂg‰nger, Umfahrung Treppe	q2 12812,6343 12804,6377
+(Uranusweg - U-Bhf. Scharnweberstr.): Fuﬂg‰nger	q2 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
+(U-Bhf. Scharnweberstr. - Scharnweberstr.): U-Bahnhof, T¸ren	q4 3987,17808 3997,17840
+(U-Bhf. Scharnweberstr. - Scharnweberstr.): Fuﬂg‰nger	q2 3997,17840 4015,17912
+(Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): Fuﬂg‰nger, kurvig	q2 4997,19849 4992,19891 5029,19945 5151,19960 5220,19982
+#: XXX_prog BS am Wendehammer, ansonsten q1
+Brienzer Str.: einige Fuﬂg‰nger, Bordstein	q2 7282,17318 7289,17277
+Torfstraﬂensteg: einige Fuﬂg‰nger	q1 6847,14735 6824,14821
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2166,7 +2175,7 @@ An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,
 #: by Andreas (johnnyyen):
 Friedrich-Wilhelm-Str.: eng	q1 8266,5911 8385,5907
 #: by: elke Peters:
-Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5570,19473
+Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5572,19478
 #: by: Ruth Berendes-Edler:
 (Hochkalterweg - Floningweg): Fuﬂg‰nger	q1 10304,2743 10196,2771
 #: by: peter walschburger: vvv
@@ -3211,8 +3220,15 @@ Saalmannsteig: Fuﬂg‰nger	q2 5410,19050 5284,19043 5181,19037
 #: by: Stefan Dietrich:
 #: corrected_by: srt/policy (q3 -> q1)
 J‰gerstr. (Kˆpenick): enge Straﬂe	q1 22395,4678 22365,4676 22355,4660 22314,4604
-#: by: Roger Menge:
-(Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger	q2 5223,16783 5141,16799 5091,16810 5035,16819 5000,16826
+#: by: Roger Menge: vvv
+#: confirmed_by: srt (and added BS)
+#: XXX_prog BS (an der Swakopmunder Str., ansonsten q2)
+(Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger, Bordstein	q3 5223,16783 5141,16799
+#: confirmed_by: srt
+(Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger	q2 5141,16799 5091,16810 5035,16819 5012,16824
+#: corrected_by: srt (added Engstelle)
+(Swakopmunder Str. - Charles-Corcelle-Ring): Fuﬂg‰nger, Engstelle	q4 5012,16824 5005,16824
+#: by: ^^^
 #: by: catrin (ruehl) vvv
 #: corrected_by: srt/policy (q2 -> q1)
 Kolonie Dreieck - Klemkepark: Hunde	q1 8188,18819 8101,18846 7988,18861 7846,18884 7802,18883 7781,18897 7710,18902 7609,18891 7574,18874
@@ -3735,7 +3751,8 @@ Jan-Petersen-Str.: enge Straﬂe	q0- 21086,15910 21108,15955 21196,16119 21030,162
 # 
 #: by: Gesa Major:
 #: note: "etwa 1,5m breiter Weg"
-(Breitenbachstr. - Soltauer Str.): Fuﬂweg, enger Weg	q2 3909,19002 3738,19007
+#: corrected_by: srt (q2 -> q2+)
+(Breitenbachstr. - Soltauer Str.): Fuﬂweg, enger Weg	q2+ 3909,19002 3738,19007
 #: by: Marco Pahlke:
 Rampe	q2 18574,68 18568,28 18560,75
 #: by: tobias (poeste):

@@ -60,8 +60,10 @@ Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected 
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
 #: osm_watch: way id="47266663" version="3"
 #: osm_watch: way id="47267054" version="2"
+#: XXX eventuell nach den Bauarbeiten?
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php (Bauarbeiten bis zum 18. April 2015)
 #: last_checked: 2014-12-06
-#: check_frequency: 120d
+#: next_check: 2015-04-19
 Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2320,8722 2295,8678 2273,8640 2190,8528 2126,8426 2120,8335 2106,8075 2087,7811 2114,7742
 # 
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
@@ -138,12 +140,13 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: osm_watch: way id="4541085" version="19"
 #: osm_watch: way id="4638315" version="16"
 #: XXX laut rbbtext und fritz Bauarbeiten
-#: last_checked: 2015-03-13
-#: next_check: 2015-05-09
+#: last_checked: 2015-04-09 vvv
+#: next_check: 2015-05-09 vvv
 # REMOVED --- #: next_check: 2014-03-15 (evtl. passiert während der Bauarbeiten etwas?) --- #: source_id: IM_021408
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected 7672,16878 7687,16770
-#: next_check: 2015-03-19
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected; 7713,16557 7687,16770
+#: next_check: ^^^
+#: last_checked: ^^^
 # 
 # REMOVED (wahrscheinlich passiert hier nichts bevor das Pankower Tor realisiert wird) --- #: XXX Baumaßnahme 3.39 (Realisierung nach 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: XXX evtl. wird erst etwas mit Realisierung des Stadtquartiers "Pankower Tor" entstehen --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3701 --- #: osm_watch: way id="144945039" version="4" --- #: last_checked: 2013-10-25 (Richtung Nordosten fertig) --- #: next_check: 2014-01-25 --- Granitzstr.: wird auch etwas in der anderen Richtung gemacht?	? 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
 # 
@@ -325,7 +328,9 @@ Manteuffelstr.: werden Radstreifen markiert?	?::inwork 8593,5491 8600,5580 8613,
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3233 vvv
-#: next_check: 2015-06-01 (Durchführung der Maßnahme in 2015)
+#: XXX "Durchführung der Maßnahme in 2015"
+#: last_checked: 2015-04-09
+#: check_frequency: 90d
 Eichborndamm: Ersetzung der vorhandenen Radwege durch Radstreifen?	?::projected 4780,20116 4766,20084 4728,20003 4611,19769 4497,19539 4357,19261 4284,19106 4240,19019
 #: next_check: 2015-09-01 (noch keine konkrete Planung)
 Tornower Weg - Wilhelmsruher Damm: "Lückenschluss" der Radwegführung, in welcher Form?	?::projected 6519,21002 6565,21004 6560,21055 6596,21062 6594,21134
@@ -765,8 +770,8 @@ Alt-Wittenau: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5219
 # REALISIERT (http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906) --- Waidmannsluster Damm/Am Leitbruch: wird hier ein Zebrastreifen angelegt?	?::projected 4052,22089 4094,22065
 #: last_checked: 2014-08-17
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3627,23246 3655,23244
-#: last_checked: 2013-07-10
-Eichborndamm: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4580,19756
+#: last_checked: 2015-04-09
+Eichborndamm: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4611,19769 4580,19756
 #: check_frequency: ^^^
 #: last_checked: 2015-03-13
 #: check_frequency: 120d
@@ -863,7 +868,7 @@ Zachenberger Str.: (Planstraße 11) Qualität?	?::projected 19885,9400 19780,9409
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
 #: XXX Baumaßnahme 1.16 (Realisierung nach 2011)
-#: last_checked: 2014-05-16 (keinerlei Anzeichen für Bauarbeiten zu erkennen)
+#: last_checked: 2015-04-09 (keinerlei Anzeichen für Bauarbeiten zu erkennen)
 #: check_frequency: 360d
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
@@ -1157,11 +1162,11 @@ Verlängerte Hertzallee	?::projected 5352,11502 4917,11696 4905,11785
 #: last_checked: 2015-03-13 vvv
 #: next_check: 2016-12-31 vvv
 Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
-geplanter Uferweg	?::projected 8293,13519 8128,13767 8044,13929 7989,14035 7912,14160 7854,14256 7824,14305 7740,14409
+geplanter Uferweg	?::projected 8293,13519 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
 #: XXX wird es auch eine Brücke zur Kieler Str. geben?
 Fußgängerbereich zur Heidestraße	?::projected 7912,14160 7783,14085
-Planstraßen 1.1, 1.2, 1.3	?::projected 7670,14267 7762,14319 7813,14232 7721,14176
-Planstraße 1.3 - Uferweg: Fußgängerbereich	?::projected 7813,14232 7854,14256
+Planstraßen 1.1, 1.2, 1.3	?::projected 7670,14267 7762,14319 7802,14250 7713,14196
+Planstraße 1.3 - Uferweg: Fußgängerbereich	?::projected 7802,14250 7843,14275
 #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
 Uferweg - Heidestraße: Fußgänger- und Radfahrerbereich	?::projected 8044,13929 7924,13861
 #: next_check ^^^
@@ -3798,7 +3803,6 @@ Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13494,-
 # REMOVED (nein) --- Schiefertonweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10269,21718 10248,21795
 # REMOVED (ja) --- Zechsteinweg: ist der Zechsteinweg eine Sackgasse?	? 10328,21737 10319,21774
 # REMOVED (nein) --- Kieselweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10423,21701 10388,21801
-Uranusweg - Eichborndamm: Weg entlang Sportanlage und Autobahn, Qualität des Wegs? Nachts beleuchtet? Existiert eine Ausschilderung?	? 4287,17564 3961,17710 4015,17912
 Maienwerderweg - Sendener Weg: Qualität des Wegs? Nachts beleuchtet?	? 2210,18262 2097,18183 1928,18136 1663,18166 1375,18209 1178,18223
 Mühlenstr. (Zepernick): Qualität?	? 19737,27037 19698,27205 19730,27276
 Waldstr. (Schwanebeck): Qualität?	? 19882,26592 19935,26699 19948,26760

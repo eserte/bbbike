@@ -120,9 +120,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8862,16208 8788,16264
-userdel	2 8928,16158 8993,16100
-userdel	2 8993,16100 9059,16038
-userdel	2 9134,15953 9059,16038
+userdel	2 8919,16154 8986,16092
+userdel	2 8986,16092 9053,16029
+userdel	2 9123,15963 9053,16029
 EOF
      },
      { from  => $isodate2epoch->("2015-05-08 10:00:00"), # 1 Tag Vorlauf
@@ -6364,7 +6364,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003833',
        data  => <<EOF,
-userdel	1::inwork 9201,11968 9208,11872
+userdel	1::inwork 9195,11972 9207,11880
 EOF
      },
      { from  => 1161032728, # 2006-10-16 23:05
@@ -7721,7 +7721,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003833',
        data  => <<EOF,
-userdel	1::inwork 9201,11968 9208,11872
+userdel	1::inwork 9195,11972 9207,11880
 EOF
      },
      { from  => 1190671200, # 2007-09-25 00:00
@@ -8945,7 +8945,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013416',
        data  => <<EOF,
-userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
+userdel	2::temp 8788,16264 8862,16208 8919,16154 8986,16092 9053,16029 9123,15963
 EOF
      },
      { from  => 1183280005, # 2007-07-01 10:53
@@ -10008,8 +10008,8 @@ EOF
        source_id => 'IM_009496',
        data  => <<EOF,
 #: last_checked: 2009-05-27
-userdel	q4::inwork; 9201,11968 9208,11872
-userdel	q4::inwork; 9208,11872 9218,11793
+userdel	q4::inwork; 9195,11972 9207,11880
+userdel	q4::inwork; 9207,11880 9218,11793
 EOF
      },
      { from  => 1190237300, # 2007-09-19 23:28
@@ -10534,7 +10534,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007023',
        data  => <<EOF,
-userdel	1::inwork 6878,17315 6995,17322 7031,17323 7104,17326 7288,17308 7379,17295 7602,17399
+userdel	1::inwork 6878,17315 6995,17322 7031,17323 7104,17326 7282,17318 7292,17316 7384,17303 7602,17399
 EOF
      },
      { from  => 1194130800, # 2007-11-04 00:00
@@ -11519,7 +11519,7 @@ EOF
        text  => 'Markgrafenstr. am Gendarmenmarkt: Einbahnstraße Richtung Norden',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 9668,11928 9679,11834
+userdel	1::inwork 9666,11935 9679,11834
 EOF
      },
      { from  => 1209754714, # 2008-05-02 20:58
@@ -12262,7 +12262,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009501',
        data  => <<EOF,
-userdel	1::inwork 9164,12172 9183,12076 9201,11968
+userdel	1::inwork 9164,12172 9183,12076 9195,11972
 EOF
      },
      { from  => $isodate2epoch->("2013-08-01 14:00:00"), # 1 Tag Vorlauf
@@ -13388,7 +13388,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009981',
        data  => <<EOF,
-userdel	1::inwork 9183,12076 9201,11968
+userdel	1::inwork 9183,12076 9195,11972
 EOF
      },
      { from  => 1235862000, # 2009-03-01 00:00
@@ -14363,7 +14363,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012764',
        data  => <<EOF,
-userdel	q4::inwork 9201,11968 9208,11872
+userdel	q4::inwork 9195,11972 9207,11880
 EOF
      },
      { from  => 1243116000, # 2009-05-24 00:00
@@ -14627,9 +14627,9 @@ EOF
        recurrences => [['yearly', days => 2, months => 7]],
        type  => 'gesperrt',
        data  => <<EOF,
-	q4::temp 9668,11928 9656,12021
+	q4::temp 9666,11935 9656,12021
 	2::temp 9524,12010 9656,12021
-	2::temp 9536,11912 9668,11928
+	2::temp 9536,11922 9666,11935
 EOF
      },
      { from  => 1246207852, # 2009-06-28 18:50
@@ -14762,7 +14762,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013316',
        data  => <<EOF,
-userdel	2::temp 9643,12127 9656,12021 9668,11928 9679,11834
+userdel	2::temp 9643,12127 9656,12021 9666,11935 9679,11834
 EOF
      },
      { from  => 1246398785, # 2009-06-30 23:53
@@ -14813,7 +14813,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013316',
        data  => <<EOF,
-userdel	q4::inwork; 9679,11834 9668,11928 9656,12021 9643,12127
+userdel	q4::inwork; 9679,11834 9666,11935 9656,12021 9643,12127
 EOF
      },
      { from  => 1247349600, # 2009-07-12 00:00
@@ -15184,7 +15184,7 @@ EOF
        text  => 'Badstr. (Wedding) zwischen Pankstr. und Behmstr. Veranstaltung (Seifenkistenderby), Straße vollständig gesperrt (14. und 15. Juni 2014)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 9134,15953 9059,16038 8993,16100 8928,16158 8862,16208 8788,16264
+userdel	2::temp 9123,15963 9053,16029 8986,16092 8919,16154 8862,16208 8788,16264
 EOF
      },
      { from  => 1249106497, # 2009-08-01 08:01
@@ -15945,7 +15945,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014098',
        data  => <<EOF,
-userdel	q4::inwork; 4006,19443 4170,19079 4195,19043
+userdel	q4::inwork; 4006,19443 4170,19079 4190,19048
 EOF
      },
      { from  => 1252010752, # 2009-09-03 22:45
@@ -15954,7 +15954,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014062',
        data  => <<EOF,
-userdel	q4::inwork 8923,15850 9134,15953
+userdel	q4::inwork 8923,15850 9123,15963
 EOF
      },
      { from  => 1252014436, # 2009-09-04 00:00 1252015200
@@ -17046,7 +17046,7 @@ EOF
        text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 24.11.2014 bis 31.12.2014, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 9536,11912 9668,11928
+userdel	2::temp 9536,11922 9666,11935
 userdel	2::temp 9524,12010 9656,12021
 EOF
      },
@@ -19517,7 +19517,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017545',
        data  => <<EOF,
-userdel	2::temp 9643,12127 9656,12021 9668,11928 9679,11834
+userdel	2::temp 9643,12127 9656,12021 9666,11935 9679,11834
 EOF
      },
      { from  => 1310016128, # 2011-07-07 07:22
@@ -19526,7 +19526,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017544',
        data  => <<EOF,
-userdel	2::temp 9656,12021 9668,11928
+userdel	2::temp 9656,12021 9666,11935
 EOF
      },
      { from  => $isodate2epoch->("2014-07-07 07:00:00"), # 1 Tag Vorlauf
@@ -19688,7 +19688,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_108474',
        data  => <<EOF,
-userdel	2::inwork 3079,19045 2993,18962
+userdel	2::inwork 3045,19032 2994,18979
 EOF
      },
      { from  => $isodate2epoch->("2014-07-31 10:00:00"), # 1 Tag Vorlauf
@@ -21945,11 +21945,11 @@ EOF
        type  => 'handicap',
        source_id => 'IM_020213',
        data  => <<EOF,
-userdel	q2::temp 9108,11961 9144,11866
-	3::temp 9201,11968 9108,11961 9076,12054
-	3::temp 9076,12054 9108,11961 9201,11968
-	3::temp 9201,11968 9108,11961 9144,11866
-	3::temp 9144,11866 9108,11961 9201,11968
+userdel	q2::temp 9108,11961 9138,11872
+	3::temp 9195,11972 9108,11961 9076,12054
+	3::temp 9076,12054 9108,11961 9195,11972
+	3::temp 9195,11972 9108,11961 9138,11872
+	3::temp 9138,11872 9108,11961 9195,11972
 EOF
      },
      { from  => 1377986400, # 2013-09-01 00:00
@@ -22445,13 +22445,13 @@ EOF
 userdel	2::inwork 2219,11324 2180,11318 2102,11307
 EOF
      },
-     { from  => 1399554000, # 2014-05-08 15:00 # 1 Tag Vorlauf
-       until => 1399838400, # 2014-05-11 22:00
+     { from  => $isodate2epoch->("2015-05-28 15:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-31 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
-       text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 9.5.2014 15 Uhr bis 11.5.2014 22 Uhr',
+       text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 29.5.2015 15 Uhr bis 31.5.2015 22 Uhr',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/bezirk/festdernationen.html',
+       source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/',
        data  => <<EOF,
 userdel	2::temp 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 EOF
@@ -23030,7 +23030,7 @@ EOF
        text  => 'Badstr.: Veranstaltung (Oktoberfest Badstraße) zwischen Pankstr. und Behmstr., von 11.10.2014 bis 12.10.2014',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 8788,16264 8862,16208 8928,16158 8993,16100 9059,16038 9134,15953
+userdel	2::temp 8788,16264 8862,16208 8919,16154 8986,16092 9053,16029 9123,15963
 EOF
      },
      { from  => 1404403879, # 2014-07-03 18:11
@@ -24038,6 +24038,23 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q3::inwork 5824,6974 5817,7223
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Uranusweg - U-Bhf. Scharnweberstr.: Weg ist unter Umständen zeitweise gesperrt, zum Beispiel nachts',
+       recurring => 1,
+       data  => <<EOF,
+	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
+EOF
+     },
+     { from  => 1428530400, # 2015-04-09 00:00
+       until => 1428962399, # 2015-04-13 23:59
+       text  => 'Teplitzer Straße: Fahrbahnsanierung, Vollsperrung, von Freitag, dem 10.04.2015, bis Montag, dem 13.04.2015',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php',
+       data  => <<EOF,
+userdel	q4::inwork 2087,7811 2106,8075 2120,8335 2126,8426
 EOF
      },
     );
