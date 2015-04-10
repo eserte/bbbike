@@ -2813,29 +2813,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'periodic' => 1,
-         'until' => 1430085599,
-         'from' => 1429740000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 25.4.2015 bis 26.4.2015)',
-         'id' => 2324,
-         'type' => 'gesperrt',
-         'prewarn_days' => 2
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3801,12 +3779,13 @@ userdel	q4::inwork; 3807,11859 3666,11855
 '
        },
        {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php',
-         'until' => 1428962399,
+         'source_id' => 'IM_024612',
+         'until' => 1428894000,
          'text' => 'Teplitzer Straße: Fahrbahnsanierung, Vollsperrung, von Freitag, dem 10.04.2015, bis Montag, dem 13.04.2015',
          'from' => 1428530400,
          'id' => 2698,
-         'data' => 'userdel	q4::inwork 2087,7811 2106,8075 2120,8335 2126,8426
+         'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php
+userdel	q4::inwork 2087,7811 2106,8075 2120,8335 2126,8426
 ',
          'type' => 'handicap'
        }

@@ -847,7 +847,7 @@ Cardinalstr.	1s:q3 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15280,17352
 (Marchlewskistr. - Gubener Str.)	1s:q3 13168,12219 13173,12202 13097,12166
-Alter Schönefelder Weg	1 19595,1546 19632,1593 19655,1670 19669,1729 19743,1804
+Alter Schönefelder Weg	1 19599,1557 19636,1609 19653,1671 19669,1729 19743,1804
 Boppstr.	1s:q2 11785,9437 11560,9524
 Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
@@ -2087,9 +2087,7 @@ Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5::trailer=15 17979,11
 Drängelgitter	BNP:3::trailer=10 18613,2983
 Drängelgitter	BNP:3::trailer=10 18707,3074
 Drängelgitter	BNP:3::trailer=10 18724,3091
-#: XXX Drängelgitter noch nicht fertig montiert?
-#: last_checked: 2014-05-17
-Drängelgitter	BNP:0::trailer=0 18822,3188
+Drängelgitter	BNP:3::trailer=10 18822,3188
 Drängelgitter	BNP:3::trailer=10 19725,-51
 Drängelgitter	BNP:3::trailer=10 19774,-187
 Drängelgitter	BNP:3::trailer=10 19734,-45
@@ -2590,6 +2588,22 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: XXX Rübertragen ist zur Not möglich vvv
+#: last_checked: 2015-04-10 vvv
+#: check_frequency: 90d vvv
+Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465
+Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
+#: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein?
+#: osm_watch: way id="151742436" version="5"
+#: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg
+#: last_checked: 2015-04-10
+#: check_frequency: 100d
+Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17610,-330 17651,-393
 # 
 #: XXX kein Endedatum
 #: osm_watch: way id="150301191" version="11"

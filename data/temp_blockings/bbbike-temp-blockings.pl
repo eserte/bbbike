@@ -2496,7 +2496,7 @@ EOF
        text  => 'Rudower Str. (Treptow) Richtung stadteinwärts zwischen Köpenicker Str. und Wegedornstr. Baustelle, Fahrtrichtung gesperrt, Einbahnstraße in Richtung Köpenicker Str. (bis 05.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 19771,1793 19743,1804 19564,1871 19266,1968 19181,1996 19164,2001 19055,2037 18985,2047 18881,2062
+userdel	q4; 19766,1796 19743,1804 19564,1871 19266,1968 19181,1996 19164,2001 19055,2037 18985,2047 18881,2062
 EOF
      },
      { from  => 1122415200, # 2005-07-27 00:00
@@ -8311,7 +8311,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005511',
        data  => <<EOF,
-userdel	2::inwork 16376,-496 16431,-311 16477,-160 16536,26
+userdel	2::inwork 16378,-489 16431,-311 16477,-160 16536,26
 EOF
      },
      { from  => 1179698400, # 2007-05-21 00:00
@@ -13264,7 +13264,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010810',
        data  => <<EOF,
-userdel	2::inwork 19803,1911 19771,1793
+userdel	2::inwork 19803,1911 19766,1796
 EOF
      },
      { from  => 1228675001, # 2008-12-07 19:36
@@ -20111,8 +20111,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_018211',
        data  => <<EOF,
-userdel	q4::inwork 19803,1911 19771,1793
-#XXX del: userdel	q4::inwork 19771,1793 19728,1660 19679,1571
+userdel	q4::inwork 19803,1911 19766,1796
+#XXX del: userdel	q4::inwork 19766,1796 19704,1621 19676,1577
 EOF
      },
      { from  => 1329681337, # 1320987600, # 2011-11-11 06:00
@@ -20297,12 +20297,15 @@ EOF
 userdel	q4::inwork 12817,2031 12911,1815
 EOF
      },
-     { from  => $isodate2epoch->("2015-04-23 00:00:00"), # 2 Tage Vorlauf, Aufbauten dauern länger
-       until => $isodate2epoch->("2015-04-26 23:59:59"),
+     { from  => $isodate2epoch->("2014-04-17 00:00:00"), # 2 Tage Vorlauf, Aufbauten dauern länger
+       until => $isodate2epoch->("2014-04-21 23:59:59"),
        prewarn_days => 2, # siehe oben
-       periodic => 1,
-       recurrences => [['yearly', days => 18, months => 4]],
-       text  => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 25.4.2015 bis 26.4.2015)',
+       # XXX 2015 abgesagt
+       # -> http://www.berliner-woche.de/mitte/kultur/nisan-kinderfest-abgesagt-d74476.html
+       # -> http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5552.html
+       #periodic => 1,
+       #recurrences => [['yearly', days => 18, months => 4]],
+       text  => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 19.4.2014 bis 21.4.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
@@ -20345,7 +20348,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html',
        data  => <<EOF,
-userdel	q4::inwork 19771,1793 19898,1704
+userdel	q4::inwork 19766,1796 19898,1704
 EOF
      },
      { from  => 1336764755, # 2012-05-11 21:32
@@ -21751,7 +21754,7 @@ EOF
        text  => 'Waßmannsdorfer Straße: Bauarbeiten, Einbahnstraßenregelung, offen stadtauswärts, bis September 2013',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q2::inwork; 16376,-496 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
+userdel	q2::inwork; 16378,-489 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
 EOF
      },
      { from  => undef,
@@ -22708,7 +22711,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021231',
        data  => <<EOF,
-userdel	q4::inwork 16376,-496 16431,-311 16477,-160 16536,26 16590,216 16642,393
+userdel	q4::inwork 16378,-489 16431,-311 16477,-160 16536,26 16590,216 16642,393
 EOF
      },
      { from  => $isodate2epoch->("2014-07-04 20:00:00"),
@@ -23627,7 +23630,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_023200',
        data  => <<EOF,
-userdel	q4::inwork 19679,1571 19728,1660 19771,1793
+userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 EOF
      },
      { from  => 1410069600, # 2014-09-07 08:00
@@ -24049,11 +24052,12 @@ EOF
 EOF
      },
      { from  => 1428530400, # 2015-04-09 00:00
-       until => 1428962399, # 2015-04-13 23:59
+       until => $isodate2epoch->("2015-04-13 05:00:00"), # 1428962399, # 2015-04-13 23:59
        text  => 'Teplitzer Straße: Fahrbahnsanierung, Vollsperrung, von Freitag, dem 10.04.2015, bis Montag, dem 13.04.2015',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php',
+       source_id => 'IM_024612',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php
 userdel	q4::inwork 2087,7811 2106,8075 2120,8335 2126,8426
 EOF
      },

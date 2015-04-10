@@ -1215,11 +1215,12 @@ Fritzi-Massary-Str: Bordsteine	q3 15428,6355 15452,6384
 D¸rtenstr.: Fuﬂg‰nger	q2 13785,4839 13825,4850 13874,4867 13914,4877
 Angelikaweg: Fuﬂg‰nger	q1 15459,2921 15537,3026
 Primelweg: Fuﬂg‰nger, eng	q1 15804,2512 15862,2588
-(Kleestr. - Neukˆllner Str.): Fuﬂg‰nger	q1 16303,2032 16254,1999
+(Kleestr. - Neukˆllner Str.): Fuﬂg‰nger	q1 16302,2034 16254,1999
 Kerbelweg: Fuﬂg‰nger	q1 16603,2641 16547,2680
 Kiefwiesensteig: Fuﬂg‰nger	q1 17880,2152 17901,2075
 Altrader Weg: Fuﬂg‰nger	q1 18008,-58 17946,-100
-(Ladenpassage U Zwickauer Damm): Fuﬂg‰nger	q3 16056,2034 16005,2058 15931,2061
+# REMOVED (existiert nicht mehr) --- (Ladenpassage U Zwickauer Damm): Fuﬂg‰nger	q3 16056,2034 16005,2058 15931,2061
+(U Zwickauer Damm - U Wutzkyallee): Fuﬂg‰nger, unklare Wegf¸hrung	q2 16056,2034 16005,2058
 (U Zwickauer Damm - Agnes-Straub-Weg): Fuﬂg‰nger	q1 15931,2061 15930,2112 15923,2129
 Lupinenweg: Fuﬂg‰nger	q1 16856,1839 16801,1791
 Zum kleinen Pfuhl: Fuﬂg‰nger	q2 12162,1651 12207,1704
@@ -1485,7 +1486,7 @@ Hˆrsingsteig: Fuﬂg‰nger	q1 14082,2289 14099,2197 14086,2148
 Hˆrsingsteig: Fuﬂg‰nger, Bordsteine	q2 14086,2148 14165,2106 14369,2016
 Hˆrsingsteig: Fuﬂg‰nger	q1 14369,2016 14444,2090 14515,2212
 #: XXX_prog BS am Friedrich-Kayﬂler-Weg (ansonsten -> q1)
-(Matth‰usweg - Friedrich-Kayﬂler-Weg): Fuﬂg‰nger, Bordstein	q2 14993,2025 14994,2069
+(Matth‰usweg - Friedrich-Kayﬂler-Weg): Fuﬂg‰nger, Bordstein	q2 14993,2029 14994,2069
 #: XXX_prog BS an beiden Enden (ansonstent -> q1)
 Gansbergsteig: Fuﬂg‰nger, Bordsteine	q2 14676,2375 14776,2474 14703,2553
 (U Johannisthaler Chaussee - U Lipschitzallee): Fuﬂg‰nger, eng	q2 14079,2504 14224,2368 14276,2293
@@ -2125,7 +2126,7 @@ Weg am ehem. G¸terauﬂenring: Gef‰lle, Regenablaufrinnen	q3; 7978,-846 8055,-834 
 #: XXX_prog BS zumindest ein Bordstein am Wendehammer, ansonsten q2 oder so
 Nuthestr.: Bordstein, Fuﬂg‰nger	q3 9815,-805 9813,-822
 #: note: besonders an schˆnen Tagen
-Hochspannungsweg (Britz): einige Fuﬂg‰nger	q1 13769,2991 13631,2938 13561,2898 13430,2837 13264,2763 13194,2732 13190,2730 13187,2729 13136,2705 13029,2661 12924,2617 12825,2573 12694,2517 12593,2472 12391,2382 12384,2379 12373,2375 12280,2330 11747,2091 11626,2037 11373,1925 11343,1937
+Hochspannungsweg (Britz): einige Fuﬂg‰nger	q1 13761,2993 13631,2938 13561,2898 13430,2837 13264,2763 13194,2732 13190,2730 13187,2729 13136,2705 13029,2661 12924,2617 12825,2573 12694,2517 12593,2472 12391,2382 12384,2379 12373,2375 12280,2330 11747,2091 11626,2037 11373,1925 11343,1937
 (Dammweg - Willi-S‰nger-Str.): einige Fuﬂg‰nger	q1 15751,8163 15808,8099 15883,8020
 #: XXX_prog BS (ansonsten q1+, wie der Rest)
 (Alter Postweg): wenige Fuﬂg‰nger, Bordstein	q3 -1824,11656 -1833,11665
@@ -2778,7 +2779,7 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 #: corrected_by: rjoop ("Radfahren nicht erlaubt")
 #: confirmed_by: srt
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 13489,3857 13531,3768 13562,3688 13623,3523
-(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13769,2991 13763,3018 13730,3111 13740,3252 13738,3302 13728,3332 13682,3411 13651,3449 13623,3523
+(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13761,2993 13763,3018 13730,3111 13740,3252 13738,3302 13728,3332 13682,3411 13651,3449 13623,3523
 #: by: ^^^
 #: by: anonymous [AM]
 Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981

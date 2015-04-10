@@ -593,7 +593,7 @@ Cardinalstr.	1s 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15280,17352
 (Marchlewskistr. - Gubener Str.)	1s 13168,12219 13173,12202 13097,12166
-Alter Schönefelder Weg	1 19595,1546 19632,1593 19655,1670 19669,1729 19743,1804
+Alter Schönefelder Weg	1 19599,1557 19636,1609 19653,1671 19669,1729 19743,1804
 Boppstr.	1s 11785,9437 11560,9524
 Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
@@ -2393,7 +2393,7 @@ Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5:-15:trailer=15 17979
 Drängelgitter	BNP:3:45:trailer=10 18613,2983
 Drängelgitter	BNP:3:48:trailer=10 18707,3074
 Drängelgitter	BNP:3:45:trailer=10 18724,3091
-Drängelgitter	BNP:0:36:trailer=0 18822,3188
+Drängelgitter	BNP:3:36:trailer=10 18822,3188
 Drängelgitter	BNP:3:-232:trailer=10 19725,-51
 Drängelgitter	BNP:3:-198:trailer=10 19774,-187
 Drängelgitter	BNP:3:-194:trailer=10 19734,-45
@@ -2758,6 +2758,9 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465
+Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
+Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17610,-330 17651,-393
 Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork 7769,4315 7795,4242
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7818,13993 7917,14051 7962,13977 7866,13916
 Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	2::inwork 15300,11584 15220,11440

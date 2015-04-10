@@ -190,7 +190,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 # REMOVED (-> handicap_s-orig) --- Walterstr./Karl-Marx-Str.: bleibt die Fahrbahn hier?	?::inwork 13126,6687 13099,6712
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
-#: last_checked: 2015-02-01
+#: last_checked: 2015-04-10
 #: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
 # 
@@ -1139,9 +1139,7 @@ L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht me
 #: next_check: 2014-12-19
 Gartz: Bauarbeiten --- ist die B2 danach asphaltiert?	?::inwork 74369,90701 74463,90856 74717,90814 75329,90359
 # 
-#: source_id: IM_023200
-#: next_check: 2014-11-07
-Köpenicker Str.: Bauarbeiten --- gibt es danach Änderungen wegen neuer Radwege/Radspuren?	?::inwork 19679,1571 19728,1660 19771,1793
+# REMOVED (nein, keine Radspuren --- ist eigentlich auch kein Platz da) --- #: source_id: IM_023200 --- #: next_check: 2014-11-07 --- Köpenicker Str.: Bauarbeiten --- gibt es danach Änderungen wegen neuer Radwege/Radspuren?	?::inwork 19676,1577 19704,1621 19766,1796
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141022.1620.399800.html ("in den nächsten Jahren")
 #: next_check: 2016-01-01
@@ -1197,6 +1195,9 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX_prog: könnte man mit einer Art Punkt-Handicap ausdrücken
+Paster-Behrens-Str. - Britzer Park: wegen Bordstein muss man zur östlichen Seite des Wendehammers fahren	? 13329,4294 13270,4202 13171,4091
+# 
 # REMOVED (keine Bauarbeiten!) --- #: XXX Schiffbauerdamm (Mitte): Bauarbeiten, Vollsperrung (bis auf weiteres) in beiden Richtungen zwischen Luisenstr. und Albrechtstr., 03.11.2014 17:12 Uhr bis 30.04.2015 18:00 Uhr	IM_023614 --- #: XXX laut rbbtext ebenso --- Schiffbauerdamm: ist hier wieder gesperrt?	? 8870,12647 9056,12743
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330
@@ -1240,9 +1241,7 @@ Brebacher Str./Dillinger Weg: hat die "Einziehung" von Straßenflächen hier Konse
 #: check_frequency: 180d
 Nennhauser Damm/Finkenkruger Weg: neue Vorfahrtsregelung?	?::projected -7484,13770 -7464,13904 -7457,13957 -7456,14073 -7455,14144 -7457,14317 -7445,14392 -7420,14520 -7418,14564 -7391,14857 -7390,14881 -7387,14951 -7373,15154 -7371,15201 -7365,15306
 # 
-#: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4612
-Stubenrauchstr.: gibt es hier neue Fahrbahnmarkierungen z.B. Radspuren?	? 16182,2200 16135,2135
-# 
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4612 --- Stubenrauchstr.: gibt es hier neue Fahrbahnmarkierungen z.B. Radspuren?	? 16182,2200 16135,2135
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 --- #: last_checked: 2014-09-21 --- Sewanstr.: dieser Abschnitt wird zur Lückstr.	? 16647,10632 16699,10611
 # REMOVED (fast nichts passiert) --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf --- #: last_checked: 2014-07-17 --- #: check_frequency: 60d --- Friedrich-Wilhelm-Platz: Umbau der Radverkehrsanlagen	?::inwork 5314,7217 5333,7201 5352,7184 5397,7205 5364,7330 5352,7428
 # REMOVED --- #: XXX hat das irgendwelche Konsequenzen (e.g. Radwegführung?) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/__bersicht_stra__enbaustellen_neubau_14_06_17.xls?download.html --- #: next_check: 2014-09-30 --- Ottomar-Geschke-Str.: Neubau einer Nebenfahrbahn	?::inwork 21289,4563 21206,4387
@@ -1324,7 +1323,7 @@ Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geä
 # REMOVED (siehe Sperrung der Friedrichsbrücke) --- #: XXX vmz-Eintrag relevant? NEW	Burgstr. (Mitte): Straße vollständig gesperrt (bis 19.10.2013, 24:00 Uhr) in beiden Richtungen zwischen Neue Promenade und Spandauer Str., 10.10.2013 17:29 Uhr bis 19.10.2013 23:59 Uhr	IM_020483	--- #: priority: #A --- Burgstr. und Anna-Louisa-Karsch-Str.: volständig gesperrt?	?::inwork 10132,12941 10166,12777 10264,12826
 # REMOVED (Richtung Norden können Radfahrer explizit passieren; Richtung Süden entweder einen legalen Schlenker über die Scharnweberstr. machen (die ebenfalls gesperrt ist), oder abenteuerlicherweise die Fahrbahn benutzen) --- #: XXX vmz-Eintrag relevant? NEW	Gürtelstr. (Friedrichhain): Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/13) Richtung Frankfurter Allee zwischen Oderstr. und Frankfurter Allee, 01.10.2013 09:22 Uhr bis 14.10.2013 16:00 Uhr	IM_020415	 --- Gürtelstr.: Fahrtrichtung gesperrt?	?::inwork; 15106,11598 15202,11789 15248,11880 15294,11964 15361,12071
 # REMOVED (aufgenommmen) --- #: XXX vmz-Eintrag relevant? NEW	Mühlenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Ende 12/13) stadtauswärts ab Berliner Str., 26.09.2013 11:35 Uhr bis 31.12.2013 16:00 Uhr	IM_020388 --- Mühlenstr.: Bauarbeiten?	?::inwork; 10927,17022 10862,17087
-# REMOVED (lohnt sich wohl nicht mehr) --- #: XXX vmz-Eintrag relevant? CHANGED	Waßmannsdorfer Chaussee (Neukölln): Baustelle, Straße vollständig gesperrt (bis Mitte 12/13) in beiden Richtungen in Höhe Rhodeländerweg, 28.05.2013 13:06 Uhr bis 20.12.2013 15:00 Uhr	IM_019886 --- #: XXX ask rj? --- Waßmannsdorfer Chaussee: Bauarbeiten?	?::inwork 16400,-409 16373,-496 16341,-614 16273,-824
+# REMOVED (lohnt sich wohl nicht mehr) --- #: XXX vmz-Eintrag relevant? CHANGED	Waßmannsdorfer Chaussee (Neukölln): Baustelle, Straße vollständig gesperrt (bis Mitte 12/13) in beiden Richtungen in Höhe Rhodeländerweg, 28.05.2013 13:06 Uhr bis 20.12.2013 15:00 Uhr	IM_019886 --- #: XXX ask rj? --- Waßmannsdorfer Chaussee: Bauarbeiten?	?::inwork 16400,-409 16373,-496 16341,-614 16307,-718 16273,-824
 # REMOVED (aufgenommen) --- #: XXX relevant? --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131206.1025.392499.html --- #: next_check: 2013-12-09 --- Unter den Linden: Asphaltierungsarbeiten vor dem Zeughaus, Richtung Brandenburger Tor gesperrt, 09. Dezember 2013 bis 10. Dezember 2013	?::inwork 9984,12426 9934,12420 9852,12409
 # 
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14478
@@ -1886,16 +1885,7 @@ Giselhersteig: genaue Lage? Qualität?	? 17432,12413 17437,12443
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5291 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066429/29-Anlagen/02/vzb0507_IV-Benennung_Grimmener_Strasse.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013 --- #: XXX fehlt bei Berlin.coords.data --- Grimmener Str.: genaue Lage? Qualität? Existiert die Straße schon?	? 21298,13154 21395,13135 21443,13125
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587 --- #: by; http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3697 --- #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2013 (Amtsblatt) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2014 (Nummerierung) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2014 (Nummerierung) --- #: XXX PLZ=13158, soweit nicht anders angegeben --- #: last_checked: 2014-05-21 (noch nicht umbenannt, aber Pfosten stehen schon) vvv --- #: next_check: 2014-06-21 vvv
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2012 vvv --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130620.1355.386320.html (Fertigstellung der Erschließungsstraße) --- #: XXX neue private Straßen entstehen, fehlen in Berlin.coords.data vvv --- #: last_checked: 2012-09-10 vvv --- #: next_check: 2013-07-30 vvv --- #: osm_watch: way id="220390908" version="2" --- #: XXX ad osm_watch: id referenziert die construction area --- Lübarser Aue: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7313,22515 7292,22505 7235,22505 7082,22414 7049,22393 --- Am Rodelberg: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 7082,22414 7287,22403 7292,22505
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2013
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013 (Berichtigung der Lage -> westlich der Waßmannsdorfer Chaussee)
-#: note: Privatstraße
-#: XXX nördlicher Teil schon passierbar, aber die endgültige Fahrbahndecke fehlt; südlicher Abschnitt in Bau
-#: XXX culdesac?
-#: last_checked: 2014-06-15
-#: check_frequency: 120d
-Schlotterkammsteig: Qualität?	? 16223,-682 16251,-586 16276,-507
-# 
+# REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013 (Berichtigung der Lage -> westlich der Waßmannsdorfer Chaussee) --- #: note: Privatstraße --- #: XXX nördlicher Teil schon passierbar, aber die endgültige Fahrbahndecke fehlt; südlicher Abschnitt in Bau --- #: XXX culdesac? --- #: last_checked: 2014-06-15 --- #: check_frequency: 120d --- Schlotterkammsteig: Qualität?	? 16307,-718 16260,-704 16231,-651 16251,-586 16276,-507
 # REMOVED (eröffnet) --- #: by: http://de.wikipedia.org/wiki/Wriezener_Bahn --- #: next_check: 2013-09-01 --- Blumberg-Rehhahn: geplanter neuer Bahnhof, wo genau wird er liegen?	?::inwork 22968,21473 22978,21412
 # REMOVED (realisiert) --- #: next_check_id: CHERUSKERPARK-2014 --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/uploads/media/Gruenzug_Torgauer_Str_062012_01.pdf --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140723.1150.398518.html (fertig?) --- #: osm_watch: way id="50536166" version="3" (Cheruskerpark) --- #: last_checked: 2014-07-17 --- #: next_check: 2014-07-23 --- Cheruskerpark: hier entsteht eine neue Wegverbindung (wassergebundene Decke), interessant zur Aufnahme in die Datenbasis?	?::inwork 7374,8211 7372,8222 7351,8258 7353,8293
 # 
@@ -2050,7 +2040,7 @@ Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	
 #: next_check ^^^
 #: XXX bei osm schon eingetragen, ist die Straße schon offiziell?
 #: osm_watch: way id="206889091" version="2"
-#: last_checked: 2015-04-04
+#: last_checked: 2015-04-10
 #: check_frequency: 180d
 Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18369,4337 18501,4457
 #: XXX ^^^
@@ -3462,7 +3452,7 @@ Alter Fischerweg (Gosen): Qualität? Ausschilderung?	? 32778,-1044 33013,-790 331
 #: XXX Radwegesanierung in Neukölln vvv
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 8.18 (Realisierung bis 2010) --- #: XXX_osm laut osm existieren bereits Radwege (track), aber stimmt das? --- Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege oder Radspuren?	? 12938,1348 12941,1256 12984,1011
 # REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576
-# REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13396,3512 13526,3519
+# REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13387,3513 13526,3519
 #: XXX Fahrbahn wird ab Kormoranweg saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht?
 #: source_id: IM_023411
 #: last_checked: 2015-02-21
@@ -3516,13 +3506,7 @@ Deilingeweg: ist der Deilingeweg ausgeschildert?	? 6259,23379 6229,23415
 Lauenburger Str.: wird die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5829,6397 5823,6413
 # REMOVED (Gewerbegelände, Befahren nicht erlaubt, auf der anderen Seite war das Tor zu) --- Windthorststr.: Qualität der Verlängerung? Ausschilderung?	? 22552,11029 22554,11049 22490,11133 22469,11138
 # REMOVED (eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2012 vvv --- #: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/xiv274aa_pl_ern_oeff.pdf?start&ts=1361439967&file=xiv274aa_pl_ern_oeff.pdf vvv --- #: XXX Privatstraßen vvv --- #: last_checked: 2012-04-14 (noch in Bau) vvv --- #: next_check: 2012-12-15 vvv --- #: XXX laut osm existieren die Straßen schon --- Seeadlerweg	? 16477,-160 16519,-265 16600,-475 16648,-596 16665,-641 --- Fischadlerweg	? 16519,-265 16478,-399 16513,-510 16572,-666 --- Eulenweg	? 16600,-475 16513,-510 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: by: ^^^
-# 
-#: last_checked: 2014-06-15 (Bauarbeiten, Straßenschild steht schon)
-#: check_frequency: 120d
-#: osm_watch: way id="151742436" version="5"
-#: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg
-Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsberuhigt?	? 17610,-330 17651,-393
-# 
+# REMOVED (Bauarbeiten, siehe gesperrt-orig) --- #: last_checked: 2014-06-15 (Bauarbeiten, Straßenschild steht schon) --- #: check_frequency: 120d --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- Mathilde-Vaerting-Weg: Qualität nach den Bauarbeiten? Ist die Straße verkehrsberuhigt?	? 17610,-330 17651,-393
 # REMOVED (eingetragen) --- #: XXX str_cont_ausnahme-Eintrag wird notwendig sein --- #: XXX hier auch Privatstraße? --- #: last_checked: 2014-06-09 --- #: check_frequency: 300d --- Trollblumenweg: wird verlängert, Qualität der Verlängerung?	?::inwork 16020,3732 16039,3766 16101,3727
 # REMOVED (eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2011 --- #: last_checked: 2011-09-10 --- #: next_check: 2012-03-01 --- #: osm_watch: way id="180482046" version="1" --- Am Römersgrün: Straße und Wohnanlage in Bau. Genaue Lage? Qualität?	?::inwork 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706
 # REMOVED (eingetragen) --- #: last_checked: 2012-09-05 (Kay Leonhardt) vvv --- #: next_check: 2013-04-01 vvv --- #: by: http://farm9.staticflickr.com/8020/7599711312_1407440291_c.jpg (noch in Bau) --- #: XXX bei osm bereits eingetragen --- Ellen-Widmann-Pfad: Existiert die Straße schon? Qualität? Wo liegt die Straße genau?	? 3812,2303 3813,2368 3814,2408
@@ -3904,8 +3888,10 @@ Im Brachfeldwinkel: existiert eine für Radfahrer befahrbare Verbindung zum Erhol
 Warsin - Rieth: mittlerweile fast vollständig asphaltiert, bis auf 2km Kiesstrecke --- wo sind genau die asphaltierten und Kies-Abschnitte?	? 61080,147233 61159,147126 61212,146969 61436,146668 61529,146496 61748,146197 61701,146118 61660,145978 61680,145900 62088,145749 62271,145636 62327,145481 62336,145361 62390,145266 62423,145178 62547,145035 62595,144932 62674,144822
 Warsin - Rieth: mittlerweile fast vollständig asphaltiert, bis auf 2km Kiesstrecke --- wo sind genau die asphaltierten und Kies-Abschnitte?	? 63921,144506 64011,144465 64156,144283 64319,144145 64608,143988 64776,143825
 #: by: ^^^
-Hornkleepfad - Wegedornstr.: existiert hier eine Verbindung? Qualität? Nachts beleuchtet?	? 18830,1497 18827,1490 19034,1441 19061,1457
-Rudower Höhe - Hornkleepfad: Qualität des Wegs?	? 18716,1249 18739,1329 18786,1510 18830,1497
+# 
+#: last_checked: 2015-04-10 (Bauarbeiten)
+#: check_frequency: 120d
+Hornkleepfad - Wegedornstr.: wird hier eine Verbindung entstehen? Qualität? Nachts beleuchtet?	?::inwork 18996,1453 19034,1441 19061,1457
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330
 #: next_check: 2015-04-01

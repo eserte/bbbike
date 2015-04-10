@@ -702,11 +702,11 @@ Jungfernheideweg	1 1465,14963 1423,14679 1361,14431
 Dihlmannstr.: Radweg existiert	1 651,15091 755,15123 851,15155 957,15189 976,15195 1065,15229
 Bahntrasse	3nocross::ignrte 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747
 Zwickauer Damm -> Sattlerstr.: Bahntrasse	3::igndisp 16135,2135 16056,2034 16177,1943
-Zwickauer Damm -> Ladenpassage U Zwickauer Damm: Bahntrasse	3::igndisp 16002,1964 16056,2034 16005,2058
-Ladenpassage U Zwickauer Damm -> Zwickauer Damm: Bahntrasse	3::igndisp 16005,2058 16056,2034 16135,2135
-Ladenpassage U Zwickauer Damm -> Sattlerstr.: Bahntrasse	3::igndisp 16005,2058 16056,2034 16177,1943
+Zwickauer Damm -> U Wutzkyallee: Bahntrasse	3::igndisp 16002,1964 16056,2034 16005,2058
 Sattlerstr. -> Zwickauer Damm: Bahntrasse	3::igndisp 16177,1943 16056,2034 16002,1964
-Sattlerstr. -> Ladenpassage U Zwickauer Damm: Bahntrasse	3::igndisp 16177,1943 16056,2034 16005,2058
+Sattlerstr. -> U Wutzkyallee: Bahntrasse	3::igndisp 16177,1943 16056,2034 16005,2058
+U Wutzkyallee -> Zwickauer Damm: Bahntrasse	3::igndisp 16005,2058 16056,2034 16135,2135
+U Wutzkyallee -> Sattlerstr.: Bahntrasse	3::igndisp 16005,2058 16056,2034 16177,1943
 Zwickauer Damm -> Gürtlerweg: Bahntrasse	3::igndisp 16056,2034 16002,1964 16106,1886
 Gürtlerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 16106,1886 16002,1964 15875,1796
 Zwickauer Damm -> Schriftsetzerweg: Bahntrasse	3::igndisp 16002,1964 15875,1796 15967,1718
@@ -715,6 +715,9 @@ Schriftsetzerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 15967,1718 15875,1796 
 Schriftsetzerweg -> Theodor-Loos-Weg: Bahntrasse	3::igndisp 15967,1718 15875,1796 15818,1834
 Theodor-Loos-Weg -> Zwickauer Damm: Bahntrasse	3::igndisp 15818,1834 15875,1796 16002,1964
 Theodor-Loos-Weg -> Schriftsetzerweg: Bahntrasse	3::igndisp 15818,1834 15875,1796 15967,1718
+Bahntrasse	3nocross::ignrte 16135,2135 16182,2200 16242,2279
+Kornradenstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16318,2146 16182,2200 16135,2135
+Stubenrauchstr. -> Kornradenstr.: Bahntrasse	3::igndisp 16242,2279 16182,2200 16318,2146
 Mittelstreifen	3nocross::ignrte 13294,6386 13307,6359 13323,6322
 Buschkrugallee -> Bürgerstr.: Mittelstreifen	3::igndisp 13323,6322 13307,6359 13239,6344
 Bürgerstr. -> Buschkrugallee: Mittelstreifen	3::igndisp 13239,6344 13307,6359 13294,6386
@@ -870,8 +873,8 @@ Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18778,8663 18737,868
 Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18866,8738 18737,8686 18733,8650
 Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18866,8738 18737,8686 18778,8663
 Lötzener Allee	1 564,10584 452,10669 475,10882 495,11090
-keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 19904,3464
-Adlergestell -> Weerthstr.: keine Abbiegemöglichkeit	3::igndisp 19904,3464 20010,3340 20038,3357
+keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 20002,3349 19904,3464
+Adlergestell -> Weerthstr.: keine Abbiegemöglichkeit	3::igndisp 20002,3349 20010,3340 20038,3357
 Weerthstr. -> Adlergestell: keine Abbiegemöglichkeit	3::igndisp 20038,3357 20010,3340 20064,3278
 Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5258,11285
 Hardenbergstr. -> Yva-Bogen: Mittelstreifen	3::igndisp 5542,11075 5459,11135 5426,11039

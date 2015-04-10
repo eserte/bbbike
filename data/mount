@@ -196,7 +196,7 @@ Steigung 4.8% (Martin-Heydert-Str.)	St; -7710,313 -7712,407
 Steigung 4.8% (Christinenstr.)	St; 10639,13864 10688,13963
 Steigung 4.8% (Am Alten Friedhof)	St; 19181,1996 19122,1839
 Steigung 4.8% (Alter Schönefelder Weg)	St; 19743,1804 19669,1729
-Steigung 4.8% (Alter Schönefelder Weg)	St; 19669,1729 19655,1670
+Steigung 4.8% (Alter Schönefelder Weg)	St; 19669,1729 19653,1671
 Steigung 4.7% (Straße zum Löwen)	St; -5961,1767 -5929,1649
 Steigung 4.7% (Püttbergeweg)	St; 31967,4381 31670,4365
 Steigung 4.7% (Normannenstr. (Altglienicke))	St; 19898,1704 19891,1633
@@ -236,6 +236,8 @@ Steigung 4.4% (Straße zum Müggelturm)	St; 25716,1492 25676,1508
 Steigung 4.4% (Nymphenufer)	St; -4134,1984 -4164,1993
 Steigung 4.4% (Martin-Heydert-Str.)	St; -7714,529 -7716,599
 Steigung 4.4% (Martin-Heydert-Str.)	St; -7712,407 -7714,529
+Steigung 4.4% (Köpenicker Str. (Altglienicke, Adlershof))	St; 19766,1796 19704,1621
+Steigung 4.4% (Köpenicker Str. (Altglienicke, Adlershof))	St; 19704,1621 19676,1577
 Steigung 4.4% (Havelchaussee)	St; -3304,9470 -3140,9294
 Steigung 4.4% (Dorothea-Viehmann-Str.)	St; 19266,1968 19206,1809
 Steigung 4.4% ((Richterstr. - Rathausstr.))	St; 9021,3878 9117,3898
@@ -248,8 +250,6 @@ Steigung 4.3% (Sakrower Kirchweg)	St; -7595,4374 -7419,4497
 Steigung 4.3% (Preußenstr.)	St; 20709,1413 20761,1345
 Steigung 4.3% (Preußenstr.)	St; 20693,1447 20709,1413
 Steigung 4.3% (Preußenstr.)	St; 20668,1524 20693,1447
-Steigung 4.3% (Köpenicker Str. (Altglienicke, Adlershof))	St; 19771,1793 19728,1660
-Steigung 4.3% (Köpenicker Str. (Altglienicke, Adlershof))	St; 19728,1660 19679,1571
 Steigung 4.3% (Höhensteig)	St; 21799,234 21844,238
 Steigung 4.3% (Höhensteig)	St; 21712,215 21799,234
 Steigung 4.3% (Friesenstr. (Kreuzberg, Tempelhof))	St; 9793,9241 9795,9162
@@ -325,6 +325,8 @@ Steigung 3.9% (Brauhausberg (B2) (Potsdam))	St; -12358,-2278 -12423,-2459
 Steigung 3.9% (Anklamer Str.)	St; 9800,14306 9938,14356
 Steigung 3.9% (Am Vierrutenberg)	St; 6035,23080 6075,23022
 Steigung 3.9% (Am Vierrutenberg)	St; 5893,23287 6035,23080
+Steigung 3.9% (Alter Schönefelder Weg)	St; 19653,1671 19636,1609
+Steigung 3.9% (Alter Schönefelder Weg)	St; 19636,1609 19599,1557
 Steigung 3.9% (Alsenzer Weg)	St; 27804,878 27751,819
 Steigung 3.9% (Aachener Str.)	St; 4623,8457 4687,8306
 Steigung 3.9% ((Hasenheide, Hauptweg im Park))	St; 11136,9183 11141,9107
@@ -377,8 +379,6 @@ Steigung 3.6% (Bautzener Platz)	St; 8182,9240 8100,9240
 Steigung 3.6% (Am Rupenhorn)	St; -2457,10609 -2473,10662
 Steigung 3.6% (Am Kiesberg)	St; 18985,2047 18967,2002
 Steigung 3.6% (Am Kiesberg)	St; 18967,2002 18941,1934
-Steigung 3.6% (Alter Schönefelder Weg)	St; 19655,1670 19632,1593
-Steigung 3.6% (Alter Schönefelder Weg)	St; 19632,1593 19595,1546
 Steigung 3.6% ((Kirchsteig - Grünzug am Falkenberg))	St; 21860,462 21774,412
 Steigung 3.5% (Wilhelmstr. (Wilhelmstadt))	St; -5455,11321 -5501,11251
 Steigung 3.5% (Stimmingstr.)	St; -7445,615 -7477,739
@@ -450,6 +450,7 @@ Steigung 3.2% (Zoppoter Str.)	St; 3314,7269 3308,7193
 Steigung 3.2% (Zoppoter Str.)	St; 3308,7193 3302,7092
 Steigung 3.2% (Südostallee)	St; 16122,6084 16049,6121
 Steigung 3.2% (Südostallee)	St; 15996,6144 16049,6121
+Steigung 3.2% (Schönefelder Chaussee)	St; 19676,1577 19599,1557
 Steigung 3.2% (Rudolf-Reusch-Str.)	St; 15656,12235 15670,12298
 Steigung 3.2% (Rudolf-Reusch-Str.)	St; 15651,12214 15656,12235
 Steigung 3.2% (Oehlertring)	St; 7018,5201 6925,5215
@@ -528,7 +529,6 @@ Steigung 3.0% ((Berliner Balkon, Nord-Süd-Weg))	St; 24158,11253 24175,11265
 Steigung 3.0% ((Berliner Balkon, Nord-Süd-Weg))	St; 24150,11150 24158,11253
 Steigung 2.9% (Willibald-Alexis-Str.)	St; 9596,9092 9669,9080
 Steigung 2.9% (Wilhelmstr. (Wilhelmstadt))	St; -5501,11251 -5564,11209
-Steigung 2.9% (Schönefelder Chaussee)	St; 19679,1571 19595,1546
 Steigung 2.9% (Pufendorfstr.)	St; 12616,12844 12842,13070
 Steigung 2.9% (Platanenallee)	St; 1747,11719 1657,11737
 Steigung 2.9% (Philipp-Jacob-Rauch-Str.)	St; 27615,1245 27573,1279
@@ -2005,7 +2005,7 @@ Steigung 1.1% (Harbigstr.)	St; 823,10492 957,10540
 Steigung 1.1% (Harbigstr.)	St; 775,10426 823,10492
 Steigung 1.1% (Hans-Otto-Str.)	St; 12478,13903 12542,13984
 Steigung 1.1% (Hans-Otto-Str.)	St; 12398,13792 12478,13903
-Steigung 1.1% (Grünauer Str. (Altglienicke))	St; 19771,1793 19898,1704
+Steigung 1.1% (Grünauer Str. (Altglienicke))	St; 19766,1796 19898,1704
 Steigung 1.1% (Glashütter Weg)	St; 18425,1831 18266,1715
 Steigung 1.1% (Gatower Str.)	St; -4789,11225 -4836,11138
 Steigung 1.1% (Freienbrinker Saum)	St; 31424,4658 31364,4711
@@ -2136,8 +2136,8 @@ Steigung 1.0% (Koenigsallee)	St; 811,8022 761,7922
 Steigung 1.0% (Keltererweg)	St; -4836,11138 -4550,11073
 Steigung 1.0% (Karlstr. (Kaulsdorf))	St; 22751,11381 22945,11402
 Steigung 1.0% (Jungfernsteg)	St; 19271,1461 19379,1357
-Steigung 1.0% (Jungfernsteg)	St; 19192,1510 19271,1461
-Steigung 1.0% (Jungfernsteg)	St; 19174,1522 19192,1510
+Steigung 1.0% (Jungfernsteg)	St; 19200,1510 19271,1461
+Steigung 1.0% (Jungfernsteg)	St; 19174,1522 19200,1510
 Steigung 1.0% (Johann-Jacob-Baeyer-Str.)	St; 27977,1187 27810,987
 Steigung 1.0% (Jahnstr. (Britz))	St; 13027,6168 12833,6127
 Steigung 1.0% (Hufenweg)	St; 20814,-935 20829,-773
