@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-04-07 vvv
+#: last_checked: 2015-04-11 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -563,6 +563,7 @@ Ernststr.: Fußgänger	q2 2497,19503 2700,19527
 (S-Bahnunterführung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17109,18772
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
+(Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17159,18375 17209,18335
 #: note: jeweils zwei Serpentinen pro Seite, großer Zeitverlust
 Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
@@ -865,7 +866,7 @@ S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20116,16303
 (Kinderbad Platsch - Max-Herrmann-Str.): Fußgänger	q1 21102,16415 21177,16499 21238,16627
 (oberer Wuhlewanderweg - Alte Hellersdorfer Str.): einige Fußgänger	q1 22851,14603 22876,14594 23057,14582
 Wuhlewanderweg: Fußgänger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
-Wuhlewanderweg: Fußgänger	q1 22441,15118 22573,15043 22741,14761 22806,14631 22836,14520 22843,14452 22827,14356 22839,14149 22825,14109 22607,13890 22562,13855 22462,13726 22447,13690 22359,13599 22295,13530
+Wuhlewanderweg: Fußgänger	q1 22441,15118 22573,15043 22741,14761 22806,14631 22836,14520 22843,14452 22827,14356 22839,14149 22825,14109 22607,13890 22562,13855 22462,13726 22457,13713 22447,13690 22359,13599 22295,13530
 Wuhlewanderweg: enge Unterführung	q3 22359,13599 22259,13508
 Wuhlewanderweg: Fußgänger	q1 22295,13530 22259,13508 22191,13414 22221,13027 22196,12961 22036,12367 21998,12204
 Wuhlewanderweg: Fußgänger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
@@ -1876,9 +1877,11 @@ Ahrensfelder Berge: Fußgänger	q1 22672,16341 22666,16412 22670,16562 22661,16639
 Ahrensfelder Berge: Fußgänger	q1 22666,16412 22596,16435 22512,16542 22378,16657 22299,16730 22232,16793 22158,16855 22050,16781
 Ahrensfelder Berge: Fußgänger	q1 22512,16542 22432,16467
 (Glambecker Ring - Parsteiner Ring): über Gehweg fahren	q2 22293,16577 22311,16582 22311,16562
+#: XXX_prog BS an der Karl-Holtz-Str. (ansonsten q2)
 (Blumberger Damm - Karl-Holtz-Str.): Fußgänger, parkende Autos an der Karl-Holtz-Str.	q3 21574,16547 21460,16572
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): einige Fußgänger	q1 21278,16685 21142,16730 21077,16710 21019,16698 21000,16706
-Springpfuhlpark: einige Fußgänger	q1 19524,14474 19534,14459 19545,14290 19523,14190 19529,14019 19565,13893 19567,13858 19570,13833 19573,13742 19593,13702 19602,13575
+(Springpfuhlpark - Murtzaner Ring): Rampe, Fußgänger	q2 19535,14448 19593,14452
+Springpfuhlpark: Fußgänger	q2 19524,14474 19534,14459 19535,14448 19545,14290 19544,14234 19547,14042 19565,13893 19567,13858 19570,13833 19573,13742 19593,13702 19602,13575
 #: XXX_prog BS an der Parkplatzseite (ansonsten durch Fußgänger q1 (siehe unten) ersetzen)
 (Geißenweide - Blenheimstr./Bärensteinstr.): Bordstein	q3 21128,14799 21143,14803
 (Geißenweide - Blenheimstr./Bärensteinstr.): Fußgänger	q1 21143,14803 21211,15009 21261,15153 21260,15209
@@ -2058,7 +2061,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
-(Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17235,18352 17162,18304 17087,18434 17102,18490 17021,18663
+(Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17235,18352 17209,18335 17162,18304 17087,18434 17102,18490 17021,18663
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
 #: XXX_prog falls man die Umfahrung auf dem Gehweg wählt, auf der südlichen Seite, ansonsten wegfallen lassen
@@ -2158,6 +2161,9 @@ Bürgerstr. - Bendastr.: einige Fußgänger, Umfahrung Treppe	q2 12812,6343 12804,6
 #: XXX_prog BS am Wendehammer, ansonsten q1
 Brienzer Str.: einige Fußgänger, Bordstein	q2 7282,17318 7289,17277
 Torfstraßensteg: einige Fußgänger	q1 6847,14735 6824,14821
+(Parkplatz Getränke Hoffmann): Parkplatzverkehr	q2+ 18647,12354 18715,12348
+(westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 22346,13855 22389,13824 22426,13735 22445,13720 22457,13713
+Darguner Str.: enge Straße	q1+ 17566,18680 17635,18591
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3172,7 +3178,7 @@ Knappenpfad: enge Straße	q1 2471,24709 2410,24837 2364,24886 2340,24884
 #: by: Michael Häusler:
 Auerhahnbalz: enge Straße	q2 636,4765 650,4712 668,4653 697,4605 723,4572
 #: by: Anna Lytik:
-Welsestr.: enge Straße	q1 18601,18342 18620,18283 18660,18226 18709,18159 18746,18116 18744,18050 18482,17847 18357,17735 18300,17740 18253,17796 18269,17807
+Welsestr.: enge Straße	q1 18601,18342 18620,18283 18660,18226 18709,18159 18746,18116 18744,18050 18476,17842 18357,17735 18300,17740 18253,17796 18269,17807
 #: by: Peter Klein:
 Bleichertstr.: enge Straße	q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,1457 8661,1649
 #: by: Nadine (bliedtner):
@@ -3300,7 +3306,7 @@ Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
 #: confirmed_by: srt:
 Hohenschönhausener Weg: Fußgänger haben Vorrang	q1+ 15600,18551 15825,18385 16306,18011 16397,17938 16502,17858 16607,17767 16697,17695
 #: by: anonymous (q1 ohne genauere Kommentierung, aber auf dem Luftbild sieht es eng aus)
-Murtzaner Ring: enge Straße	q1 19593,14472 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
+Murtzaner Ring: enge Straße	q1 19593,14472 19593,14452 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
 #XXX: P. Loll:, corrected_by: Uwe Borgenhagen (not mentioned): Windenweg: enge Straße	q1 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
 #: by: Mario Hensel:
 Lindenhoekweg: enge Straße	q1 12382,15802 12310,15837 12247,15868

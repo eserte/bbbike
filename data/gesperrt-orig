@@ -460,8 +460,9 @@ Kastanienallee	1 10838,14962 10881,15047
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
 Spindlersfelder Str.	2 21324,3691 21215,3919 21143,4150 21130,4239 21080,4702 21075,4769 21065,4957
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben
+#: osm_watch: way id="25585951" version="9"
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025
-#: last_checked: 2015-03-15
+#: last_checked: 2015-04-11
 Rathausstr.:	1s:q4 15651,12214 15628,12246 15576,12315 15537,12367
 Alt-Marzahn	1 21112,15396 21048,15424 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
 #: confirmed_by: srt vvv
@@ -571,7 +572,7 @@ Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
 Andernacher Str.	1 19030,8559 19000,8509
 Andernacher Str.	1 18949,8437 19000,8509
 Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
-Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14472
+Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22246,4711 22175,4730
@@ -658,7 +659,7 @@ Washingtonplatz	1s 8106,13130 7937,13126
 #: note: Einfahrt verboten
 Pfarrer-Lütkehaus-Platz	1 10228,-2136 10231,-2159
 Radebeuler Str.	1 19067,13818 19025,14037
-Beilsteiner Str.	1 18749,12413 18800,12838 18832,13099 18852,13269
+Beilsteiner Str.	1 18748,12399 18800,12838 18832,13099 18852,13269
 #: by: osm
 (Breite Str., Verbindung)	1s:q4 10463,18321 10487,18270
 #: by: Norbert Palzkill:
@@ -1433,7 +1434,7 @@ Edisonstr.: Straßenbahn	3nocross 18010,7133 17934,7029 17919,6978
 Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5153,15658 -5370,15721 -5470,15750
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
-Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20532,15564 20733,15657
+Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20532,15564 20580,15586
 Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15850,14308
 Alt-Kaulsdorf: Mittelstreifen	3nocross 22484,11270 22756,11268 22937,11265
 Alt-Kaulsdorf: Mittelstreifen	3nocross 23101,11261 23362,11263 23447,11264 23648,11265
@@ -2589,6 +2590,15 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX Sperrungen wegen Bauarbeiten für die IGA 2017 vvv
+#: last_checked: 2015-04-11 vvv
+#: next_check: 2017-06-01 vvv
+IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
+IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
 #: XXX Rübertragen ist zur Not möglich vvv
 #: last_checked: 2015-04-10 vvv
 #: check_frequency: 90d vvv
@@ -2721,8 +2731,9 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED (keine Bauzäune mehr) --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf --- #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt? --- #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben? --- #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014 --- #: last_checked: 2014-09-12 (Durchfahrt möglich, man muss an Bauzäunen vorbei) --- #: check_frequency: 21d --- Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung)
-#: last_checked: 2014-09-27
-#: next_check: 2015-03-01
+#: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent?
+#: last_checked: 2015-04-11
+#: check_frequency: 180d
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 # REMOVED --- #: XXX hier steht noch ein Bauzaun --- #: last_checked: 2014-09-21 --- Viechtacher Str.: Bauarbeiten, Zufahrt zur Zwieseler Str. noch gesperrt	2::inwork 19657,9666 19727,9672

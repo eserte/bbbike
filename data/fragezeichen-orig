@@ -165,7 +165,7 @@ Schönerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 
 # REMOVED (realisiert (Einbahnstraße offen)) --- #: XXX Baumaßnahme 3.35 (Realisierung in 2011) --- #: last_checked: 2013-04-30 --- #: next_check: 2013-07-30 --- Pasedagplatz: wird hier eine Ampel entstehen? Oder die Einbahnstraßenregelung für Radfahrer aufgehoben?	?::projected 14174,17226 14144,17165
 # 
 #: XXX Baumaßnahme 10.11 (Realisierung nach 2011)
-#: last_checked: 2014-09-27
+#: last_checked: 2015-04-11
 #: check_frequency: 180d
 Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20769,17650 20728,17670 20485,17784
 # 
@@ -176,7 +176,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="3"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2015-02-13
+#: last_checked: 2015-04-11
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -399,7 +399,7 @@ Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13
 Maaßenstr.: welche Auswirkungen wird die neue "Begegnungszone" für Radfahrer haben? Wird der Radweg verschwinden?	?::inwork 7080,10098 7060,10221 7033,10328
 # 
 # REMOVED (Umleitung geht anders herum) --- #: XXX laut fritz, "für mehrere Monate" --- #: next_check: 2015-02-11 --- Rathausstr. (Lichtenberg): gibt es Änderungen während der Bauarbeiten Frankfurter Allee/Gürtelstr., z.B. wird die Einbahnstraßenrichtung umgedreht?	? 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
-# REMOVED (-> aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- #: note: Privatstraße, südlicher (jetzt schon bestehender) Abschnitt bleibt öffentlich --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- Zur alten Börse: Qualität, schon fertig?	? 18736,13080 18712,12853 18682,12599 18649,12371 --- Marzahner Chaussee [Zur alten Börse]: Qualität, schon fertig?	? 18649,12371 18639,12272 18654,12255
+# REMOVED (-> aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- #: note: Privatstraße, südlicher (jetzt schon bestehender) Abschnitt bleibt öffentlich --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- Zur alten Börse: Qualität, schon fertig?	? 18736,13080 18712,12853 18682,12599 18649,12371 --- Marzahner Chaussee [Zur alten Börse]: Qualität, schon fertig?	? 18649,12371 18647,12354 18639,12272 18654,12255
 # REMOVED --- #: XXX fehlt in Berlin.coords.data --- #: note: "Mahlsdorfer Grünzug" --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2015 (Nummerierung) --- Pfarrhufenanger: Qualität, schon befahrbar? Verkehrsberuhigt?	? 25599,13069 25427,12847 25250,12632
 # REMOVED (teilweise offiziell für Radfahrer offen) --- #: XXX Zimmerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 01/15) Richtung Friedrichstr. zwischen Wilhelmstr. und Friedrichstr., 04.11.2014 14:58 Uhr bis 31.01.2015 16:00 Uhr --- #: XXX wahrscheinlich für Radfahrer offen --- #: source_id: IM_023356 --- #: next_check: 2014-11-10 --- Zimmerstr.: Bauarbeiten für Radfahrer relevant?	?::inwork 9155,11283 9478,11317
 # 
@@ -408,11 +408,7 @@ Maaßenstr.: welche Auswirkungen wird die neue "Begegnungszone" für Radfahrer hab
 #: check_frequency: 60d
 Rummelsburger/Zacherstr.: Ampel wird verlegt (auf die Ostseite)	?::projected 17834,11192 17848,11204
 # 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141028.1510.399863.html
-#: XXX Bauende voraussichtlich zum Jahresende
-#: next_check: 2014-12-31
-Wege im Springpfuhlpark: gibt es danach relevante Änderungen?	?::inwork 19565,13893 19529,14019 19523,14190 19545,14290 19534,14459 19524,14474
-# 
+# REMOVED (kaum Änderungen) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141028.1510.399863.html --- #: XXX Bauende voraussichtlich zum Jahresende --- #: next_check: 2014-12-31 --- Wege im Springpfuhlpark: gibt es danach relevante Änderungen?	?::inwork 19565,13893 19547,14042 19544,14234 19545,14290 19535,14448 19534,14459 19524,14474
 # REMOVED (läuft eh' bald aus) --- #: source_id: IM_023275 --- #: XXX falls ja -> 27.10.2014 11:00 Uhr bis 02.11.2014 16:00 Uhr --- #: XXX -> zurzeit offiziell nur für BVG frei, aber unproblematisch für Radfahrer --- #: last_checked: 2014-10-30 --- #: check_frequency: 14d --- An der Spandauer Brücke: Sperrung für Radfahrer relevant?	? 10286,13084 10339,13052 10371,13006
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3901 vvv
@@ -452,12 +448,8 @@ Fürstenwalder Damm: existieren nach den Bauarbeiten vielleicht Radwege?	? 26302,
 #: next_check: 2015-06-01
 Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen (Suggestivstreifen)	?::projected -2504,22626 -2540,22694 -2424,22991 -2306,23259 -2248,23409 -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2014
-# REMOVED (dieser Abschnitt existiert schon) --- Goldfasanenweg: existiert die Straße bereits? Genaue Lage (GPS-Track!)? Qualität?	? 20864,15264 20861,15352
-#: last_checked: 2014-09-27
-#: check_frequency: 90d
-Goldfasanenweg: dieser Abschnitt fehlt noch	?::inwork 20861,15352 20906,15352
-# 
+# REMOVED (dieser Abschnitt existiert schon) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2014 --- Goldfasanenweg: existiert die Straße bereits? Genaue Lage (GPS-Track!)? Qualität?	? 20864,15264 20861,15352 20906,15352
+# REMOVED (realisiert) --- #: last_checked: 2014-09-27 --- #: check_frequency: 90d --- Goldfasanenweg: dieser Abschnitt fehlt noch	?::inwork 20861,15352 20906,15352
 # REMOVED (aus der S-Bahn gesehen, kann schon benutzt werden) --- #: next_check_id: TORGAUER-2014 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140723.1150.398517.html --- #: XXX Arbeiten beginnen im September 2014 und enden im Dezember 2014 --- #: XXX wird es Einschränkungen für Radfahrer während der Bauarbeiten geben? --- #: XXX RW6 entfernen --- #: last_checked: 2014-10-15 --- #: check_frequency: 90d --- Torgauer Str.: Straße wird zurückgebaut, nur ein Rad/Gehweg bleibt erhalten, wahrscheinlich mit besserer Qualität	?::projected 7250,8223 7374,8211 7402,8208
 # REMOVED (scheint aber weiterhin betoniert zu sein) --- #: XXX zurzeit betoniert, Q0 bleibt aber --- #: next_check: 2014-08-23 --- Radenzer Straße und Heidemühler Weg: nach den Bauarbeiten asphaltiert	? 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,6503
 # 
@@ -486,13 +478,7 @@ Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?
 Am Weingarten: die Fortsetzung des Syringenplatz soll hier benannt werden	? 13765,14665 13867,14507
 # 
 # REMOVED (während der Bauarbeiten an der Karlshorster Str. wird die Ampel höchstwahrscheinlich eingeschaltet werden) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5910 --- #: last_checked: 2014-06-11 (Ampel steht, aber nicht eingeschaltet) --- Kynaststr./Hauptstr.: eine provisorische Ampel wird wieder aufgestellt	? 14906,10820
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2014
-#: XXX Fertigstellung des Radwegs?
-#: last_checked: 2014-09-27
-#: check_frequency: 120d
-Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected 20667,15721 20733,15657
-# 
+# REMOVED (wahrscheinlich wird hier nichts entstehen...) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2014 --- #: XXX Fertigstellung des Radwegs? --- #: last_checked: 2014-09-27 --- #: check_frequency: 120d --- Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected 20667,15721 20733,15657
 # REMOVED (Radweg realisiert) --- #: source_id: IM_022020 --- # last_checked: 2014-07-12 --- #: next_check: 2014-07-28 ---Konrad-Wolf-Str.: in Richtung Südwesten wird eine Radweganlage gebaut	?::inwork; 15272,14691 15174,14638 15066,14579
 # REMOVED (in handicap_s-orig aufgenommen) --- Mühsamstr.: Baustelle abfahren, genaue Position sowie Penalty abschätzen	?::inwork 13559,12779 13506,12752
 # 
@@ -527,13 +513,7 @@ Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführ
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # 
 # REMOVED (neu asphaltiert) --- #: last_checked: 2013-11-11 --- Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
-# 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20131108.1050.391371.html (bis September 2014)
-#: source_id: IM_020636
-#: source_id: IM_023589
-#: last_checked: 2014-09-27
-#: next_check: 2015-06-30
-Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,16203 22696,16208 22631,16215 22495,16165 22131,16000 21951,15918 21709,15808
+# REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20131108.1050.391371.html (bis September 2014) --- #: source_id: IM_020636 --- #: source_id: IM_023589 --- #: last_checked: 2014-09-27 --- #: next_check: 2015-06-30 --- Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,16203 22696,16208 22631,16215 22495,16165 22131,16000 21951,15918 21709,15808
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3629
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2014
@@ -990,7 +970,7 @@ Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,13
 # 
 #: XXX diese Straßen existieren noch nicht
 #: XXX teilweise fehlen sie auch in Berlin.coords.data
-#: last_checked: 2014-09-27 vvv
+#: last_checked: 2015-04-11 vvv
 #: check_frequency: 360d vvv
 An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
 Markus-Herz-Weg: Qualität?	?::projected 20701,18634 20910,18719 21123,18813
@@ -1214,12 +1194,8 @@ Heinersdorfer Str./Blankenburger Str.: wo genau hören/fangen die Straßen auf/an?
 # 
 Am Bullengraben: Qualität? Unbeleuchtet?	? -6269,13472 -6197,13504 -6086,13578 -6020,13598 -5949,13600
 # 
-Neubrandenburger Str.: Qualität?	? 17401,18409 17580,18548 17635,18591 17667,18617 17678,18695
-# 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141127.1230.400389.html
-#: priority: #A
-Am Kienberg: sind die Wege bereits gesperrt?	? 22670,14520 22679,14450 22639,14384 22462,14172 22414,14144 22172,14287 22061,14471 22026,14501 21985,14513
-# 
+# REMOVED (eingetragen) --- Neubrandenburger Str.: Qualität?	? 17401,18409 17580,18548 17635,18591 17667,18617 17676,18701
+# REMOVED (-> gesperrt-orig) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141127.1230.400389.html --- #: priority: #A --- Am Kienberg: sind die Wege bereits gesperrt?	? 22670,14520 22679,14450 22639,14384 22462,14172 22414,14144 22172,14287 22061,14471 22026,14501 21985,14513
 # REMOVED (-> ampeln-orig) --- #: XXX gibt es während der Bauarbeiten Einschränkungen bzgl. der Radwege? vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv --- #: XXX -> Köpenicker Landstr. (Baumschulenweg): Baustelle, linker Fahrstreifen in jeder Richtung gesperrt (bis Anfang 12/14, Gesamtmaßnahme bis 2016) in beiden Richtungen zwischen Neue Krugallee und Schnellerstr., 25.11.2014 13:08 Uhr bis 03.12.2014 16:00 Uhr	IM_023532 --- #: last_checked: 2014-11-15 vvv --- #: check_frequency: 7d vvv
 # REMOVED (-> ampeln-orig) --- Rummelsburger Str.	? 17527,7812 17568,7753 17681,7589 17769,7465 17839,7365
 # REMOVED (-> ampeln-orig) --- Köpenicker Landstr.	? 16843,6712 16720,6845 16677,6892
@@ -1478,7 +1454,9 @@ Anna-Maria-Müller-Str.: Planstraße 7, genaue Lage, Qualität?	?::projected 17712,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
-#: last_checked: 2015-02-11
+#: XXX (osm_watch-Item ist ein Proxy für den nicht mehr existenten Weg, Notiz existiert)
+#: osm_watch: way id="24686030" version="2"
+#: last_checked: 2015-04-11
 #: check_frequency: 60d
 Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::inwork 15747,12880 15747,12985 15808,12989
 # 
@@ -1747,11 +1725,7 @@ Ortsumfahrung Seelow (B167): möglicherweise eine Kraftfahrzeugstraße?	? 74874,15
 #: XXX_prog: Drängelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Drängelgitter	? 15496,6314 15505,6342 15516,6357
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2014 (Widmung)
-#: XXX hier existieren einige Wege, nur wenig besser als Trampelpfade --- wird vielleicht ein richtiger Weg gebaut?
-#: last_checked: 2014-09-27
-#: check_frequency: 180d
-Rudolf-Leonhard-Str. - Blumberger Damm: Qualität des Rad/Gehweg?	? 21483,16325 21497,16384 21574,16547
+# REMOVED (Wege existieren zwar, lohnt aber nicht) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2014 (Widmung) --- #: XXX hier existieren einige Wege, nur wenig besser als Trampelpfade --- wird vielleicht ein richtiger Weg gebaut? --- #: last_checked: 2014-09-27 --- #: check_frequency: 180d --- Rudolf-Leonhard-Str. - Blumberger Damm: Qualität des Rad/Gehweg?	? 21483,16325 21497,16384 21574,16547
 # 
 #: ignore ^^^
 # 
@@ -1871,7 +1845,7 @@ Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12988,-1265 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Hausnummern)
 #: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
 #: note: Nibelungenpark vvv
-#: last_checked: 2015-03-15 vvv
+#: last_checked: 2015-04-11 vvv
 #: check_frequency: 60d vvv
 Alzeyweg: genaue Lage? Qualität?	? 17376,12422 17368,12365 17359,12302
 #: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse
@@ -1931,13 +1905,10 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 "Sommerwiesenweg" und "Am Stadtforst": hier entstehen neue Straße	? 23659,2393 23485,2271 23645,2244
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140922.1345.399356.html (Erschließung bis Anfang 2015)
-#: last_checked: 2014-09-27
-#: next_check: 2015-01-01
-Straße in Bau: Straßenname, genaue Lage (wird es eine Verbindung zur Schkopauer Ring geben?), Qualität (wahrscheinlich asphaltiert)?	?::inwork 19202,17471 19798,17263
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2014 (Straßenlandwidmung für Verbreiterung der Hohenschönhausener)
-#: last_checked: 2014-09-27
-#: check_frequency: 45d
-Hohenschönhausener Str.: Radweg wird auf der östlichen Seite gebaut, wahrscheinlich asphaltiert und Zweirichtungsradweg	?::inwork 18738,16957 19108,17347 19183,17444 19529,17902 19611,17999 19668,18005 19820,18091
+#: last_checked: 2015-04-11
+#: check_frequency: 60d
+Straße in Bau: Straßenname, genaue Lage (wird es eine Verbindung zur Schkopauer Ring geben?), Straße ist asphaltiert	?::inwork 19202,17471 19798,17263
+# REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2014 (Straßenlandwidmung für Verbreiterung der Hohenschönhausener) --- #: last_checked: 2014-09-27 --- #: check_frequency: 45d --- Hohenschönhausener Str.: Radweg wird auf der östlichen Seite gebaut, wahrscheinlich asphaltiert und Zweirichtungsradweg	?::inwork 18738,16957 19108,17347 19183,17444 19202,17471 19529,17902 19611,17999 19668,18005 19820,18091 19845,18120 19875,18182
 # 
 #: by: http://www.berlin.de/ba-neukoelln/verwaltung/bebauungsplaene/8-9bab.html
 #: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/8_9bab_pl.pdf?start&ts=1393408069&file=8_9bab_pl.pdf

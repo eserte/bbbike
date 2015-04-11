@@ -425,7 +425,7 @@ Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
 Andernacher Str.	1 19030,8559 19000,8509
 Andernacher Str.	1 18949,8437 19000,8509
 Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
-Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14472
+Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22246,4711 22175,4730
@@ -475,7 +475,7 @@ Washingtonplatz	1s 8106,13130 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
 Pfarrer-Lütkehaus-Platz	1 10228,-2136 10231,-2159
 Radebeuler Str.	1 19067,13818 19025,14037
-Beilsteiner Str.	1 18749,12413 18800,12838 18832,13099 18852,13269
+Beilsteiner Str.	1 18748,12399 18800,12838 18832,13099 18852,13269
 (Breite Str., Verbindung)	1s 10463,18321 10487,18270
 Thuner Platz	1 3251,1881 3263,1904 3286,1912 3307,1904 3317,1884 3312,1866 3297,1845
 Lappiner Str.	1 20418,12699 20545,12683
@@ -1187,8 +1187,8 @@ Cecilienstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20281,14012 
 Straßenbahntrasse	3nocross::ignrte 20822,14594 20868,14698 20944,14840
 Allee der Kosmonauten -> Adersleber Weg: Straßenbahntrasse	3::igndisp 20944,14840 20868,14698 20935,14686
 Adersleber Weg -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20935,14686 20868,14698 20822,14594
-Mittelstreifen	3nocross::ignrte 20260,15434 20532,15564 20733,15657
-Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20733,15657 20532,15564 20550,15551
+Mittelstreifen	3nocross::ignrte 20260,15434 20532,15564 20580,15586
+Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20580,15586 20532,15564 20550,15551
 Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3::igndisp 20550,15551 20532,15564 20260,15434
 Mittelstreifen	3nocross::ignrte 15256,14237 15430,14262 15850,14308
 Landsberger Allee -> Mittelstr./Altenhofer Str.: Mittelstreifen	3::igndisp 15256,14237 15430,14262 15430,14272
@@ -2158,7 +2158,7 @@ tragen (2 Stufen)	0:5:-66 14823,9523
 tragen (10+11 Stufen)	0:30:-213 -1584,11499
 tragen (ca. 45 Stufen)	0:45:-160 -3177,11507
 tragen (4 Stufen)	0:10:-233 21326,11122
-tragen (8+8 Stufen)	0:25:-183 19534,14459
+tragen (8+8 Stufen)	0:25:-185 19534,14459
 tragen (5 x 5 Stufen) bzw. steile Rampe zum Schieben benutzen	0:35:-181 19570,13833
 tragen bzw. steile Rampe benutzen	0:30:90 1523,13377
 tragen (7+9 Stufen)	0:25:-52 -3513,13800
@@ -2758,6 +2758,8 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
+IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
 Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465
 Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17610,-330 17651,-393

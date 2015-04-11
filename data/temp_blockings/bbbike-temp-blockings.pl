@@ -16218,7 +16218,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014203',
        data  => <<EOF,
-userdel	q4::inwork; 18226,13506 18382,13492 18783,13469 18875,13467 19059,13479 19171,13486
+userdel	q4::inwork; 18226,13506 18382,13492 18783,13469 18875,13467 19059,13479 19181,13485
 EOF
      },
      { from  => undef, # 
@@ -23871,7 +23871,7 @@ EOF
        data  => <<EOF,
 #: XXX "für mehrere Monate" vvv
 #: XXX evtl. bis 30. April 2015
-#: last_checked: 2015-04-06 vvv
+#: last_checked: 2015-04-11 vvv
 #: next_check: 2015-04-30 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178

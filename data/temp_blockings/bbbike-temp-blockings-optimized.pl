@@ -3659,7 +3659,7 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
          'id' => 2679,
          'data' => '#: XXX "für mehrere Monate" vvv
 #: XXX evtl. bis 30. April 2015
-#: last_checked: 2015-04-06 vvv
+#: last_checked: 2015-04-11 vvv
 #: next_check: 2015-04-30 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
@@ -3690,16 +3690,7 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1428703200,
-         'text' => 'Salzufer: zwischen Franklin- und Margarete-Kühn-Str. in Richtung Straße des 17. Juni gesperrt, bis 10.04.2015',
-         'from' => 1424975817,
-         'id' => 2682,
-         'data' => '#: by: fritz
-userdel	q4::inwork; 5018,12322 5133,12240
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
