@@ -3717,16 +3717,7 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_024429',
-         'until' => 1428890400,
-         'text' => 'Ehrlichstr.: zwischen Lehndorffstr. und Eginhardstr. Bauarbeiten, Fahrbahn gesperrt, 21.03.2015 04:30 Uhr bis 13.04.2015 04:00 Uhr',
-         'from' => 1426822200,
-         'id' => 2691,
-         'data' => 'userdel	q4::inwork 18615,8269 18528,8331 18461,8377 18391,8425 18322,8470
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_024458',
          'until' => 1442066400,
@@ -3768,17 +3759,6 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'id' => 2697,
          'data' => '	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 '
-       },
-       {
-         'source_id' => 'IM_024612',
-         'until' => 1428894000,
-         'text' => 'Teplitzer Straße: Fahrbahnsanierung, Vollsperrung, von Freitag, dem 10.04.2015, bis Montag, dem 13.04.2015',
-         'from' => 1428530400,
-         'id' => 2698,
-         'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php
-userdel	q4::inwork 2087,7811 2106,8075 2120,8335 2126,8426
-',
-         'type' => 'handicap'
        }
      
 );
