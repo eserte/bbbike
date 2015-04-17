@@ -121,7 +121,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="19"
-#: osm_watch: way id="42732291" version="10"
+#: osm_watch: way id="42732291" version="11"
 #: last_checked: 2015-01-23
 #: check_frequency: 90d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
@@ -808,17 +808,17 @@ Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7
 #: last_checked: 2015-02-14 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
-#: osm_watch: way id="290255259" version="1"
+#: osm_watch: way id="290255259" version="2"
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-Planstraße 1: Qualität? Name wahrscheinlich Kirchdorfer Str.?	?::projected 19842,9895 19853,9774 19857,9682
+Planstraße 1: Qualität? Name wahrscheinlich Kirchdorfer Str.?	?::inwork 19842,9895 19853,9774 19857,9682
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
-#: osm_watch: way id="193373934" version="2"
+#: osm_watch: way id="193373934" version="3"
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-Planstraße 2 (Fortsetzung Römerweg): Name wahrscheinlich Frauenauer Str.? Qualität etc?	?::projected 19663,9757 19853,9774
+Planstraße 2 (Fortsetzung Römerweg): Name wahrscheinlich Frauenauer Str.? Qualität etc?	?::inwork 19663,9757 19853,9774
 # REMOVED (in strassen) --- #: XXX PLZ=10318 --- Planstraße 3 -> Viechtacher Str.: Qualität etc?	?::projected 19657,9666 19727,9672 19801,9680 19857,9682 19893,9683
 # REMOVED --- Planstraße 4 -> Eisensteiner Str.: Qualität der Straße?	?::inwork 19727,9672 19722,9483
 # REMOVED --- #: XXX Rinchnacher Weg|Karlshorst|10318 --- Planstraße 5 -> Rinchnacher Weg: Qualität etc?	?::projected 19801,9680 19790,9478
-#: osm_watch: way id="193373957" version="3"
+#: osm_watch: way id="193373957" version="4"
 Teisnacher Str.: (Planstraße 6) Qualität, genaue Lage?	?::projected 19857,9682 19849,9474
 # REMOVED (teilweise realisiert) --- #: XXX PLZ=10318 --- Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19646,9490 19722,9483 19790,9478 19849,9474 19890,9471
 #: XXX Planstraße 8+10 -> Regener Str.

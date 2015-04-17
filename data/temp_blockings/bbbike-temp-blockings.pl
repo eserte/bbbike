@@ -17905,11 +17905,12 @@ EOF
 userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
      },
-     { from  => $isodate2epoch->("2014-05-15 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-05-18 23:59:59"),
+     { from  => $isodate2epoch->("2015-06-04 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-06-07 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5]], # kann auch erst im September stattfinden
-       text  => 'Erkner: Heimatfest, 16.5.2014 bis 18.5.2014',
+       source_id => 'http://www.erkner.de/271.html',
+       text  => 'Erkner: Heimatfest, 5.6.2015 bis 7.6.2015',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 34443,1951 34250,2546
@@ -22855,7 +22856,7 @@ userdel	q4::inwork; -4630,15978 -4653,15896 -4656,15839 -4655,15803 -4639,15726 
 EOF
      },
      { from  => $isodate2epoch->("2014-05-26 00:00:00"), # 1400863142, # 2014-05-23 18:39
-       until => $isodate2epoch->("2015-04-30 23:59:59"), # 1420066800, # 2015-01-01 00:00
+       until => 1429301173, # $isodate2epoch->("2015-04-30 23:59:59"), # 1420066800, # 2015-01-01 00:00
        text  => 'Kremmen: B273: Neubau Brücke über den Hörstegraben Ortsdurchfahrt Schwante, 26.05.2014 bis 30.04.2015',
        type  => 'gesperrt',
        source_id => 'LS/721-E/14/035',
@@ -24059,6 +24060,17 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php
 userdel	q4::inwork 2087,7811 2106,8075 2120,8335 2126,8426
+EOF
+     },
+     { from  => 1429160400, # 2015-04-16 07:00
+       until => 1429459200, # 2015-04-19 18:00
+       text  => 'Oranienplatz/Oranienstr.: Veranstaltung, Straße an der Kreuzung Segitzdamm/Legiendamm gesperrt (bis So ca. 18:00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_024677',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.296774.php
+userdel	2::temp 11189,10831 11159,10769 11234,10739
+userdel	2::temp 11049,10816 11159,10769 11133,10704
 EOF
      },
     );

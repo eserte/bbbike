@@ -2503,7 +2503,26 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.erkner.de/271.html',
+         'data' => 'userdel	2::temp 34443,1951 34250,2546
+',
+         'periodic' => 1,
+         'until' => 1433714399,
+         'from' => 1433368800,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Erkner: Heimatfest, 5.6.2015 bis 7.6.2015',
+         'id' => 2078,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3415,16 +3434,7 @@ userdel	2::inwork 8089,12190 8214,12205
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'LS/721-E/14/035',
-         'until' => 1430431199,
-         'text' => 'Kremmen: B273: Neubau Brücke über den Hörstegraben Ortsdurchfahrt Schwante, 26.05.2014 bis 30.04.2015',
-         'from' => 1401055200,
-         'id' => 2574,
-         'data' => 'userdel	2::inwork -11775,36312 -12060,36572
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3759,6 +3769,19 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'id' => 2697,
          'data' => '	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 '
+       },
+       undef,
+       {
+         'source_id' => 'IM_024677',
+         'until' => 1429459200,
+         'text' => 'Oranienplatz/Oranienstr.: Veranstaltung, Straße an der Kreuzung Segitzdamm/Legiendamm gesperrt (bis So ca. 18:00 Uhr)',
+         'from' => 1429160400,
+         'id' => 2699,
+         'data' => '#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.296774.php
+userdel	2::temp 11189,10831 11159,10769 11234,10739
+userdel	2::temp 11049,10816 11159,10769 11133,10704
+',
+         'type' => 'gesperrt'
        }
      
 );
