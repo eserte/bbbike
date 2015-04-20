@@ -3771,15 +3771,14 @@ userdel	q4::inwork; 3807,11859 3666,11855
 '
        },
        undef,
+       undef,
        {
-         'source_id' => 'IM_024677',
-         'until' => 1429459200,
-         'text' => 'Oranienplatz/Oranienstr.: Veranstaltung, Straße an der Kreuzung Segitzdamm/Legiendamm gesperrt (bis So ca. 18:00 Uhr)',
-         'from' => 1429160400,
-         'id' => 2699,
-         'data' => '#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.296774.php
-userdel	2::temp 11189,10831 11159,10769 11234,10739
-userdel	2::temp 11049,10816 11159,10769 11133,10704
+         'source_id' => 'wosch',
+         'until' => undef,
+         'text' => 'Döberitzer Verbindung: wegen Bauarbeiten gesperrt',
+         'from' => undef,
+         'id' => 2700,
+         'data' => 'userdel	2::inwork 7451,13504 7630,13584
 ',
          'type' => 'gesperrt'
        }

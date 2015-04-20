@@ -24073,4 +24073,13 @@ userdel	2::temp 11189,10831 11159,10769 11234,10739
 userdel	2::temp 11049,10816 11159,10769 11133,10704
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Döberitzer Verbindung: wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       source_id => 'wosch',
+       data  => <<EOF,
+userdel	2::inwork 7451,13504 7630,13584
+EOF
+     },
     );
