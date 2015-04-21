@@ -277,7 +277,7 @@ sub set_info {
 	if ($get_uaprof->()) {
 	    my $screensize = eval { $uaprof->get_cap("ScreenSize") };
 	    if (defined $screensize) {
-		my($w,$h) = split /x/, $screensize;
+		my($w,$h) = split /x/i, $screensize;
 		$w -= $vert_scrollbar_space;
 		$self->{'display_size'} = [$w, $h];
 	    }
