@@ -3778,7 +3778,9 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'text' => 'Döberitzer Verbindung: wegen Bauarbeiten gesperrt',
          'from' => undef,
          'id' => 2700,
-         'data' => 'userdel	2::inwork 7451,13504 7630,13584
+         'data' => '#: confirmed_by: srt
+#: last_checked: 2015-04-21
+userdel	2::inwork 7451,13504 7630,13584
 ',
          'type' => 'gesperrt'
        }

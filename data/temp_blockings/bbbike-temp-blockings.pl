@@ -24079,6 +24079,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'wosch',
        data  => <<EOF,
+#: confirmed_by: srt
+#: last_checked: 2015-04-21
 userdel	2::inwork 7451,13504 7630,13584
 EOF
      },

@@ -20,14 +20,14 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-04-09 vvv
+#: last_checked: 2015-04-21 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2015-04-13
+#: last_checked: 2015-04-21
 #: check_frequency: 60d
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
@@ -54,7 +54,7 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 # 
 ### Mitte ###
 # 
-#: last_checked: 2015-03-27
+#: last_checked: 2015-04-21
 Sch¸tzenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10116,11485 9949,11470
 # 
 #: XXX nach den Bauarbeiten bessere Qualit‰t?
@@ -65,7 +65,7 @@ Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 119
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX nach den Bauarbeiten bleiben wohl "einige Fuﬂg‰nger" ¸brig, dann nur mit q1
-#: last_checked: 2015-04-01
+#: last_checked: 2015-04-21
 Linienstr.: einige Fuﬂg‰nger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2015-03-24
@@ -224,7 +224,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-04-09
+#: last_checked: 2015-04-21
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -1465,7 +1465,7 @@ Faulhornweg: Fuﬂg‰nger	q1 10383,2088 10322,2163
 Igelkolbensteig: eng	q2 15949,3575 16003,3652
 #: XXX_prog BS (2x) (auch ohne BS q2)
 Melissenweg: Bordsteine, eng	q2 16003,3652 16041,3718
-#: XXX_prog BS (im Norden, im S¸den kann es umfahren werden)
+#: XXX_prog BS (im Norden existiert eine Absenkung, im S¸den kann der Bordstein an der Ampel umfahren werden)
 Simsonweg: Fuﬂg‰nger, Bordsteine	q2 8354,12416 8391,12389 8546,12279
 Varian-Fry-Str.: Fuﬂg‰nger	q2 8374,11479 8389,11378
 Georg-Steger-Weg und Verl‰ngerung: Fuﬂg‰nger	q2 1509,2246 1603,2615 1635,2720 1652,2770 1641,2914

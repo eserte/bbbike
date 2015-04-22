@@ -122,7 +122,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="19"
 #: osm_watch: way id="42732291" version="11"
-#: last_checked: 2015-01-23
+#: last_checked: 2015-04-21
 #: check_frequency: 90d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
@@ -386,8 +386,10 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #: note: Dauer etwa vier Monate, also bis August 2015? vvv
 #: XXX laut rbbtext bis 15.8.2015
 #: XXX_prog größere Behinderungen eigentlich nur, wenn die Kreuzung in voller Länge befahren wird, aber nicht so sehr beim Rechtsabbiegen vvv
+#: last_checked: 2015-04-21 vvv
 Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9224,14169 9383,13986 9514,13826
 Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13986 9676,14046
+#: last_checked ^^^
 #: XXX_prog ^^^
 #: note ^^^
 #: source_id ^^^
@@ -843,7 +845,7 @@ Zachenberger Str.: (Planstraße 11) Qualität?	?::projected 19885,9400 19780,9409
 # 
 # REMOVED (weitgehend realisiert) --- #: by: http://www.moz.de/artikel-ansicht/dg/0/1/288137 --- #: by: http://de.wikipedia.org/wiki/Autobahndreieck_Schwanebeck --- #: by: http://upload.wikimedia.org/wikipedia/commons/4/4c/Map_Comparision_AD_Schwanebeck_AK_Barnim.svg --- #: by: http://www.ls.brandenburg.de/sixcms/detail.php/bb1.c.257283.de?template=ls_artikel_special_nav_d&nav_level=3 --- #: next_check: 2013-09-01 --- Umbau zum Kreuz Barnim: damit auch Verschenkung der B2 direkt zur Autobahn; die jetzige B2 durch Schwanebeck wird wahrscheinlich zur Landesstraße	?::inwork 20788,23350 20281,23156 19363,23247 19043,23084
 # 
-#: last_checked: 2015-01-13
+#: last_checked: 2015-04-21
 #: check_frequency: 120d
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
@@ -1174,6 +1176,8 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+Zufahrt zum Stadtbad Tiergarten: Qualität? Parkplatzverkehr?	? 7450,13442 7428,13482
 # 
 #: XXX_prog: könnte man mit einer Art Punkt-Handicap ausdrücken
 Paster-Behrens-Str. - Britzer Park: wegen Bordstein muss man zur östlichen Seite des Wendehammers fahren	? 13329,4294 13270,4202 13171,4091
