@@ -32,11 +32,11 @@ my $isodate2epoch = sub {
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => $isodate2epoch->("2014-06-05 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-06-09 23:59:59"),
+     { from  => $isodate2epoch->("2015-05-21 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-25 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 47]], # zwei Tage vor Pfingsten
-       text  => 'Straßenfest rund um den Blücherplatz, 6.6.2014 bis 9.6.2014',
+       text  => 'Straßenfest rund um den Blücherplatz, 22.5.2015 bis 25.5.2015',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
@@ -56,11 +56,12 @@ userdel	3 9922,10010 9827,10051 9837,9856
 userdel	3 9837,9856 9827,10051 9922,10010
 EOF
      },
-     { from  => $isodate2epoch->("2014-06-07 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-06-08 23:59:59"),
+     { from  => $isodate2epoch->("2015-05-23 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-24 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49]], # Pfingstsonntag
-       text  => 'Karneval der Kulturen, 8.6.2014',
+       source_id => 'http://www.karneval-berlin.de/de/',
+       text  => 'Karneval der Kulturen, 24.5.2015',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
@@ -21292,6 +21293,8 @@ EOF
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: last_checked: 2015-03-28
+#: XXX laut VMZ um zwei Jahre verlängert, laut fritz/rbbtext beendet
+#: next_check: 2015-04-22
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
      },
@@ -24082,6 +24085,24 @@ EOF
 #: confirmed_by: srt
 #: last_checked: 2015-04-21
 userdel	2::inwork 7451,13504 7630,13584
+EOF
+     },
+     { from  => 1429736139, # 2015-04-22 22:55
+       until => 1437429600, # 2015-07-21 00:00
+       text  => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 20.07.2015 ',
+       type  => 'gesperrt',
+       source_id => '157300093',
+       data  => <<EOF,
+userdel	2::inwork 51806,78469 51798,78477 51668,78605
+EOF
+     },
+     { from  => 1429801200, # 2015-04-23 17:00
+       until => 1430103600, # 2015-04-27 05:00
+       text  => 'Niederfinow: L29: Neubau Schiffshebewerk - Transport und Einbau Tragtore OD Niederfinow, 24.04.2015 17:00 Uhr bis 27.04.2015 05:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '156000426',
+       data  => <<EOF,
+userdel	2::inwork 46132,49993 46390,50091
 EOF
      },
     );

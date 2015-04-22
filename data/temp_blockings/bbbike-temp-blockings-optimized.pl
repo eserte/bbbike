@@ -1,6 +1,86 @@
-$#temp_blocking = 9;
+$#temp_blocking = 2;
 push @temp_blocking,
 (
+       {
+         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
+userdel	2::temp 9521,10010 9827,10051
+userdel	2::temp 9521,10010 9448,10014
+userdel	2::temp 9599,10175 9687,10180 9825,10206
+userdel	2::temp 9416,10196 9599,10175
+userdel	2::temp 9579,10122 9536,10064
+userdel	2::temp 9579,10122 9631,10142 9702,10129
+userdel	2::temp 9837,10117 9827,10051
+userdel	2::temp 9837,10117 9858,10199
+userdel	2::temp 9599,10175 9579,10122
+userdel	2::temp 9702,10129 9827,10051
+userdel	2::temp 9702,10129 9816,10119
+userdel	2::temp 9599,10175 9631,10142 9687,10180
+userdel	3 9922,10010 9827,10051 9837,9856
+userdel	3 9837,9856 9827,10051 9922,10010
+',
+         'periodic' => 1,
+         'until' => 1432591199,
+         'from' => 1432159200,
+         'recurrences' => [
+                            [
+                              'easter',
+                              47
+                            ]
+                          ],
+         'text' => 'Straßenfest rund um den Blücherplatz, 22.5.2015 bis 25.5.2015',
+         'type' => 'gesperrt',
+         'id' => 3
+       },
+       {
+         'source_id' => 'http://www.karneval-berlin.de/de/',
+         'data' => 'userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
+# REMOVED --- userdel	2::temp 9044,9753 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
+userdel	2::temp 10713,9260 10670,9286 10639,9304 10564,9292
+# REMOVED --- userdel	3 8774,9534 8777,9601 8779,9812
+# REMOVED --- userdel	3 8779,9812 8777,9601 8774,9534
+# REMOVED --- userdel	3 9000,9509 9044,9753 9073,9915
+# REMOVED --- userdel	3 9073,9915 9044,9753 9000,9509
+userdel	3 9280,9476 9334,9670 9387,9804
+userdel	3 9387,9804 9334,9670 9280,9476
+userdel	3 9524,9426 9552,9602 9588,9827
+userdel	3 9588,9827 9552,9602 9524,9426
+userdel	3 9650,9404 9676,9564 9705,9732
+userdel	3 9705,9732 9676,9564 9650,9404
+userdel	3 9767,9386 9790,9528 9820,9718
+userdel	3 9820,9718 9790,9528 9767,9386
+userdel	3 9892,9286 9927,9487 9957,9692
+userdel	3 9957,9692 9927,9487 9892,9286
+userdel	3 10004,9268 10032,9456 10067,9667
+userdel	3 10067,9667 10032,9456 10004,9268
+userdel	3 10123,9233 10198,9405 10306,9640
+userdel	3 10306,9640 10198,9405 10123,9233
+userdel	3 10547,9233 10564,9292 10580,9361
+userdel	3 10580,9361 10564,9292 10547,9233
+userdel	3 10705,9234 10713,9260 10747,9326
+userdel	3 10747,9326 10713,9260 10705,9234
+userdel	3 11141,9107 11136,9183 11208,9345 11274,9492
+userdel	3 11274,9492 11208,9345 11136,9183 11141,9107
+userdel	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
+userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
+',
+         'periodic' => 1,
+         'until' => 1432504799,
+         'from' => 1432332000,
+         'recurrences' => [
+                            [
+                              'easter',
+                              49
+                            ]
+                          ],
+         'text' => 'Karneval der Kulturen, 24.5.2015',
+         'id' => 4,
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'periodic' => 1,
          'until' => 1431280800,
@@ -3054,19 +3134,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_019747',
-         'until' => 1429714800,
-         'text' => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende April 2015) ',
-         'from' => 1366740818,
-         'id' => 2422,
-         'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
-#: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2015-03-28
-userdel	q2::inwork 5258,11285 5236,10994
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3781,6 +3849,26 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'data' => '#: confirmed_by: srt
 #: last_checked: 2015-04-21
 userdel	2::inwork 7451,13504 7630,13584
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '157300093',
+         'until' => 1437429600,
+         'text' => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 20.07.2015 ',
+         'from' => 1429736139,
+         'id' => 2701,
+         'data' => 'userdel	2::inwork 51806,78469 51798,78477 51668,78605
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => '156000426',
+         'until' => 1430103600,
+         'text' => 'Niederfinow: L29: Neubau Schiffshebewerk - Transport und Einbau Tragtore OD Niederfinow, 24.04.2015 17:00 Uhr bis 27.04.2015 05:00 Uhr ',
+         'from' => 1429801200,
+         'id' => 2702,
+         'data' => 'userdel	2::inwork 46132,49993 46390,50091
 ',
          'type' => 'gesperrt'
        }

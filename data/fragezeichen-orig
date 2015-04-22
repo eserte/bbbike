@@ -158,8 +158,10 @@ Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::pro
 Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,21563 7959,21573 7781,21812 7742,21867 7594,22068 7516,22178 7439,22306 7416,22349
 # 
 #: XXX Baumaßnahme B3.4 (Realisierung nach 2011)
+#: XXX vermutlich nicht vor dem Bau der Ersatzbrücke
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5566.html
 #: last_checked: 2014-09-28
-#: check_frequency: 180d
+#: next_check: 2015-12-01
 Schönerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 11929,23946 11959,24220 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570 12694,25696 12944,26163 13192,26628 13256,26863 13345,27187
 #
 # REMOVED (realisiert (Einbahnstraße offen)) --- #: XXX Baumaßnahme 3.35 (Realisierung in 2011) --- #: last_checked: 2013-04-30 --- #: next_check: 2013-07-30 --- Pasedagplatz: wird hier eine Ampel entstehen? Oder die Einbahnstraßenregelung für Radfahrer aufgehoben?	?::projected 14174,17226 14144,17165
@@ -262,13 +264,20 @@ Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11563,20048 11632,20
 Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11915,19580 11927,19308 11937,19175
 # 
 #: last_checked: 2014-09-13
-#: check_frequency: 180d
+#: XXX Fahrbahninstandsetzung mit anschließenden Umbau der Radwege
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.297917.php
+#: next_check: 2015-08-28
 Alt-Gatow: Radspuren bis 2015 geplant	?::projected; -4760,9343 -4751,9259 -4757,9140 -4755,9120 -4751,9033 -4691,8899 -4590,8666
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385410.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?)
 #: last_checked: 2014-09-13
-#: check_frequency: 180d
-Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4839,7791 -4578,8336 -4540,8449 -4540,8535 -4590,8666
+#: XXX vermutlich später als 2015, ggfs. bis August 2016
+#: next_check: 2016-01-01
+Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4839,7791 -4578,8336
+#: XXX Fahrbahninstandsetzung mit anschließenden Umbau der Radwege
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.297917.php
+#: next_check: 2015-08-28
+Kladower Damm: Radpuren bis 2015 geplant	?::projected; -4578,8336 -4540,8449 -4540,8535 -4590,8666
 # 
 #: osm_watch: way id="23968027" version="10"
 #: last_checked: 2014-09-13 (am nördlichen Ende)
@@ -1176,6 +1185,9 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2015
+Abbestr.: Einziehung öffentlichen Straßenlandes (was bedeutet das hier? bleibt es beim jetzigen Stand - Radfahrer frei?)	? 4762,12229 4683,12072
 # 
 Zufahrt zum Stadtbad Tiergarten: Qualität? Parkplatzverkehr?	? 7450,13442 7428,13482
 # 
