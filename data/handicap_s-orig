@@ -13,9 +13,9 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-04-20 vvv
+#: last_checked: 2015-04-25 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
-Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
+Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 #: last_checked ^^^
 # 
@@ -298,16 +298,12 @@ Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
 # REMOVED (anscheinend schon beendet) --- #: last_checked: 2014-05-06 --- #: next_check: 2014-05-31 (Bauarbeiten bis Mai 2014) --- #: valid: -20140531 --- Archibaldweg: Bauarbeiten zwischen Leopoldstr. und Rupprechtstr. Richtung Nordosten	q3::inwork; 15950,10987 16034,11053
 # 
 #: source_id: IM_024674
-#: last_checked: 2015-04-08
-#: next_check: 2015-04-24
+#: last_checked: 2015-04-26
+#: next_check: 2015-04-30
 #: priority: #A
 Archibaldweg: Bauarbeiten, teilweise über Gehweg ausweichen	q2::inwork 15674,10851 15870,10938
 # 
-#: osm_watch: way id="31526264" version="6"
-#: last_checked: 2015-04-08
-#: check_frequency: 30d
-Stadthausstr.: Bauarbeiten, Einbahnstraße, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
-# 
+# REMOVED (nicht mehr Einbahnstraße) --- #: osm_watch: way id="31526264" version="6" --- #: last_checked: 2015-04-08 --- #: check_frequency: 30d --- Stadthausstr.: Bauarbeiten, Einbahnstraße, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
 # REMOVED (Bauarbeiten sind beendet) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: osm_watch: way id="7543672" version="17" --- #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz --- #: last_checked: 2013-06-24 --- #: check_frequency: 45d --- Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
 # REMOVED (man kann eigentlich schon problemlos durch) --- #: last_checked: 2013-11-26 vvv --- #: next_check: 2013-12-03 vvv --- #: priority: #A vvv --- Parkaue: Bauarbeiten, ggfs. auf Gehweg ausweichen	q4::inwork 15399,12444 15457,12449 15535,12420 --- Am Stadtpark: Bauarbeiten, ggfs. auf Gehweg ausweichen	q3::inwork 15457,12449 15454,12519 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (beendet) --- #: last_checked: 2013-10-29 --- #: next_check: 2013-12-15 (laut Schild bis Dezember 2013) --- #: priority: #A --- Kriemhildstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 17337,12428 17320,12308
@@ -2162,6 +2158,9 @@ Torfstraßensteg: einige Fußgänger	q1 6847,14735 6824,14821
 (Parkplatz Getränke Hoffmann): Parkplatzverkehr	q2+ 18647,12354 18715,12348
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 22346,13855 22389,13824 22426,13735 22445,13720 22457,13713
 Darguner Str.: enge Straße	q1+ 17566,18680 17635,18591
+Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 17534,12433
+(Giselhersteig - Nibelungenring): enger Weg	q3 17386,12456 17382,12421
+(Giselhersteig - Hadburgpfad): enger Weg	q3 17491,12439 17486,12407
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

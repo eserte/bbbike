@@ -462,7 +462,7 @@ Spindlersfelder Str.	2 21324,3691 21215,3919 21143,4150 21130,4239 21080,4702 21
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben
 #: osm_watch: way id="25585951" version="9"
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025
-#: last_checked: 2015-04-11
+#: last_checked: 2015-04-26
 Rathausstr.:	1s:q4 15651,12214 15628,12246 15576,12315 15537,12367
 Alt-Marzahn	1 21112,15396 21048,15424 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
 #: confirmed_by: srt vvv
@@ -1110,6 +1110,8 @@ Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
 Kriemhildstr.	1s:q3 17300,12173 17314,12265
 Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
+#: by: olaf skeries
+Schillerhof	1 7069,17204 6928,17154
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2636,7 +2638,7 @@ Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
 # 
 #: XXX es gibt schon permanente Sackgassenschilder
 #: osm_watch: way id="334605047" version="2"
-#: last_checked: 2015-03-08
+#: last_checked: 2015-04-26
 #: check_frequency: 60d
 Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	2::inwork 15300,11584 15220,11440
 # 
@@ -2715,7 +2717,7 @@ Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 30.09.2015 ge
 #: XXX falls es soweit ist -> gesperrt-orig
 #: last_checked: 2015-04-13
 #: next_check: 2015-05-01
-Lohmühlenplatz: Umgestaltung des Platzes, Wege ist gesperrt	2::inwork 12900,9465 12897,9365
+Lohmühlenplatz: Umgestaltung des Platzes, Weg ist gesperrt	2::inwork 12900,9465 12897,9365
 # 
 #: source_id: INKO_104519
 #: last_checked: 2015-03-28
@@ -2748,12 +2750,12 @@ Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::
 # 
 #: XXX Qualität nach den Bauarbeiten?
 #: osm_watch: way id="24845189" version="12"
-#: last_checked: 2015-02-14
+#: last_checked: 2015-04-26
 #: check_frequency: 60d
 Viechtacher Str.: Bauarbeiten, Straße muss noch fertig gestellt werden	2::inwork 19801,9680 19857,9682 19893,9683
 # REMOVED (offen) --- Eisensteiner Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19727,9672 19722,9483
 # 
-#: last_checked: 2015-02-14 vvv
+#: last_checked: 2015-04-26 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="287119368" version="8"
 #: XXX_osm laut osm (teilweise) nicht mehr gesperrt

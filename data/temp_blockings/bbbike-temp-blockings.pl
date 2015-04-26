@@ -21285,16 +21285,16 @@ userdel	1::inwork -12655,-1714 -12730,-1681 -12758,-1654
 EOF
      },
      { from  => 1366740818, # 2013-04-23 20:13
-       until => $isodate2epoch->("2015-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
-       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende April 2015) ',
+       until => $isodate2epoch->("2017-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
+       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende April 2017) ',
        type  => 'handicap',
        source_id => 'IM_019747',
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: last_checked: 2015-03-28
-#: XXX laut VMZ um zwei Jahre verlängert, laut fritz/rbbtext beendet
-#: next_check: 2015-04-22
+#: note: laut VMZ um zwei Jahre verlängert, laut fritz/rbbtext beendet
+#: last_checked: 2015-04-26
+#: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
      },
@@ -23421,7 +23421,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-03-28
+#: last_checked: 2015-04-26
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 EOF
@@ -23875,7 +23875,7 @@ EOF
        data  => <<EOF,
 #: XXX "für mehrere Monate" vvv
 #: XXX evtl. bis 30. April 2015
-#: last_checked: 2015-04-11 vvv
+#: last_checked: 2015-04-26 vvv
 #: next_check: 2015-04-30 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178

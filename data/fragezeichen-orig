@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="5"
 #: osm_watch: way id="153373877" version="4"
-#: last_checked: 2015-03-03
+#: last_checked: 2015-04-26
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -86,12 +86,12 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 # 
 #: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Realisierung anscheinend ungewiss)
-#: last_checked: 2015-03-28
+#: last_checked: 2015-04-26
 #: check_frequency: 180d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2015-03-14
+#: last_checked: 2015-04-26
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -101,7 +101,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2015-04-07
+#: last_checked: 2015-04-26
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -183,7 +183,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2015-03-15
+#: last_checked: 2015-04-26
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -794,7 +794,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2015-04-13
+#: last_checked: 2015-04-26
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -816,7 +816,7 @@ Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2014
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20141007.1540.399597.html
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundstücksnummerierungen)
-#: last_checked: 2015-02-14 vvv
+#: last_checked: 2015-04-26 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: osm_watch: way id="290255259" version="2"
@@ -830,7 +830,8 @@ Planstraße 2 (Fortsetzung Römerweg): Name wahrscheinlich Frauenauer Str.? Qualit
 # REMOVED --- Planstraße 4 -> Eisensteiner Str.: Qualität der Straße?	?::inwork 19727,9672 19722,9483
 # REMOVED --- #: XXX Rinchnacher Weg|Karlshorst|10318 --- Planstraße 5 -> Rinchnacher Weg: Qualität etc?	?::projected 19801,9680 19790,9478
 #: osm_watch: way id="193373957" version="4"
-Teisnacher Str.: (Planstraße 6) Qualität, genaue Lage?	?::projected 19857,9682 19849,9474
+#: XXX vermutlich Spielstraße
+Teisnacher Str.: (Planstraße 6) Qualität, genaue Lage?	?::inwork 19857,9682 19849,9474
 # REMOVED (teilweise realisiert) --- #: XXX PLZ=10318 --- Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19646,9490 19722,9483 19790,9478 19849,9474 19890,9471
 #: XXX Planstraße 8+10 -> Regener Str.
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
@@ -854,7 +855,7 @@ Zachenberger Str.: (Planstraße 11) Qualität?	?::projected 19885,9400 19780,9409
 # 
 # REMOVED (weitgehend realisiert) --- #: by: http://www.moz.de/artikel-ansicht/dg/0/1/288137 --- #: by: http://de.wikipedia.org/wiki/Autobahndreieck_Schwanebeck --- #: by: http://upload.wikimedia.org/wikipedia/commons/4/4c/Map_Comparision_AD_Schwanebeck_AK_Barnim.svg --- #: by: http://www.ls.brandenburg.de/sixcms/detail.php/bb1.c.257283.de?template=ls_artikel_special_nav_d&nav_level=3 --- #: next_check: 2013-09-01 --- Umbau zum Kreuz Barnim: damit auch Verschenkung der B2 direkt zur Autobahn; die jetzige B2 durch Schwanebeck wird wahrscheinlich zur Landesstraße	?::inwork 20788,23350 20281,23156 19363,23247 19043,23084
 # 
-#: last_checked: 2015-04-21
+#: last_checked: 2015-04-26
 #: check_frequency: 120d
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
@@ -1185,6 +1186,13 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html
+#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/
+#: XXX Radfahrer können weiterhin passieren, zunächst über den nördlichen Gehweg, später über eine Behelfsbrücke (Breite 2,50m) --- benötigt es hier einen handicap_s-Eintrag?
+#: XXX nach den Bauarbeiten (bis 2016-08?) wird es hier Radspuren geben
+#: next_check: 2015-05-04
+Zimmermannstraßenbrücke: Bau einer neuen Brücke, wird es für Radfahrer Einschränkungen geben?	?::inwork 21351,9066 21365,9059 21385,9049
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2015
 Abbestr.: Einziehung öffentlichen Straßenlandes (was bedeutet das hier? bleibt es beim jetzigen Stand - Radfahrer frei?)	? 4762,12229 4683,12072
@@ -1855,22 +1863,9 @@ Aalsteig (Potsdam): Qualität?	? -19584,4326
 Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12988,-1265 -13078,-1250 -13089,-1313
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern) --- #: XXX Freesienweg (beide Amtsblätter, DPAG-Mitteilungsblatt 12/2013) oder Fresienweg (BA)? Wikipedia meint "Freesien" --- #: XXX fehlt bei Berlin.coords.data, PLZ=10365 --- #: last_checked: 2014-06-19 (Bauarbeiten in Gange, keine Straße zu sehen) --- #: check_frequency: 90d --- Freesienweg: geplante Straße, wo wird sie genau liegen? Qualität?	?::projected 16000,12625 15997,12743
-# 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5489
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Hausnummern)
-#: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf
-#: note: Nibelungenpark vvv
-#: last_checked: 2015-04-11 vvv
-#: check_frequency: 60d vvv
-Alzeyweg: genaue Lage? Qualität?	? 17376,12422 17368,12365 17359,12302
-#: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse
-Giselhersteig: genaue Lage? Qualität?	? 17359,12451 17437,12443 17536,12425
-Giselhersteig: genaue Lage? Qualität?	? 17432,12413 17437,12443
-#: check_frequency ^^^
-#: last_checked ^^^
-#: note ^^^
-# 
+# REMOVED (alle aufgenommen) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5489 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2013 (Hausnummern) --- #: by: http://www.deutschepost.de//mlm.nf/dpag/images/d/datafactory/postleitdaten/dezember_2013/mtb_strassen_neu.pdf --- #: note: Nibelungenpark vvv --- #: last_checked: 2015-04-11 vvv --- #: check_frequency: 60d vvv
+# REMOVED (aufgenommen) --- 17376,12422 17368,12365 17359,12302
+# REMOVED --- #: XXX Eintrag in str_cont_ausnahme fehlt, Sackgasse --- Giselhersteig: genaue Lage? Qualität?	? 17355,12460 17386,12456 17438,12448 17491,12439 17534,12433 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: note ^^^ --- # 
 # REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2013 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5292 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066433/33-Anlagen/02/vzbbvv0509_IV-Benennung_Privatstrasse_Lindensc.pdf --- #: XXX fehlt bei Berlin.coords.data --- #: XXX Privatstraße --- Lindenschwärmerweg: genaue Lage? Qualität? Existiert die Straße schon?	? 21308,11075 21292,11093 21189,11137
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5291 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036593796355/593796355/00066429/29-Anlagen/02/vzb0507_IV-Benennung_Grimmener_Strasse.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013 --- #: XXX fehlt bei Berlin.coords.data --- Grimmener Str.: genaue Lage? Qualität? Existiert die Straße schon?	? 21298,13154 21395,13135 21443,13125
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3587 --- #: by; http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3697 --- #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/2013/04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf?start&ts=1371028945&file=04.06.2013_benennungsabsicht_f__r_30_privatwege_in_der_anlage_sch__nwald_und_der_kleingartenanlage__kga__am_rollberg...pdf (mit Plan) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2013 (Amtsblatt) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2014 (Nummerierung) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2014 (Nummerierung) --- #: XXX PLZ=13158, soweit nicht anders angegeben --- #: last_checked: 2014-05-21 (noch nicht umbenannt, aber Pfosten stehen schon) vvv --- #: next_check: 2014-06-21 vvv

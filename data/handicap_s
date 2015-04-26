@@ -4,7 +4,7 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
-Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise gesperrt	q3::inwork 14442,11101 14468,11203
+Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -39,7 +39,6 @@ Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
 Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
 Archibaldweg: Bauarbeiten, teilweise über Gehweg ausweichen	q2::inwork 15674,10851 15870,10938
-Stadthausstr.: Bauarbeiten, Einbahnstraße, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
 Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
 Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
@@ -1476,6 +1475,9 @@ Torfstraßensteg: einige Fußgänger	q1 6847,14735 6824,14821
 (Parkplatz Getränke Hoffmann): Parkplatzverkehr	q2 18647,12354 18715,12348
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 22346,13855 22389,13824 22426,13735 22445,13720 22457,13713
 Darguner Str.: enge Straße	q1 17566,18680 17635,18591
+Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 17534,12433
+(Giselhersteig - Nibelungenring): enger Weg	q3 17386,12456 17382,12421
+(Giselhersteig - Hadburgpfad): enger Weg	q3 17491,12439 17486,12407
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635

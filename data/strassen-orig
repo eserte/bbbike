@@ -1206,6 +1206,10 @@ Neust‰dtische Kirchstr.	N 9141,12320 9130,12433 9122,12509 9108,12635 9098,12687
 Mittelstr. (Mitte)	N 9016,12416 9130,12433 9343,12464 9462,12481
 Schadowstr.	N 9028,12307 9016,12416 9007,12499
 (Marx-Engels-Forum)	NN 10300,12587 10355,12551 10411,12471 10422,12395
+#: XXX eventuell Umbenennung in Vera-Brittain-Ufer
+#: XXX Berlin.coords.data-Eintrag fehlt
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6643
+#: next_check: 2015-07-01
 (Spreepromenade am DomAquarÈe)	NN 10300,12587 10249,12658 10219,12701 10166,12777
 #: note: auf dem Straﬂenschild steht ebenfalls "St. Wolfgang-Str."
 St. Wolfgang-Str.	NN 10219,12701 10285,12744 10360,12793
@@ -8817,7 +8821,12 @@ Charlotte-E.-Pauly-Str.	NN 25018,5294 25018,4987
 Charlotte-E.-Pauly-Str.	N 25018,4987 25010,4807
 Hartlebenstr.	N 26080,5946 26073,5837 26071,5778
 (Waldweg)	NN 29089,4759 29103,4765 29705,4987
-Straﬂe nach Fichtenau	H 29714,4461 29712,4548 29705,4987 29832,5065 29898,5149 30038,5338 30074,5402 30090,5446 30331,5410 30410,5450 30760,5824
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/16re.pdf/file?y=2015
+#: XXX Straﬂe wird zum 19. Juli 2015 umbenannt -> Ingeborg-Hunzinger-Str.
+#: next_check: 2015-07-19
+#: priority: #A
+Straﬂe nach Fichtenau	H 29714,4461 29712,4548 29705,4987 29832,5065 29898,5149 30038,5338 30074,5402 30090,5446
+Straﬂe nach Fichtenau	H 30090,5446 30331,5410 30410,5450 30760,5824
 (Waldweg parallel zur Straﬂenbahn)	NN 30410,5450 30505,5474 32053,5870 32192,5915
 (Woltersdorf - Rahnsdorf)	NN 32053,5870 31478,5635 31060,5489 30853,5453 30686,5428 30505,5474
 (Schˆneiche - Woltersdorf)	NN 31027,6076 32065,5919 32053,5870
@@ -17200,11 +17209,16 @@ Heidenelkenweg	N 16095,12685 16098,12743
 Freesienweg	N 16000,12625 15997,12743
 Gotlindestr.	N 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616 16409,12612 16576,12612 16720,12614 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566
 #: note: Nibelungenpark vvv
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6225&options=4 (Name des Wohngebietsparks)
 #: note: Privatstraﬂe vvv
 Nibelungenring	N 17320,12308 17359,12302 17442,12292 17454,12348
-Nibelungenring	N 17474,12344 17484,12405 17432,12413 17376,12422 17337,12428
-Rumoldstr.	N 17368,12365 17454,12348 17474,12344 17526,12336
-Hadburgpfad	N 17484,12405 17531,12398
+Nibelungenring	N 17466,12346 17479,12408 17382,12421 17376,12422 17337,12428
+Rumoldstr.	N 17368,12365 17454,12348 17466,12346 17526,12336
+Hadburgpfad	N 17479,12408 17486,12407 17531,12401
+Alzeyweg	N 17376,12422 17368,12365 17359,12302
+Giselhersteig	NN 17355,12460 17386,12456 17438,12448 17491,12439 17534,12433
+(Giselhersteig - Nibelungenring)	NN 17386,12456 17382,12421
+(Giselhersteig - Hadburgpfad)	NN 17491,12439 17486,12407
 #: note ^^^
 #: note ^^^
 Kriemhildstr.	N 17300,12173 17314,12265 17320,12308 17337,12428 17346,12490 17357,12566
