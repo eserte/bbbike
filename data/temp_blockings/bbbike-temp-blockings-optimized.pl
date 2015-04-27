@@ -3111,27 +3111,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.287680.php',
-         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
-',
-         'periodic' => 1,
-         'until' => 1430085599,
-         'from' => 1429740000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              23,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 24.4.2015 bis 26.4.2015 ',
-         'id' => 2419,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3873,16 +3853,6 @@ userdel	2::inwork 7451,13504 7630,13584
          'from' => 1429736139,
          'id' => 2701,
          'data' => 'userdel	2::inwork 51806,78469 51798,78477 51668,78605
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => '156000426',
-         'until' => 1430103600,
-         'text' => 'Niederfinow: L29: Neubau Schiffshebewerk - Transport und Einbau Tragtore OD Niederfinow, 24.04.2015 17:00 Uhr bis 27.04.2015 05:00 Uhr ',
-         'from' => 1429801200,
-         'id' => 2702,
-         'data' => 'userdel	2::inwork 46132,49993 46390,50091
 ',
          'type' => 'gesperrt'
        }
