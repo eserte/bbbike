@@ -740,7 +740,7 @@ for my $browser (@browsers) {
 		    if !$root;
 		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
 		ok($affBlockNode, "Found AffectingBlocking node");
-		like($affBlockNode->findvalue("./Text"), qr{Fähren.*F23.*: fahren nur ab .* bis .*, fahren nicht am Montag}, "temp blockings text");
+		like($affBlockNode->findvalue("./Text"), qr{(Ruderfähre F24: fährt nur samstags.*|Fähren.*F23.*: fahren nur ab .* bis .*, fahren nicht am Montag)}, "temp blockings text");
 	    }
     }
 
