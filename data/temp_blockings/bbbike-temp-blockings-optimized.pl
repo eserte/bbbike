@@ -3060,7 +3060,6 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
 	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 	2::temp 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
-# REMOVED (F24 wurde eingestellt) ---	2::temp 29959,3031 29968,2986
 #: XXX_prog ^^^
 ',
          'until' => undef,
@@ -3855,6 +3854,20 @@ userdel	2::inwork 7451,13504 7630,13584
          'data' => 'userdel	2::inwork 51806,78469 51798,78477 51668,78605
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
+         'recurring' => 1,
+         'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+	2::temp 29959,3031 29968,2986
+#: XXX_prog ^^^
+',
+         'until' => undef,
+         'from' => undef,
+         'text' => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 1. Mai bis zum 3. Oktober',
+         'type' => 'gesperrt',
+         'id' => 2703
        }
      
 );

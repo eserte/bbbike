@@ -36,6 +36,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
 Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q1 5708,14077 5787,14102 5956,14168
 Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
+Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12918,8232
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
 Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
 Archibaldweg: Bauarbeiten, teilweise über Gehweg ausweichen	q2::inwork 15674,10851 15870,10938
@@ -604,7 +605,7 @@ Kienheideweg: Fußgänger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fußgänger	q1 13331,5640 13414,5655
 Kienheideweg - Buschkrugallee: Fußgänger	q1 13511,5675 13612,5698
 Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12672,7561 12647,7672
-Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12602,7907 12583,7974
+Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12643,7714 12622,7796 12625,7829 12602,7907 12583,7974
 Elli-Voigt-Str.: Bodenschwellen	q3 15833,13596 15831,13760
 Elli-Voigt-Str.: Bodenschwellen	q3 15792,13764 15794,13975
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15920,14357 15902,14498
@@ -980,7 +981,7 @@ Marianne-Hapig-Weg: Fußgänger, Spielplatz	q2 17623,-221 17563,-364
 (Kanzlerweg - Schreiberring): eng	q2 8839,8168 8861,8242
 (Rumeyplan - Kanzlerweg): eng	q2 8895,7797 8839,7904
 Elisabeth-Schwarzhaupt-Platz: einige Fußgänger	q1 9274,13963 9167,14127
-(Bornsdorfer Str. - Werbellinstr.): einige Fußgänger	q1 12668,8077 12650,8164
+(Bornsdorfer Str. - Werbellinstr.): einige Fußgänger, Bordstein	q2 12668,8077 12650,8164
 (Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fußgänger	q4 11192,10629 11145,10638
 (Bethanienpark): Fußgänger	q1 11799,10848 11776,10860 11752,10878 11668,10916
 (Bethanienpark): Fußgänger, Bordstein	q3 11668,10916 11589,10947

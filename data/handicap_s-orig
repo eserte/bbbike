@@ -20,7 +20,7 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-04-23 vvv
+#: last_checked: 2015-04-28 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -266,6 +266,11 @@ Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11
 # REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
 # 
 ### Neukölln ###
+# 
+#: last_checked: 2015-04-28
+#: check_frequency: 14d
+#: priority: #A
+Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12918,8232
 # 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzögerung)
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html
@@ -1055,7 +1060,7 @@ Kienheideweg: Fußgänger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fußgänger	q1 13331,5640 13414,5655
 Kienheideweg - Buschkrugallee: Fußgänger	q1 13511,5675 13612,5698
 Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12672,7561 12647,7672
-Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12602,7907 12583,7974
+Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12643,7714 12622,7796 12625,7829 12602,7907 12583,7974
 Elli-Voigt-Str.: Bodenschwellen	q3 15833,13596 15831,13760
 Elli-Voigt-Str.: Bodenschwellen	q3 15792,13764 15794,13975
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15920,14357 15902,14498
@@ -1514,7 +1519,8 @@ Marianne-Hapig-Weg: Fußgänger, Spielplatz	q2- 17623,-221 17563,-364
 (Kanzlerweg - Schreiberring): eng	q2 8839,8168 8861,8242
 (Rumeyplan - Kanzlerweg): eng	q2 8895,7797 8839,7904
 Elisabeth-Schwarzhaupt-Platz: einige Fußgänger	q1 9274,13963 9167,14127
-(Bornsdorfer Str. - Werbellinstr.): einige Fußgänger	q1 12668,8077 12650,8164
+#: XXX_prog BS an der Werbellinstr. (ansonsten q1)
+(Bornsdorfer Str. - Werbellinstr.): einige Fußgänger, Bordstein	q2 12668,8077 12650,8164
 #: XXX_prog BS (2x)
 (Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fußgänger	q4 11192,10629 11145,10638
 (Bethanienpark): Fußgänger	q1 11799,10848 11776,10860 11752,10878 11668,10916

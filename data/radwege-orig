@@ -1429,11 +1429,12 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12869,12425 12891,12549
 die letzten 40 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 12112,12861 12126,13088
 die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW4; 12126,13088 12112,12861
 	RW4;RW4 12126,13088 12163,13295
+	RW3;RW1 13493,11217 13541,11355
 #: next_check_id: WARSCHAUER-2014
-#: XXX provisorische separate Radspur existiert schon
-#: last_checked: 2015-03-17
-#: next_check: 2015-09-30
-	RW3;RW1 13493,11217 13541,11355 13588,11490
+#: XXX Radfahrer müssen eigentlich den Gehweg benutzen
+#: last_checked: 2015-04-28
+#: check_frequency: 14d
+	RW0;RW1 13541,11355 13588,11490
 #: next_check_id: WARSCHAUER-2014
 #: last_checked: 2015-03-17
 #: next_check: 2015-09-30
