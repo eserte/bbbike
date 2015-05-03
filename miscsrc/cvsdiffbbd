@@ -25,12 +25,16 @@ my $diff_file;
 my $add_file_label;
 my $add_fixed_label;
 my $diff_color = '#000080';
+my $with_date;
+my $with_date_time;
 GetOptions(
 	   "add-file-label!" => \$add_file_label,
 	   "add-fixed-label=s" => \$add_fixed_label,
 	   "include-orig!" => \$include_orig,
 	   "diff-file=s"   => \$diff_file,
 	   'diff-color=s'  => \$diff_color,
+	   'with-date!'    => \$with_date,
+	   'with-date-time!' => \$with_date_time,
 	   "help|?" => sub { show_usage() },
 	  );
 
@@ -49,11 +53,15 @@ push @cmd, @ARGV;
 $diff_color =~ m{^#[0-9a-f]{6}$}i
     or die "--diff-color argument does not look like #RRGGBB\n";
 
+($with_date && $with_date_time)
+    and die "Cannot use --with-date and --with-date-time together\n";
+
 use constant STAGE_SHOW => 1;
 use constant STAGE_HIDE => 2;
 my $stage = STAGE_SHOW;
 my $current_file;
 my $current_base;
+my $current_date;
 
 my $bbdrx = qr{^
 	       (?:>[ ]|(?<diffdir>[-+])) # context or unified diff marker (latter with both - and +)
@@ -122,6 +130,10 @@ for my $line (`@cmd`) {
     if ($line =~ /^Index:\s+(.*)/) { # old CVS diff style
 	$current_file = $1;
 	$new_file_started = 1;
+    } elsif ($with_date && $line =~ /^Date:\s+(\d{4}-\d{2}-\d{2})/) { # note: requires --date=iso
+	$current_date = $1;
+    } elsif ($with_date_time && $line =~ /^Date:\s+(.*)/) {
+	$current_date = $1;
     } elsif ($line =~ m{^diff.*? [aci]/(\S+) [bw]/\S+}) { # new git diff style (a vs. b, or with mnemonics: c vs. w resp. i vs. w)
 	$current_file = $1;
 	$new_file_started = 1;
@@ -158,6 +170,9 @@ for my $line (`@cmd`) {
 	    my $diffdir = $+{diffdir};
 	    $diffdir = '+' if !defined $diffdir;
 	    my $name = $+{name};
+	    if (defined $current_date) {
+		$name .= ' ' . $current_date;
+	    }
 	    if (!exists $diffdir_records{$diffdir}) {
 		tie %{ $diffdir_records{$diffdir} }, 'Tie::IxHash';
 	    }
