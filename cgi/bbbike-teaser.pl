@@ -86,11 +86,11 @@ sub teaser_sternfahrt_adfc {
     my $year = (localtime)[5]+1900;
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today gt "20140601";
+    my $out_of_date = $today gt "20150614";
     if (!$out_of_date) {
-	my $url = "http://www.adfc-berlin.de/aktionenprojekte/sternfahrt/sternfahrt-2014.html";
+	my $url = "http://www.adfc-berlin.de/aktionenprojekte/sternfahrt/sternfahrt-2015.html";
 	<<EOF
-<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 1. Juni $year</div>
+<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 14. Juni $year</div>
 EOF
     } else {
 	();
@@ -153,10 +153,10 @@ EOF
 sub teaser_velothon {
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today gt "20140518";
+    my $out_of_date = $today gt "20150531";
     if (!$out_of_date) {
 	my $velothon_map_url = "http://events.lagardere-unlimited.de/velothon/maps/sperr.php";
-	my $date_spec = $today eq '20140518' ? 'Heute' : 'Am Sonntag, den 18. Mai 2014';
+	my $date_spec = $today eq '20150531' ? 'Heute' : 'Am Sonntag, den 31. Mai 2015';
 	<<EOF
 <div class="teaser" style="font-weight:bold">$date_spec findet der Velothon statt.<br/>
 <a href="$velothon_map_url">Karte mit den Sperrungen</a></div>
