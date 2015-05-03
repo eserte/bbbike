@@ -167,6 +167,23 @@ foobar: Friedrich-Ludwig-Jahn-Sportpark	#000080 10403,15007 10618,15076 10607,15
 foobar: Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	#000080 15300,11584 15220,11440
 EOF
     }
+
+    {
+	my $out;
+	ok run([$^X, $cvsdiffbbd, "--add-fixed-label=foobar: ", '--diff-color=#800000', "--diff-file=-"], "<", \$test_diff, ">", \$out);
+	eq_or_diff $out, <<'EOF';
+# File: data/comments_path
+foobar: Warschauer Str. - Boxhagener Str.: bereits am Frankfurter Tor auf den Mittelstreifen wechseln	#800000 13785,12292 13745,12118 14045,11965
+# File: data/comments_route
+foobar: Berlin - Usedom	#800000 10240,15318 10188,15474 10185,15487
+# File: data/flaechen
+foobar: Mauerpark	#800000 10185,15487 10188,15474 10234,15490 10403,15007 10271,14950
+foobar: Falkplatz	#800000 10456,15561 10234,15490 10188,15474 10185,15487
+foobar: Friedrich-Ludwig-Jahn-Sportpark	#800000 10403,15007 10618,15076 10607,15142 10886,15251 10804,15447 10768,15534 10733,15638 10456,15561 10234,15490
+# File: data/gesperrt
+foobar: Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	#800000 15300,11584 15220,11440
+EOF
+    }
 }
 
 {
