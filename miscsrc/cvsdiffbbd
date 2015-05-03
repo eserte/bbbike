@@ -24,11 +24,13 @@ my $include_orig;
 my $diff_file;
 my $add_file_label;
 my $add_fixed_label;
+my $diff_color = '#000080';
 GetOptions(
 	   "add-file-label!" => \$add_file_label,
 	   "add-fixed-label=s" => \$add_fixed_label,
 	   "include-orig!" => \$include_orig,
 	   "diff-file=s"   => \$diff_file,
+	   'diff-color=s'  => \$diff_color,
 	   "help|?" => sub { show_usage() },
 	  );
 
@@ -43,6 +45,9 @@ if ($diff_file) {
     @cmd = qw(cvs diff);
 }
 push @cmd, @ARGV;
+
+$diff_color =~ m{^#[0-9a-f]{6}$}i
+    or die "--diff-color argument does not look like #RRGGBB\n";
 
 use constant STAGE_SHOW => 1;
 use constant STAGE_HIDE => 2;
@@ -156,7 +161,7 @@ for my $line (`@cmd`) {
 	    if (!exists $diffdir_records{$diffdir}) {
 		tie %{ $diffdir_records{$diffdir} }, 'Tie::IxHash';
 	    }
-	    push @{ $diffdir_records{$diffdir}->{$name} }, ['#000080', $+{coords}];
+	    push @{ $diffdir_records{$diffdir}->{$name} }, [$diff_color, $+{coords}];
 	}
     }
 }
