@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-04-27 vvv
+#: last_checked: 2015-05-03 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -27,7 +27,7 @@ Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3:
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2015-04-21
+#: last_checked: 2015-04-30
 #: check_frequency: 60d
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
@@ -54,7 +54,7 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 # 
 ### Mitte ###
 # 
-#: last_checked: 2015-04-21
+#: last_checked: 2015-04-30
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
@@ -65,7 +65,7 @@ Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 119
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX nach den Bauarbeiten bleiben wohl "einige Fußgänger" übrig, dann nur mit q1
-#: last_checked: 2015-04-21
+#: last_checked: 2015-04-30
 Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 # 
 #: last_checked: 2015-03-24
@@ -82,7 +82,7 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 # 
 #: XXX Ende der Bauarbeiten?
 #: XXX_prog: zu eng für Anhänger
-#: last_checked: 2015-03-28
+#: last_checked: 2015-04-30
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
 #: last_checked: 2015-04-09
@@ -123,7 +123,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
 #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7
-#: last_checked: 2015-04-09
+#: last_checked: 2015-04-30
 #: check_frequency: 60d
 Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # 
@@ -132,11 +132,8 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (Fahrbahn wieder befahrbar) --- #: next_check_id: VOSSSTR-2014 vvv --- #: source_id: INKO_113363 vvv --- #: XXX laut INKO_113363 bis Ende September 2014 gesperrt vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html --- #: by: http://www.tagesspiegel.de/berlin/einkaufszentrum-am-leipziger-platz-in-berlin-mitte-mall-of-berlin-eroeffnet-am-25-september/10340428.html --- #: osm_watch: way id="197160274" version="1" vvv --- #: last_checked: 2014-09-13 vvv --- #: next_check: 2014-09-25 vvv --- Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676 --- Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwork 8837,11676 9000,11727
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
 # REMOVED (fertig) --- #: last_checked: 2015-01-30 --- Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
-# 
-#: last_checked: 2015-04-09 vvv
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
-Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719
-#: last_checked ^^^
+# REMOVED (noch nicht ganz fertig, im Süden noch kurze Baustelle, umgedrehte Einbahnstraßenregelung, lohnt aber nicht) ---  #: last_checked: 2015-04-09 vvv --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719 --- #: last_checked ^^^
 # 
 #: next_check_id: SCHWEDTER-2014 vvv
 #: last_checked: 2015-04-09 vvv
@@ -224,7 +221,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-04-21
+#: last_checked: 2015-04-30
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
@@ -330,11 +327,11 @@ Archibaldweg: Bauarbeiten, teilweise über Gehweg ausweichen	q2::inwork 15674,108
 #: next_check_id: BLANKENBURGER-2014 vvv
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html vvv
 #: source_id: IM_022288 vvv
-#: last_checked: 2014-12-13 vvv
+#: last_checked: 2015-05-03 vvv
 #: next_check: 2015-07-01 vvv
 #: valid: 20140701-20150701 vvv
 Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
-Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
+# REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
@@ -3409,7 +3406,8 @@ Fritz-Kühn-Str.: enge Straße	q1 21688,-589 21666,-657 21487,-912 21445,-963
 #: confirmed_by: srt
 Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15856,14915
 #: by: Philipp Günther:
-Nantesstr.: enge Straße	q1 11200,21689 11251,22022 11231,22065 11077,22236
+#: corrected_by: srt/policy (q1 -> q0-)
+Nantesstr.: enge Straße	q0- 11200,21689 11255,22028 11231,22065 11067,22232
 # 
 #: by: Josephine Jacob vvv
 #: corrected_by: srt/policy (q1 -> q0-) vvv

@@ -2596,7 +2596,7 @@ Indische Str.: Asphalt	Q0 7231,16418 7056,16587
 Frundsbergstr.: Kopfsteinpflaster	Q2 15280,23097 15176,23168 15021,23280 14865,23388 14761,23453
 Nisbléstr.: überwiegend guter Asphalt	Q0- 11870,21574 11838,21580 11764,21593 11653,21613 11425,21650 11408,21653 11304,21671 11228,21684 11200,21689 11145,21698 11112,21704 11060,21694
 La-Rochelle-Str.: asphaltiert	Q0 11173,22273 11347,22122 11364,22081 11304,21671
-(Am Nordgraben): unbefestigter, holpriger Weg, bei Regen große Pfützen	Q2- 10228,21940 10336,21901 10414,21876 10488,21860 10565,21840 10633,21827 10709,21804 10789,21786 10831,21774 10902,21753 10981,21731 11060,21694 11073,21680 11175,21571 11254,21457 11370,21320 11389,21310 11437,21283 11534,21229 11714,21130
+(Am Nordgraben): unbefestigter, holpriger Weg, bei Regen große Pfützen	Q2- 10228,21940 10336,21901 10414,21876 10488,21860 10565,21840 10633,21827 10709,21804 10789,21786 10831,21774 10902,21753 10981,21731 11060,21694 11073,21680 11175,21571 11249,21463 11370,21320 11389,21310 11437,21283 11534,21229 11714,21130
 Kurze Str.: Beton	Q1 7205,20047 7125,20053
 Hertzstr.: sehr schlechtes Kopfsteinpflaster	Q3- 7672,19869 7807,19811
 #: note: laut ADFC-Karte "nicht für Radfahrer geeignet"
@@ -7593,7 +7593,7 @@ Am Kirschgarten: Betonpflaster	Q1 11725,21162 11831,21104 11937,21043 11944,2122
 Straße 28 (Französisch Buchholz): Beton	Q0 11522,21519 11509,21439 11503,21406
 Chantiéweg: unbefestigte Straße	Q2 11425,21650 11408,21537
 Straße 18a: unbefestigte Straße	Q2 11217,21565 11297,21593 11347,21589
-Ancillonweg: unbefestigte Straße	Q2 11204,21567 11228,21684
+Ancillonweg: Asphalt	Q0 11204,21567 11228,21684
 Blaubeerweg: unbefestigter Weg	Q2 10882,22377 10827,22647
 Blaubeerweg: Kopfsteinpflaster	Q2 10933,22179 10910,22245 10882,22377
 Mazetstr.: Asphalt	Q0 10993,21948 11056,21978 11231,22065 11347,22122 11461,22179
@@ -8854,7 +8854,7 @@ Blockdammweg: Asphalt	Q0 17904,8924 17975,8971
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinsteinpflaster	Q2+ 12948,15771 12762,15882
 Parkstr.: Asphalt mit einigen leichten Schäden	Q0- 13788,16240 13972,16639
 Prenzlauer Promenade: Beton	Q0- 11950,18529 11934,18576 11980,18900 11958,19158 11940,19380 11953,19541 11942,19567 11915,19580
-Prenzlauer Promenade: Beton	Q0- 11950,18529 11969,18552 11984,18650 12002,18768 12024,18913 11965,19349 11979,19403 11987,19457 12048,19485 12092,19465
+Prenzlauer Promenade: Beton	Q0- 11950,18529 11969,18552 11984,18650 12002,18768 12024,18913 11969,19360 11979,19403 11987,19457 12048,19485 12092,19465
 Prenzlauer Promenade: Beton	Q0- 11979,19403 11990,19325
 (Dohnagestell - Tangastr.): Fahrbahn Kopfsteinpflaster, breiter Nebenstreifen als Parkweg	Q1- 5553,15271 5722,15332
 (Dohnagestell - Tangastr.): schlechtes Kopfsteinpflaster	Q3 5722,15332 5802,15399
@@ -8995,7 +8995,7 @@ Karl-Bonhoeffer-Nervenklinik: Kopfsteinpflaster	Q2+ 5388,19186 5429,19165
 Linienstr.: Kleinsteinpflaster	Q1 10718,13625 10740,13621
 (Greifswalder Str. - Volkspark Anton Saefkow): Gehwegplatten	Q1- 12620,14979 12639,14913
 (Greifswalder Str. - Volkspark Anton Saefkow): mäßiger Asphalt	Q1- 12639,14913 12592,14838 12640,14800
-Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12789,14689
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12798,14682
 (Martin-Albertz-Weg - Münsinger Park): wassergebundene Decke	Q1 -3608,14398 -3680,14394 -3712,14393
 Jenneweg: Beton	Q0 -3900,14818 -3978,14766
 Jenneweg: Verbundsteinpflaster	Q1 -3978,14766 -4015,14744
@@ -9752,8 +9752,9 @@ Grenobler Ring: Verbundsteinpflaster	Q1 12404,21217 12483,21255
 Grenobler Ring: Verbundsteinpflaster	Q1 12493,21212 12483,21255 12441,21341 12360,21303
 #: next_check_id: NIZZASTR-2014
 #: XXX wie wird es nach den Bauarbeiten aussehen?
-#: last_checked: 2014-12-13
-Lyonstr.: teilweise unbefestigt/Betonplattenstraße	Q2 12189,21337 12214,21332 12322,21378 12448,21433
+#: last_checked: 2015-05-03
+#: check_frequency: 60d
+Lyonstr.: Baustraße, unbefestigt	Q2 12189,21337 12214,21332 12322,21378 12448,21433
 #: add_fragezeichen: Qualität des Waldwegs?
 (Heerstr. - Tiefwerder): vermutlich Waldweg	Q2 -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3087,11728 -3179,11763
 Alter Fischerweg: unbefestigte Straße	Q2 29960,5467 30001,5460
@@ -9825,6 +9826,9 @@ Schlotterkammsteig: wassergebundene Decke	Q1 16251,-586 16276,-507
 (Radweg an der Straßenbahn - Rudolf-Leonhard-Str.): Verbundsteinpflaster	Q1 21192,16466 21222,16443
 Neubrandenburger Str.: Beton	Q0 17676,18701 17667,18617 17635,18591 17580,18548 17401,18409
 Darguner Str.: Beton	Q0 17566,18680 17635,18591
+(Verlängerung des Kapellenwegs): unbefestigte Straße	Q2 10667,23684 10685,23707 10724,23744 10885,23830
+Ideallee: unbefestigte Straße	Q2 11069,23647 10971,23838 10813,24126
+Bambusweg: unbefestigte Straße	Q2 10667,23684 10687,23684 10708,23696 10747,23718 10785,23740 10842,23773 10887,23796 10927,23816 10971,23838
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11299,7 +11303,7 @@ Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 
 #: by: ^^^
 # 
 #: by: Sebastian Kröger/Andreas Mühlhausen vvv
-Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 12528,14845 12700,14726 12782,14676 12862,14618 12901,14594 13013,14523
+Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 12528,14845 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523
 Anton-Saefkow-Str.: Beton mit Löchern und Kanten	Q2 13013,14523 13084,14472
 Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 13084,14472 13183,14400
 #: by: ^^^
@@ -17643,7 +17647,7 @@ Straße Y: Asphalt	Q0 -629,16546 -671,16488
 #: by: Manfred Kohla: vvv
 #: confirmed_by srt vvv
 Petitweg: guter Asphalt	Q0 11025,22504 10939,22384 10924,22343
-Petitweg: guter Asphalt	Q0- 10924,22343 10994,22289 11077,22236
+Petitweg: guter Asphalt	Q0- 10924,22343 10994,22289 11067,22232
 #: confirmed_by ^^^
 #: by: ^^^
 # 
@@ -20519,8 +20523,12 @@ Halbe-Hufen-Weg: schlechter fester Sandweg	Q3 15471,23746 15559,23689 15647,2363
 #: by: Manuela Möller-Gröbel:
 Teikeweg: Beton	Q0 9412,4537 9519,4537 9677,4518
 # 
-#: by: Philipp Günther:
-Nantesstr.: guter Asphalt	Q0 11200,21689 11251,22022 11231,22065 11077,22236
+#: by: Philipp Günther: vvv
+#: corrected_by: srt (guter Asphalt -> ...)
+Nantesstr.: Asphalt mit Schäden	Q1- 11200,21689 11255,22028 11231,22065
+#: confirmed_by: srt
+Nantesstr.: guter Asphalt	Q0 11231,22065 11067,22232
+#: by ^^^
 # 
 #: by: wtkoch...:
 #: confirmed_by: srt
@@ -23866,7 +23874,7 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12393,15030 12314,15008
 (Verlängerte Diesterwegstr.): Verbundsteine	Q0- 12061,15156 12082,15206 12103,15218
 Olga-Benario-Prestes-Str.: Asphalt	Q2 12628,14650 12473,14763
 #: corrected_by: srt (Asphalt -> Asphalt mit Schäden)
-Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12782,14676 12742,14622 12820,14564
+Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12789,14670 12745,14613 12814,14556
 (Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13084,14472 13009,14371 12949,14292
 #: confirmed_by: srt
 Hans-Otto-Str.: Kopfsteinpflaster	Q2 12841,14380 12782,14300 12729,14227 12608,14070 12542,13984 12478,13903 12398,13792

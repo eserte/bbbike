@@ -2562,7 +2562,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2015-04-08 vvv
+#: last_checked: 2015-04-30 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2572,9 +2572,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (südlicher Bereich) vvv
-#: last_checked: 2015-03-27 vvv
+#: last_checked: 2015-04-30 vvv
 #: check_frequency: 30d vvv
-	F::inwork 9063,12051
+# REMOVED (aufgehoben) ---	F::inwork 9063,12051
 	F::inwork 9270,12086
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2601,9 +2601,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked ^^^
 #: XXX ^^^
 # 
-#: XXX wird die Ampel hier nach Öffnung der Chausseestr. aufgehoben?
-#: last_checked: 2015-04-01
-#: check_frequency: 14d
+#: XXX wird die Ampel hier nach Öffnung der Invalidenstr. aufgehoben?
+#: last_checked: 2015-04-30
+#: check_frequency: 30d
 	X::inwork 8775,13606
 # REMOVED (Antwort: wahrscheinlich ja) --- #: XXX ist diese Ampel permanent?
 	X 8450,13599
@@ -3069,6 +3069,7 @@ Bahn kommt ca. halbstündlich	B 40222,103642
 	B 43031,-50423
 	B 44496,-51922
 	B 49226,-59451
+	B 50161,-60073
 	B 50153,-67024
 	B 51374,-71361
 	B 40359,139907

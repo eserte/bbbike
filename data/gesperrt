@@ -225,7 +225,7 @@ Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1s 12349,8464 12368,8356
 Zionskirchplatz	1 10304,14254 10277,14350 10311,14391 10365,14372 10391,14280
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12782,14676 12700,14726 12528,14845
+Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wˆhlertstr.	1s 8442,14456 8669,14550
 Pflugstr.	1s 8669,14550 8776,14364
@@ -999,6 +999,9 @@ Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich)	1s 18377,9366 18
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3360,14525 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
+Straﬂenbahnhaltestelle	3nocross::ignrte 9246,13235 9255,13164 9262,13111
+Friedrichstr. -> Johannisstr.: Straﬂenbahnhaltestelle	3::igndisp 9246,13235 9255,13164 9385,13174
+Johannisstr. -> Friedrichstr.: Straﬂenbahnhaltestelle	3::igndisp 9385,13174 9255,13164 9262,13111
 Mittelstreifen mit Zaun	3nocross::ignrte 7966,15571 7975,15500 8049,15470
 Reinickendorfer Str. -> Nettelbeckpl.: Mittelstreifen mit Zaun	3::igndisp 8049,15470 7975,15500 7975,15484
 Nettelbeckpl. -> Reinickendorfer Str.: Mittelstreifen mit Zaun	3::igndisp 7975,15484 7975,15500 7966,15571
@@ -2809,7 +2812,7 @@ Promenade am Teltowkanal: w‰hrend der Bauarbeiten an der Emil-Schulz-Br¸cke gesp
 wegen Bauarbeiten ist das ‹berqueren nicht mˆglich	3nocross::ignrte 9984,12426 9934,12420 9858,12410
 Niederlagstr. -> Unter den Linden: wegen Bauarbeiten ist das ‹berqueren nicht mˆglich	3::igndisp 9943,12364 9934,12420 9858,12410
 Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das ‹berqueren nicht mˆglich	3::igndisp 9984,12426 9934,12420 9943,12364
-An der CharitÈ: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
+An der CharitÈ: wegen Bauarbeiten gesperrt	2:inwork 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372 8665,13353
 Babelsberger Park - Humboldtbr¸cke: Bauarbeiten, tempor‰r (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
@@ -2903,7 +2906,7 @@ Cohnstr. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 13197,15734 13229,15
 Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
 tragen (3 einzelne Stufen)	0:15:-234 13079,14320
 Achtung, schlecht sichtbare Kette!	BNP:5:-121 13485,14054
-Treppe	0:20:-62 12867,14648
+Treppe	0:20:-63 12867,14648
 tragen (4 Stufen) oder schmale Rampe benutzen	0:5:-235 13007,14615
 tragen (3 Stufen) oder schmale Rampe benutzen	0:5:-240 12982,14629
 tragen (8 Stufen)	0:15:-185 5575,5801

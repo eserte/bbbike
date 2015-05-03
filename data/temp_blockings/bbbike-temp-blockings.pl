@@ -570,14 +570,14 @@ EOF
        source_id => 'IM_015896',
        file  => 'badstr.bbd',
      },
-     { from  => $isodate2epoch->("2014-06-13 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-06-15 23:59:59"),
+     { from  => $isodate2epoch->("2015-06-19 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-06-21 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (14.6.2014 bis 15.6.2014',
+       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (20.6.2015 bis 21.6.2015',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=834793
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=1045407
 userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
 userdel	2::temp 6729,10212 6971,10346
 userdel	2::temp 6628,10318 6626,10155
@@ -9461,14 +9461,14 @@ EOF
 userdel	2::temp 12891,12549 12869,12425
 EOF
      },
-     { from  => $isodate2epoch->("2014-05-31 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-06-01 22:00:00"),
+     { from  => $isodate2epoch->("2015-06-06 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-06-07 22:00:00"),
        periodic => 1, # erster Termin im Sommer
        recurrences => [['yearly', days => 31, months => 5]], # kann aber auch erst im Juli stattfinden
-       text  => 'Open Air Gallery am 1. Juni 2014 auf der Oberbaumbrücke (10:00 - 22:00)',
+       text  => 'Open Air Gallery am 7. Juni 2015 auf der Oberbaumbrücke (10:00 - 22:00)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=811375
+#: by: http://www.openairgallery.de/
 userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
@@ -13290,7 +13290,7 @@ EOF
        text  => 'K 6636 Kraftwerkstr. OL Lübbenau, Bereich Bahnübergang Straßeninstandsetzungsarb. Vollsperrung 17.12.2008-19.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 50112,-59987 50337,-60337
+userdel	2::inwork 50112,-59987 50161,-60073 50337,-60337
 EOF
      },
      { from  => 1229036400, # 2008-12-12 00:00
@@ -19150,11 +19150,11 @@ EOF
 userdel	1::temp 1574,11379 1625,11380 1834,11408 1960,11426 2109,11441
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-05 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-07-06 22:00:00"),
+     { from  => $isodate2epoch->("2015-07-06 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-07-07 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
        recurrences => [['yearly', days => 5, months => 7]], # kann aber auch erst im August stattfinden
-       text  => 'Open Air Gallery am 6. Juli 2014 auf der Oberbaumbrücke (10:00 - 22:00)',
+       text  => 'Open Air Gallery am 7. Juli 2015 auf der Oberbaumbrücke (10:00 - 22:00)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
@@ -21469,13 +21469,13 @@ EOF
 userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
 EOF
      },
-     { from  => $isodate2epoch->("2014-05-31 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-06-01 23:59:59"),
-       text  => 'Internationaler Kindertag im FEZ, Veranstaltung, einige Wege und Straßen sind gesperrt, 31. Mai und 1. Juni 2014',
+     { from  => $isodate2epoch->("2015-05-29 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-06-01 23:59:59"),
+       text  => 'Internationaler Kindertag im FEZ, Veranstaltung, einige Wege und Straßen sind gesperrt, 30. Mai 2015 bis 1. Juni 2015',
        periodic => 1,
-       recurrences => [["yearly", "days" => 31, "months" => 5]],
+       recurrences => [["yearly", "days" => 30, "months" => 5]],
        type  => 'gesperrt',
-       source_id => 'http://www.kindertag-berlin.de/',
+       source_id => 'http://www.kindertag-berlin.de/?date=20150503',
        data  => <<EOF,
 userdel	2::temp 20755,5750 20716,6029 20708,6089 20623,6136 20453,6211 20464,6237
 userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
@@ -21623,7 +21623,7 @@ userdel	2::temp 8214,12205 8215,12156 8327,12174 8466,12197 8522,12239
 userdel	2::temp 8548,11571 8542,11502 8479,11493 8374,11479
 userdel	2::temp 8049,12140 8122,12147 8107,12068 8099,12058 8102,12043 8099,12022 8091,12023 8091,12011 8091,11992 8104,11984 8095,11919
 userdel	2::temp 8132,11910 8167,11865
-userdel	2::temp 8595,12066 8577,11896 8632,11912 8783,11959 8901,12008 9063,12051
+userdel	2::temp 8595,12066 8577,11896 8632,11912 8783,11959 8901,12008
 userdel	2::temp 8210,11775 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245 8600,12165 8595,12066 8737,12098 8783,11959 8813,11825
 userdel	2::temp 8122,12147 8215,12156 8221,11885 8221,11876 8167,11865 8140,11850
 userdel	2::temp 8210,11775 8203,11686 8335,11718 8387,11637 8442,11555 8542,11502 8596,11508 8740,11524 8834,11536 9058,11564 9000,11727 8969,11814 8825,11773 8813,11825 8567,11799
@@ -22688,14 +22688,12 @@ userdel	q4::inwork 9383,13986 9676,14046
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1430672249, # undef, # XXX
        text  => 'Gürtelstr. (Weißensee): Einbahnstraße zwischen Meyerbeerstr. und Gounodstr.',
        type  => 'handicap',
        source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
-#: XXX wann ist die Baustelle fertig?
-#: last_checked: 2015-02-13
-#: check_frequency: 60d
+# REMOVED (fertig) --- #: XXX wann ist die Baustelle fertig? --- #: last_checked: 2015-02-13 --- #: check_frequency: 60d
 userdel	q3::inwork; 13555,15596 13459,15653
 EOF
      },
@@ -23795,7 +23793,7 @@ EOF
        text  => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-04-01
+#: last_checked: 2015-04-30
 userdel	q4::inwork; 9559,11715 9692,11732
 EOF
      },
@@ -23869,18 +23867,13 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => $isodate2epoch->("2015-06-30 15:00:00"),
+       source_id => 'IM_024088',
        text  => "Gürtelstr. - Möllendorffstr.: das Linksabbiegen von der Frankfurter Allee in die Möllendorffstr. und die Querung der Frankfurter Allee von der Gürtelstr. kommend ist nicht mehr direkt möglich, ggfs. Fußgängerampeln auf der westlichen Seite benutzen",
        data  => <<EOF,
-#: XXX "für mehrere Monate" vvv
-#: XXX evtl. bis 30. April 2015
-#: last_checked: 2015-04-26 vvv
-#: next_check: 2015-04-30 vvv
+# REMOVED --- #: XXX "für mehrere Monate" vvv --- #: XXX evtl. bis 30. April 2015 --- #: last_checked: 2015-04-26 vvv --- #: next_check: 2015-04-30 vvv
 	3 15294,11964 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
 EOF
      },
      { from  => 1423980000, # 2015-02-15 07:00

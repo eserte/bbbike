@@ -271,7 +271,7 @@ Schmollerplatz/str.	1 13244,9410 13184,9340 13209,9325
 Isarstr.	1s:q4 12349,8464 12368,8356
 Zionskirchplatz	1 10304,14254 10277,14350 10311,14391 10365,14372 10391,14280
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12782,14676 12700,14726 12528,14845
+Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 #: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
 Wöhlertstr.	1s:q4 8442,14456 8669,14550
@@ -1361,6 +1361,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Friedrichstr.: Straßenbahnhaltestelle	3nocross 9246,13235 9255,13164 9262,13111
 Reinickendorfer Str.: Mittelstreifen mit Zaun	3nocross 7966,15571 7975,15500 8049,15470
 #: XXX_prog unbequemes Überqueren, bessere Alternativen existieren, sollte als eine Art handicap für Punkte implementiert sein
 Spittelmarkt: unbequemes Überqueren	3nocross 10238,11741 10299,11786 10314,11804
@@ -2658,7 +2659,7 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
 #: source_id: IM_023816 vvv
 #: XXX vermutlich bis März 2016 andauernd
-#: last_checked: 2015-04-07 vvv
+#: last_checked: 2015-04-30 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 #: last_checked ^^^
@@ -2704,9 +2705,11 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 #: XXX ^^^
 # 
 #: next_check_id: NIZZASTR-2014 vvv
-#: last_checked: 2014-12-13 vvv
+#: last_checked: 2015-05-03 vvv
+#: check_frequency: 60d vvv
 Grenobler Ring: teilweise noch nicht fertiggestellt	2::inwork 12360,21303 12441,21341
 Lyonstr.: noch nicht fertiggestellt, zurzeit nur Baustraße	2::inwork 12189,21337 12214,21332 12322,21378 12448,21433
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -2876,9 +2879,9 @@ Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 99
 #: next_check_id ^^^
 # 
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2014-04-02
+#: last_checked: 2015-04-30
 #: next_check: 2015-08-30
-An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8764,13372 8665,13353
+An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372 8665,13353
 # 
 # REMOVED --- #: next_check_id: FLORAGAERTEN-2014 --- #: osm_watch: way id="294423898" version="4" --- #: XXX siehe auch Eintrag in qualitaet_s-orig --- #: last_checked: 2014-09-28 --- #: check_frequency: 30d --- In den Floragärten: Baustelle	2:inwork 9895,17649 9995,17642
 # REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: priority: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^
