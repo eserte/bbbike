@@ -21214,24 +21214,14 @@ EOF
 	q3::inwork; -12881,-1092 -12961,-1105 -12973,-1106 -13187,-1150
 EOF
      },
-     { from  => $isodate2epoch->("2014-06-29 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2014-10-20 18:00:00"),
-       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 30.06.2014 bis voraussichtlich 20.10.2014',
+     { from  => $isodate2epoch->("2015-05-04 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2015-09-21 18:00:00"),
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
        type  => 'handicap',
-       source_id => 'IM_022268',
+       source_id => 'IM_024846',
        data  => <<EOF,
-#: next_check_id: KARLSHORSTER-2014
-#: last_checked: 2014-10-10 vvv
-#: next_check: 2014-10-20 vvv
-#: by: http://www.berlin-straba.de/
-#: by: https://de-de.facebook.com/kaskelkiez/posts/724415817603933
-#: by: http://www.bvg.de/index.php/de/9464/name/Verkehrsmeldungen/report/1827852.html (nur zwei Wochen)
-#: source_id: 2147338462
-userdel	q4::inwork 15261,10738 15272,10790
-# REMOVED --- userdel	q4::inwork 15272,10790 15279,10862
-# REMOVED --- userdel	q3::inwork 15279,10862 15144,10905
-#: next_check ^^^
-#: last_checked ^^^
+#: XXX vor Ort prüfen!
+userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
      { from  => 1361168940, # 2013-02-18 07:29

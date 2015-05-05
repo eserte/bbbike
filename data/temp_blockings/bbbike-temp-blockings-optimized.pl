@@ -839,27 +839,7 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.ms-event-agentur.com/primavera%202013.html',
-         'data' => 'userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9282
-userdel	2::temp 6945,9142 7044,9163
-',
-         'periodic' => 1,
-         'until' => 1430690399,
-         'from' => 1430431200,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              1
-                            ]
-                          ],
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (2.5.2015 und 3.5.2015)',
-         'id' => 728,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3140,7 +3120,17 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        },
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_024846',
+         'until' => 1442851200,
+         'text' => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
+         'from' => 1430704800,
+         'id' => 2416,
+         'data' => '#: XXX vor Ort prüfen!
+userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -3188,27 +3178,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        },
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2014
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
-userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
-',
-         'periodic' => 1,
-         'until' => 1430690399,
-         'from' => 1430344800,
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2015 bis 03.05.2015)',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              5
-                            ]
-                          ],
-         'type' => 'handicap',
-         'id' => 2431
-       },
+       undef,
        undef,
        undef,
        undef,
