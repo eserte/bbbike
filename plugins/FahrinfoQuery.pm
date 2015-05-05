@@ -640,7 +640,7 @@ sub _extract_vbb_2013_stops () {
 
 sub _convert_vbb_2013_stops () {
     my $script = bbbike_root . '/miscsrc/vbb-stops-to-bbd.pl';
-    system("$script $openvbb_2013_local_file > $openvbb_2013_bbd_file~");
+    system("$^X $script $openvbb_2013_local_file > $openvbb_2013_bbd_file~");
     if ($? || !-s "$openvbb_2013_bbd_file~") {
 	die "Failure to convert $openvbb_2013_local_file to $openvbb_2013_bbd_file~";
     }
@@ -705,7 +705,7 @@ sub _download_vbb_2012_stops () {
 
 sub _convert_vbb_2012_stops () {
     my $script = bbbike_root . '/miscsrc/vbb-stops-to-bbd.pl';
-    system("$script $openvbb_2012_local_file > $openvbb_2012_bbd_file~");
+    system("$^X $script $openvbb_2012_local_file > $openvbb_2012_bbd_file~");
     if ($? || !-s "$openvbb_2012_bbd_file~") {
 	die "Failure to convert $openvbb_2012_local_file to $openvbb_2012_bbd_file~";
     }
