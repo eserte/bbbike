@@ -21220,7 +21220,9 @@ EOF
        type  => 'handicap',
        source_id => 'IM_024846',
        data  => <<EOF,
-#: XXX vor Ort prüfen!
+#: next_check_id: KARLSHORSTER-2015
+#: last_checked: 2015-05-05
+#: next_check: 2015-09-21
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
@@ -23964,10 +23966,11 @@ EOF
 userdel	2::inwork 34707,13880 34383,14138 34276,14308 33589,15778 33016,17059
 EOF
      },
-     { from  => 1426870800, # 2015-03-20 18:00
-       until => 1427014800, # 2015-03-22 10:00
-       text  => 'Schönerlinder Str.: zwischen Am Posseberg und Am Vorwerk komplett gesperrt, von Samstag 18 Uhr bis Sonntagmorgen ca. 10 Uhr',
+     { from  => $isodate2epoch->("2015-05-08 18:00:00"), # 1 Tag Vorlauf # 1426870800, # 2015-03-20 18:00
+       until => $isodate2epoch->("2015-05-10 10:00:00"), # 1427014800, # 2015-03-22 10:00
+       text  => 'Schönerlinder Str.: zwischen Am Posseberg und Am Vorwerk komplett gesperrt, von 9. Mai 2015, 18.00 Uhr bis 10. Mai 2015, 10.00 Uhr ',
        type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5590.html',
        data  => <<EOF,
 userdel	2::inwork 12694,25696 12624,25570
 EOF

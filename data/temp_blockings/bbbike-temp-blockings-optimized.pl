@@ -3126,7 +3126,9 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'text' => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
          'from' => 1430704800,
          'id' => 2416,
-         'data' => '#: XXX vor Ort prüfen!
+         'data' => '#: next_check_id: KARLSHORSTER-2015
+#: last_checked: 2015-05-05
+#: next_check: 2015-09-21
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 ',
          'type' => 'handicap'
@@ -3754,7 +3756,16 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5590.html',
+         'until' => 1431244800,
+         'text' => 'Schönerlinder Str.: zwischen Am Posseberg und Am Vorwerk komplett gesperrt, von 9. Mai 2015, 18.00 Uhr bis 10. Mai 2015, 10.00 Uhr ',
+         'from' => 1431100800,
+         'id' => 2690,
+         'data' => 'userdel	2::inwork 12694,25696 12624,25570
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'IM_024458',
