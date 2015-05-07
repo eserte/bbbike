@@ -23,6 +23,7 @@ our $VERSION = '0.02';
 
 use LWP::UserAgent ();
 use JSON::XS qw(decode_json);
+use POSIX qw(strftime);
 
 our %CURRENT_STATIONS;
 
@@ -46,9 +47,6 @@ sub add_button {
 	    (-menuitems => [
 			    [Button => "OpenWeatherMap-Daten anzeigen",
 			     -command => sub { refresh_owm_layer() },
-			    ],
-			    [Button => "XXX Raise", # XXX shouldn't be necessary if this was a proper BBBike layer
-			     -command => sub { $main::c->raise('owm-data') },
 			    ],
 			    [Button => "OpenWeatherMap-Daten löschen",
 			     -command => sub { delete_owm_layer() },
@@ -81,6 +79,7 @@ sub refresh_owm_layer {
 	    die "Empty list was returned, probably no weather stations here";
 	}
 	delete_owm_layer();
+	main::add_to_stack('owm-data', 'topmost');
 	for my $entry (@$d) {
 	    my $station = $entry->{station};
 	    my $id = $station->{id};
@@ -89,12 +88,19 @@ sub refresh_owm_layer {
 	    }
 	    my $last_data = $entry->{last};
 	    my $text = '';
-	    $text .= 'Date/time: ' . scalar(localtime $last_data->{dt}) . "\n";
+	    my $ago_secs = time - $last_data->{dt};
+	    my $ago = ($ago_secs > 365*86400 ? '(more than one year ago)' :
+		       $ago_secs > 31*86400  ? '(more than one month ago)' :
+		       $ago_secs > 2*86400   ? '(' . int($ago_secs/86400) . ' days ago)' :
+		       $ago_secs > 2*3600    ? '(' . int($ago_secs/3600) . ' hours ago)' :
+		       $ago_secs > 2*60      ? '(' . int($ago_secs/60) . ' minutes ago)' : 'recent');
+	    $text .= 'Date/time: ' . strftime("%Y-%m-%d %H:%M:%S", localtime($last_data->{dt})) . " $ago\n";
 	    $text .= 'Name: ' . $station->{name} . "\n";
 	    $text .= 'Temperature: ' . sprintf("%.1f", $last_data->{main}->{temp} - 273.15) . "°C\n";
 	    $text .= 'Wind: ' . $last_data->{wind}->{speed} . 'm/s, ' . $last_data->{wind}->{deg} . "°\n";
 	    my($x,$y) = main::transpose($Karte::Polar::obj->map2standard($station->{coord}->{lon}, $station->{coord}->{lat})); # XXX other coord systems?
-	    $main::c->createText($x,$y, -text => $text, -tags => ['owm-data', ($id ? "owm-data-$id" : ())]);
+	    #$main::c->createText($x,$y, -text => $text, -tags => ['owm-data', ($id ? "owm-data-$id" : ())]);
+	    main::outline_text($main::c, $x, $y, -text => $text, -tags => ['owm-data', ($id ? "owm-data-$id" : ())]);
 	}
     };
     if ($@) {
@@ -114,6 +120,9 @@ __END__
 =head1 TODO
 
 * use "proper" BBBike layers (so raise-ing/lower-ing works fine)
+
+  -> now we have something better than before (initial stack order is topmost),
+     but still not perfect
 
 * full data view, e.g. with tooltip or by clicking and opening a small dialog
 
