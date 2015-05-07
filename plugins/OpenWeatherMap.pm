@@ -11,8 +11,8 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-# Description (en): Show weather data from OpenWeatherMap
-# Description (de): Wetterdaten vpn OpenWeatherMap anzeigen
+# Description (en): Show weather data from OpenWeatherMap (experimental)
+# Description (de): Wetterdaten vpn OpenWeatherMap anzeigen (experimentell)
 package OpenWeatherMap;
 
 use BBBikePlugin;
@@ -144,5 +144,12 @@ __END__
 * does it work with a native wgs-84 map?
 
 * Msg-ize
+
+* major reasons for being experimental.
+
+  * I seldom use it
+
+  * currently the available weather data is far from usable because too old
+    (checked around Berlin, 2015-05-07)
 
 =cut
