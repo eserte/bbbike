@@ -65,10 +65,21 @@ sub add_button {
 
 sub refresh_owm_layer {
     eval {
+	my $appid;
+	my $appid_file = "$ENV{HOME}/.openweathermap_appid";
+	if (open my $appid_fh, $appid_file) {
+	    chomp($appid = <$appid_fh>);
+	}
 	my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
 	my $cx = ($maxx-$minx)/2 + $minx;
 	my $cy = ($maxy-$miny)/2 + $miny;
 	my $url = "http://api.openweathermap.org/data/2.5/station/find?lat=$cy&lon=$cx=cnt=10";
+	if (defined $appid) {
+	    warn "INFO: using API key (appid): $appid\n";
+	    $url .= "&APPID=$appid";
+	} else {
+	    warn "NOTE: no API key found, consider to apply for one and put it to $appid_file\n";
+	}
 	my $ua = main::get_user_agent();
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
