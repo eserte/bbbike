@@ -24102,4 +24102,13 @@ EOF
 #: XXX_prog ^^^
 EOF
      },
+     { from  => undef, # 
+       until => 1441058399, # 2015-08-31 23:59
+       text  => 'Ernst-Liesegang-Ufer: wegen Bauarbeiten gesperrt, bis voraussichtlich Ende August 2015',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.312630.php',
+       data  => <<EOF,
+userdel	2::inwork -6474,5144 -6361,5222 -6277,5180 -6037,5371 -5918,5610 -5853,5674 -5828,5739 -5688,5837 -5390,5941 -5264,6001 -5037,6085 -4835,6220 -4774,6514
+EOF
+     },
     );

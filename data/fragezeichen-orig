@@ -1915,6 +1915,9 @@ Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -15999,1387 -16
 #: XXX: Planstraße 5: Rönsahler Straße
 #: XXX: Planstraße 6: Zum Storchennest
 #: XXX: Planstraße 7: Schmidtweg
+#: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf
+#: XXX: Planstraße 1: Pastor-Moritz-Straße
+#: XXX: Planstraße 2: Paul-Lange-Bey-Straße
 neue Planstraßen in Fahrland: Lage, Qualität?	? -16174,7006 -15929,6894
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140131.0900.393992.html
@@ -2018,6 +2021,7 @@ Hüfnerweg (Groß Glienicke): genaue Lage, Qualität?	? -9801,6988 -9795,7066
 #: XXX Am Lübarser Feld
 #: XXX Zum Klötzbecken
 #: XXX Zum Klötzhain
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2015 (Grundstücksnummerierungen)
 Privatstraßen in Lübars	? 6178,22456 6144,22651 5956,22714 5953,22865
 #: XXX ^^^
 #: by ^^^
@@ -3256,6 +3260,18 @@ Turmfalkenweg (Potsdam-Golm): Qualität?	? -17800,69 -17784,113
 #: XXX fehlt in Potsdam.coords.data PLZ=14476
 Habichtweg (Potsdam-Golm): Qualität?	? -17784,113 -17748,219 -17725,293
 Zum Großen Herzberg (Potsdam-Golm): Qualität?	? -18042,219 -18017,316 -18026,357
+# 
+#: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf
+#: XXX weitere Straßenbenennungen, fehlen alle in Potsdam.coords.data
+#: XXX Planstraße A: An der Bahn (Weiterführung)
+#: XXX Planstraße B (Nord-, Ost-, Südverlauf): Feldlerchenwinkel
+#: XXX Planstraße B (Westverlauf): Sperlingsweg
+#: XXX Planstraßen 1 und 2 (Westverlauf): Taubenbogen
+#: XXX Planstraße 2 (Nord-, Ost-, Südverlauf): Grasmückenring
+#: XXX Planstraßen 3.1 und 3.2: Elsternstraße
+#: XXX Planstraßen 4 und 5: Zum Großen Herzberg (Weiterführung)
+Nördlich in der Feldmark: Planstraßen, genauer Verlauf, Qualität?	? -18037,307 -18063,509 -18623,422 -18584,217 -18037,307 -18026,357
+# 
 Zum Bahnhof Pirschheide (Potsdam): Qualität?	? -16151,-3770 -16050,-3982 -15982,-4032
 #: XXX fehlt in Potsdam.coords.data
 Am Küssel (Potsdam-Grube): Qualität?	? -19233,2251 -19505,2798
@@ -3784,6 +3800,11 @@ Jahnpromenade (Erkner): Qualität?	? 34325,3183 34352,3189 34493,3339
 #: XXX Privatstraße
 Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13494,-2850
 # 
+#: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf
+#: XXX Privatstraße
+#: XXX fehlt in Potsdam.coords.data
+Luisenhof (Potsdam): genaue Lage der Straße, Qualität?	? -13481,-2956 -13629,-2860
+# 
 # REMOVED (nein) --- Schiefertonweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10269,21718 10248,21795
 # REMOVED (ja) --- Zechsteinweg: ist der Zechsteinweg eine Sackgasse?	? 10328,21737 10319,21774
 # REMOVED (nein) --- Kieselweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10423,21701 10388,21801
@@ -3894,5 +3915,6 @@ Warsin - Rieth: mittlerweile fast vollständig asphaltiert, bis auf 2km Kiesstrec
 Hornkleepfad - Wegedornstr.: wird hier eine Verbindung entstehen? Qualität? Nachts beleuchtet?	?::inwork 18996,1453 19034,1441 19061,1457
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.312664.php
 #: next_check: 2015-04-01
 Mattenbuder Pfad: ist die Qualität der Fahrbahn nach der Fahrbahninstandsetzung besser geworden?	? -1755,22975 -1633,22950 -1506,22923
