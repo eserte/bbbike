@@ -1268,7 +1268,15 @@ if ($devel_host && $set_toplevel_icon) {
 
 if (eval { require Tk::FreeDesktop::Wm; 1 }) {
     my $fd = Tk::FreeDesktop::Wm->new(mw => $top);
-    $fd->set_wm_icon([map { "$FindBin::RealBin/images/$_" } qw(srtbike_mini.xpm srtbike32.xpm)]);
+    my @image_files;
+    if (eval { require Imager::File::PNG; 1 }) {
+	# we have good alpha support
+	@image_files = qw(srtbike16a.png srtbike32a.png);
+    } else {
+	# otherwise use images with transparency onky
+	@image_files = qw(srtbike_mini.xpm srtbike32.xpm);
+    }
+    $fd->set_wm_icon([map { "$FindBin::RealBin/images/$_" } @image_files ]);
 }
 
 if ($splash_screen) {

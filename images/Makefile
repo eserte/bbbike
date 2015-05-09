@@ -323,6 +323,10 @@ png-to-jpg:	\
 #   convert -bordercolor white -border 8x8 tmp.png srtbike72.png
 #   convert -bordercolor white -border 12x12 tmp.png srtbike114.png
 
+# Creation of srtbike16a.png and srtbike32a.png:
+#   convert -border 1x1 -bordercolor '#ffffff00' -geometry 16x16 srtbike_logo.svg srtbike16a.png
+#   convert -border 3x3 -bordercolor '#ffffff00' -geometry 32x32 srtbike_logo.svg srtbike32a.png
+
 # Creation of ferry*.png:
 #   Fetched http://upload.wikimedia.org/wikipedia/commons/d/d6/F%C3%A4hre-Logo-BVG.svg (public domain)
 #   Created 16x16, 12x12 and 8x8 variants with inkscape
