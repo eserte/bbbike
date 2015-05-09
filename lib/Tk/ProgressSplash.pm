@@ -167,7 +167,7 @@ See L<Tk::Splash> and L<Tk::FastSplash>.
 
 =head1 AUTHOR
 
-Slaven Rezic (slaven@rezic.de)
+Slaven Rezic <srezic@cpan.org>
 
 =head1 SEE ALSO
 

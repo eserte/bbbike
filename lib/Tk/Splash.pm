@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Splash.pm,v 1.3 2005/08/26 18:40:01 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2003,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2003,2005,2014 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +16,7 @@ use Tk;
 use strict;
 use vars qw($VERSION @ISA);
 
-$VERSION = 0.07;
+$VERSION = 0.08;
 
 @ISA = qw(Tk::Widget);
 
@@ -89,18 +88,29 @@ This module is another way to create a splash screen. It is slower
 than L<Tk::FastSplash>, but tries to be compatible by using standard
 Tk methods for creation.
 
-The arguments to the B<Show> are the same as in B<Tk::FastSplash>. For
-further documentation, see L<Tk::FastSplash>.
+The splash screen is created with the B<Show> function. Supplied
+arguments are: filename of the displayed image, width and height of
+the image and the string for the title bar. I<$width> and I<$height>
+may be left undefined. If I<$overrideredirect> is set to a true value,
+then the splash screen will come without window manager decoration. If
+something goes wrong, then B<Show> will silently ignore all errors and
+continue without a splash screen. The splash screen can be destroyed
+with the B<Destroy> method, best short before calling B<MainLoop>.
+
+I<$image> should be one of the core Perl/Tk image types (gif, ppm,
+bmp). For jpegs and pngs, a C<use Tk::JPEG> or C<use Tk::PNG> prior to
+the call of the C<Show> method would be necessary.
 
 =head1 NOTES
 
-Since displaying the splash screen is done during compile time, the
-splash screen will also occur if the script is started using perl's C<-c>
+Since displaying the splash screen is done during compile time (if put
+in a C<BEGIN> block, like the SYNOPSIS example shows), the splash
+screen will also occur if the script is started using perl's C<-c>
 (check) switch.
 
 =head1 AUTHOR
 
-Slaven Rezic
+Slaven Rezic <srezic@cpan.org>
 
 =head1 SEE ALSO
 
