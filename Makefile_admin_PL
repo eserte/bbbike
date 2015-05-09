@@ -132,7 +132,7 @@ my(@bundled_perl_module_dists) =
        Tk-SREZIC Tk-CanvasBalloon Tk-CanvasUtil Tk-LogScale
        Tk-ColorFlowChooser Tk-LayerEditor Tk-Placement
        Tk-StippleLine Tk-WidgetDump Win32Util WWWBrowser
-       Tk-FlatCheckbox
+       Tk-FlatCheckbox Tk-FreeDesktop-Wm
       );
 my $EXTMODCPANTOP = "$ENV{HOME}/src/CPAN";
 if (!-e $EXTMODCPANTOP) {
