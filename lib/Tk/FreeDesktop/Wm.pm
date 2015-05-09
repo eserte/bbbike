@@ -21,7 +21,7 @@ Tk::FreeDesktop::Wm - a bridge between Tk and freedesktop window managers
 
 use strict;
 use vars qw($VERSION);
-$VERSION = "0.02";
+$VERSION = "0.03";
 
 use Tk;
 
@@ -228,6 +228,8 @@ L<iconimage|Tk::Wm/iconimage> Tk::Wm method. It's restricted because
 images with transparency may not be displayed correctly, and there's
 no support for multiple icon sizes.
 
+See also L</BUGS> for restrictions with alpha channels.
+
 =cut
 
 sub set_wm_icon {
@@ -235,56 +237,85 @@ sub set_wm_icon {
     my @data;
     my $mw = $self->mw;
     for my $photo_or_file (ref $photos_or_files eq 'ARRAY' ? @$photos_or_files : $photos_or_files) {
-	my $photo;
-	if (UNIVERSAL::isa($photo_or_file, "Tk::Photo")) {
-	    $photo = $photo_or_file;
-	} else {
-	    my $file = $photo_or_file;
-	    my $magic;
-	    {
-		open my $fh, $file
-		    or die "Can't open file $file: $!";
-		read $fh, $magic, 10;
-	    }
-	    if      ($magic =~ m{^\x89PNG\x0d\x0a\x1a\x0a}) {
-		require Tk::PNG;
-	    } elsif ($magic =~ m{^\xFF\xD8}) {
-		require Tk::JPEG;
-	    }
-	    $photo = $mw->Photo(-file => $file);
-	}
-
-	my @points;
-	{
-	    my $data = $photo->data;
-	    my $y = 0;
-	    # XXX How to get alpha value?
-	    while ($data =~ m<{(.*?)}\s*>g) {
-		my(@colors) = split /\s+/, $1;
-		my(@trans);
-		if ($photo->can("transparencyGet")) {
-		    # Tk 804
-		    for my $x (0 .. $#colors) {
-			push @trans, $photo->transparencyGet($x,$y) ? "00" : "FF";
-		    }
-		} else {
-		    # Tk 800
-		    @trans = map { "FF" } (0 .. $#colors);
-		}
-		my $x = 0;
-		push @points, map {
-		    hex($trans[$x++] . substr(("0"x8).substr($_, 1),-6));
-		} @colors;
-		$y++;
-	    }
-	}
-
-	push @data, $photo->width, $photo->height, @points;
+	push @data, $self->_parse_wm_icon_data($photo_or_file);
     }
 
     my($wr) = $mw->wrapper;
     $mw->property('set', '_NET_WM_ICON', "CARDINAL", 32,
 		  [@data], $wr);
+}
+
+sub _parse_wm_icon_data {
+    my($self, $photo_or_file) = @_;
+
+    if (!UNIVERSAL::isa($photo_or_file, "Tk::Photo")) {
+	my $file = $photo_or_file;
+	my $magic;
+	{
+	    open my $fh, $file
+		or die "Can't open file $file: $!";
+	    read $fh, $magic, 10;
+	}
+	if      ($magic =~ m{^\x89PNG\x0d\x0a\x1a\x0a}) {
+	    if (eval { require Imager::File::PNG; 1 }) {
+		return $self->_parse_wm_icon_data_imager_png_file($file);
+	    }
+	    require Tk::PNG;
+	} elsif ($magic =~ m{^\xFF\xD8}) {
+	    require Tk::JPEG;
+	}
+	$self->_parse_wm_icon_data_tkphoto($self->mw->Photo(-file => $file));
+    } else {
+	$self->_parse_wm_icon_data_tkphoto($photo_or_file);
+    }
+}
+
+sub _parse_wm_icon_data_tkphoto {
+    my($self, $tkphoto) = @_;
+
+    my @points;
+    {
+	my $data = $tkphoto->data;
+	my $y = 0;
+	# XXX Unfortunately we cannot get the alpha value from a Tk::Photo
+	# --- only a transparency hack is possible.
+	while ($data =~ m<{(.*?)}\s*>g) {
+	    my(@colors) = split /\s+/, $1;
+	    my(@trans);
+	    if ($tkphoto->can("transparencyGet")) {
+		# Tk 804
+		for my $x (0 .. $#colors) {
+		    push @trans, $tkphoto->transparencyGet($x,$y) ? "00" : "FF";
+		}
+	    } else {
+		# Tk 800 (no transparency)
+		@trans = map { "FF" } (0 .. $#colors);
+	    }
+	    my $x = 0;
+	    push @points, map {
+		hex($trans[$x++] . substr(("0"x8).substr($_, 1),-6));
+	    } @colors;
+	    $y++;
+	}
+    }
+
+    ($tkphoto->width, $tkphoto->height, @points);
+}
+
+sub _parse_wm_icon_data_imager_png_file {
+    my($self, $file) = @_;
+
+    my $img = Imager->new(file => $file)
+	or die Imager->errstr;
+    my @points;
+    for my $y (0 .. $img->getheight-1) {
+	my @img_pixels = $img->getscanline(y => $y);
+	for my $img_pixel (@img_pixels) {
+	    my($r,$g,$b,$a) = $img_pixel->rgba;
+	    push @points, ($a<<24) + ($r<<16) + ($g<<8) + $b;
+	}
+    }
+    ($img->getwidth, $img->getheight, @points);
 }
 
 sub set_window_type {
@@ -304,6 +335,24 @@ sub set_wm_desktop_file {
 1;
 
 __END__
+
+=head1 BUGS
+
+=over
+
+=item Alpha channels not supported in L</set_wm_icon>
+
+It's not possible to get the alpha component of a pixel within
+Perl/Tk. The alpha information is transformed into simple transparency
+information, which may lead to suboptimal results. Currently it's
+better to stick to icon images with transparency information only
+(gif, xpm, png without alpha channel), or without transparency at all.
+
+Currently there's a workaround which is enabled if L<Imager> with PNG
+support is installed (i.e. if L<Imager::File::PNG> can be loaded). In
+this case alpha channels are handled correctly.
+
+=back
 
 =head1 TODO
 
