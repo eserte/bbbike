@@ -2608,7 +2608,28 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.kiez-und-kultur.de/bergmannstrassenfest/',
+         'data' => 'userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
+userdel auto	3 9487,9209 9505,9306 9524,9426
+userdel auto	3 9524,9426 9505,9306 9487,9209
+',
+         'periodic' => 1,
+         'until' => 1435528799,
+         'from' => 1435183200,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              6
+                            ]
+                          ],
+         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (26. bis 28. Juni 2015)',
+         'id' => 2089,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,

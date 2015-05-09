@@ -18087,13 +18087,13 @@ userdel	2::temp 8018,12135 7823,12120 7775,12114 7429,12070 7658,11947 7634,1192
 userdel	2::temp 7429,12070 7031,12024 6884,12006
 EOF
      },
-     { from  => $isodate2epoch->("2014-06-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-06-29 23:59:59"),
+     { from  => $isodate2epoch->("2015-06-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-06-28 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6]],
-       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (27. bis 29. Juni 2014)',
+       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (26. bis 28. Juni 2015)',
        type  => 'gesperrt',
-       source_id => 'http://www.xhain.info/termine/bergmannstrassenfest.htm',
+       source_id => 'http://www.kiez-und-kultur.de/bergmannstrassenfest/',
        data  => <<EOF,
 userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
 userdel auto	3 9487,9209 9505,9306 9524,9426
