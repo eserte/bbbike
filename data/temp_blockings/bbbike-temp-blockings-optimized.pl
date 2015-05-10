@@ -81,24 +81,7 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       {
-         'periodic' => 1,
-         'until' => 1431280800,
-         'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 09.05.2015 und 10.05.2015',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              11,
-                              'months',
-                              4
-                            ]
-                          ],
-         'from' => 1431072000,
-         'id' => 10,
-         'data' => 'userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
-'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1150,7 +1133,16 @@ userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1431540000,
+         'text' => 'Budapester Str.: zwischen Lützowufer und Kurfürstenstr. Straße gesperrt, möglicherweise ist auch das Katharina-Heinroth-Ufer gesperrt, Staatsbesuch, bis zum 13. Mai 2015 abends',
+         'from' => 1431286193,
+         'id' => 1001,
+         'data' => 'userdel	2::temp 6145,10975 6168,11042 6447,11144 6582,11202
+userdel	2::temp 6582,11202 6495,11251 6350,11301 6346,11326
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3006,13 +2998,14 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und manchmal auch sonntags gesperrt',
+         'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt',
          'from' => undef,
          'id' => 2372,
          'data' => '#: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
 #: note: und am 2012-11-15 (gegen 21:00 - offen)
 #: note: und am Sonntag, den 2012-06-02 (vormittags - geschlossen)
 #: note: und am Sonntag, den 2015-03-08 (vormittags - offen)
+#: note: und am Sonntag, den 2015-05-10 (nachmittags - offen)
 userdel	2::night 14838,11410 14792,11391
 ',
          'type' => 'gesperrt'
@@ -3179,26 +3172,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.ms-event-agentur.com/seite18.html',
-         'data' => 'userdel	2::temp 6244,8597 6339,8644 6454,8653
-',
-         'periodic' => 1,
-         'until' => 1431280800,
-         'from' => 1431075600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Schöneberger Mai- und Spargelfest am 9. und 10. Mai 2015 in der Freiherr-vom-Stein-Straße',
-         'id' => 2428,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3777,16 +3751,7 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5590.html',
-         'until' => 1431244800,
-         'text' => 'Schönerlinder Str.: zwischen Am Posseberg und Am Vorwerk komplett gesperrt, von 9. Mai 2015, 18.00 Uhr bis 10. Mai 2015, 10.00 Uhr ',
-         'from' => 1431100800,
-         'id' => 2690,
-         'data' => 'userdel	2::inwork 12694,25696 12624,25570
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_024458',

@@ -8549,13 +8549,13 @@ EOF
 userdel	1::inwork 2020,20327 2131,20406 2241,20487
 EOF
      },
-     { from  => 1181165074, # undef
-       until => 1181165075, # undef (nur noch "Verkehrsstörung erwartet)
-       text  => 'Budapester Str. (Tiergarten) in beiden Richtungen zwischen Lützowufer und Kurfürstenstr. Straße vollständig gesperrt, Staatsbesuch',
+     { from  => 1431286193, # 1181165074, # undef
+       until => $isodate2epoch->("2015-05-13 20:00:00"), # 1181165075, # undef (nur noch "Verkehrsstörung erwartet)
+       text  => 'Budapester Str.: zwischen Lützowufer und Kurfürstenstr. Straße gesperrt, möglicherweise ist auch das Katharina-Heinroth-Ufer gesperrt, Staatsbesuch, bis zum 13. Mai 2015 abends',
        type  => 'gesperrt',
-       source_id => 'IM_005699',
        data  => <<EOF,
 userdel	2::temp 6145,10975 6168,11042 6447,11144 6582,11202
+userdel	2::temp 6582,11202 6495,11251 6350,11301 6346,11326
 EOF
      },
      { from  => 1181024556, # 2007-06-05 08:22
@@ -20761,7 +20761,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, #
-       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und manchmal auch sonntags gesperrt',
+       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -20769,6 +20769,7 @@ EOF
 #: note: und am 2012-11-15 (gegen 21:00 - offen)
 #: note: und am Sonntag, den 2012-06-02 (vormittags - geschlossen)
 #: note: und am Sonntag, den 2015-03-08 (vormittags - offen)
+#: note: und am Sonntag, den 2015-05-10 (nachmittags - offen)
 userdel	2::night 14838,11410 14792,11391
 EOF
      },
