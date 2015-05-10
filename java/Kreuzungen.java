@@ -110,7 +110,7 @@ class Kreuzungen {
 //      return $self->nearest($x, $y, %args, Grids => $max_grids);
 // }
 
-// # wie nearest, nur wird hier "x,y" als ein Argument übergeben
+// # wie nearest, nur wird hier "x,y" als ein Argument uebergeben
 // ### AutoLoad Sub
 // sub nearest_coord {
 //     my($self, $xy, %args) = @_;
@@ -118,7 +118,7 @@ class Kreuzungen {
 //     $self->nearest($x, $y, %args);
 // }
 
-// # wie nearest_loop, nur wird hier "x,y" als ein Argument übergeben
+// # wie nearest_loop, nur wird hier "x,y" als ein Argument uebergeben
 // ### AutoLoad Sub
 // sub nearest_loop_coord {
 //     my($self, $xy, %args) = @_;

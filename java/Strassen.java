@@ -129,7 +129,7 @@ class Strassen implements GeneralStrassen {
       koord.addElement(st.nextToken());
     }
     result.Name = name;
-    result.Kreuzungen = koord; // XXX `X' wird nicht überlesen
+    result.Kreuzungen = koord; // XXX `X' wird nicht ueberlesen
     result.Category = category;
     return result;
   }

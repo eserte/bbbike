@@ -324,7 +324,7 @@ class StrassenNetz {
 
   public void add_net(Vector points) {
     if (points.size() != 3)
-      throw new Error("add_net: Es müssen genau drei Punkte in points sein");
+      throw new Error("add_net: Es muessen genau drei Punkte in points sein");
     String startx = (String)((Vector)points.elementAt(0)).elementAt(0);
     String starty = (String)((Vector)points.elementAt(0)).elementAt(1);
     String starts = "(" + startx + "," + starty + ")";
