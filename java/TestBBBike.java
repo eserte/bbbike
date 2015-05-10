@@ -1,5 +1,3 @@
-/* $Id: TestBBBike.java,v 1.4 2008/12/31 16:50:40 eserte Exp $ */
-
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
