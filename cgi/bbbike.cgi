@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2015 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -5688,7 +5688,7 @@ sub draw_route {
 	}
 	# draw is an array;
 	my $i = 0;
-	foreach ($q->param("draw")) {
+	foreach (BBBikeCGI::Util::my_multi_param($q, 'draw')) {
 	    $persistent{"draw$i"} = $_;
 	    $i++;
 	}
@@ -6883,7 +6883,7 @@ sub header {
 
     my %meta = (
 		'keywords'  => 'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner entfernungsrechner',
-		'copyright' => '(c) 1998-2014 Slaven Rezic',
+		'copyright' => '(c) 1998-2015 Slaven Rezic',
 	       );
     if ($is_m) {
 	$meta{'viewport'} = 'width=320; initial-scale=1.0, max-scale=1.0, user-scalable=no';
@@ -8130,7 +8130,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2014 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2015 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 
