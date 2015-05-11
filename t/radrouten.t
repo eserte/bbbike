@@ -89,7 +89,8 @@ for my $test_def (@test_defs) {
     my $name   = $test_def->{name};
 
     my $resp_map = $ua->post($url, \@inputs);
-    ok $resp_map->is_success, "$name ... map";
+    ok $resp_map->is_success, "$name ... map"
+	or diag "POSTing to $url failed: " . $resp_map->status_line;
 
     for my $i (0 .. $#inputs) {
 	if ($inputs[$i] eq 'showroutelist') {
