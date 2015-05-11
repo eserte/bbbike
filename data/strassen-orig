@@ -3895,6 +3895,8 @@ Mozartstr. (Wilhelmsruh)	N 8040,20124 8131,20287
 #: note: siehe auch: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0605/nachricht2290.html
 Heinz-Brandt-Str.	N 6281,20369 6349,20396 6389,20412 6621,20493 7135,20546
 (Mauerweg - Heinz-Brandt-Str.)	NN 7289,20618 7270,20575 7135,20546
+#: XXX vermutlich ist ein Teil auch für Autofahrer befahrbar; ggfs. culdesac-Eintrag machen
+(Heinz-Brandt-Str./Mauerweg - Uhlandstr.)	NN 7297,20629 7321,20588 7415,20617 7630,20698
 Beethovenstr. (Wilhelmsruh)	N 7933,20171 8008,20332 8052,20426
 Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,19928 7223,19826 7324,19795 7522,19804
 (Fontanestr. - Kopenhagener Str.)	NN 7522,19804 7518,19762 7617,19748
@@ -6482,7 +6484,7 @@ Centweg	N 8401,22013 8382,21991 8275,22045
 (Mauerweg)	NN 8141,23477 7877,24037 7736,24239 7685,24302 7653,24412
 #: note: sogenannte "Humboldt-Spur" (by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121128.1200.378696.html)
 (Weg am Nordgraben)	NN 6378,20460 6428,20480 6494,20520 6601,20542 7073,20577 7098,20582 7289,20618
-(Mauerweg)	NN 7289,20618 7725,21247
+(Mauerweg)	NN 7289,20618 7297,20629 7725,21247
 Tramper Weg	N 7080,20713 7086,20597
 Tramper Weg	NN 7086,20597 7073,20577
 Tramper Weg	NN 7086,20597 7098,20582
@@ -10941,7 +10943,7 @@ Zähringerstr.	N 3927,9935 4126,9932 4277,9895 4422,9869 4587,9840
 Augsburger Str. (Charlottenburg, Wilmersdorf, Schöneberg)	N 5471,10719 5497,10719 5627,10637 5780,10542 5866,10492 5921,10461 6033,10403
 Goethestr. (Wilhelmsruh)	N 7117,20181 7201,20161 7506,20170 7695,20175 7790,20132
 Kurze Str. (Wilhelmsruh)	N 7205,20047 7125,20053
-Uhlandstr. (Rosenthal, Wilhelmsruh)	N 8016,21499 7852,21262 7784,21186 7739,21130 7644,20744 7637,20712 7620,20635 7577,20450 7533,20275 7506,20170 7468,20009
+Uhlandstr. (Rosenthal, Wilhelmsruh)	N 8016,21499 7852,21262 7784,21186 7739,21130 7641,20745 7630,20698 7616,20633 7577,20450 7533,20275 7506,20170 7468,20009
 Uhlandstr. (Niederschönhausen)	N 8931,19746 8943,19755 8962,19798 9023,19936 9054,20001 9120,20015 9255,20038 9372,20065 9754,20134 10068,20188
 Straße 129	N 7784,21186 7929,21103
 #: note: Zufahrt für Autos von der Treskowstr. wahrscheinlich nicht möglich
@@ -11759,7 +11761,7 @@ Straße 60 (Rosenthal)	N 8409,21183 8439,21232
 Straße 140 (Rosenthal)	N 8673,21212 8753,21253 8826,21369
 Wördenweg	N 8513,21099 8482,21051 8251,20927
 Wördenweg	NN 8251,20927 8107,20859
-(Am Nordgraben)	NN 8107,20859 7644,20744 7454,20671
+(Am Nordgraben)	NN 8107,20859 7641,20745 7454,20671
 # 
 #: note: Privatstraßen in der Kolonie Einigkeit; grüne Straßenschilder vvv
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2012 vvv --- #: XXX Straßen werden umbenannt vvv --- #: last_checked: 2012-09-29 vvv --- #: next_check: 2012-11-01 vvv --- #: XXX neuer Name: Kräuterweg PLZ=13158 --- #: XXX laut osm bereits umbenannt, seit version=13, eine Prüfung steht noch aus --- #: osm_watch: way id="22965786" version="13"
@@ -15332,7 +15334,7 @@ Parkstr. (Oberschöneweide)	N 19681,5924 19759,6049
 Willdenowstr. (Wedding)	N 7356,15350 7525,15186 7624,15083
 Beifußweg	N 15307,3683 15611,3448 15921,3215
 Lothar-Bucher-Str.	N 5598,6136 5664,6082 5748,6051 5845,6049 6008,6067
-Buchhorster Str.	N 7979,20528 7866,20556 7793,20580 7736,20598 7620,20635
+Buchhorster Str.	N 7979,20528 7866,20556 7793,20580 7736,20598 7616,20633
 Albestr.	N 5419,7464 5448,7436 5640,7435 5811,7433
 Flotowstr. (Hansaviertel)	N 5796,12372 5803,12356 5870,12179
 Erfurter Str.	N 6060,8334 6181,8181 6257,8078 6261,8058

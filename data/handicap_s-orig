@@ -214,7 +214,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2015-04-08
+#: last_checked: 2015-05-11
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -223,7 +223,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-04-30
+#: last_checked: 2015-05-11
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
@@ -3877,3 +3877,10 @@ Narzissenpfad: enge Straße	q0- -7387,14951 -7523,14969
 # 
 #: by: Sigmount Königsberg
 Verlängerte Schulzendorfer Str.: Fußgänger	q1 2150,22464 2015,22435 1834,22421 1583,22376 1505,22368 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
+# 
+#: by: Detlef Westphal vvv
+#: XXX vor Ort überprüfen! vvv
+(Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad, tragen über Schienen der stillgelegten Bahnstrecke	q4 7297,20629 7321,20588
+(Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad, tragen über Schienen der stillgelegten Bahnstrecke	q3 7321,20588 7415,20617
+#: XXX ^^^
+#: by ^^^

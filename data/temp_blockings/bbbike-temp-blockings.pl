@@ -8550,8 +8550,9 @@ userdel	1::inwork 2020,20327 2131,20406 2241,20487
 EOF
      },
      { from  => 1431286193, # 1181165074, # undef
-       until => $isodate2epoch->("2015-05-13 20:00:00"), # 1181165075, # undef (nur noch "Verkehrsstörung erwartet)
+       until => $isodate2epoch->("2015-05-13 23:00:00"), # 1181165075, # undef (nur noch "Verkehrsstörung erwartet)
        text  => 'Budapester Str.: zwischen Lützowufer und Kurfürstenstr. Straße gesperrt, möglicherweise ist auch das Katharina-Heinroth-Ufer gesperrt, Staatsbesuch, bis zum 13. Mai 2015 abends',
+       source_id => 'IM_024932',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 6145,10975 6168,11042 6447,11144 6582,11202

@@ -238,7 +238,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2015-04-28
+#: last_checked: 2015-05-11
 #: check_frequency: 90d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
@@ -463,7 +463,7 @@ Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 14102,11715 14065
 Kurfürstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8058,10306
 (Im Jagen, Verlängerung): Waldweg	Q1 1375,6138 1057,6461 909,6584 905,6631
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11500,9116
-Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7289,20618
+Mauerweg: teilweise nur mäßiger Asphalt	Q1 7725,21247 7297,20629 7289,20618
 # REMOVED (realisiert) --- #: XXX nach den Bauarbeiten bessere Qualität? --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121128.1200.378696.html --- #: XXX siehe auch ausgelaufenen Eintrag in bbbike-temp-blockings --- #: next_check: 2013-06-15
 Weg am Nordgraben: Asphalt	Q0 7289,20618 7098,20582 7073,20577 6601,20542 6494,20520 6428,20480 6378,20460
 An der Nordbahn: Rasengittersteine	Q2 6669,20129 6639,20153 6572,20165 6499,20221
@@ -2603,7 +2603,7 @@ Hertzstr.: sehr schlechtes Kopfsteinpflaster	Q3- 7672,19869 7807,19811
 Wördenweg: unbefestigter, holpriger Weg	Q2 8513,21099 8482,21051 8251,20927 8107,20859
 #: note: laut ADFC-Karte "nicht für Radfahrer geeignet"
 #: note: Weiterfahrt Richtung Westen ist nicht erlaubt (wasserwirtschaftliche Anlage)
-(Am Nordgraben): unbefestigter, holpriger Weg	Q2 8107,20859 7644,20744 7454,20671
+(Am Nordgraben): unbefestigter, holpriger Weg	Q2 8107,20859 7641,20745 7454,20671
 Friesenstr.: Beton	Q1 8765,19288 8644,19345 8467,19408 8396,19422 8331,19458 8311,19458
 Homeyerstr.: Asphalt mit Schäden	Q1- 9465,18855 9529,18815 9613,18758
 #: note: neu gemacht
@@ -7726,7 +7726,7 @@ Lessingstr.: Asphalt	Q0 7711,20463 7577,20450
 Seegerstr.: schlechtes Kopfsteinpflaster	Q3 7640,20304 7711,20463
 Seegerstr.: Asphalt	Q0 7711,20463 7736,20598
 Möllersfelder Str.: Schotterstraße	Q2 7793,20580 7827,20712 7820,20745
-Uhlandstr.: Beton	Q0 7577,20450 7620,20635 7637,20712 7644,20744 7739,21130 7784,21186 7852,21262 8016,21499
+Uhlandstr.: Beton	Q0 7577,20450 7616,20633 7630,20698 7641,20745 7739,21130 7784,21186 7852,21262 8016,21499
 (Mauerweg - Straße 126): unbefestigt	Q2- 8242,22090 8260,22090
 Straße 127: Plattenweg	Q2+ 8321,22269 8260,22090 8234,22024
 Straße 126: unbefestigte Straße	Q2 8401,22013 8260,22090
@@ -9668,7 +9668,7 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 (Weg zum großen Bunkerberg): kleinteiliges Kopfsteinpflaster	Q1- 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
 #: XXX Wird die Fahrbahn nochmal geändert? Wird bei der Erstellung der Straße auch eine Beleuchtung eingebaut (-> nolighting-orig)?
-#: last_checked: 2015-03-13
+#: last_checked: 2015-05-11
 #: check_frequency: 60d
 Wilhelmine-Gemberg-Weg: (provisorischer?) Asphalt	Q0 11715,11522 11762,11665
 Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11762,11665 11829,11727
@@ -13195,7 +13195,7 @@ Hochgallweg: guter Beton	Q0- 9891,3203 9771,3229 9683,3185
 # 
 #: by: Gregor (bluege):
 #: confirmed_by: srt
-Buchhorster Str.: Asphalt	Q0 7979,20528 7866,20556 7793,20580 7736,20598 7620,20635
+Buchhorster Str.: Asphalt	Q0 7979,20528 7866,20556 7793,20580 7736,20598 7616,20633
 # 
 #: by: Julie:
 Albestr.: Asphalt	Q0 5419,7464 5448,7436 5640,7435 5811,7433
@@ -19657,6 +19657,10 @@ Landsberger Str. (Lichtenrade): Asphalt	Q0 11085,317 11215,313 11232,309 11258,2
 #: by: Detlef Westphal:
 #: corrected_by: reimund griesche meint dazu "mäßige wassergebundene Decke", also Q3 -> Q3+
 Schreckenbachstr.: schlechter loser Sandweg	Q3+ 9840,20286 9815,20530
+# 
+#: by: Detlef Westphal
+#: XXX vor Ort überprüfen!
+(Heinz-Brandt-Str./Mauerweg - Uhlandstr.): fester Sandweg	Q3 7297,20629 7321,20588 7415,20617 7630,20698
 # 
 #: by: Joachim Schlichting:
 #: confirmed_by: srt

@@ -1077,26 +1077,7 @@ userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.laubinger.de/termine/22-boelschefest-friedrichshagen/',
-         'data' => 'userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-',
-         'periodic' => 1,
-         'until' => 1431295199,
-         'from' => 1431036000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (9. und 10. Mai 2015)',
-         'id' => 964,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1134,7 +1115,8 @@ userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
        undef,
        undef,
        {
-         'until' => 1431540000,
+         'source_id' => 'IM_024932',
+         'until' => 1431550800,
          'text' => 'Budapester Str.: zwischen Lützowufer und Kurfürstenstr. Straße gesperrt, möglicherweise ist auch das Katharina-Heinroth-Ufer gesperrt, Staatsbesuch, bis zum 13. Mai 2015 abends',
          'from' => 1431286193,
          'id' => 1001,
@@ -1811,27 +1793,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.family-and-friends-ev.de/2.html
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=859853
-userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'periodic' => 1,
-         'until' => 1431295199,
-         'from' => 1431036000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (09. und 10. Mai 2015)',
-         'type' => 'gesperrt',
-         'id' => 1642
-       },
+       undef,
        undef,
        undef,
        undef,
