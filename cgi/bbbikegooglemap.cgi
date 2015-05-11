@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -763,21 +763,24 @@ EOF
 	    alert("Bitte Koordinaten eingeben (z.B. im WGS84-Modus: 13.376431,52.516172)");
 	    return false;
 	}
-	if (wpt_or_trk_value.match(/^([-+]?\\d+(?:\\.\\d+)?),([-+]?\\d+(?:\\.\\d+)?)\$/)) {
-	    if (document.googlemap.coordsystem[0].checked) { // polar
-	        if (Math.abs(RegExp.\$1) > 180 || Math.abs(RegExp.\$2) > 90) {
-		    alert("Ungültiger Wert für Longitude/Latitude, gültig wäre z.B. 13.376431,52.516172");
-		    return false;
-		}
+        var wpt_value = wpt_or_trk_value.split(" ");
+        for (var i=0; i<wpt_value.length; i++) {
+	    if (wpt_value[i].match(/^([-+]?\\d+(?:\\.\\d+)?),([-+]?\\d+(?:\\.\\d+)?)\$/)) {
+	        if (document.googlemap.coordsystem[0].checked) { // polar
+	            if (Math.abs(RegExp.\$1) > 180 || Math.abs(RegExp.\$2) > 90) {
+		        alert('"' + wpt_value[i] + '"' + " ist ein ungültiger Wert für Longitude/Latitude, gültig wäre z.B. 13.376431,52.516172");
+		        return false;
+		    }
+	        } else {
+		    if (Math.abs(RegExp.\$1) > 1000000 || Math.abs(RegExp.\$2) > 1000000) {
+		        alert("Zu großer Wert für Rechts/Hochwert");
+		        return false;
+		    }
+	        }
 	    } else {
-		if (Math.abs(RegExp.\$1) > 1000000 || Math.abs(RegExp.\$2) > 1000000) {
-		    alert("Zu großer Wert für Rechts/Hochwert");
-		    return false;
-		}
+	        alert("Bitte Koordinaten im Format 13.376431,52.516172 eingeben.");
+	        return false;
 	    }
-	} else {
-	    alert("Bitte Koordinaten im Format 13.376431,52.516172 eingeben.");
-	    return false;
 	}
 	setZoomInForm();
 	return true;	
