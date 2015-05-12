@@ -134,7 +134,8 @@ sub convert_one_file {
 	} else {
 	    $cat = $opt{cat};
 	}
-	my $str = Route::as_strassen($in_file, name => $name, cat => $cat, fuzzy => 1);
+	my $route = Route->load_bbr_as_object($in_file);
+	my $str = $route->as_strassen(name => $name, cat => $cat, fuzzy => 1);
 	if (!$str) {
 	    die "Die Datei <$in_file> enthält keine Route."
 	}
