@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2001,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2001,2012,2013,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -512,6 +512,9 @@ sub load {
 
 sub save {
     my(%args) = @_;
+
+    require Data::Dumper;
+
     my $obj = delete $args{-object}; # the same as the return value of load
     if ($obj) {
 	$args{-realcoords} = $obj->{RealCoords};
@@ -521,33 +524,17 @@ sub save {
     die "-realcoords?" if !$args{-realcoords};
     $args{-searchroutepoints} = [] if !$args{-searchroutepoints};
 
-    my $SAVE;
-    if (!open($SAVE, ">$args{-file}")) {
-	die "Die Datei <$args{-file}> kann nicht geschrieben werden ($!)\n";
-    }
+    open my $SAVE, "> $args{-file}"
+	or die "Die Datei <$args{-file}> kann nicht geschrieben werden ($!)\n";
     print $SAVE "#BBBike route\n";
-    eval {
-	require Data::Dumper;
-	$Data::Dumper::Indent = 0;
-	print $SAVE Data::Dumper->Dump([$args{-realcoords},
-				       $args{-searchroutepoints},
-				      ],
-				      ['realcoords_ref',
-				       'search_route_points_ref',
-				      ]);
-    };
-    if ($@) {
-	print $SAVE
-	    "$realcoords_ref = [",
-		join(",", map { "[".join(",", @$_)."]" }
-		          @{ $args{-realcoords} }),
-	     "];\n",
-	     "$search_route_points_ref = [",
-		 join(",", map { "[".join(",", @$_)."]" }
-		          @{ $args{-searchroutepoints} }),
-	     "];\n";
-    }
-    close $SAVE;
+    local $Data::Dumper::Indent = 0;
+    print $SAVE Data::Dumper->Dump
+	(
+	 [$args{-realcoords},     $args{-searchroutepoints}],
+	 [      'realcoords_ref',       'search_route_points_ref'],
+	);
+    close $SAVE
+	or die "Fehler beim Schreiben nach <$args{-file}> ($!)\n";
 }
 
 1;
