@@ -31,7 +31,7 @@ sub as_strassen {
     my $name = delete $args{name} || "Route";
     my $cat  = delete $args{cat}  || "#ff0000";
 
-    require Strassen;
+    require Strassen::Core;
 
     my $realcoords_ref;
     if (ref $self_or_file && $self_or_file->isa('Route')) {
