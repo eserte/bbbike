@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-05-06
+#: last_checked: 2015-05-12
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -399,16 +399,14 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 #: XXX teilweise schon zurückgebaut, Ende der Bauarbeiten im Herbst 2015
 Rixdorfer Str.: Umbau der Radwege zu Radstreifen	?::inwork 9934,3802 10181,4181 10185,4187 10221,4245 10288,4354 10412,4552
 # 
-#: XXX Hessische Str. (Mitte): Baustelle, Baustellenampel, Zufahrt Hannoversche Str. gesperrt (bis Ende 05/15) in beiden Richtungen in Höhe Hannoversche Str., 11.05.2015 08:00 Uhr bis 29.05.2015 18:00 Uhr	IM_024927
-#: priority: #A
-Hannoversche Str.: Sperrung relevant für Radfahrer?	? 8674,13593 8775,13606
+# REMOVED (nichts zu sehen) --- #: XXX Hessische Str. (Mitte): Baustelle, Baustellenampel, Zufahrt Hannoversche Str. gesperrt (bis Ende 05/15) in beiden Richtungen in Höhe Hannoversche Str., 11.05.2015 08:00 Uhr bis 29.05.2015 18:00 Uhr	IM_024927 --- #: priority: #A --- Hannoversche Str.: Sperrung relevant für Radfahrer?	? 8674,13593 8775,13606
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html vvv
 #: source_id: IM_024548 vvv
 #: note: Dauer etwa vier Monate, also bis August 2015? vvv
 #: XXX laut rbbtext bis 15.8.2015
 #: XXX_prog größere Behinderungen eigentlich nur, wenn die Kreuzung in voller Länge befahren wird, aber nicht so sehr beim Rechtsabbiegen vvv
-#: last_checked: 2015-04-21 vvv
+#: last_checked: 2015-05-12 vvv
 Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9224,14169 9383,13986 9514,13826
 Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13986 9676,14046
 #: last_checked ^^^
@@ -898,7 +896,7 @@ Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,115
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2015-02-20
+#: last_checked: 2015-05-12
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -1423,8 +1421,8 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 #: next_check_id: SUEDPANKE-2014
 #: osm_watch: way id="327596403" version="1"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
-#: last_checked: 2014-02-10
-#: next_check: 2015-04-23
+#: last_checked: 2015-05-12
+#: check_frequency: 360d
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337
 # 
 # REMOVED (realisiert) --- #: last_checked: 2014-11-26 --- #: next_check: 2014-12-14 --- Fußgängerampel (oder Straßenbahnampel) in Bau	?::inwork 7422,13012

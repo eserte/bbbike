@@ -58,7 +58,7 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 Sch¸tzenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10116,11485 9949,11470
 # 
 #: XXX nach den Bauarbeiten bessere Qualit‰t?
-#: last_checked: 2015-05-06
+#: last_checked: 2015-05-12
 Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt f¸r Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraﬂe	q2::inwork; 10350,13376 10199,13446
@@ -91,7 +91,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9007,12499 9016,12416
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2015-04-08
+#: last_checked: 2015-05-12
 #: check_frequency: 90d
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
@@ -106,15 +106,15 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED --- Charlottenstr.: Bauarbeiten, Radfahrer kˆnnen passieren	q2::inwork; 9475,12365 9489,12263
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2015-04-08 vvv
-#: next_check: 2015-06-01 vvv
+#: last_checked: 2015-05-12 vvv
+#: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: osm_watch: way id="114667396" version="4"
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9580,12581 9601,12380
 #: by: ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -136,15 +136,15 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (noch nicht ganz fertig, im S¸den noch kurze Baustelle, umgedrehte Einbahnstraﬂenregelung, lohnt aber nicht) ---  #: last_checked: 2015-04-09 vvv --- Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719 --- #: last_checked ^^^
 # 
 #: next_check_id: SCHWEDTER-2014 vvv
-#: last_checked: 2015-04-09 vvv
+#: last_checked: 2015-05-12 vvv
 Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10567,14337 10530,14452
 Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10530,14452 10506,14521
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2015-04-01 vvv
-#: next_check: 2015-05-31 vvv
+#: last_checked: 2015-05-12 vvv
+#: next_check: 2015-08-15 vvv
 #: XXX voraussichtlich gesperrt bis zum 15. August 2015
 #: priority: #A vvv
 #: source_id: IM_017330
@@ -177,8 +177,8 @@ Zinnowitzer Str.: Einbahnstraﬂenregelung zwischen Chausseestr. und Am Nordbahnho
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraﬂe, Zugang f¸r Fuﬂg‰nger und schiebende Radfahrer mˆglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (bei vmz) --- #: XXX: wann ist die Kreuzung wieder befahrbar? --- #: last_checked: 2014-06-30 --- #: next_check: 2014-07-08 --- #: source_id: IM_021906 --- #: priority: #A --- Scharnhorststr.: Sackgasse an der Invalidenstraﬂe	q2::inwork 8450,13599 8313,13839
 # 
-#: last_checked: 2015-04-09 (Bauarbeiten wegen Neubau)
-#: check_frequency: 30d
+#: last_checked: 2015-05-12 (Bauarbeiten wegen Neubau)
+#: check_frequency: 60d
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2013-11-12 --- #: next_check: 2014-01-15 --- Siemensstr.: Bauarbeiten, Einbahnstraﬂe, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
@@ -223,7 +223,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-05-11
+#: last_checked: 2015-05-12
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -627,7 +627,7 @@ Heiligegeistgasse: Fuﬂg‰nger, CafÈs, sehr eng	q4 10285,12744 10309,12700 10352,1
 Am Zeughaus: Fuﬂg‰nger	q2 9919,12613 9956,12523
 #XXX sp‰ter wieder aktivieren: Am Zeughaus: Fuﬂg‰nger	q2 9956,12523 9984,12426
 #: XXX nach den Bauarbeiten wieder den alten q2-Eintrag aktivieren
-#: last_checked: 2015-04-08
+#: last_checked: 2015-05-12
 Am Zeughaus: Fuﬂg‰nger, Bauarbeiten, Engstelle	q4::inwork 9956,12523 9984,12426
 # 
 Steinmetzstr.: Fuﬂg‰ngerzone, Radfahren erlaubt	q1 7625,9771 7657,9942 7698,10147
