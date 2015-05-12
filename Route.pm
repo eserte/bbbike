@@ -16,8 +16,7 @@ package Route;
 use strict;
 #use AutoLoader 'AUTOLOAD';
 
-use vars qw($coords_ref $realcoords_ref $search_route_points_ref
-	    @EXPORT @ISA $VERSION);
+use vars qw(@EXPORT @ISA $VERSION);
 
 $VERSION = '2.00';
 
@@ -438,23 +437,22 @@ sub load {
 		       };
 		return;
 	    } elsif (!$no_do) {
-		undef $coords_ref;
-		undef $realcoords_ref;
-		undef $search_route_points_ref;
-
 		require Safe;
 		my $compartment = new Safe;
-		$compartment->share(qw($realcoords_ref
-				       $coords_ref
-				       $search_route_points_ref
-				      ));
-		# XXX Ugly hack following: somehow Devel::Cover and
-		# Safe don't play well together. So I simply turn off
-		# Safe.pm if Devel::Cover usage is detected...
+
+		# Safe don't play well together (error message:
+		# "Undefined subroutine &Devel::Cover::use_file called").
+		# So Safe.pm is simply turned off if Devel::Cover usage
+		# is detected...
+		my($coords_ref, $realcoords_ref, $search_route_points_ref);
 		if ($Devel::Cover::VERSION) {
-		    do $file;
+		    my $contents = do { open my $fh, $file or die $!; local $/; join '', <$fh> };
+		    eval $contents;
 		} else {
 		    $compartment->rdo($file);
+		    $realcoords_ref          = ${ $compartment->varglob('realcoords_ref') };
+		    $coords_ref              = ${ $compartment->varglob('coords_ref') };
+		    $search_route_points_ref = ${ $compartment->varglob('search_route_points_ref') };
 		}
 
 		die "Die Datei <$file> enthält keine Route."
