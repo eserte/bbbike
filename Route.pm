@@ -379,6 +379,12 @@ sub load_as_object {
     $class->new_from_realcoords($res->{RealCoords}, -searchroutepoints => $res->{SearchRoutePoints});
 }
 
+sub load_bbr_as_object {
+    my($class, $file) = @_;
+    my $res = Route::load_bbr($file);
+    $class->new_from_realcoords($res->{RealCoords}, -searchroutepoints => $res->{SearchRoutePoints});
+}
+
 sub save_object {
     my($self, $file) = @_;
     Route::save(

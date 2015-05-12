@@ -39,6 +39,9 @@ EOF
 
     my $route2 = Route->load_as_object($tmp2file);
     is_deeply $route2, $route, 'roundtrip';
+
+    my $route3 = Route->load_bbr_as_object($sample_bbr_file);
+    is_deeply $route3, $route, 'load_bbr_as_object same as load_as_object';
 }
 
 {
