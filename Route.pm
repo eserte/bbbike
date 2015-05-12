@@ -437,41 +437,7 @@ sub load {
 		       };
 		return;
 	    } elsif (!$no_do) {
-		require Safe;
-		my $compartment = new Safe;
-
-		# Safe don't play well together (error message:
-		# "Undefined subroutine &Devel::Cover::use_file called").
-		# So Safe.pm is simply turned off if Devel::Cover usage
-		# is detected...
-		my($coords_ref, $realcoords_ref, $search_route_points_ref);
-		if ($Devel::Cover::VERSION) {
-		    my $contents = do { open my $fh, $file or die $!; local $/; join '', <$fh> };
-		    eval $contents;
-		} else {
-		    $compartment->rdo($file);
-		    $realcoords_ref          = ${ $compartment->varglob('realcoords_ref') };
-		    $coords_ref              = ${ $compartment->varglob('coords_ref') };
-		    $search_route_points_ref = ${ $compartment->varglob('search_route_points_ref') };
-		}
-
-		die "Die Datei <$file> enthält keine Route."
-		    if (!defined $realcoords_ref);
-
-		@realcoords = @$realcoords_ref;
-		if (defined $coords_ref) {
-		    warn "Achtung: <$file> enthält altes Routen-Format.\n".
-			"Koordinaten können verschoben sein!\n";
-		}
-		if (defined $search_route_points_ref) {
-		    @search_route_points = @$search_route_points_ref;
-		} else {
-		    @search_route_points =
-			([join(",",@{ $realcoords[0] }), POINT_MANUELL],
-			 [join(",",@{ $realcoords[-1] }), POINT_MANUELL]);
-		}
-
-		$matching_type = "bbr";
+		$ret = Route::load_bbr($file);
 	    } elsif ($no_do) {
 		die;
 	    }
@@ -505,6 +471,52 @@ sub load {
       RealCoords        => \@realcoords,
       SearchRoutePoints => \@search_route_points,
       Type              => $matching_type,
+     };
+}
+
+# Like load(), but only loads bbr files
+sub load_bbr {
+    my($file) = @_;
+
+    require Safe;
+    my $compartment = new Safe;
+
+    # Safe don't play well together (error message:
+    # "Undefined subroutine &Devel::Cover::use_file called").
+    # So Safe.pm is simply turned off if Devel::Cover usage
+    # is detected...
+    my($coords_ref, $realcoords_ref, $search_route_points_ref);
+    if ($Devel::Cover::VERSION) {
+	my $contents = do { open my $fh, $file or die $!; local $/; join '', <$fh> };
+	eval $contents;
+    } else {
+	$compartment->rdo($file);
+	$realcoords_ref          = ${ $compartment->varglob('realcoords_ref') };
+	$coords_ref              = ${ $compartment->varglob('coords_ref') };
+	$search_route_points_ref = ${ $compartment->varglob('search_route_points_ref') };
+    }
+
+    die "Die Datei <$file> enthält keine Route."
+	if (!defined $realcoords_ref);
+
+    if (defined $coords_ref) {
+	warn "Achtung: <$file> enthält altes Routen-Format.\n".
+	    "Koordinaten können verschoben sein!\n";
+    }
+
+    my @search_route_points;
+    if (defined $search_route_points_ref) {
+	@search_route_points = @$search_route_points_ref;
+    } else {
+	@search_route_points =
+	    ([join(",",@{ $realcoords_ref->[0] }), POINT_MANUELL],
+	     [join(",",@{ $realcoords_ref->[-1] }), POINT_MANUELL]);
+    }
+
+    +{
+      RealCoords        => $realcoords_ref,
+      SearchRoutePoints => \@search_route_points,
+      Type              => 'bbr',
      };
 }
 
