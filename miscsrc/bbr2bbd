@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: bbr2bbd,v 1.12 2007/03/09 00:47:26 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -28,12 +27,13 @@ use Route::Heavy;
 
 if (!GetOptions(\%opt,
 		"cat=s", "cats=s", "name=s", "dest=s", "f", "usebasename",
-		"route-data","data-route",
+		"route-data","data-route", "o=s",
 		"include-length-to-name", "include-moddate-to-name",
 	       )) {
     die "usage:
     $0 [-cat category | -cats category,category,...] [-name routename]
-       [-usebasename] [-dest directory] [-f] [-data-route] [-route-data]
+       [-usebasename] [-dest directory] [-o file] [-f]
+       [-data-route] [-route-data]
        [-include-length-to-name] [-include-moddate-to-name]
        [from to | files ...]
 ";
@@ -60,13 +60,26 @@ if ($opt{dest}) {
 	    warn $@;
 	}
     }
+} elsif ($opt{o}) {
+    if (!$opt{f}) {
+	if (-e $opt{o}) {
+	    die "$opt{o} already exists, please remove or use -f";
+	}
+    }
+    open my $ofh, '>', $opt{o}
+	or die "Can't write to $opt{o}: $!";
+    for my $f (@ARGV) {
+	convert_one_file($f, $ofh);
+    }
+    close $ofh
+	or die "Error while writing to $opt{o}: $!";
 } else {
     convert_one_file(@ARGV[0,1]);
 }
 
 sub convert_one_file {
     my $in_file  = shift;
-    my $out_file = shift;
+    my $out_file_or_fh = shift;
 
     if (defined $in_file) {
 	open(IN, "< $in_file") or die "Can't open $in_file: $!";
@@ -74,17 +87,26 @@ sub convert_one_file {
 	open(IN, "<&STDIN");
     }
 
+    my $ofh;
+    my $ofh_opened;
     my $open_out_file = sub {
-	if (defined $out_file) {
-	    if ($in_file eq $out_file) {
-		die "In and out files are the same";
-	    }
-	    if (-e $out_file && !$opt{f}) {
-		die "$out_file already exists";
-	    }
-	    open(OUT, "> $out_file") or die "Can't create $out_file: $!";
+	if (ref $out_file_or_fh eq 'GLOB') {
+	    $ofh = $out_file_or_fh;
 	} else {
-	    open(OUT, ">&STDOUT");
+	    my $out_file = $out_file_or_fh;
+	    if (defined $out_file) {
+		if ($in_file eq $out_file) {
+		    die "In and out files are the same";
+		}
+		if (-e $out_file && !$opt{f}) {
+		    die "$out_file already exists";
+		}
+		open $ofh, '>', $out_file
+		    or die "Can't create $out_file: $!";
+	    } else {
+		open $ofh, '>&', \*STDOUT;
+	    }
+	    $ofh_opened = 1;
 	}
     };
 
@@ -178,7 +200,7 @@ sub convert_one_file {
 	    $str = $new_str;
 	}
 	$open_out_file->();
-	print OUT $str->as_string;
+	print $ofh $str->as_string;
 
 ## XXX not used anymore (?)
 # 	require Safe;
@@ -200,27 +222,30 @@ sub convert_one_file {
 # 	if ($opt{usebasename}) {
 # 	    ($name) = fileparse($in_file, "\\..+\$");
 # 	}
-# 	print OUT "$name\t$opt{cat}";
+# 	print $ofh "$name\t$opt{cat}";
 # 	foreach (@$realcoords_ref) {
-# 	    print OUT " " . $_->[0] . "," . $_->[1];
+# 	    print $ofh " " . $_->[0] . "," . $_->[1];
 # 	}
-# 	print OUT "\n";
+# 	print $ofh "\n";
     } else { # bbd2bbr
 	my @coords = split(/\s+/, $in_data[2]);
 	$open_out_file->();
-	print OUT "#BBBike Route\n";
-	print OUT "\$realcoords_ref = [";
+	print $ofh "#BBBike Route\n";
+	print $ofh "\$realcoords_ref = [";
 	foreach (@coords) {
-	    print OUT "[" . $_ . "],";
+	    print $ofh "[" . $_ . "],";
 	}
-	print OUT "];\n";
-	print OUT "\$search_route_points_ref = [";
-	print OUT "['" . $coords[0] . "','m'],";
-	print OUT "['" . $coords[-1] . "','a'],";
-	print OUT "];\n";
+	print $ofh "];\n";
+	print $ofh "\$search_route_points_ref = [";
+	print $ofh "['" . $coords[0] . "','m'],";
+	print $ofh "['" . $coords[-1] . "','a'],";
+	print $ofh "];\n";
     }
 
-    close OUT;
+    if ($ofh_opened) {
+	close $ofh
+	    or die "Error while closing output filehandle: $!";
+    }
 }
 
 __END__
