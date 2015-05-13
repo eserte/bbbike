@@ -112,7 +112,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2015-03-18
+#: last_checked: 2015-05-13
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -415,13 +415,7 @@ Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13
 #: source_id ^^^
 #: by ^^^
 # 
-#: XXX Realisierung bis September 2015
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
-#: XXX betrifft die Einbahnstraßenregelung während der Bauarbeiten auch Radfahrer?
-#: next_check: 2015-05-04
-Maaßenstr.: welche Auswirkungen wird die neue "Begegnungszone" für Radfahrer haben? Wird der Radweg verschwinden?	?::inwork 7080,10098 7060,10221 7033,10328
-# 
+# REMOVED (-> bbbike-temp-blockings.pl) --- #: XXX Realisierung bis September 2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html --- #: XXX betrifft die Einbahnstraßenregelung während der Bauarbeiten auch Radfahrer? --- #: next_check: 2015-05-04 --- Maaßenstr.: welche Auswirkungen wird die neue "Begegnungszone" für Radfahrer haben? Wird der Radweg verschwinden?	?::inwork 7080,10098 7060,10221 7033,10328
 # REMOVED (Umleitung geht anders herum) --- #: XXX laut fritz, "für mehrere Monate" --- #: next_check: 2015-02-11 --- Rathausstr. (Lichtenberg): gibt es Änderungen während der Bauarbeiten Frankfurter Allee/Gürtelstr., z.B. wird die Einbahnstraßenrichtung umgedreht?	? 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
 # REMOVED (-> aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- #: note: Privatstraße, südlicher (jetzt schon bestehender) Abschnitt bleibt öffentlich --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- Zur alten Börse: Qualität, schon fertig?	? 18736,13080 18712,12853 18682,12599 18649,12371 --- Marzahner Chaussee [Zur alten Börse]: Qualität, schon fertig?	? 18649,12371 18647,12354 18639,12272 18654,12255
 # REMOVED --- #: XXX fehlt in Berlin.coords.data --- #: note: "Mahlsdorfer Grünzug" --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2015 (Nummerierung) --- Pfarrhufenanger: Qualität, schon befahrbar? Verkehrsberuhigt?	? 25599,13069 25427,12847 25250,12632
@@ -813,7 +807,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2015-04-30
+#: last_checked: 2015-05-13
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1147,7 +1141,7 @@ L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht me
 # REMOVED (no changes) --- #: source_id: IM_023224 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.218616.php (Arbeiten des Straßenamtes) --- #: next_check: 2014-11-10 --- Buntzelstr.: Bauarbeiten --- gibt es danach Änderunden bzgl. der Radwege?	?::inwork 22075,779 22120,659 22171,459 22166,312 22145,208
 # 
 #: source_id: LS/721-E/14/031
-#: next_check: 2014-12-19
+#: next_check: 2015-05-13
 Gartz: Bauarbeiten --- ist die B2 danach asphaltiert?	?::inwork 74369,90701 74463,90856 74717,90814 75329,90359
 # 
 # REMOVED (nein, keine Radspuren --- ist eigentlich auch kein Platz da) --- #: source_id: IM_023200 --- #: next_check: 2014-11-07 --- Köpenicker Str.: Bauarbeiten --- gibt es danach Änderungen wegen neuer Radwege/Radspuren?	?::inwork 19676,1577 19704,1621 19766,1796
@@ -1205,6 +1199,10 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.313183.php
+#: next_check: 2015-06-27
+Grottewitzstr.: wird nach den Bauarbeiten die Qualität hier besser sein?	? 21868,139 21933,152 22145,208
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/

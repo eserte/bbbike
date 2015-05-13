@@ -3804,6 +3804,50 @@ userdel	2::inwork 7451,13504 7630,13584
          'data' => 'userdel	2::inwork -6474,5144 -6361,5222 -6277,5180 -6037,5371 -5918,5610 -5853,5674 -5828,5739 -5688,5837 -5390,5941 -5264,6001 -5037,6085 -4835,6220 -4774,6514
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html',
+         'until' => 1441058400,
+         'text' => 'Maaßenstr.: Bauarbeiten, gesperrt in Richtung Winterfeldplatz, bis September 2015',
+         'from' => undef,
+         'id' => 2705,
+         'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
+#: XXX nach den Bauarbeiten werden die Reste des Radwegs wegfallen
+#: last_checked: 2015-05-13
+#: next_check: 2015-07-13
+	q4::inwork; 7033,10328 7060,10221 7080,10098
+'
+       },
+       {
+         'source_id' => 'LS/721-E/15/036',
+         'until' => 1456873200,
+         'text' => 'L258: Brückenneubau bei Trebenow (Brücke über den Köhntop), Vollsperrung ab 28.05.15 bis 01.03.2016 ',
+         'from' => 1432706400,
+         'id' => 2706,
+         'data' => 'userdel	2::inwork 39384,115027 39168,114713 38881,113150
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.313774.php',
+         'until' => 1438984800,
+         'text' => 'Spreeuferweg: Sanierungsarbeiten zwischen Tucholskystr. und Monbijoustr., gesperrt vom 18.05.2015 bis voraussichtlich 07.08.2015',
+         'from' => 1431813600,
+         'id' => 2707,
+         'data' => 'userdel	2::inwork 9538,12993 9557,12992 9707,12974
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.313183.php',
+         'until' => 1435442400,
+         'text' => 'Grottewitzstr.: Fahrbahnarbeiten zwischen Buntzelstr. und Rettungsstelle Krankenhaus Hedwigshöhe, 18.05.2015 bis 27.06.2015',
+         'from' => 1431813600,
+         'id' => 2708,
+         'data' => 'userdel	q4::inwork 22145,208 21933,152 21868,139
+',
+         'type' => 'handicap'
        }
      
 );

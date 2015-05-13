@@ -2060,6 +2060,7 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Barriere	BNP:5::trailer=10 7422,10368
 Drängelgitter	BNP:3::trailer=10 5029,19945
 Drängelgitter	BNP:3::trailer=10 -12262,-393
 Drängelgitter	BNP:3::trailer=10 -4139,1976
@@ -2607,10 +2608,13 @@ Rummelsburger Landstraße: zwischen Nalepastr. und Poggendorffweg wegen Baustelle
 #: next_check: 2017-04-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
-#: last_checked: 2015-05-12
+#: last_checked: 2015-05-12 vvv
+#: next_check: 2015-06-08 vvv
 # REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015)
 Alfred-Döblin-Platz: Bauarbeiten	2::inwork 11162,10919 11150,11030
 Dresdener Str.: Einbahnstraße wegen Tunnelzuschüttung	1s:q3 11189,10831 11162,10919
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: XXX Sperrungen wegen Bauarbeiten für die IGA 2017 vvv
 #: last_checked: 2015-04-11 vvv
@@ -2682,7 +2686,7 @@ Zufahrt zum Uferweg: gesperrt	2::inwork 7703,14582 7696,14577 7662,14579 7653,14
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136136549415/136549415/00119959/59-Anlagen/02/GA_1805_IV.pdf (mindestens bis Ende 2016)
-#: last_checked: 2015-05-11
+#: last_checked: 2015-05-13
 #: check_frequency: 180d
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 # 

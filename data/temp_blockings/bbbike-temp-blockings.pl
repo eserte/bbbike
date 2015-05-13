@@ -24113,4 +24113,44 @@ EOF
 userdel	2::inwork -6474,5144 -6361,5222 -6277,5180 -6037,5371 -5918,5610 -5853,5674 -5828,5739 -5688,5837 -5390,5941 -5264,6001 -5037,6085 -4835,6220 -4774,6514
 EOF
      },
+     { from  => undef,
+       until => $isodate2epoch->("2015-09-01 00:00:00"),
+       text  => 'Maaßenstr.: Bauarbeiten, gesperrt in Richtung Winterfeldplatz, bis September 2015',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html',
+       data  => <<EOF,
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
+#: XXX nach den Bauarbeiten werden die Reste des Radwegs wegfallen
+#: last_checked: 2015-05-13
+#: next_check: 2015-07-13
+	q4::inwork; 7033,10328 7060,10221 7080,10098
+EOF
+     },
+     { from  => 1432706400, # 2015-05-27 08:00
+       until => 1456873200, # 2016-03-02 00:00
+       text  => 'L258: Brückenneubau bei Trebenow (Brücke über den Köhntop), Vollsperrung ab 28.05.15 bis 01.03.2016 ',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/15/036',
+       data  => <<EOF,
+userdel	2::inwork 39384,115027 39168,114713 38881,113150
+EOF
+     },
+     { from  => 1431813600, # 2015-05-17 00:00
+       until => 1438984800, # 2015-08-08 00:00
+       text  => 'Spreeuferweg: Sanierungsarbeiten zwischen Tucholskystr. und Monbijoustr., gesperrt vom 18.05.2015 bis voraussichtlich 07.08.2015',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.313774.php',
+       data  => <<EOF,
+userdel	2::inwork 9538,12993 9557,12992 9707,12974
+EOF
+     },
+     { from  => $isodate2epoch->("2015-05-17 00:00:00"), # 1 Tag Vorlauf
+       until => 1435442400, # 2015-06-28 00:00
+       text  => 'Grottewitzstr.: Fahrbahnarbeiten zwischen Buntzelstr. und Rettungsstelle Krankenhaus Hedwigshöhe, 18.05.2015 bis 27.06.2015',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.313183.php',
+       data  => <<EOF,
+userdel	q4::inwork 22145,208 21933,152 21868,139
+EOF
+     },
     );
