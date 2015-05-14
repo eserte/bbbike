@@ -1114,17 +1114,7 @@ userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_024932',
-         'until' => 1431550800,
-         'text' => 'Budapester Str.: zwischen Lützowufer und Kurfürstenstr. Straße gesperrt, möglicherweise ist auch das Katharina-Heinroth-Ufer gesperrt, Staatsbesuch, bis zum 13. Mai 2015 abends',
-         'from' => 1431286193,
-         'id' => 1001,
-         'data' => 'userdel	2::temp 6145,10975 6168,11042 6447,11144 6582,11202
-userdel	2::temp 6582,11202 6495,11251 6350,11301 6346,11326
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2534,7 +2524,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'source_id' => 'http://www.erkner.de/271.html',
-         'data' => 'userdel	2::temp 34443,1951 34250,2546
+         'data' => 'userdel	2::temp 34421,1950 34359,2165 34250,2546
 ',
          'periodic' => 1,
          'until' => 1433714399,
@@ -3103,7 +3093,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1430704800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-05-05
+#: last_checked: 2015-05-14
 #: next_check: 2015-09-21
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 ',

@@ -83,7 +83,7 @@ außerdem ist der Gehweg für Radfahrer frei	RW3; -15501,795 -15368,717 -15294,674
 	RW;RW -18731,5799 -18804,5992 -18962,6183 -19576,6450 -19787,6551 -20023,6826
 Verbundsteinpflasterradweg	RW2; 33525,2901 33545,2896 33913,2821 34014,2791 34152,2749
 asphaltiert	RW2; 34152,2749 34014,2791 33913,2821 33545,2896 33525,2901
-Radweg auf Gehweg	RW;RW 34152,2749 34175,2637 34250,2546 34443,1951
+Radweg auf Gehweg	RW2;RW2 34152,2749 34175,2637 34250,2546 34359,2165 34421,1950
 asphaltiert	RW2;RW8 34261,3092 34258,3138 34268,3204 34291,3314 34315,3429 34359,3631 34403,3857
 #: add_fragezeichen: ist hier auch ein asphaltierter Zweirichtungsradweg?
 	RW;RW 34403,3857 34486,4276 34549,4551
@@ -151,14 +151,18 @@ alte, parallel verlaufende asphaltierte Allee ist für Radfahrer befahrbar	RW;RW 
 	RW;RW 22543,-15510 22865,-15325 23123,-14619 23346,-14193
 Radwegstreifen (Verbundsteinpflaster)	RW3;RW3 25912,-11956 25949,-11945 26078,-11992 26296,-12053
 Radwegstreifen (Verbundsteinpflaster)	RW3;RW3 26296,-12053 26299,-11896
-breiter Verbundsteinpflasterradweg	RW8;RW2 34990,2148 35088,2160 35453,2207 36402,2471 36719,2420 37085,2201
+Verbundsteinpflasterradweg	RW8;RW2 34421,1950 34620,2046 34742,2111 34990,2148
+#: note: Qualität nur Q1
+breiter Verbundsteinpflasterradweg	RW8;RW2 34990,2148 35088,2160 35453,2207 36334,2466 36402,2471 36719,2420 37085,2201
 Radwege bzw. Gehwege frei für Radfahrer	RW;RW 37085,2201 37129,2175 37364,2132 37449,1992 37870,1620 38164,1564 38642,1798 38732,1821 39212,1762
-#: XXX Seite des Zweirichtungsradweges?
-Verbundsteinpflasterradweg für beide Richtungen, etwas abseits der Straße	RW;RW 36719,2420 36771,2581 37084,2693 37712,2659 38023,2687 38636,2578
+Verbundsteinpflasterradweg für beide Richtungen, etwas abseits der Straße	RW8;RW2 36719,2420 36771,2581 37084,2693 37712,2659 38023,2687 38512,2600
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 38512,2600 38636,2578 39044,2686 39243,2759
 #: XXX: genaue Position und Qualität?
 Radweg (?)	RW;RW 39243,2759 39534,3037
 #: XXX: genaue Position und Qualität?
 Radweg (?)	RW;RW 39968,3795 40463,4020 41051,4427 41275,5229 41987,5693
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 39044,2686 39032,2481 38973,2311 39090,2169 39096,2149
+asphaltierter Radweg	RW8;RW2 39096,2149 39149,1973 39212,1762
 	RW8?;RW 14341,30839 12955,30436 12466,30452
 Feinsplit-Radweg	RW;RW 41806,-40762 42075,-40337 42152,-39572 41675,-38268 41687,-38100 41731,-37743
 asphaltiert, enge Stelle an der Bahnüberführung	RW;RW8? 8303,28478 7546,28255 7365,28253 7125,28106 5939,27781
@@ -534,7 +538,12 @@ gemeinsamer Rad- und Gehweg	RW2;RW2 30495,7350 30557,6731 30602,6366 30648,5979
 	RW6;RW6 -14974,988 -14992,927
 	RW6;RW6 -15001,891 -14870,850
 	RW3; -14650,201 -14663,310 -14676,418
-teils Asphalt, teils Verbundsteinpflaster	RW8;RW2 39341,-1057 39264,-832 39259,612 39250,1024 39311,1219 39321,1349 39212,1762
+Asphalt	RW8;RW2 40270,-3790 39341,-1057
+Asphalt	RW8;RW2 39341,-1057 39264,-832 39259,574
+Verbundsteinpflaster	RW8;RW2 39259,574 39259,612 39250,1024 39311,1219 39321,1349 39302,1422
+Asphalt	RW8;RW2 39302,1422 39280,1505
+#: note: hier gibt es auf beiden Seiten asphaltierte Zweirichtungsradwege
+Asphalt	RW8;RW2 39280,1505 39212,1762
 #: XXX Radweg existiert, zumindest auf der östlichen Seite, auch auf der westlichen?
 	RW;RW 87906,-5239 87553,-4939 87418,-4660
 	RW2; 55401,-3599 55456,-4023 55447,-4247

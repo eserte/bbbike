@@ -2031,7 +2031,7 @@ EOF
        text  => 'L 30; (Friedrichstraße); OL Erkner, zw. Fürstenwalder Str. u. Beuststr. 13.Heimatfest Erkner Vollsperrung 19.05.2005-23.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 34443,1951 34250,2546
+userdel	q4 34421,1950 34359,2165 34250,2546
 EOF
      },
      { from  => 1117317600, # 2005-05-29 00:00
@@ -4502,7 +4502,7 @@ EOF
        text  => 'L 030 Friedrichstr. OL Erkner, zw. fürstenwalder Str. u. Beuststr. 14. Heimatfest Vollsperrung 18.05.2006-22.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 34443,1951 34250,2546
+userdel	2 34421,1950 34359,2165 34250,2546
 EOF
      },
      { from  => 1147212000, # 2006-05-10 00:00
@@ -5209,7 +5209,7 @@ EOF
        text  => 'L 023 Storkow-Grünheide Brücke über die Müggelspree bei Neuhartmannsdorf Asphaltarbeiten Vollsperrung 05.08.2006-06.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 40374,-4432 40534,-4568 40652,-4743
+userdel	2::inwork 40374,-4432 40534,-4568 40631,-4703 40652,-4743
 EOF
      },
      { from  => 1153738184, # 2006-07-24 12:49
@@ -7367,7 +7367,7 @@ EOF
        text  => 'L 023 Storkow-Herzfelde Bahnübergang Fangschleuse Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 39250,1024 39259,612 39264,-832
+userdel	2::inwork 39250,1024 39259,612 39259,574 39264,-832
 EOF
      },
      { from  => 1174172400, # 2007-03-18 00:00
@@ -8379,7 +8379,7 @@ EOF
        text  => 'L 030 Friedrichstr. OD Erkner, zw. Kreiverkehr und Beuststr. 14. Heimatfest Vollsperrung 31.05.2007-04.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 34443,1951 34250,2546
+userdel	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
      { from  => undef, # 
@@ -11473,7 +11473,7 @@ EOF
        text  => 'L 030 Friedrichstr. OD Erkner, zw. Kreisverkehr und Beuststr. 16. Heimatfest Vollsperrung 15.05.2008-19.05.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 34443,1951 34250,2546
+userdel	q4::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
      { from  => 1209852000, # 2008-05-04 00:00
@@ -12761,7 +12761,7 @@ EOF
        text  => 'L 030 Neu Zittauer Str. OD Erkner Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 12.09.2008-17.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 34232,888 34449,1689 34443,1951
+userdel	1::inwork 34232,888 34449,1689 34421,1950
 EOF
      },
      { from  => 1221602400, # 2008-09-17 00:00
@@ -15379,7 +15379,7 @@ EOF
        text  => 'L 030 Friedrichstr. OD Erkner, zw. Kreisverkehr u. Beuststr. 17. Heimatfest Vollsperrung 17.09.2009-21.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 34443,1951 34250,2546
+userdel	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
      { from  => 1249941600, # 2009-08-11 00:00
@@ -17915,7 +17915,7 @@ EOF
        text  => 'Erkner: Heimatfest, 5.6.2015 bis 7.6.2015',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 34443,1951 34250,2546
+userdel	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
      { from  => 1275537600, # 2010-06-03 06:00
@@ -21223,7 +21223,7 @@ EOF
        source_id => 'IM_024846',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-05-05
+#: last_checked: 2015-05-14
 #: next_check: 2015-09-21
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 EOF
