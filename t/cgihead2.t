@@ -203,6 +203,8 @@ sub check_url {
 	    is($content_type, "application/zip", "Expected type (zip)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{\.tar\.gz$}) {
 	    is($content_type, "application/x-gzip", "Expected type (gzip)") or diag("For URL $url$redir_text");
+	} elsif ($url =~ m{\.txz$}) {
+	    is($content_type, "application/octet-stream", "Expected type (txz)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{/\.modified$}) {
 	    like($content_type, qr{^text/plain}, "Expected type (plain text)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{wap}) {
