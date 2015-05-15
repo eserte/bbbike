@@ -48,4 +48,29 @@ EOF
     is_deeply $r2, $r1, 'Both routes are the same';
 }
 
+{
+    my $route = <<'EOF';
+#BBBike route
+$realcoords_ref = [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]];
+$search_route_points_ref = [['-3011,10103','m'],['-2766,10325','a'],['-2571,10258','a']];
+EOF
+    my $ret = Route::load_from_string($route);
+    my $path = $ret->{RealCoords};
+    is_deeply $path, [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]], 'load_from_string path';
+    my $search_route_points = $ret->{SearchRoutePoints};
+    is_deeply $search_route_points, [['-3011,10103','m'],['-2766,10325','a'],['-2571,10258','a']], 'load_from_string search_route_points';
+}
+
+{
+    my $route = <<'EOF';
+#BBBike route
+$realcoords_ref = [[9404,10250], [9388,10393], [9250,10563]];
+EOF
+    my $ret = Route::load_from_string($route);
+    my $path = $ret->{RealCoords};
+    is_deeply $path, [[9404,10250], [9388,10393], [9250,10563]], 'load_from_string path 2nd';
+    my $search_route_points = $ret->{SearchRoutePoints};
+    is_deeply $search_route_points, [['9404,10250', 'm'], ['9250,10563', 'm']], 'implicit search_route_points';
+}
+
 __END__
