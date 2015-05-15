@@ -5126,7 +5126,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 15.07.2006-15.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -62333,20390 -62290,19904 -62217,19221
+userdel	q4::inwork -62305,20426 -62290,19904 -62217,19221
 EOF
      },
      { from  => 1152396000, # 2006-07-09 00:00
@@ -5814,7 +5814,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 02.09.2006-02.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -62217,19221 -62290,19904 -62333,20390
+userdel	2::inwork -62217,19221 -62290,19904 -62305,20426
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -6891,7 +6891,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Brückenbauarb. Vollsperrung 09.12.2006-09.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -62290,19904 -62333,20390
+userdel	2::inwork -62290,19904 -62305,20426
 EOF
      },
      { from  => 1165100400, # 2006-12-03 00:00
@@ -11734,7 +11734,7 @@ EOF
        text  => 'B 188 Berliner Str. OD Rathenow, zw. Goethestr. und F.-Ebert-Ring Sanierung Fahrbahndecke halbseitig gesperrt; Einbahnstraße 16.06.2008-20.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -61212,20700 -61627,20789 -62285,21020
+userdel	q4::inwork -61212,20700 -61539,20770 -61627,20789 -62277,21019
 EOF
      },
      { from  => 1212962400, # 2008-06-09 00:00
@@ -13717,7 +13717,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Wolzenstr. und Heidefeldstr. Neubau Kreisverkehr Vollsperrung 02.03.2009-24.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -62290,19904 -62333,20390
+userdel	q4::inwork -62290,19904 -62305,20426
 EOF
      },
      { from  => 1244757600, # 2009-06-12 00:00
@@ -14552,11 +14552,11 @@ EOF
 userdel	2::inwork 26001,-6257 26057,-6241 26146,-6218
 EOF
      },
-     { from  => $isodate2epoch->("2014-06-13 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-06-15 23:59:59"),
+     { from  => $isodate2epoch->("2015-06-18 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-06-21 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (14.6.2014 - 15.6.2014)',
+       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (19.6.2015 - 21.6.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 22111,4562 22093,4499 22076,4422
@@ -15182,7 +15182,7 @@ EOF
      { from  => $isodate2epoch->("2014-06-13 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2014-06-15 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 6]],
+       # XXX für 2015 noch kein Termin? --- recurrences => [['yearly', days => 14, months => 6]],
        text  => 'Badstr. (Wedding) zwischen Pankstr. und Behmstr. Veranstaltung (Seifenkistenderby), Straße vollständig gesperrt (14. und 15. Juni 2014)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16036,7 +16036,7 @@ EOF
        text  => 'B 102 Große Milower Str. OD Rathenow, zw. Wolzenstr. und Körgraben Neubau Kreisverkehr Vollsperrung 20.05.2009-31.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -62290,19904 -62333,20390
+userdel	q4::inwork -62290,19904 -62305,20426
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
@@ -21349,30 +21349,28 @@ EOF
 userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
-     { from  => 1367560678, # 2013-05-03 07:57
-       until => 1367704799, # 2013-05-04 23:59
-       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt',
+     { from  => 1431715044, # 1367560678, # 2013-05-03 07:57
+       until => $isodate2epoch->("2015-05-15 23:59:59"), # 1367704799, # 2013-05-04 23:59
+       periodic => 1,
+       recurrences => [['yearly', days => 4, months => 5]],
+       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 15. Mai 2015',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html',
+       source_id => 'http://www.berliner-frauenlauf.de/event/start-ziel-strecke.html',
        data  => <<EOF,
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 8119,12414
-userdel	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
+userdel	2::temp 8055,12186 8119,12414
+userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 6828,12031 6884,12006
+	2::temp 6809,11979 6984,11859
+	2::temp 6778,11742 6980,11790
+	2::temp 6809,11570 6980,11583 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
+	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 8522,12239 8466,12197
 userdel auto	3 7429,12070 7383,12095 7039,12314
-userdel auto	3 8522,12187 8538,12245 8600,12165
-userdel auto	3 8522,12187 8538,12245 8546,12279
-userdel auto	3 8522,12187 8538,12245 8522,12239
 userdel auto	3 7875,12363 7816,12150 7823,12120
-userdel auto	3 8522,12239 8538,12245 8522,12187
-userdel auto	3 8522,12239 8538,12245 8546,12279
-userdel auto	3 8522,12239 8538,12245 8600,12165
-userdel auto	3 8546,12279 8538,12245 8600,12165
-userdel auto	3 8546,12279 8538,12245 8522,12239
-userdel auto	3 8546,12279 8538,12245 8522,12187
-userdel auto	3 8600,12165 8538,12245 8546,12279
-userdel auto	3 8600,12165 8538,12245 8522,12239
-userdel auto	3 8600,12165 8538,12245 8522,12187
 userdel auto	3 7039,12314 7383,12095 7429,12070
 userdel auto	3 7823,12120 7816,12150 7875,12363
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
 EOF
      },
      { from  => $isodate2epoch->("2015-05-08 11:00:00"), # 1 Tag Vorlauf
