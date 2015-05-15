@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.23 2009/02/05 22:19:09 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -21,8 +20,6 @@ use Strassen::Core;
 use Strassen::Util;
 use Strassen::Lazy;
 use Strassen::StrassenNetz;
-use Route;
-use Route::Heavy;
 
 use BBBikeTest;
 
@@ -231,14 +228,8 @@ if ($do_xxx) {
 {
     pass("-- Bug reported by Dominik --");
 
-    my $route = <<'EOF';
-#BBBike route
-$realcoords_ref = [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]];
-$search_route_points_ref = [['-3011,10103','m'],['-2766,10325','a'],['-2571,10258','a']];
-EOF
-    my $ret = Route::load_from_string($route);
-    my $path = $ret->{RealCoords};
-    my(@route) = $s_net->route_to_name($path);
+    my $path = [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]];
+    my(@route) = $s_net->route_to_name([[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]]);
     my $got_undef = 0;
     for (@route[0..$#route-1]) { $got_undef++ if !defined $_->[StrassenNetz::ROUTE_ANGLE] }
     is($got_undef, 0);
@@ -250,12 +241,7 @@ EOF
 
     {
 	# Wilhelmstr. - Stresemannstr.
-	my $route = <<'EOF';
-#BBBike route
-$realcoords_ref = [[9404,10250], [9388,10393], [9250,10563]];
-EOF
-	my $ret = Route::load_from_string($route);
-	my $path = $ret->{RealCoords};
+	my $path = [[9404,10250], [9388,10393], [9250,10563]];
 	my(@route) = $s_net->route_to_name($path);
 	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, '!', "Found an important angle (Wilhelmstr. -> Stresemannstr.)")
 	    or diag(Dumper(\@route));
@@ -277,12 +263,7 @@ EOF
 
     {
 	# gleiche Kreuzung, Wilhelmstr. geradeaus
-	my $route = <<'EOF';
-#BBBike route
-$realcoords_ref = [[9404,10250], [9388,10393], [9378,10539]];
-EOF
-	my $ret = Route::load_from_string($route);
-	my $path = $ret->{RealCoords};
+	my $path = [[9404,10250], [9388,10393], [9378,10539]];
 	my(@route) = $s_net->route_to_name($path);
 	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, undef, "Important angle not set here (Wilhelmstr.)")
 	    or diag(Dumper(\@route));
@@ -290,12 +271,7 @@ EOF
 
     {
 	# Martin-Luther-Str. -> Dominicusstr.
-	my $route = <<'EOF';
-#BBBike route
-$realcoords_ref = [[6449,8807], [6460,8688], [6575,8469]];
-EOF
-	my $ret = Route::load_from_string($route);
-	my $path = $ret->{RealCoords};
+	my $path = [[6449,8807], [6460,8688], [6575,8469]];
 	my(@route) = $s_net->route_to_name($path);
 	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, '!', "Found an important angle (Martin-Luther-Str. ->Dominicusstr.)")
 	    or diag(Dumper(\@route));
@@ -310,12 +286,7 @@ EOF
 
     {
 	# gleiche Kreuzung, Martin-Luther-Str. geradeaus
-	my $route = <<'EOF';
-#BBBike route
-$realcoords_ref = [[6470,8809], [6470,8681], [6471,8639]];
-EOF
-	my $ret = Route::load_from_string($route);
-	my $path = $ret->{RealCoords};
+	my $path = [[6470,8809], [6470,8681], [6471,8639]];
 	my(@route) = $s_net->route_to_name($path);
 	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, undef, "Important angle not set here (Martin-Luther-Str.)")
 	    or diag(Dumper(\@route));
@@ -378,12 +349,7 @@ XXX:
 
     # Twice the same coord in the route, use to cause a division by
     # zero error somewhere
-    my $route = <<'EOF';
-#BBBike route
-$realcoords_ref = [[-3011,10103],[-2761,10323],[-2761,10323],[-2766,10325]];
-EOF
-    my $ret = Route::load_from_string($route);
-    my $path = $ret->{RealCoords};
+    my $path = [[-3011,10103],[-2761,10323],[-2761,10323],[-2766,10325]];
     my(@route) = eval { $s_net->route_to_name($path) };
     is $@, '', 'No division by zero error';
 }
