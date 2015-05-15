@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2014 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2014,2015 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -27,7 +27,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = '1.61';
+$VERSION = '1.62';
 
 package StrassenNetz;
 use strict;
@@ -1010,10 +1010,11 @@ sub build_search_code {
 
         #printf STDERR "- dump minnode ----------------------------\nx,y=%s dist=%d hdist=%d\n", $min_node, $NODES{$min_node}->[DIST], $NODES{$min_node}->[HEURISTIC_DIST]; # DEBUG_MINNODE
 	#printf STDERR "----------\n"; # DEBUG_SUCC
-        my @successors = keys %{ $net->{$min_node} };
+        my $net_min_node = $net->{$min_node};
+        my @successors = keys %$net_min_node;
      CHECK_SUCCESSOR:
         foreach my $successor (@successors) {
-#         while(my($successor, $dist) = each %{ $net->{$min_node} }) {
+#         while(my($successor, $dist) = each %$net_min_node }) {
 
             my $NODES_min_node = $NODES{$min_node};
             # do not check against the predecessor of this node
@@ -1058,7 +1059,7 @@ sub build_search_code {
             $node_touches++; # das gehört in die Stat-Abteilung
 '; } $code .= "
 
-            my \$" . $len_pen .' = $net->{$min_node}{$successor};#$dist;
+            my \$" . $len_pen .' = $net_min_node->{$successor};#$dist;
 ';
 	if ($sc->HasPenalty) {
 	    $code .= $penalty_code;
