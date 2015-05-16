@@ -159,8 +159,6 @@ my $ABBREV_WORD_RX = '(' . join("|", map { '\b'.quotemeta($_).'\b' } keys %ABBRE
 $ABBREV_WORD_RX = qr{$ABBREV_WORD_RX};
 ######################################################################
 
-my($nodefh, $nodefile) = tempfile(UNLINK => 1, SUFFIX => "_node.xml");
-binmode $nodefh, ':utf8';
 my($wayfh, $wayfile) = tempfile(UNLINK => 1, SUFFIX => "_way.xml");
 binmode $wayfh, ':utf8';
 my($relationfh, $relationfile) = tempfile(UNLINK => 1, SUFFIX => "_relation.xml");
@@ -169,7 +167,7 @@ binmode $relationfh, ':utf8';
 my $next_node_id = 1;
 my $next_way_id = 1;
 my $next_relation_id = 1;
-my %node_id;
+tie my %node, 'Tie::IxHash'; # pxy => { id => $id, $k => $v, ... }
 
 my %oneway;
 my %no_access;
@@ -1338,8 +1336,6 @@ sub handle_citypart_like {
     $next_relation_id++;
 }
 
-seek $nodefh, 0, SEEK_SET
-    or die $!;
 seek $wayfh, 0, SEEK_SET
     or die $!;
 seek $relationfh, 0, SEEK_SET
@@ -1348,8 +1344,20 @@ seek $relationfh, 0, SEEK_SET
 binmode STDOUT, ':utf8';
 print qq{<osm version="0.6" generator="bbd2osm">\n};
 print qq{<bound box="$min_lat,$min_lon,$max_lat,$max_lon" origin="http://www.bbbike.de" />\n};
-while(<$nodefh>) {
-    print $_;
+while(my(undef, $node) = each %node) {
+    print qq{<node id="$node->{id}" lat="$node->{lat}" lon="$node->{lon}" user="eserte" visible="true" };
+    my $node_attribs = $node->{attribs};
+    if ($node_attribs) {
+	print qq{>\n};
+	while(my($k,$v) = each %$node_attribs) {
+	    _xmlify($k);
+	    _xmlify($v);
+	    print qq{  <tag k="$k" v="$v"/>\n};
+	}
+	print qq{</node>\n};
+    } else {
+	print qq{/>\n};
+    }
 }
 while(<$wayfh>) {
     print $_;
@@ -1399,28 +1407,36 @@ sub get_node_id_from_center {
 sub maybe_add_node {
     my($px, $py, $attribs) = @_;
     my $pxy = $px.','.$py;
-    my $this_node_id = $node_id{$pxy};
-    if (!defined $this_node_id) {
-	$this_node_id = $node_id{$pxy} = $next_node_id++;
-	print $nodefh qq{<node id="$this_node_id" lat="$py" lon="$px" user="eserte" visible="true" };
-	if ($attribs) {
-	    print $nodefh qq{>\n};
-	    while(my($k,$v) = each %$attribs) {
-		_xmlify($k);
-		_xmlify($v);
-		print $nodefh qq{  <tag k="$k" v="$v"/>\n};
-	    }
-	    print $nodefh qq{</node>\n};
-	} else {
-	    print $nodefh qq{/>\n};
-	}
+
+    my $this_node;
+    my $this_node_id;
+    if (!exists $node{$pxy}) {
+	$this_node_id = $next_node_id++;
+	$this_node = $node{$pxy} = { id => $this_node_id, lat => $py, lon => $px };
 
 	$min_lon = $px if !defined $min_lon || $min_lon > $px;
 	$max_lon = $px if !defined $max_lon || $max_lon < $px;
 	$min_lat = $py if !defined $min_lat || $min_lat > $py;
 	$max_lat = $py if !defined $max_lat || $max_lat < $py;
-
+    } else {
+	$this_node = $node{$pxy};
+	$this_node_id = $this_node->{id};
     }
+
+    if ($attribs && %$attribs) {
+	if (!exists $this_node->{attribs}) {
+	    tie my %node_attribs, 'Tie::IxHash', %$attribs;
+	    $this_node->{attribs} = \%node_attribs;
+	} else {
+	    my $node_attribs = $this_node->{attribs};
+	    while(my($k,$v) = each %$attribs) {
+		if (!exists $node_attribs->{$k}) {
+		    $node_attribs->{$k} = $v;
+		}
+	    }
+	}
+    }
+
     $this_node_id;
 }
 
@@ -1612,6 +1628,24 @@ when doing routing for cyclists, leading to strange routes, at least
 when trying it in Berlin. The idea was to render primary and secondary
 roads, but to have internally a lower class, e.g. tertiary. First
 tests were not successful, though...
+
+=head2 BUGS
+
+If, say, a S-Bahn station and U-Bahn station share the same
+coordinate, and one of both is under construction, then the complete
+node appears as under construction. Currently this is the case for
+S-Bhf. Schoenweide.
+
+For railway stations of different types sharing the same coordinate
+only the first one processed is displayed. Processing order is
+currently: subways, light railways, railways. This means at Wuhletal
+the U-Bahn symbol is displayed (and not the S-Bahn symbol,
+additionally or not), at Alexanderplatz, Hauptbahnhof etc. the S-Bahn
+symbol (and not the railway symbol).
+
+A traffic_sign=locality_name might have two names, but only one is
+used. Probably it would be better to use pseudo-osm arrays, that is,
+join the names with a ";" character.
 
 =head1 AUTHOR
 
