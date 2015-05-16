@@ -18,7 +18,7 @@ use Test::More;
 use Getopt::Long;
 use LWP::UserAgent ();
 
-use BBBikeTest qw(check_cgi_testing tidy_check get_std_opts $cgidir);
+use BBBikeTest qw(check_cgi_testing eq_or_diff tidy_check get_std_opts $cgidir);
 
 check_cgi_testing;
 
@@ -47,13 +47,19 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
 }
 
 {
-    my $url = "$base_url?coords=1381,11335!1450,11309!1532,11280!1574,11379"; # Theodor-Heuss-Platz
-    my $resp = $ua->get($url);
-    ok $resp->is_success, "Fetching with simple coords is OK"
-	or diag $resp->status_line;
-    my $content = $resp->decoded_content(charset => 'none');
-    tidy_check $content, 'tidy check with simple coords';
-    like $content, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q]],"type":"LineString"},"type":"Feature","properties":{"type":"Route"}};>m, 'simple initial coords';
+    my @contents;
+    for my $param (qw(coords coords_rev)) {
+	my $url = "$base_url?$param=1381,11335!1450,11309!1532,11280!1574,11379"; # Theodor-Heuss-Platz
+	my $resp = $ua->get($url);
+	ok $resp->is_success, "Fetching with simple coords and param key $param is OK"
+	    or diag $resp->status_line;
+	my $content = $resp->decoded_content(charset => 'none');
+	tidy_check $content, 'tidy check with simple coords';
+	like $content, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q]],"type":"LineString"},"type":"Feature","properties":{"type":"Route"}};>m, 'simple initial coords';
+	push @contents, $content;
+    }
+
+    eq_or_diff $contents[1], $contents[0], 'No difference between coords and coords_rev';
 }
 
 {

@@ -46,8 +46,11 @@ if ($q->param('coordssession')) {
     } else {
 	$show_expired_session_msg = 1;
     }
-} elsif ($q->param('coords')) {
-    $coords = [ $q->param('coords') ];
+} elsif ($q->param('coords') || $q->param('coords_forw') || $q->param('coords_rev')) {
+    # Currently coords_forw and coords_rev are rendered the same, but
+    # it would be nice if the different directions could be
+    # visualized.
+    $coords = [ $q->param('coords'), $q->param('coords_forw'), $q->param('coords_rev') ];
 }
 
 my $show_feature_list;
