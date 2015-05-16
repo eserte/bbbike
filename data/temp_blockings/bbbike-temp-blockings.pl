@@ -21223,7 +21223,7 @@ EOF
        source_id => 'IM_024846',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-05-14
+#: last_checked: 2015-05-16
 #: next_check: 2015-09-21
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 EOF
@@ -21350,10 +21350,10 @@ userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
      { from  => 1431715044, # 1367560678, # 2013-05-03 07:57
-       until => $isodate2epoch->("2015-05-15 23:59:59"), # 1367704799, # 2013-05-04 23:59
+       until => $isodate2epoch->("2015-05-16 23:59:59"), # 1367704799, # 2013-05-04 23:59
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5]],
-       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 15. Mai 2015',
+       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 16. Mai 2015',
        type  => 'gesperrt',
        source_id => 'http://www.berliner-frauenlauf.de/event/start-ziel-strecke.html',
        data  => <<EOF,

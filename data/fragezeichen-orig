@@ -353,8 +353,10 @@ Borsigdamm: Verbesserung f¸r den Radverkehr	?::projected 1463,19417 1450,19336 1
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.168550.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.227911.php ("1. Quartal 2015")
-#: next_check: 2015-03-01
-Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 22668,3884 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031 23185,1649
+#: last_checked: 2015-05-16
+#: check_frequency: 60d
+Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 22668,3884 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
+# REMOVED (hier vermutlich nicht) --- Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 23099,2031 23185,1649
 # 
 #: section ^^^
 #: ignore ^^^
@@ -569,7 +571,7 @@ Toulonstr.: genaue Lage? Qualit‰t? Verkehrsberuhigt? Sackgasse? wann ist die Fer
 #: next_check_id ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2013
-#: last_checked: 2014-05-25
+#: last_checked: 2015-05-16
 #: check_frequency: 360d
 #: XXX auﬂerdem sind schon die Zug‰nge als Straﬂenland gewidmet
 #: XXX alter Namensvorschlag "Claus-Dieter-Sprink-Br¸cke"
@@ -740,7 +742,7 @@ Straﬂe 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00079726/26-Anlagen/01/DRS0047VK.pdf (Bebauungsplan 9 - 47)
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegungxvi-65und9-47.html
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2014-11-15
+#: last_checked: 2015-05-16
 #: check_frequency: 180d
 Uferweg: wird verl‰ngert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
@@ -1106,7 +1108,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
 #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straﬂenbenennung, Vorschlag)
-#: last_checked: 2015-04-04
+#: last_checked: 2015-05-16
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Br¸cke ¸ber die Spree und Straﬂenverbindung zwischen Rummelsburger Landstraﬂe und Kˆpenicker Landstraﬂe	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
@@ -1935,7 +1937,7 @@ neue Planstraﬂen in Fahrland: Lage, Qualit‰t?	? -16174,7006 -15929,6894
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegung9-57ve.html
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/9_57ve_v41_ve_a1_2014_01_14.pdf?start&ts=1390830629&file=9_57ve_v41_ve_a1_2014_01_14.pdf
 #: XXX wird zuk¸nftig entstehen, evtl. entsteht noch ein Uferweg vvv
-#: last_checked: 2014-07-18 vvv
+#: last_checked: 2015-05-16 vvv
 #: check_frequency: 360d vvv
 Marienhainallee: Qualit‰t, nur f¸r Radfahrer/Fuﬂg‰nger?	? 22788,3061 22485,3036 22290,3019
 Planstraﬂen im Marienhain: Straﬂennamen? Qualit‰t?	? 22771,3151 22476,3118 22485,3036 22494,2949 22807,2962
@@ -1945,7 +1947,12 @@ Planstraﬂen im Marienhain: Straﬂennamen? Qualit‰t?	? 22771,3151 22476,3118 22485
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2015
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5051
-"Sommerwiesenweg" und "Am Stadtforst": hier entstehen neue Straﬂe	? 23659,2393 23485,2271 23645,2244
+#: last_checked: 2015-05-16 vvv
+#: check_frequency: 100d vvv
+"Sommerwiesenweg" und "Am Stadtforst": hier entstehen neue Straﬂen, genaue Lage, Qualit‰t, vermutlich Sackgasse?	? 23623,2392 23624,2275
+"Sommerwiesenweg" und "Am Stadtforst": hier entstehen neue Straﬂen, genaue Lage, Qualit‰t (zurzeit Asphalt ohne Deckschicht)?	? 23485,2271 23624,2275
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140922.1345.399356.html (Erschlieﬂung bis Anfang 2015)
 #: last_checked: 2015-04-11

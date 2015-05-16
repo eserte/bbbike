@@ -1394,8 +1394,6 @@ Schönewalder Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24974,14355 2493
 Riesaer Str. -> Mittweidaer Str.: Straßenbahntrasse	3::igndisp 25095,14171 24983,14208 24918,14008
 Mittweidaer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24918,14008 24983,14208 24930,14225
 wegen Überführung nicht überquerbar	3nocross::ignrte 17527,7812 17568,7753 17681,7589 17769,7465 17839,7365 18010,7133
-Grenzweg -> Rummelsburger Landstr.: wegen Überführung nicht überquerbar	3::igndisp 17575,7519 17681,7589 17568,7753
-Rummelsburger Str. -> Grenzweg: wegen Überführung nicht überquerbar	3::igndisp 17769,7465 17681,7589 17575,7519
 Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17743,7328 17839,7365 17769,7465
 Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18010,7133 17839,7365 17743,7328
 Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,8005
@@ -2782,7 +2780,6 @@ Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Februar 2015 bis voraussichtlich Oktober 2015	2::inwork 7753,14528 7695,14545 7653,14570 7527,14644 7486,14652
 Zufahrt zum Uferweg: gesperrt	2::inwork 7703,14582 7696,14577 7662,14579 7653,14570
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
-Grenzweg: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17445,7434 17575,7519
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
 (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520

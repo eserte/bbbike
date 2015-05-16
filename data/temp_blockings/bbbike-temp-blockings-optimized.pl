@@ -3114,7 +3114,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1430704800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-05-14
+#: last_checked: 2015-05-16
 #: next_check: 2015-09-21
 userdel	q4::inwork 15261,10738 15272,10790 15279,10862
 ',
@@ -3162,7 +3162,7 @@ userdel auto	3 7823,12120 7816,12150 7875,12363
 	3 8327,12174 8344,12221 8391,12389
 ',
          'periodic' => 1,
-         'until' => 1431727199,
+         'until' => 1431813599,
          'from' => 1431715044,
          'recurrences' => [
                             [
@@ -3173,7 +3173,7 @@ userdel auto	3 7823,12120 7816,12150 7875,12363
                               5
                             ]
                           ],
-         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 15. Mai 2015',
+         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 16. Mai 2015',
          'id' => 2427,
          'type' => 'gesperrt'
        },
