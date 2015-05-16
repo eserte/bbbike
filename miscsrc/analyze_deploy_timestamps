@@ -23,12 +23,14 @@ my $skip_wrong = 1;
 my $project = "bbbike.de-hosteurope";
 my $graph_stage;
 my $show;
+my $plotter = 'Chart::Gnuplot';
 GetOptions("skipwrong!" => \$skip_wrong,
 	   "project=s" => \$project,
 	   "graph=s" => \$graph_stage,
 	   'show' => \$show,
+	   'plotter' => \$plotter,
 	  ) 
-    or die "usage: $0 [-[no]skipwrong] [-project bbbike.de-hosteurope|www.radzeit.de] [-graph test-from-local|do-rsync|test-on-remote] [-show]";
+    or die "usage: $0 [-[no]skipwrong] [-project bbbike.de-hosteurope|www.radzeit.de] [-graph test-from-local|do-rsync|test-on-remote] [-show] [-plotter Chart::Gnuplot|Chart::Clicker]";
 
 my $last_dir = "$FindBin::RealBin/../projects/$project/.last";
 my %graph_data;
@@ -91,17 +93,39 @@ for my $pairdef ("test-from-local",
 }
 
 if ($graph_stage) {
-    require Chart::Clicker;
-    require Chart::Clicker::Axis::DateTime;
-    my $cc = Chart::Clicker->new(width=>1000,height=>700);
-    $cc->add_data('Time-based', \%graph_data);
-    $cc->contexts->{default}->domain_axis(Chart::Clicker::Axis::DateTime->new(position => 'bottom', orientation => 'horizontal'));
-    $cc->write_output("/tmp/graph.png");
-    if ($show) {
-	system 'xzgv', '/tmp/graph.png';
-	unlink '/tmp/graph.png';
+    if ($plotter eq 'Chart::Clicker') {
+	require Chart::Clicker;
+	require Chart::Clicker::Axis::DateTime;
+	my $cc = Chart::Clicker->new(width=>1000,height=>700);
+	$cc->add_data('Time-based', \%graph_data);
+	$cc->contexts->{default}->domain_axis(Chart::Clicker::Axis::DateTime->new(position => 'bottom', orientation => 'horizontal'));
+	$cc->write_output("/tmp/graph.png");
+	if ($show) {
+	    system 'xzgv', '/tmp/graph.png';
+	    unlink '/tmp/graph.png';
+	} else {
+	    warn "Written to /tmp/graph.png";
+	}
+    } elsif ($plotter eq 'Chart::Gnuplot') {
+	require Chart::Gnuplot;
+	my $chart = Chart::Gnuplot->new(
+					terminal => "wxt size 1000,700",
+					title => "analyze_deploy_timestamps: $graph_stage",
+					timeaxis => "x",
+				       );
+
+	my @datasets;
+	{
+	    my @data = map { [$_, $graph_data{$_}] } sort { $a <=> $b } keys %graph_data;
+	    my $dataset = Chart::Gnuplot::DataSet->new(points => \@data,
+						       style => 'lines',
+						       timefmt => "%s",
+						      );
+	    push @datasets, $dataset;
+	}
+	$chart->plot2d(@datasets);
     } else {
-	warn "Written to /tmp/graph.png";
+	die "Invalid value for -plotter: must be either Chart::Clicker or Chart::Gnuplot\n";
     }
 }
 
