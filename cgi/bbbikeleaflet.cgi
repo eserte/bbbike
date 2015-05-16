@@ -46,7 +46,10 @@ if ($q->param('coordssession')) {
     } else {
 	$show_expired_session_msg = 1;
     }
+} elsif ($q->param('coords')) {
+    $coords = [ $q->param('coords') ];
 }
+
 my $show_feature_list;
 if ($devel) {
     $enable_upload = $show_feature_list = 1;

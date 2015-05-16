@@ -176,11 +176,27 @@ sub process {
 
 	if (m{\Q//--- INSERT GEOJSON HERE ---}) {
 	    if ($coords) {
-		require BBBikeGeoJSON;
-		require Route;
-		my $route = Route->new_from_cgi_string(join("!", $coords));
-		my $json = BBBikeGeoJSON::route_to_geojson_json($route);
-		print $ofh "initialRouteGeojson = $json;\n";
+		if (ref $coords eq 'ARRAY' && @$coords > 1) {
+		    require Strassen::GeoJSON;
+		    require Strassen::Core;
+		    my $bbd = Strassen::GeoJSON->new;
+		    for my $coord (@$coords) {
+			$bbd->push(['', [split /!/, $coord], 'X']);
+		    }
+		    print $ofh "initialGeojson =\n";
+		    print $ofh $bbd->bbd2geojson;
+		    print $ofh ";\n";
+		} else {
+		    # This seems to be faster than Strassen::GeoJSON +
+		    # Strassen::Core, so use if for simple coordinate
+		    # lists.
+		    require BBBikeGeoJSON;
+		    require Route;
+		    ($coords) = @$coords if ref $coords eq 'ARRAY';
+		    my $route = Route->new_from_cgi_string($coords);
+		    my $json = BBBikeGeoJSON::route_to_geojson_json($route);
+		    print $ofh "initialRouteGeojson = $json;\n";
+		}
 	    } elsif ($show_expired_session_msg) {
 		# XXX English message?
 		print $ofh qq{alert("Die Session ist abgelaufen, es wird die Karte ohne Route angezeigt.");\n};
