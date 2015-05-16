@@ -88,7 +88,7 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'customlink=s@' => \@custom_link_defs,
 		'routelistbutton!' => \$do_routelist_button,
 		'mapserverbutton!' => \$do_mapserver_button,
-		'addleafletbutton' => \$do_leaflet_button,
+		'leafletbutton!' => \$do_leaflet_button,
 		'linktarget=s' => \$link_target,
 	       )) {
     require Pod::Usage;
@@ -584,7 +584,7 @@ bbd2mapservhtml.pl - create a mapserver or leaflet route from a bbd or bbr file
 		    [-title title] [-imagetype ...]
 		    [-onlyonedirection] [-althandling] [-completeness]
 		    [-customlink "url label" ...]
-		    [-noroutelistbutton] [-nomapserverbutton] [-addleafletbutton]
+		    [-noroutelistbutton] [-nomapserverbutton] [-noleafletbutton]
 		    [file]
 
 =head1 DESCRIPTION
@@ -721,9 +721,9 @@ Don't create a button to the route list.
 
 Don't create a button to mapserver.
 
-=item -addleafletbutton
+=item -noleafletbutton
 
-Create a button to the leaflet map.
+Don't create a button to the leaflet map.
 
 If both mapserver and leaflet buttons exist, then the button label
 changes to "Karte (Mapserver)" and "Karte (Leaflet)", and leaflet
