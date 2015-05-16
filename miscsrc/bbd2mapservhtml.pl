@@ -238,6 +238,8 @@ EOF
 		my $label_html = "&#xa0;&#xa0;&#xa0;" . CGI::escapeHTML($label);
 		my @coords_with_directions = lines_to_coords_with_directions(@{ $current_alternatives{$alt}->{coords_with_directions} });
 		push @html, generate_single_html(coords_with_directions => \@coords_with_directions,
+						 # XXX should also find_nearest_to_center()
+						 center => $coords_with_directions[0]->[0],
 						 label => $label,
 						 label_html => $label_html,
 						 @common_html_args,
@@ -290,6 +292,7 @@ EOF
 		    push @current_alternatives_order, $alt_name;
 		}
 		$current_alternatives{$alt_name}->{label} = $alt_name;
+		$current_alternatives{$alt_name}->{coords_with_directions} = [];
 		$push_coords_with_directions->($current_alternatives{$alt_name}->{coords_with_directions});
 		warn "XXX handle alternative $r->[Strassen::NAME]...\n";
 		next;
