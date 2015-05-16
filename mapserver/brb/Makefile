@@ -569,7 +569,7 @@ radroute_body.html:	$(BBBIKE_DATA_DIR)/comments_route-orig \
 		-mapscale 1:40000 \
 		-center city=Berlin_DE -centernearest \
 		-althandling \
-		-onlyonedirection \
+		-distinguishdirections \
 		> $@
 
 ######################################################################

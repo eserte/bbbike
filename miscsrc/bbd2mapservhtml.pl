@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -44,6 +44,7 @@ my $partialhtml;
 my $do_linklist;
 my $do_headlines;
 my $only_one_direction;
+my $distinguish_directions;
 my $do_alternatives_handling;
 my $do_completeness;
 my $preferalias;
@@ -81,6 +82,7 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'imagetype=s' => \$imagetype,
 		'title=s' => \$title,
 		'onlyonedirection!' => \$only_one_direction,
+		'distinguishdirections!' => \$distinguish_directions,
 		'althandling!' => \$do_alternatives_handling,
 		'completeness!' => \$do_completeness,
 		'customlink=s@' => \@custom_link_defs,
@@ -168,13 +170,36 @@ my $html;
 
 if ($do_linklist) {
     my @html;
+
+    push @html, <<'EOF';
+<script type="text/javascript"><!--
+function transform_coords_forw_rev(frm) {
+  for(var i=0; i<frm.elements.length; i++) {
+    var name = frm.elements[i].name;
+    if (name == 'coords_forw' || name == 'coords_rev') {
+      frm.elements[i].name = 'coords';
+    }
+  }
+}
+function transform_coords_remove_rev(frm) {
+  for(var i=0; i<frm.elements.length; i++) {
+    var name = frm.elements[i].name;
+    if (name == 'coords_forw') {
+      frm.elements[i].name = 'coords';
+    }
+    // leave coords_rev as is, will be ignored by bbbike.cgi
+  }
+}
+// --></script>
+EOF
+
     $s->init;
 
     my $last_route_id;
     my $last_section;
     my $current_display_name;
     my $current_display_addition;
-    my @current_lines;
+    my @current_lines_with_directions;
     my $current_link;
     my $current_section;
     my %current_alternatives;
@@ -182,7 +207,7 @@ if ($do_linklist) {
     my $current_ignore_routelist;
 
     my $generate_single_html = sub {
-	my @coords = lines_to_coords(@current_lines);
+	my @coords_with_directions = lines_to_coords_with_directions(@current_lines_with_directions);
 
 	if ($do_headlines) {
 	    if ($current_section) {
@@ -198,7 +223,9 @@ if ($do_linklist) {
 				$current_ignore_routelist || !$do_routelist_button ? () : (routelistlabel => " Routenliste "),
 			       );
 
-	push @html, generate_single_html(coords => \@coords,
+	my @current_lines = map { $_->[1] } @current_lines_with_directions;
+
+	push @html, generate_single_html(coords_with_directions => \@coords_with_directions,
 					 (defined $center ? (center => find_nearest_to_center(\@current_lines, $center)) : ()),
 					 label => $current_display_name,
 					 label_addition => $current_display_addition,
@@ -209,8 +236,8 @@ if ($do_linklist) {
 	    for my $alt (@current_alternatives_order) {
 		my $label = $current_alternatives{$alt}->{label};
 		my $label_html = "&#xa0;&#xa0;&#xa0;" . CGI::escapeHTML($label);
-		my @coords = lines_to_coords(@{ $current_alternatives{$alt}->{coords} });
-		push @html, generate_single_html(coords => \@coords,
+		my @coords_with_directions = lines_to_coords_with_directions(@{ $current_alternatives{$alt}->{coords_with_directions} });
+		push @html, generate_single_html(coords_with_directions => \@coords_with_directions,
 						 label => $label,
 						 label_html => $label_html,
 						 @common_html_args,
@@ -218,7 +245,7 @@ if ($do_linklist) {
 	    }
 	}	
 
-	@current_lines = ();
+	@current_lines_with_directions = ();
 	undef $current_display_name;
 	undef $current_display_addition;
 	undef $current_link;
@@ -232,13 +259,27 @@ if ($do_linklist) {
 	my $r = $s->next;
 	last if !@{ $r->[Strassen::COORDS] };
 
+	my($cat_hin,$cat_rueck) = split /;/, $r->[Strassen::CAT];
 	if ($only_one_direction) {
-	    my($cat_hin,$cat_rueck) = split /;/, $r->[Strassen::CAT];
 	    if ($cat_hin eq '') {
 		warn "Ignore rueckweg in $r->[Strassen::NAME]...\n";
 		next;
 	    }
 	}
+
+	my $push_coords_with_directions = sub {
+	    my($dest_arrref) = @_;
+	    if (!defined $cat_rueck) {
+		push @$dest_arrref, ['coords', $r->[Strassen::COORDS]];
+	    } else {
+		if ($cat_hin ne '') {
+		    push @$dest_arrref, ['coords_forw', $r->[Strassen::COORDS]];
+		}
+		if ($cat_rueck ne '') {
+		    push @$dest_arrref, ['coords_rev', $r->[Strassen::COORDS]];
+		}
+	    }
+	};
 
 	my $route_id = $r->[Strassen::NAME];
 	my $alt_name;
@@ -249,7 +290,7 @@ if ($do_linklist) {
 		    push @current_alternatives_order, $alt_name;
 		}
 		$current_alternatives{$alt_name}->{label} = $alt_name;
-		push @{ $current_alternatives{$alt_name}->{coords} }, $r->[Strassen::COORDS];
+		$push_coords_with_directions->($current_alternatives{$alt_name}->{coords_with_directions});
 		warn "XXX handle alternative $r->[Strassen::NAME]...\n";
 		next;
 	    }
@@ -261,7 +302,7 @@ if ($do_linklist) {
 
 	$last_route_id = $route_id;
 
-	push @current_lines, $r->[Strassen::COORDS];
+	$push_coords_with_directions->(\@current_lines_with_directions);
 
 	if (!defined $current_display_name) {
 	    if ($preferalias) {
@@ -374,6 +415,20 @@ sub lines_to_coords {
     @coords;
 }
 
+sub lines_to_coords_with_directions {
+    my(@lines_with_directions) = @_;
+    # XXX instead of int() should something like best_accuracy be used
+    my @coords_with_directions =
+	map {
+	    [$_->[0],
+	     join $COORD_SEP, map {
+		 join ",", map { int } split /,/, $_
+	     } @{$_->[1]}
+	    ]
+	} @lines_with_directions;
+    @coords_with_directions;
+}
+
 sub map_button_options {
     my $has_both_map_buttons = $do_mapserver_button && $do_leaflet_button;
     my @opts;
@@ -389,7 +444,8 @@ sub map_button_options {
 sub generate_single_html {
     my(%args) = @_;
 
-    my @coords = @{ delete $args{coords} };
+    my @coords = @{ delete $args{coords} || [] };
+    my @coords_with_directions = @{ delete $args{coords_with_directions} || [] };
     my $center = delete $args{center};
     my $label = delete $args{label};
     my $label_addition = delete $args{label_addition};
@@ -410,6 +466,12 @@ EOF
     for my $coords (@coords) {
 	$html .= <<EOF;
  <input type="hidden" name="coords" value="$coords" />
+EOF
+    }
+    for my $coord_def (@coords_with_directions) {
+	my($key, $val) = @$coord_def;
+	$html .= <<EOF;
+ <input type="hidden" name="$key" value="$val" />
 EOF
     }
     for my $layer (@layers) {
@@ -455,7 +517,7 @@ EOF
 	    $html .= ' id="submitbutton"';
 	}
 	$html .= <<EOF;
- type="submit" onclick='this.form.showroutelist.value="0"; this.form.imagetype.value="$imagetype"; $restore_action' value="@{[ CGI::escapeHTML($mapserverlabel) ]}" />
+ type="submit" onclick='this.form.showroutelist.value="0"; this.form.imagetype.value="$imagetype"; transform_coords_forw_rev(this.form); $restore_action' value="@{[ CGI::escapeHTML($mapserverlabel) ]}" />
  <input type="hidden" name="showroutelist" value="0" />
 EOF
     }
@@ -463,7 +525,7 @@ EOF
     # route list button
     if ($routelistlabel) {
 	$html .= <<EOF;
- <input type="submit" onclick='this.form.showroutelist.value="1"; this.form.imagetype.value=""; $restore_action' value="@{[ CGI::escapeHTML($routelistlabel) ]}" />
+ <input type="submit" onclick='this.form.showroutelist.value="1"; this.form.imagetype.value=""; transform_coords_remove_rev(this.form); $restore_action' value="@{[ CGI::escapeHTML($routelistlabel) ]}" />
 EOF
     }
 
