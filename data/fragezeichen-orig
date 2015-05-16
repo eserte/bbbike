@@ -1782,8 +1782,6 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 # 
 # REMOVED (Wege existieren zwar, lohnt aber nicht) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2014 (Widmung) --- #: XXX hier existieren einige Wege, nur wenig besser als Trampelpfade --- wird vielleicht ein richtiger Weg gebaut? --- #: last_checked: 2014-09-27 --- #: check_frequency: 180d --- Rudolf-Leonhard-Str. - Blumberger Damm: Qualität des Rad/Gehweg?	? 21483,16325 21497,16384 21574,16547
 # 
-#: ignore ^^^
-# 
 #: XXX_prog BS (gerichtet) vvv
 Buschkrugallee -> Delfter Ufer: Bordstein, falls man sich auf dem Radweg befindet	? 13430,6086 13483,5973 13532,5987
 Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5893
@@ -1793,6 +1791,8 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: last_checked: 2015-03-20
 #: check_frequency: 60d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
+# 
+#: ignore ^^^
 # 
 ######################################################################
 #
@@ -3936,3 +3936,7 @@ Hornkleepfad - Wegedornstr.: wird hier eine Verbindung entstehen? Qualität? Nach
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.312664.php
 #: next_check: 2015-04-01
 Mattenbuder Pfad: ist die Qualität der Fahrbahn nach der Fahrbahninstandsetzung besser geworden?	? -1755,22975 -1633,22950 -1506,22923
+# 
+Lebehn - Sonnenberg: Qualität?	? 71560,109273 71503,109298 71141,110053 70983,110262 70824,110507 70301,111160 70177,111280
+Sonnenberg - Schwennenz: Qualität?	? 70104,111261 70177,111280 70222,111382 70314,111471 70507,111490 71823,111642 72118,111731 72642,111642
+Ramin - Löcknitz: Qualität?	? 68046,113269 67358,114392 67323,114468 66755,115115 66498,115330 66200,115648 65966,115955 65461,116393
