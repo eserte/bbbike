@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2009,2011,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2009,2011,2012,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -47,7 +47,8 @@ for my $pairdef ("test-from-local",
     close $STARTFH;
     close $STOPFH;
 
-    my $dedate = Date::Language->new("German");
+    my $dedate = Date::Language->new('German');
+    my $endate = Date::Language->new('English');
 
     my @new_start;
     my @new_stop;
@@ -56,12 +57,16 @@ for my $pairdef ("test-from-local",
 		   ) {
 	my($old, $new) = @$rundef;
 	for my $date_line (@$old) {
-	    my $epoch = $dedate->str2time(substr($date_line, 3));
+	    my $date = substr($date_line, 3);
+	    my $epoch = $dedate->str2time($date);
 	    if (!defined $epoch) {
-		warn "Cannot parse $date_line";
-	    } else {
-		push @$new, [$epoch, $date_line];
+		$epoch = $endate->str2time($date);
+		if (!defined $epoch) {
+		    warn "Cannot parse $date_line (using English and German locale), skipping...";
+		    next;
+		}
 	    }
+	    push @$new, [$epoch, $date_line];
 	}
     }
 
