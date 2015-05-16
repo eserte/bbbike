@@ -22,11 +22,13 @@ use Getopt::Long;
 my $skip_wrong = 1;
 my $project = "bbbike.de-hosteurope";
 my $graph_stage;
+my $show;
 GetOptions("skipwrong!" => \$skip_wrong,
 	   "project=s" => \$project,
 	   "graph=s" => \$graph_stage,
+	   'show' => \$show,
 	  ) 
-    or die "usage: $0 [-[no]skipwrong] [-project bbbike.de-hosteurope|www.radzeit.de] [-graph test-from-local|do-rsync|test-on-remote]";
+    or die "usage: $0 [-[no]skipwrong] [-project bbbike.de-hosteurope|www.radzeit.de] [-graph test-from-local|do-rsync|test-on-remote] [-show]";
 
 my $last_dir = "$FindBin::RealBin/../projects/$project/.last";
 my %graph_data;
@@ -34,9 +36,10 @@ my %graph_data;
 for my $pairdef ("test-from-local",
 		 "do-rsync",
 		 "test-on-remote",
+		 'deploy-pps',
 		) {
     print "\n$pairdef:\n";
-    my(@pair) = map { "$last_dir/$_" } ("start-$pairdef", $pairdef);
+    my(@pair) = map { "$last_dir/$_" } ($pairdef eq 'deploy-pps' ? ('start-deploy-pps', 'start-do-rsync') : ("start-$pairdef", $pairdef));
 
     open my $STARTFH, $pair[0] or die "Can't open $pair[0]: $!";
     open my $STOPFH,  $pair[1] or die "Can't open $pair[1]: $!";
@@ -94,7 +97,12 @@ if ($graph_stage) {
     $cc->add_data('Time-based', \%graph_data);
     $cc->contexts->{default}->domain_axis(Chart::Clicker::Axis::DateTime->new(position => 'bottom', orientation => 'horizontal'));
     $cc->write_output("/tmp/graph.png");
-    warn "Written to /tmp/graph.png";
+    if ($show) {
+	system 'xzgv', '/tmp/graph.png';
+	unlink '/tmp/graph.png';
+    } else {
+	warn "Written to /tmp/graph.png";
+    }
 }
 
 __END__
