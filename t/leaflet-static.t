@@ -12,7 +12,9 @@ use lib (
 	 "$FindBin::RealBin/../lib",
 	 $FindBin::RealBin,
 	);
+use utf8;
 use IO::Pipe ();
+use File::Temp ();
 use Test::More 'no_plan';
 
 use BBBikeTest qw(tidy_check like_html libxml_parse_html eq_or_diff);
@@ -53,6 +55,19 @@ eq_or_diff $html3, $html, 'as_string output is the same';
     my $blt2 = BBBikeLeaflet::Template->new(shortcut_icon => "images/my_favicon.png");
     my $html = $blt2->as_string;
     like_html $html, qr{shortcut icon.*href="images/my_favicon.png"}, 'shortcut icon ref found';
+}
+
+{
+    # XXX Things are partially unclear/inconsistent here. If using
+    # ->process, then a utf8 layer is forced on the output filehandle.
+    # But if using ->as_string, then this is not the case.
+    my $tmp = File::Temp->new;
+    my $blt2 = BBBikeLeaflet::Template->new(route_title => "Uckerm\x{e4}rkischer Rundweg", coords => ["1,2!3,4", "5,6!7,8"]);
+    $blt2->process($tmp);
+    $tmp->close;
+    my $utf8_slurp = sub { my $fh = IO::File->new(shift); $fh->binmode(':utf8'); join '', $fh->getlines };
+    my $html = $utf8_slurp->($tmp);
+    like_html $html, qr{Uckermärkischer Rundweg}, 'utf8 handling correct';
 }
 
 __END__

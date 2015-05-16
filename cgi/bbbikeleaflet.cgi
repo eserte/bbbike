@@ -37,6 +37,7 @@ my $enable_upload      = $q->param('upl') || 0;
 my $enable_accel       = $q->param('accel') || 0;
 my $use_osm_de_map     = $q->param('osmdemap') || 0;
 my $devel              = $q->param('devel') || 0;
+my $route_title        = $q->param('routetitle');
 my $show_expired_session_msg;
 my $coords;
 if ($q->param('coordssession')) {
@@ -70,6 +71,7 @@ my $tpl = BBBikeLeaflet::Template->new
      show_expired_session_msg => $show_expired_session_msg,
      show_feature_list        => $show_feature_list,
      coords                   => $coords,
+     route_title              => $route_title,
     );
 $tpl->process(\*STDOUT);
 
