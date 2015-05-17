@@ -48,6 +48,7 @@ use BBBikeUtil qw(is_in_path);
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing check_gui_testing on_author_system
 	      get_pmake image_ok zip_ok create_temporary_content static_url
+	      get_cgi_config
 	    ),
 	   @opt_vars);
 
@@ -954,6 +955,25 @@ sub create_temporary_content ($;%) {
     close $tmpfh
 	or die "Failed to create temporary file: $!";
     ($tmpfh, $tmpfile);
+}
+
+sub get_cgi_config (;@) {
+    my(%opts) = @_;
+    my $_cgiurl = delete $opts{cgiurl} || $cgiurl;
+    my $ua = delete $opts{ua};
+    if (!$ua) {
+	require LWP::UserAgent;
+	$ua = LWP::UserAgent->new;
+	set_user_agent($ua);
+    }
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
+    require JSON::XS;
+
+    my $url = $_cgiurl . "?api=config";
+    my $resp = $ua->get($url);
+    my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
+    $data;
 }
 
 1;

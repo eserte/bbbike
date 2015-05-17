@@ -21,15 +21,11 @@ BEGIN {
     }
 }
 
-use BBBikeTest qw(check_cgi_testing $cgidir eq_or_diff);
+use BBBikeTest qw(check_cgi_testing $cgidir eq_or_diff get_cgi_config);
 
 check_cgi_testing;
 
 plan 'no_plan';
-
-my $ua = LWP::UserAgent->new(keep_alive => 1);
-$ua->agent('BBBike-Test/1.0');
-$ua->env_proxy;
 
 my $cgiurl = "$cgidir/bbbike.cgi";
 my $cgitesturl = "$cgidir/bbbike-test.cgi";
@@ -125,11 +121,8 @@ my $cgitesturl = "$cgidir/bbbike-test.cgi";
 
 sub do_config_api_call {
     my $cgiurl = shift;
-    my $url = $cgiurl . "?api=config";
-    my $resp = $ua->get($url);
-    ok($resp->is_success, "config API call")
-	or diag $resp->as_string;
-    my $data = decode_json $resp->decoded_content(charset => 'none');
+    my $data = get_cgi_config cgiurl => $cgiurl;
+    ok $data, 'config API call returned data';
     $data;
 }
 
