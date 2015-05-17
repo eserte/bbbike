@@ -23,6 +23,7 @@ use CGI ();
 
 use BBBikeLeaflet::Template ();
 use BBBikeCGI::Config ();
+use BBBikeCGI::Util ();
 
 my $htmldir = "$FindBin::RealBin/../html";
 my $htmlfile = "$htmldir/bbbikeleaflet.html";
@@ -42,7 +43,7 @@ my $show_expired_session_msg;
 my $coords;
 if ($q->param('coordssession')) {
     require BBBikeApacheSessionCounted;
-    if (my $sess = BBBikeApacheSessionCounted::tie_session($q->param('coordssession'))) {
+    if (my $sess = BBBikeApacheSessionCounted::tie_session(scalar $q->param('coordssession'))) {
 	$coords = $sess->{routestringrep};
     } else {
 	$show_expired_session_msg = 1;
@@ -51,7 +52,11 @@ if ($q->param('coordssession')) {
     # Currently coords_forw and coords_rev are rendered the same, but
     # it would be nice if the different directions could be
     # visualized.
-    $coords = [ $q->param('coords'), $q->param('coords_forw'), $q->param('coords_rev') ];
+    $coords = [
+	       BBBikeCGI::Util::my_multi_param($q, 'coords'),
+	       BBBikeCGI::Util::my_multi_param($q, 'coords_forw'),
+	       BBBikeCGI::Util::my_multi_param($q, 'coords_rev'),
+	      ];
 }
 
 my $show_feature_list;
