@@ -6,6 +6,8 @@ use FindBin;
 use lib $FindBin::RealBin;
 
 use Getopt::Long;
+use URI ();
+use URI::QueryParam ();
 use Test::More;
 
 use BBBikeTest qw($cgidir);
@@ -179,6 +181,67 @@ $sel->click_ok("id=mapmode_search");
     my $thanks_rx = qr{Danke, der folgende Kommentar};
     poll(sub { $sel->get_text('id=answer') =~ $thanks_rx }, 'Sending comment mail');
     $sel->text_like('id=answer', $thanks_rx);
+}
+
+{
+    ## Enter coordinates checks
+    my $coord_text_locator = 'xpath=//*[@name="wpt_or_trk"]';
+    my $coord_button_locator = "$coord_text_locator/../..//button";
+    my $coordsystem_polar_locator = 'xpath=//*[@name="coordsystem" and @value="polar"]';
+
+    # empty coordinate
+    $sel->click_ok($coord_button_locator);
+    $sel->is_alert_present_ok();
+    $sel->alert_like(qr{Bitte Koordinaten eingeben});
+
+    # invalid coordinate
+    $sel->type_ok($coord_text_locator, 'XXX');
+    $sel->click_ok($coord_button_locator);
+    $sel->is_alert_present_ok();
+    $sel->alert_like(qr{Bitte Koordinaten im Format \S+ eingeben});
+
+    # valid bbbike coordinate
+    $sel->type_ok($coord_text_locator, '8000,8000');
+    $sel->click_ok($coord_button_locator);
+    $sel->wait_for_page_to_load_ok(10*1000);
+    {
+	my $loc = $sel->get_location;
+	like $loc, qr{^\Q$cgidir/$baseurl?}, 'still on a bbbikegooglemap page';
+	my $u = URI->new($loc);
+	is scalar($u->query_param('wpt_or_trk')), '8000,8000', 'expected coordinate';
+	is scalar($u->query_param('coordsystem')), 'bbbike', 'expected coordsystem';
+    }
+
+    # invalid polar coordinate
+    $sel->click_ok($coordsystem_polar_locator);
+    $sel->type_ok($coord_text_locator, '13,91');
+    $sel->click_ok($coord_button_locator);
+    $sel->is_alert_present_ok();
+    $sel->alert_like(qr{"13,91" ist ein ungültiger Wert für Longitude/Latitude});
+
+    # valid polar coordinate
+    $sel->type_ok($coord_text_locator, '13.4,52.5');
+    $sel->click_ok($coord_button_locator);
+    $sel->wait_for_page_to_load_ok(10*1000);
+    {
+	my $loc = $sel->get_location;
+	like $loc, qr{^\Q$cgidir/$baseurl?}, 'still on a bbbikegooglemap page';
+	my $u = URI->new($loc);
+	is scalar($u->query_param('wpt_or_trk')), '13.4,52.5', 'expected polar coordinate';
+	is scalar($u->query_param('coordsystem')), 'polar', 'expected coordsystem';
+    }
+
+    # valid polar coordinates (multiple)
+    $sel->type_ok($coord_text_locator, '13.4,52.5 13.5,52.5');
+    $sel->click_ok($coord_button_locator);
+    $sel->wait_for_page_to_load_ok(10*1000);
+    {
+	my $loc = $sel->get_location;
+	like $loc, qr{^\Q$cgidir/$baseurl?}, 'still on a bbbikegooglemap page';
+	my $u = URI->new($loc);
+	is scalar($u->query_param('wpt_or_trk')), '13.4,52.5 13.5,52.5', 'expected multiple polar coordinates';
+	is scalar($u->query_param('coordsystem')), 'polar', 'expected coordsystem';
+    }
 }
 
 sub poll {
