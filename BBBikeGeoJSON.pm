@@ -44,7 +44,7 @@ sub bbbikecgires_to_geojson_object {
 sub bbbikecgires_to_geojson_json {
     my($res, %args) = @_;
     require JSON::XS;
-    JSON::XS->new->utf8->encode(bbbikecgires_to_geojson_object($res, %args));
+    JSON::XS->new->utf8->canonical(1)->encode(bbbikecgires_to_geojson_object($res, %args));
 }
 
 sub route_to_geojson_object {
@@ -60,7 +60,7 @@ sub route_to_geojson_object {
 sub route_to_geojson_json {
     my($route) = @_;
     require JSON::XS;
-    JSON::XS->new->utf8->encode(route_to_geojson_object($route));
+    JSON::XS->new->utf8->canonical(1)->encode(route_to_geojson_object($route));
 }
 
 # Cease warnings

@@ -55,7 +55,7 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
 	    or diag $resp->status_line;
 	my $content = $resp->decoded_content(charset => 'none');
 	tidy_check $content, 'tidy check with simple coords';
-	like $content, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q]],"type":"LineString"},"type":"Feature","properties":{"type":"Route"}};>m, 'simple initial coords';
+	like $content, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q],[\E13.27\d+,52.50\d+\Q]],"type":"LineString"},"properties":{"type":"Route"},"type":"Feature"};>m, 'simple initial coords';
 	push @contents, $content;
     }
 
@@ -86,7 +86,7 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
 	    ok $resp2->is_success, 'Fetching a bbbikeleaflet URL with coordssession is OK';
 	    my $content2 = $resp2->decoded_content(charset => 'none');
 	    tidy_check $content2, 'tidy check';
-	    like $content2, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.38\d+,52.48\d+\Q],[\E13.38\d+,52.48\d+\Q]],"type":"LineString"},"type":"Feature","properties":{"type":"Route"}};>m, 'expected coords';
+	    like $content2, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.38\d+,52.48\d+\Q],[\E13.38\d+,52.48\d+\Q]],"type":"LineString"},"properties":{"type":"Route"},"type":"Feature"};>m, 'expected coords';
 	} else {
 	    fail 'Cannot find bbbikeleaflet link';
 	}
@@ -104,7 +104,7 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
 	    ok $resp2->is_success, 'Fetching a bbbikeleaflet URL with coordssession is OK';
 	    my $content2 = $resp2->decoded_content(charset => 'none');
 	    tidy_check $content2, 'tidy check';
-	    like $content2, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.38\d+,52.48\d+\Q],[\E13.38\d+,52.48\d+\Q]],"type":"LineString"},"type":"Feature","properties":{"type":"Route"}};>m, 'expected coords';
+	    like $content2, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.38\d+,52.48\d+\Q],[\E13.38\d+,52.48\d+\Q]],"type":"LineString"},"properties":{"type":"Route"},"type":"Feature"};>m, 'expected coords';
 	} else {
 	    fail 'Cannot find bbbikeleaflet link';
 	}
