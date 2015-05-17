@@ -30,6 +30,8 @@ if (!GetOptions(
 
 plan 'no_plan';
 
+my $coordssession_qr = qr{coordssession=(?i:\d+%3a)?[0-9a-f_]+};
+
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
@@ -83,7 +85,7 @@ SKIP: {
     { # bbbike.cgi (German)
 	my $resp1 = $ua->get($bbbike_url);
 	my $content1 = $resp1->decoded_content(charset => 'none');
-	if ($content1 =~ m{<a href="([^"]+/bbbikeleaflet\.cgi\?coordssession=[0-9a-f_]+)">Leaflet<img style="vertical-align:bottom;" src=".*?/images/bbbike_leaflet_16.png" border="0" alt=""></a>}) {
+	if ($content1 =~ m{<a href="([^"]+/bbbikeleaflet\.cgi\?$coordssession_qr)">Leaflet<img style="vertical-align:bottom;" src=".*?/images/bbbike_leaflet_16.png" border="0" alt=""></a>}) {
 	    my $bbbikeleaflet_url = $1;
 	    pass "Found bbbikeleaflet link '$bbbikeleaflet_url'";
 	    my $resp2 = $ua->get($bbbikeleaflet_url);
@@ -101,7 +103,7 @@ SKIP: {
     { # bbbike.en.cgi
 	my $resp1 = $ua->get($bbbike_en_url);
 	my $content1 = $resp1->decoded_content(charset => 'none');
-	if ($content1 =~ m{<a href="([^"]+/bbbikeleaflet\.en\.cgi\?coordssession=[0-9a-f_]+)">Leaflet<img style="vertical-align:bottom;" src=".*?/images/bbbike_leaflet_16.png" border="0" alt=""></a>}) {
+	if ($content1 =~ m{<a href="([^"]+/bbbikeleaflet\.en\.cgi\?$coordssession_qr)">Leaflet<img style="vertical-align:bottom;" src=".*?/images/bbbike_leaflet_16.png" border="0" alt=""></a>}) {
 	    my $bbbikeleaflet_url = $1;
 	    pass "Found English bbbikeleaflet link '$bbbikeleaflet_url'";
 	    my $resp2 = $ua->get($bbbikeleaflet_url);
