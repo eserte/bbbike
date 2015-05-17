@@ -65,7 +65,7 @@ eq_or_diff $html3, $html, 'as_string output is the same';
     my $blt2 = BBBikeLeaflet::Template->new(route_title => "Uckerm\x{e4}rkischer Rundweg", coords => ["1,2!3,4", "5,6!7,8"]);
     $blt2->process($tmp);
     $tmp->close;
-    my $utf8_slurp = sub { my $fh = IO::File->new(shift); $fh->binmode(':utf8'); join '', $fh->getlines };
+    my $utf8_slurp = sub { my $file = shift; require IO::File; my $fh = IO::File->new($file); $fh->binmode(':utf8'); join '', $fh->getlines };
     my $html = $utf8_slurp->($tmp);
     like_html $html, qr{Uckermärkischer Rundweg}, 'utf8 handling correct';
 }
