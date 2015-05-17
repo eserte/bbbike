@@ -18,7 +18,7 @@ use Test::More;
 use Getopt::Long;
 use LWP::UserAgent ();
 
-use BBBikeTest qw(check_cgi_testing eq_or_diff tidy_check get_std_opts $cgidir);
+use BBBikeTest qw(check_cgi_testing eq_or_diff tidy_check get_std_opts $cgidir get_cgi_config);
 
 check_cgi_testing;
 
@@ -73,7 +73,11 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
     like $content, qr<"type" : "FeatureCollection">, 'expected geojson type';
 }
 
-{
+SKIP: {
+    my $can_apache_session = get_cgi_config()->{use_apache_session};
+    skip 'No Apache::Session available, no coordssession param', 2
+	if !$can_apache_session;
+
     my $bbbike_url = "$cgidir/bbbike.cgi?startc=9229,8785&zielc=9227,8890&pref_seen=1&pref_speed=20";
 
     { # bbbike.cgi (German)
