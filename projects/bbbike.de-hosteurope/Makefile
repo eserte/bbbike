@@ -80,6 +80,7 @@ TESTS_FROM_LOCAL=	\
 			cgi.t \
 			cgi-test.t \
 			cgi-download.t \
+			cgi-leaflet.t \
 			bbbikegooglemap.t \
 			wapcgi.t \
 			wwwdata.t
