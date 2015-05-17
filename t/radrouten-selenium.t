@@ -10,11 +10,17 @@ use Test::More;
 
 my $doit;
 my $debug;
+my $root_url = "http://localhost/bbbike/mapserver/brb/radroute.html";
+# To test on bbbike-pps call with:
+#
+#    perl t/radrouten-selenium.t -doit -rooturl http://bbbike-pps/mapserver/brb/radroute.html
+#
 GetOptions(
            "doit" => \$doit,
            "debug" => \$debug,
+	   "rooturl=s" => \$root_url,
           )
-    or die "usage: $0 [-doit] [-debug]";
+    or die "usage: $0 [-doit] [-debug] [-rooturl ...]";
 
 if (!$doit) {
     plan skip_all => 'Tests are skipped without -doit switch';
@@ -45,7 +51,6 @@ EOF
     exit 1;
 }
 
-my $root_url = "http://localhost/bbbike/mapserver/brb/radroute.html";
 $sel->open_ok("$root_url", undef, "fetched radrouten page");
 
 my $bu_xpath = '//*[contains(.,"Berlin - Usedom")]';
