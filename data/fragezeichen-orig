@@ -1204,6 +1204,12 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6273 (Empfehlung)
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036102169813/102169813/00119753/53-Anlagen/02/AnlageBE.pdf (Karte)
+#: XXX fehlt in Berlin.coords.data
+#: next_check: 2015-06-17
+Abbè-Lemire-Weg: Straßenbenennung, wann passiert sie?	? 16296,17114 16229,17217 16146,17304 16141,17325 15939,17412 15839,17431 15814,17454 15821,17510
+# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.313183.php
 #: next_check: 2015-06-27
 Grottewitzstr.: wird nach den Bauarbeiten die Qualität hier besser sein?	? 21868,139 21933,152 22145,208
@@ -1509,7 +1515,7 @@ Anna-Maria-Müller-Str.: Planstraße 7, genaue Lage, Qualität?	?::projected 17712,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
 #: XXX (osm_watch-Item ist ein Proxy für den nicht mehr existenten Weg, Notiz existiert)
-#: osm_watch: way id="24686030" version="3"
+#: osm_watch: way id="24686030" version="4"
 #: last_checked: 2015-05-10
 #: XXX_osm: bei osm bereits ohne highway=construction -> Notiz
 #: check_frequency: 60d

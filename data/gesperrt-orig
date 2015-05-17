@@ -107,10 +107,7 @@ Eichborndamm	1s:q3 4240,19019 4232,18981
 Eichborndamm	1 4232,18981 4210,18878 4163,18676 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
-#: XXX evtl. wird die Einbahnstraßenregelung aufgehoben
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025
-#: last_checked: 2015-05-05
-#: check_frequency: 30d
+# REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
 Archibaldweg	1s:q4 15674,10851 15870,10938
 Nöldnerplatz	1 15870,10938 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
@@ -155,6 +152,9 @@ An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 #: note: hier stand mal ein Polizeiauto, als ich reinfahren wollte...
+#: XXX Öffnung der Einbahnstraße für Radfahrer?
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6514
+#: next_check: 2015-06-30
 Weydemeyerstr.	1s:q4 11896,13075 11904,13052 12053,12984 12054,12903
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12529
@@ -184,8 +184,10 @@ Körtestr.	1 11004,9554 11023,9597
 Körtestr.	1 11055,9539 11004,9554
 Fichtestr.	1 11075,9576 11055,9539
 Baerwaldstr.	1 10361,9755 10357,9813 10424,9958
+#: next_check_id: BAERWALD-2015 vvv
 # XXX vorrübergehend keine Einbahnstraße (wg. Sackgasse) --- Baerwaldstr.	1 10424,9958 10467,10051 10500,10081
 # XXX vorrübergehend keine Einbahnstraße (wg. Umleitung) --- Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
+#: next_check_id ^^^
 Baerwaldstr.	1 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7865,3354 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
@@ -463,10 +465,7 @@ Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 Kastanienallee	1 10838,14962 10881,15047
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
 Spindlersfelder Str.	2 21324,3691 21215,3919 21143,4150 21130,4239 21080,4702 21075,4769 21065,4957
-#: XXX evtl. wird die Einbahnstraßenregelung aufgehoben
-#: osm_watch: way id="25585951" version="9"
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025
-#: last_checked: 2015-05-10
+# REMOVED (wird nicht passieren) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: osm_watch: way id="25585951" version="9" --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-10
 Rathausstr.:	1s:q4 15651,12214 15628,12246 15576,12315 15537,12367
 Alt-Marzahn	1 21112,15396 21048,15424 20967,15458 20796,15559 20903,15545 20988,15505 21051,15464 21112,15396
 #: confirmed_by: srt vvv
@@ -2661,12 +2660,15 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
+#: next_check_id: BAERWALD-2015
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
 #: source_id: IM_023816 vvv
 #: XXX vermutlich bis März 2016 andauernd
 #: last_checked: 2015-05-11 vvv
+#: next_check: 2016-02-01 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
+#: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: XXX ^^^

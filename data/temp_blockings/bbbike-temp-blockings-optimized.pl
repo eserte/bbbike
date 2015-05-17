@@ -3144,39 +3144,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.berliner-frauenlauf.de/event/start-ziel-strecke.html',
-         'data' => 'userdel	2::temp 8055,12186 8119,12414
-userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 6828,12031 6884,12006
-	2::temp 6809,11979 6984,11859
-	2::temp 6778,11742 6980,11790
-	2::temp 6809,11570 6980,11583 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
-	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
-	2::temp 8522,12239 8466,12197
-userdel auto	3 7429,12070 7383,12095 7039,12314
-userdel auto	3 7875,12363 7816,12150 7823,12120
-userdel auto	3 7039,12314 7383,12095 7429,12070
-userdel auto	3 7823,12120 7816,12150 7875,12363
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-',
-         'periodic' => 1,
-         'until' => 1431813599,
-         'from' => 1431715044,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 16. Mai 2015',
-         'id' => 2427,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3891,6 +3859,17 @@ userdel	2::inwork 7451,13504 7630,13584
          'data' => 'userdel	q4::inwork 22145,208 21933,152 21868,139
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Rampe an der Großen Eiswerderbrücke gesperrt, Dauer unbekannt',
+         'from' => undef,
+         'id' => 2709,
+         'data' => '#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8094&options=4
+#: next_check: 2016-03-01
+userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -24151,4 +24151,14 @@ EOF
 userdel	q4::inwork 22145,208 21933,152 21868,139
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rampe an der Großen Eiswerderbrücke gesperrt, Dauer unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8094&options=4
+#: next_check: 2016-03-01
+userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
+EOF
+     },
     );
