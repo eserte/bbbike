@@ -9,6 +9,16 @@
 # 
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
+#: next_check_id: DIESEL-2015 vvv
+#: last_checked: 2015-05-18 vvv
+#: check_frequency: 60d vvv
+Dieselstr., Umfahrung: Feinschotter	Q1 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
+Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
+Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14471,8046
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
 #: temporary ^^^
 ######################################################################
 # 
@@ -797,8 +807,9 @@ Magazinstr.: Kopfsteinpflaster, OK	Q1 11558,12588 11329,12497
 Saarbrücker Str.: Asphalt, etwas brüchig	Q0- 10895,13961 11052,13870 11134,13820 11250,13655
 Heinrich-Roller-Str.: Kopfsteinpflaster	Q2 11435,14023 11607,13928
 Corinthstr.: Kopfsteinpflaster	Q2 14608,10409 14447,10491
-(zum Mergenthalerring): holpriger Sandweg	Q2 14700,8368 14679,8349 14563,8243
-(zum Mergenthalerring): Asphalt	Q0 14439,8050 14419,8112 14563,8243 14422,8407 14469,8455 14560,8528
+(zum Mergenthalerring): holpriger Sandweg	Q2 14700,8368 14688,8355
+(zum Mergenthalerring): Verbundsteinpflaster	Q1 14688,8355 14563,8243
+(zum Mergenthalerring): Asphalt	Q0 14419,8112 14425,8116 14563,8243 14422,8407 14469,8455 14560,8528
 Nordufer Flughafensee: Waldweg, OK	Q1 3108,18083 2801,18126 2775,18160 2226,18228
 Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2226,18228 1549,17718 1270,17566 660,17352 127,17176
 #: by: Thomas Thomas
@@ -1646,8 +1657,9 @@ Jansastr.: Kopfsteinpflaster	Q2 12438,8859 12531,9009
 Ossastr.: Kopfsteinpflaster	Q2 12615,9132 12681,9083
 Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13274,8945 13456,8809
-Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14157,9345
-Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14179,9515
+Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14108,9377 14157,9345
+Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14165,9406 14172,9457
+Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12772,8612 12822,8675 12881,8750 12954,8840 13048,8956
 Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13102,8724 12954,8840
 Laubestr.: Kopfsteinpflaster	Q2 12980,8566 12822,8675
@@ -8726,7 +8738,7 @@ Göhrener Str.: Kopfsteinpflaster, OK	Q1 11514,15041 11505,15065
 Heinrich-Heine-Platz: Asphalt mit leichten Schäden	Q1; 11337,11197 11241,11247
 Wrangelstr.: vor der Schule zweimal Aufpflasterungen, ansonsten Asphalt	Q0- 12731,10547 12531,10676
 Grimmstr. [ehemaliges Urbankrankenhaus]: Asphalt	Q0 11072,9711 11040,9724 11030,9702 10899,9754 10887,9729 11016,9671 11009,9655 11042,9642
-(Dieffenbachstr. - ehemaliges Urbankrankenhaus): Verbundsteinpflaster	Q1 10924,9817 10919,9804 10899,9754
+(Dieffenbachstr. - ehemaliges Urbankrankenhaus): Verbundsteinpflaster	Q1 10926,9821 10919,9804 10899,9754
 (Vorfahrt am Bahnhof Friedrichstr.): Kleinsteinpflaster	Q1- 9171,12758 9303,12718
 Am Sudhaus: Verbundsteinpflaster	Q0- 12134,8172 12282,8204
 Treitschkestr.: Betonplatten	Q0 5062,6295 4997,6331 4971,6345 4854,6413

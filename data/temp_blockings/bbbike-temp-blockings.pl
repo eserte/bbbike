@@ -23531,8 +23531,8 @@ EOF
        text  => 'Mergenthalerring: Tor kann nachts versperrt sein',
        recurring => 1,
        data  => <<EOF,
-	3::night 14563,8243 14419,8112 14439,8050
-	3::night 14439,8050 14419,8112 14563,8243
+	3::night 14563,8243 14425,8116 14419,8112
+	3::night 14419,8112 14425,8116 14563,8243
 EOF
      },
      { from  => 1413093600, # 2014-10-12 08:00

@@ -3588,8 +3588,8 @@ userdel	2::inwork -3197,11554 -3075,11510
          'text' => 'Mergenthalerring: Tor kann nachts versperrt sein',
          'from' => undef,
          'id' => 2643,
-         'data' => '	3::night 14563,8243 14419,8112 14439,8050
-	3::night 14439,8050 14419,8112 14563,8243
+         'data' => '	3::night 14563,8243 14425,8116 14419,8112
+	3::night 14419,8112 14425,8116 14563,8243
 '
        },
        undef,

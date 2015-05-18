@@ -2389,7 +2389,7 @@ Drängelgitter	BNP:2::trailer=5 18018,3276
 #: note: lichte Breite beträgt 90cm
 Schranke, ggfs. auf Gehweg ausweichen	BNP:2::trailer=6 16368,7425
 Drängelgitter	BNP:3::trailer=10 23012,3598
-Tor	BNP:3::trailer=5 14419,8112
+Tor	BNP:3::trailer=5 14425,8116
 Schranke	BNP:0::trailer=3 9920,11074
 #: by: http://www.benno-koch.de/article09575_dumm_gelaufen_schifffahrtsamt_sperrt_teltow-route2 vvv
 Drängelgitter	BNP:5 4258,2693
@@ -2597,6 +2597,16 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX vermutlich werden diese Abschnitte dauerhaft aufgegeben werden
+#: last_checked: 2015-05-18
+#: check_frequency: 90d
+Matthesstr., Beermannstr.: wegen Autobahnbaustelle gesperrt	2::inwork 14108,9377 14157,9345 14165,9406
+# 
+#: next_check_id: DIESEL-2015
+#: last_checked: 2015-05-18
+#: check_frequency: 60d
+Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
+# 
 # REMOVED --- #: XXX vermutlich müssen auch Radfahrer die Umleitung nehmen --- #: source_id: IM_024686 --- #: next_check: 2015-05-29 --- #: priority: #A --- Rummelsburger Landstraße: zwischen Nalepastr. und Poggendorffweg wegen Baustelle gesperrt	1::inwork 17143,8565 17202,8391
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html
@@ -2664,7 +2674,7 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
 #: source_id: IM_023816 vvv
 #: XXX vermutlich bis März 2016 andauernd
-#: last_checked: 2015-05-11 vvv
+#: last_checked: 2015-05-18 (indirekt) vvv
 #: next_check: 2016-02-01 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
