@@ -29,7 +29,7 @@ St¸lerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaﬂnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2015-05-03
+#: last_checked: 2015-05-19
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-05-12
+#: last_checked: 2015-05-19
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -1132,7 +1132,7 @@ Fuﬂg‰ngerbr¸cke ¸ber den Nordhafen in Planung	?::projected -2506,16315 -2510,163
 #: XXX -> strassen_bab-orig, wenn fertig
 #: XXX weitere ƒnderungen: Matthesstr. wird aufgehoben, Teile des Mergenthalerrings wahrscheinlich auch
 #: next_check: 2022-01-01
-BAB100	?::inwork 14270,9710 14186,9546 14147,9383 14160,9132 14307,8805 14270,8379 14421,8032 14451,7774 14356,7365 14219,6838 14180,6755 14106,6663
+BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14307,8805 14270,8379 14421,8032 14451,7774 14356,7365 14219,6838 14180,6755 14106,6663
 # 
 #: last_checked: 2014-05-10
 #: check_frequency: 100d
@@ -1203,6 +1203,8 @@ Planstraﬂen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
+# 
+Prenzlauer Allee: wo ist die Radwegbenutzungspflicht aufgehoben?	? 11250,13655 11389,13887 11435,14023 11468,14121 11476,14142 11506,14230 11582,14448 11642,14625 11662,14695 11681,14759 11709,14856 11776,15060 11801,15132 11828,15210 11852,15281 11860,15309 11877,15366 11891,15413 11905,15462 11913,15490 11941,15586 11967,15700 11995,15827 12030,15968 12075,16144 12090,16199
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6273 (Empfehlung)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036102169813/102169813/00119753/53-Anlagen/02/AnlageBE.pdf (Karte)
@@ -1523,11 +1525,12 @@ Am Gutspark: neue geplante Privatstraﬂe, Lage, Qualit‰t?	?::inwork 15747,12880 1
 # 
 # REMOVED (abgelehnt, siehe Schlussbericht) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458 --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036560602837/560602837/00092292/92-Anlagen/04/B0359SB.pdf (Schlussbericht) --- #: last_checked: 2013-06-22 --- #: check_frequency: 90d --- Brandenburgplatz: wird hier eine Fuﬂg‰ngerampel eingerichtet?	? 23363,5714 23309,5704
 # 
+#: next_check_id: GREIFENHAGENER-2015
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656
 #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/helmholtzplatz.php
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/pr__sentation_sanierungsgebiet_helmholtzplatz.pdf?start&ts=1399614747&file=pr__sentation_sanierungsgebiet_helmholtzplatz.pdf
-#: last_checked: 2015-02-24
-#: check_frequency: 60d
+#: last_checked: 2015-05-19
+#: check_frequency: 30d
 Greifenhagener Str.: hier wird eine Fuﬂg‰ngerzone entstehen sowie asphaltiert werden; auﬂerdem wird es eine Einbahnstraﬂenregelung f¸r Autofahrer geben	? 11123,15851 11150,15908
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385

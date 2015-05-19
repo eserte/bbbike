@@ -3188,7 +3188,16 @@ userdel	2::temp 19976,6087 20064,6290 20106,6357
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5606.html',
+         'until' => 1432454400,
+         'text' => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, von 23.05.2015, 18:00 Uhr bis 24.05.2015, 10:00 Uhr',
+         'from' => 1432310400,
+         'id' => 2448,
+         'data' => 'userdel	2::inwork 16201,24354 16156,24284 16123,24232
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3868,6 +3877,26 @@ userdel	2::inwork 7451,13504 7630,13584
          'data' => '#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8094&options=4
 #: next_check: 2016-03-01
 userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'Treptower Park: einige Wege im nördlichen Teil des Parks werden instand gesetzt und können gesperrt sein',
+         'from' => undef,
+         'id' => 2710,
+         'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
+#: last_checked: 2015-05-19 vvv
+#: check_frequency: 7d vvv
+userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
+userdel	2::inwork 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
+userdel	2::inwork 14443,9731 14361,9772
+userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 ',
          'type' => 'gesperrt'
        }
