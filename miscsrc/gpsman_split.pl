@@ -14,18 +14,21 @@
 
 use strict;
 use Getopt::Long;
+use File::Basename qw(basename);
 use File::Path;
 
 my $do;
 my $do_mark_as_inexact;
 my $do_mark_with_question;
 my $do_split_ampelschaltung;
+my $do_write_empty;
 my $destdir = "/tmp/gpsmansplit";
 
 if (!GetOptions("bydate" => sub { $do = "by_date" },
 		"markasinexact!" => \$do_mark_as_inexact,
 		"markwithquestion!" => \$do_mark_with_question,
 		"splitampelschaltung!" => \$do_split_ampelschaltung,
+		"writeempty!" => \$do_write_empty,
 		"destdir=s" => \$destdir,
 	       )) {
     usage();
@@ -53,6 +56,7 @@ if ($do eq 'by_date') {
 	my $header;
 	my $collection_header;
 	my $last_date;
+	my $seen_normal_wpts;
 	open my $fh, '<', $file
 	    or die "Can't open $file: $!";
 	while(<$fh>) {
@@ -83,7 +87,13 @@ if ($do eq 'by_date') {
 			    $y = 2000+$y;
 			}
 			$m = monthabbrev_number($m);
-			my $dir = ($do_split_ampelschaltung && m{symbol=buoy_white_(red|green)}) ? $destdir_ampelschaltung : $destdir;
+			my $dir;
+			if ($do_split_ampelschaltung && m{symbol=buoy_white_(red|green)}) {
+			    $dir = $destdir_ampelschaltung;
+			} else {
+			    $dir = $destdir;
+			    $seen_normal_wpts = 1;
+			}
 			my $f = sprintf("$dir/%04d%02d%02d$ext", $y, $m, $d);
 			close $ofh if $ofh && defined fileno($ofh);
 			if ($file_seen{$f}) {
@@ -122,6 +132,14 @@ if ($do eq 'by_date') {
 	    }
 	}
 	close $fh;
+	if ($do_write_empty && !$seen_normal_wpts) {
+	    my $ofile = "$destdir/" . basename($file);
+	    warn "Create empty file $ofile...\n";
+	    open my $emptyfh, '>', $ofile
+		or die "Can't create $ofile: $!";
+	    close $emptyfh
+		or die $!;
+	}
     }
     close $ofh if $ofh && defined fileno($ofh);
     close $unhandled_ofh if $unhandled_ofh && defined fileno($unhandled_ofh);
