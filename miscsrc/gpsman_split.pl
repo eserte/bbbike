@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman_split.pl,v 1.9 2008/08/08 20:01:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2010,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -32,7 +31,10 @@ if (!GetOptions("bydate" => sub { $do = "by_date" },
     usage();
 }
 
-my $file = shift || usage("gpsman file missing");
+my @files = @ARGV;
+if (!@files) {
+    usage("gpsman file(s) missing");
+}
 my $ext = ".UNKNOWN";
 
 mkpath($destdir, 1, 0777);
@@ -44,78 +46,85 @@ if ($do_split_ampelschaltung) {
 
 $do = "" if !defined $do;
 if ($do eq 'by_date') {
-    my $stage = "header";
-    my $header;
-    my $collection_header;
-    my $last_date;
     my %file_seen;
-    open(F, $file) or die $!;
-    while(<F>) {
-	if ($stage eq 'header') {
-	    if (/^!T:\t/) {
-		$collection_header = $_;
-		$stage = "track";
-		$ext = ".trk";
-	    } elsif (/^!W:$/) {
-		$collection_header = $_;
-		$stage = 'wpt';
-		$ext = ".wpt";
-	    } elsif ($do_mark_as_inexact && /^$/) {
-		$header .= "\n% whole track marked as inexact\n\n";
-	    } elsif ($do_mark_with_question && /^$/) {
-		$header .= "\n% whole track marked with question mark\n\n";
+    my($ofh, $unhandled_ofh);
+    for my $file (@files) {
+	my $stage = "header";
+	my $header;
+	my $collection_header;
+	my $last_date;
+	open my $fh, '<', $file
+	    or die "Can't open $file: $!";
+	while(<$fh>) {
+	    if ($stage eq 'header') {
+		if (/^!T:\t/) {
+		    $collection_header = $_;
+		    $stage = "track";
+		    $ext = ".trk";
+		} elsif (/^!W:$/) {
+		    $collection_header = $_;
+		    $stage = 'wpt';
+		    $ext = ".wpt";
+		} elsif ($do_mark_as_inexact && /^$/) {
+		    $header .= "\n% whole track marked as inexact\n\n";
+		} elsif ($do_mark_with_question && /^$/) {
+		    $header .= "\n% whole track marked with question mark\n\n";
+		} else {
+		    $header .= $_;
+		}
 	    } else {
-		$header .= $_;
-	    }
-	} else {
-	    if (($stage eq 'track' && /^\t(\d+-[^-]+-\d+)\s/) ||
-		($stage eq 'wpt' && /^[^\t]+\t(\d+-[^-]+-\d+)\s/)
-	       ) {
-		my $date = $1;
-		if (!defined $last_date || $last_date ne $date) {
-		    my($d,$m,$y) = $date =~ /(\d+)-([^-]+)-(\d+)/;
-		    if (length($y) == 2) {
-			$y = 2000+$y;
-		    }
-		    $m = monthabbrev_number($m);
-		    my $dir = ($do_split_ampelschaltung && m{symbol=buoy_white_(red|green)}) ? $destdir_ampelschaltung : $destdir;
-		    my $f = sprintf("$dir/%04d%02d%02d$ext", $y, $m, $d);
-		    close OUT if defined fileno(OUT);
-		    if ($file_seen{$f}) {
-			open(OUT, ">>$f") or die "Can't append to $f: $!";
-		    } else {
-			if (-e $f) {
-			    warn "Overwrite existing file $f...\n";
-			} else {
-			    warn "Write to $f...\n";
+		if (($stage eq 'track' && /^\t(\d+-[^-]+-\d+)\s/) ||
+		    ($stage eq 'wpt' && /^[^\t]+\t(\d+-[^-]+-\d+)\s/)
+		   ) {
+		    my $date = $1;
+		    if (!defined $last_date || $last_date ne $date) {
+			my($d,$m,$y) = $date =~ /(\d+)-([^-]+)-(\d+)/;
+			if (length($y) == 2) {
+			    $y = 2000+$y;
 			}
-			open(OUT, ">$f") or die "Can't write $f: $!";
-			print OUT $header;
-			print OUT $collection_header;
-			$file_seen{$f}++;
+			$m = monthabbrev_number($m);
+			my $dir = ($do_split_ampelschaltung && m{symbol=buoy_white_(red|green)}) ? $destdir_ampelschaltung : $destdir;
+			my $f = sprintf("$dir/%04d%02d%02d$ext", $y, $m, $d);
+			close $ofh if $ofh && defined fileno($ofh);
+			if ($file_seen{$f}) {
+			    open $ofh, '>>', $f
+				or die "Can't append to $f: $!";
+			} else {
+			    if (-e $f) {
+				warn "Overwrite existing file $f...\n";
+			    } else {
+				warn "Write to $f...\n";
+			    }
+			    open $ofh, '>', $f
+				or die "Can't write $f: $!";
+			    print $ofh $header;
+			    print $ofh $collection_header;
+			    $file_seen{$f}++;
+			}
 		    }
+		    $_ = mark_as_inexact($_) if $do_mark_as_inexact && $stage eq 'track';
+		    $_ = mark_with_question($_) if $do_mark_with_question && $stage eq 'track';
+		    print $ofh $_;
+		} elsif ($_ ne "\n" && $stage eq 'wpt') {
+		    if (!defined $unhandled_ofh && !defined fileno($unhandled_ofh)) {
+			my $f = "$destdir/unhandled$ext";
+			warn "Found waypoints without dates, writing to $f...\n";
+			open $unhandled_ofh, '>', $f
+			    or die "Can't write $f: $!";
+			print $unhandled_ofh $header;
+			print $unhandled_ofh $collection_header;
+		    }
+		    print $unhandled_ofh $_;
+		} else {
+		    # everything else: passthrough
+		    print $ofh $_;
 		}
-		$_ = mark_as_inexact($_) if $do_mark_as_inexact && $stage eq 'track';
-		$_ = mark_with_question($_) if $do_mark_with_question && $stage eq 'track';
-		print OUT $_;
-	    } elsif ($_ ne "\n" && $stage eq 'wpt') {
-		if (!defined fileno(UNHANDLED_OUT)) {
-		    my $f = "$destdir/unhandled$ext";
-		    warn "Found waypoints without dates, writing to $f...\n";
-		    open UNHANDLED_OUT, ">$f" or die "Can't write $f: $!";
-		    print UNHANDLED_OUT $header;
-		    print UNHANDLED_OUT $collection_header;
-		}
-		print UNHANDLED_OUT $_;
-	    } else {
-		# everything else: passthrough
-		print OUT $_;
 	    }
 	}
+	close $fh;
     }
-    close F;
-    close OUT if defined fileno(OUT);
-    close UNHANDLED_OUT if defined fileno(UNHANDLED_OUT);
+    close $ofh if $ofh && defined fileno($ofh);
+    close $unhandled_ofh if $unhandled_ofh && defined fileno($unhandled_ofh);
 } else {
     usage("The -bydate option is mandatory for now");
 }
