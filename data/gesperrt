@@ -1653,10 +1653,10 @@ Greifswalder Str. -> Pasteurstr.: Mittelstreifen mit Straßenbahn	3::igndisp 1222
 Pasteurstr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12335,14246 12188,14350 12177,14335
 Greifswalder Str. -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12188,14350 12228,14404 11949,14557
 Jablonskistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11949,14557 12228,14404 12266,14460
-Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12228,14404 12266,14460 11977,14607
+Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12228,14404 12266,14460 11982,14614
 Greifswalder Str. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12317,14535 12266,14460 12556,14230
-Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11977,14607 12266,14460 12317,14535
-Chodowieckistr. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11977,14607 12266,14460 12556,14230
+Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11982,14614 12266,14460 12317,14535
+Chodowieckistr. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11982,14614 12266,14460 12556,14230
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12422,14692 12473,14763 12528,14845 12584,14928
 Greifswalder Str. -> Olga-Benario-Prestes-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12528,14845 12473,14763 12628,14650
 Olga-Benario-Prestes-Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12628,14650 12473,14763 12422,14692
@@ -1673,18 +1673,18 @@ Volkspark Anton Saefkow -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12709,15112 12737,15154 12870,15342
 Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12737,15154 12693,15225
 Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12693,15225 12737,15154 12870,15342
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 11642,14625 11662,14695 11681,14759
-Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 11681,14759 11662,14695 11949,14557
-Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11949,14557 11662,14695 11642,14625
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 11633,14631 11655,14697 11682,14777
+Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 11682,14777 11655,14697 11949,14557
+Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11949,14557 11655,14697 11633,14631
 Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3nocross::ignrte 11801,15132 11828,15210 11852,15281
 Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3::igndisp 11801,15132 11828,15210 11651,15273
 Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3::igndisp 11651,15273 11828,15210 11852,15281
 Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3nocross::ignrte 11776,15060 11801,15132 11828,15210
 Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3::igndisp 11776,15060 11801,15132 11631,15192
 Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3::igndisp 11631,15192 11801,15132 11828,15210
-Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross::ignrte 11709,14856 11681,14759 11662,14695
-Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11709,14856 11681,14759 11977,14607
-Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11977,14607 11681,14759 11662,14695
+Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross::ignrte 11709,14856 11682,14777 11655,14697
+Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11709,14856 11682,14777 11982,14614
+Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3::igndisp 11982,14614 11682,14777 11655,14697
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12075,16144 12030,15968 11995,15827
 Kuglerstr. -> Prenzlauer Allee [Wohngebiet]: Mittelstreifen mit Straßenbahn	3::igndisp 11961,16002 12030,15968 12154,15902
 Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3::igndisp 11961,16002 12030,15968 12075,16144
@@ -1696,9 +1696,9 @@ Küselstr. -> Zelterstr.: Straßenbahntrasse	3::igndisp 12058,15621 11967,15700 11
 Küselstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 12058,15621 11967,15700 11941,15586
 Prenzlauer Allee -> Zelterstr.: Straßenbahntrasse	3::igndisp 11941,15586 11967,15700 11852,15765
 Prenzlauer Allee -> Küselstr.: Straßenbahntrasse	3::igndisp 11995,15827 11967,15700 12058,15621
-Straßenbahntrasse	3nocross::ignrte 11435,14023 11468,14121 11476,14142
-Prenzlauer Allee -> Raabestr.: Straßenbahntrasse	3::igndisp 11476,14142 11468,14121 11657,14018
-Raabestr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11657,14018 11468,14121 11435,14023
+Straßenbahntrasse	3nocross::ignrte 11435,14023 11465,14122 11471,14143
+Prenzlauer Allee -> Raabestr.: Straßenbahntrasse	3::igndisp 11471,14143 11465,14122 11657,14018
+Raabestr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11657,14018 11465,14122 11435,14023
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11709,14856 11609,14881 11535,14900
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11709,14856 11609,14881 11535,14688
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11535,14688 11609,14881 11535,14900

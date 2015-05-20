@@ -100,10 +100,10 @@ Mahlower Str.	1 11776,8253 11915,8279
 Essener Str.	1 5889,13032 5993,13064 6114,13095 6183,13083
 Belforter Str. - Heinrich-Roller-Str.	3 11299,14112 11435,14023 11607,13928
 Heinrich-Roller-Str. - Belforter Str.	3 11607,13928 11435,14023 11299,14112
-Belforter Str. - Prenzlauer Allee	3 11299,14112 11435,14023 11468,14121 11476,14142 11506,14230
-Prenzlauer Allee - Belforter Str.	3 11389,13887 11435,14023 11299,14112
-Prenzlauer Allee - Heinrich-Roller-Str.	3 11506,14230 11476,14142 11468,14121 11435,14023 11607,13928
-Heinrich-Roller-Str. - Prenzlauer Allee	3 11607,13928 11435,14023 11389,13887
+Belforter Str. - Prenzlauer Allee	3 11299,14112 11435,14023 11465,14122 11471,14143 11498,14234
+Prenzlauer Allee - Belforter Str.	3 11378,13891 11435,14023 11299,14112
+Prenzlauer Allee - Heinrich-Roller-Str.	3 11498,14234 11471,14143 11465,14122 11435,14023 11607,13928
+Heinrich-Roller-Str. - Prenzlauer Allee	3 11607,13928 11435,14023 11378,13891
 Allerstr.	1 11879,7720 12055,7751
 Hiddenseer Str.	1 11651,15273 11828,15210
 Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
@@ -133,13 +133,13 @@ Roennebergstr.	1 5533,6753 5357,6932
 Matternstr.	1 13798,13003 13579,12904
 Ebelingstr.	1 13707,13206 13610,13169 13487,13115
 John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12422,14692 12403,14663 12371,14615 12317,14535
-Prenzlauer Allee	3nocross::ignrte 11828,15210 11801,15132 11776,15060 11709,14856
+Prenzlauer Allee	3nocross::ignrte 11828,15210 11801,15132 11776,15060 11740,14950 11709,14856
 Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11801,15132 11631,15192
-Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11709,14856 11776,15060 11609,15114
+Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11740,14950 11776,15060 11609,15114
 Prenzlauer Allee -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11801,15132 11776,15060 11873,15010
 Raumerstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11609,15114 11776,15060 11801,15132
 Raumerstr. -> Fröbelstr.: Prenzlauer Allee	3::igndisp 11609,15114 11776,15060 11873,15010
-Fröbelstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11873,15010 11776,15060 11709,14856
+Fröbelstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11873,15010 11776,15060 11740,14950
 Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3::igndisp 11873,15010 11776,15060 11609,15114
 Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12561,35 -12582,127 -12623,308
 Stellmacherweg	1 13129,2999 13453,2930
@@ -152,13 +152,13 @@ Lützowufer	1 6873,11011 6742,11099 6626,11178 6582,11202
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
 Kirchhofstr.	1 13188,7590 13117,7471 13029,7353
 Siegfriedstr.	1 12664,7013 12810,7047 12843,7093 12872,7134
-Prenzlauer Allee/Sredzkistr.	3nocross::ignrte 11662,14695 11642,14625 11582,14448
-Prenzlauer Allee -> Sredzkistr.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11582,14448 11642,14625 11535,14688
-Prenzlauer Allee -> Christburger Str.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11662,14695 11642,14625 11912,14486
-Sredzkistr. -> Prenzlauer Allee: Prenzlauer Allee/Sredzkistr.	3::igndisp 11535,14688 11642,14625 11662,14695
-Sredzkistr. -> Christburger Str.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11535,14688 11642,14625 11912,14486
-Christburger Str. -> Prenzlauer Allee: Prenzlauer Allee/Sredzkistr.	3::igndisp 11912,14486 11642,14625 11582,14448
-Christburger Str. -> Sredzkistr.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11912,14486 11642,14625 11535,14688
+Prenzlauer Allee/Sredzkistr.	3nocross::ignrte 11655,14697 11633,14631 11572,14452
+Prenzlauer Allee -> Sredzkistr.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11572,14452 11633,14631 11535,14688
+Prenzlauer Allee -> Christburger Str.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11655,14697 11633,14631 11912,14486
+Sredzkistr. -> Prenzlauer Allee: Prenzlauer Allee/Sredzkistr.	3::igndisp 11535,14688 11633,14631 11655,14697
+Sredzkistr. -> Christburger Str.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11535,14688 11633,14631 11912,14486
+Christburger Str. -> Prenzlauer Allee: Prenzlauer Allee/Sredzkistr.	3::igndisp 11912,14486 11633,14631 11572,14452
+Christburger Str. -> Sredzkistr.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11912,14486 11633,14631 11535,14688
 Gärtnerstr.	1 14211,11552 14247,11681 14272,11775
 Wismarplatz	1 14395,11753 14416,11815
 Wismarplatz	3 14461,11738 14416,11815 14395,11753
@@ -300,13 +300,13 @@ Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,
 Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12608,14070
 Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12608,14070 12729,14227 12621,14313
 Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12608,14070 12729,14227 12782,14300
-Straßenbahntrasse	3nocross::ignrte 11662,14695 11642,14625 11582,14448
-Prenzlauer Allee -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11582,14448 11642,14625 11535,14688
-Prenzlauer Allee -> Christburger Str.: Straßenbahntrasse	3::igndisp 11662,14695 11642,14625 11912,14486
-Sredzkistr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11535,14688 11642,14625 11662,14695
-Sredzkistr. -> Christburger Str.: Straßenbahntrasse	3::igndisp 11535,14688 11642,14625 11912,14486
-Christburger Str. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11912,14486 11642,14625 11582,14448
-Christburger Str. -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11912,14486 11642,14625 11535,14688
+Straßenbahntrasse	3nocross::ignrte 11655,14697 11633,14631 11572,14452
+Prenzlauer Allee -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11572,14452 11633,14631 11535,14688
+Prenzlauer Allee -> Christburger Str.: Straßenbahntrasse	3::igndisp 11655,14697 11633,14631 11912,14486
+Sredzkistr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11535,14688 11633,14631 11655,14697
+Sredzkistr. -> Christburger Str.: Straßenbahntrasse	3::igndisp 11535,14688 11633,14631 11912,14486
+Christburger Str. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11912,14486 11633,14631 11572,14452
+Christburger Str. -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11912,14486 11633,14631 11535,14688
 Dankwartstr.	1 17210,12486 17184,12288
 Ortliebstr.	1 17087,12501 17210,12486
 Buttmannstr.	1 8659,16327 8481,16136
@@ -1719,4 +1719,4 @@ Friedrichstr. -> Am Weidendamm	3 9279,12953 9286,12886 9323,12895
 Murtzaner Ring	1 19593,14452 19593,14472
 Invalidenstr. - Hessische Str.	3 8842,13798 8690,13723 8775,13606
 Waldeyerstr.	1 15054,12323 14997,12243
-Prenzlauer Allee -> Saarbrücker Str.	3 11160,13492 11250,13655 11134,13820
+Prenzlauer Allee -> Saarbrücker Str.	3 11160,13492 11251,13667 11134,13820

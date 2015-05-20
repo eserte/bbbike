@@ -3104,7 +3104,7 @@ EOF
        text  => 'Prenzlauer Berg: Richtung Prenzlauer Allee gesperrt (Kopfsteinpflaster wird durch Asphalt ersetzt)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 11706,13635 11545,13690 11250,13655
+userdel	1 11706,13635 11545,13690 11282,13661 11251,13667
 EOF
      },
      { from  => undef, # 
@@ -18873,7 +18873,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016795',
        data  => <<EOF,
-userdel	q4::inwork; 11250,13655 11545,13690
+userdel	q4::inwork; 11251,13667 11282,13661 11545,13690
 EOF
      },
      { from  => 1294922580, # 2011-01-13 13:43
@@ -19022,7 +19022,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016995',
        data  => <<EOF,
-userdel	q4::inwork 11545,13690 11250,13655
+userdel	q4::inwork 11545,13690 11282,13661 11251,13667
 EOF
      },
      { from  => 1301342328, # 2011-03-28 21:58
@@ -20654,7 +20654,7 @@ EOF
        text  => 'Christburger Str.: Fahrbahn an der Prenzlauer Allee gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q3::inwork 11912,14486 11642,14625
+userdel	q3::inwork 11912,14486 11633,14631
 EOF
      },
      { from  => 1342994400, # 2012-07-23 00:00
