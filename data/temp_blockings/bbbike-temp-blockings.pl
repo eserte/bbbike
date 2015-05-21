@@ -17954,15 +17954,15 @@ EOF
 userdel	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => $isodate2epoch->("2014-06-20 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-06-21 23:59:59"),
+     { from  => $isodate2epoch->("2015-06-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-06-27 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 6]],
        source_id => 'http://www.csd-berlin.de/',
-       text  => 'CSD am 21.6.2014',
+       text  => 'CSD am 27.6.2015',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://csd-berlin.de/blog/2014/05/22/csd-parade-2014/
+#: by: http://www.visitberlin.de/de/event/27-06-2015/37-csd-berlin-christopher-street-day-2015
 userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6918,10854 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
 userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657
 userdel	2::temp 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6268,10588 6216,10614 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
@@ -24178,6 +24178,15 @@ userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => 1432137600, # 2015-05-20 18:00
+       until => 1432612800, # 2015-05-26 06:00
+       text  => 'Nostizstr.: Veranstalung, Straße zwischen Gneisenaustr. und Baruther Str. gesperrt, 21.05.2015 18:00 Uhr bis 26.05.2015 06:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'IM_025012',
+       data  => <<EOF,
+userdel	2::temp 9588,9827 9552,9602
 EOF
      },
     );
