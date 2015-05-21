@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2008,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2008,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1336,7 +1336,7 @@ sub BBBikeGPS::draw_track_graph {
 		my $whole_what = $whole_what{$type};
 		my $whole = $_->$whole_what();
 		my $val = $_->$type();
-		my $x = $c_x{$type} + ($c_w{$type}/$max_x{$type})*$whole;
+		my $x = defined $whole ? $c_x{$type} + ($c_w{$type}/$max_x{$type})*$whole : undef;
 
 		if (defined $last_x{$type}) {
 		    if (defined $val) {
@@ -1390,10 +1390,10 @@ sub BBBikeGPS::draw_track_graph {
 		my $whole = $add_wpt_prop_ref->[$inx+$smooth_i/2]->$whole_what();
 		if ($count) {
 		    my $val = $sum/$count;
-		    my $x = $c_x{$type} + ($c_w{$type}/$max_x{$type})*$whole;
+		    my $x = defined $whole? $c_x{$type} + ($c_w{$type}/$max_x{$type})*$whole : undef;
 		    if (defined $last_x) {
 			my $y = $def_c_top + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
-			if (defined $last) {
+			if (defined $last && defined $x) {
 			    $graph_c{$type}->createLine($last_x, $last, $x, $y,
 							-fill => 'red',
 							-state => "disabled",
