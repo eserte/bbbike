@@ -1199,6 +1199,7 @@ Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -1
 ###################################################################### 
 # elsewhere in Brandenburg
 #: by: rjoop
+Poststr. (Hennigsdorf)	1 -3495,25739 -3438,25572
 B1/B5	2 30678,10923 29752,10895 29194,10899 27817,10875
 Hanns-Eisler-Weg	1 68794,73965 68643,73843 68594,73737 68608,73622 68694,73474
 B166	1 63418,78608 63579,78548 63634,78433
@@ -2053,6 +2054,9 @@ tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
 tragen (Treppe)	0:30 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
+#: note: Blechrampe existiert
+tragen (6 Stufen)	0:15 4608,63927
+Treppe	0:40 1888,42795
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -3408,7 +3412,7 @@ Liebigstr.	1 -1067,38879 -1032,38792
 Lindenring	1 -770,38215 -903,38101 -950,38114 -967,38143 -973,38189 -964,38223 -939,38262 -878,38279 -856,38306
 Lehnitzstr.	1 -1153,38610 -1253,38715
 Luisenweg	1 -1907,39195 -1912,39154 -1943,38959
-Mannheimer Str.	1 -235,38435 -51,38476
+Mannheimer Str.	1 -235,38435 -53,38476
 Melniker Str.	1 -1403,37062 -1396,37162 -1457,37415
 Mittelstr.	1 -931,38614 -937,38631 -953,38681 -996,38804
 # "Blockumfahrung" nördl. und westl. Straße
@@ -3601,7 +3605,7 @@ Engstelle	BNP:20 -2014,39128
 # Waldallee
 Pollerreihe	BNP:0 -5923,37934
 # (Wanderweg am Lehnitzsee): Nähe vorderer Karpfenteich
-Drängelgitter	BNP:10 565,38885
+Drängelgitter	BNP:10 517,38890
 # (Wanderweg am Lehnitzsee): an der B273
 Drängelgitter	BNP:5 1289,39862
 # westliches Havelufer am Schloss

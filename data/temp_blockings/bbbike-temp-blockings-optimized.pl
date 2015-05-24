@@ -3264,21 +3264,30 @@ userdel	2::temp 19976,6087 20064,6290 20106,6357
        undef,
        undef,
        undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5606.html',
-         'until' => 1432454400,
-         'text' => 'Karower Chaussee/Bucher Chaussee: Baustelle in Höhe Unterführung BAB 10, Straße vollständig gesperrt, auch für Radfahrer und Fußgänger, von 23.05.2015, 18:00 Uhr bis 24.05.2015, 10:00 Uhr',
-         'from' => 1432310400,
-         'id' => 2448,
-         'data' => 'userdel	2::inwork 16201,24354 16156,24284 16123,24232
+         'data' => 'userdel	2::temp 12819,4780 12836,4649
 ',
-         'type' => 'gesperrt'
+         'periodic' => 1,
+         'until' => 1436133599,
+         'from' => 1435874400,
+         'text' => 'Britzer Rosenfest an der Britzer Dorfkirche, Backbergstr. ist gesperrt, 4. und 5. Juli 2015',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              22,
+                              'months',
+                              6
+                            ]
+                          ],
+         'type' => 'gesperrt',
+         'id' => 2453
        },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => undef,
          'recurring' => 1,

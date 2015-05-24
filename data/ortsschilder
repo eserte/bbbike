@@ -26,11 +26,12 @@ Eickstedt	OS 51862,100638
 Wallmow	OS 54800,105519
 Wallmow	OS 55375,105118
 Wallmow	OS 54729,104731
-Wallmow	OS 54624,105031
-Wendtshof|(Wallmow)	OS 53498,106811
-Wendtshof|(Wallmow)	OS 53774,106460
+Wallmow	OS 54611,105049
+Wendtshof|(Wallmow)	OS 53552,106812
+Wendtshof|(Wallmow)	OS 53769,106453
 Cremzow	OS 51202,106792
 Cremzow	OS 51318,106193
+Cremzow	OS 51560,106609
 Carmzow	OS 53201,109871
 Carmzow	OS 52629,110092
 Hedwigshof	OS 54144,109576
@@ -107,9 +108,11 @@ Strausberg	OS 43266,21790
 Nechlin	OS 41497,116057
 Nechlin	OS 41017,116397
 Damerow	OS 47264,115709
-Schönfeld|(Uckermark)	OS 47825,113384
-Schönfeld|(Uckermark)	OS 48132,112493
-Klockow	OS 49445,110399
+Damerow	OS 46721,115763
+Damerow	OS 46911,115663
+Schönfeld|(Uckermark)	OS 47835,113374
+Schönfeld|(Uckermark)	OS 48139,112482
+Klockow	OS 49446,110392
 Klockow	OS 49412,111409
 Dauerthal	OS 46963,107308
 Schenkenberg|(bei Prenzlau)	OS 45784,107451
@@ -225,8 +228,6 @@ Brüsenwalde	OS 13427,93659
 Lychen	OS 1090,89570
 Fürstenberg	OS -8242,87530
 Haßleben	OS 28340,90006
-Mittenwalde|b. Templin	OS 26577,87335
-Mittenwalde|b. Templin	OS 26359,86387
 Krohnhorst	OS 25925,83573
 Henkinshain	OHT 25786,82784
 Henkinshain	OHT 25695,82276
@@ -239,10 +240,10 @@ Seelübbe	OS 42843,96821
 Seelübbe	OS 43044,96539
 Seelübbe	OS 42088,95894
 Kietz Modderort	OHT 42089,95920
-Seehausen|am Oberuckersee	OS 41526,91376
-Seehausen|am Oberuckersee	OS 41368,91769
-Seehausen|am Oberuckersee	OS 41200,91922
-Seehausen|am Oberuckersee	OS 40865,90202
+Seehausen|(Uckermark)	OS 41526,91376
+Seehausen|(Uckermark)	OS 41368,91769
+Seehausen|(Uckermark)	OS 41200,91922
+Seehausen|(Uckermark)	OS 40865,90202
 Blankenburg|(Uckermark)	OS 44471,91170
 Blankenburg|(Uckermark)	OS 45025,91296
 Blankenburg|(Uckermark)	OS 44650,90587
@@ -506,8 +507,9 @@ Hammer|b. Liebenwalde	OS 12615,52952
 Hammer|b. Liebenwalde	OS 11553,52195
 Liebenwalde	OS 10103,52074
 Liebenwalde	OS 9339,50139
+Liebenwalde	OS 8022,52423
 Kreuzbruch	OS 9949,47382
-Kreuzbruch	OS 9825,48275
+Kreuzbruch	OS 9825,48263
 Zehlendorf	OS 9343,42807
 Zehlendorf	OS 8800,41346
 Wensickendorf	OS 7946,38987
@@ -754,10 +756,16 @@ Buchholz|bei Gerswalde	OS 31661,89289
 Sachsenhausen	OS -476,40852
 Mittenwalde Ortsteil Blankensee	OS 29344,87921
 Mittenwalde Ortsteil Blankensee	OS 27967,87384
-Mittenwalde|b. Templin	OS 26799,86909
-Mittenwalde|b. Templin	OS 24969,87287
+Mittenwalde|(Uckermark)	OS 26799,86909
+Mittenwalde|(Uckermark)	OS 24969,87287
+Mittenwalde|(Uckermark)	OS 26577,87335
+Mittenwalde|(Uckermark)	OS 26359,86387
+Petznick	OS 24293,84405
+Petznick	OS 23477,84395
 Herzfelde|bei Klosterwalde	OS 22917,87978
 Herzfelde|bei Klosterwalde	OS 21889,87865
+Kreuzkrug	OS 22243,83796
+Kreuzkrug	OS 21913,83553
 Klosterwalde	OS 19681,85491
 Klosterwalde	OS 19533,85103
 Birkenstein	OS 26904,13065
@@ -881,3 +889,29 @@ Seefeld-Löhme	OS 28921,23343
 Bahnhof Schönermark	OHT 51668,78605
 Falkensee	OS -7168,16258
 Schönwalde-Siedlung	OS -6788,20819
+Immenheim	OHT 27600,88602
+Immenheim	OHT 27755,88677
+Templin	OS 17455,80199
+Templin	OS 13789,77521
+Hindenburg	OS 13383,77168
+Hindenburg	OS 12603,76365
+Hammelspring	OS 11536,74562
+Hammelspring	OS 10218,73220
+Alte Försterei	OHT 9760,72696
+Alte Försterei	OHT 9647,72570
+Vogelsang|(Gransee)	OS 8009,70282
+Vogelsang|(Gransee)	OS 7871,69412
+Zehdenick	OS 5463,65823
+Bernöwe	OS 5415,45571
+Bernöwe	OS 4945,45163
+Oranienburg	OS 38,37287
+Lehnitz	OS 38,37287
+Lehnitz	OS 403,36443
+Borgsdorf	OS -251,33656
+Borgsdorf	OS -1053,32884
+Velten	OS -4027,31593
+Velten	OS -3804,28910
+Hennigsdorf	OS -3524,27869
+Nieden	OS 43214,115717
+Nieden	OS 43814,115623
+Kleptow	OS 49363,107985

@@ -1165,7 +1165,7 @@ EOF
        text  => 'B 109; (Templin-Zehdenick); Bahnübergang südwestl.Ortsausg.Hammelspring Gleisbauarbeiten Vollsperrung 22.10.2004-27.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10148,73146 8656,71489
+userdel	2 10148,73146 9760,72696 9647,72570 9586,72496 8883,71868
 EOF
      },
      { from  => 1098568800, # 2004-10-24 00:00
@@ -3176,7 +3176,7 @@ EOF
        text  => 'B 109; (Zehdenick-Templin); zw. Hammelspring und Hindenburg Straßen-, Durchlass- u.Radweg. Vollsperrung 17.10.2005-25.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 12311,76014 11771,74993
+userdel	2 12258,75931 11766,74954
 EOF
      },
      { from  => 1129705762, # 2005-10-19 09:09
@@ -6058,7 +6058,7 @@ EOF
        text  => 'B 109 C.-Zetkin-Straße OL Zehdenick, zw. Liebknechtstr. u. Falkenthaler Ch. Kanal-/Straßenbau halbseitig gesperrt; Einbahnstraße 02.10.2006-31.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 4478,63369 4801,63458 4948,63424
+userdel	q4::inwork 4478,63369 4702,63443 4801,63458 4948,63424
 EOF
      },
      { from  => 1159999200, # 2006-10-05 00:00
@@ -8606,7 +8606,7 @@ EOF
        text  => 'L 256 B109 (Pasewalk)-B104 (Strasburg) Bahnübergang Nechlin Gleisbauarbeiten Vollsperrung 08.06.2007-08.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 42222,115929 42250,115925 42905,115846
+userdel	2::inwork 42222,115929 42250,115925 42457,115900 42844,115851
 EOF
      },
      { from  => 1181426400, # 2007-06-10 00:00
@@ -9114,7 +9114,7 @@ EOF
        text  => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 11.07.2007-25.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -736,32837 -579,33145 -529,33240 -503,33339 -454,33489 -440,33503 -406,33512
+userdel	2::inwork -743,32862 -579,33145 -529,33240 -503,33339 -484,33394 -454,33489 -440,33503 -406,33512
 EOF
      },
      { from  => 1183845600, # 2007-07-08 00:00
@@ -9764,7 +9764,7 @@ EOF
        text  => 'L 172 Hennigsdorf-Velten zw. Kreisverkehr Hennigsdorf und Abzw. AS Hennigsdorf grundhafter Straßenbau Vollsperrung 27.08.2007-06.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -3470,27651 -3571,28529
+userdel	2::inwork -3527,27616 -3502,27811 -3524,27869 -3572,28018 -3587,28494 -3603,28588
 EOF
      },
      { from  => 1187042400, # 2007-08-14 00:00
@@ -9899,7 +9899,7 @@ EOF
        text  => 'K 6422 Eggersdorfer Str. Petershagen, zw.Trift- u. Lessingstr.,BahnLandsbg.Str. Straßenbau Vollsperrung 12.09.2007-30.04.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -579,33145 -529,33240 -503,33339 -454,33489 -440,33503 -406,33512 -377,33538 -316,33596 81,33971
+userdel	2::inwork -579,33145 -529,33240 -503,33339 -484,33394 -454,33489 -440,33503 -406,33512 -377,33538 -316,33596 -303,33607 -251,33656 81,33971
 EOF
      },
      { from  => 1208210400, # 2008-04-15 00:00
@@ -10000,7 +10000,7 @@ EOF
        text  => 'L 020 Velten-Borgsdorf zw. OL Pinnow, Havelweg und Berliner Ch., Borgsdorf Grundhafter Straßenbau Vollsperrung 26.08.2007-17.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -579,33145 -529,33240 -503,33339 -454,33489 -440,33503 -406,33512
+userdel	2::inwork -579,33145 -529,33240 -503,33339 -484,33394 -454,33489 -440,33503 -406,33512
 EOF
      },
      { from  => 1231707233, # 2009-01-11 21:53
@@ -10184,7 +10184,7 @@ EOF
        text  => 'B 109 Zehdenick-Templin zw. Zehdenick und Hammelspring Straßenbauarbeiten Vollsperrung 08.10.2007-17.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 8656,71489 7906,70007 7983,69794 7945,69489 7693,69244 7068,68100 6538,67236
+userdel	2::inwork 8883,71868 8391,71230 8009,70282 7979,70212 7906,70007 7983,69794 7945,69489 7871,69412 7693,69244 7068,68100 6569,67323
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00
@@ -10259,7 +10259,7 @@ EOF
        text  => 'B 109 August-Bebel-Str. OD Templin, zw. Jahnstr. und Krz. Prenzlauer Allee Kanalarbeiten Vollsperrung 15.10.2007-24.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 16331,79764 16200,79437
+userdel	2::inwork 16331,79764 16323,79690 16200,79437
 EOF
      },
      { from  => 1192399200, # 2007-10-15 00:00
@@ -11060,7 +11060,7 @@ EOF
        text  => 'L 256 B109 - LG - Milow - B104 Bahnübergang bei Nechlin Gleisbauarbeiten Vollsperrung 17.03.2008-26.03.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 42905,115846 42250,115925 42222,115929
+userdel	2::inwork 42844,115851 42457,115900 42250,115925 42222,115929
 EOF
      },
      { from  => 1203202800, # 2008-02-17 00:00
@@ -11481,7 +11481,7 @@ EOF
        text  => 'L 256 B109 - Werbelow Bahnübergang Nechlin Gleisbauarbeiten Vollsperrung 05.05.2008-07.05.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 42905,115846 42250,115925 42222,115929
+userdel	2::inwork 42844,115851 42457,115900 42250,115925 42222,115929
 EOF
      },
      { from  => 1211407200, # 2008-05-22 00:00
@@ -12579,7 +12579,7 @@ EOF
        text  => 'B 109 August-Bebel-Str. OD Templin, zw. R.-Koch-Str. und Prenzlauer Allee Grundhafter Straßenausbau Vollsperrung 01.09.2008-23.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 16331,79764 16200,79437 16116,79398 15887,79291
+userdel	q4::inwork 16331,79764 16323,79690 16200,79437 16116,79398 15887,79291
 EOF
      },
      { from  => 1219528800, # 2008-08-24 00:00
@@ -21652,9 +21652,9 @@ EOF
 	q4::inwork 13314,8624 13227,8692
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-04 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-07-06 23:59:59"),
-       text  => 'Britzer Rosenfest an der Britzer Dorfkirche, Backbergstr. ist gesperrt, 5. und 6. Juli 2014',
+     { from  => $isodate2epoch->("2015-07-03 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-07-05 23:59:59"),
+       text  => 'Britzer Rosenfest an der Britzer Dorfkirche, Backbergstr. ist gesperrt, 4. und 5. Juli 2015',
        periodic => 1,
        recurrences => [['yearly', days => 22, months => 6]],
        type  => 'gesperrt',
