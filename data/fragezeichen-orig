@@ -1204,6 +1204,12 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX Dietzgenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/15) Richtung Hermann-Hesse-Str. zwischen Beuthstr. und Blankenburger Str., 26.05.2015 07:00 Uhr bis 12.09.2015 15:00 Uhr	IM_025047
+Dietzgenstr.: Gleisbauarbeiten, Sperrung auch für Radfahrer relevant?	?; 10127,19992 10167,19797 10195,19703 10224,19628 10257,19542
+# 
+#: XXX Hermann-Hesse-Str. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Mitte 07/15) Richtung Heinrich-Mann-Str. zwischen Blankenburger Str. und Pastor-Niemöller-Platz, 26.05.2015 07:00 Uhr bis 18.07.2015 15:00 Uhr	IM_025046
+Hermann-Hesse-Str.: Gleisbauarbeiten, Sperrung auch für Radfahrer relevant?	?; 10257,19542 10250,19504 10228,19480 10018,19429 9990,19420 9929,19399 9870,19360
+# 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6273 (Empfehlung)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036102169813/102169813/00119753/53-Anlagen/02/AnlageBE.pdf (Karte)
 #: XXX fehlt in Berlin.coords.data
@@ -1649,7 +1655,7 @@ Lindenstr. (Schmöckwitz): dieser Teil gehört wohl auch noch zu Berlin... Qualitä
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4759
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/___tmp/tmp/45081036146019524/146019524/00061922/22-Anlagen/06/6Bebauungsplan6-22.pdf
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=427621&postcount=91 (Fotos)
-#: osm_watch: way id="54781804" version="10"
+#: osm_watch: way id="54781804" version="11"
 #: last_checked: 2014-08-07
 Fünf Morgen: wo befindet sich die Straße? Wird es eine Anbindung an den Hüttenweg geben? Qualität?	? 1311,4951 1395,4965 1437,5015 1483,5161
 # 

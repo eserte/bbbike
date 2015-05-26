@@ -20156,13 +20156,18 @@ EOF
 userdel	q4::inwork 9881,18354 9821,18392
 EOF
      },
-     { from  => 1325718000, # 2012-01-05 00:00
-       until => 1327618800, # 2012-01-27 00:00
-       text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Ebertstr. Veranstaltung, Straße vollständig gesperrt (06.01.2012 06 Uh bis 26.01.12, ca. 18:00 Uhr) ',
+     { from  => $isodate2epoch->("2015-05-26 05:00:00"),
+       until => $isodate2epoch->("2015-06-11 23:59:59"),
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: mehrere Veranstaltungen, Straßen vollständig gesperrt (27.05.2015 06 Uhr bis 11.06.2015)',
        type  => 'gesperrt',
        source_id => 'IM_018330',
        data  => <<EOF,
-userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	2::temp 8538,12245 8522,12239
+	2::temp 8538,12245 8522,12187
 EOF
      },
      { from  => undef, # 
