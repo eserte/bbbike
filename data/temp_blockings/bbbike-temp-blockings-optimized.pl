@@ -2694,28 +2694,7 @@ userdel	2::temp 18870,5833 18932,5926
          'type' => 'gesperrt',
          'id' => 2206
        },
-       {
-         'data' => 'userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-userdel	q4::temp 11275,8387 11230,8402
-userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-',
-         'periodic' => 1,
-         'until' => 1432677599,
-         'from' => 1430172000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2015 bis 25.05.2015',
-         'type' => 'handicap',
-         'id' => 2207
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3588,7 +3567,7 @@ userdel	2::inwork -3197,11554 -3075,11510
          'text' => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
          'from' => undef,
          'id' => 2671,
-         'data' => '#: last_checked: 2015-04-30
+         'data' => '#: last_checked: 2015-05-29
 userdel	q4::inwork; 9559,11715 9692,11732
 ',
          'type' => 'handicap'
@@ -3618,17 +3597,7 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_024084',
-         'until' => 1432904400,
-         'text' => 'Veitstr.: Baustelle, zwischen Berliner Str. und Medebacher Weg Fahrbahn Richtung Borsigdamm gesperrt, 10.02.2015 08:11 Uhr bis 29.05.2015 15:00 Uhr ',
-         'from' => 1423465860,
-         'id' => 2678,
-         'data' => '#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.265751.php
-userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_024088',
          'until' => 1435669200,
@@ -3642,8 +3611,8 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
        },
        {
          'source_id' => 'IM_024065',
-         'until' => 1432998000,
-         'text' => 'Anhalter Str.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Stresemannstr. in Richtung Westen gesperrt, bis 30.05.2015',
+         'until' => 1433257200,
+         'text' => 'Anhalter Str.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Stresemannstr. in Richtung Westen gesperrt, bis 02.06.2015',
          'from' => 1423980000,
          'id' => 2680,
          'data' => 'userdel	q4::inwork; 9234,11056 8947,10956
@@ -3843,8 +3812,8 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-05-19 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2015-05-27 vvv
+#: check_frequency: 21d vvv
 userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
 userdel	2::inwork 14443,9731 14361,9772
@@ -3852,6 +3821,33 @@ userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.320524.php',
+         'until' => 1435960800,
+         'text' => 'Franzensbader Straße: zwischen Hubertusallee und Berkaer Str. wegen Bauarbeiten in Richtung Süden gesperrt, 01.06.2015 bis voraussichtlich 03.07.2015 ',
+         'from' => 1433023200,
+         'id' => 2712,
+         'data' => 'userdel	q4::inwork; 2320,8722 2361,8608 2423,8427 2407,8148 2370,8109
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5610.html',
+         'until' => 1433023199,
+         'text' => 'Kurfürstendamm/Tauenzienstr.: zwischen Uhlandstr. und Nürnberger Str. wegen des Fantreffpunkts gesperrt, 30.05.2015 07:00 bis 24:00',
+         'from' => 1432875600,
+         'id' => 2713,
+         'data' => 'userdel	2::temp 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5351,10760 5215,10711 5076,10658
+userdel auto	3 5669,10704 5782,10884 5829,10964
+userdel auto	3 5488,10978 5475,10808 5471,10719
+userdel auto	3 5196,10398 5215,10711 5230,10919
+userdel auto	3 5230,10919 5215,10711 5196,10398
+userdel auto	3 5471,10719 5475,10808 5488,10978
+userdel auto	3 5829,10964 5782,10884 5669,10704
 ',
          'type' => 'gesperrt'
        }

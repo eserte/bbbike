@@ -23790,7 +23790,7 @@ EOF
        text  => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-04-30
+#: last_checked: 2015-05-29
 userdel	q4::inwork; 9559,11715 9692,11732
 EOF
      },
@@ -23874,8 +23874,8 @@ EOF
 EOF
      },
      { from  => 1423980000, # 2015-02-15 07:00
-       until => 1432998000, # 2015-05-30 17:00
-       text  => 'Anhalter Str.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Stresemannstr. in Richtung Westen gesperrt, bis 30.05.2015',
+       until => $isodate2epoch->("2015-06-02 17:00:00"), # 1432998000, # 2015-05-30 17:00
+       text  => 'Anhalter Str.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Stresemannstr. in Richtung Westen gesperrt, bis 02.06.2015',
        type  => 'handicap',
        source_id => 'IM_024065',
        data  => <<EOF,
@@ -24174,8 +24174,8 @@ EOF
 #: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-05-19 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2015-05-27 vvv
+#: check_frequency: 21d vvv
 userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
 userdel	2::inwork 14443,9731 14361,9772
@@ -24192,6 +24192,30 @@ EOF
        source_id => 'IM_025012',
        data  => <<EOF,
 userdel	2::temp 9588,9827 9552,9602
+EOF
+     },
+     { from  => 1433023200, # 2015-05-31 00:00
+       until => 1435960800, # 2015-07-04 00:00
+       text  => 'Franzensbader Straße: zwischen Hubertusallee und Berkaer Str. wegen Bauarbeiten in Richtung Süden gesperrt, 01.06.2015 bis voraussichtlich 03.07.2015 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.320524.php',
+       data  => <<EOF,
+userdel	q4::inwork; 2320,8722 2361,8608 2423,8427 2407,8148 2370,8109
+EOF
+     },
+     { from  => 1432875600, # 2015-05-29 07:00
+       until => 1433023199, # 2015-05-30 23:59
+       text  => 'Kurfürstendamm/Tauenzienstr.: zwischen Uhlandstr. und Nürnberger Str. wegen des Fantreffpunkts gesperrt, 30.05.2015 07:00 bis 24:00',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5610.html',
+       data  => <<EOF,
+userdel	2::temp 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5351,10760 5215,10711 5076,10658
+userdel auto	3 5669,10704 5782,10884 5829,10964
+userdel auto	3 5488,10978 5475,10808 5471,10719
+userdel auto	3 5196,10398 5215,10711 5230,10919
+userdel auto	3 5230,10919 5215,10711 5196,10398
+userdel auto	3 5471,10719 5475,10808 5488,10978
+userdel auto	3 5829,10964 5782,10884 5669,10704
 EOF
      },
     );

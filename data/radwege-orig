@@ -996,7 +996,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX Markierungen fehlen noch in Richtung Osten
 #: source_id: IM_018997
 #: source_id: IM_023987
-#: last_checked: 2015-04-30
+#: last_checked: 2015-05-29
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1056,7 +1056,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 sind die Radspuren weitgehend aufgehoben (früher RW4;RW4)
-#: last_checked: 2015-05-18
+#: last_checked: 2015-05-27
 #: check_frequency: 60d
 	RW0;RW0 14151,8967 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 15053,7966
@@ -1443,12 +1443,12 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW4;RW4 12126,13088 12163,13295
 	RW3;RW1 13493,11217 13541,11355
 #: next_check_id: WARSCHAUER-2014
-#: XXX Radfahrer müssen eigentlich den Gehweg benutzen
-#: last_checked: 2015-05-26
+#: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein)
+#: last_checked: 2015-05-28
 #: check_frequency: 14d
 	RW0;RW1 13541,11355 13588,11490
 #: next_check_id: WARSCHAUER-2014
-#: last_checked: 2015-05-26
+#: last_checked: 2015-05-28
 #: next_check: 2015-09-30
 	RW0;RW2 13588,11490 13603,11538
 	RW4;RW4 14026,10869 14024,10861 14011,10812
