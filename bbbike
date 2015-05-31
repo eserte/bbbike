@@ -8214,9 +8214,9 @@ sub draw_street_numbers {
 	    } else {
 		my($item, $r_item);
 		my $text = ($type =~ /^(B|BAB|DK|DW)$/ ? "" : $type) . (defined $nr ? $nr : "");
-		my $font = (  $scale < SMALLER_TABLES ? $font{'tiny'}
-			    : length($text) >= 4      ? $font{'small'} # heuristic, so "101n" will fit in the BAB table
-			    :                           $font{'normal'}
+		my $font = (  $scale < SMALLER_TABLES ? $font{'fix8'}
+			    : length($text) >= 4      ? $font{'fix9'} # heuristic, so "101n" will fit in the BAB table
+			    :                           $font{'fix13'}
 			   );
 		# XXX It seems that at least the BAB number is off by maybe half a pixel,
 		# but it's not possible in Tk to set subpixel positions.
@@ -21186,7 +21186,7 @@ sub set_fonts {
 	$top->optionAdd('*font' => $font{'normal'}, 'userDefault');
 
 	foreach (qw(veryhuge huge verylarge large bold
-		    reduced small tiny fixed standard fix15)) {
+		    reduced small tiny fixed standard fix15 fix13 fix9 fix8)) {
 	    if (exists $font{$_}) {
 		$top->fontConfigure($font{$_}, $top->fontActual($font{'normal'}));
 	    } else {
@@ -21205,6 +21205,12 @@ sub set_fonts {
 			    -weight => 'bold');
 	$top->fontConfigure($font{'fix15'}, # exactly 15 pixels height (if not $small_icons in effect)
 			    -size => ($small_icons ? -8 : -15));
+	$top->fontConfigure($font{'fix13'},
+			    -size => ($small_icons ? -7 : -13));
+	$top->fontConfigure($font{'fix9'},
+			    -size => ($small_icons ? -6 : -9));
+	$top->fontConfigure($font{'fix8'},
+			    -size => ($small_icons ? -5 : -8));
 	$top->fontConfigure($font{'tiny'},
 			    -size => sprintf("%.f", $minfs->($pt*8/14)));
 	$top->fontConfigure($font{'small'},
