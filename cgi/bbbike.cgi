@@ -760,10 +760,11 @@ if ($VERBOSE) {
 
 use vars qw($cgic); # Can't use my here!
 sub my_exit {
+    my $exit_code = shift;
     # Seems to be necessary for CGI::Compress::Gzip to flush the
     # output buffer.
     undef $cgic;
-    exit @_;
+    exit $exit_code;
 }
 
 use vars qw($require_Karte);

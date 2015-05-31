@@ -46,12 +46,13 @@ sub _bbbike_lang_cgi ($);
 
 check_cgi_testing;
 
+my $ipc_run_tests = 2;
 my $json_xs_0_tests = 2;
 my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 142 + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 142 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -64,6 +65,21 @@ my $testcgi = "$cgidir/bbbike-test.cgi";
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
+
+SKIP: {
+    skip "Need IPC::Run for this test", $ipc_run_tests
+	if !eval { require IPC::Run; 1 };
+    # call script directly, check exit code
+    my $cgi_script = "$FindBin::RealBin/../cgi/bbbike-test.cgi";
+    my @cmd = ($^X, $cgi_script, 'startc=8000,8000;zielc=10000,10000;pref_seen=1;output_as=json');
+    my $http_out;
+    my $stderr;
+    my $success = IPC::Run::run(\@cmd, '>', \$http_out, '2>', \$stderr);
+    ok $success, 'bbbike-test.cgi run successfully';
+    like $http_out, qr{content-type: application/json}i, 'detected application/json content type';
+    $stderr =~ s{.*Search again with nearest node .* instead of wanted goal .*\n}{};
+    is $stderr, '', 'stderr is empty';
+}
 
 {
     # This used also to dump an error
