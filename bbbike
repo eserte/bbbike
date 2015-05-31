@@ -10192,7 +10192,6 @@ sub plotstr {
 	    $filename_maybe = $str_file{$abk} if $edit_mode_flag; # as fallback if no -orig version available
 	}
 	$has_filename = 1;
-	delete $pending{"replot-str-$abk"};
 	if (!defined $filename) {
 	    status_message(Mfmt("Dateiname für <%s> ist nicht definiert.", $abk),
 			   'err');
@@ -10201,6 +10200,7 @@ sub plotstr {
     } else {
 	$str = delete $args{-object};
     }
+    delete $pending{"replot-str-$abk"};
 
 #     # Radwege werden im Edit-Modus besser mit radweg_draw_canvas() gezeichnet
 #     # XXX ups? stimmt das noch immer??? -> wahrscheinlich nicht! XXX
