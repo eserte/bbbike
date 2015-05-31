@@ -2123,10 +2123,7 @@ unless($skip_features{"strassen"}) {
 	    $skm->checkbutton
 		(-label => M"Autobahnen/Kfz-Straßen",
 		 -variable => \$str_draw{'sBAB'},
-		 -command => sub {
-		     plot("str", "sBAB",
-			  -filename => get_strassen_file("strassen_bab"));
-		 },
+		 -command => sub { plot("str", "sBAB") },
 		);
 	}
 
@@ -2161,10 +2158,7 @@ unless($skip_features{"strassen"}) {
 	$menu->checkbutton
 	    (-label => $label,
 	     -variable => \$str_draw{$def},
-	     -command => sub {
-		 my $file  = get_strassen_file("comments_" . $type);
-		 plot('str', $def, Filename => $file);
-	     },
+	     -command => sub { plot('str', $def) },
 	     %cb_args,
 	    );
     };
@@ -2366,8 +2360,7 @@ unless ($skip_features{"landstrassen"}) {
     $lstrcm->checkbutton(-label => M"Radwege im Umland",
 			-variable => \$str_draw{'comm-cyclepath'},
 			 -command => sub {
-			     my $file = get_strassen_file("comments_cyclepath");
-			     plot('str', 'comm-cyclepath', Filename => $file);
+			     plot('str', 'comm-cyclepath');
 			 },
 			 -accelerator => 'Shift-R',
 			);
@@ -6123,6 +6116,7 @@ sub define_item_attribs {
     %str_file =
 	(# "primary"
 	 's'  => 'strassen',
+	 'sBAB' => 'strassen_bab',
 	 'l'  => 'landstrassen', # this is really scoped
 	 'u'  => 'ubahn',
 	 'b'  => 'sbahn',
@@ -10631,7 +10625,7 @@ sub plot_comments_all {
     $progress->InitGroup;
     for my $type (@used_comments_types) {
 	my $def = 'comm-' . $type;
-	plot('str', $def, -draw => $onoff, Filename => get_strassen_file("comments_" . $type));
+	plot('str', $def, -draw => $onoff);
     }
     $progress->FinishGroup;
 }
