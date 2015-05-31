@@ -46,7 +46,7 @@ sub _bbbike_lang_cgi ($);
 
 check_cgi_testing;
 
-my $ipc_run_tests = 2;
+my $ipc_run_tests = 3;
 my $json_xs_0_tests = 2;
 my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
