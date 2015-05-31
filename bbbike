@@ -18022,7 +18022,6 @@ sub add_via_to_current_search {
 ### AutoLoad Sub
 sub steigung_penalty {
     my($steigung, $act_power) = @_;
-    my $frac = ($steigung/1000+0.08)/(0.08*2);
     max_speed(power2speed($act_power, -grade => $steigung/1000));
 }
 
