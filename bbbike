@@ -10122,7 +10122,9 @@ sub plot_layer {
 # - Scale
 # - Koordinatensystem
 #
-# Zeichnet Strecken auf dem Canvas
+# Draw (or redraw) the given street layer on canvas if $str_draw{$abk}
+# is set to true, or remove the layer if $str_draw{$abk} is set to
+# false.
 sub plotstr {
     my($abk, %args) = @_;
     my $c = $c;
@@ -10281,6 +10283,7 @@ sub plotstr {
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($std && $lazy) {
 	status_message(Mfmt("Layer <%s> gezeichnet", exists $str_attrib{$abk} ? $str_attrib{$abk}->[ATTRIB_PLURAL] : $abk), "info");
+	bbbikelazy_remove_data("str", $abk);
 	return bbbikelazy_add_data("str", $abk, $str, \%args);
     }
 
