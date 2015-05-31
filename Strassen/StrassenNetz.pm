@@ -358,6 +358,7 @@ sub make_net_steigung {
     my $net = $self->{Net};
 
     # Search recursively until $max_search_dist is exceeded
+    if (0) { # XXX what's the status of this code snippet?
     my $find_neighborsXXX;
     $find_neighborsXXX = sub {
 	my($from, $seen, $dist_so_far, $initial_elevation) = @_;
@@ -427,6 +428,7 @@ sub make_net_steigung {
 	    # warn $act_dist;
 	}
     };
+    } # XXX end of disabled code
 
     my $find_neighbors;
     $find_neighbors = sub {
