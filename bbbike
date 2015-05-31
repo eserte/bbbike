@@ -11524,10 +11524,7 @@ sub read_hoehe {
     return if (!$args{-force} && keys %hoehe != 0 &&
 	       $p_obj{"hoehe"} && $p_obj{"hoehe"}->is_current);
     if (!eval {
-	my $h = new Strassen ($args{-file}
-			      ? $args{-file}
-			      : get_strassen_file("hoehe")
-			     );
+	my $h = get_strassen_obj('hoehe');
 	%hoehe = %{ $h->get_hashref };
 	$p_obj{"hoehe"} = $h;
 	1;
