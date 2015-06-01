@@ -2356,7 +2356,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2762,7 +2762,26 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.weissenseer-blumenfest.de/',
+         'data' => 'userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
+',
+         'periodic' => 1,
+         'until' => 1436738399,
+         'from' => 1436392800,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 10.7.2015 bis 12.7.2015',
+         'id' => 2275,
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -3075,33 +3094,29 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
        {
-         'source_id' => 'http://www.kindertag-berlin.de/?date=20150503',
-         'data' => 'userdel	2::temp 20755,5750 20716,6029 20708,6089 20623,6136 20453,6211 20464,6237
-userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
-userdel	2::temp 20200,6321 20262,6493 20225,6631
-userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-userdel	2::temp 19976,6087 20064,6290 20106,6357
+         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm?y=2015',
+         'data' => 'userdel	2::temp 14161,11930 14285,12190
 ',
          'periodic' => 1,
-         'until' => 1433195999,
-         'from' => 1432850400,
-         'text' => 'Internationaler Kindertag im FEZ, Veranstaltung, einige Wege und Straßen sind gesperrt, 30. Mai 2015 bis 1. Juni 2015',
+         'until' => 1436738399,
+         'from' => 1436439600,
+         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, vom 10.07.2015 bis 12.07.2015',
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              30,
+                              1,
                               'months',
-                              5
+                              7
                             ]
                           ],
-         'id' => 2436,
+         'id' => 2433,
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3319,26 +3334,7 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/',
-         'data' => 'userdel	2::temp 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
-',
-         'periodic' => 1,
-         'until' => 1433102400,
-         'from' => 1432818000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 29.5.2015 15 Uhr bis 31.5.2015 22 Uhr',
-         'id' => 2533,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3597,7 +3593,17 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_024084',
+         'until' => 1434114000,
+         'text' => 'Veitstr.: Baustelle, zwischen Berliner Str. und Medebacher Weg Fahrbahn Richtung Borsigdamm gesperrt, 10.02.2015 08:11 Uhr bis 12.06.2015 15:00 Uhr ',
+         'from' => 1423465860,
+         'id' => 2678,
+         'data' => '#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.265751.php
+userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
+',
+         'type' => 'handicap'
+       },
        {
          'source_id' => 'IM_024088',
          'until' => 1435669200,
@@ -3659,17 +3665,7 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_024458',
-         'until' => 1442066400,
-         'text' => 'Pichelswerder Str.: Brücke beschädigt, Straße gesperrt, evtl. vollständig, bis Mitte September 2015',
-         'from' => 1427147207,
-         'id' => 2692,
-         'data' => '#: note: laut fritz nur bis Anfang Juli 2015 gesperrt
-userdel	2::inwork -2576,13777 -2669,13488
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -3834,22 +3830,6 @@ userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
          'data' => 'userdel	q4::inwork; 2320,8722 2361,8608 2423,8427 2407,8148 2370,8109
 ',
          'type' => 'handicap'
-       },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5610.html',
-         'until' => 1433023199,
-         'text' => 'Kurfürstendamm/Tauenzienstr.: zwischen Uhlandstr. und Nürnberger Str. wegen des Fantreffpunkts gesperrt, 30.05.2015 07:00 bis 24:00',
-         'from' => 1432875600,
-         'id' => 2713,
-         'data' => 'userdel	2::temp 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5351,10760 5215,10711 5076,10658
-userdel auto	3 5669,10704 5782,10884 5829,10964
-userdel auto	3 5488,10978 5475,10808 5471,10719
-userdel auto	3 5196,10398 5215,10711 5230,10919
-userdel auto	3 5230,10919 5215,10711 5196,10398
-userdel auto	3 5471,10719 5475,10808 5488,10978
-userdel auto	3 5829,10964 5782,10884 5669,10704
-',
-         'type' => 'gesperrt'
        }
      
 );

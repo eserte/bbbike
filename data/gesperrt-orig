@@ -859,7 +859,7 @@ Pitschener Str.	1s:q3 21769,-432 21719,-397 21637,-381
 #: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4783
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to010.asp?SILFDNR=2578
-#: last_checked: 2015-04-28
+#: last_checked: 2015-05-31
 Herrfurthstr.	1s:q3 11979,8014 11833,7980
 Dankratstr.	1s:q3 21105,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
@@ -2633,12 +2633,12 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 #: next_check: 2017-04-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
-#: last_checked: 2015-05-29 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2015-06-01 vvv
+#: next_check: 2015-07-10 vvv
 # REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015)
 Alfred-Döblin-Platz: Bauarbeiten	2::inwork 11162,10919 11150,11030
 Dresdener Str.: Einbahnstraße wegen Tunnelzuschüttung	1s:q3 11189,10831 11162,10919
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 #: XXX Sperrungen wegen Bauarbeiten für die IGA 2017 vvv
@@ -2818,7 +2818,7 @@ Patersdorfer Str.: fertiggestellt, aber noch gesperrt	2::inwork 19626,9171 19764
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: note: allerdings könnte man sein Fahrrad über den Betonpfeiler rübertragen
-#: last_checked: 2015-02-21
+#: last_checked: 2015-05-31
 #: check_frequency: 90d
 am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 # 

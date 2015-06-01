@@ -19537,7 +19537,8 @@ EOF
        text  => 'Platz der Luftbrücke (Tempelhof): Straße vollständig zwischen Tempelhofer Damm und Columbiadamm wegen einer Veranstaltung (Bread & Butter) gesperrt (8. bis 10. Juli 2014)',
        periodic => 1,
        recurrences => [#['yearly', days => 14, months => 1], # XXX January 2015 is cancelled
-                       ['yearly', days => 1, months => 7]],
+                       #['yearly', days => 1, months => 7], # XXX Juli 2015 findet zwar statt, aber geändertes Konzept
+	              ],
        type  => 'gesperrt',
        source_id => 'http://www.breadandbutter.com/winter2014/de/home/',
        data  => <<EOF,
@@ -19821,13 +19822,13 @@ EOF
 userdel	q4::inwork 10881,15047 10838,14962 10723,14772
 EOF
      },
-     { from  => $isodate2epoch->("2014-08-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-08-31 23:59:59"),
+     { from  => $isodate2epoch->("2015-07-09 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-07-12 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 9, months => 8]],
-       text  => 'Berliner Allee (Weißensee): Veranstaltung (Blumenfest Weißensee), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 29.8.2014 bis 31.8.2014',
+       recurrences => [['yearly', days => 9, months => 7]], # kann auch erst im August stattfinden
+       text  => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 10.7.2015 bis 12.7.2015',
        type  => 'handicap',
-       source_id => 'http://www.weissenseer-blumenfest.de/1_1_Aktuell_Presse-und-Highlights.html',
+       source_id => 'http://www.weissenseer-blumenfest.de/',
        data  => <<EOF,
 userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
 EOF
@@ -21433,13 +21434,13 @@ userdel	2::temp 14011,10812 13896,10851
 userdel	2::temp 13886,10939 13856,10864
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-04 13:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-07-05 23:59:59"), 
-       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am Samstag, 31. August 2013, ab 14:00 Uhr',
+     { from  => $isodate2epoch->("2015-07-09 13:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-07-12 23:59:59"), 
+       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, vom 10.07.2015 bis 12.07.2015',
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 7]], # kann Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
-       source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
+       source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm?y=2015',
        data  => <<EOF,
 userdel	2::temp 14161,11930 14285,12190
 EOF
@@ -21580,7 +21581,8 @@ EOF
        until => $isodate2epoch->("2014-07-10 23:59:59"),
        periodic => 1,
        recurrences => [# ['yearly', days => 8, months => 1], # XXX January 2015 is cancelled
-                       ['yearly', days => 1, months => 7]],
+                       # ['yearly', days => 1, months => 7], # XXX Juli 2015 findet zwar statt, aber geändertes Konzept
+	              ],
        text  => 'Flughafen Tempelhof: die Nebeneingänge Columbiadamm und Peter-Strasser-Weg sind wegen einer Veranstaltung (Bread and Butter) geschlossen (8. bis 10. Juli 2014)',
        type  => 'gesperrt',
        source_id => 'http://www.gruen-berlin.de/parks-gaerten/tempelhofer-freiheit/?date=20140118',
@@ -23854,8 +23856,8 @@ EOF
 EOF
      },
      { from  => 1423465860, # 2015-02-09 08:11
-       until => 1432904400, # 2015-05-29 15:00
-       text  => 'Veitstr.: Baustelle, zwischen Berliner Str. und Medebacher Weg Fahrbahn Richtung Borsigdamm gesperrt, 10.02.2015 08:11 Uhr bis 29.05.2015 15:00 Uhr ',
+       until => $isodate2epoch->("2015-06-12 15:00:00"), # 1432904400, # 2015-05-29 15:00
+       text  => 'Veitstr.: Baustelle, zwischen Berliner Str. und Medebacher Weg Fahrbahn Richtung Borsigdamm gesperrt, 10.02.2015 08:11 Uhr bis 12.06.2015 15:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_024084',
        data  => <<EOF,
@@ -23990,7 +23992,7 @@ userdel	q4::inwork 18615,8269 18528,8331 18461,8377 18391,8425 18322,8470
 EOF
      },
      { from  => 1427147207, # 2015-03-23 22:46
-       until => $isodate2epoch->("2015-09-12 16:00:00"), # 1427752800, # 2015-03-31 00:00
+       until => 1433191742, # $isodate2epoch->("2015-09-12 16:00:00"), # 1427752800, # 2015-03-31 00:00
        text  => 'Pichelswerder Str.: Brücke beschädigt, Straße gesperrt, evtl. vollständig, bis Mitte September 2015',
        type  => 'gesperrt',
        source_id => 'IM_024458',
