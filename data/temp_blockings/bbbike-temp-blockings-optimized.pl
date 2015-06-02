@@ -1728,7 +1728,29 @@ userdel	2::temp 22133,4644 22074,4664
        undef,
        undef,
        undef,
-       undef,
+       {
+         'postwarn_days' => 2,
+         'data' => '	q4::temp 9666,11935 9656,12021
+	2::temp 9524,12010 9656,12021
+	2::temp 9536,11922 9666,11935
+',
+         'periodic' => 1,
+         'until' => 1436385600,
+         'from' => 1435615200,
+         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (2.7.2015 - 6.7.2015; Sperrungen fangen schon früher an und dauern länger)',
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              7
+                            ]
+                          ],
+         'id' => 1710,
+         'type' => 'gesperrt',
+         'prewarn_days' => 2
+       },
        undef,
        undef,
        undef,
@@ -3558,16 +3580,7 @@ userdel	2::inwork -3197,11554 -3075,11510
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
-         'from' => undef,
-         'id' => 2671,
-         'data' => '#: last_checked: 2015-05-29
-userdel	q4::inwork; 9559,11715 9692,11732
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1448924400,
          'text' => 'Augsburger Str.: Bauarbeiten, Einbahnstraßenregelung',
@@ -3615,16 +3628,7 @@ userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
 	3 15117,12106 15361,12071 15420,12178
 '
        },
-       {
-         'source_id' => 'IM_024065',
-         'until' => 1433257200,
-         'text' => 'Anhalter Str.: Baustelle, Fahrbahn zwischen Wilhelmstr. und Stresemannstr. in Richtung Westen gesperrt, bis 02.06.2015',
-         'from' => 1423980000,
-         'id' => 2680,
-         'data' => 'userdel	q4::inwork; 9234,11056 8947,10956
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,

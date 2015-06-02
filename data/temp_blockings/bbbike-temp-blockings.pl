@@ -14622,9 +14622,11 @@ EOF
 userdel	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-02 00:00:00"), # mindestens 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-07-09 22:00:00"), # einen Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
-       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (3.7.2014 - 7.7.2014; Sperrungen fangen schon früher an und dauern länger)',
+     { from  => $isodate2epoch->("2015-06-30 00:00:00"), # mindestens 1 Tag Vorlauf, besser zwei
+       until => $isodate2epoch->("2015-07-08 22:00:00"), # einen Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
+       prewarn_days => 2,
+       postwarn_days => 2,
+       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (2.7.2015 - 6.7.2015; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 7]],
        type  => 'gesperrt',
@@ -23788,11 +23790,10 @@ userdel	q4::inwork 8870,12647 9056,12743
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1433278719, # undef, # XXX - Einbahnstraßenschild hängt nicht mehr
        text  => 'Kronenstr.: Einbahnstraßenregelung zwischen Charlottenstr. und Markgrafenstr., gesperrt Richtung Osten, Dauer unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-05-29
 userdel	q4::inwork; 9559,11715 9692,11732
 EOF
      },

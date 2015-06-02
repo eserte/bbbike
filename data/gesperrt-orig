@@ -2836,10 +2836,11 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # REMOVED (die Baustelle ist mittlerweile auf der anderen Straßenseite) --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2014-04-02 vvv --- #: next_check: 2015-05-31 vvv --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 8935,13844 --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
-#: last_checked: 2015-05-12 vvv
+#: last_checked: 2015-06-02 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364 9961,12273
+Niederlagstr.: Bauarbeiten, gesperrt	2::inwork 9934,12420 9943,12364
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -3036,8 +3037,9 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2015-02-23 vvv
-#: next_check: 2015-06-01 (voraussichtliche Eröffnung Oktober 2015) vvv
+#: last_checked: 2015-06-02 vvv
+#: next_check: 2016-06-01 (voraussichtliche Eröffnung 2017) vvv
+#: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298

@@ -82,7 +82,7 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 # 
 #: XXX Ende der Bauarbeiten?
 #: XXX_prog: zu eng f¸r Anh‰nger
-#: last_checked: 2015-04-30
+#: last_checked: 2015-06-02
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
 # 
 #: last_checked: 2015-05-29
@@ -106,7 +106,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED --- Charlottenstr.: Bauarbeiten, Radfahrer kˆnnen passieren	q2::inwork; 9475,12365 9489,12263
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2015-05-15 vvv
+#: last_checked: 2015-06-02 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -200,8 +200,8 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2015-02-16 vvv
-#: next_check: 2015-06-01 vvv
+#: last_checked: 2015-06-02 vvv
+#: next_check: 2016-06-01 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: next_check ^^^
@@ -2535,11 +2535,10 @@ An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13235,13414
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 #: next_check_id: RITTER-2014
-#: XXX nach den Bauarbeiten vielleicht wieder q1? Und inwork streichen
-#: XXX siehe auch Eintrag in qualitaet_s-orig
-#: last_checked: 2015-02-23
-#: check_frequency: 90d
-Ritterstr.: Fuﬂg‰nger	q3::inwork 9763,11148 9861,11103
+#: XXX erstmal q2, vielleicht sp‰ter wieder q1
+#: last_checked: 2015-06-02
+#: check_frequency: 14d
+Ritterstr.: Fuﬂg‰nger	q2 9763,11148 9861,11103
 Elisenstr.: Fuﬂg‰nger	q2 5810,5340 5813,5354 5822,5388
 Mittelstr. (Steglitz): Fuﬂg‰nger	q2 5111,5337 5203,5278
 Goebenstr.: Fuﬂg‰nger	q1 5606,4726 5555,4743 5535,4756 5509,4773 5478,4792
