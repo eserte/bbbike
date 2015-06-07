@@ -137,7 +137,7 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="120633717" version="11"
 #: osm_watch: way id="162964323" version="9"
-#: osm_watch: way id="4541085" version="19"
+#: osm_watch: way id="4541085" version="20"
 #: osm_watch: way id="4638315" version="16"
 #: XXX laut rbbtext und fritz Bauarbeiten
 #: last_checked: 2015-04-09 vvv
@@ -354,8 +354,8 @@ Borsigdamm: Verbesserung für den Radverkehr	?::projected 1463,19417 1450,19336 1
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.168550.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.227911.php ("1. Quartal 2015")
-#: last_checked: 2015-05-16
-#: check_frequency: 60d
+#: last_checked: 2015-06-06
+#: check_frequency: 90d
 Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 22668,3884 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
 # REMOVED (hier vermutlich nicht) --- Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 23099,2031 23185,1649
 # 
@@ -392,6 +392,8 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+Sterndamm: Status der Bauarbeiten hier? Gibt es Sperrungen für Radfahrer?	? 17886,5587 17736,5441
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.312877.php
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5598.html
@@ -1106,7 +1108,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
 #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straßenbenennung, Vorschlag)
-#: last_checked: 2015-05-16
+#: last_checked: 2015-06-06
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 

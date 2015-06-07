@@ -18423,11 +18423,11 @@ EOF
 	2::inwork 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7893,8327 7942,8380 8078,8772
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-04 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-07-06 23:59:59"),
+     { from  => $isodate2epoch->("2015-07-03 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-07-05 23:59:59"),
        periodic => 1, # zweiter Termin im Jahr
-       recurrences => [['yearly', days => 5, months => 7]], # kann auch erst im September stattfinden
-       text  => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (5. und 6. Juli 2014)',
+       recurrences => [['yearly', days => 4, months => 7]], # kann auch erst im September stattfinden
+       text  => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (04.07.2015 bis 05.07.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
@@ -20160,8 +20160,8 @@ userdel	q4::inwork 9881,18354 9821,18392
 EOF
      },
      { from  => $isodate2epoch->("2015-05-26 05:00:00"),
-       until => $isodate2epoch->("2015-06-11 23:59:59"),
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: mehrere Veranstaltungen, Straßen vollständig gesperrt (27.05.2015 06 Uhr bis 11.06.2015)',
+       until => $isodate2epoch->("2015-06-14 23:59:59"),
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: mehrere Veranstaltungen, Straßen vollständig gesperrt (27.05.2015 06 Uhr bis 14.06.2015)',
        type  => 'gesperrt',
        source_id => 'IM_018330',
        data  => <<EOF,
@@ -21231,9 +21231,9 @@ EOF
        source_id => 'IM_024846',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-05-16
+#: last_checked: 2015-06-06
 #: next_check: 2015-09-21
-userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+userdel	q3::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
      { from  => 1361168940, # 2013-02-18 07:29

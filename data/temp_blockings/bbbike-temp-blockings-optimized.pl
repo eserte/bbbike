@@ -2608,7 +2608,25 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
+',
+         'periodic' => 1,
+         'until' => 1436133599,
+         'from' => 1435874400,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (04.07.2015 bis 05.07.2015)',
+         'type' => 'gesperrt',
+         'id' => 2126
+       },
        undef,
        undef,
        undef,
@@ -2840,8 +2858,8 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        {
          'source_id' => 'IM_018330',
-         'until' => 1434059999,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: mehrere Veranstaltungen, Straßen vollständig gesperrt (27.05.2015 06 Uhr bis 11.06.2015)',
+         'until' => 1434319199,
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: mehrere Veranstaltungen, Straßen vollständig gesperrt (27.05.2015 06 Uhr bis 14.06.2015)',
          'from' => 1432609200,
          'id' => 2310,
          'data' => '	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
@@ -3080,9 +3098,9 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1430704800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-05-16
+#: last_checked: 2015-06-06
 #: next_check: 2015-09-21
-userdel	q4::inwork 15261,10738 15272,10790 15279,10862
+userdel	q3::inwork 15261,10738 15272,10790 15279,10862
 ',
          'type' => 'handicap'
        },
