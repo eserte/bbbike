@@ -69,8 +69,10 @@ $ua->env_proxy;
 SKIP: {
     skip "Need IPC::Run for this test", $ipc_run_tests
 	if !eval { require IPC::Run; 1 };
-    # call script directly, check exit code
     my $cgi_script = "$FindBin::RealBin/../cgi/bbbike-test.cgi";
+    skip "Cannot find cgi/bbbike-test.cgi, maybe symlink missing?", $ipc_run_tests
+	if !-e $cgi_script;
+    # call script directly, check exit code
     my @cmd = ($^X, $cgi_script, 'startc=8000,8000;zielc=10000,10000;pref_seen=1;output_as=json');
     my $http_out;
     my $stderr;
