@@ -1367,7 +1367,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2015-03-13
+#: last_checked: 2015-06-08
 #: check_frequency: 90d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1377,7 +1377,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2015-05-15
+#: last_checked: 2015-06-08
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1450,11 +1450,11 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW3;RW1 13493,11217 13541,11355
 #: next_check_id: WARSCHAUER-2014
 #: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein)
-#: last_checked: 2015-05-28
-#: check_frequency: 14d
+#: last_checked: 2015-06-08
+#: check_frequency: 7d
 	RW0;RW1 13541,11355 13588,11490
 #: next_check_id: WARSCHAUER-2014
-#: last_checked: 2015-05-28
+#: last_checked: 2015-06-08
 #: next_check: 2015-09-30
 	RW0;RW2 13588,11490 13603,11538
 	RW4;RW4 14026,10869 14024,10861 14011,10812
@@ -1581,7 +1581,7 @@ Busspur gilt Mo-Sa 7-20 Uhr	RW5;RW0 8119,12414 8354,12416 8400,12417 8540,12420
 	RW7;RW7 10777,13614 10872,13570 11059,13480 11104,13456
 #: next_check_id: INVALIDEN-2014
 #: last_checked: 2015-02-27
-#: next_check: 2015-05-31
+#: next_check: 2015-08-15
 #: XXX bleibt die Benutzungspflicht hier?
 	RW2; 9125,13973 9070,14058
 	RW1; 9070,14058 9125,13973
@@ -1633,7 +1633,7 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html
 #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder
 #: XXX kommen die Radwegschilder noch?
-#: last_checked: 2015-05-12
+#: last_checked: 2015-06-08
 	RW3; 8098,13419 8293,13519
 	RW2; 8293,13519 8337,13541 8362,13554
 	RW3; 8362,13554 8450,13599
@@ -2907,6 +2907,8 @@ schlechte Qualität des Radwegs (holprig), eng, Fußgänger	RW2; 20010,3340 20064,3
 	RW0;RW2 13046,5267 13112,5253 13250,5234 13327,5234
 	RW0;RW1 13327,5234 13594,5240 13607,5241
 	RW0;RW1 13607,5241 13809,5257
+#: XXX gibt es hier Richtung Norden Radwege/-streifen?
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
 	RW0;RW3 23082,15329 23067,15429 23060,15588 23080,15700
 Verbundsteinpflaster	RW8;RW2 -7556,5515 -7389,5294 -7328,5218 -7254,5164 -7184,5118 -7160,5090 -7120,5076
 Verbundsteinpflaster	RW8;RW2 -8777,7386 -8675,7148 -8619,7012 -8606,6978 -8603,6973 -8567,6893 -8471,6679 -8376,6579 -8364,6562 -8272,6450 -8252,6425 -8205,6354 -8157,6259 -8125,6184 -8116,6167
@@ -4442,9 +4444,10 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 #	RW3; 5652,11004 5613,10963 5488,10978
 	RW0;RW0 5488,10978 5613,10963 5652,11004
 	RW1;RW1 5620,13120 5601,12756
-#: note: eigentlich nicht für Radfahrer freigegeben (2013-01, 2015-03)
-Busspur immer gültig	RW5; 6228,13324 6377,13321
+#: note: eigentlich nicht für Radfahrer freigegeben (2013-01, 2015-03, 2015-06)
+Busspur immer gültig	RW5; 6228,13324 6292,13323 6377,13321
 	RW3;RW3 6377,13321 6526,13327 6674,13332 6692,13333 6814,13349 6919,13360 7069,13381
+	RW3; 6377,13321 6292,13323
 #: by: Irit Früchtnicht vvv
 	RW6;RW6 12374,1193 12369,1171 12348,1085
 	RW6;RW6 12369,1171 12295,1191 12239,1209 12243,1224 12224,1235
@@ -4582,10 +4585,10 @@ Gehweg für Radfahrer frei	RW1; 22162,1067 22092,999 22044,1018
 	RW6;RW6 19801,9680 19790,9478
 Gehweg für Radfahrer frei	RW1; 16855,25792 16635,26118 16580,26154
 	RW6;RW6 19406,7886 19550,7780 19500,7719
-#: XXX zurzeit nur Markierungen, noch keine Schilder
-#: last_checked: 2015-03-28
+#: note: eigentlich nicht für Radfahrer freigegeben (2015-06)
+#: last_checked: 2015-06-08
 #: check_frequency: 60d
-	RW5;RW5 6105,13328 6115,13328 6228,13324
+Busspur ist immer gültig	RW5;RW5 6105,13328 6115,13328 6228,13324
 	RW3;RW3 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330
 Busspur ist immer gültig	RW5; 5956,13330 6011,13330 6105,13328
 	RW3; 6105,13328 6011,13330 5956,13330

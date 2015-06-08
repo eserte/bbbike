@@ -1076,26 +1076,7 @@ userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.openairgallery.de/
-userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'periodic' => 1,
-         'until' => 1433707200,
-         'from' => 1433577600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Open Air Gallery am 7. Juni 2015 auf der Oberbaumbrücke (10:00 - 22:00)',
-         'type' => 'gesperrt',
-         'id' => 1107
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2421,26 +2402,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.erkner.de/271.html',
-         'data' => 'userdel	2::temp 34421,1950 34359,2165 34250,2546
-',
-         'periodic' => 1,
-         'until' => 1433714399,
-         'from' => 1433368800,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Erkner: Heimatfest, 5.6.2015 bis 7.6.2015',
-         'id' => 2078,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2862,7 +2824,8 @@ userdel	2::temp 18870,5833 18932,5926
          'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: mehrere Veranstaltungen, Straßen vollständig gesperrt (27.05.2015 06 Uhr bis 14.06.2015)',
          'from' => 1432609200,
          'id' => 2310,
-         'data' => '	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+         'data' => '	2::temp 8538,12245 8610,12254
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
@@ -3728,8 +3691,9 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'from' => undef,
          'id' => 2700,
          'data' => '#: confirmed_by: srt
-#: last_checked: 2015-04-21
-userdel	2::inwork 7451,13504 7630,13584
+#: last_checked: 2015-06-08
+#: check_frequency: 45d
+userdel	2::inwork 7306,13418 7451,13504 7630,13584
 ',
          'type' => 'gesperrt'
        },

@@ -20165,6 +20165,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_018330',
        data  => <<EOF,
+	2::temp 8538,12245 8610,12254
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
@@ -24076,8 +24077,9 @@ EOF
        source_id => 'wosch',
        data  => <<EOF,
 #: confirmed_by: srt
-#: last_checked: 2015-04-21
-userdel	2::inwork 7451,13504 7630,13584
+#: last_checked: 2015-06-08
+#: check_frequency: 45d
+userdel	2::inwork 7306,13418 7451,13504 7630,13584
 EOF
      },
      { from  => 1429736139, # 2015-04-22 22:55

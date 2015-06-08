@@ -305,8 +305,7 @@ Prinzenstr. (Kreuzberg)	H 10885,10928 10934,11038
 (Böcklerpark, nördlicher Weg)	NN 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
 (Uferweg am Urbanhafen)	NN 11160,9932 11142,9939 10914,9925 10602,10006 10522,10056 10500,10081
 #: oldname: Junkerstr. vvv
-(Markgrafenstr. - Ritterstr.)	NN 9763,11148 9861,11103
-(Markgrafenstr. - Ritterstr.)	N 9861,11103 9920,11074 9935,11067
+(Markgrafenstr. - Ritterstr.)	NN 9763,11148 9935,11067
 #: oldname ^^^
 Ritterstr. (Kreuzberg)	N 9935,11067 10103,10989 10397,10852 10511,10800 10585,10766 10776,10682 10944,10606 11100,10530 11121,10521
 Alte Jakobstr.	N 9858,10350 9914,10401 9955,10501 9989,10615 9995,10637 10032,10752 10056,10831 10103,10989 10118,11025 10163,11070 10256,11160 10437,11352 10489,11405 10624,11548 10640,11564 10721,11639 10815,11662
@@ -3617,7 +3616,7 @@ Siemensstr. (Moabit)	H 5220,14043 5279,14047 5306,14061
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: XXX Degradierung zur Nebenstraße, sobald die Erna-Samuel-Straße vollkommen fertig ist --- #: last_checked: 2014-03-07
 Siemensstr. (Moabit)	N 5306,14061 5322,14044 5443,14028 5628,14063 5647,14067 5708,14077 5787,14102 5956,14168
 Stromstr. (Moabit)	H 6157,12933 6164,12980 6183,13083 6214,13225 6228,13324 6229,13517 6230,13596 6227,13938
-Turmstr.	H 5248,13434 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6377,13321 6526,13327 6674,13332 6692,13333 6814,13349 6919,13360 7069,13381
+Turmstr.	H 5248,13434 5368,13406 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324 6292,13323 6377,13321 6526,13327 6674,13332 6692,13333 6814,13349 6919,13360 7069,13381
 #: note: Beleuchtung existiert zum größten Teil (BAMAG-U7)
 (Kleiner Tiergarten)	NN 6561,13151 6556,13240 6526,13327
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: XXX Degradierung zur Nebenstraße, sobald die Erna-Samuel-Straße vollkommen fertig ist --- #: last_checked: 2014-03-07
@@ -4175,7 +4174,7 @@ Kirchstr. (Moabit)	N 6608,12858 6661,13130
 Lehrter Str.	N 7759,13246 7651,13447 7643,13461 7660,13506 7655,13539 7630,13584 7327,14130 7180,14419
 Lehrter Str. [6-8]	N 7630,13584 7735,13626
 (Weg durch den Geschichtspark)	NN 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470 7651,13447
-Seydlitzstr. (Moabit)	N 7131,13261 7263,13331 7287,13342 7426,13420 7655,13539
+Seydlitzstr. (Moabit)	N 7131,13261 7263,13331 7287,13342 7332,13367 7426,13420 7655,13539
 Clara-Jaschke-Str.	N 7759,13246 7788,13202 7791,13166 7795,13093 7799,13019
 Emma-Herwegh-Str.	N 7595,12980 7791,13166 7861,13203
 #: note: falsche Schreibweise ("Berta-Benz-Str.") wurde am 12. September 2013 berichtigt
@@ -5568,6 +5567,8 @@ Blumberger Damm [Nebenfahrbahn]	N 21719,15666 21733,15755
 Blumberger Damm [Nebenfahrbahn]	N 21816,15954 21788,16002 21817,16186 21842,16242 21862,16381 21885,16494 21908,16634 21944,16805
 Blumberger Damm [Nebenfahrbahn]	N 21413,13459 21430,13602 21466,13903
 Blumberger Damm [Wohngebiet]	N 21824,16506 21574,16547
+#: XXX ist das der "Reinhold-Lingner-Weg"? (keine Treffer dazu im Internet)
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
 (Blumberger Damm - Wuhle)	NN 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144
 # REMOVED --- #: XXX Straße wird umbenannt, neuer Name: "Am Gewerbepark" --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5605 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361044878152/1044878152/00070570/70-Anlagen/02/vzb0689_IV-Bennenung_Am_Gewerbepark.pdf --- #: XXX Eintrag in Berlin.coords.data fehlt, die "Grimmener Str." muss ausgetragen werden und nach oldnames wandern --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/13re.pdf/file?y=2014 --- #: last_checked: 2014-08-08 --- #: check_frequency: 60d
 #: oldname: -201403: Grimmener Str.
@@ -9645,7 +9646,7 @@ Lindower Str.	N 7754,15160 7929,15355
 #: XXX dieser Straßenabschnitt wird für die S21 in der Mitte unterbrochen, nachdem das neue Nordufer fertiggestellt ist
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: osm_watch: way id="220648313" version="1"
-#: last_checked: 2015-03-13
+#: last_checked: 2015-06-08
 #: check_frequency: 120d
 Tegeler Str. (Wedding)	N 7464,14636 7263,14873
 Tegeler Str. (Wedding)	N 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
@@ -16065,6 +16066,7 @@ Claire-Waldoff-Promenade	N 7433,13070 7356,13213 7287,13342
 #: note: beleuchtet
 #: note: teilweise als "Döberitzer Verbindung" bekannt, aber vor Ort existieren keine Straßenschilder
 (Lehrter Str. - Fritz-Schloß-Park)	NN 7630,13584 7451,13504 7306,13418
+(Zufahrt zum Stadtbad Tiergarten)	N 7332,13367 7306,13418
 Bahrfeldtstr.	N 14844,10088 14921,10047 14956,10028 14974,10018 15071,9967 15142,9931
 (Bahrfeldtstr. - Fischzug)	N 14921,10047 14969,10138 14993,10188
 Jollenseglerstr.	N 14921,10047 14879,9961

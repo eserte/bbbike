@@ -112,7 +112,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2015-05-29
+#: last_checked: 2015-06-08
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -220,7 +220,7 @@ Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 1
 #: XXX wird auch das letzte Stück im Westen realisiert?
 #: osm_watch: way id="4424794" version="14"
 #: osm_watch: way id="30195541" version="9"
-#: last_checked: 2015-03-28
+#: last_checked: 2015-06-08
 #: check_frequency: 60d
 Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
 # 
@@ -1204,6 +1204,16 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
+Pilgramer Str.: Radfahrstreifen in Planung (oder Bau?)	? 25149,10695 25149,10731 25145,10841 25143,10955 25141,11024 25139,11104
+# 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
+Fußgänger- und Radfahrerquerung Landsberger Allee in Höhe des Wuhletalwanderweges: wie sieht das konkret aus?	? 22631,16215 22696,16208 22739,16203 22771,16194
+# 
+#: XXX bis zum 14. Juli 2015
+Sebastianstr.: Vollsperrung?	? 11162,10919 11189,10831
+# 
 #: XXX Dietzgenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/15) Richtung Hermann-Hesse-Str. zwischen Beuthstr. und Blankenburger Str., 26.05.2015 07:00 Uhr bis 12.09.2015 15:00 Uhr	IM_025047
 Dietzgenstr.: Gleisbauarbeiten, Sperrung auch für Radfahrer relevant?	?; 10127,19992 10167,19797 10195,19703 10224,19628 10257,19542
 # 
@@ -1231,7 +1241,7 @@ Zimmermannstraßenbrücke: Bau einer neuen Brücke, wird es für Radfahrer Einschrän
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2015
 Abbestr.: Einziehung öffentlichen Straßenlandes (was bedeutet das hier? bleibt es beim jetzigen Stand - Radfahrer frei?)	? 4762,12229 4683,12072
 # 
-Zufahrt zum Stadtbad Tiergarten: Qualität? Parkplatzverkehr?	? 7450,13442 7428,13482
+# REMOVED (aufgenommen, weiter westlich) --- Zufahrt zum Stadtbad Tiergarten: Qualität? Parkplatzverkehr?	? 7450,13442 7428,13482
 # 
 #: XXX_prog: könnte man mit einer Art Punkt-Handicap ausdrücken
 Paster-Behrens-Str. - Britzer Park: wegen Bordstein muss man zur östlichen Seite des Wendehammers fahren	? 13329,4294 13270,4202 13171,4091
