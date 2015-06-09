@@ -2637,13 +2637,11 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 #: next_check: 2017-04-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
-#: last_checked: 2015-06-01 vvv
-#: next_check: 2015-07-10 vvv
+#: next_check_id: DRESDENER-2015
+#: last_checked: 2015-06-09
+#: next_check: 2015-07-14
 # REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015)
 Alfred-Döblin-Platz: Bauarbeiten	2::inwork 11162,10919 11150,11030
-Dresdener Str.: Einbahnstraße wegen Tunnelzuschüttung	1s:q3 11189,10831 11162,10919
-#: next_check ^^^
-#: last_checked ^^^
 # 
 #: XXX Sperrungen wegen Bauarbeiten für die IGA 2017 vvv
 #: last_checked: 2015-04-11 vvv
@@ -2698,7 +2696,7 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
 #: source_id: IM_023816 vvv
 #: XXX vermutlich bis März 2016 andauernd, laut Schild bis Februar 2016
-#: last_checked: 2015-06-04 vvv
+#: last_checked: 2015-06-09 vvv
 #: next_check: 2016-02-01 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081

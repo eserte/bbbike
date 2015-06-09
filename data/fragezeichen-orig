@@ -101,7 +101,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2015-06-04
+#: last_checked: 2015-06-09
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -722,7 +722,7 @@ XXI-32d-1: Bebauungsplan schlägt die Verkürzung der Gartenstraße vor	?::projecte
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 (Eröffnungstermin)
 #: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen?
 #: XXX gehört zu Tempelhof-Schöneberg
-#: last_checked: 2015-03-17
+#: last_checked: 2015-06-09
 #: check_frequency: 90d
 #: priority: #A
 Am Lokdepot: werden die beiden Teilstücke miteinander verbunden?	?::inwork 8390,8879 8389,9017
@@ -746,11 +746,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: check_frequency: 180d
 Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4693
-#: priority: #C
-#: last_checked: 2015-04-04
-#: check_frequency: 120d
-Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen angelegt?	?::projected 16395,7401 16406,7430 16412,7463
+# REMOVED (abgelehnt) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4693 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036869488524/869488524/00098050/50-Anlagen/06/B0594SB.pdf --- #: priority: #C --- #: last_checked: 2015-04-04 --- #: check_frequency: 120d --- Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen angelegt?	?::projected 16395,7401 16406,7430 16412,7463
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4086&options=4 vvv
 #: priority: #C vvv
@@ -805,13 +801,13 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12871,9356 12888,9338
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
-#: last_checked: 2015-05-27
+#: last_checked: 2015-06-09
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
-#: last_checked: 2015-05-27
+#: last_checked: 2015-06-09
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -985,7 +981,7 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 #: XXX culdesac-Einträge entfernen, wenn die Verlängerung erfolgt ist
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150119.0945.400904.html (Fertigstellung ist im Herbst 2015 geplant)
 #: XXX es wird noch einen parallelen Weg zwischen Monumentenstr. und Kolonnenstr. auf der Hangoberkante geben
-#: last_checked: 2015-04-07
+#: last_checked: 2015-06-09
 #: next_check: 2015-09-01
 Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis Herbst 2015	?::projected 8204,9001 8200,8920 7998,8317
 # 
@@ -1211,8 +1207,7 @@ Pilgramer Str.: Radfahrstreifen in Planung (oder Bau?)	? 25149,10695 25149,10731
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
 Fußgänger- und Radfahrerquerung Landsberger Allee in Höhe des Wuhletalwanderweges: wie sieht das konkret aus?	? 22631,16215 22696,16208 22739,16203 22771,16194
 # 
-#: XXX bis zum 14. Juli 2015
-Sebastianstr.: Vollsperrung?	? 11162,10919 11189,10831
+# REMOVED (ja, gemeint ist die Dresdener Str., in handicap_s-orig) --- #: XXX bis zum 14. Juli 2015 --- Sebastianstr.: Vollsperrung?	? 11162,10919 11189,10831
 # 
 #: XXX Dietzgenstr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Mitte 09/15) Richtung Hermann-Hesse-Str. zwischen Beuthstr. und Blankenburger Str., 26.05.2015 07:00 Uhr bis 12.09.2015 15:00 Uhr	IM_025047
 Dietzgenstr.: Gleisbauarbeiten, Sperrung auch für Radfahrer relevant?	?; 10127,19992 10167,19797 10195,19703 10224,19628 10257,19542
@@ -1602,7 +1597,7 @@ Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9
 Alter Wiesenweg: Qualität? Ausgeschildert?	? 1739,15958 1581,15919
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5192&options=4 (BVV-Beschluss)
-#: last_checked: 2015-05-18
+#: last_checked: 2015-06-09
 #: check_frequency: 100d
 #: priority: #C
 Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,9856 9820,9718 9790,9528
@@ -1615,7 +1610,7 @@ Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,985
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8645,6781 8655,6796
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4106&options=4 (Konzeptphase)
-#: last_checked: 2015-03-17
+#: last_checked: 2015-06-09
 #: check_frequency: 100d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
@@ -1811,8 +1806,8 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2015-05-20
-#: check_frequency: 60d
+#: last_checked: 2015-06-09
+#: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: ignore ^^^
@@ -2092,6 +2087,18 @@ Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	
 #: check_frequency: 180d
 Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18369,4337 18501,4457
 #: XXX ^^^
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5188 vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036869488524/869488524/00108801/01-Anlagen/01/DRS1087VK.pdf vvv
+#: XXX fehlen in Berlin.coords.data vvv
+#: next_check: 2015-09-01 vvv
+Alfonsstr.: geplante Straße in Altglienicke, genaue Lage, Qualität?	?::projected 19061,1457 19034,1441 19029,1421 19003,1325 19081,1233 19053,1159
+#: note: Privatstraße:
+Traudelstr.: geplante Straße in Altglienicke, genaue Lage, Qualität?	?::projected 19029,1421 19169,1249 19143,1147
+#: next_check ^^^
+#: XXX ^^^
+#: by: ^^^
+#: by: ^^^
 # 
 #: ignore ^^^
 #: section ^^^
@@ -3590,19 +3597,7 @@ Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?
 #: last_checked ^^^
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20110930.1255.360473.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/blankenburger-strasse2.html?date=20121116 --- #: next_check: 2013-03-01 --- #: osm_watch: way id="145055197" version="3" --- Blankenburger Str.: Gibt es nach den Bauarbeiten Radstreifen in beiden Richtungen?	? 11148,19838 11051,19789 10948,19737 10829,19676 10742,19632
-# 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5476 ("kann mit dem Bau in diesem Jahr noch gerechnet werden?" (2013))
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141027.1440.399848.html (offensichtlich noch nicht realisiert)
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=6141 (offensichtlich nicht realisiert)
-#: XXX: Ampelanlage in Planung, Realisierung 2011
-#: XXX: Vorfahrtsregelung kann dann entfernt werden
-#: XXX: zurzeit Baustellenampel: Hultschiner Damm (Hellersdorf): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Baustellenampel (bis Anfang 06/15) in beiden Richtungen Höhe Kohlisstr., 03.03.2015 10:00 Uhr bis 03.06.2015 17:00 Uhr
-#: source_id: IM_024324
-#: osm_watch: node id="31532799" version="11"
-#: last_checked: 2014-07-06
-#: check_frequency: 360d
-Kohlisstr./Hultschiner Damm: gibt es hier mittlerweile eine Ampelanlage?	?::projected 23810,7946
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20101221.1110.323849.html --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5476 ("kann mit dem Bau in diesem Jahr noch gerechnet werden?" (2013)) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141027.1440.399848.html (offensichtlich noch nicht realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=6141 (offensichtlich nicht realisiert) --- #: XXX: Ampelanlage in Planung, Realisierung 2011 --- #: XXX: Vorfahrtsregelung kann dann entfernt werden --- #: XXX: zurzeit Baustellenampel: Hultschiner Damm (Hellersdorf): Baustelle, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Baustellenampel (bis Anfang 06/15) in beiden Richtungen Höhe Kohlisstr., 03.03.2015 10:00 Uhr bis 03.06.2015 17:00 Uhr --- #: source_id: IM_024324 --- #: osm_watch: node id="31532799" version="11" --- #: last_checked: 2014-07-06 --- #: check_frequency: 360d --- Kohlisstr./Hultschiner Damm: gibt es hier mittlerweile eine Ampelanlage?	?::projected 23810,7946
 # 
 #: by: Uckermark-Kurier vvv
 #: XXX 2.7km Radweg auf  (Radweg "Spur der Steine", Templin - Fürstenwerder), Baubeginn Anfang 2009, Asphalt ca. 3m breit
@@ -3955,7 +3950,7 @@ Warsin - Rieth: mittlerweile fast vollständig asphaltiert, bis auf 2km Kiesstrec
 # 
 #: last_checked: 2015-04-10 (Bauarbeiten)
 #: check_frequency: 120d
-Hornkleepfad - Wegedornstr.: wird hier eine Verbindung entstehen? Qualität? Nachts beleuchtet?	?::inwork 18996,1453 19034,1441 19061,1457
+Hornkleepfad - Wegedornstr.: wird hier eine Verbindung entstehen? Qualität? Nachts beleuchtet?	?::inwork 18996,1453 19034,1441
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.312664.php
