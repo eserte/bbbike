@@ -24083,7 +24083,7 @@ userdel	2::inwork 7306,13418 7451,13504 7630,13584
 EOF
      },
      { from  => 1429736139, # 2015-04-22 22:55
-       until => 1437429600, # 2015-07-21 00:00
+       until => 1434052361, # 1437429600, # 2015-07-21 00:00
        text  => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 20.07.2015 ',
        type  => 'gesperrt',
        source_id => '157300093',

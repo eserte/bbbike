@@ -3697,16 +3697,7 @@ userdel	2::inwork 7306,13418 7451,13504 7630,13584
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => '157300093',
-         'until' => 1437429600,
-         'text' => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 20.07.2015 ',
-         'from' => 1429736139,
-         'id' => 2701,
-         'data' => 'userdel	2::inwork 51806,78469 51798,78477 51668,78605
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
