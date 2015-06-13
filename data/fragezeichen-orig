@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-06-11
+#: last_checked: 2015-06-12
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -681,14 +681,17 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5900 (Verzögerung)
 #: XXX neue Straßennamen
 #: last_checked: 2014-07-06 (erste Bauarbeiten) vvv
-#: check_frequency: 360d vvv
 Am Theodorpark: Straße in Planung, Qualität? Genaue Lage?	?::projected 24899,11017 24948,11018 25051,11020 25141,11024
 #: XXX Privatstraße
-Arturweg: Straße in Planung, Qualität? Genaue Lage?	?::projected 24948,11018 24960,10882 24996,10876 25051,10867 25048,10957 25051,11020
+#: XXX zumindest Arturweg und Reintrautweg scheinen schon zu existieren
+Arturweg: Straße in Planung, Qualität? Genaue Lage?	? 24948,11018 24960,10882 24996,10876 25051,10867 25048,10957 25051,11020
 #: XXX Privatstraße
 Reintrautweg: Straße in Planung, Qualität? Genaue Lage?	?::projected 24996,10876 24990,10954 25048,10957 25143,10955
-#: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
+#: XXX fehlen in Berlin.coords.data; beides Privatstraßen
+Laraweg und Ellaweg: genaue Lage? Qualität?	?::projected 24948,11116 25002,11056 25064,11121
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5551&options=4 vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/4508103642254042/42254042/00069846/46-Anlagen/02/vzb_0594_IV_Aenderung_Pln-ziele_B-Plan_XXIII_9.pdf vvv
@@ -1325,10 +1328,13 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 # REMOVED (realisiert) --- #: XXX wahrscheinlich nach den Bauarbeiten? --- #: osm_watch: way id="4687118" version="11" --- #: last_checked: 2013-12-20 --- Parkaue: wann wird hier die Einbahnstraße ausgeschildert, wird sie tatsächlich für Radfahrer nicht offen sein?	? 15406,12444 15408,12394 15370,12264
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015 vvv
+#: last_checked: 2014-08-07 vvv
 #: XXX ggfs. Sackgassen aufheben
-#: last_checked: 2014-08-07
-#: check_frequency: 180d
-Neubaugebiet am Dahlemer Weg: entstehen hier neue Straßen oder werden bestehende Straßen verlängert?	? 1946,3142 2094,3231 2203,3213 2183,3101 2031,3004 1946,3142
+Biesheimer Ring: genaue Lage? Qualität? Bereits fertiggestellt?	? 2031,3004 2074,3032 1993,3170 1946,3142
+Lutterbacher Str.: genaue Lage? Qualität? Bereits fertiggestellt?	? 2183,3101 2074,3032 1993,3170 2094,3231
+#: last_checked ^^^
+#: by: ^^^
 # 
 # REMOVED (realisiert) --- #: last_checked: 2013-10-29 (Kreidemarkierungen zu sehen) --- #: next_check: 2014-11-29 --- Seddiner Str.: anscheinend werden hier Radspuren markiert? Was passiert mit der vorhandenen Busspur?	? 18555,12101 18408,12105 18296,12115 18215,12123
 # REMOVED (nein, es gibt nur senkrechte Stichstraßen zu den einzelnen Häusern in der zweiten Reihe) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2014 (Nummerierungen, evtl. hier) --- #: XXX nördlich hiervon werden weitere Häuser entstehen --- #: last_checked: 2014-02-08 --- #: next_check: 2014-05-08 --- Beilsteiner Str.: wird es hier für das neue Wohngebiet eine Erschließungsstraße geben?	? 18737,12753 18706,12488
@@ -2015,6 +2021,7 @@ Jacques-Russ-Str. (Potsdam): genaue Lage, Qualität?	? -10305,-2525 -10196,-2543
 #: by: ^^^
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf vvv
+#: XXX fehlt in Potsdam.coords.data, PLZ=14473
 Birkengrund (Potsdam): genaue Lage, Qualität?	? -11013,-2957 -11119,-2963
 Alte Gärtnerei (Potsdam): genaue Lage, Qualität?	? -11119,-2963 -11099,-2859
 #: by: ^^^
@@ -2061,9 +2068,9 @@ Hüfnerweg (Groß Glienicke): genaue Lage, Qualität?	? -9801,6988 -9795,7066
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/54re.pdf/file?y=2014 vvv
 #: XXX fehlen alle in Berlin.coords.data vvv
-#: XXX Am Lübarser Feld
-#: XXX Zum Klötzbecken
-#: XXX Zum Klötzhain
+#: XXX Am Lübarser Feld PLZ=13469
+#: XXX Zum Klötzbecken PLZ=13469
+#: XXX Zum Klötzhain PLZ=13469
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2015 (Grundstücksnummerierungen)
 Privatstraßen in Lübars	? 6178,22456 6144,22651 5956,22714 5953,22865
 #: XXX ^^^
@@ -3319,11 +3326,11 @@ Zum Großen Herzberg (Potsdam-Golm): Qualität?	? -18042,219 -18017,316 -18026,357
 #: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf
 #: XXX weitere Straßenbenennungen, fehlen alle in Potsdam.coords.data
 #: XXX Planstraße A: An der Bahn (Weiterführung)
-#: XXX Planstraße B (Nord-, Ost-, Südverlauf): Feldlerchenwinkel
-#: XXX Planstraße B (Westverlauf): Sperlingsweg
-#: XXX Planstraßen 1 und 2 (Westverlauf): Taubenbogen
-#: XXX Planstraße 2 (Nord-, Ost-, Südverlauf): Grasmückenring
-#: XXX Planstraßen 3.1 und 3.2: Elsternstraße
+#: XXX Planstraße B (Nord-, Ost-, Südverlauf): Feldlerchenwinkel, PLZ=14476
+#: XXX Planstraße B (Westverlauf): Sperlingsweg, PLZ=14476
+#: XXX Planstraßen 1 und 2 (Westverlauf): Taubenbogen, PLZ=14476
+#: XXX Planstraße 2 (Nord-, Ost-, Südverlauf): Grasmückenring, PLZ=14476
+#: XXX Planstraßen 3.1 und 3.2: Elsternstraße, PLZ=14476
 #: XXX Planstraßen 4 und 5: Zum Großen Herzberg (Weiterführung)
 Nördlich in der Feldmark: Planstraßen, genauer Verlauf, Qualität?	? -18037,307 -18063,509 -18623,422 -18584,217 -18037,307 -18026,357
 # 
@@ -3844,7 +3851,7 @@ Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13494,-
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf
 #: XXX Privatstraße
-#: XXX fehlt in Potsdam.coords.data
+#: XXX fehlt in Potsdam.coords.data, PLZ=14473
 Luisenhof (Potsdam): genaue Lage der Straße, Qualität?	? -13481,-2956 -13629,-2860
 # 
 # REMOVED (nein) --- Schiefertonweg: gibt es hier ein Drängelgitter Richtung Nordgraben?	? 10269,21718 10248,21795

@@ -8941,11 +8941,11 @@ EOF
 userdel	q4::inwork -19105,-19043 -19058,-19120
 EOF
      },
-     { from  => undef, # 
-       until => 1246831200, # 2009-07-06 00:00
-       text  => 'Badstraße (Wedding) in beiden Richtungen zwischen Pankstr. und Behmstr. Veranstaltung, Straße gesperrt bis Mo 00:00 ',
+     { from  => $isodate2epoch->("2015-06-12 06:00:00"), # 
+       until => $isodate2epoch->("2015-06-14 22:30:00"), # 1246831200, # 2009-07-06 00:00
+       text  => 'Badstr. zwischen Pankstr. und Behmstr.: Veranstaltung, Straße gesperrt, 13.06.2015 bis 14.06.2015',
        type  => 'gesperrt',
-       source_id => 'IM_013416',
+       source_id => 'IM_025247',
        data  => <<EOF,
 userdel	2::temp 8788,16264 8862,16208 8919,16154 8986,16092 9053,16029 9123,15963
 EOF
@@ -21502,11 +21502,11 @@ EOF
 userdel	2::temp 3976,11869 3807,11859
 EOF
      },
-     { from  => 1370556000, # 2013-06-07 00:00
-       until => 1370815199, # 2013-06-09 23:59
-       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, am 8. und 9. Juli 2013',
+     { from  => $isodate2epoch->("2015-06-11 04:00:00"), # 1370556000, # 2013-06-07 00:00
+       until => $isodate2epoch->("2015-06-15 04:00:00"), # 1370815199, # 2013-06-09 23:59
+       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 11.06.2015 04 Uhr bis 15.06.2015 04 Uhr',
        type  => 'handicap',
-       source_id => 'IM_019934',
+       source_id => 'IM_025248',
        data  => <<EOF,
 userdel	q4::temp 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
 EOF
@@ -22990,8 +22990,8 @@ userdel	q4::inwork; 22815,37 22697,-27 22596,-82 22440,-175
 EOF
      },
      { from  => $isodate2epoch->("2015-03-11 08:00:00"),
-       until => $isodate2epoch->("2015-06-16 17:00:00"),
-       text  => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis 16.06.2015',
+       until => $isodate2epoch->("2015-06-15 17:00:00"),
+       text  => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis 15.06.2015',
        type  => 'handicap',
        source_id => 'IM_024332',
        data  => <<EOF,

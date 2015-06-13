@@ -1015,7 +1015,16 @@ userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_025247',
+         'until' => 1434313800,
+         'text' => 'Badstr. zwischen Pankstr. und Behmstr.: Veranstaltung, Straße gesperrt, 13.06.2015 bis 14.06.2015',
+         'from' => 1434081600,
+         'id' => 1046,
+         'data' => 'userdel	2::temp 8788,16264 8862,16208 8919,16154 8986,16092 9053,16029 9123,15963
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3122,7 +3131,16 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_025248',
+         'until' => 1434333600,
+         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 11.06.2015 04 Uhr bis 15.06.2015 04 Uhr',
+         'from' => 1433988000,
+         'id' => 2439,
+         'data' => 'userdel	q4::temp 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -3412,8 +3430,8 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        {
          'source_id' => 'IM_024332',
-         'until' => 1434466800,
-         'text' => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis 16.06.2015',
+         'until' => 1434380400,
+         'text' => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis 15.06.2015',
          'from' => 1426057200,
          'id' => 2587,
          'data' => 'userdel	q4::inwork; 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
@@ -3587,17 +3605,7 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_024084',
-         'until' => 1434114000,
-         'text' => 'Veitstr.: Baustelle, zwischen Berliner Str. und Medebacher Weg Fahrbahn Richtung Borsigdamm gesperrt, 10.02.2015 08:11 Uhr bis 12.06.2015 15:00 Uhr ',
-         'from' => 1423465860,
-         'id' => 2678,
-         'data' => '#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.265751.php
-userdel	q4::inwork; 2268,19919 2064,19874 1886,19835
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_024088',
          'until' => 1435669200,
