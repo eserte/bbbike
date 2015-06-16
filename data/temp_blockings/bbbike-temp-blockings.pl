@@ -1753,7 +1753,7 @@ EOF
        text  => 'B 2; (Bernau-Biesenthal); B 2, OD Rüdnitz grundh. Ausbau, Bau Kreisverk. Vollsperrung 29.03.2005-22.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 25069,35558 25007,35418 24930,35363
+userdel	q4 25069,35558 24996,35413 24930,35363
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -3045,7 +3045,7 @@ EOF
        text  => 'B 2; (Bernau-Biesenthal); B 2, OD Rüdnitz, Kreisverkehr grundh. Ausbau, Bau Kreisverk. Vollsperrung 10.10.2005-16.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 25069,35558 25007,35418 24930,35363
+userdel	q4 25069,35558 24996,35413 24930,35363
 EOF
      },
      { from  => 1128988800, # 2005-10-11 02:00
@@ -4983,7 +4983,7 @@ EOF
        text  => 'B 002 Eberswalder Str. Bahnübergang in OL Melchow Umbau Bahnübergang Vollsperrung 21.06.2006-26.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 30143,41500 29553,41441 29468,41438
+userdel	2::inwork 30142,41506 29553,41441 29468,41438
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -5261,7 +5261,7 @@ EOF
        text  => 'B 167 Eisenbahnstr./ Wilhelmstr. OL Eberswalde, Wilhelmbrücke Fahrbahnsanierung 17.07.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 37909,48248 37731,48228 37474,48123
+userdel	2::inwork 37909,48248 37711,48239 37474,48123
 EOF
      },
      { from  => 1153000800, # 2006-07-16 00:00
@@ -6131,7 +6131,7 @@ EOF
        text  => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 30.09.2006-16.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 76131,90452 76075,90647 76243,92954
+userdel	q4::inwork 76131,90452 76075,90647 76068,90740 76095,90915 76190,92220 76243,92954
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -9164,7 +9164,7 @@ EOF
        text  => 'B 002 Stettiner Str. OD Gartz, Knotenpunkt Stettiner-/Scheunenstraße Ausbau Knotenpunkt Vollsperrung 16.07.2007-15.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 76243,92954 76075,90647
+userdel	q4::inwork 76243,92954 76190,92220 76095,90915 76068,90740 76075,90647
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -9931,7 +9931,7 @@ EOF
        text  => 'B2 zw. Spechthausen u.Eberswalde Brücke Leuenberger Wiesengraben Brückenneubau Vollsperrung, Radfahrer können wahrscheinlich passieren 31.08.2007-21.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 36000,45950 35743,45915
+userdel	q4::inwork 35976,45951 35679,45846
 EOF
      },
      { from  => 1188684000, # 2007-09-02 00:00
@@ -18057,7 +18057,7 @@ EOF
        type  => 'gesperrt',
        source_id => '106000270',
        data  => <<EOF,
-userdel	2::inwork 30143,41500 29553,41441 29468,41438
+userdel	2::inwork 30142,41506 29553,41441 29468,41438
 EOF
      },
      { from  => 1276869600, # 2010-06-18 16:00
@@ -24221,6 +24221,14 @@ userdel auto	3 5196,10398 5215,10711 5230,10919
 userdel auto	3 5230,10919 5215,10711 5196,10398
 userdel auto	3 5471,10719 5475,10808 5488,10978
 userdel auto	3 5829,10964 5782,10884 5669,10704
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Märkisches Ufer: Sperrung der Fahrbahn vor der chinesischen Botschaft, Schieben über Gehweg',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 11325,12021 11275,12055
 EOF
      },
     );

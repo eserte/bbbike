@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2015-05-19
+#: last_checked: 2015-06-14
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -178,7 +178,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="3"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2015-04-11
+#: last_checked: 2015-06-14
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -1088,7 +1088,7 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
-#: last_checked: 2015-04-07
+#: last_checked: 2015-06-06
 #: check_frequency: 120d
 Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337 13519,7345
 # 
@@ -1146,11 +1146,7 @@ Uferweg zum Schiffbauerdamm	?::inwork -11876,-1040 -11851,-962 -11821,-923
 L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht mehr gepflastert	?::inwork 11054,-5341 11106,-5538 10782,-6409 10636,-6703 10483,-7211 10448,-7582
 # 
 # REMOVED (no changes) --- #: source_id: IM_023224 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.218616.php (Arbeiten des Straßenamtes) --- #: next_check: 2014-11-10 --- Buntzelstr.: Bauarbeiten --- gibt es danach Änderunden bzgl. der Radwege?	?::inwork 22075,779 22120,659 22171,459 22166,312 22145,208
-# 
-#: source_id: LS/721-E/14/031
-#: next_check: 2015-05-13
-Gartz: Bauarbeiten --- ist die B2 danach asphaltiert?	?::inwork 74369,90701 74463,90856 74717,90814 75329,90359
-# 
+# REMOVED (ja, asphaltiert) --- #: source_id: LS/721-E/14/031 --- #: next_check: 2015-05-13 --- Gartz: Bauarbeiten --- ist die B2 danach asphaltiert?	?::inwork 74369,90701 74463,90856 74717,90814 75329,90359
 # REMOVED (nein, keine Radspuren --- ist eigentlich auch kein Platz da) --- #: source_id: IM_023200 --- #: next_check: 2014-11-07 --- Köpenicker Str.: Bauarbeiten --- gibt es danach Änderungen wegen neuer Radwege/Radspuren?	?::inwork 19676,1577 19704,1621 19766,1796
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141022.1620.399800.html ("in den nächsten Jahren")
@@ -1225,7 +1221,7 @@ Hermann-Hesse-Str.: Gleisbauarbeiten, Sperrung auch für Radfahrer relevant?	?; 1
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6273 (Empfehlung)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036102169813/102169813/00119753/53-Anlagen/02/AnlageBE.pdf (Karte)
 #: XXX fehlt in Berlin.coords.data
-#: next_check: 2015-06-17
+#: last_checked: 2015-06-14
 Abbè-Lemire-Weg: Straßenbenennung, wann passiert sie?	? 16296,17114 16229,17217 16146,17304 16141,17325 15939,17412 15839,17431 15814,17454 15821,17510
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.313183.php
@@ -2266,10 +2262,10 @@ Badstr. am Straussee: Qualität?	? 42753,20225 42818,20290 42778,20387 42825,2049
 Alternative Strecke zum Roten Hof: Qualität?	? 43498,21028 43601,21073 43681,21175 44037,21303 44246,21496 44312,21556 44290,21668 44158,21724
 Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29536,21843 30444,22044 31272,22232 33562,22062 33822,22066
 Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42850,17643 42806,17462 42218,17200 42175,16962 41993,16706 41900,16100 41725,16000 41675,15906 41681,15915
-Liepe - Bralitz: Qualität (vermutlich gut?)?	? 47975,51325 48022,51225 48133,51178 48237,50875
-#: XXX laut osm: track
-Liepe - Bralitz: Qualität (vermutlich gut?)?	? 48237,50875 48787,50775 49300,50212 49925,49887 50325,49362 49906,48904 50505,48348 50572,48457
-Hohensaaten - Hohenwutzen: Qualität (vermutlich gut?)?	? 57730,52297 57962,51650 57875,50625 58012,50325 57806,50061 57736,49258
+Liepe - Bralitz: Qualität (vermutlich auch asphaltiert?)?	? 47975,51325 48022,51225 48133,51178
+# REMOVED --- Liepe - Bralitz: Qualität (vermutlich gut?)?	? 48133,51178 48247,50868
+# REMOVED --- #: XXX laut osm: track --- Liepe - Bralitz: Qualität (vermutlich gut?)?	? 48247,50868 48344,50854 48398,50825 48800,50758 49069,50533 49228,50290 49264,50217 49333,50236 49392,50169 49699,50038 49915,49881 50029,49767 50319,49355 50163,49257 50063,49167 50038,49106 49895,48909 50029,48764 50091,48676 50164,48615 50393,48381 50480,48354 50564,48484
+# REMOVED (hier existiert vermutlich nur ein Feldweg in der Nähe) --- Hohensaaten - Hohenwutzen: Qualität (vermutlich gut?)?	? 57730,52297 57962,51650 57875,50625 58012,50325 57806,50061 57736,49258
 Hohenwutzen - Bad Freienwalde: Qualität (zumindest am östlichen Ende asphaltiert)?	? 58211,48747 57884,48807 57505,48703 57396,48965 57328,48981
 Straße der Freiheit (Lebus): Qualität? Radweg?	? 87940,3516 87722,3688 87539,3653 87443,3671 87344,3693
 #: XXX laut Aktiv Regional zwischen Schönfließ und Boosen mäßig starker Verkehr
@@ -2278,7 +2274,7 @@ Boosen - Rosengarten: Qualität?	? 83500,-2486 83327,-2679 83327,-2778 83167,-278
 Frankfurt - Schlaubehammer: Qualität?	? 87379,-9565 87181,-9984 86831,-11347 86694,-11500 86458,-11941 86351,-12208 86442,-12444 86390,-12552 85391,-12772 84241,-13122 84104,-13419 83990,-13808 83929,-14623 83845,-14714 84051,-15392 84013,-16047 83914,-16184 83901,-16522
 Brieskow-Finkenheerd: Qualität?	? 90164,-16382 90129,-16123 90183,-15925 90183,-15636 90259,-15331 90464,-15324 90632,-15087 91013,-15004
 Oder-Neiße-Radweg: Qualität?	? 90929,-14801 91203,-14745 91249,-14508 91340,-13206 91516,-13092 91767,-13412 92072,-13564 92856,-13747 93344,-13747 93664,-13838 94083,-14044 94821,-14569 95362,-14676 95949,-14592 96840,-14798 98188,-15598 99262,-16710 99316,-17441 99544,-18104 99734,-18363 99567,-19361 99232,-19841 98759,-20930 98112,-21608 98097,-22385 98417,-23177 99270,-24076 99468,-24601 99437,-25066 99117,-25531 98851,-25706 97647,-27138 97632,-27290 97343,-27595 97487,-27778 97609,-28204 97617,-28318 98066,-29720 98082,-29979 97952,-30634 97990,-31045 98866,-32386 98813,-32554 98950,-32820 99681,-33224 100214,-33399 101075,-33391 101227,-33460 102614,-34801 102614,-35204 102934,-35639 103063,-35692 103101,-35913 102347,-37010 102530,-37398 102690,-37924 102629,-38404 102896,-38746 102896,-39059 102698,-39455 102583,-39897 102720,-39958 102667,-40072 102400,-40140 102286,-40376 102309,-40826 102172,-41070 101677,-41572 101418,-41466 101159,-41473 100847,-41329 100458,-41915 99727,-42662 99300,-43225 99453,-43477 99565,-43453 99811,-43385 99933,-44147 99719,-44475 99626,-44753 99516,-44815
-Falkenberg - Liepe: Qualität (vermutlich nur mäßig?)?	? 48475,46175 48425,46625 48662,47600 49237,48087 49400,48437 49750,48625 49906,48904
+Falkenberg - Liepe: Qualität (vermutlich nur mäßig?)?	? 48462,46175 48391,46553 48662,47600 49237,48087 49400,48437 49742,48660 49895,48909
 Crossiw - Gellmersdorf: Qualität?	? 54909,66268 54715,64807 54474,64173 54646,63795 54622,63448
 Gellmersdorf - Lüderitz: Qualität?	? 54723,63351 54755,63252 54571,63040 54852,61486 55328,60452 55302,59998
 #: note: Straßenbau bis 13.6.2009 (mit Vollsperrung), evtl. danach gut geeignet?
@@ -2300,7 +2296,7 @@ Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35362,48503 35312,48225 354
 #: XXX Genaue Wegführung?
 Eberswalde - Spechthausen: Qualität?	? 35428,47961 35306,47832 35244,47675 35241,47475 35152,47200 35172,47111
 #: XXX Genaue Wegführung?
-Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35339,46996 35149,46710 35168,46488 35218,46368 35149,46126 35066,45479
+Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35339,46996 35149,46710 35168,46488 35218,46368 35149,46126 35069,45501
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48065,112982 49449,113574 49802,113824
 Klockow - Neuenfeld: Qualität?	? 49573,112426 49739,112949 49802,113824
 Bäkepromenade (Stahnsdorf): Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2794,-1628
@@ -2426,8 +2422,6 @@ Herzsprung - Schmargendorf: Qualität?	? 47863,64274 47267,64435 47123,64587 4695
 Schmargendorf - Angermünde: Qualität?	? 47045,64773 47328,65204 47831,65501 48433,66233 48570,66705 48783,67071 49065,67154
 #: XXX laut osm grade3 bis grade4
 Albertshof, Alternative: Qualität?	? 24376,31986 24478,31918 25240,31808 25630,31782 26022,31789 27434,32400
-#: XXX laut osm track
-Niederfinow - Bralitz: Qualität?	? 46094,49871 46368,49825 46909,49947 47183,50000 47511,50259 47641,50237 47999,50427 48143,50747 48237,50875
 Am Finowkanal: Qualität?	? 36364,48599 35933,48623 35742,48774
 Am Finowkanal: Qualität?	? 35659,48744 35575,48942 35377,49117 35256,49291 34926,49455 34716,49330 34630,49178 34522,49218 34478,49056 34305,48961 33957,48882 33701,49041 33526,49025 33221,48820 33208,48792 32909,48774 32715,48723 32382,48718 32162,48797 32002,48904 31820,48919 31482,49109
 Am Finowkanal: Qualität?	? 31495,49233 31320,49232 31043,49307 30654,49330 30397,49239 30296,49224 30050,49297 29787,49248 29621,49275 29449,49272 29176,49323 28895,49277 28712,49399 28634,49403 28618,49522 27493,49402 27345,49402 26913,49272 26639,49254 26415,49336 26442,49414 26551,49728 26563,49921 26685,50141
@@ -2465,16 +2459,15 @@ Tempelfelde - Beiersdorf: Qualität?	? 31420,34133 31827,33780 33310,33365 35441,
 Schönfeld - Tempelfelde: Qualität?	? 32875,31143 32722,31273 33310,33365
 #: XXX: laut "Berliner Umland" bis Abzweig Grüntal mäßig geeignet:
 #: XXX: laut osm: residential
-Melchow - Schönholz: Qualität?	? 30143,41500 30175,41193 30493,41075 30993,41018
+Melchow - Schönholz: Qualität?	? 30142,41506 30175,41193 30493,41075 30993,41018
 #: XXX: laut "Berliner Umland" witterungsabhängige Strecke:
 #: XXX: laut osm: track, grade3
 Melchow - Schönholz: Qualität?	? 30993,41018 31343,41112 32006,41150 32862,41531 33218,41606 33768,41868 33918,41987
 #: XXX: laut "Berliner Umland" mäßig geeignet (Autoverkehr?)
-#: XXX: laut osm: tertiary
-Schönholz - Spechthausen: Qualität?	? 33918,41987 34200,42181 34323,42461 34218,43747 34081,44856
+Schönholz - Spechthausen: Qualität?	? 33918,41987 34200,42181 34323,42461 34218,43747
 #: XXX: laut "Berliner Umland" witterungsabhängige Strecke
 #: XXX: laut osm: track
-Schönholz - Spechthausen: Qualität? Ausschilderung? Ist die "Eiszeittour" ausgeschildert?	? 34323,42461 34462,42668 34868,42781 34750,43118 34843,43731 34906,43787 34975,43781 35031,43918 34856,44193 34681,44312 34706,44437 34562,44462 34556,44693 34500,44718 34512,44837 34612,44906 34706,45200 34625,45275
+Schönholz - Spechthausen: Qualität? Ausschilderung? Ist die "Eiszeittour" ausgeschildert?	? 34323,42461 34462,42668 34868,42781 34750,43118 34843,43731 34906,43787 34975,43781 35031,43918 34856,44193 34681,44312 34706,44437 34562,44462 34556,44693 34500,44718 34512,44837 34612,44906 34706,45200 34613,45287
 #: XXX: laut "Berliner Umland" mäßig geeignet (Autoverkehr?)
 #: XXX: laut osm: unclassified
 Grüntal - Melchow: Qualität?	? 32000,38200 32099,38418 31773,39105 31727,39438 31297,39883 31261,40051 31057,40384 30993,41018
@@ -2844,8 +2837,7 @@ Dahmeradweg: genauer Verlauf zwischen Freidorf und Briesen? Qualität? Wie verläu
 Stargarder Str. (Neubrandenburg): Qualität? Anscheinend ist die südliche Zufahrt für Autofahrer gesperrt?	? -1630,127445 -1676,127494 -1683,127549 -1690,127654 -1697,127769 -1703,127871 -1703,127973 -1702,128052 -1700,128072 -1703,128124 -1699,128173 -1689,128292
 Turmstr. (Neubrandenburg): Qualität?	? -1303,127882 -1547,127876 -1703,127871
 Treptower Str. (Neubrandenburg): Qualität?	? -1703,127871 -1806,127864 -1950,127864 -2105,127848 -2172,127845
-#: note: suggested by LBVS Meldenummer: 72301100
-Spechthausen - Eberswalde: existiert hier ein Radweg?	? 35066,45479 35484,45412 35535,45512 35743,45915 36000,45950 36318,46378 36950,46950
+# REMOVED (nein, existiert nicht) --- #: note: suggested by LBVS Meldenummer: 72301100 --- Spechthausen - Eberswalde: existiert hier ein Radweg?	? 35069,45501 35250,45477 35379,45422 35479,45420 35532,45548 35602,45727 35679,45846 35976,45951 36312,46413 36517,46549 36827,46838
 Sonnenweg: Qualität?	? 34046,155 34267,94 34309,59 34451,109 34606,-92 34905,-188 34972,-239 35100,-95
 Fürstenwalde: Qualität? Straßennamen?	? 55447,-4432 55677,-4489 55754,-4521 55793,-4521 55787,-4468 55740,-4453 55746,-4408 55888,-4384 56147,-4494 56517,-4606 56495,-4732
 #: XXX zumindest in Falkenberg asphaltiert, im weiteren Verlauf wahrscheinlich schlechte Qualität
@@ -2989,7 +2981,7 @@ Dorfstr. (Prädikow): Qualität?	? 51461,25613 51464,25638 51509,25735
 #: XXX benutzungspflichtiger Radweg am östlichen Ende
 Am Biotop: Qualität? Hat die gesamte Straße einen Radweg?	? 44686,20822 44589,20853 44493,20826 44382,20624 44286,20112
 #: XXX bei osm als "cycleway" gekennzeichnet
-Mescherin - Geesow: Qualität? Für Autos gesperrt?	? 78252,94587 78148,94601 77550,95042 77099,95089 76669,95096 76282,95232 75799,95375 75673,95450 75591,95547
+Mescherin - Geesow: Qualität? Für Autos gesperrt?	? 78252,94587 78148,94601 77550,95042 77099,95089 76669,95096 76276,95234 75799,95375 75673,95450 75591,95547
 #: XXX bei osm als "cycleway" gekennzeichnet
 Geesow - Tantow: Qualität? Für Autos gesperrt?	? 75591,95547 75140,95540 73772,95260 73406,95808 73163,95966 72969,96202
 Georgenthal - Falkenhagen: Qualität?	? 71321,1319 72556,1910
@@ -3006,11 +2998,10 @@ Jakobshagen - Warthe: Qualität?	? 19350,88924 19321,88931 19185,88853 18934,8888
 #: XXX zumindest das westliche Ende: Waldweg
 ausgeschilderte Radroute nach Cöthen: Qualität?	? 43189,42418 43891,42361 44539,42934 45390,43772 45812,43789
 Finowfurt - BU: Qualität? Teilweise für Autos gesperrt?	? 28634,49403 28574,48974 28325,48447 28042,48274 27854,47964 27438,47613 26932,47448 26862,47407 26769,47441 26568,47355 26396,47344 26297,47286
-Am Finowkanal - B2: Qualität des Zugangs? Wie lauten die Straßennamen?	? 38104,48410 38067,48461 38036,48441 37978,48486 37906,48495
 #: XXX Stimmt "Langerönner Mühle" als Ausgangspunkt? Oder besser Rüdnitz?
 Langerönner Mühle - Biesenthal: Qualität?	? 24208,35707 23784,36844 23713,37031 23610,39318
 Lobetal - Lanke: Qualität? Wie ist die genaue Wegführung (GPS-Track?)	? 23278,36072 23060,36601 23294,38443 22801,38830 22666,38835 22557,38801 21236,39862
-Wilhelmstr. (Eberswalde): Qualität? Gibt es hier einen Radweg?	? 37128,48358 37138,48216 37151,48074
+# REMOVED (kein Radweg) --- Wilhelmstr. (Eberswalde): Qualität? Gibt es hier einen Radweg?	? 37128,48358 37138,48216 37150,48083
 #: XXX von Klobbicke aus: schlechtes Kopfsteinpflaster, Q3; von Tuchen aus: asphaltiert, Q0:
 Mühlenweg (Klobbicke): Qualität?	? 36640,39793 36556,39917 36030,39721 35641,39643
 Reiterhof, Phöben - Havelfähre: Qualität des Radwegs?	? -25787,3228 -25765,3246 -25530,3223 -25511,3313 -25425,3364 -25345,3389 -25282,3433 -25191,3442 -25198,3540 -25262,3561 -25373,3653 -25460,3795 -25563,3940 -25592,3985 -25578,4203 -25471,4332 -25506,4488 -25723,4736 -25725,4734 -25726,4734 -25855,4868 -25942,5010 -26073,5175 -26215,5272 -26647,5444 -26755,5459 -26918,5525

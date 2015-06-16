@@ -1751,6 +1751,8 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen	0:15 47027,49988
+tragen	0:15 47004,50002
 tragen (4+3+4 Stufen) bzw. Naturrampe benutzen	0:15 4689,22058
 tragen (15 Stufen)	0:20 4620,22079
 tragen (2 x 4 Stufen)	0:15 2800,23966
@@ -2059,6 +2061,8 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Tor	BNP:3::trailer=5 68508,72337
+Tor	BNP:3::trailer=5 68373,72348
 Barriere	BNP:5::trailer=10 7422,10368
 Drängelgitter	BNP:3::trailer=10 5029,19945
 Drängelgitter	BNP:3::trailer=10 -12262,-393
@@ -2714,7 +2718,7 @@ Zufahrt zum Uferweg: gesperrt	2::inwork 7703,14582 7696,14577 7662,14579 7653,14
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136136549415/136549415/00119959/59-Anlagen/02/GA_1805_IV.pdf (mindestens bis Ende 2016)
-#: last_checked: 2015-05-29
+#: last_checked: 2015-06-14
 #: check_frequency: 180d
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 # 

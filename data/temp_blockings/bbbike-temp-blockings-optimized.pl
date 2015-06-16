@@ -1015,16 +1015,7 @@ userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_025247',
-         'until' => 1434313800,
-         'text' => 'Badstr. zwischen Pankstr. und Behmstr.: Veranstaltung, Straße gesperrt, 13.06.2015 bis 14.06.2015',
-         'from' => 1434081600,
-         'id' => 1046,
-         'data' => 'userdel	2::temp 8788,16264 8862,16208 8919,16154 8986,16092 9053,16029 9123,15963
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2827,22 +2818,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_018330',
-         'until' => 1434319199,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: mehrere Veranstaltungen, Straßen vollständig gesperrt (27.05.2015 06 Uhr bis 14.06.2015)',
-         'from' => 1432609200,
-         'id' => 2310,
-         'data' => '	2::temp 8538,12245 8610,12254
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8538,12245 8522,12239
-	2::temp 8538,12245 8522,12187
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3131,16 +3107,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_025248',
-         'until' => 1434333600,
-         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 11.06.2015 04 Uhr bis 15.06.2015 04 Uhr',
-         'from' => 1433988000,
-         'id' => 2439,
-         'data' => 'userdel	q4::temp 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3428,16 +3395,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_024332',
-         'until' => 1434380400,
-         'text' => 'Siemensstraße zwischen Wilhelminenhofstraße und Edisonstraße: Einbahnstraße wegen Bauarbeiten, in Richtung Osten gesperrt, vom 12.03.2015 bis 15.06.2015',
-         'from' => 1426057200,
-         'id' => 2587,
-         'data' => 'userdel	q4::inwork; 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3813,6 +3771,16 @@ userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
          'from' => 1433023200,
          'id' => 2712,
          'data' => 'userdel	q4::inwork; 2320,8722 2361,8608 2423,8427 2407,8148 2370,8109
+',
+         'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => undef,
+         'text' => 'Märkisches Ufer: Sperrung der Fahrbahn vor der chinesischen Botschaft, Schieben über Gehweg',
+         'from' => undef,
+         'id' => 2714,
+         'data' => 'userdel	q4::inwork 11325,12021 11275,12055
 ',
          'type' => 'handicap'
        }
