@@ -180,8 +180,10 @@ use GPS::Util; # for eliminate_umlauts
 	    require POSIX;
 	    my $timexml = $xmlnode->addNewChild(undef, 'time');
 	    $timexml->appendText(POSIX::strftime("%Y-%m-%dT%H:%M:%SZ", gmtime($epoch))); # %FT%T is not portable
-	    if ($args{autoskipcmt}) { # if the comment was recognized as a datetime, then there's no need to dump it also as a comment
-		$args{skipcmt} = 1;
+	    if (!$wpt->DateTime) {
+		if ($args{autoskipcmt}) { # if the comment was recognized as a datetime, then there's no need to dump it also as a comment
+		    $args{skipcmt} = 1;
+		}
 	    }
 	}
 
@@ -977,9 +979,13 @@ sub body_as_string {
 	}
 	$s .= "!W:\n";
 	foreach my $wpt (@{ $self->Waypoints }) {
+	    my $cmt_or_dt = (defined $wpt->DateTime ? $wpt->DateTime :
+			     defined $wpt->Comment ? $wpt->Comment : "");
+	    my $maybe_cmt = (defined $wpt->DateTime && defined $wpt->Comment ? $wpt->Comment : undef);
 	    $s .= join("\t",
 		       $wpt->Ident,
-		       (defined $wpt->Comment ? $wpt->Comment : ""),
+		       (defined $maybe_cmt ? $maybe_cmt : ()),
+		       $cmt_or_dt,
 		       $wpt->_coord_output($self),
 		       (defined $wpt->Altitude ? "alt=".$wpt->Altitude : ()),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
@@ -999,10 +1005,13 @@ sub body_as_string {
 	    $s .= $self->_track_attrs_as_string . "\n";
 	}
 	foreach my $wpt (@{ $self->Track }) {
+	    my $cmt_or_dt = (defined $wpt->DateTime ? $wpt->DateTime :
+			     defined $wpt->Comment ? $wpt->Comment : "");
+	    my $maybe_cmt = (defined $wpt->DateTime && defined $wpt->Comment ? $wpt->Comment : undef);
 	    $s .= join("\t",
 		       (defined $wpt->Ident ? $wpt->Ident : ""),
-		       (defined $wpt->DateTime ? $wpt->DateTime :
-			defined $wpt->Comment ? $wpt->Comment : ""),
+		       (defined $maybe_cmt ? $maybe_cmt : ()),
+		       $cmt_or_dt,
 		       $wpt->_coord_output($self),
 		       (defined $wpt->Altitude ? ($wpt->Accuracy ? '~'x$wpt->Accuracy : '') . $wpt->Altitude : ""),
 		       (defined $wpt->HiddenAttributes ? $wpt->DumpHiddenAttributes : ()),
@@ -1016,9 +1025,13 @@ sub body_as_string {
 	}
 	$s .= $self->_track_attrs_as_string . "\n";
 	foreach my $wpt (@{ $self->Track }) {
+	    my $cmt_or_dt = (defined $wpt->DateTime ? $wpt->DateTime :
+			     defined $wpt->Comment ? $wpt->Comment : "");
+	    my $maybe_cmt = (defined $wpt->DateTime && defined $wpt->Comment ? $wpt->Comment : undef);
 	    $s .= join("\t",
 		       $wpt->Ident,
-		       (defined $wpt->Comment ? $wpt->Comment : ""),
+		       (defined $maybe_cmt ? $maybe_cmt : ()),
+		       $cmt_or_dt,
 		       $wpt->_coord_output($self),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
 		       (defined $wpt->HiddenAttributes ? $wpt->DumpHiddenAttributes : ()),

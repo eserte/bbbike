@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 51;
+plan tests => 67;
 
 use_ok 'GPS::GpsmanData::Any';
 
@@ -79,7 +79,7 @@ EOF
 	is scalar($gps->flat_track), 2, 'Found two waypoints in first track';
 	my $wpt = ($gps->flat_track)[0];
 	is($wpt->Latitude, '52.5086944444', 'First latitude as expected');
-	is($wpt->Comment, '13-Mar-2011 09:19:00', 'Time in Comment field as expected');
+	is($wpt->DateTime, '13-Mar-2011 09:19:00', 'Time in Comment field as expected');
 
 	## Roundtrip does not work here: 1.0 vs 1.1, and metadata is
 	## handled differently in gpx 1.1
@@ -91,7 +91,7 @@ EOF
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my $wpt = ($gps->flat_track)[0];
-	is($wpt->Comment, '13-Mar-2011 07:19:00', 'Time in Comment field with timeoffset');
+	is($wpt->DateTime, '13-Mar-2011 07:19:00', 'Time in Comment field with timeoffset');
     }
 }
 
@@ -113,7 +113,7 @@ EOF
 	is $gps->Chunks->[0]->TrackAttrs->{'srt:device'}, 'eTrex 30', 'preserve creator into srt:device';
 
 	my $wpt = $gps->Chunks->[0]->Track->[0];
-	is $wpt->Comment, '22-May-2014 07:25:58';
+	is $wpt->DateTime, '22-May-2014 07:25:58';
 
 	{
 	    # Roundtrip check, without gpxx extensions
@@ -151,10 +151,10 @@ EOF
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my $wpt1 = $gps->Chunks->[0]->Track->[0];
-	is $wpt1->Comment, '22-May-2014 09:25:58', 'timeoffset test with trk file';
+	is $wpt1->DateTime, '22-May-2014 09:25:58', 'timeoffset test with trk file';
 
 	my $wpt2 = $gps->Chunks->[1]->Track->[0];
-	is $wpt2->Comment, '22-May-2014 17:48:11', 'timeoffset test in 2nd chunk';
+	is $wpt2->DateTime, '22-May-2014 17:48:11', 'timeoffset test in 2nd chunk';
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 2), 'Roundtrip check for trk file with timeoffset';
     }
@@ -164,7 +164,7 @@ EOF
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my $wpt = $gps->Chunks->[0]->Track->[0];
-	is $wpt->Comment, '22-May-2014 09:25:58', 'automatic timeoffset test with trk file';
+	is $wpt->DateTime, '22-May-2014 09:25:58', 'automatic timeoffset test with trk file';
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 'automatic'), 'Roundtrip check for trk file with automatic timeoffset selection';
     }
@@ -193,7 +193,7 @@ EOF
 	is $wpt->Longitude, 13.384399;
 	is $wpt->Latitude, 52.532055;
 	is $wpt->Ident, '218';
-	is $wpt->Comment, "04-Jun-2014 07:46:31";
+	is $wpt->DateTime, "04-Jun-2014 07:46:31";
 	is $wpt->Symbol, 'user:7687';
 	is $wpt->Altitude, 47.636337;
 
@@ -219,7 +219,7 @@ EOF
 	my $wpt = $gps->Chunks->[0]->Waypoints->[0];
 	isa_ok $wpt, 'GPS::Gpsman::Waypoint';
 	is $wpt->Ident, '218'; # just check if we're looking at the expected waypoint
-	is $wpt->Comment, "04-Jun-2014 09:46:31", 'timeoffset works';
+	is $wpt->DateTime, "04-Jun-2014 09:46:31", 'timeoffset works';
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 2), 'Roundtrip check for wpt file with timeoffset';
     }
@@ -230,9 +230,54 @@ EOF
 	my $wpt = $gps->Chunks->[0]->Waypoints->[0];
 	isa_ok $wpt, 'GPS::Gpsman::Waypoint';
 	is $wpt->Ident, '218'; # just check if we're looking at the expected waypoint
-	is $wpt->Comment, "04-Jun-2014 09:46:31", 'timeoffset works with automatic selection';
+	is $wpt->DateTime, "04-Jun-2014 09:46:31", 'timeoffset works with automatic selection';
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile, timeoffset => 'automatic'), 'Roundtrip check for wpt file with automatic timeoffset selection';
+    }
+}
+
+{
+    my $sample_wpt_gpx = <<'EOF';
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="eTrex 30" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd"><metadata><link href="http://www.garmin.com"><text>Garmin International</text></link><time>2014-06-04T07:46:31Z</time></metadata><wpt lat="52.532055" lon="13.384399"><ele>47.636337</ele><time>2014-06-04T07:46:31Z</time><name>218</name><cmt>This is a comment</cmt><sym>Navaid, White/Green</sym></wpt></gpx>
+EOF
+
+    my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
+
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+
+	my @chunks = @{ $gps->Chunks };
+	is scalar(@chunks), 1, 'got one chunk';
+	my @wpts = @{ $chunks[0]->Waypoints };
+	is scalar(@wpts), 1, 'got one waypoint';
+	my $wpt = $wpts[0];
+	isa_ok $wpt, 'GPS::Gpsman::Waypoint';
+
+	is $gps->Chunks->[0]->TrackAttrs->{'srt:device'}, 'eTrex 30', 'preserve creator into srt:device';
+
+	is $wpt->Longitude, 13.384399;
+	is $wpt->Latitude, 52.532055;
+	is $wpt->Ident, '218';
+	is $wpt->DateTime, "04-Jun-2014 07:46:31";
+	is $wpt->Comment, 'This is a comment';
+	is $wpt->Symbol, 'buoy_white_green';
+	is $wpt->Altitude, 47.636337;
+
+	{
+	    # Roundtrip check, with gpxx extensions
+	    my $gpx2 = $gps->as_gpx; # default is gpxx => 1
+	    xmllint_string($gpx2);
+
+	    like $gpx2, qr{creator="eTrex 30"}, 'creator re-created';
+
+	    # Still need to normalize, but without <extensions> now
+	    (my $normalized_expected = $sample_wpt_gpx) =~ s{^.*?<wpt}{<wpt}s;
+	    (my $normalized_got = $gpx2) =~ s{^.*?<wpt}{<wpt}s;
+	    eq_or_diff $normalized_got, $normalized_expected;
+	}
+
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file with waypoint';
     }
 }
 

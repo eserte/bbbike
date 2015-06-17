@@ -162,12 +162,15 @@ sub load_gpx {
 	if ($wpt_or_trk->name eq 'wpt') {
 	    my $wpt_in = $wpt_or_trk;
 	    my $name;
+	    my $comment;
 	    my $epoch;
 	    my $gpsman_symbol;
 	    my $ele;
 	    for my $wpt_child ($wpt_in->children) {
 		if ($wpt_child->name eq 'name') {
 		    $name = $wpt_child->children_text;
+		} elsif ($wpt_child->name eq 'cmt') {
+		    $comment = $wpt_child->children_text;
 		} elsif ($wpt_child->name eq 'ele') {
 		    $ele = $wpt_child->children_text;
 		} elsif ($wpt_child->name eq 'time') {
@@ -193,18 +196,22 @@ sub load_gpx {
 	    $wpt->Latitude($lat);
 	    $wpt->Longitude($lon);
 	    $wpt->Altitude($ele) if defined $ele;
-	    $wpt->unixtime_to_Comment($epoch, $timeoffset) if $epoch;
+	    $wpt->unixtime_to_DateTime($epoch, $timeoffset) if $epoch;
+	    $wpt->Comment($comment) if defined $comment;
 	    $wpt->Symbol($gpsman_symbol) if defined $gpsman_symbol;
 	    push @wpts, $wpt;
 	} elsif ($wpt_or_trk->name eq 'trk') {
 	    my $trk = $wpt_or_trk;
 	    my $name;
+	    my $comment;
 	    my $trkseg;
 	    my $track_display_color;
 	    my $is_first_segment = 1;
 	    for my $trk_child ($trk->children) {
 		if ($trk_child->name eq 'name') {
 		    $name = $trk_child->children_text;
+		} elsif ($trk_child->name eq 'cmt') {
+		    $comment = $trk_child->children_text;
 		} elsif ($trk_child->name eq 'extensions') {
 		    $track_display_color = $trk_child->findvalue('./gpxx:TrackExtension/gpxx:DisplayColor');
 		    if (defined $track_display_color) {
@@ -221,6 +228,7 @@ sub load_gpx {
 		    if ($is_first_segment) {
 			$trkseg->IsTrackSegment(0);
 			$trkseg->Name($name);
+			$trkseg->Comment($comment) if defined $comment;
 			$trkseg->TrackAttrs({
 					     (defined $track_display_color ? (colour => $track_display_color) : ()),
 					     (defined $gps_device ? ('srt:device' => $gps_device) : ()),
@@ -246,7 +254,7 @@ sub load_gpx {
 				    my $time = $trkpt_child->children_text;
 				    my $epoch = $gpx_time_to_epoch->($time);
 				    $first_coordinate_event->($lon, $lat, $epoch, sub { $trkseg->TimeOffset($timeoffset) }) if $first_coordinate_event;
-				    $wpt->unixtime_to_Comment($epoch, $trkseg);
+				    $wpt->unixtime_to_DateTime($epoch, $trkseg);
 				} elsif ($trkpt_child->name eq 'srt:accuracy') {
 				    $accuracy = $trkpt_child->children_text || 0;
 				}
