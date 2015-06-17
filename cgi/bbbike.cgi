@@ -3441,6 +3441,7 @@ sub search_coord {
     ($velocity_kmh) = $velocity_kmh =~ m{(\d+(?:\.\d+)?)}; # input validation
     $velocity_kmh += 0; # protect from things like "00"
     $velocity_kmh ||= $speed_default;
+    $q->param("pref_speed", $velocity_kmh); # possibly correct query param
     $extra_args{Velocity} = $velocity_kmh/3.6; # convert to m/s
     # XXX Anzahl der Tragestellen zählen...
 
