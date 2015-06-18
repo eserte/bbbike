@@ -21267,11 +21267,12 @@ userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-17 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-07-20 23:59:59"),
+     { from  => $isodate2epoch->("2015-07-15 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-07-19 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 7]],
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (17.07.2014 bis 20.07.2014)',
+       recurrences => [['yearly', days => 16, months => 7]],
+       source_id => 'http://heyevent.de/event/6yi4pyoxrrtxca/tegeler-hafenfest-2015-jetzt-freunde-einladen',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (16.07.2015 bis 19.07.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
@@ -24084,8 +24085,8 @@ userdel	2::inwork 7306,13418 7451,13504 7630,13584
 EOF
      },
      { from  => 1429736139, # 2015-04-22 22:55
-       until => 1434052361, # 1437429600, # 2015-07-21 00:00
-       text  => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 20.07.2015 ',
+       until => $isodate2epoch->("2015-07-12 23:59:59"), # 1434052361, # 1437429600, # 2015-07-21 00:00
+       text  => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 12.07.2015 ',
        type  => 'gesperrt',
        source_id => '157300093',
        data  => <<EOF,

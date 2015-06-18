@@ -3055,7 +3055,26 @@ userdel	q3::inwork 15261,10738 15272,10790 15279,10862
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://heyevent.de/event/6yi4pyoxrrtxca/tegeler-hafenfest-2015-jetzt-freunde-einladen',
+         'data' => 'userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
+',
+         'periodic' => 1,
+         'until' => 1437343199,
+         'from' => 1436911200,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              16,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (16.07.2015 bis 19.07.2015)',
+         'id' => 2420,
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'IM_019747',
@@ -3664,7 +3683,16 @@ userdel	2::inwork 7306,13418 7451,13504 7630,13584
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => '157300093',
+         'until' => 1436738399,
+         'text' => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 12.07.2015 ',
+         'from' => 1429736139,
+         'id' => 2701,
+         'data' => 'userdel	2::inwork 51806,78469 51798,78477 51668,78605
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'source_id' => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
