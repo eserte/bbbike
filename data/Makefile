@@ -191,6 +191,7 @@ persistent-tmp:	fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/XXX.bbd \
 		${PERSISTENTTMPDIR}/plz-b.bbd \
 		${PERSISTENTTMPDIR}/berlin-fragezeichen-poi.gpx \
+		${PERSISTENTTMPDIR}/.check_data_test_mount \
 		osm-watch-lists
 
 rare-persistent-tmp:	\
@@ -1250,6 +1251,13 @@ ${PERSISTENTTMPDIR}/osm_watch_list:		*-orig ${PERSISTENTTMPDIR}/bbbike-temp-bloc
 ${PERSISTENTTMPDIR}/osm_watch_list_brandenburg:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	-@$(WRITEABLE) $@
 	${MISCSRCDIR}/bbd_to_osm_watch_list -filter-region brb *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	mv $@~ $@
+	-@$(READONLY) $@
+
+${PERSISTENTTMPDIR}/.check_data_test_mount:	${BBBIKEDIR}/t/data-test/strassen \
+						${BBBIKEDIR}/t/data-test/hoehe
+	-@$(WRITEABLE) $@
+	${STEIGUNG_STAT} -str ${BBBIKEDIR}/t/data-test/strassen -i ${BBBIKEDIR}/t/data-test/hoehe -die-on-fatal -o $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
