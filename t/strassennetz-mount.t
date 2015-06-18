@@ -68,8 +68,10 @@ my $route_point_without_mount = '22169,14'; # Waltersdorfer Str.
     # with slope optimization
     my($path) = $net->search($c1, $c2, %extra_args);
     $path = [ map { join ",", @$_ } @$path ];
-    ok( !(grep { $_ eq $route_point_with_mount } @$path), 'path not via Buntzelstr. (because of mount)');
-    ok( (grep { $_ eq $route_point_without_mount } @$path), 'path via Waltersdorfer Str. (because of mount)');
+    ok( !(grep { $_ eq $route_point_with_mount } @$path), 'path not via Buntzelstr. (because of mount)')
+	or diag(explain($path));
+    ok( (grep { $_ eq $route_point_without_mount } @$path), 'path via Waltersdorfer Str. (because of mount)')
+	or diag(explain($path));
 }
 
 {
