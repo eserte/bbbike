@@ -400,7 +400,7 @@ Oberlandgarten	1 11246,6403 11230,6413 11238,6470 11253,6473 11269,6466 11264,64
 Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247,6687 9338,6694 9512,6652
 Baumgartensteg	1 -2882,13474 -2937,13399
 Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
-Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089
+Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20707,6098
 Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 Zellerfelder Str.	1 11526,18929 11468,19106
 Storkower - Einsteinstr.	1 13110,14879 13143,14935 13185,14912 13151,14855
@@ -804,6 +804,8 @@ Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,
 Kriemhildstr.	1s 17300,12173 17314,12265
 Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 Schillerhof	1 7069,17204 6928,17154
+Wartenbergstr.	1s 15423,11667 15337,11639 15328,11636
+Wartenbergstr.	1s 15328,11636 15300,11584
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2368,6 +2370,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Drängelgitter (2x)	BNP:5:2:trailer=10 22187,13304
 Drängelgitter	BNP:5:-128:trailer=10 13940,23486
 Drängelgitter	BNP:5:-128:trailer=10 13963,23505
 Tor	BNP:3:-123:trailer=5 68508,72337
@@ -2769,6 +2772,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Schleuse - Lindenufer: wegen Bauarbeiten gesperrt	2::inwork -2944,14652 -2922,14642 -2907,14534 -2926,14496 -2964,14478
 Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6561,13151 6556,13240 6526,13327
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
@@ -2786,7 +2790,6 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17610,-330 17651,-393
 Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork 7769,4315 7795,4242
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7818,13993 7917,14051 7962,13977 7866,13916
-Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	2::inwork 15300,11584 15220,11440
 Wasserstr. (Niederschöneweide): abgesperrt	2::inwork 17477,6031 17639,6227
 Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081

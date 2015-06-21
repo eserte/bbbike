@@ -2906,11 +2906,12 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'text' => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt',
          'from' => undef,
          'id' => 2372,
-         'data' => '#: note: geprüft am 2012-11-02 (gegen 22:30 - geschlossen)
-#: note: und am 2012-11-15 (gegen 21:00 - offen)
-#: note: und am Sonntag, den 2012-06-02 (vormittags - geschlossen)
-#: note: und am Sonntag, den 2015-03-08 (vormittags - offen)
-#: note: und am Sonntag, den 2015-05-10 (nachmittags - offen)
+         'data' => '#: note: geprüft am Fr, den 2012-11-02, gegen 22:30: geschlossen
+#: note: geprüft am Do, den 2012-11-15, gegen 21:00: offen
+#: note: geprüft am So, den 2012-06-02, vormittags: geschlossen
+#: note: geprüft am So, den 2015-03-08, vormittags: offen
+#: note: geprüft am So, den 2015-05-10, nachmittags: offen
+#: note: geprüft am So, den 2015-06-21, vormittags: offen
 userdel	2::night 14838,11410 14792,11391
 ',
          'type' => 'gesperrt'
@@ -3583,18 +3584,7 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_024088',
-         'until' => 1435669200,
-         'text' => 'Gürtelstr. - Möllendorffstr.: das Linksabbiegen von der Frankfurter Allee in die Möllendorffstr. und die Querung der Frankfurter Allee von der Gürtelstr. kommend ist nicht mehr direkt möglich, ggfs. Fußgängerampeln auf der westlichen Seite benutzen',
-         'from' => undef,
-         'id' => 2679,
-         'data' => '# REMOVED --- #: XXX "für mehrere Monate" vvv --- #: XXX evtl. bis 30. April 2015 --- #: last_checked: 2015-04-26 vvv --- #: next_check: 2015-04-30 vvv
-#: XXX: besteht die Einschränkung noch? Siehe auch IM_025311 (bis 15.07.)
-	3 15294,11964 15361,12071 15420,12178
-	3 15117,12106 15361,12071 15420,12178
-'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -3780,7 +3770,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-05-27 vvv
+#: last_checked: 2015-06-20 vvv
 #: check_frequency: 21d vvv
 userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020

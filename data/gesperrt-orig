@@ -531,7 +531,7 @@ Alt-Tempelhof	1 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 9247
 Baumgartensteg	1 -2882,13474 -2937,13399
 #: by: Brüning:
 Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
-Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20708,6089
+Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20707,6098
 #: by: Butch Coolidge:
 Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 #: by: Theo Schallon:
@@ -1111,6 +1111,12 @@ Kriemhildstr.	1s:q3 17300,12173 17314,12265
 Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 #: by: olaf skeries
 Schillerhof	1 7069,17204 6928,17154
+#: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird vvv
+#: last_checked: 2015-06-21 vvv
+Wartenbergstr.	1s:q1 15423,11667 15337,11639 15328,11636
+Wartenbergstr.	1s:q2 15328,11636 15300,11584
+#: last_checked ^^^
+#: XXX ^^^
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2061,6 +2067,7 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter (2x)	BNP:5::trailer=10 22187,13304
 #: by: radzeit 2/2015 vvv
 Drängelgitter	BNP:5::trailer=10 13940,23486
 Drängelgitter	BNP:5::trailer=10 13963,23505
@@ -2605,6 +2612,11 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php
+#: XXX bis voraussichtlich Ende Oktober 2015, danach wird eventuell auch der Havelradweg über diesen Weg geführt
+#: next_check: 2015-10-25
+Schleuse - Lindenufer: wegen Bauarbeiten gesperrt	2::inwork -2944,14652 -2922,14642 -2907,14534 -2926,14496 -2964,14478
+# 
 #: XXX Bauarbeiten im Park dauern bis 2016
 #: last_checked: 2015-07-08
 #: check_frequency: 60d
@@ -2684,11 +2696,7 @@ Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
 #: next_check: 2016-12-31
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7818,13993 7917,14051 7962,13977 7866,13916
 # 
-#: XXX es gibt schon permanente Sackgassenschilder
-#: osm_watch: way id="334605047" version="2"
-#: last_checked: 2015-04-26
-#: check_frequency: 60d
-Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	2::inwork 15300,11584 15220,11440
+# REMOVED (wieder offen) --- #: XXX es gibt schon permanente Sackgassenschilder --- #: osm_watch: way id="334605047" version="2" --- #: last_checked: 2015-04-26 --- #: check_frequency: 60d --- Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	2::inwork 15300,11584 15220,11440
 # 
 #: last_checked: 2015-04-04 vvv
 #: check_frequency: 60d vvv
@@ -2969,7 +2977,7 @@ Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 #: by: Kai Wagner
 #: confirmed_by: srt
 #: XXX hier entsteht wohl eine neue Filiale von Möbel Kraft
-#: last_checked: 2015-01-04
+#: last_checked: 2015-06-20
 #: check_frequency: 360d
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 #

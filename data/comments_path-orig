@@ -299,8 +299,13 @@ zur Kietzer Str.: gegenüber der Mauritiuskirchstr. in die Grünanlage einfahren	C
 Zufahrt zum Gartenbauamt	CP2; 9150,9152 9080,9163
 Ellwanger Str. - Attilastr.: Attilastr. in Höhe der Neckarsulmer Str. überqueren	CP; 7382,4503 7450,4397 7482,4416 7601,4485
 Attilastr. - Ellwanger Str.: bereits an der Rottweiler Str. die Straßenseite wechseln	PI; 7368,4342 7410,4373 7450,4397 7382,4503
+#: XXX direkte Überquerung scheint in Bau zu sein vvv
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
+#: last_checked: 2015-06-21 vvv
 Wuhlewanderweg/Landsberger Allee: den linken Bürgersteig bis zur Ampel benutzen	CP; 22657,16287 22631,16215 22696,16208
 Wuhlewanderweg/Landsberger Allee: bereits an der Ringenwalder Str. die Landsberger Allee überqueren	PI; 22495,16165 22631,16215 22657,16287
+#: last_checked ^^^
+#: XXX ^^^
 # REMOVED (-> routing_helper) --- Sewanstr. - Bahndamm: An der Kreuzung Am Tierpark/Sewanstr. auf die "Tierpark"-Straßenseite wechseln	PI; 18631,10167 18690,10016 18703,9997 18715,10003 18773,10028
 Bahndamm - Am Tierpark: auf dem linken Gehweg bis zur Ampel Gregoroviusweg fahren	CP; 18773,10028 18715,10003 18703,9997 18742,9903
 # REMOVED (lohnt sich nicht; erheblicher Umweg, und wird leider nicht im Routing gut reflektiert) --- nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren und dort die Straße überqueren	PI; 18577,10023 18690,10016 18703,9997 18715,10003 18773,10028

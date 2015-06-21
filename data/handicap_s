@@ -39,7 +39,9 @@ Kˆbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11
 Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12918,8232
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
+Deutschmeisterstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15370,12264 15353,12280 15320,12375
 Blankenburger Str.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
+Zimmermannstraﬂenbr¸cke: Bau einer neuen Br¸cke, Radfahrer m¸ssen den Gehweg bzw. Behelfsbr¸cke benutzen	q4::inwork 21351,9066 21365,9059 21385,9049
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -449,12 +451,12 @@ S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20116,16303
 Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
 Wuhlewanderweg: Fuﬂg‰nger	q1 22441,15118 22573,15043 22741,14761 22806,14631 22836,14520 22843,14452 22827,14356 22839,14149 22825,14109 22607,13890 22562,13855 22462,13726 22457,13713 22447,13690 22359,13599 22295,13530
 Wuhlewanderweg: enge Unterf¸hrung	q3 22359,13599 22259,13508
-Wuhlewanderweg: Fuﬂg‰nger	q1 22295,13530 22259,13508 22191,13414 22221,13027 22196,12961 22036,12367 21998,12204
+Wuhlewanderweg: Fuﬂg‰nger	q1 22295,13530 22259,13508 22191,13414 22187,13304 22211,13040 22196,12961 22036,12367 21998,12204
 Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
 Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22268,11285
 Wuhlewanderweg: enge Unterf¸hrung	q3 22268,11285 22279,11272 22270,11210
 Wuhlewanderweg: Fuﬂg‰nger	q1 22270,11210 22236,11208
-Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21590,7414 21613,7521 21620,7647 21604,7715 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21185,8483 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21351,9066
+Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21351,9066
 Wuhlewanderweg: Fuﬂg‰nger	q1 21385,9049 21467,9236 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fuﬂg‰nger	q1 22059,10782 22103,10814 22160,10834
@@ -539,7 +541,7 @@ Carl-Herz-Ufer: gemeinsamer Fuﬂ- und Radweg	q0 10066,10071 10168,10085
 M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 23225,11649 23032,11729
 M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 22886,11776 22701,11843
 Dorfstr. - Wuhletal: steile Rampe oder 15 Stufen	q4 22112,11936 22104,11925
-Unterf¸hrung Wuhletal: Fuﬂg‰nger	q2 21970,12153 21984,12046 21936,12022
+Unterf¸hrung Wuhletal: Fuﬂg‰nger	q2 21970,12153 21972,12038 21936,12022
 Park Biesdorf: Fuﬂg‰nger	q2 21150,11925 21132,11943 21100,11960 20862,12027 20810,12031
 Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20862,12027 20836,11768
 (Schulstr. - Braunsdorfstr.): sehr eng	q3 20413,11953 20396,11983
@@ -1480,6 +1482,8 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 (Giselhersteig - Nibelungenring): enger Weg	q3 17386,12456 17382,12421
 (Giselhersteig - Hadburgpfad): enger Weg	q3 17491,12439 17486,12407
 (Zufahrt zum Stadtbad Tiergarten): Parkplatzverkehr	q2 7332,13367 7306,13418
+(westlicher Wuhlewanderweg - ˆstlicher Wuhlewanderweg): Fuﬂg‰nger	q1 21992,13045 22141,13036 22171,12965
+(westlicher Wuhlewanderweg - ˆstlicher Wuhlewanderweg): enge Br¸cke, Fuﬂg‰nger	q3 22171,12965 22196,12961
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -2366,6 +2370,8 @@ Rosenfelder Ring: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 
 Parkaue: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15406,12444 15408,12394 15370,12264
 Gretel-Bergmann-Weg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; -1132,12268 -1288,12178
 Kriemhildstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 17300,12173 17314,12265
+Wartenbergstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 15423,11667 15337,11639 15328,11636
+Wartenbergstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 15328,11636 15300,11584
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25802,4681 25802,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
