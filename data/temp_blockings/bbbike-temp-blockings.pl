@@ -24232,7 +24232,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Fahrbahn gesperrt?
-#: last_checked: 2015-06-17
+#: last_checked: 2015-06-24
 userdel	q4::inwork 11325,12021 11275,12055
 EOF
      },

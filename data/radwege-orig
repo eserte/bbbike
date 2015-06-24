@@ -1448,7 +1448,7 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW3;RW1 13493,11217 13541,11355
 #: next_check_id: WARSCHAUER-2014
 #: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein)
-#: last_checked: 2015-06-21
+#: last_checked: 2015-06-24
 #: check_frequency: 7d
 	RW0;RW1 13541,11355 13588,11490
 #: next_check_id: WARSCHAUER-2014
@@ -4603,3 +4603,5 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 asphaltiert	RW1;RW9 18738,16957 19108,17347 19183,17444 19202,17471 19529,17902 19611,17999 19668,18005 19820,18091 19845,18120 19875,18182
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.312664.php
 	RW6;RW6 -1755,22975 -1633,22950 -1506,22923
+einige Meter vor der Ampel mit Radspur	RW0; 6716,11439 6825,11486
+	RW4;RW3 8947,10956 9234,11056

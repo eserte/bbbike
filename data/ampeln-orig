@@ -61,8 +61,11 @@
 	X 9196,11165
 	X 9492,11209
 	X 9388,10393
+#: off: night (seen 2015-06-25)
 	X 9770,10590
+#: off: night (seen 2015-06-25)
 	X 9323,10791
+#: off: night (seen 2015-06-25)
 	X 9275,10932
 	X 9873,10285
 	X 10020,11262
@@ -125,6 +128,7 @@
 #: XXX_prog: Ampel gilt nicht für Radfahrer
 #: note: Anforderungsampel
 	F 12545,10496
+#: off: night (seen 2015-06-25)
 	F 11130,10326
 	X 12341,10218
 	X 12229,10014
@@ -522,6 +526,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10527,13257
 	X 8119,12414
 	F 10155,12494
+#: off: night (seen 2015-06-25)
 	F 10689,10491
 	F 7631,9770
 	X 15117,12106
@@ -1125,7 +1130,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5477,9621
 	X 9701,11656
 #: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:50) vvv
+#: off: night (seen 2015-06-25)
 	X 14011,10812
+#: off: night (seen 2015-06-25)
 	F 14024,10861
 #: note ^^^
 	X 6445,9538
@@ -1177,6 +1184,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
 #: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55)
+#: off: night (seen 2015-06-25)
 	X 14134,11272
 	X 11785,13625
 	X 10897,17274
@@ -2794,7 +2802,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: IM_024012 vvv
-#: last_checked: 2015-06-05 vvv
+#: last_checked: 2015-06-24 vvv
 #: next_check: 2015-12-20 vvv
 	F 10703,11837
 	F 10656,11887
