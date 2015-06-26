@@ -932,7 +932,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd:	\
 		Makefile \
 		${SOURCE_TARGETS_SOURCES} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble --${doormode}-mode \
+	${PERL} ${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble --${doormode}-mode \
 	    --fragezeichen-mode fragezeichen-orig \
 	    --no-fragezeichen-mode \
 	    ${SOURCE_TARGETS_SOURCES:S|fragezeichen-orig||} \
@@ -946,7 +946,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd:	\
 		Makefile \
 		${SOURCE_TARGETS_SOURCES} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble \
+	${PERL} ${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble \
 	    --coloring '#6c0000 +1w #b05555 +1m #ec8888 +6m #f2a0a0 +1y #fcc8c8 +5y #fdd8d8 +100y #fde0e0'\
 	    --outdoor-mode \
 	    --fragezeichen-mode fragezeichen-orig \
@@ -999,22 +999,22 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd:	\
 
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/fragezeichen2org.pl *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	${PERL} ${MISCSRCDIR}/fragezeichen2org.pl *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
 # exact distances, but slower, especially if dist.db is missing or fresh
 fragezeichen-nextcheck.org-exact-dist:
 	-@$(WRITEABLE) ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org
-	${MISCSRCDIR}/fragezeichen2org.pl --plan-dir=${HOME}/.bbbike/gps_uploads --with-searches-weight --dist-dbfile=${PERSISTENTTMPDIR}/dist.db *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org~
+	${PERL} ${MISCSRCDIR}/fragezeichen2org.pl --plan-dir=${HOME}/.bbbike/gps_uploads --with-searches-weight --dist-dbfile=${PERSISTENTTMPDIR}/dist.db *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org~
 	mv ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org~ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org
 	-@$(READONLY) ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org
 
 # Like fragezeichen-nextcheck.org-exact-dist, but using the home coordinate for both start/goal
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck-home-home.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	-@$(WRITEABLE) $@
-	centerc=`perl -nle 'm{centerc.*\x27(\d+,\d+)\x27} and print $$1' ~/.bbbike/config`; \
-	    ${MISCSRCDIR}/fragezeichen2org.pl --dist-dbfile=${PERSISTENTTMPDIR}/dist.db -centerc $$centerc -center2c $$centerc *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	centerc=`${PERL} -nle 'm{centerc.*\x27(\d+,\d+)\x27} and print $$1' ~/.bbbike/config`; \
+	    ${PERL} ${MISCSRCDIR}/fragezeichen2org.pl --dist-dbfile=${PERSISTENTTMPDIR}/dist.db -centerc $$centerc -center2c $$centerc *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
@@ -2015,11 +2015,11 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings-recurring.bbd: $(PERSISTENTTMPDIR)/bbb
 	mv -f $@~ $@
 
 $(PERSISTENTTMPDIR)/sourceid-all.yml:		$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd ${SOURCE_TARGETS_SOURCES}
-	$(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
+	${PERL} $(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
 $(PERSISTENTTMPDIR)/sourceid-current.yml:	$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd ${SOURCE_TARGETS_SOURCES}
-	$(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
+	${PERL} $(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
 ######################################################################
