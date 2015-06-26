@@ -131,6 +131,7 @@ Lilienthalstr.	N 10615,8558 10627,8706 10640,8832 10675,8940 10748,9054 10709,91
 #: street_width: 43m
 (Nördliche Landebahn)	NN 9362,7616 9522,7624 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781
 (Südliche Landebahn - Rundkurs)	NN 11332,7305 11438,7371 11460,7447
+(Herrfurthstr. - Rundkurs)	NN 11439,7894 11355,7871
 (zur nördlichen Landebahn)	NN 11430,7781 11460,7802
 (zur nördlichen Landebahn)	NN 11470,7744 11430,7781
 (Südliche Landebahn - Eingang Oderstr.)	NN 11555,7314 11596,7280 11608,7267
@@ -4614,6 +4615,11 @@ Pappelplatz (Grunewald)	NN 297,8894 197,8973 30,9105
 #: oldname: -20130408: Auerbacher Str.
 Auerbachstr.	N 505,8702 635,8842 731,8867 912,8895
 Eichkampstr.	N 425,8766 676,9104 693,9129 890,9399 1019,9573 1117,9706 1238,9869 1344,10012
+#: XXX Umbenennung zu Karmielplatz
+#: XXX auch in Berlin.coords.data ändern
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2015
+#: next_check: 2015-07-10 (Wirksamkeit)
+#: priority: #A
 Am Bahnhof Grunewald	N 936,8933 901,8969 884,8954 870,8939 912,8895
 Tunnel unter Bhf. Grunewald	NN 693,9129 731,9103 884,8954
 Fontanestr. (Grunewald)	N 1074,8470 1043,8550 972,8626 941,8680 930,8746 912,8895 936,8933
