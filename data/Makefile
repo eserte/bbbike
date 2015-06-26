@@ -1353,6 +1353,7 @@ do-checks:	.check_empty_lines \
 	.check_gesperrt1 .check_gesperrt2 \
 	.check_gesperrt_u2 .check_gesperrt_s2 .check_gesperrt_r2 \
 	.check_gesperrt_car1 .check_gesperrt_car2 \
+	.check_ubahn .check_sbahn .check_rbahn \
 	.check_ubahnhof .check_ubahnhof2 .check_sbahnhof .check_sbahnhof2 \
 	.check_rbahnhof .check_orte \
 	.check_radwege .check_radwege2 \
@@ -1518,6 +1519,18 @@ check-disabled:
 .check_gesperrt_car2:	gesperrt_car strassen landstrassen landstrassen2 strassen_bab
 	$(CHECK_NEIGHBOUR) -type standard -data gesperrt_car \
 		-against strassen -against landstrassen -against landstrassen2 -against strassen_bab
+	@touch $@
+
+.check_ubahn:	ubahn
+	$(CHECK_DOUBLE) -consecutive ubahn
+	@touch $@
+
+.check_sbahn:	sbahn
+	$(CHECK_DOUBLE) -consecutive sbahn
+	@touch $@
+
+.check_rbahn:	rbahn
+	$(CHECK_DOUBLE) -consecutive rbahn
 	@touch $@
 
 .check_ubahnhof:	ubahnhof ubahn
