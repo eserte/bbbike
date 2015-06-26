@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2009,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2009,2012,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ sub usage {
     warn $msg, "\n" if $msg;
     my $special_string = join(" | ", sort keys %known_specials);
     die <<EOF;
-usage: $0 -names | -linesegs | -points [-special $special_string] file ...
+usage: $0 -names | -linesegs | -points | -consecutive [-special $special_string] file ...
 EOF
 }
 
@@ -33,9 +33,11 @@ my %specials;
 my $do_names;
 my $do_linesegs;
 my $do_points;
+my $do_consecutive;
 GetOptions("names" => \$do_names,
 	   "linesegs" => \$do_linesegs,
 	   "points" => \$do_points,
+	   'consecutive' => \$do_consecutive,
 	   "special=s" => sub {
 	       my $special = $_[1];
 	       if (!exists $known_specials{$special}) {
@@ -46,7 +48,7 @@ GetOptions("names" => \$do_names,
 	  )
     or usage;
 
-($do_names xor $do_linesegs xor $do_points) or usage "Please specify one of -names, -points, or -linesegs";
+($do_names xor $do_linesegs xor $do_points xor $do_consecutive) or usage "Please specify one of -names, -points, -linesegs, or -consecutive";
 
 unshift(@Strassen::datadirs, "$FindBin::RealBin/../data");
 
@@ -62,6 +64,7 @@ foreach my $file (@files) {
 
 my $o = MultiStrassen->new(@obj);
 
+my @found_consecutives;
 my %h;
 $o->init;
 while(1) {
@@ -88,6 +91,12 @@ while(1) {
 	for my $point (@$c) {
 	    push @{ $h{$point} }, $r->[Strassen::NAME];
 	}
+    } elsif ($do_consecutive) {
+	for my $i (1 .. $#$c) {
+	    if ($c->[$i-1] eq $c->[$i]) {
+		push @found_consecutives, "$r->[Strassen::NAME]: $c->[$i]: two times in a row";
+	    }
+	}
     }
 }
 
@@ -110,6 +119,14 @@ if (@doubles) {
     exit 1;
 }
 
+if (@found_consecutives) {
+    print STDERR "*** ERROR: Found consecutive same points in @files\n";
+    for my $found_consecutive (@found_consecutives) {
+	print STDERR "* $found_consecutive\n";
+    }
+    exit 1;
+}
+
 __END__
 
 =head1 NAME
@@ -120,10 +137,14 @@ check_double - make sure that things are unique
 
     check_double -names strfile ...
     check_double -linesegs strfile ...
+    check_double -consecutive strfile ...
 
 =head1 DESCRIPTION
 
 Checks if all names or line segments are unique. Exits with a non-zero
 value if not.
+
+With option C<-consecutive>, check if there are no two same points in
+a row.
 
 =cut
