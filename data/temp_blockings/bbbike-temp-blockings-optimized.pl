@@ -1091,7 +1091,19 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1436990400,
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor: Veranstaltung (Fashion Week), Straße gesperrt, bis 15.07.2015',
+         'from' => 1435356000,
+         'id' => 1771,
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+userdel	3 8391,12389 8344,12221 8327,12174
+userdel	3 8327,12174 8344,12221 8391,12389
+#userdel	2::temp 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+#userdel	2::temp 8538,12245 8600,12165 8595,12066
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -2358,7 +2370,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1430704800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-06-06
+#: last_checked: 2015-06-27
 #: next_check: 2015-09-21
 userdel	q3::inwork 15261,10738 15272,10790 15279,10862
 ',

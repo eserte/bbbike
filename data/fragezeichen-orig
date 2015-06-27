@@ -832,36 +832,35 @@ Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2014
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20141007.1540.399597.html
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundstücksnummerierungen)
-#: last_checked: 2015-04-26 vvv
+#: last_checked: 2015-06-27 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: osm_watch: way id="290255259" version="2"
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-Planstraße 1: Qualität? Name wahrscheinlich Kirchdorfer Str.?	?::inwork 19842,9895 19853,9774 19857,9682
+Planstraße 1: Qualität? Name wahrscheinlich Kirchdorfer Str.?	?::inwork 19842,9895 19858,9775 19871,9680
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: osm_watch: way id="193373934" version="3"
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-Planstraße 2 (Fortsetzung Römerweg): Name wahrscheinlich Frauenauer Str.? Qualität etc?	?::inwork 19663,9757 19853,9774
-# REMOVED (in strassen) --- #: XXX PLZ=10318 --- Planstraße 3 -> Viechtacher Str.: Qualität etc?	?::projected 19657,9666 19727,9672 19801,9680 19857,9682 19893,9683
+Planstraße 2 (Fortsetzung Römerweg): Name wahrscheinlich Frauenauer Str.? Qualität etc?	?::inwork 19663,9757 19858,9775
+# REMOVED (in strassen) --- #: XXX PLZ=10318 --- Planstraße 3 -> Viechtacher Str.: Qualität etc?	?::projected 19657,9666 19727,9672 19801,9680 19871,9680 19893,9683
 # REMOVED --- Planstraße 4 -> Eisensteiner Str.: Qualität der Straße?	?::inwork 19727,9672 19722,9483
 # REMOVED --- #: XXX Rinchnacher Weg|Karlshorst|10318 --- Planstraße 5 -> Rinchnacher Weg: Qualität etc?	?::projected 19801,9680 19790,9478
-#: osm_watch: way id="193373957" version="5"
-#: XXX vermutlich Spielstraße
-Teisnacher Str.: (Planstraße 6) Qualität, genaue Lage?	?::inwork 19857,9682 19849,9474
-# REMOVED (teilweise realisiert) --- #: XXX PLZ=10318 --- Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19646,9490 19722,9483 19790,9478 19849,9474 19890,9471
+# REMOVED --- #: XXX vermutlich Spielstraße --- Teisnacher Str.: (Planstraße 6) Qualität, genaue Lage?	?::inwork 19871,9680 19859,9473
+# REMOVED (teilweise realisiert) --- #: XXX PLZ=10318 --- Planstraße 7 -> Regener Str.: Qualität etc?	?::projected 19646,9490 19722,9483 19790,9478 19859,9473 19890,9471
 #: XXX Planstraße 8+10 -> Regener Str.
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5591 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/03/246-2013-2Anlage2UebersichtsplanErschliessung.pdf vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19700,9040 19759,9041 19869,9151
+#: XXX zurzeit (2015-06) existiert eine Baustraße
+Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19700,9040 19759,9041 19874,9151
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5991 (Straßenname)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036397475695/397475695/00115094/94-Anlagen/02/Anlage1329.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2014
 #: note: Privatstraße
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt und LOR, bereits eingetragen
-Zachenberger Str.: (Planstraße 11) Qualität?	?::projected 19885,9400 19780,9409
+Zachenberger Str.: (Planstraße 11) Qualität?	?::projected 19889,9400 19780,9409
 #: by: ^^^
 #: by: ^^^
 #: by: ^^^
@@ -1750,9 +1749,7 @@ Heißt dieser Abschnitt "Chaussee nach Bornim"?	? -19100,407 -18964,793 -18688,11
 #: XXX_prog:
 Bordsteinkante	? -831,4636
 # 
-# REMOVED --- #: XXX_prog: BS
-#: XXX sind die Bordsteine mittlerweile abgesenkt? immerhin gibt es eine Überquerungshilfe
-Tränkegrabenweg/Sewanstr.: Bordsteine	? 17160,10376
+# REMOVED --- #: XXX_prog: BS --- #: XXX sind die Bordsteine mittlerweile abgesenkt? immerhin gibt es eine Überquerungshilfe --- Tränkegrabenweg/Sewanstr.: Bordsteine	? 17160,10376
 # 
 #: XXX_prog:
 Hauptstr.: enger Mittelstreifen, für Anhänger recht knapp (-> 3nocross)	? 6608,8277 6560,8219 6460,8093

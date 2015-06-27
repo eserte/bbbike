@@ -15136,14 +15136,15 @@ EOF
 userdel	2::inwork -2997,-52781 -6384,-53390
 EOF
      },
-     { from  => $isodate2epoch->("2013-06-22 00:00:00"), # 
-       until => $isodate2epoch->("2013-07-10 22:00:00"), # XXX 1248600361, # 2009-07-26 23:59 1248645599
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Yitzhak-Rabin-Str. und Brandenburger Tor Veranstaltung (Fashion Week), Straße vollständig gesperrt',
+     { from  => $isodate2epoch->("2015-06-27 00:00:00"), # 
+       until => $isodate2epoch->("2015-07-15 22:00:00"), # XXX 1248600361, # 2009-07-26 23:59 1248645599
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor: Veranstaltung (Fashion Week), Straße gesperrt, bis 15.07.2015',
 # note: für Radfahrer befahrbar: ", außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr."
        type  => 'gesperrt',
-       source_id => 'IM_019981',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+userdel	3 8391,12389 8344,12221 8327,12174
+userdel	3 8327,12174 8344,12221 8391,12389
 #userdel	2::temp 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 #userdel	2::temp 8538,12245 8600,12165 8595,12066
 EOF
@@ -21245,7 +21246,7 @@ EOF
        source_id => 'IM_024846',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-06-06
+#: last_checked: 2015-06-27
 #: next_check: 2015-09-21
 userdel	q3::inwork 15261,10738 15272,10790 15279,10862
 EOF
