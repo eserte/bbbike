@@ -2242,7 +2242,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 9242,7218
 #: note: Anforderungsampel
 	F 6745,4999
-	B0 14641,1771
+# REMOVED (Bahnstrecke existiert nicht mehr) --- B0 14641,1771
 	F 18177,-449
 	X 17855,1629
 	X 21789,5427
@@ -2961,7 +2961,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check: 2015-06-30 (Ende laut VMZ und fritz)
 	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015
-#: last_checked: 2015-06-19
+#: last_checked: 2015-06-28
 #: check_frequency: 60d
 	X::inwork 14151,8967
 ################################################################################

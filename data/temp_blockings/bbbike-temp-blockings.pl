@@ -15139,6 +15139,7 @@ EOF
      { from  => $isodate2epoch->("2015-06-27 00:00:00"), # 
        until => $isodate2epoch->("2015-07-15 22:00:00"), # XXX 1248600361, # 2009-07-26 23:59 1248645599
        text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor: Veranstaltung (Fashion Week), Straße gesperrt, bis 15.07.2015',
+       source_id => 'IM_025423',
 # note: für Radfahrer befahrbar: ", außerdem gesperrt: Ebertstr. zwischen Behrenstr. und Dorotheenstr."
        type  => 'gesperrt',
        data  => <<EOF,
@@ -24195,7 +24196,7 @@ EOF
 #: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-06-20 vvv
+#: last_checked: 2015-06-28 vvv
 #: check_frequency: 21d vvv
 userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020

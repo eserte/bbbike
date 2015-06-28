@@ -1092,6 +1092,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        {
+         'source_id' => 'IM_025423',
          'until' => 1436990400,
          'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor: Veranstaltung (Fashion Week), Straße gesperrt, bis 15.07.2015',
          'from' => 1435356000,
@@ -1719,94 +1720,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.csd-berlin.de/',
-         'data' => '#: by: http://www.visitberlin.de/de/event/27-06-2015/37-csd-berlin-christopher-street-day-2015
-#: by: http://csd-berlin.de/csd-demo-2015-route-und-faqs/
-userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6918,10854 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
-userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657
-userdel	2::temp 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6268,10588 6216,10614 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
-userdel auto	3 6380,10704 6353,10583 6302,10462
-userdel auto	3 6692,11365 6851,11346 7103,11247
-userdel auto	3 5488,10978 5475,10808 5471,10719
-userdel auto	3 4685,10689 4676,10541 4659,10335
-userdel auto	3 7115,11220 6880,11110 6841,11114
-userdel auto	3 6716,11439 6825,11486 6915,11492
-userdel auto	3 4239,10358 4245,10435 4256,10583
-userdel auto	3 7131,10331 7033,10396 7245,10499
-userdel auto	3 7131,10331 7033,10328 7060,10221
-userdel auto	3 4485,10307 4503,10497 4513,10702
-userdel auto	3 6980,11583 6809,11570 6524,11583
-userdel auto	3 6745,10619 6753,10446 6719,10347
-userdel auto	3 4847,10677 4847,10589 4828,10356
-userdel auto	3 4381,10583 4371,10465 4360,10320
-userdel auto	3 5196,10398 5215,10711 5230,10919
-userdel auto	3 6681,10959 6824,10904 6740,10755
-userdel auto	3 6740,10755 6824,10904 6681,10959
-userdel auto	3 6818,10725 6972,10665 7110,10613
-userdel auto	3 4360,10320 4371,10465 4381,10583
-userdel auto	3 7060,10221 7033,10328 7131,10331
-userdel auto	3 6915,11492 6825,11486 6716,11439
-userdel auto	3 6742,11099 6873,11011 7002,11034
-userdel auto	3 7245,10499 7033,10396 7131,10331
-userdel auto	3 4828,10356 4847,10589 4847,10677
-userdel auto	3 4513,10702 4503,10497 4485,10307
-userdel auto	3 6719,10347 6753,10446 6745,10619
-userdel auto	3 6841,11114 6880,11110 7115,11220
-userdel auto	3 6884,12006 6828,12031 7026,12054
-userdel auto	3 5829,10964 5782,10884 5669,10704
-userdel auto	3 6524,11583 6809,11570 6980,11583
-userdel auto	3 6540,11754 6778,11742 6980,11790
-userdel auto	3 5669,10704 5782,10884 5829,10964
-userdel auto	3 5047,10381 5076,10658 5079,10701
-userdel auto	3 6980,11790 6778,11742 6540,11754
-userdel auto	3 7002,11034 6873,11011 6742,11099
-userdel auto	3 5866,10492 6025,10746 6122,10925
-userdel auto	3 6192,10542 6216,10614 6228,10646
-userdel auto	3 6685,10690 6532,10529 6494,10440
-userdel auto	3 6122,10925 6025,10746 5866,10492
-userdel auto	3 7026,12054 6828,12031 6884,12006
-userdel auto	3 4256,10583 4245,10435 4239,10358
-userdel auto	3 6216,10614 6228,10646 6250,10701
-userdel auto	3 5900,11913 6642,12010 6550,11954
-userdel auto	3 5079,10701 5076,10658 5047,10381
-userdel auto	3 5471,10719 5475,10808 5488,10978
-userdel auto	3 4659,10335 4676,10541 4685,10689
-userdel auto	3 7110,10613 6972,10665 6818,10725
-userdel auto	3 5230,10919 5215,10711 5196,10398
-userdel auto	3 6302,10462 6353,10583 6380,10704
-userdel auto	3 6550,11954 6642,12010 5900,11913
-userdel auto	3 6494,10440 6532,10529 6685,10690
-userdel auto	3 6250,10701 6228,10646 6216,10614
-userdel auto	3 7103,11247 6851,11346 6692,11365
-userdel auto	3 6228,10646 6216,10614 6192,10542
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8610,12254 8731,12270
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	3 7039,12314 7383,12095 7429,12070
-	3 7429,12070 7383,12095 7039,12314
-	3 7875,12363 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7875,12363
-	3 8119,12414 8055,12186 8049,12140
-	3 8049,12140 8055,12186 8119,12414
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-',
-         'periodic' => 1,
-         'until' => 1435442399,
-         'from' => 1435269600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              6
-                            ]
-                          ],
-         'text' => 'CSD am 27.6.2015',
-         'id' => 2083,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3064,16 +2978,7 @@ userdel	2::inwork 7306,13418 7451,13504 7630,13584
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.313183.php',
-         'until' => 1435442400,
-         'text' => 'Grottewitzstr.: Fahrbahnarbeiten zwischen Buntzelstr. und Rettungsstelle Krankenhaus Hedwigshöhe, 18.05.2015 bis 27.06.2015',
-         'from' => 1431813600,
-         'id' => 2708,
-         'data' => 'userdel	q4::inwork 22145,208 21933,152 21868,139
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'Rampe an der Großen Eiswerderbrücke gesperrt, Dauer unbekannt',
@@ -3093,7 +2998,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-06-20 vvv
+#: last_checked: 2015-06-28 vvv
 #: check_frequency: 21d vvv
 userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
