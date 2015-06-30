@@ -294,12 +294,12 @@ Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6366,9926 6512
 Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6630,9990 6512,9962 6512,9866
 Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6630,9990 6512,9962 6366,9926
 Straßenbahntrasse	3nocross::ignrte 12621,14313 12729,14227 12901,14093
-Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12901,14093 12729,14227 12608,14070
+Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12901,14093 12729,14227 12601,14060
 Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12621,14313 12729,14227 12782,14300
 Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12901,14093
-Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12608,14070
-Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12608,14070 12729,14227 12621,14313
-Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12608,14070 12729,14227 12782,14300
+Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12601,14060
+Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12601,14060 12729,14227 12621,14313
+Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12601,14060 12729,14227 12782,14300
 Straßenbahntrasse	3nocross::ignrte 11655,14697 11633,14631 11572,14452
 Prenzlauer Allee -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11572,14452 11633,14631 11535,14688
 Prenzlauer Allee -> Christburger Str.: Straßenbahntrasse	3::igndisp 11655,14697 11633,14631 11912,14486

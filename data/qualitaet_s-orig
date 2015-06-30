@@ -1383,8 +1383,6 @@ Holtzendorffstr.: mäßiges Kopfsteinpflaster	Q2 3049,11015 3082,11090
 Goslarer Ufer: Kopfsteinpflaster	Q2 4421,12727 4372,12946
 Goslarer Ufer: Asphalt	Q0 4372,12946 4331,13103 4296,13228
 Goslarer Ufer: Kopfsteinpflaster, kann auf Gehweg umfahren werden	Q2 4296,13228 4187,13704
-#: XXX Kopfsteinpflaster durch Asphalt ersetzt, prüfen!
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/vorhaben.shtml
 Malmöer Str.: Asphalt	Q0 10225,16436 10254,16363 10281,16263 10301,16186
 Malmöer Str.: mäßiges Kopfsteinpflaster	Q2 10301,16186 10343,16015
 Sonnenburger Str.: Kopfsteinpflaster	Q2 10564,15721 10550,15610
@@ -1474,7 +1472,7 @@ Friedrichshaller Str.: Kopfsteinpflaster	Q2 3083,7587 2911,7686 2786,7721 2774,7
 Christburger Str.: Kopfsteinpflaster	Q2 11633,14631 11912,14486
 Christburger Str.: Asphalt	Q0 11912,14486 12177,14335
 Pasteurstr.: Asphalt	Q0 12188,14350 12335,14246 12486,14143
-Pasteurstr.: Kopfsteinpflaster	Q2 12486,14143 12608,14070 12784,13961
+Pasteurstr.: Kopfsteinpflaster	Q2 12486,14143 12601,14060 12766,13942
 Ebelingstr.: Kopfsteinpflaster	Q2 13487,13115 13610,13169 13707,13206
 Cuvrystr.: Asphalt	Q0 13035,10076 13132,10239
 Cuvrystr.: gutes Kopfsteinpflaster	Q1 13132,10239 13151,10276 13197,10355
@@ -1702,7 +1700,7 @@ Kirchgasse (Neukölln): Gehwegplatten	Q0- 13117,7939 13151,7914
 Kirchgasse (Neukölln): schlechtes Kopfsteinpflaster	Q3 13151,7914 13268,7801 13292,7779 13306,7765
 Kirchgasse (Neukölln): Kopfsteinpflaster	Q2 13292,7779 13245,7742
 Gerlachsheimer Weg: Gehwegplatten	Q0 13151,7914 13240,7966
-Wanzlikpfad: asphaltiert	Q0 13268,7801 13309,7911
+Wanzlikpfad: asphaltiert	Q1 13268,7801 13309,7911
 Wilhelm-Busch-Str.: asphaltiert	Q0 13376,7970 13312,8026 13205,8126
 Wörnitzweg: asphaltiert	Q0 13240,7966 13312,8026
 Neue Weberstr: gepflastert, wellig	Q2+ 12364,12589 12329,12594 12317,12584 12242,12594 12148,12609 12146,12628 12064,12673
@@ -10685,8 +10683,10 @@ Dorotheenstr.: Asphalt	Q0 22643,4058 22831,4070 22965,4124
 Loreleystr.: Asphalt mit Unebenheiten	Q1 19171,8280 19228,8350 19275,8419 19321,8486
 Görresstr.: Asphalt	Q0 5318,7424 5272,7458 5188,7536 5067,7652
 Presselstr.: schlechtes Kopfsteinpflaster	Q3 6107,4718 6183,4785 6185,4839 6191,4923
-Kunkelstr.: Beton	Q0 8219,14897 8227,15075
-Kunkelstr.: Gehwegplatten	Q0 8227,15075 8229,15128
+#: confirmed_by: srt
+Kunkelstr.: Beton	Q0- 8219,14897 8227,15075
+#: corrected_by: srt (Q0 -> Q1)
+Kunkelstr.: Gehwegplatten	Q1 8227,15075 8229,15128
 Kunkelstr.: Fahrbahn ist Kopfsteinpflaster, Uferweg ist wassergebundene Decke	Q1 8229,15128 8232,15220
 Kunkelstr.: Parkweg	Q1 8232,15220 8268,15312
 Luzinstr.: Beton	Q0 22929,13661 22859,13684 22759,13715
@@ -23911,7 +23911,7 @@ Olga-Benario-Prestes-Str.: Asphalt	Q2 12628,14650 12473,14763
 Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12789,14670 12745,14613 12814,14556
 (Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13084,14472 13009,14371 12949,14292
 #: confirmed_by: srt
-Hans-Otto-Str.: Kopfsteinpflaster	Q2 12841,14380 12782,14300 12729,14227 12608,14070 12542,13984 12478,13903 12398,13792
+Hans-Otto-Str.: Kopfsteinpflaster	Q2 12841,14380 12782,14300 12729,14227 12601,14060 12542,13984 12478,13903 12398,13792
 #: confirmed_by: srt
 Heinz-Kapelle-Str.: Kopfsteinpflaster	Q2 12782,14300 12972,14173
 #: confirmed_by: srt

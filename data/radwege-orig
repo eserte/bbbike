@@ -1000,7 +1000,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX Markierungen fehlen noch in Richtung Osten
 #: source_id: IM_018997
 #: source_id: IM_023987
-#: last_checked: 2015-05-29
+#: last_checked: 2015-06-30
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1060,7 +1060,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 sind die Radspuren weitgehend aufgehoben (früher RW4;RW4)
-#: last_checked: 2015-06-29
+#: last_checked: 2015-06-30
 #: check_frequency: 60d
 	RW0;RW0 14151,8967 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 15053,7966
@@ -1365,7 +1365,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2015-06-08
+#: last_checked: 2015-06-30
 #: check_frequency: 90d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1375,7 +1375,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2015-06-08
+#: last_checked: 2015-06-30
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1644,9 +1644,9 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 #: note: das Radwegschild ist noch provisorisch (gesehen: 2015-04-01)
 	RW4; 8935,13844 8842,13798
 #: note: hier existiert noch ein alter enger Radweg, der aber nicht weiter "beworben" wird
-Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12784,13961 12856,14042
+Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 	RW1; 12856,14042 12901,14093
-	RW3; 12901,14093 12856,14042 12784,13961 12701,13873 12640,13814
+	RW3; 12901,14093 12856,14042 12766,13942 12701,13873 12640,13814
 	RW4;RW3 12640,13814 12578,13800
 	RW3;RW3 12578,13800 12402,13762 12372,13755 12204,13719 12161,13711
 	RW3; 11907,13655 12038,13685 12161,13711
@@ -3358,8 +3358,8 @@ teilweise Gehweg für Radfahrer frei	RW1; 12118,20557 12222,20637
 die ersten 50 Meter sind Busspur, danach folgt die Radspur	RW4; 13072,15590 12903,15695
 die letzten 50 Meter sind benutzungspflichtig	RW3; 12903,15695 13072,15590
 	RW3;RW3 12903,15695 12721,15807
-Richtung NW teilweise nur 50cm breit	RW4?;RW4? 8923,15850 8886,15799
-Richtung NW teilweise nur 50cm breit	RW4?;RW3 8886,15799 8607,15426
+Richtung NW teilweise nur 50cm breit	RW4;RW4? 8923,15850 8886,15799
+Richtung NW teilweise nur 50cm breit	RW4;RW3 8886,15799 8607,15426
 Richtung NW teilweise nur 50cm breit	RW3;RW3 8607,15426 8456,15235
 #: by: ^^^
 	RW6;RW6 5443,14028 5417,13817 5390,13616 5384,13555
@@ -3916,7 +3916,8 @@ zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13072,15590
 #: by: Grönwoldt:
 #: confirmed_by: srt
 	RW6;RW6 7171,22942 7059,23127 6988,23244 6967,23278
-	RW3;RW4? 9123,15963 8923,15850
+Radwegschild steht etwa 60 Meter weiter	RW4; 9123,15963 8923,15850
+	RW4?; 8923,15850 9123,15963
 #: by: Edeltraud Perschon:
 #: confirmed_by: srt
 	RW6;RW6 7297,-519 7384,-387 7536,-139

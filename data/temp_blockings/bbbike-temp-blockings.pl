@@ -14622,7 +14622,7 @@ EOF
 userdel	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => $isodate2epoch->("2015-06-30 00:00:00"), # mindestens 1 Tag Vorlauf, besser zwei
+     { from  => $isodate2epoch->("2015-06-30 00:00:00"), # mindestens 1 Tag Vorlauf, besser zwei, oder sogar drei
        until => $isodate2epoch->("2015-07-08 22:00:00"), # einen Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
        prewarn_days => 2,
        postwarn_days => 2,
