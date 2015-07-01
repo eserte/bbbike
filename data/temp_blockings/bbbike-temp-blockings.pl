@@ -19711,11 +19711,11 @@ EOF
 userdel	2::inwork 3045,19032 2994,18979
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-31 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-08-04 02:00:00"),
+     { from  => $isodate2epoch->("2015-08-06 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-08-09 02:00:00"),
        periodic => 1, # Internationales Berliner Bierfestival
        recurrences => [['yearly', days => 31, months => 7]],
-       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (1.8.2014 bis 3.8.2014)',
+       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (7.8.2015 bis 9.8.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.bierfestival-berlin.de/landkarte.html
@@ -24258,6 +24258,16 @@ EOF
        data  => <<EOF,
 	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Singerstr.: Baustelle an der Andreasstr., Ausweichen über Gehweg, Bordsteine',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX bis wann geht die Baustelle?
+#: last_checked: 2015-07-01
+userdel	q3::inwork 12295,12197 12525,12151
 EOF
      },
     );

@@ -1671,7 +1671,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -1967,7 +1967,31 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.bierfestival-berlin.de/landkarte.html
+userdel	2::temp 12360,12505 12362,12540 12364,12589
+userdel	2::temp 12891,12549 12869,12425
+userdel	2::temp 12635,12629 12596,12472
+userdel	2::temp 13448,12340 13484,12436
+userdel	2::temp 13552,12435 13543,12326
+#zukünftig, wenn dieser Weg eingetragen ist: userdel	2::temp 13163,12382 13176,12500
+',
+         'periodic' => 1,
+         'until' => 1439078400,
+         'from' => 1438848000,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (7.8.2015 bis 9.8.2015)',
+         'type' => 'gesperrt',
+         'id' => 2262
+       },
        undef,
        undef,
        undef,
@@ -3020,6 +3044,17 @@ userdel	q4::inwork 11325,12021 11275,12055
          'id' => 2715,
          'data' => '	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'text' => 'Singerstr.: Baustelle an der Andreasstr., Ausweichen über Gehweg, Bordsteine',
+         'from' => undef,
+         'id' => 2716,
+         'data' => '#: XXX bis wann geht die Baustelle?
+#: last_checked: 2015-07-01
+userdel	q3::inwork 12295,12197 12525,12151
 ',
          'type' => 'handicap'
        }
