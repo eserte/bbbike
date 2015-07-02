@@ -9850,6 +9850,7 @@ Reichenberger Str.: Asphalt mit einigen Schäden	Q0- 11100,10530 11121,10521 1114
 Am Wuhlebogen: noch unbefestigte Baustraße	Q2 21678,7939 21639,8105 21627,8156 21420,8362
 Stolzenfelsstr.: unbefestigter Weg	Q2+; 19447,8175 19400,8147 19333,8165 19171,8280
 Stolzenfelsstr.: Mosaikpflaster, teilweise uneben	Q2+; 19171,8280 18949,8437 18787,8540
+Konrad-Adenauer-Str.: großflächige Pflasterung	Q0- 8306,12609 8309,12758
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -23964,8 +23965,10 @@ Am Zirkus: Asphalt	Q1 9090,13009 9137,13032
 #: last_checked: 2015-06-10
 Am Zirkus: neuer Asphalt, letzte Deckschicht fehlt noch	Q1 9137,13032 9167,13046 9212,12969 9239,12923
 (Parkweg Spreebogenpark): Asphalt	Q0 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
-(Parkweg Spreebogenpark): wassergebundene Decke	Q1 8301,12758 8304,12938
+(Parkweg Spreebogenpark): Asphalt	Q0 8309,12758 8304,12938
+#: XXX ist hier noch immer wassergebundene Decke?
 (südliches Spreeufer - Gustav-Heinemann-Brücke): wassergebundene Decke	Q1 8032,12889 8053,12871 8116,12938
+#: XXX ist hier noch immer wassergebundene Decke?
 (südliches Spreeufer - Spreebogenpark): wassergebundene Decke	Q1 8427,12871 8385,12881 8304,12938
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 # REMOVED (hier asphaltiert) --- #: XXX Qualität der wassergebundenen Decke prüfen --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285

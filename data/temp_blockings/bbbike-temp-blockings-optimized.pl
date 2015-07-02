@@ -2283,13 +2283,13 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        {
          'source_id' => 'IM_024846',
          'until' => 1442851200,
-         'text' => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
+         'text' => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Nöldnerstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
          'from' => 1430704800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-06-27
+#: last_checked: 2015-07-02
 #: next_check: 2015-09-21
-userdel	q3::inwork 15261,10738 15272,10790 15279,10862
+userdel	q3::inwork 15272,10790 15279,10862
 ',
          'type' => 'handicap'
        },
@@ -2451,8 +2451,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'text' => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
          'from' => undef,
          'id' => 2463,
-         'data' => '#: add_fragezeichen: Ist das Befahren der Jürgen-Schumann-Allee für Radfahrer mittlerweile erlaubt? vvv
-#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes vvv
+         'data' => '#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes vvv
+#: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 #: osm_watch: way id="83106248" version="15" brb
@@ -2467,7 +2467,6 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
 #: XXX_osm ^^^
-#: add_fragezeichen ^^^
 ',
          'type' => 'gesperrt'
        },
@@ -2682,7 +2681,28 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'http://www.hanfparade.de/',
+         'data' => 'userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'periodic' => 1,
+         'until' => 1439100000,
+         'from' => 1438898400,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              8
+                            ]
+                          ],
+         'text' => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung (Hanfparade), Straße gesperrt, ab 07.08.2015 21 Uhr bis 09.08.2015 morgens ',
+         'id' => 2606,
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -3055,6 +3075,19 @@ userdel	q4::inwork 11325,12021 11275,12055
          'data' => '#: XXX bis wann geht die Baustelle?
 #: last_checked: 2015-07-01
 userdel	q3::inwork 12295,12197 12525,12151
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_024846',
+         'until' => 1442851200,
+         'text' => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. unter Umständen komplett gesperrt, auch für Fußgänger, 04.05.2015 bis 21.09.2015',
+         'from' => 1430704800,
+         'id' => 2717,
+         'data' => '#: next_check_id: KARLSHORSTER-2015
+#: last_checked: 2015-07-02
+#: next_check: 2015-09-21
+userdel	2::inwork 15261,10738 15272,10790
 ',
          'type' => 'handicap'
        }

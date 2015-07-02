@@ -1198,6 +1198,10 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: fritz
+#: priority: #A
+Charlottenstr. am Gendarmenmarkt: ist auch hier wegen der Classic Open gesperrt?	? 9524,12010 9536,11922
+# 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7788&options=4
 #: XXX Qualität nach den Bauarbeiten durchgängig Q0?
 #: next_check: 2015-10-01
@@ -1733,7 +1737,7 @@ Potsdam, Lutherplatz: ist dieser Abschnitt als Lutherplatz ausgeschildert?	? -10
 # REMOVED (aufgenommen) --- #: by: http://farm7.staticflickr.com/6051/6359918217_d76e41d8e1_b.jpg --- Hans-Werner-Klünner-Weg: Wo befindet sich der Weg? Qualität? Beleuchtet?	? -2914,12223 -2935,12165 -2945,12138 -2976,12057 -3027,12055 -3088,12040 -3109,12021 -3116,12012
 # REMOVED (eingezeichnet) --- #: XXX kann man es schon in flaechen-orig einzeichnen? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 --- Stuttgarter Platz: Widmung als Grünanlage	? 3571,10913 3546,10962 3827,10980 3828,10967 3571,10913
 # 
-#: osm_watch: way id="87199071" version="2"
+#: osm_watch: way id="357515474" version="1"
 #: last_checked: 2014-08-08
 #: check_frequency: 360d
 entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebauter Weg irgendwann entstehen?	? 25334,15051 25499,15010 25742,14907 25866,14898
@@ -1821,13 +1825,11 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-06-30
+#: last_checked: 2015-07-02
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
-#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334347.php
-#: XXX ist es dieser Weg oder ein anderer oder ein nicht eingezeichneter?
-Spreebogenpark: Sperrung wg. Bauarbeiten, danach "provisorische Befestigung", wo genau?	? 8301,12758 8304,12938
+# REMOVED (zurzeit nur ein nicht eingezeichneter Diagonalweg gesperrt) --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334347.php --- #: XXX ist es dieser Weg oder ein anderer oder ein nicht eingezeichneter? --- Spreebogenpark: Sperrung wg. Bauarbeiten, danach "provisorische Befestigung", wo genau?	? 8309,12758 8304,12938
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1506/nachricht5652.html vvv
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv

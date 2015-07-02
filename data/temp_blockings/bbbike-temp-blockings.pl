@@ -4740,7 +4740,7 @@ EOF
        text  => 'Reinhardtstraße - Otto-von-Bismarck-Allee: zwischen Kreuzung Kapelleufer und Kreuzung Willy-Brandt-Straße in beiden Richtungen Veranstaltung, gesperrt, Dauer: 07.05.2006 09:00 Uhr bis 14.07.2006 23:45 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 8120,12756 8206,12757 8301,12758 8309,12758 8424,12853 8503,12895
+userdel	2::temp 8120,12756 8206,12757 8309,12758 8424,12853 8503,12895
 EOF
      },
      { from  => 1149703449, # 2006-06-07 20:04
@@ -17513,8 +17513,9 @@ EOF
      },
      { from  => $isodate2epoch->("2014-09-04 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2014-09-07 20:00:00"),
-       periodic => 1, # manchmal/immer (?) zwei Termine im Jahr, zweiter Termin # 2013 war es am 12./13. Oktober, nicht im September!
-       recurrences => [['yearly', days => 1, months => 8]], # kann aber auch erst im September oder sogar im Oktober sein
+       ## XXX unklar, ob es das Müllerstraßenfest noch geben wird...
+       # periodic => 1, # manchmal/immer (?) zwei Termine im Jahr, zweiter Termin # 2013 war es am 12./13. Oktober, nicht im September!
+       # recurrences => [['yearly', days => 1, months => 8]], # kann aber auch erst im September oder sogar im Oktober sein
        text  => 'Müllerstr. (Wedding): Veranstaltung (traditionelles Müllerstraßenfest), Straße zwischen Seestr. und Leopoldplatz gesperrt, 5. bis 7. September 2014',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -21242,14 +21243,14 @@ EOF
      },
      { from  => $isodate2epoch->("2015-05-04 04:00:00"), # ein Tag Vorlauf
        until => $isodate2epoch->("2015-09-21 18:00:00"),
-       text  => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Nöldnerstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
        type  => 'handicap',
        source_id => 'IM_024846',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-06-27
+#: last_checked: 2015-07-02
 #: next_check: 2015-09-21
-userdel	q3::inwork 15261,10738 15272,10790 15279,10862
+userdel	q3::inwork 15272,10790 15279,10862
 EOF
      },
      { from  => 1361168940, # 2013-02-18 07:29
@@ -21783,8 +21784,8 @@ EOF
        text  => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Ist das Befahren der Jürgen-Schumann-Allee für Radfahrer mittlerweile erlaubt? vvv
 #: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes vvv
+#: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 #: osm_watch: way id="83106248" version="15" brb
@@ -21799,7 +21800,6 @@ EOF
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
 #: XXX_osm ^^^
-#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef,
@@ -23199,13 +23199,13 @@ EOF
 userdel	2::inwork 79043,-91754 79397,-92080
 EOF
      },
-     { from  => 1407438000, # 2014-08-07 21:00
-       until => 1407650400, # 2014-08-10 08:00
+     { from  => $isodate2epoch->("2015-08-07 00:00:00"), # 1407438000, # 2014-08-07 21:00
+       until => $isodate2epoch->("2015-08-09 08:00:00"), # 1407650400, # 2014-08-10 08:00
        periodic => 1,
        recurrences => [["yearly", days => 1, months => 8]], # Termin meist Anfang August, wechselnde Orte
-       text  => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung (Hanfparade), Straße gesperrt, ab 08.08.2014 21 Uhr bis 10.08.2014 morgens ',
+       text  => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung (Hanfparade), Straße gesperrt, ab 07.08.2015 21 Uhr bis 09.08.2015 morgens ',
        type  => 'gesperrt',
-       source_id => 'IM_022534',
+       source_id => 'http://www.hanfparade.de/',
        data  => <<EOF,
 userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -23856,7 +23856,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_023887',
        data  => <<EOF,
-userdel	2::temp 8301,12758 8206,12757 8120,12756 8030,12824
+userdel	2::temp 8206,12757 8120,12756 8030,12824
 userdel	2::temp 7936,12906 8021,12832
 userdel auto	3 8124,12840 8120,12756 8122,12603
 userdel auto	3 8207,12606 8206,12757 8204,12816
@@ -24268,6 +24268,18 @@ EOF
 #: XXX bis wann geht die Baustelle?
 #: last_checked: 2015-07-01
 userdel	q3::inwork 12295,12197 12525,12151
+EOF
+     },
+     { from  => $isodate2epoch->("2015-05-04 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2015-09-21 18:00:00"),
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. unter Umständen komplett gesperrt, auch für Fußgänger, 04.05.2015 bis 21.09.2015',
+       type  => 'handicap',
+       source_id => 'IM_024846',
+       data  => <<EOF,
+#: next_check_id: KARLSHORSTER-2015
+#: last_checked: 2015-07-02
+#: next_check: 2015-09-21
+userdel	2::inwork 15261,10738 15272,10790
 EOF
      },
     );

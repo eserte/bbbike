@@ -1397,8 +1397,6 @@ Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13824,5204 13
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14048,4363 14023,4475
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13939,4778 13914,4877 13892,4955
 Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13073,13329
-#: XXX Überqueren wohl möglich --- aber erst einmal ausprobieren!
-Hauptstr.: Straßenbahntrasse	3nocross 15639,10469 15404,10633 15379,10651
 Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105 16187,10033 16261,9925 16302,9865
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
 #: confirmed_by: srt
@@ -2850,7 +2848,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # REMOVED (die Baustelle ist mittlerweile auf der anderen Straßenseite) --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2014-04-02 vvv --- #: next_check: 2015-05-31 vvv --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 8935,13844 --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
-#: last_checked: 2015-06-10 vvv
+#: last_checked: 2015-07-02 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364 9961,12273
@@ -2916,7 +2914,7 @@ Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesp
 #: XXX siehe auch Busspur in radwege-orig vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
-#: last_checked: 2015-06-10 vvv
+#: last_checked: 2015-07-02 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 # REMOVED (nach der Fahrbahn wieder erreichbar) --- Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 #: last_checked ^^^
