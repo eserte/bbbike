@@ -2723,7 +2723,7 @@ Zufahrt zum Uferweg: gesperrt	2::inwork 7703,14582 7696,14577 7662,14579 7653,14
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136136549415/136549415/00119959/59-Anlagen/02/GA_1805_IV.pdf (mindestens bis Ende 2016)
-#: last_checked: 2015-06-24
+#: last_checked: 2015-07-03
 #: check_frequency: 180d
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 # 
@@ -2772,11 +2772,7 @@ Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 30.09.2015 ge
 #: check_frequency: 30d
 Lohmühlenplatz: Umgestaltung des Platzes, Weg ist gesperrt	2::inwork 12900,9465 12897,9365
 # 
-#: source_id: INKO_104519
-#: last_checked: 2015-03-28
-#: check_frequency: 90d
-Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 3690,11629 3844,11649 3898,11655
-# 
+# REMOVED (wieder überquerbar) --- #: source_id: INKO_104519 --- #: last_checked: 2015-03-28 --- #: check_frequency: 90d --- Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 3690,11629 3844,11649 3898,11655
 # REMOVED --- #: next_check_id: INVALIDENFRIEDHOF-2014 --- #: by: Birgit Schroeer --- #: confirmed_by: srt --- #: last_checked: 2015-03-13 --- #: next_check: 2015-03-28 --- #: XXX siehe auch temp_blockings-Eintrag --- #: osm_watch: way id="76212442" version="7" --- Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015	2::inwork 8119,13912 8101,13901 8248,13659 8337,13541
 # 
 #: last_checked: 2015-05-29

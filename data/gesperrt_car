@@ -1735,3 +1735,6 @@ Treskowallee - Dönhoffstr.	3 18731,8577 18733,8633 18609,8717
 Straßenbahntrasse	3nocross::ignrte 15639,10469 15404,10633 15379,10651
 Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 15639,10469 15404,10633 15358,10562
 Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straßenbahntrasse	3::igndisp 15358,10562 15404,10633 15379,10651
+Mittelstreifen	3nocross::ignrte 5475,10808 5471,10719 5458,10443
+Joachimsthaler Str. -> Augsburger Str.: Mittelstreifen	3::igndisp 5475,10808 5471,10719 5497,10719
+Augsburger Str. -> Joachimsthaler Str.: Mittelstreifen	3::igndisp 5497,10719 5471,10719 5458,10443

@@ -2820,12 +2820,11 @@ userdel	2::inwork -3197,11554 -3075,11510
        undef,
        {
          'until' => 1448924400,
-         'text' => 'Augsburger Str.: Bauarbeiten, Einbahnstraßenregelung',
+         'text' => 'Augsburger Str.: Bauarbeiten, Sackgasse an der Rankestr., Umfahrung über Gehweg',
          'from' => undef,
          'id' => 2672,
-         'data' => '#: last_checked: 2015-03-28
-#: next_check: 2015-06-28
-userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
+         'data' => '#: last_checked: 2015-07-03
+userdel	q3::inwork 5780,10542 5627,10637
 ',
          'type' => 'handicap'
        },
@@ -2894,7 +2893,7 @@ userdel	q4::inwork; 5866,10492 5780,10542 5627,10637
          'text' => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
          'from' => undef,
          'id' => 2695,
-         'data' => '#: last_checked: 2015-03-28
+         'data' => '#: last_checked: 2015-07-03
 #: check_frequency: 90d
 userdel	q4::inwork; 3807,11859 3666,11855
 ',
@@ -3034,16 +3033,7 @@ userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.320524.php',
-         'until' => 1435960800,
-         'text' => 'Franzensbader Straße: zwischen Hubertusallee und Berkaer Str. wegen Bauarbeiten in Richtung Süden gesperrt, 01.06.2015 bis voraussichtlich 03.07.2015 ',
-         'from' => 1433023200,
-         'id' => 2712,
-         'data' => 'userdel	q4::inwork; 2320,8722 2361,8608 2423,8427 2407,8148 2370,8109
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -3051,7 +3041,7 @@ userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
          'from' => undef,
          'id' => 2714,
          'data' => '#: XXX bis wann ist die Fahrbahn gesperrt?
-#: last_checked: 2015-06-24
+#: last_checked: 2015-07-03
 userdel	q4::inwork 11325,12021 11275,12055
 ',
          'type' => 'handicap'
@@ -3068,12 +3058,12 @@ userdel	q4::inwork 11325,12021 11275,12055
          'type' => 'handicap'
        },
        {
-         'until' => undef,
-         'text' => 'Singerstr.: Baustelle an der Andreasstr., Ausweichen über Gehweg, Bordsteine',
+         'until' => 1436565599,
+         'text' => 'Singerstr.: Baustelle an der Andreasstr., Ausweichen über Gehweg, Bordsteine, bis zum 10.07.2015',
          'from' => undef,
          'id' => 2716,
          'data' => '#: XXX bis wann geht die Baustelle?
-#: last_checked: 2015-07-01
+#: last_checked: 2015-07-03
 userdel	q3::inwork 12295,12197 12525,12151
 ',
          'type' => 'handicap'
