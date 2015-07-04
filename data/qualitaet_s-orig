@@ -248,7 +248,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2015-06-29
+#: last_checked: 2015-07-04
 #: check_frequency: 120d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
@@ -1655,8 +1655,8 @@ Jansastr.: Kopfsteinpflaster	Q2 12438,8859 12531,9009
 Ossastr.: Kopfsteinpflaster	Q2 12615,9132 12681,9083
 Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13274,8945 13456,8809
-Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14108,9377 14157,9345
-Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14165,9406 14172,9457
+Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368 14157,9345
+Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
 Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12772,8612 12822,8675 12881,8750 12954,8840 13048,8956
 Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13102,8724 12954,8840
@@ -1855,7 +1855,7 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: XXX Umbau in Asphaltwege
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110922.0700.359578.html
 #: osm_watch: way id="152046369" version="5"
-#: last_checked: 2015-05-14
+#: last_checked: 2015-07-04
 #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21487,5425 21512,5404 21600,5221 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
@@ -1989,9 +1989,8 @@ Wattstr. (Oberschöneweide): mit Teer verfugtes Kopfsteinpflaster	Q2- 17632,6930 
 Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5997 12271,6025
 Andreasberger Str.: Kopfsteinpflaster	Q2 12053,6185 12053,6042 12063,5927
 Ellricher Str.: Kopfsteinpflaster	Q2 12246,6227 12128,6201 12053,6185
-#: corrected_by: srt (Asphalt, mit einigen schadhaften Stellen -> Richtung Südwesten unangenehmes Kopfsteinpflaster)
-Sangeallee: Kopfsteinpflaster	Q3; 18457,9343 18319,9218 18247,9158
-Sangeallee: Asphalt mit einigen schadhaften Stellen	Q1+; 18247,9158 18319,9218 18457,9343
+#: corrected_by: srt (Asphalt, mit einigen schadhaften Stellen -> Richtung Südwesten unangenehmes Kopfsteinpflaster -> neu gemachter Asphalt)
+Sangeallee: Asphalt	Q0 18457,9343 18319,9218 18247,9158
 Sangeallee: mäßiger Asphalt	Q2+ 18247,9158 18134,9080
 #: by: Dave Wilke
 #: corrected_by: srt (war "gutes Kopfsteinpflaster")
@@ -9100,6 +9099,7 @@ Fischerstr.: Asphaltschäden	Q2+ 16423,10259 16404,10286
 # REMOVED (Bauarbeiten beendet) --- #: XXX nach den Bauarbeiten wieder entfernen --- #: last_checked: 2013-08-03 --- #: next_check: 2013-10-03 --- (Umleitungsstrecke für das Paul-und-Paula-Ufer): Schotterweg	Q2+ 15056,10625 14930,10646
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20439,7124
 (Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2+ 19407,6660 19599,7075
+(Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19751,6514 19810,6634 19931,6903
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10038,15418 10185,15487
 Lindenschwärmerweg: Asphalt	Q0 21308,11075 21294,11097 21187,11132
 Apollofalterallee [64-98]: Asphalt	Q0 21354,11101 21326,11122

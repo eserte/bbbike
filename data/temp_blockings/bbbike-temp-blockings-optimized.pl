@@ -2287,7 +2287,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1430704800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-07-02
+#: last_checked: 2015-07-04
 #: next_check: 2015-09-21
 userdel	q3::inwork 15272,10790 15279,10862
 ',
@@ -3075,7 +3075,7 @@ userdel	q3::inwork 12295,12197 12525,12151
          'from' => 1430704800,
          'id' => 2717,
          'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-07-02
+#: last_checked: 2015-07-04
 #: next_check: 2015-09-21
 userdel	2::inwork 15261,10738 15272,10790
 ',

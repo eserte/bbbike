@@ -21248,7 +21248,7 @@ EOF
        source_id => 'IM_024846',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-07-02
+#: last_checked: 2015-07-04
 #: next_check: 2015-09-21
 userdel	q3::inwork 15272,10790 15279,10862
 EOF
@@ -24276,7 +24276,7 @@ EOF
        source_id => 'IM_024846',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-07-02
+#: last_checked: 2015-07-04
 #: next_check: 2015-09-21
 userdel	2::inwork 15261,10738 15272,10790
 EOF
