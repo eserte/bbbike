@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-07-01 vvv
+#: last_checked: 2015-07-06 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -61,7 +61,7 @@ Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2015-07-01
+#: last_checked: 2015-07-06
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
@@ -282,8 +282,8 @@ Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11
 #: check_frequency: 60d
 Dieselstr., Umfahrung: Fußgänger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 # 
-#: last_checked: 2015-06-26
-#: check_frequency: 7d
+#: last_checked: 2015-07-06
+#: check_frequency: 10d
 #: priority: #A
 Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12918,8232
 # 
@@ -338,10 +338,11 @@ Deutschmeisterstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15370,12264 15353,
 # 
 #: next_check_id: BLANKENBURGER-2014 vvv
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html vvv
+#: XXX laut vmz Einbahnstraße bis 31. Dezember 2015
 #: source_id: IM_022288 vvv
 #: last_checked: 2015-05-03 vvv
 #: next_check: 2015-07-01 vvv
-#: valid: 20140701-20150701 vvv
+#: valid: 20140701-20151231 vvv
 Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
 # REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 #: valid ^^^
@@ -489,7 +490,7 @@ Böcklerpark: gemeinsamer Fuß- und Radweg	q2 10885,10045 10723,10088 10521,10126
 Böcklerpark: enge Kurven, manchmal Fußgänger auf dem Radweg	q3 10967,10092 10917,10068 10885,10045
 Böcklerpark: enge Kurven, Fußgänger	q3 10923,10113 10917,10068
 Böcklerpark: Fußgänger	q2 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
-Am Landwehrkanal: Parkweg	q1 10521,10126 10362,10120 10226,10145 10083,10192
+Am Landwehrkanal: Fußgänger	q1 10521,10126 10362,10120 10226,10145 10083,10192
 vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12603
 #: note: siehe Kommentar, wie man den Bordstein am Nordende vermeiden kann
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang

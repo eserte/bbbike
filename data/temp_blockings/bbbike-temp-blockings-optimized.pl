@@ -1786,25 +1786,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
-',
-         'periodic' => 1,
-         'until' => 1436133599,
-         'from' => 1435874400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (04.07.2015 bis 05.07.2015)',
-         'type' => 'gesperrt',
-         'id' => 2126
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1893,25 +1875,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'periodic' => 1,
-         'until' => 1436299200,
-         'from' => 1436169600,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              5,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Open Air Gallery am 7. Juli 2015 auf der Oberbaumbrücke (10:00 - 22:00)',
-         'type' => 'gesperrt',
-         'id' => 2206
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2381,25 +2345,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 12819,4780 12836,4649
-',
-         'periodic' => 1,
-         'until' => 1436133599,
-         'from' => 1435874400,
-         'text' => 'Britzer Rosenfest an der Britzer Dorfkirche, Backbergstr. ist gesperrt, 4. und 5. Juli 2015',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              22,
-                              'months',
-                              6
-                            ]
-                          ],
-         'type' => 'gesperrt',
-         'id' => 2453
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -2671,7 +2617,29 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'data' => 'Gartenufer	2::night 6226,11405 6067,11479 5845,11615 5790,11643
 '
        },
-       undef,
+       {
+         'source_id' => 'IM_025547',
+         'until' => 1439139600,
+         'text' => 'Konrad-Wolf-Str.: Bauarbeiten zwischen Simon-Bolivar-Str. und Gärtnerstr., Richtung Nordosten gesperrt, bis 09.08.2015',
+         'from' => 1436155200,
+         'id' => 2596,
+         'data' => 'userdel	q4::inwork; 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 16819,15912
+# userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
+#	3 16475,15659 16497,15636 16615,15737
+#	3 16615,15737 16497,15636 16475,15659
+#	3 16475,15659 16497,15636 16448,15593
+#	3 16448,15593 16497,15636 16475,15659
+#	3 16475,15659 16448,15593 16497,15636
+#	3 16497,15636 16448,15593 16475,15659
+#	3 16475,15659 16448,15593 16412,15559
+#	3 16412,15559 16448,15593 16475,15659
+#	3 16251,15629 16412,15559 16550,15503
+#	3 16550,15503 16412,15559 16251,15629
+#	3 15996,15620 16331,15486 16406,15452
+#	3 16406,15452 16331,15486 15996,15620
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
