@@ -86,7 +86,7 @@
 	    }
 	} else { # e.g. linux, assume device is already mounted
 	    my @mount_point_candidates = (
-					  '/media/' . eval { scalar getpwuid $< } . '/GARMIN',     # e.g. Ubuntu 13.10
+					  '/media/' . eval { scalar getpwuid $< } . '/GARMIN',     # e.g. Ubuntu 13.10, Mint 17
 					  '/media/GARMIN',                                         # e.g. Mint 13
 					  '/run/media/' . eval { scalar getpwuid $< } . '/GARMIN', # e.g. Fedora 20
 					 );
