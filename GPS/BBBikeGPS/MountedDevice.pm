@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@
     push @GPS::BBBikeGPS::MountedDevice::ISA, 'GPS';
 
     use vars qw($VERSION);
-    $VERSION = '0.02';
+    $VERSION = '0.03';
 
     sub has_gps_settings { 1 }
 
@@ -63,23 +63,12 @@
 	my($mount_point, $mount_device, @mount_opts);
 	# XXX configuration stuff vvv
 	if ($^O eq 'freebsd') {
+	    my $garmin_disk_type = 'flash';
 	    $mount_point = '/mnt/garmin-internal';
-	    # XXX unfortunately "camcontrol devlist" is restricted to root on FreeBSD; one could fine the information here!
-	    # XXX as a workaround, look into /var/log/messages
-	    require Tie::File;
-	    require Fcntl;
-	    if (tie my @log, 'Tie::File', '/var/log/messages', mode => Fcntl::O_RDONLY()) {
-		for(my $log_i = $#log; $log_i>=0; $log_i--) {
-		    if ($log[$log_i] =~ m{kernel: ([^:]+): <Garmin GARMIN Flash}) {
-			$mount_device = "/dev/$1";
-			warn "Guess garmin internal card to be '$mount_device'...\n";
-			last;
-		    }
-		}
-	    }
+	    $mount_device = _guess_garmin_mount_device_via_hal($garmin_disk_type);
 	    if (!defined $mount_device) {
-		$mount_device = '/dev/da0';
-		warn "Cannot find garmin internal card in /var/log/messages, use a '$mount_device' as fallback...\n";
+		warn "Cannot get garmin $garmin_disk_type via hal, try fallback via log...\n";
+		$mount_device = _guess_garmin_mount_device_freebsd_via_log($garmin_disk_type);
 	    }
 	    @mount_opts = (-t => 'msdosfs');
 	} elsif ($^O eq 'MSWin32') {
@@ -198,8 +187,125 @@
 	}
     }
 
+    # no fallback, return undef if lshal operation not possible
+    sub _guess_garmin_mount_device_via_hal {
+	my($garmin_disk_type) = @_;
+
+	return unless eval { require BBBikeUtil; 1 } && BBBikeUtil::is_in_path('lshal');
+
+	# XXX Is this true for all garmin devices? What about other
+	# GPS devices?
+	my $uid_suffix = ($garmin_disk_type eq 'flash' ? 'GARMIN_Flash' :
+			  $garmin_disk_type eq 'card'  ? 'GARMIN_Card' :
+			  die "Only 'flash' and 'card' supported for garmin disk type"
+			 );
+	my $uid = '/org/freedesktop/Hal/devices/storage_model_' . $uid_suffix;
+	my @cmd = ('lshal', '-u', $uid);
+	open my $fh, '-|', @cmd
+	    or do {
+		warn "Error running @cmd: $!";
+		return;
+	    };
+	while(<$fh>) {
+	    if (/^\s+block\.device\s*=\s*'(.*?)'/) {
+		return $1;
+	    }
+	}
+
+	return;
+    }
+
+    # with fallback (/dev/da0 or /dev/da1)
+    sub _guess_garmin_mount_device_freebsd_via_log {
+	my($garmin_disk_type) = @_;
+
+	# XXX Is this true for all garmin devices? What about other
+	# GPS devices?
+	my $search_string = ($garmin_disk_type eq 'flash' ? '<Garmin GARMIN Flash' :
+			     $garmin_disk_type eq 'card'  ? '<Garmin GARMIN Card' :
+			     die "Only 'flash' and 'card' supported for garmin disk type"
+			    );
+
+	# XXX unfortunately "camcontrol devlist" is restricted to root on FreeBSD; one could fine the information here!
+	# XXX as a workaround, look into /var/log/messages
+	require Tie::File;
+	require Fcntl;
+	if (tie my @log, 'Tie::File', '/var/log/messages', mode => Fcntl::O_RDONLY()) {
+	    for(my $log_i = $#log; $log_i>=0; $log_i--) {
+		if ($log[$log_i] =~ m{kernel: ([^:]+): \Q$search_string}) {
+		    my $mount_device = "/dev/$1";
+		    warn "Guess garmin $garmin_disk_type to be '$mount_device'...\n";
+		    return $mount_device;
+		}
+	    }
+	}
+
+	# XXX configuration stuff vvv
+	my $mount_device = $garmin_disk_type eq 'flash' ? '/dev/da0' : '/dev/da1';
+	# XXX configuration stuff ^^^
+	warn "Cannot find garmin $garmin_disk_type /var/log/messages, use '$mount_device' as fallback...\n";
+	$mount_device;
+    }
+
 }
 
 1;
 
 __END__
+
+=head1 NAME
+
+GPS::BBBikeGPS::MountedDevice - handle gps uploads via a mounted device
+
+=head1 DESCRIPTION
+
+Currently support is only available for newer Garmin devices (e.g.
+etrex 30).
+
+=head2 Linux desktops
+
+It is assumed that the device is mounted in a directory like
+F</media/GARMIN> or F</run/media/$USER/GARMIN>.
+
+=head2 Windows
+
+It is assumed that the device is already mounted. The mounted drive is
+detected automatically by inspecting the drive's volume name.
+
+=head2 FreeBSD
+
+On FreeBSD systems without desktop support GPS devices are not
+automatically mounted. Therefore some conventions have to be followed:
+
+=over
+
+=item * Add the following lines to F</etc/fstab>. Make sure to replace
+I<$USER> by the user normally logged in:
+
+    /dev/da1        /mnt/garmin     msdosfs rw,noauto,-l,-u=$USER  0       0
+    /dev/da0        /mnt/garmin-internal    msdosfs rw,noauto,-l,-u=$USER  0       0
+
+=item * Create the referened directories F</mnt/garmin> and
+F</mnt/garmin-internal> and chown it to the same I<$USER>:
+
+    for i in /mnt/garmin /mnt/garmin-internal; do mkdir $i; chown $USER $i; done
+
+=item * Install the C<hal> package (port: C<sysutils/hal>). This is
+optional, but otherwise a fallback to a less secure log parsing
+routine is done.
+
+=item * (Maybe, not verified) Make sure that user mounts are possible by adding
+
+    vfs.usermount=1
+
+to F</etc/sysctl.conf>. Reload the settings:
+
+    sudo service sysctl reload
+
+=back
+
+Currently by default route uploads happen to the internal flash, not
+to an external SD card. This is hardcoded in the source code (search
+for C<< my $garmin_disk_type = 'flash'; >>).
+
+=cut
