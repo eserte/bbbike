@@ -24216,10 +24216,10 @@ userdel	2::temp 9588,9827 9552,9602
 EOF
      },
      { from  => 1433023200, # 2015-05-31 00:00
-       until => 1435960800, # 2015-07-04 00:00
-       text  => 'Franzensbader Straße: zwischen Hubertusallee und Berkaer Str. wegen Bauarbeiten in Richtung Süden gesperrt, 01.06.2015 bis voraussichtlich 03.07.2015 ',
+       until => $isodate2epoch->("2015-07-27 23:59:59"), # 1435960800, # 2015-07-04 00:00
+       text  => 'Franzensbader Straße: zwischen Hubertusallee und Berkaer Str. wegen Bauarbeiten in Richtung Süden gesperrt, 01.06.2015 bis voraussichtlich 27.07.2015 ',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.320524.php',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.339753.php',
        data  => <<EOF,
 userdel	q4::inwork; 2320,8722 2361,8608 2423,8427 2407,8148 2370,8109
 EOF
@@ -24245,7 +24245,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Fahrbahn gesperrt?
-#: last_checked: 2015-07-03
+#: last_checked: 2015-07-08
 userdel	q4::inwork 11325,12021 11275,12055
 EOF
      },
@@ -24260,7 +24260,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2015-07-10 23:59:59"), # undef, # XXX
+       until => $isodate2epoch->("2015-07-07 00:00:00"), # undef, # XXX
        text  => 'Singerstr.: Baustelle an der Andreasstr., Ausweichen über Gehweg, Bordsteine, bis zum 10.07.2015',
        type  => 'handicap',
        data  => <<EOF,
@@ -24279,6 +24279,20 @@ EOF
 #: last_checked: 2015-07-04
 #: next_check: 2015-09-21
 userdel	2::inwork 15261,10738 15272,10790
+EOF
+     },
+     { from  => 1436220000, # 2015-07-07 00:00
+       until => $isodate2epoch->("2015-07-11 23:59:59"),
+       periodic => 1,
+       recurrences => [['yearly', days => 8, months => 1],
+                       ['yearly', days => 1, months => 7]],
+       text  => 'Schöneberger Str. und Luckenwalder Str.: wegen der Premium Berlin Einbahnstraßen, 08.07.2015-11.07.2015',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/events/fashion-week/modemessen/2255617-2251352-modemesse-premium.html',
+       data  => <<EOF,
+#: note: laut fritz _Vollsperrung_ bis einschließlich _Samstag_ 
+userdel	q4::inwork; 8634,10426 8384,10507 8525,10626
+userdel	q4::inwork; 8348,10636 8335,10518 8350,10499
 EOF
      },
     );

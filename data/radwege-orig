@@ -1447,13 +1447,10 @@ die letzten 40 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW4; 12126,13088 12112,12861
 	RW4;RW4 12126,13088 12163,13295
 	RW3;RW1 13493,11217 13541,11355
+# REMOVED --- #: next_check_id: WARSCHAUER-2014 --- #: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein) --- #: last_checked: 2015-07-01 --- #: check_frequency: 7d
+	RW3;RW1 13541,11355 13588,11490
 #: next_check_id: WARSCHAUER-2014
-#: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein)
-#: last_checked: 2015-07-01
-#: check_frequency: 7d
-	RW0;RW1 13541,11355 13588,11490
-#: next_check_id: WARSCHAUER-2014
-#: last_checked: 2015-06-21
+#: last_checked: 2015-07-07
 #: next_check: 2015-09-30
 	RW0;RW2 13588,11490 13603,11538
 	RW4;RW4 14026,10869 14024,10861 14011,10812
