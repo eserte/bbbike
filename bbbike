@@ -4507,6 +4507,20 @@ for ("<Shift-5>", "<B1-5>") {
 for ("<Shift-4>", "<B1-4>") {
     $c->Tk::bind($_ => sub { $c->xviewScroll(-1,"units") });
 }
+if ($devel_host) {
+    # XXX enable for all?
+    # left/right mouse buttons
+    $c->Tk::bind('<Any-Button>' => sub {
+		     my $e = shift->XEvent;
+		     if ($e->b) {
+			 if      ($e->b == 8) {
+			     $c->xviewScroll(-1,'units');
+			 } elsif ($e->b == 9) {
+			     $c->xviewScroll(+1,'units');
+			 }
+		     }
+		 });
+}
 $c->Tk::bind('<Control-4>' => sub { scalecanvas_from_canvas_event($c, 2); Tk->break; });
 $c->Tk::bind('<Control-5>' => sub { scalecanvas_from_canvas_event($c, 0.5); Tk->break; });
 
