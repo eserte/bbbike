@@ -431,6 +431,9 @@ sub look_loop {
 	# Allow more errors for longer strings:
 	if    (length($str) > 15) { $max_agrep = 4 }
 	elsif (length($str) > 25) { $max_agrep = 5 }
+	# agrep: size of pattern must be greater than number of errors
+	elsif (length($str) < 1)           { $max_agrep = 0 }
+	elsif (length($str) <= $max_agrep) { $max_agrep = length($str)-1 }
 	delete $args{Agrep};
     } else {
 	$max_agrep = delete $args{Agrep} || 0;
