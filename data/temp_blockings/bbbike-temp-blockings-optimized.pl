@@ -1008,29 +1008,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'postwarn_days' => 2,
-         'data' => '	q4::temp 9666,11935 9656,12021
-	2::temp 9524,12010 9656,12021
-	2::temp 9536,11922 9666,11935
-',
-         'periodic' => 1,
-         'until' => 1436385600,
-         'from' => 1435615200,
-         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (2.7.2015 - 6.7.2015; Sperrungen fangen schon früher an und dauern länger)',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              2,
-                              'months',
-                              7
-                            ]
-                          ],
-         'id' => 1710,
-         'type' => 'gesperrt',
-         'prewarn_days' => 2
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2247,13 +2225,14 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        {
          'source_id' => 'IM_024846',
          'until' => 1442851200,
-         'text' => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Nöldnerstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
+         'text' => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
          'from' => 1430704800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-07-04
+#: last_checked: 2015-07-12
 #: next_check: 2015-09-21
 userdel	q3::inwork 15272,10790 15279,10862
+userdel	q3::inwork 15261,10738 15272,10790
 ',
          'type' => 'handicap'
        },
@@ -2872,7 +2851,9 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'text' => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, Ende der Bauarbeiten im Dezember 2015',
          'from' => undef,
          'id' => 2696,
-         'data' => 'userdel	q3::inwork 5824,6974 5817,7223
+         'data' => '#: XXX laut Fritz ist die Baustelle an der Rheinstr. bis 2015-08-03 aktuell
+#: next_check: 2015-08-03
+userdel	q3::inwork 5824,6974 5817,7223
 ',
          'type' => 'handicap'
        },
@@ -2988,7 +2969,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-06-29 vvv
+#: last_checked: 2015-07-12 vvv
 #: check_frequency: 21d vvv
 userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
@@ -3032,49 +3013,6 @@ userdel	q4::inwork 11325,12021 11275,12055
          'data' => '	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 ',
-         'type' => 'handicap'
-       },
-       undef,
-       {
-         'source_id' => 'IM_024846',
-         'until' => 1442851200,
-         'text' => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. unter Umständen komplett gesperrt, auch für Fußgänger, 04.05.2015 bis 21.09.2015',
-         'from' => 1430704800,
-         'id' => 2717,
-         'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-07-04
-#: next_check: 2015-09-21
-userdel	2::inwork 15261,10738 15272,10790
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'https://www.berlin.de/events/fashion-week/modemessen/2255617-2251352-modemesse-premium.html',
-         'data' => '#: note: laut fritz _Vollsperrung_ bis einschließlich _Samstag_ 
-userdel	q4::inwork; 8634,10426 8384,10507 8525,10626
-userdel	q4::inwork; 8348,10636 8335,10518 8350,10499
-',
-         'periodic' => 1,
-         'until' => 1436651999,
-         'from' => 1436220000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              1
-                            ],
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Schöneberger Str. und Luckenwalder Str.: wegen der Premium Berlin Einbahnstraßen, 08.07.2015-11.07.2015',
-         'id' => 2718,
          'type' => 'handicap'
        }
      

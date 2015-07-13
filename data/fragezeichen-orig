@@ -192,7 +192,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 # REMOVED (-> handicap_s-orig) --- Walterstr./Karl-Marx-Str.: bleibt die Fahrbahn hier?	?::inwork 13126,6687 13099,6712
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
-#: last_checked: 2015-04-10
+#: last_checked: 2015-07-12
 #: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
 # 
@@ -318,7 +318,7 @@ Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
 #: osm_watch: way id="28961260" version="11"
-#: last_checked: 2015-03-18
+#: last_checked: 2015-07-12
 #: check_frequency: 120d
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
@@ -534,7 +534,7 @@ Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführ
 # 
 #: next_check_id: WARSCHAUER-2014
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
-#: last_checked: 2015-07-07
+#: last_checked: 2015-07-11
 #: next_check: 2015-09-30
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # 
@@ -892,7 +892,7 @@ Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,115
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2015-07-01
+#: last_checked: 2015-07-10
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -1106,7 +1106,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
 #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straßenbenennung, Vorschlag)
-#: last_checked: 2015-06-06
+#: last_checked: 2015-07-12
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
@@ -1179,6 +1179,16 @@ Uferweg - Heidestraße: Fußgänger- und Radfahrerbereich	?::projected 8044,13929 7
 #: XXX Grünflächen teilweise entfernen, culdesac hinzufügen
 #: next_check: 2017-01-01
 Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 vvv
+#: XXX fehlen alle in Berlin.coords.data (PLZ?) vvv
+#: XXX alles Privatstraßen, "Heinrich Wohnpark" (ohne Bindestrich!) vvv
+Erich-Knauf-Weg: Lage der Straße? Qualität?	? 23760,13157 23844,13120 23922,13085 23960,13068
+Franz-Jägerstätter-Weg: Lage der Straße? Qualität?	? 23844,13120 23865,13239
+Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
+#: XXX ^^^
+#: XXX ^^^
+#: by: ^^^
 # 
 #: section ^^^
 #: ignore ^^^
@@ -1483,6 +1493,7 @@ Berliner Str: existiert hier ein Zebrastreifen?	? 3901,24137 3922,24161 3948,241
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4003
 #: XXX Benennungsabsicht für 7 Privatwege in der Anlage Buchholz, PLZ=13127, Ortsteil Französisch Buchholz (fehlen alle in Berlin.coords.data)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2015 (Straßenbenennung)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: note: so gut wie alle Wege hier sind beleuchtet
 #: last_checked: 2015-05-03 vvv
 #: check_frequency: 60d vvv
@@ -2017,6 +2028,7 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140922.1345.399356.html (Erschließung bis Anfang 2015)
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6304
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036218583297/218583297/00079580/80-Anlagen/02/vzb1011_IV_Benennung_Strassen_B_Plan_10_56.pdf (Straßenname)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015
 #: last_checked: 2015-04-11
 #: next_check: 2015-08-01
 #: XXX Straße ist asphaltiert
@@ -2025,13 +2037,13 @@ Clara-Immerwahr-Haber-Str.: Wann wird die Straße eröffnet?	?::inwork 19202,17471
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2015
 #: XXX Straße ist asphaltiert
 #: XXX fehlt in Berlin.coords.data
-#: XXX Name tatsächlich ohne Bindestriche?
+#: XXX Name tatsächlich ohne Bindestriche? --- auch laut Amtsblatt ohne Bindestriche
 #: last_checked: 2015-06-20
 #: next_check: 2015-08-01
 Am Cleantech Business Park: Wann wird die Straße eröffnet?	?::inwork 19428,16692 19462,16764 19438,16803 19403,16817 19384,16863 19484,17164
-#: XXX ist hier auch asphaltiert?
+#: XXX ist der Radweg/Gehweg hier auch asphaltiert?
 #: next_check: 2015-08-01
-Weg in Bau: Name des Wegs auch "Am Cleantech Business Park"? Wann wird der Weg eröffnet?	?::inwork 19484,17164 19546,17351
+Am Cleantech Business Park: Weg in Bau: wann wird der Weg eröffnet?	?::inwork 19484,17164 19546,17351
 # 
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2014 (Straßenlandwidmung für Verbreiterung der Hohenschönhausener) --- #: last_checked: 2014-09-27 --- #: check_frequency: 45d --- Hohenschönhausener Str.: Radweg wird auf der östlichen Seite gebaut, wahrscheinlich asphaltiert und Zweirichtungsradweg	?::inwork 18738,16957 19108,17347 19183,17444 19202,17471 19529,17902 19611,17999 19668,18005 19820,18091 19845,18120 19875,18182
 # 
@@ -2126,7 +2138,8 @@ Karower Damm, Treseburger Straße: neues Wohngebiet und Grünanlage entsteht, und 
 # 
 #: XXX fehlen in Berlin.coords.data (PLZ vermutlich 12487) vvv
 #: by: http://www.stadtentwicklung.berlin.de/umwelt/umweltatlas/karten/pdf/e07_01_2009_mit_strname.pdf (teilweise)
-#: next_check: 2016-03-01 vvv
+#: last_checked: 2015-07-12 vvv
+#: next_check: 2016-06-01 vvv
 Abramowitschallee: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18169,4159 17898,4434
 Gorissenstr.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 17952,3975 17636,4082
 Henry-Farman-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18734,4077 18670,4013
@@ -2136,9 +2149,10 @@ Pierre-de-Caters-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?
 #: XXX bei osm eingetragen
 Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18602,4220 18532,4162
 #: next_check ^^^
-#: XXX bei osm schon eingetragen, ist die Straße schon offiziell?
+#: last_checked ^^^
+#: XXX bei osm schon eingetragen, ist die Straße schon offiziell? (mittlerweile wieder ausgetragen)
 #: osm_watch: way id="206889091" version="2"
-#: last_checked: 2015-04-10
+#: last_checked: 2015-07-12
 #: check_frequency: 180d
 Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18369,4337 18501,4457
 #: XXX ^^^
