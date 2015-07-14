@@ -1946,26 +1946,7 @@ userdel	2::temp 13552,12435 13543,12326
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.weissenseer-blumenfest.de/',
-         'data' => 'userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14045,16120 14014,16106 13826,16026 13737,15994 13623,15954 13512,15909
-',
-         'periodic' => 1,
-         'until' => 1436738399,
-         'from' => 1436392800,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 10.7.2015 bis 12.7.2015',
-         'id' => 2275,
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2285,26 +2266,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm?y=2015',
-         'data' => 'userdel	2::temp 14161,11930 14285,12190
-',
-         'periodic' => 1,
-         'until' => 1436738399,
-         'from' => 1436439600,
-         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, vom 10.07.2015 bis 12.07.2015',
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              7
-                            ]
-                          ],
-         'id' => 2433,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2599,10 +2561,13 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        {
          'source_id' => 'IM_025547',
          'until' => 1439139600,
-         'text' => 'Konrad-Wolf-Str.: Bauarbeiten zwischen Simon-Bolivar-Str. und Gärtnerstr., Richtung Nordosten gesperrt, bis 09.08.2015',
+         'text' => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 09.08.2015',
          'from' => 1436155200,
          'id' => 2596,
-         'data' => 'userdel	q4::inwork; 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 16819,15912
+         'data' => '#: note: außerdem Ampel an der Kreuzung Werneuchener/Große-Leege, und geänderte Vorfahrtsregelung an der Umleitungsstrecke via Große-Leege-Str.
+userdel	q4::inwork 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
+# userdel	q4::inwork; 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559
+userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 16819,15912
 # userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
 #	3 16475,15659 16497,15636 16615,15737
 #	3 16615,15737 16497,15636 16475,15659
@@ -2881,16 +2846,7 @@ userdel	2::inwork 7306,13418 7451,13504 7630,13584
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => '157300093',
-         'until' => 1436738399,
-         'text' => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 12.07.2015 ',
-         'from' => 1429736139,
-         'id' => 2701,
-         'data' => 'userdel	2::inwork 51806,78469 51798,78477 51668,78605
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',

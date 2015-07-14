@@ -23099,11 +23099,14 @@ EOF
      },
      { from  => $isodate2epoch->("2015-07-06 06:00:00"), # 1405025033, # 2014-07-10 22:43
        until => $isodate2epoch->("2015-08-09 19:00:00"), # 1408139790, # 1408312800, # 2014-08-18 00:00
-       text  => 'Konrad-Wolf-Str.: Bauarbeiten zwischen Simon-Bolivar-Str. und Gärtnerstr., Richtung Nordosten gesperrt, bis 09.08.2015',
+       text  => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 09.08.2015',
        type  => 'handicap',
        source_id => 'IM_025547',
        data  => <<EOF,
-userdel	q4::inwork; 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 16819,15912
+#: note: außerdem Ampel an der Kreuzung Werneuchener/Große-Leege, und geänderte Vorfahrtsregelung an der Umleitungsstrecke via Große-Leege-Str.
+userdel	q4::inwork 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
+# userdel	q4::inwork; 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559
+userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 16819,15912
 # userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
 #	3 16475,15659 16497,15636 16615,15737
 #	3 16615,15737 16497,15636 16475,15659
