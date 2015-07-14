@@ -601,6 +601,7 @@ EOF
 
 sub MY::install {
     my $out = "";
+    # note that it's assumed that all @bbbikeexe elements are perl scripts
     my @bbbikeexe = qw(bbbike cbbbike bbbikeclient cmdbbbike smsbbbike);
     $out .= <<'EOF';
 install:
@@ -669,7 +670,12 @@ do--install-to-usr-local:
 	find ${BBBIKE_DEST_DIR} | xargs chmod ugo+r
 	find ${BBBIKE_DEST_DIR} -perm -u=x | xargs chmod go+x
 
-install-using-eui:	distdir do--install-using-eui do--symlink-bbbikeexe
+install-using-eui:	distdir do--distdir-fix-shebang do--install-using-eui do--symlink-bbbikeexe
+
+do--distdir-fix-shebang:
+EOF
+    $out .= "\t" . MM->oneliner(q{for my $file (@ARGV) { tie my @lines, "Tie::File", $file or die $!; $lines[0] = "#! /usr/bin/perl" }}, ['-MTie::File']) . ' ' . join(' ', map { '$(DISTVNAME)/' . $_ } @bbbikeexe) . "\n";
+$out .= <<'EOF';
 
 do--install-using-eui:
 	-rm -rf ${BBBIKE_DEST_DIR}
@@ -715,19 +721,17 @@ EOF
     $out;
 }
 
-sub MY::dist_dir {
+# Overwrite create_distdir's DIST_CP usage to 'cp', so no
+# hardlinks are created, and shebang replacement is possible
+# without changing the originals.
+sub MY::distdir {
     <<'EOF'; 
-distdir : distdir_main distdir_post
-
-distdir_main:
+create_distdir:
 	$(RM_RF) $(DISTVNAME)
 	$(PERLRUN) "-MExtUtils::Manifest=manicopy,maniread" \
-		-e "manicopy(maniread(),'$(DISTVNAME)', '$(DIST_CP)');"
+		-e "manicopy(maniread(),'$(DISTVNAME)', 'cp');"
 
-distdir_post:
-	find $(DISTVNAME) -type d -exec chmod ugo+rx {} \;
-	find $(DISTVNAME) -type f -exec chmod ugo+r {} \;
-
+distdir : create_distdir
 
 EOF
 }
