@@ -24150,10 +24150,10 @@ EOF
        data  => <<EOF,
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
-#: XXX nach den Bauarbeiten werden die Reste des Radwegs wegfallen
-#: last_checked: 2015-05-13
-#: next_check: 2015-07-13
+#: last_checked: 2015-07-14
+#: next_check: 2015-08-31
 	q4::inwork; 7033,10328 7060,10221 7080,10098
+	q4::inwork 7080,10098 7038,10087
 EOF
      },
      { from  => 1432706400, # 2015-05-27 08:00
@@ -24251,7 +24251,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Fahrbahn gesperrt?
-#: last_checked: 2015-07-08
+#: last_checked: 2015-07-14
 userdel	q4::inwork 11325,12021 11275,12055
 EOF
      },

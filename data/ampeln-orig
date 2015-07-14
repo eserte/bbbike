@@ -2805,7 +2805,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: IM_024012 vvv
-#: last_checked: 2015-07-08 vvv
+#: last_checked: 2015-07-14 vvv
 #: next_check: 2015-12-20 vvv
 	F 10703,11837
 	F 10656,11887
@@ -2957,11 +2957,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog: Ampelanlage gilt für die gesamte Brücke, auf der anderen Seite ist auch eine
 	X -9942,21
 	X -12655,-1714
-#: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust?
-#: source_id: IM_023940
-#: last_checked: 2015-07-13
-#: next_check: 2015-07-14
-	X::inwork 14018,9118
+# REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: source_id: IM_023940 --- #: last_checked: 2015-07-13 --- #: next_check: 2015-07-14 ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015
 #: last_checked: 2015-06-30
 #: check_frequency: 60d
