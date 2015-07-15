@@ -266,6 +266,7 @@ Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11915,19580
 #: last_checked: 2014-09-13
 #: XXX Fahrbahninstandsetzung mit anschließenden Umbau der Radwege
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.297917.php
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.341719.php
 #: next_check: 2015-08-28
 Alt-Gatow: Radspuren bis 2015 geplant	?::projected; -4760,9343 -4751,9259 -4757,9140 -4755,9120 -4751,9033 -4691,8899 -4590,8666
 # 
@@ -276,6 +277,7 @@ Alt-Gatow: Radspuren bis 2015 geplant	?::projected; -4760,9343 -4751,9259 -4757,
 Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4839,7791 -4578,8336
 #: XXX Fahrbahninstandsetzung mit anschließenden Umbau der Radwege
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.297917.php
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.341719.php
 #: next_check: 2015-08-28
 Kladower Damm: Radpuren bis 2015 geplant	?::projected; -4578,8336 -4540,8449 -4540,8535 -4590,8666
 # 
@@ -951,7 +953,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4757 (Vorschlag: Führungsschienen für den Elsensteg)
 #: osm_watch: way id="182693863" version="1"
-#: last_checked: 2015-06-30
+#: last_checked: 2015-07-15
 #: check_frequency: 180d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
@@ -1056,8 +1058,8 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2015-04-08 vvv
-#: check_frequency: 100d vvv
+#: last_checked: 2015-07-15 vvv
+#: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
@@ -1550,10 +1552,8 @@ Anna-Maria-Müller-Str.: Planstraße 7, genaue Lage, Qualität?	?::projected 17712,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2014 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
 #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015
-#: XXX (osm_watch-Item ist ein Proxy für den nicht mehr existenten Weg, Notiz existiert)
 #: osm_watch: way id="24686030" version="4"
 #: last_checked: 2015-05-10
-#: XXX_osm: bei osm bereits ohne highway=construction -> Notiz
 #: check_frequency: 60d
 Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::inwork 15747,12880 15747,12985 15808,12989
 # 
@@ -1830,12 +1830,12 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2015-06-10
+#: last_checked: 2015-07-15
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-07-02
+#: last_checked: 2015-07-15
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
@@ -1844,11 +1844,14 @@ Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1506/nachricht5652.html vvv
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv
 #: XXX laut Artikel werden die Jülicher und Malmöer Str. zu Einbahnstraßen vvv
-#: next_check: 2015-07-14 vvv
+#: last_checked: 2015-07-14 vvv
+#: check_frequency: 7d vvv
 Sperrung der Bösebrücke: wie sieht die Wegführung für Radfahrer an der Bösebrücke aus? Gibt es Einschränkungen auf der Umleitungsstrecke?	? 10301,16186 10281,16263 10254,16363 10225,16436 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565 9781,16569 9617,16590 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297 9458,16180 9441,16058
-Norwegerstr. und Treppe: gibt es hier auch Einschränkungen? (Unterquerung der Brücke wird möglich sein, aber vielleicht wird es eng?)	? 9998,16547 9982,16527 9959,16510 9955,16578
+# REMOVED (aufgenommen) --- Treppe: gibt es hier auch Einschränkungen? (Unterquerung der Brücke wird möglich sein, aber vielleicht wird es eng?)	? 9998,16547 9982,16527 9959,16510
+Norwegerstr.: gibt es hier auch Einschränkungen? (Unterquerung der Brücke wird möglich sein, aber vielleicht wird es eng?)	? 9959,16510 9955,16578
 Behmstr.: bleiben die Radspuren erhalten?	? 9811,16112 10005,16150 10045,16157 10301,16186
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 #: by ^^^
 #: by ^^^

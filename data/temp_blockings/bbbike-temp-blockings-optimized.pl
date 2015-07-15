@@ -2960,14 +2960,28 @@ userdel	q4::inwork 11325,12021 11275,12055
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
          'until' => 1499983200,
-         'text' => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, ab 14. Juli 2015 für ca. zwei Jahre',
+         'text' => 'Treppe an der Bornholmer Str.: wegen Bauarbeiten an der Bösebrücke gesperrt, ab 14. Juli 2015 für ca. zwei Jahre',
          'from' => 1436738400,
-         'id' => 2715,
-         'data' => '	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
-	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+         'id' => 2719,
+         'data' => '	2::inwork 9998,16547 9982,16527 9959,16510
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.341629.php',
+         'until' => 1438466400,
+         'text' => 'Stralauer Str.: Asphaltierungsarbeiten, Fahrbahn gesperrt, vom 20.07.2015 bis 01.08.2015',
+         'from' => 1437256800,
+         'id' => 2720,
+         'data' => '#: note: außerdem noch Bauarbeiten zwischen Kloster- und Littenstr., aber hier wird nicht voll gesperrt werden
+userdel	q4::inwork 10738,12364 10804,12291 10826,12279
 ',
          'type' => 'handicap'
        }

@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-07-14 vvv
+#: last_checked: 2015-07-15 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraﬂe ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -83,11 +83,6 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 # REMOVED --- #: last_checked: 2015-02-13 --- #: check_frequency: 60d --- Seydelstr.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 # REMOVED (keine Einschr‰nkungen mehr) --- #: last_checked: 2014-06-06 --- Ohmstr.: Bauarbeiten, auf engen Gehweg ausweichen	q3::inwork 11378,11856 11324,11689
 # 
-#: XXX Ende der Bauarbeiten?
-#: XXX_prog: zu eng f¸r Anh‰nger
-#: last_checked: 2015-06-10
-Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, auf engen Gehweg ausweichen	q4::inwork 9736,13061 9559,13087
-# 
 #: last_checked: 2015-07-02
 Schadowstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9007,12499 9016,12416
 # 
@@ -139,7 +134,7 @@ Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Frie
 # REMOVED (noch nicht ganz fertig, im S¸den noch kurze Baustelle, umgedrehte Einbahnstraﬂenregelung, lohnt aber nicht) ---  #: last_checked: 2015-04-09 vvv --- Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719 --- #: last_checked ^^^
 # 
 #: next_check_id: SCHWEDTER-2014 vvv
-#: last_checked: 2015-06-17 vvv
+#: last_checked: 2015-07-15 vvv
 # REMOVED --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10567,14337 10530,14452
 Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 10530,14452 10506,14521
 #: last_checked ^^^
@@ -203,7 +198,7 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2015-07-02 vvv
+#: last_checked: 2015-07-15 vvv
 #: next_check: 2016-06-01 vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -226,9 +221,9 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-07-02
+#: last_checked: 2015-07-15
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
-#: last_checked: 2015-07-02
+#: last_checked: 2015-07-15
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -243,10 +238,10 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 1
 ### Kreuzberg ###
 # 
 #: next_check_id: DRESDENER-2015
-#: last_checked: 2015-07-07
-#: next_check: 2015-07-14
+#: last_checked: 2015-07-15
+#: check_frequency: 7d
 #: priority: #A
-Dresdener Str.: Bauarbeiten wegen Tunnelzusch¸ttung, Ausweichen auf Gehweg	q4::inwork 11189,10831 11162,10919
+Dresdener Str.: Bauarbeiten wegen Tunnelzusch¸ttung, teilweise Ausweichen auf Gehweg	q3::inwork 11189,10831 11162,10919
 # 
 # REMOVED --- #: next_check_id: MONUMENTENPLATZ-2014 --- #: XXX w‰hrend der Bauarbeiten --- #: last_checked: 2014-09-02 --- #: check_frequency: 60d --- Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 # REMOVED (aufgehoben) --- #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¶INKO_114376¶http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376 --- #: osm_watch: way id="34390483" version="8" --- #: source_id: INKO_114376 --- #: source_id: IM_019321 --- #: last_checked: 2013-11-24 --- #: next_check: 2013-12-15 (laut VMZ bis 15.03.2014) --- #: priority: #A --- Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
@@ -282,7 +277,7 @@ Kˆbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11
 #: check_frequency: 60d
 Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 # 
-#: last_checked: 2015-07-06
+#: last_checked: 2015-07-15
 #: check_frequency: 10d
 #: priority: #A
 Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12918,8232
