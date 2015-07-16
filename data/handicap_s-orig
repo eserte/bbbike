@@ -61,7 +61,7 @@ Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2015-07-14
+#: last_checked: 2015-07-16
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
@@ -238,11 +238,12 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 1
 ### Kreuzberg ###
 # 
 #: next_check_id: DRESDENER-2015
-#: last_checked: 2015-07-15
+#: last_checked: 2015-07-16
 #: check_frequency: 7d
-#: priority: #A
-Dresdener Str.: Bauarbeiten wegen Tunnelzuschüttung, teilweise Ausweichen auf Gehweg	q3::inwork 11189,10831 11162,10919
+# REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015)
+Alfred-Döblin-Platz: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 11162,10919 11150,11030
 # 
+# REMOVED (eigentlich kann man schon durch...) --- #: next_check_id: DRESDENER-2015 --- #: last_checked: 2015-07-15 --- #: check_frequency: 7d --- #: priority: #A --- Dresdener Str.: Bauarbeiten wegen Tunnelzuschüttung, teilweise Ausweichen auf Gehweg	q3::inwork 11189,10831 11162,10919
 # REMOVED --- #: next_check_id: MONUMENTENPLATZ-2014 --- #: XXX während der Bauarbeiten --- #: last_checked: 2014-09-02 --- #: check_frequency: 60d --- Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
 # REMOVED (aufgehoben) --- #: XXX see also Adalbertstr. (Kreuzberg): Leitungsarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/12) Richtung Kottbusser Tor zwischen Oranienstr. und Kottbusser Tor, 19.07.2012 09:00 Uhr bis 12.10.2012 17:00 Uhr¦INKO_114376¦http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.50035&y=13.41862&zoom=13&meldungId=INKO_114376 --- #: osm_watch: way id="34390483" version="8" --- #: source_id: INKO_114376 --- #: source_id: IM_019321 --- #: last_checked: 2013-11-24 --- #: next_check: 2013-12-15 (laut VMZ bis 15.03.2014) --- #: priority: #A --- Adalbertstr.: Fahrbahn in Richtung Kottbusser Tor gesperrt	q4::inwork; 11389,10463 11393,10390
 # REMOVED --- #: XXX siehe auch aufgehobene Einbahnstraßenregelung in der Gegenrichtung, sowie fragezeichen-orig-Eintrag --- #: last_checked: 2013-06-11 --- #: next_check: 2013-06-14 --- #: priority: #A --- Grimmstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11110,9661 11141,9732

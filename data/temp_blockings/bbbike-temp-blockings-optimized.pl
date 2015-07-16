@@ -1069,20 +1069,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_025423',
-         'until' => 1436990400,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor: Veranstaltung (Fashion Week), Straße gesperrt, bis 15.07.2015',
-         'from' => 1435356000,
-         'id' => 1771,
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-userdel	3 8391,12389 8344,12221 8327,12174
-userdel	3 8327,12174 8344,12221 8391,12389
-#userdel	2::temp 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-#userdel	2::temp 8538,12245 8600,12165 8595,12066
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2874,7 +2861,7 @@ userdel	2::inwork 7306,13418 7451,13504 7630,13584
        {
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html',
          'until' => 1441058400,
-         'text' => 'Maaßenstr.: Bauarbeiten, gesperrt in Richtung Winterfeldplatz, bis September 2015',
+         'text' => 'Maaßenstr.: Bauarbeiten, gesperrt in Richtung Winterfeldplatz, außerdem Sperrungen in der Winterfeldtstr., bis September 2015',
          'from' => undef,
          'id' => 2705,
          'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
@@ -2960,7 +2947,17 @@ userdel	q4::inwork 11325,12021 11275,12055
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
+         'until' => 1499983200,
+         'text' => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich ab 23. Juli 2015 für ca. zwei Jahre',
+         'from' => 1437516000,
+         'id' => 2715,
+         'data' => '	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
+	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
