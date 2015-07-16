@@ -252,7 +252,7 @@ sub BBBikeLazy::bbbikelazy_remove_data {
 	}
 	$str_draw{$abk} = 0;
 	delete $lazy_str_drawn{$abk};
-	if (defined $lazy_master && $lazy_master eq $lazy_str{$abk}) {
+	if (defined $lazy_master && defined $lazy_str{$abk} && $lazy_master eq $lazy_str{$abk}) {
 	    undef $lazy_master;
 	}
 	delete $lazy_str{$abk};
