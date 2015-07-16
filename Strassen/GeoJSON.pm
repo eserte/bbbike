@@ -14,10 +14,11 @@
 package Strassen::GeoJSON;
 
 use strict;
-use vars qw($VERSION);
-$VERSION = '0.02';
+use vars qw($VERSION @ISA);
+$VERSION = '0.03';
 
-use base qw(Strassen);
+use Strassen::Core;
+@ISA = qw(Strassen);
 
 use JSON::XS ();
 use Karte::Polar;

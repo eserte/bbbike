@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2011,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,10 +14,11 @@
 package Strassen::KML;
 
 use strict;
-use vars qw($VERSION $TEST_SET_NAMESPACE_DECL_URI_HACK);
-$VERSION = 1.13;
+use vars qw($VERSION $TEST_SET_NAMESPACE_DECL_URI_HACK @ISA);
+$VERSION = 1.14;
 
-use base qw(Strassen);
+use Strassen::Core;
+@ISA = qw(Strassen);
 
 use XML::LibXML;
 use Karte::Polar;
