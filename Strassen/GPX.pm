@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '1.24';
+$VERSION = '1.25';
 
 use Strassen::Core;
 
@@ -158,13 +158,15 @@ sub _gpx2bbd_libxml {
     my $fallback_name = delete $args{fallbackname};
     my $latlong2xy = delete $args{latlong2xy};
 
+    my $name_xpath = XML::LibXML::XPathExpression->new('./*[local-name()="name"]');
+
     my $get_name = sub {
 	my($node) = @_;
 	my $name;
 	if (defined $def_name) {
 	    $name = $def_name;
 	} else {
-	    $name = $node->findvalue('./*[local-name()="name"]');
+	    $name = $node->findvalue($name_xpath);
 	    if ($name eq '' && defined $fallback_name) {
 		$name = $fallback_name;
 	    }
