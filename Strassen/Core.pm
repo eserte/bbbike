@@ -78,16 +78,16 @@ sub AUTOLOAD {
 sub new {
     my($class, $filename, %args) = @_;
     if (defined $filename) {
-	if      ($filename =~ /\.(dbf|sbn|sbx|shp|shx)$/) {
+	if      ($filename =~ /\.(?:dbf|sbn|sbx|shp|shx)$/) {
 	    require Strassen::ESRI;
 	    return Strassen::ESRI->new($filename, %args);
-	} elsif ($filename =~ /\.(mif|mid)$/i) {
+	} elsif ($filename =~ /\.(?:mif|mid)$/i) {
 	    require Strassen::MapInfo;
 	    return Strassen::MapInfo->new($filename, %args);
 	} elsif ($filename =~ /\.e00$/i) {
 	    require Strassen::E00;
 	    return Strassen::E00->new($filename, %args);
-	} elsif ($filename =~ /\.(wpt|trk|rte)(?:\.gz)?$/) {
+	} elsif ($filename =~ /\.(?:wpt|trk|rte)(?:\.gz)?$/) {
 	    require Strassen::Gpsman;
 	    return Strassen::Gpsman->new($filename, %args);
 	} elsif ($filename =~ /waypoint\.txt$/) {
@@ -100,7 +100,7 @@ sub new {
 	    $ovl->check($filename);
 	    my $gpsman_data = $ovl->convert_to_gpsman;
 	    return Strassen::Gpsman->new_from_string($gpsman_data, File => $filename, %args);
-	} elsif ($filename =~ /\.(mps|gpx|g7t)$/i) {
+	} elsif ($filename =~ /\.(?:mps|gpx|g7t)$/i) {
 	    if ($filename =~ /\.gpx$/ && eval { require Strassen::GPX; 1 }) {
 		return Strassen::GPX->new($filename, %args);
 	    } else {
@@ -146,7 +146,7 @@ sub new_by_magic {
 	} elsif ($buf =~ m{<ttqv\b}) {
 	    require Strassen::Touratech;
 	    return Strassen::Touratech->new($filename, %args);
-	} elsif ($buf =~ m{^!Format:\s*(DMS|DMM|DDD)}m) {
+	} elsif ($buf =~ m{^!Format:\s*(?:DMS|DMM|DDD)}m) {
 	    require Strassen::Gpsman;
 	    return Strassen::Gpsman->new($filename, %args);
 	}
@@ -358,7 +358,7 @@ sub read_from_fh {
 	if ($preserve_comments) {
 	    next if m{^\#:}; # directives already handled
 	} else {
-	    next if m{^(\#|\s*$)};
+	    next if m{^(?:\#|\s*$)};
 	}
 
 	my $data_pos = $#data + 1;
