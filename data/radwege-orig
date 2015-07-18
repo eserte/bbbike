@@ -836,7 +836,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2;RW1 14193,9746 14270,9710 14318,9688 14780,9480 14819,9462 14883,9431 15383,9191 15442,9095 15452,9079 15561,8903 15591,8848
 	RW1; 13919,7707 14015,7631
 #: next_check_id: SONNENALLEE-2014 vvv
-#: last_checked: 2015-05-18 vvv
+#: last_checked: 2015-07-17 vvv
 #: check_frequency: 90d vvv
 	RW2; 14015,7631 14095,7568 14174,7505
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
@@ -918,12 +918,13 @@ schlechte Qualität, Wurzeln, holprig	RW1; 6753,2233 6768,2143 6799,1922 6844,181
 Verbundsteinpflasterradweg	RW1; 6881,1743 6844,1813 6799,1922 6768,2143
 #: XXX was passiert hier bzgl. der Radwege? vvv
 #: XXX Baumaßnahme GL6.18 (Realisierung nach 2011) vvv
+#: XXX http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.342111.php (Bauarbeiten, passiert hier vielleicht etwas?)
 #: last_checked: 2014-08-07 vvv
-#: check_frequency: 180d vvv
+#: next_check: 2015-08-28 vvv
 Verbundsteinpflasterradweg	RW1; 6768,2143 6753,2233
 Gehweg für Radfahrer frei	RW1; 6722,2444 6745,2286 6753,2233
 Nebenfahrbahn mit Kopfsteinpflaster	RW10; 6745,2286 6722,2444
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX ^^^
@@ -1060,7 +1061,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 sind die Radspuren weitgehend aufgehoben (früher RW4;RW4)
-#: last_checked: 2015-06-30
+#: last_checked: 2015-07-17
 #: check_frequency: 60d
 	RW0;RW0 14151,8967 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 15053,7966
