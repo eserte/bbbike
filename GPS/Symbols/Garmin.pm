@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::Symbols::Garmin;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use File::Glob qw();
 use File::Temp qw();
@@ -118,8 +118,9 @@ GPS::Symbols::Garmin - map Garmin symbol ids to images
 
 B<GPS::Symbols::Garmin> provides a mapping of Garmin symbol ids to
 image pathnames. The standard images must be provided by gpsman (see
-L<http://gpsman.sourceforge.net/>). The user-defined symbols are
-provided by F<misc/garmin_userdef_symbols/>.
+L<http://gpsman.sourceforge.net/> and
+L<https://sourceforge.net/projects/gpsman/>). The user-defined symbols
+are provided by F<misc/garmin_userdef_symbols/>.
 
 There are two functions:
 
