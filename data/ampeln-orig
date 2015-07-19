@@ -1896,7 +1896,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 8571,11846
 	X 21829,4212
 	X 16868,5938
-#: off: weekend/night
+#: off: weekend/night (seen Su 2015-07-19 16:40)
 	X 12520,12938
 	X 9454,12558
 	F 7702,10146
@@ -2491,7 +2491,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -8603,6973
 #: XXX_prog: Ampel gilt nicht für Radfahrer
 	F 15468,13700
-#: note: Ampel ist wahrscheinlich nur zu Geschäftszeiten des Einkaufszentrums eingeschaltet
+#: off: außerhalb der Geschäftszeiten (seen Su 2015-07-19 15:30)
 	F 13125,17758
 	F 7602,305
 	F 7404,-110
@@ -2759,8 +2759,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 5155,3502
 #: next_check_id: BLANKENBURGER-2014
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html
-#: next_check: 2015-07-01
-#: valid: 20140701-20150701
+#: last_checked: 2015-07-19
+#: next_check: 2015-12-31
+#: valid: 20140701-20151231
 	X::inwork 11269,20667
 #: note: Anforderungsampel
 	F 5357,6943

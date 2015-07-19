@@ -2062,6 +2062,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: note: geprüft am So, den 2015-03-08, vormittags: offen
 #: note: geprüft am So, den 2015-05-10, nachmittags: offen
 #: note: geprüft am So, den 2015-06-21, vormittags: offen
+#: note. geprüft am So, den 2015-07-19, nachmittags: offen
 userdel	2::night 14838,11410 14792,11391
 ',
          'type' => 'gesperrt'
@@ -2766,7 +2767,7 @@ userdel	q3::inwork 5780,10542 5627,10637
          'text' => 'Wörther Str.: Wochenmarkt Donnerstag 10-20.30 Uhr',
          'from' => undef,
          'id' => 2686,
-         'data' => '	q4::temp::clock 11163,14548 11255,14572 11317,14564
+         'data' => '	q4::temp::clock 11155,14554 11255,14572 11317,14564
 ',
          'type' => 'gesperrt'
        },
@@ -2981,6 +2982,27 @@ userdel	q3::inwork 11325,12021 11275,12055
 userdel	q4::inwork 10738,12364 10804,12291 10826,12279
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_025047',
+         'until' => 1442062800,
+         'text' => 'Dietzgenstr.: Baustelle, Fahrtrichtung stadteinwärts gesperrt, offiziell auch für Radfahrer, bis 12.09.2015',
+         'from' => 1432616400,
+         'id' => 2721,
+         'data' => '	q4::inwork; 10127,19992 10167,19797 10195,19703 10224,19628 10257,19542
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => undef,
+         'recurring' => 1,
+         'text' => 'enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist, Anhänger können gar nicht passieren',
+         'from' => undef,
+         'id' => 2722,
+         'data' => '#: XXX_prog BNP in temp blockings wird zur Zeit weder im CGI noch in der Perl/Tk-Anwendung behandelt
+	BNP:30::trailer=no 10583,15208
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -20453,7 +20453,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: einige Meter östlich der Knaackstr. gesperrt
-userdel	q3::inwork 11101,14768 11187,14763
+userdel	q3::inwork 11094,14769 11187,14763
 EOF
      },
      { from  => 1338778800,
@@ -20796,6 +20796,7 @@ EOF
 #: note: geprüft am So, den 2015-03-08, vormittags: offen
 #: note: geprüft am So, den 2015-05-10, nachmittags: offen
 #: note: geprüft am So, den 2015-06-21, vormittags: offen
+#: note. geprüft am So, den 2015-07-19, nachmittags: offen
 userdel	2::night 14838,11410 14792,11391
 EOF
      },
@@ -22328,7 +22329,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
        data  => <<EOF,
-userdel	2::temp 11317,14564 11255,14572 11163,14548
+userdel	2::temp 11317,14564 11255,14572 11155,14554
 EOF
      },
      { from  => $isodate2epoch->("2014-12-06 12:00:00"), # 1 Tag Vorlauf
@@ -22339,7 +22340,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
        data  => <<EOF,
-userdel	2::temp 11317,14564 11255,14572 11163,14548
+userdel	2::temp 11317,14564 11255,14572 11155,14554
 EOF
      },
      { from  => $isodate2epoch->("2014-12-13 12:00:00"), # 1 Tag Vorlauf
@@ -22350,7 +22351,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
        data  => <<EOF,
-userdel	2::temp 11317,14564 11255,14572 11163,14548
+userdel	2::temp 11317,14564 11255,14572 11155,14554
 EOF
      },
      { from  => $isodate2epoch->("2014-12-20 12:00:00"), # 1 Tag Vorlauf
@@ -22361,7 +22362,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-berlin.net/advents-okomarkt-am-kollwitzplatz/',
        data  => <<EOF,
-userdel	2::temp 11317,14564 11255,14572 11163,14548
+userdel	2::temp 11317,14564 11255,14572 11155,14554
 EOF
      },
      { from  => 1384642800, # 2013-11-17 00:00
@@ -23964,7 +23965,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	q4::temp::clock 11163,14548 11255,14572 11317,14564
+	q4::temp::clock 11155,14554 11255,14572 11317,14564
 EOF
      },
      { from  => $isodate2epoch->("2015-04-03 10:00:00"), # 1 Tag Vorlauf
@@ -24317,6 +24318,25 @@ EOF
        data  => <<EOF,
 #: note: außerdem noch Bauarbeiten zwischen Kloster- und Littenstr., aber hier wird nicht voll gesperrt werden
 userdel	q4::inwork 10738,12364 10804,12291 10826,12279
+EOF
+     },
+     { from  => $isodate2epoch->("2015-05-26 07:00:00"),
+       until => $isodate2epoch->("2015-09-12 15:00:00"),
+       text  => 'Dietzgenstr.: Baustelle, Fahrtrichtung stadteinwärts gesperrt, offiziell auch für Radfahrer, bis 12.09.2015',
+       type  => 'handicap',
+       source_id => 'IM_025047',
+       data  => <<EOF,
+	q4::inwork; 10127,19992 10167,19797 10195,19703 10224,19628 10257,19542
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist, Anhänger können gar nicht passieren',
+       type  => 'gesperrt',
+       recurring => 1,
+       data => <<EOF,
+#: XXX_prog BNP in temp blockings wird zur Zeit weder im CGI noch in der Perl/Tk-Anwendung behandelt
+	BNP:30::trailer=no 10583,15208
 EOF
      },
     );

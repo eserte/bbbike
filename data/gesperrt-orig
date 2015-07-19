@@ -531,6 +531,7 @@ Baumgartensteg	1 -2882,13474 -2937,13399
 Geisenheimer Str.	1 4391,7258 4462,7137 4530,7021
 Straﬂe zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20707,6098
 #: by: Butch Coolidge:
+#: confirmed_by: srt
 Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 #: by: Theo Schallon:
 #: confirmed_by: srt
@@ -1113,6 +1114,8 @@ Wartenbergstr.	1s:q1 15423,11667 15337,11639 15328,11636
 Wartenbergstr.	1s:q2 15328,11636 15300,11584
 #: last_checked ^^^
 #: XXX ^^^
+Bahnhofstr.	1 12166,21208 12202,21158
+Bahnhofstr.	1 12202,21158 12158,21166
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1504,7 +1507,7 @@ Berliner Str.: Straﬂenbahntrasse	3nocross 10897,17274 10892,17330 10886,17396
 Berliner Str.: Straﬂenbahntrasse	3nocross 10886,17396 10880,17469 10878,17490
 #: note: Luftbild:
 Berliner Str.: Straﬂenbahntrasse	3nocross 13737,15994 13826,16026 14014,16106
-Berliner Str.: Straﬂenbahntrasse	3nocross 12168,21218 12189,21337 12209,21448
+Berliner Str.: Straﬂenbahntrasse	3nocross 12166,21208 12188,21330 12209,21448
 Karl-Liebknecht-Str.: Straﬂenbahntrasse	3nocross 10923,13156 10976,13229 11012,13278
 Riesaer Str.: Straﬂenbahntrasse	3nocross 24120,14526 24097,14575 24030,14717
 #: note: Luftbild:
@@ -1735,7 +1738,7 @@ S¸dwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7
 S¸dwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4206,6820 4237,6840
 Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
 Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
-Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21592 10111,21661
+Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21586 10111,21661
 Rosenthaler Weg: Straﬂenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
 Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
 St¸lerstr.: Mittelstreifen	3nocross 6692,11365 6716,11439 6825,11486
@@ -2607,6 +2610,10 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: osm_watch: way id="24686030" version="4"
+#: last_checked: 2015-07-19
+Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
+# 
 #: XXX Ende der Bauarbeiten?
 # REMOVED (als es noch in handicap_s-orig war) --- : XXX_prog: zu eng f¸r Anh‰nger
 #: last_checked: 2015-07-15
@@ -2755,10 +2762,11 @@ Wattstr.: wegen Bauarbeiten f¸r die Minna-Todenhagen-Str. teilweise gesperrt, gg
 #: XXX ^^^
 # 
 #: next_check_id: NIZZASTR-2014 vvv
-#: last_checked: 2015-05-03 vvv
+#: last_checked: 2015-07-19 vvv
 #: check_frequency: 60d vvv
-Grenobler Ring: teilweise noch nicht fertiggestellt	2::inwork 12360,21303 12441,21341
-Lyonstr.: noch nicht fertiggestellt, zurzeit nur Baustraﬂe	2::inwork 12189,21337 12214,21332 12322,21378 12448,21433
+Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12360,21303 12441,21341 12483,21255 12404,21217
+Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12483,21255 12493,21212
+Lyonstr.: noch nicht fertiggestellt, zurzeit nur Baustraﬂe	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^

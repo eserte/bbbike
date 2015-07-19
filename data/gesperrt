@@ -805,6 +805,8 @@ Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 Schillerhof	1 7069,17204 6928,17154
 Wartenbergstr.	1s 15423,11667 15337,11639 15328,11636
 Wartenbergstr.	1s 15328,11636 15300,11584
+Bahnhofstr.	1 12166,21208 12202,21158
+Bahnhofstr.	1 12202,21158 12158,21166
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1374,7 +1376,7 @@ Straßenbahntrasse	3nocross::ignrte 10886,17396 10880,17469 10878,17490
 Straßenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14014,16106
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
 Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13737,15994
-Straßenbahntrasse	3nocross::ignrte 12168,21218 12189,21337 12209,21448
+Straßenbahntrasse	3nocross::ignrte 12166,21208 12188,21330 12209,21448
 Straßenbahntrasse	3nocross::ignrte 10923,13156 10976,13229 11012,13278
 Karl-Liebknecht-Str. -> Keibelstr.: Straßenbahntrasse	3::igndisp 11012,13278 10976,13229 11045,13183
 Keibelstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11045,13183 10976,13229 10923,13156
@@ -2125,11 +2127,11 @@ Berliner Str. -> Uferweg am Tegeler Hafen: Mittelstreifen	3::igndisp 1955,20435 
 Uferweg am Tegeler Hafen -> Berliner Str.: Mittelstreifen	3::igndisp 1863,20478 1929,20501 1910,20548
 Mittelstreifen	3nocross::ignrte 10083,21848 10097,21809 10106,21784
 Lehmweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10177,21802 10097,21809 10106,21784
-Mittelstreifen	3nocross::ignrte 10120,21464 10118,21510 10114,21592 10111,21661
-Dietzgenstr. -> Granitweg: Mittelstreifen	3::igndisp 10114,21592 10118,21510 10313,21574
+Mittelstreifen	3nocross::ignrte 10120,21464 10118,21510 10114,21586 10111,21661
+Dietzgenstr. -> Granitweg: Mittelstreifen	3::igndisp 10114,21586 10118,21510 10313,21574
 Granitweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10313,21574 10118,21510 10120,21464
-Dietzgenstr. -> Marmorweg: Mittelstreifen	3::igndisp 10111,21661 10114,21592 10284,21649
-Marmorweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10284,21649 10114,21592 10118,21510
+Dietzgenstr. -> Marmorweg: Mittelstreifen	3::igndisp 10111,21661 10114,21586 10284,21649
+Marmorweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10284,21649 10114,21586 10118,21510
 Straßenbahntrasse	3nocross::ignrte 11693,22482 11812,22523 11940,22587
 Rosenthaler Weg -> Krugpfuhlweg: Straßenbahntrasse	3::igndisp 11693,22482 11812,22523 11178,22999
 Krugpfuhlweg -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11178,22999 11812,22523 11940,22587
@@ -2768,6 +2770,7 @@ versetzte Schranke, manchmal offen	BNP:1:-124:trailer=3 23402,18067
 versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
+Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9559,13087
 Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7330 17445,7434
 Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396
@@ -2798,8 +2801,9 @@ Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelm
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
 (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
-Grenobler Ring: teilweise noch nicht fertiggestellt	2::inwork 12360,21303 12441,21341
-Lyonstr.: noch nicht fertiggestellt, zurzeit nur Baustraße	2::inwork 12189,21337 12214,21332 12322,21378 12448,21433
+Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12360,21303 12441,21341 12483,21255 12404,21217
+Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12483,21255 12493,21212
+Lyonstr.: noch nicht fertiggestellt, zurzeit nur Baustraße	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
 Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 30.09.2015 gesperrt, auch für Radfahrer und Fußgänger	2::inwork 8665,13353 8648,13498
 Lohmühlenplatz: Umgestaltung des Platzes, Weg ist gesperrt	2::inwork 12900,9465 12897,9365
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
