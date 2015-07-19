@@ -122,7 +122,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
 #: osm_watch: way id="4543585" version="19"
 #: osm_watch: way id="42732291" version="11"
-#: last_checked: 2015-04-21
+#: last_checked: 2015-07-18
 #: check_frequency: 90d
 Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
@@ -536,7 +536,7 @@ Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführ
 # 
 #: next_check_id: WARSCHAUER-2014
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
-#: last_checked: 2015-07-14
+#: last_checked: 2015-07-18
 #: next_check: 2015-09-30
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # 
@@ -1616,10 +1616,7 @@ Weichselplatz: vielleicht wird hier asphaltiert?	?::projected 12851,9309 12761,9
 # REMOVED (ist mir nicht aufgefallen) --- Zugang zum Allendeweg möglich?	? 23025,4358 23001,4382
 # REMOVED (es ist nur eine Querungshilfe geworden) --- #: last_checked: 2013-04-28 (keine Fortschritte) --- #: next_check: 2013-06-28 --- #: priority: #C --- Möckernstr./Wartenbergstr.: wird hier ein Zebrastreifen entstehen? Oder nur eine Fußgängerinsel?	?::inwork 8762,9964 8800,9944
 # REMOVED (ja) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4439&options=4 --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4473 (eventuelle Verlegung?) --- #: priority: #C --- Bäkestr.: existiert hier ein Zebrastreifen?	? 4526,3138 4701,3018
-# 
-#: XXX früher: "Albrechtsche Erben (Kolonie)", evtl. auch in Berlin.coords.data umbenennen
-#: note: aus dem DPAG-Mitteilungsblatt Dez 2012, PLZ=13629
-Alter Wiesenweg: Qualität? Ausgeschildert?	? 1739,15958 1581,15919
+# REMOVED --- #: XXX früher: "Albrechtsche Erben (Kolonie)", evtl. auch in Berlin.coords.data umbenennen --- #: note: aus dem DPAG-Mitteilungsblatt Dez 2012, PLZ=13629 --- Alter Wiesenweg: Qualität? Ausgeschildert?	? 1739,15958 1581,15919
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5192&options=4 (BVV-Beschluss)
 #: last_checked: 2015-07-06

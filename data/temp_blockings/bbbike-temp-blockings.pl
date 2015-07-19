@@ -21843,8 +21843,9 @@ EOF
      },
      { from  => $isodate2epoch->("2014-08-22 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2014-08-24 22:00:00"),
-       periodic => 1,
-       recurrences => [['yearly', days => 17, months => 8]],
+       ## für 2015 nicht geplant?
+       #periodic => 1,
+       #recurrences => [['yearly', days => 17, months => 8]],
        text  => 'Uhlandstr.: Veranstaltung (Uhlandstraßenfest) zwischen Kurfürstendamm und Lietzenburger Str., Straße gesperrt, 23. und 24. August 2014, jeweils ab 10 Uhr',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140820.1250.398770.html',
@@ -24247,12 +24248,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Märkisches Ufer: Sperrung der Fahrbahn vor der chinesischen Botschaft, Schieben über Gehweg',
+       text  => 'Märkisches Ufer: Sperrung der Fahrbahn vor der chinesischen Botschaft, Ausweichen über Gehweg',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann ist die Fahrbahn gesperrt?
-#: last_checked: 2015-07-14
-userdel	q4::inwork 11325,12021 11275,12055
+#: last_checked: 2015-07-18
+userdel	q3::inwork 11325,12021 11275,12055
 EOF
      },
      { from  => $isodate2epoch->("2015-07-22 00:00:00"), # 1436738400, # 2015-07-13 00:00

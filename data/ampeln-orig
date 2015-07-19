@@ -1581,6 +1581,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4547,13232
 	X 5705,13359
 	F 5569,13381
+#: XXX_prog an der Westhafenstr. steht auch eine gleich geschaltete Ampel
 	X 6299,14660
 	X 7138,15437
 	X 6996,15319
@@ -2574,12 +2575,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2015-06-10
+#: last_checked: 2015-07-18
 #: check_frequency: 45d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2015-06-30 vvv
+#: last_checked: 2015-07-18 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2806,7 +2807,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: IM_024012 vvv
-#: last_checked: 2015-07-14 vvv
+#: last_checked: 2015-07-18 vvv
 #: next_check: 2015-12-20 vvv
 	F 10703,11837
 	F 10656,11887
@@ -2816,7 +2817,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 # 
 #: next_check_id: AMNORDHAFEN-2015
-#: last_checked: 2015-06-30
+#: last_checked: 2015-07-18
 	F::inwork 7741,14560
 #: note: Anforderungsampel
 	F 7292,17316

@@ -2938,12 +2938,12 @@ userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
        undef,
        {
          'until' => undef,
-         'text' => 'Märkisches Ufer: Sperrung der Fahrbahn vor der chinesischen Botschaft, Schieben über Gehweg',
+         'text' => 'Märkisches Ufer: Sperrung der Fahrbahn vor der chinesischen Botschaft, Ausweichen über Gehweg',
          'from' => undef,
          'id' => 2714,
          'data' => '#: XXX bis wann ist die Fahrbahn gesperrt?
-#: last_checked: 2015-07-14
-userdel	q4::inwork 11325,12021 11275,12055
+#: last_checked: 2015-07-18
+userdel	q3::inwork 11325,12021 11275,12055
 ',
          'type' => 'handicap'
        },
