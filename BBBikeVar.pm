@@ -101,10 +101,6 @@ $BBBIKE_MAPSERVER_INDIRECT = "http://www.bbbike.de/mapserver/brb/";
 $BBBIKE_GIT_CLONE_URL = 'git://github.com/eserte/bbbike.git';
 $BBBIKE_GIT_HTTP = 'http://github.com/eserte/bbbike';
 
-# CVS (outdated!)
-$BBBIKE_CVS_ANON_REPOSITORY = ":pserver:anonymous\@bbbike.cvs.sourceforge.net:/cvsroot/bbbike";
-$BBBIKE_CVS_HTTP = 'http://bbbike.cvs.sourceforge.net/viewvc/bbbike/bbbike/';
-
 $BBBIKE_GOOGLEMAP_URL = 'http://bbbike.de/cgi-bin/bbbikegooglemap.cgi';
 
 # preferably $BBBIKE_LEAFLET_CGI_URL should be used, as some URLs
