@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2008,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2008,2012,2013,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
-$VERSION = '1.18';
+$VERSION = '1.19';
 
 use File::Basename qw(dirname);
 use BBBikeUtil qw(is_in_path bbbike_root);
@@ -38,6 +38,8 @@ my %magics =
     ('pcx' => ['^H  SOFTWARE NAME & VERSION'],
      'gpx' => ['^('.$GPS::_UTF8_BOM.')?<\?xml\s+'],
     );
+
+my $current_gpsbabel_version = '1.5.2'; # January 2015
 
 sub magics {
     map { @$_ } values %magics;
@@ -181,16 +183,15 @@ sub gpsbabel_available {
 # May be called also as a static method
 sub gpsbabel_recommended_path {
     if ($^O eq 'MSWin32') {
-	"C:\\Program files\\gpsbabel-1.3.4"
+	"C:\\Program files\\gpsbabel-$current_gpsbabel_version";
     } else {
-	"$ENV{HOME}/.bbbike/external/gpsbabel-1.3.4";
+	"$ENV{HOME}/.bbbike/external/gpsbabel-$current_gpsbabel_version";
     }
 }
 
 # May be called also as a static method
 sub gpsbabel_download_location {
-    #"http://sourceforge.net/project/showfiles.php?group_id=58972";
-    "http://sourceforge.net/project/platformdownload.php?group_id=58972";
+    'http://www.gpsbabel.org/download.html';
 }
 
 sub run_gpsbabel {
