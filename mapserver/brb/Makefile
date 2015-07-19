@@ -286,33 +286,6 @@ DISTFILES +=brb.map-localinc
 .endif
 
 
-#XXX should not hardcode the year
-DISTFILES_STERNFAHRT_2004=\
-	sternfahrt2004/sternfahrt2004.html-tpl \
-	sternfahrt2004/sternfahrt2004_init.html-tpl \
-	sternfahrt2004/after_strassen_annotations.inc \
-	sternfahrt2004/after_marker.inc
-
-DISTFILES_STERNFAHRT_2005=\
-	sternfahrt2005/sternfahrt2005.html-tpl \
-	sternfahrt2005/sternfahrt2005_init.html-tpl \
-	sternfahrt2005/after_strassen_annotations.inc \
-	sternfahrt2005/after_marker.inc \
-	sternfahrt2005/sternfahrt2005.inc
-
-DISTFILES_STERNFAHRT_2006=\
-	sternfahrt2006/sternfahrt2006.html-tpl \
-	sternfahrt2006/sternfahrt2006_init.html-tpl \
-	sternfahrt2006/after_strassen_annotations.inc \
-	sternfahrt2006/after_marker.inc \
-	sternfahrt2006/sternfahrt2006.inc
-
-DISTFILES_STERNFAHRT_2007=\
-	sternfahrt2007/sternfahrt2007_init.html-tpl \
-	sternfahrt2007/after_strassen_annotations.inc \
-	sternfahrt2007/after_marker.inc \
-	sternfahrt2007/sternfahrt2007.inc
-
 RADZEIT_DIST_DIR=/tmp/radzeit_mapserver_dist
 
 # Variables slurped in from bbbike/Makefile.PL
@@ -449,91 +422,6 @@ brb-ipaq-$(scope).map:	.brb-ipaq.map mkroutemap
 .endfor
 
 ######################################################################
-# Temporaries
-
-# Für 2003 sollten Symlinks im mapserver-Rootverzeichnis auf die Dateien
-# in sternfahrt2003 zeigen (backward compatibility)
-
-STERNFARTEN= 2003 2004 2006 2006 2007
-
-#.PHONY: ${STERNFAHRTEN:S/^/sternfahrt/g}
-
-.PHONY: sternfahrt2003 sternfahrt2004 sternfahrt2005 sternfahrt2006 sternfahrt2007
-
-# XXX Makefile problems?!
-
-#.for year in 2004 2003 # ${STERNFAHRTEN}
-
-STERNFAHRT2007_TARGETS=sternfahrt2007/sternfahrt2007.html \
-		sternfahrt2007.html \
-		sternfahrt2007/sternfahrt2007_init.html \
-		sternfahrt2007_init.html \
-		sternfahrt2007/sternfahrt2007.map \
-		sternfahrt2007.map \
-		data/sternfahrt2007.dbf \
-		data/sternfahrt2007.shp \
-		data/sternfahrt2007.shx \
-		data/treffpunkte2007.dbf \
-		data/treffpunkte2007.shp \
-		data/treffpunkte2007.shx
-
-.for scope in $(SCOPES)
-STERNFAHRT2007_TARGETS+=sternfahrt2007/sternfahrt2007-$(scope).map
-# and the symlink:
-STERNFAHRT2007_TARGETS+=sternfahrt2007-$(scope).map
-.endfor
-
-sternfahrt2007:	$(STERNFAHRT2007_TARGETS)
-
-STERNFAHRT_2007_DEFINES=\
-	--define MAPNAME="sternfahrt2007" \
-	--define EXTENT="4658 7874 13542 16766" \
-	--define TEMPLATE="sternfahrt2007" \
-	--define INCLUDE_AFTER_STRASSEN_ANNOTATIONS="sternfahrt2007/after_strassen_annotations.inc" \
-	--define INCLUDE_AFTER_MARKER="sternfahrt2007/after_marker.inc" \
-	--define REFMAP_REGION_EXTENT="-15700 -14985 37034 37749" \
-
-sternfahrt2007/.sternfahrt2007.map:	brb.map-tpl Makefile Makefile.${TARGET}.inc
-	$(TPAGE) $(ALL_TPL_DEFINES) $(STERNFAHRT_2007_DEFINES) brb.map-tpl > $@
-	chmod ugo+r $@
-
-.for scope in $(SCOPES)
-sternfahrt2007/sternfahrt2007-$(scope).map:	sternfahrt2007/.sternfahrt2007.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope $(scope) sternfahrt2007/.sternfahrt2007.map $@ || rm -f $@
-	chmod ugo+r $@
-
-sternfahrt2007-$(scope).map:	sternfahrt2007/sternfahrt2007-$(scope).map
-	[ -L $@ ] || ln -s sternfahrt2007/sternfahrt2007-$(scope).map
-.endfor
-
-sternfahrt2007/sternfahrt2007.map:	sternfahrt2007/sternfahrt2007-brb.map
-	cd sternfahrt2007 && ([ -L sternfahrt2007.map ] || ln -s sternfahrt2007-brb.map sternfahrt2007.map)
-
-sternfahrt2007.map: sternfahrt2007/sternfahrt2007.map
-	[ -L $@ ] || ln -s sternfahrt2007/sternfahrt2007.map
-
-sternfahrt2007/sternfahrt2007.html:	brb.html-tpl sternfahrt2007/sternfahrt2007.inc Makefile Makefile.${TARGET}.inc
-	$(TPAGE) $(ALL_TPL_DEFINES) --define INCLUDE_FILE=sternfahrt2007/sternfahrt2007.inc brb.html-tpl > $@
-	chmod ugo+r $@
-
-sternfahrt2007.html:	sternfahrt2007/sternfahrt2007.html
-	[ -L $@ ] || ln -s sternfahrt2007/sternfahrt2007.html
-
-sternfahrt2007_init.html:	sternfahrt2007/sternfahrt2007_init.html
-	[ -L $@ ] || ln -s sternfahrt2007/sternfahrt2007_init.html
-
-# Can't use relative paths here, because the stuff is copied to
-# .../projects/www.radzeit.de/...
-.for i in sternfahrt2007.dbf sternfahrt2007.shp sternfahrt2007.shx treffpunkte2007.dbf treffpunkte2007.shp treffpunkte2007.shx
-data/$i:
-	[ -e $(ABS_LOCAL_BBBIKE_DIR)/misc/sternfahrt_2007/$i ] || (cd $(ABS_LOCAL_BBBIKE_DIR)/misc/sternfahrt_2007 && ${MAKE})
-	cd data && \
-	    [ -L $i ] || ln -s $(ABS_LOCAL_BBBIKE_DIR)/misc/sternfahrt_2007/$i
-.endfor
-
-#.endfor
-
-######################################################################
 # html
 
 index.html:	brb_init.html
@@ -611,7 +499,6 @@ check-crontab:
 ######################################################################
 # dists
 
-#XXX remove the sternfahrt2005 productions to own rule
 dist-any:	# build-all
 	[ ! -d $(RADZEIT_DIST_DIR) ] || \
 	    rm -rf $(RADZEIT_DIST_DIR)
@@ -619,9 +506,6 @@ dist-any:	# build-all
 	chmod ugo+rx $(RADZEIT_DIST_DIR)
 	$(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) ABS_LOCAL_BBBIKE_DIR=$(ABS_LOCAL_BBBIKE_DIR) Makefile.${TARGET}.inc
 	cp -pf $(DISTFILES) $(FONTS_LIST) $(RADZEIT_DIST_DIR)
-	-mkdir $(RADZEIT_DIST_DIR)/sternfahrt2007
-	chmod ugo+rx $(RADZEIT_DIST_DIR)/sternfahrt2007
-	cp -pf $(DISTFILES_STERNFAHRT_2007) $(RADZEIT_DIST_DIR)/sternfahrt2007
 	cp -pR data $(RADZEIT_DIST_DIR)
 	cp -pR graphics $(RADZEIT_DIST_DIR)
 	-mkdir $(RADZEIT_DIST_DIR)/tmp

@@ -41,7 +41,6 @@ LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_HOSTEUROPE_SSH_HOST?=	${BBBIKE_HOSTEUROPE_HOST}
-STERNFAHRT_YEAR?=	2007
 TARGET_LIVE=		hosteurope
 HOST!=			hostname
 DEPLOYMENT_HOST?=	cvrsnica.herceg.de
@@ -208,8 +207,7 @@ MAPSERVER_TARGET=${TARGET}
       make(rsync-temp-blockings)     || \
       make(rsync-tests)		     || \
       make(clean-cache-files-on-remote) || \
-      make(diff-temp-blockings)      || \
-      make(prepare-kreisfahrt-dist)
+      make(diff-temp-blockings)
 TARGET=${TARGET_LIVE}
 .elif make(deploy-local)         || \
       make(deploy-local-data)    || \
@@ -502,9 +500,7 @@ prepare-bbbike-dist-prog-bbbike-htdocs:
 	    ln -s ../BBBike ${CURDIR}/$(HTDOCS)/BBBike
 	@echo "Do 'ln -s ../BBBike ${BBBIKE_HOSTEUROPE_APACHE_DIR}/$(HTDOCS)/BBBike' manually on server"
 
-prepare-bbbike-dist-prog-bbbike-images:	prepare-sternfahrt2005-dist-images \
-					prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images \
-					prepare-additional-dist-images \
+prepare-bbbike-dist-prog-bbbike-images:	prepare-additional-dist-images \
 					prepare-favicon
 
 prepare-favicon:
@@ -658,39 +654,6 @@ prepare-touren-dist:
 	chmod 755 ${CURDIR}/$(HTDOCS)/mapserver/touren
 	cp -pf ${BBBIKE_ROOT_DIR}/mapserver/touren/*.trk \
 	    ${CURDIR}/$(HTDOCS)/mapserver/touren
-
-# Call once sternfahrt files have changed:
-prepare-sternfahrt-dist:	prepare-sternfahrt${STERNFAHRT_YEAR}-dist
-
-prepare-sternfahrt${STERNFAHRT_YEAR}-dist:	prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data \
-						prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images
-
-prepare-sternfahrt2005-dist-images:
-	cp -pf ${BBBIKE_ROOT_DIR}/images/stern2005_titel.jpg \
-	       ${CURDIR}/BBBike/images/
-	chmod ugo+r ${CURDIR}/BBBike/images/stern2005_titel.jpg
-
-prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images:
-	cp -pf ${BBBIKE_ROOT_DIR}/images/stern${STERNFAHRT_YEAR}_titel.jpg \
-	       ${CURDIR}/BBBike/images/
-	chmod ugo+r ${CURDIR}/BBBike/images/stern${STERNFAHRT_YEAR}_titel.jpg
-
-prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data:
-	mkdir -p ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}
-	cp -pf ${BBBIKE_ROOT_DIR}/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte.cgi \
-	       ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/
-	chmod ugo+r,ugo+x ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte.cgi
-	cp -pf ${BBBIKE_ROOT_DIR}/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte${STERNFAHRT_YEAR}.bbd \
-	       ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/
-	chmod ugo+r,ugo+x ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte${STERNFAHRT_YEAR}.bbd
-	[ -e ${CURDIR}/cgi-bin/sternfahrt${STERNFAHRT_YEAR}-treffpunkte.cgi ] || \
-		ln -s ../BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte.cgi \
-		      ${CURDIR}/cgi-bin/sternfahrt${STERNFAHRT_YEAR}-treffpunkte.cgi
-
-# Call once kreisfahrt files have changed:
-prepare-kreisfahrt-dist:
-	rsync --cvs-exclude -a ${BBBIKE_ROOT_DIR}/misc/kreisfahrt_anyyear/ ${CURDIR}/BBBike/misc/kreisfahrt_anyyear/
-	chmod ugo+r,ugo-x ${CURDIR}/BBBike/misc/kreisfahrt_anyyear/*.png
 
 prepare-additional-dist-images:
 	cp -pf ${BBBIKE_ROOT_DIR}/images/logo-fahrradstadt_75.png \

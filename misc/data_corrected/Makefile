@@ -29,8 +29,6 @@
 #   - projects/solarmove/data: innerhalb Berlins, muss nicht konvertiert
 #     werden
 #   - projects/www.radzeit.de: wird von data etc. kopiert
-#   - misc/sternfahrt_2003: lohnt nicht mehr (?), sind nach der großen
-#     Konvertierung also "falsch" --- trotzdem versuchen
 #
 #   Dateien, für die eine Konvertierung vorhanden und getestet ist:
 #
@@ -41,8 +39,6 @@
 #   - .bbr-Dateien (in meinem ~/.bbbike/route-Verzeichnis) auch
 #     konvertieren, correct_data.pl hat jetzt .bbr support mit -bbr
 #     (make rule conv-bbr)
-#   - misc/sternfahrt_2004: sollte korrigiert werden, bzw. die -corrected.bbd
-#     -Dateien nach .bbd umbenannt werden (manuell, siehe unten)
 #
 #   Dateien, die noch behandelt werden müssen:
 #     keine mehr!
@@ -71,8 +67,6 @@
 #     temp_blockings ändern
 #   - make test mit temp_blockings-Tests
 #   - ci -r4 oder so ähnlich durchführen
-#   - misc/sternfahrt_2004: corrected-Dateien nach .bbd umbenennen
-#     Makefile anpassen
 
 # .if !exists(Makefile.inc)
 # .error Please execute "touch -t 197001010000 Makefile.inc"
