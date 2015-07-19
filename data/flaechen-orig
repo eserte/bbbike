@@ -786,6 +786,8 @@ Alarichplatz	F:P 8674,5357 8557,5226 8575,5202 8707,5289 8674,5357
 	F:P 15482,11729 15469,11784 15411,11823 15381,11832 15373,11783 15413,11690
 	F:Industrial 16699,3349 16674,3331 16641,3285 16550,3155 16684,3061 16786,2989 16891,2913 16842,2841 16969,2756 16928,2704 16977,2661 17002,2692 17219,2545 17329,2467 17402,2550 17541,2454 17772,2331 17928,2248 18101,2164 18111,2135 18198,1814 18361,1926 18396,1990 18491,2128 18448,2182 18462,2432 18050,2479 17635,2654 17393,2838
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2015 (Name)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3987
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4093
 Helmut-Faeder-Sportplatz	F:Sport 12161,22084 12141,22018 12237,21990 12256,22055
 # 
 #############################################################################
@@ -808,8 +810,9 @@ Winterfeldtplatz	F:Square 7038,10087 7049,9833 7126,9825 7080,10098
 Nollendorfplatz	F:Square 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 7033,10396 7131,10331
 Platz des 4. Juli	F:Square 2624,1704 2659,1720 2860,1289 2824,1273
 Olympischer Platz	F:Square -514,11991 -505,11882 -157,11943 -110,12019 -193,12051 -272,12039 -514,11991
+#: next_check_id: O2PLATZ-2015
 #: XXX demnächst Mercedes-Benz Arena (auf Amtsblatt oder so warten)
-#: next_check: 2015-07-24
+#: next_check: 2015-11-15
 O2-Platz	F:Square 12963,10995 13025,11107 13002,11132 13008,11161 12980,11182 12984,11194 13010,11243 13034,11232 13023,11213 13039,11184 13071,11151 13119,11148 13147,11160 13173,11152 13150,11101 13143,11092 13110,11114 13085,11093 13049,11092 12995,10978
 #: ignore ^^^
 #############################################################################
@@ -1095,6 +1098,9 @@ Sportplätze an der Behmstr.	F:Sport 9754,16115 9556,16090 9497,16185 9568,16218 
 Sportplatz der Rudolf-Virchow-Oberschule	F:Sport 22037,17148 22140,17135 22110,16885 22006,16900
 Cheruskerpark	F:P 7245,8226 7402,8208 7446,8200 7412,8253 7387,8308 7382,8587 7408,8586 7408,8648 7439,8716 7485,8777 7469,8776 7381,8657 7356,8516 7294,8354
 #: note: Grünzug zwischen Cheruskerdreieck und Torgauer Str.
+#: XXX_indoor eventuell Benennung in Annedore-Leber-Park
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=5318 (Benennungsvorschlag)
+#: next_check: 2015-09-19
 	F:P 7245,8226 7201,8189 7305,8190 7408,8166 7494,8132 7594,8073 7713,8001 7733,8023 7710,8051 7639,8091 7582,8123 7497,8168 7446,8200 7402,8208 7374,8211 7245,8226
 Park Gasag Nordspitze	F:P 7356,8516 7340,8469 7266,8516 7381,8657
 #: note: Friedhof bis 2036-01-01

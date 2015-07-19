@@ -192,6 +192,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 # REMOVED (-> handicap_s-orig) --- Walterstr./Karl-Marx-Str.: bleibt die Fahrbahn hier?	?::inwork 13126,6687 13099,6712
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5154
 #: last_checked: 2015-07-12
 #: check_frequency: 100d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
@@ -812,6 +813,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
+#: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4986 (Stand?)
 #: last_checked: 2015-07-13
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
@@ -1209,6 +1211,27 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
+#: next_check: 2015-12-31
+Parkweg: Umbenennung in Bernhard-Langwaldt-Weg?	? 14652,10201 14626,10162 14597,10129 14558,10082 14453,9929 14448,9922 14404,9847 14361,9772 14318,9688
+# 
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4094
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036390936422/390936422/00068591/91-Anlagen/01/Anlage1u2NEU.pdf
+#: next_check: 2015-08-19
+Minna-Flake-Platz: Benennung eines Platzes	? 11673,16003
+# 
+#: XXX "Straßen in der Hahnebergsiedlung asphaltieren" vvv
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8061&options=4 (Forderung)
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036535836846/535836846/00103374/74-Anlagen/02/MitberatungBuVfuerHPRDS1454.pdf (ab 2018)
+#: next_check: 2018-06-01 vvv
+Am Fort: wird hier asphaltiert?	? -7976,12217 -7967,12333 -7959,12439 -7948,12634 -7942,12844 -7967,12879 -8056,12916
+Talweg: wird hier asphaltiert?	? -8413,12651 -8324,12644 -8205,12644 -8078,12647 -7948,12634
+Querweg: wird hier asphaltiert?	? -8098,12340 -7967,12333 -7819,12321 -7670,12310
+Siedlungsweg: wird hier asphaltiert?	? -7806,12417 -7819,12321 -7824,12249
+Buschower Weg: wird hier asphaltiert?	? -8110,12160 -8098,12340 -8078,12647
+#: next_check ^^^
+#: XXX ^^^
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20150703.1150.402229.html --- #: next_check: 2015-07-06 --- Konrad-Wolf-Str.: Bauarbeiten, wird es Einschränkungen für Radfahrer geben? Evtl. auch eine Einbahnstraßenregelung in der Simon-Bolivar-Str.?	? 16035,14748 15941,14834 15856,14915 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
 # REMOVED --- #: note: am Fr Vormittag keine Sperrung, vielleicht nochmal schauen --- #: by: fritz --- #: priority: #B --- #: next_check: 2015-07-06 --- Charlottenstr. am Gendarmenmarkt: ist auch hier wegen der Classic Open gesperrt?	? 9524,12010 9536,11922
@@ -1624,8 +1647,9 @@ Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,87
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4744
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140610.1005.397765.html
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=5027
 #: last_checked: 2015-03-28
-#: check_frequency: 100d
+#: next_check: 2016-09-28
 Lauterstr.: wird die Straße am Breslauer Platz komplett für Autofahrer/Radfahrer gesperrt?	?::projected 5810,7337 5817,7223
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361057749620/1057749620/00056359/59-Anlagen/04/vzbbvv01814_-_Fussgaengerueberweg_Alte_Hellers.pdf --- #: priority: #C --- Alte Hellersdorfer Str.: wird hier ein Zebrastreifen entstehen	? 23079,15855 23134,15883
@@ -2090,6 +2114,8 @@ AEG-Str.: wo genau liegt die Straße? Ist sie ausgeschildert? Qualität?	? 5860,22
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/b-plan-9-34-152996.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/entwurf_des_bebauungsplans_9-34__.pdf
+#: XXX eine der Straßen könnte nach Lucie Großer benannt werden
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5199
 #: next_check: 2016-03-01
 Bebauungsplan 9-34: Planstraßen, Uferweg und Brücke werden entstehen	?::projected 22290,2172 22509,2330 22377,2489 22226,2633 22133,2666 22074,2656 22290,2172
 # 
