@@ -6,7 +6,7 @@
 # terms of the GNU General Public License, see the file COPYING.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://bbbike.sourceforge.net
+# WWW:  http://bbbike.de
 #
 
 package Strassen::Core;

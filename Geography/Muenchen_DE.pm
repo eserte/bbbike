@@ -7,7 +7,7 @@
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://bbbike.sourceforge.net
+# WWW:  http://bbbike.de
 #
 
 package Geography::Muenchen_DE;

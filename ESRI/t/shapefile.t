@@ -7,8 +7,8 @@
 #
 # Copyright (C) 2001,2003,2004,2005 Slaven Rezic. All rights reserved.
 #
-# Mail: eserte@users.sourceforge.net
-# WWW:  http://bbbike.sourceforge.net
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.de
 #
 
 use Test::More;

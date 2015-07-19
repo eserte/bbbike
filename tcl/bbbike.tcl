@@ -9,8 +9,8 @@
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Tcl itself.
 #
-# Mail: eserte@users.sourceforge.net
-# WWW:  http://bbbike.sourceforge.net
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.de
 #
 
 # Note that this script is *much* faster with 8.5 than with 8.4, it

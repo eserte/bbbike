@@ -8,8 +8,8 @@
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
-# Mail: eserte@users.sourceforge.net
-# WWW:  http://bbbike.sourceforge.net
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.de
 #
 
 package Strassen::MapInfo;

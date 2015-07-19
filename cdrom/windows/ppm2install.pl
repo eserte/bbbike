@@ -8,7 +8,7 @@
 # Copyright (C) 2000 Online Office Berlin. All rights reserved.
 #
 # Mail: slaven.rezic@berlin.de
-# WWW:  http://bbbike.sourceforge.net
+# WWW:  http://bbbike.de
 #
 
 =head1 NAME

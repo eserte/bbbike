@@ -4,7 +4,7 @@
 # Copyright (C) 2001,2012 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://bbbike.sourceforge.net
+# WWW:  http://bbbike.de
 #
 
 package ESRI::Shapefile;

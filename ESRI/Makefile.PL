@@ -8,7 +8,7 @@
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://bbbike.sourceforge.net
+# WWW:  http://bbbike.de
 #
 
 use ExtUtils::MakeMaker;
