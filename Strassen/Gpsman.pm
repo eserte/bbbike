@@ -184,7 +184,7 @@ directives:
 
 =head1 AUTHOR
 
-Slaven Rezic <eserte@users.sourceforge.net>
+Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
