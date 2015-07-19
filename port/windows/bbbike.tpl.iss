@@ -16,7 +16,7 @@
 AppName=BBBike
 AppVerName=BBBike version [% VERSION %]
 AppVersion=[% VERSION %]
-AppPublisherURL=http://bbbike.sourceforge.net
+AppPublisherURL=http://bbbike.de
 AppCopyright=Copyright (c) 1995-[% date.format(date.now, "%Y")%] Slaven Rezic
 AppPublisher=Slaven Rezic
 ChangesAssociations=yes

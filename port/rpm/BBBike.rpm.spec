@@ -10,7 +10,7 @@ AutoReqProv: no
 BuildArch: noarch
 Requires: perl >= 5.005, perl(Tk) >= 800
 Prefix: %{__prefix}
-URL: http://bbbike.sourceforge.net
+URL: http://bbbike.de
 Packager: slaven@rezic.de
 Source: http://heanet.dl.sourceforge.net/project/bbbike/BBBike/3.18/BBBike-3.18.tar.gz
 Summary: A route-finder for cyclists in Berlin and Brandenburg
@@ -47,7 +47,7 @@ BBBike liefert unter anderem die Antwort auf folgende Fragen:
 * Auf welchen Strassen fahre ich, wenn ich von A nach B kommen will?
 * Wo habe ich Gegenwind- und Rueckenwindstrecken?
 * Wo gibt es Steigungen und Gefaelle?
-WWW: http://bbbike.sourceforge.net
+WWW: http://bbbike.de
 
 
 %prep
