@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000-2010,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000-2010,2012,2013,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,6 +14,8 @@
 # BBBike variables and constants
 
 package BBBike;
+
+my $use_bbbike_sourceforge_net_fallback = 1;
 
 $VERSION	   = '3.19-DEVEL'; # remove "-DEVEL" for releases
 $STABLE_VERSION	   = '3.18';
@@ -31,7 +33,7 @@ $HOMEPAGE	   = 'http://www.rezic.de/eserte/';
 # pointer to WWW version
 $BBBIKE_WWW	   = 'http://www.bbbike.de';
 # list of additional WWW mirrors
-@BBBIKE_WWW_MIRRORS = ('http://bbbike.sourceforge.net/cgi-bin/bbbike.cgi',
+@BBBIKE_WWW_MIRRORS = (($use_bbbike_sourceforge_net_fallback ? () : ('http://bbbike.sourceforge.net/cgi-bin/bbbike.cgi')),
 		       'http://bbbike.de/cgi-bin/bbbike.cgi',
 		       'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi',
 		      );
@@ -40,7 +42,7 @@ $BBBIKE_WWW	   = 'http://www.bbbike.de';
 $BBBIKE_DIRECT_WWW = 'http://bbbike.de/cgi-bin/bbbike.cgi';
 
 # Homepage on Sourceforge
-$BBBIKE_SF_WWW	   = 'http://bbbike.sourceforge.net';
+$BBBIKE_SF_WWW	   = $use_bbbike_sourceforge_net_fallback ? 'http://sourceforge.bbbike.de' : 'http://bbbike.sourceforge.net';
 # URLs for data update
 #$BBBIKE_UPDATE_WWW = "http://bbbike.sourceforge.net/bbbike";
 $BBBIKE_UPDATE_DIRECT_WWW = "http://bbbike.de/BBBike";
