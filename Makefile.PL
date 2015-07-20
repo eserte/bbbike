@@ -89,10 +89,10 @@ my @req_table =
   [qw/Image::Magick	0	all	0	www/,
    'für Bildmanipulationen beim Radar-Bild der FU'],
 
-  [qw/Apache::Session::DB_File	0	all	2	cgi/,
-   'optionale Session-Verwaltung für das CGI-Programm, notwendig für wapbbbike'],
   [qw/Apache::Session::Counted	0	all	2	cgi/,
    'optionale aber sehr zu empfehlende Session-Verwaltung für das CGI-Programm'],
+  [qw/Apache::Session::DB_File	0	all	0	cgi/,
+   'optionale Session-Verwaltung für das CGI-Programm, falls Apache::Session::Counted nicht zur Verfügung steht'],
   [qw/XML::SAX	0	all	0	cgi/,
    'CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren'],
   [qw/XML::Simple	0	all	2	cgi/,

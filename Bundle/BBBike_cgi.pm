@@ -21,8 +21,6 @@ Bundle::BBBike_cgi - A bundle to install cgi dependencies of BBBike
 
 LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)
 
-Apache::Session::DB_File	- optionale Session-Verwaltung für das CGI-Programm, notwendig für wapbbbike
-
 Apache::Session::Counted	- optionale aber sehr zu empfehlende Session-Verwaltung für das CGI-Programm
 
 XML::Simple	- optional für XML-Dumps der BBBike-Route

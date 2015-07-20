@@ -244,11 +244,11 @@ $use_apache_session = 0;
 =item $apache_session_module
 
 The class of the L<Apache::Session> family to be used. Default is
-L<Apache::Session::DB_File>.
+L<Apache::Session::Counted>.
 
 =cut
 
-$apache_session_module = "Apache::Session::DB_File";
+$apache_session_module = "Apache::Session::Counted";
 
 =back
 

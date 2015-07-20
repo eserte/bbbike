@@ -49,9 +49,9 @@ LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-G
 
 Image::Magick	- für Bildmanipulationen beim Radar-Bild der FU
 
-Apache::Session::DB_File	- optionale Session-Verwaltung für das CGI-Programm, notwendig für wapbbbike
-
 Apache::Session::Counted	- optionale aber sehr zu empfehlende Session-Verwaltung für das CGI-Programm
+
+Apache::Session::DB_File	- optionale Session-Verwaltung für das CGI-Programm, falls Apache::Session::Counted nicht zur Verfügung steht
 
 XML::SAX	- CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren
 
