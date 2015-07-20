@@ -7777,7 +7777,6 @@ sub show_info {
    <li><a href="#perltk">Perl/Tk-Version</a>
    <li><a href="#beta">Beta-Version</a>
    <li><a href="#mobile">Mobile Version</a>
-   <li><a href="#wap">WAP</a>
    <li><a href="#gpsupload">GPS-Upload</a>
    <li><a href="#opensearch">Suchplugin für Firefox und IE</a>
    <li><a href="#leaflet">BBBike &amp; Leaflet</a>
@@ -7885,8 +7884,6 @@ Zukünftige BBBike-Features können <a href="$bbbike2_url">hier</a> getestet werde
 <h4 id="mobile">Mobile Version</h4>
 Unter der Adresse <a href="@{[ $BBBike::BBBIKE_MOBILE ]}">@{[ $BBBike::BBBIKE_MOBILE ]}</a> existiert eine Version von BBBike, die für mobile Geräte optimiert ist.
 <!-- <p> Eine Anregung, wie man BBBike auf dem iPhone verwenden kann, findet man <a href="$bbbike_html/bbbike_tracks_iphone.html">hier</a>. -->
-<h4 id="wap">WAP</h4>
-Ältere WAP-Handys können BBBike unter der Adresse <a href="@{[ $BBBike::BBBIKE_WAP ]}">@{[ $BBBike::BBBIKE_WAP ]}</a> nutzen.
 <h4 id="gpsupload">GPS-Upload</h4>
 Es besteht die experimentelle Möglichkeit, sich <a href="@{[ $bbbike_url ]}?uploadpage=1">GPS-Tracks oder bbr-Dateien</a> anzeigen zu lassen.<p>
 <h4 id="diplom">Diplomarbeit</h4>

@@ -81,7 +81,6 @@ TESTS_FROM_LOCAL=	\
 			cgi-download.t \
 			cgi-leaflet.t \
 			bbbikegooglemap.t \
-			wapcgi.t \
 			wwwdata.t
 TESTS_SERVER_ON_REMOTE=	
 TESTS=			$(TESTS_ON_REMOTE) $(TESTS_SERVER_ON_REMOTE) $(TESTS_FROM_LOCAL)
@@ -673,7 +672,6 @@ test-on-remote:
 	cd ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
-	BBBIKE_TEST_WAPURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
 	BBBIKE_TEST_FOR_LIVE=1 \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
@@ -698,7 +696,6 @@ test-from-local:
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
-	BBBIKE_TEST_WAPURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS_FROM_LOCAL}
@@ -713,7 +710,6 @@ test-on-remote-and-send-mail:
 	cd ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
-	BBBIKE_TEST_WAPURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
 	    (perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS} | mail slaven@rezic.de ) & \
@@ -726,7 +722,6 @@ test-local-serial:
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=${LOCAL_CGI_URL} \
 	BBBIKE_TEST_CGIURL=${LOCAL_CGI_URL}/${BBBIKECGI} \
-	BBBIKE_TEST_WAPURL=${LOCAL_CGI_URL}/wapbbbike.cgi \
 	BBBIKE_TEST_MAPSERVERURL=${LOCAL_MAPSERVER_URL} \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
@@ -736,7 +731,6 @@ test-local-parallel:
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=${LOCAL_CGI_URL} \
 	BBBIKE_TEST_CGIURL=${LOCAL_CGI_URL}/${BBBIKECGI} \
-	BBBIKE_TEST_WAPURL=${LOCAL_CGI_URL}/wapbbbike.cgi \
 	BBBIKE_TEST_MAPSERVERURL=${LOCAL_MAPSERVER_URL} \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
 	    prove -j${TEST_JOBS} ${TESTS}

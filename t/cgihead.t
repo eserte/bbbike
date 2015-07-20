@@ -52,13 +52,15 @@ my @prog = qw(
 	      bbbike2.en.cgi
 	      mapserver_address.cgi
 	      mapserver_comment.cgi
-	      wapbbbike.cgi
 	      bbbike-data.cgi
 	      bbbike-snapshot.cgi
 	      bbbikegooglemap.cgi
 	     );
 if ($cgi_dir !~ m{(bbbike.hosteurope|radzeit)\Q.herceg.de}) {
     push @prog, "bbbikegooglemap2.cgi";
+}
+if ($ENV{BBBIKE_LONG_TESTS}) {
+    push @prog, 'wapbbbike.cgi';
 }
 
 use constant HARD_TIMEOUT => 30;
