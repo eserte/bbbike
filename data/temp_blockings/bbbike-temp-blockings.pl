@@ -24311,7 +24311,7 @@ EOF
 EOF
      },
      { from  => 1437256800, # 2015-07-19 00:00
-       until => 1438466400, # 2015-08-02 00:00
+       until => 1437415645, # XXX anscheinend sind nur Fahrspuren gesperrt? --- 1438466400, # 2015-08-02 00:00
        text  => 'Stralauer Str.: Asphaltierungsarbeiten, Fahrbahn gesperrt, vom 20.07.2015 bis 01.08.2015',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.341629.php',
@@ -24337,6 +24337,24 @@ EOF
        data => <<EOF,
 #: XXX_prog BNP in temp blockings wird zur Zeit weder im CGI noch in der Perl/Tk-Anwendung behandelt
 	BNP:30::trailer=no 10583,15208
+EOF
+     },
+     { from  => 1437289200, # 2015-07-19 09:00
+       until => 1441033200, # 2015-08-31 17:00
+       text  => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, 20.07.2015 09:00 Uhr bis 31.08.2015 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_025684',
+       data  => <<EOF,
+userdel	q4::inwork 13357,9313 13489,9456 13606,9578 13645,9621
+EOF
+     },
+     { from  => 1437282000, # 2015-07-19 07:00
+       until => 1441033200, # 2015-08-31 17:00
+       text  => 'Daimlerstr.: Baustelle, Fahrbahn zwischen Mauserstr. und Säntisstr. gesperrt, 20.07.2015 07:00 Uhr bis 31.08.2015 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_025689',
+       data  => <<EOF,
+userdel	q4::inwork 9695,1563 9626,1604 9519,1650 9493,1661 9420,1700
 EOF
      },
     );
