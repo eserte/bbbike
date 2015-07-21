@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2005,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2005,2013,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,6 +19,7 @@ use strict;
 use File::Basename;
 use CGI;
 use BBBikeCGI::Util ();
+use BBBikeMapserver::Bbox;
 
 sub new {
     my($class, %args) = @_;
@@ -52,21 +53,6 @@ sub new_from_cgi {
 	$self->{CenterTo} = $q->param("center");
     }
     $self;
-}
-
-sub get_bbox_for_scope {
-    my($self, $scope) = @_;
-    my $bbox = {'region'    => [-80800,-86200,108200,81600],
-		'city'      => [-15700,-8800,37300,31300],
-		'innercity' => [1887,6525,15337,16087],
-		'potsdam'   => [-17562,-4800,-7200,2587],
-	       }->{$scope};
-    $bbox ? @$bbox : ();
-}
-
-sub get_bbox_string_for_scope {
-    my($self, $scope) = @_;
-    join(",", $self->get_bbox_for_scope($scope));
 }
 
 sub narrowest_scope {

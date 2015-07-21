@@ -33,10 +33,10 @@ MAPSERVER_BIN_DIR?=	/usr/bin
 .endif
 SHPTREE=		${MAPSERVER_BIN_DIR}/shptree
 
-BBOX_REGION!=	perl -I.. -MBBBikeMapserver -e 'print BBBikeMapserver->get_bbox_string_for_scope("region")'
-BBOX_CITY!=	perl -I.. -MBBBikeMapserver -e 'print BBBikeMapserver->get_bbox_string_for_scope("city")'
-BBOX_INNERCITY!=perl -I.. -MBBBikeMapserver -e 'print BBBikeMapserver->get_bbox_string_for_scope("innercity")'
-BBOX_POTSDAM!=	perl -I.. -MBBBikeMapserver -e 'print BBBikeMapserver->get_bbox_string_for_scope("potsdam")'
+BBOX_REGION!=	perl -I.. -MBBBikeMapserver::Bbox -e 'print BBBikeMapserver::Bbox->get_bbox_string_for_scope("region")'
+BBOX_CITY!=	perl -I.. -MBBBikeMapserver::Bbox -e 'print BBBikeMapserver::Bbox->get_bbox_string_for_scope("city")'
+BBOX_INNERCITY!=perl -I.. -MBBBikeMapserver::Bbox -e 'print BBBikeMapserver::Bbox->get_bbox_string_for_scope("innercity")'
+BBOX_POTSDAM!=	perl -I.. -MBBBikeMapserver::Bbox -e 'print BBBikeMapserver::Bbox->get_bbox_string_for_scope("potsdam")'
 
 mapfiles:	mapfiles-without-reference-maps mapfiles-reference-maps
 
