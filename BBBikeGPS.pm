@@ -363,12 +363,28 @@ sub BBBikeGPS::draw_gpsman_data {
 	    }
 	}
 	$row++;
+	my $get_heute_track = sub {
+	    for my $suffix (qw(trk gpx)) {
+		return "$heute.$suffix" if -r "$heute.$suffix";
+	    }
+	    # private SRT hack
+	    my $f = "$ENV{HOME}/trash/Current.gpx";
+	    my @s = stat($f);
+	    if ($s[9]) {
+		my @l_then = localtime $s[9];
+		my @l_now  = localtime;
+		if ($l_then[3] == $l_now[3] &&
+		    $l_then[4] == $l_now[4] &&
+		    $l_then[5] == $l_now[5]) {
+		    # Current.gpx is from today
+		    return $f;
+		}
+	    }
+	    undef;
+	};
 	$ff->Button(-text => M"Track heute",
-		    (!-r "$heute.trk" && !-r "$heute.gpx" ? (-state => "disabled") : ()),
-		    -command => sub { $file = "$heute.trk";
-				      if (!-r $file && -r "$heute.gpx") {
-					  $file = "$heute.gpx";
-				      }					  
+		    (!$get_heute_track->() ? (-state => "disabled") : ()),
+		    -command => sub { $file = $get_heute_track->();  
 				      $gui_draw_gpsman_data_s = 1;
 				      $gui_draw_gpsman_data_p = 0;
 				  }
