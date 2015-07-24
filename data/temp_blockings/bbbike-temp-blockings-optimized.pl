@@ -2198,7 +2198,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'from' => 1430704800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-07-12
+#: last_checked: 2015-07-22
 #: next_check: 2015-09-21
 userdel	q3::inwork 15272,10790 15279,10862
 userdel	q3::inwork 15261,10738 15272,10790
@@ -2524,7 +2524,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
          'text' => 'Gartenufer: nachts ab Sonnenuntergang, spätestens ab 21.00 Uhr gesperrt',
          'from' => undef,
          'id' => 2595,
-         'data' => 'Gartenufer	2::night 6226,11405 6067,11479 5845,11615 5790,11643
+         'data' => 'Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 '
        },
        {
@@ -2894,7 +2894,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-07-17 vvv
+#: last_checked: 2015-07-22 vvv
 #: check_frequency: 21d vvv
 userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
@@ -2978,10 +2978,10 @@ userdel	q3::inwork 11325,12021 11275,12055
        {
          'source_id' => 'IM_025684',
          'until' => 1441033200,
-         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, 20.07.2015 09:00 Uhr bis 31.08.2015 17:00 Uhr ',
+         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 31.08.2015 17:00 Uhr ',
          'from' => 1437289200,
          'id' => 2723,
-         'data' => 'userdel	q4::inwork 13357,9313 13489,9456 13606,9578 13645,9621
+         'data' => 'userdel	q3::inwork 13357,9313 13489,9456 13606,9578 13645,9621
 ',
          'type' => 'handicap'
        },

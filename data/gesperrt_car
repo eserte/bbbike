@@ -3,7 +3,7 @@
 #:
 Mittelweg	1 12335,7770 12224,7799 12176,7811
 Privatweg (Kronenstr.)	2 10128,11813 10112,11796 10098,11766 9907,11752 9892,11752
-Maulbronner Ufer	1 7161,4091 7308,4080 7487,4104 7546,4112 7589,4147 7676,4216
+Maulbronner Ufer	1 7161,4091 7307,4087 7389,4088 7484,4109 7539,4127 7585,4154 7676,4216
 Reichstagufer	1 9098,12687 8892,12576 8766,12541
 Bunsenstr.	1 8892,12576 8904,12489
 Heimstr.	1 9973,9232 9966,9151 9958,9050 9951,8965
@@ -1738,3 +1738,6 @@ Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straßenbahntrasse	3::igndisp 
 Mittelstreifen	3nocross::ignrte 5475,10808 5471,10719 5458,10443
 Joachimsthaler Str. -> Augsburger Str.: Mittelstreifen	3::igndisp 5475,10808 5471,10719 5497,10719
 Augsburger Str. -> Joachimsthaler Str.: Mittelstreifen	3::igndisp 5497,10719 5471,10719 5458,10443
+Mittelstreifen	3nocross::ignrte 6494,6128 6629,5946 6696,5854
+Friedrichsruher Str. -> Thorwaldsenstr.: Mittelstreifen	3::igndisp 6508,5931 6629,5946 6494,6128
+Thorwaldsenstr. -> Friedrichsruher Str.: Mittelstreifen	3::igndisp 6696,5854 6629,5946 6508,5931

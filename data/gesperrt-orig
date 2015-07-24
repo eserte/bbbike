@@ -188,10 +188,10 @@ Baerwaldstr.	1 10361,9755 10357,9813 10424,9958
 Baerwaldstr.	1 10480,9949 10408,9800 10361,9755
 Dittersbacher Weg	1 7865,3354 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
-#: XXX Nalepastr. wird in Zukunft wieder geöffnet
+#: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2015-01-04
+#: last_checked: 2015-07-22
 #: check_frequency: 180d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -326,7 +326,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 (Drorystr. - Braunschweiger Str., Schulhof)	2 13518,7477 13601,7366
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
-#: last_checked: 2014-08-07
+#: last_checked: 2015-07-23
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875 6372,2856
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
@@ -709,7 +709,7 @@ Bösensteinweg	1 9943,1543 9847,1571 9771,1641
 #: by: Manfred Brühl
 Wesenberger Ring	1 13030,3664 13129,3809 13165,3850 13206,3854 13229,3836 13238,3794 13206,3674 13162,3576
 #: by: Andreas (...hallermann)
-Anna-Mackenroth-Weg	1 3633,2210 3641,2459
+Anna-Mackenroth-Weg	1 3633,2210 3641,2464
 Fuchsbau	1 17590,7828 17651,7973
 Drosselstieg	1 17683,7958 17747,8107
 Blaurackenweg	1 17532,8125 17647,8071 17613,7989
@@ -1117,6 +1117,7 @@ Wartenbergstr.	1s:q2 15328,11636 15300,11584
 #: XXX ^^^
 Bahnhofstr.	1 12166,21208 12202,21158
 Bahnhofstr.	1 12202,21158 12158,21166
+(Bushaltestelle und Straßenbahnwendestelle Schöneweide): Betriebsgelände	2 17675,5521 17588,5573 17578,5566
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1310,11 +1311,11 @@ Helbigstr.	1s:q3 20109,4087 20339,3779 20362,3750
 # 
 #: by: Karin Kühl:
 #: confirmed_by: srt
-Sophie-Taeuber-Arp-Weg	1s:q1 3302,2471 3293,2218
+Sophie-Taeuber-Arp-Weg	1s:q1 3302,2476 3293,2218
 # 
 #: by: Eva (philostrata):
 #: confirmed_by: srt
-Johanna-Spyri-Weg	1s:q1 3211,2221 3221,2473
+Johanna-Spyri-Weg	1s:q1 3211,2221 3221,2479
 # 
 #: note: nach Anmerkungen von Sandra Franz mit "q3" versehen:
 Seelbuschring	1s:q3 8485,4619 8432,4712 8242,4648
@@ -2407,7 +2408,7 @@ Tor	BNP:3::trailer=5 14425,8116
 # REMOVE (man fährt jetzt via neuen Gehweg) --- Schranke	BNP:0::trailer=3
 #: by: http://www.benno-koch.de/article09575_dumm_gelaufen_schifffahrtsamt_sperrt_teltow-route2 vvv
 Drängelgitter	BNP:5 4258,2693
-Drängelgitter	BNP:5 4202,2622
+# REMOVED (gibt's mittlerweile nicht mehr) --- Drängelgitter	BNP:5 4202,2622
 #: by: ^^^
 #: by: Kerstin Klemann: vvv
 #: confirmed_by: srt (noch immer enge Drängelgitter)
@@ -2566,8 +2567,8 @@ Drängelgitter	BNP:5 38562,100725
 Drängelgitter	BNP:5 38662,97200
 #: by: Corinna Meyer: vvv
 #: confirmed_by: rjoop & srt vvv
-Schwingtor an der Luiseninsel	BNP:5 7696,11621
-Schwingtor an der Luiseninsel	BNP:5 7735,11656
+Schwingtor an der Luiseninsel	BNP:5 7693,11627
+Schwingtor an der Luiseninsel	BNP:5 7732,11660
 #: confirmed_by: ^^^
 #: by: ^^^
 Schranke	BNP:1::trailer=5 25552,997
@@ -2638,7 +2639,7 @@ Schleuse - Lindenufer: wegen Bauarbeiten gesperrt	2::inwork -2944,14652 -2922,14
 Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6561,13151 6556,13240 6526,13327
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
-#: last_checked: 2015-07-14 vvv
+#: last_checked: 2015-07-23 vvv
 #: next_check: 2015-12-20 vvv
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
@@ -2666,6 +2667,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 # REMOVED --- #: XXX vermutlich müssen auch Radfahrer die Umleitung nehmen --- #: source_id: IM_024686 --- #: next_check: 2015-05-29 --- #: priority: #A --- Rummelsburger Landstraße: zwischen Nalepastr. und Poggendorffweg wegen Baustelle gesperrt	1::inwork 17143,8565 17202,8391
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html
+#: last_checked: 2015-07-21
 #: next_check: 2017-04-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
@@ -2696,7 +2698,7 @@ Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17610,-330 17651,-393
 # 
 #: XXX kein Endedatum
 #: osm_watch: way id="150301191" version="11"
-#: last_checked: 2015-04-07
+#: last_checked: 2015-07-23
 #: check_frequency: 120d
 Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
 # 
@@ -2718,7 +2720,7 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
 #: source_id: IM_023816 vvv
 #: XXX vermutlich bis März 2016 andauernd, laut Schild bis Februar 2016
-#: last_checked: 2015-07-17 vvv
+#: last_checked: 2015-07-23 vvv
 #: next_check: 2016-02-01 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
@@ -2745,7 +2747,7 @@ Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelm
 # 
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf
 #: XXX hier wird es für Autofahrer dauerhaft keine Zufahrt zur Minna-Todenhagen-Str. geben, aber vielleicht wird es für Radfahrer/Fußgänger einen Zugang geben?
-#: last_checked: 2015-06-06
+#: last_checked: 2015-07-22
 #: check_frequency: 120d
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
 # 
@@ -2783,7 +2785,7 @@ Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 30.09.2015 ge
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.153649.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.214040.php
 #: XXX falls es soweit ist -> gesperrt-orig
-#: last_checked: 2015-07-13
+#: last_checked: 2015-07-21
 #: check_frequency: 30d
 Lohmühlenplatz: Umgestaltung des Platzes, Weg ist gesperrt	2::inwork 12900,9465 12897,9365
 # 
@@ -2905,18 +2907,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 tragen (2 Stufen)	0:5 8818,13365
 # 
 # REMOVED (habe Leute hier langlaufen/fahren sehen) --- #: osm_watch: way id="182562157" version="2" --- #: last_checked: 2013-11-04 --- #: next_check: 2013-11-11 --- (Bautzener Str. - Südkreuz): Bauzaun, Zugang noch nicht erlaubt	2:inwork 8185,9338 8207,9324 8204,9046
-# 
-#: next_check_id: EMILSCHULZ-2014
-#: source_id: INKO_095722_COPY_1
-#: XXX siehe auch routing_helper addition
-#: XXX bei VMZ wurde der Eintrag entfernt (2014-03-31) --- ist aber immer noch aktiv!
-#: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/36485-fertigstellung-der-emil-schulz-bruecke-verzoegert-sich/ (Verzögerung bis August 2014)
-#: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/45172-emil-schulz-bruecke-im-oktober-soll-auch-die-zweite-fahrbahn-fertig-sein/ (Verzögerung bis Oktober 2014)
-#: priority: #A
-#: last_checked: 2014-04-27
-#: next_check: 2014-10-01
-Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
-# 
+# REMOVED (offen, aber handicap!) --- #: next_check_id: EMILSCHULZ-2014 --- #: source_id: INKO_095722_COPY_1 --- #: XXX siehe auch routing_helper addition --- #: XXX bei VMZ wurde der Eintrag entfernt (2014-03-31) --- ist aber immer noch aktiv! --- #: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/36485-fertigstellung-der-emil-schulz-bruecke-verzoegert-sich/ (Verzögerung bis August 2014) --- #: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/45172-emil-schulz-bruecke-im-oktober-soll-auch-die-zweite-fahrbahn-fertig-sein/ (Verzögerung bis Oktober 2014) --- #: priority: #A --- #: last_checked: 2014-04-27 --- #: next_check: 2014-10-01 --- Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 # REMOVED (Bauarbeiten beendet) --- #: XXX siehe auch die Umleitungsstrecke --- #: XXX nach den Bauarbeiten asphaltiert --- #: by: http://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10317_Berlin_Strassenbauarbeiten__607379.html (Asphaltierung) --- #: by: http://www.rubu.de/verkehr-planungen.html (Dauer) --- #: by: http://www.rubu.de/mediapool/115/1150729/data/Paul_u_Paula_UL3-Uebersicht-BA.pdf (Übersichtsplan) --- #: last_checked: 2013-08-19 --- #: next_check: 2013-10-03 (geplantes Bauende ist Ende September) --- Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
 # REMOVED (Bauarbeiten beendet) --- #: last_checked: 2013-07-13 --- #: check_frequency: 100d --- Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -3441,13270 -3462,13256 -3467,13240 -3526,13196
 # 
@@ -2964,8 +2955,8 @@ Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
-#: last_checked: 2015-05-12
-#: check_frequency: 60d
+#: last_checked: 2015-07-21
+#: check_frequency: 120d
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
 # REMOVED (wieder offen) --- #: last_checked: 2013-02-04 --- #: XXX Bauzäune waren im Dezember 2012 weg, aber im Februar 2013 wurde wieder gebaut --- Am Sudhaus: Bauarbeiten, manchmal noch gesperrt	2:inwork 12134,8172 12282,8204
