@@ -16409,7 +16409,7 @@ EOF
        text  => 'B 001 zw. Manschnow und Abzw. Alt Tucheband Straßenbau Vollsperrung 28.09.2009-11.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 88364,18251 87135,17933 86429,17774 85640,17560
+userdel	2::inwork 88364,18235 87135,17933 86429,17774 85640,17560
 EOF
      },
      { from  => 1256857200, # 2009-10-30 00:00

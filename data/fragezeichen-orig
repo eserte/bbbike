@@ -424,6 +424,12 @@ Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13
 #: source_id ^^^
 #: by ^^^
 # 
+#: XXX_prog: fehlende Mˆglichkeit, das Handicap hier auszudr¸cken!
+#: source_id: IM_025755
+#: XXX bis 2015-10-05
+#: last_checked: 2015-07-26 (So; Bauz‰une waren weggeschoben, man konnte die Straﬂe gut ¸berqueren)
+Friedrichstr./Unter den Linden: ‹berqueren der Straﬂe Unter den Linden nicht mˆglich, Radfahrer m¸ssen offiziell auch schieben	? 9343,12464 9358,12351 9369,12253
+# 
 # REMOVED (-> bbbike-temp-blockings.pl) --- #: XXX Realisierung bis September 2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html --- #: XXX betrifft die Einbahnstraﬂenregelung w‰hrend der Bauarbeiten auch Radfahrer? --- #: next_check: 2015-05-04 --- Maaﬂenstr.: welche Auswirkungen wird die neue "Begegnungszone" f¸r Radfahrer haben? Wird der Radweg verschwinden?	?::inwork 7080,10098 7060,10221 7033,10328
 # REMOVED (Umleitung geht anders herum) --- #: XXX laut fritz, "f¸r mehrere Monate" --- #: next_check: 2015-02-11 --- Rathausstr. (Lichtenberg): gibt es ƒnderungen w‰hrend der Bauarbeiten Frankfurter Allee/G¸rtelstr., z.B. wird die Einbahnstraﬂenrichtung umgedreht?	? 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
 # REMOVED (-> aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- #: note: Privatstraﬂe, s¸dlicher (jetzt schon bestehender) Abschnitt bleibt ˆffentlich --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- Zur alten Bˆrse: Qualit‰t, schon fertig?	? 18736,13080 18712,12853 18682,12599 18649,12371 --- Marzahner Chaussee [Zur alten Bˆrse]: Qualit‰t, schon fertig?	? 18649,12371 18647,12354 18639,12272 18654,12255
@@ -1212,6 +1218,11 @@ Am Kirchendreieck: Lage der Straﬂe? Qualit‰t?	? 23922,13085 23960,13325
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20150723.1925.402307.html
+#: XXX Endedatum laut fritz 2015-08-28, laut Pressemitteilung: 2015-09-30
+#: next_check: 2015-08-28
+Weiﬂenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 14959,14752
 # 
 Rosa-Luxemburg-Steg: Qualit‰t: Holzbohlen oder was anderes?	? 6297,11449 6247,11390
 #
@@ -2028,6 +2039,7 @@ Planstraﬂen im Marienhain: Straﬂennamen? Qualit‰t?	? 22771,3151 22476,3118 22485
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2015
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5051
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
 #: last_checked: 2015-05-16 vvv
 #: check_frequency: 100d vvv
 "Sommerwiesenweg" und "Am Stadtforst": hier entstehen neue Straﬂen, genaue Lage, Qualit‰t, vermutlich Sackgasse?	? 23623,2392 23624,2275
@@ -2179,6 +2191,11 @@ Traudelstr.: geplante Straﬂe in Altglienicke, genaue Lage, Qualit‰t?	?::projecte
 #: XXX ^^^
 #: by: ^^^
 #: by: ^^^
+# 
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2015/vzb0846_iv_aufstellg_b_plan_10_77.pdf
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015
+#: next_check: 2016-08-01
+Bebauungsplan 10-77: werden hier neue Straﬂen entstehen?	?::projected 21483,16527 21548,16338
 # 
 #: ignore ^^^
 #: section ^^^
@@ -2689,11 +2706,11 @@ Zechin - Sophienthal: Qualit‰t?	? 81249,24369 81363,24559 81553,24559 81706,2485
 #: XXX: laut Aktiv Regional m‰ﬂig starker Verkehr
 Zechin - Golzow: Qualit‰t?	? 81394,23981 81767,23337 82355,22714 82699,21345 83648,20890 84029,20395 84274,20063
 #: XXX: laut Aktiv Regional m‰ﬂig starker Verkehr
-Golzow - Gorgast: Qualit‰t?	? 84274,20063 84364,19949 84507,19780 84955,19716 87927,19532
+Golzow - Gorgast: Qualit‰t?	? 84274,20063 84364,19949 84507,19780 84955,19716 88069,19449
 #: XXX: laut Aktiv Regional m‰ﬂig starker Verkehr
-Manschnow - Gorgast: Qualit‰t?	? 88364,18251 88244,18580 87926,19344 87927,19532
+Manschnow - Gorgast: Qualit‰t?	? 88364,18235 88245,18626 88071,19190 88069,19449
 #: XXX: laut Aktiv Regional m‰ﬂig starker Verkehr
-Gorgast - Genschmar: Qualit‰t?	? 87927,19532 87444,20281 87520,20941 87216,21296 87013,21868 86835,22553 86797,23569 86378,23836 85921,23861 85616,24026 85622,24171
+Gorgast - Genschmar: Qualit‰t?	? 88069,19449 87484,20252 87511,20941 87253,21320 87013,21868 86835,22553 86797,23569 86378,23836 85921,23861 85616,24026 85622,24171
 #: XXX: laut Aktiv Regional m‰ﬂig starker Verkehr
 Genschmar - Zechin: Qualit‰t?	? 85622,24171 85184,24191 84854,24369 82988,24280 81394,23981
 #: XXX: laut Aktiv Regional gut geeignet
@@ -2709,9 +2726,9 @@ B1 - Golzow (ˆstliche Verbindung): Qualit‰t?	? 85640,17560 85629,17856 85248,181
 #: XXX: laut Aktiv Regional gut geeignet
 B1 - Alt Tucheband: Qualit‰t?	? 85640,17560 85625,15862
 #: XXX: laut Aktiv Regional gut geeignet
-Gorgast - Bleyen: Qualit‰t?	? 87927,19532 88079,19532 88346,20116 88650,20433 90288,21385 90529,22007 90986,22134
+Gorgast - Bleyen: Qualit‰t?	? 88069,19449 88180,19454 88236,19646 88688,20275 90361,21270 90699,21826 91092,21961
 #: XXX: laut Aktiv Regional gut geeignet
-Altbleyen: Qualit‰t?	? 92404,20801 91392,21601 90986,22134 90783,22477 90895,22821
+Altbleyen: Qualit‰t?	? 92404,20801 92127,21170 92110,21358 91320,21612 91092,21961 90759,22486 90895,22821
 #: XXX: laut Aktiv Regional m‰ﬂig starker Verkehr
 Seelow - Zechin: Qualit‰t?	? 76589,15970 76714,16676 76843,17107 76767,17780 76747,18269 77237,18889 77857,18950 78043,19111 78175,19383 78996,20092 79357,21611 79243,21797 79554,22470 79725,23213
 #: XXX: laut Aktiv Regional gut geeignet
@@ -2730,7 +2747,7 @@ Alt Tucheband - Rathstock: Qualit‰t?	? 85625,15862 85895,15837 86759,14936 87190
 #: XXX: laut Aktiv Regional gut geeignet
 Rathstock - Reitwein - Oder: Qualit‰t?	? 87819,13701 88676,13336 90313,12498 90350,11998 90631,11991 91062,11724 92218,11292 92903,11521 93462,11597 93775,11654
 #: XXX: laut Aktiv Regional gut geeignet
-Manschnow - Neu Manschnow: Qualit‰t?	? 88364,18251 88346,17602 88422,17234 88650,16917 89780,16675 89932,16155 90662,16262
+Manschnow - Neu Manschnow: Qualit‰t?	? 88364,18235 88434,17476 88501,17171 88650,16917 89780,16675 89932,16155 90662,16262
 #: XXX: laut Aktiv Regional gut geeignet
 Alt Zeschdorf - Sachsendorf: Qualit‰t?	? 83070,5097 83483,6240 84210,6891 84626,7484 84740,7928 84638,8106 83978,8182 83242,10429 82367,12026
 #: XXX: laut Aktiv Regional gut geeignet
