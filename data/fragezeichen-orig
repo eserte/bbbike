@@ -101,7 +101,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2015-07-21
+#: last_checked: 2015-07-24
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -728,7 +728,7 @@ XXI-32d-1: Bebauungsplan schlägt die Verkürzung der Gartenstraße vor	?::projecte
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 (Eröffnungstermin)
 #: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen?
 #: XXX gehört zu Tempelhof-Schöneberg
-#: last_checked: 2015-06-09
+#: last_checked: 2015-07-24
 #: check_frequency: 90d
 #: priority: #A
 Am Lokdepot: werden die beiden Teilstücke miteinander verbunden?	?::inwork 8390,8879 8389,9017
@@ -988,7 +988,7 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 #: XXX culdesac-Einträge entfernen, wenn die Verlängerung erfolgt ist
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150119.0945.400904.html (Fertigstellung ist im Herbst 2015 geplant)
 #: XXX es wird noch einen parallelen Weg zwischen Monumentenstr. und Kolonnenstr. auf der Hangoberkante geben
-#: last_checked: 2015-06-09
+#: last_checked: 2015-07-24
 #: next_check: 2015-09-01
 Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis Herbst 2015	?::projected 8204,9001 8200,8920 7998,8317
 # 
@@ -1391,7 +1391,7 @@ Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 4806,13
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2015-07-23
+#: last_checked: 2015-07-24
 #: check_frequency: 120d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
@@ -2201,9 +2201,7 @@ Gamengrund: Qualität (teilweise war es sehr sandig!)? Geht es von der B 158 aus 
 Brunow - Gamengrund: Qualität?	? 41618,36515 43362,37337 43825,37262 43922,36623 43637,36362 42975,36212 42748,35962
 Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden? Qualität?	? -6962,17713 -7060,17637 -7306,17291 -7396,17303
 Sacrower See - Försterei Zedlitz: Qualität (wahrscheinlich Waldweg, Q2)?	? -10783,3792 -10912,3738 -10955,3723
-#: XXX Straße weiter Richtung Dauer einzeichnen:
-Schenkenberg - Dauer: Qualität (zumindest in Schenkenberg noch asphaltiert)?	? 45454,107247 44462,109018
-Dauer - Tornow: Qualität?	? 44462,109018 45265,108797 46394,109694 46174,110110 45766,110618 46075,110850 46282,111014 46291,111162 46650,111113 46672,110980 47399,110869
+# REMOVED (aufgenommen) --- Dauer - Tornow: Qualität?	? 44444,109014 45252,108770 46394,109694 46110,110173 45999,110316 45779,110576 45769,110623 46018,110834 46149,110904 46284,111032 46292,111081 46300,111173 46634,111116 46678,111048 46672,110980 47311,110882 47399,110869
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1834,-3968 -1812,-4210
 # REMOVED (Antwort ist nein) --- Schönerlinder Str.: ist die Radwegbenutzungspflicht nördlich der Autobahnbrücke (Berliner Ring) auch aufgehoben?	? 12944,26163 13192,26628 13256,26863
 Verlängerung Verbindungschaussee: Qualität?	? -2834,5578 -3605,4520
@@ -3033,9 +3031,8 @@ Fürstenwerder - Bülowssiege: Qualität?	? 21007,109931 21062,109937 21165,109966 
 L25 - Hildebrandshagen: Qualität?	? 23242,109707 23226,110446 23385,110586 23413,110757 23274,110878 23274,110963 23087,111261 23087,111306 23153,111439 23077,111655 23118,111699 23134,111848 22992,112273 22836,112384 22674,112533
 Hildebrandshagen - Wolfshagen: Qualität?	? 22674,112533 22785,112612 22909,112768 22972,112939 22766,114059 22849,114201 22836,114325 22934,114693 23096,114947 24289,115273 24587,115502
 Nieden - Göritz: Qualität?	? 43904,115305 43730,115229 42427,113348 42135,112936 42236,112780 42179,112609 42078,112581 42030,112375 42163,112359 42674,112178 42829,112070 43007,111999
-Göritz - Tornow: Qualität?	? 43007,111999 43070,112007 43476,111826 43822,111442 44872,110944 45766,110618
-Karlshorst - Klockow: Qualität?	? 47399,110869 48560,110342 48678,110373 49007,110760 49176,110846 49382,110861
-Klockow - Carmzow: Qualität (am Carmzower Ende asphaltiert)?	? 49504,110961 49632,111046 49784,110602 49946,110487 50378,110259 50590,110075 50764,110031 50955,110066 51082,110034 51139,109983 51948,109454
+Göritz - Tornow: Qualität (vermutlich asphaltiert?)?	? 43007,111999 43070,112007 43476,111826 43822,111442 44872,110944
+Klockow: Weg nach Carmzow ausgeschildert? Qualität (vermutlich unbefestigt)?	? 49523,111095 49629,111050
 Am Gehölz (Potsdam): Qualität?	? -7758,-2457 -8024,-2468 -8140,-2475
 Hubertusdamm (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7803,-2689 -7484,-2745 -7369,-2751 -7266,-2736
 Brahmsweg (Potsdam): Qualität?	? -8136,-2699 -8132,-2754 -8138,-2804
@@ -3222,7 +3219,6 @@ Radweg zwischen Groß Schulzendorf und Ludwigsfelde: existiert bereits der Radweg
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2669
 Radweg zwischen Linthe und Brück: Qualität?	? -30940,-28490 -31197,-28211 -32763,-26409
 # REMOVED (aufgenommen) --- #: XXX: laut http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=2339 mit Radweg --- Zeppelinufer (Teltow): Qualität?	? 1464,-470 1338,-426 1134,-370 818,-298
-Baumgarten - Grünow: Qualität?	? 45393,105220 45647,104851 45619,104429 45554,104267 45590,103655 46020,102452 45794,102248 45805,102072
 #: XXX wahrscheinlich asphaltiert, zumindest an der B2
 #: XXX fehlt in Potsdam.coords.data
 Am Kirchberg (Neu Fahrland): Qualität?	? -13783,3919 -13925,3928 -14242,3997 -14507,4057 -14632,4093 -14725,4141 -14777,4143
@@ -3844,7 +3840,7 @@ Telz - Zossen: wurde der geplante Radweg schon gebaut? Qualität? Auf welcher Sei
 Klandorf: Qualität im östlichen Abschnitt?	? 19854,52797 19870,52656 20344,52595 20411,52518 20503,52217
 Waldheimstr. (Basdorf): Qualität im östlichen Abschnitt? Auch asphaltiert?	? 12676,34638 12979,34718 13468,34885 13568,34935
 Herrenhof: Qualität?	? 59259,80538 59325,80664 59305,80701 59481,80950
-Jamikow - Woltersdorf: Qualität?	? 61398,85335 61465,85414 61678,85560 62757,86072 63202,86383 63391,86474 63574,86547 63805,86748 64018,86876 64137,87068
+Jamikow - Woltersdorf: Qualität?	? 61398,85335 61465,85414 61678,85560 62757,86072 63202,86383 63391,86474 63574,86547 63805,86748 64018,86876
 #: by: http://www.maz-online.de/Lokales/Potsdam-Mittelmark/Ende-August-starten-Bauarbeiten-in-der-Potsdamer-Strasse (Bauzeit)
 #: last_checked: 2014-05-10
 #: next_check: 2015-03-01
@@ -3905,9 +3901,7 @@ Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verl
 #: XXX genaue Lage?
 Konrad-Zuse-Ring (Potsdam): Ist die Straße schon fertig gestellt? Qualität?	? -13330,2796 -13168,2836 -13105,2614 -13266,2571
 # 
-#: source_id: LS/721-E/14/051
-#: next_check: 2014-10-02
-Schenkenberg - Autobahn: Existiert hier ein Radweg? Qualität (asphaltiert?)? Auf welcher Seite der Straße befindet sich der Radweg?	? 46581,105900 47587,106693
+# REMOVED (aufgenommen) --- #: source_id: LS/721-E/14/051 --- #: next_check: 2014-10-02 --- Schenkenberg - Autobahn: Existiert hier ein Radweg? Qualität (asphaltiert?)? Auf welcher Seite der Straße befindet sich der Radweg?	? 46615,105925 47587,106693
 Jahnpromenade (Erkner): Qualität?	? 34325,3183 34352,3189 34493,3339
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf

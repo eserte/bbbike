@@ -23,7 +23,7 @@ Wollenthin	OS 42856,102980
 Dreesch	OS 46083,99281
 Dreesch	OS 47055,99536
 Dreesch	OS 46026,99726
-Mönchehof|(Grünow)	OS 47929,103118
+Mönchehof|(Grünow)	OHT 47929,103118
 Damme|(Uckermark)	OS 49716,100842
 Damme|(Uckermark)	OS 50751,100770
 Damme|(Uckermark)	OS 48537,98606
@@ -41,8 +41,11 @@ Wendtshof|(Wallmow)	OS 53769,106453
 Cremzow	OS 51202,106792
 Cremzow	OS 51318,106193
 Cremzow	OS 51560,106609
+Cremzow	OS 51423,107071
 Carmzow	OS 53201,109871
 Carmzow	OS 52629,110092
+Carmzow	OS 51818,109539
+Carmzow	OS 51901,109234
 #: linked: Hedwigshof|(bei Carmzow) vvv
 Hedwigshof	OS 54144,109576
 Hedwigshof	OS 54565,109426
@@ -103,13 +106,15 @@ Staffelde|(bei Mescherin)	OS 78427,97592
 Staffelde|(bei Mescherin)	OS 78481,96992
 Vierraden	OS 71582,78858
 Vierraden	OS 69531,77125
+Vierraden	OS 70401,77887
 #: XXX geschätzte Position
-Vierraden	OS 70007,78551
+Vierraden	OS 70014,78585
 Blumenhagen	OS 69565,79460
 Blumenhagen	OS 69356,80336
 Schwedt|/Oder	OS 70570,76523
 Schwedt|/Oder	OS 69364,76624
 Schwedt|/Oder	OS 66229,75625
+Schwedt|/Oder	OS 69463,72954
 #: linked Heinersdorf|bei Schwedt
 Heinersdorf	OS 64034,77011
 Hohenwutzen	OS 58642,50396
@@ -130,10 +135,27 @@ Schönfeld|(Uckermark)	OS 47835,113374
 Schönfeld|(Uckermark)	OS 48139,112482
 Klockow	OS 49446,110392
 Klockow	OS 49412,111409
+Klockow	OS 48941,110668
+Klockow	OS 49754,110705
 Dauerthal	OS 46963,107308
-Schenkenberg|(bei Prenzlau)	OS 45784,107451
+#: linked: Schenkenberg|(bei Prenzlau) vvv
+Schenkenberg	OS 45784,107451
+Schenkenberg	OS 45822,106918
+Schenkenberg	OS 45241,107625
+#: linked ^^^
+#: linked: Tornow|(bei Schönfeld, Uckermark) vvv
+Tornow	OS 45999,110316
+Tornow	OS 45767,110624
+Tornow	OS 46634,111116
+#: linked ^^^
+#: linked: Karlshof|(bei Tornow) vvv
+Karlshof	OS 47311,110882
+Karlshof	OS 47461,110852
+#: linked ^^^
 Ziemkendorf	OS 49759,102325
 Grenz	OS 51097,104264
+Grenz	OS 51728,104218
+Grenz	OS 50931,104373
 Fahrenwalde	OS 53432,115261
 Rollwitz	OS 47432,119730
 Pasewalk	OS 47537,121942
@@ -344,7 +366,7 @@ Kerkow	OS 49089,70562
 Kerkow	OS 48672,70933
 Angermünde	OS 49747,67955
 #: XXX geschätzt
-Angermünde	OS 49913,70005
+Angermünde	OS 49869,70036
 Pinnow|(Uckermark)	OS 55649,74233
 Greiffenberg	OS 46820,76962
 Greiffenberg	OS 46704,75833
@@ -795,6 +817,15 @@ Ahrensfelde	OS 21971,18836
 Drense	OS 47381,101165
 #: XXX abgeschätzter Punkt
 Grünow	OS 45080,101325
+Grünow	OS 46326,102203
+Grünow	OS 46228,102142
+Grünow	OS 46018,102470
+Grünow	OS 46095,102522
+#: linked: Baumgarten|(Ludwigsburg) vvv
+Baumgarten	OS 45595,104929
+Baumgarten	OS 46064,105570
+Baumgarten	OS 45924,105451
+#: linked ^^^
 Lanke	OS 20850,38827
 Lanke	OS 20775,40359
 Prenden	OS 20219,41956
@@ -897,8 +928,9 @@ Biesendahlshof	OHT 63826,89135
 Biesendahlshof	OS 63798,89230
 #: XXX Position geschätzt
 Biesendahlshof	OS 63517,88597
-Niederfelde	OHT 66087,84469
-Niederfelde	OHT 66263,84195
+Niederfelde	OHT 66081,84462
+Niederfelde	OHT 66258,84192
+Niederfelde	OHT 66165,84318
 #: linked: Dallgow
 Dallgow-Döberitz	OS -9503,12227
 Seeburg	OS -9034,11411
@@ -1029,3 +1061,4 @@ Bralitz	OS 52089,49683
 Wullwinkel	OHT 25886,37782
 Wullwinkel	OHT 25745,37267
 #: linked ^^^
+Krajnik Dolny	OS 70981,70924
