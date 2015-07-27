@@ -185,14 +185,14 @@ bbbike:quality=Q1 [0x39 resolution 23]
 bbbike:quality=Q2 [0x38 resolution 23]
 bbbike:quality=Q3 [0x37 resolution 23]
 
-bbbike:mountclass=light_mount [0x14101 resolution 23]
-bbbike:mountclass=medium_mount [0x14201 resolution 23]
-bbbike:mountclass=strong_mount [0x14301 resolution 23]
-bbbike:mountclass=unspecified_mount [0x14401 resolution 23]
-bbbike:mountclass=light_slope [0x14501 resolution 23]
-bbbike:mountclass=medium_slope [0x14601 resolution 23]
-bbbike:mountclass=strong_slope [0x14701 resolution 23]
-bbbike:mountclass=unspecified_slope [0x14801 resolution 23]
+bbbike:mountclass=light_mount [0x10400 resolution 23]
+bbbike:mountclass=medium_mount [0x10401 resolution 23]
+bbbike:mountclass=strong_mount [0x10402 resolution 23]
+bbbike:mountclass=unspecified_mount [0x10403 resolution 23]
+bbbike:mountclass=light_slope [0x10404 resolution 23]
+bbbike:mountclass=medium_slope [0x10405 resolution 23]
+bbbike:mountclass=strong_slope [0x10406 resolution 23]
+bbbike:mountclass=unspecified_slope [0x10407 resolution 23]
 
 # SRT addition ends here
 ######################################################################
