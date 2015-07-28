@@ -2907,16 +2907,7 @@ userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.339753.php',
-         'until' => 1438034399,
-         'text' => 'Franzensbader Straße: zwischen Hubertusallee und Berkaer Str. wegen Bauarbeiten in Richtung Süden gesperrt, 01.06.2015 bis voraussichtlich 27.07.2015 ',
-         'from' => 1433023200,
-         'id' => 2712,
-         'data' => 'userdel	q4::inwork; 2320,8722 2361,8608 2423,8427 2407,8148 2370,8109
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
