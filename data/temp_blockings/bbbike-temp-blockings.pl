@@ -23539,8 +23539,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2015-11-27 16:00:00"), # 1433109599, # 2015-05-31 23:59
-       text  => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke nicht benutzbar, bis November 2015',
+       until => $isodate2epoch->("2015-12-30 16:00:00"), # 1433109599, # 2015-05-31 23:59
+       text  => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke nicht benutzbar, bis Dezember 2015',
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/freybruecke/de/bau.shtml',
        data  => <<EOF,
@@ -24355,6 +24355,15 @@ EOF
        source_id => 'IM_025689',
        data  => <<EOF,
 userdel	q4::inwork 9695,1563 9626,1604 9519,1650 9493,1661 9420,1700
+EOF
+     },
+     { from  => 1438198655, # 2015-07-29 21:37
+       until => 1440774000, # 2015-08-28 17:00
+       text  => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 28.08.2015',
+       type  => 'handicap',
+       source_id => 'IM_025719',
+       data  => <<EOF,
+userdel	q4::inwork; 9416,10196 9409,10226 9404,10250
 EOF
      },
     );

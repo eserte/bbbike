@@ -1331,7 +1331,8 @@ Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus
 Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s:q3 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
-Schulenburgring	1s:q3 9027,8431 9022,8581 9006,8602
+#: note: auf dem Gehweg stehen regelmäßig (Wach-)Polizisten 
+Schulenburgring	1s:q4 9027,8431 9022,8581 9006,8602
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
 # REMOVED --- #: next_check: 2013-10-30 --- #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
@@ -2757,7 +2758,7 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 #: by: Stefan Klinkusch: "gesperrt" vvv
 #: source_id: INKO_118000 vvv
 #: osm_watch: way id="25115001" version="8" vvv
-#: next_check: 2015-11-20 vvv
+#: next_check: 2015-12-20 vvv
 (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
 #: next_check ^^^
@@ -2845,7 +2846,7 @@ Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: note: allerdings könnte man sein Fahrrad über den Betonpfeiler rübertragen
-#: last_checked: 2015-06-29
+#: last_checked: 2015-07-29
 #: check_frequency: 90d
 am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 # 
