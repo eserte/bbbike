@@ -1381,7 +1381,7 @@ EOF
        text  => 'B 198; zw. Althüttendorf und Joachimsthal Einbau Deckschicht Vollsperrung 26.11.2004-29.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 34237,62950 34368,62531
+userdel	2 34268,62861 34368,62531
 EOF
      },
      { from  => 1101337200, # 2004-11-25 00:00
@@ -4047,7 +4047,7 @@ EOF
        text  => 'L 220 OD Joachimsthal Bau Kreisverkehr Vollsperrung 28.03.2006-30.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 33787,63026 33254,63446
+userdel	q4::inwork 33733,63099 33254,63446
 EOF
      },
      { from  => 1144792800, # 2006-04-12 00:00
@@ -7811,7 +7811,7 @@ EOF
        text  => 'B 167 Eberswalder Str. OD Eberswalde, zw. Spechthausener Str. u. Schönholzer Str. Deckenerneuerung Vollsperrung 10.04.2007-24.04.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 32139,48523 33163,48487 34334,48750
+userdel	q4::inwork 32139,48523 33163,48487 33900,48695 34335,48744
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
