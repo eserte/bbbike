@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.02;
+$VERSION = 3.03;
 
 BEGIN {
     if (!eval '
@@ -89,15 +89,34 @@ sub geocoder_dialog {
     destroy_geocoder_dialog();
     $geocoder_toplevel = $main::top->Toplevel(-title => "Geocode");
     $geocoder_toplevel->transient($main::top) if $main::transient;
-    #my $loc = "Berlin, ";
-    my $loc = ", Berlin"; # It seems that Yahoo and OSM can deal better with the city at the end. Google and Bing are fine with both.
-    my $e = $geocoder_toplevel->LabEntry(-textvariable => \$loc,
-					 -labelPack => [-side => 'left'],
-					 -label => 'Location:',
-					)->pack(-anchor => 'w');
-    $e->focus;
-    #$e->icursor("end");
-    $e->icursor(0);
+
+    my $street;
+    my $place = 'Berlin';
+    my $e;
+    {
+	my $f = $geocoder_toplevel->Frame->pack(-anchor => 'w');
+
+	Tk::grid(
+		 $f->Label(-text => 'Street:'),
+		 ($e = $f->Entry(-textvariable => \$street)),
+		 -sticky => 'w',
+		);
+	$e->focus;
+	#$e->icursor("end");
+	$e->icursor(0);
+
+	Tk::grid(
+		 $f->Label(-text => 'City/Place:'),
+		 $f->Entry(-textvariable => \$place),
+		 -sticky => 'w',
+		);
+    }
+
+    my $get_loc = sub {
+	# It seems that Yahoo and OSM can deal better with the
+	# city/place at the end. Google and Bing are fine with both.
+	join(', ', grep { defined && length } ($street, $place));
+    };
 
     my $gcf = $geocoder_toplevel->LabFrame(-label => 'Geocoding modules', -labelside => 'acrosstop'
 					  )->pack(-fill => 'x', -expand => 1);
@@ -354,7 +373,7 @@ sub geocoder_dialog {
 	$bf->Button(Name => "ok",
 		    -command => sub {
 			my $gc = $apis{$geocoder_api};
-			my $location = $do_geocode->($gc, $loc);
+			my $location = $do_geocode->($gc, $get_loc->());
 			if ($location) {
 			    $res->delete("1.0", "end");
 			    $res->insert("end", $get_long_address->($gc, $location));
@@ -382,10 +401,10 @@ sub geocoder_dialog {
 				my $gc = $apis{$_api};
 				next if !$gc->{include_multi};
 				my $location = eval {
-				    $do_geocode->($gc, $loc);
+				    $do_geocode->($gc, $get_loc->());
 				};
 				if ($@ || !$location) {
-				    warn "Could not geocode '$loc' with '$_api': $@";
+				    warn "Could not geocode '" . $get_loc->() . "' with '$_api': $@";
 				} else {
 				    if ($gc->{include_multi_master}) {
 					$loc_addr = $get_long_address->($gc, $location);
