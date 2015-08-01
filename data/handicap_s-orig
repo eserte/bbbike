@@ -1845,6 +1845,7 @@ Arnimplatz: Fußgänger	q2 10606,16319 10739,16146
 (Möllendorffstr. - Karl-Lade-Str.): Fußgänger	q2 15513,13539 15374,13542
 # REMOVED (aufgehoben) --- #: temporary: --- #: XXX wann wird die Umfahrung wieder aufgehoben? --- #: last_checked: 2013-09-12 --- #: check_frequency: 20d --- Paul-Junius-Str.: Umfahrung an der Straßenbahnüberquerung	q4::inwork 15374,13542 15370,13508
 # 
+#: note: an der westlichen Einfahrt hängt ein (fast unkenntliches) Radfahren-verboten-Schild, aber am Rosenweg fehlt so ein Schild
 Lilienweg: Fußgänger	q2+ 15143,5705 15154,5706 15209,5713 15252,5719 15296,5725 15337,5730
 Rosenweg: Fußgänger	q2+ 15343,5687 15337,5730 15330,5821 15325,5934
 Spielplatzweg: Fußgänger	q2+ 15141,5800 15201,5807 15246,5812 15288,5816 15330,5821
@@ -2208,6 +2209,9 @@ Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,817
 Kunkelstr.: einige Fußgänger, Borstein	q2 8229,15128 8227,15075
 Erich-Lodemann-Str.: einige Fußgänger, Rampe	q2 15288,8134 15242,8182
 (Vorplatz S-Bhf. Plänterwald): Fußgänger	q3 15256,8247 15212,8203 15242,8182
+(Fußgängerbrücke): einige Fußgänger	q2 21182,436 21199,437 21262,375
+(Unterführung Grünbergallee): einige Fußgänger	q1 19912,-496 19908,-565
+(Unterführung Grünbergallee): einige Fußgänger, Rampen	q3 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19942,-596 19940,-610
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

@@ -249,14 +249,14 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2014-09-12 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-09-14 21:00:00"),
+     { from  => $isodate2epoch->("2015-09-10 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-09-13 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9]],
-       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 13.9.2014 11:00 bis 14.9.2014 21:00',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 11.9.2015 16:00 bis 13.9.2015 20:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=994455
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=1087093
 userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -2737,7 +2737,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21829,4212 21679,4059 21496,3849 21489,3841 21411,3760 21357,3705 21324,3691 21308,3644 21275,3607 21244,3571 21198,3522 21153,3484 21055,3415 20967,3343 20927,3292 20832,3170
+userdel	q4; 21829,4212 21679,4059 21496,3849 21489,3841 21414,3757 21363,3699 21324,3691 21308,3644 21275,3607 21244,3571 21198,3522 21153,3484 21055,3415 20967,3343 20927,3292 20832,3170
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -15085,7 +15085,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013726',
        data  => <<EOF,
-userdel	q4::inwork; 21968,-15 21977,-8 22108,82 22145,208
+userdel	q4::inwork; 21968,-15 21977,-8 22073,59 22145,208
 EOF
      },
      { from  => 1248559200, # 2009-07-26 00:00
@@ -16376,11 +16376,11 @@ EOF
 userdel	2::temp 8424,12853 8309,12758 8306,12609
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-19 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-09-21 20:00:00"),
+     { from  => $isodate2epoch->("2015-09-18 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-09-20 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 9]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in der Preußenallee), Straße vollständig gesperrt (20. und 21. September 2014) ',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in Westend), Straße vollständig gesperrt (19.09.2015 bis 20.09.2015) ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
@@ -18224,7 +18224,8 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: note: allerdings keine Hinweise auf eine verbotene Durchfahrt gesehen
-(Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
+(Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936
+(Gewerbegebiet)	2 21685,2964 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
 EOF
      },
      { from  => 1279577078, # 2010-07-20 00:04
@@ -21244,15 +21245,18 @@ EOF
      },
      { from  => $isodate2epoch->("2015-05-04 04:00:00"), # ein Tag Vorlauf
        until => $isodate2epoch->("2015-09-21 18:00:00"),
-       text  => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. gesperrt, langsame Umfahrung über Fußgängerführung möglich, 04.05.2015 bis 21.09.2015',
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. zeitweise komplett gesperrt, auf für Fußgänger, 04.05.2015 bis 21.09.2015',
        type  => 'handicap',
        source_id => 'IM_024846',
        data  => <<EOF,
-#: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-07-22
-#: next_check: 2015-09-21
-userdel	q3::inwork 15272,10790 15279,10862
-userdel	q3::inwork 15261,10738 15272,10790
+#: next_check_id: KARLSHORSTER-2015 vvv
+#: last_checked: 2015-08-01 vvv
+#: next_check: 2015-09-21 vvv
+userdel	2::inwork 15272,10790 15279,10862
+userdel	2::inwork 15261,10738 15272,10790
+#: next_check ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
 EOF
      },
      { from  => 1361168940, # 2013-02-18 07:29
@@ -22491,7 +22495,7 @@ EOF
        data  => <<EOF,
 userdel	2::temp 21055,3415 21153,3484 21198,3522 21244,3571 21275,3607 21256,3640 21220,3642
 userdel	2::temp 20833,3519 20906,3433 20967,3343
-userdel	2::temp 21503,3592 21357,3705
+userdel	2::temp 21503,3592 21363,3699
 userdel	2::temp 20992,3493 20924,3577
 userdel	2::temp 21153,3484 21119,3572 20992,3493 21055,3415 20967,3343 20927,3292 20832,3170 20772,3244 20717,3310 20644,3395
 userdel	2::temp 21352,3599 21308,3644 21275,3607
@@ -24364,6 +24368,14 @@ EOF
        source_id => 'IM_025719',
        data  => <<EOF,
 userdel	q4::inwork; 9416,10196 9409,10226 9404,10250
+EOF
+     },
+     { from  => undef,
+       until => $isodate2epoch->("2015-08-06 23:59:59"),
+       # wegen Maccabi Games
+       text  => 'Ziegrastr.: Durchfahrt komplett gesperrt, auch für Fußgänger und Radfahrer, bis zum 6.8.2015',
+       data  => <<EOF,
+	2::temp 14233,8072 14174,7505
 EOF
      },
     );
