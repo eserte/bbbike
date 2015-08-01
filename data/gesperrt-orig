@@ -151,7 +151,7 @@ Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 #: XXX Öffnung der Einbahnstraße für Radfahrer?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6514
-#: last_checked: 2015-07-15
+#: last_checked: 2015-07-31
 Weydemeyerstr.	1s:q4 11896,13075 11904,13052 12053,12984 12054,12903
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12529
@@ -2068,6 +2068,8 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: note: Umfahrung auf Gehwegabschnitt
+Schranke	BNP:3::trailer=10 11392,10520
 Drängelgitter (2x)	BNP:5::trailer=10 22187,13304
 #: by: radzeit 2/2015 vvv
 Drängelgitter	BNP:5::trailer=10 13940,23486

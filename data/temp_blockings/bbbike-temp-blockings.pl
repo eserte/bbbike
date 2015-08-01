@@ -21314,7 +21314,7 @@ EOF
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: note: laut VMZ um zwei Jahre verlängert, laut fritz/rbbtext beendet
-#: last_checked: 2015-04-26
+#: last_checked: 2015-07-31
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
@@ -23442,7 +23442,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-04-26
+#: last_checked: 2015-07-31
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 EOF
@@ -23825,7 +23825,7 @@ EOF
        text  => 'Augsburger Str.: Bauarbeiten, Sackgasse an der Rankestr., Umfahrung über Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-07-03
+#: last_checked: 2015-07-31
 userdel	q3::inwork 5780,10542 5627,10637
 EOF
      },

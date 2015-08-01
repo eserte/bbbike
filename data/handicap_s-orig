@@ -13,14 +13,14 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-07-23 vvv
+#: last_checked: 2015-08-01 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-07-23 vvv
+#: last_checked: 2015-08-01 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -60,7 +60,7 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2015-07-30
+#: last_checked: 2015-07-31
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
@@ -142,6 +142,12 @@ Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1507/nachricht5698.html
+#: XXX wird am 3. August geöffnet
+#: next_check: 2015-08-03
+#: priority: #A
+Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844
+# 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2015-05-12 vvv
 #: next_check: 2015-08-15 vvv
@@ -158,7 +164,6 @@ Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umständlich	q4::
 #: XXX_prog: evtl. als q4+ eintragen (falls möglich), 9km/h sind eigentlich möglich
 Invalidenstr. (Mitte): Baustelle, Fahrbahn zwischen Eichendorffstr. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953
 Invalidenstr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
-Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844
 # REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8659,13708 8619,13689
 # REMOVED (wieder offen ab 2013-08-29) --- #: source_id: IM_019009 --- #: source_id: IM_018437 --- Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: priority ^^^
@@ -167,9 +172,10 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaeli
 #: next_check_id ^^^
 # 
 #: XXX Einbahnstraßenregelung danach wieder aufheben!
+#: XXX Vollsperrung ab 6. August für vier Wochen --- können Radfahrer trotzdem hier trotzdem fahren?
 #: source_id: IM_024549
 #: last_checked: 2015-04-01
-#: next_check: 2015-08-15
+#: next_check: 2015-08-06
 #: priority: #A
 Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, gesperrt Richtung Osten, bis 15. August 2015	q4::inwork; 8870,13926 9011,14019
 # 
@@ -407,8 +413,10 @@ Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntag
 (An der Müggelspree): Fußgänger	q2 23444,4942 23461,4948 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24398,4842 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
 Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
 Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
-#: XXX_prog BS (an der Dresdener Str.) (ansonsten könnte man die Kategorie auf q2 erhöhen)
-(Zufahrt am NKZ): Bordsteine, Fußgänger/Lieferverkehr	q3+ 11291,10438 11311,10505 11343,10528
+(Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11291,10438 11317,10485 11344,10507
+(Zufahrt am NKZ): Fußgänger, unübersichtlich	q3 11344,10507 11392,10520 11411,10515
+#: XXX_prog BS (1x oder 2x?)
+Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
 Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q2 11134,12793 11064,12910
 Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595

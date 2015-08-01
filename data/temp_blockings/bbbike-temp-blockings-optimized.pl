@@ -1636,7 +1636,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'until' => undef,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'from' => undef,
          'id' => 2068,
          'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
@@ -2219,7 +2219,7 @@ userdel	q3::inwork 15261,10738 15272,10790
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: note: laut VMZ um zwei Jahre verlängert, laut fritz/rbbtext beendet
-#: last_checked: 2015-04-26
+#: last_checked: 2015-07-31
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -2632,7 +2632,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
          'from' => undef,
          'id' => 2630,
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-04-26
+#: last_checked: 2015-07-31
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 ',
@@ -2704,7 +2704,7 @@ userdel	2::inwork -3197,11554 -3075,11510
          'text' => 'Augsburger Str.: Bauarbeiten, Sackgasse an der Rankestr., Umfahrung über Gehweg',
          'from' => undef,
          'id' => 2672,
-         'data' => '#: last_checked: 2015-07-03
+         'data' => '#: last_checked: 2015-07-31
 userdel	q3::inwork 5780,10542 5627,10637
 ',
          'type' => 'handicap'
