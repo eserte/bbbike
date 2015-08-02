@@ -636,8 +636,8 @@ EOF
        text  => 'Hellersdorfer Straße (Hellersdorf) in beiden Richtungen zwischen Gülzower Straße und Heinrich-Grüber-Straße Straße vollständig gesperrt aufgrund eines Wasserrohrbruches.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 22998,12453 22990,12493 22980,12545 22967,12647
-userdel	2 22998,12453 23033,12367 23100,12269
+userdel	2 23011,12416 22994,12496 22985,12550 22967,12647
+userdel	2 23011,12416 23033,12367 23100,12269
 EOF
      },
      { from  => undef,
@@ -21245,12 +21245,12 @@ EOF
      },
      { from  => $isodate2epoch->("2015-05-04 04:00:00"), # ein Tag Vorlauf
        until => $isodate2epoch->("2015-09-21 18:00:00"),
-       text  => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. zeitweise komplett gesperrt, auf für Fußgänger, 04.05.2015 bis 21.09.2015',
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. zeitweise komplett gesperrt, auch für Fußgänger, 04.05.2015 bis 21.09.2015',
        type  => 'handicap',
        source_id => 'IM_024846',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2015 vvv
-#: last_checked: 2015-08-01 vvv
+#: last_checked: 2015-08-02 vvv
 #: next_check: 2015-09-21 vvv
 userdel	2::inwork 15272,10790 15279,10862
 userdel	2::inwork 15261,10738 15272,10790
@@ -24325,7 +24325,7 @@ userdel	q4::inwork 10738,12364 10804,12291 10826,12279
 EOF
      },
      { from  => $isodate2epoch->("2015-05-26 07:00:00"),
-       until => $isodate2epoch->("2015-09-12 15:00:00"),
+       until => 1438545929, # $isodate2epoch->("2015-09-12 15:00:00"),
        text  => 'Dietzgenstr.: Baustelle, Fahrtrichtung stadteinwärts gesperrt, offiziell auch für Radfahrer, bis 12.09.2015',
        type  => 'handicap',
        source_id => 'IM_025047',
@@ -24376,6 +24376,15 @@ EOF
        text  => 'Ziegrastr.: Durchfahrt komplett gesperrt, auch für Fußgänger und Radfahrer, bis zum 6.8.2015',
        data  => <<EOF,
 	2::temp 14233,8072 14174,7505
+EOF
+     },
+     { from  => 1438145220, # 2015-07-29 06:47
+       until => 1441044000, # 2015-08-31 20:00
+       text  => 'Gorkistr.: Vollsperrung, Schrankenstörung',
+       type  => 'gesperrt',
+       source_id => 'IM_025809',
+       data  => <<EOF,
+userdel	2::inwork 2295,20358 2358,20368 2415,20380
 EOF
      },
     );

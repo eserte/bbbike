@@ -925,8 +925,8 @@ Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geöffnet	2 1377,18602
 Krumpuhler Weg	1 1405,18749 1390,18651
 Steffenshagener Str.	1s 23159,11097 22983,11098
 Pestalozzistr.	1s:q3 24652,11794 24706,11838 24769,11819
-Finsterberger Str.	1s:q3 23086,12565 23129,12496 23233,12406
-Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22990,12493
+Finsterberger Str.	1s:q3 23084,12573 23129,12496 23233,12406
+Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22994,12496
 Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
 Boraweg	1s:q4 6763,2879 6710,2909 6658,2907
 Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500,4146
@@ -1818,7 +1818,7 @@ tragen (15 Stufen)	0:25 27728,-3146
 tragen (4 Stufen)	0:6 27361,-1551
 tragen (2 Stufen)	0:5 3431,1987
 tragen	0:35 3580,4309
-tragen (ca. 32 Stufen)	0:35 22675,12008
+tragen (ca. 34 Stufen)	0:35 22675,12008
 tragen (ca. 30 Stufen)	0:30 22859,12059
 tragen (ca. 30 Stufen)	0:30 22857,12014
 tragen (20 Stufen)	0:30 -1887,16673
@@ -2504,7 +2504,7 @@ Schranke	BNP:3 6749,15339
 Schranke	BNP:3 6869,15441
 #: by: popanne: vvv
 Drängelgitter	BNP:5 24759,11666
-Drängelgitter	BNP:5 24815,11329
+# REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:5 24788,11333
 #: by: ^^^
 #: by: Christian (chrispan):
 Drängelgitter	BNP:5 7925,4477
@@ -2617,6 +2617,27 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX wann wird die Straße eröffnet?
+#: last_checked: 2015-08-02
+#: check_frequency: 90d
+Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
+# 
+#: XXX wann wird die Straße eröffnet?
+#: last_checked: 2015-08-02
+#: check_frequency: 90d
+Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
+# 
+#: XXX wann wird der Weg eröffnet?
+#: last_checked: 2015-08-02
+#: check_frequency: 90d
+(Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
+# 
+#: XXX Wann wird die Straße eröffnet? Wird die Straße verkehrsberuhigt sein?
+#: osm_watch: way id="338546087" version="1"
+#: last_checked: 2015-08-02
+#: next_check: 2015-11-02 (public)
+Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,12622
+# 
 #: osm_watch: way id="24686030" version="4"
 #: last_checked: 2015-07-19
 Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
@@ -2626,7 +2647,7 @@ Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
 #: last_checked: 2015-07-15
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9559,13087
 # 
-#: last_checked: 2015-07-12 vvv
+#: last_checked: 2015-08-02 vvv
 #: check_frequency: 60d vvv
 Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7330 17445,7434
 Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396

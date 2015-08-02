@@ -652,8 +652,8 @@ Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geöffnet	2 1377,18602
 Krumpuhler Weg	1 1405,18749 1390,18651
 Steffenshagener Str.	1s 23159,11097 22983,11098
 Pestalozzistr.	1s 24652,11794 24706,11838 24769,11819
-Finsterberger Str.	1s 23086,12565 23129,12496 23233,12406
-Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22990,12493
+Finsterberger Str.	1s 23084,12573 23129,12496 23233,12406
+Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22994,12496
 Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
 Boraweg	1s 6763,2879 6710,2909 6658,2907
 Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500,4146
@@ -2202,7 +2202,7 @@ tragen (15 Stufen)	0:25:38 27728,-3146
 tragen (4 Stufen)	0:6:-210 27361,-1551
 tragen (2 Stufen)	0:5:-180 3431,1987
 tragen	0:35:-120 3580,4309
-tragen (ca. 32 Stufen)	0:35:-138 22675,12008
+tragen (ca. 34 Stufen)	0:35:-138 22675,12008
 tragen (ca. 30 Stufen)	0:30:-177 22859,12059
 tragen (ca. 30 Stufen)	0:30:-174 22857,12014
 tragen (20 Stufen)	0:30:-75 -1887,16673
@@ -2701,7 +2701,6 @@ Kurzschranke	BNP:5:-45 6739,15307
 Schranke	BNP:3:-132 6749,15339
 Schranke	BNP:3:-130 6869,15441
 Drängelgitter	BNP:5:3 24759,11666
-Drängelgitter	BNP:5:-17 24815,11329
 Drängelgitter	BNP:5:-130 7925,4477
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8:-151:trailer=no 6526,21015
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8:-139:trailer=no 6548,21041
@@ -2773,6 +2772,10 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
+Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
+Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
+(Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
+Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,12622
 Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9559,13087
 Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7330 17445,7434

@@ -357,7 +357,7 @@ Borsigdamm: Verbesserung f¸r den Radverkehr	?::projected 1463,19417 1450,19336 1
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.168550.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.227911.php ("1. Quartal 2015")
-#: last_checked: 2015-07-22
+#: last_checked: 2015-08-02
 #: check_frequency: 90d
 Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 22668,3884 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
 # REMOVED (hier vermutlich nicht) --- Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 23099,2031 23185,1649
@@ -442,7 +442,7 @@ Friedrichstr./Unter den Linden: ‹berqueren der Straﬂe Unter den Linden nicht mˆg
 # REMOVED (-> bbbike-temp-blockings.pl) --- #: XXX Realisierung bis September 2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html --- #: XXX betrifft die Einbahnstraﬂenregelung w‰hrend der Bauarbeiten auch Radfahrer? --- #: next_check: 2015-05-04 --- Maaﬂenstr.: welche Auswirkungen wird die neue "Begegnungszone" f¸r Radfahrer haben? Wird der Radweg verschwinden?	?::inwork 7080,10098 7060,10221 7033,10328
 # REMOVED (Umleitung geht anders herum) --- #: XXX laut fritz, "f¸r mehrere Monate" --- #: next_check: 2015-02-11 --- Rathausstr. (Lichtenberg): gibt es ƒnderungen w‰hrend der Bauarbeiten Frankfurter Allee/G¸rtelstr., z.B. wird die Einbahnstraﬂenrichtung umgedreht?	? 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
 # REMOVED (-> aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- #: note: Privatstraﬂe, s¸dlicher (jetzt schon bestehender) Abschnitt bleibt ˆffentlich --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- Zur alten Bˆrse: Qualit‰t, schon fertig?	? 18736,13080 18712,12853 18682,12599 18649,12371 --- Marzahner Chaussee [Zur alten Bˆrse]: Qualit‰t, schon fertig?	? 18649,12371 18647,12354 18639,12272 18654,12255
-# REMOVED --- #: XXX fehlt in Berlin.coords.data --- #: note: "Mahlsdorfer Gr¸nzug" --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2015 (Nummerierung) --- Pfarrhufenanger: Qualit‰t, schon befahrbar? Verkehrsberuhigt?	? 25599,13069 25427,12847 25250,12632
+# REMOVED --- #: XXX fehlt in Berlin.coords.data --- #: note: "Mahlsdorfer Gr¸nzug" --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2015 (Nummerierung) --- Pfarrhufenanger: Qualit‰t, schon befahrbar? Verkehrsberuhigt?	? 25599,13069 25427,12847 25266,12622
 # REMOVED (teilweise offiziell f¸r Radfahrer offen) --- #: XXX Zimmerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 01/15) Richtung Friedrichstr. zwischen Wilhelmstr. und Friedrichstr., 04.11.2014 14:58 Uhr bis 31.01.2015 16:00 Uhr --- #: XXX wahrscheinlich f¸r Radfahrer offen --- #: source_id: IM_023356 --- #: next_check: 2014-11-10 --- Zimmerstr.: Bauarbeiten f¸r Radfahrer relevant?	?::inwork 9155,11283 9478,11317
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5602 (Baubeginn "in K¸rze")
@@ -503,7 +503,7 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchg‰ngig asphaltiert mit Radstreifen
 #: by: http://www.wasserstadt-spindlersfeld.de/media/rokgallery/3/3d5d905a-4cc9-4db5-b900-98d710dc3203/39a732b0-0220-4970-e1c5-cdc4bb0dec0c.jpg
 #: by: http://www.wasserstadt-spindlersfeld.de/projekt/wasserstadt-spindlersfeld
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=428838&postcount=124
-#: last_checked: 2015-07-22
+#: last_checked: 2015-08-02
 #: check_frequency: 360d
 Planstraﬂe in der Wasserstadt Spindlersfeld: genaue Lage? Straﬂenname? Qualit‰t? Anbindund zum Uferweg?	?::projected 21447,5414 21482,5388 21555,5214 21415,5157 21498,5023
 # 
@@ -685,36 +685,25 @@ Brunolfweg: Verkn¸pfung gefordert	?::projected 19290,894 19316,951 19334,997
 #: check_frequency: 360d
 parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstraﬂe existiert, wird sie offiziell mal erˆffnet? Wie geht es dahinten weiter?	? 21243,142 21320,160
 # 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5232
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45-181-136818730670/818730670/00065593/93-Anlagen/02/vzb0444_IV-B_Plan_XXIII_9b_Auswertung_Beteig_B.pdf
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361000447622/1000447622/00071108/08-Anlagen/02/vzb0703_IV-B-Plan_XXIII-9b_Aenderg_Plangziele.pdf
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5729 (Benennung)
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036494123909/494123909/00072116/16-Anlagen/02/vzb0745_IV-Benennung_Strassen.pdf (Benennung + Lage)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2014
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 (Grundst¸cksnummerierungen)
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5900 (Verzˆgerung)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
-#: XXX neue Straﬂennamen
-#: last_checked: 2014-07-06 (erste Bauarbeiten) vvv
-Am Theodorpark: Straﬂe in Planung, Qualit‰t? Genaue Lage?	?::projected 24899,11017 24948,11018 25051,11020 25141,11024
-#: XXX Privatstraﬂe
-#: XXX zumindest Arturweg und Reintrautweg scheinen schon zu existieren
-Arturweg: Straﬂe in Planung, Qualit‰t? Genaue Lage?	? 24948,11018 24960,10882 24996,10876 25051,10867 25048,10957 25051,11020
-#: XXX Privatstraﬂe
-Reintrautweg: Straﬂe in Planung, Qualit‰t? Genaue Lage?	?::projected 24996,10876 24990,10954 25048,10957 25143,10955
-#: last_checked ^^^
+# REMOVED --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5232 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45-181-136818730670/818730670/00065593/93-Anlagen/02/vzb0444_IV-B_Plan_XXIII_9b_Auswertung_Beteig_B.pdf --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361000447622/1000447622/00071108/08-Anlagen/02/vzb0703_IV-B-Plan_XXIII-9b_Aenderg_Plangziele.pdf --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5729 (Benennung) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036494123909/494123909/00072116/16-Anlagen/02/vzb0745_IV-Benennung_Strassen.pdf (Benennung + Lage) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2014 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 (Grundst¸cksnummerierungen) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5900 (Verzˆgerung) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2015 (Grundst¸cksnummerierungen) --- #: XXX neue Straﬂennamen --- #: last_checked: 2014-07-06 (erste Bauarbeiten) vvv --- # REMOVED (aufgenommen) --- Am Theodorpark: Straﬂe in Planung, Qualit‰t? Genaue Lage?	?::projected 24905,10955 25053,10959 25143,10961 --- #: XXX Privatstraﬂe --- #: XXX zumindest Arturweg und Reintrautweg scheinen schon zu existieren --- Arturweg: Straﬂe in Planung, Qualit‰t? Genaue Lage?	? 24919,10818 25002,10810 25058,10805 25057,10900 25053,10959 --- #: XXX Privatstraﬂe --- Reintrautweg: Straﬂe in Planung, Qualit‰t? Genaue Lage?	?::projected 25002,10810 25001,10904 25057,10900 25080,10899 25145,10904 --- #: last_checked ^^^
+# 
+#: last_checked: 2015-08-02
+#: check_frequency: 90d
+Theodorpark - Heribaldstr.: existiert hier schon ein Weg? Qualit‰t (evtl. Verbundsteinpflaster?)? Nachts beleuchtet?	? 25021,10768 25022,10715
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
 #: XXX fehlen in Berlin.coords.data; beides Privatstraﬂen
-Laraweg und Ellaweg: genaue Lage? Qualit‰t?	?::projected 24948,11116 25002,11056 25064,11121
+#: last_checked: 2015-08-02
+#: check_frequency: 180d
+Laraweg und Ellaweg: genaue Lage? Qualit‰t?	?::projected 24946,11049 25011,10983 25055,11049
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5551&options=4 vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/4508103642254042/42254042/00069846/46-Anlagen/02/vzb_0594_IV_Aenderung_Pln-ziele_B-Plan_XXIII_9.pdf vvv
 #: XXX Bebauungsplanverfahren XXIII-9a; geplante Entlastungsstraﬂe "Ortsumfahrung Mahlsdorf" vvv
-#: last_checked: 2014-08-08 vvv
+#: last_checked: 2015-08-02 vvv
 #: check_frequency: 360d vvv
-Planstraﬂe A: Straﬂe in Planung, Qualit‰t? Wird das die neue Hauptstraﬂenf¸hrung?	? 24740,10992 24824,11256
-Rad- und Gehwegverbindung geplant: Qualit‰t? Name des Weges? Beleuchtet?	? 24899,11017 24740,10992
+Planstraﬂe A: Straﬂe in Planung, Qualit‰t? Wird das die neue Hauptstraﬂenf¸hrung?	? 24740,10992 24801,11261
+Rad- und Gehwegverbindung geplant: Qualit‰t? Name des Weges? Beleuchtet?	? 24905,10955 24740,10992
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -723,14 +712,15 @@ Rad- und Gehwegverbindung geplant: Qualit‰t? Name des Weges? Beleuchtet?	? 24899
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5709
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036775164584/775164584/00071625/25-Anlagen/02/vzb0716_IV-B-Plan_XXIII-3-1VE_Festsetzg_Planre.pdf
-#: last_checked: 2014-08-08
+#: last_checked: 2015-08-02
 #: check_frequency: 360d
 XXIII-3-1VE: hier kˆnnte eine/mehrere Straﬂen entstehen	?::projected 24624,11374 24776,11384
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5720
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00072000/00-Anlagen/02/vzb0688_IV_Auswertung_B-Plan_XXIII_4a.pdf
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5836 (Benennung nach Ingeborg Meyer-Rey?)
-#: next_check: 2014-10-01
+#: last_checked: 2015-08-02
+#: check_frequency: 360d
 XXIII-4a: hier wird eine Straﬂe entstehen, Straﬂenname, Qualit‰t?	?::projected 24782,11526 25140,11446
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713
@@ -764,7 +754,7 @@ Straﬂe 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00079726/26-Anlagen/01/DRS0047VK.pdf (Bebauungsplan 9 - 47)
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegungxvi-65und9-47.html
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2015-05-16
+#: last_checked: 2015-08-02
 #: check_frequency: 180d
 Uferweg: wird verl‰ngert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
@@ -1129,7 +1119,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
 #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straﬂenbenennung, Vorschlag)
-#: last_checked: 2015-07-22
+#: last_checked: 2015-08-02
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Br¸cke ¸ber die Spree und Straﬂenverbindung zwischen Rummelsburger Landstraﬂe und Kˆpenicker Landstraﬂe	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
@@ -1206,9 +1196,13 @@ Planstraﬂen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 vvv
 #: XXX fehlen alle in Berlin.coords.data (PLZ?) vvv
 #: XXX alles Privatstraﬂen, "Heinrich Wohnpark" (ohne Bindestrich!) vvv
-Erich-Knauf-Weg: Lage der Straﬂe? Qualit‰t?	? 23760,13157 23844,13120 23922,13085 23960,13068
+#: last_checked: 2015-08-01 vvv
+#: check_frequency: 150d vvv
+Erich-Knauf-Weg: Lage der Straﬂe? Qualit‰t?	? 23754,13165 23844,13120 23922,13085 23960,13068
 Franz-J‰gerst‰tter-Weg: Lage der Straﬂe? Qualit‰t?	? 23844,13120 23865,13239
 Am Kirchendreieck: Lage der Straﬂe? Qualit‰t?	? 23922,13085 23960,13325
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 #: XXX ^^^
 #: by: ^^^
@@ -1285,7 +1279,9 @@ Wiltbergstr.: wird es f¸r Radfahrer Einschr‰nkungen w‰hrend der Bauarbeiten gebe
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
-Pilgramer Str.: Radfahrstreifen in Planung (oder Bau?)	? 25149,10695 25149,10731 25145,10841 25143,10955 25141,11024 25139,11104
+#: last_checked: 2015-08-02
+#: check_frequency: 180d
+Pilgramer Str.: Radfahrstreifen in Planung	?::projected 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11104
 # 
 # REMOVED (-> comments_path) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf --- Fuﬂg‰nger- und Radfahrerquerung Landsberger Allee in Hˆhe des Wuhletalwanderweges: wie sieht das konkret aus?	? 22631,16215 22696,16208 22739,16203 22771,16194
 # REMOVED (ja, gemeint ist die Dresdener Str., in handicap_s-orig) --- #: XXX bis zum 14. Juli 2015 --- Sebastianstr.: Vollsperrung?	? 11162,10919 11189,10831
@@ -2040,7 +2036,7 @@ neue Planstraﬂen in Fahrland: Lage, Qualit‰t?	? -16174,7006 -15929,6894
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegung9-57ve.html
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/9_57ve_v41_ve_a1_2014_01_14.pdf?start&ts=1390830629&file=9_57ve_v41_ve_a1_2014_01_14.pdf
 #: XXX wird zuk¸nftig entstehen, evtl. entsteht noch ein Uferweg vvv
-#: last_checked: 2015-07-22 vvv
+#: last_checked: 2015-08-02 vvv
 #: check_frequency: 360d vvv
 Marienhainallee: Qualit‰t, nur f¸r Radfahrer/Fuﬂg‰nger?	? 22788,3061 22485,3036 22290,3019
 Planstraﬂen im Marienhain: Straﬂennamen? Qualit‰t?	? 22771,3151 22476,3118 22485,3036 22494,2949 22807,2962
@@ -3320,16 +3316,17 @@ Striewitzweg (Teltow): Qualit‰t im nˆrdlichen Abschnitt? Ist die Straﬂe hier ver
 Altdˆbern - Calau: Qualit‰t?	? 55259,-83091 55388,-83077 55768,-82862 54521,-79452 54572,-78865 54600,-77483 53827,-76082
 # 
 #: XXX fehlen alle in Berlin.coords.data, PLZ=12623 vvv
-#: last_checked: 2014-08-08 vvv
-#: check_frequency: 360d vvv
+#: last_checked: 2015-08-02 vvv
+#: check_frequency: 180d vvv
+#: osm_watch: way id="338546084" version="1"
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2013
-Bisamstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26466,12995 26438,12959 26406,12918 26374,12878 26340,12835 26242,12709 26391,12618 26201,12499
-Seidenschwanzstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26651,12941 26576,12848 26540,12804 26511,12768 26472,12720 26340,12835
+Bisamstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26463,13011 26429,12965 26399,12923 26369,12882 26336,12838 26242,12709 26391,12618 26201,12499
+Seidenschwanzstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26651,12941 26576,12848 26540,12804 26511,12768 26472,12720 26336,12838
 #: XXX folgendes sind Privatstraﬂen vvv
-Wildkatzenweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26511,12768 26374,12878
-Ringeltaubenweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26540,12804 26406,12918
-Mauswieselweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26576,12848 26438,12959
+Wildkatzenweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26511,12768 26369,12882
+Ringeltaubenweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26540,12804 26399,12923
+Mauswieselweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26576,12848 26429,12965
 #: XXX ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3948,7 +3945,9 @@ Waldstr. (Schwanebeck): Qualit‰t?	? 19882,26592 19935,26699 19948,26760
 Reinickendorfer Route 3: genauer Streckenverlauf? Qualit‰t?	? 2566,23584 2272,23574 2137,23626 2114,23720 2056,23749 1980,23711 1848,23679 1702,23692 1622,23726 1607,23777 1576,23785 1433,23738 1363,23746 1304,23736 1157,23752
 Straﬂen in Dˆberitz: genaue Straﬂennamen, Qualit‰t?	? -11635,13818 -11709,13476 -12032,13708 -12089,13741 -12596,13763 -12956,13814 -13017,13815 -13375,13807 -13371,13691 -13400,13622
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2014 (Ausbau zum Rad- und Gehweg)
-Fichtenstr.: existiert ein Verbindungsweg zur Heerstr.? Qualit‰t? Nachts beleuchtet? Existiert eine Ausschilderung?	? 22212,9508 22237,9632 22274,9622
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2015/vzb_0910_iv_auswertung_b_plan_10_15.pdf
+#: next_check: 2015-11-02
+Heerstr. - Chemnitzer Str.: existiert der Verbindungsweg f¸r Radfahrer und Fuﬂg‰nger bereits? Qualit‰t? Nachts beleuchtet?	? 22366,9571 22219,9545 22116,9531 22103,9465
 # 
 #: last_checked: 2013-12-22 vvv
 #: next_check: 2014-09-16 vvv

@@ -2932,11 +2932,11 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        {
          'source_id' => 'IM_024846',
          'until' => 1442851200,
-         'text' => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. zeitweise komplett gesperrt, auf für Fußgänger, 04.05.2015 bis 21.09.2015',
+         'text' => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. zeitweise komplett gesperrt, auch für Fußgänger, 04.05.2015 bis 21.09.2015',
          'from' => 1430704800,
          'id' => 2416,
          'data' => '#: next_check_id: KARLSHORSTER-2015 vvv
-#: last_checked: 2015-08-01 vvv
+#: last_checked: 2015-08-02 vvv
 #: next_check: 2015-09-21 vvv
 userdel	2::inwork 15272,10790 15279,10862
 userdel	2::inwork 15261,10738 15272,10790
@@ -3686,16 +3686,7 @@ userdel	q3::inwork 11325,12021 11275,12055
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_025047',
-         'until' => 1442062800,
-         'text' => 'Dietzgenstr.: Baustelle, Fahrtrichtung stadteinwärts gesperrt, offiziell auch für Radfahrer, bis 12.09.2015',
-         'from' => 1432616400,
-         'id' => 2721,
-         'data' => '	q4::inwork; 10127,19992 10167,19797 10195,19703 10224,19628 10257,19542
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
@@ -3744,6 +3735,16 @@ userdel	q3::inwork 11325,12021 11275,12055
          'id' => 2726,
          'data' => '	2::temp 14233,8072 14174,7505
 '
+       },
+       {
+         'source_id' => 'IM_025809',
+         'until' => 1441044000,
+         'text' => 'Gorkistr.: Vollsperrung, Schrankenstörung',
+         'from' => 1438145220,
+         'id' => 2727,
+         'data' => 'userdel	2::inwork 2295,20358 2358,20368 2415,20380
+',
+         'type' => 'gesperrt'
        }
      
 );
