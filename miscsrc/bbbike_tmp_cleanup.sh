@@ -74,8 +74,6 @@ rm -r /tmp/bbbikettc
 # TODO: automatic mount calculation is broken, these are the files
 # with the "problematic" line segments:
 rm /tmp/problematic_*.bbd
-# Log of the cgpsmapper runs
-rm /tmp/cgpsmapper-images.log
 # Temporary shape files, from BBBikeMapserver.pm (old, without suffix)
 rm /tmp/??????????.dbf
 rm /tmp/??????????.shp
