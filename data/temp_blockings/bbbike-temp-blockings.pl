@@ -24060,7 +24060,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2015-12-01 00:00:00"), # undef, # XXX
+       until => 1438629931, # $isodate2epoch->("2015-12-01 00:00:00"), # undef, # XXX
        text  => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, Ende der Bauarbeiten im Dezember 2015',
        type  => 'handicap',
        data  => <<EOF,

@@ -3521,17 +3521,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1448924400,
-         'text' => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, Ende der Bauarbeiten im Dezember 2015',
-         'from' => undef,
-         'id' => 2696,
-         'data' => '#: XXX laut Fritz ist die Baustelle an der Rheinstr. bis 2015-08-03 aktuell
-#: next_check: 2015-08-03
-userdel	q3::inwork 5824,6974 5817,7223
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => undef,
          'recurring' => 1,
