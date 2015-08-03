@@ -3,197 +3,8 @@
 .error "Do not use Makefile.garmin directly, use through the main Makefile!"
 .endif
 
-######################################################################
-# combined map with OSM and BBBike map data
-# see also osm-download-all rule in misc/Makefile
-
-# -Xmx1024m was needed for hessen.osm (maybe 512m would also be enough)
-MKGMAP_VER?=		590
-MKGMAP_ROUTABLE_VER?=	2310 # matches MKGMAP_VER in misc/Makefile
+MKGMAP_VER?=		2310 # matches MKGMAP_VER in misc/Makefile
 MKGMAP?=		java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_VER}/mkgmap.jar
-MKGMAP_ROUTABLE?=	java -Xmx1024m -jar /usr/local/src/mkgmap-r${MKGMAP_ROUTABLE_VER}/mkgmap.jar
-MAPSOURCE_DE_IMG?=	$(HOME)/doc/map/mapsource_de.img
-
-.ifndef BIGTMPDIR
-.ifdef TMPDIR
-BIGTMPDIR=		${TMPDIR}
-.else
-BIGTMPDIR=		/tmp
-.endif
-.endif
-
-.if exists(/opt/osmosis-0.24.1-java5/bin/osmosis)
-OSMOSIS=	/opt/osmosis-0.24.1-java5/bin/osmosis
-.else
-OSMOSIS=	/usr/local/src/osmosis-0.24.1-java5/bin/osmosis
-.endif
-
-combined-map:	${PERSISTENTTMPDIR}/gmapsupp.img
-	@echo "* Now do an upload:"
-#	@echo "sudo mount /mnt/garmin"
-	@echo "sudo mount -t msdosfs -o -u=`id -u -n` /dev/da2 /mnt/garmin"
-	@echo "cp ${PERSISTENTTMPDIR}/gmapsupp.img /mnt/garmin/garmin/"
-	@echo "sudo umount /mnt/garmin"
-
-GMAPSUPP_SRC=	${PERSISTENTTMPDIR}/bbbike_routable.img \
-		${PERSISTENTTMPDIR}/bbbikequal.img \
-		${PERSISTENTTMPDIR}/berlin_osm.img \
-		${PERSISTENTTMPDIR}/sachsen-anhalt_osm.img \
-		${PERSISTENTTMPDIR}/dresden_osm.img \
-		${PERSISTENTTMPDIR}/leipzig_osm.img \
-		${PERSISTENTTMPDIR}/hessen_osm.img \
-		${PERSISTENTTMPDIR}/croatia_osm.img \
-		${PERSISTENTTMPDIR}/dalmatia_osm.img
-
-## XXX This would be nice. But I ran out of memory if
-## adding this one. Even with -Xmx1024m:
-#.if exists(${MAPSOURCE_DE_IMG})
-#GMAPSUPP_SRC+=	${MAPSOURCE_DE_IMG}
-#.endif
-
-.if exists(${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP)
-SRT_TYPFILE=	${HOME}/src/bbbike-aux/mkgmap/typ/M000002a.TYP
-SRT_TYPARGS=	--family-id=42 ${SRT_TYPFILE}
-.else
-SRT_TYPFILE=
-SRT_TYPARGS=
-.endif
-
-${PERSISTENTTMPDIR}/gmapsupp.img:	${GMAPSUPP_SRC} ${SRT_TYPFILE}
-	cd ${PERSISTENTTMPDIR} && \
-	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${SRT_TYPARGS}
-
-gmapsupp-without-rebuild:
-.for f in ${GMAPSUPP_SRC}
-	[ -e $f ]
-.endfor
-	cd ${PERSISTENTTMPDIR} && \
-	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${SRT_TYPARGS}
-
-# Run as: make gmapsupp-with-alternative-berlin-brandenburg-without-rebuild-other TMPDIR=/mnt/i386/tmp
-# No success so far.
-GMAPSUPP_ALT_SRC=${GMAPSUPP_SRC:N*/berlin_osm.img}
-gmapsupp-with-alternative-berlin-brandenburg:	${GMAPSUPP_SRC} berlin-brandenburg-img ${SRT_TYPFILE}
-	cd ${PERSISTENTTMPDIR} && \
-	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${BIGTMPDIR}/berlin_brandenburg_build/6324*.img ${SRT_TYPARGS}
-
-gmapsupp-with-alternative-berlin-brandenburg-without-rebuild-other:	berlin-brandenburg-img ${SRT_TYPFILE}
-.for f in ${GMAPSUPP_ALT_SRC}
-	[ -e $f ]
-.endfor
-	cd ${PERSISTENTTMPDIR} && \
-	    ${MKGMAP} --gmapsupp ${GMAPSUPP_SRC} ${BIGTMPDIR}/berlin_brandenburg_build/6324*.img ${SRT_TYPARGS}
-
-${PERSISTENTTMPDIR}/berlin_combined.osm:    ${MISCDIR}/download/osm/berlin/*.osm{,.gz,.bz2}	\
-					    ${MISCDIR}/download/osm/potsdam/*.osm{,.gz,.bz2}	\
-					    ${MISCDIR}/download/osm/uckermark/*.osm{,.gz,.bz2}	\
-					    ${MISCDIR}/download/osm/usedom/*.osm{,.gz,.bz2}
-	${COMBINE_OSM} \
-		${MISCDIR}/download/osm/berlin		\
-		${MISCDIR}/download/osm/potsdam		\
-		${MISCDIR}/download/osm/uckermark	\
-		${MISCDIR}/download/osm/usedom		\
-	    > $@~
-	mv $@~ $@
-
-${PERSISTENTTMPDIR}/berlin_ring_osm.osm:
-	${COMBINE_OSM} `${PERL} -MFile::Glob=bsd_glob -le 'print join(" ", bsd_glob("${MISCDIR}/download/osm/berlin/download_13.{2,3,4,5}*,52.{4,5}*"))'` > $@~
-	mv $@~ $@
-
-${PERSISTENTTMPDIR}/berlin_osm.img:	${PERSISTENTTMPDIR}/berlin_combined.osm
-	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP} --description="Berlin und Umgebung OSM" --mapname=12117001 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --net --transparent berlin_combined.osm && \
-	    mv 12117001.img berlin_osm.img )
-
-# mkgmap 1034 crashes on my FreeBSD system with the berlin.osm.bz2 data
-# But it works for a subset of Berlin
-${PERSISTENTTMPDIR}/berlin_ring_osm_routable.img:	${PERSISTENTTMPDIR}/berlin_ring_osm.osm
-	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP_ROUTABLE} --description="Berlin Ring Routable OSM" --mapname=12117004 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --net --route --transparent berlin_ring_osm.osm && \
-	    mv 12117004.img berlin_ring_osm_routable.img )
-
-berlin-brandenburg-img:	${MISCDIR}/download/osm/brandenburg.osm.bz2
-	rm -rf ${BIGTMPDIR}/berlin_brandenburg_build
-	mkdir ${BIGTMPDIR}/berlin_brandenburg_build
-	bzcat ${MISCDIR}/download/osm/brandenburg.osm.bz2 > ${BIGTMPDIR}/berlin_brandenburg_build/brandenburg.osm
-	/usr/local/src/work/osm-extract/osmcut/osmcut-hash -s 2.5 -d ${BIGTMPDIR}/berlin_brandenburg_build ${BIGTMPDIR}/berlin_brandenburg_build/brandenburg.osm
-	cd ${BIGTMPDIR}/berlin_brandenburg_build && ( \
-	    for i in 6324*; do \
-		echo "  $$i ..."; \
-	        mv $$i $$i.osm; \
-	        ${MKGMAP_ROUTABLE} --description="Berlin-Brandenburg Routable OSM" --mapname=$$i --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --net --route --transparent $$i.osm; \
-	    done \
-	)
-
-${PERSISTENTTMPDIR}/leipzig.osm:	${MISCDIR}/download/osm/leipzig/*
-	${COMBINE_OSM} ${MISCDIR}/download/osm/leipzig > ${PERSISTENTTMPDIR}/leipzig.osm
-
-${PERSISTENTTMPDIR}/leipzig_osm.img:	${PERSISTENTTMPDIR}/leipzig.osm
-	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP} --description="Leipzig und Umgebung OSM" --mapname=12117002 leipzig.osm && \
-	    mv 12117002.img leipzig_osm.img )
-
-${PERSISTENTTMPDIR}/hessen_osm.img:
-	cd ${PERSISTENTTMPDIR} && ( \
-	    bzcat ${MISCDIR}/download/osm/hessen.osm.bz2 > hessen.osm && \
-	    ${MKGMAP} --description="Hessen OSM" --mapname=12117003 hessen.osm && \
-	    mv 12117003.img hessen_osm.img )
-	-rm -f ${PERSISTENTTMPDIR}/hessen.osm
-
-# routable
-${PERSISTENTTMPDIR}/croatia_osm.img:
-	cd ${PERSISTENTTMPDIR} && ( \
-	    bzcat ${MISCDIR}/download/osm/croatia.osm.bz2 > croatia.osm && \
-	    ${MKGMAP_ROUTABLE} --description="Croatia Routable OSM" --mapname=12117005 --country-name=Croatia --country-abbr=HR --net --route croatia.osm && \
-	    mv 12117005.img croatia_osm.img )
-	-rm -f ${PERSISTENTTMPDIR}/croatia.osm
-
-# routable
-${PERSISTENTTMPDIR}/bosnia_herzegovina_osm.img:
-	cd ${PERSISTENTTMPDIR} && ( \
-	    bzcat ${MISCDIR}/download/osm/bosnia-herzegovina.osm.bz2 > bosnia-herzegovina.osm && \
-	    ${MKGMAP_ROUTABLE} --description="Bosnia-Herzegovina Routable OSM" --mapname=12117012 --country-name=Bosnia-Herzegovina --country-abbr=BA --net --route bosnia-herzegovina.osm && \
-	    mv 12117012.img bosnia_herzegovina_osm.img )
-	-rm -f ${PERSISTENTTMPDIR}/bosnia_herzegovina.osm
-
-# routable
-${PERSISTENTTMPDIR}/dalmatia_osm.img:
-	${COMBINE_OSM} ${MISCDIR}/download/osm/dalmatien/download*.osm.gz > ${PERSISTENTTMPDIR}/dalmatia.osm
-	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP_ROUTABLE} --description="Dalmatia Routable OSM" --mapname=12117007 --country-name=Croatia --country-abbr=HR --net --route dalmatia.osm && \
-	    mv 12117007.img dalmatia_osm.img )
-	-rm -f ${PERSISTENTTMPDIR}/dalmatia.osm
-
-# routable
-${PERSISTENTTMPDIR}/barnim_osm.img:
-	${COMBINE_OSM} ${MISCDIR}/download/osm/barnim > ${PERSISTENTTMPDIR}/barnim.osm
-	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP_ROUTABLE} --description="Barnim Routable OSM" --mapname=12117008 --net --route barnim.osm && \
-	    mv 12117008.img barnim_osm.img )
-
-# routable
-${PERSISTENTTMPDIR}/sachsen-anhalt_osm.img:
-	cd ${PERSISTENTTMPDIR} && ( \
-	    bzcat ${MISCDIR}/download/osm/sachsen-anhalt.osm.bz2 > sachsen-anhalt.osm && \
-	    ${MKGMAP_ROUTABLE} --description="Sachsen-Anhalt OSM" --mapname=12117009 --net --route sachsen-anhalt.osm && \
-	    mv 12117009.img sachsen-anhalt_osm.img )
-
-# routable - probably too large - segfaults with mkgmap 1034
-${PERSISTENTTMPDIR}/sachsen_osm.img:
-	cd ${PERSISTENTTMPDIR} && ( \
-	    bzcat ${MISCDIR}/download/osm/sachsen.osm.bz2 > sachsen.osm && \
-	    ${MKGMAP_ROUTABLE} --description="Sachsen OSM" --mapname=12117010 --net --route sachsen.osm && \
-	    mv 12117010.img sachsen_osm.img )
-
-${PERSISTENTTMPDIR}/dresden.osm:	${MISCDIR}/download/osm/sachsen.osm.bz2
-	${OSMOSIS} --rx file=${MISCDIR}/download/osm/sachsen.osm.bz2 --bb left=13.298826 bottom=50.820773 right=14.506001 top=51.301447 --wx file=${PERSISTENTTMPDIR}/dresden.osm~
-	mv ${PERSISTENTTMPDIR}/dresden.osm~ ${PERSISTENTTMPDIR}/dresden.osm
-
-# routable
-${PERSISTENTTMPDIR}/dresden_osm.img:	${PERSISTENTTMPDIR}/dresden.osm
-	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP_ROUTABLE} --description="Dresden und Umgebung OSM" --mapname=12117011 --net --route dresden.osm && \
-	    mv 12117011.img dresden_osm.img )
 
 ######################################################################
 # bbd2osm stuff
@@ -210,7 +21,7 @@ ${PERSISTENTTMPDIR}/bbbike_routable.osm:	${BBD2OSM} ${BBD2OSM_MAPSET_ALL_SOURCES
 
 ${PERSISTENTTMPDIR}/bbbike_routable.img:	${PERSISTENTTMPDIR}/bbbike_routable.osm
 	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP_ROUTABLE} --description="BBBike Routable" --mapname=12117006 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --latin1 --net --route --draw-priority=5 $> && \
+	    ${MKGMAP} --description="BBBike Routable" --mapname=12117006 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --latin1 --net --route --draw-priority=5 $> && \
 	    mv 12117006.img ${@:T} )
 
 # Targets with the experiment du jour
@@ -221,7 +32,7 @@ ${PERSISTENTTMPDIR}/bbbike_routable_experiment.osm:	${BBD2OSM} ${BBD2OSM_MAPSET_
 
 ${PERSISTENTTMPDIR}/bbbike_routable_experiment.img:	${PERSISTENTTMPDIR}/bbbike_routable_experiment.osm
 	cd ${PERSISTENTTMPDIR} && ( \
-	    ${MKGMAP_ROUTABLE} --description="BBBike Routable" --mapname=12117006 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --latin1 --net --route --draw-priority=5 $> && \
+	    ${MKGMAP} --description="BBBike Routable" --mapname=12117006 --country-name=Germany --country-abbr=DE --region-name=Berlin --region-abbr=BER --latin1 --net --route --draw-priority=5 $> && \
 	    mv 12117006.img ${@:T} )
 	# for simplicity (i.e. when building bbbikemap-for-garmin),
 	# and to the price of further confusion, make it also
