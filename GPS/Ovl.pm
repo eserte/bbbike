@@ -26,17 +26,6 @@ $OVL_MAGIC     = "DOMGVCRD Ovlfile V2.0:";
 $OVL_MAGIC_3_0 = "DOMGVCRD Ovlfile V3.0:";
 $OVL_MAGIC_4_0 = "DOMGVCRD Ovlfile V4.0:";
 
-BEGIN {
-    if (!eval '
-use Msg qw(frommain);
-1;
-') {
-	warn $@ if $@;
-	eval 'sub M ($) { $_[0] }';
-	eval 'sub Mfmt { sprintf(shift, @_) }';
-    }
-}
-
 use vars qw($color_mapping);
 $color_mapping = 
     {1 => 'red',
