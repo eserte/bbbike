@@ -2055,7 +2055,7 @@ EOF
        text  => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -15062,76937 -14623,77426
+userdel	q4 -15062,76937 -14733,77409
 EOF
      },
      { from  => 1116194400, # 2005-05-16 00:00
@@ -6187,7 +6187,7 @@ EOF
        text  => 'L 015 Linow - Dorf Zechlin Linow - Dorf Zechlin, nördl. OE/OA Linow Ersatzneubau Durchlass Vollsperrung 02.10.2006-14.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -30855,77227 -30302,77196
+userdel	2::inwork -30876,77129 -30340,77066
 EOF
      },
      { from  => 1159999200, # 2006-10-05 00:00
@@ -14313,7 +14313,7 @@ EOF
        text  => 'L 015 Menz - Rheinsberg OD Menz Straßenbau Vollsperrung 25.05.2009-19.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -15379,77129 -17592,77812
+userdel	q4::inwork -15379,77129 -16057,77339 -17592,77812
 EOF
      },
      { from  => 1244412000, # 2009-06-08 00:00
@@ -14321,7 +14321,7 @@ EOF
        text  => 'L 015 Menz - Rheinsberg zw. Menz u. Rheinsberg Straßenbau Vollsperrung 09.06.2009-20.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -24815,76635 -23305,77059 -22937,77020 -22504,76981 -21965,77030 -21728,77161 -21621,77313 -20227,77714 -19875,77881 -19494,78080 -19300,78146 -18544,78020 -17592,77812
+userdel	2::inwork -24767,76517 -23245,76952 -22950,76882 -22392,76828 -22046,76942 -21713,77018 -21558,77171 -20227,77714 -19875,77881 -19560,77995 -19306,78208 -18903,78024 -18615,77979 -17592,77812
 EOF
      },
      { from  => 1248559200, # 2009-07-26 00:00
@@ -14917,7 +14917,7 @@ EOF
        text  => 'L 015 Rheinsberg - Dorf Zechlin zw. Abzw. Zühlen und Linow Straßenneubau, Vollsperrung 27.07.2009-11.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -29636,76481 -28819,76060 -28278,75780 -27371,75722
+userdel	2::inwork -29604,76391 -28840,76019 -28297,75740 -27679,75655 -27336,75747 -27175,75718
 EOF
      },
      { from  => 1252792800, # 2009-09-13 00:00
@@ -14925,7 +14925,7 @@ EOF
        text  => 'L 015 Rheinsberg - Dorf Zechlin zw. Rheinsberg und Abzw. Zühlen Straßenneubau, Vollsperrung 14.09.2009-25.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -26077,76116 -26509,76113 -26787,75950 -27091,75809 -27371,75722
+userdel	2::inwork -26350,76073 -26474,76051 -26746,75931 -27175,75718
 EOF
      },
      { from  => 1247349600, # 2009-07-12 00:00
@@ -15267,7 +15267,7 @@ EOF
        text  => 'L 015 Schloßstr., Menzer Str. OD Rheinsberg, zw. Berliner Str. u. Kiefernweg Straßenbauarbeiten Vollsperrung 27.07.2009-18.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -24965,76568 -25211,76393 -25508,76444
+userdel	q4::inwork -25211,76393 -25508,76444
 EOF
      },
      { from  => 1249164000, # 2009-08-02 00:00
@@ -16457,7 +16457,7 @@ EOF
        text  => 'L 015 Rheinsberg - Dorf Zechlin zw. Rheinsberg und Abzw. Zühlen Straßenneubau mit KV Vollsperrung 28.09.2009-30.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -26509,76113 -26787,75950 -27091,75809 -27371,75722
+userdel	2::inwork -26474,76051 -26746,75931 -27175,75718
 EOF
      },
      { from  => 1254002400, # 2009-09-27 00:00
@@ -16869,7 +16869,7 @@ EOF
        text  => 'B 122 Zechlinerhütte - Wesenberg zw. Abzw. Kleinzerlang und Prebelowbrücke Deckenerneuerung Vollsperrung 16.11.2009-18.12.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -26520,83231 -26098,84240 -26120,84667 -26316,84900
+userdel	2::inwork -26740,82997 -26137,84005 -26120,84667 -26316,84900
 EOF
      },
      { from  => 1256425200, # 2009-10-25 01:00
@@ -17609,7 +17609,7 @@ EOF
        type  => 'handicap',
        source_id => 'LSW-SG33-K10037',
        data  => <<EOF,
-userdel	q4::inwork -33491,80874 -33511,80553
+userdel	q4::inwork -33491,80874 -33489,80472
 EOF
      },
      { from  => 1271281239, # 2010-04-14 23:40
@@ -24262,7 +24262,7 @@ userdel	q3::inwork 11325,12021 11275,12055
 EOF
      },
      { from  => $isodate2epoch->("2015-07-22 00:00:00"), # 1436738400, # 2015-07-13 00:00
-       until => $isodate2epoch->("2017-07-14 00:00:00"),
+       until => 1438715522, # XXX hat noch nicht angefangen --- $isodate2epoch->("2017-07-14 00:00:00"),
        text  => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich ab 23. Juli 2015 für ca. zwei Jahre',
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',

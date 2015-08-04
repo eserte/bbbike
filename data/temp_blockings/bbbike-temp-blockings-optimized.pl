@@ -3651,17 +3651,7 @@ userdel	q3::inwork 11325,12021 11275,12055
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
-         'until' => 1499983200,
-         'text' => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich ab 23. Juli 2015 für ca. zwei Jahre',
-         'from' => 1437516000,
-         'id' => 2715,
-         'data' => '	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
-	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
