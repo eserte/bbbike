@@ -388,12 +388,6 @@ entry after the I<source>.
 Denotes that the information in the next block or line was confirmed
 by I<source>.
 
-=item C<unverified_by: I<source>>
-
-Same as E<quot>by:E<quot> for unverified data.
-E<quot>UnverifiedE<quot> means that there's no communication channel
-back to the information provider.
-
 =item C<valid: YYYYMMDD-YYYYMMDD>
 
 =item C<valid: YYYYMMDD->
@@ -631,6 +625,14 @@ just a note for editors.
 
 Currently I think the C<XXX_...> is better suited for this task, as it
 can give more specific information.
+
+=item C<unverified_by: I<source>>
+
+Same as E<quot>by:E<quot> for unverified data.
+E<quot>UnverifiedE<quot> means that there's no communication channel
+back to the information provider. Nowadays this would be a couple of
+E<quot>by:E<quot> and E<quot>add_fragezeichen:E<quot> or
+E<quot>XXX:E<quot> directives.
 
 =back
 

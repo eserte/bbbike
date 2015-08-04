@@ -874,7 +874,6 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 # ::inwork => will maybe change to :inwork
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!
 .create_fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
-		${PERSISTENTTMPDIR}/.fragezeichen-other-source \
 		${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|} \
 		${PERSISTENTTMPDIR}/.fragezeichen-bbbike-temp-blockings-optimized \
 		Makefile
@@ -887,8 +886,6 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	grep '?' ${DATADIR}/ampeln-orig | \
 	    $(SED) -e 's/	\([^ ]*\)/ (\1)	?/' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@~
-	@echo "# added from other ${PERSISTENTTMPDIR}/.fragezeichen-other-source" >> $@~
-	cat ${PERSISTENTTMPDIR}/.fragezeichen-other-source >> $@~
 	@echo "# added from other sources: (${SOURCE_TARGETS})" >> $@~
 	cat ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|} >> $@~
 	@echo "# added from bbbike-temp-blockings-optimized" >> $@~
@@ -1138,33 +1135,6 @@ ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd:	${OPENGEODB_D_ORTE_PATH} ${MISCSRCDIR
 	    ${PERL} ${MISCSRCDIR}/restrict_bbd_data.pl -bbox -59700,60100,116500,-44900 -strdata=- -o=- | \
 	    $(PERL) -pe 's{(\s*\(.*\))?\t.*}{}' | sort -u > /tmp/orte_opengeodb
 	diff -u /tmp/orte_bbbike /tmp/orte_opengeodb | grep '^\+'
-
-# Die mit "laut adfc-karte" u.‰. gekennzeichneten Straﬂen extrahieren und
-# nach .fragezeichen-other-source schreiben.
-# XXX Very strange: with db4 on RedHat 8.0 I have to use O_RDWR instead of
-# O_RDONLY, otherwise the oneliner will die without an error message.
-# But O_RDWR does not work if the file is read-only, so still use O_RDONLY
-# Now using Tie::File, which works everywhere
-${PERSISTENTTMPDIR}/.fragezeichen-other-source:	${DATADIR}/qualitaet_s-orig ${DATADIR}/qualitaet_l-orig
-	cd ${DATADIR} && \
-	    $(PERL) -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
-		-MStrassen::Core -MTie::File -MFcntl=O_RDONLY \
-		-e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) {\
-			tie @l, "Tie::File", $$file, mode => O_RDONLY or \
-		    	    die qq{Cannot open $$file: $$!};\
-			for my $$i (1 .. $$#l) {\
-			    if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) {\
-				my $$comment = "laut $$1";\
-				my $$x = Strassen::parse($$l[$$i]);\
-				$$x->[Strassen::NAME()] .= " " if $$x->[Strassen::NAME()] ne "";\
-				$$x->[Strassen::NAME()] .= "($$comment)";\
-				$$x->[Strassen::CAT()] = "?";\
-				print Strassen::arr2line2($$x),"\n"\
-			    }\
-			}\
-		    }' > /tmp/other-source-fragezeichen-orig
-	${CONVERT2HAFAS} -basefile ${DATADIR}/qualitaet_s-orig /tmp/other-source-fragezeichen-orig > $@
-	@rm -f /tmp/other-source-fragezeichen-orig
 
 PREFIXMAP=sperr=SP,kopfstein=KP,qualit‰t=QU,m‰ﬂig.geeignet=QU,radweg=RW,benutzungspflich=RW,bau=BA,vorfahrt=VF,name=NA,bezeichn=NA,vorfahrt=VF,ampel=AM
 

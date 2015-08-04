@@ -419,11 +419,6 @@ entry after the <i>source</i>.
 <dd>
 Denotes that the information in the next block or line was confirmed
 by <i>source</i>.
-<dt class="POD_ITEM"><a name="unverified_by_source"><code>unverified_by: <i>source</i></code></a>
-<dd>
-Same as &quot;by:&quot; for unverified data.
-&quot;Unverified&quot; means that there&#39;s no communication channel
-back to the information provider.
 <dt class="POD_ITEM"><a name="valid_YYYYMMDD_YYYYM"><code>valid: YYYYMMDD-YYYYMMDD</code></a>
 <dt><a name="valid_YYYYMMDD_"><code>valid: YYYYMMDD-</code></a>
 <dt><a name="valid_YYYYMMDD"><code>valid: -YYYYMMDD</code></a>
@@ -644,6 +639,13 @@ just a note for editors.
 Currently I think the <code>XXX_...</code> is better suited for this task, as it
 can give more specific information.
 </p>
+<dt class="POD_ITEM"><a name="unverified_by_source"><code>unverified_by: <i>source</i></code></a>
+<dd>
+Same as &quot;by:&quot; for unverified data.
+&quot;Unverified&quot; means that there&#39;s no communication channel
+back to the information provider. Nowadays this would be a couple of
+&quot;by:&quot; and &quot;add_fragezeichen:&quot; or
+&quot;XXX:&quot; directives.
 </dl>
 <h3 class="POD_HEAD2"><a name="Comment_lines">Comment lines</a></h3>
 <p class="POD_TEXT">
