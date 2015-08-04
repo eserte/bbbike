@@ -886,8 +886,12 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	grep '?' ${DATADIR}/ampeln-orig | \
 	    $(SED) -e 's/	\([^ ]*\)/ (\1)	?/' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@~
-	@echo "# added from other sources: (${SOURCE_TARGETS})" >> $@~
-	cat ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|} >> $@~
+.for frz_source_target in ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|}
+	if [ -s ${frz_source_target} ] ; then \
+	    echo "# added from ${frz_source_target:T:S|.fragezeichen-||}" >> $@~; \
+	    cat ${frz_source_target} >> $@~; \
+	fi
+.endfor
 	@echo "# added from bbbike-temp-blockings-optimized" >> $@~
 	cat ${PERSISTENTTMPDIR}/.fragezeichen-bbbike-temp-blockings-optimized >> $@~
 	cmp -s $@~ $@ && rm $@~ || mv $@~ $@
