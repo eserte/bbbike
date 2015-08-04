@@ -24,7 +24,7 @@ use Getopt::Long;
 use BBBikeTest qw(is_float);
 use Strassen::Util qw();
 
-plan tests => 28;
+plan tests => 27;
 
 my $do_bench;
 my $do_xxx;
@@ -35,11 +35,10 @@ GetOptions(
     or die "usage: $0 [-bench]";
 
 # note: additional tests in ext/VectorUtil-Inline/t
-use_ok('VectorUtil', 'intersect_rectangles', 'normalize_rectangle',
-       'enclosed_rectangle', 'bbox_of_polygon', 'combine_bboxes',
-       'distance_point_line', 'project_point_on_line',
-       'offset_line', 'triangle_area', 'triangle_area_by_lengths',
-      );
+use VectorUtil qw(intersect_rectangles normalize_rectangle
+		  enclosed_rectangle bbox_of_polygon combine_bboxes
+		  distance_point_line project_point_on_line
+		  offset_line triangle_area triangle_area_by_lengths);
 
 goto XXX if $do_xxx;
 

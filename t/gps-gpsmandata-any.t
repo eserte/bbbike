@@ -28,9 +28,9 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 67;
+plan tests => 66;
 
-use_ok 'GPS::GpsmanData::Any';
+use GPS::GpsmanData::Any;
 
 require GPS::GpsmanData::TestRoundtrip;
 

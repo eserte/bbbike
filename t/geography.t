@@ -24,10 +24,10 @@ BEGIN {
     }
 }
 
-plan tests => 20;
+plan tests => 18;
 
-use_ok('Geography::Berlin_DE');
-use_ok('Geography::FromMeta');
+use Geography::Berlin_DE;
+use Geography::FromMeta;
 
 {
     my $geo = Geography::Berlin_DE->new;

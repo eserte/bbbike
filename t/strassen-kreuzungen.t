@@ -24,7 +24,7 @@ BEGIN {
 
 plan 'no_plan';
 
-use_ok "Strassen::Kreuzungen";
+use Strassen::Kreuzungen;
 
 use Strassen::Core;
 use Strassen::StrassenNetz;

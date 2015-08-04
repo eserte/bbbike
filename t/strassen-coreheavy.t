@@ -37,9 +37,9 @@ my $v;
 GetOptions("v" => \$v)
     or die "usage: $0 [-v]";
 
-plan tests => 59;
+plan tests => 58;
 
-use_ok("Strassen::CoreHeavy");
+use Strassen::CoreHeavy;
 
 my $tempdatadir = tempdir(CLEANUP => 1);
 die if !$tempdatadir;

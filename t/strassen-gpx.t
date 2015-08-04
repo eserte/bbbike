@@ -67,9 +67,9 @@ if (!defined $bbdfile) {
     $bbdfile = $do_long_tests ? "strassen": "obst";
 }
 
-plan tests => 6 + scalar(@variants) * $tests_per_variant;
+plan tests => 5 + scalar(@variants) * $tests_per_variant;
 
-use_ok("Strassen::GPX");
+use Strassen::GPX;
 my $s = Strassen::GPX->new;
 isa_ok($s, "Strassen::GPX");
 isa_ok($s, "Strassen");

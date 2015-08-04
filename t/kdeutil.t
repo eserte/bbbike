@@ -25,9 +25,9 @@ BEGIN {
 }
 
 my $real_tests = 31;
-plan tests => 2 + $real_tests;
+plan tests => 1 + $real_tests;
 
-use_ok("KDEUtil");
+use KDEUtil;
 
 my $k = KDEUtil->new;
 isa_ok($k, "KDEUtil");

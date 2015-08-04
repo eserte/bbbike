@@ -33,10 +33,9 @@ use BBBikeTest;
 
 sub load_from_file_and_check ($);
 
-plan tests => 74;
+plan tests => 73;
 
-use_ok("Strassen::KML")
-    or exit 1; # avoid recursive calls to Strassen::new
+use Strassen::KML;
 my $s = Strassen::KML->new;
 isa_ok($s, "Strassen::KML");
 isa_ok($s, "Strassen");

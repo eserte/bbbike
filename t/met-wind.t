@@ -4,9 +4,9 @@ use lib "$FindBin::RealBin/../lib";
 
 use Test::More;
 my $tk_tests = 2;
-plan tests => 23 + $tk_tests;
+plan tests => 22 + $tk_tests;
 
-use_ok 'Met::Wind', 'wind_velocity';
+use Met::Wind qw(wind_velocity);
 
 foreach ([text_de => 'Stille', beaufort => 0],
 	 [text_de => 'Stille', 'm/s'    => 0.1],

@@ -32,7 +32,7 @@ BEGIN {
 }
 
 my $real_tests = 8;
-plan tests => 2 + $real_tests;
+plan tests => 1 + $real_tests;
 
 my $do_usb_test;
 my $debug;
@@ -43,7 +43,7 @@ GetOptions("usb!" => \$do_usb_test,
 	  )
     or die "usage: $0 [-usb] [-debug] [-keep]";
 
-use_ok("GPS::Gpsbabel");
+use GPS::Gpsbabel;
 my $gpsb = GPS::Gpsbabel->new;
 isa_ok($gpsb, "GPS::Gpsbabel");
 

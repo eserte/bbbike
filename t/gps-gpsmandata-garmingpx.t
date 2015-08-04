@@ -14,7 +14,7 @@ use lib (
 use Getopt::Long;
 use Test::More 'no_plan';
 
-use_ok('GPS::GpsmanData::GarminGPX');
+use GPS::GpsmanData::GarminGPX;
 
 sub usage () {
     die <<EOF;

@@ -20,7 +20,7 @@ sub check_geocoding ($$$;$);
 sub check_parse_string ($$);
 sub utf8 ($);
 
-use_ok 'GeocoderAddr';
+use GeocoderAddr;
 
 my $do_complete_file;
 my $start_with;

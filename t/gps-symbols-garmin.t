@@ -13,7 +13,7 @@ use lib (
 	);
 use Test::More 'no_plan';
 
-use_ok 'GPS::Symbols::Garmin';
+use GPS::Symbols::Garmin;
 
 my @warnings;
 local $SIG{__WARN__} = sub { push @warnings, @_ };

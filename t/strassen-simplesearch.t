@@ -33,13 +33,13 @@ use BBBikeTest qw(using_bbbike_test_data);
 
 using_bbbike_test_data;
 
-plan tests => 18;
+plan tests => 17;
 
 my $do_bbd;
 GetOptions("bbd" => \$do_bbd)
     or die "usage: $0 [-bbd]";
 
-use_ok 'Strassen::SimpleSearch', 'simple_search';
+use Strassen::SimpleSearch qw(simple_search);
 
 my $s = Strassen->new("strassen");
 my $net = StrassenNetz->new($s);

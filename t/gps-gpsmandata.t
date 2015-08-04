@@ -28,9 +28,9 @@ use lib (
 use BBBikeTest qw(gpxlint_string eq_or_diff);
 use File::Temp qw(tempfile);
 
-plan tests => 73;
+plan tests => 72;
 
-use_ok 'GPS::GpsmanData';
+use GPS::GpsmanData;
 
 {
     my $wpt_sample_file = <<'EOF';
@@ -52,7 +52,7 @@ EOF
 	or die $!;
 
     {
-	ok GPS::GpsmanData->check($tmpfile), 'check test for GPS.pm';
+	ok(GPS::GpsmanData->check($tmpfile), 'check test for GPS.pm');
     }
 
     { # non-multi test

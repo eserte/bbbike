@@ -29,9 +29,9 @@ if (!$mw) {
     CORE::exit(0);
 }
 
-plan tests => 3;
+plan tests => 2;
 
-use_ok 'BBBikeSuggest';
+use BBBikeSuggest;
 my $suggest = BBBikeSuggest->new;
 isa_ok $suggest, 'BBBikeSuggest';
 $suggest->set_zipfile("$FindBin::RealBin/../data/Berlin.coords.data");

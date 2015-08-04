@@ -26,7 +26,7 @@ BEGIN {
 
 plan 'no_plan';
 
-use_ok 'BBBikeUtil', 'bbbike_root';
+use BBBikeUtil qw(bbbike_root);
 
 my $bbbike_root = bbbike_root();
 ok(-d $bbbike_root, 'Got a bbbike root directory');

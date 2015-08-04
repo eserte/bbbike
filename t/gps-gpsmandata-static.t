@@ -18,7 +18,7 @@ use lib (
 
 use Test::More 'no_plan';
 
-use_ok 'GPS::GpsmanData';
+use GPS::GpsmanData;
 
 {
     my $lat_ddd = 52.5;

@@ -19,9 +19,9 @@ BEGIN {
 
 sub is_between ($$$;$);
 
-plan tests => 9;
+plan tests => 8;
 
-use_ok 'Strassen::Util';
+use Strassen::Util;
 
 is(Strassen::Util::strecke([0,0],[1000,0]), 1000, 'strecke');
 is(Strassen::Util::strecke([0,0],[0,1000]), 1000);

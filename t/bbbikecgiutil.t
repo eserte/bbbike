@@ -22,9 +22,9 @@ BEGIN {
 
 use CGI;
 
-plan tests => 6;
+plan tests => 5;
 
-use_ok("BBBikeCGI::Util");
+use BBBikeCGI::Util;
 
 {
     my $q = CGI->new({movemap => "Süd"});
