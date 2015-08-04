@@ -3756,7 +3756,6 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     # map/gis
 		     'bbd (BBBike data)',
 		     ($advanced ? ('ESRI') : ()),
-		     # XXX not yet ready: ($devel_host ? ('OVL (TOP50)') : ()),
 
 		     # vector oriented
 		     'PDF',
@@ -3808,14 +3807,6 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     warn __LINE__ . ": $@" if $@;
 		     DecBusy($top);
 		 });
-	} elsif ($fmt =~ /^ovl/i) {
-	    $svm->command
-		(-label => $fmt,
-		 -command => sub {
-		     require GPS::Ovl;
-		     GPS::Ovl->new->tk_export(coords => \@realcoords);
-		 }
-		);
 	} elsif ($fmt =~ /^bbd/) {
 	    $svm->command
 		(-label => $fmt,

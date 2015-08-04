@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2012,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::Ovl;
 
 use strict;
 use vars qw($VERSION @ISA $OVL_MAGIC $OVL_MAGIC_3_0 $OVL_MAGIC_4_0);
-$VERSION = '1.19';
+$VERSION = '1.20';
 
 require File::Basename;
 
@@ -686,29 +686,6 @@ sub as_string_ascii {
 	}
 	$self->{Symbols} = \@symbols;
     }
-}
-
-sub tk_export {
-    my($self, %args) = @_;
-    # peacify -w
-    my $top = $main::top = $main::top;
-    my $file = $top->getSaveFile
-	(-defaultextension => '.ovl',
-	 -filetypes => [[M"OVL-Dateien" => '.ovl'],
-			[M"Alle Dateien" => '*']],
-	);
-    return unless defined $file;
-    require Karte::Standard;
-    require Karte::Polar;
-    $Karte::Polar::obj = $Karte::Polar::obj; # peacify -w
-    my @polar_coords = map { [ $Karte::Polar::obj->standard2map(@$_) ] } @{ $args{coords} };
-    my $s = $self->as_string_ascii(\@polar_coords);
-    die "$s -> $file";#XXX
-    open my $OVL, "> $file"
-	or main::status_message("Cannot write to $file: $!", "die");
-    print $OVL $s;
-    close $OVL
-	or main::status_message("Error writing to $file: $!", "die");
 }
 
 1;
