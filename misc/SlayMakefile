@@ -2,6 +2,7 @@
 {
 	use strict;
 	use vars qw($ABS_LOCAL_BBBIKE_DIR $BBBIKE_DATA_DIR $BBBIKE_MISCSRC_DIR $BBBIKE_TMP_DIR);
+	use vars qw($FRZ_NEXTCHECK_SRC $FRZ_SRC);
 	use vars qw($BBBIKE_HOSTEUROPE_HOST $BBBIKE_HOSTEUROPE_USER);
 	use Cwd qw(realpath);
 	use File::Compare qw(compare);
@@ -12,6 +13,8 @@
 	$BBBIKE_DATA_DIR      = "$ABS_LOCAL_BBBIKE_DIR/data";
 	$BBBIKE_MISCSRC_DIR   = "$ABS_LOCAL_BBBIKE_DIR/miscsrc";
 	$BBBIKE_TMP_DIR       = "$ABS_LOCAL_BBBIKE_DIR/tmp";
+	$FRZ_NEXTCHECK_SRC    = "$BBBIKE_DATA_DIR/../tmp/fragezeichen-outdoor-nextcheck.bbd";
+	$FRZ_SRC	      = "$BBBIKE_DATA_DIR/fragezeichen";
 
 	require lib;
 	lib->import($ABS_LOCAL_BBBIKE_DIR, "$ABS_LOCAL_BBBIKE_DIR/lib");
@@ -22,11 +25,16 @@
 	require BBBikeUtil;
 
 	sub do_fragezeichen_list {
-		my($do_local) = @_;
+		my($op_mode) = @_;
+		die "Invalid operation mode '$op_mode'" if $op_mode !~ m{^(local|XXX|remote)$};
 
-		my $dir                 = $do_local ? "$BBBIKE_TMP_DIR/fragezeichen_list_local" : "$BBBIKE_TMP_DIR/fragezeichen_list";
-		my $bbbikeurl           = $do_local ? '/bbbike/cgi/bbbike.cgi' : 'http://www.bbbike.de/cgi-bin/bbbike.cgi';
-		my $fragezeichenformurl = $do_local ? '/bbbike/html/fragezeichenform.html' : 'http://www.bbbike.de/BBBike/html/fragezeichenform.html';
+		my $dir                 = ($op_mode eq 'local' ? "$BBBIKE_TMP_DIR/fragezeichen_list_local" :
+					   $op_mode eq 'XXX'   ? "$BBBIKE_TMP_DIR/XXX_list_local" :
+								 "$BBBIKE_TMP_DIR/fragezeichen_list");
+		my $bbbikeurl           = ($op_mode eq 'local' || $op_mode eq 'XXX' ? '/bbbike/cgi/bbbike.cgi' :
+										      'http://www.bbbike.de/cgi-bin/bbbike.cgi');
+		my $fragezeichenformurl = ($op_mode eq 'local' || $op_mode eq 'XXX' ? '/bbbike/html/fragezeichenform.html' :
+										      'http://www.bbbike.de/BBBike/html/fragezeichenform.html');
 
 		mkdir $dir if !-d $dir;
 		chmod 0755, $dir;
@@ -46,7 +54,8 @@
 		}
 
 		my %citypart2fz;
-		my $fz = Strassen->new("$BBBIKE_DATA_DIR/fragezeichen");
+		my $fragezeichen_src = $op_mode eq 'XXX' ? $FRZ_NEXTCHECK_SRC : $FRZ_SRC;
+		my $fz = Strassen->new($fragezeichen_src);
 		while(1) {
 			my $r = $fz->next;
 			my @c = @{ $r->[Strassen::COORDS()] };
@@ -188,7 +197,7 @@ fragezeichen-list:		{ "$BBBIKE_TMP_DIR/fragezeichen_list/index.html" }
 
 { "$BBBIKE_TMP_DIR/fragezeichen_list/index.html" } :		{ @DO_FRAGEZEICHEN_LIST_DEPS }
 	{
-		do_fragezeichen_list();
+		do_fragezeichen_list('remote');
 	}
 
 fragezeichen-list-local:		{ "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html" }
@@ -207,6 +216,22 @@ fragezeichen-list-local:		{ "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html"
 	{
 		do_fragezeichen_list("local");
 	}
+
+XXX-list-local:				{ "$BBBIKE_TMP_DIR/XXX_list_local/index.html" }
+	{
+		print "Try now:\n";
+		print "\n";
+		print "    firefox $BBBIKE_TMP_DIR/XXX_list_local/index.html\n";
+		print "    firefox $BBBIKE_TMP_DIR/XXX_list_local/index-sort-by-count.html\n";
+		print "\n";
+		"";
+	}
+
+{ "$BBBIKE_TMP_DIR/XXX_list_local/index.html" } :	{ map { $_ eq $FRZ_SRC ? $FRZ_NEXTCHECK_SRC : $_ } @DO_FRAGEZEICHEN_LIST_DEPS }
+	{
+		do_fragezeichen_list('XXX');
+	}
+
 
 rsync-fragezeichen-list:	fragezeichen-list
 	{
