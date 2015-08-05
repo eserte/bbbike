@@ -16,8 +16,9 @@
     require GPS;
     push @GPS::BBBikeGPS::MountedDevice::ISA, 'GPS';
 
+    use strict;
     use vars qw($VERSION);
-    $VERSION = '0.03';
+    $VERSION = '0.04';
 
     sub has_gps_settings { 1 }
 
@@ -59,6 +60,36 @@
 			       #-withtripext => 1,
 			      );
 	close $ofh;
+
+	$self->maybe_mount
+	    (sub {
+		 my($mount_point) = @_;
+
+		 my $subdir = 'Garmin/GPX'; # XXX configuration parameter, default for Garmin
+
+		 (my $safe_routename = $simplified_route->{routename}) =~ s{[^A-Za-z0-9_-]}{_}g;
+		 require POSIX;
+		 $safe_routename = POSIX::strftime("%Y%m%d_%H%M%S", localtime) . '_' . $safe_routename . '.gpx';
+
+		 require File::Copy;
+		 my $dest = "$mount_point/$subdir/$safe_routename";
+		 File::Copy::cp($ofile, $dest)
+			 or die "Failure while copying $ofile to $dest: $!";
+
+		 unlink $ofile; # as soon as possible
+
+		 (files => [$dest]);
+	     });
+
+    }
+
+    sub transfer { } # NOP
+
+    sub maybe_mount {
+	my(undef, $cb, %opts) = @_;
+
+	######################################################################
+	# do the mount (maybe)
 
 	my($mount_point, $mount_device, @mount_opts);
 	# XXX configuration stuff vvv
@@ -102,7 +133,6 @@
 	    }
 	}
 	# XXX configuration stuff ^^^
-	my $subdir = 'Garmin/GPX'; # XXX configuration parameter, default for Garmin
 
 	my $need_umount;
 	if (!_is_mounted($mount_point)) {
@@ -138,16 +168,13 @@
 	    }
 	}
 
-	(my $safe_routename = $simplified_route->{routename}) =~ s{[^A-Za-z0-9_-]}{_}g;
-	require POSIX;
-	$safe_routename = POSIX::strftime("%Y%m%d_%H%M%S", localtime) . '_' . $safe_routename . '.gpx';
+	######################################################################
+	# call the callback
 
-	require File::Copy;
-	my $dest = "$mount_point/$subdir/$safe_routename";
-	File::Copy::cp($ofile, $dest)
-		or die "Failure while copying $ofile to $dest: $!";
+	my %info = $cb->($mount_point);
 
-	unlink $ofile; # as soon as possible
+	######################################################################
+	# do the unmount (maybe)
 
 	if ($need_umount) {
 	    system("umount", $mount_point);
@@ -158,18 +185,22 @@
 		die "$mount_point is still mounted, despite of umount call";
 	    }
 	} else {
-	    # Make sure file is really written if possible
-	    if (eval { require File::Sync; 1 }) {
-		if (open my $fh, $dest) {
-		    File::Sync::fsync($fh);
+	    # Make sure generated file(s) are really written if possible
+	    if ($info{files}) {
+		my @sync_files = @{ $info{files} || [] };
+		if (eval { require File::Sync; 1 }) {
+		    for my $sync_file (@sync_files) {
+			if (open my $fh, $sync_file) {
+			    File::Sync::fsync($fh);
+			}
+		    }
+		} elsif (eval { require BBBikeUtil; 1 } && BBBikeUtil::is_in_path('fsync')) {
+		    system('fsync', @sync_files);
 		}
-	    } elsif (eval { require BBBikeUtil; 1 } && BBBikeUtil::is_in_path('fsync')) {
-		system('fsync', $dest);
 	    }
 	}
-    }
 
-    sub transfer { } # NOP
+    }
 
     sub _is_mounted { # XXX use a module?
 	if ($^O eq 'MSWin32') {
