@@ -53,7 +53,7 @@
 	}
 	my($ofh,$ofile) = File::Temp::tempfile(SUFFIX => ".gpx",
 					       UNLINK => 1);
-	main::status_message("Could not create temporary file: $!", "die") if !$ofh;
+	_status_message("Could not create temporary file: $!", "die") if !$ofh;
 	print $ofh $s->bbd2gpx(-as => "route",
 			       -name => $simplified_route->{routename},
 			       -number => $args{-routenumber},
@@ -112,7 +112,7 @@
 		}
 	    }
 	    if (!$mount_point) {
-		main::status_message("The Garmin device is not mounted --- is the device in USB mass storage mode?", 'error');
+		_status_message("The Garmin device is not mounted --- is the device in USB mass storage mode?", 'error');
 		return;
 	    }
 	} else { # e.g. linux, assume device is already mounted
@@ -128,7 +128,7 @@
 		}
 	    }
 	    if (!$mount_point) {
-		main::status_message("The Garmin device is not mounted in the expected mount points (tried @mount_point_candidates)", 'error');
+		_status_message("The Garmin device is not mounted in the expected mount points (tried @mount_point_candidates)", 'error');
 		return;
 	    }
 	}
@@ -144,7 +144,7 @@
 		}
 		if (!_is_mounted($mount_point)) {
 		    # This seems to be slow, so loop for a while
-		    main::status_message("Mounting is slow, wait for a while...", "infoauto");
+		    _status_message("Mounting is slow, wait for a while...", "infoauto");
 		    my $success;
 		    eval {
 			for (1..20) {
@@ -156,14 +156,14 @@
 			}
 		    };
 		    warn $@ if $@;
-		    main::info_auto_popdown();
+		    _info_auto_popdown();
 		    if (!$success) {
 			die "Mounting using <@mount_cmd> was not successful";
 		    }
 		}
 		$need_umount = 1;
 	    } else {
-		main::status_message("Please mount the Garmin device on $mount_point manually", 'error');
+		_status_message("Please mount the Garmin device on $mount_point manually", 'error');
 		return;
 	    }
 	}
@@ -276,6 +276,20 @@
 	# XXX configuration stuff ^^^
 	warn "Cannot find garmin $garmin_disk_type /var/log/messages, use '$mount_device' as fallback...\n";
 	$mount_device;
+    }
+
+    # Logging, should work within Perl/Tk app and outside
+    sub _status_message {
+	if (defined &main::status_message) {
+	    main::status_message(@_);
+	} else {
+	    print STDERR "$_[0]\n";
+	}
+    }
+    sub _info_auto_popdown {
+	if (defined &main::info_auto_popdown) {
+	    main::info_auto_popdown();
+	} # no else
     }
 
 }
