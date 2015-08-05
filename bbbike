@@ -6707,6 +6707,44 @@ EOF
 			    }
 		};
 
+		# Plot an image for a line (not area) feature
+	        if ($cat_hin =~ $complex_IMG_qr) {
+		    my $img_spec = $1;
+		    my $anchor = ($2 ? $2 : "c");
+		    my $p;
+		    my $img = maybe_expand_image_file($img_spec, $str_file{$abk}, "data");
+		    if (!$img) {
+			# XXX get_image_for_str is actually more powerful, and should maybe replace maybe_expand_image_file+image_from_file?
+			$p = get_image_for_str($img_spec, $img_spec, $abk);
+		    } else {
+			$p = image_from_file($top, $img);
+		    }
+		    # XXX this is leaking (photo never deleted...)
+		    # XXX $abk-XXX => $abk-fg or $abk-img ?
+		    # XXX use $abk-fg for now (scaling works!)
+		    if ($p) {
+			# XXX maybe the image position should be
+			# made configurable. Currently it's
+			# at the beginning of the line feature,
+			# which is not that bad for comment_trafficjam
+			# rendering (currently the only one using the
+			# image+line rendering feature). But maybe
+			# sometimes it should be in the middle of the
+			# line, or at the end. Event some kind of
+			# (line) anchor option? begin, middle, end?
+			# Note that the current anchor option should
+			# still exist additionally...
+			$item = $c->createImage(@coordlist[0..1],
+					-image => $p,
+					-anchor => $anchor,
+					-tags => [$abk, $strname,
+						  "$abk-fg", "$abk-" . $i],
+				       );
+		    } else {
+			warn "Can't find photo $img (2)";
+		    }
+		}
+
 		if ($cat_hin =~ /^F:(.*)$/) { # Fläche, no $cat_rueck handling here
 		    $category = $1;
 		    my($color, $rest) = split(/\|/, $category, 2);
@@ -6760,30 +6798,6 @@ EOF
 			$sight_draw->();
 		    }
 
-		} elsif ($cat_hin =~ $complex_IMG_qr) {
-		    my $img_spec = $1;
-		    my $anchor = ($2 ? $2 : "c");
-		    my $p;
-		    my $img = maybe_expand_image_file($img_spec, $str_file{$abk}, "data");
-		    if (!$img) {
-			# XXX get_image_for_str is actually more powerful, and should maybe replace maybe_expand_image_file+image_from_file?
-			$p = get_image_for_str($img_spec, $img_spec, $abk);
-		    } else {
-			$p = image_from_file($top, $img);
-		    }
-		    # XXX this is leaking (photo never deleted...)
-		    # XXX $abk-XXX => $abk-fg or $abk-img ?
-		    # XXX use $abk-fg for now (scaling works!)
-		    if ($p) {
-			$item = $c->createImage(@coordlist[0..1],
-					-image => $p,
-					-anchor => $anchor,
-					-tags => [$abk, $strname,
-						  "$abk-fg", "$abk-" . $i],
-				       );
-		    } else {
-			warn "Can't find photo $img (2)";
-		    }
 		} elsif ($use_stippleline == 1) { # old stipple code
 		    # XXX no $cat_rueck handling here (this code branch is anyway obsolete)
 		    # min. 4 Koordinaten erzwingen
