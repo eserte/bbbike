@@ -400,6 +400,15 @@ Gaußstr.: Radspuren werden errichtet	?::projected 3739,13563 3833,13590 4098,136
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: next_check_id: INVALIDEN-2014 vvv
+#: last_checked: 2015-08-05 vvv
+#: next_check: 2015-08-15 vvv
+Invalidenstr./Caroline-Michaelis-Str.: wann wird die Ampel eingeschaltet?	?::inwork 9151,13941
+Invalidenstr./Straßenbahnhaltestelle: wann wird die Fußgängerampel eingeschaltet?	?::inwork 9274,13963
+#: next_check ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.345241.php vvv
 #: next_check: 2015-08-04
 Sigmaringer Str.: Moabiter Kissen wird eingebaut; gibt es für Radfahrer danach Beeinträchtigungen?	? 4715,8977 4700,9179
@@ -436,7 +445,7 @@ Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13
 #: XXX_prog: fehlende Möglichkeit, das Handicap hier auszudrücken!
 #: source_id: IM_025755
 #: XXX bis 2015-10-05
-#: last_checked: 2015-07-26 (So; Bauzäune waren weggeschoben, man konnte die Straße gut überqueren)
+#: last_checked: 2015-08-05 (So; Bauzäune waren weggeschoben, man konnte die Straße gut überqueren)
 Friedrichstr./Unter den Linden: Überqueren der Straße Unter den Linden nicht möglich, Radfahrer müssen offiziell auch schieben	? 9343,12464 9358,12351 9369,12253
 # 
 # REMOVED (-> bbbike-temp-blockings.pl) --- #: XXX Realisierung bis September 2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html --- #: XXX betrifft die Einbahnstraßenregelung während der Bauarbeiten auch Radfahrer? --- #: next_check: 2015-05-04 --- Maaßenstr.: welche Auswirkungen wird die neue "Begegnungszone" für Radfahrer haben? Wird der Radweg verschwinden?	?::inwork 7080,10098 7060,10221 7033,10328
@@ -552,7 +561,7 @@ Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführ
 # 
 #: next_check_id: WARSCHAUER-2014
 #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
-#: last_checked: 2015-07-18
+#: last_checked: 2015-08-05
 #: next_check: 2015-09-30
 Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # 
@@ -904,7 +913,7 @@ Weitlingstr.: für 2012 geplanter Zebrastreifen? Wo genau?	?::projected 16705,115
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2015-07-10
+#: last_checked: 2015-08-05
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -1863,7 +1872,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-07-21
+#: last_checked: 2015-08-05
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 

@@ -151,7 +151,7 @@ Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 #: XXX Öffnung der Einbahnstraße für Radfahrer?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6514
-#: last_checked: 2015-07-31
+#: last_checked: 2015-08-05
 Weydemeyerstr.	1s:q4 11896,13075 11904,13052 12053,12984 12054,12903
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12529
@@ -2884,7 +2884,16 @@ am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 #: check_frequency: 90d
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 
-# REMOVED (die Baustelle ist mittlerweile auf der anderen Straßenseite) --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2014-04-02 vvv --- #: next_check: 2015-05-31 vvv --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 8935,13844 --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019
+#: next_check_id: INVALIDEN-2014 vvv
+#: last_checked: 2015-08-05 vvv
+#: next_check: 2015-05-31 vvv
+Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 8935,13844
+Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941
+Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019
+Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019
+#: next_check ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: last_checked: 2015-07-18 vvv

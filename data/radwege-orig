@@ -910,7 +910,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
 #: last_checked: 2015-07-23
-#: check_frequency: 180d
+#: next_check: 2015-08-28 (Ende der Bauarbeiten)
 	RW2;RW8 6722,2444 6711,2496 6679,2701 6677,2718 6665,2836
 	RW2;RW8 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
 # REMOVED (gibt's nicht) ---	RW;RW 7130,1253 7081,1346 6984,1540 6881,1743
@@ -919,7 +919,8 @@ schlechte Qualität, Wurzeln, holprig	RW1; 6753,2233 6768,2143 6799,1922 6844,181
 Verbundsteinpflasterradweg	RW1; 6881,1743 6844,1813 6799,1922 6768,2143
 #: XXX was passiert hier bzgl. der Radwege? vvv
 #: XXX Baumaßnahme GL6.18 (Realisierung nach 2011) vvv
-#: XXX http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.342111.php (Bauarbeiten, passiert hier vielleicht etwas?)
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.342111.php (Bauarbeiten, passiert hier vielleicht etwas?)
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.348323.php
 #: last_checked: 2015-07-23 vvv
 #: next_check: 2015-08-28 vvv
 Verbundsteinpflasterradweg	RW1; 6768,2143 6753,2233
@@ -1604,7 +1605,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: next_check_id: OTTOBRAUN-2015
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5; 
-#: last_checked: 2015-06-17
+#: last_checked: 2015-08-05
 #: check_frequency: 90d
 	RW3; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -1643,6 +1644,17 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 	RW2; 8450,13599 8574,13666
 	RW4; 8574,13666 8588,13673 8619,13689 8659,13708 8690,13723 8842,13798
 	RW2; 8842,13798 8935,13844
+#: next_check_id: INVALIDEN-2014 vvv
+#: XXX kommen hier noch Radwegschilder hin? vvv
+#: last_checked: 2015-08-05 vvv
+#: next_check: 2015-08-15 vvv
+	RW3;RW3 8935,13844 9085,13919 9151,13941 9203,13953 9274,13963
+	RW1;RW1 9274,13963 9285,13965 9383,13986
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: next_check_id ^^^
+# 
 #: note: das Radwegschild ist noch provisorisch (gesehen: 2015-04-01)
 	RW4; 8935,13844 8842,13798
 #: note: hier existiert noch ein alter enger Radweg, der aber nicht weiter "beworben" wird
