@@ -78,13 +78,21 @@
 
 		 unlink $ofile; # as soon as possible
 
-		 (files => [$dest]);
+		 +{ files => [$dest] };
 	     });
 
     }
 
     sub transfer { } # NOP
 
+    # maybe_mount() may also be called outside of the Perl/Tk
+    # application for scripts which have to copy from or to the
+    # mounted gps device. Simple usage example:
+    #
+    #    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls -al $dir"); 1 })'
+    #
+    # Currently only the internal flash card is supported, but in
+    # future this can be controlled with options.
     sub maybe_mount {
 	my(undef, $cb, %opts) = @_;
 
@@ -171,7 +179,7 @@
 	######################################################################
 	# call the callback
 
-	my %info = $cb->($mount_point);
+	my $info = $cb->($mount_point);
 
 	######################################################################
 	# do the unmount (maybe)
@@ -186,8 +194,8 @@
 	    }
 	} else {
 	    # Make sure generated file(s) are really written if possible
-	    if ($info{files}) {
-		my @sync_files = @{ $info{files} || [] };
+	    if (ref $info eq 'HASH' && $info->{files}) {
+		my @sync_files = @{ $info->{files} || [] };
 		if (eval { require File::Sync; 1 }) {
 		    for my $sync_file (@sync_files) {
 			if (open my $fh, $sync_file) {
