@@ -22015,8 +22015,8 @@ EOF
        until => $isodate2epoch->("2014-09-06 18:00:00"),
        text  => 'Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 06.09.2014 von 14 bis 18 Uhr',
        type  => 'gesperrt',
-       periodic => 1,
-       recurrences => [['yearly', days => 5, months => 9]],
+       #periodic => 1,
+       #recurrences => [['yearly', days => 5, months => 9]],
        source_id => 'IM_020277',
        data  => <<EOF,
 userdel	2::temp 8606,16973 8677,17154
