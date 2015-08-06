@@ -15,10 +15,12 @@ package BBBikeDataDownloadCompatPlack;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
-use Plack::Request ();
+use Cwd ();
 use HTTP::Date qw(time2str);
+use Plack::Request ();
+use Plack::Util ();
 
 sub get_app {
     my($datadir) = @_;
@@ -48,10 +50,20 @@ sub get_app {
 						   'X-BBBike-Hacks' => 'NH',
 						  ]
 					    ]);
+		    # Calling ->write is very expensive with Plack. So
+		    # buffer manually to reduce the number of ->write
+		    # calls.
+		    my $buf = '';
+		    my $flush = sub {
+			$writer->write($buf);
+			$buf = '';
+		    };
 		    while(<$fh>) {
 			s{\tNH }{\tN };
-			$writer->write($_);
+			$buf .= $_;
+			$flush->() if length $buf >= 4096;
 		    }
+		    $flush->();
 		    $writer->close;
 		};
 	    }
@@ -65,17 +77,23 @@ sub get_app {
 	    }
 	}
 
-	open my $fh, '<', $filename
-	    or die "Can't open file <$filename> (can this ever happen?): $!";
-	my $res = $req->new_response(200);
-	if ($filename =~ m{\.gif$}) {
-	    $res->content_type('image/gif');
-	} else {
-	    $res->content_type('text/plain');
-	}
-	$res->header('Last-Modified', time2str((stat($filename))[9]));
-	$res->body($fh);
-	return $res->finalize;
+	open my $fh, "<:raw", $filename
+	    or return $req->new_response(403)->finalize;
+
+	my @stat = stat $filename;
+	Plack::Util::set_io_path($fh, Cwd::realpath($filename));
+
+	my $content_type = $filename =~ m{\.gif$} ? 'image/gif' : 'text/plain';
+
+	return [
+		200,
+		[
+		 'Content-Type'   => $content_type,
+		 'Content-Length' => $stat[7],
+		 'Last-Modified'  => HTTP::Date::time2str( $stat[9] )
+		],
+		$fh,
+	       ];
     };
 }
 
