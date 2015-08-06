@@ -14,7 +14,15 @@ use Cwd 'realpath';
 use File::Basename 'dirname';
 use File::Spec::Functions 'catfile', 'catpath';
 
-my $root = dirname(realpath($FindBin::RealBin));
+my $root;
+BEGIN {
+    $root = dirname(realpath($FindBin::RealBin));
+#$root = "/home/e/eserte/src/bbbike";#XXX
+}
+
+use lib $root;
+use BBBikeDataDownloadCompatPlack ();
+
 my $cgidir = catpath $root, 'cgi';
 
 # Force the current perl's path as first entry in PATH,
@@ -65,6 +73,8 @@ builder {
 	    )->to_app;
 	}
     }
+    
+    $app = mount "/bbbike/data" => BBBikeDataDownloadCompatPlack::get_app("$root/data");
 
     $app = mount "/bbbike" => Plack::App::File->new(root => $root, encoding => 'iso-8859-1')->to_app;
 

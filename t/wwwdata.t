@@ -353,7 +353,7 @@ sub run_test_suite {
 		if ($file eq 'data/strassen') {
 		    if ($bbbike_version eq '3.16') { # Simulate old BBBike application
 			local $TODO;
-			$TODO = "Works only with modperl" if $ENV{BBBIKE_TEST_SKIP_MODPERL}; # especially does not work with Plack
+			$TODO = "Works only with modperl and plack" if $ENV{BBBIKE_TEST_SKIP_MODPERL} && $ENV{BBBIKE_TEST_SKIP_PLACK};
 
 			my $count_NH = 0;
 			$s->init;
