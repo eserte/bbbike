@@ -83,7 +83,9 @@ sub get_app {
 	my @stat = stat $filename;
 	Plack::Util::set_io_path($fh, Cwd::realpath($filename));
 
-	my $content_type = $filename =~ m{\.gif$} ? 'image/gif' : 'text/plain';
+	my $content_type = ($filename =~ m{\.gif$} ? 'image/gif' :
+			    $filename =~ m{\.png$} ? 'image/png' :
+			    'text/plain');
 
 	return [
 		200,
