@@ -329,9 +329,10 @@ Kˆpenicker Landstraﬂe: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5245 --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5463 --- #: source_id: IM_023242 --- #: XXX Bauarbeiten sind fertig, die Markierung ist allerdings noch nicht erfolgt --- #: last_checked: 2015-03-15 --- #: next_check: 2015-03-17 (Markierungsarbeiten ab 16. M‰rz) --- Schlichtallee: Komplettierung der Radspuren	?::projected 15880,10680 15758,10578
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4515
+#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2015_07_10.pdf?start&ts=1436508425&file=stra__enbauliste_stand_2015_07_10.pdf (Ende)
 #: XXX Realisierung von Radstreifen bis 2015
 #: last_checked: 2015-07-30 (teilweise schon provisorische Radspuren statt Radwege an Bushaltestellen)
-#: check_frequency: 45d
+#: next_check: 2015-11-30
 Manteuffelstr.: werden Radstreifen markiert?	?::projected 8593,5491 8600,5580 8613,5745 8622,5867 8641,5998 8661,6169 8680,6322 8697,6455 8707,6537 8722,6656 8735,6695
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
@@ -1203,10 +1204,11 @@ Uferweg - Heidestraﬂe: Fuﬂg‰nger- und Radfahrerbereich	?::projected 8044,13929 7
 Planstraﬂen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
 #: XXX fehlen alle in Berlin.coords.data (PLZ?) vvv
 #: XXX alles Privatstraﬂen, "Heinrich Wohnpark" (ohne Bindestrich!) vvv
 #: last_checked: 2015-08-01 vvv
-#: check_frequency: 150d vvv
+#: check_frequency: 120d vvv
 Erich-Knauf-Weg: Lage der Straﬂe? Qualit‰t?	? 23754,13165 23844,13120 23922,13085 23960,13068
 Franz-J‰gerst‰tter-Weg: Lage der Straﬂe? Qualit‰t?	? 23844,13120 23865,13239
 Am Kirchendreieck: Lage der Straﬂe? Qualit‰t?	? 23922,13085 23960,13325
@@ -1336,6 +1338,7 @@ Am Bullengraben: Qualit‰t? Unbeleuchtet?	? -6269,13472 -6197,13504 -6086,13578 -
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2015
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015
 #: osm_watch: way id="9829824" version="11"
 #: next_check: 2014-12-01
 Brebacher Str./Dillinger Weg: hat die "Einziehung" von Straﬂenfl‰chen hier Konsequenzen?	? 21550,12038 21562,12088
@@ -1880,9 +1883,10 @@ Stallschreiberstr./Kolonnenweg: Straﬂenbauarbeiten geplant	?::projected 10489,11
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1506/nachricht5652.html vvv
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5703.html
 #: XXX laut Artikel werden die J¸licher und Malmˆer Str. zu Einbahnstraﬂen vvv
 #: last_checked: 2015-07-14 vvv
-#: next_check: 2015-08-14 vvv
+#: next_check: 2015-08-10 vvv
 Sperrung der Bˆsebr¸cke: wie sieht die Wegf¸hrung f¸r Radfahrer an der Bˆsebr¸cke aus? Gibt es Einschr‰nkungen auf der Umleitungsstrecke?	? 10301,16186 10281,16263 10254,16363 10225,16436 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565 9781,16569 9617,16590 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297 9458,16180 9441,16058
 # REMOVED (aufgenommen) --- Treppe: gibt es hier auch Einschr‰nkungen? (Unterquerung der Br¸cke wird mˆglich sein, aber vielleicht wird es eng?)	? 9998,16547 9982,16527 9959,16510
 # REMOVED ("Baustellentunnel" existiert, fast so breit wie der Kolonnenweg) --- Norwegerstr.: gibt es hier auch Einschr‰nkungen? (Unterquerung der Br¸cke wird mˆglich sein, aber vielleicht wird es eng?)	? 9959,16510 9955,16578
@@ -3503,10 +3507,16 @@ Waldweg (Groﬂ Glienicke): Qualit‰t?	? -10261,6466 -10127,6469
 #: XXX_osm: Name des Weges fehlt bei osm
 #: XXX fehlt in Potsdam.coords.data
 Am Denkmal (Groﬂ Glienicke): Qualit‰t?	? -9531,6901 -9424,6874
+# 
+#: by: https://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf
+#: XXX fr¸her "Schwarzer Weg" (vermutlich hier gelegen)
+Eichengrund (Groﬂ Glienicke): Qualit‰t?	? -9506,7421 -9935,7406
+# 
 Zum Teufelssee - Am Moosfenn (Potsdam): Qualit‰t der Gehwegverbindung?	? -10397,-5379 -10503,-5165
 Am Pappeltor (Potsdam, Geltow): Qualit‰t?	? -18894,-5272 -18885,-5173 -18908,-4810 -18928,-4677 -18928,-4595 -18910,-4561 -18771,-4330 -18604,-3755
 An den Kopfweiden (Potsdam): Qualit‰t?	? -10859,-3249 -11015,-3091
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf (straﬂenrechtliche Widmung)
 An den Kopfweiden (Potsdam): Fortf¸hrung der Straﬂe	?::projected -11015,-3091 -11088,-3014
 #: XXX fehlt in Potsdam.coords.data, PLZ=14471, oldname: Im Wildpark (bis ca. 2009)
 Elisenweg (Potsdam): Qualit‰t?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-4389 -17810,-4254 -17847,-4179
@@ -3593,6 +3603,10 @@ Heinz-R¸hmann-Weg (Potsdam): Qualit‰t?	? -8870,-2074 -8913,-2279 -8902,-2292
 #: XXX fehlt in Potsdam.coords.data: PLZ=14476
 An der Jubelitz (Potsdam-Fahrland): Qualit‰t?	? -17173,7182 -17268,7122 -17170,7038 -17057,7062
 #: by: ^^^
+# 
+#: by: https://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf
+#: XXX Privatstraﬂe, fehlt in Potsdam.coords.data, PLZ?
+Havelwelle: genaue Lage der Straﬂe? Qualit‰t?	? -14739,-2362 -14663,-2297
 # 
 #: XXX fehlt in Potsdam.coords.data: PLZ=14476
 #: by: http://www.potsdam.de/cms/dokumente/10086330_1189396/91ec2de3/Amtsblatt_12_11.pdf
@@ -3723,6 +3737,27 @@ Neubr¸cker Str.: Ist die Neubr¸cker Str. eine Vorfahrtsstraﬂe?	? 1364,25882 1213
 # 
 Ahlimbsm¸hle - Templin: Qualit‰t (Asphalt oder etwas anderes)? Ist die gesamte Straﬂe eine Fahrradstraﬂe?	? 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
 # 
+#: by: http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf
+#: XXX genaue Lage?
+Am F‰hrgut: neue Privatstraﬂe, schon fertiggestellt, Qualit‰t?	? -13740,3381 -13631,3254
+# 
+#: by: https://www.potsdam.de/sites/default/files/documents/vb_bp_32.pdf vvv
+#: by: https://www.potsdam.de/content/vorhabenbezogener-bebauungsplan-nr-32-ehemalige-kaserne-eiche-0 vvv
+#: by: http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf (Straﬂennamen) vvv
+#: XXX die ersten beiden Straﬂennamen fehlen in Potsdam.coords.data, PLZ? Genaue Lage?
+Carl-D‰hne-Str.: Planstraﬂe A, schon fertiggestellt, Qualit‰t?	? -16337,-542 -16312,-537 -16309,-435 -16166,-302
+Zum D¸steren Teich: Planstraﬂe B, schon fertiggestellt, Qualit‰t?	? -16079,-394 -16166,-302 -16268,-218
+Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualit‰t?	? -15813,-154 -16079,-394 -16222,-521 -16337,-542
+#: by: ^^^
+#: by: ^^^
+#: by: ^^^
+# 
+#: XXX in diesem Gebiet (Villenpark Potsdam-Groﬂ Glienicke) befinden sich noch weitere Straﬂen:
+#: by: http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf
+#: XXX Planstraﬂe Q3.1 (Ost-West-Straﬂe) -> Hans-Georg-Straﬂe
+#: XXX Planstraﬂe Q3.2 (MN gem‰ﬂ Quartierplan) -> Margarethe-Gottliebe-Weg
+#: XXX Planstraﬂe Q3.3 (LO gem‰ﬂ Quartierplan) -> Eva-Katharina-Weg
+#: XXX Planstraﬂe Q3.4 (KP gem‰ﬂ Quartierplan) -> Christoph-Friedrich-Weg
 #: XXX fehlt in Potsdam.coords.data, PLZ=14476 oder PLZ=14478 (letzteres im Amtsblatt, mˆglicherweise falsch)
 #: by: http://www.potsdam.de/cms/dokumente/10097197_1471008/9e11fd84/Amtsblatt_09_12.pdf
 #: XXX Kleinsteinpflaster, Q1-
@@ -3972,6 +4007,10 @@ Am Speicher (Potsdam): Qualit‰t der Straﬂe?	? -12783,-2269 -12771,-2220 -12754,-
 #: osm_watch: way id="174465895" version="4" brb
 #: XXX laut osm living_street
 Altstadtblick (Potsdam): Qualit‰t der Straﬂe?	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
+#: XXX weitere Straﬂen, die hier entstehen (http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf)
+#: XXX fehlen in Potsdam.coords.data
+#: XXX - An der Lokremise
+#: XXX - Am Magazin
 #: XXX ^^^
 #: next_check ^^^
 #: last_checked ^^^

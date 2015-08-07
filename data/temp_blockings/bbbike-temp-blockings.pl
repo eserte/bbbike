@@ -23104,8 +23104,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 EOF
      },
      { from  => $isodate2epoch->("2015-07-06 06:00:00"), # 1405025033, # 2014-07-10 22:43
-       until => $isodate2epoch->("2015-08-09 19:00:00"), # 1408139790, # 1408312800, # 2014-08-18 00:00
-       text  => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 09.08.2015',
+       until => $isodate2epoch->("2015-08-30 19:00:00"), # 1408139790, # 1408312800, # 2014-08-18 00:00
+       text  => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 30.08.2015',
        type  => 'handicap',
        source_id => 'IM_025547',
        data  => <<EOF,
@@ -24267,8 +24267,12 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
        data  => <<EOF,
+#: next_check: 2015-08-10 vvv
+#: priority: #A vvv
 	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+#: priority ^^^
+#: next_check ^^^
 EOF
      },
      { from  => undef, # 
@@ -24379,7 +24383,7 @@ EOF
 EOF
      },
      { from  => 1438145220, # 2015-07-29 06:47
-       until => 1441044000, # 2015-08-31 20:00
+       until => 1438971841, # 1441044000, # 2015-08-31 20:00
        text  => 'Gorkistr.: Vollsperrung, Schrankenstörung',
        type  => 'gesperrt',
        source_id => 'IM_025809',

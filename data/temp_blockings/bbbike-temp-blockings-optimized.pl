@@ -3270,8 +3270,8 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        },
        {
          'source_id' => 'IM_025547',
-         'until' => 1439139600,
-         'text' => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 09.08.2015',
+         'until' => 1440954000,
+         'text' => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 30.08.2015',
          'from' => 1436155200,
          'id' => 2596,
          'data' => '#: note: außerdem Ampel an der Kreuzung Werneuchener/Große-Leege, und geänderte Vorfahrtsregelung an der Umleitungsstrecke via Große-Leege-Str.
@@ -3707,24 +3707,6 @@ userdel	q3::inwork 11325,12021 11275,12055
          'data' => 'userdel	q4::inwork; 9416,10196 9409,10226 9404,10250
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1438898399,
-         'text' => 'Ziegrastr.: Durchfahrt komplett gesperrt, auch für Fußgänger und Radfahrer, bis zum 6.8.2015',
-         'from' => undef,
-         'id' => 2726,
-         'data' => '	2::temp 14233,8072 14174,7505
-'
-       },
-       {
-         'source_id' => 'IM_025809',
-         'until' => 1441044000,
-         'text' => 'Gorkistr.: Vollsperrung, Schrankenstörung',
-         'from' => 1438145220,
-         'id' => 2727,
-         'data' => 'userdel	2::inwork 2295,20358 2358,20368 2415,20380
-',
-         'type' => 'gesperrt'
        }
      
 );
