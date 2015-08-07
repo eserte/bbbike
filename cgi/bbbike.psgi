@@ -16,8 +16,9 @@ use File::Spec::Functions 'catfile', 'catpath';
 
 my $root;
 BEGIN {
-    $root = dirname(realpath($FindBin::RealBin));
-#$root = "/home/e/eserte/src/bbbike";#XXX
+    # In this environments (e.g. within mod_perl) $FindBin::RealBin is
+    # not useable; in these situations set the BBBIKE_ROOTDIR env var.
+    $root = $ENV{BBBIKE_ROOTDIR} || dirname(realpath($FindBin::RealBin));
 }
 
 use lib $root;
