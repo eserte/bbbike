@@ -25,6 +25,7 @@ patch\.gz$
 ^_Inline/
 (^|/)cover_db/
 ^nytprof\.out$
+^nytprof\.out\.\d+$
 ^nytprof/
 ^profiler/
 (^|/)\.prove$
