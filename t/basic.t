@@ -136,6 +136,9 @@ for my $f (@files) {
 	myskip "$f needs mod_perl2", $tests_per_file
 	    if $f =~ m{^( BBBikeDataDownloadCompat\.pm
 		      )$}x && !eval { require Apache2::Const; 1};
+	myskip "$f needs plack", $tests_per_file
+	    if $f =~ m{^( BBBikeDataDownloadCompatPlack\.pm
+		      )$}x && !eval { require Plack::Request; 1};
 	myskip "$f needs Cairo", $tests_per_file
 	    if $f =~ m{^( Route/PDF/Cairo\.pm
 		        | BBBikeDraw/PDFCairo.pm
