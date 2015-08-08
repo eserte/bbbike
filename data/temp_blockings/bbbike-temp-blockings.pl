@@ -21245,13 +21245,14 @@ EOF
      },
      { from  => $isodate2epoch->("2015-05-04 04:00:00"), # ein Tag Vorlauf
        until => $isodate2epoch->("2015-09-21 18:00:00"),
-       text  => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. zeitweise komplett gesperrt, auch für Fußgänger, 04.05.2015 bis 21.09.2015',
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. zeitweise komplett gesperrt, auch für Fußgänger und Radfahrer, 04.05.2015 bis 21.09.2015',
        type  => 'handicap',
        source_id => 'IM_024846',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2015 vvv
-#: last_checked: 2015-08-02 vvv
+#: last_checked: 2015-08-08 vvv
 #: next_check: 2015-09-21 vvv
+#: XXX am 2015-08-08 offen für Fußgänger
 userdel	2::inwork 15272,10790 15279,10862
 userdel	2::inwork 15261,10738 15272,10790
 #: next_check ^^^
@@ -24207,12 +24208,13 @@ EOF
 #: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-07-22 vvv
+#: last_checked: 2015-08-08 vvv
 #: check_frequency: 21d vvv
 userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-userdel	2::inwork 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
+userdel	2::inwork 14575,9648 14645,9710 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
 userdel	2::inwork 14443,9731 14361,9772
-userdel	2::inwork 15561,8903 15630,8979 15638,9020 15778,8990
+userdel	2::inwork 15630,8979 15638,9020 15778,8990
+userdel	2::inwork 14910,9643 14844,9513
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -24286,8 +24288,8 @@ userdel	q3::inwork 12295,12197 12525,12151
 EOF
      },
      { from  => $isodate2epoch->("2015-05-04 04:00:00"), # ein Tag Vorlauf
-       until => 1436706798, # $isodate2epoch->("2015-09-21 18:00:00"),
-       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. unter Umständen komplett gesperrt, auch für Fußgänger, 04.05.2015 bis 21.09.2015',
+       until => 1436706798, # $isodate2epoch->("2015-09-21 18:00:00"), # XXX dieser Eintrag ist inaktiv, siehe oben für aktiven Eintrag
+       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. zeitweise komplett gesperrt, auch für Fußgänger und Radfahrer, 04.05.2015 bis 21.09.2015',
        type  => 'handicap',
        source_id => 'IM_024846',
        data  => <<EOF,

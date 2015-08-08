@@ -225,6 +225,7 @@ Kiefholzstr.: Kopfsteinpflaster	Q2 13606,9578 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2+ 15060,11006 15102,11120
 Marzahner Chaussee: Kopfsteinpflaster	Q2- 18555,12101 18420,11864 18417,11854 18380,11747
+# REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4871 (Verbesserung für den Radverkehr?) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036852138672/852138672/00101938/38-Anlagen/04/B0771SB.pdf (wird nicht geändert)
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22857,6155 22777,6151 22603,6141 22467,6135
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn, aber Radweg existiert	Q1; 22467,6135 22603,6141 22777,6151 22857,6155
 Stellingdamm: Asphalt	Q0 22857,6155 23011,6181 23131,6237 23222,6276
@@ -1336,7 +1337,7 @@ Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,1
 Spreeufer: Verbundsteine	Q1 10583,12206 10492,12289 10424,12364 10422,12395
 Treptower Park: Asphalt, einige Wurzelhebungen	Q1 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
-Treptower Park: wassergebundene Decke	Q1 14854,8964 15057,8910 15159,8934
+Treptower Park: wassergebundene Decke	Q1 14854,8964 15057,8910 15110,8912 15159,8934
 Treptower Park: Schotterweg	Q2 14242,9448 14316,9542
 Treptower Park: Asphalt mit mäßigen Stellen	Q1+ 14697,9726 14645,9710 14575,9648 14496,9705 14443,9731 14361,9772
 Am Rosengarten: Parkweg	Q1 14910,9643 14844,9513 14819,9462
@@ -2393,17 +2394,8 @@ Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11921,11185 11950,11157
 (Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
-#: XXX Baumaßnahme GR9.24 (Realisierung nach 2011) vvv
-#: XXX wird hier asphaltiert werden? Was ist mit dem Schlenker am Spreepark? vvv
-#: osm_watch: way id="207761374" version="2"
-#: last_checked: 2015-05-19 vvv
-#: check_frequency: 180d vvv
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
 Wasserweg: fester Sandweg	Q2 15873,8884 16023,8860 16161,8852 16201,8860
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: XXX ^^^
 Wasserweg: Asphalt	Q0 16201,8860 16358,8841 16388,8821
 Umfahrung Spreepark: fester Sandweg	Q2 16023,8860 16084,8833 16161,8852
 Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16534,8182 16602,7810 16620,7574 16633,7434
@@ -3320,6 +3312,8 @@ Treptower Park: Asphalt	Q0 14529,9141 14601,9201
 Treptower Park: Asphalt, einige Wurzelschäden	Q1+ 14601,9201 14748,9420 14780,9480
 Treptower Park: Asphalt	Q0 14460,9814 14436,9784 14361,9772
 Treptower Park: Asphalt	Q0 15187,9038 15217,9137
+(Neue Krugallee/Bulgarische Str. - Karpfenteich): Schotterweg	Q2+ 15558,8820 15439,8839 15297,8921 15245,8916
+(Neue Krugallee/Bulgarische Str. - Karpfenteich): Asphalt	Q0 15245,8916 15223,8893
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6325,8259 6385,8274 6459,8281 6552,8281
 Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3555,11612
 Goethepark: Asphalt	Q1 3467,11373 3594,11372

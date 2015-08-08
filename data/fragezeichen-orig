@@ -401,6 +401,13 @@ Gauﬂstr.: Radspuren werden errichtet	?::projected 3739,13563 3833,13590 4098,136
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX Baumaﬂnahme GR9.24 (Realisierung nach 2011)
+#: XXX wird hier asphaltiert werden? Was ist mit dem Schlenker am Spreepark?
+#: osm_watch: way id="207761374" version="2"
+#: last_checked: 2015-08-08
+#: check_frequency: 180d
+Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepark-Eingang?	?::projected 15680,8914 15873,8884 16023,8860 16161,8852 16201,8860
+# 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2015-08-05 vvv
 #: next_check: 2015-08-15 vvv
@@ -831,6 +838,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4986 (Stand?)
+#: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: last_checked: 2015-07-21
 #: check_frequency: 60d
 B¸rknerstr.: wird hier eine Fahrradstraﬂe eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
@@ -1244,6 +1252,7 @@ Weiﬂenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 
 Rosa-Luxemburg-Steg: Qualit‰t: Holzbohlen oder was anderes?	? 6297,11449 6247,11390
 #
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
+#: last_checked: 2015-08-08
 #: next_check: 2015-12-31
 Parkweg: Umbenennung in Bernhard-Langwaldt-Weg?	? 14652,10201 14626,10162 14597,10129 14558,10082 14453,9929 14448,9922 14404,9847 14361,9772 14318,9688
 # 
@@ -3606,7 +3615,7 @@ An der Jubelitz (Potsdam-Fahrland): Qualit‰t?	? -17173,7182 -17268,7122 -17170,7
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf
 #: XXX Privatstraﬂe, fehlt in Potsdam.coords.data, PLZ?
-Havelwelle: genaue Lage der Straﬂe? Qualit‰t?	? -14739,-2362 -14663,-2297
+Havelwelle: genaue Lage der Straﬂe? Qualit‰t?	? -14725,-2389 -14618,-2295 -14585,-2338
 # 
 #: XXX fehlt in Potsdam.coords.data: PLZ=14476
 #: by: http://www.potsdam.de/cms/dokumente/10086330_1189396/91ec2de3/Amtsblatt_12_11.pdf
@@ -3739,7 +3748,7 @@ Ahlimbsm¸hle - Templin: Qualit‰t (Asphalt oder etwas anderes)? Ist die gesamte S
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf
 #: XXX genaue Lage?
-Am F‰hrgut: neue Privatstraﬂe, schon fertiggestellt, Qualit‰t?	? -13740,3381 -13631,3254
+Am F‰hrgut: neue Privatstraﬂe, schon fertiggestellt, Qualit‰t?	? -13672,3295 -13535,3330 -13567,3403
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/vb_bp_32.pdf vvv
 #: by: https://www.potsdam.de/content/vorhabenbezogener-bebauungsplan-nr-32-ehemalige-kaserne-eiche-0 vvv
