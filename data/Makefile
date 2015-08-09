@@ -220,7 +220,7 @@ really-slow-checks:	check-nearest \
 			plz-test
 
 plz-test:
-	cd $(BBBIKEDIR) && prove t/plz.t
+	cd $(BBBIKEDIR) && prove --exec=$(PERL) t/plz.t
 
 # this adds also "check-crossings-less-important", but the results of
 # these checks there were never looked at, so really not important...
