@@ -20797,7 +20797,8 @@ EOF
 #: note: geprüft am So, den 2015-03-08, vormittags: offen
 #: note: geprüft am So, den 2015-05-10, nachmittags: offen
 #: note: geprüft am So, den 2015-06-21, vormittags: offen
-#: note. geprüft am So, den 2015-07-19, nachmittags: offen
+#: note: geprüft am So, den 2015-07-19, nachmittags: offen
+#: note: geprüft am So, den 2015-08-09, nachmittags: offen
 userdel	2::night 14838,11410 14792,11391
 EOF
      },

@@ -2634,31 +2634,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.bierfestival-berlin.de/landkarte.html
-userdel	2::temp 12360,12505 12362,12540 12364,12589
-userdel	2::temp 12891,12549 12869,12425
-userdel	2::temp 12635,12629 12596,12472
-userdel	2::temp 13448,12340 13484,12436
-userdel	2::temp 13552,12435 13543,12326
-#zukünftig, wenn dieser Weg eingetragen ist: userdel	2::temp 13163,12382 13176,12500
-',
-         'periodic' => 1,
-         'until' => 1439078400,
-         'from' => 1438848000,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (7.8.2015 bis 9.8.2015)',
-         'type' => 'gesperrt',
-         'id' => 2262
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2800,7 +2776,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: note: geprüft am So, den 2015-03-08, vormittags: offen
 #: note: geprüft am So, den 2015-05-10, nachmittags: offen
 #: note: geprüft am So, den 2015-06-21, vormittags: offen
-#: note. geprüft am So, den 2015-07-19, nachmittags: offen
+#: note: geprüft am So, den 2015-07-19, nachmittags: offen
+#: note: geprüft am So, den 2015-08-09, nachmittags: offen
 userdel	2::night 14838,11410 14792,11391
 ',
          'type' => 'gesperrt'
@@ -3304,28 +3281,7 @@ userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'http://www.hanfparade.de/',
-         'data' => 'userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'periodic' => 1,
-         'until' => 1439100000,
-         'from' => 1438898400,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung (Hanfparade), Straße gesperrt, ab 07.08.2015 21 Uhr bis 09.08.2015 morgens ',
-         'id' => 2606,
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

@@ -574,7 +574,7 @@ Andernacher Str.	1 19030,8559 19000,8509
 Andernacher Str.	1 18949,8437 19000,8509
 Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
-Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
+Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22246,4711 22175,4730
 # REMOVED --- Gotenburger Str.	1 9000,16803 8844,16863
@@ -1110,14 +1110,17 @@ Sportfliegerstr.: Betriebsgel‰nde	2 18370,4511 18423,4459
 #: by: olaf skeries
 Schillerhof	1 7069,17204 6928,17154
 #: XXX wird aufgehoben, sobald das einsturzgef‰hrdete Haus abgerissen wird vvv
-#: last_checked: 2015-06-27 vvv
+#: last_checked: 2015-08-09 vvv
+#: check_frequency: 60d vvv
 Wartenbergstr.	1s:q1 15423,11667 15337,11639 15328,11636
 Wartenbergstr.	1s:q2 15328,11636 15300,11584
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 Bahnhofstr.	1 12166,21208 12202,21158
 Bahnhofstr.	1 12202,21158 12158,21166
 (Bushaltestelle und Straﬂenbahnwendestelle Schˆneweide): Betriebsgel‰nde	2 17675,5521 17588,5573 17578,5566
+Allee der Kosmonauten	1 20172,14141 20111,14140 20096,14127
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1437,12 +1440,12 @@ Stendaler Str.: Straﬂenbahntrasse	3nocross 23933,15209 23952,15086 23960,15021
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20944,14840 20980,14914 21163,15289
 Attilastr.: Mittelstreifen	3nocross 7410,4373 7450,4397 7482,4416
+Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20262,14255 20249,14143 20235,14017 20207,13778
 #: note: Luftbild vvv
 Am Nordgraben: Mittelstreifen	3nocross 5201,20103 5299,20104 5399,20106 5517,20120
 Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7368,4342
 Edisonstr.: Straﬂenbahn	3nocross 18010,7133 17934,7029 17919,6978
 Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5153,15658 -5370,15721 -5470,15750
-Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20269,14256 20241,14016 20210,13776
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20532,15564 20580,15586
 Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15850,14308
@@ -2616,6 +2619,13 @@ Dr‰ngelgitter	BNP:3 31665,48997
 #: section tempor‰re Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf
+#: XXX evtl. wird dieses St¸ck Straﬂe komplett entfernt
+#: last_checked: 2015-08-09
+#: check_frequency: 180d
+Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: XXX wann wird die Straﬂe erˆffnet?
 #: last_checked: 2015-08-02

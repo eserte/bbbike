@@ -426,7 +426,7 @@ Andernacher Str.	1 19030,8559 19000,8509
 Andernacher Str.	1 18949,8437 19000,8509
 Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
-Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
+Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
 Laurenzstr.	1 22246,4711 22175,4730
 Werrastr.: Firmengel‰nde	2 13802,8195 13697,8279
@@ -809,6 +809,7 @@ Wartenbergstr.	1s 15328,11636 15300,11584
 Bahnhofstr.	1 12166,21208 12202,21158
 Bahnhofstr.	1 12202,21158 12158,21166
 (Bushaltestelle und Straﬂenbahnwendestelle Schˆneweide): Betriebsgel‰nde	2 17675,5521 17588,5573 17578,5566
+Allee der Kosmonauten	1 20172,14141 20111,14140 20096,14127
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten M‰rkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1172,6 +1173,11 @@ Straﬂenbahntrasse	3nocross::ignrte 20944,14840 20980,14914 21163,15289
 Allee der Kosmonauten -> Schragenfeldstr.: Straﬂenbahntrasse	3::igndisp 21163,15289 20980,14914 21027,14886
 Schragenfeldstr. -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 21027,14886 20980,14914 20944,14840
 Mittelstreifen	3nocross::ignrte 7410,4373 7450,4397 7482,4416
+Straﬂenbahntrasse	3nocross::ignrte 20262,14255 20249,14143 20235,14017 20207,13778
+Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straﬂenbahntrasse	3::igndisp 20235,14017 20249,14143 20172,14141
+Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 20172,14141 20249,14143 20262,14255
+Allee der Kosmonauten -> Cecilienstr.: Straﬂenbahntrasse	3::igndisp 20249,14143 20235,14017 20281,14012
+Cecilienstr. -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 20281,14012 20235,14017 20207,13778
 Mittelstreifen	3nocross::ignrte 5201,20103 5299,20104 5399,20106 5517,20120
 Im Wolfsgartenfeld -> Am Nordgraben: Mittelstreifen	3::igndisp 5307,20067 5299,20104 5201,20103
 Am Nordgraben -> Im Wolfsgartenfeld: Mittelstreifen	3::igndisp 5399,20106 5299,20104 5307,20067
@@ -1188,9 +1194,6 @@ Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5039,15618 -
 Remscheider Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5192,15517 -5153,15658 -5370,15721
 Falkenseer Chaussee -> Oberhauser Str.: Mittelstreifen	3::igndisp -5153,15658 -5370,15721 -5426,15528
 Oberhauser Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5426,15528 -5370,15721 -5470,15750
-Straﬂenbahntrasse	3nocross::ignrte 20269,14256 20241,14016 20210,13776
-Allee der Kosmonauten -> Cecilienstr.: Straﬂenbahntrasse	3::igndisp 20269,14256 20241,14016 20281,14012
-Cecilienstr. -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 20281,14012 20241,14016 20210,13776
 Straﬂenbahntrasse	3nocross::ignrte 20822,14594 20868,14698 20944,14840
 Allee der Kosmonauten -> Adersleber Weg: Straﬂenbahntrasse	3::igndisp 20944,14840 20868,14698 20935,14686
 Adersleber Weg -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 20935,14686 20868,14698 20822,14594
@@ -2772,6 +2775,7 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Dr‰ngelgitter	BNP:3:-240 31665,48997
+Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
 Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 (Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769

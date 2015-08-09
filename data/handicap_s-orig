@@ -315,7 +315,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den a
 ### Lichtenberg ###
 # 
 #: next_check_id: DEUTSCHMEISTER-2015
-#: last_checked: 2015-07-19
+#: last_checked: 2015-08-09
 Deutschmeisterstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15370,12264 15443,12222
 # REMOVED --- #: next_check_id: SANDINO-2014 --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-09-27 --- #: check_frequency: 21d --- Sandinostr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15799,14674 15706,14752
 # REMOVED --- #: last_checked: 2015-03-15 --- #: check_frequency: 60d --- Dottistr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 15685,12154 15879,12131
@@ -821,7 +821,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
-#: last_checked: 2015-02-14
+#: last_checked: 2015-08-09
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
@@ -1718,7 +1718,7 @@ Alt-Tegel: Fuﬂg‰nger	q3 1462,20133 1457,20159
 (Am Rosensteg - An der Heide): eng	q3 3065,20646 3101,20649 3109,20650
 (Rosentreterpromenade - Ziekowstr.): schmal	q2+ 4156,21175 4060,21147 3649,21102 3456,21071 2911,20953 2571,20886
 (Oskar-Ziethen-Krankenhaus): Krankenhausgel‰nde, Fuﬂg‰nger	q2 16541,12071 16556,12180
-(U-Bahnunterf¸hrung Elsterwerdaer Platz): Fuﬂg‰nger, ggfs. schieben	q3 21137,11294 21086,11321
+(U-Bahnunterf¸hrung Elsterwerdaer Platz): Fuﬂg‰nger, ggfs. schieben	q3 21137,11294 21095,11315
 #: XXX_prog: BS (an der westlichen Seite)
 Frankfurter Allee/Harnackstr.: hoher abgeschr‰gter Bordstein	q2 15941,11855 15989,11834
 #: XXX_prog: BS
@@ -1909,7 +1909,7 @@ Kerstenweg: Fuﬂg‰nger, Bordsteine	q2 -3707,13377 -3813,13404
 entlang der Havel: Fuﬂg‰nger	q1 -3306,14035 -3345,13994 -3385,13937 -3503,13773 -3543,13691 -3556,13582 -3546,13503 -3529,13452 -3451,13300 -3441,13270
 #: XXX_prog BS auf der westlichen Seite (ansonsten Schwingtor zu gesperrt-orig ¸berf¸hren und diesen Eintrag entfernen)
 Landschaftspark Herzberge: Bordstein, Schwingtor	q2 17671,13132 17684,13133 17698,13134
-(Allee der Kosmonauten - Langhoffstr.): einige Fuﬂg‰nger	q1 19842,13765 19834,13813 19847,14019 19843,14064
+(Allee der Kosmonauten - Langhoffstr.): einige Fuﬂg‰nger	q1 19856,13794 19847,14019 19843,14064
 (Langhansstr. - Allee der Kosmonauten): einige Fuﬂg‰nger	q1 19818,14064 19847,14019
 Ahrensfelder Berge: Fuﬂg‰nger	q1 22672,16341 22666,16412 22670,16562 22661,16639 22559,16855 22524,16889 22486,16889 22396,16846 22375,16836 22352,16846 22271,16934 22265,16978 22290,17028 22309,17035 22367,17000 22382,16961
 Ahrensfelder Berge: Fuﬂg‰nger	q1 22666,16412 22596,16435 22512,16542 22378,16657 22299,16730 22232,16793 22158,16855 22050,16781
@@ -2216,6 +2216,11 @@ Erich-Lodemann-Str.: einige Fuﬂg‰nger, Rampe	q2 15288,8134 15242,8182
 (Fuﬂg‰ngerbr¸cke): einige Fuﬂg‰nger	q2 21182,436 21199,437 21262,375
 (Unterf¸hrung Gr¸nbergallee): einige Fuﬂg‰nger	q1 19912,-496 19908,-565
 (Unterf¸hrung Gr¸nbergallee): einige Fuﬂg‰nger, Rampen	q3 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19942,-596 19940,-610
+(Allee der Kosmonauten - Murtzaner Ring): einige Fuﬂg‰nger	q1+ 20096,14127 20040,14179
+#: note: und Kfz-Gegenverkehr
+Allee der Kosmonauten: enge Straﬂe	q1+; 20096,14127 20097,14039 20081,13993 20080,13941
+Allee der Kosmonauten [Wohngebietsweg]: einige Fuﬂg‰nger	q1 19859,13765 20038,13771 20075,13758 20114,13762
+Einbecker Str.: einige Fuﬂg‰nger	q1 17734,11408 17764,11371
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3355,7 +3360,7 @@ M¸hlbergstr.: enge Straﬂe	q1 17346,4031 17402,4050 17405,4151
 #: confirmed_by: srt:
 Hohenschˆnhausener Weg: Fuﬂg‰nger haben Vorrang	q1+ 15600,18551 15825,18385 16306,18011 16397,17938 16502,17858 16607,17767 16697,17695
 #: by: anonymous (q1 ohne genauere Kommentierung, aber auf dem Luftbild sieht es eng aus)
-Murtzaner Ring: enge Straﬂe	q1 19593,14472 19593,14452 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20051,14191 20061,14220 20056,14373 20051,14441
+Murtzaner Ring: enge Straﬂe	q1 19593,14472 19593,14452 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179 20051,14191 20061,14220 20056,14373 20051,14441
 #XXX: P. Loll:, corrected_by: Uwe Borgenhagen (not mentioned): Windenweg: enge Straﬂe	q1 16306,2364 16106,2514 16012,2592 15923,2667 15870,2768 15785,2900 15751,2936 15602,3099
 #: by: Mario Hensel:
 Lindenhoekweg: enge Straﬂe	q1 12382,15802 12310,15837 12247,15868
@@ -3746,8 +3751,9 @@ Straﬂe 129: enge Straﬂe	q1 7784,21186 7929,21103
 #: by: Wanda (schramms):
 Hottengrundweg: enge Straﬂe	q1 -8637,4741 -8086,4504
 #: by: Roland Krause: vvv
-Privatstr. 2: enge Straﬂe	q1 16902,17278 17026,17292 17161,17289 17300,17265 17403,17235
-Privatstr. 3: enge Straﬂe	q1 16918,17204 17027,17219 17153,17216 17375,17165
+#: confirmed_by: srt
+Privatstr. 2: enge Straﬂe	q1 16905,17281 17028,17298 17162,17294 17286,17277 17404,17238
+Privatstr. 3: enge Straﬂe	q1 16920,17204 17027,17219 17153,17216 17375,17165
 Privatstr. 4: enge Straﬂe	q1 16934,17132 17125,17147 17146,17147 17167,17145 17346,17100
 Privatstr. 8: enge Straﬂe	q1 16992,16840 17120,16849 17237,16825
 #: by: ^^^

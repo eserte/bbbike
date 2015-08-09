@@ -239,8 +239,8 @@ Tiergartenufer	NL 5478,11860 5543,11837 5736,11835 5835,11768
 # REMOVED (Laternen existieren) --- Kufsteiner Str.	NL 5913,8415 5925,8219
 (Park am Fennpfuhl)	NL 15239,13580 15247,13662
 # REMOVED (beleuchtet) --- (Park am Fennpfuhl)	NL 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15076,14009 15050,14054
-(NSG Fauler See)	NL 15918,16383 15965,16482 15990,16479 16091,16523 16107,16586 16138,16605 16172,16686 16239,16737 16303,16816 16361,16828 16353,16900 16381,16969
-(NSG Fauler See)	NL 15990,16479 16359,16387 16424,16539 16477,16612 16488,16668 16483,16722 16361,16828
+(NSG Fauler See)	NL 15918,16383 15965,16482 15990,16479 16091,16523 16107,16586 16138,16605 16172,16686 16239,16737 16303,16816 16362,16843 16353,16900 16381,16969
+(NSG Fauler See)	NL 15990,16479 16359,16387 16424,16539 16477,16612 16488,16668 16483,16722 16362,16843
 (NSG Fauler See)	NL 15965,16482 15915,16526
 (Eingang Suermondtstr./Sabinensteig - NSG Fauler See)	NL 16416,16236 16413,16273 16369,16308 16340,16338 16359,16387
 (NSG Fauler See - Tamseler Str.)	NL 16488,16668 16556,16673
@@ -788,10 +788,7 @@ Wateweg	NL 21121,8424 21127,8532 21115,8618 21123,8678 21131,8739 21124,8792
 (Schönefelder Chaussee - Mauerweg)	NL 18978,552 18710,608
 #: note: geraten
 (Schönefelder Chaussee - Mauerweg)	NL 18760,-8 18574,68 18568,28 18560,75 18544,86
-#: XXX nach der Widmung als Straßenland: wird der Weg beleuchtet sein?
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2014
-#: last_checked: 2015-04-11
-#: check_frequency: 120d
+# REMOVED (nein) --- #: XXX nach der Widmung als Straßenland: wird der Weg beleuchtet sein? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2014 --- #: last_checked: 2015-04-11 --- #: check_frequency: 120d
 	NL 15851,17722 15780,17860 15783,17915
 (Grünanlage)	NL 17006,17473 17183,17385 17384,17307 17397,17310
 (Falkenberger Chaussee - Rüdickenstr.)	NL 16947,17506 16992,17472 17006,17473 17064,17515
@@ -1567,3 +1564,6 @@ Südpark	NL 17236,-602 17933,-428 18127,-367
 (Heinz-Brandt-Str./Mauerweg - Uhlandstr.)	NL 7297,20629 7321,20588 7415,20617 7630,20698
 (Alter Radelander Weg - Schappachstr.)	NL 25007,-2620 25731,-1524
 (Weg im Theodorpark)	NL 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
+#: by: Thomas Thomas
+#: note: "Es gibt zwar Straßenlaternen, diese sind nachts ausgeschaltet"
+Straße 70 (Charlottenburg-Nord)	NL 3385,14871 3346,14871 3299,14948 3294,15206 3349,15269 3415,15450 3462,15467 3579,15682

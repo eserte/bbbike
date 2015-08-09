@@ -403,7 +403,7 @@ südliches Sackgassenende	culdesac 11668,-171
 	culdesac -3900,15650
 	culdesac 22407,12901
 	culdesac_pseudo 22088,15557
-	culdesac 21217,11328
+	culdesac 21189,11326
 	culdesac 22001,10216
 	culdesac 25941,4971
 	culdesac 24991,4701
@@ -756,7 +756,7 @@ nördliches Sackgassenende	culdesac 24370,10198
 #: note: verschlossenes Tor
 	culdesac -3384,13091
 	culdesac_pseudo -3560,13704
-	culdesac_pseudo 19842,13765
+	culdesac_pseudo 19856,13794
 	culdesac 21187,11132
 	culdesac_pseudo 21326,11122
 	culdesac 21396,11242
@@ -1104,10 +1104,14 @@ westliches Sackgassenende	culdesac 17355,12460
 	culdesac 26905,-2116
 	culdesac 26254,-772
 nördliches Sackgassenende	culdesac 24716,12081
+Sackgassenende, NSG Fauler See	culdesac_pseudo 16381,16969
+westliches Sackgassenende	culdesac 20281,11341
+östliches Sackgassenende	culdesac 20413,11334
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 17764,11371
 	culdesac_pseudo 24666,436
 	culdesac_pseudo 25646,-209
 	culdesac_pseudo 27055,-2298

@@ -685,9 +685,11 @@ Griembergweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10913,96 10753,83 1
 Mittelstreifen	3nocross::ignrte 10737,132 10753,83 10782,-24
 Lichtenrader Damm -> Griembergweg: Mittelstreifen	3::igndisp 10737,132 10753,83 10913,96
 Griembergweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10913,96 10753,83 10782,-24
-Straﬂenbahntrasse	3nocross::ignrte 20281,14361 20269,14256 20241,14016
-Allee der Kosmonauten -> Annenstr.: Straﬂenbahntrasse	3::igndisp 20281,14361 20269,14256 20376,14244
-Annenstr. -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 20376,14244 20269,14256 20241,14016
+Straﬂenbahntrasse	3nocross::ignrte 20281,14361 20262,14255 20249,14143 20235,14017
+Allee der Kosmonauten -> Annenstr.: Straﬂenbahntrasse	3::igndisp 20281,14361 20262,14255 20376,14244
+Annenstr. -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 20376,14244 20262,14255 20249,14143
+Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straﬂenbahntrasse	3::igndisp 20235,14017 20249,14143 20172,14141
+Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 20172,14141 20249,14143 20262,14255
 Straﬂenbahntrasse	3nocross::ignrte 20756,14486 20822,14594 20868,14698
 Allee der Kosmonauten -> Vierlandenstr.: Straﬂenbahntrasse	3::igndisp 20756,14486 20822,14594 20761,14589
 Allee der Kosmonauten -> Heliosstr.: Straﬂenbahntrasse	3::igndisp 20868,14698 20822,14594 20975,14601
@@ -1745,3 +1747,6 @@ Krajnik Dolny - Dolina Milosci	1 70496,70247 70008,69775 69809,69573 69697,69426
 Grottewitzstr. - ...	3 21933,152 22145,208 22073,59
 Grottewitzstr. - ...	3 21933,152 22145,208 22166,312
 Grottewitzstr. - ...	3 21933,152 22145,208 22172,194
+Allee der Kosmonauten	1 20096,14127 20097,14039 20081,13993 20080,13941
+Murtzaner Ring	1 20040,14179 20051,14191 20061,14220 20056,14373
+Kyllburger Weg	1 16779,17521 16670,17454 16645,17449
