@@ -80,8 +80,6 @@ for my $f (@files) {
 	    if $f eq 'BBBikeDraw/SVG.pm' && !eval { require SVG };
 	myskip "$f needs GD", $tests_per_file
 	    if $f =~ m{^BBBikeDraw/GD.*\.pm$} && !eval { require GD };
-	myskip "$f needs Tk::Wizard", $tests_per_file
-	    if $f eq 'BBBikeImportWizard.pm' && !eval { require Tk::Wizard };
 	myskip "$f needs GPS::Garmin", $tests_per_file
 	    if $f =~ m{^GPS/(DirectGarmin|GpsmanConn).pm$} && !eval { require GPS::Garmin };
 	myskip "$f needs Algorithm::Permute", $tests_per_file

@@ -293,7 +293,6 @@ my @req_table =
   ## Maybe in future:
   # DBD::Pg - Strassen::Pg
   # Text::LevenshteinXS - PLZ::Levenshtein
-  # Tk::Wizard - BBBikeImportWizard
  );
 ## XXX This is a optional requisite, but currently taken out
 ## because of http://rt.cpan.org/Ticket/Display.html?id=41521
