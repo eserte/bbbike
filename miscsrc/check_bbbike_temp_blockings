@@ -381,7 +381,7 @@ EOF
 @temp_blocking =
 EOF
     }
-    my $dd = Data::Dumper->new([[@new_temp_blocking[$first_index .. $#new_temp_blocking]]], ["x"])->Dump;
+    my $dd = Data::Dumper->new([[@new_temp_blocking[$first_index .. $#new_temp_blocking]]], ["x"])->Sortkeys(1)->Dump;
     $dd =~ s/\A\$x\s*=\s*\[//;
     $dd =~ s/\];\Z//;
     $s .= "(";
